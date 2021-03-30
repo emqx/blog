@@ -1,0 +1,67 @@
+With the continuous development of China's economy and manufacturing industry, the pressure of industrial production on the environment and resources is increasing. In order to promote the coordinated development of economy and society, China puts forward the strategic goal of sustainable development. As energy consumption in industrial enterprises is an indispensable and necessary condition for normal production and operation of enterprises, and accounts for an increasing proportion of product costs, energy conservation and consumption reduction has become the major patterns for enterprises to save resources and reduce costs.
+
+At present, most industrial enterprises use a variety of energy sources, including water, electricity, gas, photovoltaic and so on. Many traditional energy monitoring methods  based on manual methods are still relatively simple, that is impossible to collect energy consumption data in a comprehensive and real-time manner. In the stage of energy consumption data collection, there are problems such as lack of basic energy consumption data, imperfect data statistics in poor real-time, reliability and authenticity, and so on. For data acquisition and understanding, there are also some problems such as lack of data storage and analysis from energy consumption management system, resulting in lack of effective management and utilization means for energy consumption data, and lack of energy consumption analysis means for a long time.
+
+With the continuous development of Iot technology, industrial enterprises have gradually begun to use the Iot and big data technology to cope with the increasingly severe energy consumption management issues. It has become the focus and practice direction of industrial enterprises to use the Iot technology to  to collect real-time energy consumption of production equipment, plant area, logistics, and the effective use and analyze the energy consumption data through the monitoring and management system of energy consumption on cloud. The energy monitoring project of the Guiyang Wahaha production base belongs to the excellent case of using the new Iot technology to upgrade the level of energy consumption management..
+
+## The needs and challenges of the Wahaha project
+
+Wahaha Guiyang Production Base was founded in 2003. It is located in Jinghong Industrial Park, Economic Development Zone, Baiyun District, Guiyang City. It covers an area of 145 acres and is the leading enterprise in the food and beverage industry in Guiyang and Guizhou Province.
+
+Wahaha Guiyang production base produces more than 5,000 tons of beverage products per day, totaling more than 10 million bottles. It ranks second in the entire Wahaha Group in terms of production and ranks third in terms of plant size. Energy consumption in such a large factory area has always been a concern of enterprise managers. The main energy resources include water, electricity, natural gas and high pressure steam. According to the current production capacity consumption, in peak period, the power consumption in the plant area exceeds 300,000 kWh per day, water consumption is 12,000 tons, and steam consumption is more than 50 tons. A large amount of energy consumption has become the main production cost. How to realize the production of high efficiency and low energy consumption is a key problem for managers.
+
+Since 2003, Wahaha Guiyang production base has expanded its plant in four stages at different time. Therefore, in terms of the construction of production lines in the plant area and the selection of energy-consuming metering equipment, the degree of informationization and intelligence of equipment at different stages is also different. How to realize equipment access coverage for a large-scale production base, and unified access of new and old equipment has become a relatively large challenge for building a unified energy consumption monitoring platform.
+
+Before the implementation of this project, Wahaha Guiyang Base did not have the ability to automate data acquisition of meters and gas meters in each production line, and has been using manual meter reading method. However, due to the large area of the factory and the limited number of actual production and management personnel(many production lines have been automated and unmanned production, and the number of workers and managers in the factory is not large), the frequency and efficiency of inspection are difficult to guarantee. Workers often turn on most of the meters and air compressors in the production line in order to ensure production. In fact, not all production lines need to turn on all the equipment, which leads to a lot of waste of electricity and gas energy. Therefore, establishing a unified and real-time energy consumption monitoring platform to digitalize and transparent production energy consumption data is an important step to help managers realize fine management of energy consumption and achieve energy conservation and emission reduction.
+
+## EMQ&YottaCloud's industrial energy consumption monitoring project
+
+From the middle of 2017, with the strong support of the Guizhou Municipal Government and the Wahaha Group, Guizhou YottaCloud and EMQ launched the IoT energy consumption monitoring project of the Guiyang Wahaha production base. In the first phase of the project, real-time collection of electricity meters and gas meters for three plants was carried out. The energy-based data aggregation was realized by the Iot cloud platform, and the energy consumption data was monitored, analyzed and alarmed through remote large-screen and mobile phone Apps.
+
+Before the project, the plant also carried out energy consumption data collection and monitoring projects. However, due to the limited types of equipment access, data storage and display can only be dispersed in various power distribution rooms and plant sites, and it is impossible to realize the Uniform access to data from various types of meters in the entire plant. Therefore, after the implementation of the project, it can not  help managers to monitor the energy consumption in real time, and also can not support the improvement of the energy management process. Therefore, at the beginning of the implementation of the project, the factory also put forward a clear need for the project:
+
+1. Cover as many electricity meters and gas meters as possible in the three plant areas;
+2. All data is uniformly connected to the cloud platform;
+3. Data collection and display should be guaranteed in real time.
+
+
+![11png.png](https://static.emqx.net/images/4268d9fe7ca2967311d6d9cd94af1a94.png)
+
+The project implementation is based on Guizhou YottaCloud's SME cloud platform and EMQ's IoT equipment management and application enablement platform. Guizhou YottaCloud is responsible for the overall project implementation and monitoring platform application development:
+
+- Edge layer: Collect various industrial meter data into the gateway by deploying multiple industrial gateways at different locations in different sites to connect various industrial buses and industrial protocols such as Modbus. According to the location of the gateway and network conditions, the data is reported to the platform based on the 4G or wired network. Data real-time performance varies from second to minute depending on different business needs.
+- Platform layer: The IoT device management and application enablement platform provided by EMQ can aggregate and storage the data reported by the industrial gateway, and provide data interface support for the application layer. The platform has the following features:
+  1. The platform is based on EMQ X message middleware, with high stability, which can guarantee 24/7 operation and important industrial data stable transmission; platform data access and routing can achieve millisecond delay, ensuring real-time performance of industrial data monitoring;
+  2. The platform provides a rich data interface that greatly accelerates the development of upper-level industrial applications and data analysis systems;
+  3. The platform provides remote gateway configuration and management capabilities to facilitate the management of the gateway for users.
+- Application layer: Provide real-time monitoring of large-screen and mobile-side small Apps for various industrial meters, and real-time monitoring of data such as electricity meters, gas meters, and photovoltaic power. The application layer implements the threshold setting and alarm capability of the meter data by setting business rules at the platform level, and pushes the alarm message to the plant management personnel in time when the meter reports that the data is overloaded.
+  Due to the obsolescence of some of the meters in the plant area, the data acquisition interface cannot be provided. In order to ensure the coverage of the collection, YottaCloud and the plant coordinated and designed the manual meter reading process, and integrated into the automatic acquisition application to achieve unified data aggregation of manual and automatic meter reading.
+
+![22.png](https://static.emqx.net/images/3bc20e77535a89689ff02f5baf4ab447.png)
+
+The first stage of the project covered the energy consumption monitoring of the three plants in the Wahaha Guiyang base, deploying 11 industrial gateways, automatically collecting more than 200 electric meters and gas meters,with more than 5,000 data collection points.
+
+## The results of this project and the outlook for the future
+
+The project has been in trial operation since the beginning of 2019 and officially operated in March. The system has been running stably for more than 6 months. In the process of platform design and implementation, EMQ worked with the production base management personnel to continuously polish the design and demand of the IoT energy consumption platform. Production base managers also continuously improve the energy management process of the entire plant based on platform capabilities. From the data and alarm information reported in real time, the management has developed a series of new energy management processes, such as merging the pipeline network of air compressor and other high-energy-consuming equipment  according to the operation load of production line, so as to achieve more efficient and refined management.
+
+After the energy consumption monitoring platform and the new operation process was officially launched in Guiyang plant, the energy efficiency evaluation was ranked  from the previous 20 to the present first position in the entire Wahaha Group's more than 30 factories for three consecutive months. This significant achievement has attracted the attention of the Wahaha Group and the Guiyang Municipal Government.
+
+Through the implementation of the first stage of the project, the enterprise side has also strengthened its confidence to continue to deepen the transformation.  In the later stage, we will expand the scope of data acquisition business based on the current achievements, and achieve data acquisition and unified scheduling and management in logistics, plant management and other aspects; on the other hand, we will deepen the combination of data acquisition and production process, analyze the production energy consumption data through large data model, and realize intelligent and automatic management of production process by the analysis result.
+
+## Some thoughts
+
+In the past two years, with the promotion and support of the country's industrial upgrading and energy conservation and emission reduction projects, a large number of industrial Internet and smart factory projects have been launched and implemented, but not all projects have achieved the expected results.
+
+On the one hand, the level of equipment to process technology is uneven in the long-term development of industrial enterprises, and the difficulty and cost of transformation and upgrading are uneven. If the project planning can not be combined with the actual situation of the enterprise, it is often difficult to let the enterprise see the actual effect in the short-term, and then lose confidence in the project.
+
+On the other hand, the improvement of information-based intelligent technology and the improvement of production management processes need to cooperate with each other. If the enterprise does not actively participate in the transformation project to combine the technology to achieve real process transformation, it cannot truly achieve the target of production efficiency improvement and production cost reduction.
+
+In the Wahaha Guiyang base project, we have adopted the small-step and fast-running method to solve the most urgent problems in the production process, and through the combination of technological transformation and process transformation, we have realized leap-forward progress in energy management, so that enterprises can see the actual results. It provides a solid foundation for further deepening the transformation. The delivery of results from this project also provides valuable lessons for other industrial IoT projects.
+
+
+
+Related Links: [EMQ x Industrial IoT Solutions](https://mp.weixin.qq.com/s?__biz=Mzg3NjAyMjM0NQ==&mid=2247484013&idx=1&sn=ef9dc3bc5ed66cf3b71880faa4acafa1&chksm=cf39dd4bf84e545db54177b856789bb344e0c4eb28d0125c015499afd43a3bcec1b7265691bb&token=964914743&lang=zh_CN#rd)
+
+
+
