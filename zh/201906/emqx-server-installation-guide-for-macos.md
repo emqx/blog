@@ -1,0 +1,61 @@
+
+## 安装 EMQ X
+
+您可以根据需要以不同方式安装 EMQ X ：
+
+- 直接通过 [Homebrew](<https://brew.sh/>) 安装最新的稳定版 EMQ X 
+- 手动下载软件包并安装。
+
+### 使用Homebrew安装 EMQ X 
+
+1. 添加 EMQ X 的 tap
+
+   ```
+   $ brew tap emqx/emqx
+   ```
+
+2. 安装 EMQ X
+
+   ```
+   $ brew install emqx
+   ```
+
+3. 启动 EMQ X
+
+   ```
+   $ emqx start
+   emqx 3.1 is started successfully!
+   $ emqx_ctl status
+   Node 'emqx@127.0.0.1' is started
+   emqx v3.1.0 is running
+   ```
+
+4. EMQ X 启动成功，如何使用请参考[官方文档](https://developer.emqx.io/docs/broker/v3/cn/getstarted.html)
+
+### 使用安装包安装 EMQ X 
+
+#### 从 `.zip` 文件安装
+
+1. 转到  `emqx.io`  或  github ，选择 EMQ X 版本，然后下载要安装的 `.zip` 文件。
+
+2. 解压压缩包，将下面的路径更改为您下载 EMQ X 软件包的路径。
+
+   ```
+   $ unzip /path/to/emqx-macos-v3.1.0.zip
+   ```
+
+3. 启动 EMQ X
+
+   ```
+   $ cd emqx
+   $ ./bin/emqx start
+   emqx 3.1 is started successfully!
+   $ ./bin/emqx_ctl status
+   Node 'emqx@127.0.0.1' is started
+   emqx v3.1.0 is running
+   ```
+
+4. EMQ X 启动成功，如何使用请参考[官方文档](https://docs.emqx.io/broker/cn)
+
+
+
