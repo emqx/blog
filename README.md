@@ -1,2 +1,2 @@
-# blog
-EMQ Blog
+# EMQ Blog
+
