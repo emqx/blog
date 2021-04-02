@@ -23,7 +23,7 @@
 ## **社区动态**
 
 - 为了使我们的开源项目以更具创新、更加积极的状态高效迭代快速推进，EMQ X 团队开始正式采用 RFC 流程，以收集来自社区的意见，持续完善产品功能。我们将管理该流程的存储库命名为 EIP，全称为： **EMQ X Improvement Proposals。** 项目地址：[https://github.com/emqx/eip](https://github.com/emqx/eip)。
-- 我们本月上线了 EMQ 中文问答社区 askemq.com，这个社区可以帮助中国大陆的用户更方便地进行协作和分享。
+- 我们本月上线了 EMQ 中文问答社区 [askemq.com](https://askemq.com/)，这个社区可以帮助中国大陆的用户更方便地进行协作和分享。
 - 线上 DEMO 会议按照每两周一次的频率持续进行, 得到了多个开发团队及社区成员支持。
 - EMQ X 团队即将在杭州 Ofiice 举办第一次线下 Open Day 活动，敬请关注。
 
