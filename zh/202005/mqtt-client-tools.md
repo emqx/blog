@@ -23,7 +23,7 @@ MQTT 客户端工具常用于建立与 [MQTT 服务器](https://www.emqx.io/cn/p
 
 - MQTT X
 
-- Mosquito CLI
+- Mosquitto CLI
 
 - MQTT.fx
 
@@ -74,13 +74,13 @@ MQTT X 功能较全面，用户可以快速测试 MQTT/TCP、MQTT/TLS、MQTT/Web
 
 
 
-## Mosquito CLI
+## Mosquitto CLI
 
 ### 客户端简介
 
 Mosquitto 是一个开源(EPL/EDL 许可证)的消息代理，Mosquitto 安装之后默认提供了 [mosquitto_pub](https://mosquitto.org/man/mosquitto_pub-1.html) 和 [mosquitto_sub](https://mosquitto.org/man/mosquitto_sub-1.html) 两个命令行 MQTT 客户端工具。
 
-Mosquito CLI 有多个配置选项，支持 TLS 证书连接、通过代理服务器连接，支持 debug 模式，在 debug 模式下可以获取更详细的消息信息。
+Mosquitto CLI 有多个配置选项，支持 TLS 证书连接、通过代理服务器连接，支持 debug 模式，在 debug 模式下可以获取更详细的消息信息。
 
 它的使用也非常简便，默认使用环境只需提供少许参数即可使用：
 
