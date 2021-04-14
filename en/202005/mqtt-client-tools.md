@@ -21,7 +21,7 @@ This article will combine the features of each MQTT client tool to introduce eva
 
 - MQTT X
 
-- Mosquito CLI
+- Mosquitto CLI
 
 - MQTT.fx
 
@@ -72,13 +72,13 @@ MQTT X has relatively comprehensive functions. Users can quickly test the connec
 
 
 
-## Mosquito CLI
+## Mosquitto CLI
 
 ### Introduction to client
 
 Mosquitto is an open-sourced (EPL/EDL license) message broker. Mosquitto provides two command-line MQTT client tools, [mosquitto_pub](https://mosquitto.org/man/mosquitto_pub-1.html) and [mosquitto_sub](https://mosquitto.org/man/mosquitto_sub-1.html)  by default after installation.
 
-Mosquito CLI has multiple configuration options, supports connections through TLS certificate and a proxy server, supports debug mode, and can get more detailed message information in debug mode.
+Mosquitto CLI has multiple configuration options, supports connections through TLS certificate and a proxy server, supports debug mode, and can get more detailed message information in debug mode.
 
 It is also very easy to use, only needs to provide a few parameters in the default usage environment to use:
 
