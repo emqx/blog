@@ -97,8 +97,8 @@ make
 安装完成后，CoAP 终端 PUT 消息到  `coap_to_mqtt` 主题。
 
 ```shell
-# CoAP 终端发送消息 hello EMQ X world,  i am coap，topic 为 coap_to_mqtt
-./examples/coap-client -m put -e "hello EMQ X world, i am coap"  "coap://127.0.0.1/mqtt/coap_to_mqtt?c=coap20211&u=tom&p=secret"
+# CoAP 终端发送消息 hello EMQ X world,  I am coap，topic 为 coap_to_mqtt
+./examples/coap-client -m put -e "hello EMQ X world, I am coap"  "coap://127.0.0.1/mqtt/coap_to_mqtt?c=coap20211&u=tom&p=secret"
 # 命令中的 127.0.0.1 替换为你的 EMQ X Broker 部署地址
 ```
 
