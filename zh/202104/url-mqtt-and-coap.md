@@ -119,7 +119,7 @@ make
 
 
 
-MQTT X 发送 `hello coap, i am mqtt welcome to EMQ X Wrold!`  至 `mqtt_to_coap` 主题。
+MQTT X 发送 `hello coap, I am mqtt welcome to EMQ X Wrold!`  至 `mqtt_to_coap` 主题。
 
 ![image20210412165434332.png](https://static.emqx.net/images/966dc4195705ae31e41842261fc7b164.png)
 
@@ -129,7 +129,7 @@ CoAP 也收到了来自 MQTT 的回应。
 
 ```shell
 ./examples/coap-client -m get -s 20 "coap://127.0.0.1/mqtt/mqtt_to_coap?c=client1&u=tom&p=secret"
-hello coap , i am mqtt ,welcome to EMQ World
+hello coap , I am mqtt ,welcome to EMQ World
 ```
 
 
@@ -139,13 +139,3 @@ hello coap , i am mqtt ,welcome to EMQ World
 
 
 在 EMQ X World，不仅有 MQTT、CoAP、LWM2M、JT808 以及未来将支持的更多不同物联网协议插件，同时我们也为你提供了[插件的开发模板](https://github.com/emqx/emqx-plugin-template)。我们期待在这里，所有的物联网设备都能相会，碰撞出耀眼的火花，照亮物联网的世界。
-
-
-
-> 本文作者
->
-> 黄    迪  EMQ X 研发工程师，EMQ X Broker & Enterprise
->
-> 周子博  EMQ X 开源项目经理，主要负责项目管理和社区维护，在 IoT 领域深耕多年，有着非常丰富的行业经验
-
-
