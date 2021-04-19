@@ -140,7 +140,7 @@ QoS 表示应用消息分发的服务质量等级保证
 
 Publish 报文不能将 QoS 所有的位设置为 1。如果服务端或客户端收到 QoS 所有位都为 1 的 Publish 报文，它必须关闭网络连接。
 
-关于不同等级的QoS的工作原理，请查阅[MQTT 5.0 协议介绍 - QoS 服务质量](https://www.emqx.io/cn/blog/introduction-to-mqtt5-protocol-qos)。
+关于不同等级的QoS的工作原理，请查阅[MQTT 5.0 协议介绍 - QoS 服务质量](https://www.emqx.cn/blog/introduction-to-mqtt5-protocol-qos)。
 
 #### Retain
 

@@ -2,7 +2,7 @@
 
 ### MQTT 简介
 
-[MQTT 协议](https://www.emqx.io/cn/mqtt) 因为其轻量、灵活等特点成为了当今世界上最受欢迎的物联网协议，它已经广泛应用于车联网、智能家居、物流、即时聊天应用和移动消息推送等领域，连接了数以亿计的设备，并且每时每刻都有无数设备开始使用和接入 MQTT 协议。MQTT 协议为这些设备提供了稳定、可靠的通信基础，这些设备庞大的接入数量也向 MQTT 协议规范提出了挑战，[MQTT 5.0](https://www.emqx.io/cn/mqtt/mqtt5) 的诞生便是为了更好地满足这一需求。
+[MQTT 协议](https://www.emqx.cn/mqtt) 因为其轻量、灵活等特点成为了当今世界上最受欢迎的物联网协议，它已经广泛应用于车联网、智能家居、物流、即时聊天应用和移动消息推送等领域，连接了数以亿计的设备，并且每时每刻都有无数设备开始使用和接入 MQTT 协议。MQTT 协议为这些设备提供了稳定、可靠的通信基础，这些设备庞大的接入数量也向 MQTT 协议规范提出了挑战，[MQTT 5.0](https://www.emqx.cn/mqtt/mqtt5) 的诞生便是为了更好地满足这一需求。
 
 
 
@@ -31,19 +31,19 @@ MQTT（消息队列遥测传输）最初由 IBM 于上世纪 90 年代晚期发�
 
 ### 拥抱 MQTT 5.0
 
-随着各 [MQTT 服务器](https://www.emqx.io/cn/products/broker) 厂商不断加入 MQTT 5.0 的支持阵营（例如 [EMQ](https://www.emqx.io/cn/) 在 2018 年 9 月就已经完整支持了 MQTT 5.0 协议），整个行业生态逐步迁移至 MQTT 5.0 已经成为大的趋势，MQTT 5.0 也将是未来绝大多数物联网企业的首选。我们也希望用户能够尽早拥抱 MQTT 5.0 并且享受到它带来的便利，这也是这篇文章的目的。如果您已经对 MQTT 5.0 产生了一些兴趣，但还想了解更多，您可以尝试阅读以下文章，我们将以通俗易懂的方式为您介绍 MQTT 5.0 的重要特性：
+随着各 [MQTT 服务器](https://www.emqx.cn/products/broker) 厂商不断加入 MQTT 5.0 的支持阵营（例如 [EMQ](https://www.emqx.cn/) 在 2018 年 9 月就已经完整支持了 MQTT 5.0 协议），整个行业生态逐步迁移至 MQTT 5.0 已经成为大的趋势，MQTT 5.0 也将是未来绝大多数物联网企业的首选。我们也希望用户能够尽早拥抱 MQTT 5.0 并且享受到它带来的便利，这也是这篇文章的目的。如果您已经对 MQTT 5.0 产生了一些兴趣，但还想了解更多，您可以尝试阅读以下文章，我们将以通俗易懂的方式为您介绍 MQTT 5.0 的重要特性：
 
-- [全新开始标识与会话过期间隔](https://www.emqx.io/cn/blog/mqtt5-new-feature-clean-start-and-session-expiry-interval)
+- [全新开始标识与会话过期间隔](https://www.emqx.cn/blog/mqtt5-new-feature-clean-start-and-session-expiry-interval)
 - 消息过期间隔
-- [原因码与 ACK](https://www.emqx.io/cn/blog/mqtt5-new-features-reason-code-and-ack)
-- [载荷格式和内容类型](https://www.emqx.io/cn/blog/mqtt5-new-features-payload-format-indicator-and-content-type)
+- [原因码与 ACK](https://www.emqx.cn/blog/mqtt5-new-features-reason-code-and-ack)
+- [载荷格式和内容类型](https://www.emqx.cn/blog/mqtt5-new-features-payload-format-indicator-and-content-type)
 - 请求响应
-- [共享订阅](https://www.emqx.io/cn/blog/introduction-to-mqtt5-protocol-shared-subscription)
-- [订阅标识符与订阅选项](https://www.emqx.io/cn/blog/subscription-identifier-and-subscription-options)
+- [共享订阅](https://www.emqx.cn/blog/introduction-to-mqtt5-protocol-shared-subscription)
+- [订阅标识符与订阅选项](https://www.emqx.cn/blog/subscription-identifier-and-subscription-options)
 - 主题别名
-- [流量控制](https://www.emqx.io/cn/blog/mqtt5-flow-control)
+- [流量控制](https://www.emqx.cn/blog/mqtt5-flow-control)
 - 用户属性
-- [增强认证](https://www.emqx.io/cn/blog/mqtt5-enhanced-authentication)
+- [增强认证](https://www.emqx.cn/blog/mqtt5-enhanced-authentication)
 
 
 

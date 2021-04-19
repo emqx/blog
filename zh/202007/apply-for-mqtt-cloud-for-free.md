@@ -1,6 +1,6 @@
 
 
-长期以来 EMQ 以开源社区为基础，通过开源软件+商业服务的方式为广大用户提供高性能、高稳定性的 [MQTT 消息中间件](https://www.emqx.io/cn/products/broker) 与 [MQTT 物联网云服务平台](https://cloud.emqx.io/cn/)。 
+长期以来 EMQ 以开源社区为基础，通过开源软件+商业服务的方式为广大用户提供高性能、高稳定性的 [MQTT 消息中间件](https://www.emqx.cn/products/broker) 与 [MQTT 物联网云服务平台](https://cloud.emqx.io/cn/)。 
 
 为回馈广大高校学生、教师及研究机构人员对 EMQ 的长期关注与支持，同时也为了推动教育教学、科学研究方面物联网及相关产业的应用和发展，EMQ 推出了「物联上云——高校及研究院合作计划」，面向高校和研究机构提供免费的 EMQ X Cloud MQTT 云服务以及相关的技术咨询支持。
 
@@ -41,7 +41,7 @@ EMQ 将向符合条件的高校学生、教师及研究机构提供免费 EMQ X 
 
 ## 申请方式
 
-1.	注册 EMQ 账号，进入活动页面填写申请表单，申请入口详见（https://www.emqx.io/cn/college_plans）
+1.	注册 EMQ 账号，进入活动页面填写申请表单，申请入口详见（https://www.emqx.cn/college_plans）
 2.	EMQ 将在 1-5 个工作日完成审核并发放资料，请保持所留联系方式畅通
 3.	活动咨询 微信号：EMQ303，邮箱：contact@emqx.io
 

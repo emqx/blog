@@ -37,16 +37,16 @@
 
 | 编号 | 名称                                                       | 提供商       | 开源              |
 | ---- | ---------------------------------------------------------- | ------------ | ----------------- |
-| 1    | [EMQ X Neuron](https://www.emqx.io/cn/products/neuron)     | EMQ          | 否 - `1`          |
-| 2    | [EMQ X Edge](https://www.emqx.io/cn/products/edge)         | EMQ          | 是, Apache 2.0    |
-| 3    | [EMQ X Kuiper](https://www.emqx.io/cn/products/kuiper)     | EMQ          | 是, Apache 2.0    |
+| 1    | [EMQ X Neuron](https://www.emqx.cn/products/neuron)     | EMQ          | 否 - `1`          |
+| 2    | [EMQ X Edge](https://www.emqx.cn/products/edge)         | EMQ          | 是, Apache 2.0    |
+| 3    | [EMQ X Kuiper](https://www.emqx.cn/products/kuiper)     | EMQ          | 是, Apache 2.0    |
 | 4    | [Edge manager](https://hub.docker.com/r/emqx/edge-manager) | EMQ          | 否 - `2`          |
 | 5    | TDengine                                                   | Taosdata     | 是, GNU AGPL v3.0 |
 | 6    | Grafana                                                    | Grafana Labs | 是, Apache 2.0    |
 
-`1:` Neuron 未来规划会将基础功能进行开源，目前用户下载后可以免费使用，如果内置试用版本的数据采集点数不够，可以通过 EMQ 网站进行[在线申请](https://www.emqx.io/cn/downloads#neuron)。
+`1:` Neuron 未来规划会将基础功能进行开源，目前用户下载后可以免费使用，如果内置试用版本的数据采集点数不够，可以通过 EMQ 网站进行[在线申请](https://www.emqx.cn/downloads#neuron)。
 
-`2:` 用户可以免费使用，免费版本中除了管理的节点数目受限之外，用户可以使用所有功能。如果用户想试用更多的节点管理功能，可以通过 EMQ 网站进行[在线申请](https://www.emqx.io/cn/downloads#neuron)。
+`2:` 用户可以免费使用，免费版本中除了管理的节点数目受限之外，用户可以使用所有功能。如果用户想试用更多的节点管理功能，可以通过 EMQ 网站进行[在线申请](https://www.emqx.cn/downloads#neuron)。
 
 **产品基本功能描述**
 
@@ -84,9 +84,9 @@
 
 | 编号 | 名称                                                       | x86*32 | x86*64 | ARM 7 | ARM 64 | PPC64 | Mac  | Docker |
 | ---- | ---------------------------------------------------------- | ------ | ------ | ----- | ------ | ----- | ---- | ------ |
-| 1    | [EMQ X Neuron](https://www.emqx.io/cn/products/neuron)     |        | ☑      | ☑     | ☑      | ☑     |      | ☑      |
-| 2    | [EMQ X Edge](https://www.emqx.io/cn/products/edge)         | ☑      | ☑      | ☑     | ☑      | ☑     | ☑    | ☑      |
-| 3    | [EMQ X Kuiper](https://www.emqx.io/cn/products/kuiper)     | ☑      | ☑      | ☑     | ☑      | ☑     | ☑    | ☑      |
+| 1    | [EMQ X Neuron](https://www.emqx.cn/products/neuron)     |        | ☑      | ☑     | ☑      | ☑     |      | ☑      |
+| 2    | [EMQ X Edge](https://www.emqx.cn/products/edge)         | ☑      | ☑      | ☑     | ☑      | ☑     | ☑    | ☑      |
+| 3    | [EMQ X Kuiper](https://www.emqx.cn/products/kuiper)     | ☑      | ☑      | ☑     | ☑      | ☑     | ☑    | ☑      |
 | 4    | [Edge manager](https://hub.docker.com/r/emqx/edge-manager) | ☑      | ☑      | ☑     | ☑      | ☑     | ☑    | ☑      |
 | 5    | TDengine                                                   | ☑      | ☑      |       | ☑      |       |      | ☑      |
 
@@ -138,7 +138,7 @@
 
 - [Kuiper](https://marketplace.huaweicloud.com/product/OFFI474477808879489024) 在 IEF 上已经上线，可以通过 IEF 平台直接部署、安装和运维（读者可以参考视频「[云边协同高效实现物联网边缘流式业务处理 - 华为 IEF & EMQ X Kuiper 轻量级边缘数据解决方案](https://www.bilibili.com/video/BV1hQ4y1A7Vy?from=search&seid=15773267177167801393) 」来了解如何在 IEF 中使用 Kuiper）；Neuron 和 Edge 目前暂未在 IEF 上线，但是用户可以直接通过 Docker Hub 安装至边缘节点中；然后在云端通过部署 Edge Manager 来进行统一的管理和控制。
 - [EMQ X Enterprise](https://marketplace.huaweicloud.com/product/00301-511011-0--0) 已经在华为云上线，用户也可以使用由 EMQ 提供的[在线云服务](https://cloud.emqx.io/cn/)； 
-- 云端的数据持久化或者桥接方式，用户可以根据需要进行选择，相关信息可以参考 [EMQ 网站](https://www.emqx.io/cn/products/enterprise)；
+- 云端的数据持久化或者桥接方式，用户可以根据需要进行选择，相关信息可以参考 [EMQ 网站](https://www.emqx.cn/products/enterprise)；
 
 ### 总结
 

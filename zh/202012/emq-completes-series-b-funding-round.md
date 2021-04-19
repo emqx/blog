@@ -4,7 +4,7 @@ EMQ 公司于 2017 年在杭州成立，是⼀家开源基础软件公司，致�
 
 EMQ 认为 **IoT 场景与应用的核心逻辑是从数据获取到业务洞察，从而创造价值。** 产品布局始终聚焦物联网基础设施的数据枢纽环节，围绕 IoT 数据的实时消息与流处理向云端、边缘端两大领域延伸提供标准化开源软件产品。 
 
-在云端，其核心开源项目 [EMQ X Broker - 高并发软实时的分布式 MQTT 消息服务器](https://www.emqx.io/cn/products/broker)，经过多年近 160 个版本迭代，逐渐演进为 5G & IoT 融合数据接⼊平台，具备高可靠性、高承载能力、低延时、完整协议支持等功能特点： 
+在云端，其核心开源项目 [EMQ X Broker - 高并发软实时的分布式 MQTT 消息服务器](https://www.emqx.cn/products/broker)，经过多年近 160 个版本迭代，逐渐演进为 5G & IoT 融合数据接⼊平台，具备高可靠性、高承载能力、低延时、完整协议支持等功能特点： 
 
 - 全球领先的 5G & IoT 融合接入平台，3G/4G/5G、NB-IoT 等全网络支持，MQTT & CoAP 多协议支持，全场景的 5G & IoT 应用支持;
 - 千万级并发连接支持，毫秒级消息时延和电信级可靠等技术特点，非常契合 5G 的 mMTC(海量物联)和 uRLLC(高可靠、低时延网络)标准;
@@ -18,7 +18,7 @@ EMQ 认为 **IoT 场景与应用的核心逻辑是从数据获取到业务洞察
 
 ![流处理](https://static.emqx.net/images/a7cc8103445c999e458814a439f79367.jpeg)
 
-在边缘端，为解决各类设备间繁杂的通信协议处理以及所处环境差异导致的计算资源限制程度各异等问题，EMQ 围绕 **消息、流处理、协议转换** 三个方面分别推出了 [轻量级消息接入中间件 EMQ X Edge](https://www.emqx.io/cn/products/edge)、[轻量级边缘流式数据处理引擎 EMQ X Kuiper](https://www.emqx.io/cn/products/kuiper) 和 [工业协议网关软件 EMQ X Neuron](https://www.emqx.io/cn/products/neuron) 三款产品，打造针对物联网边缘计算的完整产品矩阵，建立护城河。 
+在边缘端，为解决各类设备间繁杂的通信协议处理以及所处环境差异导致的计算资源限制程度各异等问题，EMQ 围绕 **消息、流处理、协议转换** 三个方面分别推出了 [轻量级消息接入中间件 EMQ X Edge](https://www.emqx.cn/products/edge)、[轻量级边缘流式数据处理引擎 EMQ X Kuiper](https://www.emqx.cn/products/kuiper) 和 [工业协议网关软件 EMQ X Neuron](https://www.emqx.cn/products/neuron) 三款产品，打造针对物联网边缘计算的完整产品矩阵，建立护城河。 
 
 EMQ 作为国内最早采用开源模式的基础软件创业公司之一，创始人李枫认为开源既是新型生产和协作方式，也是面向未来的创新性商业模式。2017 年他曾写下 **「我们相信并 All-In 企业开源软件。开放源码与社区协作生产方式，将塑造人类 ICT 产业新的未来」。**
 

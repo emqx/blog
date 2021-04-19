@@ -9,11 +9,11 @@
 
 ### EMQ X Kuiper
 
-[EMQ X Kuiper](https://www.emqx.io/cn/products/kuiper) 是 Golang 实现的轻量级物联网边缘分析、流式处理开源软件，可以运行在各类资源受限的边缘设备上。Kuiper 设计的一个主要目标就是将在云端运行的实时流式计算框架（比如 [Apache Spark](https://spark.apache.org/)，[Apache Storm](https://storm.apache.org/) 和 [Apache Flink](https://flink.apache.org/) 等）迁移到边缘端。Kuiper 参考了上述云端流式处理项目的架构与实现，结合边缘流式数据处理的特点，采用了编写基于`源 (Source)`，`SQL (业务逻辑处理)`, `目标 (Sink)` 的规则引擎来实现边缘端的流式数据处理。项目地址：[https://github.com/emqx/kuiper](https://github.com/emqx/kuiper)
+[EMQ X Kuiper](https://www.emqx.cn/products/kuiper) 是 Golang 实现的轻量级物联网边缘分析、流式处理开源软件，可以运行在各类资源受限的边缘设备上。Kuiper 设计的一个主要目标就是将在云端运行的实时流式计算框架（比如 [Apache Spark](https://spark.apache.org/)，[Apache Storm](https://storm.apache.org/) 和 [Apache Flink](https://flink.apache.org/) 等）迁移到边缘端。Kuiper 参考了上述云端流式处理项目的架构与实现，结合边缘流式数据处理的特点，采用了编写基于`源 (Source)`，`SQL (业务逻辑处理)`, `目标 (Sink)` 的规则引擎来实现边缘端的流式数据处理。项目地址：[https://github.com/emqx/kuiper](https://github.com/emqx/kuiper)
 
 > 版本：v1.0.2
 
-[下载链接](https://www.emqx.io/cn/downloads#kuiper) ｜ [安装文档](https://docs.emqx.cn/cn/kuiper/latest/getting_started.html#%E4%B8%8B%E8%BD%BD%E5%92%8C%E5%AE%89%E8%A3%85)
+[下载链接](https://www.emqx.cn/downloads#kuiper) ｜ [安装文档](https://docs.emqx.cn/kuiper/latest/getting_started.html#%E4%B8%8B%E8%BD%BD%E5%92%8C%E5%AE%89%E8%A3%85)
 
 ```shell
 # 获取 Docker 镜像
@@ -41,11 +41,11 @@ $ docker run -p 9082:9082 -d emqx/kuiper-manager:1.0.2
 
 ### EMQ X Edge
 
-[EMQ X Edge](https://www.emqx.io/cn/products/edge) 是轻量级多协议物联网边缘消息中间件，支持部署在资源受限的物联网边缘硬件。项目地址：[https://github.com/emqx/emqx](https://github.com/emqx/emqx)
+[EMQ X Edge](https://www.emqx.cn/products/edge) 是轻量级多协议物联网边缘消息中间件，支持部署在资源受限的物联网边缘硬件。项目地址：[https://github.com/emqx/emqx](https://github.com/emqx/emqx)
 
 > 版本：v4.2.4
 
-[下载链接](https://www.emqx.io/cn/downloads#edge) | [安装文档](https://docs.emqx.cn/cn/edge/latest/install.html)
+[下载链接](https://www.emqx.cn/downloads#edge) | [安装文档](https://docs.emqx.cn/edge/latest/install.html)
 
 ```shell
 # 获取 Docker 镜像
@@ -136,7 +136,7 @@ CREATE STREAM demo (
 
    > 注意：如果使用的 MQTT Broker 为 Docker 启动的 EMQ X Edge 话，Broker 地址需要填写为 Docker 容器内的 IP 地址
 
-4. 设置 `选项`，选项部分为可选，均有默认值，如需修改可参考 [Kuiper 文档](https://docs.emqx.cn/cn/kuiper/latest/rules/overview.html#%E9%80%89%E9%A1%B9) 进行设置。
+4. 设置 `选项`，选项部分为可选，均有默认值，如需修改可参考 [Kuiper 文档](https://docs.emqx.cn/kuiper/latest/rules/overview.html#%E9%80%89%E9%A1%B9) 进行设置。
 
 ![kuipercreaterule.png](https://static.emqx.net/images/66bffdc71ba9c49183b080d42d6135b4.png)
 

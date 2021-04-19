@@ -4,13 +4,13 @@
 
 日期：2020/5/7
 
-Kuiper 团队宣布发布 Kuiper 0.4.0，[下载 Kuiper](https://www.emqx.io/cn/downloads#kuiper)。
+Kuiper 团队宣布发布 Kuiper 0.4.0，[下载 Kuiper](https://www.emqx.cn/downloads#kuiper)。
 
 EMQ X Kuiper 是 Golang 实现的轻量级物联网边缘分析、流式处理开源软件，可以运行在各类资源受限的边缘设备上。Kuiper 设计的一个主要目标就是将在云端运行的实时流式计算框架（比如 [Apache Spark](https://spark.apache.org/)，[Apache Storm](https://storm.apache.org/) 和 [Apache Flink](https://flink.apache.org/) 等）迁移到边缘端。Kuiper 参考了上述云端流式处理项目的架构与实现，结合边缘流式数据处理的特点，采用了编写基于`源 (Source)`，`SQL (业务逻辑处理)`, `目标 (Sink)` 的规则引擎来实现边缘端的流式数据处理。
 
 ![arch.png](https://static.emqx.net/images/930d8c9a80229f6f88b7b6c4648a32d7.png)
 
-更多信息请访问 [EMQ 官网](https://www.emqx.io/cn/products/kuiper) 或 [Kuiper GitHub](https://github.com/emqx/kuiper)。
+更多信息请访问 [EMQ 官网](https://www.emqx.cn/products/kuiper) 或 [Kuiper GitHub](https://github.com/emqx/kuiper)。
 
 ### 概览
 

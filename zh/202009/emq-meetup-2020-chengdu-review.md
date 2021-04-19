@@ -63,7 +63,7 @@ EMQ X 的 ACL 有一定的缓存时间，不是每一个 Pub/Sub 都会去查询
 
 **Q：EMQ X 服务器所需配置怎么计算？EMQ X 这台服务器上可以装其他服务吗？**
 
-**A**：服务器配置取决于你的连接数、消息大小、消息频率。我们官网提供了一个在线计算器供参考。https://www.emqx.io/cn/server_estimate
+**A**：服务器配置取决于你的连接数、消息大小、消息频率。我们官网提供了一个在线计算器供参考。https://www.emqx.cn/server_estimate
 业务量比较小的时候可以装其他服务，不过还是建议单独一个服务器来运行 EMQ X，避免业务波动、业务量大的时候互相影响。
 ![12.jpeg](https://static.emqx.net/images/b0e5c3ae42c73de0e5ca54b86570d10d.jpeg)
 

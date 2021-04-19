@@ -12,7 +12,7 @@ Kuiper 的应用场景包括：运行在各类物联网的边缘使用场景中�
 
 ![arch.png](https://static.emqx.net/images/61f22139415d4ce161972a7de1c5b0f2.png)
 
-网址：https://www.emqx.io/products/kuiper
+网址：https://www.emqx.cn/products/kuiper
 
 Github仓库： https://github.com/emqx/kuiper
 

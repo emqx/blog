@@ -2,9 +2,9 @@
 
 ## 概览
 
-在 [EdgeX Geneva](https://www.edgexfoundry.org/) 版本中, [EMQ X Kuiper - 基于 SQL 的轻量级流式数据处理软件](https://www.emqx.io/cn/products/kuiper)与 EdgeX 进行了集成。在进入这篇教程之前，让我们先花一些时间来了解一些 Kuiper 的基本知识。EMQ X Kuiper 是 Golang 实现的轻量级物联网边缘分析、流式处理开源软件，可以运行在各类资源受限的边缘设备上。Kuiper 基于`源 (Source)`，`SQL (业务逻辑处理)`， `目标 (Sink)` 的方式来支持流式数据处理。
+在 [EdgeX Geneva](https://www.edgexfoundry.org/) 版本中, [EMQ X Kuiper - 基于 SQL 的轻量级流式数据处理软件](https://www.emqx.cn/products/kuiper)与 EdgeX 进行了集成。在进入这篇教程之前，让我们先花一些时间来了解一些 Kuiper 的基本知识。EMQ X Kuiper 是 Golang 实现的轻量级物联网边缘分析、流式处理开源软件，可以运行在各类资源受限的边缘设备上。Kuiper 基于`源 (Source)`，`SQL (业务逻辑处理)`， `目标 (Sink)` 的方式来支持流式数据处理。
 
-- 源（Source）：流式数据的数据源，例如来自于 [MQTT 服务器](https://www.emqx.io/cn/products/broker) 的数据。在 EdgeX 的场景下，数据源就是 EdgeX 消息总线（EdgeX message bus），可以是来自于 ZeroMQ 或者 MQTT 服务器；
+- 源（Source）：流式数据的数据源，例如来自于 [MQTT 服务器](https://www.emqx.cn/products/broker) 的数据。在 EdgeX 的场景下，数据源就是 EdgeX 消息总线（EdgeX message bus），可以是来自于 ZeroMQ 或者 MQTT 服务器；
 
 - SQL：SQL 是你流式数据处理指定业务逻辑的地方，Kuiper 提供了 SQL 语句可以对数据进行抽取、过滤和转换；
 - 目标（Sink）：目标用于将分析结果发送到特定的目标。例如，将分析结果发送到另外的 MQTT 服务器，或者一个 HTTP Rest 地址；
@@ -204,7 +204,7 @@ time="2020-04-17T06:32:31Z" level=info msg="sink result for rule rule1: [{\"bool
 
 ### 监控分析结果
 
-因为所有的分析结果都被发布到`tcp://broker.emqx.io:1883`，你可以直接使用以下的 `mosquitto_sub` 命令来监听结果，你也可以参考别的 [MQTT 客户端工具](https://www.emqx.io/cn/blog/mqtt-client-tools).
+因为所有的分析结果都被发布到`tcp://broker.emqx.io:1883`，你可以直接使用以下的 `mosquitto_sub` 命令来监听结果，你也可以参考别的 [MQTT 客户端工具](https://www.emqx.cn/blog/mqtt-client-tools).
 
 ```
 # mosquitto_sub -h broker.emqx.io -t result

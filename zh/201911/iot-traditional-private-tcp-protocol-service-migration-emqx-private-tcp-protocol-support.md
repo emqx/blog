@@ -124,7 +124,7 @@ EMQ 对私有 TCP 协议接入适配的仅在 EMQ X 企业版支持，适配后�
 
 欢迎各位用户下载试用 EMQ X Enterprise，在私有 TCP 协议接入定制包括其他私有化定制方面有任何需求可以同 EMQ 联系：
 
-- EMQ X Enterprise 下载试用：https://www.emqx.io/downloads
+- EMQ X Enterprise 下载试用：https://www.emqx.cn/downloads
 - 联系 EMQ：contact@emqx.io
 
 

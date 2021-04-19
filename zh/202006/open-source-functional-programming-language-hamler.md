@@ -1,7 +1,7 @@
 
 ![Hamler - 面向 IoT&5G 市场的开源函数编程语言](https://static.emqx.net/images/e9ed2864d47bc008960d1da810593b2b.png)
 
-[EMQ](https://www.emqx.io/cn/) 团队很高兴正式向 IoT&5G 市场发布[开源函数编程语言 - Hamler](https://hamler-lang.org/)！
+[EMQ](https://www.emqx.cn/) 团队很高兴正式向 IoT&5G 市场发布[开源函数编程语言 - Hamler](https://hamler-lang.org/)！
 
 Hamler 是一门构建在 [Erlang](https://www.erlang.org/) 虚拟机(VM)上的 [Haskell](https://www.haskell.org/) 风格的强类型(strongly-typed)编程语言，独特地结合了编译时的类型检查推导，与对运行时高并发和软实时能力的支持。
 
@@ -9,7 +9,7 @@ Hamler 编程语言将赋予行业，尤其是 5G、IoT、云计算和边缘计�
 
 ## 为什么发布 Hamler？
 
-近十年来，我们一直在开发基于 Erlang/OTP 的软件系统，特别是我们的核心产品可伸缩分布式[开源 MQTT 服务器 - EMQ X](https://www.emqx.io/cn/products/broker)。我们一直认为 Erlang/OTP，尤其是 Beam 虚拟机是工程学的杰作。它具有出色的并发性、分布性和容错性，是少数正确处理高并发和软实时的通用语言平台，是最适合开发 IoT 和 5G 应用的平台之一。
+近十年来，我们一直在开发基于 Erlang/OTP 的软件系统，特别是我们的核心产品可伸缩分布式[开源 MQTT 服务器 - EMQ X](https://www.emqx.cn/products/broker)。我们一直认为 Erlang/OTP，尤其是 Beam 虚拟机是工程学的杰作。它具有出色的并发性、分布性和容错性，是少数正确处理高并发和软实时的通用语言平台，是最适合开发 IoT 和 5G 应用的平台之一。
 
 从多年开发 Erlang 程序经验来看，我们一直期待解决两个问题：编译时类型系统与更友好的程序语法。编译时强大的类型系统有助于我们构建更可靠的软件系统；更友好的语法有助于我们创建一个繁荣的开发者社区。
 
@@ -70,7 +70,7 @@ Hamler 开源项目最终将与合作伙伴一起，贡献给欧盟 2049 开放�
 
 ## 欢迎加入 EMQ 研发团队
 
-[EMQ - 杭州映云科技有限公司](https://www.emqx.io/cn/about)致力于成为全球领先的消息与流处理开源软件企业，聚焦服务于新产业周期的 5G&IoT、边缘计算(Edge)与云计算(Cloud)市场。EMQ 研发团队主要采用 Erlang、Haskell 等函数编程语言，开发高并发、高可靠、软实时的大规模分布式系统。
+[EMQ - 杭州映云科技有限公司](https://www.emqx.cn/about)致力于成为全球领先的消息与流处理开源软件企业，聚焦服务于新产业周期的 5G&IoT、边缘计算(Edge)与云计算(Cloud)市场。EMQ 研发团队主要采用 Erlang、Haskell 等函数编程语言，开发高并发、高可靠、软实时的大规模分布式系统。
 
 招聘职位：[拉勾](https://www.lagou.com/gongsi/157269.html)，或联系HR：[hr@emqx.io](https://github.com/hamler-lang/hamler-internal/blob/master/posts/hr@emqx.io)
 
