@@ -1,6 +1,6 @@
 
 
-EMQ X Team 提供了 Helm chart 方便用户在 kubernetes 集群上一键部署 EMQ X [MQTT 服务器](https://www.emqx.io/cn/products/broker), 这是 EMQ X Team 最推荐的在 kubernetes 或 k3s 集群上部署 EMQ X MQTT 服务器的方法。 本文将使用手写 yaml 文件的方法从零开始部署一个 EMQ X MQTT 服务器的 K8S 集群, 分析部署中的细节与技巧，方便用户在实际部署中灵活使用。
+EMQ X Team 提供了 Helm chart 方便用户在 kubernetes 集群上一键部署 EMQ X [MQTT 服务器](https://www.emqx.cn/products/broker), 这是 EMQ X Team 最推荐的在 kubernetes 或 k3s 集群上部署 EMQ X MQTT 服务器的方法。 本文将使用手写 yaml 文件的方法从零开始部署一个 EMQ X MQTT 服务器的 K8S 集群, 分析部署中的细节与技巧，方便用户在实际部署中灵活使用。
 
 阅读本文需要用户了解 kubernetes 的基本概念，并有一个可操作的 kubernetes 集群。
 

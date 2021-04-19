@@ -1,4 +1,4 @@
-物联网数据采集涉及到大量设备接入、海量的数据传输，[EMQ X 物联网消息中间件](https://www.emqx.io/cn/products/broker) 与 ClickHouse 联机分析 (OLAP) 数据库的组合技术栈完全能够胜任物联网数据采集传输与存储、分析处理业务。
+物联网数据采集涉及到大量设备接入、海量的数据传输，[EMQ X 物联网消息中间件](https://www.emqx.cn/products/broker) 与 ClickHouse 联机分析 (OLAP) 数据库的组合技术栈完全能够胜任物联网数据采集传输与存储、分析处理业务。
 
 数据入库后，往往需要其他方式如数据可视化系统将数据按照规则统计、展现出来，实现数据的监控、指标统计等业务需求，以便充分发挥数据的价值，ClickHouse 搭配开源软件 Grafana 可以快速搭建物联网数据分析可视化平台。
 
@@ -12,7 +12,7 @@
 
 ### EMQ X 简介
 
-[EMQ X ](https://www.emqx.io/cn/) 是基于高并发的 Erlang/OTP 语言平台开发，支持百万级连接和分布式集群架构，发布订阅模式的开源 MQTT 消息服务器。EMQ X 内置了大量开箱即用的功能，其 **企业版 EMQ X Enterprise** 支持通过规则引擎将物联网消息数据存储到 ClickHouse。
+[EMQ X ](https://www.emqx.cn/) 是基于高并发的 Erlang/OTP 语言平台开发，支持百万级连接和分布式集群架构，发布订阅模式的开源 MQTT 消息服务器。EMQ X 内置了大量开箱即用的功能，其 **企业版 EMQ X Enterprise** 支持通过规则引擎将物联网消息数据存储到 ClickHouse。
 
 
 ### ClickHouse 简介
@@ -37,7 +37,7 @@ Grafana 4.6+ 版本支持通过插件的形式安装 Clickhouse 数据源，使�
 
 ## 业务场景
 
-本文模拟物联网环境数据采集场景，假设现有一定数据的环境数据采集点，所有采集点数据均通过 [MQTT 协议](https://www.emqx.io/cn/mqtt) 传输至采集平台（MQTT Publish），主题设计如下：
+本文模拟物联网环境数据采集场景，假设现有一定数据的环境数据采集点，所有采集点数据均通过 [MQTT 协议](https://www.emqx.cn/mqtt) 传输至采集平台（MQTT Publish），主题设计如下：
 
 ```bash
 sensor/data
@@ -74,7 +74,7 @@ sensor/data
 
 相关资源与使用教程参照各自官网：
 
- - EMQ X：[EMQ 官网](https://www.emqx.io/cn/)
+ - EMQ X：[EMQ 官网](https://www.emqx.cn/)
  - ClickHouse：ClickHouse 产品首页 [https://clickhouse.tech/](https://clickhouse.tech/)
  - Grafana：Grafana 官网 [https://grafana.com/](https://grafana.com/) 
 
@@ -96,9 +96,9 @@ EMQ X Cloud 为新注册用户提供 6 个月时长的免费试用，注册账�
 
 #### 方式二：私有部署安装
 
-> 如果您是 EMQ X 新手用户，推荐通过 [EMQ X 文档](https://docs.emqx.cn/cn/broker/latest/) 快速上手
+> 如果您是 EMQ X 新手用户，推荐通过 [EMQ X 文档](https://docs.emqx.cn/broker/latest/) 快速上手
 
-访问 [EMQ 下载](https://www.emqx.io/cn/downloads) 页面下载适合您操作系统的安装包，本文截稿时 EMQ X 企业版本为 v4.1.2，下载 zip 包的启动步骤如下 ：
+访问 [EMQ 下载](https://www.emqx.cn/downloads) 页面下载适合您操作系统的安装包，本文截稿时 EMQ X 企业版本为 v4.1.2，下载 zip 包的启动步骤如下 ：
 
 ```bash
 ## 解压下载好的安装包

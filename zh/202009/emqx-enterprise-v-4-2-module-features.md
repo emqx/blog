@@ -77,7 +77,7 @@ EMQ X 提供 Prometheus Agent 模块，用于将 EMQ X 运行指标及 Erlang �
 
 #### 上下线通知
 
-启用该模块后，客户端上下线时将在[系统主题](https://docs.emqx.cn/cn/broker/latest/advanced/system-topic.html)上发布一条通知消息，订阅相应的主题即可获取上下线客户端事件与客户端信息。
+启用该模块后，客户端上下线时将在[系统主题](https://docs.emqx.cn/broker/latest/advanced/system-topic.html)上发布一条通知消息，订阅相应的主题即可获取上下线客户端事件与客户端信息。
 
 > Webhook 插件、规则引擎同样支持设备上下线事件处理，用户可以根据自己的需要选择不同的方式进行业务开发集成。
 

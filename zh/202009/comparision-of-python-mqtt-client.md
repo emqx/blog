@@ -8,7 +8,7 @@ Python 上有许多优秀的 MQTT 客户端库，借助它们，我们可以以�
 
 ## paho-mqtt
 
-[paho-mqtt](https://github.com/eclipse/paho.mqtt.python) 可以说是 Python MQTT 开源客户端库中的佼佼者。它由 Eclipse 基金会主导开发，除了 Python 库以外，同样支持各大主流的编程语言，比如 C++、Java、JavaScript、Golang 等。目前 Python 版本已经实现了 3.1 和 3.1.1 [MQTT 协议](https://www.emqx.io/cn/mqtt)，在最新开发版中实现了 [MQTT 5.0](https://www.emqx.io/cn/mqtt/mqtt5)。
+[paho-mqtt](https://github.com/eclipse/paho.mqtt.python) 可以说是 Python MQTT 开源客户端库中的佼佼者。它由 Eclipse 基金会主导开发，除了 Python 库以外，同样支持各大主流的编程语言，比如 C++、Java、JavaScript、Golang 等。目前 Python 版本已经实现了 3.1 和 3.1.1 [MQTT 协议](https://www.emqx.cn/mqtt)，在最新开发版中实现了 [MQTT 5.0](https://www.emqx.cn/mqtt/mqtt5)。
 
 在基金会的支持下，以每年一个版本的速度更新，本文发布时的最新版本为 1.5.0（于 2019 年 8 月发布）。
 
@@ -103,7 +103,7 @@ HBMQTT 便是建立在 asyncio 标准库之上。它允许用户显示的设置�
 
 不过 HBMQTT 的知名度却小得多。在 Google 上搜索，关于 HBMQTT 仅有 6000 多个词条，在 Stack Overflow  上只有 10 个提问数。这就意味着，如果选择 HBMQTT 的话你需要很强的解决问题的能力。
 
-有意思的是，HBMQTT 本身也是一个 [MQTT 服务器](https://www.emqx.io/cn/products/broker)。你可以通过 hbmqtt 命令一键开启。
+有意思的是，HBMQTT 本身也是一个 [MQTT 服务器](https://www.emqx.cn/products/broker)。你可以通过 hbmqtt 命令一键开启。
 
 ```python
 $ hbmqtt

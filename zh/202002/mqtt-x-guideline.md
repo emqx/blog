@@ -6,7 +6,7 @@
 
 请从 [GitHub Releases](https://github.com/emqx/MQTTX/releases) 下载符合您的版本并安装使用。
 
-如果出现网络原因，导致从 GitHub 下载中出现网速较慢或卡顿的情况时，也可以 [前往 EMQ 官网](https://www.emqx.io/downloads/MQTTX/) ，选择符合您的版本并安装使用。
+如果出现网络原因，导致从 GitHub 下载中出现网速较慢或卡顿的情况时，也可以 [前往 EMQ 官网](https://www.emqx.cn/downloads/MQTTX/) ，选择符合您的版本并安装使用。
 
 
 

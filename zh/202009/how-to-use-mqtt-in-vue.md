@@ -2,7 +2,7 @@
 
 [Vue](https://cn.vuejs.org) 是一款由尤雨溪及其团队开发的渐进式 Javascript 前端框架。该框架具备数据双向绑定、组件化、响应式和轻量等特点，搭配其脚手架 Vue CLI 使得开发者更加容易上手，大大减少了学习成本。同时其配备一个专用的状态管理模式 Vuex ，在这里可以集中管理所有组件的状态。
 
-[MQTT](https://www.emqx.io/cn/mqtt) 是一种基于发布/订阅模式的 **轻量级物联网消息传输协议**。该协议提供了一对多的消息分发和应用程序的解耦，具备很小的传输消耗和协议数据交换、最大限度减少网络流量和三种不同消息服务质量等级，满足不同投递需求的优势。
+[MQTT](https://www.emqx.cn/mqtt) 是一种基于发布/订阅模式的 **轻量级物联网消息传输协议**。该协议提供了一对多的消息分发和应用程序的解耦，具备很小的传输消耗和协议数据交换、最大限度减少网络流量和三种不同消息服务质量等级，满足不同投递需求的优势。
 
 本文主要介绍如何在 Vue 项目中使用 MQTT，实现客户端与 MQTT 服务器的连接、订阅、收发消息、取消订阅等功能。
 
@@ -53,7 +53,7 @@ vue create vue-mqtt-test
 
 ### 连接 MQTT 服务器
 
-本文将使用 EMQ X 提供的 [免费公共 MQTT 服务器](https://www.emqx.io/cn/mqtt/public-mqtt5-broker)，该服务基于 EMQ X 的 [MQTT 物联网云平台](https://cloud.emqx.io/) 创建。服务器接入信息如下：
+本文将使用 EMQ X 提供的 [免费公共 MQTT 服务器](https://www.emqx.cn/mqtt/public-mqtt5-broker)，该服务基于 EMQ X 的 [MQTT 物联网云平台](https://cloud.emqx.io/) 创建。服务器接入信息如下：
 
 - Broker: **broker.emqx.io**
 - TCP Port: **1883**

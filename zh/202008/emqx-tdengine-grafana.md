@@ -1,4 +1,4 @@
-物联网数据采集涉及到大量设备接入、海量的时序数据传输，EMQ X [MQTT 服务器](https://www.emqx.io/cn/products/broker) 与 TDengine 大数据平台的组合技术栈完全能够胜任场景中的海量时间序列监测数据的传输、存储和计算。
+物联网数据采集涉及到大量设备接入、海量的时序数据传输，EMQ X [MQTT 服务器](https://www.emqx.cn/products/broker) 与 TDengine 大数据平台的组合技术栈完全能够胜任场景中的海量时间序列监测数据的传输、存储和计算。
 
 数据入库后，往往需要其他方式如数据可视化系统将数据按照规则统计、展现出来，实现数据的监控、指标统计等业务需求，以便充分发挥数据的价值，TDengine 搭配开源软件 Grafana 可以快速搭建物联网数据可视化平台。
 
@@ -12,7 +12,7 @@
 
 ### EMQ X 简介
 
-[EMQ X ](https://www.emqx.io/cn/) 是基于高并发的 Erlang/OTP 语言平台开发，支持百万级连接和分布式集群架构，发布订阅模式的开源 MQTT 消息服务器。EMQ X 内置了大量开箱即用的功能，其 **开源版 EMQ X Broker** 及 **企业版 EMQ X Enterprise** 均支持通过规则引擎将设备消息存储到 TDengine。
+[EMQ X ](https://www.emqx.cn/) 是基于高并发的 Erlang/OTP 语言平台开发，支持百万级连接和分布式集群架构，发布订阅模式的开源 MQTT 消息服务器。EMQ X 内置了大量开箱即用的功能，其 **开源版 EMQ X Broker** 及 **企业版 EMQ X Enterprise** 均支持通过规则引擎将设备消息存储到 TDengine。
 
 ### TDengine 是什么 
 
@@ -28,7 +28,7 @@ TDengine 提供社区版、企业版和云服务版，安装/使用教程详见 
 
 ## 业务场景
 
-本文模拟物联网环境数据采集场景，假设现有一定数据的环境数据采集点，所有采集点数据均通过 [MQTT 协议](https://www.emqx.io/cn/mqtt) 传输至采集平台（MQTT Publish），主题设计如下：
+本文模拟物联网环境数据采集场景，假设现有一定数据的环境数据采集点，所有采集点数据均通过 [MQTT 协议](https://www.emqx.cn/mqtt) 传输至采集平台（MQTT Publish），主题设计如下：
 
 ```bash
 sensor/data
@@ -65,7 +65,7 @@ sensor/data
 
 安装包资源与使用教程参照各自官网：
 
- - EMQ X：EMQ 官网 [https://www.emqx.io/cn/](https://www.emqx.io/cn/)
+ - EMQ X：EMQ 官网 [https://www.emqx.cn/](https://www.emqx.cn/)
  - TDengine：涛思数据官网 [https://www.taosdata.com/cn/](https://www.taosdata.com/cn/)
  - Grafana：Grafana 官网 [https://grafana.com/](https://grafana.com/) 
 
@@ -73,7 +73,7 @@ sensor/data
 
 > 如果您是 EMQ X 新手用户，推荐通过 [EMQ X 文档](https://docs.emqx.io/broker/latest/cn/) 快速上手
 
-访问 [EMQ X 下载](https://www.emqx.io/cn/downloads) 页面下载适合您操作系统的安装包，本文截稿时 EMQ X 开源版最新版本为 v4.1.1，下载 zip 包的启动步骤如下 ：
+访问 [EMQ X 下载](https://www.emqx.cn/downloads) 页面下载适合您操作系统的安装包，本文截稿时 EMQ X 开源版最新版本为 v4.1.1，下载 zip 包的启动步骤如下 ：
 
 ```bash
 ## 解压下载好的安装包
@@ -86,7 +86,7 @@ cd emqx
 
 启动成功后浏览器访问 [http://127.0.0.1:18083](http://127.0.0.1:18083) 访问 EMQ X 管理控制台 Dashboard，使用 `admin` `public` 默认用户名密码完成初次登录。
 
-**EMQ X 企业版 4.1.2 提供了原生 TDengine 写入插件，性能更好、使用更方便，请移步[规则引擎-写入数据到 TDengine](https://docs.emqx.cn/cn/enterprise/latest/rule/rule-example.html#%E4%BF%9D%E5%AD%98%E6%95%B0%E6%8D%AE%E5%88%B0-opentsdb)查看**
+**EMQ X 企业版 4.1.2 提供了原生 TDengine 写入插件，性能更好、使用更方便，请移步[规则引擎-写入数据到 TDengine](https://docs.emqx.cn/enterprise/latest/rule/rule-example.html#%E4%BF%9D%E5%AD%98%E6%95%B0%E6%8D%AE%E5%88%B0-opentsdb)查看**
 
 ### 安装 TDengine
 

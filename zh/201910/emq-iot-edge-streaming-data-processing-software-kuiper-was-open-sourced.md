@@ -1,6 +1,6 @@
 
 
-全球领先的开源物联网软件提供商 [EMQ](https://www.emqx.io) ([Github 项目](https://github.com/emqx/emqx)) 于2019年10月23日正式开源了一个边缘端的超轻量级流式数据处理项目 [EMQ X Kuiper](https://github.com/emqx/kuiper)（以下简称 Kuiper）。随着 Kuiper 的发布，EMQ 将加快在物联网中间件领域的布局，从而形成从消息接入到数据处理，从边缘到云端的物联网中间件软件全领域覆盖。
+全球领先的开源物联网软件提供商 [EMQ](https://www.emqx.cn) ([Github 项目](https://github.com/emqx/emqx)) 于2019年10月23日正式开源了一个边缘端的超轻量级流式数据处理项目 [EMQ X Kuiper](https://github.com/emqx/kuiper)（以下简称 Kuiper）。随着 Kuiper 的发布，EMQ 将加快在物联网中间件领域的布局，从而形成从消息接入到数据处理，从边缘到云端的物联网中间件软件全领域覆盖。
 
 
 

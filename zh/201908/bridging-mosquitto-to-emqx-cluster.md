@@ -1,8 +1,8 @@
-EMQ X 节点可以被其他类型的 [MQTT 服务器](https://www.emqx.io/cn/products/broker) 桥接，实现跨平台的消息订阅和发送。本文我们以一个配置实例来说明如何桥接 Mosquitto MQTT  消息至 EMQ X。
+EMQ X 节点可以被其他类型的 [MQTT 服务器](https://www.emqx.cn/products/broker) 桥接，实现跨平台的消息订阅和发送。本文我们以一个配置实例来说明如何桥接 Mosquitto MQTT  消息至 EMQ X。
 
-Mosquitto 是一个小型轻量的开源 MQTT 服务器，由 C/C++ 语言编写。Mosquitto 采用单核心单线程架构，支持部署在资源有限的嵌入式设备，接入少量 MQTT 设备终端，并实现了 [MQTT 5.0](https://www.emqx.io/cn/mqtt/mqtt5) 和 3.1.1版本协议。
+Mosquitto 是一个小型轻量的开源 MQTT 服务器，由 C/C++ 语言编写。Mosquitto 采用单核心单线程架构，支持部署在资源有限的嵌入式设备，接入少量 MQTT 设备终端，并实现了 [MQTT 5.0](https://www.emqx.cn/mqtt/mqtt5) 和 3.1.1版本协议。
 
-EMQ X 与 Mosquitto 均完整支持了 [MQTT 协议](https://www.emqx.io/cn/mqtt) 特性，但 EMQ X 支持更多通信协议以及私有协议接入。应用层的功能拓展方面，Mosquitto 缺乏开箱即用的如认证鉴权、规则引擎、数据持久化与高性能消息桥接（EMQ X 企业版）等业务相关功能； 监控运维与可视化管理方面， EMQ X 有完整的现有功能和拓展方案支持；基础功能上 Mosquitto 集群功能羸弱，官方和第三方实现的集群方案均难以支撑物联网大规模海量连接的性能需求。
+EMQ X 与 Mosquitto 均完整支持了 [MQTT 协议](https://www.emqx.cn/mqtt) 特性，但 EMQ X 支持更多通信协议以及私有协议接入。应用层的功能拓展方面，Mosquitto 缺乏开箱即用的如认证鉴权、规则引擎、数据持久化与高性能消息桥接（EMQ X 企业版）等业务相关功能； 监控运维与可视化管理方面， EMQ X 有完整的现有功能和拓展方案支持；基础功能上 Mosquitto 集群功能羸弱，官方和第三方实现的集群方案均难以支撑物联网大规模海量连接的性能需求。
 
 因此 Mosquitto 并不适合用来做规模化服务的 MQTT 服务器，但由于其足够轻量精简，可以运行在任何低功率单片机包括嵌入式传感器、手机设备、嵌入式微处理器上，是物联网边缘消息接入较好的技术选型，结合其桥接功能可以实现消息的本地处理与云端透传。
 

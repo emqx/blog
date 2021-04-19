@@ -1,7 +1,7 @@
 
 智能家居系统利用大量的物联网设备（如温湿度传感器、安防系统、照明系统）实时监控家庭内部状态，完成智能调节、人机互动。随着物联网技术的发展，其应用范围、数据规模、市场份额将进一步扩大，智能家居设备之间的智能联动也将变的越来越困难，同时由于家庭数据的隐私性，用户数据上传至云端处理还有一定的安全问题。
 
-为此我们将使用 [Raspberry Pi](https://www.raspberrypi.org) + [EMQ X Edge](https://www.emqx.io/cn/products/edge) + [EMQ X Kuiper](https://www.emqx.io/cn/products/kuiper) 搭建智能家居网关，实现智能家居设备数据的边缘计算处理，减少家庭私密数据外流。
+为此我们将使用 [Raspberry Pi](https://www.raspberrypi.org) + [EMQ X Edge](https://www.emqx.cn/products/edge) + [EMQ X Kuiper](https://www.emqx.cn/products/kuiper) 搭建智能家居网关，实现智能家居设备数据的边缘计算处理，减少家庭私密数据外流。
 
 本文中我们将用 BH1750FVI 光照强度传感器采集家庭光照强度数据，使用 EMQ X Kuiper 对光照强度数据进行分析和处理，并依据预先定义的数据规则对 LED 灯进行相应的控制。
 
@@ -15,13 +15,13 @@
 
 ### EMQ X Edge
 
-智能家居设备之间通信协议有 **MQTT**， **Wi-Fi**， **蓝牙** 等，其中 [MQTT 协议](https://www.emqx.io/cn/mqtt) 是基于发布/订阅模式的物联网通信协议，它简单易实现、支持 QoS、报文小。在本文中我们将使 MQTT 协议作为智能家居设备之间的通信协议。
+智能家居设备之间通信协议有 **MQTT**， **Wi-Fi**， **蓝牙** 等，其中 [MQTT 协议](https://www.emqx.cn/mqtt) 是基于发布/订阅模式的物联网通信协议，它简单易实现、支持 QoS、报文小。在本文中我们将使 MQTT 协议作为智能家居设备之间的通信协议。
 
-由于 Raspberry Pi 内存以及处理能力有限，我们选择由 [EMQ](https://www.emqx.io/cn/) 开源的 [EMQ X Edge](https://www.emqx.io/cn/products/edge) 作为 MQTT broker，EMQ X Edge 是轻量级的物联网边缘计算消息中间件，支持部署在资源受限的物联网边缘硬件。
+由于 Raspberry Pi 内存以及处理能力有限，我们选择由 [EMQ](https://www.emqx.cn/) 开源的 [EMQ X Edge](https://www.emqx.cn/products/edge) 作为 MQTT broker，EMQ X Edge 是轻量级的物联网边缘计算消息中间件，支持部署在资源受限的物联网边缘硬件。
 
 ### EMQ X Kuiper
 
-智能家居设备之间数据传输格式不同，并且数据存在波动性，我们需要对设备上报的数据进行处理。在本文中我们将使用由 [EMQ](https://www.emqx.io/cn/) 开源的  [EMQ X Kuiper](https://www.emqx.io/cn/products/kuiper) 对智能家居设备数据进行边缘化处理，EMQ X Kuiper 是基于 SQL 的轻量级边缘流式消息处理引擎，可以运行在资源受限的边缘设备上。
+智能家居设备之间数据传输格式不同，并且数据存在波动性，我们需要对设备上报的数据进行处理。在本文中我们将使用由 [EMQ](https://www.emqx.cn/) 开源的  [EMQ X Kuiper](https://www.emqx.cn/products/kuiper) 对智能家居设备数据进行边缘化处理，EMQ X Kuiper 是基于 SQL 的轻量级边缘流式消息处理引擎，可以运行在资源受限的边缘设备上。
 
 通过实时分析智能家居设备的各类数据，可以实现对设备的即时状态管理与控制。
 
@@ -60,7 +60,7 @@ mkdir ~/smart-home-hubs
 ```bash
 $ cd ~/smart-home-hubs
 # 下载软件包
-$ wget https://www.emqx.io/downloads/edge/v4.1.0/emqx-edge-raspbian8-v4.1.0.zip
+$ wget https://www.emqx.cn/downloads/edge/v4.1.0/emqx-edge-raspbian8-v4.1.0.zip
 $ unzip emqx-edge-raspbian8-v4.1.0.zip
 $ cd ./emqx
 # 运行 EMQ X Edge
@@ -297,7 +297,7 @@ if __name__ == "__main__":
 
 ## 总结
 
-至此，我们已成功搭建基于 [**Raspberry Pi**](https://www.raspberrypi.org) + [**EMQ X Edge**](https://www.emqx.io/cn/products/edge) + [**EMQ X Kuiper**](https://www.emqx.io/cn/products/kuiper) 的智能家居网关。
+至此，我们已成功搭建基于 [**Raspberry Pi**](https://www.raspberrypi.org) + [**EMQ X Edge**](https://www.emqx.cn/products/edge) + [**EMQ X Kuiper**](https://www.emqx.cn/products/kuiper) 的智能家居网关。
 
 我们使用 Raspberry Pi 为网关提供丰富的外部通信接口，使用 EMQ X Edge 为网关提供设备之间的通信功能，使用 EMQ X Kuiper 为网关提供设备数据处理以及分析功能。
 

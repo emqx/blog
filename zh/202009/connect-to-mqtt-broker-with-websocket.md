@@ -49,7 +49,7 @@ npm install mqtt --save
 
 ## 连接至 MQTT 服务器
 
-本文将使用 EMQ X 提供的 [免费公共 MQTT 服务器](https://www.emqx.io/cn/mqtt/public-mqtt5-broker)，该服务基于 EMQ X 的 [MQTT 物联网云平台](https://cloud.emqx.io/cn/) 创建。服务器接入信息如下：
+本文将使用 EMQ X 提供的 [免费公共 MQTT 服务器](https://www.emqx.cn/mqtt/public-mqtt5-broker)，该服务基于 EMQ X 的 [MQTT 物联网云平台](https://cloud.emqx.io/cn/) 创建。服务器接入信息如下：
 
 - Broker: **broker.emqx.io**
 - TCP Port: **1883**
@@ -168,7 +168,7 @@ MQTT.js 库对微信小程序特殊处理，使用  `wxs`  协议标识符。注
 
 ### EMQ X 启用 SSL/TLS 加密连接
 
-EMQ 内置自签名证书，默认已经启动了加密的 WebSocket 连接，但大部分浏览器会报证书无效错误如 `net::ERR_CERT_COMMON_NAME_INVALID`  (Chrome、360 等 webkit 内核浏览器在开发者模式下， Console 选项卡 可以查看大部分连接错误)。导致该错误的原因是浏览器无法验证自签名证书的有效性，读者需从证书颁发机构购买可信任证书，并参考该篇文章中的相应部分进行配置操作：[EMQ X MQTT 服务器启用 SSL/TLS 安全连接](https://www.emqx.io/cn/blog/emqx-server-ssl-tls-secure-connection-configuration-guide)。
+EMQ 内置自签名证书，默认已经启动了加密的 WebSocket 连接，但大部分浏览器会报证书无效错误如 `net::ERR_CERT_COMMON_NAME_INVALID`  (Chrome、360 等 webkit 内核浏览器在开发者模式下， Console 选项卡 可以查看大部分连接错误)。导致该错误的原因是浏览器无法验证自签名证书的有效性，读者需从证书颁发机构购买可信任证书，并参考该篇文章中的相应部分进行配置操作：[EMQ X MQTT 服务器启用 SSL/TLS 安全连接](https://www.emqx.cn/blog/emqx-server-ssl-tls-secure-connection-configuration-guide)。
 
 这里就总结启用 SSL/TLS 证书需要具备的条件是：
 
@@ -246,7 +246,7 @@ location / {
 
 项目完整代码请见：https://github.com/emqx/MQTT-Client-Examples/tree/master/mqtt-client-WebSocket
 
-一款在线的 MQTT WebSocket 连接测试工具：https://www.emqx.io/cn/mqtt/mqtt-websocket-toolkit
+一款在线的 MQTT WebSocket 连接测试工具：https://www.emqx.cn/mqtt/mqtt-websocket-toolkit
 
 
 

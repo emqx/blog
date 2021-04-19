@@ -3,7 +3,7 @@
 
 一个基础的 Electron 包含三个文件：`package.json`（元数据）、`main.js`（代码）和 `index.html`（图形用户界面）。框架由 Electron 可执行文件（Windows 中为 electron.exe、macOS 中为 electron.app、Linux 中为 electron）提供。开发者可以自行添加标志、自定义图标、重命名或编辑 Electron 可执行文件。
 
-本文主要介绍如何在 Electron 项目中使用 [MQTT](https://www.emqx.io/cn/mqtt)，完成一个简单的 MQTT 桌面客户端并实现客户端与 [MQTT 服务器](https://www.emqx.io/cn/products/broker) 的连接、订阅、取消订阅、收发消息等功能。
+本文主要介绍如何在 Electron 项目中使用 [MQTT](https://www.emqx.cn/mqtt)，完成一个简单的 MQTT 桌面客户端并实现客户端与 [MQTT 服务器](https://www.emqx.cn/products/broker) 的连接、订阅、取消订阅、收发消息等功能。
 
 
 
@@ -107,7 +107,7 @@ mainWindow.webContents.openDevTools()
 
 ### 连接 MQTT 服务器
 
-本文将使用 EMQ X 提供的 [免费公共 MQTT 服务器](https://www.emqx.io/cn/mqtt/public-mqtt5-broker)，该服务基于 EMQ X 的 [MQTT 物联网云平台](https://cloud.emqx.io/) 创建。服务器接入信息如下：
+本文将使用 EMQ X 提供的 [免费公共 MQTT 服务器](https://www.emqx.cn/mqtt/public-mqtt5-broker)，该服务基于 EMQ X 的 [MQTT 物联网云平台](https://cloud.emqx.io/) 创建。服务器接入信息如下：
 
 - Broker: **broker.emqx.io**
 - TCP Port: **1883**
@@ -321,7 +321,7 @@ client.on('message', (topic, message) => {
 
 ## 总结
 
-至此， 我们就完成了使用 Electron 创建一个简单的 MQTT 桌面客户端的过程，并模拟了客户端与 MQTT 服务器进行订阅、收发消息、取消订阅以及断开连接的场景。还值得一提的是，因为 Electron 项目同时包含了浏览器环境和 `Node.js` 环境，所以除 MQTT/TCP 连接外，还可以利用浏览器的 WebSocket API，同时实现 MQTT over WebSocket 的连接，只需修改上述代码中的连接协议和端口即可。具体如何使用 WebSocket 连接 MQTT 服务，可参考我们的博客 [使用 WebSocket 连接 MQTT 服务器](https://www.emqx.io/cn/blog/connect-to-mqtt-broker-with-websocket)。
+至此， 我们就完成了使用 Electron 创建一个简单的 MQTT 桌面客户端的过程，并模拟了客户端与 MQTT 服务器进行订阅、收发消息、取消订阅以及断开连接的场景。还值得一提的是，因为 Electron 项目同时包含了浏览器环境和 `Node.js` 环境，所以除 MQTT/TCP 连接外，还可以利用浏览器的 WebSocket API，同时实现 MQTT over WebSocket 的连接，只需修改上述代码中的连接协议和端口即可。具体如何使用 WebSocket 连接 MQTT 服务，可参考我们的博客 [使用 WebSocket 连接 MQTT 服务器](https://www.emqx.cn/blog/connect-to-mqtt-broker-with-websocket)。
 
 
 

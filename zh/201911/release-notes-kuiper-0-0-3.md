@@ -6,7 +6,7 @@ Kuiper 0.0.3 [可以从这里下载](https://github.com/emqx/kuiper/releases/tag
 
 Kuiper是一款基于SQL的轻量级物联网分析/流数据软件，运行在资源受限的边缘设备上。这个版本包括几个新特性，并对之前版本错误进行修复。
 
-网址：https://www.emqx.io/products/kuiper
+网址：https://www.emqx.cn/products/kuiper
 
 Github仓库： https://github.com/emqx/kuiper
 

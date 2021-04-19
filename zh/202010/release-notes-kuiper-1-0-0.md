@@ -11,13 +11,13 @@ Kuiper 的应用场景包括：运行在各类物联网的边缘使用场景中�
 
 ![arch.png](https://static.emqx.net/images/ef5274c57972e38fcb585127413eae03.png)
 
-网址：https://www.emqx.io/products/kuiper
+网址：https://www.emqx.cn/products/kuiper
 
 Github仓库： https://github.com/emqx/kuiper
 
 ## 概览
 
-Kuiper 1.0.0 是第一个稳定的主版本。该版本与 EMQ 其它边缘软件进行了完整的集成，包括 [Neuron](https://www.emqx.io/products/neuron)， [Edge](https://www.emqx.io/products/edge) 和 边缘管理控制平台 (Edge Manager)。读者可以参考  [edge-stack 项目](https://github.com/emqx/edge-stack) 来获取 EMQ 边缘解决方案的信息。
+Kuiper 1.0.0 是第一个稳定的主版本。该版本与 EMQ 其它边缘软件进行了完整的集成，包括 [Neuron](https://www.emqx.cn/products/neuron)， [Edge](https://www.emqx.cn/products/edge) 和 边缘管理控制平台 (Edge Manager)。读者可以参考  [edge-stack 项目](https://github.com/emqx/edge-stack) 来获取 EMQ 边缘解决方案的信息。
 
 ### 功能及问题修复
 
