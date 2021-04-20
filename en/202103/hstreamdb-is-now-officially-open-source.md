@@ -13,7 +13,7 @@ We have presented a brand new concept in the previous post ["When Database Meets
 
 The figure below shows the overall architecture of HStreamDB. A single HStreamDB node consists of two core components, HStream Server (HSQL) and HStream Storage (HStorage). And an HStream cluster consists of several peer-to-peer HStreamDB nodes. Clients can connect to any HStreamDB node in the cluster and perform stream processing and analysis through your familiar SQL language.
 
-![HStreamDB Structure Overview](https://static.emqx.net/images/ca810cdf1d13ffbc1fe15ce41daa1695.png)
+![HStreamDB Structure Overview](https://static.emqx.net/images/faab4a8b1d02f14bc5a4153fe37f21ca.png)
 
 <center>HStreamDB Structure Overview</center>
 
@@ -70,7 +70,7 @@ The core storage model of HStore is a logging model that fits with streaming dat
 
 *Note: The following features the milestone of HStreamDB version 1.0. Some features are under continuous development and not yet fully implemented in the current version. Please stay tuned.*
 
-![HStreamDB Functional architecture](https://static.emqx.net/images/faab4a8b1d02f14bc5a4153fe37f21ca.png)
+![HStreamDB Functional architecture](https://static.emqx.net/images/ca810cdf1d13ffbc1fe15ce41daa1695.png)
 
 <center>HStreamDB Functional architecture</center>
 
