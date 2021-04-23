@@ -16,7 +16,7 @@ As an IoT message broker, EMQ X Broker is on a mission to enable these devices t
 
 You can find help on how to install and run EMQ X Broker [here](https://docs.emqx.io/en/broker/v4.3/index.html).
 
-Open Dashboard, click on Plugin on the left, search for CoAP on the right, and click on Launch to run the `CoAP Plugin` (default port 5683).
+Open Dashboard, click on Plugin on the left, search for CoAP on the right, and click `Start` to run the `CoAP Plugin` (default port 5683).
 ![WechatIMG13.png](https://static.emqx.net/images/3358349652fcf16052d5354bf8fa543f.png)
 	
 
@@ -93,8 +93,8 @@ make
 After  the installation is complete, the CoAP client PUT message to the `coap_to_mqtt` topic.
 
 ```shell
-# CoAP client sends the message 'hello EMQ X world,  I am coap'，and topic is 'coap_to_mqtt'
-./examples/coap-client -m put -e "hello EMQ X world, I am coap" "coap://127.0.0.1/mqtt/coap_to_mqtt?c=coap20211&u=tom&p=secret"
+# CoAP client sends the message 'hello EMQ X world,  I am CoAP'，and topic is 'coap_to_mqtt'
+./examples/coap-client -m put -e "hello EMQ X world, I am CoAP" "coap://127.0.0.1/mqtt/coap_to_mqtt?c=coap20211&u=tom&p=secret"
 # Replace 127.0.0.1 in the command with the address of your EMQ X Broker deployment
 ```
 
@@ -109,7 +109,7 @@ Now subscribe to the `mqtt_to_coap` theme for CoAP terminals.
 ./examples/coap-client -m get -s 20 "coap://127.0.0.1/mqtt/mqtt_to_coap?c=client1&u=tom&p=secret"
 ```
 
-MQTT X sends `hello coap, I am mqtt welcome to EMQ X Wrold!`  to the topic `mqtt_to_coap`.
+MQTT X sends `hello CoAP, I am MQTT, welcome to EMQ X Wrold!`  to the topic `mqtt_to_coap`.
 
 ![WechatIMG11.png](https://static.emqx.net/images/1b3ace0680fef3e3d088241a01fe7cba.png)
 
@@ -117,7 +117,7 @@ CoAP has also received a response from MQTT.
 
 ```shell
 ./examples/coap-client -m get -s 20 "coap://127.0.0.1/mqtt/mqtt_to_coap?c=client1&u=tom&p=secret"
-hello coap , I am mqtt ,welcome to EMQ World
+hello CoAP, I am MQTT, welcome to EMQ X Wrold!
 ```
 
 
