@@ -1,6 +1,6 @@
 
 
-长期以来 EMQ 以开源社区为基础，通过开源软件+商业服务的方式为广大用户提供高性能、高稳定性的 [MQTT 消息中间件](https://www.emqx.cn/products/broker) 与 [MQTT 物联网云服务平台](https://cloud.emqx.io/cn/)。 
+长期以来 EMQ 以开源社区为基础，通过开源软件+商业服务的方式为广大用户提供高性能、高稳定性的 [MQTT 消息中间件](https://www.emqx.cn/products/broker) 与 [MQTT 物联网云服务平台](https://cloud.emqx.cn/)。 
 
 为回馈广大高校学生、教师及研究机构人员对 EMQ 的长期关注与支持，同时也为了推动教育教学、科学研究方面物联网及相关产业的应用和发展，EMQ 推出了「物联上云——高校及研究院合作计划」，面向高校和研究机构提供免费的 EMQ X Cloud MQTT 云服务以及相关的技术咨询支持。
 

@@ -84,7 +84,7 @@ sensor/data
 
 #### 方式一：使用 EMQ X Cloud
 
-EMQ 提供了 [全托管的物联网 MQTT 云服务 - EMQ X Cloud](https://cloud.emqx.io/cn/)，在 EMQ X Cloud 上，用户仅需数分钟即可创建高可用、独享实例的 EMQ X 集群，立即开始原型设计与应用开发而无需关注后续的运维工作。产品上线后，集群可进行不停机扩容以应对业务增长带来的容量扩张，保证可用性的同时最大化节省使用成本。
+EMQ 提供了 [全托管的物联网 MQTT 云服务 - EMQ X Cloud](https://cloud.emqx.cn/)，在 EMQ X Cloud 上，用户仅需数分钟即可创建高可用、独享实例的 EMQ X 集群，立即开始原型设计与应用开发而无需关注后续的运维工作。产品上线后，集群可进行不停机扩容以应对业务增长带来的容量扩张，保证可用性的同时最大化节省使用成本。
 
 EMQ X Cloud 为新注册用户提供 6 个月时长的免费试用，注册账号并登录创建试用部署后，点击部署详情中的 **EMQ X Dashboard** 即可打开 EMQ X 管理控制台。
 
@@ -157,7 +157,7 @@ docker run -d --name=grafana -p 3000:3000 grafana/grafana
 
 ## 配置 EMQ X 存储数据到 ClickHouse
 
-> EMQ X 企业版支持通过规则引擎将设备事件与消息数据写入到各类数据库与消息中间件中（包括 ClickHouse），参考[文档](https://docs.emqx.net/broker/latest/cn/rule/rule-example.html#%E4%BF%9D%E5%AD%98%E6%95%B0%E6%8D%AE%E5%88%B0-clickhouse)。
+> EMQ X 企业版支持通过规则引擎将设备事件与消息数据写入到各类数据库与消息中间件中（包括 ClickHouse），参考[文档](https://docs.emqx.cn/broker/latest/rule/rule-example.html#%E4%BF%9D%E5%AD%98%E6%95%B0%E6%8D%AE%E5%88%B0-clickhouse)。
 
 ### ClickHouse 创建数据库与数据表
 

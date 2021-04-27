@@ -1,5 +1,5 @@
 
-在阅读该教程之前，假定你已经了解 [MQTT](http://docs.oasis-open.org/mqtt/mqtt/v3.1.1/os/mqtt-v3.1.1-os.html)、[MQTT 5](http://docs.oasis-open.org/mqtt/mqtt/v5.0/os/mqtt-v5.0-os.html) 以及 [EMQ X](https://github.com/emqx/emqx) 的简单知识。
+在阅读该教程之前，假定你已经了解 [MQTT](https://docs.oasis-open.org/mqtt/mqtt/v3.1.1/os/mqtt-v3.1.1-os.html)、[MQTT 5](https://docs.oasis-open.org/mqtt/mqtt/v5.0/os/mqtt-v5.0-os.html) 以及 [EMQ X](https://github.com/emqx/emqx) 的简单知识。
 
 [emqx-auth-mysql](https://github.com/emqx/emqx-auth-mysql) 它通过检查每个终端接入的 `username` 和 `password` 是否与用户指定 的 MySQL 数据库中存储的信息一致来实现对终端的访问控制。其功能逻辑如下：
 

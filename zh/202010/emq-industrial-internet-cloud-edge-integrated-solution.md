@@ -5,7 +5,7 @@
 
 ### 工业互联网的挑战
 
-据中国工业和信息化部信息中心最新的[《工业互联网体系架构（版本2.0）》](http://www.miit.gov.cn/n973401/n5993937/n5993968/c7886657/content.html)所述，工业互联网架构下的边缘层主要实现以下功能：
+据中国工业和信息化部信息中心最新的[《工业互联网体系架构（版本2.0）》](https://www.miit.gov.cn/ztzl/rdzt/gyhlw/jyjl/art/2020/art_e8333f59a1af4c0590247987108d318c.html)所述，工业互联网架构下的边缘层主要实现以下功能：
 
 > 边缘层提供海量工业数据接入、转换、数据预处理和边缘分析应用等功能。
 >
@@ -137,7 +137,7 @@
 - IEF 平台是华为公有云服务，用户可以直接访问和试用。
 
 - [Kuiper](https://marketplace.huaweicloud.com/product/OFFI474477808879489024) 在 IEF 上已经上线，可以通过 IEF 平台直接部署、安装和运维（读者可以参考视频「[云边协同高效实现物联网边缘流式业务处理 - 华为 IEF & EMQ X Kuiper 轻量级边缘数据解决方案](https://www.bilibili.com/video/BV1hQ4y1A7Vy?from=search&seid=15773267177167801393) 」来了解如何在 IEF 中使用 Kuiper）；Neuron 和 Edge 目前暂未在 IEF 上线，但是用户可以直接通过 Docker Hub 安装至边缘节点中；然后在云端通过部署 Edge Manager 来进行统一的管理和控制。
-- [EMQ X Enterprise](https://marketplace.huaweicloud.com/product/00301-511011-0--0) 已经在华为云上线，用户也可以使用由 EMQ 提供的[在线云服务](https://cloud.emqx.io/cn/)； 
+- [EMQ X Enterprise](https://marketplace.huaweicloud.com/product/00301-511011-0--0) 已经在华为云上线，用户也可以使用由 EMQ 提供的[在线云服务](https://cloud.emqx.cn/)； 
 - 云端的数据持久化或者桥接方式，用户可以根据需要进行选择，相关信息可以参考 [EMQ 网站](https://www.emqx.cn/products/enterprise)；
 
 ### 总结

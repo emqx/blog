@@ -1,5 +1,5 @@
 
-[HAProxy](http://www.haproxy.org/)  is free, open source software that provides a high availability load balancer and proxy server for TCP and HTTP-based applications that spreads requests across multiple servers. It is written in C and has a reputation for being fast and efficient (in terms of processor and memory usage). [^1]
+[HAProxy](https://www.haproxy.org/)  is free, open source software that provides a high availability load balancer and proxy server for TCP and HTTP-based applications that spreads requests across multiple servers. It is written in C and has a reputation for being fast and efficient (in terms of processor and memory usage). [^1]
 
 ## Preparation
 
@@ -154,7 +154,7 @@ frontend frontend_emqx_tcp
 
 
 
-So far, we have completed the build and use of the EMQ X cluster based on HAProxy. For more detailed use of HAProxy, see [HAProxy Documentation](http://cbonte.github.io/haproxy-dconv/2.2/intro.html).
+So far, we have completed the build and use of the EMQ X cluster based on HAProxy. For more detailed use of HAProxy, see [HAProxy Documentation](https://cbonte.github.io/haproxy-dconv/2.2/intro.html).
 
 
 

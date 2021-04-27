@@ -292,7 +292,7 @@ Using instances of supervisor behaviour, we can create a supervision tree via a 
 
 ![SupervisorTree](https://static.emqx.net/images/dad77bd3c025207b849f53abe1365dec.png)
 
-*Reference:* *[Supervision Principles](http://erlang.org/documentation/doc-4.9.1/doc/design_principles/sup_princ.html)*, *[Erlang Supervisor Behaviour](https://erlang.org/doc/design_principles/sup_princ.html)*
+*Reference:* *[Supervision Principles](https://erlang.org/documentation/doc-4.9.1/doc/design_principles/sup_princ.html)*, *[Erlang Supervisor Behaviour](https://erlang.org/doc/design_principles/sup_princ.html)*
 
 ### A Supervisor Example
 

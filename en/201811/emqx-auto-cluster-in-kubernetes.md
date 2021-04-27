@@ -193,7 +193,7 @@ In general, services, deployment, and pods should have different names to distig
 
 #### Deployment && Pod
 
-Refer to the configuration of the Kubernetes auto-cluster in [documentation of EMQ X](http://emqtt.io/docs/v2/cluster.html#node-discovery-and-autocluster), you need to modify configuration of `etc/emqx.conf` as following.
+Refer to the configuration of the Kubernetes auto-cluster in [documentation of EMQ X](https://docs.emqx.io/en/broker/v2.0/cluster.html), you need to modify configuration of `etc/emqx.conf` as following.
 
 ```
 cluster.discovery = k8s

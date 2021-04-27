@@ -19,7 +19,7 @@ Finally, the OASIS MQTT technical committee provides many new functions and feat
 - Introducing new features such as topic aliases to further reduce transmission costs.
 - Session expiry interval and message expiry interval have been added to improve the inflexibility of the Clean Session in the old version.
 
-The complete list for new attributes is included in appendix C in the protocol standard, you can access the following URL for more details: http://docs.oasis-open.org/mqtt/mqtt/v5.0/cs02/mqtt-v5.0-cs02.html#AppendixC.
+The complete list for new attributes is included in appendix C in the protocol standard, you can access the following URL for more details: https://docs.oasis-open.org/mqtt/mqtt/v5.0/cs02/mqtt-v5.0-cs02.html#AppendixC.
 
 
 

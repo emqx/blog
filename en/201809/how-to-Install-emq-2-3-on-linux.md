@@ -25,7 +25,7 @@ site](https://github.com/emqtt/emqttd).
 
 EMQ is packaged as zip package or installation package for different Linux
 distributions. You can get EMQ from its download page:
-[http://www.emqtt.io/downloads](http://www.emqtt.io/downloads)
+[https://www.emqx.io/downloads](https://www.emqx.io/downloads)
 
 Installing EMQ is quite straightforward. If you are using a zip package, just
 unzip it to where you want it to be installed. A zip installtion is quite
@@ -273,4 +273,4 @@ Thanks!
 
 ------
 
-Welcome to our open source project [github.com/emqx/emqx](http://github.com/emqx/emqx). Please visit the [documentation](https://docs.emqx.io) for details.
+Welcome to our open source project [github.com/emqx/emqx](https://github.com/emqx/emqx). Please visit the [documentation](https://docs.emqx.io) for details.

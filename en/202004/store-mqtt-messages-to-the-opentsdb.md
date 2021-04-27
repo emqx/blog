@@ -9,7 +9,7 @@ This article will describe how to store related EMQ X MQTT messages through Open
 
 ## Install and verify OpenTSDB server
 
-Readers can refer to the [OpenTSDB documentation](http://opentsdb.net) or [Docker](https://hub.docker.com/r/petergrace/opentsdb-docker/) to download and install the OpenTSDB server. This article uses OpenTSDB 2.4.0. 
+Readers can refer to the [OpenTSDB documentation](https://opentsdb.net) or [Docker](https://hub.docker.com/r/petergrace/opentsdb-docker/) to download and install the OpenTSDB server. This article uses OpenTSDB 2.4.0. 
 
 
 

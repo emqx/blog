@@ -5,7 +5,7 @@ Cassandra is an open source distributed database system from Apache that support
 
 
 
-Installation Reference of Cassandra：http://cassandra.apache.org/doc/latest/getting_started/installing.html
+Installation Reference of Cassandra：https://cassandra.apache.org/doc/latest/getting_started/installing.html
 
 
 

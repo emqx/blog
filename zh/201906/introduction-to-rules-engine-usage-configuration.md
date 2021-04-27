@@ -197,7 +197,7 @@ CREATE TABLE `emqx`.`devices` (
 `connected_at` VARCHAR(45) NULL COMMENT '连接时间，毫秒级时间戳',
 PRIMARY KEY (`id`));
 
--- 初始化数据![cf.png](http://admin.emqx.io/_uploads/PHOTO/6851bc635b0862f6469ff65eaaf7271e.png)
+-- 初始化数据![cf.png](https://static.emqx.net/images/6851bc635b0862f6469ff65eaaf7271e.png)
 
 INSERT INTO `emqx`.`devices` (`client_id`) VALUES ('emqx_c');
 -- 连接记录表

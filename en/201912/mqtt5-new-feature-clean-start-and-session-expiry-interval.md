@@ -36,4 +36,4 @@ Clean Start and Session Expiry Interval not only solve the legacy problems of Cl
 
 ------
 
-Welcome to our open source project [github.com/emqx/emqx](http://github.com/emqx/emqx). Please visit the [ documentation](https://docs.emqx.io) for details.
+Welcome to our open source project [github.com/emqx/emqx](https://github.com/emqx/emqx). Please visit the [ documentation](https://docs.emqx.io) for details.

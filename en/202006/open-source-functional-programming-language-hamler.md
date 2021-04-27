@@ -8,8 +8,8 @@ However, from years of experience developing Erlang programs, we have been looki
 
 It has taken nearly 20 years for academia and industry to find a solution. Started with Prof. [Philip Wadler](https://en.wikipedia.org/wiki/Philip_Wadler) and [Simon Marlow](https://simonmar.github.io/) in 2000, type annotation and **Dialyzer** a static analysis tool were introduced for Erlang.
 
-- Simon Marlow & Philip Wadler (1997): [A practical subtyping system for Erlang](http://homepages.inf.ed.ac.uk/wadler/papers/erlang/erlang.pdf)
-- Philip Wadler (2002):  [The great type hope](http://homepages.inf.ed.ac.uk/wadler/papers/erlang/erlang-slides.pdf)
+- Simon Marlow & Philip Wadler (1997): [A practical subtyping system for Erlang](https://homepages.inf.ed.ac.uk/wadler/papers/erlang/erlang.pdf)
+- Philip Wadler (2002):  [The great type hope](https://homepages.inf.ed.ac.uk/wadler/papers/erlang/erlang-slides.pdf)
 
 Since 2008, there have been about 20 projects in the industry trying to solve the problem. [Elixir][ElixirSite] language project introduced Ruby syntax and attracted developers from the Ruby On Rails community! The [Akka][AkkaSite] project imitated the implementation of Erlang/OTP, but lost the soft real-time feature of Erlang/OTP. [Well-Typed][WellTypedSite]'s the [Cloud Haskell][CloudHaskellSite] project attempts to simulate the implementation of Erlang/ OTP in Haskell, the project is currently stalled. There are others like [lfe][lfeSite] introduced Lisp syntax, [alpaca][alpacaSite]、[efene][efeneSite]、[elchemy][elchemySite]、[gleam][gleamSite] etc. have attempted to introduce ML style syntax and static types, most of which are still in their early stage of development.
 
@@ -23,7 +23,7 @@ The [**EMQ**](https://github.com/emqx/) team has made another attempt to address
 [elchemySite]: https://github.com/wende/elchemy/ "elchemy Site"
 [gleamSite]: https://github.com/gleam-lang/gleam/ "gleam Site"
 [lfeSite]: https://github.com/rvirding/lfe/ "lfe Site"
-[WellTypedSite]: http://www.well-typed.com/ "Well-Typed Site"
+[WellTypedSite]: https://www.well-typed.com/ "Well-Typed Site"
 
 ## **Hamler Core Features**
 

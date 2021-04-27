@@ -1,5 +1,5 @@
 
-Before reading this tutorial, we suppose that you already known some basic [MQTT](http://docs.oasis-open.org/mqtt/mqtt/v3.1.1/os/mqtt-v3.1.1-os.html) and [EMQ X MQTT broker](https://emqx.io/) knowledge.
+Before reading this tutorial, we suppose that you already known some basic [MQTT](https://docs.oasis-open.org/mqtt/mqtt/v3.1.1/os/mqtt-v3.1.1-os.html) and [EMQ X MQTT broker](https://emqx.io/) knowledge.
 
 
 

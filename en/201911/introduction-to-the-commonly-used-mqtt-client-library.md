@@ -49,7 +49,7 @@ This paper takes a client connecting, publishing and processing messages as an e
 
 ## Eclipse Paho C and Eclipse Paho Embedded C
 
-Both [Eclipse Paho C](https://www.eclipse.org/paho/clients/c/) and [Eclipse Paho Embedded C](https://www.eclipse.org/paho/clients/c/embedded/)  are client libraries under the Eclipse Paho project, which are full-featured MQTT clients written in ANSI C. Eclipse Paho Embedded C can be used on desktop operating systems, but mainly for Embedded environments such as [mbed](http://mbed.org/)，[Arduino](http://www.arduino.cc/) and [FreeRTOS](http://freertos.org/) .
+Both [Eclipse Paho C](https://www.eclipse.org/paho/clients/c/) and [Eclipse Paho Embedded C](https://www.eclipse.org/paho/clients/c/embedded/)  are client libraries under the Eclipse Paho project, which are full-featured MQTT clients written in ANSI C. Eclipse Paho Embedded C can be used on desktop operating systems, but mainly for Embedded environments such as [mbed](https://mbed.org/)，[Arduino](https://www.arduino.cc/) and [FreeRTOS](https://freertos.org/) .
 
 The client has two kinds of APIs, synchronous and asynchronous, which start with mqttclient and mqttasync respectively:
 

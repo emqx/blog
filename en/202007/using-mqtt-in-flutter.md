@@ -172,7 +172,7 @@ client.disconnect();
 
 ## Test
 
-We write a simple UI interface for this project and use [MQTT 5.0 client tool - MQTT X](https://mqttx.app/cn/) to do the following tests:
+We write a simple UI interface for this project and use [MQTT 5.0 client tool - MQTT X](https://mqttx.app/cn) to do the following tests:
 
 - connect
 

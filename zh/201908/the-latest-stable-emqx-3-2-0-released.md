@@ -25,7 +25,7 @@ EMQ的金融与支付解决方案为金融物联平台提供了：
 
 相关资源链接：
 
-MQTT协议说明：http://mqtt.org/
+MQTT协议说明：https://mqtt.org/
 
 EMQ开源物联网MQTT消息中间件：https://github.com/emqx/emqx
 
