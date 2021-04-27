@@ -19,7 +19,7 @@ EMQ公司从成立到现在，我们EMQ一直致力于为整个物联网行业�
 
 完整的新属性列表包含在协议标准的附录C，您可以在以下网址获得：
 
-http://docs.oasis-open.org/mqtt/mqtt/v5.0/cs02/mqtt-v5.0-cs02.html#AppendixC
+https://docs.oasis-open.org/mqtt/mqtt/v5.0/cs02/mqtt-v5.0-cs02.html#AppendixC
 
 EMQ后续会以专题系列的形式，向各位读者详细介绍MQTT 5.0标准。
 

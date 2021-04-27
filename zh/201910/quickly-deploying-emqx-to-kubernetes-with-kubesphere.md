@@ -117,7 +117,7 @@ EMQ X 部署成功后，将部署 3 副本的有状态副本集（Statefulsets�
 
 ## 部署持久化的 EMQ X 集群
 
-EMQ X 通过创建 PVC 资源挂载 `/opt/emqx/data/mnesia` 目录实现持久化 Pods，在部署 EMQ X 之前，用户可以通过部署 [Haproxy](http://www.haproxy.org/) 或 [Nginx-PLUS](https://www.nginx.com/products/nginx/) 等负载均衡器，然后在 Kubernetes 中创建 PV 或 StorageClass。
+EMQ X 通过创建 PVC 资源挂载 `/opt/emqx/data/mnesia` 目录实现持久化 Pods，在部署 EMQ X 之前，用户可以通过部署 [Haproxy](https://www.haproxy.org/) 或 [Nginx-PLUS](https://www.nginx.com/products/nginx/) 等负载均衡器，然后在 Kubernetes 中创建 PV 或 StorageClass。
 
 在 KubeSphere 部署一个持久化的 EMQ X 集群步骤与上述步骤类似，因此这里仅提示参数配置。在准备好负载均衡器后，只需要在可视化编辑 Helm Chart 的 `Values.yaml` 中指定 StorageClass 相关参数即可。
 

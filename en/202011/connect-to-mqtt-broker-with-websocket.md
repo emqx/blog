@@ -2,7 +2,7 @@ In recent years, with the rapid development of the Web front-end, new features o
 
 WebSocket is a computer communications protocol, providing full-duplex communication channels over a single TCP connection. The WebSocket protocol was standardized by the IETF as RFC 6455 in 2011, and the WebSocket API in Web IDL is being standardized by the W3C. [^1]
 
-[Chapter 6 of MQTT protocol](http://docs.oasis-open.org/mqtt/mqtt/v3.1.1/os/mqtt-v3.1.1-os.html#_Toc398718127) specifies the conditions the MQTT need to meet for transferring over the WebSocket [RFC6455] connection, and is not discussed in detail here.
+[Chapter 6 of MQTT protocol](https://docs.oasis-open.org/mqtt/mqtt/v3.1.1/os/mqtt-v3.1.1-os.html#_Toc398718127) specifies the conditions the MQTT need to meet for transferring over the WebSocket [RFC6455] connection, and is not discussed in detail here.
 
 
 

@@ -4,7 +4,7 @@ Cassandra 是来自 Apache 的开源分布式数据库系统，它能在支持**
 
 
 
-Cassandra 的安装参考：http://cassandra.apache.org/doc/latest/getting_started/installing.html
+Cassandra 的安装参考：https://cassandra.apache.org/doc/latest/getting_started/installing.html
 
 
 

@@ -12,7 +12,7 @@ OpenTSDB 是可扩展的分布式时序数据库，底层依赖 HBase 并充分�
 
 ## 安装与验证 OpenTSDB 服务器
 
-读者可以参考 OpenTSDB [官方文档](http://opentsdb.net) 或 [Docker](https://hub.docker.com/r/petergrace/opentsdb-docker/) 来下载安装 OpenTSDB 服务器，本文使用 OpenTSDB 2.4.0 版本。
+读者可以参考 OpenTSDB [官方文档](https://opentsdb.net) 或 [Docker](https://hub.docker.com/r/petergrace/opentsdb-docker/) 来下载安装 OpenTSDB 服务器，本文使用 OpenTSDB 2.4.0 版本。
 
 
 

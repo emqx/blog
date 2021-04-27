@@ -106,7 +106,7 @@ running and tests are run automatically. (5)
 
 Because Akka (Scala’s actor library)can’t magically patch over the JVM’s shared
 memory model:
-[http://doc.akka.io/docs/akka/snapshot/](http://doc.akka.io/docs/akka/snapshot/).
+[https://doc.akka.io/docs/akka/snapshot/](https://doc.akka.io/docs/akka/snapshot/).
 And because the JVM does global stop-the-world garbage collection, which makes
 soft real-time implausible because of the unpredictability of GC affecting your
 actors. Erlang has per-process heaps. Basically the Erlang VM was created for
@@ -124,4 +124,4 @@ a library.
 
 ------
 
-Welcome to our open source project [github.com/emqx/emqx](http://github.com/emqx/emqx). Please visit the [documentation](https://docs.emqx.io) for details.
+Welcome to our open source project [github.com/emqx/emqx](https://github.com/emqx/emqx). Please visit the [documentation](https://docs.emqx.io) for details.

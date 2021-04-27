@@ -3,7 +3,7 @@
 
 项目地址：[GitHub](https://github.com/emqx/MQTTX)
 
-官方网站：[MQTT X Website](https://mqttx.app/cn/)
+官方网站：[MQTT X Website](https://mqttx.app/cn)
 
 ![WX202002101233322x.png](https://static.emqx.net/images/f5084e406711cb780796e21b42d9c3b4.png)
 

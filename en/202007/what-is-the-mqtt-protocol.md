@@ -10,7 +10,7 @@ Massive device access and device management have brought great challenges to net
 
 ## The birth of MQTT
 
-MQTT was created by [Andy Stanford-Clark](http://en.wikipedia.org/wiki/Andy_Stanford-Clark) of IBM, and Arlen Nipper (then of Arcom Systems, later CTO of Eurotech).[^3]
+MQTT was created by [Andy Stanford-Clark](https://en.wikipedia.org/wiki/Andy_Stanford-Clark) of IBM, and Arlen Nipper (then of Arcom Systems, later CTO of Eurotech).[^3]
 
 According to Arlen Nipper's [self introduction on IBM Podcast ](https://www.ibm.com/podcasts/software/websphere/connectivity/piper_diaz_nipper_mq_tt_11182011.pdf), the original name of MQTT was `MQ TT`, note the space between `MQ` and `TT `, and its full name is MQ Telemetry Transport, which is a real-time data transmission protocol developed by him during a crude oil pipeline data acquisition and monitoring system (pipeline SCADA system) in Conoco Phillips. Its purpose is to allow the sensor to communicate with IBM's MQ Integrator via a limited bandwidth [VSAT](https://en.wikipedia.org/wiki/Very-small-aperture_terminal), Since Nipper is a professional in remote sensing and data acquisition and monitoring, he gave the name `MQ TT` according to industry practice.
 

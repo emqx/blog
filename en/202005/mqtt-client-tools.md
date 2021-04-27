@@ -117,7 +117,7 @@ mosquitto_pub -t "testtopic/1" -m "Hello"
 
 ### Introduction to client
 
-MQTT.fx is a currently mainstream MQTT client developed by [Jens Deters](http://www.jensd.de/) that can quickly verify whether it can interact with IoT Hub services to publish or subscribe to messages. MQTT.fx is applicable for the Apache License 2.0 protocol but without providing source code.
+MQTT.fx is a currently mainstream MQTT client developed by [Jens Deters](https://www.jensd.de/) that can quickly verify whether it can interact with IoT Hub services to publish or subscribe to messages. MQTT.fx is applicable for the Apache License 2.0 protocol but without providing source code.
 
 MQTT.fx is an established MQTT client tool. The related product documentation tutorials of cloud product providers such as Azure IoT Hub, AWS IoT, and Alibaba Cloud IoT are all using MQTT.fx as an example. MQTT.fx use JavaFX technology to develop, and may have a stuck experience on some older machines because of Java virtual machine.
 
@@ -205,7 +205,7 @@ MQTT Box also adopts Electron cross-platform technology. The interface is simple
 
 **Project address:** [GitHub MQTTBox](https://github.com/workswithweb/MQTTBox)
 
-**Download link:** http://workswithweb.com/mqttbox.html
+**Download link:** https://workswithweb.com/mqttbox.html
 
 
 

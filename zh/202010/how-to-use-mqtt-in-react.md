@@ -179,7 +179,7 @@ const mqttDisconnect = () => {
 
 ![reactmqttpage.png](https://static.emqx.net/images/d1c51195c056f3b4afb267edaeb217f0.png)
 
-使用 [MQTT 5.0 客户端工具 - MQTT X](https://mqttx.app/cn/) 作为另一个客户端进行消息收发测试。
+使用 [MQTT 5.0 客户端工具 - MQTT X](https://mqttx.app/cn) 作为另一个客户端进行消息收发测试。
 
 ![reactmqttx.png](https://static.emqx.net/images/621ba9544ea69f9ee7b24203846d0409.png)
 

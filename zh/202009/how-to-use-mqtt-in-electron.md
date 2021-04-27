@@ -307,7 +307,7 @@ client.on('message', (topic, message) => {
 
 ### 客户端测试
 
-此时我们配合一款同样使用 Electron 编写的 [MQTT 5.0 客户端工具 - MQTT X](https://mqttx.app/cn/) 进行消息的收发测试。
+此时我们配合一款同样使用 Electron 编写的 [MQTT 5.0 客户端工具 - MQTT X](https://mqttx.app/cn) 进行消息的收发测试。
 
 使用 MQTT X 向客户端发送一条消息时，可以看到能正常接收到消息：
 

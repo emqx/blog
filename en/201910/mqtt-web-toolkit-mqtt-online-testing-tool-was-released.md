@@ -39,4 +39,4 @@ Welcome to visit [tools.emqx.io](http://tools.emqx.io) for a trial online.
 
 ------
 
-Welcome to our open source project [github.com/emqx/emqx](http://github.com/emqx/emqx). Please visit the [official documentation](https://docs.emqx.io) for details.
+Welcome to our open source project [github.com/emqx/emqx](https://github.com/emqx/emqx). Please visit the [official documentation](https://docs.emqx.io) for details.

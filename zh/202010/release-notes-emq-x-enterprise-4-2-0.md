@@ -40,7 +40,7 @@ EMQ X Enterprise  v4.2.0 版本重点加强了热配置的支持，可以在不�
 
 ### 规则引擎
 
-[EMQ X 规则引擎](https://docs.emqx.net/enterprise/latest/cn/rule/rule-engine.html)用于配置消息流与设备事件的处理、转发规则， **支持将数据转发到包括 Kafka、Clickhouse 在内的多种数据库、流处理与数据分析系统中，快速构建一站式物联网数据集成，清洗，存储，分析，可视化平台。** 
+[EMQ X 规则引擎](https://docs.emqx.cn/enterprise/latest/rule/rule-engine.html)用于配置消息流与设备事件的处理、转发规则， **支持将数据转发到包括 Kafka、Clickhouse 在内的多种数据库、流处理与数据分析系统中，快速构建一站式物联网数据集成，清洗，存储，分析，可视化平台。** 
 
 作为 EMQ X 重磅功能，规则引擎基于 SQL 提供了清晰、灵活的 "配置式" 的业务集成方案，简化了业务开发流程，提升用户易用性并降低业务系统与 EMQ X 的耦合度。
 

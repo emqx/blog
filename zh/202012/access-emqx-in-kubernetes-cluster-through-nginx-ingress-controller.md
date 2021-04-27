@@ -102,7 +102,7 @@ spec:
 $ kubectl apply -f ingress.ymal -n my-emqx
 ```
 
-部署完成以后，修改 DNS 解析，便可以通过：http://emqx.cn.iotdp.cn 来访问 dashboard
+部署完成以后，修改 DNS 解析，便可以通过：https://emqx.cn.iotdp.cn 来访问 dashboard
 
 ![dashboard.png](https://static.emqx.net/images/f0b7b0ea8f5b62de1600e0178e090017.png)
 

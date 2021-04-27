@@ -140,7 +140,7 @@ QoS refers the quality level of service for application message distribution
 
 Publish packet cannot set all QoS bits to 1. If the server or client receives a Publish packet with all QoS bits set to 1, it must close the network connection.
 
-For the working principle of different levels of QoS, please refer to [MQTT 5.0 Protocol Introduction-QoS Quality of Service](https://www.emqx.io/cn/blog/introduction-to-mqtt5-protocol-qos).
+For the working principle of different levels of QoS, please refer to [MQTT 5.0 Protocol Introduction-QoS Quality of Service](https://www.emqx.io/blog/introduction-to-mqtt-qos).
 
 #### Retain
 
@@ -158,4 +158,4 @@ The payload contains application messages to be published. The content and forma
 
 ------
 
-Welcome to our open source project [github.com/emqx/emqx](http://github.com/emqx/emqx). Please visit the [ documentation](https://docs.emqx.io) for details.
+Welcome to our open source project [github.com/emqx/emqx](https://github.com/emqx/emqx). Please visit the [ documentation](https://docs.emqx.io) for details.

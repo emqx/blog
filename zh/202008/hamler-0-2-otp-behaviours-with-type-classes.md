@@ -296,7 +296,7 @@ opened t e d = unhandled t e Opened d
 - '1' 表示 `one_for_one`：仅重启异常退出的子进程。
 - 'a' 表示 `one_for_all`：重启该监督者下所有的子进程。
 
-参考资料：[Supervision Principles](http://erlang.org/documentation/doc-4.9.1/doc/design_principles/sup_princ.html) [Erlang Supervisor Behaviour](https://erlang.org/doc/design_principles/sup_princ.html)
+参考资料：[Supervision Principles](https://erlang.org/documentation/doc-4.9.1/doc/design_principles/sup_princ.html) [Erlang Supervisor Behaviour](https://erlang.org/doc/design_principles/sup_princ.html)
 
 **A Supervisor Example**
 

@@ -19,5 +19,5 @@
 
  
 
-报名地址：http://hdxu.cn/0Sr7z
+报名地址：https://hdxu.cn/0Sr7z
 

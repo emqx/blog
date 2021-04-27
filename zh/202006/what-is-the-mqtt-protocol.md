@@ -10,7 +10,7 @@
 
 ## MQTT 协议的诞生
 
-MQTT was created by [Andy Stanford-Clark](http://en.wikipedia.org/wiki/Andy_Stanford-Clark) of IBM, and Arlen Nipper (then of Arcom Systems, later CTO of Eurotech).[^3]
+MQTT was created by [Andy Stanford-Clark](https://en.wikipedia.org/wiki/Andy_Stanford-Clark) of IBM, and Arlen Nipper (then of Arcom Systems, later CTO of Eurotech).[^3]
 
 据 Arlen Nipper 在一 [IBM Podcast 上的自述](https://www.ibm.com/podcasts/software/websphere/connectivity/piper_diaz_nipper_mq_tt_11182011.pdf)，MQTT 原名是 `MQ TT`， 注意 `MQ` 与 `TT `之间的空格，其全称为: MQ Telemetry Transport，是九十年代早期，他在参与 Conoco Phillips 公司的一个原油管道数据采集监控系统(pipeline SCADA system)时，开发的一个实时数据传输协议。它的目的在于让传感器通过带宽有限的 [VSAT](https://en.wikipedia.org/wiki/Very-small-aperture_terminal) ，与 IBM 的 MQ Integrator 通信。由于 Nipper 是遥感和数据采集监控专业出身，所以按业内惯例给了个 `MQ TT` 的名字。
 
@@ -132,7 +132,7 @@ MQTT 设计了遗愿(Last Will) 消息，让 Broker 在发现设备异常下线�
 
 ### MQTT 在线服务器
 
-EMQ X [MQTT 物联网云服务](https://cloud.emqx.io/cn/) 提供了一个在线的公共 MQTT 5.0 服务器，不需要任何安装您就可以快速开始 MQTT 协议的学习、测试或原型制作。
+EMQ X [MQTT 物联网云服务](https://cloud.emqx.cn/) 提供了一个在线的公共 MQTT 5.0 服务器，不需要任何安装您就可以快速开始 MQTT 协议的学习、测试或原型制作。
 
 该 MQTT 服务器的详细接入信息请见 EMQ 官网页面：[免费的在线 MQTT 服务器](https://www.emqx.cn/mqtt/public-mqtt5-broker)。
 

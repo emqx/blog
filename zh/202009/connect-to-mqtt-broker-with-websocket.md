@@ -4,7 +4,7 @@ WebSocket 是一种在单个 TCP 连接上进行全双工通讯的协议。WebSo
 
 WebSocket 使得客户端和服务器之间的数据交换变得更加简单，允许服务端主动向客户端推送数据。在 WebSocket API 中，浏览器和服务器只需要完成一次握手，两者之间就直接可以创建持久性的连接，并进行双向数据传输。 [^1]
 
-[MQTT 协议第 6 章 ](http://docs.oasis-open.org/mqtt/mqtt/v3.1.1/os/mqtt-v3.1.1-os.html#_Toc398718127)详细约定了 MQTT 在 WebSocket [RFC6455] 连接上传输需要满足的条件，协议内容不在此详细赘述。
+[MQTT 协议第 6 章 ](https://docs.oasis-open.org/mqtt/mqtt/v3.1.1/os/mqtt-v3.1.1-os.html#_Toc398718127)详细约定了 MQTT 在 WebSocket [RFC6455] 连接上传输需要满足的条件，协议内容不在此详细赘述。
 
 
 
@@ -49,7 +49,7 @@ npm install mqtt --save
 
 ## 连接至 MQTT 服务器
 
-本文将使用 EMQ X 提供的 [免费公共 MQTT 服务器](https://www.emqx.cn/mqtt/public-mqtt5-broker)，该服务基于 EMQ X 的 [MQTT 物联网云平台](https://cloud.emqx.io/cn/) 创建。服务器接入信息如下：
+本文将使用 EMQ X 提供的 [免费公共 MQTT 服务器](https://www.emqx.cn/mqtt/public-mqtt5-broker)，该服务基于 EMQ X 的 [MQTT 物联网云平台](https://cloud.emqx.cn/) 创建。服务器接入信息如下：
 
 - Broker: **broker.emqx.io**
 - TCP Port: **1883**

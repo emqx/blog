@@ -25,7 +25,7 @@ MQTT（消息队列遥测传输）最初由 IBM 于上世纪 90 年代晚期发�
 - 引入主题别名等新特性进一步减小传输开销
 - 增加了会话过期间隔和消息过期间隔，用以改善老版本中 Clean Session 不够灵活的地方。
 
-完整的新属性列表包含在协议标准的附录C，您可以访问以下网址了解详情：http://docs.oasis-open.org/mqtt/mqtt/v5.0/cs02/mqtt-v5.0-cs02.html#AppendixC。
+完整的新属性列表包含在协议标准的附录C，您可以访问以下网址了解详情：https://docs.oasis-open.org/mqtt/mqtt/v5.0/cs02/mqtt-v5.0-cs02.html#AppendixC。
 
 
 
