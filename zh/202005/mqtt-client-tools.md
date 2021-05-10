@@ -44,7 +44,7 @@ MQTT 客户端工具常用于建立与 [MQTT 服务器](https://www.emqx.cn/prod
 
 ### 客户端简介
 
-[MQTT X](https://mqttx.app/cn) 是由 [杭州映云科技有限公司](https://www.emqx.cn/about) 开源的一款跨平台 MQTT 5.0 桌面客户端工具，它支持 macOS，Linux，Windows，是目前为止市面上最漂亮的 MQTT 客户端工具。
+[MQTT X](https://mqttx.app/zh) 是由 [杭州映云科技有限公司](https://www.emqx.cn/about) 开源的一款跨平台 MQTT 5.0 桌面客户端工具，它支持 macOS，Linux，Windows，是目前为止市面上最漂亮的 MQTT 客户端工具。
 
 MQTT X 采用了 Electron 跨平台技术，以消息聊天的交互形式收发消息，允许同时建立多个客户端连接并自由切换互相通信，有较好的交互性，大大提高了 MQTT 开发测试的效率。
 
@@ -68,7 +68,7 @@ MQTT X 功能较全面，用户可以快速测试 MQTT/TCP、MQTT/TLS、MQTT/Web
 
 **操作系统：** Windows，macOS，Linux
 
-**项目地址：** [MQTT X 官网](https://mqttx.app/cn)
+**项目地址：** [MQTT X 官网](https://mqttx.app/zh)
 
 **下载地址：** [MQTT X GitHub](https://github.com/emqx/MQTTX/releases)
 
@@ -268,7 +268,7 @@ MQTT Lens 足够简单，但是提供了基础的 MQTT 和 MQTT over WebSocket �
 
 [MQTT WebSocket Toolkit](https://www.emqx.cn/mqtt/mqtt-websocket-toolkit) 是一款简单易用的在线 MQTT 客户端测试工具，它基于浏览器端使用，只支持 MQTT over WebSocket 连接，提供了基础的 MQTT 配置连接设置。
 
-MQTT WebSocket Toolkit 的界面和交互沿用了 [MQTT X](https://mqttx.app/cn) 的设计和使用风格，以消息聊天的交互形式收发消息，允许同时建立多个客户端连接并自由切换互相通信，提高了 MQTT 开发测试的效率；当需要测试 MQTT WebSocket 连接时，不需下载安装多余的工具，快捷可用。
+MQTT WebSocket Toolkit 的界面和交互沿用了 [MQTT X](https://mqttx.app/zh) 的设计和使用风格，以消息聊天的交互形式收发消息，允许同时建立多个客户端连接并自由切换互相通信，提高了 MQTT 开发测试的效率；当需要测试 MQTT WebSocket 连接时，不需下载安装多余的工具，快捷可用。
 
 ### 客户端特性
 

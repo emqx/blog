@@ -8,7 +8,7 @@ IIoT 即 Industrial Internet of Things 的简称，是指数以亿计的工业�
 
 随着 [工业 4.0](https://baike.baidu.com/item/%E5%B7%A5%E4%B8%9A4.0/2120694) 概念的普及与行业实践的深入，传统的集中式控制模式向分散式增强型控制模式转变。同时，5G 时代的到来，也加速了传统工业改造和工业物联网化的进程。为了实现个性化、数字化的产品与服务的灵活生产，在工业设备智能化、网络化的过程中，需要将新旧工业设备连接到互联网中，实现对工业设备的数据采集、远程控制、配置更新等业务。EMQ X 系列产品可提供从工业网关到平台的整体解决方案，支持在厂区和工业现场等边缘端实现工业设备的数据汇聚并发送到云端。同时，其对边缘计算流数据的处理能力，可在平台端为工业物联网应用提供云端工业设备数据接入、数据存储以及与云端组态和应用的对接，方便工业互联网应用的快速开发。
 
-以下，我们将通过 [EMQ X Neuron](https://www.emqx.cn/products/neuron)、[EMQ X Broker](https://www.emqx.cn/products/broker) 构建基于 [Modbus](https://zh.wikipedia.org/zh-cn/Modbus) 的简易 IIoT 应用，并使用 [MQTT X](https://mqttx.app/cn) 订阅/展示数据。
+以下，我们将通过 [EMQ X Neuron](https://www.emqx.cn/products/neuron)、[EMQ X Broker](https://www.emqx.cn/products/broker) 构建基于 [Modbus](https://zh.wikipedia.org/zh-cn/Modbus) 的简易 IIoT 应用，并使用 [MQTT X](https://mqttx.app/zh) 订阅/展示数据。
 
 
 

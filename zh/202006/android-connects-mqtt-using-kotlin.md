@@ -192,7 +192,7 @@ fun disconnect() {
 
 ![MQTT connect and subscribe](https://static.emqx.net/images/5513474b6c2a4848c232825da093bc25.png)
 
-然后我们使用 [MQTT 5.0 客户端工具 - MQTT X](https://mqttx.app/cn) 进行测试，发布消息到 topic: `a/b`，客户端可以看到收到消息的日志
+然后我们使用 [MQTT 5.0 客户端工具 - MQTT X](https://mqttx.app/zh) 进行测试，发布消息到 topic: `a/b`，客户端可以看到收到消息的日志
 
 ![MQTT 5.0 Client Tool - MQTT X](https://static.emqx.net/images/ab664c88b18208cc60fa476adb91f284.png)
 
