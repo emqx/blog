@@ -177,7 +177,7 @@ The complete project example code: [https://github.com/emqx/MQTT-Client-Examples
 
 ![reactmqttpage.png](https://static.emqx.net/images/d1c51195c056f3b4afb267edaeb217f0.png)
 
-Use [MQTT 5.0 client tool - MQTT X](https://mqttx.app/cn) as another client to test sending and receiving messages.
+Use [MQTT 5.0 client tool - MQTT X](https://mqttx.app/zh) as another client to test sending and receiving messages.
 
 ![reactmqttx.png](https://static.emqx.net/images/621ba9544ea69f9ee7b24203846d0409.png)
 

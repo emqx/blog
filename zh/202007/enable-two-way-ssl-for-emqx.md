@@ -165,7 +165,7 @@ listener.ssl.external.verify = verify_peer
 
 ### MQTT 连接测试
 
-当配置完成并重启 EMQ X 后，我们使用 [MQTT 客户端工具 - MQTT X](https://mqttx.app/cn)（该工具跨平台且支持 [MQTT 5.0](https://www.emqx.cn/mqtt/mqtt5)），来验证 TLS 双向认证服务是否正常运行。
+当配置完成并重启 EMQ X 后，我们使用 [MQTT 客户端工具 - MQTT X](https://mqttx.app/zh)（该工具跨平台且支持 [MQTT 5.0](https://www.emqx.cn/mqtt/mqtt5)），来验证 TLS 双向认证服务是否正常运行。
 
 > MQTT X 版本要求：v1.3.2 及以上版本
 

@@ -172,7 +172,7 @@ client.loop_forever()
 
 ## 测试 
 
-我们使用 [MQTT 5.0 客户端工具 - MQTT X](https://mqttx.app/cn) 进行以下测试。 
+我们使用 [MQTT 5.0 客户端工具 - MQTT X](https://mqttx.app/zh) 进行以下测试。 
 
 ### 测试订阅消息 
 

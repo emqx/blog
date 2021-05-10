@@ -207,7 +207,7 @@ destroyConnection() {
 
 
 
-使用 [MQTT 5.0 客户端工具 - MQTT X](https://mqttx.app/cn)  作为另一个客户端进行消息收发测试。
+使用 [MQTT 5.0 客户端工具 - MQTT X](https://mqttx.app/zh)  作为另一个客户端进行消息收发测试。
 
 ![vuemqttx.png](https://static.emqx.net/images/2013cbab1bdffcae69b817bfebb4a33f.png)
 
