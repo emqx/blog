@@ -41,7 +41,7 @@ EMQ 将向符合条件的高校学生、教师及研究机构提供免费 EMQ X 
 
 ## 申请方式
 
-1.	注册 EMQ 账号，进入活动页面填写申请表单，申请入口详见（https://www.emqx.cn/college_plans）
+1.	注册 EMQ 账号，进入活动页面填写申请表单，申请入口详见 <https://www.emqx.cn/college_plans>
 2.	EMQ 将在 1-5 个工作日完成审核并发放资料，请保持所留联系方式畅通
-3.	活动咨询 微信号：EMQ303，邮箱：contact@emqx.io
+3.	活动咨询 微信号：EMQ303，邮箱：[contact@emqx.io](mailto:contact@emqx.io)
 
