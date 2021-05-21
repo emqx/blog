@@ -62,7 +62,7 @@ MQTT X 功能较全面，用户可以快速测试 MQTT/TCP、MQTT/TLS、MQTT/Web
 - 点击已订阅 topic 可进行消息过滤
 - 存储 MQTT 服务器信息并可进行下拉选择
 
-![1.png](https://mqttx.app/static/img/index/mqttx-usage.png)
+![1.png](https://static.emqx.net/images/mdt40vcf7ebdrxohghlzwpdyr4u9494l.png)
 
 ### 客户端下载
 
