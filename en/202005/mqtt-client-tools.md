@@ -60,7 +60,7 @@ MQTT X has relatively comprehensive functions. Users can quickly test the connec
 - Message filter is available after clicking subscribed topic
 - Storing MQTT broker information, and can select through drop-down
 
-![1.png](https://mqttx.app/static/img/index/mqttx-usage.png)
+![1.png](https://static.emqx.net/images/mdt40vcf7ebdrxohghlzwpdyr4u9494l.png)
 
 ### Download client
 
