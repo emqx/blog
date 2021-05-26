@@ -14,7 +14,7 @@ EMQ X Enterprise 适用于各种物联网应用场景，支持公有云、私有
 
 ## 概览
 
-EMQ X Enterprise v4.3.0 版本继承了开源版 4.3.0 版本中的诸多性能提升和功能改进，详见 EMQ X v4.3 正式发布：性能大幅提升，更好用的多语言扩展。在此基础上，企业版 4.3.0 中新增了 Kafka 分区动态扩容的支持，以及更灵活的通过 Kafka 下发 MQTT 消息的方式。
+EMQ X Enterprise v4.3.0 版本继承了开源版 4.3.0 版本中的诸多性能提升和功能改进，详见 [EMQ X v4.3 正式发布：性能大幅提升，更好用的多语言扩展](https://www.emqx.cn/blog/emqx-4-3-0-release-notes)。在此基础上，企业版 4.3.0 中新增了 Kafka 分区动态扩容的支持，以及更灵活的通过 Kafka 下发 MQTT 消息的方式。
 
 详细更新日志：[https://www.emqx.cn/changelogs/enterprise/v4.3.0](https://www.emqx.cn/changelogs/enterprise/v4.3.0)
 
@@ -27,7 +27,7 @@ EMQ X Enterprise v4.3.0 版本继承了开源版 4.3.0 版本中的诸多性能�
 作为 EMQ X 重磅功能，规则引擎基于 SQL 提供了清晰、灵活的「配置式」业务集成方案，简化了业务开发流程，提升用户易用性并降低业务系统与 EMQ X 的耦合度。
 ![配图3.png](https://static.emqx.net/images/40b090be34291c0d202613e2598ff767.png)
 
-###  新增消息桥接到 Kafka 分区支持动态扩容
+### 新增消息桥接到 Kafka 分区支持动态扩容
 
 EMQ X 结合 Apache Kafka 使用能够以高可靠、松耦合的方式将物联网设备与企业系统集成在一起，也是我们的企业客户实践中乃至物联网业内最常用的技术方案。
 
