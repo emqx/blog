@@ -187,7 +187,7 @@ Run the Python code and actively send messages.
 
 2. Use MQTT X client to connect to the MQTT broker and send messages to the topic `raspberry/topic`.
 
-   ![7B5ORTmqFbJJj6mM__thumbnail.png](https://static.emqx.net/images/9b675112367f72749bfbab4ca6107882.png)
+   ![7B5ORTmqFbJJj6mM__thumbnail.png](https://static.emqx.net/images/cc93d1c6d99f3bfa3a78d8472a6209af.jpg)
 
 3. View the terminal information of Raspberry Pi, and you will see the messages published by MQTT X.
 
@@ -205,7 +205,7 @@ Run the Python code and actively send messages.
 
 1. View the messages published by the Raspberry Pi in the MQTT X client.
 
-   ![mp39coxpnEprWOE6__thumbnail.png](https://static.emqx.net/images/b0220d5cb537eccbf4f8928f743bddb8.png)
+   ![mp39coxpnEprWOE6__thumbnail.png](https://static.emqx.net/images/07ffb81c764145100b1e21572357c675.jpg)
 
 ### Test the will message 
 
@@ -214,13 +214,13 @@ Next, testing whether the will message, is set successfully.
 
 1. Subscribe to `raspberry/status` in the MQTT X client.
 
-   ![XKo2GYFsqSLc7nVH__thumbnail.png](https://static.emqx.net/images/328358b89e863fe6bcd62ee9f4f7492f.png)
+   ![XKo2GYFsqSLc7nVH__thumbnail.png](https://static.emqx.net/images/c704c8b0f7117079306d16b5af8c2557.jpg)
 
 2. Interrupt the program or disconnect the network of the Raspberry Pi.
 
 3. View the messages that `raspberry/status` received, in the MQTT X client.
 
-  ![RXNIVuQ7HK0z05RV__thumbnail.png](https://static.emqx.net/images/62cddc2bfbaa9f82f9228fb594c2fa4c.png)
+  ![RXNIVuQ7HK0z05RV__thumbnail.png](https://static.emqx.net/images/048da27682c9a86c536f85ffd6417bf2.jpg)
 
 
 
