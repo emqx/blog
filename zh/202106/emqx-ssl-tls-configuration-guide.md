@@ -91,7 +91,7 @@ mqtt:ssl:external
 
 `IIS` 和 `Tomcat` 目录下两个后缀名为 `.jks` 和 `.pfx` 的文件都是二进制格式，它们同时包含了证书和私钥，`keystorePass.txt` 中是相应的提取密码。
 
-#### 获取根 CA
+### 获取根 CA
 
 由于下载得到的证书中不包含根 CA，为了完成对端验证，需要自行下载相应的根 CA。这里我们使用 [ssl_chain.sh](https://kdecherf.com/blog/2015/04/10/show-the-certificate-chain-of-a-local-x509-file/) 来查看本地证书的认证链，脚本内容如下：
 
@@ -181,7 +181,7 @@ zhouzb.club 是我申请证书时使用的域名。如果返回 `ok`，就意味
 | `verify`                 | 是否开启对端验证。 |
 | `server_name_indication` | 服务器名称指示。   |
 
-#### 单向认证
+### 单向认证
 
 EMQ X Broker 4.2.11 配置如下：
 
@@ -267,7 +267,7 @@ ssl:connect("127.0.0.1", 8883, [{cacertfile, "etc/certs/zhouzb.club/DigiCertGlob
 
 不出意料地，函数运行后返回了 `{ok, ...}`，连接成功建立。
 
-#### 双向认证
+### 双向认证
 
 现在，我们要在服务端也开启对端验证，但是还缺少客户端证书。通常情况下，建议创建一个私有的根 CA，也就是以自签发的方式来签发客户端证书，具体签发方式可以参考 [这里](https://jamielinux.com/docs/openssl-certificate-authority/index.html)。
 
@@ -347,7 +347,7 @@ ssl:connect("127.0.0.1", 8883, [{cacertfile, "etc/certs/zhouzb.club/DigiCertGlob
 
 连接成功。
 
-#### 客户端使用不同根 CA 签发的证书
+### 客户端使用不同根 CA 签发的证书
 
 为了尽快进入正题，这里我使用 EMQ X Broker 自带的使用自签发的根 CA 签发的客户端证书 `etc/certs/client-cert.pem` 来进行演示。
 
