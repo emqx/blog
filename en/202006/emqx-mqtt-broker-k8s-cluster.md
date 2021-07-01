@@ -1,5 +1,4 @@
 
-
 EMQ X Team provides Helm chart which facilitates users to one-click deploy EMQ X [MQTT broker](https://www.emqx.io/products/broker) in the Kubernetes cluster. EMQ X Team mostly recommends This method for deploying EMQ X MQTT broker in the Kubernetes or k3s cluster. This article will start from scratch using the handwriting YAML file method to deploy a K8S cluster of EMQ X MQTT broker, and analyze details and techniques of the deployment. It will facilitate users to flexibly use during real deployment.
 
 Reading this article needs users to know the basic concept of Kubernetes and having an operational Kubernetes cluster.
@@ -819,7 +818,7 @@ Then, using StatefulSet replace Deployment to manage pod.
 
   As expected, StatefulSet rescheduled a pod with the same network symbol. EMQ X Broker in the pod has also successfully joined the cluster.
 
-# StorageClasses, PersistentVolume and PersistentVolumeClaim
+## StorageClasses, PersistentVolume and PersistentVolumeClaim
 
 PersistentVolume(PV) is the storage set by the administrator, and it is part of the cluster. It like the node is the resource of the cluster, PV is also the resource od cluster. PV is volume plugin like Volume, but it has a life cycle which is independent of the pod using PV. This API object includes the details of the implementation of storage, that is, NFS, iSCSI or storage systems specific to cloud vendors.
 
@@ -918,4 +917,3 @@ You can create PV or StorageClass in advance when deploy EMQ X Broker, and then 
   The output result represents that the status of this PVC is Bound, and PVC storage has been successfully established. EMQ X Broker will read the data is mounted in PVC for implementing persistence, when rescheduling pod.
 
 So far, the process that EMQ X Broker builds persistence cluster in the Kubernetes has been completed. This article omits some details, and the process of deployment is also for the simple Demo. Users can read [kubernetes documentation](https://kubernetes.io/docs/home/) and [Helm chart source code](https://github.com/emqx/emqx-rel/tree/master/deploy/charts/emqx) provided by the EMQ X Team for more in-depth research. Of course, contributing issues, pulling requests and star on Github are welcome.
-

@@ -166,7 +166,7 @@ The MQTT.js library uses `wxs` protocol identifier to specially process the WeCh
 
 
 
-# Enable SSL/TLS for EMQ X
+## Enable SSL/TLS for EMQ X
 
 EMQ built-in self-signed certificate, encrypted WebSocket connection has been started by default, but most browsers will report invalid certificate errors such as `net::ERR_CERT_COMMON_NAME_INVALID` (Chrome, 360 and other WebKit kernel browsers in developer mode. Console tab can be used to see most connection errors). The reason for this error is that the browser cannot verify the validity of the self-signed certificate. The reader needs to purchase a trusted certificate from a certificate authority and refer to the corresponding section in this article for configuration actions: [Enable SSL/TLS for EMQ X MQTT broker](https://www.emqx.io/blog/emqx-server-ssl-tls-secure-connection-configuration-guide).
 
@@ -176,7 +176,7 @@ The conditions required to enable SSL/TLS certificates are summarized here:
 - Apply for a certificate: apply for a certificate for the domain name used with a CA authority, taking care to choose a reliable CA authority and that the certificate distinguishes between a generic domain name and a hostname.
 - Select the `wss` protocol when using an encrypted connection, and **use the domain name to connect**: after binding the domain name - certification, must using the domain name to connect instead of the IP address, so that the browser will check the certification according to the domain name to establish a connection after it has passed the check.
 
-#### EMQ X configuration
+### EMQ X configuration
 
 Open the `etc/emqx.conf` configuration file and modify the following configurations:
 
