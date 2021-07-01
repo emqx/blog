@@ -1,5 +1,3 @@
-# Deploying EMQ with Elastic Load Balancer on AWS
-
 ![](https://cdn-images-1.medium.com/max/2000/1*Cdso0oYkWsJgPGtNf2yuFw.jpeg)
 
 Besides the benefit of multiplied service capacity, we also deploy emqtt in a
@@ -11,9 +9,11 @@ The general cluster scenario is a emqtt cluster deployed behind a load balancer.
 
 ![](https://cdn-images-1.medium.com/max/1600/1*9WTiLu7RT3OI4faS-tKZkA.png)
 
-A load balancer can:<br>  1) balance the work load between the nodes in cluster;
-<br> 2) hide the network details, no client side changes are necessary if the
-cluster changes; <br> 3) off-load the transport-layer handlings, like TLS/SSL.
+A load balancer can:
+1. balance the work load between the nodes in cluster;
+2. hide the network details, no client side changes are necessary if the
+cluster changes;
+3. off-load the transport-layer handlings, like TLS/SSL.
 
 A load balancer could be software, like HAProxy, or hardware, like F5 device, or
 virtual resource, like Elastic Load Balancer(ELB), which is available on
@@ -23,7 +23,7 @@ AWS.
 In this article, we will show you how to deploy an ELB on AWS for emqtt cluster.
 In this deployment, the SSL is also enabled.
 
-### Preparation
+## Preparation
 
 1.  Install 2 emqtt nodes on AWS instances and cluster them up. Here is a link about
 installing and clustering emqtt on linux:
@@ -36,7 +36,7 @@ using openssl:
 group which can be accessed in VPC internal and put the ELB in a security group
 which can be accessed by the out-side world.
 
-### Configure the ELB
+## Configure the ELB
 
 There are three different load balancer available on the AWS’s EC2 Management
 Console: the application LB, the network LB and the classic LB. Our target is to
@@ -73,7 +73,7 @@ Step 3: Configure Security Settings
 Here the cryptology security will be configured. It decides how the SSL should
 be used.
 
-#### Select Certificate
+### Select Certificate
 
 AWS Certificate Manager(AWS) is a tool to provision and store certificates. If
 you decide let AWS generate and manage certificates for you, ACM will be a good
@@ -86,7 +86,7 @@ stored certificates in IAM already, you can also use the existing ones.
 
 ![](https://cdn-images-1.medium.com/max/1600/1*mF1L7VjdriMTSs3hy_k0Fw.png)
 
-#### Select a Cipher
+### Select a Cipher
 
 You can select to use the predefined security policy or to customize it. By
 choosing custom security policy, you can enable/disable the protocol version
@@ -134,29 +134,30 @@ ELB.
 
 ![](https://cdn-images-1.medium.com/max/1600/1*nlZfg9r8zgzB7MNmILpZ2A.png)
 
-### Test the ELB
+## Test the ELB
 
 We will use mosquitto client to test our setup.
 
 When creating SSL connection, the mosquitto_pub checks the server side
 certificate, which is enabled on the ELB, against the root ca. To disable the
 hostname verification, we need also invoke the`--insecure` argument:
+```
+mosquitto_pub -h Demo-ELB-1969257698.us-east-2.elb.amazonaws.com  -t aa -m bb -d -p 8883 --cafile ~/MyRootCA.pem --insecure
 
-    mosquitto_pub -h Demo-ELB-1969257698.us-east-2.elb.amazonaws.com  -t aa -m bb -d -p 8883 --cafile ~/MyRootCA.pem --insecure
+Client mosqpub/1984-emq1 sending CONNECT
 
-    Client mosqpub/1984-emq1 sending CONNECT
+Client mosqpub/1984-emq1 received CONNACK
 
-    Client mosqpub/1984-emq1 received CONNACK
+Client mosqpub/1984-emq1 sending PUBLISH (d0, q0, r0, m1, 'aa', ... (2 bytes))
 
-    Client mosqpub/1984-emq1 sending PUBLISH (d0, q0, r0, m1, 'aa', ... (2 bytes))
-
-    Client mosqpub/1984-emq1 sending DISCONNECT
+Client mosqpub/1984-emq1 sending DISCONNECT
+```
 
 Done!
 
 *****
 
-### Upload the Key and Cert Using AWS cli tool
+## Upload the Key and Cert Using AWS cli tool
 
 If you are not able to upload the server certificate and its private key in step
 3, you can try the aws cli tool.
@@ -165,45 +166,47 @@ The aws cli tool requires python 2.5.6+ or 3.3+, make sure you have the proper
 python version and pip on your system.
 
 Install the aws cli:
-
-    $pip install awscli --upgrade --user
+```shell
+$pip install awscli --upgrade --user
+```
 
 Configure the asw cli with asw configure:
+```shell
+$ aws configuration
 
-    $ aws configuration
+AWS Access Key ID [None]: xxxxxxxxxxxxxxxx
 
-    AWS Access Key ID [None]: xxxxxxxxxxxxxxxx
+AWS Secret Access Key [None]: yyyyyyyyyyyyyyyyyyyyyyyyyyy
 
-    AWS Secret Access Key [None]: yyyyyyyyyyyyyyyyyyyyyyyyyyy
+Default region name [None]: us-east-2
 
-    Default region name [None]: us-east-2
-
-    Default output format [None]: json
+Default output format [None]: json
+```
 
 Upload Certificate
+```
+$aws iam upload-server-certificate --server-certificate-name ELB-Cert --certificate-body ~/elb_cert/MyELB.pem --private-key ~/elb_cert/MyELB.key --certificate-chain ~/elb_cert/MyRootCA.pem
 
-    $aws iam upload-server-certificate --server-certificate-name ELB-Cert --certificate-body ~/elb_cert/MyELB.pem --private-key ~/elb_cert/MyELB.key --certificate-chain ~/elb_cert/MyRootCA.pem
+{
 
-    {
+"ServerCertificateMetadata": {
 
-    "ServerCertificateMetadata": {
+"ServerCertificateId": "ASCA...............X",
 
-    "ServerCertificateId": "ASCA...............X",
+"ServerCertificateName": "ELB-Cert",
 
-    "ServerCertificateName": "ELB-Cert",
+"Expiration": "2028-03-27T21:53:25Z",
 
-    "Expiration": "2028-03-27T21:53:25Z",
+"Path": "/",
 
-    "Path": "/",
+"Arn": "arn:aws:iam::9...........3:server-certificate/ELB-Cert",
 
-    "Arn": "arn:aws:iam::9...........3:server-certificate/ELB-Cert",
+"UploadDate": "2018-03-30T23:06:07.872Z"
 
-    "UploadDate": "2018-03-30T23:06:07.872Z"
+}
 
-    }
-
-    }
-
+}
+```
 Enjoy!
 
 ------

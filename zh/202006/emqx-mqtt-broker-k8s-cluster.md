@@ -1,5 +1,4 @@
 
-
 EMQ X Team 提供了 Helm chart 方便用户在 kubernetes 集群上一键部署 EMQ X [MQTT 服务器](https://www.emqx.cn/products/broker), 这是 EMQ X Team 最推荐的在 kubernetes 或 k3s 集群上部署 EMQ X MQTT 服务器的方法。 本文将使用手写 yaml 文件的方法从零开始部署一个 EMQ X MQTT 服务器的 K8S 集群, 分析部署中的细节与技巧，方便用户在实际部署中灵活使用。
 
 阅读本文需要用户了解 kubernetes 的基本概念，并有一个可操作的 kubernetes 集群。
@@ -819,7 +818,7 @@ StatefulSet 中每个 Pod 的 DNS 格式为 `statefulSetName-{0..N-1}.serviceNam
 
   跟预期的一样，StatefulSet 重新调度了一个具有相同网络标志的 Pod，Pod 中的 EMQ X Broker 也成功的加入了集群。
 
-# StorageClasses、PersistentVolume 和 PersistentVolumeClaim
+## StorageClasses、PersistentVolume 和 PersistentVolumeClaim
 
 PersistentVolume（PV）是由管理员设置的存储，它是群集的一部分。就像节点是集群中的资源一样，PV 也是集群中的资源。 PV 是 Volume 之类的卷插件，但具有独立于使用 PV 的 Pod 的生命周期。此 API  对象包含存储实现的细节，即 NFS、iSCSI 或特定于云供应商的存储系统。
 
@@ -918,12 +917,3 @@ StorageClass 为管理员提供了描述存储 "class（类）" 的方法。 不
   输出结果表明该 PVC 的状态为 Bound，PVC 存储已经成功的建立了，当 Pod 被重新调度时，EMQ X Broker 会读取挂载到 PVC 中的数据，从而实现持久化。
 
 EMQ X Broker 在 kubernetes 上建立持久化的集群就完成了，本文略过了部分细节，部署的过程也是偏向简单的 Demo，用户可以自行阅读 [kubernetes 文档](https://kubernetes.io/zh/docs/home/) 与  EMQ X Team 提供的 [Helm chart 源码](https://github.com/emqx/emqx-rel/tree/master/deploy/charts/emqx) 来继续深入研究，当然也欢迎在 Github 贡献 issue、pull requests 以及 start。
-
-
-
-
-
-
-
-
-

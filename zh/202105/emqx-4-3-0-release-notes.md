@@ -1,6 +1,3 @@
-# EMQ X v4.3 正式发布：性能大幅提升，更好用的多语言扩展
-
-
 [连接海量物联网设备的 MQTT 消息服务器 - EMQ X](https://www.emqx.cn/products/broker) 是基于高并发的 Erlang/OTP 语言平台开发，支持百万级连接和分布式集群架构。EMQ X 已经在全球物联网市场广泛应用，无论是产品原型设计、物联网创业公司、还是大规模的商业部署，都支持免费使用。
 
 产品介绍：[https://www.emqx.cn/products/broker](https://www.emqx.cn/products/broker)
