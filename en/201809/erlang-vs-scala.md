@@ -1,5 +1,3 @@
-# Erlang VS Scala
-
 Erlang is a general-purpose, concurrent, functional programming language, as
 well as a garbage-collected runtime system.The Erlang runtime system is known
 for its designs that are well suited for systems with the following
@@ -11,7 +9,7 @@ characteristics:
 - Hot swapping, Highly available, non-stop applications where code can be changed
 - without stopping a system （1）
 
-### Better for building distributed system and distributed computing (2)
+## Better for building distributed system and distributed computing
 
 Built from the ground up with concurrency and distributed computing in mind
 Erlang has strong roots with the telecom industry in which concurrent processes
@@ -22,7 +20,7 @@ that uses multiple processor cores, it’s also very easy to write applications
 that span multiple servers, comparing to that you have to using actor lib in
 Scala to write parallel programs.
 
-### Better fault tolerance
+## Better fault tolerance
 
 Fault tolerance means that a system has the property to continue operating even
 though one or more components have failed. For Erlang systems, this means that
@@ -44,7 +42,7 @@ if one of them has a fault
 * Nodes that can be monitored so that you find out when they go down
 * The ability to restart failed processes (or groups of them)
 
-### Better soft real-time support due to Erlang actor scheduling
+## Better soft real-time support due to Erlang actor scheduling
 
 Both Erlang and Scala are using actor model (contrast with other threads based
 concurrent models). In the actor model, each object is an actor. This is an
@@ -87,7 +85,7 @@ large numbers of concurrently running actors. However, they should not be used
 for parallelism: since all actors execute on the same thread, there is no
 scheduling fairness. (4)
 
-### Hot swapping
+## Hot swapping
 
 Since Erlang was designed for reliability, hot swapping code (replacing code in
 runtime) is built in.<br> The JVM has some support for hot swapping code.
