@@ -37,6 +37,10 @@ Linux 用户可在 Snapcraft 中进行下载：[https://snapcraft.io/mqttx](http
 - 为窗口添加可缩小的最小宽度和最小高度
 
   添加窗口的可缩小的最小宽度和最小高度可防止在部分情况下，用户无意拖动窗口大小时，造成的页面布局塌陷或不适配的问题，影响使用。
+  
+- 支持 Apple Silicon 架构
+  
+  使用 M1 芯片的 Mac 电脑用户现在也可以使用 MQTT X 了，可以在 GitHub 下载支持 Inter 或 Apple Silicon 的通用包。包名中包含 `Universal`, 例如：MQTTX-1.6.0-universal-mac.zip
 
 - 适配 macOS 新的图标设计
 
