@@ -1,5 +1,3 @@
-# Schema Registry Tutorial
-
 The types of IoT devices are complex, and the encoding formats used by various vendors are different. Therefore, when accessing the IoT platform, a unified data format is required, so that applications of equipment on the platform can be managed.
 
 EMQ X Enterprise Edition 3.4.0 provides Schema Registry functionality and provides encoding and decoding capabilities. Schema Registry manages the Schema used for encoding and decoding, processes encoding or decoding requests and returns results. Schema Registry works with a rules engine to adapt device access and rule design for various scenarios.
