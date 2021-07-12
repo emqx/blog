@@ -6,7 +6,7 @@ MySQL is a traditional relational database. Its open architecture makes users hi
 
 Readers can refer to MySQL  [Official Documentation](https://www.mysql.com/downloads/) or use  [Docker](https://hub.docker.com/_/mysql/)  to download and install MySQL server. This The article uses MySQL 5.6. 
 
-To facilitate management operations, you can download and use the official free graphical management software  [MySQL Workbeanch](https://dev.mysql.com/downloads/workbench/).
+To facilitate management operations, you can download and use the official free graphical management software  [MySQL Workbench](https://dev.mysql.com/downloads/workbench/).
 
 > If the readers is using MySQL 8.0 or  above version , they need follow [ EMQ X unable to connect MySQL 8.0](https://docs.emqx.io/faq/v3/cn/errors.html#emq-x-无法连接-mysql-80)Tutorial to specially configure MySQL.
 
