@@ -1,4 +1,4 @@
-Before reading this guide, we assume that you have known simple [MQTT](https://www.emqx.io/mqtt) and [MQTT broker](https://www.emqx.io/products/broker).
+Before reading this guide, we assume that you have known simple [MQTT](https://www.emqx.com/en/mqtt) and [MQTT broker](https://www.emqx.com/en/products/emqx).
 
 EMQ X Broker starts supporting the function rate limit from version V3, including the limit on **the PUBLISH packet receiving rate** and **the TCP data package receiving rate**. This article will introduce the use and configuration of this function in detail. 
 

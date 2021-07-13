@@ -6,7 +6,7 @@ The messaging series which start from initiating an MQTT connection request to t
 
 ### What is session state?
 
-[MQTT](https://www.emqx.io/mqtt) requires the client and server to store a series of states related to the client identifier during the valid period of the session, which is called session state.
+[MQTT](https://www.emqx.com/en/mqtt) requires the client and server to store a series of states related to the client identifier during the valid period of the session, which is called session state.
 
 The client needs to store the following session state:
 
@@ -28,7 +28,7 @@ If the client causes the connection briefly interrupted because of the network f
 
 ### Start and end of the session
 
-[MQTT v5.0](https://www.emqx.io/mqtt/mqtt5) and v3.1.1 have significant changes in the session. MQTT v3.1.1 only has one field Clean Session which is specified by the client when connecting. When the field is 1, it means that the client and the broker have to discard any previous session and create a new session, and the life cycle of the session is consistent with the network connection. When the field is 0, it means that the server has to use the session that associated with Client ID to recover the communication with the client (unless the session does not exist). The client and the server have to store the session state after disconnecting.
+[MQTT v5.0](https://www.emqx.com/en/mqtt/mqtt5) and v3.1.1 have significant changes in the session. MQTT v3.1.1 only has one field Clean Session which is specified by the client when connecting. When the field is 1, it means that the client and the broker have to discard any previous session and create a new session, and the life cycle of the session is consistent with the network connection. When the field is 0, it means that the server has to use the session that associated with Client ID to recover the communication with the client (unless the session does not exist). The client and the server have to store the session state after disconnecting.
 
 MQTT v3.1.1does not stipulate when the persistent session should be expired. If only understood from the protocol level, this persistent session should exist forever. However, in the actual scenario, this is not realistic, because it will highly occupy the resource of the server. Therefore, the server usually does not follow the protocol to implementation, but provides a global configuration for limiting the session expiration time.
 

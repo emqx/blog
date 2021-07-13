@@ -4,7 +4,7 @@ React 是一款用于构建用户界面的开源 JavaScript 库。React 视图�
 
 React 起源于 Facebook 的内部项目，目前由 Facebook 企业和其强大的开源社区进行维护。React 目前正在被 Netflix、Instagram、Imgur、Airbnb 等很多知名网站的主页使用。该框架首先于 2011 年部署于 Facebook 的 newsfeed，随后于 2012 年部署于 Instagram。在2013年5月在 JSConf US 开源。
 
-本文主要介绍如何在 React 项目中使用 [MQTT](https://www.emqx.cn/mqtt)，实现客户端与 MQTT 服务器的连接、订阅、收发消息、取消订阅等功能。
+本文主要介绍如何在 React 项目中使用 [MQTT](https://www.emqx.com/zh/mqtt)，实现客户端与 MQTT 服务器的连接、订阅、收发消息、取消订阅等功能。
 
 
 
@@ -75,7 +75,7 @@ React 起源于 Facebook 的内部项目，目前由 Facebook 企业和其强大
 
 ### 连接 MQTT 服务器
 
-本文将使用 EMQ X 提供的 [免费公共 MQTT 服务器](https://www.emqx.cn/mqtt/public-mqtt5-broker)，该服务基于 EMQ X 的 [MQTT 物联网云平台](https://cloud.emqx.io/) 创建。服务器接入信息如下：
+本文将使用 EMQ X 提供的 [免费公共 MQTT 服务器](https://www.emqx.com/zh/mqtt/public-mqtt5-broker)，该服务基于 EMQ X 的 [MQTT 物联网云平台](https://cloud.emqx.io/) 创建。服务器接入信息如下：
 
 - Broker: **broker.emqx.io**
 - TCP Port: **1883**

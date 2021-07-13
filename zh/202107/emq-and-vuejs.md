@@ -24,7 +24,7 @@ EMQ X 开源 MQTT 消息服务中间件拥有强大的性能和完善的功能�
 
 ### 官网
 
-在之前的 [EMQ 官网](https://www.emqx.cn/)开发中，我们一直采用了传统的 HTML + JQuery 的方式来编写官方网站，这种方式的开发体验较为复杂和低效。为了提高开发效率，同时兼顾 SEO，我们在之后的网站开发中选择了 [Nuxt.js](https://www.nuxtjs.cn/) —— 一个基于 Vue.js 的服务端渲染应用框架，同时也可以生成静态站点。这让我们可以通过编写熟悉的 Vue.js 单文件组件方式完成网站开发，体验 Vue.js 的一切特性的同时也在 SEO 方面获得了帮助。
+在之前的 [EMQ 官网](https://www.emqx.com/zh)开发中，我们一直采用了传统的 HTML + JQuery 的方式来编写官方网站，这种方式的开发体验较为复杂和低效。为了提高开发效率，同时兼顾 SEO，我们在之后的网站开发中选择了 [Nuxt.js](https://www.nuxtjs.cn/) —— 一个基于 Vue.js 的服务端渲染应用框架，同时也可以生成静态站点。这让我们可以通过编写熟悉的 Vue.js 单文件组件方式完成网站开发，体验 Vue.js 的一切特性的同时也在 SEO 方面获得了帮助。
 
 ![image.png](https://static.emqx.net/images/dd646a67960eccd423ae0c20ca904502.png)
 

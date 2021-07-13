@@ -2,7 +2,7 @@
 
 
 
- [MQTT](https://www.emqx.io/mqtt) adalah sebuah **protokol messaging IoT lightweight** berbasis model publish/subscribe yang menyediakan servis messaging yang dapat diandalkan dan real-time untuk perangkat IoT dengan hanya menggunakan sedikit kode dan bandwith. MQTT cocok untuk perangkat dengan sumber hardware yang terbatas dan jaringan dengan bandwith yang terbatas pula. Karena itu, protokol MQTT banyak digunakan di IoT, internet HP, tenaga listrik, dan industri lainnya.
+ [MQTT](https://www.emqx.com/en/mqtt) adalah sebuah **protokol messaging IoT lightweight** berbasis model publish/subscribe yang menyediakan servis messaging yang dapat diandalkan dan real-time untuk perangkat IoT dengan hanya menggunakan sedikit kode dan bandwith. MQTT cocok untuk perangkat dengan sumber hardware yang terbatas dan jaringan dengan bandwith yang terbatas pula. Karena itu, protokol MQTT banyak digunakan di IoT, internet HP, tenaga listrik, dan industri lainnya.
 
 
 
@@ -50,7 +50,7 @@ pip3 install paho-mqtt
 
 ### Koneksi dengan MQTT broker
 
-Dalam artikel ini, kita akan menggunakan [MQTT broker publik gratis](https://www.emqx.io/mqtt/public-mqtt5-broker) yang disediakan oleh EMQ X. Pembuatan servis ini berbasis [platform cloud MQTT IoT](https://cloud.emqx.io/). Akses informasi broker adalah sebagai berikut:
+Dalam artikel ini, kita akan menggunakan [MQTT broker publik gratis](https://www.emqx.com/en/mqtt/public-mqtt5-broker) yang disediakan oleh EMQ X. Pembuatan servis ini berbasis [platform cloud MQTT IoT](https://cloud.emqx.io/). Akses informasi broker adalah sebagai berikut:
 
 
 * Broker: **broker.emqx.io** 
@@ -171,7 +171,7 @@ for i in range(5):
 client.loop_forever()
 ```
 
-Fungsi `publish()` akan mengirim pesan ke sebuah topik. Dalam kode diatas, kita akan mengirim pesan ke topik  `raspberry/topic`. Parameter QoS adalah fitur lain yang dimiliki MQTT. Jika Anda ingin tahu lebih banyak konten tentang QoS, Anda dapat mengunjungi [Pengenalan MQTT QoS (Quality of Service)](https://www.emqx.io/blog/introduction-to-mqtt-qos). Disini kita akan mengaturnya ke 0.
+Fungsi `publish()` akan mengirim pesan ke sebuah topik. Dalam kode diatas, kita akan mengirim pesan ke topik  `raspberry/topic`. Parameter QoS adalah fitur lain yang dimiliki MQTT. Jika Anda ingin tahu lebih banyak konten tentang QoS, Anda dapat mengunjungi [Pengenalan MQTT QoS (Quality of Service)](https://www.emqx.com/en/blog/introduction-to-mqtt-qos). Disini kita akan mengaturnya ke 0.
 
 ## Tes
 

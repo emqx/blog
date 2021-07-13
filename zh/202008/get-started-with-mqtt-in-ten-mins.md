@@ -1,4 +1,4 @@
-[MQTT](https://www.emqx.cn/mqtt) 全称为 Message Queuing Telemetry Transport（消息队列遥测传输），是一种基于 **发布/订阅** 模式的 **轻量级物联网消息传输协议**。[IBM](https://zh.wikipedia.org/wiki/IBM) 公司的安迪·斯坦福-克拉克及 Arcom 公司的阿兰·尼普于 1999 年撰写了该协议的第一个版本[^1]，之后 MQTT 便以简单易实现、支持 QoS、轻量且省带宽等众多特性逐渐成为了 IoT 通讯的标准。
+[MQTT](https://www.emqx.com/zh/mqtt) 全称为 Message Queuing Telemetry Transport（消息队列遥测传输），是一种基于 **发布/订阅** 模式的 **轻量级物联网消息传输协议**。[IBM](https://zh.wikipedia.org/wiki/IBM) 公司的安迪·斯坦福-克拉克及 Arcom 公司的阿兰·尼普于 1999 年撰写了该协议的第一个版本[^1]，之后 MQTT 便以简单易实现、支持 QoS、轻量且省带宽等众多特性逐渐成为了 IoT 通讯的标准。
 
 
 ## MQTT 协议基本特点
@@ -72,7 +72,7 @@ MQTT 作为一种低开销，低带宽占用的即时通讯协议，可以用极
 
 仅在订阅时使用的主题表达式，可以包含通配符，以匹配多个主题名。
 
-MQTT 主题的更多特性请访问我们的博文：[MQTT 主题的高级特性](https://www.emqx.cn/blog/advanced-features-of-mqtt-topics)。
+MQTT 主题的更多特性请访问我们的博文：[MQTT 主题的高级特性](https://www.emqx.com/zh/blog/advanced-features-of-mqtt-topics)。
 
 ### 载荷（Payload）
 
@@ -96,7 +96,7 @@ MQTT 协议提供了 3 种消息服务质量等级（Quality of Service），它
 - QoS 1：消息传递至少 1 次。
 - QoS 2：消息仅传送一次。
 
-QoS 更多介绍请访问我们的博文：[MQTT QoS 服务质量介绍](https://www.emqx.cn/blog/introduction-to-mqtt-qos)。
+QoS 更多介绍请访问我们的博文：[MQTT QoS 服务质量介绍](https://www.emqx.com/zh/blog/introduction-to-mqtt-qos)。
 
 ### 清除会话（Clean Session）
 
@@ -123,14 +123,14 @@ MQTT 客户端向服务器发布（PUBLISH）消息时，可以设置保留消�
 
 MQTT 客户端向服务端发送 CONNECT 请求时，可以携带遗嘱消息。MQTT 客户端异常下线时（客户端断开前未向服务器发送 DISCONNECT 消息)，MQTT 消息服务器会发布遗嘱消息。
 
-MQTT 遗嘱消息的更多请访问我们的博文：[MQTT 遗嘱消息的使用](https://www.emqx.cn/blog/use-of-mqtt-will-message)。
+MQTT 遗嘱消息的更多请访问我们的博文：[MQTT 遗嘱消息的使用](https://www.emqx.com/zh/blog/use-of-mqtt-will-message)。
 
 
 
 ## MQTT 5.0 协议新增特性
 
 ### 会话过期
-[MQTT 5.0](https://www.emqx.cn/mqtt/mqtt5) 把 Clean Session 标识拆分成 Clean Start 标识（指示会话应该在不使用现有会话的情况下开始）和会话过期间隔属性（指示连接断开之后会话保留的时间）。会话过期间隔可以在断开连接时修改。把 Clean Start 标识设置为 1 且会话过期间隔设置为 0，等同于在 MQTT v3.1.1中把 CleanSession 设置为 1。
+[MQTT 5.0](https://www.emqx.com/zh/mqtt/mqtt5) 把 Clean Session 标识拆分成 Clean Start 标识（指示会话应该在不使用现有会话的情况下开始）和会话过期间隔属性（指示连接断开之后会话保留的时间）。会话过期间隔可以在断开连接时修改。把 Clean Start 标识设置为 1 且会话过期间隔设置为 0，等同于在 MQTT v3.1.1中把 CleanSession 设置为 1。
 
 ### 为所有响应报文提供原因码
 
@@ -149,9 +149,9 @@ MQTT 遗嘱消息的更多请访问我们的博文：[MQTT 遗嘱消息的使用
 
 ## 下一步
 
-读完本文之后，读者若是想试用一下 MQTT ，可访问 EMQ 官网 [免费的公共 MQTT 服务器](https://www.emqx.cn/mqtt/public-mqtt5-broker) 页面，该页面提供了一个在线的 MQTT 5.0 服务器，您可以将它用于 MQTT 的学习、测试或原型设计。
+读完本文之后，读者若是想试用一下 MQTT ，可访问 EMQ 官网 [免费的公共 MQTT 服务器](https://www.emqx.com/zh/mqtt/public-mqtt5-broker) 页面，该页面提供了一个在线的 MQTT 5.0 服务器，您可以将它用于 MQTT 的学习、测试或原型设计。
 
-读者也可访问我们的博文 [2020 年常见 MQTT 客户端工具比较](https://www.emqx.cn/blog/mqtt-client-tools)，选择一款适合自己的 MQTT 客户端工具快速体验 MQTT 协议。
+读者也可访问我们的博文 [2020 年常见 MQTT 客户端工具比较](https://www.emqx.com/zh/blog/mqtt-client-tools)，选择一款适合自己的 MQTT 客户端工具快速体验 MQTT 协议。
 
 
 [^1]: [https://zh.wikipedia.org/wiki/MQTT#%E5%8E%86%E5%8F%B2](https://zh.wikipedia.org/wiki/MQTT#历史)

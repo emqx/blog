@@ -86,7 +86,7 @@ The development of database systems has entered a new phase. It's time to break 
 
 Our next article will continue our in-depth discussion on the storage of streaming databases to explore what an efficient and reliable streaming database should look like.
 
-Also, we welcome you to join us at [EMQ](https://www.emqx.io/) to discover and create infinite possibilities for the streaming database.
+Also, we welcome you to join us at [EMQ](https://www.emqx.com/en) to discover and create infinite possibilities for the streaming database.
 
 
 [^1]: Rydning, David Reinsel–John Gantz–John. "The digitization of the world from edge to core." Framingham: International Data Corporation (2018).

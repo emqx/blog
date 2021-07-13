@@ -1,6 +1,6 @@
 ## Overview
 
-During learning and using [MQTT](https://www.emqx.io/mqtt), a handy client tool can greatly facilitate the user to explore the MQTT features and debug the functional components. Developers from all over the world have developed a number of client test tools for the MQTT protocol around different operating systems.
+During learning and using [MQTT](https://www.emqx.com/en/mqtt), a handy client tool can greatly facilitate the user to explore the MQTT features and debug the functional components. Developers from all over the world have developed a number of client test tools for the MQTT protocol around different operating systems.
 
 The type of these MQTT client tools is various, with different features emphasis. Therefore, as for beginners and even MQTT experts, how to choose a suitable MQTT client tool is a problem. 
 
@@ -8,9 +8,9 @@ This article will collect and sort out as much as possible, and make a comprehen
 
 ## Features required for MQTT client tools
 
-MQTT client tools are often used to establish connections with the [MQTT broker](https://www.emqx.io/products/broker) for subscribing topics and receiving and publishing messages. The characteristic of functions for an MQTT client tool can be evaluated from the following aspects:
+MQTT client tools are often used to establish connections with the [MQTT broker](https://www.emqx.com/en/products/emqx) for subscribing topics and receiving and publishing messages. The characteristic of functions for an MQTT client tool can be evaluated from the following aspects:
 
-- In each usage phase, the tool needs to provide as much comprehensive parameter configuration capabilities to facilitate to users cope with any using scenarios and simulation tests of using ways. For example, supporting client authentication, configuring certificates and various encryption connections, configuring multiple parameters during the connection, publishing, and subscription process of MQTT, supporting [MQTT 5](https://www.emqx.io/mqtt/mqtt5), etc.
+- In each usage phase, the tool needs to provide as much comprehensive parameter configuration capabilities to facilitate to users cope with any using scenarios and simulation tests of using ways. For example, supporting client authentication, configuring certificates and various encryption connections, configuring multiple parameters during the connection, publishing, and subscription process of MQTT, supporting [MQTT 5](https://www.emqx.com/en/mqtt/mqtt5), etc.
 - Enhance user interaction convenience on a full-featured basis and operating interface fluently.
 - Provide other extension functions, such as supporting multiple client connections and MQTT protocol debugging at the same time.
 - Cross-platform, available under different operating systems.
@@ -42,7 +42,7 @@ This article will combine the features of each MQTT client tool to introduce eva
 
 ### Introduction to client 
 
-[MQTT X](https://mqttx.app/) is a cross-platform MQTT 5.0 desktop client tool open-sourced by [EMQ](https://www.emqx.io), supports macOS, Linux, Windows, and is the most beautiful MQTT client tool on the market until now.
+[MQTT X](https://mqttx.app/) is a cross-platform MQTT 5.0 desktop client tool open-sourced by [EMQ](https://www.emqx.com/en), supports macOS, Linux, Windows, and is the most beautiful MQTT client tool on the market until now.
 
 MQTT uses Electron cross-platform technology, and can send and receive messages in the form of message chat. It allows establishing and connecting multiple clients at the same time, and freely switch to communicate with each other.  It has better interaction and greatly improves the efficiency of MQTT development test.
 
@@ -264,7 +264,7 @@ Although MQTT Lens is simple enough, provides the fundamental MQTT and MQTT over
 
 ### Introduction to client
 
-[MQTT WebSocket Toolkit](https://www.emqx.io/mqtt/mqtt-websocket-toolkit) is a simple and easy-to-use online MQTT client test tool. It based on browser-side to use, only supports MQTT over WebSocket connection, and provides basic MQTT configuring connection settings.
+[MQTT WebSocket Toolkit](https://www.emqx.com/en/mqtt/mqtt-websocket-toolkit) is a simple and easy-to-use online MQTT client test tool. It based on browser-side to use, only supports MQTT over WebSocket connection, and provides basic MQTT configuring connection settings.
 
 The interface and interaction of MQTT WebSocket Toolkit still use the design and usage style of [MQTT X](https://mqttx.app/). It publishes and receives messages in the form of message chat and allows establishing and connecting multiple clients at the same time and freely switches to communicate with each other,  which improves the efficiency of the MQTT development test. When you need to test MQTT WebSocket connections, users do not need to download and install extra tools, so this tool is quick and available.
 

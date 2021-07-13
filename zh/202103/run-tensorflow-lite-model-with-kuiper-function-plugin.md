@@ -60,13 +60,13 @@ var LabelImage = labelImage{
 
 ### 通过预构建的 zip 安装
 
-如果使用基于 debian 的带有 1.1.1 或 1.1.1-slim标签的 Kuiper docker 镜像，我们可以安装预构建的 labelImage插件。例如，要在 docker image emqx/kuiper:1.1.2-slim 中安装 Kuiper 1.1.2 插件，则预构建的 zip 文件位于 https://www.emqx.cn/downloads/kuiper-plugins/v1.1.2/debian/functions/labelImage_amd64.zip\。按如下所示运行 rest命令以进行安装。
+如果使用基于 debian 的带有 1.1.1 或 1.1.1-slim标签的 Kuiper docker 镜像，我们可以安装预构建的 labelImage插件。例如，要在 docker image emqx/kuiper:1.1.2-slim 中安装 Kuiper 1.1.2 插件，则预构建的 zip 文件位于 https://www.emqx.com/zh/downloads/kuiper-plugins/v1.1.2/debian/functions/labelImage_amd64.zip\。按如下所示运行 rest命令以进行安装。
 
 ```
 POST http://{{kuiperHost:kuiperRestPort}}/plugins/functions
 Content-Type: application/json
 
-{"name":"labelImage", "file": "https://www.emqx.cn/downloads/kuiper-plugins/v1.1.2/debian/functions/labelImage_amd64.zip"}
+{"name":"labelImage", "file": "https://www.emqx.com/zh/downloads/kuiper-plugins/v1.1.2/debian/functions/labelImage_amd64.zip"}
 ```
 
 ### 手动构建

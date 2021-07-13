@@ -1,7 +1,7 @@
 
 ### Introduction
 
-Although the publish-subscribe model fully decouples the publisher of the message from the subscriber, there is also an implicit problem that the subscriber cannot actively request the message from the publisher, and when the subscriber receives the message depends entirely on the publisher. This is inconvenient in some scenarios. For example, when a device periodically publishes its own GPS coordinates, it may take a few seconds for a subscriber to receive data from initiation of a subscription for the first time, or it may take ten minutes or more, which is not friendly. Therefore, [MQTT](https://www.emqx.io/mqtt) introduces the retained message.
+Although the publish-subscribe model fully decouples the publisher of the message from the subscriber, there is also an implicit problem that the subscriber cannot actively request the message from the publisher, and when the subscriber receives the message depends entirely on the publisher. This is inconvenient in some scenarios. For example, when a device periodically publishes its own GPS coordinates, it may take a few seconds for a subscriber to receive data from initiation of a subscription for the first time, or it may take ten minutes or more, which is not friendly. Therefore, [MQTT](https://www.emqx.com/en/mqtt) introduces the retained message.
 
 ### Retain message
 

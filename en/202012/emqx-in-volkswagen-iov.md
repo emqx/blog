@@ -5,7 +5,7 @@ The Volkswagen Group has been focusing on vehicle and machine systems for a long
 
 In response to the trend of the times, SAIC Volkswagen is launching a new smart IoV system in 2020, in conjunction with the new MOS vehicle and machine system, first on the latest Passat models, a rare exploration of the Volkswagen brand's focus on the IoV field in the last two years.
 
-From 2018, when SAIC Volkswagen designed and developed the new generation IoV system, the SC department took into account the needs of the new IoV scenario of large concurrency, low latency, and high throughput, referred to the mainstream new IoV system architecture at home and abroad, and adopted the MQTT protocol to establish the new generation IoV platform. The new IoV platform needs to be able to support SAIC Volkswagen's IoV development in the next few years, **which requires the [MQTT Broker](https://www.emqx.io/products/broker)  in the platform to have the ability to support connectivity and data delivery from millions to tens of millions of IoV vehicle and machine,** covering IoV business support such as IoV data reporting, POI sending, pushing files, sending configuration, pushing messages, operation care, etc.
+From 2018, when SAIC Volkswagen designed and developed the new generation IoV system, the SC department took into account the needs of the new IoV scenario of large concurrency, low latency, and high throughput, referred to the mainstream new IoV system architecture at home and abroad, and adopted the MQTT protocol to establish the new generation IoV platform. The new IoV platform needs to be able to support SAIC Volkswagen's IoV development in the next few years, **which requires the [MQTT Broker](https://www.emqx.com/en/products/emqx)  in the platform to have the ability to support connectivity and data delivery from millions to tens of millions of IoV vehicle and machine,** covering IoV business support such as IoV data reporting, POI sending, pushing files, sending configuration, pushing messages, operation care, etc.
 
 ![1.jpeg](https://static.emqx.net/images/74feb63cc8309809382e65a841d9e8f5.jpeg)
 
@@ -13,7 +13,7 @@ In selecting the MQTT message broker for building the new platform, the SC depar
 
 ### Functionality
 
-Full support for the MQTT v3.1.1 protocol is required, and full support for the [MQTT v5.0](https://www.emqx.io/mqtt/mqtt5) protocol will be available at a later stage. For SAIC Volkswagen's scenarios in IoV applications, the following features also need to be supported:
+Full support for the MQTT v3.1.1 protocol is required, and full support for the [MQTT v5.0](https://www.emqx.com/en/mqtt/mqtt5) protocol will be available at a later stage. For SAIC Volkswagen's scenarios in IoV applications, the following features also need to be supported:
 
 1. Support the persistence of the data reported by the vehicle and machine on the platform side to ensure that the data is not lost.
 1. In the scenario of POI sending, support to be informed at the platform side whether the feedback information of the message is received at the vehicle and machine side; the platform-side provides caching the data POI send and can set the caching time of POI to ensure that the sending message is not lost when the vehicle and machine are offline, and the message is automatically sent after going online.

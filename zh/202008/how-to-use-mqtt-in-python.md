@@ -1,6 +1,6 @@
 [Python](https://www.python.org/) 是一种广泛使用的解释型、高级编程、通用型编程语言。Python 的设计哲学强调代码的可读性和简洁的语法（尤其是使用空格缩进划分代码块，而非使用大括号或者关键词）。Python 让开发者能够用更少的代码表达想法，不管是小型还是大型程序，该语言都试图让程序的结构清晰明了。[^1]
 
-[MQTT](https://www.emqx.cn/mqtt) 是一种基于发布/订阅模式的 **轻量级物联网消息传输协议** ，可以用极少的代码和带宽为联网设备提供实时可靠的消息服务，它广泛应用于物联网、移动互联网、智能硬件、车联网、电力能源等行业。
+[MQTT](https://www.emqx.com/zh/mqtt) 是一种基于发布/订阅模式的 **轻量级物联网消息传输协议** ，可以用极少的代码和带宽为联网设备提供实时可靠的消息服务，它广泛应用于物联网、移动互联网、智能硬件、车联网、电力能源等行业。
 
 本文主要介绍如何在 Python 项目中使用 **paho-mqtt** 客户端库 ，实现客户端与 MQTT 服务器的连接、订阅、取消订阅、收发消息等功能。
 
@@ -33,7 +33,7 @@ pip3 install -i https://pypi.doubanio.com/simple paho-mqtt
 
 ### 连接 MQTT 服务器
 
-本文将使用 EMQ X 提供的 [免费公共 MQTT 服务器](https://www.emqx.cn/mqtt/public-mqtt5-broker)，该服务基于 EMQ X 的 [MQTT 物联网云平台](https://cloud.emqx.io/) 创建。服务器接入信息如下：
+本文将使用 EMQ X 提供的 [免费公共 MQTT 服务器](https://www.emqx.com/zh/mqtt/public-mqtt5-broker)，该服务基于 EMQ X 的 [MQTT 物联网云平台](https://cloud.emqx.io/) 创建。服务器接入信息如下：
 
 - Broker: **broker.emqx.io**
 - TCP Port: **1883**
@@ -243,7 +243,7 @@ python3 sub.py
 
 ## 总结
 
-至此，我们完成了使用 **paho-mqtt** 客户端连接到 [公共 MQTT 服务器](https://www.emqx.cn/mqtt/public-mqtt5-broker)，并实现了测试客户端与 MQTT 服务器的连接、消息发布和订阅。
+至此，我们完成了使用 **paho-mqtt** 客户端连接到 [公共 MQTT 服务器](https://www.emqx.com/zh/mqtt/public-mqtt5-broker)，并实现了测试客户端与 MQTT 服务器的连接、消息发布和订阅。
 
 与 C ++ 或 Java 之类的高级语言不同，Python 比较适合设备侧的业务逻辑实现，使用 Python 您可以减少代码上的逻辑复杂度，降低与设备的交互成本。我们相信在物联网领域 Python  将会有更广泛的应用。
 

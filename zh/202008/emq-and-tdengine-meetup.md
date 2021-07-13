@@ -21,7 +21,7 @@
 EMQ - 杭州映云科技有限公司，是全球领先的消息与流处理开源软件企业，聚焦服务于新产业周期的 IoT & 5G、边缘计算(Edge)与云计算(Cloud)市场，面向全球运营。
 EMQ 总部位于杭州，在北京、上海、硅谷、法兰克福设有分支机构，核心产品包括面向云和边缘计算的 IoT 消息中间件以及轻量级流式处理中间件，累计已服务全球 6000+ 企业用户，并与 50+ 世界 500 强企业达成战略合作，典型用户包括 HPE、VMware、Verifone、Ericsson、华为、中国电信、中国移动、国家电网、上汽大众等。
 
-[EMQ X](https://www.emqx.cn/) 是基于高并发的 Erlang/OTP 语言平台开发，支持百万级连接和分布式集群架构，发布订阅模式的开源 MQTT 消息服务器。EMQ X 内置了大量开箱即用的功能，其开源版 EMQ X Broker 及企业版 EMQ X Enterprise 均支持通过规则引擎将设备消息存储到 TDengine。
+[EMQ X](https://www.emqx.com/zh) 是基于高并发的 Erlang/OTP 语言平台开发，支持百万级连接和分布式集群架构，发布订阅模式的开源 MQTT 消息服务器。EMQ X 内置了大量开箱即用的功能，其开源版 EMQ X Broker 及企业版 EMQ X Enterprise 均支持通过规则引擎将设备消息存储到 TDengine。
 
 ## 关于涛思数据与 TDengine
 

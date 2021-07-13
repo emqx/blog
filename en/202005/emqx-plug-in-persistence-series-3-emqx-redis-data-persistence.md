@@ -63,7 +63,7 @@ Readers can refer to Redis official [Quick Start](https://redis.io/topics/quicks
 
 ### Configure EMQ X Enterprise server
 
-In terms of the [EMQ X Enterprise](https://www.emqx.io/products/enterprise) installed via RPM, the Redis-related configuration files are located in `/etc/emqx/plugins/emqx_backend_redis.conf`. If only test Redis persistence function, most configurations do not need to be changed. The only place that needs to be changed is the Redis server address: If the Redis installed by the reader is not on the same server as EMQ X, please specify the correct Redis server address and port. As shown in the  following:
+In terms of the [EMQ X Enterprise](https://www.emqx.com/en/products/emqx) installed via RPM, the Redis-related configuration files are located in `/etc/emqx/plugins/emqx_backend_redis.conf`. If only test Redis persistence function, most configurations do not need to be changed. The only place that needs to be changed is the Redis server address: If the Redis installed by the reader is not on the same server as EMQ X, please specify the correct Redis server address and port. As shown in the  following:
 
 ```bash
 ## Redis Server 127.0.0.1:6379, Redis Sentinel: 127.0.0.1:26379
@@ -82,7 +82,7 @@ emqx_ctl plugins load emqx_backend_redis
 
 When the client is online or offline, update the online status, online or offline time, and update the node client list to the Redis database.
 
-Although [EMQ X](https://www.emqx.io) itself provides the device online status API, it is more efficient to obtain the record directly from the database than to call the EMQ X API in the scenarios that the client online status and online/offline time need to be obtained frequently.
+Although [EMQ X](https://www.emqx.com/en) itself provides the device online status API, it is more efficient to obtain the record directly from the database than to call the EMQ X API in the scenarios that the client online status and online/offline time need to be obtained frequently.
 
 
 ### Configuration item

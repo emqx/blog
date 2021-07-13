@@ -9,11 +9,11 @@
 
 ### EMQ X Kuiper
 
-[EMQ X Kuiper](https://www.emqx.cn/products/kuiper) 是 Golang 实现的轻量级物联网边缘分析、流式处理开源软件，可以运行在各类资源受限的边缘设备上。Kuiper 设计的一个主要目标就是将在云端运行的实时流式计算框架（比如 [Apache Spark](https://spark.apache.org/)，[Apache Storm](https://storm.apache.org/) 和 [Apache Flink](https://flink.apache.org/) 等）迁移到边缘端。Kuiper 参考了上述云端流式处理项目的架构与实现，结合边缘流式数据处理的特点，采用了编写基于`源 (Source)`，`SQL (业务逻辑处理)`, `目标 (Sink)` 的规则引擎来实现边缘端的流式数据处理。项目地址：[https://github.com/emqx/kuiper](https://github.com/emqx/kuiper)
+[EMQ X Kuiper](https://github.com/lf-edge/ekuiper) 是 Golang 实现的轻量级物联网边缘分析、流式处理开源软件，可以运行在各类资源受限的边缘设备上。Kuiper 设计的一个主要目标就是将在云端运行的实时流式计算框架（比如 [Apache Spark](https://spark.apache.org/)，[Apache Storm](https://storm.apache.org/) 和 [Apache Flink](https://flink.apache.org/) 等）迁移到边缘端。Kuiper 参考了上述云端流式处理项目的架构与实现，结合边缘流式数据处理的特点，采用了编写基于`源 (Source)`，`SQL (业务逻辑处理)`, `目标 (Sink)` 的规则引擎来实现边缘端的流式数据处理。项目地址：[https://github.com/emqx/kuiper](https://github.com/emqx/kuiper)
 
 > 版本：v1.0.2
 
-[下载链接](https://www.emqx.cn/downloads#kuiper) ｜ [安装文档](https://docs.emqx.cn/kuiper/latest/getting_started.html#%E4%B8%8B%E8%BD%BD%E5%92%8C%E5%AE%89%E8%A3%85)
+[下载链接](https://github.com/lf-edge/ekuiper) ｜ [安装文档](https://docs.emqx.cn/kuiper/latest/getting_started.html#%E4%B8%8B%E8%BD%BD%E5%92%8C%E5%AE%89%E8%A3%85)
 
 ```shell
 # 获取 Docker 镜像
@@ -41,11 +41,11 @@ $ docker run -p 9082:9082 -d emqx/kuiper-manager:1.0.2
 
 ### EMQ X Edge
 
-[EMQ X Edge](https://www.emqx.cn/products/edge) 是轻量级多协议物联网边缘消息中间件，支持部署在资源受限的物联网边缘硬件。项目地址：[https://github.com/emqx/emqx](https://github.com/emqx/emqx)
+[EMQ X Edge](https://www.emqx.com/zh/products/emqx) 是轻量级多协议物联网边缘消息中间件，支持部署在资源受限的物联网边缘硬件。项目地址：[https://github.com/emqx/emqx](https://github.com/emqx/emqx)
 
 > 版本：v4.2.4
 
-[下载链接](https://www.emqx.cn/downloads#edge) | [安装文档](https://docs.emqx.cn/edge/latest/install.html)
+[下载链接](https://www.emqx.com/zh/downloads?product=nanomq) | [安装文档](https://docs.emqx.cn/edge/latest/install.html)
 
 ```shell
 # 获取 Docker 镜像
@@ -57,7 +57,7 @@ $ docker run -d --name emqx -p 1883:1883 emqx/emqx-edge:4.2.4
 
 ### MQTT X
 
-[MQTT X](https://mqttx.app/zh) 是由一款跨平台 [MQTT 5.0](https://emqx.cn/mqtt/mqtt5) 桌面测试客户端，它支持 macOS，Linux，Windows。用户可以快速创建多个同时在线的 **MQTT 客户端**，方便测试 MQTT/TCP、MQTT/TLS、MQTT/WebSocket 的连接/发布/订阅功能及其他 **MQTT 协议** 特性。项目地址：[https://github.com/emqx/MQTTX](https://github.com/emqx/MQTTX)
+[MQTT X](https://mqttx.app/zh) 是由一款跨平台 [MQTT 5.0](https://www.emqx.com/zh/mqtt/mqtt5) 桌面测试客户端，它支持 macOS，Linux，Windows。用户可以快速创建多个同时在线的 **MQTT 客户端**，方便测试 MQTT/TCP、MQTT/TLS、MQTT/WebSocket 的连接/发布/订阅功能及其他 **MQTT 协议** 特性。项目地址：[https://github.com/emqx/MQTTX](https://github.com/emqx/MQTTX)
 
 > 版本：v1.4.2
 

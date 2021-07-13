@@ -17,9 +17,9 @@ Besides, the private TCP protocol has fewer users due to its relative niche or s
 - It is difficult to add or modify functions on the server/client, which restricts the development of application layer functional requirements;
 - The lack of reliable operation and maintenance system, results in inaccurate and untimely problems for operation and maintenance management.
 
-As an excellent [open source MQTT broker](https://www.emqx.io/products/broker), based on supporting high-performance, large-scale standard MQTT protocol access to millions of devices, and supporting cluster level expansion, [EMQ X](https://www.emqx.io/) expanded private TCP protocol access and integrated a large number of out-of-the-box functions: multiple ways of authentication, publish/subscribe ACL control, rule engine message processing, message storage and bridge, complete monitoring operation and maintenance system and external REST API control call, etc.
+As an excellent [open source MQTT broker](https://www.emqx.com/en/products/emqx), based on supporting high-performance, large-scale standard MQTT protocol access to millions of devices, and supporting cluster level expansion, [EMQ X](https://www.emqx.com/en) expanded private TCP protocol access and integrated a large number of out-of-the-box functions: multiple ways of authentication, publish/subscribe ACL control, rule engine message processing, message storage and bridge, complete monitoring operation and maintenance system and external REST API control call, etc.
 
-On the basis of high performance and high scalability, [EMQ X](https://www.emqx.io/) opens up the upper-layer application to control the entire life cycle of device connection/communication and data interaction channels, allowing users to quickly complete the development of **loT applications**.
+On the basis of high performance and high scalability, [EMQ X](https://www.emqx.com/en) opens up the upper-layer application to control the entire life cycle of device connection/communication and data interaction channels, allowing users to quickly complete the development of **loT applications**.
 
 At present, EMQ X provides a complete private TCP access solution through server adaptation/device-side adaptation:
 
@@ -80,7 +80,7 @@ In the current architecture design, to adapt to a specific private TCP protocol,
 
 ## Device side adaptation: EMQ private TCP protocol specification
 
-For the new device, development and adjustment on the device side was done according to the **EMQ private TCP protocol specification** provided by EMQ and accessed SDK. After adaptation, the device can seamlessly migrate and connect to [EMQ X](https://www.emqx.io/). 
+For the new device, development and adjustment on the device side was done according to the **EMQ private TCP protocol specification** provided by EMQ and accessed SDK. After adaptation, the device can seamlessly migrate and connect to [EMQ X](https://www.emqx.com/en). 
 
 Based on the experience of developing and customizing the private TCP protocol in several mature projects, EMQ has launched a universal access specification based on the TCP private protocol, **EMQ private TCP protocol specification**. It is more lightweight than the MQTT protocol and provides a complete solution for private TCP Access.
 
@@ -114,7 +114,7 @@ As an access module close to the end in the specification, **emqx-tcp** can divi
 
 ## Comparison of two adaptation methods
 
-Currently **EMQ X TCP protocol specification** and **emqx-tcp** plugins are distributed with [EMQ X Enterprise](https://www.emqx.io/products/enterprise). The users of EMQ X Enterprise can freely use this part of the function to driver device-side and develop communication, according to EMQ private TCP protocol specification, and private TCP protocol access can be adapted from the device side.
+Currently **EMQ X TCP protocol specification** and **emqx-tcp** plugins are distributed with [EMQ X Enterprise](https://www.emqx.com/en/products/emqx). The users of EMQ X Enterprise can freely use this part of the function to driver device-side and develop communication, according to EMQ private TCP protocol specification, and private TCP protocol access can be adapted from the device side.
 
 However, there are many kinds of the device side protocols in actual IoT projects. When the old projects or industry-related projects use other private TCP protocol specifications, the **emqx-tcp** plug is not directly applicable. At this time, it needs to adapt from the server.
 
@@ -122,5 +122,5 @@ The more value of **EMQ X TCP protocol specification** and **emqx-tcp** plugs is
 
 Only EMQ X Enterprise Edition supports the private TCP protocol access adaptation. After the adaptation, EMQ X Enterprise and corresponding function plugins are delivered. Open source users with Erlang development experience can also develop and implement it by themselves.
 
-Welcome to download and free try [EMQ X Enterprise](https://www.emqx.io/products/enterprise). If you have any requirements on private TCP protocol access customization and other privatization customization, you can contact EMQ: [contact@emqx.io](mailto:contact@emqx.io).
+Welcome to download and free try [EMQ X Enterprise](https://www.emqx.com/en/products/emqx). If you have any requirements on private TCP protocol access customization and other privatization customization, you can contact EMQ: [contact@emqx.io](mailto:contact@emqx.io).
 

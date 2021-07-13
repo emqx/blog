@@ -15,7 +15,7 @@ Readers can refer to the [OpenTSDB documentation](https://opentsdb.net) or [Dock
 
 ## Configure EMQ X MQTT server
 
-If users use RPM method to install [EMQ X](https://emqx.io/), the OpenTSDB related configuration files is located in `/etc/emqx/plugins/emqx_backend_opentsdb.conf`. The OpenTSDB plugin only supports message storage considering the function location. 
+If users use RPM method to install [EMQ X](https://www.emqx.com/en), the OpenTSDB related configuration files is located in `/etc/emqx/plugins/emqx_backend_opentsdb.conf`. The OpenTSDB plugin only supports message storage considering the function location. 
 
 Configure the connection address, connection pool size and batch strategies 
 

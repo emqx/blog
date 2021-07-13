@@ -30,16 +30,16 @@ This solution will use these software products in the following list.
 
 | No.  | Name                                                       | Provider     | Open source        |
 | :--- | :--------------------------------------------------------- | :----------- | :----------------- |
-| 1    | [EMQ X Neuron](https://www.emqx.io/products/neuron)        | EMQ          | No - `1`           |
-| 2    | [EMQ X Edge](https://www.emqx.io/products/edge)            | EMQ          | Yes, Apache 2.0    |
-| 3    | [EMQ X Kuiper](https://www.emqx.io/products/kuiper)        | EMQ          | Yes, Apache 2.0    |
+| 1    | [EMQ X Neuron](https://www.emqx.com/en/products/neuron)        | EMQ          | No - `1`           |
+| 2    | [EMQ X Edge](https://www.emqx.com/en/products/emqx)            | EMQ          | Yes, Apache 2.0    |
+| 3    | [EMQ X Kuiper](https://github.com/lf-edge/ekuiper)        | EMQ          | Yes, Apache 2.0    |
 | 4    | [Edge manager](https://hub.docker.com/r/emqx/edge-manager) | EMQ          | No - `2`           |
 | 5    | TDengine                                                   | Taosdata     | Yes, GNU AGPL v3.0 |
 | 6    | Grafana                                                    | Grafana Labs | Yes, Apache 2.0    |
 
-`1:` In the future, Neuron plans to open-source its basic functions. Currently, users can download the trial version and use it for free. If there are not enough data collection points for the built-in trial version, you can [apply online](https://www.emqx.io/downloads#neuron) through EMQ website.
+`1:` In the future, Neuron plans to open-source its basic functions. Currently, users can download the trial version and use it for free. If there are not enough data collection points for the built-in trial version, you can [apply online](https://www.emqx.com/en/downloads?product=neuron) through EMQ website.
 
-`2:` Users can use all features in the free version for free, except for a limited number of managed nodes. If you want to try more node management features, you can [apply online](https://www.emqx.io/downloads#neuron) through the EMQ website.
+`2:` Users can use all features in the free version for free, except for a limited number of managed nodes. If you want to try more node management features, you can [apply online](https://www.emqx.com/en/downloads?product=neuron) through the EMQ website.
 
 **The description of basic functions of product**
 
@@ -77,9 +77,9 @@ This solution will use these software products in the following list.
 
 | No.  | Name                                                       | x86*32 | x86*64 | ARM 7 | ARM 64 | PPC64 | Mac  | Docker |
 | :--- | :--------------------------------------------------------- | :----- | :----- | :---- | :----- | :---- | :--- | :----- |
-| 1    | [EMQ X Neuron](https://www.emqx.io/products/neuron)        |        | ☑      | ☑     | ☑      | ☑     |      | ☑      |
-| 2    | [EMQ X Edge](https://www.emqx.io/products/edge)            | ☑      | ☑      | ☑     | ☑      | ☑     | ☑    | ☑      |
-| 3    | [EMQ X Kuiper](https://www.emqx.io/products/kuiper)        | ☑      | ☑      | ☑     | ☑      | ☑     | ☑    | ☑      |
+| 1    | [EMQ X Neuron](https://www.emqx.com/en/products/neuron)        |        | ☑      | ☑     | ☑      | ☑     |      | ☑      |
+| 2    | [EMQ X Edge](https://www.emqx.com/en/products/emqx)            | ☑      | ☑      | ☑     | ☑      | ☑     | ☑    | ☑      |
+| 3    | [EMQ X Kuiper](https://github.com/lf-edge/ekuiper)        | ☑      | ☑      | ☑     | ☑      | ☑     | ☑    | ☑      |
 | 4    | [Edge manager](https://hub.docker.com/r/emqx/edge-manager) | ☑      | ☑      | ☑     | ☑      | ☑     | ☑    | ☑      |
 | 5    | TDengine                                                   | ☑      | ☑      |       | ☑      |       |      | ☑      |
 
@@ -130,7 +130,7 @@ This solution will use the following products except the products which used in 
 - IEF platform is a Huawei public cloud service that users can access and try directly.
 - [Kuiper](https://marketplace.huaweicloud.com/product/OFFI474477808879489024) is live on IEF and can be deployed, installed and maintained directly through the IEF platform (Readers can refer to the video「[Cloud edge collaboration for efficient IoT edge streaming service processing - Huawei IEF & EMQ X Kuiper lightweight edge data solution](https://www.bilibili.com/video/BV1hQ4y1A7Vy?from=search&seid=15773267177167801393)」to learn how to use Kuiper in IEF). Neuron and Edge are not currently available on IEF, but users can install them directly into edge nodes via Docker Hub, and the user can manage and control them from deploy Edge Manager in the cloud.
 - [EMQ X Enterprise](https://marketplace.huaweicloud.com/product/00301-511011-0--0) is now live in Huawei Cloud, and users can also use the [online MQTT cloud service](https://cloud.emqx.io/) provided by EMQ.
-- Persistence or bridging methods of cloud-end data are available to the user, they can choose according to their needs. The related information on which can be found on the [EMQ website](https://www.emqx.io/products/enterprise).
+- Persistence or bridging methods of cloud-end data are available to the user, they can choose according to their needs. The related information on which can be found on the [EMQ website](https://www.emqx.com/en/products/emqx).
 
 
 

@@ -29,6 +29,6 @@ MQTT协议说明：https://mqtt.org/
 
 EMQ开源物联网MQTT消息中间件：https://github.com/emqx/emqx
 
-EMQ金融与支付解决方案：https://www.emqx.cn/solutions/finance_pay
+EMQ金融与支付解决方案：https://www.emqx.com/zh/customers/emqx-in-finance-and-payment-iot
 
 :::

@@ -55,5 +55,5 @@ emqx_web_hook插件
 
 
 
-https://www.emqx.cn/changelogs/broker/v3.1-beta.2
+https://www.emqx.com/zh/changelogs/broker/v3.1-beta.2
 

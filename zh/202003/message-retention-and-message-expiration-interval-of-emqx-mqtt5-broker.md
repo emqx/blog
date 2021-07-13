@@ -21,7 +21,7 @@ PUBLISH 报文可以设置消息过期间隔这一属性，消息过期间隔是
 
 ## EMQ X MQTT 服务器的保留消息
 
-[EMQ X MQTT Broker](https://emqx.io) 的保留消息功能是由 `emqx_retainer` 插件实现，该插件默认开启，通过修改 `emqx_retainer` 插件的配置，可以调整 EMQ X Broker 储存保留消息的位置，限制接收保留消息数量和 Payload 最大长度，以及调整保留消息的过期时间。
+[EMQ X MQTT Broker](https://www.emqx.com/en) 的保留消息功能是由 `emqx_retainer` 插件实现，该插件默认开启，通过修改 `emqx_retainer` 插件的配置，可以调整 EMQ X Broker 储存保留消息的位置，限制接收保留消息数量和 Payload 最大长度，以及调整保留消息的过期时间。
 
 `emqx_retainer` 插件默认开启，插件的配置路径为 `etc/plugins/emqx_retainer.conf`。
 

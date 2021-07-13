@@ -17,7 +17,7 @@
 
 ## 业务场景
 
-假设现有一批设备，每个设备有一个 Client ID，所有设备均通过 [MQTT 协议](https://www.emqx.cn/mqtt) 往 [MQTT 服务器](https://www.emqx.cn/products/broker) 上相应的主题发送数据，主题的设计如下：
+假设现有一批设备，每个设备有一个 Client ID，所有设备均通过 [MQTT 协议](https://www.emqx.com/zh/mqtt) 往 [MQTT 服务器](https://www.emqx.com/zh/products/emqx) 上相应的主题发送数据，主题的设计如下：
 
 ```bash
 devices/{client_id}/messages
@@ -64,7 +64,7 @@ devices/{client_id}/messages
 
 三大部件的官网均有不同操作系统的安装包资源与教程：
 
-- [EMQ X 官网](https://www.emqx.cn/)
+- [EMQ X 官网](https://www.emqx.com/zh)
 - [InfluxDB 官网](https://www.influxdata.com/)
 - [Grafana 官网](https://grafana.com/) 
 
@@ -72,7 +72,7 @@ devices/{client_id}/messages
 
 #### 安装
 
-访问 [EMQ X 下载](https://www.emqx.cn/downloads) 页面下载适合您操作系统的安装包， **由于数据持久化是企业功能，您需要下载 EMQ X 企业版（可以申请 License 试用）** 。 写本文的时候 EMQ X 企业版最新版本为 v3.4.5，本教程需要使用该版本及以上版本，下载后的启动步骤如下 ：
+访问 [EMQ X 下载](https://www.emqx.com/zh/downloads) 页面下载适合您操作系统的安装包， **由于数据持久化是企业功能，您需要下载 EMQ X 企业版（可以申请 License 试用）** 。 写本文的时候 EMQ X 企业版最新版本为 v3.4.5，本教程需要使用该版本及以上版本，下载后的启动步骤如下 ：
 
 ```bash
 ## 解压下载好的安装包

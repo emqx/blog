@@ -1,4 +1,4 @@
-当前 [NB-IoT](https://baike.baidu.com/item/NB-IoT) 已进入高速发展期，[EMQ](https://www.emqx.cn/) 为运营商、垂直应用企业、NB 模组厂家等全球客户提供的 EMQ X NB-IoT 融合接入方案，能够助力客户基于 NB-IoT 网络快速实现安全可靠的设备互联、IoT 平台及垂直行业应用开发。
+当前 [NB-IoT](https://baike.baidu.com/item/NB-IoT) 已进入高速发展期，[EMQ](https://www.emqx.com/zh) 为运营商、垂直应用企业、NB 模组厂家等全球客户提供的 EMQ X NB-IoT 融合接入方案，能够助力客户基于 NB-IoT 网络快速实现安全可靠的设备互联、IoT 平台及垂直行业应用开发。
 
 
 
@@ -43,7 +43,7 @@
 
 1. NB-IoT 网络的物联网数据传输主要采用基于 UDP 的 CoAP 协议，同时为便于物联网设备管理，通常采用 LwM2M 协议对设备属性进行统一标识；因此在 NB-IoT 物联网场景下，海量设备接入、高效处理 CoAP/LwM2M 协议成为基础需求。 
 
-2. 其他蜂窝网络和有线网络的物联网数据传输一般首选采用基于 TCP 的 [MQTT 协议](https://www.emqx.cn/mqtt)。
+2. 其他蜂窝网络和有线网络的物联网数据传输一般首选采用基于 TCP 的 [MQTT 协议](https://www.emqx.com/zh/mqtt)。
 
 
 

@@ -1,4 +1,4 @@
-MQTT v5 brings lots of new features, and we will try our best to present these features in an easy-to-understand way and discuss the impact of these features on developers. So far, we have discussed these [new features of MQTT v5](https://www.emqx.io/mqtt/mqtt5). Today, we will continue to discuss: **enhanced authentication**.
+MQTT v5 brings lots of new features, and we will try our best to present these features in an easy-to-understand way and discuss the impact of these features on developers. So far, we have discussed these [new features of MQTT v5](https://www.emqx.com/en/mqtt/mqtt5). Today, we will continue to discuss: **enhanced authentication**.
 
 In the IoT scenario, the safe design is a very important part of the process. leakage of sensitive data or unauthorized control of edge devices are unacceptable, but compared to other scenarios, the IoT project still has the following limitations:
 
@@ -6,7 +6,7 @@ In the IoT scenario, the safe design is a very important part of the process. le
 - Encryption algorithms require more computing power, but the performance of IoT devices is often very limited;
 - Network conditions of IoT are often much worse than those of the home or office.
 
-In order to solve the questions blew, the [MQTT protocol](https://www.emqx.io/mqtt) provides the simple authentication and the enhanced authentication, which easy to validate devices at the application layer.
+In order to solve the questions blew, the [MQTT protocol](https://www.emqx.com/en/mqtt) provides the simple authentication and the enhanced authentication, which easy to validate devices at the application layer.
 
 
 
@@ -24,7 +24,7 @@ However, in the protocol based on the simple authentication model of username an
 
 ## **Enhanced authentication**
 
-For the consideration of stronger security, MQTT v5 adds a new feature **enhanced authentication**. The enhanced authentication includes query/response style authentication, which can implement bi-directional authentication of the client and broker. The [MQTT broker](https://www.emqx.io/products/broker) can verify whether the connected client is a real client, and the client can also verify whether the connected broker is a real broker, thus it provides higher security.
+For the consideration of stronger security, MQTT v5 adds a new feature **enhanced authentication**. The enhanced authentication includes query/response style authentication, which can implement bi-directional authentication of the client and broker. The [MQTT broker](https://www.emqx.com/en/products/emqx) can verify whether the connected client is a real client, and the client can also verify whether the connected broker is a real broker, thus it provides higher security.
 
 Enhanced authentication relies on the authentication method and authentication data to complete the entire authentication process. In enhanced authentication, the authentication method is normally [SASL ( Simple Authentication and Security Layer )](https://en.wikipedia.org/wiki/Simple_Authentication_and_Security_Layer) mechanism, which uses a registered name to easy to exchange information. However, the authentication method is not limited to the use of a registered SASL mechanism, and the broker and client may agree to use any query/response style of authentication.
 

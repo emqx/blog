@@ -1,4 +1,4 @@
-[MQTT 协议](https://www.emqx.cn/mqtt) 的核心在于发布订阅模式，在本文中，我们将对这一模式进行深入的介绍。
+[MQTT 协议](https://www.emqx.com/zh/mqtt) 的核心在于发布订阅模式，在本文中，我们将对这一模式进行深入的介绍。
 
 
 

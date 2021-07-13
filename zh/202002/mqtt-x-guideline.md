@@ -6,7 +6,7 @@
 
 请从 [GitHub Releases](https://github.com/emqx/MQTTX/releases) 下载符合您的版本并安装使用。
 
-如果出现网络原因，导致从 GitHub 下载中出现网速较慢或卡顿的情况时，也可以 [前往 EMQ 官网](https://www.emqx.cn/downloads/MQTTX/) ，选择符合您的版本并安装使用。
+如果出现网络原因，导致从 GitHub 下载中出现网速较慢或卡顿的情况时，也可以 [前往 EMQ 官网](https://www.emqx.com/zh/downloads/MQTTX/) ，选择符合您的版本并安装使用。
 
 
 
@@ -118,7 +118,7 @@ docker run -d --name emqx -p 1883:1883 -p 8083:8083 -p 8883:8883 -p 8084:8084 -p
 
 3. 检查更新
 
-   点击左侧底部的 `i` 按钮，可进入到 `About` 页面，了解 **MQTT X** 的版本信息和 [EMQ X](https://emqx.io/) 的相关信息。点击 `Check for Updates` 可以检查是否有更新版本。
+   点击左侧底部的 `i` 按钮，可进入到 `About` 页面，了解 **MQTT X** 的版本信息和 [EMQ X](https://www.emqx.com/en) 的相关信息。点击 `Check for Updates` 可以检查是否有更新版本。
 
 ![mqttxupdate.png](https://static.emqx.net/images/de17680e289b43e3c555a1a40315ec1c.png)
 

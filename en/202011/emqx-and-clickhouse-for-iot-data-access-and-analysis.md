@@ -1,6 +1,6 @@
 
 
-IoT data collection involves mass equipment access and a massive number of data transmission. The combined technology stack of [EMQ X MQTT Broker](https://www.emqx.io/products/broker) and ClickHouse OLAP database is fully capable of IoT data collection, transmission, storage, analysis and processing business.
+IoT data collection involves mass equipment access and a massive number of data transmission. The combined technology stack of [EMQ X MQTT Broker](https://www.emqx.com/en/products/emqx) and ClickHouse OLAP database is fully capable of IoT data collection, transmission, storage, analysis and processing business.
 
 After storing the data in the database, we usually need other methods, for example, a data visualization system will count and display these data according to the rules for implementing data monitoring, indicators statistics and other business needs, to give full play to the value of the data. ClickHouse with open source software Grafana can quickly build IoT data analysis and visualization platform.
 
@@ -14,7 +14,7 @@ The above solution without code development, involving products can provide open
 
 ### Introduction to EMQ X
 
-[EMQ  X ](https://www.emqx.io/) is an open-source MQTT messaging broker developed on a highly concurrent Erlang/OTP language platform, supporting millions of connections and distributed cluster architecture, with a publish-subscribe model. EMQ X has many out-of-the-box features built-in, and **EMQ X Enterprise**, supports the storage of IoT message data to ClickHouse via a rules engine.
+[EMQ  X ](https://www.emqx.com/en) is an open-source MQTT messaging broker developed on a highly concurrent Erlang/OTP language platform, supporting millions of connections and distributed cluster architecture, with a publish-subscribe model. EMQ X has many out-of-the-box features built-in, and **EMQ X Enterprise**, supports the storage of IoT message data to ClickHouse via a rules engine.
 
 
 ### Introduction to ClickHouse
@@ -32,7 +32,7 @@ Grafana 4.6+ supports installing Clickhouse data sources via plugin format. It i
 
 ## Business scenarios
 
-In this article, we simulate a data collection scenario in an IoT environment, assuming that there are certain data collection points in the environment, and the data from all the collection points are transmitted to the collection platform via [MQTT protocol](https://www.emqx.io/mqtt), the MQTT topic is designed as follows:
+In this article, we simulate a data collection scenario in an IoT environment, assuming that there are certain data collection points in the environment, and the data from all the collection points are transmitted to the collection platform via [MQTT protocol](https://www.emqx.com/en/mqtt), the MQTT topic is designed as follows:
 
 ```bash
 sensor/data
@@ -69,7 +69,7 @@ Each component used in this article has a Docker image that can be quickly built
 
 The released resources and tutorial of use can be referred to as the following websites:
 
- - EMQ X：[EMQ official website](https://www.emqx.io/)
+ - EMQ X：[EMQ official website](https://www.emqx.com/en)
  - ClickHouse：ClickHouse products homepage  [https://clickhouse.tech/](https://clickhouse.tech/)
  - Grafana：Grafana official website [https://grafana.com/](https://grafana.com/) 
 
@@ -93,7 +93,7 @@ EMQ X Cloud offers a 6-month free trial to newly registered users. After registe
 
 > If you are new to EMQ X, we recommend [EMQ X documentation](https://docs.emqx.io/broker/latest/en/) to get started quickly.
 
-Access the [EMQ download](https://www.emqx.io/downloads#enterprise) page to download the appropriate package for your operating system. At the time of this writing, the Enterprise version of EMQ X is v4.1.2. The steps to download the zip package are as follows:
+Access the [EMQ download](https://www.emqx.com/en/downloads?product=enterprise) page to download the appropriate package for your operating system. At the time of this writing, the Enterprise version of EMQ X is v4.1.2. The steps to download the zip package are as follows:
 
 ```bash
 ## Decompress the downloaded installation package

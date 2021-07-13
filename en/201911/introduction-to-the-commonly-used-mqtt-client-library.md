@@ -2,7 +2,7 @@
 
 MQTT is a lightweight publish-subscribe mode messaging protocol designed for IoT applications in low-bandwidth and unstable network environments. MQTT is based on the publish/subscribe paradigm and works on the TCP/IP protocol family. MQTT protocol is lightweight, simple, open and easy to implement， which makes it suitable for a wide range of applications.
 
-MQTT is based on the client-server communication mode. MQTT server is called as MQTT Broker. Currently, there are many MQTT Brokers in the industry, whose advantages and disadvantages and functional differences will not be discussed in this article. Taking the most popular MQTT broker [ EMQ X](https://github.com/emqx/emqx) in the open source community as an example, this article uses the public Broker `broker.emqx.io` provided by  [EMQ](https://www.emqx.io/) , and uses a simple example of connecting Broker, publishing and processing messages by client to summarizes the usage and examples of MQTT  client libraries under different programming languages and platforms.
+MQTT is based on the client-server communication mode. MQTT server is called as MQTT Broker. Currently, there are many MQTT Brokers in the industry, whose advantages and disadvantages and functional differences will not be discussed in this article. Taking the most popular MQTT broker [ EMQ X](https://github.com/emqx/emqx) in the open source community as an example, this article uses the public Broker `broker.emqx.io` provided by  [EMQ](https://www.emqx.com/en) , and uses a simple example of connecting Broker, publishing and processing messages by client to summarizes the usage and examples of MQTT  client libraries under different programming languages and platforms.
 
 The selected client libraries are as follows:
 

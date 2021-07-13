@@ -79,7 +79,7 @@ emqx v3.1.0 is running
 
 #### 从 `.rpm` 文件安装
 
-1.转到 [EMQ X 下载](https://www.emqx.cn/downloads) 页面或 [GitHub](https://github.com/emqx/emqx/releases)，选择 CentOS 版本，然后下载要安装的 EMQ X 版本的 .rpm 文件。
+1.转到 [EMQ X 下载](https://www.emqx.com/zh/downloads) 页面或 [GitHub](https://github.com/emqx/emqx/releases)，选择 CentOS 版本，然后下载要安装的 EMQ X 版本的 .rpm 文件。
 
 2.安装 EMQ X ，将下面的路径更改为下载 EMQ X 软件包的路径。
 
@@ -101,7 +101,7 @@ emqx v3.1.0 is running
 
 #### 从 `.zip` 文件安装
 
-1.转到 [EMQ X 下载](https://www.emqx.cn/downloads) 页面或 [GitHub](https://github.com/emqx/emqx/releases)，选择 CentOS 版本，然后下载要安装的 EMQ X 版本的 .zip 文件。
+1.转到 [EMQ X 下载](https://www.emqx.com/zh/downloads) 页面或 [GitHub](https://github.com/emqx/emqx/releases)，选择 CentOS 版本，然后下载要安装的 EMQ X 版本的 .zip 文件。
 
 2.解压压缩包，将下面的路径更改为下载 EMQ X 软件包的路径。
 

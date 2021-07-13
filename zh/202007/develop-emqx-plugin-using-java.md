@@ -1,6 +1,6 @@
 
 
-从 v4.1 版本开始，[EMQ X MQTT 服务器](https://www.emqx.cn/products/broker) 提供了专门的多语言支持插件 [emqx_extension_hook](https://github.com/emqx/emqx-extension-hook) ，现已支持使用其他编程语言来处理 EMQ X 中的钩子事件，开发者可以使用 Python 或者 Java 快速开发自己的插件，在官方功能的基础上进行扩展，满足自己的业务场景。例如：
+从 v4.1 版本开始，[EMQ X MQTT 服务器](https://www.emqx.com/zh/products/emqx) 提供了专门的多语言支持插件 [emqx_extension_hook](https://github.com/emqx/emqx-extension-hook) ，现已支持使用其他编程语言来处理 EMQ X 中的钩子事件，开发者可以使用 Python 或者 Java 快速开发自己的插件，在官方功能的基础上进行扩展，满足自己的业务场景。例如：
 
 - 验证某客户端的登录权限：客户端连接时触发对应函数，通过参数获取客户端信息后通过读取数据库、比对等操作判定是否有登录权限
 - 记录客户端在线状态与上下线历史：客户端状态变动时触发对应函数，通过参数获取客户端信息，改写数据库中客户端在线状态

@@ -10,11 +10,11 @@ All the runtime environments demonstrated in this article are all built through 
 
 ### Kuiper
 
-[Kuiper](https://www.emqx.io/products/kuiper) is a lightweight IoT edge analysis and stream processing open source software implemented by Golang, and it can run on various resource-limited edge devices. One of the main design goals of Kuiper is to migrate the real-time stream computing frameworks (such as [Apache Spark](https://spark.apache.org/), [Apache Storm](https://storm.apache.org/) and [Apache Flink](https://flink.apache.org/), etc.) running in the cloud-side to the edge-side. Kuiper refers to the architecture and implementation of the above-mentioned cloud-side stream processing projects above, use the features of edge streaming data processing and adopt the rule engine which is written based on `Source`, `SQL(business logic processing)` and `target (Sink)` to implement edge streaming data processing. Project address: [https://github.com/emqx/kuiper](https://github.com/emqx/kuiper)
+[Kuiper](https://github.com/lf-edge/ekuiper) is a lightweight IoT edge analysis and stream processing open source software implemented by Golang, and it can run on various resource-limited edge devices. One of the main design goals of Kuiper is to migrate the real-time stream computing frameworks (such as [Apache Spark](https://spark.apache.org/), [Apache Storm](https://storm.apache.org/) and [Apache Flink](https://flink.apache.org/), etc.) running in the cloud-side to the edge-side. Kuiper refers to the architecture and implementation of the above-mentioned cloud-side stream processing projects above, use the features of edge streaming data processing and adopt the rule engine which is written based on `Source`, `SQL(business logic processing)` and `target (Sink)` to implement edge streaming data processing. Project address: [https://github.com/emqx/kuiper](https://github.com/emqx/kuiper)
 
 > Version: v1.0.2
 
-[Download link](https://www.emqx.io/downloads#kuiper) ｜ [Installation document](https://docs.emqx.io/en/kuiper/latest/getting_started.html#download-install)
+[Download link](https://github.com/lf-edge/ekuiper) ｜ [Installation document](https://docs.emqx.io/en/kuiper/latest/getting_started.html#download-install)
 
 ```shell
 # Get a Docker mirroring
@@ -42,11 +42,11 @@ $ docker run -p 9082:9082 -d emqx/kuiper-manager:1.0.2
 
 ### EMQ X Edge
 
-[EMQ X Edge](https://www.emqx.io/products/edge)  is a lightweight multi-protocol IoT edge message middleware that supports being deployed on resource-limited IoT edge hardware. 
+[EMQ X Edge](https://www.emqx.com/en/products/emqx)  is a lightweight multi-protocol IoT edge message middleware that supports being deployed on resource-limited IoT edge hardware. 
 
 > Version: v4.2.4
 
-[Download link](https://www.emqx.io/downloads#edge) | [Installation document](https://docs.emqx.io/en/edge/latest/install.html)
+[Download link](https://www.emqx.com/en/downloads?product=nanomq) | [Installation document](https://docs.emqx.io/en/edge/latest/install.html)
 
 ```shell
 # Get a Docker mirroring
@@ -58,7 +58,7 @@ $ docker run -d --name emqx -p 1883:1883 emqx/emqx-edge:4.2.4
 
 ### MQTT X
 
-[MQTT X](https://mqttx.app/) is a cross-platform [MQTT 5.0](https://emqx.io/mqtt/mqtt5) desktop test client that supports macOS, Linux, Windows. Users can quickly create multiple simultaneous online **MQTT client** for convenient testing the connect/publish/subscribe functions of MQTT/TCP, MQTT/TLS, MQTT/WebSocket and other **MQTT protocol** features. 
+[MQTT X](https://mqttx.app/) is a cross-platform [MQTT 5.0](https://www.emqx.com/en/mqtt/mqtt5) desktop test client that supports macOS, Linux, Windows. Users can quickly create multiple simultaneous online **MQTT client** for convenient testing the connect/publish/subscribe functions of MQTT/TCP, MQTT/TLS, MQTT/WebSocket and other **MQTT protocol** features. 
 
 > Version: v1.4.2
 

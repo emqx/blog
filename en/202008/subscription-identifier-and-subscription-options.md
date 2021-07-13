@@ -1,5 +1,5 @@
 
-MQTT v5 brings many new features, we will show these features in an easy-to-understand way and discuss the impact of these features on the developer. So far, we have discussed these [new features of MQTT v5](https://www.emqx.io/mqtt/mqtt5). Today, we will continue discussing: **subscription identifier** and **subscription options**.
+MQTT v5 brings many new features, we will show these features in an easy-to-understand way and discuss the impact of these features on the developer. So far, we have discussed these [new features of MQTT v5](https://www.emqx.com/en/mqtt/mqtt5). Today, we will continue discussing: **subscription identifier** and **subscription options**.
 
 
 
@@ -32,7 +32,7 @@ In the MQTT v5, you can use more subscription options to change the server behav
 
 ### QoS
 
-Please refer to [MQTT Quality of Service](https://www.emqx.io/blog/introduction-to-mqtt-qos).
+Please refer to [MQTT Quality of Service](https://www.emqx.com/en/blog/introduction-to-mqtt-qos).
 
 ### No Local
 

@@ -1,6 +1,6 @@
 Officially launched in September, the official version of EMQ X Enterprise 3.4.0 is released by EMQ. In this version, the management configuration and rule engine functions are enhanced, message encoding and decoding, cluster hot configuration and vehicle networking protocol support  are added, and a new management monitoring Dashboard page is designed, and this version is a stable version recommended for enterprise applications.
 
-The relevant installation package is ready for download from [EMQ website](https://www.emqx.io/downloads), and  a free self-service application for trial is avaiable from the website.
+The relevant installation package is ready for download from [EMQ website](https://www.emqx.com/en/downloads), and  a free self-service application for trial is avaiable from the website.
 
 
 

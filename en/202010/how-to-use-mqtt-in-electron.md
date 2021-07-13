@@ -3,7 +3,7 @@
 
 A basic Electron includes three files: `package.json` (metadata) `main.js` (code) and `index.html` (graphical user interface). The frame is provided by the Electron executable file (electron.exe on Windows, electron.app on macOS, electron on Linux). Developers are free to add flags, customize icons, rename or edit Electron executable files.
 
-This article mainly introduces how to use [MQTT](https://www.emqx.io/mqtt) in Electron projects, and complete a simple MQTT desktop client, and implement the connection, subscription, unsubscribe, messaging and other functions between the client and [MQTT broker](https://www.emqx.io/products/broker).
+This article mainly introduces how to use [MQTT](https://www.emqx.com/en/mqtt) in Electron projects, and complete a simple MQTT desktop client, and implement the connection, subscription, unsubscribe, messaging and other functions between the client and [MQTT broker](https://www.emqx.com/en/products/emqx).
 
 
 
@@ -107,7 +107,7 @@ In this case, the locally installed `MQTT.js` module cannot be loaded directly i
 
 ### Connect to the MQTT broker
 
-This article will use the [free public MQTT broker](https://www.emqx.io/mqtt/public-mqtt5-broker) provided by EMQ X. This service was created based on the EMQ X [MQTT IoT cloud platform](https://cloud.emqx.io/). The information about broker access is as follows:
+This article will use the [free public MQTT broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker) provided by EMQ X. This service was created based on the EMQ X [MQTT IoT cloud platform](https://cloud.emqx.io/). The information about broker access is as follows:
 
 - Broker: **broker.emqx.io**
 - TCP Port: **1883**

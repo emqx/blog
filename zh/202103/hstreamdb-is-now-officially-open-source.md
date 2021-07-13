@@ -2,7 +2,7 @@
 
 一直以来，为了更好地解决当前各行业实际业务中对于实时流数据存储和处理的种种需求，EMQ 始终在探寻一个最佳的流处理系统与架构。 
 
-在之前的[《当数据库遇见流计算：流数据库的诞生！》](https://www.emqx.cn/blog/birth-of-streaming-database) 一文中，我们正式提出了「流数据库」这一全新数据库品类。 **在今天这篇文章中，我们将正式向大家介绍 EMQ 正在研发的流数据库产品 HStreamDB。** 相比当前各种非系统化的流数据解决方案，我们相信由 HStreamDB 开创的 [流数据库](https://hstream.io/) 会是实时数据处理时代的最佳选择，也将成为未来企业软件系统的核心基础设施。
+在之前的[《当数据库遇见流计算：流数据库的诞生！》](https://www.emqx.com/zh/blog/birth-of-streaming-database) 一文中，我们正式提出了「流数据库」这一全新数据库品类。 **在今天这篇文章中，我们将正式向大家介绍 EMQ 正在研发的流数据库产品 HStreamDB。** 相比当前各种非系统化的流数据解决方案，我们相信由 HStreamDB 开创的 [流数据库](https://hstream.io/) 会是实时数据处理时代的最佳选择，也将成为未来企业软件系统的核心基础设施。
 
 
 
@@ -243,7 +243,7 @@ INSERT INTO demo (temperature, humidity) VALUES (28, 86);
 
 ## HStreamDB 开源社区
 
-作为一家开源基础软件供应商，[EMQ](https://www.emqx.cn/) 始终坚信开源的价值与力量，因此 HStreamDB 从立项之初就完全采用开源的方式在 GitHub 上进行开发。
+作为一家开源基础软件供应商，[EMQ](https://www.emqx.com/zh) 始终坚信开源的价值与力量，因此 HStreamDB 从立项之初就完全采用开源的方式在 GitHub 上进行开发。
 
 目前 HStreamDB 项目正在团队的努力下积极向前推进着， 同时这也正是各位开源社区的伙伴们一同参与进来的最好时机。 
 

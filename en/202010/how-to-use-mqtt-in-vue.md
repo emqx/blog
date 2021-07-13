@@ -2,7 +2,7 @@
 
 [Vue](https://vuejs.org) is a progressive framework for building user interfaces. Unlike other monolithic frameworks, Vue is designed from the ground up to be incrementally adoptable. The core library is focused on the view layer only, and is easy to pick up and integrate with other libraries or existing projects. On the other hand, Vue is also perfectly capable of powering sophisticated Single-Page Applications when used in combination with modern tooling and supporting libraries.
 
-[MQTT](https://www.emqx.io/mqtt) is a kind of **lightweight IoT messaging protocol** based on the publish/subscribe model. This protocol provides one-to-many message distribution and decoupling of applications. It has several advantages which are low transmission consumption and protocol data exchange, minimized network traffic, three different service quality levels of message which can meet different delivery needs. 
+[MQTT](https://www.emqx.com/en/mqtt) is a kind of **lightweight IoT messaging protocol** based on the publish/subscribe model. This protocol provides one-to-many message distribution and decoupling of applications. It has several advantages which are low transmission consumption and protocol data exchange, minimized network traffic, three different service quality levels of message which can meet different delivery needs. 
 
 This article mainly introduces how to use MQTT in the Vue project, and implement the connection, subscription, messaging, unsubscribing and other functions between the client and MQTT broker.
 
@@ -53,7 +53,7 @@ vue create vue-mqtt-test
 
 ### Connect to the MQTT broker
 
-This article will use the [free public MQTT broker](https://www.emqx.io/mqtt/public-mqtt5-broker) provided by EMQ X. This service was created based on the EMQ X [MQTT IoT cloud platform](https://cloud.emqx.io/). The information about broker access is as follows:
+This article will use the [free public MQTT broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker) provided by EMQ X. This service was created based on the EMQ X [MQTT IoT cloud platform](https://cloud.emqx.io/). The information about broker access is as follows:
 
 - Broker: **broker.emqx.io**
 - TCP Port: **1883**

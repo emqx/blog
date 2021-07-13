@@ -1,5 +1,5 @@
 
-From v4.1, EMQ X [MQTT broker](https://www.emqx.io/products/broker) provides the specified plugin that supports multiple languages [emqx_extension_hook](https://github.com/emqx/emqx-extension-hook). Currently, it is supported that use other programming languages to process the hook events of EMQ X. The developer can use Python or Java to quickly develop their plugins or do some expansions based on the official functions to satisfy their business scenarios. For example:
+From v4.1, EMQ X [MQTT broker](https://www.emqx.com/en/products/emqx) provides the specified plugin that supports multiple languages [emqx_extension_hook](https://github.com/emqx/emqx-extension-hook). Currently, it is supported that use other programming languages to process the hook events of EMQ X. The developer can use Python or Java to quickly develop their plugins or do some expansions based on the official functions to satisfy their business scenarios. For example:
 
 - Verify the client's login permission: when connecting to the client, the corresponding function will be triggered and the client information will be obtained through parameters. Finally, it judges whether it has the login permission after reading the database, comparison, etc.
 - Record the online status of client and online and offline history: trigger corresponding functions when the status of the client changes, the client information will be obtained through parameters, and the online status of the client in the database will be rewritten.
@@ -139,7 +139,7 @@ def deinit():
 
 ### Enable
 
-Enable plugin `emqx_extension_hook`. If configuration error or write wrong Python code, it can not be enabled normally.  After it is enabled, try to establish the [MQTT](https://www.emqx.io/mqtt) connection and observer the running situation of the business.
+Enable plugin `emqx_extension_hook`. If configuration error or write wrong Python code, it can not be enabled normally.  After it is enabled, try to establish the [MQTT](https://www.emqx.com/en/mqtt) connection and observer the running situation of the business.
 
 ```bash
 ./bin/emqx_ctl plugins load emqx_extension_hook

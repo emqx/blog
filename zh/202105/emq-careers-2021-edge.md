@@ -19,7 +19,7 @@
 
 ## 产品
 
-### [Neuron](https://www.emqx.cn/products/neuron)
+### [Neuron](https://www.emqx.com/zh/products/neuron)
 
 Neuron 是一款物联网边缘工业协议网关软件，支持一站式接入数十种工业协议，并转换成 MQTT 协议接入云端工业物联网平台。对于工业物联网应用来说，如何从设备实时的获取所需数据，是一大痛点。而大多数物联网项目都专注在平台讯息处理及储存，其实在边缘端的数据处理不同工业协议转换也同等重要。而 Neuron 它就像产业互联网的末梢神经元，承担着感知数据并传输至边缘大脑的功能。
 
@@ -64,7 +64,7 @@ NanoMQ 是 EMQ 今年刚刚发布的面向 IoT&5G 边缘计算场景的下一代
 
 
 
-### [Kuiper](https://www.emqx.cn/products/kuiper)
+### [Kuiper](https://github.com/lf-edge/ekuiper)
 
 Kuiper 是 Golang 实现的轻量级物联网边缘分析、流式处理开源软件，可以运行在各类资源受限的边缘设备上。Kuiper 设计的一个主要目标就是将在云端运行的实时流式计算框架（比如 Apache Spark ，Apache Storm 和 Apache Flink 等）迁移到边缘端。Kuiper 参考了上述云端流式处理项目的架构与实现，结合边缘流式数据处理的特点，采用了编写基于源 ( Source )、SQL ( 业务逻辑处理 )、目标 ( Sink ) 的规则引擎来实现边缘端的流式数据处理。
 

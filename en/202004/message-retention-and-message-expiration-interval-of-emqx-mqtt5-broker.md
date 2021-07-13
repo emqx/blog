@@ -20,7 +20,7 @@ If the message expiration interval is set for A PUBLISH packet, the messages hav
 
 ## Retained messages of the EMQ X
 
-The message retention function of [EMQ X MQTT Broker](https://emqx.io) is implemented by the `emqx_retainer` plugin, which is enabled by default. By modifying the configuration of the` emqx_retainer` plugin, you can adjust the EMQ X Broker's retention message Location, restrict the number of retained messages and maximum payload length, and adjust the expiration time of retained messages.
+The message retention function of [EMQ X MQTT Broker](https://www.emqx.com/en) is implemented by the `emqx_retainer` plugin, which is enabled by default. By modifying the configuration of the` emqx_retainer` plugin, you can adjust the EMQ X Broker's retention message Location, restrict the number of retained messages and maximum payload length, and adjust the expiration time of retained messages.
 
 `emqx_retainer` is enabled by default，and configuration path of the plugin is `etc/plugins/emqx_retainer.conf`
 

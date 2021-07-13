@@ -27,7 +27,7 @@ KubeSphere 支持向导式 UI，当应用的各个组件进行容器化之后，
 
 ![](https://pek3b.qingstor.com/kubesphere-docs/png/20191028200917.png)
 
-本文先介绍 KubeSphere 支持的 **第一种应用部署与管理方式**，通过在企业空间导入第三方应用仓库，快速部署一个 [EMQ X](https://www.emqx.cn) 集群至 Kubernetes，最终访问 EMQ X 的 Dashboard 服务，同时介绍 EMQ X 本身的特性与部署方式。
+本文先介绍 KubeSphere 支持的 **第一种应用部署与管理方式**，通过在企业空间导入第三方应用仓库，快速部署一个 [EMQ X](https://www.emqx.com/zh) 集群至 Kubernetes，最终访问 EMQ X 的 Dashboard 服务，同时介绍 EMQ X 本身的特性与部署方式。
 
 ## EMQ X 是什么
 
@@ -163,7 +163,7 @@ KubeSphere 支持一键快速扩展 EMQ X 集群，进入 `工作负载 → 有�
 
 ## 总结
 
-本文介绍了 KubeSphere 支持的 **第一种应用部署与管理方式**，通过在企业空间导入了 [EMQ X](https://www.emqx.cn) 应用仓库，并快速部署到了 Kubernetes。未来，**EMQ X + KubeSphere** 可作为物联网应用场景下快速落地**容器微服务**的解决方案。
+本文介绍了 KubeSphere 支持的 **第一种应用部署与管理方式**，通过在企业空间导入了 [EMQ X](https://www.emqx.com/zh) 应用仓库，并快速部署到了 Kubernetes。未来，**EMQ X + KubeSphere** 可作为物联网应用场景下快速落地**容器微服务**的解决方案。
 
 下一期文章将主要介绍第二种方式 - **应用商店与应用的生命周期管理**，如何使用开发者或 ISV 角色用户，将 Helm 应用的 **上传提交、应用审核、测试部署、应用上架、应用升级、应用下架** 作为一个完整的流程来演示。
 

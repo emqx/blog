@@ -23,10 +23,10 @@
 
 ### EMQX
 
-参考 [EMQ X Broker](https://www.emqx.cn/downloads#broker)
+参考 [EMQ X Broker](https://www.emqx.com/zh/downloads?product=broker)
 
 ```bash
-wget https://www.emqx.cn/downloads/broker/v4.2.5/emqx-ubuntu18.04-4.2.5-x86_64.zip
+wget https://www.emqx.com/zh/downloads/broker/v4.2.5/emqx-ubuntu18.04-4.2.5-x86_64.zip
 
 unzip emqx-ubuntu18.04-4.2.5-x86_64.zip
 ```

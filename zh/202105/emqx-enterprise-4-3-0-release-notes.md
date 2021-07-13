@@ -2,9 +2,9 @@ EMQ X Enterprise 是一个弹性伸缩的企业级物联网 MQTT 消息平台，
 
 EMQ X Enterprise 适用于各种物联网应用场景，支持公有云、私有云、物理机、容器/K8s 任意部署，能够帮助企业快速构建 IoT 平台和应用。
 
-企业版介绍：[https://www.emqx.cn/products/enterprise](https://www.emqx.cn/products/enterprise)
+企业版介绍：[https://www.emqx.com/zh/products/emqx](https://www.emqx.com/zh/products/emqx)
 
-下载地址：[https://www.emqx.cn/downloads](https://www.emqx.cn/downloads)
+下载地址：[https://www.emqx.com/zh/downloads](https://www.emqx.com/zh/downloads)
 
 
 
@@ -14,9 +14,9 @@ EMQ X Enterprise 适用于各种物联网应用场景，支持公有云、私有
 
 ## 概览
 
-EMQ X Enterprise v4.3.0 版本继承了开源版 4.3.0 版本中的诸多性能提升和功能改进，详见 [EMQ X v4.3 正式发布：性能大幅提升，更好用的多语言扩展](https://www.emqx.cn/blog/emqx-4-3-0-release-notes)。在此基础上，企业版 4.3.0 中新增了 Kafka 分区动态扩容的支持，以及更灵活的通过 Kafka 下发 MQTT 消息的方式。
+EMQ X Enterprise v4.3.0 版本继承了开源版 4.3.0 版本中的诸多性能提升和功能改进，详见 [EMQ X v4.3 正式发布：性能大幅提升，更好用的多语言扩展](https://www.emqx.com/zh/blog/emqx-4-3-0-release-notes)。在此基础上，企业版 4.3.0 中新增了 Kafka 分区动态扩容的支持，以及更灵活的通过 Kafka 下发 MQTT 消息的方式。
 
-详细更新日志：[https://www.emqx.cn/changelogs/enterprise/v4.3.0](https://www.emqx.cn/changelogs/enterprise/v4.3.0)
+详细更新日志：[https://www.emqx.com/zh/changelogs/enterprise/v4.3.0](https://www.emqx.com/zh/changelogs/enterprise/v4.3.0)
 
 
 

@@ -47,7 +47,7 @@ Or use CDN addresses directly without installation
 
 ## Connect to the MQTT broker
 
-This article will use the [free public MQTT broker](https://www.emqx.io/mqtt/public-mqtt5-broker) provided by EMQ X. This service was created based on the EMQ X [MQTT IoT cloud platform](https://cloud.emqx.io/). The information about broker access is as follows:
+This article will use the [free public MQTT broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker) provided by EMQ X. This service was created based on the EMQ X [MQTT IoT cloud platform](https://cloud.emqx.io/). The information about broker access is as follows:
 
 - Broker: **broker.emqx.io**
 - TCP Port: **1883**
@@ -168,7 +168,7 @@ The MQTT.js library uses `wxs` protocol identifier to specially process the WeCh
 
 ## Enable SSL/TLS for EMQ X
 
-EMQ built-in self-signed certificate, encrypted WebSocket connection has been started by default, but most browsers will report invalid certificate errors such as `net::ERR_CERT_COMMON_NAME_INVALID` (Chrome, 360 and other WebKit kernel browsers in developer mode. Console tab can be used to see most connection errors). The reason for this error is that the browser cannot verify the validity of the self-signed certificate. The reader needs to purchase a trusted certificate from a certificate authority and refer to the corresponding section in this article for configuration actions: [Enable SSL/TLS for EMQ X MQTT broker](https://www.emqx.io/blog/emqx-server-ssl-tls-secure-connection-configuration-guide).
+EMQ built-in self-signed certificate, encrypted WebSocket connection has been started by default, but most browsers will report invalid certificate errors such as `net::ERR_CERT_COMMON_NAME_INVALID` (Chrome, 360 and other WebKit kernel browsers in developer mode. Console tab can be used to see most connection errors). The reason for this error is that the browser cannot verify the validity of the self-signed certificate. The reader needs to purchase a trusted certificate from a certificate authority and refer to the corresponding section in this article for configuration actions: [Enable SSL/TLS for EMQ X MQTT broker](https://www.emqx.com/en/blog/emqx-server-ssl-tls-secure-connection-configuration-guide).
 
 The conditions required to enable SSL/TLS certificates are summarized here:
 
@@ -246,7 +246,7 @@ location / {
 
 The complete project code: [https://github.com/emqx/MQTT-Client-Examples/tree/master/mqtt-client-WebSocket](https://github.com/emqx/MQTT-Client-Examples/tree/master/mqtt-client-WebSocket)
 
-An online MQTT WebSocket toolkit: [https://www.emqx.io/mqtt/mqtt-websocket-toolkit](https://www.emqx.io/mqtt/mqtt-websocket-toolkit)
+An online MQTT WebSocket toolkit: [https://www.emqx.com/en/mqtt/mqtt-websocket-toolkit](https://www.emqx.com/en/mqtt/mqtt-websocket-toolkit)
 
 
 

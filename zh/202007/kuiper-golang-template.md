@@ -2,7 +2,7 @@
 
 ## 简介
 
-用户通过 Kuiper 进行数据分析处理后，使用各种 sink 可以往不同的系统发送数据分析结果。针对同样的分析结果，不同的 sink 需要的格式可能未必一样。比如，在某物联网场景中，当发现某设备温度过高的时候，需要向云端某 rest 服务发送一个请求，同时在本地需要通过 [MQTT 协议](https://www.emqx.cn/mqtt) 往设备发送一个控制命令，这两者需要的数据格式可能并不一样，因此，需要对来自于分析的结果进行「二次处理」后，才可以往不同的目标发送针对数据。本文将介绍如何利用 sink 中的数据模版（data template ）来实现对分析结果的「二次处理」。
+用户通过 Kuiper 进行数据分析处理后，使用各种 sink 可以往不同的系统发送数据分析结果。针对同样的分析结果，不同的 sink 需要的格式可能未必一样。比如，在某物联网场景中，当发现某设备温度过高的时候，需要向云端某 rest 服务发送一个请求，同时在本地需要通过 [MQTT 协议](https://www.emqx.com/zh/mqtt) 往设备发送一个控制命令，这两者需要的数据格式可能并不一样，因此，需要对来自于分析的结果进行「二次处理」后，才可以往不同的目标发送针对数据。本文将介绍如何利用 sink 中的数据模版（data template ）来实现对分析结果的「二次处理」。
 
 ## Golang 模版介绍
 
@@ -49,7 +49,7 @@ Golang 的模版可以作用于各种数据结构，比如 map、切片 (slice)�
 
 ### 切片 (slice) 数据按条发送
 
-流入 sink 的数据是一个 `map[string]interface{}` 切片的数据结构，但是用户往目标 sink 发送数据的时候，可能是需要单条的数据，而不是所有的数据。比如在这篇 [Kuiper 与 AWS IoT Hub 集成](https://www.emqx.cn/blog/lightweight-edge-computing-emqx-kuiper-and-aws-iot-hub-integration-solution) 的文章中所介绍的，规则产生的样例数据如下所示。
+流入 sink 的数据是一个 `map[string]interface{}` 切片的数据结构，但是用户往目标 sink 发送数据的时候，可能是需要单条的数据，而不是所有的数据。比如在这篇 [Kuiper 与 AWS IoT Hub 集成](https://www.emqx.com/zh/blog/lightweight-edge-computing-emqx-kuiper-and-aws-iot-hub-integration-solution) 的文章中所介绍的，规则产生的样例数据如下所示。
 
 ```
 [

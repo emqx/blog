@@ -2,7 +2,7 @@
 
 EMQ X Broker 4.2-rc.1 正式发布，欢迎大家下载试用，下载地址：https://github.com/emqx/emqx/releases/tag/v4.2-rc.1。 如果您想要与我们分享反馈意见，或者遇到任何问题需要帮助，可以通过 https://github.com/emqx/emqx/issues 与我们交流。
 
-> EMQ X Broker 是一款高并发低延迟，支持分布式集群架构的开源 MQTT 消息服务器，支持单机百万连接，更多信息请访问：https://www.emqx.cn/products/broker
+> EMQ X Broker 是一款高并发低延迟，支持分布式集群架构的开源 MQTT 消息服务器，支持单机百万连接，更多信息请访问：https://www.emqx.com/zh/products/emqx
 
 
 

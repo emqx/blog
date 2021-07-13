@@ -4,9 +4,9 @@ EMQ X Enterprise 企业级物联网 MQTT 消息平台，支持百万级物联网
 
 EMQ X Enterprise 适用于各种物联网应用场景，助企业快速构建物联网应用，并支持公有云、私有云、物理机、容器/K8S 任意部署。
 
-网址：[https://www.emqx.cn/products/enterprise](https://www.emqx.cn/products/enterprise)
+网址：[https://www.emqx.com/zh/products/emqx](https://www.emqx.com/zh/products/emqx)
 
-下载：无需提供任何信息， 立即[下载试用](https://www.emqx.cn/downloads#enterprise)
+下载：无需提供任何信息， 立即[下载试用](https://www.emqx.com/zh/downloads?product=enterprise)
 
 ![enterprisemqttbroker.png](https://static.emqx.net/images/4b87d5ae6dc17bb84f6414e4d8fc504c.png)
 
@@ -18,7 +18,7 @@ EMQ X Enterprise  v4.2.0 版本重点加强了热配置的支持，可以在不�
 
 同时，该版本支持了小版本热升级，使用[版本热升级](https://docs.emqx.cn/enterprise/latest/advanced/relup.html)功能，用户可以快速、安全地升级生产环境的 EMQ X Enterprise，避免因重启服务导致的系统可用性降低。
 
-详细更新日志：https://www.emqx.cn/changelogs/enterprise/v4.2.0
+详细更新日志：https://www.emqx.com/zh/changelogs/enterprise/v4.2.0
 
 ### 模块（全新功能）
 

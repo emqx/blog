@@ -3,7 +3,7 @@
 
 To better address the needs for real-time streaming data storage and processing in various businesses, we (EMQ) have been searching for an optimal system and architecture.
 
-We have presented a brand new concept in the previous post ["When Database Meets Stream Computing: The Birth of Streaming Database!"](https://www.emqx.io/blog/birth-of-streaming-database) - "Streaming Database" - a new database category. **In the article today, we will introduce HStreamDB, a Streaming Database currently being developed by the Haskell Team from EMQ**. Comparing it with the existing unstructured streaming solutions, we believe that [Streaming Database pioneered by HStreamDB](https://hstream.io/) will be the best choice in the era of real-time data processing. Also that it will become the core infrastructure of software systems in the future.
+We have presented a brand new concept in the previous post ["When Database Meets Stream Computing: The Birth of Streaming Database!"](https://www.emqx.com/en/blog/birth-of-streaming-database) - "Streaming Database" - a new database category. **In the article today, we will introduce HStreamDB, a Streaming Database currently being developed by the Haskell Team from EMQ**. Comparing it with the existing unstructured streaming solutions, we believe that [Streaming Database pioneered by HStreamDB](https://hstream.io/) will be the best choice in the era of real-time data processing. Also that it will become the core infrastructure of software systems in the future.
 
 
 
@@ -248,7 +248,7 @@ If everything works fine, the continuous query will output matching records in r
 
 ## HStreamDB Open-source Community
 
-As an open-source software company, [EMQ](https://www.emqx.io/) always believes in the value and power of open source. Therefore, HStreamDB is open-sourced on GitHub ever since the beginning of the project.
+As an open-source software company, [EMQ](https://www.emqx.com/en) always believes in the value and power of open source. Therefore, HStreamDB is open-sourced on GitHub ever since the beginning of the project.
 
 HStreamDB is currently under development by our team, and this is an excellent opportunity and time for developers to get involved with the community.
 

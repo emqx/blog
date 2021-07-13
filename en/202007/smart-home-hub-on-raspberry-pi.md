@@ -1,7 +1,7 @@
 
 With the development of IoT technology, the smart home system has been further developed which uses many IoT devices (such as temperature and humidity sensors) to real-time monitor the internal status of the home. With the increasing number of **smart home devices**, a smart home hub provides a bridge for allowing your various devices to "talk" to each other. The user is not always willing to upload the data to the cloud for processing because of the privacy of home data.
 
-We will use [Raspberry Pi](https://www.raspberrypi.org) + [EMQ X Edge](https://www.emqx.io/products/edge) + [EMQ X Kuiper](https://www.emqx.io/products/kuiper) to build the smart home hub for implementing the edge computing of smart home device data and reducing leaking the private home data.
+We will use [Raspberry Pi](https://www.raspberrypi.org) + [EMQ X Edge](https://www.emqx.com/en/products/emqx) + [EMQ X Kuiper](https://github.com/lf-edge/ekuiper) to build the smart home hub for implementing the edge computing of smart home device data and reducing leaking the private home data.
 
 In this article, we will use the BH1750FVI light intensity sensor to collect the light intensity data of home, EMQ X Kuiper to analyze and process the light intensity data, and control the LED light according to pre-defined rules.
 
@@ -15,13 +15,13 @@ The [Raspberry Pi 3 Model B+](https://www.raspberrypi.org/products/raspberry-pi-
 
 ### EMQ X Edge
 
-The communicating protocols between smart home devices are **MQTT**, **Wi-Fi**, **Bluetooth**, etc. The [MQTT protocol](https://www.emqx.io/mqtt) is an IoT communicating protocol based on publish/subscribe model, which is simple and easy to implement, supporting QoS and with the small packet. In this article, we will use the MQTT protocol as the communicating protocol between smart home devices.
+The communicating protocols between smart home devices are **MQTT**, **Wi-Fi**, **Bluetooth**, etc. The [MQTT protocol](https://www.emqx.com/en/mqtt) is an IoT communicating protocol based on publish/subscribe model, which is simple and easy to implement, supporting QoS and with the small packet. In this article, we will use the MQTT protocol as the communicating protocol between smart home devices.
 
-Because of the limited RAM and processing power of raspberry Pi we choose the [EMQ X Edge](https://www.emqx.io/products/edge) open-sourced by [EMQ](https://www.emqx.io/) as the MQTT broker. EMQ X Edge is the lightweight IoT edge caculating message middleware and supports the IoT edge hardware.
+Because of the limited RAM and processing power of raspberry Pi we choose the [EMQ X Edge](https://www.emqx.com/en/products/emqx) open-sourced by [EMQ](https://www.emqx.com/en) as the MQTT broker. EMQ X Edge is the lightweight IoT edge caculating message middleware and supports the IoT edge hardware.
 
 ### EMQ X Kuiper
 
-Because the format of data transmission between smart home devices is different and the data is volatile, we need to process the data reported by the device. In this article, we will use the [EMQ X Kuiper](https://www.emqx.io/products/kuiper) open-sourced by [EMQ](https://www.emqx.io/) to do the edge computing of the data of the smart home device. EMQ X Kuiper is a lightweight edge streaming message processing engine based on SQL. It can run on edge devices with limited resources.
+Because the format of data transmission between smart home devices is different and the data is volatile, we need to process the data reported by the device. In this article, we will use the [EMQ X Kuiper](https://github.com/lf-edge/ekuiper) open-sourced by [EMQ](https://www.emqx.com/en) to do the edge computing of the data of the smart home device. EMQ X Kuiper is a lightweight edge streaming message processing engine based on SQL. It can run on edge devices with limited resources.
 
 Through real-time analyze the various data of the smart home device, can implement managing the device's status and controlling device.
 
@@ -60,7 +60,7 @@ mkdir ~/smart-home-hubs
 ```bash
 $ cd ~/smart-home-hubs
 # Download software package
-$ wget https://www.emqx.io/downloads/edge/v4.1.0/emqx-edge-raspbian8-v4.1.0.zip
+$ wget https://www.emqx.com/en/downloads/edge/v4.1.0/emqx-edge-raspbian8-v4.1.0.zip
 $ unzip emqx-edge-raspbian8-v4.1.0.zip
 $ cd ./emqx
 # Running EMQ X Edge
@@ -297,7 +297,7 @@ if __name__ == "__main__":
 
 ## Summary
 
-So far, we successfully built the smart home hub based on [Raspberry Pi](https://www.raspberrypi.org) + [EMQ X Edge](https://www.emqx.io/products/edge) + [EMQ X Kuiper](https://www.emqx.io/products/kuiper).
+So far, we successfully built the smart home hub based on [Raspberry Pi](https://www.raspberrypi.org) + [EMQ X Edge](https://www.emqx.com/en/products/emqx) + [EMQ X Kuiper](https://github.com/lf-edge/ekuiper).
 
 We use Raspberry Pi to provide a rich external communication interface, EMQ X Edge to provide the communication function between the devices, EMQ X Kuiper to process and analyze the data of devices.
 

@@ -3,9 +3,9 @@ EMQ X Enterprise IoT MQTT messaging platform supports one-stop access for millio
 
 EMQ X Enterprise is suitable for various IoT application scenarios, and helps enterprises to build IoT applications quickly and supports arbitrary deployment of public cloud, private cloud, physical machine and container/K8S.
 
-URL: https://www.emqx.io/products/enterprise
+URL: https://www.emqx.com/en/products/emqx
 
-Download: [Download](https://www.emqx.io/downloads#enterprise) now without providing any information!
+Download: [Download](https://www.emqx.com/en/downloads?product=enterprise) now without providing any information!
 
 ![enterprisemqttbroker.png](https://static.emqx.net/images/4b87d5ae6dc17bb84f6414e4d8fc504c.png)
 
@@ -15,7 +15,7 @@ The rules engine of EMQ X Enterprise v4.2.2 can choose to store data synchronous
 
 At the same time, this version improves the ease of use of the LwM2M protocol and allows the LwM2M connection to be managed separately via the REST API and the Dashboard visual interface, including a list of clients accessing EMQ X via the LwM2M protocol as well as the corresponding Object and Resource.
 
-Detailed update log: https://www.emqx.io/changelogs/enterprise/v4.2.2
+Detailed update log: https://www.emqx.com/en/changelogs/enterprise/v4.2.2
 
 ## Features
 

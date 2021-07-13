@@ -4,7 +4,7 @@ With the advent of the 5G era, the great vision of the IoT is becoming a reality
 
 Massive device access and device management have brought great challenges to network bandwidth, communication protocols, and platform service architecture. For the **IoT protocol** , several key issues of IoT device communication must be specifically addressed, including that its network environment is complex and unreliable, its memory and flash memory capacity is small, and its processing capacity is limited.
 
-[MQTT protocol](https://www.emqx.io/mqtt) is an IoT communication protocol based on the Publish/Subscribe model. With its characteristics of simple and easy implementation, support for QoS, and small size of packet, it occupies half market of the Internet of Things protocol:
+[MQTT protocol](https://www.emqx.com/en/mqtt) is an IoT communication protocol based on the Publish/Subscribe model. With its characteristics of simple and easy implementation, support for QoS, and small size of packet, it occupies half market of the Internet of Things protocol:
 
 ![WechatIMG10934.png](https://static.emqx.net/images/c980ab99489d1e771ad7b4dc5ac722b9.png)
 
@@ -98,7 +98,7 @@ For those devices that want to re-receive the messages that they missed during o
 
 MQTT has designed Last Will message to let the broker help the device publish a will message to the specified topic if it finds that the device is offline abnormally.
 
-In fact, in some implementations of [MQTT broker](https://www.emqx.io/products/broker) (such as EMQX), when the device goes online or offline, Broker publishes device status updates through certain system topics, which is more in line with the actual application scenario.
+In fact, in some implementations of [MQTT broker](https://www.emqx.com/en/products/emqx) (such as EMQX), when the device goes online or offline, Broker publishes device status updates through certain system topics, which is more in line with the actual application scenario.
 
 ## How to choose the open source MQTT broker
 
@@ -120,7 +120,7 @@ There are several popular MQTT Brokers so far:
 
    MQTT broker also developed using Erlang
 
-Considering support for [MQTT 5.0](https://www.emqx.io/mqtt/mqtt5), stability, scalability, cluster capabilities, etc., [EMQ X's](https://www.emqx.io/products/broker) performance should be the best:
+Considering support for [MQTT 5.0](https://www.emqx.com/en/mqtt/mqtt5), stability, scalability, cluster capabilities, etc., [EMQ X's](https://www.emqx.com/en/products/emqx) performance should be the best:
 
 - Developed with Erlang OTP, good fault tolerance (proven language in telecommunication field that once made 99.9999999% availability of switch equipment[^5])
 - There are a lot of official plugins for extension. There are many authentication plugins, and the backend plugin is available. Supports various relational databases, NoSQL databases, and common message queues such as Kafka, RabbitMQ, Pulsar, etc.
@@ -134,11 +134,11 @@ Considering support for [MQTT 5.0](https://www.emqx.io/mqtt/mqtt5), stability, s
 
 EMQ X [MQTT IoT cloud service](https://cloud.emqx.io/) provides an online public MQTT 5.0 broker.  You can quickly start learning, testing MQTT protocol or prototyping.
 
-For the detailed accessing information for this MQTT broker, please visit the EMQ website: [free public MQTT broker](https://www.emqx.io/mqtt/public-mqtt5-broker).
+For the detailed accessing information for this MQTT broker, please visit the EMQ website: [free public MQTT broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker).
 
 ### MQTT online client
 
-EMQ also provides the [MQTT online client tool](https://www.emqx.io/mqtt/mqtt-websocket-toolkit) that can be accessed through a browser. This tool supports connecting to the MQTT broker through the normal or encrypted WebSocket ports, and cache connections for the next accessing.
+EMQ also provides the [MQTT online client tool](https://www.emqx.com/en/mqtt/mqtt-websocket-toolkit) that can be accessed through a browser. This tool supports connecting to the MQTT broker through the normal or encrypted WebSocket ports, and cache connections for the next accessing.
 
 
 

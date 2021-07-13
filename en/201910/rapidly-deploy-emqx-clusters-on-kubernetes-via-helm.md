@@ -221,7 +221,7 @@ my-emqx-edge-2  1/1     Running   0          9s
 
  #### EMQ X EE
 
-When deploying an cluster of EMQ X Enterprise Edition, you need to log in to [emqx.io](https://emqx.io)  to apply and download a  License file at first, and create the  License file as a Secret resource
+When deploying an cluster of EMQ X Enterprise Edition, you need to log in to [emqx.io](https://www.emqx.com/en)  to apply and download a  License file at first, and create the  License file as a Secret resource
 
 ```
 $ kubectl create secret generic your-license-secret-name --from-file=/path/to/emqx.lic

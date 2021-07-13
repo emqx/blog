@@ -4,7 +4,7 @@ Before introduction and use, readers can visit our [GitHub](https://github.com/e
 
 Please download the right version from [GitHub Releases](https://github.com/emqx/MQTTX/releases)  and install it for use.
 
-If there is a network problem resulting in a slow network speed or a jam in the GitHub download process, you can also  [go to the EMQ website](https://www.emqx.io/downloads/MQTTX/) to select the right version that matches your requirement and install it for use.
+If there is a network problem resulting in a slow network speed or a jam in the GitHub download process, you can also  [go to the EMQ website](https://www.emqx.com/en/downloads/MQTTX/) to select the right version that matches your requirement and install it for use.
 
 
 
@@ -113,7 +113,7 @@ If the sending client also subscribes to the same `topic`, the client will immed
 
 3. Check for updates
 
-   Click the `i` button on the left bottom to display the ` About` page to learn about the version of **MQTT X**  and related information of [EMQ X](https://emqx.io/) . Click `Check for Updates` to check if there are newer versions.
+   Click the `i` button on the left bottom to display the ` About` page to learn about the version of **MQTT X**  and related information of [EMQ X](https://www.emqx.com/en) . Click `Check for Updates` to check if there are newer versions.
 
 ![mqttxupdate.png](https://static.emqx.net/images/889ae0041b88ba2ac8f6fefc44a92fde.png)
 

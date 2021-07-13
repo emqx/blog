@@ -1,7 +1,7 @@
 
 [Phyton](https://www.python.org/) adalah bahasa pemrograman yang memiliki bermacam-macam fungsi, dapat ditafsirkan dan berlevel tinggi. Diciptakan oleh Guido van Rossum dan pertama kali dirilis di tahun 1991, filosofi desain Python menekankan ke keterbacaan kode dengan penggunaan whitespace yang signifikan. Phyton membantu programer untuk menulis kode yang logis dan jelas untuk projek berskala kecil maupun besar.[^1]
 
-[MQTT](https://www.emqx.io/mqtt) adalah sebuah **protokol messaging IoT lightweight** berbasis model publish/subscribe yang menyediakan servis messaging yang dapat diandalkan dan real-time untuk perangkat IoT dengan hanya menggunakan sedikit kode dan bandwith. MQTT cocok untuk perangkat dengan sumber hardware yang terbatas dan jaringan dengan bandwith yang terbatas pula. Karena itu, protokol MQTT banyak digunakan di IoT, internet HP, tenaga listrik, dan industri lainnya.
+[MQTT](https://www.emqx.com/en/mqtt) adalah sebuah **protokol messaging IoT lightweight** berbasis model publish/subscribe yang menyediakan servis messaging yang dapat diandalkan dan real-time untuk perangkat IoT dengan hanya menggunakan sedikit kode dan bandwith. MQTT cocok untuk perangkat dengan sumber hardware yang terbatas dan jaringan dengan bandwith yang terbatas pula. Karena itu, protokol MQTT banyak digunakan di IoT, internet HP, tenaga listrik, dan industri lainnya.
 
 Dalam artikel ini, saya akan mengajar Anda cara menggunakan client **paho-mqtt** dan koneksinya, subscribe, messaging, dan fungsi lainnya antara client dan broker MQTT dalam projek Python.
 
@@ -34,7 +34,7 @@ pip3 install paho-mqtt
 
 ### Koneksi ke MQTT broker
 
-Dalam artikel ini, saya akan menggunakan [MQTT broker publik gratis](https://www.emqx.io/mqtt/public-mqtt5-broker) dari EMQ X. Servis ini dibuat dengan berdasarkan [platform cloud MQTT IoT](https://cloud.emqx.io/). Kunci akses broker adalah sebagai berikut:
+Dalam artikel ini, saya akan menggunakan [MQTT broker publik gratis](https://www.emqx.com/en/mqtt/public-mqtt5-broker) dari EMQ X. Servis ini dibuat dengan berdasarkan [platform cloud MQTT IoT](https://cloud.emqx.io/). Kunci akses broker adalah sebagai berikut:
 
 - Broker: **broker.emqx.io**
 - TCP Port: **1883**
@@ -251,7 +251,7 @@ python3 sub.py
 
 ## Rangkuman
 
-Sejauh ini, kita telah mempelajari cara mengkoneksikan client paho-mqtt ke [MQTT broker publik gratis](https://www.emqx.io/mqtt/public-mqtt5-broker), mengimplimentasi koneksi, mempublikasi pesan dan subscribe pesan antara test client dan MQTT broker.
+Sejauh ini, kita telah mempelajari cara mengkoneksikan client paho-mqtt ke [MQTT broker publik gratis](https://www.emqx.com/en/mqtt/public-mqtt5-broker), mengimplimentasi koneksi, mempublikasi pesan dan subscribe pesan antara test client dan MQTT broker.
 
 
 

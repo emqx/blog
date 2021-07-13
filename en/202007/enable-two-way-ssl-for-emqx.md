@@ -1,6 +1,6 @@
 As a security protocol based on modern cryptographic public key algorithms,  TLS/SSL can ensure the security of transmission in the computer communication network. EMQ X has built-in support for TLS/SSL including one-way/two-ways authentication, the X.509 certificate, load balance SSL and many other security certifications. You can enable SSL/TLS for all protocols supported by EMQ X, and can also configure HTTP API provided by  EMQ X to use TLS. 
 
-In the previous article, we've introduced how to [enable SSL/TLS one-way security connection for the EMQ X](https://www.emqx.io/blog/emqx-server-ssl-tls-secure-connection-configuration-guide). This article will introduce how to enable SSL/TLS two-way security connection for [MQTT](https://www.emqx.io/mqtt) in EMQ X.
+In the previous article, we've introduced how to [enable SSL/TLS one-way security connection for the EMQ X](https://www.emqx.com/en/blog/emqx-server-ssl-tls-secure-connection-configuration-guide). This article will introduce how to enable SSL/TLS two-way security connection for [MQTT](https://www.emqx.com/en/mqtt) in EMQ X.
 
 
 
@@ -16,7 +16,7 @@ In the previous article, we've introduced how to [enable SSL/TLS one-way securit
 
 The process of communication in the TLS/SSL protocol consists of two parts. The first part is the handshake protocol. The purpose of this handshake protocol is to identify the identity of another party and establish a safe communication channel. After a handshake, both parties will negotiate the next password suite and session key. The second part is the record protocol. Record is highly similar to other data transmission protocols. It carries content type, version, length, load, etc, and the difference is that the information carried by this protocol is encrypted.
 
-The following picture describes the process of the TLS/SSL handshake protocol. From "hello" of the client until "finished" of the broker. If you are interested in this, you can view more detailed material. Even if you do not know this process, you can also enable this function in [EMQ X](https://www.emqx.io/products/broker).
+The following picture describes the process of the TLS/SSL handshake protocol. From "hello" of the client until "finished" of the broker. If you are interested in this, you can view more detailed material. Even if you do not know this process, you can also enable this function in [EMQ X](https://www.emqx.com/en/products/emqx).
 
 ![what-is-ssl](https://static.emqx.net/images/29b8bd83af006c104add0635a11682bb.gif)
 
@@ -160,7 +160,7 @@ listener.ssl.external.verify = verify_peer
 
 ### MQTT connection test
 
-After finished configuring and restarted EMQ X, we use [MQTT client tool - MQTT X](https://mqttx.app/) (this tool is cross-platform and supports [MQTT 5.0](https://www.emqx.io/mqtt/mqtt5)) to verify that whether TLS service is normally running.
+After finished configuring and restarted EMQ X, we use [MQTT client tool - MQTT X](https://mqttx.app/) (this tool is cross-platform and supports [MQTT 5.0](https://www.emqx.com/en/mqtt/mqtt5)) to verify that whether TLS service is normally running.
 
 > The requirement of MQTT X version: v1.3.2 or higher version
 

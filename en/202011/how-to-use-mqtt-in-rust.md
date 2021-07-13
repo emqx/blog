@@ -1,7 +1,7 @@
 
 Rust is a multi-paradigm programming language designed for performance and safety, especially safe concurrency. Rust is syntactically similar to C++, but can guarantee memory safety by using a borrow checker to validate references. Rust achieves memory safety without garbage collection, and reference counting is optional.[^1]
 
-[MQTT](https://www.emqx.io/mqtt) is a kind of **lightweight IoT messaging protocol** based on the publish/subscribe model. It can use very little code and bandwidth to provide a real-time reliable message service for networked equipment. Also, it is widely used in the IoT, mobile Internet, smart hardware, IoV, power and energy industries.
+[MQTT](https://www.emqx.com/en/mqtt) is a kind of **lightweight IoT messaging protocol** based on the publish/subscribe model. It can use very little code and bandwidth to provide a real-time reliable message service for networked equipment. Also, it is widely used in the IoT, mobile Internet, smart hardware, IoV, power and energy industries.
 
 This article mainly introduces how to use the **paho-mqtt** client library in the Rust project, and how to implement connect, subscribe, messaging and unsubscribe, etc., between the client and MQTT broker. 
 
@@ -50,7 +50,7 @@ path = "src/pub/main.rs"
 
 ### Create a client connection
 
-This article will use [the free public MQTT broker](https://www.emqx.io/mqtt/public-mqtt5-broker) which is provided by EMQ X as the MQTT broker of the test connection. This service is based on EMQ X's [MQTT IoT cloud platform](https://cloud.emqx.io/) to create. The server access information is as follows:
+This article will use [the free public MQTT broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker) which is provided by EMQ X as the MQTT broker of the test connection. This service is based on EMQ X's [MQTT IoT cloud platform](https://cloud.emqx.io/) to create. The server access information is as follows:
 
 - Broker: **broker.emqx.io**
 - TCP Port: **1883**
@@ -378,7 +378,7 @@ Meanwhile, the published messages are also visible in the message subscription.
 
 ![rustmqttsub2.png](https://static.emqx.net/images/e71402d26419eff673247c1c7db81e9b.png)
 
-So far, we have completed using the **paho-mqtt** client to connect to the [public MQTT broker](https://www.emqx.io/mqtt/public-mqtt5-broker), and implemented connection, message publishing and subscription between the test client and  MQTT broker.
+So far, we have completed using the **paho-mqtt** client to connect to the [public MQTT broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker), and implemented connection, message publishing and subscription between the test client and  MQTT broker.
 
 
 
