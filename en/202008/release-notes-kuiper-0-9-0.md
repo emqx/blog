@@ -13,7 +13,7 @@ The user scenarios of Kuiper including, real-time processing of production line 
 
 This release includes several new features and bug fixes.
 
-Website: <https://www.emqx.io/products/kuiper>
+Website: <https://github.com/lf-edge/ekuiper>
 
 Github Repository: <https://github.com/emqx/kuiper>
 

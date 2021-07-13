@@ -3,7 +3,7 @@ Dalam beberapa tahun terakhir ini, permintaan masyarakat akan keamananan, kemuda
 
 ## Apa Itu MQTT Broker?
 
-MQTT adalah network protocol berjenis publish-subscribe **lightweight** yang menjembatani pesan antara beberapa perangkat. [MQTT broker](https://www.emqx.io/products/broker) adalah sebuah server yang menerima semua pesan dari client dan kemudian mengirimkan pesan tersebut ke destinasi client yang sesuai.
+MQTT adalah network protocol berjenis publish-subscribe **lightweight** yang menjembatani pesan antara beberapa perangkat. [MQTT broker](https://www.emqx.com/en/products/emqx) adalah sebuah server yang menerima semua pesan dari client dan kemudian mengirimkan pesan tersebut ke destinasi client yang sesuai.
 
 ## Mengapa EMQ X Cloud?
 

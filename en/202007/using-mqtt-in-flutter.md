@@ -1,6 +1,6 @@
 [Flutter](https://flutter.dev/) is Google’s UI toolkit for building beautiful, natively compiled applications for mobile, web, and desktop from a single codebase. Flutter provides a rich set of components and interfaces, the developer can quickly add native expansion for Flutter. At the same time, Flutter also uses a Native engine to render view. There is no doubt that it can provide a good experience for users.
 
-[MQTT](https://www.emqx.io/mqtt) is a **lightweight IoT communication protocol** based on the publish/subscribe model. It can enable stable transmission over severely restricted device hardware and high-latency / low-bandwidth network. Because it is simple and easy to implement, support for QoS, and small size of the packet, it occupies half market of the Internet of Things protocol.
+[MQTT](https://www.emqx.com/en/mqtt) is a **lightweight IoT communication protocol** based on the publish/subscribe model. It can enable stable transmission over severely restricted device hardware and high-latency / low-bandwidth network. Because it is simple and easy to implement, support for QoS, and small size of the packet, it occupies half market of the Internet of Things protocol.
 
 This article mainly introduces how to use MQTT in the Flutter project to implement the connection between client and MQTT broker, subscribe, unsubscribe, send and receive messages and other functions.
 
@@ -42,7 +42,7 @@ import 'package:mqtt_client/mqtt_client.dart';
 
 ### Connect to MQTT broker
 
-This article will use the [MQTT broker](https://www.emqx.io/products/broker) which is operated and maintained by EMQ X Cloud. EMQ X Cloud is the [MQTT IoT cloud](https://cloud.emqx.io/) service platform released by [EMQ](https://www.emqx.io/), it provides the service for accessing **MQTT 5.0** with all-in-one operation and maintenance and unique isolation environment.
+This article will use the [MQTT broker](https://www.emqx.com/en/products/emqx) which is operated and maintained by EMQ X Cloud. EMQ X Cloud is the [MQTT IoT cloud](https://cloud.emqx.io/) service platform released by [EMQ](https://www.emqx.com/en), it provides the service for accessing **MQTT 5.0** with all-in-one operation and maintenance and unique isolation environment.
 
 - Broker: **broker.emqx.io**
 - TCP Port: **1883**
@@ -172,7 +172,7 @@ client.disconnect();
 
 ## Test
 
-We write a simple UI interface for this project and use [MQTT 5.0 client tool - MQTT X](https://mqttx.app/zh) to do the following tests:
+We write a simple UI interface for this project and use [MQTT 5.0 client tool - MQTT X](https://mqttx.app/cn) to do the following tests:
 
 - connect
 

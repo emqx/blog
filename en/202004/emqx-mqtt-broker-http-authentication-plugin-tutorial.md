@@ -1,5 +1,5 @@
 
-Before reading this tutorial, we suppose that you already known some basic [MQTT](https://docs.oasis-open.org/mqtt/mqtt/v3.1.1/os/mqtt-v3.1.1-os.html) and [EMQ X MQTT broker](https://emqx.io/) knowledge.
+Before reading this tutorial, we suppose that you already known some basic [MQTT](https://docs.oasis-open.org/mqtt/mqtt/v3.1.1/os/mqtt-v3.1.1-os.html) and [EMQ X MQTT broker](https://www.emqx.com/en) knowledge.
 
 
 
@@ -9,7 +9,7 @@ Before reading this tutorial, we suppose that you already known some basic [MQTT
 
 **The events that `emqx_auth_http` mainly process are :**
 
-1. Authentication: Whenever the MQTT client receives a CONNECT request, [EMQ X MQTT broker](https://emqx.io/) will fill the parameter (such as ClientId, Username, and Password, etc) brought by the client to the HTTP parameter, and then will initiate a request to the Web Services the user-configured themselves. If successful request, allowing this MQTT client to connect.
+1. Authentication: Whenever the MQTT client receives a CONNECT request, [EMQ X MQTT broker](https://www.emqx.com/en) will fill the parameter (such as ClientId, Username, and Password, etc) brought by the client to the HTTP parameter, and then will initiate a request to the Web Services the user-configured themselves. If successful request, allowing this MQTT client to connect.
 2. ACL: Whenever the MQTT client implements the PUBLISH and SUBSCRIBE operation, EMQ X will fill the parameter (such as ClientId and topic, etc) to the HTTP parameter, and then will initiate an ACL request to the Web Services the user-configured themselves. If successful request, allowing this PUBLISH/SUBSCRIBE.
 
 Actually, in the EMQ X cluster, emqx_auth_http is just a simple and stateless HTTP Client for the user's  Web Service. emqx_auth_http only sends the internal EMQ X login authentication and ACL control requests to the user's Web Services, and did some logic processing.

@@ -1,6 +1,6 @@
 [OpenHAB](https://www.openhab.org/), also known as open Home Automation Bus, is an open-source home automation software written in Java. With the strengths of integrating various devices, providing a clear user interface, and supporting the most flexible tools, openHAB becomes one of the most outstanding platforms in the field of home automation.
 
-With the high flexibility and ease of use, openHAB provides a particular binding for users to connect [MQTT Broker](https://www.emqx.io/products/broker). In this article, we will introduce to you the process of setting up [EMQ X Cloud MQTT Broker](https://cloud.emqx.io/) with openHAB.
+With the high flexibility and ease of use, openHAB provides a particular binding for users to connect [MQTT Broker](https://www.emqx.com/en/products/emqx). In this article, we will introduce to you the process of setting up [EMQ X Cloud MQTT Broker](https://cloud.emqx.io/) with openHAB.
 
 
 
@@ -12,7 +12,7 @@ MQTT, known as Message Queuing Telemetry Transport, is a lightweight IoT messagi
 
 ## What is EMQ X Cloud MQTT?
 
-[EMQ X Cloud](https://cloud.emqx.io/) is an MQTT messaging middleware product for the IoT domain from EMQ. As the world's first fully managed [MQTT 5.0](https://www.emqx.io/mqtt/mqtt5) public cloud service, EMQ X Cloud provides a one-stop O&M colocation and a unique isolated environment for MQTT messaging services. It serves dozens of countries and regions around the world, providing low-cost, secure, and reliable cloud services for 5G and Internet of Everything applications.
+[EMQ X Cloud](https://cloud.emqx.io/) is an MQTT messaging middleware product for the IoT domain from EMQ. As the world's first fully managed [MQTT 5.0](https://www.emqx.com/en/mqtt/mqtt5) public cloud service, EMQ X Cloud provides a one-stop O&M colocation and a unique isolated environment for MQTT messaging services. It serves dozens of countries and regions around the world, providing low-cost, secure, and reliable cloud services for 5G and Internet of Everything applications.
 
 EMQ X Cloud is available in three plans: Basic, Professional, and Unlimited, which offers a variety of flexible product specifications to support the deployment of fully managed MQTT services exclusively for you on the world's leading public clouds. Need more information with EMQ X Cloud's product plan? Click[ here](https://docs.emqx.io/en/cloud/latest/pricing.html).
 

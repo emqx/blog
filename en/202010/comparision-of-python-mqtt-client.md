@@ -8,7 +8,7 @@ This article collects three common Python MQTT client libraries, and briefly com
 
 ## paho-mqtt
 
-[paho-mqtt](https://github.com/eclipse/paho.mqtt.python) is arguably the best of the Python MQTT open-source client libraries. It was developed under the leadership of the Eclipse Foundation, and besides the Python library, it also supports major programming languages such as C++, Java, JavaScript, Golang, etc. Currently, The Python version has implemented 3.1 and 3.1.1 [MQTT protocol](https://www.emqx.io/mqtt), and implemented [MQTT 5.0](https://www.emqx.io/mqtt/mqtt5) in the latest development version.
+[paho-mqtt](https://github.com/eclipse/paho.mqtt.python) is arguably the best of the Python MQTT open-source client libraries. It was developed under the leadership of the Eclipse Foundation, and besides the Python library, it also supports major programming languages such as C++, Java, JavaScript, Golang, etc. Currently, The Python version has implemented 3.1 and 3.1.1 [MQTT protocol](https://www.emqx.com/en/mqtt), and implemented [MQTT 5.0](https://www.emqx.com/en/mqtt/mqtt5) in the latest development version.
 
 With the support of the foundation, it is updated at a rate of one version per year. The latest version was 1.5.0 (released in August 2019) when this article was published.
 
@@ -104,7 +104,7 @@ HBMQTT is built on top of the asyncio standard library. It allows the user to se
 
 However, HBMQTT is much less well known. A Google search on HBMQTT yielded just over 6,000 entries and only 10 questions on Stack Overflow. This means that you need a strong ability for solving problems, if you choose to use HBMQTT.
 
-Interestingly, HBMQTT is also an [MQTT broker](https://www.emqx.io/products/broker). You can enable it with one click through the hbmqtt command.
+Interestingly, HBMQTT is also an [MQTT broker](https://www.emqx.com/en/products/emqx). You can enable it with one click through the hbmqtt command.
 
 ```python
 $ hbmqtt

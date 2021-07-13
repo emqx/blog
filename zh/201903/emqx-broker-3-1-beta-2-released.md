@@ -68,4 +68,4 @@
 
 请参阅版本发布日志以获取所有版本变动信息:
 
-https://www.emqx.cn/changelogs/broker/v3.1-beta.2
+https://www.emqx.com/zh/changelogs/broker/v3.1-beta.2

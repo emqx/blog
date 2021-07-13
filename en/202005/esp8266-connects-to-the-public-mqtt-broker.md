@@ -1,15 +1,15 @@
-[MQTT](https://www.emqx.io/mqtt) is a lightweight and flexible protocol to exchange IoT messages and deliver data. It dedicates to achieve a balance between flexibility and hardware/network resources for the IoT developer.
+[MQTT](https://www.emqx.com/en/mqtt) is a lightweight and flexible protocol to exchange IoT messages and deliver data. It dedicates to achieve a balance between flexibility and hardware/network resources for the IoT developer.
 
 [ESP8266](https://www.espressif.com) provides a highly integrated Wi-Fi SoC solution. Its low-power, compact design, and high stability can meet user's requirements. ESP8266 has a complete and self-contained Wi-Fi network function, which can be applied independently or can run as a slave at another host MCU.
 
-In this project, we will implement connecting ESP8266 to [free public MQTT broker](https://www.emqx.io/mqtt/public-mqtt5-broker) operated and maintained by [EMQ X MQTT Cloud](https://cloud.emqx.io/), and programming ESP8266 by using Arduino IDE. EMQ X Cloud is an **MQTT IoT cloud service platform with security** launched by [EMQ](https://www.emqx.io/). It provides a one-stop operation and maintenance agency and [MQTT 5.0](https://www.emqx.io/mqtt/mqtt5) access service with a uniquely isolated environment.
+In this project, we will implement connecting ESP8266 to [free public MQTT broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker) operated and maintained by [EMQ X MQTT Cloud](https://cloud.emqx.io/), and programming ESP8266 by using Arduino IDE. EMQ X Cloud is an **MQTT IoT cloud service platform with security** launched by [EMQ](https://www.emqx.com/en). It provides a one-stop operation and maintenance agency and [MQTT 5.0](https://www.emqx.com/en/mqtt/mqtt5) access service with a uniquely isolated environment.
 
 ### The required IoT components 
 
 * ESP8266
 * Arduino IDE
 * [MQTT X](https://mqttx.app): an elegant cross-platform MQTT 5.0 client tool
-* The free public [MQTT broker](https://emqx.io/products/broker)
+* The free public [MQTT broker](https://www.emqx.com/en/products/emqx)
   - Broker: **broker.emqx.io**
   - TCP Port: **1883**
   - Websocket Port: **8083**

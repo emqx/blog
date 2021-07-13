@@ -2,7 +2,7 @@
 
 [Raspberry Pi](https://www.raspberrypi.org/) is a small single-board computer based on ARM and developed by the Raspberry Pi Foundation in the United Kingdom. This board provides USB interfaces and Ethernet interfaces can connect the keyboard, mouse, and networking cable. This board has the basic functions of PC and Raspberry Pi integrates Wi-Fi, Bluetooth, and a large number of GPIO, and is widely used in teaching, family entertainment, IoT, etc.
 
-[MQTT](https://www.emqx.io/mqtt) is a kind of **lightweight IoT messaging protocol** based on the publish/subscribe model, which can provide real-time and reliable messaging service for IoT devices, only using very little code and bandwidth. It is suitable for devices with limited hardware resources and the network environment with limited bandwidth. Therefore, MQTT protocol is widely used in IoT, mobile internet, IoV, electricity power, and other industries.
+[MQTT](https://www.emqx.com/en/mqtt) is a kind of **lightweight IoT messaging protocol** based on the publish/subscribe model, which can provide real-time and reliable messaging service for IoT devices, only using very little code and bandwidth. It is suitable for devices with limited hardware resources and the network environment with limited bandwidth. Therefore, MQTT protocol is widely used in IoT, mobile internet, IoV, electricity power, and other industries.
 
 In this project, we will use Python to write a simple MQTT client on Raspberry Pi and implement connect, subscribe, unsubscribe, messaging, and other functions between this client and MQTT broker.
 
@@ -48,7 +48,7 @@ pip3 install paho-mqtt
 
 ### Connect to the MQTT broker
 
-This article will use [the free public MQTT broker](https://www.emqx.io/mqtt/public-mqtt5-broker) provided by EMQ X. This service is based on [MQTT IoT cloud platform](https://cloud.emqx.io) to create. The accessing information of the broker is as follows:
+This article will use [the free public MQTT broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker) provided by EMQ X. This service is based on [MQTT IoT cloud platform](https://cloud.emqx.io) to create. The accessing information of the broker is as follows:
 
 
 * Broker: **broker.emqx.io** 
@@ -167,7 +167,7 @@ for i in range(5):
 client.loop_forever()
 ```
 
-Calling function `publish()` can send messages to a topic. In the above code, we use it to send messages to the topic  `raspberry/topic`. The parameter QoS is another MQTT feature, if you want to know more content of QoS, you can view  [introduction to MQTT QoS (the quality of service)](https://www.emqx.io/blog/introduction-to-mqtt-qos). Here we temporarily set it to 0.
+Calling function `publish()` can send messages to a topic. In the above code, we use it to send messages to the topic  `raspberry/topic`. The parameter QoS is another MQTT feature, if you want to know more content of QoS, you can view  [introduction to MQTT QoS (the quality of service)](https://www.emqx.com/en/blog/introduction-to-mqtt-qos). Here we temporarily set it to 0.
 
 
 

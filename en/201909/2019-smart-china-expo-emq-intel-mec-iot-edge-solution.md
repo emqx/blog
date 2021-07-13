@@ -8,7 +8,7 @@ Intel Intelligence Innovation Zone relies on Chongqing Intelligence Expo to brin
 
 ## EMQ  Company Profile
 
-EMQ(https://www.emqx.io/) is an open source software company providing messaging and streaming engine for IoT market in 5G Era. In 2013, EMQ was released as an open source project on Github (https://github.com/emqx), and subsequently developed into an open source MQTT broker widely used in the global market. In 2017, driven by the rapid growth of customer demand, the company entered into commercial operation and launched EMQ X commercial products to speed up the product deployment and application of open source projects and provide professional technical support and services for large enterprise customers. At present, EMQ X has more than 5,000 customers worldwide, including dozens of top 500 companies.
+EMQ(https://www.emqx.com/en) is an open source software company providing messaging and streaming engine for IoT market in 5G Era. In 2013, EMQ was released as an open source project on Github (https://github.com/emqx), and subsequently developed into an open source MQTT broker widely used in the global market. In 2017, driven by the rapid growth of customer demand, the company entered into commercial operation and launched EMQ X commercial products to speed up the product deployment and application of open source projects and provide professional technical support and services for large enterprise customers. At present, EMQ X has more than 5,000 customers worldwide, including dozens of top 500 companies.
 
 ## EMQ MEC Edge Access Solution
 

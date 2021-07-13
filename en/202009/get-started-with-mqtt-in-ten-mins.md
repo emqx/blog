@@ -1,4 +1,4 @@
-The full name of [MQTT](https://www.emqx.io/mqtt) is Message Queuing Telemetry Transport, which is a **lightweight IoT messaging protocol** based on the **publish/subscribe**. [Andy Stanford-Clark](https://en.wikipedia.org/wiki/Andy_Stanford-Clark) ([IBM](https://en.wikipedia.org/wiki/IBM)) and Arlen Nipper (Cirrus Link, then Eurotech) authored the first version of the protocol in 1999.[^1]. After that, the features that easy to implement, support QoS, lightweight and bandwidth saving let the MQTT becoming the standard of IoT communication.
+The full name of [MQTT](https://www.emqx.com/en/mqtt) is Message Queuing Telemetry Transport, which is a **lightweight IoT messaging protocol** based on the **publish/subscribe**. [Andy Stanford-Clark](https://en.wikipedia.org/wiki/Andy_Stanford-Clark) ([IBM](https://en.wikipedia.org/wiki/IBM)) and Arlen Nipper (Cirrus Link, then Eurotech) authored the first version of the protocol in 1999.[^1]. After that, the features that easy to implement, support QoS, lightweight and bandwidth saving let the MQTT becoming the standard of IoT communication.
 
 
 
@@ -87,7 +87,7 @@ A tag attached to the application message, which is used for matching the existi
 
 The topic expression only used in subscribing, which can contain wildcard for matching multiple the name of topics. 
 
-For more features of the MQTT topic, please access our blog: [Advanced features of MQTT topics](https://www.emqx.io/blog/advanced-features-of-mqtt-topics).
+For more features of the MQTT topic, please access our blog: [Advanced features of MQTT topics](https://www.emqx.com/en/blog/advanced-features-of-mqtt-topics).
 
 ### Payload
 
@@ -111,7 +111,7 @@ MQTT provides three kinds of quality of service of information which guarantee t
 - QoS 1: the message is delivered at least once.
 - QoS 2: the message is delivered only once.
 
-For more introduction of QoS, please access our blog: [Introduction to MQTT QoS (Quality of Service)](https://www.emqx.io/blog/introduction-to-mqtt-qos).
+For more introduction of QoS, please access our blog: [Introduction to MQTT QoS (Quality of Service)](https://www.emqx.com/en/blog/introduction-to-mqtt-qos).
 
 ### Clean Session
 
@@ -138,7 +138,7 @@ When the MQTT client publishes messages to the server, you can set the retained 
 
 When the MQTT client sends a CONNECT request to the server, can carry will message. When the MQTT client goes offline abnormally(the client does not send the DISCONNECT message to the server before disconnecting), the MQTT message server will publish will message.
 
-For more MQTT will message, please access our blog: [Use of MQTT Will Message](https://www.emqx.io/blog/use-of-mqtt-will-message).
+For more MQTT will message, please access our blog: [Use of MQTT Will Message](https://www.emqx.com/en/blog/use-of-mqtt-will-message).
 
 
 
@@ -146,7 +146,7 @@ For more MQTT will message, please access our blog: [Use of MQTT Will Message](h
 
 ### Session Expiry
 
-[MQTT 5.0](https://www.emqx.io/mqtt/mqtt5) will divide the Clean Session indicator into the Clean Start indicator (represents that the session should start without using an existed session) and session expired interval attribute(represents the time how long the session will retain after disconnecting ).
+[MQTT 5.0](https://www.emqx.com/en/mqtt/mqtt5) will divide the Clean Session indicator into the Clean Start indicator (represents that the session should start without using an existed session) and session expired interval attribute(represents the time how long the session will retain after disconnecting ).
 
 ### Provide the reason code for all response packet
 
@@ -156,7 +156,7 @@ Modify all response packet for containing the reason code, including CONNACK, PU
 
 Set the MQTT request/response model and provide the response topic and comparison data attributes for routing the response messages back to the publisher of this request. Besides that, it adds the ability that obtains the configuration information related to building the response topic from the server for the client.
 
-For more MQTT Request/response, please access our blog: [MQTT 5.0 Request Response](https://www.emqx.io/blog/mqtt5-request-response).
+For more MQTT Request/response, please access our blog: [MQTT 5.0 Request Response](https://www.emqx.com/en/blog/mqtt5-request-response).
 
 ### Shared subscription
 
@@ -168,9 +168,9 @@ Support abbreviating the topic name to integers to reduce the overhead of the MQ
 
 ## The next step
 
-After reading this article, if you want to try MQTT, you can access the [Free Public MQTT 5 Broker Server](https://www.emqx.io/mqtt/public-mqtt5-broker) page on the EMQ website. This page provides an online MQTT 5.0 broker, you can use it for MQTT learning, test and prototype design.
+After reading this article, if you want to try MQTT, you can access the [Free Public MQTT 5 Broker Server](https://www.emqx.com/en/mqtt/public-mqtt5-broker) page on the EMQ website. This page provides an online MQTT 5.0 broker, you can use it for MQTT learning, test and prototype design.
 
-Readers can also access our blog [The comparison of usual MQTT client tools in 2020](https://www.emqx.io/blog/mqtt-client-tools) to choose a suitable MQTT client tool for quickly experience the MQTT protocol.
+Readers can also access our blog [The comparison of usual MQTT client tools in 2020](https://www.emqx.com/en/blog/mqtt-client-tools) to choose a suitable MQTT client tool for quickly experience the MQTT protocol.
 
 
 

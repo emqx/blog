@@ -86,7 +86,7 @@
 
 在下篇推送中，我们将围绕流数据库的存储与各位继续深入探讨，让我们一起探寻一个高效可靠的流数据库应有的模样。
 
-同时，我们也欢迎各位加入 [EMQ](https://www.emqx.cn/)，与我们共同发现和创造流数据库的无限可能。
+同时，我们也欢迎各位加入 [EMQ](https://www.emqx.com/zh)，与我们共同发现和创造流数据库的无限可能。
 
 
 [^1]: Rydning, David Reinsel–John Gantz–John. "The digitization of the world from edge to core." Framingham: International Data Corporation (2018).

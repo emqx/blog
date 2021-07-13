@@ -6,7 +6,7 @@ Kuiper 0.0.3 is [available for download](https://github.com/emqx/kuiper/releases
 
 Kuiper is a SQL based lightweight IoT analytics/streaming software running at resource constrained edge devices. This release includes several new features and bug fixes.
 
-Website: https://www.emqx.io/products/kuiper
+Website: https://github.com/lf-edge/ekuiper
 
 Github Repository: https://github.com/emqx/kuiper
 

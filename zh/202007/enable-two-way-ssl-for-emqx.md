@@ -1,6 +1,6 @@
 作为基于现代密码学公钥算法的安全协议，TLS/SSL 能在计算机通讯网络上保证传输安全，EMQ X 内置对 TLS/SSL 的支持，包括支持单/双向认证、X.509 证书、负载均衡 SSL 等多种安全认证。你可以为 EMQ X 支持的所有协议启用 SSL/TLS，也可以将 EMQ X 提供的 HTTP API 配置为使用 TLS。
 
-在上一篇文章中，我们已经介绍过如何为 [EMQ X MQTT 服务器启用 SSL/TLS 单向安全连接](https://www.emqx.cn/blog/emqx-server-ssl-tls-secure-connection-configuration-guide)，本文将介绍如何在 EMQ X 中为 [MQTT](https://www.emqx.cn/mqtt) 启用双向 SSL/TLS 安全连接。
+在上一篇文章中，我们已经介绍过如何为 [EMQ X MQTT 服务器启用 SSL/TLS 单向安全连接](https://www.emqx.com/zh/blog/emqx-server-ssl-tls-secure-connection-configuration-guide)，本文将介绍如何在 EMQ X 中为 [MQTT](https://www.emqx.com/zh/mqtt) 启用双向 SSL/TLS 安全连接。
 
 
 
@@ -18,7 +18,7 @@
 
 TLS/SSL 协议下的通讯过程分为两部分，第一部分是握手协议。握手协议的目的是鉴别对方身份并建立一个安全的通讯通道。握手完成之后双方会协商出接下来使用的密码套件和会话密钥；第二部分是 record 协议，record 和其他数据传输协议非常类似，会携带内容类型，版本，长度和荷载等信息，不同的是它所携带的信息是加密了的。
 
-下面的图片描述了 TLS/SSL 握手协议的过程，从客户端的 "hello" 一直到服务器的 "finished" 完成握手。有兴趣的同学可以找更详细的资料看。对这个过程不了解也并不影响我们在 [EMQ X](https://www.emqx.cn/products/broker) 中启用这个功能。
+下面的图片描述了 TLS/SSL 握手协议的过程，从客户端的 "hello" 一直到服务器的 "finished" 完成握手。有兴趣的同学可以找更详细的资料看。对这个过程不了解也并不影响我们在 [EMQ X](https://www.emqx.com/zh/products/emqx) 中启用这个功能。
 
 ![whatisssl.gif](https://static.emqx.net/images/e654dbb6743731b20824a379d32a5cf3.gif)
 
@@ -165,7 +165,7 @@ listener.ssl.external.verify = verify_peer
 
 ### MQTT 连接测试
 
-当配置完成并重启 EMQ X 后，我们使用 [MQTT 客户端工具 - MQTT X](https://mqttx.app/zh)（该工具跨平台且支持 [MQTT 5.0](https://www.emqx.cn/mqtt/mqtt5)），来验证 TLS 双向认证服务是否正常运行。
+当配置完成并重启 EMQ X 后，我们使用 [MQTT 客户端工具 - MQTT X](https://mqttx.app/zh)（该工具跨平台且支持 [MQTT 5.0](https://www.emqx.com/zh/mqtt/mqtt5)），来验证 TLS 双向认证服务是否正常运行。
 
 > MQTT X 版本要求：v1.3.2 及以上版本
 

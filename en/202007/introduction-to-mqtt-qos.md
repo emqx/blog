@@ -1,4 +1,4 @@
-[MQTT protocol](https://www.emqx.io/mqtt) specifies the quality of service, which guarantees the reliability of message delivery under different network environments. The design of QoS is the focus of the MQTT protocol. As a protocol specifically designed for IoT scenarios, MQTT's operating scenarios are not only for PC, but also in a wider range of narrow-bandwidth networks and low-power devices. If the problem of transmission quality can be solved at the protocol layer, it will provide a great convenience for the development of the Internet of things applications.
+[MQTT protocol](https://www.emqx.com/en/mqtt) specifies the quality of service, which guarantees the reliability of message delivery under different network environments. The design of QoS is the focus of the MQTT protocol. As a protocol specifically designed for IoT scenarios, MQTT's operating scenarios are not only for PC, but also in a wider range of narrow-bandwidth networks and low-power devices. If the problem of transmission quality can be solved at the protocol layer, it will provide a great convenience for the development of the Internet of things applications.
 
 
 ## MQTT QoS levels

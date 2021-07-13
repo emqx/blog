@@ -115,7 +115,7 @@ CREATE TABLE `mqtt_acked` (
 
 ## Configure EMQ X server
 
-For [EMQ X](https://www.emqx.io/) MQTT broker installed via RPM, MySQL related configuration files are located in `/etc/emqx/plugins/emqx_backend_mysql.conf`. This article only tests the persistence function of MySQL. Most of the configuration does not need to be changed. You only need to fill in the user name, password, and database:
+For [EMQ X](https://www.emqx.com/en) MQTT broker installed via RPM, MySQL related configuration files are located in `/etc/emqx/plugins/emqx_backend_mysql.conf`. This article only tests the persistence function of MySQL. Most of the configuration does not need to be changed. You only need to fill in the user name, password, and database:
 
 ```bash
 backend.mysql.server = 127.0.0.1:3306

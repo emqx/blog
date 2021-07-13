@@ -14,7 +14,7 @@ module.rewrite = off
 
 ## Configure MQTT topic rewrite rules
 
-The [EMQ X](https://www.emqx.io/) MQTT topic rewrite rule needs users to configure by themselves, users themselves can add many topic rewrite rules, and the number of rules is unlimited. However, the performance consumption brought by this function in high throughput situation and the number of rules is proportional, because every **MQTT packets** with topics need to match the  rewrite rules again. Therefore, users need to use this function carefully. 
+The [EMQ X](https://www.emqx.com/en) MQTT topic rewrite rule needs users to configure by themselves, users themselves can add many topic rewrite rules, and the number of rules is unlimited. However, the performance consumption brought by this function in high throughput situation and the number of rules is proportional, because every **MQTT packets** with topics need to match the  rewrite rules again. Therefore, users need to use this function carefully. 
 
 The format of every rewrite topic rule is :
 
@@ -22,7 +22,7 @@ The format of every rewrite topic rule is :
 module.rewrite.rule.<number> = topic filter regular expression target expression
 ```
 
-Every rewrite topic rule make by the space-separated topic filter, the regular expression and the target expression. Under the precondition that the topic rewrite is enabled, when [EMQ X](https://www.emqx.io/) receives MQTT packets with topics such as the **PUBLISH** packet, it will use the topic of the packet to sequentially match topic filters of the configuration file. If this match is successful, EMQ X will use the regular expression to extract information from the topic, and then replace the topic into the target expression to form a new topic.
+Every rewrite topic rule make by the space-separated topic filter, the regular expression and the target expression. Under the precondition that the topic rewrite is enabled, when [EMQ X](https://www.emqx.com/en) receives MQTT packets with topics such as the **PUBLISH** packet, it will use the topic of the packet to sequentially match topic filters of the configuration file. If this match is successful, EMQ X will use the regular expression to extract information from the topic, and then replace the topic into the target expression to form a new topic.
 
 In the target expression, users can use this formatted variable `$N` to match the extracted element from the regular expression. The value of `$N` is the nth extracted element from the regular expression. For example, `$1` is the first element extracted from the regular expression. 
 

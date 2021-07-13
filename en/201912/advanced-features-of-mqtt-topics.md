@@ -1,6 +1,6 @@
 ## What is the topic
 
-[MQTT protocol](https://www.emqx.io/mqtt) transmits application messages over the network. When application messages are transmitted over MQTT, they have an associated quality of service (QoS) and topic (Topic). The topic is essentially a string, and the MQTT protocol specifies that the topic is a UTF-8 encoded string, which means that the comparison of the topic filter and the topic name can be done by comparing the encoded UTF-8 bytes or decoded Unicode characters 
+[MQTT protocol](https://www.emqx.com/en/mqtt) transmits application messages over the network. When application messages are transmitted over MQTT, they have an associated quality of service (QoS) and topic (Topic). The topic is essentially a string, and the MQTT protocol specifies that the topic is a UTF-8 encoded string, which means that the comparison of the topic filter and the topic name can be done by comparing the encoded UTF-8 bytes or decoded Unicode characters 
 
 #### Topic name and topic filter
 

@@ -223,7 +223,7 @@ my-emqx-edge-2  1/1     Running   0          9s
 
  #### EMQ X EE
 
-部署 EMQ X 企业版集群首先需要登陆 emqx.io](https://emqx.io) 申请并下载 License 文件，并将 License 文件创建为 Secret 资源
+部署 EMQ X 企业版集群首先需要登陆 emqx.io](https://www.emqx.com/en) 申请并下载 License 文件，并将 License 文件创建为 Secret 资源
 
 ```
 $ kubectl create secret generic your-license-secret-name --from-file=/path/to/emqx.lic

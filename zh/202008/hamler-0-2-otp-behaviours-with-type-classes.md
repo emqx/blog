@@ -332,7 +332,7 @@ init = initOk (OneForOne, 10, 100)
 
 ## 欢迎加入 Hamler 编程语言社区
 
-Hamler 函数编程语言从发起即是一个开源项目，项目托管在 GitHub: https://github.com/hamler-lang/ 。 **Hamler** 目前由 [EMQ - 杭州映云科技有限公司](https://www.emqx.cn/about) 研发团队主导开发，计划在 2020 年底前发布 0.5 版本用于 **EMQ X** 6.0 的开发。
+Hamler 函数编程语言从发起即是一个开源项目，项目托管在 GitHub: https://github.com/hamler-lang/ 。 **Hamler** 目前由 [EMQ - 杭州映云科技有限公司](https://www.emqx.com/zh/about) 研发团队主导开发，计划在 2020 年底前发布 0.5 版本用于 **EMQ X** 6.0 的开发。
 
 ## EMQ 公司介绍 
 

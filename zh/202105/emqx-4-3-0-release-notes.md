@@ -1,15 +1,15 @@
-[连接海量物联网设备的 MQTT 消息服务器 - EMQ X](https://www.emqx.cn/products/broker) 是基于高并发的 Erlang/OTP 语言平台开发，支持百万级连接和分布式集群架构。EMQ X 已经在全球物联网市场广泛应用，无论是产品原型设计、物联网创业公司、还是大规模的商业部署，都支持免费使用。
+[连接海量物联网设备的 MQTT 消息服务器 - EMQ X](https://www.emqx.com/zh/products/emqx) 是基于高并发的 Erlang/OTP 语言平台开发，支持百万级连接和分布式集群架构。EMQ X 已经在全球物联网市场广泛应用，无论是产品原型设计、物联网创业公司、还是大规模的商业部署，都支持免费使用。
 
-产品介绍：[https://www.emqx.cn/products/broker](https://www.emqx.cn/products/broker)
+产品介绍：[https://www.emqx.com/zh/products/emqx](https://www.emqx.com/zh/products/emqx)
 
-下载地址：[https://www.emqx.cn/downloads#broker](https://www.emqx.cn/downloads#broker)
+下载地址：[https://www.emqx.com/zh/downloads?product=broker](https://www.emqx.com/zh/downloads?product=broker)
 
 
 ## 概览
 
 EMQ X v4.3.0 版本修复了一些已知问题并新增了诸多特性，在通配符订阅性能、路由表内存占用、规则引擎性能以及大量客户端离线处理性能方面做了较大改进，同时将 [多语言](https://docs.emqx.cn/broker/v4.3/advanced/lang-exhook.html) 扩展底层通信方式由 erlport 更换为更为灵活的 gRPC 通信。
 
-该版本是 4.x 最后一个次要版本，旨在于为用户提供一个功能丰富、性能稳定的 [MQTT 服务器](https://www.emqx.cn/products/broker)，推荐所有 4.x 用户升级到此版本，此后 4.x 版本将进入维护状态，EMQ X Team 将进入到后续 5.0 版本开发工作中。
+该版本是 4.x 最后一个次要版本，旨在于为用户提供一个功能丰富、性能稳定的 [MQTT 服务器](https://www.emqx.com/zh/products/emqx)，推荐所有 4.x 用户升级到此版本，此后 4.x 版本将进入维护状态，EMQ X Team 将进入到后续 5.0 版本开发工作中。
 
 访问 [EMQ X GitHub](https://github.com/emqx/emqx) 仓库，点击右上角的 **Watch** 即可关注 EMQ X 5.0 最新动态。
 

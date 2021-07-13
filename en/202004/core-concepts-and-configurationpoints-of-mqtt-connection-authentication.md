@@ -11,7 +11,7 @@ As the fact standard for IoT communication protocols, the **MQTT protocol** main
   - MQTT protocol supports client identity verification with username and password;
   - **MQTT Broker** implements topic ACL control.
 
-[EMQ X MQTT Broker](https://www.emqx.io/) fully supports various security specifications of **MQTT protocol**. With built-in security functions, it can be used out of the box without programming, and can quickly eliminate the security risks in the project. The **EMQ X authentication** series will around various levels of security specifications explain how to enable related functions  through the configuration of  EMQ X to finally achieve corresponding security protection.
+[EMQ X MQTT Broker](https://www.emqx.com/en) fully supports various security specifications of **MQTT protocol**. With built-in security functions, it can be used out of the box without programming, and can quickly eliminate the security risks in the project. The **EMQ X authentication** series will around various levels of security specifications explain how to enable related functions  through the configuration of  EMQ X to finally achieve corresponding security protection.
 
 This article will around the core concepts related to MQTT connection authentication in EMQ X, introduce the authentication methods supported by EMQ X and the applicable scene. The MQTT related authentication chain, authentication process/principle, and configuration points will be explained through the working mechanism and configuration principles to let you quickly master the EMQ X authentication configuration method.
 

@@ -49,7 +49,7 @@ companion object {
 
 ### Connect MQTT broker
 
-This article will use the [MQTT broker](https://www.emqx.io/products/broker) which is operated and maintained by EMQ X [MQTT Cloud](https://cloud.emqx.io/). EMQ X Cloud is the MQTT IoT cloud service platform released by [EMQ](https://www.emqx.io), it provides the service for accessing **MQTT 5.0** with all-in-one operation and maintenance and unique isolation environment.
+This article will use the [MQTT broker](https://www.emqx.com/en/products/emqx) which is operated and maintained by EMQ X [MQTT Cloud](https://cloud.emqx.io/). EMQ X Cloud is the MQTT IoT cloud service platform released by [EMQ](https://www.emqx.com/en), it provides the service for accessing **MQTT 5.0** with all-in-one operation and maintenance and unique isolation environment.
 
 - Broker: **broker.emqx.io**
 - TCP Port: **1883**

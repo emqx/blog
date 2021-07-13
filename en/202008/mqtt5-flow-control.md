@@ -1,5 +1,5 @@
 
-MQTT v5 brings a lot of new features, we will show these features in an easy-to-understand way and discuss the impact of these features on the developer. So far, we have discussed these [new features of MQTT v5](https://www.emqx.io/mqtt/mqtt5). Now, we will continue discussing: **flow control**.
+MQTT v5 brings a lot of new features, we will show these features in an easy-to-understand way and discuss the impact of these features on the developer. So far, we have discussed these [new features of MQTT v5](https://www.emqx.com/en/mqtt/mqtt5). Now, we will continue discussing: **flow control**.
 
 
 

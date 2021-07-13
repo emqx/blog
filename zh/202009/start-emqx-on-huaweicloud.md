@@ -43,7 +43,7 @@
 
 #### 2.2 下载安装包
 
-进入【实验操作桌面】，打开火狐浏览器，输入 https://www.emqx.cn/downloads 选择 EMQ X Broker 或 EMQ X Enterprise，选择 EMQ X 版本与操作系统类型。
+进入【实验操作桌面】，打开火狐浏览器，输入 https://www.emqx.com/zh/downloads 选择 EMQ X Broker 或 EMQ X Enterprise，选择 EMQ X 版本与操作系统类型。
 
 此实验中选择 EMQ X Broker 最新版 4.1.1，操作系统选择 Linux > Ubuntu 16.04，选择安装包类型为 zip，点击下载按钮，将文件保存至默认下载目录。
 

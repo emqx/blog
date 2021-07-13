@@ -3,7 +3,7 @@
 
 
 
-物联网 MQTT 服务器 [EMQ X](https://www.emqx.cn/) 提供 [emqx_statsd](https://github.com/emqx/emqx-statsd) 插件，用于将 EMQ X 运行指标及 Erlang 虚拟机状态数据输出到第三方的监控系统如 Prometheus 中。通过 Prometheus 自带的 node-exporter 还可以采集 Linux 服务器相关指标，实现服务器 + EMQ X 整体运维监控。
+物联网 MQTT 服务器 [EMQ X](https://www.emqx.com/zh) 提供 [emqx_statsd](https://github.com/emqx/emqx-statsd) 插件，用于将 EMQ X 运行指标及 Erlang 虚拟机状态数据输出到第三方的监控系统如 Prometheus 中。通过 Prometheus 自带的 node-exporter 还可以采集 Linux 服务器相关指标，实现服务器 + EMQ X 整体运维监控。
 
 本文提供了 Prometheus + Grafana 整套 EMQ X 运维监控方案搭建过程。
 
@@ -202,7 +202,7 @@ Prometheus 与 Grafana 均支持指标告警功能，配置告警规则后，服
 
 ## 附：emqx-statsd 所有指标
 
-[EMQ X](https://www.emqx.cn/) MQTT 服务器通过 Prometheus push gateway 推送指标数据，支持的指标项如下：
+[EMQ X](https://www.emqx.com/zh) MQTT 服务器通过 Prometheus push gateway 推送指标数据，支持的指标项如下：
 
 ```bash
 # TYPE erlang_vm_ets_limit gauge

@@ -2,9 +2,9 @@
 
 ## Overview
 
-In [EdgeX](https://www.edgexfoundry.org/) Geneva, [EMQ X Kuiper - an SQL based rule engine](https://www.emqx.io/products/kuiper) is integrated with EdgeX. Before diving into this tutorial, let's spend a little time on learning basic knowledge of Kuiper. Kuiper is an edge lightweight IoT data analytics / streaming software implemented by Golang, and it can be run at all kinds of resource constrained edge devices. Kuiper rules are based on ``Source``, ``SQL`` and ``Sink``.
+In [EdgeX](https://www.edgexfoundry.org/) Geneva, [EMQ X Kuiper - an SQL based rule engine](https://github.com/lf-edge/ekuiper) is integrated with EdgeX. Before diving into this tutorial, let's spend a little time on learning basic knowledge of Kuiper. Kuiper is an edge lightweight IoT data analytics / streaming software implemented by Golang, and it can be run at all kinds of resource constrained edge devices. Kuiper rules are based on ``Source``, ``SQL`` and ``Sink``.
 
-- Source: The data source of streaming data, such as data from [MQTT broker](https://www.emqx.io/products/broker). In EdgeX scenario, the data source is EdgeX message bus, which could be ZeroMQ or MQTT broker.
+- Source: The data source of streaming data, such as data from [MQTT broker](https://www.emqx.com/en/products/emqx). In EdgeX scenario, the data source is EdgeX message bus, which could be ZeroMQ or MQTT broker.
 
 - SQL: SQL is where you specify the business logic of streaming data processing. Kuiper provides SQL-like statements to allow you to extract, filter & transform data.
 - Sink: Sink is used for sending analysis result to a specified target. For example, send analysis result to another MQTT broker, or an HTTP rest address.
@@ -212,7 +212,7 @@ time="2020-04-17T06:32:31Z" level=info msg="sink result for rule rule1: [{\"bool
 
 ### Monitor analysis result
 
-Since all of the analysis result are published to `tcp://broker.emqx.io:1883`, so you can just use below `mosquitto_sub` command to monitor the result. You can also use other [MQTT client tools](https://www.emqx.io/blog/mqtt-client-tools).
+Since all of the analysis result are published to `tcp://broker.emqx.io:1883`, so you can just use below `mosquitto_sub` command to monitor the result. You can also use other [MQTT client tools](https://www.emqx.com/en/blog/mqtt-client-tools).
 
 ```
 $ mosquitto_sub -h broker.emqx.io -t result

@@ -8,7 +8,7 @@ EMQ X Kuiper 是 Golang 实现的轻量级物联网边缘分析、流式处理�
 
 ![arch.png](https://static.emqx.net/images/95b75e626481746d4bcb58bf76820527.png)
 
-网址：https://www.emqx.cn/products/kuiper
+网址：https://github.com/lf-edge/ekuiper
 
 Github仓库： https://github.com/emqx/kuiper
 

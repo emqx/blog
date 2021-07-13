@@ -7,7 +7,7 @@ EMQ X Kuiper is an edge lightweight IoT data analytics / streaming software impl
 
 This release includes several new features and bug fixes.
 
-Website: <https://www.emqx.io/products/kuiper>
+Website: <https://github.com/lf-edge/ekuiper>
 
 Github Repository: <https://github.com/emqx/kuiper>
 

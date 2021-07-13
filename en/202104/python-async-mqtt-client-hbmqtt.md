@@ -47,7 +47,7 @@ pip3 install -i https://pypi.doubanio.com/simple hbmqtt
 
 ## Connect to the MQTT broker
 
-This article will use the [free public MQTT broker](https://www.emqx.io/mqtt/public-mqtt5-broker) provided by EMQ X. This service is created based on the [IoT cloud platform](https://cloud.emqx.io/) of EMQ X. The information of broker access is as follows:
+This article will use the [free public MQTT broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker) provided by EMQ X. This service is created based on the [IoT cloud platform](https://cloud.emqx.io/) of EMQ X. The information of broker access is as follows:
 
 * Broker: broker.emqx.io
 * TCP Port: 1883
@@ -250,6 +250,6 @@ Back in the terminal, we see that the client receives and prints messages. Also,
 
 ## Summary
 
-So far, we have completed connecting the HBMQTT library to the [public MQTT broker](https://www.emqx.io/mqtt/public-mqtt5-broker) and implemented the connection, message publishing, and subscription between the test client and the MQTT broker. We can implement a more effective MQTT client by using Python asynchronous IO to perform the sending and receiving of messages. 
+So far, we have completed connecting the HBMQTT library to the [public MQTT broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker) and implemented the connection, message publishing, and subscription between the test client and the MQTT broker. We can implement a more effective MQTT client by using Python asynchronous IO to perform the sending and receiving of messages. 
 
 We will continue to publish more articles on IoT development and Python, so stay tuned for more.

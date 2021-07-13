@@ -4,7 +4,7 @@
 
 海量的设备接入和设备管理对网络带宽、通信协议以及平台服务架构都带来了很大挑战。对于 **物联网协议** 来说，必须针对性地解决物联网设备通信的几个关键问题：其网络环境复杂而不可靠、其内存和闪存容量小、其处理器能力有限。
 
-[MQTT 协议](https://www.emqx.cn/mqtt) 是基于发布/订阅模式的物联网通信协议，凭借简单易实现、支持 QoS、报文小等特点，占据了物联网协议的半壁江山：
+[MQTT 协议](https://www.emqx.com/zh/mqtt) 是基于发布/订阅模式的物联网通信协议，凭借简单易实现、支持 QoS、报文小等特点，占据了物联网协议的半壁江山：
 
 ![WechatIMG10934.png](https://static.emqx.net/images/c980ab99489d1e771ad7b4dc5ac722b9.png)
 
@@ -98,7 +98,7 @@ MQTT 没有假设设备或 Broker 使用了 TCP 的保活机制[^4]，而是设�
 
 MQTT 设计了遗愿(Last Will) 消息，让 Broker 在发现设备异常下线的情况下，帮助设备发布一条遗愿消息到指定的主题。
 
-实际上在某些 [MQTT 服务器](https://www.emqx.cn/products/broker)的实现里 (比如 EMQ X)，设备上线或下线的时候 Broker 会通过某些系统主题发布设备状态更新，更符合实际应用场景。
+实际上在某些 [MQTT 服务器](https://www.emqx.com/zh/products/emqx)的实现里 (比如 EMQ X)，设备上线或下线的时候 Broker 会通过某些系统主题发布设备状态更新，更符合实际应用场景。
 
 ## 开源 MQTT 服务器如何选择
 
@@ -120,7 +120,7 @@ MQTT 设计了遗愿(Last Will) 消息，让 Broker 在发现设备异常下线�
 
    同样使用 Erlang 开发的 MQTT 服务器.
 
-从支持 [MQTT 5.0](https://www.emqx.cn/mqtt/mqtt5)、稳定性、扩展性、集群能力等方面考虑，[EMQ X](https://www.emqx.cn/products/broker) 的表现应该是最好的：
+从支持 [MQTT 5.0](https://www.emqx.com/zh/mqtt/mqtt5)、稳定性、扩展性、集群能力等方面考虑，[EMQ X](https://www.emqx.com/zh/products/emqx) 的表现应该是最好的：
 
 - 使用 Erlang OTP 开发，容错能力好 (电信领域久经考验的语言，曾经做出过 99.9999999% 可用性的交换机设备[^5])
 - 官方有大量的扩展插件可供扩展。有很多认证插件，数据存储(backend)插件可供选择。可支持各种关系型数据库，NoSQL 数据库，以及常见消息队列如 Kafka，RabbitMQ，Pulsar 等
@@ -134,11 +134,11 @@ MQTT 设计了遗愿(Last Will) 消息，让 Broker 在发现设备异常下线�
 
 EMQ X [MQTT 物联网云服务](https://cloud.emqx.cn/) 提供了一个在线的公共 MQTT 5.0 服务器，不需要任何安装您就可以快速开始 MQTT 协议的学习、测试或原型制作。
 
-该 MQTT 服务器的详细接入信息请见 EMQ 官网页面：[免费的在线 MQTT 服务器](https://www.emqx.cn/mqtt/public-mqtt5-broker)。
+该 MQTT 服务器的详细接入信息请见 EMQ 官网页面：[免费的在线 MQTT 服务器](https://www.emqx.com/zh/mqtt/public-mqtt5-broker)。
 
 ### MQTT 在线客户端
 
-EMQ 也提供了支持浏览器访问的 [MQTT 在线客户端工具](https://www.emqx.cn/mqtt/mqtt-websocket-toolkit)，该工具支持通过普通或者加密的 WebSocket 端口连接至 MQTT 服务器，同时也支持缓存连接方便下次访问使用。
+EMQ 也提供了支持浏览器访问的 [MQTT 在线客户端工具](https://www.emqx.com/zh/mqtt/mqtt-websocket-toolkit)，该工具支持通过普通或者加密的 WebSocket 端口连接至 MQTT 服务器，同时也支持缓存连接方便下次访问使用。
 
 
 

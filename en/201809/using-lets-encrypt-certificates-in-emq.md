@@ -210,7 +210,7 @@ Check the listeners on the dashboard:
 
 ![](https://cdn-images-1.medium.com/max/2000/1*Ldz4Jr5TIfCsC9AtTk_5Pg.png)
 
-I hope you like our article. If you have any questions, please visit [EMQ X Website](https://www.emqx.io/).
+I hope you like our article. If you have any questions, please visit [EMQ X Website](https://www.emqx.com/en).
 
 
 Or write to us: contact@emqx.io

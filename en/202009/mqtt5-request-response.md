@@ -1,9 +1,9 @@
 
-MQTT v5 brings lots of new features, and we will try our best to present these features in an easy-to-understand way and discuss the impact of these features on developers. So far, we have discussed these [new features of MQTT v5](https://www.emqx.io/mqtt/mqtt5). Today, we will continue to discuss: **Request Response**.
+MQTT v5 brings lots of new features, and we will try our best to present these features in an easy-to-understand way and discuss the impact of these features on developers. So far, we have discussed these [new features of MQTT v5](https://www.emqx.com/en/mqtt/mqtt5). Today, we will continue to discuss: **Request Response**.
 
 ### Request Response
 
-In the [MQTT client](https://www.emqx.io/blog/mqtt-client-tools), we know that we can either publish messages to a specified topic or subscribe to a specified topic for receiving messages of interest. In the case of ensuring some people subscribed, a QoS which is greater than 0 can ensure messages are delivered to the subscriber [^1]. However, if we combine some business scenarios where not only need to deliver messages to the subscriber, and may need the subscriber to trigger some actions and return results, or need to request some information from the subscriber, the implementation under the publish-subscribe model is slightly cumbersome, and the two communication parties need to negotiate a request topic and a response topic in advance.
+In the [MQTT client](https://www.emqx.com/en/blog/mqtt-client-tools), we know that we can either publish messages to a specified topic or subscribe to a specified topic for receiving messages of interest. In the case of ensuring some people subscribed, a QoS which is greater than 0 can ensure messages are delivered to the subscriber [^1]. However, if we combine some business scenarios where not only need to deliver messages to the subscriber, and may need the subscriber to trigger some actions and return results, or need to request some information from the subscriber, the implementation under the publish-subscribe model is slightly cumbersome, and the two communication parties need to negotiate a request topic and a response topic in advance.
 
 If the same request topic has lots of requestors, we need multiple different response topics for correctly return the response to the requestor. The most common method is inserting the field Client ID which can uniquely identify the requesting client at the head of Payload or elsewhere. The responder extracts these fields and the real Payload according to the pre-agreed rules and uses these fields for constructing a response topic.
 
@@ -11,7 +11,7 @@ If the same request topic has lots of requestors, we need multiple different res
 
 However, this is not a good implementation. We expect that the request recipient only needs to pay attention to how to process requests, without spending extra energy considering how to correctly return the response to the requestor. Therefore, MQTT 5.0 adds the new attribute **Response Topic**, and define the following request-response interaction process:
 
-1. [MQTT client](https://www.emqx.io/blog/mqtt-client-tools) (requestor) publish the request message including **Response Topic** to the request topic.
+1. [MQTT client](https://www.emqx.com/en/blog/mqtt-client-tools) (requestor) publish the request message including **Response Topic** to the request topic.
 2. If there are other MQTT clients (responder) subscribe to the topic filter which matches the topic name used when request publishing messages, then the request message will be received.
 3. The responder takes appropriate action according to the request message, then publish the response messages to the topic specified by this attribute **Response Topic**.
 
@@ -19,7 +19,7 @@ However, this is not a good implementation. We expect that the request recipient
 
 #### Correlation data
 
-Different from the HTTP request-response model, [MQTT](https://www.emqx.io/mqtt) request-response is asynchronous, which brings a problem, that is how to associate the response message with the request message. The most commonly used method is to carry one characteristic field in the request message. The responder will intact return the received fields when they receive the response message. Obviously, MQTT also considers this, so we add a new attribute **Correlation Data** for the PUBLISH packet.
+Different from the HTTP request-response model, [MQTT](https://www.emqx.com/en/mqtt) request-response is asynchronous, which brings a problem, that is how to associate the response message with the request message. The most commonly used method is to carry one characteristic field in the request message. The responder will intact return the received fields when they receive the response message. Obviously, MQTT also considers this, so we add a new attribute **Correlation Data** for the PUBLISH packet.
 
 ![image20200901154600805.png](https://static.emqx.net/images/d624fb3a3061f043f32ae02338f635a0.png)
 

@@ -1,7 +1,7 @@
 
 ## Overview
 
-[MQTT X](https://mqttx.app) is a cross-platform [MQTT 5.0](https://www.emqx.io/mqtt/mqtt5) desktop test client provided by the [EMQ](https://www.emqx.io/), the world's leading provider of **open source IoT middleware**, and supports macOS, Linux, and Windows. The user interface of MQTT X simplifies the operation logic of pages with the help of a chat software format that allows users to quickly create multiple simultaneous online **MQTT clients**, and facilitate testing the connection/publish/subscribe function of MQTT/TCP, MQTT/TLS, MQTT/WebSocket and other **MQTT protocol** features.
+[MQTT X](https://mqttx.app) is a cross-platform [MQTT 5.0](https://www.emqx.com/en/mqtt/mqtt5) desktop test client provided by the [EMQ](https://www.emqx.com/en), the world's leading provider of **open source IoT middleware**, and supports macOS, Linux, and Windows. The user interface of MQTT X simplifies the operation logic of pages with the help of a chat software format that allows users to quickly create multiple simultaneous online **MQTT clients**, and facilitate testing the connection/publish/subscribe function of MQTT/TCP, MQTT/TLS, MQTT/WebSocket and other **MQTT protocol** features.
 
 MQTT X Website: [https://mqttx.app](https://mqttx.app)
 
@@ -53,7 +53,7 @@ At this time, you can copy this code into the code edit box on the script page, 
 
 ![mqttxhumtemp.png](https://static.emqx.net/images/e8c56a968c89ae76bb6fb684ca73027b.png)
 
-We use the [Free public MQTT broker](https://www.emqx.io/mqtt/public-mqtt5-broker) provided by the EMQ X to create a new connection. This service is created based on EMQ X's [MQTT IoT cloud platform](https://cloud.emqx.io/). The broker access information is as follows:
+We use the [Free public MQTT broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker) provided by the EMQ X to create a new connection. This service is created based on EMQ X's [MQTT IoT cloud platform](https://cloud.emqx.io/). The broker access information is as follows:
 
 - Broker: **broker.emqx.io**
 - TCP Port: **1883**

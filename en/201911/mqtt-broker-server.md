@@ -20,7 +20,7 @@ sensor/+/temperature
 
 #### MQTT broker definition and function
 
-[MQTT broker](https://www.emqx.io/products/broker), also known as the MQTT message server, can be a server or a cluster of servers running MQTT message server software. MQTT broker is responsible for receiving network connections from the client and handling the client's requests of Subscribe/Unsubscribe and Publish, as well as forwarding the messages published by the client to other subscribers.
+[MQTT broker](https://www.emqx.com/en/products/emqx), also known as the MQTT message server, can be a server or a cluster of servers running MQTT message server software. MQTT broker is responsible for receiving network connections from the client and handling the client's requests of Subscribe/Unsubscribe and Publish, as well as forwarding the messages published by the client to other subscribers.
 
 MQTT broker is widely used in the industries of  power, new energy, smart city, smart home, smart meter reading, vehicle networking, finance and payment, operators and so on.
 
