@@ -74,9 +74,9 @@ We provide official scripts of Helm3 to simplify the installation steps, you can
   my-emqx-headless     ClusterIP      None             <none>        1883/TCP,8883/TCP,8081/TCP,8083/TCP,8084/TCP,18083/TCP                                       4m33s
   ```
 
-It can be seen that the host IP corresponding to port 18083 of `my emqx` is 31539. (NodePort changes during each deployment, which is subject to the actual deployment.)
+It can be seen that the host IP corresponding to port 18083 of `my emqx` is 31253. (NodePort changes during each deployment, which is subject to the actual deployment.)
 
-+ Access port 31539 of any Kubernetes node  IP, enter the default username: admin, default password: public, and log in to the EMQ X dashboard.
++ Access port 31253 of any Kubernetes node  IP, enter the default username: admin, default password: public, and log in to the EMQ X dashboard.
 
 + Delete EMQ X cluster.
 
