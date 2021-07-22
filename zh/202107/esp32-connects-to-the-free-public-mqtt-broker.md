@@ -9,7 +9,7 @@
 
 * ESP32
 * Arduino IDE
-* [MQTT 5.0 客户端工具 - MQTT X](https://mqttx.app/cn/)
+* [MQTT 5.0 客户端工具 - MQTT X](https://mqttx.app/zh)
 * 部署在 [EMQ X Cloud](https://cloud.emqx.cn) 上的免费的公共 [MQTT 服务器](https://www.emqx.io/zh)
   - Broker: **broker-cn.emqx.io**
   - TCP Port: **1883**
