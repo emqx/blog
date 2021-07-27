@@ -35,30 +35,27 @@ This article will combine the features of each MQTT client tool to introduce eva
 
 - MQTT WebSocket Toolkit
 
-  
-
-
 ## MQTT X
 
-### Introduction to client 
+### Introduction to client
 
-[MQTT X](https://mqttx.app/) is a cross-platform MQTT 5.0 desktop client tool open-sourced by [EMQ](https://www.emqx.com/en), supports macOS, Linux, Windows, and is the most beautiful MQTT client tool on the market until now.
-
-MQTT uses Electron cross-platform technology, and can send and receive messages in the form of message chat. It allows establishing and connecting multiple clients at the same time, and freely switch to communicate with each other.  It has better interaction and greatly improves the efficiency of MQTT development test.
+[MQTT X](https://mqttx.app/) is a cross-platform [MQTT 5.0](https://www.emqx.com/en/mqtt/mqtt5) desktop testing client open sourced by [EMQ](https://www.emqx.com/en), the world's leading provider of **open source IoT middleware**, which supports macOS, Linux, Windows. The user interface of MQTT X uses the chatting software form to simplify the operation logic of pages. Users can quickly create multiple simultaneously online **MQTT client** for convenient testing the connect/publish/subscribe functions of MQTT/TCP, MQTT/TLS, MQTT/WebSocket and other **MQTT protocol** features.
 
 MQTT X has relatively comprehensive functions. Users can quickly test the connection/publishing/subscribing function of MQTT/TCP, MQTT/TLS, MQTT/WebSocket and other MQTT protocol features.
 
 ### Features of client
 
+- Cross-platform for Windows，macOS，Linux
 - Support MQTT v3.1.1 and MQTT v5.0 protocols
 - Support CA, self-signed certificate, and single and two-way SSL /TLS authentication
-- Support theme switching between Light, Dark and Night.
+- Support theme switching between Light, Dark and Night
 - Support MQTT over WebSockets
 - Support Hex, Base64, JSON, Plaintext
-- Support Simplified Chinese and English
+- Support Simplified Chinese, English, Japanese and Turkish
 - Support custom color marking when subscribing topics
-- Message filter is available after clicking subscribed topic
-- Storing MQTT broker information, and can select through drop-down
+- Support for automatic subscription to $SYS and view bytes statistics
+- Customizable script to simulate data testing
+- Full logging capabilities
 
 ![1.png](https://static.emqx.net/images/mdt40vcf7ebdrxohghlzwpdyr4u9494l.png)
 
@@ -117,7 +114,7 @@ mosquitto_pub -t "testtopic/1" -m "Hello"
 
 ### Introduction to client
 
-MQTT.fx is a currently mainstream MQTT client developed by [Jens Deters](https://www.jensd.de/) that can quickly verify whether it can interact with IoT Hub services to publish or subscribe to messages. MQTT.fx is applicable for the Apache License 2.0 protocol but without providing source code.
+MQTT.fx is a currently mainstream MQTT client developed by [Jens Deters](https://www.jensd.de/) that can quickly verify whether it can interact with IoT Hub services to publish or subscribe to messages. MQTT.fx is applicable for the Apache License 2.0 protocol but without providing source code. Unfortunately, MQTT.fx has been discontinued and is now being developed under a commercial version, MQTT.fx® 5.0, funded by Softblade, which operates the software under a fee-based license. MQTT.fx in this document refers to version 1.0 unless otherwise specified.
 
 MQTT.fx is an established MQTT client tool. The related product documentation tutorials of cloud product providers such as Azure IoT Hub, AWS IoT, and Alibaba Cloud IoT are all using MQTT.fx as an example. MQTT.fx use JavaFX technology to develop, and may have a stuck experience on some older machines because of Java virtual machine.
 

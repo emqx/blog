@@ -37,30 +37,27 @@ MQTT 客户端工具常用于建立与 [MQTT 服务器](https://www.emqx.com/zh/
 
 - MQTT WebSocket Toolkit
 
-  
-
-
 ## MQTT X
 
 ### 客户端简介
 
-[MQTT X](https://mqttx.app/zh) 是由 [杭州映云科技有限公司](https://www.emqx.com/zh/about) 开源的一款跨平台 MQTT 5.0 桌面客户端工具，它支持 macOS，Linux，Windows，是目前为止市面上最漂亮的 MQTT 客户端工具。
+[MQTT X](https://mqttx.app/zh) 是由全球领先的 **开源物联网中间件** 提供商 [EMQ](https://www.emqx.com/zh) 开源的一款跨平台 [MQTT 5.0](https://www.emqx.com/zh/mqtt/mqtt5) 桌面测试客户端，它支持 macOS，Linux，Windows。MQTT X 的用户界面借助聊天软件的形式简化了页面的操作逻辑，用户可以快速创建多个同时在线的 **MQTT 客户端**，方便测试 MQTT/TCP、MQTT/TLS、MQTT/WebSocket  的连接/发布/订阅功能及其他 **MQTT 协议** 特性。
 
 MQTT X 采用了 Electron 跨平台技术，以消息聊天的交互形式收发消息，允许同时建立多个客户端连接并自由切换互相通信，有较好的交互性，大大提高了 MQTT 开发测试的效率。
 
-MQTT X 功能较全面，用户可以快速测试 MQTT/TCP、MQTT/TLS、MQTT/WebSocket 的连接/发布/订阅功能及其他 MQTT 协议特性。
-
 ### 客户端特性
 
+- 跨平台，支持 Windows，macOS 和 Linux
 - 支持 MQTT v3.1.1 以及 MQTT v5.0 协议
 - 单/双向 SSL 认证：支持 CA、自签名证书，以及单、双向 SSL 认证
-- 支持 Light、Dark、Night 三种主题切换
+- 支持 Light、Dark、Night 三种主题模式切换
 - 支持 WebSocket 连接至 MQTT 服务器
 - 支持 Hex, Base64, JSON, Plaintext
-- 支持简体中文以及英文
+- 支持简体中文、英文、日文和土耳其文
 - 订阅 Topic 支持自定义颜色标记
-- 点击已订阅 topic 可进行消息过滤
-- 存储 MQTT 服务器信息并可进行下拉选择
+- 支持 $SYS 主题自动订阅，查看流量统计
+- 自定义编辑脚本测试和模拟收发数据
+- 完整的日志记录
 
 ![1.png](https://static.emqx.net/images/mdt40vcf7ebdrxohghlzwpdyr4u9494l.png)
 
@@ -119,7 +116,7 @@ mosquitto_pub -t "testtopic/1" -m "Hello"
 
 ### 客户端简介
 
-MQTT.fx 是 [Jens Deters](https://www.jensd.de/) 个人开发的、目前主流的 MQTT 客户端，可以快速验证是否可以与 IoT Hub 服务交互发布或订阅消息，MQTT.fx 适用 Apache License 2.0 协议但并未提供源码。
+MQTT.fx 是 [Jens Deters](https://www.jensd.de/) 个人开发的、目前主流的 MQTT 客户端，可以快速验证是否可以与 IoT Hub 服务交互发布或订阅消息，MQTT.fx 适用 Apache License 2.0 协议但并未提供源码。遗憾的是 MQTT.fx ⽬前已经停⽌维护，并转为由 Softblade 公司资助开发另发⾏了其商业版本 MQTT.fx® 5.0，采⽤收费许可证⽅式经营该软件。本⽂中的 MQTT.fx 不经特殊说明即特指 1.0 版本。
 
 MQTT.fx 是一个老牌的 MQTT 客户端工具，Azure IoT Hub、AWS IoT、阿里云 IoT 等云服务提供商相关产品文档教程均以 MQTT.fx 为例。MQTT.fx 使用 JavaFX 技术开发，由于 Java 虚拟机的关系可能在某些老旧机器上会有卡顿的体验。
 
