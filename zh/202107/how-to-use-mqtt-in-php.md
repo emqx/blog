@@ -1,15 +1,15 @@
-[PHP](https://www.php.net) 是一种被广泛应用的开放源代码的多用途脚本语言，它可嵌入到 HTML中，尤其适合 Web 开发。
+[PHP](https://www.php.net) 是一种被广泛应用的开放源代码的多用途脚本语言，它可嵌入到 HTML 中，尤其适合 Web 开发。
 
 本文主要介绍如何在 PHP 项目中使用 `php-mqtt/client` 客户端库 ，实现 [MQTT 客户端](https://www.emqx.com/zh/blog/introduction-to-the-commonly-used-mqtt-client-library)与 [MQTT 服务器](https://www.emqx.io/zh)的连接、订阅、取消订阅、收发消息等功能。
 
 
 ## MQTT 客户端库选择
 
-本文选择了 composer 上下载量最高的 `php-mqtt/client` 这个客户端库，更多 PHP-MQTT 客户端库可以在 [ Packagist - Search MQTT](https://packagist.org/search/?query=mqtt) 中查看。
+本文选择了 composer 上下载量最高的 `php-mqtt/client` 这个客户端库，更多 PHP-MQTT 客户端库可以在 [Packagist - Search MQTT](https://packagist.org/search/?query=mqtt) 中查看。
 
 有关 php-mqtt/client 更多使用文档请参阅 [Packagist php-mqtt/client](https://packagist.org/packages/php-mqtt/client)。
 
-MQTT 通信属于 HTTP 体系之外的网络通信场景，由于 PHP 特性限制，使用 PHP 体系中的 Swoole/Workerman等专为网络通信打造的拓展可以带来更好的体验，其使用本文不再赘述，相关的 MQTT 客户端库如下：
+MQTT 通信属于 HTTP 体系之外的网络通信场景，由于 PHP 特性限制，使用 PHP 体系中的 Swoole/Workerman 等专为网络通信打造的拓展可以带来更好的体验，其使用本文不再赘述，相关的 MQTT 客户端库如下：
 
 - [workerman/mqtt](https://packagist.org/packages/workerman/mqtt)：Asynchronous MQTT client for PHP based on workerman.
 - [simps/mqtt](https://packagist.org/packages/simps/mqtt)：MQTT Protocol Analysis and Coroutine Client for PHP.
@@ -19,7 +19,7 @@ MQTT 通信属于 HTTP 体系之外的网络通信场景，由于 PHP 特性限�
 
 ### 确认 PHP 版本
 
-本项目使用 7.4.21  进行开发测试，读者可用如下命令确认 PHP 的版本。
+本项目使用 7.4.21 进行开发测试，读者可用如下命令确认 PHP 的版本。
 
 ```
 php --version
@@ -59,7 +59,7 @@ use \PhpMqtt\Client\MqttClient;
 
 #### 设置 MQTT Broker 连接参数
 
-设置 MQTT Broker 连接地址，端口以及 topic，同时我们调用 PHP  `rand` 函数随机生成 MQTT 客户端 id。
+设置 MQTT Broker 连接地址，端口以及 topic，同时我们调用 PHP `rand` 函数随机生成 MQTT 客户端 id。
 
 ```php
 $server   = 'broker-cn.emqx.io';
@@ -203,4 +203,4 @@ php pubsub_tcp.php
 
 ## 总结
 
-至此，我们完成了使用 **php-mqtt/client** 客户端连接到 [公共 MQTT 服务器](https://www.emqx.com/zh/mqtt/public-mqtt5-broker)，并实现了测试客户端与 MQTT 服务器的连接、消息发布和订阅。
+至此，我们完成了使用 **php-mqtt/client** 客户端连接到[公共 MQTT 服务器](https://www.emqx.com/zh/mqtt/public-mqtt5-broker)，并实现了测试客户端与 MQTT 服务器的连接、消息发布和订阅。
