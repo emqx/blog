@@ -53,7 +53,7 @@ vue create vue-mqtt-test
 
 ### 连接 MQTT 服务器
 
-本文将使用 EMQ X 提供的 [免费公共 MQTT 服务器](https://www.emqx.com/zh/mqtt/public-mqtt5-broker)，该服务基于 EMQ X 的 [MQTT 物联网云平台](https://cloud.emqx.io/) 创建。服务器接入信息如下：
+本文将使用 EMQ X 提供的 [免费公共 MQTT 服务器](https://www.emqx.com/zh/mqtt/public-mqtt5-broker)，该服务基于 EMQ X 的 [MQTT 物联网云平台](https://www.emqx.com/en/cloud) 创建。服务器接入信息如下：
 
 - Broker: **broker.emqx.io**
 - TCP Port: **1883**
@@ -219,5 +219,5 @@ destroyConnection() {
 
 综上所述，我们实现了在 Vue 项目中创建 MQTT 连接，模拟了客户端与 MQTT 服务器进行订阅、收发消息、取消订阅以及断开连接的场景。
 
-Vue 作为三大主流的前端框架之一，既能够在浏览器端使用，也能够在移动端使用，结合 MQTT 协议及 [MQTT  物联网云服务](https://cloud.emqx.cn/) 可以开发出很多有趣的应用，比如客服聊天系统或实时监控物联网设备信息的管理系统。
+Vue 作为三大主流的前端框架之一，既能够在浏览器端使用，也能够在移动端使用，结合 MQTT 协议及 [MQTT  物联网云服务](https://www.emqx.com/zh/cloud) 可以开发出很多有趣的应用，比如客服聊天系统或实时监控物联网设备信息的管理系统。
 

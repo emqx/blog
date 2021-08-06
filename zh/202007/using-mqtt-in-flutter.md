@@ -41,7 +41,7 @@ import 'package:mqtt_client/mqtt_client.dart';
 
 ### 连接 MQTT 服务器
 
-本文将使用 EMQ X 提供的 [免费公共 MQTT 服务器](https://www.emqx.com/zh/mqtt/public-mqtt5-broker)，该服务基于 EMQ X 的 [MQTT 物联网云平台](https://cloud.emqx.io) 创建。服务器接入信息如下：
+本文将使用 EMQ X 提供的 [免费公共 MQTT 服务器](https://www.emqx.com/zh/mqtt/public-mqtt5-broker)，该服务基于 EMQ X 的 [MQTT 物联网云平台](https://www.emqx.com/en/cloud) 创建。服务器接入信息如下：
 
 - Broker: **broker.emqx.io**
 - TCP Port: **1883**
@@ -200,5 +200,5 @@ client.disconnect();
 
 至此，我们完成了在 Android 平台上利用 Flutter 构建 MQTT 应用，实现了客户端与 MQTT 服务器的连接、订阅、取消订阅、收发消息等功能。
 
-Flutter 通过统一的开发语言和跨平台特性让开发强大的移动应用变得十分容易，它将来可能会是开发移动应用的最佳解决方案。结合 Flutter、MQTT 协议及 [MQTT 云服务](https://cloud.emqx.cn/)，我们可以开发更多有趣的应用。
+Flutter 通过统一的开发语言和跨平台特性让开发强大的移动应用变得十分容易，它将来可能会是开发移动应用的最佳解决方案。结合 Flutter、MQTT 协议及 [MQTT 云服务](https://www.emqx.com/zh/cloud)，我们可以开发更多有趣的应用。
 

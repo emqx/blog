@@ -12,7 +12,7 @@
 
 ## MQTT Broker 准备
 
-- 如果您没有本地部署的 MQTT Broker，那么可以使用由 [EMQ X Cloud](https://cloud.emqx.io) 提供的公共 MQTT 服务进行快速测试：
+- 如果您没有本地部署的 MQTT Broker，那么可以使用由 [EMQ X Cloud](https://www.emqx.com/en/cloud) 提供的公共 MQTT 服务进行快速测试：
 
 ```
 Broker 地址: broker.emqx.io

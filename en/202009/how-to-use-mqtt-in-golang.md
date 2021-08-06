@@ -27,7 +27,7 @@ go get github.com/eclipse/paho.mqtt.golang
 
 ## Use of Go MQTT
 
-This article will use the [free public MQTT broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker) provided by EMQ X. This service is based on the [MQTT IoT cloud platform](https://cloud.emqx.io/) of EMQ X to create. The access information of the server is as follows:
+This article will use the [free public MQTT broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker) provided by EMQ X. This service is based on the [MQTT IoT cloud platform](https://www.emqx.com/en/cloud) of EMQ X to create. The access information of the server is as follows:
 
 - Broker: **broker.emqx.io**
 - TCP Port: **1883**

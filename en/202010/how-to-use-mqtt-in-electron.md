@@ -107,7 +107,7 @@ In this case, the locally installed `MQTT.js` module cannot be loaded directly i
 
 ### Connect to the MQTT broker
 
-This article will use the [free public MQTT broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker) provided by EMQ X. This service was created based on the EMQ X [MQTT IoT cloud platform](https://cloud.emqx.io/). The information about broker access is as follows:
+This article will use the [free public MQTT broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker) provided by EMQ X. This service was created based on the EMQ X [MQTT IoT cloud platform](https://www.emqx.com/en/cloud). The information about broker access is as follows:
 
 - Broker: **broker.emqx.io**
 - TCP Port: **1883**

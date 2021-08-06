@@ -1,4 +1,4 @@
-In recent years, as people's demand for home security, convenience, comfort and artistry has increased, home automation has become more and more popular. [Home Assistant](https://www.home-assistant.io/), a popular open-source home automation platform, provides a secure and convenient central control system. In this article, we will introduce you to how to use [EMQ X Cloud MQTT Broker](https://cloud.emqx.io) to connect with Home Assistant.
+In recent years, as people's demand for home security, convenience, comfort and artistry has increased, home automation has become more and more popular. [Home Assistant](https://www.home-assistant.io/), a popular open-source home automation platform, provides a secure and convenient central control system. In this article, we will introduce you to how to use [EMQ X Cloud MQTT Broker](https://www.emqx.com/en/cloud) to connect with Home Assistant.
 
 ## What is MQTT Broker
 
@@ -6,7 +6,7 @@ MQTT is a lightweight, publish-subscribe network protocol that transports messag
 
 ## Why EMQ X Cloud?
 
-[EMQ X Cloud](https://cloud.emqx.io/) is an MQTT messaging middleware product for the IoT domain from EMQ. As the world's first fully managed MQTT 5.0 public cloud service, EMQ X Cloud provides a one-stop O&M colocation and a unique isolated environment for MQTT messaging services. It serves dozens of countries and regions around the world, providing low-cost, secure, and reliable cloud services for 5G and Internet of Everything applications. 
+[EMQ X Cloud](https://www.emqx.com/en/cloud) is an MQTT messaging middleware product for the IoT domain from EMQ. As the world's first fully managed MQTT 5.0 public cloud service, EMQ X Cloud provides a one-stop O&M colocation and a unique isolated environment for MQTT messaging services. It serves dozens of countries and regions around the world, providing low-cost, secure, and reliable cloud services for 5G and Internet of Everything applications. 
 
 EMQ X Cloud is available in three plans: Basic, Professional, and Unlimited, which offers a variety of flexible product specifications to support the deployment of fully managed MQTT services exclusively for you on the world's leading public clouds. Need more information with EMQ X Cloud's product plan? Click [here](https://docs.emqx.io/en/cloud/latest/pricing.html).
 
@@ -16,7 +16,7 @@ Such a powerful product is a great choice to integrate with Home Assistant. You 
 
 If it's your first time using EMQ X Cloud, don't worry. We will guide you through connecting Home Assistant with EMQ X Cloud.
 
-1. [Create](https://accounts.emqx.io/signup?continue=https://cloud.emqx.io/) a EMQ X Cloud Account.
+1. [Create](https://accounts.emqx.io/signup?continue=https://www.emqx.com/en/cloud) a EMQ X Cloud Account.
 
 2. Login to [EMQ X Cloud Console](https://cloud.emqx.io/console/) and start a new deployment.
 

@@ -129,7 +129,7 @@ This solution will use the following products except the products which used in 
 
 - IEF platform is a Huawei public cloud service that users can access and try directly.
 - [Kuiper](https://marketplace.huaweicloud.com/product/OFFI474477808879489024) is live on IEF and can be deployed, installed and maintained directly through the IEF platform (Readers can refer to the video「[Cloud edge collaboration for efficient IoT edge streaming service processing - Huawei IEF & EMQ X Kuiper lightweight edge data solution](https://www.bilibili.com/video/BV1hQ4y1A7Vy?from=search&seid=15773267177167801393)」to learn how to use Kuiper in IEF). Neuron and Edge are not currently available on IEF, but users can install them directly into edge nodes via Docker Hub, and the user can manage and control them from deploy Edge Manager in the cloud.
-- [EMQ X Enterprise](https://marketplace.huaweicloud.com/product/00301-511011-0--0) is now live in Huawei Cloud, and users can also use the [online MQTT cloud service](https://cloud.emqx.io/) provided by EMQ.
+- [EMQ X Enterprise](https://marketplace.huaweicloud.com/product/00301-511011-0--0) is now live in Huawei Cloud, and users can also use the [online MQTT cloud service](https://www.emqx.com/en/cloud) provided by EMQ.
 - Persistence or bridging methods of cloud-end data are available to the user, they can choose according to their needs. The related information on which can be found on the [EMQ website](https://www.emqx.com/en/products/emqx).
 
 

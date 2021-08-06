@@ -132,7 +132,7 @@ Considering support for [MQTT 5.0](https://www.emqx.com/en/mqtt/mqtt5), stabilit
 
 ### Public MQTT broker
 
-EMQ X [MQTT IoT cloud service](https://cloud.emqx.io/) provides an online public MQTT 5.0 broker.  You can quickly start learning, testing MQTT protocol or prototyping.
+EMQ X [MQTT IoT cloud service](https://www.emqx.com/en/cloud) provides an online public MQTT 5.0 broker.  You can quickly start learning, testing MQTT protocol or prototyping.
 
 For the detailed accessing information for this MQTT broker, please visit the EMQ website: [free public MQTT broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker).
 

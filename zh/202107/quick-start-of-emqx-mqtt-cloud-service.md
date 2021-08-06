@@ -1,4 +1,4 @@
-[EMQ X Cloud](https://cloud.emqx.cn/) 是 [EMQ 公司](https://www.emqx.com/zh/about)提供的一款全托管的物联网 [MQTT 5.0](https://www.emqx.com/zh/mqtt/mqtt5) 云服务产品。通过该产品，我们可以快速搭建出一个稳定可靠、功能完整、性能优异的 MQTT 5.0 物联网平台，帮助各类设备数据快速上云，进行后续的分析。
+[EMQ X Cloud](https://www.emqx.com/zh/cloud) 是 [EMQ 公司](https://www.emqx.com/zh/about)提供的一款全托管的物联网 [MQTT 5.0](https://www.emqx.com/zh/mqtt/mqtt5) 云服务产品。通过该产品，我们可以快速搭建出一个稳定可靠、功能完整、性能优异的 MQTT 5.0 物联网平台，帮助各类设备数据快速上云，进行后续的分析。
 
 在本教程中，我们将带您一步一步搭建一个物联网平台。在完成本教程后，您将了解:
 
@@ -14,7 +14,7 @@
 
 ## 第一步：创建 EMQ X Cloud 账号
 
-首先我们前往 [EMQ X Cloud](https://cloud.emqx.cn/)，点击 “开始免费试用” 按钮。根据页面提示信息，完成用户注册流程。
+首先我们前往 [EMQ X Cloud](https://www.emqx.com/zh/cloud)，点击 “开始免费试用” 按钮。根据页面提示信息，完成用户注册流程。
 
 
 

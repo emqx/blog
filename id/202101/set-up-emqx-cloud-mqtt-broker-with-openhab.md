@@ -1,7 +1,7 @@
 
 [OpenHab](https://www.openhab.org/) yang juga dikenal sebagai Home Automation Bus terbuka adalah sebuah software home automation open-source yang ditulis dengan Java. Dengan kemampuannya dalam berintegrasi dengan berbagai perangkat, user interface yang jelas, dan mendukung tool yang paling fleksibel sekalipun, openHab menjadi salah satu platform terbaik dalam hal home automation.
 
-Dengan tingkat fleksibilitas yang tinggi dan mudah dipakai, openHAB menyediakan sarana binding agar pengguna dapat mengkoneksikan [MQTT Broker](https://www.emqx.com/en/products/emqx). Dalam artikel ini, saya akan membimbing Anda dalam proses pengaturan [EMQ X Cloud MQTT Broker](https://cloud.emqx.io/) dengan openHAB.
+Dengan tingkat fleksibilitas yang tinggi dan mudah dipakai, openHAB menyediakan sarana binding agar pengguna dapat mengkoneksikan [MQTT Broker](https://www.emqx.com/en/products/emqx). Dalam artikel ini, saya akan membimbing Anda dalam proses pengaturan [EMQ X Cloud MQTT Broker](https://www.emqx.com/en/cloud) dengan openHAB.
 
 
 
@@ -13,7 +13,7 @@ MQTT, atau panjangnya Message Queuing Telemetry Transport, adalah protokol messa
 
 ## Apa Itu EMQ X Cloud MQTT?
 
-[EMQ X Cloud](https://cloud.emqx.io/) adalah sebuah produk MQTT perantara messaging untuk domain IoT dari EMQ. Sebagai servis public cloud MQTT 5.0 pertama di dunia yang sepenuhnya dikelola oleh EMQ, EMQ X Cloud menyediakan solusi O&M colocation komplit dan lingkungan unik terisolasi untuk servis MQTT messaging. EMQ X Cloud melayani banyak negara di seluruh dunia dan menyediakan layanan cloud yang terjangkau, aman dan dapat diandalkan untuk aplikasi-aplikasi 5G dan Internet of Everything.  
+[EMQ X Cloud](https://www.emqx.com/en/cloud) adalah sebuah produk MQTT perantara messaging untuk domain IoT dari EMQ. Sebagai servis public cloud MQTT 5.0 pertama di dunia yang sepenuhnya dikelola oleh EMQ, EMQ X Cloud menyediakan solusi O&M colocation komplit dan lingkungan unik terisolasi untuk servis MQTT messaging. EMQ X Cloud melayani banyak negara di seluruh dunia dan menyediakan layanan cloud yang terjangkau, aman dan dapat diandalkan untuk aplikasi-aplikasi 5G dan Internet of Everything.  
 
 EMQ X Cloud memiliki 3 jenis paket: Basic, Professional dan Unlimited. Ketiga paket ini menawarkan sejumlah spesifikasi produk yang fleksibel untuk mendukung deployment dari berbagai servis MQTT secara eksklusif untuk Anda dengan salah satu public cloud terkemuka di dunia. Tertarik untuk tau lebih lanjut tentang paket produk EMQ X Cloud? Klik [disini](https://docs.emqx.io/en/cloud/latest/pricing.html). 
 

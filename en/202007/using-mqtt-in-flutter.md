@@ -42,7 +42,7 @@ import 'package:mqtt_client/mqtt_client.dart';
 
 ### Connect to MQTT broker
 
-This article will use the [MQTT broker](https://www.emqx.com/en/products/emqx) which is operated and maintained by EMQ X Cloud. EMQ X Cloud is the [MQTT IoT cloud](https://cloud.emqx.io/) service platform released by [EMQ](https://www.emqx.com/en), it provides the service for accessing **MQTT 5.0** with all-in-one operation and maintenance and unique isolation environment.
+This article will use the [MQTT broker](https://www.emqx.com/en/products/emqx) which is operated and maintained by EMQ X Cloud. EMQ X Cloud is the [MQTT IoT cloud](https://www.emqx.com/en/cloud) service platform released by [EMQ](https://www.emqx.com/en), it provides the service for accessing **MQTT 5.0** with all-in-one operation and maintenance and unique isolation environment.
 
 - Broker: **broker.emqx.io**
 - TCP Port: **1883**
@@ -201,5 +201,5 @@ We can see the log of the whole process
 
 So far, we have finished that use Flutter to build MQTT applications in the Android platform, implemented the connection between the client and MQTT broker, subscribe, unsubscribe, publish and receive messages, etc.
 
-Flutter makes it easy that develop powerful mobile applications through unified programming language and the feature cross-platform. It may be the most proper solution for developing mobile applications in the future. Using Flutter, MQTT protocol and [MQTT cloud service](https://cloud.emqx.io/), we can develop more interesting applications.
+Flutter makes it easy that develop powerful mobile applications through unified programming language and the feature cross-platform. It may be the most proper solution for developing mobile applications in the future. Using Flutter, MQTT protocol and [MQTT cloud service](https://www.emqx.com/en/cloud), we can develop more interesting applications.
 

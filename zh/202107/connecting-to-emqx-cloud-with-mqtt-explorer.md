@@ -1,4 +1,4 @@
-本文将以 [MQTT Explorer](https://mqtt-explorer.com/) 作为 [MQTT 客户端](https://www.emqx.com/zh/blog/introduction-to-the-commonly-used-mqtt-client-library)测试工具，接入 [MQTT 云服务 - EMQ X Cloud](https://cloud.emqx.cn/)。通过本文，你将能快速了解 MQTT Explorer 的基础用法以及 MQTT 协议的基本概念与使用。
+本文将以 [MQTT Explorer](https://mqtt-explorer.com/) 作为 [MQTT 客户端](https://www.emqx.com/zh/blog/introduction-to-the-commonly-used-mqtt-client-library)测试工具，接入 [MQTT 云服务 - EMQ X Cloud](https://www.emqx.com/zh/cloud)。通过本文，你将能快速了解 MQTT Explorer 的基础用法以及 MQTT 协议的基本概念与使用。
 
 
 
@@ -18,7 +18,7 @@
 
 尤其是一些较好的特性有：
 
-- 自动订阅 $SYS 主题，方便查看 broker 状态信息
+- 自动订阅$SYS主题，方便查看 broker 状态信息
 - 按照树形结构组织订阅列表，方便用户查看其归属关系
 - 有消息可视化功能，直观、可交互的统计图表设计
 
@@ -32,7 +32,7 @@ MQTT Explorer 能够满足大部分开发的需求，但是也有一些缺点：
 
 ## EMQ X Cloud 简介
 
-[EMQ X Cloud](https://cloud.emqx.cn/) 是由 [EMQ](https://www.emqx.com/zh) 公司推出的可连接海量物联网设备，集成各类数据库及业务系统的全托管云原生 MQTT 服务。作为**全球首个全托管的** [**MQTT 5.0**](https://www.emqx.com/zh/mqtt/mqtt5) **公有云服务**，EMQ X Cloud 提供了一站式运维代管、独有隔离环境的 MQTT 消息服务。
+[EMQ X Cloud](https://www.emqx.com/zh/cloud) 是由 [EMQ](https://www.emqx.com/zh) 公司推出的可连接海量物联网设备，集成各类数据库及业务系统的全托管云原生 MQTT 服务。作为**全球首个全托管的** [**MQTT 5.0**](https://www.emqx.com/zh/mqtt/mqtt5) **公有云服务**，EMQ X Cloud 提供了一站式运维代管、独有隔离环境的 MQTT 消息服务。
 
 在万物互联的时代，EMQ X Cloud 可以帮助用户快速构建面向物联网领域的行业应用，轻松实现物联网数据的采集、传输、计算和持久化。
 
@@ -42,7 +42,7 @@ MQTT Explorer 能够满足大部分开发的需求，但是也有一些缺点：
 - TCP Port: **1883**
 - SSL/TLS Port: **8883**
 
-更多详情请访问 [EMQ X Cloud 官网](https://cloud.emqx.cn)，或查看 [EMQ X Cloud 文档](https://docs.emqx.cn/cloud/latest/)。 
+更多详情请访问 [EMQ X Cloud 官网](https://www.emqx.com/zh/cloud)，或查看 [EMQ X Cloud 文档](https://docs.emqx.cn/cloud/latest/)。 
 
 
 

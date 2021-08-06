@@ -79,7 +79,7 @@ The released resources and tutorial of use can be referred to as the following w
 
 #### Method 1: using EMQ X Cloud
 
-EMQ provides [EMQ X Cloud - a fully managed IoT MQTT cloud service](https://cloud.emqx.io/), on which users can create a highly available, exclusive instance EMQ X cluster in just a few minutes, and start prototyping and application development immediately without the need to pay attention to the subsequent operation and maintenance work. After the product goes live, the cluster can be expanded without downtime to cope with capacity expansion brought about by business growth, ensuring availability and maximizing cost savings.
+EMQ provides [EMQ X Cloud - a fully managed IoT MQTT cloud service](https://www.emqx.com/en/cloud), on which users can create a highly available, exclusive instance EMQ X cluster in just a few minutes, and start prototyping and application development immediately without the need to pay attention to the subsequent operation and maintenance work. After the product goes live, the cluster can be expanded without downtime to cope with capacity expansion brought about by business growth, ensuring availability and maximizing cost savings.
 
 EMQ X Cloud offers a 6-month free trial to newly registered users. After registering and logging in to create a trial deployment, click on **EMQ X Dashboard** in the deployment details to open the EMQ X Management Console.
 

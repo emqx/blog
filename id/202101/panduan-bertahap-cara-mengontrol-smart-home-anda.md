@@ -3,9 +3,9 @@
 
 Teknologi smart home, atau yang juga dikenal sebagai [home automation](https://internetofthingsagenda.techtarget.com/definition/smart-home-or-building) atau *domotics* (dari bahasa Latin "domus" yang berarti rumah), [memberikan si pemilik rumah keamanan](https://internetofthingsagenda.techtarget.com/blog/IoT-Agenda/Why-the-smart-home-needs-to-get-even-smarter), kenyamanan, kemudahan, dan menghemat energi dengan menggunakan perangkat cerdas, seringkali dengan aplikasi smart home di HP atau perangkat lainnya. Sebagai sebuah bagian dari [Internet of Things (IoT)](https://internetofthingsagenda.techtarget.com/definition/Internet-of-Things-IoT), sistem smart home dan perangkat lainnya bekerja sama untuk mendapatkan pemakaian data dan aksi mengotomatisasi lainnya berdasarkan preferensi si pengguna.
 
-Hari ini, Anda akan mempelajari cara menggunakan [EMQ X Cloud](https://cloud.emqx.io/) untuk mengatur dan mengontrol smart home Anda. Artikel ini akan memperlihatkan Anda betapa gampangnya cara men-set up perangkat-perangkat IoT yang kita gunakan sehari-hari, sensor, dan protokol komunikasi yang kemudian dapat Anda terapkan ke lingkungan yang lebih kompleks.
+Hari ini, Anda akan mempelajari cara menggunakan [EMQ X Cloud](https://www.emqx.com/en/cloud) untuk mengatur dan mengontrol smart home Anda. Artikel ini akan memperlihatkan Anda betapa gampangnya cara men-set up perangkat-perangkat IoT yang kita gunakan sehari-hari, sensor, dan protokol komunikasi yang kemudian dapat Anda terapkan ke lingkungan yang lebih kompleks.
 
-[![EMQ X Cloud](https://static.emqx.net/images/96bda4a0efbeb977474da57f1c0a8edf.png)](https://cloud.emqx.io/)
+[![EMQ X Cloud](https://static.emqx.net/images/96bda4a0efbeb977474da57f1c0a8edf.png)](https://www.emqx.com/en/cloud)
 
 
 
