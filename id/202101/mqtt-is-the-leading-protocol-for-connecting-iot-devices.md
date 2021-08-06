@@ -16,7 +16,7 @@ Sejak Internet of Things menjadi populer, MQTT juga melonjak. Broker MQTT open-s
 
 ## MQTT mengambil alih IoT
 
-MQTT adalah protokol terkemuka untuk menghubungkan perangkat IoT dan menggeser HTTP, andalan di dunia internet di tahun 2017. Terlebih lagi, MQTT telah dipilih protokol messaging untuk platform IoT seperti Amazon, Microsoft, IBM, dan produk open-source dan broker komersial lainnya. [EMQ X Cloud](https://cloud.emqx.io/)  tidak hanya menyediakan konektivitas aman dalam skala besar untuk perangkat MQTT, tapi juga pengelolaan perangkat, penyimpanan data, dan juga analitik data di Cloud. MQTT juga telah teruji skalabilitasnya dengan menjadi protokol messaging di balik Facebook Messenger.
+MQTT adalah protokol terkemuka untuk menghubungkan perangkat IoT dan menggeser HTTP, andalan di dunia internet di tahun 2017. Terlebih lagi, MQTT telah dipilih protokol messaging untuk platform IoT seperti Amazon, Microsoft, IBM, dan produk open-source dan broker komersial lainnya. [EMQ X Cloud](https://www.emqx.com/en/cloud)  tidak hanya menyediakan konektivitas aman dalam skala besar untuk perangkat MQTT, tapi juga pengelolaan perangkat, penyimpanan data, dan juga analitik data di Cloud. MQTT juga telah teruji skalabilitasnya dengan menjadi protokol messaging di balik Facebook Messenger.
 
 
 

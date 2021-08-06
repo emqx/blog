@@ -53,7 +53,7 @@ vue create vue-mqtt-test
 
 ### Connect to the MQTT broker
 
-This article will use the [free public MQTT broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker) provided by EMQ X. This service was created based on the EMQ X [MQTT IoT cloud platform](https://cloud.emqx.io/). The information about broker access is as follows:
+This article will use the [free public MQTT broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker) provided by EMQ X. This service was created based on the EMQ X [MQTT IoT cloud platform](https://www.emqx.com/en/cloud). The information about broker access is as follows:
 
 - Broker: **broker.emqx.io**
 - TCP Port: **1883**
@@ -219,4 +219,4 @@ If you unsubscribe on the browser-side, before MQTT X sends the second message, 
 
 In summary, we have implemented the creation of an MQTT connection in a Vue project, simulated subscribing, sending and receiving messages, unsubscribing, and disconnecting between the client and MQTT broker.
 
-As one of the most three popular front-end frames, Vue can be used on the browser-side, and can also be used on the mobile-side. Combining the MQTT protocol and [MQTT IoT cloud service](https://cloud.emqx.io/), can develop many interesting applications, for example, a customer service chat system or a management system that monitors IoT device information in real-time.
+As one of the most three popular front-end frames, Vue can be used on the browser-side, and can also be used on the mobile-side. Combining the MQTT protocol and [MQTT IoT cloud service](https://www.emqx.com/en/cloud), can develop many interesting applications, for example, a customer service chat system or a management system that monitors IoT device information in real-time.

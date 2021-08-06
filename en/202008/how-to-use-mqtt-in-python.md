@@ -34,7 +34,7 @@ pip3 install paho-mqtt
 
 ### Connect to the MQTT broker
 
-This article will use [the free public MQTT broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker) provided by EMQ X. This service is based on [MQTT IoT cloud platform](https://cloud.emqx.io/) to create. The accessing information of the broker is as follows:
+This article will use [the free public MQTT broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker) provided by EMQ X. This service is based on [MQTT IoT cloud platform](https://www.emqx.com/en/cloud) to create. The accessing information of the broker is as follows:
 
 - Broker: **broker.emqx.io**
 - TCP Port: **1883**

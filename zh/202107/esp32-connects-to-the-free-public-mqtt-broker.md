@@ -2,7 +2,7 @@
 
 [ESP32](https://www.espressif.com/zh-hans/products/socs/esp32)  是 ESP8266 的升级版本，除了Wi-Fi模块，该模块还包含蓝牙4.0模块。双核CPU工作频率为80至240 MHz，包含两个Wi-Fi和蓝牙模块以及各种输入和输出引脚， ESP32 是物联网项目的理想选择。
 
-在此项目中我们将实现 ESP32 连接到 EMQ X [MQTT Cloud](https://cloud.emqx.cn) 运营和维护的 [免费公共 MQTT 服务器](https://www.emqx.com/zh/mqtt/public-mqtt5-broker)，并使用 Arduino IDE 来对 ESP32 进行编程。 EMQ X Cloud 是由 [EMQ](https://www.emqx.com/zh) 推出的安全的 MQTT 物联网云服务平台，它提供一站式运维代管、独有隔离环境的 [MQTT 5.0](https://www.emqx.com/zh/mqtt/mqtt5) 接入服务。
+在此项目中我们将实现 ESP32 连接到 EMQ X [MQTT Cloud](https://www.emqx.com/zh/cloud) 运营和维护的 [免费公共 MQTT 服务器](https://www.emqx.com/zh/mqtt/public-mqtt5-broker)，并使用 Arduino IDE 来对 ESP32 进行编程。 EMQ X Cloud 是由 [EMQ](https://www.emqx.com/zh) 推出的安全的 MQTT 物联网云服务平台，它提供一站式运维代管、独有隔离环境的 [MQTT 5.0](https://www.emqx.com/zh/mqtt/mqtt5) 接入服务。
 
 
 ## 所需物联网组件
@@ -10,7 +10,7 @@
 * ESP32
 * Arduino IDE
 * [MQTT 5.0 客户端工具 - MQTT X](https://mqttx.app/zh)
-* 部署在 [EMQ X Cloud](https://cloud.emqx.cn) 上的免费的公共 [MQTT 服务器](https://www.emqx.io/zh)
+* 部署在 [EMQ X Cloud](https://www.emqx.com/zh/cloud) 上的免费的公共 [MQTT 服务器](https://www.emqx.io/zh)
   - Broker: **broker-cn.emqx.io**
   - TCP Port: **1883**
   - Websocket Port: **8083**
@@ -199,6 +199,6 @@ void loop() {
 
 ## 总结
 
-至此，我们已成功使 ESP32 连接到 [EMQ X Cloud](https://cloud.emqx.cn) 提供的公共 MQTT 服务器。 在本项目中我们简单的将 ESP32 连接到 MQTT 服务器，这只是 ESP32 较为基础的能力之一，ESP32 其实还能与各类物联网传感器相连，并将传感器数据上报至 MQTT 服务器。
+至此，我们已成功使 ESP32 连接到 [EMQ X Cloud](https://www.emqx.com/zh/cloud) 提供的公共 MQTT 服务器。 在本项目中我们简单的将 ESP32 连接到 MQTT 服务器，这只是 ESP32 较为基础的能力之一，ESP32 其实还能与各类物联网传感器相连，并将传感器数据上报至 MQTT 服务器。
 
 接下来我们将会陆续发布更多关于物联网开发及 ESP32 的相关文章，敬请关注。

@@ -1,4 +1,4 @@
-[EMQ X Cloud](https://cloud.emqx.io) is a fully managed IoT [MQTT 5.0](https://www.emqx.com/en/mqtt/mqtt5) cloud service product provided by [EMQ](https://www.emqx.com/en). Through this product, we can quickly build a stable and reliable MQTT 5.0 IoT platform with complete functions and excellent performance to help upload all kinds of device data quickly to the cloud for subsequent analysis.
+[EMQ X Cloud](https://www.emqx.com/en/cloud) is a fully managed IoT [MQTT 5.0](https://www.emqx.com/en/mqtt/mqtt5) cloud service product provided by [EMQ](https://www.emqx.com/en). Through this product, we can quickly build a stable and reliable MQTT 5.0 IoT platform with complete functions and excellent performance to help upload all kinds of device data quickly to the cloud for subsequent analysis.
 
 In this tutorial, we will teach you step by step to build an IoT platform. After completing this tutorial, you will know:
 
@@ -9,7 +9,7 @@ In this tutorial, we will teach you step by step to build an IoT platform. After
 
 ## Step 1: Create an EMQ X Cloud account
 
-First, we go to the home page of the [EMQ X Cloud](https://cloud.emqx.io/) and click the "Start Free Trial" button.
+First, we go to the home page of the [EMQ X Cloud](https://www.emqx.com/en/cloud) and click the "Start Free Trial" button.
 
 Then, complete the user registration process according to the prompt information on the page.
 

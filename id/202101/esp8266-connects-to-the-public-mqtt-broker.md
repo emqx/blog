@@ -2,7 +2,7 @@
 
 [ESP8266](https://www.espressif.com/) menyediakan solusi SoC Wi-Fi yang sangat terintegrasi dengan desainnya yang kompak, hemat tenaga, dan stabilitas yang tinggi. ESP8266 memiliki fungsi jaringan Wi-Fi mandiri dan lengkap yang dapat diaplikasikan secara independen atau dapat dipakai sebagai slave di host MCU lainnya.
 
-Dalam projek ini, kita akan mengkoneksikan ESP8266 ke [MQTT broker publik gratis](https://www.emqx.com/en/mqtt/public-mqtt5-broker) yang dioperasikan oleh [EMQ X MQTT Cloud](https://cloud.emqx.io/) dan memprogram ESP8266 dengan Arduino IDE.
+Dalam projek ini, kita akan mengkoneksikan ESP8266 ke [MQTT broker publik gratis](https://www.emqx.com/en/mqtt/public-mqtt5-broker) yang dioperasikan oleh [EMQ X MQTT Cloud](https://www.emqx.com/en/cloud) dan memprogram ESP8266 dengan Arduino IDE.
 
 EMQ X Cloud adalah sebuah platform servis cloud MQTT IoT aman yang diluncurkan oleh [EMQ](https://www.emqx.com/en). EMQ X Cloud menyediakan operasi lengkap, membantu perawatan dan servis akses [MQTT 5.0](https://www.emqx.com/en/mqtt/mqtt5) dengan lingkungan unik yang terisolasi.
 

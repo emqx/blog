@@ -53,7 +53,7 @@ At this time, you can copy this code into the code edit box on the script page, 
 
 ![mqttxhumtemp.png](https://static.emqx.net/images/e8c56a968c89ae76bb6fb684ca73027b.png)
 
-We use the [Free public MQTT broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker) provided by the EMQ X to create a new connection. This service is created based on EMQ X's [MQTT IoT cloud platform](https://cloud.emqx.io/). The broker access information is as follows:
+We use the [Free public MQTT broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker) provided by the EMQ X to create a new connection. This service is created based on EMQ X's [MQTT IoT cloud platform](https://www.emqx.com/en/cloud). The broker access information is as follows:
 
 - Broker: **broker.emqx.io**
 - TCP Port: **1883**

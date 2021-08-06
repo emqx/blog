@@ -1,4 +1,4 @@
-自 2020 年 5 月发布以来，[EMQ X Cloud](https://cloud.emqx.cn/) 陆续提供了华为云、阿里云、AWS 等公有云平台部署支持，帮助用户自由选择在不同云平台上部署 MQTT 服务，以简单、可靠和可扩展的方式轻松开展他们的物联网项目。
+自 2020 年 5 月发布以来，[EMQ X Cloud](https://www.emqx.com/zh/cloud) 陆续提供了华为云、阿里云、AWS 等公有云平台部署支持，帮助用户自由选择在不同云平台上部署 MQTT 服务，以简单、可靠和可扩展的方式轻松开展他们的物联网项目。
 
 随着用户量不断扩增，我们也在不断完善 EMQ X Cloud 所提供的功能及服务支持，以满足更多用户的需求。在云平台部署支持方面，继华为云、阿里云、AWS 后，我们近日正式完成了对腾讯云平台的部署支持，未来 EMQ X Cloud 将帮助用户更大程度地避免供应商锁定风险。
 
@@ -33,4 +33,4 @@
 
 为了向之前由于 **EMQ X Cloud** 尚未支持腾讯云部署而暂缓了测试计划的朋友们致歉，我们也提供了一定额度的充值优惠，如有需要欢迎发送邮件至 [cloud-support@emqx.io](mailto:cloud-support@emqx.io) ，我们的团队将为您提供一对一的咨询服务。
 
-想要进一步了解和体验 EMQ X Cloud 产品，可访问 [EMQ X Cloud](https://cloud.emqx.cn/) 网站获取更多信息。
+想要进一步了解和体验 EMQ X Cloud 产品，可访问 [EMQ X Cloud](https://www.emqx.com/zh/cloud) 网站获取更多信息。

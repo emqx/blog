@@ -10,7 +10,7 @@ If there is a network problem resulting in a slow network speed or a jam in the 
 
 ## MQTT Broker Preparation
 
-- If you don't have an MQTT broker deployed locally, you can use the public MQTT service provided by [EMQ X Cloud](https://cloud.emqx.io)  for quick testing:
+- If you don't have an MQTT broker deployed locally, you can use the public MQTT service provided by [EMQ X Cloud](https://www.emqx.com/en/cloud)  for quick testing:
 
 ```
 Broker Address: broker.emqx.io

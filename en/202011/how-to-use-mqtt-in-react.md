@@ -73,7 +73,7 @@ As React is a JavaScript library, it is possible to use MQTT.js as the MQTT clie
 
 ### Connect the MQTT broker
 
-This article will use [the free public MQTT broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker) which is provided by EMQ X. This service is based on EMQ X's [MQTT IoT cloud platform](https://cloud.emqx.io/) to create. The server access information is as follows.
+This article will use [the free public MQTT broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker) which is provided by EMQ X. This service is based on EMQ X's [MQTT IoT cloud platform](https://www.emqx.com/en/cloud) to create. The server access information is as follows.
 
 - Broker: **broker.emqx.io**
 - TCP Port: **1883**

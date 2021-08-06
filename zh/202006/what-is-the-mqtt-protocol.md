@@ -132,7 +132,7 @@ MQTT 设计了遗愿(Last Will) 消息，让 Broker 在发现设备异常下线�
 
 ### MQTT 在线服务器
 
-EMQ X [MQTT 物联网云服务](https://cloud.emqx.cn/) 提供了一个在线的公共 MQTT 5.0 服务器，不需要任何安装您就可以快速开始 MQTT 协议的学习、测试或原型制作。
+EMQ X [MQTT 物联网云服务](https://www.emqx.com/zh/cloud) 提供了一个在线的公共 MQTT 5.0 服务器，不需要任何安装您就可以快速开始 MQTT 协议的学习、测试或原型制作。
 
 该 MQTT 服务器的详细接入信息请见 EMQ 官网页面：[免费的在线 MQTT 服务器](https://www.emqx.com/zh/mqtt/public-mqtt5-broker)。
 
