@@ -36,7 +36,7 @@ The first two challenges can be well addressed by putting a load balancer in fro
 ![MQTT load balancing](https://static.emqx.net/images/017284bd21723e22993d75f2305jjsjajs.png)
 
 <p align="center">MQTT load balancing</p>
- 
+
 
 To meet the above challenges, a load balancer should be able to help clients to decide which broker to connect based on configured balancing strategies. The primary functions of a load balancer for MQTT broker cluster are:
 
@@ -53,3 +53,8 @@ NGINX Plus is an application delivery platform built on NGINX, an open-source we
 Equally excellent as NGINX, HAProxy is a free, open source software that provides a high availability load balancer and proxy server for TCP and HTTP-based applications, (and now MQTT too). As of August 2021, HAProxy is the only free load-balancer which has MQTT protocol awareness. There is a brief introduction to the feature in their [release note](https://www.haproxy.com/blog/announcing-haproxy-2-4/). 
 
 In the next post of “MQTT broker clustering” series, we will use HAProxy 2.4 + EMQ X 4.3 to demonstrate a full provisioning in more details.
+
+## Other articles in this series
+
+- [MQTT broker clustering part 2: Sticky session load balancing](https://www.emqx.com/en/blog/mqtt-broker-clustering-part-2-sticky-session-load-balancing)
+
