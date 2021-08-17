@@ -230,7 +230,7 @@ $ kubectl create secret generic your-license-secret-name --from-file=/path/to/em
 Then, specify the repo as `emqx/emqx-ee`,` emqxLicneseSecretName=your-license-secret-name` during deployment, and other settings are consistent with the deployment of EMQ X cluster
 
 ```
-$ helm install my-emqx-ee emqx/emqx-ee emqxLicneseSecretName=your-license-secret-name
+$ helm install my-emqx-ee emqx/emqx-ee --set emqxLicneseSecretName=your-license-secret-name
 ```
 
 ## EMQ X Helm Chart Configuration Item
