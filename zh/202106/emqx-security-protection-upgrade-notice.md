@@ -16,7 +16,7 @@
 
 - Github：[https://github.com/emqx/emqx](https://github.com/emqx/emqx)
 
-- EMQ 问答社区：[https://askemq.com](https://github.com/emqx/emqx)
+- EMQ 问答社区：[https://askemq.com](https://askemq.com)
 
 产品质量与安全是 EMQ 一直以来关注的重中之重。我们将继续加大投入，为用户创造一个安全可靠的系统环境，使每一个用户都能在 EMQ X 的支持下走向成功。
 
