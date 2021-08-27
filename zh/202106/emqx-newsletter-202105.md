@@ -1,4 +1,4 @@
-##  v4.3 已发布！
+## v4.3 已发布！
 
 这个五月，我们很高兴地宣布了 **[EMQ X broker v4.3 的发布](https://www.emqx.com/zh/blog/emqx-4-3-0-release-notes)**。从社区收到的大量反馈证明了我们的努力是值得的。更多详情请前往 GitHub 查看发布说明：[https://github.com/emqx/emqx/discussions/4763](https://github.com/emqx/emqx/discussions/4763)。
 
