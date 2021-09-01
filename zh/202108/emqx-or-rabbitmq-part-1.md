@@ -71,4 +71,5 @@ RabbitMQ 是实现了高级消息队列协议（AMQP）的开源消息代理软�
 但是从「一对多」的结果来看，RabbitMQ 相比于 EMQ X 确实有很明显的差距。
 
 ![一对多测试结果.png](https://static.emqx.net/images/f6a014f85691501ce2f5679a7410fc42.png)
-造成这种差距的原因是什么？我们将在下篇内容中详细解析具体原因。
+
+造成这种差距的原因是什么？我们将在《[EMQ X 与 RabbitMQ 消息服务器 MQTT 性能对比（下](https://www.emqx.com/zh/blog/emqx-or-rabbitmq-part-2)》中详细解析具体原因。
