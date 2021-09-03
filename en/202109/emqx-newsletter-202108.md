@@ -1,4 +1,4 @@
-In August, the open source teams are mostly keeping the focus on EMQ X 5.0 feature developments. A lot of heat in discussions, a lot of fast iterations. EMQ X 5.0 has reached alpha.5 release. And we expect the **first** beta release to come soon.
+In August, the open source team continually focused on EMQ X 5.0 feature developments. A lot of heat in discussions, a lot of fast iterations. EMQ X 5.0 has reached alpha.5 release. And we expect the **first** beta release to come soon.
 
 ## A quick glance at EMQ X 5.0 management UI
 
