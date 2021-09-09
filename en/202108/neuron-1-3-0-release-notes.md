@@ -1,5 +1,3 @@
-# Neuron v1.3.0 is officially released with one-stop access to industrial data
-
 As an important part of the [EMQ](https://www.emqx.com/en) industrial Internet cloud-edge collaboration solution, [IoT Edge Industrial Protocol Gateway Software - Neuron](https://www.emqx.com/en/products/neuron) has provided many users in the industrial field with the necessary functions for the industrial equipment data collection on the edge side since its releases, such as industrial protocol conversion and access, and equipment remote monitoring and management.
 
 Neuron supports the access and conversion of dozens of industrial equipment protocols including Modbus, OPCUA, Mitsubishi, Siemens, Rock Automation, OMRON, etc., without the need for a container framework. It has ultra-low resource consumption and supports X86 and ARM architectures. It is an ideal choice for building an industrial IoT platform.
