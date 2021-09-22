@@ -304,7 +304,7 @@ EMQ X 团队是 EMQ 的核心产品研发团队，专注于 EMQ X 物联网消�
 • 对函数式编程有一定的了解和兴趣。
 
 
-**投递简历请访问 [EMQ 招聘岗位列表](https://careers.emqx.cn/alljobs/)**
+**投递简历请访问 [EMQ 招聘岗位列表](https://careers.emqx.com/zh/alljobs)**
 
 
 

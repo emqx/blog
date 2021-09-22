@@ -312,4 +312,4 @@ IoT 边缘计算这一行业包含了很长的产业链条和不同领域碎片�
 
 
 
-**投递简历请访问 [EMQ 招聘岗位列表](https://careers.emqx.cn/alljobs/)**
+**投递简历请访问 [EMQ 招聘岗位列表](https://careers.emqx.com/zh/alljobs)**
