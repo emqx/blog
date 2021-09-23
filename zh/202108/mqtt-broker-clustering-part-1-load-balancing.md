@@ -58,3 +58,9 @@ Nginx Plus 是在 Nginx（一个开源的 Web 服务器，适用于高流量网�
 同样优秀的，还有 HAProxy。它提供高可用性负载均衡，以及基于 TCP、HTTP 和 MQTT 的应用程序代理。到目前为止（2021 年 8月），HAProxy 2.4 是唯一一款可以提供 MQTT 层负载均衡的免费产品。在他们的 [release note](https://www.haproxy.com/blog/announcing-haproxy-2-4/) 中，对 MQTT 负载均衡的功能作了简单的介绍。
 
 在 “MQTT Broker 集群详解”系列的下一篇文章中，我们将对 HAProxy 2.4 + EMQ X 4.3 的集成方案进行详细展开，敬请期待。
+
+
+
+## 本系列中的其它文章
+
+- [MQTT Broker 集群详解（二）：粘性会话负载均衡](https://www.emqx.com/zh/blog/mqtt-broker-clustering-part-2-sticky-session-load-balancing)
