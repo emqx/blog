@@ -57,4 +57,4 @@ In the next post of “MQTT broker clustering” series, we will use HAProxy 2.4
 ## Other articles in this series
 
 - [MQTT broker clustering part 2: Sticky session load balancing](https://www.emqx.com/en/blog/mqtt-broker-clustering-part-2-sticky-session-load-balancing)
-
+- [MQTT broker clustering part 3: Challenges and Solutions of EMQ X horizontal scalability](https://www.emqx.com/en/blog/mqtt-broker-clustering-part-3-challenges-and-solutions-of-emqx-horizontal-scalability)

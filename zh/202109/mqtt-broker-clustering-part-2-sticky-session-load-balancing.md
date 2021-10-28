@@ -203,3 +203,4 @@ show table emqx_tcp_back" | sudo socat stdio tcp4-connect:127.0.0.1:9999
 ## 本系列中的其它文章
 
 - [MQTT Broker 集群详解（一）：负载均衡](https://www.emqx.com/zh/blog/mqtt-broker-clustering-part-1-load-balancing)
+- [MQTT Broker 集群详解（三）：有关 EMQ X 水平可扩展性的挑战与对策](https://www.emqx.com/zh/blog/mqtt-broker-clustering-part-3-challenges-and-solutions-of-emqx-horizontal-scalability)
