@@ -64,3 +64,4 @@ Nginx Plus 是在 Nginx（一个开源的 Web 服务器，适用于高流量网�
 ## 本系列中的其它文章
 
 - [MQTT Broker 集群详解（二）：粘性会话负载均衡](https://www.emqx.com/zh/blog/mqtt-broker-clustering-part-2-sticky-session-load-balancing)
+- [MQTT Broker 集群详解（三）：有关 EMQ X 水平可扩展性的挑战与对策](https://www.emqx.com/zh/blog/mqtt-broker-clustering-part-3-challenges-and-solutions-of-emqx-horizontal-scalability)

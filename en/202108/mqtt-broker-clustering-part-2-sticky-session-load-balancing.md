@@ -187,4 +187,4 @@ In this example, the client `subscriber1` is sticked to server `emqx2`.
 ## Other articles in this series
 
 - [MQTT broker clustering part 1: Load balancing](https://www.emqx.com/en/blog/mqtt-broker-clustering-part-1-load-balancing)
-
+- [MQTT broker clustering part 3: Challenges and Solutions of EMQ X horizontal scalability](https://www.emqx.com/en/blog/mqtt-broker-clustering-part-3-challenges-and-solutions-of-emqx-horizontal-scalability)
