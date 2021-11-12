@@ -26,7 +26,7 @@ options.setSocketFactory(sslSocketFactory);
 
 ### 单向认证
 
-单向认证是指服务端认证客户端，以下是核心代码
+单向认证是指客户端认证服务端，以下是核心代码
 
 ```java
  public static SSLSocketFactory getSingleSocketFactory(InputStream caCrtFileInputStream) throws Exception {
@@ -114,7 +114,7 @@ public static SSLSocketFactory getSocketFactory(InputStream caCrtFile, InputStre
     }
 ```
 
-我们需要准备好服务端证书，客户端证书和秘钥放到 `res/raw` 下，然后调用，注意密码设为空字符串
+我们需要准备好ca证书，客户端证书和秘钥放到 `res/raw` 下，然后调用，注意密码设为空字符串
 
 ```java
 try {
