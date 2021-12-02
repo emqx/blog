@@ -1,5 +1,3 @@
-
-
 [EMQ X Kuiper](https://docs.emqx.io/en/kuiper/latest/) 是一款边缘轻量级物联网数据分析/流软件，可在各种资源受限的物联网设备上运行。
 
 [TensorFlow Lite](https://www.tensorflow.org/lite/guide) 是一组帮助开发人员在移动端、嵌入式和物联网设备上运行 TensorFlow 模型的工具，它使得设备上的机器学习预测具有低延迟和较小的二进制容量。
@@ -230,4 +228,3 @@ time="2021-02-05 16:23:30" level=info msg="sink result for rule ruleTf: [{\"labe
 ## 结论
 
 通过本篇教程，您可以构建自定义的 Kuiper 插件，以使用预先训练好的 TensorFlow Lite 模型。如果需要使用其他模型，则只需按照规定步骤创建另一个函数即可。请注意，如果在同一环境中运行，构建的 TensorFlow C API 可以在所有函数之间共享。希望本文能帮助您更好地在边缘计算中利用 AI，让 AI 为您的边缘设备赋能。
-

@@ -1,5 +1,3 @@
-
-
 EMQ X 在支持客户的过程中，了解到有客户使用 Nginx 做负载均衡，Docker 容器手动加入集群的方式运行 EMQ 集群，现将主要过程记录下来。
 
 ## 业务需求
@@ -390,8 +388,3 @@ EMQ 将集群信息储存在`data/mnesia`中，将容器的中的目录映射到
 - kubernetes 的`deployment`可以监控`emqx pod`的状态，实现自动重启、弹性扩容等功能。
 - 每个`emqx pod`都有独立的虚拟 IP，不会出现端口冲突的问题。
 - kubernetes 的`Service`可以实现固定 IP 和负载均衡的需求，在 `Service` 创建的请求中，可以通过设置 `spec.clusterIP` 字段来指定自己的集群 IP 地址，将 Nginx 的代理 server 设置成`clusterIP`即可，`Service`可自行实现负载均衡。
-
-
-
-
-

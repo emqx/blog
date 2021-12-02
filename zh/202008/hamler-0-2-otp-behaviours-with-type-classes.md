@@ -1,5 +1,3 @@
-
-
 我们在这里很高兴地和大家分享 Hamler 0.2 版本发布的消息！
 
 Hamler 是一门构建在 [Erlang](https://www.erlang.org/) 虚拟机(VM)上的 [Haskell](https://www.haskell.org/) 风格的强类型(Strongly-typed)编程语言，独特地结合了编译时的类型检查推导，与对运行时高并发和软实时能力的支持。

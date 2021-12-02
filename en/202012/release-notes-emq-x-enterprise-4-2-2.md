@@ -1,4 +1,3 @@
-
 EMQ X Enterprise IoT MQTT messaging platform supports one-stop access for millions of IoT devices, MQTT & CoAP multi-protocol processing and low latency real-time message communication. It supports a built-in SQL-based rules engine, flexible processing/forwarding of messages to back-end services, storage of message data to various databases, or bridging to enterprise middleware such as Kafka and RabbitMQ.
 
 EMQ X Enterprise is suitable for various IoT application scenarios, and helps enterprises to build IoT applications quickly and supports arbitrary deployment of public cloud, private cloud, physical machine and container/K8S.
@@ -99,7 +98,3 @@ HTTP authentication enables more complex authentication logic than database auth
 ### Contacts
 
 If you have any questions about EMQ X Enterprise, please feel free to contact us at [contact@emqx.io](mailto:contact@emqx.io).
-
-
-
-

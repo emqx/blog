@@ -1,5 +1,3 @@
-
-
 Date: 2020/6/1
 
 The Kuiper team would like to announce the release of Kuiper 0.4.1. 
@@ -40,4 +38,3 @@ Kuiper 0.4.1 version fixed some problems reported from community.
 ## Contact
 
 If having any problems for Kuiper, feel free to contact us through [contact@emqx.io](mailto:contact@emqx.io)
-

@@ -280,4 +280,3 @@ The interface and interaction of MQTT WebSocket Toolkit still use the design and
 **Online address:** [MQTT WebSocket Toolkit](http://tools.emqx.io/)
 
 **Project address:** [MQTT WebSocket Toolkit GitHub](https://github.com/emqx/MQTT-Web-Toolkit)
-

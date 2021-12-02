@@ -147,4 +147,3 @@ EMQ also provides the [MQTT online client tool](https://www.emqx.com/en/mqtt/mqt
 [^3]: https://github.com/mqtt/mqtt.github.io/wiki/history
 [^4]: https://www.cnblogs.com/softidea/p/5764051.html
 [^5]: https://pragprog.com/articles/erlang
-

@@ -168,4 +168,3 @@ Then check PostgreSQL to see if the new data point was added successfully:
 ![image20190725145107685.png](https://static.emqx.net/images/84514d56fd8c388e713bc7dba245412a.png)
 
 So far, we have used the rule engine to implement business development to store messages to a PostgreSQL database.
-

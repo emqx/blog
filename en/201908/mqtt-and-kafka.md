@@ -1,5 +1,3 @@
-
-
 MQTT is completely different from Kafka. MQTT is a protocol and a technical standard developed by members (mostly are top engineers at IBM and Microsoft) of the OASIS Technical Committee. Kafka is an open source streaming platform that has been implemented. It was firstly developed by LinkedIn. After incubated by Apache Incubator in 2011 after opening source, it has became the top project of the Apache Software Foundation.
 
 The only existing connection between the two is that they are both related to the publish/subscribe pattern. MQTT is a messaging protocol based on the publish/subscribe pattern, while the production and consumption processes of Apache Kafka are also part of the publish/subscribe pattern. So if we implement a message broker based on the MQTT protocol, is this MQTT broker equivalent to Kafka? The answer is still no!
@@ -18,4 +16,3 @@ The MQTT protocol perfectly addresses the above requirements, and the latest ver
 In terms of the difference between mqtt-based message broker and Kafka,  Mr. EMQ believes that t it lies in their different focuses. Kafka focuses on the storage and reading of data, aiming at streaming data processing scenarios with high real-time performance, while MQTT broker focuses on communication between client and server.
 
 The message exchange pattern adopted by MQTT broker and Kafka is so similar that it is obviously a good idea to combine them. In fact, some MQTT brokers, such as **EMQ X**, have already implemented the bridging of MQTT broker and Kafka. MQTT broker is used to quickly receive and process messages from a large number of  IoT devices, and Kafka collects and stores these large amounts of data and sends them to data analysts to analyze and process messages.
-

@@ -1,5 +1,3 @@
-
-
 ## MQTT v3.1.1 
 
 MQTT v3.1.1 协议只有 10 种返回码，这些返回码所能表示的含义很少，且相同的返回码的值在不同的报文中可以有不同的含义。
@@ -89,4 +87,3 @@ MQTT v5.0 协议将返回码改名成了原因码，增加了用于表示更多�
 
 
 CONNACK, PUBACK, PUBREC, PUBREL, PUBCOMP, DISCONNECT 和 AUTH 控制报文的原因码存在可变报头中。而 SUBACK 和 UNSUBACK 报文在有效载荷中包含了一张原因码的列表。
-

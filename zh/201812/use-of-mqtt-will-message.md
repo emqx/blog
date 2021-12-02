@@ -1,6 +1,3 @@
-
-
-
 ## 简介
 
 当客户端断开连接时，发送给相关的订阅者的遗嘱消息。以下情况下会发送 Will Message：
@@ -62,7 +59,3 @@
 1. 客户端 A 遗嘱消息设定为”offline“，该遗嘱主题与一个普通发送状态的主题设定成同一个 `A/status`；
 2. 当客户端 A 连接时，向主题 `A/status` 发送 “online” 的 Retained 消息，其它客户端订阅主题 `A/status`的时候，获取 Retained 消息为 “online” ；
 3. 当客户端 A 异常断开时，系统自动向主题 `A/status` 发送”offline“的消息，其它订阅了此主题的客户端会马上收到”offline“消息；如果遗嘱消息被设定了 Retained 的话，这时有新的订阅`A/status`主题的客户端上线的时候，获取到的消息为“offline”。
-
-
-
-

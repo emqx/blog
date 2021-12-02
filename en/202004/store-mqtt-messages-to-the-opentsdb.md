@@ -1,4 +1,3 @@
-
 OpenTSDB is an extensible distributed time series database, whose bottom layer relies on HBase and makes full use of the distributed column storage feature of HBase to support millions of reads and writes per second.
 
 Facing large-scale rapid growth of loT sensor acquisition, transaction records and other data, time series data accumulates very quickly. The time series database processes this large-scale data by improving efficiency, and it brings performance improvements, including higher Ingest Rates, faster large-scale queries (Although it supports more queries than other relational databases), and better data compression.
@@ -160,4 +159,4 @@ In the EMQ X management console **WebSocket** page, publish the message in the a
 
 ## Summary
 
-Readers can extend related applications by using OpenTSDB, after understanding the data structure stored in OpenTSDB and learning how to use the message template to configure the written message field format. 
+Readers can extend related applications by using OpenTSDB, after understanding the data structure stored in OpenTSDB and learning how to use the message template to configure the written message field format.

@@ -1,5 +1,3 @@
-
-
 [MQTT](https://zh.wikipedia.org/zh-hans/MQTT) 是一种轻量级的、灵活的物联网消息交换和数据传递协议，致力于为 IoT 开发人员实现灵活性与硬件/网络资源的平衡。
 
 [Kotlin](https://kotlinlang.org/) 是一门由 JetBrains 公司开发的编程语言，Kotlin 是基于 JVM 的，所以开发者可以很方便地用它来进行Android 开发，并且支持 Kotlin 和 Java 的混合编写。而早在 2017 年，Google 就宣布 Kotlin 成为官方开发语言。
@@ -207,4 +205,3 @@ fun disconnect() {
 MQTT 可以以极少的代码和有限的带宽，为连接远程设备提供实时可靠的消息服务。作为一种低开销、低带宽占用的即时通讯协议，使其在物联网、小型设备、移动应用等方面有较广泛的应用。
 
 而 Kotlin 也是 Google 官方主推的一门语言，结合 MQTT 协议及 [MQTT 云服务](https://www.emqx.com/zh/cloud)，我们可以开发更多有趣的应用。
-

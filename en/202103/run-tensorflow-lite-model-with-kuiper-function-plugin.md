@@ -1,4 +1,3 @@
-
 [EMQ X Kuiper](https://docs.emqx.io/en/kuiper/latest/) is an edge lightweight IoT data analytics / streaming software which can be run at all kinds of resource constrained IoT devices.
 
 [TensorFlow Lite](https://www.tensorflow.org/lite/guide) is a set of tools to help developers run TensorFlow models on mobile, embedded, and IoT devices. It enables on-device machine learning inference with low latency and a small binary size.

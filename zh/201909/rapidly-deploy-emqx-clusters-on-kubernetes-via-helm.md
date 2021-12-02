@@ -1,6 +1,3 @@
-
-
-
 Helm 在 2019 年 11 月发布了 Helm3 , Helm3 相比于 Helm2 增加了不少新特性, 本文介绍如何通过 Helm3 在 Kubernetes 上部署 EMQ X 集群.
 
 ## Helm3 新特性
@@ -262,8 +259,3 @@ $ helm install my-emqx emqx/emqx -f values.yaml
 ```
 
 > 你可以从 [Github](https://github.com/emqx/emqx-rel) 获取默认的 [`values.yaml`](https://raw.githubusercontent.com/emqx/emqx-rel/v4.0.0/deploy/charts/emqx/values.yaml)
-
-
-
-
-

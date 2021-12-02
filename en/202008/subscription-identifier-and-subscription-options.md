@@ -1,4 +1,3 @@
-
 MQTT v5 brings many new features, we will show these features in an easy-to-understand way and discuss the impact of these features on the developer. So far, we have discussed these [new features of MQTT v5](https://www.emqx.com/en/mqtt/mqtt5). Today, we will continue discussing: **subscription identifier** and **subscription options**.
 
 
@@ -53,4 +52,3 @@ This option is used to specify whether the server forwards the retained message 
 - **Retain Handling is equal to 0**, as long as the client successfully subscribes, the server will send the retained message. 
 - **Retain Handling is equal to 1**, if the client successfully subscribes and this subscription does not exist previously, the server sends the retained message. After all, sometimes the client re-initiate the subscription just to change the QoS, but it does not mean that it wants to receive the reserved messages again. 
 - **Retain Handling is equal to 2**, even if the client successfully subscribes, the server does not send the retained message.
-

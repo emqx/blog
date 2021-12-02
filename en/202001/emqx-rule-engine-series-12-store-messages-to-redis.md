@@ -1,5 +1,3 @@
-
-
 ## Redis Introduction
 
 Redis is a fully open source, high-performance key-value database that adheres to the BSD protocol for free.
@@ -213,5 +211,3 @@ The data obtained by viewing the hash table records on the Redis command line is
 ![WX201907181142402x.png](https://static.emqx.net/images/ea5cf04f77cbbc8b76d58965a4ba856a.png)
 
 So far, we have used the rule engine to implement business development to store messages to Reids.
-
-

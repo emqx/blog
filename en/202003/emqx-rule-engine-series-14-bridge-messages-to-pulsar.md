@@ -1,5 +1,3 @@
-
-
 ##  Introduction to the Pulsar messaging system
 
 Apache Pulsar is an enterprise-level pub-sub messaging system. Pulsar aims to replace Apache Kafka's dominance for many years. Pulsar provides faster throughput and lower latency than Kafka in many scenarios, and provides developers with a set of compatible  APIs.
@@ -222,4 +220,3 @@ So far, we have implement business development of using the rules engine to brid
 ------
 
 Welcome to our open source project [github.com/emqx/emqx](https://github.com/emqx/emqx). Please visit the [ documentation](https://docs.emqx.io) for details.
-

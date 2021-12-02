@@ -43,4 +43,3 @@ Download MQTT X v1.3.1: [https://github.com/emqx/MQTTX/releases/tag/v1.3.1](http
 
 
 This project is completely open source, you can submit the problems you met when using it to [MQTT X GitHub](https://github.com/emqx/MQTTX/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc), or submit the modified PR to the project Fork MQTT X. We will view and deal with it in time.
-

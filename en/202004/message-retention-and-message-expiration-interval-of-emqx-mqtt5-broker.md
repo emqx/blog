@@ -1,4 +1,3 @@
-
 ## MQTT Retained message
 
 When the MQTT broker server receives a PUBLISH message with a Retain flag of 1, it treats the message as a retained message. Except for normal forwarding, the retained message is stored on the server. Only one retained message can exist under each topic. If another retained message for the same topic already exists, the original retained message is replaced.
@@ -45,4 +44,3 @@ The message retention function of [EMQ X MQTT Broker](https://www.emqx.com/en) i
   For expiration time of retained messages, 0 means never expired. If the message expiration interval is set in the PUBLISH packet, it will be taken as the standard.
 
   When the retained message expires, EMQ X Broker deletes the message.
-

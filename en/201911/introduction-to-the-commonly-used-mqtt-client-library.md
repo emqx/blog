@@ -1,10 +1,10 @@
 ## Overview
 
-MQTT is a lightweight publish-subscribe mode messaging protocol designed for IoT applications in low-bandwidth and unstable network environments. MQTT is based on the publish/subscribe paradigm and works on the TCP/IP protocol family. MQTT protocol is lightweight, simple, open and easy to implement， which makes it suitable for a wide range of applications.
+MQTT is a lightweight [publish-subscribe](https://www.emqx.com/en/blog/mqtt-5-introduction-to-publish-subscribe-model) mode messaging protocol designed for IoT applications in low-bandwidth and unstable network environments. MQTT is based on the publish/subscribe paradigm and works on the TCP/IP protocol family. [MQTT protocol](https://www.emqx.com/en/mqtt) is lightweight, simple, open and easy to implement， which makes it suitable for a wide range of applications.
 
-MQTT is based on the client-server communication mode. MQTT server is called as MQTT Broker. Currently, there are many MQTT Brokers in the industry, whose advantages and disadvantages and functional differences will not be discussed in this article. Taking the most popular MQTT broker [ EMQ X](https://github.com/emqx/emqx) in the open source community as an example, this article uses the public Broker `broker.emqx.io` provided by  [EMQ](https://www.emqx.com/en) , and uses a simple example of connecting Broker, publishing and processing messages by client to summarizes the usage and examples of MQTT  client libraries under different programming languages and platforms.
+MQTT is based on the client-server communication mode. MQTT server is called as MQTT Broker. Currently, there are many MQTT Brokers in the industry, whose advantages and disadvantages and functional differences will not be discussed in this article. Taking the [most popular MQTT broker - EMQ X](https://www.emqx.io/) in the open source community as an example, this article uses the public Broker `broker.emqx.io` provided by  [EMQ](https://www.emqx.com/en) , and uses a simple example of connecting Broker, publishing and processing messages by client to summarizes the usage and examples of [MQTT client libraries](https://www.emqx.com/en/mqtt-client-sdk) under different programming languages and platforms.
 
-The selected client libraries are as follows:
+The selected MQTT client libraries are as follows:
 
 - Eclipse Paho C and Eclipse Paho Embedded C
 - Eclipse Paho Java Client
@@ -13,7 +13,6 @@ The selected client libraries are as follows:
 - MQTT.js Web  & Node.js Platform MQTT Client
 - Eclipse Paho Python
 
-> The MQTT community includes a number of MQTT client libraries, which can be viewed  [here](https://github.com/mqtt/mqtt.github.io/wiki/libraries)
 
 ## Sample application introduction
 

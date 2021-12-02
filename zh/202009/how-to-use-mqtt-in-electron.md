@@ -1,4 +1,3 @@
-
 [Electron](https://www.electronjs.org/) 是由 GitHub 开发的一个开源框架。它允许使用 `Node.js`（作为后端）和 [Chromium](https://zh.wikipedia.org/wiki/Chromium)（作为前端）完成桌面 GUI 应用程序的开发。Electron 现已被多个开源 Web 应用程序应用于跨平台的桌面端软件开发，著名项目包括 GitHub 的 Atom，微软的 Visual Studio Code，Slack 的桌面应用等。[^1]
 
 一个基础的 Electron 包含三个文件：`package.json`（元数据）、`main.js`（代码）和 `index.html`（图形用户界面）。框架由 Electron 可执行文件（Windows 中为 electron.exe、macOS 中为 electron.app、Linux 中为 electron）提供。开发者可以自行添加标志、自定义图标、重命名或编辑 Electron 可执行文件。
@@ -326,4 +325,3 @@ client.on('message', (topic, message) => {
 
 
 [^1]: https://zh.wikipedia.org/wiki/Electron
-

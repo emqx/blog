@@ -368,7 +368,3 @@ Delete the rule, start the TDEngine SDK to write code, and repeat the above test
 
 
 So far, the entire function of writing EMQ X data to TDEngine has been developed / configured.
-
-
-
-

@@ -214,4 +214,3 @@ public interface CommunicationHandler {
 - Method `deinit()`: for logout
 
 For the detailed introduction of data format, please refer to [the design documentation](https://github.com/emqx/emqx-extension-hook/blob/master/docs/design.md).
-

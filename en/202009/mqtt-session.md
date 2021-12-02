@@ -41,4 +41,3 @@ It is obvious that when the client initiates a connection in expecting from a pr
 ### Recommendation for use
 
 The developer needs to pay special attention to the connection between Client ID and session. If the same ClientID is used by different applications or users multiple times in some scenarios, that is each connection will have completely different behavior, you need to ensure that you request a new session whenever you connect. Evaluate reasonably whether the persistent session is needed, if it is unnecessary, you can set the session as immediately expired for reducing the occupancy of resources by the server. Set appropriate session expiration time.  If the time is set too short, may lose the meaning of storing the session state. If the time is set too long, may occupy excessive server resources.
-

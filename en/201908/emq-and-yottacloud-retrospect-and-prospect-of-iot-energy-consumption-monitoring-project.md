@@ -62,6 +62,3 @@ In the Wahaha Guiyang base project, we have adopted the small-step and fast-runn
 
 
 Related Links: [EMQ x Industrial IoT Solutions](https://mp.weixin.qq.com/s?__biz=Mzg3NjAyMjM0NQ==&mid=2247484013&idx=1&sn=ef9dc3bc5ed66cf3b71880faa4acafa1&chksm=cf39dd4bf84e545db54177b856789bb344e0c4eb28d0125c015499afd43a3bcec1b7265691bb&token=964914743&lang=zh_CN#rd)
-
-
-

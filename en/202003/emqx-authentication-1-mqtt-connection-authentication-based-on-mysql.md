@@ -1,5 +1,3 @@
-
-
 ## Foreword
 
 Security is a challenge for almost all projects, especially for IoT projects. Since the widespread of IoT application, there have been too many security incidents in the IoT industry.
@@ -200,4 +198,3 @@ Connection Refused: not authorised.
 ## Summary  
 
 After understanding the principle of EMQ X MySQL authentication, readers can use MySQL to expand related applications. Welcome to the EMQ X security series, and this series will explain the security issues related to EMQ X and IoT  to help you build an IoT project with high-level security.
-

@@ -1,5 +1,3 @@
-
-
 在阅读本教程前，你需要熟悉 [MQTT](https://docs.oasis-open.org/mqtt/mqtt/v3.1.1/os/mqtt-v3.1.1-os.html) 协议，熟悉[EMQX](https://github.com/emqx/emqx) 的简单使用，还需要熟悉 [open ldap](https://www.openldap.org/) 的配置和使用。
 
 [emqx_auth_ldap](https://github.com/emqx/emqx-auth-ldap/)，它通过比对每个尝试接入 EMQX 的终端的 `username` 和 `password` 是否与 OpenLDAP 服务器存储的用户名和密码一致，以此实现对接入终端的控制，同时它还可以为已通过认证的客户端做 ACL 检查，通过检查 OpenLDAP 中对应用户的 `mqttPublishTopic` 和 `mqttSubscriptionTopic` 来判断客户端是否有发布和订阅权限。其功能逻辑见下图：
@@ -185,4 +183,3 @@ mosquitto_sub -p 1883 -u mqttuser0001 -P mqttuser0001 -t 'mqttuser0001/req/+/mqt
 结果：订阅者未接收到任何消息，发布被拒绝。
 
 做完所有测试， 验证完 emqx_auth_ldap 的所有功能，就可以正式地使用该插件了。
-

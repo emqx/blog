@@ -1,4 +1,3 @@
-
 ## Background
 
 This article takes a common IoT usage scenario as an example and describes how to use edge computing to achieve fast, low-cost and efficient processing of business.
@@ -281,5 +280,3 @@ Through this article, readers can understand that the EMQ X solution at the edge
 AWS IoT also provides Edge solution named Greengrass, comparing to AWS Greengrass, Kuiper is more lightweight, and SQL based business implementation is also more simple. AWS Greengrass provides Lambada based programming model, supplied different language runtime to develop Edge analytics applications, and publish the result to AWS IoT. Kuiper lacks of flexibility when processing complex business logics. Greengrass is better than Kuiper at this point. Finally, Kuiper is more flexible to integrate with other 3rd party IoT Hubs, while Greengrass mostly can be only work with AWS IoT Hub. 
 
 If you are interested in learning more about edge streaming data analysis, please refer to [Kuiper Open Source Project](https://github.com/emqx/kuiper).
-
-

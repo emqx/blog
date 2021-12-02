@@ -109,4 +109,3 @@ After the connection is successful, click **Write a message** in the lower right
   Subscribe to the wildcard topic **testtopic/#** and send a message to the **testtopic/1** topic, which will be received in the message list.
 
 ![image20191021164555568.png](https://static.emqx.net/images/69709893f3708fbb33428eb3f53b1484.png)
-

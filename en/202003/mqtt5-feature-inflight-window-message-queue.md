@@ -1,4 +1,3 @@
-
 ###  Introduction to Inflight Window and Message Queue 
 
 In order to improve message throughput efficiency and reduce the impact of network fluctuations, multiple unacknowledged QoS 1 and QoS 2 packets are allowed to exist on the network link at the same time by EMQ X broker. These packets that has been sent but unconfirmed will be stored in the inflight Window until the confirmation is completed.
@@ -24,8 +23,3 @@ It is not difficult to see that `Receive Maximum` is actually the same as the In
 | max_inflight       | integer | >= 0              | 32 *(external)*,<br /> 128 *(internal)*    | Inflight Window length limit, 0 means no limit               |
 | max_mqueue_len     | integer | >= 0              | 1000 *(external)*,<br />10000 *(internal)* | Message Queue length limit, 0 means no limit                 |
 | mqueue_store_qos0  | enum    | true,<br /> false | true                                       | Whether EMQ X store QoS 0 messages to Message Queue when the client is offline |
-
-
-
-
-

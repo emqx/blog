@@ -218,7 +218,3 @@ Redis 命令行中查看哈希表记录得到数据如下：
 ![WX201907181142402x.png](https://static.emqx.net/images/45ccb0d06301d333abda2adca6186be6.png)
 
 至此，我们通过规则引擎实现了使用规则引擎存储消息到 Reids的业务开发。
-
-
-
-

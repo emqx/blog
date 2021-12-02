@@ -6,7 +6,7 @@ The full name of [MQTT](https://www.emqx.com/en/mqtt) is Message Queuing Telemet
 
 - Open message protocol that is easy to implement.
 
-- Publish-subscribe mode，one-to-many message publishing.
+- [Publish-subscribe](https://www.emqx.com/en/blog/mqtt-5-introduction-to-publish-subscribe-model) mode，one-to-many message publishing.
 
 - Based on TCP/IP network connection.
 
@@ -53,7 +53,7 @@ For easy to understand, messages delivered by MQTT can be simplified as two part
 
 ### Client
 
-The program or device that use the MQTT protocol, it can
+The program or device that use the MQTT protocol, it can:
 
 - Open the network connection which connects to the server
 - Publish the application message to other related clients
@@ -175,4 +175,3 @@ Readers can also access our blog [The comparison of usual MQTT client tools in 2
 
 
 [^1]: [https://en.wikipedia.org/wiki/MQTT#History](https://en.wikipedia.org/wiki/MQTT#History)
-

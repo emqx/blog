@@ -1,5 +1,3 @@
-
-
 IoT [MQTT broker server - EMQ X](https://www.emqx.com/en) provides plugin [emqx_statsd](https://github.com/emqx/emqx-statsd) for exporting the operating metrics of EMQ X, and status data of  Erlang  VM to the third-party monitoring system such as Prometheus. It can collect the metrics related to the Linux server through Prometheus own node-exporter to implement server + EMQ X overall operation and maintenance monitoring.
 
 This article provides the building process based on Prometheus and Grafana for EMQ X MQTT broker operation and maintenance monitoring solution.
@@ -465,6 +463,3 @@ emqx_session_discarded 0
 # TYPE emqx_session_terminated counter
 emqx_session_terminated 0
 ```
-
-
-

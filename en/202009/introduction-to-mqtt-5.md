@@ -40,4 +40,3 @@ We also want the user to embrace MQTT 5.0 early and enjoy the benefits it brings
 - [Flow control](https://www.emqx.com/en/blog/mqtt5-flow-control)
 - User attribute
 - Enhanced authentication
-

@@ -1,5 +1,3 @@
-
-
 ## Introduction of MongoDB 
 
 > Non-relational databases (NoSQL) are used for the storage of very large-scale data, such as Google or Facebook, which collects trillions of bits of data per day for their users. These types of data storage do not require a fixed pattern and can be scaled horizontally without redundant operations.

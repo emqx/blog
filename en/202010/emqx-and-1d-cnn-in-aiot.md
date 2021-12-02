@@ -1,4 +1,3 @@
-
 People are familiar with IoT and AI. As the popular technology concept, they are both related to data: IoT solves where data comes from, while AI solves where data goes and what it is used for. The new concept 「AIoT」was also born that combines the two: IoT provides massive data for AI through connecting and communicating everything, and then AI will transfer these data into valid information through continuous learning and analyzing it.
 
 In this article, we will present a simple fusion application of AIoT: use [IoT message middleware EMQ X Broker](https://www.emqx.com/en/products/emqx) to collect hydraulic system temperature sensor data and forward it to a [1D Convolutional Neural Network](https://en.wikipedia.org/wiki/Convolutional_neural_network). We will use this AI deep learning representative algorithm to predict the hydraulic system cooler state.
@@ -304,15 +303,3 @@ So far, we have implemented sensor data reporting, data forwarding using the EMQ
 In various fields of industry, whether it is machinery, electronics, iron and steel, or manufacturing, rubber, textile, chemical, food, hydraulic drive technology has become a basic application technology. With the continuous development of the modern industry, the hydraulic system becomes more high performance and high accuracy. Its reliability becomes more important, and the detection and diagnosis of hydraulic system faults is also more and more attention. Use AI and deep learning to monitor the status of the hydraulic system through IoT big data collection and analysis, which is for implementing the fault prediction. It is the new possibility brought by AIoT to the traditional industrial field.
 
 In the actual application of hydraulic system failure prediction in various fields, to obtain a more accurate prediction using AI, it is necessary to collect a higher level of time-series data for analysis and training. Therefore, it is necessary to choose a highly stable and reliable messaging middleware with outstanding performance specifications to access and transmit large amounts of data.  As an open-source MQTT messaging server with high concurrency and low latency, supporting distributed cluster architecture, EMQ X Broker can meet the need for data transmission in this application scenario and other more IoT applications.
-
-
-
-
-
-
-
-
-
-
-
-

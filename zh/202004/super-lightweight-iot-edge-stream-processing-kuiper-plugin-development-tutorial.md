@@ -1,5 +1,3 @@
-
-
 [EMQ X Kuiper](https://github.com/lf-edge/ekuiper) 是一款基于 SQL 的轻量级物联网流式数据处理软件，提供了一套插件机制用于实现自定义源（source），目标（sink）以及 SQL 函数（function）以扩展流处理功能。本教程详细介绍了 Kuiper 插件的开发编译和部署过程。
 
 ## 概览
