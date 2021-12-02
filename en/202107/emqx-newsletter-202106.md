@@ -35,4 +35,4 @@ With this feature, an EMQ X cluster can be configured with two types of node rol
 
 ## 4.3 Improvements
 
-Although v5.0 is our main focus, v4.3 is nonetheless still being actively maintained. In June, we released v4.3.4 to fix some of the plugin issues. Please see [Release Notes](https://github.com/emqx/emqx/releases) for more details. 
+Although v5.0 is our main focus, v4.3 is nonetheless still being actively maintained. In June, we released v4.3.4 to fix some of the plugin issues. Please see [Release Notes](https://github.com/emqx/emqx/releases) for more details.

@@ -128,4 +128,3 @@ try {
 ```
 
 This is how to perform TLS/SSL one-way and two-way authentication with MQTT on Android.
-

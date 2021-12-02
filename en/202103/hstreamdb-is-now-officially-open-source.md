@@ -1,4 +1,3 @@
-
 ## Intro
 
 To better address the needs for real-time streaming data storage and processing in various businesses, we (EMQ) have been searching for an optimal system and architecture.

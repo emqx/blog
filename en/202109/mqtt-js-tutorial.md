@@ -1,6 +1,6 @@
 ## Introduction
 
-[MQTT.js](https://github.com/mqttjs/MQTT.js) is a client library for the [MQTT protocol](https://www.emqx.com/en/mqtt) protocol, written in JavaScript for node.js and the browser. It is currently the most widely used [MQTT client library](https://www.emqx.com/en/blog/introduction-to-the-commonly-used-mqtt-client-library) in the JavaScript ecosystem.
+[MQTT.js](https://github.com/mqttjs/MQTT.js) is a client library for the [MQTT protocol](https://www.emqx.com/en/mqtt) protocol, written in JavaScript for node.js and the browser. It is currently the most widely used [MQTT client library](https://www.emqx.com/en/mqtt-client-sdk) in the JavaScript ecosystem.
 
 > MQTT is a lightweight IoT messaging protocol based on the publish/subscribe model. It can provide real-time and reliable messaging services for networked devices with very little code and bandwidth. It is widely used in the industries such as the IoT, mobile Internet, smart hardware, Internet of Vehicles and power energy.
 

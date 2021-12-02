@@ -44,4 +44,3 @@ At present, Neuron v1.3.2 has been highly coordinated with the management consol
 ## Contact
 
 If you have any questions about Neuron, please feel free to contact us via [neuron@emqx.io](mailto:neuron@emqx.io).
-

@@ -288,6 +288,7 @@ Client 除监听事件外，也内置一些方法，用来进行发布订阅的�
 至此就简单的介绍了 MQTT.js 一些常用的 API 的使用方法等，具体在实际项目中的使用请参考以下链接：
 
 - [如何在 Vue 项目中使用 MQTT](https://www.emqx.com/zh/blog/how-to-use-mqtt-in-vue)
+
 - [如何在 React 项目中使用 MQTT](https://www.emqx.com/zh/blog/how-to-use-mqtt-in-react)
 - [如何在 Electron 项目中使用 MQTT](https://www.emqx.com/zh/blog/how-to-use-mqtt-in-electron)
 - [如何在 Node.js 项目中使用 MQTT](https://www.emqx.com/zh/blog/how-to-use-mqtt-in-nodejs)

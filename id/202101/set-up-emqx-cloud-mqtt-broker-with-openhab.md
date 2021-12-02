@@ -1,4 +1,3 @@
-
 [OpenHab](https://www.openhab.org/) yang juga dikenal sebagai Home Automation Bus terbuka adalah sebuah software home automation open-source yang ditulis dengan Java. Dengan kemampuannya dalam berintegrasi dengan berbagai perangkat, user interface yang jelas, dan mendukung tool yang paling fleksibel sekalipun, openHab menjadi salah satu platform terbaik dalam hal home automation.
 
 Dengan tingkat fleksibilitas yang tinggi dan mudah dipakai, openHAB menyediakan sarana binding agar pengguna dapat mengkoneksikan [MQTT Broker](https://www.emqx.com/en/products/emqx). Dalam artikel ini, saya akan membimbing Anda dalam proses pengaturan [EMQ X Cloud MQTT Broker](https://www.emqx.com/en/cloud) dengan openHAB.
@@ -63,4 +62,3 @@ Jika ini adalah pengalaman pertama Anda menggunakan EMQ X Cloud, jangan khawatir
    Anda juga dapat mengecek statusnya dari halaman monitor EMQ X Cloud.
 
 ![EMQ X Cloud's monitor page](https://static.emqx.net/images/8077ce96ef86b572fb6c15b1b8343cd0.png)
-

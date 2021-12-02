@@ -1,4 +1,3 @@
-
 [MQTT](https://en.wikipedia.org/wiki/MQTT) is a lightweight and flexible IoT message exchanging and data delivery protocol. It dedicates to implement a balance of flexibility and hardware/network resources for IoT developers.
 
 [NodeMCU](https://www.nodemcu.com/) is an open source IoT platform. It uses the Lua language to program. This platform is based on eLua open source projects, and its underlying layer uses the ESP8266 SDK 0.9.5.
