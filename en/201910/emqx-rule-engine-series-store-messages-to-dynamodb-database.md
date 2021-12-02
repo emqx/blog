@@ -1,4 +1,3 @@
-
 ## Amazon DynamoDB Introduction
 
 Amazon DynamoDB is a fully hosted NoSQL database service that supports key values and document data structures.
@@ -264,4 +263,3 @@ View the data table records with the aws cli command to get the following data:
 
 ![image07.png](https://static.emqx.net/images/d19a7472d896f9822571908f6ad0651c.png)
 So far, we have implemented the business development of using the rules engine to store messages to DynamoDB.
-

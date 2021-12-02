@@ -1,4 +1,3 @@
-
 Date: 2020/8/5
 
 The Kuiper team would like to announce the release of Kuiper 0.9.0. 
@@ -55,4 +54,3 @@ You can click [Kuiper 2020 milestone](https://github.com/emqx/kuiper/projects/1)
 ## Contact
 
 If having any problems for Kuiper, feel free to contact us through [contact@emqx.io](mailto:contact@emqx.io)
-

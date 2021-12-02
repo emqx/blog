@@ -1,5 +1,3 @@
-
-
 IoT data collection involves mass equipment access and a massive number of data transmission. The combined technology stack of [EMQ X MQTT Broker](https://www.emqx.com/en/products/emqx) and ClickHouse OLAP database is fully capable of IoT data collection, transmission, storage, analysis and processing business.
 
 After storing the data in the database, we usually need other methods, for example, a data visualization system will count and display these data according to the rules for implementing data monitoring, indicators statistics and other business needs, to give full play to the value of the data. ClickHouse with open source software Grafana can quickly build IoT data analysis and visualization platform.
@@ -478,4 +476,3 @@ Save the dashboard, drag and drop to adjust the size and position of each data p
 ## Summary
 
 So far, we use EMQ X + ClickHouse to complete IoT data transmission, storage, analysis and display the whole process of system construction. The reader can learn how EMQ X's extensive expansion capabilities and ClickHouse's leading data processing and analysis capabilities can be applied to IoT data collection. With a deeper understanding of Grafana's other functions, users can customize their improved data visualization analysis and even monitoring and alerting systems.
-

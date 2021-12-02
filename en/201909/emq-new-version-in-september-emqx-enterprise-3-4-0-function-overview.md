@@ -102,4 +102,3 @@ In future versions, Dashboard's functions will continue to be enhanced, and the 
 - Provide plug-in function management interface: At present, Dashboard's management of plug-ins is limited to configuration. Many plug-ins, such as `emqx_auth_clientid, emqx_auth_username, emqx_configs,` have corresponding business functions and usage modes besides basic configuration. EMQ will be adapted and developed one by one in Dashboard to provide plug-in configuration and user interface;
 - Plug-in hot installation and hot upgrade: upload binary plug-in package in Dashboard, realize non-stop plug-in installation and upgrade, hot install hot upgrade is mainly used to deal with important repair and small-scale function upgrade of EMQ X;
 - Customize alarm implementation: user-defined alarm rules and trigger mode will be supported in the future, so that the alarm reminder can not be offline.
-

@@ -1,4 +1,3 @@
-
 Before reading this tutorial, we suppose that you already known some basic [MQTT](https://docs.oasis-open.org/mqtt/mqtt/v3.1.1/os/mqtt-v3.1.1-os.html) and [EMQ X MQTT broker](https://www.emqx.com/en) knowledge.
 
 
@@ -156,4 +155,3 @@ Refuse this PUBLISH/SUBSCRIBE:
 ```
 HTTP Status Code: Except 200
 ```
-

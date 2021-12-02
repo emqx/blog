@@ -1,4 +1,3 @@
-
 ## Introduction to OpenTSDB 
 
 OpenTSDB is an extensible distributed time series Database database, whose bottom layer relies on HBase and makes full use of HBase's features of distributed column storage to support millions of reads and writes per second.
@@ -158,4 +157,3 @@ Then, send a query request to OpenTSDB through Postman. When we get the followin
 ![image20190725113422461.png](https://static.emqx.net/images/8f5bf630e3efebdad766a27d778dad82.png)
 
 So far, we have implemented business development to store messages to the OpenTSDB database through the rule engine.
-

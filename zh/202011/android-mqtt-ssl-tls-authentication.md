@@ -114,7 +114,7 @@ public static SSLSocketFactory getSocketFactory(InputStream caCrtFile, InputStre
     }
 ```
 
-我们需要准备好ca证书，客户端证书和秘钥放到 `res/raw` 下，然后调用，注意密码设为空字符串
+我们需要准备好 ca 证书，客户端证书和秘钥放到 `res/raw` 下，然后调用，注意密码设为空字符串
 
 ```java
 try {

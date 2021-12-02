@@ -1,4 +1,3 @@
-
 [HAProxy](https://www.haproxy.org/)  is free, open source software that provides a high availability load balancer and proxy server for TCP and HTTP-based applications that spreads requests across multiple servers. It is written in C and has a reputation for being fast and efficient (in terms of processor and memory usage). [^1]
 
 ## Preparation

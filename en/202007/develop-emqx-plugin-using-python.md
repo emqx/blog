@@ -1,4 +1,3 @@
-
 From v4.1, EMQ X [MQTT broker](https://www.emqx.com/en/products/emqx) provides the specified plugin that supports multiple languages [emqx_extension_hook](https://github.com/emqx/emqx-extension-hook). Currently, it is supported that use other programming languages to process the hook events of EMQ X. The developer can use Python or Java to quickly develop their plugins or do some expansions based on the official functions to satisfy their business scenarios. For example:
 
 - Verify the client's login permission: when connecting to the client, the corresponding function will be triggered and the client information will be obtained through parameters. Finally, it judges whether it has the login permission after reading the database, comparison, etc.
@@ -153,4 +152,3 @@ Currently, the EMQ X Python extension SDK is open source, if you have higher req
 
 - Code repository: [emqx-extension-python-sdk](https://github.com/emqx/emqx-extension-python-sdk)
 - You can refer to this example to wrap: [emqx-extension-hook main.py](https://github.com/emqx/emqx-extension-hook/blob/master/test/scripts/main.py)
-

@@ -169,7 +169,3 @@ SQL 条件输入输出无误后，我们继续添加相应动作，配置写入 
 ![image20190725145107685.png](https://static.emqx.net/images/97aa310b042ec33b08846024d8d9afeb.png)
 
 至此，我们通过规则引擎实现了使用规则引擎存储消息到 PostgreSQL 数据库的业务开发。
-
-
-
-

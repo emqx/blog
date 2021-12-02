@@ -1,4 +1,3 @@
-
 With the development of IoT technology, the smart home system has been further developed which uses many IoT devices (such as temperature and humidity sensors) to real-time monitor the internal status of the home. With the increasing number of **smart home devices**, a smart home hub provides a bridge for allowing your various devices to "talk" to each other. The user is not always willing to upload the data to the cloud for processing because of the privacy of home data.
 
 We will use [Raspberry Pi](https://www.raspberrypi.org) + [EMQ X Edge](https://www.emqx.com/en/products/emqx) + [EMQ X Kuiper](https://github.com/lf-edge/ekuiper) to build the smart home hub for implementing the edge computing of smart home device data and reducing leaking the private home data.

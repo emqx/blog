@@ -1,4 +1,3 @@
-
 MQTT v5 brings a lot of new features, we will show these features in an easy-to-understand way and discuss the impact of these features on the developer. So far, we have discussed these [new features of MQTT v5](https://www.emqx.com/en/mqtt/mqtt5). Now, we will continue discussing: **flow control**.
 
 
@@ -40,4 +39,3 @@ MQTT v5 gives an imperfect solution or it is just a suggestion: when the sending
 ## Summary
 
 Although the flow control mechanism of MQTT v5 still has some shortages, we still suggest that users use it. The sending quota algorithm based on the response packet enables the sender to maximize the use of resources. Receive Maximum enables both communication parties do not need to negotiate the sending quota in advance, thus get greater transparency and flexibility, which is really useful for accessing multi-vendor equipment.
-

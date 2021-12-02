@@ -1,5 +1,3 @@
-
-
 InfluxDB is an open source sequential database developed by InfluxData. It was written by Go and focuses on querying and storing sequential data with high performance. InfluxDB is lighter than the OpenTSDB database introduced in the previous issue, and is better than OpenTSDB in benchmarking indicators given officially by InfluxData.
 
 Faced with the large-scale and rapid growth of IoT sensor acquisition, transaction records and other data, accumulation speed of time series data is very fast. Sequential database can process such large-scale data by improving efficiency, and bring performance improvement, including: higher Ingest Rates, faster large-scale queries (although some other databases support more queries than it) and better data compression.
@@ -157,6 +155,3 @@ On the **WebSocket** page of EMQ X Management Console , the above format message
 ## Summary
 
 When the readers understands the data structure stored in InfluxDB and learns to use the message template to configure the written message field format, they can extend the application in conjunction with InfluxDB.
-
-
-

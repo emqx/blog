@@ -1,6 +1,3 @@
-
-
-
 ## 前言 
 
 [InfluxDB](https://www.influxdata.com/) 是一个用于存储和分析时间序列数据的开源数据库，内置 HTTP API，类 SQL 语句的支持和无结构的特性对使用者而言都非常友好。它强大的数据吞吐能力以及稳定的性能表现使其非常适合 IoT 领域。
@@ -167,5 +164,3 @@ time                humidity location pm2_5 temperature
 至此，我们通过规则引擎实现了存储消息到 InfluxDB 数据库的业务开发。
 
 在阅读该教程之前，假定你已经了解 [MQTT](https://docs.oasis-open.org/mqtt/mqtt/v3.1.1/os/mqtt-v3.1.1-os.html)、[EMQ X](https://github.com/emqx/emqx) 的简单知识。
-
-

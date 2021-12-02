@@ -286,5 +286,3 @@ Cassandra 命令行中查看数据表记录得到数据如下：
 ![cassruleresult2x.png](https://static.emqx.net/images/2e1437c76b8f8151167b530d740fb8c3.png)
 
 至此，我们通过规则引擎实现了使用规则引擎存储消息到 Cassandra 数据库的业务开发。
-
-

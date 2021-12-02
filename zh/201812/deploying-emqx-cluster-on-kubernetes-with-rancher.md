@@ -1,8 +1,3 @@
-
-
-
-
-
 本文描述如何通过Rancher2.0部署kubernetes集群，并将EMQ X部署到kubernetes集群上
 
 ## 实验环境：
@@ -315,5 +310,3 @@ deployment.extensions "emqx" deleted
 ![WX20190803103628.png](https://static.emqx.net/images/19c6ea1d29b7936b0e081002a943ac71.png)
 
 点击导入，等待导入成功。
-
-

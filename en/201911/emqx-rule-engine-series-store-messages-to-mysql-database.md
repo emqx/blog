@@ -1,4 +1,3 @@
-
 ## Introduction of Scenario
 
 In this scenario, it is required to store the messages that meet the criteria under EMQ X in the MySQL database. In order to facilitate subsequent analysis and retrieval, the message content needs to be split for storage.
@@ -258,7 +257,3 @@ Click the **Send** button to view the rule **hit** statistics after the successf
 ![image20190717141918330.png](https://static.emqx.net/images/a4606e0e73c431c5eccaa2a635610417.png)
 
 So far, we have implemented the business development of using the rules engine to store messages to MySQL .
-
-
-
-

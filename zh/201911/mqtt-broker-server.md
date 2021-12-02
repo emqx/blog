@@ -113,6 +113,3 @@ MQTT Broker 广泛应用于：电力、新能源、智慧城市、智能家居�
   订阅通配符主题 **testtopic/#**，并给 **testtopic/1** 主题发送消息，此时消息列表里会接收到该消息。
 
 ![image20191021164555568.png](https://static.emqx.net/images/2e77b972df9bfeda49da9d0de34953ce.png)
-
-
-

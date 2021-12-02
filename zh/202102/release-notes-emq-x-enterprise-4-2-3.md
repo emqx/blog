@@ -246,5 +246,3 @@ GB/T 32960 网关对终端的控制采用 Request-Response 模式，向对用的
     "Param": {"Level": 0, "Message": "alarm message"}
 }
 ```
-
-

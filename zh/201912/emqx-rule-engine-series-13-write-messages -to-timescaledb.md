@@ -180,5 +180,3 @@ tutorial=# SELECT * FROM sensor_data LIMIT 100;
 ```
 
 至此，我们通过规则引擎实现了使用规则引擎存储消息到 Timescale 数据库的业务开发。
-
-

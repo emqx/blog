@@ -1,4 +1,3 @@
-
 In the past several years, IoV has developed from a concept into a trend, sweeping through major car manufacturers and related upstream and downstream industries. A series of guidance standards of relevant departments in China have emerged around the construction of the IoV industry standard system.
 
 EMQ is committed to providing a high-quality Internet of Everything engine for enterprises and has not only established extensive cooperation with mainstream car manufacturers and industry chain-related companies but also provided additional capabilities and technical support from the national standard and industry-standard level. **With the v4.2.3 release, EMQ X adds another IoV related GB/T32960 protocol access capability.** 

@@ -1,5 +1,3 @@
-
-
 Date: 2019/12/13
 
 The Kuiper team would like to announce the release of Kuiper 0.0.4
@@ -38,6 +36,3 @@ Github Repository: https://github.com/emqx/kuiper
 ### Contact
 
 If having any problems for Kuiper, feel free to contact us through contact@emqx.io
-
-
-

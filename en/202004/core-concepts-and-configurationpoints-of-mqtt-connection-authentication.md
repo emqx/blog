@@ -201,4 +201,3 @@ The configuration file for PSK is `etc/psk.txt`. A colon`: ` is used to separate
 client1:1234
 client2:abcd
 ```
-

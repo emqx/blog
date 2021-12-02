@@ -1,5 +1,3 @@
-
-
 日期：2021/03/03
 
 Kuiper 团队宣布发布 Kuiper 1.1.2
@@ -79,4 +77,3 @@ docker run -p 9081:9081 -d --name kuiper emqx/kuiper:1.1.2
 ## 联系
 
 如果对 Kuiper 有任何问题，请随时通过 kuiper@emqx.io 与我们联系。
-

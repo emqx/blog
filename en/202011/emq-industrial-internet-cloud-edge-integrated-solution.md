@@ -1,4 +1,3 @@
-
 This article will introduce how to build an industrial IoT platform that integrates the capabilities of industrial data collection, aggregation, cleaning, storage and analysis, and visualization and display based on open source and commercial software in the community. Based on this solution, readers can adjust this solution design according to their own needs for building the industrial internet platform that meets actual business needs and accelerate the realization of industrial intelligence transformation.
 
 
@@ -137,4 +136,3 @@ This solution will use the following products except the products which used in 
 ## Summary
 
 Based on the industrial internet infrastructure capability platform built by this solution, users can implement efficient and low-cost industrial Internet device connectivity, acquisition and analysis. Whether it is a lightweight pure edge solution or a cloud-edge collaboration solution with a more complex deployment environment, it can be realized by this solution.
-

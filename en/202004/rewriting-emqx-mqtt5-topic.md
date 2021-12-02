@@ -1,5 +1,3 @@
-
-
 EMQ X **MQTT 5.0 topic rewrite** supports rewriting topic A to topic B,  when subscribing topics, publishing messages and unsubscribing in MQTT client according to the rule configured by clients.
 
 The EMQ X  [MQTT retained message](https://docs.emqx.io/broker/latest/en/advanced/retained.html) and  [delayed publish](https://docs.emqx.io/broker/latest/en/advanced/delay-publish.html) can cooperate with the rewriting topic function to use. For example, when users want to use delayed publish, but it is difficult to modify the topic published by the MQTT client, they can use rewriting topic function to rewrite related MQTT topics into the format of delayed publish topic. 
@@ -49,4 +47,3 @@ At this time we subscribe `y/a/z/b`、`y/def`、`x/1/2`、`x/y/2`、`x/y/z` five
 + `x/y/2` matches two topic filters( `x/#` and `x/y/+` ) at the same time. EMQ X reads the configuration by reverse order, and will give priority to matches `module.rewrite.rule.3`, and it will replace the topic through the regular expression. So the client actually subscribes topic `z/y/2`. 
 
 + `x/y/z` matches two topic filters( `x/#` and `x/y/+` ) at the same time. EMQ X reads the configuration by reverse order, and will give priority to matches `module.rewrite.rule.3`, if no elements are matched through the regular expression, it does not implement rewriting topic. So the client actually subscribes topic `x/y/z`. It should be noted that EMQ X will not match the `module.rewrite.rule.2` rule again, although the regular expression of `module.rewrite.rule.3` match unsuccessfully.
-

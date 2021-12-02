@@ -1,5 +1,3 @@
-
-
 ###  Inflight Window 与 Message Queue 说明
 
 为了提高消息吞吐效率和减少网络波动带来的影响，EMQ X 消息服务器允许多个未确认的 QoS 1 和 QoS 2 报文同时存在于网路链路上。这些已发送但未确认的报文将被存放在  inflight Window 中直至完成确认。
@@ -27,8 +25,3 @@ MQTT v5.0 协议为 CONNECT 报文新增了一个 `Receive Maximum` 的属性，
 | max_inflight      | integer | >= 0              | 32 *(external)*,<br /> 128 *(internal)*    | Inflight Window 长度限制，0 即无限制                   |
 | max_mqueue_len    | integer | >= 0              | 1000 *(external)*,<br />10000 *(internal)* | Message Queue 长度限制，0 即无限制                     |
 | mqueue_store_qos0 | enum    | true,<br /> false | true                                       | 客户端离线时 EMQ X 是否存储 QoS 0 消息至 Message Queue |
-
-
-
-
-

@@ -1,4 +1,3 @@
-
 [MQTT X](https://mqttx.app) is a cross-platform MQTT 5.0 desktop test client provided by the world's leading open source IoT middleware provider  [EMQ](https://www.emqx.com/en) , which supports macOS, Linux, Windows. The user interface of **MQTT X** simplifies the operation logic of the page with the pattern of chatting software. Users can quickly create multiple simultaneous-online **MQTT clients** to test the connection/publish/subscribe functions of MQTT/TCP, MQTT/TLS, MQTT/WebSocket and other **MQTT protocol** features.
 
 MQTT X website: https://mqttx.app
@@ -42,4 +41,3 @@ MQTT X v1.3.0 download link: https://github.com/emqx/MQTTX/releases/tag/v1.3.0
 - Certificate selection is optimized , which supports to select more certificate format files.
 
 This project is completely open sourced. If you have any questions during use, you can go to [GitHub](https://github.com/emqx/MQTTX/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc) to submit your questions and opinions, or Fork our MQTT X project, and submit the revised PR to us. We will carefully review and respond shortly.
-

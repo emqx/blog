@@ -1,5 +1,3 @@
-
-
 MQTT 5.0 协议相比 MQTT 3.1.1 增加了很多属性，这些属性分布于报文的可变头部 ( Variable Header ) 和有效载荷 ( Payload ) 中。
 
 MQTT 5.0 协议中携带有效载荷的报文有 CONNECT 报文，PUBLISH 报文，SUBSCRIBE 报文，SUBACK 报文，UNSUBSCRIBE 报文和 UNSUBACK 报文。
@@ -79,5 +77,3 @@ UNSUBSCRIBE 报文的载荷相比 SUBSCRIBE 的载荷要简单很多，它仅仅
 **DISCONNECT 报文是 MQTT 5.0 新增的报文，它的引入意味着 mqtt broker 拥有了主动断开连接的能力。DISCONNECT 报文所具备的属性有：**
 
 ![DISCONNECT 报文新增.png](https://static.emqx.net/images/f6aa8921e06244d319c110a9cfdbdb90.png)
-
-

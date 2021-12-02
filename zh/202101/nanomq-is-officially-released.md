@@ -61,8 +61,3 @@ NanoMQ 分为 3 个部分：
 
 NanoMQ 后续将与 [EMQ 边缘管理套件](https://github.com/emqx/edge-stack)进行集成，为用户提供更好的使用体验。
 NanoMQ 基于 MIT 开源协议，后续将与 CNCF 以及 Linux LF 基金会等项目进行合作，真诚欢迎社区各方的建议和帮助。
-
-
-
-
-

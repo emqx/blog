@@ -1,5 +1,3 @@
-
-
 ## MQTT v3.1.1 
 
 MQTT v3.1.1 protocol has only 10 return codes. These return codes can represent little meaning, and the same return code value can have different meanings in different messages.
@@ -87,5 +85,3 @@ The following table is a list of reason codes that represent the value of the re
 The reason code is a single-byte unsigned value used to indicate the result of the operation. The reason code less than 0x80 indicates that the result of the operation is successful. Under normal circumstances, the reason code value returned by the operation is 0. If the reason code returned is greater than or equal to 0x80, the operation has failed.
 
 The reason codes for CONNACK, PUBACK, PUBREC, PUBREL, PUBCOMP, DISCONNECT and AUTH control packets are stored in the variable header. The SUBACK and UNSUBACK packets contain a list of reason codes in the payload.
-
-

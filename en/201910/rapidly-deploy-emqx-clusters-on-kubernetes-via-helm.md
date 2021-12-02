@@ -1,5 +1,3 @@
-
-
 Helm3 was released in November 2019, which adds many new features compared to Helm2.In this article, how to deploy EMQ X cluster on Kubernetes via Helm3 will be introduced.
 
 ## New features of  Helm3 
@@ -260,4 +258,3 @@ $ helm install my-emqx emqx/emqx -f values.yaml
 ```
 
 > You can get default [`values.yaml`](https://raw.githubusercontent.com/emqx/emqx-rel/v4.0.0/deploy/charts/emqx/values.yaml) from [Github](https://github.com/emqx/emqx-rel) .
-

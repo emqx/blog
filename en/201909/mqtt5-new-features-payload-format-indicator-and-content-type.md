@@ -17,6 +17,3 @@ In all packet types of MQTT 5.0, this property also exists only in the will prop
 It is determined by the application that sends and receives messages. The content type cannot be tampered with during message forwarding.
 
 A typical application of content types is to store MIME types, such as text/plain for text files and audio/aac for audio files.
-
-
-

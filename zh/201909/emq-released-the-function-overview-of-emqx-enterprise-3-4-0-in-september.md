@@ -1,5 +1,3 @@
-
-
 9 月正式开启，EMQ 发布了 EMQ X Enterprise 3.4.0 正式版。该版本强化了管理配置和规则引擎功能，新增消息编解码、集群热配置及车联网协议支持，设计了全新的管理监控 Dashboard 页面，是目前企业应用推荐使用的稳定版本。
 
 相关安装包已在 [EMQ 官网](https://www.emqx.com/zh/downloads) 开放下载，同时官网提供 License 免费自助申请试用、在线购买 License 授权服务。
@@ -110,5 +108,3 @@ WHERE
 欢迎关注我们的开源项目 [github.com/emqx/emqx](https://github.com/emqx/emqx) ，详细文档请访问 [官方文档](https://docs.emqx.io/broker/cn)。
 
 ![二维码](https://static.emqx.net/images/b99a97727d6f86a9912846e145b8b124.jpg)
-
-

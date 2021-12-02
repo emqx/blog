@@ -1,5 +1,3 @@
-
-
 React 是一款用于构建用户界面的开源 JavaScript 库。React 视图通常采用包含以自定义 HTML 规定的其他组件的组件渲染。React 为程序员提供了一种子组件不能直接影响外层组件（"data flows down"）的模型，数据改变时对视图进行了有效更新，实现了在现代单页应用中组件之间的干净分离。由于 React 的设计思想极其独特，属于革命性创新，性能出众，代码逻辑却非常简单。所以，越来越多的人开始关注和使用，目前是 Web 开发的主流工具之一。
 
 React 起源于 Facebook 的内部项目，目前由 Facebook 企业和其强大的开源社区进行维护。React 目前正在被 Netflix、Instagram、Imgur、Airbnb 等很多知名网站的主页使用。该框架首先于 2011 年部署于 Facebook 的 newsfeed，随后于 2012 年部署于 Instagram。在2013年5月在 JSConf US 开源。

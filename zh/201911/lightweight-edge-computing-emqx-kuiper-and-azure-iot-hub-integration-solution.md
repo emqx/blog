@@ -1,4 +1,3 @@
-
 ## 背景
 
 本文以一个常见的物联网使用场景为案例，介绍了如何利用边缘计算来实现对业务的快速、低成本和有效地处理。
@@ -294,4 +293,3 @@ time="2019-11-12T14:30:35+08:00" level=info msg="The connection to server ssl://
 - Kuiper 在与第三方的 IoT Hub 进行集成的时候灵活性更好。Azure IoT Edge 一般只跟 Azure IoT Hub 进行对接。
 
 如果有兴趣了解更多关于边缘流式数据分析的内容，请参考 [Kuiper 开源项目](https://github.com/emqx/kuiper)。
-

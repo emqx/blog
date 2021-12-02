@@ -1,5 +1,3 @@
-
-
 ## 场景介绍
 
 该场景需要将 EMQ X 指定主题下且满足条件的消息存储到 RabbitMQ。
@@ -192,4 +190,3 @@ RabbitMQ Exchange，Exchange Type 以及 Routing Key。
 ![image07.png](https://static.emqx.net/images/236ff1abc0759a361a8eac6bc0aa358c.png)
 
 至此，我们通过规则引擎实现了使用规则引擎桥接消息到 RabbitMQ 的业务开发。
-

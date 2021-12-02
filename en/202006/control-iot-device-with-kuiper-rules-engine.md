@@ -1,4 +1,3 @@
-
 ## Overview
 
 This document describes how to use [Kuiper](https://github.com/lf-edge/ekuiper) rule engine to control devices with anlysis result. To make the tutorial simple, the doc uses [device-virtual](https://github.com/edgexfoundry/device-virtual-go) sample, it analyzes the data sent from device-virtual services, and then control the device according to the analysis result produced by Kuiper rule engine.
@@ -211,4 +210,3 @@ If you want to explore more features of EMQ X Kuiper, please refer to below reso
 
 - [Kuiper Github](https://github.com/emqx/kuiper/)
 - [Kuiper reference guide](https://github.com/emqx/kuiper/blob/edgex/docs/en_US/reference.md)
-

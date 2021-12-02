@@ -1,4 +1,3 @@
-
 ## Overview
 
 **MQTT** is an application layer protocol based on the TCP protocol and work in TCP/IP protocol cluster, and designed and developed by IBM in 1998. MQTT uses a lightweight publish/subscribe pattern for message transmission. It is designed to provide reliable network services for IoT devices in low-bandwidth and unstable network environments. Devices need to connect to the **MQTT broker** for messaging communication.
@@ -123,4 +122,3 @@ The more value of **EMQ X TCP protocol specification** and **emqx-tcp** plugs is
 Only EMQ X Enterprise Edition supports the private TCP protocol access adaptation. After the adaptation, EMQ X Enterprise and corresponding function plugins are delivered. Open source users with Erlang development experience can also develop and implement it by themselves.
 
 Welcome to download and free try [EMQ X Enterprise](https://www.emqx.com/en/products/emqx). If you have any requirements on private TCP protocol access customization and other privatization customization, you can contact EMQ: [contact@emqx.io](mailto:contact@emqx.io).
-

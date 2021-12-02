@@ -1,5 +1,3 @@
-
-
 ## 系统要求
 
 - Stretch (Raspbian 9)
@@ -156,4 +154,3 @@ emqx v3.1.0 is running
 ```
 
 4.EMQ X 启动成功，如何使用请参考官方文档
-

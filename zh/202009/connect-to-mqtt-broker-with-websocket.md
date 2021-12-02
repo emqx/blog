@@ -253,4 +253,3 @@ location / {
 
 
 [^1]: https://zh.wikipedia.org/zh-hans/WebSocket
-

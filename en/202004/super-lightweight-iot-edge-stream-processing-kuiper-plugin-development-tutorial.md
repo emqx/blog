@@ -1,4 +1,3 @@
-
 [EMQ X Kuiper](https://github.com/lf-edge/ekuiper) is a lightweight loT streaming data processing software based on SQL. It provides a set of plugin mechanism for implementing customized source, sink and SQL function to extend the ability of  stream processing. This tutorial gives a detailed introduction to the process of development, compilation, and deployment of the Kuiper plugin.
 
 ## Overview
