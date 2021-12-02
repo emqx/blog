@@ -1,5 +1,3 @@
-
-
 ## 系统要求
 
 - Stretch (Debian 9)
@@ -148,7 +146,3 @@ $ cd emqx $ ./bin/emqx start emqx 3.1 is started successfully! $ ./bin/emqx_ctl 
 
 
 4.EMQ X 启动成功，如何使用请参考官方文档](https://developer.emqx.io/docs/broker/v3/cn/getstarted.html)
-
-
-
-

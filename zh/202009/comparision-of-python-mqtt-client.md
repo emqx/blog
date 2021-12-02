@@ -335,4 +335,3 @@ gmqtt 同样通过 asyncio 库实现，相比 HBMQTT ，代码风格友好，最
 * 对于熟练使用 asyncio 库的读者，不妨尝试一下 HBMQTT 和 gmqtt。
 
 * 如果您想要学习、参与开源项目或者使用 MQTT 5.0， 则不妨试用一下 gmqtt，并尝试为其贡献一份代码吧。
-

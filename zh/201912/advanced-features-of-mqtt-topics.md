@@ -74,4 +74,3 @@ MQTT 订阅报文包含一个主题过滤器（Topic Filter）和一个最大的
 - `myhome/kitchen/airquality`
 
 当我们想获取卧室的所有数据时，可以订阅 ` myhome/bedroom/+` 主题，当我们想获取三个房间的温度数据的时候，可以订阅 `myhome/+/temperature` 主题，当我们想获取所有的数据的时候，可以订阅 ` myhome/#` 或者 `#`。
-

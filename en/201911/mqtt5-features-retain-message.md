@@ -1,4 +1,3 @@
-
 ### Introduction
 
 Although the publish-subscribe model fully decouples the publisher of the message from the subscriber, there is also an implicit problem that the subscriber cannot actively request the message from the publisher, and when the subscriber receives the message depends entirely on the publisher. This is inconvenient in some scenarios. For example, when a device periodically publishes its own GPS coordinates, it may take a few seconds for a subscriber to receive data from initiation of a subscription for the first time, or it may take ten minutes or more, which is not friendly. Therefore, [MQTT](https://www.emqx.com/en/mqtt) introduces the retained message.
@@ -20,6 +19,3 @@ Although the retained message is stored in the server, it is not part of the ses
 2. The message expiration interval attribute is also applicable in the retained message. If the client sets this attribute, the retained message will be deleted after the storage expiration time is due.
 
 With retained messages, new subscribers can get the most recent status immediately, without waiting for unpredictable times, which is very important in many scenarios.
-
-
-

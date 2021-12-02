@@ -1,5 +1,3 @@
-
-
 The MQTT protocol communicates by exchanging predefined MQTT control packets. We will take  **[MQTTX](https://github.com/emqx/MQTTX)**  as an example to show how to implement the publish and subscribe function through MQTT packets.
 
 ## Connect 

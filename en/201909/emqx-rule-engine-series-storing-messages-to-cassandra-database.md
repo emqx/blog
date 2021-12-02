@@ -1,4 +1,3 @@
-
 ## Cassandra introduction and installation
 
 Cassandra is an open source distributed database system from Apache that supports **linear extension**, **high availability** without losing the original read and write performance. At present, it is widely used in the back-end services of large enterprises, such as Netflix, Apple and so on, which have deployed thousands of nodes.
@@ -284,5 +283,3 @@ View the data table records in the Cassandra command line to get the following d
 ![cassruleresult2x.png](https://static.emqx.net/images/9ef015e4beb934fc94ba3581b042efa1.png)
 
 So far, we have implemented a business development to store messages to the Cassandra database through the rules engine.
-
-

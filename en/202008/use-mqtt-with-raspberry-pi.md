@@ -1,14 +1,11 @@
-
-
 [Raspberry Pi](https://www.raspberrypi.org/) is a small single-board computer based on ARM and developed by the Raspberry Pi Foundation in the United Kingdom. This board provides USB interfaces and Ethernet interfaces can connect the keyboard, mouse, and networking cable. This board has the basic functions of PC and Raspberry Pi integrates Wi-Fi, Bluetooth, and a large number of GPIO, and is widely used in teaching, family entertainment, IoT, etc.
 
 [MQTT](https://www.emqx.com/en/mqtt) is a kind of **lightweight IoT messaging protocol** based on the publish/subscribe model, which can provide real-time and reliable messaging service for IoT devices, only using very little code and bandwidth. It is suitable for devices with limited hardware resources and the network environment with limited bandwidth. Therefore, MQTT protocol is widely used in IoT, mobile internet, IoV, electricity power, and other industries.
 
-In this project, we will use Python to write a simple MQTT client on Raspberry Pi and implement connect, subscribe, unsubscribe, messaging, and other functions between this client and MQTT broker.
+In this project, we will use Python to write a simple [MQTT client](https://www.emqx.com/en/mqtt-client-sdk) on Raspberry Pi and implement connect, subscribe, unsubscribe, messaging, and other functions between this client and [MQTT broker](https://www.emqx.io).
 
 
-
-## Establish the environment  
+## Install the dependencies 
 
 ### Install Python3
 
@@ -187,25 +184,25 @@ Run the Python code and actively send messages.
 
 2. Use MQTT X client to connect to the MQTT broker and send messages to the topic `raspberry/topic`.
 
-   ![7B5ORTmqFbJJj6mM__thumbnail.png](https://static.emqx.net/images/cc93d1c6d99f3bfa3a78d8472a6209af.jpg)
+   ![MQTT X](https://static.emqx.net/images/cc93d1c6d99f3bfa3a78d8472a6209af.jpg)
 
 3. View the terminal information of Raspberry Pi, and you will see the messages published by MQTT X.
 
- 
-  ![ZKNT7l232qHsjQYC__thumbnail.png](https://static.emqx.net/images/9c4e5b191e9bd00317fed06f94b13850.png)
+
+     ![mqtt subscriber](https://static.emqx.net/images/9c4e5b191e9bd00317fed06f94b13850.png)
 
 ### Test publish message
 
 
 1. Subscribe to the topic `raspberry/topic` in the MQTT X client.
 
-1. Run Python code in the terminal.
+2. Run Python code in the terminal.
 
-![k19xv59gQdqnpPog__thumbnail.png](https://static.emqx.net/images/9ea832adda032c9297c84fbf585fb294.png)
+   ![mqtt publisher](https://static.emqx.net/images/9ea832adda032c9297c84fbf585fb294.png)
 
-1. View the messages published by the Raspberry Pi in the MQTT X client.
+3. View the messages published by the Raspberry Pi in the MQTT X client.
 
-   ![mp39coxpnEprWOE6__thumbnail.png](https://static.emqx.net/images/07ffb81c764145100b1e21572357c675.jpg)
+    ![MQTT X publish message](https://static.emqx.net/images/07ffb81c764145100b1e21572357c675.jpg)
 
 ### Test the will message 
 
@@ -214,13 +211,11 @@ Next, testing whether the will message, is set successfully.
 
 1. Subscribe to `raspberry/status` in the MQTT X client.
 
-   ![XKo2GYFsqSLc7nVH__thumbnail.png](https://static.emqx.net/images/c704c8b0f7117079306d16b5af8c2557.jpg)
+   ![subscribe to mqtt topic in the MQTT X](https://static.emqx.net/images/c704c8b0f7117079306d16b5af8c2557.jpg)
 
 2. Interrupt the program or disconnect the network of the Raspberry Pi.
 
-3. View the messages that `raspberry/status` received, in the MQTT X client.
-
-  ![RXNIVuQ7HK0z05RV__thumbnail.png](https://static.emqx.net/images/048da27682c9a86c536f85ffd6417bf2.jpg)
+3. View the messages that `raspberry/status` received, in the MQTT X client.  ![receive mqtt message](https://static.emqx.net/images/048da27682c9a86c536f85ffd6417bf2.jpg)
 
 
 
@@ -235,4 +230,3 @@ So far, you've learned how to simply use the MQTT service, although this is only
 3. You can access the MQTT broker through the Raspberry Pi and use various kinds of sensors and ESP modules to create many interesting IoT applications.
 
 Next, we will publish more articles about IoT development and Raspberry Pi. Stay tuned.
-

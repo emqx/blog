@@ -92,10 +92,10 @@ docker exec -it n2.test.net emqx_ctl cluster join emqx@n1.test.net
 ```
 [EMQ X] emqx shutdown for join
 Join the cluster successfully.
-Cluster status: #{running_nodes => ['emqx@n1.test.net','emqx@n2.test.net'], stopped_nodes => []} 
+Cluster status: #{running_nodes => ['emqx@n1.test.net','emqx@n2.test.net'], stopped_nodes => []}
 ```
 
-###  启动 HAProxy 2.4
+### 启动 HAProxy 2.4
 
 创建文件 `/tmp/haproxy.config`，内容如下：
 

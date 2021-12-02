@@ -1,4 +1,3 @@
-
 ## Introduction to EMQ X Data Persistence
 
 The main usage scenarios of data persistence include recording the client's online and offline status, subscribing topic information, message content and operations of sending message receipt after the message arrives to various databases such as Redis, MySQL, PostgreSQL, directing, Cassandra, AWS DynamoDB, which helps the external service query quickly or retaining the current running status in the service outage/client abnormal offline period, and restoring the previous status when the connection is restored. Persistence can also be used for the client proxy subscription. When the device client goes online, the persistence module directly loads the preset topic from the database and completes the proxy subscription, reduces the complexity of system design and reduces the communication cost of client subscription.
@@ -355,4 +354,3 @@ Each message detail will be stored in Redis Hash as the key in `mqtt:msg:{messag
 ## Summary
 
 The reader can read related information by using various [Redis client](https://redis.io/clients)  after understanding the data structure stored in Redis.
-

@@ -1,4 +1,3 @@
-
 本篇文章将使用 MQTT X 的脚本及定时功能模拟温湿度数据上报，EMQ X Edge 作为消息中间件进行消息转发，EMQ X Kuiper 进行消息接收并进行规则处理，最终将处理过的数据通过 EMQ X Edge 下发到 MQTT X。
 
 ![mqttxedgekuiper.png](https://static.emqx.net/images/9f96444f39724baa8ed5ee6d814618ed.png)
@@ -220,4 +219,3 @@ execute(handlePayload)
 除文章中所示例的 MQTT Source 和 MQTT Sink 外，Kuiper 还内置了许多多样化的 Source 和 Sink 配置，并且包含了与 EdgeX Foundry、KubeEdge、EMQ X Edge 等的集成能力。规则 SQL 内还支持 60+ 常见的函数，提供扩展点可以扩展自定义函数。提供了强大的插件系统，高度可扩展。
 
 本篇文章中所使用三个项目都完全开源，您可以到 GitHub（[EMQ X Kuiper](https://github.com/emqx/kuiper)、[EMQ X Edge](https://github.com/emqx/emqx)、[MQTTX](https://github.com/emqx/MQTTX)）中来提交使用过程中遇到的问题，或是 Fork 我们的项目向我们提交修改后的 PR，我们将会及时查阅和处理。也特此感谢社区中所有用户的贡献和反馈。
-

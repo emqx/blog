@@ -1,5 +1,3 @@
-
-
 **继 2019 年 1 月 25 日 EMQ 首款边缘计算产品 EMQ X  Edge （EMQ X 边缘消息服务器）发布之后，4 月 19 日 EMQ 发布了一个与 EMQ X Edge 协同工作的新产品 EMQ X Storm。该产品旨在打造一个便捷、高效、稳定的集中式云端管理套件。这是 EMQ 拥抱 5G 时代 IoT 与边缘计算的又一力作。**
 
 **EMQ X Storm 是一个适用于 EMQ X Edge 边缘消息服务器的管理套件，产品在设计之初重点关注了以下问题：**
@@ -67,4 +65,3 @@ EMQ X Edge 完整支持 MQTT V3.1/V3.1.1/V5.0 版本协议规范，并支持 MQT
 
 
 ![edgeoverview2.png](https://static.emqx.net/images/7684b76077568e1f130c248d3e560fe8.png)
-

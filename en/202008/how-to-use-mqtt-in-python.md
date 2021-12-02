@@ -1,9 +1,8 @@
-
 [Python](https://www.python.org/) is an interpreted, high-level, general-purpose programming language. Created by Guido van Rossum and first released in 1991, Python's design philosophy emphasizes code readability with its notable use of significant whitespace. Its language constructs and object-oriented approach aim to help programmers write clear, logical code for small and large-scale projects.[^1]
 
 [MQTT](https://www.emqx.com/en/mqtt) is a kind of **lightweight IoT messaging protocol** based on the publish/subscribe model, which can provide real-time and reliable messaging service for IoT devices, only using very little code and bandwidth. It is suitable for devices with limited hardware resources and the network environment with limited bandwidth. Therefore, MQTT protocol is widely used in IoT, mobile internet, IoV, electricity power, and other industries.
 
-This article mainly introduces how to use the **paho-mqtt** client and implement connection, subscribe, messaging, and other functions between the client and MQTT broker, in the Python project.
+This article mainly introduces how to use the **paho-mqtt** client and implement connection, subscribe, messaging, and other functions between the [MQTT client](https://www.emqx.com/en/mqtt-client-sdk) and [MQTT broker](https://www.emqx.io), in the Python project.
 
 
 
@@ -98,7 +97,7 @@ First, we define a while loop. In this loop, and we will set the MQTT client `pu
          msg_count += 1
 ```
 
-### Subscribe to messages
+### Subscribe
 
 Write the message callback function `on_message`. This function will be called after the client received messages from the MQTT Broker. In this function, we will print out the name of subscribed topics and the received messages. 
 
@@ -111,7 +110,7 @@ def subscribe(client: mqtt_client):
     client.on_message = on_message
 ```
 
-### The complete code
+### The full code
 
  **The code of publishing messages** 
 
@@ -172,7 +171,7 @@ if __name__ == '__main__':
 
 ```
 
-**The code of subscribing to messages**
+**The code of subscribing**
 
 ```python
 # python3.6
@@ -236,9 +235,9 @@ Run the code of publishing messages, we will see  that the client connects succe
 python3 pub.py
 ```
 
-![pub.png](https://static.emqx.net/images/8087a35e3b4c6e11e3b432dac024c420.png)
+![python publish mqtt messages](https://static.emqx.net/images/8087a35e3b4c6e11e3b432dac024c420.png)
 
-#### Subscribe to messages
+#### Subscribe
 
 Run the code of subscribing to messages, we will see  that the client connects successfully and receives the published messages successfully
 
@@ -246,7 +245,7 @@ Run the code of subscribing to messages, we will see  that the client connects s
 python3 sub.py
 ```
 
-![sub.png](https://static.emqx.net/images/24fa48443372da483f06f9cce06b32bc.png)
+![python mqtt subscribe](https://static.emqx.net/images/24fa48443372da483f06f9cce06b32bc.png)
 
 
 ## Summary
@@ -260,4 +259,3 @@ Next, we will publish more articles about IoT development and Python. Stay tuned
 
 
 [^1]: https://en.wikipedia.org/wiki/Python_(programming_language)
-

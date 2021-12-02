@@ -132,7 +132,3 @@ listener.tcp.example = 12345
 一个 Zone 定义了一组配置项 (比如最大连接数等)，Listener 可以通过配置项 `listener.<Protocol>.<Listener Name>.zone` 指定使用某个 Zone，以使用该 Zone 下的所有配置。多个 Listener 可以共享同一个 Zone。Zone 的命名规则为 `zone.<Zone Name>.xxx`，`Zone Name` 可以随意命名，但同样建议是全小写的英文单词，`xxx` 是具体的配置项。
 
 此时，我们的每个配置项都存在三个可用值，分别是全局的值，Zone 里设置的值以及默认值，它们的优先级顺序为：Zone > Global > Default。
-
-
-
-

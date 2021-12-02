@@ -1,5 +1,3 @@
-
-
 ## 概述
 
 该文章描述了如何在 EdgeX 中使用 [Kuiper](https://github.com/lf-edge/ekuiper) 规则引擎，根据分析结果来实现对设备的控制。为了便于理解，该文章使用 [device-virtual](https://github.com/edgexfoundry/device-virtual-go)示例，它对device-virtual服务发送的数据进行分析，然后根据由Kuiper规则引擎生成的分析结果来控制物联网设备 。
@@ -212,4 +210,3 @@ Kuiper 使用 [Go模板](https://golang.org/pkg/text/template/) 从分析结果�
 
 - [EMQ X Kuiper Github](https://github.com/emqx/kuiper/)
 - [EMQ X Kuiper 参考指南](https://github.com/emqx/kuiper/blob/edgex/docs/en_US/reference.md)
-

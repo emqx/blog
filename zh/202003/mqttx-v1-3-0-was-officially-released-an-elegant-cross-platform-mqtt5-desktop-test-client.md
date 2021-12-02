@@ -1,5 +1,3 @@
-
-
 [MQTT X](https://mqttx.app) 是由全球领先的开源物联网中间件提供商 [EMQ](https://www.emqx.com/zh) 开源的一款跨平台 **MQTT 5.0** 桌面测试客户端，它支持 macOS，Linux，Windows。MQTT X 的用户界面借助聊天软件的形式简化了页面的操作逻辑，用户可以快速创建多个同时在线的 **MQTT 客户端**，方便测试 MQTT/TCP、MQTT/TLS、MQTT/WebSocket  的连接/发布/订阅功能及其他 **MQTT 协议** 特性。
 
 MQTT X 网站：https://mqttx.app
@@ -43,4 +41,3 @@ MQTT X v1.3.0 版本下载：https://github.com/emqx/MQTTX/releases/tag/v1.3.0
 - 优化了证书选择，可以支持选择更多的证书格式文件
 
 该项目完全开源，您可以到 [GitHub](https://github.com/emqx/MQTTX/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc) 来提交使用过程中遇到的问题，或是 Fork MQTT X 项目向我们提交修改后的 PR，我们将会及时查阅和处理。
-

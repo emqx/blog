@@ -1,4 +1,3 @@
-
 [Electron](https://www.electronjs.org/) is an open-source software framework developed and maintained by GitHub. It allows for the development of desktop GUI applications using web technologies: it combines the Chromium rendering engine and the Node.js runtime. Electron is the main GUI framework behind several notable open-source projects including Atom, GitHub Desktop, Light Table, Visual Studio Code, and WordPress Desktop.[^1]
 
 A basic Electron includes three files: `package.json` (metadata) `main.js` (code) and `index.html` (graphical user interface). The frame is provided by the Electron executable file (electron.exe on Windows, electron.app on macOS, electron on Linux). Developers are free to add flags, customize icons, rename or edit Electron executable files.
@@ -330,4 +329,3 @@ So far, we have completed that use Electron to create a simple MQTT desktop clie
 
 
 [^1]:  https://en.wikipedia.org/wiki/Electron_(software_framework)
-

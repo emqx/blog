@@ -1,5 +1,3 @@
-
-
 > This release announcement also includes content of 0.3.2 & 0.3.1.
 
 Date: 2020/5/7
@@ -53,4 +51,3 @@ For more details: [EMQ Website](https://github.com/lf-edge/ekuiper) , [Kuiper Gi
 ### Contact
 
 If having any problems for Kuiper, feel free to contact us through [contact@emqx.io](mailto:contact@emqx.io)
-

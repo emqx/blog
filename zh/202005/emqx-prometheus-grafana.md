@@ -1,4 +1,3 @@
-
 > [Prometheus](https://prometheus.io/) 是由 SoundCloud 开源监控告警解决方案，支持多维 [数据模型](https://prometheus.io/docs/concepts/data_model/)（时序由 metric 名字和 k/v 的 labels 构成），具备灵活的查询语句（[PromQL](https://prometheus.io/docs/querying/basics/)），支持多种数据采集 [exporters](https://prometheus.io/docs/instrumenting/exporters/)；支持告警管理，基于指标实现告警监控；支持多种统计数据模型，图形化展示友好，图形展示除了内置的浏览器，也支持 Grafana 集成。
 
 
@@ -487,6 +486,3 @@ emqx_session_discarded 0
 # TYPE emqx_session_terminated counter
 emqx_session_terminated 0
 ```
-
-
-

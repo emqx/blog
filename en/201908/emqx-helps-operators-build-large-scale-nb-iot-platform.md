@@ -1,5 +1,3 @@
-
-
 NB-IoT is a new type of cellular technology developed by the 3GPP standardization organization. It belongs to the low-power wide-area (LPWA) IoT connection, that is mainly used to connect terminals with limited bandwidth resources, allowing terminals to collect and exchange data with less resources than GRPS, 3G, LTE and other technologies.
 
 NB-IoT has developed rapidly in 2017-2018, and many operators around the world have realized commercial deployment one after another. The low cost, low power consumption and wide coverage of NB-IoT enable users to implement new scenarios and applications that traditional cellular networks cannot support.
@@ -33,7 +31,3 @@ EMQ X's innovative distributed clustering solution enables automatic addition of
 ![WX20190803150105.png](https://static.emqx.net/images/900e7fe329d84d87e25b631d3bcf6879.png)
 
 EMQ X has the capabilities of mass equipment access, 10 million high concurrency, IoT full protocol stack, and millisecond low latency that enable the carrier-grade IoT platform to be built in a few months, and effectively supports the landing and commercial operation of the operator's NB-IoT and even the whole IoT platform strategy.
-
-
-
-

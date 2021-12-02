@@ -1,5 +1,3 @@
-
-
 [MQTT](https://en.wikipedia.org/wiki/MQTT) is a lightweight and flexible protocol for exchanging IoT messages and delivering data. It is used to achieve a balance between flexibility and hardware/internet resources for IoT developers.
 
 [Kotlin](https://kotlinlang.org/) is a programming language developed by  JetBrains. Kotlin is based on the JVM, so developers can easily use it for Android development, and it supports mixed writing of Kotlin and Java.
@@ -207,4 +205,3 @@ So far, we have finished the construction of MQTT client on the Android and impl
 MQTT can provide the real-time and reliable message service for connecting remote devices, only with a few code and limited bandwidth. Since it is a kind of low-cost, low-bandwidth occupancy instant communicating protocol, it is widely used for IoT, small size equipments, mobile applications, etc.
 
 Kotlin is also a language promoted by Google, and we can develop more interesting applications by using the MQTT protocol and [MQTT cloud service](https://www.emqx.com/en/cloud).
-

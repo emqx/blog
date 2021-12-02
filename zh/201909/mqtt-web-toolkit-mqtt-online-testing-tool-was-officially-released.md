@@ -1,5 +1,3 @@
-
-
 [MQTT Web Toolkit ](http://tools.emqx.io)是 EMQ 最近开源的一款 MQTT (WebSocket) 测试工具，支持线上 ([tools.emqx.io](http://tools.emqx.io)) 访问使用。该工具采用了聊天界面形式，简化了页面操作逻辑，方便用户快速测试验证MQTT应用场景。
 
 
@@ -41,4 +39,3 @@
 
 
 ![二维码](https://static.emqx.net/images/b99a97727d6f86a9912846e145b8b124.jpg)
-

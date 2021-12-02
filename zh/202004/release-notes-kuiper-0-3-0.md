@@ -1,5 +1,3 @@
-
-
 日期：2020/4/7
 
 Kuiper 团队宣布发布 Kuiper 0.3.0
@@ -40,4 +38,3 @@ Github仓库： https://github.com/emqx/kuiper
 ### 联系
 
 如果对Kuiper有任何问题，请随时通过contact@emqx.io与我们联系。
-

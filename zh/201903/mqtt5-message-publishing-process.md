@@ -70,6 +70,3 @@ MQTT 5.0 在 QoS 上的升级主要体现在 QoS2 的接收者在处理报文的
 - 在 QoS2 的接收者端，除了之前返回的 PacketId 之外，还返回了标识 Reason Code 的 PUBREC 报文。
 
 EMQ X 发布的最新版本 3.0 已经包含了对 MQTT 5.0 协议的支持，欢迎读者试用。
-
-
-

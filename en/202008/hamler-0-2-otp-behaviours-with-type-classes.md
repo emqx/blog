@@ -1,4 +1,3 @@
-
 ## Introducing Hamler 0.2
 
 We are proud to announce that Hamler 0.2 has been released.

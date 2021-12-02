@@ -1,5 +1,3 @@
-
-
 Date: 2020/4/7
 
 The Kuiper team would like to announce the release of Kuiper 0.3.0. 

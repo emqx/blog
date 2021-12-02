@@ -1,4 +1,3 @@
-
 ## Concept of Bridge
 
 Bridge is a way to connect multiple EMQ X or other MQTT message middleware. Unlike clusters, topic trees and routing tables are not replicated between nodes operating in bridge mode. What the bridge mode does is:
@@ -367,4 +366,3 @@ View the data table records in the command line to get the following data:
 
 
 So far, we have implemented business development using the rules engine bridge message through the rules engine.
-

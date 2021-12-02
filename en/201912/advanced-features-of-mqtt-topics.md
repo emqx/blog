@@ -74,4 +74,3 @@ For example, if we use sensors to monitor the temperature, humidity, and air qua
 - `myhome/kitchen/airquality`
 
 When we want to get all the bedroom data, we can subscribe to the topic `myhome/bedroom/+`. When we want to get the temperature data of three rooms, we can subscribe the topic `myhom/+/temperature`. When we want to get all the data, we can subscribe to `myhome/#` or `#`.
-

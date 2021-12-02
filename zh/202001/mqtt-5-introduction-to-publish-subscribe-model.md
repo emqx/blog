@@ -39,6 +39,3 @@ MQTT 主题中可以有多个层级，并且允许对一个或多个层级进行
 ![User Guide_1备份 2.jpg](https://static.emqx.net/images/4c9c3c5583fea87c52cce7f6845faba9.jpg)
 
 希望通过这篇简短的文章，您能够对发布订阅模式有一个直观的了解。有关 MQTT 的其他特性，我们会在后续的文章中展开介绍。
-
-
-

@@ -1,4 +1,3 @@
-
 Rust is a multi-paradigm programming language designed for performance and safety, especially safe concurrency. Rust is syntactically similar to C++, but can guarantee memory safety by using a borrow checker to validate references. Rust achieves memory safety without garbage collection, and reference counting is optional.[^1]
 
 [MQTT](https://www.emqx.com/en/mqtt) is a kind of **lightweight IoT messaging protocol** based on the publish/subscribe model. It can use very little code and bandwidth to provide a real-time reliable message service for networked equipment. Also, it is widely used in the IoT, mobile Internet, smart hardware, IoV, power and energy industries.
@@ -383,4 +382,3 @@ So far, we have completed using the **paho-mqtt** client to connect to the [publ
 
 
 [^1]: https://en.wikipedia.org/wiki/Rust_(programming_language)
-

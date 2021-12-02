@@ -1,4 +1,3 @@
-
 本章节以在 `CentOS 7.2` 中的实际例子来说明如何通过 PostgreSQL 来存储相关的信息。
 
 作为开源关系数据库重要一员，PostgreSQL 标榜自己是世界上最先进的开源数据库，相比于其他开源关系数据库如 MySQL，PostgreSQL 是完全由社区驱动的开源项目，由全世界超过 1000 名贡献者所维护。PostgreSQL 提供了单个完整功能的版本，而不像 MySQL 那样提供了多个不同的社区版、商业版与企业版。PostgreSQL 基于自由的 BSD/MIT 许可，组织可以使用、复制、修改和重新分发代码，只需要提供一个版权声明即可。
@@ -415,4 +414,3 @@ backend.pgsql.max_returned_count = 500
 ## 总结
 
 读者在理解了 PostgreSQL 中所存储的数据结构、自定义 SQL 之后，可以结合 PostgreSQL 拓展相关应用。
-

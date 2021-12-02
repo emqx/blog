@@ -1,6 +1,3 @@
-
-
-
 Hello! Things are moving fast. Thanks to a great community & fantastic dedicated EMQX open-source team, we are developing features & fixes at a break neck pace.
 
 February was a hotpot of cutting edge protocol support, community engagement, security and more features. Here’s what we have been up to.

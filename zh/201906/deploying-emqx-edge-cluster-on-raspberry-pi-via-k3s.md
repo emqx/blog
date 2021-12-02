@@ -1,4 +1,3 @@
-
 ## 环境
 
 k3s需要raspberrypi可以正常访问google，如果没有条件的话推荐在AWS上尝试部署。

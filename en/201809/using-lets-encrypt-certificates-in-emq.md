@@ -1,4 +1,3 @@
-
 ## EMQ version: 2.3.3
 
 In our previous article we have shown [how to secure EMQ connection with
@@ -214,4 +213,3 @@ I hope you like our article. If you have any questions, please visit [EMQ X Webs
 
 
 Or write to us: contact@emqx.io
-

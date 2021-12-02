@@ -250,4 +250,3 @@ MongoDB 命令行中查看数据表记录得到数据如下：
 ![mongruleresult2x.png](https://static.emqx.net/images/cc3b8eb17bcb604f8318df8fd8113e3b.png)
 
 至此，我们通过规则引擎实现了使用规则引擎存储消息到 MongoDB 数据库的业务开发。
-

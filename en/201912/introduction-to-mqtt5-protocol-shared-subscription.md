@@ -1,4 +1,3 @@
-
 ### Overview
 
 Shared subscription is a new feature introduced by MQTT 5.0 protocol, which is equivalent to the load balancing function of subscribers.
@@ -51,4 +50,3 @@ Start a publishing client to publish messages to the topic.
 ![image20191111144814890.png](https://static.emqx.net/images/d78a66888dfa5664dc44a819a5b195c6.png)
 
 `$ share / a / topic` and` $ share / b / topic` belong to different session groups. The non-shared subscription  `topic` is load-balanced across all session groups. The client `sub3` receives all messages because there is only one session in the group, and the clients` sub1` and `sub2` receive messages randomly according to the random policy we configured.
-

@@ -1,4 +1,3 @@
-
 MQTT v5 brings lots of new features, and we will try our best to present these features in an easy-to-understand way and discuss the impact of these features on developers. So far, we have discussed these [new features of MQTT v5](https://www.emqx.com/en/mqtt/mqtt5). Today, we will continue to discuss: **Request Response**.
 
 ### Request Response
@@ -41,4 +40,3 @@ To solve this problem, MQTT 5.0 defines a new attribute called response message 
 - Pay particular attention to cases that multiple responders subscribe to the same request topic and multiple requesters subscribe to the same response topic.
 
 [^1]: When QoS is greater than 0, the publisher can ensure that messages are delivered to the server and the server retained message will be delivered to the subscriber.
-

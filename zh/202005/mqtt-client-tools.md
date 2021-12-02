@@ -282,4 +282,3 @@ MQTT WebSocket Toolkit 的界面和交互沿用了 [MQTT X](https://mqttx.app/zh
 **在线地址：** [MQTT WebSocket Toolkit](http://tools.emqx.io/)
 
 **项目地址：** [MQTT WebSocket Toolkit GitHub](https://github.com/emqx/MQTT-Web-Toolkit)
-

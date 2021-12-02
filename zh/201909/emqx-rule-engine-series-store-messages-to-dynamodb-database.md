@@ -1,4 +1,3 @@
-
 ## Amazon DynamoDB 介绍
 
 Amazon DynamoDB 是一个完全托管的 NoSQL 数据库服务，支持键值和文档数据结构。
@@ -268,5 +267,3 @@ DynamoDB 表名，Hash Key 以及 Range Key。
 aws cli 命令行中查看数据表记录得到数据如下：
 
 至此，我们通过规则引擎实现了使用规则引擎存储消息到 DynamoDB 的业务开发。
-
-

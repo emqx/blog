@@ -1,5 +1,3 @@
-
-
 This chapter uses  a practical example from `CentOS 7.2` to illustrate how to store related information through PostgreSQL.
 
 As an important member of open source relational databases, PostgreSQL claims to be the most advanced open source database in the world. Compared to other open source relational databases such as MySQL, PostgreSQL is a completely community-driven open source project, maintained by more than 1,000 contributors worldwide . PostgreSQL offers a single, full-featured version, unlike MySQL, which offers multiple different community, business, and enterprise versions. PostgreSQL is based on a free BSD / MIT license, and organizations can use, copy, modify, and redistribute code by providing a copyright notice.

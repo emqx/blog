@@ -1,4 +1,3 @@
-
 ## 系统要求
 
 - CentOS 6.8
@@ -116,4 +115,3 @@ $ cd emqx $ ./bin/emqx start emqx 3.1 is started successfully! $ ./bin/emqx_ctl 
 ```
 
 4.EMQ X 启动成功，如何使用请参考[官方文档](https://docs.emqx.io/broker/v3/cn/getstarted.html)
-

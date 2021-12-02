@@ -1,5 +1,3 @@
-
-
 ## Overview
 
 When the client disconnects, a will message is sent to the relevant subscriber. Will Messages will be sent when:
@@ -64,7 +62,3 @@ Here's how to use Retained messages with Will messages.
 1. The will message of client A is set to "offline", and the topic of the will is set to  `A/status` that is the same as the topic of a normal sending status;
 2. When client A is connected, send the "Online" Retained message to the topic `A/status`. When other clients subscribe to the topic` A/status`, they obtain the Retained message as "online";
 3. When client A disconnects abnormally, the system automatically sends an "offline" message to the topic `A/status`. Other clients that subscribe to this topic will immediately receive an" offline "message; if the will message is set  Retained, and when a new client subscribing to the `A/status` topic comes online, the message obtained is“ offline ”.
-
-
-
-

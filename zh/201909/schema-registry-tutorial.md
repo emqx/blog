@@ -1,5 +1,3 @@
-
-
 物联网设备终端种类繁杂，各厂商使用的编码格式各异，所以在接入物联网平台的时候就产生了统一数据格式的需求，以便平台之上的应用进行设备管理。
 
 EMQ X 企业版 3.4.0 提供了 Schema Registry 功能，提供编解码能力。Schema Registry 管理编解码使用的 Schema、处理编码或解码请求并返回结果。Schema Registry 配合规则引擎，可适配各种场景的设备接入和规则设计。
@@ -422,4 +420,3 @@ $ python3 http_parser_server.py
 Select Data 是经过 SQL 语句筛选之后的数据，Envs 是规则引擎内部可用的环境变量，Action Init Params 是动作的初始化参数。这三个数据均为 `Map` 格式。
 
 Selected Data 里面的两个字段 `decoded_data` 和 `encoded_data` 对应 SELECT 语句里面的两个 AS。因为 `decoded_data` 是编码然后再解码之后的结果，所以它又被还原为了我们发送的内容 "hello"，表明编解码插件工作正常。
-

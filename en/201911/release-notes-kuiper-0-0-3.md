@@ -37,4 +37,3 @@ If having any problems for Kuiper, feel free to contact us through contact@emqx.
 ------
 
 Welcome to our open source project [github.com/emqx/emqx](https://github.com/emqx/emqx). Please visit the [ documentation](https://docs.emqx.io) for details.
-

@@ -1,4 +1,3 @@
-
 [Flutter](https://flutter.dev/) 是 Google 推出并开源的移动应用开发框架，主打跨平台、高保真、高性能。开发者可以通过 Dart 语言开发 App，一套代码同时运行在 iOS 和 Android 平台。 Flutter 提供了丰富的组件、接口，开发者可以快速地为 Flutter 添加 native 扩展。同时 Flutter 还使用  Native 引擎渲染视图，这无疑能为用户提供良好的体验。
 
 [MQTT](https://www.emqx.com/zh/mqtt) 是一种基于发布/订阅模式的 **轻量级物联网消息传输协议** ，可在严重受限的硬件设备和低带宽、高延迟的网络上实现稳定传输。它凭借简单易实现、支持 QoS、报文小等特点，占据了物联网协议的半壁江山。
@@ -201,4 +200,3 @@ client.disconnect();
 至此，我们完成了在 Android 平台上利用 Flutter 构建 MQTT 应用，实现了客户端与 MQTT 服务器的连接、订阅、取消订阅、收发消息等功能。
 
 Flutter 通过统一的开发语言和跨平台特性让开发强大的移动应用变得十分容易，它将来可能会是开发移动应用的最佳解决方案。结合 Flutter、MQTT 协议及 [MQTT 云服务](https://www.emqx.com/zh/cloud)，我们可以开发更多有趣的应用。
-

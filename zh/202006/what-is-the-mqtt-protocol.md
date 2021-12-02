@@ -147,4 +147,3 @@ EMQ 也提供了支持浏览器访问的 [MQTT 在线客户端工具](https://ww
 [^3]: https://github.com/mqtt/mqtt.github.io/wiki/history
 [^4]: https://www.cnblogs.com/softidea/p/5764051.html
 [^5]: https://pragprog.com/articles/erlang
-

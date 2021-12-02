@@ -158,5 +158,3 @@ SQL 条件输入输出无误后，我们继续添加相应动作，配置写入 
 ![image20190725113422461.png](https://static.emqx.net/images/db95b74238f0f2c2e2fadb23ac33aaf0.png)
 
 至此，我们通过规则引擎实现了使用规则引擎存储消息到 OpenTSDB 数据库的业务开发。
-
-
