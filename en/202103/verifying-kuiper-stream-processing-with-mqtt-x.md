@@ -1,5 +1,3 @@
-
-
 This article will use the MQTT X scripts and timing function to simulate reporting temperature and humidity data. EMQ X Edge acts as the messaging middleware to forward messages, and EMQ X Kuiper performs receiving messages and processing rules. Finally, the processed data will be sent to MQTT X via EMQ X Edge.
 
 ![mqttxedgekuiper.png](https://static.emqx.net/images/9f96444f39724baa8ed5ee6d814618ed.png)
@@ -219,4 +217,3 @@ This article completes an easy tutorial on using the MQTT X client to verify the
 In addition to the MQTT Source and MQTT Sink exemplified in the article, Kuiper has many diverse Source and Sink configurations built in and includes the ability to integrate with EdgeX Foundry, KubeEdge, EMQ X Edge, etc. Rule SQL also support for 60+ common functions, provide extension points available to extend custom functions. A powerful plugin system is provided that is highly extensible.
 
 The three projects used in this article are all fully open source. You can go to GitHub ([EMQ X Kuiper](https://github.com/emqx/kuiper), [EMQ X Edge](https://github.com/emqx/emqx), [MQTTX]( https://github.com/emqx/MQTTX)) to submit problems you encountered during use, or to Fork our projects and submit revised PRs to us, which we will review and address promptly. We would also like to thank all the users in the community for their contributions and feedback.
-

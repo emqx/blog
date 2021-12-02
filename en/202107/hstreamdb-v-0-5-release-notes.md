@@ -94,4 +94,4 @@ We also plan to complete the integration with [EMQ X](https://www.emqx.com/en/pr
 
 ## Future outlook
 
-HStreamDB, the pioneer of the streaming database, is steadily moving towards the milestone of being ready for use in production. We will continue to develop HStreamDB, improving its functionality, stability and reliability. We believe that not long users can use HStreamDB to implement real-time applications and obtain instant data insights quickly and straightforwardly. Also, we would like to thank our community members for every use and every contribution. 
+HStreamDB, the pioneer of the streaming database, is steadily moving towards the milestone of being ready for use in production. We will continue to develop HStreamDB, improving its functionality, stability and reliability. We believe that not long users can use HStreamDB to implement real-time applications and obtain instant data insights quickly and straightforwardly. Also, we would like to thank our community members for every use and every contribution.

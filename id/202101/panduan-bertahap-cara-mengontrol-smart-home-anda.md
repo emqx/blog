@@ -1,4 +1,3 @@
-
 ## Apa Itu Teknologi Smart Home?
 
 Teknologi smart home, atau yang juga dikenal sebagai [home automation](https://internetofthingsagenda.techtarget.com/definition/smart-home-or-building) atau *domotics* (dari bahasa Latin "domus" yang berarti rumah), [memberikan si pemilik rumah keamanan](https://internetofthingsagenda.techtarget.com/blog/IoT-Agenda/Why-the-smart-home-needs-to-get-even-smarter), kenyamanan, kemudahan, dan menghemat energi dengan menggunakan perangkat cerdas, seringkali dengan aplikasi smart home di HP atau perangkat lainnya. Sebagai sebuah bagian dari [Internet of Things (IoT)](https://internetofthingsagenda.techtarget.com/definition/Internet-of-Things-IoT), sistem smart home dan perangkat lainnya bekerja sama untuk mendapatkan pemakaian data dan aksi mengotomatisasi lainnya berdasarkan preferensi si pengguna.

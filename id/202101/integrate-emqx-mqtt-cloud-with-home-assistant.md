@@ -1,4 +1,3 @@
-
 Dalam beberapa tahun terakhir ini, permintaan masyarakat akan keamananan, kemudahan, dan kenyamanan dalam rumah telah meningkat. Home automation menjadi semakin populer. [Home Assistant](https://www.home-assistant.io/), sebuah platform home automation open-source yang populer menyediakan system kontrol terpusat yang aman dan mudah digunakan. Di dalam artikel ini, saya akan mengajar Anda cara menggunakan [EMQ X Cloud MQTT Broker](https://www.emqx.com/en/cloud) untuk dikoneksikan dengan Home Assistant.
 
 ## Apa Itu MQTT Broker?

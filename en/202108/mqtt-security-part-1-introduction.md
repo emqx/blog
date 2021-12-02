@@ -1,4 +1,4 @@
-In this post, we will introduce [MQTT broker](https://www.emqx.com/en/products/emqx) security concepts and challenges, as well as how EMQ X handles security at a relatively high level. We assume that you are already familiar with the basics of the MQTT protocol.
+In this post, we will introduce [MQTT broker](https://www.emqx.com/en/products/emqx) security concepts and challenges, as well as how EMQX handles security at a relatively high level. We assume that you are already familiar with the basics of the MQTT protocol.
 
 ![MQTT Security](https://static.emqx.net/images/ae70590c49a9f31653af992bbef87578.png)
  
@@ -21,11 +21,11 @@ With regards to confidentiality and integrity, since MQTT is a protocol working 
 
 - **Transport Layer**
   
-  TLS (Transport Layer Security), or in some context, the new-deprecated name SSL, aims primarily to provide privacy and data integrity between two or more communicating computer applications. Running on top of TLS, MQTT can take full advantage of its security features to secure data integrity and client trustworthy. We’ll get into more details about TLS in EMQ X in the coming posts.
+  TLS (Transport Layer Security), or in some context, the new-deprecated name SSL, aims primarily to provide privacy and data integrity between two or more communicating computer applications. Running on top of TLS, MQTT can take full advantage of its security features to secure data integrity and client trustworthy. We’ll get into more details about TLS in EMQX in the coming posts.
 
 - **Application Layer**
   
-  Client ID, username and password presented in MQTT protocol allows us to implement application level authentication and authorisation. We’ll learn more about EMQ X’s authentication (authn) and authorization (authz) in detail in the coming posts.
+  Client ID, username and password presented in MQTT protocol allows us to implement application level authentication and authorisation. We’ll learn more about EMQX’s authentication (authn) and authorization (authz) in detail in the coming posts.
 
 - **User Data Layer**
   

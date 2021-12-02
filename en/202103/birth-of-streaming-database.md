@@ -1,4 +1,3 @@
-
 ## Database history review
 
 As one of the cornerstones for modern software systems, databases have been studied for a long time. Although researches about databases have produced four Turing Award winners so far, it remains one of the liveliest and most innovative computer science topics. Ever since the 1970s, Edgar F. Codd proposed the relational model, relational databases based on the IBM SystemR prototype have proliferated and have been successful in many industrial applications. Even today, it remains the absolute mainstream.

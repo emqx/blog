@@ -1,4 +1,3 @@
-
 With the progress of the 5G network technology, the IoT world is also developing rapidly. Today, countless IoT devices are shining in all corners of the world.
 
 However, unlike the traditional Internet, end-to-end communication is always a difficult part of the IoT business. The differences in the IoT communication protocols used will cause a huge gap in communication between devices. It is just like people cannot communicate properly with each other if they speak different languages.

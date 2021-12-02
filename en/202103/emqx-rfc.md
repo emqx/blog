@@ -1,4 +1,3 @@
-
 To make our open source projects moving forward in a more innovative, positive, and efficient rapid iterative state, the EMQ X team announced that started to officially adopt the RFC process to collect suggestions from the community and to continuously improve the product's functions.
 
 > RFC (Request For Comment) is a kind of process to ensure that major feature updates and architectural changes move forward smoothly. 
@@ -91,4 +90,3 @@ You can also refer to the EIP documents in the implemented instances. Through re
 So far, we would like to welcome all readers, users, and developers to actively participate in the EIP project and to suggest new and powerful features and ideas for EMQ X. 
 
 We use the EMQ X EIP to make every voice heard and echoed, and allow EMQ X to become the open source project which all community users will be proud of. A great open source project for the IoT era will be created by us all.
-

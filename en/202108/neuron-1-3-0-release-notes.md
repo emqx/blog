@@ -67,4 +67,4 @@ The open source Neuron v2.0 will bring more users in the industry one-stop acces
 
 The open source Neuron v2.0 will bring one-stop access support for edge industrial data to more users in the industry. A more open product form will also accelerate industrial integration and jointly promote the development of industrial Internet with upstream and downstream partners.
 
-Please stay informed with us! 
+Please stay informed with us!
