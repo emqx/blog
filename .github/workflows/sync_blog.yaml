@@ -1,0 +1,48 @@
+name: Sync Blog
+
+on:
+  schedule:
+    - cron: "30 4 * * *"
+    - cron: "0 11 * * *"
+  workflow_dispatch:
+
+jobs:
+  sync_blog:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set git
+        run: |
+          git config --global user.name "Swilder-M"
+          git config --global user.email "Swilder-M@users.noreply.github.com"
+
+      - name: Checkout code
+        uses: actions/checkout@v2
+        with:
+          ref: sync_blog
+          token: ${{ secrets.GH_TOKEN }}
+
+      - name: Sync blogs
+        run: python3 .ci/sync_blog.py $(pwd)
+
+      - name: Push code
+        id: push_code
+        run: |
+          if git diff --quiet; then
+            echo "No changes to push"
+            echo "::set-output name=changed::0"
+          else
+            git add .
+            git commit -m "sync blog"
+            git push origin sync_blog
+            echo "::set-output name=changed::1"
+          fi
+
+      - name: Pull request
+        uses: repo-sync/pull-request@v2
+        if: steps.push_code.outputs.changed == 1
+        with:
+          source_branch: sync_blog
+          destination_branch: main
+          github_token: ${{ secrets.GH_TOKEN }}
+          pr_title: "sync blogs"
+          pr_reviewer: "CrazyWisdom,Swilder-M"
