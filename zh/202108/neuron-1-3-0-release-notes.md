@@ -2,7 +2,7 @@
 
 Neuron 支持包括 Modbus、OPCUA、三菱、西门子、罗克⻙尔⾃动化、OMRON 等在内的数十种工业设备协议的接入与转换，无需容器框架，超低资源占用，支持 X86、ARM 架构，是构建工业物联网平台的理想选择。
 
-**Neuron v1.3.0 已于近日正式发布**，下载地址：[https://www.emqx.com/zh/downloads?product=neuron](https://www.emqx.com/zh/downloads?product=neuron)
+**Neuron v1.3.0 已于近日正式发布**，下载地址：[https://www.emqx.com/zh/try?product=neuron](https://www.emqx.com/zh/try?product=neuron)
 
 
 
