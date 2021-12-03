@@ -9,6 +9,7 @@ on:
 jobs:
   sync_blog:
     runs-on: ubuntu-latest
+    if: github.repository == 'emqx/blog'
     steps:
       - name: Set git
         run: |
@@ -20,6 +21,7 @@ jobs:
         with:
           ref: sync_blog
           token: ${{ secrets.GH_TOKEN }}
+          fetch-depth: 0
 
       - name: Sync blogs
         run: python3 .ci/sync_blog.py $(pwd)
@@ -27,6 +29,7 @@ jobs:
       - name: Push code
         id: push_code
         run: |
+          git diff --name-only
           if git diff --quiet; then
             echo "No changes to push"
             echo "::set-output name=changed::0"
@@ -45,4 +48,4 @@ jobs:
           destination_branch: main
           github_token: ${{ secrets.GH_TOKEN }}
           pr_title: "sync blogs"
-          pr_reviewer: "CrazyWisdom,Swilder-M"
+          pr_reviewer: "CrazyWisdom"

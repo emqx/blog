@@ -19,6 +19,6 @@ if __name__ == '__main__':
             if not os.path.exists(os.path.join(base_path, blog_lang, blog_date)):
                 os.makedirs(os.path.join(base_path, blog_lang, blog_date))
 
-            with open(os.path.join(base_path, blog_lang, blog_date, blog_title_url + '.md'), 'w') as f:
-                f.write(blog_content.strip() + '\n')
+            f = open(os.path.join(base_path, blog_lang, blog_date, blog_title_url + '.md'), 'w')
+            f.write(blog_content.strip() + '\n')
             print(f'Update {blog_lang}/{blog_date}/{blog_title_url}')

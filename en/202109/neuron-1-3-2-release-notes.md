@@ -4,7 +4,7 @@ Neuron can access various industrial protocols and implement conversions between
 
 **Download link of the latest version:**
 
-[https://www.emqx.com/en/downloads?product=neuron](https://www.emqx.com/en/downloads?product=neuron)
+[https://www.emqx.com/en/try?product=neuron](https://www.emqx.com/en/try?product=neuron)
 
 
 
