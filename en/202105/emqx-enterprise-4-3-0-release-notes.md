@@ -5,7 +5,7 @@ EMQ X Enterprise is applicable to various IoT application scenarios, supports ar
 
 Introduction to EMQ X Enterprise: [https://www.emqx.com/en/products/emqx](https://www.emqx.com/en/products/emqx)
 
-Download address: [https://www.emqx.com/en/downloads](https://www.emqx.com/en/downloads?product=enterprise)
+Download address: [https://www.emqx.com/en/try](https://www.emqx.com/en/try?product=enterprise)
 
 
 ![EMQ X Enterprise](https://static.emqx.net/images/4b87d5ae6dc17bb84f6414e4d8fc504c.png)

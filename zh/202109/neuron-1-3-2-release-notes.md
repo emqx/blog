@@ -4,7 +4,7 @@ Neuron  可接入各种工业协议并进行转换，可实现数据采集、运
 
 **最新版本下载地址：**
 
-[https://www.emqx.com/zh/downloads?product=neuron](https://www.emqx.com/zh/downloads?product=neuron)
+[https://www.emqx.com/zh/try?product=neuron](https://www.emqx.com/zh/try?product=neuron)
 
 
 

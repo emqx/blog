@@ -2,7 +2,7 @@ As an important part of the [EMQ](https://www.emqx.com/en) industrial Internet c
 
 Neuron supports the access and conversion of dozens of industrial equipment protocols including Modbus, OPCUA, Mitsubishi, Siemens, Rock Automation, OMRON, etc., without the need for a container framework. It has ultra-low resource consumption and supports X86 and ARM architectures. It is an ideal choice for building an industrial IoT platform.
 
-**Neuron v1.3.0 has been officially released recently**, and the download link is : [https://www.emqx.com/en/downloads?product=neuron](https://www.emqx.com/en/downloads?product=neuron)
+**Neuron v1.3.0 has been officially released recently**, and the download link is : [https://www.emqx.com/en/try?product=neuron](https://www.emqx.com/en/try?product=neuron)
 
 
 ## The protocol support list is expanded to cover the power industry

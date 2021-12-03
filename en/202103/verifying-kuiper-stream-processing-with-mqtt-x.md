@@ -44,7 +44,7 @@ $ docker run -p 9082:9082 -d emqx/kuiper-manager:1.0.2
 
 > Version: v4.2.4
 
-[Download link](https://www.emqx.com/en/downloads?product=nanomq) | [Installation document](https://docs.emqx.io/en/edge/latest/install.html)
+[Download link](https://www.emqx.com/en/try?product=nanomq) | [Installation document](https://docs.emqx.io/en/edge/latest/install.html)
 
 ```shell
 # Get a Docker mirroring
