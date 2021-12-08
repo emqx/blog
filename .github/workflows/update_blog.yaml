@@ -1,0 +1,24 @@
+name: Update Blog
+
+on:
+  push:
+    branches:
+      - draft-main
+
+jobs:
+  update_blog:
+    runs-on: ubuntu-latest
+    if: github.repository == 'emqx/blog'
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - name: Update blogs
+        env:
+          UPDATE_API: ${{ secrets.UPDATE_API }}
+          UPDATE_TOKEN: ${{ secrets.UPDATE_TOKEN }}
+        run: |
+          changed_files=$(git diff HEAD^ HEAD --name-only | grep -e "md$")
+          python3 .ci/update_blog.py $(pwd) $changed_files
