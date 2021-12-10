@@ -19,12 +19,17 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
         with:
-          ref: sync_blog
-          token: ${{ secrets.GH_TOKEN }}
           fetch-depth: 0
 
       - name: Sync blogs
-        run: python3 .ci/sync_blog.py $(pwd)
+        id: sync_blog
+        run: |
+          branch=$(date +%Y-%m-%d-%H-%M-%S)
+          git checkout -b $branch
+          python3 .ci/sync_blog.py $(pwd)
+          git status
+          git diff
+          echo "::set-output name=branch::$branch"
 
       - name: Push code
         id: push_code
@@ -36,7 +41,7 @@ jobs:
           else
             git add .
             git commit -m "sync blog"
-            git push origin sync_blog
+            git push origin ${{ steps.sync_blog.outputs.branch }}
             echo "::set-output name=changed::1"
           fi
 
@@ -44,7 +49,7 @@ jobs:
         uses: repo-sync/pull-request@v2
         if: steps.push_code.outputs.changed == 1
         with:
-          source_branch: sync_blog
+          source_branch: ${{ steps.sync_blog.outputs.branch }}
           destination_branch: main
           github_token: ${{ secrets.GH_TOKEN }}
           pr_title: "sync blogs"
