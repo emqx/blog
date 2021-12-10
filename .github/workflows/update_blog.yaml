@@ -3,7 +3,7 @@ name: Update Blog
 on:
   push:
     branches:
-      - draft-main
+      - main
 
 jobs:
   update_blog:
