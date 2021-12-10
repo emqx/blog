@@ -24,7 +24,10 @@ jobs:
           fetch-depth: 0
 
       - name: Sync blogs
-        run: python3 .ci/sync_blog.py $(pwd)
+        run: |
+          python3 .ci/sync_blog.py $(pwd)
+          git status
+          git diff
 
       - name: Push code
         id: push_code
