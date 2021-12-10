@@ -24,30 +24,25 @@ jobs:
       - name: Sync blogs
         id: sync_blog
         run: |
+          set -x
           branch=$(date +%Y-%m-%d-%H-%M-%S)
+          echo "::set-output name=branch::$branch"
           git checkout -b $branch
           python3 .ci/sync_blog.py $(pwd)
           git status
-          git diff
-          echo "::set-output name=branch::$branch"
-
-      - name: Push code
-        id: push_code
-        run: |
-          git diff --name-only
-          if git diff --quiet; then
+          if [ -z "$(git status --short)" ]; then
             echo "No changes to push"
             echo "::set-output name=changed::0"
           else
             git add .
             git commit -m "sync blog"
-            git push origin ${{ steps.sync_blog.outputs.branch }}
+            git push origin $branch
             echo "::set-output name=changed::1"
           fi
 
       - name: Pull request
         uses: repo-sync/pull-request@v2
-        if: steps.push_code.outputs.changed == 1
+        if: steps.sync_blog.outputs.changed == 1
         with:
           source_branch: ${{ steps.sync_blog.outputs.branch }}
           destination_branch: main
