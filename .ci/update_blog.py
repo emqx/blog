@@ -3,7 +3,11 @@ import sys
 
 import requests
 
-_, base_path, changed_files  = sys.argv
+base_path = sys.argv[1]
+if len(sys.argv) > 2:
+    changed_files = sys.argv[2]
+else:
+    changed_files = ''
 
 
 if __name__ == '__main__':
