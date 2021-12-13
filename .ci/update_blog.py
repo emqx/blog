@@ -21,6 +21,9 @@ if __name__ == '__main__':
         lang, _date, title = file_name.split('/')
         title = title.replace('.md', '')
         print(f'Updating {file_name}')
+        if not os.path.exists(os.path.join(base_path, file_name)):
+            print(f'Remove {file_name}')
+            continue
         with open(os.path.join(base_path, file_name), 'r') as f:
             content = f.read()
             response = requests.put(
