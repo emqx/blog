@@ -5,7 +5,7 @@
 
 ### 功能运行基本完成
 
-目前我们已基本完成了 2.0 版本较完整功能的运行，并开发了配套的 Web UI 来配置 Neuron，查看 Neuron 的连接状态、读写和监听设备数据。现在已经可以同时连接 OPC UA 和 [Modbus](https://www.emqx.com/zh/blog/building-modbus-based-iiot-app-with-neuron) 的设备，并读写其数据。
+目前我们已基本完成了 2.0 版本较完整功能的运行，并开发了配套的 Web UI 来配置 Neuron，查看 Neuron 的连接状态、读写和监听设备数据。现在已经可以同时连接 OPC UA 和 Modbus 的设备，并读写其数据。
 
 ### 聚焦数据采集、聚合与转发
 

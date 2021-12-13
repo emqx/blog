@@ -15,7 +15,7 @@ Linux 用户可在 Snapcraft 中进行下载：[https://snapcraft.io/mqttx](http
 
 ## 新功能概览
 
-- 支持在消息框内显示[保留消息](https://www.emqx.com/zh/blog/message-retention-and-message-expiration-interval-of-emqx-mqtt5-broker)的标识
+- 支持在消息框内显示保留消息的标识
 
 ## 修复及其优化
 

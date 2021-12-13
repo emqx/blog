@@ -4,7 +4,7 @@
 
 - 完善了 Webserver 部分的 http 请求接口功能。包括用户的登录和注销，节点的设置、启动和停止，datatag 的增加、删除、订阅和读写功能，group config 的配置更新等。
 - 完善了 [MQTT](https://www.emqx.com/zh/mqtt) 的部分的接口功能。包括支持 Webserver 部分的功能接口，有支持节点控制，datatag的增加、删除、修改、查找的功能，支持 datatag 的定语，支持 group config 的配置更新，插件的获取更新。
-- 完善了 [Modbus](https://www.emqx.com/zh/blog/building-modbus-based-iiot-app-with-neuron) 驱动的功能和稳定性。数据周期读写功能优化，group config 更新后的订阅关系改变。
+- 完善了 Modbus 驱动的功能和稳定性。数据周期读写功能优化，group config 更新后的订阅关系改变。
 
 ## Neuron 2.0 的测试
 

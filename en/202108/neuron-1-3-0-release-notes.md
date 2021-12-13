@@ -28,7 +28,7 @@ In the property settings, there are buttons to select the subscription function 
 
 ### Modbus supports TCP Server mode
 
-[Modbus](https://www.emqx.com/en/blog/building-modbus-based-iiot-app-with-neuron) supports the connection of DTU devices. After configuring the remote server address in the cloud of the DTU device as the IP address of the environment where Neuron is running and configuring the corresponding port number, Neuron can access the DTU device to read data. In the driver settings of Neuron, when setting the Hostname, fill in the IP address of the environment where Neuron runs.
+Modbus supports the connection of DTU devices. After configuring the remote server address in the cloud of the DTU device as the IP address of the environment where Neuron is running and configuring the corresponding port number, Neuron can access the DTU device to read data. In the driver settings of Neuron, when setting the Hostname, fill in the IP address of the environment where Neuron runs.
 
 ### Add the function that each point of Modbus can define byte order separately
 

@@ -22,7 +22,7 @@ HStreamDB currently supports the "at least once" consumption semantics. After th
 
 Members in the same consumer group share the consumption progress. HStream will maintain the consumption progress according to the condition of the client's Ack. The client can resume consumption from the previous location at any time.
 
-It should be noted that the order of data is not maintained in the [shared subscription](https://www.emqx.com/en/blog/introduction-to-mqtt5-protocol-shared-subscription) mode of v0.6. Subsequent shared subscriptions will support a key-based distribution mode, which can support the orderly delivery of data with the same key.
+It should be noted that the order of data is not maintained in the shared subscription mode of v0.6. Subsequent shared subscriptions will support a key-based distribution mode, which can support the orderly delivery of data with the same key.
 
 ## Add statistical function
 

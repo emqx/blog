@@ -21,7 +21,7 @@ For the startup and deployment of the cluster, you can refer to the following do
 
 ### Shared subscription support, and enhancements in real-time data distribution
 
-In HStreamDB v0.6, we have reconstructed the subscription pattern and introduced a new [shared subscription](https://www.emqx.com/en/blog/introduction-to-mqtt5-protocol-shared-subscription) implementation.
+In HStreamDB v0.6, we have reconstructed the subscription pattern and introduced a new shared subscription implementation.
 
 In the previous design, only one client could consume from the same subscription, which restricts the HStreamDB's capability of real-time data distribution. The new implementation introduces the concept of a Consumer Group, which manages the consumption of streams in a unified manner. All consumers of the same subscription will join the same consumer group, and the client can join or leave the current consumer group at any time.
 

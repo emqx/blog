@@ -25,7 +25,7 @@ EMQ X 与 MatrixDB 的组合技术栈能够胜任物联网场景中的各类数�
 
 本次测试工具使用 [XMeter](https://www.xmeter.net/) 性能测试平台。
 
-XMeter 是基于开源测试工具 [JMeter](https://www.emqx.com/zh/blog/introduction-to-the-open-source-testing-tool-jmeter) 扩展的性能测试平台。针对物联网具有的接入规模大、弹性扩展要求、多种接入协议、混合场景等特点，XMeter 对 JMeter 进行了改造，实现了百万级别并发测试支持，并对测试数据进行实时处理并图形化展示。
+XMeter 是基于开源测试工具 JMeter 扩展的性能测试平台。针对物联网具有的接入规模大、弹性扩展要求、多种接入协议、混合场景等特点，XMeter 对 JMeter 进行了改造，实现了百万级别并发测试支持，并对测试数据进行实时处理并图形化展示。
 
 本次使用的版本是 XMeter 企业版 v3.0.0。
 

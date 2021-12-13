@@ -47,7 +47,7 @@
 ### 提升 HStream Server 的扩展能力
 
 - 实现 HStream Server 集群支持
-- 支持多个 consumer 进行[共享订阅](https://www.emqx.com/zh/blog/introduction-to-mqtt5-protocol-shared-subscription)和并行消费
+- 支持多个 consumer 进行共享订阅和并行消费
 - 优化控制平面元数据存储
 
 ### 增强运维和监控能力

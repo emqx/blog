@@ -14,13 +14,13 @@ CocoaMQTT 使用 Swift 语言开发，而非 Objective-C。这是因为 Swift �
 
 MQTT 3.1.1 仍然有很多不完善的地方，例如连接异常断开时无法通知原因到对端。MQTT 5.0 在 MQTT 3.1.1 的基础上做了很多改变，但并不是向下兼容的。
 
-MQTT 协议 5.0 版本新增了会话/消息延时功能、原因码、主题别名、in-flight 流控、[用户属性](https://www.emqx.com/zh/blog/mqtt5-user-properties)、[共享订阅](https://www.emqx.com/zh/blog/introduction-to-mqtt5-protocol-shared-subscription)等功能，以及用于[增强认证](https://www.emqx.com/zh/blog/mqtt5-enhanced-authentication)安全的 AUTH 报文。其中，原因码和用户属性 `Property`字段使得 MQTT 5.0 能够携带更多上下文信息，从而解决在 3.1.1 版本因协议不完整而较难处理的问题。
+MQTT 协议 5.0 版本新增了会话/消息延时功能、原因码、主题别名、in-flight 流控、用户属性、共享订阅等功能，以及用于增强认证安全的 AUTH 报文。其中，原因码和用户属性 `Property`字段使得 MQTT 5.0 能够携带更多上下文信息，从而解决在 3.1.1 版本因协议不完整而较难处理的问题。
 
 MQTT 5.0 的主要功能优势有：
 
 - 进一步支持更大规模的可扩展系统
 - 更加详细的错误报告和处理机制
-- 容量探索和[请求响应](https://www.emqx.com/zh/blog/mqtt5-request-response)等通用模式的规范化操作
+- 容量探索和请求响应等通用模式的规范化操作
 - 可扩展的用户属性 （User Property）
 - 改进性能并支持小型客户端
 - 会话保持和消息超时设置
@@ -75,7 +75,7 @@ mqtt.connect()
 
 ### 订阅主题
 
-MQTT 5.0 在 MQTT 3.1.1 上面多了[订阅选项](https://www.emqx.com/zh/blog/subscription-identifier-and-subscription-options)等操作。
+MQTT 5.0 在 MQTT 3.1.1 上面多了订阅选项等操作。
 
 ```swift
 ///MQTT 5.0
@@ -92,7 +92,7 @@ mqtt.subscribe("chat/room/animals/client/+", qos: CocoaMQTTQoS.qos1)
 
 ```
 
-### 发布消息
+###  发布消息
 
 ```swift
 ///MQTT 5.0
@@ -179,7 +179,7 @@ MQTT 单纯通过 `CONNECT` 可能无法提供足够的信息给 Server 进行�
 
 ## 总结
 
-至此，我们完成了使用 CocoaMQTT 客户端连接到[公共 MQTT 服务器](https://www.emqx.com/zh/blog/popular-online-public-mqtt-brokers)，并实现了客户端与 MQTT 服务器的连接、消息发布和订阅。
+至此，我们完成了使用 CocoaMQTT 客户端连接到公共 MQTT 服务器，并实现了客户端与 MQTT 服务器的连接、消息发布和订阅。
 
 项目完整代码请见 [https://github.com/emqx/CocoaMQTT/tree/master/Example](https://github.com/emqx/CocoaMQTT/tree/master/Example)。
 

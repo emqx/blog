@@ -2,7 +2,7 @@
 
 ### Function operation is basically completed
 
-At present, we have basically completed the function operation of version 2.0 and developed a supporting Web UI to configure Neuron, view the connection status of Neuron, read and write and monitor device data. Now it is possible to connect OPC UA and [Modbus](https://www.emqx.com/en/blog/building-modbus-based-iiot-app-with-neuron) devices simultaneously and read and write their data.
+At present, we have basically completed the function operation of version 2.0 and developed a supporting Web UI to configure Neuron, view the connection status of Neuron, read and write and monitor device data. Now it is possible to connect OPC UA and Modbus devices simultaneously and read and write their data.
 
 ### Focus on data collection, aggregation, and forwarding
 

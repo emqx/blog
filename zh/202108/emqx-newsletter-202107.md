@@ -28,6 +28,6 @@
 
 ## 稳步推进认证和鉴权功能
 
-新的认证模块增加了[增强认证](https://www.emqx.com/zh/blog/mqtt5-enhanced-authentication)、HTTP 认证、MongoDB 认证等方式，并改进了通过 HTTP API 修改认证模块配置的能力。
+新的认证模块增加了增强认证、HTTP 认证、MongoDB 认证等方式，并改进了通过 HTTP API 修改认证模块配置的能力。
 
 新的鉴权模块（ACL) 增加了 MySQL、PgSQL、MongoDB、Redis、HTTP 等鉴权方式。

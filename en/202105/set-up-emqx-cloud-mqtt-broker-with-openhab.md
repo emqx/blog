@@ -22,7 +22,7 @@ Such a powerful product is a great choice to integrate with openHAB. You could c
 
 ## Binding EMQ X MQTT Broker with openHAB 3
 
-If it's your first time using EMQ X Cloud, don't worry. We will guide you through connecting [Home Assistant](https://www.emqx.com/en/blog/integrate-emqx-mqtt-cloud-with-home-assistant) with EMQ X Cloud.
+If it's your first time using EMQ X Cloud, don't worry. We will guide you through connecting Home Assistant with EMQ X Cloud.
 
 1. [Create](https://accounts.emqx.io/signup?continue=https://www.emqx.com/en/cloud) an EMQ X Cloud Account.
 

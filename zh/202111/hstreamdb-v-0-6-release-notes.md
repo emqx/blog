@@ -22,7 +22,7 @@ HStreamDB v0.6 正式支持 HServer 的集群模式。实现集群模式后，HS
 
 ### 支持共享订阅，数据分发实时性增强
 
-在 HStreamDB v0.6 中，我们对之前的订阅模式进行了重构，推出全新的[共享订阅](https://www.emqx.com/zh/blog/introduction-to-mqtt5-protocol-shared-subscription)功能。
+在 HStreamDB v0.6 中，我们对之前的订阅模式进行了重构，推出全新的共享订阅功能。
 
 在之前的版本中，一个订阅同一时间只能被一个客户端消费，这限制了 HStreamDB 对数据的实时分发能力。全新的共享订阅功能引入了消费者组（Consumer Group）的概念，通过消费者组来统一管理对 stream 的消费。一个 stream 的所有消费者都会加入到同一个消费者组中，客户端可以在任何时候加入或者退出当前消费者组。
 

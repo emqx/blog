@@ -8,7 +8,7 @@ In addition, at the WWDC 2021 conference, Apple announced a major update of the 
 
 ## MQTT 5.0 vs MQTT 3.1.1
 
-There are still many imperfections in MQTT 3.1.1. For example, when the connection is abnormally disconnected, the opposite end cannot notify the reason. For MQTT 5.0, it has made many changes based on MQTT 3.1.1, but it is not backward compatible. MQTT 5.0 adds new functions such as session/message delay, reason codes, topic alias, in-flight stream control, [user properties](https://www.emqx.com/en/blog/mqtt5-user-properties), [shared subscriptions](https://www.emqx.com/en/blog/introduction-to-mqtt5-protocol-shared-subscription), as well as AUTH packet to enhance authentication security. The fields of reason code and the user properties enable MQTT 5.0 to carry more contextual information to solve the problem that is difficult to deal with in version 3.1.1 due to incomplete protocol.
+There are still many imperfections in MQTT 3.1.1. For example, when the connection is abnormally disconnected, the opposite end cannot notify the reason. For MQTT 5.0, it has made many changes based on MQTT 3.1.1, but it is not backward compatible. MQTT 5.0 adds new functions such as session/message delay, reason codes, topic alias, in-flight stream control, user properties, shared subscriptions, as well as AUTH packet to enhance authentication security. The fields of reason code and the user properties enable MQTT 5.0 to carry more contextual information to solve the problem that is difficult to deal with in version 3.1.1 due to incomplete protocol.
 
 The main functional advantages of MQTT 5.0 are:
 
@@ -69,7 +69,7 @@ mqtt.connect()
 
 ### Subscribe
 
-MQTT 5.0 has more operations such as [subscription options](https://www.emqx.com/en/blog/subscription-identifier-and-subscription-options) than of MQTT 3.1.1.
+MQTT 5.0 has more operations such as subscription options than of MQTT 3.1.1.
 
 ```swift
 ///MQTT 5.0

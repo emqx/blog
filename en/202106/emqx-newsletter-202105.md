@@ -13,7 +13,7 @@ Stay tuned for our blog posts for more details.
 
 ### Cluster stability enhancement - sticky session load balancing
 
-Kudos to haproxy team, now there is the first [MQTT protocol](https://www.emqx.com/en/mqtt) supported load balancer offered in the community edition. With the help of the stick table keyed by the MQTT client ID, we expect the number of [MQTT session](https://www.emqx.com/en/blog/mqtt-session) takeover/migration between the clustered nodes to be significantly reduced. 
+Kudos to haproxy team, now there is the first MQTT protocol supported load balancer offered in the community edition. With the help of the stick table keyed by the MQTT client ID, we expect the number of MQTT session takeover/migration between the clustered nodes to be significantly reduced. 
 
 And it’s amazingly simple to enable it, here is an example.
 

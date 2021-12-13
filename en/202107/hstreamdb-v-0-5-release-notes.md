@@ -52,7 +52,7 @@ In subsequent releases, we will continue to work towards the following goals.
 
 - Implementation of HStream Server clustering support
 
-- Support for consumer group for [shared subscriptions](https://www.emqx.com/en/blog/introduction-to-mqtt5-protocol-shared-subscription) and parallel consumption 
+- Support for consumer group for shared subscriptions and parallel consumption 
 
 - Optimization of control plane metadata storage
 

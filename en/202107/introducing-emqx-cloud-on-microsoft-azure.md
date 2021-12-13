@@ -68,7 +68,7 @@ In addition, with the support of the rule engine, EMQ X Cloud can realize data c
 
 ### Integrate Everything
 
-EMQ X Cloud supports integrating with most popular data stores, data analysis systems and [message queues](https://www.emqx.com/en/blog/mqtt5-feature-inflight-window-message-queue) such as Kafka, Pulsar, PostgreSQL, MySQL, MongoDB, Redis, ClickHouse, RabbitMQ, etc.
+EMQ X Cloud supports integrating with most popular data stores, data analysis systems and message queues such as Kafka, Pulsar, PostgreSQL, MySQL, MongoDB, Redis, ClickHouse, RabbitMQ, etc.
 
 Easily integrate IoT data with Kafka, RDS, various SQL/NoSQL/time-series databases, and enterprise systems such as Oracle and SAP. Help achieve rapid application integration and business innovation.
 
