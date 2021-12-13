@@ -18,7 +18,7 @@ MQTT（消息队列遥测传输）最初由 IBM 于上世纪 90 年代晚期发�
 
 - 改进的错误报告。现在，所有响应报文都将包含原因码和可选的人类易读的原因字符串。
 - 规范通用模式，包括能力发现和请求响应等。
-- 对共享订阅的协议支持，此前标准无共享订阅的内容，共享订阅由各个软件厂商自已定义，不具备通用性。
+- 对[共享订阅](https://www.emqx.com/zh/blog/introduction-to-mqtt5-protocol-shared-subscription)的协议支持，此前标准无共享订阅的内容，共享订阅由各个软件厂商自已定义，不具备通用性。
 - 新的扩展机制，包括用户属性。
 - 引入主题别名等新特性进一步减小传输开销
 - 增加了会话过期间隔和消息过期间隔，用以改善老版本中 Clean Session 不够灵活的地方。
@@ -40,5 +40,5 @@ MQTT（消息队列遥测传输）最初由 IBM 于上世纪 90 年代晚期发�
 - [订阅标识符与订阅选项](https://www.emqx.com/zh/blog/subscription-identifier-and-subscription-options)
 - 主题别名
 - [流量控制](https://www.emqx.com/zh/blog/mqtt5-flow-control)
-- 用户属性
+- [用户属性](https://www.emqx.com/zh/blog/mqtt5-user-properties)
 - [增强认证](https://www.emqx.com/zh/blog/mqtt5-enhanced-authentication)

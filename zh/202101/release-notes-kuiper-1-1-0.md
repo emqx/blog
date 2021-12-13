@@ -27,7 +27,7 @@ Kuiper 1.1.0 增加了图像处理插件，可以支持在规则中支持图像�
   - 增强了 JOIN 语句中 ON 条件的 PushDownPredicate，如果 INNER JOIN 中条件只跟一个源有关系，将被提前执行
   - 增加 ColumnPruning 规则，所有未被使用到的列或者元数据在预处理阶段将被删除，这样可以减少内存的使用
 - kubernetes-tools 支持流和规则的更新操作
-- MQTT 源中的共享订阅配置项删除，我们建议用户直接在 MQTT 源中指定「共享订阅」主题
+- MQTT 源中的[共享订阅](https://www.emqx.com/zh/blog/introduction-to-mqtt5-protocol-shared-subscription)配置项删除，我们建议用户直接在 MQTT 源中指定「共享订阅」主题
 - 文档问题
   - 修复了一些 404 问题
   - 一部分描述和翻译问题

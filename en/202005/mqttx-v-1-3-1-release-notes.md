@@ -10,7 +10,7 @@ Download MQTT X v1.3.1: [https://github.com/emqx/MQTTX/releases/tag/v1.3.1](http
 
 - Support for more attributes of MQTT 5.0 
 
-  This version adds the configuration for `Topic Alias Maximu ` MQTT 5.0 attribute. It is the maximum value of the topic alias, which means that the client sent by the server will be accepted as the maximum value of the topic alias. Users select the version of MQTT protocol as 5.0 when establishing a connection and then they can configure this item. 
+  This version adds the configuration for `Topic Alias Maximu ` MQTT 5.0 attribute. It is the maximum value of the topic alias, which means that the client sent by the server will be accepted as the maximum value of the topic alias. Users select the version of [MQTT protocol](https://www.emqx.com/en/mqtt) as 5.0 when establishing a connection and then they can configure this item. 
 
 	![mqttxtopicaliasmax.png](https://static.emqx.net/images/23cc2d0d8c7130f32f5fbbd38781db62.png)
 

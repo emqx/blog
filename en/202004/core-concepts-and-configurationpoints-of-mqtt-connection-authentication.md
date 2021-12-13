@@ -8,7 +8,7 @@ As the fact standard for IoT communication protocols, the **MQTT protocol** main
   - SSL/TLS is used to encrypt communication data to prevent man-in-the-middle attacks;
   - The client certificate is used as a device identity to verify device legitimacy.
 - Application layer: MQTT's security features are used for protection:
-  - MQTT protocol supports client identity verification with username and password;
+  - [MQTT protocol](https://www.emqx.com/en/mqtt) supports client identity verification with username and password;
   - **MQTT Broker** implements topic ACL control.
 
 [EMQ X MQTT Broker](https://www.emqx.com/en) fully supports various security specifications of **MQTT protocol**. With built-in security functions, it can be used out of the box without programming, and can quickly eliminate the security risks in the project. The **EMQ X authentication** series will around various levels of security specifications explain how to enable related functions  through the configuration of  EMQ X to finally achieve corresponding security protection.

@@ -2,7 +2,7 @@
 
 During learning and using [MQTT](https://www.emqx.com/en/mqtt), a handy client tool can greatly facilitate the user to explore the MQTT features and debug the functional components. Developers from all over the world have developed a number of client test tools for the MQTT protocol around different operating systems.
 
-The type of these MQTT client tools is various, with different features emphasis. Therefore, as for beginners and even MQTT experts, how to choose a suitable MQTT client tool is a problem. 
+The type of these [MQTT client tools](https://www.emqx.com/en/blog/mqtt-client-tools) is various, with different features emphasis. Therefore, as for beginners and even MQTT experts, how to choose a suitable MQTT client tool is a problem. 
 
 This article will collect and sort out as much as possible, and make a comprehensive evaluation of various MQTT client tools on the market for readers' reference.
 
@@ -12,7 +12,7 @@ MQTT client tools are often used to establish connections with the [MQTT broker]
 
 - In each usage phase, the tool needs to provide as much comprehensive parameter configuration capabilities to facilitate to users cope with any using scenarios and simulation tests of using ways. For example, supporting client authentication, configuring certificates and various encryption connections, configuring multiple parameters during the connection, publishing, and subscription process of MQTT, supporting [MQTT 5](https://www.emqx.com/en/mqtt/mqtt5), etc.
 - Enhance user interaction convenience on a full-featured basis and operating interface fluently.
-- Provide other extension functions, such as supporting multiple client connections and MQTT protocol debugging at the same time.
+- Provide other extension functions, such as supporting multiple client connections and [MQTT protocol](https://www.emqx.com/en/mqtt) debugging at the same time.
 - Cross-platform, available under different operating systems.
 - Whether supporting multiple languages such as Chinese/English.
 - Whether support MQTT payload format converting.
@@ -149,7 +149,7 @@ All in all, MQTT.fx has rich and mature functions, and supports all the configur
 
 ### Introduction to client
 
-MQTT Explorer is a comprehensive MQTT client that provides a structured overview of your MQTT topics and makes working with devices/services on your broker dead-simple. Currently, it based on CC BY-NC-ND 4.0 protocol open source, and users can view and use source code at will.
+[MQTT Explorer](https://www.emqx.com/en/blog/connecting-to-emqx-cloud-with-mqtt-explorer) is a comprehensive MQTT client that provides a structured overview of your MQTT topics and makes working with devices/services on your broker dead-simple. Currently, it based on CC BY-NC-ND 4.0 protocol open source, and users can view and use source code at will.
 
 Visualization and vertical layered display of topics and dynamic preview are the highlights of MQTT-Explorer. Layered view enable this tool to use easily, and has distinguished MQTT Explorer with other outstanding MQTT desktop client. Custom subscribing can limit the number of message which need MQTT Explorer to process, and users can manage subscriptions in advanced connection settings. Users can also display the view of difference of received payload messages. The disadvantages are that users can only create a single client connection, and cannot connect multiple clients and enable them to be online at the same time.
 
@@ -212,13 +212,13 @@ MQTT Box also adopts Electron cross-platform technology. The interface is simple
 
 Mqtt-spy is part of Eclipse Paho and Eclipse IoT. It runs on top of Java 8 and JavaFX by directly launching JAR files. Mqtt-spy has a good interaction way to display the basic MQTT publish/subscribe mechanism.
 
-Mqtt-spy does not provide a separate installation package, which needs users to install the Java runtime environment before using mqtt-spy. But after launching, mqtt-spy has a friendly hands-on experience, and the guide feature is eye-catching. MQTT newbies can easily connect to the public MQTT broker using mqtt-spy for exploration. The function interface of mqtt-spy is slightly complicated, but after familiar with the function of each component, it will become a development and debugging tool. It is also worth mentioning that the performance and stability of mqtt-spy are poor, maybe is because that the version used by the author is the latest beta. After connecting multiple brokers, there are frequent crashes and suspended animations.
+Mqtt-spy does not provide a separate installation package, which needs users to install the Java runtime environment before using mqtt-spy. But after launching, mqtt-spy has a friendly hands-on experience, and the guide feature is eye-catching. MQTT newbies can easily connect to the [public MQTT broker](https://www.emqx.com/en/blog/popular-online-public-mqtt-brokers) using mqtt-spy for exploration. The function interface of mqtt-spy is slightly complicated, but after familiar with the function of each component, it will become a development and debugging tool. It is also worth mentioning that the performance and stability of mqtt-spy are poor, maybe is because that the version used by the author is the latest beta. After connecting multiple brokers, there are frequent crashes and suspended animations.
 
 ### Features of client
 
 - Support for MQTT and MQTT over WebSocket
 - Easy to interact, can publish and subscribe at the same time, connect multiple brokers on different tabs
-- Can close different areas of the pub/sub window (publish, new subscriptions, subscriptions and messages) to make room for space currently in use
+- Can close different areas of the [pub/sub](https://www.emqx.com/en/blog/mqtt-5-introduction-to-publish-subscribe-model) window (publish, new subscriptions, subscriptions and messages) to make room for space currently in use
 - The search function allows searching for commonly used MQTT messages, allowing outputting publishing/subscribing messages to standard output or logging to a file for subsequent analysis
 
 ![4.png](https://static.emqx.net/images/9836d2b3d18279f9e4d43c5e4c6660f0.png)

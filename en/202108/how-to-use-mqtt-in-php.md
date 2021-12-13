@@ -13,7 +13,7 @@ For more documentation about php-mqtt/client, please refer to [Packagist php-mqt
 MQTT communication belongs to a network communication scenario outside the HTTP system. Due to the limitation of PHP characteristics, using the extensions for network communication such as Swoole/Workerman in the PHP system can bring a better experience. Its use will not be repeated in this article. The relevant MQTT client libraries are as follows:
 
 - [workerman/mqtt](https://packagist.org/packages/workerman/mqtt)：Asynchronous MQTT client for PHP based on workerman.
-- [simps/mqtt](https://packagist.org/packages/simps/mqtt)：MQTT Protocol Analysis and Coroutine Client for PHP.
+- [simps/mqtt](https://packagist.org/packages/simps/mqtt)：[MQTT protocol](https://www.emqx.com/en/mqtt) Analysis and Coroutine Client for PHP.
 
 
 

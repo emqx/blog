@@ -98,7 +98,7 @@ In this case, the locally installed `MQTT.js` module cannot be loaded directly i
      })
    ```
 
-2. The MQTT.js module can be imported in preload.js. When there is no node integration, this script still can access all Node APIs. However, when this script execution completes, global objects injected via Node will be removed.
+2. The [MQTT.js](https://www.emqx.com/en/blog/mqtt-js-tutorial) module can be imported in preload.js. When there is no node integration, this script still can access all Node APIs. However, when this script execution completes, global objects injected via Node will be removed.
 
 
 

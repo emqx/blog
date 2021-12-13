@@ -36,7 +36,7 @@ To solve this problem, MQTT 5.0 defines a new attribute called response message 
 
 - For some data reporting type of applications, when you feel like the reporting interval is set too long or too short to be appropriate, you can try setting it to actively request data through requesting response. However, it should be noted that if too many requesters cause the actual frequency of data reporting is highly greater than the original, the losses outweigh the gains, so you need to consider the actual scenario.
 
-- If you have used the **Correlation Data** attribute correctly, you can use shared subscriptions for responders with confidence.
+- If you have used the **Correlation Data** attribute correctly, you can use [shared subscriptions](https://www.emqx.com/en/blog/introduction-to-mqtt5-protocol-shared-subscription) for responders with confidence.
 - Pay particular attention to cases that multiple responders subscribe to the same request topic and multiple requesters subscribe to the same response topic.
 
 [^1]: When QoS is greater than 0, the publisher can ensure that messages are delivered to the server and the server retained message will be delivered to the subscriber.

@@ -1,6 +1,6 @@
 ## 摘要
 
-在数分钟内创建全托管高可用 MQTT 集群，快速接入物联网设备并立即开始产品原型设计与应用开发，将物联网数据存储到华为云上的 Kafka 与数据库中。
+在数分钟内创建全托管高可用 [MQTT 集群](https://www.emqx.com/zh/blog/mqtt-broker-clustering-part-3-challenges-and-solutions-of-emqx-horizontal-scalability)，快速接入物联网设备并立即开始产品原型设计与应用开发，将物联网数据存储到华为云上的 Kafka 与数据库中。
 
 ## 实验属性
 
@@ -36,7 +36,7 @@
 
 ### 1. 登录 EMQ X Cloud
 
-EMQ X Cloud MQTT 公有云服务来自于 EMQ 服务客户总结的一些最佳实践， 致力于提供快速部署、轻松管理、弹性扩展、跨多云部署的物联网 MQTT 5.0 服务。
+EMQ X Cloud MQTT 公有云服务来自于 EMQ 服务客户总结的一些最佳实践， 致力于提供快速部署、轻松管理、弹性扩展、跨多云部署的物联网 [MQTT 5.0](https://www.emqx.com/zh/mqtt/mqtt5) 服务。
 
 点击右上角 登录 按钮，使用实验室提供的账号登录 EMQ X Cloud，点击 控制台 进入 EMQ X Cloud 控制台页面。
 

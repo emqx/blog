@@ -86,7 +86,7 @@ Helm3 提供了官方脚本简化了安装步骤, 可以执行 `curl https://raw
 
 ## 部署一个持久化的 EMQ X 集群
 
-EMQ X 通过 创建 PVC 资源挂载 `/opt/emqx/data/mnesia` 目录实现持久化 `pods`，**在部署 EMQ X 之前，用户需要部署 Haproxy 或 Nginx-PLUS 等负载均衡器，并自行在 Kubernetes 中创建 PVC 资源或是 Storage Classes 资源**
+EMQ X 通过 创建 PVC 资源挂载 `/opt/emqx/data/mnesia` 目录实现持久化 `pods`，**在部署 EMQ X 之前，用户需要部署 [Haproxy](https://www.emqx.com/zh/blog/emqx-haproxy) 或 Nginx-PLUS 等负载均衡器，并自行在 Kubernetes 中创建 PVC 资源或是 Storage Classes 资源**
 
 + 启动 EMQ X 集群
 
@@ -205,7 +205,7 @@ EMQ X 通过 创建 PVC 资源挂载 `/opt/emqx/data/mnesia` 目录实现持久�
 
 ## 部署 EMQ X Edge 集群和 EMQ X 企业版集群
 
-#### EMQ X Edge
+### EMQ X Edge
 
 部署 EMQ X Edge 集群指定 `image.repository=emqx/emqx-edge`，其他设置与部署 EMQ X 集群保持一致
 
@@ -218,9 +218,9 @@ my-emqx-edge-1  1/1     Running   0          23s
 my-emqx-edge-2  1/1     Running   0          9s
   ```
 
- #### EMQ X EE
+### EMQ X EE
 
-部署 EMQ X 企业版集群首先需要登陆 emqx.io](https://www.emqx.com/en) 申请并下载 License 文件，并将 License 文件创建为 Secret 资源
+部署 [EMQ X 企业版](https://www.emqx.com/zh/products/emqx)集群首先需要前往 [www.emqx.com](https://www.emqx.com/zh/apply-licenses/emqx) 申请并下载 License 文件，并将 License 文件创建为 Secret 资源
 
 ```
 $ kubectl create secret generic your-license-secret-name --from-file=/path/to/emqx.lic

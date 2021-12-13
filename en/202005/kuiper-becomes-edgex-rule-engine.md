@@ -130,7 +130,7 @@ Let's create a rule that send result data to an MQTT broker, for detailed inform
 
 So the below rule will get all of values from `event` topic. The sink result will
 
-- Published to topic `result` of public MQTT broker `broker.emqx.io`.
+- Published to topic `result` of [public MQTT broker](https://www.emqx.com/en/blog/popular-online-public-mqtt-brokers) `broker.emqx.io`.
 - Print to log file.
 
 #### Option 1: Use Rest API
@@ -286,4 +286,4 @@ Current rule does not filter any data that are sent to Kuiper, so how to filter 
 If you want to explore more features of EMQ X Kuiper, please refer to below resources.
 
 - [Kuiper Github code repository](https://github.com/emqx/kuiper/)
-- [Kuiper reference guide](https://github.com/emqx/kuiper/blob/edgex/docs/en_US/reference.md)
+- [Kuiper reference guide](https://github.com/lf-edge/ekuiper/blob/master/docs/en_US/reference.md)

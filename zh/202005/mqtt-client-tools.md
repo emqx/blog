@@ -247,7 +247,7 @@ MQTT Lens 足够简单，但是提供了基础的 MQTT 和 MQTT over WebSocket �
 
 ### 客户端特性
 
-- 同时接受与多个 MQTT 服务器的连接，采用不同颜色关联
+- 同时接受与多个 [MQTT 服务器](https://www.emqx.io/zh)的连接，采用不同颜色关联
 - 订阅，发布和查看所有收到的消息的界面非常简单且易于掌握
 - 支持 MQTT 和 MQTT over WebSocket
 

@@ -36,7 +36,7 @@ MQTT 云服务支持 MQTT v3.1，v3.1.1 与 v5.0 协议版本，是全球首个�
 
 **高可用与私有实例**
 
-每个部署使用独立的 VPS、负载均衡、DNS 等基础资源，保证系统安全与稳定。
+每个部署使用独立的 VPS、[负载均衡](https://www.emqx.com/zh/blog/mqtt-broker-clustering-part-2-sticky-session-load-balancing)、DNS 等基础资源，保证系统安全与稳定。
 
 **规则引擎与消息实时编解码**
 

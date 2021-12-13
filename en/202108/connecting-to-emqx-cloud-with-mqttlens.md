@@ -1,4 +1,4 @@
-This article will take [MQTTLens](https://chrome.google.com/webstore/detail/mqttlens/hemojaaeigabkbcookmlgmdigohjobjm/related?hl=zh_cn) as [MQTT client](https://www.emqx.com/en/blog/introduction-to-the-commonly-used-mqtt-client-library) test tool to connect to [MQTT Cloud Service - EMQ X Cloud](https://www.emqx.com/en/cloud). Through this article, you will be able to quickly understand the basic usage of MQTTLens and the basic concepts and usage of the MQTT protocol.
+This article will take [MQTTLens](https://chrome.google.com/webstore/detail/mqttlens/hemojaaeigabkbcookmlgmdigohjobjm/related?hl=zh_cn) as [MQTT client](https://www.emqx.com/en/blog/introduction-to-the-commonly-used-mqtt-client-library) test tool to connect to [MQTT Cloud Service - EMQ X Cloud](https://www.emqx.com/en/cloud). Through this article, you will be able to quickly understand the basic usage of MQTTLens and the basic concepts and usage of the [MQTT protocol](https://www.emqx.com/en/mqtt).
 
 
 
@@ -48,7 +48,7 @@ After entering the main interface of the application, we click the `Connections`
 
 After clicking the button to add a new connection, a pop-up box for filling in MQTT related configuration will appear. Fill in `Connection name`, `Hostname`, `Port`, select connection protocol and other necessary MQTT related configuration information, and click `CREATE CONNECTION` button at the bottom to instantly create a connection client.
 
-MQTTLens also supports the configuration of will messages. At the bottom of the pop-up box, click `Last-Will` to configure related configurations.
+MQTTLens also supports the configuration of [will messages](https://www.emqx.com/en/blog/use-of-mqtt-will-message). At the bottom of the pop-up box, click `Last-Will` to configure related configurations.
 
 > Note: If MQTT Broker has enabled username/password authentication, you also need to enter Username/Password in the configuration page.
 

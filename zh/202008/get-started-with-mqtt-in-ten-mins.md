@@ -140,7 +140,7 @@ MQTT 遗嘱消息的更多请访问我们的博文：[MQTT 遗嘱消息的使用
 规定 MQTT 请求/响应模式，提供响应主题和对比数据属性，以使得响应消息被路由回请求的发布者。此外，为客户端添加从服务端获取关于构造响应主题的配置信息的能力。
 
 ### 共享订阅
-添加对共享订阅的支持，允许多个订阅消费者进行负载均衡。
+添加对[共享订阅](https://www.emqx.com/zh/blog/introduction-to-mqtt5-protocol-shared-subscription)的支持，允许多个订阅消费者进行[负载均衡](https://www.emqx.com/zh/blog/mqtt-broker-clustering-part-2-sticky-session-load-balancing)。
 
 ### 主题别名
 支持将主题名缩写为整数来减小 MQTT 报文的开销。客户端和服务端可以分别指定它们允许的主题别名的数量。

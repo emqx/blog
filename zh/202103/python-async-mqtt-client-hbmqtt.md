@@ -4,7 +4,7 @@ CPU 的速度远远快于磁盘、网络等 IO 操作，而在一个线程中，
 
 为了解决这个问题，Python 加入了异步 IO 的特性。在 Python 3.4 中，正式将 asyncio 纳入标准库中，并在 Python 3.5 中，加入了 async/await 关键字。用户可以很轻松的使用在函数前加入 async 关键字，使函数变成异步函数。
 
-在 Python 的 MQTT 客户端库中，[HBMQTT](https://github.com/beerfactory/hbmqtt) 是最早支持异步 IO 的 Python MQTT 库。
+在 Python 的 [MQTT 客户端](https://www.emqx.com/zh/mqtt-client-sdk)库中，[HBMQTT](https://github.com/beerfactory/hbmqtt) 是最早支持异步 IO 的 [Python MQTT](https://www.emqx.com/zh/blog/comparision-of-python-mqtt-client) 库。
 
 
 

@@ -1,6 +1,6 @@
 ### Introduction
 
-This example will demonstrate how to report the temperature and humidity data collected by the DHT11 sensor to the MQTT service in the cloud through the MQTT protocol and the NodeMCU based on ESP8266 , and show how the application subscribes to and processes the data. The reason why mqtt protocol is used in this article is that it is lightweight and energy-saving, which is very suitable for the use scenarios of the Internet of things. At present, all major public cloud providers have basically opened IOT hub services based on MQTT protocol. For example, the IOT Core of AWS and the IOT Hub of Azure can easily access these data to these public cloud services through MQTT protocol.
+This example will demonstrate how to report the temperature and humidity data collected by the DHT11 sensor to the MQTT service in the cloud through the [MQTT protocol](https://www.emqx.com/en/mqtt) and the NodeMCU based on ESP8266 , and show how the application subscribes to and processes the data. The reason why mqtt protocol is used in this article is that it is lightweight and energy-saving, which is very suitable for the use scenarios of the Internet of things. At present, all major public cloud providers have basically opened IOT hub services based on MQTT protocol. For example, the IOT Core of AWS and the IOT Hub of Azure can easily access these data to these public cloud services through MQTT protocol.
 
 The overall architecture of this example is as follows:
 
@@ -186,7 +186,7 @@ Follow these steps to edit the code to suit your own Wi-Fi and MQTT settings
 
 ![69528034776129000fa811ea8f6e6057cb3cd279.png](https://static.emqx.net/images/16d0f34e02926530e021ad9e6f2d3de5.png)
 
-- Use Python MQTT client to view reported messages
+- Use [Python MQTT client](https://www.emqx.com/en/blog/python-async-mqtt-client-hbmqtt) to view reported messages
 
   ```python
   from paho.mqtt import client as mqtt

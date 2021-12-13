@@ -36,7 +36,7 @@ Configuring Mosquitto's bridging requires modifying the `mosquitto.conf` file af
 - the topic of the message that needs to be bridged;
 - Configure bridging topic mapping (no mapping by default).
 
-#### Create a new MQTT bridge
+### Create a new MQTT bridge
 
 Open the `mosquitto.conf` file and add a `connection` to create a new bridge. The string after the `connection` keyword is also the client id used on the remote node:
 
@@ -44,33 +44,33 @@ Open the `mosquitto.conf` file and add a `connection` to create a new bridge. Th
 connection emqx1
 ```
 
-#### Configure the address and port of the bridged remote node
+### Configure the address and port of the bridged remote node
 
 ```
 address 192.168.1.100:1883
 ```
 
-#### Configure MQTT protocol version
+### Configure MQTT protocol version
 
-The MQTT protocol version used by Mosquitto bridge defaults to 3.1, and the 3.1.1 protocol needs to be specified in the configuration for use.
+The [MQTT protocol](https://www.emqx.com/en/mqtt) version used by Mosquitto bridge defaults to 3.1, and the 3.1.1 protocol needs to be specified in the configuration for use.
 
 ```
 bridge_protocol_version mqttv311
 ```
 
-#### Configure the remote node username
+### Configure the remote node username
 
 ```
 remote_username user
 ```
 
-#### Configure the remote node password
+### Configure the remote node password
 
 ```
 remote_password passwd
 ```
 
-#### Specify MQTT topics that need to be bridged
+### Specify MQTT topics that need to be bridged
 
 The configuration format of the bridged topic is `topic topic mode direction QoS local prefix remote prefix`, which defines the rules for bridging forwarding and receiving. among them:
 

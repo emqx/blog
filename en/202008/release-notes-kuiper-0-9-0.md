@@ -28,7 +28,7 @@ Kuiper 0.9.0 is a major version that includes the stream state management, KubeE
   - By consuming data from the specified offset, users can extend the relevant interface to realize the data source that can  re-consume the data, so that it can be recovered offline or when there is an error in stream processing;
   - Configurable state persistent storage. The system stores the state in the file system by default, and also supports storing state data in a third-party system, such as Redis;
   - The user is supported to call the API provided by Kuiper to realize the storage of custom state data when extending the source, sink and function;
-- Access support for [KubeEdge data model](https://github.com/emqx/kuiper/blob/develop/docs/en_US/rules/sources/mqtt.md#kubeedgeversion) is provided, with a tool for automatically issuing configuration files through Kubernetes configmap. Users can use Kuiper to directly support the analysis of device data from KubeEdge;
+- Access support for [KubeEdge data model](https://github.com/lf-edge/ekuiper/blob/master/docs/en_US/rules/sources/mqtt.md#kubeedgeversion) is provided, with a tool for automatically issuing configuration files through Kubernetes configmap. Users can use Kuiper to directly support the analysis of device data from KubeEdge;
 - [TDengine plug-in](https://github.com/emqx/kuiper/blob/master/docs/en_US/plugins/sinks/taos.md) is added, which can support saving analysis results to TDengine time series database;
 - All Chinese documents are translated and synchronized;
 - The execution process of FVT in Github Action is optimized, and some unnecessary test processes are deleted;

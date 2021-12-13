@@ -10,7 +10,7 @@ The payload of the PUBLISH packet is responsible for storing the message content
 
 ![1.jpg](https://static.emqx.net/images/52a7175d131df25693c1498c3f287658.jpg)
 
-In the Payload of the CONNECT packet, some fields have changed, and the Will message has become a Will Payload. Will properties are added to Payload to define the behavior of a will message.
+In the Payload of the CONNECT packet, some fields have changed, and the [Will message](https://www.emqx.com/en/blog/use-of-mqtt-will-message) has become a Will Payload. Will properties are added to Payload to define the behavior of a will message.
 
 **The new will properties are:**
 
@@ -45,7 +45,7 @@ In the Payload of the CONNECT packet, some fields have changed, and the Will mes
 ![11.png](https://static.emqx.net/images/b6b2ae013d4ca398689f9e87bc3ea536.png)
 
 
-The Payload in the SUBSCRIBE packet in MQTT 5.0 contains the Subscription Options.
+The Payload in the SUBSCRIBE packet in MQTT 5.0 contains the [Subscription Options](https://www.emqx.com/en/blog/subscription-identifier-and-subscription-options).
 
 ![SUBSCRIBE 报文2.jpg](https://static.emqx.net/images/a019ca4b636fc8782087c8174854945c.jpg)
 
@@ -53,7 +53,7 @@ The Payload in the SUBSCRIBE packet in MQTT 5.0 contains the Subscription Option
 
 Bits 0 and 1 of the Subscription Options indicate the maximum QoS. This field gives the maximum QoS level that the server can send to client application messages. If the value of QoS  is 3, a protocol error is triggered.
 
-Bit 2 of the subscription option indicates a option of No Local. If the value is 1, the application message will not be published to the publisher who has subscribed to the publishing topic and if the option is set to 1 in the shared subscription, a protocol error will be triggered.
+Bit 2 of the subscription option indicates a option of No Local. If the value is 1, the application message will not be published to the publisher who has subscribed to the publishing topic and if the option is set to 1 in the [shared subscription](https://www.emqx.com/en/blog/introduction-to-mqtt5-protocol-shared-subscription), a protocol error will be triggered.
 
 Bit 3 of the subscription option indicates that Retain As Published is reserved. If the value is 1, the server shall set the RETAIN flag of the forwarded message to be the same as the RETAIN flag of the received PUBLISH packet. If the value is 0, the server needs to set the RETAIN flag of the forwarded message to 0 regardless of the value of the RETAIN flag in the received PUBLISH packet.
 

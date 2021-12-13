@@ -38,7 +38,7 @@ MQTT 客户端整个生命周期的行为可以概括为：建立连接、订阅
   - 指定目标主题，注意该主题不能包含通配符 `+` 或 `#`，若主题中包含通配符可能会导致消息发布失败、客户端断开等情况（视 Broker 与客户端库实现方式）
   - 指定消息 QoS 级别，同样存在不同 Broker 与平台支持的 QoS 级别不同，如 Azure IoT Hub 发布 QoS 2 的消息将断开客户端连接
   - 指定消息体内容，消息体内容大小不能超出 Broker 设置最大消息大小
-  - 指定消息 Retain 保留消息标志位
+  - 指定消息 Retain [保留消息](https://www.emqx.com/zh/blog/message-retention-and-message-expiration-interval-of-emqx-mqtt5-broker)标志位
 - **取消订阅**：
   - 指定目标主题即可
 - **断开连接**：

@@ -34,7 +34,7 @@ EMQ X 模块按照功能组织，分为以下几类：
 
 除了标准 MQTT 协议（完整 QoS 与 MQTT 5.0 支持），EMQ X 还扩展了一系列的物联网协议，支持的协议包括MQTT-SN、CoAP/LwM2M、HTTP、WebSocket、STOMP、私有 TCP、JT/T808 行业协议等。
 
-在协议接入相关模块中，用户能够快速启用需要的扩展协议，动态增改协议的监听端口，以及协议与 MQTT 主题的挂载关系。
+在协议接入相关模块中，用户能够快速启用需要的扩展协议，动态增改协议的监听端口，以及协议与 [MQTT 主题](https://www.emqx.com/zh/blog/advanced-features-of-mqtt-topics)的挂载关系。
 
 ![协议接入.png](https://static.emqx.net/images/98273b92dcb3459e4e7bf40de2145109.png)
 
@@ -70,7 +70,7 @@ EMQ X 提供 Prometheus Agent 模块，用于将 EMQ X 运行指标及 Erlang �
 
 #### MQTT 增强认证
 
-基于更强的安全性考虑，MQTT v5 增加了新特性 **增强认证**，增强认证包含质询/响应风格的认证，可以实现对客户端和服务器的双向认证，服务器可以验证连接的客户端是否是真正的客户端，客户端也可以验证连接的服务器是否是真正的服务器，从而提供了更高的安全性。
+基于更强的安全性考虑，MQTT v5 增加了新特性 **增强认证**，[增强认证](https://www.emqx.com/zh/blog/mqtt5-enhanced-authentication)包含质询/响应风格的认证，可以实现对客户端和服务器的双向认证，服务器可以验证连接的客户端是否是真正的客户端，客户端也可以验证连接的服务器是否是真正的服务器，从而提供了更高的安全性。
 
 增强认证依赖于认证方法和认证数据来完成整个认证过程，在增强认证中，认证方法通常为 [SASL（ Simple Authentication and Security Layer )](https://zh.wikipedia.org/zh-hans/简单认证与安全层) 机制，使用一个注册过的名称便于信息交换。但是，认证方法不限于使用已注册的 SASL 机制，服务器和客户端可以约定使用任何质询 / 响应风格的认证。
 
@@ -88,7 +88,7 @@ EMQ X 提供 Prometheus Agent 模块，用于将 EMQ X 运行指标及 Erlang �
 
 该模块可以配置重写规则，在客户端发布/订阅主题时将目标主题按照规则重写为新的主题。
 
-EMQ X 的 [保留消息](https://docs.emqx.cn/enterprise/latest/modules/retainer.html) 和 [延迟发布](https://docs.emqx.cn/broker/latest/advanced/delay-publish.html) 可以与主题重写配合使用，例如，当用户想使用延迟发布功能，但不方便修改客户端发布的主题时，可以使用主题重写将相关主题重写为延迟发布的主题格式。
+EMQ X 的 [保留消息](https://docs.emqx.cn/enterprise/latest/modules/retainer.html) 和 [延迟发布](https://docs.emqx.cn/broker/latest/advanced/delay-publish.html) 可以与[主题重写](https://www.emqx.com/zh/blog/rewriting-emqx-mqtt5-topic)配合使用，例如，当用户想使用延迟发布功能，但不方便修改客户端发布的主题时，可以使用主题重写将相关主题重写为延迟发布的主题格式。
 
 #### MQTT 保留消息
 

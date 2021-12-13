@@ -217,4 +217,4 @@ If you unsubscribe on the browser-side, before MQTT X sends the second message, 
 
 In summary, we have implemented the creation of an MQTT connection in a Vue project, simulated subscribing, sending and receiving messages, unsubscribing, and disconnecting between the client and MQTT broker.
 
-As one of the most three popular front-end frames, Vue can be used on the browser-side, and can also be used on the mobile-side. Combining the MQTT protocol and [MQTT IoT cloud service](https://www.emqx.com/en/cloud), can develop many interesting applications, for example, a customer service chat system or a management system that monitors IoT device information in real-time.
+As one of the most three popular front-end frames, Vue can be used on the browser-side, and can also be used on the mobile-side. Combining the [MQTT protocol](https://www.emqx.com/en/mqtt) and [MQTT IoT cloud service](https://www.emqx.com/en/cloud), can develop many interesting applications, for example, a customer service chat system or a management system that monitors IoT device information in real-time.

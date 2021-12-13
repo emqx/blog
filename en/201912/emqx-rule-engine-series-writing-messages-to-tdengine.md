@@ -10,7 +10,7 @@ TDEngine provides community edition, enterprise edition and cloud service editio
 
 ## Scenario introduction
 
-This article uses the example of  accessing the smart door lock of EMQ X through MQTT protocol
+This article uses the example of  accessing the smart door lock of EMQ X through [MQTT protocol](https://www.emqx.com/en/mqtt)
 
 Smart door locks have become the focus of smart home products. In order to ensure a more secure unlocking experience for users, smart door locks can usually achieve fingerprint unlocking, password unlocking, IC card unlocking, key unlocking, remote unlocking and other functions. Each business link of the smart door lock involves the sending and transmission of operation-sensitive instructions and status data, which should be stored for subsequent audit use.
 
@@ -217,7 +217,7 @@ Click **Create**  to complete the creation of the rules. The data will be writte
 
 TDEngine provides SDK applicable for multiple language platforms. The program can obtain data reported by smart door locks to EMQ X by subscribing to MQTT topics or consuming message middleware data, and then stitch the data into SQL and finally write it to TDEngine.
 
-This article uses the method of subscribing to the MQTT topic to obtain smart door lock reporting data. Considering that the amount of messages may grow to an amount that a single subscription client cannot afford, we use the **shared subscription** method to consume data.
+This article uses the method of subscribing to the [MQTT topic](https://www.emqx.com/en/blog/advanced-features-of-mqtt-topics) to obtain smart door lock reporting data. Considering that the amount of messages may grow to an amount that a single subscription client cannot afford, we use the **shared subscription** method to consume data.
 
 > In a shared subscription, clients subscribing to the same topic will receive messages under this topic in turn. That is to say, the same message will not be sent to multiple subscribers, thereby achieving load balancing among multiple nodes on the subscription side. .
 

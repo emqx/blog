@@ -27,7 +27,7 @@ This paper takes a client connecting, publishing and processing messages as an e
   - Specify whether the transfer type is TCP or MQTT over WebSocket
   - If TLS is enabled, it is required to select the protocol version with the corresponding certificate.
   - If Broker has enabled authentication, the client needs to carry the corresponding MQTT Username Password information
-  - Configure client parameters such as keepalive duration, clean session callback retention flag, MQTT protocol version, will message (LWT), etc.
+  - Configure client parameters such as keepalive duration, clean session callback retention flag, MQTT protocol version, [will message](https://www.emqx.com/en/blog/use-of-mqtt-will-message) (LWT), etc.
 - **Subscribe to the topic **: After the connection is successfully established, the topic can be subscribed to when the topic information is specified.
 - Specify topic filter Topic, support for the use of the topic wildcards `+` and `#` during subscribing
   - Specify QoS,  Qos 0 1 2 is optional according to the implementation of the client library and the broker. Note that some brokers and cloud service providers do not support some QoS levels. For example, AWS IoT, Alibaba Cloud IoT Suite, and Azure IoT Hub do not support QoS 2 Level message

@@ -1,4 +1,4 @@
-EMQ X 在支持客户的过程中，了解到有客户使用 Nginx 做负载均衡，Docker 容器手动加入集群的方式运行 EMQ 集群，现将主要过程记录下来。
+EMQ X 在支持客户的过程中，了解到有客户使用 Nginx 做[负载均衡](https://www.emqx.com/zh/blog/mqtt-broker-clustering-part-2-sticky-session-load-balancing)，Docker 容器手动加入集群的方式运行 EMQ 集群，现将主要过程记录下来。
 
 ## 业务需求
 

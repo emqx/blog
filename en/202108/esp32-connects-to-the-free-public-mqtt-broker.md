@@ -76,7 +76,7 @@ Project -> Load library -> Library manager... -> Search PubSubClient -> Install 
    }
    ```
 
-4. Use PubSubClient to connect to the public MQTT Broker.
+4. Use PubSubClient to connect to the [public MQTT broker](https://www.emqx.com/en/blog/popular-online-public-mqtt-brokers).
 
    ```c
    client.setServer(mqtt_broker, mqtt_port);
@@ -198,7 +198,7 @@ void loop() {
    ![MQTT X client](https://static.emqx.net/images/2dc50309dbba7bdc8a65ec9b4b082b8c.png)
 
 
-##  Summary 
+## Summary 
 
 So far, we have successfully connected ESP32 to the public MQTT server provided by [EMQ X Cloud](https://www.emqx.com/en/cloud). In this project, we simply connect ESP32 to the MQTT server. This is just one of ESP32's basic capabilities. ESP32 can actually connect to various IoT sensors and report sensor data to the MQTT server.
 

@@ -9,7 +9,7 @@ SaaS 模式已是软件行业商业模式发展的必然趋势。经过近一年
 
 ### 一键拥有全托管 [MQTT 5.0 服务](https://www.emqx.com/zh/cloud)
 
-EMQ X Cloud 可在用户选择的公有云服务商的基础设施上部署 MQTT 服务，并提供全自动化的环境创建、服务部署、按需伸缩，让用户更专注于构建自己的 IoT 应用。
+EMQ X Cloud 可在用户选择的公有云服务商的基础设施上部署 [MQTT](https://www.emqx.com/zh/mqtt) 服务，并提供全自动化的环境创建、服务部署、按需伸缩，让用户更专注于构建自己的 IoT 应用。
 
 ![MQTT 5.0](https://static.emqx.net/images/1c82ade8442fdd7f524dcb1553eeaceb.png)
 
@@ -40,7 +40,7 @@ EMQ X Cloud 不仅提供全球范围内最高 7*24 小时的技术支持服务�
 
 - 专业版
 
-  专业版产品提供了企业级的 MQTT 集群服务。具备了更好的性能和更高的可用性，同时也提供了诸多企业级功能，如：数据持久化、消息分发、VPC 对等连接等。该版本适用于对于性能和稳定性有极高要求的关键型物联网应用的开发。此外也适用于与其他公有云平台 SaaS 服务有集成需求的应用场景。
+  专业版产品提供了企业级的 [MQTT 集群](https://www.emqx.com/zh/blog/mqtt-broker-clustering-part-3-challenges-and-solutions-of-emqx-horizontal-scalability)服务。具备了更好的性能和更高的可用性，同时也提供了诸多企业级功能，如：数据持久化、消息分发、VPC 对等连接等。该版本适用于对于性能和稳定性有极高要求的关键型物联网应用的开发。此外也适用于与其他公有云平台 SaaS 服务有集成需求的应用场景。
 
 - 旗舰版
 

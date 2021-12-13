@@ -64,7 +64,7 @@ After entering the  `New Connection`  page, you need to configure or fill in the
 
 6. Will message
 
-   In the configuration card under the advanced configuration, you can configure the will message. The values of `Last-Will-QoS` and` Last-Will-Retain` are filled with 0 and `False` by default. You only need to fill the value of  `Last-Will-Topic` and `Last-Will-Payload` to complete the configuration of the will message.
+   In the configuration card under the advanced configuration, you can configure the [will message](https://www.emqx.com/en/blog/use-of-mqtt-will-message). The values of `Last-Will-QoS` and` Last-Will-Retain` are filled with 0 and `False` by default. You only need to fill the value of  `Last-Will-Topic` and `Last-Will-Payload` to complete the configuration of the will message.
 
 
 

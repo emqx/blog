@@ -12,7 +12,7 @@ In order to solve the above problems, the industry has proposed a solution for e
 
 ## Business scenario
 
-Suppose there is an existing set of devices. Each device in the group has an id that sends data to the corresponding topic on the MQTT message server via the MQTT protocol. The design of the topic is as follows, where {device_id} is the id of the device.
+Suppose there is an existing set of devices. Each device in the group has an id that sends data to the corresponding topic on the MQTT message server via the [MQTT protocol](https://www.emqx.com/en/mqtt). The design of the topic is as follows, where {device_id} is the id of the device.
 
 ```
 devices/{device_id}/messages
@@ -89,9 +89,9 @@ As shown in the figure below, the edge analysis / streaming data processing meth
 
 ### Create stream
 
-Kuiper provides a command to manage streams and rules. Users can check which subcommands and helps are available by typing ``bin/cli`` in the command line window. The ``cli`` command is connected to the local Kuiper server by default. The ``cli`` command can also be connected to other Kuiper servers. Users can modify the connected Kuiper server in the ``etc/client.yaml`` configuration file. Users who want to know more about the command line can refer to [here](https://github.com/emqx/kuiper/tree/master/docs/cli).
+Kuiper provides a command to manage streams and rules. Users can check which subcommands and helps are available by typing ``bin/cli`` in the command line window. The ``cli`` command is connected to the local Kuiper server by default. The ``cli`` command can also be connected to other Kuiper servers. Users can modify the connected Kuiper server in the ``etc/client.yaml`` configuration file. Users who want to know more about the command line can refer to [here](https://github.com/lf-edge/ekuiper/tree/master/docs/en_US/cli).
 
-Create a stream definition: The purpose of creating a stream is to define the format of the data sent to the stream,  which is similar to defining the structure of a table in a relational database. All supported data types in Kuiper can be found in [here](https://github.com/emqx/kuiper/blob/master/docs/streams.md).
+Create a stream definition: The purpose of creating a stream is to define the format of the data sent to the stream,  which is similar to defining the structure of a table in a relational database. All supported data types in Kuiper can be found in [here](https://github.com/lf-edge/ekuiper/blob/master/docs/en_US/cli/streams.md).
 
 ```shell
 # cd kuiper
@@ -213,7 +213,7 @@ After debugging the SQL, users start configuring the rules file and send the res
 
 - IoT Hub: The name created in this article is ``rockydemo``, which is used to access the device.
 - IoT Device: It represents a device, here is the gateway for processing device data. The gateway is installed with Kuiper. After the relevant data is processed, the gateway sends the result to the Azure cloud.
-- Device access username and password: Please refer to Azure [Related Documentation](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-mqtt-support) for Azure IoT MQTT connections Username and password. For generating SAS Token, users can refer to [this document](https://docs.microsoft.com/en-us/cli/azure/ext/azure-cli-iot-ext/iot/hub?view=azure-cli-latest#ext-azure-cli-iot-ext-az-iot-hub-generate-sas-token).
+- Device access username and password: Please refer to Azure [Related Documentation](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-mqtt-support) for Azure IoT MQTT connections Username and password. For generating SAS Token, users can refer to [this document](https://docs.microsoft.com/en-us/cli/azure/iot/hub?view=azure-cli-latest#az_iot_hub_generate_sas_token).
 
 Related devices are created in the Azure IoT Hub as shown below.
 

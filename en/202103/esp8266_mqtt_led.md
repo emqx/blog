@@ -2,7 +2,7 @@
 
 [NodeMCU](https://www.nodemcu.com/) is an open source IoT platform. It uses the Lua language to program. This platform is based on eLua open source projects, and its underlying layer uses the ESP8266 SDK 0.9.5.
 
-In this project, we will implement remote control LED lights via NodeMCU(ESP8266) and the free public MQTT broker which is operated and maintained by [EMQ X Cloud](https://www.emqx.com/en/cloud), and use the Arduino IDE to program NodeMCU ESP8266. EMQ X Cloud is the [MQTT IoT Cloud Service Platform](https://www.emqx.com/en/cloud) launched by EMQ, which provides the **MQTT 5.0** access service with one-stop operations and maintenance managed and a unique isolated environment.
+In this project, we will implement remote control LED lights via NodeMCU(ESP8266) and the free [public MQTT broker](https://www.emqx.com/en/blog/popular-online-public-mqtt-brokers) which is operated and maintained by [EMQ X Cloud](https://www.emqx.com/en/cloud), and use the Arduino IDE to program NodeMCU ESP8266. EMQ X Cloud is the [MQTT IoT Cloud Service Platform](https://www.emqx.com/en/cloud) launched by EMQ, which provides the **MQTT 5.0** access service with one-stop operations and maintenance managed and a unique isolated environment.
 
 
 ### Required components

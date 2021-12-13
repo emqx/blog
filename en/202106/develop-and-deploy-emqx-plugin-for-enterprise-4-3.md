@@ -1,4 +1,4 @@
-A few EMQ X Enterprise customers were asking how they can develop their own EMQ X plugins and use them in the enterprise edition. This article is to document the steps.
+A few [EMQ X Enterprise](https://www.emqx.com/en/products/emqx) customers were asking how they can develop their own EMQ X plugins and use them in the enterprise edition. This article is to document the steps.
 
 ## How to build your own plugin
 

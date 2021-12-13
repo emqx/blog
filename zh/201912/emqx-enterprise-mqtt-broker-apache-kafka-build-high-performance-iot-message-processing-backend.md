@@ -20,7 +20,7 @@
 
 ## 业务场景
 
-假设现在有一个智能门锁项目，所有门锁每间隔 1 分钟或任何时间开/关锁等门锁状态变更时上报一次门锁信息，上报 MQTT 主题如下（QoS = 1）：
+假设现在有一个智能门锁项目，所有门锁每间隔 1 分钟或任何时间开/关锁等门锁状态变更时上报一次门锁信息，上报 [MQTT 主题](https://www.emqx.com/zh/blog/advanced-features-of-mqtt-topics)如下（QoS = 1）：
 
 ```bash
 devices/{client_id}/state

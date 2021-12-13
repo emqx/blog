@@ -1,6 +1,6 @@
 物联网设备终端种类繁杂，各厂商使用的编码格式各异，所以在接入物联网平台的时候就产生了统一数据格式的需求，以便平台之上的应用进行设备管理。
 
-EMQ X 企业版 3.4.0 提供了 Schema Registry 功能，提供编解码能力。Schema Registry 管理编解码使用的 Schema、处理编码或解码请求并返回结果。Schema Registry 配合规则引擎，可适配各种场景的设备接入和规则设计。
+[EMQ X 企业版](https://www.emqx.com/zh/products/emqx) 3.4.0 提供了 Schema Registry 功能，提供编解码能力。Schema Registry 管理编解码使用的 Schema、处理编码或解码请求并返回结果。Schema Registry 配合规则引擎，可适配各种场景的设备接入和规则设计。
 
 ## 数据格式
 

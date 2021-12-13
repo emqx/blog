@@ -17,9 +17,9 @@ Github Repository: <https://github.com/emqx/kuiper>
 
 - Optimized performance
   - Provides configuration for setting concurrency for Kuiper rule, so it can be optimized in different scenarios
-    + ``concurrency`` setting in [source](https://github.com/emqx/kuiper/blob/develop/docs/en_US/rules/sources/mqtt.md): How many instances will be started. By default, only an instance will be run. If more than one instance is specified, the topic must be a shared subscription topic.
-    + ``concurrency`` settings in [sink](https://github.com/emqx/kuiper/blob/develop/docs/en_US/rules/overview.md#actions): Specify how many instances of the sink will be run. If the value is bigger than 1, the order of the messages may not be retained.
-    + ``concurrency`` settings in [SQL plans](https://github.com/emqx/kuiper/blob/develop/docs/en_US/rules/overview.md#options): A rule is processed by several phases of plans according to the SQL statement. This option will specify how many instances will be run for each plan. If the value is bigger than 1, the order of the messages may not be retained.
+    + ``concurrency`` setting in [source](https://github.com/lf-edge/ekuiper/blob/master/docs/en_US/rules/sources/mqtt.md): How many instances will be started. By default, only an instance will be run. If more than one instance is specified, the topic must be a [shared subscription](https://www.emqx.com/en/blog/introduction-to-mqtt5-protocol-shared-subscription) topic.
+    + ``concurrency`` settings in [sink](https://github.com/lf-edge/ekuiper/blob/master/docs/en_US/rules/overview.md#actions): Specify how many instances of the sink will be run. If the value is bigger than 1, the order of the messages may not be retained.
+    + ``concurrency`` settings in [SQL plans](https://github.com/lf-edge/ekuiper/blob/master/docs/en_US/rules/overview.md#options): A rule is processed by several phases of plans according to the SQL statement. This option will specify how many instances will be run for each plan. If the value is bigger than 1, the order of the messages may not be retained.
 - Performance test result
     + Raspberry Pi 3B+: 12k messages/second; CPU utilization (sys+user): 70%; Memory: 20M
     + AWS t2.micro( 1 Core * 1 GB, Ubuntu18.04): 10k messages/second; CPU utilization (sys+user): 25%; Memory: 20M

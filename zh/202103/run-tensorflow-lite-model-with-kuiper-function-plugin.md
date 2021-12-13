@@ -135,7 +135,7 @@ $ go build -trimpath --buildmode=plugin -o plugins/functions/LabelImage.so plugi
 
 ## 运行插件
 
-插件安装后，我们就可以在规则中使用它了。 我们将创建一个规则用于接收来自 mqtt 主题的图像字节数据，并通过 tflite 模型标记该图像。
+插件安装后，我们就可以在规则中使用它了。 我们将创建一个规则用于接收来自 [MQTT 主题](https://www.emqx.com/zh/blog/advanced-features-of-mqtt-topics)的图像字节数据，并通过 tflite 模型标记该图像。
 
 ### 定义流
 

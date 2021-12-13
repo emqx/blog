@@ -28,7 +28,7 @@ In addition to the above-mentioned User Properties settings, you can also config
 
 ### File transfer
 
-User Properties of MQTT 5 can be extended for file transfer instead of putting data in the payload of the message body and using key-value pairs for User Properties in the previous MQTT 3. This also means that the file can be kept as binary because the metadata of the file is in the user properties. For example:
+User Properties of [MQTT 5](https://www.emqx.com/en/mqtt/mqtt5) can be extended for file transfer instead of putting data in the payload of the message body and using key-value pairs for User Properties in the previous MQTT 3. This also means that the file can be kept as binary because the metadata of the file is in the user properties. For example:
 
 ```json
 {

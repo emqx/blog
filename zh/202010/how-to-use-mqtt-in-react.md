@@ -43,7 +43,7 @@ React 起源于 Facebook 的内部项目，目前由 Facebook 企业和其强大
 
 ### 安装 MQTT 客户端库
 
-因为 React 是一款 JavaScript 库，因此可以使用 MQTT.js 作为 MQTT 客户端库。
+因为 React 是一款 JavaScript 库，因此可以使用 [MQTT.js](https://www.emqx.com/zh/blog/mqtt-js-tutorial) 作为 MQTT 客户端库。
 
 > 以下 2，3 方法更适用于通过 CDN 链接 引用 React 创建的项目。
 

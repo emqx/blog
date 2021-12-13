@@ -34,7 +34,7 @@ EMQ X Kuiper 是 Golang 实现的轻量级物联网边缘分析、流式处理�
     - 增加浮点数据处理
 
   - 0.3.1
-    - EdgeX MQTT 消息总线支持。Kuiper [源](https://github.com/emqx/kuiper/blob/master/docs/zh_CN/rules/sources/edgex.md) & [目标](https://github.com/emqx/kuiper/blob/master/docs/zh_CN/rules/sinks/edgex.md) 现可以支持基于 MQTT 服务器的消息总线。
+    - EdgeX MQTT 消息总线支持。Kuiper [源](https://github.com/emqx/kuiper/blob/master/docs/zh_CN/rules/sources/edgex.md) & [目标](https://github.com/emqx/kuiper/blob/master/docs/zh_CN/rules/sinks/edgex.md) 现可以支持基于 [MQTT 服务器](https://www.emqx.io/zh)的消息总线。
     - EdgeX 源基准性能测试：在  AWS t2.micro ( 1 Core * 1 GB) 配置的运行环境上，EdgeX Kuiper 规则引擎支持 11.4k/秒的消息吞吐量。参考[该文档](https://github.com/emqx/kuiper/tree/master#edgex-throughput-test) 获取更详尽的信息。
     - 在 Docker 环境变量中暴露 Kuiper Rest API 端口。
 

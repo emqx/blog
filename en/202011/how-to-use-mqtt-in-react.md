@@ -41,7 +41,7 @@ Reference link: [https://reactjs.org/docs/getting-started.html](https://reactjs.
 
 ### Install the MQTT client library
 
-As React is a JavaScript library, it is possible to use MQTT.js as the MQTT client library.
+As React is a JavaScript library, it is possible to use [MQTT.js](https://www.emqx.com/en/blog/mqtt-js-tutorial) as the MQTT client library.
 
 > The following methods 2, 3 are more suitable for referencing projects created by React via CDN links.
 

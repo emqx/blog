@@ -219,7 +219,7 @@ insert into db.v_${p.id} values(
 
 ## 使用 TDEngine SDK 写入数据
 
-TDEngine 提供多种语言平台适用的 SDK，程序可以通过订阅 MQTT 主题或消费消息中间件数据获取智能门锁上报到 EMQ X 的数据，随后将数据拼接成写入 SQL 最终写入到 TDEngine 中。
+TDEngine 提供多种语言平台适用的 SDK，程序可以通过订阅 [MQTT 主题](https://www.emqx.com/zh/blog/advanced-features-of-mqtt-topics)或消费消息中间件数据获取智能门锁上报到 EMQ X 的数据，随后将数据拼接成写入 SQL 最终写入到 TDEngine 中。
 
 本文使用订阅 MQTT 主题的方式获取智能门锁上报数据。考虑到消息量可能增长到单个订阅客户端无法承受的数据量，我们使用 **共享订阅** 的方式来消费数据。
 

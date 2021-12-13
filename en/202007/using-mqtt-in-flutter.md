@@ -201,4 +201,4 @@ We can see the log of the whole process
 
 So far, we have finished that use Flutter to build MQTT applications in the Android platform, implemented the connection between the client and MQTT broker, subscribe, unsubscribe, publish and receive messages, etc.
 
-Flutter makes it easy that develop powerful mobile applications through unified programming language and the feature cross-platform. It may be the most proper solution for developing mobile applications in the future. Using Flutter, MQTT protocol and [MQTT cloud service](https://www.emqx.com/en/cloud), we can develop more interesting applications.
+Flutter makes it easy that develop powerful mobile applications through unified programming language and the feature cross-platform. It may be the most proper solution for developing mobile applications in the future. Using Flutter, [MQTT protocol](https://www.emqx.com/en/mqtt) and [MQTT cloud service](https://www.emqx.com/en/cloud), we can develop more interesting applications.

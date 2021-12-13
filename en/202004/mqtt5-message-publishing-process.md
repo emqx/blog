@@ -62,7 +62,7 @@ In the MQTT 3.0, the process of publishing the QoS 0 message is :
 
 To ensure the message being sent successfully in a single pass. At first, the publisher needs to publish a PUBLISH packet, the recipient will store received messages after receiving the PUBLISH packet, and then will return the PUBREC packet to the sender. The sender will replace the stored PUBLISH packet into received the PUBREC packet after receiving a PUBREC packet, and then send the PUBREL packet to the recipient. The recipient will discard the previous stored status after receiving PUBREL message. At this time the recipient already received the message, and can ensure that the message reached once only.
 
-The MQTT protocol faced with embedded devices with low ability of computing. Although the MQTT 5.0 protocol has made some slight upgrades in the process of messages, using the QoS 2 message to communicate still consumes a lot of resources. Therefore, if the client's demand for the information transmission priority is not extremely high, please not trying to transmit the QoS 2 message.
+The [MQTT protocol](https://www.emqx.com/en/mqtt) faced with embedded devices with low ability of computing. Although the MQTT 5.0 protocol has made some slight upgrades in the process of messages, using the QoS 2 message to communicate still consumes a lot of resources. Therefore, if the client's demand for the information transmission priority is not extremely high, please not trying to transmit the QoS 2 message.
 
 ## MQTT 5.0 update
 
