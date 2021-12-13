@@ -18,7 +18,7 @@ This article uses common IoT usage scenarios as an example to introduce how to u
 
 ## Business scenario
 
-Suppose there is now an intelligent door lock project, all the door locks will report the door lock information every 1 minute or any time when the door lock status changes, such as on / off, and the MQTT topic is reported as follows (QoS = 1):
+Suppose there is now an intelligent door lock project, all the door locks will report the door lock information every 1 minute or any time when the door lock status changes, such as on / off, and the [MQTT topic](https://www.emqx.com/en/blog/advanced-features-of-mqtt-topics) is reported as follows (QoS = 1):
 
 ```bash
 devices/{client_id}/state

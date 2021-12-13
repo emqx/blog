@@ -15,7 +15,7 @@ EMQ X Enterprise provides the GB/T 32960 protocol gateway module. The whole proc
 ![画板2x.png](https://static.emqx.net/images/1309966aded70c111bf9b8ed3b3a5ee4.png)
 
 1. The terminal side: Data is exchanged via the GB/T 32960 protocol, implementing different types of data to be reported or sending downstream messages to the terminal.
-2. The platform side: The EMQ X GB/T 32960 gateway decodes the packets and converts them internally in EMQ X to the MQTT protocol for upstreaming and downstreaming data operations.
+2. The platform side: The EMQ X GB/T 32960 gateway decodes the packets and converts them internally in EMQ X to the [MQTT protocol](https://www.emqx.com/en/mqtt) for upstreaming and downstreaming data operations.
    - Data uplink: Publishing the uplink data packet as an MQTT PUBLISH to a specific topic.
    - Data downlink: Publishing the downlink data to a specific topic, and the message is transformed into the GB/T 32960 protocol packet structure and sent down to the terminal.
 3. The other side: The rules engine of EMQ X Enterprise allows the upstream data appearing in 2 to be stored/forwarded to enterprise databases, stream processing platforms (e.g. Kafka), and business systems; enterprise application platforms can issue control instructions to EMQ X in a variety of ways, ultimately sending the data to the terminal side.

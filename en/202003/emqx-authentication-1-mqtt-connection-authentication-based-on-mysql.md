@@ -8,7 +8,7 @@ As the factual standard for IoT communication protocols, MQTT maintains a high l
   - SSL/TLS is used to encrypt communication data to prevent middleman attacks;
   - The client certificate is used as device identity certificate  to verify the validity of the device.
 - Application layer ：MQTT's security features are used for protection:
-  - MQTT protocol supports user name and password for client identity verification;
+  - [MQTT protocol](https://www.emqx.com/en/mqtt) supports user name and password for client identity verification;
   - MQTT Broker implements  access control for topics (Topic ACL).
 
 MQTT Safety specifications are fully supported by EMQ, and the built-in safety functions can be used out-of-the-box without programming, which can quickly eliminate security risks in projects. This series will focus on various levels of safety specifications, and introduce how to enable relevant functions through the configuration of EMQ X to finally achieve the corresponding safety protection.

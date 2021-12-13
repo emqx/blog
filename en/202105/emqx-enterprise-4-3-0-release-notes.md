@@ -42,7 +42,7 @@ In the current version, no additional operations are required. After the Kafka T
 
 ### All batch operations supported by the rule engine enable batch asynchronous by default
 
-Starting from version 4.2.2, EMQ X rule engine provides asynchronous and batch writing modes for I/O operations such as writing to the database and Kafka. The asynchronous mode can separate device message communication from data processing and provide higher I/O performance and avoid I/O blocking the client's normal Pub/Sub process. Please see EMQ X Enterprise 4.2.2 release notes for details.
+Starting from version 4.2.2, EMQ X rule engine provides asynchronous and batch writing modes for I/O operations such as writing to the database and Kafka. The asynchronous mode can separate device message communication from data processing and provide higher I/O performance and avoid I/O blocking the client's normal [Pub/Sub](https://www.emqx.com/en/blog/mqtt-5-introduction-to-publish-subscribe-model) process. Please see EMQ X Enterprise 4.2.2 release notes for details.
 
 Previously, this function was disabled by default, and it is recommended that users enable it. In this version, we set the option to be enabled by default in order to bring a better experience to users.
 
@@ -57,7 +57,7 @@ We have added HTTPS support for InfluxDB and support batch writing of InfluxDB.
 
 ## Kafka distribution improvement: easier to use Kafka message distribution
 
-EMQ X's module -> Kafka consumer group function can use external Kafka as a message queue to consume messages from a specified Kafka topic, convert them into MQTT messages and send them to specific MQTT topics. The data flow is shown in the following figure:
+EMQ X's module -> Kafka consumer group function can use external Kafka as a [message queue](https://www.emqx.com/en/blog/mqtt5-feature-inflight-window-message-queue) to consume messages from a specified Kafka topic, convert them into MQTT messages and send them to specific MQTT topics. The data flow is shown in the following figure:
 
 ![Kafka distribution improvement](https://static.emqx.net/images/9fe7501172ea1e95ec7052c733c1c8ec.png)
 

@@ -1,4 +1,4 @@
-**MQTT X** 是由全球领先的开源物联网中间件提供商 [EMQ](https://github.com/emqx/emqx) 开源的一款跨平台 MQTT 5.0 桌面客户端，它支持 macOS，Linux，Windows。MQTT X 的用户界面借助聊天软件的形式简化了页面的操作逻辑，用户可以快速创建连接保存并同时建立多个连接客户端，方便用户快速测试 MQTT/TCP、MQTT/TLS 的连接、发布/订阅功能及其他特性。
+**MQTT X** 是由全球领先的开源物联网中间件提供商 [EMQ](https://github.com/emqx/emqx) 开源的一款跨平台 [MQTT 5.0](https://www.emqx.com/zh/mqtt/mqtt5) 桌面客户端，它支持 macOS，Linux，Windows。MQTT X 的用户界面借助聊天软件的形式简化了页面的操作逻辑，用户可以快速创建连接保存并同时建立多个连接客户端，方便用户快速测试 MQTT/TCP、MQTT/TLS 的连接、发布/订阅功能及其他特性。
 
 项目地址：[GitHub](https://github.com/emqx/MQTTX)
 
@@ -6,7 +6,7 @@
 
 ![WX202002101233322x.png](https://static.emqx.net/images/f5084e406711cb780796e21b42d9c3b4.png)
 
-MQTT X 适用于正在搭建自己的 MQTT 的消息服务器的用户来测试连接，订阅和发布消息等，在使用客户端时，用户既可以是发布者，也可以是订阅者。也适用于正在开发或研究 MQTT Broker 的相关用户。在 MQTT 的研究与应用中，无论你身处什么阶段 都可以通过 MQTT X 快速、深入地理解 MQTT 协议相关特性。
+MQTT X 适用于正在搭建自己的 MQTT 的消息服务器的用户来测试连接，订阅和发布消息等，在使用客户端时，用户既可以是发布者，也可以是订阅者。也适用于正在开发或研究 MQTT Broker 的相关用户。在 MQTT 的研究与应用中，无论你身处什么阶段 都可以通过 MQTT X 快速、深入地理解 [MQTT 协议](https://www.emqx.com/zh/mqtt)相关特性。
 
 该项目完全开源，项目采用了 Vue.js + TypeScript + Electron 的技术栈进行开发，你可以在 [GitHub](https://github.com/emqx/MQTTX) 上查看和浏览项目源码。欢迎前来一起讨论和学习 Electron 项目开发技术。
 

@@ -12,7 +12,7 @@ Neuron 工业网关南向支持接入主流的工业物联网协议（[驱动协
 
 ## 新增 modbus: endianness 开关功能
 
-我们在驱动配置时，有一个BYTEORDER（字节顺序）的选择，根据 little-endian 和 big-endian 两种排序方式，我们提供四种排序方式：
+我们在驱动配置时，有一个 BYTEORDER（字节顺序）的选择，根据 little-endian 和 big-endian 两种排序方式，我们提供四种排序方式：
 
 | BYTEORDER选择 | 排序方式 |
 | :-----------: | :------: |

@@ -137,7 +137,7 @@ client.loop_forever()
 
 Calling the function `subscribe()`, which can enable the Raspberry Pi to subscribe to a topic. In the following code, we use it to subscribe to the topic  `raspberry/topic` and monitor messages.
 
-Besides that, we also use `will_set()` to set the will message. The will message is a feature of MQTT, when the device is powered off accidentally, it will send messages to a specified topic. We can know whether the Raspberry Pi is powered off, or the network is abnormal.
+Besides that, we also use `will_set()` to set the [will message](https://www.emqx.com/en/blog/use-of-mqtt-will-message). The will message is a feature of MQTT, when the device is powered off accidentally, it will send messages to a specified topic. We can know whether the Raspberry Pi is powered off, or the network is abnormal.
 
 ### Publish messages 
 
@@ -221,7 +221,7 @@ Next, testing whether the will message, is set successfully.
 
 ## Summary 
 
-We have finished that use the Python MQTT client library `paho-mqtt ` to write and test the client on the Raspberry Pi and implemented the connect, subscribe, unsubscribe, messaging and other functions between the client and the MQTT broker.
+We have finished that use the [Python MQTT client library](https://www.emqx.com/en/blog/python-async-mqtt-client-hbmqtt) `paho-mqtt ` to write and test the client on the Raspberry Pi and implemented the connect, subscribe, unsubscribe, messaging and other functions between the client and the MQTT broker.
 
 So far, you've learned how to simply use the MQTT service, although this is only one part of the MQTT service, it is enough to finish many interesting things. For example:
 

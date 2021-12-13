@@ -204,7 +204,7 @@ You can see that the ClusterIP of `my-emqx` is` 10.100.205.13` (ClusterIP will c
 
 ## Deploy EMQ X Edge cluster and EMQ X  cluster of Enterprise Edition
 
-#### EMQ X Edge
+### EMQ X Edge
 
 Specify `image.repository=emqx/emqx-edge` when deploying EMQ X Edge cluster, and other settings are consistent with the deployment of EMQ X cluster
 
@@ -217,9 +217,9 @@ my-emqx-edge-1  1/1     Running   0          23s
 my-emqx-edge-2  1/1     Running   0          9s
   ```
 
- #### EMQ X EE
+### EMQ X EE
 
-When deploying an cluster of EMQ X Enterprise Edition, you need to log in to [emqx.io](https://www.emqx.com/en)  to apply and download a  License file at first, and create the  License file as a Secret resource
+When deploying an cluster of [EMQ X Enterprise](https://www.emqx.com/en/products/emqx) Edition, you need to log in to [emqx.io](https://www.emqx.com/en)  to apply and download a  License file at first, and create the  License file as a Secret resource
 
 ```
 $ kubectl create secret generic your-license-secret-name --from-file=/path/to/emqx.lic

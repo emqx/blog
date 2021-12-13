@@ -21,7 +21,7 @@ Neuron 支持包括 Modbus、OPCUA、三菱、西门子、罗克⻙尔⾃动化�
 
 ## 已有协议支持进一步增强
 
-对于已经支持的协议如 OPC UA 和 Modbus，新版本中则进行了增强与完善。
+对于已经支持的协议如 OPC UA 和 [Modbus](https://www.emqx.com/zh/blog/building-modbus-based-iiot-app-with-neuron)，新版本中则进行了增强与完善。
 
 ### OPC UA 订阅功能
 

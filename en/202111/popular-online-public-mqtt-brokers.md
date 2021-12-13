@@ -21,7 +21,7 @@ This article selects the following commonly used public MQTT brokers:
 
 It is a free online [MQTT 5 broker](https://www.emqx.io/) provided by [EMQ X Cloud](https://www.emqx.com/en/cloud). There are two access points provided, Global and CN, of which EMQ X (Global) is deployed in AWS, Oregon, USA, and EMQ X (CN) is deployed in Tencent Cloud, Shanghai.
 
-Both access points are EMQ X clusters composed of 2 nodes. Later, more nodes can be automatically added according to the actual access volume and load. According to the background display, the server is based on EMQ X Enterprise 4.2.6, and the current running time is 128 days.
+Both access points are EMQ X clusters composed of 2 nodes. Later, more nodes can be automatically added according to the actual access volume and load. According to the background display, the server is based on [EMQ X Enterprise](https://www.emqx.com/en/products/emqx) 4.2.6, and the current running time is 128 days.
 
 > Note: The two access points of EMQ X (Global) and EMQ X (CN) do not communicate with each other.
 
@@ -145,7 +145,7 @@ We check the network connectivity and network delay through network access. Beca
 
 ## Small-scale performance test
 
-With the help of the open-source MQTT performance test tool [emqtt-bench](https://github.com/emqx/emqtt-bench), we test whether the client's Pub/Sub has a rate limit.
+With the help of the open-source MQTT performance test tool [emqtt-bench](https://github.com/emqx/emqtt-bench), we test whether the client's [Pub/Sub](https://www.emqx.com/en/blog/mqtt-5-introduction-to-publish-subscribe-model) has a rate limit.
 
 **For practicality considerations**, this test is not to explore the upper rate limit of each access point, but to consider that each access point can meet the conventional use intensity. The scenario designed in this round is that a single client’s Sub/Pub message is 1000 msg/s for 1 minute, and the message size is 256 Bytes. Then, we record whether each access point meets the standard and whether the speed is limited. The following figure shows the test architecture:
 

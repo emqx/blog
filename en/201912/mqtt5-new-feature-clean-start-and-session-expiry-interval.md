@@ -32,7 +32,7 @@ Clean Start now replaces the original Clean Session, but is no longer used to in
 
 As mentioned earlier, MQTT v5.0 allows clients to reassign the Seesion Expiry Interval when disconnected. In this way, we can easily satisfy the scenario that the session state is reserved by the server when the client network is abnormally disconnected, and the session is terminated when the client is offline normally, just by setting the Session Expiry Interval to 0 when the client disconnects. Even for a session that never expires, the client can change by setting Clean Start to 1 in the next connection.
 
-Clean Start and Session Expiry Interval not only solve the legacy problems of Clean Session, but also extend the usage scenarios of the client, making the MQTT protocol more practical in a limited network environment.
+Clean Start and Session Expiry Interval not only solve the legacy problems of Clean Session, but also extend the usage scenarios of the client, making the [MQTT protocol](https://www.emqx.com/en/mqtt) more practical in a limited network environment.
 
 ------
 

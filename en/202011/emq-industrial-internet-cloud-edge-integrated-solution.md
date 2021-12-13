@@ -43,7 +43,7 @@ This solution will use these software products in the following list.
 **The description of basic functions of product**
 
 1. Neuron: Industrial IoT data collection
-   - Supports Modbus，OPCUA，IEC61850，IEC104, BACnet and other protocols and devices.
+   - Supports [Modbus](https://www.emqx.com/en/blog/building-modbus-based-iiot-app-with-neuron)，OPCUA，IEC61850，IEC104, BACnet and other protocols and devices.
    - A management console. It allows users to visually configure and access data across industrial equipment in a browser.
    - Northbound standard MQTT data delivery, which sends data to a designated MQTT message server based on a user-specified configuration.
    - Southbound control interface for rule-based device control in conjunction with the rule engine features provided by Kuiper.

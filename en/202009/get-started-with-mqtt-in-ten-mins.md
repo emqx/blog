@@ -20,7 +20,7 @@ The full name of [MQTT](https://www.emqx.com/en/mqtt) is Message Queuing Telemet
 
 ## Application
 
-MQTT protocol is widely used in the Internet of Things, Mobile Internet, Intelligent Hardware, Internet of Vehicles, Power Energy and so on.
+[MQTT protocol](https://www.emqx.com/en/mqtt) is widely used in the Internet of Things, Mobile Internet, Intelligent Hardware, Internet of Vehicles, Power Energy and so on.
 
 - M2M Communication and Big Data Acquisition in the Internet of Things.
 
@@ -136,7 +136,7 @@ When the MQTT client publishes messages to the server, you can set the retained 
 
 ### Will Message
 
-When the MQTT client sends a CONNECT request to the server, can carry will message. When the MQTT client goes offline abnormally(the client does not send the DISCONNECT message to the server before disconnecting), the MQTT message server will publish will message.
+When the MQTT client sends a CONNECT request to the server, can carry [will message](https://www.emqx.com/en/blog/use-of-mqtt-will-message). When the MQTT client goes offline abnormally(the client does not send the DISCONNECT message to the server before disconnecting), the MQTT message server will publish will message.
 
 For more MQTT will message, please access our blog: [Use of MQTT Will Message](https://www.emqx.com/en/blog/use-of-mqtt-will-message).
 
@@ -160,7 +160,7 @@ For more MQTT Request/response, please access our blog: [MQTT 5.0 Request Respon
 
 ### Shared subscription
 
-Add the support for the shared subscription, which allows multiple subscribers to load balance.
+Add the support for the [shared subscription](https://www.emqx.com/en/blog/introduction-to-mqtt5-protocol-shared-subscription), which allows multiple subscribers to load balance.
 
 ### Topic alias
 

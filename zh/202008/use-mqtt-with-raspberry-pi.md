@@ -2,7 +2,7 @@
 
 [MQTT](https://www.emqx.com/zh/mqtt) 是一种基于发布/订阅模式的 **轻量级物联网消息传输协议** ，可以用极少的代码和带宽为联网设备提供实时可靠的消息服务，它适用于硬件资源有限的设备及带宽有限的网络环境。因此，MQTT 协议广泛应用于物联网、移动互联网、智能硬件、车联网、电力能源等行业。 
 
-在此项目中，我们将在树莓派上使用 Python 编写简单的 MQTT 客户端，并实现该客户端与 MQTT 服务器的连接、订阅、取消订阅、收发消息等功能。 
+在此项目中，我们将在树莓派上使用 Python 编写简单的 [MQTT 客户端](https://www.emqx.com/zh/mqtt-client-sdk)，并实现该客户端与 [MQTT 服务器](https://www.emqx.io/zh)的连接、订阅、取消订阅、收发消息等功能。 
 
 
 
@@ -222,7 +222,7 @@ client.loop_forever()
 
 ## 总结 
 
-我们完成了在树莓派上使用 Python MQTT 客户端库 `paho-mqtt ` 编写测试客户端， 并实现了测试客户端与 MQTT 服务器的连接、订阅、取消订阅、收发消息等功能。
+我们完成了在树莓派上使用 [Python MQTT 客户端库](https://www.emqx.com/zh/blog/comparision-of-python-mqtt-client) `paho-mqtt ` 编写测试客户端， 并实现了测试客户端与 MQTT 服务器的连接、订阅、取消订阅、收发消息等功能。
 
 至此，您已经学会了如何简单的使用 MQTT 服务，虽然这只是 MQTT 服务的一小部分，但也足够完成很多有意思的事，比如：
 

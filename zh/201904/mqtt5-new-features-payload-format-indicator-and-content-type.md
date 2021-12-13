@@ -1,4 +1,4 @@
-有效载荷标识（Payload Format Indicator）与内容类型（Content Type）是 MQTT 5.0 新引入的两个属性。
+有效载荷标识（Payload Format Indicator）与内容类型（Content Type）是 [MQTT 5.0](https://www.emqx.com/zh/mqtt/mqtt5) 新引入的两个属性。
 
 ## 有效载荷标识（Payload Format Indicator）
 

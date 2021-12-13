@@ -96,7 +96,7 @@ For those devices that want to re-receive the messages that they missed during o
 
 ### Online state awareness
 
-MQTT has designed Last Will message to let the broker help the device publish a will message to the specified topic if it finds that the device is offline abnormally.
+MQTT has designed Last [Will message](https://www.emqx.com/en/blog/use-of-mqtt-will-message) to let the broker help the device publish a will message to the specified topic if it finds that the device is offline abnormally.
 
 In fact, in some implementations of [MQTT broker](https://www.emqx.com/en/products/emqx) (such as EMQX), when the device goes online or offline, Broker publishes device status updates through certain system topics, which is more in line with the actual application scenario.
 
@@ -123,7 +123,7 @@ There are several popular MQTT Brokers so far:
 Considering support for [MQTT 5.0](https://www.emqx.com/en/mqtt/mqtt5), stability, scalability, cluster capabilities, etc., [EMQ X's](https://www.emqx.com/en/products/emqx) performance should be the best:
 
 - Developed with Erlang OTP, good fault tolerance (proven language in telecommunication field that once made 99.9999999% availability of switch equipment[^5])
-- There are a lot of official plugins for extension. There are many authentication plugins, and the backend plugin is available. Supports various relational databases, NoSQL databases, and common message queues such as Kafka, RabbitMQ, Pulsar, etc.
+- There are a lot of official plugins for extension. There are many authentication plugins, and the backend plugin is available. Supports various relational databases, NoSQL databases, and common [message queues](https://www.emqx.com/en/blog/mqtt5-feature-inflight-window-message-queue) such as Kafka, RabbitMQ, Pulsar, etc.
 - Support cluster and horizontal expansion of nodes
 - Supports 2000K concurrent connections with a single node
 - Support rule engine and codec

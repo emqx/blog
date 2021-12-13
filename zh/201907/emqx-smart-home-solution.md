@@ -18,7 +18,7 @@
 ## EMQ X Enterprise产品优势：
 
 - EMQ X Enterprise 具备单节点百万级，集群千万级的海量接入能力，集群性能高，硬件资源消耗量远远小于同类型竞争产品，可以为智能家居平台提供商提供性价比极高的大规模设备接入解决方案；
-- EMQ X Enterprise同时支持不同网络（如2G/3G/4G，NB-IoT、蓝牙，Wi-Fi以及有线网络）的设备和家庭网关接入，并且支持MQTT、CoAP/LwM2M、HTTP、WebSocket、TCP/IP等主流物联网协议的混合接入，为智能家居平台提供商提供了统一的消息接入方案；
+- EMQ X Enterprise同时支持不同网络（如2G/3G/4G，[NB-IoT](https://www.emqx.com/zh/blog/emqx-nb-iot-access-solution)、蓝牙，Wi-Fi以及有线网络）的设备和家庭网关接入，并且支持MQTT、CoAP/LwM2M、HTTP、WebSocket、TCP/IP等主流物联网协议的混合接入，为智能家居平台提供商提供了统一的消息接入方案；
 
 - EMQ X Enterprise支持多云部署，并且支持跨集群的消息桥接功能；可以为智能设备厂商提供跨国家、跨地区的平台消息同步能力。在跨集群数据桥接场景中，EMQ X Enterprise可提供毫秒级时延和高数据量吞吐能力，为跨地域设备与终端，设备与设备提供实时的消息传递。
 

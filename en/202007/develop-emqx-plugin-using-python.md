@@ -2,7 +2,7 @@ From v4.1, EMQ X [MQTT broker](https://www.emqx.com/en/products/emqx) provides t
 
 - Verify the client's login permission: when connecting to the client, the corresponding function will be triggered and the client information will be obtained through parameters. Finally, it judges whether it has the login permission after reading the database, comparison, etc.
 - Record the online status of client and online and offline history: trigger corresponding functions when the status of the client changes, the client information will be obtained through parameters, and the online status of the client in the database will be rewritten.
-- Verify the operation permission for PUB/SUB of the client: trigger corresponding functions when publish or subscribe, and the client information and current topics will be obtained through parameters to judge whether it has the corresponding operation permission.
+- Verify the operation permission for [PUB/SUB](https://www.emqx.com/en/blog/mqtt-5-introduction-to-publish-subscribe-model) of the client: trigger corresponding functions when publish or subscribe, and the client information and current topics will be obtained through parameters to judge whether it has the corresponding operation permission.
 - Handle session and message events, implement the subscription relation and message processing or storage: trigger corresponding functions when publish messages and status changes, the current client information, information status and message content will be forwarded to Kafka or database for storage.
 
 >  Note：the message hook is only supported in the enterprise.

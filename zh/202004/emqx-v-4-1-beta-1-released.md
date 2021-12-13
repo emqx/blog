@@ -38,9 +38,9 @@ EMQ X Broker 的多语言扩展通过 `emqx-extension-hook` 插件中的驱动�
 
 - Dashboard 提供内置模块管理页面
 
-  目前存在延迟发布、内置 ACL、上下线通知、主题重写、代理订阅与主题指标共六个内置模块，都支持通过 Dashboard 或 HTTP API 动态加载和卸载。
+  目前存在延迟发布、内置 ACL、上下线通知、[主题重写](https://www.emqx.com/zh/blog/rewriting-emqx-mqtt5-topic)、代理订阅与主题指标共六个内置模块，都支持通过 Dashboard 或 HTTP API 动态加载和卸载。
 
-- 支持 MQTT 增强认证，已支持的认证算法包括：SCRAM-SHA-1
+- 支持 MQTT [增强认证](https://www.emqx.com/zh/blog/mqtt5-enhanced-authentication)，已支持的认证算法包括：SCRAM-SHA-1
 
   现在可以使用 TLS/SSL 或增强认证来进行双向认证。
 

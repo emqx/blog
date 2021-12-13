@@ -1,6 +1,6 @@
-##  Introduction to the Pulsar messaging system
+## Introduction to the Pulsar messaging system
 
-Apache Pulsar is an enterprise-level pub-sub messaging system. Pulsar aims to replace Apache Kafka's dominance for many years. Pulsar provides faster throughput and lower latency than Kafka in many scenarios, and provides developers with a set of compatible  APIs.
+Apache Pulsar is an enterprise-level [pub-sub](https://www.emqx.com/en/blog/mqtt-5-introduction-to-publish-subscribe-model) messaging system. Pulsar aims to replace Apache Kafka's dominance for many years. Pulsar provides faster throughput and lower latency than Kafka in many scenarios, and provides developers with a set of compatible  APIs.
 
 Pulsar combines high-performance streams and flexible traditional queues into a unified message model and API to synchronize flow processing with queue processing.
 
@@ -169,14 +169,14 @@ Click the **Add** button in the response action, select the action of **Bridge d
 
 ## Test
 
-#### Expected result
+### Expected result
 
 We have successfully created a rule that contains a processing action. The expected result of the action is as follows:
 
 1. When the device reports a message to the topic `cmd/state/:id`, and the value of` tachometer` in the message exceeds 8000, it will hit SQL, and the number of **hits** in the rule list will increase by 1;
 2. Pulsar's `emqx_rule_engine_output` topic will add a piece of message with the same value as the current message.
 
-#### Test with Websocket tools in Dashboard
+### Test with Websocket tools in Dashboard
 
 Switch to the **Tools ->  Websocket** page, use any information client to connect to EMQ X. After the connection is successful, send the following information in the **Message**  card:
 

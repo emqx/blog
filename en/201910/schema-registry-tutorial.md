@@ -44,7 +44,7 @@ A common use case is to use the rule engine to call the encoding and decoding in
 
 The message processing  of EMQ X can be divided into three parts: Messaging, Rule Engine and Data Conversion.
 
-EMQ X's PUB/SUB system routes messages to specified topics. Rule engine can flexibly configure business rules of data, match messages according to rules, and then specify corresponding actions. Data format conversion occurs before the rule matching process. The data is first converted to a Map format that can participate in rule matching, and then matched.
+EMQ X's [PUB/SUB](https://www.emqx.com/en/blog/mqtt-5-introduction-to-publish-subscribe-model) system routes messages to specified topics. Rule engine can flexibly configure business rules of data, match messages according to rules, and then specify corresponding actions. Data format conversion occurs before the rule matching process. The data is first converted to a Map format that can participate in rule matching, and then matched.
 
 ![SchemaAndRuleEngine.png](https://static.emqx.net/images/80507f270e8aee6b00bb7ce7d2ca2136.png)
 

@@ -22,7 +22,7 @@ For more details: [EMQ Website](https://github.com/lf-edge/ekuiper) , [Kuiper Gi
 
 - 0.4.0
 
-  - Supported [template feature](https://github.com/emqx/kuiper/blob/develop/docs/en_US/rules/overview.md#data-template) for all of sinks, now user can leverage template to customize complex output data in all sinks.
+  - Supported [template feature](https://github.com/lf-edge/ekuiper/blob/master/docs/en_US/rules/overview.md#data-template) for all of sinks, now user can leverage template to customize complex output data in all sinks.
 
   - When user invoke API for creating a plugin, user can provide a install.sh script in zip file, so that the complex library dependencies installation can be supported.
   - Added FVT scenario for plugin.

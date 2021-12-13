@@ -13,7 +13,7 @@ Github仓库： [https://github.com/emqx/kuiper](https://github.com/emqx/kuiper)
 
 - 性能优化
   - 提供了针对 Kuiper 规则设置并发度的配置选项，在不同的场景下可以对其优化
-    - 在 [source](https://github.com/emqx/kuiper/blob/develop/docs/en_US/rules/sources/mqtt.md) 里的``concurrency`` 设置：设置运行的协程数，默认值为1。如果设置协程数大于1，必须使用共享订阅模式。
+    - 在 [source](https://github.com/emqx/kuiper/blob/develop/docs/en_US/rules/sources/mqtt.md) 里的``concurrency`` 设置：设置运行的协程数，默认值为1。如果设置协程数大于1，必须使用[共享订阅](https://www.emqx.com/zh/blog/introduction-to-mqtt5-protocol-shared-subscription)模式。
     - 在 [sink](https://github.com/emqx/kuiper/blob/develop/docs/en_US/rules/overview.md#actions) 里的``concurrency`` 设置：设置运行的线程数。该参数值大于1时，消息发出的顺序可能无法保证。
     - 在 [SQL 计划](https://github.com/emqx/kuiper/blob/develop/docs/en_US/rules/overview.md#options)中的``concurrency``设置：一条规则运行时会根据 SQL 语句分解成多个计划运行。该参数设置每个计划运行的线程数。该参数值大于1时，消息处理顺序可能无法保证。
   - 性能测试结果

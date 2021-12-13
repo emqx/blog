@@ -16,10 +16,10 @@ The client needs to store the following session state:
 The server needs to store the following session state:
 
 - Whether the session is existed, even if the rest of the session state is empty.
-- The client subscribes to messages, including any subscription identifier.
+- The client subscribes to messages, including any [subscription identifier](https://www.emqx.com/en/blog/subscription-identifier-and-subscription-options).
 - The QoS 1 and QoS 2 message that has been sent to the client, but have not yet completed the confirmation.
 - The QoS 0 (optional), QoS 1 and QoS 2 message that waiting to be delivered.
-- The QoS 2 message, will message and will delay interval that has been received from the client, but has not yet completed the confirmation.
+- The QoS 2 message, [will message](https://www.emqx.com/en/blog/use-of-mqtt-will-message) and will delay interval that has been received from the client, but has not yet completed the confirmation.
 - The session expiration time.
 
 ### The use of session state
@@ -32,11 +32,11 @@ If the client causes the connection briefly interrupted because of the network f
 
 MQTT v3.1.1does not stipulate when the persistent session should be expired. If only understood from the protocol level, this persistent session should exist forever. However, in the actual scenario, this is not realistic, because it will highly occupy the resource of the server. Therefore, the server usually does not follow the protocol to implementation, but provides a global configuration for limiting the session expiration time.
 
-In the MQTT 5.0, this problem has been properly resolved. The field Clean Session is divided into field Clean Start and Session Expiry Interval. The field Clean Start specifies whether need a new session, field Session Expiry Interval specifies the session expiration time. They will be specified when connecting, but the field Session Expiry Interval can be updated when the client disconnected. Therefore, we can easily implement retaining the session when the client disconnected because of an abnormal network connection. Also, we can easily implement terminating the session by closing the connection when the client offline normally.
+In the MQTT 5.0, this problem has been properly resolved. The field Clean Session is divided into field [Clean Start](https://www.emqx.com/en/blog/mqtt5-new-feature-clean-start-and-session-expiry-interval) and Session Expiry Interval. The field Clean Start specifies whether need a new session, field Session Expiry Interval specifies the session expiration time. They will be specified when connecting, but the field Session Expiry Interval can be updated when the client disconnected. Therefore, we can easily implement retaining the session when the client disconnected because of an abnormal network connection. Also, we can easily implement terminating the session by closing the connection when the client offline normally.
 
 ### How does the client know that this is a resumed session?
 
-It is obvious that when the client initiates a connection in expecting from a previously established session resume state way, it needs to know whether there is a corresponding session existing in the server, and then it can determine whether the need to re-subscribe after establishing the connection. For this point, from v3.1.1, MQTT protocol has designed the field Session Present for CONNACK packet. This field is used to represent whether the session currently used is new, and the client can judge according to the value of this field.
+It is obvious that when the client initiates a connection in expecting from a previously established session resume state way, it needs to know whether there is a corresponding session existing in the server, and then it can determine whether the need to re-subscribe after establishing the connection. For this point, from v3.1.1, [MQTT protocol](https://www.emqx.com/en/mqtt) has designed the field Session Present for CONNACK packet. This field is used to represent whether the session currently used is new, and the client can judge according to the value of this field.
 
 ### Recommendation for use
 

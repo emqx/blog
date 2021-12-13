@@ -76,7 +76,7 @@ Oracle、MS SQL Server 均是商业关系型数据库阵营中的杰出代表，
 
 LwM2M 是由 Open Mobile Alliance(OMA) 定义的一套适用于物联网的轻量级协议，它提供了设备管理和通讯的功能，尤其适用于资源有限的终端设备。
 
-EMQ X-LwM2M 实现了 LwM2M 的大部分功能，应用程序和 MQTT 客户端可以通过 EMQ X-LwM2M 访问支持 LwM2M 的设备，设备也可以往 EMQ X-LwM2M 上报 notification，实现数据双向通信。
+EMQ X-LwM2M 实现了 LwM2M 的大部分功能，应用程序和 [MQTT 客户端](https://www.emqx.com/zh/mqtt-client-sdk)可以通过 EMQ X-LwM2M 访问支持 LwM2M 的设备，设备也可以往 EMQ X-LwM2M 上报 notification，实现数据双向通信。
 
 ![image20201208112020883.png](https://static.emqx.net/images/0833d7b92d6ac8814dac5e19fd0e59e5.png)
 

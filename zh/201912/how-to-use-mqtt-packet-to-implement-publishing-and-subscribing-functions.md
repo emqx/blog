@@ -18,7 +18,7 @@ MQTTX 工具中 Client 的配置其实是 MQTT 协议中 Connect 报文的配置
 
 #### Client ID
 
-服务端使用 ClientId 识别客户端。连接服务端的每个客户端都有唯一的 ClientId 。客户端和服务端都必须使用 ClientId 识别两者之间的 MQTT 会话相关的状态。
+服务端使用 ClientId 识别客户端。连接服务端的每个客户端都有唯一的 ClientId 。客户端和服务端都必须使用 ClientId 识别两者之间的 [MQTT 会话](https://www.emqx.com/zh/blog/mqtt-session)相关的状态。
 
 ClientId 必须存在，但是服务端可以允许客户端提供一个零字节的 ClientId，如果这样做了，服务端必须将这看作特殊情况并分配唯一的 ClientId 给那个客户端。然后正常处理这个 CONNECT 报文。
 
@@ -28,7 +28,7 @@ MQTT 可以通过发送用户名和密码来进行相关的认证和授权，但
 
 #### Keep Alive
 
-保持连接（Keep  Alive）是一个以秒为单位的时间间隔，它是指在客户端传输完成一个控制报文的时刻到发送下一个报文的时刻，两者之间允许空闲的最大时间间隔。客户端负责保证控制报文发送的时间间隔不超过保持连接的值。如果没有任何其它的控制报文可以发送，客户端必须发送一个PINGREQ报文。
+保持连接（Keep  Alive）是一个以秒为单位的时间间隔，它是指在客户端传输完成一个控制报文的时刻到发送下一个报文的时刻，两者之间允许空闲的最大时间间隔。客户端负责保证控制报文发送的时间间隔不超过保持连接的值。如果没有任何其它的控制报文可以发送，客户端必须发送一个 PINGREQ 报文。
 
 如果 Keep Alive 的值非零，并且服务端在一点五倍的 Keep Alive 时间内没有收到客户端的控制报文，它必须断开客户端的网络连接，认为网络连接已断开。
 
@@ -62,11 +62,11 @@ MQTT 可以通过发送用户名和密码来进行相关的认证和授权，但
 
 Connack 报文包含 Session Present 和 Connect Return code 两个重要的标志。 
 
-#### Session Present
+### Session Present
 
 Session Present 标志表示当前会话是否是一个新的会话，如果服务端收到 CleanSession 标志为1的连接，Connack报文中的 SessionPresent 标志为 0 。如果服务端收到一个 CleanSession 为0的连接，SessionPresent 标志的值取决于服务端是否已经保存了 ClientId 对应客户端的会话状态。如果服务端已经保存了会话状态，Connack 报文中的 SessionPresent 标志为 1，如果服务端没有已保存的会话状态，Connack 报文中的 SessionPresent 标志为 0.
 
-#### Connect Return code 
+### Connect Return code 
 
 Connect Return code 表示服务器对此次 Connect 的回应，0 表示连接已被服务器接受。如果服务端收到一个合法的 CONNECT 报文，但出于某些原因无法处理它，服务端应该尝试发送一个包含非零返回码（表格中的某一个）的 CONNACK 报文。如果服务端发送了一个包含非零返回码的CONNACK 报文，那么它必须关闭网络连接。
 
@@ -121,11 +121,11 @@ Publish 报文是指从客户端向服务端或者服务端向客户端传输一
 
 ![WX201911281441422x.png](https://static.emqx.net/images/70abc02e1ade4a4a49031c43bd9b8942.png)
 
-#### Topic
+### Topic
 
 主题名（Topic Name）用于识别消息应该被发布到哪一个会话，服务端发送给订阅客户端的 Publish 报文的主题名必须匹配该订阅的主题过滤器。
 
-#### QoS
+### QoS
 
 QoS 表示应用消息分发的服务质量等级保证
 
@@ -140,9 +140,9 @@ Publish 报文不能将 QoS 所有的位设置为 1。如果服务端或客户�
 
 关于不同等级的QoS的工作原理，请查阅[MQTT 5.0 协议介绍 - QoS 服务质量](https://www.emqx.com/zh/blog/introduction-to-mqtt-qos)。
 
-#### Retain
+### Retain
 
-如果客户端发给服务端的 Publish 报文的保留（RETAIN）标志被设置为 1，服务端必须存储这个应用消息和它的服务质量等级（QoS），以便它可以被分发给未来的主题名匹配的订阅者 。一个新的订阅建立时，对每个匹配的主题名，如果存在最近保留的消息，它必须被发送给这个订阅者。如果服务端收到一条保留（RETAIN）标志为1的Q消息，它必须丢弃之前为那个主题保留的任何消息，并将这个新的消息当作那个主题的新保留消息。
+如果客户端发给服务端的 Publish 报文的保留（RETAIN）标志被设置为 1，服务端必须存储这个应用消息和它的服务质量等级（QoS），以便它可以被分发给未来的主题名匹配的订阅者 。一个新的订阅建立时，对每个匹配的主题名，如果存在最近保留的消息，它必须被发送给这个订阅者。如果服务端收到一条保留（RETAIN）标志为1的Q消息，它必须丢弃之前为那个主题保留的任何消息，并将这个新的消息当作那个主题的新[保留消息](https://www.emqx.com/zh/blog/message-retention-and-message-expiration-interval-of-emqx-mqtt5-broker)。
 
 保留标志为 1 且有效载荷为零字节的 Publish 报文会被服务端当作正常消息处理，它会被发送给订阅主题匹配的客户端。此外，同一个主题下任何现存的保留消息必须被移除，因此这个主题之后的任何订阅者都不会收到一个保留消息
 
@@ -150,6 +150,6 @@ Publish 报文不能将 QoS 所有的位设置为 1。如果服务端或客户�
 
 如果客户端发给服务端的 Publish 报文的保留标志位 0，服务端不能存储这个消息也不能移除或替换任何现存的保留消息。
 
-#### Payload
+### Payload
 
 有效载荷包含将被发布的应用消息。数据的内容和格式是应用特定的，可以发送图像，任何编码的文本，加密的数据以及几乎所有二进制数据。

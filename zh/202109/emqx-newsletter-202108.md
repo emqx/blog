@@ -9,7 +9,7 @@ EMQ X 5.0 将呈现全新设计的管理 UI (用户界面）。新设计的 UI �
 
 ![MQTT 高级功能](https://static.emqx.net/images/e638f39e3c4875aa19bae385f0536b50.png)
 
-新 UI 将使主题重写、自动订阅、延迟发布和事件消息的管理变得轻而易举。
+新 UI 将使[主题重写](https://www.emqx.com/zh/blog/rewriting-emqx-mqtt5-topic)、自动订阅、延迟发布和事件消息的管理变得轻而易举。
 
 
 

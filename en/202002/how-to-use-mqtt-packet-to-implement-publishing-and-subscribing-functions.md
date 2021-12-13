@@ -14,11 +14,11 @@ If you don't have an available MQTT broker for the time being, **[EMQ X](https:/
 
 ![WX201911281139012x.png](https://static.emqx.net/images/824bc7779391f86ec9cf02bd73378f42.png)
 
-The configuration of the Client in the MQTTX tool is actually the configuration of the Connect packets in the MQTT protocol. The following explains the related configuration items:
+The configuration of the Client in the MQTTX tool is actually the configuration of the Connect packets in the [MQTT protocol](https://www.emqx.com/en/mqtt). The following explains the related configuration items:
 
 #### Client ID
 
-The server uses the ClientId to identify the client. Each client that connects to the server has a unique ClientId. Both the client and server must use the ClientId to identify the status related to the MQTT session between them.
+The server uses the ClientId to identify the client. Each client that connects to the server has a unique ClientId. Both the client and server must use the ClientId to identify the status related to the [MQTT session](https://www.emqx.com/en/blog/mqtt-session) between them.
 
 The ClientId must exist, but the server can allow the client to provide a zero-byte ClientId. If this is done, the server must treat this as a special case and assign a unique ClientId to that client. Then, it can process this CONNECT packet normally.
 

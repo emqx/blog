@@ -41,6 +41,6 @@ HStreamDB-Java 是目前主要支持的 HStreamDB 客户端（后续将会有更
 即将发布的 HStreamDB Java SDK v0.6 主要包含以下特性：
 
 - 新增对 HStreamDB 集群的支持
-- 新增对共享订阅的支持
+- 新增对[共享订阅](https://www.emqx.com/zh/blog/introduction-to-mqtt5-protocol-shared-subscription)的支持
 - 重构部分 API
 - 修复了一些已知的问题

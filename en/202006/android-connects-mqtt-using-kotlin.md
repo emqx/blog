@@ -204,4 +204,4 @@ So far, we have finished the construction of MQTT client on the Android and impl
 
 MQTT can provide the real-time and reliable message service for connecting remote devices, only with a few code and limited bandwidth. Since it is a kind of low-cost, low-bandwidth occupancy instant communicating protocol, it is widely used for IoT, small size equipments, mobile applications, etc.
 
-Kotlin is also a language promoted by Google, and we can develop more interesting applications by using the MQTT protocol and [MQTT cloud service](https://www.emqx.com/en/cloud).
+Kotlin is also a language promoted by Google, and we can develop more interesting applications by using the [MQTT protocol](https://www.emqx.com/en/mqtt) and [MQTT cloud service](https://www.emqx.com/en/cloud).

@@ -36,7 +36,7 @@ The rules engine of version 4.2.2 has added the following new features:
 
   Previously, the rules engine only supported synchronous mode for processing device data due to time-series considerations. In the case of Publish, for example, the rules engine will block the Publish process when the data is deposited, and waits until it has been deposited before publish the message to the specified topic.
 
-  In the case of large message volumes, if the user does not wish to block normal Pub/Sub and other processes, asynchronous mode can be selected when creating the rules engine. Asynchronous mode separates device message communication from data processing and prevents the rules engine from blocking the normal behaviour of the client.
+  In the case of large message volumes, if the user does not wish to block normal [Pub/Sub](https://www.emqx.com/en/blog/mqtt-5-introduction-to-publish-subscribe-model) and other processes, asynchronous mode can be selected when creating the rules engine. Asynchronous mode separates device message communication from data processing and prevents the rules engine from blocking the normal behaviour of the client.
 
   > In practice, the difference in time-series between the two has little or no impact on the business, and the rules engine action is preferentially recommended in asynchronous mode.
 

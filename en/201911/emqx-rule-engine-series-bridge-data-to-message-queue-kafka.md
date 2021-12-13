@@ -1,4 +1,4 @@
-The EMQ X 3.2 version introduces the ''Rules Engine'' feature that supports screening data reported by the EMQ X Broker terminal, which is processed and streamed to the back-end database or other message queues. This article uses a specific scenario to explain "How to use the rules engine to forward messages to Kafka"
+The EMQ X 3.2 version introduces the ''Rules Engine'' feature that supports screening data reported by the EMQ X Broker terminal, which is processed and streamed to the back-end database or other [message queues](https://www.emqx.com/en/blog/mqtt5-feature-inflight-window-message-queue). This article uses a specific scenario to explain "How to use the rules engine to forward messages to Kafka"
 
 
 

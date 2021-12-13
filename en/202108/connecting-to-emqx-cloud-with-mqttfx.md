@@ -1,4 +1,4 @@
-This article will take [MQTT.fx](http://www.mqttfx.jensd.de/) as [MQTT client](https://www.emqx.com/en/blog/introduction-to-the-commonly-used-mqtt-client-library) test tool to connect to [MQTT Cloud Service - EMQ X Cloud](https://www.emqx.com/en/cloud). Through this article, you will be able to quickly understand the basic usage of MQTT.fx and the basic concepts and usage of the MQTT protocol.
+This article will take [MQTT.fx](http://www.mqttfx.jensd.de/) as [MQTT client](https://www.emqx.com/en/blog/introduction-to-the-commonly-used-mqtt-client-library) test tool to connect to [MQTT Cloud Service - EMQ X Cloud](https://www.emqx.com/en/cloud). Through this article, you will be able to quickly understand the basic usage of MQTT.fx and the basic concepts and usage of the [MQTT protocol](https://www.emqx.com/en/mqtt).
 
 
 

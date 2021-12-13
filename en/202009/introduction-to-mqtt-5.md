@@ -14,7 +14,7 @@ Finally, the OASIS MQTT technical committee provides many new functions and feat
 
 - The improved error reporting. All response packet will now include a reason code and an optional and easy-to-read reason string.
 - Specification of generic models, including capability discovery, request-response, etc.
-- The support for the shared subscription protocol, previously there were no shared subscriptions in the standard, and shared subscriptions were defined by each software manufacturer and were not common.
+- The support for the [shared subscription](https://www.emqx.com/en/blog/introduction-to-mqtt5-protocol-shared-subscription) protocol, previously there were no shared subscriptions in the standard, and shared subscriptions were defined by each software manufacturer and were not common.
 - A new extension mechanism, including the user attribute.
 - Introducing new features such as topic aliases to further reduce transmission costs.
 - Session expiry interval and message expiry interval have been added to improve the inflexibility of the Clean Session in the old version.

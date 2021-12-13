@@ -12,7 +12,7 @@ It should be noted that if the Message Queue also reaches the length limit, subs
 
 The CONNECT packet is added with a `Receive Maximum` attribute by the MQTT v5.0 protocol. The official interpretation of it is that *the client uses this value to limit the maximum quantity of published messages with QoS of 1 and QoS of 2 that the client is willing to process simultaneously. There is no mechanism to limit the published messages with a QoS of 0 that the server is trying to send.* That is to say, the server can send subsequent PUBLISH packets to the client with different packet identifiers while waiting for confirmation, until the number of unconfirmed packets reaches the `Receive Maximum` limit.
 
-It is not difficult to see that `Receive Maximum` is actually the same as the Inflight Window mechanism in the EMQ X broker. However, before the MQTT v5.0 protocol was released, the EMQ X already provided this feature to the accessed MQTT client. Now, the clients with the MQTT v5.0 protocol will set the maximum length of the Inflight Window according to the specification of the Receive Maximum, while clients with earlier versions of the MQTT protocol will still set it according to the configuration.
+It is not difficult to see that `Receive Maximum` is actually the same as the Inflight Window mechanism in the EMQ X broker. However, before the MQTT v5.0 protocol was released, the EMQ X already provided this feature to the accessed MQTT client. Now, the clients with the MQTT v5.0 protocol will set the maximum length of the Inflight Window according to the specification of the Receive Maximum, while clients with earlier versions of the [MQTT protocol](https://www.emqx.com/en/mqtt) will still set it according to the configuration.
 
 
 

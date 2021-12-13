@@ -36,7 +36,7 @@
 
 ### 安装 MQTT 客户端库
 
-因为小程序是通过 JavaScript 开发的，因此可以使用 MQTT.js 作为 [MQTT 客户端库](https://www.emqx.com/zh/blog/introduction-to-the-commonly-used-mqtt-client-library)。
+因为小程序是通过 JavaScript 开发的，因此可以使用 [MQTT.js](https://www.emqx.com/zh/blog/mqtt-js-tutorial) 作为 [MQTT 客户端库](https://www.emqx.com/zh/blog/introduction-to-the-commonly-used-mqtt-client-library)。
 
 从小程序基础库版本 [2.2.1](https://developers.weixin.qq.com/miniprogram/dev/framework/compatibility.html) 或以上、及[开发者工具](https://developers.weixin.qq.com/miniprogram/dev/devtools/download.html) 1.02.1808300 或以上开始，小程序支持使用 npm 安装第三方包。如感兴趣的读者可自行查看小程序 [npm 支持的](https://developers.weixin.qq.com/miniprogram/dev/devtools/npm.html)官方文档来操作使用，本文为简化操作过程，将不使用 npm 的方式安装。我们将在 utils 文件夹下新建一个 mqtt.js 文件，我们直接获取在 MQTT.js CDN 上的打包构建后的源码复制 mqtt.js 文件中。
 

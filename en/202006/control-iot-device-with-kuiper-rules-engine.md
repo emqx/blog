@@ -209,4 +209,4 @@ In some cases, you probably need to iterate over returned array values, or set d
 If you want to explore more features of EMQ X Kuiper, please refer to below resources.
 
 - [Kuiper Github](https://github.com/emqx/kuiper/)
-- [Kuiper reference guide](https://github.com/emqx/kuiper/blob/edgex/docs/en_US/reference.md)
+- [Kuiper reference guide](https://github.com/lf-edge/ekuiper/blob/master/docs/en_US/reference.md)

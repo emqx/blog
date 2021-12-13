@@ -8,7 +8,7 @@ This article mainly introduces how to use MQTT in the Node.js project to realize
 
 ## MQTT client library
 
-[MQTT.js](https://github.com/mqttjs/MQTT.js) is a client library of the MQTT protocol, written in JavaScript and used in Node.js and browser environments. It is currently the most widely used [MQTT client library](https://www.emqx.com/en/blog/introduction-to-the-commonly-used-mqtt-client-library) in the JavaScript ecosystem.
+[MQTT.js](https://github.com/mqttjs/MQTT.js) is a client library of the [MQTT protocol](https://www.emqx.com/en/mqtt), written in JavaScript and used in Node.js and browser environments. It is currently the most widely used [MQTT client library](https://www.emqx.com/en/blog/introduction-to-the-commonly-used-mqtt-client-library) in the JavaScript ecosystem.
 
 
 

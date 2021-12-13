@@ -18,10 +18,10 @@ EMQ X Broker 4.2-rc.1 正式发布，欢迎大家下载试用，下载地址：h
 - 【新增】支持 CentOS 8、Ubuntu 20.04 操作系统和 ARM64 系统架构
 - 【新增】Webhook 支持配置自定义的 HTTP 头部
 - 【优化】更加友好的告警机制，为开发者提供 HTTP API
-- 【优化】优化保留消息性能
+- 【优化】优化[保留消息](https://www.emqx.com/zh/blog/message-retention-and-message-expiration-interval-of-emqx-mqtt5-broker)性能
 - 【调整】后续版本不再支持 Debian 8、Ubuntu 14.04 和 Raspbian 8 操作系统
 - 【调整】`emqx-statsd` 插件正式更名为 `emqx-prometheus`
-- 【调整】发布与订阅支持独立配置主题重写规则
+- 【调整】发布与订阅支持独立配置[主题重写](https://www.emqx.com/zh/blog/rewriting-emqx-mqtt5-topic)规则
 - 【调整】允许用户配置是否允许 WebSocket 消息包含多个 MQTT 报文，以兼容部分客户端
 - 【修复】修复主题指标中存在的问题
 - 【修复】修复 LwM2M 插件没有正确获取协议版本的问题
@@ -33,7 +33,7 @@ EMQ X Broker 4.2-rc.1 正式发布，欢迎大家下载试用，下载地址：h
 EMQ X 开源研发团队已正式进入 5.0 的开发阶段，5.0 版本将作为 5G 大基建超大规模多协议超融合接入平台，拥有更加健壮的全新架构、更加强大的性能以及更加流畅的使用体验，它将为您带来：
 
 - 支持更快的 QUIC 协议
-- 领先的 NB-IoT 网络与 LwM2M 支持
+- 领先的 [NB-IoT](https://www.emqx.com/zh/blog/emqx-nb-iot-access-solution) 网络与 LwM2M 支持
 - 50+ 节点的大规模集群
 - K8S 下集群弹性伸缩
 - 极简化的全新配置方式

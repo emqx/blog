@@ -75,7 +75,7 @@ EMQ X v4.3.0 版本修复了一些已知问题并新增了诸多特性，在通�
 
 ### MQTT 增强
 
-- 共享订阅分发策略配置为 round_robin 时随机选择起始点
+- [共享订阅](https://www.emqx.com/zh/blog/introduction-to-mqtt5-protocol-shared-subscription)分发策略配置为 round_robin 时随机选择起始点
 - 共享订阅支持按源主题的 Hash 分发消息，设备与共享订阅之间可以有固定的分发通道
 
 ### 其他功能
@@ -152,7 +152,7 @@ EMQ X v4.3.0 版本修复了一些已知问题并新增了诸多特性，在通�
 - 修复告警持续时间计算错误的问题
 - 修复过长的 Client ID 无法追踪的问题
 - 修复查询客户端信息可能出现崩溃的问题
-- 修复主题重写与 ACL 在发布订阅时执行顺序不一致的问题
+- 修复[主题重写](https://www.emqx.com/zh/blog/rewriting-emqx-mqtt5-topic)与 ACL 在发布订阅时执行顺序不一致的问题
 - 修复 WebSocket 连接无法使用对端证书作为用户名的问题
 - 修复认证数据无法导入的问题
 - 修复 Docker 中 EMQ X 可能启动失败的问题

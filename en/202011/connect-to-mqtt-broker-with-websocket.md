@@ -197,7 +197,7 @@ Restart EMQ X after completion.
 
 ### Configuring reverse proxies and certificates on Nginx
 
-Using Nginx to reverse proxy and encrypt WebSocket can reduce the computation burden of the EMQ X broker and implement domain name multiplexing at the same time. Nginx load balancing also allows you to distribute multiple back-end service entities.
+Using Nginx to reverse proxy and encrypt WebSocket can reduce the computation burden of the EMQ X broker and implement domain name multiplexing at the same time. Nginx [load balancing](https://www.emqx.com/en/blog/mqtt-broker-clustering-part-2-sticky-session-load-balancing) also allows you to distribute multiple back-end service entities.
 
 ```shell
 # It is recommended that WebSocket also bind to port 443.

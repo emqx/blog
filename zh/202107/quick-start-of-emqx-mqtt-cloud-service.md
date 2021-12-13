@@ -2,7 +2,7 @@
 
 在本教程中，我们将带您一步一步搭建一个物联网平台。在完成本教程后，您将了解:
 
-1. 如何快速在 EMQ X Cloud 部署一个 MQTT 集群。
+1. 如何快速在 EMQ X Cloud 部署一个 [MQTT 集群](https://www.emqx.com/zh/blog/mqtt-broker-clustering-part-3-challenges-and-solutions-of-emqx-horizontal-scalability)。
 
 2. 如何配置 MQTT 集群的认证鉴权与访问控制。
 
@@ -80,7 +80,7 @@ EMQ X Cloud 提供三个版本供您选用，分别适用于不同的使用场�
 
 ## 第五步：连接 MQTT 集群
 
-至此，我们已经拥有了一个 MQTT 集群。连接 MQTT 集群有很多方式。通常正式使用的时候我们会选择用编程的方式，选择某个编程语言的 MQTT 客户端 SDK，建立连接并收发消息。我们也可以使用一些带有图像化界面的 [MQTT 客户端工具](https://www.emqx.com/zh/blog/mqtt-client-tools)来连接到 MQTT 集群。在本教程中，我们使用左侧导航提供的在线调试工具。
+至此，我们已经拥有了一个 MQTT 集群。连接 MQTT 集群有很多方式。通常正式使用的时候我们会选择用编程的方式，选择某个编程语言的 [MQTT 客户端 SDK](https://www.emqx.com/zh/mqtt-client-sdk)，建立连接并收发消息。我们也可以使用一些带有图像化界面的 [MQTT 客户端工具](https://www.emqx.com/zh/blog/mqtt-client-tools)来连接到 MQTT 集群。在本教程中，我们使用左侧导航提供的在线调试工具。
 
 我们在 Host 和 Port 输入框中输入我们前面所部属集群的连接地址和端口（这些信息可以在集群管理的概览页面找到）。在 Username 和 Password 输入框中输入之前添加的认证信息 （本次教程中使用的“test/test”, 或者您自定义的用户名密码），点击“连接”即可。
 

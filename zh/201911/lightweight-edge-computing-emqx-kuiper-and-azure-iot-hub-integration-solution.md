@@ -12,7 +12,7 @@
 
 ## 业务场景
 
-假设现有一组设备，组中的每个设备有一个 id，通过 MQTT 协议往 MQTT 消息服务器上相应的主题发送数据。主题的设计如下，其中 {device_id} 为设备的 id。
+假设现有一组设备，组中的每个设备有一个 id，通过 [MQTT 协议](https://www.emqx.com/zh/mqtt)往 MQTT 消息服务器上相应的主题发送数据。主题的设计如下，其中 {device_id} 为设备的 id。
 
 ```
 devices/{device_id}/messages
@@ -179,7 +179,7 @@ SELECT avg(temperature) AS t_av, max(temperature) AS t_max, min(temperature) AS 
 
 - 发送测试数据
 
-  通过任何的测试工具，向 EMQ X Edge 发送以下的测试数据。笔者在测试过程中用的是 JMeter 的 [MQTT 插件](https://github.com/emqx/mqtt-jmeter)，因为基于 JMeter 可以做一些比较灵活的自动数据生成，业务逻辑控制，以及大量设备的模拟等。用户也可以直接使用 ``mosquitto`` 等其它客户端进行模拟。
+  通过任何的测试工具，向 EMQ X Edge 发送以下的测试数据。笔者在测试过程中用的是 [JMeter](https://www.emqx.com/zh/blog/introduction-to-the-open-source-testing-tool-jmeter) 的 [MQTT 插件](https://github.com/emqx/mqtt-jmeter)，因为基于 JMeter 可以做一些比较灵活的自动数据生成，业务逻辑控制，以及大量设备的模拟等。用户也可以直接使用 ``mosquitto`` 等其它客户端进行模拟。
 
   - 主题：``devices/$device_id/messages``，其中``$device_id`` 为下面数据中的第一列
   - 消息：``{"temperature": $temperature, "humidity" : $humidity}``, 其中``$temperature`` 和 ``$humidity`` 分别为下面数据中的第二列和第三列

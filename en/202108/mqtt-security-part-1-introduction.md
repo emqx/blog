@@ -1,4 +1,4 @@
-In this post, we will introduce [MQTT broker](https://www.emqx.com/en/products/emqx) security concepts and challenges, as well as how EMQ X handles security at a relatively high level. We assume that you are already familiar with the basics of the MQTT protocol.
+In this post, we will introduce [MQTT broker](https://www.emqx.com/en/products/emqx) security concepts and challenges, as well as how EMQ X handles security at a relatively high level. We assume that you are already familiar with the basics of the [MQTT protocol](https://www.emqx.com/en/mqtt).
 
 ![MQTT Security](https://static.emqx.net/images/ae70590c49a9f31653af992bbef87578.png)
  

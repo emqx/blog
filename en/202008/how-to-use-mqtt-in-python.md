@@ -1,6 +1,6 @@
 [Python](https://www.python.org/) is an interpreted, high-level, general-purpose programming language. Created by Guido van Rossum and first released in 1991, Python's design philosophy emphasizes code readability with its notable use of significant whitespace. Its language constructs and object-oriented approach aim to help programmers write clear, logical code for small and large-scale projects.[^1]
 
-[MQTT](https://www.emqx.com/en/mqtt) is a kind of **lightweight IoT messaging protocol** based on the publish/subscribe model, which can provide real-time and reliable messaging service for IoT devices, only using very little code and bandwidth. It is suitable for devices with limited hardware resources and the network environment with limited bandwidth. Therefore, MQTT protocol is widely used in IoT, mobile internet, IoV, electricity power, and other industries.
+[MQTT](https://www.emqx.com/en/mqtt) is a kind of **lightweight IoT messaging protocol** based on the publish/subscribe model, which can provide real-time and reliable messaging service for IoT devices, only using very little code and bandwidth. It is suitable for devices with limited hardware resources and the network environment with limited bandwidth. Therefore, [MQTT protocol](https://www.emqx.com/en/mqtt) is widely used in IoT, mobile internet, IoV, electricity power, and other industries.
 
 This article mainly introduces how to use the **paho-mqtt** client and implement connection, subscribe, messaging, and other functions between the [MQTT client](https://www.emqx.com/en/mqtt-client-sdk) and [MQTT broker](https://www.emqx.io), in the Python project.
 
@@ -15,11 +15,11 @@ This project uses Python 3.6 to develop and test. Readers can use the following 
 Python 3.6.7
 ```
 
-#### Choose the MQTT client
+### Choose the MQTT client
 
 The [Paho Python Client](https://www.eclipse.org/paho/clients/python/) provides a client class with support for both MQTT v3.1 and v3.1.1 on Python 2.7 or 3.x. It also provides some helper functions to make publishing one off messages to an MQTT server very straightforward.
 
-#### Using pip to install the Paho MQTT client
+### Using pip to install the Paho MQTT client
 
 Pip is a management tool for the Python package. This tool provides find, download, install and uninstall functions for Python package.
 
