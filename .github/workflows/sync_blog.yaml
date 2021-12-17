@@ -13,8 +13,8 @@ jobs:
     steps:
       - name: Set git
         run: |
-          git config --global user.name "Swilder-M"
-          git config --global user.email "Swilder-M@users.noreply.github.com"
+          git config --global user.name "emqx-ci-robot"
+          git config --global user.email "ci@emqx.io"
 
       - name: Checkout code
         uses: actions/checkout@v2
@@ -46,6 +46,6 @@ jobs:
         with:
           source_branch: ${{ steps.sync_blog.outputs.branch }}
           destination_branch: main
-          github_token: ${{ secrets.GH_TOKEN }}
+          github_token: ${{ secrets.CI_GIT_TOKEN }}
           pr_title: "sync blogs"
-          pr_reviewer: "CrazyWisdom"
+          pr_reviewer: "CrazyWisdom,Swilder-M"
