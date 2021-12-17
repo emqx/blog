@@ -153,7 +153,7 @@ FROM
 
 再向指定的 topic 发送数据：
 
-![EMQ X DashBoard 的 WebSocket 发送数据](https://static.emqx.net/images/cf912f88b2f4f2b7705defc908261223.png)
+![EMQ X DashBoard 的 WebSocket 发送数据](https://static.emqx.net/images/00fbff89e8f0e58933703f541a74a6fa.png)
 
 如果一切正常的话，我们就可以实时地在 HStreamDB CLI 看到我们发到 EMQ X 的数据。
 
