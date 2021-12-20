@@ -20,5 +20,7 @@ jobs:
           UPDATE_API: ${{ secrets.UPDATE_API }}
           UPDATE_TOKEN: ${{ secrets.UPDATE_TOKEN }}
         run: |
-          changed_files=$(git diff HEAD^ HEAD --name-only | grep -e "md$")
-          python3 .ci/update_blog.py $(pwd) $changed_files
+          if git diff HEAD^ HEAD --name-only | grep -e "md$"; then
+            changed_files=$(git diff HEAD^ HEAD --name-only | grep -e "md$")
+            python3 .ci/update_blog.py $(pwd) $changed_files
+          fi

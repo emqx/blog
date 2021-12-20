@@ -5,7 +5,7 @@ import requests
 
 base_path = sys.argv[1]
 if len(sys.argv) > 2:
-    changed_files = sys.argv[2]
+    changed_files = ' '.join(sys.argv[2:])
 else:
     changed_files = ''
 
