@@ -63,7 +63,7 @@ Stream 是 HStreamDB 中用来存储流式数据的对象，可以看作是一�
 用 docker 启动一个 HStreamDB 的命令行界面：
 
 ```shell
-docker run -it --rm --name some-hstream-cli --network host hstreamdb/hstream hstream-client --port 6570 --client-id 1
+docker run -it --rm --name some-hstream-cli --network=host hstreamdb/hstream hstream-client --port 6570 --client-id 1
 ```
 
 你将会进入到以下界面:
@@ -138,7 +138,7 @@ FROM
 首先我们在刚刚启动的 HStreamDB CLI 中创建一个 Query：
 
 ```
-> SELECT * FROM emqx_rule_engine_output
+> SELECT * FROM emqx_rule_engine_output EMIT CHANGES;
 
 ```
 
@@ -158,7 +158,7 @@ FROM
 如果一切正常的话，我们就可以实时地在 HStreamDB CLI 看到我们发到 EMQ X 的数据。
 
 ```
-> SELECT * FROM emqx_rule_engine_output
+> SELECT * FROM emqx_rule_engine_output EMIT CHANGES;
 {"location":{"lng":116.296011,"lat":40.005091},"speed":32.12,"tachometer":9001.0,"ts":1563268202,"direction":198.33212,"id":"NXP-058659730253-963945118132721-22","dynamical":8.93}
 ```
 
