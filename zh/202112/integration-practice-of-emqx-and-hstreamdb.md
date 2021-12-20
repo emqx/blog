@@ -63,7 +63,7 @@ Stream 是 HStreamDB 中用来存储流式数据的对象，可以看作是一�
 用 docker 启动一个 HStreamDB 的命令行界面：
 
 ```shell
-docker run -it --rm --name some-hstream-cli --network=host hstreamdb/hstream hstream-client --port 6570 --client-id 1
+docker run -it --rm --name some-hstream-cli --network host hstreamdb/hstream hstream-client --port 6570 --client-id 1
 ```
 
 你将会进入到以下界面:
