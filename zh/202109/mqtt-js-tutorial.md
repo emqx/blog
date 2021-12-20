@@ -72,7 +72,7 @@ const options = {
   username: 'emqx_test',
   password: 'emqx_test',
 }
-const client  = mqtt.connect('mqtt://broker.emqx.io:1883')
+const client  = mqtt.connect('mqtt://broker.emqx.io:1883', options)
 client.on('connect', function () {
   console.log('Connected')
   client.subscribe('test', function (err) {
