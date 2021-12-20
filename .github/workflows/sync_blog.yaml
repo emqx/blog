@@ -48,4 +48,4 @@ jobs:
           destination_branch: main
           github_token: ${{ secrets.CI_GIT_TOKEN }}
           pr_title: "sync blogs"
-          pr_reviewer: "CrazyWisdom,Swilder-M"
+          pr_reviewer: "CrazyWisdom"
