@@ -133,7 +133,7 @@ At this time, we have completed the most basic bridging settings. Next, let's te
 First, we create a query in the HStreamDB CLI that we just started:
 
 ```
-1> SELECT * FROM emqx_rule_engine_output 
+1> SELECT * FROM emqx_rule_engine_output EMIT CHANGES;
 
 ```
 
@@ -152,7 +152,7 @@ Then, send data to the specified topic:
 If everything works as expected, we can see the data we sent to EMQ X in the HStreamDB CLI in real-time.
 
 ```
-1> SELECT * FROM emqx_rule_engine_output 
+1> SELECT * FROM emqx_rule_engine_output EMIT CHANGES;
 {"location":{"lng":116.296011,"lat":40.005091},"speed":32.12,"tachometer":9001.0,"ts":1563268202,"direction":198.33212,"id":"NXP-058659730253-963945118132721-22","dynamical":8.93} 
 ```
 
