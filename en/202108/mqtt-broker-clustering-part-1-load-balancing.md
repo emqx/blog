@@ -19,7 +19,7 @@ A real life example: a temperature sensor in the living room periodically publis
 
 A temperature sensor at home is only an example close enough to everybody. To serve smart home devices, a single MQTT broker, e.g. EMQ X edge edition running on a Raspberry PI should be more than enough, not to mention that a single EMQ X node can handle up to 2 million connections.
 
-Now imagine these examples: millions of cars all over the world; millions of street lights all over the country; and so on and so on, the amount of devices (MQTT clients) and data volume can be at very large scale, large enough to overwhelm any single MQTT broker can handle. 
+Now imagine these examples: millions of cars all over the world; millions of street lights all over the country; and so on and so on, the amount of devices (MQTT clients) and data volume can be a very large scale, large enough to overwhelm any single MQTT broker can handle. 
 
 This is one of the reasons why we need to create a cluster of MQTT brokers. But it also creates more challenges such as:
 
