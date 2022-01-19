@@ -36,7 +36,9 @@
 
 Synopsys Defensics 使用 FlexNet 管理许可证书，需要在执行 Defensics 模糊测试器的的网络环境中部署 FlexNet Server ，以管理从 Synopsys 处取得的许可证书（即 `license.lic` 文件）。
 
-可以选择使用 Systemd User Unit 在本地部署启动 FlexNet Daemon ，配置如下。其中 `license.lic` 证书文件及 `DEFENSIC` 可执行文件将位于同一目录，FlexNet 将会从 `$PATH` 中的在更宽泛的场景下也可以将其部署在专用的证书服务器上以对更多的用户提供证书认证服务。其他详细信息和具体参数可参考 Defensics 及 FlexNet Publisher 相关文档。
+可以选择使用 Systemd User Unit 在本地部署启动 FlexNet Daemon ，配置如下。其中 license.lic 证书文件及 DEFENSIC ( Vendor Daemon )可执行文件将位于同一目录。 FlexNet 将会从 $PATH 中搜索 Vendor Daemon 可执行文件来进行认证。
+
+当然，在需要更多测试人员使用 Defensics 的情况下，也可以将其部署在专用的证书服务器上以对更多的用户提供证书认证服务。其他详细信息和具体参数可参考 Defensics 及 FlexNet Publisher 相关文档。
 
 ![lmgrd.service Systemd User Unit](https://static.emqx.net/images/4b1e7fce7b405396c8cf79ba78652c18.png)
 
