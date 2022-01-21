@@ -19,7 +19,7 @@
 
 ### EMQX
 
-Refer to [EMQ X Broker](https://www.emqx.com/en/downloads?product=broker)
+Refer to [EMQ X Broker](https://www.emqx.com/en/try?product=broker)
 
 ```bash
 wget https://www.emqx.com/en/downloads/broker/v4.2.5/emqx-ubuntu18.04-4.2.5-x86_64.zip
