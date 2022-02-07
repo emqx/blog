@@ -127,13 +127,13 @@ Defensics 对于 MQTT v3.1.1 协议标准，提供了总计超过 100 万的测�
 
 ![Defensics 选择测试用例](https://static.emqx.net/images/fef47b90282c571e94c3cc4af639d4c9.png)
 
-Test Case Choosen
+Test Case Chosen
 
 在针对于异常消息的测试中，也可以选择各类不同数据的异常行为数量和程度进行测试。例如文本、二进制数据、数字、字符等；同时也可以配置溢出异常的字节限制来使用值溢出的畸形报文进行测试。
 
-![Sequence anomalies Choosen](https://static.emqx.net/images/9f6730c95cec21e5e706a70ef80ec99f.png)
+![Sequence anomalies Chosen](https://static.emqx.net/images/9f6730c95cec21e5e706a70ef80ec99f.png)
 
-Sequence anomalies Choosen
+Sequence anomalies Chosen
 
 ![Defensics Customize anomalies size](https://static.emqx.net/images/b0d285fcd915a63216b78d5f54984f68.png)
 
