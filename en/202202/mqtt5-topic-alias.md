@@ -25,7 +25,7 @@ Topic aliases are managed respectively by the client and server, and the life cy
 
 ### Topic Alias Maximum
 
-Before the MQTT client or server can start using topic aliases, they need to agree on the maximum number of topic aliases allowed int the current connection. This part of the information exchange is done in the `CONNECT` packet and the `CONNACK` packet. The `Topic Alias Maximum` is encoded in the variable headers of the `CONNECT` and `CONNACK` packets as a message attribute.
+Before the MQTT client or server can start using topic aliases, they need to agree on the maximum number of topic aliases allowed in the current connection. This part of the information exchange is done in the `CONNECT` packet and the `CONNACK` packet. The `Topic Alias Maximum` is encoded in the variable headers of the `CONNECT` and `CONNACK` packets as a message attribute.
 
 ![Set MQTT Topic Alias Maximum mutually](https://static.emqx.net/images/9b49a3437044bc206b400d5b81c39204.png)
 
