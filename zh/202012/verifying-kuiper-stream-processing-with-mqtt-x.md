@@ -44,7 +44,7 @@ $ docker run -p 9082:9082 -d emqx/kuiper-manager:1.0.2
 
 > 版本：v4.2.4
 
-[下载链接](https://www.emqx.com/zh/downloads?product=nanomq) | [安装文档](https://docs.emqx.cn/edge/latest/install.html)
+[下载链接](https://www.emqx.com/zh/try?product=nanomq) | [安装文档](https://docs.emqx.cn/edge/latest/install.html)
 
 ```shell
 # 获取 Docker 镜像

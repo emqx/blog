@@ -43,9 +43,9 @@
 | 5    | TDengine                                                   | Taosdata     | 是, GNU AGPL v3.0 |
 | 6    | Grafana                                                    | Grafana Labs | 是, Apache 2.0    |
 
-`1:` Neuron 未来规划会将基础功能进行开源，目前用户下载后可以免费使用，如果内置试用版本的数据采集点数不够，可以通过 EMQ 网站进行[在线申请](https://www.emqx.com/zh/downloads?product=neuron)。
+`1:` Neuron 未来规划会将基础功能进行开源，目前用户下载后可以免费使用，如果内置试用版本的数据采集点数不够，可以通过 EMQ 网站进行[在线申请](https://www.emqx.com/zh/try?product=neuron)。
 
-`2:` 用户可以免费使用，免费版本中除了管理的节点数目受限之外，用户可以使用所有功能。如果用户想试用更多的节点管理功能，可以通过 EMQ 网站进行[在线申请](https://www.emqx.com/zh/downloads?product=neuron)。
+`2:` 用户可以免费使用，免费版本中除了管理的节点数目受限之外，用户可以使用所有功能。如果用户想试用更多的节点管理功能，可以通过 EMQ 网站进行[在线申请](https://www.emqx.com/zh/try?product=neuron)。
 
 **产品基本功能描述**
 

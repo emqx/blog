@@ -98,7 +98,7 @@ EMQ X Cloud 为新注册用户提供 6 个月时长的免费试用，注册账�
 
 > 如果您是 EMQ X 新手用户，推荐通过 [EMQ X 文档](https://docs.emqx.cn/broker/latest/) 快速上手
 
-访问 [EMQ 下载](https://www.emqx.com/zh/downloads) 页面下载适合您操作系统的安装包，本文截稿时 EMQ X 企业版本为 v4.1.2，下载 zip 包的启动步骤如下 ：
+访问 [EMQ 下载](https://www.emqx.com/zh/try) 页面下载适合您操作系统的安装包，本文截稿时 EMQ X 企业版本为 v4.1.2，下载 zip 包的启动步骤如下 ：
 
 ```bash
 ## 解压下载好的安装包

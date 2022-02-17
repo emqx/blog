@@ -19,14 +19,14 @@
   
   npm init
   
-  npm i -D electron@lates
+  npm i -D electron@latest
   ```
 
   并参考以下文档中的步骤进行项目搭建。
 
   地址：https://www.electronjs.org/docs/tutorial/first-app
 
-- 通过官方提供的 `electron-qucik-start` 模版项目进行快速开发
+- 通过官方提供的 `electron-quick-start` 模版项目进行快速开发
 
   地址：https://github.com/electron/electron-quick-start
 

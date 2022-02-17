@@ -4,7 +4,7 @@ EMQ X Enterprise 适用于各种物联网应用场景，助企业快速构建物
 
 网址：[https://www.emqx.com/zh/products/emqx](https://www.emqx.com/zh/products/emqx)
 
-下载：无需提供任何信息， 立即[下载试用](https://www.emqx.com/zh/downloads?product=enterprise)
+下载：无需提供任何信息， 立即[下载试用](https://www.emqx.com/zh/try?product=enterprise)
 
 ![enterprisemqttbroker.png](https://static.emqx.net/images/4b87d5ae6dc17bb84f6414e4d8fc504c.png)
 
