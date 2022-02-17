@@ -91,7 +91,7 @@ EMQ X Cloud offers a 6-month free trial to newly registered users. After registe
 
 > If you are new to EMQ X, we recommend [EMQ X documentation](https://docs.emqx.io/broker/latest/en/) to get started quickly.
 
-Access the [EMQ download](https://www.emqx.com/en/downloads?product=enterprise) page to download the appropriate package for your operating system. At the time of this writing, the Enterprise version of EMQ X is v4.1.2. The steps to download the zip package are as follows:
+Access the [EMQ download](https://www.emqx.com/en/try?product=enterprise) page to download the appropriate package for your operating system. At the time of this writing, the Enterprise version of EMQ X is v4.1.2. The steps to download the zip package are as follows:
 
 ```bash
 ## Decompress the downloaded installation package

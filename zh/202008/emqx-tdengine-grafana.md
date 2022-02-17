@@ -73,7 +73,7 @@ sensor/data
 
 > 如果您是 EMQ X 新手用户，推荐通过 [EMQ X 文档](https://docs.emqx.io/broker/latest/cn/) 快速上手
 
-访问 [EMQ X 下载](https://www.emqx.com/zh/downloads) 页面下载适合您操作系统的安装包，本文截稿时 EMQ X 开源版最新版本为 v4.1.1，下载 zip 包的启动步骤如下 ：
+访问 [EMQ X 下载](https://www.emqx.com/zh/try) 页面下载适合您操作系统的安装包，本文截稿时 EMQ X 开源版最新版本为 v4.1.1，下载 zip 包的启动步骤如下 ：
 
 ```bash
 ## 解压下载好的安装包

@@ -2,7 +2,7 @@ Compared to MQTT v3.1 and v3.1.1, MQTT v5 provides more new features. We will tr
 
 ## What is Topic Alias
 
-Topic Alias allows users to reduce the possibly-long and repeatedly used topic name to a 2-byte integer, so as to reduce the bandwidth consumption when publishing messages.
+Topic Alias allows users to reduce the possibly long and repeatedly used topic name to a 2-byte integer, so as to reduce the bandwidth consumption when publishing messages.
 
 This 2-byte integer is encoded as an attribute field in the variable header of the `PUBLISH` packet. And it’s limited by [Topic Alias Maximum](https://docs.oasis-open.org/mqtt/mqtt/v5.0/os/mqtt-v5.0-os.html#_Toc3901051) exchanged between client and broker in`CONNECT` and `CONNACK` packets. As long as this limit is not exceeded, any topic name can be reduced to one integer.
 

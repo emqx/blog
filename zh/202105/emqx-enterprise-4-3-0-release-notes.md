@@ -4,7 +4,7 @@ EMQ X Enterprise 适用于各种物联网应用场景，支持公有云、私有
 
 企业版介绍：[https://www.emqx.com/zh/products/emqx](https://www.emqx.com/zh/products/emqx)
 
-下载地址：[https://www.emqx.com/zh/downloads](https://www.emqx.com/zh/downloads)
+下载地址：[https://www.emqx.com/zh/try](https://www.emqx.com/zh/try)
 
 
 
