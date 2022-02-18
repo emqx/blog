@@ -4,7 +4,7 @@ EMQX Enterprise is suitable for various IoT application scenarios, and helps ent
 
 URL: https://www.emqx.com/en/products/emqx
 
-Download: [Download](https://www.emqx.com/en/downloads?product=enterprise) now without providing any information!
+Download: [Download](https://www.emqx.com/en/try?product=enterprise) now without providing any information!
 
 ![enterprisemqttbroker.png](https://static.emqx.net/images/4b87d5ae6dc17bb84f6414e4d8fc504c.png)
 

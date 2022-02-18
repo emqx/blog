@@ -6,7 +6,7 @@ EMQX Broker 的多语言扩展通过 `emqx-extension-hook` 插件中的驱动（
 
 ![361588066850_.pic.jpg](https://static.emqx.net/images/21ff6cd7a9d18d2926c662fe4dde8fe1.jpg)
 
-除此之外，v4.1-beta.1 还增加了规则引擎的暂停与编辑等功能，欢迎大家[下载 EMQX](https://www.emqx.com/zh/downloads?product=broker) 使用。
+除此之外，v4.1-beta.1 还增加了规则引擎的暂停与编辑等功能，欢迎大家[下载 EMQX](https://www.emqx.com/zh/try?product=broker) 使用。
 
 ### v4.1-beta.1 改进详情
 
