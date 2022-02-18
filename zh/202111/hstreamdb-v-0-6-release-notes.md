@@ -53,7 +53,7 @@ LIMIT 0, 5;
 
 ### 新增数据写入 Rest API，基于 HStreamDB 的更多可能
 
-现在可以使用任何语言通过 Rest API 向 HStreamDB 写入数据，后续我们计划将开放更多 Rest API，方便开源用户围绕 HStreamDB 进行二次开发，例如：通过 HStream Rest API 结合 EMQ X 开源版的 Webhook 功能，能够实现 EMQ X 和 HStreamDB 的快速集成。
+现在可以使用任何语言通过 Rest API 向 HStreamDB 写入数据，后续我们计划将开放更多 Rest API，方便开源用户围绕 HStreamDB 进行二次开发，例如：通过 HStream Rest API 结合 EMQX 开源版的 Webhook 功能，能够实现 EMQX 和 HStreamDB 的快速集成。
 
 ![HStreamDB Rest API](https://static.emqx.net/images/efe9a264a84a0c302bb9e5ba62c13c47.png)
 

@@ -49,17 +49,17 @@ We will describe in detail how to use the command-line tool of MQTT.js in some t
 
 ## Usage
 
-This article will use the [Free Public MQTT Server](https://www.emqx.com/en/mqtt/public-mqtt5-broker) provided by EMQ X Cloud as the MQTT server address for this test. The server access information is as follows:
+This article will use the [Free Public MQTT Server](https://www.emqx.com/en/mqtt/public-mqtt5-broker) provided by EMQX Cloud as the MQTT server address for this test. The server access information is as follows:
 
 - Broker: **broker.emqx.io**
 - TCP Port: **1883**
 - SSL/TLS Port: **8883**
 
-For more details, please visit [EMQ X Cloud website](https://www.emqx.com/en/cloud), or check [EMQ X Cloud documentation](https://docs.emqx.io/en/cloud/latest/ ).
+For more details, please visit [EMQX Cloud website](https://www.emqx.com/en/cloud), or check [EMQX Cloud documentation](https://docs.emqx.io/en/cloud/latest/ ).
 
 ### Simple example
 
-We simply write a piece of code to connect to EMQ X Cloud and complete an example of subscribing to topics and sending and receiving messages:
+We simply write a piece of code to connect to EMQX Cloud and complete an example of subscribing to topics and sending and receiving messages:
 
 ```javascript
 const mqtt = require('mqtt')

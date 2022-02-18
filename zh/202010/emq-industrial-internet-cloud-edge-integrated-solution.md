@@ -36,9 +36,9 @@
 
 | 编号 | 名称                                                       | 提供商       | 开源              |
 | ---- | ---------------------------------------------------------- | ------------ | ----------------- |
-| 1    | [EMQ X Neuron](https://www.emqx.com/zh/products/neuron)     | EMQ          | 否 - `1`          |
-| 2    | [EMQ X Edge](https://www.emqx.com/zh/products/emqx)         | EMQ          | 是, Apache 2.0    |
-| 3    | [EMQ X Kuiper](https://github.com/lf-edge/ekuiper)     | EMQ          | 是, Apache 2.0    |
+| 1    | [EMQX Neuron](https://www.emqx.com/zh/products/neuron)     | EMQ          | 否 - `1`          |
+| 2    | [EMQX Edge](https://www.emqx.com/zh/products/emqx)         | EMQ          | 是, Apache 2.0    |
+| 3    | [EMQX Kuiper](https://github.com/lf-edge/ekuiper)     | EMQ          | 是, Apache 2.0    |
 | 4    | [Edge manager](https://hub.docker.com/r/emqx/edge-manager) | EMQ          | 否 - `2`          |
 | 5    | TDengine                                                   | Taosdata     | 是, GNU AGPL v3.0 |
 | 6    | Grafana                                                    | Grafana Labs | 是, Apache 2.0    |
@@ -83,9 +83,9 @@
 
 | 编号 | 名称                                                       | x86*32 | x86*64 | ARM 7 | ARM 64 | PPC64 | Mac  | Docker |
 | ---- | ---------------------------------------------------------- | ------ | ------ | ----- | ------ | ----- | ---- | ------ |
-| 1    | [EMQ X Neuron](https://www.emqx.com/zh/products/neuron)     |        | ☑      | ☑     | ☑      | ☑     |      | ☑      |
-| 2    | [EMQ X Edge](https://www.emqx.com/zh/products/emqx)         | ☑      | ☑      | ☑     | ☑      | ☑     | ☑    | ☑      |
-| 3    | [EMQ X Kuiper](https://github.com/lf-edge/ekuiper)     | ☑      | ☑      | ☑     | ☑      | ☑     | ☑    | ☑      |
+| 1    | [EMQX Neuron](https://www.emqx.com/zh/products/neuron)     |        | ☑      | ☑     | ☑      | ☑     |      | ☑      |
+| 2    | [EMQX Edge](https://www.emqx.com/zh/products/emqx)         | ☑      | ☑      | ☑     | ☑      | ☑     | ☑    | ☑      |
+| 3    | [EMQX Kuiper](https://github.com/lf-edge/ekuiper)     | ☑      | ☑      | ☑     | ☑      | ☑     | ☑    | ☑      |
 | 4    | [Edge manager](https://hub.docker.com/r/emqx/edge-manager) | ☑      | ☑      | ☑     | ☑      | ☑     | ☑    | ☑      |
 | 5    | TDengine                                                   | ☑      | ☑      |       | ☑      |       |      | ☑      |
 
@@ -103,7 +103,7 @@
 
 ### 解决方案2：云边协同工业互联网平台
 
-这一方案与上述方案不同的地方在于 **引入云边协同的概念，** 通过底层类似于 KubeEdge/IEF 等边缘端基于容器应用的分发与编排能力，利用 KubeEdge/IEF 提供的云边管理通道，在云端可以对部署在边缘端的 Neuron、Edge 和 Kuiper 等实例进行集中管理，从而可以 **在云端实现对边缘端的数据采集、汇聚和分析逻辑等进行在线管理和更新。** 另外在云端，通过部署 EMQ X Enterprise 分布式、高可用的集群功能，将分布在不同边缘端点的设备数据进行接入和分析处理。
+这一方案与上述方案不同的地方在于 **引入云边协同的概念，** 通过底层类似于 KubeEdge/IEF 等边缘端基于容器应用的分发与编排能力，利用 KubeEdge/IEF 提供的云边管理通道，在云端可以对部署在边缘端的 Neuron、Edge 和 Kuiper 等实例进行集中管理，从而可以 **在云端实现对边缘端的数据采集、汇聚和分析逻辑等进行在线管理和更新。** 另外在云端，通过部署 EMQX Enterprise 分布式、高可用的集群功能，将分布在不同边缘端点的设备数据进行接入和分析处理。
 
 ![iiot_sol_2.png](https://static.emqx.net/images/b2159860f854daaface005fbf339dcd7.png)
 
@@ -124,10 +124,10 @@
 
 | 编号 | 名称             | 供应商 | 开源     |
 | ---- | ---------------- | ------ | -------- |
-| 1    | EMQ X Enterprise | EMQ    | 否 - `1` |
+| 1    | EMQX Enterprise | EMQ    | 否 - `1` |
 | 2    | IEF              | 华为   | 否 - `2` |
 
-`1`: EMQ X Enterprise 企业级物联网 MQTT 消息平台，支持百万级物联网设备一站式接入、MQTT&CoAP 多协议处理、低时延实时消息通信。支持基于 SQL 的内置规则引擎，灵活处理/转发消息到后端服务，存储消息数据到各种数据库，或桥接 Kafka、RabbitMQ 等企业中间件。
+`1`: EMQX Enterprise 企业级物联网 MQTT 消息平台，支持百万级物联网设备一站式接入、MQTT&CoAP 多协议处理、低时延实时消息通信。支持基于 SQL 的内置规则引擎，灵活处理/转发消息到后端服务，存储消息数据到各种数据库，或桥接 Kafka、RabbitMQ 等企业中间件。
 
 `2`: [IEF 智能边缘平台（Intelligent EdgeFabric）](https://www.huaweicloud.com/product/ief.html)是华为开源云边协同平台 KubeEdge 的商业化版本，满足客户对边缘计算资源的远程管控、数据处理、分析决策、智能化的诉求， 为用户提供完整的边缘和云协同的一体化服务。
 
@@ -135,8 +135,8 @@
 
 - IEF 平台是华为公有云服务，用户可以直接访问和试用。
 
-- [Kuiper](https://marketplace.huaweicloud.com/product/OFFI474477808879489024) 在 IEF 上已经上线，可以通过 IEF 平台直接部署、安装和运维（读者可以参考视频「[云边协同高效实现物联网边缘流式业务处理 - 华为 IEF & EMQ X Kuiper 轻量级边缘数据解决方案](https://www.bilibili.com/video/BV1hQ4y1A7Vy?from=search&seid=15773267177167801393) 」来了解如何在 IEF 中使用 Kuiper）；Neuron 和 Edge 目前暂未在 IEF 上线，但是用户可以直接通过 Docker Hub 安装至边缘节点中；然后在云端通过部署 Edge Manager 来进行统一的管理和控制。
-- [EMQ X Enterprise](https://marketplace.huaweicloud.com/product/00301-511011-0--0) 已经在华为云上线，用户也可以使用由 EMQ 提供的[在线云服务](https://www.emqx.com/zh/cloud)； 
+- [Kuiper](https://marketplace.huaweicloud.com/product/OFFI474477808879489024) 在 IEF 上已经上线，可以通过 IEF 平台直接部署、安装和运维（读者可以参考视频「[云边协同高效实现物联网边缘流式业务处理 - 华为 IEF & EMQX Kuiper 轻量级边缘数据解决方案](https://www.bilibili.com/video/BV1hQ4y1A7Vy?from=search&seid=15773267177167801393) 」来了解如何在 IEF 中使用 Kuiper）；Neuron 和 Edge 目前暂未在 IEF 上线，但是用户可以直接通过 Docker Hub 安装至边缘节点中；然后在云端通过部署 Edge Manager 来进行统一的管理和控制。
+- [EMQX Enterprise](https://marketplace.huaweicloud.com/product/00301-511011-0--0) 已经在华为云上线，用户也可以使用由 EMQ 提供的[在线云服务](https://www.emqx.com/zh/cloud)； 
 - 云端的数据持久化或者桥接方式，用户可以根据需要进行选择，相关信息可以参考 [EMQ 网站](https://www.emqx.com/zh/products/emqx)；
 
 ### 总结

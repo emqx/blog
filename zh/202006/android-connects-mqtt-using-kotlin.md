@@ -47,7 +47,7 @@ companion object {
 
 ## 连接 MQTT 服务器
 
-本文将使用 EMQ X  [MQTT Cloud](https://www.emqx.com/zh/cloud) 运营和维护的免费公共 [MQTT 服务器](https://www.emqx.com/zh/products/emqx)， EMQ X Cloud 是由 [EMQ](https://www.emqx.com/zh) 推出的安全的 MQTT 物联网云服务平台，它提供一站式运维代管、独有隔离环境的 **MQTT 5.0** 接入服务。
+本文将使用 EMQX  [MQTT Cloud](https://www.emqx.com/zh/cloud) 运营和维护的免费公共 [MQTT 服务器](https://www.emqx.com/zh/products/emqx)， EMQX Cloud 是由 [EMQ](https://www.emqx.com/zh) 推出的安全的 MQTT 物联网云服务平台，它提供一站式运维代管、独有隔离环境的 **MQTT 5.0** 接入服务。
 
 - Broker: **broker.emqx.io**
 - TCP Port: **1883**

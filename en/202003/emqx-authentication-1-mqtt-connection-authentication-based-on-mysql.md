@@ -11,7 +11,7 @@ As the factual standard for IoT communication protocols, MQTT maintains a high l
   - [MQTT protocol](https://www.emqx.com/en/mqtt) supports user name and password for client identity verification;
   - MQTT Broker implements  access control for topics (Topic ACL).
 
-MQTT Safety specifications are fully supported by EMQ, and the built-in safety functions can be used out-of-the-box without programming, which can quickly eliminate security risks in projects. This series will focus on various levels of safety specifications, and introduce how to enable relevant functions through the configuration of EMQ X to finally achieve the corresponding safety protection.
+MQTT Safety specifications are fully supported by EMQ, and the built-in safety functions can be used out-of-the-box without programming, which can quickly eliminate security risks in projects. This series will focus on various levels of safety specifications, and introduce how to enable relevant functions through the configuration of EMQX to finally achieve the corresponding safety protection.
 
 ### Introduction to emqx-auth-mysql 
 
@@ -23,10 +23,10 @@ In this article, only the authentication function is introduced. ACL function wi
 
 ### Authentication principle
 
-When the device is connected, EMQ X will execute the query statement according to the configuration and compare  whether the value of the `password` field in the query result is the same as the value of current requesting client's password with salt processing and encryption. The verification process is as follows:
+When the device is connected, EMQX will execute the query statement according to the configuration and compare  whether the value of the `password` field in the query result is the same as the value of current requesting client's password with salt processing and encryption. The verification process is as follows:
 
 - There must be `password`  and ` salt` fields in the query result set. You can use the `AS` syntax setting such as ` SELECT *,pwd as password FROM mqtt_user`
-- Salt can be specified for each client in the database. EMQ X generates a ciphertext based on the client's incoming password and the salt information returned through SQL.
+- Salt can be specified for each client in the database. EMQX generates a ciphertext based on the client's incoming password and the salt information returned through SQL.
 - If the result set is empty or the comparison results are not equal, the authentication fails
 
 
@@ -92,10 +92,10 @@ mysql> desc mqtt_user;
 
 In this article, the password of sample data is `test_password` and the encrypted salt is ` secret`. That is, the password used by the client for connection is `test_password`.
 
-In the configuration file `auth.mysql.password_hash` of EMQ X, **salt is just an identifier, which indicates the concatenation relationship between salt and the plaintext of the password.**
+In the configuration file `auth.mysql.password_hash` of EMQX, **salt is just an identifier, which indicates the concatenation relationship between salt and the plaintext of the password.**
 
-- If `auth.mysql.password_hash = md5,salt` is used, then the MD5 algorithm is used by EMQ X to encrypt ` test_passwordsecret` string
-- If `auth.mysql.password_hash = salt,md5` is used, then the MD5 algorithm is used by EMQ X to encrypt ` secrettest_password` string
+- If `auth.mysql.password_hash = md5,salt` is used, then the MD5 algorithm is used by EMQX to encrypt ` test_passwordsecret` string
+- If `auth.mysql.password_hash = salt,md5` is used, then the MD5 algorithm is used by EMQX to encrypt ` secrettest_password` string
 
 In this article, the first configuration method is used, inserting the obtained MD5 ciphertext into the table `` mqtt_user``. Readers can use [online MD5 tool](https://www.md5hashgenerator.com/) or write a program to encode the password.
 
@@ -155,7 +155,7 @@ emqx_ctl plugins reload emqx_auth_mysql
 
 #### Disable  anonymous authentication
 
-EMQ X enabled anonymous authentication by default. Once the authentication function is enabled, the device can connect normally even when the database does not query the data, and the connection will be refused only when the data is queried and the password is incorrect.
+EMQX enabled anonymous authentication by default. Once the authentication function is enabled, the device can connect normally even when the database does not query the data, and the connection will be refused only when the data is queried and the password is incorrect.
 
 Open the `etc/emqx.conf` configuration file and disable anonymous authentication:
 
@@ -170,7 +170,7 @@ Restart emqx to complete the configuration application.
 
 ### Test
 
-Once ready, only devices that have passed authentication verification can successfully connect to EMQ X:
+Once ready, only devices that have passed authentication verification can successfully connect to EMQX:
 
 1. Connect with the correct username and password,  subscribe to the topic, and the connection will succeed:
 
@@ -197,4 +197,4 @@ Connection Refused: not authorised.
 
 ## Summary  
 
-After understanding the principle of EMQ X MySQL authentication, readers can use MySQL to expand related applications. Welcome to the EMQ X security series, and this series will explain the security issues related to EMQ X and IoT  to help you build an IoT project with high-level security.
+After understanding the principle of EMQX MySQL authentication, readers can use MySQL to expand related applications. Welcome to the EMQX security series, and this series will explain the security issues related to EMQX and IoT  to help you build an IoT project with high-level security.

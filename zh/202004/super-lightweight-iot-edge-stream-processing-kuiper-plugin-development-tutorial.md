@@ -1,4 +1,4 @@
-[EMQ X Kuiper](https://github.com/lf-edge/ekuiper) 是一款基于 SQL 的轻量级物联网流式数据处理软件，提供了一套插件机制用于实现自定义源（source），目标（sink）以及 SQL 函数（function）以扩展流处理功能。本教程详细介绍了 Kuiper 插件的开发编译和部署过程。
+[EMQX Kuiper](https://github.com/lf-edge/ekuiper) 是一款基于 SQL 的轻量级物联网流式数据处理软件，提供了一套插件机制用于实现自定义源（source），目标（sink）以及 SQL 函数（function）以扩展流处理功能。本教程详细介绍了 Kuiper 插件的开发编译和部署过程。
 
 ## 概览
 
@@ -51,7 +51,7 @@ require (
 )
 ```
 
-Kuiper 插件有三种类型，源代码可放入对应的目录中。插件开发的详细方法请参看 [EMQ X Kuiper 扩展](https://github.com/emqx/kuiper/blob/master/docs/en_US/extension/overview.md)。本文以目标（sink)为例，介绍插件的开发部署过程。我们将开发一个最基本的 MySql 目标，用于将流输出写入到 MySql 数据库中。
+Kuiper 插件有三种类型，源代码可放入对应的目录中。插件开发的详细方法请参看 [EMQX Kuiper 扩展](https://github.com/emqx/kuiper/blob/master/docs/en_US/extension/overview.md)。本文以目标（sink)为例，介绍插件的开发部署过程。我们将开发一个最基本的 MySql 目标，用于将流输出写入到 MySql 数据库中。
 
 - 新建名为 samplePlugin 的插件项目，采用上文的目录结构
 - 在 sinks 目录下，新建 mysql.go 文件

@@ -1,8 +1,8 @@
-In early January, EMQ X 5.0-beta.3 was released. Besides continuing the development of the 5.0-beta.4, EMQ X team will also continue the maintenance releases for both the open-source and enterprise v4.3 and v4.4.
+In early January, EMQX 5.0-beta.3 was released. Besides continuing the development of the 5.0-beta.4, EMQX team will also continue the maintenance releases for both the open-source and enterprise v4.3 and v4.4.
 
-In terms of cloud services, custom HTTP authentication and Webhook alarm mode were added in [EMQ X Cloud](https://www.emqx.com/en/cloud) this month, allowing users to use the product more flexibly and freely while obtaining more reliable business assurance.
+In terms of cloud services, custom HTTP authentication and Webhook alarm mode were added in [EMQX Cloud](https://www.emqx.com/en/cloud) this month, allowing users to use the product more flexibly and freely while obtaining more reliable business assurance.
 
-## EMQ X
+## EMQX
 
 ### The New Dashboard
 
@@ -10,11 +10,11 @@ After weeks of testing, we managed to release v5.0-beta.3, which was still an ea
 
 ### 100-million Milestone Reached!
 
-By the end of January, EMQ X team managed to reach 100 million unique wildcard subscribers in a 22-nodes EMQ X 5.0 cluster. The team is continue optimising the performance. Then we’ll try to run some tests with real traffic. When the release is stable, we’ll publish the design and test setup in detail as blog posts.
+By the end of January, EMQX team managed to reach 100 million unique wildcard subscribers in a 22-nodes EMQX 5.0 cluster. The team is continue optimising the performance. Then we’ll try to run some tests with real traffic. When the release is stable, we’ll publish the design and test setup in detail as blog posts.
 
 ### Hello, Elixir Community
 
-Now we can build EMQ X on Elixir! When EMQ X 5.0 goes GA, you will be able to download the packages built on Elixir. Please note though, the Elixir release will not support hot-beam upgrade for now.
+Now we can build EMQX on Elixir! When EMQX 5.0 goes GA, you will be able to download the packages built on Elixir. Please note though, the Elixir release will not support hot-beam upgrade for now.
 
 We have no intention to rewrite anything though. i.e. The project will continue to be an Erlang project. The idea of building on Elixir are:
 
@@ -23,7 +23,7 @@ We have no intention to rewrite anything though. i.e. The project will continue 
 
 ### Better Upgrade Experience
 
-Since v4.2, EMQ X supports the hot update of the patch version (there is no need to restart the node and it does not affect the business); Since v4.3, the minor version upgrade supports the rolling upgrade of cluster nodes.
+Since v4.2, EMQX supports the hot update of the patch version (there is no need to restart the node and it does not affect the business); Since v4.3, the minor version upgrade supports the rolling upgrade of cluster nodes.
 
 Starring from v5.0, we will support rolling upgrade of clusters across major versions to further reduce the upgrade complexity.
 
@@ -40,13 +40,13 @@ The online Tracing: Newly introduced in version 4.4.0 has improved the rendering
 
 In addition, for Enterprise edition, the Lindorm DB integration which was introduced in e4.4.1 will be ported back to e4.3.6. 
 
-## EMQ X Cloud
+## EMQX Cloud
 
 ### Custom HTTP authentication
 
-EMQ X Cloud launched the HTTP custom authentication in January. HTTP authentication allows users to connect to a self-built external HTTP application authentication data source, and determine the authentication result according to the data returned by the HTTP API, so as to realize complex authentication and complex access control logic. The function of custom HTTP authentication can be configured in [Deployment] - [Deployment Details] - [Authentication].
+EMQX Cloud launched the HTTP custom authentication in January. HTTP authentication allows users to connect to a self-built external HTTP application authentication data source, and determine the authentication result according to the data returned by the HTTP API, so as to realize complex authentication and complex access control logic. The function of custom HTTP authentication can be configured in [Deployment] - [Deployment Details] - [Authentication].
 
-The principle of custom HTTP authentication is that EMQ X Cloud uses the current client-related information as parameters in the device connection event, initiates a request to the user-defined authentication service for query permissions, and processes the authentication request through the returned HTTP status code. Users can configure parameters for connection authentication and access control.
+The principle of custom HTTP authentication is that EMQX Cloud uses the current client-related information as parameters in the device connection event, initiates a request to the user-defined authentication service for query permissions, and processes the authentication request through the returned HTTP status code. Users can configure parameters for connection authentication and access control.
 
 ![Custom HTTP authentication](https://static.emqx.net/images/1440c17c75d0e5fb1e57e26aa568596b.png)
  
@@ -58,10 +58,10 @@ Custom authentication allows users to perform authentication more flexibly accor
 
 The feature of sending alarm messages to IM tools and self-owned services through Webhook was also launched. At the same time, in order to facilitate users to test whether the configuration is successful, the alarm function can send a test message to immediately verify whether the Webhook address is configured correctly.
 
-![EMQ X Cloud Webhook](https://static.emqx.net/images/dba040b539d557a14a1c98e2b9946fa0.png)
+![EMQX Cloud Webhook](https://static.emqx.net/images/dba040b539d557a14a1c98e2b9946fa0.png)
  
-So far, EMQ X Cloud supports the three modes of mailbox alarm integration, PagerDuty event alarm integration, and Webhook alarm integration. The rich alarm integration modes and alarm events will make the automatic early-warning module of the entire product more complete, so as to bring users more stable business assurance.
+So far, EMQX Cloud supports the three modes of mailbox alarm integration, PagerDuty event alarm integration, and Webhook alarm integration. The rich alarm integration modes and alarm events will make the automatic early-warning module of the entire product more complete, so as to bring users more stable business assurance.
 
 ### Basic version expansion
 
-At present, EMQ X Cloud has supported the expansion of the current deployment. Users can scale the deployment specifications according to their connection requirements. At the same time, the disconnection time of equipment during capacity expansion is also optimized, so as to reduce the interference to the business system.
+At present, EMQX Cloud has supported the expansion of the current deployment. Users can scale the deployment specifications according to their connection requirements. At the same time, the disconnection time of equipment during capacity expansion is also optimized, so as to reduce the interference to the business system.

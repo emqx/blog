@@ -46,7 +46,7 @@ composer require php-mqtt/client
 
 ### Connect to MQTT server
 
-This article will use the [Free Public MQTT Server](https://www.emqx.com/en/mqtt/public-mqtt5-broker) provided by EMQ X, which is created on EMQ X's [MQTT Cloud Service](https://www.emqx.com/en/cloud). The server access information is as follows:
+This article will use the [Free Public MQTT Server](https://www.emqx.com/en/mqtt/public-mqtt5-broker) provided by EMQX, which is created on EMQX's [MQTT Cloud Service](https://www.emqx.com/en/cloud). The server access information is as follows:
 
 - Broker: **broker.emqx.io**
 - TCP Port: **1883**

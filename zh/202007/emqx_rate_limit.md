@@ -1,6 +1,6 @@
-在阅读该指南之前，假定你已经了解 [MQTT](https://www.emqx.com/zh/mqtt) 与 EMQ X [MQTT 服务器](https://www.emqx.com/zh/products/emqx) 的简单知识。
+在阅读该指南之前，假定你已经了解 [MQTT](https://www.emqx.com/zh/mqtt) 与 EMQX [MQTT 服务器](https://www.emqx.com/zh/products/emqx) 的简单知识。
 
-EMQ X Broker 从 V3 版本开始支持速率限制功能，包括了对 **PUBLISH 报文接收速率** 与 **TCP 数据包接收速率** 的限制，本文将详细介绍该功能的配置与使用。
+EMQX Broker 从 V3 版本开始支持速率限制功能，包括了对 **PUBLISH 报文接收速率** 与 **TCP 数据包接收速率** 的限制，本文将详细介绍该功能的配置与使用。
 
 
 
@@ -55,9 +55,9 @@ EMQ X Broker 从 V3 版本开始支持速率限制功能，包括了对 **PUBLIS
 
 
 
-## EMQ X 速率限制实现
+## EMQX 速率限制实现
 
-基于以上的 *令牌桶* 算法下，EMQ X 对速率限制的实现逻辑如下：
+基于以上的 *令牌桶* 算法下，EMQX 对速率限制的实现逻辑如下：
 
 ![画板1232x.jpg](https://static.emqx.net/images/874ae38a1c06a8919d2109d148adf177.jpg)
 
@@ -82,7 +82,7 @@ listener.tcp.external.rate_limit = 1024,1024000
 - 平均速率限制为 1024 byte/s。
 - 桶大小为 1000 KB，如果这 100 个 TCP 报文的总长度大于 1000KB，那么将会触发速率限制。
 
-因此，用户需要根据实际报文大小来设置 `<Burst>`, EMQ X 推荐配置为 `(max_packet_size * active_n) / 2`，以避免频繁发生阻塞。
+因此，用户需要根据实际报文大小来设置 `<Burst>`, EMQX 推荐配置为 `(max_packet_size * active_n) / 2`，以避免频繁发生阻塞。
 
 ```properties
 listener.tcp.external.active_n = 100

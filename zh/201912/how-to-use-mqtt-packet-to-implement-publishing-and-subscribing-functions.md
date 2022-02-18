@@ -8,7 +8,7 @@ MQTT 协议基于 TCP/IP 协议，MQTT Broker 和 Client 都有需要有 TCP/IP 
 
 ![WX201911281137582x.png](https://static.emqx.net/images/fa35a1bc1853bc8862bfd9b826f8a2e0.png)
 
-如果你暂时没有一个可用的 MQTT Broker，[EMQ X](https://github.com/emqx/emqx) 提供了一个公共 Broker 地址用于测试：`broker.emqx.io:1883`。
+如果你暂时没有一个可用的 MQTT Broker，[EMQX](https://github.com/emqx/emqx) 提供了一个公共 Broker 地址用于测试：`broker.emqx.io:1883`。
 
 ### Client
 
@@ -24,7 +24,7 @@ ClientId 必须存在，但是服务端可以允许客户端提供一个零字�
 
 #### Username/Password
 
-MQTT 可以通过发送用户名和密码来进行相关的认证和授权，但是，如果此信息未加密，则用户名和密码是以明文的方式发送的。EMQ X 不仅支持SSL/TLS 加密，还提供了 **[emqx-auth-username](https://github.com/emqx/emqx-auth-username)** 插件对密码进行加密。
+MQTT 可以通过发送用户名和密码来进行相关的认证和授权，但是，如果此信息未加密，则用户名和密码是以明文的方式发送的。EMQX 不仅支持SSL/TLS 加密，还提供了 **[emqx-auth-username](https://github.com/emqx/emqx-auth-username)** 插件对密码进行加密。
 
 #### Keep Alive
 

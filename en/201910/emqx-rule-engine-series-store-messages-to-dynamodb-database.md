@@ -10,7 +10,7 @@ https://aws.amazon.com/dynamodb/
 
 ## Scenario Introduction
 
-In this scenario, messages that meet the criteria under the EMQ X specified topic are required to be stored in the DynamoDB database. In order to facilitate subsequent analysis and retrieval, the message content needs to be split and stored.
+In this scenario, messages that meet the criteria under the EMQX specified topic are required to be stored in the DynamoDB database. In order to facilitate subsequent analysis and retrieval, the message content needs to be split and stored.
 
 **In this scenario, the message reported by the device  is as follows:**
 
@@ -125,11 +125,11 @@ $ aws dynamodb list-tables --region us-west-2 --endpoint-url http://127.0.0.1:80
 
 ### Create resource
 
-Open EMQ X Dashboard, go to the **Resources** page on the left menu, click the **New** button, type DynamoDB server information for resource creation.
+Open EMQX Dashboard, go to the **Resources** page on the left menu, click the **New** button, type DynamoDB server information for resource creation.
 
 ![image01.jpg](https://static.emqx.net/images/22f62479759058690bf6dd468e715a80.jpg)
 
-The network environment of the nodes in the EMQ X cluster may be different. After the resources are created successfully, click the **Status** button  in the list to check the connection status of each node. If the resources on the node are unavailable, check whether the configuration is correct and the network connectivity is correct, and click the **Reconnect** button to manually reconnect.
+The network environment of the nodes in the EMQX cluster may be different. After the resources are created successfully, click the **Status** button  in the list to check the connection status of each node. If the resources on the node are unavailable, check whether the configuration is correct and the network connectivity is correct, and click the **Reconnect** button to manually reconnect.
 
 ![image02.jpg](https://static.emqx.net/images/a5973e08b0b26d85eb60505610193714.jpg)
 
@@ -236,7 +236,7 @@ We successfully created a rule that contains a processing action, and expected r
 
 #### Test with the Websocket tool in Dashboard
 
-Switch to **tools -> Websocket** page, connect to EMQ X with any client, and send the following message to  **message**  card after successful connection:
+Switch to **tools -> Websocket** page, connect to EMQX with any client, and send the following message to  **message**  card after successful connection:
 
 - Topic: cmd/state/NXP-058659730253-963945118132721-22
 - Message body:

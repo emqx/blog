@@ -10,13 +10,13 @@ TDEngine provides community edition, enterprise edition and cloud service editio
 
 ## Scenario introduction
 
-This article uses the example of  accessing the smart door lock of EMQ X through [MQTT protocol](https://www.emqx.com/en/mqtt)
+This article uses the example of  accessing the smart door lock of EMQX through [MQTT protocol](https://www.emqx.com/en/mqtt)
 
 Smart door locks have become the focus of smart home products. In order to ensure a more secure unlocking experience for users, smart door locks can usually achieve fingerprint unlocking, password unlocking, IC card unlocking, key unlocking, remote unlocking and other functions. Each business link of the smart door lock involves the sending and transmission of operation-sensitive instructions and status data, which should be stored for subsequent audit use.
 
 ### Collection process
 
-The issued instructions and reported data from smart door lock are transmitted via EMQ X through the MQTT protocol. Users can optionally use the rule engine to filter or set the consumer client for processing on EMQ X, and  write the data satisfying the conditions into TDEngine data platform. The whole data flow process is as follows:
+The issued instructions and reported data from smart door lock are transmitted via EMQX through the MQTT protocol. Users can optionally use the rule engine to filter or set the consumer client for processing on EMQX, and  write the data satisfying the conditions into TDEngine data platform. The whole data flow process is as follows:
 
 ![1.png](https://static.emqx.net/images/4c14b86b4b8b14b1c23eebcc9a136118.png)
 
@@ -105,10 +105,10 @@ insert into v_51dc0c50f55d11e9a4fec59e26b058d5 values(
 
 ## Data writing method
 
-At present, the function of directly writing EMQ X message data to TDEngine is still under planning. Thanks to the many connectors provided by TDEngine, we use the following two methods to complete the data writing:
+At present, the function of directly writing EMQX message data to TDEngine is still under planning. Thanks to the many connectors provided by TDEngine, we use the following two methods to complete the data writing:
 
 - Use  [RESTful Connector](https://www.taosdata.com/cn/documentation/connector/#RESTful-Connector) in TDEngine: through calling REST API, splice and combine data into SQL statements and send them to TDEngine to perform writing, and built-in expressions and functions from rule engine can preprocess data;
-- Through the client library / connector provided by TDEngine, write code to obtain EMQ X messages through subscription / consumption, and forward them to TDEngine after processing.
+- Through the client library / connector provided by TDEngine, write code to obtain EMQX messages through subscription / consumption, and forward them to TDEngine after processing.
 
 
 
@@ -116,7 +116,7 @@ At present, the function of directly writing EMQ X message data to TDEngine is s
 
 ### Resource preparation
 
-In EMQ X Dashboard, click the main menu of **Rules**  , and create a new WebHook resource on the  **Resources** page to send data to the TDEngine RESTful Connector. Add a request header:
+In EMQX Dashboard, click the main menu of **Rules**  , and create a new WebHook resource on the  **Resources** page to send data to the TDEngine RESTful Connector. Add a request header:
 
 - Authorization: The value is s a string of `{username}: {password}` after Base64 encoding that TDEngine request TOKEN for connection authentication. It i.
 
@@ -204,7 +204,7 @@ insert into db.v_${p.id} values(
 
 Click **Create**  to complete the creation of the rules. The data will be written to DBEngine when the smart door lock reports the data. The whole work and business process are as follows:
 
-- Smart door lock reports data to EMQ X
+- Smart door lock reports data to EMQX
 - The `message.publish` event triggers the rule engine and starts to match the data fields of `topic` and `payload` according to the `where` condition in the conditional SQL.
 - After the rule is hit, the response action list is triggered, and the request parameters required for the action are spliced according to the message content template in the response action. In this rule, the request parameter is an SQL statement that contains the reported data information of the smart door lock.
 - Initiate a request based on the type of action and resources used, call the RESTful API to send instructions to TDEngine for execution, and complete data writing.
@@ -215,7 +215,7 @@ Click **Create**  to complete the creation of the rules. The data will be writte
 
 ## Writing data using the TDEngine SDK
 
-TDEngine provides SDK applicable for multiple language platforms. The program can obtain data reported by smart door locks to EMQ X by subscribing to MQTT topics or consuming message middleware data, and then stitch the data into SQL and finally write it to TDEngine.
+TDEngine provides SDK applicable for multiple language platforms. The program can obtain data reported by smart door locks to EMQX by subscribing to MQTT topics or consuming message middleware data, and then stitch the data into SQL and finally write it to TDEngine.
 
 This article uses the method of subscribing to the [MQTT topic](https://www.emqx.com/en/blog/advanced-features-of-mqtt-topics) to obtain smart door lock reporting data. Considering that the amount of messages may grow to an amount that a single subscription client cannot afford, we use the **shared subscription** method to consume data.
 
@@ -309,7 +309,7 @@ for (let i = 0; i < 10; i++) {
 
 ## Test
 
-With the built-in MQTT client (WebSocket) of EMQ X Dashboard, it can quickly simulate test rule availability. Open the **Tools-> WebSocket** page, establish the connection according to the smart door lock connection information, enter the reported topic and reported data in the **publish** function, click publish to simulate the test:
+With the built-in MQTT client (WebSocket) of EMQX Dashboard, it can quickly simulate test rule availability. Open the **Tools-> WebSocket** page, establish the connection according to the smart door lock connection information, enter the reported topic and reported data in the **publish** function, click publish to simulate the test:
 
 - Publish topic：`lock/${id}/control_receipt`
 
@@ -367,4 +367,4 @@ Delete the rule, start the TDEngine SDK to write code, and repeat the above test
 
 
 
-So far, the entire function of writing EMQ X data to TDEngine has been developed / configured.
+So far, the entire function of writing EMQX data to TDEngine has been developed / configured.

@@ -22,7 +22,7 @@ In the edit script function, there is only an `execute` API globally, and the us
 
 Simulation of temperature and humidity data reporting in cooperation with the timer sending function.
 
-For example,  when a user is using EMQ X, they need to save data to the database using the rules engine function. Once configured, you can use MQTT X to connect to EMQ X and test it using the script function. Assuming that the user needs to save the reported temperature and humidity data in JSON format, we can simulate the data using the following script.
+For example,  when a user is using EMQX, they need to save data to the database using the rules engine function. Once configured, you can use MQTT X to connect to EMQX and test it using the script function. Assuming that the user needs to save the reported temperature and humidity data in JSON format, we can simulate the data using the following script.
 
 ```javascript
 /**
@@ -52,7 +52,7 @@ At this time, you can copy this code into the code edit box on the script page, 
 
 ![mqttxhumtemp.png](https://static.emqx.net/images/e8c56a968c89ae76bb6fb684ca73027b.png)
 
-We use the [Free public MQTT broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker) provided by the EMQ X to create a new connection. This service is created based on EMQ X's [MQTT IoT cloud platform](https://www.emqx.com/en/cloud). The broker access information is as follows:
+We use the [Free public MQTT broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker) provided by the EMQX to create a new connection. This service is created based on EMQX's [MQTT IoT cloud platform](https://www.emqx.com/en/cloud). The broker access information is as follows:
 
 - Broker: **broker.emqx.io**
 - TCP Port: **1883**

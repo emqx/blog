@@ -22,7 +22,7 @@ Linux 用户可在 Snapcraft 中进行下载：[https://snapcraft.io/mqttx](http
 
 配合定时发送功能模拟温湿度数据上报。
 
-例如，当用户使用 EMQ X 时，需要使用规则引擎功能将数据保存到数据库。这时可以在配置完成后，使用 MQTT  X 连接到 EMQ X，并使用脚本功能对其进行测试。这里假设用户需要保存上报的温湿度数据，且数据格式为 JSON 类型，我们可以使用下面的脚本对数据进行模拟。
+例如，当用户使用 EMQX 时，需要使用规则引擎功能将数据保存到数据库。这时可以在配置完成后，使用 MQTT  X 连接到 EMQX，并使用脚本功能对其进行测试。这里假设用户需要保存上报的温湿度数据，且数据格式为 JSON 类型，我们可以使用下面的脚本对数据进行模拟。
 
 ```javascript
 /**
@@ -52,7 +52,7 @@ execute(handlePayload)
 
 ![mqttxhumtemp.png](https://static.emqx.net/images/e8c56a968c89ae76bb6fb684ca73027b.png)
 
-我们使用 EMQ X 提供的 [免费公共 MQTT 服务器](https://www.emqx.com/zh/mqtt/public-mqtt5-broker) 新建一个连接，该服务基于 EMQ X 的 [MQTT 物联网云平台](https://www.emqx.com/zh/cloud) 创建。服务器接入信息如下：
+我们使用 EMQX 提供的 [免费公共 MQTT 服务器](https://www.emqx.com/zh/mqtt/public-mqtt5-broker) 新建一个连接，该服务基于 EMQX 的 [MQTT 物联网云平台](https://www.emqx.com/zh/cloud) 创建。服务器接入信息如下：
 
 - Broker: **broker.emqx.io**
 - TCP Port: **1883**

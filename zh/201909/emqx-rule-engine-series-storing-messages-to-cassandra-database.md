@@ -10,13 +10,13 @@ Cassandra 的安装参考：https://cassandra.apache.org/doc/latest/getting_star
 
 ## 原理概览
 
-通过配置规则引擎，EMQ X 可将指定主题下满足某条件的消息存储到 Cassandra 数据库。其消息流向简图如下：
+通过配置规则引擎，EMQX 可将指定主题下满足某条件的消息存储到 Cassandra 数据库。其消息流向简图如下：
 
 ![Artboard.png](https://static.emqx.net/images/f5edf360ac6d5bab6e364450d10a17c7.png)
 
 其中：
 
-- PUB/SUB：为 EMQ X 中的发布订阅处理逻辑。
+- PUB/SUB：为 EMQX 中的发布订阅处理逻辑。
 - Rule：IoT 消息规则，提取、筛选、转换消息报文中的数据。
 - Action: 为具体执行的动作。例如存数据库、写 Kafka 等。
 
@@ -116,13 +116,13 @@ CREATE TABLE emqx_rule_engine_output.use_statistics (
 
 ### 创建资源
 
-打开 EMQ X Dashboard，进入左侧菜单的 **资源** 页面，点击 **新建** 按钮，选择 Cassandra 资源类型进行创建：
+打开 EMQX Dashboard，进入左侧菜单的 **资源** 页面，点击 **新建** 按钮，选择 Cassandra 资源类型进行创建：
 
 ![cassrescreate2x.png](https://static.emqx.net/images/7524eb9b668bd10c30d5d24ef773eb5a.png)
 
 
 
-EMQ X 集群中节点所在网络环境可能互不相同，资源创建成功后点击列表中 **状态按钮**，查看各个节点资源连接状况，如果节点上资源不可用，请检查配置是否正确、网络连通性，并点击 **重连** 按钮手动重连。
+EMQX 集群中节点所在网络环境可能互不相同，资源创建成功后点击列表中 **状态按钮**，查看各个节点资源连接状况，如果节点上资源不可用，请检查配置是否正确、网络连通性，并点击 **重连** 按钮手动重连。
 
 ![cassresstatus2x.png](https://static.emqx.net/images/9f56ce737134bd652d2dd93051f0796d.png)
 
@@ -253,7 +253,7 @@ INSERT INTO use_statistics (msgid, client_id, speed, tachometer, ts) VALUES (${i
 
 #### 使用 Dashboard 中的 Websocket 工具测试
 
-切换到 **工具 => Websocket** 页面，使用任意信息客户端连接到 EMQ X，连接成功后在 **消息** 卡片发送如下信息：
+切换到 **工具 => Websocket** 页面，使用任意信息客户端连接到 EMQX，连接成功后在 **消息** 卡片发送如下信息：
 
 - 主题：cmd/state/NXP-058659730253-963945118132721-22
 

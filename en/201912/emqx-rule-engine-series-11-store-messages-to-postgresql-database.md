@@ -10,7 +10,7 @@ PostgreSQL has many features, and has more support in the field of GIS. Its "loc
 
 ## Scenario introduction
 
-Under this scenario, it is required to store the messages that meet the conditions under the topic specified by EMQ X to the PostgreSQL database. In order to facilitate subsequent analysis and retrieval, the message content needs to be split and stored.
+Under this scenario, it is required to store the messages that meet the conditions under the topic specified by EMQX to the PostgreSQL database. In order to facilitate subsequent analysis and retrieval, the message content needs to be split and stored.
 
 **The data reported by the client in this scenario is as follows:** 
 
@@ -65,7 +65,7 @@ CREATE TABLE t_mqtt_msg (
 
 ### Create a resource
 
-Open EMQ X Dashboard, enter the **Resources**  page of the left menu, click the  **New** button, select the PostgreSQL resource type and complete the related configuration for resource creation.
+Open EMQX Dashboard, enter the **Resources**  page of the left menu, click the  **New** button, select the PostgreSQL resource type and complete the related configuration for resource creation.
 
 ![image20190725142933513.png](https://static.emqx.net/images/e71375bc88c1006c15cd8bd0b530a4fc.png)
 
@@ -73,7 +73,7 @@ Open EMQ X Dashboard, enter the **Resources**  page of the left menu, click the 
 
 ### Create a rule
 
-Enter the **Rules** page on the left menu and click the **New** button to create a rule. Here we choose to trigger event  of **message.publish**, which means when EMQ X receives the message of PUBLISH , the rule is triggered for data processing.
+Enter the **Rules** page on the left menu and click the **New** button to create a rule. Here we choose to trigger event  of **message.publish**, which means when EMQX receives the message of PUBLISH , the rule is triggered for data processing.
 
 After the trigger event is selected, we can see optional fields and sample SQL on the interface:
 
@@ -149,7 +149,7 @@ We have successfully created a rule that contains a processing action. The expec
 
 ### Test with Websocket tools in Dashboard
 
-Switch to the **Tools ->  Websocket**  page, use any information client to connect to EMQ X. After the connection is successful, send the following message in the  **message** card:
+Switch to the **Tools ->  Websocket**  page, use any information client to connect to EMQX. After the connection is successful, send the following message in the  **message** card:
 
 - Topic：testtopic
 

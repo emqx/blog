@@ -1,6 +1,6 @@
 ## Introduction of Scenario
 
-In this scenario, it is required to store the messages that meet the criteria under EMQ X in the MySQL database. In order to facilitate subsequent analysis and retrieval, the message content needs to be split for storage.
+In this scenario, it is required to store the messages that meet the criteria under EMQX in the MySQL database. In order to facilitate subsequent analysis and retrieval, the message content needs to be split for storage.
 
 **The information reported by the device in this scenario is as follows:**
 
@@ -84,11 +84,11 @@ mysql> desc use_statistics;
 
 ### Create a resource
 
-Open EMQ X Dashboard, go to the **Resources** page on the left menu, click the **New** button, type MySQL server information for resource creation.
+Open EMQX Dashboard, go to the **Resources** page on the left menu, click the **New** button, type MySQL server information for resource creation.
 
 ![image20190716172916980.jpg](https://static.emqx.net/images/7af5c43283b3605f61897dfd83eb4ca8.jpg)
 
-The network environment of the nodes in the EMQ X cluster may be different. After the resources are created successfully, click the **Status button ** in the list to check the connection status of each node. If the resources on the node are unavailable, check whether the configuration is correct and the network connectivity is correct, and click the **Reconnect** button to manually reconnect.
+The network environment of the nodes in the EMQX cluster may be different. After the resources are created successfully, click the **Status button ** in the list to check the connection status of each node. If the resources on the node are unavailable, check whether the configuration is correct and the network connectivity is correct, and click the **Reconnect** button to manually reconnect.
 
 ![image20190716173259015.jpg](https://static.emqx.net/images/c33b326610e84582d33d7a78466ff1f3.jpg)
 
@@ -226,7 +226,7 @@ We successfully created a rule that contains a processing action, and expected r
 
 #### Test with the Websocket tool in Dashboard
 
-Switch to **tools -> Websocket** page, connect to EMQ X with any client, and send the following message to  **message**  card after successful connection:
+Switch to **tools -> Websocket** page, connect to EMQX with any client, and send the following message to  **message**  card after successful connection:
 
 - Topic: cmd/state/NXP-058659730253-963945118132721-22
 

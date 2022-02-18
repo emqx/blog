@@ -1,6 +1,6 @@
-IoT [MQTT broker server - EMQ X](https://www.emqx.com/en) provides plugin [emqx_statsd](https://github.com/emqx/emqx-statsd) for exporting the operating metrics of EMQ X, and status data of  Erlang  VM to the third-party monitoring system such as Prometheus. It can collect the metrics related to the Linux server through Prometheus own node-exporter to implement server + EMQ X overall operation and maintenance monitoring.
+IoT [MQTT broker server - EMQX](https://www.emqx.com/en) provides plugin [emqx_statsd](https://github.com/emqx/emqx-statsd) for exporting the operating metrics of EMQX, and status data of  Erlang  VM to the third-party monitoring system such as Prometheus. It can collect the metrics related to the Linux server through Prometheus own node-exporter to implement server + EMQX overall operation and maintenance monitoring.
 
-This article provides the building process based on Prometheus and Grafana for EMQ X MQTT broker operation and maintenance monitoring solution.
+This article provides the building process based on Prometheus and Grafana for EMQX MQTT broker operation and maintenance monitoring solution.
 
 
 
@@ -29,7 +29,7 @@ docker run -d -p 9100:9100 \
 
 ###  Running pushgateway
 
-pushgateway is used to receive metrics pushing from EMQ X,  needs to ensure EMQ X can access.
+pushgateway is used to receive metrics pushing from EMQX,  needs to ensure EMQX can access.
 
 ```bash
 docker run -d -p 9091:9091 prom/pushgateway
@@ -82,7 +82,7 @@ scrape_configs:
           instance: wivwiv-local
 
 
-  # EMQ X Pushgateway monitoring
+  # EMQX Pushgateway monitoring
   - job_name: 'pushgateway'
     scrape_interval: 5s
     honor_labels: true
@@ -93,7 +93,7 @@ scrape_configs:
 
 
 
-### Enable plugin EMQ X statsd
+### Enable plugin EMQX statsd
 
 Open `etc/emqx_statsd.conf` to confirm the following configuration:
 
@@ -142,9 +142,9 @@ Adding data source in Grafana, then select Prometheus and fill in the correct ad
 
 ### Import Grafana template data
 
-The plugin `emqx_statsd` provides the template files of Grafana and Dashboard. These templates include the display of most of EMQ X monitoring data. Users can directly import to Grafana for displaying the icon of EMQ X monitoring status.
+The plugin `emqx_statsd` provides the template files of Grafana and Dashboard. These templates include the display of most of EMQX monitoring data. Users can directly import to Grafana for displaying the icon of EMQX monitoring status.
 
-The template files located in [emqx_statsd/grafana_template](https://github.com/emqx/emqx-statsd/tree/master/grafana_template). **Part of chart data may be displayed incorrectly, because of the difference of EMQ X version. Please adjust it manually.**
+The template files located in [emqx_statsd/grafana_template](https://github.com/emqx/emqx-statsd/tree/master/grafana_template). **Part of chart data may be displayed incorrectly, because of the difference of EMQX version. Please adjust it manually.**
 
 Click button **Upload.json file**, then select the corresponding folder and data source after importing.
 
@@ -156,7 +156,7 @@ After finishing building and running a full set of systems for a while, the data
 
 - EMQ Dashboard: includes the historical statistics of connection, message, topic and throughput.
 - EMQ: includes the historical statistics for the number of client, subscriptions, topics, messages, packet, and other business information.
-- ErlangVM: the number of every EMQ X node Erlang virtual machine process/thread, the historical statistics of ETS/Mnesia database usage. 
+- ErlangVM: the number of every EMQX node Erlang virtual machine process/thread, the historical statistics of ETS/Mnesia database usage. 
 
 If you have other requirements, can refer to the attachment 「all metrics of EMQX-STATSD」and use Grafana to display diagram data.
 
@@ -178,7 +178,7 @@ The length of the article is limited, please check subsequent articles for alarm
 
 ## Attached are all metrics of EMQX-STATSD
 
-[EMQ X MQTT broker](https://www.emqx.com/en)  push metrics data through Prometheus push gateway, supports the following indicator items. 
+[EMQX MQTT broker](https://www.emqx.com/en)  push metrics data through Prometheus push gateway, supports the following indicator items. 
 
 ```bash
 # TYPE erlang_vm_ets_limit gauge

@@ -1,4 +1,4 @@
-本文素材来源于 RabbitMQ Summit 2019 会议上 Erlang Solutions 工程师 Grigory Starinkin  的发言内容。原内容主要对 [MQTT 消息服务器 EMQ X](https://www.emqx.io/zh) 与 [RabbitMQ](https://www.rabbitmq.com) 进行了介绍及压力测试对比。在此基础上，我们对其进行了补充，深入分析了 EMQ X 以及 RabbitMQ  的在核心架构上的侧重，并据此分析了它们为 [MQTT 集群](https://www.emqx.com/zh/blog/tag/mqtt-broker-集群)模式表现带来的不同影响。
+本文素材来源于 RabbitMQ Summit 2019 会议上 Erlang Solutions 工程师 Grigory Starinkin  的发言内容。原内容主要对 [MQTT 消息服务器 EMQX](https://www.emqx.io/zh) 与 [RabbitMQ](https://www.rabbitmq.com) 进行了介绍及压力测试对比。在此基础上，我们对其进行了补充，深入分析了 EMQX 以及 RabbitMQ  的在核心架构上的侧重，并据此分析了它们为 [MQTT 集群](https://www.emqx.com/zh/blog/tag/mqtt-broker-集群)模式表现带来的不同影响。
 
 ## MQTT 协议 - 订阅和发布
 
@@ -8,13 +8,13 @@
 
 ![MQTT协议运作.png](https://static.emqx.net/images/0a32545afd5d82cd0988372700ab6bba.png)
 
-目前市场上有很多 MQTT 客户端 SDK，也有很多 [MQTT Broker](https://www.emqx.io/zh)。EMQ X 和 RabbitMQ 是 Erlang 家族中具有代表性的两大开源消息服务器，我们接下来将针对 MQTT 场景对其进行深入对比。
+目前市场上有很多 MQTT 客户端 SDK，也有很多 [MQTT Broker](https://www.emqx.io/zh)。EMQX 和 RabbitMQ 是 Erlang 家族中具有代表性的两大开源消息服务器，我们接下来将针对 MQTT 场景对其进行深入对比。
 
 
 
-## EMQ X 与 RabbitMQ
+## EMQX 与 RabbitMQ
 
-EMQ X 是基于高并发的 Erlang/OTP 语言平台开发，支持百万级连接、分布式集群架构、发布订阅模式的开源 MQTT 消息服务器。开源至今，EMQ X 在全球物联网市场得到了广泛应用。在开源版基础上，还陆续发展了商业版和提供云版本（cloud-hosting）（[https://www.emqx.com/zh/cloud](https://www.emqx.com/zh/cloud)）。EMQ X 支持很多插件，具有强大拓展能力，用户依靠插件可以实现更多的功能。
+EMQX 是基于高并发的 Erlang/OTP 语言平台开发，支持百万级连接、分布式集群架构、发布订阅模式的开源 MQTT 消息服务器。开源至今，EMQX 在全球物联网市场得到了广泛应用。在开源版基础上，还陆续发展了商业版和提供云版本（cloud-hosting）（[https://www.emqx.com/zh/cloud](https://www.emqx.com/zh/cloud)）。EMQX 支持很多插件，具有强大拓展能力，用户依靠插件可以实现更多的功能。
 
 RabbitMQ 是实现了高级消息队列协议（AMQP）的开源消息代理软件（亦称面向消息的中间件）。RabbitMQ 服务器也是基于 Erlang 语言开发的，现在可以通过插件配置的形式，使其支持 MQTT 协议。
 
@@ -36,7 +36,7 @@ RabbitMQ 是实现了高级消息队列协议（AMQP）的开源消息代理软�
 
 ![MZBench测试工具.png](https://static.emqx.net/images/3f2695191e1017c93fe8a2c73f759847.png)
 
-这次评测使用了一个云主机 M5 large 的实例，每个 MQTT 消息服务器集群由 3 个节点组成，每个节点的配置是双核，8GB 内存。需要强调的是，我们对于 EMQ X 和 RabbitMQ 的测试使用了完全一致的硬件资源以消除变量。所有这些都配备了 Prometheus 节点导出器用于将指标推送到 Prometheus，并由 Grafana 进行最后的数据收集。
+这次评测使用了一个云主机 M5 large 的实例，每个 MQTT 消息服务器集群由 3 个节点组成，每个节点的配置是双核，8GB 内存。需要强调的是，我们对于 EMQX 和 RabbitMQ 的测试使用了完全一致的硬件资源以消除变量。所有这些都配备了 Prometheus 节点导出器用于将指标推送到 Prometheus，并由 Grafana 进行最后的数据收集。
 
 ### 测试场景
 
@@ -62,14 +62,14 @@ RabbitMQ 是实现了高级消息队列协议（AMQP）的开源消息代理软�
 
 #### 多对一
 
-从 「多对一」 的结果可以看出，EMQ X 和 RabbitMQ 相比并没有太大差别。
+从 「多对一」 的结果可以看出，EMQX 和 RabbitMQ 相比并没有太大差别。
 
 ![多对一测试结果.png](https://static.emqx.net/images/aa65dc91c40366b8cf78ee5333d433f6.png)
 
 #### 一对多
 
-但是从「一对多」的结果来看，RabbitMQ 相比于 EMQ X 确实有很明显的差距。
+但是从「一对多」的结果来看，RabbitMQ 相比于 EMQX 确实有很明显的差距。
 
 ![一对多测试结果.png](https://static.emqx.net/images/f6a014f85691501ce2f5679a7410fc42.png)
 
-造成这种差距的原因是什么？我们将在《[EMQ X 与 RabbitMQ 消息服务器 MQTT 性能对比（下）](https://www.emqx.com/zh/blog/emqx-or-rabbitmq-part-2)》中详细解析具体原因。
+造成这种差距的原因是什么？我们将在《[EMQX 与 RabbitMQ 消息服务器 MQTT 性能对比（下）](https://www.emqx.com/zh/blog/emqx-or-rabbitmq-part-2)》中详细解析具体原因。

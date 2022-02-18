@@ -43,19 +43,19 @@ Now we need to analyze the data in real time, and ask for the following requirem
 
 ## Introduction of the approach
 
-As shown in the figure below, the edge analysis / streaming data processing method is adopted. At the edge, we adopt the EMQ X approach, and finally output the calculation results to the IOT hub of Azure.
+As shown in the figure below, the edge analysis / streaming data processing method is adopted. At the edge, we adopt the EMQX approach, and finally output the calculation results to the IOT hub of Azure.
 
 ![emqx_azure.png](https://static.emqx.net/images/f0a51c534df9074aa3ed7d743737e746.png)
 
-- EMQ X Edge can access devices with various protocol types, such as MQTT, CoAP, LwM2M, etc.. Therefore, users do not need to care about protocol adaptation; it is also lightweight and suitable for deployment on edge devices. 
-- EMQ X Kuiper is a SQL-based lightweight edge streaming data analysis engine released by EMQ. The installation package is only about 7MB, which is very suitable for running on the edge device side.
+- EMQX Edge can access devices with various protocol types, such as MQTT, CoAP, LwM2M, etc.. Therefore, users do not need to care about protocol adaptation; it is also lightweight and suitable for deployment on edge devices. 
+- EMQX Kuiper is a SQL-based lightweight edge streaming data analysis engine released by EMQ. The installation package is only about 7MB, which is very suitable for running on the edge device side.
 - Azure IoT Hub provides a comprehensive approach of device access and data analysis, which is used for the result data access in the cloud and the result data analysis required by the application.
 
 ## Implementation steps
 
-### Install EMQ X Edge & Kuiper
+### Install EMQX Edge & Kuiper
 
-- At the time of this writing this article, the latest version of EMQ X Edge is 4.0, and users can install and launch EMQ X Edge via Docker.
+- At the time of this writing this article, the latest version of EMQX Edge is 4.0, and users can install and launch EMQX Edge via Docker.
 
   ```shell
   # docker pull emqx/emqx-edge
@@ -180,7 +180,7 @@ Before we  write the rules, we need to debug the rules. Kuiper provides debuggin
 
 - Send test data
 
-  Send the following test data to EMQ X Edge via any test tool. The writer used JMeter's [MQTT plugin](https://github.com/emqx/mqtt-jmeter) during the test because JMeter can make some flexible automatic data generation, business logic control, and a large number of devices simulations and so on. Users can also use other clients such as ``mosquitto`` to simulate directly.
+  Send the following test data to EMQX Edge via any test tool. The writer used JMeter's [MQTT plugin](https://github.com/emqx/mqtt-jmeter) during the test because JMeter can make some flexible automatic data generation, business logic control, and a large number of devices simulations and so on. Users can also use other clients such as ``mosquitto`` to simulate directly.
 
   - Topic: ``devices/$device_id/messages``, where ``$device_id`` is the first column in the data below
   - Message: ``{"temperature": $temperature, "humidity" : $humidity}``, where ``$temperature`` and ``$humidity`` are the second and third columns in the data below
@@ -266,7 +266,7 @@ time="2019-11-12T14:30:35+08:00" level=info msg="The connection to server ssl://
 ......
 ```
 
-- Start the Azure IoT Hub monitoring with the command ``az iot hub monitor-events -n rockydemo`` and send the same simulation data as the debug SQL statement to the local EMQ X Edge. After  processed by Kuiper, the corresponding processing results are sent to the Azure IoT Hub.
+- Start the Azure IoT Hub monitoring with the command ``az iot hub monitor-events -n rockydemo`` and send the same simulation data as the debug SQL statement to the local EMQX Edge. After  processed by Kuiper, the corresponding processing results are sent to the Azure IoT Hub.
 
   ```shell
   #az iot hub monitor-events -n rockydemo
@@ -287,7 +287,7 @@ time="2019-11-12T14:30:35+08:00" level=info msg="The connection to server ssl://
 
 ## Summary
 
-Through this article, readers can understand that the EMQ X solution at the edge can be used to develop a system based on edge data analysis very quickly and flexibly, achieving low data latency, low cost and safe processing. Azure IoT also offers the IoT Edge solution, comparing to Azure's solution,
+Through this article, readers can understand that the EMQX solution at the edge can be used to develop a system based on edge data analysis very quickly and flexibly, achieving low data latency, low cost and safe processing. Azure IoT also offers the IoT Edge solution, comparing to Azure's solution,
 
 - Kuiper's runtime is extremely lightweight. Azure IoT Edge requires related language runtime, and installation package deployed to edge devices is more heavy.
 - Kuiper's SQL based business logic implementation is more quick and simple, but it lacks of flexibility when processing complex business logics. Azure IoT Edge is better than Kuiper at this point.

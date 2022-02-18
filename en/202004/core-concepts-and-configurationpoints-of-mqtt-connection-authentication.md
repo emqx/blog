@@ -11,28 +11,28 @@ As the fact standard for IoT communication protocols, the **MQTT protocol** main
   - [MQTT protocol](https://www.emqx.com/en/mqtt) supports client identity verification with username and password;
   - **MQTT Broker** implements topic ACL control.
 
-[EMQ X MQTT Broker](https://www.emqx.com/en) fully supports various security specifications of **MQTT protocol**. With built-in security functions, it can be used out of the box without programming, and can quickly eliminate the security risks in the project. The **EMQ X authentication** series will around various levels of security specifications explain how to enable related functions  through the configuration of  EMQ X to finally achieve corresponding security protection.
+[EMQX MQTT Broker](https://www.emqx.com/en) fully supports various security specifications of **MQTT protocol**. With built-in security functions, it can be used out of the box without programming, and can quickly eliminate the security risks in the project. The **EMQX authentication** series will around various levels of security specifications explain how to enable related functions  through the configuration of  EMQX to finally achieve corresponding security protection.
 
-This article will around the core concepts related to MQTT connection authentication in EMQ X, introduce the authentication methods supported by EMQ X and the applicable scene. The MQTT related authentication chain, authentication process/principle, and configuration points will be explained through the working mechanism and configuration principles to let you quickly master the EMQ X authentication configuration method.
+This article will around the core concepts related to MQTT connection authentication in EMQX, introduce the authentication methods supported by EMQX and the applicable scene. The MQTT related authentication chain, authentication process/principle, and configuration points will be explained through the working mechanism and configuration principles to let you quickly master the EMQX authentication configuration method.
 
 
 
 ## Authentication method
 
-In EMQ X, the built-in data sources (files, built-in databases), JWT, external mainstream databases, and custom HTTP APIs can be used as authentication data sources.
+In EMQX, the built-in data sources (files, built-in databases), JWT, external mainstream databases, and custom HTTP APIs can be used as authentication data sources.
 
 Connecting data sources and performing authentication are implemented by plugins. Each plugin corresponds to an authentication method. Therefore, users need to enable related plugins before using the authentication function.
 
 When the client connects, the plugin implements the identity authentication of the client by checking whether its username/clientid and password are consistent with the information of the specified data source.
 
-Authentication methods supported by EMQ X:
+Authentication methods supported by EMQX:
 
 **Built-in data sources**
 
 * Username authentication
 * Cliend ID authentication
 
-The configuration file, and the built-in database of EMQ X are used to provide an authenticated data source, which is managed through the HTTP API and is simple and lightweight.
+The configuration file, and the built-in database of EMQX are used to provide an authenticated data source, which is managed through the HTTP API and is simple and lightweight.
 
 **External Database**
 
@@ -70,7 +70,7 @@ Any authentication method will eventually return a result:
 
 ## Anonymous Authentication
 
-Anonymous authentication is enabled in the EMQ X default configuration and any client can access EMQ X. When the authentication plugin is not enabled or the authentication plugin does not explicitly allow/deny(ignore) the connection request, EMQ X will decide whether to allow the client to connect based on whether the anonymous authentication is enabled.
+Anonymous authentication is enabled in the EMQX default configuration and any client can access EMQX. When the authentication plugin is not enabled or the authentication plugin does not explicitly allow/deny(ignore) the connection request, EMQX will decide whether to allow the client to connect based on whether the anonymous authentication is enabled.
 
 Configure the anonymous authentication:
 
@@ -88,7 +88,7 @@ Please disable anonymous authentication in production environments.
 
 ## Password salting rules and hash methods
 
-The hash method can be enabled in most EMQ X authentication plugins. Only the password cipher text is saved in the data source to ensure data security.
+The hash method can be enabled in most EMQX authentication plugins. Only the password cipher text is saved in the data source to ensure data security.
 
 When the hash method is enabled, the user can specify a salt for each client and configure a salting rule. The password stored in the database is the processed cipher text according to the salting rule and hash method.
 
@@ -120,7 +120,7 @@ auth.mysql.password_hash = sha256,salt
 2. Use the same salting rules and hash method as MySQL authentication to process client information to get cipher text
 3. Write the client information to the database. The client password should be cipher text information.
 
-### EMQ X authentication process
+### EMQX authentication process
 
 1. The authentication data such as password (ciphertext) and salt are queried according to the configured authentication SQL combined with the information passed in by the client. If there is no query result, the authentication will terminate and return the ignore result.
 2. The cipher text is calculated according to the configured salting rule and hash method. If no hash method is enabled,  this step is skipped.
@@ -136,7 +136,7 @@ Taking PostgreSQL authentication as an example, its functional logic is as follo
 
 ## Authentication chain
 
-When enabling multiple authentication methods at the same time, EMQ X will perform chain authentication in the order in which the plugins are opened:
+When enabling multiple authentication methods at the same time, EMQX will perform chain authentication in the order in which the plugins are opened:
 
 - Once authentication succeeds, terminate the authentication chain and allow clients to access
 
@@ -171,7 +171,7 @@ listener.ssl.external.certfile = etc/certs/cert.pem
 listener.ssl.external.cacertfile = etc/certs/cacert.pem
 ```
 
-Note that the `key.pem`,` cert.pem` and `cacert.pem` under the default directory of ` etc/certs` are self-signed certificates generated by EMQ X Broker. Therefore, when testing with a client that supports TLS, you need to configure the above CA certificate `etc/certs/cacert.pem` to the client.
+Note that the `key.pem`,` cert.pem` and `cacert.pem` under the default directory of ` etc/certs` are self-signed certificates generated by EMQX Broker. Therefore, when testing with a client that supports TLS, you need to configure the above CA certificate `etc/certs/cacert.pem` to the client.
 
 The cipher list supported by the server needs to be specified explicitly. The default list is consistent with Mozilla's server cipher list:
 

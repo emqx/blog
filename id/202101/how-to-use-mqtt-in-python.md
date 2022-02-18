@@ -33,7 +33,7 @@ pip3 install paho-mqtt
 
 ### Koneksi ke MQTT broker
 
-Dalam artikel ini, saya akan menggunakan [MQTT broker publik gratis](https://www.emqx.com/en/mqtt/public-mqtt5-broker) dari EMQ X. Servis ini dibuat dengan berdasarkan [platform cloud MQTT IoT](https://www.emqx.com/en/cloud). Kunci akses broker adalah sebagai berikut:
+Dalam artikel ini, saya akan menggunakan [MQTT broker publik gratis](https://www.emqx.com/en/mqtt/public-mqtt5-broker) dari EMQX. Servis ini dibuat dengan berdasarkan [platform cloud MQTT IoT](https://www.emqx.com/en/cloud). Kunci akses broker adalah sebagai berikut:
 
 - Broker: **broker.emqx.io**
 - TCP Port: **1883**

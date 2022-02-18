@@ -23,9 +23,9 @@
 
 ![Artboard Copy.jpg](https://static.emqx.net/images/4ff463d1d0e3fe92afb195be5cd8b743.jpg)
 
-## EMQ X解决方案
+## EMQX解决方案
 
-   EMQ X Enterprise作为电力物联网系统中物联网管理平台设备接入与数据处理的核心模块，能够基于任意网络（电力专网、运营商网络、卫星网络）接入任意协议的电力设备，实现电力各类终端设备的即插即用，为各类企业数据与业务中台提供设备接入、数据存储、数据共享与数据清洗能力。
+   EMQX Enterprise作为电力物联网系统中物联网管理平台设备接入与数据处理的核心模块，能够基于任意网络（电力专网、运营商网络、卫星网络）接入任意协议的电力设备，实现电力各类终端设备的即插即用，为各类企业数据与业务中台提供设备接入、数据存储、数据共享与数据清洗能力。
 
 ![Artboard.jpg](https://static.emqx.net/images/fa8ebec89317a46e552c95acfdb043ed.jpg)
 

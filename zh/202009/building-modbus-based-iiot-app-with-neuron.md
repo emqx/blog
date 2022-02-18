@@ -1,4 +1,4 @@
-随着物联网、大数据、云计算等新一代信息技术的发展变革，IoT 深入到各种行业与应用场景，整体呈现设备多态化、业务多样化、应用碎片化的趋势。尤其在工业物联场景中，工业设备种类繁多，设计总线、协议复杂多样，业务应用灵活多变，如何顺利实现工业设备上云是亟待解决的问题。 **EMQ X 系列产品提供解耦工业设备与应用的能力，构造边缘到云端数据通路，建立智能、网络、轻量的数字化产品与服务模式，并与 5G 相融合，支撑工业行业应用创新**。
+随着物联网、大数据、云计算等新一代信息技术的发展变革，IoT 深入到各种行业与应用场景，整体呈现设备多态化、业务多样化、应用碎片化的趋势。尤其在工业物联场景中，工业设备种类繁多，设计总线、协议复杂多样，业务应用灵活多变，如何顺利实现工业设备上云是亟待解决的问题。 **EMQX 系列产品提供解耦工业设备与应用的能力，构造边缘到云端数据通路，建立智能、网络、轻量的数字化产品与服务模式，并与 5G 相融合，支撑工业行业应用创新**。
 
 
 
@@ -6,17 +6,17 @@
 
 IIoT 即 Industrial Internet of Things 的简称，是指数以亿计的工业设备所形成的工业物联网。广义上来讲，是指在交通、能源、工业等部门的机械、车辆上应用仪器、连接传感器等设备。
 
-随着 [工业 4.0](https://baike.baidu.com/item/%E5%B7%A5%E4%B8%9A4.0/2120694) 概念的普及与行业实践的深入，传统的集中式控制模式向分散式增强型控制模式转变。同时，5G 时代的到来，也加速了传统工业改造和工业物联网化的进程。为了实现个性化、数字化的产品与服务的灵活生产，在工业设备智能化、网络化的过程中，需要将新旧工业设备连接到互联网中，实现对工业设备的数据采集、远程控制、配置更新等业务。EMQ X 系列产品可提供从工业网关到平台的整体解决方案，支持在厂区和工业现场等边缘端实现工业设备的数据汇聚并发送到云端。同时，其对边缘计算流数据的处理能力，可在平台端为工业物联网应用提供云端工业设备数据接入、数据存储以及与云端组态和应用的对接，方便工业互联网应用的快速开发。
+随着 [工业 4.0](https://baike.baidu.com/item/%E5%B7%A5%E4%B8%9A4.0/2120694) 概念的普及与行业实践的深入，传统的集中式控制模式向分散式增强型控制模式转变。同时，5G 时代的到来，也加速了传统工业改造和工业物联网化的进程。为了实现个性化、数字化的产品与服务的灵活生产，在工业设备智能化、网络化的过程中，需要将新旧工业设备连接到互联网中，实现对工业设备的数据采集、远程控制、配置更新等业务。EMQX 系列产品可提供从工业网关到平台的整体解决方案，支持在厂区和工业现场等边缘端实现工业设备的数据汇聚并发送到云端。同时，其对边缘计算流数据的处理能力，可在平台端为工业物联网应用提供云端工业设备数据接入、数据存储以及与云端组态和应用的对接，方便工业互联网应用的快速开发。
 
-以下，我们将通过 [EMQ X Neuron](https://www.emqx.com/zh/products/neuron)、[EMQ X Broker](https://www.emqx.com/zh/products/emqx) 构建基于 [Modbus](https://zh.wikipedia.org/zh-cn/Modbus) 的简易 IIoT 应用，并使用 [MQTT X](https://mqttx.app/zh) 订阅/展示数据。
+以下，我们将通过 [EMQX Neuron](https://www.emqx.com/zh/products/neuron)、[EMQX Broker](https://www.emqx.com/zh/products/emqx) 构建基于 [Modbus](https://zh.wikipedia.org/zh-cn/Modbus) 的简易 IIoT 应用，并使用 [MQTT X](https://mqttx.app/zh) 订阅/展示数据。
 
 
 
-## EMQ X Neuron简介
+## EMQX Neuron简介
 
 EMQ 于近日发布了布署在边缘网关上的 [工业协议接入软件 Neuron](https://www.emqx.com/zh/products/neuron)。作为人与机器之间的桥梁，它可以把 TCP/IP 协议的 0/1 数据，转化重组成通俗易懂的 JSON 格式，并使用 [MQTT 协议](https://www.emqx.com/zh/mqtt) 输出到云端，更好地处理人与物之间的交互。
 
-EMQ X Neuron 支持包括 Modbus、OPC 等在内的各类工业协议，可以基本满足大部分工业接入的需求，详细协议列表见下图。
+EMQX Neuron 支持包括 Modbus、OPC 等在内的各类工业协议，可以基本满足大部分工业接入的需求，详细协议列表见下图。
 
 | **Protocol Name**                                            | **Type** | **Status** |
 | ------------------------------------------------------------ | -------- | ---------- |
@@ -72,7 +72,7 @@ EMQ X Neuron 支持包括 Modbus、OPC 等在内的各类工业协议，可以�
 
 
 
-## EMQ X Neuron 与 EMQ X Broker 的工业架构图
+## EMQX Neuron 与 EMQX Broker 的工业架构图
 
 ![image20200807171225345.png](https://static.emqx.net/images/12761e4b416abbc4623b9702138af74f.png)
 
@@ -83,17 +83,17 @@ EMQ X Neuron 支持包括 Modbus、OPC 等在内的各类工业协议，可以�
 | 工具名称                | 版本  | 用途                 | 操作系统            |
 | ----------------------- | ----- | -------------------- | ------------------- |
 | PeakHMI Slave Simulator | /     | Modbus 模拟器        | Windows Server 2019 |
-| EMQ X Neuron            | 1.4.6 | 工业协议网关接入软件 | Ubuntu 16.04        |
-| EMQ X Broker            | 4.0.7 | MQTT Broker          | Ubuntu 16.04        |
+| EMQX Neuron            | 1.4.6 | 工业协议网关接入软件 | Ubuntu 16.04        |
+| EMQX Broker            | 4.0.7 | MQTT Broker          | Ubuntu 16.04        |
 | MQTT X                  | 1.3.2 | MQTT 客户端工具      | macOS 10.13.4       |
 
 
 
 ## 模拟工业场景测试
 
-### 布署/配置 EMQ X Neuron 产品
+### 布署/配置 EMQX Neuron 产品
 
-1.首先解压安装 EMQ X Neuron 软件包。
+1.首先解压安装 EMQX Neuron 软件包。
 
 ```
 tar -xvlf neuron-1.4.2-x86_64.tar.gz 
@@ -103,7 +103,7 @@ sudo ~/bin/installneuron.sh
 
 
 
-2.在配置文件配置连接到 EMQ X Broker 的地址，配上用户名密码作为认证。
+2.在配置文件配置连接到 EMQX Broker 的地址，配上用户名密码作为认证。
 
 ```
 cd bin/ 
@@ -111,7 +111,7 @@ cd bin/
 vi neuron.conf  
 ```
 
-neuron.conf 中修改 EMQ X Broker 服务端的 IP/ 端口，用户名/密码信息。
+neuron.conf 中修改 EMQX Broker 服务端的 IP/ 端口，用户名/密码信息。
 
 ```
 # MQTT server name or IP address
@@ -133,7 +133,7 @@ MQPASSWORD=neuron123
 
 
 
-3.启动 EMQ X Neuron 软件，无报错即为启动完成。
+3.启动 EMQX Neuron 软件，无报错即为启动完成。
 
 ```
 ./neuronsrt  
@@ -141,7 +141,7 @@ MQPASSWORD=neuron123
 
 
 
-4.登陆 EMQ X Neuron Web 界面，访问 IP:7000，默认用户名密码 admin/0000。
+4.登陆 EMQX Neuron Web 界面，访问 IP:7000，默认用户名密码 admin/0000。
 
 ![neuron 2.png](https://static.emqx.net/images/973234d18311847a14cf528905470003.png)
 
@@ -167,9 +167,9 @@ MQPASSWORD=neuron123
 ![image20200807163023400.png](https://static.emqx.net/images/9faedfb368dfc1817bdee1ad2ed4fc48.png)
 
 
-### 连接布署好的 EMQ X Broker 产品
+### 连接布署好的 EMQX Broker 产品
 
-在 EMQ X Broker 界面上可以查看连接的 EMQ X Neuron 网关，Client ID 为 EMQ X Neuron 网关随机生成一串字符。
+在 EMQX Broker 界面上可以查看连接的 EMQX Neuron 网关，Client ID 为 EMQX Neuron 网关随机生成一串字符。
 
 ![image20200807163206577.png](https://static.emqx.net/images/489ab3a96deb7680692a67c102bff461.png)
 
@@ -183,22 +183,22 @@ MQPASSWORD=neuron123
 
 
 
-点击 EMQ X Neuron 界面中的 Data Monitoring，Attribute 中配置 1!1!07497 点位的数值已经为 1。
+点击 EMQX Neuron 界面中的 Data Monitoring，Attribute 中配置 1!1!07497 点位的数值已经为 1。
 
 ![image20200807164756754.png](https://static.emqx.net/images/20c4b877d66dfe467d70bf2048af52e0.png)
 
 
 ### 用 MQTT X 订阅数据进行展示
 
-打开连接好的 MQTT X，连接到 EMQ X Broker，订阅上面 EMQ X Neuron 发布的主题，在 MQTT X 可以收到 AlarmObj 里 2D7WS 的值为 1。客户端收到这些数据后，可以在应用界面上显示告警，也可以通过业务逻辑实现业务上的其它业务转换.
+打开连接好的 MQTT X，连接到 EMQX Broker，订阅上面 EMQX Neuron 发布的主题，在 MQTT X 可以收到 AlarmObj 里 2D7WS 的值为 1。客户端收到这些数据后，可以在应用界面上显示告警，也可以通过业务逻辑实现业务上的其它业务转换.
 
 ![image20200807165527066.png](https://static.emqx.net/images/fea1dd077e66b71857e2f3530c71cfc9.png)
 
 
 ## 总结
 
-以上我们使用 EMQ X Neuron、EMQ X Broker、MQTT X 等工具完整进行全流程的工业接入模拟测试，对于工业设备上云形成更加清晰与直观的认知。当然，您也可以结合 EMQ X Neuron 强大协议支持与 EMQ X Broker 强大的接入/转发能力，自己开发一套应用展示系统，构建一整套 IIoT 平台。
+以上我们使用 EMQX Neuron、EMQX Broker、MQTT X 等工具完整进行全流程的工业接入模拟测试，对于工业设备上云形成更加清晰与直观的认知。当然，您也可以结合 EMQX Neuron 强大协议支持与 EMQX Broker 强大的接入/转发能力，自己开发一套应用展示系统，构建一整套 IIoT 平台。
 
-**2020 年 9 月**底，我们将通过集成 [Neuron](https://www.emqx.com/zh/products/neuron)，[Edge](https://www.emqx.com/zh/products/emqx) 和 [Kuiper](https://github.com/lf-edge/ekuiper) 等软件，实现在边缘端的工业协议解析、数据汇聚和流式处理的一整套边缘解决方案；该方案通过与云端的 EMQ X Broker / Enterprise 等系列产品集成，则可以实现一个端到端的、从边缘到云端的完整工业解决方案。
+**2020 年 9 月**底，我们将通过集成 [Neuron](https://www.emqx.com/zh/products/neuron)，[Edge](https://www.emqx.com/zh/products/emqx) 和 [Kuiper](https://github.com/lf-edge/ekuiper) 等软件，实现在边缘端的工业协议解析、数据汇聚和流式处理的一整套边缘解决方案；该方案通过与云端的 EMQX Broker / Enterprise 等系列产品集成，则可以实现一个端到端的、从边缘到云端的完整工业解决方案。
 
 ![Artboard Copy 9备份 4.png](https://static.emqx.net/images/17040dd8943482858425cfb3fe197e82.png)

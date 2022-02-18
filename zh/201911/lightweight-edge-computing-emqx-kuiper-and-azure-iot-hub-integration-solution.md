@@ -43,18 +43,18 @@ devices/{device_id}/messages
 
 ## 方案介绍
 
-如下图所示，采用边缘分析/流式数据处理的方式，在边缘端我们采用了 EMQ X 的方案，最后将计算结果输出到 Azure 的 IoT Hub 中。
+如下图所示，采用边缘分析/流式数据处理的方式，在边缘端我们采用了 EMQX 的方案，最后将计算结果输出到 Azure 的 IoT Hub 中。
 ![emqx_azure.png](https://static.emqx.net/images/3bda2c46f1184027756cd2bb3ee7b08d.png)
 
-- EMQ X Edge 可以接入各种协议类型的设备，比如 MQTT、CoAP、LwM2M 等，这样用户可以不需要关心协议适配方面的问题；另外它本身也比较轻量级，适合部署在边缘设备上。
-- EMQ X Kuiper 是 EMQ 发布的基于 SQL 的轻量级边缘流式数据分析引擎，安装包只有约 7MB，非常适合于运行在边缘设备端
+- EMQX Edge 可以接入各种协议类型的设备，比如 MQTT、CoAP、LwM2M 等，这样用户可以不需要关心协议适配方面的问题；另外它本身也比较轻量级，适合部署在边缘设备上。
+- EMQX Kuiper 是 EMQ 发布的基于 SQL 的轻量级边缘流式数据分析引擎，安装包只有约 7MB，非常适合于运行在边缘设备端
 - Azure IoT Hub 提供了比较全的设备接入和数据分析的方案，此处用于云端的结果数据接入，以及应用所需的结果数据分析
 
 ## 实现步骤
 
-### 安装 EMQ X Edge & Kuiper
+### 安装 EMQX Edge & Kuiper
 
-- 写本文的时候，EMQ X Edge 的最新版本是4.0，用户可以通过 Docker 来安装和启动 EMQ X Edge
+- 写本文的时候，EMQX Edge 的最新版本是4.0，用户可以通过 Docker 来安装和启动 EMQX Edge
 
   ```shell
   # docker pull emqx/emqx-edge
@@ -179,7 +179,7 @@ SELECT avg(temperature) AS t_av, max(temperature) AS t_max, min(temperature) AS 
 
 - 发送测试数据
 
-  通过任何的测试工具，向 EMQ X Edge 发送以下的测试数据。笔者在测试过程中用的是 [JMeter](https://www.emqx.com/zh/blog/introduction-to-the-open-source-testing-tool-jmeter) 的 [MQTT 插件](https://github.com/emqx/mqtt-jmeter)，因为基于 JMeter 可以做一些比较灵活的自动数据生成，业务逻辑控制，以及大量设备的模拟等。用户也可以直接使用 ``mosquitto`` 等其它客户端进行模拟。
+  通过任何的测试工具，向 EMQX Edge 发送以下的测试数据。笔者在测试过程中用的是 [JMeter](https://www.emqx.com/zh/blog/introduction-to-the-open-source-testing-tool-jmeter) 的 [MQTT 插件](https://github.com/emqx/mqtt-jmeter)，因为基于 JMeter 可以做一些比较灵活的自动数据生成，业务逻辑控制，以及大量设备的模拟等。用户也可以直接使用 ``mosquitto`` 等其它客户端进行模拟。
 
   - 主题：``devices/$device_id/messages``，其中``$device_id`` 为下面数据中的第一列
   - 消息：``{"temperature": $temperature, "humidity" : $humidity}``, 其中``$temperature`` 和 ``$humidity`` 分别为下面数据中的第二列和第三列
@@ -265,7 +265,7 @@ time="2019-11-12T14:30:35+08:00" level=info msg="The connection to server ssl://
 ......
 ```
 
-- 通过命令 ``az iot hub monitor-events -n rockydemo`` 启动 Azure IoT Hub 监控，并往本地的 EMQ X Edge 上发送跟调试 SQL 语句一样的模拟数据。经过 Kuiper 处理后，相应的处理结果被发送到了 Azure IoT Hub 中。
+- 通过命令 ``az iot hub monitor-events -n rockydemo`` 启动 Azure IoT Hub 监控，并往本地的 EMQX Edge 上发送跟调试 SQL 语句一样的模拟数据。经过 Kuiper 处理后，相应的处理结果被发送到了 Azure IoT Hub 中。
 
   ```shell
   #az iot hub monitor-events -n rockydemo
@@ -286,7 +286,7 @@ time="2019-11-12T14:30:35+08:00" level=info msg="The connection to server ssl://
 
 ## 总结
 
-通过本文，读者可以了解到利用 EMQ X 在边缘端的解决方案可以非常快速、灵活地开发出基于边缘数据分析的系统，实现数据低时延、低成本和安全的处理。Azure IoT 也提供了 IoT Edge 方案，与 Azure 的方案相比，
+通过本文，读者可以了解到利用 EMQX 在边缘端的解决方案可以非常快速、灵活地开发出基于边缘数据分析的系统，实现数据低时延、低成本和安全的处理。Azure IoT 也提供了 IoT Edge 方案，与 Azure 的方案相比，
 
 - Kuiper 的运行时非常轻量级；Azure IoT Edge 方案需要提供相关语言的运行时，安装包相对来说会比较大。
 - Kuiper 基于 SQL 实现业务逻辑的实现方式更加快速简单，对复杂的业务逻辑处理缺乏一定的灵活性；Azure IoT Edge 在业务实现的灵活度上相对来说更佳。

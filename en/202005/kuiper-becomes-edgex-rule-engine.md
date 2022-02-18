@@ -1,6 +1,6 @@
 ## Overview
 
-In [EdgeX](https://www.edgexfoundry.org/) Geneva, [EMQ X Kuiper - an SQL based rule engine](https://github.com/lf-edge/ekuiper) is integrated with EdgeX. Before diving into this tutorial, let's spend a little time on learning basic knowledge of Kuiper. Kuiper is an edge lightweight IoT data analytics / streaming software implemented by Golang, and it can be run at all kinds of resource constrained edge devices. Kuiper rules are based on ``Source``, ``SQL`` and ``Sink``.
+In [EdgeX](https://www.edgexfoundry.org/) Geneva, [EMQX Kuiper - an SQL based rule engine](https://github.com/lf-edge/ekuiper) is integrated with EdgeX. Before diving into this tutorial, let's spend a little time on learning basic knowledge of Kuiper. Kuiper is an edge lightweight IoT data analytics / streaming software implemented by Golang, and it can be run at all kinds of resource constrained edge devices. Kuiper rules are based on ``Source``, ``SQL`` and ``Sink``.
 
 - Source: The data source of streaming data, such as data from [MQTT broker](https://www.emqx.com/en/products/emqx). In EdgeX scenario, the data source is EdgeX message bus, which could be ZeroMQ or MQTT broker.
 
@@ -283,7 +283,7 @@ Current rule does not filter any data that are sent to Kuiper, so how to filter 
 - [How to use meta function to extract additional data from EdgeX message bus?](https://github.com/emqx/kuiper/blob/master/docs/en_US/edgex/edgex_meta.md) There are some other information are sent along with device service, such as event created time, event id etc. If you want to use such metadata information in your SQL statements, please refer to this doc.
 - [EdgeX message bus sink doc](https://github.com/emqx/kuiper/blob/master/docs/en_US/rules/sinks/edgex.md). The document describes how to use EdgeX message bus sink. If you'd like to send the analysis result into message bus, you are probably interested in this article.
 
-If you want to explore more features of EMQ X Kuiper, please refer to below resources.
+If you want to explore more features of EMQX Kuiper, please refer to below resources.
 
 - [Kuiper Github code repository](https://github.com/emqx/kuiper/)
 - [Kuiper reference guide](https://github.com/lf-edge/ekuiper/blob/master/docs/en_US/reference.md)

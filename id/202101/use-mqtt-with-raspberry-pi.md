@@ -50,14 +50,14 @@ pip3 install paho-mqtt
 
 ### Koneksi dengan MQTT broker
 
-Dalam artikel ini, kita akan menggunakan [MQTT broker publik gratis](https://www.emqx.com/en/mqtt/public-mqtt5-broker) yang disediakan oleh EMQ X. Pembuatan servis ini berbasis [platform cloud MQTT IoT](https://www.emqx.com/en/cloud). Akses informasi broker adalah sebagai berikut:
+Dalam artikel ini, kita akan menggunakan [MQTT broker publik gratis](https://www.emqx.com/en/mqtt/public-mqtt5-broker) yang disediakan oleh EMQX. Pembuatan servis ini berbasis [platform cloud MQTT IoT](https://www.emqx.com/en/cloud). Akses informasi broker adalah sebagai berikut:
 
 
 * Broker: **broker.emqx.io** 
 * TCP Port: **1883** 
 * Websocket Port: **8083** 
 
-Jika perlu, Anda dapat menggunakan docker untuk mengunduh EMQ X broker secara cepat dan lokal.
+Jika perlu, Anda dapat menggunakan docker untuk mengunduh EMQX broker secara cepat dan lokal.
 
 ```
 docker run -d --name emqx -p 1883:1883 -p 8083:8083 -p 8084:8084 -p 18083:18083 emqx/emqx 

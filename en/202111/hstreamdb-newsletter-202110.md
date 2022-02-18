@@ -32,7 +32,7 @@ HStreamDB v0.6 also adds a basic data statistics function to support the statist
 
 ## Add REST API for data writing
 
-HStreamDB v0.6 version adds the REST API for writing data to HStreamDB. Through this API and the webhook function of the open source EMQ X, the rapid integration of EMQ X and HStreamDB can be realized.
+HStreamDB v0.6 version adds the REST API for writing data to HStreamDB. Through this API and the webhook function of the open source EMQX, the rapid integration of EMQX and HStreamDB can be realized.
 
 ## HStreamDB Java SDK update
 

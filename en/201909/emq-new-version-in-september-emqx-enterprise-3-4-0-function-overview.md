@@ -1,22 +1,22 @@
-Officially launched in September, the official version of [EMQ X Enterprise](https://www.emqx.com/en/products/emqx) 3.4.0 is released by EMQ. In this version, the management configuration and rule engine functions are enhanced, message encoding and decoding, cluster hot configuration and vehicle networking protocol support  are added, and a new management monitoring Dashboard page is designed, and this version is a stable version recommended for enterprise applications.
+Officially launched in September, the official version of [EMQX Enterprise](https://www.emqx.com/en/products/emqx) 3.4.0 is released by EMQ. In this version, the management configuration and rule engine functions are enhanced, message encoding and decoding, cluster hot configuration and vehicle networking protocol support  are added, and a new management monitoring Dashboard page is designed, and this version is a stable version recommended for enterprise applications.
 
 The relevant installation package is ready for download from [EMQ website](https://www.emqx.com/en/downloads), and  a free self-service application for trial is avaiable from the website.
 
 
 
-> EMQ X Enterprise is an Enterprise-level Iot MQTT messaging platform that supports one-stop access of millions of IoT devices, MQTT&CoAP multi-protocol processing, and low-latency real-time messaging. It  also supports SQL-based built-in rule engine, flexible processing/forwarding of messages to back-end services, storage of message data to various databases, or bridging of enterprise middleware such as Kafka, RabbitMQ, and Pulsar.
+> EMQX Enterprise is an Enterprise-level Iot MQTT messaging platform that supports one-stop access of millions of IoT devices, MQTT&CoAP multi-protocol processing, and low-latency real-time messaging. It  also supports SQL-based built-in rule engine, flexible processing/forwarding of messages to back-end services, storage of message data to various databases, or bridging of enterprise middleware such as Kafka, RabbitMQ, and Pulsar.
 >
-> EMQ X Enterprise is applicable for a variety of IoT applications, helping enterprises quickly build IoT applications and support the deployment on public clouds, private clouds, physical machines, containers/K8S and so on.
+> EMQX Enterprise is applicable for a variety of IoT applications, helping enterprises quickly build IoT applications and support the deployment on public clouds, private clouds, physical machines, containers/K8S and so on.
 
 
 
 ### Brand-new Dashboard UI
 
-In previous versions of EMQ X, EMQ has expanded a series of basic functions around MQTT message access to facilitate the rapid construction of IoT applications, such as authentication/ACL, data persistence and message bridging (Enterprise Edition) and integration into Dashboard. .
+In previous versions of EMQX, EMQ has expanded a series of basic functions around MQTT message access to facilitate the rapid construction of IoT applications, such as authentication/ACL, data persistence and message bridging (Enterprise Edition) and integration into Dashboard. .
 
 In order to support the introduction of more new functions and the  improvement of system usability and monitoring management ability after the introduction of functions, EMQ development team took the lead in designing a new Dashboard UI for the enterprise version, adjusting the interface style, operability, application structure and data display focus, and striving to create an IoT Hub Management Platform with comprehensive function:
 
-- Realize full control of EMQ X cluster status, add the real-time display interface of key operational indicators;
+- Realize full control of EMQX cluster status, add the real-time display interface of key operational indicators;
 - Provide aggregate statistics and persistent records of operational indicators and display them at the front end. Cluster history messages, links, topics and subscription indicators are clear at a glance.
 - Strengthen business functions, display licensee authorization information including issuing company, number of authorization lines, expiration date, and more convenient and quicker for enterprise operation and maintenance;
 - Implement basic equipment management function, simplify connection information, support online kick out equipment, view and manage equipment subscription information, add subscription relationship manually, etc.
@@ -29,7 +29,7 @@ In order to support the introduction of more new functions and the  improvement 
 
 ### Hot configuration of parameters is supported by Dashboard
 
-Prior to 3.4.0, all modifications to the EMQ X main configuration `etc/emqx.conf` required a restart to apply, such as anonymous authentication (allow_anonymous), ACL switches and policies (enable_acl), connection statistics (enable_stats),  that all have a need for non-stop changes.
+Prior to 3.4.0, all modifications to the EMQX main configuration `etc/emqx.conf` required a restart to apply, such as anonymous authentication (allow_anonymous), ACL switches and policies (enable_acl), connection statistics (enable_stats),  that all have a need for non-stop changes.
 
 After evaluation, EMQ lists dozens of configuration items that do not affect system stability but have hot configuration requirements, and provide hot configuration capabilities in Dashboard and REST APIs.
 
@@ -59,10 +59,10 @@ Schematic diagram for use with both Schema and rules engine:
 
 
 
-At present, three kinds of protocol parsing methods are supported by EMQ X :
+At present, three kinds of protocol parsing methods are supported by EMQX :
 
-- Avro is a remote procedure call and data serialization framework developed within Apache's Hadoop project. It uses JSON to define data type and communication protocol, and uses compressed binary format to serialize data, with EMQ X Enterprise built-in support;
-- Protocol Buffers is a lightweight and efficient structured data storage format that can be used for structured data serialization. It is ideal for data storage or RPC data exchange formats. It can be used for language-independent, platform-independent and extensible serialized structured data formats in communication protocols, data storage and other fields, with EMQ X Enterprise has built-in support.
+- Avro is a remote procedure call and data serialization framework developed within Apache's Hadoop project. It uses JSON to define data type and communication protocol, and uses compressed binary format to serialize data, with EMQX Enterprise built-in support;
+- Protocol Buffers is a lightweight and efficient structured data storage format that can be used for structured data serialization. It is ideal for data storage or RPC data exchange formats. It can be used for language-independent, platform-independent and extensible serialized structured data formats in communication protocols, data storage and other fields, with EMQX Enterprise has built-in support.
 - The third-party codec service delivers the original message data through the TCP and HTTP communication to the external codec service, waiting for the coded data to be returned, and then conducting the subsequent logic. The third-party service can be a self-built codec gateway or even a hot Serverless application in cloud computing.
 
 
@@ -100,5 +100,5 @@ In future versions, Dashboard's functions will continue to be enhanced, and the 
 
 - Optimizing Plug-in Configuration Function: For security reasons, plug-in configurations on Dashboard currently do not persist to Broker. Stable configurations need to be manually written to the configuration file after successful debugging. With the improvement of security of Dashboard and related APIs, subsequent EMQ plans will persist plug-in configurations on the interface. In most scenarios, no additional operations on configuration files are needed.
 - Provide plug-in function management interface: At present, Dashboard's management of plug-ins is limited to configuration. Many plug-ins, such as `emqx_auth_clientid, emqx_auth_username, emqx_configs,` have corresponding business functions and usage modes besides basic configuration. EMQ will be adapted and developed one by one in Dashboard to provide plug-in configuration and user interface;
-- Plug-in hot installation and hot upgrade: upload binary plug-in package in Dashboard, realize non-stop plug-in installation and upgrade, hot install hot upgrade is mainly used to deal with important repair and small-scale function upgrade of EMQ X;
+- Plug-in hot installation and hot upgrade: upload binary plug-in package in Dashboard, realize non-stop plug-in installation and upgrade, hot install hot upgrade is mainly used to deal with important repair and small-scale function upgrade of EMQX;
 - Customize alarm implementation: user-defined alarm rules and trigger mode will be supported in the future, so that the alarm reminder can not be offline.

@@ -10,7 +10,7 @@ If there is a network problem resulting in a slow network speed or a jam in the 
 
 ## MQTT Broker Preparation
 
-- If you don't have an MQTT broker deployed locally, you can use the public MQTT service provided by [EMQ X Cloud](https://www.emqx.com/en/cloud)  for quick testing:
+- If you don't have an MQTT broker deployed locally, you can use the public MQTT service provided by [EMQX Cloud](https://www.emqx.com/en/cloud)  for quick testing:
 
 ```
 Broker Address: broker.emqx.io
@@ -18,9 +18,9 @@ Broker TCP Port: 1883
 Broker SSL Port: 8883
 ```
 
-- If you plan to deploy MQTT Broker locally, we recommend that you  [download  EMQ X](https://github.com/emqx/emqx/releases) for installation and use. EMQ X is a fully open source, highly available, low latency, million-level distributed IoT MQTT 5.0 message server.
+- If you plan to deploy MQTT Broker locally, we recommend that you  [download  EMQX](https://github.com/emqx/emqx/releases) for installation and use. EMQX is a fully open source, highly available, low latency, million-level distributed IoT MQTT 5.0 message server.
 
-  Quickly install EMQ X by using Docker:
+  Quickly install EMQX by using Docker:
 
 ```shell
 docker run -d --name emqx -p 1883:1883 -p 8083:8083 -p 8883:8883 -p 8084:8084 -p 18083:18083 emqx/emqx
@@ -113,7 +113,7 @@ If the sending client also subscribes to the same `topic`, the client will immed
 
 3. Check for updates
 
-   Click the `i` button on the left bottom to display the ` About` page to learn about the version of **MQTT X**  and related information of [EMQ X](https://www.emqx.com/en) . Click `Check for Updates` to check if there are newer versions.
+   Click the `i` button on the left bottom to display the ` About` page to learn about the version of **MQTT X**  and related information of [EMQX](https://www.emqx.com/en) . Click `Check for Updates` to check if there are newer versions.
 
 ![mqttxupdate.png](https://static.emqx.net/images/889ae0041b88ba2ac8f6fefc44a92fde.png)
 

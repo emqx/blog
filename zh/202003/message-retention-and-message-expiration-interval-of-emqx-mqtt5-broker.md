@@ -17,15 +17,15 @@ PUBLISH 报文可以设置消息过期间隔这一属性，消息过期间隔是
 
 如果 PUBLISH 报文设置了消息过期间隔，并且消息过期将已经过期，服务端还没开始向匹配的订阅者交付该消息，那么服务端必须删除该消息。
 
-## EMQ X MQTT 服务器的保留消息
+## EMQX MQTT 服务器的保留消息
 
-[EMQ X MQTT Broker](https://www.emqx.com/en) 的保留消息功能是由 `emqx_retainer` 插件实现，该插件默认开启，通过修改 `emqx_retainer` 插件的配置，可以调整 EMQ X Broker 储存保留消息的位置，限制接收保留消息数量和 Payload 最大长度，以及调整保留消息的过期时间。
+[EMQX MQTT Broker](https://www.emqx.com/en) 的保留消息功能是由 `emqx_retainer` 插件实现，该插件默认开启，通过修改 `emqx_retainer` 插件的配置，可以调整 EMQX Broker 储存保留消息的位置，限制接收保留消息数量和 Payload 最大长度，以及调整保留消息的过期时间。
 
 `emqx_retainer` 插件默认开启，插件的配置路径为 `etc/plugins/emqx_retainer.conf`。
 
 + retainer.storage_type
 
-  保留消息的储存位置，EMQ X Broker 可以选择将保留消息仅储存在内存中，仅储存在硬盘中，或是同时储存在内存和硬盘中，可以由用户的业务特点灵活决定。
+  保留消息的储存位置，EMQX Broker 可以选择将保留消息仅储存在内存中，仅储存在硬盘中，或是同时储存在内存和硬盘中，可以由用户的业务特点灵活决定。
 
   例如，想要收集电表读数的用户可能会决定使用 QoS 等级 1 的消息，因为他们不能接受数据在网络传输途中丢失，但是，他们可能认为客户端和服务端的数据可以存储在内存（易失性存储器）中，因为电力供应系统是非常可靠的，不会有太大的数据丢失风险。
 
@@ -33,14 +33,14 @@ PUBLISH 报文可以设置消息过期间隔这一属性，消息过期间隔是
 
 + retainer.max_retained_messages、retainer.max_payload_size
 
-  `retainer.max_retained_messages`  规定了 EMQ X Broker 可以储存的保留消息的最大数量，0 表示没有限制。保留消息数量超出最大值限制后，可以替换已存在的保留消息，但不能为新的主题储存保留消息。
+  `retainer.max_retained_messages`  规定了 EMQX Broker 可以储存的保留消息的最大数量，0 表示没有限制。保留消息数量超出最大值限制后，可以替换已存在的保留消息，但不能为新的主题储存保留消息。
 
-  `retainer.max_payload_size`  规定了 EMQ X Broker 可以接收的保留消息的最大 Payload 值。Payload 大小超出最大值后 EMQ Ｘ 消息服务器会把收到的保留消息作为普通消息处理，不再储存此消息。
+  `retainer.max_payload_size`  规定了 EMQX Broker 可以接收的保留消息的最大 Payload 值。Payload 大小超出最大值后 EMQ Ｘ 消息服务器会把收到的保留消息作为普通消息处理，不再储存此消息。
 
-  这两项配置规定了 EMQ X Broker 可以接收与储存的保留消息的上限，保证了 EMQ X Broker 不会占用过多的资源来储存和处理保留消息。
+  这两项配置规定了 EMQX Broker 可以接收与储存的保留消息的上限，保证了 EMQX Broker 不会占用过多的资源来储存和处理保留消息。
 
 + retainer.expiry_interval
 
   保留消息的过期时间，0 表示永不过期。如果 PUBLISH 报文中设置了消息过期间隔，那么以 PUBLISH 报文中的消息过期间隔为准。
 
-  当保留消息的过期后，EMQ X Broker 会删除掉此消息。
+  当保留消息的过期后，EMQX Broker 会删除掉此消息。

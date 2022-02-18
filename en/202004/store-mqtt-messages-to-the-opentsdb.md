@@ -2,7 +2,7 @@ OpenTSDB is an extensible distributed time series database, whose bottom layer r
 
 Facing large-scale rapid growth of loT sensor acquisition, transaction records and other data, time series data accumulates very quickly. The time series database processes this large-scale data by improving efficiency, and it brings performance improvements, including higher Ingest Rates, faster large-scale queries (Although it supports more queries than other relational databases), and better data compression.
 
-This article will describe how to store related EMQ X MQTT messages through OpenTSDB by practical examples in the system `CentOS 7.2`. 
+This article will describe how to store related EMQX MQTT messages through OpenTSDB by practical examples in the system `CentOS 7.2`. 
 
 
 
@@ -12,9 +12,9 @@ Readers can refer to the [OpenTSDB documentation](https://opentsdb.net) or [Dock
 
 
 
-## Configure EMQ X MQTT server
+## Configure EMQX MQTT server
 
-If users use RPM method to install [EMQ X](https://www.emqx.com/en), the OpenTSDB related configuration files is located in `/etc/emqx/plugins/emqx_backend_opentsdb.conf`. The OpenTSDB plugin only supports message storage considering the function location. 
+If users use RPM method to install [EMQX](https://www.emqx.com/en), the OpenTSDB related configuration files is located in `/etc/emqx/plugins/emqx_backend_opentsdb.conf`. The OpenTSDB plugin only supports message storage considering the function location. 
 
 Configure the connection address, connection pool size and batch strategies 
 
@@ -54,7 +54,7 @@ Enable this plugin:
 
 Because the **MQTT Message** can not be written directly to OpenTSDB, OpenTSDB backend provides the emqx_backend_opentsdb.tmpl template file to convert the MQTT Message to DataPoint that can be written to OpenTSDB.
 
-> The message template function requires EMQ X to be restarted to apply the changes.
+> The message template function requires EMQX to be restarted to apply the changes.
 
 The tmpl file is located in `data/templates/emqx_backend_opentsdb_example.tmpl`. Using the json format, users can define different Template for different Topic, which is similar to:
 
@@ -155,7 +155,7 @@ Backend will convert the MQTT Message to:
 
 ## Example
 
-In the EMQ X management console **WebSocket** page, publish the message in the above format to the topic `sample`, the message will be parsed and stored in the `measurement` corresponding to the OpenTSDB `udp` database.
+In the EMQX management console **WebSocket** page, publish the message in the above format to the topic `sample`, the message will be parsed and stored in the `measurement` corresponding to the OpenTSDB `udp` database.
 
 ## Summary
 

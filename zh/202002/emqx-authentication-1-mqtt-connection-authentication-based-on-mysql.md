@@ -11,7 +11,7 @@
   - MQTT 协议支持用户名和密码实现客户端的身份校验；
   - MQTT Broker 实现了  Topic 的读写权限控制（Topic ACL）。
 
-EMQ X 完整支持 MQTT 各项安全规范，内置的安全功能无需编程开箱即用，可以快速排除项目中的安全隐患。本系列将围绕各个层次的安全规范，介绍如何通过配置 EMQ X 启用相关功能最终实现相应的安全防护。
+EMQX 完整支持 MQTT 各项安全规范，内置的安全功能无需编程开箱即用，可以快速排除项目中的安全隐患。本系列将围绕各个层次的安全规范，介绍如何通过配置 EMQX 启用相关功能最终实现相应的安全防护。
 
 
 
@@ -25,10 +25,10 @@ emqx_auth_mysql 是基于 MySQL 数据库的 MQTT 认证/访问控制插件，�
 
 #### 认证原理
 
-设备连接时 EMQ X 将执行按照配置的查询语句，比较查询结果中的 `password` 字段的值是否与当前请求客户端的密码进行加盐 (salt) 处理、加密后的值是否相等，验证流程如下：
+设备连接时 EMQX 将执行按照配置的查询语句，比较查询结果中的 `password` 字段的值是否与当前请求客户端的密码进行加盐 (salt) 处理、加密后的值是否相等，验证流程如下：
 
 - 查询结果集中必须有 `password`、`salt` 字段，可以使用 `AS` 语法设置如 `SELECT *, pwd as password FROM mqtt_user`
-- 在数据库中可以为每个客户端都指定一个 salt，EMQ X 根据客户端传入的密码和通过 SQL 返回的 salt 信息生成密文
+- 在数据库中可以为每个客户端都指定一个 salt，EMQX 根据客户端传入的密码和通过 SQL 返回的 salt 信息生成密文
 - 结果集为空或比对结果不相等，认证失败
 
 
@@ -94,10 +94,10 @@ mysql> desc mqtt_user;
 
 本文提供示例数据中密码为 ``test_password``，加密 salt 为 ``secret``。即客户端连接时使用的密码是 `test_password` 。
 
-在 EMQ X 的配置文件的 ``auth.mysql.password_hash`` 中，**salt 只是一个标识符，表示 salt 与密码明文的拼接关系**。
+在 EMQX 的配置文件的 ``auth.mysql.password_hash`` 中，**salt 只是一个标识符，表示 salt 与密码明文的拼接关系**。
 
-- 如果采用``auth.mysql.password_hash = md5,salt`` ，那么 EMQ X 使用 MD5 算法对 ``test_passwordsecret`` 字符串加密
-- 如果采用``auth.mysql.password_hash = salt,md5`` ，那么 EMQ X 使用 MD5 算法对 ``secrettest_password`` 字符串加密
+- 如果采用``auth.mysql.password_hash = md5,salt`` ，那么 EMQX 使用 MD5 算法对 ``test_passwordsecret`` 字符串加密
+- 如果采用``auth.mysql.password_hash = salt,md5`` ，那么 EMQX 使用 MD5 算法对 ``secrettest_password`` 字符串加密
 
 本文采用第一种配置方式，将得到的 MD5 密文插入表 ``mqtt_user``。读者可以通过[在线的 MD5 工具](https://www.md5hashgenerator.com/)或者自己写程序对密码进行编码。
 
@@ -157,7 +157,7 @@ emqx_ctl plugins reload emqx_auth_mysql
 
 ##### 关闭匿名认证
 
-EMQ X 默认开启了匿名认证，即便启用了认证功能，数据库没有查询到数据时设备也能正常连接，只有当查询到数据且密码错误时才会拒绝连接。
+EMQX 默认开启了匿名认证，即便启用了认证功能，数据库没有查询到数据时设备也能正常连接，只有当查询到数据且密码错误时才会拒绝连接。
 
 打开 `etc/emqx.conf` 配置文件，禁用匿名认证：
 
@@ -172,7 +172,7 @@ allow_anonymous = false
 
 #### 测试
 
-准备就绪后，仅通过认证校验之后的设备才能成功连接到 EMQ X：
+准备就绪后，仅通过认证校验之后的设备才能成功连接到 EMQX：
 
 1. 使用正确的用户名和密码进行连接，并订阅 "topic" 主题，可以连接成功：
 
@@ -198,4 +198,4 @@ Connection Refused: not authorised.
 ``` 
 ## 总 结    
 
-读者在理解了 EMQ X MySQL 认证原理之后，可以结合 MySQL 拓展相关应用。欢迎关注 EMQ X 安全系列文章，后续本系列将依次讲解 EMQ X 与物联网安全相关问题，助您构建高安全物联网项目。
+读者在理解了 EMQX MySQL 认证原理之后，可以结合 MySQL 拓展相关应用。欢迎关注 EMQX 安全系列文章，后续本系列将依次讲解 EMQX 与物联网安全相关问题，助您构建高安全物联网项目。

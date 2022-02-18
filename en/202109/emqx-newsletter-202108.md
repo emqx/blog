@@ -1,8 +1,8 @@
-In August, the open source team continually focused on EMQ X 5.0 feature developments. A lot of heat in discussions, a lot of fast iterations. EMQ X 5.0 has reached alpha.5 release. And we expect the **first** beta release to come soon.
+In August, the open source team continually focused on EMQX 5.0 feature developments. A lot of heat in discussions, a lot of fast iterations. EMQX 5.0 has reached alpha.5 release. And we expect the **first** beta release to come soon.
 
-## A quick glance at EMQ X 5.0 management UI
+## A quick glance at EMQX 5.0 management UI
 
-EMQ X 5.0 will come with a freshly redesigned management UI. The new design focuses a lot on user experience improvements, we try our best to strike a balance between the clarity of the UI and the ability to parameterize. 
+EMQX 5.0 will come with a freshly redesigned management UI. The new design focuses a lot on user experience improvements, we try our best to strike a balance between the clarity of the UI and the ability to parameterize. 
 
 To show off, here is a screenshot of the new UI for advanced [MQTT](https://www.emqx.com/en/mqtt) features. 
 
@@ -10,13 +10,13 @@ To show off, here is a screenshot of the new UI for advanced [MQTT](https://www.
 
 Managing Topic Rewrite, Auto Subscribes, Delayed Publish, and Event Messages will be a breeze experience with the new UI.
 
-## Reconfigure EMQ X on the fly
+## Reconfigure EMQX on the fly
 
-![Reconfigure EMQ X on the fly](https://static.emqx.net/images/0a952d8445d3cc4a59d0949d67e2b011.png)
+![Reconfigure EMQX on the fly](https://static.emqx.net/images/0a952d8445d3cc4a59d0949d67e2b011.png)
 
-As we showed in the previous newsletter, EMQ X 5.0 uses Open API 3.0 for management APIs. If you visit [https://:localhost:18083/api-docs](http://localhost:18083/api-docs), the browser will take you to the Swagger UI where you can try out API calls directly from the GUI as well as viewing the detailed documentation of the API.
+As we showed in the previous newsletter, EMQX 5.0 uses Open API 3.0 for management APIs. If you visit [https://:localhost:18083/api-docs](http://localhost:18083/api-docs), the browser will take you to the Swagger UI where you can try out API calls directly from the GUI as well as viewing the detailed documentation of the API.
 
-The new stuff we added in August is the framework that will allow EMQ X users to reconfigure the cluster on the fly. For the majority of the config changes, there will be no need to restart the broker to make config changes take effect.
+The new stuff we added in August is the framework that will allow EMQX users to reconfigure the cluster on the fly. For the majority of the config changes, there will be no need to restart the broker to make config changes take effect.
 
  
 
@@ -24,15 +24,15 @@ The new stuff we added in August is the framework that will allow EMQ X users to
 
 We just introduced on-the-fly configuration update and reloading, you may wonder how we ensure the changes are applied across all nodes in a cluster. This is why we have implemented the “Cluster Call” feature.
 
-Previously we have been using Erlang’s multi-call in EMQ X to replicate changes to all nodes in the cluster, which is straightforward to use and mostly working just fine in most of the network scenarios. However, there has been a lack of a nice rollback or failure handling.
+Previously we have been using Erlang’s multi-call in EMQX to replicate changes to all nodes in the cluster, which is straightforward to use and mostly working just fine in most of the network scenarios. However, there has been a lack of a nice rollback or failure handling.
 
 The “Cluster Call” feature allows us to replicate the change in an async fashion, which will eventually get the same changes applied on all nodes in the cluster.
 
 ## Configuration Document Generation
 
-In EMQ X 5.0, source code will become the single source of truth for API and configuration documentation. With the help of [HOCON schema feature](https://github.com/emqx/hocon/blob/master/SCHEMA.md), keeping code and documentation in sync will be effortless. Below is an example of listener config documentation.
+In EMQX 5.0, source code will become the single source of truth for API and configuration documentation. With the help of [HOCON schema feature](https://github.com/emqx/hocon/blob/master/SCHEMA.md), keeping code and documentation in sync will be effortless. Below is an example of listener config documentation.
 
-Here in the picture is a screenshot of the generated configuration document for the QUIC listener --- Yes, in case you have missed our previous updates, EMQ X now has a PoC implementation of MQTT over [QUIC](https://datatracker.ietf.org/doc/rfc9000/).
+Here in the picture is a screenshot of the generated configuration document for the QUIC listener --- Yes, in case you have missed our previous updates, EMQX now has a PoC implementation of MQTT over [QUIC](https://datatracker.ietf.org/doc/rfc9000/).
 
 ![generated configuration document for the QUIC listener](https://static.emqx.net/images/8e3946d74c74a232d0a06afab61800c9.png)
 

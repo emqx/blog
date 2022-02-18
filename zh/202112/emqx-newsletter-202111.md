@@ -1,8 +1,8 @@
-本月 EMQ X 各团队针对近期发现的各项问题及用户反馈对产品进行了修复及功能升级。[EMQ X 开源版](https://emqx.io/zh)发布了 v4.3.10，[EMQ X 企业版](https://www.emqx.com/zh/products/emqx)发布了 v4.2.9 与 v4.3.5，进行了基于内置数据库的 ACL 性能优化、集群间调用可能导致客户端进程失去响应的问题修复等更新。[EMQ X Cloud](https://www.emqx.com/zh/cloud) 本月上线了多个基于用户实际需求的新功能，持续完善产品体验。
+本月 EMQX 各团队针对近期发现的各项问题及用户反馈对产品进行了修复及功能升级。[EMQX 开源版](https://emqx.io/zh)发布了 v4.3.10，[EMQX 企业版](https://www.emqx.com/zh/products/emqx)发布了 v4.2.9 与 v4.3.5，进行了基于内置数据库的 ACL 性能优化、集群间调用可能导致客户端进程失去响应的问题修复等更新。[EMQX Cloud](https://www.emqx.com/zh/cloud) 本月上线了多个基于用户实际需求的新功能，持续完善产品体验。
 
-## EMQ X ：企业版 v4.4 问世在即，开源版 v5.0-beta.2 进入测试阶段
+## EMQX ：企业版 v4.4 问世在即，开源版 v5.0-beta.2 进入测试阶段
 
-### EMQ X 企业版 v4.4 完成开发
+### EMQX 企业版 v4.4 完成开发
 
 企业版 v4.4 的开发工作目前已经全部完成，版本测试工作正在紧锣密鼓地进行当中，正式版将在十二月与大家见面。
 
@@ -14,9 +14,9 @@
 
   > 相关新闻：[助力碳中和，EMQ 与 SAP 共同构建绿色 IoT 解决方案](https://www.emqx.com/zh/news/emq-and-sap-iot-solution)
 
-- 规则引擎新增支持 MatrixDB 超融合时序数据库，EMQ X 单机通过了 21 万行/秒写入量测试，后续版本还将进一步优化提升性能
+- 规则引擎新增支持 MatrixDB 超融合时序数据库，EMQX 单机通过了 21 万行/秒写入量测试，后续版本还将进一步优化提升性能
 
-  > 相关新闻：[EMQ X + MatrixDB 一站式方案助力搭建企业数字资产平台](https://www.emqx.com/zh/blog/emqx-and-matrixdb)
+  > 相关新闻：[EMQX + MatrixDB 一站式方案助力搭建企业数字资产平台](https://www.emqx.com/zh/blog/emqx-and-matrixdb)
 
 以下功能会同时在后续的开源版中陆续提供：
 
@@ -26,7 +26,7 @@
 - 多语言钩子扩展（exhook）支持动态丢弃客户端 Publish 的消息
 - Dashboard 静态资源使用相对路径加载，方便配置反向代理置于网站子目录之下
 
-### EMQ X 开源版 v5.0-beta.2 即将发布
+### EMQX 开源版 v5.0-beta.2 即将发布
 
 5.0-beta.2 现已进入测试阶段，计划于 12 月初发布，在这一版本中主要新增了以下功能：
 
@@ -46,11 +46,11 @@
 
 1. 支持在 Dashboard 上配置管理规则引擎
 2. 支持在 Dashboard 上查看与配置集群参数，支持运行时热配置
-3. 支持 Plugins 管理，无需从代码编译，EMQ X 能够安装独立的插件包
+3. 支持 Plugins 管理，无需从代码编译，EMQX 能够安装独立的插件包
 4. 提供 Application 与 Exhook 功能
 5. 企业版 4.4 中的慢订阅（Slow Subscription） 和在线 Trace、Dashboard 静态资源使用相对路径加载等功能将在此版本中开放
 
-我们热切欢迎和期待每一个用户充分表达自己的期望或需求，你的意见或将成为影响 EMQ X 未来发展的关键要素。
+我们热切欢迎和期待每一个用户充分表达自己的期望或需求，你的意见或将成为影响 EMQX 未来发展的关键要素。
 
 ### 未来展望
 
@@ -59,19 +59,19 @@
 1. 将同时发行基于 OTP23 和 OTP24 的版本
 2. 将支持滚动升级
 3. 高可靠性持久会话的开发分支并入主干，现已经展开性能测试工作
-   在5.0之前，EMQ X 就已经提供了 MQTT 会话持久化的能力。但是这些会话没有同步到集群里的其他节点。本月，支持高可靠性持久会话的开发分支终于合并进入主干分支，并已开始着手性能测试。
-4. 基于 CDK 的 EMQ X 集群部署
-   本月 EMQ X 欧洲研发团队开源了一个集群部署的内部工具 [cdk-emqx-cluster](https://github.com/emqx/cdk-emqx-cluster)，该工具基于 AWS 的 [CDK](https://aws.amazon.com/cdk/) 开发包，有能力部署并配置 EMQ X集群以及周边集成的服务，例如 etcd，Kafka 用于跑压力测试的 load generator，以及用于监控的 Prometheus，并自带一个完备的 Grafana Dashboard。
+   在5.0之前，EMQX 就已经提供了 MQTT 会话持久化的能力。但是这些会话没有同步到集群里的其他节点。本月，支持高可靠性持久会话的开发分支终于合并进入主干分支，并已开始着手性能测试。
+4. 基于 CDK 的 EMQX 集群部署
+   本月 EMQX 欧洲研发团队开源了一个集群部署的内部工具 [cdk-emqx-cluster](https://github.com/emqx/cdk-emqx-cluster)，该工具基于 AWS 的 [CDK](https://aws.amazon.com/cdk/) 开发包，有能力部署并配置 EMQX集群以及周边集成的服务，例如 etcd，Kafka 用于跑压力测试的 load generator，以及用于监控的 Prometheus，并自带一个完备的 Grafana Dashboard。
 
-   ![EMQ X Grafana Dashboard](https://static.emqx.net/images/49e918ea98315414d4c1022381bef520.png)
+   ![EMQX Grafana Dashboard](https://static.emqx.net/images/49e918ea98315414d4c1022381bef520.png)
 
-   ![EMQ X Grafana Dashboard](https://static.emqx.net/images/18e291801e09a72ccbf83c74faed1e8d.png)
+   ![EMQX Grafana Dashboard](https://static.emqx.net/images/18e291801e09a72ccbf83c74faed1e8d.png)
 
-## EMQ X Cloud：关注用户痛点，持续体验优化
+## EMQX Cloud：关注用户痛点，持续体验优化
 
 ### 子账号管理功能上线
 
-为了应对企业内部不同部门和组织独立管理部署、独立核算的需求，[EMQ X Cloud 在本月上线了子账号管理功能](https://www.emqx.com/zh/blog/emqx-cloud-launches-sub-account-management)。类似阿里云的 RAM 账号和 AWS 的 IAM 账号，根用户可以创建同一账号体系下的子用户。并通过为子用户分配不同的预置角色（管理员、项目管理员、项目使用者、财务、审计）来分管不同的功能或模块。结合项目管理的功能，可以实现不同的账号管理不同项目中的部署。
+为了应对企业内部不同部门和组织独立管理部署、独立核算的需求，[EMQX Cloud 在本月上线了子账号管理功能](https://www.emqx.com/zh/blog/emqx-cloud-launches-sub-account-management)。类似阿里云的 RAM 账号和 AWS 的 IAM 账号，根用户可以创建同一账号体系下的子用户。并通过为子用户分配不同的预置角色（管理员、项目管理员、项目使用者、财务、审计）来分管不同的功能或模块。结合项目管理的功能，可以实现不同的账号管理不同项目中的部署。
 
 通过该功能，用户将可以更精细化管理资源，同时符合了财务、审计上的合规要求。 
 
@@ -81,16 +81,16 @@
 
 ### 监控模块新增设备大量离线告警
 
-设备大量离线的情况可能是由一些外在突发事件造成，开发运维人员需要第一时间获得告警信，以避免造成不必要的损失。在最新版本的 EMQ X Cloud 中，设置了如下设备离线监控规则：当前连接数与上一次时间记录的连接数的差值大于规格总连接数十分之一时，会在监控中提示消息，告知开发和运维人员及时查看。这将进一步提高系统稳定性。
+设备大量离线的情况可能是由一些外在突发事件造成，开发运维人员需要第一时间获得告警信，以避免造成不必要的损失。在最新版本的 EMQX Cloud 中，设置了如下设备离线监控规则：当前连接数与上一次时间记录的连接数的差值大于规格总连接数十分之一时，会在监控中提示消息，告知开发和运维人员及时查看。这将进一步提高系统稳定性。
 
 ### 创建海外云服务提示优化
 
-当国内用户需要创建 AWS、Azure 或 GCP 的云服务时，新增了需要前往 EMQ X Cloud 海外平台的提示。相比之前直接跳转并登录的流程优化了用户使用体验。
+当国内用户需要创建 AWS、Azure 或 GCP 的云服务时，新增了需要前往 EMQX Cloud 海外平台的提示。相比之前直接跳转并登录的流程优化了用户使用体验。
 
 ### 规则引擎新增保存数据到阿里云 MongoDB
 
-EMQ X Cloud 支持将数据转发到非关系型数据库。目前规则引擎的资源配置新增了阿里云 MongoDB 支持，可以使用规则引擎将数据持久化保存到阿里云的 MongoDB 上。为业务开发者实现数据持久化提供更多选择，更方便地落地业务。
+EMQX Cloud 支持将数据转发到非关系型数据库。目前规则引擎的资源配置新增了阿里云 MongoDB 支持，可以使用规则引擎将数据持久化保存到阿里云的 MongoDB 上。为业务开发者实现数据持久化提供更多选择，更方便地落地业务。
 
  
 
-为了完成「通过世界级开源软件产品服务人类未来产业与社会」的使命，敬请期待一个更优秀的 EMQ X。
+为了完成「通过世界级开源软件产品服务人类未来产业与社会」的使命，敬请期待一个更优秀的 EMQX。

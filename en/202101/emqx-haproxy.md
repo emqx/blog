@@ -5,21 +5,21 @@
 **Software versions**
 
 - Ubuntu 18.04
-- EMQ X Broker v4.2.5
+- EMQX Broker v4.2.5
 - HAProxy 2.2+
 
 **Machine allocation**
 
 - 172.16.239.107: HAProxy
-- 172.16.239.108: EMQ X Node 1
-- 172.16.239.109: EMQ X Node 2
+- 172.16.239.108: EMQX Node 1
+- 172.16.239.109: EMQX Node 2
 
 
 ## Installation
 
 ### EMQX
 
-Refer to [EMQ X Broker](https://www.emqx.com/en/try?product=broker)
+Refer to [EMQX Broker](https://www.emqx.com/en/try?product=broker)
 
 ```bash
 wget https://www.emqx.com/en/downloads/broker/v4.2.5/emqx-ubuntu18.04-4.2.5-x86_64.zip
@@ -153,7 +153,7 @@ frontend frontend_emqx_tcp
 
 
 
-So far, we have completed the build and use of the EMQ X cluster based on HAProxy. For more detailed use of HAProxy, see [HAProxy Documentation](https://cbonte.github.io/haproxy-dconv/2.2/intro.html).
+So far, we have completed the build and use of the EMQX cluster based on HAProxy. For more detailed use of HAProxy, see [HAProxy Documentation](https://cbonte.github.io/haproxy-dconv/2.2/intro.html).
 
 
 

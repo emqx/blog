@@ -1,18 +1,18 @@
-EMQ X 节点可以被其他类型的 [MQTT 服务器](https://www.emqx.com/zh/products/emqx) 桥接，实现跨平台的消息订阅和发送。本文我们以一个配置实例来说明如何桥接 Mosquitto MQTT  消息至 EMQ X。
+EMQX 节点可以被其他类型的 [MQTT 服务器](https://www.emqx.com/zh/products/emqx) 桥接，实现跨平台的消息订阅和发送。本文我们以一个配置实例来说明如何桥接 Mosquitto MQTT  消息至 EMQX。
 
 Mosquitto 是一个小型轻量的开源 MQTT 服务器，由 C/C++ 语言编写。Mosquitto 采用单核心单线程架构，支持部署在资源有限的嵌入式设备，接入少量 MQTT 设备终端，并实现了 [MQTT 5.0](https://www.emqx.com/zh/mqtt/mqtt5) 和 3.1.1版本协议。
 
-EMQ X 与 Mosquitto 均完整支持了 [MQTT 协议](https://www.emqx.com/zh/mqtt) 特性，但 EMQ X 支持更多通信协议以及私有协议接入。应用层的功能拓展方面，Mosquitto 缺乏开箱即用的如认证鉴权、规则引擎、数据持久化与高性能消息桥接（EMQ X 企业版）等业务相关功能； 监控运维与可视化管理方面， EMQ X 有完整的现有功能和拓展方案支持；基础功能上 Mosquitto 集群功能羸弱，官方和第三方实现的集群方案均难以支撑物联网大规模海量连接的性能需求。
+EMQX 与 Mosquitto 均完整支持了 [MQTT 协议](https://www.emqx.com/zh/mqtt) 特性，但 EMQX 支持更多通信协议以及私有协议接入。应用层的功能拓展方面，Mosquitto 缺乏开箱即用的如认证鉴权、规则引擎、数据持久化与高性能消息桥接（EMQX 企业版）等业务相关功能； 监控运维与可视化管理方面， EMQX 有完整的现有功能和拓展方案支持；基础功能上 Mosquitto 集群功能羸弱，官方和第三方实现的集群方案均难以支撑物联网大规模海量连接的性能需求。
 
 因此 Mosquitto 并不适合用来做规模化服务的 MQTT 服务器，但由于其足够轻量精简，可以运行在任何低功率单片机包括嵌入式传感器、手机设备、嵌入式微处理器上，是物联网边缘消息接入较好的技术选型，结合其桥接功能可以实现消息的本地处理与云端透传。
 
 ## 场景描述
 
-假设我们有一个 EMQ X 服务器集群 `emqx1`，和一台 Mosquitto 服务器，我们需要在 Mosquitto 上创建一条桥接，把所有 `传感器(sensor)` 主题消息转发至 `emqx1`  集群，并从 EMQ X 订阅所有`控制(control)`主题。
+假设我们有一个 EMQX 服务器集群 `emqx1`，和一台 Mosquitto 服务器，我们需要在 Mosquitto 上创建一条桥接，把所有 `传感器(sensor)` 主题消息转发至 `emqx1`  集群，并从 EMQX 订阅所有`控制(control)`主题。
 
 ![Artboard.jpg](https://static.emqx.net/images/f82cb9c8cc1d94b34d5d745ecc259cbd.jpg)
 
-**EMQ X**  
+**EMQX**  
 
 | 集群  | 集群地址      | 监听端口 |
 | :---- | :------------ | :------- |
@@ -28,9 +28,9 @@ EMQ X 与 Mosquitto 均完整支持了 [MQTT 协议](https://www.emqx.com/zh/mqt
 
 配置 Mosquitto 的桥接需要在安装后修改 `mosquitto.conf` 文件。对于每一个桥接，需要配置的基本内容有：
 
-- 远端的 EMQ X 服务器的地址和端口；
+- 远端的 EMQX 服务器的地址和端口；
 - MQTT 协议参数，如协议版本，keepalive, clean_session等（如不配置则使用默认值）；
-- EMQ X 需要的客户端登录信息；
+- EMQX 需要的客户端登录信息；
 - 需要桥接的消息的主题；
 - 配置桥接主题映射（默认无映射）。
 
@@ -88,9 +88,9 @@ topic control/# in 1
 
 
 
-## 配置 EMQ X 服务器
+## 配置 EMQX 服务器
 
-在安装 EMQ X 服务器后，为了使 Mosquitto MQTT 消息桥接成功，需要视情况决定是否配置相应的用户认证和鉴权信息。或者在实验阶段为了简化测试，可以使用允许匿名登录和 acl_nomatch 跳过认证和鉴权。
+在安装 EMQX 服务器后，为了使 Mosquitto MQTT 消息桥接成功，需要视情况决定是否配置相应的用户认证和鉴权信息。或者在实验阶段为了简化测试，可以使用允许匿名登录和 acl_nomatch 跳过认证和鉴权。
 
 ## 测试配置
 
@@ -133,7 +133,7 @@ Client mosqsub|19324-Zeus- sending PUBACK (Mid: 1)
 
 ### 测试桥接的 in 方向
 
-在 Mosquitto上订阅 'control/#' 主题，该主题将接收到 EMQ X 上发布的消息：
+在 Mosquitto上订阅 'control/#' 主题，该主题将接收到 EMQX 上发布的消息：
 
 ```
 $ mosquitto_sub -t "control/#" -p 1883 -d -q 1 -h 192.168.1.101

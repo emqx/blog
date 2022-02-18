@@ -1,15 +1,15 @@
-[EMQ X Cloud](https://www.emqx.com/en/cloud) is a fully managed IoT [MQTT 5.0](https://www.emqx.com/en/mqtt/mqtt5) cloud service product provided by [EMQ](https://www.emqx.com/en). Through this product, we can quickly build a stable and reliable MQTT 5.0 IoT platform with complete functions and excellent performance to help upload all kinds of device data quickly to the cloud for subsequent analysis.
+[EMQX Cloud](https://www.emqx.com/en/cloud) is a fully managed IoT [MQTT 5.0](https://www.emqx.com/en/mqtt/mqtt5) cloud service product provided by [EMQ](https://www.emqx.com/en). Through this product, we can quickly build a stable and reliable MQTT 5.0 IoT platform with complete functions and excellent performance to help upload all kinds of device data quickly to the cloud for subsequent analysis.
 
 In this tutorial, we will teach you step by step to build an IoT platform. After completing this tutorial, you will know:
 
-1.  How to quickly deploy an MQTT cluster in EMQ X Cloud.
+1.  How to quickly deploy an MQTT cluster in EMQX Cloud.
 2.  How to configure the authentication and access control of the MQTT cluster.
 3.  How to use client tools to connect to the MQTT cluster.
 4.  How to publish and subscribe messages.
 
-## Step 1: Create an EMQ X Cloud account
+## Step 1: Create an EMQX Cloud account
 
-First, we go to the home page of the [EMQ X Cloud](https://www.emqx.com/en/cloud) and click the "Start Free Trial" button.
+First, we go to the home page of the [EMQX Cloud](https://www.emqx.com/en/cloud) and click the "Start Free Trial" button.
 
 Then, complete the user registration process according to the prompt information on the page.
 
@@ -22,9 +22,9 @@ Click the "Create Deployment" button in the middle of the page to start the depl
 
 ![Select Type](https://static.emqx.net/images/07a91d444e9400194ee80c2b90df6282.png)
 
-EMQ X Cloud provides three versions for you to choose from, which are suitable for different usage scenarios.
+EMQX Cloud provides three versions for you to choose from, which are suitable for different usage scenarios.
 
-- Basic version: This version is suitable for the study and experience of [MQTT protocol](https://www.emqx.com/en/mqtt) or EMQ X Broker products and the development of lightweight IoT applications. The basic version offers a 30-day free trial.
+- Basic version: This version is suitable for the study and experience of [MQTT protocol](https://www.emqx.com/en/mqtt) or EMQX Broker products and the development of lightweight IoT applications. The basic version offers a 30-day free trial.
 - Professional version: This version is suitable for building mission-critical IoT applications. This version provides advanced functions such as data persistence, message distribution, and VPC peering connections. The professional version offers a 14-day free trial.
 - Flagship version: This version is suitable for the construction of enterprise-level IoT platforms, provides support for multi-region and exclusive hardware deployment and adds functions such as device management, device shadow, and object model.
 
@@ -97,6 +97,6 @@ At this point, click "Publish" to successfully publish our preset information.
 
 So far, if you follow our tutorial step by step, you have successfully completed the operations of cluster creation, access control, and sending and receiving messages!
 
-In this tutorial, we experienced the process of building an MQTT IoT platform from scratch. Of course, this is just the beginning. EMQ X Cloud has many very powerful functions waiting for you to try. For example, you can configure VPC peering connections so that your MQTT cluster can be integrated with other services deployed on the same public cloud platform in the same region. You can also use the powerful rule engine function to save the messages received by the MQTT cluster to different databases or forward them to other [message queues](https://www.emqx.com/en/blog/mqtt5-feature-inflight-window-message-queue) according to the rules, and these functions do not require you to write a line of code!
+In this tutorial, we experienced the process of building an MQTT IoT platform from scratch. Of course, this is just the beginning. EMQX Cloud has many very powerful functions waiting for you to try. For example, you can configure VPC peering connections so that your MQTT cluster can be integrated with other services deployed on the same public cloud platform in the same region. You can also use the powerful rule engine function to save the messages received by the MQTT cluster to different databases or forward them to other [message queues](https://www.emqx.com/en/blog/mqtt5-feature-inflight-window-message-queue) according to the rules, and these functions do not require you to write a line of code!
 
-In the process of using EMQ X Cloud products, if you have any questions, comments, or suggestions, please feel free to contact us ([cloud-support@emqx.io](mailto:cloud-support@emqx.io)). We hope EMQ X Cloud can help you develop your IoT business more smoothly.
+In the process of using EMQX Cloud products, if you have any questions, comments, or suggestions, please feel free to contact us ([cloud-support@emqx.io](mailto:cloud-support@emqx.io)). We hope EMQX Cloud can help you develop your IoT business more smoothly.

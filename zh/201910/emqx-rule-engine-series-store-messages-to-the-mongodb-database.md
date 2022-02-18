@@ -12,7 +12,7 @@ MongoDB 下载地址：[https://www.mongodb.com/download-center/community](https
 
 ## 场景介绍
 
-该场景需要将 EMQ X 指定主题下满足某条件的消息存储到 MongoDB 数据库。为了便于后续分析检索，消息内容需要进行拆分存储。
+该场景需要将 EMQX 指定主题下满足某条件的消息存储到 MongoDB 数据库。为了便于后续分析检索，消息内容需要进行拆分存储。
 
 **该场景下设备端上报信息如下：**
 
@@ -78,13 +78,13 @@ use_statistics
 
 ### 创建资源
 
-打开 EMQ X Dashboard，进入左侧菜单的 **资源** 页面，点击 **新建** 按钮，选择 MongoDB 资源类型进行创建：
+打开 EMQX Dashboard，进入左侧菜单的 **资源** 页面，点击 **新建** 按钮，选择 MongoDB 资源类型进行创建：
 
 ![mongrescreate2x.png](https://static.emqx.net/images/44e47b97da67afc70e94cce2ba0da18f.png)
 
 
 
-EMQ X 集群中节点所在网络环境可能互不相同，资源创建成功后点击列表中 **状态按钮**，查看各个节点资源连接状况，如果节点上资源不可用，请检查配置是否正确、网络连通性，并点击 **重连** 按钮手动重连。
+EMQX 集群中节点所在网络环境可能互不相同，资源创建成功后点击列表中 **状态按钮**，查看各个节点资源连接状况，如果节点上资源不可用，请检查配置是否正确、网络连通性，并点击 **重连** 按钮手动重连。
 
 ![mongresstatus2x.png](https://static.emqx.net/images/ad6f6bca0c772445a750129c33561940.png)
 
@@ -218,7 +218,7 @@ msgid=${id}, client_id=${client_id}, speed=${speed}, tachometer=${tachometer}, t
 
 #### 使用 Dashboard 中的 Websocket 工具测试
 
-切换到 **工具 => Websocket** 页面，使用任意信息客户端连接到 EMQ X，连接成功后在 **消息** 卡片发送如下信息：
+切换到 **工具 => Websocket** 页面，使用任意信息客户端连接到 EMQX，连接成功后在 **消息** 卡片发送如下信息：
 
 - 主题：cmd/state/NXP-058659730253-963945118132721-22
 

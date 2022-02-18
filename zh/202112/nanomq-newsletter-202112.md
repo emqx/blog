@@ -5,7 +5,7 @@
 
 ## MQTT 桥接介绍
 
-桥接是一种连接多个 [EMQ X](https://www.emqx.com/zh/products/emqx) 或者其他 MQTT 消息中间件的方式。不同于集群，工作在桥接模式下的节点之间不会复制主题树和路由表。多数用于将重要主题和设备的数据在复数 Broker 间打通，此特性在云边协同和多活架构场景里都有广泛使用。
+桥接是一种连接多个 [EMQX](https://www.emqx.com/zh/products/emqx) 或者其他 MQTT 消息中间件的方式。不同于集群，工作在桥接模式下的节点之间不会复制主题树和路由表。多数用于将重要主题和设备的数据在复数 Broker 间打通，此特性在云边协同和多活架构场景里都有广泛使用。
 
 ![MQTT 桥接](https://static.emqx.net/images/56831bea36c514268a2360bd47f43d1f.png)
 
@@ -109,8 +109,8 @@ bridge.mqtt.parallel=2
 
 我们通过在 NanoMQ 的应用层添加了一个专门用途的特殊 Context 来完成桥接工作，并为 Broker 的每个 Context 增加了转为桥接使用的 AIO，通过这个 AIO 完成内部的消息在 Broker 和桥接客户端之间的共享。如此做虽然增加了少许启动内存，但既不影响 NanoMQ 原来的高并发低延时吞吐能力，又能够保证桥接客户端和连接能够和普通 MQTT 消息一样共享 CPU 资源调度。
 
-我们推荐在边缘端使用 NanoMQ 作为边缘 MQTT Broker 负责消息汇聚后桥接至云端的 EMQ X。
+我们推荐在边缘端使用 NanoMQ 作为边缘 MQTT Broker 负责消息汇聚后桥接至云端的 EMQX。
 
 ![NanoMQ.png](https://static.emqx.net/images/4c2eb846529d49339b79dc0911d59798.png)
 
-NanoMQ 桥接至 EMQ X 的配置如上一章节所述。EMQ X 桥接至 NanoMQ 的配置可参考 [https://docs.emqx.io/en/broker/v4.3/bridge/bridge-mqtt.html#mqtt-bridge](https://docs.emqx.io/en/broker/v4.3/bridge/bridge-mqtt.html#mqtt-bridge)
+NanoMQ 桥接至 EMQX 的配置如上一章节所述。EMQX 桥接至 NanoMQ 的配置可参考 [https://docs.emqx.io/en/broker/v4.3/bridge/bridge-mqtt.html#mqtt-bridge](https://docs.emqx.io/en/broker/v4.3/bridge/bridge-mqtt.html#mqtt-bridge)

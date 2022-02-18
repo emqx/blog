@@ -8,7 +8,7 @@
 
 在使用 MQTT X v1.7.0 对 MQTT 5.0 的特性进行测试之前，我们首先需要准备支持 MQTT 5.0 的 [MQTT Broker](https://www.emqx.io/zh)。
 
-本文将使用由 [EMQ X Cloud](https://www.emqx.com/zh/cloud) 提供的免费在线 MQTT 5.0 服务器配合 MQTT X 客户端进行测试。作为一款全托管的云原生 MQTT 5.0 消息服务，EMQ X Cloud 可以在数分钟内快速创建一个 MQTT 服务，并且完整支持 MQTT 5.0 协议，也是全球首个全托管的 MQTT 5.0 公有云服务。
+本文将使用由 [EMQX Cloud](https://www.emqx.com/zh/cloud) 提供的免费在线 MQTT 5.0 服务器配合 MQTT X 客户端进行测试。作为一款全托管的云原生 MQTT 5.0 消息服务，EMQX Cloud 可以在数分钟内快速创建一个 MQTT 服务，并且完整支持 MQTT 5.0 协议，也是全球首个全托管的 MQTT 5.0 公有云服务。
 
 开始 30 天免费试用：[https://www.emqx.com/zh/cloud](https://www.emqx.com/zh/cloud) 
 
@@ -124,6 +124,6 @@ Retain Handling 这一选项用来指定订阅建立时服务端是否向客户�
 
 ## 结语
 
-通过本文，相信大家对 MQTT X v1.7.0 的功能使用有了更多了解。MQTT X 与 EMQ X 配合使用，可以帮助您充分掌握 MQTT 5.0 协议，并在实际项目中将其特性更好地加以应用。
+通过本文，相信大家对 MQTT X v1.7.0 的功能使用有了更多了解。MQTT X 与 EMQX 配合使用，可以帮助您充分掌握 MQTT 5.0 协议，并在实际项目中将其特性更好地加以应用。
 
 后续我们还会完善 MQTT X 对类似主题别名、请求响应和订阅标识符等配置的支持能力，敬请期待。

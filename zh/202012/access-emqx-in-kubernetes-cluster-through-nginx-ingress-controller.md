@@ -8,13 +8,13 @@ Ingress 为服务提供了供外部访问的 URL，负载均衡流量，TLS/SSL 
 
 为了让 Ingress 资源工作，集群必须有一个正在运行的 Ingress 控制器。 [NGINX Ingress Controller](https://github.com/kubernetes/ingress-nginx)  是由 Kubernetes 提供支持和维护的一个控制器。
 
-本文主要介绍如何通过 NGINX Ingress Controller 来访问 Kubernetes 集群中的 EMQ X。
+本文主要介绍如何通过 NGINX Ingress Controller 来访问 Kubernetes 集群中的 EMQX。
 
 ## 准备
 
 开始之前，请确保您已经搭建好了一个可用的 Kubernetes 集群，本文示例是基于阿里云标准版托管集群。
 
-## 安装 EMQ X 
+## 安装 EMQX 
 
 参考 [emqx charts](https://github.com/emqx/emqx-rel/tree/master/deploy/charts/emqx) ，使用 Helm 进行安装
 
@@ -190,6 +190,6 @@ NAME               TYPE        CLUSTER-IP     EXTERNAL-IP   PORT(S)             
 nginx-ingress-lb   ClusterIP   172.21.11.90   <none>        80:30639/TCP,443:30396/TCP,1883:30657/TCP   13m
 ```
 
-我们便可以通过 `1883` 端口连接到 EMQ X 服务了。
+我们便可以通过 `1883` 端口连接到 EMQX 服务了。
 
 ![mqtt.png](https://static.emqx.net/images/869cb25e78925065dfab7bc3d9616858.png)

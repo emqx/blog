@@ -1,6 +1,6 @@
 Before reading this guide, we assume that you have known simple [MQTT](https://www.emqx.com/en/mqtt) and [MQTT broker](https://www.emqx.com/en/products/emqx).
 
-EMQ X Broker starts supporting the function rate limit from version V3, including the limit on **the PUBLISH packet receiving rate** and **the TCP data package receiving rate**. This article will introduce the use and configuration of this function in detail. 
+EMQX Broker starts supporting the function rate limit from version V3, including the limit on **the PUBLISH packet receiving rate** and **the TCP data package receiving rate**. This article will introduce the use and configuration of this function in detail. 
 
 
 
@@ -53,9 +53,9 @@ All in all, it can be simply understood as `rate` is the average request rate an
 
 
 
-## The implementation of EMQ X rate limit
+## The implementation of EMQX rate limit
 
-Based on the *token bucket* algorithm, EMQ X's implementation logic for rate limit is as follows:
+Based on the *token bucket* algorithm, EMQX's implementation logic for rate limit is as follows:
 
 ![画板1232x.jpg](https://static.emqx.net/images/874ae38a1c06a8919d2109d148adf177.jpg)
 
@@ -82,7 +82,7 @@ The above configuration means:
 - The average rate limit is 1024 byte/s.
 - Bucket size is 1000KB. If the total length of this 100 TCP packets is greater than 1000KB, the rate limit will be triggered.
 
-Therefore, users need to set `<Burst>` according to the size of the real packet. EMQ X highly recommends that configure it as `(max_packet_size * active_n) / 2` to prevent from block.
+Therefore, users need to set `<Burst>` according to the size of the real packet. EMQX highly recommends that configure it as `(max_packet_size * active_n) / 2` to prevent from block.
 
 ```properties
 listener.tcp.external.active_n = 100

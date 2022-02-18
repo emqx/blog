@@ -17,15 +17,15 @@ If the message expiration interval is not set for A PUBLISH packet, the applicat
 
 If the message expiration interval is set for A PUBLISH packet, the messages have expired, and the server has not started delivering the message to the matching subscribers, the server must delete the message.
 
-## Retained messages of the EMQ X
+## Retained messages of the EMQX
 
-The message retention function of [EMQ X MQTT Broker](https://www.emqx.com/en) is implemented by the `emqx_retainer` plugin, which is enabled by default. By modifying the configuration of the` emqx_retainer` plugin, you can adjust the EMQ X Broker's retention message Location, restrict the number of retained messages and maximum payload length, and adjust the expiration time of retained messages.
+The message retention function of [EMQX MQTT Broker](https://www.emqx.com/en) is implemented by the `emqx_retainer` plugin, which is enabled by default. By modifying the configuration of the` emqx_retainer` plugin, you can adjust the EMQX Broker's retention message Location, restrict the number of retained messages and maximum payload length, and adjust the expiration time of retained messages.
 
 `emqx_retainer` is enabled by default，and configuration path of the plugin is `etc/plugins/emqx_retainer.conf`
 
 + retainer.storage_type
 
-  In terms of storage location of retained messages, EMQ X Broker can choose to store retained messages only in memory, only in hard disk, or both in memory and hard disk, which can be flexibly determined by the user's business characteristics.
+  In terms of storage location of retained messages, EMQX Broker can choose to store retained messages only in memory, only in hard disk, or both in memory and hard disk, which can be flexibly determined by the user's business characteristics.
 
   For example, users who want to collect meter readings may decide to use QoS Level 1 messages because it is unacceptable for them if data is lost during transmission on the network. However, they may think the data of client and server can be stored in memory (volatile memory ). That is because the power supply system is very reliable, there is not much risk of data loss.
 
@@ -33,14 +33,14 @@ The message retention function of [EMQ X MQTT Broker](https://www.emqx.com/en) i
 
 + retainer.max_retained_messages、retainer.max_payload_size
 
-  `retainer.max_retained_messages` specifies the maximum number of retained messages that EMQ X Broker can store. 0 means no limit. When the number of retained messages exceeds the maximum limit, existing retained messages can be replaced, but retained messages cannot be stored for new topics.
+  `retainer.max_retained_messages` specifies the maximum number of retained messages that EMQX Broker can store. 0 means no limit. When the number of retained messages exceeds the maximum limit, existing retained messages can be replaced, but retained messages cannot be stored for new topics.
 
-  `retainer.max_payload_size` specifies the maximum Payload value of retained messages that EMQ X Broker can receive. After the payload size exceeds the maximum value, the EMQ X message server will treat the received retained message as a normal message and will not store this message anymore.
+  `retainer.max_payload_size` specifies the maximum Payload value of retained messages that EMQX Broker can receive. After the payload size exceeds the maximum value, the EMQX message server will treat the received retained message as a normal message and will not store this message anymore.
 
-  These two configurations set an upper limit for retained messages that EMQ X Broker can receive and store, which ensures that EMQ X Broker does not occupy excessive resources to store and process retained messages.
+  These two configurations set an upper limit for retained messages that EMQX Broker can receive and store, which ensures that EMQX Broker does not occupy excessive resources to store and process retained messages.
 
 + retainer.expiry_interval
 
   For expiration time of retained messages, 0 means never expired. If the message expiration interval is set in the PUBLISH packet, it will be taken as the standard.
 
-  When the retained message expires, EMQ X Broker deletes the message.
+  When the retained message expires, EMQX Broker deletes the message.

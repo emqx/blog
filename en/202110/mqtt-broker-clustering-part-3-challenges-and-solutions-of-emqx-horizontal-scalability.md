@@ -1,11 +1,11 @@
-In this blog post, we will introduce some of the improvements of the MQTT broker cluster scalability. We will mostly focus on the database engine that EMQ X uses internally and how we improved it in EMQ X 5.0.  
+In this blog post, we will introduce some of the improvements of the MQTT broker cluster scalability. We will mostly focus on the database engine that EMQX uses internally and how we improved it in EMQX 5.0.  
 
-Before we start, you should know how data is replicated in the EMQ X cluster: [EMQ X Broker](https://www.emqx.io) stores the runtime information about the topics and clients in [Mnesia](http://erlang.org/doc/man/mnesia.html) database, which helps replicate this data across the cluster.
+Before we start, you should know how data is replicated in the EMQX cluster: [EMQX Broker](https://www.emqx.io) stores the runtime information about the topics and clients in [Mnesia](http://erlang.org/doc/man/mnesia.html) database, which helps replicate this data across the cluster.
 
 
 ## What is Mnesia?
 
-Let's discuss in more detail what Mnesia is, and how it works. Mnesia is an open-source database management system developed by Ericsson corporation as part of [Open Telecom Platform](https://en.wikipedia.org/wiki/Open_Telecom_Platform). Originally, it was intended to handle configuration and runtime data in the ISP-grade telecom switches. Up to version 4.3, EMQ X used it to store all kinds of runtime data, such as topics, routes, ACL rules, alarms and much more. 
+Let's discuss in more detail what Mnesia is, and how it works. Mnesia is an open-source database management system developed by Ericsson corporation as part of [Open Telecom Platform](https://en.wikipedia.org/wiki/Open_Telecom_Platform). Originally, it was intended to handle configuration and runtime data in the ISP-grade telecom switches. Up to version 4.3, EMQX used it to store all kinds of runtime data, such as topics, routes, ACL rules, alarms and much more. 
 
 You are probably familiar with databases such as MySQL, Postgres, MongoDB, and in-memory stores like Redis and Memcached. Mnesia, on the other hand, remains relatively obscure. Nonetheless, it is unique in many ways, partly because it combines a lot of the features of the above products into a single neat application.
 
@@ -15,19 +15,19 @@ We'll start with a rather academic definition: Mnesia is an embedded, distribute
 
 Let's start with the "embedded" part. The most widely used databases like MySQL and Postgres use a client-server model: the database runs in a separate process, oftentimes on a dedicated server, and the business applications interact with it by sending requests over the network or a UNIX domain socket and waiting for replies. This model is convenient in many regards, because it allows you to separate the business logic from the storage and manage them separately. However, it also has some downsides: interacting with the remote process inevitably adds latency to each request.  
 
-In contrast, embedded databases run in the same process as the business application. One notable example of an embedded database is SQLite. Mnesia also falls into this category: it runs in the same process as the rest of the EMQ X applications. Reading data from a Mnesia table can be as fast as reading a local variable, so we can read from the database in hot spots without hurting performance.
+In contrast, embedded databases run in the same process as the business application. One notable example of an embedded database is SQLite. Mnesia also falls into this category: it runs in the same process as the rest of the EMQX applications. Reading data from a Mnesia table can be as fast as reading a local variable, so we can read from the database in hot spots without hurting performance.
 
 ### Distributed
 
 Previously we mentioned that Mnesia is a distributed database. It means the tables are replicated across different physical locations by the network. The type of distributed database where nodes don't share any physical resources, like RAM or disk, and coordination is done on the application level is called shared-nothing architecture (SN). This approach is often preferred because it doesn't require any specialized hardware and can scale horizontally. 
 
-Mnesia application, running alongside EMQ X, helps to replicate the table updates across all nodes in the cluster over the Erlang distribution protocol. It means the business applications can read the updated data locally. It also helps with the fault-tolerance: the data is safe, as long as at least one node in the cluster is alive.  EMQ X relies on this feature to replicate the routing information across the cluster.  
+Mnesia application, running alongside EMQX, helps to replicate the table updates across all nodes in the cluster over the Erlang distribution protocol. It means the business applications can read the updated data locally. It also helps with the fault-tolerance: the data is safe, as long as at least one node in the cluster is alive.  EMQX relies on this feature to replicate the routing information across the cluster.  
 
 ### Transactional
 
 Mnesia supports [ACID](https://en.wikipedia.org/wiki/ACID) transactions, which is a rather unique feature for an embedded database. It means multiple read and update operations can be grouped together. A Mnesia transaction is atomic (it must either be complete in its entirety or have no effect whatsoever), consistent (although the guarantees are laxer than in Postgres, for example), isolated (it does not affect other transactions) and durable. All these guarantees are preserved across the entire cluster.  
 
-EMQ X uses Mnesia transactions in the places where data consistency is critical.  
+EMQX uses Mnesia transactions in the places where data consistency is critical.  
 
 ### NoSQL 
 
@@ -44,7 +44,7 @@ In terms of [CAP theorem](https://en.wikipedia.org/wiki/CAP_theorem) (Consistenc
 
 ### Challenges  
 
-As we discussed above, the Mnesia database has a rather unusual set of features that we make use of in EMQ X. Now it's time to talk about the downsides, and why we chose to invest in improving it.  
+As we discussed above, the Mnesia database has a rather unusual set of features that we make use of in EMQX. Now it's time to talk about the downsides, and why we chose to invest in improving it.  
 
 Although Mnesia is hardware-agnostic, it was initially developed with a particular cluster architecture in mind: a collection of servers, interconnected by a fast, low-latency local area network.
 
@@ -76,11 +76,11 @@ This cluster topology addresses two problems:
 - Horizontal scalability 
 - It enables cluster autoscaling  
 
-Since replicant nodes don't participate in writes, transaction latency doesn't suffer when more replicants are added to the cluster. This allows to create larger EMQ X clusters.
+Since replicant nodes don't participate in writes, transaction latency doesn't suffer when more replicants are added to the cluster. This allows to create larger EMQX clusters.
 
 Also, replicant nodes are designed to be ephemeral. Adding or removing them won't change the data redundancy, so they can be placed in an autoscaling group, thus enabling better DevOps practices. 
 
-In the next post, we will discuss in more detail how to configure EMQ X to make full use of Mria. 
+In the next post, we will discuss in more detail how to configure EMQX to make full use of Mria. 
 
 
 ## Other articles in this series

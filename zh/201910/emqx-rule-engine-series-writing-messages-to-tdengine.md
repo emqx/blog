@@ -10,13 +10,13 @@ TDEngine 提供社区版、企业版和云服务版，安装/使用教程详见 
 
 ## 场景介绍
 
-本文以通过 MQTT 协议接入 EMQ X 的智能门锁为例进行说明。
+本文以通过 MQTT 协议接入 EMQX 的智能门锁为例进行说明。
 
 智能门锁已经成为了智能家居的重点关注产品，为了保证用户更安全的开锁体验，智能门锁通常可以实现指纹开锁、密码开锁、IC卡开锁、钥匙开锁、远程开锁等功能。智能门锁每个业务环节都涉及到操作敏感指令和状态数据的发送、传输，这些数据在应当存储起来以备后续审计使用。
 
 ### 采集流程
 
-智能门锁下发指令与上报数据通过 MQTT 协议经 EMQ X 传输，可选在 EMQ X 上使用规则引擎筛选或设置消费客户端处理，将满足条件的数据写入 TDEngine 数据平台，整个数据流转流程如下：
+智能门锁下发指令与上报数据通过 MQTT 协议经 EMQX 传输，可选在 EMQX 上使用规则引擎筛选或设置消费客户端处理，将满足条件的数据写入 TDEngine 数据平台，整个数据流转流程如下：
 
 
 
@@ -107,10 +107,10 @@ insert into v_51dc0c50f55d11e9a4fec59e26b058d5 values(
 
 ## 数据写入方式
 
-目前 EMQ X 消息数据直接写入 TDEngine 的功能还在规划中，但得益于 TDEngine 提供了诸多连接器，我们选用以下两种方式完成数据写入：
+目前 EMQX 消息数据直接写入 TDEngine 的功能还在规划中，但得益于 TDEngine 提供了诸多连接器，我们选用以下两种方式完成数据写入：
 
 - 使用 TDEngine 的 [RESTful Connector](https://www.taosdata.com/cn/documentation/connector/#RESTful-Connector)：通过 REST API 调用，将数据拼接为 SQL 语句发送到 TDEngine 执行写入，规则引擎内置表达式与函数可以预处理数据；
-- 通过 TDEngine 提供的客户端库/连接器，编写代码通过订阅/消费的方式获取 EMQ X 消息，处理后转发写入到 TDEngine 中。
+- 通过 TDEngine 提供的客户端库/连接器，编写代码通过订阅/消费的方式获取 EMQX 消息，处理后转发写入到 TDEngine 中。
 
 
 
@@ -118,7 +118,7 @@ insert into v_51dc0c50f55d11e9a4fec59e26b058d5 values(
 
 ### 资源准备
 
-EMQ X Dashboard 中点击 **规则** 主菜单，在 **资源** 页面新建一个 WebHook 资源，用于向 TDEngine RESTful Connector 发送数据，新增请求头：
+EMQX Dashboard 中点击 **规则** 主菜单，在 **资源** 页面新建一个 WebHook 资源，用于向 TDEngine RESTful Connector 发送数据，新增请求头：
 
 - Authorization：值为 TDEngine 请求 TOKEN 用于连接认证，为 `{username}:{password}` 经过 Base64 编码之后的字符串。
 
@@ -208,7 +208,7 @@ insert into db.v_${p.id} values(
 
 点击 **创建** 完成规则的创建，智能门锁上报数据时数据将写入到 DBEngine，整个工作和业务流程如下：
 
-- 智能门锁上报数据至 EMQ X
+- 智能门锁上报数据至 EMQX
 - `message.publish` 事件触发规则引擎 ，开始按照条件 SQL 中的 `where`  条件匹配 `topic` 和 `payload` 数据字段
 - 规则命中后触发响应动作列表，按照响应动作中的消息内容模板拼接出该动作所需请求参数，在这个规则中请求参数是一个 SQL 语句，包含有智能门锁的上报数据信息
 - 按照动作类型和使用的资源发起请求， 调用 RESTful API 将指令发送到 TDEngine 执行，完成数据写入。
@@ -219,7 +219,7 @@ insert into db.v_${p.id} values(
 
 ## 使用 TDEngine SDK 写入数据
 
-TDEngine 提供多种语言平台适用的 SDK，程序可以通过订阅 [MQTT 主题](https://www.emqx.com/zh/blog/advanced-features-of-mqtt-topics)或消费消息中间件数据获取智能门锁上报到 EMQ X 的数据，随后将数据拼接成写入 SQL 最终写入到 TDEngine 中。
+TDEngine 提供多种语言平台适用的 SDK，程序可以通过订阅 [MQTT 主题](https://www.emqx.com/zh/blog/advanced-features-of-mqtt-topics)或消费消息中间件数据获取智能门锁上报到 EMQX 的数据，随后将数据拼接成写入 SQL 最终写入到 TDEngine 中。
 
 本文使用订阅 MQTT 主题的方式获取智能门锁上报数据。考虑到消息量可能增长到单个订阅客户端无法承受的数据量，我们使用 **共享订阅** 的方式来消费数据。
 
@@ -313,7 +313,7 @@ for (let i = 0; i < 10; i++) {
 
 ## 测试
 
-通过 EMQ X Dashboard 内置的 MQTT 客户端（WebSocket）可以快速模拟测试规则可用性。打开 **工具 -> WebSocket** 页面，输入按照智能门锁连接信息建立连接，在 **发布** 功能里面输入上报主题、上报数据点击发布进行模拟测试：
+通过 EMQX Dashboard 内置的 MQTT 客户端（WebSocket）可以快速模拟测试规则可用性。打开 **工具 -> WebSocket** 页面，输入按照智能门锁连接信息建立连接，在 **发布** 功能里面输入上报主题、上报数据点击发布进行模拟测试：
 
 - 发布主题：`lock/${id}/control_receipt`
 
@@ -371,4 +371,4 @@ Query OK, 1 row(s) in set (0.000612s)
 
 
 
-至此，写入 EMQ X 数据到 TDEngine 的整个功能已开发/配置完成。
+至此，写入 EMQX 数据到 TDEngine 的整个功能已开发/配置完成。

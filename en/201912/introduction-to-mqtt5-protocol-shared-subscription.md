@@ -26,7 +26,7 @@ It should be noted that if the server is publishing a QoS 2 message to its selec
 
 ### Sharing strategy
 
-Although shared subscriptions allow subscribers to consume messages in a load-balanced manner, the MQTT protocol does not specify what load-balancing strategy the server should use. For reference, EMQ X provides four strategies  for users to choose: random, round_robin, sticky, and hash.
+Although shared subscriptions allow subscribers to consume messages in a load-balanced manner, the MQTT protocol does not specify what load-balancing strategy the server should use. For reference, EMQX provides four strategies  for users to choose: random, round_robin, sticky, and hash.
 
 - random: randomly select one in all shared subscription sessions to publish messages 
 - round_robin: select in turn according to subscription order

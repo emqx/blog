@@ -1,10 +1,10 @@
-## Introduction to EMQ X Data Persistence
+## Introduction to EMQX Data Persistence
 
 The main usage scenarios of data persistence include recording the client's online and offline status, subscribing topic information, message content and operations of sending message receipt after the message arrives to various databases such as Redis, MySQL, PostgreSQL, directing, Cassandra, AWS DynamoDB, which helps the external service query quickly or retaining the current running status in the service outage/client abnormal offline period, and restoring the previous status when the connection is restored. Persistence can also be used for the client proxy subscription. When the device client goes online, the persistence module directly loads the preset topic from the database and completes the proxy subscription, reduces the complexity of system design and reduces the communication cost of client subscription.
 
 Users can also implement similar functions by subscribing to related topics. However, these persistent supports built into the enterprise version are more efficient and reliable, which greatly reduce the developer's workload and improves system stability.
 
-> Data persistence is an important  EMQ X function and only supported in the Enterprise Version.
+> Data persistence is an important  EMQX function and only supported in the Enterprise Version.
 
 
 
@@ -60,9 +60,9 @@ Readers can refer to Redis official [Quick Start](https://redis.io/topics/quicks
 
 
 
-### Configure EMQ X Enterprise server
+### Configure EMQX Enterprise server
 
-In terms of the [EMQ X Enterprise](https://www.emqx.com/en/products/emqx) installed via RPM, the Redis-related configuration files are located in `/etc/emqx/plugins/emqx_backend_redis.conf`. If only test Redis persistence function, most configurations do not need to be changed. The only place that needs to be changed is the Redis server address: If the Redis installed by the reader is not on the same server as EMQ X, please specify the correct Redis server address and port. As shown in the  following:
+In terms of the [EMQX Enterprise](https://www.emqx.com/en/products/emqx) installed via RPM, the Redis-related configuration files are located in `/etc/emqx/plugins/emqx_backend_redis.conf`. If only test Redis persistence function, most configurations do not need to be changed. The only place that needs to be changed is the Redis server address: If the Redis installed by the reader is not on the same server as EMQX, please specify the correct Redis server address and port. As shown in the  following:
 
 ```bash
 ## Redis Server 127.0.0.1:6379, Redis Sentinel: 127.0.0.1:26379
@@ -81,7 +81,7 @@ emqx_ctl plugins load emqx_backend_redis
 
 When the client is online or offline, update the online status, online or offline time, and update the node client list to the Redis database.
 
-Although [EMQ X](https://www.emqx.com/en) itself provides the device online status API, it is more efficient to obtain the record directly from the database than to call the EMQ X API in the scenarios that the client online status and online/offline time need to be obtained frequently.
+Although [EMQX](https://www.emqx.com/en) itself provides the device online status API, it is more efficient to obtain the record directly from the database than to call the EMQX API in the scenarios that the client online status and online/offline time need to be obtained frequently.
 
 
 ### Configuration item
@@ -98,7 +98,7 @@ backend.redis.hook.client.disconnected.1 = {"action": {"function": "on_client_di
 
 ### Example
 
-Open  `http://127.0.0.1:18083` EMQ X management console from the browser, and create a new client connection in **Tools** -> **Websocket**, specifying clientid as sub_client:
+Open  `http://127.0.0.1:18083` EMQX management console from the browser, and create a new client connection in **Tools** -> **Websocket**, specifying clientid as sub_client:
 
 ![31.png](https://static.emqx.net/images/26b00b949463fe0c824c70342f90d04a.png)
 
@@ -188,7 +188,7 @@ When the `sub_client` device goes online, it needs to subscribe the two QoS 1 to
 (integer) 0
 ```
 
-2. In the EMQ X management console **websocket** page, create a new client connection by using the clientid `sub_client`  and switch to the **subscription** page. It can be seen that the current client automatically subscribes the two QoS 1 topics (`sub_client/upstream` and `sub_client/downlink`):
+2. In the EMQX management console **websocket** page, create a new client connection by using the clientid `sub_client`  and switch to the **subscription** page. It can be seen that the current client automatically subscribes the two QoS 1 topics (`sub_client/upstream` and `sub_client/downlink`):
 
 ![111111.png](https://static.emqx.net/images/f1c77641b0ed3cd43c20173002351bc6.png)
 
@@ -216,13 +216,13 @@ backend.redis.hook.message.publish.1 = {"topic": "#", "action": {"function": "on
 
 ### Example
 
-In the EMQ X management console **WebSocket** page, use clientid `sub_client` to establish the connection and publish multiple messages to the topic `upstream_topic`. For each message, EMQ X will persists the two records(the message list and the message details).
+In the EMQX management console **WebSocket** page, use clientid `sub_client` to establish the connection and publish multiple messages to the topic `upstream_topic`. For each message, EMQX will persists the two records(the message list and the message details).
 
 
 
 ### Message list
 
-EMQ X persists the message list as the message id to the `mqtt:msg:{topic}` Redis collection:
+EMQX persists the message list as the message id to the `mqtt:msg:{topic}` Redis collection:
 
 ```bash
 ## Obtain all message id in the upstream_topic topic collection
@@ -292,7 +292,7 @@ The MQTT offline message need to meet the following conditions:
 2. Subscribe to QoS > 0
 3. Publish QoS > 0
 
-Establish a connection in the EMQ X management console with the following configuration:
+Establish a connection in the EMQX management console with the following configuration:
 
 ![WX20200515175900.png](https://static.emqx.net/images/9cfc2151a8641d0d2697ad0baef2c57b.png)
 
@@ -315,7 +315,7 @@ backend.redis.hook.message.publish.3     = {"topic": "#", "action": {"function":
 
 ### Message list
 
-EMQ X persists the message list as the message id to `mqtt:retain:{topic}` Redis Hash:
+EMQX persists the message list as the message id to `mqtt:retain:{topic}` Redis Hash:
 
 ```bash
 ## Obtain all the message id in the upstream_topic topic collection

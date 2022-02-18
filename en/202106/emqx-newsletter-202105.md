@@ -1,6 +1,6 @@
 ## v4.3 released!
 
-In May, we were so happy to announce the final release of EMQ X broker v4.3. The great feedback received from the community proved the worth of ours hard work. Check out the[ release note ](https://github.com/emqx/emqx/discussions/4763)for more details.
+In May, we were so happy to announce the final release of EMQX broker v4.3. The great feedback received from the community proved the worth of ours hard work. Check out the[ release note ](https://github.com/emqx/emqx/discussions/4763)for more details.
 
 Although a lot of changes originally planned for v5 have been pushed earlier to v4.3, the greater remaining work for v5 is just getting started, and everybody is so pumped to get started.
 
@@ -35,7 +35,7 @@ As we previously wrote in the newsletters, some of the team members have started
 
 ### Infrastructure as code
 
-We are adopting [HOCON](https://github.com/lightbend/config) in v5.0 for two reasons: 1) It is almost a drop-in replacement for the cuttlefish format EMQ X has been using; 2) It is “just JSON”, which is the only sensible format to use when posting requests in http API. 
+We are adopting [HOCON](https://github.com/lightbend/config) in v5.0 for two reasons: 1) It is almost a drop-in replacement for the cuttlefish format EMQX has been using; 2) It is “just JSON”, which is the only sensible format to use when posting requests in http API. 
 
 HOCON will allow us to finally unify the two management interfaces: configuration file, and HTTP-API. (the future CLI will be wrapped around HTTP-API).
 

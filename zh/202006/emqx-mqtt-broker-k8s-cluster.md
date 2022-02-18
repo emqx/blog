@@ -1,21 +1,21 @@
-EMQ X Team 提供了 Helm chart 方便用户在 kubernetes 集群上一键部署 EMQ X [MQTT 服务器](https://www.emqx.com/zh/products/emqx), 这是 EMQ X Team 最推荐的在 kubernetes 或 k3s 集群上部署 EMQ X MQTT 服务器的方法。 本文将使用手写 yaml 文件的方法从零开始部署一个 EMQ X MQTT 服务器的 K8S 集群, 分析部署中的细节与技巧，方便用户在实际部署中灵活使用。
+EMQX Team 提供了 Helm chart 方便用户在 kubernetes 集群上一键部署 EMQX [MQTT 服务器](https://www.emqx.com/zh/products/emqx), 这是 EMQX Team 最推荐的在 kubernetes 或 k3s 集群上部署 EMQX MQTT 服务器的方法。 本文将使用手写 yaml 文件的方法从零开始部署一个 EMQX MQTT 服务器的 K8S 集群, 分析部署中的细节与技巧，方便用户在实际部署中灵活使用。
 
 阅读本文需要用户了解 kubernetes 的基本概念，并有一个可操作的 kubernetes 集群。
 
-## 在 K8S 上部署单个 EMQ X MQTT服务器节点
+## 在 K8S 上部署单个 EMQX MQTT服务器节点
 
-### 使用 Pod 直接部署 EMQ X Broker
+### 使用 Pod 直接部署 EMQX Broker
 
 在Kubernetes中，最小的管理元素不是一个个独立的容器，而是 [Pod](https://kubernetes.io/zh/docs/concepts/workloads/pods/pod-overview/)，Pod 是 Kubernetes 应用程序的基本执行单元，即它是 Kubernetes 对象模型中创建或部署的最小和最简单的单元。Pod 表示在 [集群](https://kubernetes.io/zh/docs/reference/glossary/?all=true#term-cluster) 上运行的进程。
 
-EMQ X Broker 在 [docker hub](https://hub.docker.com/r/emqx/emqx) 上提供了镜像, 因此可以很方便的在单个的 pod 上部署 EMQ X Broker，使用 `kubectl run` 命令创建一个运行着 EMQ X Broker 的 Pod：
+EMQX Broker 在 [docker hub](https://hub.docker.com/r/emqx/emqx) 上提供了镜像, 因此可以很方便的在单个的 pod 上部署 EMQX Broker，使用 `kubectl run` 命令创建一个运行着 EMQX Broker 的 Pod：
 
 ```
 $ kubectl run emqx --image=emqx/emqx:v4.1-rc.1  --generator=run-pod/v1
 pod/emqx created
 ```
 
-查看 EMQ X Broker 的状态：
+查看 EMQX Broker 的状态：
 
 ```
 $ kubectl get pods -o wide
@@ -45,7 +45,7 @@ Pod 并不是被设计成一个持久化的资源，它不会在调度失败，�
 - 扩容和缩容
 - 暂停和继续Deployment
 
-使用 Deployment 部署一个 EMQ X Broker Pod：
+使用 Deployment 部署一个 EMQX Broker Pod：
 
 + 定义 Deployment：
 
@@ -120,21 +120,21 @@ Pod 并不是被设计成一个持久化的资源，它不会在调度失败，�
   emqx-deployment-68fcb4bfd6-2nhh6   1/1     Running   0          59s
   ```
 
-  输出结果表明成功用 Deployment 部署了 EMQ X Broker Pod，即使是此 Pod 被意外终止，Deployment 也会重新创建一个新的 Pod。
+  输出结果表明成功用 Deployment 部署了 EMQX Broker Pod，即使是此 Pod 被意外终止，Deployment 也会重新创建一个新的 Pod。
 
-### 使用 Services 公开 EMQ X Broker Pod 服务
+### 使用 Services 公开 EMQX Broker Pod 服务
 
 Kubernetes [Pods](https://kubernetes.io/docs/concepts/workloads/pods/pod-overview/) 是有生命周期的。他们可以被创建，而且销毁不会再启动。 如果使用 [Deployment](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/) 来运行应用程序，则它可以动态创建和销毁 Pod。
 
 每个 Pod 都有自己的 IP 地址，但是在 Deployment 中，在同一时刻运行的 Pod 集合可能与稍后运行该应用程序的 Pod 集合不同。
 
-这导致了一个问题：如果使用 EMQ X Broker Pod 为 **MQTT 客户端**提供服务，那么客户端应该如何如何找出并跟踪要连接的 IP 地址，以便客户端使用 EMQ X Broker 服务呢？
+这导致了一个问题：如果使用 EMQX Broker Pod 为 **MQTT 客户端**提供服务，那么客户端应该如何如何找出并跟踪要连接的 IP 地址，以便客户端使用 EMQX Broker 服务呢？
 
 答案是：Service
 
 Service 是将运行在一组 [Pods](https://kubernetes.io/docs/concepts/workloads/pods/pod-overview/) 上的应用程序公开为网络服务的抽象方法。
 
-使用 Service 将 EMQ X Broker Pod 公开为网络服务：
+使用 Service 将 EMQX Broker Pod 公开为网络服务：
 
 + 定义 Service：
 
@@ -191,7 +191,7 @@ Service 是将运行在一组 [Pods](https://kubernetes.io/docs/concepts/workloa
   emqx-service   ClusterIP   10.96.54.205   <none>        1883/TCP,8883/TCP,8081/TCP,8083/TCP,8084/TCP,18083/TCP   58s
   ```
 
-+ 使用 Service 提供的 IP 查看 EMQ X Broker 的 API
++ 使用 Service 提供的 IP 查看 EMQX Broker 的 API
 
   ```
   $ curl 10.96.54.205:8081/status
@@ -199,11 +199,11 @@ Service 是将运行在一组 [Pods](https://kubernetes.io/docs/concepts/workloa
   emqx is running
   ```
 
-至此，单个 EMQ X Broker 节点在 kubernetes 上部署完毕，通过 Deployment 管理 EMQ X Broker Pod，通过 Service 将 EMQ X Broker 服务暴露出去。
+至此，单个 EMQX Broker 节点在 kubernetes 上部署完毕，通过 Deployment 管理 EMQX Broker Pod，通过 Service 将 EMQX Broker 服务暴露出去。
 
-## 通过 kubernetes 自动集群 EMQ X MQTT 服务器
+## 通过 kubernetes 自动集群 EMQX MQTT 服务器
 
-上文中通过 Deployment 部署了单个的 EMQ X Broker Pod，通过 Deployment 扩展 Pod 的数量是极为方便的，执行 `kubectl scale deployment ${deployment_name} --replicas ${numer}` 命令即可扩展 Pod 的数量，下面将 EMQ X Broker Pod 扩展为 3 个：
+上文中通过 Deployment 部署了单个的 EMQX Broker Pod，通过 Deployment 扩展 Pod 的数量是极为方便的，执行 `kubectl scale deployment ${deployment_name} --replicas ${numer}` 命令即可扩展 Pod 的数量，下面将 EMQX Broker Pod 扩展为 3 个：
 
 ```
 $ kubectl scale deployment emqx-deployment --replicas 3
@@ -225,11 +225,11 @@ Cluster status: #{running_nodes =>
                   stopped_nodes => []}
 ```
 
-可以看到 EMQ X Broker Pod 的数量被扩展为 3 个，但是每个 Pod 都是独立的，并没有集群，接下来尝试通过 kubernetes 自动集群 EMQ X Broker Pod。
+可以看到 EMQX Broker Pod 的数量被扩展为 3 个，但是每个 Pod 都是独立的，并没有集群，接下来尝试通过 kubernetes 自动集群 EMQX Broker Pod。
 
-### 修改 EMQ X Broker 的配置
+### 修改 EMQX Broker 的配置
 
-查看 EMQ X Broker 文档中关于[自动集群](https://docs.emqx.io/broker/latest/cn/advanced/cluster.html#emqx-service-discovery-kubernetes)的内容，可以看到需要修改 EMQ X Broker 的配置：
+查看 EMQX Broker 文档中关于[自动集群](https://docs.emqx.io/broker/latest/cn/advanced/cluster.html#emqx-service-discovery-kubernetes)的内容，可以看到需要修改 EMQX Broker 的配置：
 
 ```
 cluster.discovery = kubernetes
@@ -239,9 +239,9 @@ cluster.kubernetes.address_type = ip
 cluster.kubernetes.app_name = ekka
 ```
 
-其中 `cluster.kubernetes.apiserver` 为 kubernetes apiserver 的地址，可以通过 `kubectl cluster-info` 命令获取，`cluster.kubernetes.service_name` 为上文中 Service 的 name， `cluster.kubernetes.app_name` 为 EMQ X Broker 的 `node.name` 中 `@` 符号之前的部分，所以还需要将集群中 EMQ X Broker 设置为统一的 `node.name` 的前缀。
+其中 `cluster.kubernetes.apiserver` 为 kubernetes apiserver 的地址，可以通过 `kubectl cluster-info` 命令获取，`cluster.kubernetes.service_name` 为上文中 Service 的 name， `cluster.kubernetes.app_name` 为 EMQX Broker 的 `node.name` 中 `@` 符号之前的部分，所以还需要将集群中 EMQX Broker 设置为统一的 `node.name` 的前缀。
 
-EMQ X Broker 的 docker 镜像提供了通过环境变量修改配置的功能，具体可以查看 [docker hub](https://hub.docker.com/r/emqx/emqx) 或 [Github](https://github.com/emqx/emqx-rel/blob/master/deploy/docker/README.md)。
+EMQX Broker 的 docker 镜像提供了通过环境变量修改配置的功能，具体可以查看 [docker hub](https://hub.docker.com/r/emqx/emqx) 或 [Github](https://github.com/emqx/emqx-rel/blob/master/deploy/docker/README.md)。
 
 + 修改 Deployment 的 yaml 文件，增加环境变量：
 
@@ -312,7 +312,7 @@ EMQ X Broker 的 docker 镜像提供了通过环境变量修改配置的功能�
 
 ### 赋予 Pod 访问 kubernetes apiserver 的权限
 
-上文部署 Deployment 之后，查看 EMQ X Broker 的状态，可以看到 EMQ X Broker 虽然成功启动了，但是依然没有集群成功，查看 EMQ X Broker Pod 的 log：
+上文部署 Deployment 之后，查看 EMQX Broker 的状态，可以看到 EMQX Broker 虽然成功启动了，但是依然没有集群成功，查看 EMQX Broker Pod 的 log：
 
 ```
 $ kubectl get pods
@@ -489,13 +489,13 @@ Pod 因为权限问题在访问 kubernetes apiserver 的时候被拒绝，返回
                     stopped_nodes => ['emqx@192.168.77.92']}
   ```
 
-  输出结果表明 EMQ X Broker 会正确的显示已经停掉的 Pod，并将 Deployment 新建的 Pod 加入集群。
+  输出结果表明 EMQX Broker 会正确的显示已经停掉的 Pod，并将 Deployment 新建的 Pod 加入集群。
 
-至此，EMQ X Broker 在 kubernetes 上成功建立集群。
+至此，EMQX Broker 在 kubernetes 上成功建立集群。
 
-## 持久化 EMQ X Broker 集群
+## 持久化 EMQX Broker 集群
 
-上文中使用的 Deployment 来管理 Pod，但是 Pod 的网络是不停变动的，而且当 Pod 被销毁重建时，储存在 EMQ X Broker 的数据和配置也就随之消失了，这在生产中是不能接受的，接下来尝试把 EMQ X Broker 的集群持久化，即使 Pod 被销毁重建，EMQ X Broker 的数据依然可以保存下来。
+上文中使用的 Deployment 来管理 Pod，但是 Pod 的网络是不停变动的，而且当 Pod 被销毁重建时，储存在 EMQX Broker 的数据和配置也就随之消失了，这在生产中是不能接受的，接下来尝试把 EMQX Broker 的集群持久化，即使 Pod 被销毁重建，EMQX Broker 的数据依然可以保存下来。
 
 ### ConfigMap
 
@@ -505,7 +505,7 @@ ConfigMap 将您的环境配置信息和 [容器镜像](https://kubernetes.io/do
 
 > ConfigMap 并不提供保密或者加密功能。如果你想存储的数据是机密的，请使用 [Secret](https://kubernetes.io/docs/concepts/configuration/secret/) ，或者使用其他第三方工具来保证你的数据的私密性，而不是用 ConfigMap。
 
-接下来使用 ConfigMap 记录 EMQ X Broker 的配置，并将它们以环境变量的方式导入到 Deployment 中。
+接下来使用 ConfigMap 记录 EMQX Broker 的配置，并将它们以环境变量的方式导入到 Deployment 中。
 
 + 定义 Configmap，并部署：
 
@@ -594,7 +594,7 @@ ConfigMap 将您的环境配置信息和 [容器镜像](https://kubernetes.io/do
                     stopped_nodes => []}
   ```
 
-EMQ X Broker 的配置文件已经解耦到 Configmap 中了，如果有需要，可以自由的配置一个或多个 Configmap，并把它们作为环境变量或是文件引入到 Pod 内。
+EMQX Broker 的配置文件已经解耦到 Configmap 中了，如果有需要，可以自由的配置一个或多个 Configmap，并把它们作为环境变量或是文件引入到 Pod 内。
 
 ### StatefulSet
 
@@ -741,14 +741,14 @@ StatefulSet 中每个 Pod 的 DNS 格式为 `statefulSetName-{0..N-1}.serviceNam
 
 + 更新 Configmap：
 
-  StatefulSet 提供了稳定的网络标志，EMQ X Broker 支持使用 hostname 和 dns 规则来代提 IP 实现集群，以 hostname 为例，需要修改 `emqx.conf`：
+  StatefulSet 提供了稳定的网络标志，EMQX Broker 支持使用 hostname 和 dns 规则来代提 IP 实现集群，以 hostname 为例，需要修改 `emqx.conf`：
 
   ```
   cluster.kubernetes.address_type = hostname
   cluster.kubernetes.suffix = "svc.cluster.local"
   ```
 
-  kubernetes 集群中 Pod 的 DNS 规则可以由用户自定义，EMQ X Broker 提供了  `cluster.kubernetes.suffix` 方便用户匹配自定的 DNS 规则，本文使用默认的 DNS 规则：`statefulSetName-{0..N-1}.serviceName.namespace.svc.cluster.local` ，DNS 规则中的 serviceName 为 StatefulSet 使用的 Headless Service，所以还需要将 `cluster.kubernetes.service_name`  修改为 Headless Service Name。 
+  kubernetes 集群中 Pod 的 DNS 规则可以由用户自定义，EMQX Broker 提供了  `cluster.kubernetes.suffix` 方便用户匹配自定的 DNS 规则，本文使用默认的 DNS 规则：`statefulSetName-{0..N-1}.serviceName.namespace.svc.cluster.local` ，DNS 规则中的 serviceName 为 StatefulSet 使用的 Headless Service，所以还需要将 `cluster.kubernetes.service_name`  修改为 Headless Service Name。 
 
   将配置项转为环境变量，需要在 Configmap 中配置：
 
@@ -785,7 +785,7 @@ StatefulSet 中每个 Pod 的 DNS 格式为 `statefulSetName-{0..N-1}.serviceNam
                     stopped_nodes => []}
   ```
 
-  可以看到新的 EMQ X Broker 集群已经成功的建立起来了。
+  可以看到新的 EMQX Broker 集群已经成功的建立起来了。
 
 + 中止一个 Pod：
 
@@ -815,7 +815,7 @@ StatefulSet 中每个 Pod 的 DNS 格式为 `statefulSetName-{0..N-1}.serviceNam
                     stopped_nodes => []}
   ```
 
-  跟预期的一样，StatefulSet 重新调度了一个具有相同网络标志的 Pod，Pod 中的 EMQ X Broker 也成功的加入了集群。
+  跟预期的一样，StatefulSet 重新调度了一个具有相同网络标志的 Pod，Pod 中的 EMQX Broker 也成功的加入了集群。
 
 ## StorageClasses、PersistentVolume 和 PersistentVolumeClaim
 
@@ -825,7 +825,7 @@ PersistentVolumeClaim（PVC）是用户存储的请求。它与 Pod 相似。Pod
 
 StorageClass 为管理员提供了描述存储 "class（类）" 的方法。 不同的 class  可能会映射到不同的服务质量等级或备份策略，或由群集管理员确定的任意策略。 Kubernetes 本身不清楚各种 class  代表的什么。这个概念在其他存储系统中有时被称为“配置文件”。
 
-在部署 EMQ X Broker 的时候，可以预先创建好 PV 或 StorageClass，然后利用 PVC 将 EMQ X Broker 的 `/opt/emqx/data/mnesia` 目录挂载出来，当Pods被重新调度之后，EMQ X 会从 `/opt/emqx/data/mnesia` 目录中获取数据并恢复，从而实现 EMQ X Broker 的持久化。
+在部署 EMQX Broker 的时候，可以预先创建好 PV 或 StorageClass，然后利用 PVC 将 EMQX Broker 的 `/opt/emqx/data/mnesia` 目录挂载出来，当Pods被重新调度之后，EMQX 会从 `/opt/emqx/data/mnesia` 目录中获取数据并恢复，从而实现 EMQX Broker 的持久化。
 
 + 定义 StatefulSet
 
@@ -913,6 +913,6 @@ StorageClass 为管理员提供了描述存储 "class（类）" 的方法。 不
   emqx-data-emqx-statefulset-0   Bound     pvc-ad425e9d-adb5-11e9-80cc-0697b59e8064   1Gi        RWO            gp2            56s
   ```
 
-  输出结果表明该 PVC 的状态为 Bound，PVC 存储已经成功的建立了，当 Pod 被重新调度时，EMQ X Broker 会读取挂载到 PVC 中的数据，从而实现持久化。
+  输出结果表明该 PVC 的状态为 Bound，PVC 存储已经成功的建立了，当 Pod 被重新调度时，EMQX Broker 会读取挂载到 PVC 中的数据，从而实现持久化。
 
-EMQ X Broker 在 kubernetes 上建立持久化的集群就完成了，本文略过了部分细节，部署的过程也是偏向简单的 Demo，用户可以自行阅读 [kubernetes 文档](https://kubernetes.io/zh/docs/home/) 与  EMQ X Team 提供的 [Helm chart 源码](https://github.com/emqx/emqx-rel/tree/master/deploy/charts/emqx) 来继续深入研究，当然也欢迎在 Github 贡献 issue、pull requests 以及 start。
+EMQX Broker 在 kubernetes 上建立持久化的集群就完成了，本文略过了部分细节，部署的过程也是偏向简单的 Demo，用户可以自行阅读 [kubernetes 文档](https://kubernetes.io/zh/docs/home/) 与  EMQX Team 提供的 [Helm chart 源码](https://github.com/emqx/emqx-rel/tree/master/deploy/charts/emqx) 来继续深入研究，当然也欢迎在 Github 贡献 issue、pull requests 以及 start。

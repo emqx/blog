@@ -42,7 +42,7 @@ After the installation, we create a new index.js file in the current directory a
 
 ### Connect to MQTT server
 
-This article will use [Free Public MQTT Server](https://www.emqx.com/en/mqtt/public-mqtt5-broker) provided by EMQ X, which is created based on EMQ X's [MQTT IoT Cloud Platform](https://www.emqx.com/en/cloud). The server access information is as follows:
+This article will use [Free Public MQTT Server](https://www.emqx.com/en/mqtt/public-mqtt5-broker) provided by EMQX, which is created based on EMQX's [MQTT IoT Cloud Platform](https://www.emqx.com/en/cloud). The server access information is as follows:
 
 - Broker: **broker.emqx.io**
 - TCP Port: **1883**

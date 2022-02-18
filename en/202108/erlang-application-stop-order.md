@@ -1,8 +1,8 @@
-An EMQ X troubleshooting case study.
+An EMQX troubleshooting case study.
 
 Key words: emqx, shutdown crash, shutdown order, race condition
 
-[EMQ X](https://github.com/emqx/emqx) is an open-source MQTT broker built on Erlang/OTP which can serve massive amount of TCP/TLS connections. The underlying library for listening and accepting MQTT connections is called [`esockd`](https://github.com/emqx/esockd)
+[EMQX](https://github.com/emqx/emqx) is an open-source MQTT broker built on Erlang/OTP which can serve massive amount of TCP/TLS connections. The underlying library for listening and accepting MQTT connections is called [`esockd`](https://github.com/emqx/esockd)
 
 ## The trouble
 
@@ -28,9 +28,9 @@ The only way to explain it, is that by the time when shutting down connections f
 
 To reason why such shutdown order may happen, we need to take a closer look at the `emqx`and [`esockd`](https://github.com/emqx/esockd) applications.
 
-In EMQ X, `emqx` app depends on `esockd` app, so `esockd` is start prior to `emqx`. Shutdown is, as expected, done in the reversed order: `emqx` is stopped before `esockd`
+In EMQX, `emqx` app depends on `esockd` app, so `esockd` is start prior to `emqx`. Shutdown is, as expected, done in the reversed order: `emqx` is stopped before `esockd`
 
-EMQ X delegates its process supervision to `esockd`, in `emqx_app:stop/1`, it first tries to stop all `esockd` listeners (and supervised connection processes) like this:
+EMQX delegates its process supervision to `esockd`, in `emqx_app:stop/1`, it first tries to stop all `esockd` listeners (and supervised connection processes) like this:
 
 ```erlang
  -spec(stop(State :: term()) -> term()).
@@ -97,7 +97,7 @@ loop_it(Parent, Child, Mod, AppState) ->
           exit(normal);
 ```
 
-Meaning, in EMQ X, `emqx_sup` is stopped before the listeners.
+Meaning, in EMQX, `emqx_sup` is stopped before the listeners.
 
 ## The fix
 

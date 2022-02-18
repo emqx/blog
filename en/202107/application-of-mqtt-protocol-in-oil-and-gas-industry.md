@@ -43,19 +43,19 @@ Take the EMQ cloud-edge data collection solution as an example:
 
 ### Convert various industrial protocols to MQTT to achieve unified access
 
-On the field-station side, by using [Industrial Data Collection Gateway - Neuron](https://www.emqx.com/en/products/neuron), the on-site meter data using Modbus-RTU and Modbus-TCP protocols is converted into highly reliable and lightweight MQTT protocol, and then the real-time data is pushed to the data access platform EMQ X in the plant central computer room through the private network.
+On the field-station side, by using [Industrial Data Collection Gateway - Neuron](https://www.emqx.com/en/products/neuron), the on-site meter data using Modbus-RTU and Modbus-TCP protocols is converted into highly reliable and lightweight MQTT protocol, and then the real-time data is pushed to the data access platform EMQX in the plant central computer room through the private network.
 
 ### Filter and push the data
 
-Some redundant data or data from other systems can be filtered and processed through the lightweight data processing software [eKuiper](https://github.com/lf-edge/ekuiper) deployed on the field-station side to push meaningful data to the data access platform EMQ X in the central computer room of the plant.
+Some redundant data or data from other systems can be filtered and processed through the lightweight data processing software [eKuiper](https://github.com/lf-edge/ekuiper) deployed on the field-station side to push meaningful data to the data access platform EMQX in the central computer room of the plant.
 
 ### Move the collected data to the database in real-time for business applications
 
-The data access platform EMQ X in the central computer room of the plant accesses the real-time data uniformly and stores it in the database of the central computer room. Various business applications can dock with the database to pull relevant business data.
+The data access platform EMQX in the central computer room of the plant accesses the real-time data uniformly and stores it in the database of the central computer room. Various business applications can dock with the database to pull relevant business data.
 
 ### Push alarm information in real-time through MQTT protocol
 
-Data that needs to be processed in real-time, such as production equipment alarms and station access alarms, can be pushed to the alarm processing business system by the data access platform EMQ X through the MQTT protocol to achieve rapid real-time data processing.
+Data that needs to be processed in real-time, such as production equipment alarms and station access alarms, can be pushed to the alarm processing business system by the data access platform EMQX through the MQTT protocol to achieve rapid real-time data processing.
 
 ### Implement real-time monitoring of equipment through MQTT protocol
 
@@ -71,7 +71,7 @@ MQTT protocol has the characteristics of lightweight and high reliable QoS. It c
 
 ### Reduce the cost of hardware and software
 
-The lightweight design of MQTT greatly reduces the hardware requirements from the client to the server. In the EMQ cloud-side data collection solution, the highly available [MQTT broker - EMQ X](https://www.emqx.io) in the central computer room of the plant and the lightweight edge industrial gateway Neuron used in production and business replace the expensive SCADA system and data collection and storage server on the field-station side, which reduces the overall hardware and software costs by more than 50%.
+The lightweight design of MQTT greatly reduces the hardware requirements from the client to the server. In the EMQ cloud-side data collection solution, the highly available [MQTT broker - EMQX](https://www.emqx.io) in the central computer room of the plant and the lightweight edge industrial gateway Neuron used in production and business replace the expensive SCADA system and data collection and storage server on the field-station side, which reduces the overall hardware and software costs by more than 50%.
 
 ### Save labor cost
 

@@ -1,8 +1,8 @@
 智能家居系统利用大量的物联网设备（如温湿度传感器、安防系统、照明系统）实时监控家庭内部状态，完成智能调节、人机互动。随着物联网技术的发展，其应用范围、数据规模、市场份额将进一步扩大，智能家居设备之间的智能联动也将变的越来越困难，同时由于家庭数据的隐私性，用户数据上传至云端处理还有一定的安全问题。
 
-为此我们将使用 [Raspberry Pi](https://www.raspberrypi.org) + [EMQ X Edge](https://www.emqx.com/zh/products/emqx) + [EMQ X Kuiper](https://github.com/lf-edge/ekuiper) 搭建智能家居网关，实现智能家居设备数据的边缘计算处理，减少家庭私密数据外流。
+为此我们将使用 [Raspberry Pi](https://www.raspberrypi.org) + [EMQX Edge](https://www.emqx.com/zh/products/emqx) + [EMQX Kuiper](https://github.com/lf-edge/ekuiper) 搭建智能家居网关，实现智能家居设备数据的边缘计算处理，减少家庭私密数据外流。
 
-本文中我们将用 BH1750FVI 光照强度传感器采集家庭光照强度数据，使用 EMQ X Kuiper 对光照强度数据进行分析和处理，并依据预先定义的数据规则对 LED 灯进行相应的控制。
+本文中我们将用 BH1750FVI 光照强度传感器采集家庭光照强度数据，使用 EMQX Kuiper 对光照强度数据进行分析和处理，并依据预先定义的数据规则对 LED 灯进行相应的控制。
 
 
 
@@ -12,15 +12,15 @@
 
 [树莓派3代B+](https://www.raspberrypi.org/products/raspberry-pi-3-model-b-plus/) 型是一款基于 ARM 的微型计算机主板，以  SD/MicroSD卡进行存储，该主板提供 USB 接口和以太网接口，可以连接键盘、鼠标和网线，该主板具备 PC 的基本功能，同时树莓派集成了 Wi-Fi，蓝牙以及大量 GPIO，是智能家居网关的理想选择。
 
-### EMQ X Edge
+### EMQX Edge
 
 智能家居设备之间通信协议有 **MQTT**， **Wi-Fi**， **蓝牙** 等，其中 [MQTT 协议](https://www.emqx.com/zh/mqtt) 是基于发布/订阅模式的物联网通信协议，它简单易实现、支持 QoS、报文小。在本文中我们将使 MQTT 协议作为智能家居设备之间的通信协议。
 
-由于 Raspberry Pi 内存以及处理能力有限，我们选择由 [EMQ](https://www.emqx.com/zh) 开源的 [EMQ X Edge](https://www.emqx.com/zh/products/emqx) 作为 MQTT broker，EMQ X Edge 是轻量级的物联网边缘计算消息中间件，支持部署在资源受限的物联网边缘硬件。
+由于 Raspberry Pi 内存以及处理能力有限，我们选择由 [EMQ](https://www.emqx.com/zh) 开源的 [EMQX Edge](https://www.emqx.com/zh/products/emqx) 作为 MQTT broker，EMQX Edge 是轻量级的物联网边缘计算消息中间件，支持部署在资源受限的物联网边缘硬件。
 
-### EMQ X Kuiper
+### EMQX Kuiper
 
-智能家居设备之间数据传输格式不同，并且数据存在波动性，我们需要对设备上报的数据进行处理。在本文中我们将使用由 [EMQ](https://www.emqx.com/zh) 开源的  [EMQ X Kuiper](https://github.com/lf-edge/ekuiper) 对智能家居设备数据进行边缘化处理，EMQ X Kuiper 是基于 SQL 的轻量级边缘流式消息处理引擎，可以运行在资源受限的边缘设备上。
+智能家居设备之间数据传输格式不同，并且数据存在波动性，我们需要对设备上报的数据进行处理。在本文中我们将使用由 [EMQ](https://www.emqx.com/zh) 开源的  [EMQX Kuiper](https://github.com/lf-edge/ekuiper) 对智能家居设备数据进行边缘化处理，EMQX Kuiper 是基于 SQL 的轻量级边缘流式消息处理引擎，可以运行在资源受限的边缘设备上。
 
 通过实时分析智能家居设备的各类数据，可以实现对设备的即时状态管理与控制。
 
@@ -54,7 +54,7 @@
 mkdir ~/smart-home-hubs
 ```
 
-### EMQ X Edge 安装与运行
+### EMQX Edge 安装与运行
 
 ```bash
 $ cd ~/smart-home-hubs
@@ -62,11 +62,11 @@ $ cd ~/smart-home-hubs
 $ wget https://www.emqx.com/zh/downloads/edge/v4.1.0/emqx-edge-raspbian8-v4.1.0.zip
 $ unzip emqx-edge-raspbian8-v4.1.0.zip
 $ cd ./emqx
-# 运行 EMQ X Edge
+# 运行 EMQX Edge
 $ ./bin/emqx start
 ```
 
-### EMQ X Kuiper 安装与运行
+### EMQX Kuiper 安装与运行
 
 ```bash
 $ cd ~/smart-home-hubs
@@ -77,7 +77,7 @@ $ mv kuiper-0.4.2-linux-armv7l ./kuiper
 $ cd ./kuiper
 # 创建 rules 目录，用来存放规则文件
 $ mkdir ./rules
-# 运行 EMQ X Kuiper
+# 运行 EMQX Kuiper
 $ ./bin/server
 ```
 
@@ -146,9 +146,9 @@ if __name__ == "__main__":
 
 ```
 
-### 配置 EMQ X Kuiper 流处理规则
+### 配置 EMQX Kuiper 流处理规则
 
-我们将在 EMQ X Kuiper 上创建名为 `smartHomeHubs` 的流，并配置规则对光照强度数据进行实时分析，以实现对 LED 灯的控制。
+我们将在 EMQX Kuiper 上创建名为 `smartHomeHubs` 的流，并配置规则对光照强度数据进行实时分析，以实现对 LED 灯的控制。
 
 本文中我们将计算光照强度平均值，当平均光照强度 **持续 5 秒** 小于 55 时开启 LED（大于 55 时关闭 LED）。
 
@@ -217,7 +217,7 @@ if __name__ == "__main__":
 
 ### LED 灯控制
 
-编写代码连接到 EMQ X Edge，并订阅 **smartHomeHubs/led** 主题。监听订阅的 MQTT 消息内容，当 status 为 **on** 时打开 LED，当 status 为 **off** 时关闭 LED。
+编写代码连接到 EMQX Edge，并订阅 **smartHomeHubs/led** 主题。监听订阅的 MQTT 消息内容，当 status 为 **on** 时打开 LED，当 status 为 **off** 时关闭 LED。
 
 ```python
 # led.py
@@ -296,8 +296,8 @@ if __name__ == "__main__":
 
 ## 总结
 
-至此，我们已成功搭建基于 [**Raspberry Pi**](https://www.raspberrypi.org) + [**EMQ X Edge**](https://www.emqx.com/zh/products/emqx) + [**EMQ X Kuiper**](https://github.com/lf-edge/ekuiper) 的智能家居网关。
+至此，我们已成功搭建基于 [**Raspberry Pi**](https://www.raspberrypi.org) + [**EMQX Edge**](https://www.emqx.com/zh/products/emqx) + [**EMQX Kuiper**](https://github.com/lf-edge/ekuiper) 的智能家居网关。
 
-我们使用 Raspberry Pi 为网关提供丰富的外部通信接口，使用 EMQ X Edge 为网关提供设备之间的通信功能，使用 EMQ X Kuiper 为网关提供设备数据处理以及分析功能。
+我们使用 Raspberry Pi 为网关提供丰富的外部通信接口，使用 EMQX Edge 为网关提供设备之间的通信功能，使用 EMQX Kuiper 为网关提供设备数据处理以及分析功能。
 
 之后，我们使用光照传感器获取光照强度，通过光照强度来控制 LED 的开和关。在整个过程中所有数据都在本地处理和分析，降低了家庭私密数据泄漏的风险。

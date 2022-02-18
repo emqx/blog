@@ -28,7 +28,7 @@ MQTT 5.0 的主要功能优势有：
 
 ## CocoaMQTT 客户端的使用
 
-本文将使用 EMQ 提供的 [免费公共 MQTT 服务器](https://www.emqx.com/zh/mqtt/public-mqtt5-broker) 进行 CocoaMQTT 功能使用介绍，该服务基于 [MQTT 云服务](https://www.emqx.com/zh/cloud) EMQ X Cloud 创建。
+本文将使用 EMQ 提供的 [免费公共 MQTT 服务器](https://www.emqx.com/zh/mqtt/public-mqtt5-broker) 进行 CocoaMQTT 功能使用介绍，该服务基于 [MQTT 云服务](https://www.emqx.com/zh/cloud) EMQX Cloud 创建。
 
 服务器接入信息如下：
 

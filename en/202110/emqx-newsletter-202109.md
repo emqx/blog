@@ -1,10 +1,10 @@
-Early September, a few of us in the team got invited by the guys from Industry 4.0 Solutions to the Company Spotlight online event. Industry 4.0 Solutions is specialised in digitalising physical factory via the use of Big Data, Cloud platform, Artificial Intelligence (AI) and Industrial Internet of Things (IIoT). At the very center of the IIoT solutions, there is the MQTT broker (cluster), and EMQ X is the perfect MQTT broker in this big picture.
+Early September, a few of us in the team got invited by the guys from Industry 4.0 Solutions to the Company Spotlight online event. Industry 4.0 Solutions is specialised in digitalising physical factory via the use of Big Data, Cloud platform, Artificial Intelligence (AI) and Industrial Internet of Things (IIoT). At the very center of the IIoT solutions, there is the MQTT broker (cluster), and EMQX is the perfect MQTT broker in this big picture.
 
-It was a great pleasure to meet the people from the IIoT community. During the 1 hour session we had the chance to answer a lot of the burning questions about EMQ as a company and EMQ X the MQTT messaging broker as the product. Please check it out in this recording: [https://www.youtube.com/watch?v=nP7JAlpyvfo](https://www.youtube.com/watch?v=nP7JAlpyvfo)
+It was a great pleasure to meet the people from the IIoT community. During the 1 hour session we had the chance to answer a lot of the burning questions about EMQ as a company and EMQX the MQTT messaging broker as the product. Please check it out in this recording: [https://www.youtube.com/watch?v=nP7JAlpyvfo](https://www.youtube.com/watch?v=nP7JAlpyvfo)
 
-## EMQ X v5.0-beta.1 is released
+## EMQX v5.0-beta.1 is released
 
-We are excited and proud to announce the first pre-release of EMQ X version 5.0. 
+We are excited and proud to announce the first pre-release of EMQX version 5.0. 
 
 Here is a summary of  the features added:
 
@@ -25,10 +25,10 @@ In beta.2 release, we’ll focus on bringing the dashboard (which is hidden in b
 
 ### Overload protection
 
-When under high load, an “ideal robust system” should automatically start back-pressing to where the load is generated, instead of lowering the quality of service or even crash down. With the overload protection, EMQ X will do better than setting a hard limit on the total number of connections etc to protect itself, getting one step closer to the “ideal robust system”.
+When under high load, an “ideal robust system” should automatically start back-pressing to where the load is generated, instead of lowering the quality of service or even crash down. With the overload protection, EMQX will do better than setting a hard limit on the total number of connections etc to protect itself, getting one step closer to the “ideal robust system”.
 
 ### Plugin drop-in installation
 
-EMQ X is highly extensible, as we wrote in a [blog post](https://www.emqx.com/en/blog/develop-and-deploy-emqx-plugin-for-enterprise-4-3), it is possible for plugins to be installed independently.
+EMQX is highly extensible, as we wrote in a [blog post](https://www.emqx.com/en/blog/develop-and-deploy-emqx-plugin-for-enterprise-4-3), it is possible for plugins to be installed independently.
 
-Starting from 5.0, EMQ X open source users will be able to drop-in install an extension package to upgrade to Enterprise.
+Starting from 5.0, EMQX open source users will be able to drop-in install an extension package to upgrade to Enterprise.

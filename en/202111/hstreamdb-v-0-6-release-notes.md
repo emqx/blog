@@ -54,7 +54,7 @@ The query result is shown in the figure below:
 
 ### Rest API for writing data, and more possibilities for HStreamDB
 
-Now you can use any language to write data to HStreamDB through Rest API. In the future, we plan to implement more Rest APIs to facilitate the secondary development of open source users around HStreamDB. For example, with HStream Rest API combined with the Webhook of the open-source EMQ X, you can realize the rapid integration of EMQ X and HStreamDB.
+Now you can use any language to write data to HStreamDB through Rest API. In the future, we plan to implement more Rest APIs to facilitate the secondary development of open source users around HStreamDB. For example, with HStream Rest API combined with the Webhook of the open-source EMQX, you can realize the rapid integration of EMQX and HStreamDB.
 
 ![HStreamDB Rest API](https://static.emqx.net/images/efe9a264a84a0c302bb9e5ba62c13c47.png)
 

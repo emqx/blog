@@ -24,7 +24,7 @@ MQTT 插件的安装方式与其他 JMeter 第三方插件类似。
 
 **Server name or IP:** 指向被测 MQTT 服务器地址。
 
-**Port number:** 以 [EMQ X](https://www.emqx.io/zh) 为例，默认 TCP 连接的端口是 1883, SSL 连接则是 8883。具体的端口请参照服务器的具体配置。
+**Port number:** 以 [EMQX](https://www.emqx.io/zh) 为例，默认 TCP 连接的端口是 1883, SSL 连接则是 8883。具体的端口请参照服务器的具体配置。
 
 **MQTT version**: 目前支持 MQTT 3.1及3.1.1版本。
 

@@ -1,6 +1,6 @@
-Hello! This is our very first newsletter to share what’s happening in EMQ X open-source team.
+Hello! This is our very first newsletter to share what’s happening in EMQX open-source team.
 
-In January, EMQ open-source work group discussed the plans for 2021. Aiming to improve contribution experience and increase work transparency, in the coming weeks, the open-source work group will define and publish contribution guidelines, as well as a process for proposing major changes to EMQ X.
+In January, EMQ open-source work group discussed the plans for 2021. Aiming to improve contribution experience and increase work transparency, in the coming weeks, the open-source work group will define and publish contribution guidelines, as well as a process for proposing major changes to EMQX.
 We are looking forward to seeing more contributors around the world join our community in 2021!
 
 - Project updates

@@ -57,7 +57,7 @@ dependencies:
 
 ## MQTT 的使用
 
-本文将使用 EMQ 提供的 [免费公共 MQTT 服务器](https://www.emqx.com/zh/mqtt/public-mqtt5-broker)，该服务基于 [MQTT 物联网云平台 - EMQ X Cloud](https://www.emqx.com/zh/cloud) 创建，服务器接入信息如下：
+本文将使用 EMQ 提供的 [免费公共 MQTT 服务器](https://www.emqx.com/zh/mqtt/public-mqtt5-broker)，该服务基于 [MQTT 物联网云平台 - EMQX Cloud](https://www.emqx.com/zh/cloud) 创建，服务器接入信息如下：
 
 - Broker: **broker-cn.emqx.io**
 - TCP Port: **1883**

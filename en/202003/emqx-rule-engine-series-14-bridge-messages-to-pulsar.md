@@ -8,7 +8,7 @@ For the installation and use of Pulsar, please refer to [Pulsar's website](https
 
 ## Scenario introduction
 
-In this scenario, it is required to bridge messages under the EMQ X specified topic that meet the criteria to the Pulsar . To facilitate subsequent analysis and retrieval, the message content needs to be split.
+In this scenario, it is required to bridge messages under the EMQX specified topic that meet the criteria to the Pulsar . To facilitate subsequent analysis and retrieval, the message content needs to be split.
 
  **In this scenario, the information reported by the device is as follows:**
 
@@ -47,13 +47,13 @@ Create `emqx_rule_engine_output` topic:
 
 ### Create resources
 
-Open EMQ X Dashboard, enter the **Resources** page on the left menu, click the **New** button, and enter the Pulsar server information for resource creation.
+Open EMQX Dashboard, enter the **Resources** page on the left menu, click the **New** button, and enter the Pulsar server information for resource creation.
 
 ![WX201907181431432x.png](https://static.emqx.net/images/af365bd26f541a96206563aa2bdb548a.png)
 
 
 
-The network environment of the nodes in the EMQ X cluster may be different from each other. After the resources are successfully created, click the  **Status button**  in the list to view the resource connection status of each node. If the resources on the nodes are not available, please check whether the configuration is correct and the network connectivity is OK, and click the **Reconnect**  button to reconnect manually.
+The network environment of the nodes in the EMQX cluster may be different from each other. After the resources are successfully created, click the  **Status button**  in the list to view the resource connection status of each node. If the resources on the nodes are not available, please check whether the configuration is correct and the network connectivity is OK, and click the **Reconnect**  button to reconnect manually.
 
 ![WX201907181432172x.png](https://static.emqx.net/images/3734b43f894d65884c4bcc6e132b247f.png)
 
@@ -178,7 +178,7 @@ We have successfully created a rule that contains a processing action. The expec
 
 ### Test with Websocket tools in Dashboard
 
-Switch to the **Tools ->  Websocket** page, use any information client to connect to EMQ X. After the connection is successful, send the following information in the **Message**  card:
+Switch to the **Tools ->  Websocket** page, use any information client to connect to EMQX. After the connection is successful, send the following information in the **Message**  card:
 
 - Topic: cmd/state/NXP-058659730253-963945118132721-22
 

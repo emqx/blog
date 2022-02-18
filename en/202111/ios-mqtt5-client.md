@@ -22,7 +22,7 @@ The main functional advantages of MQTT 5.0 are:
 
 ## How to use MQTT in iOS client - CocoaMQTT
 
-This article will use the [Free Public MQTT Broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker) provided by EMQ to introduce the CocoaMQTT function. This service is created based on the [MQTT Cloud service - EMQ X Cloud](https://www.emqx.com/en/cloud).
+This article will use the [Free Public MQTT Broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker) provided by EMQ to introduce the CocoaMQTT function. This service is created based on the [MQTT Cloud service - EMQX Cloud](https://www.emqx.com/en/cloud).
 
 The broker access information is as follows:
 

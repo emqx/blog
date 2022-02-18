@@ -1,4 +1,4 @@
-With the development of IoT, big data, cloud computing and other new-generation information technology, IoT has widely used in various industries and application scenarios, and IoT as a whole shows the trend of device polymorphism, business diversification and application fragmentation. Especially in the IIoT scenario, the type of industrial device is various, design bus and protocols are complex and diverse, business applications are flexible, so how to smoothly implement the industrial equipment on the cloud is a problem to be solved.  **EMQ X series products provide the ability to decouple industrial equipment and applications, construct the data path from the edge to cloud, establish an intelligent, networked and lightweight digital product and service model, and integrate with 5G to support application innovation in the industrial industry.**
+With the development of IoT, big data, cloud computing and other new-generation information technology, IoT has widely used in various industries and application scenarios, and IoT as a whole shows the trend of device polymorphism, business diversification and application fragmentation. Especially in the IIoT scenario, the type of industrial device is various, design bus and protocols are complex and diverse, business applications are flexible, so how to smoothly implement the industrial equipment on the cloud is a problem to be solved.  **EMQX series products provide the ability to decouple industrial equipment and applications, construct the data path from the edge to cloud, establish an intelligent, networked and lightweight digital product and service model, and integrate with 5G to support application innovation in the industrial industry.**
 
 
 
@@ -6,17 +6,17 @@ With the development of IoT, big data, cloud computing and other new-generation 
 
 IIoT is the acronyms of the Industrial Internet of Things, which is the Industrial IoT consisted of hundreds of millions of pieces of the industrial device. Broadly speaking, it refers to the application of instruments, connected sensors, and other equipment to machinery and vehicles in the transportation, energy, and industrial sectors.
 
-With the popularization of [industry 4.0](https://en.wikipedia.org/wiki/Fourth_Industrial_Revolution) concept and the deepening of industrial practice, the traditional centralized control model has transformed into a distributed enhanced control model. At the same time, the advent of the 5G era has accelerated the process of traditional industrial transformation and industrial IoT. To implement the flexible production of personalized and digital products and services, in the process of industrial devices intelligent and networked, the new and old industrial equipment needs to be connected to the internet to implement the business of data collection, remote control and configuration update of industrial equipment. EMQ X series products can provide the entire solution from the industrial gateway to the platform and implement data aggregation of the industrial device and sending these data to the cloud, at the edge end of the plant and industrial site. At the same time, its processing ability for edge computing streaming data can provide cloud industrial device data access, data storage and interfacing with cloud-based configuration and applications for the industrial IoT at the platform end. Also, it can facilitate the rapid development of industrial Internet applications.
+With the popularization of [industry 4.0](https://en.wikipedia.org/wiki/Fourth_Industrial_Revolution) concept and the deepening of industrial practice, the traditional centralized control model has transformed into a distributed enhanced control model. At the same time, the advent of the 5G era has accelerated the process of traditional industrial transformation and industrial IoT. To implement the flexible production of personalized and digital products and services, in the process of industrial devices intelligent and networked, the new and old industrial equipment needs to be connected to the internet to implement the business of data collection, remote control and configuration update of industrial equipment. EMQX series products can provide the entire solution from the industrial gateway to the platform and implement data aggregation of the industrial device and sending these data to the cloud, at the edge end of the plant and industrial site. At the same time, its processing ability for edge computing streaming data can provide cloud industrial device data access, data storage and interfacing with cloud-based configuration and applications for the industrial IoT at the platform end. Also, it can facilitate the rapid development of industrial Internet applications.
 
-We will build a simple IIoT application based on [Modbus](https://en.wikipedia.org/wiki/Modbus) through [EMQ X Neuron](https://www.emqx.com/en/products/neuron) and [EMQ X Broker](https://www.emqx.com/en/products/emqx), and use [MQTT X](https://mqttx.app/) to subscribe/display data.
+We will build a simple IIoT application based on [Modbus](https://en.wikipedia.org/wiki/Modbus) through [EMQX Neuron](https://www.emqx.com/en/products/neuron) and [EMQX Broker](https://www.emqx.com/en/products/emqx), and use [MQTT X](https://mqttx.app/) to subscribe/display data.
 
 
 
-## Introduction to EMQ X Neuron
+## Introduction to EMQX Neuron
 
 EMQ has recently published [an industrial protocol access software Neuron](https://www.emqx.com/en/products/neuron) deployed on the edge gateway. As a bridge between humans and machines, it can convert and reorganize the 0/1 data of TCP/IP protocol to an easy-to-understand JSON format, and use [MQTT protocol](https://www.emqx.com/en/mqtt) to export the data to the cloud. Therefore, it can better handle the interaction between humans and objects.
 
-EMQ X Neuron supports various kinds of industrial protocol, including Modbus, OPC, etc. It can meet most of the industrial access requirements. The detailed protocol list is as follows:
+EMQX Neuron supports various kinds of industrial protocol, including Modbus, OPC, etc. It can meet most of the industrial access requirements. The detailed protocol list is as follows:
 
 | Protocol Name                                                | **Type** | **Status** |
 | ------------------------------------------------------------ | -------- | ---------- |
@@ -72,7 +72,7 @@ EMQ X Neuron supports various kinds of industrial protocol, including Modbus, OP
 
 
 
-## The industrial architecture diagram of EMQ X Neuron and EMQ X Broker
+## The industrial architecture diagram of EMQX Neuron and EMQX Broker
 
 ![Artboard Copy 9备份 4.png](https://static.emqx.net/images/b922ce2ac26dfac4c6baf23567d3e057.png)
 
@@ -82,17 +82,17 @@ EMQ X Neuron supports various kinds of industrial protocol, including Modbus, OP
 | Tool name               | Version | Description                                 | Operating system    |
 | ----------------------- | ------- | ------------------------------------------- | ------------------- |
 | PeakHMI Slave Simulator | /       | Modbus simulator                            | Windows Server 2019 |
-| EMQ X Neuron            | 1.4.6   | Industrial protocol gateway access software | Ubuntu 16.04        |
-| EMQ X Broker            | 4.0.7   | MQTT Broker                                 | Ubuntu 16.04        |
+| EMQX Neuron            | 1.4.6   | Industrial protocol gateway access software | Ubuntu 16.04        |
+| EMQX Broker            | 4.0.7   | MQTT Broker                                 | Ubuntu 16.04        |
 | MQTT X                  | 1.3.2   | MQTT client tool                            | macOS 10.13.4       |
 
 
 
 ## Simulation of industrial scenes test
 
-### Deploy/configure EMQ X Neuron
+### Deploy/configure EMQX Neuron
 
-- First, unpack and install the EMQ X Neuron package.
+- First, unpack and install the EMQX Neuron package.
 
 ```
 tar -xvlf neuron-1.4.2-x86_64.tar.gz 
@@ -101,7 +101,7 @@ sudo ~/bin/installneuron.sh
 ```
 
 
--  Configure the address which connect to the EMQ X Broker in the configuration file, with the username and password as authentication.
+-  Configure the address which connect to the EMQX Broker in the configuration file, with the username and password as authentication.
 
 ```
 cd bin/ 
@@ -109,7 +109,7 @@ cd bin/
 vi neuron.conf  
 ```
 
-Modify the IP/port, username/password information of the EMQ X Broker server in neuron.conf.
+Modify the IP/port, username/password information of the EMQX Broker server in neuron.conf.
 
 ```
 # MQTT server name or IP address
@@ -131,7 +131,7 @@ MQPASSWORD=neuron123
 
 
 
-- Run EMQ X Neuron, the startup is complete when no errors.
+- Run EMQX Neuron, the startup is complete when no errors.
 
 ```
 ./neuronsrt  
@@ -139,7 +139,7 @@ MQPASSWORD=neuron123
 
 
 
-- Log in to the EMQ X Neuron Web interface, access IP:7000, the default username password is admin/0000.
+- Log in to the EMQX Neuron Web interface, access IP:7000, the default username password is admin/0000.
 
 ![neuron 2.png](https://static.emqx.net/images/ede993668c0beb95342872a792ca3c06.png)
 
@@ -167,9 +167,9 @@ Here simulate an alarm point named Err1@@2D7WS_GAS, the point position is 1!1!07
 
 
 
-### Connect the deployed EMQ X Broker
+### Connect the deployed EMQX Broker
 
-The connected EMQ X Neuron gateway can be viewed in the EMQ X Broker interface, where the Client ID is a string of characters randomly, generated by the EMQ X Neuron gateway.
+The connected EMQX Neuron gateway can be viewed in the EMQX Broker interface, where the Client ID is a string of characters randomly, generated by the EMQX Neuron gateway.
 
 ![image20200807163206577.png](https://static.emqx.net/images/334ea0e8c9b636603d98b21fb9b93a2a.png)
 
@@ -182,7 +182,7 @@ Configure the value of the point 1!1!07497 is 1, and then report the data.
 
 
 
-Click the Data Monitoring in the EMQ X Neuron interface, the reported value of Attribute “Err1@@2D7WS_GAS” is now 1.
+Click the Data Monitoring in the EMQX Neuron interface, the reported value of Attribute “Err1@@2D7WS_GAS” is now 1.
 
 
 ![image20200807164756754.png](https://static.emqx.net/images/af14d897b8f2d7d876e9611dc91ee1b7.png)
@@ -190,7 +190,7 @@ Click the Data Monitoring in the EMQ X Neuron interface, the reported value of A
 
 ### Use MQTT X subscribe to data for display
 
-Open the connected MQTT X, connect to the EMQ X Broker, subscribe to the above topic pubulished by EMQ X Neuron, and in MQTT X you will receive the value of 1 for 2D7WS in AlarmObj. After receiving these data, the client can display alarms on the application interface, and can also implement other business transformations through the business logic.
+Open the connected MQTT X, connect to the EMQX Broker, subscribe to the above topic pubulished by EMQX Neuron, and in MQTT X you will receive the value of 1 for 2D7WS in AlarmObj. After receiving these data, the client can display alarms on the application interface, and can also implement other business transformations through the business logic.
 
 ![image20200807165527066.png](https://static.emqx.net/images/5ef32b447681d675cd1644e8a68315a1.png)
 
@@ -198,8 +198,8 @@ Open the connected MQTT X, connect to the EMQ X Broker, subscribe to the above t
 
 ## Summary
 
-The above is a complete simulation test of industrial access using EMQ X Neuron, EMQ X Broker, MQTT X and other tools to form a clearer and more intuitive understanding of industrial equipment on the cloud. Of course, you can also use the powerful protocol support of EMQ X Neuron and the powerful access/forward ability of EMQ X Broker to develop your own application demonstration system and build a complete IIoT platform.
+The above is a complete simulation test of industrial access using EMQX Neuron, EMQX Broker, MQTT X and other tools to form a clearer and more intuitive understanding of industrial equipment on the cloud. Of course, you can also use the powerful protocol support of EMQX Neuron and the powerful access/forward ability of EMQX Broker to develop your own application demonstration system and build a complete IIoT platform.
 
-By the end of September 2020, we will implement a complete edge solution for industrial protocol parsing, data aggregation and streaming processing at the edge end through integrating [Neuron](https://www.emqx.com/en/products/neuron), [Edge](https://www.emqx.com/en/products/emqx), [Kuiper](https://github.com/lf-edge/ekuiper) and other software. This solution can implement a complete industrial solution from end to end, and edge to cloud though integrating the cloud series product EMQ X Broker / Enterprise.
+By the end of September 2020, we will implement a complete edge solution for industrial protocol parsing, data aggregation and streaming processing at the edge end through integrating [Neuron](https://www.emqx.com/en/products/neuron), [Edge](https://www.emqx.com/en/products/emqx), [Kuiper](https://github.com/lf-edge/ekuiper) and other software. This solution can implement a complete industrial solution from end to end, and edge to cloud though integrating the cloud series product EMQX Broker / Enterprise.
 
 ![Artboard Copy 9备份 4.png](https://static.emqx.net/images/8c7059339b470666df505bb4e33519f4.png)

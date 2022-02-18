@@ -74,7 +74,7 @@
 - 实现分级存存储
 - 实现更多常用系统的 Connector 支持
 
-我们也计划在下个阶段完成与[云原生分布式物联网接入平台 - EMQ X](https://www.emqx.com/zh/products/emqx) 的集成，这将不仅能验证 HStreamDB 功能完善程度，更意味着一个为物联网应用开发量身打造的产品组合的诞生。
+我们也计划在下个阶段完成与[云原生分布式物联网接入平台 - EMQX](https://www.emqx.com/zh/products/emqx) 的集成，这将不仅能验证 HStreamDB 功能完善程度，更意味着一个为物联网应用开发量身打造的产品组合的诞生。
 
 
 

@@ -1,4 +1,4 @@
-This article will take [MQTT Explorer](https://mqtt-explorer.com/) as [MQTT client](https://www.emqx.com/en/blog/introduction-to-the-commonly-used-mqtt-client-library) test tool to connect to [MQTT Cloud Service - EMQ X Cloud](https://www.emqx.com/en/cloud). Through this article, you will be able to quickly understand the basic usage of MQTT Explorer and the basic concepts and usage of the [MQTT protocol](https://www.emqx.com/en/mqtt).
+This article will take [MQTT Explorer](https://mqtt-explorer.com/) as [MQTT client](https://www.emqx.com/en/blog/introduction-to-the-commonly-used-mqtt-client-library) test tool to connect to [MQTT Cloud Service - EMQX Cloud](https://www.emqx.com/en/cloud). Through this article, you will be able to quickly understand the basic usage of MQTT Explorer and the basic concepts and usage of the [MQTT protocol](https://www.emqx.com/en/mqtt).
 
 
 
@@ -30,19 +30,19 @@ MQTT Explorer can meet most development needs, but it also has some disadvantage
 
 
 
-## Introduction to EMQ X Cloud
+## Introduction to EMQX Cloud
 
-[EMQ X Cloud](https://www.emqx.com/en/cloud) is a fully managed cloud-native MQTT service launched by [EMQ](https://www.emqx.com/en) company that can connect to a large number of IoT devices and integrate various databases and business systems. As the **world's first fully managed** [**MQTT 5.0**](https://www.emqx.com/en/mqtt/mqtt5) **public cloud service**, EMQ X Cloud provides MQTT message service with one-stop operation and maintenance management and a unique isolation environment.
+[EMQX Cloud](https://www.emqx.com/en/cloud) is a fully managed cloud-native MQTT service launched by [EMQ](https://www.emqx.com/en) company that can connect to a large number of IoT devices and integrate various databases and business systems. As the **world's first fully managed** [**MQTT 5.0**](https://www.emqx.com/en/mqtt/mqtt5) **public cloud service**, EMQX Cloud provides MQTT message service with one-stop operation and maintenance management and a unique isolation environment.
 
-In the era of the Internet of Everything, EMQ X Cloud can help users quickly build industry applications for the IoT area and easily realize the collection, transmission, calculation, and persistence of IoT data.
+In the era of the Internet of Everything, EMQX Cloud can help users quickly build industry applications for the IoT area and easily realize the collection, transmission, calculation, and persistence of IoT data.
 
-This article will use [Free Public MQTT Server](https://www.emqx.com/en/mqtt/public-mqtt5-broker) provided by EMQ X Cloud as the MQTT server address for this test. The server access information is as follows:
+This article will use [Free Public MQTT Server](https://www.emqx.com/en/mqtt/public-mqtt5-broker) provided by EMQX Cloud as the MQTT server address for this test. The server access information is as follows:
 
 - Broker: **broker.emqx.io**
 - TCP Port: **1883**
 - SSL/TLS Port: **8883**
 
-For more details, please visit [EMQ X Cloud website](https://www.emqx.com/en/cloud) or check [EMQ X Cloud documentation](https://docs.emqx.io/cloud/latest/).
+For more details, please visit [EMQX Cloud website](https://www.emqx.com/en/cloud) or check [EMQX Cloud documentation](https://docs.emqx.io/cloud/latest/).
 
 
 
@@ -70,13 +70,13 @@ Click Connections to create a new connection, and fill in the Host as broker-cn.
 
 #### Subscribe to a topic
 
-Then, click Advanced. Because EMQ X Cloud prohibits the `$SYS` topic and the `#` topic by default, we delete them and enter a test subscription topic with the name `test/1`, and the result is shown in the figure below.
+Then, click Advanced. Because EMQX Cloud prohibits the `$SYS` topic and the `#` topic by default, we delete them and enter a test subscription topic with the name `test/1`, and the result is shown in the figure below.
 
 ![MQTT Explorer Subscribe to a topic](https://static.emqx.net/images/7718a737bc39114356ea10cd97bbe89c.png)
 
 #### Connect
 
-Finally, click Back to return to the connection configuration page, and click Connect to complete the connection of EMQ X Cloud and the subscription of the topic `test/1`.
+Finally, click Back to return to the connection configuration page, and click Connect to complete the connection of EMQX Cloud and the subscription of the topic `test/1`.
 
 After the connection is successful, you can see that the subscription tree structure has `test` and `1` nodes, and the status bar at the top right shows that it has been connected, and the title of the topic `test/1` is contained on the right.
 

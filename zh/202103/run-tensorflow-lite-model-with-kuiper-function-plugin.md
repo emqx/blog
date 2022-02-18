@@ -1,4 +1,4 @@
-[EMQ X Kuiper](https://docs.emqx.io/en/kuiper/latest/) 是一款边缘轻量级物联网数据分析/流软件，可在各种资源受限的物联网设备上运行。
+[EMQX Kuiper](https://docs.emqx.io/en/kuiper/latest/) 是一款边缘轻量级物联网数据分析/流软件，可在各种资源受限的物联网设备上运行。
 
 [TensorFlow Lite](https://www.tensorflow.org/lite/guide) 是一组帮助开发人员在移动端、嵌入式和物联网设备上运行 TensorFlow 模型的工具，它使得设备上的机器学习预测具有低延迟和较小的二进制容量。
 
