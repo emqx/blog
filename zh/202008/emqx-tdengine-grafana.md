@@ -1,4 +1,4 @@
-物联网数据采集涉及到大量设备接入、海量的时序数据传输，EMQ X [MQTT 服务器](https://www.emqx.com/zh/products/emqx) 与 TDengine 大数据平台的组合技术栈完全能够胜任场景中的海量时间序列监测数据的传输、存储和计算。
+物联网数据采集涉及到大量设备接入、海量的时序数据传输，EMQX [MQTT 服务器](https://www.emqx.com/zh/products/emqx) 与 TDengine 大数据平台的组合技术栈完全能够胜任场景中的海量时间序列监测数据的传输、存储和计算。
 
 数据入库后，往往需要其他方式如数据可视化系统将数据按照规则统计、展现出来，实现数据的监控、指标统计等业务需求，以便充分发挥数据的价值，TDengine 搭配开源软件 Grafana 可以快速搭建物联网数据可视化平台。
 
@@ -10,9 +10,9 @@
 
 ## 方案介绍
 
-### EMQ X 简介
+### EMQX 简介
 
-[EMQ X ](https://www.emqx.com/zh) 是基于高并发的 Erlang/OTP 语言平台开发，支持百万级连接和分布式集群架构，发布订阅模式的开源 MQTT 消息服务器。EMQ X 内置了大量开箱即用的功能，其 **开源版 EMQ X Broker** 及 **企业版 EMQ X Enterprise** 均支持通过规则引擎将设备消息存储到 TDengine。
+[EMQX ](https://www.emqx.com/zh) 是基于高并发的 Erlang/OTP 语言平台开发，支持百万级连接和分布式集群架构，发布订阅模式的开源 MQTT 消息服务器。EMQX 内置了大量开箱即用的功能，其 **开源版 EMQX Broker** 及 **企业版 EMQX Enterprise** 均支持通过规则引擎将设备消息存储到 TDengine。
 
 ### TDengine 是什么 
 
@@ -61,32 +61,32 @@ sensor/data
 
 ## 环境准备
 
-本文所用各个组件均有 Docker 镜像，除 EMQ X 需要修改少数配置为了便于操作使用下载安装外，TDengine 与 Grafana 均使用 Docker 搭建。
+本文所用各个组件均有 Docker 镜像，除 EMQX 需要修改少数配置为了便于操作使用下载安装外，TDengine 与 Grafana 均使用 Docker 搭建。
 
 安装包资源与使用教程参照各自官网：
 
- - EMQ X：EMQ 官网 [https://www.emqx.com/zh/](https://www.emqx.com/zh)
+ - EMQX：EMQ 官网 [https://www.emqx.com/zh/](https://www.emqx.com/zh)
  - TDengine：涛思数据官网 [https://www.taosdata.com/cn/](https://www.taosdata.com/cn/)
  - Grafana：Grafana 官网 [https://grafana.com/](https://grafana.com/) 
 
-### 安装 EMQ X
+### 安装 EMQX
 
-> 如果您是 EMQ X 新手用户，推荐通过 [EMQ X 文档](https://docs.emqx.io/broker/latest/cn/) 快速上手
+> 如果您是 EMQX 新手用户，推荐通过 [EMQX 文档](https://docs.emqx.io/broker/latest/cn/) 快速上手
 
-访问 [EMQ X 下载](https://www.emqx.com/zh/try) 页面下载适合您操作系统的安装包，本文截稿时 EMQ X 开源版最新版本为 v4.1.1，下载 zip 包的启动步骤如下 ：
+访问 [EMQX 下载](https://www.emqx.com/zh/try) 页面下载适合您操作系统的安装包，本文截稿时 EMQX 开源版最新版本为 v4.1.1，下载 zip 包的启动步骤如下 ：
 
 ```bash
 ## 解压下载好的安装包
 unzip emqx-macosx-v4.1.1.zip
 cd emqx
 
-## 以 console 模式启动 EMQ X 方便调试
+## 以 console 模式启动 EMQX 方便调试
 ./bin/emqx console
 ```
 
-启动成功后浏览器访问 [http://127.0.0.1:18083](http://127.0.0.1:18083) 访问 EMQ X 管理控制台 Dashboard，使用 `admin` `public` 默认用户名密码完成初次登录。
+启动成功后浏览器访问 [http://127.0.0.1:18083](http://127.0.0.1:18083) 访问 EMQX 管理控制台 Dashboard，使用 `admin` `public` 默认用户名密码完成初次登录。
 
-**EMQ X 企业版 4.1.2 提供了原生 TDengine 写入插件，性能更好、使用更方便，请移步[规则引擎-写入数据到 TDengine](https://docs.emqx.cn/enterprise/latest/rule/rule-example.html#%E4%BF%9D%E5%AD%98%E6%95%B0%E6%8D%AE%E5%88%B0-opentsdb)查看**
+**EMQX 企业版 4.1.2 提供了原生 TDengine 写入插件，性能更好、使用更方便，请移步[规则引擎-写入数据到 TDengine](https://docs.emqx.cn/enterprise/latest/rule/rule-example.html#%E4%BF%9D%E5%AD%98%E6%95%B0%E6%8D%AE%E5%88%B0-opentsdb)查看**
 
 ### 安装 TDengine
 
@@ -112,7 +112,7 @@ docker run -d --name=grafana -p 3000:3000 grafana/grafana
 
 
 
-## 配置 EMQ X 存储数据到 TDengine
+## 配置 EMQX 存储数据到 TDengine
 
 ### TDengine 创建数据库与数据表
 
@@ -149,13 +149,13 @@ CREATE TABLE sensor_data (
 );
 ```
 
-### 配置 EMQ X 规则引擎
+### 配置 EMQX 规则引擎
 
-打开 EMQ X Dashboared，进入 **规则引擎** -> **规则** 页面，点击 **创建** 按钮进入创建页面。
+打开 EMQX Dashboared，进入 **规则引擎** -> **规则** 页面，点击 **创建** 按钮进入创建页面。
 
 #### 规则 SQL
 
-规则 SQL 用于 EMQ X 消息以及事件筛选，以下 SQL 表示从 `sensor/data` 主题筛选出 payload 数据：
+规则 SQL 用于 EMQX 消息以及事件筛选，以下 SQL 表示从 `sensor/data` 主题筛选出 payload 数据：
 
 ```sql
 SELECT
@@ -178,7 +178,7 @@ FROM
 
 为支持各种不同类型平台的开发，TDengine 提供符合 REST 设计标准的 API。通过 [RESTful Connector](https://www.taosdata.com/cn/documentation20/connector/#RESTful-Connector) 提供了最简单的连接方式，即使用 HTTP 请求携带认证信息与要执行的 SQL 操作 TDengine。
 
-使用 EMQ X 开源版中的 **发送到 Web 服务** 即可通过 RESTful Connector 写入数据到 TDengine。即将到来的 **EMQ X 企业版** 4.1.1 版本将提供原生更高性能的写入 Connector。
+使用 EMQX 开源版中的 **发送到 Web 服务** 即可通过 RESTful Connector 写入数据到 TDengine。即将到来的 **EMQX 企业版** 4.1.1 版本将提供原生更高性能的写入 Connector。
 
 发送到 Web 服务需要两个数据，一个是关联资源，另一个是消息内容模板。
 
@@ -223,7 +223,7 @@ Authorization 的值为 Basic + TDengine 的 ` {username}:{password}` 经过 Bas
 
 ## 生成模拟数据
 
-以下脚本模拟了 10000 个设备在过去 24 小时内、每隔 5 秒钟上报一条模拟数据并发送到 EMQ X 的场景。
+以下脚本模拟了 10000 个设备在过去 24 小时内、每隔 5 秒钟上报一条模拟数据并发送到 EMQX 的场景。
 
 - 总数据量： 24 * 3600 / 5 * 100 = 172 万条
 - 消息 TPS： 20
@@ -235,7 +235,7 @@ npm install mqtt mockjs --save --registry=https://registry.npm.taobao.org
 node mock.js
 ```
 
-附：模拟生成数据并发送到 EMQ X 代码，请根据集群性能调整相关参数
+附：模拟生成数据并发送到 EMQX 代码，请根据集群性能调整相关参数
 
 ```javascript
 // mock.js
@@ -340,7 +340,7 @@ function generateMockData() {
 
 ### 添加仪表盘(New Dashboard)
 
-> 在 EMQ X Sample 仓库获取[Grafana 仪表盘导出文件](https://github.com/emqx/example/blob/master/RuleEngine-TDengine/Grafana-template.json)导入即可查看图表示例。
+> 在 EMQX Sample 仓库获取[Grafana 仪表盘导出文件](https://github.com/emqx/example/blob/master/RuleEngine-TDengine/Grafana-template.json)导入即可查看图表示例。
 
 添加好数据源后，添加需要显示的数据仪表盘信息。仪表盘为多个可视化面板的集合，点击 **New Dashboard** 后，选择 **+ Query** 通过查询来添加数据面板。
 
@@ -382,9 +382,9 @@ select max(temperature), max(humidity), max(volume), max(PM10), max(pm25), max(S
 Q: 为什么 Grafana 中没有图标数据？
 - 请拖动时间范围，检查、确保所选时段内有数据
 
-Q: EMQ X 开源版和 EMQ X 企业版写入 TDengine 功能上有什么区别？
+Q: EMQX 开源版和 EMQX 企业版写入 TDengine 功能上有什么区别？
 - 开源版使用 Webhook + TDengine RESTful Connector，两边都有一定的性能损耗，最大写入速度约为 700 条/秒
-- 企业版使用 EMQ X 原生插件，能够做到 20,000 条/秒写入
+- 企业版使用 EMQX 原生插件，能够做到 20,000 条/秒写入
 
 Q: 规则执行了，但是写入不了数据？
 - 请检查认证信息是否配置正确，请求头、连接地址、端口等信息是否匹配 TDengin 版本
@@ -393,6 +393,6 @@ Q: 规则执行了，但是写入不了数据？
 
 ## 总结
 
-至此我们借助 EMQ X + TDengine 完成了物联网数据传输、存储、展现整个流程的系统搭建，读者可以了解到 EMQ X 丰富的拓展能力与 TDengine 完备的大数据平台特性在物联网数据采集中的应用。深入学习掌握 Grafana 的其他功能后，用户可以定制出更完善的数据可视化乃至监控告警系统。
+至此我们借助 EMQX + TDengine 完成了物联网数据传输、存储、展现整个流程的系统搭建，读者可以了解到 EMQX 丰富的拓展能力与 TDengine 完备的大数据平台特性在物联网数据采集中的应用。深入学习掌握 Grafana 的其他功能后，用户可以定制出更完善的数据可视化乃至监控告警系统。
 
 ![image20200803093438116.png](https://static.emqx.net/images/0d68e86dfb77cac91dc0911258fb873b.png)

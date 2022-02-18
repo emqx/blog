@@ -12,7 +12,7 @@ Readers can refer to the official OpenTSDB document (https://opentsdb.net) or Do
 
 ## Introduction to secnario
 
-In this scenario, it is required to store the messages that meet the conditions under the topic specified by EMQ X to the OpenTSDB database. In order to facilitate subsequent analysis and retrieval, the message content needs to be split and stored.
+In this scenario, it is required to store the messages that meet the conditions under the topic specified by EMQX to the OpenTSDB database. In order to facilitate subsequent analysis and retrieval, the message content needs to be split and stored.
 
 **The data reported by the client in this scenario is as follows:** 
 
@@ -50,13 +50,13 @@ $ docker run -d --name opentsdb -p 4242:4242 petergrace/opentsdb-docker
 
 ### Create resources
 
-Open EMQ X Dashboard, enter the **Resources** page on the left menu, click the **New** button, select the OpenTSDB resource type and complete the related configuration to create the resources.
+Open EMQX Dashboard, enter the **Resources** page on the left menu, click the **New** button, select the OpenTSDB resource type and complete the related configuration to create the resources.
 
 ![image20190725110536094.png](https://static.emqx.net/images/559e3c15ade4859fde9a4450a7ec44be.png)
 
 ### Create rules
 
-Enter the **Rules** page on the left menu and click the **New** button to create a rule. Here we choose **message.publish** as the trigger event. When EMQ X receives the PUBLISH message, the rule is triggered for data processing.
+Enter the **Rules** page on the left menu and click the **New** button to create a rule. Here we choose **message.publish** as the trigger event. When EMQX receives the PUBLISH message, the rule is triggered for data processing.
 
 After the trigger event is selected, we can see optional fields and sample SQL on the interface:
 
@@ -132,7 +132,7 @@ We have successfully created a rule that contains a processing action. The expec
 
 ### Test with Websocket tools in Dashboard
 
-Switch to the **Tools ->  Websocket** page, use any information client to connect to EMQ X. After the connection is successful, send the following message in the **Message** card:
+Switch to the **Tools ->  Websocket** page, use any information client to connect to EMQX. After the connection is successful, send the following message in the **Message** card:
 
 - Topic：stat/cpu
 

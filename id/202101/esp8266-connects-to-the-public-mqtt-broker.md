@@ -2,9 +2,9 @@
 
 [ESP8266](https://www.espressif.com/) menyediakan solusi SoC Wi-Fi yang sangat terintegrasi dengan desainnya yang kompak, hemat tenaga, dan stabilitas yang tinggi. ESP8266 memiliki fungsi jaringan Wi-Fi mandiri dan lengkap yang dapat diaplikasikan secara independen atau dapat dipakai sebagai slave di host MCU lainnya.
 
-Dalam projek ini, kita akan mengkoneksikan ESP8266 ke [MQTT broker publik gratis](https://www.emqx.com/en/mqtt/public-mqtt5-broker) yang dioperasikan oleh [EMQ X MQTT Cloud](https://www.emqx.com/en/cloud) dan memprogram ESP8266 dengan Arduino IDE.
+Dalam projek ini, kita akan mengkoneksikan ESP8266 ke [MQTT broker publik gratis](https://www.emqx.com/en/mqtt/public-mqtt5-broker) yang dioperasikan oleh [EMQX MQTT Cloud](https://www.emqx.com/en/cloud) dan memprogram ESP8266 dengan Arduino IDE.
 
-EMQ X Cloud adalah sebuah platform servis cloud MQTT IoT aman yang diluncurkan oleh [EMQ](https://www.emqx.com/en). EMQ X Cloud menyediakan operasi lengkap, membantu perawatan dan servis akses [MQTT 5.0](https://www.emqx.com/en/mqtt/mqtt5) dengan lingkungan unik yang terisolasi.
+EMQX Cloud adalah sebuah platform servis cloud MQTT IoT aman yang diluncurkan oleh [EMQ](https://www.emqx.com/en). EMQX Cloud menyediakan operasi lengkap, membantu perawatan dan servis akses [MQTT 5.0](https://www.emqx.com/en/mqtt/mqtt5) dengan lingkungan unik yang terisolasi.
 
 ## Komponen IoT yang diperlukan
 
@@ -198,7 +198,7 @@ EMQ X Cloud adalah sebuah platform servis cloud MQTT IoT aman yang diluncurkan o
 
 ## Rangkuman
 
-Dengan ini, kita telah berhasil mengkoneksikan ESP8266 ke MQTT broker publik gratis yang disediakan oleh EMQ X Cloud. Dalam projek ini, kita mengkoneksikan ESP8266 ke MQTT broker, yang merupakan salah satu kemampuan dasar dari ESP8266. Selain itu, ESP8266 juga dapat dikoneksikan dengan berbagai macam sensor IoT dan melaporkan data sensor ke MQTT broker.
+Dengan ini, kita telah berhasil mengkoneksikan ESP8266 ke MQTT broker publik gratis yang disediakan oleh EMQX Cloud. Dalam projek ini, kita mengkoneksikan ESP8266 ke MQTT broker, yang merupakan salah satu kemampuan dasar dari ESP8266. Selain itu, ESP8266 juga dapat dikoneksikan dengan berbagai macam sensor IoT dan melaporkan data sensor ke MQTT broker.
 
  
 

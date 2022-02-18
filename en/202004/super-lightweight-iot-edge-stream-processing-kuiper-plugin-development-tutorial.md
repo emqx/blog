@@ -1,4 +1,4 @@
-[EMQ X Kuiper](https://github.com/lf-edge/ekuiper) is a lightweight loT streaming data processing software based on SQL. It provides a set of plugin mechanism for implementing customized source, sink and SQL function to extend the ability of  stream processing. This tutorial gives a detailed introduction to the process of development, compilation, and deployment of the Kuiper plugin.
+[EMQX Kuiper](https://github.com/lf-edge/ekuiper) is a lightweight loT streaming data processing software based on SQL. It provides a set of plugin mechanism for implementing customized source, sink and SQL function to extend the ability of  stream processing. This tutorial gives a detailed introduction to the process of development, compilation, and deployment of the Kuiper plugin.
 
 ## Overview
 
@@ -51,7 +51,7 @@ require (
 )
 ```
 
-The Kuiper plugin has three types. The source code can be put into the corresponding directory. For the detailed method of plugin development: [EMQ X Kuiper extension](https://github.com/emqx/kuiper/blob/master/docs/en_US/extension/overview.md). This article will take the Sink plugin as an example to introduce the process of plugin development and deployment. We will develop a basic MySql sink, for write stream output data to the MySql database.
+The Kuiper plugin has three types. The source code can be put into the corresponding directory. For the detailed method of plugin development: [EMQX Kuiper extension](https://github.com/emqx/kuiper/blob/master/docs/en_US/extension/overview.md). This article will take the Sink plugin as an example to introduce the process of plugin development and deployment. We will develop a basic MySql sink, for write stream output data to the MySql database.
 
 - Create plugin project samplePlugin with the above directory structure
 - Create file mysql.go under the sinks directory

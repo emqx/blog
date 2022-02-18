@@ -1,6 +1,6 @@
-EMQ X Enterprise IoT MQTT messaging platform supports one-stop access for millions of IoT devices, MQTT & CoAP multi-protocol processing and low latency real-time message communication. It supports a built-in SQL-based rules engine, flexible processing/forwarding of messages to back-end services, storage of message data to various databases, or bridging to enterprise middleware such as Kafka and RabbitMQ.
+EMQX Enterprise IoT MQTT messaging platform supports one-stop access for millions of IoT devices, MQTT & CoAP multi-protocol processing and low latency real-time message communication. It supports a built-in SQL-based rules engine, flexible processing/forwarding of messages to back-end services, storage of message data to various databases, or bridging to enterprise middleware such as Kafka and RabbitMQ.
 
-EMQ X Enterprise is suitable for various IoT application scenarios, and helps enterprises to build IoT applications quickly and supports arbitrary deployment of public cloud, private cloud, physical machine and container/K8S.
+EMQX Enterprise is suitable for various IoT application scenarios, and helps enterprises to build IoT applications quickly and supports arbitrary deployment of public cloud, private cloud, physical machine and container/K8S.
 
 URL: https://www.emqx.com/en/products/emqx
 
@@ -10,9 +10,9 @@ Download: [Download](https://www.emqx.com/en/downloads?product=enterprise) now w
 
 ## Overview
 
-The rules engine of EMQ X Enterprise v4.2.2 can choose to store data synchronously/asynchronously, and some resources provide a batch enable switch that allows the user to select different data processing modes according to their needs, balancing data processing performance and the data timing issue.
+The rules engine of EMQX Enterprise v4.2.2 can choose to store data synchronously/asynchronously, and some resources provide a batch enable switch that allows the user to select different data processing modes according to their needs, balancing data processing performance and the data timing issue.
 
-At the same time, this version improves the ease of use of the LwM2M protocol and allows the LwM2M connection to be managed separately via the REST API and the Dashboard visual interface, including a list of clients accessing EMQ X via the LwM2M protocol as well as the corresponding Object and Resource.
+At the same time, this version improves the ease of use of the LwM2M protocol and allows the LwM2M connection to be managed separately via the REST API and the Dashboard visual interface, including a list of clients accessing EMQX via the LwM2M protocol as well as the corresponding Object and Resource.
 
 Detailed update log: https://www.emqx.com/en/changelogs/enterprise/v4.2.2
 
@@ -20,9 +20,9 @@ Detailed update log: https://www.emqx.com/en/changelogs/enterprise/v4.2.2
 
 ### Rules engine
 
-[EMQ X rules engine](https://docs.emqx.io/en/broker/latest/rule/rule-engine.html) is used to configure the message flows, and processing and forwarding rules of device events, and **supports forwarding data to various databases, flow processing and data analysis systems, including Apache Kafka and Clickhouse, to quickly build a one-stop platform for IoT data integration, cleaning, storage, analysis and visualization.**
+[EMQX rules engine](https://docs.emqx.io/en/broker/latest/rule/rule-engine.html) is used to configure the message flows, and processing and forwarding rules of device events, and **supports forwarding data to various databases, flow processing and data analysis systems, including Apache Kafka and Clickhouse, to quickly build a one-stop platform for IoT data integration, cleaning, storage, analysis and visualization.**
 
-As a key feature of EMQ X, the rules engine provides a clear and flexible "configurable" business integration solution based on SQL, simplifying the business development process, improving user usability and reducing the coupling between the business system and EMQ X. 
+As a key feature of EMQX, the rules engine provides a clear and flexible "configurable" business integration solution based on SQL, simplifying the business development process, improving user usability and reducing the coupling between the business system and EMQX. 
 
 The rules engine of version 4.2.2 has added the following new features:
 
@@ -30,7 +30,7 @@ The rules engine of version 4.2.2 has added the following new features:
 
   Oracle and MS SQL Server are prominent representatives of the commercial relational database camp with a high market share, and this update fills in the gaps in the integrity of the technology stack and covers a broader customer base.
 
-  [DolphinDB](https://www.dolphindb.com/) is a high-performance distributed time-series database developed by Zhejiang Zhiyu Technology Co. It integrates the programming language with powerful features and a high-capacity and high-speed analysis system of streaming data. Also, it provides a one-stop solution for the rapid storage, retrieval, analysis and calculation of large amounts of structured data, suitable for quantitative finance and industrial IoT. EMQ X uses DolphinDB to offer more data processing options for the financial and industrial network of IoT. 
+  [DolphinDB](https://www.dolphindb.com/) is a high-performance distributed time-series database developed by Zhejiang Zhiyu Technology Co. It integrates the programming language with powerful features and a high-capacity and high-speed analysis system of streaming data. Also, it provides a one-stop solution for the rapid storage, retrieval, analysis and calculation of large amounts of structured data, suitable for quantitative finance and industrial IoT. EMQX uses DolphinDB to offer more data processing options for the financial and industrial network of IoT. 
 
 - **Both synchronous/asynchronous data processing methods can be configured for the action**
 
@@ -71,20 +71,20 @@ With this update, it is up to the user to decide whether or not to enable the ba
 
 LwM2M is a set of lightweight protocols for the IoT, defined by the Open Mobile Alliance (OMA), which provides device management and communication features, especially for end devices with limited resources.
 
-EMQ X-LwM2M implements most of the features of LwM2M. Applications and MQTT clients can access LwM2M-enabled devices via EMQ X-LwM2M and devices can report notifications to EMQ X-LwM2M for bi-directional data communication.
+EMQX-LwM2M implements most of the features of LwM2M. Applications and MQTT clients can access LwM2M-enabled devices via EMQX-LwM2M and devices can report notifications to EMQX-LwM2M for bi-directional data communication.
 
 ![WechatIMG4340.png](https://static.emqx.net/images/c5580c872ed07fc6983e3995867c0b51.png)
 
-In EMQ X v4.2.2, users can manage LwM2M connections individually via the Dashboard visualization interface and REST APIs, obtain information such as IMEI, LifeTime, objectList, etc. for Lw connections, helping enterprises to quickly implement secure and reliable device interconnections, application development of IoT platforms and vertical industries.
+In EMQX v4.2.2, users can manage LwM2M connections individually via the Dashboard visualization interface and REST APIs, obtain information such as IMEI, LifeTime, objectList, etc. for Lw connections, helping enterprises to quickly implement secure and reliable device interconnections, application development of IoT platforms and vertical industries.
 
 
 
 
 ### Optimising Auth HTTP performance
 
-EMQ X can make a request to the user-defined Authentication HTTP Service to query authentication and ACL permissions. The authentication service controls the authentication results via the HTTP **statusCode** returned.
+EMQX can make a request to the user-defined Authentication HTTP Service to query authentication and ACL permissions. The authentication service controls the authentication results via the HTTP **statusCode** returned.
 
-HTTP authentication enables more complex authentication logic than database authentication, JWT, etc. This update optimizes the HTTP performance of EMQ X authentication requests and can carry the higher connection, publish/subscribe rates.
+HTTP authentication enables more complex authentication logic than database authentication, JWT, etc. This update optimizes the HTTP performance of EMQX authentication requests and can carry the higher connection, publish/subscribe rates.
 
 ### Functional adjustments
 
@@ -97,4 +97,4 @@ HTTP authentication enables more complex authentication logic than database auth
 
 ### Contacts
 
-If you have any questions about EMQ X Enterprise, please feel free to contact us at [contact@emqx.io](mailto:contact@emqx.io).
+If you have any questions about EMQX Enterprise, please feel free to contact us at [contact@emqx.io](mailto:contact@emqx.io).

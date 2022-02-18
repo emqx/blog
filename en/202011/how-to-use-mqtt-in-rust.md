@@ -49,7 +49,7 @@ path = "src/pub/main.rs"
 
 ### Create a client connection
 
-This article will use [the free public MQTT broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker) which is provided by EMQ X as the MQTT broker of the test connection. This service is based on EMQ X's [MQTT IoT cloud platform](https://www.emqx.com/en/cloud) to create. The server access information is as follows:
+This article will use [the free public MQTT broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker) which is provided by EMQX as the MQTT broker of the test connection. This service is based on EMQX's [MQTT IoT cloud platform](https://www.emqx.com/en/cloud) to create. The server access information is as follows:
 
 - Broker: **broker.emqx.io**
 - TCP Port: **1883**

@@ -1,4 +1,4 @@
-从 v4.1 版本开始，[EMQ X MQTT 服务器](https://www.emqx.com/zh/products/emqx) 提供了专门的多语言支持插件 [emqx_extension_hook](https://github.com/emqx/emqx-extension-hook) ，现已支持使用其他编程语言来处理 EMQ X 中的钩子事件，开发者可以使用 Python 或者 Java 快速开发自己的插件，在官方功能的基础上进行扩展，满足自己的业务场景。例如：
+从 v4.1 版本开始，[EMQX MQTT 服务器](https://www.emqx.com/zh/products/emqx) 提供了专门的多语言支持插件 [emqx_extension_hook](https://github.com/emqx/emqx-extension-hook) ，现已支持使用其他编程语言来处理 EMQX 中的钩子事件，开发者可以使用 Python 或者 Java 快速开发自己的插件，在官方功能的基础上进行扩展，满足自己的业务场景。例如：
 
 - 验证某客户端的登录权限：客户端连接时触发对应函数，通过参数获取客户端信息后通过读取数据库、比对等操作判定是否有登录权限
 - 记录客户端在线状态与上下线历史：客户端状态变动时触发对应函数，通过参数获取客户端信息，改写数据库中客户端在线状态
@@ -9,7 +9,7 @@
 
 
 
-Python 和 Java 驱动基于 [Erlang/OTP-Port](https://erlang.org/doc/tutorial/c_port.html) 进程间通信实现，本身具有非常高的吞吐性能，本文以 Java 拓展为例介绍 EMQ X 跨语言拓展使用方式。
+Python 和 Java 驱动基于 [Erlang/OTP-Port](https://erlang.org/doc/tutorial/c_port.html) 进程间通信实现，本身具有非常高的吞吐性能，本文以 Java 拓展为例介绍 EMQX 跨语言拓展使用方式。
 
 ![upeb67488ae758908b02ac8567c37fcf2d0a9.png](https://static.emqx.net/images/ebacb8e0adf3283bf44a968e38c402ab.png)
 
@@ -19,7 +19,7 @@ Python 和 Java 驱动基于 [Erlang/OTP-Port](https://erlang.org/doc/tutorial/c
 
 ### 要求
 
-- EMQ X 所在服务器需安装 JDK 1.8 以上版本
+- EMQX 所在服务器需安装 JDK 1.8 以上版本
 
 ### 开始使用
 
@@ -31,7 +31,7 @@ Python 和 Java 驱动基于 [Erlang/OTP-Port](https://erlang.org/doc/tutorial/c
 
 ### 部署
 
-编译所有源代码后，需要将 `sdk` 和代码文件部署到 EMQ X 中：
+编译所有源代码后，需要将 `sdk` 和代码文件部署到 EMQX 中：
 
 1. 复制 `io.emqx.extension.jar` 到 `emqx/data/extension` 目录
 2. 将编译后的 `.class` 文件，例如 `SampleHandler.class` 复制到 `emqx/data/extension  `目录
@@ -50,7 +50,7 @@ exhook.drivers.java.init_module = SampleHandler
 
 ### 示例
 
-以下为 [Main.java](https://github.com/emqx/emqx-exhook/tree/master/test/scripts) 示例程序， 该程序继承自 SDK 中的 `DefaultCommunicationHandler` 类。该示例代码演示了如何挂载 EMQ X 系统中所有的钩子：
+以下为 [Main.java](https://github.com/emqx/emqx-exhook/tree/master/test/scripts) 示例程序， 该程序继承自 SDK 中的 `DefaultCommunicationHandler` 类。该示例代码演示了如何挂载 EMQX 系统中所有的钩子：
 
 ```java
 import emqx.extension.java.handler.*;
@@ -189,9 +189,9 @@ public class SampleHandler extends DefaultCommunicationHandler {
    | MESSAGE_ACKED_TOPICS     | message_acked     |
    | MESSAGE_DROPPED_TOPICS   | message_dropped   |
 
-2. 重载了 `on<hookName>` 方法，这些方法是实际处理钩子事件的回调函数，函数命名方式为各个钩子名称变体后前面加 `on` 前缀，变体方式为钩子名称去掉下划线后使用骆驼拼写法（CamelCase），例如，钩子client_connect对应的函数名为onClientConnect。 EMQ X 客户端产生的事件，例如：连接、发布、订阅等，都会最终分发到这些钩子事件回调函数上，然后回调函数可对各属性及状态进行相关操作。 示例程序中仅对各参数进行了打印输出。如果只关心部分钩子事件，只需对这部分钩子事件的回调函数进行重载即可，不需要重载所有回调函数。
+2. 重载了 `on<hookName>` 方法，这些方法是实际处理钩子事件的回调函数，函数命名方式为各个钩子名称变体后前面加 `on` 前缀，变体方式为钩子名称去掉下划线后使用骆驼拼写法（CamelCase），例如，钩子client_connect对应的函数名为onClientConnect。 EMQX 客户端产生的事件，例如：连接、发布、订阅等，都会最终分发到这些钩子事件回调函数上，然后回调函数可对各属性及状态进行相关操作。 示例程序中仅对各参数进行了打印输出。如果只关心部分钩子事件，只需对这部分钩子事件的回调函数进行重载即可，不需要重载所有回调函数。
 
-各回调函数的执行时机和支持的钩子列表与 EMQ X 内置的钩子完全一致，参见：[Hooks - EMQ X](https://docs.emqx.io/broker/latest/en/advanced/hooks.html#hookpoint)
+各回调函数的执行时机和支持的钩子列表与 EMQX 内置的钩子完全一致，参见：[Hooks - EMQX](https://docs.emqx.io/broker/latest/en/advanced/hooks.html#hookpoint)
 
 在实现自己的扩展程序时，最简单的方式也是继承 `DefaultCommunicationHandler` 父类，该类对各钩子与回调函数的绑定进行了封装，并进一步封装了回调函数涉及到的参数数据结构，以方便快速上手使用。
 

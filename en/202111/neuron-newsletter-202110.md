@@ -13,7 +13,7 @@ In addition, Neuron 2.0 will support the simultaneous connection of multiple dev
 Other major new features are as follows:
 
 - Pluggable southbound device driver and northbound application
-- Highly integrated with other EMQ products, including eKuiper, EMQ X, Fabric, etc.
+- Highly integrated with other EMQ products, including eKuiper, EMQX, Fabric, etc.
 - Minimal memory usage
 - Support runtime update of device drivers
 

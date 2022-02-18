@@ -49,13 +49,13 @@ npm install mqtt --save
 
 ## 连接至 MQTT 服务器
 
-本文将使用 EMQ X 提供的 [免费公共 MQTT 服务器](https://www.emqx.com/zh/mqtt/public-mqtt5-broker)，该服务基于 EMQ X 的 [MQTT 物联网云平台](https://www.emqx.com/zh/cloud) 创建。服务器接入信息如下：
+本文将使用 EMQX 提供的 [免费公共 MQTT 服务器](https://www.emqx.com/zh/mqtt/public-mqtt5-broker)，该服务基于 EMQX 的 [MQTT 物联网云平台](https://www.emqx.com/zh/cloud) 创建。服务器接入信息如下：
 
 - Broker: **broker.emqx.io**
 - TCP Port: **1883**
 - Websocket Port: **8083**
 
-> EMQ X 使用 8083 端口用于普通连接，8084 用于 SSL 上的 WebSocket 连接。
+> EMQX 使用 8083 端口用于普通连接，8084 用于 SSL 上的 WebSocket 连接。
 
 为了简单起见，让我们将订阅者和发布者放在同一个文件中：
 
@@ -102,8 +102,8 @@ client.on('reconnect', () => {
 初学者容易出现以下几个错误：
 
 - 连接地址没有指明协议：WebSocket 作为一种通信协议，其使用 `ws` (非加密)、`wss `(SSL 加密) 作为协议标识。MQTT.js 客户端支持多种协议，连接地址需指明协议类型；
-- 连接地址没有指明端口：MQTT 并未对 WebSocket 接入端口做出规定，EMQ X 上默认使用 `8083`  `8084` 分别作为非加密连接、加密连接端口。而 WebSocket 协议默认端口同 HTTP 保持一致 (80/443)，不填写端口则表明使用 WebSocket 的默认端口连接；而使用标准 MQTT 连接时则无需指定端口，如 MQTT.js 在 Node.js 端可以使用 `mqtt://localhost` 连接至标准 MQTT 1883 端口，当连接地址是 `mqtts://localhost` 则连接到 8884 端口；
-- 连接地址无路径：MQTT-WebSoket 统一使用 `/path` 作为连接路径，连接时需指明，在 EMQ X 上使用的路径为 `/mqtt`；
+- 连接地址没有指明端口：MQTT 并未对 WebSocket 接入端口做出规定，EMQX 上默认使用 `8083`  `8084` 分别作为非加密连接、加密连接端口。而 WebSocket 协议默认端口同 HTTP 保持一致 (80/443)，不填写端口则表明使用 WebSocket 的默认端口连接；而使用标准 MQTT 连接时则无需指定端口，如 MQTT.js 在 Node.js 端可以使用 `mqtt://localhost` 连接至标准 MQTT 1883 端口，当连接地址是 `mqtts://localhost` 则连接到 8884 端口；
+- 连接地址无路径：MQTT-WebSoket 统一使用 `/path` 作为连接路径，连接时需指明，在 EMQX 上使用的路径为 `/mqtt`；
 - 协议与端口不符：使用了 `wss` 连接却连接到 `8083` 端口；
 - 在 HTTPS 下使用非加密的 WebSocket 连接： Google 等机构在推进 HTTPS 的同时也通过浏览器约束进行了安全限定，即 HTTPS 连接下浏览器会自动禁止使用非加密的 `ws` 协议发起连接请求；
 - 证书与连接地址不符： 篇幅较长，详见下文 **EMQ 启用 SSL/TLS 加密连接**。
@@ -166,9 +166,9 @@ client.on('message', (topic, message, packet) => {
 
 MQTT.js 库对微信小程序特殊处理，使用  `wxs`  协议标识符。注意小程序开发规范中要求必须使用加密连接，连接地址应类似为 `wxs://broker.emqx.io:8084/mqtt`。
 
-### EMQ X 启用 SSL/TLS 加密连接
+### EMQX 启用 SSL/TLS 加密连接
 
-EMQ 内置自签名证书，默认已经启动了加密的 WebSocket 连接，但大部分浏览器会报证书无效错误如 `net::ERR_CERT_COMMON_NAME_INVALID`  (Chrome、360 等 webkit 内核浏览器在开发者模式下， Console 选项卡 可以查看大部分连接错误)。导致该错误的原因是浏览器无法验证自签名证书的有效性，读者需从证书颁发机构购买可信任证书，并参考该篇文章中的相应部分进行配置操作：[EMQ X MQTT 服务器启用 SSL/TLS 安全连接](https://www.emqx.com/zh/blog/emqx-server-ssl-tls-secure-connection-configuration-guide)。
+EMQ 内置自签名证书，默认已经启动了加密的 WebSocket 连接，但大部分浏览器会报证书无效错误如 `net::ERR_CERT_COMMON_NAME_INVALID`  (Chrome、360 等 webkit 内核浏览器在开发者模式下， Console 选项卡 可以查看大部分连接错误)。导致该错误的原因是浏览器无法验证自签名证书的有效性，读者需从证书颁发机构购买可信任证书，并参考该篇文章中的相应部分进行配置操作：[EMQX MQTT 服务器启用 SSL/TLS 安全连接](https://www.emqx.com/zh/blog/emqx-server-ssl-tls-secure-connection-configuration-guide)。
 
 这里就总结启用 SSL/TLS 证书需要具备的条件是：
 
@@ -176,7 +176,7 @@ EMQ 内置自签名证书，默认已经启动了加密的 WebSocket 连接，�
 - 申请证书：向 CA 机构申请所用域名的证书，注意选择一个可靠的 CA 机构且证书要区分泛域名与主机名；
 - 使用加密连接的时候选择 `wss` 协议，并 **使用域名连接** ：绑定域名-证书之后，必须使用域名而非 IP 地址进行连接，这样浏览器才会根据域名去校验证书以在通过校验后建立连接。
 
-#### EMQ X 配置
+#### EMQX 配置
 
 打开 `etc/emqx.conf` 配置文件，修改以下配置：
 
@@ -191,13 +191,13 @@ listener.wss.external.keyfile = etc/certs/cert.key
 listener.wss.external.certfile = etc/certs/cert.pem
 ```
 
-完成后重启 EMQ X 即可。
+完成后重启 EMQX 即可。
 
 > 可以使用你的证书与密钥文件直接替换到 etc/certs/ 下。
 
 ### 在 Nginx 上配置反向代理与证书
 
-使用 Nginx 来反向代理并加密 WebSocket 可以减轻 EMQ X 服务器计算压力，同时实现域名复用，同时通过 Nginx 的负载均衡可以分配多个后端服务实体。
+使用 Nginx 来反向代理并加密 WebSocket 可以减轻 EMQX 服务器计算压力，同时实现域名复用，同时通过 Nginx 的负载均衡可以分配多个后端服务实体。
 
 ```shell
 # 建议 WebSocket 也绑定到 443 端口
@@ -223,7 +223,7 @@ location / {
     index index.html;
 }
 
-# 反向代理到 EMQ X 非加密 WebSocket
+# 反向代理到 EMQX 非加密 WebSocket
 location / {
     proxy_redirect off;
     # upstream

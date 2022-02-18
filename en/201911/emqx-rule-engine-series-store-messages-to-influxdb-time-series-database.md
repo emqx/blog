@@ -2,13 +2,13 @@
 
 [InfluxDB](https://www.influxdata.com/) is an open source database for storing and analyzing time series data， with built-in HTTP API, and the support for SQL-like statements and unstructured features are very friendly for users. Its powerful data throughput and stable performance make it ideal for the IoT area.
 
-With the EMQ X messaging engine, we can customize the Template file and then convert the Json-formatted MQTT message into  Measurement to write to InfluxDB:
+With the EMQX messaging engine, we can customize the Template file and then convert the Json-formatted MQTT message into  Measurement to write to InfluxDB:
 
 ![Artboard.jpg](https://static.emqx.net/images/09b103dd807d6fd009fa102c7bcf7d09.jpg)
 
 ## Introduction of  Scenario
 
-In this scenario, it is required to store the messages that meet the criteria under EMQ X in the InfluxDB time series database. In order to facilitate subsequent analysis and retrieval, the message content needs to be split for storage.
+In this scenario, it is required to store the messages that meet the criteria under EMQX in the InfluxDB time series database. In order to facilitate subsequent analysis and retrieval, the message content needs to be split for storage.
 
 **The data reported by the device in this scenario is as follows:**
 
@@ -51,7 +51,7 @@ $ docker run --name=influxdb --rm -d -p 8086:8086 -p 8089:8089/udp -v ${PWD}/fil
 
 ### Create a resource
 
-Open EMQ X Dashboard, go to the **Resources** page on the left menu, click the **New** button, type MySQL server information for resource creation, select the InfluxDB resource type and complete the relevant configuration for resource creation.
+Open EMQX Dashboard, go to the **Resources** page on the left menu, click the **New** button, type MySQL server information for resource creation, select the InfluxDB resource type and complete the relevant configuration for resource creation.
 
 ![image20190719110910530.jpg](https://static.emqx.net/images/4acb4de9937bdd0a460086eba0ae750b.jpg)
 
@@ -127,7 +127,7 @@ We successfully created a rule that contains a processing action, and expected r
 
 ### Test with the Websocket tool in Dashboard
 
-Switch to the **Tools** --> **Websocket** page, connect to EMQ X with any Client ID, and send the following message in the **Message** card after the connection is successful:
+Switch to the **Tools** --> **Websocket** page, connect to EMQX with any Client ID, and send the following message in the **Message** card after the connection is successful:
 
 - Topic：data/sensor
 
@@ -164,4 +164,4 @@ time                humidity location pm2_5 temperature
 
 So far, we have implemented the business development of using the rules engine to store messages to InfluxDB  .
 
-Before reading this tutorial, assume that you already know simple knowledge about  [MQTT](https://docs.oasis-open.org/mqtt/mqtt/v3.1.1/os/mqtt-v3.1.1-os.html),[EMQ X](https://github.com/emqx/emqx) .
+Before reading this tutorial, assume that you already know simple knowledge about  [MQTT](https://docs.oasis-open.org/mqtt/mqtt/v3.1.1/os/mqtt-v3.1.1-os.html),[EMQX](https://github.com/emqx/emqx) .

@@ -11,19 +11,19 @@ This article selects the following commonly used public MQTT brokers:
 
 | Name           | Broker Address            | TCP  | TLS        | WebSocket |
 | :------------- | :------------------------ | :--- | :--------- | :-------- |
-| EMQ X (Global) | `broker.emqx.io`          | 1883 | 8883       | 8083,8084 |
-| EMQ X (CN)     | `broker-cn.emqx.io`       | 1883 | 8883       | 8083,8084 |
+| EMQX (Global) | `broker.emqx.io`          | 1883 | 8883       | 8083,8084 |
+| EMQX (CN)     | `broker-cn.emqx.io`       | 1883 | 8883       | 8083,8084 |
 | Eclipse        | `mqtt.eclipseprojects.io` | 1883 | 8883       | 80, 443   |
 | Mosquitto      | `test.mosquitto.org`      | 1883 | 8883, 8884 | 80, 443   |
 | HiveMQ         | `broker.hivemq.com`       | 1883 | N/A        | 8000      |
 
-### EMQ X
+### EMQX
 
-It is a free online [MQTT 5 broker](https://www.emqx.io/) provided by [EMQ X Cloud](https://www.emqx.com/en/cloud). There are two access points provided, Global and CN, of which EMQ X (Global) is deployed in AWS, Oregon, USA, and EMQ X (CN) is deployed in Tencent Cloud, Shanghai.
+It is a free online [MQTT 5 broker](https://www.emqx.io/) provided by [EMQX Cloud](https://www.emqx.com/en/cloud). There are two access points provided, Global and CN, of which EMQX (Global) is deployed in AWS, Oregon, USA, and EMQX (CN) is deployed in Tencent Cloud, Shanghai.
 
-Both access points are EMQ X clusters composed of 2 nodes. Later, more nodes can be automatically added according to the actual access volume and load. According to the background display, the server is based on [EMQ X Enterprise](https://www.emqx.com/en/products/emqx) 4.2.6, and the current running time is 128 days.
+Both access points are EMQX clusters composed of 2 nodes. Later, more nodes can be automatically added according to the actual access volume and load. According to the background display, the server is based on [EMQX Enterprise](https://www.emqx.com/en/products/emqx) 4.2.6, and the current running time is 128 days.
 
-> Note: The two access points of EMQ X (Global) and EMQ X (CN) do not communicate with each other.
+> Note: The two access points of EMQX (Global) and EMQX (CN) do not communicate with each other.
 
 Related introduction: [Free Public MQTT 5 Broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker) 
 
@@ -64,8 +64,8 @@ In this part, We used the [MQTT client tool - MQTT X](https://mqttx.app/) for th
 
 | Name      | Broker Address            | TCP  | Available |
 | :-------- | :------------------------ | :--- | :-------- |
-| EMQ X     | `broker.emqx.io`          | 1883 | YES       |
-| EMQ X(CN) | `broker-cn.emqx.io`       | 1883 | YES       |
+| EMQX     | `broker.emqx.io`          | 1883 | YES       |
+| EMQX(CN) | `broker-cn.emqx.io`       | 1883 | YES       |
 | Eclipse   | `mqtt.eclipseprojects.io` | 1883 | YES       |
 | Mosquitto | `test.mosquitto.org`      | 1883 | YES       |
 | HiveMQ    | `broker.hivemq.com`       | 1883 | YES       |
@@ -86,8 +86,8 @@ We check the network connectivity and network delay through network access. Beca
 
 | Name      | HTTP address (Click to test)                                 | WebSocket |
 | :-------- | :----------------------------------------------------------- | :-------- |
-| EMQ X     | [http://broker.emqx.io:8083/mqtt](https://tool.chinaz.com/speedworld/http://broker.emqx.io:8083/mqtt) | 8083      |
-| EMQ X(CN) | [http://broker-cn.emqx.io:8083/mqtt](https://tool.chinaz.com/speedworld/broker-cn.emqx.io:8083/mqtt) | 8083      |
+| EMQX     | [http://broker.emqx.io:8083/mqtt](https://tool.chinaz.com/speedworld/http://broker.emqx.io:8083/mqtt) | 8083      |
+| EMQX(CN) | [http://broker-cn.emqx.io:8083/mqtt](https://tool.chinaz.com/speedworld/broker-cn.emqx.io:8083/mqtt) | 8083      |
 | Eclipse   | [http://mqtt.eclipseprojects.io/mqtt](https://tool.chinaz.com/speedworld/mqtt.eclipseprojects.io/mqtt) | 80        |
 | Mosquitto | [http://test.mosquitto.org/mqtt](https://tool.chinaz.com/speedworld/test.mosquitto.org/mqtt) | 80        |
 | HiveMQ    | [http://broker.hivemq.com:8000/mqtt](https://tool.chinaz.com/speedworld/broker.hivemq.com:8000/mqtt) | 8000      |
@@ -97,7 +97,7 @@ We check the network connectivity and network delay through network access. Beca
 - Resolution time: the time required for DNS resolution
 - Connection time: the time required to establish a TCP connection
 
-| **EMQ X**       | **Resolution time** | **Connection time** |
+| **EMQX**       | **Resolution time** | **Connection time** |
 | :-------------- | :------------------ | :------------------ |
 | Los Angeles     | 15ms                | 33ms                |
 | Tokyo           | -                   | -                   |
@@ -106,7 +106,7 @@ We check the network connectivity and network delay through network access. Beca
 | South Korea     | -                   | -                   |
 | Germany         | 15ms                | 160ms               |
 
-| **EMQ X(CN)**   | **Resolution time** | **Connection time** |
+| **EMQX(CN)**   | **Resolution time** | **Connection time** |
 | :-------------- | :------------------ | :------------------ |
 | Los Angeles     | <1ms                | 156ms               |
 | Tokyo           | <1ms                | 90ms                |
@@ -155,20 +155,20 @@ After emqtt-bench is ready, each of the following Sub/Pub commands is executed i
 
 | Name      | Broker address            | TCP  | Whether reach the standard(Pub)     | Whether reach the standard(Sub)        |
 | :-------- | :------------------------ | :--- | :---------------------------------- | :------------------------------------- |
-| EMQ X     | `broker.emqx.io`          | 1883 | YES                                 | YES                                    |
-| EMQ X(CN) | `broker-cn.emqx.io`       | 1883 | YES                                 | YES                                    |
+| EMQX     | `broker.emqx.io`          | 1883 | YES                                 | YES                                    |
+| EMQX(CN) | `broker-cn.emqx.io`       | 1883 | YES                                 | YES                                    |
 | Eclipse   | `mqtt.eclipseprojects.io` | 1883 | YES                                 | YES                                    |
 | Mosquitto | `test.mosquitto.org`      | 1883 | The rate fluctuates around 50 msg/s | The rate fluctuates between 0-50 msg/s |
 | HiveMQ    | `broker.hivemq.com`       | 1883 | YES                                 | The rate is stable at around 50 msg/s  |
 
 ```bash
-# EMQ X
+# EMQX
 ## Sub
 ./emqtt_bench sub -t t/1 -c 1 -h broker.emqx.io
 ## Pub
 ./emqtt_bench pub -t t/1 -c 1 -h broker.emqx.io -I 1
 
-# EMQ X CN
+# EMQX CN
 ## Sub
 ./emqtt_bench sub -t t/1 -c 1 -h broker-cn.emqx.io
 ## Pub
@@ -218,8 +218,8 @@ Count the client message delay and remove data with large errors (>5000ms):
 
 | Name      | Broker Address            | TCP  | Average delay |
 | :-------- | :------------------------ | :--- | :------------ |
-| EMQ X     | `broker.emqx.io`          | 1883 | 207 ms        |
-| EMQ X(CN) | `broker-cn.emqx.io`       | 1883 | 164 ms        |
+| EMQX     | `broker.emqx.io`          | 1883 | 207 ms        |
+| EMQX(CN) | `broker-cn.emqx.io`       | 1883 | 164 ms        |
 | Eclipse   | `mqtt.eclipseprojects.io` | 1883 | 250 ms        |
 | Mosquitto | `test.mosquitto.org`      | 1883 | 378 ms        |
 | HiveMQ    | `broker.hivemq.com`       | 1883 | 252 ms        |
@@ -229,10 +229,10 @@ Count the client message delay and remove data with large errors (>5000ms):
 
 In several tests, each free online MQTT server has reached a usable level as a whole. However, there are still significant differences between the servers in the specific indicators. There are stability and usability issues like low rate limit, unstable network delay, or even some servers are suspected of having a scheduled restart mechanism, which will bring a bad experience to users even in simple testing and prototyping.
 
-The above content also proves to a certain extent that the relevant performance of the IoT platform is affected by the geographic location of the device. Therefore, the EMQ X free online MQTT service that provides nearby access points for users in different regions based on the network of high-quality cloud service providers has certain advantages in comparison, and the test data is relatively leading in all aspects.
+The above content also proves to a certain extent that the relevant performance of the IoT platform is affected by the geographic location of the device. Therefore, the EMQX free online MQTT service that provides nearby access points for users in different regions based on the network of high-quality cloud service providers has certain advantages in comparison, and the test data is relatively leading in all aspects.
 
-We are delighted to see that more and more IoT devices worldwide are connected to the online MQTT server provided by EMQ X, and thousands of messages are delivered per second on average. `broker.emqx.io:1883` also appears in various open-source projects and sample codes on GitHub ([https://github.com/search?q=broker.emqx.io&type=Code](https://github.com/search?q=broker.emqx.io&type=Code)).
+We are delighted to see that more and more IoT devices worldwide are connected to the online MQTT server provided by EMQX, and thousands of messages are delivered per second on average. `broker.emqx.io:1883` also appears in various open-source projects and sample codes on GitHub ([https://github.com/search?q=broker.emqx.io&type=Code](https://github.com/search?q=broker.emqx.io&type=Code)).
 
-EMQ X online public broker is provided by [EMQ X Cloud](https://www.emqx.com/en/cloud). EMQ X Cloud is a fully managed cloud-native MQTT messaging service provided by EMQ, which supports commercial-level accessibility and stability. Business users can quickly start projects at zero cost and implement MQTT device access in a simple and fast way by using EMQ X Cloud. In the later stage, it can be expanded as needed according to the business development. Users can create access points nearby worldwide and enjoy the 7 * 24 technical support provided by the EMQ professional team.
+EMQX online public broker is provided by [EMQX Cloud](https://www.emqx.com/en/cloud). EMQX Cloud is a fully managed cloud-native MQTT messaging service provided by EMQ, which supports commercial-level accessibility and stability. Business users can quickly start projects at zero cost and implement MQTT device access in a simple and fast way by using EMQX Cloud. In the later stage, it can be expanded as needed according to the business development. Users can create access points nearby worldwide and enjoy the 7 * 24 technical support provided by the EMQ professional team.
 
-Whether it is a personal or corporate project, EMQ is committed to providing the most appropriate MQTT messaging service for all kinds of users. If you have any comments or questions when using EMQ X, please feel free to give feedback to our team at any time.
+Whether it is a personal or corporate project, EMQ is committed to providing the most appropriate MQTT messaging service for all kinds of users. If you have any comments or questions when using EMQX, please feel free to give feedback to our team at any time.

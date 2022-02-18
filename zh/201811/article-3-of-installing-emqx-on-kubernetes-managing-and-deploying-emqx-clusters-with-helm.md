@@ -418,7 +418,7 @@ spec:
 
 ### 部署到 kubernetes
 
-在 EMQ X 目录下执行下面的命令将应用部署到 kubernetes 集群上。
+在 EMQX 目录下执行下面的命令将应用部署到 kubernetes 集群上。
 
 ```
 $ helm install --set env.kubeApiserver=http://172.31.31.241:8080 .NAME:   ugly-bumblebee

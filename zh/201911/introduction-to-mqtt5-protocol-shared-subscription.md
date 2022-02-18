@@ -26,7 +26,7 @@
 
 ### 共享策略
 
-虽然共享订阅使得订阅端能够[负载均衡](https://www.emqx.com/zh/blog/mqtt-broker-clustering-part-2-sticky-session-load-balancing)地消费消息，但 MQTT 协议并没有规定 Server 应当使用什么负载均衡策略。作为参考，EMQ X 提供了 random, round_robin, sticky, hash 四种策略供用户自行选择。
+虽然共享订阅使得订阅端能够[负载均衡](https://www.emqx.com/zh/blog/mqtt-broker-clustering-part-2-sticky-session-load-balancing)地消费消息，但 MQTT 协议并没有规定 Server 应当使用什么负载均衡策略。作为参考，EMQX 提供了 random, round_robin, sticky, hash 四种策略供用户自行选择。
 
 - random: 在所有共享订阅会话中随机选择一个发送消息
 - round_robin: 按照订阅顺序轮流选择

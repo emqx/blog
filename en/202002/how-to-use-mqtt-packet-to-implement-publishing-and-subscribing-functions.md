@@ -8,7 +8,7 @@ MQTT protocol is based on the TCP / IP protocol. Both the MQTT Broker and the Cl
 
 ![1.png](https://static.emqx.net/images/5002d126f2768ed89f0186d35cb5f3d7.png)
 
-If you don't have an available MQTT broker for the time being, **[EMQ X](https://github.com/emqx/emqx)** provides a public broker address for testing: `broker.emqx.io:1883` .
+If you don't have an available MQTT broker for the time being, **[EMQX](https://github.com/emqx/emqx)** provides a public broker address for testing: `broker.emqx.io:1883` .
 
 ### Client
 
@@ -24,7 +24,7 @@ The ClientId must exist, but the server can allow the client to provide a zero-b
 
 #### Username/Password
 
-MQTT can implement related authentication and authorization by sending the username and password. However, if this information is not encrypted, the username and password are sent in clear text. EMQ X not only supports SSL / TLS encryption, but also provides **[emqx-auth-username](https://github.com/emqx/emqx-auth-username)** plugin to encrypt passwords.
+MQTT can implement related authentication and authorization by sending the username and password. However, if this information is not encrypted, the username and password are sent in clear text. EMQX not only supports SSL / TLS encryption, but also provides **[emqx-auth-username](https://github.com/emqx/emqx-auth-username)** plugin to encrypt passwords.
 
 #### Keep Alive
 

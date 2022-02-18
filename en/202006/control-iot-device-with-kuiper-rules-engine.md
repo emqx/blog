@@ -13,11 +13,11 @@ The scenario does not have any real business logics, but simply to demonstrate t
 
 ## Prerequisite knowledge
 
-This document will not cover basic operations for EdgeX & EMQ X Kuiper, so readers should have basic knowledge for them:
+This document will not cover basic operations for EdgeX & EMQX Kuiper, so readers should have basic knowledge for them:
 
 - Refer to [this link](https://docs.edgexfoundry.org/1.2/) for learning basic knowledge of EdgeX, and it would be better to finish [Quick Start](https://docs.edgexfoundry.org/1.2/getting-started/quick-start/).
 - Refer to [EdgeX Kuiper Rule Engine Tutorial](https://github.com/emqx/kuiper/blob/master/docs/en_US/edgex/edgex_rule_engine_tutorial.md): You'd better go through this quick tutorial, and get to start trying out the rules engine in the EdgeX.
-- [Go template](https://golang.org/pkg/text/template/): EMQ X Kuiper uses Go template for extracting data from analysis result. Knowledge of Go template could help you to extract expected data from analysis result.
+- [Go template](https://golang.org/pkg/text/template/): EMQX Kuiper uses Go template for extracting data from analysis result. Knowledge of Go template could help you to extract expected data from analysis result.
 
 ## Start to use
 
@@ -206,7 +206,7 @@ In some cases, you probably need to iterate over returned array values, or set d
 
 ## Extended readings
 
-If you want to explore more features of EMQ X Kuiper, please refer to below resources.
+If you want to explore more features of EMQX Kuiper, please refer to below resources.
 
 - [Kuiper Github](https://github.com/emqx/kuiper/)
 - [Kuiper reference guide](https://github.com/lf-edge/ekuiper/blob/master/docs/en_US/reference.md)

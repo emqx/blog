@@ -1,4 +1,4 @@
-本文由 [青云](https://qingcloud.com)的小伙伴撰稿，介绍了如何使用 KubeSphere 对 EMQ X 集群在 Kubernetes 上的进行快速部署与管理。
+本文由 [青云](https://qingcloud.com)的小伙伴撰稿，介绍了如何使用 KubeSphere 对 EMQX 集群在 Kubernetes 上的进行快速部署与管理。
 
 ## KubeSphere 应用部署与管理
 
@@ -26,15 +26,15 @@ KubeSphere 支持向导式 UI，当应用的各个组件进行容器化之后，
 
 ![](https://pek3b.qingstor.com/kubesphere-docs/png/20191028200917.png)
 
-本文先介绍 KubeSphere 支持的 **第一种应用部署与管理方式**，通过在企业空间导入第三方应用仓库，快速部署一个 [EMQ X](https://www.emqx.com/zh) 集群至 Kubernetes，最终访问 EMQ X 的 Dashboard 服务，同时介绍 EMQ X 本身的特性与部署方式。
+本文先介绍 KubeSphere 支持的 **第一种应用部署与管理方式**，通过在企业空间导入第三方应用仓库，快速部署一个 [EMQX](https://www.emqx.com/zh) 集群至 Kubernetes，最终访问 EMQX 的 Dashboard 服务，同时介绍 EMQX 本身的特性与部署方式。
 
-## EMQ X 是什么
+## EMQX 是什么
 
-EMQ X 是一款完全开源，高度可伸缩，高可用的 **分布式 [MQTT](https://www.emqx.com/zh/mqtt) 消息服务器**，适用于 **IoT、M2M 和移动应用程序**，可处理 **千万级别的并发客户端**。EMQ X 面向海量的移动/物联网/车载等终端接入，并实现在 **海量物理网设备间快速低延时的消息路由**。
+EMQX 是一款完全开源，高度可伸缩，高可用的 **分布式 [MQTT](https://www.emqx.com/zh/mqtt) 消息服务器**，适用于 **IoT、M2M 和移动应用程序**，可处理 **千万级别的并发客户端**。EMQX 面向海量的移动/物联网/车载等终端接入，并实现在 **海量物理网设备间快速低延时的消息路由**。
 
 ![emq.jpeg](https://static.emqx.net/images/f9cd470bf894e8f18bd9b5e16ba03c80.jpeg)
 
-## 部署简单的 EMQ X 集群
+## 部署简单的 EMQX 集群
 
 ### 导入应用仓库
 
@@ -54,11 +54,11 @@ EMQ X 是一款完全开源，高度可伸缩，高可用的 **分布式 [MQTT](
 
 ![](https://pek3b.qingstor.com/kubesphere-docs/png/20191025005223.png)
 
-5. 点击查看 EMQ X 应用模板。
+5. 点击查看 EMQX 应用模板。
 
 ![](https://pek3b.qingstor.com/kubesphere-docs/png/20191025005341.png)
 
-6. 预览 EMQ X 的 [Helm Chart](https://github.com/emqx/emqx-chart) 中的配置文件，然后选择 `部署应用`。
+6. 预览 EMQX 的 [Helm Chart](https://github.com/emqx/emqx-chart) 中的配置文件，然后选择 `部署应用`。
 
 ![](https://pek3b.qingstor.com/kubesphere-docs/png/20191025005439.png)
 
@@ -66,7 +66,7 @@ EMQ X 是一款完全开源，高度可伸缩，高可用的 **分布式 [MQTT](
 
 KubeSphere 支持可视化编辑 Helm Chart，在 `Values.yaml` 参考如下提示，将其中 3 处修改为指定的值：
 
-> 提示：关于 EMQ X 的 Helm Chart 更详细的参数释义，请参考 EMQ X 的官方 [EMQ X Chart](https://github.com/emqx/emqx-chart)。
+> 提示：关于 EMQX 的 Helm Chart 更详细的参数释义，请参考 EMQX 的官方 [EMQX Chart](https://github.com/emqx/emqx-chart)。
 
 ```yaml
 namespace: demo-project # 此处替换为您实际创建的项目名称
@@ -78,47 +78,47 @@ service:
 ···
 ```
 
-修改完成后点击 `部署` 即可将 EMQ X 集群部署至 Kubernetes。
+修改完成后点击 `部署` 即可将 EMQX 集群部署至 Kubernetes。
 
 ![](https://pek3b.qingstor.com/kubesphere-docs/png/20191025005829.png)
 
-### 查看 EMQ X 部署状态
+### 查看 EMQX 部署状态
 
 **应用详情**
 
-在应用列表中，可以看到 EMQ X 的应用状态，点击进入该应用，查看该应用的工作负载与服务的状态。
+在应用列表中，可以看到 EMQX 的应用状态，点击进入该应用，查看该应用的工作负载与服务的状态。
 
 ![](https://pek3b.qingstor.com/kubesphere-docs/png/20191025010515.png)
 
 **查看工作负载 → 有状态副本集**
 
-EMQ X 部署成功后，将部署 3 副本的有状态副本集（Statefulsets），当显示 `运行中 (3/3)` 时，说明应用部署成功。
+EMQX 部署成功后，将部署 3 副本的有状态副本集（Statefulsets），当显示 `运行中 (3/3)` 时，说明应用部署成功。
 
 ![](https://pek3b.qingstor.com/kubesphere-docs/png/20191025010654.png)
 
-### 访问 EMQ X Dashboard 服务
+### 访问 EMQX Dashboard 服务
 
-1. 在 `应用负载 → 服务` 页面，即可看到 EMQ X 对外暴露的 NodePort 以及端口映射情况，服务端口 18083 映射到节点的 NodePort (如 32688) 即 EMQ X Dashboard 能够在集群外访问到的端口。
+1. 在 `应用负载 → 服务` 页面，即可看到 EMQX 对外暴露的 NodePort 以及端口映射情况，服务端口 18083 映射到节点的 NodePort (如 32688) 即 EMQX Dashboard 能够在集群外访问到的端口。
 
 ![](https://pek3b.qingstor.com/kubesphere-docs/png/20191025103211.png)
 
-2. 使用  `<$IP><$NodePort>` 访问 EMQ X Dashboard 服务，使用默认帐密 `admin/public` 登录 Dashboard。
+2. 使用  `<$IP><$NodePort>` 访问 EMQX Dashboard 服务，使用默认帐密 `admin/public` 登录 Dashboard。
 
 ![](https://pek3b.qingstor.com/kubesphere-docs/png/20191025104359.png)
 
-3. 在首页的监控列表即可看到 EMQ X Broker 的系统信息，包括 3 Nodes 和 3 Stats 监控信息，状态显示 Running。用户可通过 Web 控制台，查看服务器 **运行状态、统计数据、连接(Connections)、会话(Sessions)、主题(Topics)、订阅(Subscriptions)、插件(Plugins)** 等信息。关于 EMQ X 的详细使用请参考 EMQ X 官方文档 (docs.emqx.io)。
+3. 在首页的监控列表即可看到 EMQX Broker 的系统信息，包括 3 Nodes 和 3 Stats 监控信息，状态显示 Running。用户可通过 Web 控制台，查看服务器 **运行状态、统计数据、连接(Connections)、会话(Sessions)、主题(Topics)、订阅(Subscriptions)、插件(Plugins)** 等信息。关于 EMQX 的详细使用请参考 EMQX 官方文档 (docs.emqx.io)。
 
 ![](https://pek3b.qingstor.com/kubesphere-docs/png/20191025104904.png)
 
-4. EMQ X 的 3 个 Nodes IP 正好对应着 EMQ X Statefulsets 的 3 个 Pod IP。
+4. EMQX 的 3 个 Nodes IP 正好对应着 EMQX Statefulsets 的 3 个 Pod IP。
 
 ![](https://pek3b.qingstor.com/kubesphere-docs/png/20191025105350.png)
 
-## 部署持久化的 EMQ X 集群
+## 部署持久化的 EMQX 集群
 
-EMQ X 通过创建 PVC 资源挂载 `/opt/emqx/data/mnesia` 目录实现持久化 Pods，在部署 EMQ X 之前，用户可以通过部署 [Haproxy](https://www.haproxy.org/) 或 [Nginx-PLUS](https://www.nginx.com/products/nginx/) 等负载均衡器，然后在 Kubernetes 中创建 PV 或 StorageClass。
+EMQX 通过创建 PVC 资源挂载 `/opt/emqx/data/mnesia` 目录实现持久化 Pods，在部署 EMQX 之前，用户可以通过部署 [Haproxy](https://www.haproxy.org/) 或 [Nginx-PLUS](https://www.nginx.com/products/nginx/) 等负载均衡器，然后在 Kubernetes 中创建 PV 或 StorageClass。
 
-在 KubeSphere 部署一个持久化的 EMQ X 集群步骤与上述步骤类似，因此这里仅提示参数配置。在准备好负载均衡器后，只需要在可视化编辑 Helm Chart 的 `Values.yaml` 中指定 StorageClass 相关参数即可。
+在 KubeSphere 部署一个持久化的 EMQX 集群步骤与上述步骤类似，因此这里仅提示参数配置。在准备好负载均衡器后，只需要在可视化编辑 Helm Chart 的 `Values.yaml` 中指定 StorageClass 相关参数即可。
 
 ```yaml
 ···
@@ -140,21 +140,21 @@ service:
 
 
 
-> 提示：如果有 TLS 连接的需要，推荐在负载均衡器终结 SSL 连接。客户端与负载均衡器之间 TLS 安全连接，负载均衡器与 EMQ X 之间普通 TCP 连接。
+> 提示：如果有 TLS 连接的需要，推荐在负载均衡器终结 SSL 连接。客户端与负载均衡器之间 TLS 安全连接，负载均衡器与 EMQX 之间普通 TCP 连接。
 
 ![](https://pek3b.qingstor.com/kubesphere-docs/png/20191025120216.png)
 
-完成后使用 `<$IP><$NodePort>` 或集群内访问 `<$ClusterIP>:<$Port>` 即可访问持久化的 EMQ X 集群服务。
+完成后使用 `<$IP><$NodePort>` 或集群内访问 `<$ClusterIP>:<$Port>` 即可访问持久化的 EMQX 集群服务。
 
-## 扩容 EMQ X 集群
+## 扩容 EMQX 集群
 
-KubeSphere 支持一键快速扩展 EMQ X 集群，进入 `工作负载 → 有状态副本集`，点击扩容的 Button 将 EMQ X 副本数扩容至 5。注意，EMQ X 的节点数量建议为 **单数**。
+KubeSphere 支持一键快速扩展 EMQX 集群，进入 `工作负载 → 有状态副本集`，点击扩容的 Button 将 EMQX 副本数扩容至 5。注意，EMQX 的节点数量建议为 **单数**。
 
 ![](https://pek3b.qingstor.com/kubesphere-docs/png/20191025114511.png)
 
 ## 一键进入容器终端
 
-若在运维 EMQ X 集群的过程中，需要快速进入容器终端，可在 EMQ X 的有状态副本详情页找到其中一个 Pod，点击进入指定 Pod 下的容器中。
+若在运维 EMQX 集群的过程中，需要快速进入容器终端，可在 EMQX 的有状态副本详情页找到其中一个 Pod，点击进入指定 Pod 下的容器中。
 
 ![](https://pek3b.qingstor.com/kubesphere-docs/png/20191025115208.png)
 
@@ -162,7 +162,7 @@ KubeSphere 支持一键快速扩展 EMQ X 集群，进入 `工作负载 → 有�
 
 ## 总结
 
-本文介绍了 KubeSphere 支持的 **第一种应用部署与管理方式**，通过在企业空间导入了 [EMQ X](https://www.emqx.com/zh) 应用仓库，并快速部署到了 Kubernetes。未来，**EMQ X + KubeSphere** 可作为物联网应用场景下快速落地**容器微服务**的解决方案。
+本文介绍了 KubeSphere 支持的 **第一种应用部署与管理方式**，通过在企业空间导入了 [EMQX](https://www.emqx.com/zh) 应用仓库，并快速部署到了 Kubernetes。未来，**EMQX + KubeSphere** 可作为物联网应用场景下快速落地**容器微服务**的解决方案。
 
 下一期文章将主要介绍第二种方式 - **应用商店与应用的生命周期管理**，如何使用开发者或 ISV 角色用户，将 Helm 应用的 **上传提交、应用审核、测试部署、应用上架、应用升级、应用下架** 作为一个完整的流程来演示。
 

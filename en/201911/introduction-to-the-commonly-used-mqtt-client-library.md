@@ -2,7 +2,7 @@
 
 MQTT is a lightweight [publish-subscribe](https://www.emqx.com/en/blog/mqtt-5-introduction-to-publish-subscribe-model) mode messaging protocol designed for IoT applications in low-bandwidth and unstable network environments. MQTT is based on the publish/subscribe paradigm and works on the TCP/IP protocol family. [MQTT protocol](https://www.emqx.com/en/mqtt) is lightweight, simple, open and easy to implement， which makes it suitable for a wide range of applications.
 
-MQTT is based on the client-server communication mode. MQTT server is called as MQTT Broker. Currently, there are many MQTT Brokers in the industry, whose advantages and disadvantages and functional differences will not be discussed in this article. Taking the [most popular MQTT broker - EMQ X](https://www.emqx.io/) in the open source community as an example, this article uses the public Broker `broker.emqx.io` provided by  [EMQ](https://www.emqx.com/en) , and uses a simple example of connecting Broker, publishing and processing messages by client to summarizes the usage and examples of [MQTT client libraries](https://www.emqx.com/en/mqtt-client-sdk) under different programming languages and platforms.
+MQTT is based on the client-server communication mode. MQTT server is called as MQTT Broker. Currently, there are many MQTT Brokers in the industry, whose advantages and disadvantages and functional differences will not be discussed in this article. Taking the [most popular MQTT broker - EMQX](https://www.emqx.io/) in the open source community as an example, this article uses the public Broker `broker.emqx.io` provided by  [EMQ](https://www.emqx.com/en) , and uses a simple example of connecting Broker, publishing and processing messages by client to summarizes the usage and examples of [MQTT client libraries](https://www.emqx.com/en/mqtt-client-sdk) under different programming languages and platforms.
 
 The selected MQTT client libraries are as follows:
 
@@ -303,9 +303,9 @@ func main() {
 
 ## emqtt : Erlang MQTT client library provided by EMQ
 
-[emqtt](https://github.com/emqx/emqtt)  is a client library officially provided by EMQ of the open source MQTT Broker EMQ X, which is applicable for the Erlang language.
+[emqtt](https://github.com/emqx/emqtt)  is a client library officially provided by EMQ of the open source MQTT Broker EMQX, which is applicable for the Erlang language.
 
-The Erlang ecosystem has several MQTT Broker implementations, such as RabbitMQ, VerenMQ, EMQ X, etc. that support MQTT through plugins. However, there is almost no room for choice in the MQTT client library. [emqtt](https://github.com/emqx/emqtt) in the Erlang client library included in the MQTT community is the best choice .
+The Erlang ecosystem has several MQTT Broker implementations, such as RabbitMQ, VerenMQ, EMQX, etc. that support MQTT through plugins. However, there is almost no room for choice in the MQTT client library. [emqtt](https://github.com/emqx/emqtt) in the Erlang client library included in the MQTT community is the best choice .
 
 Emqtt is implemented entirely by Erlang and completely supports the MQTT v3.1.1 and MQTT v5.0 protocol. It also supports SSL  single and two-way  authentication and WebSocket connection. Another MQTT benchmarking tool  [emqtt_bench](https://github.com/emqx/emqtt-bench)  is built based on this client library.
 
@@ -448,4 +448,4 @@ client.loop_forever()
 
 ## Summary
 
-This is the introduction of MQTT protocol, MQTT client library usage process and common MQTT  clients. Readers are welcome to learn MQTT  and develop projects through EMQ X.
+This is the introduction of MQTT protocol, MQTT client library usage process and common MQTT  clients. Readers are welcome to learn MQTT  and develop projects through EMQX.

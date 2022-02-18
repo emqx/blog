@@ -12,9 +12,9 @@ Readers can refer to the InfluxDB official documentation (https://docs.influxdat
 
 
 
-## Configure EMQ X server
+## Configure EMQX server
 
-EMQ X is installed via RPM, the InfluxDB related configuration file is located in  the directory of `/etc/emqx/plugins/emqx_backend_influxdb.conf`, and the InfluxDB plugin only supports message storage considering the function location.
+EMQX is installed via RPM, the InfluxDB related configuration file is located in  the directory of `/etc/emqx/plugins/emqx_backend_influxdb.conf`, and the InfluxDB plugin only supports message storage considering the function location.
 
 **Configure the connection address and connection pool size：**
 
@@ -47,7 +47,7 @@ Start the plugin by the method of either `command line` or `console`.
 
 Because MQTT Message cannot be written directly to InfluxDB, InfluxDB Backend provides the emqx_backend_influxdb.tmpl template file to convert MQTT Messages into DataPoints that can be written to InfluxDB.
 
-> The message template feature requires EMQ X to be restarted to apply the changes.
+> The message template feature requires EMQX to be restarted to apply the changes.
 
 The tmpl file is located in `data/templates/emqx_backend_influxdb_example.tmpl`. Using the json format, users can define different Templates for different Topic, which is similar to:
 
@@ -150,7 +150,7 @@ Backend converts the MQTT Message to:
 
 ## Example
 
-On the **WebSocket** page of EMQ X Management Console , the above format message message is published to the `sample` topic, and the message is parsed and stored in the `measurement` corresponding to the InfluxDB `udp` database.
+On the **WebSocket** page of EMQX Management Console , the above format message message is published to the `sample` topic, and the message is parsed and stored in the `measurement` corresponding to the InfluxDB `udp` database.
 
 ## Summary
 

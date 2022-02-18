@@ -1,6 +1,6 @@
 ## Concept of Bridge
 
-Bridge is a way to connect multiple EMQ X or other MQTT message middleware. Unlike clusters, topic trees and routing tables are not replicated between nodes operating in bridge mode. What the bridge mode does is:
+Bridge is a way to connect multiple EMQX or other MQTT message middleware. Unlike clusters, topic trees and routing tables are not replicated between nodes operating in bridge mode. What the bridge mode does is:
 
 - Forward messages to the bridge node according to the rules;
 - Subscribe to the topic from the bridge node and forward the message in the node/cluster after receiving the message.
@@ -10,8 +10,8 @@ Bridge is a way to connect multiple EMQ X or other MQTT message middleware. Unli
 There are different application scenarios for working in the bridge mode and working in the cluster mode. The bridge can complete some functions that cannot be realized by using the cluster alone:
 
 - Deploy across VPCs. Since the bridge does not need to duplicate the topic tree and the routing table, the requirements for network stability and delay are lower than those of the cluster. Different nodes in the bridge mode can be deployed on different VPCs, and the client can select physically close node for connections, so as to improve the coverage of the entire application.
-- Support for heterogeneous nodes. Since the essence of bridge is the forwarding and subscription of messages, in theory, all message middleware supporting the [MQTT protocol](https://www.emqx.com/en/mqtt) can be bridged to EMQ X. Even for some message services using other protocols, if there is a protocol adapter, the message can also be forwarded through the bridge.  
-- Increase the service limit for individual application. Due to internal overhead, a single EMQ X has a upper limit  of nodes. If multiple clusters are bridged and bridging rules is designed according to the business requirements, the application's service limit can be increased by one level.
+- Support for heterogeneous nodes. Since the essence of bridge is the forwarding and subscription of messages, in theory, all message middleware supporting the [MQTT protocol](https://www.emqx.com/en/mqtt) can be bridged to EMQX. Even for some message services using other protocols, if there is a protocol adapter, the message can also be forwarded through the bridge.  
+- Increase the service limit for individual application. Due to internal overhead, a single EMQX has a upper limit  of nodes. If multiple clusters are bridged and bridging rules is designed according to the business requirements, the application's service limit can be increased by one level.
 
 In a specific application, a bridged originating node can be approximated as a client of a remote node.
 
@@ -19,7 +19,7 @@ In a specific application, a bridged originating node can be approximated as a c
 
 ## Scenario introduction
 
-This scenario requires bridging messages under EMQ X specified topics and satisfying conditions to EMQ X or other MQTT Broker.
+This scenario requires bridging messages under EMQX specified topics and satisfying conditions to EMQX or other MQTT Broker.
 
 **Reporting information on the device side in this scenario is as follows: **
 
@@ -46,7 +46,7 @@ When the reported data of engine speed value is greater than `8000`,  part of th
 
 
 
-## Bridging EMQ X to Mosquitto 
+## Bridging EMQX to Mosquitto 
 
 ### Preparation
 
@@ -68,11 +68,11 @@ $ mosquitto -c /usr/local/etc/mosquitto/mosquitto.conf
 
 #### Create a resource
 
-Open EMQ X Dashboard, go to the **Resources** page on the left menu, click the **New** button, type Mosquitto server information to create a resource.
+Open EMQX Dashboard, go to the **Resources** page on the left menu, click the **New** button, type Mosquitto server information to create a resource.
 
 ![image01.jpg](https://static.emqx.net/images/c1c7f02109bc77b9df69011b67e27ac2.jpg)
 
-The network environment of the nodes in the EMQ X cluster may not be connected to each other. After the resource is created successfully, click the **Status button ** in the list to check the resource connection status of each node. If the resources on the node are unavailable, check whether the configuration is correct and the network connectivity is correct, and click the **Reconnect** button to manually reconnect.
+The network environment of the nodes in the EMQX cluster may not be connected to each other. After the resource is created successfully, click the **Status button ** in the list to check the resource connection status of each node. If the resources on the node are unavailable, check whether the configuration is correct and the network connectivity is correct, and click the **Reconnect** button to manually reconnect.
 
 ![image02.jpg](https://static.emqx.net/images/169d0ba48bab14af6b496cbb403b5446.jpg)
 
@@ -180,7 +180,7 @@ We successfully created a rule that contains a processing action, and the expect
 
 #### Test with the Websocket tool in Dashboard
 
-Switch to the **Tools** --> **Websocket** page, use any information client to connect to EMQ X. After the connection is successful, the **message**  card sends the following information:
+Switch to the **Tools** --> **Websocket** page, use any information client to connect to EMQX. After the connection is successful, the **message**  card sends the following information:
 
 - Topic: cmd/state/NXP-058659730253-963945118132721-22
 - Message body:
@@ -222,11 +222,11 @@ Prepare another emqx node and enable two emqx.
 
 #### Create a resource
 
-Open EMQ X Dashboard, go to the **Resources** page on the left menu, click the **New** button, type EMQ X server information for resource creation.
+Open EMQX Dashboard, go to the **Resources** page on the left menu, click the **New** button, type EMQX server information for resource creation.
 
 ![image01.jpg](https://static.emqx.net/images/b039915b5a3344cd31d6ac2b90258749.jpg)
 
-The network environment of the nodes in the EMQ X cluster may not be connected to each other. After the resource is created successfully, click the **Status button ** in the list to check the resource connection status of each node. If the resources on the node are unavailable, check whether the configuration is correct and the network connectivity is correct, and click the **Reconnect** button to manually reconnect.
+The network environment of the nodes in the EMQX cluster may not be connected to each other. After the resource is created successfully, click the **Status button ** in the list to check the resource connection status of each node. If the resources on the node are unavailable, check whether the configuration is correct and the network connectivity is correct, and click the **Reconnect** button to manually reconnect.
 
 ![image02.jpg](https://static.emqx.net/images/e8a1e9b8fe12623ee6e66419ebb031d3.jpg)
 
@@ -314,9 +314,9 @@ The test output data is:
 
 The test output is as expected and we can proceed to the next step.
 
-#### Add a response action, bridge the message to another EMQ X
+#### Add a response action, bridge the message to another EMQX
 
-After the SQL condition input and output is correct, we continue to add the  response action, configure to write SQL statement, and bridge the filter result to another EMQ X.
+After the SQL condition input and output is correct, we continue to add the  response action, configure to write SQL statement, and bridge the filter result to another EMQX.
 
 Click the **Add** button in the response action, select the **Bridge data to MQTT Broker** action, and select the resource just selected.
 
@@ -331,11 +331,11 @@ Click the **Add** button in the response action, select the **Bridge data to MQT
 We successfully created a rule that contains a processing action, and the expected result of the action is as follows:
 
 1. When the device reports a message to the `cmd/state/:id` topic, it will hit SQL when the value of `tachometer` in the message exceeds 8000, and the number of **hits** in the rule list is increased by 1;
-2. The EMQ X subscriber will receive a piece of data with the same value as the current message.
+2. The EMQX subscriber will receive a piece of data with the same value as the current message.
 
 #### Test with the Websocket tool in Dashboard
 
-Switch to the **Tools** --> **Websocket** page, use any information client to connect to EMQ X. After the connection is successful, the **message**  card sends the following information:
+Switch to the **Tools** --> **Websocket** page, use any information client to connect to EMQX. After the connection is successful, the **message**  card sends the following information:
 
 - Topic: cmd/state/NXP-058659730253-963945118132721-22
 - Message body:

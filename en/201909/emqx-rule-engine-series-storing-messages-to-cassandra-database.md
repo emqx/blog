@@ -10,12 +10,12 @@ Installation Reference of Cassandra：https://cassandra.apache.org/doc/latest/ge
 
 ## Principle overview
 
-By configuring the rules engine, EMQ X stores messages that meet certain criteria under a given topic into the Cassandra database. The message flow diagram is as follows:
+By configuring the rules engine, EMQX stores messages that meet certain criteria under a given topic into the Cassandra database. The message flow diagram is as follows:
 ![Artboard.png](https://static.emqx.net/images/347f6b4787038e60ff443409df36b76a.png)
 
 among them:
 
-- PUB/SUB: Publish and subscribe processing logic for EMQ X.
+- PUB/SUB: Publish and subscribe processing logic for EMQX.
 - Rule: IoT message rules that extract, filter, and transform data in message packet.
 - Action: An action for specific execution. For example, store into databases, write Kafka, etc.
 
@@ -115,13 +115,13 @@ CREATE TABLE emqx_rule_engine_output.use_statistics (
 
 ### Create a resource
 
-Open the EMQ X Dashboard, go to the **Resources** page of the left menu, click the **New** button, select the Cassandra resource type to create:
+Open the EMQX Dashboard, go to the **Resources** page of the left menu, click the **New** button, select the Cassandra resource type to create:
 
 ![cassrescreate2x.jpg](https://static.emqx.net/images/4b22f6ad34e1d1fccf392bb7f5d2d64b.jpg)
 
 
 
-The network environment of the nodes in the EMQ X cluster may be different. After the resources are created successfully, click the **Status button ** in the list to check the connection status of each node. If the resources on the node are unavailable, check whether the configuration is correct and the network connectivity is correct, and click the **Reconnect** button to manually reconnect.
+The network environment of the nodes in the EMQX cluster may be different. After the resources are created successfully, click the **Status button ** in the list to check the connection status of each node. If the resources on the node are unavailable, check whether the configuration is correct and the network connectivity is correct, and click the **Reconnect** button to manually reconnect.
 
 
 ![cassresstatus2x.jpg](https://static.emqx.net/images/45a380b895ca101d9dd722eccba84306.jpg)
@@ -240,7 +240,7 @@ INSERT INTO use_statistics (msgid, client_id, speed, tachometer, ts) VALUES (${i
 
 ## Test
 
-#### Expected results
+### Expected results
 
 We successfully created a rule that contains a processing action, and the expected result of action  is as follows:
 
@@ -249,9 +249,9 @@ We successfully created a rule that contains a processing action, and the expect
 
 
 
-#### Test with the Websocket tool in Dashboard
+### Test with the Websocket tool in Dashboard
 
-Switch to the **Tools => Websocket** page and use any information client to connect to EMQ X. After the connection is successful, the **message**  card sends the following message:
+Switch to the **Tools => Websocket** page and use any information client to connect to EMQX. After the connection is successful, the **message**  card sends the following message:
 
 - Topic: cmd/state/NXP-058659730253-963945118132721-22
 

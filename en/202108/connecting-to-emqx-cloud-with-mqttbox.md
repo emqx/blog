@@ -1,4 +1,4 @@
-This article will take [MQTTBox](https://github.com/workswithweb/MQTTBox) as [MQTT client](https://www.emqx.com/en/blog/introduction-to-the-commonly-used-mqtt-client-library) test tool to connect to [MQTT Cloud Service-EMQ X Cloud](https://www.emqx.com/en/cloud). Through this article, you will be able to quickly understand the basic usage of MQTTBox and the basic concepts and usage of the [MQTT protocol](https://www.emqx.com/en/mqtt).
+This article will take [MQTTBox](https://github.com/workswithweb/MQTTBox) as [MQTT client](https://www.emqx.com/en/blog/introduction-to-the-commonly-used-mqtt-client-library) test tool to connect to [MQTT Cloud Service-EMQX Cloud](https://www.emqx.com/en/cloud). Through this article, you will be able to quickly understand the basic usage of MQTTBox and the basic concepts and usage of the [MQTT protocol](https://www.emqx.com/en/mqtt).
 
 
 
@@ -17,19 +17,19 @@ MQTTBox fully supports the following functions:
 
 
 
-## Introduction to EMQ X Cloud
+## Introduction to EMQX Cloud
 
-[EMQ X Cloud](https://www.emqx.com/en/cloud) is a fully managed cloud-native MQTT service launched by [EMQ](https://www.emqx.com/en) company that can connect to a large number of IoT devices and integrate various databases and business systems. As the **world's first fully managed** [**MQTT 5.0**](https://www.emqx.com/en/mqtt/mqtt5) **public cloud service**, EMQ X Cloud provides MQTT message service with one-stop operation and maintenance management and a unique isolation environment.
+[EMQX Cloud](https://www.emqx.com/en/cloud) is a fully managed cloud-native MQTT service launched by [EMQ](https://www.emqx.com/en) company that can connect to a large number of IoT devices and integrate various databases and business systems. As the **world's first fully managed** [**MQTT 5.0**](https://www.emqx.com/en/mqtt/mqtt5) **public cloud service**, EMQX Cloud provides MQTT message service with one-stop operation and maintenance management and a unique isolation environment.
 
-In the era of the Internet of Everything, EMQ X Cloud can help users quickly build industry applications for the IoT area and easily realize the collection, transmission, calculation, and persistence of IoT data.
+In the era of the Internet of Everything, EMQX Cloud can help users quickly build industry applications for the IoT area and easily realize the collection, transmission, calculation, and persistence of IoT data.
 
-This article will use [Free Public MQTT Server](https://www.emqx.com/en/mqtt/public-mqtt5-broker) provided by EMQ X Cloud as the MQTT server address for this test. The server access information is as follows:
+This article will use [Free Public MQTT Server](https://www.emqx.com/en/mqtt/public-mqtt5-broker) provided by EMQX Cloud as the MQTT server address for this test. The server access information is as follows:
 
 - Broker: **broker.emqx.io**
 - TCP Port: **1883**
 - SSL/TLS Port: **8883**
 
-For more details, please visit [EMQ X Cloud website](https://www.emqx.com/en/cloud) or check [EMQ X Cloud documentation](https://docs.emqx.io/en/cloud/latest/).
+For more details, please visit [EMQX Cloud website](https://www.emqx.com/en/cloud) or check [EMQX Cloud documentation](https://docs.emqx.io/en/cloud/latest/).
 
 
 
@@ -55,7 +55,7 @@ After saving successfully, you will enter a page of client details. If the butto
 
 ### Subscribe to a topic
 
-Once the connection is established, you can start subscribing to messages. Because the MQTT protocol uses a publish/subscribe model, we need to subscribe to a topic after connecting, and then there will be messages on the topic to receive messages from EMQ X Cloud.
+Once the connection is established, you can start subscribing to messages. Because the MQTT protocol uses a publish/subscribe model, we need to subscribe to a topic after connecting, and then there will be messages on the topic to receive messages from EMQX Cloud.
 
 There are two input boxes for sending and subscribing by default in the client details page of MQTTBox. If there are multiple subscriptions or different published content, you can add multiple boxes. Click the `Add publisher` and `Add subscriber` buttons in the top menu bar to add and manage multiple publishers/subscribers.
 
@@ -73,7 +73,7 @@ At this point, we can see the message just published in the subscription box on 
 
 In addition to normal connections, MQTTBox also supports TLS/SSL connections.
 
-If you use EMQ X Cloud, you can refer to this [document](https://docs.emqx.io/en/cloud/latest/deployments/tls_ssl.html) to create a certificate. We can enter the client details page, select the protocol as mqtts/tls or wss, and then select save.
+If you use EMQX Cloud, you can refer to this [document](https://docs.emqx.io/en/cloud/latest/deployments/tls_ssl.html) to create a certificate. We can enter the client details page, select the protocol as mqtts/tls or wss, and then select save.
 
 If it is two-way authentication, you can select the CA certificate file, the client certificate, and the client key file on the configuration page, and then select connection. Please confirm the TLS/SSL connection port and modify it before connecting.
 

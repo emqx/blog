@@ -1,6 +1,6 @@
-EMQ X Broker 4.2-rc.1 正式发布，欢迎大家下载试用，下载地址：https://github.com/emqx/emqx/releases/tag/v4.2-rc.1。 如果您想要与我们分享反馈意见，或者遇到任何问题需要帮助，可以通过 https://github.com/emqx/emqx/issues 与我们交流。
+EMQX Broker 4.2-rc.1 正式发布，欢迎大家下载试用，下载地址：https://github.com/emqx/emqx/releases/tag/v4.2-rc.1。 如果您想要与我们分享反馈意见，或者遇到任何问题需要帮助，可以通过 https://github.com/emqx/emqx/issues 与我们交流。
 
-> EMQ X Broker 是一款高并发低延迟，支持分布式集群架构的开源 MQTT 消息服务器，支持单机百万连接，更多信息请访问：https://www.emqx.com/zh/products/emqx
+> EMQX Broker 是一款高并发低延迟，支持分布式集群架构的开源 MQTT 消息服务器，支持单机百万连接，更多信息请访问：https://www.emqx.com/zh/products/emqx
 
 
 
@@ -10,7 +10,7 @@ EMQ X Broker 4.2-rc.1 正式发布，欢迎大家下载试用，下载地址：h
 
 - 【新增】支持使用第三方语言编写扩展插件接入其他非 MQTT 协议，目前已支持 Java 和 Python 两种编程语言。访问 https://github.com/emqx/emqx-exproto/blob/master/README.md 获取更多相关信息
 - 【新增】支持修订版本间的热更新
-- 【新增】新增遥测功能，收集有关 EMQ X Broker 使用情况的信息以帮助我们改进产品，此功能默认开启，支持手动关闭。访问 https://docs.emqx.io/broker/latest/en/advanced/telemetry.html 获取更多遥测相关信息。
+- 【新增】新增遥测功能，收集有关 EMQX Broker 使用情况的信息以帮助我们改进产品，此功能默认开启，支持手动关闭。访问 https://docs.emqx.io/broker/latest/en/advanced/telemetry.html 获取更多遥测相关信息。
 - 【新增】规则引擎支持为 MQTT 桥接创建订阅
 - 【新增】规则引擎支持功能更加强大的 SQL 语法
 - 【新增】MySQL、PostgreSQL 等插件全面支持 IPv6、SSL/TLS
@@ -30,7 +30,7 @@ EMQ X Broker 4.2-rc.1 正式发布，欢迎大家下载试用，下载地址：h
 
 ### 5.0 发布计划
 
-EMQ X 开源研发团队已正式进入 5.0 的开发阶段，5.0 版本将作为 5G 大基建超大规模多协议超融合接入平台，拥有更加健壮的全新架构、更加强大的性能以及更加流畅的使用体验，它将为您带来：
+EMQX 开源研发团队已正式进入 5.0 的开发阶段，5.0 版本将作为 5G 大基建超大规模多协议超融合接入平台，拥有更加健壮的全新架构、更加强大的性能以及更加流畅的使用体验，它将为您带来：
 
 - 支持更快的 QUIC 协议
 - 领先的 [NB-IoT](https://www.emqx.com/zh/blog/emqx-nb-iot-access-solution) 网络与 LwM2M 支持

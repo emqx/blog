@@ -98,7 +98,7 @@ MQTT 没有假设设备或 Broker 使用了 TCP 的保活机制[^4]，而是设�
 
 MQTT 设计了遗愿(Last Will) 消息，让 Broker 在发现设备异常下线的情况下，帮助设备发布一条遗愿消息到指定的主题。
 
-实际上在某些 [MQTT 服务器](https://www.emqx.com/zh/products/emqx)的实现里 (比如 EMQ X)，设备上线或下线的时候 Broker 会通过某些系统主题发布设备状态更新，更符合实际应用场景。
+实际上在某些 [MQTT 服务器](https://www.emqx.com/zh/products/emqx)的实现里 (比如 EMQX)，设备上线或下线的时候 Broker 会通过某些系统主题发布设备状态更新，更符合实际应用场景。
 
 ## 开源 MQTT 服务器如何选择
 
@@ -108,7 +108,7 @@ MQTT 设计了遗愿(Last Will) 消息，让 Broker 在发现设备异常下线�
 
    使用 C 语言实现的 MQTT 服务器。Eclipse 组织还还包含了大量的 MQTT 客户端项目：https://www.eclipse.org/paho/#
 
-2. [EMQ X](https://github.com/emqx/emqx)
+2. [EMQX](https://github.com/emqx/emqx)
 
    使用 Erlang 语言开发的 MQTT 服务器，内置强大的规则引擎，支持许多其他 IoT 协议比如 MQTT-SN、 CoAP、LwM2M 等。
 
@@ -120,7 +120,7 @@ MQTT 设计了遗愿(Last Will) 消息，让 Broker 在发现设备异常下线�
 
    同样使用 Erlang 开发的 MQTT 服务器.
 
-从支持 [MQTT 5.0](https://www.emqx.com/zh/mqtt/mqtt5)、稳定性、扩展性、集群能力等方面考虑，[EMQ X](https://www.emqx.com/zh/products/emqx) 的表现应该是最好的：
+从支持 [MQTT 5.0](https://www.emqx.com/zh/mqtt/mqtt5)、稳定性、扩展性、集群能力等方面考虑，[EMQX](https://www.emqx.com/zh/products/emqx) 的表现应该是最好的：
 
 - 使用 Erlang OTP 开发，容错能力好 (电信领域久经考验的语言，曾经做出过 99.9999999% 可用性的交换机设备[^5])
 - 官方有大量的扩展插件可供扩展。有很多认证插件，数据存储(backend)插件可供选择。可支持各种关系型数据库，NoSQL 数据库，以及常见消息队列如 Kafka，RabbitMQ，Pulsar 等
@@ -132,7 +132,7 @@ MQTT 设计了遗愿(Last Will) 消息，让 Broker 在发现设备异常下线�
 
 ### MQTT 在线服务器
 
-EMQ X [MQTT 物联网云服务](https://www.emqx.com/zh/cloud) 提供了一个在线的公共 MQTT 5.0 服务器，不需要任何安装您就可以快速开始 MQTT 协议的学习、测试或原型制作。
+EMQX [MQTT 物联网云服务](https://www.emqx.com/zh/cloud) 提供了一个在线的公共 MQTT 5.0 服务器，不需要任何安装您就可以快速开始 MQTT 协议的学习、测试或原型制作。
 
 该 MQTT 服务器的详细接入信息请见 EMQ 官网页面：[免费的在线 MQTT 服务器](https://www.emqx.com/zh/mqtt/public-mqtt5-broker)。
 

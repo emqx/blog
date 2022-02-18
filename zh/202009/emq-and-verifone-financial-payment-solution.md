@@ -1,6 +1,6 @@
 ![画板 18.png](https://static.emqx.net/images/243743a615af54ea2aa3a876fc778bf6.png)
 
-**2019 年 8 月，美国 Verifone（惠尔丰）和 EMQ 签订合作协议，由 EMQ 为 Verifone 的新一代金融电子支付系统提供基础设施软件——EMQ X Enterprise，用以连接 Verifone 在全球千万级别的支付终端设备**。到现在为止，EMQ X Enterprise 已经在 Verifone 的生产环境稳定运行超过一年。现在，让我们来回顾一下这个项目。
+**2019 年 8 月，美国 Verifone（惠尔丰）和 EMQ 签订合作协议，由 EMQ 为 Verifone 的新一代金融电子支付系统提供基础设施软件——EMQX Enterprise，用以连接 Verifone 在全球千万级别的支付终端设备**。到现在为止，EMQX Enterprise 已经在 Verifone 的生产环境稳定运行超过一年。现在，让我们来回顾一下这个项目。
 
 
 
@@ -18,7 +18,7 @@ Verifone 的海量交易数、遍布全球的客户以及它悠久的行业耕�
 
 在确定采用 MQTT 协议之后，Verifone 的技术团队开始了选型工作，对市面上所有的开源及商业 MQTT Broker 进行了逐一考量。同时，团队也得到了汽车行业一些同仁对于 EMQ 的推荐。技术团队全面评估了 EMQ 及其他同类产品并进行了相应的 PoC，考量的方面包括功能、性能、稳定性、可扩展性等，甚至在终端上进行的通讯时电池消耗也在考量范围内。
 
-根据 Verifone 技术团队的评测，EMQ X Enterprise 由成熟领先的技术团队主导开发，其采用的高并发、高稳定的开发语言 Erlang/OTP使其具备了突出的性能， **在相同的硬件设施条件下，EMQ X Enterprise 能够提供的服务能力是同业软件的倍数级别，可以为 Verifone 节约大量的基础设施费用** 。 同时，EMQ X Enterprise 的稳定性和可扩展性也非常优异，支持最多的第三方数据处理服务，并将在未来版本中提供规则引擎以简化业务开发，为 Verifone 节约时间和开发成本。<!--（注：截至本文发布时，EMQ X Enterprise 最新版本已支持规则引擎功能。）-->
+根据 Verifone 技术团队的评测，EMQX Enterprise 由成熟领先的技术团队主导开发，其采用的高并发、高稳定的开发语言 Erlang/OTP使其具备了突出的性能， **在相同的硬件设施条件下，EMQX Enterprise 能够提供的服务能力是同业软件的倍数级别，可以为 Verifone 节约大量的基础设施费用** 。 同时，EMQX Enterprise 的稳定性和可扩展性也非常优异，支持最多的第三方数据处理服务，并将在未来版本中提供规则引擎以简化业务开发，为 Verifone 节约时间和开发成本。<!--（注：截至本文发布时，EMQX Enterprise 最新版本已支持规则引擎功能。）-->
 
 在选型过程中，除了技术指标，Verifone 也考察了 EMQ 产品的服务支持能力和财务稳定性，结果均令人满意。
 
@@ -38,18 +38,18 @@ Verifone 的支付系统以多集群的方式分布在美洲、欧洲、亚洲�
 
 ### 服务侧
 
-EMQ X Enterprise 前端部署了 LB 做负载均衡并终结 TLS 连接，后端部署了某型数据库为数据持久化服务和存放离线消息。同时，该数据库也用于存储 Authentication 和 ACL 数据，提供设备接入安全和应用层访问控制安全。Verifone 在服务侧还部署了 Kafka 数据流服务，EMQ X Enterprise 的高性能 Kafka 数据桥接能高速地将消息转发至 Kafka，供其他后台业务使用。
+EMQX Enterprise 前端部署了 LB 做负载均衡并终结 TLS 连接，后端部署了某型数据库为数据持久化服务和存放离线消息。同时，该数据库也用于存储 Authentication 和 ACL 数据，提供设备接入安全和应用层访问控制安全。Verifone 在服务侧还部署了 Kafka 数据流服务，EMQX Enterprise 的高性能 Kafka 数据桥接能高速地将消息转发至 Kafka，供其他后台业务使用。
 
 ### 服务层面
 
-EMQ X Enterprise 提供了丰富的 API 接口，可以以少量开发投入支持不断加入的业务服务，满足业务增长需求。
+EMQX Enterprise 提供了丰富的 API 接口，可以以少量开发投入支持不断加入的业务服务，满足业务增长需求。
 
 ### 数据层面
 
-新设备使用 JSON 数据格式。当前版本的 EMQ X Enterprise 支持解析 JSON Payload，并能以消息内容和消息事件触发规则引擎，在后续应用中，这一点无疑会为应用开发提供不少方便。
+新设备使用 JSON 数据格式。当前版本的 EMQX Enterprise 支持解析 JSON Payload，并能以消息内容和消息事件触发规则引擎，在后续应用中，这一点无疑会为应用开发提供不少方便。
 
  
 
 ## 结语
 
-无论是 EMQ 的团队还是 EMQ X Enterprise 产品，在 Verifone 的选型、PoC 和到目前的部署进展中都显示出了卓越的能力。 **随着合作的进一步加深，EMQ 也将不断完善在金融与支付领域的解决方案，为 Verifone 提供更好的产品和服务，并在未来帮助领域内更多企业从容应对数字化、信息化挑战** 。
+无论是 EMQ 的团队还是 EMQX Enterprise 产品，在 Verifone 的选型、PoC 和到目前的部署进展中都显示出了卓越的能力。 **随着合作的进一步加深，EMQ 也将不断完善在金融与支付领域的解决方案，为 Verifone 提供更好的产品和服务，并在未来帮助领域内更多企业从容应对数字化、信息化挑战** 。

@@ -33,9 +33,9 @@ Will Properties 中的消息过期间隔（Message Expiry Interval）等属性�
 
 ### 演示遗嘱消息的使用
 
-接下来我们使用 [EMQ X](https://www.emqx.io/zh) 和 [MQTT X](https://mqttx.app/zh) 来演示一下遗嘱消息的实际使用。
+接下来我们使用 [EMQX](https://www.emqx.io/zh) 和 [MQTT X](https://mqttx.app/zh) 来演示一下遗嘱消息的实际使用。
 
-为了实现 MQTT 连接被异常断开的效果，我们需要调整一下 EMQ X 的默认 ACL 规则与相关配置项：
+为了实现 MQTT 连接被异常断开的效果，我们需要调整一下 EMQX 的默认 ACL 规则与相关配置项：
 
 首先在 `etc/acl.conf` 中添加以下 ACL 规则，表示拒绝本机客户端连接发布 test 主题。注意需要加在所有默认 ACL 规则之前，以确保这条规则能成功生效：
 
@@ -49,7 +49,7 @@ Will Properties 中的消息过期间隔（Message Expiry Interval）等属性�
 zone.internal.acl_deny_action = disconnect
 ```
 
-完成以上修改后，我们启动 EMQ X。
+完成以上修改后，我们启动 EMQX。
 
 接下来，我们在 MQTT X 中新建一个名为 demo 的连接，Host 修改为 localhost，在 Advanced 部分选择 MQTT Version 为 5.0，并且将 Session Expiry Interval 设置为 10，确保会话不会在遗嘱消息发布前过期。
 

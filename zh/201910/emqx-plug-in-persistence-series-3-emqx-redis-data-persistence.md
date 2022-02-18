@@ -1,10 +1,10 @@
-## EMQ X 数据持久化简介
+## EMQX 数据持久化简介
 
 数据持久化的主要使用场景包括将客户端上下线状态，订阅主题信息，消息内容，消息抵达后发送消息回执等操作记录到 Redis、MySQL、PostgreSQL、MongoDB、Cassandra、AWS DynamoDB 等各类数据库中供外部服务快速查询或在服务宕机/客户端异常离线时保留当前运行状态，连接恢复时恢复到之前状态；持久化亦可用于客户端代理订阅，设备客户端上线时，持久化模块直接从数据库加载预设的主题并完成代理订阅，降低系统设计复杂度和减少客户端订阅通信开销。
 
 用户也可以通过订阅相关主题的方式来实现类似的功能，但是在企业版中内置的这些持久化的支持执行效率更高、可靠性更强，大大降低了开发者的工作量并提升了系统稳定性。
 
-> 数据持久化是 EMQ X 的重要功能，仅在企业版支持。
+> 数据持久化是 EMQX 的重要功能，仅在企业版支持。
 
 
 
@@ -55,9 +55,9 @@ Redis 是完全开源免费遵守 BSD 协议的高性能 key-value 数据库。
 
 
 
-### 配置 EMQ X 服务器
+### 配置 EMQX 服务器
 
-通过 RPM 方式安装的 EMQ X，Redis 相关的配置文件位于 `/etc/emqx/plugins/emqx_backend_redis.conf`，如果只是测试 Redis 持久化的功能，大部分配置不需要做更改。唯一需要更改的地方可能是 Redis 服务器的地址：如果读者安装的 Redis 不与 EMQ X 在同一服务器上，请指定正确的 Redis 服务器的地址与端口。如下所示：
+通过 RPM 方式安装的 EMQX，Redis 相关的配置文件位于 `/etc/emqx/plugins/emqx_backend_redis.conf`，如果只是测试 Redis 持久化的功能，大部分配置不需要做更改。唯一需要更改的地方可能是 Redis 服务器的地址：如果读者安装的 Redis 不与 EMQX 在同一服务器上，请指定正确的 Redis 服务器的地址与端口。如下所示：
 
 ```bash
 ## Redis Server 127.0.0.1:6379, Redis Sentinel: 127.0.0.1:26379
@@ -76,7 +76,7 @@ emqx_ctl plugins load emqx_backend_redis
 
 客户端上下线时，更新在线状态、上下线时间、节点客户端列表至 Redis 数据库。
 
-尽管 EMQ X 本身提供了设备在线状态 API，但在需要频繁获取客户端在线状态、上下线时间的场景下，直接从数据库获取该记录比调用 EMQ X  API 更高效。
+尽管 EMQX 本身提供了设备在线状态 API，但在需要频繁获取客户端在线状态、上下线时间的场景下，直接从数据库获取该记录比调用 EMQX  API 更高效。
 
 ### 配置项
 
@@ -92,7 +92,7 @@ backend.redis.hook.client.disconnected.1 = {"action": {"function": "on_client_di
 
 ### 使用示例
 
-浏览器打开 `http://127.0.0.1:18083` EMQ X 管理控制台，在 **工具** -> **Websocket** 中新建一个客户端连接，指定 clientid 为 sub_client:
+浏览器打开 `http://127.0.0.1:18083` EMQX 管理控制台，在 **工具** -> **Websocket** 中新建一个客户端连接，指定 clientid 为 sub_client:
 
 ![image20181116105333637.png](https://static.emqx.net/images/870151e73a93512e8169d41eafb8ff0f.png)
 
@@ -184,7 +184,7 @@ backend.redis.hook.client.connected.2    = {"action": {"function": "on_subscribe
 
 ```
 
-2. EMQ X  管理控制台 **WebSocket** 页面，以 clientid `sub_client`  新建一个客户端连接，切换至**订阅**页面，可见当前客户端自动订阅了 `sub_client/upstream` 与 `sub_client/downlink` 两个 QoS 1 的主题：
+2. EMQX  管理控制台 **WebSocket** 页面，以 clientid `sub_client`  新建一个客户端连接，切换至**订阅**页面，可见当前客户端自动订阅了 `sub_client/upstream` 与 `sub_client/downlink` 两个 QoS 1 的主题：
 ![image20181116110036523.png](https://static.emqx.net/images/a8f9d8628e7f00637add7ad26f933bcd.png)
 
 
@@ -211,13 +211,13 @@ backend.redis.hook.message.publish.1 = {"topic": "#", "action": {"function": "on
 
 ### 使用示例
 
-在 EMQ X 管理控制台 **WebSocket** 页面中，使用 clientid `sub_client` 建立连接，向主题 `upstream_topic` 发布多条消息。针对每条消息， EMQ X 将持久化消息列表、消息详情两条记录。
+在 EMQX 管理控制台 **WebSocket** 页面中，使用 clientid `sub_client` 建立连接，向主题 `upstream_topic` 发布多条消息。针对每条消息， EMQX 将持久化消息列表、消息详情两条记录。
 
 
 
 ### 消息列表
 
-EMQ X 将消息列表以 message id 持久化至 `mqtt:msg:{topic}` Redis 集合中：
+EMQX 将消息列表以 message id 持久化至 `mqtt:msg:{topic}` Redis 集合中：
 
 ```bash
 ## 获取 upstream_topic 主题集合中所有 message id
@@ -290,7 +290,7 @@ MQTT 离线消息需满足以下条件：
 2. 订阅 QoS > 0
 3. 发布 QoS > 0
 
-在 EMQ X 管理控制台中以如下配置建立连接，
+在 EMQX 管理控制台中以如下配置建立连接，
 
 ![image20191009113040528.png](https://static.emqx.net/images/9b4eba3c602b37498087cee203777ce5.png)
 
@@ -314,7 +314,7 @@ backend.redis.hook.message.publish.3     = {"topic": "#", "action": {"function":
 
 ### 消息列表
 
-EMQ X 将消息列表以 message id 持久化至 `mqtt:retain:{topic}` Redis Hash 中：
+EMQX 将消息列表以 message id 持久化至 `mqtt:retain:{topic}` Redis Hash 中：
 
 ```bash
 ## 获取 upstream_topic 主题集合中所有 message id

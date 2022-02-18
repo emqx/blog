@@ -1,6 +1,6 @@
 ## 概览
 
-在 [EdgeX Geneva](https://www.edgexfoundry.org/) 版本中, [EMQ X Kuiper - 基于 SQL 的轻量级流式数据处理软件](https://github.com/lf-edge/ekuiper)与 EdgeX 进行了集成。在进入这篇教程之前，让我们先花一些时间来了解一些 Kuiper 的基本知识。EMQ X Kuiper 是 Golang 实现的轻量级物联网边缘分析、流式处理开源软件，可以运行在各类资源受限的边缘设备上。Kuiper 基于`源 (Source)`，`SQL (业务逻辑处理)`， `目标 (Sink)` 的方式来支持流式数据处理。
+在 [EdgeX Geneva](https://www.edgexfoundry.org/) 版本中, [EMQX Kuiper - 基于 SQL 的轻量级流式数据处理软件](https://github.com/lf-edge/ekuiper)与 EdgeX 进行了集成。在进入这篇教程之前，让我们先花一些时间来了解一些 Kuiper 的基本知识。EMQX Kuiper 是 Golang 实现的轻量级物联网边缘分析、流式处理开源软件，可以运行在各类资源受限的边缘设备上。Kuiper 基于`源 (Source)`，`SQL (业务逻辑处理)`， `目标 (Sink)` 的方式来支持流式数据处理。
 
 - 源（Source）：流式数据的数据源，例如来自于 [MQTT 服务器](https://www.emqx.com/zh/products/emqx) 的数据。在 EdgeX 的场景下，数据源就是 EdgeX 消息总线（EdgeX message bus），可以是来自于 ZeroMQ 或者 MQTT 服务器；
 
@@ -275,7 +275,7 @@ Connecting to 127.0.0.1:20498...
 - [如何使用 meta 函数抽取在 EdgeX 消息总线中发送的更多信息？](https://github.com/emqx/kuiper/blob/master/docs/zh_CN/edgex/edgex_meta.md) 设备服务往总线上发送数据的时候，一些额外的信息也随之发送，比如时间创建时间，id 等。如果你想在 SQL 语句中使用这些信息，请参考这篇文章。
 - [EdgeX 消息总线目标](https://github.com/emqx/kuiper/blob/master/docs/zh_CN/rules/sinks/edgex.md). 该文档描述了如何使用 EdgeX 消息总线目标。如果你想把分析结果发送到消息总线中，你可能对此文章感兴趣。
 
-如想了解更多的 EMQ X Kuiper 的信息，请参考以下资源。
+如想了解更多的 EMQX Kuiper 的信息，请参考以下资源。
 
 - [Kuiper Github 代码库](https://github.com/emqx/kuiper/)
 - [Kuiper 参考指南](https://github.com/emqx/kuiper/blob/master/docs/zh_CN/reference.md)

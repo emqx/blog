@@ -18,16 +18,16 @@ NB-IoT has developed rapidly in 2017-2018, and many operators around the world h
 - Utilities
 - Natural disaster management
 
-Since 2017, EMQ X has started to cooperate with a top operator in the development of IoT platform project. In 2018, EMQ X released a new IoT Application Enabling Platform (AEP) supporting NB-IoT technology. The platform allows the NB-IoT terminals of customers in the industry to access directly through the operator NB-IoT network, and quickly construct the IoT application through the platform's open capability.
+Since 2017, EMQX has started to cooperate with a top operator in the development of IoT platform project. In 2018, EMQX released a new IoT Application Enabling Platform (AEP) supporting NB-IoT technology. The platform allows the NB-IoT terminals of customers in the industry to access directly through the operator NB-IoT network, and quickly construct the IoT application through the platform's open capability.
 
 
 
 With the help of equipment access, message routing, data storage and equipment management and control services provided by AEP platform, the development process of applications can be greatly simplified. Most applications can be completed by dragging and dropping platform components and defining templates. Customers can also develop fully functional IoT applications through the platform's rich API interface and a small amount of coding work. Customer-developed applications can run directly on the platform, saving a lot of operating costs.
 
-In this project, EMQ X IoT Message Middleware is the core component of the platform, which is used to access all kinds of IoT devices in the whole country (mainly NB-IoT, including 3G, 4G, PON, LAN, etc.) of operators. Through efficient protocol parsing and message routing capabilities, massive device messages are aggregated to the platform data layer, which also provide reliable reverse control channels for back-end device management and application modules.
+In this project, EMQX IoT Message Middleware is the core component of the platform, which is used to access all kinds of IoT devices in the whole country (mainly NB-IoT, including 3G, 4G, PON, LAN, etc.) of operators. Through efficient protocol parsing and message routing capabilities, massive device messages are aggregated to the platform data layer, which also provide reliable reverse control channels for back-end device management and application modules.
 
-EMQ X's innovative distributed clustering solution enables automatic addition of new nodes and automatic deletion of faulty nodes, which effectively guarantees the automatic expansion and long-term stable operation of the AEP platform's access capacity and improves the reliability of the carrier's customer service.
+EMQX's innovative distributed clustering solution enables automatic addition of new nodes and automatic deletion of faulty nodes, which effectively guarantees the automatic expansion and long-term stable operation of the AEP platform's access capacity and improves the reliability of the carrier's customer service.
 
 ![WX20190803150105.png](https://static.emqx.net/images/900e7fe329d84d87e25b631d3bcf6879.png)
 
-EMQ X has the capabilities of mass equipment access, 10 million high concurrency, IoT full protocol stack, and millisecond low latency that enable the carrier-grade IoT platform to be built in a few months, and effectively supports the landing and commercial operation of the operator's NB-IoT and even the whole IoT platform strategy.
+EMQX has the capabilities of mass equipment access, 10 million high concurrency, IoT full protocol stack, and millisecond low latency that enable the carrier-grade IoT platform to be built in a few months, and effectively supports the landing and commercial operation of the operator's NB-IoT and even the whole IoT platform strategy.

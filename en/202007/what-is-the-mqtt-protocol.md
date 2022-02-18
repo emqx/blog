@@ -108,7 +108,7 @@ There are several popular MQTT Brokers so far:
 
    MQTT broker implemented in C. The Eclipse organization also contains a number of MQTT client projects: https://www.eclipse.org/paho/#
 
-2. [EMQ X](https://github.com/emqx/emqx)
+2. [EMQX](https://github.com/emqx/emqx)
 
    MQTT broker developed in Erlang language that supports many other IoT protocols such as CoAP, LwM2M, etc.
 
@@ -120,7 +120,7 @@ There are several popular MQTT Brokers so far:
 
    MQTT broker also developed using Erlang
 
-Considering support for [MQTT 5.0](https://www.emqx.com/en/mqtt/mqtt5), stability, scalability, cluster capabilities, etc., [EMQ X's](https://www.emqx.com/en/products/emqx) performance should be the best:
+Considering support for [MQTT 5.0](https://www.emqx.com/en/mqtt/mqtt5), stability, scalability, cluster capabilities, etc., [EMQX's](https://www.emqx.com/en/products/emqx) performance should be the best:
 
 - Developed with Erlang OTP, good fault tolerance (proven language in telecommunication field that once made 99.9999999% availability of switch equipment[^5])
 - There are a lot of official plugins for extension. There are many authentication plugins, and the backend plugin is available. Supports various relational databases, NoSQL databases, and common [message queues](https://www.emqx.com/en/blog/mqtt5-feature-inflight-window-message-queue) such as Kafka, RabbitMQ, Pulsar, etc.
@@ -132,7 +132,7 @@ Considering support for [MQTT 5.0](https://www.emqx.com/en/mqtt/mqtt5), stabilit
 
 ### Public MQTT broker
 
-EMQ X [MQTT IoT cloud service](https://www.emqx.com/en/cloud) provides an online public MQTT 5.0 broker.  You can quickly start learning, testing MQTT protocol or prototyping.
+EMQX [MQTT IoT cloud service](https://www.emqx.com/en/cloud) provides an online public MQTT 5.0 broker.  You can quickly start learning, testing MQTT protocol or prototyping.
 
 For the detailed accessing information for this MQTT broker, please visit the EMQ website: [free public MQTT broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker).
 

@@ -32,7 +32,7 @@ v0.6 还增加了基本的数据统计功能，支持对诸如 stream 的写入�
 
 ## 新增数据写入 Rest API 
 
-v0.6 版本增加了向 HStreamDB 写入数据的 Rest API，通过此 API 并结合 EMQ X 开源版的 web hook 功能，可以实现 EMQ X 和 HStreamDB 的快速集成。
+v0.6 版本增加了向 HStreamDB 写入数据的 Rest API，通过此 API 并结合 EMQX 开源版的 web hook 功能，可以实现 EMQX 和 HStreamDB 的快速集成。
 
 ## HStreamDB Java SDK 更新
 

@@ -13,21 +13,21 @@
 
 | 名称          | Broker 地址               | TCP  | TLS        | WebSocket |
 | :------------ | :------------------------ | :--- | :--------- | :-------- |
-| EMQ X         | `broker.emqx.io`          | 1883 | 8883       | 8083,8084 |
-| EMQ X（国内） | `broker-cn.emqx.io`       | 1883 | 8883       | 8083,8084 |
+| EMQX         | `broker.emqx.io`          | 1883 | 8883       | 8083,8084 |
+| EMQX（国内） | `broker-cn.emqx.io`       | 1883 | 8883       | 8083,8084 |
 | Eclipse       | `mqtt.eclipseprojects.io` | 1883 | 8883       | 80, 443   |
 | Mosquitto     | `test.mosquitto.org`      | 1883 | 8883, 8884 | 80        |
 | HiveMQ        | `broker.hivemq.com`       | 1883 | N/A        | 8000      |
 
-### EMQ X
+### EMQX
 
-免费在线的 MQTT 5 服务器，由 [EMQ X Cloud](https://www.emqx.com/zh/cloud) 提供。为优化国内用户访问速度，分别提供了海外跟国内两个接入点，其中 EMQ X 部署在 AWS 美国俄勒冈区域，EMQ X（国内）部署在腾讯云上海区域，国内访问有稳定的网络通道。
+免费在线的 MQTT 5 服务器，由 [EMQX Cloud](https://www.emqx.com/zh/cloud) 提供。为优化国内用户访问速度，分别提供了海外跟国内两个接入点，其中 EMQX 部署在 AWS 美国俄勒冈区域，EMQX（国内）部署在腾讯云上海区域，国内访问有稳定的网络通道。
 
-两个接入点均为 2 个节点组成的 [EMQ X 集群](https://www.emqx.com/zh/blog/tag/mqtt-broker-集群)，后期根据实际接入量和负载可以自动扩容更多节点。根据后台显示，该服务器基于 [EMQ X 企业版](https://www.emqx.com/zh/products/emqx) 4.2.6 版本，当前运行时长为 128 天。
+两个接入点均为 2 个节点组成的 [EMQX 集群](https://www.emqx.com/zh/blog/tag/mqtt-broker-集群)，后期根据实际接入量和负载可以自动扩容更多节点。根据后台显示，该服务器基于 [EMQX 企业版](https://www.emqx.com/zh/products/emqx) 4.2.6 版本，当前运行时长为 128 天。
 
 详细介绍请访问 EMQ 官网页面：[免费的在线 MQTT 5 服务器](https://www.emqx.com/zh/mqtt/public-mqtt5-broker)。
 
-> 注：EMQ X 与 EMQ X(国内) 两个接入点数据不互通。
+> 注：EMQX 与 EMQX(国内) 两个接入点数据不互通。
 
 ### Eclipse
 
@@ -70,8 +70,8 @@
 
 | 名称          | Broker 地址               | TCP  | 可用 |
 | :------------ | :------------------------ | :--- | :--- |
-| EMQ X         | `broker.emqx.io`          | 1883 | YES  |
-| EMQ X（国内） | `broker-cn.emqx.io`       | 1883 | YES  |
+| EMQX         | `broker.emqx.io`          | 1883 | YES  |
+| EMQX（国内） | `broker-cn.emqx.io`       | 1883 | YES  |
 | Eclipse       | `mqtt.eclipseprojects.io` | 1883 | NO   |
 | Mosquitto     | `test.mosquitto.org`      | 1883 | YES  |
 | HiveMQ        | `broker.hivemq.com`       | 1883 | YES  |
@@ -94,16 +94,16 @@ MQTT X 具备连接导入导出功能，以下是本文测试使用的连接数�
 
 | 名称        | HTTP 地址(点击进行测试)                                      | WebSocket |
 | :---------- | :----------------------------------------------------------- | :-------- |
-| EMQ X       | [http://broker.emqx.io:8083/mqtt](https://tool.chinaz.com/speedtest/http://broker.emqx.io:8083/mqtt) | 8083      |
-| EMQ X(国内) | [http://broker-cn.emqx.io:8083/mqtt](https://tool.chinaz.com/speedtest/broker-cn.emqx.io:8083/mqtt) | 8083      |
+| EMQX       | [http://broker.emqx.io:8083/mqtt](https://tool.chinaz.com/speedtest/http://broker.emqx.io:8083/mqtt) | 8083      |
+| EMQX(国内) | [http://broker-cn.emqx.io:8083/mqtt](https://tool.chinaz.com/speedtest/broker-cn.emqx.io:8083/mqtt) | 8083      |
 | Eclipse     | [http://mqtt.eclipseprojects.io/mqtt](https://tool.chinaz.com/speedtest/mqtt.eclipseprojects.io/mqtt) | 80        |
 | Mosquitto   | [http://test.mosquitto.org/mqtt](https://tool.chinaz.com/speedtest/test.mosquitto.org/mqtt) | 80        |
 | HiveMQ      | [http://broker.hivemq.com:8000/mqtt](https://tool.chinaz.com/speedtest/broker.hivemq.com:8000/mqtt) | 8000      |
 
 
-![EMQ X 国内在线 MQTT 服务器](https://static.emqx.net/images/1db5ba4457b7470d95335fd4a1a78128.png)
+![EMQX 国内在线 MQTT 服务器](https://static.emqx.net/images/1db5ba4457b7470d95335fd4a1a78128.png)
 
-![EMQ X 在线 MQTT 服务器](https://static.emqx.net/images/7ce2e61433a81820e1729aff87b6e39e.png)
+![EMQX 在线 MQTT 服务器](https://static.emqx.net/images/7ce2e61433a81820e1729aff87b6e39e.png)
 
 ![Mosquitto 在线 MQTT 服务器](https://static.emqx.net/images/8fd2b6f61ea81441d0b683da748bd5df.png)
 
@@ -122,20 +122,20 @@ MQTT X 具备连接导入导出功能，以下是本文测试使用的连接数�
 
 | 名称          | Broker 地址               | TCP  | Pub 达标                | Sub 达标                   |
 | :------------ | :------------------------ | :--- | :---------------------- | :------------------------- |
-| EMQ X         | `broker.emqx.io`          | 1883 | YES                     | YES                        |
-| EMQ X（国内） | `broker-cn.emqx.io`       | 1883 | YES                     | YES                        |
+| EMQX         | `broker.emqx.io`          | 1883 | YES                     | YES                        |
+| EMQX（国内） | `broker-cn.emqx.io`       | 1883 | YES                     | YES                        |
 | Eclipse       | `mqtt.eclipseprojects.io` | 1883 | YES                     | YES                        |
 | Mosquitto     | `test.mosquitto.org`      | 1883 | 速率在 50 msg/s左右波动 | 速率在 0-50 msg/s 之间波动 |
 | HiveMQ        | `broker.hivemq.com`       | 1883 | YES                     | 速率稳定在 50 msg/s 左右   |
 
 ```shell
-# EMQ X
+# EMQX
 ## Sub
 ./emqtt_bench sub -t t/1 -c 1 -h broker.emqx.io
 ## Pub
 ./emqtt_bench pub -t t/1 -c 1 -h broker.emqx.io -I 1
 
-# EMQ X CN
+# EMQX CN
 ## Sub
 ./emqtt_bench sub -t t/1 -c 1 -h broker-cn.emqx.io
 ## Pub
@@ -182,8 +182,8 @@ MQTT X 具备连接导入导出功能，以下是本文测试使用的连接数�
 
 | 名称          | Broker 地址               | TCP  | 平均时延 |
 | :------------ | :------------------------ | :--- | :------- |
-| EMQ X         | `broker.emqx.io`          | 1883 | 212 ms   |
-| EMQ X（国内） | `broker-cn.emqx.io`       | 1883 | 52.6 ms  |
+| EMQX         | `broker.emqx.io`          | 1883 | 212 ms   |
+| EMQX（国内） | `broker-cn.emqx.io`       | 1883 | 52.6 ms  |
 | Eclipse       | `mqtt.eclipseprojects.io` | 1883 | 261 ms   |
 | Mosquitto     | `test.mosquitto.org`      | 1883 | 874 ms   |
 | HiveMQ        | `broker.hivemq.com`       | 1883 | 574 ms   |
@@ -194,10 +194,10 @@ MQTT X 具备连接导入导出功能，以下是本文测试使用的连接数�
 
 在几项测试中各个免费在线 MQTT 服务器整体上均达到了可用的程度，但是细分到具体指标上各个服务器之间还是存在显著的差异。较低的速率限制、不稳定的网络延时，甚至有部分服务器疑似存在定时重启机制，这些稳定性和可用性层面的问题即使在简单测试和原型制作中也会给用户带来不好的体验。
 
-以上内容也从一定程度佐证了物联网平台的相关性能受设备地理位置的影响程度。因此在海外与国内基于优质云服务商网络分别提供就近接入点的 EMQ X 免费在线 MQTT 服务相比之下就具有了一定优势，各方面测试数据均较为领先。
+以上内容也从一定程度佐证了物联网平台的相关性能受设备地理位置的影响程度。因此在海外与国内基于优质云服务商网络分别提供就近接入点的 EMQX 免费在线 MQTT 服务相比之下就具有了一定优势，各方面测试数据均较为领先。
 
-我们也很高兴地看到越来越多来自全球各地的物联网设备接入到 EMQ X 提供的在线 MQTT 服务器上，平均每秒就有数千条消息传递。`broker.emqx.io:1883` 也出现在 GitHub 的各类开源项目、示例代码（https://github.com/search?q=broker.emqx.io&type=Code ）中。国内的用户则可以选择专为国内优化部署的 `broker-cn.emqx.io` 节点。
+我们也很高兴地看到越来越多来自全球各地的物联网设备接入到 EMQX 提供的在线 MQTT 服务器上，平均每秒就有数千条消息传递。`broker.emqx.io:1883` 也出现在 GitHub 的各类开源项目、示例代码（https://github.com/search?q=broker.emqx.io&type=Code ）中。国内的用户则可以选择专为国内优化部署的 `broker-cn.emqx.io` 节点。
 
-EMQ X 在线公共服务器在国内和海外的两个接入点服务均由 [EMQ X Cloud](https://www.emqx.com/zh/cloud) 提供。EMQ X Cloud 是 EMQ 提供的全托管云原生 MQTT 消息服务，支持商业级的可访问性和稳定性保障。对于商业用户来说，使用 EMQ X Cloud 可零成本快速启动项目，以简单快速的方式实现 MQTT 设备接入。后期可随业务发展情况按需扩展，同时可在全球范围内就近创建接入点并享受 EMQ 专业团队提供的 7*24 技术支持保障。
+EMQX 在线公共服务器在国内和海外的两个接入点服务均由 [EMQX Cloud](https://www.emqx.com/zh/cloud) 提供。EMQX Cloud 是 EMQ 提供的全托管云原生 MQTT 消息服务，支持商业级的可访问性和稳定性保障。对于商业用户来说，使用 EMQX Cloud 可零成本快速启动项目，以简单快速的方式实现 MQTT 设备接入。后期可随业务发展情况按需扩展，同时可在全球范围内就近创建接入点并享受 EMQ 专业团队提供的 7*24 技术支持保障。
 
-无论是个人还是企业项目，EMQ 致力于为各类用户提供最合适的 MQTT 消息服务。在使用 EMQ X 的过程中如有任何意见或问题，欢迎随时向我们的团队反馈。
+无论是个人还是企业项目，EMQ 致力于为各类用户提供最合适的 MQTT 消息服务。在使用 EMQX 的过程中如有任何意见或问题，欢迎随时向我们的团队反馈。

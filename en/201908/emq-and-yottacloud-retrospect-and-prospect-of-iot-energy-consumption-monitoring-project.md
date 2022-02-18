@@ -31,7 +31,7 @@ The project implementation is based on Guizhou YottaCloud's SME cloud platform a
 
 - Edge layer: Collect various industrial meter data into the gateway by deploying multiple industrial gateways at different locations in different sites to connect various industrial buses and industrial protocols such as [Modbus](https://www.emqx.com/en/blog/building-modbus-based-iiot-app-with-neuron). According to the location of the gateway and network conditions, the data is reported to the platform based on the 4G or wired network. Data real-time performance varies from second to minute depending on different business needs.
 - Platform layer: The IoT device management and application enablement platform provided by EMQ can aggregate and storage the data reported by the industrial gateway, and provide data interface support for the application layer. The platform has the following features:
-  1. The platform is based on EMQ X message middleware, with high stability, which can guarantee 24/7 operation and important industrial data stable transmission; platform data access and routing can achieve millisecond delay, ensuring real-time performance of industrial data monitoring;
+  1. The platform is based on EMQX message middleware, with high stability, which can guarantee 24/7 operation and important industrial data stable transmission; platform data access and routing can achieve millisecond delay, ensuring real-time performance of industrial data monitoring;
   2. The platform provides a rich data interface that greatly accelerates the development of upper-level industrial applications and data analysis systems;
   3. The platform provides remote gateway configuration and management capabilities to facilitate the management of the gateway for users.
 - Application layer: Provide real-time monitoring of large-screen and mobile-side small Apps for various industrial meters, and real-time monitoring of data such as electricity meters, gas meters, and photovoltaic power. The application layer implements the threshold setting and alarm capability of the meter data by setting business rules at the platform level, and pushes the alarm message to the plant management personnel in time when the meter reports that the data is overloaded.
@@ -61,4 +61,4 @@ In the Wahaha Guiyang base project, we have adopted the small-step and fast-runn
 
 
 
-Related Links: [EMQ x Industrial IoT Solutions](https://mp.weixin.qq.com/s?__biz=Mzg3NjAyMjM0NQ==&mid=2247484013&idx=1&sn=ef9dc3bc5ed66cf3b71880faa4acafa1&chksm=cf39dd4bf84e545db54177b856789bb344e0c4eb28d0125c015499afd43a3bcec1b7265691bb&token=964914743&lang=zh_CN#rd)
+Related Links: [EMQX Industrial IoT Solutions](https://mp.weixin.qq.com/s?__biz=Mzg3NjAyMjM0NQ==&mid=2247484013&idx=1&sn=ef9dc3bc5ed66cf3b71880faa4acafa1&chksm=cf39dd4bf84e545db54177b856789bb344e0c4eb28d0125c015499afd43a3bcec1b7265691bb&token=964914743&lang=zh_CN#rd)

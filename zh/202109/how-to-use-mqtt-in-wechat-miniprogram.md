@@ -12,7 +12,7 @@
 
 注册微信小程序帐号，并下载[微信开发者工具](https://developers.weixin.qq.com/miniprogram/dev/devtools/download.html)。由于微信小程序安全要求比较高，在与后台服务器之间的通讯必须使用 https 或 wss 协议，因此要在微信小程序后台设置域名服务器。
 
-微信小程序仅支持通过 WebSocket 进行即时通信，EMQ X 的 MQTT Over WebSocket 能够完全兼容使用在微信小程序上。但由于微信小程序的规范限制，EMQ X 使用微信小程序接入时需要注意以下几点：
+微信小程序仅支持通过 WebSocket 进行即时通信，EMQX 的 MQTT Over WebSocket 能够完全兼容使用在微信小程序上。但由于微信小程序的规范限制，EMQX 使用微信小程序接入时需要注意以下几点：
 
 - 使用已经通过[域名备案](https://baike.baidu.com/item/域名备案)的**域名**接入
 
@@ -54,13 +54,13 @@ import mqtt from '../../utils/mqtt'
 
 ## MQTT 使用
 
-本文将使用 EMQ X Cloud 提供的 [免费公共 MQTT 服务器](https://www.emqx.com/zh/mqtt/public-mqtt5-broker) 作为本次测试的 MQTT 服务器地址，服务器接入信息如下：
+本文将使用 EMQX Cloud 提供的 [免费公共 MQTT 服务器](https://www.emqx.com/zh/mqtt/public-mqtt5-broker) 作为本次测试的 MQTT 服务器地址，服务器接入信息如下：
 
 - Broker: **broker.emqx.io**
 - TCP Port: **1883**
 - SSL/TLS Port: **8883**
 
-更多详情请访问 [EMQ X Cloud 官网](https://www.emqx.com/zh/cloud)，或查看 [EMQ X Cloud 文档](https://docs.emqx.cn/cloud/latest/)。
+更多详情请访问 [EMQX Cloud 官网](https://www.emqx.com/zh/cloud)，或查看 [EMQX Cloud 文档](https://docs.emqx.cn/cloud/latest/)。
 
 ### 连接代码
 

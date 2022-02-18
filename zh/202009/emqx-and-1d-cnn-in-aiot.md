@@ -1,8 +1,8 @@
 提起物联网（IoT）和人工智能（AI），人们并不陌生。作为当今时代十分热门的科技概念，它们其实都与「数据」有关：IoT 解决了数据从哪里来，AI 则解决了数据去往何方、用于何处。 **一个将两者结合的新概念「AIoT」也应运而生：IoT 通过万物连接与通信为 AI 提供海量数据，AI 则通过对数据的不断学习与分析，将其转化为有效信息，为实际领域提供效用** 。
 
-在本文中，我们将提出 AIoT 的一个简单融合应用：利用 [物联网消息中间件 EMQ X Broker](https://www.emqx.com/zh/products/emqx) 收集液压系统温度传感器数据，并将其转发到一维 [卷积神经网络 (1D CNN)](https://baike.baidu.com/item/%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C) ，利用这一 AI 深度学习的代表算法预测液压系统冷却器状态。
+在本文中，我们将提出 AIoT 的一个简单融合应用：利用 [物联网消息中间件 EMQX Broker](https://www.emqx.com/zh/products/emqx) 收集液压系统温度传感器数据，并将其转发到一维 [卷积神经网络 (1D CNN)](https://baike.baidu.com/item/%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C) ，利用这一 AI 深度学习的代表算法预测液压系统冷却器状态。
 
-在一维卷积神经网络上，时间将被看做一个空间纬度，每个输出时间步都是利用输入序列在时间维度上的一小段得到的，为此我们可以利用该特性实现时序数据的预测。我们将使用 Python 代码模拟温度传感器时序数据，通过 [MQTT 协议](https://www.emqx.com/zh/mqtt) 传输到 EMQ X Broker，并利用其灵活的规则引擎将数据转发到 webhook，依据输入的温度传感器时序数据实现当前液压系统冷却器的状态预测。
+在一维卷积神经网络上，时间将被看做一个空间纬度，每个输出时间步都是利用输入序列在时间维度上的一小段得到的，为此我们可以利用该特性实现时序数据的预测。我们将使用 Python 代码模拟温度传感器时序数据，通过 [MQTT 协议](https://www.emqx.com/zh/mqtt) 传输到 EMQX Broker，并利用其灵活的规则引擎将数据转发到 webhook，依据输入的温度传感器时序数据实现当前液压系统冷却器的状态预测。
 
 
 
@@ -58,9 +58,9 @@
 
 ### 模拟数据输入
 
-在本文中我们将模拟生产环境下冷却器温度传感器数据上报，为此我们将使用 Python 代码读取数据集中温度数据，并通过 MQTT 协议上报到 EMQ X Broker。
+在本文中我们将模拟生产环境下冷却器温度传感器数据上报，为此我们将使用 Python 代码读取数据集中温度数据，并通过 MQTT 协议上报到 EMQX Broker。
 
-在下面代码中我们首先使用 `pandas` 读取数据集中温度数据 ('TS1.txt', 'TS2.txt', 'TS3.txt', 'TS4.txt')，并对数据做简单处理，然后将数据每秒上报到 EMQ X Broker。
+在下面代码中我们首先使用 `pandas` 读取数据集中温度数据 ('TS1.txt', 'TS2.txt', 'TS3.txt', 'TS4.txt')，并对数据做简单处理，然后将数据每秒上报到 EMQX Broker。
 
 ```python
 import json
@@ -138,7 +138,7 @@ if __name__ == '__main__':
 
 ### 故障预测
 
-在本文中我们将使用 EMQ X Broker 规则引擎将温度传感器数据转发到 webhook，并通过温度传感器采集的数据，实现对冷却器状态预测。
+在本文中我们将使用 EMQX Broker 规则引擎将温度传感器数据转发到 webhook，并通过温度传感器采集的数据，实现对冷却器状态预测。
 
 1. Webhook 代码编写
 
@@ -222,15 +222,15 @@ if __name__ == '__main__':
    
    ```
 
-2. EMQ X Broker 资源创建
+2. EMQX Broker 资源创建
 
-   访问 [EMQ X Dashboard](http://127.0.0.1:18083)，登录用户名和密码为 admin, public，点击左侧菜单栏规则 -> 资源，创建资源。
+   访问 [EMQX Dashboard](http://127.0.0.1:18083)，登录用户名和密码为 admin, public，点击左侧菜单栏规则 -> 资源，创建资源。
 
-   ![EMQ X Broker 资源创建.png](https://static.emqx.net/images/99dcfe4ec7bd95b60fdcca9348ec72d2.png)
+   ![EMQX Broker 资源创建.png](https://static.emqx.net/images/99dcfe4ec7bd95b60fdcca9348ec72d2.png)
 
-3. EMQ X Broker 规则创建
+3. EMQX Broker 规则创建
 
-   ![EMQ X Broker 规则创建.png](https://static.emqx.net/images/d61f17680d6a44d4c8aeeeda230ba537.png)
+   ![EMQX Broker 规则创建.png](https://static.emqx.net/images/d61f17680d6a44d4c8aeeeda230ba537.png)
 
 
 
@@ -244,13 +244,13 @@ if __name__ == '__main__':
     ![启动 Webhook.png](https://static.emqx.net/images/d86bf702732060624f3aeb9265fb11eb.png)
    
 
-2. 启动 EMQ X Broker
+2. 启动 EMQX Broker
 
    ```bash
    ./bin/emqx start
    ```
 
-   ![启动 EMQ X Broker.png](https://static.emqx.net/images/03e52f0053ac31620417dc1bfd3ec174.png)
+   ![启动 EMQX Broker.png](https://static.emqx.net/images/03e52f0053ac31620417dc1bfd3ec174.png)
 
 3. 模拟数据输入
 
@@ -295,8 +295,8 @@ if __name__ == '__main__':
 
 ### 总结
 
-至此我们实现了传感器数据上报，利用 EMQ X 规则引擎实现数据转发，并使用一维卷积神经网络 (1D CNN) 实现了液压系统冷却器故障预测。
+至此我们实现了传感器数据上报，利用 EMQX 规则引擎实现数据转发，并使用一维卷积神经网络 (1D CNN) 实现了液压系统冷却器故障预测。
 
 在工业各个领域，不论是机械、电子、钢铁，还是制造、橡胶、纺织、化工、食品，液压传动技术都已成为一项基本应用技术。随着现代工业的不断发展，液压系统逐渐向高性能、高精度演进，其可靠性就变得至关重要，液压系统故障的检测与诊断也因此越来越受到重视。利用 AI 与深度学习，通过 IoT 大数据采集与分析对液压系统的状态进行监控，从而实现故障预测，是 AIoT 为传统工业领域带来的新的可能。
 
-而在各领域对液压系统故障预测的实际应用中，为了利用 AI 作出更加精准的预测，需要采集量级更高的时序数据加以分析训练。因此，需要选用性能指标突出且高度稳定可靠的消息中间件以进行海量数据的接入与传输。 **EMQ X Broker 作为一款高并发低延时，支持分布式集群架构的开源 MQTT 消息服务器，支持单机百万连接，无疑可满足该应用场景以及其他更多物联网应用下的数据传输需求**
+而在各领域对液压系统故障预测的实际应用中，为了利用 AI 作出更加精准的预测，需要采集量级更高的时序数据加以分析训练。因此，需要选用性能指标突出且高度稳定可靠的消息中间件以进行海量数据的接入与传输。 **EMQX Broker 作为一款高并发低延时，支持分布式集群架构的开源 MQTT 消息服务器，支持单机百万连接，无疑可满足该应用场景以及其他更多物联网应用下的数据传输需求**

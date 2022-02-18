@@ -1,4 +1,4 @@
-作为基于现代密码学公钥算法的安全协议，TLS/SSL 能在计算机通讯网络上保证传输安全，EMQ X 内置对 TLS/SSL 的支持，包括支持单/双向认证、X.509 证书、负载均衡 SSL 等多种安全认证。你可以为 EMQ X 支持的所有协议启用 SSL/TLS，也可以将 EMQ X 提供的 HTTP API 配置为使用 TLS。本文将介绍如何在 EMQ X 中为 [MQTT](https://www.emqx.com/zh/mqtt) 启用 TLS。
+作为基于现代密码学公钥算法的安全协议，TLS/SSL 能在计算机通讯网络上保证传输安全，EMQX 内置对 TLS/SSL 的支持，包括支持单/双向认证、X.509 证书、负载均衡 SSL 等多种安全认证。你可以为 EMQX 支持的所有协议启用 SSL/TLS，也可以将 EMQX 提供的 HTTP API 配置为使用 TLS。本文将介绍如何在 EMQX 中为 [MQTT](https://www.emqx.com/zh/mqtt) 启用 TLS。
 
 
 
@@ -16,7 +16,7 @@
 
 TLS/SSL 协议下的通讯过程分为两部分，第一部分是握手协议。握手协议的目的是鉴别对方身份并建立一个安全的通讯通道。握手完成之后双方会协商出接下来使用的密码套件和会话密钥；第二部分是 record 协议，record 和其他数据传输协议非常类似，会携带内容类型，版本，长度和荷载等信息，不同的是它所携带的信息是加密了的。
 
-下面的图片描述了 TLS/SSL 握手协议的过程，从客户端的 "hello" 一直到服务器的 "finished" 完成握手。有兴趣的同学可以找更详细的资料看。对这个过程不了解也并不影响我们在 [EMQ X](https://www.emqx.com/zh/products/emqx) 中启用这个功能。
+下面的图片描述了 TLS/SSL 握手协议的过程，从客户端的 "hello" 一直到服务器的 "finished" 完成握手。有兴趣的同学可以找更详细的资料看。对这个过程不了解也并不影响我们在 [EMQX](https://www.emqx.com/zh/products/emqx) 中启用这个功能。
 
 ![whatisssl.gif](https://static.emqx.net/images/935a55bd15dbb8a207f72e7fc37f9986.gif)
 
@@ -24,9 +24,9 @@ TLS/SSL 协议下的通讯过程分为两部分，第一部分是握手协议。
 
 ## SSL/TLS 证书准备
 
-通常来说，我们会需要数字证书来保证 TLS 通讯的强认证。数字证书的使用本身是一个三方协议，除了通讯双方，还有一个颁发证书的受信第三方，有时候这个受信第三方就是一个 CA。和 CA 的通讯，一般是以预先发行证书的方式进行的。也就是在开始 TLS 通讯的时候，我们需要至少有 2 个证书，一个 CA 的，一个 EMQ X 的，EMQ X 的证书由 CA 颁发，并用 CA 的证书验证。
+通常来说，我们会需要数字证书来保证 TLS 通讯的强认证。数字证书的使用本身是一个三方协议，除了通讯双方，还有一个颁发证书的受信第三方，有时候这个受信第三方就是一个 CA。和 CA 的通讯，一般是以预先发行证书的方式进行的。也就是在开始 TLS 通讯的时候，我们需要至少有 2 个证书，一个 CA 的，一个 EMQX 的，EMQX 的证书由 CA 颁发，并用 CA 的证书验证。
 
-获得一个真正受外界信任的证书需要到证书服务提供商进行购买。在实验室环境，我们也可以用自己生成的证书来模拟这个过程。下面我们分别以这两种方式来说明 EMQ X 服务器的 SSL/TLS 启用过程。
+获得一个真正受外界信任的证书需要到证书服务提供商进行购买。在实验室环境，我们也可以用自己生成的证书来模拟这个过程。下面我们分别以这两种方式来说明 EMQX 服务器的 SSL/TLS 启用过程。
 
 > **注意：** 购买证书与自签名证书的配置，读者根据自身情况只需选择其中一种进行测试。
 
@@ -34,7 +34,7 @@ TLS/SSL 协议下的通讯过程分为两部分，第一部分是握手协议。
 
 如果有购买证书的话，就不需要自签名证书。
 
-为方便 EMQ X 配置，请将购买的证书文件重命名为 `emqx.crt`，证书密钥重命名为 `emqx.key`。
+为方便 EMQX 配置，请将购买的证书文件重命名为 `emqx.crt`，证书密钥重命名为 `emqx.key`。
 
 ### 自签名证书
 
@@ -46,7 +46,7 @@ TLS/SSL 协议下的通讯过程分为两部分，第一部分是握手协议。
 openssl genrsa -out ca.key 2048
 ```
 
-这个命令将生成一个密钥长度为 2048 的密钥并保存在 `ca.key` 中。有了这个密钥，就可以用它来生成 EMQ X 的根证书了：
+这个命令将生成一个密钥长度为 2048 的密钥并保存在 `ca.key` 中。有了这个密钥，就可以用它来生成 EMQX 的根证书了：
 
 ```shell
 openssl req -x509 -new -nodes -key ca.key -sha256 -days 3650 -out ca.pem
@@ -60,7 +60,7 @@ openssl x509 -in ca.pem -noout -text
 
 根证书是整个信任链的起点，如果一个证书的每一级签发者向上一直到根证书都是可信的，那个我们就可以认为这个证书也是可信的。有了这个根证书，我们就可以用它来给其他实体签发实体证书了。
 
-实体（在这里指的是 EMQ X）也需要一个自己的私钥对来保证它对自己证书的控制权。生成这个密钥的过程和上面类似：
+实体（在这里指的是 EMQX）也需要一个自己的私钥对来保证它对自己证书的控制权。生成这个密钥的过程和上面类似：
 
 ```shell
 openssl genrsa -out emqx.key 2048
@@ -69,7 +69,7 @@ openssl genrsa -out emqx.key 2048
 新建 `openssl.cnf` 文件，
 
 - req_distinguished_name ：根据情况进行修改，
-- alt_names： `BROKER_ADDRESS` 修改为 EMQ X 服务器实际的 IP 或 DNS 地址，例如：IP.1 = 127.0.0.1，或 DNS.1 = broker.xxx.com
+- alt_names： `BROKER_ADDRESS` 修改为 EMQX 服务器实际的 IP 或 DNS 地址，例如：IP.1 = 127.0.0.1，或 DNS.1 = broker.xxx.com
 
 ```conf
 [req]
@@ -99,38 +99,38 @@ DNS.1 = BROKER_ADDRESS
 openssl req -new -key ./emqx.key -config openssl.cnf -out emqx.csr
 ```
 
-然后以根证书来签发 EMQ X 的实体证书：
+然后以根证书来签发 EMQX 的实体证书：
 
 ```shell
 openssl x509 -req -in ./emqx.csr -CA ca.pem -CAkey ca.key -CAcreateserial -out emqx.pem -days 3650 -sha256 -extensions v3_req -extfile openssl.cnf
 ```
 
-查看 EMQ X 实体证书（可选）：
+查看 EMQX 实体证书（可选）：
 
 ```bash
 openssl x509 -in emqx.pem -noout -text
 ```
 
-验证 EMQ X 实体证书，确定证书是否正确:
+验证 EMQX 实体证书，确定证书是否正确:
 
 ```
 $ openssl verify -CAfile ca.pem emqx.pem
 emqx.pem: OK
 ```
 
-准备好证书后，我们就可以启用 EMQ X 的 TLS/SSL 功能了。
+准备好证书后，我们就可以启用 EMQX 的 TLS/SSL 功能了。
 
 
 
 ## SSL/TLS 启用及验证
 
-**在 EMQ X 中 `mqtt:ssl` 的默认监听端口为 8883。**
+**在 EMQX 中 `mqtt:ssl` 的默认监听端口为 8883。**
 
 ### 购买证书方式
 
-#### EMQ X 配置
+#### EMQX 配置
 
-将前文重命名后的 `emqx.key` 文件及 `emqx.crt` 文件拷贝到 EMQ X 的 `etc/certs/` 目录下，并参考如下配置修改 `emqx.conf`：
+将前文重命名后的 `emqx.key` 文件及 `emqx.crt` 文件拷贝到 EMQX 的 `etc/certs/` 目录下，并参考如下配置修改 `emqx.conf`：
 
 ```shell
 ## listener.ssl.$name is the IP address and port that the MQTT/SSL
@@ -149,7 +149,7 @@ listener.ssl.external.certfile = etc/certs/emqx.crt
 
 #### MQTT 连接测试
 
-当配置完成并重启 EMQ X 后，我们使用 [MQTT 客户端工具 - MQTT X](https://mqttx.app/zh)（该工具跨平台且支持 [MQTT 5.0](https://www.emqx.com/zh/mqtt/mqtt5)），来验证 TLS 服务是否正常运行。
+当配置完成并重启 EMQX 后，我们使用 [MQTT 客户端工具 - MQTT X](https://mqttx.app/zh)（该工具跨平台且支持 [MQTT 5.0](https://www.emqx.com/zh/mqtt/mqtt5)），来验证 TLS 服务是否正常运行。
 
 
 > MQTT X 版本要求：v1.3.2 及以上版本
@@ -168,9 +168,9 @@ listener.ssl.external.certfile = etc/certs/emqx.crt
 
 ### 自签名证书方式
 
-#### EMQ X 配置
+#### EMQX 配置
 
-将前文中通过 OpenSSL 工具生成的 `emqx.pem`、`emqx.key` 及 `ca.pem` 文件拷贝到 EMQ X 的 `etc/certs/` 目录下，并参考如下配置修改 `emqx.conf`：
+将前文中通过 OpenSSL 工具生成的 `emqx.pem`、`emqx.key` 及 `ca.pem` 文件拷贝到 EMQX 的 `etc/certs/` 目录下，并参考如下配置修改 `emqx.conf`：
 
 ```shell
 ## listener.ssl.$name is the IP address and port that the MQTT/SSL
@@ -206,16 +206,16 @@ listener.ssl.external.cacertfile = etc/certs/ca.pem
   Verify return code: 0 (ok)
   ```
 
-- 使用 OpenSSL 作为 Client，EMQ X 作为 Server
+- 使用 OpenSSL 作为 Client，EMQX 作为 Server
 
-  启动 EMQ X 并将日志等级改为 Debug。
+  启动 EMQX 并将日志等级改为 Debug。
 
   ```
   ./bin/emqx start
   ./bin/emqx_ctl log set-level debug
   ```
 
-  使用 openssl s_client 连接 EMQ X 并发送一个 Client ID 为 "a" 的 MQTT Connect 报文。
+  使用 openssl s_client 连接 EMQX 并发送一个 Client ID 为 "a" 的 MQTT Connect 报文。
 
   ```
   $ echo -en "\x10\x0d\x00\x04MQTT\x04\x00\x00\x00\x00\x01a" | openssl s_client -connect localhost:8883 -CAfile ca.pem -showcerts
@@ -231,11 +231,11 @@ listener.ssl.external.cacertfile = etc/certs/ca.pem
 
 #### MQTT 连接测试（MQTT X）
 
-当配置完成并重启 EMQ X 后，我们使用 [MQTT 客户端工具 - MQTT X](https://mqttx.app/zh)（该工具跨平台且支持 [MQTT 5.0](https://www.emqx.com/zh/mqtt/mqtt5)），来验证 TLS 服务是否正常运行。
+当配置完成并重启 EMQX 后，我们使用 [MQTT 客户端工具 - MQTT X](https://mqttx.app/zh)（该工具跨平台且支持 [MQTT 5.0](https://www.emqx.com/zh/mqtt/mqtt5)），来验证 TLS 服务是否正常运行。
 
 > MQTT X 版本要求：v1.3.2 及以上版本
 
-- 参照下图在 MQTT X 中创建 `MQTT 客户端`（Host 输入框里的 `127.0.0.1` 需替换为实际的 EMQ X 服务器 IP）
+- 参照下图在 MQTT X 中创建 `MQTT 客户端`（Host 输入框里的 `127.0.0.1` 需替换为实际的 EMQX 服务器 IP）
 
 ![1594612437782.jpg](https://static.emqx.net/images/9c966931c2c83165ba181aa4c704b8e1.jpg)
   此时 `Certificate` 一栏需要选择 `Self signed` ，并携带自签名证书中生成的 `ca.pem` 文件。
@@ -247,10 +247,10 @@ listener.ssl.external.cacertfile = etc/certs/ca.pem
 
 
 
-### EMQ X Dashboard 验证
+### EMQX Dashboard 验证
 
-最后，打开 EMQ X 的 Dashboard 在 Listeners 页面可以看到在 8883 端口上有一个 `mqtt:ssl` 连接。
+最后，打开 EMQX 的 Dashboard 在 Listeners 页面可以看到在 8883 端口上有一个 `mqtt:ssl` 连接。
 
 ![emqxdashboard.png](https://static.emqx.net/images/ad2311957fce8a7a95db7f8527fb7565.png)
 
-至此，我们成功的完成了 EMQ X 服务器的 SSL/TLS 配置及单向认证连接测试。EMQ X SSL/TLS 双向认证配置文档请关注我们的后续文章。
+至此，我们成功的完成了 EMQX 服务器的 SSL/TLS 配置及单向认证连接测试。EMQX SSL/TLS 双向认证配置文档请关注我们的后续文章。

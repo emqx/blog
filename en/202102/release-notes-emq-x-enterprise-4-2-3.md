@@ -1,30 +1,30 @@
 In the past several years, IoV has developed from a concept into a trend, sweeping through major car manufacturers and related upstream and downstream industries. A series of guidance standards of relevant departments in China have emerged around the construction of the IoV industry standard system.
 
-EMQ is committed to providing a high-quality Internet of Everything engine for enterprises and has not only established extensive cooperation with mainstream car manufacturers and industry chain-related companies but also provided additional capabilities and technical support from the national standard and industry-standard level. **With the v4.2.3 release, EMQ X adds another IoV related GB/T32960 protocol access capability.** 
+EMQ is committed to providing a high-quality Internet of Everything engine for enterprises and has not only established extensive cooperation with mainstream car manufacturers and industry chain-related companies but also provided additional capabilities and technical support from the national standard and industry-standard level. **With the v4.2.3 release, EMQX adds another IoV related GB/T32960 protocol access capability.** 
 
 GB/T32960 is the guideline standard for communication between remote service platforms for new energy vehicles, based on the TCP transmission protocol, and can be used for the communication between the vehicular communication module and the remote service platform.
 
- This article will introduce how EMQ X can access the GB/T32960 protocol devices from the user's perspective.
+ This article will introduce how EMQX can access the GB/T32960 protocol devices from the user's perspective.
 
 
 
 ## Working principle
 
-EMQ X Enterprise provides the GB/T 32960 protocol gateway module. The whole process of message exchange can be divided into three parts according to its functional logic and the relationship to the whole system: the terminal side, the platform side, and the other side.
+EMQX Enterprise provides the GB/T 32960 protocol gateway module. The whole process of message exchange can be divided into three parts according to its functional logic and the relationship to the whole system: the terminal side, the platform side, and the other side.
 
 ![画板2x.png](https://static.emqx.net/images/1309966aded70c111bf9b8ed3b3a5ee4.png)
 
 1. The terminal side: Data is exchanged via the GB/T 32960 protocol, implementing different types of data to be reported or sending downstream messages to the terminal.
-2. The platform side: The EMQ X GB/T 32960 gateway decodes the packets and converts them internally in EMQ X to the [MQTT protocol](https://www.emqx.com/en/mqtt) for upstreaming and downstreaming data operations.
+2. The platform side: The EMQX GB/T 32960 gateway decodes the packets and converts them internally in EMQX to the [MQTT protocol](https://www.emqx.com/en/mqtt) for upstreaming and downstreaming data operations.
    - Data uplink: Publishing the uplink data packet as an MQTT PUBLISH to a specific topic.
    - Data downlink: Publishing the downlink data to a specific topic, and the message is transformed into the GB/T 32960 protocol packet structure and sent down to the terminal.
-3. The other side: The rules engine of EMQ X Enterprise allows the upstream data appearing in 2 to be stored/forwarded to enterprise databases, stream processing platforms (e.g. Kafka), and business systems; enterprise application platforms can issue control instructions to EMQ X in a variety of ways, ultimately sending the data to the terminal side.
+3. The other side: The rules engine of EMQX Enterprise allows the upstream data appearing in 2 to be stored/forwarded to enterprise databases, stream processing platforms (e.g. Kafka), and business systems; enterprise application platforms can issue control instructions to EMQX in a variety of ways, ultimately sending the data to the terminal side.
 
 
 
 ## How to enable
 
-Download EMQ X Enterprise v4.2.3 onwards, open the Dashboard after launching and add and enable **the GB/T 32960 gateway** under the **Modules** menu.
+Download EMQX Enterprise v4.2.3 onwards, open the Dashboard after launching and add and enable **the GB/T 32960 gateway** under the **Modules** menu.
 
 1. Click on Select to enter the module selection interface and select **the GB/T 32960 Gateway** in **Protocols**.
 2. Click on the Select button to enter **the GB/T 32960 gateway** configuration page for pre-launch configuration.
@@ -42,7 +42,7 @@ Download EMQ X Enterprise v4.2.3 onwards, open the Dashboard after launching and
 
 ## Appendix: Example of data exchange format
 
-The following is the format of the data exchange between GB/T 32960 and EMQ X. The data format has the following conventions:
+The following is the format of the data exchange between GB/T 32960 and EMQX. The data format has the following conventions:
 
 - Payload is assembled in JSON format
 - JSON Key is named using the Upper Camel Case
@@ -51,7 +51,7 @@ Due to space limitations, only some examples of the exchange format are provided
 
 ### Uplink data
 
-Data flow: Terminal -> GB/T 32960 gateway -> EMQ X.
+Data flow: Terminal -> GB/T 32960 gateway -> EMQX.
 
 #### Vehicle log-in
 
@@ -109,13 +109,13 @@ GB/T 32960 The gateway controls the terminal in Request-Response mode, sending c
 
 #### Request
 
-Flow of requested data: EMQ X -> GB/T 32960 gateway -> Terminal
+Flow of requested data: EMQX -> GB/T 32960 gateway -> Terminal
 
 Downlink topic: gbt32960/${vin}/dnstream
 
 #### Response
 
-Flow of response data:：Terminal -> GB/T 32960 gateway -> EMQ X
+Flow of response data:：Terminal -> GB/T 32960 gateway -> EMQX
 
 Uplink response topic: gbt32960/${vin}/upstream/response
 

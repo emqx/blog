@@ -1,11 +1,11 @@
-**继 2019 年 1 月 25 日 EMQ 首款边缘计算产品 EMQ X  Edge （EMQ X 边缘消息服务器）发布之后，4 月 19 日 EMQ 发布了一个与 EMQ X Edge 协同工作的新产品 EMQ X Storm。该产品旨在打造一个便捷、高效、稳定的集中式云端管理套件。这是 EMQ 拥抱 5G 时代 IoT 与边缘计算的又一力作。**
+**继 2019 年 1 月 25 日 EMQ 首款边缘计算产品 EMQX  Edge （EMQX 边缘消息服务器）发布之后，4 月 19 日 EMQ 发布了一个与 EMQX Edge 协同工作的新产品 EMQX Storm。该产品旨在打造一个便捷、高效、稳定的集中式云端管理套件。这是 EMQ 拥抱 5G 时代 IoT 与边缘计算的又一力作。**
 
-**EMQ X Storm 是一个适用于 EMQ X Edge 边缘消息服务器的管理套件，产品在设计之初重点关注了以下问题：**
+**EMQX Storm 是一个适用于 EMQX Edge 边缘消息服务器的管理套件，产品在设计之初重点关注了以下问题：**
 
 1. Edge 边缘消息服务器实际部署数量较多、位置分散且服务器硬件性能相对较弱，部署环境相对复杂，难以开展运维管理工作，如获取监控服务器状态与运行指标、变更相关功能配置、固件升级等；
 2. 边缘节点上的设备接入与接入认证、消息数据处理、数据透传等计算规则可能需要随着业务运营进行变更，需要一个集中管理工具实现计算规则的编辑、版本控制、下发等操作。
 
-**EMQ X Storm 将边缘节点的监控管理中心化，通过 Web 界面及管理监控 REST API 支撑以上需求。**
+**EMQX Storm 将边缘节点的监控管理中心化，通过 Web 界面及管理监控 REST API 支撑以上需求。**
 
 
 ![image20190422165416880.png](https://static.emqx.net/images/4935d444993c804259410b92363ae983.png)
@@ -14,16 +14,16 @@
 
 #### 功能特性
 
-**EMQ X Storm 当前处于 beta 测试版本，已经实现的功能如下：**
+**EMQX Storm 当前处于 beta 测试版本，已经实现的功能如下：**
 
 - Edge 服务器管理：注册绑定式接入管理，部署、接入的服务器，以及状态等信息一目了然；
 - Edge 服务器监控：查看 Edge 边缘消息服务器上的设备接入信息，包括服务器运行状态、连接列表、会话信息与 [MQTT 主题](https://www.emqx.com/zh/blog/advanced-features-of-mqtt-topics)信息；
-- 数据同步：云端配置 EMQ X Edge 的数据同步规则，实现消息路由、转发规则可视化管理，打通边缘侧与中心侧数据通信；
+- 数据同步：云端配置 EMQX Edge 的数据同步规则，实现消息路由、转发规则可视化管理，打通边缘侧与中心侧数据通信；
 - API 集成能力：Storm 提供了一系列的 REST API，用户可以根据需要来跟自己的系统进行无缝集成。
 
 
 
-EMQ X Storm 使用前置条件：Edge broker 必须有一个可以访问 Internet 的连接通道，Edge broker 与 Storm 之间的通信通道是基于 MQTT 协议。但是 Edge broker 配置的远程数据同步服务器可以是跟 Edge Broker 所在的内网，也可以是在外网 Internet 上的服务器。
+EMQX Storm 使用前置条件：Edge broker 必须有一个可以访问 Internet 的连接通道，Edge broker 与 Storm 之间的通信通道是基于 MQTT 协议。但是 Edge broker 配置的远程数据同步服务器可以是跟 Edge Broker 所在的内网，也可以是在外网 Internet 上的服务器。
 
 
 
@@ -46,9 +46,9 @@ EMQ X Storm 使用前置条件：Edge broker 必须有一个可以访问 Interne
 
 
 
-#### 发布回顾：EMQ X Edge 是什么
+#### 发布回顾：EMQX Edge 是什么
 
-EMQ X Edge 是轻量级开源消息服务器，可运行在资源受限的边缘设备上，它是连接云端和本地设备之间的桥梁。作为物联网平台体系中的边缘计算节点上运行的消息代理，EMQ X Edge 实时响应设备端的请求，并在边缘节点上使用规则引擎对数据本地进行计算处理，将处理结果传至中心侧远程服务器如 EMQ X 集群或其他 MQTT 协议接入服务。
+EMQX Edge 是轻量级开源消息服务器，可运行在资源受限的边缘设备上，它是连接云端和本地设备之间的桥梁。作为物联网平台体系中的边缘计算节点上运行的消息代理，EMQX Edge 实时响应设备端的请求，并在边缘节点上使用规则引擎对数据本地进行计算处理，将处理结果传至中心侧远程服务器如 EMQX 集群或其他 MQTT 协议接入服务。
 
 
 
@@ -56,11 +56,11 @@ EMQ X Edge 是轻量级开源消息服务器，可运行在资源受限的边缘
 
 
 
-EMQ X Edge 完整支持 MQTT V3.1/V3.1.1/V5.0 版本协议规范，并支持 MQTT-SN 、TCP、WebSocket、CoAP、Stomp 以及 Modbus 等工业协议。
+EMQX Edge 完整支持 MQTT V3.1/V3.1.1/V5.0 版本协议规范，并支持 MQTT-SN 、TCP、WebSocket、CoAP、Stomp 以及 Modbus 等工业协议。
 
 
 
-下图为 EMQ X Edge 在边缘侧的工作模式示意图：
+下图为 EMQX Edge 在边缘侧的工作模式示意图：
 
 
 

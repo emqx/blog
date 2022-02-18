@@ -6,15 +6,15 @@
 
 
 
-该原型中需要在 EMQ X 上维护多个数据通道，以供每个业务环节按照各自需求从 EMQ X 中获取消息数据。这种解决方案的问题在于：
+该原型中需要在 EMQX 上维护多个数据通道，以供每个业务环节按照各自需求从 EMQX 中获取消息数据。这种解决方案的问题在于：
 
-- 每个业务需要与 EMQ X 建立数据通道，数据通道的建立与保持需要额外的资源开销，数据同步速度严重影响 EMQ X 高速消息交换；
+- 每个业务需要与 EMQX 建立数据通道，数据通道的建立与保持需要额外的资源开销，数据同步速度严重影响 EMQX 高速消息交换；
 - 随着业务增长，每次新增业务环节都需要牵动整个系统变更；
 - 由于每个环节处理速度与时序不一样，消息量较大时部分业务会出现阻塞情况，进一步产生数据丢失、系统稳定性降低等严重后果。
 
-以上问题与当下互联网应用中遇到的问题高度一致，即多个业务系统之间的数据集成与数据同步问题。互联网应用中普遍集成消息队列以进行削峰、限流、队列处理等操作，实现数据与业务的解耦，借助 EMQ X 提供的 RabbitMQ、Kafka、RocketMQ、Pulsar 等消息与流中间件桥接功能，物联网项目也可以使用该模型来解决以上问题。
+以上问题与当下互联网应用中遇到的问题高度一致，即多个业务系统之间的数据集成与数据同步问题。互联网应用中普遍集成消息队列以进行削峰、限流、队列处理等操作，实现数据与业务的解耦，借助 EMQX 提供的 RabbitMQ、Kafka、RocketMQ、Pulsar 等消息与流中间件桥接功能，物联网项目也可以使用该模型来解决以上问题。
 
-本文以常见物联网使用场景为例，介绍了如何利用 EMQ X 消息中间件与开源流处理平台 Kafka 处理物联网海量消息数据，以高可靠、高容错的方式存储海量数据流并保证数据流的顺序进行消息数据存储，同时有效地将消息数据提供给多个业务环节使用。
+本文以常见物联网使用场景为例，介绍了如何利用 EMQX 消息中间件与开源流处理平台 Kafka 处理物联网海量消息数据，以高可靠、高容错的方式存储海量数据流并保证数据流的顺序进行消息数据存储，同时有效地将消息数据提供给多个业务环节使用。
 
 
 
@@ -65,9 +65,9 @@ devices/{client_id}/command
 - 状态监控：分析处理门锁定时上报的状态信息，如果电量、状态异常等需触发告警通知用户；
 - 安全审计：分析上下行消息数据，记录用户开锁行为，同时防范下行指令被篡改、重放等方式攻击。
 
-该方案中，EMQ X 会将以上主题的消息统一桥接到 Kafka 供业务系统使用，实现业务系统与 EMQ X 解耦。
+该方案中，EMQX 会将以上主题的消息统一桥接到 Kafka 供业务系统使用，实现业务系统与 EMQX 解耦。
 
-> client_id 为门锁 ID，同门锁连接至 EMQ X 使用的 MQTT Client ID。
+> client_id 为门锁 ID，同门锁连接至 EMQX 使用的 MQTT Client ID。
 
 
 
@@ -83,29 +83,29 @@ kafka 有以下特性：
 - 集群容错性：多节点副本中，允许 n-1 个节点失败
 - 可扩展性：支持集群动态扩展。
 
-该方案中集成 Kafka 为 EMQ X 消息服务器与应用程序之间的消息传递提供消息队列与消息总线。生产者（EMQ X）往队列末尾添加数据，每个消费者（业务环节）依次读取数据然后自行处理，这种架构兼顾了性能与数据可靠性，并有效降低系统复杂度、提升系统扩展性。该方案原型如下：
+该方案中集成 Kafka 为 EMQX 消息服务器与应用程序之间的消息传递提供消息队列与消息总线。生产者（EMQX）往队列末尾添加数据，每个消费者（业务环节）依次读取数据然后自行处理，这种架构兼顾了性能与数据可靠性，并有效降低系统复杂度、提升系统扩展性。该方案原型如下：
 
 ![Artboard Copy 12.png](https://static.emqx.net/images/3d0fa8599ebec0f272ef9bb6a3185d01.png)
 
 
 
-## EMQ X Enterprise 安装
+## EMQX Enterprise 安装
 
 ### 安装
 
-> 如果您是 EMQ X 新手用户，推荐通过 [EMQ X 指南](https://docs.emqx.io/tutorial/v3/en/) 快速上手
+> 如果您是 EMQX 新手用户，推荐通过 [EMQX 指南](https://docs.emqx.io/tutorial/v3/en/) 快速上手
 
-访问 [EMQ 官网](https://www.emqx.com/zh/downloads) 下载适合您操作系统的安装包，**由于数据持久化是企业功能，您需要下载 EMQ X 企业版（可以申请 License 试用）** 写本文的时候 EMQ X 企业版最新版本为 v3.4.4，下载 zip 包的启动步骤如下 ：
+访问 [EMQ 官网](https://www.emqx.com/zh/downloads) 下载适合您操作系统的安装包，**由于数据持久化是企业功能，您需要下载 EMQX 企业版（可以申请 License 试用）** 写本文的时候 EMQX 企业版最新版本为 v3.4.4，下载 zip 包的启动步骤如下 ：
 
 ```bash
 ## 解压下载好的安装包
 unzip emqx-ee-macosx-v3.4.4.zip
 cd emqx
 
-## 将 License 文件复制到 EMQ X 指定目录 etc/, License 需自行申请试用或通过购买授权获取
+## 将 License 文件复制到 EMQX 指定目录 etc/, License 需自行申请试用或通过购买授权获取
 cp ../emqx.lic ./etc
 
-## 以 console 模式启动 EMQ X
+## 以 console 模式启动 EMQX
 ./bin/emqx console
 ```
 
@@ -115,13 +115,13 @@ cp ../emqx.lic ./etc
 
 本文中需要用到的配置文件如下：
 
-1. License 文件，EMQ X 企业版 License 文件，使用可用的 License 覆盖：
+1. License 文件，EMQX 企业版 License 文件，使用可用的 License 覆盖：
 
 ```
 etc/emqx.lic
 ```
 
-2. EMQ X Kafka 消息存储插件配置文件，用于配置 Kafka 连接信息、数据桥接主题：
+2. EMQX Kafka 消息存储插件配置文件，用于配置 Kafka 连接信息、数据桥接主题：
 
 ```bash
 etc/plugins/emqx_bridge_kafka.conf
@@ -185,7 +185,7 @@ kafka-topics.sh --create --zookeeper zookeeper:2181 --replication-factor 1 --par
 
 
 
-**至此，可以重启 EMQ X 并启动插件以应用以上配置**:
+**至此，可以重启 EMQX 并启动插件以应用以上配置**:
 
 ```bash
 ./bin/emqx stop
@@ -227,7 +227,7 @@ kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic message_comm
 
 ### 模拟测试数据收发
 
-通过 **EMQ X 管理控制台**中的 **WebSocket** 工具可以模拟智能门锁上/下行业务数据。浏览器打开 `http://127.0.0.1:1883` 进入 **EMQ X 管理控制台**，打开 **Tool** -> **WebSocket** 功能，输入连接信息建立 MQTT 连接模拟门锁设备。连接信息里 **Client ID** 根据业务指定，本文使用 `10083618796833171` 。
+通过 **EMQX 管理控制台**中的 **WebSocket** 工具可以模拟智能门锁上/下行业务数据。浏览器打开 `http://127.0.0.1:1883` 进入 **EMQX 管理控制台**，打开 **Tool** -> **WebSocket** 功能，输入连接信息建立 MQTT 连接模拟门锁设备。连接信息里 **Client ID** 根据业务指定，本文使用 `10083618796833171` 。
 
 ### 订阅下行控制主题
 
@@ -261,7 +261,7 @@ kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic message_comm
 
 ![image20191126150044511.png](https://static.emqx.net/images/ee02694f902b7584ecb89f97293eb485.png)
 
-同时 Kafka `message_command` 主题消费者将收到一条或多条消息(**EMQ X ack hooks 触发次数以实际收到消息客户端数量为准**)，消息为 JSON 格式，内容经格式化后如下：
+同时 Kafka `message_command` 主题消费者将收到一条或多条消息(**EMQX ack hooks 触发次数以实际收到消息客户端数量为准**)，消息为 JSON 格式，内容经格式化后如下：
 
 ```json
 {
@@ -312,7 +312,7 @@ kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic message_comm
 
 
 
-上报成功后 Kafka `message_state` 消费者将收到一条消息（**EMQ X publish hooks 触发次数与发布消息有关，与消息主题是否被订阅以及订阅数量无关**）,消息为 JSON 格式，内容经格式化后如下：
+上报成功后 Kafka `message_state` 消费者将收到一条消息（**EMQX publish hooks 触发次数与发布消息有关，与消息主题是否被订阅以及订阅数量无关**）,消息为 JSON 格式，内容经格式化后如下：
 
 ```json
 {
@@ -336,7 +336,7 @@ kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic message_comm
 - node: 消息处理节点
 - ts: hooks 毫秒级触发时间戳
 
-至此，我们成功完成 EMQ X 桥接消息至 Kafka 所有步骤，业务系统接入 Kafka 后可以根据消费到的消息数量、消息发布者/订阅者的 client_id 以及消息 payload 内容进行业务判断，实现所需业务功能。
+至此，我们成功完成 EMQX 桥接消息至 Kafka 所有步骤，业务系统接入 Kafka 后可以根据消费到的消息数量、消息发布者/订阅者的 client_id 以及消息 payload 内容进行业务判断，实现所需业务功能。
 
 ## 性能测试
 
@@ -344,6 +344,6 @@ kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic message_comm
 
 ## 总结
 
-通过本文读者可以了解到 EMQ X + Kafka 物联网消息处理方案为消息通信与业务处理带来的重要作用，利用该方案可以搭建松耦合、高性能、高容错的物联网消息处理平台，实现数据高效、安全地处理。
+通过本文读者可以了解到 EMQX + Kafka 物联网消息处理方案为消息通信与业务处理带来的重要作用，利用该方案可以搭建松耦合、高性能、高容错的物联网消息处理平台，实现数据高效、安全地处理。
 
-本文编码实现具体的业务逻辑，读者可以根据本文提供的业务原型与系统架构进行扩展。由于 RabbitMQ、RocketMQ、Pulsar 等 EMQ X 已经支持的消息/流处理中间的在物联网项目中集成的架构思想与 Kafka 相近，读者也可以以本文作为参考，根据自身技术栈自由选用相关组件进行方案集成。
+本文编码实现具体的业务逻辑，读者可以根据本文提供的业务原型与系统架构进行扩展。由于 RabbitMQ、RocketMQ、Pulsar 等 EMQX 已经支持的消息/流处理中间的在物联网项目中集成的架构思想与 Kafka 相近，读者也可以以本文作为参考，根据自身技术栈自由选用相关组件进行方案集成。

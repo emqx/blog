@@ -12,9 +12,9 @@ OpenTSDB 是可扩展的分布式时序数据库，底层依赖 HBase 并充分�
 
 
 
-## 配置 EMQ X 服务器
+## 配置 EMQX 服务器
 
-通过 RPM 方式安装的 EMQ X，OpenTSDB 相关的配置文件位于 `/etc/emqx/plugins/emqx_backend_opentsdb.conf`，考虑到功能定位，OpenTSDB 插件仅支持消息存储功能。更多 backend 插件详见 [EMQ X 数据持久化](https://developer.emqx.io/docs/tutorial/zh/backend/whats_backend.html)。
+通过 RPM 方式安装的 EMQX，OpenTSDB 相关的配置文件位于 `/etc/emqx/plugins/emqx_backend_opentsdb.conf`，考虑到功能定位，OpenTSDB 插件仅支持消息存储功能。更多 backend 插件详见 [EMQX 数据持久化](https://developer.emqx.io/docs/tutorial/zh/backend/whats_backend.html)。
 
 **配置连接地址与连接池大小、batch 策略：**
 
@@ -54,7 +54,7 @@ backend.opentsdb.hook.message.publish.1 = {"topic": "#", "action": {"function": 
 
 由于 MQTT Message 无法直接写入 OpenTSDB, OpenTSDB Backend 提供了 emqx_backend_opentsdb.tmpl 模板文件将 MQTT Message 转换为可写入 OpenTSDB 的 DataPoint。 
 
-> 消息模板功能需要重启 EMQ X 才能应用更改。
+> 消息模板功能需要重启 EMQX 才能应用更改。
 
 tmpl 文件位于 `data/templates/emqx_backend_opentsdb_example.tmpl`，使用 json 格式, 用户可以为不同 Topic 定义不同的 Template, 类似: 
 
@@ -155,7 +155,7 @@ Backend 会将 MQTT Message 转换为:
 
 ## 使用示例
 
-EMQ X  管理控制台 **WebSocket** 页面中，向 `sample` 主题发布如上格式消息消息，消息将解析存储到 OpenTSDB `udp` 数据库对应的 `measurement` 中。
+EMQX  管理控制台 **WebSocket** 页面中，向 `sample` 主题发布如上格式消息消息，消息将解析存储到 OpenTSDB `udp` 数据库对应的 `measurement` 中。
 
 ## 总结
 

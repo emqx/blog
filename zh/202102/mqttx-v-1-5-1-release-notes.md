@@ -40,7 +40,7 @@ Linux 用户可在 Snapcraft 中进行下载：[https://snapcraft.io/mqttx](http
 - 修复从编辑连接页面跳转到创建页面时，无法初始化数据的问题
 - 加入正在连接状态当面板处于折叠状态时
 - 优化部分弹出框样式
-- 修改 EMQ X Logo
+- 修改 EMQX Logo
 - 加入 GitHub 的 issue 模版，包含： **Bug_Report**, **Feature_Want**, **Help_Wanted**
 
 该项目完全开源，您可以到 [GitHub](https://github.com/emqx/MQTTX/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc) 来提交使用过程中遇到的问题，或是 Fork MQTT X 项目向我们提交修改后的 PR，我们将会及时查阅和处理。也特此感谢社区中所有用户的贡献和反馈。

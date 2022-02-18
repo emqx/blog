@@ -1,29 +1,29 @@
-本文将使用 [RT-Thread](https://www.rt-thread.org/) 配合 [ART-Pi](https://github.com/RT-Thread-Studio/sdk-bsp-stm32h750-realthread-artpi) 搭建 MQTT 客户端，快速接入 [EMQ X Cloud](https://www.emqx.com/zh/cloud) 。
+本文将使用 [RT-Thread](https://www.rt-thread.org/) 配合 [ART-Pi](https://github.com/RT-Thread-Studio/sdk-bsp-stm32h750-realthread-artpi) 搭建 MQTT 客户端，快速接入 [EMQX Cloud](https://www.emqx.com/zh/cloud) 。
 
-## EMQ X Cloud 简介
+## EMQX Cloud 简介
 
-[EMQ X Cloud](https://www.emqx.com/zh/cloud) 是由 [EMQ](https://www.emqx.com/zh) 公司推出的可连接海量物联网设备，集成各类数据库及业务系统的全托管云原生 MQTT 服务。作为**全球首个全托管的** [MQTT 5.0](https://www.emqx.com/zh/mqtt/mqtt5) **公有云服务**，EMQ X Cloud 提供了一站式运维代管、独有隔离环境的 MQTT 消息服务。
+[EMQX Cloud](https://www.emqx.com/zh/cloud) 是由 [EMQ](https://www.emqx.com/zh) 公司推出的可连接海量物联网设备，集成各类数据库及业务系统的全托管云原生 MQTT 服务。作为**全球首个全托管的** [MQTT 5.0](https://www.emqx.com/zh/mqtt/mqtt5) **公有云服务**，EMQX Cloud 提供了一站式运维代管、独有隔离环境的 MQTT 消息服务。
 
-在万物互联的时代，EMQ X Cloud 可以帮助用户快速构建面向物联网领域的行业应用，轻松实现物联网数据的采集、传输、计算和持久化。
+在万物互联的时代，EMQX Cloud 可以帮助用户快速构建面向物联网领域的行业应用，轻松实现物联网数据的采集、传输、计算和持久化。
 
-![EMQ X Cloud](https://static.emqx.net/images/7181d58f2c8c2daa6fcfbcb863ad1146.png)
+![EMQX Cloud](https://static.emqx.net/images/7181d58f2c8c2daa6fcfbcb863ad1146.png)
 
-借助云服务商提供的基础计算设施，EMQ X Cloud 面向全球数十个国家与地区提供服务，为 5G 与万物互联应用提供低成本、安全可靠的云服务。
+借助云服务商提供的基础计算设施，EMQX Cloud 面向全球数十个国家与地区提供服务，为 5G 与万物互联应用提供低成本、安全可靠的云服务。
 
 
-## 创建和部署 EMQ X Cloud
+## 创建和部署 EMQX Cloud
 
-通过[**快速入门**](https://docs.emqx.cn/cloud/latest/quick_start/introduction.html)创建部署 EMQ X Cloud，以下是创建完成的实例：
+通过[**快速入门**](https://docs.emqx.cn/cloud/latest/quick_start/introduction.html)创建部署 EMQX Cloud，以下是创建完成的实例：
 
 - 基础版
 
-![EMQ X Cloud 基础版](https://static.emqx.net/images/27af2c8b46466995c444925c6a81db69.png)
+![EMQX Cloud 基础版](https://static.emqx.net/images/27af2c8b46466995c444925c6a81db69.png)
 
 - 专业版
 
-![EMQ X Cloud 专业版](https://static.emqx.net/images/a92dfa731423dd0c9be910d63b57b4e8.png)
+![EMQX Cloud 专业版](https://static.emqx.net/images/a92dfa731423dd0c9be910d63b57b4e8.png)
 
-- **TLS/SSL** 配置可参考 [EMQ X Cloud 文档](https://docs.emqx.cn/cloud/latest/deployments/tls_ssl.html)
+- **TLS/SSL** 配置可参考 [EMQX Cloud 文档](https://docs.emqx.cn/cloud/latest/deployments/tls_ssl.html)
 
 
 

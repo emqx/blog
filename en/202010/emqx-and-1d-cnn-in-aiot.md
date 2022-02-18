@@ -1,8 +1,8 @@
 People are familiar with IoT and AI. As the popular technology concept, they are both related to data: IoT solves where data comes from, while AI solves where data goes and what it is used for. The new concept 「AIoT」was also born that combines the two: IoT provides massive data for AI through connecting and communicating everything, and then AI will transfer these data into valid information through continuous learning and analyzing it.
 
-In this article, we will present a simple fusion application of AIoT: use [IoT message middleware EMQ X Broker](https://www.emqx.com/en/products/emqx) to collect hydraulic system temperature sensor data and forward it to a [1D Convolutional Neural Network](https://en.wikipedia.org/wiki/Convolutional_neural_network). We will use this AI deep learning representative algorithm to predict the hydraulic system cooler state.
+In this article, we will present a simple fusion application of AIoT: use [IoT message middleware EMQX Broker](https://www.emqx.com/en/products/emqx) to collect hydraulic system temperature sensor data and forward it to a [1D Convolutional Neural Network](https://en.wikipedia.org/wiki/Convolutional_neural_network). We will use this AI deep learning representative algorithm to predict the hydraulic system cooler state.
 
-On a 1D Convolutional Neural Network, time will be viewed as a spatial latitude, and each output time step is obtained by using a small segment of the input sequence in the time dimension. Therefore, we can use this feature to implement the prediction of the time-series data. We will use Python code to simulate the temperature sensor time-series data, and transfer it to the EMQ X Broker through [MQTT protocol](https://www.emqx.com/en/mqtt). Besides that, we will use its flexible rules engine to forward the data to a webhook, and will implement the state prediction of the hydraulic system cooler according to the input temperature sensor time-series data.
+On a 1D Convolutional Neural Network, time will be viewed as a spatial latitude, and each output time step is obtained by using a small segment of the input sequence in the time dimension. Therefore, we can use this feature to implement the prediction of the time-series data. We will use Python code to simulate the temperature sensor time-series data, and transfer it to the EMQX Broker through [MQTT protocol](https://www.emqx.com/en/mqtt). Besides that, we will use its flexible rules engine to forward the data to a webhook, and will implement the state prediction of the hydraulic system cooler according to the input temperature sensor time-series data.
 
 
 
@@ -58,9 +58,9 @@ We will use a 1D Convolutional Neural Network to implement the model training. 1
 
 ## The simulation of data input
 
-In this article, we will simulate reporting the cooler temperature sensor data in a production environment. Therefore, we will use Python code to read the temperature data in the dataset and report it to the EMQ X Broker via the MQTT protocol.
+In this article, we will simulate reporting the cooler temperature sensor data in a production environment. Therefore, we will use Python code to read the temperature data in the dataset and report it to the EMQX Broker via the MQTT protocol.
 
-In the following code, we firstly use `pandas` to read the temperature data in the dataset ('TS1.txt', 'TS2.txt', 'TS3.txt', 'TS4.txt'), and will simply process the data, and then report the data to the EMQ X Broker every second.
+In the following code, we firstly use `pandas` to read the temperature data in the dataset ('TS1.txt', 'TS2.txt', 'TS3.txt', 'TS4.txt'), and will simply process the data, and then report the data to the EMQX Broker every second.
 
 ```python
 import json
@@ -138,7 +138,7 @@ if __name__ == '__main__':
 
 ## Failure prediction
 
-We will use the EMQ X Broker rule engine to forward the data of temperature sensor to webhook, and will implement the prediction of the cooler state through the data collected by the temperature sensor.
+We will use the EMQX Broker rule engine to forward the data of temperature sensor to webhook, and will implement the prediction of the cooler state through the data collected by the temperature sensor.
 
 1. Writing Webhook code
 
@@ -222,16 +222,16 @@ We will use the EMQ X Broker rule engine to forward the data of temperature sens
    
    ```
 
-2. EMQ X Broker resource creation
+2. EMQX Broker resource creation
 
-   Access [EMQ X Dashboard](http://127.0.0.1:18083), log in with username and password admin, public, and click Rules -> Resources on the left menu bar to create the resource.
+   Access [EMQX Dashboard](http://127.0.0.1:18083), log in with username and password admin, public, and click Rules -> Resources on the left menu bar to create the resource.
 
     ![WechatIMG2495.png](https://static.emqx.net/images/81f1d87027ce3507ccdefd76ea8475a7.png)  
   
 
     
 
-3. EMQ X Broker rule creation
+3. EMQX Broker rule creation
 
   ![WechatIMG2496.png](https://static.emqx.net/images/d06f7fa3985be14c0342a43f411c5a3e.png)
     
@@ -247,13 +247,13 @@ We will use the EMQ X Broker rule engine to forward the data of temperature sens
 
    ![启动 Webhook.png](https://static.emqx.net/images/08ecdb06e4886a44090bf891931a76a3.png)
 
-2. Enable EMQ X Broker
+2. Enable EMQX Broker
 
    ```bash
    ./bin/emqx start
    ```
 
-  ![启动 EMQ X Broker.png](https://static.emqx.net/images/addddf05fc3319c9b8ef7ed101689d6e.png)
+  ![启动 EMQX Broker.png](https://static.emqx.net/images/addddf05fc3319c9b8ef7ed101689d6e.png)
 
 3. Simulate data input
 
@@ -298,8 +298,8 @@ We will use the EMQ X Broker rule engine to forward the data of temperature sens
 
 ## Summary
 
-So far, we have implemented sensor data reporting, data forwarding using the EMQ X rule engine, and hydraulic system cooler fault prediction using a 1D Convolutional Neural Network.
+So far, we have implemented sensor data reporting, data forwarding using the EMQX rule engine, and hydraulic system cooler fault prediction using a 1D Convolutional Neural Network.
 
 In various fields of industry, whether it is machinery, electronics, iron and steel, or manufacturing, rubber, textile, chemical, food, hydraulic drive technology has become a basic application technology. With the continuous development of the modern industry, the hydraulic system becomes more high performance and high accuracy. Its reliability becomes more important, and the detection and diagnosis of hydraulic system faults is also more and more attention. Use AI and deep learning to monitor the status of the hydraulic system through IoT big data collection and analysis, which is for implementing the fault prediction. It is the new possibility brought by AIoT to the traditional industrial field.
 
-In the actual application of hydraulic system failure prediction in various fields, to obtain a more accurate prediction using AI, it is necessary to collect a higher level of time-series data for analysis and training. Therefore, it is necessary to choose a highly stable and reliable messaging middleware with outstanding performance specifications to access and transmit large amounts of data.  As an open-source MQTT messaging server with high concurrency and low latency, supporting distributed cluster architecture, EMQ X Broker can meet the need for data transmission in this application scenario and other more IoT applications.
+In the actual application of hydraulic system failure prediction in various fields, to obtain a more accurate prediction using AI, it is necessary to collect a higher level of time-series data for analysis and training. Therefore, it is necessary to choose a highly stable and reliable messaging middleware with outstanding performance specifications to access and transmit large amounts of data.  As an open-source MQTT messaging server with high concurrency and low latency, supporting distributed cluster architecture, EMQX Broker can meet the need for data transmission in this application scenario and other more IoT applications.

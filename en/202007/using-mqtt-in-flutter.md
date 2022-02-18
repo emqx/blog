@@ -42,7 +42,7 @@ import 'package:mqtt_client/mqtt_client.dart';
 
 ### Connect to MQTT broker
 
-This article will use the [MQTT broker](https://www.emqx.com/en/products/emqx) which is operated and maintained by EMQ X Cloud. EMQ X Cloud is the [MQTT IoT cloud](https://www.emqx.com/en/cloud) service platform released by [EMQ](https://www.emqx.com/en), it provides the service for accessing **MQTT 5.0** with all-in-one operation and maintenance and unique isolation environment.
+This article will use the [MQTT broker](https://www.emqx.com/en/products/emqx) which is operated and maintained by EMQX Cloud. EMQX Cloud is the [MQTT IoT cloud](https://www.emqx.com/en/cloud) service platform released by [EMQ](https://www.emqx.com/en), it provides the service for accessing **MQTT 5.0** with all-in-one operation and maintenance and unique isolation environment.
 
 - Broker: **broker.emqx.io**
 - TCP Port: **1883**

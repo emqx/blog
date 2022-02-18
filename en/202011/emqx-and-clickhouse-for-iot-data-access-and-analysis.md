@@ -1,4 +1,4 @@
-IoT data collection involves mass equipment access and a massive number of data transmission. The combined technology stack of [EMQ X MQTT Broker](https://www.emqx.com/en/products/emqx) and ClickHouse OLAP database is fully capable of IoT data collection, transmission, storage, analysis and processing business.
+IoT data collection involves mass equipment access and a massive number of data transmission. The combined technology stack of [EMQX MQTT Broker](https://www.emqx.com/en/products/emqx) and ClickHouse OLAP database is fully capable of IoT data collection, transmission, storage, analysis and processing business.
 
 After storing the data in the database, we usually need other methods, for example, a data visualization system will count and display these data according to the rules for implementing data monitoring, indicators statistics and other business needs, to give full play to the value of the data. ClickHouse with open source software Grafana can quickly build IoT data analysis and visualization platform.
 
@@ -10,9 +10,9 @@ The above solution without code development, involving products can provide open
 
 ## Introduction to the solution
 
-### Introduction to EMQ X
+### Introduction to EMQX
 
-[EMQ  X ](https://www.emqx.com/en) is an open-source MQTT messaging broker developed on a highly concurrent Erlang/OTP language platform, supporting millions of connections and distributed cluster architecture, with a publish-subscribe model. EMQ X has many out-of-the-box features built-in, and **EMQ X Enterprise**, supports the storage of IoT message data to ClickHouse via a rules engine.
+[EMQ  X ](https://www.emqx.com/en) is an open-source MQTT messaging broker developed on a highly concurrent Erlang/OTP language platform, supporting millions of connections and distributed cluster architecture, with a publish-subscribe model. EMQX has many out-of-the-box features built-in, and **EMQX Enterprise**, supports the storage of IoT message data to ClickHouse via a rules engine.
 
 
 ### Introduction to ClickHouse
@@ -63,25 +63,25 @@ Now, the real-time storage is needed for viewing data at any subsequent time and
 
 ## Environmental preparation
 
-Each component used in this article has a Docker image that can be quickly built and run. To facilitate development, Grafana is built using Docker, ClickHouse is installed using documented recommendations, and EMQ X uses the Zip package to install or directly use the online cloud service.
+Each component used in this article has a Docker image that can be quickly built and run. To facilitate development, Grafana is built using Docker, ClickHouse is installed using documented recommendations, and EMQX uses the Zip package to install or directly use the online cloud service.
 
 The released resources and tutorial of use can be referred to as the following websites:
 
- - EMQ X：[EMQ official website](https://www.emqx.com/en)
+ - EMQX：[EMQ official website](https://www.emqx.com/en)
  - ClickHouse：ClickHouse products homepage  [https://clickhouse.tech/](https://clickhouse.tech/)
  - Grafana：Grafana official website [https://grafana.com/](https://grafana.com/) 
 
 
 
-### Install EMQ X
+### Install EMQX
 
-#### Method 1: using EMQ X Cloud
+#### Method 1: using EMQX Cloud
 
-EMQ provides [EMQ X Cloud - a fully managed IoT MQTT cloud service](https://www.emqx.com/en/cloud), on which users can create a highly available, exclusive instance EMQ X cluster in just a few minutes, and start prototyping and application development immediately without the need to pay attention to the subsequent operation and maintenance work. After the product goes live, the cluster can be expanded without downtime to cope with capacity expansion brought about by business growth, ensuring availability and maximizing cost savings.
+EMQ provides [EMQX Cloud - a fully managed IoT MQTT cloud service](https://www.emqx.com/en/cloud), on which users can create a highly available, exclusive instance EMQX cluster in just a few minutes, and start prototyping and application development immediately without the need to pay attention to the subsequent operation and maintenance work. After the product goes live, the cluster can be expanded without downtime to cope with capacity expansion brought about by business growth, ensuring availability and maximizing cost savings.
 
-EMQ X Cloud offers a 6-month free trial to newly registered users. After registering and logging in to create a trial deployment, click on **EMQ X Dashboard** in the deployment details to open the EMQ X Management Console.
+EMQX Cloud offers a 6-month free trial to newly registered users. After registering and logging in to create a trial deployment, click on **EMQX Dashboard** in the deployment details to open the EMQX Management Console.
 
-> To use EMQ X Cloud you need to ensure that ClickHouse can be accessed via a public network address.
+> To use EMQX Cloud you need to ensure that ClickHouse can be accessed via a public network address.
 
 ![WechatIMG4152.png](https://static.emqx.net/images/2bacab94e2fda212c1775d1ffdf3f400.png)
 
@@ -89,20 +89,20 @@ EMQ X Cloud offers a 6-month free trial to newly registered users. After registe
 
 #### Method 2: private deployment installation
 
-> If you are new to EMQ X, we recommend [EMQ X documentation](https://docs.emqx.io/broker/latest/en/) to get started quickly.
+> If you are new to EMQX, we recommend [EMQX documentation](https://docs.emqx.io/broker/latest/en/) to get started quickly.
 
-Access the [EMQ download](https://www.emqx.com/en/try?product=enterprise) page to download the appropriate package for your operating system. At the time of this writing, the Enterprise version of EMQ X is v4.1.2. The steps to download the zip package are as follows:
+Access the [EMQ download](https://www.emqx.com/en/try?product=enterprise) page to download the appropriate package for your operating system. At the time of this writing, the Enterprise version of EMQX is v4.1.2. The steps to download the zip package are as follows:
 
 ```bash
 ## Decompress the downloaded installation package
 unzip emqx-macosx-v4.1.2.zip
 cd emqx
 
-## Start EMQ X in console mode for easy debugging
+## Start EMQX in console mode for easy debugging
 ./bin/emqx console
 ```
 
-After successful startup, the browser accesses [http://127.0.0.1:18083](http://127.0.0.1:18083) to access the EMQ X management console dashboard and completes the initial login using the `admin` `public` default username and password.
+After successful startup, the browser accesses [http://127.0.0.1:18083](http://127.0.0.1:18083) to access the EMQX management console dashboard and completes the initial login using the `admin` `public` default username and password.
 
 
 
@@ -148,7 +148,7 @@ After successful startup, access [http://127.0.0.1:3000](http://127.0.0.1:3000) 
 
 
 
-## Configure EMQ X for storing data to the ClickHouse
+## Configure EMQX for storing data to the ClickHouse
 
 Enable ClickHouse and go to the command line:
 
@@ -190,13 +190,13 @@ CREATE TABLE sensor_data( temperature Float32, humidity Float32, volume Float32,
 
 
 
-### Configure the EMQ X rule engine
+### Configure the EMQX rule engine
 
-Open EMQ X Dashboared and go to the **rule engine** -> **rules** page and click the **create** button to go to the create page.
+Open EMQX Dashboared and go to the **rule engine** -> **rules** page and click the **create** button to go to the create page.
 
 #### Rule SQL
 
-Rule SQL is used for EMQ X message and event filtering, the following SQL is used to filter payload data from the `sensor/data` topic.
+Rule SQL is used for EMQX message and event filtering, the following SQL is used to filter payload data from the `sensor/data` topic.
 
 ```sql
 SELECT
@@ -239,7 +239,7 @@ Using the **SQL test function**, input test data and perform a filtering result 
 
 #### Response action
 
-Using both EMQ X Enterprise and EMQ X Cloud, which support writing data to ClickHouse via the Rules Engine.
+Using both EMQX Enterprise and EMQX Cloud, which support writing data to ClickHouse via the Rules Engine.
 
 Configuring the response action requires two pieces of data, an associated resource and a SQL template.
 
@@ -281,7 +281,7 @@ On the response action creation page, select the new resource and fill in the SQ
 
 ## Generate simulation data
 
-The following script simulates a scenario in which 10 devices report simulated data every 5 seconds for the past 24 hours and send it to EMQ X.
+The following script simulates a scenario in which 10 devices report simulated data every 5 seconds for the past 24 hours and send it to EMQX.
 
 Readers need to install Node.js. After installing Node.js and modifying the configuration parameters as needed, you can start it with the following command:
 
@@ -290,7 +290,7 @@ npm install mqtt mockjs --save --registry=https://registry.npm.taobao.org
 node mock.js
 ```
 
-P.S. Simulation data is generated and sent to EMQ X, please adjust the relevant parameters according to the cluster performance.
+P.S. Simulation data is generated and sent to EMQX, please adjust the relevant parameters according to the cluster performance.
 
 ```javascript
 // mock.js
@@ -475,4 +475,4 @@ Save the dashboard, drag and drop to adjust the size and position of each data p
 
 ## Summary
 
-So far, we use EMQ X + ClickHouse to complete IoT data transmission, storage, analysis and display the whole process of system construction. The reader can learn how EMQ X's extensive expansion capabilities and ClickHouse's leading data processing and analysis capabilities can be applied to IoT data collection. With a deeper understanding of Grafana's other functions, users can customize their improved data visualization analysis and even monitoring and alerting systems.
+So far, we use EMQX + ClickHouse to complete IoT data transmission, storage, analysis and display the whole process of system construction. The reader can learn how EMQX's extensive expansion capabilities and ClickHouse's leading data processing and analysis capabilities can be applied to IoT data collection. With a deeper understanding of Grafana's other functions, users can customize their improved data visualization analysis and even monitoring and alerting systems.

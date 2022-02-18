@@ -15,7 +15,7 @@ MQTT 是用于物联网 (IoT) 的 OASIS 标准消息传递协议。它是一种�
 
 ## 可拓展性挑战
 
-MQTT 协议听起来似乎离我们很遥远，其实它早已渗透到了我们的日常生活中。一般情况下，单个 MQTT 节点就可以满足单个家庭的智能家居设备连接需求，用户甚至可以在树莓派上运行一个 EMQ X Edge （运行在边缘端的 MQTT 服务器）。而运行在云端的一个 EMQ X 节点可以支撑高达 200 万的连接数，轻松满足普通智能家居场景需求。
+MQTT 协议听起来似乎离我们很遥远，其实它早已渗透到了我们的日常生活中。一般情况下，单个 MQTT 节点就可以满足单个家庭的智能家居设备连接需求，用户甚至可以在树莓派上运行一个 EMQX Edge （运行在边缘端的 MQTT 服务器）。而运行在云端的一个 EMQX 节点可以支撑高达 200 万的连接数，轻松满足普通智能家居场景需求。
 
 但如果是全国的千百万辆汽车要联网，或者是上百万盏路灯要传递数据之类的场景，那么巨大的设备数（MQTT 客户端）和数据吞吐量，就远远超出了单个 MQTT 节点所能承受的压力，需要组建 MQTT 服务器集群。
 
@@ -57,11 +57,11 @@ Nginx Plus 是在 Nginx（一个开源的 Web 服务器，适用于高流量网�
 
 同样优秀的，还有 HAProxy。它提供高可用性负载均衡，以及基于 TCP、HTTP 和 MQTT 的应用程序代理。到目前为止（2021 年 8月），HAProxy 2.4 是唯一一款可以提供 MQTT 层负载均衡的免费产品。在他们的 [release note](https://www.haproxy.com/blog/announcing-haproxy-2-4/) 中，对 MQTT 负载均衡的功能作了简单的介绍。
 
-在 “MQTT Broker 集群详解”系列的下一篇文章中，我们将对 HAProxy 2.4 + EMQ X 4.3 的集成方案进行详细展开，敬请期待。
+在 “MQTT Broker 集群详解”系列的下一篇文章中，我们将对 HAProxy 2.4 + EMQX 4.3 的集成方案进行详细展开，敬请期待。
 
 
 
 ## 本系列中的其它文章
 
 - [MQTT Broker 集群详解（二）：粘性会话负载均衡](https://www.emqx.com/zh/blog/mqtt-broker-clustering-part-2-sticky-session-load-balancing)
-- [MQTT Broker 集群详解（三）：有关 EMQ X 水平可扩展性的挑战与对策](https://www.emqx.com/zh/blog/mqtt-broker-clustering-part-3-challenges-and-solutions-of-emqx-horizontal-scalability)
+- [MQTT Broker 集群详解（三）：有关 EMQX 水平可扩展性的挑战与对策](https://www.emqx.com/zh/blog/mqtt-broker-clustering-part-3-challenges-and-solutions-of-emqx-horizontal-scalability)

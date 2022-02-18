@@ -10,7 +10,7 @@ https://aws.amazon.com/dynamodb/
 
 ## 场景介绍
 
-该场景需要将 EMQ X 指定主题下且满足条件的消息存储到 DynamoDB 数据库。为了便于后续分析检索，消息内容需要进行拆分存储。
+该场景需要将 EMQX 指定主题下且满足条件的消息存储到 DynamoDB 数据库。为了便于后续分析检索，消息内容需要进行拆分存储。
 
 **该场景下设备端上报信息如下：**
 
@@ -125,11 +125,11 @@ $ aws dynamodb list-tables --region us-west-2 --endpoint-url http://127.0.0.1:80
 
 ### 创建资源
 
-打开 EMQ X Dashboard，进入左侧菜单的 **资源** 页面，点击 **新建** 按钮，键入 DynamoDB 服务器信息进行资源创建。
+打开 EMQX Dashboard，进入左侧菜单的 **资源** 页面，点击 **新建** 按钮，键入 DynamoDB 服务器信息进行资源创建。
 
 ![image01.png](https://static.emqx.net/images/b6fb136fb612f9982c8b98503e4803f2.png)
 
-EMQ X 集群中节点所在网络环境可能互不相同，资源创建成功后点击列表中 **状态按钮**，查看各个节点资源连接状况，如果节点上资源不可用，请检查配置是否正确、网络连通性，并点击 **重连** 按钮手动重连。
+EMQX 集群中节点所在网络环境可能互不相同，资源创建成功后点击列表中 **状态按钮**，查看各个节点资源连接状况，如果节点上资源不可用，请检查配置是否正确、网络连通性，并点击 **重连** 按钮手动重连。
 
 ![image02.png](https://static.emqx.net/images/7dc4b56ef351e4fedf037e746bc50455.png)
 
@@ -238,7 +238,7 @@ DynamoDB 表名，Hash Key 以及 Range Key。
 
 #### 使用 Dashboard 中的 Websocket 工具测试
 
-切换到 **工具** --> **Websocket** 页面，使用任意信息客户端连接到 EMQ X，连接成功后在 **消息** 卡片发送如下信息：
+切换到 **工具** --> **Websocket** 页面，使用任意信息客户端连接到 EMQX，连接成功后在 **消息** 卡片发送如下信息：
 
 - 主题：cmd/state/NXP-058659730253-963945118132721-22
 - 消息体：

@@ -1,20 +1,20 @@
-EMQ X nodes can be bridged by other types of MQTT broker to achieve cross-platform message subscription and post. In this article, we present a configuration example to illustrate how to configure the bridge from Mosquitto to EMQ X.
+EMQX nodes can be bridged by other types of MQTT broker to achieve cross-platform message subscription and post. In this article, we present a configuration example to illustrate how to configure the bridge from Mosquitto to EMQX.
 
 Mosquitto is a small, lightweight, open source MQTT Broker written in C/C++ language. Mosquitto uses a single core and single thread architecture to support embedded devices deployed in limited resources, access a small number of MQTT device terminals, and implement [MQTT  5.0](https://www.emqx.com/en/mqtt/mqtt5) and 3.1.1 protocols.
 
-Both EMQ X and Mosquitto fully support the [MQTT protocol](https://www.emqx.com/en/mqtt) feature, but EMQ X supports more communication protocols and private protocol access. In terms of functional extension of the application, Mosquitto lacks the  out-of-the-box business-related functions, such as certification authentication, rules engine, data persistence and high-performance message bridging (EMQ X enterprise editions). In the aspect of monitoring operation, maintenance and visualization management, EMQX has full existing features and extended solution support.  In terms of the basic function, Mosquitto clustering is weak, and neither official nor third-party clustering solutions can support the performance requirements of large-scale massive connectivity of IoT.
+Both EMQX and Mosquitto fully support the [MQTT protocol](https://www.emqx.com/en/mqtt) feature, but EMQX supports more communication protocols and private protocol access. In terms of functional extension of the application, Mosquitto lacks the  out-of-the-box business-related functions, such as certification authentication, rules engine, data persistence and high-performance message bridging (EMQX enterprise editions). In the aspect of monitoring operation, maintenance and visualization management, EMQX has full existing features and extended solution support.  In terms of the basic function, Mosquitto clustering is weak, and neither official nor third-party clustering solutions can support the performance requirements of large-scale massive connectivity of IoT.
 
 Therefore, Mosquitto is not suitable for the [MQTT broker](https://www.emqx.com/en/products/emqx) for large-scale services. However, since it is lightweight and compact, it can run on any low-power microcontroller including embedded sensors, mobile devices, embedded microprocessors, and message access at the edge of the Internet of Things. It is a better technology choice for edge message access in the IoT, and the message can be processed locally and passed to the cloud  by combining bridging function
 
 ## Scene description
 
-Assuming we have an EMQ X server'emqx1'and a Mosquitto server, we need to create a bridge on Mosquitto to forward all ''sensor" topic messages to the'emqx1' server and subscribe to all "control" topics from EMQX.
+Assuming we have an EMQX server'emqx1'and a Mosquitto server, we need to create a bridge on Mosquitto to forward all ''sensor" topic messages to the'emqx1' server and subscribe to all "control" topics from EMQX.
 
 
 ![Artboard.jpg](https://static.emqx.net/images/7a8cbb9dec7ef185338b5e577861b627.jpg)
 
 
-**EMQ X**  
+**EMQX**  
 
 | Node  |      Node name      | Listening port |
 | :---: | :-----------------: | :------------: |
@@ -30,9 +30,9 @@ Assuming we have an EMQ X server'emqx1'and a Mosquitto server, we need to create
 
 Configuring Mosquitto's bridging requires modifying the `mosquitto.conf` file after installation. For each bridge, the basic content that needs to be configured is:
 
-- the address and port of the remote EMQ X server;
+- the address and port of the remote EMQX server;
 - MQTT protocol parameters, such as protocol version, keepalive, clean_session, etc. (if not configured, the default value is used);
-- Client login information required by EMQ X;
+- Client login information required by EMQX;
 - the topic of the message that needs to be bridged;
 - Configure bridging topic mapping (no mapping by default).
 
@@ -88,9 +88,9 @@ topic control/# in 1
 
 After the configuration is complete, Mosquitto  needs to be restarted to make the bridge configuration take effect.
 
-## Configuring the EMQ X MQTT server
+## Configuring the EMQX MQTT server
 
-After the EMQ X MQTT server is installed, in order to make the Mosquitto bridge accessible, it is necessary to decide whether to configure the corresponding user certification and authentication information. Or in the experimental phase, in order to simplify testing,  anonymous login is allowed and acl_nomatch can skip certification and authentication.
+After the EMQX MQTT server is installed, in order to make the Mosquitto bridge accessible, it is necessary to decide whether to configure the corresponding user certification and authentication information. Or in the experimental phase, in order to simplify testing,  anonymous login is allowed and acl_nomatch can skip certification and authentication.
 
 ## Test configuration
 
@@ -133,7 +133,7 @@ Client mosqsub|19324-Zeus- sending PUBACK (Mid: 1)
 
 ### Test the in direction of the bridge
 
-Subscribe to the 'control/#' topic on Mosquitto, which will receive messages posted on EMQ X:
+Subscribe to the 'control/#' topic on Mosquitto, which will receive messages posted on EMQX:
 
 ```
 $ mosquitto_sub -t "control/#" -p 1883 -d -q 1 -h 192.168.1.101

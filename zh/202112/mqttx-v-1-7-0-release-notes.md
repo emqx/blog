@@ -20,7 +20,7 @@
 
 >要想对 MQTT 5.0 的特性进行使用和测试，需要 MQTT X v1.7.0 与支持 MQTT 5.0 的 MQTT Broker 配合使用。
 >
->[云原生分布式 MQTT 消息服务器 EMQ X](https://www.emqx.io/zh) 从 3.0 版本开始支持 MQTT 5.0 协议，是开源社区中第一个支持该协议规范的消息服务器，并且完全兼容 MQTT 3.1 和 3.1.1 协议。使用 MQTT X 连接到 EMQ X，就可以快速使用和测试 MQTT 5.0 的功能特性。
+>[云原生分布式 MQTT 消息服务器 EMQX](https://www.emqx.io/zh) 从 3.0 版本开始支持 MQTT 5.0 协议，是开源社区中第一个支持该协议规范的消息服务器，并且完全兼容 MQTT 3.1 和 3.1.1 协议。使用 MQTT X 连接到 EMQX，就可以快速使用和测试 MQTT 5.0 的功能特性。
 
 ### 支持 MQTT 5.0 用户属性配置
 
@@ -94,6 +94,6 @@ MQTT X 还在持续增强完善中，以期为用户带来更多实用、强大�
 
 ## 结语
 
-MQTT X 为连接测试 EMQ X 等 MQTT 消息服务器而生，通过一键式的连接方式和简洁的图形界面帮助使用者进行 MQTT 特性探索和功能组件调试。除提供基础 MQTT 测试连接功能，全开源和社区驱动等特性还使其集成了更多丰富、强大、符合用户使用习惯的功能特性。结合 MQTT X 与云原生分布式消息中间件 [EMQ X](https://www.emqx.com/zh/products/emqx)，我们相信物联网平台的测试开发工作将变得更加轻松。
+MQTT X 为连接测试 EMQX 等 MQTT 消息服务器而生，通过一键式的连接方式和简洁的图形界面帮助使用者进行 MQTT 特性探索和功能组件调试。除提供基础 MQTT 测试连接功能，全开源和社区驱动等特性还使其集成了更多丰富、强大、符合用户使用习惯的功能特性。结合 MQTT X 与云原生分布式消息中间件 [EMQX](https://www.emqx.com/zh/products/emqx)，我们相信物联网平台的测试开发工作将变得更加轻松。
 
 MQTT X 项目完全开源，您可以到 [GitHub](https://github.com/emqx/MQTTX/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc) 来提交使用过程中遇到的问题，或是 Fork MQTT X 项目向我们提交修改后的 PR，我们将会及时查阅和处理。也特此感谢社区中所有用户的贡献和反馈，每一个社区用户的使用与肯定，都是我们产品前进的动力。

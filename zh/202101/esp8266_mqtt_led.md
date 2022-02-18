@@ -2,7 +2,7 @@
 
 [NodeMCU](https://www.nodemcu.com/) 是一个开源的物联网平台。它使用 Lua 语言编程。该平台基于eLua开源项目，底层使用ESP8266 sdk 0.9.5版本。
 
-在此项目中我们将实现 NodeMCU(ESP8266) 与 [EMQ X Cloud](https://www.emqx.com/zh/cloud) 运营和维护的免费公共 MQTT 服务器远程控制 LED 灯，并使用 Arduino IDE 来对 NodeMCU ESP8266 进行编程。 EMQ X Cloud 是由 EMQ 推出的安全的 [MQTT 物联网云服务平台](https://www.emqx.com/zh/cloud)，它提供一站式运维代管、独有隔离环境的 **MQTT 5.0** 接入服务。
+在此项目中我们将实现 NodeMCU(ESP8266) 与 [EMQX Cloud](https://www.emqx.com/zh/cloud) 运营和维护的免费公共 MQTT 服务器远程控制 LED 灯，并使用 Arduino IDE 来对 NodeMCU ESP8266 进行编程。 EMQX Cloud 是由 EMQ 推出的安全的 [MQTT 物联网云服务平台](https://www.emqx.com/zh/cloud)，它提供一站式运维代管、独有隔离环境的 **MQTT 5.0** 接入服务。
 
 
 

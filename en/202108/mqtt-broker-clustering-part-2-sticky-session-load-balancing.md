@@ -1,6 +1,6 @@
 In the last post: [Load balancing - MQTT broker clustering part 1](https://www.emqx.com/en/blog/mqtt-broker-clustering-part-1-load-balancing), we have introduced MQTT load balancing in general: load balancing can be applied either on transport layer, or application layer. Now it’s time to dive into application layer load balancing, the most interesting part: sticky-session.
 
-This post consists of 2 parts, the first part is to introduce what MQTT sessions, and the challenges of handing sessions in a distributed MQTT broker cluster; the second part is to get our hands dirty by provisioning an [HAProxy 2.4](http://www.haproxy.org/) load balancer in front of [EMQ X 4.3](https://www.emqx.com/en/products/emqx) cluster to take full advantage of the sticky-session load balancing.
+This post consists of 2 parts, the first part is to introduce what MQTT sessions, and the challenges of handing sessions in a distributed MQTT broker cluster; the second part is to get our hands dirty by provisioning an [HAProxy 2.4](http://www.haproxy.org/) load balancer in front of [EMQX 4.3](https://www.emqx.com/en/products/emqx) cluster to take full advantage of the sticky-session load balancing.
 
 ## MQTT session
 
@@ -37,7 +37,7 @@ In the next section, we’ll demonstrate a sticky table strategy in HAProxy 2.4.
 
 ## Sticky session with HAProxy 2.4
 
-To minimise the prerequisites, in this demo cluster, we’ll start two EMQ X nodes and an HAProxy 2.4 in docker containers.
+To minimise the prerequisites, in this demo cluster, we’ll start two EMQX nodes and an HAProxy 2.4 in docker containers.
 
 ### Create a docker network
 
@@ -47,7 +47,7 @@ In order for the containers to connect to each other, we create a docker network
 docker network create test.net
 ```
 
-### Start two EMQ X 4.3 nodes
+### Start two EMQX 4.3 nodes
 
 In order for the nodes to connect to each other, the container name and the EMQX node name should be assigned within the network namespace (`test.net`).
 
@@ -79,7 +79,7 @@ docker run -d \
 >
 >  `EMQX_LISTENER__TCP__EXTERNAL__PROXY_PROTOCOL`. It is to turn on the binary proxy protocol for TCP listeners so the broker can get the information like the real IP address of the client instead of load balancer’s.
 
-### Make EMQ X nodes join a cluster
+### Make EMQX nodes join a cluster
 
 ```
 docker exec -it n2.test.net emqx_ctl cluster join emqx@n1.test.net
@@ -88,7 +88,7 @@ docker exec -it n2.test.net emqx_ctl cluster join emqx@n1.test.net
 If everything goes as expected, there should such log printed
 
 ```
-[EMQ X] emqx shutdown for join
+[EMQX] emqx shutdown for join
 Join the cluster successfully.
 Cluster status: #{running_nodes => ['emqx@n1.test.net','emqx@n2.test.net'], stopped_nodes => []} 
 ```
@@ -187,4 +187,4 @@ In this example, the client `subscriber1` is sticked to server `emqx2`.
 ## Other articles in this series
 
 - [MQTT broker clustering part 1: Load balancing](https://www.emqx.com/en/blog/mqtt-broker-clustering-part-1-load-balancing)
-- [MQTT broker clustering part 3: Challenges and Solutions of EMQ X horizontal scalability](https://www.emqx.com/en/blog/mqtt-broker-clustering-part-3-challenges-and-solutions-of-emqx-horizontal-scalability)
+- [MQTT broker clustering part 3: Challenges and Solutions of EMQX horizontal scalability](https://www.emqx.com/en/blog/mqtt-broker-clustering-part-3-challenges-and-solutions-of-emqx-horizontal-scalability)

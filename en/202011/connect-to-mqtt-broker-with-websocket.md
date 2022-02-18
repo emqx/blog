@@ -47,13 +47,13 @@ Or use CDN addresses directly without installation
 
 ## Connect to the MQTT broker
 
-This article will use the [free public MQTT broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker) provided by EMQ X. This service was created based on the EMQ X [MQTT IoT cloud platform](https://www.emqx.com/en/cloud). The information about broker access is as follows:
+This article will use the [free public MQTT broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker) provided by EMQX. This service was created based on the EMQX [MQTT IoT cloud platform](https://www.emqx.com/en/cloud). The information about broker access is as follows:
 
 - Broker: **broker.emqx.io**
 - TCP Port: **1883**
 - Websocket Port: **8083**
 
-> EMQ X uses port 8083 for normal connections and 8084 for WebSocket over TLS.
+> EMQX uses port 8083 for normal connections and 8084 for WebSocket over TLS.
 
 For simplicity, let's put the subscriber and the publisher in the same file.
 
@@ -100,11 +100,11 @@ That is `protocol` // `host name` . `domain` : `port` / `path`
 Beginners are likely to make the following mistakes.
 
 - The connection address does not specify a protocol: WebSocket is a communication protocol that uses `ws` (non-encrypted), `wss` (SSL encrypted) as its protocol identifier. the MQTT.js client supports multiple protocols and the connection address needs to specify the protocol type.
-- The connection address does not specify a port: MQTT does not specify a port for WebSocket access, and EMQ X uses `8083` and `8084` as the default ports for unencrypted and encrypted connections respectively. The default port of WebSocket protocol is the same as HTTP (80/443), no port means WebSocket uses the default port to connect. On the other hand, no need to specify a port when using a standard MQTT connection. For example, MQTT.js can use `mqtt://localhost` on the Node.js side to connect to the standard MQTT 1883 port, and when the connection address is `mqtts://localhost`, it will be connected to 8884 port.
-- Connection address without path: MQTT-WebSoket uniformly uses `/path` as the connection path, which should be specified when connecting, and the path used on EMQ X is `/mqtt`.
+- The connection address does not specify a port: MQTT does not specify a port for WebSocket access, and EMQX uses `8083` and `8084` as the default ports for unencrypted and encrypted connections respectively. The default port of WebSocket protocol is the same as HTTP (80/443), no port means WebSocket uses the default port to connect. On the other hand, no need to specify a port when using a standard MQTT connection. For example, MQTT.js can use `mqtt://localhost` on the Node.js side to connect to the standard MQTT 1883 port, and when the connection address is `mqtts://localhost`, it will be connected to 8884 port.
+- Connection address without path: MQTT-WebSoket uniformly uses `/path` as the connection path, which should be specified when connecting, and the path used on EMQX is `/mqtt`.
 - The protocol does not match the port: use `wss` connection, but connect to port `8083`.
 - The use of unencrypted WebSocket connections under HTTPS: organizations such as Google are pushing HTTPS while also limiting security through browser constraints, i.e., the use of the unencrypted `ws` protocol to initiate connection requests is automatically prohibited by the browser under HTTPS connections.
-- The certificate does not match the connection address: lengthy, see below for details **Enable SSL/TLS for EMQ X**.
+- The certificate does not match the connection address: lengthy, see below for details **Enable SSL/TLS for EMQX**.
 
 ### Connection options
 
@@ -166,9 +166,9 @@ The MQTT.js library uses `wxs` protocol identifier to specially process the WeCh
 
 
 
-## Enable SSL/TLS for EMQ X
+## Enable SSL/TLS for EMQX
 
-EMQ built-in self-signed certificate, encrypted WebSocket connection has been started by default, but most browsers will report invalid certificate errors such as `net::ERR_CERT_COMMON_NAME_INVALID` (Chrome, 360 and other WebKit kernel browsers in developer mode. Console tab can be used to see most connection errors). The reason for this error is that the browser cannot verify the validity of the self-signed certificate. The reader needs to purchase a trusted certificate from a certificate authority and refer to the corresponding section in this article for configuration actions: [Enable SSL/TLS for EMQ X MQTT broker](https://www.emqx.com/en/blog/emqx-server-ssl-tls-secure-connection-configuration-guide).
+EMQ built-in self-signed certificate, encrypted WebSocket connection has been started by default, but most browsers will report invalid certificate errors such as `net::ERR_CERT_COMMON_NAME_INVALID` (Chrome, 360 and other WebKit kernel browsers in developer mode. Console tab can be used to see most connection errors). The reason for this error is that the browser cannot verify the validity of the self-signed certificate. The reader needs to purchase a trusted certificate from a certificate authority and refer to the corresponding section in this article for configuration actions: [Enable SSL/TLS for EMQX MQTT broker](https://www.emqx.com/en/blog/emqx-server-ssl-tls-secure-connection-configuration-guide).
 
 The conditions required to enable SSL/TLS certificates are summarized here:
 
@@ -176,7 +176,7 @@ The conditions required to enable SSL/TLS certificates are summarized here:
 - Apply for a certificate: apply for a certificate for the domain name used with a CA authority, taking care to choose a reliable CA authority and that the certificate distinguishes between a generic domain name and a hostname.
 - Select the `wss` protocol when using an encrypted connection, and **use the domain name to connect**: after binding the domain name - certification, must using the domain name to connect instead of the IP address, so that the browser will check the certification according to the domain name to establish a connection after it has passed the check.
 
-### EMQ X configuration
+### EMQX configuration
 
 Open the `etc/emqx.conf` configuration file and modify the following configurations:
 
@@ -191,13 +191,13 @@ listener.wss.external.keyfile = etc/certs/cert.key
 listener.wss.external.certfile = etc/certs/cert.pem
 ```
 
-Restart EMQ X after completion.
+Restart EMQX after completion.
 
 > You can use your certificate and key files to replace them directly under etc/certs/.
 
 ### Configuring reverse proxies and certificates on Nginx
 
-Using Nginx to reverse proxy and encrypt WebSocket can reduce the computation burden of the EMQ X broker and implement domain name multiplexing at the same time. Nginx [load balancing](https://www.emqx.com/en/blog/mqtt-broker-clustering-part-2-sticky-session-load-balancing) also allows you to distribute multiple back-end service entities.
+Using Nginx to reverse proxy and encrypt WebSocket can reduce the computation burden of the EMQX broker and implement domain name multiplexing at the same time. Nginx [load balancing](https://www.emqx.com/en/blog/mqtt-broker-clustering-part-2-sticky-session-load-balancing) also allows you to distribute multiple back-end service entities.
 
 ```shell
 # It is recommended that WebSocket also bind to port 443.
@@ -223,7 +223,7 @@ location / {
     index index.html;
 }
 
-# Reverse proxy to EMQ X unencrypted WebSocket
+# Reverse proxy to EMQX unencrypted WebSocket
 location / {
     proxy_redirect off;
     # upstream

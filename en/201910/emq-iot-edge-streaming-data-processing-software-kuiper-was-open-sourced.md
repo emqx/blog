@@ -1,4 +1,4 @@
-The world's leading open source IoT software provider [EMQ](https://www.emqx.com/en)  ([Github Project](https://github.com/emqx/emqx) ) officially open-sourced a lightweight streaming data processing project [EMQ X Kuiper](https://github.com/emqx/kuiper) (hereafter referred to as Kuiper)  on October 23, 2019 . With the release of Kuiper, EMQ will accelerate the arrangement of the IoT middleware domain, so as to form a full coverage of IoT middleware software from messaging to data processing, from edge to cloud.
+The world's leading open source IoT software provider [EMQ](https://www.emqx.com/en)  ([Github Project](https://github.com/emqx/emqx) ) officially open-sourced a lightweight streaming data processing project [EMQX Kuiper](https://github.com/emqx/kuiper) (hereafter referred to as Kuiper)  on October 23, 2019 . With the release of Kuiper, EMQ will accelerate the arrangement of the IoT middleware domain, so as to form a full coverage of IoT middleware software from messaging to data processing, from edge to cloud.
 
 ## New Demand for IoT Edge Computing
 

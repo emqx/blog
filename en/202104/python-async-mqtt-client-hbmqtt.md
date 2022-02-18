@@ -47,7 +47,7 @@ pip3 install -i https://pypi.doubanio.com/simple hbmqtt
 
 ## Connect to the MQTT broker
 
-This article will use the [free public MQTT broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker) provided by EMQ X. This service is created based on the [IoT cloud platform](https://www.emqx.com/en/cloud) of EMQ X. The information of broker access is as follows:
+This article will use the [free public MQTT broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker) provided by EMQX. This service is created based on the [IoT cloud platform](https://www.emqx.com/en/cloud) of EMQX. The information of broker access is as follows:
 
 * Broker: broker.emqx.io
 * TCP Port: 1883

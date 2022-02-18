@@ -1,4 +1,4 @@
-本篇文章将使用 MQTT X 的脚本及定时功能模拟温湿度数据上报，EMQ X Edge 作为消息中间件进行消息转发，EMQ X Kuiper 进行消息接收并进行规则处理，最终将处理过的数据通过 EMQ X Edge 下发到 MQTT X。
+本篇文章将使用 MQTT X 的脚本及定时功能模拟温湿度数据上报，EMQX Edge 作为消息中间件进行消息转发，EMQX Kuiper 进行消息接收并进行规则处理，最终将处理过的数据通过 EMQX Edge 下发到 MQTT X。
 
 ![mqttxedgekuiper.png](https://static.emqx.net/images/9f96444f39724baa8ed5ee6d814618ed.png)
 
@@ -6,9 +6,9 @@
 
 本文中所演示的所有运行环境都将通过 Docker 搭建，如有其它安装需求，也可参考下文中提供的下载链接和安装文档进行构建。
 
-### EMQ X Kuiper
+### EMQX Kuiper
 
-[EMQ X Kuiper](https://github.com/lf-edge/ekuiper) 是 Golang 实现的轻量级物联网边缘分析、流式处理开源软件，可以运行在各类资源受限的边缘设备上。Kuiper 设计的一个主要目标就是将在云端运行的实时流式计算框架（比如 [Apache Spark](https://spark.apache.org/)，[Apache Storm](https://storm.apache.org/) 和 [Apache Flink](https://flink.apache.org/) 等）迁移到边缘端。Kuiper 参考了上述云端流式处理项目的架构与实现，结合边缘流式数据处理的特点，采用了编写基于`源 (Source)`，`SQL (业务逻辑处理)`, `目标 (Sink)` 的规则引擎来实现边缘端的流式数据处理。项目地址：[https://github.com/emqx/kuiper](https://github.com/emqx/kuiper)
+[EMQX Kuiper](https://github.com/lf-edge/ekuiper) 是 Golang 实现的轻量级物联网边缘分析、流式处理开源软件，可以运行在各类资源受限的边缘设备上。Kuiper 设计的一个主要目标就是将在云端运行的实时流式计算框架（比如 [Apache Spark](https://spark.apache.org/)，[Apache Storm](https://storm.apache.org/) 和 [Apache Flink](https://flink.apache.org/) 等）迁移到边缘端。Kuiper 参考了上述云端流式处理项目的架构与实现，结合边缘流式数据处理的特点，采用了编写基于`源 (Source)`，`SQL (业务逻辑处理)`, `目标 (Sink)` 的规则引擎来实现边缘端的流式数据处理。项目地址：[https://github.com/emqx/kuiper](https://github.com/emqx/kuiper)
 
 > 版本：v1.0.2
 
@@ -24,7 +24,7 @@ $ docker run -p 9081:9081 -d --name kuiper emqx/kuiper:1.0.2
 
 ### Kuiper-manager
 
-本文将使用 Kuiper-manager 对 EMQ X Kuiper 进行可视化管理和使用，Kuiper-manager 是一款可用于管理 Kuiper 节点，流，规则和插件等的 Web 管理控制台。
+本文将使用 Kuiper-manager 对 EMQX Kuiper 进行可视化管理和使用，Kuiper-manager 是一款可用于管理 Kuiper 节点，流，规则和插件等的 Web 管理控制台。
 
 > 版本：v1.0.2
 
@@ -38,9 +38,9 @@ $ docker pull emqx/kuiper-manager:1.0.2
 $ docker run -p 9082:9082 -d emqx/kuiper-manager:1.0.2
 ```
 
-### EMQ X Edge
+### EMQX Edge
 
-[EMQ X Edge](https://www.emqx.com/zh/products/emqx) 是轻量级多协议物联网边缘消息中间件，支持部署在资源受限的物联网边缘硬件。项目地址：[https://github.com/emqx/emqx](https://github.com/emqx/emqx)
+[EMQX Edge](https://www.emqx.com/zh/products/emqx) 是轻量级多协议物联网边缘消息中间件，支持部署在资源受限的物联网边缘硬件。项目地址：[https://github.com/emqx/emqx](https://github.com/emqx/emqx)
 
 > 版本：v4.2.4
 
@@ -102,7 +102,7 @@ Linux 用户可在 Snapcraft 中进行下载：[https://snapcraft.io/mqttx](http
 
 5. 选择 `配置组`，配置组即为流类型下定义的配置信息，比如 MQTT 默认配置组下 `servers` 信息为 `['tcp://127.0.0.1:1883']`。用户可自定义该配置信息，点击上方的 `源配置` 按钮，进入到页面中配置，也可到  `etc`  目录下修改配置文件。这里我们选择重新配置过的 `demo_conf` 配置组；
 
-   > 注意：如果使用的 MQTT Broker 为 Docker 启动的 EMQ X Edge 话，Servers 地址需要修改为 Docker 容器内的 IP 地址
+   > 注意：如果使用的 MQTT Broker 为 Docker 启动的 EMQX Edge 话，Servers 地址需要修改为 Docker 容器内的 IP 地址
 
 6. 选择 `流格式`，最后我们选择流数据格式为 `json`。
 
@@ -133,7 +133,7 @@ CREATE STREAM demo (
 
 3. 选择添加规则的 `动作`，即为 Sink 动作组，数据可多选，Sink 为当规则执行后输出的目标。这里我们依然使用 MQTT，通过 MQTT 转发规则执行后的数据。选择完成后，可输入 MQTT Sink 的配置信息，本文就只配置  MQTT Broker 的地址和  `Topic`  信息，`Topic`  即为接收消息的主题。
 
-   > 注意：如果使用的 MQTT Broker 为 Docker 启动的 EMQ X Edge 话，Broker 地址需要填写为 Docker 容器内的 IP 地址
+   > 注意：如果使用的 MQTT Broker 为 Docker 启动的 EMQX Edge 话，Broker 地址需要填写为 Docker 容器内的 IP 地址
 
 4. 设置 `选项`，选项部分为可选，均有默认值，如需修改可参考 [Kuiper 文档](https://docs.emqx.cn/kuiper/latest/rules/overview.html#%E9%80%89%E9%A1%B9) 进行设置。
 
@@ -160,7 +160,7 @@ CREATE STREAM demo (
 
 ### MQTT X 使用
 
-下载安装完成后，打开 MQTT X，我们新建一个名为 `edge1` 的连接，连接到和 Kuiper Source 配置相同的 EMQ X Edge 上。测试连接成功后，我们进入到 ` 脚本` 页面，使用以下提供的示例脚本，来生成模拟数据。
+下载安装完成后，打开 MQTT X，我们新建一个名为 `edge1` 的连接，连接到和 Kuiper Source 配置相同的 EMQX Edge 上。测试连接成功后，我们进入到 ` 脚本` 页面，使用以下提供的示例脚本，来生成模拟数据。
 
 ```javascript
 /**
@@ -192,7 +192,7 @@ execute(handlePayload)
 
 ![mqttxtimed.png](https://static.emqx.net/images/6358d2d739f455bb36670269eb3e2c52.png)
 
-此时再新建一个名为 `edge2` 的连接，连接到和 Kuiper Sink 配置相同的 EMQ X Edge 上，然后订阅 MQTT Sink 中配置的  `Topic`，这里就订阅 `/kuiper/rule` 主题，用来接收 Kuiper 处理的过的数据。
+此时再新建一个名为 `edge2` 的连接，连接到和 Kuiper Sink 配置相同的 EMQX Edge 上，然后订阅 MQTT Sink 中配置的  `Topic`，这里就订阅 `/kuiper/rule` 主题，用来接收 Kuiper 处理的过的数据。
 
 ![mqttxrule.png](https://static.emqx.net/images/d3d9bc645f87f0bfe5d63a6c2b6ee62a.png)
 
@@ -216,6 +216,6 @@ execute(handlePayload)
 
 至此，本文就完成了一个使用 MQTT X 客户端验证 Kuiper 流处理的功能的简易教程。Kuiper 可以运行在各类物联网的边缘使用场景中，通过 Kuiper 在边缘端的处理，可以提升系统响应速度，节省网络带宽费用和存储成本，以及提高系统安全性等。
 
-除文章中所示例的 MQTT Source 和 MQTT Sink 外，Kuiper 还内置了许多多样化的 Source 和 Sink 配置，并且包含了与 EdgeX Foundry、KubeEdge、EMQ X Edge 等的集成能力。规则 SQL 内还支持 60+ 常见的函数，提供扩展点可以扩展自定义函数。提供了强大的插件系统，高度可扩展。
+除文章中所示例的 MQTT Source 和 MQTT Sink 外，Kuiper 还内置了许多多样化的 Source 和 Sink 配置，并且包含了与 EdgeX Foundry、KubeEdge、EMQX Edge 等的集成能力。规则 SQL 内还支持 60+ 常见的函数，提供扩展点可以扩展自定义函数。提供了强大的插件系统，高度可扩展。
 
-本篇文章中所使用三个项目都完全开源，您可以到 GitHub（[EMQ X Kuiper](https://github.com/emqx/kuiper)、[EMQ X Edge](https://github.com/emqx/emqx)、[MQTTX](https://github.com/emqx/MQTTX)）中来提交使用过程中遇到的问题，或是 Fork 我们的项目向我们提交修改后的 PR，我们将会及时查阅和处理。也特此感谢社区中所有用户的贡献和反馈。
+本篇文章中所使用三个项目都完全开源，您可以到 GitHub（[EMQX Kuiper](https://github.com/emqx/kuiper)、[EMQX Edge](https://github.com/emqx/emqx)、[MQTTX](https://github.com/emqx/MQTTX)）中来提交使用过程中遇到的问题，或是 Fork 我们的项目向我们提交修改后的 PR，我们将会及时查阅和处理。也特此感谢社区中所有用户的贡献和反馈。

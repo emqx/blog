@@ -1,4 +1,4 @@
-Helm 在 2019 年 11 月发布了 Helm3 , Helm3 相比于 Helm2 增加了不少新特性, 本文介绍如何通过 Helm3 在 Kubernetes 上部署 EMQ X 集群.
+Helm 在 2019 年 11 月发布了 Helm3 , Helm3 相比于 Helm2 增加了不少新特性, 本文介绍如何通过 Helm3 在 Kubernetes 上部署 EMQX 集群.
 
 ## Helm3 新特性
 
@@ -22,7 +22,7 @@ Helm 在 2019 年 11 月发布了 Helm3 , Helm3 相比于 Helm2 增加了不少�
 
 Helm3 提供了官方脚本简化了安装步骤, 可以执行 `curl https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3 | bash` 一键安装, 或者查看 [Helm 官方文档](https://helm.sh/docs/intro/install/) 的详细说明
 
-## 快速部署一个简单的 EMQ X 集群
+## 快速部署一个简单的 EMQX 集群
 
 + 添加 helm 仓库
 
@@ -31,23 +31,23 @@ Helm3 提供了官方脚本简化了安装步骤, 可以执行 `curl https://raw
   $ helm repo update
   ```
 
-+ 查询 EMQ X
++ 查询 EMQX
 
   ```
   helm search repo emqx
   NAME       	 CHART VERSION	APP VERSION	DESCRIPTION
-  emqx/emqx  	 v4.0.0       	v4.0.0     	A Helm chart for EMQ X
-  emqx/emqx-ee v4.0.0       	v4.0.0     	A Helm chart for EMQ X
+  emqx/emqx  	 v4.0.0       	v4.0.0     	A Helm chart for EMQX
+  emqx/emqx-ee v4.0.0       	v4.0.0     	A Helm chart for EMQX
   emqx/kuiper	 0.1.1        	0.1.1      	A lightweight IoT edge analytic software
   ```
 
-+ 启动 EMQ X 集群，设置 `service.type=NodePort`
++ 启动 EMQX 集群，设置 `service.type=NodePort`
 
   ```
   $ helm install my-emqx emqx/emqx --set service.type=NodePort
   ```
 
-+ 查看 EMQ X 集群情况
++ 查看 EMQX 集群情况
 
   ```
   $ kubectl get pods
@@ -64,7 +64,7 @@ Helm3 提供了官方脚本简化了安装步骤, 可以执行 `curl https://raw
                     stopped_nodes => []}
   ```
 
-+ 查看 EMQ X service 
++ 查看 EMQX service 
 
   ```
   $ kubectl get svc
@@ -75,20 +75,20 @@ Helm3 提供了官方脚本简化了安装步骤, 可以执行 `curl https://raw
 
 可以看到 `my-emqx` 的 18083 端口对应的宿主机 IP 是 31539。（NodePort 在每次部署的时候都会变化，以实际部署时为准。）
 
-+ 访问 Kubernetes 的任意一台节点 IP 的 31539 端口，输入默认用户名：admin，默认密码：public，登陆 EMQ X dashboard。 
++ 访问 Kubernetes 的任意一台节点 IP 的 31539 端口，输入默认用户名：admin，默认密码：public，登陆 EMQX dashboard。 
 
-+ 删除 EMQ X 集群
++ 删除 EMQX 集群
 
   ```
   $ helm uninstall my-emqx
   release "my-emqx" uninstalled
   ```
 
-## 部署一个持久化的 EMQ X 集群
+## 部署一个持久化的 EMQX 集群
 
-EMQ X 通过 创建 PVC 资源挂载 `/opt/emqx/data/mnesia` 目录实现持久化 `pods`，**在部署 EMQ X 之前，用户需要部署 [Haproxy](https://www.emqx.com/zh/blog/emqx-haproxy) 或 Nginx-PLUS 等负载均衡器，并自行在 Kubernetes 中创建 PVC 资源或是 Storage Classes 资源**
+EMQX 通过 创建 PVC 资源挂载 `/opt/emqx/data/mnesia` 目录实现持久化 `pods`，**在部署 EMQX 之前，用户需要部署 [Haproxy](https://www.emqx.com/zh/blog/emqx-haproxy) 或 Nginx-PLUS 等负载均衡器，并自行在 Kubernetes 中创建 PVC 资源或是 Storage Classes 资源**
 
-+ 启动 EMQ X 集群
++ 启动 EMQX 集群
 
   + 如果用户部署了 PVC 资源，那么设置 `persistence.existingClaim=your_pv_name`
 
@@ -102,7 +102,7 @@ EMQ X 通过 创建 PVC 资源挂载 `/opt/emqx/data/mnesia` 目录实现持久�
     $ helm install my-emqx emqx/emqx --set persistence.enabled=true --set persistence.storageClass=your_storageClass_name
     ```
 
-+ 查看 EMQ X 集群情况
++ 查看 EMQX 集群情况
 
   ```
   $ kubectl get pods
@@ -129,9 +129,9 @@ EMQ X 通过 创建 PVC 资源挂载 `/opt/emqx/data/mnesia` 目录实现持久�
   emqx-data-my-emqx-2   Bound     pvc-ad425e9d-adb5-11e9-80cc-0697b59e8064   1Gi        RWO            gp2            56s
   ```
 
-  集群会将 EMQ X 的 `/opt/emqx/data/mnesia` 目录挂载到 PVC 中，当 Pods 被重新调度之后，EMQ X 会从 `/opt/emqx/data/mnesia` 目录中获取数据并恢复
+  集群会将 EMQX 的 `/opt/emqx/data/mnesia` 目录挂载到 PVC 中，当 Pods 被重新调度之后，EMQX 会从 `/opt/emqx/data/mnesia` 目录中获取数据并恢复
 
-+ 查看 EMQ X 的 ClusterIP
++ 查看 EMQX 的 ClusterIP
 
   ```
   $ kubectl get svc
@@ -142,15 +142,15 @@ EMQ X 通过 创建 PVC 资源挂载 `/opt/emqx/data/mnesia` 目录实现持久�
 
 可以看到 `my-emqx` 的 ClusterIP 为 `10.100.205.13` （ClusterIP 在每次部署的时候都会变化，以实际部署时为准。）
 
-+ 将负载均衡监听的 URL 的 1883、8883、8081、8083、8084、18083 端口转发到 `my-emqx` 的 ClusterIP，如果有 TLS 连接的需要，推荐在负载均衡器终结 SSL 连接。客户端与负载均衡器之间 TLS 安全连接，LB 与 EMQ X 之间普通 TCP 连接。
++ 将负载均衡监听的 URL 的 1883、8883、8081、8083、8084、18083 端口转发到 `my-emqx` 的 ClusterIP，如果有 TLS 连接的需要，推荐在负载均衡器终结 SSL 连接。客户端与负载均衡器之间 TLS 安全连接，LB 与 EMQX 之间普通 TCP 连接。
 
-+ 访问 `URL:18083`，输入默认用户名：admin，默认密码：public，登陆 EMQ X dashboard。 
++ 访问 `URL:18083`，输入默认用户名：admin，默认密码：public，登陆 EMQX dashboard。 
 
-+ 使用 `helm upgrade` 命令可以轻松扩展 EMQ X 集群，下面以增加 EMQ X 节点为例展示 `helm upgrade` 命令
++ 使用 `helm upgrade` 命令可以轻松扩展 EMQX 集群，下面以增加 EMQX 节点为例展示 `helm upgrade` 命令
 
   ```
-  # 将 EMQ X 的节点数量变更为5个
-  # 注意：EMQ X 的节点数量建议为单数
+  # 将 EMQX 的节点数量变更为5个
+  # 注意：EMQX 的节点数量建议为单数
   $ helm upgrade --set replicaCount=5 my-emqx emqx/emqx
   Release "my-emqx" has been upgraded. Happy Helming!
   ```
@@ -175,7 +175,7 @@ EMQ X 通过 创建 PVC 资源挂载 `/opt/emqx/data/mnesia` 目录实现持久�
 
 ```
 
-+ 删除 EMQ X 集群
++ 删除 EMQX 集群
 
   ```
   $ helm uninstall my-emqx
@@ -184,7 +184,7 @@ EMQ X 通过 创建 PVC 资源挂载 `/opt/emqx/data/mnesia` 目录实现持久�
 
   
 
-**注意：**EMQ X 集群删除掉之后 PVC 资源不会自动释放掉，以便恢复 EMQ X，确认不需要恢复后需要手动删除 PVC 资源
+**注意：**EMQX 集群删除掉之后 PVC 资源不会自动释放掉，以便恢复 EMQX，确认不需要恢复后需要手动删除 PVC 资源
 
 ```
   $ kubectl get pvc
@@ -203,11 +203,11 @@ EMQ X 通过 创建 PVC 资源挂载 `/opt/emqx/data/mnesia` 目录实现持久�
   persistentvolumeclaim "emqx-data-my-emqx-4" deleted
 ```
 
-## 部署 EMQ X Edge 集群和 EMQ X 企业版集群
+## 部署 EMQX Edge 集群和 EMQX 企业版集群
 
-### EMQ X Edge
+### EMQX Edge
 
-部署 EMQ X Edge 集群指定 `image.repository=emqx/emqx-edge`，其他设置与部署 EMQ X 集群保持一致
+部署 EMQX Edge 集群指定 `image.repository=emqx/emqx-edge`，其他设置与部署 EMQX 集群保持一致
 
   ```
 $ helm install my-emqx-edge emqx/emqx --set image.repository=emqx/emqx
@@ -218,26 +218,26 @@ my-emqx-edge-1  1/1     Running   0          23s
 my-emqx-edge-2  1/1     Running   0          9s
   ```
 
-### EMQ X EE
+### EMQX EE
 
-部署 [EMQ X 企业版](https://www.emqx.com/zh/products/emqx)集群首先需要前往 [www.emqx.com](https://www.emqx.com/zh/apply-licenses/emqx) 申请并下载 License 文件，并将 License 文件创建为 Secret 资源
+部署 [EMQX 企业版](https://www.emqx.com/zh/products/emqx)集群首先需要前往 [www.emqx.com](https://www.emqx.com/zh/apply-licenses/emqx) 申请并下载 License 文件，并将 License 文件创建为 Secret 资源
 
 ```
 $ kubectl create secret generic your-license-secret-name --from-file=/path/to/emqx.lic
 ```
 
-然后在部署时指定 repo 为 `emqx/emqx-ee `, `emqxLicneseSecretName=your-license-secret-name`, 其他设置与部署 EMQ X 集群保持一致
+然后在部署时指定 repo 为 `emqx/emqx-ee `, `emqxLicneseSecretName=your-license-secret-name`, 其他设置与部署 EMQX 集群保持一致
 
 ```
 $ helm install my-emqx-ee emqx/emqx-ee emqxLicneseSecretName=your-license-secret-name
 ```
 
-## EMQ X Helm Chart 配置项
+## EMQX Helm Chart 配置项
 
 | 参数                        | 描述                                                         | Default Value |
 | --------------------------- | ------------------------------------------------------------ | ------------- |
-| `replicaCount`              | EMQ X 节点数量，建议保持奇数个节点，不然脑裂后无法自动恢复   | 3             |
-| `image.repository`          | EMQ X 镜像名称                                               | emqx/emqx     |
+| `replicaCount`              | EMQX 节点数量，建议保持奇数个节点，不然脑裂后无法自动恢复   | 3             |
+| `image.repository`          | EMQX 镜像名称                                               | emqx/emqx     |
 | `image.pullPolicy`          | 获取镜像的策略                                               | IfNotPresent  |
 | `persistence.enabled`       | 是否启用 PVC                                                 | false         |
 | `persistence.storageClass`  | Storage class 名称                                           | `nil`         |
@@ -249,8 +249,8 @@ $ helm install my-emqx-ee emqx/emqx-ee emqxLicneseSecretName=your-license-secret
 | `tolerations`               |                                                              | []            |
 | `affinity`                  |                                                              | {}            |
 | `service.type`              | Emqx cluster service type                                    | ClusterIP     |
-| `emqxConfig`                | EMQ X 配置项，详情查看[文档](https://github.com/emqx/emqx-docker#emq-x-configuration) | {}            |
-| `emqxLicneseSecretName`     | EMQ X 企业版需要手动将 License 文件创建为 Secret 资源 (仅在 `emqx/emqx-e` 有效) | ""            |
+| `emqxConfig`                | EMQX 配置项，详情查看[文档](https://github.com/emqx/emqx-docker#emq-x-configuration) | {}            |
+| `emqxLicneseSecretName`     | EMQX 企业版需要手动将 License 文件创建为 Secret 资源 (仅在 `emqx/emqx-e` 有效) | ""            |
 
 当需要设置复杂参数的时候，可以使用 Yaml 文件来记录参数
 

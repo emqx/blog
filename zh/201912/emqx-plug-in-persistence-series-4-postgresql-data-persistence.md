@@ -20,9 +20,9 @@ PostgreSQL 具有诸多特性，在 GIS 领域有较多支持，其“无锁定�
 
 
 
-## 配置 EMQ X 服务器
+## 配置 EMQX 服务器
 
-通过 RPM 方式安装的 EMQ X，PostgreSQL 相关的配置文件位于 `/etc/emqx/plugins/emqx_backend_pgsql.conf`，如果只是测试 PostgreSQL 持久化的功能，大部分配置不需要做更改，填入用户名、密码、数据库即可：
+通过 RPM 方式安装的 EMQX，PostgreSQL 相关的配置文件位于 `/etc/emqx/plugins/emqx_backend_pgsql.conf`，如果只是测试 PostgreSQL 持久化的功能，大部分配置不需要做更改，填入用户名、密码、数据库即可：
 
 ```bash
 backend.pgsql.pool1.server = 127.0.0.1:5432
@@ -52,7 +52,7 @@ emqx_ctl plugins load emqx_backend_pgsql
 
 ### 通过管理控制台启动
 
-EMQ X 管理控制台 **插件** 页面中，找到 **emqx_backend_pgsql** 插件，点击 **启动**。
+EMQX 管理控制台 **插件** 页面中，找到 **emqx_backend_pgsql** 插件，点击 **启动**。
 
 
 
@@ -99,7 +99,7 @@ backend.pgsql.hook.client.disconnected.1 = {"action": {"function": "on_client_di
 
 ### 使用示例
 
-浏览器打开 `http://127.0.0.1:18083` EMQ X 管理控制台，在 **工具** -> **Websocket** 中新建一个客户端连接，指定 clientid 为 sub_client，点击连接，连接成功后手动断开:
+浏览器打开 `http://127.0.0.1:18083` EMQX 管理控制台，在 **工具** -> **Websocket** 中新建一个客户端连接，指定 clientid 为 sub_client，点击连接，连接成功后手动断开:
 
 ![image20181116105333637.png](https://static.emqx.net/images/21b922d468e1c3be5ec2e16a7ab87654.png)
 
@@ -156,7 +156,7 @@ insert into mqtt_sub(clientid, topic, qos) values('sub_client', 'sub_client/upst
 insert into mqtt_sub(clientid, topic, qos) values('sub_client', 'sub_client/downlink', 1);
 ```
 
-2. EMQ X  管理控制台 **WebSocket** 页面，以 clientid `sub_client`  新建一个客户端连接，切换至**订阅**页面，可见当前客户端自动订阅了 `sub_client/upstream` 与 `sub_client/downlink` 两个 QoS 1 的主题：
+2. EMQX  管理控制台 **WebSocket** 页面，以 clientid `sub_client`  新建一个客户端连接，切换至**订阅**页面，可见当前客户端自动订阅了 `sub_client/upstream` 与 `sub_client/downlink` 两个 QoS 1 的主题：
 
 ![image20181116110036523.png](https://static.emqx.net/images/b334ec22b58478ecb23cb940ef537a8f.png)
 
@@ -202,7 +202,7 @@ backend.pgsql.hook.message.publish.1     = {"topic": "#", "action": {"function":
 
 ### 使用示例
 
-在 EMQ X 管理控制台 **WebSocket** 页面中，使用 clientdi `sub_client` 建立连接，向主题 `upstream_topic` 发布多条消息，EMQ X 将消息列表持久化至 `mqtt_msg` 表中：
+在 EMQX 管理控制台 **WebSocket** 页面中，使用 clientdi `sub_client` 建立连接，向主题 `upstream_topic` 发布多条消息，EMQX 将消息列表持久化至 `mqtt_msg` 表中：
 
 ![websocket.png](https://static.emqx.net/images/b81198d32658909aeed6f759c89065bf.png)
 
@@ -253,7 +253,7 @@ backend.pgsql.hook.message.publish.3     = {"topic": "#", "action": {"function":
 
 ### 使用示例
 
-在 EMQ X 管理控制台 **WebSocket** 页面中建立连接后，发布消息勾选**保留**：
+在 EMQX 管理控制台 **WebSocket** 页面中建立连接后，发布消息勾选**保留**：
 
 ![image20181119111926675.png](https://static.emqx.net/images/6499f454eebced1149341d12c73565ec.png)
 
@@ -261,14 +261,14 @@ backend.pgsql.hook.message.publish.3     = {"topic": "#", "action": {"function":
 
 **发布（消息不为空）**
 
-非空的 retain 消息发布时，EMQ X 将以 topic 为唯一键，持久化该条消息至 `mqtt_retain` 表中，相同主题下发布不同的 retain 消息，只有最后一条消息会被持久化：
+非空的 retain 消息发布时，EMQX 将以 topic 为唯一键，持久化该条消息至 `mqtt_retain` 表中，相同主题下发布不同的 retain 消息，只有最后一条消息会被持久化：
 
 ![image20181119112306703.png](https://static.emqx.net/images/be54769f62f8d60acd4c43fe9122b50c.png)
 
 
 **订阅**
 
-客户端订阅 retain 主题后，EMQ X 将查询 `mqtt_retain` 数据表，执行投递 retain 消息操作。
+客户端订阅 retain 主题后，EMQX 将查询 `mqtt_retain` 数据表，执行投递 retain 消息操作。
 
 
 
@@ -282,7 +282,7 @@ MQTT 协议中，发布空的 retain 消息将清空 retain 记录，此时 reta
 
 ## 消息确认持久化
 
-开启消息确认 (ACK) 持久化后，客户端订阅 QoS 1、QoS 2 级别的主题时，EMQ X 将在数据库以 clientid + topic 为唯一键初始化 ACK 记录。
+开启消息确认 (ACK) 持久化后，客户端订阅 QoS 1、QoS 2 级别的主题时，EMQX 将在数据库以 clientid + topic 为唯一键初始化 ACK 记录。
 
 
 
@@ -323,7 +323,7 @@ backend.pgsql.hook.session.unsubscribed.1= {"topic": "#", "action": {"sql": ["de
 
 ### 使用示例
 
-在 EMQ X 管理控制台 **WebSocket** 页面中建立连接后，订阅 QoS > 0 的主题：
+在 EMQX 管理控制台 **WebSocket** 页面中建立连接后，订阅 QoS > 0 的主题：
 
 ![image20181119140251843.png](https://static.emqx.net/images/b0300b43d42beb9f6232722a71ab56aa.png)
 
@@ -359,7 +359,7 @@ backend.pgsql.hook.session.unsubscribed.1= {"topic": "#", "action": {"sql": ["de
 
 ### 更新自定义数据表示例
 
-应用现有设备表 `clients`，具有设备连接认证、设备状态记录、设备管理等基本字段用于其他管理业务，现需要将 EMQ X 设备状态同步至该表中：
+应用现有设备表 `clients`，具有设备连接认证、设备状态记录、设备管理等基本字段用于其他管理业务，现需要将 EMQX 设备状态同步至该表中：
 
 ```sql
 CREATE TABLE "public"."clients" (

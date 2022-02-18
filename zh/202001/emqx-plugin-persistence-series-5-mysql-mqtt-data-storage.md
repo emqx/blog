@@ -8,7 +8,7 @@ MySQL 属于传统的关系型数据库产品，其开放式的架构使得用�
 
 为方便管理操作，可下载使用官方免费图形化管理软件 [MySQL Workbeanch](https://dev.mysql.com/downloads/workbench/)。
 
-> 如果读者使用的是 MySQL 8.0 及以上版本，MySQL 需按照[ EMQ X 无法连接 MySQL 8.0](https://docs.emqx.io/faq/v3/cn/errors.html#emq-x-无法连接-mysql-80) 教程特殊配置。
+> 如果读者使用的是 MySQL 8.0 及以上版本，MySQL 需按照[ EMQX 无法连接 MySQL 8.0](https://docs.emqx.io/faq/v3/cn/errors.html#emq-x-无法连接-mysql-80) 教程特殊配置。
 
 
 
@@ -113,9 +113,9 @@ CREATE TABLE `mqtt_acked` (
 
 
 
-## 配置 EMQ X 服务器
+## 配置 EMQX 服务器
 
-通过 RPM 方式安装的 EMQ X，MySQL 相关的配置文件位于 `/etc/emqx/plugins/emqx_backend_mysql.conf`，本文仅测试 MySQL 持久化的功能，大部分配置不需要做更改。填入用户名、密码、数据库即可：
+通过 RPM 方式安装的 EMQX，MySQL 相关的配置文件位于 `/etc/emqx/plugins/emqx_backend_mysql.conf`，本文仅测试 MySQL 持久化的功能，大部分配置不需要做更改。填入用户名、密码、数据库即可：
 
 ```bash
 backend.mysql.server = 127.0.0.1:3306
@@ -138,7 +138,7 @@ emqx_ctl plugins load emqx_backend_mysql
 
 ### 通过管理控制台启动
 
-EMQ X 管理控制台 **插件** 页面中，找到 **emqx_backend_mysql** 插件，点击 **启动**。
+EMQX 管理控制台 **插件** 页面中，找到 **emqx_backend_mysql** 插件，点击 **启动**。
 
 ### 通过 REST API 启动
 
@@ -169,7 +169,7 @@ backend.mysql.hook.client.disconnected.1 = {"action": {"function": "on_client_di
 
 ### 使用示例
 
-浏览器打开 `http://127.0.0.1:18083` EMQ X 管理控制台，在 **工具** -> **Websocket** 中新建一个客户端连接，指定 clientid 为 sub_client，点击连接，连接成功后手动断开:
+浏览器打开 `http://127.0.0.1:18083` EMQX 管理控制台，在 **工具** -> **Websocket** 中新建一个客户端连接，指定 clientid 为 sub_client，点击连接，连接成功后手动断开:
 
 ![image20181116105333637.png](https://static.emqx.net/images/20f7a8592d5fdaa8d9db4a385f2fd964.png)
 
@@ -209,7 +209,7 @@ insert into mqtt_sub(clientid, topic, qos) values("sub_client", "sub_client/upst
 insert into mqtt_sub(clientid, topic, qos) values("sub_client", "sub_client/downlink", 1);
 ```
 
-2. EMQ X  管理控制台 **WebSocket** 页面，以 clientid `sub_client`  新建一个客户端连接，切换至**订阅**页面，可见当前客户端自动订阅了 `sub_client/upstream` 与 `sub_client/downlink` 两个 QoS 1 的主题：
+2. EMQX  管理控制台 **WebSocket** 页面，以 clientid `sub_client`  新建一个客户端连接，切换至**订阅**页面，可见当前客户端自动订阅了 `sub_client/upstream` 与 `sub_client/downlink` 两个 QoS 1 的主题：
 
 ![image20181116110036523.png](https://static.emqx.net/images/30b6bc892f1df5ba300fcbfe145345d5.png)
 
@@ -238,7 +238,7 @@ backend.mysql.hook.message.publish.1     = {"topic": "#", "action": {"function":
 
 ### 使用示例
 
-在 EMQ X 管理控制台 **WebSocket** 页面中，向主题 `upstream_topic` 发布多条消息，EMQ X 将消息列表持久化至 `mqtt_msg` 表中：
+在 EMQX 管理控制台 **WebSocket** 页面中，向主题 `upstream_topic` 发布多条消息，EMQX 将消息列表持久化至 `mqtt_msg` 表中：
 
 ![image20181119110712267.png](https://static.emqx.net/images/964dabfb8bf10ae868b69f117e849c9b.png)
 
@@ -272,7 +272,7 @@ backend.mysql.hook.message.publish.3     = {"topic": "#", "action": {"function":
 
 ### 使用示例
 
-在 EMQ X 管理控制台 **WebSocket** 页面中建立连接后，发布消息勾选**保留**：
+在 EMQX 管理控制台 **WebSocket** 页面中建立连接后，发布消息勾选**保留**：
 
 ![image20181119111926675.png](https://static.emqx.net/images/9460dfcbb0188867ad37aa7a36c1687b.png)
 
@@ -280,7 +280,7 @@ backend.mysql.hook.message.publish.3     = {"topic": "#", "action": {"function":
 
 **发布（消息不为空）**
 
-非空的 retain 消息发布时，EMQ X 将以 topic 为唯一键，持久化该条消息至 `mqtt_retain` 表中，相同主题下发不同的 retain 消息，只有最后一条消息会被持久化：
+非空的 retain 消息发布时，EMQX 将以 topic 为唯一键，持久化该条消息至 `mqtt_retain` 表中，相同主题下发不同的 retain 消息，只有最后一条消息会被持久化：
 
 
 ![image20181119164153931.png](https://static.emqx.net/images/9b17858dedd4ed083c73c4678b26b769.png)
@@ -288,7 +288,7 @@ backend.mysql.hook.message.publish.3     = {"topic": "#", "action": {"function":
 
 **订阅**
 
-客户端订阅 retain 主题后，EMQ X 将查询 `mqtt_retain` 数据表，执行投递 retain 消息操作。
+客户端订阅 retain 主题后，EMQX 将查询 `mqtt_retain` 数据表，执行投递 retain 消息操作。
 
 
 
@@ -300,7 +300,7 @@ MQTT 协议中，发布空的 retain 消息将清空 retain 记录，此时 reta
 
 ## 消息确认持久化
 
-开启消息确认 (ACK) 持久化后，客户端订阅 QoS 1、QoS 2 级别的主题时，EMQ X 将在数据库以 clientid + topic 为唯一键初始化 ACK 记录。
+开启消息确认 (ACK) 持久化后，客户端订阅 QoS 1、QoS 2 级别的主题时，EMQX 将在数据库以 clientid + topic 为唯一键初始化 ACK 记录。
 
 ### 配置项
 
@@ -322,7 +322,7 @@ backend.mysql.hook.session.unsubscribed.1= {"topic": "#", "action": {"sql": ["de
 
 ### 使用示例
 
-在 EMQ X 管理控制台 **WebSocket** 页面中建立连接后，订阅 QoS > 0 的主题：
+在 EMQX 管理控制台 **WebSocket** 页面中建立连接后，订阅 QoS > 0 的主题：
 
 ![image20181119140251843.png](https://static.emqx.net/images/0f102ddaa6b0f7de7ad74993e7df8895.png)
 

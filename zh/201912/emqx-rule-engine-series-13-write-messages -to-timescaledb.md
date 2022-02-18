@@ -8,7 +8,7 @@ TimescaleDB是在 PostgreSQL 数据库的基础上进行开发的，所以使用
 
 ## 场景介绍
 
-该场景需要将 EMQ X 指定主题下且满足条件的消息存储到 TimescaleDB。为了便于后续分析检索，消息内容需要进行拆分存储。
+该场景需要将 EMQX 指定主题下且满足条件的消息存储到 TimescaleDB。为了便于后续分析检索，消息内容需要进行拆分存储。
 
 **该场景下客户端上报数据如下：**
 
@@ -71,7 +71,7 @@ $ docker exec -it timescaledb psql -U postgres
 
 ### 创建资源
 
-打开 EMQ X Dashboard，进入左侧菜单的 **资源** 页面，点击 **新建** 按钮，选择 TimescaleDB 资源类型并完成相关配置进行资源创建。
+打开 EMQX Dashboard，进入左侧菜单的 **资源** 页面，点击 **新建** 按钮，选择 TimescaleDB 资源类型并完成相关配置进行资源创建。
 
 ![image20190725121129697.png](https://static.emqx.net/images/f5a03d8bd27e4c8f8350a9488c4fee56.png)
 
@@ -79,7 +79,7 @@ $ docker exec -it timescaledb psql -U postgres
 
 ### 创建规则
 
-进入左侧菜单的 **规则** 页面，点击 **新建** 按钮，进行规则创建。这里选择触发事件 **message.publish**，即在 EMQ X 收到 PUBLISH 消息时触发该规则进行数据处理。
+进入左侧菜单的 **规则** 页面，点击 **新建** 按钮，进行规则创建。这里选择触发事件 **message.publish**，即在 EMQX 收到 PUBLISH 消息时触发该规则进行数据处理。
 
 选定触发事件后，我们可在界面上看到可选字段及示例 SQL：
 
@@ -151,7 +151,7 @@ SQL 条件输入输出无误后，我们继续添加响应动作，配置写入 
 
 ### 使用 Dashboard 中的 Websocket 工具测试
 
-切换到 **工具** --> **Websocket** 页面，使用任意信息客户端连接到 EMQ X，连接成功后在 **消息** 卡片中发送如下消息：
+切换到 **工具** --> **Websocket** 页面，使用任意信息客户端连接到 EMQX，连接成功后在 **消息** 卡片中发送如下消息：
 
 - Topic：data/sensor
 

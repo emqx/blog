@@ -1,4 +1,4 @@
-在阅读该教程之前，假定你已经了解 [MQTT](https://docs.oasis-open.org/mqtt/mqtt/v3.1.1/os/mqtt-v3.1.1-os.html)、[EMQ X](https://github.com/emqx/emqx) 的简单知识。
+在阅读该教程之前，假定你已经了解 [MQTT](https://docs.oasis-open.org/mqtt/mqtt/v3.1.1/os/mqtt-v3.1.1-os.html)、[EMQX](https://github.com/emqx/emqx) 的简单知识。
 
 
 

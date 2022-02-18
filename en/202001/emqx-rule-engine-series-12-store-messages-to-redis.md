@@ -13,7 +13,7 @@ Readers can refer to Redis official Quick Start (https://redis.io/topics/quickst
 
 ## Scenario introduction
 
-In this scenario, messages that meet the conditions under the specified topic of EMQ X need to be stored in Reids. In order to facilitate subsequent analysis and retrieval, the message content needs to be split and stored.
+In this scenario, messages that meet the conditions under the specified topic of EMQX need to be stored in Reids. In order to facilitate subsequent analysis and retrieval, the message content needs to be split and stored.
 
 **The information reported by the device in this scenario is as follows:**
 
@@ -44,13 +44,13 @@ When the reported engine speed value is greater than `8000`, the current informa
 
 ### Create a resource
 
-Open EMQ X Dashboard, enter the **Resources**  page of the left menu, click the  **New** button, and enter the Redis server information to create a resource.
+Open EMQX Dashboard, enter the **Resources**  page of the left menu, click the  **New** button, and enter the Redis server information to create a resource.
 
 ![s.png](https://static.emqx.net/images/84dda5c0c71dbd073ada895a83f54120.png)
 
 
 
-The network environment of the nodes in the EMQ X cluster may be different from each other. After the resources are successfully created, click the **Status button** in the list to view the resource connection status of each node. If the resources on the nodes are not available, please check whether the configuration is correct and the network connectivity, and click the **Reconnect** button to reconnect manually.
+The network environment of the nodes in the EMQX cluster may be different from each other. After the resources are successfully created, click the **Status button** in the list to view the resource connection status of each node. If the resources on the nodes are not available, please check whether the configuration is correct and the network connectivity, and click the **Reconnect** button to reconnect manually.
 
 ![v.png](https://static.emqx.net/images/9b071cec91b5f05999aa13b0c66c3e35.png)
 
@@ -58,7 +58,7 @@ The network environment of the nodes in the EMQ X cluster may be different from 
 
 ### Create a rule
 
-Enter the **Rules** page on the left menu and click the **New** button to create a rule. Here we choose to trigger event  of **message.publish**, which means when EMQ X receives the message of PUBLISH , the rule is triggered for data processing.
+Enter the **Rules** page on the left menu and click the **New** button to create a rule. Here we choose to trigger event  of **message.publish**, which means when EMQX receives the message of PUBLISH , the rule is triggered for data processing.
 
 After the trigger event is selected, we can see optional fields and sample SQL on the interface:
 
@@ -180,7 +180,7 @@ We have successfully created a rule that contains a processing action. The expec
 
 #### Test with Websocket tools in Dashboard
 
-Switch to the **Tools ->  Websocket**  page, use any information client to connect to EMQ X. After the connection is successful, send the following message in the  **message** card:
+Switch to the **Tools ->  Websocket**  page, use any information client to connect to EMQX. After the connection is successful, send the following message in the  **message** card:
 
 - Topic: cmd/state/NXP-058659730253-963945118132721-22
 

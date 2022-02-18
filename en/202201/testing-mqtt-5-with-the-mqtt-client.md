@@ -8,7 +8,7 @@ In this article, we will introduce in detail the specific use of the new feature
 
 Before using MQTT X v1.7.0 to test the features of MQTT 5.0, we first need to get an MQTT Broker that supports MQTT 5.0.
 
-This article will use the public MQTT 5.0 Broker provided by [EMQ X Cloud](https://www.emqx.com/en/cloud) with the MQTT X client for testing. As a fully managed cloud-native MQTT 5.0 message service, EMQ X Cloud can quickly create an MQTT Broker instantly in minutes and fully supports MQTT 5.0. It is also the world's first fully managed MQTT 5.0 public cloud service.
+This article will use the public MQTT 5.0 Broker provided by [EMQX Cloud](https://www.emqx.com/en/cloud) with the MQTT X client for testing. As a fully managed cloud-native MQTT 5.0 message service, EMQX Cloud can quickly create an MQTT Broker instantly in minutes and fully supports MQTT 5.0. It is also the world's first fully managed MQTT 5.0 public cloud service.
 
 Start a 30-day free trial: [fully managed cloud-native MQTT message service](https://www.emqx.com/en/cloud)
 
@@ -122,6 +122,6 @@ The control of automatic scrolling of the message list when receiving and publis
 
 ## Conclusion
 
-Through this article, we believe that you have a better understanding of the functions of MQTT X v1.7.0. The combination of MQTT X and EMQ X can help you fully grasp the MQTT 5.0 protocol and better apply its features in projects.
+Through this article, we believe that you have a better understanding of the functions of MQTT X v1.7.0. The combination of MQTT X and EMQX can help you fully grasp the MQTT 5.0 protocol and better apply its features in projects.
 
 In the future, we will also improve the ability of MQTT X to support configurations such as Topic Alias, Request Responses, and Subscription Identifier, please stay tuned.

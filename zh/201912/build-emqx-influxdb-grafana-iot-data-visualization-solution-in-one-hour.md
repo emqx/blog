@@ -2,7 +2,7 @@
 
 
 
-本文以常见物联网使用场景为例，介绍了如何利用 EMQ X MQTT 服务器 + InfluxDB + Grafana 构建物联网数据可视化平台，将物联网设备上传的时序数据便捷地展现出来。
+本文以常见物联网使用场景为例，介绍了如何利用 EMQX MQTT 服务器 + InfluxDB + Grafana 构建物联网数据可视化平台，将物联网设备上传的时序数据便捷地展现出来。
 
 在物联网项目中接入平台的设备数据和数据存储方案有以下特点：
 
@@ -44,13 +44,13 @@ devices/{client_id}/messages
 
 ## 方案介绍
 
-目前市面上已有多款物联网消息中间件、时序数据库和数据可视化产品，结合数据的采集上报、联网接入、消息存储与可视化功能来看，EMQ X（高性能物联网 MQTT 消息中间件） + InfluxDB（时序数据库）+ Grafana（美观、强大的可视化监控指标展示工具）组合无疑是最佳的物联网数据可视化集成方案。
+目前市面上已有多款物联网消息中间件、时序数据库和数据可视化产品，结合数据的采集上报、联网接入、消息存储与可视化功能来看，EMQX（高性能物联网 MQTT 消息中间件） + InfluxDB（时序数据库）+ Grafana（美观、强大的可视化监控指标展示工具）组合无疑是最佳的物联网数据可视化集成方案。
 
 方案整体架构如下图所示：
 
 ![image20191125163959537.png](https://static.emqx.net/images/132d0cbb3f4166478a7c06dbcfa051d4.png)
 
-- **EMQ X**：[EMQ X ](https://github.com/emqx/emqx) 是基于高并发的 Erlang/OTP 语言平台开发，支持百万级连接和分布式集群架构，发布订阅模式的开源 MQTT 消息服务器。EMQ X 内置了大量开箱即用的功能， **其企业版 EMQ X Enterprise 支持通过规则引擎或消息持久化插件将设备消息高性能地存储到 InfluxDB** ，开源用户需自行处理消息存储环节。
+- **EMQX**：[EMQX ](https://github.com/emqx/emqx) 是基于高并发的 Erlang/OTP 语言平台开发，支持百万级连接和分布式集群架构，发布订阅模式的开源 MQTT 消息服务器。EMQX 内置了大量开箱即用的功能， **其企业版 EMQX Enterprise 支持通过规则引擎或消息持久化插件将设备消息高性能地存储到 InfluxDB** ，开源用户需自行处理消息存储环节。
 - **InfluxDB**：InfluxDB 是一个由 InfluxData 开源的时序型数据库。它由 Go 写成，着力于高性能地查询与存储时序型数据。InfluxDB 被广泛应用于存储系统的监控数据，IoT 行业的实时数据等场景。
 - **Grafana**： Grafana 是一个跨平台、开源的度量分析和可视化工具，可以通过灵活的配置查询采集到的数据并进行可视化展示。它可以快速灵活的创建客户端图表，官方库中具有丰富的仪表盘插件，比如热图、折线图、图表等多种展示方式。支持 Graphite，InfluxDB，OpenTSDB，Prometheus，Elasticsearch，CloudWatch 和 KairosDB 等数据源。可以创建自定义告警规则并通知到其他消息处理服务或组件中。
 
@@ -58,29 +58,29 @@ devices/{client_id}/messages
 
 ## 实现步骤
 
-本文所用各个组件均有 Docker 镜像，除 EMQ X 需要使用下载安装外（方便修改部分配置），InfluxDB 与 Grafana 均使用 Docker 搭建，详细的安装步骤本文不再赘述。
+本文所用各个组件均有 Docker 镜像，除 EMQX 需要使用下载安装外（方便修改部分配置），InfluxDB 与 Grafana 均使用 Docker 搭建，详细的安装步骤本文不再赘述。
 
 三大部件的官网均有不同操作系统的安装包资源与教程：
 
-- [EMQ X 官网](https://www.emqx.com/zh)
+- [EMQX 官网](https://www.emqx.com/zh)
 - [InfluxDB 官网](https://www.influxdata.com/)
 - [Grafana 官网](https://grafana.com/) 
 
-### EMQ X 安装
+### EMQX 安装
 
 #### 安装
 
-访问 [EMQ X 下载](https://www.emqx.com/zh/try) 页面下载适合您操作系统的安装包， **由于数据持久化是企业功能，您需要下载 EMQ X 企业版（可以申请 License 试用）** 。 写本文的时候 EMQ X 企业版最新版本为 v3.4.5，本教程需要使用该版本及以上版本，下载后的启动步骤如下 ：
+访问 [EMQX 下载](https://www.emqx.com/zh/try) 页面下载适合您操作系统的安装包， **由于数据持久化是企业功能，您需要下载 EMQX 企业版（可以申请 License 试用）** 。 写本文的时候 EMQX 企业版最新版本为 v3.4.5，本教程需要使用该版本及以上版本，下载后的启动步骤如下 ：
 
 ```bash
 ## 解压下载好的安装包
 unzip emqx-ee-macosx-v3.4.4.zip
 cd emqx
 
-## 将 License 文件复制到 EMQ X 指定目录 etc/, License 需自行申请试用或通过购买授权获取
+## 将 License 文件复制到 EMQX 指定目录 etc/, License 需自行申请试用或通过购买授权获取
 cp ../emqx.lic ./etc
 
-## 以 console 模式启动 EMQ X
+## 以 console 模式启动 EMQX
 ./bin/emqx console
 ```
 
@@ -88,13 +88,13 @@ cp ../emqx.lic ./etc
 
 本文中需要用到的配置文件如下：
 
-1. License 文件，EMQ X 企业版 License 文件，使用可用的 License 覆盖：
+1. License 文件，EMQX 企业版 License 文件，使用可用的 License 覆盖：
 
    ```
    etc/emqx.lic
    ```
 
-2. EMQ X InfluxDB 消息存储插件配置文件，用于配置 InfluxDB 连接信息、选取入库 Topic：
+2. EMQX InfluxDB 消息存储插件配置文件，用于配置 InfluxDB 连接信息、选取入库 Topic：
 
    ```
    etc/plugins/emqx_backend_influxdb.conf
@@ -115,7 +115,7 @@ cp ../emqx.lic ./etc
    backend.influxdb.hook.message.publish.1 = {"topic": "devices/+/messages", "action": {"function": "on_message_publish"}, "pool": "pool1"}
    ```
 
-3. EMQ X InfluxDB 消息存储插件消息模板文件，用于定义消息解析入库模板：
+3. EMQX InfluxDB 消息存储插件消息模板文件，用于定义消息解析入库模板：
 
    ```
    ## 模板文件
@@ -125,7 +125,7 @@ cp ../emqx.lic ./etc
    data/templates/emqx_backend_influxdb.tmpl
    ```
 
-   由于 MQTT Message 无法直接写入 InfluxDB,  EMQ X 提供了 emqx_backend_influxdb.tmpl 模板文件将 MQTT Message 转换为可写入 InfluxDB 的 DataPoint：
+   由于 MQTT Message 无法直接写入 InfluxDB,  EMQX 提供了 emqx_backend_influxdb.tmpl 模板文件将 MQTT Message 转换为可写入 InfluxDB 的 DataPoint：
 
    ```
    {
@@ -143,13 +143,13 @@ cp ../emqx.lic ./etc
    }
    ```
 
-   > 关于 EMQ X InfluxDB 使用详细教程见 [ InfluxDB 数据存储](
+   > 关于 EMQX InfluxDB 使用详细教程见 [ InfluxDB 数据存储](
 
 ### InfluxDB 安装
 
 通过 Docker 进行安装，映射数据文件夹与 `8089` udp 端口与 `8086` 端口（Grafana 使用）：
 
-> EMQ X 仅支持 InfluxDB UDP 通道，需要 influx_udp 插件支持，且数据库名称指定为 db
+> EMQX 仅支持 InfluxDB UDP 通道，需要 influx_udp 插件支持，且数据库名称指定为 db
 
 ```bash
 ## 使用 influx_udp 插件
@@ -169,7 +169,7 @@ docker ps -a
 
 ```
 
-**至此，可以重启 EMQ X 并启动插件以应用以上配置**:
+**至此，可以重启 EMQX 并启动插件以应用以上配置**:
 
 ```bash
 ./bin/emqx stop
@@ -205,7 +205,7 @@ docker run -d --name=grafana -p 3000:3000 grafana/grafana
 
 进行可视化配置之前需要写入模拟数据，方便配置过程中进行效果预览。
 
-以下脚本模拟完成了 100 个设备在过去 12 小时内、每隔 5 秒钟上报一条模拟温湿度数据并发送到 EMQ X 的场景，读者安装 Node.js 平台后可以通过以下命令启动：
+以下脚本模拟完成了 100 个设备在过去 12 小时内、每隔 5 秒钟上报一条模拟温湿度数据并发送到 EMQX 的场景，读者安装 Node.js 平台后可以通过以下命令启动：
 
 ```bash
 npm install mqtt mockjs --save
@@ -313,7 +313,7 @@ new MockData(100)
 
 - URL：填写 InfluxDB 连接地址，由于我们使用 Docker 安装，Grafana 由于 InfluxDB 容器网络不互通，此处可以输入当前服务器内网/局域网地址而非 `127.0.0.1` 或 `localhost`；
 - Auth：InfluxDB 默认启动无认证方式，根据实际情况填写；
-- Database：填写 `db` ，为 EMQ X 默认写入数据库名。 
+- Database：填写 `db` ，为 EMQX 默认写入数据库名。 
 
 ### 添加仪表盘
 
@@ -364,4 +364,4 @@ new MockData(100)
 
 ## 总结
 
-至此我们完成了 EMQ X + InfluxDB + Grafana 物联网数据可视化平台的搭建。通过本文，读者可以了解到利用 EMQ X 丰富的拓展能力在数据可视化解决方案里可以非常快速、灵活地开发出基于 InfluxDB + Grafana 的可视化系统，实现海量数据存储、计算分析与展现。深入学习掌握 Grafana 的其他功能后，用户可以定制出更完善的数据可视化乃至监控告警系统。
+至此我们完成了 EMQX + InfluxDB + Grafana 物联网数据可视化平台的搭建。通过本文，读者可以了解到利用 EMQX 丰富的拓展能力在数据可视化解决方案里可以非常快速、灵活地开发出基于 InfluxDB + Grafana 的可视化系统，实现海量数据存储、计算分析与展现。深入学习掌握 Grafana 的其他功能后，用户可以定制出更完善的数据可视化乃至监控告警系统。

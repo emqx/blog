@@ -1,4 +1,4 @@
-在[上篇文章](https://www.emqx.com/zh/blog/emqx-or-rabbitmq-part-1)中，我们采用相同的硬件资源分别对 [MQTT 消息服务器 EMQ X](https://www.emqx.io/zh) 和 [RabbitMQ](https://www.rabbitmq.com) 进行了压力测试。结果表明：在「多对一」 场景中，EMQ X 和 RabbitMQ 相比并没有太大差别；而在「一对多」场景中，RabbitMQ 则较 EMQ X 产生了较为明显的差距。
+在[上篇文章](https://www.emqx.com/zh/blog/emqx-or-rabbitmq-part-1)中，我们采用相同的硬件资源分别对 [MQTT 消息服务器 EMQX](https://www.emqx.io/zh) 和 [RabbitMQ](https://www.rabbitmq.com) 进行了压力测试。结果表明：在「多对一」 场景中，EMQX 和 RabbitMQ 相比并没有太大差别；而在「一对多」场景中，RabbitMQ 则较 EMQX 产生了较为明显的差距。
 
 本期文章中我们将对这一结果进行进一步的解析。
 
@@ -22,9 +22,9 @@ RabbitMQ 使用了 Erlang 语言的分布式连接，即每个节点之间两两
 
 ![RabbitMQdelegate2.png](https://static.emqx.net/images/3701be881446123170efa08751cd5c2f.png)
 
-### EMQ X - Gen_RPC
+### EMQX - Gen_RPC
 
-在 EMQ X 中有个精妙的设计：其不仅存在着分布式连接，还存在着 Gen_RPC。分布连接和 Gen_RPC 各司其职，前者用于交换 Mnesia 的数据信息，后者则只适用于消息的转发。每当你需要从一个节点向另一个节点发布一个消息的时候，EMQ X 不是重新自动生成新的节点间链接（默认 1 个连接），再通过这些新的连接去处理把一个消息从一个节点推送到另一个节点的工作。而是依靠针对此场景特地设计的，专有的 Gen_RPC 连接来处理这个消息推送的工作。所以在扇出（一对多）的例子中，这些链接会被完全有效地利用。
+在 EMQX 中有个精妙的设计：其不仅存在着分布式连接，还存在着 Gen_RPC。分布连接和 Gen_RPC 各司其职，前者用于交换 Mnesia 的数据信息，后者则只适用于消息的转发。每当你需要从一个节点向另一个节点发布一个消息的时候，EMQX 不是重新自动生成新的节点间链接（默认 1 个连接），再通过这些新的连接去处理把一个消息从一个节点推送到另一个节点的工作。而是依靠针对此场景特地设计的，专有的 Gen_RPC 连接来处理这个消息推送的工作。所以在扇出（一对多）的例子中，这些链接会被完全有效地利用。
 
 ![EMQx连接.png](https://static.emqx.net/images/85793cea9e516f5981fba9299240fe6f.png)
 ![EMQxgen_rpc.png](https://static.emqx.net/images/fee9e2f293c7e5b5ca7fc585ccc433dd.png)
@@ -51,19 +51,19 @@ AMQP 场景则不同，每条消息都被一个 reader 读取，一个 writer �
 
 ![AMQP.png](https://static.emqx.net/images/17717215892fdfd1f1b7a5b47b327d9b.png)
 
-可见 RabbitMQ 在 MQTT 场景中存在的明显的设计问题会导致性能下降，那么如果引入 AMQP 模式的 RabbitMQ 测试用例将会如何呢？将 RabbitMQ 调制成使用 MQTT 插件的和使用单一 AMQP 的模式使用，再对比 EMQ X 在压力测试下的情况，可以看出 EMQ X 在所有测试中仍是更胜一筹，但总体来说使用 AMQP 模式的 RabbitMQ 要比自己原有的成绩更好。
+可见 RabbitMQ 在 MQTT 场景中存在的明显的设计问题会导致性能下降，那么如果引入 AMQP 模式的 RabbitMQ 测试用例将会如何呢？将 RabbitMQ 调制成使用 MQTT 插件的和使用单一 AMQP 的模式使用，再对比 EMQX 在压力测试下的情况，可以看出 EMQX 在所有测试中仍是更胜一筹，但总体来说使用 AMQP 模式的 RabbitMQ 要比自己原有的成绩更好。
 
 #### 多对一
 
 ![多对一测试结果.png](https://static.emqx.net/images/4ffa40292efbbe92616e2c78d88547c6.png)
 
-此场景中 RabbitMQ 与 EMQ X 已经有了接近的性能表现。
+此场景中 RabbitMQ 与 EMQX 已经有了接近的性能表现。
 
 #### 一对多
 
 ![一对多测试结果.png](https://static.emqx.net/images/2e39662f8ccb2cc9dab490197e0a2e22.png)
 
-但如果在 fan-out（一对多)场景里，EMQ X 仍然具有显著优势，但 RabbitMQ（AMQP）的差距已经明显缩小。
+但如果在 fan-out（一对多)场景里，EMQX 仍然具有显著优势，但 RabbitMQ（AMQP）的差距已经明显缩小。
 
 
 
@@ -77,13 +77,13 @@ RabbitMQ 成熟地使用了一个默认的队列空间执行方式（可以被�
 
 ![RabbitMQQueue.png](https://static.emqx.net/images/66284df763ff39f0b5fe45b52ba823e2.png)
 
-### EMQ X
+### EMQX
 
-EMQ X 对队列的实现方式非常简单，即在内存中使用了优先队列。如果发来的消息无法推入接收者的队列，则这个消息会被丢掉。在 EMQ X 中，只有用一些其他持久化的插件才能使消息持久化保存，这些功能在商业版中提供。
+EMQX 对队列的实现方式非常简单，即在内存中使用了优先队列。如果发来的消息无法推入接收者的队列，则这个消息会被丢掉。在 EMQX 中，只有用一些其他持久化的插件才能使消息持久化保存，这些功能在商业版中提供。
 
 ![EMQxQueue.png](https://static.emqx.net/images/7eda1f96d217ecf4119212cf6bbdea44.png)
 
-EMQ X 的设计初衷是将接入层独立，所以将消息持久化的问题留给了后端完成。这一问题在未来具有持久性会话的版本中会解决（persistence session）。
+EMQX 的设计初衷是将接入层独立，所以将消息持久化的问题留给了后端完成。这一问题在未来具有持久性会话的版本中会解决（persistence session）。
 
 
 
@@ -97,31 +97,31 @@ RabbitMQ 采用了一种比较有名的控流机制，它给每一个流程了�
 
 这其实是一个不错的解决方案。设想我们有许多的用户，即有许多的队列，每发送一条消息就意味着将要将这条消息分发给许多的队列，这会严重影响 RabbitMQ 实例。然而，这一套流程会阻止 RabbitMQ 再继续读区接收缓冲区的消息——因为发送缓冲区已经快满了！
 
-### EMQ X - 限流
+### EMQX - 限流
 
 ![EMQxRateLimit.png](https://static.emqx.net/images/cca55a9d048c822eff3cd9c248990b20.png)
 
-EMQ X 的节流主要是靠限制读取一方的流量去实现的。首先，根据预设，将会一次从套接字内读取 200 条消息。当这些消息被完全收到了之后才会逐个将他们处理。一旦套接字报告它已经到达了读取一方的最大限额，它将会检查有发布者的数量和已经被阅读的字节数量，并根据这个数值去休眠一段时间。接收缓冲区最终会被填满，发布者根据 TCP 协议中飞行窗口的要求也将不会再发布任何内容。
+EMQX 的节流主要是靠限制读取一方的流量去实现的。首先，根据预设，将会一次从套接字内读取 200 条消息。当这些消息被完全收到了之后才会逐个将他们处理。一旦套接字报告它已经到达了读取一方的最大限额，它将会检查有发布者的数量和已经被阅读的字节数量，并根据这个数值去休眠一段时间。接收缓冲区最终会被填满，发布者根据 TCP 协议中飞行窗口的要求也将不会再发布任何内容。
 
 
 
 ## 总结
 
-以上就是这个横向评测的结果和分析。最终的赢家很难断言，但是如果就服务器的性能上来讲，EMQ X 肯定是略胜一筹的。不过 RabbitMQ 也有它独特的优势。
+以上就是这个横向评测的结果和分析。最终的赢家很难断言，但是如果就服务器的性能上来讲，EMQX 肯定是略胜一筹的。不过 RabbitMQ 也有它独特的优势。
 
-### EMQ X 的设计原则
+### EMQX 的设计原则
 
-EMQ X 在设计上，首先分离了前端协议 (FrontEnd) 与后端集成 (Backend)，其次分离了消息路由平面 (Flow Plane) 与监控管理平面 (Monitor/Control Plane)：
+EMQX 在设计上，首先分离了前端协议 (FrontEnd) 与后端集成 (Backend)，其次分离了消息路由平面 (Flow Plane) 与监控管理平面 (Monitor/Control Plane)：
 
-![EMQ X 的设计原则.png](https://static.emqx.net/images/81898acde206deb5c88bc237bcac7c7a.png)
+![EMQX 的设计原则.png](https://static.emqx.net/images/81898acde206deb5c88bc237bcac7c7a.png)
 
-1. EMQ X 核心解决的问题：处理海量的并发 MQTT 连接与路由消息。
+1. EMQX 核心解决的问题：处理海量的并发 MQTT 连接与路由消息。
 2. 充分利用 Erlang/OTP 平台软实时、低延时、高并发、分布容错的优势。
 3. 连接 (Connection)、会话 (Session)、路由 (Router)、集群 (Cluster) 分层。
 4. 消息路由平面 (Flow Plane) 与控制管理平面 (Control Plane) 分离。
 5. 支持后端数据库或 NoSQL 实现数据持久化、容灾备份与应用集成。
 
-### EMQ X 的系统分层
+### EMQX 的系统分层
 
 1. 连接层 (Connection Layer)：负责 TCP 连接处理、 MQTT 协议编解码。
 2. 会话层 (Session Layer)：处理 MQTT 协议发布订阅消息交互流程。

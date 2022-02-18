@@ -1,6 +1,6 @@
 在上一篇文章《[MQTT Broker 集群详解（一）：负载均衡](https://www.emqx.com/zh/blog/mqtt-broker-clustering-part-1-load-balancing)》中，我们简单介绍了 MQTT 负载均衡：负载均衡既可以应用于传输层，也可以用于应用层。在本文中，我们将详细介绍应用层负载均衡，其中最有趣的部分：粘性会话（sticky-session）。
 
-本文由两部分组成，第一部分将介绍 MQTT 会话，以及在分布式 [MQTT Broker](https://www.emqx.io/zh) 集群中处理会话面临的挑战；第二部分是通过在 [EMQ X 4.3](https://www.emqx.com/zh/products/emqx) 集群前面配置 [HAProxy 2.4](https://www.haproxy.org/) 负载均衡器，带读者亲自体验如何充分利用粘性会话实现负载均衡。
+本文由两部分组成，第一部分将介绍 MQTT 会话，以及在分布式 [MQTT Broker](https://www.emqx.io/zh) 集群中处理会话面临的挑战；第二部分是通过在 [EMQX 4.3](https://www.emqx.com/zh/products/emqx) 集群前面配置 [HAProxy 2.4](https://www.haproxy.org/) 负载均衡器，带读者亲自体验如何充分利用粘性会话实现负载均衡。
 
 
 
@@ -41,7 +41,7 @@
 
 ## 使用 HAProxy 2.4 实现粘性会话
 
-为了尽量减少先决条件，在这个演示集群中，我们将在 docker 容器中启动两个 EMQ X 节点和一个 HAProxy 2.4。
+为了尽量减少先决条件，在这个演示集群中，我们将在 docker 容器中启动两个 EMQX 节点和一个 HAProxy 2.4。
 
 ### 创建 docker 网络
 
@@ -51,7 +51,7 @@
 docker network create test.net
 ```
 
-### 启动两个 EMQ X 4.3 节点
+### 启动两个 EMQX 4.3 节点
 
 为了使节点彼此连接，应该在网络名称空间（`test.net`）中分配容器名称和 EMQX 节点名称。
 
@@ -81,7 +81,7 @@ docker run -d \
 >
 > `EMQX_LISTENER__TCP__EXTERNAL__PROXY_PROTOCOL`. 该变量是为TCP监听器启用二进制代理协议，以便服务器可以获得客户端的真实 IP 地址信息，而不是负载均衡器的 IP 地址。
 
-### 使 EMQ X 节点加入集群
+### 使 EMQX 节点加入集群
 
 ```
 docker exec -it n2.test.net emqx_ctl cluster join emqx@n1.test.net
@@ -90,7 +90,7 @@ docker exec -it n2.test.net emqx_ctl cluster join emqx@n1.test.net
 如果一切按预期进行，应该打印输出这样的日志：
 
 ```
-[EMQ X] emqx shutdown for join
+[EMQX] emqx shutdown for join
 Join the cluster successfully.
 Cluster status: #{running_nodes => ['emqx@n1.test.net','emqx@n2.test.net'], stopped_nodes => []}
 ```
@@ -196,11 +196,11 @@ show table emqx_tcp_back" | sudo socat stdio tcp4-connect:127.0.0.1:9999
 
 ## 结语
 
-至此，我们可以了解到从客户端的角度看，EMQ X 集群是如何通过负载均衡器对外部提供服务的。
+至此，我们可以了解到从客户端的角度看，EMQX 集群是如何通过负载均衡器对外部提供服务的。
 
-在本系列文章的后续内容中，我们将跟踪一个 MQTT 消息从发布者到订阅者的全过程，以便大家了解 EMQ X 如何将它在集群中复制和转发。敬请期待。
+在本系列文章的后续内容中，我们将跟踪一个 MQTT 消息从发布者到订阅者的全过程，以便大家了解 EMQX 如何将它在集群中复制和转发。敬请期待。
 
 ## 本系列中的其它文章
 
 - [MQTT Broker 集群详解（一）：负载均衡](https://www.emqx.com/zh/blog/mqtt-broker-clustering-part-1-load-balancing)
-- [MQTT Broker 集群详解（三）：有关 EMQ X 水平可扩展性的挑战与对策](https://www.emqx.com/zh/blog/mqtt-broker-clustering-part-3-challenges-and-solutions-of-emqx-horizontal-scalability)
+- [MQTT Broker 集群详解（三）：有关 EMQX 水平可扩展性的挑战与对策](https://www.emqx.com/zh/blog/mqtt-broker-clustering-part-3-challenges-and-solutions-of-emqx-horizontal-scalability)

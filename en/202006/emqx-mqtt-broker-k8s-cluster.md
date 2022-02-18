@@ -1,21 +1,21 @@
-EMQ X Team provides Helm chart which facilitates users to one-click deploy EMQ X [MQTT broker](https://www.emqx.com/en/products/emqx) in the Kubernetes cluster. EMQ X Team mostly recommends This method for deploying EMQ X MQTT broker in the Kubernetes or k3s cluster. This article will start from scratch using the handwriting YAML file method to deploy a K8S cluster of EMQ X MQTT broker, and analyze details and techniques of the deployment. It will facilitate users to flexibly use during real deployment.
+EMQX Team provides Helm chart which facilitates users to one-click deploy EMQX [MQTT broker](https://www.emqx.com/en/products/emqx) in the Kubernetes cluster. EMQX Team mostly recommends This method for deploying EMQX MQTT broker in the Kubernetes or k3s cluster. This article will start from scratch using the handwriting YAML file method to deploy a K8S cluster of EMQX MQTT broker, and analyze details and techniques of the deployment. It will facilitate users to flexibly use during real deployment.
 
 Reading this article needs users to know the basic concept of Kubernetes and having an operational Kubernetes cluster.
 
-## Deploy single EMQ X MQTT broker node in K8S 
+## Deploy single EMQX MQTT broker node in K8S 
 
-### Use pod directly deploy EMQ X Broker
+### Use pod directly deploy EMQX Broker
 
 In Kubernetes, the smallest management element is [Pod](https://kubernetes.io/zh/docs/concepts/workloads/pods/pod-overview/) than individual containers. Pod is the basic executing unit of Kubernetes applications, which means that it is the smallest and simplest unit be created or deployed in the Kubernetes object model. Pod represents the processes running on the [cluster](https://kubernetes.io/zh/docs/reference/glossary/?all=true#term-cluster).
 
-EMQ X Broker has provided mirroring in [docker hub](https://hub.docker.com/r/emqx/emqx), so users can easily deploy EMQ X Broker in the single pod. Using the command `kubectl run` to create a pod running EMQ X Broker. 
+EMQX Broker has provided mirroring in [docker hub](https://hub.docker.com/r/emqx/emqx), so users can easily deploy EMQX Broker in the single pod. Using the command `kubectl run` to create a pod running EMQX Broker. 
 
 ```
 $ kubectl run emqx --image=emqx/emqx:v4.1-rc.1  --generator=run-pod/v1
 pod/emqx created
 ```
 
-View the status of EMQ X Broker:
+View the status of EMQX Broker:
 
 ```
 $ kubectl get pods -o wide
@@ -45,7 +45,7 @@ Pod is not designed as a persistence resource, it will not survive in the schedu
 - Expand and shrink
 - Pause and continue Deployment
 
-Use Deployment deploy an EMQ X Broker Pod：
+Use Deployment deploy an EMQX Broker Pod：
 
 + Define `Deployment`：
 
@@ -120,21 +120,21 @@ Use Deployment deploy an EMQ X Broker Pod：
   emqx-deployment-68fcb4bfd6-2nhh6   1/1     Running   0          59s
   ```
 
-  The output result represents that successfully using Deployment deploy EMQ X Broker Pod. Even if this pod is accidentally stopped, Deployment will recreate a new pod.
+  The output result represents that successfully using Deployment deploy EMQX Broker Pod. Even if this pod is accidentally stopped, Deployment will recreate a new pod.
 
-### Use services exposing EMQ X Broker Pod service
+### Use services exposing EMQX Broker Pod service
 
 Kubernetes [Pods](https://kubernetes.io/docs/concepts/workloads/pods/pod-overview/) has a life cycle. They can be created, and will not run if they are destroyed. It can dynamically create and destroy pod, if use [Deployment](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/) to run applications.
 
 Every pod has its IP address, but in Deployment, the pod collection running at the same moment may differ from that runs this application later.
 
-This will cause a problem: if use EMQ X Broker Pod to provide service to the **MQTT client**, how does the client find and track the IP address that will be connected, to facilitate users to use EMQ X Broker service.
+This will cause a problem: if use EMQX Broker Pod to provide service to the **MQTT client**, how does the client find and track the IP address that will be connected, to facilitate users to use EMQX Broker service.
 
 The answer is: Service
 
 Service is an abstract method for exposing the application which is running on a set of [Pods](https://kubernetes.io/docs/concepts/workloads/pods/pod-overview/) as network service.
 
-Use Service to expose EMQ X Broker Pod as network service.
+Use Service to expose EMQX Broker Pod as network service.
 
 + Define Service：
 
@@ -191,7 +191,7 @@ Use Service to expose EMQ X Broker Pod as network service.
   emqx-service   ClusterIP   10.96.54.205   <none>        1883/TCP,8883/TCP,8081/TCP,8083/TCP,8084/TCP,18083/TCP   58s
   ```
 
-+ Use the IP provided by Service to view API of EMQ X Broker
++ Use the IP provided by Service to view API of EMQX Broker
 
   ```
   $ curl 10.96.54.205:8081/status
@@ -199,11 +199,11 @@ Use Service to expose EMQ X Broker Pod as network service.
   emqx is running
   ```
 
-So far, the deployment of a single EMQ X Broker node is done. Manage EMQ X Broker Pod through Deployment, and expose EMQ X Broker service through Service.
+So far, the deployment of a single EMQX Broker node is done. Manage EMQX Broker Pod through Deployment, and expose EMQX Broker service through Service.
 
-## Automatically cluster EMQ X MQTT broker through Kubernetes
+## Automatically cluster EMQX MQTT broker through Kubernetes
 
-The article above introduced how to deploy single EMQ X Broker Pod through Deployment. It is extremely convenient to expand the number of Pod through Deployment, execute the command `kubectl scale deployment ${deployment_name} --replicas ${numer}` can expand the number of Pod. Expanding EMQ X Broker Pod to three is as follows:
+The article above introduced how to deploy single EMQX Broker Pod through Deployment. It is extremely convenient to expand the number of Pod through Deployment, execute the command `kubectl scale deployment ${deployment_name} --replicas ${numer}` can expand the number of Pod. Expanding EMQX Broker Pod to three is as follows:
 
 ```
 $ kubectl scale deployment emqx-deployment --replicas 3
@@ -225,11 +225,11 @@ Cluster status: #{running_nodes =>
                   stopped_nodes => []}
 ```
 
-You can see that the number of EMQ X Broker Pod is expanded to three, but each pod is separated, and there are no clusters. Next try to automatically cluster EMQ X Broker Pod through Kubernetes.
+You can see that the number of EMQX Broker Pod is expanded to three, but each pod is separated, and there are no clusters. Next try to automatically cluster EMQX Broker Pod through Kubernetes.
 
-### Modify EMQ X Broker configuration
+### Modify EMQX Broker configuration
 
-View the content related to [automatically cluster](https://docs.emqx.io/broker/latest/en/advanced/cluster.html#emqx-service-discovery-k8s) in the EMQ X Broker documentation, you can see that we need to modify the configuration of EMQ X Broker.
+View the content related to [automatically cluster](https://docs.emqx.io/broker/latest/en/advanced/cluster.html#emqx-service-discovery-k8s) in the EMQX Broker documentation, you can see that we need to modify the configuration of EMQX Broker.
 
 ```
 cluster.discovery = kubernetes
@@ -239,9 +239,9 @@ cluster.kubernetes.address_type = ip
 cluster.kubernetes.app_name = ekka
 ```
 
-`cluster.kubernetes.apiserver` is the address of Kubernetes apiserver, we can get it through this command `kubectl cluster-info`. `cluster.kubernetes.service_name` is the Service name we mentioned above. `cluster.kubernetes.app_name` is the part before the  `@` symbol in `node.name` of EMQ X Broker,  so you also need to set the EMQ X Broker in the cluster as a uniform prefix of `node.name`.
+`cluster.kubernetes.apiserver` is the address of Kubernetes apiserver, we can get it through this command `kubectl cluster-info`. `cluster.kubernetes.service_name` is the Service name we mentioned above. `cluster.kubernetes.app_name` is the part before the  `@` symbol in `node.name` of EMQX Broker,  so you also need to set the EMQX Broker in the cluster as a uniform prefix of `node.name`.
 
-The docker mirroring of EMQ X Broker provides the function of modifying configurations through environment variables. For more details, you can check [docker hub](https://hub.docker.com/r/emqx/emqx) or [Github](https://github.com/emqx/emqx-rel/blob/master/deploy/docker/README.md).
+The docker mirroring of EMQX Broker provides the function of modifying configurations through environment variables. For more details, you can check [docker hub](https://hub.docker.com/r/emqx/emqx) or [Github](https://github.com/emqx/emqx-rel/blob/master/deploy/docker/README.md).
 
 + Modify the yaml file of Deployment and add environment variables:
 
@@ -312,7 +312,7 @@ The docker mirroring of EMQ X Broker provides the function of modifying configur
 
 ### Give authority to pod for accessing Kubernetes apiserver
 
-After successfully deploy Deployment, check the status of EMQ X Broker, then you can see that although EMQ X Broker runs successfully, the cluster is still not successful. Check the log of EMQ X Broker Pod:
+After successfully deploy Deployment, check the status of EMQX Broker, then you can see that although EMQX Broker runs successfully, the cluster is still not successful. Check the log of EMQX Broker Pod:
 
 ```
 $ kubectl get pods
@@ -489,13 +489,13 @@ The normal pod can not access Kubernetes apiserver. There are two methods that c
                     stopped_nodes => ['emqx@192.168.77.92']}
   ```
 
-  The output result represents that EMQ X Broker will correctly display the stopped pod, and add the new created Pod to the cluster.
+  The output result represents that EMQX Broker will correctly display the stopped pod, and add the new created Pod to the cluster.
 
-So far, EMQ X Broker has successfully created cluster in kubernetes.
+So far, EMQX Broker has successfully created cluster in kubernetes.
 
-## Persistence EMQ X Broker cluster
+## Persistence EMQX Broker cluster
 
-The Deployment used above to manage Pod, but the network of Pod is constantly changeable. When the pod is destroyed and rebuild, the data and configuration stored in EMQ X Broker also disappeared, this is can not be accepted during production. Next try to persistence EMQ X Broker cluster. Even if the pod is destroyed and rebuild, the data of the EMQ X Broker can be retained. 
+The Deployment used above to manage Pod, but the network of Pod is constantly changeable. When the pod is destroyed and rebuild, the data and configuration stored in EMQX Broker also disappeared, this is can not be accepted during production. Next try to persistence EMQX Broker cluster. Even if the pod is destroyed and rebuild, the data of the EMQX Broker can be retained. 
 
 ### ConfigMap
 
@@ -505,7 +505,7 @@ ConfigMap decouples your environment configuration information from [container m
 
 > ConfigMap does not provide secrecy or encryption. If the data you want to store are confidential, use a [Secret](https://kubernetes.io/docs/concepts/configuration/secret/) rather than a ConfigMap, or use third-party tools to keep your data private.
 
-Next use ConfigMap to record the configuration of EMQ X Broker, and import them as environment variables to the Deployment.
+Next use ConfigMap to record the configuration of EMQX Broker, and import them as environment variables to the Deployment.
 
 + Define Configmap and deploy:
 
@@ -594,7 +594,7 @@ Next use ConfigMap to record the configuration of EMQ X Broker, and import them 
                     stopped_nodes => []}
   ```
 
-The configuration files of EMQ X Broker have decoupled to Configmap. If necessary, you can freely configure one or more Configmap, and import them as environment variables or files to the pod.
+The configuration files of EMQX Broker have decoupled to Configmap. If necessary, you can freely configure one or more Configmap, and import them as environment variables or files to the pod.
 
 ### StatefulSet
 
@@ -741,14 +741,14 @@ Then, using StatefulSet replace Deployment to manage pod.
 
 + Update Configmap:
 
-  StatefulSet provides a stable network sign. EMQ X Broker supports using hostname and DNS rules to replace IP for implementing cluster. Taking hostname as an example, need to modify `emqx.conf`:
+  StatefulSet provides a stable network sign. EMQX Broker supports using hostname and DNS rules to replace IP for implementing cluster. Taking hostname as an example, need to modify `emqx.conf`:
 
   ```
   cluster.kubernetes.address_type = hostname
   cluster.kubernetes.suffix = "svc.cluster.local"
   ```
 
-  The DNS rules of Pod in the cluster Kubernetes can be customized by users. EMQ X Broker provides `cluster.kubernetes.suffix` for facilitating users to match custom DNS rules. This article use the default DNS rules:  `statefulSetName-{0..N-1}.serviceName.namespace.svc.cluster.local`. serviceName in the DNS rules is Headless Service used by StatefulSet, so we also need to modify `cluster.kubernetes.service_name` to Headless Service Name.
+  The DNS rules of Pod in the cluster Kubernetes can be customized by users. EMQX Broker provides `cluster.kubernetes.suffix` for facilitating users to match custom DNS rules. This article use the default DNS rules:  `statefulSetName-{0..N-1}.serviceName.namespace.svc.cluster.local`. serviceName in the DNS rules is Headless Service used by StatefulSet, so we also need to modify `cluster.kubernetes.service_name` to Headless Service Name.
 
   Convert configuration items to environment variables, we need to configure the following items in the Configmap:
 
@@ -785,7 +785,7 @@ Then, using StatefulSet replace Deployment to manage pod.
                     stopped_nodes => []}
   ```
 
-  We can see that the new EMQ X Broker cluster has successfully built.
+  We can see that the new EMQX Broker cluster has successfully built.
 
 + Abort a Pod:
 
@@ -815,7 +815,7 @@ Then, using StatefulSet replace Deployment to manage pod.
                     stopped_nodes => []}
   ```
 
-  As expected, StatefulSet rescheduled a pod with the same network symbol. EMQ X Broker in the pod has also successfully joined the cluster.
+  As expected, StatefulSet rescheduled a pod with the same network symbol. EMQX Broker in the pod has also successfully joined the cluster.
 
 ## StorageClasses, PersistentVolume and PersistentVolumeClaim
 
@@ -825,7 +825,7 @@ PersistentVolumeClaim(PVC) is the requirements stored by users. It is similar to
 
 StorageClass describes the method used to store "class" for administrators. Different class may be mapped to different quality of service levels or backup strategies, or the arbitrary strategy confirmed by the cluster administrator. Kubernetes itself is not clear what the various class represent. This concept is sometimes referred to as "configuration file" in other storage systems.
 
-You can create PV or StorageClass in advance when deploy EMQ X Broker, and then using PVC mount the directory `/opt/emqx/data/mnesia` of EMQ X Broker. After rescheduling Pods, EMQ X will recover the data from directory `/opt/emqx/data/mnesia` for implementing the persistence of EMQ X Broker.
+You can create PV or StorageClass in advance when deploy EMQX Broker, and then using PVC mount the directory `/opt/emqx/data/mnesia` of EMQX Broker. After rescheduling Pods, EMQX will recover the data from directory `/opt/emqx/data/mnesia` for implementing the persistence of EMQX Broker.
 
 + Define StatefulSet
 
@@ -913,6 +913,6 @@ You can create PV or StorageClass in advance when deploy EMQ X Broker, and then 
   emqx-data-emqx-statefulset-0   Bound     pvc-ad425e9d-adb5-11e9-80cc-0697b59e8064   1Gi        RWO            gp2            56s
   ```
 
-  The output result represents that the status of this PVC is Bound, and PVC storage has been successfully established. EMQ X Broker will read the data is mounted in PVC for implementing persistence, when rescheduling pod.
+  The output result represents that the status of this PVC is Bound, and PVC storage has been successfully established. EMQX Broker will read the data is mounted in PVC for implementing persistence, when rescheduling pod.
 
-So far, the process that EMQ X Broker builds persistence cluster in the Kubernetes has been completed. This article omits some details, and the process of deployment is also for the simple Demo. Users can read [kubernetes documentation](https://kubernetes.io/docs/home/) and [Helm chart source code](https://github.com/emqx/emqx-rel/tree/master/deploy/charts/emqx) provided by the EMQ X Team for more in-depth research. Of course, contributing issues, pulling requests and star on Github are welcome.
+So far, the process that EMQX Broker builds persistence cluster in the Kubernetes has been completed. This article omits some details, and the process of deployment is also for the simple Demo. Users can read [kubernetes documentation](https://kubernetes.io/docs/home/) and [Helm chart source code](https://github.com/emqx/emqx-rel/tree/master/deploy/charts/emqx) provided by the EMQX Team for more in-depth research. Of course, contributing issues, pulling requests and star on Github are welcome.

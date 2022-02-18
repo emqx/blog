@@ -1,4 +1,4 @@
-物联网数据采集涉及到大量设备接入、海量的数据传输，[EMQ X 物联网消息中间件](https://www.emqx.com/zh/products/emqx) 与 ClickHouse 联机分析 (OLAP) 数据库的组合技术栈完全能够胜任物联网数据采集传输与存储、分析处理业务。
+物联网数据采集涉及到大量设备接入、海量的数据传输，[EMQX 物联网消息中间件](https://www.emqx.com/zh/products/emqx) 与 ClickHouse 联机分析 (OLAP) 数据库的组合技术栈完全能够胜任物联网数据采集传输与存储、分析处理业务。
 
 数据入库后，往往需要其他方式如数据可视化系统将数据按照规则统计、展现出来，实现数据的监控、指标统计等业务需求，以便充分发挥数据的价值，ClickHouse 搭配开源软件 Grafana 可以快速搭建物联网数据分析可视化平台。
 
@@ -10,9 +10,9 @@
 
 ## 方案介绍
 
-### EMQ X 简介
+### EMQX 简介
 
-[EMQ X ](https://www.emqx.com/zh) 是基于高并发的 Erlang/OTP 语言平台开发，支持百万级连接和分布式集群架构，发布订阅模式的开源 MQTT 消息服务器。EMQ X 内置了大量开箱即用的功能，其 **企业版 EMQ X Enterprise** 支持通过规则引擎将物联网消息数据存储到 ClickHouse。
+[EMQX ](https://www.emqx.com/zh) 是基于高并发的 Erlang/OTP 语言平台开发，支持百万级连接和分布式集群架构，发布订阅模式的开源 MQTT 消息服务器。EMQX 内置了大量开箱即用的功能，其 **企业版 EMQX Enterprise** 支持通过规则引擎将物联网消息数据存储到 ClickHouse。
 
 
 ### ClickHouse 简介
@@ -70,25 +70,25 @@ sensor/data
 
 ## 环境准备
 
-本文所用各个组件均有 Docker 镜像可以快速搭建运行，为方便开发，Grafana 使用 Docker 搭建，ClickHouse 使用文档推荐方式安装，EMQ X 采用安装包或在线云服务的形式集成使用。
+本文所用各个组件均有 Docker 镜像可以快速搭建运行，为方便开发，Grafana 使用 Docker 搭建，ClickHouse 使用文档推荐方式安装，EMQX 采用安装包或在线云服务的形式集成使用。
 
 相关资源与使用教程参照各自官网：
 
- - EMQ X：[EMQ 官网](https://www.emqx.com/zh)
+ - EMQX：[EMQ 官网](https://www.emqx.com/zh)
  - ClickHouse：ClickHouse 产品首页 [https://clickhouse.tech/](https://clickhouse.tech/)
  - Grafana：Grafana 官网 [https://grafana.com/](https://grafana.com/) 
 
 
 
-### 安装 EMQ X
+### 安装 EMQX
 
-#### 方式一：使用 EMQ X Cloud
+#### 方式一：使用 EMQX Cloud
 
-EMQ 提供了 [全托管的物联网 MQTT 云服务 - EMQ X Cloud](https://www.emqx.com/zh/cloud)，在 EMQ X Cloud 上，用户仅需数分钟即可创建高可用、独享实例的 EMQ X 集群，立即开始原型设计与应用开发而无需关注后续的运维工作。产品上线后，集群可进行不停机扩容以应对业务增长带来的容量扩张，保证可用性的同时最大化节省使用成本。
+EMQ 提供了 [全托管的物联网 MQTT 云服务 - EMQX Cloud](https://www.emqx.com/zh/cloud)，在 EMQX Cloud 上，用户仅需数分钟即可创建高可用、独享实例的 EMQX 集群，立即开始原型设计与应用开发而无需关注后续的运维工作。产品上线后，集群可进行不停机扩容以应对业务增长带来的容量扩张，保证可用性的同时最大化节省使用成本。
 
-EMQ X Cloud 为新注册用户提供 6 个月时长的免费试用，注册账号并登录创建试用部署后，点击部署详情中的 **EMQ X Dashboard** 即可打开 EMQ X 管理控制台。
+EMQX Cloud 为新注册用户提供 6 个月时长的免费试用，注册账号并登录创建试用部署后，点击部署详情中的 **EMQX Dashboard** 即可打开 EMQX 管理控制台。
 
-> 使用 EMQ X Cloud 需要保证 ClickHouse 能够被通过公网地址访问。
+> 使用 EMQX Cloud 需要保证 ClickHouse 能够被通过公网地址访问。
 
 ![image-20200915150048492](https://static.emqx.net/images/2ea6c46681440051e3679a04498c1039.png)
 
@@ -96,20 +96,20 @@ EMQ X Cloud 为新注册用户提供 6 个月时长的免费试用，注册账�
 
 #### 方式二：私有部署安装
 
-> 如果您是 EMQ X 新手用户，推荐通过 [EMQ X 文档](https://docs.emqx.cn/broker/latest/) 快速上手
+> 如果您是 EMQX 新手用户，推荐通过 [EMQX 文档](https://docs.emqx.cn/broker/latest/) 快速上手
 
-访问 [EMQ 下载](https://www.emqx.com/zh/try) 页面下载适合您操作系统的安装包，本文截稿时 EMQ X 企业版本为 v4.1.2，下载 zip 包的启动步骤如下 ：
+访问 [EMQ 下载](https://www.emqx.com/zh/try) 页面下载适合您操作系统的安装包，本文截稿时 EMQX 企业版本为 v4.1.2，下载 zip 包的启动步骤如下 ：
 
 ```bash
 ## 解压下载好的安装包
 unzip emqx-macosx-v4.1.2.zip
 cd emqx
 
-## 以 console 模式启动 EMQ X 方便调试
+## 以 console 模式启动 EMQX 方便调试
 ./bin/emqx console
 ```
 
-启动成功后浏览器访问 [http://127.0.0.1:18083](http://127.0.0.1:18083) 访问 EMQ X 管理控制台 Dashboard，使用 `admin` `public` 默认用户名密码完成初次登录。
+启动成功后浏览器访问 [http://127.0.0.1:18083](http://127.0.0.1:18083) 访问 EMQX 管理控制台 Dashboard，使用 `admin` `public` 默认用户名密码完成初次登录。
 
 
 
@@ -155,9 +155,9 @@ docker run -d --name=grafana -p 3000:3000 grafana/grafana
 
 
 
-## 配置 EMQ X 存储数据到 ClickHouse
+## 配置 EMQX 存储数据到 ClickHouse
 
-> EMQ X 企业版支持通过规则引擎将设备事件与消息数据写入到各类数据库与消息中间件中（包括 ClickHouse），参考[文档](https://docs.emqx.cn/broker/latest/rule/rule-example.html#%E4%BF%9D%E5%AD%98%E6%95%B0%E6%8D%AE%E5%88%B0-clickhouse)。
+> EMQX 企业版支持通过规则引擎将设备事件与消息数据写入到各类数据库与消息中间件中（包括 ClickHouse），参考[文档](https://docs.emqx.cn/broker/latest/rule/rule-example.html#%E4%BF%9D%E5%AD%98%E6%95%B0%E6%8D%AE%E5%88%B0-clickhouse)。
 
 ### ClickHouse 创建数据库与数据表
 
@@ -201,13 +201,13 @@ CREATE TABLE sensor_data( temperature Float32, humidity Float32, volume Float32,
 
 
 
-### 配置 EMQ X 规则引擎
+### 配置 EMQX 规则引擎
 
-打开 EMQ X Dashboared，进入 **规则引擎** -> **规则** 页面，点击 **创建** 按钮进入创建页面。
+打开 EMQX Dashboared，进入 **规则引擎** -> **规则** 页面，点击 **创建** 按钮进入创建页面。
 
 #### 规则 SQL
 
-规则 SQL 用于 EMQ X 消息以及事件筛选，以下 SQL 表示从 `sensor/data` 主题筛选出 payload 数据：
+规则 SQL 用于 EMQX 消息以及事件筛选，以下 SQL 表示从 `sensor/data` 主题筛选出 payload 数据：
 
 ```sql
 SELECT
@@ -250,7 +250,7 @@ FROM
 
 #### 响应动作
 
-使用 EMQ X 企业版与 EMQ X Cloud 均支持通过规则引擎写入数据到 ClickHouse，
+使用 EMQX 企业版与 EMQX Cloud 均支持通过规则引擎写入数据到 ClickHouse，
 
 配置响应动作需要两个数据，一个是关联资源，另一个是 SQL 模板。
 
@@ -292,7 +292,7 @@ INSERT INTO test.sensor_data VALUES(
 
 ## 生成模拟数据
 
-以下脚本模拟了 10 个设备在过去 24 小时内、每隔 5 秒钟上报一条模拟数据并发送到 EMQ X 的场景。
+以下脚本模拟了 10 个设备在过去 24 小时内、每隔 5 秒钟上报一条模拟数据并发送到 EMQX 的场景。
 
 读者安装 Node.js ，按需修改配置参数后可以通过以下命令启动：
 
@@ -301,7 +301,7 @@ npm install mqtt mockjs --save --registry=https://registry.npm.taobao.org
 node mock.js
 ```
 
-附：模拟生成数据并发送到 EMQ X 代码，请根据集群性能调整相关参数
+附：模拟生成数据并发送到 EMQX 代码，请根据集群性能调整相关参数
 
 ```javascript
 // mock.js
@@ -486,4 +486,4 @@ ORDER BY t
 
 ## 总结
 
-至此我们借助 EMQ X + ClickHouse 完成了物联网数据传输、存储、分析展现整个流程的系统搭建，读者可以了解到 EMQ X 丰富的拓展能力与 ClickHouse 领先的数据处理分析能力在物联网数据采集中的应用。深入学习掌握 Grafana 的其他功能后，用户可以定制出更完善的数据可视化分析乃至监控告警系统。
+至此我们借助 EMQX + ClickHouse 完成了物联网数据传输、存储、分析展现整个流程的系统搭建，读者可以了解到 EMQX 丰富的拓展能力与 ClickHouse 领先的数据处理分析能力在物联网数据采集中的应用。深入学习掌握 Grafana 的其他功能后，用户可以定制出更完善的数据可视化分析乃至监控告警系统。

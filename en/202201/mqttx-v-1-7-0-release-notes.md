@@ -19,7 +19,7 @@ In 1.7.0, MQTT X adds a lot of support for the property configuration of MQTT 5.
 
 To use and test the features of MQTT 5.0, MQTT X v1.7.0 needs to be used with MQTT Broker that supports MQTT 5.0.
 
-Cloud-native distributed [MQTT broker - EMQ X](https://www.emqx.io) supports the MQTT 5.0 protocol since version 3.0. It is the first broker in the open-source community to support this protocol specification and is fully compatible with MQTT 3.1 and 3.1.1 protocols. Connecting to EMQ X by Using MQTT X, you can quickly use and test the features of MQTT 5.0.
+Cloud-native distributed [MQTT broker - EMQX](https://www.emqx.io) supports the MQTT 5.0 protocol since version 3.0. It is the first broker in the open-source community to support this protocol specification and is fully compatible with MQTT 3.1 and 3.1.1 protocols. Connecting to EMQX by Using MQTT X, you can quickly use and test the features of MQTT 5.0.
 
 ### Support MQTT 5.0 User Properties
 
@@ -95,6 +95,6 @@ Next, we will focus on the following aspects:
 
 ## Conclusion
 
-MQTT X is designed to connect to test MQTT Brokers such as EMQ X. The one-click connection and a clean graphical interface make it easy to explore and debug MQTT features. MQTT X provides comprehensive testing capabilities for MQTT features. Fully open-source and community-driven makes it integrated with more rich, powerful, user-friendly features. With MQTT X and EMQ X - the cloud-native distributed messaging broker, we believe that the test and development of IoT platforms will become easier.
+MQTT X is designed to connect to test MQTT Brokers such as EMQX. The one-click connection and a clean graphical interface make it easy to explore and debug MQTT features. MQTT X provides comprehensive testing capabilities for MQTT features. Fully open-source and community-driven makes it integrated with more rich, powerful, user-friendly features. With MQTT X and EMQX - the cloud-native distributed messaging broker, we believe that the test and development of IoT platforms will become easier.
 
 The MQTT X project is completely open-source. You can go to [GitHub](https://github.com/emqx/MQTTX/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc) to submit the problems encountered during use, or fork the MQTT X project to submit a revised PR to us. We will review and deal with it in time. We would also like to thank all users in the community for their contributions and feedback. The use and affirmation of each community user is the driving force for the advancement of our products.

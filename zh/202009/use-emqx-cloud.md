@@ -9,15 +9,15 @@
 
 ## 实验目标与基本要求
 
-使用户快速了解 EMQ X Cloud 物联网云服务的优势与特性，完成账号注册与试用部署创建，接入物联网设备进行消息收发，存储设备数据到华为云 Kafka 与数据库中
+使用户快速了解 EMQX Cloud 物联网云服务的优势与特性，完成账号注册与试用部署创建，接入物联网设备进行消息收发，存储设备数据到华为云 Kafka 与数据库中
 
 ## 实验摘要
 
-1. 登录 EMQ X Cloud
+1. 登录 EMQX Cloud
 2. 创建 华为云鲲鹏 试用部署
 3. 初始化客户端信息
 4. 接入设备进行消息收发
-5. 打通华为云-EMQ X Cloud VPC 网络
+5. 打通华为云-EMQX Cloud VPC 网络
 6. 将物联网数据存储到华为云 Kafka
 7. 将物联网数据存储数据到云数据库 GaussDB(for Mongo)
 
@@ -34,11 +34,11 @@
 </div>
 
 
-### 1. 登录 EMQ X Cloud
+### 1. 登录 EMQX Cloud
 
-EMQ X Cloud MQTT 公有云服务来自于 EMQ 服务客户总结的一些最佳实践， 致力于提供快速部署、轻松管理、弹性扩展、跨多云部署的物联网 [MQTT 5.0](https://www.emqx.com/zh/mqtt/mqtt5) 服务。
+EMQX Cloud MQTT 公有云服务来自于 EMQ 服务客户总结的一些最佳实践， 致力于提供快速部署、轻松管理、弹性扩展、跨多云部署的物联网 [MQTT 5.0](https://www.emqx.com/zh/mqtt/mqtt5) 服务。
 
-点击右上角 登录 按钮，使用实验室提供的账号登录 EMQ X Cloud，点击 控制台 进入 EMQ X Cloud 控制台页面。
+点击右上角 登录 按钮，使用实验室提供的账号登录 EMQX Cloud，点击 控制台 进入 EMQX Cloud 控制台页面。
 
 
 
@@ -60,9 +60,9 @@ EMQ X Cloud MQTT 公有云服务来自于 EMQ 服务客户总结的一些最佳�
 
 #### 3.1 客户端认证信息
 
-EMQ X Cloud 采用 MQTT 用户名、密码认证方式，客户端需携带正确信息才能成功连接。
+EMQX Cloud 采用 MQTT 用户名、密码认证方式，客户端需携带正确信息才能成功连接。
 
-在 EMQ X Cloud 部署详情页面，点击 认证鉴权 选项卡，在 认证 部分输入用户名与密码，点击 添加 按钮完成客户端信息初始化。
+在 EMQX Cloud 部署详情页面，点击 认证鉴权 选项卡，在 认证 部分输入用户名与密码，点击 添加 按钮完成客户端信息初始化。
 
 - 用户名为：emqx_u
 - 密码：123321
@@ -92,33 +92,33 @@ EMQ 提供一个在线 MQTT 测试工具，访问 <http://tools.emqx.io/>，使�
 
 ![img](https://static.emqx.net/images/a6eb6219d5da3c3ed3b2112a2d9157bc.png)            
 
-### 5. 打通华为云-EMQ X Cloud VPC 网络
+### 5. 打通华为云-EMQX Cloud VPC 网络
 
 
 
-> 提示：EMQ X Cloud 试用部署不支持打通 VPC，可以直接使用公网地址连接。
+> 提示：EMQX Cloud 试用部署不支持打通 VPC，可以直接使用公网地址连接。
 
 
 **什么是 VPC**
 
 VPC (Virtual Private Cloud)，也叫专有网络、私有网络。在同一个 VPC 中的所有资源相互连通，不同 VPC 的资源之间默认相互隔离。
 
-正常情况下，你拥有的云资源和 EMQ X Cloud 资源是在两个不同的 VPC 中，彼此无法连通。为了使用规则引擎，你需要使用对等连接，连通两个 VPC。
+正常情况下，你拥有的云资源和 EMQX Cloud 资源是在两个不同的 VPC 中，彼此无法连通。为了使用规则引擎，你需要使用对等连接，连通两个 VPC。
 
 **注意事项**
 
-1. EMQ X Cloud 只支持同一区域创建对等连接
-2. EMQ X Cloud 不支持 10.10.0.0/24 ～ 10.32.255.0/24 范围内的网段，请合理规划您的 VPC 网段
+1. EMQX Cloud 只支持同一区域创建对等连接
+2. EMQX Cloud 不支持 10.10.0.0/24 ～ 10.32.255.0/24 范围内的网段，请合理规划您的 VPC 网段
 3. 对等连接与资源相互绑定，创建资源前请先创建对等连接
 
 #### 操作步骤
 
-1. 在部署 详情 选项卡，点击 +VPC 对等连接 按钮，记录 EMQ X Cloud 上的 VPC 信息：
+1. 在部署 详情 选项卡，点击 +VPC 对等连接 按钮，记录 EMQX Cloud 上的 VPC 信息：
   
     注意：暂时不要关闭该页面
 
     - 部署 VPC ID
-    - EMQ X Cloud 账户 ID
+    - EMQX Cloud 账户 ID
     - 部署 VPC 网段
 
     ![img](https://static.emqx.net/images/dbd8afeb9ac1672f316a292a317a8567.png)            
@@ -130,9 +130,9 @@ VPC (Virtual Private Cloud)，也叫专有网络、私有网络。在同一个 V
     ![img](https://static.emqx.net/images/d84584cc19dfcd58edacd1bd95fa518a.png)            
 
 
-3. 点击 对等连接 -> 创建对等连接，选择其它账户。填入刚才在 [EMQ X Cloud 控制台](https://cloud.emqx.io/console) 记录的信息，点击确定创建对等连接请求
+3. 点击 对等连接 -> 创建对等连接，选择其它账户。填入刚才在 [EMQX Cloud 控制台](https://cloud.emqx.io/console) 记录的信息，点击确定创建对等连接请求
 
-    - 对端项目 ID == EMQ X Cloud 账户 ID
+    - 对端项目 ID == EMQX Cloud 账户 ID
     - 对端VPC ID == 部署 VPC ID
 
     ![img](https://static.emqx.net/images/438b387bf3206296a4ed930bb362874f.png)            
@@ -158,7 +158,7 @@ VPC (Virtual Private Cloud)，也叫专有网络、私有网络。在同一个 V
 
 
 
-6. 回到 [EMQ X Cloud 控制台](https://cloud.emqx.io/console)。填写步骤 4 记录的对等连接 ID，VPC 网段，VPC ID 和步骤 5 记录的用户 ID。点击确定，完成对等连接
+6. 回到 [EMQX Cloud 控制台](https://cloud.emqx.io/console)。填写步骤 4 记录的对等连接 ID，VPC 网段，VPC ID 和步骤 5 记录的用户 ID。点击确定，完成对等连接
 
     ![img](https://static.emqx.net/images/17il0vgku77fgdpfoyzep4yrdw8rsl5d.png)            
 
@@ -172,11 +172,11 @@ VPC (Virtual Private Cloud)，也叫专有网络、私有网络。在同一个 V
 
 
 
-8. 在华为云控制台里配置安全组，允许 EMQ X Cloud 网段访问您的 VPC
+8. 在华为云控制台里配置安全组，允许 EMQX Cloud 网段访问您的 VPC
 
     ![img](https://static.emqx.net/images/228f5241d4122035289857eb96036f53.png)             
 
-至此 EMQ X Cloud 与华为云 VPC 网络已经打通，
+至此 EMQX Cloud 与华为云 VPC 网络已经打通，
 
 
 
@@ -184,13 +184,13 @@ VPC (Virtual Private Cloud)，也叫专有网络、私有网络。在同一个 V
 
 [Kafka](https://kafka.apache.org/) 是由 Apache 软件基金会开发的一个开源流处理平台。该项目的目标是为处理实时数据提供一个统一、高吞吐、低延迟的平台，是一个“按照分布式事务日志架构的大规模发布/订阅消息队列”，这使它作为企业级基础设施来处理流式数据非常有价值。
 
-通过 EMQ X Cloud 规则引擎，你可以将数据桥接到 Kafka 服务，也可以设定消息模板，在 Kafka 服务中生产特定的消息。
+通过 EMQX Cloud 规则引擎，你可以将数据桥接到 Kafka 服务，也可以设定消息模板，在 Kafka 服务中生产特定的消息。
 
 #### 6.1 初始化分布式消息服务 Kafka
 
 使用实验室提供的华为云账号登录华为云，打开 https://www.huaweicloud.com/product/dmskafka.html 华为云分布式消息服务 Kafka 产品页面，选择 立即购买，注意以下几点信息，其他可自行设置：
 
-- 区域：选择 EMQ X Cloud 部署相同的区域，如 华南-广州
+- 区域：选择 EMQX Cloud 部署相同的区域，如 华南-广州
 - 虚拟私有云：选择上一步中创建的 VPC，选择对应的子网
 - 安全组：确保 Kafka 能够被访问，建议开放 TCP 9092 端口全部访问权限
 
@@ -268,7 +268,7 @@ payload:
 
 #### 6.4 测试
 
-如果您是第一次使用 EMQ X Cloud 可以前往[部署连接指南](https://docs.emqx.cn/cloud/latest/connect_to_deployments/introduction.html)，查看 MQTT 客户端连接和测试指南
+如果您是第一次使用 EMQX Cloud 可以前往[部署连接指南](https://docs.emqx.cn/cloud/latest/connect_to_deployments/introduction.html)，查看 MQTT 客户端连接和测试指南
 
 我们尝试向 home/sensor 主题发送下面的数据
 
@@ -281,8 +281,8 @@ payload:
 
 ![img](https://static.emqx.net/images/d4729bc87fdd005ad7ad740b5724cbce.jpg)            
 
- 至此，规则命中时在 Kafka 实例中消费者可以接收到 EMQ X Cloud 转发过来的消息。
+ 至此，规则命中时在 Kafka 实例中消费者可以接收到 EMQX Cloud 转发过来的消息。
 
 
 **添加小助手微信，进入 EMQ & 华为云技术交流群，与更多技术牛人深入交流、共同成长。**
-![EMQ X 微信小助手](https://static.emqx.net/images/237cdd1601705d7fc794253c757c1d65.png)
+![EMQX 微信小助手](https://static.emqx.net/images/237cdd1601705d7fc794253c757c1d65.png)

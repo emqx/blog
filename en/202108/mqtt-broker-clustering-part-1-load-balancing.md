@@ -17,7 +17,7 @@ A real life example: a temperature sensor in the living room periodically publis
 
 ## The scalability challenges
 
-A temperature sensor at home is only an example close enough to everybody. To serve smart home devices, a single MQTT broker, e.g. EMQ X edge edition running on a Raspberry PI should be more than enough, not to mention that a single EMQ X node can handle up to 2 million connections.
+A temperature sensor at home is only an example close enough to everybody. To serve smart home devices, a single MQTT broker, e.g. EMQX edge edition running on a Raspberry PI should be more than enough, not to mention that a single EMQX node can handle up to 2 million connections.
 
 Now imagine these examples: millions of cars all over the world; millions of street lights all over the country; and so on and so on, the amount of devices (MQTT clients) and data volume can be a very large scale, large enough to overwhelm any single MQTT broker can handle. 
 
@@ -52,9 +52,9 @@ NGINX Plus is an application delivery platform built on NGINX, an open-source we
 
 Equally excellent as NGINX, HAProxy is a free, open source software that provides a high availability load balancer and proxy server for TCP and HTTP-based applications, (and now MQTT too). As of August 2021, HAProxy is the only free load-balancer which has MQTT protocol awareness. There is a brief introduction to the feature in their [release note](https://www.haproxy.com/blog/announcing-haproxy-2-4/). 
 
-In the next post of “MQTT broker clustering” series, we will use HAProxy 2.4 + EMQ X 4.3 to demonstrate a full provisioning in more details.
+In the next post of “MQTT broker clustering” series, we will use HAProxy 2.4 + EMQX 4.3 to demonstrate a full provisioning in more details.
 
 ## Other articles in this series
 
 - [MQTT broker clustering part 2: Sticky session load balancing](https://www.emqx.com/en/blog/mqtt-broker-clustering-part-2-sticky-session-load-balancing)
-- [MQTT broker clustering part 3: Challenges and Solutions of EMQ X horizontal scalability](https://www.emqx.com/en/blog/mqtt-broker-clustering-part-3-challenges-and-solutions-of-emqx-horizontal-scalability)
+- [MQTT broker clustering part 3: Challenges and Solutions of EMQX horizontal scalability](https://www.emqx.com/en/blog/mqtt-broker-clustering-part-3-challenges-and-solutions-of-emqx-horizontal-scalability)

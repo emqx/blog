@@ -28,7 +28,7 @@ MQTT broker is widely used in the industries of  power, new energy, smart city, 
 
 #### Common open source MQTT broker
 
-- [EMQ X](<https://github.com/emqx/emqx>) - EMQ X is developed based on the Erlang/OTP platform and is the most popular MQTT broker in the open source community. In addition to the [MQTT protocol](https://www.emqx.com/en/mqtt), EMQ X also supports protocols such as MQTT-SN, CoAP, LwM2M, and STOMP. Currently, EMQ X has more than 5,000 corporate users and more than 20 partners  of  world top 500 in the global market.
+- [EMQX](<https://github.com/emqx/emqx>) - EMQX is developed based on the Erlang/OTP platform and is the most popular MQTT broker in the open source community. In addition to the [MQTT protocol](https://www.emqx.com/en/mqtt), EMQX also supports protocols such as MQTT-SN, CoAP, LwM2M, and STOMP. Currently, EMQX has more than 5,000 corporate users and more than 20 partners  of  world top 500 in the global market.
 - [Eclipse Mosquitto](<https://github.com/eclipse/mosquitto>)- Mosquitto is an early open source MQTT broker that includes a C/C++ client library and command line clients of `mosquitto_pub` and `mosquitto_sub` for publishing and Subscribing. Mosquitto is lightweight and suitable for use on all devices from low-power single-board computers to  servers.
 - [VerneMQ](<https://github.com/vernemq/vernemq>) - VerneMQ is a high-performance, distributed MQTT message broker. It scales horizontally and vertically on commodity hardware to support a high number of concurrent publishers and consumers while maintaining low latency and fault tolerance. VerneMQ is the reliable message hub for your IoT platform or smart products.
 - [HiveMQ CE](<https://github.com/hivemq/hivemq-community-edition>) - HiveMQ CE is a Java-based open source MQTT broker that fully supports MQTT 3.x and MQTT 5. It is the foundation of the HiveMQ Enterprise Connectivity and Messaging Platform.
@@ -76,7 +76,7 @@ The main usage scenarios of data persistence include recording the client's onli
 
 ## Use of MQTT broker
 
-To facilitate testing, we use the online broker provided by  [EMQ](<https://github.com/emqx/emqx>) , which contains all the functions of [EMQ X Enterprise](https://www.emqx.com/en/products/emqx).
+To facilitate testing, we use the online broker provided by  [EMQ](<https://github.com/emqx/emqx>) , which contains all the functions of [EMQX Enterprise](https://www.emqx.com/en/products/emqx).
 
 > **Broker address**： broker.emqx.io
 >

@@ -1,4 +1,4 @@
-This article will take [MQTT.fx](http://www.mqttfx.jensd.de/) as [MQTT client](https://www.emqx.com/en/blog/introduction-to-the-commonly-used-mqtt-client-library) test tool to connect to [MQTT Cloud Service - EMQ X Cloud](https://www.emqx.com/en/cloud). Through this article, you will be able to quickly understand the basic usage of MQTT.fx and the basic concepts and usage of the [MQTT protocol](https://www.emqx.com/en/mqtt).
+This article will take [MQTT.fx](http://www.mqttfx.jensd.de/) as [MQTT client](https://www.emqx.com/en/blog/introduction-to-the-commonly-used-mqtt-client-library) test tool to connect to [MQTT Cloud Service - EMQX Cloud](https://www.emqx.com/en/cloud). Through this article, you will be able to quickly understand the basic usage of MQTT.fx and the basic concepts and usage of the [MQTT protocol](https://www.emqx.com/en/mqtt).
 
 
 
@@ -31,19 +31,19 @@ But there are also defects:
 
 
 
-## Introduction to EMQ X Cloud
+## Introduction to EMQX Cloud
 
-[EMQ X Cloud](https://www.emqx.com/en/cloud) is a fully managed cloud-native MQTT service launched by [EMQ](https://www.emqx.com/en) company that can connect to a large number of IoT devices and integrate various databases and business systems. As the **world's first fully managed** [**MQTT 5.0**](https://www.emqx.com/en/mqtt/mqtt5) **public cloud service**, EMQ X Cloud provides MQTT message service with one-stop operation and maintenance management and a unique isolation environment.
+[EMQX Cloud](https://www.emqx.com/en/cloud) is a fully managed cloud-native MQTT service launched by [EMQ](https://www.emqx.com/en) company that can connect to a large number of IoT devices and integrate various databases and business systems. As the **world's first fully managed** [**MQTT 5.0**](https://www.emqx.com/en/mqtt/mqtt5) **public cloud service**, EMQX Cloud provides MQTT message service with one-stop operation and maintenance management and a unique isolation environment.
 
-In the era of the Internet of Everything, EMQ X Cloud can help users quickly build industry applications for the IoT area and easily realize the collection, transmission, calculation, and persistence of IoT data.
+In the era of the Internet of Everything, EMQX Cloud can help users quickly build industry applications for the IoT area and easily realize the collection, transmission, calculation, and persistence of IoT data.
 
-This article will use [Free Public MQTT Server](https://www.emqx.com/en/mqtt/public-mqtt5-broker) provided by EMQ X Cloud as the MQTT server address for this test. The server access information is as follows:
+This article will use [Free Public MQTT Server](https://www.emqx.com/en/mqtt/public-mqtt5-broker) provided by EMQX Cloud as the MQTT server address for this test. The server access information is as follows:
 
 - Broker: **broker.emqx.io**
 - TCP Port: **1883**
 - SSL/TLS Port: **8883**
 
-For more details, please visit [EMQ X Cloud website](https://www.emqx.com/en/cloud) or check [EMQ X Cloud documentation](https://docs.emqx.io/en/cloud/latest/).
+For more details, please visit [EMQX Cloud website](https://www.emqx.com/en/cloud) or check [EMQX Cloud documentation](https://docs.emqx.io/en/cloud/latest/).
 
  
 
@@ -75,9 +75,9 @@ Click OK to confirm the configuration, return to the main interface, and click C
 
 ### Subscribe/Publish messages
 
-Once the connection is established, you can start subscribing to messages. Because the MQTT protocol adopts the subscribe/publish method, we need to subscribe to the topic after connecting. After a message is generated on the topic, we can receive the messages from EMQ X cloud.
+Once the connection is established, you can start subscribing to messages. Because the MQTT protocol adopts the subscribe/publish method, we need to subscribe to the topic after connecting. After a message is generated on the topic, we can receive the messages from EMQX cloud.
 
-![EMQ X Platform](https://static.emqx.net/images/7c3fd862db7bfdc16ef51bbcda0d5b2c.png)
+![EMQX Platform](https://static.emqx.net/images/7c3fd862db7bfdc16ef51bbcda0d5b2c.png)
 
 Click to enter the Subscribe Tab to enter `/testTopic/1` in the topic box. Then, click the Subscribe button, and the list of subscribed topics will appear on the left. The current number of subscribed topics is 0, as shown in the following figure:
 
@@ -91,7 +91,7 @@ Click Publish to send the messages and return to the Subscribe Tab. We can find 
 
 ![MQTT.fx Receive Messages](https://static.emqx.net/images/43c8f23108d248f172a978e499b4d446.png)
 
-We use the client MQTT.fx to send the message "hello world" to the topic `/testTopic/1` under EMQ X Cloud. All clients that have subscribed to this topic will receive this message, including the sending clients who have just subscribed to this topic.
+We use the client MQTT.fx to send the message "hello world" to the topic `/testTopic/1` under EMQX Cloud. All clients that have subscribed to this topic will receive this message, including the sending clients who have just subscribed to this topic.
 
 ### Script
 
@@ -117,13 +117,13 @@ Click Execute, return to Subscribe column and find that the message is added wit
 
 ### Log
 
-In the log, we can view the interaction process between MQTT.fx and EMQ X Cloud, such as topic subscription, message publish, message reception, etc.:
+In the log, we can view the interaction process between MQTT.fx and EMQX Cloud, such as topic subscription, message publish, message reception, etc.:
 
 ![MQTT.fx Logs](https://static.emqx.net/images/cc3b9ee768d37b6cce66316135db261c.png)
 
 ### SSL/TLS connection
 
-We take CA self-signed service as an example to show how to enable SSL protocol to connect to EMQ X Cloud.
+We take CA self-signed service as an example to show how to enable SSL protocol to connect to EMQX Cloud.
 
 Open the settings, fill in the Broker Address and Broker Port (`broker.emqx.io` and `8883` respectively) like normal connections, select the `SSL/TLS` item, select the TLSv1.2 protocol, check CA signed server certificate , and then select the application, as shown in the figure below:
 
@@ -135,4 +135,4 @@ Click Connect, and you can see that the lock icon on the right is closed, indica
 
 ![MQTT.fx SSL/TLS Status](https://static.emqx.net/images/b3efb08a666b6c3dca2485b5fb5b403a.png)
 
-The above is a simple example of using MQTT.fx to access EMQ X Cloud. For more details, please visit [EMQ X Cloud](https://www.emqx.com/en/cloud).
+The above is a simple example of using MQTT.fx to access EMQX Cloud. For more details, please visit [EMQX Cloud](https://www.emqx.com/en/cloud).

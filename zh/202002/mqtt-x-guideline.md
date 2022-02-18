@@ -12,7 +12,7 @@
 
 ## MQTT Broker 准备
 
-- 如果您没有本地部署的 MQTT Broker，那么可以使用由 [EMQ X Cloud](https://www.emqx.com/en/cloud) 提供的公共 MQTT 服务进行快速测试：
+- 如果您没有本地部署的 MQTT Broker，那么可以使用由 [EMQX Cloud](https://www.emqx.com/en/cloud) 提供的公共 MQTT 服务进行快速测试：
 
 ```
 Broker 地址: broker.emqx.io
@@ -20,9 +20,9 @@ Broker TCP 端口: 1883
 Broker SSL 端口: 8883
 ```
 
-- 如果您打算本地部署 MQTT Broker，推荐您 [下载 EMQ X](https://github.com/emqx/emqx/releases) 进行安装使用。EMQ X 是一款完全开源，高可用低时延的百万级分布式物联网 MQTT 5.0 消息服务器。
+- 如果您打算本地部署 MQTT Broker，推荐您 [下载 EMQX](https://github.com/emqx/emqx/releases) 进行安装使用。EMQX 是一款完全开源，高可用低时延的百万级分布式物联网 MQTT 5.0 消息服务器。
 
-  使用 Docker 快速安装 EMQ X：
+  使用 Docker 快速安装 EMQX：
 
 ```shell
 docker run -d --name emqx -p 1883:1883 -p 8083:8083 -p 8883:8883 -p 8084:8084 -p 18083:18083 emqx/emqx
@@ -118,7 +118,7 @@ docker run -d --name emqx -p 1883:1883 -p 8083:8083 -p 8883:8883 -p 8084:8084 -p
 
 3. 检查更新
 
-   点击左侧底部的 `i` 按钮，可进入到 `About` 页面，了解 **MQTT X** 的版本信息和 [EMQ X](https://www.emqx.com/en) 的相关信息。点击 `Check for Updates` 可以检查是否有更新版本。
+   点击左侧底部的 `i` 按钮，可进入到 `About` 页面，了解 **MQTT X** 的版本信息和 [EMQX](https://www.emqx.com/en) 的相关信息。点击 `Check for Updates` 可以检查是否有更新版本。
 
 ![mqttxupdate.png](https://static.emqx.net/images/de17680e289b43e3c555a1a40315ec1c.png)
 

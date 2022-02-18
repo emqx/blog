@@ -70,7 +70,7 @@
 | 边缘网关         | [Neuron-边缘工业协议网关软件](https://www.emqx.com/zh/products/neuron) |
 | 边缘 Broker      | [NanoMQ-超轻量级边缘 MQTT消息服务器](https://www.emqx.com/zh/products/nanomq) |
 | 边缘计算单元     | eKuiper-轻量级物联网边缘分析/流式处理软件                    |
-| 中心 Broker/集群 | [EMQ X Enterprise-云原生分布式物联网接入平台](https://www.emqx.com/zh/products/emqx) |
+| 中心 Broker/集群 | [EMQX Enterprise-云原生分布式物联网接入平台](https://www.emqx.com/zh/products/emqx) |
 | 云边协同管理软件 | EMQ 云边协同管理平台                                         |
 
 下面我们将对这一方案架构中的各部分进行详细介绍：
@@ -165,7 +165,7 @@
 
 - 高可用集群
 
-  中心侧的核心是高吞吐量 Broker，按照 84 台集装箱计算，中心 Broker 要承载的测点数量包含所有测点原始数据的 40 万以上测点，加上边缘侧进行分析计算后额外产生的数据量。 方案实现中采用的 EMQ X Enterprise，单服务器节点支持 50 万到 100 万路由，采用 4 节点或以上集群的部署方案，可以支持 1000 万点以上的路由。
+  中心侧的核心是高吞吐量 Broker，按照 84 台集装箱计算，中心 Broker 要承载的测点数量包含所有测点原始数据的 40 万以上测点，加上边缘侧进行分析计算后额外产生的数据量。 方案实现中采用的 EMQX Enterprise，单服务器节点支持 50 万到 100 万路由，采用 4 节点或以上集群的部署方案，可以支持 1000 万点以上的路由。
 
 - 规则引擎
 
@@ -173,7 +173,7 @@
 
   实施过程中，为命中分发规则的的消息添加如下动作，将消息以元素的"addr"的属性为主题进行分发，供前端消费者订阅：
 
-	![EMQ X 规则引擎](https://static.emqx.net/images/d857f4eae1e2bcd7c39dc7fe1c48e6d0.png)
+	![EMQX 规则引擎](https://static.emqx.net/images/d857f4eae1e2bcd7c39dc7fe1c48e6d0.png)
 
   在客户端上订阅主题"010101"时，即可获取对应的计算结果：
 

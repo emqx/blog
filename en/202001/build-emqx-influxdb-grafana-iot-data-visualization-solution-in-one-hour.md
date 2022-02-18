@@ -2,7 +2,7 @@
 
 ## Background
 
-Taking the common scenarios of Internet of things as an example, this article introduces how to use the EMQ x message middleware and the open source data visualization solution of  InfluxDB + Grafana to  conveniently display a large amount of time-series data of IoT devices.
+Taking the common scenarios of Internet of things as an example, this article introduces how to use the EMQX message middleware and the open source data visualization solution of  InfluxDB + Grafana to  conveniently display a large amount of time-series data of IoT devices.
 
 The device data and storage of the access platform in the IoT project have the following characteristics:
 
@@ -41,13 +41,13 @@ The time interval and automatic refresh time can be selected in the upper right 
 
 ## Introduction of the solution
 
-At present, there are many IoT message middleware, time series databases, and data visualization products on the market. In combination of data collection and reporting, network access, message storage and visualization functions, EMQ X (high-performance IoT MQTT message middleware) + InfluxDB (time series database) + Grafana (beautiful and powerful visual monitoring indicator display tool) is undoubtedly the best IoT data visualization integration solution.
+At present, there are many IoT message middleware, time series databases, and data visualization products on the market. In combination of data collection and reporting, network access, message storage and visualization functions, EMQX (high-performance IoT MQTT message middleware) + InfluxDB (time series database) + Grafana (beautiful and powerful visual monitoring indicator display tool) is undoubtedly the best IoT data visualization integration solution.
 
 The overall architecture of the solution is shown in the following figure:
 
 ![image20191125163959537.png](https://static.emqx.net/images/a6a6133516dd6f26f6b813f5500f96c8.png)
 
-- **EMQ X**：[EMQ X ](https://github.com/emqx/emqx)is developed based on the highly concurrent Erlang / OTP language platform, and supports millions of connections and distributed cluster architecture. It is an open source MQTT message server with publish-subscribe mode. EMQ X has a lot of built-in out-of-the-box features.  Its enterprise version of EMQ X Enterprise supports high-performance storage of device messages to InfluxDB through a rule engine or message persistence plug-in. Open source users need to handle the message storage themselves.
+- **EMQX**：[EMQX ](https://github.com/emqx/emqx)is developed based on the highly concurrent Erlang / OTP language platform, and supports millions of connections and distributed cluster architecture. It is an open source MQTT message server with publish-subscribe mode. EMQX has a lot of built-in out-of-the-box features.  Its enterprise version of EMQX Enterprise supports high-performance storage of device messages to InfluxDB through a rule engine or message persistence plug-in. Open source users need to handle the message storage themselves.
 - **InfluxDB :** InfluxDB is an open source time series database developed by InfluxData. Written by Go, it focuses on querying and storing time series data with high performance. InfluxDB is widely used in the scenarios of monitoring data in storage systems and real-time data in the IoT industry.
 - **Grafana:**  Grafana is a cross-platform, open source measurement analysis and visualization tool, which can query and visualize the collected data. It can create client charts quickly and flexibly. The panel plug-in has many different ways to visualize indicators and logs. The official library has a wealth of dashboard plug-ins, such as heat chart, line chart and other display ways. It supports Graphite, InfluxDB , OpenTSDB, Prometheus, Elasticsearch, CloudWatch and KairosDB and other data sources, supports independent / hybrid query display of data items. You can create custom alarm rules and notify them to other message processing services or components.
 
@@ -55,35 +55,35 @@ The overall architecture of the solution is shown in the following figure:
 
 ## Implementation steps
 
-### Install EMQ X, InfluxDB and Grafana
+### Install EMQX, InfluxDB and Grafana
 
-Each component used in this article has a Docker image. Except for a few configurations that need to be modified for EMQ X to download and install, both InfluxDB and Grafana are built using Docker. Detailed installation steps are not described in this article.
+Each component used in this article has a Docker image. Except for a few configurations that need to be modified for EMQX to download and install, both InfluxDB and Grafana are built using Docker. Detailed installation steps are not described in this article.
 
 There are services or installation package resources and tutorials of different operating systems/platforms on the websites of the three major components:
 
- - EMQ X：EMQ website [https://www.emqx.com/zh](https://www.emqx.com/zh)
+ - EMQX：EMQ website [https://www.emqx.com/zh](https://www.emqx.com/zh)
  - InfluxDB：InfluxData website [https://www.influxdata.com/](https://www.influxdata.com/)
  - Grafana：Grafana website [https://grafana.com/](https://grafana.com/) 
 
 
 
-### EMQ X Enterprise  installation
+### EMQX Enterprise  installation
 
 ####  Installation
 
-> If you are new to EMQ X, we recommend you getting started with [EMQ X Guide](https://docs.emqx.io/tutorial/v3/en/). 
+> If you are new to EMQX, we recommend you getting started with [EMQX Guide](https://docs.emqx.io/tutorial/v3/en/). 
 
-Visit [EMQ website](https://www.emqx.com/en/downloads)  to download the installation package suitable for your operating system. As data persistence is an function of enterprise version, you need to download EMQ X Enterprise (you can apply for a license trial). At the time of writing this article, the latest version of EMQ X Enterprise is v3.4.5. This function requires this version and above. The startup steps for downloading the zip package are as follows:
+Visit [EMQ website](https://www.emqx.com/en/downloads)  to download the installation package suitable for your operating system. As data persistence is an function of enterprise version, you need to download EMQX Enterprise (you can apply for a license trial). At the time of writing this article, the latest version of EMQX Enterprise is v3.4.5. This function requires this version and above. The startup steps for downloading the zip package are as follows:
 
 ```bash
 ## Extract the downloaded installation package
 unzip emqx-ee-macosx-v3.4.4.zip
 cd emqx
 
-## Copy the license file to the EMQ X designated directory etc /, you needs to apply for a trial of the license or obtain it through a purchase authorization
+## Copy the license file to the EMQX designated directory etc /, you needs to apply for a trial of the license or obtain it through a purchase authorization
 cp ../emqx.lic ./etc
 
-## Launch EMQ X in console mode
+## Launch EMQX in console mode
 ./bin/emqx console
 ```
 
@@ -94,7 +94,7 @@ cp ../emqx.lic ./etc
 
 The configuration files needed in this article are as follows:
 
-1. License file, EMQ X Enterprise License file, covered with available licenses:
+1. License file, EMQX Enterprise License file, covered with available licenses:
 
 ```
 etc/emqx.lic
@@ -102,7 +102,7 @@ etc/emqx.lic
 
 
 
-2. EMQ X InfluxDB message storage plug-in configuration file, which is used to configure InfluxDB connection information and select the storage topic:
+2. EMQX InfluxDB message storage plug-in configuration file, which is used to configure InfluxDB connection information and select the storage topic:
 
 ```bash
 etc/plugins/emqx_backend_influxdb.conf
@@ -125,7 +125,7 @@ backend.influxdb.hook.message.publish.1 = {"topic": "devices/+/messages", "actio
 
 
 
-3. EMQ X InfluxDB message store plugin message template file, used to define the message parsing template:
+3. EMQX InfluxDB message store plugin message template file, used to define the message parsing template:
 
 ```bash
 ## template file
@@ -135,7 +135,7 @@ data/templates/emqx_backend_influxdb_example.tmpl
 data/templates/emqx_backend_influxdb.tmpl
 ```
 
-Because MQTT Message cannot be written directly to InfluxDB, EMQ X provides the emqx_backend_influxdb.tmpl template file to convert the MQTT Message into a DataPoint that can be written to InfluxDB:
+Because MQTT Message cannot be written directly to InfluxDB, EMQX provides the emqx_backend_influxdb.tmpl template file to convert the MQTT Message into a DataPoint that can be written to InfluxDB:
 
 ```bash
 {
@@ -154,7 +154,7 @@ Because MQTT Message cannot be written directly to InfluxDB, EMQ X provides the 
 ```
 
 
-> For a detailed tutorial on using EMQ X InfluxDB, see [ InfluxDB data storage](https://docs.emqx.io/tutorial/v3/cn/backend/InfluxDB.html)
+> For a detailed tutorial on using EMQX InfluxDB, see [ InfluxDB data storage](https://docs.emqx.io/tutorial/v3/cn/backend/InfluxDB.html)
 
 
 
@@ -164,7 +164,7 @@ Because MQTT Message cannot be written directly to InfluxDB, EMQ X provides the 
 
 Install through docker, map data folder and `8089` udp port and `8086` port (used by Grafana):
 
-> EMQ X only supports the InfluxDB UDP channel, which requires influx_udp plugin support, and the database name is specified as db
+> EMQX only supports the InfluxDB UDP channel, which requires influx_udp plugin support, and the database name is specified as db
 
 ```bash
 ## use influx_udp plugin
@@ -185,7 +185,7 @@ docker ps -a
 
 
 
-**At this point, you can restart EMQ X and launch the plugin to apply the above configuration**:
+**At this point, you can restart EMQX and launch the plugin to apply the above configuration**:
 
 ```bash
 ./bin/emqx stop
@@ -222,7 +222,7 @@ After successful startup, visits `http://127.0.0.1:3000` to access the Grafana v
 
 The simulation data needs to be written before the visual configuration, which facilitates the effect preview during the configuration.
 
-The following script simulates a scenario in which 100 devices report simulated temperature and humidity data and send it to EMQ X every 5 seconds in the past 12 hours. After the Node.js platform is installed, the reader can start it with the following command:
+The following script simulates a scenario in which 100 devices report simulated temperature and humidity data and send it to EMQX every 5 seconds in the past 12 hours. After the Node.js platform is installed, the reader can start it with the following command:
 
 ```bash
 npm install mqtt mockjs --save
@@ -330,7 +330,7 @@ Add a data source, that is the displayed data source information. Select the  **
 
 - URL: Fill in the InfluxDB connection address. Since we use Docker installation, Grafana is not connected to the InfluxDB container network. Here you can enter the current server intranet/LAN address instead of `127.0.0.1` or` localhost`;
 - Auth: InfluxDB startups without authentication by default, fill in according to the actual situation;
-- Database: Fill in `db` which the default database name for EMQ X.
+- Database: Fill in `db` which the default database name for EMQX.
 
 
 
@@ -385,7 +385,7 @@ Save the dashboard, drag and adjust the size and position of each data panel, an
 
 ## Summary
 
-At this point, we have completed the implementation of the EMQ X and InfluxDB + Grafana IoT data visualization integration solution. Through this article, readers can understand that the rich expansion capabilities of EMQ X can be used to develop a visualization system based on InfluxDB + Grafana in a data visualization solution very quickly and flexibly to achieve mass data storage, calculation analysis and display. After deep learning and mastering other functions of Grafana, users can customize more perfect data visualization and monitoring/alarm system.
+At this point, we have completed the implementation of the EMQX and InfluxDB + Grafana IoT data visualization integration solution. Through this article, readers can understand that the rich expansion capabilities of EMQX can be used to develop a visualization system based on InfluxDB + Grafana in a data visualization solution very quickly and flexibly to achieve mass data storage, calculation analysis and display. After deep learning and mastering other functions of Grafana, users can customize more perfect data visualization and monitoring/alarm system.
 
 ------
 

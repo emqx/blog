@@ -1,6 +1,6 @@
 ## v4.3 已发布！
 
-这个五月，我们很高兴地宣布了 **[EMQ X broker v4.3 的发布](https://www.emqx.com/zh/blog/emqx-4-3-0-release-notes)**。从社区收到的大量反馈证明了我们的努力是值得的。更多详情请前往 GitHub 查看发布说明：[https://github.com/emqx/emqx/discussions/4763](https://github.com/emqx/emqx/discussions/4763)。
+这个五月，我们很高兴地宣布了 **[EMQX broker v4.3 的发布](https://www.emqx.com/zh/blog/emqx-4-3-0-release-notes)**。从社区收到的大量反馈证明了我们的努力是值得的。更多详情请前往 GitHub 查看发布说明：[https://github.com/emqx/emqx/discussions/4763](https://github.com/emqx/emqx/discussions/4763)。
 
 一些原本计划在 v5.0 中进行的更新被提前到了 v4.3 中，与此同时，还有更多工作等待着我们去完成。
 
@@ -36,7 +36,7 @@ server emqx-2 node2.emqx.io:1883 check-send-proxy send-proxy-v2
 
 我们在 v5.0 中采用 HOCON 有两个原因。
 
-- 它几乎是 EMQ X 一直以来使用的 cuttlefish 格式的一个直接替代；
+- 它几乎是 EMQX 一直以来使用的 cuttlefish 格式的一个直接替代；
 
 - 它是 “纯 JSON"，这是当在 HTTP API 中发布请求时唯一合理可用的格式。
 
@@ -68,4 +68,4 @@ Rlog（复制事务日志的简称）将集群分成节点集的两个角色，�
 
 ### StatsD, etcd 3.4 与 HTTP API
 
-团队成员在本月陆续完成了对 StatsD 和 etcd 3.4 的支持，分别扩展了 EMQ X 的监控能力和集群能力。现在，我们正在设计更加规范更加 Restful 的 HTTP API，以提高对开发者的友好性。
+团队成员在本月陆续完成了对 StatsD 和 etcd 3.4 的支持，分别扩展了 EMQX 的监控能力和集群能力。现在，我们正在设计更加规范更加 Restful 的 HTTP API，以提高对开发者的友好性。

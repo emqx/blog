@@ -29,9 +29,9 @@ This solution will use these software products in the following list.
 
 | No.  | Name                                                       | Provider     | Open source        |
 | :--- | :--------------------------------------------------------- | :----------- | :----------------- |
-| 1    | [EMQ X Neuron](https://www.emqx.com/en/products/neuron)        | EMQ          | No - `1`           |
-| 2    | [EMQ X Edge](https://www.emqx.com/en/products/emqx)            | EMQ          | Yes, Apache 2.0    |
-| 3    | [EMQ X Kuiper](https://github.com/lf-edge/ekuiper)        | EMQ          | Yes, Apache 2.0    |
+| 1    | [EMQX Neuron](https://www.emqx.com/en/products/neuron)        | EMQ          | No - `1`           |
+| 2    | [EMQX Edge](https://www.emqx.com/en/products/emqx)            | EMQ          | Yes, Apache 2.0    |
+| 3    | [EMQX Kuiper](https://github.com/lf-edge/ekuiper)        | EMQ          | Yes, Apache 2.0    |
 | 4    | [Edge manager](https://hub.docker.com/r/emqx/edge-manager) | EMQ          | No - `2`           |
 | 5    | TDengine                                                   | Taosdata     | Yes, GNU AGPL v3.0 |
 | 6    | Grafana                                                    | Grafana Labs | Yes, Apache 2.0    |
@@ -76,9 +76,9 @@ This solution will use these software products in the following list.
 
 | No.  | Name                                                       | x86*32 | x86*64 | ARM 7 | ARM 64 | PPC64 | Mac  | Docker |
 | :--- | :--------------------------------------------------------- | :----- | :----- | :---- | :----- | :---- | :--- | :----- |
-| 1    | [EMQ X Neuron](https://www.emqx.com/en/products/neuron)        |        | ☑      | ☑     | ☑      | ☑     |      | ☑      |
-| 2    | [EMQ X Edge](https://www.emqx.com/en/products/emqx)            | ☑      | ☑      | ☑     | ☑      | ☑     | ☑    | ☑      |
-| 3    | [EMQ X Kuiper](https://github.com/lf-edge/ekuiper)        | ☑      | ☑      | ☑     | ☑      | ☑     | ☑    | ☑      |
+| 1    | [EMQX Neuron](https://www.emqx.com/en/products/neuron)        |        | ☑      | ☑     | ☑      | ☑     |      | ☑      |
+| 2    | [EMQX Edge](https://www.emqx.com/en/products/emqx)            | ☑      | ☑      | ☑     | ☑      | ☑     | ☑    | ☑      |
+| 3    | [EMQX Kuiper](https://github.com/lf-edge/ekuiper)        | ☑      | ☑      | ☑     | ☑      | ☑     | ☑    | ☑      |
 | 4    | [Edge manager](https://hub.docker.com/r/emqx/edge-manager) | ☑      | ☑      | ☑     | ☑      | ☑     | ☑    | ☑      |
 | 5    | TDengine                                                   | ☑      | ☑      |       | ☑      |       |      | ☑      |
 
@@ -96,7 +96,7 @@ Note: The container images released by TDengine are by default for x86*64 enviro
 
 ## Solution 2: cloud edge collaboration industrial internet platform
 
-This approach differs from the above in that it **introduces the concept of cloud edge collaboration,** with underlying distribution and orchestration capabilities for container-based applications on the edge similar to those provided by KubeEdge/IEF. The centralized management of instances such as Neuron, Edge and Kuiper enables **online management and updating of data collection, aggregation and analysis logic at the edge in the cloud.**  Also in the cloud, by deploying EMQ X Enterprise's distributed, highly available clustering capabilities to access and analyze data from devices distributed across different edge endpoints.
+This approach differs from the above in that it **introduces the concept of cloud edge collaboration,** with underlying distribution and orchestration capabilities for container-based applications on the edge similar to those provided by KubeEdge/IEF. The centralized management of instances such as Neuron, Edge and Kuiper enables **online management and updating of data collection, aggregation and analysis logic at the edge in the cloud.**  Also in the cloud, by deploying EMQX Enterprise's distributed, highly available clustering capabilities to access and analyze data from devices distributed across different edge endpoints.
 
 ![iiot_sol_2.png](https://static.emqx.net/images/b2159860f854daaface005fbf339dcd7.png)
 
@@ -117,18 +117,18 @@ This solution will use the following products except the products which used in 
 
 | No.  | Name             | Provider | Open source |
 | :--- | :--------------- | :------- | :---------- |
-| 1    | EMQ X Enterprise | EMQ      | No - `1`    |
+| 1    | EMQX Enterprise | EMQ      | No - `1`    |
 | 2    | IEF              | Huawei   | No - `2`    |
 
-`1`: EMQ X Enterprise Enterprise IoT MQTT messaging platform supports one-stop access for millions of IoT devices, MQTT & CoAP multi-protocol processing, and low-latency real-time message communication. Supports built-in SQL-based rule engine, flexible processing/forwarding of messages to back-end services, storage of message data to various databases, or bridging to Kafka, RabbitMQ and other enterprise middleware.
+`1`: EMQX Enterprise Enterprise IoT MQTT messaging platform supports one-stop access for millions of IoT devices, MQTT & CoAP multi-protocol processing, and low-latency real-time message communication. Supports built-in SQL-based rule engine, flexible processing/forwarding of messages to back-end services, storage of message data to various databases, or bridging to Kafka, RabbitMQ and other enterprise middleware.
 
 `2`: [IEF intelligent edge platforem (Intelligent EdgeFabric)](https://www.huaweicloud.com/product/ief.html) is the commercialized version of KubeEdge, Huawei's open-source cloud edge collaboration platform, which meets customers' demands for remote control of edge computing resources, data processing, analysis and decision-making, and intelligence, and provides users with a complete integrated service of edge and cloud collaboration.
 
 ### Start trial
 
 - IEF platform is a Huawei public cloud service that users can access and try directly.
-- [Kuiper](https://marketplace.huaweicloud.com/product/OFFI474477808879489024) is live on IEF and can be deployed, installed and maintained directly through the IEF platform (Readers can refer to the video「[Cloud edge collaboration for efficient IoT edge streaming service processing - Huawei IEF & EMQ X Kuiper lightweight edge data solution](https://www.bilibili.com/video/BV1hQ4y1A7Vy?from=search&seid=15773267177167801393)」to learn how to use Kuiper in IEF). Neuron and Edge are not currently available on IEF, but users can install them directly into edge nodes via Docker Hub, and the user can manage and control them from deploy Edge Manager in the cloud.
-- [EMQ X Enterprise](https://marketplace.huaweicloud.com/product/00301-511011-0--0) is now live in Huawei Cloud, and users can also use the [online MQTT cloud service](https://www.emqx.com/en/cloud) provided by EMQ.
+- [Kuiper](https://marketplace.huaweicloud.com/product/OFFI474477808879489024) is live on IEF and can be deployed, installed and maintained directly through the IEF platform (Readers can refer to the video「[Cloud edge collaboration for efficient IoT edge streaming service processing - Huawei IEF & EMQX Kuiper lightweight edge data solution](https://www.bilibili.com/video/BV1hQ4y1A7Vy?from=search&seid=15773267177167801393)」to learn how to use Kuiper in IEF). Neuron and Edge are not currently available on IEF, but users can install them directly into edge nodes via Docker Hub, and the user can manage and control them from deploy Edge Manager in the cloud.
+- [EMQX Enterprise](https://marketplace.huaweicloud.com/product/00301-511011-0--0) is now live in Huawei Cloud, and users can also use the [online MQTT cloud service](https://www.emqx.com/en/cloud) provided by EMQ.
 - Persistence or bridging methods of cloud-end data are available to the user, they can choose according to their needs. The related information on which can be found on the [EMQ website](https://www.emqx.com/en/products/emqx).
 
 

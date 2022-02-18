@@ -43,19 +43,19 @@ Now we need to analyze the data in real time, and ask for the following requirem
 
 ## Introduction of the approach
 
-As shown in the figure below, the edge analysis / streaming data processing method is adopted. At the edge, we adopt the EMQ X approach, and finally output the calculation results to the IOT hub of AWS.
+As shown in the figure below, the edge analysis / streaming data processing method is adopted. At the edge, we adopt the EMQX approach, and finally output the calculation results to the IOT hub of AWS.
 
 ![emqx_aws.png](https://static.emqx.net/images/ba91c40a291a95dfcbb9a6ad6a68070c.png)
 
-- EMQ X Edge can access devices with various protocol types, such as MQTT, CoAP, LwM2M, etc.. Therefore, users do not need to care about protocol adaptation; it is also lightweight and suitable for deployment on edge devices. 
-- EMQ X Kuiper is a SQL-based lightweight edge streaming data analysis engine released by EMQ. The installation package is only about 7MB, which is very suitable for running on the edge device side.
+- EMQX Edge can access devices with various protocol types, such as MQTT, CoAP, LwM2M, etc.. Therefore, users do not need to care about protocol adaptation; it is also lightweight and suitable for deployment on edge devices. 
+- EMQX Kuiper is a SQL-based lightweight edge streaming data analysis engine released by EMQ. The installation package is only about 7MB, which is very suitable for running on the edge device side.
 - AWS IoT Hub provides a comprehensive approach of device access and data analysis, which is used for the result data access in the cloud and the result data analysis required by the application.
 
 ## Implementation steps
 
-### Install EMQ X Edge & Kuiper
+### Install EMQX Edge & Kuiper
 
-- At the time of this writing this article, the latest version of EMQ X Edge is 4.0, and users can install and launch EMQ X Edge via Docker.
+- At the time of this writing this article, the latest version of EMQX Edge is 4.0, and users can install and launch EMQX Edge via Docker.
 
   ```shell
   # docker pull emqx/emqx-edge
@@ -180,7 +180,7 @@ Before we  write the rules, we need to debug the rules. Kuiper provides debuggin
 
 - Send test data
 
-  Send the following test data to EMQ X Edge via any test tool. The writer used JMeter's [MQTT plugin](https://github.com/emqx/mqtt-jmeter) during the test because JMeter can make some flexible automatic data generation, business logic control, and a large number of devices simulations and so on. Users can also use other clients such as ``mosquitto`` to simulate directly.
+  Send the following test data to EMQX Edge via any test tool. The writer used JMeter's [MQTT plugin](https://github.com/emqx/mqtt-jmeter) during the test because JMeter can make some flexible automatic data generation, business logic control, and a large number of devices simulations and so on. Users can also use other clients such as ``mosquitto`` to simulate directly.
 
   - Topic: ``devices/$device_id/messages``, where ``$device_id`` is the first column in the data below
   - Message: ``{"temperature": $temperature, "humidity" : $humidity}``, where ``$temperature`` and ``$humidity`` are the second and third columns in the data below
@@ -267,7 +267,7 @@ time="2019-11-13T17:41:20+08:00" level=info msg="The connection to server ssl://
 ......
 ```
 
-- Topic ``devices/result`` is subscribed through [MQTT client tool](https://www.emqx.com/en/blog/mqtt-client-tools) provided by AWS IoT. Then send simulation device data to local EMQ X Edge. After processing by Kuiper, the result is sent to AWS IoT. Refer to below, it received 2 batch of data (the 1st batch is collapsed).
+- Topic ``devices/result`` is subscribed through [MQTT client tool](https://www.emqx.com/en/blog/mqtt-client-tools) provided by AWS IoT. Then send simulation device data to local EMQX Edge. After processing by Kuiper, the result is sent to AWS IoT. Refer to below, it received 2 batch of data (the 1st batch is collapsed).
 
 ![aws_iot_result.png](https://static.emqx.net/images/56165475f574b76333420032cac9a4e7.png)
 
@@ -275,7 +275,7 @@ User can use AWS Iot Rule to saving the result to Amazon DynamoDB or other stora
 
 ## Summary
 
-Through this article, readers can understand that the EMQ X solution at the edge can be used to develop a system based on edge data analysis very quickly and flexibly, achieving low data latency, low cost and safe processing. 
+Through this article, readers can understand that the EMQX solution at the edge can be used to develop a system based on edge data analysis very quickly and flexibly, achieving low data latency, low cost and safe processing. 
 
 AWS IoT also provides Edge solution named Greengrass, comparing to AWS Greengrass, Kuiper is more lightweight, and SQL based business implementation is also more simple. AWS Greengrass provides Lambada based programming model, supplied different language runtime to develop Edge analytics applications, and publish the result to AWS IoT. Kuiper lacks of flexibility when processing complex business logics. Greengrass is better than Kuiper at this point. Finally, Kuiper is more flexible to integrate with other 3rd party IoT Hubs, while Greengrass mostly can be only work with AWS IoT Hub. 
 

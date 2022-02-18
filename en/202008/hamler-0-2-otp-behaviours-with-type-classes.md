@@ -327,7 +327,7 @@ init = initOk (OneForOne, 10, 100)
 
 ## Welcome to the Hamler community!
 
-The Hamler functional programming language has been an open-source project since its inception and is hosted on GitHub: [https://github.com/hamler-lang/](https://github.com/hamler-lang/) . **Hamler** is currently being developed and maintained by the RD team of [EMQ Technologies Co., Ltd.](https://www.emqx.com/en). We plan to release version 0.5 for the development of EMQ X 6.0 by the end of 2020.
+The Hamler functional programming language has been an open-source project since its inception and is hosted on GitHub: [https://github.com/hamler-lang/](https://github.com/hamler-lang/) . **Hamler** is currently being developed and maintained by the RD team of [EMQ Technologies Co., Ltd.](https://www.emqx.com/en). We plan to release version 0.5 for the development of EMQX 6.0 by the end of 2020.
 
 To contribute to **Hamler** project:
 

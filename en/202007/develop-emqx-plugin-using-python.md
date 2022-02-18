@@ -1,4 +1,4 @@
-From v4.1, EMQ X [MQTT broker](https://www.emqx.com/en/products/emqx) provides the specified plugin that supports multiple languages [emqx_extension_hook](https://github.com/emqx/emqx-extension-hook). Currently, it is supported that use other programming languages to process the hook events of EMQ X. The developer can use Python or Java to quickly develop their plugins or do some expansions based on the official functions to satisfy their business scenarios. For example:
+From v4.1, EMQX [MQTT broker](https://www.emqx.com/en/products/emqx) provides the specified plugin that supports multiple languages [emqx_extension_hook](https://github.com/emqx/emqx-extension-hook). Currently, it is supported that use other programming languages to process the hook events of EMQX. The developer can use Python or Java to quickly develop their plugins or do some expansions based on the official functions to satisfy their business scenarios. For example:
 
 - Verify the client's login permission: when connecting to the client, the corresponding function will be triggered and the client information will be obtained through parameters. Finally, it judges whether it has the login permission after reading the database, comparison, etc.
 - Record the online status of client and online and offline history: trigger corresponding functions when the status of the client changes, the client information will be obtained through parameters, and the online status of the client in the database will be rewritten.
@@ -9,7 +9,7 @@ From v4.1, EMQ X [MQTT broker](https://www.emqx.com/en/products/emqx) provides t
 
 
 
-Python and Java drivers are based on the processes [Erlang/OTP-Port](https://erlang.org/doc/tutorial/c_port.html) to implement communication, and have very high throughput performance. This article will take Python expansion as an example to introduce how to use EMQ X cross-language expansion.
+Python and Java drivers are based on the processes [Erlang/OTP-Port](https://erlang.org/doc/tutorial/c_port.html) to implement communication, and have very high throughput performance. This article will take Python expansion as an example to introduce how to use EMQX cross-language expansion.
 
 ![upeb67488ae758908b02ac8567c37fcf2d0a9.png](https://static.emqx.net/images/81aa1ab1028f0e59c08b0a00dc5ade08.png)
 
@@ -19,12 +19,12 @@ Python and Java drivers are based on the processes [Erlang/OTP-Port](https://erl
 
 ### Requirements
 
-- The broker of EMQ X is required to install Python 3.6 or higher version
+- The broker of EMQX is required to install Python 3.6 or higher version
 
 ### Steps for usage
 
 1. Install [Python SDK](https://pypi.org/project/emqx-extension-sdk/) through pip
-2. Adjust EMQ X configurations to ensure that the corresponding configuration items correctly point Python project
+2. Adjust EMQX configurations to ensure that the corresponding configuration items correctly point Python project
 3. Import SDK to write code
 
 
@@ -148,7 +148,7 @@ Enable plugin `emqx_extension_hook`. If configuration error or write wrong Pytho
 
 ## Advanced development
 
-Currently, the EMQ X Python extension SDK is open source, if you have higher requirements for the controllability and performance or you need to use the running environment of Python 2.7, welcome to contribute code or develop based on original examples.
+Currently, the EMQX Python extension SDK is open source, if you have higher requirements for the controllability and performance or you need to use the running environment of Python 2.7, welcome to contribute code or develop based on original examples.
 
 - Code repository: [emqx-extension-python-sdk](https://github.com/emqx/emqx-extension-python-sdk)
 - You can refer to this example to wrap: [emqx-extension-hook main.py](https://github.com/emqx/emqx-extension-hook/blob/master/test/scripts/main.py)

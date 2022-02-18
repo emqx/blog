@@ -49,17 +49,17 @@ npm install mqtt -g
 
 ## 使用
 
-本文将使用 EMQ X Cloud 提供的 [免费公共 MQTT 服务器](https://www.emqx.com/zh/mqtt/public-mqtt5-broker) 作为本次测试的 MQTT 服务器地址，服务器接入信息如下：
+本文将使用 EMQX Cloud 提供的 [免费公共 MQTT 服务器](https://www.emqx.com/zh/mqtt/public-mqtt5-broker) 作为本次测试的 MQTT 服务器地址，服务器接入信息如下：
 
 - Broker: **broker.emqx.io**
 - TCP Port: **1883**
 - SSL/TLS Port: **8883**
 
-更多详情请访问 [EMQ X Cloud 官网](https://www.emqx.com/zh/cloud)，或查看 [EMQ X Cloud 文档](https://docs.emqx.cn/cloud/latest/)。
+更多详情请访问 [EMQX Cloud 官网](https://www.emqx.com/zh/cloud)，或查看 [EMQX Cloud 文档](https://docs.emqx.cn/cloud/latest/)。
 
 ### 简单例子
 
-我们简单编写一段代码实现连接到 EMQ X Cloud 的并完成订阅主题、收发消息的例子：
+我们简单编写一段代码实现连接到 EMQX Cloud 的并完成订阅主题、收发消息的例子：
 
 ```javascript
 const mqtt = require('mqtt')

@@ -12,7 +12,7 @@ MongoDB download address：[https://www.mongodb.com/download-center/community](h
 
 ## Introduction of scenario
 
-This scenario requires that messages satisfying certain conditions under the EMQ X specified topic to be stored in the MongoDB database. In order to facilitate subsequent analysis and retrieval, message content needs to be split and stored.
+This scenario requires that messages satisfying certain conditions under the EMQX specified topic to be stored in the MongoDB database. In order to facilitate subsequent analysis and retrieval, message content needs to be split and stored.
 
 **In this scenario, The information reported by the device is as follows:**
 
@@ -78,13 +78,13 @@ use_statistics
 
 ### Create  resource
 
-Open the EMQ X Dashboard, go to the **Resources** page on the left menu, click the **New** button, select the MongoDB resource type to create:
+Open the EMQX Dashboard, go to the **Resources** page on the left menu, click the **New** button, select the MongoDB resource type to create:
 
 ![mongrescreate2x.jpg](https://static.emqx.net/images/f5a5355598d874242fa945c932da2e05.jpg)
 
 
 
-The network environment of the nodes in the EMQ X cluster may be different. After the resources are created successfully, click the **Status button ** in the list to check the resource connection status of each node . If the resources on the node are unavailable, check whether the configuration is correct and the network connectivity is correct, and click the **Reconnect** button to manually reconnect.
+The network environment of the nodes in the EMQX cluster may be different. After the resources are created successfully, click the **Status button ** in the list to check the resource connection status of each node . If the resources on the node are unavailable, check whether the configuration is correct and the network connectivity is correct, and click the **Reconnect** button to manually reconnect.
 
 ![mongresstatus2x.jpg](https://static.emqx.net/images/066ae8a4c6247e8481c39c39f97f3953.jpg)
 
@@ -219,7 +219,7 @@ We successfully created a rule that contains a processing action, and the expect
 
 #### Test with the Websocket tool in Dashboard
 
-Switch to the **Tools => Websocket** page and use any information client to connect to EMQ X. After the connection is successful, the sends the following message with the **message** card:
+Switch to the **Tools => Websocket** page and use any information client to connect to EMQX. After the connection is successful, the sends the following message with the **message** card:
 
 - Topic: md/state/NXP-058659730253-963945118132721-22
 

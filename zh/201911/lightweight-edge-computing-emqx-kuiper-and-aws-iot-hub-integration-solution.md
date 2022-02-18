@@ -43,19 +43,19 @@ devices/{device_id}/messages
 
 ## 方案介绍
 
-如下图所示，采用边缘分析/流式数据处理的方式，在边缘端我们采用了 EMQ X 的方案，最后将计算结果输出到 AWS IoT 中。
+如下图所示，采用边缘分析/流式数据处理的方式，在边缘端我们采用了 EMQX 的方案，最后将计算结果输出到 AWS IoT 中。
 
 ![emqx_aws.png](https://static.emqx.net/images/ef141d43e1c05f0f35d45f334730febd.png)
 
-- EMQ X Edge 可以接入各种协议类型的设备，比如 MQTT、CoAP、LwM2M 等，这样用户可以不需要关心协议适配方面的问题；另外它本身也比较轻量级，适合部署在边缘设备上
-- EMQ X Kuiper 是 EMQ 发布的基于 SQL 的轻量级边缘流式数据分析引擎，安装包只有约 7MB，非常适合于运行在边缘设备端
+- EMQX Edge 可以接入各种协议类型的设备，比如 MQTT、CoAP、LwM2M 等，这样用户可以不需要关心协议适配方面的问题；另外它本身也比较轻量级，适合部署在边缘设备上
+- EMQX Kuiper 是 EMQ 发布的基于 SQL 的轻量级边缘流式数据分析引擎，安装包只有约 7MB，非常适合于运行在边缘设备端
 - AWS IoT 提供了比较全的设备接入和数据分析的方案，此处用于云端的结果数据接入，以及应用所需的结果数据分析
 
 ## 实现步骤
 
-### 安装 EMQ X Edge & Kuiper
+### 安装 EMQX Edge & Kuiper
 
-- 写本文的时候，EMQ X Edge 的最新版本是4.0，用户可以通过 Docker 来安装和启动 EMQ X Edge
+- 写本文的时候，EMQX Edge 的最新版本是4.0，用户可以通过 Docker 来安装和启动 EMQX Edge
 
   ```shell
   # docker pull emqx/emqx-edge
@@ -180,7 +180,7 @@ SELECT avg(temperature) AS t_av, max(temperature) AS t_max, min(temperature) AS 
 
 - 发送测试数据
 
-  通过任何的测试工具，向 EMQ X Edge 发送以下的测试数据。笔者在测试过程中用的是 [JMeter](https://www.emqx.com/zh/blog/introduction-to-the-open-source-testing-tool-jmeter) 的 [MQTT 插件](https://github.com/emqx/mqtt-jmeter)，因为基于 JMeter 可以做一些比较灵活的自动数据生成，业务逻辑控制，以及大量设备的模拟等。用户也可以直接使用 ``mosquitto`` 等其它客户端进行模拟。
+  通过任何的测试工具，向 EMQX Edge 发送以下的测试数据。笔者在测试过程中用的是 [JMeter](https://www.emqx.com/zh/blog/introduction-to-the-open-source-testing-tool-jmeter) 的 [MQTT 插件](https://github.com/emqx/mqtt-jmeter)，因为基于 JMeter 可以做一些比较灵活的自动数据生成，业务逻辑控制，以及大量设备的模拟等。用户也可以直接使用 ``mosquitto`` 等其它客户端进行模拟。
 
   - 主题：``devices/$device_id/messages``，其中``$device_id`` 为下面数据中的第一列
   - 消息：``{"temperature": $temperature, "humidity" : $humidity}``, 其中``$temperature`` 和 ``$humidity`` 分别为下面数据中的第二列和第三列
@@ -269,7 +269,7 @@ time="2019-11-13T17:41:20+08:00" level=info msg="The connection to server ssl://
 
 ```
 
-- 通过 AWS IoT 提供的 MQTT Client 工具，订阅设备的``devices/result``主题。并往本地的 EMQ X Edge 上发送模拟数据。经过 Kuiper 处理后，相应的处理结果被发送到了 AWS IoT 中。如下图所示，收到了两次测试结果（第一次结果被折叠）。
+- 通过 AWS IoT 提供的 MQTT Client 工具，订阅设备的``devices/result``主题。并往本地的 EMQX Edge 上发送模拟数据。经过 Kuiper 处理后，相应的处理结果被发送到了 AWS IoT 中。如下图所示，收到了两次测试结果（第一次结果被折叠）。
 
 ![aws_iot_result.png](https://static.emqx.net/images/d26d4b4ef111c63b2cd56dc2d29a2847.png)
 
@@ -277,7 +277,7 @@ time="2019-11-13T17:41:20+08:00" level=info msg="The connection to server ssl://
 
 ## 总结
 
-通过本文，读者可以了解到利用 EMQ X 在边缘端的解决方案可以非常快速、灵活地开发出基于边缘数据分析的系统，实现数据低时延、低成本和安全的处理。
+通过本文，读者可以了解到利用 EMQX 在边缘端的解决方案可以非常快速、灵活地开发出基于边缘数据分析的系统，实现数据低时延、低成本和安全的处理。
 
 AWS IoT 也提供了 Greengrass 的边缘解决方案，与 AWS Greengrass 相比，Kuiper 方案更加轻量级，业务逻辑的实现方式（基于 SQL）在编程上也相对更加简单。AWS Greengrass 提供了基于 Lambada 的编程模型，通过提供不同编程语言的 SDK 来实现边缘端的数据分析，以及往 AWS IoT 的分析结果上传，因此在业务逻辑实现的灵活性上会更好。最后，与 Greengrass 只能连接 AWS IoT 不同，Kuiper 在与不同的第三方 IoT 平台的集成的灵活性上也更好。
 

@@ -31,7 +31,7 @@ The programming style of the NNG framework comes with a high learning cost, and 
 
 In NanoMQ's test report, its performance advantages of powerful high throughput and low latency have been reflected, and the direct successor of NanoMQ -  the SDK also has excellent performance. It is cost-effective in terms of resources consumption. Unlike the traditional MQTT SDK which has only 1-2 threads, NanoSDK can make full use of system hardware resources to provide higher consumption throughput.
 
-In most IoT solutions based on EMQ X, the backend service’s insufficient consuming capability always results in message congestion, which has always been a problem for open source developers. Especially for QoS 1/2 messages, most SDKs reply Ack for QoS 1/2 messages synchronously. NanoSDK provides asynchronous Ack capability under the premise of ensuring the QoS message sequence and message retransmission mechanism, which greatly improves the throughput and consumption capacity of QoS 1/2.
+In most IoT solutions based on EMQX, the backend service’s insufficient consuming capability always results in message congestion, which has always been a problem for open source developers. Especially for QoS 1/2 messages, most SDKs reply Ack for QoS 1/2 messages synchronously. NanoSDK provides asynchronous Ack capability under the premise of ensuring the QoS message sequence and message retransmission mechanism, which greatly improves the throughput and consumption capacity of QoS 1/2.
 
 ## Attachment: performance test comparison report between NanoSDK and Paho C MQTT SDK
 
@@ -45,7 +45,7 @@ We selected the most widely used Paho C MQTT SDK and NanoSDK for performance com
 
 ### Test scenario logic
 
-The scenario is to establish a client to connect to the EMQ X broker and complete the sending and receiving of 50,000 QoS 0/1/2 messages (both only count the total time spent on reading sockets to calculate the message rate). In order to get close to most real business scenarios, we use the Emqtt_bench tool to send a 2-byte message to this client. Each time the client receives a message, it will reply with a 14-byte Publish message. The client sends and receives a message each time. The two testing results are consistent except for the used SDK.
+The scenario is to establish a client to connect to the EMQX broker and complete the sending and receiving of 50,000 QoS 0/1/2 messages (both only count the total time spent on reading sockets to calculate the message rate). In order to get close to most real business scenarios, we use the Emqtt_bench tool to send a 2-byte message to this client. Each time the client receives a message, it will reply with a 14-byte Publish message. The client sends and receives a message each time. The two testing results are consistent except for the used SDK.
 
 ### Test result
 

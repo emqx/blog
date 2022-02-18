@@ -1,8 +1,8 @@
-[EMQ X Cloud](https://www.emqx.com/zh/cloud) 是 [EMQ 公司](https://www.emqx.com/zh/about)提供的一款全托管的物联网 [MQTT 5.0](https://www.emqx.com/zh/mqtt/mqtt5) 云服务产品。通过该产品，我们可以快速搭建出一个稳定可靠、功能完整、性能优异的 MQTT 5.0 物联网平台，帮助各类设备数据快速上云，进行后续的分析。
+[EMQX Cloud](https://www.emqx.com/zh/cloud) 是 [EMQ 公司](https://www.emqx.com/zh/about)提供的一款全托管的物联网 [MQTT 5.0](https://www.emqx.com/zh/mqtt/mqtt5) 云服务产品。通过该产品，我们可以快速搭建出一个稳定可靠、功能完整、性能优异的 MQTT 5.0 物联网平台，帮助各类设备数据快速上云，进行后续的分析。
 
 在本教程中，我们将带您一步一步搭建一个物联网平台。在完成本教程后，您将了解:
 
-1. 如何快速在 EMQ X Cloud 部署一个 [MQTT 集群](https://www.emqx.com/zh/blog/mqtt-broker-clustering-part-3-challenges-and-solutions-of-emqx-horizontal-scalability)。
+1. 如何快速在 EMQX Cloud 部署一个 [MQTT 集群](https://www.emqx.com/zh/blog/mqtt-broker-clustering-part-3-challenges-and-solutions-of-emqx-horizontal-scalability)。
 
 2. 如何配置 MQTT 集群的认证鉴权与访问控制。
 
@@ -12,9 +12,9 @@
 
    
 
-## 第一步：创建 EMQ X Cloud 账号
+## 第一步：创建 EMQX Cloud 账号
 
-首先我们前往 [EMQ X Cloud](https://www.emqx.com/zh/cloud)，点击 “开始免费试用” 按钮。根据页面提示信息，完成用户注册流程。
+首先我们前往 [EMQX Cloud](https://www.emqx.com/zh/cloud)，点击 “开始免费试用” 按钮。根据页面提示信息，完成用户注册流程。
 
 
 
@@ -27,9 +27,9 @@
 ![选择类型](https://static.emqx.net/images/afbeb89427fe2f1a9821a2fcbd988439.png)
 
 
-EMQ X Cloud 提供三个版本供您选用，分别适用于不同的使用场景。
+EMQX Cloud 提供三个版本供您选用，分别适用于不同的使用场景。
 
-- 基础版：适用于 MQTT 协议或 EMQ X Broker 产品的学习和体验，及轻量级物联网应用的开发。基础版提供 30 天免费试用。
+- 基础版：适用于 MQTT 协议或 EMQX Broker 产品的学习和体验，及轻量级物联网应用的开发。基础版提供 30 天免费试用。
 - 专业版：适用于构建关键任务的物联网应用，本版本提供了数据持久化，消息分发，VPC 对等连接等高级功能。专业版提供 14 天免费试用。
 - 旗舰版：适用于企业级物联网平台的构建，提供多地域及独享硬件部署的支持，并增加了设备管理、设备影子、物模型等功能。
 
@@ -106,6 +106,6 @@ EMQ X Cloud 提供三个版本供您选用，分别适用于不同的使用场�
 
 至此，如果您跟着我们的教程一步一步操作，那么您已经成功的完成了集群创建、访问控制和收发消息的操作！
 
-在本教程中，我们体验了从零开始构建一个 MQTT 物联网平台的过程。当然，这只是一个开始，EMQ X Cloud 还有很多非常强大的功能等待您去尝试。例如，您可以配置 VPC 对等连接，使得您的 MQTT 集群可以与部署在同一个公有云平台同地域的其他服务集成。您也可以使用强大的规则引擎功能，将 MQTT 集群接收到的消息根据规则保存到不同的数据库中或者转发到其他消息队列中，而这些功能无需您编写一行代码！
+在本教程中，我们体验了从零开始构建一个 MQTT 物联网平台的过程。当然，这只是一个开始，EMQX Cloud 还有很多非常强大的功能等待您去尝试。例如，您可以配置 VPC 对等连接，使得您的 MQTT 集群可以与部署在同一个公有云平台同地域的其他服务集成。您也可以使用强大的规则引擎功能，将 MQTT 集群接收到的消息根据规则保存到不同的数据库中或者转发到其他消息队列中，而这些功能无需您编写一行代码！
 
-在您使用 EMQ X Cloud 产品的过程中，如有任何问题、意见或者建议，欢迎随时与我们取得联系：[cloud-support@emqx.io](mailto:cloud-support@emqx.io) 。希望 EMQ X Cloud 可以帮助您的物联网业务更加顺利地开展。
+在您使用 EMQX Cloud 产品的过程中，如有任何问题、意见或者建议，欢迎随时与我们取得联系：[cloud-support@emqx.io](mailto:cloud-support@emqx.io) 。希望 EMQX Cloud 可以帮助您的物联网业务更加顺利地开展。

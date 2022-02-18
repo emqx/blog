@@ -52,4 +52,4 @@ Java Client 向 HServer 发送网络请求基于 gRPC-java，由于 gRPC-java �
 
 - 新增部分中文文档 [https://hstream.io/docs/zh/latest/](https://hstream.io/docs/zh/latest/) 
 - 新增在多节点上部署 HStreamDB 集群的文档 [https://hstream.io/docs/en/latest/deployment/deploy-docker.html](https://hstream.io/docs/en/latest/deployment/deploy-docker.html) 
-- HStreamDB 与 EMQ X 快速集成的教程 [https://www.emqx.com/zh/blog/integration-practice-of-emqx-and-hstreamdb](https://www.emqx.com/zh/blog/integration-practice-of-emqx-and-hstreamdb)
+- HStreamDB 与 EMQX 快速集成的教程 [https://www.emqx.com/zh/blog/integration-practice-of-emqx-and-hstreamdb](https://www.emqx.com/zh/blog/integration-practice-of-emqx-and-hstreamdb)

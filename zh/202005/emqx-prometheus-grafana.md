@@ -2,9 +2,9 @@
 
 
 
-物联网 MQTT 服务器 [EMQ X](https://www.emqx.com/zh) 提供 [emqx_statsd](https://github.com/emqx/emqx-statsd) 插件，用于将 EMQ X 运行指标及 Erlang 虚拟机状态数据输出到第三方的监控系统如 Prometheus 中。通过 Prometheus 自带的 node-exporter 还可以采集 Linux 服务器相关指标，实现服务器 + EMQ X 整体运维监控。
+物联网 MQTT 服务器 [EMQX](https://www.emqx.com/zh) 提供 [emqx_statsd](https://github.com/emqx/emqx-statsd) 插件，用于将 EMQX 运行指标及 Erlang 虚拟机状态数据输出到第三方的监控系统如 Prometheus 中。通过 Prometheus 自带的 node-exporter 还可以采集 Linux 服务器相关指标，实现服务器 + EMQX 整体运维监控。
 
-本文提供了 Prometheus + Grafana 整套 EMQ X 运维监控方案搭建过程。
+本文提供了 Prometheus + Grafana 整套 EMQX 运维监控方案搭建过程。
 
 
 
@@ -38,7 +38,7 @@ docker run -d -p 9100:9100 \
 
 ###  启动 pushgateway
 
-pushgateway 用于接收 EMQ X 指标推送数据，需要保证 EMQ X 能够访问：
+pushgateway 用于接收 EMQX 指标推送数据，需要保证 EMQX 能够访问：
 
 ```bash
 docker run -d -p 9091:9091 prom/pushgateway
@@ -94,7 +94,7 @@ scrape_configs:
           instance: wivwiv-local
 
 
-  # EMQ X Pushgateway 监控
+  # EMQX Pushgateway 监控
   - job_name: 'pushgateway'
     scrape_interval: 5s
     honor_labels: true
@@ -105,7 +105,7 @@ scrape_configs:
 
 
 
-### 启动 EMQ X statsd 插件
+### 启动 EMQX statsd 插件
 
 打开 `etc/emqx_statsd.conf`，确认以下配置：
 
@@ -162,9 +162,9 @@ docker run -d --name=grafana -p 3000:3000 grafana/grafana
 
 ### 导入 Grafana 模板数据
 
-`emqx_statsd` 插件提供了 Grafana 的 Dashboard 的模板文件，这些模板包含了大部分 EMQ X 监控数据的展示。用户可直接导入到 Grafana 中，用以显示 EMQ X 的监控状态的图标。
+`emqx_statsd` 插件提供了 Grafana 的 Dashboard 的模板文件，这些模板包含了大部分 EMQX 监控数据的展示。用户可直接导入到 Grafana 中，用以显示 EMQX 的监控状态的图标。
 
-模板文件位于[emqx_statsd/grafana_template](https://github.com/emqx/emqx-statsd/tree/master/grafana_template) 中，因 EMQ X 版本差异问题，可能存在部分图表数据显示错误的情况，请用户手动调整适配。
+模板文件位于[emqx_statsd/grafana_template](https://github.com/emqx/emqx-statsd/tree/master/grafana_template) 中，因 EMQX 版本差异问题，可能存在部分图表数据显示错误的情况，请用户手动调整适配。
 
 点击 Upload.json file 按钮，导入后选择对应的文件夹与数据源即可。
 
@@ -178,7 +178,7 @@ docker run -d --name=grafana -p 3000:3000 grafana/grafana
 
 - EMQ Dashboard：包含连接、消息、主题、吞吐量历史统计
 - EMQ：包含客户端数、订阅数、主题数、消息数、报文数等业务信息历史统计
-- ErlangVM：每个 EMQ X 节点 Erlang 虚拟机进程/线程数量，ETS/Mnesia 数据库使用情况历史统计
+- ErlangVM：每个 EMQX 节点 Erlang 虚拟机进程/线程数量，ETS/Mnesia 数据库使用情况历史统计
 
 **如有其他需求，可以参照 「附：emqx-statsd 所有指标」并结合 Grafana 进行图标数据编排展示**。
 
@@ -201,7 +201,7 @@ Prometheus 与 Grafana 均支持指标告警功能，配置告警规则后，服
 
 ## 附：emqx-statsd 所有指标
 
-[EMQ X](https://www.emqx.com/zh) MQTT 服务器通过 Prometheus push gateway 推送指标数据，支持的指标项如下：
+[EMQX](https://www.emqx.com/zh) MQTT 服务器通过 Prometheus push gateway 推送指标数据，支持的指标项如下：
 
 ```bash
 # TYPE erlang_vm_ets_limit gauge
