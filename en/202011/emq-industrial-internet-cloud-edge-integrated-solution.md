@@ -36,9 +36,9 @@ This solution will use these software products in the following list.
 | 5    | TDengine                                                   | Taosdata     | Yes, GNU AGPL v3.0 |
 | 6    | Grafana                                                    | Grafana Labs | Yes, Apache 2.0    |
 
-`1:` In the future, Neuron plans to open-source its basic functions. Currently, users can download the trial version and use it for free. If there are not enough data collection points for the built-in trial version, you can [apply online](https://www.emqx.com/en/downloads?product=neuron) through EMQ website.
+`1:` In the future, Neuron plans to open-source its basic functions. Currently, users can download the trial version and use it for free. If there are not enough data collection points for the built-in trial version, you can [apply online](https://www.emqx.com/en/try?product=neuron) through EMQ website.
 
-`2:` Users can use all features in the free version for free, except for a limited number of managed nodes. If you want to try more node management features, you can [apply online](https://www.emqx.com/en/downloads?product=neuron) through the EMQ website.
+`2:` Users can use all features in the free version for free, except for a limited number of managed nodes. If you want to try more node management features, you can [apply online](https://www.emqx.com/en/try?product=neuron) through the EMQ website.
 
 **The description of basic functions of product**
 

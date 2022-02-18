@@ -23,7 +23,7 @@ To facilitate the management operation, you can download and use the free graphi
 
 ## Configure EMQX MQTT broker
 
-For [EMQX MQTT broker](https://www.emqx.com/en/downloads) installed by RPM, the PostgreSQL related configuration file is located in `/etc/emqx/plugins /emqx_backend_pgsql.conf`. If you only test the persistence function of PostgreSQL, most of the configuration does not need to be changed. You only need to fill in the user name, password and database:
+For [EMQX MQTT broker](https://www.emqx.com/en/try) installed by RPM, the PostgreSQL related configuration file is located in `/etc/emqx/plugins /emqx_backend_pgsql.conf`. If you only test the persistence function of PostgreSQL, most of the configuration does not need to be changed. You only need to fill in the user name, password and database:
 
 ```bash
 backend.pgsql.pool1.server = 127.0.0.1:5432

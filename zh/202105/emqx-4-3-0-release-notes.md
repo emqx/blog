@@ -2,7 +2,7 @@
 
 产品介绍：[https://www.emqx.com/zh/products/emqx](https://www.emqx.com/zh/products/emqx)
 
-下载地址：[https://www.emqx.com/zh/downloads?product=broker](https://www.emqx.com/zh/downloads?product=broker)
+下载地址：[https://www.emqx.com/zh/try?product=broker](https://www.emqx.com/zh/try?product=broker)
 
 
 ## 概览

@@ -73,7 +73,7 @@ There are services or installation package resources and tutorials of different 
 
 > If you are new to EMQX, we recommend you getting started with [EMQX Guide](https://docs.emqx.io/tutorial/v3/en/). 
 
-Visit [EMQ website](https://www.emqx.com/en/downloads)  to download the installation package suitable for your operating system. As data persistence is an function of enterprise version, you need to download EMQX Enterprise (you can apply for a license trial). At the time of writing this article, the latest version of EMQX Enterprise is v3.4.5. This function requires this version and above. The startup steps for downloading the zip package are as follows:
+Visit [EMQ website](https://www.emqx.com/en/try)  to download the installation package suitable for your operating system. As data persistence is an function of enterprise version, you need to download EMQX Enterprise (you can apply for a license trial). At the time of writing this article, the latest version of EMQX Enterprise is v3.4.5. This function requires this version and above. The startup steps for downloading the zip package are as follows:
 
 ```bash
 ## Extract the downloaded installation package

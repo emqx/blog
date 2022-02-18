@@ -6,7 +6,7 @@ Neuron 工业网关南向支持接入主流的工业物联网协议（[驱动协
 
 **Neuron V1.2.0 现已正式发布**。
 
-**下载地址：** [https://www.emqx.com/zh/downloads?product=neuron](https://www.emqx.com/zh/downloads?product=neuron)
+**下载地址：** [https://www.emqx.com/zh/try?product=neuron](https://www.emqx.com/zh/try?product=neuron)
 
 
 
