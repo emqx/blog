@@ -1,4 +1,4 @@
-本文将以 [MQTT Explorer](https://mqtt-explorer.com/) 作为 [MQTT 客户端](https://www.emqx.com/zh/blog/introduction-to-the-commonly-used-mqtt-client-library)测试工具，接入 [MQTT 云服务 - EMQ X Cloud](https://www.emqx.com/zh/cloud)。通过本文，你将能快速了解 MQTT Explorer 的基础用法以及 MQTT 协议的基本概念与使用。
+本文将以 [MQTT Explorer](https://mqtt-explorer.com/) 作为 [MQTT 客户端](https://www.emqx.com/zh/blog/introduction-to-the-commonly-used-mqtt-client-library)测试工具，接入 [MQTT 云服务 - EMQX Cloud](https://www.emqx.com/zh/cloud)。通过本文，你将能快速了解 MQTT Explorer 的基础用法以及 MQTT 协议的基本概念与使用。
 
 
 
@@ -30,19 +30,19 @@ MQTT Explorer 能够满足大部分开发的需求，但是也有一些缺点：
 
 
 
-## EMQ X Cloud 简介
+## EMQX Cloud 简介
 
-[EMQ X Cloud](https://www.emqx.com/zh/cloud) 是由 [EMQ](https://www.emqx.com/zh) 公司推出的可连接海量物联网设备，集成各类数据库及业务系统的全托管云原生 MQTT 服务。作为**全球首个全托管的** [**MQTT 5.0**](https://www.emqx.com/zh/mqtt/mqtt5) **公有云服务**，EMQ X Cloud 提供了一站式运维代管、独有隔离环境的 MQTT 消息服务。
+[EMQX Cloud](https://www.emqx.com/zh/cloud) 是由 [EMQ](https://www.emqx.com/zh) 公司推出的可连接海量物联网设备，集成各类数据库及业务系统的全托管云原生 MQTT 服务。作为**全球首个全托管的** [**MQTT 5.0**](https://www.emqx.com/zh/mqtt/mqtt5) **公有云服务**，EMQX Cloud 提供了一站式运维代管、独有隔离环境的 MQTT 消息服务。
 
-在万物互联的时代，EMQ X Cloud 可以帮助用户快速构建面向物联网领域的行业应用，轻松实现物联网数据的采集、传输、计算和持久化。
+在万物互联的时代，EMQX Cloud 可以帮助用户快速构建面向物联网领域的行业应用，轻松实现物联网数据的采集、传输、计算和持久化。
 
-本文将使用 EMQ X Cloud 提供的 [免费公共 MQTT 服务器](https://www.emqx.com/zh/mqtt/public-mqtt5-broker) 作为本次测试的 MQTT 服务器地址，服务器接入信息如下：
+本文将使用 EMQX Cloud 提供的 [免费公共 MQTT 服务器](https://www.emqx.com/zh/mqtt/public-mqtt5-broker) 作为本次测试的 MQTT 服务器地址，服务器接入信息如下：
 
 - Broker: **broker-cn.emqx.io**
 - TCP Port: **1883**
 - SSL/TLS Port: **8883**
 
-更多详情请访问 [EMQ X Cloud 官网](https://www.emqx.com/zh/cloud)，或查看 [EMQ X Cloud 文档](https://docs.emqx.cn/cloud/latest/)。 
+更多详情请访问 [EMQX Cloud 官网](https://www.emqx.com/zh/cloud)，或查看 [EMQX Cloud 文档](https://docs.emqx.cn/cloud/latest/)。 
 
 
 
@@ -70,13 +70,13 @@ MQTT Explorer 能够满足大部分开发的需求，但是也有一些缺点：
 
 #### 订阅主题
 
-之后点击 Advanced。因为 EMQ X Cloud 默认禁止了 `$SYS` 主题和 `#` 主题，因此我们将其删去，输入一个测试的订阅主题，我们命名为 `test/1`，结果如下图所示。
+之后点击 Advanced。因为 EMQX Cloud 默认禁止了 `$SYS` 主题和 `#` 主题，因此我们将其删去，输入一个测试的订阅主题，我们命名为 `test/1`，结果如下图所示。
 
 ![订阅主题](https://static.emqx.net/images/131357ea19381cf2e9096bdfec8dc656.png)
 
 #### 连接
 
-最后，点击 Back 回到连接配置页面，并点击连接，即可完成 EMQ X Cloud 的连接以及主题 `test/1` 的订阅。
+最后，点击 Back 回到连接配置页面，并点击连接，即可完成 EMQX Cloud 的连接以及主题 `test/1` 的订阅。
 
 连接成功后，将可以看到订阅的树形结构有 `test` 和 `1` 的节点，并且右侧上方状态栏显示已经连接，右侧含有主题 `test/1` 的标题。
 

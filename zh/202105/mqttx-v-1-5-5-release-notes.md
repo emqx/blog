@@ -22,9 +22,9 @@ Linux 用户可在 Snapcraft 中进行下载：[https://snapcraft.io/mqttx](http
 
 ![mqttxautoresub.png](https://static.emqx.net/images/dc808e9c451f84885520105cbeb58d6a.png)
 
-### 添加 EMQ X Cloud 链接
+### 添加 EMQX Cloud 链接
 
-对于无法马上连接到本地或已部署好的 MQTT Broker 的做测试和调试的用户，提供了 EMQ X Cloud 的链接，免费体验[云原生的全托管 MQTT 服务](https://www.emqx.com/zh/cloud)。
+对于无法马上连接到本地或已部署好的 MQTT Broker 的做测试和调试的用户，提供了 EMQX Cloud 的链接，免费体验[云原生的全托管 MQTT 服务](https://www.emqx.com/zh/cloud)。
 
 ![mqttxcloud.png](https://static.emqx.net/images/a2fab283b655c58a9600f82f4c6d03ba.png)
 

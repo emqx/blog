@@ -46,14 +46,14 @@ pip3 install paho-mqtt
 
 ### 连接 MQTT 服务器 
 
-本文将使用 EMQ X 提供的 [免费公共 MQTT 服务器](https://www.emqx.com/zh/mqtt/public-mqtt5-broker)，该服务基于 EMQ X 的 [MQTT 物联网云平台](https://www.emqx.com/en/cloud) 创建。服务器接入信息如下： 
+本文将使用 EMQX 提供的 [免费公共 MQTT 服务器](https://www.emqx.com/zh/mqtt/public-mqtt5-broker)，该服务基于 EMQX 的 [MQTT 物联网云平台](https://www.emqx.com/en/cloud) 创建。服务器接入信息如下： 
 
 
 * Broker: **broker.emqx.io** 
 * TCP Port: **1883** 
 * Websocket Port: **8083** 
 
-如果有需要，您也可以使用 docker 在本地快速安装 EMQ X 服务器。 
+如果有需要，您也可以使用 docker 在本地快速安装 EMQX 服务器。 
 
 ```
 docker run -d --name emqx -p 1883:1883 -p 8083:8083 -p 8084:8084 -p 18083:18083 emqx/emqx 

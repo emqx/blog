@@ -1,10 +1,10 @@
-The EMQ X 3.2 version introduces the ''Rules Engine'' feature that supports screening data reported by the EMQ X Broker terminal, which is processed and streamed to the back-end database or other [message queues](https://www.emqx.com/en/blog/mqtt5-feature-inflight-window-message-queue). This article uses a specific scenario to explain "How to use the rules engine to forward messages to Kafka"
+The EMQX 3.2 version introduces the ''Rules Engine'' feature that supports screening data reported by the EMQX Broker terminal, which is processed and streamed to the back-end database or other [message queues](https://www.emqx.com/en/blog/mqtt5-feature-inflight-window-message-queue). This article uses a specific scenario to explain "How to use the rules engine to forward messages to Kafka"
 
 
 
 ## Scenario introduction
 
-This scenario requires bridging the message under the topic specified by EMQ X and satisfying the condition to Kafka. In order to facilitate subsequent analysis and retrieval, the message content needs to be split.
+This scenario requires bridging the message under the topic specified by EMQX and satisfying the condition to Kafka. In order to facilitate subsequent analysis and retrieval, the message content needs to be split.
 
 **The information reported by the device in this scenario is as follows:**
 
@@ -47,12 +47,12 @@ When the reported value of engine speed  is greater than `8000', the current inf
 
 ### Create resource
 
-Open EMQ X Dashboard, go to the **Resources** page on the left menu, click the **New** button, type Kafka server information for resource creation.
+Open EMQX Dashboard, go to the **Resources** page on the left menu, click the **New** button, type Kafka server information for resource creation.
 
 ![WX201907181413252x.jpg](https://static.emqx.net/images/aecb8d35dc38dd3033415562f47ec306.jpg)
 
 
-The network environment of the nodes in the EMQ X cluster may be different. After the resources are created successfully, click the **Status button ** in the list to check the connection status of each node. If the resources on the node are unavailable, check whether the configuration is correct and the network connectivity is correct, and click the **Reconnect** button to manually reconnect.
+The network environment of the nodes in the EMQX cluster may be different. After the resources are created successfully, click the **Status button ** in the list to check the connection status of each node. If the resources on the node are unavailable, check whether the configuration is correct and the network connectivity is correct, and click the **Reconnect** button to manually reconnect.
 
 
 ![image20190716173259015.jpg](https://static.emqx.net/images/7fe37afb9ef62d21c330cc0c7da9772c.jpg)
@@ -180,7 +180,7 @@ We successfully created a rule that contains a processing action, and expected r
 #### Test with the Websocket tool in Dashboard
 
 
-Switch to the **Tools** --> **Websocket** page, use any client to connect to EMQ X, after the connection is successful, sends the following information with **message** card:
+Switch to the **Tools** --> **Websocket** page, use any client to connect to EMQX, after the connection is successful, sends the following information with **message** card:
 
 - Topic: cmd/state/NXP-058659730253-963945118132721-22
 

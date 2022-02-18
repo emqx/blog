@@ -1,4 +1,4 @@
-EMQ X 在支持客户的过程中，了解到有客户使用 Nginx 做[负载均衡](https://www.emqx.com/zh/blog/mqtt-broker-clustering-part-2-sticky-session-load-balancing)，Docker 容器手动加入集群的方式运行 EMQ 集群，现将主要过程记录下来。
+EMQX 在支持客户的过程中，了解到有客户使用 Nginx 做[负载均衡](https://www.emqx.com/zh/blog/mqtt-broker-clustering-part-2-sticky-session-load-balancing)，Docker 容器手动加入集群的方式运行 EMQ 集群，现将主要过程记录下来。
 
 ## 业务需求
 
@@ -363,7 +363,7 @@ exit 1
 
 客户端通过 SSL 方式连接 <Nginx IP:8884> 地址，Nginx 将连接以 TCP 方式负载到 EMQ 节点。
 
-PS：关于 Nginx 如何反向代理 tcp 和 ssl 的设置，可以参考 EMQ X 消息服务器 Nginx 反向代理
+PS：关于 Nginx 如何反向代理 tcp 和 ssl 的设置，可以参考 EMQX 消息服务器 Nginx 反向代理
 
 ### 自动重启和自动集群
 

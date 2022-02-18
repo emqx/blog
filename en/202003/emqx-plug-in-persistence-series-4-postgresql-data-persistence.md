@@ -21,9 +21,9 @@ To facilitate the management operation, you can download and use the free graphi
 
 
 
-## Configure EMQ X MQTT broker
+## Configure EMQX MQTT broker
 
-For [EMQ X MQTT broker](https://www.emqx.com/en/downloads) installed by RPM, the PostgreSQL related configuration file is located in `/etc/emqx/plugins /emqx_backend_pgsql.conf`. If you only test the persistence function of PostgreSQL, most of the configuration does not need to be changed. You only need to fill in the user name, password and database:
+For [EMQX MQTT broker](https://www.emqx.com/en/downloads) installed by RPM, the PostgreSQL related configuration file is located in `/etc/emqx/plugins /emqx_backend_pgsql.conf`. If you only test the persistence function of PostgreSQL, most of the configuration does not need to be changed. You only need to fill in the user name, password and database:
 
 ```bash
 backend.pgsql.pool1.server = 127.0.0.1:5432
@@ -53,7 +53,7 @@ emqx_ctl plugins load emqx_backend_pgsql
 
 ### Start through the management console
 
-In the EMQ X management console **plugin** page, find **emqx_backend_pgsql** plugin, click **start**.
+In the EMQX management console **plugin** page, find **emqx_backend_pgsql** plugin, click **start**.
 
 
 
@@ -100,7 +100,7 @@ backend.pgsql.hook.client.disconnected.1 = {"action": {"function": "on_client_di
 
 ### Example
 
-Opens  `http://127.0.0.1:18083`  EMQ X management console through the browser, create a new client connection in **Tools ->  Websocket**, specify clientid as sub_client, click on **connect**, and disconnect manually after successful connection:
+Opens  `http://127.0.0.1:18083`  EMQX management console through the browser, create a new client connection in **Tools ->  Websocket**, specify clientid as sub_client, click on **connect**, and disconnect manually after successful connection:
 
 ![image20181116105333637.png](https://static.emqx.net/images/8cf8ae74eb385c2582a20de5593a01c6.png)
 
@@ -157,7 +157,7 @@ insert into mqtt_sub(clientid, topic, qos) values('sub_client', 'sub_client/upst
 insert into mqtt_sub(clientid, topic, qos) values('sub_client', 'sub_client/downlink', 1);
 ```
 
-2. In the EMQ X management console **WebSocket** page, create a new client connection with clientid `sub_client`, switch to **subscription** page, it can be seen that the current client automatically subscribes to the two QoS 1 topics of ` sub_client/upstream` and `sub_client/downlink`:
+2. In the EMQX management console **WebSocket** page, create a new client connection with clientid `sub_client`, switch to **subscription** page, it can be seen that the current client automatically subscribes to the two QoS 1 topics of ` sub_client/upstream` and `sub_client/downlink`:
 
 ![image20181116110036523.png](https://static.emqx.net/images/a1743eaa61d8d9bb1663541d9af8dfd8.png)
 
@@ -205,7 +205,7 @@ backend.pgsql.hook.message.publish.1     = {"topic": "#", "action": {"function":
 
 ### Example
 
-In the EMQ X management console **WebSocket** page, use clientdi `sub_client` to establish a connection, publish multiple messages to the topic ` upstream_topic`, and EMQ X persists the message list to the `mqtt_msg` table:
+In the EMQX management console **WebSocket** page, use clientdi `sub_client` to establish a connection, publish multiple messages to the topic ` upstream_topic`, and EMQX persists the message list to the `mqtt_msg` table:
 
 ![image20181119162834606.png](https://static.emqx.net/images/a025af3fa62148737f176257b3149d5b.png)
 
@@ -257,7 +257,7 @@ backend.pgsql.hook.message.publish.3     = {"topic": "#", "action": {"function":
 
 ### Example
 
-After establishing a connection on the **WebSocket** page of the EMQ X management console, publish the message and select **Reserve**:
+After establishing a connection on the **WebSocket** page of the EMQX management console, publish the message and select **Reserve**:
 
 ![image20181119111926675.png](https://static.emqx.net/images/fd9fba3a1a64f2a9b84ca7020f95e650.png)
 
@@ -265,7 +265,7 @@ After establishing a connection on the **WebSocket** page of the EMQ X managemen
 
 **Publish (message is not empty)**
 
-When a non-empty retain message is published, EMQ X will use topic as the unique key to persist the message to the `mqtt_retain` table. Different retain messages will be published under the same topic. Only the last message will be persisted:
+When a non-empty retain message is published, EMQX will use topic as the unique key to persist the message to the `mqtt_retain` table. Different retain messages will be published under the same topic. Only the last message will be persisted:
 
 ![image20181119112306703.png](https://static.emqx.net/images/8059ea91aea1da218eb6f74301687e13.png)
 
@@ -273,7 +273,7 @@ When a non-empty retain message is published, EMQ X will use topic as the unique
 
 **Subscribe**
 
-After the client subscribes to the retain topic, EMQ X will query the `mqtt_retain` data table to perform the post operation of retain message .
+After the client subscribes to the retain topic, EMQX will query the `mqtt_retain` data table to perform the post operation of retain message .
 
 
 
@@ -287,7 +287,7 @@ In the [MQTT protocol](https://www.emqx.com/en/mqtt), publishing an empty retain
 
 ## Message acknowledgemen persistence
 
-When message acknowledgement (ACK) persistence is enabled and a client subscribes to QoS 1 and QoS 2 topics, EMQ X will initialize the ACK record in the database with clientid + topic as the unique key.
+When message acknowledgement (ACK) persistence is enabled and a client subscribes to QoS 1 and QoS 2 topics, EMQX will initialize the ACK record in the database with clientid + topic as the unique key.
 
 
 
@@ -328,7 +328,7 @@ backend.pgsql.hook.session.unsubscribed.1= {"topic": "#", "action": {"sql": ["de
 
 ### Example
 
-After establishing a connection in the EMQ X Management Console **WebSocket** page, subscribe to topics with QoS> 0:
+After establishing a connection in the EMQX Management Console **WebSocket** page, subscribe to topics with QoS> 0:
 
 ![image20181119140251843.png](https://static.emqx.net/images/ae8589fa59a057fadd396ea525a30c62.png)
 
@@ -363,7 +363,7 @@ In addition to the built-in functions and table structure of the plugin, emqx_ba
 
 ### Example of Updating custom data sheet
 
-The existing device table `clients` has basic fields such as device connection authentication, device status record, and device management for other management services. Now we need to synchronize the EMQ X device status to this table:
+The existing device table `clients` has basic fields such as device connection authentication, device status record, and device management for other management services. Now we need to synchronize the EMQX device status to this table:
 
 ```sql
 CREATE TABLE "public"."clients" (

@@ -1,4 +1,4 @@
-本文将以 [MQTT.fx](http://www.mqttfx.jensd.de/) 作为 [MQTT 客户端](https://www.emqx.com/zh/blog/introduction-to-the-commonly-used-mqtt-client-library)测试工具，接入 [MQTT 云服务 - EMQ X Cloud](https://www.emqx.com/zh/cloud)。通过本文，你将能快速了解 MQTT.fx 的基础用法以及 MQTT 协议的基本概念与使用。
+本文将以 [MQTT.fx](http://www.mqttfx.jensd.de/) 作为 [MQTT 客户端](https://www.emqx.com/zh/blog/introduction-to-the-commonly-used-mqtt-client-library)测试工具，接入 [MQTT 云服务 - EMQX Cloud](https://www.emqx.com/zh/cloud)。通过本文，你将能快速了解 MQTT.fx 的基础用法以及 MQTT 协议的基本概念与使用。
 
 
 
@@ -31,19 +31,19 @@
 
 
 
-## EMQ X Cloud 简介
+## EMQX Cloud 简介
 
-[EMQ X Cloud](https://www.emqx.com/zh/cloud) 是由 [EMQ](https://www.emqx.com/zh) 公司推出的可连接海量物联网设备，集成各类数据库及业务系统的全托管云原生 MQTT 服务。作为**全球首个全托管的** [**MQTT 5.0**](https://www.emqx.com/zh/mqtt/mqtt5) **公有云服务**，EMQ X Cloud 提供了一站式运维代管、独有隔离环境的 MQTT 消息服务。
+[EMQX Cloud](https://www.emqx.com/zh/cloud) 是由 [EMQ](https://www.emqx.com/zh) 公司推出的可连接海量物联网设备，集成各类数据库及业务系统的全托管云原生 MQTT 服务。作为**全球首个全托管的** [**MQTT 5.0**](https://www.emqx.com/zh/mqtt/mqtt5) **公有云服务**，EMQX Cloud 提供了一站式运维代管、独有隔离环境的 MQTT 消息服务。
 
-在万物互联的时代，EMQ X Cloud 可以帮助用户快速构建面向物联网领域的行业应用，轻松实现物联网数据的采集、传输、计算和持久化。
+在万物互联的时代，EMQX Cloud 可以帮助用户快速构建面向物联网领域的行业应用，轻松实现物联网数据的采集、传输、计算和持久化。
 
-本文将使用 EMQ X Cloud 提供的 [免费公共 MQTT 服务器](https://www.emqx.com/zh/mqtt/public-mqtt5-broker) 作为本次测试的 MQTT 服务器地址，服务器接入信息如下：
+本文将使用 EMQX Cloud 提供的 [免费公共 MQTT 服务器](https://www.emqx.com/zh/mqtt/public-mqtt5-broker) 作为本次测试的 MQTT 服务器地址，服务器接入信息如下：
 
 - Broker: **broker-cn.emqx.io**
 - TCP Port: **1883**
 - SSL/TLS Port: **8883**
 
-更多详情请访问 [EMQ X Cloud 官网](https://www.emqx.com/zh/cloud)，或查看 [EMQ X Cloud 文档](https://docs.emqx.cn/cloud/latest/)。 
+更多详情请访问 [EMQX Cloud 官网](https://www.emqx.com/zh/cloud)，或查看 [EMQX Cloud 文档](https://docs.emqx.cn/cloud/latest/)。 
 
 
 
@@ -78,9 +78,9 @@
 
 ### 订阅/发送消息
 
-完成连接的建立之后，即可开始订阅消息。因为 MQTT 协议采用的是订阅/推送的方式，所以我们需要在连接之后订阅主题，之后主题上有消息产生即可收到来自 EMQ X Cloud 推送。
+完成连接的建立之后，即可开始订阅消息。因为 MQTT 协议采用的是订阅/推送的方式，所以我们需要在连接之后订阅主题，之后主题上有消息产生即可收到来自 EMQX Cloud 推送。
 
-![EMQ X Platform](https://static.emqx.net/images/7c3fd862db7bfdc16ef51bbcda0d5b2c.png)
+![EMQX Platform](https://static.emqx.net/images/7c3fd862db7bfdc16ef51bbcda0d5b2c.png)
 
 点击进入 Subscribe Tab 下，在主题框中输入 `/testTopic/1`，点击 Subscribe 订阅按钮，在左侧出现订阅的主题列表，订阅的主题目前消息数量为0，如下图所示:
 
@@ -94,7 +94,7 @@
 
 ![MQTT.fx 消息接收](https://static.emqx.net/images/43c8f23108d248f172a978e499b4d446.png)
 
-我们使用 MQTT.fx 这一客户端向 EMQ X Cloud 下的 `/testTopic/1` 主题发送了消息"hello wolrd"，订阅了这个主题的所有客户端都会收到这个消息，包括刚刚订阅了该主题的发送客户端。
+我们使用 MQTT.fx 这一客户端向 EMQX Cloud 下的 `/testTopic/1` 主题发送了消息"hello wolrd"，订阅了这个主题的所有客户端都会收到这个消息，包括刚刚订阅了该主题的发送客户端。
 
 ### 脚本
 
@@ -120,13 +120,13 @@ function execute(action) {
 
 ### 日志
 
-在日志内，我们可以查看 MQTT.fx 与 EMQ X Cloud 交互过程，例如主题订阅，消息推送，消息接收等：
+在日志内，我们可以查看 MQTT.fx 与 EMQX Cloud 交互过程，例如主题订阅，消息推送，消息接收等：
 
 ![MQTT.fx 日志](https://static.emqx.net/images/cc3b9ee768d37b6cce66316135db261c.png)
 
 ### SSL/TLS连接
 
-以 CA 自签名服务为例子，展示如何启用 SSL 协议连接到 EMQ X Cloud。
+以 CA 自签名服务为例子，展示如何启用 SSL 协议连接到 EMQX Cloud。
 
 打开设置，和普通连接一样填写好 Broker Address 和 Broker Port（分别为 `broker.emqx.io` 和 `8883`），选择 `SSL/TLS` 项，选择 TLSv1.2 协议，勾选 CA signed server certficate，之后选择应用，如下图所示：
 
@@ -138,4 +138,4 @@ function execute(action) {
 
 ![MQTT.fx SSL/TLS 状态](https://static.emqx.net/images/b3efb08a666b6c3dca2485b5fb5b403a.png)
 
-以上就是使用 MQTT.fx 接入 EMQ X Cloud 的简单示例，更多详情可访问 [EMQ X Cloud](https://www.emqx.com/zh/cloud)。
+以上就是使用 MQTT.fx 接入 EMQX Cloud 的简单示例，更多详情可访问 [EMQX Cloud](https://www.emqx.com/zh/cloud)。

@@ -2,7 +2,7 @@
 
 
 
-[emqx_auth_username](https://github.com/emqx/emqx-auth-username/) 它通过比对每个终端的接入的 `username` 和 `password` 与 EMQ X 中存储的是否一致来实现终端接入的控制。其功能逻辑如下：
+[emqx_auth_username](https://github.com/emqx/emqx-auth-username/) 它通过比对每个终端的接入的 `username` 和 `password` 与 EMQX 中存储的是否一致来实现终端接入的控制。其功能逻辑如下：
 
 ![2671557804540_.pic.jpg](https://static.emqx.net/images/1a54b88722d76486f22ebc1215b4e7bb.jpg)
 
@@ -31,7 +31,7 @@ auth.user.password_hash = sha256
 
 #### CLI 命令
 
-在成功启动 `emqx_auth_username` 该插件时，会向 `EMQ X` 注册一些 CLI 命令以在运行时管理 `username`:
+在成功启动 `emqx_auth_username` 该插件时，会向 `EMQX` 注册一些 CLI 命令以在运行时管理 `username`:
 
 ```bash
 $ ./bin/emqx_ctl users

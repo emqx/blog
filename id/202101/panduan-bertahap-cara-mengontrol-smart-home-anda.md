@@ -2,9 +2,9 @@
 
 Teknologi smart home, atau yang juga dikenal sebagai [home automation](https://internetofthingsagenda.techtarget.com/definition/smart-home-or-building) atau *domotics* (dari bahasa Latin "domus" yang berarti rumah), [memberikan si pemilik rumah keamanan](https://internetofthingsagenda.techtarget.com/blog/IoT-Agenda/Why-the-smart-home-needs-to-get-even-smarter), kenyamanan, kemudahan, dan menghemat energi dengan menggunakan perangkat cerdas, seringkali dengan aplikasi smart home di HP atau perangkat lainnya. Sebagai sebuah bagian dari [Internet of Things (IoT)](https://internetofthingsagenda.techtarget.com/definition/Internet-of-Things-IoT), sistem smart home dan perangkat lainnya bekerja sama untuk mendapatkan pemakaian data dan aksi mengotomatisasi lainnya berdasarkan preferensi si pengguna.
 
-Hari ini, Anda akan mempelajari cara menggunakan [EMQ X Cloud](https://www.emqx.com/en/cloud) untuk mengatur dan mengontrol smart home Anda. Artikel ini akan memperlihatkan Anda betapa gampangnya cara men-set up perangkat-perangkat IoT yang kita gunakan sehari-hari, sensor, dan protokol komunikasi yang kemudian dapat Anda terapkan ke lingkungan yang lebih kompleks.
+Hari ini, Anda akan mempelajari cara menggunakan [EMQX Cloud](https://www.emqx.com/en/cloud) untuk mengatur dan mengontrol smart home Anda. Artikel ini akan memperlihatkan Anda betapa gampangnya cara men-set up perangkat-perangkat IoT yang kita gunakan sehari-hari, sensor, dan protokol komunikasi yang kemudian dapat Anda terapkan ke lingkungan yang lebih kompleks.
 
-[![EMQ X Cloud](https://static.emqx.net/images/96bda4a0efbeb977474da57f1c0a8edf.png)](https://www.emqx.com/en/cloud)
+[![EMQX Cloud](https://static.emqx.net/images/96bda4a0efbeb977474da57f1c0a8edf.png)](https://www.emqx.com/en/cloud)
 
 
 
@@ -31,8 +31,8 @@ Dalam pola kode ini, saya akan menjelaskan cara menghubungkan sensor dan aktuato
 2. Set up sebuah smart garden (bebas) dengan perangkat dan sensor NodeMCU.
 3. Kedua perangkat dikoneksikan ke sebuah gateway Raspberry Pi yang akan mengirim dan menerima data sensor.
 4. Smart home memiliki modul Bluetooth yang dapat Anda koneksikan ke HP.
-5. Perangkat dan dashboard tersebut akan berkomunikasi dengan satu sama lainnya melalui EMQ X Cloud.
-6. Dashboard yang dapat dimulai di mesin lokal atau EMQ X Cloud dan dapat dijangkau oleh HP melalui Wi-Fi akan memberi gambaran status smart home dan smart garden.
+5. Perangkat dan dashboard tersebut akan berkomunikasi dengan satu sama lainnya melalui EMQX Cloud.
+6. Dashboard yang dapat dimulai di mesin lokal atau EMQX Cloud dan dapat dijangkau oleh HP melalui Wi-Fi akan memberi gambaran status smart home dan smart garden.
 7. Beberapa notifikias dapat dikirim ke Slack melalui gateway.
 
 

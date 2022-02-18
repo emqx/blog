@@ -1,33 +1,33 @@
-To make our open source projects moving forward in a more innovative, positive, and efficient rapid iterative state, the EMQ X team announced that started to officially adopt the RFC process to collect suggestions from the community and to continuously improve the product's functions.
+To make our open source projects moving forward in a more innovative, positive, and efficient rapid iterative state, the EMQX team announced that started to officially adopt the RFC process to collect suggestions from the community and to continuously improve the product's functions.
 
 > RFC (Request For Comment) is a kind of process to ensure that major feature updates and architectural changes move forward smoothly. 
 
 
 
-We have named the GitHub repositories that manage RFC as EIP, in full: EMQ X Improvement Proposals.
+We have named the GitHub repositories that manage RFC as EIP, in full: EMQX Improvement Proposals.
 
 Project address: [https://github.com/emqx/eip](https://github.com/emqx/eip)
 
  
 
-## Why EMQ X EIP is needed
+## Why EMQX EIP is needed
 
-[EMQ X](https://github.com/emqx/emqx) open source projects have developed to become more powerful, and its project architecture becomes more complex. The design and implementation of some new features may affect the system architecture and existing features to a greater or lesser extent. Therefore, the team needs to carefully discuss and evaluate the new features before planning and implementing them. At the same time, as the user and community groups have grown, we have received more and more suggestions from users for great and innovative features for EMQ X, and the desire to incorporate these ideas into future versions of EMQ X.
+[EMQX](https://github.com/emqx/emqx) open source projects have developed to become more powerful, and its project architecture becomes more complex. The design and implementation of some new features may affect the system architecture and existing features to a greater or lesser extent. Therefore, the team needs to carefully discuss and evaluate the new features before planning and implementing them. At the same time, as the user and community groups have grown, we have received more and more suggestions from users for great and innovative features for EMQX, and the desire to incorporate these ideas into future versions of EMQX.
 
-This is why the EIP project was created. We will provide a platform for you to record the detailed information of your ideas and designs or implementations of new features. When some ideas or updates involve changes to the system architecture, features, APIs, etc. - as mentioned above - that require a discussion and review process before development can begin, the EIP is a more appropriate way to ensure that the EMQ X team and the community reach a consensus.
+This is why the EIP project was created. We will provide a platform for you to record the detailed information of your ideas and designs or implementations of new features. When some ideas or updates involve changes to the system architecture, features, APIs, etc. - as mentioned above - that require a discussion and review process before development can begin, the EIP is a more appropriate way to ensure that the EMQX team and the community reach a consensus.
 
 EIP has the following three characteristics:
 
-- Open Innovation Collaboration. EMQ X is an open source project and we follow the principles of open source projects - not only will we keep the source code open, but we will also open up the design and discussion of features to bring EMQ X closer to the community. Everyone can participate and everyone can learn about it. By having more participants to help, guide and improve the design of EMQ X, more creative ideas can be successfully implemented.
+- Open Innovation Collaboration. EMQX is an open source project and we follow the principles of open source projects - not only will we keep the source code open, but we will also open up the design and discussion of features to bring EMQX closer to the community. Everyone can participate and everyone can learn about it. By having more participants to help, guide and improve the design of EMQX, more creative ideas can be successfully implemented.
 - Ensuring Project Stability. The EIP allows us to try our best to minimize the impact of each iteration on existing users. The ideas, suggestions, and designs incorporated will be carefully reviewed and discussed to ensure that every feature input is reliable and stable to the greatest extent possible, providing the best possible experience for everyone.
-- Tracking Designs. Through the EIP, each feature idea and design will contain a PR and a record of the discussion. When we add, remove or modify a feature, we want users can see that the thoughts and compromises we have made on it through each EIP document and the PR behind it. This is important for the long-term development of EMQ X and for developers who want to learn more about EMQ X.
+- Tracking Designs. Through the EIP, each feature idea and design will contain a PR and a record of the discussion. When we add, remove or modify a feature, we want users can see that the thoughts and compromises we have made on it through each EIP document and the PR behind it. This is important for the long-term development of EMQX and for developers who want to learn more about EMQX.
 
 Besides that, a small number of feature updates, bug fixes, and code changes can still be implemented by following the normal GitHub process of submitting issues, launching Pull Requests and Code Reviews.
 
 ![EIP.png](https://static.emqx.net/images/8599d98ae5ebaaa4ce1c87e7ea2700ea.png)
 
 
-## How to use EMQ X EIP
+## How to use EMQX EIP
 
 All the EIP are in form of Markdown(*.md) files.
 
@@ -36,7 +36,7 @@ Each new EIP will be created by submitting a Pull Request and is discussed and a
 Before submitting your EIP, please read 0000-proposal-template, which is a template for demonstrating the EIP format and is roughly structured as follows:
 
 ```markdown
-# An Example of EMQ X Improvement Proposal
+# An Example of EMQX Improvement Proposal
 
 ## Change log
 
@@ -85,8 +85,8 @@ You can also refer to the EIP documents in the implemented instances. Through re
 
 
 
-## Start your first EMQ X EIP
+## Start your first EMQX EIP
 
-So far, we would like to welcome all readers, users, and developers to actively participate in the EIP project and to suggest new and powerful features and ideas for EMQ X. 
+So far, we would like to welcome all readers, users, and developers to actively participate in the EIP project and to suggest new and powerful features and ideas for EMQX. 
 
-We use the EMQ X EIP to make every voice heard and echoed, and allow EMQ X to become the open source project which all community users will be proud of. A great open source project for the IoT era will be created by us all.
+We use the EMQX EIP to make every voice heard and echoed, and allow EMQX to become the open source project which all community users will be proud of. A great open source project for the IoT era will be created by us all.

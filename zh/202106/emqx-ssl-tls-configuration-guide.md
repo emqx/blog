@@ -1,11 +1,11 @@
 ## 概述
 
-EMQ X 提供了非常完整的 SSL/TLS 能力支持，但由于文档中提及甚少，给用户在 EMQ X 中配置和使用 SSL/TLS 带来了不少困难。本指南着重于客户端连接，优先解答常见的 EMQ X SSL/TLS 配置问题，以帮助用户快速上手 TLS。后续 EMQ X 团队也将在官网文档中不断补齐 SSL/TLS 的相关使用配置指南。
+EMQX 提供了非常完整的 SSL/TLS 能力支持，但由于文档中提及甚少，给用户在 EMQX 中配置和使用 SSL/TLS 带来了不少困难。本指南着重于客户端连接，优先解答常见的 EMQX SSL/TLS 配置问题，以帮助用户快速上手 TLS。后续 EMQX 团队也将在官网文档中不断补齐 SSL/TLS 的相关使用配置指南。
 
 以下是本指南此次涵盖的主题：
 
 - 使用 SSL/TLS 的两种方式
-- 如何在 EMQ X 中启用 SSL/TLS
+- 如何在 EMQX 中启用 SSL/TLS
 - 什么是对端验证
 - 获取证书
 - 单、双向认证的配置使用
@@ -14,14 +14,14 @@ EMQ X 提供了非常完整的 SSL/TLS 能力支持，但由于文档中提及�
 
 对于客户端的 SSL/TLS 连接，通常有以下两种方式：
 
-- 客户端直接与 EMQ X 建立 SSL/TLS 连接。
+- 客户端直接与 EMQX 建立 SSL/TLS 连接。
 - 使用代理或负载均衡（例如 [HAproxy](http://www.haproxy.org/)）对客户端连接进行 [TLS 终结](https://en.wikipedia.org/wiki/TLS_termination_proxy)。
 
 两种方式各有利弊，本指南将重点介绍第一种方式。
 
-## 如何在 EMQ X 中启用 SSL/TLS
+## 如何在 EMQX 中启用 SSL/TLS
 
-如果客户端需要直接与 EMQ X 建立 SSL/TLS 连接，那么需要修改 EMQ X 中 SSL/TLS 相关的配置项，通常包括监听端口、CA 证书文件、服务器证书文件等。
+如果客户端需要直接与 EMQX 建立 SSL/TLS 连接，那么需要修改 EMQX 中 SSL/TLS 相关的配置项，通常包括监听端口、CA 证书文件、服务器证书文件等。
 
 以下是与 SSL/TLS 相关的基本配置项：
 
@@ -37,11 +37,11 @@ EMQ X 提供了非常完整的 SSL/TLS 能力支持，但由于文档中提及�
 | `listener.ssl.<Listener Name>.depth`                | 证书链中对端证书与 CA 证书之间允许存在的中间证书的最大数量。即如果 `depth` 配置为 0，则对端证书必须直接由根 CA 签发。默认为 10。 |
 | `listener.ssl.<Listener Name>.key_password`         | 服务器私钥文件密码。                                         |
 
-EMQ X 随安装包提供了一组默认的 SSL/TLS 证书，并作为默认配置生效，但它们应当仅用于测试验证，用户应当在生产环境中换用可靠 CA 签发的证书。
+EMQX 随安装包提供了一组默认的 SSL/TLS 证书，并作为默认配置生效，但它们应当仅用于测试验证，用户应当在生产环境中换用可靠 CA 签发的证书。
 
-通过注释 `listener.ssl.<Listener Name>` 这个配置项可以快速禁用 SSL/TLS 监听器。相应地，也可以禁用 TCP 监听器来使得 EMQ X 只接受 SSL/TLS 连接。
+通过注释 `listener.ssl.<Listener Name>` 这个配置项可以快速禁用 SSL/TLS 监听器。相应地，也可以禁用 TCP 监听器来使得 EMQX 只接受 SSL/TLS 连接。
 
-通过 EMQ X 提供的 CLI 命令可以验证 SSL/TLS 监听器是否正确运行。执行 `./emqx_ctl listeners`，如果 SSL/TLS 监听器正在运行，那么命令输出将包含以下内容（监听器名称、监听端口等内容视具体配置内容而定）：
+通过 EMQX 提供的 CLI 命令可以验证 SSL/TLS 监听器是否正确运行。执行 `./emqx_ctl listeners`，如果 SSL/TLS 监听器正在运行，那么命令输出将包含以下内容（监听器名称、监听端口等内容视具体配置内容而定）：
 
 ```
 ...
@@ -165,11 +165,11 @@ zhouzb.club 是我申请证书时使用的域名。如果返回 `ok`，就意味
 
 ## 单、双向认证的配置使用
 
-为了便于演示，我们会使用 [EMQ X Broker](https://github.com/emqx/emqx) 作为服务端，在 EMQ X Broker 的控制台中使用 Erlang 的 `ssl:connect/3` 函数作为客户端。以下实例中我们将会用到两个版本的 EMQ X Broker，分别是 [4.2.11](https://github.com/emqx/emqx/releases/tag/v4.2.11) 和 [4.3-rc.5](https://github.com/emqx/emqx/releases/tag/v4.3-rc.5)。使用两个版本的原因是 EMQ X Broker 从 4.3 开始将 OTP 版本升级到了 23，而 OTP 23 中 `certfile` 和 `cacertfile` 参数的行为发生了一些改变。
+为了便于演示，我们会使用 [EMQX Broker](https://github.com/emqx/emqx) 作为服务端，在 EMQX Broker 的控制台中使用 Erlang 的 `ssl:connect/3` 函数作为客户端。以下实例中我们将会用到两个版本的 EMQX Broker，分别是 [4.2.11](https://github.com/emqx/emqx/releases/tag/v4.2.11) 和 [4.3-rc.5](https://github.com/emqx/emqx/releases/tag/v4.3-rc.5)。使用两个版本的原因是 EMQX Broker 从 4.3 开始将 OTP 版本升级到了 23，而 OTP 23 中 `certfile` 和 `cacertfile` 参数的行为发生了一些改变。
 
-在 OTP 23，或者说 EMQ X Broker 的 4.3 之前，`certfile` 指定的文件中只能包含用户证书，`cacertfile` 指定的文件中需要包含中间 CA 和根 CA，握手过程中中间 CA 会跟随用户证书一并发送给对端，用于对端构建与验证证书链。根 CA 不会被发送，它将被用于验证对端的证书链。因此我们也可以得知，如果我们的用户证书由根 CA 直接签发，并且也不需要验证对端的证书链时，可以不用指定 `cacertfile` 参数。
+在 OTP 23，或者说 EMQX Broker 的 4.3 之前，`certfile` 指定的文件中只能包含用户证书，`cacertfile` 指定的文件中需要包含中间 CA 和根 CA，握手过程中中间 CA 会跟随用户证书一并发送给对端，用于对端构建与验证证书链。根 CA 不会被发送，它将被用于验证对端的证书链。因此我们也可以得知，如果我们的用户证书由根 CA 直接签发，并且也不需要验证对端的证书链时，可以不用指定 `cacertfile` 参数。
 
-而从 OTP 23，或者说 EMQ X Broker 的 4.3 开始，`certfile` 指定的文件中可以包含用户证书和中间 CA，它们应该用户证书在前、中间 CA 在后，以正确的顺序排列，并在握手阶段被发送给对端，用于对端构建与验证证书链。`cacertfile` 可以只用来指定受信任的根 CA。
+而从 OTP 23，或者说 EMQX Broker 的 4.3 开始，`certfile` 指定的文件中可以包含用户证书和中间 CA，它们应该用户证书在前、中间 CA 在后，以正确的顺序排列，并在握手阶段被发送给对端，用于对端构建与验证证书链。`cacertfile` 可以只用来指定受信任的根 CA。
 
 `ssl:connect(Host, Port, TLSOptions)` 这个 TLS 客户端连接函数中 `Host` 指定主机名，`Port` 指定端口，`TLSOptions` 则用于指定证书等 TLS 选项，与服务端类似，常用选项如下：
 
@@ -183,7 +183,7 @@ zhouzb.club 是我申请证书时使用的域名。如果返回 `ok`，就意味
 
 ### 单向认证
 
-EMQ X Broker 4.2.11 配置如下：
+EMQX Broker 4.2.11 配置如下：
 
 ```
 # 监听端口我们使用默认的 8883
@@ -196,7 +196,7 @@ listener.ssl.external.cacertfile = etc/certs/zhouzb.club/Apache/1_root_bundle.cr
 listener.ssl.external.verify = verify_none
 ```
 
-EMQ X Broker 4.3-rc.5 配置如下：
+EMQX Broker 4.3-rc.5 配置如下：
 
 ```
 # 监听端口我们使用默认的 8883
@@ -208,7 +208,7 @@ listener.ssl.external.certfile = etc/certs/zhouzb.club/Nginx/1_zhouzb.club_bundl
 listener.ssl.external.verify = verify_none
 ```
 
-启动 EMQ X Broker 并进入控制台：
+启动 EMQX Broker 并进入控制台：
 
 ```shell
 $ ./emqx console
@@ -236,7 +236,7 @@ $ openssl x509 -in 2_zhouzb.club.crt -noout -text
 
 当你输入上面的连接函数并回车之后，看到了类似 `{ok, ...}` 的返回并且没有看到任何错误日志，说明证书验证成功，连接成功。
 
-接下来我们来看一下无法构建完整的证书链时，开启对端验证会发生什么。我们基于 EMQ X Broker 4.2.11 对配置进行一些调整，不再提供中间CA：
+接下来我们来看一下无法构建完整的证书链时，开启对端验证会发生什么。我们基于 EMQX Broker 4.2.11 对配置进行一些调整，不再提供中间CA：
 
 ```
 listener.ssl.external = 8883
@@ -247,17 +247,17 @@ listener.ssl.external.certfile = etc/certs/zhouzb.club/Apache/2_zhouzb.club.crt
 listener.ssl.external.verify = verify_none
 ```
 
-停止 EMQ X Broker，使用 `./emqx console` 再次启动并进入控制台，输入与上面一样的连接函数并回车，我们将看到以下返回：
+停止 EMQX Broker，使用 `./emqx console` 再次启动并进入控制台，输入与上面一样的连接函数并回车，我们将看到以下返回：
 
 ```
 {error,{tls_alert,{unknown_ca,"TLS client: In state wait_cert_cr at ssl_handshake.erl:1887 generated CLIENT ALERT: Fatal - Unknown CA\n"}}}
 ```
 
-因为现在 EMQ X Broker 在握手时只会发送服务端证书了，客户端无法只使用服务端证书来构建出完整的认证路径，因此服务端证书验证失败。
+因为现在 EMQX Broker 在握手时只会发送服务端证书了，客户端无法只使用服务端证书来构建出完整的认证路径，因此服务端证书验证失败。
 
 > 通常出现 “Unknown CA” 或类似内容，都是因为无法构建完整的认证链（中间 CA 缺失有缺失）或者签发对端证书的根 CA 不是来自受信任的 CA 机构。
 
-那么在中间 CA 有缺失的情况下客户端不进行对端验证的话会发生什么呢？我想大家应该都知道此时连接将成功建立。不过，我们还是实际连接一下来验证这个想法。保持上文的 EMQ X Broker 环境不变，我们将在 `ssl:connect/3` 函数中将 `verify` 设为 `verify_none`：
+那么在中间 CA 有缺失的情况下客户端不进行对端验证的话会发生什么呢？我想大家应该都知道此时连接将成功建立。不过，我们还是实际连接一下来验证这个想法。保持上文的 EMQX Broker 环境不变，我们将在 `ssl:connect/3` 函数中将 `verify` 设为 `verify_none`：
 
 ```erlang
 ssl:connect("127.0.0.1", 8883, [{cacertfile, "etc/certs/zhouzb.club/DigiCertGlobalRootCA.crt.pem"},
@@ -273,7 +273,7 @@ ssl:connect("127.0.0.1", 8883, [{cacertfile, "etc/certs/zhouzb.club/DigiCertGlob
 
 为了尽快进入正题，这里我将继续使用服务端证书来充当客户端证书。
 
-EMQ X Broker 4.2.11 配置如下：
+EMQX Broker 4.2.11 配置如下：
 
 ```
 # 监听端口我们使用默认的 8883
@@ -294,7 +294,7 @@ listener.ssl.external.fail_if_no_peer_cert = true
 $ awk '{print $0}' Apache/1_root_bundle.crt DigiCertGlobalRootCA.crt.pem > ca_bundle.crt
 ```
 
-接下来，相同的步骤，启动 EMQ X Broker 并进入控制台，使用 `ssl:connect/3` 函数进行连接。唯一不同的是，现在我们需要在连接时指定客户端证书了：
+接下来，相同的步骤，启动 EMQX Broker 并进入控制台，使用 `ssl:connect/3` 函数进行连接。唯一不同的是，现在我们需要在连接时指定客户端证书了：
 
 ```erlang
 ssl:connect("127.0.0.1", 8883, [{cacertfile, "etc/certs/zhouzb.club/ca_bundle.crt"},
@@ -320,7 +320,7 @@ ssl:connect("127.0.0.1", 8883, [{cacertfile, "etc/certs/zhouzb.club/DigiCertGlob
 
 > 我暂时并未弄清楚 Erlang/OTP 这么设计的原因，但建议通常情况下还是发送完整的中间 CA。
 
-回到正题，在 EMQ X Broker 4.3-rc.5 中我们可以这样配置双向认证，我认为与之前相比，这种配置方式看起来会更加友好：
+回到正题，在 EMQX Broker 4.3-rc.5 中我们可以这样配置双向认证，我认为与之前相比，这种配置方式看起来会更加友好：
 
 ```
 # 监听端口我们使用默认的 8883
@@ -349,9 +349,9 @@ ssl:connect("127.0.0.1", 8883, [{cacertfile, "etc/certs/zhouzb.club/DigiCertGlob
 
 ### 客户端使用不同根 CA 签发的证书
 
-为了尽快进入正题，这里我使用 EMQ X Broker 自带的使用自签发的根 CA 签发的客户端证书 `etc/certs/client-cert.pem` 来进行演示。
+为了尽快进入正题，这里我使用 EMQX Broker 自带的使用自签发的根 CA 签发的客户端证书 `etc/certs/client-cert.pem` 来进行演示。
 
-EMQ X Broker 4.3-rc.5 配置修改如下：
+EMQX Broker 4.3-rc.5 配置修改如下：
 
 ```
 # 监听端口我们使用默认的 8883
@@ -372,7 +372,7 @@ listener.ssl.external.fail_if_no_peer_cert = true
 $ awk '{print $0}' ../cacert.pem DigiCertGlobalRootCA.crt.pem > multi_ca.crt
 ```
 
-配置修改完成后，启动 EMQ X Broker 并进入控制台，依次使用以下两个连接函数来进行连接，它们使用了由不同根 CA 签发的客户端证书：
+配置修改完成后，启动 EMQX Broker 并进入控制台，依次使用以下两个连接函数来进行连接，它们使用了由不同根 CA 签发的客户端证书：
 
 ```erlang
 ssl:connect("127.0.0.1", 8883, [{cacertfile, "etc/certs/zhouzb.club/DigiCertGlobalRootCA.crt.pem"},

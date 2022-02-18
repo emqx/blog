@@ -1,6 +1,6 @@
 The types of IoT devices are complex, and the encoding formats used by various vendors are different. Therefore, when accessing the IoT platform, a unified data format is required, so that applications of equipment on the platform can be managed.
 
-EMQ X Enterprise Edition 3.4.0 provides Schema Registry functionality and provides encoding and decoding capabilities. Schema Registry manages the Schema used for encoding and decoding, processes encoding or decoding requests and returns results. Schema Registry works with a rules engine to adapt device access and rule design for various scenarios.
+EMQX Enterprise Edition 3.4.0 provides Schema Registry functionality and provides encoding and decoding capabilities. Schema Registry manages the Schema used for encoding and decoding, processes encoding or decoding requests and returns results. Schema Registry works with a rules engine to adapt device access and rule design for various scenarios.
 
 ## Data Format
 
@@ -12,7 +12,7 @@ The following image shows an application case for the Schema Registry. Multiple 
 
 ### Binary format support
 
-The built-in Schema Registry data format of EMQ X 3.4.0 includes[Avro](https://avro.apache.org) and  [Protobuf](https://developers.google.com/protocol-buffers/). Avro and Protobuf are Schema-dependent data formats. The encoded data is binary. The internal data format (Map, explained later ) decoded by Schema Registry can be used directly by the rules engine and other plugins. In addition, Schema Registry supports user-defined (3rd-party)  coding and decoding services, which are much closer to business needs through HTTP or TCP callbacks.
+The built-in Schema Registry data format of EMQX 3.4.0 includes[Avro](https://avro.apache.org) and  [Protobuf](https://developers.google.com/protocol-buffers/). Avro and Protobuf are Schema-dependent data formats. The encoded data is binary. The internal data format (Map, explained later ) decoded by Schema Registry can be used directly by the rules engine and other plugins. In addition, Schema Registry supports user-defined (3rd-party)  coding and decoding services, which are much closer to business needs through HTTP or TCP callbacks.
 
 ## Architecture design
 
@@ -42,9 +42,9 @@ A common use case is to use the rule engine to call the encoding and decoding in
 
 ## Coding and Decoding + Rule Engine
 
-The message processing  of EMQ X can be divided into three parts: Messaging, Rule Engine and Data Conversion.
+The message processing  of EMQX can be divided into three parts: Messaging, Rule Engine and Data Conversion.
 
-EMQ X's [PUB/SUB](https://www.emqx.com/en/blog/mqtt-5-introduction-to-publish-subscribe-model) system routes messages to specified topics. Rule engine can flexibly configure business rules of data, match messages according to rules, and then specify corresponding actions. Data format conversion occurs before the rule matching process. The data is first converted to a Map format that can participate in rule matching, and then matched.
+EMQX's [PUB/SUB](https://www.emqx.com/en/blog/mqtt-5-introduction-to-publish-subscribe-model) system routes messages to specified topics. Rule engine can flexibly configure business rules of data, match messages according to rules, and then specify corresponding actions. Data format conversion occurs before the rule matching process. The data is first converted to a Map format that can participate in rule matching, and then matched.
 
 ![SchemaAndRuleEngine.png](https://static.emqx.net/images/80507f270e8aee6b00bb7ce7d2ca2136.png)
 
@@ -101,7 +101,7 @@ For example, republish the message with the "name" of "Shawn" to the topic of "p
 
 #### Create Schema
 
-On the  [Dashboard](http://127.0.0.1:18083/#/schemas/0?oper=create) interface of EMQ X , create a Protobuf Schema with the following parameters:
+On the  [Dashboard](http://127.0.0.1:18083/#/schemas/0?oper=create) interface of EMQX , create a Protobuf Schema with the following parameters:
 
 1. Name: protobuf_person
 
@@ -198,7 +198,7 @@ For example, republish the message with the "name" of "Shawn" to the topic of "a
 
 #### Create Schema
 
-On the  [Dashboard](http://127.0.0.1:18083/#/schemas/0?oper=create) interface of EMQ X , create an Avro Schema with the following parameters:
+On the  [Dashboard](http://127.0.0.1:18083/#/schemas/0?oper=create) interface of EMQX , create an Avro Schema with the following parameters:
 
 1. Name: avro_user
 
@@ -292,7 +292,7 @@ The device issues an arbitrary message to verify that the self-deployed codec se
 
 #### Create Schema
 
-On the  [Dashboard](http://127.0.0.1:18083/#/schemas/0?oper=create) interface of EMQ X , create a 3rd-Party Schema with the following parameters:
+On the  [Dashboard](http://127.0.0.1:18083/#/schemas/0?oper=create) interface of EMQX , create a 3rd-Party Schema with the following parameters:
 
 1. Name: my_parser
 2. Codec type: 3rd-party

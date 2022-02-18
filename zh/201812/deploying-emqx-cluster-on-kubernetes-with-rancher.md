@@ -1,4 +1,4 @@
-本文描述如何通过Rancher2.0部署kubernetes集群，并将EMQ X部署到kubernetes集群上
+本文描述如何通过Rancher2.0部署kubernetes集群，并将EMQX部署到kubernetes集群上
 
 ## 实验环境：
 
@@ -12,7 +12,7 @@ Rancher的安装以及部署kubernetes集群的步骤推荐直接按照快速入
 
 ## 创建Rancher Api密钥
 
-EMQ X通过访问kube-apiserver来实现自动集群功能，在Rancher中，Rancher对kube-apiserver做了一层代理，在访问kube-apiserver的时候必须提供用于向Rancher进行身份验证的API密钥。参考用户手册创建并保存API Key。本实验中创建的Access Key为：`token-dksbl`，Secret Key为：`pshhhf5cp8d5v5x7bzjdm82qfrwgx7f2bzksnr748j42xmbvvklbdz`，组合成的Token为：`token-dksbl:pshhhf5cp8d5v5x7bzjdm82qfrwgx7f2bzksnr748j42xmbvvklbdz`
+EMQX通过访问kube-apiserver来实现自动集群功能，在Rancher中，Rancher对kube-apiserver做了一层代理，在访问kube-apiserver的时候必须提供用于向Rancher进行身份验证的API密钥。参考用户手册创建并保存API Key。本实验中创建的Access Key为：`token-dksbl`，Secret Key为：`pshhhf5cp8d5v5x7bzjdm82qfrwgx7f2bzksnr748j42xmbvvklbdz`，组合成的Token为：`token-dksbl:pshhhf5cp8d5v5x7bzjdm82qfrwgx7f2bzksnr748j42xmbvvklbdz`
 
 ## 下载并配置kubectl
 
@@ -36,7 +36,7 @@ To further debug and diagnose cluster problems, use 'kubectl cluster-info dump'.
 
 ## 访问kube-apiserver
 
-EMQ X通过访问kube-apiserver来实现自动集群，kube-apiserver的地址可以查看`~/.ssh/config`文件或者执行`kubectl cluster-info`获取，本实验中kube-apiserver的地址为：`https://13.125.244.172/k8s/clusters/c-vvgjq`。
+EMQX通过访问kube-apiserver来实现自动集群，kube-apiserver的地址可以查看`~/.ssh/config`文件或者执行`kubectl cluster-info`获取，本实验中kube-apiserver的地址为：`https://13.125.244.172/k8s/clusters/c-vvgjq`。
 
 直接访问kube-apiserver，可以看到会报错需要认证。
 
@@ -52,7 +52,7 @@ $ curl -k -H 'Authorization: Bearer token-dksbl:pshhhf5cp8d5v5x7bzjdm82qfrwgx7f2
 
 ## 编辑emqx.yaml
 
-在Kubernetes 上安装 EMQ X 系列文章之二 ：EMQ X 自动集群一文中分享了EMQ X部署kubernetes集群的yaml文件如下，在Rancher上部署EMQ X集群的话需要稍加改动。
+在Kubernetes 上安装 EMQX 系列文章之二 ：EMQX 自动集群一文中分享了EMQX部署kubernetes集群的yaml文件如下，在Rancher上部署EMQX集群的话需要稍加改动。
 
 ```
 $cat emqx.yaml
@@ -109,7 +109,7 @@ spec:
         tty: true
 ```
 
-EMQ X可以读取`/var/run/secrets/kubernetes.io/serviceaccount/token`文件中的内容组合Authorization认证访问kube-apiserver，所以只需要把Rancher的API Token通过Secret挂载到容器中就可以了。
+EMQX可以读取`/var/run/secrets/kubernetes.io/serviceaccount/token`文件中的内容组合Authorization认证访问kube-apiserver，所以只需要把Rancher的API Token通过Secret挂载到容器中就可以了。
 
 > Secret解决了密码、token、密钥等敏感数据的配置问题，而不需要把这些敏感数据暴露到镜像或者Pod Spec中。Secret可以以Volume或者环境变量的方式使用。
 
@@ -193,7 +193,7 @@ spec:
             readOnly: true
 ```
 
-## 部署EMQ X
+## 部署EMQX
 
 查看修改后的emqx.yaml
 
@@ -271,7 +271,7 @@ spec:
             readOnly: true
 ```
 
-部署EMQ X
+部署EMQX
 
 ```
 $ kubectl create -f emqx.yamlsecret/emqx-secret created
@@ -293,9 +293,9 @@ emqx-67b5fcf4d-rb7m6       1/1     Running   0          36s
 $ kubectl exec emqx-67b5fcf4d-gwzfn /opt/emqx/bin/emqx_ctl cluster statusCluster status: [{running_nodes,['emqx@10.42.1.24','emqx@10.42.2.19']}]
 ```
 
-### 使用Rancher Dashboard部署EMQ X（可选）
+### 使用Rancher Dashboard部署EMQX（可选）
 
-删除刚刚部署的EMQ X
+删除刚刚部署的EMQX
 
 ```
 $ kubectl delete -f emqx.yamlsecret "emqx-secret" deleted

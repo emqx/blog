@@ -1,6 +1,6 @@
 物联网设备终端种类繁杂，各厂商使用的编码格式各异，所以在接入物联网平台的时候就产生了统一数据格式的需求，以便平台之上的应用进行设备管理。
 
-[EMQ X 企业版](https://www.emqx.com/zh/products/emqx) 3.4.0 提供了 Schema Registry 功能，提供编解码能力。Schema Registry 管理编解码使用的 Schema、处理编码或解码请求并返回结果。Schema Registry 配合规则引擎，可适配各种场景的设备接入和规则设计。
+[EMQX 企业版](https://www.emqx.com/zh/products/emqx) 3.4.0 提供了 Schema Registry 功能，提供编解码能力。Schema Registry 管理编解码使用的 Schema、处理编码或解码请求并返回结果。Schema Registry 配合规则引擎，可适配各种场景的设备接入和规则设计。
 
 ## 数据格式
 
@@ -11,7 +11,7 @@
 
 ### 二进制格式支持
 
-EMQ X 3.4.0 内置的 Schema Registry 数据格式包括 [Avro](https://avro.apache.org) 和 [Protobuf](https://developers.google.com/protocol-buffers/)。Avro 和 Protobuf 是依赖 Schema 的数据格式，编码后的数据为二进制，使用 Schema Registry 解码后的内部数据格式(Map，稍后讲解) 可直接被规则引擎和其他插件使用。此外 Schema Registry 支持用户自定义的 (3rd-party) 编解码服务，通过 HTTP 或 TCP 回调的方式，进行更加贴近业务需求的编解码。
+EMQX 3.4.0 内置的 Schema Registry 数据格式包括 [Avro](https://avro.apache.org) 和 [Protobuf](https://developers.google.com/protocol-buffers/)。Avro 和 Protobuf 是依赖 Schema 的数据格式，编码后的数据为二进制，使用 Schema Registry 解码后的内部数据格式(Map，稍后讲解) 可直接被规则引擎和其他插件使用。此外 Schema Registry 支持用户自定义的 (3rd-party) 编解码服务，通过 HTTP 或 TCP 回调的方式，进行更加贴近业务需求的编解码。
 
 ## 架构设计
 
@@ -41,9 +41,9 @@ schema_decode(SchemaID, RawData) -> Data
 
 ## 编解码 + 规则引擎
 
-EMQ X 的消息处理层面可分为消息路由(Messaging)、规则引擎(Rule Engine)、数据格式转换(Data Conversion) 三个部分。
+EMQX 的消息处理层面可分为消息路由(Messaging)、规则引擎(Rule Engine)、数据格式转换(Data Conversion) 三个部分。
 
-EMQ X 的 PUB/SUB 系统将消息路由到指定的主题。规则引擎可以灵活地配置数据的业务规则，按规则匹配消息，然后指定相应动作。数据格式转换发生在规则匹配的过程之前，先将数据转换为可参与规则匹配的 Map 格式，然后进行匹配。
+EMQX 的 PUB/SUB 系统将消息路由到指定的主题。规则引擎可以灵活地配置数据的业务规则，按规则匹配消息，然后指定相应动作。数据格式转换发生在规则匹配的过程之前，先将数据转换为可参与规则匹配的 Map 格式，然后进行匹配。
 
 ![3.png](https://static.emqx.net/images/984e2382dc2382604afb9afb76c82345.png)
 
@@ -98,7 +98,7 @@ SELECT json_decode(payload) AS p FROM "message.publish" WHERE p.x = p.y, topic ~
 
 #### 创建 Schema
 
-在 EMQ X 的 [Dashboard](http://127.0.0.1:18083/#/schemas/0?oper=create) 界面，使用下面的参数创建一个 Protobuf Schema:
+在 EMQX 的 [Dashboard](http://127.0.0.1:18083/#/schemas/0?oper=create) 界面，使用下面的参数创建一个 Protobuf Schema:
 
 1. 名称：protobuf_person
 
@@ -195,7 +195,7 @@ t/1 b'\n\x05Shawn\x10\x01\x1a\rliuxy@emqx.io'
 
 #### 创建 Schema
 
-在 EMQ X 的 [Dashboard](http://127.0.0.1:18083/#/schemas/0?oper=create) 界面，使用下面的参数创建一个 Avro Schema:
+在 EMQX 的 [Dashboard](http://127.0.0.1:18083/#/schemas/0?oper=create) 界面，使用下面的参数创建一个 Avro Schema:
 
 1. 名称：avro_user
 
@@ -289,7 +289,7 @@ publish to topic: t/1, payload: b'\nShawn\x00\xb4\n\x00\x06red'
 
 #### 创建 Schema
 
-在 EMQ X 的 [Dashboard](http://127.0.0.1:18083/#/schemas/0?oper=create) 界面，使用下面的参数创建一个 3rd-Party Schema:
+在 EMQX 的 [Dashboard](http://127.0.0.1:18083/#/schemas/0?oper=create) 界面，使用下面的参数创建一个 3rd-Party Schema:
 
 1. 名称：my_parser
 2. 编解码类型：3rd-party

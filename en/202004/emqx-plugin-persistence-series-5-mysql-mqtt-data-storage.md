@@ -8,7 +8,7 @@ Readers can refer to MySQL  [Official Documentation](https://www.mysql.com/downl
 
 To facilitate management operations, you can download and use the official free graphical management software  [MySQL Workbench](https://dev.mysql.com/downloads/workbench/).
 
-> If the readers is using MySQL 8.0 or  above version , they need follow [ EMQ X unable to connect MySQL 8.0](https://docs.emqx.io/faq/v3/cn/errors.html#emq-x-无法连接-mysql-80)Tutorial to specially configure MySQL.
+> If the readers is using MySQL 8.0 or  above version , they need follow [ EMQX unable to connect MySQL 8.0](https://docs.emqx.io/faq/v3/cn/errors.html#emq-x-无法连接-mysql-80)Tutorial to specially configure MySQL.
 
 
 
@@ -113,9 +113,9 @@ CREATE TABLE `mqtt_acked` (
 
 
 
-## Configure EMQ X server
+## Configure EMQX server
 
-For [EMQ X](https://www.emqx.com/en) MQTT broker installed via RPM, MySQL related configuration files are located in `/etc/emqx/plugins/emqx_backend_mysql.conf`. This article only tests the persistence function of MySQL. Most of the configuration does not need to be changed. You only need to fill in the user name, password, and database:
+For [EMQX](https://www.emqx.com/en) MQTT broker installed via RPM, MySQL related configuration files are located in `/etc/emqx/plugins/emqx_backend_mysql.conf`. This article only tests the persistence function of MySQL. Most of the configuration does not need to be changed. You only need to fill in the user name, password, and database:
 
 ```bash
 backend.mysql.server = 127.0.0.1:3306
@@ -138,7 +138,7 @@ emqx_ctl plugins load emqx_backend_mysql
 
 ### Start from the console
 
-Find the  **emqx_backend_mysql** plugin in the  **Plugins** page of EMQ X Management Console, and click **Start**.
+Find the  **emqx_backend_mysql** plugin in the  **Plugins** page of EMQX Management Console, and click **Start**.
 
 ### Start from REST API 
 
@@ -169,7 +169,7 @@ backend.mysql.hook.client.disconnected.1 = {"action": {"function": "on_client_di
 
 ### Example
 
-Opens `http://127.0.0.1:18083` EMQ X management console through the browser, create a new client connection in **Tools ->  Websocket**, specify clientid as sub_client, click on **connect**, and disconnect manually after successful connection:
+Opens `http://127.0.0.1:18083` EMQX management console through the browser, create a new client connection in **Tools ->  Websocket**, specify clientid as sub_client, click on **connect**, and disconnect manually after successful connection:
 
 ![image20181116105333637.png](https://static.emqx.net/images/7774360e24f62fc2c3dc996f7a1c7b1e.png)
 
@@ -207,7 +207,7 @@ insert into mqtt_sub(clientid, topic, qos) values("sub_client", "sub_client/upst
 insert into mqtt_sub(clientid, topic, qos) values("sub_client", "sub_client/downlink", 1);
 ```
 
-2. In the EMQ X management console **WebSocket** page, create a new client connection with clientid `sub_client`. Switch to **subscription** page, and it can be seen that the current client automatically subscribes to the two QoS 1 topics of ` sub_client/upstream` and `sub_client/downlink`:
+2. In the EMQX management console **WebSocket** page, create a new client connection with clientid `sub_client`. Switch to **subscription** page, and it can be seen that the current client automatically subscribes to the two QoS 1 topics of ` sub_client/upstream` and `sub_client/downlink`:
 
 ![WechatIMG2692.png](https://static.emqx.net/images/80baf3902be1d070a619caf35da10b33.png)
 
@@ -235,7 +235,7 @@ backend.mysql.hook.message.publish.1     = {"topic": "#", "action": {"function":
 
 ### Example
 
-In the EMQ X management console **WebSocket** page, publish multiple messages to the topic ` upstream_topic`, and EMQ X persists the message list to the `mqtt_msg` table:
+In the EMQX management console **WebSocket** page, publish multiple messages to the topic ` upstream_topic`, and EMQX persists the message list to the `mqtt_msg` table:
 
 ![image20181119110712267.png](https://static.emqx.net/images/4dd20d779080afab2edf46a9421ee341.png)
 
@@ -268,7 +268,7 @@ backend.mysql.hook.message.publish.3     = {"topic": "#", "action": {"function":
 
 ### Example
 
-After establishing a connection on the **WebSocket** page of the EMQ X management console, publish the message and select **Retain**:
+After establishing a connection on the **WebSocket** page of the EMQX management console, publish the message and select **Retain**:
 
 ![WechatIMG2691.png](https://static.emqx.net/images/85f3ecea4d45b295e72fa9d51c160917.png)
 
@@ -276,13 +276,13 @@ After establishing a connection on the **WebSocket** page of the EMQ X managemen
 
 **Publish（Message is not empty）**
 
-When a non-empty retain message is published, EMQ X will use topic as the unique key to persist the message to the `mqtt_retain` table. Different retain messages will be published under the same topic. Only the last message will be persisted:
+When a non-empty retain message is published, EMQX will use topic as the unique key to persist the message to the `mqtt_retain` table. Different retain messages will be published under the same topic. Only the last message will be persisted:
 
 ![image20181119164153931.png](https://static.emqx.net/images/5b0f0c250f7d518cb2d16e8cbbe0b424.png)
 
 **Subscribe**
 
-After the client subscribes to the retain topic, EMQ X will query the `mqtt_retain` data table to perform the post operation of retain message .
+After the client subscribes to the retain topic, EMQX will query the `mqtt_retain` data table to perform the post operation of retain message .
 
 
 
@@ -294,7 +294,7 @@ In the [MQTT protocol](https://www.emqx.com/en/mqtt), publishing an empty retain
 
 ## Message acknowledgement persistence
 
-When message acknowledgement (ACK) persistence is enabled and a MQTT client subscribes to QoS 1 and QoS 2 topics, EMQ X will initialize the ACK record in the database with clientid + topic as the unique key.
+When message acknowledgement (ACK) persistence is enabled and a MQTT client subscribes to QoS 1 and QoS 2 topics, EMQX will initialize the ACK record in the database with clientid + topic as the unique key.
 
 ### Configuration item
 
@@ -316,7 +316,7 @@ backend.mysql.hook.session.unsubscribed.1= {"topic": "#", "action": {"sql": ["de
 
 ### Example
 
-After establishing a connection in the EMQ X Management Console **WebSocket** page, subscribe to topics with QoS> 0:
+After establishing a connection in the EMQX Management Console **WebSocket** page, subscribe to topics with QoS> 0:
 
 ![WechatIMG2693.png](https://static.emqx.net/images/b9bd87a9a0908f4bb049886f657208e1.png)
 

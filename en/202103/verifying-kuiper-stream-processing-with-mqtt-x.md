@@ -1,4 +1,4 @@
-This article will use the MQTT X scripts and timing function to simulate reporting temperature and humidity data. EMQ X Edge acts as the messaging middleware to forward messages, and EMQ X Kuiper performs receiving messages and processing rules. Finally, the processed data will be sent to MQTT X via EMQ X Edge.
+This article will use the MQTT X scripts and timing function to simulate reporting temperature and humidity data. EMQX Edge acts as the messaging middleware to forward messages, and EMQX Kuiper performs receiving messages and processing rules. Finally, the processed data will be sent to MQTT X via EMQX Edge.
 
 ![mqttxedgekuiper.png](https://static.emqx.net/images/9f96444f39724baa8ed5ee6d814618ed.png)
 
@@ -24,7 +24,7 @@ $ docker run -p 9081:9081 -d --name kuiper emqx/kuiper:1.0.2
 
 ### Kuiper-manager
 
-This article will use Kuiper-manager to visually manage and use EMQ X Kuiper. Kuiper-manager is a Web management console that can be used to manage Kuiper nodes, streams, rules, plugins, etc.
+This article will use Kuiper-manager to visually manage and use EMQX Kuiper. Kuiper-manager is a Web management console that can be used to manage Kuiper nodes, streams, rules, plugins, etc.
 
 > Version: v1.0.2
 
@@ -38,9 +38,9 @@ $ docker pull emqx/kuiper-manager:1.0.2
 $ docker run -p 9082:9082 -d emqx/kuiper-manager:1.0.2
 ```
 
-### EMQ X Edge
+### EMQX Edge
 
-[EMQ X Edge](https://www.emqx.com/en/products/emqx)  is a lightweight multi-protocol IoT edge message middleware that supports being deployed on resource-limited IoT edge hardware. 
+[EMQX Edge](https://www.emqx.com/en/products/emqx)  is a lightweight multi-protocol IoT edge message middleware that supports being deployed on resource-limited IoT edge hardware. 
 
 > Version: v4.2.4
 
@@ -100,7 +100,7 @@ Once you are on the Kuiper instance page, you will go to the Tab page of streams
 
 5. Select `Configuration Group`, and the configuration group is the configuration information defined under the stream type, for example, the default MQTT configuration group `servers` information is `['tcp://127.0.0.1:1883']`. You can customize this configuration information by clicking on the `Source Configuration` button above to go to the page to configure, or you can go to the `etc` directory to modify the configuration file. Here we select the reconfigured `demo_conf` configuration group.
 
-   > Note: If the MQTT Broker used is the EMQ X Edge initiated by Docker, the address of Servers needs to be changed to the IP address within the Docker container 
+   > Note: If the MQTT Broker used is the EMQX Edge initiated by Docker, the address of Servers needs to be changed to the IP address within the Docker container 
 
 6. Select `Stream Format`, which will be chosen as `json` finally.
 
@@ -131,7 +131,7 @@ Click on the Tab item of the rule to go to the list of rules page. We click on t
 
 3. Select the `Action` of the added rule, which is the Sink action group, the data can be multi-selected, and Sink is the target of the output when the rule is executed. Here we are still using MQTT and forwarding the data that has executed by the rule via MQTT. After the selection is complete, you can enter the configuration information for the MQTT Sink. In this article, we will only configure the address of the MQTT Broker and the `Topic` information, and `Topic` is the topic of the received message.
 
-   > Note: If the MQTT Broker used is the EMQ X Edge initiated by Docker, the address of Broker needs to be filled as the IP address within the Docker container
+   > Note: If the MQTT Broker used is the EMQX Edge initiated by Docker, the address of Broker needs to be filled as the IP address within the Docker container
 
 4. Set `Options`, and part of options are optional and all options have default values. If you wish to change them, you can do so by referring to the [Kuiper documentation](https://docs.emqx.cn/cn/kuiper/latest/rules/overview.html#%E9%80%89%E9%A1%B9).
 
@@ -158,7 +158,7 @@ After clicking the `Submit` button, we have successfully created a rule. So far,
 
 ### The use of MQTT X
 
-Once the download and installation is complete, we open MQTT X and create a new connection called `edge1` to an EMQ X Edge with the same configuration as the Kuiper Source. After testing the connection successfully, we go to the `Scripts` page and use the example script provided below to generate the simulation data.
+Once the download and installation is complete, we open MQTT X and create a new connection called `edge1` to an EMQX Edge with the same configuration as the Kuiper Source. After testing the connection successfully, we go to the `Scripts` page and use the example script provided below to generate the simulation data.
 
 ```javascript
 /**
@@ -190,7 +190,7 @@ Testing found that the simulated data was successful, and we went to the connect
 
 ![mqttxtimed.png](https://static.emqx.net/images/6358d2d739f455bb36670269eb3e2c52.png)
 
-At this point, we create a new connection again called `edge2` to the EMQ X Edge with the same configuration as the Kuiper Sink and subscribe to the `Topic` configured in the MQTT Sink. In this case, we subscribe to the `/kuiper/rule` topic, to receive data processed by Kuiper.
+At this point, we create a new connection again called `edge2` to the EMQX Edge with the same configuration as the Kuiper Sink and subscribe to the `Topic` configured in the MQTT Sink. In this case, we subscribe to the `/kuiper/rule` topic, to receive data processed by Kuiper.
 
 ![mqttxrule.png](https://static.emqx.net/images/d3d9bc645f87f0bfe5d63a6c2b6ee62a.png)
 
@@ -214,6 +214,6 @@ In addition to viewing the information of data processed by Kuiper rules via the
 
 This article completes an easy tutorial on using the MQTT X client to verify the function of Kuiper stream processing. Kuiper can be used in various IoT edge scenarios. The system response speed can be improved, network bandwidth costs and storage costs can be saved, and system security can be improved via the processing of Kuiper at the edge.
 
-In addition to the MQTT Source and MQTT Sink exemplified in the article, Kuiper has many diverse Source and Sink configurations built in and includes the ability to integrate with EdgeX Foundry, KubeEdge, EMQ X Edge, etc. Rule SQL also support for 60+ common functions, provide extension points available to extend custom functions. A powerful plugin system is provided that is highly extensible.
+In addition to the MQTT Source and MQTT Sink exemplified in the article, Kuiper has many diverse Source and Sink configurations built in and includes the ability to integrate with EdgeX Foundry, KubeEdge, EMQX Edge, etc. Rule SQL also support for 60+ common functions, provide extension points available to extend custom functions. A powerful plugin system is provided that is highly extensible.
 
-The three projects used in this article are all fully open source. You can go to GitHub ([EMQ X Kuiper](https://github.com/emqx/kuiper), [EMQ X Edge](https://github.com/emqx/emqx), [MQTTX]( https://github.com/emqx/MQTTX)) to submit problems you encountered during use, or to Fork our projects and submit revised PRs to us, which we will review and address promptly. We would also like to thank all the users in the community for their contributions and feedback.
+The three projects used in this article are all fully open source. You can go to GitHub ([EMQX Kuiper](https://github.com/emqx/kuiper), [EMQX Edge](https://github.com/emqx/emqx), [MQTTX]( https://github.com/emqx/MQTTX)) to submit problems you encountered during use, or to Fork our projects and submit revised PRs to us, which we will review and address promptly. We would also like to thank all the users in the community for their contributions and feedback.

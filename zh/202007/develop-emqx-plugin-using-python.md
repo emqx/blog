@@ -1,4 +1,4 @@
-从 v4.1 版本开始，EMQ X [MQTT 服务器](https://www.emqx.com/zh/products/emqx) 提供了专门的多语言支持插件 [emqx_extension_hook](https://github.com/emqx/emqx-extension-hook) ，现已支持使用其他编程语言来处理 EMQ X 中的钩子事件，开发者可以使用 Python 或者 Java 快速开发自己的插件，在官方功能的基础上进行扩展，满足自己的业务场景。例如：
+从 v4.1 版本开始，EMQX [MQTT 服务器](https://www.emqx.com/zh/products/emqx) 提供了专门的多语言支持插件 [emqx_extension_hook](https://github.com/emqx/emqx-extension-hook) ，现已支持使用其他编程语言来处理 EMQX 中的钩子事件，开发者可以使用 Python 或者 Java 快速开发自己的插件，在官方功能的基础上进行扩展，满足自己的业务场景。例如：
 
 - 验证某客户端的登录权限：客户端连接时触发对应函数，通过参数获取客户端信息后通过读取数据库、比对等操作判定是否有登录权限
 - 记录客户端在线状态与上下线历史：客户端状态变动时触发对应函数，通过参数获取客户端信息，改写数据库中客户端在线状态
@@ -9,7 +9,7 @@
 
 
 
-Python 和 Java 驱动基于 [Erlang/OTP-Port](https://erlang.org/doc/tutorial/c_port.html) 进程间通信实现，本身具有非常高的吞吐性能，本文以 Python 扩展为例介绍 EMQ X 跨语言扩展使用方式。
+Python 和 Java 驱动基于 [Erlang/OTP-Port](https://erlang.org/doc/tutorial/c_port.html) 进程间通信实现，本身具有非常高的吞吐性能，本文以 Python 扩展为例介绍 EMQX 跨语言扩展使用方式。
 
 ![upeb67488ae758908b02ac8567c37fcf2d0a9.png](https://static.emqx.net/images/c8e437088e4eee7e6947823a407ddd51.png)
 
@@ -18,18 +18,18 @@ Python 和 Java 驱动基于 [Erlang/OTP-Port](https://erlang.org/doc/tutorial/c
 
 
 
-该示例在 EMQ X Broker v4.1.x 中使用。如果在更高的 EMQ X 版本中使用该示例，请检查 EMQ X Broker 的发布日志，确保是否存在兼容性的改动。
+该示例在 EMQX Broker v4.1.x 中使用。如果在更高的 EMQX 版本中使用该示例，请检查 EMQX Broker 的发布日志，确保是否存在兼容性的改动。
 
 ### 要求
 
-- EMQ X 所在服务器需安装 Python 3.6 以上版本
+- EMQX 所在服务器需安装 Python 3.6 以上版本
 - 可执行的命令 `python3`
 
 ### 使用步骤
 
 1. 验证 Python 环境
 2. 通过 pip 安装 [Python SDK](https://pypi.org/project/emqx-extension-sdk/)
-3. 调整 EMQ X 配置，确保相关配置项正确指向 Python 项目
+3. 调整 EMQX 配置，确保相关配置项正确指向 Python 项目
 4. 引入 SDK 编写代码
 
 
@@ -165,7 +165,7 @@ def deinit():
 
 ## 进阶开发
 
-目前 EMQ X Python  扩展  SDK 是开源的，如果对可控性、性能要求更高，或需要使用 Python 2.7 版本的运行环境，欢迎贡献代码或基于原始示例进行开发：
+目前 EMQX Python  扩展  SDK 是开源的，如果对可控性、性能要求更高，或需要使用 Python 2.7 版本的运行环境，欢迎贡献代码或基于原始示例进行开发：
 
 - 代码仓库：[emqx-extension-python-sdk](https://github.com/emqx/emqx-extension-python-sdk)
 - Python 原始示例，可使用该示例自行封装：[emqx-extension-hook main.py](https://github.com/emqx/emqx-extension-hook/blob/v4.1.1/test/scripts/main.py)

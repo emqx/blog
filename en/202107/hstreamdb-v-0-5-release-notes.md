@@ -89,7 +89,7 @@ In subsequent releases, we will continue to work towards the following goals.
 - Implement more connectors to support other popular systems
 
 
-We also plan to complete the integration with [EMQ X](https://www.emqx.com/en/products/emqx) in the next phase, which will validate the HStreamDB functionality and present a solution tailored to IoT application development.
+We also plan to complete the integration with [EMQX](https://www.emqx.com/en/products/emqx) in the next phase, which will validate the HStreamDB functionality and present a solution tailored to IoT application development.
 
 
 ## Future outlook

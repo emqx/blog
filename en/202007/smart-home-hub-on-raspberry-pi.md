@@ -1,8 +1,8 @@
 With the development of IoT technology, the smart home system has been further developed which uses many IoT devices (such as temperature and humidity sensors) to real-time monitor the internal status of the home. With the increasing number of **smart home devices**, a smart home hub provides a bridge for allowing your various devices to "talk" to each other. The user is not always willing to upload the data to the cloud for processing because of the privacy of home data.
 
-We will use [Raspberry Pi](https://www.raspberrypi.org) + [EMQ X Edge](https://www.emqx.com/en/products/emqx) + [EMQ X Kuiper](https://github.com/lf-edge/ekuiper) to build the smart home hub for implementing the edge computing of smart home device data and reducing leaking the private home data.
+We will use [Raspberry Pi](https://www.raspberrypi.org) + [EMQX Edge](https://www.emqx.com/en/products/emqx) + [EMQX Kuiper](https://github.com/lf-edge/ekuiper) to build the smart home hub for implementing the edge computing of smart home device data and reducing leaking the private home data.
 
-In this article, we will use the BH1750FVI light intensity sensor to collect the light intensity data of home, EMQ X Kuiper to analyze and process the light intensity data, and control the LED light according to pre-defined rules.
+In this article, we will use the BH1750FVI light intensity sensor to collect the light intensity data of home, EMQX Kuiper to analyze and process the light intensity data, and control the LED light according to pre-defined rules.
 
 
 
@@ -12,15 +12,15 @@ In this article, we will use the BH1750FVI light intensity sensor to collect the
 
 The [Raspberry Pi 3 Model B+](https://www.raspberrypi.org/products/raspberry-pi-3-model-b-plus/) is the latest product in the Raspberry Pi 3 range, boasting an updated 64-bit quad core processor running at 1.4GHz with built-in metal heatsink, dual-band 2.4GHz and 5GHz wireless LAN, faster (300 mbps) Ethernet, and PoE capability via a separate PoE HAT.
 
-### EMQ X Edge
+### EMQX Edge
 
 The communicating protocols between smart home devices are **MQTT**, **Wi-Fi**, **Bluetooth**, etc. The [MQTT protocol](https://www.emqx.com/en/mqtt) is an IoT communicating protocol based on publish/subscribe model, which is simple and easy to implement, supporting QoS and with the small packet. In this article, we will use the MQTT protocol as the communicating protocol between smart home devices.
 
-Because of the limited RAM and processing power of raspberry Pi we choose the [EMQ X Edge](https://www.emqx.com/en/products/emqx) open-sourced by [EMQ](https://www.emqx.com/en) as the MQTT broker. EMQ X Edge is the lightweight IoT edge caculating message middleware and supports the IoT edge hardware.
+Because of the limited RAM and processing power of raspberry Pi we choose the [EMQX Edge](https://www.emqx.com/en/products/emqx) open-sourced by [EMQ](https://www.emqx.com/en) as the MQTT broker. EMQX Edge is the lightweight IoT edge caculating message middleware and supports the IoT edge hardware.
 
-### EMQ X Kuiper
+### EMQX Kuiper
 
-Because the format of data transmission between smart home devices is different and the data is volatile, we need to process the data reported by the device. In this article, we will use the [EMQ X Kuiper](https://github.com/lf-edge/ekuiper) open-sourced by [EMQ](https://www.emqx.com/en) to do the edge computing of the data of the smart home device. EMQ X Kuiper is a lightweight edge streaming message processing engine based on SQL. It can run on edge devices with limited resources.
+Because the format of data transmission between smart home devices is different and the data is volatile, we need to process the data reported by the device. In this article, we will use the [EMQX Kuiper](https://github.com/lf-edge/ekuiper) open-sourced by [EMQ](https://www.emqx.com/en) to do the edge computing of the data of the smart home device. EMQX Kuiper is a lightweight edge streaming message processing engine based on SQL. It can run on edge devices with limited resources.
 
 Through real-time analyze the various data of the smart home device, can implement managing the device's status and controlling device.
 
@@ -54,7 +54,7 @@ We use **raspbian 8** as Raspberry Pi operating system and choose **python 3** a
 mkdir ~/smart-home-hubs
 ```
 
-### Installation and running of EMQ X Edge
+### Installation and running of EMQX Edge
 
 ```bash
 $ cd ~/smart-home-hubs
@@ -62,11 +62,11 @@ $ cd ~/smart-home-hubs
 $ wget https://www.emqx.com/en/downloads/edge/v4.1.0/emqx-edge-raspbian8-v4.1.0.zip
 $ unzip emqx-edge-raspbian8-v4.1.0.zip
 $ cd ./emqx
-# Running EMQ X Edge
+# Running EMQX Edge
 $ ./bin/emqx start
 ```
 
-### Installation and running of EMQ X Kuiper
+### Installation and running of EMQX Kuiper
 
 ```bash
 $ cd ~/smart-home-hubs
@@ -77,7 +77,7 @@ $ mv kuiper-0.4.2-linux-armv7l ./kuiper
 $ cd ./kuiper
 # Create rules directory for storing rule files
 $ mkdir ./rules
-# Running EMQ X Kuiper
+# Running EMQX Kuiper
 $ ./bin/server
 ```
 
@@ -146,9 +146,9 @@ if __name__ == "__main__":
 
 ```
 
-### Configuring the streaming rule of  EMQ X Kuiper
+### Configuring the streaming rule of  EMQX Kuiper
 
-We will create stream `smartHomeHubs` in the EMQ X Kuiper and configure rules to real-time analyze light intensity data to implement control of LED lights.
+We will create stream `smartHomeHubs` in the EMQX Kuiper and configure rules to real-time analyze light intensity data to implement control of LED lights.
 
 In this article, we will calculate the average value of light intensity. When the average light intensity **lasts 5 seconds** is less than 55, turn on LED (if greater than, then turn off LED).
 
@@ -217,7 +217,7 @@ In this article, we will calculate the average value of light intensity. When th
 
 ### Control LED
 
-Writing code to connect to the EMQ X Edge and subscribe to the topic  **smartHomeHubs/led**. Monitor the content of subscribed MQTT messages, turn on the LED when the status is **on**, and turn off the LED when the status is **off**.
+Writing code to connect to the EMQX Edge and subscribe to the topic  **smartHomeHubs/led**. Monitor the content of subscribed MQTT messages, turn on the LED when the status is **on**, and turn off the LED when the status is **off**.
 
 ```python
 # led.py
@@ -296,8 +296,8 @@ if __name__ == "__main__":
 
 ## Summary
 
-So far, we successfully built the smart home hub based on [Raspberry Pi](https://www.raspberrypi.org) + [EMQ X Edge](https://www.emqx.com/en/products/emqx) + [EMQ X Kuiper](https://github.com/lf-edge/ekuiper).
+So far, we successfully built the smart home hub based on [Raspberry Pi](https://www.raspberrypi.org) + [EMQX Edge](https://www.emqx.com/en/products/emqx) + [EMQX Kuiper](https://github.com/lf-edge/ekuiper).
 
-We use Raspberry Pi to provide a rich external communication interface, EMQ X Edge to provide the communication function between the devices, EMQ X Kuiper to process and analyze the data of devices.
+We use Raspberry Pi to provide a rich external communication interface, EMQX Edge to provide the communication function between the devices, EMQX Kuiper to process and analyze the data of devices.
 
 After that, we use a light sensor to obtain the light intensity, control turn on or turn off the LED through the light intensity. In the whole process, all data is processed and analyzed locally, reducing the risk of family private data leakage.!
