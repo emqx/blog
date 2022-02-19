@@ -99,4 +99,4 @@ EMQ is committed to providing a messaging engine of the Internet of Everything f
 
 ## About EMQ Technologies Co., Ltd
 
-EMQ, founded in 2017,  is an [open-source data infrastructure software provider for IoT](https://www.emqx.com/en). EMQ delivers the world's leading [open-source MQTT message broker](https://www.emqx.io) and [stream processing database](https://www.emqx.com/en/products/hstreamdb), provides a one-stop solution for real-time [IoT data movement](https://www.emqx.com/en/solutions/by-technologies/move), stream processing, and data analytics.
+EMQ, founded in 2017,  is an [open-source data infrastructure software provider for IoT](https://www.emqx.com/en). EMQ delivers the world's leading [open-source MQTT message broker](https://www.emqx.io) and [stream processing database](https://www.emqx.com/en/products/hstreamdb), provides a one-stop solution for real-time [IoT data movement](https://www.emqx.com/en/solutions/reliable-iot-messaging), stream processing, and data analytics.
