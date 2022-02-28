@@ -161,6 +161,13 @@ listener.ssl.external.cacertfile = etc/certs/ca.pem
 ##
 ## Value: verify_peer | verify_none
 listener.ssl.external.verify = verify_peer
+
+## Used together with {verify, verify_peer} by an SSL server. If set to true,
+## the server fails if the client does not have a certificate to send, that is,
+## sends an empty certificate.
+##
+## Value: true | false
+listener.ssl.external.fail_if_no_peer_cert = true
 ```
 
 ### MQTT 连接测试
