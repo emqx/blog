@@ -1,4 +1,4 @@
-本月，在隆冬季节和春节假期 NanoMQ-NanoSDK 项目也没有放慢更新的步伐。新发布的0.6.2版本中，我们进一步完善了 [NanoMQ](https://nanomq.io/zh) 的命令行工具，为其增加了 TLS 端口支持，同时进一步优化重构了 NanoSDK。
+本月，在隆冬季节和春节假期 NanoMQ-NanoSDK 项目也没有放慢更新的步伐。新发布的 0.6.3 版本中，我们进一步完善了 [NanoMQ](https://nanomq.io/zh) 的命令行工具，为其增加了 TLS 端口支持，同时进一步优化重构了 NanoSDK。
 
 ## 命令行工具
 
@@ -46,7 +46,7 @@ nanomq conn start --url "mqtt-tcp://broker.emqx.io:1883" -C 10000 -i 10 -k 60
 
 ## 支持 TLS
 
-安全问题一直是物联网应用必须考虑的重点。MQTT+TLS 是最广泛使用的链接加密方式。从 0.6.2 版本开始，NanoMQ 能够支持客户端通过 TCP+TLS 或 Websocket+TLS 端口接入，默认端口分别是 8883 和 8084。使用方法如下：
+安全问题一直是物联网应用必须考虑的重点。MQTT+TLS 是最广泛使用的链接加密方式。从 0.6.3 版本开始，NanoMQ 能够支持客户端通过 TCP+TLS 或 Websocket+TLS 端口接入，默认端口分别是 8883 和 8084。使用方法如下：
 
 首先 NanoMQ 的 TLS 支持是默认关闭的，目前 0.6.0 的二进制安装包还未默认开启 TLS 功能。需要用户编译安装使用的时候通过-DNNG_ENABLE_TLS=ON选项打开。
 
@@ -154,13 +154,12 @@ nanomq conn start --url "mqtt-tcp://broker.emqx.io:1883" -C 10000 -i 10 -k 60
 3. 修复了 MQTT v5 和 MQTT v3.1&v3.1.1 客户端之间消息互通兼容的问题。
 
 
+### URL 配置修改
 
-### URL配置修改
-
-另外，需要社区各位用户注意的是相较于之前的版本还有一个对于 NanoMQ 使用习惯的改变。为了未来多协议转换的准备，从0.6.2版本我们开始将原来的 MQTT Broker 的默认URL格式从“broker+tcp:\\ip:port”修改为“nmq-tcp:\\ip:port”，原来的URL将保留有其他用途。
+另外，需要社区各位用户注意的是，相较于之前的版本还有一个对于 NanoMQ 使用习惯的改变。为了未来多协议转换的准备，从 0.6.3 版本开始，我们将原来的 MQTT Broker 默认 URL 格式从“broker+tcp:\\ip:port” 修改为 “nmq-tcp:\\ip:port”，原来的 URL 将留作他用。
 
 ## NanoSDK 重构
 
-本月 NanoSDK 迎来了新的 0.3 版本。在这一版本中，我们根据 NNG 项目维护者 Garrett 的意见和性能测试数据重构了协议层，减少内存消耗并维持 QoS 消息的高吞吐高性能，同时修复了一些 Bug。
+本月 NanoSDK 迎来了新的 0.3 版本。在这一版本中，我们根据 NNG 项目维护者 Garrett 的意见和性能测试数据重构了协议层，减少内存消耗并维持 QoS 消息的高吞吐高性能，同时修复了一些 Bug。目前我们正在将 NanoSDK 的更新合并到下一版本 NanoMQ 中。
 
 另外，为了广大用户能够更便捷地找到 NanoSDK，我们已将仓库地址从原先的 NNG fork 转为一个独立仓库：[https://github.com/nanomq/NanoSDK](https://github.com/nanomq/NanoSDK) 。
