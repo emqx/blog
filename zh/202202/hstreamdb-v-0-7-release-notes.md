@@ -17,9 +17,7 @@ GitHub 项目地址：[https://github.com/hstreamdb/hstream](https://github.com/
 - 从扩展性的角度来看，现在一个 stream 内部可能包含多个分区（分区的数量是动态变化的)，读写流量将通过内部的分区在集群中实现负载均衡，从而实现单个 Stream 的更高吞吐。
 - 从顺序性的角度来看，每条写入的数据会携带一个由用户指定的 orderingKey，每个 orderingKey 概念上对应一个逻辑分区，同一个逻辑分区内的数据将按照写入的顺序交付给同一个消费客户端，如下图所示。
 
-![HStreamDB 1](https://static.emqx.net/images/881977f297e21e09c8f1a8cdcafccbce.jpeg)
-
-![HStreamDB 2](https://static.emqx.net/images/dffa53e70e086e03fe2c537321eacd7f.png)
+![HStreamDB 1](https://static.emqx.net/images/dffa53e70e086e03fe2c537321eacd7f.png)
 
 值得注意的是，在 HStreamDB v0.7 里分区对于用户来说是完全透明的，用户无需提前指定分区数量和分区逻辑，也不用担心分区的增加和减少带来的数据重分配以及数据乱序的问题。尽管从系统实现角度来看，分区是解决单点瓶颈、提升系统水平扩展能力的有效手段；但从使用者的角度来看，把分区直接暴露给用户，不仅破坏了上层的抽象，而且大大增加了用户的学习，使用以及维护成本。透明分区在实现扩展性、保证顺序性的同时，并没有将额外的复杂性暴露给用户，这将极大改善用户使用体验。
 
