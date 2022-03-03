@@ -106,7 +106,7 @@ Let's go through all these features.
 
 ## Trace specifications 
 
-As we discussed in the previous chapter, it's important that the state machine goes through the specified states in a certain order. Given the event trace of the system, we can easily implament a rule that verifies this property. Below you can find a test found in the actual check: 
+As we discussed in the previous chapter, it's important that the state machine goes through the specified states in a certain order. Given the event trace of the system, we can easily implement a rule that verifies this property. Below you can find a test found in the actual check: 
 
 ```
 replicant_bootstrap_stages(Trace0) ->
