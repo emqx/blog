@@ -1,4 +1,4 @@
-One of the defining features of [EMQX](https://www.emqx.io/zh) is its support of clustering: messages in the MQTT topics are forwarded between the broker nodes transparently for the clients. We are developing a system that is fault-tolerant, has high throughput and low latency. Individual nodes can be shut down, restarted or even paused for a long period of time, but the cluster as a whole continues to serve traffic. 
+One of the defining features of [EMQX](https://www.emqx.io) is its support of clustering: messages in the MQTT topics are forwarded between the broker nodes transparently for the clients. We are developing a system that is fault-tolerant, has high throughput and low latency. Individual nodes can be shut down, restarted or even paused for a long period of time, but the cluster as a whole continues to serve traffic. 
 
 In order to sync and replicate metadata throughout the cluster more efficiently, we've developed Mria: a lightweight eventually-consistent database management system. These features help us create a low-latency, horizontally scalable system, but they also significantly raise the requirements for testing. Development of distributed systems is a notoriously hard problem: some of the most basic assumptions about how the code is executed are not applicable when any part of the system can suddenly die or stutter, when network connections between the nodes may disappear, and the clocks on the different nodes may not be in sync. 
 
@@ -106,7 +106,7 @@ Let's go through all these features.
 
 ## Trace specifications 
 
-As we discussed in the previous chapter, it's important that the state machine goes through the specified states in a certain order. Given the event trace of the system, we can easily implament a rule that verifies this property. Below you can find a test found in the actual check: 
+As we discussed in the previous chapter, it's important that the state machine goes through the specified states in a certain order. Given the event trace of the system, we can easily implement a rule that verifies this property. Below you can find a test found in the actual check: 
 
 ```
 replicant_bootstrap_stages(Trace0) ->
