@@ -62,4 +62,6 @@
 
 ## 本系列中的其它文章
 
-- [物联网大并发测试实战 02 - JMeter 测试组件介绍](https://www.emqx.com/zh/blog/introduction-to-jmeter-test-components)
+- [JMeter 测试组件介绍 - 物联网大并发测试实战 02](https://www.emqx.com/zh/blog/introduction-to-jmeter-test-components)
+- [如何在 JMeter 中使用 MQTT 插件 - 物联网大并发测试实战 03](https://www.emqx.com/zh/blog/how-to-use-the-mqtt-plugin-in-jmeter)
+- [JMeter MQTT 在连接测试场景中的使用 - 物联网大并发测试实战 04](https://www.emqx.com/zh/blog/test-mqtt-connection-with-jmeter)
