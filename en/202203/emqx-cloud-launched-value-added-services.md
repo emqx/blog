@@ -1,6 +1,6 @@
 [EMQX Cloud](https://www.emqx.com/en/cloud) is committed to providing reliable and efficient fully managed MQTT message cloud services for customers of different scales and industries. Through this easy-to-use and standardized SaaS product, users can freely build IoT applications like “Lego”.
 
-Facing the different personalized needs of customers, the EMQX Cloud team decided to set up a new value-added feature section based on the original product form to provide users with more high-value functions. In the future, users will be able to choose value-added services according to their needs, saving unnecessary costs.
+Facing the different personalized needs of customers, the EMQX Cloud team decided to set up a new value-added feature section based on the original product form to provide users with more high-value functions. Users will be able to choose value-added services according to their needs, saving unnecessary costs.
 
 ## Two value-added features are newly opened
 
