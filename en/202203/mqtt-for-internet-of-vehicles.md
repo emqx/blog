@@ -61,7 +61,7 @@ In 2018, when SAIC Volkswagen designed and developed a new generation of IoV sys
 
 In this project, the characteristics of MQTT and the capability of EMQX's powerful rule engine data integration, and general bus capability met the customer's requirements for real-time reliability of messages in complex networks and solved the requirement of tight project time, and rapid development.
 
-## What technical solutions are most the commonly used?
+## What technical solutions are the most commonly used?
 
 As a message broker, EMQX provides rich and flexible integration capabilities, and each feature provides different technical solutions for users to choose. After long-term use, the popular technical solutions are as follows:
 
