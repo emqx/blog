@@ -32,7 +32,7 @@ RabbitMQ 是实现了高级消息队列协议（AMQP）的开源消息代理软�
 
 - MZSever：可以用来创建场景（scenarios），例如创建一个发布者和多个订阅者。这些信息会作为服务器传送至 MZBench；
 - MZController：从服务器产生的信息会进一步被传送到这里；
-- MZNodes：它们会作为 [MQTT 客户端](https://www.emqx.com/zh/blog/tag/mqtt-客户端)来连入你的集群，如下图所示。
+- MZNodes：它们会作为 [MQTT 客户端](https://www.emqx.com/zh/blog/category/mqtt-client)来连入你的集群，如下图所示。
 
 ![MZBench测试工具.png](https://static.emqx.net/images/3f2695191e1017c93fe8a2c73f759847.png)
 
