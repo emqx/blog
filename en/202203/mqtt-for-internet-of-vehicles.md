@@ -87,3 +87,8 @@ Kafka focuses on data storage and reading, while EMQX focuses on communication b
 ## **Conclusion**
 
 At present, the rapid development of automotive electronics promotes the technological upgrading of the industry of IoV. The future market prospect of intelligent transportation and vehicle industry is considerable, and it can be predicted that more consumers and vehicle manufacturers will benefit from it. The full support of MQTT protocol and the powerful product capability of EMQX can help developers to quickly build robust and flexible platforms for IoV. EMQ will also keep pace with the development trend of the industry, promote the development and implementation of technologies related to message transmission and edge computing, and provide faster, better and smarter messaging infrastructure for autonomous driving, vehicle collaboration and IoV users.
+
+
+## Other articles in this series
+
+- [IoV beginner to master 02｜Architecture Design of MQTT Message Platform for Ten-million-level IoV](https://www.emqx.com/en/blog/mqtt-messaging-platform-for-internet-of-vehicles)
