@@ -14,7 +14,7 @@ HStreamDB v0.6 supports cluster mode of HServer. The cluster mode allows quick h
 
 For the startup and deployment of the cluster, you can refer to the following documents:
 
-- [https://hstream.io/docs/en/latest/start/start-hserver-cluster.html](https://hstream.io/docs/en/latest/start/start-hserver-cluster.html#start-local-hserver-cluster-with-docker) 
+- [https://hstream.io/docs/en/latest/deployment/deploy-docker.html](https://hstream.io/docs/en/latest/deployment/deploy-docker.html#set-up-hserver-cluster) 
 - [https://hstream.io/docs/en/latest/deployment/deploy-k8s.html](https://hstream.io/docs/en/latest/deployment/deploy-k8s.html)
 
 ![HStreamDB 架构图](https://static.emqx.net/images/553197ac2ae839659a3ba7cdd4b016e7.png)
