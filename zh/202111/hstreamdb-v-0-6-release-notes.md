@@ -15,7 +15,7 @@ HStreamDB v0.6 正式支持 HServer 的集群模式。实现集群模式后，HS
 
 关于集群的启动和部署，可以参考以下文档：
 
-- [https://hstream.io/docs/en/latest/start/start-hserver-cluster.html#start-local-hserver-cluster-with-docker](https://hstream.io/docs/en/latest/start/start-hserver-cluster.html#start-local-hserver-cluster-with-docker ) 
+- [https://hstream.io/docs/zh/latest/deployment/deploy-docker.html](https://hstream.io/docs/zh/latest/deployment/deploy-docker.html) 
 - [https://hstream.io/docs/en/latest/deployment/deploy-k8s.html](https://hstream.io/docs/en/latest/deployment/deploy-k8s.html ) 
 
 ![HStreamDB 架构图](https://static.emqx.net/images/553197ac2ae839659a3ba7cdd4b016e7.png)

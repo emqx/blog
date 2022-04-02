@@ -21,7 +21,7 @@ GitHub 项目地址：[https://github.com/hstreamdb/hstream](https://github.com/
 
 值得注意的是，在 HStreamDB v0.7 里分区对于用户来说是完全透明的，用户无需提前指定分区数量和分区逻辑，也不用担心分区的增加和减少带来的数据重分配以及数据乱序的问题。尽管从系统实现角度来看，分区是解决单点瓶颈、提升系统水平扩展能力的有效手段；但从使用者的角度来看，把分区直接暴露给用户，不仅破坏了上层的抽象，而且大大增加了用户的学习，使用以及维护成本。透明分区在实现扩展性、保证顺序性的同时，并没有将额外的复杂性暴露给用户，这将极大改善用户使用体验。
 
-更详细的关于透明分区的介绍，请参考：[HStreamDB Docs](https://hstream.io/docs/en/latest/overview/concepts/transparent-sharding.html) 
+更详细的关于透明分区的介绍，请参考：[HStreamDB Docs](https://hstream.io/docs/zh/latest/concepts/transparent-sharding.html) 
 
 ### 改进集群负载均衡算法，提高分配效率
 

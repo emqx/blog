@@ -22,7 +22,7 @@ In previous versions, HStreamDB has supported the storage and management of larg
 
 It is worth noting that partitions are entirely transparent to users in HStreamDB v0.7. Users do not need to specify the number of shards or any sharding logic in advance. Nor do they need to worry about data redistribution and data disorder caused by shards change. From a perspective of system implementation, sharding is an effective method to solve single-point bottlenecks and improve the horizontal scalability of the system. From users' standpoint, exposing partitions directly to users destroys the abstraction of the upper layer and dramatically increases the cost of users' learning, use, and maintenance. Transparent sharding achieves scalability and ensures sequencing without exposing additional complexity to users, significantly improving the user experience.
 
-For a more detailed introduction to transparent partition, please refer to [HStreamDB Docs](https://hstream.io/docs/en/latest/overview/concepts/transparent-sharding.html)
+For a more detailed introduction to transparent partition, please refer to [HStreamDB Docs](https://hstream.io/docs/en/latest/concepts/transparent-sharding.html)
 
 ### Cluster load-balancing algorithm is improved for higher distribution efficiency
 
@@ -49,7 +49,7 @@ hstreamdb-java GitHub repository: [https://github.com/hstreamdb/hstreamdb-java](
 
 ### The deployment and use process are simplified to improve the user experience
 
-- To facilitate users to experience and use HStreamDB quickly, we have added a quick start document based on docker-compose: [HStreamDB Docs](https://hstream.io/docs/en/latest/start/quickstart-with-docker. html).
+- To facilitate users to experience and use HStreamDB quickly, we have added a quick start document based on docker-compose: [HStreamDB Docs](https://hstream.io/docs/en/latest/start/quickstart-with-docker.html).
 - To quickly deploy and use HStreamDB clusters on multiple machines, we have developed a cluster deployment script, which you can download from the link [https://github.com/hstreamdb/hstream/blob/main/script/dev-deploy](https://github.com/hstreamdb/hstream/blob/main/script/dev-deploy)
 - With the continuous increase of HStreamDB configuration items, the original method of passing the configuration through the command line is insufficient. Therefore, we have introduced the way of unifying management of configuration items through configuration files. Please refer to [https://hstream.io/docs/en/latest/reference/config.html#configuration-table](https://hstream.io/docs/en/latest/reference/config.html#configuration-table).
 
