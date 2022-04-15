@@ -14,9 +14,3 @@ jobs:
 
     - name: Check markdown
       run: markdownlint -c .ci/markdown_config.json $(git diff --name-only main...HEAD | grep -e "md$")
-
-    - uses: gaurav-nelson/github-action-markdown-link-check@v1
-      with:
-        use-quiet-mode: 'yes'
-        check-modified-files-only: 'yes'
-        base-branch: 'main'
