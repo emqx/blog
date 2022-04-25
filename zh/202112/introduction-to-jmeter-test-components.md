@@ -341,3 +341,4 @@ JMeter定时器主要包括：固定定时器（Constant Timer），统一随机
 - [开源测试工具 JMeter 介绍 - 物联网大并发测试实战 01](https://www.emqx.com/zh/blog/introduction-to-the-open-source-testing-tool-jmeter)
 - [如何在 JMeter 中使用 MQTT 插件 - 物联网大并发测试实战 03](https://www.emqx.com/zh/blog/how-to-use-the-mqtt-plugin-in-jmeter)
 - [JMeter MQTT 在连接测试场景中的使用 - 物联网大并发测试实战 04](https://www.emqx.com/zh/blog/test-mqtt-connection-with-jmeter)
+- [如何在 JMeter 中使用 MQTT 插件 - 物联网大并发测试实战 05](https://www.emqx.com/zh/blog/the-use-of-jmeter-mqtt-in-subscription-and-publishing-test-scenarios)
