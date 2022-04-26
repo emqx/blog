@@ -205,3 +205,12 @@ So far, we have finished the construction of MQTT client on the Android and impl
 MQTT can provide the real-time and reliable message service for connecting remote devices, only with a few code and limited bandwidth. Since it is a kind of low-cost, low-bandwidth occupancy instant communicating protocol, it is widely used for IoT, small size equipments, mobile applications, etc.
 
 Kotlin is also a language promoted by Google, and we can develop more interesting applications by using the [MQTT protocol](https://www.emqx.com/en/mqtt) and [MQTT cloud service](https://www.emqx.com/en/cloud).
+
+
+<section class="promotion">
+    <div>
+        Try EMQX Cloud for Free
+        <div class="is-size-14 is-text-normal has-text-weight-normal">No credit card required</div>
+    </div>
+    <a href="https://www.emqx.com/en/signup?continue=https://cloud-intl.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">Get Started →</a >
+</section>

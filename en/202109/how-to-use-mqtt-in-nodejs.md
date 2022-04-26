@@ -192,3 +192,12 @@ We can see that the message sent by MQTT X is printed in the console.
 ![MQTT messages](https://static.emqx.net/images/02d8a35312ca1309f18a628dacca8910.png)
 
 So far, we have used Node.js as an MQTT client to connect to the [public MQTT broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker), and realizes the connection, message publishing and subscription between the test client and MQTT server.
+
+
+<section class="promotion">
+    <div>
+        Try EMQX Cloud for Free
+        <div class="is-size-14 is-text-normal has-text-weight-normal">No credit card required</div>
+    </div>
+    <a href="https://www.emqx.com/en/signup?continue=https://cloud-intl.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">Get Started →</a >
+</section>

@@ -203,3 +203,12 @@ void loop() {
 So far, we have successfully connected ESP32 to the public MQTT server provided by [EMQX Cloud](https://www.emqx.com/en/cloud). In this project, we simply connect ESP32 to the MQTT server. This is just one of ESP32's basic capabilities. ESP32 can actually connect to various IoT sensors and report sensor data to the MQTT server.
 
 Next, we will publish more articles about IoT development and ESP32, so stay tuned.
+
+
+<section class="promotion">
+    <div>
+        Try EMQX Cloud for Free
+        <div class="is-size-14 is-text-normal has-text-weight-normal">No credit card required</div>
+    </div>
+    <a href="https://www.emqx.com/en/signup?continue=https://cloud-intl.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">Get Started →</a >
+</section>

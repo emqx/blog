@@ -212,3 +212,12 @@ Horizontally, the IoT has a wide range of application scenarios in almost all in
 At present, the IoT Protocols have diversified development. Different industries and scenarios are applicable to different protocols. In the same scenario, there can be multiple protocols to choose. No protocol can dominate the market, and there is certain complementary effect among various protocol. Therefore, to realize the connectivity of the IoT devices and data, the key point is not the unification with the protocol, but in the connectivity between different protocols and the unification of the upper business application layer protocol.
 
 EMQ addresses data connectivity issues for IoT devices. The flagship product EMQX IoT message broker can connect any device through open standard MQTT, CoAP and LwM2M Protocols. In case of complex and diverse industrial protocols in industrial scenarios, it can also be converted into unified MQTT Protocol through [Neuron](https://www.emqx.com/en/products/neuron), the edge industrial protocol gateway software, to meet the data acquisition requirements of most IoT scenarios and provide an efficient and reliable data access layer for enterprises' IoT business.
+
+
+<section class="promotion">
+    <div>
+        Try EMQX Cloud for Free
+        <div class="is-size-14 is-text-normal has-text-weight-normal">A fully managed, cloud-native MQTT service</div>
+    </div>
+    <a href="https://www.emqx.com/en/signup?continue=https://cloud-intl.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">Get Started →</a >
+</section>

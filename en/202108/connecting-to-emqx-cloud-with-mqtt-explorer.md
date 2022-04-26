@@ -105,3 +105,12 @@ In the History card at the bottom right corner of the page, you can see the mess
 Statistical information will be displayed at the bottom right corner of the page.
 
 ![MQTT Explorer Statistical information](https://static.emqx.net/images/30eed43a6c0bf4e2e3c3ce5df9bc01ae.png)
+
+
+<section class="promotion">
+    <div>
+        Try EMQX Cloud for Free
+        <div class="is-size-14 is-text-normal has-text-weight-normal">No credit card required</div>
+    </div>
+    <a href="https://www.emqx.com/en/signup?continue=https://cloud-intl.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">Get Started →</a >
+</section>

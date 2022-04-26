@@ -236,3 +236,12 @@ We are delighted to see that more and more IoT devices worldwide are connected t
 EMQX online public broker is provided by [EMQX Cloud](https://www.emqx.com/en/cloud). EMQX Cloud is a fully managed cloud-native MQTT messaging service provided by EMQ, which supports commercial-level accessibility and stability. Business users can quickly start projects at zero cost and implement MQTT device access in a simple and fast way by using EMQX Cloud. In the later stage, it can be expanded as needed according to the business development. Users can create access points nearby worldwide and enjoy the 7 * 24 technical support provided by the EMQ professional team.
 
 Whether it is a personal or corporate project, EMQ is committed to providing the most appropriate MQTT messaging service for all kinds of users. If you have any comments or questions when using EMQX, please feel free to give feedback to our team at any time.
+
+
+<section class="promotion">
+    <div>
+        Try EMQX Cloud for Free
+        <div class="is-size-14 is-text-normal has-text-weight-normal">No credit card required</div>
+    </div>
+    <a href="https://www.emqx.com/en/signup?continue=https://cloud-intl.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">Get Started →</a >
+</section>
