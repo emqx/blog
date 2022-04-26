@@ -382,3 +382,12 @@ So far, we have completed using the **paho-mqtt** client to connect to the [publ
 
 
 [^1]: https://en.wikipedia.org/wiki/Rust_(programming_language)
+
+
+<section class="promotion">
+    <div>
+        Try EMQX Cloud for Free
+        <div class="is-size-14 is-text-normal has-text-weight-normal">No credit card required</div>
+    </div>
+    <a href="https://www.emqx.com/en/signup?continue=https://cloud-intl.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">Get Started →</a >
+</section>
