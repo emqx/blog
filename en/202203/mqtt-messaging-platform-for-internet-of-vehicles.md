@@ -132,3 +132,5 @@ As the world's leading provider of IoT data infrastructure software, EMQ is comm
 - [IoV beginner to master 01｜MQTT in an IoV scenario](https://www.emqx.com/en/blog/mqtt-for-internet-of-vehicles)
 
 - [IoV beginner to master 03｜MQTT topic design in TSP platform scenario](https://www.emqx.com/en/blog/mqtt-topic-design-for-internet-of-vehicles)
+
+- [IoV beginner to master 04 | MQTT QoS design: quality assurance for the IoV platform messaging](https://www.emqx.com/en/blog/mqtt-qos-design-for-internet-of-vehicles)

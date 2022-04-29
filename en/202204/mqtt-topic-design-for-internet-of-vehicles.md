@@ -184,3 +184,5 @@ With the popularization of MQTT protocol in IoV business, the topic design of MQ
 - [IoV beginner to master 01｜MQTT in an IoV scenario](https://www.emqx.com/en/blog/mqtt-for-internet-of-vehicles)
 
 - [IoV beginner to master 02｜Architecture Design of MQTT Message Platform for Ten-million-level IoV](https://www.emqx.com/en/blog/mqtt-messaging-platform-for-internet-of-vehicles)
+
+- [IoV beginner to master 04 | MQTT QoS design: quality assurance for the IoV platform messaging](https://www.emqx.com/en/blog/mqtt-qos-design-for-internet-of-vehicles)
