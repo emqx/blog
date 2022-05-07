@@ -6,7 +6,7 @@ With the challenge of massive connections of devices in the IoT era and the larg
 
 ![EMQX and HStreamDB](https://static.emqx.net/images/fc0fe48820b6158dd404cd8757ff9658.png)
 
-In the [HStreamDB v0.6](https://www.emqx.com/en/blog/hstreamdb-v-0-6-release-notes) release, HStream has provided data append Rest API, which allows writing data to HStreamDB through Rest API with any language and is convenient for users in the community to carry out further development with HStreamDB. We utilise this feature combined with the Webhook of EMQX to realise a fast integration of EMQX and HStreamDB.
+In the [HStreamDB v0.6](https://hstream.io/blog/hstreamdb-v-0-6-release-notes) release, HStream has provided data append Rest API, which allows writing data to HStreamDB through Rest API with any language and is convenient for users in the community to carry out further development with HStreamDB. We utilise this feature combined with the Webhook of EMQX to realise a fast integration of EMQX and HStreamDB.
 
 This article will introduce and explain how to bridge the data from EMQX to HStreamDB and fulfil the persistent data storage.
 
