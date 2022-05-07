@@ -6,7 +6,7 @@
 
 ![EMQX 与 HStreamDB](https://static.emqx.net/images/fc0fe48820b6158dd404cd8757ff9658.png)
 
-最近发布的[ HStreamDB v0.6 ](https://www.emqx.com/zh/blog/hstreamdb-v-0-6-release-notes)新增了数据写入 Rest API，可以使用任何语言通过 Rest API 向 HStreamDB 写入数据，方便开源用户围绕 HStreamDB 进行二次开发。我们也通过这一功能与 EMQX 开源版的 Webhook 功能结合，实现了 EMQX 和 HStreamDB 的快速集成。
+最近发布的[ HStreamDB v0.6 ](https://hstream.io/zh/blog/hstreamdb-v-0-6-release-notes)新增了数据写入 Rest API，可以使用任何语言通过 Rest API 向 HStreamDB 写入数据，方便开源用户围绕 HStreamDB 进行二次开发。我们也通过这一功能与 EMQX 开源版的 Webhook 功能结合，实现了 EMQX 和 HStreamDB 的快速集成。
 
 本文就将详细介绍使用 HStreamDB 对 EMQX 的接入数据进行持久化存储的具体操作。
 
