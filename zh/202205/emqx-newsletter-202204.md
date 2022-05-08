@@ -109,3 +109,12 @@ EMQX 现已加入 Docker 官方镜像：[https://hub.docker.com/_/emqx](https://
 用户现在可以通过 `docker pull emqx `直接获取 EMQX 镜像。
 
 ![EMQX Docker 镜像](https://static.emqx.net/images/0b24b183a5581754b39742d9c65cbd0c.png)
+
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX Cloud
+        <div class="is-size-14 is-text-normal has-text-weight-normal">无须绑定信用卡</div>
+    </div>
+    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a >
+</section>

@@ -345,3 +345,11 @@ If readers are interested in the performance of this solution, they can use the 
 Through this article, readers can understand the important role of EMQX + Kafka IoT message processing solution for message communication and business processing. Using this solution, you can build a loosely coupled, high-performance, high-fault-tolerant IoT message processing platform to achieve efficient data processing safely.
 
 The code of this article implements specific business logic, and readers can expand it according to the business prototype and system architecture provided in this paper. Because the integrated architecture in the IoT project in the message/stream processing of RabbitMQ, RocketMQ, Pulsar which has been supported by EMQX is similar to Kafka, readers can also use this article as a reference to freely select relevant components for  solution integration according to their own technology stack.
+
+
+<section class="promotion">
+    <div>
+        Try EMQX Enterprise for Free
+    </div>
+    <a href="https://www.emqx.com/en/try?product=enterprise" class="button is-gradient px-5">Get Started →</a >
+</section>

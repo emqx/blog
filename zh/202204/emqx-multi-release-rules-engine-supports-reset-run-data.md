@@ -125,3 +125,11 @@ broker.your_group.shared_subscription_strategy = local
 - 开源版 v4.4.3：https://www.emqx.com/zh/changelogs/broker/4.3.14
 - 企业版 v4.3.9：https://www.emqx.com/zh/changelogs/enterprise/4.3.9
 - 企业版 v4.4.3：https://www.emqx.com/zh/changelogs/enterprise/4.3.9
+
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX 企业版
+    </div>
+    <a href="https://www.emqx.com/zh/try?product=enterprise" class="button is-gradient px-5">开始试用 →</a >
+</section>

@@ -252,3 +252,12 @@ Check the data table records in the MongoDB command line to get the following da
 ![mongruleresult2x.png](https://static.emqx.net/images/36df9f59d523863ac7cd4e27fe3724be.png)
 
 So far, we have implemented a business development using the rules engine to store messages to the MongoDB database.
+
+
+<section class="promotion">
+    <div>
+        Try EMQX Cloud for Free
+        <div class="is-size-14 is-text-normal has-text-weight-normal">A fully managed, cloud-native MQTT service</div>
+    </div>
+    <a href="https://www.emqx.com/en/signup?continue=https://cloud-intl.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">Get Started →</a >
+</section>

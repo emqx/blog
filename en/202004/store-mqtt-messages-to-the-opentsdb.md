@@ -160,3 +160,12 @@ In the EMQX management console **WebSocket** page, publish the message in the ab
 ## Summary
 
 Readers can extend related applications by using OpenTSDB, after understanding the data structure stored in OpenTSDB and learning how to use the message template to configure the written message field format.
+
+
+<section class="promotion">
+    <div>
+        Try EMQX Cloud for Free
+        <div class="is-size-14 is-text-normal has-text-weight-normal">A fully managed, cloud-native MQTT service</div>
+    </div>
+    <a href="https://www.emqx.com/en/signup?continue=https://cloud-intl.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">Get Started →</a >
+</section>

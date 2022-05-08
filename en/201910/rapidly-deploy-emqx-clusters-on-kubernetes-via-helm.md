@@ -258,3 +258,12 @@ $ helm install my-emqx emqx/emqx -f values.yaml
 ```
 
 > You can get default [`values.yaml`](https://raw.githubusercontent.com/emqx/emqx-rel/v4.0.0/deploy/charts/emqx/values.yaml) from [Github](https://github.com/emqx/emqx-rel) .
+
+
+<section class="promotion">
+    <div>
+        Try EMQX Cloud for Free
+        <div class="is-size-14 is-text-normal has-text-weight-normal">A fully managed, cloud-native MQTT service</div>
+    </div>
+    <a href="https://www.emqx.com/en/signup?continue=https://cloud-intl.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">Get Started →</a >
+</section>

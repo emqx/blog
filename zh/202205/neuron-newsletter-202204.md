@@ -46,3 +46,11 @@ Neuron 1.x 后续不会再开发新功能，最后版本将会固定在 1.4.x，
 
 - IEC104 再次修改总召唤的方式读取数据点位
 - 在 Dashboard 修改小数点位时候，显示错误数值
+
+
+<section class="promotion">
+    <div>
+        免费试用 Neuron
+    </div>
+    <a href="https://www.emqx.com/zh/try?product=neuron" class="button is-gradient px-5">开始试用 →</a >
+</section>

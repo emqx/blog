@@ -16,3 +16,12 @@ The MQTT protocol perfectly addresses the above requirements, and the latest ver
 In terms of the difference between mqtt-based message broker and Kafka,  Mr. EMQ believes that t it lies in their different focuses. Kafka focuses on the storage and reading of data, aiming at streaming data processing scenarios with high real-time performance, while MQTT broker focuses on communication between client and server.
 
 The message exchange pattern adopted by MQTT broker and Kafka is so similar that it is obviously a good idea to combine them. In fact, some MQTT brokers, such as **EMQX**, have already implemented the bridging of MQTT broker and Kafka. MQTT broker is used to quickly receive and process messages from a large number of  IoT devices, and Kafka collects and stores these large amounts of data and sends them to data analysts to analyze and process messages.
+
+
+<section class="promotion">
+    <div>
+        Try EMQX Cloud for Free
+        <div class="is-size-14 is-text-normal has-text-weight-normal">A fully managed, cloud-native MQTT service</div>
+    </div>
+    <a href="https://www.emqx.com/en/signup?continue=https://cloud-intl.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">Get Started →</a >
+</section>

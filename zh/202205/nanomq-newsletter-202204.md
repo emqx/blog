@@ -63,3 +63,12 @@ Retain Handling 用来指定订阅建立时服务端是否向客户端发送保�
 ## 即将到来
 
 应社区要求，NanoMQ 将于下个月正式发布 WebHook 拓展支持。目前此功能处于 Demo 阶段，在最新的主分支已可以使用。用户可以自行编译安装使用，欢迎尝鲜：[https://github.com/emqx/nanomq/](https://github.com/emqx/nanomq/) 。
+
+
+
+<section class="promotion">
+    <div>
+        免费试用 NanoMQ
+    </div>
+    <a href="https://www.emqx.com/zh/try?product=nanomq" class="button is-gradient px-5">开始试用 →</a >
+</section>

@@ -420,3 +420,12 @@ backend.pgsql.max_returned_count = 500
 ## Summary
 
 After the reader understands the data structures stored in PostgreSQL and custom SQL, they can expand related applications.
+
+
+<section class="promotion">
+    <div>
+        Try EMQX Cloud for Free
+        <div class="is-size-14 is-text-normal has-text-weight-normal">A fully managed, cloud-native MQTT service</div>
+    </div>
+    <a href="https://www.emqx.com/en/signup?continue=https://cloud-intl.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">Get Started →</a >
+</section>

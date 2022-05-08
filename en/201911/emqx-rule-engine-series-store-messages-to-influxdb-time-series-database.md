@@ -165,3 +165,12 @@ time                humidity location pm2_5 temperature
 So far, we have implemented the business development of using the rules engine to store messages to InfluxDB  .
 
 Before reading this tutorial, assume that you already know simple knowledge about  [MQTT](https://docs.oasis-open.org/mqtt/mqtt/v3.1.1/os/mqtt-v3.1.1-os.html),[EMQX](https://github.com/emqx/emqx) .
+
+
+<section class="promotion">
+    <div>
+        Try EMQX Cloud for Free
+        <div class="is-size-14 is-text-normal has-text-weight-normal">A fully managed, cloud-native MQTT service</div>
+    </div>
+    <a href="https://www.emqx.com/en/signup?continue=https://cloud-intl.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">Get Started →</a >
+</section>

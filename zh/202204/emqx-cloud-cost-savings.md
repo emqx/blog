@@ -52,3 +52,12 @@
 EMQX Cloud 的定价模式以连接数作为主要计价衡量因素，相较于按收发消息数计价的方式，EMQX Cloud 为企业用户提供了更加经济实惠的全托管 MQTT 消息服务，避免了因为消息量飙升而导致成本急剧升高的情况，可以帮助企业有效控制成本。而新上线的流量包服务，则进一步满足了不同类型和规模的业务场景对于消息吞吐的动态需求。
 
 EMQX Cloud 将持续完善产品功能，提升使用体验，通过可靠、实时的物联网数据移动、处理和集成，加速您的物联网应用开发。
+
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX Cloud
+        <div class="is-size-14 is-text-normal has-text-weight-normal">无须绑定信用卡</div>
+    </div>
+    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a >
+</section>
