@@ -259,3 +259,12 @@ $ helm install my-emqx emqx/emqx -f values.yaml
 ```
 
 > 你可以从 [Github](https://github.com/emqx/emqx-rel) 获取默认的 [`values.yaml`](https://raw.githubusercontent.com/emqx/emqx-rel/v4.0.0/deploy/charts/emqx/values.yaml)
+
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX Cloud
+        <div class="is-size-14 is-text-normal has-text-weight-normal">全托管的云原生 MQTT 消息服务</div>
+    </div>
+    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a >
+</section>

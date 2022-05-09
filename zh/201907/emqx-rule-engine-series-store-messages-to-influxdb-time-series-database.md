@@ -164,3 +164,12 @@ time                humidity location pm2_5 temperature
 至此，我们通过规则引擎实现了存储消息到 InfluxDB 数据库的业务开发。
 
 在阅读该教程之前，假定你已经了解 [MQTT](https://docs.oasis-open.org/mqtt/mqtt/v3.1.1/os/mqtt-v3.1.1-os.html)、[EMQX](https://github.com/emqx/emqx) 的简单知识。
+
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX Cloud
+        <div class="is-size-14 is-text-normal has-text-weight-normal">全托管的云原生 MQTT 消息服务</div>
+    </div>
+    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a >
+</section>

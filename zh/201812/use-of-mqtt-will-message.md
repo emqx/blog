@@ -76,3 +76,12 @@ zone.internal.acl_deny_action = disconnect
 1. 客户端 A 遗嘱消息内容设定为 `offline`，该遗嘱主题与一个普通发送状态的主题设定成同一个 `A/status`。
 2. 当客户端 A 连接时，向主题 `A/status` 发送内容为 `online` 的 Retained 消息，其它客户端订阅主题 `A/status` 的时候，将获取到 Retained 消息为 `online`。
 3. 当客户端 A 异常断开时，系统自动向主题 `A/status` 发送内容为 `offline` 的消息，其它订阅了此主题的客户端会马上收到 `offline` 消息；如果遗嘱消息设置了 Will Retain，那么此时如果有新的订阅 `A/status` 主题的客户端上线，也将获取到内容为 `offline` 的遗嘱消息。
+
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX Cloud
+        <div class="is-size-14 is-text-normal has-text-weight-normal">全托管的云原生 MQTT 消息服务</div>
+    </div>
+    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a >
+</section>

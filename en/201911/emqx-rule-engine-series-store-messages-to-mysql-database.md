@@ -257,3 +257,12 @@ Click the **Send** button to view the rule **hit** statistics after the successf
 ![image20190717141918330.png](https://static.emqx.net/images/a4606e0e73c431c5eccaa2a635610417.png)
 
 So far, we have implemented the business development of using the rules engine to store messages to MySQL .
+
+
+<section class="promotion">
+    <div>
+        Try EMQX Cloud for Free
+        <div class="is-size-14 is-text-normal has-text-weight-normal">A fully managed, cloud-native MQTT service</div>
+    </div>
+    <a href="https://www.emqx.com/en/signup?continue=https://cloud-intl.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">Get Started →</a >
+</section>

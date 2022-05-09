@@ -449,3 +449,12 @@ client.loop_forever()
 ## 总结
 
 关于 MQTT 协议、MQTT 客户端库使用流程、常用 MQTT 客户端的简介就到这里，欢迎读者通过 EMQX 进行 MQTT 学习、项目开发使用。
+
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX Cloud
+        <div class="is-size-14 is-text-normal has-text-weight-normal">全托管的云原生 MQTT 消息服务</div>
+    </div>
+    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a >
+</section>

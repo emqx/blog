@@ -17,3 +17,12 @@ In all packet types of MQTT 5.0, this property also exists only in the will prop
 It is determined by the application that sends and receives messages. The content type cannot be tampered with during message forwarding.
 
 A typical application of content types is to store MIME types, such as text/plain for text files and audio/aac for audio files.
+
+
+<section class="promotion">
+    <div>
+        Try EMQX Cloud for Free
+        <div class="is-size-14 is-text-normal has-text-weight-normal">A fully managed, cloud-native MQTT service</div>
+    </div>
+    <a href="https://www.emqx.com/en/signup?continue=https://cloud-intl.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">Get Started →</a >
+</section>

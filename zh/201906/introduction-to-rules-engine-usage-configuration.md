@@ -353,3 +353,12 @@ VALUES (${client_id}, '2', ${reason_code});
 ![手动断开连接2.png](https://static.emqx.net/images/a667888ca6b150f64bc7147da5443727.png)
 
 至此，我们通过两条规则实现了预定的在线状态切换，上下线记录与下线告警相关业务开发。
+
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX Cloud
+        <div class="is-size-14 is-text-normal has-text-weight-normal">全托管的云原生 MQTT 消息服务</div>
+    </div>
+    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a >
+</section>

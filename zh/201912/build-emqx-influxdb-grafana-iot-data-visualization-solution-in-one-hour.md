@@ -365,3 +365,13 @@ new MockData(100)
 ## 总结
 
 至此我们完成了 EMQX + InfluxDB + Grafana 物联网数据可视化平台的搭建。通过本文，读者可以了解到利用 EMQX 丰富的拓展能力在数据可视化解决方案里可以非常快速、灵活地开发出基于 InfluxDB + Grafana 的可视化系统，实现海量数据存储、计算分析与展现。深入学习掌握 Grafana 的其他功能后，用户可以定制出更完善的数据可视化乃至监控告警系统。
+
+
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX Cloud
+        <div class="is-size-14 is-text-normal has-text-weight-normal">全托管的云原生 MQTT 消息服务</div>
+    </div>
+    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a >
+</section>

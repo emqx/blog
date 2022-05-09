@@ -420,3 +420,12 @@ Since this example is relatively simple, we use the MQTT Websocket client direct
 Select Data is the data filtered by the SQL statement, Envs is the environment variable available inside the rule engine, and Action Init Params is the initialization parameter of the action. These three data are all in the `Map` format.
 
 The two fields `selected_data` and `encoded_data` in Selected Data correspond to the two ASs in the SELECT statement. Since `decoded_data` is the result of encoding and then decoding, it is restored to the content we sent "hello", indicating that the codec plugin works properly.
+
+
+<section class="promotion">
+    <div>
+        Try EMQX Cloud for Free
+        <div class="is-size-14 is-text-normal has-text-weight-normal">A fully managed, cloud-native MQTT service</div>
+    </div>
+    <a href="https://www.emqx.com/en/signup?continue=https://cloud-intl.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">Get Started →</a >
+</section>

@@ -17,3 +17,12 @@ MQTT PUBLISH 报文中，当 PUBLISH 属性的有效载荷标识的值为 0 时�
 它是由收发消息的应用程序决定的。在消息转发过程中， 内容类型不能被篡改。
 
 内容类型的一个比较典型的应用就是存放 MIME 类型，比如 text/plain 表示文本文件，audio/aac 表示音频文件。
+
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX Cloud
+        <div class="is-size-14 is-text-normal has-text-weight-normal">全托管的云原生 MQTT 消息服务</div>
+    </div>
+    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a >
+</section>

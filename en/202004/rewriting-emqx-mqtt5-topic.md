@@ -47,3 +47,12 @@ At this time we subscribe `y/a/z/b`、`y/def`、`x/1/2`、`x/y/2`、`x/y/z` five
 + `x/y/2` matches two topic filters( `x/#` and `x/y/+` ) at the same time. EMQX reads the configuration by reverse order, and will give priority to matches `module.rewrite.rule.3`, and it will replace the topic through the regular expression. So the client actually subscribes topic `z/y/2`. 
 
 + `x/y/z` matches two topic filters( `x/#` and `x/y/+` ) at the same time. EMQX reads the configuration by reverse order, and will give priority to matches `module.rewrite.rule.3`, if no elements are matched through the regular expression, it does not implement rewriting topic. So the client actually subscribes topic `x/y/z`. It should be noted that EMQX will not match the `module.rewrite.rule.2` rule again, although the regular expression of `module.rewrite.rule.3` match unsuccessfully.
+
+
+<section class="promotion">
+    <div>
+        Try EMQX Cloud for Free
+        <div class="is-size-14 is-text-normal has-text-weight-normal">A fully managed, cloud-native MQTT service</div>
+    </div>
+    <a href="https://www.emqx.com/en/signup?continue=https://cloud-intl.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">Get Started →</a >
+</section>

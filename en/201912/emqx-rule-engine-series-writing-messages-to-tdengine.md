@@ -368,3 +368,12 @@ Delete the rule, start the TDEngine SDK to write code, and repeat the above test
 
 
 So far, the entire function of writing EMQX data to TDEngine has been developed / configured.
+
+
+<section class="promotion">
+    <div>
+        Try EMQX Cloud for Free
+        <div class="is-size-14 is-text-normal has-text-weight-normal">A fully managed, cloud-native MQTT service</div>
+    </div>
+    <a href="https://www.emqx.com/en/signup?continue=https://cloud-intl.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">Get Started →</a >
+</section>

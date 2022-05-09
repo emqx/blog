@@ -103,8 +103,12 @@ WHERE
 - 插件热安装与热升级：在 Dashboard 中上传二进制插件包，实现不停机的插件安装、升级，热安装热升级主要用于应对 EMQX 的重要修复和小规模功能升级；
 - 自定义告警实现：后续将支持用户自定义告警规则与告警触发方式，实现告警提醒不离线。
 
-------
 
-欢迎关注我们的开源项目 [github.com/emqx/emqx](https://github.com/emqx/emqx) ，详细文档请访问 [官方文档](https://docs.emqx.io/broker/cn)。
 
-![二维码](https://static.emqx.net/images/b99a97727d6f86a9912846e145b8b124.jpg)
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX 企业版
+    </div>
+    <a href="https://www.emqx.com/zh/try?product=enterprise" class="button is-gradient px-5">开始试用 →</a >
+</section>

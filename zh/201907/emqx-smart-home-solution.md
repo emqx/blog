@@ -23,3 +23,12 @@
 - EMQX Enterprise支持多云部署，并且支持跨集群的消息桥接功能；可以为智能设备厂商提供跨国家、跨地区的平台消息同步能力。在跨集群数据桥接场景中，EMQX Enterprise可提供毫秒级时延和高数据量吞吐能力，为跨地域设备与终端，设备与设备提供实时的消息传递。
 
    目前，EMQX Enterprise在海内外几十家智能家居、智能家电的行业头部客户平台中广泛使用，已经成为智能家居平台中设备与消息接入的标杆产品。随着EMQX产品与技术的进一步发展，在5G海量物联与低延时传输，以及边缘计算方面也将提供更丰富的解决方案，进一步为智能家居行业提供高效稳定的解决方案。
+
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX Cloud
+        <div class="is-size-14 is-text-normal has-text-weight-normal">全托管的云原生 MQTT 消息服务</div>
+    </div>
+    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a >
+</section>

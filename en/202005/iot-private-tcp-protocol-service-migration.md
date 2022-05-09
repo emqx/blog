@@ -121,4 +121,10 @@ The more value of **EMQX TCP protocol specification** and **emqx-tcp** plugs is 
 
 Only EMQX Enterprise Edition supports the private TCP protocol access adaptation. After the adaptation, EMQX Enterprise and corresponding function plugins are delivered. Open source users with Erlang development experience can also develop and implement it by themselves.
 
-Welcome to download and free try [EMQX Enterprise](https://www.emqx.com/en/products/emqx). If you have any requirements on private TCP protocol access customization and other privatization customization, you can contact EMQ: [contact@emqx.io](mailto:contact@emqx.io).
+
+<section class="promotion">
+    <div>
+        Try EMQX Enterprise for Free
+    </div>
+    <a href="https://www.emqx.com/en/try?product=enterprise" class="button is-gradient px-5">Get Started →</a >
+</section>
