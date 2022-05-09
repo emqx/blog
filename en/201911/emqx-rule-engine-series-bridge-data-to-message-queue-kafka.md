@@ -218,3 +218,12 @@ Then use the Kafka command to see if the message was produced successfully:
 So far, we have implemented business development of a rule engine bridging message to Kafka's through the rules engine.
 
 The open source version of the rules engine only supports forwarding to Web Server, and the function to forward to Kafka is only available in the Enterprise Edition.
+
+
+<section class="promotion">
+    <div>
+        Try EMQX Cloud for Free
+        <div class="is-size-14 is-text-normal has-text-weight-normal">A fully managed, cloud-native MQTT service</div>
+    </div>
+    <a href="https://www.emqx.com/en/signup?continue=https://cloud-intl.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">Get Started →</a >
+</section>

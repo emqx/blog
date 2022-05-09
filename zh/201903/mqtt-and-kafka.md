@@ -19,3 +19,12 @@ MQTT 协议完美地解决了上述几点要求，并且最新版的 MQTT v5.0 �
 
 
 MQTT  broker 与 Kafka 所采用的消息交换范式是如此相近，将其两者结合起来使用显然是一个非常不错的主意，事实上，很多 MQTT broker，诸如 **EMQX 已经实现了 MQTT broker 与 Kafka 的桥接。**MQTT broker 用来快速的对大量物联网设备发来的消息做接收处理响应，而 Kafka 对这些大量的数据做采集存储，交给数据分析人员来分析处理消息。
+
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX Cloud
+        <div class="is-size-14 is-text-normal has-text-weight-normal">全托管的云原生 MQTT 消息服务</div>
+    </div>
+    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a >
+</section>

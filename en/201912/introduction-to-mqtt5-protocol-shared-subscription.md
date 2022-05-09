@@ -50,3 +50,12 @@ Start a publishing client to publish messages to the topic.
 ![image20191111144814890.png](https://static.emqx.net/images/d78a66888dfa5664dc44a819a5b195c6.png)
 
 `$ share / a / topic` and` $ share / b / topic` belong to different session groups. The non-shared subscription  `topic` is load-balanced across all session groups. The client `sub3` receives all messages because there is only one session in the group, and the clients` sub1` and `sub2` receive messages randomly according to the random policy we configured.
+
+
+<section class="promotion">
+    <div>
+        Try EMQX Cloud for Free
+        <div class="is-size-14 is-text-normal has-text-weight-normal">A fully managed, cloud-native MQTT service</div>
+    </div>
+    <a href="https://www.emqx.com/en/signup?continue=https://cloud-intl.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">Get Started →</a >
+</section>

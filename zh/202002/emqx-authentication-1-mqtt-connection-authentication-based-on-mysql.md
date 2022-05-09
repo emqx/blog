@@ -199,3 +199,12 @@ Connection Refused: not authorised.
 ## 总 结    
 
 读者在理解了 EMQX MySQL 认证原理之后，可以结合 MySQL 拓展相关应用。欢迎关注 EMQX 安全系列文章，后续本系列将依次讲解 EMQX 与物联网安全相关问题，助您构建高安全物联网项目。
+
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX Cloud
+        <div class="is-size-14 is-text-normal has-text-weight-normal">全托管的云原生 MQTT 消息服务</div>
+    </div>
+    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a >
+</section>

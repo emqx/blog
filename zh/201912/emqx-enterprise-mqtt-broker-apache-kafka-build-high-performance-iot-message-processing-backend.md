@@ -347,3 +347,12 @@ kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic message_comm
 通过本文读者可以了解到 EMQX + Kafka 物联网消息处理方案为消息通信与业务处理带来的重要作用，利用该方案可以搭建松耦合、高性能、高容错的物联网消息处理平台，实现数据高效、安全地处理。
 
 本文编码实现具体的业务逻辑，读者可以根据本文提供的业务原型与系统架构进行扩展。由于 RabbitMQ、RocketMQ、Pulsar 等 EMQX 已经支持的消息/流处理中间的在物联网项目中集成的架构思想与 Kafka 相近，读者也可以以本文作为参考，根据自身技术栈自由选用相关组件进行方案集成。
+
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX Cloud
+        <div class="is-size-14 is-text-normal has-text-weight-normal">全托管的云原生 MQTT 消息服务</div>
+    </div>
+    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a >
+</section>

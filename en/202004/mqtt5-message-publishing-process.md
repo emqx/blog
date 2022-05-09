@@ -72,4 +72,12 @@ The update of QoS in the MQTT 5.0 mainly reflected in when QoS 2 recipients proc
 
 - In the QoS 2 receiver, it will return the previous Packet Id and the PUBERC message with the tag Reason Code. 
 
-The [EMQX MQTT broker](https://www.emqx.com/en/products/emqx) v3.0 already includes support for the MQTT 5.0 protocol, welcome to use.
+
+
+<section class="promotion">
+    <div>
+        Try EMQX Cloud for Free
+        <div class="is-size-14 is-text-normal has-text-weight-normal">A fully managed, cloud-native MQTT service</div>
+    </div>
+    <a href="https://www.emqx.com/en/signup?continue=https://cloud-intl.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">Get Started →</a >
+</section>

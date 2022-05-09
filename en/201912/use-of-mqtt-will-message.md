@@ -62,3 +62,14 @@ Here's how to use Retained messages with Will messages.
 1. The will message of client A is set to "offline", and the topic of the will is set to  `A/status` that is the same as the topic of a normal sending status;
 2. When client A is connected, send the "Online" Retained message to the topic `A/status`. When other clients subscribe to the topic` A/status`, they obtain the Retained message as "online";
 3. When client A disconnects abnormally, the system automatically sends an "offline" message to the topic `A/status`. Other clients that subscribe to this topic will immediately receive an" offline "message; if the will message is set  Retained, and when a new client subscribing to the `A/status` topic comes online, the message obtained is“ offline ”.
+
+
+
+
+<section class="promotion">
+    <div>
+        Try EMQX Cloud for Free
+        <div class="is-size-14 is-text-normal has-text-weight-normal">A fully managed, cloud-native MQTT service</div>
+    </div>
+    <a href="https://www.emqx.com/en/signup?continue=https://cloud-intl.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">Get Started →</a >
+</section>

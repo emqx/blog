@@ -218,3 +218,12 @@ Redis 命令行中查看哈希表记录得到数据如下：
 ![WX201907181142402x.png](https://static.emqx.net/images/45ccb0d06301d333abda2adca6186be6.png)
 
 至此，我们通过规则引擎实现了使用规则引擎存储消息到 Reids的业务开发。
+
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX Cloud
+        <div class="is-size-14 is-text-normal has-text-weight-normal">全托管的云原生 MQTT 消息服务</div>
+    </div>
+    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a >
+</section>

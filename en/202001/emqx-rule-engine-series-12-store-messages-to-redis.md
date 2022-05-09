@@ -211,3 +211,12 @@ The data obtained by viewing the hash table records on the Redis command line is
 ![WX201907181142402x.png](https://static.emqx.net/images/ea5cf04f77cbbc8b76d58965a4ba856a.png)
 
 So far, we have used the rule engine to implement business development to store messages to Reids.
+
+
+<section class="promotion">
+    <div>
+        Try EMQX Cloud for Free
+        <div class="is-size-14 is-text-normal has-text-weight-normal">A fully managed, cloud-native MQTT service</div>
+    </div>
+    <a href="https://www.emqx.com/en/signup?continue=https://cloud-intl.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">Get Started →</a >
+</section>

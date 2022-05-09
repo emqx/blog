@@ -155,3 +155,12 @@ EMQX  管理控制台 **WebSocket** 页面中，向 `sample` 主题发布如上�
 ## 总结
 
 读者在理解了 InfluxDB 中所存储的数据结构，学习使用消息模板配置写入消息字段格式后可以结合 InfluxDB 拓展相关应用。
+
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX Cloud
+        <div class="is-size-14 is-text-normal has-text-weight-normal">全托管的云原生 MQTT 消息服务</div>
+    </div>
+    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a >
+</section>

@@ -154,6 +154,10 @@ If the retain flag of the Publish packet sent by the client to the server is 0, 
 
 The payload contains application messages to be published. The content and format of the data is specific to the application and images, any encoded text, encrypted data, and almost all binary data can be sent .
 
-------
-
-Welcome to our open source project [github.com/emqx/emqx](https://github.com/emqx/emqx). Please visit the [ documentation](https://docs.emqx.io) for details.
+<section class="promotion">
+    <div>
+        Try EMQX Cloud for Free
+        <div class="is-size-14 is-text-normal has-text-weight-normal">A fully managed, cloud-native MQTT service</div>
+    </div>
+    <a href="https://www.emqx.com/en/signup?continue=https://cloud-intl.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">Get Started →</a >
+</section>

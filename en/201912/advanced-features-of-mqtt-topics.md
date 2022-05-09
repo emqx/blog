@@ -74,3 +74,12 @@ For example, if we use sensors to monitor the temperature, humidity, and air qua
 - `myhome/kitchen/airquality`
 
 When we want to get all the bedroom data, we can subscribe to the topic `myhome/bedroom/+`. When we want to get the temperature data of three rooms, we can subscribe the topic `myhom/+/temperature`. When we want to get all the data, we can subscribe to `myhome/#` or `#`.
+
+
+<section class="promotion">
+    <div>
+        Try EMQX Cloud for Free
+        <div class="is-size-14 is-text-normal has-text-weight-normal">A fully managed, cloud-native MQTT service</div>
+    </div>
+    <a href="https://www.emqx.com/en/signup?continue=https://cloud-intl.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">Get Started →</a >
+</section>

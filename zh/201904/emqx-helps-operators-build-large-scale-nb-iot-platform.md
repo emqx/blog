@@ -35,3 +35,12 @@ EMQX 创新的分布式集群方案，能够实现新节点的自动增加和故
 ![WX20190803150105.png](https://static.emqx.net/images/a66989f3d63cd894d937c590e545c62c.png)
 
 EMQX 具备的海量设备接入、千万级高并发、物联网全协议栈、以及毫秒级低延时等能力，助力电信级物联网AEP平台在数月内搭建完成，有效的支撑了该运营商 NB-IoT 乃至整个 IoT 平台战略的落地与商业化运营。
+
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX Cloud
+        <div class="is-size-14 is-text-normal has-text-weight-normal">全托管的云原生 MQTT 消息服务</div>
+    </div>
+    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a >
+</section>

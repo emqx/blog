@@ -23,3 +23,12 @@ It is not difficult to see that `Receive Maximum` is actually the same as the In
 | max_inflight       | integer | >= 0              | 32 *(external)*,<br /> 128 *(internal)*    | Inflight Window length limit, 0 means no limit               |
 | max_mqueue_len     | integer | >= 0              | 1000 *(external)*,<br />10000 *(internal)* | Message Queue length limit, 0 means no limit                 |
 | mqueue_store_qos0  | enum    | true,<br /> false | true                                       | Whether EMQX store QoS 0 messages to Message Queue when the client is offline |
+
+
+<section class="promotion">
+    <div>
+        Try EMQX Cloud for Free
+        <div class="is-size-14 is-text-normal has-text-weight-normal">A fully managed, cloud-native MQTT 5.0 service</div>
+    </div>
+    <a href="https://www.emqx.com/en/signup?continue=https://cloud-intl.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">Get Started →</a >
+</section>

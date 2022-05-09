@@ -272,3 +272,12 @@
 [EMQX 企业版](https://www.emqx.com/zh/products/emqx)，及其[物联网 MQTT 云服务](https://www.emqx.com/zh/cloud)在解决上述问题已经提供了很好的解决方案，有兴趣的读者可以参考相关链接了解更多的信息。
 
 为了实现数据的高安全性（避免上传到云端），降低业务处理时延，以及数据传输成本，在解决方案中可以考虑采用边缘计算。Azure IoT Edge 和 AWS 的 Greengrass 提供了在边缘端的解决方案。EMQ 也提供了开源的超轻量级边缘物联网实时数据分析 (IoT  Edge streaming analytics) 方案 [Kuiper](<https://github.com/lf-edge/ekuiper>)，读者可以参考[这篇文章](https://www.emqx.com/zh/blog/lightweight-edge-computing-emqx-kuiper-and-azure-iot-hub-integration-solution)以获取更详细的信息。
+
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX Cloud
+        <div class="is-size-14 is-text-normal has-text-weight-normal">全托管的云原生 MQTT 消息服务</div>
+    </div>
+    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a >
+</section>

@@ -19,3 +19,13 @@ Although the retained message is stored in the server, it is not part of the ses
 2. The message expiration interval attribute is also applicable in the retained message. If the client sets this attribute, the retained message will be deleted after the storage expiration time is due.
 
 With retained messages, new subscribers can get the most recent status immediately, without waiting for unpredictable times, which is very important in many scenarios.
+
+
+
+<section class="promotion">
+    <div>
+        Try EMQX Cloud for Free
+        <div class="is-size-14 is-text-normal has-text-weight-normal">A fully managed, cloud-native MQTT service</div>
+    </div>
+    <a href="https://www.emqx.com/en/signup?continue=https://cloud-intl.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">Get Started →</a >
+</section>
