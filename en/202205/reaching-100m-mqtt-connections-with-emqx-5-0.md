@@ -12,7 +12,7 @@ In EMQX 5.0, we attempted to mitigate this issue in a new DB backend type called
 
 In order to be able to use this new DB backend by default, we needed to stress test it and verify that it does indeed scale well horizontally. For that end, we performed tests in which a 23 node EMQX cluster sustained 100 million concurrent connections, divided in half between publishers and subscribers, and published messages in a one-to-one fashion. We also compared the RLOG DB backend to the conventional Mnesia one, and confirmed that RLOG can indeed sustain higher arrival rates than Mnesia.
 
-## How we tested it
+## How we tested the scalability of mqtt broker
 
 For deploying and running our cluster tests, we used [AWS CDK](https://aws.amazon.com/cdk/), which allowed us to experiment with different instance types and numbers, and also trying out different development branches of EMQX. You can checkout our scripts in [this Github repo](https://github.com/emqx/cdk-emqx-cluster). In our load generator nodes (*"loadgens"* for short), we used our [emqtt-bench](https://github.com/emqx/emqtt-bench/) tool to generate the connection / publishing / subscribing traffic with various options.  [EMQX's Dashboard](https://www.emqx.io/docs/en/v4.4/getting-started/dashboard.html#introduction) and [Prometheus](https://prometheus.io/) were used for monitoring the progress of the test and the instances' health.
 
