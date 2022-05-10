@@ -110,5 +110,5 @@ WHERE
     <div>
         免费试用 EMQX 企业版
     </div>
-    <a href="https://www.emqx.com/zh/try?product=enterprise" class="button is-gradient px-5">开始试用 →</a >
+    <a href="https://www.emqx.com/zh/try?product=enterprise" class="button is-gradient px-5">开始试用 →</a>
 </section>

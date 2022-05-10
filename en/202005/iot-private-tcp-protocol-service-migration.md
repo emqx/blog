@@ -126,5 +126,5 @@ Only EMQX Enterprise Edition supports the private TCP protocol access adaptation
     <div>
         Try EMQX Enterprise for Free
     </div>
-    <a href="https://www.emqx.com/en/try?product=enterprise" class="button is-gradient px-5">Get Started →</a >
+    <a href="https://www.emqx.com/en/try?product=enterprise" class="button is-gradient px-5">Get Started →</a>
 </section>
