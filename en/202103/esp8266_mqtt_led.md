@@ -214,5 +214,5 @@ Stay tuned for more IoT development and ESP8266 related articles.
         Try EMQX Cloud for Free
         <div class="is-size-14 is-text-normal has-text-weight-normal">No credit card required</div>
     </div>
-    <a href="https://www.emqx.com/en/signup?continue=https://cloud-intl.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">Get Started →</a >
+    <a href="https://www.emqx.com/en/signup?continue=https://cloud-intl.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">Get Started →</a>
 </section>

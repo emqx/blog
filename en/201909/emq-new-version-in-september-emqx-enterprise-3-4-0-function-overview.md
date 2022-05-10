@@ -109,5 +109,5 @@ In future versions, Dashboard's functions will continue to be enhanced, and the 
     <div>
         Try EMQX Enterprise for Free
     </div>
-    <a href="https://www.emqx.com/en/try?product=enterprise" class="button is-gradient px-5">Get Started →</a >
+    <a href="https://www.emqx.com/en/try?product=enterprise" class="button is-gradient px-5">Get Started →</a>
 </section>

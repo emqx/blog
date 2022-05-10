@@ -351,5 +351,5 @@ The code of this article implements specific business logic, and readers can exp
     <div>
         Try EMQX Enterprise for Free
     </div>
-    <a href="https://www.emqx.com/en/try?product=enterprise" class="button is-gradient px-5">Get Started →</a >
+    <a href="https://www.emqx.com/en/try?product=enterprise" class="button is-gradient px-5">Get Started →</a>
 </section>
