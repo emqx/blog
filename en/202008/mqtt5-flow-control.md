@@ -6,7 +6,7 @@ MQTT v5 brings a lot of new features, we will show these features in an easy-to-
 
 Usually, the resources of the server are fixed and limited, while the flow of the client may change anytime and anywhere. The normal business (users centrally accessing and many devices restarting) is maliciously attacked and the network fluctuation will cause the flow dramatically increasing. If the server does not limit the flow, the load will sharply increase, and then will cause the speed of responding decreasing, affect other businesses and even cause system breakdown.
 
-![image20200730133959150.png](https://static.emqx.net/images/c5d21ba2ca945005ba8477cd0d6debbf.png)
+![image20200730133959150.png](https://assets.emqx.com/images/c5d21ba2ca945005ba8477cd0d6debbf.png)
 
 Therefore, we need flow control, it can be the sending rate for limiting the sender or receiving rate for limiting the receiver, and the final goal is to ensure the stability of the system. The common flow control algorithms are sliding window counting method, leaky bucket algorithm and token bucket algorithm.
 
@@ -26,7 +26,7 @@ This algorithm can use the resources more positively and fully because it does n
 
 MQTT v5 added a Receive Maximum attribute for supporting flow control. It exists in the CONNECT packet and CONNACK packet and indicates the largest number of PUBLISH packet with the QoS which is 1 and 2 that the client and server willing to process simultaneously, that is the maximum sending quota that the opposite can use.
 
-![image20200730173320715.png](https://static.emqx.net/images/7dc9e6680507322a743d721db1def117.png)
+![image20200730173320715.png](https://assets.emqx.com/images/7dc9e6680507322a743d721db1def117.png)
 
 ## Why do not have QoS 0 ?
 
@@ -39,3 +39,13 @@ MQTT v5 gives an imperfect solution or it is just a suggestion: when the sending
 ## Summary
 
 Although the flow control mechanism of MQTT v5 still has some shortages, we still suggest that users use it. The sending quota algorithm based on the response packet enables the sender to maximize the use of resources. Receive Maximum enables both communication parties do not need to negotiate the sending quota in advance, thus get greater transparency and flexibility, which is really useful for accessing multi-vendor equipment.
+
+
+
+<section class="promotion">
+    <div>
+        Try EMQX Cloud for Free
+        <div class="is-size-14 is-text-normal has-text-weight-normal">A fully managed, cloud-native MQTT 5.0 service</div>
+    </div>
+    <a href="https://www.emqx.com/en/signup?continue=https://cloud-intl.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">Get Started →</a >
+</section>

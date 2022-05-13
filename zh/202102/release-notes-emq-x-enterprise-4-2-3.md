@@ -12,7 +12,7 @@ EMQ 致力于为企业提供优质的万物互联引擎，不仅与主流汽车�
 
 [EMQX 企业版](https://www.emqx.com/zh/products/emqx)中提供了 GB/T 32960 协议网关模块，按照其功能逻辑和整个系统的关系，将整个消息交换的过程可以分成三个部分：终端侧，平台侧和其它侧。
 
-![画板2x.png](https://static.emqx.net/images/1309966aded70c111bf9b8ed3b3a5ee4.png)
+![画板2x.png](https://assets.emqx.com/images/1309966aded70c111bf9b8ed3b3a5ee4.png)
 
 1. 终端侧：通过 GB/T 32960 协议进行交换数据，实现不同类型的数据的上报，或者发送下行的消息到终端。
 2. 平台侧：EMQX GB/T 32960 网关将报文解码后在 EMQX 内部转为 [MQTT 协议](https://www.emqx.com/zh/mqtt)进行数据上下行操作：
@@ -30,11 +30,11 @@ EMQ 致力于为企业提供优质的万物互联引擎，不仅与主流汽车�
 2. 点击 选择 按钮，进入  **GB/T 32960 网关** 配置页面，进行启动前配置；
 3. 配置重传、报文、消息长度等参数之后，配置 TCP 监听器参数，点击 添加 后即可启用 GB/T 32960 网关。
 
-![image20210204150409040.png](https://static.emqx.net/images/5235a04561f6b355a4df35d52e18dfa2.png)
+![image20210204150409040.png](https://assets.emqx.com/images/5235a04561f6b355a4df35d52e18dfa2.png)
 
-![image20210204150435383.png](https://static.emqx.net/images/434b09bd47c15f406987825690fae2fb.png)
+![image20210204150435383.png](https://assets.emqx.com/images/434b09bd47c15f406987825690fae2fb.png)
 
-![image20210204150536753.png](https://static.emqx.net/images/31618fa76a949d445b1dc3755d415ba3.png)
+![image20210204150536753.png](https://assets.emqx.com/images/31618fa76a949d445b1dc3755d415ba3.png)
 
 ## 相关资料
 
@@ -246,3 +246,11 @@ GB/T 32960 网关对终端的控制采用 Request-Response 模式，向对用的
     "Param": {"Level": 0, "Message": "alarm message"}
 }
 ```
+
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX 企业版
+    </div>
+    <a href="https://www.emqx.com/zh/try?product=enterprise" class="button is-gradient px-5">开始试用 →</a >
+</section>

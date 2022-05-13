@@ -69,3 +69,12 @@ Rlog（复制事务日志的简称）将集群分成节点集的两个角色，�
 ### StatsD, etcd 3.4 与 HTTP API
 
 团队成员在本月陆续完成了对 StatsD 和 etcd 3.4 的支持，分别扩展了 EMQX 的监控能力和集群能力。现在，我们正在设计更加规范更加 Restful 的 HTTP API，以提高对开发者的友好性。
+
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX Cloud
+        <div class="is-size-14 is-text-normal has-text-weight-normal">无须绑定信用卡</div>
+    </div>
+    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a >
+</section>

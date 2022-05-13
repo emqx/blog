@@ -27,7 +27,7 @@ wumei-smart 是一个简单易用的生活物联网平台，可用于企业搭�
 
 **框架图**
 
-![框架图](https://static.emqx.net/images/b06b6256ca212b52aca30ec7854f228b.png)
+![框架图](https://assets.emqx.com/images/b06b6256ca212b52aca30ec7854f228b.png)
 
 ## 使用说明
 

@@ -20,7 +20,7 @@
 
 ## 方案架构
 
-![画板2x.jpg](https://static.emqx.net/images/2facab5b9c79124170654f4e53ae75e0.jpg)
+![画板2x.jpg](https://assets.emqx.com/images/2facab5b9c79124170654f4e53ae75e0.jpg)
 
 
 
@@ -59,7 +59,7 @@
 - 可基于大数据，对作业进行持续优化；
 
   
-![1603352800880.jpg](https://static.emqx.net/images/94de1353e2df629741f7c7ffe8ba9903.jpg)                                                                                       
+![1603352800880.jpg](https://assets.emqx.com/images/94de1353e2df629741f7c7ffe8ba9903.jpg)                                                                                       
 
 *某光伏电站详情展示*
 
@@ -70,3 +70,12 @@
 ## 结语
 
 EMQX 在伯镭的几个环境中都运行稳定，提供了强有力的数据能力支撑。同时，其所提供的大量应用接口也极大提高了伯镭业务开发效率。EMQ 团队也在我方整个方案的搭建、测试过程中发挥了关键性作用。我们期待继续同 EMQ 强强联手，进行市场需求的快速响应和功能迭代改善，应对未来更加多样和先进的新能源智能应用场景。
+
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX Cloud
+        <div class="is-size-14 is-text-normal has-text-weight-normal">全托管的云原生 MQTT 消息服务</div>
+    </div>
+    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a >
+</section>

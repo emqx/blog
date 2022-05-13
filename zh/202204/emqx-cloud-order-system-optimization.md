@@ -10,11 +10,11 @@
 
 用户现可以通过**控制台->财务管理->续费管理**模块内选择是否自动续费。此外，按量付费部署转包年部署时，也支持转多年部署。
 
-![EMQX Cloud 包年时长选择界面](https://static.emqx.net/images/9716313ebd183cae44e21a5801cb2290.png)
+![EMQX Cloud 包年时长选择界面](https://assets.emqx.com/images/9716313ebd183cae44e21a5801cb2290.png)
 
 <center>包年时长选择界面</center>
 
-![EMQX Cloud 续费管理界面](https://static.emqx.net/images/595d896ea5f63f303d184993b7f8744e.png)
+![EMQX Cloud 续费管理界面](https://assets.emqx.com/images/595d896ea5f63f303d184993b7f8744e.png)
 
 <center>续费管理界面</center>
 
@@ -25,11 +25,11 @@
 
 订单体系也为包年相关的购买、续费提供消费记录查询，为用户的财务管理提供了极大便利。
 
-![EMQX Cloud 订单管理界面](https://static.emqx.net/images/a3b2dba5f7ab63d59a908d74507236c6.png)
+![EMQX Cloud 订单管理界面](https://assets.emqx.com/images/a3b2dba5f7ab63d59a908d74507236c6.png)
 
 <center>订单管理界面</center>
 
-![EMQX Cloud 订单凭证下载界面](https://static.emqx.net/images/1b9e9f496e0dda25efb661d6fc3b502a.png)
+![EMQX Cloud 订单凭证下载界面](https://assets.emqx.com/images/1b9e9f496e0dda25efb661d6fc3b502a.png)
 
 <center>订单凭证下载界面</center>
 
@@ -42,17 +42,17 @@
 
 #### 1、新购包年部署
 
-![EMQX Cloud 新购包年部署](https://static.emqx.net/images/e69c130af61769bc86ff2c425492742e.png)
+![EMQX Cloud 新购包年部署](https://assets.emqx.com/images/e69c130af61769bc86ff2c425492742e.png)
 
 新购包年部署将会形成一个订单并支持多种方式支付。
 
-![EMQX Cloud 新购包年部署订单](https://static.emqx.net/images/4b33b3f29d9f4a034403e1c531ef54b4.png)
+![EMQX Cloud 新购包年部署订单](https://assets.emqx.com/images/4b33b3f29d9f4a034403e1c531ef54b4.png)
 
 #### 2、按量付费部署转包年部署
 
 若用户当前的部署计费模式为按小时计费，可一键转为包年付费模式，预计比按小时计费节省 15% 的费用。同样支持连续多年包年购买。
 
-![EMQX Cloud 按量付费部署转包年部署](https://static.emqx.net/images/edf2b51de1eae995d5988e60e51033f8.png)
+![EMQX Cloud 按量付费部署转包年部署](https://assets.emqx.com/images/edf2b51de1eae995d5988e60e51033f8.png)
 
 #### 3、自动续费
 
@@ -62,7 +62,7 @@
 
 若账户余额中没有足够的费用，自动扣费将失败，并生成一笔未支付的订单。可以在【财务管理】- 【订单】中查看到该笔订单。进行支付即可完成续费。
 
-![EMQX Cloud 自动续费](https://static.emqx.net/images/7a694997212088def99006bd4a34f0bf.png)
+![EMQX Cloud 自动续费](https://assets.emqx.com/images/7a694997212088def99006bd4a34f0bf.png)
 
 >注意：
 >
@@ -76,11 +76,20 @@
 
 您可以登陆控制台，在「财务管理」->「订单」里，对您所有包年相关的订单进行管理。
 
-![EMQX Cloud 订单管理](https://static.emqx.net/images/ce499c0ebf3b57a7fdb75c4a26718ec1.png)
+![EMQX Cloud 订单管理](https://assets.emqx.com/images/ce499c0ebf3b57a7fdb75c4a26718ec1.png)
 
 点击订单详情，可查看订单明细，并对未支付订单进行**支付或取消订单**操作。点击下载 PDF，会生产订单 PDF，可用于公司报销申请。
 
 >注：未支付订单有效期为 7 天，在此时间内未完成支付，则订单状态会自动转为已取消。若您的订单为续费订单，请注意在 7 天内进行支付。如果部署到期，部署的服务将停止，直到订单支付成功后，可重新变成运行状态。
 
 
-![EMQX Cloud 取消订单](https://static.emqx.net/images/a44b084fb688257cae218c431aa24a02.png)
+![EMQX Cloud 取消订单](https://assets.emqx.com/images/a44b084fb688257cae218c431aa24a02.png)
+
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX Cloud
+        <div class="is-size-14 is-text-normal has-text-weight-normal">无须绑定信用卡</div>
+    </div>
+    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a >
+</section>

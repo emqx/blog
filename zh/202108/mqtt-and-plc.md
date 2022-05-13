@@ -22,7 +22,7 @@ PLC 即可编程逻辑控制器，是工业自动化领域的核心设备，广�
 
 实现工业场景下的万物互联离不开对工业自动化设备的数据采集。其中 PLC 常用的工业现场总线协议就多达数十种，此外各大 PLC 厂商基本都有各自的私有总线协议。由于现场总线种类繁多各异，传统的工业 PLC 数据采集一般通过在设备侧部署边缘网关的方式进行：使用边缘网关将各类协议统一，再将 PLC 数据采集及汇聚，转发到 [IoT 平台](https://www.emqx.com/zh/cloud)，以此实现设备间的数据互联。
 
-![当前的工业 PLC 数据采集.png](https://static.emqx.net/images/5743299c8fe6d5f6bc1a6415a2742cb7.png)
+![当前的工业 PLC 数据采集.png](https://assets.emqx.com/images/5743299c8fe6d5f6bc1a6415a2742cb7.png)
 
 然而，基于边缘网关的数据采集方式，存在以下不足：
 
@@ -41,7 +41,7 @@ PLC 即可编程逻辑控制器，是工业自动化领域的核心设备，广�
 - 西门子已经将 MQTT 客户端功能封装成 PLC 的库文件，通过西门子 S7-1200、S7-1500 可以实现基于 MQTT 3.1.1 协议的数据上报，完成 PLC 与 MQTT 消息服务器的轻松连接。
 - 德国倍福推出了 TF6701 IOT 通讯库，通过 MQTT 协议可以将 PLC 数据直接发往各大公有云 [IoT 平台](https://www.emqx.com/zh/cloud)以及 [MQTT 消息服务器](https://www.emqx.io/zh)；TF6701 同时支持将 PLC 中数据封装成 json 格式，完成数据上报，实现 OT 和 IT 领域的数据格式统一化。
 
-![PLC 集成 MQTT 协议.png](https://static.emqx.net/images/1b5bb1ab1b62682f468f8e7c6c477095.png)
+![PLC 集成 MQTT 协议.png](https://assets.emqx.com/images/1b5bb1ab1b62682f468f8e7c6c477095.png)
 
 <center>图片来源：https://infosys.beckhoff.com </center>
 
@@ -71,7 +71,7 @@ PLC 即可编程逻辑控制器，是工业自动化领域的核心设备，广�
 
 当前，新一轮科技革命和产业变革蓬勃兴起，工业生产逐渐成为了人工智能的重点探索方向，工业智能发展的前提是海量数据的全面实时感知。MQTT 与 PLC 在工业现场的融合，完成了高精度数据的实时采集，在云端结合诸如 EMQX 这类具备高吞吐、低延时特性的物联网消息中间件，可以实进一步现海量工业数据的实时移动、处理、分析及存储，为工业智能的应用夯实了底层基座。在风电行业，通过实时采集风机传动链状态监测系统 (CMS) 的振动数据和风机 SCADA 系统的工况运行数据，两者进行融合分析，建立风机传动链部件的早期失效预警模型，可以及时预警核心部件的早期失效、采取积极预防措施，降低风机核心部件发生重大故障的概率，避免大部件维修成本及其他各项损失。
 
-![传动链部件预测性维护.png](https://static.emqx.net/images/f4f83c48ccaab49cb8de1083c9c4d8c4.png)
+![传动链部件预测性维护.png](https://assets.emqx.com/images/f4f83c48ccaab49cb8de1083c9c4d8c4.png)
 
 ### 提高设备利用率：远程设备诊断
 
@@ -81,8 +81,17 @@ PLC 即可编程逻辑控制器，是工业自动化领域的核心设备，广�
 
 基于物联网的全面感知，结合云端的数据分析和建模，最终要形成决策优化的应用闭环，自下而上的信息流和自上而下的决策流将共同构成工业智能应用的核心链路。MQTT 与 PLC 在工业现场的融合，无需边缘网关及协议转换，实现了真正的一网到底，在数据中心到工业现场之间，构筑了一条安全、稳定、低时延的通讯链路。在新能源发电领域，MQTT 低时延的通讯链路直达 PLC，可以在发电侧快速响应调度层的电网调频、无功补偿等指令，推进电网的智能化发展。
 
-![电网智能调度.png](https://static.emqx.net/images/b5d8ef4bf4b2ff557459834f299a64e6.png)
+![电网智能调度.png](https://assets.emqx.com/images/b5d8ef4bf4b2ff557459834f299a64e6.png)
 
 <center>图片来源：《工业互联网体系架构 2.0 报告》</center>
 
 可以看到，集成了 MQTT 协议的 PLC 将使工业数据采集场景变得更加简单高效。结合服务器端或者云端的高性能 MQTT 消息中间件，工业生产数据更得以轻松上云，使其价值得到充分的发挥。
+
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX Cloud
+        <div class="is-size-14 is-text-normal has-text-weight-normal">全托管的云原生 MQTT 消息服务</div>
+    </div>
+    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a >
+</section>

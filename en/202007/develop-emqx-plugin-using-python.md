@@ -11,7 +11,7 @@ From v4.1, EMQX [MQTT broker](https://www.emqx.com/en/products/emqx) provides th
 
 Python and Java drivers are based on the processes [Erlang/OTP-Port](https://erlang.org/doc/tutorial/c_port.html) to implement communication, and have very high throughput performance. This article will take Python expansion as an example to introduce how to use EMQX cross-language expansion.
 
-![upeb67488ae758908b02ac8567c37fcf2d0a9.png](https://static.emqx.net/images/81aa1ab1028f0e59c08b0a00dc5ade08.png)
+![upeb67488ae758908b02ac8567c37fcf2d0a9.png](https://assets.emqx.com/images/81aa1ab1028f0e59c08b0a00dc5ade08.png)
 
 
 
@@ -152,3 +152,12 @@ Currently, the EMQX Python extension SDK is open source, if you have higher requ
 
 - Code repository: [emqx-extension-python-sdk](https://github.com/emqx/emqx-extension-python-sdk)
 - You can refer to this example to wrap: [emqx-extension-hook main.py](https://github.com/emqx/emqx-extension-hook/blob/master/test/scripts/main.py)
+
+
+<section class="promotion">
+    <div>
+        Try EMQX Cloud for Free
+        <div class="is-size-14 is-text-normal has-text-weight-normal">A fully managed, cloud-native MQTT service</div>
+    </div>
+    <a href="https://www.emqx.com/en/signup?continue=https://cloud-intl.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">Get Started →</a >
+</section>

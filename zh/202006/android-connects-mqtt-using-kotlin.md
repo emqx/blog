@@ -188,20 +188,29 @@ fun disconnect() {
 
 首先将 Android 客户端连接到 MQTT 服务器，然后订阅 topic:  `a/b`，可以看到连接成功和成功订阅的日志
 
-![MQTT connect and subscribe](https://static.emqx.net/images/5513474b6c2a4848c232825da093bc25.png)
+![MQTT connect and subscribe](https://assets.emqx.com/images/5513474b6c2a4848c232825da093bc25.png)
 
 然后我们使用 [MQTT 5.0 客户端工具 - MQTT X](https://mqttx.app/zh) 进行测试，发布消息到 topic: `a/b`，客户端可以看到收到消息的日志
 
-![MQTT 5.0 Client Tool - MQTT X](https://static.emqx.net/images/ab664c88b18208cc60fa476adb91f284.png)
+![MQTT 5.0 Client Tool - MQTT X](https://assets.emqx.com/images/ab664c88b18208cc60fa476adb91f284.png)
 
-![receive MQTT messages](https://static.emqx.net/images/8db9cd6cf35980d4ab6508984331ab2c.png)
+![receive MQTT messages](https://assets.emqx.com/images/8db9cd6cf35980d4ab6508984331ab2c.png)
 
 我们在客户端发布消息到 topic: `a/b` ，因为我们订阅了该 topic，同时也会收到消息，最后我们断开客户端与 MQTT 服务器的连接，日志如下
 
-![publish mqtt message and disconnect](https://static.emqx.net/images/11c4cf97ed7a0fc31a3c5547a709356e.png)
+![publish mqtt message and disconnect](https://assets.emqx.com/images/11c4cf97ed7a0fc31a3c5547a709356e.png)
 
 至此，我们已经完成了Android 上 MQTT 客户端的构建，实现了客户端与 MQTT 服务器的连接、主题订阅、收发消息等功能。
 
 MQTT 可以以极少的代码和有限的带宽，为连接远程设备提供实时可靠的消息服务。作为一种低开销、低带宽占用的即时通讯协议，使其在物联网、小型设备、移动应用等方面有较广泛的应用。
 
 而 Kotlin 也是 Google 官方主推的一门语言，结合 MQTT 协议及 [MQTT 云服务](https://www.emqx.com/zh/cloud)，我们可以开发更多有趣的应用。
+
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX Cloud
+        <div class="is-size-14 is-text-normal has-text-weight-normal">全托管的云原生 MQTT 消息服务</div>
+    </div>
+    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a >
+</section>

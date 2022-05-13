@@ -6,7 +6,7 @@ EMQX Enterprise 适用于各种物联网应用场景，助企业快速构建物�
 
 下载：无需提供任何信息， 立即[下载试用](https://www.emqx.com/zh/try?product=enterprise)
 
-![enterprisemqttbroker.png](https://static.emqx.net/images/4b87d5ae6dc17bb84f6414e4d8fc504c.png)
+![enterprisemqttbroker.png](https://assets.emqx.com/images/4b87d5ae6dc17bb84f6414e4d8fc504c.png)
 
 
 
@@ -24,7 +24,7 @@ EMQX Enterprise  v4.2.0 版本重点加强了热配置的支持，可以在不�
 
 同插件一样， **模块** 用于 EMQX 的功能扩展，其特点是 **「按需添加管理，动态可视化配置」**。
 
-![image20201019175559015.png](https://static.emqx.net/images/903d449fa0730af1efc10bffb0631df6.png)
+![image20201019175559015.png](https://assets.emqx.com/images/903d449fa0730af1efc10bffb0631df6.png)
 
 
 模块结合 EMQX 分布式集群特点，解决了插件开发、使用中的各种痛点：
@@ -52,7 +52,7 @@ EMQX Enterprise  v4.2.0 版本重点加强了热配置的支持，可以在不�
 
 EMQX 支持在 Dashboard 上传 SSL 证书，方便管理相关资源的 SSL 证书。
 
-![image20201019174820927.png](https://static.emqx.net/images/8de954c6c9e5c1ec00aecea5d8826580.png)
+![image20201019174820927.png](https://assets.emqx.com/images/8de954c6c9e5c1ec00aecea5d8826580.png)
 
 
 
@@ -60,7 +60,7 @@ EMQX 支持在 Dashboard 上传 SSL 证书，方便管理相关资源的 SSL 证
 
 随着规则引擎的功能增多，创建、管理规则引擎的 **动作** 变得复杂。此版本中 Dashboard 对规则引擎的动作进行了分类，方便用户快速定位所需的功能。
 
-![image20201019175055630.png](https://static.emqx.net/images/269208ac8350a2a6bc739e1f12c6dc53.png)
+![image20201019175055630.png](https://assets.emqx.com/images/269208ac8350a2a6bc739e1f12c6dc53.png)
 
 
 
@@ -68,7 +68,7 @@ EMQX 支持在 Dashboard 上传 SSL 证书，方便管理相关资源的 SSL 证
 
 此前版本中 EMQX 已经支持绝大部分参数的热配置，本次更新我们新增了监听器以及监控告警阈值相关配置，用户可以在 Dashboard 上动态管理监听端口。
 
-![image20201019175732628.png](https://static.emqx.net/images/4d3e6d3a95bc2e0d9a5d066e42f12605.png)
+![image20201019175732628.png](https://assets.emqx.com/images/4d3e6d3a95bc2e0d9a5d066e42f12605.png)
 
 
 
@@ -93,3 +93,11 @@ EMQX 支持在 Dashboard 上传 SSL 证书，方便管理相关资源的 SSL 证
 ### 问题修复
 
 - 修复 InfluxDB 不支持有下划线字符
+
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX 企业版
+    </div>
+    <a href="https://www.emqx.com/zh/try?product=enterprise" class="button is-gradient px-5">开始试用 →</a >
+</section>

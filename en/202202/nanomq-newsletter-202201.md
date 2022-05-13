@@ -119,3 +119,11 @@ The following bugs were fixed in NanoMQ. Please upgrade it according to your spe
 Born and grown from NNG, NanoMQ is committed to providing a more flexible and complete message bus tool for the open-source community at the edge. We have always attached great importance to the questions and voices of the community. Although MQTT has always been the most widely used IoT protocol, it only supports Pub/Sub (MQTT5.0 supports req/rep) mode, making it unsuitable for internal brokerless communication and RPC work in some edge scenarios, while nanomsg/nng has a variety of message patterns and has always been a popular high-performance library in the brokerless field.
 
 Combined with the multiple message modes brought by nanomsg/nng and the advantages of RPC function that can broaden the usage scenarios of NanoMQ and facilitate users to build more flexible edge network topologies, we plan to support the bridge between nanomsg client and NanoMQ in NanoMQ. We sincerely ask for your opinions on how to define bridge mode, protocol conversion and configuration method. Welcome to leave us a message on the [Discussions page](https://github.com/nanomq/nanomq/discussions/298) of the GitHub project. We look forward to your valuable comments and suggestions.
+
+
+<section class="promotion">
+    <div>
+        Try NanoMQ for Free
+    </div>
+    <a href="https://www.emqx.com/en/try?product=nanomq" class="button is-gradient px-5">Get Started →</a >
+</section>

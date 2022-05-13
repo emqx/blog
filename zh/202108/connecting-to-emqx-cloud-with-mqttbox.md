@@ -39,7 +39,7 @@ MQTTBox 完整的支持了以下功能：
 
 打开软件后，进入到软件主界面，点击顶部菜单栏的 `Create MQTT Clinet` 按钮，进入到创建 MQTT 客户端页。
 
-![MQTTBox 界面](https://static.emqx.net/images/75d7f67d4c584a017f0f50ffd8a4f87e.png)
+![MQTTBox 界面](https://assets.emqx.com/images/75d7f67d4c584a017f0f50ffd8a4f87e.png)
 
 #### 创建连接
 
@@ -47,7 +47,7 @@ MQTTBox 完整的支持了以下功能：
 
 > 注意：填写 Host 时，需填入完整的地址，包含连接的端口号。如果是 WebSocket 连接，还需加上 Path。如果 MQTT Broker 开启用户名/密码认证的，还需要在配置页面内输入 Username / Password
 
-![MQTTBox 创建连接](https://static.emqx.net/images/a83d9f97fbfea900e3105ed2618744b0.png)
+![MQTTBox 创建连接](https://assets.emqx.com/images/a83d9f97fbfea900e3105ed2618744b0.png)
 
 此时保存成功后，会进入到一个客户端详情页面，如果右上角的按钮显示 `Connected` 并且为绿色，即表示该 MQTT 客户端已经成功连接，再次点击后可以断开客户端连接。
 
@@ -65,7 +65,7 @@ MQTTBox 完整的支持了以下功能：
 
 此时我们可以看到右边的订阅框内，出现了刚才发布的消息。至此，我们已经创建了一个 MQTT 客户端并成功测试了连接、发布、订阅等功能。
 
-![MQTTBox 消息发布](https://static.emqx.net/images/638cea055bb29c8b6265ac6df0496413.png)
+![MQTTBox 消息发布](https://assets.emqx.com/images/638cea055bb29c8b6265ac6df0496413.png)
 
 ### TLS/SSL 连接
 
@@ -75,4 +75,13 @@ MQTTBox 完整的支持了以下功能：
 
 如果是双向认证的话，可以在配置页面中选择 CA 证书文件，客户端证书和客户端 Key 文件，再选择连接。连接前请确定 TLS/SSL 连接的端口并做修改。
 
-![MQTTBox TLS/SSL 连接](https://static.emqx.net/images/485b86efcafdce32c30bc74199472285.png)
+![MQTTBox TLS/SSL 连接](https://assets.emqx.com/images/485b86efcafdce32c30bc74199472285.png)
+
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX Cloud
+        <div class="is-size-14 is-text-normal has-text-weight-normal">无须绑定信用卡</div>
+    </div>
+    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a >
+</section>

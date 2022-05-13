@@ -48,7 +48,7 @@ EMQX Cloud launched the HTTP custom authentication in January. HTTP authenticati
 
 The principle of custom HTTP authentication is that EMQX Cloud uses the current client-related information as parameters in the device connection event, initiates a request to the user-defined authentication service for query permissions, and processes the authentication request through the returned HTTP status code. Users can configure parameters for connection authentication and access control.
 
-![Custom HTTP authentication](https://static.emqx.net/images/1440c17c75d0e5fb1e57e26aa568596b.png)
+![Custom HTTP authentication](https://assets.emqx.com/images/1440c17c75d0e5fb1e57e26aa568596b.png)
  
 For the deployment of the basic version, the request address for authentication and access control needs to be filled in the relevant request link of the public network. For the deployment of the professional version, the VPC configuration needs to be completed first, and the address of the service intranet needs to be filled in.
 
@@ -58,10 +58,19 @@ Custom authentication allows users to perform authentication more flexibly accor
 
 The feature of sending alarm messages to IM tools and self-owned services through Webhook was also launched. At the same time, in order to facilitate users to test whether the configuration is successful, the alarm function can send a test message to immediately verify whether the Webhook address is configured correctly.
 
-![EMQX Cloud Webhook](https://static.emqx.net/images/dba040b539d557a14a1c98e2b9946fa0.png)
+![EMQX Cloud Webhook](https://assets.emqx.com/images/dba040b539d557a14a1c98e2b9946fa0.png)
  
 So far, EMQX Cloud supports the three modes of mailbox alarm integration, PagerDuty event alarm integration, and Webhook alarm integration. The rich alarm integration modes and alarm events will make the automatic early-warning module of the entire product more complete, so as to bring users more stable business assurance.
 
 ### Basic version expansion
 
 At present, EMQX Cloud has supported the expansion of the current deployment. Users can scale the deployment specifications according to their connection requirements. At the same time, the disconnection time of equipment during capacity expansion is also optimized, so as to reduce the interference to the business system.
+
+
+<section class="promotion">
+    <div>
+        Try EMQX Cloud for Free
+        <div class="is-size-14 is-text-normal has-text-weight-normal">No credit card required</div>
+    </div>
+    <a href="https://www.emqx.com/en/signup?continue=https://cloud-intl.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">Get Started →</a >
+</section>

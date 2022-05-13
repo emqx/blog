@@ -14,16 +14,16 @@ Starting from v1.3.2, Neuron officially has its own product logo, which is displ
 
 
 
-![Neuron-Logo](https://static.emqx.net/images/acae68ba4be1727662893e60b82fe3fa.png)
+![Neuron-Logo](https://assets.emqx.com/images/acae68ba4be1727662893e60b82fe3fa.png)
 
-![Neuron Login](https://static.emqx.net/images/34c2d2334d8b1b98ed1288b6892e681a.png)
+![Neuron Login](https://assets.emqx.com/images/34c2d2334d8b1b98ed1288b6892e681a.png)
 
 
 ## New user interface
 
 In this version, we have updated the user interface of Neuron. The new interface takes white as the main background color to make all the information and numbers more clear and easy to see, which gives users a refreshing feeling.
 
-![Neuron data monitoring](https://static.emqx.net/images/82873d31a03bf0285b0150f59270fda8.png)
+![Neuron data monitoring](https://assets.emqx.com/images/82873d31a03bf0285b0150f59270fda8.png)
 
 ## Collaboration with the management console
 
@@ -35,12 +35,20 @@ At present, Neuron v1.3.2 has been highly coordinated with the management consol
 
 - The size of object size is no longer limited on the interface;
 
-  ![Neuron object size](https://static.emqx.net/images/b4ec5171909960c764cff095cb4609a7.png)
+  ![Neuron object size](https://assets.emqx.com/images/b4ec5171909960c764cff095cb4609a7.png)
 
 - The unit mark of read time is added on the interface, and the unit is 100ms.
 
-  ![Neuron read time](https://static.emqx.net/images/fbac64f3678be2903cc798de533c8ecc.png)
+  ![Neuron read time](https://assets.emqx.com/images/fbac64f3678be2903cc798de533c8ecc.png)
 
 ## Contact
 
 If you have any questions about Neuron, please feel free to contact us via [neuron@emqx.io](mailto:neuron@emqx.io).
+
+
+<section class="promotion">
+    <div>
+        Try Neuron for Free
+    </div>
+    <a href="https://www.emqx.com/en/try?product=neuron" class="button is-gradient px-5">Get Started →</a >
+</section>

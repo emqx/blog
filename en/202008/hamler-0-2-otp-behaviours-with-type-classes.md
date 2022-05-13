@@ -4,7 +4,7 @@ We are proud to announce that Hamler 0.2 has been released.
 
 **Hamler** is a strongly-typed functional programming language running on Erlang VM.
 
-![HamlerCompilerDesign](https://static.emqx.net/images/3f8ad72d2095e22f1f855fb21c7c7fba.png)
+![HamlerCompilerDesign](https://assets.emqx.com/images/3f8ad72d2095e22f1f855fb21c7c7fba.png)
 
 Hamler 0.2 will support most of Erlang's concurrent programming features, including Actor Model and OTP Behaviours.
 
@@ -24,7 +24,7 @@ With the rise of multi-core computing and large-scale distributed systems, the A
 
 An actor in Hamler/Erlang is defined as a process, which works similarly to an OS process. Each process has its own memory, composed of a mailbox, a heap, a stack and a process control block(PCB) with information about the process.
 
-![Process](https://static.emqx.net/images/d11dfdc2f22c79d5e4d514be83c7cfe5.png)
+![Process](https://assets.emqx.com/images/d11dfdc2f22c79d5e4d514be83c7cfe5.png)
 
 Processes in Erlang are very lightweight. We can create millions of processes on a running Erlang virtual machine.
 
@@ -101,7 +101,7 @@ Type classes define groups of types related by their operations. In this case, w
 
 *Reference: [Erlang gen_server Behaviour](https://erlang.org/doc/design_principles/gen_server_concepts.html)*
 
-![ClientServerMode](https://static.emqx.net/images/8562ae276509440287ba7475e0b8b628.png)
+![ClientServerMode](https://assets.emqx.com/images/8562ae276509440287ba7475e0b8b628.png)
 
 **GenServer Typeclass**
 
@@ -289,7 +289,7 @@ Using instances of supervisor behaviour, we can create a supervision tree via a 
 - 1 means "one for one", so only the dead child is restarted by the supervisor.
 - A means "one for all", so all the children will be terminated and restarted if one of them dies.
 
-![SupervisorTree](https://static.emqx.net/images/dad77bd3c025207b849f53abe1365dec.png)
+![SupervisorTree](https://assets.emqx.com/images/dad77bd3c025207b849f53abe1365dec.png)
 
 *Reference:* *[Supervision Principles](https://erlang.org/documentation/doc-4.9.1/doc/design_principles/sup_princ.html)*, *[Erlang Supervisor Behaviour](https://erlang.org/doc/design_principles/sup_princ.html)*
 

@@ -13,7 +13,7 @@ EMQX v4.3.0 版本修复了一些已知问题并新增了诸多特性，在通�
 
 访问 [EMQX GitHub](https://github.com/emqx/emqx) 仓库，点击右上角的 **Watch** 即可关注 EMQX 5.0 最新动态。
 
-![性能测试图](https://static.emqx.net/images/d6670380723eb008bcda0a52573712d0.png)
+![性能测试图](https://assets.emqx.com/images/d6670380723eb008bcda0a52573712d0.png)
 
 特性概览：observer_cli 查看 Erlang VM 运行状况
 
@@ -157,3 +157,10 @@ EMQX v4.3.0 版本修复了一些已知问题并新增了诸多特性，在通�
 - 修复认证数据无法导入的问题
 - 修复 Docker 中 EMQX 可能启动失败的问题
 - 修复 OOM 时快速杀死连接进程
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX 企业版
+    </div>
+    <a href="https://www.emqx.com/zh/try?product=enterprise" class="button is-gradient px-5">开始试用 →</a >
+</section>

@@ -163,3 +163,11 @@ nanomq conn start --url "mqtt-tcp://broker.emqx.io:1883" -C 10000 -i 10 -k 60
 本月 NanoSDK 迎来了新的 0.3 版本。在这一版本中，我们根据 NNG 项目维护者 Garrett 的意见和性能测试数据重构了协议层，减少内存消耗并维持 QoS 消息的高吞吐高性能，同时修复了一些 Bug。目前我们正在将 NanoSDK 的更新合并到下一版本 NanoMQ 中。
 
 另外，为了广大用户能够更便捷地找到 NanoSDK，我们已将仓库地址从原先的 NNG fork 转为一个独立仓库：[https://github.com/nanomq/NanoSDK](https://github.com/nanomq/NanoSDK) 。
+
+
+<section class="promotion">
+    <div>
+        免费试用 NanoMQ
+    </div>
+    <a href="https://www.emqx.com/zh/try?product=nanomq" class="button is-gradient px-5">开始试用 →</a >
+</section>

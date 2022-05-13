@@ -22,7 +22,7 @@
 
 ### NodeMCU ESP8266 和 LED 连接图
 
-![project](https://static.emqx.net/images/esp8266_control_led.png)
+![project](https://assets.emqx.com/images/esp8266_control_led.png)
 
 
 
@@ -196,11 +196,11 @@
 
 1. [请使用 Arduino IDE ](<https://www.arduino.cc/en/Main/Software>)将完整代码上传 ESP8266，并打开串口监视器
 
-   ![esp_con](https://static.emqx.net/images/esp8266_connect_ssuccessful.png)
+   ![esp_con](https://assets.emqx.com/images/esp8266_connect_ssuccessful.png)
 
 2. 建立 MQTTX 客户端 与 MQTT Broker 连接, 并向 ESP8266 发送指令
 
-   ![esp_con](https://static.emqx.net/images/esp8266_control_led_publish.png)
+   ![esp_con](https://assets.emqx.com/images/esp8266_control_led_publish.png)
 
 
 
@@ -209,3 +209,12 @@
 至此，我们成功实现 NodeMCU ESP8266 与免费公共 MQTT 服务器远程控制 LED 灯，该例子只是描述了一个简单的场景，在实际的项目中，需要更加安全的连接方式，以及对物联网数据进行持久化等功能。
 
 更多物联网开发及 ESP8266 相关文章，敬请关注后续推送。
+
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX Cloud
+        <div class="is-size-14 is-text-normal has-text-weight-normal">全托管的云原生 MQTT 消息服务</div>
+    </div>
+    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a >
+</section>

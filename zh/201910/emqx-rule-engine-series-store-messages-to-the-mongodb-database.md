@@ -80,13 +80,13 @@ use_statistics
 
 打开 EMQX Dashboard，进入左侧菜单的 **资源** 页面，点击 **新建** 按钮，选择 MongoDB 资源类型进行创建：
 
-![mongrescreate2x.png](https://static.emqx.net/images/44e47b97da67afc70e94cce2ba0da18f.png)
+![mongrescreate2x.png](https://assets.emqx.com/images/44e47b97da67afc70e94cce2ba0da18f.png)
 
 
 
 EMQX 集群中节点所在网络环境可能互不相同，资源创建成功后点击列表中 **状态按钮**，查看各个节点资源连接状况，如果节点上资源不可用，请检查配置是否正确、网络连通性，并点击 **重连** 按钮手动重连。
 
-![mongresstatus2x.png](https://static.emqx.net/images/ad6f6bca0c772445a750129c33561940.png)
+![mongresstatus2x.png](https://assets.emqx.com/images/ad6f6bca0c772445a750129c33561940.png)
 
 
 
@@ -96,7 +96,7 @@ EMQX 集群中节点所在网络环境可能互不相同，资源创建成功后
 
 选定触发事件后，我们可在界面上看到可选字段及示例 SQL：
 
-![rulecondition2x.png](https://static.emqx.net/images/3461003be069ad636be34c8066aba5a4.png)
+![rulecondition2x.png](https://assets.emqx.com/images/3461003be069ad636be34c8066aba5a4.png)
 
 
 
@@ -166,7 +166,7 @@ payload 数据如下，注意更改 `tachometer` 数值大小，以满足 SQL �
 
 点击 **SQL 测试** 切换按钮，更改 `topic` 与 `payload` 为场景中的信息，点击 **测试** 按钮查看数据输出：
 
-![rulesqltest2x.png](https://static.emqx.net/images/6e115960b2cef28d67243a3131e0f37b.png)
+![rulesqltest2x.png](https://assets.emqx.com/images/6e115960b2cef28d67243a3131e0f37b.png)
 
 
 
@@ -201,7 +201,7 @@ msgid=${id}, client_id=${client_id}, speed=${speed}, tachometer=${tachometer}, t
 ```
 
 
-![mongrulecreate2x.png](https://static.emqx.net/images/426a140fe43174a116b8b0af95d2e6c3.png)
+![mongrulecreate2x.png](https://assets.emqx.com/images/426a140fe43174a116b8b0af95d2e6c3.png)
 
 
 
@@ -240,14 +240,14 @@ msgid=${id}, client_id=${client_id}, speed=${speed}, tachometer=${tachometer}, t
   ```
 
 
-![websocket2x.jpg](https://static.emqx.net/images/8748f93fcbc839bc87f1099563fdfb80.jpg)
+![websocket2x.jpg](https://assets.emqx.com/images/8748f93fcbc839bc87f1099563fdfb80.jpg)
 
 
 点击 **发送** 按钮，此时消息体中的 `tachometer` 数值，满足上面设置的 `tachometer > 8000` 的条件，当前规则已命中统计值为加 1。
 
 MongoDB 命令行中查看数据表记录得到数据如下：
 
-![mongruleresult2x.png](https://static.emqx.net/images/cc3b8eb17bcb604f8318df8fd8113e3b.png)
+![mongruleresult2x.png](https://assets.emqx.com/images/cc3b8eb17bcb604f8318df8fd8113e3b.png)
 
 至此，我们通过规则引擎实现了使用规则引擎存储消息到 MongoDB 数据库的业务开发。
 

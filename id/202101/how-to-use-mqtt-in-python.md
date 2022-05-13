@@ -235,7 +235,7 @@ Mulai kode publikasi pesan. Disini kita dapat melihat bahwa client telah berhasi
 python3 pub.py
 ```
 
-![pub.png](https://static.emqx.net/images/8087a35e3b4c6e11e3b432dac024c420.png)
+![pub.png](https://assets.emqx.com/images/8087a35e3b4c6e11e3b432dac024c420.png)
 
 #### Subscribe ke pesan
 
@@ -245,7 +245,7 @@ Mulai kode subscribe pesan. Disini kita dapat melihat bahwa client telah berhasi
 python3 sub.py
 ```
 
-![sub.png](https://static.emqx.net/images/24fa48443372da483f06f9cce06b32bc.png)
+![sub.png](https://assets.emqx.com/images/24fa48443372da483f06f9cce06b32bc.png)
 
 
 ## Rangkuman

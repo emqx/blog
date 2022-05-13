@@ -184,12 +184,12 @@ Run the Python code and actively send messages.
 
 2. Use MQTT X client to connect to the MQTT broker and send messages to the topic `raspberry/topic`.
 
-   ![MQTT X](https://static.emqx.net/images/cc93d1c6d99f3bfa3a78d8472a6209af.jpg)
+   ![MQTT X](https://assets.emqx.com/images/cc93d1c6d99f3bfa3a78d8472a6209af.jpg)
 
 3. View the terminal information of Raspberry Pi, and you will see the messages published by MQTT X.
 
 
-     ![mqtt subscriber](https://static.emqx.net/images/9c4e5b191e9bd00317fed06f94b13850.png)
+     ![mqtt subscriber](https://assets.emqx.com/images/9c4e5b191e9bd00317fed06f94b13850.png)
 
 ### Test publish message
 
@@ -198,11 +198,11 @@ Run the Python code and actively send messages.
 
 2. Run Python code in the terminal.
 
-   ![mqtt publisher](https://static.emqx.net/images/9ea832adda032c9297c84fbf585fb294.png)
+   ![mqtt publisher](https://assets.emqx.com/images/9ea832adda032c9297c84fbf585fb294.png)
 
 3. View the messages published by the Raspberry Pi in the MQTT X client.
 
-    ![MQTT X publish message](https://static.emqx.net/images/07ffb81c764145100b1e21572357c675.jpg)
+    ![MQTT X publish message](https://assets.emqx.com/images/07ffb81c764145100b1e21572357c675.jpg)
 
 ### Test the will message 
 
@@ -211,11 +211,11 @@ Next, testing whether the will message, is set successfully.
 
 1. Subscribe to `raspberry/status` in the MQTT X client.
 
-   ![subscribe to mqtt topic in the MQTT X](https://static.emqx.net/images/c704c8b0f7117079306d16b5af8c2557.jpg)
+   ![subscribe to mqtt topic in the MQTT X](https://assets.emqx.com/images/c704c8b0f7117079306d16b5af8c2557.jpg)
 
 2. Interrupt the program or disconnect the network of the Raspberry Pi.
 
-3. View the messages that `raspberry/status` received, in the MQTT X client.  ![receive mqtt message](https://static.emqx.net/images/048da27682c9a86c536f85ffd6417bf2.jpg)
+3. View the messages that `raspberry/status` received, in the MQTT X client.  ![receive mqtt message](https://assets.emqx.com/images/048da27682c9a86c536f85ffd6417bf2.jpg)
 
 
 

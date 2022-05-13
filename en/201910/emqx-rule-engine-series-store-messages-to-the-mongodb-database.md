@@ -80,13 +80,13 @@ use_statistics
 
 Open the EMQX Dashboard, go to the **Resources** page on the left menu, click the **New** button, select the MongoDB resource type to create:
 
-![mongrescreate2x.jpg](https://static.emqx.net/images/f5a5355598d874242fa945c932da2e05.jpg)
+![mongrescreate2x.jpg](https://assets.emqx.com/images/f5a5355598d874242fa945c932da2e05.jpg)
 
 
 
 The network environment of the nodes in the EMQX cluster may be different. After the resources are created successfully, click the **Status button ** in the list to check the resource connection status of each node . If the resources on the node are unavailable, check whether the configuration is correct and the network connectivity is correct, and click the **Reconnect** button to manually reconnect.
 
-![mongresstatus2x.jpg](https://static.emqx.net/images/066ae8a4c6247e8481c39c39f97f3953.jpg)
+![mongresstatus2x.jpg](https://assets.emqx.com/images/066ae8a4c6247e8481c39c39f97f3953.jpg)
 
 
 
@@ -96,7 +96,7 @@ Go to the **Rules** page on the left menu and click the **New** button to create
 
 After selecting the trigger event, we can see the optional fields and sample SQL on the interface:
 
-![rulecondition2x.jpg](https://static.emqx.net/images/ce4640622eaa46be537dd6f96ac15253.jpg)
+![rulecondition2x.jpg](https://assets.emqx.com/images/ce4640622eaa46be537dd6f96ac15253.jpg)
 
 
 
@@ -166,7 +166,7 @@ The payload data is as follows, note to change the `tachometer` value to satisfy
 
 Click the **SQL Test** switch button, change `topic` and `payload` as the information in the scenario, and click the **Test** button to check the data output:
 
-![rulesqltest2x.jpg](https://static.emqx.net/images/3e4e10c03dfa317522b0c8608e1a9a8f.jpg)
+![rulesqltest2x.jpg](https://assets.emqx.com/images/3e4e10c03dfa317522b0c8608e1a9a8f.jpg)
 
 
 
@@ -202,7 +202,7 @@ msgid=${id}, client_id=${client_id}, speed=${speed}, tachometer=${tachometer}, t
 
 
 
-![mongrulecreate2x.jpg](https://static.emqx.net/images/e7b5bc31031d5ec42be2eacb501d993d.jpg)
+![mongrulecreate2x.jpg](https://assets.emqx.com/images/e7b5bc31031d5ec42be2eacb501d993d.jpg)
 
 
 
@@ -241,7 +241,7 @@ Switch to the **Tools => Websocket** page and use any information client to conn
   ```
 
 
-![websocket2x.jpg](https://static.emqx.net/images/8748f93fcbc839bc87f1099563fdfb80.jpg)
+![websocket2x.jpg](https://assets.emqx.com/images/8748f93fcbc839bc87f1099563fdfb80.jpg)
 
 
 
@@ -249,7 +249,7 @@ Click the **Send** button. At this time, the value of `tachometer` in the messag
 
 Check the data table records in the MongoDB command line to get the following data:
 
-![mongruleresult2x.png](https://static.emqx.net/images/36df9f59d523863ac7cd4e27fe3724be.png)
+![mongruleresult2x.png](https://assets.emqx.com/images/36df9f59d523863ac7cd4e27fe3724be.png)
 
 So far, we have implemented a business development using the rules engine to store messages to the MongoDB database.
 

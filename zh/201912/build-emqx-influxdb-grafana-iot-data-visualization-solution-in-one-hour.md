@@ -1,4 +1,4 @@
-![画板 172x8.png](https://static.emqx.net/images/91d497420de71170fd69655588faeac5.png)
+![画板 172x8.png](https://assets.emqx.com/images/91d497420de71170fd69655588faeac5.png)
 
 
 
@@ -38,7 +38,7 @@ devices/{client_id}/messages
 可视化平台最终的展示效果如下图。仪表盘右上角可以选择时间区间、自动刷新时间，此时设备持续发送数据，仪表盘数据值会随之变化，实现了功能比较全面的可视化效果。
 
 
-![image20191125152935211.png](https://static.emqx.net/images/8da1266462ee04b19bc134414f3bc026.png)
+![image20191125152935211.png](https://assets.emqx.com/images/8da1266462ee04b19bc134414f3bc026.png)
 
 
 
@@ -48,7 +48,7 @@ devices/{client_id}/messages
 
 方案整体架构如下图所示：
 
-![image20191125163959537.png](https://static.emqx.net/images/132d0cbb3f4166478a7c06dbcfa051d4.png)
+![image20191125163959537.png](https://assets.emqx.com/images/132d0cbb3f4166478a7c06dbcfa051d4.png)
 
 - **EMQX**：[EMQX ](https://github.com/emqx/emqx) 是基于高并发的 Erlang/OTP 语言平台开发，支持百万级连接和分布式集群架构，发布订阅模式的开源 MQTT 消息服务器。EMQX 内置了大量开箱即用的功能， **其企业版 EMQX Enterprise 支持通过规则引擎或消息持久化插件将设备消息高性能地存储到 InfluxDB** ，开源用户需自行处理消息存储环节。
 - **InfluxDB**：InfluxDB 是一个由 InfluxData 开源的时序型数据库。它由 Go 写成，着力于高性能地查询与存储时序型数据。InfluxDB 被广泛应用于存储系统的监控数据，IoT 行业的实时数据等场景。
@@ -197,7 +197,7 @@ docker run -d --name=grafana -p 3000:3000 grafana/grafana
 
 启动成功后浏览器访问 `http://127.0.0.1:3000` 访问 Grafana 可视化面板，使用 `admin` `admin` 默认用户名密码完成初次登录，登录后按照提示修改密码使用新密码登录进入主界面：
 
-![image20191125100532923.png](https://static.emqx.net/images/f4dc1b6aa64a2c542b2ae052b75a5250.png)
+![image20191125100532923.png](https://assets.emqx.com/images/f4dc1b6aa64a2c542b2ae052b75a5250.png)
 
 
 
@@ -319,7 +319,7 @@ new MockData(100)
 
 添加好数据源后，添加需要显示的数据仪表盘信息。仪表盘为多个可视化面板的集合，点击 **New Dashboard** 后，选择 **Add Query** 通过查询来添加数据面板：
 
-![image20191125135546283.png](https://static.emqx.net/images/ad69fdbc04d1284b234452e4e3231da7.png)
+![image20191125135546283.png](https://assets.emqx.com/images/ad69fdbc04d1284b234452e4e3231da7.png)
 
 
 
@@ -339,13 +339,13 @@ new MockData(100)
 
 **Visualization** 默认不做更改， **General** 里面修改面板名称为 `Device temperature and humidity mean value`，如果需要对业务进行监控告警，可以在 **Alert** 里编排告警规则，此处仅做可视化展示，不使用此功能。
 
-![image20191125140117416.png](https://static.emqx.net/images/c7a4f990ef6dd23007c0f45ff9872049.png)
+![image20191125140117416.png](https://assets.emqx.com/images/c7a4f990ef6dd23007c0f45ff9872049.png)
 
 
 
 完成创建后，点击左上角返回按钮，该 Dashboard 里成功添加一个数据面板。点击顶部导航栏 **保存** 图标，输入 Dashboard 名称完成 Dashboard 的创建。
 
-![image20191125144011475.png](https://static.emqx.net/images/ca04c7cfedeffd193f7ae1bd9290d7ef.png)
+![image20191125144011475.png](https://assets.emqx.com/images/ca04c7cfedeffd193f7ae1bd9290d7ef.png)
 
 
 

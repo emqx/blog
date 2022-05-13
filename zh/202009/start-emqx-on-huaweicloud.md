@@ -24,7 +24,7 @@
 领券链接：[点击前往领取100元代金券](https://account.huaweicloud.com/usercenter/#/getCoupons?activityID=P2008240947144281K3W0ZA1RV2D2C&contentID=PCP2008240946236230RRLRX51AFLQE1)
 
 <div style="width: 100%; margin: 10px 0; width: 260px;padding: 6px;border: 1px solid #34c388;">
-<div style="font-size: 12px">领券失败？微信添加 EMQ 小助手处理</div><img src="https://static.emqx.net/images/f78798015e84cc54e66e14ba7a8e854d.jpg" style="width: 80px"/>
+<div style="font-size: 12px">领券失败？微信添加 EMQ 小助手处理</div><img src="https://assets.emqx.com/images/f78798015e84cc54e66e14ba7a8e854d.jpg" style="width: 80px"/>
 </div>
 
 购买云服务器：[https://www.huaweicloud.com/product/ecs.html](https://www.huaweicloud.com/product/ecs.html) 此处选择ubuntu服务器。
@@ -47,7 +47,7 @@
 
 此实验中选择 EMQX Broker 最新版 4.1.1，操作系统选择 Linux > Ubuntu 16.04，选择安装包类型为 zip，点击下载按钮，将文件保存至默认下载目录。
 
-![img](https://static.emqx.net/images/63fe106f29f0eea21bedc4602677b5e4.png)            
+![img](https://assets.emqx.com/images/63fe106f29f0eea21bedc4602677b5e4.png)            
 
 
 
@@ -117,19 +117,19 @@ EMQX 提供了 Dashboard 以方便用户管理设备与监控相关指标。通�
 
 EMQX 正常启动的情况下，在火狐浏览器中输入网址 http://localhost:18083 即可访问 EMQX Dashboard，默认的用户名和密码分别为 admin public。
 
-![img](https://static.emqx.net/images/ddf787942c7abb501f605035462751fc.png)            
+![img](https://assets.emqx.com/images/ddf787942c7abb501f605035462751fc.png)            
 
 #### 4.2 建立 MQTT 连接
 
 登录 Dashboard 后，依次点击 工具 -> WebSocket 打开 WebSocket 测试工具，在该页面输入 MQTT 连接信息，点击连接按钮即可连接至 EMQX。
 
-![img](https://static.emqx.net/images/b90d28808208c4d3e691c44bab19c17f.png)            
+![img](https://assets.emqx.com/images/b90d28808208c4d3e691c44bab19c17f.png)            
 
 
 
 输入待订阅的主题并进行订阅，输入主题、消息进行发布、选择 QoS 发布一条消息，消息发出之后，订阅消息列表应当能立即收到发出的消息。
 
-![img](https://static.emqx.net/images/f826919c580d8d3d7c1f6b87e29e4cf4.png)            
+![img](https://assets.emqx.com/images/f826919c580d8d3d7c1f6b87e29e4cf4.png)            
 
 
 
@@ -139,4 +139,13 @@ EMQX 正常启动的情况下，在火狐浏览器中输入网址 http://localho
 
 ---
 **添加小助手微信，进入 EMQ & 华为云技术交流群，与更多技术牛人深入交流、共同成长。**
-![EMQX 微信小助手](https://static.emqx.net/images/237cdd1601705d7fc794253c757c1d65.png)
+![EMQX 微信小助手](https://assets.emqx.com/images/237cdd1601705d7fc794253c757c1d65.png)
+
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX Cloud
+        <div class="is-size-14 is-text-normal has-text-weight-normal">全托管的云原生 MQTT 消息服务</div>
+    </div>
+    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a >
+</section>

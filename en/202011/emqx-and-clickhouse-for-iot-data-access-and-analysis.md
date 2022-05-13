@@ -4,7 +4,7 @@ After storing the data in the database, we usually need other methods, for examp
 
 The above solution without code development, involving products can provide open-source software, enterprise services, cloud SaaS services different levels of delivery models, according to project requirements to achieve a free or enterprise version of the private landing and cloud deployment.
 
-![image-20200916112653512](https://static.emqx.net/images/5ba8c46006e196b5ee8ca42cf60b2d86.png)
+![image-20200916112653512](https://assets.emqx.com/images/5ba8c46006e196b5ee8ca42cf60b2d86.png)
 
 
 
@@ -83,7 +83,7 @@ EMQX Cloud offers a 6-month free trial to newly registered users. After register
 
 > To use EMQX Cloud you need to ensure that ClickHouse can be accessed via a public network address.
 
-![WechatIMG4152.png](https://static.emqx.net/images/2bacab94e2fda212c1775d1ffdf3f400.png)
+![WechatIMG4152.png](https://assets.emqx.com/images/2bacab94e2fda212c1775d1ffdf3f400.png)
 
 
 
@@ -233,7 +233,7 @@ Using the **SQL test function**, input test data and perform a filtering result 
 }
 ```
 
-![1.png](https://static.emqx.net/images/9c500a52ab22bdf76d810c9020b54b82.png)
+![1.png](https://assets.emqx.com/images/9c500a52ab22bdf76d810c9020b54b82.png)
 
 
 
@@ -271,11 +271,11 @@ Click the **add** button under the response action and select **save data to the
 
 Select **ClickHouse** for the resource type and fill in the resource name, server address and authentication information:
 
-![2.png](https://static.emqx.net/images/d257825ce0987dbdd1f28e371b1f9f04.png)
+![2.png](https://assets.emqx.com/images/d257825ce0987dbdd1f28e371b1f9f04.png)
 
 On the response action creation page, select the new resource and fill in the SQL template.
 
-![3.png](https://static.emqx.net/images/0296858c31bd1a6c504f50e8c06e7c37.png)
+![3.png](https://assets.emqx.com/images/0296858c31bd1a6c504f50e8c06e7c37.png)
 
 
 
@@ -390,7 +390,7 @@ First you need to install the Grafana ClickHouse data source plugin: [view plugi
 
 Add the data source, i.e. the data source information that is displayed. Select the **ClickHouse** type data source and input the connection parameters to configure it. By default, the key configuration information is as follows:
 
-![image-20200916110233266](https://static.emqx.net/images/384986bdbaca56ab3bf8268fa9681ab4.png)
+![image-20200916110233266](https://assets.emqx.com/images/384986bdbaca56ab3bf8268fa9681ab4.png)
 
 
 
@@ -428,18 +428,18 @@ For charts with a time series, such as line charts, Grafana needs a DateTime col
 
 Click the edit button in the red box below to enter the table name, time column configuration:
 
-![image-20200916110544930](https://static.emqx.net/images/ff07248e60a570409f1ee5bc64925fb4.png)
+![image-20200916110544930](https://assets.emqx.com/images/ff07248e60a570409f1ee5bc64925fb4.png)
 
 Select the database and data table. If there are DateTime and Date fields in the table, you can select them from Column:DateTime and Column:Date.
 
 - Column:Date: used to filter data as Grafana drags the time range
 - Column:DateTime: used as time data when the time-series is displayed.
 
-<img src="https://static.emqx.net/images/07b9a092530b50bfa314447a189f8d4b.png" alt="image-20200916111101870" style="zoom:67%;" />
+<img src="https://assets.emqx.com/images/07b9a092530b50bfa314447a189f8d4b.png" alt="image-20200916111101870" style="zoom:67%;" />
 
 When you are done, click the edit button again, click the upper right corner of the icon to select a time range, make sure there is data in the time range, click the refresh icon to refresh the data and you will see the rendered average panel.
 
-![image-20200916111420196](https://static.emqx.net/images/1eda9c065405599c21d9163d334e1a08.png)
+![image-20200916111420196](https://assets.emqx.com/images/1eda9c065405599c21d9163d334e1a08.png)
 
 After completing creation, click the Back button in the upper left corner. And then you successfully added a data panel in this Dashboard. Click on the **save** icon in the top navigation bar and input the Dashboard name to complete the creation of the Dashboard.
 
@@ -469,10 +469,19 @@ ORDER BY t
 
 Save the dashboard, drag and drop to adjust the size and position of each data panel, and finally get a better visual effect of the data dashboard. The upper right corner of the dashboard can select the time interval and automatic refresh time. At this time the device continues to send data collection data, the dashboard data values will change, achieving a better visualization effect.
 
-![image-20200916112334081](https://static.emqx.net/images/684f512f88a96596d86e5590264e7ebe.png)
+![image-20200916112334081](https://assets.emqx.com/images/684f512f88a96596d86e5590264e7ebe.png)
 
 
 
 ## Summary
 
 So far, we use EMQX + ClickHouse to complete IoT data transmission, storage, analysis and display the whole process of system construction. The reader can learn how EMQX's extensive expansion capabilities and ClickHouse's leading data processing and analysis capabilities can be applied to IoT data collection. With a deeper understanding of Grafana's other functions, users can customize their improved data visualization analysis and even monitoring and alerting systems.
+
+
+
+<section class="promotion">
+    <div>
+        Try EMQX Enterprise for Free
+    </div>
+    <a href="https://www.emqx.com/en/try?product=enterprise" class="button is-gradient px-5">Get Started →</a >
+</section>

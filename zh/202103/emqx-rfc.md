@@ -24,7 +24,7 @@ EIP 具有以下三个特性：
 
 此外，小部分的特性功能更新、Bug 修复的代码变更仍然可以遵循普通的 GitHub 流程，通过提交 Issue，发起 Pull Request 和 Code Review 来完成。
 
-![EIP.png](https://static.emqx.net/images/8ab101eb8839f9aa419d2c5a6b1d2214.png)
+![EIP.png](https://assets.emqx.com/images/8ab101eb8839f9aa419d2c5a6b1d2214.png)
 
 
 

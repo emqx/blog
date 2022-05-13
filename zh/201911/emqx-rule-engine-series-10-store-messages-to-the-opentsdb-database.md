@@ -54,7 +54,7 @@ $ docker run -d --name opentsdb -p 4242:4242 petergrace/opentsdb-docker
 
 打开 EMQX Dashboard，进入左侧菜单的 **资源** 页面，点击 **新建** 按钮，选择 OpenTSDB 资源类型并完成相关配置进行资源创建。
 
-![image20190725110536094.png](https://static.emqx.net/images/b73349ea68ae04ebc090b9128d75dc5c.png)
+![image20190725110536094.png](https://assets.emqx.com/images/b73349ea68ae04ebc090b9128d75dc5c.png)
 
 ### 创建规则
 
@@ -62,7 +62,7 @@ $ docker run -d --name opentsdb -p 4242:4242 petergrace/opentsdb-docker
 
 选定触发事件后，我们可在界面上看到可选字段及示例 SQL：
 
-![image20190719112141128.png](https://static.emqx.net/images/e52941d185211d7177010bc67a9d75ea.png)
+![image20190719112141128.png](https://assets.emqx.com/images/e52941d185211d7177010bc67a9d75ea.png)
 
 
 
@@ -85,7 +85,7 @@ WHERE
 
 借助 SQL 测试功能，我们可以快速确认刚刚填写的 SQL 语句能否达成我们的目的。首先填写用于测试的 payload 等数据如下：
 
-![image20190725110913878.png](https://static.emqx.net/images/2a6542bfb91c3d8a5a9d38707c465e29.png)
+![image20190725110913878.png](https://assets.emqx.com/images/2a6542bfb91c3d8a5a9d38707c465e29.png)
 
 然后点击 **测试** 按钮，我们得到以下数据输出：
 
@@ -117,7 +117,7 @@ SQL 条件输入输出无误后，我们继续添加相应动作，配置写入 
 
 这里我们全部使用默认配置，点击 **新建** 按钮完成规则创建。
 
-![image20190725111158382.png](https://static.emqx.net/images/2ebda32b1e3f02ada48d0ad985938214.png)
+![image20190725111158382.png](https://assets.emqx.com/images/2ebda32b1e3f02ada48d0ad985938214.png)
 
 
 
@@ -149,13 +149,13 @@ SQL 条件输入输出无误后，我们继续添加相应动作，配置写入 
     "value":12
   }
   ```
-![image20190725112738414.png](https://static.emqx.net/images/367befbc4efc6dd4b92e217251cab020.png)
+![image20190725112738414.png](https://assets.emqx.com/images/367befbc4efc6dd4b92e217251cab020.png)
 
 点击 **发送** 按钮，发送成功后可以看到当前规则已命中次数已经变为了 1。
 
 然后通过 Postman 向 OpenTSDB 发送查询请求，当我们得到如下应答时说明新的 data point 已经添加成功：
 
-![image20190725113422461.png](https://static.emqx.net/images/db95b74238f0f2c2e2fadb23ac33aaf0.png)
+![image20190725113422461.png](https://assets.emqx.com/images/db95b74238f0f2c2e2fadb23ac33aaf0.png)
 
 至此，我们通过规则引擎实现了使用规则引擎存储消息到 OpenTSDB 数据库的业务开发。
 

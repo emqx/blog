@@ -61,3 +61,11 @@ It can be seen that in the case of a single client in a multi-core platform, Nan
 
  
 In December, the NanoMQ team plans to hold an open-source development meeting with Garrett, the maintainer of the NNG project, discussing how to merge the projects of both parties. Everyone is welcome to try [nng-mqtt](https://github.com/nanomq/nng/tree/nng-mqtt) forked by NanoMQ in the NNG repository.
+
+
+<section class="promotion">
+    <div>
+        Try NanoMQ for Free
+    </div>
+    <a href="https://www.emqx.com/en/try?product=nanomq" class="button is-gradient px-5">Get Started →</a >
+</section>

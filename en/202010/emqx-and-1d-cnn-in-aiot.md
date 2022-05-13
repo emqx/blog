@@ -12,7 +12,7 @@ In this article, we will use the [hydraulic system condition monitoring data set
 
 * In this data set, TS1.txt, TS2.txt, TS3.txt, TS4.txt are the temperature data from the four cooler temperature sensors of the hydraulic system with a cycle of 60 seconds, respectively.
 
-  ![cooler.png](https://static.emqx.net/images/4213fc68d33ae6e96fd2d5996d9047fa.png)
+  ![cooler.png](https://assets.emqx.com/images/4213fc68d33ae6e96fd2d5996d9047fa.png)
 
 * The first column of profile.txt indicates the state of the hydraulic system cooler during the current cycle.
 
@@ -52,7 +52,7 @@ We will use a 1D Convolutional Neural Network to implement the model training. 1
 
   From the report, we can see that the temperature data predicts the cooler condition with 95%, 80% and 89% accuracy for 3 (near failure), 20 (low efficiency) and 100 (full efficiency) respectively.
 
-![模型分类指标的报告.png](https://static.emqx.net/images/cf4c2e0d63fa81528b05fa8dbcac5150.png)
+![模型分类指标的报告.png](https://assets.emqx.com/images/cf4c2e0d63fa81528b05fa8dbcac5150.png)
 
 
 
@@ -226,14 +226,14 @@ We will use the EMQX Broker rule engine to forward the data of temperature senso
 
    Access [EMQX Dashboard](http://127.0.0.1:18083), log in with username and password admin, public, and click Rules -> Resources on the left menu bar to create the resource.
 
-    ![WechatIMG2495.png](https://static.emqx.net/images/81f1d87027ce3507ccdefd76ea8475a7.png)  
+    ![WechatIMG2495.png](https://assets.emqx.com/images/81f1d87027ce3507ccdefd76ea8475a7.png)  
   
 
     
 
 3. EMQX Broker rule creation
 
-  ![WechatIMG2496.png](https://static.emqx.net/images/d06f7fa3985be14c0342a43f411c5a3e.png)
+  ![WechatIMG2496.png](https://assets.emqx.com/images/d06f7fa3985be14c0342a43f411c5a3e.png)
     
 
 
@@ -245,7 +245,7 @@ We will use the EMQX Broker rule engine to forward the data of temperature senso
    python3 webhook.py
    ```
 
-   ![启动 Webhook.png](https://static.emqx.net/images/08ecdb06e4886a44090bf891931a76a3.png)
+   ![启动 Webhook.png](https://assets.emqx.com/images/08ecdb06e4886a44090bf891931a76a3.png)
 
 2. Enable EMQX Broker
 
@@ -253,7 +253,7 @@ We will use the EMQX Broker rule engine to forward the data of temperature senso
    ./bin/emqx start
    ```
 
-  ![启动 EMQX Broker.png](https://static.emqx.net/images/addddf05fc3319c9b8ef7ed101689d6e.png)
+  ![启动 EMQX Broker.png](https://assets.emqx.com/images/addddf05fc3319c9b8ef7ed101689d6e.png)
 
 3. Simulate data input
 
@@ -261,12 +261,12 @@ We will use the EMQX Broker rule engine to forward the data of temperature senso
    python publish.py
    ```
 
-   ![模拟数据输入.png](https://static.emqx.net/images/35a3da2c95c4e6e1d6bd260a341e6c09.png)
+   ![模拟数据输入.png](https://assets.emqx.com/images/35a3da2c95c4e6e1d6bd260a341e6c09.png)
 
 4. View prediction results of the state of hydraulic system cooler
 
    From the following picture, we can see that the current cooler state predicted by the input sensor temperature was close to total failure for the first five cycles, which is consistent with the cooler state given in the dataset.
-![查看液压系统.png](https://static.emqx.net/images/a896cf93007af04f31c3d3c4cf926bd8.png)
+![查看液压系统.png](https://assets.emqx.com/images/a896cf93007af04f31c3d3c4cf926bd8.png)
 
 5. Adjust the input data respectively, view the prediction result of the cooler state under different temperatures, and compare with the experiment result collected from the lab bench in the dataset.
 
@@ -274,7 +274,7 @@ We will use the EMQX Broker rule engine to forward the data of temperature senso
 
      > Modify the file publish.py: for x_data in data:  ->  for x_data in data[:10]:
 
-     ![5.1.png](https://static.emqx.net/images/76a1b283f6bf2d2bf9561bcecd9e63ff.png)
+     ![5.1.png](https://assets.emqx.com/images/76a1b283f6bf2d2bf9561bcecd9e63ff.png)
 
      From the above picture, we can see that the prediction result is consistent with the result collected from the lab bench.
 
@@ -282,7 +282,7 @@ We will use the EMQX Broker rule engine to forward the data of temperature senso
 
      > Modify the file publish.py: for x_data in data:  ->  for x_data in data[728:737]:
 
-     ![5.2.png](https://static.emqx.net/images/174b31db9498fd2d3edc6d2e560d3efa.png)
+     ![5.2.png](https://assets.emqx.com/images/174b31db9498fd2d3edc6d2e560d3efa.png)
 
      From the picture above, we can see that there is some error between the predictions and the results collected from the lab bench, which validates the prediction accuracy probabilities reported in the model's classification indicators.
 
@@ -290,7 +290,7 @@ We will use the EMQX Broker rule engine to forward the data of temperature senso
 
      > Modify the file publish.py: for x_data in data:  ->  for x_data in data[-10:]:
 
-     ![5.3.png](https://static.emqx.net/images/f9f32c64842bd56c086fbda08f259b25.png)
+     ![5.3.png](https://assets.emqx.com/images/f9f32c64842bd56c086fbda08f259b25.png)
 
      From the picture above, we can see that the predictions are similar to the results collected from the lab bench, but there is still some deviation.
 
@@ -303,3 +303,13 @@ So far, we have implemented sensor data reporting, data forwarding using the EMQ
 In various fields of industry, whether it is machinery, electronics, iron and steel, or manufacturing, rubber, textile, chemical, food, hydraulic drive technology has become a basic application technology. With the continuous development of the modern industry, the hydraulic system becomes more high performance and high accuracy. Its reliability becomes more important, and the detection and diagnosis of hydraulic system faults is also more and more attention. Use AI and deep learning to monitor the status of the hydraulic system through IoT big data collection and analysis, which is for implementing the fault prediction. It is the new possibility brought by AIoT to the traditional industrial field.
 
 In the actual application of hydraulic system failure prediction in various fields, to obtain a more accurate prediction using AI, it is necessary to collect a higher level of time-series data for analysis and training. Therefore, it is necessary to choose a highly stable and reliable messaging middleware with outstanding performance specifications to access and transmit large amounts of data.  As an open-source MQTT messaging server with high concurrency and low latency, supporting distributed cluster architecture, EMQX Broker can meet the need for data transmission in this application scenario and other more IoT applications.
+
+
+
+<section class="promotion">
+    <div>
+        Try EMQX Cloud for Free
+        <div class="is-size-14 is-text-normal has-text-weight-normal">A fully managed, cloud-native MQTT service</div>
+    </div>
+    <a href="https://www.emqx.com/en/signup?continue=https://cloud-intl.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">Get Started →</a >
+</section>

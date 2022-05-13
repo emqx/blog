@@ -50,7 +50,7 @@ To improve efficiency and reduce computing load, we can use the User Properties 
 }
 ```
 
-![MQTT Resource analysis](https://static.emqx.net/images/c2f4e34d2ff553f12a81826382846366.png)
+![MQTT Resource analysis](https://assets.emqx.com/images/c2f4e34d2ff553f12a81826382846366.png)
 
 ### Message routing
 
@@ -63,7 +63,7 @@ We can also use User Properties to do application-level routing. As mentioned ab
 }
 ```
 
-![MQTT Message routing](https://static.emqx.net/images/39dfdc8de0b0251bab3697d72169dfef.png)
+![MQTT Message routing](https://assets.emqx.com/images/39dfdc8de0b0251bab3697d72169dfef.png)
 
 ## How to configure in MQTT client
 
@@ -123,3 +123,12 @@ At this point, we can see that the User Properties configured just before publis
  
 
 For other clients, we will first support the user-defined configuration function for User Properties in subsequent versions of the cross-platform [MQTT 5.0 desktop client tool - MQTT X](https://mqttx.app/zh), which facilitates users to quickly test some new features of MQTT 5.0. Please look forward to it!
+
+
+<section class="promotion">
+    <div>
+        Try EMQX Cloud for Free
+        <div class="is-size-14 is-text-normal has-text-weight-normal">A fully managed, cloud-native MQTT 5.0 service</div>
+    </div>
+    <a href="https://www.emqx.com/en/signup?continue=https://cloud-intl.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">Get Started →</a >
+</section>

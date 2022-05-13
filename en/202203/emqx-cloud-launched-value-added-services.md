@@ -20,19 +20,19 @@ The NAT gateway offers network address translation services, which can provide t
 
 Log in to the EMQX Cloud Dashboard, go to the top menu bar -> Value-added services(VAS)
 
-![EMQX Cloud Value-added services](https://static.emqx.net/images/2f8cba96b9a99b612a7e07b072a29ef2.png)
+![EMQX Cloud Value-added services](https://assets.emqx.com/images/2f8cba96b9a99b612a7e07b072a29ef2.png)
  
 or Subscribe designated value-added services at the bottom of the deployment overview
 
-![EMQX Cloud Dashboard](https://static.emqx.net/images/d97195c9759473d9d6a27280788bac16.png)
+![EMQX Cloud Dashboard](https://assets.emqx.com/images/d97195c9759473d9d6a27280788bac16.png)
  
 Click Subscribe Now, drop down to select the deployment to be bound to the value-added service, and click Next
 
-![EMQX Cloud Dashboard](https://static.emqx.net/images/e480c9a6f4d416003cfb08beae7dd228.png)
+![EMQX Cloud Dashboard](https://assets.emqx.com/images/e480c9a6f4d416003cfb08beae7dd228.png)
  
 Confirm the service information and click Buy Now to confirm the purchase
 
-![EMQX Cloud Dashboard](https://static.emqx.net/images/0bab7dc3132b6d87af01d0f4fd190b25.png) 
+![EMQX Cloud Dashboard](https://assets.emqx.com/images/0bab7dc3132b6d87af01d0f4fd190b25.png) 
 
 Click Go to Services to start configuring the use of value-added services.
 
@@ -55,7 +55,7 @@ The details of expenses can be viewed in Financial Management -> Overview -> Hou
 
 After completing the purchase of the internal load balancer service, you can view the creation status of it  in the corresponding deployment overview, and wait for the creation to complete.
 
-![EMQX Cloud Internal load balancer configuration](https://static.emqx.net/images/a28b0069e5e73ff37de1cc868e703981.png)
+![EMQX Cloud Internal load balancer configuration](https://assets.emqx.com/images/a28b0069e5e73ff37de1cc868e703981.png)
  
 
 When the status of the internal load balancer is running, you can connect the terminal under the VPC that has completed the peering connection to the deployment through the intranet IP of the intranet address. The connection port is the same as the public network connection port: mqtt port is 1883, websocket The port is 8083.
@@ -64,7 +64,7 @@ When the status of the internal load balancer is running, you can connect the te
 
 After completing the purchase of the NAT gateway value-added service, you can see the NAT gateway creation status in the corresponding deployment overview, and wait for the creation to complete.
 
-![EMQX Cloud NAT gateway configuration](https://static.emqx.net/images/6e54bcdec555edfd52cd2cb7538c5339.png)
+![EMQX Cloud NAT gateway configuration](https://assets.emqx.com/images/6e54bcdec555edfd52cd2cb7538c5339.png)
  
 
 When the status of the NAT gateway is running, the deployment can access public network resources.
@@ -72,3 +72,12 @@ When the status of the NAT gateway is running, the deployment can access public 
  
 
 The EMQX Cloud team will continue to collect user needs and launch more value-added services based on that. If you have any requirements, please let us know.
+
+
+<section class="promotion">
+    <div>
+        Try EMQX Cloud for Free
+        <div class="is-size-14 is-text-normal has-text-weight-normal">No credit card required</div>
+    </div>
+    <a href="https://www.emqx.com/en/signup?continue=https://cloud-intl.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">Get Started →</a >
+</section>

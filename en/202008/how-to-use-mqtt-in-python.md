@@ -235,7 +235,7 @@ Run the code of publishing messages, we will see  that the client connects succe
 python3 pub.py
 ```
 
-![python publish mqtt messages](https://static.emqx.net/images/8087a35e3b4c6e11e3b432dac024c420.png)
+![python publish mqtt messages](https://assets.emqx.com/images/8087a35e3b4c6e11e3b432dac024c420.png)
 
 #### Subscribe
 
@@ -245,7 +245,7 @@ Run the code of subscribing to messages, we will see  that the client connects s
 python3 sub.py
 ```
 
-![python mqtt subscribe](https://static.emqx.net/images/24fa48443372da483f06f9cce06b32bc.png)
+![python mqtt subscribe](https://assets.emqx.com/images/24fa48443372da483f06f9cce06b32bc.png)
 
 
 ## Summary

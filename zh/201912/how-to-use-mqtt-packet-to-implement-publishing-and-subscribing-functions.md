@@ -6,13 +6,13 @@ MQTT 协议基于 TCP/IP 协议，MQTT Broker 和 Client 都有需要有 TCP/IP 
 
 ### Broker
 
-![WX201911281137582x.png](https://static.emqx.net/images/fa35a1bc1853bc8862bfd9b826f8a2e0.png)
+![WX201911281137582x.png](https://assets.emqx.com/images/fa35a1bc1853bc8862bfd9b826f8a2e0.png)
 
 如果你暂时没有一个可用的 MQTT Broker，[EMQX](https://github.com/emqx/emqx) 提供了一个公共 Broker 地址用于测试：`broker.emqx.io:1883`。
 
 ### Client
 
-![WX201911281139012x.png](https://static.emqx.net/images/2d7c94b7259b93c461408601181d4626.png)
+![WX201911281139012x.png](https://assets.emqx.com/images/2d7c94b7259b93c461408601181d4626.png)
 
 MQTTX 工具中 Client 的配置其实是 MQTT 协议中 Connect 报文的配置，下面解释一下相关配置项：
 
@@ -58,7 +58,7 @@ MQTT 可以通过发送用户名和密码来进行相关的认证和授权，但
 
 客户端发送 Connect 报文请求对服务器的连接，服务器必须发送 Connack 报文作为对 来自客户端的 Connect 报文的回应。如果客户端在合理的时间内没有收到服务端的CONNACK报文，客户端应该关闭网络连接。合理的时间取决于应用的类型和通信基础设施。在 **[MQTTX](https://github.com/emqx/MQTTX)** 中，可以通过 Connection Timeout 来设置合理的超时时间。
 
-![Connect.png](https://static.emqx.net/images/67b64e84c52a7bb12474704f48954dcf.png)
+![Connect.png](https://assets.emqx.com/images/67b64e84c52a7bb12474704f48954dcf.png)
 
 Connack 报文包含 Session Present 和 Connect Return code 两个重要的标志。 
 
@@ -86,19 +86,19 @@ Connect Return code 表示服务器对此次 Connect 的回应，0 表示连接�
 
 客户端向服务端发送 Subscribe 报文用于创建一个或多个订阅。每个订阅注册客户端关心的一个或多个主题。为了将应用消息转发给与那些订阅匹配的主题，服务端发送 Publish 报文给客户端。Subscribe 报文为每个订阅指定了最大的 QoS 等级，服务端根据这个发送应用消息给客户端。
 
-![WX201911281425432x.png](https://static.emqx.net/images/24eb2af44dbe5c9b71dc8912144f08cf.png)
+![WX201911281425432x.png](https://assets.emqx.com/images/24eb2af44dbe5c9b71dc8912144f08cf.png)
 
 Subscribe 报文的有效载荷必须包含至少一对主题过滤器 和 QoS 等级字段组合。没有有效载荷的 Subscribe 报文是违反协议的。
 
 使用 **[MQTTX](https://github.com/emqx/MQTTX)** 连接 `broker.emqx.io:1883` 的 Broker 并创建主题为`testtopic/#` ，Qos 等于 2 的订阅。
 
-![WX201911281439252x.png](https://static.emqx.net/images/513810cc3ba2cdbc613ad9c662e25b80.png)
+![WX201911281439252x.png](https://assets.emqx.com/images/513810cc3ba2cdbc613ad9c662e25b80.png)
 
 ## Suback 订阅确认
 
 服务端发送 Suback 报文给客户端，用于确认它已收到并且正在处理 Subscribe 报文。
 
-![Subscribe.png](https://static.emqx.net/images/536d4ac3f53df2fdbc497d372f01febd.png)
+![Subscribe.png](https://assets.emqx.com/images/536d4ac3f53df2fdbc497d372f01febd.png)
 
 Suback 报文包含一个原因码列表，用于指定授予的最大QoS等级或 Subscribe 报文所请求的每个订阅发生的错误,每个原因码对应 Subscribe 报文中的一个主题过滤器。Suback 报文中的原因码顺序必须与 Subscribe 报文中的主题过滤器顺序相匹配
 
@@ -115,11 +115,11 @@ Suback 报文包含一个原因码列表，用于指定授予的最大QoS等级�
 
 Publish 报文是指从客户端向服务端或者服务端向客户端传输一个应用消息，服务器收到  Publish  报文后根据主题过滤器将消息转发给其他客户端。
 
-![Publish.png](https://static.emqx.net/images/236e05ccee50fda64c4d0808fa2a39b4.png)
+![Publish.png](https://assets.emqx.com/images/236e05ccee50fda64c4d0808fa2a39b4.png)
 
 尝试使用 **[MQTTX](https://github.com/emqx/MQTTX)** 发布一条主题为 `testtopic/mytopic` ，内容为 `{"msg": "hello world"}` 的消息，由于之前已经订阅了 `testtopic/#` 这一主题，所以立即接收到了 Broker 转发回来的这条消息
 
-![WX201911281441422x.png](https://static.emqx.net/images/70abc02e1ade4a4a49031c43bd9b8942.png)
+![WX201911281441422x.png](https://assets.emqx.com/images/70abc02e1ade4a4a49031c43bd9b8942.png)
 
 ### Topic
 

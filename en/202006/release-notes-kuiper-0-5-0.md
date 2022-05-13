@@ -8,7 +8,7 @@ EMQX Kuiper is an edge lightweight IoT data analytics / streaming software imple
 
 The user scenarios of Kuiper including, real-time processing of production line data in the IIoT; Gateway of Connected Vehicle analyze the data from data-bus in real time; Real-time analysis of urban facility data in smart city scenarios. Kuiper processing at the edge can reduce system response latency, save network bandwidth and storage costs, and improve system security.
 
-![Kuiper architect](https://static.emqx.net/images/f92e28acfbf4acdb12ace78f66371cad.png)
+![Kuiper architect](https://assets.emqx.com/images/f92e28acfbf4acdb12ace78f66371cad.png)
 
 This release includes several new features and bug fixes.
 

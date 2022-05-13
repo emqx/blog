@@ -19,11 +19,11 @@ EMQX通过访问kube-apiserver来实现自动集群功能，在Rancher中，Ranc
 1. 下载并安装kubectl
 2. 进入Rancher集群页面，点击Kubeconfig文件。
 
-![WX20190803103351.png](https://static.emqx.net/images/1545d54c22220da508c1427ade090b0e.png)
+![WX20190803103351.png](https://assets.emqx.com/images/1545d54c22220da508c1427ade090b0e.png)
 
 将kubeconfig文件保存到`~/.kube/config`
 
-![WX20190803103449.png](https://static.emqx.net/images/0932705013b5f69fb20082426feafb1d.png)
+![WX20190803103449.png](https://assets.emqx.com/images/0932705013b5f69fb20082426feafb1d.png)
 
 执行`kubectl cluster-info`验证配置是否成功
 
@@ -304,9 +304,9 @@ deployment.extensions "emqx" deleted
 ```
 
 进入Rancher集群工作负载页面，点击导入YAML
-![WX20190803103410.png](https://static.emqx.net/images/5e6b487393e0158e11a8bc74eced512f.png)
+![WX20190803103410.png](https://assets.emqx.com/images/5e6b487393e0158e11a8bc74eced512f.png)
 
 在导入页面将emqx.yaml文件的内容复制进去!
-![WX20190803103628.png](https://static.emqx.net/images/19c6ea1d29b7936b0e081002a943ac71.png)
+![WX20190803103628.png](https://assets.emqx.com/images/19c6ea1d29b7936b0e081002a943ac71.png)
 
 点击导入，等待导入成功。

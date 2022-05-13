@@ -130,7 +130,7 @@ Eshell V11.1.8 (abort with ^G)
 
 使用浏览器打开 [EMQX Dashboard](http://127.0.0.1:18083/#/rules/create)，在规则引擎页面创建一条规则：
 
-![EMQX 规则引擎](https://static.emqx.net/images/2450022faf9e2a01426972e4cfe432b7.png)
+![EMQX 规则引擎](https://assets.emqx.com/images/2450022faf9e2a01426972e4cfe432b7.png)
 
 SQL 语句为：
 
@@ -145,11 +145,11 @@ FROM
 
 然后我们在页面的底部，给规则加一个 "桥接数据到 MQTT Broker" 动作：
 
-![桥接数据到 MQTT Broker](https://static.emqx.net/images/faa1282d60b525ec58a92659bc164c70.png)
+![桥接数据到 MQTT Broker](https://assets.emqx.com/images/faa1282d60b525ec58a92659bc164c70.png)
 
 这个动作需要关联一个资源，我们点击右上角的 “新建资源” 来创建一个 `MQTT Bridge` 资源：
 
-![创建 EMQX 资源](https://static.emqx.net/images/c70c3f7c941ed1b74db9ee154b86f5df.png)
+![创建 EMQX 资源](https://assets.emqx.com/images/c70c3f7c941ed1b74db9ee154b86f5df.png)
 
 远程 Broker 地址要填写 IoTDB 的 MQTT 服务地址，即 "127.0.0.1:2883"。客户端 Id、用户名、密码都填写 root，因为 root 是 IoTDB 默认的用户名和密码。
 
@@ -159,7 +159,7 @@ FROM
 
 现在我们继续填写更多的动作参数：
 
-![创建 EMQX 响应动作](https://static.emqx.net/images/88ef0eeae52b08d1da0854d465719067.png)
+![创建 EMQX 响应动作](https://assets.emqx.com/images/88ef0eeae52b08d1da0854d465719067.png)
 
 IoTDB 不关心消息主题，我们填一个任意的主题：`foo`。
 
@@ -188,7 +188,7 @@ IoTDB 要求消息内容是一个 JSON 格式，消息内容模板可以按照�
 
 > MQTT X 是 EMQ 发布的一款完全开源的 MQTT 5.0 跨平台桌面客户端。支持快速创建多个同时在线的 MQTT 客户端连接，方便测试 MQTT/TCP、MQTT/TLS、MQTT/WebSocket 的连接、发布、订阅功能及其他 MQTT 协议特性。
 
-![MQTT 客户端工具 - MQTT X](https://static.emqx.net/images/207d7a3cd3603ee89cdf82fcaabaecb0.png)
+![MQTT 客户端工具 - MQTT X](https://assets.emqx.com/images/207d7a3cd3603ee89cdf82fcaabaecb0.png)
 
 MQTT 客户端的连接参数里面，我们只需要填一个参数，Client ID："abc"，其他的保持默认值不变。
 
@@ -202,7 +202,7 @@ MQTT 客户端的连接参数里面，我们只需要填一个参数，Client ID
 
 然后回到 EMQX Dashboard 的规则引擎页面，观察规则的命中次数，确认规则被触发了 2 次：
 
-![EMQX Dashboard 规则引擎页面](https://static.emqx.net/images/cf313af6faa9b4708b13bc19a99f6ebb.png)
+![EMQX Dashboard 规则引擎页面](https://assets.emqx.com/images/cf313af6faa9b4708b13bc19a99f6ebb.png)
 
 最后我们回到命令行终端的 IoTDB 客户端窗口，使用下面的 SQL 语句查询数据：
 
@@ -237,3 +237,12 @@ IoTDB>
 在实际生产场景中，我们可以使用 EMQX 处理海量的物联网设备并发连接，并通过规则引擎灵活地处理业务功能，然后将设备发送的消息持久化到 IoTDB 数据库，最后使用 Hadoop/Spark、Flink 或 Grafana 等对接 IoTDB 实现大数据分析、可视化展示等。
 
 EMQX + IoTDB 的组合是一个简洁、高效且易扩展、高可用的服务端集成方案，对于物联网设备管理和数据处理场景来说，是一个不错的选择。
+
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX Cloud
+        <div class="is-size-14 is-text-normal has-text-weight-normal">全托管的云原生 MQTT 消息服务</div>
+    </div>
+    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a >
+</section>

@@ -4,7 +4,7 @@
 
 我们知道一般的非共享订阅的消息发布流程是这样的：
 
-![WechatIMG316.png](https://static.emqx.net/images/87f2594bb38d81feb0441a5ac54aa339.png)
+![WechatIMG316.png](https://assets.emqx.com/images/87f2594bb38d81feb0441a5ac54aa339.png)
 
 在这种结构下，如果订阅节点发生故障，就会导致发布者的消息丢失（QoS 0）或者堆积在 Server 中（QoS 1, 2）。一般情况下，解决这个问题的办法都是直接增加订阅节点，但这样又产生了大量的重复消息，不仅浪费性能，在某些业务场景下，订阅节点还需要自行去重，进一步增加了业务的复杂度。
 
@@ -14,7 +14,7 @@
 
 现在，在 MQTT 5.0 协议中，你可以通过共享订阅特性解决上面提到的问题。当你使用共享订阅时，消息的流向就会变为：
 
-![WechatIMG317.png](https://static.emqx.net/images/7b172accff520fef7a48586b5aa0ba0b.png)
+![WechatIMG317.png](https://assets.emqx.com/images/7b172accff520fef7a48586b5aa0ba0b.png)
 
 同非共享订阅一样，共享订阅包含一个主题过滤器和[订阅选项](https://www.emqx.com/zh/blog/subscription-identifier-and-subscription-options)，唯一的区别在于共享订阅的主题过滤器格式必须是 `$share/{ShareName}/{filter}` 这种形式。这几个的字段的含义分别是：
 
@@ -43,11 +43,11 @@
 
 使用 `./emqx start` 启动 emqx，然后使用 emqtt 启动三个订阅客户端，分别订阅 `$share/a/topic`, `$share/a/topic`, `$share/b/topic`
 
-![image20191111142037391.png](https://static.emqx.net/images/a7b660ce3af15d21c8759ca340cb7257.png)
+![image20191111142037391.png](https://assets.emqx.com/images/a7b660ce3af15d21c8759ca340cb7257.png)
 
 启动一个发布客户端，向 `topic` 主题发布消息。
 
-![image20191111144814890.png](https://static.emqx.net/images/972770b0363d9d20ebda00137c955dcd.png)
+![image20191111144814890.png](https://assets.emqx.com/images/972770b0363d9d20ebda00137c955dcd.png)
 
 `$share/a/topic` 与 `$share/b/topic` 属于不同的会话组，非共享订阅主题 `topic` 会在所有的会话组中进行负载均衡。客户端 `sub3` 因为组内只有自己一个会话，所以收到了所有消息，而客户端 `sub1` 与 `sub2` 则是遵循我们配置的 random 策略随机接收消息。
 

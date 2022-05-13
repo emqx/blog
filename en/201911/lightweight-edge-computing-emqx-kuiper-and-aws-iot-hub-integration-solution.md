@@ -45,7 +45,7 @@ Now we need to analyze the data in real time, and ask for the following requirem
 
 As shown in the figure below, the edge analysis / streaming data processing method is adopted. At the edge, we adopt the EMQX approach, and finally output the calculation results to the IOT hub of AWS.
 
-![emqx_aws.png](https://static.emqx.net/images/ba91c40a291a95dfcbb9a6ad6a68070c.png)
+![emqx_aws.png](https://assets.emqx.com/images/ba91c40a291a95dfcbb9a6ad6a68070c.png)
 
 - EMQX Edge can access devices with various protocol types, such as MQTT, CoAP, LwM2M, etc.. Therefore, users do not need to care about protocol adaptation; it is also lightweight and suitable for deployment on edge devices. 
 - EMQX Kuiper is a SQL-based lightweight edge streaming data analysis engine released by EMQ. The installation package is only about 7MB, which is very suitable for running on the edge device side.
@@ -213,7 +213,7 @@ After debugging the SQL, users start configuring the rules file and send the res
 
 - Device: The device is a gateway for edge data analysis, and it installs Kuiper. After the data is processed in gateway, the result will be sent to AWS IoT. Here the name is demo, please refer to below.
 
-![aws_device.png](https://static.emqx.net/images/0c0b2f19fec3c67d2c34416e288fa577.png)
+![aws_device.png](https://assets.emqx.com/images/0c0b2f19fec3c67d2c34416e288fa577.png)
 
 - Device certification and private key: To ensure the security, the devices of AWS are using certification to connect. AWS provides following 3 files when creating devices. Now the certification and private key will be used.
 
@@ -269,7 +269,7 @@ time="2019-11-13T17:41:20+08:00" level=info msg="The connection to server ssl://
 
 - Topic ``devices/result`` is subscribed through [MQTT client tool](https://www.emqx.com/en/blog/mqtt-client-tools) provided by AWS IoT. Then send simulation device data to local EMQX Edge. After processing by Kuiper, the result is sent to AWS IoT. Refer to below, it received 2 batch of data (the 1st batch is collapsed).
 
-![aws_iot_result.png](https://static.emqx.net/images/56165475f574b76333420032cac9a4e7.png)
+![aws_iot_result.png](https://assets.emqx.com/images/56165475f574b76333420032cac9a4e7.png)
 
 User can use AWS Iot Rule to saving the result to Amazon DynamoDB or other storage services, and applications display result to end-user by reading data saving in DynamoDB. Refer to [ Amazon DynamoDB Document](https://docs.aws.amazon.com/iot/latest/developerguide/iot-ddb-rule.html) for more detailed information。
 

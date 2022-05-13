@@ -42,7 +42,7 @@ MQTTLens 完整的支持了以下功能：
 
 进入到应用的主界面后，我们点击右边的 `Connections` 按钮可创建一个新的连接客户端。
 
-![MQTTLens 界面](https://static.emqx.net/images/017284bd21723e22993d75f23050348d.png)
+![MQTTLens 界面](https://assets.emqx.com/images/017284bd21723e22993d75f23050348d.png)
 
 #### 创建连接
 
@@ -52,7 +52,7 @@ MQTTLens 还支持对遗嘱消息的配置，在创建弹出框底部，点击 `
 
 > 注意：如果 MQTT Broker 已开启用户名/密码认证的话，还需要在配置页面内输入 Username / Password
 
-![创建连接](https://static.emqx.net/images/314c56bdde5cbfc64d48813a52851929.png)
+![创建连接](https://assets.emqx.com/images/314c56bdde5cbfc64d48813a52851929.png)
 
 创建成功后，应用会进入到连接客户端的操作页面，如果右边的连接列表中的按钮变为绿色，即表示该 MQTT 客户端已经成功创建并连接成功。再次点击绿色按钮变为红色后，即可断开连接。点击右边的设置按钮可重新编辑客户端配置，点击删除按钮后可快速删除该连接。
 
@@ -68,6 +68,15 @@ MQTTLens 还支持对遗嘱消息的配置，在创建弹出框底部，点击 `
 
 在 `Publish` 模块内输入要发布的 Topic，这里输入刚才订阅过的 `testtopic/mqttlens`，选择 QoS 级别，如果是 Retain 消息，需要勾选 Retained 选项。我们 Payload 的框内输入一段字符信息后，点击 Publish 按钮。
 
-![MQTTLens 发布消息](https://static.emqx.net/images/1022237564e692fa597e9236ecd81640.png)
+![MQTTLens 发布消息](https://assets.emqx.com/images/1022237564e692fa597e9236ecd81640.png)
 
 此时我们可以看到底部的 `Subscriptions` 框内，出现了刚才发布的消息。至此，我们已经创建了一个 MQTT 客户端并成功测试了连接、发布、订阅等功能。
+
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX Cloud
+        <div class="is-size-14 is-text-normal has-text-weight-normal">无须绑定信用卡</div>
+    </div>
+    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a >
+</section>

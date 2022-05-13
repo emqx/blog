@@ -175,15 +175,15 @@ const mqttDisconnect = () => {
 
 完整项目示例代码：[https://github.com/emqx/MQTT-Client-Examples/tree/master/mqtt-client-React](https://github.com/emqx/MQTT-Client-Examples/tree/master/mqtt-client-React)。
 
-![reactmqttpage.png](https://static.emqx.net/images/d1c51195c056f3b4afb267edaeb217f0.png)
+![reactmqttpage.png](https://assets.emqx.com/images/d1c51195c056f3b4afb267edaeb217f0.png)
 
 使用 [MQTT 5.0 客户端工具 - MQTT X](https://mqttx.app/zh) 作为另一个客户端进行消息收发测试。
 
-![reactmqttx.png](https://static.emqx.net/images/621ba9544ea69f9ee7b24203846d0409.png)
+![reactmqttx.png](https://assets.emqx.com/images/621ba9544ea69f9ee7b24203846d0409.png)
 
 可以看到 MQTT X 可以正常接收来自浏览器端发送的消息，同样，使用 MQTT X 向该主题发送一条消息时，也可以看到浏览器端可以正常接收到该消息。
 
-![reactmqtttest.png](https://static.emqx.net/images/da008ae3544a83a3efa78266190ea364.png)
+![reactmqtttest.png](https://assets.emqx.com/images/da008ae3544a83a3efa78266190ea364.png)
 
 
 
@@ -192,3 +192,12 @@ const mqttDisconnect = () => {
 综上所述，我们实现了在 React 项目中创建 MQTT 连接，模拟了客户端与 MQTT 服务器进行订阅、收发消息、取消订阅以及断开连接的场景。
 
 本文使用的 React 版本为 v16.13.1，因此将使用 Hook Component 特性来作为示例代码演示，如有需求也可参考完整的示例代码中的 `ClassMqtt` 组件来使用 Class Component 特性来进行项目构建。
+
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX Cloud
+        <div class="is-size-14 is-text-normal has-text-weight-normal">全托管的云原生 MQTT 消息服务</div>
+    </div>
+    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a >
+</section>

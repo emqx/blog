@@ -18,12 +18,12 @@ The following functions will be provided in subsequent open-source versions:
 - Support dynamic modification of the client keepalive to adapt to the switching of energy consumption strategy in different working conditions of devices such as the Internet of Vehicles T-BOX
 - Support online Trace to capture DEBUG-level logs to facilitate troubleshooting and diagnosis of abnormal behavior of specified clients or topics
 
-   ![online Trace](https://static.emqx.net/images/9b627c894ff3ef03e2b772793e0fafb1.png)
+   ![online Trace](https://assets.emqx.com/images/9b627c894ff3ef03e2b772793e0fafb1.png)
  
 
 - Support Slow Subscription statistics to discover abnormal situations such as message blocking in the production environment in time
 
-   ![Slow Subscription statistics](https://static.emqx.net/images/fddd41d6d4d5b1c156cb61d21a4cb1ac.png)
+   ![Slow Subscription statistics](https://assets.emqx.com/images/fddd41d6d4d5b1c156cb61d21a4cb1ac.png)
 
 - Support dynamically discarding client-published messages with multi-language hook extension (exhook)
 - Dashboard static resources are loaded using relative paths to facilitate the configuration of reverse broker under the website subdirectory.
@@ -68,9 +68,9 @@ While the new version is released, we are also conducting relevant technical res
 
 4. EMQX cluster deployment based on CDK. This month, the EMQX European R&D team open-sourced [cdk-emqx-cluster](https://github.com/emqx/cdk-emqx-cluster), an internal tool for cluster deployment. It is based on AWS’s CDK development kit, capable of deploying and configuring EMQX cluster and surrounding integrated services, such as etcd, Kafka load generator for running stress tests, and Prometheus for monitoring. It has a complete Grafana Dashboard.
 
-   ![EMQX Grafana Dashboard](https://static.emqx.net/images/392d67ebdad90865f77af9576db51fe5.png)
+   ![EMQX Grafana Dashboard](https://assets.emqx.com/images/392d67ebdad90865f77af9576db51fe5.png)
 
-   ![EMQX Grafana Dashboard](https://static.emqx.net/images/c12f37d5dd3b03ab1e612cb8cabdca98.png)
+   ![EMQX Grafana Dashboard](https://assets.emqx.com/images/c12f37d5dd3b03ab1e612cb8cabdca98.png)
 
 ## EMQX Cloud: Focus on user needs to bring a better experience
 
@@ -89,3 +89,12 @@ The condition of a large number of offline devices may be caused by some externa
 Forwarding data to non-relational databases is supported by EMQX Cloud. At present, the resource configuration of the rule engine has added support for Alibaba Cloud MongoDB. The rule engine can be used to persist data to MongoDB of Alibaba Cloud. It provides more choices for business developers to achieve data persistence, which makes business landing more easily.
 
 EMQX team is always committed to bringing a better [MQTT broker](https://www.emqx.io) for the IoT era. Please stay tuned on EMQX.
+
+
+<section class="promotion">
+    <div>
+        Try EMQX Cloud for Free
+        <div class="is-size-14 is-text-normal has-text-weight-normal">No credit card required</div>
+    </div>
+    <a href="https://www.emqx.com/en/signup?continue=https://cloud-intl.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">Get Started →</a >
+</section>

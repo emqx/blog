@@ -31,7 +31,7 @@ MQTT v5 相较于 MQTT v3.1 和 v3.1.1 提供了许多新特性。我们会尽�
 客户端的`CONNECT`报文中"主题别名最大值"指示了本客户端在此次连接中服务端可以使用的最大主题别名数量；同样地，服务端发送的`CONNACK`报文中，也通过此值表明了当前连接中对端（客户端）可以使用的最大主题别名数量。
 
 
-![MQTT 主题别名最大值](https://static.emqx.net/images/8e5825731ef375d0cf50b7fa8b45e348.png)
+![MQTT 主题别名最大值](https://assets.emqx.com/images/8e5825731ef375d0cf50b7fa8b45e348.png)
 
 <center>双端各自设置对端可以使用的最大主题别名数量</center>
 
@@ -45,7 +45,7 @@ MQTT v5 相较于 MQTT v3.1 和 v3.1.1 提供了许多新特性。我们会尽�
 对端接收到带有主题别名值和非空主题名的`PUBLISH`报文后，将建立主题别名和主题名的映射关系，在此之后发送的`PUBLISH`报文中，便可以仅用长度2字节的主题别名发布消息，对端将使用通过之前建立的`主题别名<=>主题名`映射关系来处理消息中的主题。并且由于这一映射关系由双端各自维护，所以客户端与服务端可以使用值相同的主题别名互相发布消息。
 
 
-![设置与使用 MQTT 主题别名](https://static.emqx.net/images/90b455343adc89bade35746b3bf71a88.png)
+![设置与使用 MQTT 主题别名](https://assets.emqx.com/images/90b455343adc89bade35746b3bf71a88.png)
 
 <center> MQTT Client 与 MQTT Broker 分别设置 topic_alias</center>
 
@@ -54,7 +54,7 @@ MQTT v5 相较于 MQTT v3.1 和 v3.1.1 提供了许多新特性。我们会尽�
 
 `PUBLISH`报文中使用的主题别名值如果在此前的报文中未进行设置，即对端并未建立当前主题别名到某个主题名的映射关系，而此条报文的可变报头中主题名字段为空，对端将使用包含原因码（REASON_CODE）为`0x82`的`DISCONNECT`报文断开网络连接。
 
-![使用未设置的 MQTT 主题别名](https://static.emqx.net/images/a405b27fb7440c605450b87c44ede080.png)
+![使用未设置的 MQTT 主题别名](https://assets.emqx.com/images/a405b27fb7440c605450b87c44ede080.png)
 
 <center>使用未建立映射关系的主题别名</center>
 
@@ -63,10 +63,19 @@ MQTT v5 相较于 MQTT v3.1 和 v3.1.1 提供了许多新特性。我们会尽�
 
 当对端已经根据本次连接中某个`PUBLISH`报文创建了一个`主题别名<=>主题名`的映射关系时，可以在下一次发送`PUBLISH`报文时使用同样的主题别名值和非空的主题名来更新这个主题别名值到主题名的映射关系。
 
-![重置 MQTT 主题别名](https://static.emqx.net/images/264442ebc239f5a1cfbbf2f7ee990c1e.png)
+![重置 MQTT 主题别名](https://assets.emqx.com/images/264442ebc239f5a1cfbbf2f7ee990c1e.png)
 
 <center>MQTT Client 与 MQTT Broker 分别更新主题别名所对应的主题名</center>
 
 ## 总结
 
 主题别名作为 MQTT v5 新提供的特性，为 [pub/sub](https://www.emqx.com/zh/blog/mqtt-5-introduction-to-publish-subscribe-model) 这一消息传递模型提供了更灵活的使用方式，对于主题名一致且数量大、重复性高的消息而言，可以有效节省带宽资源和计算资源。
+
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX Cloud
+        <div class="is-size-14 is-text-normal has-text-weight-normal">全托管的云原生 MQTT 消息服务</div>
+    </div>
+    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a >
+</section>

@@ -20,7 +20,7 @@ In this project, we will implement remote control LED lights via NodeMCU(ESP8266
 
 ### NodeMCU ESP8266 and LED connection diagram
 
-![project](https://static.emqx.net/images/esp8266_control_led.png)
+![project](https://assets.emqx.com/images/esp8266_control_led.png)
 
 
 
@@ -194,11 +194,11 @@ In this project, we will implement remote control LED lights via NodeMCU(ESP8266
 
 1. Please use [Arduino IDE ](<https://www.arduino.cc/en/Main/Software>) to upload the complete code to ESP8266 and open the serial monitor.
 
-   ![esp_con](https://static.emqx.net/images/esp8266_connect_ssuccessful.png)
+   ![esp_con](https://assets.emqx.com/images/esp8266_connect_ssuccessful.png)
 
 2. Establish the connection between the MQTT X client and MQTT Broker and send commands to the ESP8266.
 
-   ![esp_con](https://static.emqx.net/images/esp8266_control_led_publish.png)
+   ![esp_con](https://assets.emqx.com/images/esp8266_control_led_publish.png)
 
 
 

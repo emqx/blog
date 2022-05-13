@@ -35,3 +35,12 @@
 ## 4.3 改进
 
 在投入精力进行 v5.0 开发的同时，我们也仍然在积极维护 v4.3。在六月，我们发布了 v4.3.5，修复了一些插件问题。更多详细信息，可以参阅发行说明：[https://github.com/emqx/emqx/releases](https://github.com/emqx/emqx/releases)。
+
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX Cloud
+        <div class="is-size-14 is-text-normal has-text-weight-normal">无须绑定信用卡</div>
+    </div>
+    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a >
+</section>

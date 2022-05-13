@@ -395,3 +395,12 @@ ssl:connect("127.0.0.1", 8883, [{cacertfile, "etc/certs/zhouzb.club/DigiCertGlob
 ## 结语
 
 以上，就是本次指南的全部内容，希望它能帮助你理解大部分场景下的 SSL/TLS 证书应该如何配置。加密套件、Key Usage 等进阶内容，我将会在以后的文章中详细地介绍。
+
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX Cloud
+        <div class="is-size-14 is-text-normal has-text-weight-normal">无须绑定信用卡</div>
+    </div>
+    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a >
+</section>

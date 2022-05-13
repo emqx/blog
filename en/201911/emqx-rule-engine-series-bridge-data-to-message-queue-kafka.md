@@ -49,13 +49,13 @@ When the reported value of engine speed  is greater than `8000', the current inf
 
 Open EMQX Dashboard, go to the **Resources** page on the left menu, click the **New** button, type Kafka server information for resource creation.
 
-![WX201907181413252x.jpg](https://static.emqx.net/images/aecb8d35dc38dd3033415562f47ec306.jpg)
+![WX201907181413252x.jpg](https://assets.emqx.com/images/aecb8d35dc38dd3033415562f47ec306.jpg)
 
 
 The network environment of the nodes in the EMQX cluster may be different. After the resources are created successfully, click the **Status button ** in the list to check the connection status of each node. If the resources on the node are unavailable, check whether the configuration is correct and the network connectivity is correct, and click the **Reconnect** button to manually reconnect.
 
 
-![image20190716173259015.jpg](https://static.emqx.net/images/7fe37afb9ef62d21c330cc0c7da9772c.jpg)
+![image20190716173259015.jpg](https://assets.emqx.com/images/7fe37afb9ef62d21c330cc0c7da9772c.jpg)
 
 
 
@@ -65,7 +65,7 @@ Go to the **Rules** page on the left menu and click the **New** button to create
 
 After selecting the trigger event, we can see the optional fields and sample SQL on the interface:
 
-![image20190716174727991.jpg](https://static.emqx.net/images/e802781b7ba9dfe7a12e11888c2531dd.jpg)
+![image20190716174727991.jpg](https://assets.emqx.com/images/e802781b7ba9dfe7a12e11888c2531dd.jpg)
 
 
 
@@ -134,7 +134,7 @@ The payload data is as follows. Note to change the `tachometer` value to satisfy
 
 
 Click the **SQL Test** toggle button, change `topic` and `payload` to be the information in the scenario, and click the **Test** button to view the data output:
-![image20190716184242159.jpg](https://static.emqx.net/images/aca92de316abf93fcea7ba541c9fc987.jpg)
+![image20190716184242159.jpg](https://assets.emqx.com/images/aca92de316abf93fcea7ba541c9fc987.jpg)
 
 
 
@@ -162,7 +162,7 @@ After the SQL condition input and output is correct, we continue to add the corr
 
 Click the **Add** button in the response action, select the **Bridge data to Kafka** action, select the resource just selected, and fill the Kafka topic with the `emqx_rule_engine_output` created above.
 
-![WX201907181416302x.jpg](https://static.emqx.net/images/e0aa5bd033c89350ecb9f0433608fd32.jpg)
+![WX201907181416302x.jpg](https://assets.emqx.com/images/e0aa5bd033c89350ecb9f0433608fd32.jpg)
 
 
 
@@ -202,7 +202,7 @@ Switch to the **Tools** --> **Websocket** page, use any client to connect to EMQ
   ```
 
 
-![image20190716190238252.jpg](https://static.emqx.net/images/813fe6b0c89b9067da4b5ca6aa15cb20.jpg)
+![image20190716190238252.jpg](https://assets.emqx.com/images/813fe6b0c89b9067da4b5ca6aa15cb20.jpg)
 
 
 

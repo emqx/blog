@@ -31,7 +31,7 @@ EMQX Cloud 目前支持以下几种告警模式，其中 Webhook 告警为本次
 
 具体告警提示如下：
 
-![EMQX Cloud 告警提示信息](https://static.emqx.net/images/fec1d88211a87b30f49abc381105398a.png)
+![EMQX Cloud 告警提示信息](https://assets.emqx.com/images/fec1d88211a87b30f49abc381105398a.png)
 
 ## 如何设置告警集成
 
@@ -41,7 +41,7 @@ EMQX Cloud 目前支持以下几种告警模式，其中 Webhook 告警为本次
 
 只需添加接受告警信息的邮箱，当部署产生告警时即可第一时间向邮箱发送告警提醒。
 
-![EMQX Cloud 邮箱告警集成](https://static.emqx.net/images/f97be1c58f54e17cb4519f90732a0e39.png)
+![EMQX Cloud 邮箱告警集成](https://assets.emqx.com/images/f97be1c58f54e17cb4519f90732a0e39.png)
  
 
 ### PagerDuty 告警集成
@@ -50,15 +50,15 @@ EMQX Cloud 目前支持以下几种告警模式，其中 Webhook 告警为本次
 
 1. 在 PagerDuty 创建告警服务
 
-	![在 PagerDuty 创建告警服务](https://static.emqx.net/images/9cb64e8a45ad0b50493ddcc4d51e420d.png)
+	![在 PagerDuty 创建告警服务](https://assets.emqx.com/images/9cb64e8a45ad0b50493ddcc4d51e420d.png)
 
 2. 添加 api v2 集成，并复制集成秘钥
 
-	![添加 api v2 集成](https://static.emqx.net/images/351025ab452229d20292d80ca0e5ca20.png)
+	![添加 api v2 集成](https://assets.emqx.com/images/351025ab452229d20292d80ca0e5ca20.png)
 
 3. 在 EMQX Cloud 中复制集成秘钥即可
 
-	![复制集成秘钥](https://static.emqx.net/images/75fe0a9e6bbcad76d1c35693ad9182df.png)
+	![复制集成秘钥](https://assets.emqx.com/images/75fe0a9e6bbcad76d1c35693ad9182df.png)
 
 ### Webhook 告警集成
 
@@ -70,22 +70,22 @@ EMQX Cloud 目前支持以下几种告警模式，其中 Webhook 告警为本次
 
 1. 完成微信机器人的创建，复制链接； 
 
-	![完成微信机器人的创建](https://static.emqx.net/images/5b12d44fbeff1842be16a1e28b7cd709.png)
+	![完成微信机器人的创建](https://assets.emqx.com/images/5b12d44fbeff1842be16a1e28b7cd709.png)
  
 2. 在 Webhook 告警中，选择企业微信，并填入告警名称和 Webhook 地址，完成配置；
 
-	![填写告警名称和 Webhook 地址](https://static.emqx.net/images/caa149e6415000cf8e3a58dcea797c76.png)
+	![填写告警名称和 Webhook 地址](https://assets.emqx.com/images/caa149e6415000cf8e3a58dcea797c76.png)
  
 3. 验证配置，可以通过测试功能，选择配置好的 Webhook 告警，即可发送默认消息检测是否配置成功。
 
-	![检测是否配置成功](https://static.emqx.net/images/df69020156aa15d3790ef56a14f3bc31.png)
+	![检测是否配置成功](https://assets.emqx.com/images/df69020156aa15d3790ef56a14f3bc31.png)
 
 
 #### 向钉钉发送告警消息
 
 1. 在钉钉中创建 Webhook 机器人，请参考[官方文档](https://open.dingtalk.com/document/robots/custom-robot-access)创建；
 
-	![在钉钉中创建 Webhook 机器人](https://static.emqx.net/images/1b944afecf2da10831c3c854d4ae1a82.png)
+	![在钉钉中创建 Webhook 机器人](https://assets.emqx.com/images/1b944afecf2da10831c3c854d4ae1a82.png)
  
 2. 复制机器人的 Webhook 地址，在告警配置中，选择钉钉，并填入告警名称和 Webhook 地址，完成配置。
 
@@ -97,7 +97,7 @@ EMQX Cloud 目前支持以下几种告警模式，其中 Webhook 告警为本次
 
 2. 复制 Webhook API 地址，在告警配置中，选择 Slack，并填入告警名称和 Webhook 地址，完成配置。
 
-   ![向 Slack 发送告警消息](https://static.emqx.net/images/aa041eb3d44ddb294e0a5bcf42e51034.png)
+   ![向 Slack 发送告警消息](https://assets.emqx.com/images/aa041eb3d44ddb294e0a5bcf42e51034.png)
 
 3. 验证配置，可以通过测试功能，选择配置好的 Webhook 告警，即可发送默认消息检测是否配置成功。
 
@@ -109,11 +109,17 @@ EMQX Cloud 目前支持以下几种告警模式，其中 Webhook 告警为本次
 
 2. 在新建对话框中填入 Webhook 服务的请求地址。同时也可以额外添加请求头的键和值。
 
-	![向自定义服务发送告警消息](https://static.emqx.net/images/98c7be871386ae04b7ce17a65bb8f7cc.png)
+	![向自定义服务发送告警消息](https://assets.emqx.com/images/98c7be871386ae04b7ce17a65bb8f7cc.png)
 
 3. 验证配置，可以通过测试功能，选择配置好的 Webhook 告警，即可发送默认消息检测是否配置成功。
 
 
 通过以上丰富的告警模式，您可以灵活自由的设置不同告警事件进行故障告警，在异常发生时可以第一时间处理，保障业务的稳定性。
 
-EMQX Cloud 现提供 14 天 免费试用，欢迎大家访问 [EMQX Cloud 官网](https://www.emqx.com/zh/cloud)试用新功能并向我们提出宝贵意见。
+<section class="promotion">
+    <div>
+        免费试用 EMQX Cloud
+        <div class="is-size-14 is-text-normal has-text-weight-normal">无须绑定信用卡</div>
+    </div>
+    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a >
+</section>

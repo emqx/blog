@@ -16,11 +16,11 @@
 
 1. 在测试计划下创建线程组。
 
-   ![创建线程组](https://static.emqx.net/images/1345aa6d58cab0ef4b3b9c47222cc9bd.png)
+   ![创建线程组](https://assets.emqx.com/images/1345aa6d58cab0ef4b3b9c47222cc9bd.png)
 
 2. 在线程组下添加仅一次控制器及“MQTT 连接采样器”（即"MQTT Connect"）。
 
-   ![添加 MQTT 连接采样器](https://static.emqx.net/images/dfbc4a122b94de8a06be953564619f77.png)
+   ![添加 MQTT 连接采样器](https://assets.emqx.com/images/dfbc4a122b94de8a06be953564619f77.png)
 
 3. 在 MQTT 连接采样器后添加 MQTT Pub Sampler，用于发布消息。
 
@@ -38,22 +38,22 @@
 
    - Message type : Randmom string with fixed length 为固定长度随机字符，后面Length为指定长度
 
-      ![MQTT Pub Sampler](https://static.emqx.net/images/cfa684bde4b5f27bc9e889f7e658f5b1.png)
+      ![MQTT Pub Sampler](https://assets.emqx.com/images/cfa684bde4b5f27bc9e889f7e658f5b1.png)
 
 4. 在 MQTT Pub Sampler 下添加“固定定时器”，用于控制发布消息频率。
 
-   ![添加固定定时器](https://static.emqx.net/images/5fc1e2e38c555519d5aeee421bc85c9b.png)
+   ![添加固定定时器](https://assets.emqx.com/images/5fc1e2e38c555519d5aeee421bc85c9b.png)
  
 
 ### 订阅脚本
 
 1. 在测试计划下增加线程组。
 
-   ![增加线程组](https://static.emqx.net/images/75c241792a50d6fe279c9debeebca6fb.png)
+   ![增加线程组](https://assets.emqx.com/images/75c241792a50d6fe279c9debeebca6fb.png)
 
 2. 在线程组下添加仅一次控制器及“MQTT 连接采样器”（即"MQTT Connect"）
 
-   ![添加 MQTT 连接采样器](https://static.emqx.net/images/d8608efc01ca297fdc218ca4358a284c.png)
+   ![添加 MQTT 连接采样器](https://assets.emqx.com/images/d8608efc01ca297fdc218ca4358a284c.png)
 
 3. 在 MQTT Connect 后添加 MQTT Sub Sampler，模拟订阅消息。
 
@@ -69,7 +69,7 @@
 
    - Debug response 调试返回信息，即在察看结果树中显示详细订阅报文
 
-      ![MQTT Sub Sampler](https://static.emqx.net/images/28c0452a731920d4d082b90d0a33c3c1.png)
+      ![MQTT Sub Sampler](https://assets.emqx.com/images/28c0452a731920d4d082b90d0a33c3c1.png)
 
 ## 测试的执行
 
@@ -77,25 +77,25 @@
 
 将线程组页面的线程组数分别修改为 50，设置循环次数为 1000，页面点击 Start 按钮执行测试。
 
-![执行测试](https://static.emqx.net/images/8ff44110b48db12c42ccf8242b4e7312.png)
+![执行测试](https://assets.emqx.com/images/8ff44110b48db12c42ccf8242b4e7312.png)
 
 查看测试结果，点击“察看结果树”可查看发布及订阅报文内容。
 
-![察看结果树](https://static.emqx.net/images/360fadfb1674d46fa8fa8558d2cf1948.png)
+![察看结果树](https://assets.emqx.com/images/360fadfb1674d46fa8fa8558d2cf1948.png)
 
 从汇总报告看出 Pub 和 Sub 吞吐量为 161.5/s，50 发布者与 50 订阅者消息数都是 50*1000，即发布订阅吞吐与消息数量都一致。
 
-![测试汇总报告](https://static.emqx.net/images/37e48fce9bcc1e3d2d686d3678bf198e.png)
+![测试汇总报告](https://assets.emqx.com/images/37e48fce9bcc1e3d2d686d3678bf198e.png)
  
 
 登录 EMQX Dashboard 页面，显示如下：
 
-![EMQX Dashboard](https://static.emqx.net/images/2d1975568e5dec9b98164990564a55a8.png)
+![EMQX Dashboard](https://assets.emqx.com/images/2d1975568e5dec9b98164990564a55a8.png)
  
 
 ## 附件
 
-读者可[下载测试脚本](https://static.emqx.net/data/MQTT_Pub_Sub.jmx)运行并查看结果。
+读者可[下载测试脚本](https://assets.emqx.com/data/MQTT_Pub_Sub.jmx)运行并查看结果。
 
 ## 本系列中的其它文章
 

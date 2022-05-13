@@ -28,7 +28,7 @@ cmake -G Ninja -DNNG_ENABLE_SQLITE=ON ..
 
 订阅标识符是 MQTT 5.0 带来的一个重要特性，客户端可以在订阅时指定一个订阅标识数字，服务端将在订阅成功创建或修改时，建立和更新该客户端会话所订阅的主题与订阅标识符的映射关系。当有匹配该订阅的 PUBLISH 报文要转发给此客户端时，服务端会将与该订阅关联的订阅标识符随 PUBLISH 报文一并返回给客户端。这一功能在客户端想要知道因为订阅了哪一个主题而收到了消息时非常有用，有助于将消息处理程序和所订阅的主题进行映射。
 
-![MQTT 5.0 订阅标识符和订阅选项](https://static.emqx.net/images/e9944e6ff0d9534a4fdebd7dc871a985.png)
+![MQTT 5.0 订阅标识符和订阅选项](https://assets.emqx.com/images/e9944e6ff0d9534a4fdebd7dc871a985.png)
 
 关于订阅标识符的详细内容可以参阅 [订阅标识符与订阅选项 - MQTT 5.0 新特性](https://www.emqx.com/zh/blog/subscription-identifier-and-subscription-options) 。NanoMQ 不会因为 PUBLISH 报文携带多个订阅标识符而触发多次消息处理而带来性能损耗。这是因为NanoMQ所有的消息发布操作都是在传输层并行处理，对不同客户端同时进行发布消息时为异步，针对单个客户端是串行发布保证顺序。当有一个客户端因命中多个订阅标识符而需发布多条消息时，这些操作会在同一个线程中完成。
 
@@ -63,3 +63,12 @@ Retain Handling 用来指定订阅建立时服务端是否向客户端发送保�
 ## 即将到来
 
 应社区要求，NanoMQ 将于下个月正式发布 WebHook 拓展支持。目前此功能处于 Demo 阶段，在最新的主分支已可以使用。用户可以自行编译安装使用，欢迎尝鲜：[https://github.com/emqx/nanomq/](https://github.com/emqx/nanomq/) 。
+
+
+
+<section class="promotion">
+    <div>
+        免费试用 NanoMQ
+    </div>
+    <a href="https://www.emqx.com/zh/try?product=nanomq" class="button is-gradient px-5">开始试用 →</a >
+</section>

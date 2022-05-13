@@ -3,7 +3,7 @@
 
 
 *[emqx_auth_http](https://github.com/emqx/emqx-auth-http/)* 它将每个终端的接入认证、访问控制事件抛给用户自己的 *WebServer* 以实现接入认证和ACL鉴权的功能。其架构逻辑如下：
-![emqx_auth_http.png](https://static.emqx.net/images/3de6174eabcbbd4b2ad500f12f727f5f.png)
+![emqx_auth_http.png](https://assets.emqx.com/images/3de6174eabcbbd4b2ad500f12f727f5f.png)
 
 **emqx_auth_http 主要处理的事情有：**
 

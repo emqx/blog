@@ -38,7 +38,7 @@ EMQX Broker 从 V3 版本开始支持速率限制功能，包括了对 **PUBLISH
 
 上述所提到 `publish_limit` 和 `rate_limit` 都使用 **令牌桶算法** 实现，其算法逻辑如下图：
 
-![画板2x.jpg](https://static.emqx.net/images/774c97d301a252790e77e52af992b92a.jpg)
+![画板2x.jpg](https://assets.emqx.com/images/774c97d301a252790e77e52af992b92a.jpg)
 
 1. 存在一个最多可容纳 `burst` 数量令牌 (Token) 的桶 (Bucket)。
 2. 我们将以每秒 N 个的速率向这个桶添加令牌，桶满时则不再向桶添加令牌，这个速率我们记为 `rate`。
@@ -59,7 +59,7 @@ EMQX Broker 从 V3 版本开始支持速率限制功能，包括了对 **PUBLISH
 
 基于以上的 *令牌桶* 算法下，EMQX 对速率限制的实现逻辑如下：
 
-![画板1232x.jpg](https://static.emqx.net/images/874ae38a1c06a8919d2109d148adf177.jpg)
+![画板1232x.jpg](https://assets.emqx.com/images/874ae38a1c06a8919d2109d148adf177.jpg)
 
 其含义为：
 
@@ -111,3 +111,12 @@ listener.tcp.external.max_conn_rate = 1000
 `
 
 每秒允许的最大并发连接数。
+
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX Cloud
+        <div class="is-size-14 is-text-normal has-text-weight-normal">全托管的云原生 MQTT 消息服务</div>
+    </div>
+    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a >
+</section>

@@ -39,4 +39,4 @@ eKuiper 提供了统一的，多数据库通用的 SQL 拉取 source，可定时
 
 eKuiper 官方网站于本月正式上线。网站提供了产品的相关介绍，下载信息和文档博客的链接。同时，我们对文档进行了重构，增加了概念介绍、教程等模块，调整了导航树，希望能帮助用户更方便地找到有用的信息。扫描下方二维码即可快速访问：
 
-![eKuiper 社区站](https://static.emqx.net/images/030f3218bb39e7150e7cb5d9d27024da.png)
+![eKuiper 社区站](https://assets.emqx.com/images/030f3218bb39e7150e7cb5d9d27024da.png)

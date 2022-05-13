@@ -36,3 +36,12 @@ With this feature, an EMQX cluster can be configured with two types of node role
 ## 4.3 Improvements
 
 Although v5.0 is our main focus, v4.3 is nonetheless still being actively maintained. In June, we released v4.3.4 to fix some of the plugin issues. Please see [Release Notes](https://github.com/emqx/emqx/releases) for more details.
+
+
+<section class="promotion">
+    <div>
+        Try EMQX Cloud for Free
+        <div class="is-size-14 is-text-normal has-text-weight-normal">No credit card required</div>
+    </div>
+    <a href="https://www.emqx.com/en/signup?continue=https://cloud-intl.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">Get Started →</a >
+</section>

@@ -4,7 +4,7 @@ Although the publish-subscribe model fully decouples the publisher of the messag
 
 ### Retain message
 
-![image20191014152158994.png](https://static.emqx.net/images/d57f8dd63bee941219594679e3469bf9.png)
+![image20191014152158994.png](https://assets.emqx.com/images/d57f8dd63bee941219594679e3469bf9.png)
 
 When the server receives a PUBLISH packet with a Retain flag of 1, it will conduct the following operations:
 

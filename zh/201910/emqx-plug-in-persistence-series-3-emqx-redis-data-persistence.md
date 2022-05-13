@@ -14,7 +14,7 @@
 
 ### 一对一消息存储
 
-![backends_1.png](https://static.emqx.net/images/9ed51d69f076d575ce3091d37f82814d.png)
+![backends_1.png](https://assets.emqx.com/images/9ed51d69f076d575ce3091d37f82814d.png)
 
 1. Publish 端发布一条消息；
 2. Backend 将消息记录数据库中；
@@ -27,7 +27,7 @@
 
 ### 一对多消息存储
 
-![backends_2.png](https://static.emqx.net/images/ad4aedc0ec1f3a5eb7e19e66646552c0.png)
+![backends_2.png](https://assets.emqx.com/images/ad4aedc0ec1f3a5eb7e19e66646552c0.png)
 
 1. PUB 端发布一条消息；
 2. Backend 将消息记录在数据库中；
@@ -94,7 +94,7 @@ backend.redis.hook.client.disconnected.1 = {"action": {"function": "on_client_di
 
 浏览器打开 `http://127.0.0.1:18083` EMQX 管理控制台，在 **工具** -> **Websocket** 中新建一个客户端连接，指定 clientid 为 sub_client:
 
-![image20181116105333637.png](https://static.emqx.net/images/870151e73a93512e8169d41eafb8ff0f.png)
+![image20181116105333637.png](https://assets.emqx.com/images/870151e73a93512e8169d41eafb8ff0f.png)
 
 打开 `redis-cli` 命令行窗口，执行命令 `keys *`，结果如下所示，读者可以看到在 Redis 中存储了两个 key：
 
@@ -185,7 +185,7 @@ backend.redis.hook.client.connected.2    = {"action": {"function": "on_subscribe
 ```
 
 2. EMQX  管理控制台 **WebSocket** 页面，以 clientid `sub_client`  新建一个客户端连接，切换至**订阅**页面，可见当前客户端自动订阅了 `sub_client/upstream` 与 `sub_client/downlink` 两个 QoS 1 的主题：
-![image20181116110036523.png](https://static.emqx.net/images/a8f9d8628e7f00637add7ad26f933bcd.png)
+![image20181116110036523.png](https://assets.emqx.com/images/a8f9d8628e7f00637add7ad26f933bcd.png)
 
 
 
@@ -292,7 +292,7 @@ MQTT 离线消息需满足以下条件：
 
 在 EMQX 管理控制台中以如下配置建立连接，
 
-![image20191009113040528.png](https://static.emqx.net/images/9b4eba3c602b37498087cee203777ce5.png)
+![image20191009113040528.png](https://assets.emqx.com/images/9b4eba3c602b37498087cee203777ce5.png)
 
 
 

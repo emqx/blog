@@ -1,5 +1,5 @@
 **在即将到来的 v4.2 版本中，EMQX 企业版**提供了 **模块** 功能，用于替代之前的 **插件** 。该版本之后插件将置于长期维护状态，不再新增功能。
-![1.png](https://static.emqx.net/images/d3056829973a659d92fb3b8c5edfe459.png)
+![1.png](https://assets.emqx.com/images/d3056829973a659d92fb3b8c5edfe459.png)
 
 
 
@@ -26,7 +26,7 @@ EMQX 模块按照功能组织，分为以下几类：
 客户端连接到 EMQX、发布/订阅主题的时候可以使用认证鉴权模块进行身份与权限验证。
 
 认证鉴权模块支持文件、内置数据库、JWT、外部主流数据库和自定义 HTTP API 等数据源，支持动态更改认证逻辑（如查询 SQL），动态添加、删除认证链。
-![认证鉴权.png](https://static.emqx.net/images/73679e9f0b6019b7faba35b21630c861.png)
+![认证鉴权.png](https://assets.emqx.com/images/73679e9f0b6019b7faba35b21630c861.png)
 
 
 
@@ -36,7 +36,7 @@ EMQX 模块按照功能组织，分为以下几类：
 
 在协议接入相关模块中，用户能够快速启用需要的扩展协议，动态增改协议的监听端口，以及协议与 [MQTT 主题](https://www.emqx.com/zh/blog/advanced-features-of-mqtt-topics)的挂载关系。
 
-![协议接入.png](https://static.emqx.net/images/98273b92dcb3459e4e7bf40de2145109.png)
+![协议接入.png](https://assets.emqx.com/images/98273b92dcb3459e4e7bf40de2145109.png)
 
 
 
@@ -44,7 +44,7 @@ EMQX 模块按照功能组织，分为以下几类：
 
 服务端下发指令到设备是物联网应用中常用的场景，EMQX 提供多种消息下发方式，针对下行流量较大的项目，用户可以使用消息下发模块配置消费 Kafka 或 Pulsar 进行消息下发，模块能够方便地配置数据源以及 Kafka-MQTT、Pulsar-MQTT 的主题映射关系，实现高吞吐、事务级的服务端消息下发。
 
-![消息下发.png](https://static.emqx.net/images/98ab2bd2917fc74ff9017c8e43731bd7.png)
+![消息下发.png](https://assets.emqx.com/images/98ab2bd2917fc74ff9017c8e43731bd7.png)
 
 
 
@@ -94,7 +94,7 @@ EMQX 的 [保留消息](https://docs.emqx.cn/enterprise/latest/modules/retainer.
 
 用于 EMQX 中 MQTT 保留消息的管理，可以配置存储位置、有效期、消息大小等参数。禁用此模块且没有启用其他保留消息功能，EMQX 将不支持保留消息。
 
-![MQTT 保留消息.png](https://static.emqx.net/images/6cff9581c968d03e83e29d68b5601ff7.png)
+![MQTT 保留消息.png](https://assets.emqx.com/images/6cff9581c968d03e83e29d68b5601ff7.png)
 
 
 
@@ -105,3 +105,11 @@ EMQX 的延迟发布功能可以实现按照用户配置的时间间隔延迟发
 
 
 该版本将于近期发布，敬请期待。
+
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX 企业版
+    </div>
+    <a href="https://www.emqx.com/zh/try?product=enterprise" class="button is-gradient px-5">开始试用 →</a >
+</section>

@@ -8,7 +8,7 @@ PUBLISH 报文的有效载荷负责存储消息内容，与 MQTT 3.1.1 协议相
 
 **CONNECT 报文的可变头部新增的属性有:**
 
-![1.png](https://static.emqx.net/images/90f25b5ca8dc4e5501b4d0ed41e7cf74.png)
+![1.png](https://assets.emqx.com/images/90f25b5ca8dc4e5501b4d0ed41e7cf74.png)
 
 
 
@@ -16,7 +16,7 @@ PUBLISH 报文的有效载荷负责存储消息内容，与 MQTT 3.1.1 协议相
 
 **新增的遗嘱属性有:**
 
-![2.png](https://static.emqx.net/images/bdabfdce4a61eb236fca3c2816405093.png)
+![2.png](https://assets.emqx.com/images/bdabfdce4a61eb236fca3c2816405093.png)
 
 
 
@@ -24,20 +24,20 @@ PUBLISH 报文的有效载荷负责存储消息内容，与 MQTT 3.1.1 协议相
 
 **CONNACK 报文没有 Payload，在可变头部中包含的属性有：**
 
-![3.png](https://static.emqx.net/images/a1af2211b756e665c1b891ec78acba13.png)
+![3.png](https://assets.emqx.com/images/a1af2211b756e665c1b891ec78acba13.png)
 
 ### PUBLISH 报文
 
 **PUBLISH 报文可变头部的属性有：**
 
-![PUBLISH 报文  .png](https://static.emqx.net/images/50b3fafb8cf564389baa62a46e781342.png)
+![PUBLISH 报文  .png](https://assets.emqx.com/images/50b3fafb8cf564389baa62a46e781342.png)
 
 
 
 ### PUBACK, PUBREC, PUBREL, PUBCOMP, SUBACK, UNSUBACK 报文
 
 **PUBACK, PUBREC, PUBREL, PUBCOMP, SUBACK, UNSUBACK 都具备以下三个属性：**
-![PUBACK, PUBREC, PUBREL, PUBCOMP, SUBACK, UNSUBACK 报文.png](https://static.emqx.net/images/3b2c016167ebb30a40a055d446e32347.png)
+![PUBACK, PUBREC, PUBREL, PUBCOMP, SUBACK, UNSUBACK 报文.png](https://assets.emqx.com/images/3b2c016167ebb30a40a055d446e32347.png)
 
 
 ### SUBSCRIBE 报文
@@ -45,13 +45,13 @@ PUBLISH 报文的有效载荷负责存储消息内容，与 MQTT 3.1.1 协议相
 **SUBSCRIBE 报文的属性同样存在可变头部中。**
 
 
-![1111.png](https://static.emqx.net/images/b9109207f7d9ff0c924df16164c7a8e7.png)
+![1111.png](https://assets.emqx.com/images/b9109207f7d9ff0c924df16164c7a8e7.png)
 
 
 MQTT 5.0 中 SUBSCRIBE 报文中的 Payload 包含了[订阅选项](https://www.emqx.com/zh/blog/subscription-identifier-and-subscription-options) (Subscription Options)。
 
 
-![SUBSCRIBE 报文2.png](https://static.emqx.net/images/775c3841412fde11076e59f530a97b78.png)
+![SUBSCRIBE 报文2.png](https://assets.emqx.com/images/775c3841412fde11076e59f530a97b78.png)
 
 
 订阅选项(Subscription Options)的第 0 位和第 1 位表示 QoS 最大值。该字段给出了服务器可以发送给客户端应用消息的最大 QoS 等级。如果 QoS 值为 3，就会触发协议错误。
@@ -76,7 +76,7 @@ UNSUBSCRIBE 报文的载荷相比 SUBSCRIBE 的载荷要简单很多，它仅仅
 
 **DISCONNECT 报文是 MQTT 5.0 新增的报文，它的引入意味着 mqtt broker 拥有了主动断开连接的能力。DISCONNECT 报文所具备的属性有：**
 
-![DISCONNECT 报文新增.png](https://static.emqx.net/images/f6aa8921e06244d319c110a9cfdbdb90.png)
+![DISCONNECT 报文新增.png](https://assets.emqx.com/images/f6aa8921e06244d319c110a9cfdbdb90.png)
 
 
 <section class="promotion">

@@ -153,7 +153,7 @@ coap.dtls.cacertfile 为 pem 格式的CA证书，用来对客户端进行验证�
 
 在 Dashboard 中的 插件 目录下，选择 emqx_coap 点击开启即可，如图:
 
-![EMQX CoAP 插件](https://static.emqx.net/images/685cbdd5e4490d07a53f6caf9d2e4ffd.jpeg)
+![EMQX CoAP 插件](https://assets.emqx.com/images/685cbdd5e4490d07a53f6caf9d2e4ffd.jpeg)
 
 #### 使用终端开启
 
@@ -221,3 +221,13 @@ coap-client -m get -s 60 -B 60 -o - -T "token" "coap://127.0.0.1:5683/mqtt/coap/
 作为一款强大的开源分布式云原生物联网消息服务器，EMQX 不仅完整支持 MQTT 协议，同时支持 CoAP、LwM2M 协议，为各类终端设备的接入提供便利。
 
 关于 EMQX 的详细使用，可参考 [EMQX  企业版文档](https://docs.emqx.com/zh/enterprise/latest/)。也可访问 EMQX GitHub 项目地址：[https://github.com/emqx/emqx](https://github.com/emqx/emqx) 关注 EMQX 开源项目最新进展。
+
+
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX Cloud
+        <div class="is-size-14 is-text-normal has-text-weight-normal">无须绑定信用卡</div>
+    </div>
+    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a >
+</section>

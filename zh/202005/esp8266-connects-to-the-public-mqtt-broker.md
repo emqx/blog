@@ -20,7 +20,7 @@
 
 ## ESP8266 Pub/Sub 示意图
 
-![project.png](https://static.emqx.net/images/8c533fd396ed33ac5a6daa872eced9ba.png)
+![project.png](https://assets.emqx.com/images/8c533fd396ed33ac5a6daa872eced9ba.png)
 
 
 
@@ -186,15 +186,15 @@
 
 1. 请使用 [Arduino IDE](https://www.arduino.cc/en/Main/Software) 将完整代码上传到 ESP8266，并打开串口监视器
 
-   ![esp_con.png](https://static.emqx.net/images/d5632144ec7cf22977b53519f4411227.png)
+   ![esp_con.png](https://assets.emqx.com/images/d5632144ec7cf22977b53519f4411227.png)
 
 2. 建立 MQTT X 客户端 与 MQTT 服务器的连接, 并向 ESP8266 发送消息
 
-   ![mqttx_pub.png](https://static.emqx.net/images/b8df461f137bc73aeb3aff1ae1126549.png)
+   ![mqttx_pub.png](https://assets.emqx.com/images/b8df461f137bc73aeb3aff1ae1126549.png)
 
 3. 在串口监视器查看 ESP8266 接收到的消息
 
-   ![esp_msg.png](https://static.emqx.net/images/24132d64c2c19738f1a12b0acb3b217e.png)
+   ![esp_msg.png](https://assets.emqx.com/images/24132d64c2c19738f1a12b0acb3b217e.png)
 
 
 
@@ -203,3 +203,12 @@
 至此，我们已成功使 ESP8266 连接到 EMQX Cloud 提供的公共 MQTT 服务器。 在本项目中我们简单的将 ESP8266 连接到 MQTT 服务器，这只是 ESP8266 较为基础的能力之一，ESP8266 其实还能与各类物联网传感器相连，并将传感器数据上报至 MQTT 服务器。
 
 接下来我们将会陆续发布更多关于物联网开发及 ESP8266 的相关文章，敬请关注。
+
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX Cloud
+        <div class="is-size-14 is-text-normal has-text-weight-normal">全托管的云原生 MQTT 消息服务</div>
+    </div>
+    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a >
+</section>

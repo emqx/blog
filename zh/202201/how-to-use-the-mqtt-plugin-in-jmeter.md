@@ -20,7 +20,7 @@ MQTT 插件的安装方式与其他 JMeter 第三方插件类似。
 
 连接采样器模拟物联网设备，发起 MQTT 连接。
 
-![JMeter MQTT 连接](https://static.emqx.net/images/ebd5536794031cd01db488838013cc27.png)
+![JMeter MQTT 连接](https://assets.emqx.com/images/ebd5536794031cd01db488838013cc27.png)
 
 **Server name or IP:** 指向被测 MQTT 服务器地址。
 
@@ -48,7 +48,7 @@ MQTT 插件的安装方式与其他 JMeter 第三方插件类似。
 
 消息发布采样器复用连接采样器中建立的 MQTT 连接，向目标 [MQTT 服务器](https://www.emqx.com/zh/mqtt/public-mqtt5-broker)发布消息。
 
-![JMeter 发布 MQTT 消息](https://static.emqx.net/images/71728f02bf2886a7ce5d1c15dbd66a2b.png)
+![JMeter 发布 MQTT 消息](https://assets.emqx.com/images/71728f02bf2886a7ce5d1c15dbd66a2b.png)
 
 **QoS Level:** 服务质量，取值为 0，1，2，分别代表 MQTT 协议规范里的至多一次（AT_MOST_ONCE），至少一次（AT_LEAST_ONCE），精确一次（EXACTLY_ONCE）
 
@@ -68,7 +68,7 @@ MQTT 插件的安装方式与其他 JMeter 第三方插件类似。
 
 消息发布采样器复用连接采样器中建立的 MQTT 连接，从目标 MQTT 服务器上订阅消息。
 
-![JMeter MQTT 消息订阅](https://static.emqx.net/images/d46ae48963d4690ecaaab85ec0f38e61.png)
+![JMeter MQTT 消息订阅](https://assets.emqx.com/images/d46ae48963d4690ecaaab85ec0f38e61.png)
 
 **QoS Level:** 服务质量，含义与消息发布采样器相同。
 
@@ -84,7 +84,7 @@ MQTT 插件的安装方式与其他 JMeter 第三方插件类似。
 
 断开连接采样器中建立的 MQTT 连接。
 
-![JMeter 断开 MQTT 连接](https://static.emqx.net/images/9be500573f56629d38adab8e264bdbc2.png)
+![JMeter 断开 MQTT 连接](https://assets.emqx.com/images/9be500573f56629d38adab8e264bdbc2.png)
 
 > 为灵活起见，上述采样器中的属性值都可以引用 JMeter 的系统或自定义变量。
 
@@ -99,3 +99,12 @@ MQTT 插件的安装方式与其他 JMeter 第三方插件类似。
 - [JMeter MQTT 在连接测试场景中的使用 - 物联网大并发测试实战 04](https://www.emqx.com/zh/blog/test-mqtt-connection-with-jmeter)
 
 - [如何在 JMeter 中使用 MQTT 插件 - 物联网大并发测试实战 05](https://www.emqx.com/zh/blog/the-use-of-jmeter-mqtt-in-subscription-and-publishing-test-scenarios)
+
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX Cloud
+        <div class="is-size-14 is-text-normal has-text-weight-normal">全托管的云原生 MQTT 消息服务</div>
+    </div>
+    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a >
+</section>

@@ -30,15 +30,15 @@ Jika ini adalah pengalaman pertama Anda menggunakan EMQX Cloud, jangan khawatir.
 
 3. Setelah deployment telah dibuat dan statusnya menjadi **running**, masukkan informasi otentikasi klien (bisa dimasukkan secara manual atau diimpor dari file).
 
-    ![add authentication](https://static.emqx.net/images/9142d9a045b570402515eaa47c6698a6.png)
+    ![add authentication](https://assets.emqx.com/images/9142d9a045b570402515eaa47c6698a6.png)
 
 4. Klik konfigurasi Home Assistant untuk menambah integrasi.
 
 5. Pilih MQTT dan masukkan informasi deployment.
 
-    ![Add MQTT Broker to Home Assistant](https://static.emqx.net/images/1da096c0f7a5f4b200b1f14583c49414.png)
+    ![Add MQTT Broker to Home Assistant](https://assets.emqx.com/images/1da096c0f7a5f4b200b1f14583c49414.png)
 
-    ![EMQX MQTT Cloud deployment information](https://static.emqx.net/images/26b958bcc271d1f6801d06152c65fd78.png)
+    ![EMQX MQTT Cloud deployment information](https://assets.emqx.com/images/26b958bcc271d1f6801d06152c65fd78.png)
 
    Anda perlu memasukkan `Connect Address `untuk Broker dan `Connect Port (mqtt)` untuk Port. Masukkan username dan password yang Anda buat di halaman otentikasi.
 
@@ -46,4 +46,4 @@ Jika ini adalah pengalaman pertama Anda menggunakan EMQX Cloud, jangan khawatir.
 
 7. Selamat, deployment EMQX Cloud Anda sekarang telah terintegrasi dengan Home Assistant!
 
-    ![Successfully integrating with Home Assistant](https://static.emqx.net/images/e6bd46c82942efdbac70ed9d09faa35b.png)
+    ![Successfully integrating with Home Assistant](https://assets.emqx.com/images/e6bd46c82942efdbac70ed9d09faa35b.png)

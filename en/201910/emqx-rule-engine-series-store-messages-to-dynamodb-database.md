@@ -127,11 +127,11 @@ $ aws dynamodb list-tables --region us-west-2 --endpoint-url http://127.0.0.1:80
 
 Open EMQX Dashboard, go to the **Resources** page on the left menu, click the **New** button, type DynamoDB server information for resource creation.
 
-![image01.jpg](https://static.emqx.net/images/22f62479759058690bf6dd468e715a80.jpg)
+![image01.jpg](https://assets.emqx.com/images/22f62479759058690bf6dd468e715a80.jpg)
 
 The network environment of the nodes in the EMQX cluster may be different. After the resources are created successfully, click the **Status** button  in the list to check the connection status of each node. If the resources on the node are unavailable, check whether the configuration is correct and the network connectivity is correct, and click the **Reconnect** button to manually reconnect.
 
-![image02.jpg](https://static.emqx.net/images/a5973e08b0b26d85eb60505610193714.jpg)
+![image02.jpg](https://assets.emqx.com/images/a5973e08b0b26d85eb60505610193714.jpg)
 
 ### Create rules
 
@@ -139,7 +139,7 @@ Go to the left menu of  **rules**  page, click  **new**  button to create rules.
 
 After selecting the trigger event, we can see the optional field and sample SQL in the interface:
 
-![image03.jpg](https://static.emqx.net/images/1c72e2ec615041b9919dc28b500e5c98.jpg)
+![image03.jpg](https://assets.emqx.com/images/1c72e2ec615041b9919dc28b500e5c98.jpg)
 
 #### Screen the required fields
 
@@ -201,7 +201,7 @@ The payload data is as follows, note to change the `tachometer` value to satisfy
 
 Click the **SQL Test** toggle button, change `topic` and `payload` to be the information in the scenario, and click the **Test** button to view the data output:
 
-![image04.jpg](https://static.emqx.net/images/dc409088b0c06d6aadf0863501d91132.jpg)
+![image04.jpg](https://assets.emqx.com/images/dc409088b0c06d6aadf0863501d91132.jpg)
 
 The test output data is:
 
@@ -223,7 +223,7 @@ After the input and output of SQL condition  is correct, we continue to add the 
 
 Click the **Add** button in the response action, select the **Save data to DynamoDB** action, select the resource  just selected, fill the DynamoDB table name, Hash Key, and Range Key.
 
-![image05.jpg](https://static.emqx.net/images/73ccf170e50c8caeaaa7134f4c573b6d.jpg)
+![image05.jpg](https://assets.emqx.com/images/73ccf170e50c8caeaaa7134f4c573b6d.jpg)
 
 ## Test
 
@@ -255,13 +255,13 @@ Switch to **tools -> Websocket** page, connect to EMQX with any client, and send
   "ts": 1563268202
 }
 ```
-![image06.jpg](https://static.emqx.net/images/c11f9cc66c213e5c9ceec676c6216328.jpg)
+![image06.jpg](https://assets.emqx.com/images/c11f9cc66c213e5c9ceec676c6216328.jpg)
 
 Click the **Send** button. After sending successfully, the statistic of hit under  current rule is 1.
 
 View the data table records with the aws cli command to get the following data:
 
-![image07.png](https://static.emqx.net/images/d19a7472d896f9822571908f6ad0651c.png)
+![image07.png](https://assets.emqx.com/images/d19a7472d896f9822571908f6ad0651c.png)
 So far, we have implemented the business development of using the rules engine to store messages to DynamoDB.
 
 

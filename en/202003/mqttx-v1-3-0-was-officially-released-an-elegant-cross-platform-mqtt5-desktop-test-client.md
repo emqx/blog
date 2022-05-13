@@ -4,7 +4,7 @@ MQTT X website: https://mqttx.app
 
 MQTT X v1.3.0 download link: https://github.com/emqx/MQTTX/releases/tag/v1.3.0
 
-![mqttxpreview.png](https://static.emqx.net/images/d796340f0486ecccdada4a8e1962635b.png)
+![mqttxpreview.png](https://assets.emqx.com/images/d796340f0486ecccdada4a8e1962635b.png)
 
 ## Overview of the new features
 
@@ -14,19 +14,19 @@ MQTT X v1.3.0 download link: https://github.com/emqx/MQTTX/releases/tag/v1.3.0
 
   **Note:** When the protocol changes, you need to modify the connection port.
 
-![2.png](https://static.emqx.net/images/ac6eefd1e7f676bad67de6aab72d5c83.png)
+![2.png](https://assets.emqx.com/images/ac6eefd1e7f676bad67de6aab72d5c83.png)
 
 - The format conversion of Payload is supported
 
   In this version, the input box of Payload has been optimized during input editing. The functions of syntax highlighting and format verification for the JSON format are realized so that users can easily input JSON content in the input box. At the same time, in the Payload option above the Topic input box, you can also quickly convert the format of current content to other formats. Currently it supports conversion format of `Base64`,` Hex`, `Plaintext`, and ` JSON`. Users can perform conversion operations according to their needs.
 
-![3.png](https://static.emqx.net/images/a0844e5ee2c2a170072f9f55f1414b67.png)
+![3.png](https://assets.emqx.com/images/a0844e5ee2c2a170072f9f55f1414b67.png)
 
 - The height of the input box can be adjusted freely
 
   In the previous version, the height of the input box was fixed, and the Payload content that the user could see when using it was limited. If too much content was sent, the operation of input and editing in the input box could not be performed well. After optimization, users can place the mouse on the top of the input box, and when the arrow appears, drag the mouse to freely adjust the height of the input box to facilitate better processing of the Payload content.
 
-![4.png](https://static.emqx.net/images/3953f2e1128eaa408db27a0a71c60cce.png)
+![4.png](https://assets.emqx.com/images/3953f2e1128eaa408db27a0a71c60cce.png)
 
 - Fuzzy query for the Topic is supported
 

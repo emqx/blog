@@ -36,7 +36,7 @@ Mnesia 支持 [ACID](https://en.wikipedia.org/wiki/ACID) 事务，这是嵌入�
 
 在 Mnesia 集群中，所有节点都是平等的。 每个节点都可以存储任何表的副本、启动事务并访问这些表。 Mnesia 集群使用全网状拓扑：每个节点都与集群中的所有其他节点对话。 每个事务都被复制到集群中的所有节点，如下图所示：
 
-![Mnesia 集群](https://static.emqx.net/images/4c608391c2ab38e1536774c0929d5a6a.png)
+![Mnesia 集群](https://assets.emqx.com/images/4c608391c2ab38e1536774c0929d5a6a.png)
 
 Mnesia 集群
 
@@ -66,7 +66,7 @@ Mria 从全网状拓扑架构转变为网状+星型拓扑架构。 每个节点�
 
 另一方面，复制（replicant）节点不参与事务。它们连接到某一个核心节点，并被动地从中复制事务。这意味着不允许复制节点自行执行任何写操作。相反，它们要求核心节点代表它们更新数据。同时，它们拥有数据的完整本地副本，因此读取访问速度也同样快。
 
-![Mria 集群](https://static.emqx.net/images/236fc41e5114337c48affe9366400d22.png)
+![Mria 集群](https://assets.emqx.com/images/236fc41e5114337c48affe9366400d22.png)
 
 Mria 集群
 
@@ -89,3 +89,12 @@ Mria 集群
 - [MQTT Broker 集群详解（一）：负载均衡](https://www.emqx.com/zh/blog/mqtt-broker-clustering-part-1-load-balancing)
 
 - [MQTT Broker 集群详解（二）：粘性会话负载均衡](mqtt-broker-clustering-part-2-sticky-session-load-balancing)
+
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX Cloud
+        <div class="is-size-14 is-text-normal has-text-weight-normal">全托管的云原生 MQTT 消息服务</div>
+    </div>
+    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a >
+</section>

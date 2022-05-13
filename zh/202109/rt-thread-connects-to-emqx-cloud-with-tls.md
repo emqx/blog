@@ -6,7 +6,7 @@
 
 在万物互联的时代，EMQX Cloud 可以帮助用户快速构建面向物联网领域的行业应用，轻松实现物联网数据的采集、传输、计算和持久化。
 
-![EMQX Cloud](https://static.emqx.net/images/7181d58f2c8c2daa6fcfbcb863ad1146.png)
+![EMQX Cloud](https://assets.emqx.com/images/7181d58f2c8c2daa6fcfbcb863ad1146.png)
 
 借助云服务商提供的基础计算设施，EMQX Cloud 面向全球数十个国家与地区提供服务，为 5G 与万物互联应用提供低成本、安全可靠的云服务。
 
@@ -17,11 +17,11 @@
 
 - 基础版
 
-![EMQX Cloud 基础版](https://static.emqx.net/images/27af2c8b46466995c444925c6a81db69.png)
+![EMQX Cloud 基础版](https://assets.emqx.com/images/27af2c8b46466995c444925c6a81db69.png)
 
 - 专业版
 
-![EMQX Cloud 专业版](https://static.emqx.net/images/a92dfa731423dd0c9be910d63b57b4e8.png)
+![EMQX Cloud 专业版](https://assets.emqx.com/images/a92dfa731423dd0c9be910d63b57b4e8.png)
 
 - **TLS/SSL** 配置可参考 [EMQX Cloud 文档](https://docs.emqx.cn/cloud/latest/deployments/tls_ssl.html)
 
@@ -33,7 +33,7 @@
 
 > 本次 Demo 使用的是 RT-Thread 官方的开发板 ART-Pi，通过板载 Wifi 模块进行联网，可以直接创建一个 art_pi_wifi 样例工程进行 MQTT 客户端的开发；
 
-![使用 RT-Thread 创建工程](https://static.emqx.net/images/e1d21e7c5e88bcd3dc9f59d733c8ea94.png)
+![使用 RT-Thread 创建工程](https://assets.emqx.com/images/e1d21e7c5e88bcd3dc9f59d733c8ea94.png)
 
 
 
@@ -41,35 +41,35 @@
 
 1. 进入配置页面
 
-  ![RT-Thread 配置页面](https://static.emqx.net/images/193fefffd9fb3401bdb5137b1ec2dedf.png)
+  ![RT-Thread 配置页面](https://assets.emqx.com/images/193fefffd9fb3401bdb5137b1ec2dedf.png)
 
   选择“More”
 
-  ![RT-Thread More](https://static.emqx.net/images/9219de29f9675b27299bd3acf79b0ff6.png)
+  ![RT-Thread More](https://assets.emqx.com/images/9219de29f9675b27299bd3acf79b0ff6.png)
 
 2. 启用 RTC 驱动
 
-  ![启用 RTC 驱动](https://static.emqx.net/images/bbd60d4b769d494009314e1a4a6da8c0.png)
+  ![启用 RTC 驱动](https://assets.emqx.com/images/bbd60d4b769d494009314e1a4a6da8c0.png)
 
 3. 引入 MQTT 依赖包
 
   启动 TLS 需设置 MQTT 线程栈大小 ≥ 6144!
 
-  ![引入 MQTT 依赖包](https://static.emqx.net/images/90f88490d3391edc04f96792690e2075.png)
+  ![引入 MQTT 依赖包](https://assets.emqx.com/images/90f88490d3391edc04f96792690e2075.png)
 
 4. 配置 mbedtls
 
    1. 选择 **用户 CA** 证书(单/双向认证)
 
-   ![选择用户 CA 证书](https://static.emqx.net/images/eace83ce457ddd18b471e5bed8bb13fa.png)
+   ![选择用户 CA 证书](https://assets.emqx.com/images/eace83ce457ddd18b471e5bed8bb13fa.png)
 
    2. 选择无证书 SSL 连接(单向认证)
      
-   ![选择无证书 SSL 连接](https://static.emqx.net/images/666c6de3821f4977cec59488fb556c9a.png)
+   ![选择无证书 SSL 连接](https://assets.emqx.com/images/666c6de3821f4977cec59488fb556c9a.png)
 
 5. 保存当前配置，IDE 会将配置更新到工程
 
-  ![保存当前配置](https://static.emqx.net/images/ea1b23588f56550f67b79f03960e90ba.png)
+  ![保存当前配置](https://assets.emqx.com/images/ea1b23588f56550f67b79f03960e90ba.png)
 
 6. 修改宏 **MEMP_NUM_NETDB** 为 **2**
 
@@ -344,19 +344,19 @@
 
    若选择用户 CA 证书验证，则将 CA 证书（双向认证还需 client.crt 和 client.key）放置到 **packages/mbedtls-latest/certs** 文件夹中
 
-   ![CA 证书验证](https://static.emqx.net/images/bdce20c5212596c2f0d05eb066335a97.png)
+   ![CA 证书验证](https://assets.emqx.com/images/bdce20c5212596c2f0d05eb066335a97.png)
 
    重新更新工程，会自动将证书内容复制到源文件中
 
-   ![重新更新工程](https://static.emqx.net/images/993b453a86e807dcd48e4d1172475ae4.png)
+   ![重新更新工程](https://assets.emqx.com/images/993b453a86e807dcd48e4d1172475ae4.png)
 
    构建项目并下载到目标板上
 
-   ![构建项目并下载到目标板上](https://static.emqx.net/images/cd8a49a10faa20297a40ebf73a9c4e4a.png)
+   ![构建项目并下载到目标板上](https://assets.emqx.com/images/cd8a49a10faa20297a40ebf73a9c4e4a.png)
 
    打开终端 Terminal 可以看到运行日志
 
-   ![打开终端 Terminal 可以看到运行日志](https://static.emqx.net/images/35bf9d3e9d2b8e5d5972f36ab89cd815.png)
+   ![打开终端 Terminal 可以看到运行日志](https://assets.emqx.com/images/35bf9d3e9d2b8e5d5972f36ab89cd815.png)
 
    
 
@@ -366,24 +366,24 @@
 
 单向无证书认证
 
-![单向无证书认证](https://static.emqx.net/images/644bbb8747934edccf843bbda133b066.png)
+![单向无证书认证](https://assets.emqx.com/images/644bbb8747934edccf843bbda133b066.png)
 
 单向自签名证书认证
 
-![单向自签名证书认证](https://static.emqx.net/images/122e1099bd16aa2694a4674a598fd5b1.png)
+![单向自签名证书认证](https://assets.emqx.com/images/122e1099bd16aa2694a4674a598fd5b1.png)
 
 双向认证
 
-![双向认证](https://static.emqx.net/images/479536ee6c327803828bff176ce9e826.png)
+![双向认证](https://assets.emqx.com/images/479536ee6c327803828bff176ce9e826.png)
 
 订阅和发布
 
-![订阅和发布](https://static.emqx.net/images/ec15f75488d052b3d2fac4bcf144939f.png)
+![订阅和发布](https://assets.emqx.com/images/ec15f75488d052b3d2fac4bcf144939f.png)
 
 
 查看 RT-Thread-Stdio 终端
 
-![查看 RT-Thread-Stdio 终端](https://static.emqx.net/images/32a1defd9f525517ec1b056ed5a09f0c.png)
+![查看 RT-Thread-Stdio 终端](https://assets.emqx.com/images/32a1defd9f525517ec1b056ed5a09f0c.png)
 
 **数据收发正常！**
 
@@ -392,3 +392,12 @@
 ## 完整代码
 
 请见 [MQTT-Client-Examples](https://github.com/emqx/MQTT-Client-Examples)。
+
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX Cloud
+        <div class="is-size-14 is-text-normal has-text-weight-normal">无须绑定信用卡</div>
+    </div>
+    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a >
+</section>

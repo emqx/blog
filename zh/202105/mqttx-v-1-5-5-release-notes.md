@@ -8,7 +8,7 @@ Mac 用户可在 App Store 中进行下载：[https://apps.apple.com/cn/app/mqtt
 
 Linux 用户可在 Snapcraft 中进行下载：[https://snapcraft.io/mqttx](https://snapcraft.io/mqttx)
 
-![mqttxpreview.png](https://static.emqx.net/images/aa86f5835a6f7a5ce59aecf39990e493.png)
+![mqttxpreview.png](https://assets.emqx.com/images/aa86f5835a6f7a5ce59aecf39990e493.png)
 
 ## 新功能概览
 
@@ -20,13 +20,13 @@ Linux 用户可在 Snapcraft 中进行下载：[https://snapcraft.io/mqttx](http
 
 当连接的 Topic 列表支持持久化存储后，如果连接的 `Clean Session` 的值为 `True`，即使重连后，Topic 列表也不可用，此时的订阅已经失效，需要手动再次订阅。此时，在设置页面中提供了一个自动恢复订阅的设置选项。打开该设置后，当连接重连时，如果有存储的 Topic 列表，客户端会自动进行订阅恢复，对于测试时订阅数多或者复杂的场景，避免了每次去手动重新订阅的问题。
 
-![mqttxautoresub.png](https://static.emqx.net/images/dc808e9c451f84885520105cbeb58d6a.png)
+![mqttxautoresub.png](https://assets.emqx.com/images/dc808e9c451f84885520105cbeb58d6a.png)
 
 ### 添加 EMQX Cloud 链接
 
 对于无法马上连接到本地或已部署好的 MQTT Broker 的做测试和调试的用户，提供了 EMQX Cloud 的链接，免费体验[云原生的全托管 MQTT 服务](https://www.emqx.com/zh/cloud)。
 
-![mqttxcloud.png](https://static.emqx.net/images/a2fab283b655c58a9600f82f4c6d03ba.png)
+![mqttxcloud.png](https://assets.emqx.com/images/a2fab283b655c58a9600f82f4c6d03ba.png)
 
 ## 修复及其优化
 

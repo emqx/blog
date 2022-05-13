@@ -4,7 +4,7 @@ With the challenge of massive connections of devices in the IoT era and the larg
 
 [HStreamDB](https://hstream.io/), as the first stream-native database explicitly designed for streaming data, is dedicated to efficient large-scale data stream storage and management. Combining EMQX and HStreamDB, one-stop management of massive data access, storage, real-time processing and analysis will be no longer complicated.
 
-![EMQX and HStreamDB](https://static.emqx.net/images/fc0fe48820b6158dd404cd8757ff9658.png)
+![EMQX and HStreamDB](https://assets.emqx.com/images/fc0fe48820b6158dd404cd8757ff9658.png)
 
 In the [HStreamDB v0.6](https://hstream.io/blog/hstreamdb-v-0-6-release-notes) release, HStream has provided data append Rest API, which allows writing data to HStreamDB through Rest API with any language and is convenient for users in the community to carry out further development with HStreamDB. We utilise this feature combined with the Webhook of EMQX to realise a fast integration of EMQX and HStreamDB.
 
@@ -96,19 +96,19 @@ emqx_rule_engine_output
 
 Then, we open the Dashboard of EMQX, click `Rule Engine` and enter the `Resource` section.
 
-![EMQX Dashboard Resource](https://static.emqx.net/images/d110d6a38ba3a2ca0f238669d1d5a807.png) 
+![EMQX Dashboard Resource](https://assets.emqx.com/images/d110d6a38ba3a2ca0f238669d1d5a807.png) 
 
 We can first create a `WebHook` resource, as shown below:
 
-![EMQX Dashboard Create WebHook](https://static.emqx.net/images/cfec5314f7b36d101d0cf963d2186bc2.png)
+![EMQX Dashboard Create WebHook](https://assets.emqx.com/images/cfec5314f7b36d101d0cf963d2186bc2.png)
 
 Fill in the listening address of `hstream-http-server` in the column of `Request URL`,`<host>:6580/streams/emqx_rule_engine_output:publish`.Then, click on the `test connection` button to test the connection.
 
-![EMQX Dashboard test connection](https://static.emqx.net/images/a811a5d1cfafa32a7102e0defeb9dc80.png)
+![EMQX Dashboard test connection](https://assets.emqx.com/images/a811a5d1cfafa32a7102e0defeb9dc80.png)
 
 Next, we will create the required rules for the integration:
 
-![create EMQX rules](https://static.emqx.net/images/41af650187256542b881bf345004d5d2.png) 
+![create EMQX rules](https://assets.emqx.com/images/41af650187256542b881bf345004d5d2.png) 
 
 
 ```
@@ -122,7 +122,7 @@ FROM
 
 We need to add an Action Handler, select `Action` as `Data to Web Server`:
 
-![add EMQX Action](https://static.emqx.net/images/f1434d7eeb1304842c18f9cda7e7c735.png) 
+![add EMQX Action](https://assets.emqx.com/images/f1434d7eeb1304842c18f9cda7e7c735.png) 
 
 Set `Method` to `POST` and add `content-type` `application/json` to `Header`.
 
@@ -143,11 +143,11 @@ At this point, we can write data to EMQX through the WebSocket of EMQX DashBoard
 
 The WebSocket is used in the following example. We can first connect to the emqx cluster we started:
 
-![EMQX DashBoard WebSocket](https://static.emqx.net/images/9e26f3437c419c79caf834b57efb2c08.png)
+![EMQX DashBoard WebSocket](https://assets.emqx.com/images/9e26f3437c419c79caf834b57efb2c08.png)
 
 Then, send data to the specified topic:
 
-![EMQX DashBoard send data](https://static.emqx.net/images/cf912f88b2f4f2b7705defc908261223.png) 
+![EMQX DashBoard send data](https://assets.emqx.com/images/cf912f88b2f4f2b7705defc908261223.png) 
 
 If everything works as expected, we can see the data we sent to EMQX in the HStreamDB CLI in real-time.
 

@@ -76,7 +76,7 @@
 | Mosquitto     | `test.mosquitto.org`      | 1883 | YES  |
 | HiveMQ        | `broker.hivemq.com`       | 1883 | YES  |
 
-![在线 mqtt 服务器可访问性测试](https://static.emqx.net/images/1b5abcf0b2bf6548a62f0ef05a71819e.png)
+![在线 mqtt 服务器可访问性测试](https://assets.emqx.com/images/1b5abcf0b2bf6548a62f0ef05a71819e.png)
 
 
 ### 测试配置文件下载
@@ -85,7 +85,7 @@ MQTT X 具备连接导入导出功能，以下是本文测试使用的连接数�
 
 - [MQTTX-backup-free-public-mqtt-broker.json](https://github.com/wivwiv/mqtt-explore/blob/master/MQTTX-backup-free-public-mqtt-broker.json)
 
-![MQTT X 配置文件导入](https://static.emqx.net/images/a7a336d10e7358ee2f8721676a7ba34b.png)
+![MQTT X 配置文件导入](https://assets.emqx.com/images/a7a336d10e7358ee2f8721676a7ba34b.png)
 
 
 ## 国内网络延时测试
@@ -101,13 +101,13 @@ MQTT X 具备连接导入导出功能，以下是本文测试使用的连接数�
 | HiveMQ      | [http://broker.hivemq.com:8000/mqtt](https://tool.chinaz.com/speedtest/broker.hivemq.com:8000/mqtt) | 8000      |
 
 
-![EMQX 国内在线 MQTT 服务器](https://static.emqx.net/images/1db5ba4457b7470d95335fd4a1a78128.png)
+![EMQX 国内在线 MQTT 服务器](https://assets.emqx.com/images/1db5ba4457b7470d95335fd4a1a78128.png)
 
-![EMQX 在线 MQTT 服务器](https://static.emqx.net/images/7ce2e61433a81820e1729aff87b6e39e.png)
+![EMQX 在线 MQTT 服务器](https://assets.emqx.com/images/7ce2e61433a81820e1729aff87b6e39e.png)
 
-![Mosquitto 在线 MQTT 服务器](https://static.emqx.net/images/8fd2b6f61ea81441d0b683da748bd5df.png)
+![Mosquitto 在线 MQTT 服务器](https://assets.emqx.com/images/8fd2b6f61ea81441d0b683da748bd5df.png)
 
-![HiveMQ 在线 MQTT 服务器](https://static.emqx.net/images/f1d36385657b4796b753827e67e547a7.png)
+![HiveMQ 在线 MQTT 服务器](https://assets.emqx.com/images/f1d36385657b4796b753827e67e547a7.png)
 
 
 ## 小规模性能测试
@@ -116,7 +116,7 @@ MQTT X 具备连接导入导出功能，以下是本文测试使用的连接数�
 
 **出于实用性的考虑**，本轮测试并非是探究每个接入点的速率上限，而是考量每个接入点能够满足常规的使用强度。本轮设计的场景是测试单客户端 Sub/Pub 消息为 1000 msg/s 持续 1 分钟，消息大小为 256 Bytes，记录每个接入点是否达标、是否有限速，下图为测试架构：
 
-![MQTT 服务器测试](https://static.emqx.net/images/c99599884b7a36bec05977c5429cbe11.png)
+![MQTT 服务器测试](https://assets.emqx.com/images/c99599884b7a36bec05977c5429cbe11.png)
 
 准备好 emqtt-bench 之后，以下每组 Sub Pub 命令各自在不同的窗口执行即可：
 
@@ -169,14 +169,14 @@ MQTT X 具备连接导入导出功能，以下是本文测试使用的连接数�
 
 测试模型如下：
 
-![MQTT 服务器消息传输延时测试模型](https://static.emqx.net/images/be1b6d5e21db52fb8d2514206905b5de.png)
+![MQTT 服务器消息传输延时测试模型](https://assets.emqx.com/images/be1b6d5e21db52fb8d2514206905b5de.png)
 
 
 测试代码：[free-online-public-broker-test.js](https://github.com/wivwiv/mqtt-explore/blob/master/free-online-public-broker-test.js)
 
 ### 时延历史
 
-![MQTT 服务器消息传输延时测试](https://static.emqx.net/images/1a8c044469271d6871cca19321ce3882.png)
+![MQTT 服务器消息传输延时测试](https://assets.emqx.com/images/1a8c044469271d6871cca19321ce3882.png)
 
 ### 平均时延
 
@@ -201,3 +201,12 @@ MQTT X 具备连接导入导出功能，以下是本文测试使用的连接数�
 EMQX 在线公共服务器在国内和海外的两个接入点服务均由 [EMQX Cloud](https://www.emqx.com/zh/cloud) 提供。EMQX Cloud 是 EMQ 提供的全托管云原生 MQTT 消息服务，支持商业级的可访问性和稳定性保障。对于商业用户来说，使用 EMQX Cloud 可零成本快速启动项目，以简单快速的方式实现 MQTT 设备接入。后期可随业务发展情况按需扩展，同时可在全球范围内就近创建接入点并享受 EMQ 专业团队提供的 7*24 技术支持保障。
 
 无论是个人还是企业项目，EMQ 致力于为各类用户提供最合适的 MQTT 消息服务。在使用 EMQX 的过程中如有任何意见或问题，欢迎随时向我们的团队反馈。
+
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX Cloud
+        <div class="is-size-14 is-text-normal has-text-weight-normal">全托管的云原生 MQTT 消息服务</div>
+    </div>
+    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a >
+</section>

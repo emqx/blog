@@ -6,7 +6,7 @@ MQTT v5 带来了很多新的特性，我们会尽量以通俗易懂的方式展
 
 通常服务端的资源都是固定且有限的，而客户端的流量则可能是随时随地变化的。正常业务（用户集中访问、设备大量重启）、被恶意攻击、网络波动，都会导致流量出现激增，如果服务端没有对其进行任何限制，就会导致负载迅速上升，进而导致响应速度下降，影响其他业务，甚至导致系统瘫痪。
 
-![image20200730133959150.png](https://static.emqx.net/images/52cfac4662c53ea76451ff66759e4059.png)
+![image20200730133959150.png](https://assets.emqx.com/images/52cfac4662c53ea76451ff66759e4059.png)
 
 因此，我们需要流量控制，可以是限制发送端的发送速率，也可以是限制接收端的接收速率，但最终目的都是保证系统的稳定。常用的流控算法有滑动窗口计数法、漏桶算法以及令牌桶算法。
 
@@ -26,7 +26,7 @@ MQTT v3 没有规范流量控制行为，导致客户端和服务端在实现上
 
 为了支持流量控制，MQTT v5 新增了一个 Receive Maximum 属性，它存在于 CONNECT 报文与 CONNACK 报文，表示客户端或服务端愿意同时处理的 QoS 为 1 和 2 的 PUBLISH 报文最大数量，即对端可以使用的最大发送配额。如果接收端已收到但未发送响应的 QoS 大于 0 的 PUBLISH 报文数量超过 Receive Maximum 的值，接收端将断开连接避免受到更严重的影响。
 
-![image20200730173320715.png](https://static.emqx.net/images/7fe5bd2f4190b0d9f4891b81de5246ff.png)
+![image20200730173320715.png](https://assets.emqx.com/images/7fe5bd2f4190b0d9f4891b81de5246ff.png)
 
 ## 为什么没有 QoS 0 ？
 
@@ -39,3 +39,12 @@ MQTT v3 没有规范流量控制行为，导致客户端和服务端在实现上
 ## 结论
 
 尽管 MQTT v5 的流量控制机制依然存在一些不足，但我们依然建议用户尽可能地使用它。基于响应报文的发送配额算法使得发送端能够最大程度地利用资源，Receive Maximum 使得通信双方不再需要事先协商发送配额，从而获得更高的透明度和灵活性，这在需要接入多厂商设备时是很有帮助的。
+
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX Cloud
+        <div class="is-size-14 is-text-normal has-text-weight-normal">全托管的云原生 MQTT 消息服务</div>
+    </div>
+    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a >
+</section>

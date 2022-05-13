@@ -68,3 +68,12 @@ MQTT CONNECT 报文使用用户名和密码支持基本的网络连接认证，�
 增强认证完成之后，客户端可以在任意时间通过发送 AUTH 报文发起重新认证，重新认证开始后，同增强认证一样，客户端与服务器通过交换 AUTH 报文来交换认证数据，直到服务器向客户端发送原因码为 0x00（ 成功) 的 AUTH 报文表示重新认证成功。需要注意的是，重新认证的认证方法必须与增强认证一致。
 
 在重新认证的过程中，客户端和服务器的其他报文流可以继续使用之前的认证。
+
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX Cloud
+        <div class="is-size-14 is-text-normal has-text-weight-normal">全托管的云原生 MQTT 消息服务</div>
+    </div>
+    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a >
+</section>

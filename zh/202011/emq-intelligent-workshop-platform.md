@@ -10,10 +10,10 @@
 
 通过工业网关将 3D 打印设备接入增材智能车间平台，3D 打印设备运行数据实时上报到 EMQX 企业版消息中间件，由消息中间件实现采集数据的持久化，实现对 3D 打印设备实时数据采集和数据展现。用户可通过平台管理界面以及手机 APP 对远程增材设备进行管理。同时系统可以通过 EMQX 企业版提供的数据下行通道实现对增材设备的远程主动控制。
 
-![图片1.png](https://static.emqx.net/images/a5a89b59786814f09f0c20f0f553549f.png)
+![图片1.png](https://assets.emqx.com/images/a5a89b59786814f09f0c20f0f553549f.png)
 ​            增材设备管理平台端界面
 
- ![画板2x.png](https://static.emqx.net/images/de21978adf17a1845aa66bc69a42421a.png)
+ ![画板2x.png](https://assets.emqx.com/images/de21978adf17a1845aa66bc69a42421a.png)
 
 ​			增材设备管理移动APP端界面 
 
@@ -28,3 +28,12 @@ EMQX 所带来的统一增材设备生产数据实时接入与管理能力，以
 **目前增材智能车间平台已经建成并实现设备接入网联筑梦 3D 打印云服务平台 ，实现了 3D 订单管理、任务管理、排产管理、在线监控、移动监管、数据采集等目标。后期计划接入相关检测设备。**
 
 EMQ 也将继续助力西安增材制造国家研究院有限公司，依托增材智云拓展工业互联网应用，通过对工业企业提供私有设备管理平台，为生产制造企业在工艺流程改造、生产过程管理等领域实现业务创新，实现升级保障。
+
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX Cloud
+        <div class="is-size-14 is-text-normal has-text-weight-normal">全托管的云原生 MQTT 消息服务</div>
+    </div>
+    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a >
+</section>

@@ -12,7 +12,7 @@
 - 以 Elasticsearch 为代表的全文索引数据库
 - 以 Neo4j 为代表的图数据库
 
-![image.png](https://static.emqx.net/images/0b642fae86c9de4dcf90ee0195ab9316.png)
+![image.png](https://assets.emqx.com/images/0b642fae86c9de4dcf90ee0195ab9316.png)
 
 图 1: db-engines 上统计的各类数据库的数量
 
@@ -24,7 +24,7 @@
 
 **随着今后新兴行业的发展，新商业市场的开辟，新业务需求的涌现，必将催生新的数据库系统。** 比如近年来 IoT 产业以及 AI 行业的兴起，直接导致了一批新的时序数据库和图数据库的诞生。
 
-![image2.png](https://static.emqx.net/images/316ab8bd26598bf9f9a05fae921beaf6.png)
+![image2.png](https://assets.emqx.com/images/316ab8bd26598bf9f9a05fae921beaf6.png)
 
 图 2: 2013 年以来各类数据库的流行度变化
 
@@ -39,7 +39,7 @@
 
 根据国际知名分析机构 IDC 的研究报告[^1]， **这种实时的流式数据占总体数据规模的比例正不断攀升，预计 2025 年能达到 30%。** 
 
-![image3.png](https://static.emqx.net/images/0b7d29218cd1679d1bda44e70bebd0df.png)
+![image3.png](https://assets.emqx.com/images/0b7d29218cd1679d1bda44e70bebd0df.png)
 
 图 3: 实时数据的增长趋势 [1]
 

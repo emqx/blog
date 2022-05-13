@@ -11,7 +11,7 @@
 
 Python 和 Java 驱动基于 [Erlang/OTP-Port](https://erlang.org/doc/tutorial/c_port.html) 进程间通信实现，本身具有非常高的吞吐性能，本文以 Python 扩展为例介绍 EMQX 跨语言扩展使用方式。
 
-![upeb67488ae758908b02ac8567c37fcf2d0a9.png](https://static.emqx.net/images/c8e437088e4eee7e6947823a407ddd51.png)
+![upeb67488ae758908b02ac8567c37fcf2d0a9.png](https://assets.emqx.com/images/c8e437088e4eee7e6947823a407ddd51.png)
 
 
 ## Python 扩展使用示例
@@ -169,3 +169,12 @@ def deinit():
 
 - 代码仓库：[emqx-extension-python-sdk](https://github.com/emqx/emqx-extension-python-sdk)
 - Python 原始示例，可使用该示例自行封装：[emqx-extension-hook main.py](https://github.com/emqx/emqx-extension-hook/blob/v4.1.1/test/scripts/main.py)
+
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX Cloud
+        <div class="is-size-14 is-text-normal has-text-weight-normal">全托管的云原生 MQTT 消息服务</div>
+    </div>
+    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a >
+</section>

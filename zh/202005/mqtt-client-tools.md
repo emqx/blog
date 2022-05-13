@@ -59,7 +59,7 @@ MQTT X 采用了 Electron 跨平台技术，以消息聊天的交互形式收发
 - 自定义编辑脚本测试和模拟收发数据
 - 完整的日志记录
 
-![1.png](https://static.emqx.net/images/mdt40vcf7ebdrxohghlzwpdyr4u9494l.png)
+![1.png](https://assets.emqx.com/images/mdt40vcf7ebdrxohghlzwpdyr4u9494l.png)
 
 ### 客户端下载
 
@@ -137,7 +137,7 @@ MQTT.fx 是一个老牌的 MQTT 客户端工具，Azure IoT Hub、AWS IoT、阿�
 - 支持日志显示，显示连接中的日志信息
 - 跨平台桌面，支持 Windows、MacOS 和 Linux
 
-![2.png](https://static.emqx.net/images/4f592bb17cbbfe3adf0d13e07277c0dd.png)
+![2.png](https://assets.emqx.com/images/4f592bb17cbbfe3adf0d13e07277c0dd.png)
 
 ### 客户端下载
 
@@ -167,7 +167,7 @@ MQTT Explorer 是一个全面且易于使用的 MQTT 客户端，是目前比较
 - 保留每个 Topic 的历史记录
 - Dark/Light 主题
 
-![mqtt-explorer.png](https://static.emqx.net/images/7be0606fdbb16f93359429dba0cc3e6e.png)
+![mqtt-explorer.png](https://assets.emqx.com/images/7be0606fdbb16f93359429dba0cc3e6e.png)
 
 ### 客户端下载
 
@@ -196,7 +196,7 @@ MQTT Box 同样采用了 Electron 跨平台技术，界面简单直接，支持�
 - 保存订阅消息历史记录
 - 简单的性能测试，对 Broker 的负载做出测试并通过图表可视化查看测试结果
 
-![3.png](https://static.emqx.net/images/4d230117efab9a40e2ff30f7cd82744d.png)
+![3.png](https://assets.emqx.com/images/4d230117efab9a40e2ff30f7cd82744d.png)
 
 ### 客户端下载
 
@@ -223,9 +223,9 @@ mqtt-spy 没有提供独立的安装包，使用前需要用户自行安装 Java
 - 可以关闭 pub/sub窗口的不同区域（发布，新订阅，订阅和消息），以便为当前使用的空间腾出空间
 - 搜索功能允许查找常用 MQTT 消息，支持将发布/订阅消息输出到标准输出或记录到文件中以供后续分析
 
-![4.png](https://static.emqx.net/images/9836d2b3d18279f9e4d43c5e4c6660f0.png)
+![4.png](https://assets.emqx.com/images/9836d2b3d18279f9e4d43c5e4c6660f0.png)
 
-![5.png](https://static.emqx.net/images/25b0be7357a3c3cfdc46bae9474c4477.png)
+![5.png](https://assets.emqx.com/images/25b0be7357a3c3cfdc46bae9474c4477.png)
 
 ### 客户端下载
 
@@ -273,7 +273,7 @@ MQTT WebSocket Toolkit 的界面和交互沿用了 [MQTT X](https://mqttx.app/zh
 - 支持 WebSocket 连接至 MQTT 服务器
 - 支持创建多个客户端，并能保存客户端信息至下次访问
 
-![mqtt-websocket-toolkit.png](https://static.emqx.net/images/bb8967f026a3df9fad1ad92ac057caf3.png)
+![mqtt-websocket-toolkit.png](https://assets.emqx.com/images/bb8967f026a3df9fad1ad92ac057caf3.png)
 
 ### 客户端下载
 
@@ -282,3 +282,12 @@ MQTT WebSocket Toolkit 的界面和交互沿用了 [MQTT X](https://mqttx.app/zh
 **在线地址：** [MQTT WebSocket Toolkit](http://tools.emqx.io/)
 
 **项目地址：** [MQTT WebSocket Toolkit GitHub](https://github.com/emqx/MQTT-Web-Toolkit)
+
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX Cloud
+        <div class="is-size-14 is-text-normal has-text-weight-normal">全托管的云原生 MQTT 消息服务</div>
+    </div>
+    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a >
+</section>

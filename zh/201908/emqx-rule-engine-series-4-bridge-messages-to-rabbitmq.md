@@ -43,12 +43,12 @@ RabbitMQ 的本地安装详见 [下载和安装RabbitMQ](https://www.rabbitmq.co
 
 打开 EMQX Dashboard，进入左侧菜单的 **资源** 页面，点击 **新建** 按钮，键入 RabbitMQ 服务器信息进行资源创建。
 
-![image01.png](https://static.emqx.net/images/c4e1ebdc3c256d3a3e0c812c5e23fce5.png)
+![image01.png](https://assets.emqx.com/images/c4e1ebdc3c256d3a3e0c812c5e23fce5.png)
 
 
 EMQX 集群中节点所在网络环境可能互不相通，资源创建成功后点击列表中 **状态按钮**，查看各个节点资源连接状况，如果节点上资源不可用，请检查配置是否正确、网络连通性，并点击 **重连** 按钮手动重连。
 
-![image02.png](https://static.emqx.net/images/78f57557431885fb1082fee5b86a9e35.png)
+![image02.png](https://assets.emqx.com/images/78f57557431885fb1082fee5b86a9e35.png)
 
 
 ### 创建规则
@@ -57,7 +57,7 @@ EMQX 集群中节点所在网络环境可能互不相通，资源创建成功后
 
 选定触发事件后，我们可在界面上看到可选字段及示例 SQL：
 
-![image03.png](https://static.emqx.net/images/dafa015734e66b8ed2aba2806140d90c.png)
+![image03.png](https://assets.emqx.com/images/dafa015734e66b8ed2aba2806140d90c.png)
 
 
 #### 筛选所需字段
@@ -121,7 +121,7 @@ payload 数据如下，注意更改 `tachometer` 数值大小，以满足 SQL �
 
 点击 **SQL 测试** 切换按钮，更改 `topic` 与 `payload` 为场景中的信息，点击 **测试** 按钮查看数据输出：
 
-![image04.png](https://static.emqx.net/images/b50e78510458782bae0a67fc335a2638.png)
+![image04.png](https://assets.emqx.com/images/b50e78510458782bae0a67fc335a2638.png)
 
 
 测试输出数据为：
@@ -146,7 +146,7 @@ SQL 条件输入输出无误后，我们继续添加响应动作，配置写相�
 
 RabbitMQ Exchange，Exchange Type 以及 Routing Key。
 
-![image05.png](https://static.emqx.net/images/3d8fea8a2549b38e92a5d7e12e73dc6f.png)
+![image05.png](https://assets.emqx.com/images/3d8fea8a2549b38e92a5d7e12e73dc6f.png)
 
 ## 测试
 
@@ -181,13 +181,13 @@ RabbitMQ Exchange，Exchange Type 以及 Routing Key。
 }
 ```
 
-![image06.png](https://static.emqx.net/images/1313100c9a4f4c57e5955802e3236483.png)
+![image06.png](https://assets.emqx.com/images/1313100c9a4f4c57e5955802e3236483.png)
 
 点击**发送**按钮，发送成功后查看得到当前规则已命中统计值为 1。
 
 使用命令行中查看数据表记录得到数据如下：
 
-![image07.png](https://static.emqx.net/images/236ff1abc0759a361a8eac6bc0aa358c.png)
+![image07.png](https://assets.emqx.com/images/236ff1abc0759a361a8eac6bc0aa358c.png)
 
 至此，我们通过规则引擎实现了使用规则引擎桥接消息到 RabbitMQ 的业务开发。
 

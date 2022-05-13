@@ -2,7 +2,7 @@ With the progress of the 5G network technology, the IoT world is also developing
 
 However, unlike the traditional Internet, end-to-end communication is always a difficult part of the IoT business. The differences in the IoT communication protocols used will cause a huge gap in communication between devices. It is just like people cannot communicate properly with each other if they speak different languages.
 
-![WechatIMG14.png](https://static.emqx.net/images/d1206132ad1e17d5ab2b8f50eb5cf9ce.png)
+![WechatIMG14.png](https://assets.emqx.com/images/d1206132ad1e17d5ab2b8f50eb5cf9ce.png)
 As an IoT message broker, EMQX Broker is on a mission to enable these devices to provide communication. Therefore, we have developed many IoT protocol plugins. Whether you prefer TCP-based long links such as MQTT, UDP-based connectionless such as CoAP, or private protocols, in the world of EMQX we can help you find a 'soulmate' who can read you.
 
 > About the MQTT protocol: [https://www.emqx.com/en/mqtt](https://www.emqx.com/en/mqtt)
@@ -16,7 +16,7 @@ As an IoT message broker, EMQX Broker is on a mission to enable these devices to
 You can find help on how to install and run EMQX Broker [here](https://docs.emqx.io/en/broker/v4.3/index.html).
 
 Open Dashboard, click on Plugin on the left, search for CoAP on the right, and click `Start` to run the `CoAP Plugin` (default port 5683).
-![WechatIMG13.png](https://static.emqx.net/images/3358349652fcf16052d5354bf8fa543f.png)
+![WechatIMG13.png](https://assets.emqx.com/images/3358349652fcf16052d5354bf8fa543f.png)
 	
 
 In the `PUB/SUB` model of MQTT, a `topic` is used as a bridge between devices to achieve end-to-end communication. We use the two `topics` `coap_to_mqtt` and `mqtt_to_coap`, as the message `topic` from CoAP to MQTT, and the message `topic` from MQTT to CoAP, respectively.
@@ -58,7 +58,7 @@ So far, the preparations have been completed.
 
 Connect the [MQTT client - MQTT X](https://mqttx.app/) to your EMQX Broker and subscribe to the topic `coap_to_mqtt` for it.
 
-![image20210410173501967.png](https://static.emqx.net/images/776af3a1e1205e1fd99b33e695f876ca.png)
+![image20210410173501967.png](https://assets.emqx.com/images/776af3a1e1205e1fd99b33e695f876ca.png)
 
 
 ### Step 3：Invite the second participant, the CoAP client
@@ -99,7 +99,7 @@ After  the installation is complete, the CoAP client PUT message to the `coap_to
 
 We can see that MQTT X has received a greeting from CoAP.
 
-![WechatIMG12.png](https://static.emqx.net/images/15c80f669399ee8a47ea8a0fc8e43770.png)
+![WechatIMG12.png](https://assets.emqx.com/images/15c80f669399ee8a47ea8a0fc8e43770.png)
 
 Now subscribe to the `mqtt_to_coap` theme for CoAP terminals.
 
@@ -110,7 +110,7 @@ Now subscribe to the `mqtt_to_coap` theme for CoAP terminals.
 
 MQTT X sends `hello CoAP, I am MQTT, welcome to EMQX Wrold!`  to the topic `mqtt_to_coap`.
 
-![WechatIMG11.png](https://static.emqx.net/images/1b3ace0680fef3e3d088241a01fe7cba.png)
+![WechatIMG11.png](https://assets.emqx.com/images/1b3ace0680fef3e3d088241a01fe7cba.png)
 
 CoAP has also received a response from MQTT.
 
@@ -126,3 +126,12 @@ hello CoAP, I am MQTT, welcome to EMQX Wrold!
 
 
 In EMQX World, not only are MQTT, CoAP, LwM2M, JT808, and much more different IoT protocol plugins which will be supported in the future, but we also provide you with [the development template for plugins](https://github.com/emqx/emqx-plugin-template). We expect that all IoT devices will meet here and collide to create dazzling sparks that will illuminate the world of IoT.
+
+
+<section class="promotion">
+    <div>
+        Try EMQX Cloud for Free
+        <div class="is-size-14 is-text-normal has-text-weight-normal">No credit card required</div>
+    </div>
+    <a href="https://www.emqx.com/en/signup?continue=https://cloud-intl.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">Get Started →</a >
+</section>

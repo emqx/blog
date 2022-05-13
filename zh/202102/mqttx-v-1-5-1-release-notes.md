@@ -8,7 +8,7 @@ Mac 用户可在 App Store 中进行下载：[https://apps.apple.com/cn/app/mqtt
 
 Linux 用户可在 Snapcraft 中进行下载：[https://snapcraft.io/mqttx](https://snapcraft.io/mqttx)
 
-![mqttxpreview.png](https://static.emqx.net/images/fbd24ad549dd807461a4f77eb4b1d871.png)
+![mqttxpreview.png](https://assets.emqx.com/images/fbd24ad549dd807461a4f77eb4b1d871.png)
 **注意：** 该版本包含介绍了 1.5.0 版本的更新，1.5.1 提升了更多的稳定性，对于使用 1.5.0 版本的用户推荐更新到 1.5.1 版本。
 
 ## 新功能概览
@@ -29,7 +29,7 @@ Linux 用户可在 Snapcraft 中进行下载：[https://snapcraft.io/mqttx](http
 
   在每次关闭 MQTT X 时，当前的日志文件会被重命名为 timestamp `[YY]-[MM]-[DD]T[hh]:[mm].log` 格式。
 
-  ![mqttxlog.png](https://static.emqx.net/images/6a1acc82b2a554aa2b360b28750676ec.png)
+  ![mqttxlog.png](https://assets.emqx.com/images/6a1acc82b2a554aa2b360b28750676ec.png)
 
 ## 修复及其优化
 

@@ -32,7 +32,7 @@ KubeSphere 支持向导式 UI，当应用的各个组件进行容器化之后，
 
 EMQX 是一款完全开源，高度可伸缩，高可用的 **分布式 [MQTT](https://www.emqx.com/zh/mqtt) 消息服务器**，适用于 **IoT、M2M 和移动应用程序**，可处理 **千万级别的并发客户端**。EMQX 面向海量的移动/物联网/车载等终端接入，并实现在 **海量物理网设备间快速低延时的消息路由**。
 
-![emq.jpeg](https://static.emqx.net/images/f9cd470bf894e8f18bd9b5e16ba03c80.jpeg)
+![emq.jpeg](https://assets.emqx.com/images/f9cd470bf894e8f18bd9b5e16ba03c80.jpeg)
 
 ## 部署简单的 EMQX 集群
 

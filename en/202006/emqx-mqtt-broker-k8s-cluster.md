@@ -916,3 +916,12 @@ You can create PV or StorageClass in advance when deploy EMQX Broker, and then u
   The output result represents that the status of this PVC is Bound, and PVC storage has been successfully established. EMQX Broker will read the data is mounted in PVC for implementing persistence, when rescheduling pod.
 
 So far, the process that EMQX Broker builds persistence cluster in the Kubernetes has been completed. This article omits some details, and the process of deployment is also for the simple Demo. Users can read [kubernetes documentation](https://kubernetes.io/docs/home/) and [Helm chart source code](https://github.com/emqx/emqx-rel/tree/master/deploy/charts/emqx) provided by the EMQX Team for more in-depth research. Of course, contributing issues, pulling requests and star on Github are welcome.
+
+
+<section class="promotion">
+    <div>
+        Try EMQX Cloud for Free
+        <div class="is-size-14 is-text-normal has-text-weight-normal">No credit card required</div>
+    </div>
+    <a href="https://www.emqx.com/en/signup?continue=https://cloud-intl.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">Get Started →</a >
+</section>

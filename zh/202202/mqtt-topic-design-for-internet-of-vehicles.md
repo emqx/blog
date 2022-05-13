@@ -32,7 +32,7 @@
 
 在 MQTT 协议通信机制中有三个角色： 消息发布者（publisher）、代理服务器（broker）和消息订阅者（subscriber）。消息从发布者发送到代理服务器，然后被订阅者接收，而主题就是发布者与订阅者之间约定的消息通道。                                            
 
-![车联网中的 MQTT](https://static.emqx.net/images/27e6f4979969dcf62ce88e8fe9c46ba2.png)
+![车联网中的 MQTT](https://assets.emqx.com/images/27e6f4979969dcf62ce88e8fe9c46ba2.png)
 
 发布者指定的主题发送消息，订阅者从指定的主题订阅接收消息，而 Broker 则起到按照主题接受并分发消息的代理人。在车联网 TSP 平台场景中，车载设备、移动终端与业务应用都可以被看作是 [MQTT 客户端](https://www.emqx.io/zh/mqtt-client)。根据业务不同与数据方向不同，车载设备、移动终端与业务应用的角色也会在发布者与订阅者之间切换。
 
@@ -198,3 +198,12 @@ EMQX 企业版提供了以主题为监控维度的运行数据监控，可以在
 - [车联网平台搭建从入门到精通 05 | 车联网平台百万级消息吞吐架构设计](https://www.emqx.com/zh/blog/million-level-message-throughput-architecture-design-for-internet-of-vehicles)
 
 - [车联网平台搭建从入门到精通 06 | 车联网通信安全之 SSL/TLS 协议](https://www.emqx.com/zh/blog/ssl-tls-for-internet-of-vehicles-communication-security)
+
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX Cloud
+        <div class="is-size-14 is-text-normal has-text-weight-normal">全托管的云原生 MQTT 消息服务</div>
+    </div>
+    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a >
+</section>

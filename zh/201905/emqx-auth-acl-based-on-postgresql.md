@@ -2,7 +2,7 @@
 
 [emqx-auth-pgsql](https://github.com/emqx/emqx-auth-pgsql) 它通过检查每个终端接入的 `username` 和 `password` 是否与用户指定 的 PostgreSQL 数据库中存储的信息一致来实现对终端的访问控制。其功能逻辑如下：
 
-![3181558401488_.pic_hd.jpg](https://static.emqx.net/images/28265963fd1af68ad9e4289b31cbccaf.jpg)
+![3181558401488_.pic_hd.jpg](https://assets.emqx.com/images/28265963fd1af68ad9e4289b31cbccaf.jpg)
 
 本文假设 PostgreSQL 已经安装在您的机器上，并且您可以连接到 PostgreSQL 服务器。
 

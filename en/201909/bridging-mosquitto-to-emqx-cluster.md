@@ -11,7 +11,7 @@ Therefore, Mosquitto is not suitable for the [MQTT broker](https://www.emqx.com/
 Assuming we have an EMQX server'emqx1'and a Mosquitto server, we need to create a bridge on Mosquitto to forward all ''sensor" topic messages to the'emqx1' server and subscribe to all "control" topics from EMQX.
 
 
-![Artboard.jpg](https://static.emqx.net/images/7a8cbb9dec7ef185338b5e577861b627.jpg)
+![Artboard.jpg](https://assets.emqx.com/images/7a8cbb9dec7ef185338b5e577861b627.jpg)
 
 
 **EMQX**  

@@ -116,7 +116,7 @@ You can view whether the component runs successfully through this command `docke
 
 > Prometheus only provides simple chart data displays. If you need more delicate visual displays, please use it with Grafana.
 
-![image20191205152623657.png](https://static.emqx.net/images/03442857b9ef710c174f6edef901fa2a.png)
+![image20191205152623657.png](https://assets.emqx.com/images/03442857b9ef710c174f6edef901fa2a.png)
 
 
 
@@ -138,7 +138,7 @@ After running successfully , you can open the Dashboard console through visiting
 
 Adding data source in Grafana, then select Prometheus and fill in the correct address to finish adding data.
 
-![image20200507160650116.png](https://static.emqx.net/images/444ae2cf33e933c82cf2bf1d6eab08a6.png)
+![image20200507160650116.png](https://assets.emqx.com/images/444ae2cf33e933c82cf2bf1d6eab08a6.png)
 
 ### Import Grafana template data
 
@@ -148,7 +148,7 @@ The template files located in [emqx_statsd/grafana_template](https://github.com/
 
 Click button **Upload.json file**, then select the corresponding folder and data source after importing.
 
-![image20200507161318909.png](https://static.emqx.net/images/9a14099d58aaba87025f122c76852db8.png)
+![image20200507161318909.png](https://assets.emqx.com/images/9a14099d58aaba87025f122c76852db8.png)
 
 ### Display the effect
 
@@ -160,11 +160,11 @@ After finishing building and running a full set of systems for a while, the data
 
 If you have other requirements, can refer to the attachment 「all metrics of EMQX-STATSD」and use Grafana to display diagram data.
 
-![image20200507162019439.png](https://static.emqx.net/images/0afc916f896f16a433333b7fb6cdfae1.png)
+![image20200507162019439.png](https://assets.emqx.com/images/0afc916f896f16a433333b7fb6cdfae1.png)
 
-![image20200507161948328.png](https://static.emqx.net/images/9a072660bc4178b60f33e7cd7589726b.png)
+![image20200507161948328.png](https://assets.emqx.com/images/9a072660bc4178b60f33e7cd7589726b.png)
 
-![image20200507161914310.png](https://static.emqx.net/images/a8685c37765e765fc8d30e770d143bba.png)
+![image20200507161914310.png](https://assets.emqx.com/images/a8685c37765e765fc8d30e770d143bba.png)
 
 
 
@@ -463,3 +463,12 @@ emqx_session_discarded 0
 # TYPE emqx_session_terminated counter
 emqx_session_terminated 0
 ```
+
+
+<section class="promotion">
+    <div>
+        Try EMQX Cloud for Free
+        <div class="is-size-14 is-text-normal has-text-weight-normal">No credit card required</div>
+    </div>
+    <a href="https://www.emqx.com/en/signup?continue=https://cloud-intl.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">Get Started →</a >
+</section>

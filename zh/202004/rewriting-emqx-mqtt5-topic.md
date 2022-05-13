@@ -47,3 +47,12 @@ module.rewrite.rule.3 = x/y/+ ^x/y/(\d+)$ z/y/$1
 + `x/y/2` 同时匹配 `x/#` 和 `x/y/+` 两个主题过滤器，EMQX 通过倒序读取配置，所以优先匹配 `module.rewrite.rule.3`，通过正则替换，实际订阅了 `z/y/2` 主题。
 
 + `x/y/z` 同时匹配 `x/#` 和 `x/y/+` 两个主题过滤器，EMQX 通过倒序读取配置，所以优先匹配 `module.rewrite.rule.3`，通过正则表达式未匹配到元素，不执行主题重写，实际订阅 `x/y/z` 主题。需要注意的是，即使 `module.rewrite.rule.3` 的正则表达式匹配失败，也不会再次去匹配 `module.rewrite.rule.2` 的规则。
+
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX Cloud
+        <div class="is-size-14 is-text-normal has-text-weight-normal">全托管的云原生 MQTT 消息服务</div>
+    </div>
+    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a >
+</section>

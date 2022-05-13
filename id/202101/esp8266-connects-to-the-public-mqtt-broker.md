@@ -20,7 +20,7 @@ EMQX Cloud adalah sebuah platform servis cloud MQTT IoT aman yang diluncurkan ol
 
 ## ESP8266 Pub/Sub
 
-![project.png](https://static.emqx.net/images/35a817d8c8b74c0481983b8c9ac0fee7.png)
+![project.png](https://assets.emqx.com/images/35a817d8c8b74c0481983b8c9ac0fee7.png)
 
 
 
@@ -185,15 +185,15 @@ EMQX Cloud adalah sebuah platform servis cloud MQTT IoT aman yang diluncurkan ol
 
 1. Ingat pakai [Arduino IDE](https://www.arduino.cc/en/Main/Software) untuk mengupload kode penuh tersebut ke ESP 8266 dan buka serial monitor.
 
-   ![esp_con.png](https://static.emqx.net/images/4c97b1546d31021cc22c64ae7ce4863b.png)
+   ![esp_con.png](https://assets.emqx.com/images/4c97b1546d31021cc22c64ae7ce4863b.png)
 
 2. Buat koneksi antara MQTT X Client dan MQTT broker lalu kirim pesan ke ESP8266.
 
-   ![mqttx_pub.png](https://static.emqx.net/images/daa2c401453155045f2c068bcd57d66a.png)
+   ![mqttx_pub.png](https://assets.emqx.com/images/daa2c401453155045f2c068bcd57d66a.png)
 
 3. Lihat pesan yang diterima ESP8266 dalam serial monitor.
 
-   ![esp_msg.png](https://static.emqx.net/images/8c98d850cdfd5c98db94471d0f6a308f.png)
+   ![esp_msg.png](https://assets.emqx.com/images/8c98d850cdfd5c98db94471d0f6a308f.png)
 
 
 ## Rangkuman

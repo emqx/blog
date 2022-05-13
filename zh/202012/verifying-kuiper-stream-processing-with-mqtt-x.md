@@ -1,6 +1,6 @@
 本篇文章将使用 MQTT X 的脚本及定时功能模拟温湿度数据上报，EMQX Edge 作为消息中间件进行消息转发，EMQX Kuiper 进行消息接收并进行规则处理，最终将处理过的数据通过 EMQX Edge 下发到 MQTT X。
 
-![mqttxedgekuiper.png](https://static.emqx.net/images/9f96444f39724baa8ed5ee6d814618ed.png)
+![mqttxedgekuiper.png](https://assets.emqx.com/images/9f96444f39724baa8ed5ee6d814618ed.png)
 
 ## 介绍及安装
 
@@ -76,7 +76,7 @@ Linux 用户可在 Snapcraft 中进行下载：[https://snapcraft.io/mqttx](http
 
 首先我们对 Kuiper 进行流和规则的创建和配置。在安装完并运行 Kuiper-manager 成功后，我们打开浏览器，然后输入 `http://localhost:9082`。 如果您从其他计算机访问 kuiper-manager，请将 `localhost` 更改为运行 kuiper-manager 的 IP 地址。首次打开后需要输入的用户名密码为：`admin` / `public`，建议首次登录后，进行密码修改。
 
-![kuipermanagerlogin.png](https://static.emqx.net/images/de28b1b45f019523ec9c8ed7b38851e5.png)
+![kuipermanagerlogin.png](https://assets.emqx.com/images/de28b1b45f019523ec9c8ed7b38851e5.png)
 
 #### 节点
 
@@ -84,7 +84,7 @@ Linux 用户可在 Snapcraft 中进行下载：[https://snapcraft.io/mqttx](http
 
 > 注意：如果使用 Docker 启动的话，端点地址需要输入 Docker 容器内的 IP 地址
 
-![kuiperaddnodes.png](https://static.emqx.net/images/e219d0c1d211bb49a88866310ecbd3db.png)
+![kuiperaddnodes.png](https://assets.emqx.com/images/e219d0c1d211bb49a88866310ecbd3db.png)
 
 添加成功后，我们在节点列表中，点击节点名称后可进入到该节点实例中。进入后，接下来我们将配置创建该 Kuiper 实例下的流和规则。
 
@@ -106,7 +106,7 @@ Linux 用户可在 Snapcraft 中进行下载：[https://snapcraft.io/mqttx](http
 
 6. 选择 `流格式`，最后我们选择流数据格式为 `json`。
 
-![kuipercreatestream.png](https://static.emqx.net/images/f7d5df43a41e46815c67716567f322da.png)
+![kuipercreatestream.png](https://assets.emqx.com/images/f7d5df43a41e46815c67716567f322da.png)
 
 除以上可视化创建方式外，我们还可以点击页面中最右上角的切换按钮，切换到文本模式。可直接输入创建流的 SQL 语句进行创建，SQL 示例：
 
@@ -137,7 +137,7 @@ CREATE STREAM demo (
 
 4. 设置 `选项`，选项部分为可选，均有默认值，如需修改可参考 [Kuiper 文档](https://docs.emqx.cn/kuiper/latest/rules/overview.html#%E9%80%89%E9%A1%B9) 进行设置。
 
-![kuipercreaterule.png](https://static.emqx.net/images/66bffdc71ba9c49183b080d42d6135b4.png)
+![kuipercreaterule.png](https://assets.emqx.com/images/66bffdc71ba9c49183b080d42d6135b4.png)
 
 除以上可视化创建方式外，我们还可以点击页面中最右上角的切换按钮，切换到文本模式。可直接输入创建规则的 JSON 数据进行创建，JSON 示例：
 
@@ -186,31 +186,31 @@ function handlePayload(value) {
 execute(handlePayload)
 ```
 
-![mqttxscript.png](https://static.emqx.net/images/5aef8144b3c75fab5730afd7f7545c31.png)
+![mqttxscript.png](https://assets.emqx.com/images/5aef8144b3c75fab5730afd7f7545c31.png)
 
 测试发现模拟数据成功，我们到连接页面中，打开脚本使用功能（使用脚本功能本文不做详细描述，可参考 [MQTT X 文档](https://github.com/emqx/MQTTX/blob/master/docs/manual-cn.md#%E8%84%9A%E6%9C%AC)），输入发送的  `Payload`  数据模版为  `{}` ，输入 `Topic` 为流定义中的 `Data Source`，这里就填写 `/kuiper/stream`，然后设置定时消息，设置发送频率为 1 秒，然后点击发送一条消息成功后，MQTT X 将每秒自动发送一条模拟测试数据。
 
-![mqttxtimed.png](https://static.emqx.net/images/6358d2d739f455bb36670269eb3e2c52.png)
+![mqttxtimed.png](https://assets.emqx.com/images/6358d2d739f455bb36670269eb3e2c52.png)
 
 此时再新建一个名为 `edge2` 的连接，连接到和 Kuiper Sink 配置相同的 EMQX Edge 上，然后订阅 MQTT Sink 中配置的  `Topic`，这里就订阅 `/kuiper/rule` 主题，用来接收 Kuiper 处理的过的数据。
 
-![mqttxrule.png](https://static.emqx.net/images/d3d9bc645f87f0bfe5d63a6c2b6ee62a.png)
+![mqttxrule.png](https://assets.emqx.com/images/d3d9bc645f87f0bfe5d63a6c2b6ee62a.png)
 
 ### 验证结果
 
 当我们发送了模拟数据后，可以通过在规则列表中点击 `状态` 按钮查看是否有消息流入流出。我们通过以下截图可以看到，Kuiper 总共收到了 40 条消息，过滤流出了 14 条消息。
 
-![kuiperrulestatus.png](https://static.emqx.net/images/73b59e082e4af79cdc8c7491b6fed441.png)
+![kuiperrulestatus.png](https://assets.emqx.com/images/73b59e082e4af79cdc8c7491b6fed441.png)
 
 然后继续查看 MQTT X 内的信息，`edge1` 一共定时发送了 40 条模拟消息，切换到 `edge2` 可以查看到一共收到 14 条消息。发送和接收数据和 Kuiper 内统计流入流出数据一致，且查看接收到的消息中的 `temperature` 都完全大于 30，满足了我们在 Kuiper 中设置的过滤条件。说明我们的 Kuiper 流处理功能已经成功完成了我们所设置的数据处理需求，测试和验证成功。
 
-![mqttxsend.png](https://static.emqx.net/images/3aabe367e47e56a41033aa3a6cfed18e.png)
+![mqttxsend.png](https://assets.emqx.com/images/3aabe367e47e56a41033aa3a6cfed18e.png)
 
-![mqttxres.png](https://static.emqx.net/images/489c0e0422a1eae70a730cb0a70af7ec.png)
+![mqttxres.png](https://assets.emqx.com/images/489c0e0422a1eae70a730cb0a70af7ec.png)
 
 除通过状态按钮查看 Kuiper 规则处理的数据信息外，还可点击 `拓扑` 按钮，进入到规则的拓扑图页面，通过规则拓扑图完整的将数据流向与规则状态展示出来，并且可以查看到具体处理数据模块的实时动态信息。
 
-![kuiperruletopo.png](https://static.emqx.net/images/e6790e6b1ebee6501f96670b8d23129d.png)
+![kuiperruletopo.png](https://assets.emqx.com/images/e6790e6b1ebee6501f96670b8d23129d.png)
 
 ## 总结
 

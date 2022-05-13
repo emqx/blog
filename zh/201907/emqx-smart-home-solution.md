@@ -13,7 +13,7 @@
    EMQ 是一家面向 5G 和物联网市场的消息与流处理开源软件公司。从2013年起EMQ作为国内第一个物联网消息中间件项目在Github上发布，目前已成为全球市场广泛应用的物联网消息中间件。 EMQX Enterprise 作为企业级物联网消息中间件，具备电信级的物联网设备与消息接入能力。
    EMQX Enterprise消息中间件为智能家居平台建设提供了主流物联网协议混合接入能力，支持大规模设备的高并发连接与大规模消息吞吐，为海量混合类型智能家居设备接入，跨地区跨机房集群互联提供全方位支持。
 
-![smart_home.png](https://static.emqx.net/images/52aafd931f17e9167ee835230d79f38e.png)
+![smart_home.png](https://assets.emqx.com/images/52aafd931f17e9167ee835230d79f38e.png)
 
 ## EMQX Enterprise产品优势：
 

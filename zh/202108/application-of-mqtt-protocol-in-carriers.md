@@ -32,13 +32,13 @@
 
 随着物联网技术的快速发展，轻量级 MQTT 协议逐渐成为主流物联网协议，广泛应用于 IoT 设备消息通信。MQTT 协议也完美解决了运营商在 IoT 边缘侧面临的上述问题。
 
-![运营商物联网 MQTT 消息接入示意图](https://static.emqx.net/images/790ad5d50e7d30156e86259cbebc71f9.png)
+![运营商物联网 MQTT 消息接入示意图](https://assets.emqx.com/images/790ad5d50e7d30156e86259cbebc71f9.png)
 
 运营商物联网 MQTT 消息接入示意图
 
 以 EMQ 面向运营商的云边一体化解决方案为例：
 
-![EMQ 面向运营商的云边一体化解决方案架构图](https://static.emqx.net/images/9f50714ed3b3de5d9db4b640f20840c2.png)
+![EMQ 面向运营商的云边一体化解决方案架构图](https://assets.emqx.com/images/9f50714ed3b3de5d9db4b640f20840c2.png)
 
 EMQ 面向运营商的云边一体化解决方案
 
@@ -81,3 +81,13 @@ MQTT 协议的轻量级特点使客户端到服务端的硬件需求大大降低
 ### 助力数字化转型
 
 通过基于 MQTT、CoAP 等物协议的物联网平台的建设，使得电信运营商从传统的网络管道运营商向以网络运营为主体，实现云网融合、数字化解决方案于一体的数字化转型。
+
+
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX Cloud
+        <div class="is-size-14 is-text-normal has-text-weight-normal">全托管的云原生 MQTT 消息服务</div>
+    </div>
+    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a >
+</section>

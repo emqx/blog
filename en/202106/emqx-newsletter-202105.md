@@ -50,3 +50,12 @@ Rlog (short for replicated transaction logs) is to split the cluster into two ro
 For a quick introduction, please check out this [demo recording](https://www.youtube.com/watch?v=aX4jV6z24sk&list=UU5FjR77ErAxvZENEWzQaO5Q&index=13) (and the following up updates too).
 
 The stateless nature of the replicant nodes will make deployment in the cloud a lot simpler.
+
+
+<section class="promotion">
+    <div>
+        Try EMQX Cloud for Free
+        <div class="is-size-14 is-text-normal has-text-weight-normal">No credit card required</div>
+    </div>
+    <a href="https://www.emqx.com/en/signup?continue=https://cloud-intl.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">Get Started →</a >
+</section>

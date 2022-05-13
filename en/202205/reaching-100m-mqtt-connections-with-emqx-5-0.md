@@ -18,7 +18,7 @@ For deploying and running our cluster tests, we used [AWS CDK](https://aws.amazo
 
 We've experimented gradually with various instance types and numbers, and in the last runs we've settled on using `c6g.metal` instances for both EMQX nodes and *loadgens*, and the "3+20" topology for our cluster: 3 nodes of type "core", which take part in write transactions, and 20 nodes of type "replicant", which are read-only replicas and delegate writes to the core nodes. As for our *loadgens*, we observed that publisher clients required quite a bit more resources than subscribers. For only connecting and subscribing 100 million connections, only 13 *loadgen* instances were needed; for publishing as well, we needed 17 instances.
 
-![test architecture diagram](https://static.emqx.net/images/30ab268151506add00e3e362a3d4a72c.png)
+![test architecture diagram](https://assets.emqx.com/images/30ab268151506add00e3e362a3d4a72c.png)
 
 We did not use any load-balancers for those tests, and *loadgens* connected directly to each node. To allow core nodes to be dedicated solely for managing the database transactions, we did not make connections to them, and each *loadgen* client connected directly to each node in an evenly distributed fashion, so all nodes had about the same number of connections and resource usage. Each subscriber subscribed to a wildcard topic of the form `bench/%i/#` with QoS 1, where `%i` stands for a unique number per subscriber, and each publisher published with QoS 1 to a topic of the form `bench/%i/test`, with the same `%i` as the subscribers. That ensured that for each publisher there was exactly one subscriber.  The size of the payload in the messages was always 256 bytes.
 
@@ -34,18 +34,18 @@ Even our benchmarking tool needed a few adjustments to help with such a large vo
 
 ## Results
 
-![Test Results](https://static.emqx.net/images/f83818eb466eb81ba61d57c90a245da2.gif)
+![Test Results](https://assets.emqx.com/images/f83818eb466eb81ba61d57c90a245da2.gif)
  
 
 The animation above illustrates our final results for the 1-to-1 publish-subscribe tests. We established 100 million connections, 50 M of which were subscribers and 50 M were publishers. By publishing every 90 seconds, we see that average inbound and outbound rates of over 1 M messages per second are achieved. At the publishing plateau, each of the 20 replicant nodes (which, we remind, are the ones taking in connections) consumed on average 90 % of its memory (about 113 GiB), and around 97 % CPU during the publishing waves (64 arm64 cores). The 3 core nodes handling the transactions were quite idle in CPU (less than 1 % usage) and used up only 28 % of their memory (about 36 GiB). The network traffic required during the publishing waves of 256 bytes payloads was between 240 and 290 MB / s. The *loadgens* required almost all their memory (about 120 GiB) and their entire CPU during the publishing plateau.
 
-![Grafana screenshot of CPU, memory and network usage of EMQX nodes during the test](https://static.emqx.net/images/b6cfbe504f19c739f2573903880283ce.png)
+![Grafana screenshot of CPU, memory and network usage of EMQX nodes during the test](https://assets.emqx.com/images/b6cfbe504f19c739f2573903880283ce.png)
 
 <center>Grafana screenshot of CPU, memory and network usage of EMQX nodes during the test</center>
 
 In order to compare a RLOG cluster with an equivalent Mnesia cluster, we used another topology with fewer total connections: 3 core nodes + 7 replicants for RLOG, and a 10-node Mnesia cluster where only 7 of those took in connections. With such topology, we performed connections and subscriptions without publishing at different rates. The plot below illustrates our results. For Mnesia, the faster we try to connect and subscribe to the nodes, the more we observe a "flattening" behavior, where the cluster is not able to reach the target maximum number of connections, which is 50 million in those tests. For RLOG, we see that we can reach higher connection rates without the cluster exhibiting such flattening behavior. With that, we see that Mria using RLOG can perform better under higher connection rates than the older Mnesia backend.
 
-![Mria using RLOG can perform better under higher connection rates than the older Mnesia backend](https://static.emqx.net/images/7972c44991b97d35264dd484b0b7f5c1.png)
+![Mria using RLOG can perform better under higher connection rates than the older Mnesia backend](https://assets.emqx.com/images/7972c44991b97d35264dd484b0b7f5c1.png)
  
 
 ## Final remarks

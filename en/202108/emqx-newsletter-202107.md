@@ -11,7 +11,7 @@ The new config structure will include only one file in [HOCON](https://github.co
 Most configuration entries of EMQX will take effect at runtime after modification, not requiring a restart of the service. What’s more, there will be HTTP APIs supporting configuration changes, as well as reloading. 
 
 
-![EMQX new config file](https://static.emqx.net/images/41a66271f3fdb2514c299307395c7f73.png)
+![EMQX new config file](https://assets.emqx.com/images/41a66271f3fdb2514c299307395c7f73.png)
 
 ## The Swagger UI
 
@@ -19,9 +19,9 @@ Most configuration entries of EMQX will take effect at runtime after modificatio
 
 [Swagger UI](https://swagger.io/tools/swagger-ui/) is a popular HTTP API documentation tool that is visible and interactive. We are refactoring the HTTP APIs to conform to the [OpenAPI](https://swagger.io/specification/) specification. An OpenAPI specification file will be generated after building EMQX and it will then be used by the Swagger UI to render the HTTP API documents. Now (5.0-alpha.3) you can access this interactive document page at http://127.0.0.1:18083/api-docs.
 
-![swagger](https://static.emqx.net/images/3247d90db25c6d1e0f108564e921aa94.png)
+![swagger](https://assets.emqx.com/images/3247d90db25c6d1e0f108564e921aa94.png)
 
-![api](https://static.emqx.net/images/86fc2c0679ca3a15c3fa96359dbe4652.png)
+![api](https://assets.emqx.com/images/86fc2c0679ca3a15c3fa96359dbe4652.png)
 
 
 ## The New Gateways
@@ -35,3 +35,12 @@ The new architecture of EMQX gateway supports creating multiple instances for on
 The new authentication component has supported the `enhanced authentication`, and authentication methods via HTTP and MongoDB. And we have improved the code for changing authentication methods via HTTP API.
 
 The new authorization (an extension of the ACL concept) component now has support authorization methods via `MySQL`, `PgSQL`, `MongoDB`, `Redis`, and `HTTP`.
+
+
+<section class="promotion">
+    <div>
+        Try EMQX Cloud for Free
+        <div class="is-size-14 is-text-normal has-text-weight-normal">No credit card required</div>
+    </div>
+    <a href="https://www.emqx.com/en/signup?continue=https://cloud-intl.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">Get Started →</a >
+</section>

@@ -8,26 +8,26 @@ The payload of the PUBLISH packet is responsible for storing the message content
 
 **The new properties of the variable header of the CONNECT packet are:**
 
-![1.jpg](https://static.emqx.net/images/52a7175d131df25693c1498c3f287658.jpg)
+![1.jpg](https://assets.emqx.com/images/52a7175d131df25693c1498c3f287658.jpg)
 
 In the Payload of the CONNECT packet, some fields have changed, and the [Will message](https://www.emqx.com/en/blog/use-of-mqtt-will-message) has become a Will Payload. Will properties are added to Payload to define the behavior of a will message.
 
 **The new will properties are:**
 
-![2.jpg](https://static.emqx.net/images/29880f8724b075a58f27caca155c4b9a.jpg)
+![2.jpg](https://assets.emqx.com/images/29880f8724b075a58f27caca155c4b9a.jpg)
 
 ### CONNACK packet
 
 **CONNACK packet does not have Payload, and the properties contained in the variable header are:**
 
-![3.jpg](https://static.emqx.net/images/247af99b45d686958b8ca509be45aa6c.jpg)
+![3.jpg](https://assets.emqx.com/images/247af99b45d686958b8ca509be45aa6c.jpg)
 
 
 ### PUBLISH packet
 
 **The properties of the variable header of the PUBLISH message are:**
 
-![PUBLISH 报文  .jpg](https://static.emqx.net/images/804db596039856802b2073d95f4779a9.jpg)
+![PUBLISH 报文  .jpg](https://assets.emqx.com/images/804db596039856802b2073d95f4779a9.jpg)
 
 
 
@@ -35,19 +35,19 @@ In the Payload of the CONNECT packet, some fields have changed, and the [Will me
 
 **PUBACK, PUBREC, PUBREL, PUBCOMP, SUBACK, UNSUBACK all have the following three properties:**
 
-![PUBACK, PUBREC, PUBREL, PUBCOMP, SUBACK, UNSUBACK 报文.jpg](https://static.emqx.net/images/d5fa746bdd091a885b2560884d6da0fc.jpg)
+![PUBACK, PUBREC, PUBREL, PUBCOMP, SUBACK, UNSUBACK 报文.jpg](https://assets.emqx.com/images/d5fa746bdd091a885b2560884d6da0fc.jpg)
 
 
 ### SUBSCRIBE packet
 
 **The properties of the SUBSCRIBE message also exist in the variable header.**
 
-![11.png](https://static.emqx.net/images/b6b2ae013d4ca398689f9e87bc3ea536.png)
+![11.png](https://assets.emqx.com/images/b6b2ae013d4ca398689f9e87bc3ea536.png)
 
 
 The Payload in the SUBSCRIBE packet in MQTT 5.0 contains the [Subscription Options](https://www.emqx.com/en/blog/subscription-identifier-and-subscription-options).
 
-![SUBSCRIBE 报文2.jpg](https://static.emqx.net/images/a019ca4b636fc8782087c8174854945c.jpg)
+![SUBSCRIBE 报文2.jpg](https://assets.emqx.com/images/a019ca4b636fc8782087c8174854945c.jpg)
 
 
 
@@ -73,7 +73,7 @@ The server will treat the packet as a malformed packet.
 
 **The DISCONNECT packet is a new packet from MQTT 5.0. Its introduction means that the mqtt broker has the ability to actively disconnect. The properties of the DISCONNECT packet are:**
 
-![DISCONNECT 报文新增.jpg](https://static.emqx.net/images/fe76d0003f158a53f9fee55a67d1a794.jpg)
+![DISCONNECT 报文新增.jpg](https://assets.emqx.com/images/fe76d0003f158a53f9fee55a67d1a794.jpg)
 
 
 <section class="promotion">

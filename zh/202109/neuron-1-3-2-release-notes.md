@@ -12,15 +12,15 @@ Neuron  可接入各种工业协议并进行转换，可实现数据采集、运
 
 从 v1.3.2 起，Neuron 正式拥有了专属的产品 logo，在登陆界面及用户界面左上角均有展现。这一 logo 设计简洁，两个上下箭头状的图标代表了北向和南向数据流，而 Neuron 则接通南北向数据，为工业场景提供通畅的数据通路。
 
-![Neuron-Logo](https://static.emqx.net/images/acae68ba4be1727662893e60b82fe3fa.png)
+![Neuron-Logo](https://assets.emqx.com/images/acae68ba4be1727662893e60b82fe3fa.png)
 
-![Neuron后台登陆界面](https://static.emqx.net/images/39c8b52c6e59ac6cb07e3b39f05759a9.png)
+![Neuron后台登陆界面](https://assets.emqx.com/images/39c8b52c6e59ac6cb07e3b39f05759a9.png)
 
 ## 用户界面换上新装
 
 在这一版本中，我们对 Neuron 的用户界面进行了更新升级。新的界面采用白色为主要底色，使各项信息及数字更加清晰易见，给人耳目一新的感觉。
 
-![Neuron用户界面](https://static.emqx.net/images/b01aa32d49f0582f6f7523219bc8c175.png)
+![Neuron用户界面](https://assets.emqx.com/images/b01aa32d49f0582f6f7523219bc8c175.png)
 
 ## 与管理控制台协同
 
@@ -32,12 +32,20 @@ Neuron  可接入各种工业协议并进行转换，可实现数据采集、运
 
 - 界面上不再限制 object size 的大小；
 
-  ![不限制object size](https://static.emqx.net/images/4aad83c64099ab931bfef6e748653f81.png)
+  ![不限制object size](https://assets.emqx.com/images/4aad83c64099ab931bfef6e748653f81.png)
 
 - 界面上增加 read time 的单位标注，单位为 100ms。
 
-  ![read time单位标注](https://static.emqx.net/images/a6e23755e1ade19585436745d9cdd737.png)
+  ![read time单位标注](https://assets.emqx.com/images/a6e23755e1ade19585436745d9cdd737.png)
 
 ## 联系
 
 如果对 Neuron 有任何问题，请随时通过 [neuron@emqx.io](mailto:neuron@emqx.io) 与我们联系。
+
+
+<section class="promotion">
+    <div>
+        免费试用 Neuron
+    </div>
+    <a href="https://www.emqx.com/zh/try?product=neuron" class="button is-gradient px-5">开始试用 →</a >
+</section>

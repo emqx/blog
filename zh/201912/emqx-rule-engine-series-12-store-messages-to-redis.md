@@ -46,13 +46,13 @@ Redis 是完全开源免费遵守 BSD 协议的高性能 key-value 数据库。
 
 打开 EMQX Dashboard，进入左侧菜单的 **资源** 页面，点击 **新建** 按钮，键入 Redis 服务器信息进行资源创建。
 
-![1.png](https://static.emqx.net/images/d570071aae47948a56347d1ed5974ed9.png)
+![1.png](https://assets.emqx.com/images/d570071aae47948a56347d1ed5974ed9.png)
 
 
 
 EMQX 集群中节点所在网络环境可能互不相同，资源创建成功后点击列表中 **状态按钮**，查看各个节点资源连接状况，如果节点上资源不可用，请检查配置是否正确、网络连通性，并点击 **重连** 按钮手动重连。
 
-![WX201907181032132x.png](https://static.emqx.net/images/c0bf4e9651c4913966747c83f0dc6697.png)
+![WX201907181032132x.png](https://assets.emqx.com/images/c0bf4e9651c4913966747c83f0dc6697.png)
 
 
 
@@ -62,7 +62,7 @@ EMQX 集群中节点所在网络环境可能互不相同，资源创建成功后
 
 选定触发事件后，我们可在界面上看到可选字段及示例 SQL：
 
-![image20190716174727991.png](https://static.emqx.net/images/f6c0de2b38aa8f8ccc226c346a2d26a8.png)
+![image20190716174727991.png](https://assets.emqx.com/images/f6c0de2b38aa8f8ccc226c346a2d26a8.png)
 
 
 
@@ -132,7 +132,7 @@ payload 数据如下，注意更改 `tachometer` 数值大小，以满足 SQL �
 
 点击 **SQL 测试** 切换按钮，更改 `topic` 与 `payload` 为场景中的信息，点击 **测试** 按钮查看数据输出：
 
-![SQL1.png](https://static.emqx.net/images/a0a2c5c426db172d11963cc6b48b4db6.png)
+![SQL1.png](https://assets.emqx.com/images/a0a2c5c426db172d11963cc6b48b4db6.png)
 
 
 
@@ -168,7 +168,7 @@ HMSET test client_id "${client_id}" speed "${speed}" tachometer "${tachometer}" 
 
 使用 Redis 的哈希表结构，以 message id 为表明创建哈希表
 
-![WX201907181049302x.png](https://static.emqx.net/images/ffbfc8caf7e355047bb306debcf80732.png)
+![WX201907181049302x.png](https://assets.emqx.com/images/ffbfc8caf7e355047bb306debcf80732.png)
 
 
 
@@ -207,7 +207,7 @@ HMSET test client_id "${client_id}" speed "${speed}" tachometer "${tachometer}" 
   ```
 
 
-![image20190716190238252.png](https://static.emqx.net/images/7c5636c4638f97bc9842f0fd577b2aa6.png)
+![image20190716190238252.png](https://assets.emqx.com/images/7c5636c4638f97bc9842f0fd577b2aa6.png)
 
 
 
@@ -215,7 +215,7 @@ HMSET test client_id "${client_id}" speed "${speed}" tachometer "${tachometer}" 
 
 Redis 命令行中查看哈希表记录得到数据如下：
 
-![WX201907181142402x.png](https://static.emqx.net/images/45ccb0d06301d333abda2adca6186be6.png)
+![WX201907181142402x.png](https://assets.emqx.com/images/45ccb0d06301d333abda2adca6186be6.png)
 
 至此，我们通过规则引擎实现了使用规则引擎存储消息到 Reids的业务开发。
 

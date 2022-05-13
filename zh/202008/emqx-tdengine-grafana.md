@@ -4,7 +4,7 @@
 
 上述整套方案无需代码开发，涉及的产品均能提供开源软件、企业服务、云端 SaaS 服务不同层次的交付模式，能够根据项目需求实现免费版或企业版私有化落地以及云端部署。
 
-![image20200804111913555.png](https://static.emqx.net/images/db641cd1e0ca859288f0ded6918e078c.png)
+![image20200804111913555.png](https://assets.emqx.com/images/db641cd1e0ca859288f0ded6918e078c.png)
 
 
 
@@ -172,7 +172,7 @@ FROM
 }
 ```
 
-![image20200731104046137.png](https://static.emqx.net/images/8472e8d9f9c52e551acf97c2d834f299.png)
+![image20200731104046137.png](https://assets.emqx.com/images/8472e8d9f9c52e551acf97c2d834f299.png)
 
 #### 响应动作
 
@@ -202,13 +202,13 @@ INSERT INTO test.sensor_data VALUES(
 )
 ```
 
-![image20200731145609393.png](https://static.emqx.net/images/f73bb9afb9a4761684211fa679c269f5.png)
+![image20200731145609393.png](https://assets.emqx.com/images/f73bb9afb9a4761684211fa679c269f5.png)
 
 #### 创建过程
 
 点击响应动作下的 **添加** 按钮，在弹出框内选择 **发送数据到 Web 服务**，点击 **新建资源** 新建一个 WebHook 资源。
 
-![image20200731104403456.png](https://static.emqx.net/images/e349ad825172d0061a1a5874e7792825.png)
+![image20200731104403456.png](https://assets.emqx.com/images/e349ad825172d0061a1a5874e7792825.png)
 
 
 资源类型选择 **Webhook**，请求 URL 填写 http://127.0.0.1:6041/rest/sql，请求方法选择 POST， **还需添加 Authorization 请求头作为认证信息** 。 
@@ -217,7 +217,7 @@ Authorization 的值为 Basic + TDengine 的 ` {username}:{password}` 经过 Bas
 
 在响应动作创建页面选择新建的资源，并填入消息模板内容即可。
 
-![image20200804110459517.png](https://static.emqx.net/images/cd2e8dd754f6b2717709113f7dbffa53.png)
+![image20200804110459517.png](https://assets.emqx.com/images/cd2e8dd754f6b2717709113f7dbffa53.png)
 
 
 
@@ -336,7 +336,7 @@ function generateMockData() {
 
 添加数据源，即显示的数据源信息。选取 **TDengine** 类型数据源，输入连接参数进行配置，默认情况下，关键配置信息如下：
 
-![image20200804110612868.png](https://static.emqx.net/images/0a42fece1ec3a769c2b2dc78479362a0.png)
+![image20200804110612868.png](https://assets.emqx.com/images/0a42fece1ec3a769c2b2dc78479362a0.png)
 
 ### 添加仪表盘(New Dashboard)
 
@@ -358,7 +358,7 @@ select avg(temperature), avg(humidity), avg(volume), avg(PM10), avg(pm25), avg(S
 
 **Visualization** 默认不做更改， **General** 里面修改面板名称为 **历史平均值**，如果需要对业务进行监控告警，可以在 **Alert** 里编排告警规则，此处仅做可视化展示，不使用此功能。
 
-![image20200803091833280.png](https://static.emqx.net/images/a8407abf05af262989d8049cda3a4932.png)
+![image20200803091833280.png](https://assets.emqx.com/images/a8407abf05af262989d8049cda3a4932.png)
 
 完成创建后，点击左上角返回按钮，该 Dashboard 里成功添加一个数据面板。点击顶部导航栏 **保存** 图标，输入 Dashboard 名称完成 Dashboard 的创建。
 
@@ -369,7 +369,7 @@ select avg(temperature), avg(humidity), avg(volume), avg(PM10), avg(pm25), avg(S
 ```sql
 select max(temperature), max(humidity), max(volume), max(PM10), max(pm25), max(SO2), max(NO2), max(CO), min(temperature), min(humidity), min(volume), min(PM10), min(pm25), min(SO2), min(NO2), min(CO)  from test.sensor_data where coll_time >= $from and coll_time < $to interval($interval)
 ```
-![image20200803093314019.png](https://static.emqx.net/images/92ffe66972f5e35bd6ddc087eb8255d8.png)
+![image20200803093314019.png](https://assets.emqx.com/images/92ffe66972f5e35bd6ddc087eb8255d8.png)
 
 ### 仪表盘效果
 
@@ -395,4 +395,14 @@ Q: 规则执行了，但是写入不了数据？
 
 至此我们借助 EMQX + TDengine 完成了物联网数据传输、存储、展现整个流程的系统搭建，读者可以了解到 EMQX 丰富的拓展能力与 TDengine 完备的大数据平台特性在物联网数据采集中的应用。深入学习掌握 Grafana 的其他功能后，用户可以定制出更完善的数据可视化乃至监控告警系统。
 
-![image20200803093438116.png](https://static.emqx.net/images/0d68e86dfb77cac91dc0911258fb873b.png)
+![image20200803093438116.png](https://assets.emqx.com/images/0d68e86dfb77cac91dc0911258fb873b.png)
+
+
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX Cloud
+        <div class="is-size-14 is-text-normal has-text-weight-normal">全托管的云原生 MQTT 消息服务</div>
+    </div>
+    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a >
+</section>

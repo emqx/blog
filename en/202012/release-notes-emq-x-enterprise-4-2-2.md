@@ -6,7 +6,7 @@ URL: https://www.emqx.com/en/products/emqx
 
 Download: [Download](https://www.emqx.com/en/try?product=enterprise) now without providing any information!
 
-![enterprisemqttbroker.png](https://static.emqx.net/images/4b87d5ae6dc17bb84f6414e4d8fc504c.png)
+![enterprisemqttbroker.png](https://assets.emqx.com/images/4b87d5ae6dc17bb84f6414e4d8fc504c.png)
 
 ## Overview
 
@@ -64,7 +64,7 @@ The rules engine of version 4.2.2 has added the following new features:
 
 With this update, it is up to the user to decide whether or not to enable the batch function on the action to circumvent the above problem.
 
-![WechatIMG4339.png](https://static.emqx.net/images/8d7c7df1d9e383c9b564509403718f6e.png)
+![WechatIMG4339.png](https://assets.emqx.com/images/8d7c7df1d9e383c9b564509403718f6e.png)
 
 
 ### Support for LwM2M visualization and REST API management
@@ -73,7 +73,7 @@ LwM2M is a set of lightweight protocols for the IoT, defined by the Open Mobile 
 
 EMQX-LwM2M implements most of the features of LwM2M. Applications and MQTT clients can access LwM2M-enabled devices via EMQX-LwM2M and devices can report notifications to EMQX-LwM2M for bi-directional data communication.
 
-![WechatIMG4340.png](https://static.emqx.net/images/c5580c872ed07fc6983e3995867c0b51.png)
+![WechatIMG4340.png](https://assets.emqx.com/images/c5580c872ed07fc6983e3995867c0b51.png)
 
 In EMQX v4.2.2, users can manage LwM2M connections individually via the Dashboard visualization interface and REST APIs, obtain information such as IMEI, LifeTime, objectList, etc. for Lw connections, helping enterprises to quickly implement secure and reliable device interconnections, application development of IoT platforms and vertical industries.
 
@@ -98,3 +98,11 @@ HTTP authentication enables more complex authentication logic than database auth
 ### Contacts
 
 If you have any questions about EMQX Enterprise, please feel free to contact us at [contact@emqx.io](mailto:contact@emqx.io).
+
+
+<section class="promotion">
+    <div>
+        Try EMQX Enterprise for Free
+    </div>
+    <a href="https://www.emqx.com/en/try?product=enterprise" class="button is-gradient px-5">Get Started →</a >
+</section>

@@ -15,7 +15,7 @@
 
 **架构图**
 
-![image1.png](https://static.emqx.net/images/78c123bcccb97e8463e8fce9c0d5520a.png)
+![image1.png](https://assets.emqx.com/images/78c123bcccb97e8463e8fce9c0d5520a.png)
 
 ## 使用说明
 

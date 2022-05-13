@@ -28,6 +28,6 @@ In this project, EMQX IoT Message Middleware is the core component of the platfo
 
 EMQX's innovative distributed clustering solution enables automatic addition of new nodes and automatic deletion of faulty nodes, which effectively guarantees the automatic expansion and long-term stable operation of the AEP platform's access capacity and improves the reliability of the carrier's customer service.
 
-![WX20190803150105.png](https://static.emqx.net/images/900e7fe329d84d87e25b631d3bcf6879.png)
+![WX20190803150105.png](https://assets.emqx.com/images/900e7fe329d84d87e25b631d3bcf6879.png)
 
 EMQX has the capabilities of mass equipment access, 10 million high concurrency, IoT full protocol stack, and millisecond low latency that enable the carrier-grade IoT platform to be built in a few months, and effectively supports the landing and commercial operation of the operator's NB-IoT and even the whole IoT platform strategy.

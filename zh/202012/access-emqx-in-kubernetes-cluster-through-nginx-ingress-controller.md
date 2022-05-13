@@ -2,7 +2,7 @@
 
 [Ingress](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.19/#ingress-v1beta1-networking-k8s-io) 公开了从集群外部到集群内 [服务](https://kubernetes.io/zh/docs/concepts/services-networking/service/) 的 HTTP 和 HTTPS 路由。 流量路由由 Ingress 资源上定义的规则控制。官网的一个简单示例如下：
 
-![ingres.png](https://static.emqx.net/images/613a343074a20d1d246e04e7801e9bfe.png)
+![ingres.png](https://assets.emqx.com/images/613a343074a20d1d246e04e7801e9bfe.png)
 
 Ingress 为服务提供了供外部访问的 URL，负载均衡流量，TLS/SSL 终止的能力。Ingress 可以简单理解为服务的服务，通过独立的 Ingress 对象来指定请求转发的规则，将请求路由到对应的服务中。
 
@@ -102,11 +102,11 @@ $ kubectl apply -f ingress.ymal -n my-emqx
 
 部署完成以后，修改 DNS 解析，便可以通过：https://emqx.cn.iotdp.cn 来访问 dashboard
 
-![dashboard.png](https://static.emqx.net/images/f0b7b0ea8f5b62de1600e0178e090017.png)
+![dashboard.png](https://assets.emqx.com/images/f0b7b0ea8f5b62de1600e0178e090017.png)
 
 然后通过 `8083` 和 `/path`访问 Websocket
 
-![websocket.png](https://static.emqx.net/images/f2df6fbd5827faca3020b2df4c9dd3a2.png)
+![websocket.png](https://assets.emqx.com/images/f2df6fbd5827faca3020b2df4c9dd3a2.png)
 
 ## TCP
 
@@ -192,4 +192,13 @@ nginx-ingress-lb   ClusterIP   172.21.11.90   <none>        80:30639/TCP,443:303
 
 我们便可以通过 `1883` 端口连接到 EMQX 服务了。
 
-![mqtt.png](https://static.emqx.net/images/869cb25e78925065dfab7bc3d9616858.png)
+![mqtt.png](https://assets.emqx.com/images/869cb25e78925065dfab7bc3d9616858.png)
+
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX Cloud
+        <div class="is-size-14 is-text-normal has-text-weight-normal">全托管的云原生 MQTT 消息服务</div>
+    </div>
+    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a >
+</section>

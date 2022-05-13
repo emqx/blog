@@ -4,7 +4,7 @@ EMQX Broker 4.2-rc.1 正式发布，欢迎大家下载试用，下载地址：ht
 
 
 
-![Artboard.png](https://static.emqx.net/images/d2580244a5c143994f4f74a8b48723fb.png)
+![Artboard.png](https://assets.emqx.com/images/d2580244a5c143994f4f74a8b48723fb.png)
 
 ### 更新说明
 

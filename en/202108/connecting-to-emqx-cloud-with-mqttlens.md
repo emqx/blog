@@ -42,7 +42,7 @@ We enter the Chrome On-line App Store and click Install to open the application 
 
 After entering the main interface of the application, we click the `Connections` button on the right to create a new connection client.
 
-![MQTTLens Initialization page](https://static.emqx.net/images/017284bd21723e22993d75f23050348d.png)
+![MQTTLens Initialization page](https://assets.emqx.com/images/017284bd21723e22993d75f23050348d.png)
 
 #### Create a connection
 
@@ -52,7 +52,7 @@ MQTTLens also supports the configuration of [will messages](https://www.emqx.com
 
 > Note: If MQTT Broker has enabled username/password authentication, you also need to enter Username/Password in the configuration page.
 
-![MQTTLens Create a connection](https://static.emqx.net/images/1e7916ea7e3a5d4e30053b05549fb6c8.png)
+![MQTTLens Create a connection](https://assets.emqx.com/images/1e7916ea7e3a5d4e30053b05549fb6c8.png)
 
 After the creation is successful, the application will enter the operation page for connecting to the client. If the button on the right of connection list turns green, it means that the MQTT client has been successfully created and successfully connected. Click the green button again to turn it into the red to disconnect the client. Click the settings button on the right to edit the client configuration again, and click the delete button to quickly delete the connection.
 
@@ -68,6 +68,15 @@ We first enter Topic: `testtopic/mqttlens` in the `Subscrible` at the top. After
 
 Enter the Topic to be published in the `Publish` module. Here we enter the `testtopic/mqttlens` that was just subscribed to, and select the QoS level. If it is a Retain message, you need to check the Retained option. After entering a piece of character information in the Payload box, click the Publish button.
 
-![MQTTLens 发布消息](https://static.emqx.net/images/1022237564e692fa597e9236ecd81640.png)
+![MQTTLens publish message](https://assets.emqx.com/images/1022237564e692fa597e9236ecd81640.png)
 
 At this point, we can see the message just published in the `Subscriptions` box at the bottom. So far, we have created an MQTT client and successfully tested functions such as connection, publishing and subscription.
+
+
+<section class="promotion">
+    <div>
+        Try EMQX Cloud for Free
+        <div class="is-size-14 is-text-normal has-text-weight-normal">No credit card required</div>
+    </div>
+    <a href="https://www.emqx.com/en/signup?continue=https://cloud-intl.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">Get Started →</a >
+</section>

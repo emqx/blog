@@ -62,7 +62,7 @@ EMQX 采用 MQTT 协议接入车联系统。车机端通过负载均衡与 EMQX 
 
 在安全方面，EMQX 不仅支持 TLS/DTLS 或国密 GMSSL 安全协议，保障系统可靠与稳定；还提供心跳监测、遗嘱消息、QoS 等级等多重保障机制，通过离线消息存储实现在复杂的网络环境下实时、安全、可靠的车机消息通信。
 
-![车联网架构1](https://static.emqx.net/images/51334e52596aefe048ad752669904f11.png)
+![车联网架构1](https://assets.emqx.com/images/51334e52596aefe048ad752669904f11.png)
 
 **针对人、路端的消息处理**
 
@@ -70,7 +70,7 @@ EMQX 为人、路端提供针对手机 APP、RSU 等终端的消息采集和处�
 
 在安全方面，支持国际标准的 TLS/DTLS 加密或国密算法 GMSSL 加密，通过扩展基于 PKI/CA 证书认证体系保障人车路信息系协同的安全通信。
 
-![车联网架构2](https://static.emqx.net/images/62117a7c4c02ab11a7f6b2ffc8fb9130.png)
+![车联网架构2](https://assets.emqx.com/images/62117a7c4c02ab11a7f6b2ffc8fb9130.png)
 
 <center>参考架构</center>
 
@@ -78,7 +78,7 @@ EMQX 为人、路端提供针对手机 APP、RSU 等终端的消息采集和处�
 
 针对新一代车联网场景，EMQ 千万级连接规模和百万级并发的整体消息接入和数据处理平台参考架构如下：
 
-![车联网千万消息接入框架模型](https://static.emqx.net/images/108551f6601fe919fa2a9f3e56b2f5c1.png) 
+![车联网千万消息接入框架模型](https://assets.emqx.com/images/108551f6601fe919fa2a9f3e56b2f5c1.png) 
 
 
 - **业务场景**：车联网体系中的车辆、手机APP 端、路侧 RSU 等设备等通过 MQTT 接入，实现对千万量级的以上终端的并发接入能力。
@@ -100,7 +100,7 @@ EMQX 为人、路端提供针对手机 APP、RSU 等终端的消息采集和处�
 
 ### 测试准备
 
-![车联网测试架构](https://static.emqx.net/images/605b204a771f1a1b3aae65ca9ad0130c.png)
+![车联网测试架构](https://assets.emqx.com/images/605b204a771f1a1b3aae65ca9ad0130c.png)
 
 客户端通过 TLS 加密连接负载均衡 ELB，然后在 HAProxy 对客户端进行 TLS 终结，最后通过 TCP 连接至 EMQX 集群。通过在 HAProxy 上终结 TLS 的方式可以提高 EMQX 集群的支持能力，在这种部署模式下 EMQX 的处理能力和客户端直接通过 MQTT TCP 连接是完全一致的。另一方面，相比 MQTT TCP 连接，客户端通过 TLS 连接也需要消耗更多的资源，而本次测试规模为千万级，所需的测试机数量众多，为了减少所需测试资源的同时不影响对  EMQX集群的测试目标，本次测试将直接使用 TCP 连接。
 
@@ -173,3 +173,12 @@ EMQ 作为全球领先的物联网数据基础设施软件提供商，致力于�
 - [车联网平台搭建从入门到精通 05 | 车联网平台百万级消息吞吐架构设计](https://www.emqx.com/zh/blog/million-level-message-throughput-architecture-design-for-internet-of-vehicles)
 
 - [车联网平台搭建从入门到精通 06 | 车联网通信安全之 SSL/TLS 协议](https://www.emqx.com/zh/blog/ssl-tls-for-internet-of-vehicles-communication-security)
+
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX Cloud
+        <div class="is-size-14 is-text-normal has-text-weight-normal">全托管的云原生 MQTT 消息服务</div>
+    </div>
+    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a >
+</section>

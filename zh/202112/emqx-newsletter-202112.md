@@ -10,7 +10,7 @@
 
 我们非常高兴地看到 EMQX 项目（[https://github.com/emqx/emqx](https://github.com/emqx/emqx) ）的 GitHub Star 数在本月突破了 9K！这离不开广大社区用户和开发者对我们的支持。EMQX 团队将继续致力于为大家提供高性能、高可用的 MQTT 消息服务器，也欢迎大家通过 GitHub 与我们交流，提交项目 issue 或 PR。
 
-![EMQX GitHub](https://static.emqx.net/images/ceeea48431795ee2d40c81140d60474d.png)
+![EMQX GitHub](https://assets.emqx.com/images/ceeea48431795ee2d40c81140d60474d.png)
 
 ### 最新发布：EMQX 企业版 v4.4.0
 
@@ -44,11 +44,11 @@
 
 在 [EMQX Cloud](https://www.emqx.com/zh/cloud) 控制台中初次创建部署时，除了关键功能点的引导介绍，用户还将获得从连接到部署相关的知识点指导说明，帮助用户从建立连接、认证设置、终端连接、进阶功能这几个方面由浅入深掌握控制台的使用。
 
-![MQTT 云服务器创建](https://static.emqx.net/images/9f01bdf3be20b562b3c7cacb1f661665.png)
+![MQTT 云服务器创建](https://assets.emqx.com/images/9f01bdf3be20b562b3c7cacb1f661665.png)
 
 同时添加了客户端连接指引页面，引导用户通过 [MQTT 客户端](https://www.emqx.com/zh/mqtt-client-sdk)或者 SDK 来连接到服务。部署连接指引可以让用户更清晰地了解创建部署完成的后续操作，降低用户使用门槛。
 
-![连接到 MQTT 云服务](https://static.emqx.net/images/a8f0cb0ef85620d61010caaf19a4304c.png)
+![连接到 MQTT 云服务](https://assets.emqx.com/images/a8f0cb0ef85620d61010caaf19a4304c.png)
 
 
 ### 帮助文档指引及结构优化
@@ -65,3 +65,12 @@
 
 
 为了完成「通过世界级开源软件产品服务人类未来产业与社会」的使命，敬请期待一个更优秀的 EMQX。
+
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX Cloud
+        <div class="is-size-14 is-text-normal has-text-weight-normal">无须绑定信用卡</div>
+    </div>
+    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a >
+</section>

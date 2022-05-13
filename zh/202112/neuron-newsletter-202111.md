@@ -33,3 +33,11 @@
 
 
 Neuron 1.x 目前已广泛应用或正在测试到不同行业中，包括船运、油田、半导体等等。Neuron 团队也在基于用户反馈和需求持续完善 Neuron 1.x。v1.4.0 将于近期发布，敬请关注。
+
+
+<section class="promotion">
+    <div>
+        免费试用 Neuron
+    </div>
+    <a href="https://www.emqx.com/zh/try?product=neuron" class="button is-gradient px-5">开始试用 →</a >
+</section>

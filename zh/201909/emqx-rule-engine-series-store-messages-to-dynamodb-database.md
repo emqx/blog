@@ -127,11 +127,11 @@ $ aws dynamodb list-tables --region us-west-2 --endpoint-url http://127.0.0.1:80
 
 打开 EMQX Dashboard，进入左侧菜单的 **资源** 页面，点击 **新建** 按钮，键入 DynamoDB 服务器信息进行资源创建。
 
-![image01.png](https://static.emqx.net/images/b6fb136fb612f9982c8b98503e4803f2.png)
+![image01.png](https://assets.emqx.com/images/b6fb136fb612f9982c8b98503e4803f2.png)
 
 EMQX 集群中节点所在网络环境可能互不相同，资源创建成功后点击列表中 **状态按钮**，查看各个节点资源连接状况，如果节点上资源不可用，请检查配置是否正确、网络连通性，并点击 **重连** 按钮手动重连。
 
-![image02.png](https://static.emqx.net/images/7dc4b56ef351e4fedf037e746bc50455.png)
+![image02.png](https://assets.emqx.com/images/7dc4b56ef351e4fedf037e746bc50455.png)
 
 ### 创建规则
 
@@ -139,7 +139,7 @@ EMQX 集群中节点所在网络环境可能互不相同，资源创建成功后
 
 选定触发事件后，我们可在界面上看到可选字段及示例 SQL：
 
-![image03.png](https://static.emqx.net/images/8b4a09c1d140c174f0b4828620ff2eac.png)
+![image03.png](https://assets.emqx.com/images/8b4a09c1d140c174f0b4828620ff2eac.png)
 
 #### 筛选所需字段
 
@@ -201,7 +201,7 @@ payload 数据如下，注意更改 `tachometer` 数值大小，以满足 SQL �
 
 点击 **SQL 测试** 切换按钮，更改 `topic` 与 `payload` 为场景中的信息，点击 **测试** 按钮查看数据输出：
 
-![image04.png](https://static.emqx.net/images/9b8a0e413537169de1e240f832596697.png)
+![image04.png](https://assets.emqx.com/images/9b8a0e413537169de1e240f832596697.png)
 
 测试输出数据为：
 
@@ -225,7 +225,7 @@ SQL 条件输入输出无误后，我们继续添加相应动作，配置写入 
 
 DynamoDB 表名，Hash Key 以及 Range Key。
 
-![image05.png](https://static.emqx.net/images/b4ce6bfeaed8c5001f5938d121a224f3.png)
+![image05.png](https://assets.emqx.com/images/b4ce6bfeaed8c5001f5938d121a224f3.png)
 
 ## 测试
 
@@ -258,11 +258,11 @@ DynamoDB 表名，Hash Key 以及 Range Key。
 }
 ```
 
-![image06.png](https://static.emqx.net/images/69c27c2d80f5f21d0e688d868709e2ff.png)
+![image06.png](https://assets.emqx.com/images/69c27c2d80f5f21d0e688d868709e2ff.png)
 
 点击**发送**按钮，发送成功后查看得到当前规则已命中统计值为 1。
 
-![image07.png](https://static.emqx.net/images/d4d7e6467fcb31ede1e8895be7edaa0f.png)
+![image07.png](https://assets.emqx.com/images/d4d7e6467fcb31ede1e8895be7edaa0f.png)
 
 aws cli 命令行中查看数据表记录得到数据如下：
 

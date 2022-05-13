@@ -8,7 +8,7 @@ MQTT v5.0 中的 Clean Start 与 Session Expiry Interval，对于有 MQTT v3.1.1
 
 > 如果 Clean Session 设置为 1，客户端和服务器必须丢弃任何先前的会话并创建一个新的会话。该会话的生命周期将和网络连接保持一致，其会话状态一定不能被之后的任何会话重用。
 
-![1.png](https://static.emqx.net/images/0a1253b7c6915be73a459a107c67188c.png)
+![1.png](https://assets.emqx.com/images/0a1253b7c6915be73a459a107c67188c.png)
 
 可以看出，MQTT 期望通过这种持久会话的机制避免客户端掉线重连后消息的丢失，并且免去客户端连接后重复的订阅流程。这一功能在带宽小，网络不稳定的物联网场景中非常实用。但 Clean Session 同时限定了客户端和服务器在连接和断开连接两种状态下的行为，这并不是一个很好的实现。此外，在某些场景下会话并不需要服务器永久保留自己的状态时，这个机制将会导致服务器资源的浪费。
 
@@ -24,7 +24,7 @@ MQTT v5.0 中的 Clean Start 与 Session Expiry Interval，对于有 MQTT v3.1.1
 >
 > 如果网络连接关闭时（DISCONNECT 报文中的 Session Expiry Interval 可以覆盖 CONNECT 报文中的设置） Session Expiry Interval 大于0，则客户端与服务端**必须**存储会话状态 。
 
-![2.png](https://static.emqx.net/images/3f3b5c920e0ed3a1bf587380dc1d401f.png)
+![2.png](https://assets.emqx.com/images/3f3b5c920e0ed3a1bf587380dc1d401f.png)
 
 现在，Clean Start 替代了原先的 Clean Session，但不再用于指示是否存储会话状态，仅用于指示服务端在连接时应该尝试恢复之前的会话还是直接创建全新的会话。会话状态在服务端的存储时长则完全交给 Session Expiry Interval 决定。
 

@@ -8,7 +8,7 @@ EMQX Enterprise 适用于各种物联网应用场景，支持公有云、私有�
 
 
 
-![](https://static.emqx.net/images/4b87d5ae6dc17bb84f6414e4d8fc504c.png)
+![](https://assets.emqx.com/images/4b87d5ae6dc17bb84f6414e4d8fc504c.png)
 
 
 
@@ -25,7 +25,7 @@ EMQX Enterprise v4.3.0 版本继承了开源版 4.3.0 版本中的诸多性能�
 [EMQX 的规则引擎](https://docs.emqx.cn/enterprise/latest/rule/rule-engine.html)是标准 MQTT 之上基于 SQL 的核心数据处理与分发组件，可以方便的筛选并处理 MQTT 消息与设备生命周期事件，分发移动数据到包括 MySQL、InfluxDB、Kafka 在内的十余种数据库和消息系统中，能够零代码集成企业系统，帮助企业快速构建 IoT 平台和应用。
 
 作为 EMQX 重磅功能，规则引擎基于 SQL 提供了清晰、灵活的「配置式」业务集成方案，简化了业务开发流程，提升用户易用性并降低业务系统与 EMQX 的耦合度。
-![配图3.png](https://static.emqx.net/images/40b090be34291c0d202613e2598ff767.png)
+![配图3.png](https://assets.emqx.com/images/40b090be34291c0d202613e2598ff767.png)
 
 ### 新增消息桥接到 Kafka 分区支持动态扩容
 
@@ -33,7 +33,7 @@ EMQX 结合 Apache Kafka 使用能够以高可靠、松耦合的方式将物联�
 
 自功能发布以来，EMQX + Kafka 方案足够健壮和成熟，满足了大量企业客户对物联网应用整体性能以及关键业务中数据的安全性、稳定性要求。在过去的版本迭代中我们持续针对 Kafka 方案进行着优化，最初使用了自研驱动，大幅度提高了生产性能，后续在规则引擎引入 Kafka 生产能力提高了数据集成的灵活性。最近的 4.2 版本中，我们为 Kafka 驱动增加了缓存机制进一步保证了数据可靠性。
 
-![配图Artboard.png](https://static.emqx.net/images/12d0fb25e06f518e620cf718b094b85c.png)
+![配图Artboard.png](https://assets.emqx.com/images/12d0fb25e06f518e620cf718b094b85c.png)
 
 在企业版 4.3.0 版本中，我们加入了 Kafka 分区动态扩容能力。
 
@@ -41,7 +41,7 @@ EMQX 结合 Apache Kafka 使用能够以高可靠、松耦合的方式将物联�
 
 在当前版本中，无需额外操作，规则引擎使用的 Kafka Topic 在扩容之后， EMQX 能够自动刷新分区数，该配置选项见下图所示：
 
-![配图4.png](https://static.emqx.net/images/97d72c45072d70cf0e15ca35df1b47ae.png)
+![配图4.png](https://assets.emqx.com/images/97d72c45072d70cf0e15ca35df1b47ae.png)
 
 
 ### 规则引擎所有支持批量的操作默认启用批量异步
@@ -66,7 +66,7 @@ EMQX 结合 Apache Kafka 使用能够以高可靠、松耦合的方式将物联�
 
 EMQX 的 模块 -> Kafka 消费组 功能可以使用外部 Kafka 作为消息队列，从指定 Kafka Topic 中消费消息并转换成为 MQTT 消息，发送到具体的 MQTT Topic 中，数据流如下图所示：
 
-![配图Artboard2.png](https://static.emqx.net/images/9fe7501172ea1e95ec7052c733c1c8ec.png)
+![配图Artboard2.png](https://assets.emqx.com/images/9fe7501172ea1e95ec7052c733c1c8ec.png)
 
 ### Kafka-MQTT 1:M Topic 映射消息下发
 
@@ -89,7 +89,7 @@ EMQX 的 模块 -> Kafka 消费组 功能可以使用外部 Kafka 作为消息�
 在配置 `Kakfa Topic` - `MQTT Topic` 的映射关系时，我们提供了MQTT Payload 的内容配置项，针对某个映射，用户可以选择转 发完整的 Kafka 消息还是消息的 `value` 内容。
 
 
-![配图5.png](https://static.emqx.net/images/75d08b256fd1db259bf8369aeb184081.png)
+![配图5.png](https://assets.emqx.com/images/75d08b256fd1db259bf8369aeb184081.png)
 
 
 ### Kafka 下发与规则引擎组合使用
@@ -117,3 +117,11 @@ EMQX 的 模块 -> Kafka 消费组 功能可以使用外部 Kafka 作为消息�
 EMQX 自 2013 年发布以来，至今已服务全球超过 300 家企业客户，帮助车联网、工业制造、能源电力、金融支付等各个行业客户搭建具有竞争力的物联网平台，实现数字化、智能化转型。在未来，EMQ 将继续专注客户需求及使用体验，提供更加优质的产品与服务。
 
 4.3.0 版本是企业版 4.x 最后一个次要版本，我们将为该版本持续提供 18 个月的维护服务，推荐所有 4.x 的企业用户升级到此版本。目前 EMQX 团队已进入到 5.0 版本开发工作中，企业版 5.0 计划在 7 月份发布，届时将为大家带来全新的「一次连接、无限集成」规则引擎，以及更清晰易用的功能划分、更全面的云原生集成能力。
+
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX 企业版
+    </div>
+    <a href="https://www.emqx.com/zh/try?product=enterprise" class="button is-gradient px-5">开始试用 →</a >
+</section>

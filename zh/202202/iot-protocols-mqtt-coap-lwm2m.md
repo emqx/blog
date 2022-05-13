@@ -22,11 +22,11 @@
 
 支持 TCP/IP 的物联网设备，可以通过 WIFI、蜂窝网络以及以太网，使用 HTTP、MQTT、CoAP、LwM2M 以及 XMPP 等应用层协议协议接入云端。
 
-![设备联网](https://static.emqx.net/images/5effbcb7a40fbbc82c69dc0789b63d47.png)
+![设备联网](https://assets.emqx.com/images/5effbcb7a40fbbc82c69dc0789b63d47.png)
 
 网关协议是适用于短距通信无法直接上云的协议，比如蓝牙、ZigBee、LoRa 等。此类设备需要接入网关转换之后，通过 TCP/IP 协议进行上云。
 
-![蓝牙、ZigBee、LoRa 网关](https://static.emqx.net/images/efdcb34df0d399b3c8a5b73edf3370c6.png)
+![蓝牙、ZigBee、LoRa 网关](https://assets.emqx.com/images/efdcb34df0d399b3c8a5b73edf3370c6.png)
 
 ## ZigBee
 
@@ -108,7 +108,7 @@ MQTT 协议是基于发布/订阅模式的物联网通信协议，凭借简单�
 
 MQTT 协议广泛应用于物联网、移动互联网、智能硬件、车联网、电力、能源等领域，既能作为网关在设备侧接入通信，也能作为设备-云端的通信协议。ZigBee、LoRa 等绝大多数网关协议最终都转换为 MQTT 协议接入上云。
 
-![MQTT 协议应用领域](https://static.emqx.net/images/16aad45238f605914ce52cd1ceb89e99.png)
+![MQTT 协议应用领域](https://assets.emqx.com/images/16aad45238f605914ce52cd1ceb89e99.png)
 
 ###  协议特性
 
@@ -121,7 +121,7 @@ MQTT 协议广泛应用于物联网、移动互联网、智能硬件、车联网
 
 MQTT 采用发布订阅模式通信，发布订阅模式区别于传统的客户端-服务器模式，它使发送消息的客户端（发布者）与接收消息的客户端（订阅者）分离，发布者与订阅者不需要建立直接联系。我们既可以让多个发布者向一个订阅者发布消息，也可以让多个订阅者同时接收一个发布者的消息。
 
-![MQTT 发布订阅](https://static.emqx.net/images/46ca5c9074338c59e8a51fef57aae14a.png) 
+![MQTT 发布订阅](https://assets.emqx.com/images/46ca5c9074338c59e8a51fef57aae14a.png) 
 
 ### 市场状况
 
@@ -220,3 +220,12 @@ XMPP 特点在于协议和扩展协议成熟，功能完善，专门为即时聊
 当前物联网协议呈现多元化发展，不同行业和场景适用不同的协议，在相同的场景下也能够有多个协议可供选择，没有任何协议能够在市场上占有统治地位，各种协议之间存在一定的互补效应。因此，要实现物联网设备和数据的互联互通，关键点并不在与协议的统一，而在于不同协议之间的互联互通、上层业务应用层协议的统一。
 
 EMQ 致力于解决物联网设备数据连接问题。核心产品 EMQX 物联网消息服务器可以通过开放标准的 MQTT、CoAP 和 LwM2M 协议连接任何设备，对于诸如工业场景中工业协议复杂多样的情况，也可通过边缘[工业协议网关软件 Neuron](https://www.emqx.com/zh/products/neuron) 转换成统一的 MQTT 协议接入，满足绝大多数物联网场景下的数据采集需求，为企业的物联网业务提供高效可靠的数据接入层。
+
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX Cloud
+        <div class="is-size-14 is-text-normal has-text-weight-normal">全托管的云原生 MQTT 消息服务</div>
+    </div>
+    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a >
+</section>

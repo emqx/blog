@@ -57,7 +57,7 @@ MQTT X has relatively comprehensive functions. Users can quickly test the connec
 - Customizable script to simulate data testing
 - Full logging capabilities
 
-![1.png](https://static.emqx.net/images/mdt40vcf7ebdrxohghlzwpdyr4u9494l.png)
+![1.png](https://assets.emqx.com/images/mdt40vcf7ebdrxohghlzwpdyr4u9494l.png)
 
 ### Download client
 
@@ -135,7 +135,7 @@ All in all, MQTT.fx has rich and mature functions, and supports all the configur
 - Support log display, display log information in the connection
 - Cross-platform desktop with support for Windows, macOS and Linux
 
-![2.png](https://static.emqx.net/images/4f592bb17cbbfe3adf0d13e07277c0dd.png)
+![2.png](https://assets.emqx.com/images/4f592bb17cbbfe3adf0d13e07277c0dd.png)
 
 ### Download client
 
@@ -165,7 +165,7 @@ Visualization and vertical layered display of topics and dynamic preview are the
 - Retain the historic record of every topic
 - Dark/Light topic
 
-![mqtt-explorer.png](https://static.emqx.net/images/7be0606fdbb16f93359429dba0cc3e6e.png)
+![mqtt-explorer.png](https://assets.emqx.com/images/7be0606fdbb16f93359429dba0cc3e6e.png)
 
 ### Download client
 
@@ -194,7 +194,7 @@ MQTT Box also adopts Electron cross-platform technology. The interface is simple
 - Save the history of subscription message 
 - Simple performance test, testing the load of the broker and viewing the test results through chart visualization
 
-![3.png](https://static.emqx.net/images/4d230117efab9a40e2ff30f7cd82744d.png)
+![3.png](https://assets.emqx.com/images/4d230117efab9a40e2ff30f7cd82744d.png)
 
 ### Download client
 
@@ -221,9 +221,9 @@ Mqtt-spy does not provide a separate installation package, which needs users to 
 - Can close different areas of the [pub/sub](https://www.emqx.com/en/blog/mqtt-5-introduction-to-publish-subscribe-model) window (publish, new subscriptions, subscriptions and messages) to make room for space currently in use
 - The search function allows searching for commonly used MQTT messages, allowing outputting publishing/subscribing messages to standard output or logging to a file for subsequent analysis
 
-![4.png](https://static.emqx.net/images/9836d2b3d18279f9e4d43c5e4c6660f0.png)
+![4.png](https://assets.emqx.com/images/9836d2b3d18279f9e4d43c5e4c6660f0.png)
 
-![5.png](https://static.emqx.net/images/25b0be7357a3c3cfdc46bae9474c4477.png)
+![5.png](https://assets.emqx.com/images/25b0be7357a3c3cfdc46bae9474c4477.png)
 
 ### Download client
 
@@ -271,7 +271,7 @@ The interface and interaction of MQTT WebSocket Toolkit still use the design and
 - Support  MQTT over WebSockets
 - Support for creating multiple clients, and can retain the information of the client until the next access.
 
-![mqtt-websocket-toolkit.png](https://static.emqx.net/images/bb8967f026a3df9fad1ad92ac057caf3.png)
+![mqtt-websocket-toolkit.png](https://assets.emqx.com/images/bb8967f026a3df9fad1ad92ac057caf3.png)
 
 ### Download client
 

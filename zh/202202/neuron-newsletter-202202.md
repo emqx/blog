@@ -20,3 +20,11 @@
 - 解决了解析复杂 JSON 字符串时占用 CPU 过多，耗费内存过大的问题。
 - 解决了自动代码生成器生成的代码在 encode 字符串数组出错的问题。
 - 解决了持久化和 OPC UA 驱动中的一些内存泄漏问题。
+
+
+<section class="promotion">
+    <div>
+        免费试用 Neuron
+    </div>
+    <a href="https://www.emqx.com/zh/try?product=neuron" class="button is-gradient px-5">开始试用 →</a >
+</section>

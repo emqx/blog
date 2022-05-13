@@ -67,7 +67,7 @@ Code BEAM 会议致力于聚集 Erlang 和 Elixir 社区中的优秀人才，共
 
 > 使用增值服务需开通 EMQX Cloud 专业版部署，首次使用用户可享受 14 天免费试用。服务详情请关注公众号后续推送。
 
-![EMQX Cloud 增值服务](https://static.emqx.net/images/f18513a3d828ae15c6e8c82652ed0be3.png)
+![EMQX Cloud 增值服务](https://assets.emqx.com/images/f18513a3d828ae15c6e8c82652ed0be3.png)
 
 ### 开放一对一演示预约
 
@@ -75,7 +75,7 @@ Code BEAM 会议致力于聚集 Erlang 和 Elixir 社区中的优秀人才，共
 
 > 申请入口：[EMQX Cloud 在线演示](https://www.emqx.com/zh/cloud/demo) 
 
-![EMQX Cloud 在线演示](https://static.emqx.net/images/447a23a1415ab4dfe5ed658d4cc74128.png)
+![EMQX Cloud 在线演示](https://assets.emqx.com/images/447a23a1415ab4dfe5ed658d4cc74128.png)
 
 ### PrivateLink 双向打通验证
 
@@ -87,9 +87,18 @@ Code BEAM 会议致力于聚集 Erlang 和 Elixir 社区中的优秀人才，共
 - 费用更优
 - 更安全，终端节点服务提供方只需要暴露部分监听端口
 
-![PrivateLink](https://static.emqx.net/images/db7d346d8197e074fb213f41483c165c.png)
+![PrivateLink](https://assets.emqx.com/images/db7d346d8197e074fb213f41483c165c.png)
 
 图源：[什么是PrivateLink](https://www.alibabacloud.com/help/zh/doc-detail/161974.htm)
  
 
 为了完成「通过世界级开源软件产品服务人类未来产业与社会」的使命，敬请期待一个更优秀的 EMQX。
+
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX Cloud
+        <div class="is-size-14 is-text-normal has-text-weight-normal">无须绑定信用卡</div>
+    </div>
+    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a >
+</section>

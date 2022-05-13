@@ -68,3 +68,12 @@ In v1.1.4, we set v1beta1 APIVersion to unserved version, which means that no ne
 ### Stay tuned
 
 EMQX Kubernetes Operator v1.2 and v1beta3 APIVersion are under development, and v1beta3 APIVersion will bring more reasonable structure of spec.
+
+
+<section class="promotion">
+    <div>
+        Try EMQX Cloud for Free
+        <div class="is-size-14 is-text-normal has-text-weight-normal">No credit card required</div>
+    </div>
+    <a href="https://www.emqx.com/en/signup?continue=https://cloud-intl.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">Get Started →</a >
+</section>

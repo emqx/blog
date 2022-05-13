@@ -198,7 +198,7 @@ After running the MQTT message publishing code, we will see that the client has 
 php pubsub_tcp.php
 ```
 
-![PHP MQTT Test](https://static.emqx.net/images/61618d56823886f101feaf6741a20c3f.png)
+![PHP MQTT Test](https://assets.emqx.com/images/61618d56823886f101feaf6741a20c3f.png)
 
 
 ## Summary

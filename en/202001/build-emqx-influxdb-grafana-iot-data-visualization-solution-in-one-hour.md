@@ -1,4 +1,4 @@
-![画板 172x8.png](https://static.emqx.net/images/f8a1fbc68db40b2edeb4e257b2febc79.png)
+![画板 172x8.png](https://assets.emqx.com/images/f8a1fbc68db40b2edeb4e257b2febc79.png)
 
 ## Background
 
@@ -35,7 +35,7 @@ Now it needs real-time storage to view the data at any subsequent time. The foll
 
 ### Final effect
 
-![image20191125152935211.png](https://static.emqx.net/images/40bd3a648d5bb97ca9b8f1ec13c4a91e.png)
+![image20191125152935211.png](https://assets.emqx.com/images/40bd3a648d5bb97ca9b8f1ec13c4a91e.png)
 
 The time interval and automatic refresh time can be selected in the upper right corner of the dashboard. At this time, the device continues to send data, and the data value of the dashboard will change accordingly, achieving a better visualization effect.
 
@@ -45,7 +45,7 @@ At present, there are many IoT message middleware, time series databases, and da
 
 The overall architecture of the solution is shown in the following figure:
 
-![image20191125163959537.png](https://static.emqx.net/images/a6a6133516dd6f26f6b813f5500f96c8.png)
+![image20191125163959537.png](https://assets.emqx.com/images/a6a6133516dd6f26f6b813f5500f96c8.png)
 
 - **EMQX**：[EMQX ](https://github.com/emqx/emqx)is developed based on the highly concurrent Erlang / OTP language platform, and supports millions of connections and distributed cluster architecture. It is an open source MQTT message server with publish-subscribe mode. EMQX has a lot of built-in out-of-the-box features.  Its enterprise version of EMQX Enterprise supports high-performance storage of device messages to InfluxDB through a rule engine or message persistence plug-in. Open source users need to handle the message storage themselves.
 - **InfluxDB :** InfluxDB is an open source time series database developed by InfluxData. Written by Go, it focuses on querying and storing time series data with high performance. InfluxDB is widely used in the scenarios of monitoring data in storage systems and real-time data in the IoT industry.
@@ -214,7 +214,7 @@ docker run -d --name=grafana -p 3000:3000 grafana/grafana
 
 After successful startup, visits `http://127.0.0.1:3000` to access the Grafana visualization panel, and use ` admin` `admin` as default username and password to complete the initial login. After login, follow the prompts to modify the password and log in to the main interface with the new password. :
 
-![image20191125100532923.png](https://static.emqx.net/images/26b9267ec7bc011f1222cef95c6d6a60.png)
+![image20191125100532923.png](https://assets.emqx.com/images/26b9267ec7bc011f1222cef95c6d6a60.png)
 
 
 
@@ -338,7 +338,7 @@ Add a data source, that is the displayed data source information. Select the  **
 
 After adding the data source, add the data dashboard information that needs to be displayed. The dashboard is a collection of multiple visualization panels. After clicking  **New Dashboard** , select **Add Query** to add a data panel by query:
 
-![image20191125135546283.png](https://static.emqx.net/images/10c568eea65264ba063ec193719012f9.png)
+![image20191125135546283.png](https://assets.emqx.com/images/10c568eea65264ba063ec193719012f9.png)
 
 
 
@@ -362,13 +362,13 @@ Use Grafana's visual query builder to find the average value of all devices:
 
 **Visualization** does not change by default,  the panel name is changed to `Device temperature and humidity mean value` in **General**. If you need to monitor and alarm the business, you can arrange alarm rules in **Alert**. This function is Only for visual display, not for use here.
 
-![image20191125140117416.png](https://static.emqx.net/images/722bf7a8c78edd0707480ddf39a6c303.png)
+![image20191125140117416.png](https://assets.emqx.com/images/722bf7a8c78edd0707480ddf39a6c303.png)
 
 
 After the creation is complete, click the back button in the upper left corner, and a data panel is successfully added to the Dashboard. Click the **Save** icon in the top navigation bar, and enter the Dashboard name to complete the creation of Dashboard.
 
 
-![image20191125144011475.png](https://static.emqx.net/images/60fedfccc52a0162df1586be2a7e2f8b.png)
+![image20191125144011475.png](https://assets.emqx.com/images/60fedfccc52a0162df1586be2a7e2f8b.png)
 
 
 

@@ -7,7 +7,7 @@ MQTT v5 带来了很多新的特性，我们会尽量以通俗易懂的方式展
 
 因此，客户端可以建立订阅标识符与消息处理程序的映射，以在收到 PUBLISH 报文时直接通过订阅标识符将消息定向至对应的消息处理程序，这会远远快于通过主题匹配来查找消息处理程序的速度。
 
-![image20200723152010505.png](https://static.emqx.net/images/6690eae3f5a79e9f19da8bf64c2466eb.png)
+![image20200723152010505.png](https://assets.emqx.com/images/6690eae3f5a79e9f19da8bf64c2466eb.png)
 
 由于 SUBSCRIBE 报文支持包含多个订阅，因此可能出现多个订阅关联到同一个订阅标识符的情况。即便是分开订阅，也可能出现这种情况，但这是被允许的，只是用户应当意识到这样使用可能引起的后果。根据客户端的实际订阅情况，最终客户端收到的 PUBLISH 报文中可能包含多个订阅标识符，这些标识符可能完全不同，也可能有些是相同的，以下是几种常见的情况：
 
@@ -16,7 +16,7 @@ MQTT v5 带来了很多新的特性，我们会尽量以通俗易懂的方式展
 3. 客户端订阅主题 `a/+` 并指定订阅标识符为 1，订阅主题 `a/b` 并指定订阅标识符为 1。主题为 `a/b` 的 PUBLISH 报文将会携带两个相同的订阅标识符，对应的消息处理程序将被触发两次。
 4. 客户端订阅主题 `a/+` 并指定订阅标识符为 1，订阅主题 `a/b` 并指定订阅标识符为 2。主题为 `a/b` 的 PUBLISH 报文将会携带两个不同的订阅标识符，一个消息将触发两个不同的消息处理程序。
 
-![image20200723152040226.png](https://static.emqx.net/images/1835b90edea8dfd41acbcc3d186ca736.png)
+![image20200723152040226.png](https://assets.emqx.com/images/1835b90edea8dfd41acbcc3d186ca736.png)
 
 这种 PUBLISH 报文中携带多个订阅标识符的情况，在消息速率低的时候通常不成问题，但在消息速率高时可能会引发一些性能问题，因此我们建议您尽量确保这种情况的出现都是您有意为之。
 
@@ -24,7 +24,7 @@ MQTT v5 带来了很多新的特性，我们会尽量以通俗易懂的方式展
 
 在 MQTT v5 中，你可以使用更多的订阅选项来改变服务端的行为。
 
-![image20200723161859058.png](https://static.emqx.net/images/388006885ad0edbc4705b9a23e94295a.png)
+![image20200723161859058.png](https://assets.emqx.com/images/388006885ad0edbc4705b9a23e94295a.png)
 
 ### QoS
 
@@ -49,3 +49,13 @@ MQTT v5 带来了很多新的特性，我们会尽量以通俗易懂的方式展
 - **Retain Handling 等于 0**，只要客户端订阅成功，服务端就发送保留消息。
 - **Retain Handling 等于 1**，客户端订阅成功且该订阅此前不存在，服务端才发送保留消息。毕竟有些时候客户端重新发起订阅可能只是为了改变一下 QoS，并不意味着它想再次接收保留消息。
 - **Retain Handling 等于 2**，即便客户订阅成功，服务端也不会发送保留消息。
+
+
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX Cloud
+        <div class="is-size-14 is-text-normal has-text-weight-normal">全托管的云原生 MQTT 消息服务</div>
+    </div>
+    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a >
+</section>

@@ -12,7 +12,7 @@ EMQX 获得了来自海外知名 IIoT 社区 4.0 Solutions 的赞誉，被称为
 
 能够深入 IIoT 社区与成员们交流让我们感到十分荣幸。在一个小时的活动中，我们就有关 EMQ 公司及产品的许多迫切问题进行了一一解答。
 
-![IIoT 社区](https://static.emqx.net/images/b709690f73732fa72e5038a0ba7a4460.png)
+![IIoT 社区](https://assets.emqx.com/images/b709690f73732fa72e5038a0ba7a4460.png)
 
 视频回放链接：[https://www.youtube.com/watch?v=nP7JAlpyvfo](https://www.youtube.com/watch?v=nP7JAlpyvfo) 
 
@@ -45,3 +45,12 @@ EMQX 获得了来自海外知名 IIoT 社区 4.0 Solutions 的赞誉，被称为
 EMQX 是高度可扩展的。
 
 正如我们之前在博客中介绍过的那样，插件可以实现独立安装。从 5.0 版开始，EMQX 开源用户将能够通过直接安装扩展包升级到企业版。
+
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX Cloud
+        <div class="is-size-14 is-text-normal has-text-weight-normal">无须绑定信用卡</div>
+    </div>
+    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a >
+</section>

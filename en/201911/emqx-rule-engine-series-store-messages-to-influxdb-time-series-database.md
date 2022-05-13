@@ -4,7 +4,7 @@
 
 With the EMQX messaging engine, we can customize the Template file and then convert the Json-formatted MQTT message into  Measurement to write to InfluxDB:
 
-![Artboard.jpg](https://static.emqx.net/images/09b103dd807d6fd009fa102c7bcf7d09.jpg)
+![Artboard.jpg](https://assets.emqx.com/images/09b103dd807d6fd009fa102c7bcf7d09.jpg)
 
 ## Introduction of  Scenario
 
@@ -53,7 +53,7 @@ $ docker run --name=influxdb --rm -d -p 8086:8086 -p 8089:8089/udp -v ${PWD}/fil
 
 Open EMQX Dashboard, go to the **Resources** page on the left menu, click the **New** button, type MySQL server information for resource creation, select the InfluxDB resource type and complete the relevant configuration for resource creation.
 
-![image20190719110910530.jpg](https://static.emqx.net/images/4acb4de9937bdd0a460086eba0ae750b.jpg)
+![image20190719110910530.jpg](https://assets.emqx.com/images/4acb4de9937bdd0a460086eba0ae750b.jpg)
 
 
 
@@ -63,7 +63,7 @@ Go to the **Rules** page on the left menu and click the **New** button to create
 
 After selecting the trigger event, we can see the optional fields and sample SQL on the interface:
 
-![image20190719112141128.jpg](https://static.emqx.net/images/8a566c0567231b6586c62f005c35fcce.jpg)
+![image20190719112141128.jpg](https://assets.emqx.com/images/8a566c0567231b6586c62f005c35fcce.jpg)
 
 
 
@@ -89,7 +89,7 @@ WHERE
 
 With the SQL test function, we can quickly confirm whether the SQL statement just filled in can achieve our goal. We  firstly fill in the payload and other data for testing as follows:
 
-![image20190719113731130.jpg](https://static.emqx.net/images/156769eaf8720cd4b79c2dba7a929a9f.jpg)
+![image20190719113731130.jpg](https://assets.emqx.com/images/156769eaf8720cd4b79c2dba7a929a9f.jpg)
 
 Then click the **Test** button and get the following output, which is as expected.
 
@@ -110,7 +110,7 @@ After the input and output of SQL condition  is correct, we continue to add the 
 
 Click the **Add** button in the response action, select action of **Save Data to InfluxDB**, select the `InfluxDB` resource  just created, and then fill the `${fieldName}` into `Field Keys` according to actual needs. In `Tag Keys` and `Timestamp Key`, `Measurement` represents the `Measurement` used when writing data to `InfluxDB`. Finally, click the **New** button to complete the rule creation.
 
-![image20190719115340429.jpg](https://static.emqx.net/images/5586dd983614fbdfc426304af396902b.jpg)
+![image20190719115340429.jpg](https://assets.emqx.com/images/5586dd983614fbdfc426304af396902b.jpg)
 
 
 
@@ -144,7 +144,7 @@ Switch to the **Tools** --> **Websocket** page, connect to EMQX with any Client 
   }
   ```
 
-![image20190719133414535.jpg](https://static.emqx.net/images/603bd675ce6ee7275f69876d44f4e484.jpg)
+![image20190719133414535.jpg](https://assets.emqx.com/images/603bd675ce6ee7275f69876d44f4e484.jpg)
 
 Click the **Send** button. After the transmission succeeds, you can see that number of hits for current rule has changed to 1.
 

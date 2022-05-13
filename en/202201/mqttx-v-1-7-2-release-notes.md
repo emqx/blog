@@ -8,7 +8,7 @@
 >
 > Linux users can download it in Snapcraft: [https://snapcraft.io/mqttx](https://snapcraft.io/mqttx)
 
-![MQTT X](https://static.emqx.net/images/cf2e677ede2b5fd5eb7aece9c88c68d0.png)
+![MQTT X](https://assets.emqx.com/images/cf2e677ede2b5fd5eb7aece9c88c68d0.png)
 
 ## New Features Preview
 
@@ -16,20 +16,20 @@
 
 Shared Subscriptions also support color markers, and when using [Shared subscriptions](https://www.emqx.com/en/blog/introduction-to-mqtt5-protocol-shared-subscription), MQTT X can also distinguish which shared subscription the current message comes from by customizing the topic color.
 
-![Shared subscriptions](https://static.emqx.net/images/1624a13546e46f143d02d2ebe608c580.png)
+![Shared subscriptions](https://assets.emqx.com/images/1624a13546e46f143d02d2ebe608c580.png)
 
 ### Add more ARM builds
 
 In this release, we have added some new builds that can be used on ARM64 architectures. For macOS and Linux users, you can download the corresponding builds for any architecture. To use ARM64 builds, you need to go to [GitHub](https://github.com/emqx/MQTTX/releases/tag/v1.7.2) or [Official Downloads](https://www.emqx.com/en/downloads/MQTTX/v1.7.2) to find a package with the arm64 suffix to download and use.
 
-![MQTT X add more ARM builds](https://static.emqx.net/images/769872da8aba8f6d15f8a4204c38b98f.png)
+![MQTT X add more ARM builds](https://assets.emqx.com/images/769872da8aba8f6d15f8a4204c38b98f.png)
 
 
 ### Support set reconnect period
 
 When creating or editing a connection, this release optimizes the reconnection section. When setting a connection to be automatically reconnected, we can also configure the time interval between each reconnection, that is, the reconnection period, which is 4000ms by default, note that the unit here is milliseconds.
 
-![Support set reconnect period](https://static.emqx.net/images/877a23bc42e70c28cd932e04fecbf4d4.png)
+![Support set reconnect period](https://assets.emqx.com/images/877a23bc42e70c28cd932e04fecbf4d4.png)
  
 
 ## Fix and optimization

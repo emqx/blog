@@ -1,12 +1,12 @@
 随着 5G 时代的来临，万物互联的伟大构想正在成为现实。联网的 **物联网设备** 在 2018 年已经达到了 70 亿[^1]，在未来两年，仅智能水电气表就将超过10亿[^2]。
 
-![Numberofglobaldeviceconnections20152025NumberofIoTDevices.png](https://static.emqx.net/images/1abe97466e35ce3fd89417f6ea2fec86.png)
+![Numberofglobaldeviceconnections20152025NumberofIoTDevices.png](https://assets.emqx.com/images/1abe97466e35ce3fd89417f6ea2fec86.png)
 
 海量的设备接入和设备管理对网络带宽、通信协议以及平台服务架构都带来了很大挑战。对于 **物联网协议** 来说，必须针对性地解决物联网设备通信的几个关键问题：其网络环境复杂而不可靠、其内存和闪存容量小、其处理器能力有限。
 
 [MQTT 协议](https://www.emqx.com/zh/mqtt) 是基于发布/订阅模式的物联网通信协议，凭借简单易实现、支持 QoS、报文小等特点，占据了物联网协议的半壁江山：
 
-![WechatIMG10934.png](https://static.emqx.net/images/c980ab99489d1e771ad7b4dc5ac722b9.png)
+![WechatIMG10934.png](https://assets.emqx.com/images/c980ab99489d1e771ad7b4dc5ac722b9.png)
 
 ## MQTT 协议的诞生
 
@@ -28,7 +28,7 @@ MQTT was created by [Andy Stanford-Clark](https://en.wikipedia.org/wiki/Andy_Sta
 在 MQTT 协议里，上面提到的 `过滤规则` 是 `Topic`。比如：所有发布到 `news` 这个 Topic 的消息，都会被 Broker 转发给已经订阅了 `news` 的订阅者:
 
 
-![image.png](https://static.emqx.net/images/a97a07cccc199f387b7eb6747eb2223f.png)
+![image.png](https://assets.emqx.com/images/a97a07cccc199f387b7eb6747eb2223f.png)
 
 
 
@@ -147,3 +147,13 @@ EMQ 也提供了支持浏览器访问的 [MQTT 在线客户端工具](https://ww
 [^3]: https://github.com/mqtt/mqtt.github.io/wiki/history
 [^4]: https://www.cnblogs.com/softidea/p/5764051.html
 [^5]: https://pragprog.com/articles/erlang
+
+
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX Cloud
+        <div class="is-size-14 is-text-normal has-text-weight-normal">全托管的云原生 MQTT 消息服务</div>
+    </div>
+    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a >
+</section>

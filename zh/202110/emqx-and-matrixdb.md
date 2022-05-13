@@ -6,7 +6,7 @@
 
 EMQX 与 MatrixDB 的组合技术栈能够胜任物联网场景中的各类数据需求，为万物互联的智能时代提供坚实、简洁的智能数据核心基础设施，针对物联网、车联网和工业互联网等领域打造完整解决方案，共同协助企业完成企业数字资产平台的建设。
 
-![EMQ 物联网数据接入平台架构](https://static.emqx.net/images/31113cabcf077ba6e8f4f16eee8a4d83.png)
+![EMQ 物联网数据接入平台架构](https://assets.emqx.com/images/31113cabcf077ba6e8f4f16eee8a4d83.png)
 
 ## EMQX 对接 MatrixDB 具有以下四大优势：
 
@@ -43,7 +43,7 @@ EMQX 集群、MatrixDB 配置：
 
 ## 部署架构图
 
-![部署架构图](https://static.emqx.net/images/50a20795245eca1727291d00e98ec5d7.png)
+![部署架构图](https://assets.emqx.com/images/50a20795245eca1727291d00e98ec5d7.png)
 
 ## 测试方法
 
@@ -72,7 +72,7 @@ VALUES
 
 payload 为 json 格式，如下所示：
 
-![payload](https://static.emqx.net/images/2814c9c6d0ffe4d585b093fd10ea528f.png)
+![payload](https://assets.emqx.com/images/2814c9c6d0ffe4d585b093fd10ea528f.png)
 
 ## 规则引擎
 
@@ -80,13 +80,13 @@ payload 为 json 格式，如下所示：
 
 连接池大小32
 
-![连接池大小32](https://static.emqx.net/images/07bff69acb38621487c96f2b6695696c.png)
+![连接池大小32](https://assets.emqx.com/images/07bff69acb38621487c96f2b6695696c.png)
 
 ### 2、规则设置
 
 启用批量插入，最大批量数1000，异步插入
 
-![规则设置](https://static.emqx.net/images/07c9342bf5330dd63fb991f1785bfc3c.png)
+![规则设置](https://assets.emqx.com/images/07c9342bf5330dd63fb991f1785bfc3c.png)
 
 ## 测试结果
 
@@ -94,7 +94,7 @@ payload 为 json 格式，如下所示：
 
 从下图统计信息可以看出，EMQX 对接 MatrixDB 吞吐量达到了 21 万行/秒。
 
-![吞吐量](https://static.emqx.net/images/823baebd9ea5a10e7498e518467a2b4a.png)
+![吞吐量](https://assets.emqx.com/images/823baebd9ea5a10e7498e518467a2b4a.png)
 
 ### 2、机器资源消耗
 
@@ -119,3 +119,12 @@ payload 为 json 格式，如下所示：
 > **关于 MatrixDB**
 >
 > MatrixDB  是全球首款同时支持在线事务处理（OLTP）、在线分析处理（OLAP）和物联网时序应用的超融合型分布式数据库产品，具备严格分布式事务一致性、水平在线扩容、安全可靠、成熟稳定、可视化管理、兼容 PostgreSQL/Greenplum  协议和生态等重要特性。为万物互联的智能时代提供坚实、简洁的智能数据核心基础设施，为物联网应用、工业互联网、智能运维、智慧城市、实时数仓、智能家居、车联网等场景提供一站式高效解决方案。
+
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX Cloud
+        <div class="is-size-14 is-text-normal has-text-weight-normal">全托管的云原生 MQTT 消息服务</div>
+    </div>
+    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a >
+</section>

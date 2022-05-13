@@ -19,11 +19,11 @@ EMQX Cloud 专业版采用高冗余集群架构，以确保服务的高可用性
 3. 在对话框点击「确定」，完成删除。
 
 
-![单向 TLS/SSL 认证原理](https://static.emqx.net/images/800d703cf32d4d553cd6d77ff3778a31.png)
+![单向 TLS/SSL 认证原理](https://assets.emqx.com/images/800d703cf32d4d553cd6d77ff3778a31.png)
 
 <center>单向 TLS/SSL 认证原理</center>
 
-![双向 TLS/SSL 认证原理](https://static.emqx.net/images/8e48d965a059d44db0b9458823464619.png)
+![双向 TLS/SSL 认证原理](https://assets.emqx.com/images/8e48d965a059d44db0b9458823464619.png)
 
 <center>双向 TLS/SSL 认证原理</center>
 
@@ -53,7 +53,7 @@ EMQX Cloud 还支持 HTTP 自定义认证、MySQL、PostgreSQL 外部数据库�
 例如：您可以将用于测试环境及生产环境的部署分别存放在测试项目和生产项目下管理，同时赋予开发人员和测试人员不同项目的只读/修改权限，这样一来，开发人员及测试人员登陆控制台只可执行被赋予权限的操作，预防了诸如因误操作修改生产环境部署数据影响正常业务运转这类的问题。
 
  
-![多项目、多角色管理实现权限管理](https://static.emqx.net/images/5ac188426bb70ad17b6006c5d9e10f05.png)
+![多项目、多角色管理实现权限管理](https://assets.emqx.com/images/5ac188426bb70ad17b6006c5d9e10f05.png)
 
 
 ## 客户隐私数据安全保障

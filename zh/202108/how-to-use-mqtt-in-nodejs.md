@@ -175,14 +175,23 @@ npm start
 
 运行后我们可以看到控制的输出信息如下：
 
-![NodeJS MQTT 启动](https://static.emqx.net/images/9897e6cd56163dfe7139cf6d84361e63.png)
+![NodeJS MQTT 启动](https://assets.emqx.com/images/9897e6cd56163dfe7139cf6d84361e63.png)
 
 我们看到了客户端已经成功连接到 [MQTT 服务器](https://www.emqx.io/zh)并且订阅主题、接收和发布消息成功。此时我们再使用 [MQTT 5.0 客户端工具 - MQTT X](https://mqttx.app/zh) 作为另一个客户端进行消息收发测试。
 
-![MQTT 5.0 客户端工具 - MQTT X](https://static.emqx.net/images/5c841598f78eed0b186572165832f861.png)
+![MQTT 5.0 客户端工具 - MQTT X](https://assets.emqx.com/images/5c841598f78eed0b186572165832f861.png)
 
 可以看到控制台内打印出了 MQTT X 发送过来的消息。
 
-![控制台接收到 MQTT X 发送的消息](https://static.emqx.net/images/02d8a35312ca1309f18a628dacca8910.png)
+![控制台接收到 MQTT X 发送的消息](https://assets.emqx.com/images/02d8a35312ca1309f18a628dacca8910.png)
 
 至此，我们完成了使用 Node.js 来作为 MQTT 客户端连接到[公共 MQTT 服务器](https://www.emqx.com/zh/mqtt/public-mqtt5-broker)，并实现了测试客户端与 MQTT 服务器的连接、消息发布和订阅。
+
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX Cloud
+        <div class="is-size-14 is-text-normal has-text-weight-normal">全托管的云原生 MQTT 消息服务</div>
+    </div>
+    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a >
+</section>

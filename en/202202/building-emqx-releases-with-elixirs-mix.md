@@ -55,3 +55,11 @@ A custom step is simply a function that receives an [Elixir struct](https://hexd
 ## For the future: hot code upgrades
 
 One of the most characteristic features of Erlang is the support for hot code upgrades: upgrading code in a running node without taking down the VM.  It's one feature that EMQX users can use to upgrade their installations without disrupting their uptime.  Unfortunately, at the time of writing, Elixir [does not support](https://hexdocs.pm/mix/1.13.1/Mix.Tasks.Release.html#module-hot-code-upgrades) hot code upgrades out of the box.  That means that we'll need to do more work in order to support that in our Elixir releases.
+
+
+<section class="promotion">
+    <div>
+        Try EMQX Enterprise for Free
+    </div>
+    <a href="https://www.emqx.com/en/try?product=enterprise" class="button is-gradient px-5">Get Started →</a >
+</section>

@@ -24,7 +24,7 @@
 
 该方案可实现边缘端的工业协议解析、数据汇聚和流式分析，将通过流式分析的数据存入在边缘部署的轻量级时序数据库中，在边缘端运行的应用即可从时序数据库中获取和处理数据，呈现给最终用户；在边缘端运行的 `Edge Manager` 提供了一个管理控制台，可以很方便地实现软件配置和管理。
 
-![iiot_sol_1.jpg](https://static.emqx.net/images/27216751b3021928e075832638200834.jpg)
+![iiot_sol_1.jpg](https://assets.emqx.com/images/27216751b3021928e075832638200834.jpg)
 
 #### 适用场景
 
@@ -95,7 +95,7 @@
 
 该样例场景中，数据通过 Modbus TCP 协议，发出模拟的温度与湿度数据，这些数据进入系统后实现数据采集、汇聚、清洗、存储分析和可视化等能力，以下是在 Grafana 中呈现的温度与湿度的可视化报告。
 
-![edge_sol.png](https://static.emqx.net/images/75ddaac7e174e12137caa4433ca7e818.png)
+![edge_sol.png](https://assets.emqx.com/images/75ddaac7e174e12137caa4433ca7e818.png)
 
 
 
@@ -105,7 +105,7 @@
 
 这一方案与上述方案不同的地方在于 **引入云边协同的概念，** 通过底层类似于 KubeEdge/IEF 等边缘端基于容器应用的分发与编排能力，利用 KubeEdge/IEF 提供的云边管理通道，在云端可以对部署在边缘端的 Neuron、Edge 和 Kuiper 等实例进行集中管理，从而可以 **在云端实现对边缘端的数据采集、汇聚和分析逻辑等进行在线管理和更新。** 另外在云端，通过部署 EMQX Enterprise 分布式、高可用的集群功能，将分布在不同边缘端点的设备数据进行接入和分析处理。
 
-![iiot_sol_2.png](https://static.emqx.net/images/b2159860f854daaface005fbf339dcd7.png)
+![iiot_sol_2.png](https://assets.emqx.com/images/b2159860f854daaface005fbf339dcd7.png)
 
 #### 适用场景
 

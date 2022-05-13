@@ -52,7 +52,7 @@ $ docker run -d --name opentsdb -p 4242:4242 petergrace/opentsdb-docker
 
 Open EMQX Dashboard, enter the **Resources** page on the left menu, click the **New** button, select the OpenTSDB resource type and complete the related configuration to create the resources.
 
-![image20190725110536094.png](https://static.emqx.net/images/559e3c15ade4859fde9a4450a7ec44be.png)
+![image20190725110536094.png](https://assets.emqx.com/images/559e3c15ade4859fde9a4450a7ec44be.png)
 
 ### Create rules
 
@@ -60,7 +60,7 @@ Enter the **Rules** page on the left menu and click the **New** button to create
 
 After the trigger event is selected, we can see optional fields and sample SQL on the interface:
 
-![image20190719112141128.png](https://static.emqx.net/images/c7403006b9e6c66eb93147635fdec72a.png)
+![image20190719112141128.png](https://assets.emqx.com/images/c7403006b9e6c66eb93147635fdec72a.png)
 
 
 
@@ -83,7 +83,7 @@ WHERE
 
 With the SQL test feature, we can quickly confirm whether the SQL statement we just filled out can achieve our purpose. We firstly fill in the payload and other data for testing as follows:
 
-![image20190725110913878.png](https://static.emqx.net/images/36998b39ec573e870a02025ae4b75f16.png)
+![image20190725110913878.png](https://assets.emqx.com/images/36998b39ec573e870a02025ae4b75f16.png)
 
 Then click the **Test**  button, we get the following data output:
 
@@ -115,7 +115,7 @@ Click the **Add** button in the response action, select the  action of **Save Da
 
 Here we all use the default configuration, click the  **New** button to complete the rule creation.
 
-![image20190725111158382.png](https://static.emqx.net/images/5ccaba525195b33764e628aedbe0642f.png)
+![image20190725111158382.png](https://assets.emqx.com/images/5ccaba525195b33764e628aedbe0642f.png)
 
 
 
@@ -148,13 +148,13 @@ Switch to the **Tools ->  Websocket** page, use any information client to connec
   }
   ```
 
-![image20190725112738414.png](https://static.emqx.net/images/55010e5898747458016a572307f41272.png)
+![image20190725112738414.png](https://assets.emqx.com/images/55010e5898747458016a572307f41272.png)
 
 Click the **Send** button. After sending successfully, we can see that the number of hits of the current rule has changed to 1.
 
 Then, send a query request to OpenTSDB through Postman. When we get the following response, it means the new data point has been added successfully:
 
-![image20190725113422461.png](https://static.emqx.net/images/8f5bf630e3efebdad766a27d778dad82.png)
+![image20190725113422461.png](https://assets.emqx.com/images/8f5bf630e3efebdad766a27d778dad82.png)
 
 So far, we have implemented business development to store messages to the OpenTSDB database through the rule engine.
 

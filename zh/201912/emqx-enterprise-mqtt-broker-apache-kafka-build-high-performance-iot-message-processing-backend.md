@@ -2,7 +2,7 @@
 
 在各类物联网项目中，设备产生的消息不仅仅作用于设备之间，还需要供业务系统使用以实现如安全审计、流量计费、数据统计、通知触发等功能，类似很容易通过以下原型系统完成：
 
-![Artboard.png](https://static.emqx.net/images/e20e318b0a4c27eca8d1f66dac6254e7.png)
+![Artboard.png](https://assets.emqx.com/images/e20e318b0a4c27eca8d1f66dac6254e7.png)
 
 
 
@@ -85,7 +85,7 @@ kafka 有以下特性：
 
 该方案中集成 Kafka 为 EMQX 消息服务器与应用程序之间的消息传递提供消息队列与消息总线。生产者（EMQX）往队列末尾添加数据，每个消费者（业务环节）依次读取数据然后自行处理，这种架构兼顾了性能与数据可靠性，并有效降低系统复杂度、提升系统扩展性。该方案原型如下：
 
-![Artboard Copy 12.png](https://static.emqx.net/images/3d0fa8599ebec0f272ef9bb6a3185d01.png)
+![Artboard Copy 12.png](https://assets.emqx.com/images/3d0fa8599ebec0f272ef9bb6a3185d01.png)
 
 
 
@@ -233,7 +233,7 @@ kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic message_comm
 
 根据业务需求，需订阅门锁专属下行控制主题 `devices/{client_id}/command`，此处需订阅 `devices/10083618796833171/command` 主题并**设置 QoS = 1**：
 
-![image20191126150024089.png](https://static.emqx.net/images/0f345321939c4a4033508a6457a1cccc.png)
+![image20191126150024089.png](https://assets.emqx.com/images/0f345321939c4a4033508a6457a1cccc.png)
 
 
 
@@ -259,7 +259,7 @@ kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic message_comm
 
 下发成功后管理控制台 **Publish** 界面可以收到一条消息：
 
-![image20191126150044511.png](https://static.emqx.net/images/ee02694f902b7584ecb89f97293eb485.png)
+![image20191126150044511.png](https://assets.emqx.com/images/ee02694f902b7584ecb89f97293eb485.png)
 
 同时 Kafka `message_command` 主题消费者将收到一条或多条消息(**EMQX ack hooks 触发次数以实际收到消息客户端数量为准**)，消息为 JSON 格式，内容经格式化后如下：
 

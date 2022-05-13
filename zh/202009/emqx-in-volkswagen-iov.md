@@ -5,7 +5,7 @@
 
 从 2018 年上汽大众在设计研发新一代车联网系统时，SC 部门考虑到新型车联网大并发、低时延、高吞吐的场景需求，参考了国内外主流新型车联网系统架构，采用了基于 [MQTT](https://www.emqx.com/zh/mqtt) 协议建设新一代车联网平台。新的车联网平台需要有能力支撑上汽大众未来几年的车联网发展， **这就需要平台中的 [MQTT 消息中间件](https://www.emqx.com/zh/products/emqx) 具备支撑从百万到千万级别的车联网车机连接和数据传递的能力，** 业务覆盖车机数据上报、POI 下发、推送文件、下发配置、推送消息、运营关怀等车联网业务的支持。
 
-![1.jpeg](https://static.emqx.net/images/74feb63cc8309809382e65a841d9e8f5.jpeg)
+![1.jpeg](https://assets.emqx.com/images/74feb63cc8309809382e65a841d9e8f5.jpeg)
 
 在构建新平台对 MQTT 消息中间件选型过程中，SC 部门主要考虑了以下一些功能和性能上的要求：
 
@@ -36,14 +36,23 @@
 
 考虑到以上需求，经过长达一年多的大量不同产品的对比分析和功能性能测试， **上汽大众选择了 EMQX Enterprise 作为新一代车联网接入平台的物联网 MQTT 消息中间件。**
 
-![2.png](https://static.emqx.net/images/f4a466363c48f0018aecc91d6564f123.png)
+![2.png](https://assets.emqx.com/images/f4a466363c48f0018aecc91d6564f123.png)
 上汽大众车联网接入平台架构图
 
 EMQX 作为知名开源 MQTT 消息中间件项目，为 T-box 和移动设备提供了百万级到千万级的安全稳定接入能力以及低时延的数据处理能力。基于 EMQX Enterprise 的车联网接入层方案提供了包括 **数据持久化、南向消息缓存、安全连接与安全认证** 等功能，满足了上汽大众在新一代车联网建设的需求。
 
-![3.png](https://static.emqx.net/images/131d31c9c2cdafeea323a8254bd29fd3.png)
+![3.png](https://assets.emqx.com/images/131d31c9c2cdafeea323a8254bd29fd3.png)
 上汽大众车联网接入平台运维监控仪表盘
 
 今年，上汽大众新一代车联网平台上线，更多新车型陆续接入，平台车辆接入总量现已达数十万，并仍在不断增长，而平台始终保持着稳定的运行状态。至此，上汽大众新型车联网以及新车机系统在接入层的业务需求已经借助 EMQX 基本得到了满足。在此基础上，上汽大众也在积极调研基于新版本 EMQX 中提供的内置规则引擎与编解码能力，考虑将更多业务规则过滤与分发实现在消息中间件层，为上层应用的开发提供更加便捷的数据接口。
 
 在未来，上汽大众新一代车联网平台将不断接入品牌旗下其他汽油车以及新能源车等更多不同新车型，为上汽大众客户提供更加智能便利的人车交互体验，打造新一代人车社交平台。
+
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX Cloud
+        <div class="is-size-14 is-text-normal has-text-weight-normal">全托管的云原生 MQTT 消息服务</div>
+    </div>
+    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a >
+</section>

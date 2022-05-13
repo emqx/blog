@@ -6,7 +6,7 @@
 
 以下图片揭示了 MQTT 协议是如何运作的：
 
-![MQTT协议运作.png](https://static.emqx.net/images/0a32545afd5d82cd0988372700ab6bba.png)
+![MQTT协议运作.png](https://assets.emqx.com/images/0a32545afd5d82cd0988372700ab6bba.png)
 
 目前市场上有很多 MQTT 客户端 SDK，也有很多 [MQTT Broker](https://www.emqx.io/zh)。EMQX 和 RabbitMQ 是 Erlang 家族中具有代表性的两大开源消息服务器，我们接下来将针对 MQTT 场景对其进行深入对比。
 
@@ -34,7 +34,7 @@ RabbitMQ 是实现了高级消息队列协议（AMQP）的开源消息代理软�
 - MZController：从服务器产生的信息会进一步被传送到这里；
 - MZNodes：它们会作为 [MQTT 客户端](https://www.emqx.com/zh/blog/category/mqtt-client)来连入你的集群，如下图所示。
 
-![MZBench测试工具.png](https://static.emqx.net/images/3f2695191e1017c93fe8a2c73f759847.png)
+![MZBench测试工具.png](https://assets.emqx.com/images/3f2695191e1017c93fe8a2c73f759847.png)
 
 这次评测使用了一个云主机 M5 large 的实例，每个 MQTT 消息服务器集群由 3 个节点组成，每个节点的配置是双核，8GB 内存。需要强调的是，我们对于 EMQX 和 RabbitMQ 的测试使用了完全一致的硬件资源以消除变量。所有这些都配备了 Prometheus 节点导出器用于将指标推送到 Prometheus，并由 Grafana 进行最后的数据收集。
 
@@ -46,13 +46,13 @@ RabbitMQ 是实现了高级消息队列协议（AMQP）的开源消息代理软�
 
 许多设备作为发布者，如温度传感器或者是压力传感器，发送数据给一个服务器。服务器再将这些数据发送给一个控制器（即订阅者）处理这些数据。
 
-![测试场景多对一.png](https://static.emqx.net/images/542b8f4b662e0cd612c4f9aa2187b83f.png)
+![测试场景多对一.png](https://assets.emqx.com/images/542b8f4b662e0cd612c4f9aa2187b83f.png)
 
 #### 一对多
 
 一个控制器作为发布者将消息传送给服务器，再由服务器将这些消息传送给多个作为订阅者的设备。
 
-![测试场景一对多.png](https://static.emqx.net/images/df66fffee3d8775a81191448bbb8d6e1.png)
+![测试场景一对多.png](https://assets.emqx.com/images/df66fffee3d8775a81191448bbb8d6e1.png)
 
 在每个场景里，「多」的那一方的数量将会从 2000 个逐渐上升到 10000 个。每个场景里，每一秒会发送一条载荷为 256 字节的消息。这样的发布并不会造成过大的吞吐量。仅仅使用 256 字节载荷是为了展示出这两个服务器的工作原理，以及他们的集群模式如何对这些场景作出反应的。
 
@@ -64,12 +64,21 @@ RabbitMQ 是实现了高级消息队列协议（AMQP）的开源消息代理软�
 
 从 「多对一」 的结果可以看出，EMQX 和 RabbitMQ 相比并没有太大差别。
 
-![多对一测试结果.png](https://static.emqx.net/images/aa65dc91c40366b8cf78ee5333d433f6.png)
+![多对一测试结果.png](https://assets.emqx.com/images/aa65dc91c40366b8cf78ee5333d433f6.png)
 
 #### 一对多
 
 但是从「一对多」的结果来看，RabbitMQ 相比于 EMQX 确实有很明显的差距。
 
-![一对多测试结果.png](https://static.emqx.net/images/f6a014f85691501ce2f5679a7410fc42.png)
+![一对多测试结果.png](https://assets.emqx.com/images/f6a014f85691501ce2f5679a7410fc42.png)
 
 造成这种差距的原因是什么？我们将在《[EMQX 与 RabbitMQ 消息服务器 MQTT 性能对比（下）](https://www.emqx.com/zh/blog/emqx-or-rabbitmq-part-2)》中详细解析具体原因。
+
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX Cloud
+        <div class="is-size-14 is-text-normal has-text-weight-normal">全托管的云原生 MQTT 消息服务</div>
+    </div>
+    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a >
+</section>

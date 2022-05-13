@@ -32,13 +32,13 @@ MongoDB 集成支持 DNS SRV 和 TXT Records 解析，可以与 MongoDB Altas �
 
 现在用户能够直接在 Dashboard 上完成对客户端和主题的追踪操作，与指定客户端或主题相关的事件将被实时捕获到日志中，并且可以在 Dashboard 查看、下载和管理这些日志。这将极大改善用户自行排查、诊断客户端异常行为时的体验。
 
-![EMQX 日志追踪](https://static.emqx.net/images/36b6022f50682f5346121669254a5abd.png)
+![EMQX 日志追踪](https://assets.emqx.com/images/36b6022f50682f5346121669254a5abd.png)
 
 ### 支持慢订阅统计
 
 支持通过慢订阅统计功能及时发现生产环境中消息堵塞等异常情况，提高了用户对此类情况的感知能力，方便用户及时调整相关服务。
 
-![EMQX 慢订阅统计](https://static.emqx.net/images/4fb2f745e0f58962833442d3f2d630e6.png)
+![EMQX 慢订阅统计](https://assets.emqx.com/images/4fb2f745e0f58962833442d3f2d630e6.png)
 
 ## 更加适应行业需求
 
@@ -77,3 +77,11 @@ MongoDB 集成支持 DNS SRV 和 TXT Records 解析，可以与 MongoDB Altas �
  
 
 EMQX Enterprise 现提供 **14 天免费试用**，欢迎点击链接 [https://www.emqx.com/zh/try?product=enterprise](https://www.emqx.com/zh/try?product=enterprise) 下载最新版本，体验最新功能。在产品使用过程中如有任何建议，欢迎通过 [https://www.emqx.com/zh/contact](https://www.emqx.com/zh/contact) 在线提交表单，向我们反馈。
+
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX 企业版
+    </div>
+    <a href="https://www.emqx.com/zh/try?product=enterprise" class="button is-gradient px-5">开始试用 →</a >
+</section>

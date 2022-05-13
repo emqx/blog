@@ -201,13 +201,13 @@ We use Vue to write the following simple browser application. This application h
 
 The complete code for this project: [https://github.com/emqx/MQTT-Client-Examples/tree/master/mqtt-client-Vue.js](https://github.com/emqx/MQTT-Client-Examples/tree/master/mqtt-client-Vue.js)。
 
-![vueui.png](https://static.emqx.net/images/b6563b0eb66eb51a2a02776889016a18.png)
+![vueui.png](https://assets.emqx.com/images/b6563b0eb66eb51a2a02776889016a18.png)
 
 
 
 Use [MQTT 5.0 client tool - MQTT X](https://mqttx.app/) as another client to test messaging.
 
-![vuemqttx.png](https://static.emqx.net/images/2013cbab1bdffcae69b817bfebb4a33f.png)
+![vuemqttx.png](https://assets.emqx.com/images/2013cbab1bdffcae69b817bfebb4a33f.png)
 
 If you unsubscribe on the browser-side, before MQTT X sends the second message, the browser will not receive the subsequent messages from MQTT X.
 

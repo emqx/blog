@@ -4,7 +4,7 @@ Teknologi smart home, atau yang juga dikenal sebagai [home automation](https://i
 
 Hari ini, Anda akan mempelajari cara menggunakan [EMQX Cloud](https://www.emqx.com/en/cloud) untuk mengatur dan mengontrol smart home Anda. Artikel ini akan memperlihatkan Anda betapa gampangnya cara men-set up perangkat-perangkat IoT yang kita gunakan sehari-hari, sensor, dan protokol komunikasi yang kemudian dapat Anda terapkan ke lingkungan yang lebih kompleks.
 
-[![EMQX Cloud](https://static.emqx.net/images/96bda4a0efbeb977474da57f1c0a8edf.png)](https://www.emqx.com/en/cloud)
+[![EMQX Cloud](https://assets.emqx.com/images/96bda4a0efbeb977474da57f1c0a8edf.png)](https://www.emqx.com/en/cloud)
 
 
 
@@ -24,7 +24,7 @@ Dalam pola kode ini, saya akan menjelaskan cara menghubungkan sensor dan aktuato
 
 ## Alur Smart Home
 
-![image.png](https://static.emqx.net/images/ffc1e3b61af24c37b5ffa42dc44c12b6.png)
+![image.png](https://assets.emqx.com/images/ffc1e3b61af24c37b5ffa42dc44c12b6.png)
 
 
 1. Set up smart home Anda dengan 13 sensor dan aktuator yang terkoneksi dengan perangkat seperti Arduino.

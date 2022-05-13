@@ -33,7 +33,7 @@ The first two challenges can be well addressed by putting a load balancer in fro
 
 ## MQTT load balancing
 
-![MQTT load balancing](https://static.emqx.net/images/017284bd21723e22993d75f2305jjsjajs.png)
+![MQTT load balancing](https://assets.emqx.com/images/017284bd21723e22993d75f2305jjsjajs.png)
 
 <p align="center">MQTT load balancing</p>
 
@@ -58,3 +58,13 @@ In the next post of “MQTT broker clustering” series, we will use HAProxy 2.4
 
 - [MQTT broker clustering part 2: Sticky session load balancing](https://www.emqx.com/en/blog/mqtt-broker-clustering-part-2-sticky-session-load-balancing)
 - [MQTT broker clustering part 3: Challenges and Solutions of EMQX horizontal scalability](https://www.emqx.com/en/blog/mqtt-broker-clustering-part-3-challenges-and-solutions-of-emqx-horizontal-scalability)
+
+
+
+<section class="promotion">
+    <div>
+        Try EMQX Cloud for Free
+        <div class="is-size-14 is-text-normal has-text-weight-normal">A fully managed, cloud-native MQTT service</div>
+    </div>
+    <a href="https://www.emqx.com/en/signup?continue=https://cloud-intl.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">Get Started →</a >
+</section>

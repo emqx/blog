@@ -1,5 +1,3 @@
-# 使用微信小程序连接到部署
-
 微信小程序是腾讯于 2017 年 1 月 9 日推出的一种不需要下载安装即可在微信平台上使用的应用程序，用户扫一扫或者搜一下即可打开应用。也体现了“用完即走”的理念，用户不用关心是否安装太多应用的问题。应用将无处不在，随时可用，但又无需安装卸载。对于开发者而言，小程序开发门槛相对较低，难度不及 APP，能够满足简单的基础应用，对于用户来说，能够节约使用时间成本和手机内存空间，对于开发者来说也能节约开发和推广成本。
 
 本文主要介绍在微信小程序中使用 `MQTT.js` 连接到 [EMQX Cloud](https://www.emqx.com/zh/cloud) 部署，进行订阅、取消订阅、收发消息等功能。
@@ -12,11 +10,11 @@
    - 微信小程序仅支持通过 WebSocket 进行即时通信，EMQX Cloud 部署的 MQTT Over WebSocket 能够完全兼容使用在微信小程序上。因此在进行 MQTT 连接时，只能使用 wss 协议（**但是客户端连接代码中需要写成 wxs**）
    - 更多域名相关配置说明，请参阅微信官方文档：<https://developers.weixin.qq.com/miniprogram/dev/framework/ability/network.html>
 
-   ![设置小程序 socket 域名](https://static.emqx.net/images/wechat-host.png)
+   ![设置小程序 socket 域名](https://assets.emqx.com/images/wechat-host.png)
 
 2. 打开已经下载好了的微信开发者工具，在页面点击新建一个小程序项目，如下图所示：
 
-   ![创建微信小程序项目](https://static.emqx.net/images/wechat-create-program.png)
+   ![创建微信小程序项目](https://assets.emqx.com/images/wechat-create-program.png)
 
 ## 安装依赖
 
@@ -190,16 +188,16 @@ disconnect() {
 
 我们在小程序中简单编写了如下应用界面，该应用具备：创建连接、订阅主题、收发消息、取消订阅、断开连接等功能。
 
-<img src="https://static.emqx.net/images/wechat-overview.png"
+<img src="https://assets.emqx.com/images/wechat-overview.png"
 alt="小程序概览页面" style="zoom:50%;" />
 
 小程序进行连接并订阅主题 testtopic/miniprogram 之后，使用 [MQTT 5.0 客户端工具 - MQTT X](https://mqttx.app/zh) 作为另一个客户端订阅主题 testtopic/# 并发送一条消息到主题 testtopic/miniprogram
 
-![使用 MQTT X 发送消息](https://static.emqx.net/images/wechat-mqttx.png)
+![使用 MQTT X 发送消息](https://assets.emqx.com/images/wechat-mqttx.png)
 
 可以看到 MQTT X 可以正常接收来到来自小程序发送过来的消息，同样，使用 MQTT X 向该主题发送一条消息时，也可以看到小程序能正常接收到该消息。
 
-<img src="https://static.emqx.net/images/wechat-receive-msg.png"
+<img src="https://assets.emqx.com/images/wechat-receive-msg.png"
 alt="小程序接收消息" style="zoom:50%;" />
 
 ## 更多内容

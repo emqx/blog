@@ -12,7 +12,7 @@ EMQX 开源版 v4.3.14、v4.4.3 与企业版 v4.3.9、v4.4.3 四个维护版本�
 
 规则的使用统计指标反馈了业务负载情况，用户可以在排除规则故障、升级服务器规格之后希望重新开始统计规则执行数量与执行速度等指标，以便查看调整后的运行效果。
 
-![在 Dashboard 中重置规则统计指标](https://static.emqx.net/images/b580154abf7a6f889a3761908c3713b4.png)
+![在 Dashboard 中重置规则统计指标](https://assets.emqx.com/images/b580154abf7a6f889a3761908c3713b4.png)
 
 <center>在 Dashboard 中重置规则统计指标</center>
 
@@ -69,7 +69,7 @@ FROM "t/#"
 
 编解码是规则引擎中的 UDF（用户自定义函数）能够扩展规则 SQL 函数，本次更新我们提供了 gRPC 通道，相比 HTTP 能够以更低的开销完成相同的需求，在 16 核 32GB 的服务器上，能够稳定实现 20K/s 的调用处理。
 
-![gRPC 编解码性能测试 CPU 负载情况](https://static.emqx.net/images/ebf05f5c8619d6e30d1ea5b85e0b7918.png)
+![gRPC 编解码性能测试 CPU 负载情况](https://assets.emqx.com/images/ebf05f5c8619d6e30d1ea5b85e0b7918.png)
 
 <center>gRPC 编解码性能测试 CPU 负载情况</center>
 
@@ -87,7 +87,7 @@ ExHook 允许用户使用其它编程语言（例如：Python、Java 等）直�
 
 - 对于企业版用户，可以在 模块 中使用 Web 界面设置 ExHook 优先级；
 
-  ![使用 Web 界面设置 ExHook 优先级](https://static.emqx.net/images/fe86ca9b49c4c125c2deb73919b7ec07.png)
+  ![使用 Web 界面设置 ExHook 优先级](https://assets.emqx.com/images/fe86ca9b49c4c125c2deb73919b7ec07.png)
 
 - 对于开源版用户，emqx_exhook 插件的优先级配置项如下：
 
@@ -125,3 +125,11 @@ broker.your_group.shared_subscription_strategy = local
 - 开源版 v4.4.3：https://www.emqx.com/zh/changelogs/broker/4.3.14
 - 企业版 v4.3.9：https://www.emqx.com/zh/changelogs/enterprise/4.3.9
 - 企业版 v4.4.3：https://www.emqx.com/zh/changelogs/enterprise/4.3.9
+
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX 企业版
+    </div>
+    <a href="https://www.emqx.com/zh/try?product=enterprise" class="button is-gradient px-5">开始试用 →</a >
+</section>

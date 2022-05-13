@@ -47,3 +47,11 @@ Neuron 2.0 已经有了完整的单元测试，每个独立的模块都有对应
 | 三菱FX5U                  |
 
 敬请关注 Neuron 的后续进展。
+
+
+<section class="promotion">
+    <div>
+        免费试用 Neuron
+    </div>
+    <a href="https://www.emqx.com/zh/try?product=neuron" class="button is-gradient px-5">开始试用 →</a >
+</section>

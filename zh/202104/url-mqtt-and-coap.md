@@ -2,7 +2,7 @@
 
 但有别于传统互联网，端到端的沟通，一直是物联网业务的难点。使用的物联网通讯协议不同，使得这些设备之间的沟通存在巨大的鸿沟。就好比人与人之间语言不同，无法正常的交流。
 
-![image20210410180639347.png](https://static.emqx.net/images/6e9b97f0ab7f852eda6f6c9e91d44c7c.png)
+![image20210410180639347.png](https://assets.emqx.com/images/6e9b97f0ab7f852eda6f6c9e91d44c7c.png)
 EMQX Broker 作为物联网消息中间件，则肩负着促成这些设备提供沟通交流的使命。为此，我们开发了很多物联网协议插件，无论你偏爱煲电话粥式的热情（基于 TCP 长链接，比如 MQTT），还是一字一句书信的温情（基于 UDP 无连接，比如 CoAP），或是你有一套属于自己的「暗语」（私有协议），在 EMQX 的世界，我们都能帮你找到能读懂你的「soulmate」。
 
 > 关于 MQTT 协议：https://www.jianshu.com/p/ecde412d2eeb
@@ -18,7 +18,7 @@ EMQX Broker 作为物联网消息中间件，则肩负着促成这些设备提�
 关于如何安装和启动 EMQX Broker，你可以在[这里](https://docs.emqx.cn/broker/v4.3/getting-started/install.html)找到帮助。
 
 打开 Dashboard，点击左侧插件，右侧搜索 CoAP ，点击启动，运行 `CoAP 插件`（ 默认端口 5683 ）。
-![image20210412152259272.png](https://static.emqx.net/images/66a3ec26f6ef7baedb9fb7e22b0cdf5d.png)
+![image20210412152259272.png](https://assets.emqx.com/images/66a3ec26f6ef7baedb9fb7e22b0cdf5d.png)
 ​	
 
 MQTT 的 `PUB/SUB` 模型中，为了实现端到端通讯，需要设备之间通过 `topic` 作为桥梁，我们使用 `coap_to_mqtt` 和  `mqtt_to_coap`两个 `topic` ，分别作为 CoAP 到 MQTT 的消息 `topic` ，和 MQTT 到 CoAP 的消息 `topic` 。
@@ -60,7 +60,7 @@ get "coap://host:port/mqtt/$topic?c=$client&u=$username&p=$password"
 
 将 MQTT X（EMQ 旗下开源 MQTT 桌面客户端）连接至你的 EMQX Broker，并为它订阅主题 `coap_to_mqtt`。
 
-![image20210410173501967.png](https://static.emqx.net/images/161b58e547d1e123491c85dd3e18424a.png)
+![image20210410173501967.png](https://assets.emqx.com/images/161b58e547d1e123491c85dd3e18424a.png)
 
 
 
@@ -104,7 +104,7 @@ make
 
 我们可以看到 MQTT X 收到了来自 CoAP 的问候。
 
-![image20210412165307589.png](https://static.emqx.net/images/d9f62c3d50866c9f6c01ebf4f369ad16.png)
+![image20210412165307589.png](https://assets.emqx.com/images/d9f62c3d50866c9f6c01ebf4f369ad16.png)
 
 
 
@@ -119,7 +119,7 @@ make
 
 MQTT X 发送 `hello coap, I am mqtt welcome to EMQX Wrold!`  至 `mqtt_to_coap` 主题。
 
-![image20210412165434332.png](https://static.emqx.net/images/966dc4195705ae31e41842261fc7b164.png)
+![image20210412165434332.png](https://assets.emqx.com/images/966dc4195705ae31e41842261fc7b164.png)
 
 
 
@@ -137,3 +137,13 @@ hello coap , I am mqtt ,welcome to EMQ World
 
 
 在 EMQX World，不仅有 MQTT、CoAP、LWM2M、JT808 以及未来将支持的更多不同物联网协议插件，同时我们也为你提供了[插件的开发模板](https://github.com/emqx/emqx-plugin-template)。我们期待在这里，所有的物联网设备都能相会，碰撞出耀眼的火花，照亮物联网的世界。
+
+
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX Cloud
+        <div class="is-size-14 is-text-normal has-text-weight-normal">全托管的云原生 MQTT 消息服务</div>
+    </div>
+    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a >
+</section>

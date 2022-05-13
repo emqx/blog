@@ -82,3 +82,12 @@
 **在** **8** **核** **CPU、16 GB** **内存的情况下，达到每秒** **20k TPS**
 
 Exhook ( emqx-exhook ) 是 EMQX 的一个插件。它的主要目的是通过 gRPC 转发所有钩子事件到用另一种语言实现的服务器上，大大提高了 EMQX 的可扩展性。最近的基准在 8 核 CPU、16 GB 内存的情况下，达到了每秒 20K TPS。
+
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX Cloud
+        <div class="is-size-14 is-text-normal has-text-weight-normal">全托管的云原生 MQTT 消息服务</div>
+    </div>
+    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a >
+</section>

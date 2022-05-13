@@ -6,7 +6,7 @@ EMQX Enterprise 适用于各种物联网应用场景，助力企业快速构建�
 
 下载：无需提供任何信息， 立即[下载试用](https://www.emqx.com/zh/try?product=enterprise)
 
-![enterprisemqttbroker.png](https://static.emqx.net/images/4b87d5ae6dc17bb84f6414e4d8fc504c.png)
+![enterprisemqttbroker.png](https://assets.emqx.com/images/4b87d5ae6dc17bb84f6414e4d8fc504c.png)
 
 ## 概览
 
@@ -66,7 +66,7 @@ Oracle、MS SQL Server 均是商业关系型数据库阵营中的杰出代表，
 
 此次更新后，用户可以决定是否在动作上启用批处理功能来规避以上问题。
 
-![1.png](https://static.emqx.net/images/32a742d0794b9027561bb05972b86b06.png)
+![1.png](https://assets.emqx.com/images/32a742d0794b9027561bb05972b86b06.png)
 
 
 
@@ -78,7 +78,7 @@ LwM2M 是由 Open Mobile Alliance(OMA) 定义的一套适用于物联网的轻�
 
 EMQX-LwM2M 实现了 LwM2M 的大部分功能，应用程序和 [MQTT 客户端](https://www.emqx.com/zh/mqtt-client-sdk)可以通过 EMQX-LwM2M 访问支持 LwM2M 的设备，设备也可以往 EMQX-LwM2M 上报 notification，实现数据双向通信。
 
-![image20201208112020883.png](https://static.emqx.net/images/0833d7b92d6ac8814dac5e19fd0e59e5.png)
+![image20201208112020883.png](https://assets.emqx.com/images/0833d7b92d6ac8814dac5e19fd0e59e5.png)
 
 EMQX v4.2.2 中，用户可以通过 Dashboard 可视化界面与 REST API 单独管理 LwM2M 连接，获取 Lw 连接的 IMEI、LifeTime、objectList 等信息，帮助企业快速实现安全可靠的设备互联、IoT 平台及垂直行业应用开发。
 
@@ -109,3 +109,11 @@ EMQX 可以向用户自定义的认证 HTTP 服务发起请求，查询认证与
 ### 联系
 
 如果对 EMQX 企业版有任何问题，请随时通过 [contact@emqx.io](mailto:contact@emqx.io) 与我们联系。
+
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX 企业版
+    </div>
+    <a href="https://www.emqx.com/zh/try?product=enterprise" class="button is-gradient px-5">开始试用 →</a >
+</section>

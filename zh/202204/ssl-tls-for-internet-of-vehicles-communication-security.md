@@ -70,7 +70,7 @@ MQTTS 协议是在 [MQTT 协议](https://www.emqx.com/zh/mqtt)的基础上，封
 2. 所有数据交互时通过终端的身份唯一标识证明身份的真实性，防止第三方恶意入侵；
 3. 基于数字证书安全功能，提供身份鉴别、身份认证、数据加解密、数字签名与验签等多种功能，满足车联网中 TSP、OTA 等多业务安全需求。
 
-![车联网安全](https://static.emqx.net/images/ae6d7f4cf72a1aa4cb16af4be388c565.png)
+![车联网安全](https://assets.emqx.com/images/ae6d7f4cf72a1aa4cb16af4be388c565.png)
 
 车联网平台安全通信交互流程，一般是将车机端申请终端证书，下载并完整安装后通过 MQTTS 安全协议与云端平台请求建立安全连接。在云端我们可以选择在云厂商的负载均衡产品、基于 Nginx/HAProxy 自行搭建的 LB 层或是 MQTT Broker 层进行认证鉴权，同时通过 proxy_protocol v2 将车机端的 ID 信息、用户名密码及证书的 CN/SN 等信息通过调用 PKI/CA 统一认证接口进行唯一性认证，实现一机一密或一型一密的安全认证。
 
@@ -201,3 +201,11 @@ ssl:connect("zhouzb.club", 8883, [{cacertfile, "etc/certs/zhouzb.club/DigiCertGl
 - [车联网平台搭建从入门到精通 04 | MQTT QoS 设计：车联网平台消息传输质量保障](https://www.emqx.com/zh/blog/mqtt-qos-design-for-internet-of-vehicles)
 
 - [车联网平台搭建从入门到精通 05 | 车联网平台百万级消息吞吐架构设计](https://www.emqx.com/zh/blog/million-level-message-throughput-architecture-design-for-internet-of-vehicles)
+
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX 企业版
+    </div>
+    <a href="https://www.emqx.com/zh/try?product=enterprise" class="button is-gradient px-5">开始试用 →</a >
+</section>

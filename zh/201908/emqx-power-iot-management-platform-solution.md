@@ -21,13 +21,13 @@
 
   智慧物联体系建设重点包括物联管理平台、边缘物联代理以及各类型终端的标准化接入。通过智慧物联体系建设，实现“边端分离、边管共用”。 从功能需求角度分析，电力物联管理平台需要能够提供云-边结合的统一平台服务，包括统一的连接管理、设备管理、数据管理、应用管理、标识管理等服务，使互联设备可以方便、安全地与业务应用及其他设备交互。同时由于电力设备数量庞大，平台需要具有支持百万级设备接入、亿级消息处理并将其安全可靠地转发至企业中台和业务系统的能力。
 
-![Artboard Copy.jpg](https://static.emqx.net/images/4ff463d1d0e3fe92afb195be5cd8b743.jpg)
+![Artboard Copy.jpg](https://assets.emqx.com/images/4ff463d1d0e3fe92afb195be5cd8b743.jpg)
 
 ## EMQX解决方案
 
    EMQX Enterprise作为电力物联网系统中物联网管理平台设备接入与数据处理的核心模块，能够基于任意网络（电力专网、运营商网络、卫星网络）接入任意协议的电力设备，实现电力各类终端设备的即插即用，为各类企业数据与业务中台提供设备接入、数据存储、数据共享与数据清洗能力。
 
-![Artboard.jpg](https://static.emqx.net/images/fa8ebec89317a46e552c95acfdb043ed.jpg)
+![Artboard.jpg](https://assets.emqx.com/images/fa8ebec89317a46e552c95acfdb043ed.jpg)
 
    方案优势：
 

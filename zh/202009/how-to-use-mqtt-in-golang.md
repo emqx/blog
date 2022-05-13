@@ -225,7 +225,7 @@ func sub(client mqtt.Client) {
 
 运行代码，可以看到 MQTT 连接、订阅成功，并能成功收到订阅 topic 的消息
 
-![gomqtt.png](https://static.emqx.net/images/96122f5d90e7e2f57be97ed266b1a689.png)
+![gomqtt.png](https://assets.emqx.com/images/96122f5d90e7e2f57be97ed266b1a689.png)
 
 
 
@@ -234,3 +234,13 @@ func sub(client mqtt.Client) {
 至此，我们完成了使用 **paho.mqtt.golang** 客户端连接到 [公共 MQTT 服务器](https://www.emqx.com/zh/mqtt/public-mqtt5-broker)，并实现了测试客户端与 MQTT 服务器的连接、消息发布和订阅。
 
 接下来我们将会陆续发布更多关于物联网开发及 MQTT 的相关文章，敬请关注。
+
+
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX Cloud
+        <div class="is-size-14 is-text-normal has-text-weight-normal">全托管的云原生 MQTT 消息服务</div>
+    </div>
+    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a >
+</section>

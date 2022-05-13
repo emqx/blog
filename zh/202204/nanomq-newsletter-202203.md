@@ -264,3 +264,11 @@ $ curl -i --basic -u admin:public -X POST "http://localhost:8081/api/v1" -d '{"r
 ## 其他动态
 
 NanoMQ 0.7.0 版本将会引入 SQLite 作为 QoS+ 会话保持/消息持久化缓存的选项。敬请关注。
+
+
+<section class="promotion">
+    <div>
+        免费试用 NanoMQ
+    </div>
+    <a href="https://www.emqx.com/zh/try?product=nanomq" class="button is-gradient px-5">开始试用 →</a >
+</section>

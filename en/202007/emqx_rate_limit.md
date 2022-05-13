@@ -36,7 +36,7 @@ This configuration locate on `emqx.conf`:
 
 The `publish_limit` and `rate_limit` we mentioned are implemented by **the token bucket algorithm**. The algorithm logic is as follows:
 
-![640.png](https://static.emqx.net/images/bdd78b66b89f5e574da68623f3ae39ed.png)
+![640.png](https://assets.emqx.com/images/bdd78b66b89f5e574da68623f3ae39ed.png)
 
 1. There is a bucket of a token that can hold up the number of `burst` at most.
 2. We will add tokens into this bucket at a rate of N per second. If the bucket is full, no more tokens are added to this bucket. We call this rate as `rate`.
@@ -57,7 +57,7 @@ All in all, it can be simply understood as `rate` is the average request rate an
 
 Based on the *token bucket* algorithm, EMQX's implementation logic for rate limit is as follows:
 
-![画板1232x.jpg](https://static.emqx.net/images/874ae38a1c06a8919d2109d148adf177.jpg)
+![画板1232x.jpg](https://assets.emqx.com/images/874ae38a1c06a8919d2109d148adf177.jpg)
 
 Its meaning is:
 
@@ -109,3 +109,12 @@ The maximum connection number that exists at the same time allowed, namely the m
 `listener.tcp.external.max_conn_rate = 1000`
 
 The maximum number of concurrent connections allowed per second.
+
+
+<section class="promotion">
+    <div>
+        Try EMQX Cloud for Free
+        <div class="is-size-14 is-text-normal has-text-weight-normal">A fully managed, cloud-native MQTT service</div>
+    </div>
+    <a href="https://www.emqx.com/en/signup?continue=https://cloud-intl.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">Get Started →</a >
+</section>

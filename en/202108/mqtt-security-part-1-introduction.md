@@ -1,6 +1,6 @@
 In this post, we will introduce [MQTT broker](https://www.emqx.com/en/products/emqx) security concepts and challenges, as well as how EMQX handles security at a relatively high level. We assume that you are already familiar with the basics of the [MQTT protocol](https://www.emqx.com/en/mqtt).
 
-![MQTT Security](https://static.emqx.net/images/ae70590c49a9f31653af992bbef87578.png)
+![MQTT Security](https://assets.emqx.com/images/ae70590c49a9f31653af992bbef87578.png)
  
 
 In general, information security is a set of practices designed to keep data secure from unauthorised access or alterations. When discussing information security in general, it quite often involves both when data being stored and being transmitted from one machine or place to another. MQTT is an information exchange protocol, so in this post, we will focus on the security for information transmission.
@@ -32,3 +32,13 @@ With regards to confidentiality and integrity, since MQTT is a protocol working 
   Although not commonly adopted, but there is nothing stopping users to encrypt MQTT payload itself when there is a lack of lower level security, or when it’s necessary to provide an extra layer of security integrating with other less secured network components. This is not in the scope of our discussion in detail though.
 
 When it comes to Availability, we will share a few case studies on how to protect the system from malicious clients in future posts.
+
+
+
+<section class="promotion">
+    <div>
+        Try EMQX Cloud for Free
+        <div class="is-size-14 is-text-normal has-text-weight-normal">A fully managed, cloud-native MQTT service</div>
+    </div>
+    <a href="https://www.emqx.com/en/signup?continue=https://cloud-intl.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">Get Started →</a >
+</section>

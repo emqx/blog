@@ -6,7 +6,7 @@ Kuiper 0.4.1 now is [available for download](https://github.com/emqx/kuiper/rele
 
 EMQX Kuiper is an edge lightweight IoT data analytics / streaming software implemented by Golang, and it can be run at all kinds of resource constrained edge devices. One goal of Kuiper is to migrate the cloud streaming software frameworks (such as [Apache Spark](https://spark.apache.org/)，[Apache Storm](https://storm.apache.org/) and [Apache Flink](https://flink.apache.org/)) to edge side. Kuiper references these cloud streaming frameworks, and also considered special requirement of edge analytics, and introduced **rule engine**, which is based on `Source`, `SQL (business logic)` and `Sink`, rule engine is used for developing streaming applications at edge side.
 
-![arch.png](https://static.emqx.net/images/9f804aa223924cf4460028c6f6cd3957.png)
+![arch.png](https://assets.emqx.com/images/9f804aa223924cf4460028c6f6cd3957.png)
 
 This release includes several new features and bug fixes.
 

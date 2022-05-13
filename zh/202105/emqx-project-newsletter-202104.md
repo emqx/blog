@@ -39,3 +39,12 @@ Rlog 的最新进展已在 Demo Day 中进行了演示（视频回放：[https:/
 
 - [askemq.com](https://askemq.com) 社区的周 PV 已经达到了 5000，越来越多的用户选择在 askemq.com 交流讨论，我们也看到有很多热心的社区伙伴与我们的工程师一起参与社区支持，对此我们感到欣慰与振奋。
 - 在过去两个月，EMQ 各项目团队陆续开展了包括 Demo Day（项目最新进展分享）、Open Day（项目改进建议与长期发展规划的讨论）、Sharing Day（技术知识分享） 在内的社区活动，EMQX 团队也积极参与其中。目前为止已成功举办多期，与众多社区成员进行了分享交流。未来的活动预告信息将在 EMQ 官网活动页面中发布。回放视频将发布在 EMQ 官方 B 站账号（EMQ-映云科技）。
+
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX Cloud
+        <div class="is-size-14 is-text-normal has-text-weight-normal">全托管的云原生 MQTT 消息服务</div>
+    </div>
+    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a >
+</section>

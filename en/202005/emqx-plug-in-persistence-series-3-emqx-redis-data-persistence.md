@@ -14,7 +14,7 @@ The principle of persistence is to call the processing function (action) when th
 
 ### One-to-one message storage
 
-![backends_1.png](https://static.emqx.net/images/0edbae21eb4896cb464dee52e7d3ce5b.png)
+![backends_1.png](https://assets.emqx.com/images/0edbae21eb4896cb464dee52e7d3ce5b.png)
 
 1. PUB publishes a message;
 2. Backend records the message in the database;
@@ -27,7 +27,7 @@ The principle of persistence is to call the processing function (action) when th
 
 ### One-to-many message storage
 
-![backends_2.png](https://static.emqx.net/images/f275b5024c3abf8102b388817c0cc134.png)
+![backends_2.png](https://assets.emqx.com/images/f275b5024c3abf8102b388817c0cc134.png)
 
 1. PUB publishes a message;
 
@@ -100,7 +100,7 @@ backend.redis.hook.client.disconnected.1 = {"action": {"function": "on_client_di
 
 Open  `http://127.0.0.1:18083` EMQX management console from the browser, and create a new client connection in **Tools** -> **Websocket**, specifying clientid as sub_client:
 
-![31.png](https://static.emqx.net/images/26b00b949463fe0c824c70342f90d04a.png)
+![31.png](https://assets.emqx.com/images/26b00b949463fe0c824c70342f90d04a.png)
 
 Open the `redis-cli` command line window and execute the command `keys *`. The result is as shown below. The reader can see that Redis store two keys:
 
@@ -190,7 +190,7 @@ When the `sub_client` device goes online, it needs to subscribe the two QoS 1 to
 
 2. In the EMQX management console **websocket** page, create a new client connection by using the clientid `sub_client`  and switch to the **subscription** page. It can be seen that the current client automatically subscribes the two QoS 1 topics (`sub_client/upstream` and `sub_client/downlink`):
 
-![111111.png](https://static.emqx.net/images/f1c77641b0ed3cd43c20173002351bc6.png)
+![111111.png](https://assets.emqx.com/images/f1c77641b0ed3cd43c20173002351bc6.png)
 
 
 
@@ -294,7 +294,7 @@ The MQTT offline message need to meet the following conditions:
 
 Establish a connection in the EMQX management console with the following configuration:
 
-![WX20200515175900.png](https://static.emqx.net/images/9cfc2151a8641d0d2697ad0baef2c57b.png)
+![WX20200515175900.png](https://assets.emqx.com/images/9cfc2151a8641d0d2697ad0baef2c57b.png)
 
 
 

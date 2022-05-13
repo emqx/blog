@@ -14,13 +14,13 @@ EMQX Cloud uses the relevant information of the current client as parameters in 
 
 Log in to EMQX Cloud, click 「Authentication」 - 「Custom Authentication」 on the left side of the deployment, and click 「Configure Authentication」 in the initial interface to start configuring HTTP custom authentication.
 
-![EMQX Cloud Custom Authentication](https://static.emqx.net/images/672d005471596e849e272b43238722f7.png)
+![EMQX Cloud Custom Authentication](https://assets.emqx.com/images/672d005471596e849e272b43238722f7.png)
 
 During authentication, EMQX Cloud will use the current client information to fill in and initiate an authentication query request configured by the user to query the authentication data of the client on the HTTP server.
 
 Configure the required parameters for permission authentication on the form page, including authentication request address, authentication request parameters, HTTP request method, and request content type. If there are no special requirements for other parameters, the default values can be used.
 
-![EMQX Cloud Custom Authentication](https://static.emqx.net/images/ceee628523326555164a6b2306c67d14.png)
+![EMQX Cloud Custom Authentication](https://assets.emqx.com/images/ceee628523326555164a6b2306c67d14.png)
  
 
 > Note:
@@ -41,11 +41,20 @@ We have also made a lot of optimizations in the overall usage process of EMQX Cl
 
 EMQX Cloud Quick Start optimization
 
-![EMQX Cloud Quick Start](https://static.emqx.net/images/1d4e40de79b6d643f4832e8a79f13b1d.png)
+![EMQX Cloud Quick Start](https://assets.emqx.com/images/1d4e40de79b6d643f4832e8a79f13b1d.png)
  
 Help document structure optimization
 
-![EMQX Cloud document structure optimization](https://static.emqx.net/images/b1374ed17cb9c4cce11e78190b0cef8e.png)
+![EMQX Cloud document structure optimization](https://assets.emqx.com/images/b1374ed17cb9c4cce11e78190b0cef8e.png)
  
 
 Through more friendly interaction processes and more complete product functions, EMQX Cloud will efficiently connect your massive IoT devices and help you quickly build an IoT platform and accelerate IoT application development.
+
+
+<section class="promotion">
+    <div>
+        Try EMQX Cloud for Free
+        <div class="is-size-14 is-text-normal has-text-weight-normal">No credit card required</div>
+    </div>
+    <a href="https://www.emqx.com/en/signup?continue=https://cloud-intl.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">Get Started →</a >
+</section>

@@ -11,7 +11,7 @@ From v4.1, [EMQX MQTT broker](https://www.emqx.com/en/products/emqx) provides th
 
 Python and Java drivers are based on the processes [Erlang/OTP-Port](https://erlang.org/doc/tutorial/c_port.html) to implement communication, and have very high throughput performance. This article will take Java expansion as an example to introduce how to use EMQX cross-language expansion.
 
-![upeb67488ae758908b02ac8567c37fcf2d0a9.png](https://static.emqx.net/images/6a850a46211aa6f3c85cdab9bb2d8d77.png)
+![upeb67488ae758908b02ac8567c37fcf2d0a9.png](https://assets.emqx.com/images/6a850a46211aa6f3c85cdab9bb2d8d77.png)
 
 
 
@@ -214,3 +214,12 @@ public interface CommunicationHandler {
 - Method `deinit()`: for logout
 
 For the detailed introduction of data format, please refer to [the design documentation](https://github.com/emqx/emqx-extension-hook/blob/master/docs/design.md).
+
+
+<section class="promotion">
+    <div>
+        Try EMQX Cloud for Free
+        <div class="is-size-14 is-text-normal has-text-weight-normal">No credit card required</div>
+    </div>
+    <a href="https://www.emqx.com/en/signup?continue=https://cloud-intl.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">Get Started →</a >
+</section>

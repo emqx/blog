@@ -37,3 +37,12 @@ We have been doing 3 tracks of open-source events. The events are held offline a
 - Demo Day. After each sprint, we present our achievements in the past tow to three weeks, so users/developers in the community can follow up closely with EMQX development. Please find the details about pas and future demos here in this [GitHub Discussion thread](https://github.com/emqx/emqx/discussions/4463).
 - Sharing Day. From time to time, we do knowledge sharing presentations within the teams. Community developers and users are also welcome to join. Sharing is caring, and open-source is all abut sharing, learn and succeed together are our initial and final goal.
 - Open Day. From time to time, we invite users/developers to share our and their ideas in how to improve EMQX. Such as new features, long term evolution plans etc.
+
+
+<section class="promotion">
+    <div>
+        Try EMQX Cloud for Free
+        <div class="is-size-14 is-text-normal has-text-weight-normal">No credit card required</div>
+    </div>
+    <a href="https://www.emqx.com/en/signup?continue=https://cloud-intl.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">Get Started →</a >
+</section>

@@ -50,3 +50,11 @@ e.g. In a rebar3 project, after the code is compiled, you should be able to find
 Please note though, if a dependency application is included in the EMQX release package, it should not be installed to external plugin dir. 
 
 You can list `$INSTALL_DIR/lib/` directory to find all the applications released in the EMQX package.
+
+
+<section class="promotion">
+    <div>
+        Try EMQX Enterprise for Free
+    </div>
+    <a href="https://www.emqx.com/en/try?product=enterprise" class="button is-gradient px-5">Get Started →</a >
+</section>

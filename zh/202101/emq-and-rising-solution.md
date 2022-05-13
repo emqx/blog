@@ -32,7 +32,7 @@
 
 在去年的数字矿山项目中，为了实现卡车与挖机之间的智能调度，华兴科技尝试引入了 EMQ 开源版物联网消息中间件 **EMQX Broker** ，通过 WebHook 插件的方式实现了与现有业务的深度集成。在此过程中，EMQX Broker 的易用性、扩展性与稳定性得到了华兴数字科技互联网研究所的认可。
 
-![数据上行架构图.png](https://static.emqx.net/images/302199258e1bea8b48f847daeab0afbb.png)
+![数据上行架构图.png](https://assets.emqx.com/images/302199258e1bea8b48f847daeab0afbb.png)
 
 ​                                                                                   数据上行架构图
 
@@ -54,7 +54,7 @@
 
 
 
-![数据上下行整合架构图.png](https://static.emqx.net/images/836e41f965ca1f76a0e82d939defa8e5.png)
+![数据上下行整合架构图.png](https://assets.emqx.com/images/836e41f965ca1f76a0e82d939defa8e5.png)
 ​                                                                                        数据下行架构图
 
 EMQX 企业版不仅为华兴科技提供了软件层面的调优与更多数据量的接入，更通过自身独特的功能—— **规则引擎**，帮助技术团队进一步实现了相比于开源版更加强大的功能：
@@ -85,9 +85,18 @@ App 上订阅具体设备的具体工况信息，且在有更新时实时推送�
 
 在下一期的改造中，华兴科技将整合上下行数据，将整体的数据通道依托于 EMQX，实现更加统一与完善的数据采集与推送服务，从而加快数字化转型创新步伐。
 
-![数据上下行整合架构图.png](https://static.emqx.net/images/d7e92a28099694404bb0309ba74c013e.png)
+![数据上下行整合架构图.png](https://assets.emqx.com/images/d7e92a28099694404bb0309ba74c013e.png)
 ​                                                                                 数据上下行整合架构图
 
  
 
 作为一家传统制造企业，三一重工正在努力抓住科技快速发展的新机遇，华兴科技作为其核心子公司，也将与其共同迎接挑战。 **EMQ 将以不断完善的产品和服务全力配合与支持华兴科技，实现制造、服务和生产所有环节数字化，为业务增长赋予新动能，为国内乃至世界机械制造商树立行业数字化转型升级的新标杆。**
+
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX Cloud
+        <div class="is-size-14 is-text-normal has-text-weight-normal">全托管的云原生 MQTT 消息服务</div>
+    </div>
+    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a >
+</section>

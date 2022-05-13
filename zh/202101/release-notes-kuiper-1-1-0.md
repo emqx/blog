@@ -8,7 +8,7 @@ EMQX Kuiper 是 Golang 实现的轻量级物联网边缘分析、流式处理开
 
 Kuiper 的应用场景包括：运行在各类物联网的边缘使用场景中，比如工业物联网中对生产线数据进行实时处理；车联网中的车机对来自汽车总线数据的即时分析；智能城市场景中，对来自于各类城市设施数据的实时分析。通过 Kuiper 在边缘端的处理，可以提升系统响应速度，节省网络带宽费用和存储成本，以及提高系统安全性等。
 
-![arch.png](https://static.emqx.net/images/1cee7069a6f9e0cc96601f2e793c1a80.png)
+![arch.png](https://assets.emqx.com/images/1cee7069a6f9e0cc96601f2e793c1a80.png)
 
 网址：https://github.com/lf-edge/ekuiper
 

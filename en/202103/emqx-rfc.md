@@ -24,7 +24,7 @@ EIP has the following three characteristics:
 
 Besides that, a small number of feature updates, bug fixes, and code changes can still be implemented by following the normal GitHub process of submitting issues, launching Pull Requests and Code Reviews.
 
-![EIP.png](https://static.emqx.net/images/8599d98ae5ebaaa4ce1c87e7ea2700ea.png)
+![EIP.png](https://assets.emqx.com/images/8599d98ae5ebaaa4ce1c87e7ea2700ea.png)
 
 
 ## How to use EMQX EIP

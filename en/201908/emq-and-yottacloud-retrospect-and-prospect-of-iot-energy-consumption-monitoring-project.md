@@ -25,7 +25,7 @@ Before the project, the plant also carried out energy consumption data collectio
 3. Data collection and display should be guaranteed in real time.
 
 
-![11png.png](https://static.emqx.net/images/4268d9fe7ca2967311d6d9cd94af1a94.png)
+![11png.png](https://assets.emqx.com/images/4268d9fe7ca2967311d6d9cd94af1a94.png)
 
 The project implementation is based on Guizhou YottaCloud's SME cloud platform and EMQ's IoT equipment management and application enablement platform. Guizhou YottaCloud is responsible for the overall project implementation and monitoring platform application development:
 
@@ -37,7 +37,7 @@ The project implementation is based on Guizhou YottaCloud's SME cloud platform a
 - Application layer: Provide real-time monitoring of large-screen and mobile-side small Apps for various industrial meters, and real-time monitoring of data such as electricity meters, gas meters, and photovoltaic power. The application layer implements the threshold setting and alarm capability of the meter data by setting business rules at the platform level, and pushes the alarm message to the plant management personnel in time when the meter reports that the data is overloaded.
   Due to the obsolescence of some of the meters in the plant area, the data acquisition interface cannot be provided. In order to ensure the coverage of the collection, YottaCloud and the plant coordinated and designed the manual meter reading process, and integrated into the automatic acquisition application to achieve unified data aggregation of manual and automatic meter reading.
 
-![22.png](https://static.emqx.net/images/3bc20e77535a89689ff02f5baf4ab447.png)
+![22.png](https://assets.emqx.com/images/3bc20e77535a89689ff02f5baf4ab447.png)
 
 The first stage of the project covered the energy consumption monitoring of the three plants in the Wahaha Guiyang base, deploying 11 industrial gateways, automatically collecting more than 200 electric meters and gas meters,with more than 5,000 data collection points.
 

@@ -1,12 +1,12 @@
 With the advent of the 5G era, the great vision of the IoT is becoming a reality. The number of connected **IoT devices** has reached 7 billion[^1] in 2018. In the next two years, smart water and electricity meters alone will exceed 1 billion[^2].
 
-![Numberofglobaldeviceconnections20152025NumberofIoTDevices.png](https://static.emqx.net/images/1abe97466e35ce3fd89417f6ea2fec86.png)
+![Numberofglobaldeviceconnections20152025NumberofIoTDevices.png](https://assets.emqx.com/images/1abe97466e35ce3fd89417f6ea2fec86.png)
 
 Massive device access and device management have brought great challenges to network bandwidth, communication protocols, and platform service architecture. For the **IoT protocol** , several key issues of IoT device communication must be specifically addressed, including that its network environment is complex and unreliable, its memory and flash memory capacity is small, and its processing capacity is limited.
 
 [MQTT protocol](https://www.emqx.com/en/mqtt) is an IoT communication protocol based on the Publish/Subscribe model. With its characteristics of simple and easy implementation, support for QoS, and small size of packet, it occupies half market of the Internet of Things protocol:
 
-![WechatIMG10934.png](https://static.emqx.net/images/c980ab99489d1e771ad7b4dc5ac722b9.png)
+![WechatIMG10934.png](https://assets.emqx.com/images/c980ab99489d1e771ad7b4dc5ac722b9.png)
 
 ## The birth of MQTT
 
@@ -28,7 +28,7 @@ The publish-subscribe model is a decoupling solution of the traditional Client/S
 In the MQTT protocol, the `filtering rules` mentioned above are `Topic`. For example: All messages published to the topic `news` will be forwarded by broker to subscribers who have subscribed to `news`:
 
 
-![image.png](https://static.emqx.net/images/a97a07cccc199f387b7eb6747eb2223f.png)
+![image.png](https://assets.emqx.com/images/a97a07cccc199f387b7eb6747eb2223f.png)
 
 
 
@@ -147,3 +147,12 @@ EMQ also provides the [MQTT online client tool](https://www.emqx.com/en/mqtt/mqt
 [^3]: https://github.com/mqtt/mqtt.github.io/wiki/history
 [^4]: https://www.cnblogs.com/softidea/p/5764051.html
 [^5]: https://pragprog.com/articles/erlang
+
+
+<section class="promotion">
+    <div>
+        Try EMQX Cloud for Free
+        <div class="is-size-14 is-text-normal has-text-weight-normal">A fully managed, cloud-native MQTT service</div>
+    </div>
+    <a href="https://www.emqx.com/en/signup?continue=https://cloud-intl.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">Get Started →</a >
+</section>

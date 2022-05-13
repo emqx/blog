@@ -73,3 +73,12 @@ EMQX 支持客户端通过 WebSocket 接入，当客户端使用 WebSocket 发�
 ## 结语
 
 本文介绍了 MQTT 协议中 Keep Alive 的机制及 EMQX 中 Keep Alive 的使用，开发者可以借助这一特性确保 MQTT 连接的稳定性，构建更加健壮的上层物联网应用。
+
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX Cloud
+        <div class="is-size-14 is-text-normal has-text-weight-normal">全托管的云原生 MQTT 消息服务</div>
+    </div>
+    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a >
+</section>

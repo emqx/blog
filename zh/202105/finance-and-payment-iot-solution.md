@@ -30,7 +30,7 @@ EMQX 在公有云、私有云、混合云、物理机以及容器化多种部署
 
 在众多商业客户应用实例中，EMQX 整合各构架共通点，以多集群为典型部署方式形成了以下方案。
 
-![EMQ 金融支付行业解决方案架构图](https://static.emqx.net/images/6247b73f00f0e680547ae7f18ee1433f.png)
+![EMQ 金融支付行业解决方案架构图](https://assets.emqx.com/images/6247b73f00f0e680547ae7f18ee1433f.png)
 
 ​     
 
@@ -53,3 +53,12 @@ EMQX Enterprise 提供了丰富的 API 接口，也支持 Python/Java 多语言�
 聚合支付场景下，从 POS 机到收款音箱等，各类支付物联设备均需要稳定可靠的数据接入，从而通过良好的用户体验获取更多的终端用户。以收钱音箱语音播报为例，在收付款高峰期获得秒级客户与到账反馈，收款记录可以在后台可视化管理，有效防止漏单偷单，是众多终端商家用户选择使用收钱音箱的原因。而要想保障用户体验，需要设备信号抗干扰能力强，实现快速稳定的播报。这无疑对其背后的物联网支撑平台提出了更高的要求。
 
 在现有金融行业客户的服务案例基础上总结经验，EMQ 将不断完善金融与支付行业解决方案，使领域内更多企业从容应对金融支付数字化、信息化挑战，把握万物互联时代下的新机遇。
+
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX Cloud
+        <div class="is-size-14 is-text-normal has-text-weight-normal">全托管的云原生 MQTT 消息服务</div>
+    </div>
+    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a >
+</section>

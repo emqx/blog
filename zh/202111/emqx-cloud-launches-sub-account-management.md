@@ -16,15 +16,15 @@
 
 通过**将开发测试环境和生产环境的部署区分开来**，分配至「生产环境」和「测试环境」两个项目中进行管理，可以防止修改错误。同时管理员还可以**赋予企业内部开发测试人员和业务人员不同项目的权限，避免越权操作。**
 
-![创建生产环境项目](https://static.emqx.net/images/508f1324d300457d6480cc3534ef35f6.png)
+![创建生产环境项目](https://assets.emqx.com/images/508f1324d300457d6480cc3534ef35f6.png)
 
 创建生产环境项目
 
-![关联子账号并赋予权限](https://static.emqx.net/images/6cbdc92352c942229ebb719e38c1f43a.png)
+![关联子账号并赋予权限](https://assets.emqx.com/images/6cbdc92352c942229ebb719e38c1f43a.png)
 
 关联子账号并赋予权限
 
-![角色确认](https://static.emqx.net/images/175dba8d3870251b04ff40bd416e9acd.png)
+![角色确认](https://assets.emqx.com/images/175dba8d3870251b04ff40bd416e9acd.png)
 
 角色确认
 
@@ -35,9 +35,9 @@
 
 通过子账号管理功能，可以邀请企业财务人员成为账号的财务专员用户，登录进入控制台后，财务专员用户可查看（只读不可编辑）所有项目的部署情况，并且分别对不同项目的部署进行查账对账的操作。在整个过程中不用担心财务因误操作而导致部署状态/设置受到影响，**财务自主查询的效率提高，再也不用劳烦技术人员帮助查账。**
 
-![4.png](https://static.emqx.net/images/a2def5e93e84f9149e67417330069792.png)
+![4.png](https://assets.emqx.com/images/a2def5e93e84f9149e67417330069792.png)
 
-![财务审计自助查询](https://static.emqx.net/images/89c36cb84b085efab06913140aac01de.png)
+![财务审计自助查询](https://assets.emqx.com/images/89c36cb84b085efab06913140aac01de.png)
  
 
 ## **如何使用子账号管理功能**
@@ -54,11 +54,11 @@
 
 在 [EMQ 官网](https://www.emqx.com/zh)注册后，您将默认成为该账号的管理员用户，您可以进入控制台，在右上角菜单栏找到「用户管理」，点击「新建用户」，输入您想要授权的子账号邮箱及密码，并赋予其不同角色（可选择多个角色）。
 
-![新建用户](https://static.emqx.net/images/d7e0dd399f3a6371c0b4b64dc1f085ad.png)
+![新建用户](https://assets.emqx.com/images/d7e0dd399f3a6371c0b4b64dc1f085ad.png)
 
 之后子账号用户会在邮箱中收到对应的登陆链接，输入邮箱和密码后即可登录进行对应操作。
 
-![邮件登录](https://static.emqx.net/images/5d89d1d9dcd9f4dc232b3b4855298463.png)
+![邮件登录](https://assets.emqx.com/images/5d89d1d9dcd9f4dc232b3b4855298463.png)
 
 > 注：1 用于账号验证及首次登陆，2 用于后续子账号登陆。
 
@@ -68,13 +68,22 @@
 
 您自主创建的项目支持关联子账号。
 
-![关联子账号](https://static.emqx.net/images/625374506e83fb04e72c0c56e0ba4858.png)
+![关联子账号](https://assets.emqx.com/images/625374506e83fb04e72c0c56e0ba4858.png)
 
-点击指定项目右上角 ![添加](https://static.emqx.net/images/287a7f2c82c4888de128ae0cea53e502.png)，并点击「添加」，输入账号关键词，会自动关联相关账号，可授予角色包括「项目管理员」和「项目使用者」。
+点击指定项目右上角 ![添加](https://assets.emqx.com/images/287a7f2c82c4888de128ae0cea53e502.png)，并点击「添加」，输入账号关键词，会自动关联相关账号，可授予角色包括「项目管理员」和「项目使用者」。
 
-![管理帐号](https://static.emqx.net/images/7dcd7b8bfe3198aa5c03b22a19ce6cdc.png)
+![管理帐号](https://assets.emqx.com/images/7dcd7b8bfe3198aa5c03b22a19ce6cdc.png)
 
-![管理帐号](https://static.emqx.net/images/a3b4e00910798e5facf039e04ab2f397.png)
+![管理帐号](https://assets.emqx.com/images/a3b4e00910798e5facf039e04ab2f397.png)
 
 
 EMQX Cloud 团队致力于为用户提供轻松便捷的自动化全托管 [MQTT 云服务](https://www.emqx.com/zh/cloud)。我们将继续完善权限管理模块的功能开发，为用户带来更愉快的产品体验。
+
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX Cloud
+        <div class="is-size-14 is-text-normal has-text-weight-normal">无须绑定信用卡</div>
+    </div>
+    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a >
+</section>

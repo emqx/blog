@@ -15,7 +15,7 @@ And the release comes with a built-in UI which demos `curl` command examples, as
 
 This screenshot is an example “Try it out” result, which fetched back the configuration for an HTTP authentication API.
 
-![EMQX HTTP API](https://static.emqx.net/images/deeea65360c4170719da545a84ab07e5.png)
+![EMQX HTTP API](https://assets.emqx.com/images/deeea65360c4170719da545a84ab07e5.png)
 
 ### Hierarchical rate control
 
@@ -28,3 +28,12 @@ This will allow users to control message rates at ‘global', ‘zone’, ‘lis
 Before 5.0, EMQX already provides highly available persistent sessions across the nodes in a cluster. The state however is not replicated, that is, the session states are local to the node which is serving the client. Session take-over is triggered if the client moves from one node to another in the cluster. This has been working quite well given that EMQX cluster’s long uptime with the help from live-code-upgrade (hot-patching without restarting the service).
 
 To be more ops-friendly, we are now introducing cross-node session state replication. This will allow users to shut down a broker for maintenance without losing the persistent session states.
+
+
+<section class="promotion">
+    <div>
+        Try EMQX Cloud for Free
+        <div class="is-size-14 is-text-normal has-text-weight-normal">No credit card required</div>
+    </div>
+    <a href="https://www.emqx.com/en/signup?continue=https://cloud-intl.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">Get Started →</a >
+</section>

@@ -46,13 +46,13 @@ When the reported engine speed value is greater than `8000`, the current informa
 
 Open EMQX Dashboard, enter the **Resources**  page of the left menu, click the  **New** button, and enter the Redis server information to create a resource.
 
-![s.png](https://static.emqx.net/images/84dda5c0c71dbd073ada895a83f54120.png)
+![s.png](https://assets.emqx.com/images/84dda5c0c71dbd073ada895a83f54120.png)
 
 
 
 The network environment of the nodes in the EMQX cluster may be different from each other. After the resources are successfully created, click the **Status button** in the list to view the resource connection status of each node. If the resources on the nodes are not available, please check whether the configuration is correct and the network connectivity, and click the **Reconnect** button to reconnect manually.
 
-![v.png](https://static.emqx.net/images/9b071cec91b5f05999aa13b0c66c3e35.png)
+![v.png](https://assets.emqx.com/images/9b071cec91b5f05999aa13b0c66c3e35.png)
 
 
 
@@ -62,7 +62,7 @@ Enter the **Rules** page on the left menu and click the **New** button to create
 
 After the trigger event is selected, we can see optional fields and sample SQL on the interface:
 
-![image20190716174727991.png](https://static.emqx.net/images/b3866a53196eb9013302b244c16ed016.png)
+![image20190716174727991.png](https://assets.emqx.com/images/b3866a53196eb9013302b244c16ed016.png)
 
 
 #### Filter required fields
@@ -129,7 +129,7 @@ The payload data is as follows, pay attention to changing the value of `tachomet
 
 Click the **SQL Test** toggle button, change the `topic and payload` to the information in the scenario, and click the **Test** button to see the data output:
 
-![SQL1.png](https://static.emqx.net/images/576ed3c7454d922d42b415338d3f5fae.png)
+![SQL1.png](https://assets.emqx.com/images/576ed3c7454d922d42b415338d3f5fae.png)
 
 
 The test output data is:
@@ -164,7 +164,7 @@ HMSET test client_id "${client_id}" speed "${speed}" tachometer "${tachometer}" 
 
 Create a hash table using Redis' hash table structure with message id as the name of the table.
 
-![WX201907181049302x.png](https://static.emqx.net/images/1dc598bb55cc60056914e8021bfeb116.png)
+![WX201907181049302x.png](https://assets.emqx.com/images/1dc598bb55cc60056914e8021bfeb116.png)
 
 
 ## Test
@@ -200,7 +200,7 @@ Switch to the **Tools ->  Websocket**  page, use any information client to conne
     "ts": 1563268202
   }
   ```
-![image20190716190238252.png](https://static.emqx.net/images/263afcad19634033c8294d806173d74f.png)
+![image20190716190238252.png](https://assets.emqx.com/images/263afcad19634033c8294d806173d74f.png)
 
 
 
@@ -208,7 +208,7 @@ Click the **Send** button, and we can see that the number of hits of the current
 
 The data obtained by viewing the hash table records on the Redis command line is as follows:
 
-![WX201907181142402x.png](https://static.emqx.net/images/ea5cf04f77cbbc8b76d58965a4ba856a.png)
+![WX201907181142402x.png](https://assets.emqx.com/images/ea5cf04f77cbbc8b76d58965a4ba856a.png)
 
 So far, we have used the rule engine to implement business development to store messages to Reids.
 

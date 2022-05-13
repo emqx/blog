@@ -34,11 +34,11 @@ docker run -d --name emqx -p 1883:1883 -p 8083:8083 -p 8883:8883 -p 8084:8084 -p
 
 在准备好 MQTT Broker 后，进入到主程序页面，可点击左侧菜单栏中的 `+` 号，如果页面没有数据，还可以直接点击右侧的 `新建连接` 按钮，快速配置一个新的客户端连接。
 
-![mqttxcreate.png](https://static.emqx.net/images/a2e171f179fe4ccd93ea7514ee4d9364.png)
+![mqttxcreate.png](https://assets.emqx.com/images/a2e171f179fe4ccd93ea7514ee4d9364.png)
 
 进入到创建页面后，需配置或填写连接客户端的相关信息，读者可以在此处配置定义 Broker 连接的所有设置，例如：`Broker Host`, `Broker Port`, `Client ID ` , `Username`, `Password`, `Clean Session` 等基础配置信息。
 
-![2.png](https://static.emqx.net/images/ad82e1d8dda141e3921e9b71d3967e44.png)
+![2.png](https://assets.emqx.com/images/ad82e1d8dda141e3921e9b71d3967e44.png)
 
 1. Broker 信息
 
@@ -54,7 +54,7 @@ docker run -d --name emqx -p 1883:1883 -p 8083:8083 -p 8883:8883 -p 8084:8084 -p
 
    如果选择了 `Self signed`，可进行证书配置，点击最右侧的文件夹按钮，选择您已经生成好的各项证书，单向连接只需要选择您的 `CA File` 即可，对于双向认证，还需要选择配置 `Client Certificate File` 和 `Client key file`。
 
-    ![3.png](https://static.emqx.net/images/f29056efe253cbb3b3b986000615bde5.png)
+    ![3.png](https://assets.emqx.com/images/f29056efe253cbb3b3b986000615bde5.png)
 
 4. 高级配置
 
@@ -76,7 +76,7 @@ docker run -d --name emqx -p 1883:1883 -p 8083:8083 -p 8883:8883 -p 8084:8084 -p
 
 连接建立后，可以在连接主页面的下方的输入框内，简单输入 `Topic` 和 `Payload` 后，点击右下角按钮，发送测试消息了。macOS 用户可以使用 `command + enter` 快捷键，其它用户可以使用 `control + enter` 快捷键来快速发送消息。
 
-![fabu.png](https://static.emqx.net/images/3932f09038e85220800acc665df1dac8.png)
+![fabu.png](https://assets.emqx.com/images/3932f09038e85220800acc665df1dac8.png)
 
 
 
@@ -90,9 +90,9 @@ docker run -d --name emqx -p 1883:1883 -p 8083:8083 -p 8883:8883 -p 8084:8084 -p
 
 我们再新建一个测试连接用于消息发布测试。在页面右下角填入刚才所订阅的 `Topic` 信息，输入 Payload 的内容后，点击最右侧的发送按钮，就向订阅了该 `Topic` 的连接客户端发送了一条消息。
 
-![一条消息1.png](https://static.emqx.net/images/4d0d28d4e20bee6e0fc6e9c5c941862c.png)
+![一条消息1.png](https://assets.emqx.com/images/4d0d28d4e20bee6e0fc6e9c5c941862c.png)
 
-![一条消息2.png](https://static.emqx.net/images/8b07a1550c349621fb2ae5676b5fda1c.png)
+![一条消息2.png](https://assets.emqx.com/images/8b07a1550c349621fb2ae5676b5fda1c.png)
 
 如果发送消息的连接客户端也订阅了相同的 `topic` ，发送成功后该客户端也将即时接收到刚才所发送的消息。注意，在消息框内，右边栏为发送的消息。左边栏为接收到的消息。
 
@@ -106,7 +106,7 @@ docker run -d --name emqx -p 1883:1883 -p 8083:8083 -p 8883:8883 -p 8084:8084 -p
 
 2. 消息页面的下拉菜单
 
-![xlcd.png](https://static.emqx.net/images/37076c58c377111a1c59e0cfa88a97f2.png)
+![xlcd.png](https://assets.emqx.com/images/37076c58c377111a1c59e0cfa88a97f2.png)
 
    在消息栏右上角的 `All`，`Received`， `Published` 按钮可以过滤出 全部消息，已接收的消息，和已发布的消息。
 
@@ -120,7 +120,7 @@ docker run -d --name emqx -p 1883:1883 -p 8083:8083 -p 8883:8883 -p 8084:8084 -p
 
    点击左侧底部的 `i` 按钮，可进入到 `About` 页面，了解 **MQTT X** 的版本信息和 [EMQX](https://www.emqx.com/en) 的相关信息。点击 `Check for Updates` 可以检查是否有更新版本。
 
-![mqttxupdate.png](https://static.emqx.net/images/de17680e289b43e3c555a1a40315ec1c.png)
+![mqttxupdate.png](https://assets.emqx.com/images/de17680e289b43e3c555a1a40315ec1c.png)
 
 
 以上为 MQTT X 使用方法的简单概述。读者可以通过在 GitHub 上的 [使用手册](https://github.com/emqx/MQTTX/blob/master/docs/manual.md) 来完整的使用 MQTT X。

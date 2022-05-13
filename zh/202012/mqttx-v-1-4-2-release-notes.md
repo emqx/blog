@@ -8,7 +8,7 @@ Mac 用户可在 App Store 中进行下载：https://apps.apple.com/cn/app/mqttx
 
 Linux 用户可在 Snapcraft 中进行下载：https://snapcraft.io/mqttx
 
-![mqttxpreview.png](https://static.emqx.net/images/eae55fcaa5b4abd9b562bc2aa5fc9dd9.png)
+![mqttxpreview.png](https://assets.emqx.com/images/eae55fcaa5b4abd9b562bc2aa5fc9dd9.png)
 
 ## 新功能概览
 
@@ -26,13 +26,13 @@ Linux 用户可在 Snapcraft 中进行下载：https://snapcraft.io/mqttx
 
 注意：该功能具有一定的扩展性和灵活性，需用户配合实际需求来进行使用。
 
-![mqttxscript.png](https://static.emqx.net/images/cd4daadad6483bd7c7a20805ac746933.png)
+![mqttxscript.png](https://assets.emqx.com/images/cd4daadad6483bd7c7a20805ac746933.png)
 
 ### Client ID 自动加入时间戳
 
 为防止当输入了相同的 Client ID 的客户端进行连接后，出现互踢的情况。该版本中为此进行了优化，新增了一个自动为 Client ID 加入时间戳的功能，保证每次连接时的 Client ID 都可以不同。在创建连接时，用户只需要点击 Client ID 输入框后的时间按钮，当按钮图标颜色状态发生改变时，即开启了该功能，再次点击后即可取消该功能。
 
-![mqttxclientidtime.png](https://static.emqx.net/images/b16191291027f1f12229652979afc443.png)
+![mqttxclientidtime.png](https://assets.emqx.com/images/b16191291027f1f12229652979afc443.png)
 
 ## 修复及其优化
 

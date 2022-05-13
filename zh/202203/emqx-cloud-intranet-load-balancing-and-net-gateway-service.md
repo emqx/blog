@@ -18,7 +18,7 @@ EMQX Cloud 专业版提供了**用户独享的高可用 EMQX 集群**，以及�
 
 专业版方案既可以保证数据传输的稳定性，又节约了从 EMQX 到用户 VPC 之间的公网带宽费用。
 
-![EMQX Cloud 专业版](https://static.emqx.net/images/0c78b96416e35af3e69caa3a038b9d52.png)
+![EMQX Cloud 专业版](https://assets.emqx.com/images/0c78b96416e35af3e69caa3a038b9d52.png)
 
 ## 稳定高效传输同时节省公网流量
 
@@ -34,7 +34,7 @@ EMQX Cloud 专业版提供了**用户独享的高可用 EMQX 集群**，以及�
 
 内网负载均衡服务即可解决这个问题。它是一种通过内网连接方式对流量进行按需分发的服务，因此在开通此服务前需要配置与应用服务的 VPC 对等连接。
 
-![EMQX Cloud 内网负载均衡器](https://static.emqx.net/images/311175948d8980d3b0201a4f4b9988e0.png)
+![EMQX Cloud 内网负载均衡器](https://assets.emqx.com/images/311175948d8980d3b0201a4f4b9988e0.png)
 
 根据上图我们可以发现，在开通了内网负载均衡服务后，业务应用系统可以通过指向绑定在某个 EMQX Cloud 实例中的内网负载均衡地址来进行基于内网的消息订阅。不仅满足了数据传输的可靠性，也节省了公网带宽。
 
@@ -57,7 +57,7 @@ EMQX Cloud 专业版提供了**用户独享的高可用 EMQX 集群**，以及�
 
 随着分布式架构以及跨地域、跨云厂商的架构逐渐增多，仅仅通过 VPC 对等连接方式对接业务应用与数据存储服务已经不能完全满足用户的需要，这就**需要 EMQX Cloud 提供直接访问外网地址能力来实现跨公网业务应用对接**。NAT 网关服务也就应运而生。
 
-![EMQX Cloud NET 网关](https://static.emqx.net/images/f08e9eb173a12978936acf07912cb30f.png)
+![EMQX Cloud NET 网关](https://assets.emqx.com/images/f08e9eb173a12978936acf07912cb30f.png)
 
 NAT 网关服务提供了网络地址转换服务，为 EMQX Cloud 专业版部署提供访问公网资源的能力。在架构上为专业版用户提供了主动访问公网服务的数据通道，使用户可以更加灵活地构建平台架构。
 
@@ -74,3 +74,12 @@ NAT 网关服务提供了网络地址转换服务，为 EMQX Cloud 专业版部�
 本文从架构设计、应用场景等方面为用户分析了两项增值服务最适合的使用场景，希望可以帮助物联网架构师合理选择更加安全可靠且高性价比的解决方案提供参考。两项增值服务 **14 天免费试用**活动均在进行中，欢迎访问[https://www.emqx.com/zh/cloud](https://www.emqx.com/zh/cloud)并申请试用。
 
 未来 EMQX Cloud 将结合用户需求上线更多增值服务模块，敬请关注。
+
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX Cloud
+        <div class="is-size-14 is-text-normal has-text-weight-normal">无须绑定信用卡</div>
+    </div>
+    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a >
+</section>

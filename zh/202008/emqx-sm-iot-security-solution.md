@@ -18,7 +18,7 @@ EMQ 作为国际领先的物联网设备接入与数据处理解决方案提供�
 
 #### EMQX 物联网数据接入链路层安全方案
 
-![EMQX链路层国密支持方案架构图 .png](https://static.emqx.net/images/8243e84d26415072862710a3b0579c29.png)
+![EMQX链路层国密支持方案架构图 .png](https://assets.emqx.com/images/8243e84d26415072862710a3b0579c29.png)
 
 EMQ 作为物联网从边缘到云端的设备接入解决方案提供商，在设备接入安全方面提供了物联网数据传输链路层安全接入方案。
 
@@ -35,7 +35,7 @@ EMQX  安全接入方案的能力包括 ：
 
 除了链路层加密协议接入能力外，EMQX 还提供对协议报文加解密的国密算法支持。EMQX 消息中间件在消息接入或发出过程中对消息报文提供国密加解密能力。EMQX 通过在接入层调用加密机接口，实现对物联网数据报文的实时加解密，使数据传输更加安全。
 
-![EMQX数据报文层国密支持方案架构图 .png](https://static.emqx.net/images/9edbd22043cba7b496248416b423fc84.png)
+![EMQX数据报文层国密支持方案架构图 .png](https://assets.emqx.com/images/9edbd22043cba7b496248416b423fc84.png)
 
 
 
@@ -53,3 +53,12 @@ EMQX  安全接入方案的能力包括 ：
 
 
 综上所述， EMQ 在安全方面从设备、边缘端到云端，从连接层到数据层提供了完整的安全方案，支持基于国密算法的完整解决方案，帮助政府、企业更加安全高效的应用物联网技术实现新时代数字化转型。
+
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX Cloud
+        <div class="is-size-14 is-text-normal has-text-weight-normal">全托管的云原生 MQTT 消息服务</div>
+    </div>
+    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a >
+</section>

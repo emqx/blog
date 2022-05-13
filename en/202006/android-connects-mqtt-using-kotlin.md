@@ -188,17 +188,17 @@ fun disconnect() {
 
 Firstly, you need to connect the Android client to the MQTT broker then subscribe topic: `a/b`, and then you can see the log of successfully connecting and subscribing.
 
-![MQTT connect and subscribe](https://static.emqx.net/images/7711763b664ee9c6f0860b50bb0934c4.png)
+![MQTT connect and subscribe](https://assets.emqx.com/images/7711763b664ee9c6f0860b50bb0934c4.png)
 
 We test with [MQTT 5.0 client tool - MQTT X](https://mqttx.app), publish messages to the topic: `a/b`, and then we can see the log of receiving messages on the client.
 
-![MQTT 5.0 Client Tool  MQTT X](https://static.emqx.net/images/041917427b461f7d633faf3ff205b69d.png)
+![MQTT 5.0 Client Tool  MQTT X](https://assets.emqx.com/images/041917427b461f7d633faf3ff205b69d.png)
 
-![receive MQTT messages](https://static.emqx.net/images/8451743b47f3e31fbb87377dcc0111d5.png)
+![receive MQTT messages](https://assets.emqx.com/images/8451743b47f3e31fbb87377dcc0111d5.png)
 
 We publish messages on the client to the topic: `a/b`. Because we subscribed to this topic, we will also receive the message at the same time. Finally, we disconnect the client from the MQTT broker. The log is as below: 
 
-![publish mqtt message and disconnect](https://static.emqx.net/images/150e861f4c2375ab938adf4dd01e7ab6.png)
+![publish mqtt message and disconnect](https://assets.emqx.com/images/150e861f4c2375ab938adf4dd01e7ab6.png)
 
 So far, we have finished the construction of MQTT client on the Android and implemented the connection between the client and MQTT broker, subscribing topics, messaging, etc.
 

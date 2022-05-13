@@ -61,3 +61,11 @@ In addition, we have also enhanced the capability of OPC UA, which now supports 
 - Fixed OPCUA to support utf8.
 - Fixed unreadable dot demo.
 - Fixed API function 50.
+
+
+<section class="promotion">
+    <div>
+        Try Neuron for Free
+    </div>
+    <a href="https://www.emqx.com/en/try?product=neuron" class="button is-gradient px-5">Get Started →</a >
+</section>

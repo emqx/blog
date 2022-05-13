@@ -1,4 +1,4 @@
-![画板 172x.png](https://static.emqx.net/images/59a2b2df1035f9a1f7e3c364a1528a48.png)
+![画板 172x.png](https://assets.emqx.com/images/59a2b2df1035f9a1f7e3c364a1528a48.png)
 
 ## PostgreSQL 数据库介绍
 
@@ -69,7 +69,7 @@ CREATE TABLE t_mqtt_msg (
 
 打开 EMQX Dashboard，进入左侧菜单的 **资源** 页面，点击 **新建** 按钮，选择 PostgreSQL 资源类型并完成相关配置进行资源创建。
 
-![image20190725142933513.png](https://static.emqx.net/images/7886bf1c52c3cf3a97eead6bd3388f09.png)
+![image20190725142933513.png](https://assets.emqx.com/images/7886bf1c52c3cf3a97eead6bd3388f09.png)
 
 
 
@@ -79,7 +79,7 @@ CREATE TABLE t_mqtt_msg (
 
 选定触发事件后，我们可在界面上看到可选字段及示例 SQL：
 
-![image20190719112141128.png](https://static.emqx.net/images/98eedf967390caf95e040a2376d5bc1e.png)
+![image20190719112141128.png](https://assets.emqx.com/images/98eedf967390caf95e040a2376d5bc1e.png)
 
 
 
@@ -100,7 +100,7 @@ FROM
 
 借助 SQL 测试功能，我们可以快速确认刚刚填写的 SQL 语句能否达成我们的目的。首先填写用于测试的 payload 等数据如下：
 
-![image20190725145617081.png](https://static.emqx.net/images/8d392abf53abb299ab6eb68c77541c83.png)
+![image20190725145617081.png](https://assets.emqx.com/images/8d392abf53abb299ab6eb68c77541c83.png)
 
 然后点击 **测试** 按钮，我们得到以下数据输出：
 
@@ -134,7 +134,7 @@ SQL 条件输入输出无误后，我们继续添加相应动作，配置写入 
 
 最后点击 **新建** 按钮完成规则创建。
 
-![image20190725144256942.png](https://static.emqx.net/images/efe039e16812a013224a138a97fb145b.png)
+![image20190725144256942.png](https://assets.emqx.com/images/efe039e16812a013224a138a97fb145b.png)
 
 
 ## 测试
@@ -160,13 +160,13 @@ SQL 条件输入输出无误后，我们继续添加相应动作，配置写入 
   {"msg":"Hello, World!"}
   ```
 
-![image20190725145805279.png](https://static.emqx.net/images/cdc7e0a8eb06de9b710e9bb31736c3ff.png)
+![image20190725145805279.png](https://assets.emqx.com/images/cdc7e0a8eb06de9b710e9bb31736c3ff.png)
 
 点击 **发送** 按钮，发送成功后可以看到当前规则已命中次数已经变为了 1。
 
 然后检查 PostgreSQL，新的 data point 是否添加成功：
 
-![image20190725145107685.png](https://static.emqx.net/images/97aa310b042ec33b08846024d8d9afeb.png)
+![image20190725145107685.png](https://assets.emqx.com/images/97aa310b042ec33b08846024d8d9afeb.png)
 
 至此，我们通过规则引擎实现了使用规则引擎存储消息到 PostgreSQL 数据库的业务开发。
 

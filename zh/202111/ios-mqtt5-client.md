@@ -171,7 +171,7 @@ MQTT 单纯通过 `CONNECT` 可能无法提供足够的信息给 Server 进行�
 
 推荐使用 「Background fetch」模式或 IOS 13 新增的「Background processing」模式。
 
-![iOS 应用后台运行](https://static.emqx.net/images/7d487fe5022b5c2785c4df43adf9f983.png)
+![iOS 应用后台运行](https://assets.emqx.com/images/7d487fe5022b5c2785c4df43adf9f983.png)
 
 如果使用 `beginBackgroundTaskWithName` 和 `endBackgroundTask` 相关的 API，可以保持 APP 在后台运行 30 秒。
 
@@ -184,3 +184,12 @@ MQTT 单纯通过 `CONNECT` 可能无法提供足够的信息给 Server 进行�
 项目完整代码请见 [https://github.com/emqx/CocoaMQTT/tree/master/Example](https://github.com/emqx/CocoaMQTT/tree/master/Example)。
 
 EMQ 致力于帮助用户轻松便捷地使用 MQTT 开展物联网业务，我们的一系列客户端 SDK 均在持续开发中，敬请关注。
+
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX Cloud
+        <div class="is-size-14 is-text-normal has-text-weight-normal">全托管的云原生 MQTT 消息服务</div>
+    </div>
+    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a >
+</section>

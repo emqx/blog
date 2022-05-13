@@ -42,26 +42,35 @@ If it's your first time using EMQX Cloud, don't worry. We will guide you through
 
 6. Go to `Settings` and install MQTT Binding:
 
-    ![openHAB MQTT binding.png](https://static.emqx.net/images/cc395740e3aaa6c3b7f6599f38543c16.png)
+    ![openHAB MQTT binding.png](https://assets.emqx.com/images/cc395740e3aaa6c3b7f6599f38543c16.png)
 
 
 7. Add MQTT to `Things`
 
-    ![add mqtt to openHAB things](https://static.emqx.net/images/b6f79d674a5fb01e49e4a391d751b2d1.png)
+    ![add mqtt to openHAB things](https://assets.emqx.com/images/b6f79d674a5fb01e49e4a391d751b2d1.png)
 
 8. Select `MQTT Broker` and fill in the information of the deployment we created before.
 
-    ![select mqtt broker](https://static.emqx.net/images/1589a0bec044b3ce55522c81a47a8f85.png)
+    ![select mqtt broker](https://assets.emqx.com/images/1589a0bec044b3ce55522c81a47a8f85.png)
 
    For the user name and password, fill in the authentication information as mentioned before.
 
-    ![mqtt broker info](https://static.emqx.net/images/30bc01230493f1da0cb7c39818905a9c.png)
+    ![mqtt broker info](https://assets.emqx.com/images/30bc01230493f1da0cb7c39818905a9c.png)
    
 
 9. When there is a little green label that shows `ONLINE`, you are successfully connecting openHAB with EMQX Cloud. Congrats!
 
-    ![mqtt broker inline](https://static.emqx.net/images/a29093ef1b02ff829a64a6785c57c9b6.png)
+    ![mqtt broker inline](https://assets.emqx.com/images/a29093ef1b02ff829a64a6785c57c9b6.png)
 
    You could also check the status from the EMQX Cloud's monitor page.
 
-    ![EMQX Cloud's monitor page](https://static.emqx.net/images/8077ce96ef86b572fb6c15b1b8343cd0.png)
+    ![EMQX Cloud's monitor page](https://assets.emqx.com/images/8077ce96ef86b572fb6c15b1b8343cd0.png)
+
+
+<section class="promotion">
+    <div>
+        Try EMQX Cloud for Free
+        <div class="is-size-14 is-text-normal has-text-weight-normal">No credit card required</div>
+    </div>
+    <a href="https://www.emqx.com/en/signup?continue=https://cloud-intl.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">Get Started →</a >
+</section>

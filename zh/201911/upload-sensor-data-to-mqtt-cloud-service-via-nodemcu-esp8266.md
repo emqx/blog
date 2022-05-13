@@ -2,7 +2,7 @@
 
 本示例的总体架构如下
 
-![Artboard Copy 11.png](https://static.emqx.net/images/1d8de4c8e46b6e7e8d48ce64c3f46c64.png)
+![Artboard Copy 11.png](https://assets.emqx.com/images/1d8de4c8e46b6e7e8d48ce64c3f46c64.png)
 
 
 ## 配置
@@ -15,7 +15,7 @@
 - 跳线（Jumper wires）若干
 - 连接图（Connection Graph）请参考如下截图
 
-![689328937a9d2d8007ce11ea94eb9dd9c6c5c23c.png](https://static.emqx.net/images/ab1d6dee2e4870a45ada34fb584f8328.png)
+![689328937a9d2d8007ce11ea94eb9dd9c6c5c23c.png](https://assets.emqx.com/images/ab1d6dee2e4870a45ada34fb584f8328.png)
 
 ### Arduino 配置
 
@@ -202,11 +202,11 @@
 
 1. 请使用 [Arduino IDE](https://www.arduino.cc/en/Main/Software) 将完整代码上传到 ESP8266，并打开串口监视器
 
-   ![esp_con.png](https://static.emqx.net/images/d5632144ec7cf22977b53519f4411227.png)
+   ![esp_con.png](https://assets.emqx.com/images/d5632144ec7cf22977b53519f4411227.png)
 
 2. 建立 MQTT X 客户端 与 MQTT 服务器的连接, 并测试温湿度数据接收
 
-   ![mqttx_sub.png](https://static.emqx.net/images/esp8266_temp_hum.png)
+   ![mqttx_sub.png](https://assets.emqx.com/images/esp8266_temp_hum.png)
 
 3. 使用 Python 客户端订阅温湿度数据
 

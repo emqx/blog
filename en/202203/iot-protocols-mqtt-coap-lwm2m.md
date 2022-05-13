@@ -112,7 +112,7 @@ MQTT Protocol is an IoT communication protocol based on publish/subscribe mode, 
 
 MQTT Protocol is widely used in the fields of IoT, Mobile Internet, Intelligent Hardware, IoV, Energy&Utilities, etc., which can not only be used as a gateway to access communication on the device side, but also as a Device-Cloud Communication Protocol. Most gateway protocols such as ZigBee and LoRa are finally converted into MQTT Protocol to access Cloud.
 
-![MQTT](https://static.emqx.net/images/cb9f29b8586d68cff9689e7e3b5867d8.png)
+![MQTT](https://assets.emqx.com/images/cb9f29b8586d68cff9689e7e3b5867d8.png)
 
 ### Characteristics of the Protocol
 

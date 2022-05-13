@@ -45,7 +45,7 @@ devices/{device_id}/messages
 
 如下图所示，采用边缘分析/流式数据处理的方式，在边缘端我们采用了 EMQX 的方案，最后将计算结果输出到 AWS IoT 中。
 
-![emqx_aws.png](https://static.emqx.net/images/ef141d43e1c05f0f35d45f334730febd.png)
+![emqx_aws.png](https://assets.emqx.com/images/ef141d43e1c05f0f35d45f334730febd.png)
 
 - EMQX Edge 可以接入各种协议类型的设备，比如 MQTT、CoAP、LwM2M 等，这样用户可以不需要关心协议适配方面的问题；另外它本身也比较轻量级，适合部署在边缘设备上
 - EMQX Kuiper 是 EMQ 发布的基于 SQL 的轻量级边缘流式数据分析引擎，安装包只有约 7MB，非常适合于运行在边缘设备端
@@ -213,7 +213,7 @@ SELECT avg(temperature) AS t_av, max(temperature) AS t_max, min(temperature) AS 
 
 - 设备：代表处理设备数据的网关，该网关安装了 Kuiper，网关在把相关相关数据处理完毕后，将结果发送到 AWS 云端。此处创建的名称为 demo，如下图所示。
 
-![aws_device.png](https://static.emqx.net/images/f3fbfca657ce289ec90cc6d9f7c88b96.png)
+![aws_device.png](https://assets.emqx.com/images/f3fbfca657ce289ec90cc6d9f7c88b96.png)
 
 - 设备连接证书与密钥：AWS 的物联网设备通过证书来连接，保证其安全性。在创建设备的过程中，AWS会生成的以下三个文件。这里会用到的是证书与私钥。
 
@@ -271,7 +271,7 @@ time="2019-11-13T17:41:20+08:00" level=info msg="The connection to server ssl://
 
 - 通过 AWS IoT 提供的 MQTT Client 工具，订阅设备的``devices/result``主题。并往本地的 EMQX Edge 上发送模拟数据。经过 Kuiper 处理后，相应的处理结果被发送到了 AWS IoT 中。如下图所示，收到了两次测试结果（第一次结果被折叠）。
 
-![aws_iot_result.png](https://static.emqx.net/images/d26d4b4ef111c63b2cd56dc2d29a2847.png)
+![aws_iot_result.png](https://assets.emqx.com/images/d26d4b4ef111c63b2cd56dc2d29a2847.png)
 
 用户可以通过 AWS IoT Rule 将分析结果存储到 Amazon DynamoDB 数据库或者其它服务中，前端的应用程序可以通过读取 DynamoDB 中的数据来呈现给终端用户，具体请参考 [ Amazon DynamoDB 文档](https://docs.aws.amazon.com/iot/latest/developerguide/iot-ddb-rule.html)。
 

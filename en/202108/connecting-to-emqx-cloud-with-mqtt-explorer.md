@@ -52,7 +52,7 @@ For more details, please visit [EMQX Cloud website](https://www.emqx.com/en/clou
 
 The main page is shown in the figure below, with the topic search bar and connection configuration at the top. On the lower left of the page, it is the tree structure of the topic, and on the right, it is the Publish column, Subscribe column, Payload column, and History information control column.
 
-![MQTT Explorer preview](https://static.emqx.net/images/2d409b0d702597f30f5cd53a7940ab68.png)
+![MQTT Explorer preview](https://assets.emqx.com/images/2d409b0d702597f30f5cd53a7940ab68.png)
 
 ### MQTT connection/subscription
 
@@ -60,19 +60,19 @@ The main page is shown in the figure below, with the topic search bar and connec
 
 The configuration page will pop up when you enter MQTT Explorer for the first time.
 
-![MQTT Explorer Initialization page](https://static.emqx.net/images/a66c05e560827978c1831596f3391495.png)
+![MQTT Explorer Initialization page](https://assets.emqx.com/images/a66c05e560827978c1831596f3391495.png)
 
 #### Create a connection
 
 Click Connections to create a new connection, and fill in the Host as broker-cn.emqx.io, the port as 1883, and the protocol as MQTT protocol.
 
-![MQTT Explorer Create connection](https://static.emqx.net/images/640f91f59964d64d587856c8992158b0.png)
+![MQTT Explorer Create connection](https://assets.emqx.com/images/640f91f59964d64d587856c8992158b0.png)
 
 #### Subscribe to a topic
 
 Then, click Advanced. Because EMQX Cloud prohibits the `$SYS` topic and the `#` topic by default, we delete them and enter a test subscription topic with the name `test/1`, and the result is shown in the figure below.
 
-![MQTT Explorer Subscribe to a topic](https://static.emqx.net/images/7718a737bc39114356ea10cd97bbe89c.png)
+![MQTT Explorer Subscribe to a topic](https://assets.emqx.com/images/7718a737bc39114356ea10cd97bbe89c.png)
 
 #### Connect
 
@@ -80,31 +80,31 @@ Finally, click Back to return to the connection configuration page, and click Co
 
 After the connection is successful, you can see that the subscription tree structure has `test` and `1` nodes, and the status bar at the top right shows that it has been connected, and the title of the topic `test/1` is contained on the right.
 
-![MQTT Explorer Connect](https://static.emqx.net/images/5425f6c546aa033e9b07d44eed16ce71.png)
+![MQTT Explorer Connect](https://assets.emqx.com/images/5425f6c546aa033e9b07d44eed16ce71.png)
 
 ### MQTT message publishing
 
 After the connection is established, enter `/test/1` in the topic box at the bottom right corner of the page, and enter some text, and then click Publish to send the message.
 
-![MQTT Explorer MQTT message publishing](https://static.emqx.net/images/ff1b9faf9ec30e8510243710449eae38.png)
+![MQTT Explorer MQTT message publishing](https://assets.emqx.com/images/ff1b9faf9ec30e8510243710449eae38.png)
 
 ### Receive subscription messages
 
 After the publish is successful, the message just published will be received in the Value card at the top right.
 
-![MQTT Explorer Receive subscription messages](https://static.emqx.net/images/e14ee78f54a3a8e50354282eeb545397.png)
+![MQTT Explorer Receive subscription messages](https://assets.emqx.com/images/e14ee78f54a3a8e50354282eeb545397.png)
 
 ### Receiving history
 
 In the History card at the bottom right corner of the page, you can see the message records received by the relevant subscription topic.
 
-![MQTT Explorer Receiving history](https://static.emqx.net/images/f3f2581c6cba7f370ec7fd712bb51487.png)
+![MQTT Explorer Receiving history](https://assets.emqx.com/images/f3f2581c6cba7f370ec7fd712bb51487.png)
 
 ### Statistical information
 
 Statistical information will be displayed at the bottom right corner of the page.
 
-![MQTT Explorer Statistical information](https://static.emqx.net/images/30eed43a6c0bf4e2e3c3ce5df9bc01ae.png)
+![MQTT Explorer Statistical information](https://assets.emqx.com/images/30eed43a6c0bf4e2e3c3ce5df9bc01ae.png)
 
 
 <section class="promotion">

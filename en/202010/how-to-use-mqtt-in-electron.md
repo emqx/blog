@@ -180,13 +180,13 @@ client.on('message', (topic, message, packet) => {
 
 We can see the following output on the console after writing the above code and running the project: 
 
-![electronconsole.png](https://static.emqx.net/images/eb708f312630c441bd6f2453af36372e.png)
+![electronconsole.png](https://assets.emqx.com/images/eb708f312630c441bd6f2453af36372e.png)
 
 The MQTT module works fine. After setting up the module, we can write a simple UI interface to manually enter the configuration required for the MQTT connection, and click the connect button to connect to the MQTT server, as well as disconnect, subscribe to topics, send and receive messages, and so on.
 
 **Interface of application**
 
-![electronui.png](https://static.emqx.net/images/f628816b73b31e6d3c695cd39c439ca6.png)
+![electronui.png](https://assets.emqx.com/images/f628816b73b31e6d3c695cd39c439ca6.png)
 
 The complete code is available here: [https://github.com/emqx/MQTT-Client-Examples/tree/master/mqtt-client-Electron](https://github.com/emqx/MQTT-Client-Examples/tree/master/mqtt-client-Electron).
 
@@ -314,11 +314,11 @@ At this point, we test the sending and receiving of messages with a [MQTT 5.0 cl
 
 When using MQTT X to send a message to the client, you can see that the message is received properly:
 
-![electronmessage.png](https://static.emqx.net/images/bfb62b9f23f6836627d8e129d38b9160.png)
+![electronmessage.png](https://assets.emqx.com/images/bfb62b9f23f6836627d8e129d38b9160.png)
 
 Send a message to MQTT X using the client you wrote yourself, and now you can see that MQTT X is also receiving the message properly:
 
-![mqttx.png](https://static.emqx.net/images/cc97fe533fcce20765530970d7696f58.png)
+![mqttx.png](https://assets.emqx.com/images/cc97fe533fcce20765530970d7696f58.png)
 
 
 
@@ -329,3 +329,13 @@ So far, we have completed that use Electron to create a simple MQTT desktop clie
 
 
 [^1]:  https://en.wikipedia.org/wiki/Electron_(software_framework)
+
+
+
+<section class="promotion">
+    <div>
+        Try EMQX Cloud for Free
+        <div class="is-size-14 is-text-normal has-text-weight-normal">A fully managed, cloud-native MQTT service</div>
+    </div>
+    <a href="https://www.emqx.com/en/signup?continue=https://cloud-intl.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">Get Started →</a >
+</section>

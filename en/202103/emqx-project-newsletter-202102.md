@@ -78,3 +78,12 @@ The team are delivering great sprints from our product managers, bringing the an
 #### reaches 20k/s TPS on 8 core CPU, 16 GB RAM
 
 Exhook ( emqx-exhook ) is a plugin in emqx. It’s main objective is forwarding all hook events via grpc to servers implemented in another language, greatly improving the extensibility of emqx. The recent benchmark achieved 20k/s TPS on 8 core CPU, 16 GB RAM.
+
+
+<section class="promotion">
+    <div>
+        Try EMQX Cloud for Free
+        <div class="is-size-14 is-text-normal has-text-weight-normal">A fully managed, cloud-native MQTT service</div>
+    </div>
+    <a href="https://www.emqx.com/en/signup?continue=https://cloud-intl.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">Get Started →</a >
+</section>

@@ -8,7 +8,7 @@
 
 在万物互联的时代，EMQX Cloud 可以帮助用户快速构建面向物联网领域的行业应用，轻松实现物联网数据的采集、传输、计算和持久化。
 
-![EMQX Cloud 架构图](https://static.emqx.net/images/ffd61b092d9165be0bd9c78d1e62a721.png)
+![EMQX Cloud 架构图](https://assets.emqx.com/images/ffd61b092d9165be0bd9c78d1e62a721.png)
 
 借助云服务商提供的基础计算设施，EMQX Cloud 面向全球数十个国家与地区提供服务，为 5G 与万物互联应用提供低成本、安全可靠的云服务。
 
@@ -19,7 +19,7 @@
 
 [云连接器](https://help.aliyun.com/document_detail/323473.html)通过专用 APN 在物联网终端和阿里云之间建立定向网络连接。您也可以通过云上组网，实现物联网终端到物联网应用或本地数据中心 IDC（Internet Data Center）的定向连接。通过专用 APN 在物联网终端和阿里云之间建立定向网络连接。
 
-![物联网专用 APN](https://static.emqx.net/images/51b81906161bd2eb01aae8e851339acf.png)
+![物联网专用 APN](https://assets.emqx.com/images/51b81906161bd2eb01aae8e851339acf.png)
 
 [云连接器](https://help.aliyun.com/document_detail/323473.html)具有以下**优势**
 
@@ -48,7 +48,7 @@
 
 2. 开通[内网 SLB](https://docs.emqx.com/zh/cloud/latest/vas/intranet-lb.html)，获取内网连接地址
 
-   ![开通内网 SLB](https://static.emqx.net/images/7169c5aea99a1305e74a7f746e84132a.png)
+   ![开通内网 SLB](https://assets.emqx.com/images/7169c5aea99a1305e74a7f746e84132a.png)
 
 ### 二、云连接器 cciot 服务相关配置
 
@@ -56,19 +56,19 @@
 
 2. 创建云连接器实例
 
-   ![创建云连接器实例](https://static.emqx.net/images/c127d903bad7f53553abb00bd4d80ce0.png)
+   ![创建云连接器实例](https://assets.emqx.com/images/c127d903bad7f53553abb00bd4d80ce0.png)
 
 3. 添加 IP
 
    填入物联网卡 IP。
 
-   ![填入物联网卡 IP](https://static.emqx.net/images/642486b81430b9a50da47e88dfc7c02f.png)
+   ![填入物联网卡 IP](https://assets.emqx.com/images/642486b81430b9a50da47e88dfc7c02f.png)
 
 4. 配置授权规则
 
    填入专有网络 vpc 对应网段。
 
-   ![填入专有网络 vpc 对应网段](https://static.emqx.net/images/a84e37236b030bb5035c896e40ec0a21.png)
+   ![填入专有网络 vpc 对应网段](https://assets.emqx.com/images/a84e37236b030bb5035c896e40ec0a21.png)
 
 ### 三、连接测试
 
@@ -84,18 +84,27 @@
 
    2. ping 命令，测试物联网终端和 ECS 的连通性。如果能接收到回复报文，表示连接成功。即：ping <ECS的私网IP地址>
    
-      ![ping 命令测试](https://static.emqx.net/images/ede381687f2c174d688e1d0838e27464.png)
+      ![ping 命令测试](https://assets.emqx.com/images/ede381687f2c174d688e1d0838e27464.png)
 
 3. 查看 EMQX Cloud 监控对应的客户端、订阅，即可看到客户端 mqttx_13af315a 已经成功连接到部署，并且订阅了 topic 为 test、QoS 为 0 的消息。
 
-   ![EMQX Cloud 客户端监控](https://static.emqx.net/images/d083fcfd5029e326cfba04c3b6c609ea.png)
+   ![EMQX Cloud 客户端监控](https://assets.emqx.com/images/d083fcfd5029e326cfba04c3b6c609ea.png)
 
 4、查看云连接器监控
 
-   ![查看云连接器监控](https://static.emqx.net/images/04160f9753126f3e710b623c00f1bbc4.png)
+   ![查看云连接器监控](https://assets.emqx.com/images/04160f9753126f3e710b623c00f1bbc4.png)
 
 ## 小结
 
 至此，我们完成了阿里云云连接器 cciot 连接到 EMQX Cloud 的全部流程。
 
 通过使用阿里云 cciot 连接到 EMQX Cloud 部署，您的终端设备可以不需要 VPN 或者别的 ssh tunnel，直接用 EMQX Cloud 专业版的内网地址就能链接，相当于将您的终端设备和 mqtt 集群置于同一个网络下。相较于公网连接，更安全，性能更好。
+
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX Cloud
+        <div class="is-size-14 is-text-normal has-text-weight-normal">无须绑定信用卡</div>
+    </div>
+    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a >
+</section>

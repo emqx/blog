@@ -8,7 +8,7 @@ The client can specify a subscription identifier when subscribing. The broker wi
 
 Therefore, the client can establish the mapping between the subscription identifier and message processing program for directly orientating messages to the corresponding message processing program through the subscription identifier when receiving a PUBLISH packet. It is much faster than finding the message processing program through topic matching.
 
-![image20200723152010505.png](https://static.emqx.net/images/14752d1986cadf5bd7b6c96a3f4229f7.png)
+![image20200723152010505.png](https://assets.emqx.com/images/14752d1986cadf5bd7b6c96a3f4229f7.png)
 
 Because the SUBSCRIBE packet supports containing many subscriptions, multiple subscriptions may associate with one subscription identifier. Even if subscribing separately, this situation may happen. Users need to realize the result might cause when using it in this way, although this situation is allowed to happen. According to the actual subscription situation of the client, the PUBLISH packet that the client finally received may contain multiple subscription identifiers, and these subscription identifiers may be completely different or the same. The following are several common situations:
 
@@ -17,7 +17,7 @@ Because the SUBSCRIBE packet supports containing many subscriptions, multiple su
 3. The client subscribes to the topic `a/+` and specifies the subscription identifier as 1, subscribes to the topic `a/b` and specifies the subscription identifier as 1. The PUBLISH packet of topic `a/b` will carry two identical subscription identifiers, the corresponding message processing program will be triggered twice.
 4. The client subscribes to the topic `a/+` and specifies the subscription identifier as 1, subscribes to the topic `a/b` and specifies the subscription identifier as 2. The PUBLISH packet of topic `a/b` will carry two different subscription identifiers, a message will trigger two different message processing program.
 
-![image20200723152040226.png](https://static.emqx.net/images/fd6fb5f61d116aa66d837711e337a30f.png)
+![image20200723152040226.png](https://assets.emqx.com/images/fd6fb5f61d116aa66d837711e337a30f.png)
 
 The situation that PUBLISH packet carries multiple subscription identifiers is ok when the message rate is low, but it may cause some performance issues when the message rate is high. Therefore, we suggested that you try to ensure that this happens intentionally.
 
@@ -27,7 +27,7 @@ The situation that PUBLISH packet carries multiple subscription identifiers is o
 
 In the MQTT v5, you can use more subscription options to change the server behavior.
 
-![image20200723161859058.png](https://static.emqx.net/images/0a255be6657118484a6ca663c9755c6b.png)
+![image20200723161859058.png](https://assets.emqx.com/images/0a255be6657118484a6ca663c9755c6b.png)
 
 ### QoS
 
@@ -52,3 +52,12 @@ This option is used to specify whether the server forwards the retained message 
 - **Retain Handling is equal to 0**, as long as the client successfully subscribes, the server will send the retained message. 
 - **Retain Handling is equal to 1**, if the client successfully subscribes and this subscription does not exist previously, the server sends the retained message. After all, sometimes the client re-initiate the subscription just to change the QoS, but it does not mean that it wants to receive the reserved messages again. 
 - **Retain Handling is equal to 2**, even if the client successfully subscribes, the server does not send the retained message.
+
+
+<section class="promotion">
+    <div>
+        Try EMQX Cloud for Free
+        <div class="is-size-14 is-text-normal has-text-weight-normal">A fully managed, cloud-native MQTT 5.0 service</div>
+    </div>
+    <a href="https://www.emqx.com/en/signup?continue=https://cloud-intl.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">Get Started →</a >
+</section>

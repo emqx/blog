@@ -6,7 +6,7 @@ EMQX Enterprise Edition 3.4.0 provides Schema Registry functionality and provide
 
 The following image shows an application case for the Schema Registry. Multiple devices report data in different formats. After being decoded by the Schema Registry, they are converted into a unified internal format and then forwarded to the background application.
 
-![1.png](https://static.emqx.net/images/1a11b01e24279067b4f17a2afe1898e1.png)
+![1.png](https://assets.emqx.com/images/1a11b01e24279067b4f17a2afe1898e1.png)
 
 [Figure 1: Using the Schema Registry to encode and decode device data]
 
@@ -20,7 +20,7 @@ Schema Registry maintains Schema text for built-in encoding formats such as Avro
 
 Schema Registry can be decoded or coded. Schema ID needs to be specified when encoding and decoding.
 
-![arch.png](https://static.emqx.net/images/a16f4ad438e98bb108138c5ccac68e4b.png)
+![arch.png](https://assets.emqx.com/images/a16f4ad438e98bb108138c5ccac68e4b.png)
 
 [Figure 2: Schema Registry schematic]
 
@@ -46,7 +46,7 @@ The message processing  of EMQX can be divided into three parts: Messaging, Rule
 
 EMQX's [PUB/SUB](https://www.emqx.com/en/blog/mqtt-5-introduction-to-publish-subscribe-model) system routes messages to specified topics. Rule engine can flexibly configure business rules of data, match messages according to rules, and then specify corresponding actions. Data format conversion occurs before the rule matching process. The data is first converted to a Map format that can participate in rule matching, and then matched.
 
-![SchemaAndRuleEngine.png](https://static.emqx.net/images/80507f270e8aee6b00bb7ce7d2ca2136.png)
+![SchemaAndRuleEngine.png](https://assets.emqx.com/images/80507f270e8aee6b00bb7ce7d2ca2136.png)
 
 [Figure 3:Messaging, Rule Engine and Schema Registry]
 

@@ -45,7 +45,7 @@ Now we need to analyze the data in real time, and ask for the following requirem
 
 As shown in the figure below, the edge analysis / streaming data processing method is adopted. At the edge, we adopt the EMQX approach, and finally output the calculation results to the IOT hub of Azure.
 
-![emqx_azure.png](https://static.emqx.net/images/f0a51c534df9074aa3ed7d743737e746.png)
+![emqx_azure.png](https://assets.emqx.com/images/f0a51c534df9074aa3ed7d743737e746.png)
 
 - EMQX Edge can access devices with various protocol types, such as MQTT, CoAP, LwM2M, etc.. Therefore, users do not need to care about protocol adaptation; it is also lightweight and suitable for deployment on edge devices. 
 - EMQX Kuiper is a SQL-based lightweight edge streaming data analysis engine released by EMQ. The installation package is only about 7MB, which is very suitable for running on the edge device side.
@@ -217,7 +217,7 @@ After debugging the SQL, users start configuring the rules file and send the res
 
 Related devices are created in the Azure IoT Hub as shown below.
 
-![azure_iot.jpg](https://static.emqx.net/images/0479756329070c1415cb5a65ec36aaed.jpg)
+![azure_iot.jpg](https://assets.emqx.com/images/0479756329070c1415cb5a65ec36aaed.jpg)
 
 
 

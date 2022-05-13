@@ -2,11 +2,11 @@ For enterprises that are eager to carry out IoT business, one highlight of [EMQX
 
 Rule engine is undoubtedly an edge tool of EMQX Cloud to help users implement flexible data processing and integration. To enable users to get started easily and exert the value of this killer feature in practical project applications, the EMQX Cloud team recently upgraded and optimized it.
 
-![EMQX Cloud Integration](https://static.emqx.net/images/56dcf461141467454f668df0cf41d1de.png)
+![EMQX Cloud Integration](https://assets.emqx.com/images/56dcf461141467454f668df0cf41d1de.png)
 
 The rule engine has been officially renamed Data Integration. Meanwhile, the revised and upgraded UI has made it easier for users to understand, operate and manage. Compared with the previous version, the new Data Integration helps users quickly know the creation of resources and rules step by step by navigation. The users only need to follow the procedure of “creating resources - creating rules - adding actions - test and runing” to complete the configuration of rules. The specific procedure is as follows:
 
-![creating resources - creating rules - adding actions - test and runing](https://static.emqx.net/images/47d566e14a5a234e430f52062dd3f377.png)
+![creating resources - creating rules - adding actions - test and runing](https://assets.emqx.com/images/47d566e14a5a234e430f52062dd3f377.png)
 
 - First, specify the data architecture of your own business and the data integration system that needs to be docked with EMQX Cloud in [Create Resources], namely, what kind of third-party database, message queue, or business system interface to forward the data to. This is to create the connection information of relevant integrated systems for use in next steps.
 - In [Create Rule], use SQL statement to create a rule to match the data from the device based on your business requirements, namely, define [what data needs to be processed and integrated].
@@ -22,7 +22,7 @@ After the three steps above, the users can complete the setting of processing an
 
 Get acquainted with the following concepts before using data integration features, and in the introduction overview of [Data Integration], you can operate by following the guidance.
 
-![EMQX Cloud guidance](https://static.emqx.net/images/fc3e32150d9fdf2035d6fc26b8de231f.png)
+![EMQX Cloud guidance](https://assets.emqx.com/images/fc3e32150d9fdf2035d6fc26b8de231f.png)
 
 Meanwhile, please also note the version of  EMQX Cloud you are using:
 
@@ -40,4 +40,13 @@ Meanwhile, please also note the version of  EMQX Cloud you are using:
 
 Use EMQX Cloud data integration feature to collect simulated temperature and humidity data, and dumping it to MySQL as an example: [https://docs.emqx.com/en/cloud/latest/rule_engine/rule_engine_save_mysql.html#mysql-configuration](https://docs.emqx.com/en/cloud/latest/rule_engine/rule_engine_save_mysql.html#mysql-configuration) 
 
-Reference documents: [https://docs.emqx.com/en/cloud/latest/rule_engine/introduction.html](https://docs.emqx.com/en/cloud/latest/rule_engine/introduction.html)
+Reference documents: [https://docs.emqx.com/en/cloud/latest/rule_engine/introduction.html](https://docs.emqx.com/en/cloud/latest/rule_engine/introduction.html) 
+
+
+<section class="promotion">
+    <div>
+        Try EMQX Cloud for Free
+        <div class="is-size-14 is-text-normal has-text-weight-normal">No credit card required</div>
+    </div>
+    <a href="https://www.emqx.com/en/signup?continue=https://cloud-intl.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">Get Started →</a >
+</section>

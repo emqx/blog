@@ -60,3 +60,11 @@ http_server.password=public
 ## Community Issue and bug fixes
 
 NanoMQ 0.5.0 also fixes several important security-related vulnerabilities submitted by the community. The NanoMQ team will keep listening to users and deliver stable, powerful, and secure edge MQTT message services and message buses to the community and industry.
+
+
+<section class="promotion">
+    <div>
+        Try NanoMQ for Free
+    </div>
+    <a href="https://www.emqx.com/en/try?product=nanomq" class="button is-gradient px-5">Get Started →</a >
+</section>

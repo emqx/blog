@@ -142,7 +142,7 @@ $ dart run bin/mqtt_demo.dart
 
 通过控制台输出，我们看到客户端已经成功的连上了 MQTT 服务器
 
-![连接 MQTT 服务器](https://static.emqx.net/images/823456b44224b32df25eb2cc77d30cc3.png)
+![连接 MQTT 服务器](https://assets.emqx.com/images/823456b44224b32df25eb2cc77d30cc3.png)
 
 **说明**
 
@@ -190,7 +190,7 @@ $ dart run bin/mqtt_demo.dart
 
 我们看到已成功订阅 [MQTT 主题](https://www.emqx.com/zh/blog/advanced-features-of-mqtt-topics)
 
-![成功订阅 MQTT 主题](https://static.emqx.net/images/bb9a85e75c2b88e8c14cce06f9eb90f1.png)
+![成功订阅 MQTT 主题](https://assets.emqx.com/images/bb9a85e75c2b88e8c14cce06f9eb90f1.png)
 
 ### 发布消息
 
@@ -212,7 +212,7 @@ client.publishMessage(pubTopic, MqttQos.exactlyOnce, builder.payload!);
 
 我们看到已经成功发布消息并收到该消息
 
-![发布 MQTT 消息](https://static.emqx.net/images/0d01872c4136f6e62539620c5f115e8a.png)
+![发布 MQTT 消息](https://assets.emqx.com/images/0d01872c4136f6e62539620c5f115e8a.png)
 
 ### 完整测试
 
@@ -327,10 +327,19 @@ void pong() {
 
 控制台完整完整输出
 
-![Dart MQTT 测试](https://static.emqx.net/images/038cd813b42f010286df5f802b511ea4.png)
+![Dart MQTT 测试](https://assets.emqx.com/images/038cd813b42f010286df5f802b511ea4.png)
 
 ## 总结
 
 至此，我们完成了在 Dart 中使用 [mqtt_client](https://pub.dev/packages/mqtt_client)  库连接到 [公共 MQTT 服务器](https://www.emqx.com/zh/mqtt/public-mqtt5-broker)，并实现了测试客户端与 MQTT 服务器的连接、消息发布和订阅。
 
 接下来我们将会陆续发布更多关于物联网开发及 [MQTT](https://www.emqx.com/zh/mqtt) 的相关文章，敬请关注。
+
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX Cloud
+        <div class="is-size-14 is-text-normal has-text-weight-normal">全托管的云原生 MQTT 消息服务</div>
+    </div>
+    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a >
+</section>

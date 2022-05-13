@@ -4,7 +4,7 @@
 
 EMQX Broker 的多语言扩展通过 `emqx-extension-hook` 插件中的驱动（Driver）实现，不同的编程语言由不同类型的驱动提供支持。目前的 Python 和 Java 驱动基于 `Erlang/OTP - Port`（https://erlang.org/doc/tutorial/c_port.html） 进程间通信实现，所以驱动本身具有非常高的吞吐性能。
 
-![361588066850_.pic.jpg](https://static.emqx.net/images/21ff6cd7a9d18d2926c662fe4dde8fe1.jpg)
+![361588066850_.pic.jpg](https://assets.emqx.com/images/21ff6cd7a9d18d2926c662fe4dde8fe1.jpg)
 
 除此之外，v4.1-beta.1 还增加了规则引擎的暂停与编辑等功能，欢迎大家[下载 EMQX](https://www.emqx.com/zh/try?product=broker) 使用。
 

@@ -37,7 +37,7 @@ The traditional relational databases use a special query language called SQL to 
 
 In a Mnesia cluster all nodes are equal. Each one of them can store replicas of any table, start transactions and access the tables. The Mnesia cluster uses a full-mesh topology: every node talks to all the other nodes in the cluster. Every transaction is replicated to all the nodes in the cluster, as shown in the picture below:
 
-![Mnesia cluster](https://static.emqx.net/images/6f460e5aa008beeea37b1b763f29b78a.png)
+![Mnesia cluster](https://assets.emqx.com/images/6f460e5aa008beeea37b1b763f29b78a.png)
 Mnesia cluster
 
 In terms of [CAP theorem](https://en.wikipedia.org/wiki/CAP_theorem) (Consistency, Availability, Partition-tolerance: pick two), Mnesia defaults to AP.
@@ -66,7 +66,7 @@ Core nodes behave much like regular Mnesia nodes: they are connected in a full m
 
 Replicant nodes, on the other hand, don't participate in the transactions. They connect to one of the core nodes and passively replicate the transactions from it. This means replicant nodes aren't allowed to perform any write operations on their own. They instead ask a core node to update the data on their behalf. At the same time, they have a full local copy of the data, so the read access is just as fast.
 
-![Mria cluster](https://static.emqx.net/images/8b10c553ed62355e73676c3299c6e0d3.png)
+![Mria cluster](https://assets.emqx.com/images/8b10c553ed62355e73676c3299c6e0d3.png)
 Mria cluster
 
 One can think of Mria as a combination of the client-server and embedded database: writes go through a server, but the reads are local.  
@@ -88,3 +88,12 @@ In the next post, we will discuss in more detail how to configure EMQX to make f
 - [MQTT broker clustering part 1: Load balancing](https://www.emqx.com/en/blog/mqtt-broker-clustering-part-1-load-balancing)
 
 - [MQTT broker clustering part 2: Sticky session load balancing](https://www.emqx.com/en/blog/mqtt-broker-clustering-part-2-sticky-session-load-balancing)
+
+
+<section class="promotion">
+    <div>
+        Try EMQX Cloud for Free
+        <div class="is-size-14 is-text-normal has-text-weight-normal">A fully managed, cloud-native MQTT service</div>
+    </div>
+    <a href="https://www.emqx.com/en/signup?continue=https://cloud-intl.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">Get Started →</a >
+</section>
