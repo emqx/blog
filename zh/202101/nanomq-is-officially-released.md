@@ -8,7 +8,7 @@ NanoMQ 的正式问世填补了国产基础软件在此领域的空白，将与�
 **[NNG](https://nng.nanomsg.org/)** 作为 **[Nanomsg](https://nanomsg.org/index.html)** 项目的衣钵传承者，是一个强大的消息总线库，支持 SP 协议和 HTTP/WebSocket 等拓展。在其优秀的多线程模型和网络层 API 基础上，NNG 提供了各种丰富的消息模式支持，在物联网、工业控制、游戏、金融交易等领域都有广泛应用。
 EMQ 在项目早期就开始了对其的持续关注，发掘并优化了 NNG 的高效多线程模型。而后，EMQ 与 NNG 达成长期技术合作，将 NNG 作为底层消息总线打造了 NanoMQ。未来，EMQ 将依靠自己在 5G&IoT 领域深厚的开发经验和产品实施落地能力，帮助 NNG 集成更多泛用的物联网协议，拓宽其应用面。在 NanoMQ 项目合作的同时，也将通过开源社区技术反哺 NNG 项目，为其提供 MQTT 协议支持，使其可以作为一个性能优秀的 [MQTT SDK](https://www.emqx.com/zh/mqtt-client-sdk) 使用。 
 
-![logo.png](https://static.emqx.net/images/52ed45dd2467e5ee1db6c4279c8f3261.png)
+![logo.png](https://assets.emqx.com/images/52ed45dd2467e5ee1db6c4279c8f3261.png)
 
 ## NanoMQ 项目概述
 
@@ -20,7 +20,7 @@ NanoMQ 分为 3 个部分：
 2. **nanomq**：是一系列工具和服务的入口，其中消息引擎（Broker）功能是其主要功能，管理所有连接，负责提供如状态通知、钩子函数等功能。目前还有消息队列 mq 功能。
 3. **nanonng**：是基于 NNG 优化的可用于 [MQTT 协议](https://www.emqx.com/zh/mqtt)的多线程模型和异步 IO 库。
 
-![产品图.png](https://static.emqx.net/images/d29c92307e8a830de317e8c2fd460eab.png)
+![产品图.png](https://assets.emqx.com/images/d29c92307e8a830de317e8c2fd460eab.png)
 
 
 
@@ -41,7 +41,7 @@ NanoMQ 分为 3 个部分：
 未来 EMQ 将与 NNG 一同集成支持包括 ZMQ、MQTT 等在内的更多常用 IoT 协议支持，优化多线程模型，提高吞吐，完善网络 IPC 能力。使广大开发者告别繁杂的 SDK 集成，获得一站式物联网开发体验，探索消息引擎在边缘计算领域的更广泛应用，加速各类边缘计算应用的开发和落地。
 同时 NanoMQ 还将集成 NNG 已有的 SP 协议，提高与 NNG 的开源协同配合度，实现底层 API 互相兼容。
 
-![架构图.png](https://static.emqx.net/images/c40f88d0449f2152b862cf3af9c92195.png)
+![架构图.png](https://assets.emqx.com/images/c40f88d0449f2152b862cf3af9c92195.png)
 
 ## NanoMQ 在边缘计算中的应用
 
@@ -61,3 +61,11 @@ NanoMQ 分为 3 个部分：
 
 NanoMQ 后续将与 [EMQ 边缘管理套件](https://github.com/emqx/edge-stack)进行集成，为用户提供更好的使用体验。
 NanoMQ 基于 MIT 开源协议，后续将与 CNCF 以及 Linux LF 基金会等项目进行合作，真诚欢迎社区各方的建议和帮助。
+
+
+<section class="promotion">
+    <div>
+        免费试用 NanoMQ
+    </div>
+    <a href="https://www.emqx.com/zh/try?product=nanomq" class="button is-gradient px-5">开始试用 →</a >
+</section>

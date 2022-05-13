@@ -8,7 +8,7 @@ EMQX 始终致力于为全球客户提供高可靠、高性能的实时数据移
 
 EMQX Kubernetes Operator 是一种封装、部署和管理 EMQX 的方法，也是一个特定的应用控制器，允许 DevOps 人员在 Kubernetes 上编排 EMQX 集群，管理他们的生命周期。
 
-![EMQX Kubernetes Operator](https://static.emqx.net/images/33ce831314e38062f253b83b766b5c80.png)
+![EMQX Kubernetes Operator](https://assets.emqx.com/images/33ce831314e38062f253b83b766b5c80.png)
 
 ## 为什么需要 EMQX Kubernetes Operator？
 

@@ -201,13 +201,13 @@ destroyConnection() {
 
 项目完整代码请见：[https://github.com/emqx/MQTT-Client-Examples/tree/master/mqtt-client-Vue.js](https://github.com/emqx/MQTT-Client-Examples/tree/master/mqtt-client-Vue.js)。
 
-![vueui.png](https://static.emqx.net/images/b6563b0eb66eb51a2a02776889016a18.png)
+![vueui.png](https://assets.emqx.com/images/b6563b0eb66eb51a2a02776889016a18.png)
 
 
 
 使用 [MQTT 5.0 客户端工具 - MQTT X](https://mqttx.app/zh)  作为另一个客户端进行消息收发测试。
 
-![vuemqttx.png](https://static.emqx.net/images/2013cbab1bdffcae69b817bfebb4a33f.png)
+![vuemqttx.png](https://assets.emqx.com/images/2013cbab1bdffcae69b817bfebb4a33f.png)
 
 在 MQTT X 发送第二条消息之前，在浏览器端进行取消订阅操作，浏览器端将不会收到 MQTT X 发送的后续消息。
 
@@ -218,3 +218,12 @@ destroyConnection() {
 综上所述，我们实现了在 Vue 项目中创建 MQTT 连接，模拟了客户端与 MQTT 服务器进行订阅、收发消息、取消订阅以及断开连接的场景。
 
 Vue 作为三大主流的前端框架之一，既能够在浏览器端使用，也能够在移动端使用，结合 MQTT 协议及 [MQTT  物联网云服务](https://www.emqx.com/zh/cloud) 可以开发出很多有趣的应用，比如客服聊天系统或实时监控物联网设备信息的管理系统。
+
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX Cloud
+        <div class="is-size-14 is-text-normal has-text-weight-normal">全托管的云原生 MQTT 消息服务</div>
+    </div>
+    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a >
+</section>

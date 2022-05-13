@@ -28,7 +28,7 @@
 
 此外，在进入下一步之前，需要从 Synopsys 处下载 Defensics 的安装包、后缀名为 `.install` 的测试套件安装文件、以及 DEFENSIC 可执行文件以提供给 FlexNet 许可服务器验证 license 状态使用。
 
-![下载 Defensics 的安装包](https://static.emqx.net/images/f3dc5f87dc2e8bf9a32a6416a38cac17.png)
+![下载 Defensics 的安装包](https://assets.emqx.com/images/f3dc5f87dc2e8bf9a32a6416a38cac17.png)
 
 下载文件列表
 
@@ -40,7 +40,7 @@ Synopsys Defensics 使用 FlexNet 管理许可证书，需要在执行 Defensics
 
 当然，在需要更多测试人员使用 Defensics 的情况下，也可以将其部署在专用的证书服务器上以对更多的用户提供证书认证服务。其他详细信息和具体参数可参考 Defensics 及 FlexNet Publisher 相关文档。
 
-![lmgrd.service Systemd User Unit](https://static.emqx.net/images/4b1e7fce7b405396c8cf79ba78652c18.png)
+![lmgrd.service Systemd User Unit](https://assets.emqx.com/images/4b1e7fce7b405396c8cf79ba78652c18.png)
 
 `lmgrd.service` Systemd User Unit
 
@@ -54,13 +54,13 @@ Synopsys Defensics 使用 FlexNet 管理许可证书，需要在执行 Defensics
 
 以 root 身份执行 `.sh` 安装程序进行安装。并且安装过程中建议勾选启动脚本的生成选项 `/usr/local/bin/Defensics` 。
 
-![Defensics 安装选项](https://static.emqx.net/images/40526d60677f11ae7c202597fbbe5b49.png)
+![Defensics 安装选项](https://assets.emqx.com/images/40526d60677f11ae7c202597fbbe5b49.png)
 
 安装选项
 
 如果一切顺利，启动 Defensics 后在 `File -> License Manager` 中就可以看到经过验证的 License 状态。之后就可以安装并加载测试套件了。
 
-![Defensics 安装测试套件](https://static.emqx.net/images/e02693d733f6a8842b1cd5babb9fe39d.png)
+![Defensics 安装测试套件](https://assets.emqx.com/images/e02693d733f6a8842b1cd5babb9fe39d.png)
 
 安装测试套件
 
@@ -75,7 +75,7 @@ Synopsys Defensics 使用 FlexNet 管理许可证书，需要在执行 Defensics
 如果 MQTT Server 启用了客户端认证或消息主题权限，需要对测试用的两个客户端进行更详细的配置。
 另外 Defensics 也提供了更进阶的 Payload 模糊测试和基于 TLS/SSL 连接的测试。但本次测试仅涉及 MQTT v3.1.1 协议标准相关的模糊测试，所以无需进行配置。
 
-![MQTT Basic Configuration](https://static.emqx.net/images/1553f5d3865aa2698c0e93f6c5ca08dc.png)
+![MQTT Basic Configuration](https://assets.emqx.com/images/1553f5d3865aa2698c0e93f6c5ca08dc.png)
 
 Basic Configuration
 
@@ -87,7 +87,7 @@ Basic Configuration
 
 完成配置后在 `Interoperability` 中进行可操作性测试，来验证不同的报文能否正常进行发送接收。在与 MQTT Server 正常连通的情况下，可以执行的测试组将会以绿色标注。
 
-![Defensics Interoperability Test](https://static.emqx.net/images/a89b566ffdc482858cbd8b613fff761c.png)
+![Defensics Interoperability Test](https://assets.emqx.com/images/a89b566ffdc482858cbd8b613fff761c.png)
 
 Interoperability Test
 
@@ -97,17 +97,17 @@ Interoperability Test
 
 其中包括了对测试用例执行过程的控制，例如超时阈值、重复次数、尝试次数等。
 
-![Defensics Test Case Run Control](https://static.emqx.net/images/e94910e510168e37f0cd9fe619f1b12c.png)
+![Defensics Test Case Run Control](https://assets.emqx.com/images/e94910e510168e37f0cd9fe619f1b12c.png)
 
 Test Case Run Control
 
 另外用户也可以根据实际情况进行网络相关的配置，以获取在不同网络情景下的测试结果。此时也可以选择根据 MQTT Server 的目标 IP 进行自动配置。
 
-![Defensics ip 自动配置](https://static.emqx.net/images/2c53185bc298a950b9387f301b4fb975.png)
+![Defensics ip 自动配置](https://assets.emqx.com/images/2c53185bc298a950b9387f301b4fb975.png)
 
 Capture Conf
 
-![TCP Conf](https://static.emqx.net/images/191ab05ba62b366fbdf69814d846e674.png)
+![TCP Conf](https://assets.emqx.com/images/191ab05ba62b366fbdf69814d846e674.png)
 
 TCP Conf
 
@@ -125,17 +125,17 @@ Defensics 对于 MQTT v3.1.1 协议标准，提供了总计超过 100 万的测�
 
 此次我们选取部分用例进行测试，其中包括 `CONNECT-DISCONNECT` `PUBLISH-qos-0` `SUBSCRIBE-qos-0` 三组用例，并同时选择全部异常消息用例进行测试。
 
-![Defensics 选择测试用例](https://static.emqx.net/images/fef47b90282c571e94c3cc4af639d4c9.png)
+![Defensics 选择测试用例](https://assets.emqx.com/images/fef47b90282c571e94c3cc4af639d4c9.png)
 
 Test Case Chosen
 
 在针对于异常消息的测试中，也可以选择各类不同数据的异常行为数量和程度进行测试。例如文本、二进制数据、数字、字符等；同时也可以配置溢出异常的字节限制来使用值溢出的畸形报文进行测试。
 
-![Sequence anomalies Chosen](https://static.emqx.net/images/9f6730c95cec21e5e706a70ef80ec99f.png)
+![Sequence anomalies Chosen](https://assets.emqx.com/images/9f6730c95cec21e5e706a70ef80ec99f.png)
 
 Sequence anomalies Chosen
 
-![Defensics Customize anomalies size](https://static.emqx.net/images/b0d285fcd915a63216b78d5f54984f68.png)
+![Defensics Customize anomalies size](https://assets.emqx.com/images/b0d285fcd915a63216b78d5f54984f68.png)
 
 Customize anomalies size
 
@@ -143,7 +143,7 @@ Customize anomalies size
 
 选择好测试用例的种类和异常数据的数量，便可以开始测试。本次测试用时约 6 分钟，其中约 98% 通过测试，约 1%（2779条用例）结果未知。
 
-![Defensics 执行测试](https://static.emqx.net/images/818cbe6bdbdc592fea058c00a747e66f.png)
+![Defensics 执行测试](https://assets.emqx.com/images/818cbe6bdbdc592fea058c00a747e66f.png)
 
 Run time 06:03
 
@@ -159,7 +159,7 @@ Run time 06:03
 
 但按照协议，**此结果仍然符合要求。**
 
-![Defensics 结果分析](https://static.emqx.net/images/66fbd43d3a9d1ef7404ee98f7c15d6e5.png)
+![Defensics 结果分析](https://assets.emqx.com/images/66fbd43d3a9d1ef7404ee98f7c15d6e5.png)
 
 Malformed Subscribe Packet
 
@@ -193,3 +193,12 @@ EMQX 在面对这些异常报文时，直接作了丢弃处理，并未发回关
 EMQ 致力于为物联网领域提供高可用、高可靠的 MQTT 消息服务器及其他数据基础设施软件。在去年，我们也与 Synopsys 达成了合作，该公司将全面负责 EMQ 各产线产品整个生命周期的安全和质量风险管理。我们希望用户可以通过 EMQ 的产品，构建更加稳定可靠的物联网平台与应用。
 
 EMQX 开源项目也随时欢迎您的参与，欢迎通过 [GitHub：https://github.com/emqx/emqx](https://github.com/emqx/emqx) 向我们提交 PR 或 Issue。
+
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX Cloud
+        <div class="is-size-14 is-text-normal has-text-weight-normal">全托管的云原生 MQTT 消息服务</div>
+    </div>
+    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a >
+</section>

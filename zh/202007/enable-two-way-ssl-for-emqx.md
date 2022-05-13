@@ -20,7 +20,7 @@ TLS/SSL 协议下的通讯过程分为两部分，第一部分是握手协议。
 
 下面的图片描述了 TLS/SSL 握手协议的过程，从客户端的 "hello" 一直到服务器的 "finished" 完成握手。有兴趣的同学可以找更详细的资料看。对这个过程不了解也并不影响我们在 [EMQX](https://www.emqx.com/zh/products/emqx) 中启用这个功能。
 
-![whatisssl.gif](https://static.emqx.net/images/e654dbb6743731b20824a379d32a5cf3.gif)
+![whatisssl.gif](https://assets.emqx.com/images/e654dbb6743731b20824a379d32a5cf3.gif)
 
 
 
@@ -178,13 +178,13 @@ listener.ssl.external.fail_if_no_peer_cert = true
 
 - 参照下图在 MQTT X 中创建 `MQTT 客户端`（Host 输入框里的 `127.0.0.1` 需替换为实际的 EMQX 服务器 IP）
 
-  ![mqttxconfig.png](https://static.emqx.net/images/a2ff0f2e94beed4423062473325932ae.png)
+  ![mqttxconfig.png](https://assets.emqx.com/images/a2ff0f2e94beed4423062473325932ae.png)
 
   此时 `Certificate` 一栏需要选择 `Self signed` ，并携带自签名证书中生成的 `ca.pem` 文件， 客户端证书  `client.pem` 和客户端密钥  `client.key` 文件。
 
 - 点击  `Connect`  按钮，连接成功后，如果能正常执行 MQTT 发布/订阅 操作，则 SSL 双向连接认证配置成功。
 
-  ![mqttxconnected.png](https://static.emqx.net/images/568e9a84445d24cb414a21324a588e0c.png)
+  ![mqttxconnected.png](https://assets.emqx.com/images/568e9a84445d24cb414a21324a588e0c.png)
 
 
 
@@ -194,4 +194,14 @@ listener.ssl.external.fail_if_no_peer_cert = true
 
 至此，我们成功的完成了 EMQX 服务器的 SSL/TLS 配置及双向认证连接测试。
 
-![emqxdashboard.png](https://static.emqx.net/images/4f2fb43ebbbb833e9db9f1d9bb8c72ed.png)
+![emqxdashboard.png](https://assets.emqx.com/images/4f2fb43ebbbb833e9db9f1d9bb8c72ed.png)
+
+
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX Cloud
+        <div class="is-size-14 is-text-normal has-text-weight-normal">全托管的云原生 MQTT 消息服务</div>
+    </div>
+    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a >
+</section>

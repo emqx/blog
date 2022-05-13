@@ -27,7 +27,7 @@ Topic aliases are managed respectively by the client and server, and the life cy
 
 Before the MQTT client or server can start using topic aliases, they need to agree on the maximum number of topic aliases allowed in the current connection. This part of the information exchange is done in the `CONNECT` packet and the `CONNACK` packet. The `Topic Alias Maximum` is encoded in the variable headers of the `CONNECT` and `CONNACK` packets as a message attribute.
 
-![Set MQTT Topic Alias Maximum mutually](https://static.emqx.net/images/9b49a3437044bc206b400d5b81c39204.png)
+![Set MQTT Topic Alias Maximum mutually](https://assets.emqx.com/images/9b49a3437044bc206b400d5b81c39204.png)
 
 <center>Set Topic Alias Maximum mutually</center>
 
@@ -45,7 +45,7 @@ After receiving a `PUBLISH` packet with a topic alias and a non-empty topic name
 
 Since such mapping is maintained on both ends respectively (i.e. does not have to be identical), the client and the server can publish to different topics using the same alias number.
 
-![MQTT client and broker manage their aliases respectively](https://static.emqx.net/images/bcb4fa762372b2e96d6a9d26864242f4.png)
+![MQTT client and broker manage their aliases respectively](https://assets.emqx.com/images/bcb4fa762372b2e96d6a9d26864242f4.png)
 
 <center>MQTT client and broker manage their aliases respectively</center>
 
@@ -54,7 +54,7 @@ Since such mapping is maintained on both ends respectively (i.e. does not have t
 
 If a topic alias used in the `PUBLISH` packet is not created previously, that is, the receiving end has not built the mapping relationship between the current topic alias and a topic name, and the topic name field in the variable header of this message is empty, the receiving end should send a `DISCONNECT` packet with a REASON_CODE of `0x82` to close the connection.
 
-![Unknown topic alias](https://static.emqx.net/images/e80be18ba1fe38b628e436a32782c88c.png)
+![Unknown topic alias](https://assets.emqx.com/images/e80be18ba1fe38b628e436a32782c88c.png)
 
 <center>Unknown topic alias</center>
 
@@ -64,10 +64,19 @@ An already built alias to topic name mapping can be re-built with a new `PUBLISH
 
 As an example in the following diagram, the topic alias `123` which is previously used for the temperature topic now is updated to represent the humidity topic.
 
-![MQTT client and broker recreate topic aliases](https://static.emqx.net/images/fdab5dab7d1fa257d80a6a4a9085abac.png)
+![MQTT client and broker recreate topic aliases](https://assets.emqx.com/images/fdab5dab7d1fa257d80a6a4a9085abac.png)
 
 <center>MQTT client and broker recreate topic aliases</center>
 
 ## Conclusion
 
 As a new feature in MQTT v5, topic alias provides a more flexible way to use the pub-sub messaging model. For messages published repeatedly to a finite set of topics, especially at large volume, topic aliases can effectively save both network and computing resources.
+
+
+<section class="promotion">
+    <div>
+        Try EMQX Cloud for Free
+        <div class="is-size-14 is-text-normal has-text-weight-normal">A fully managed, cloud-native MQTT 5.0 service</div>
+    </div>
+    <a href="https://www.emqx.com/en/signup?continue=https://cloud-intl.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">Get Started →</a >
+</section>

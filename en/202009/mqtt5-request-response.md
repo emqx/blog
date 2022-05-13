@@ -6,7 +6,7 @@ In the [MQTT client](https://www.emqx.com/en/blog/mqtt-client-tools), we know th
 
 If the same request topic has lots of requestors, we need multiple different response topics for correctly return the response to the requestor. The most common method is inserting the field Client ID which can uniquely identify the requesting client at the head of Payload or elsewhere. The responder extracts these fields and the real Payload according to the pre-agreed rules and uses these fields for constructing a response topic.
 
-![image20200901155125123.png](https://static.emqx.net/images/b6f86c4ee3f7140bde66235cf65eb36a.png)
+![image20200901155125123.png](https://assets.emqx.com/images/b6f86c4ee3f7140bde66235cf65eb36a.png)
 
 However, this is not a good implementation. We expect that the request recipient only needs to pay attention to how to process requests, without spending extra energy considering how to correctly return the response to the requestor. Therefore, MQTT 5.0 adds the new attribute **Response Topic**, and define the following request-response interaction process:
 
@@ -14,13 +14,13 @@ However, this is not a good implementation. We expect that the request recipient
 2. If there are other MQTT clients (responder) subscribe to the topic filter which matches the topic name used when request publishing messages, then the request message will be received.
 3. The responder takes appropriate action according to the request message, then publish the response messages to the topic specified by this attribute **Response Topic**.
 
-![image20200901155200573.png](https://static.emqx.net/images/b1d14036452acced378d1e0c1d66188b.png)
+![image20200901155200573.png](https://assets.emqx.com/images/b1d14036452acced378d1e0c1d66188b.png)
 
 #### Correlation data
 
 Different from the HTTP request-response model, [MQTT](https://www.emqx.com/en/mqtt) request-response is asynchronous, which brings a problem, that is how to associate the response message with the request message. The most commonly used method is to carry one characteristic field in the request message. The responder will intact return the received fields when they receive the response message. Obviously, MQTT also considers this, so we add a new attribute **Correlation Data** for the PUBLISH packet.
 
-![image20200901154600805.png](https://static.emqx.net/images/d624fb3a3061f043f32ae02338f635a0.png)
+![image20200901154600805.png](https://assets.emqx.com/images/d624fb3a3061f043f32ae02338f635a0.png)
 
 #### Response message
 
@@ -28,7 +28,7 @@ We have already mentioned above that there may be cases that multiple requestors
 
 To solve this problem, MQTT 5.0 defines a new attribute called response message in the CONNACK packet. The server can use this attribute to guide the client on how to choose the response topic to use. This mechanism is optional for the server and client. When connecting, the client will request the server to send response messages through setting the request-response information attribute in the CONNECT packet. This will cause the server to insert the response information attribute in the CONNACK packet, and the requestor can use response information to construct the response topic.
 
-![image20200901161153410.png](https://static.emqx.net/images/e47ab01f85fa153f4ad57b49dd1d91ec.png)
+![image20200901161153410.png](https://assets.emqx.com/images/e47ab01f85fa153f4ad57b49dd1d91ec.png)
 
 ### Recommendation for use
 
@@ -40,3 +40,12 @@ To solve this problem, MQTT 5.0 defines a new attribute called response message 
 - Pay particular attention to cases that multiple responders subscribe to the same request topic and multiple requesters subscribe to the same response topic.
 
 [^1]: When QoS is greater than 0, the publisher can ensure that messages are delivered to the server and the server retained message will be delivered to the subscriber.
+
+
+<section class="promotion">
+    <div>
+        Try EMQX Cloud for Free
+        <div class="is-size-14 is-text-normal has-text-weight-normal">A fully managed, cloud-native MQTT 5.0 service</div>
+    </div>
+    <a href="https://www.emqx.com/en/signup?continue=https://cloud-intl.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">Get Started →</a >
+</section>

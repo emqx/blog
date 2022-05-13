@@ -36,7 +36,7 @@ CoAP 参考了很多 HTTP 的设计思路，同时也根据受限资源限制设
 
 [新建部署](https://docs.emqx.com/zh/cloud/latest/deployments/create_deployment.html#限制)，在 EMQX Cloud 部署页面，获取到公网连接地址：120.77.x.x。
 
-![EMQX Cloud 创建部署](https://static.emqx.net/images/ea55ccbe53315026bec4f2a05fa3cd07.png)
+![EMQX Cloud 创建部署](https://assets.emqx.com/images/ea55ccbe53315026bec4f2a05fa3cd07.png)
 
 ### 开通 CoAP 接入网关
 
@@ -71,11 +71,11 @@ make
 ./examples/coap-client -m put -e "hello,EMQX Cloud" "coap://120.77.x.x:5683/mqtt/topic1?c=client1&u=emqx&p=public" 
 ```
 
-![CoAP 消息发送](https://static.emqx.net/images/d7b4f28d0d0d9223eaf59b9a8ccb6194.png)
+![CoAP 消息发送](https://assets.emqx.com/images/d7b4f28d0d0d9223eaf59b9a8ccb6194.png)
 
 接下来，我们使用 [MQTT X](https://mqttx.app/zh) 订阅对应主题 topic1，即可看到消息已成功发布。
 
-![MQTT X 消息接收](https://static.emqx.net/images/2d3a34b5c2678b77be69a08e409f0b43.png)
+![MQTT X 消息接收](https://assets.emqx.com/images/2d3a34b5c2678b77be69a08e409f0b43.png)
 
 #### 2、订阅示例
 
@@ -89,7 +89,7 @@ make
 
 接下来，我们使用 MQTT X 发送 "hello,EMQX Cloud" 给 `topic1` 主题。
 
-![MQTT X 消息发送](https://static.emqx.net/images/0a12db9e69ea71637541339313da231d.png)
+![MQTT X 消息发送](https://assets.emqx.com/images/0a12db9e69ea71637541339313da231d.png)
 
 ```shell
 # CoAP 终端订阅 topic1 主题，-s 20表示订阅维持20秒
@@ -98,7 +98,7 @@ make
 
 在这期间，如果主题 topic1 上有消息产生，libcoap 便会收到该条消息。
 
-![CoAP 消息接收](https://static.emqx.net/images/e0881e98563d4f1d2228bbbccc6b3f75.png)
+![CoAP 消息接收](https://assets.emqx.com/images/e0881e98563d4f1d2228bbbccc6b3f75.png)
 
 ## **小结**
 

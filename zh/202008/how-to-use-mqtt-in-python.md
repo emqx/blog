@@ -227,7 +227,7 @@ if __name__ == '__main__':
 python3 pub.py
 ```
 
-![pub.png](https://static.emqx.net/images/e4b472134f5c648220a04d29472bfecb.png)
+![pub.png](https://assets.emqx.com/images/e4b472134f5c648220a04d29472bfecb.png)
 
 #### 消息订阅
 
@@ -237,7 +237,7 @@ python3 pub.py
 python3 sub.py
 ```
 
-![sub.png](https://static.emqx.net/images/770ba0ce419f2430db94d9e90cb30250.png)
+![sub.png](https://assets.emqx.com/images/770ba0ce419f2430db94d9e90cb30250.png)
 
 
 
@@ -252,3 +252,13 @@ python3 sub.py
 
 
 [^1]: https://zh.wikipedia.org/wiki/Python
+
+
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX Cloud
+        <div class="is-size-14 is-text-normal has-text-weight-normal">全托管的云原生 MQTT 消息服务</div>
+    </div>
+    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a >
+</section>

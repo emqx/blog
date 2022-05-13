@@ -9,7 +9,7 @@ Mac 用户可在 App Store 中进行下载：[https://apps.apple.com/cn/app/mqtt
 
 Linux 用户可在 Snapcraft 中进行下载：[https://snapcraft.io/mqttx](https://snapcraft.io/mqttx)
 
-![MQTT X v1.7.1 预览](https://static.emqx.net/images/43556de4591acb8b2a59e3dfc9b19f6e.png)
+![MQTT X v1.7.1 预览](https://assets.emqx.com/images/43556de4591acb8b2a59e3dfc9b19f6e.png)
 
 <center>v1.7.1 界面一览</center>
 
@@ -20,13 +20,13 @@ Linux 用户可在 Snapcraft 中进行下载：[https://snapcraft.io/mqttx](http
 
 该版本中，除支持 MQTT 5.0 订阅选项后，我们还新增了对于[MQTT 订阅标识符](https://www.emqx.com/zh/blog/subscription-identifier-and-subscription-options)的支持，允许在订阅报文中指定一个数字订阅标识符，并在消息分发时返回此标识符。客户端可以建立订阅标识符与消息处理程序的映射，以在收到 PUBLISH 报文时直接通过订阅标识符将消息定向至对应的消息处理程序，这会远远快于通过主题匹配来查找消息处理程序的速度。
 
-![MQTT X 支持 MQTT 5.0 订阅标识符](https://static.emqx.net/images/517ba3105f469e68bde29d500db9b249.png)
+![MQTT X 支持 MQTT 5.0 订阅标识符](https://assets.emqx.com/images/517ba3105f469e68bde29d500db9b249.png)
 
 ### 展示更多 MQTT 5.0 属性
 
 该版本中我们对于 MQTT 5.0 的属性展示做了优化，除展示用户属性外，还支持展示发送和接收时，消息体内包含的内容类型、订阅标识符、主题别名，响应主题，对比数据，同时也优化了对于用户属性的展示。
 
-![MQTT X 支持更多 MQTT 5.0 属性](https://static.emqx.net/images/1214bdfe30e0f08dd3548e13ce761c1c.png)
+![MQTT X 支持更多 MQTT 5.0 属性](https://assets.emqx.com/images/1214bdfe30e0f08dd3548e13ce761c1c.png)
 
 ### 支持编辑/启用/禁用 Topic
 
@@ -36,7 +36,7 @@ Linux 用户可在 Snapcraft 中进行下载：[https://snapcraft.io/mqttx](http
 
 右键点击已经订阅过的 Topic 列表项，在右键菜单中我们可以快速选择编辑、禁用或启动等操作。
 
-![MQTT X 编辑/启用/禁用 Topic](https://static.emqx.net/images/b5e6cfb89805c9f2dea19c0e13afc370.png)
+![MQTT X 编辑/启用/禁用 Topic](https://assets.emqx.com/images/b5e6cfb89805c9f2dea19c0e13afc370.png)
 
 ### 其它
 

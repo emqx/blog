@@ -4,7 +4,7 @@
 
 上述整套方案无需代码开发，涉及的产品均能提供开源软件、企业服务、云端 SaaS 服务不同层次的交付模式，能够根据项目需求实现免费版或企业版私有化落地以及云端部署。
 
-![image-20200916112653512](https://static.emqx.net/images/5ba8c46006e196b5ee8ca42cf60b2d86.png)
+![image-20200916112653512](https://assets.emqx.com/images/5ba8c46006e196b5ee8ca42cf60b2d86.png)
 
 
 
@@ -90,7 +90,7 @@ EMQX Cloud 为新注册用户提供 6 个月时长的免费试用，注册账号
 
 > 使用 EMQX Cloud 需要保证 ClickHouse 能够被通过公网地址访问。
 
-![image-20200915150048492](https://static.emqx.net/images/2ea6c46681440051e3679a04498c1039.png)
+![image-20200915150048492](https://assets.emqx.com/images/2ea6c46681440051e3679a04498c1039.png)
 
 
 
@@ -244,7 +244,7 @@ FROM
 }
 ```
 
-![image-20200915163114173](https://static.emqx.net/images/27a5b570c0cac5047c81b781584fecab.png)
+![image-20200915163114173](https://assets.emqx.com/images/27a5b570c0cac5047c81b781584fecab.png)
 
 
 
@@ -282,11 +282,11 @@ INSERT INTO test.sensor_data VALUES(
 
 资源类型选择 **ClickHouse**，填入资源名称，服务器地址与认证信息即可：
 
-![image-20200915164110500](https://static.emqx.net/images/b1624cbb7e5665b6d0052f5c21d04f07.png)
+![image-20200915164110500](https://assets.emqx.com/images/b1624cbb7e5665b6d0052f5c21d04f07.png)
 
 在响应动作创建页面选择新建的资源，并填入 SQL 模板即可。
 
-![image-20200915163932584](https://static.emqx.net/images/8ba4873997c3e8a8a7783287218cbab7.png)
+![image-20200915163932584](https://assets.emqx.com/images/8ba4873997c3e8a8a7783287218cbab7.png)
 
 
 
@@ -401,7 +401,7 @@ function generateMockData() {
 
 添加数据源，即显示的数据源信息。选取 **ClickHouse** 类型数据源，输入连接参数进行配置，默认情况下，关键配置信息如下：
 
-![image-20200916110233266](https://static.emqx.net/images/384986bdbaca56ab3bf8268fa9681ab4.png)
+![image-20200916110233266](https://assets.emqx.com/images/384986bdbaca56ab3bf8268fa9681ab4.png)
 
 
 
@@ -439,18 +439,18 @@ ORDER BY t
 
 点击下图红框中的 编辑 按钮，进入表名、时间列配置：
 
-![image-20200916110544930](https://static.emqx.net/images/ff07248e60a570409f1ee5bc64925fb4.png)
+![image-20200916110544930](https://assets.emqx.com/images/ff07248e60a570409f1ee5bc64925fb4.png)
 
 选择数据库、数据表，如果数据表内有 DateTime 与 Date 字段，可以在 Column:DateTime 与 Column:Date 中识别选择出来。
 
 - Column:Date：用于 Grafana 拖拽时间范围的时候过滤数据
 - Column:DateTime：用于时序显示时作为时间数据
 
-<img src="https://static.emqx.net/images/07b9a092530b50bfa314447a189f8d4b.png" alt="image-20200916111101870" style="zoom:67%;" />
+<img src="https://assets.emqx.com/images/07b9a092530b50bfa314447a189f8d4b.png" alt="image-20200916111101870" style="zoom:67%;" />
 
 完成后再次点击编辑按钮，点击图标右上角选择一个时间范围，确保时间范围内有数据，点击 刷新 图标刷新一下数据，即可看到渲染出来的平均值面板。
 
-![image-20200916111420196](https://static.emqx.net/images/1eda9c065405599c21d9163d334e1a08.png)
+![image-20200916111420196](https://assets.emqx.com/images/1eda9c065405599c21d9163d334e1a08.png)
 
 完成创建后，点击左上角返回按钮，该 Dashboard 里成功添加一个数据面板。点击顶部导航栏 **保存** 图标，输入 Dashboard 名称完成 Dashboard 的创建。
 
@@ -480,10 +480,19 @@ ORDER BY t
 
 保存仪表盘，拖拽调整每个数据面板大小、位置，最终得到一个视觉效果较好的数据仪表盘。仪表盘右上角可以选择时间区间、自动刷新时间，此时设备持续发送数据采集数据，仪表盘数据值会有所变动，实现了比较好的可视化效果。
 
-![image-20200916112334081](https://static.emqx.net/images/684f512f88a96596d86e5590264e7ebe.png)
+![image-20200916112334081](https://assets.emqx.com/images/684f512f88a96596d86e5590264e7ebe.png)
 
 
 
 ## 总结
 
 至此我们借助 EMQX + ClickHouse 完成了物联网数据传输、存储、分析展现整个流程的系统搭建，读者可以了解到 EMQX 丰富的拓展能力与 ClickHouse 领先的数据处理分析能力在物联网数据采集中的应用。深入学习掌握 Grafana 的其他功能后，用户可以定制出更完善的数据可视化分析乃至监控告警系统。
+
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX Cloud
+        <div class="is-size-14 is-text-normal has-text-weight-normal">全托管的云原生 MQTT 消息服务</div>
+    </div>
+    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a >
+</section>

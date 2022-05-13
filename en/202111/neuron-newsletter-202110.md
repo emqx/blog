@@ -20,3 +20,11 @@ Other major new features are as follows:
 ## Neuron 1.x current state
 
 Currently, the latest version of Neuron is v1.3.3, and we will release v1.3.4 next month. We mainly repair the maintenance function of data log size to prevent the log from becoming too large due to the increase of time and affecting the system operation.
+
+
+<section class="promotion">
+    <div>
+        Try Neuron for Free
+    </div>
+    <a href="https://www.emqx.com/en/try?product=neuron" class="button is-gradient px-5">Get Started →</a >
+</section>

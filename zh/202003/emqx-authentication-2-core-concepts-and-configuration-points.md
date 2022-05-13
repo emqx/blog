@@ -133,7 +133,7 @@ auth.mysql.password_hash = sha256,salt
 
 以 PostgreSQL 认证为例，其功能逻辑如下图：
 
-![image202002171542542024409681.png](https://static.emqx.net/images/1366ec307e4ecbabe5e3d7a9a71489d8.png)
+![image202002171542542024409681.png](https://assets.emqx.com/images/1366ec307e4ecbabe5e3d7a9a71489d8.png)
 
 > 写入数据的加盐规则、哈希方法与对应插件的配置一致时认证才能正常进行。更改哈希方法会造成现有认证数据失效。
 
@@ -152,7 +152,7 @@ auth.mysql.password_hash = sha256,salt
   - 匿名认证开启时，允许客户端接入
   - 匿名认证关闭时，禁止客户端接入
 
-![guide_2.png](https://static.emqx.net/images/9b77437264e3c1bef5fa42059a84c407.png)
+![guide_2.png](https://assets.emqx.com/images/9b77437264e3c1bef5fa42059a84c407.png)
 
 
 
@@ -207,3 +207,12 @@ PSK 的配置文件为 `etc/psk.txt`，使用冒号`:` 分隔 PSK ID 和 PSK：
 client1:1234
 client2:abcd
 ```
+
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX Cloud
+        <div class="is-size-14 is-text-normal has-text-weight-normal">全托管的云原生 MQTT 消息服务</div>
+    </div>
+    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a >
+</section>

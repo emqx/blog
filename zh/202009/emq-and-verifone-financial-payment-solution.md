@@ -1,4 +1,4 @@
-![画板 18.png](https://static.emqx.net/images/243743a615af54ea2aa3a876fc778bf6.png)
+![画板 18.png](https://assets.emqx.com/images/243743a615af54ea2aa3a876fc778bf6.png)
 
 **2019 年 8 月，美国 Verifone（惠尔丰）和 EMQ 签订合作协议，由 EMQ 为 Verifone 的新一代金融电子支付系统提供基础设施软件——EMQX Enterprise，用以连接 Verifone 在全球千万级别的支付终端设备**。到现在为止，EMQX Enterprise 已经在 Verifone 的生产环境稳定运行超过一年。现在，让我们来回顾一下这个项目。
 
@@ -26,7 +26,7 @@ Verifone 的海量交易数、遍布全球的客户以及它悠久的行业耕�
 
 ## 方案
 
-![finance_pay.png](https://static.emqx.net/images/653e69ebebf147e3e3e648c8f9c554fa.png)
+![finance_pay.png](https://assets.emqx.com/images/653e69ebebf147e3e3e648c8f9c554fa.png)
 
 Verifone 的部署方案是一个包括既有系统和设备的演进式方案，整个方案的 rollout 将跨越多个财务年度。
 
@@ -53,3 +53,12 @@ EMQX Enterprise 提供了丰富的 API 接口，可以以少量开发投入支�
 ## 结语
 
 无论是 EMQ 的团队还是 EMQX Enterprise 产品，在 Verifone 的选型、PoC 和到目前的部署进展中都显示出了卓越的能力。 **随着合作的进一步加深，EMQ 也将不断完善在金融与支付领域的解决方案，为 Verifone 提供更好的产品和服务，并在未来帮助领域内更多企业从容应对数字化、信息化挑战** 。
+
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX Cloud
+        <div class="is-size-14 is-text-normal has-text-weight-normal">全托管的云原生 MQTT 消息服务</div>
+    </div>
+    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a >
+</section>

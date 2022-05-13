@@ -12,11 +12,11 @@ EMQX Cloud 是 EMQ 推出的全球首个全托管的 [MQTT 5.0](https://www.emqx
 
 两者都是在 EMQX Broker 的基础上，对支持协议、规则引擎、数据持久化等方面作出一定扩展，帮助连接物联网设备、采集物联网数据的工具。工作流都是采集设备端产生的数据，通过消息路由和消息验证对数据进行保密传输，再通过规则引擎转存到各类第三方数据系统中，进行二次加工处理展现。
 
-![EMQX Enterprise 产品架构](https://static.emqx.net/images/1088ec1c2865482d88b1ca54f0da5f9a.png)
+![EMQX Enterprise 产品架构](https://assets.emqx.com/images/1088ec1c2865482d88b1ca54f0da5f9a.png)
 
 <center>EMQX Enterprise 产品架构</center>
 
-![EMQX Cloud 产品架构](https://static.emqx.net/images/3f91c095d5d94ad3be939b0007f4f080.png)
+![EMQX Cloud 产品架构](https://assets.emqx.com/images/3f91c095d5d94ad3be939b0007f4f080.png)
 
 <center>EMQX Cloud 产品架构</center>
 

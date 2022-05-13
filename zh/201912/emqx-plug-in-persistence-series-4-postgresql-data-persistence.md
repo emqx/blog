@@ -101,13 +101,13 @@ backend.pgsql.hook.client.disconnected.1 = {"action": {"function": "on_client_di
 
 浏览器打开 `http://127.0.0.1:18083` EMQX 管理控制台，在 **工具** -> **Websocket** 中新建一个客户端连接，指定 clientid 为 sub_client，点击连接，连接成功后手动断开:
 
-![image20181116105333637.png](https://static.emqx.net/images/21b922d468e1c3be5ec2e16a7ab87654.png)
+![image20181116105333637.png](https://assets.emqx.com/images/21b922d468e1c3be5ec2e16a7ab87654.png)
 
 
 
  查看 `mqtt_client` 表，此时将写入 / 更新一条客户端上下线记录：
 
-![1.png](https://static.emqx.net/images/cb22c4bf8120a69b34e52f61668fa40e.png)
+![1.png](https://assets.emqx.com/images/cb22c4bf8120a69b34e52f61668fa40e.png)
 
 
 
@@ -158,7 +158,7 @@ insert into mqtt_sub(clientid, topic, qos) values('sub_client', 'sub_client/down
 
 2. EMQX  管理控制台 **WebSocket** 页面，以 clientid `sub_client`  新建一个客户端连接，切换至**订阅**页面，可见当前客户端自动订阅了 `sub_client/upstream` 与 `sub_client/downlink` 两个 QoS 1 的主题：
 
-![image20181116110036523.png](https://static.emqx.net/images/b334ec22b58478ecb23cb940ef537a8f.png)
+![image20181116110036523.png](https://assets.emqx.com/images/b334ec22b58478ecb23cb940ef537a8f.png)
 
 
 
@@ -204,7 +204,7 @@ backend.pgsql.hook.message.publish.1     = {"topic": "#", "action": {"function":
 
 在 EMQX 管理控制台 **WebSocket** 页面中，使用 clientdi `sub_client` 建立连接，向主题 `upstream_topic` 发布多条消息，EMQX 将消息列表持久化至 `mqtt_msg` 表中：
 
-![websocket.png](https://static.emqx.net/images/b81198d32658909aeed6f759c89065bf.png)
+![websocket.png](https://assets.emqx.com/images/b81198d32658909aeed6f759c89065bf.png)
 
 > 暂只支持 QoS 1 2 的消息持久化。
 
@@ -255,7 +255,7 @@ backend.pgsql.hook.message.publish.3     = {"topic": "#", "action": {"function":
 
 在 EMQX 管理控制台 **WebSocket** 页面中建立连接后，发布消息勾选**保留**：
 
-![image20181119111926675.png](https://static.emqx.net/images/6499f454eebced1149341d12c73565ec.png)
+![image20181119111926675.png](https://assets.emqx.com/images/6499f454eebced1149341d12c73565ec.png)
 
 
 
@@ -263,7 +263,7 @@ backend.pgsql.hook.message.publish.3     = {"topic": "#", "action": {"function":
 
 非空的 retain 消息发布时，EMQX 将以 topic 为唯一键，持久化该条消息至 `mqtt_retain` 表中，相同主题下发布不同的 retain 消息，只有最后一条消息会被持久化：
 
-![image20181119112306703.png](https://static.emqx.net/images/be54769f62f8d60acd4c43fe9122b50c.png)
+![image20181119112306703.png](https://assets.emqx.com/images/be54769f62f8d60acd4c43fe9122b50c.png)
 
 
 **订阅**
@@ -325,13 +325,13 @@ backend.pgsql.hook.session.unsubscribed.1= {"topic": "#", "action": {"sql": ["de
 
 在 EMQX 管理控制台 **WebSocket** 页面中建立连接后，订阅 QoS > 0 的主题：
 
-![image20181119140251843.png](https://static.emqx.net/images/b0300b43d42beb9f6232722a71ab56aa.png)
+![image20181119140251843.png](https://assets.emqx.com/images/b0300b43d42beb9f6232722a71ab56aa.png)
 
 
 
 此时 `mqtt_acked` 表将插入初始化数据行，每向主题发布一条 QoS > 0 的消息，消息抵达后数据行 mid 将自增 1：
 
-![image20181119165248998.png](https://static.emqx.net/images/c7eef4287ea6a7f66f644d36729e3497.png)
+![image20181119165248998.png](https://assets.emqx.com/images/c7eef4287ea6a7f66f644d36729e3497.png)
 
 > 代理订阅中满足 QoS > 0 的 topic 也会初始化记录，客户端取消订阅后相关记录将被删除。
 
@@ -398,7 +398,7 @@ backend.pgsql.hook.client.disconnected.3 = {"action": {"sql": ["update clients s
 
 客户端上线时将填充并执行预定的 SQL 语句，更新设备在线状态 `state` 字段为 `true`：
 
-![image20181119170648517.png](https://static.emqx.net/images/8f27a4f09d4af2f2d9f10d05cd31c2c2.png)
+![image20181119170648517.png](https://assets.emqx.com/images/8f27a4f09d4af2f2d9f10d05cd31c2c2.png)
 
 
 ## 高级选项

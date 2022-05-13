@@ -54,13 +54,13 @@ EMQ 作为全球知名的开源物联网消息与流处理软件提供商，早�
 
 ### EMQX 电信级 NB-IoT 接入方案
 
-![EMQ 面向运营商的NBIoT接入方案2x.jpg](https://static.emqx.net/images/25cb1eb52d193fdcf2f367af23c97454.jpg)
+![EMQ 面向运营商的NBIoT接入方案2x.jpg](https://assets.emqx.com/images/25cb1eb52d193fdcf2f367af23c97454.jpg)
 
 面向运营商的 EMQX NB-IoT 接入方案，提供包含海量 NB 设备接入、协议适配、消息路由、数据存储及流处理的全栈 NB-IoT 接入平台方案，助力运营商快速构建运营级物联网应用使能平台（AEP）和设备管理平台（DMP)；能够支持亿级 NB-IoT 设备接入；通过与核心网的配合，为 NB-IoT 低功耗休眠特性专门设计有免心跳和消息缓存机制；通过双活、冷备等机制确保运营级可靠性；同时可以与运营商的资源、认证、运营、运维、计费等 OSS/BSS 系统集成对接。
 
 ### EMQ 企业级 NB-IoT 接入方案
 
-![EMQ 企业级 NBIoT 接入方案2x.jpg](https://static.emqx.net/images/715e9f2c36c6d6057e5c8f3481dc71f8.jpg)
+![EMQ 企业级 NBIoT 接入方案2x.jpg](https://assets.emqx.com/images/715e9f2c36c6d6057e5c8f3481dc71f8.jpg)
 
 
 面向企业的 EMQX NB-IoT 接入方案，企业用户可基于 EMQX 接入海量 NB 设备，实现 CoAP/LwM2M 协议处理、设备状态监控、指令缓存与下发、数据采集与存储等能力；通过 EMQX 的规则引擎功能，可基于 SQL 对业务数据进行过滤、转换、计算等灵活处理，并通过丰富的接口与后端数据系统和应用系统进行快速对接，为企业开发垂直行业应用提供有力保障。
@@ -101,3 +101,12 @@ EMQX NB-IoT 解决方案能够帮助运营商、模组厂商、行业应用企�
 
 
 EMQ 现已推出面向 5G MEC 的消息与流处理解决方案，我们将在近期与大家分享该方案的详细情况，敬请关注。
+
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX Cloud
+        <div class="is-size-14 is-text-normal has-text-weight-normal">全托管的云原生 MQTT 消息服务</div>
+    </div>
+    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a >
+</section>

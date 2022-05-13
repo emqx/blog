@@ -16,20 +16,20 @@
 
 鼠标 **Hover** 到左侧链接列表里的某一项时，会显示删除图标，点击该图标可删除该链接。
 
-![1.png](https://static.emqx.net/images/eb40a2eb67bcd01557b2eeb0982e8bd9.png)
+![1.png](https://assets.emqx.com/images/eb40a2eb67bcd01557b2eeb0982e8bd9.png)
 
 ### 订阅管理
 
 链接创建成功后，点击右上角的 **Connect** 按钮连接至 [MQTT 服务器](https://www.emqx.io/zh)。连接成功后点击左上角的 **New Sub** 按钮弹出订阅列表框，在该页面可进行新建/取消订阅操作。
 
-![2.png](https://static.emqx.net/images/b9e415ec480b4a0b3dc4f2954af39b30.png)
+![2.png](https://assets.emqx.com/images/b9e415ec480b4a0b3dc4f2954af39b30.png)
 
 ### 消息发布/接收
 
 点击页面右侧底部的输入框，可弹出消息发布框，填写好 **Topic** 及 **Payload** 字段后点击右下角的发布图标可发布消息，发布成功后的消息将会显示在消息列表的右侧。
 
 订阅主题所收到的消息将会显示在消息列表的左侧，可点击右上角的消息类型切换按钮只显示已接收或是已发送的消息（默认显示所有消息）。
-![3.png](https://static.emqx.net/images/bb2e8a7832420da8f0008b4508c8202a.png)
+![3.png](https://assets.emqx.com/images/bb2e8a7832420da8f0008b4508c8202a.png)
 
 
 
@@ -38,4 +38,4 @@
 ------
 
 
-![二维码](https://static.emqx.net/images/b99a97727d6f86a9912846e145b8b124.jpg)
+![二维码](https://assets.emqx.com/images/b99a97727d6f86a9912846e145b8b124.jpg)

@@ -30,7 +30,7 @@
 领券链接：[点击前往领取100元代金券](https://account.huaweicloud.com/usercenter/#/getCoupons?activityID=P2008240947144281K3W0ZA1RV2D2C&contentID=PCP2008240946236230RRLRX51AFLQE1)
 
 <div style="width: 100%; margin: 10px 0; width: 260px;padding: 6px;border: 1px solid #34c388;">
-<div style="font-size: 12px">领券失败？微信添加 EMQ 小助手处理</div><img src="https://static.emqx.net/images/f78798015e84cc54e66e14ba7a8e854d.jpg" style="width: 80px"/>
+<div style="font-size: 12px">领券失败？微信添加 EMQ 小助手处理</div><img src="https://assets.emqx.com/images/f78798015e84cc54e66e14ba7a8e854d.jpg" style="width: 80px"/>
 </div>
 
 
@@ -46,13 +46,13 @@ EMQX Cloud MQTT 公有云服务来自于 EMQ 服务客户总结的一些最佳�
 
 在控制台 部署 页面点击 创建 部署，选择 华为云，选择试用部署，完成部署创建。等待 2~3 分钟后部署完全启动后即可正常使用。
 
-![img](https://static.emqx.net/images/21f06cad6643ece29ff887b437b26b95.png)            
+![img](https://assets.emqx.com/images/21f06cad6643ece29ff887b437b26b95.png)            
 
 
 
 完全启动后，可以看到当前部署的状态以及对应的规格、MQTT 接入信息。
 
-![img](https://static.emqx.net/images/3edfe03d1e6f7db84db4434ce025ef4c.png)            
+![img](https://assets.emqx.com/images/3edfe03d1e6f7db84db4434ce025ef4c.png)            
 
 
 
@@ -67,7 +67,7 @@ EMQX Cloud 采用 MQTT 用户名、密码认证方式，客户端需携带正确
 - 用户名为：emqx_u
 - 密码：123321
 
-![img](https://static.emqx.net/images/3c4bdab838487a7a2fe137d1562573b5.png)            
+![img](https://assets.emqx.com/images/3c4bdab838487a7a2fe137d1562573b5.png)            
 
 #### 3.2 客户端 ACL 信息
 
@@ -78,7 +78,7 @@ EMQX Cloud 采用 MQTT 用户名、密码认证方式，客户端需携带正确
 - 是否允许：不允许
 - 主题动作：pub
 
-![img](https://static.emqx.net/images/3151a9ee3be85a0e10f088ee48b20f4c.png)            
+![img](https://assets.emqx.com/images/3151a9ee3be85a0e10f088ee48b20f4c.png)            
 
 
 
@@ -86,11 +86,11 @@ EMQX Cloud 采用 MQTT 用户名、密码认证方式，客户端需携带正确
 
 EMQ 提供一个在线 MQTT 测试工具，访问 <http://tools.emqx.io/>，使用部署提供的连接信息和 3 步骤中初始化的客户端信息进行连接。
 
-![img](https://static.emqx.net/images/fd6ed545c76bf0a4decf91b82ba97779.png)            
+![img](https://assets.emqx.com/images/fd6ed545c76bf0a4decf91b82ba97779.png)            
 
 连接成功后订阅相应的主题，进行发布、订阅测试：
 
-![img](https://static.emqx.net/images/a6eb6219d5da3c3ed3b2112a2d9157bc.png)            
+![img](https://assets.emqx.com/images/a6eb6219d5da3c3ed3b2112a2d9157bc.png)            
 
 ### 5. 打通华为云-EMQX Cloud VPC 网络
 
@@ -121,13 +121,13 @@ VPC (Virtual Private Cloud)，也叫专有网络、私有网络。在同一个 V
     - EMQX Cloud 账户 ID
     - 部署 VPC 网段
 
-    ![img](https://static.emqx.net/images/dbd8afeb9ac1672f316a292a317a8567.png)            
+    ![img](https://assets.emqx.com/images/dbd8afeb9ac1672f316a292a317a8567.png)            
 
 
 
 2. 使用实验室提供的华为云账号登录华为云，进入控制台 -> 虚拟私有云 VPC
 
-    ![img](https://static.emqx.net/images/d84584cc19dfcd58edacd1bd95fa518a.png)            
+    ![img](https://assets.emqx.com/images/d84584cc19dfcd58edacd1bd95fa518a.png)            
 
 
 3. 点击 对等连接 -> 创建对等连接，选择其它账户。填入刚才在 [EMQX Cloud 控制台](https://cloud.emqx.io/console) 记录的信息，点击确定创建对等连接请求
@@ -135,7 +135,7 @@ VPC (Virtual Private Cloud)，也叫专有网络、私有网络。在同一个 V
     - 对端项目 ID == EMQX Cloud 账户 ID
     - 对端VPC ID == 部署 VPC ID
 
-    ![img](https://static.emqx.net/images/438b387bf3206296a4ed930bb362874f.png)            
+    ![img](https://assets.emqx.com/images/438b387bf3206296a4ed930bb362874f.png)            
 
 
 
@@ -145,22 +145,22 @@ VPC (Virtual Private Cloud)，也叫专有网络、私有网络。在同一个 V
     - 2 为 VPC 网段
     - 3 为 VPC ID
 
-    ![img](https://static.emqx.net/images/626f7154ddd5718b34d8c71209ff0146.png)            
+    ![img](https://assets.emqx.com/images/626f7154ddd5718b34d8c71209ff0146.png)            
 
 
-    ![img](https://static.emqx.net/images/3ba507d10fc8bc79c75a2e035d8a30cf.png)            
+    ![img](https://assets.emqx.com/images/3ba507d10fc8bc79c75a2e035d8a30cf.png)            
 
 
 
 5. 找到 我的凭证，记录下用户 ID
 
-    ![img](https://static.emqx.net/images/e0b5f7b4219a55bb2673970e724911ba.png)            
+    ![img](https://assets.emqx.com/images/e0b5f7b4219a55bb2673970e724911ba.png)            
 
 
 
 6. 回到 [EMQX Cloud 控制台](https://cloud.emqx.io/console)。填写步骤 4 记录的对等连接 ID，VPC 网段，VPC ID 和步骤 5 记录的用户 ID。点击确定，完成对等连接
 
-    ![img](https://static.emqx.net/images/17il0vgku77fgdpfoyzep4yrdw8rsl5d.png)            
+    ![img](https://assets.emqx.com/images/17il0vgku77fgdpfoyzep4yrdw8rsl5d.png)            
 
 
 
@@ -168,13 +168,13 @@ VPC (Virtual Private Cloud)，也叫专有网络、私有网络。在同一个 V
 
     注意：下一跳类型为 对等连接
 
-    ![img](https://static.emqx.net/images/77b594cf38acbdc53e3929a140015712.png)            
+    ![img](https://assets.emqx.com/images/77b594cf38acbdc53e3929a140015712.png)            
 
 
 
 8. 在华为云控制台里配置安全组，允许 EMQX Cloud 网段访问您的 VPC
 
-    ![img](https://static.emqx.net/images/228f5241d4122035289857eb96036f53.png)             
+    ![img](https://assets.emqx.com/images/228f5241d4122035289857eb96036f53.png)             
 
 至此 EMQX Cloud 与华为云 VPC 网络已经打通，
 
@@ -196,15 +196,15 @@ VPC (Virtual Private Cloud)，也叫专有网络、私有网络。在同一个 V
 
 点击 立即购买 完成创建，进入 https://console.huaweicloud.com/dms/?engine=kafka&region=cn-south-1#/queue/manager/newKafkaList 查看创建进程，等待创建完成后查看并记录连接地址
 
-![img](https://static.emqx.net/images/1932b445bdd78e39bce057b292c2baca.png)            
+![img](https://assets.emqx.com/images/1932b445bdd78e39bce057b292c2baca.png)            
 
-![img](https://static.emqx.net/images/f457090f28087a1b83f29573e32c9bd8.png)            
+![img](https://assets.emqx.com/images/f457090f28087a1b83f29573e32c9bd8.png)            
 
 #### 6.2 设置规则引擎的筛选条件
 
 在部署页面，选择规则引擎，点击创建。
 
-![img](https://static.emqx.net/images/496e984d1b36dd683880d3516c9a7550.png)            
+![img](https://assets.emqx.com/images/496e984d1b36dd683880d3516c9a7550.png)            
 
 我们的目标是：当主题 greet 收到 msg 为 hello 字符时，就会触发引擎。这里需要对 SQL 进行一定的处理：
 
@@ -249,22 +249,22 @@ payload:
 
 点击添加动作，在选择动作页，选择 桥接数据到 Kafka，点击下一步，在配置动作页面，点击创建资源。
 
-![img](https://static.emqx.net/images/6c4483a5922e4e530115e09721f86ce2.png)            
+![img](https://assets.emqx.com/images/6c4483a5922e4e530115e09721f86ce2.png)            
 
-![img](https://static.emqx.net/images/d8da0ad1095a8f5509f677cdf7aacc0a.png)            
+![img](https://assets.emqx.com/images/d8da0ad1095a8f5509f677cdf7aacc0a.png)            
 
 在创建资源页面里，资源类型选择 Kafka，在 Kafka 服务器框里填写 6.1 步骤中保存的连接地址。点击测试，右上角返回 “测试资源创建成功” 表示测试成功。
 
-![img](https://static.emqx.net/images/489401abf7ae1cadf35ea31d6f5db5df.png)            
+![img](https://assets.emqx.com/images/489401abf7ae1cadf35ea31d6f5db5df.png)            
 
 注意：如果测试失败，请检查是否完成对等连接，详情请看 [VPC 对等连接](https://docs.emqx.cn/cloud/latest/deployments/vpc_peering.html)，并检查 URL 是否正确。
 
 点击确定，返回到配置动作页面，Kafka 主题填写刚刚创建的 testTopic 主题，在消息内容模板里填写 "hello from emqx cloud"，资源 ID 默认，点击确定。
 
-![img](https://static.emqx.net/images/84f20037ed55ae79a9c2ac45f88bf6fb.png)            
+![img](https://assets.emqx.com/images/84f20037ed55ae79a9c2ac45f88bf6fb.png)            
 
 创建好的动作会显示在响应动作一栏里，确认信息无误后，点击右下角的确认，完成规则引擎的配置。
-![img](https://static.emqx.net/images/8e6648cd122bcaad45d73993b04bedaa.png)
+![img](https://assets.emqx.com/images/8e6648cd122bcaad45d73993b04bedaa.png)
 
 #### 6.4 测试
 
@@ -279,10 +279,19 @@ payload:
 ```
 在规则引擎页中，点击监控可以看到动作指标数的成功数变为 1。
 
-![img](https://static.emqx.net/images/d4729bc87fdd005ad7ad740b5724cbce.jpg)            
+![img](https://assets.emqx.com/images/d4729bc87fdd005ad7ad740b5724cbce.jpg)            
 
  至此，规则命中时在 Kafka 实例中消费者可以接收到 EMQX Cloud 转发过来的消息。
 
 
 **添加小助手微信，进入 EMQ & 华为云技术交流群，与更多技术牛人深入交流、共同成长。**
-![EMQX 微信小助手](https://static.emqx.net/images/237cdd1601705d7fc794253c757c1d65.png)
+![EMQX 微信小助手](https://assets.emqx.com/images/237cdd1601705d7fc794253c757c1d65.png)
+
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX Cloud
+        <div class="is-size-14 is-text-normal has-text-weight-normal">无须绑定信用卡</div>
+    </div>
+    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a >
+</section>

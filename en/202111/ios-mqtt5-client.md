@@ -167,7 +167,7 @@ let authProperties = MqttAuthProperties()
 
 It is recommended to use the 「Background fetch」 mode or the newly added 「Background processing」 mode in IOS 13.
 
-![iOS application running in the background](https://static.emqx.net/images/7d487fe5022b5c2785c4df43adf9f983.png) 
+![iOS application running in the background](https://assets.emqx.com/images/7d487fe5022b5c2785c4df43adf9f983.png) 
 
 If you use the APIs related to `beginBackgroundTaskWithName` and `endBackgroundTask`, you can keep the APP running in the background for 30 seconds.
 
@@ -180,3 +180,12 @@ So far, we have connected the CocoaMQTT client to the public MQTT Broker and rea
 > Get the code from [https://github.com/emqx/CocoaMQTT/tree/master/Example](https://github.com/emqx/CocoaMQTT/tree/master/Example). 
 
 EMQ is committed to helping users easily and conveniently use MQTT to carry out IoT business. A series of our client SDKs are under continuous development, please stay tuned.
+
+
+<section class="promotion">
+    <div>
+        Try EMQX Cloud for Free
+        <div class="is-size-14 is-text-normal has-text-weight-normal">A fully managed, cloud-native MQTT service</div>
+    </div>
+    <a href="https://www.emqx.com/en/signup?continue=https://cloud-intl.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">Get Started →</a >
+</section>

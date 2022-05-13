@@ -53,7 +53,7 @@ EMQX Cloud 的规则引擎功能模块现已正式更名为「数据集成」，
 
 > 更多详情请查看： [https://mp.weixin.qq.com/s/Vvg0joa4IW7AjebXDQKmwA](https://mp.weixin.qq.com/s/Vvg0joa4IW7AjebXDQKmwA) 
 
-![EMQX Cloud 数据集成](https://static.emqx.net/images/633495d451db95a655412868be321e12.png)
+![EMQX Cloud 数据集成](https://assets.emqx.com/images/633495d451db95a655412868be321e12.png)
 
 ### 阿里云新版云企业网支持
 
@@ -84,3 +84,13 @@ EMQX Kubernetes Operator v1.2 和 v1beta3 APIVersion 正在开发中，v1beta3 A
  
 
 为了完成「通过世界级开源软件产品服务人类未来产业与社会」的使命，敬请期待一个更优秀的 EMQX。
+
+
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX Cloud
+        <div class="is-size-14 is-text-normal has-text-weight-normal">无须绑定信用卡</div>
+    </div>
+    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a >
+</section>

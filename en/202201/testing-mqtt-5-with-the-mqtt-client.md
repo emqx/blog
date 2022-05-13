@@ -28,17 +28,17 @@ In v1.7.0, we first support the User Properties. [User Properties](https://www.e
 
 Click the New button to go to the new client page. First, we need to select the version of MQTT as 5.0, so that we can see that a card for configuring user properties below. Inside the card, there is an input box that can configure key-value pairs. You can click the Add button in the upper right corner can add user property configuration. Click the Delete button at the end of each line to delete the configuration. Finally, enter the name and content of the property that needs to be configured. After the connection is successful, the MQTT broker can obtain the user properties of the client.
 
-![MQTT Client Connection](https://static.emqx.net/images/891bb0a76b6c2ecf76690266d45bd51c.png)
+![MQTT Client Connection](https://assets.emqx.com/images/891bb0a76b6c2ecf76690266d45bd51c.png)
 
 **Publish messages**
 
 In addition to the configuration of user properties when the client is connected, this version also supports the configuration of user properties when publishing messages. When the new connection is a client of MQTT 5.0, we can see that a `Meta` button appears in the area where the message is published in the lower right corner. Click this button to display a card that configures the properties at the time of publishing. We can see the user property configuration at the top of the card.
 
-![mqtt user property](https://static.emqx.net/images/04b0f36baa9063f008f5285f5af5274f.png)
+![mqtt user property](https://assets.emqx.com/images/04b0f36baa9063f008f5285f5af5274f.png)
 
 After configuring the user properties, click the Save button. At this time, we enter Topic and Payload and click Send. Then, we can see that the sent message box contains the user properties contained in the current message. If the message we received also contains the user properties, We can also see the user property configuration sent by the client in the received message box.
 
-![message box contains the user properties](https://static.emqx.net/images/d047089b3a9c14b49bc50e03a360a5cc.png)
+![message box contains the user properties](https://assets.emqx.com/images/d047089b3a9c14b49bc50e03a360a5cc.png)
 
 With MQTT X's support for user properties, it can help developers quickly verify and test the function of the MQTT 5.0 user properties, thereby improving the efficiency of development and use.
 
@@ -52,7 +52,7 @@ We will show how to use the Response Topic by issuing a command to switch the li
 
 > Note: MQTT's request/response is asynchronous, and the comparison data can associate the response message with the request message.
 
-![MQTT Response Topic](https://static.emqx.net/images/3943405f5ac48f376d239c7194bf8328.png)
+![MQTT Response Topic](https://assets.emqx.com/images/3943405f5ac48f376d239c7194bf8328.png)
 
 We use MQTT.js to implement another client to simulate a light device that receives control commands. After receiving the command to turn on the light, send a response message of successful turning-on to the response topic. The key code is implemented below:
 
@@ -70,7 +70,7 @@ client.on('message', (topic, payload, packet) => {
 
 Click Send button, and we can receive the response message from the light device after successfully receiving the switch command.
 
-![MQTT Response Topic](https://static.emqx.net/images/1e7ecbb59602251011fdd7bdf19f2f62.png)
+![MQTT Response Topic](https://assets.emqx.com/images/1e7ecbb59602251011fdd7bdf19f2f62.png)
 
 Currently, for the Request Response feature, MQTT X only supports configuring the Response Topic and Correlation Data when sending. In the future, we will continue to optimize the configuration of the response part to bring users a more complete capability to test Request Response.
 
@@ -78,7 +78,7 @@ Currently, for the Request Response feature, MQTT X only supports configuring th
 
 In v1.7.0, the specified configuration of the [Payload Format Indicator and Content Type](https://www.emqx.com/en/blog/mqtt5-new-features-payload-format-indicator-and-content-type) is supported. It is allowed to specify the payload format (binary, text) and MIME style content type when the message is published. We just need to click the Meta button before publishing the message, enter the Content Type in the input box, click to set the value of Payload Format Indicator, and publish the message.
 
-![MQTT Payload Format Indicator](https://static.emqx.net/images/bb8b44bcc722fe53c73d4c9c52c0510c.png)
+![MQTT Payload Format Indicator](https://assets.emqx.com/images/bb8b44bcc722fe53c73d4c9c52c0510c.png)
 
 A typical application of content type is to store MIME types. For example, text/plain means text files, audio/aac means audio files, and application/json means application messages in JSON format.
 
@@ -90,7 +90,7 @@ This will help the MQTT client or MQTT Broker to parse the content of the messag
 
 In v1.7.0, [Subscription Options](https://www.emqx.com/en/blog/subscription-identifier-and-subscription-options) in MQTT 5.0 are also supported. After creating a new MQTT 5.0 connection, we open the pop-up box of the subscription topic, and the configuration options including No Local, Retain as Published, and Retain Handling appear below. Users can use these subscription options to change the behavior of the broker.
 
-![MQTT Subscription options](https://static.emqx.net/images/e998eb7259b46c683c037d915d65e7f4.png)
+![MQTT Subscription options](https://assets.emqx.com/images/e998eb7259b46c683c037d915d65e7f4.png)
 
 If the No Local flag is set to true, the broker will not forward self-published messages to you. Otherwise, if you subscribe to the topic of self-published messages, then you will receive all the messages published by yourself.
 
@@ -110,7 +110,7 @@ After we open the pop-up box for subscribing to topics, enter multiple topics an
 
 > Note: The content in the alias input box needs to correspond to the Topic in the Topic input box one by one.
 
-![MQTT multi-topic subscription](https://static.emqx.net/images/ce7690743443fcce274cfb4d7ef912f2.png)
+![MQTT multi-topic subscription](https://assets.emqx.com/images/ce7690743443fcce274cfb4d7ef912f2.png)
 
 ### Disable automatic scrolling of messages
 
@@ -118,7 +118,7 @@ The control of automatic scrolling of the message list when receiving and publis
 
 > Note: When the auto-scroll function is turned off, the performance of sending and receiving messages can be improved.
 
-![MQTT X automatic scrolling](https://static.emqx.net/images/944659abebc73c140c86f53b8dfa3371.png)
+![MQTT X automatic scrolling](https://assets.emqx.com/images/944659abebc73c140c86f53b8dfa3371.png)
 
 ## Conclusion
 

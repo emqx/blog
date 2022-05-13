@@ -360,21 +360,31 @@ fn main() {
 cargo build
 ```
 
-![rustmqttbin.png](https://static.emqx.net/images/7e95c531f0a3534bb48dcb9f17b778c6.png)
+![rustmqttbin.png](https://assets.emqx.com/images/7e95c531f0a3534bb48dcb9f17b778c6.png)
 
 ### 消息订阅
 
 执行 `sub` 二进制文件，等待消费发布。
 
-![rustmqttsub1.png](https://static.emqx.net/images/bb040cf5a869a301023e7167895b4d4a.png)
+![rustmqttsub1.png](https://assets.emqx.com/images/bb040cf5a869a301023e7167895b4d4a.png)
 
 ### 消息发布
 
 执行 `pub` 二进制文件，可以看到分别往 `rust/test` 、`rust/mqtt` 这两个主题发布了消息。
 
-![rustmqttpub.png](https://static.emqx.net/images/28949361d916b71fb10f083852a9bbe1.png)
+![rustmqttpub.png](https://assets.emqx.com/images/28949361d916b71fb10f083852a9bbe1.png)
 同时在消息订阅中可看到发布的消息
 
-![rustmqttsub2.png](https://static.emqx.net/images/e71402d26419eff673247c1c7db81e9b.png)
+![rustmqttsub2.png](https://assets.emqx.com/images/e71402d26419eff673247c1c7db81e9b.png)
 
 至此，我们完成了使用 **paho-mqtt** 客户端连接到 [公共 MQTT 服务器](https://www.emqx.com/zh/mqtt/public-mqtt5-broker)，并实现了测试客户端与 MQTT 服务器的连接、消息发布和订阅。
+
+
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX Cloud
+        <div class="is-size-14 is-text-normal has-text-weight-normal">全托管的云原生 MQTT 消息服务</div>
+    </div>
+    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a >
+</section>

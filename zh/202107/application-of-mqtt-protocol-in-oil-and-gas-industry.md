@@ -44,7 +44,7 @@ MQTT 是用于物联网的标准消息传递协议。它被设计为一种非常
 
 以 EMQ 云边数据采集方案为例：
 
-![EMQ 云边数据采集方案](https://static.emqx.net/images/fcf657e6997a958daecc2201ee42a6d0.png)
+![EMQ 云边数据采集方案](https://assets.emqx.com/images/fcf657e6997a958daecc2201ee42a6d0.png)
 
 
 ### 各类工业协议转换为 MQTT 实现统一接入
@@ -84,3 +84,12 @@ MQTT 的轻量化设计使客户端到服务端的硬件需求大大降低。在
 由于采用了轻前端、重后端的架构，现场设备数量与复杂度大大降低，现场运维负载度与人员成本可降低超过 70% 以上。
 
 通过基于 MQTT 协议的数据采集架构，厂区数据中心可以获得各类现场实时数据，从而通过这些高质量的业务数据进行远程设备操作、井筒放置位置优化分析、监测作业环境控制排放、远程辅助检修等新业务应用，实现石油企业降本增效与业务创新。
+
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX Cloud
+        <div class="is-size-14 is-text-normal has-text-weight-normal">全托管的云原生 MQTT 消息服务</div>
+    </div>
+    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a >
+</section>

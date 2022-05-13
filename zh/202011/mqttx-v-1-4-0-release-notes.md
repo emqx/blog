@@ -8,7 +8,7 @@ Mac 用户可在 App Store 中进行下载：https://apps.apple.com/cn/app/mqttx
 
 Linux 用户可在 Snapcraft 中进行下载：https://snapcraft.io/mqttx
 
-![mqttxpreview.png](https://static.emqx.net/images/8e995e772783202b5c5b50dc4799f800.png)
+![mqttxpreview.png](https://assets.emqx.com/images/8e995e772783202b5c5b50dc4799f800.png)
 
 ## 新功能概览
 
@@ -16,21 +16,21 @@ Linux 用户可在 Snapcraft 中进行下载：https://snapcraft.io/mqttx
 
   在该版本中，用户连接后需要监控消息收发时，不再只是通过单项视图去查看某一连接，可以在连接列表中，右键点击，选择新建窗口，为该连接创建新窗口。在新窗口中，同样可以进行连接，订阅主题，发布和接受消息等。如果当创建的多个连接之间存在某种联系时，或需要查看同时接受到的消息，可以新建多个视图窗口，同时进行查看。
 
-![mqttxnewwindow.png](https://static.emqx.net/images/c584749b8daf7c25d864740532ea4eaa.png)
+![mqttxnewwindow.png](https://assets.emqx.com/images/c584749b8daf7c25d864740532ea4eaa.png)
 
-![mqttxmutiwindow.png](https://static.emqx.net/images/35209fb06c4bff335e6c49faaec14094.png)
+![mqttxmutiwindow.png](https://assets.emqx.com/images/35209fb06c4bff335e6c49faaec14094.png)
 
 - 新增导入导出数据格式
 
   在之前版本中，新增了数据的导入导出，但仅支持 `JSON` 格式的数据。该版本中对此进行了扩展，除 `JSON` 格式外，还支持了 `XML`，`CSV` 和 `Excel`。用户可以快速导出以上格式的数据，根据需求进行处理，也可以使用以上任意一种的数据格式，快速导入自定义数据，例如使用 Excel 快速生成测试用例，导入后进行快速测试。
 
-  ![mqttxmoreformat.png](https://static.emqx.net/images/ec94622bdd335b84041eaebcbf578657.png)
+  ![mqttxmoreformat.png](https://assets.emqx.com/images/ec94622bdd335b84041eaebcbf578657.png)
 
 - 支持消息搜索
 
   在之前版本中，仅支持按 `Topic` 搜索来过滤消息内容，此版本中加入了消息搜索，打开搜索框后，右边多了一个消息输入框，可输入关键信息，消息框内会根据搜索内容进行过滤，也可以和 `Topic` 搜索一起进行联合查询。
 
-![mqttxmessagesearch.png](https://static.emqx.net/images/8b0c9c5625481449bc7ee4477e2a740f.png)
+![mqttxmessagesearch.png](https://assets.emqx.com/images/8b0c9c5625481449bc7ee4477e2a740f.png)
 
 - 首屏加入加载动画
 

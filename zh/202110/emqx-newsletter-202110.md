@@ -15,7 +15,7 @@
 
 下图是「试用」结果的示例，它获取了 HTTP authentication API 的配置。
 
-![EMQX HTTP API](https://static.emqx.net/images/ab84be82a14c4e98ea6ca7a6db0e8fdf.jpeg)
+![EMQX HTTP API](https://assets.emqx.com/images/ab84be82a14c4e98ea6ca7a6db0e8fdf.jpeg)
  
 
 ### 分层速率控制
@@ -51,7 +51,7 @@ EMQX Cloud 旗舰版在专业版的基础上增加了设备管理、设备影子
 
 > 详情可添加 EMQ 商务微信进行咨询。
 >
-> <img width=240 alt="EMQ 商务微信" src="https://static.emqx.net/images/744b3b2a3470e4092ed95ba40b8a68ed.png">
+> <img width=240 alt="EMQ 商务微信" src="https://assets.emqx.com/images/744b3b2a3470e4092ed95ba40b8a68ed.png">
 
 ### 完善 EMQX Cloud 上部署实例的告警
 
@@ -71,3 +71,12 @@ EMQX Cloud 在推出包年付费模式后受到了大量用户的欢迎。针对
 
 
 为了完成「通过世界级软件产品服务人类未来产业与社会」的使命，敬请期待一个更优秀的 EMQX。
+
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX Cloud
+        <div class="is-size-14 is-text-normal has-text-weight-normal">无须绑定信用卡</div>
+    </div>
+    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a >
+</section>

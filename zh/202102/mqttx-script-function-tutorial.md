@@ -10,7 +10,7 @@ Mac 用户可在 App Store 中进行下载：[https://apps.apple.com/cn/app/mqtt
 
 Linux 用户可在 Snapcraft 中进行下载：[https://snapcraft.io/mqttx](https://snapcraft.io/mqttx)
 
-![mqttxpreview.png](https://static.emqx.net/images/fdeeaa3093e114157fdbf46fd18bcd32.png)
+![mqttxpreview.png](https://assets.emqx.com/images/fdeeaa3093e114157fdbf46fd18bcd32.png)
 
 ## 脚本功能
 
@@ -50,7 +50,7 @@ execute(handlePayload)
 
 此时可将这段代码复制到脚本页面的代码编辑框内，点击右上角的 `保存` 按钮，设置脚本名称为 TempAndHum 并保存。我们在 Input 输入框内输入一个 `{}` 作为初始数据。点击 `测试` 按钮，在 Output 框内查看执行结果，如果结果符合预期，接下来将可以正常使用该脚本。
 
-![mqttxhumtemp.png](https://static.emqx.net/images/e8c56a968c89ae76bb6fb684ca73027b.png)
+![mqttxhumtemp.png](https://assets.emqx.com/images/e8c56a968c89ae76bb6fb684ca73027b.png)
 
 我们使用 EMQX 提供的 [免费公共 MQTT 服务器](https://www.emqx.com/zh/mqtt/public-mqtt5-broker) 新建一个连接，该服务基于 EMQX 的 [MQTT 物联网云平台](https://www.emqx.com/zh/cloud) 创建。服务器接入信息如下：
 
@@ -60,15 +60,15 @@ execute(handlePayload)
 
 连接成功后，点击右上角的下拉功能菜单，选择 `使用脚本`，在弹出窗中，选择刚才保存好的 TempAndHum 脚本，然后选择应用类型为发送时，点击确认按钮后开启脚本功能。
 
-![mqttxuse1.png](https://static.emqx.net/images/0cdc5685eec2832049534beaf258fa57.png)
+![mqttxuse1.png](https://assets.emqx.com/images/0cdc5685eec2832049534beaf258fa57.png)
 
 开启脚本后，我们再继续设置定时发送功能，同样点击右上角的下拉功能菜单，选择 `定时消息`，这里我们设置发送频率为 1 秒，点击确认后定时消息功能开启。
 
-![mqttxtimed.png](https://static.emqx.net/images/8cf5eaf54e3ab5596c03500012463cd7.png)
+![mqttxtimed.png](https://assets.emqx.com/images/8cf5eaf54e3ab5596c03500012463cd7.png)
 
 准备好后，便可以输入初始的 `Payload` 和需要发送到的`Topic`，点击发送成功一条消息后，便可以看到 MQTT X 将每秒自动发送了一次模拟数据。
 
-![mqttxhumtempsuccess.png](https://static.emqx.net/images/695bfda6171514106492d3543d884686.png)
+![mqttxhumtempsuccess.png](https://assets.emqx.com/images/695bfda6171514106492d3543d884686.png)
 
 这样避免了用户去手动输入和修改数据的麻烦，且使用脚本时模拟数据可控，模拟数据区间可在脚本的 `random` 函数中设定，如果有对保存的数据进行可视化图表测试需求或需要添加一定的数据量的数据来测试时，都较为方便和友好。
 
@@ -101,15 +101,15 @@ execute(handleTimestamp)
 
 此时可将这段代码复制到脚本页面的代码编辑框内，点击右上角的 `保存` 按钮，设置脚本名称为 Time 并保存。我们在 Input 输入框内输入一个 `{ "time": 1608365158 }` 作为初始数据。点击 `测试` 按钮，在 Output 框内查看执行结果，如果结果符合预期，接下来将可以正常使用该脚本。
 
-![mqttxtime.png](https://static.emqx.net/images/145b3c4b24a42bd52f44923fb0e272f9.png)
+![mqttxtime.png](https://assets.emqx.com/images/145b3c4b24a42bd52f44923fb0e272f9.png)
 
 此时我们依然新建一个连接，使用上述中描述的方法来开启脚本。注意选择应用类型时，需要选择为接收时。
 
-![mqttxuse2.png](https://static.emqx.net/images/0d3d705ee8a79eecb483cb30ecd15c71.png)
+![mqttxuse2.png](https://assets.emqx.com/images/0d3d705ee8a79eecb483cb30ecd15c71.png)
 
 脚本功能开启后，我们添加一个 `testtopic/time` 的 `Topic`，然后我们向该 `Topic` 发送一条包含时间戳信息的 `Payload`。然后查看接收到的 `Payload` 信息，可以看到已经自动帮时间戳转化为了正常时间。
 
-![mqttxtimesuccess.png](https://static.emqx.net/images/eee40a6a899c8c9912ee55ae9efbd56b.png)
+![mqttxtimesuccess.png](https://assets.emqx.com/images/eee40a6a899c8c9912ee55ae9efbd56b.png)
 
 ## 总结
 

@@ -3,7 +3,7 @@
 Project address: [GitHub](https://github.com/emqx/MQTTX)
 
 Website: [MQTT X Website](https://mqttx.app)
-![WX202002101233322x.png](https://static.emqx.net/images/b0cfa74c62c6425e67c1547f4760f1a6.png)
+![WX202002101233322x.png](https://assets.emqx.com/images/b0cfa74c62c6425e67c1547f4760f1a6.png)
 
 MQTT X is suitable for users who are building their own MQTT message server to test connections, subscribing and publishing messages, etc. When using a client, the user can be either a publisher or a subscriber. It is also applicable to related users who are developing or researching MQTT Broker. In the research and application of MQTT, no matter what stage you are in, you can quickly and deeply understand the relevant characteristics of the [MQTT protocol](https://www.emqx.com/en/mqtt) through MQTT X.
 
@@ -22,7 +22,7 @@ The following is a preview of the features and interface of MQTT X:
 - Support multiple payload formats of Hex, Base64, JSON, Plaintext
 - Simple and clean graphical interface
 
-![mqttxpreview.png](https://static.emqx.net/images/c2ceb11b3c0eae3e421ad63ba721c148.png)
+![mqttxpreview.png](https://assets.emqx.com/images/c2ceb11b3c0eae3e421ad63ba721c148.png)
 
 In the main window of MQTT X, the far left is the menu bar, which corresponds to  the connection page, the about page, and the settings page from top to bottom; the middle column is the list of existing connections. After each connection is created, the new connection will appear in the list. User can click on the name in the list (composed of `name @ host: port`) to quickly switch the connection; The rightmost side is the main view interface of the connection, and you can test sending and receiving messages on this page. When the connection is successfully established, the top configuration bar will automatically collapse to show more page space.
 
@@ -31,6 +31,6 @@ In the main window of MQTT X, the far left is the menu bar, which corresponds to
 - It can send and receive messages in the form of message chat. The interaction process is simple and easy to understand. It allows multiple clients to connect at the same time and freely switch to communicate with each other. It has better interaction and greatly improves the efficiency of interactive debugging;
 - It is fully open-source and supports multiple platforms.
 
-![666.png](https://static.emqx.net/images/336b2cd915c0e9ef8ebbe3467270ee76.png)
+![666.png](https://assets.emqx.com/images/336b2cd915c0e9ef8ebbe3467270ee76.png)
 
 As of now, MQTT X has released the v1.2.3 version, and more features are still being developed.

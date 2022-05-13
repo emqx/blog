@@ -22,18 +22,27 @@ After completing the registration on the website, you can deploy the fully manag
 
 1. Select the edition
 
-   ![Select the edition](https://static.emqx.net/images/adb2ffeb87563b99df223801a615c505.png)
+   ![Select the edition](https://assets.emqx.com/images/adb2ffeb87563b99df223801a615c505.png)
 
 2. Select Google Cloud Platform and related configuration
 
-   ![Select Google Cloud Platform ](https://static.emqx.net/images/f11f8873762aa7edcc3fc23aba195846.png)
+   ![Select Google Cloud Platform ](https://assets.emqx.com/images/f11f8873762aa7edcc3fc23aba195846.png)
 
 3. Confirmation and deployment
 
-   ![Confirmation and deployment](https://static.emqx.net/images/d2bda6dd9d1a55bb28555dd5ac2ec78c.png)
+   ![Confirmation and deployment](https://assets.emqx.com/images/d2bda6dd9d1a55bb28555dd5ac2ec78c.png)
 
 From the Internet of Vehicles to Industrial Internet, from operators to financial payments, from energy and electricity to smart cities, EMQ works with customers from various industries around the world to create a better world through the Internet of Things.
 
 As an open source software company adhering to the principle of「service-oriented, customer first」, EMQ is willing to work with customers to build「future-proof」IoT platform and applications to power the digital transformation and upgrading of society and industry.
 
 If you have any comments or questions about our products and services, please email [cloud-support@emqx.io](mailto:cloud-support@emqx.io). Our team will provide you with a one-on-one consultation service.
+
+
+<section class="promotion">
+    <div>
+        Try EMQX Cloud for Free
+        <div class="is-size-14 is-text-normal has-text-weight-normal">No credit card required</div>
+    </div>
+    <a href="https://www.emqx.com/en/signup?continue=https://cloud-intl.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">Get Started →</a >
+</section>

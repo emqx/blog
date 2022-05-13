@@ -8,7 +8,7 @@ Mac 用户可在 App Store 中进行下载：[https://apps.apple.com/cn/app/mqtt
 
 Linux 用户可在 Snapcraft 中进行下载：[https://snapcraft.io/mqttx](https://snapcraft.io/mqttx)
 
-![collection_group.png](https://static.emqx.net/images/3fecd14eb079273cc5e027c5a78eb4f1.png)
+![collection_group.png](https://assets.emqx.com/images/3fecd14eb079273cc5e027c5a78eb4f1.png)
 
 ## 新功能概览
 
@@ -26,7 +26,7 @@ Linux 用户可在 Snapcraft 中进行下载：[https://snapcraft.io/mqttx](http
 
   拖拽一个连接并拉到窗口范围外，松手之后即可新建一个连接窗口
 
-![new_collection.png](https://static.emqx.net/images/41f9e89534c1d1e3d61e77f5b786aea7.png)
+![new_collection.png](https://assets.emqx.com/images/41f9e89534c1d1e3d61e77f5b786aea7.png)
 
 ## 修复及其优化
 

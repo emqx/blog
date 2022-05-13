@@ -459,15 +459,15 @@ We see that a corresponding LiveView process mounted, connected to the broker, a
 
 Also, the page started to update immediately:
 
-![Phoenix 1](https://static.emqx.net/images/44e89f1a4a87e5b58cf1a1e8d555883e.png)
+![Phoenix 1](https://assets.emqx.com/images/44e89f1a4a87e5b58cf1a1e8d555883e.png)
 
 If we update the interval, we see that the device node receives the command immediately and starts to update more frequently:
 
-![Phoenix 2](https://static.emqx.net/images/75241ba7373693c8703633cbd9a21f69.png)
+![Phoenix 2](https://assets.emqx.com/images/75241ba7373693c8703633cbd9a21f69.png)
 
 Now we demonstrate one important thing: let's stop our "device" node, wait a bit and start it again. We see that the node continued to send data with the updated frequency.
 
-![Phoenix 3](https://static.emqx.net/images/5a56289b930e3fa28be2b623a96c0962.png)
+![Phoenix 3](https://assets.emqx.com/images/5a56289b930e3fa28be2b623a96c0962.png)
 
 How could that happen? The secret is simple: the retain flag of command messages we send to the command topic.
 

@@ -20,7 +20,7 @@ TDEngine 提供社区版、企业版和云服务版，安装/使用教程详见 
 
 
 
-![1.png](https://static.emqx.net/images/6c81643568e7740ccf7104d7698e3f26.png)
+![1.png](https://assets.emqx.com/images/6c81643568e7740ccf7104d7698e3f26.png)
 
 
 
@@ -125,7 +125,7 @@ EMQX Dashboard 中点击 **规则** 主菜单，在 **资源** 页面新建一�
 有关 RESTful Connector 使用教程详见：[TDEngine RESTful Connector](https://www.taosdata.com/cn/documentation/connector/#RESTful-Connector)
 
 
-![2.png](https://static.emqx.net/images/1b25136d72e0be66b69d12c97187a3b3.png)
+![2.png](https://assets.emqx.com/images/1b25136d72e0be66b69d12c97187a3b3.png)
 
 点击 **测试连接**，测试通过后点击 **确定** 按钮完成创建。
 
@@ -154,7 +154,7 @@ WHERE
 ```
 
 
-![3.png](https://static.emqx.net/images/f229f71dd099286311209c2f6d2e08bf.png)
+![3.png](https://assets.emqx.com/images/f229f71dd099286311209c2f6d2e08bf.png)
 
 
 
@@ -339,12 +339,12 @@ for (let i = 0; i < 10; i++) {
   
 
 
-![4.png](https://static.emqx.net/images/3a6f185ee995d4b0746b0a6d3843f1a8.png)
+![4.png](https://assets.emqx.com/images/3a6f185ee995d4b0746b0a6d3843f1a8.png)
 
 发布多次，在 **规则引擎** 列表里，点击 **监控** 图标可以快速查看当前规则执行数据，由下图可见 4 条消息命中 3 次，成功 3 次：
 
 
-![5.png](https://static.emqx.net/images/06b823bf6fbcb2397a041ee174c8ce75.png)
+![5.png](https://assets.emqx.com/images/06b823bf6fbcb2397a041ee174c8ce75.png)
 
 在 TDEngine 控制台查看 `db.v_51dc0c50f55d11e9a4fec59e26b058d5` 中的数据，此时有 3 条数据:
 

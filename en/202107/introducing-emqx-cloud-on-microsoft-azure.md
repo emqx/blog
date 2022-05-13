@@ -4,7 +4,7 @@ EMQ, the leader of open-source and cloud-native distributed MQTT broker for IoT,
 
 EMQX Cloud helps our users carry out their IoT projects with [MQTT](https://www.emqx.com/en/mqtt) in a simple way, without the burden of deploying and managing the self-managed MQTT service in multiple regions of the cloud.
 
-![EMQX Cloud on Microsoft Azure](https://static.emqx.net/images/72db2b959360906e1052c2bb5fc48cce.png)
+![EMQX Cloud on Microsoft Azure](https://assets.emqx.com/images/72db2b959360906e1052c2bb5fc48cce.png)
 
 ## A Fully Managed, Cloud-Native MQTT Service
 
@@ -41,15 +41,15 @@ After completing the registration on the website, we can have a fully managed [M
 
 ### Select Plan
 
-![Select Plan](https://static.emqx.net/images/a806d11b7d720cff318a42fdfd115054.png)
+![Select Plan](https://assets.emqx.com/images/a806d11b7d720cff318a42fdfd115054.png)
 
 ### Select Azure and Region
 
-![Select Azure and Region](https://static.emqx.net/images/fde38cf305865de655e76ea04ed21165.png)
+![Select Azure and Region](https://assets.emqx.com/images/fde38cf305865de655e76ea04ed21165.png)
 
 ### Confirm and Deploy
 
-![Confirm and Deploy](https://static.emqx.net/images/a68d8fe541e777959ce896d29a031fae.png)
+![Confirm and Deploy](https://assets.emqx.com/images/a68d8fe541e777959ce896d29a031fae.png)
 
 
 ## Integrate Everything with an IoT Rule Engine
@@ -58,13 +58,13 @@ After completing the registration on the website, we can have a fully managed [M
 
 EMQX Cloud provides a powerful built-in IoT Rule Engine to extract, filter, enrich, and transform IoT data in real-time. Write SQL to process data quickly and flexibly, simplify application development and accelerate business delivery.
 
-![Rule Engine](https://static.emqx.net/images/1629511ec5b0de639edbf5bc5443bc30.png)
+![Rule Engine](https://assets.emqx.com/images/1629511ec5b0de639edbf5bc5443bc30.png)
 
 ### Process Data
 
 In addition, with the support of the rule engine, EMQX Cloud can realize data collection, filtering, conversion, calculation and persistence with a small amount of coding. It can also forward the message to other message servers such as Kafka, RDS, InfluxDB, and MongoDB through rule configuration.
 
-![Process Data](https://static.emqx.net/images/ff11c3da737668ef1f1ae406569e8fa2.png)
+![Process Data](https://assets.emqx.com/images/ff11c3da737668ef1f1ae406569e8fa2.png)
 
 ### Integrate Everything
 
@@ -72,7 +72,7 @@ EMQX Cloud supports integrating with most popular data stores, data analysis sys
 
 Easily integrate IoT data with Kafka, RDS, various SQL/NoSQL/time-series databases, and enterprise systems such as Oracle and SAP. Help achieve rapid application integration and business innovation.
 
-![Integrate Everything](https://static.emqx.net/images/b1bd54ddeae0a61bd2a6ba042fc9d551.png)
+![Integrate Everything](https://assets.emqx.com/images/b1bd54ddeae0a61bd2a6ba042fc9d551.png)
 
 
 ## Start your IoT business with EMQX Cloud
@@ -88,7 +88,7 @@ If you have any comments about our service or encounter any problems during the 
 
 To learn more about the EMQX Cloud service, please click [here](https://www.emqx.com/en/cloud) for more information.
 
-![Start your IoT business with EMQX Cloud](https://static.emqx.net/images/3d17ac8d57acaefcf1f495fdf3b6b657.png)
+![Start your IoT business with EMQX Cloud](https://assets.emqx.com/images/3d17ac8d57acaefcf1f495fdf3b6b657.png)
 
 
 ## EMQX Cloud on GCP will be coming soon
@@ -97,6 +97,10 @@ EMQ is committed to providing a messaging engine of the Internet of Everything f
 
 
 
-## About EMQ Technologies Co., Ltd
-
-EMQ, founded in 2017,  is an [open-source data infrastructure software provider for IoT](https://www.emqx.com/en). EMQ delivers the world's leading [open-source MQTT message broker](https://www.emqx.io) and [stream processing database](https://www.emqx.com/en/products/hstreamdb), provides a one-stop solution for real-time [IoT data movement](https://www.emqx.com/en/solutions/reliable-iot-messaging), stream processing, and data analytics.
+<section class="promotion">
+    <div>
+        Try EMQX Cloud for Free
+        <div class="is-size-14 is-text-normal has-text-weight-normal">No credit card required</div>
+    </div>
+    <a href="https://www.emqx.com/en/signup?continue=https://cloud-intl.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">Get Started →</a >
+</section>

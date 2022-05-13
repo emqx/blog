@@ -23,7 +23,7 @@ In order to support the introduction of more new functions and the  improvement 
 - Optimize rule creation steps, provide creation wizards to facilitate quick learning of the enterprise, and clarify the rules engine application relationship;
 - Added alarm management, globally displays the current number of alarms, and provides historical alarm record troubleshooting, which is convenient for discovering problems and solving problems and avoiding the risks caused by alarms.
 
-![11111.png](https://static.emqx.net/images/d737da2ec945d7e8e4aa630264d172b9.png)
+![11111.png](https://assets.emqx.com/images/d737da2ec945d7e8e4aa630264d172b9.png)
 
 
 
@@ -33,14 +33,14 @@ Prior to 3.4.0, all modifications to the EMQX main configuration `etc/emqx.conf`
 
 After evaluation, EMQ lists dozens of configuration items that do not affect system stability but have hot configuration requirements, and provide hot configuration capabilities in Dashboard and REST APIs.
 
-![2.png](https://static.emqx.net/images/b89c633085a8e75c186c091d1c50a283.png)
+![2.png](https://assets.emqx.com/images/b89c633085a8e75c186c091d1c50a283.png)
 
 
 
 ### Cluster management is supported by Dashboard
 
 In this version,  management functions are added for clusters. The visual interface provides invitation and kick-out functions for clusters in manual cluster mode. Cluster parameters are displayed in other automatic cluster modes, which greatly facilitates monitoring  management and the reference configuration of new nodes..
-![Dashboard.png](https://static.emqx.net/images/a2be9d0a7ebb7f4e8c22b959f65176a6.png)
+![Dashboard.png](https://assets.emqx.com/images/a2be9d0a7ebb7f4e8c22b959f65176a6.png)
 
 
 
@@ -54,7 +54,7 @@ To address this pain point, a set of Broker's built-in, real-time codec system S
 
 Schematic diagram for use with both Schema and rules engine:
 
-![Schema Registry .png](https://static.emqx.net/images/e295802e25b24d1c66c85b664b155bb4.png)
+![Schema Registry .png](https://assets.emqx.com/images/e295802e25b24d1c66c85b664b155bb4.png)
 
 
 
@@ -66,7 +66,7 @@ At present, three kinds of protocol parsing methods are supported by EMQX :
 - The third-party codec service delivers the original message data through the TCP and HTTP communication to the external codec service, waiting for the coded data to be returned, and then conducting the subsequent logic. The third-party service can be a self-built codec gateway or even a hot Serverless application in cloud computing.
 
 
-![4.png](https://static.emqx.net/images/ae6f8f44bfff90d96a714beccf888647.png)
+![4.png](https://assets.emqx.com/images/ae6f8f44bfff90d96a714beccf888647.png)
 
 
 
@@ -88,7 +88,7 @@ The new vehicle networking protocol access JT/T808, with full name "JT/T 808-201
 
 Schematic diagram of JT/T808 protocol access architecture:
 
-![ JT:T808.png](https://static.emqx.net/images/54516d671cbb83d5a21312903517adca.png)
+![ JT:T808.png](https://assets.emqx.com/images/54516d671cbb83d5a21312903517adca.png)
 
 
 

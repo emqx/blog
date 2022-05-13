@@ -14,7 +14,7 @@ EMQX 官网下载：[https://www.emqx.com/zh/downloads/broker/v5.0.0-rc.2](https
 
 在 5.0 版本中我们提供了更多的监控数据并将其可视化展现到 Dashboard 上，您可以在显眼的位置看到客户端实时连接情况以及消息流入流出速度，通过节点拓扑一目了然洞察集群中所有节点状态。
 
-![EMQX 5.0 Dashboard](https://static.emqx.net/images/f06fe7d927ebd765989b277cd7f268fe.png)
+![EMQX 5.0 Dashboard](https://assets.emqx.com/images/f06fe7d927ebd765989b277cd7f268fe.png)
 
 ### 回溯历史指标
 
@@ -22,9 +22,9 @@ EMQX 官网下载：[https://www.emqx.com/zh/downloads/broker/v5.0.0-rc.2](https
 
 如果您想使用自己熟悉的指标监控与告警技术栈，轻点鼠标即可在界面上集成 Prometheus 和 StatsD 系统。
 
-![EMQX 5.0 仪表盘](https://static.emqx.net/images/a77e433870b91146623b82c7f9ee60e7.png)
+![EMQX 5.0 仪表盘](https://assets.emqx.com/images/a77e433870b91146623b82c7f9ee60e7.png)
 
-![EMQX 集成 Prometheus 和 StatsD](https://static.emqx.net/images/79d870627770a341aa73921b36d4cfad.png)
+![EMQX 集成 Prometheus 和 StatsD](https://assets.emqx.com/images/79d870627770a341aa73921b36d4cfad.png)
 
  
 ## 在 Web 上配置认证与授权
@@ -37,22 +37,22 @@ EMQX 官网下载：[https://www.emqx.com/zh/downloads/broker/v5.0.0-rc.2](https
 
 如果您选择使用内置数据库，您可以在 Web 页面上完成认证数据的添加与管理，不需要阅读文档，不需要再开发新的代码，一切操作随心应手。
 
-![EMQX 5.0 创建认证](https://static.emqx.net/images/5b88f954971be6c1199c6114f61154e6.png)
+![EMQX 5.0 创建认证](https://assets.emqx.com/images/5b88f954971be6c1199c6114f61154e6.png)
 
-![EMQX 5.0 创建认证 2](https://static.emqx.net/images/84045601237c7f556fc30871058c0741.png)
+![EMQX 5.0 创建认证 2](https://assets.emqx.com/images/84045601237c7f556fc30871058c0741.png)
 
 
 ### 查看运行统计
 
 我们针对每个认证和权限控制提供了运行统计，确保您不错过任何一次失败请求；通过当前速度指标，您可以检测认证服务的负载情况。
 
-![EMQX 查看运行统计](https://static.emqx.net/images/90e8ee89ea64206d3569e1975b1f0119.png)
+![EMQX 查看运行统计](https://assets.emqx.com/images/90e8ee89ea64206d3569e1975b1f0119.png)
 
 ### 调整配置应用顺序
 
 当您启用多个认证配置时（尽管我们不推荐这么做，但某些场景下确实很需要这个特性），EMQX 将按照配置顺序从上到下依次执行验证操作。您可以通过拖拽、上下移动的方式调整配置之间的执行顺序，确保符合业务需求。
 
-![EMQX 调整配置应用顺序](https://static.emqx.net/images/40921cfe0f6077137741bec0cc16215f.png)
+![EMQX 调整配置应用顺序](https://assets.emqx.com/images/40921cfe0f6077137741bec0cc16215f.png)
 
 ## 规则引擎与数据桥接
 
@@ -62,9 +62,9 @@ EMQX 官网下载：[https://www.emqx.com/zh/downloads/broker/v5.0.0-rc.2](https
 
 在创建时，我们提供 SQL 输入与 Web 配置的模式，即使您不了解规则 SQL 也能完成规则配置；对于复杂数据，您可以一键代入 SQL 模板，快速探索数据处理方式。
 
-![EMQX 可视化规则配置](https://static.emqx.net/images/64d5f8144073cc3b41a3ea9b8826ea83.png)
+![EMQX 可视化规则配置](https://assets.emqx.com/images/64d5f8144073cc3b41a3ea9b8826ea83.png)
 
-![EMQX 可视化规则配置 2](https://static.emqx.net/images/03c8939954841617a1ae4a2fa77e67a5.png)
+![EMQX 可视化规则配置 2](https://assets.emqx.com/images/03c8939954841617a1ae4a2fa77e67a5.png)
 
 ### 双向数据流
 
@@ -72,7 +72,7 @@ EMQX 官网下载：[https://www.emqx.com/zh/downloads/broker/v5.0.0-rc.2](https
 
 在 5.0 版本中，我们提供了双向数据流：您可以在远程 MQTT Broker 和 EMQX 之间自由的桥接消息，并使用规则 SQL 实时提取、过滤、丰富和转换数据。
 
-![EMQX 双向数据流](https://static.emqx.net/images/b04f853471664f18379ee107d872d026.png)
+![EMQX 双向数据流](https://assets.emqx.com/images/b04f853471664f18379ee107d872d026.png)
 
 ### 可视化的数据流
 
@@ -80,7 +80,7 @@ EMQX 官网下载：[https://www.emqx.com/zh/downloads/broker/v5.0.0-rc.2](https
 
 后续的版本我们计划继续完善 Flow Chart 面板，届时您可以在面板上使用拖拽、连接的方式自由的编排您的数据集成逻辑。
 
-![EMQX 可视化的数据流](https://static.emqx.net/images/03b9bce2f7b4a6456d6ed2d00984cf4d.png)
+![EMQX 可视化的数据流](https://assets.emqx.com/images/03b9bce2f7b4a6456d6ed2d00984cf4d.png)
  
 
 ## 像 Chrome 一样管理拓展插件
@@ -91,9 +91,9 @@ EMQX 官网下载：[https://www.emqx.com/zh/downloads/broker/v5.0.0-rc.2](https
 
 如果您在 4.x 3.x 等旧版本中使用了其他插件也不必担心，5.0 版本完全兼容之前的插件。
 
-![EMQX 安装插件](https://static.emqx.net/images/65ea54ae2bde9ecd9ee0f77bca2d100c.png)
+![EMQX 安装插件](https://assets.emqx.com/images/65ea54ae2bde9ecd9ee0f77bca2d100c.png)
 
-![EMQX 插件管理](https://static.emqx.net/images/d087f1e205a16a6e2dd4ca81fa2a345c.png)
+![EMQX 插件管理](https://assets.emqx.com/images/d087f1e205a16a6e2dd4ca81fa2a345c.png)
 
 ## 在页面上配置所有参数
 
@@ -101,7 +101,7 @@ EMQX 官网下载：[https://www.emqx.com/zh/downloads/broker/v5.0.0-rc.2](https
 
 我们提供了热配置能力，无论是在 Web 页面还是文件进行的配置都可以热更新到集群。
 
-![EMQX 热配置](https://static.emqx.net/images/83f4c472cfe8ccbf623239afd0d4a10e.png)
+![EMQX 热配置](https://assets.emqx.com/images/83f4c472cfe8ccbf623239afd0d4a10e.png)
 
 ## 写在最后
 

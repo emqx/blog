@@ -22,13 +22,13 @@ QoS 2 designed a resending and repeating message discovery mechanism to ensure t
 
 When QoS is 0, the publish of messages depends on the capabilities of the underlying network. The publisher will publish the message only once,  the receiver will not answer the message, and the publisher will not save and resend the message. Messages have the highest transmission efficiency at this level, but may not be delivered once. 
 
-![MQTT_1.png](https://static.emqx.net/images/8c6e4c6b37e76e23b84d3341a2ff9b33.png)
+![MQTT_1.png](https://assets.emqx.com/images/8c6e4c6b37e76e23b84d3341a2ff9b33.png)
 
 #### Qos 1 - Publish once at least
 
 When the QoS is 1, the message can be guaranteed to be published at least once. MQTT guarantees QoS 1 through a simple ACK mechanism. The publisher will publish the message and wait for the response of the receiver's PUBACK packet. If the PUBACK response is not received within the specified time, the publisher will set the message's DUP to 1 and resend the message. The receiver should respond to the PUBACK message when receiving a message with QoS 1. The receiver may accept the same message multiple times. Regardless of the DUP flag, the receiver will treat the received message as a new message and send a PUBACK packet as a response.
 
-![MQTT_2.png](https://static.emqx.net/images/6777e0797f80ddaa1d623b173890f63c.png)
+![MQTT_2.png](https://assets.emqx.com/images/6777e0797f80ddaa1d623b173890f63c.png)
 
 #### QoS 2 - Publish only once
 
@@ -40,7 +40,7 @@ When the receiver receives a PUBLISH message with a QoS of 2, it processes the m
 
 Whenever packet loss occurs during transmission, the sender is responsible for resending the previous message. This is true regardless of whether the sender is Publisher or Broker. Therefore, the receiver also needs to respond to each command message.
 
-![MQTT_3.png](https://static.emqx.net/images/9d1234bb84dc9a3e3c178c55732f8444.png)
+![MQTT_3.png](https://assets.emqx.com/images/9d1234bb84dc9a3e3c178c55732f8444.png)
 
 
 ## The difference of QoS in publishing and subscribing
@@ -83,3 +83,12 @@ The higher QoS level corresponds to more complicated processes and the greater t
 
 - It is unacceptable that lost message(the loss of message may result in loss of life or property), and do not want to receive duplicate messages.
 - For some industries such as a bank, firefight, aviation, etc that require high completeness of data and timeliness.
+
+
+<section class="promotion">
+    <div>
+        Try EMQX Cloud for Free
+        <div class="is-size-14 is-text-normal has-text-weight-normal">A fully managed, cloud-native MQTT service</div>
+    </div>
+    <a href="https://www.emqx.com/en/signup?continue=https://cloud-intl.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">Get Started →</a >
+</section>

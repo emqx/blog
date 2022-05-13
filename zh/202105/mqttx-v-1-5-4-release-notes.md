@@ -9,7 +9,7 @@ Mac 用户可在 App Store 中进行下载：[https://apps.apple.com/cn/app/mqtt
 Linux 用户可在 Snapcraft 中进行下载：[https://snapcraft.io/mqttx](https://snapcraft.io/mqttx)
 
 
-![mqttxpreview.png](https://static.emqx.net/images/3c7493d6526eb7a02d42c3aa962f48f0.png)
+![mqttxpreview.png](https://assets.emqx.com/images/3c7493d6526eb7a02d42c3aa962f48f0.png)
 
 ## 新功能概览
 
@@ -18,14 +18,14 @@ Linux 用户可在 Snapcraft 中进行下载：[https://snapcraft.io/mqttx](http
   当连接的客户端成功发送过一条 Payload 后，将会自动将 Payload 数据保存到历史记录，点击右下方左右按钮可快速切换保存过的历史记录，点击中间按钮可快速切换到最新的一条 Payload 。避免了每次发布消息时，都需要手动编辑的情况。
 
 
-![mqttxpayload.png](https://static.emqx.net/images/c175486e82496d829b99da0c08f16f4e.png)
+![mqttxpayload.png](https://assets.emqx.com/images/c175486e82496d829b99da0c08f16f4e.png)
 
 - 支持对发送过的 Topic 信息进行历史记录保存
 
   除自动保存 Payload 消息外，还将会自动保存发送的 Topic 信息，点击 Topic 输入框最右方的下拉按钮，可快速选择历史记录，同样也避免了每次发送前都需要手动输入 Topic 的问题。从而提升测试效率。
 
 
-![mqttxtopic.png](https://static.emqx.net/images/2befce2f17c088c3afe05cc9df6065a5.png)
+![mqttxtopic.png](https://assets.emqx.com/images/2befce2f17c088c3afe05cc9df6065a5.png)
 
 ## 修复及其优化
 

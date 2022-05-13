@@ -28,9 +28,9 @@ Two Sink Connectors are available, MySQL and Clickhouse, allowing users to easil
 
 Users can manage the internal resources of HStreamDB through the Dashboard. 
 
-![HStreamDB Dashboard](https://static.emqx.net/images/89988ce1154311092d8bdefcb78752cc.png)
+![HStreamDB Dashboard](https://assets.emqx.com/images/89988ce1154311092d8bdefcb78752cc.png)
 
-![HStreamDB Dashboard](https://static.emqx.net/images/62d29d904cf35d3e245207bea2ff4156.png)
+![HStreamDB Dashboard](https://assets.emqx.com/images/62d29d904cf35d3e245207bea2ff4156.png)
 
 ### Refactor server, implement server interface based on gRPC 
 

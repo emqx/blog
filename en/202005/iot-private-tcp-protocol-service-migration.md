@@ -69,7 +69,7 @@ The server adaptation aims to the existing private TCP protocol and adjusts the 
 9. MQTT protocol packet processing
 
 
-![image20191112155608683.png](https://static.emqx.net/images/b64b6dce3d716e39d4f6e0c27e7dfef3.png)
+![image20191112155608683.png](https://assets.emqx.com/images/b64b6dce3d716e39d4f6e0c27e7dfef3.png)
 
 <center>Figure 1 EMQX functional architecture diagram, and the red box in the figure is the private TCP/UDP protocol layer</center>
 

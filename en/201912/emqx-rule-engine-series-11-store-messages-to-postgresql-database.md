@@ -1,4 +1,4 @@
-![画板 172x.png](https://static.emqx.net/images/596a4e5f5875b53d706eb59ce09b5591.png)
+![画板 172x.png](https://assets.emqx.com/images/596a4e5f5875b53d706eb59ce09b5591.png)
 
 ## Introduction to PostgreSQL Database
 
@@ -67,7 +67,7 @@ CREATE TABLE t_mqtt_msg (
 
 Open EMQX Dashboard, enter the **Resources**  page of the left menu, click the  **New** button, select the PostgreSQL resource type and complete the related configuration for resource creation.
 
-![image20190725142933513.png](https://static.emqx.net/images/e71375bc88c1006c15cd8bd0b530a4fc.png)
+![image20190725142933513.png](https://assets.emqx.com/images/e71375bc88c1006c15cd8bd0b530a4fc.png)
 
 
 
@@ -77,7 +77,7 @@ Enter the **Rules** page on the left menu and click the **New** button to create
 
 After the trigger event is selected, we can see optional fields and sample SQL on the interface:
 
-![image20190719112141128.png](https://static.emqx.net/images/77c447a399f12a0e2bc083289830a139.png)
+![image20190719112141128.png](https://assets.emqx.com/images/77c447a399f12a0e2bc083289830a139.png)
 
 
 
@@ -98,7 +98,7 @@ FROM
 
 With the SQL test feature, we can quickly confirm whether the SQL statement we just filled out can achieve our purpose. First we fill in the payload and other data for test as follows:
 
-![image20190725145617081.png](https://static.emqx.net/images/5cb6cc54c7a2495335c32e0d0cb019d0.png)
+![image20190725145617081.png](https://assets.emqx.com/images/5cb6cc54c7a2495335c32e0d0cb019d0.png)
 
 After clicking the  **Test**  button, we get the following data output:
 
@@ -132,7 +132,7 @@ Click the **Add** button in the response action, select the action of **Save Dat
 
 Finally, click the **New** button to complete the rule creation.
 
-![image20190725144256942.png](https://static.emqx.net/images/d6ffcd695037cfbf0edd0f86ae08181e.png)
+![image20190725144256942.png](https://assets.emqx.com/images/d6ffcd695037cfbf0edd0f86ae08181e.png)
 
 
 
@@ -159,13 +159,13 @@ Switch to the **Tools ->  Websocket**  page, use any information client to conne
   {"msg":"Hello, World!"}
   ```
 
-![image20190725145805279.png](https://static.emqx.net/images/9b9e11efbab8f3b466b01ad4305c40da.png)
+![image20190725145805279.png](https://assets.emqx.com/images/9b9e11efbab8f3b466b01ad4305c40da.png)
 
 Click the **Send** button. After sending successfully, we can see that the number of hits of the current rule has changed to 1.
 
 Then check PostgreSQL to see if the new data point was added successfully:
 
-![image20190725145107685.png](https://static.emqx.net/images/84514d56fd8c388e713bc7dba245412a.png)
+![image20190725145107685.png](https://assets.emqx.com/images/84514d56fd8c388e713bc7dba245412a.png)
 
 So far, we have used the rule engine to implement business development to store messages to a PostgreSQL database.
 

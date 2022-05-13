@@ -2,7 +2,7 @@
 
 规则引擎无疑是 EMQX Cloud 帮助用户实现数据灵活处理与集成的利器。为了让用户更加轻松上手，真正将这一杀手级功能的价值在实际项目应用中发挥出来，EMQX Cloud 团队近日对该功能进行了升级优化。
 
-![EMQX Cloud 数据集成](https://static.emqx.net/images/1a40a7eb3f1b8f3da69f659d283a1e92.png)
+![EMQX Cloud 数据集成](https://assets.emqx.com/images/1a40a7eb3f1b8f3da69f659d283a1e92.png)
 
 规则引擎功能模块现已正式更名为「数据集成」，同时进行了更易于用户理解、操作、管理的 UI 改版升级。对比之前版本的规则引擎模块，新版本「数据集成」通过导航的方式一步步帮助用户快速熟悉资源与规则的创建。用户只需按照创建资源-创建规则-添加动作-测试运行的流程进行操作便可以完成对规则的配置，具体流程如下：
 
@@ -12,7 +12,7 @@
 
 经过以上三步，用户即可完成对设备数据的处理转存的设置，进一步测试运行后完成数据集成。
 
-![创建资源-创建规则-添加动作-测试运行](https://static.emqx.net/images/34bd231ffcafba504c35a84c412d9785.png)
+![创建资源-创建规则-添加动作-测试运行](https://assets.emqx.com/images/34bd231ffcafba504c35a84c412d9785.png)
 
 全新改版的「数据集成」将使规则引擎的使用逻辑更加符合用户习惯，为用户利用 EMQX Cloud 搭建符合业务需求的物联网平台与应用提供便利。
 
@@ -24,7 +24,7 @@ EMQX Cloud 免费试用活动进行中，欢迎登录 EMQ 官网 [https://www.em
 
 使用数据集成功能需要提前了解以下概念，在「数据集成」入门引导概览中，您可以遵循引导步骤进行操作。
 
-![EMQX Cloud 入门](https://static.emqx.net/images/fe246a328f61415f6679b6db8a9111bf.jpeg)
+![EMQX Cloud 入门](https://assets.emqx.com/images/fe246a328f61415f6679b6db8a9111bf.jpeg)
  
 同时请注意您使用的 EMQX Cloud 版本：
 
@@ -43,3 +43,13 @@ EMQX Cloud 免费试用活动进行中，欢迎登录 EMQ 官网 [https://www.em
 - 以使用 EMQX Cloud 数据集成功能，收集模拟温湿度数据并转存到 MySQL 为例：[https://docs.emqx.com/zh/cloud/latest/rule_engine/rule_engine_save_mysql.html](https://docs.emqx.com/zh/cloud/latest/rule_engine/rule_engine_save_mysql.html) 
 
 - 参考文档：[https://docs.emqx.com/zh/cloud/latest/rule_engine/introduction.html](https://docs.emqx.com/zh/cloud/latest/rule_engine/introduction.html)
+
+
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX Cloud
+        <div class="is-size-14 is-text-normal has-text-weight-normal">无须绑定信用卡</div>
+    </div>
+    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a >
+</section>

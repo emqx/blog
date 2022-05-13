@@ -1,4 +1,4 @@
-![MQTT 5.0 公有云](https://static.emqx.net/images/3a5367d7e54adc84c9e25f670add6437.png)
+![MQTT 5.0 公有云](https://assets.emqx.com/images/3a5367d7e54adc84c9e25f670add6437.png)
 
 全球首个 [MQTT 5.0 公有云服务](https://www.emqx.com/zh/cloud) EMQX Cloud 国内版正式上线，首次注册用户提供 7 天免费试用，目前已经支持华为云、阿里云，其他云服务商将陆续上线。
 
@@ -89,19 +89,19 @@ EMQX Cloud 上相关的限制取决于购买的连接数与消息向下行 TPS�
 
 创建部署实例，选择云平台与区域，根据最大连接数与消息吞吐量预估服务价格：
 
-![MQTT 公有云价格估算](https://static.emqx.net/images/7f3273f6e7a28984094f8ef2bf5ce701.png)           
+![MQTT 公有云价格估算](https://assets.emqx.com/images/7f3273f6e7a28984094f8ef2bf5ce701.png)           
 
 添加客户端认证与发布订阅 ACL 规则，支持批量导入：
 
-![MQTT 认证鉴权](https://static.emqx.net/images/44027dce75955fb611d2e8f861e9be9a.png)
+![MQTT 认证鉴权](https://assets.emqx.com/images/44027dce75955fb611d2e8f861e9be9a.png)
 
 运行情况与业务指标查看，提供不同维度集群运行统计功能：
 
-![MQTT 服务器指标监控](https://static.emqx.net/images/b846c4c0fc4fe795abe1059c51a67f16.png)           
+![MQTT 服务器指标监控](https://assets.emqx.com/images/b846c4c0fc4fe795abe1059c51a67f16.png)           
 
 账单与费用信息，当日、当月以及历史消费数据清晰明了：
 
-![EMQX Cloud 财务管理](https://static.emqx.net/images/7b9079726c73b8b4fb20f5e2547d1803.png)            
+![EMQX Cloud 财务管理](https://assets.emqx.com/images/7b9079726c73b8b4fb20f5e2547d1803.png)            
 
 
 
@@ -123,3 +123,12 @@ EMQ 总部位于杭州，在北京、上海、硅谷、法兰克福设有分支�
 2020 年 6 月，EMQ 发布 [Hamler](https://www.hamler-lang.org/) 编程语言，将赋予行业尤其是 5G、IoT、云计算和边缘计算等潜力领域，构建下一代高可靠、可扩展、具备软实时支持应用的能力；
 
 未来，EMQ 将在核心产品 EMQX 5.0 版本发布 **5G 大基建超大规模多协议超融合接入平台**，与海内外用户携手共进，推动行业与时代发展。
+
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX Cloud
+        <div class="is-size-14 is-text-normal has-text-weight-normal">全托管的云原生 MQTT 消息服务</div>
+    </div>
+    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a >
+</section>

@@ -70,7 +70,7 @@ EMQ 为客户提供的私有化付费开发定制服务中包括私有 TCP 协�
 8. MQTT 协议心跳检测
 9. MQTT 协议报文处理
 
-![image20191112155608683.png](https://static.emqx.net/images/ef9120fce3c3c1f8e792f1e3dda6a629.png)
+![image20191112155608683.png](https://assets.emqx.com/images/ef9120fce3c3c1f8e792f1e3dda6a629.png)
 
 <center>图 1 EMQX 功能架构图 图中红框部分即为私有 TCP/UDP 协议层</center>
 

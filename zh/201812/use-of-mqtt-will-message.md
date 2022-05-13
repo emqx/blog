@@ -53,21 +53,21 @@ zone.internal.acl_deny_action = disconnect
 
 接下来，我们在 MQTT X 中新建一个名为 demo 的连接，Host 修改为 localhost，在 Advanced 部分选择 MQTT Version 为 5.0，并且将 Session Expiry Interval 设置为 10，确保会话不会在遗嘱消息发布前过期。
 
-![MQTT X 创建连接](https://static.emqx.net/images/944beb7b3bade0f748ef8ba941b75b18.png)
+![MQTT X 创建连接](https://assets.emqx.com/images/944beb7b3bade0f748ef8ba941b75b18.png)
 
 然后在 Lass Will and Testament 部分将 Last-Will Topic 设置为 offline，Last-Will Payload 设置为 `I'm offline`，Will Delay Interval (s) 设置为 5。
 
-![Lass Will and Testament](https://static.emqx.net/images/1a0b8deedbeb35560eeab52c56c5d569.png)
+![Lass Will and Testament](https://assets.emqx.com/images/1a0b8deedbeb35560eeab52c56c5d569.png)
 
 完成以上设置后，我们点击右上角的 Connect 按钮以建立连接。
 
 然后我们再创建一个名为 subscriber 的客户端连接，并订阅 offline 主题。
 
-![创建 subscriber 客户端](https://static.emqx.net/images/dff812179bd1fdd3c2e02d05f1561cdd.png)
+![创建 subscriber 客户端](https://assets.emqx.com/images/dff812179bd1fdd3c2e02d05f1561cdd.png)
 
 接下来我们回到 demo 连接中，发布一个 Topic 为 test 的任意内容消息，这时连接会被断开，耐心等待五秒钟，我们将看到 subscriber 连接收到了一条内容为 `I‘m offline` 的遗嘱消息。
 
-![发布消息](https://static.emqx.net/images/5ca474341ab19f2b1ea41a46b736bada.png)
+![发布消息](https://assets.emqx.com/images/5ca474341ab19f2b1ea41a46b736bada.png)
 
 ### 进阶使用场景
 

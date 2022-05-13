@@ -29,7 +29,7 @@ Github 仓库：[https://github.com/hstreamdb/hstream](https://github.com/hstrea
 本月我们对 HStreamDB 的监控指标进行了细化和丰富，整体分为实时指标（e.g.，秒级的写入速率）和
 历史指标（e.g.，分钟级的请求数）两大类，并增加了 records、bytes、requests 等多个维度的统计指标，以及 success_requests、failed_requests 之类的细化指标，还有核心链路的百分位时延指标等。
 
-![HStreamDB 监控指标](https://static.emqx.net/images/4cd2453b1b80aa76142bf9c781ba9148.png)
+![HStreamDB 监控指标](https://assets.emqx.com/images/4cd2453b1b80aa76142bf9c781ba9148.png)
 
 ## HStream Admin Server
 
@@ -37,7 +37,7 @@ Github 仓库：[https://github.com/hstreamdb/hstream](https://github.com/hstrea
 
 同时，考虑到我们将原来 HTTP Server 的定位升级为统一的 Admin Server，后续它将负责服务多种 CLI Tools、Dashboard 以及提供开放的 REST API 供开发者使用。为此我们重新实现了一个 Admin Server，仓库地址见 [https://github.com/hstreamdb/http-services](https://github.com/hstreamdb/http-services) 。
 
-![HStream Admin Server](https://static.emqx.net/images/a6e204882da4ab01da354065428c151a.png)
+![HStream Admin Server](https://assets.emqx.com/images/a6e204882da4ab01da354065428c151a.png)
 
 ## HStreamDB 客户端
 

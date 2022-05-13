@@ -50,7 +50,7 @@ EMQX Cloud 本月推出了 HTTP 自定义认证功能。HTTP 认证允许用户�
 
 自定义 HTTP 认证的原理为：EMQX Cloud 在设备连接事件中使用当前客户端相关信息作为参数，向用户自定义的认证服务发起请求查询权限，通过返回的 HTTP 响应状态码 (HTTP statusCode) 来处理认证请求。用户可以配置连接认证的参数以及访问控制的参数。
 
-![EMQX Cloud 自定义 HTTP 认证](https://static.emqx.net/images/a66a7786d7aecc7d7eb08114680f94c8.png)
+![EMQX Cloud 自定义 HTTP 认证](https://assets.emqx.com/images/a66a7786d7aecc7d7eb08114680f94c8.png)
 
 对于基础版的部署，认证以及访问控制的请求地址需填写公网的相关请求连接，专业版的部署则需要首先完成 VPC 的配置，并且填写服务内网的地址。
 
@@ -62,7 +62,7 @@ EMQX Cloud 本月推出了 HTTP 自定义认证功能。HTTP 认证允许用户�
 
 至此 EMQX Cloud 支持邮箱告警集成、PagerDuty 事件告警集成和 Webhook 告警集成三种模式，丰富的告警集成模式与告警事件将使整个产品的自动化预警功能模块更加完善，为用户带来更稳定的业务保障。
 
-![EMQX Cloud Webhook](https://static.emqx.net/images/66765175c120f1a84d9efbc1c85350d0.png)
+![EMQX Cloud Webhook](https://assets.emqx.com/images/66765175c120f1a84d9efbc1c85350d0.png)
 
 ### 基础版扩容
 
@@ -70,3 +70,12 @@ EMQX Cloud 本月推出了 HTTP 自定义认证功能。HTTP 认证允许用户�
 
  
 为了完成「通过世界级开源软件产品服务人类未来产业与社会」的使命，敬请期待一个更优秀的 EMQX。
+
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX Cloud
+        <div class="is-size-14 is-text-normal has-text-weight-normal">无须绑定信用卡</div>
+    </div>
+    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a >
+</section>

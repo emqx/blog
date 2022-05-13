@@ -458,16 +458,16 @@ iex(1)> [watch] build finished, watching for changes...
 
 此外，该页面立即开始更新：
 
-![Phoenix](https://static.emqx.net/images/44e89f1a4a87e5b58cf1a1e8d555883e.png)
+![Phoenix](https://assets.emqx.com/images/44e89f1a4a87e5b58cf1a1e8d555883e.png)
 
 
 如果我们更新间隔，我们看到设备节点立即收到命令并开始更频繁地更新：
 
-![Phoenix](https://static.emqx.net/images/75241ba7373693c8703633cbd9a21f69.png)
+![Phoenix](https://assets.emqx.com/images/75241ba7373693c8703633cbd9a21f69.png)
 
 现在我们演示一件重要的事情：让我们停止我们的“设备”节点，稍等片刻，然后重新启动它。 我们看到节点继续以更新的频率发送数据。
 
-![Phoenix](https://static.emqx.net/images/5a56289b930e3fa28be2b623a96c0962.png)
+![Phoenix](https://assets.emqx.com/images/5a56289b930e3fa28be2b623a96c0962.png)
 
 怎么会这样？ 其实很简单，秘诀就在于我们发送到命令主题的命令消息的 retain 标志。
 
@@ -498,3 +498,12 @@ iex(1)> [watch] build finished, watching for changes...
 - 使用 [MQTT.js](https://www.emqx.com/zh/blog/mqtt-js-tutorial) 通过 WebSockets 从前端直接连接到 broker。
 
 所有代码都可以在 [https://github.com/savonarola/mqtt-article](https://github.com/savonarola/mqtt-article) 上查阅。
+
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX Cloud
+        <div class="is-size-14 is-text-normal has-text-weight-normal">全托管的云原生 MQTT 消息服务</div>
+    </div>
+    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a >
+</section>

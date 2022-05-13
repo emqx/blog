@@ -23,19 +23,19 @@ In this project, we will connect ESP32 to the [free public MQTT server](https://
 
 Click Tools -> Development Board -> Development Board Management -> Search ESP32 -> Install
 
-![Install ESP32 development board](https://static.emqx.net/images/99c502b39ef7d21dc75632e42aa89708.png)
+![Install ESP32 development board](https://assets.emqx.com/images/99c502b39ef7d21dc75632e42aa89708.png)
 
 ### Install PubSub client
 
 Project -> Load library -> Library manager... -> Search PubSubClient -> Install PubSubClient by Nick O’Leary
 
-![Install PubSub client](https://static.emqx.net/images/cb7b0228aa91bf300eec5a725da159d3.png)
+![Install PubSub client](https://assets.emqx.com/images/cb7b0228aa91bf300eec5a725da159d3.png)
 
 
 
 ## ESP32 Pub/Sub diagram 
 
-![ESP32 Pub/Sub diagram](https://static.emqx.net/images/d6265585d6257fc02c722fe45888bdac.png)
+![ESP32 Pub/Sub diagram](https://assets.emqx.com/images/d6265585d6257fc02c722fe45888bdac.png)
 
 ## Programming ESP32 Board with Arduino IDE
 
@@ -191,11 +191,11 @@ void loop() {
 
 2. Open the serial monitor, select 115200 baud rate, and check the ESP32 connection status.
 
-   ![check the ESP32 connection status](https://static.emqx.net/images/08d1cf506e708f40861f4d2ea4776c1f.png)
+   ![check the ESP32 connection status](https://assets.emqx.com/images/08d1cf506e708f40861f4d2ea4776c1f.png)
 
 3. Use the MQTT X client to connect to the public MQTT server and publish messages to ESP32.
 
-   ![MQTT X client](https://static.emqx.net/images/2dc50309dbba7bdc8a65ec9b4b082b8c.png)
+   ![MQTT X client](https://assets.emqx.com/images/2dc50309dbba7bdc8a65ec9b4b082b8c.png)
 
 
 ## Summary 

@@ -73,7 +73,7 @@ The most common way to access TBox access is to use certificate authentication. 
 
 In addition, most users have enabled the EMQX authentication feature, which assigns corresponding publish and subscribe permissions to different TBox terminals to effectively protect data security.
 
-![EMQX Security assurance](https://static.emqx.net/images/4ff574a38707a1a8160882dca8cd16e7.png)
+![EMQX Security assurance](https://assets.emqx.com/images/4ff574a38707a1a8160882dca8cd16e7.png)
 
 
 ### Data integration
@@ -82,7 +82,7 @@ Customers attach great importance to the ability to connect the massive data of 
 
 Kafka focuses on data storage and reading, while EMQX focuses on communication between client and server. EMQX is used to quickly receive and process messages from a large number of IoT devices. Kafka can collect and store this data and send it to back-end programs for analysis and processing. This architecture is the most widely used data integration scheme at present.
 
-![EMQX Data integration](https://static.emqx.net/images/382114e90c6a728659ac9316b73ddd60.png)
+![EMQX Data integration](https://assets.emqx.com/images/382114e90c6a728659ac9316b73ddd60.png)
 
 ## **Conclusion**
 

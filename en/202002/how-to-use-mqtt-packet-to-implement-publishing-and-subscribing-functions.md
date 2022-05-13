@@ -6,13 +6,13 @@ MQTT protocol is based on the TCP / IP protocol. Both the MQTT Broker and the Cl
 
 ### Broker
 
-![1.png](https://static.emqx.net/images/5002d126f2768ed89f0186d35cb5f3d7.png)
+![1.png](https://assets.emqx.com/images/5002d126f2768ed89f0186d35cb5f3d7.png)
 
 If you don't have an available MQTT broker for the time being, **[EMQX](https://github.com/emqx/emqx)** provides a public broker address for testing: `broker.emqx.io:1883` .
 
 ### Client
 
-![WX201911281139012x.png](https://static.emqx.net/images/824bc7779391f86ec9cf02bd73378f42.png)
+![WX201911281139012x.png](https://assets.emqx.com/images/824bc7779391f86ec9cf02bd73378f42.png)
 
 The configuration of the Client in the MQTTX tool is actually the configuration of the Connect packets in the [MQTT protocol](https://www.emqx.com/en/mqtt). The following explains the related configuration items:
 
@@ -58,7 +58,7 @@ If the CleanSession flag is set to 0, the server must resume communication with 
 
 When the client sends a Connect packet to request a connection to the server, the server must send a Connack packet as a response to the Connect packet  from the client. If the client does not receive the CONNACK packet from the server within a reasonable time, the client should close the network connection. The reasonable time depends on the type of application and the communication infrastructure. In  **[MQTTX](https://github.com/emqx/MQTTX)**, you can set a reasonable timeout time through Connection Timeout.
 
-![Connect.png](https://static.emqx.net/images/cc1c9341a7e7471f0528e884788ab82e.png)
+![Connect.png](https://assets.emqx.com/images/cc1c9341a7e7471f0528e884788ab82e.png)
 
 Connack messages contain two important signs of Session Present and Connect Return code.
 
@@ -86,19 +86,19 @@ If all connection return codes in the above table are considered inappropriate, 
 
 The client sends a Subscribe packet to the server to create one or more subscriptions. Each registered client cares about one or more topics. In order to forward application messages to topics that match those subscriptions, the server sends Publish packet to the client. The Subscribe packet specifies the maximum QoS level for each subscription, and the server sends an application message to the client based on it.
 
-![WX201911281425432x.png](https://static.emqx.net/images/0e75ee848d01e883623bc925a898285e.png)
+![WX201911281425432x.png](https://assets.emqx.com/images/0e75ee848d01e883623bc925a898285e.png)
 
 The payload of a Subscribe packet must contain at least one pair of topic filter and QoS level fields combination. A Subscribe packet without a payload is a violation of the protocol.
 
 Use **[MQTTX](https://github.com/emqx/MQTTX)** to connect the Broker of  `broker.emqx.io:1883`and create a subscription with the topic of `testtopic/#` and Qos equal to 2.
 
-![WX201911281439252x.png](https://static.emqx.net/images/3eaa7a9170d37596496eb9d1fa187f4d.png)
+![WX201911281439252x.png](https://assets.emqx.com/images/3eaa7a9170d37596496eb9d1fa187f4d.png)
 
 ## Suback subscription confirmation
 
 The server sends a Suback packet to the client to confirm that it has received Subscribe packet and is processing it .
 
-![Subscribe.png](https://static.emqx.net/images/5dbc2a5fcbd65cfb8283d61bdc94c748.png)
+![Subscribe.png](https://assets.emqx.com/images/5dbc2a5fcbd65cfb8283d61bdc94c748.png)
 
 The Suback packet contains a list of reason codes, which is used to specify the maximum QoS level or an error that occurs for each subscription requested by the Subscribe packet. Each reason code corresponds to a topic filter in the Subscribe packet. The reason code sequence in the Suback packet must match the order of the topic filters in the Subscribe packet.
 
@@ -115,11 +115,11 @@ Allowed values of return code:
 
 Publish packet refers to an application message transmitted from the client to the server or from the server to the client. After receiving the Publish packet, the server forwards the message to other clients according to the topic filter.
 
-![Publish.png](https://static.emqx.net/images/94513f3dab1454b41d9c66992d149a82.png)
+![Publish.png](https://assets.emqx.com/images/94513f3dab1454b41d9c66992d149a82.png)
 
 Try using **[MQTTX](https://github.com/emqx/MQTTX)** to publish a message with the topic `testtopic/mytopic` and the content` {"msg":"hello world"} `. Because  the topic `testtopic/#`  has been subscribed before, the message forwarded by Broker is received immediately.
 
-![WX201911281441422x.png](https://static.emqx.net/images/45e8021cf9012bd49a561f9e6a201740.png)
+![WX201911281441422x.png](https://assets.emqx.com/images/45e8021cf9012bd49a561f9e6a201740.png)
 
 #### Topic
 

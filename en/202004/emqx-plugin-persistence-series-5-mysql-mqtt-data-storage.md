@@ -171,11 +171,11 @@ backend.mysql.hook.client.disconnected.1 = {"action": {"function": "on_client_di
 
 Opens `http://127.0.0.1:18083` EMQX management console through the browser, create a new client connection in **Tools ->  Websocket**, specify clientid as sub_client, click on **connect**, and disconnect manually after successful connection:
 
-![image20181116105333637.png](https://static.emqx.net/images/7774360e24f62fc2c3dc996f7a1c7b1e.png)
+![image20181116105333637.png](https://assets.emqx.com/images/7774360e24f62fc2c3dc996f7a1c7b1e.png)
 
 View the `mqtt_client` table in MySQL Workbeanch , and a client online and offline record will be written/updated at this point :
 
-![image20181119105034528.png](https://static.emqx.net/images/a467d97eae87ad25ce110156bd681221.png)
+![image20181119105034528.png](https://assets.emqx.com/images/a467d97eae87ad25ce110156bd681221.png)
 
 
 
@@ -209,7 +209,7 @@ insert into mqtt_sub(clientid, topic, qos) values("sub_client", "sub_client/down
 
 2. In the EMQX management console **WebSocket** page, create a new client connection with clientid `sub_client`. Switch to **subscription** page, and it can be seen that the current client automatically subscribes to the two QoS 1 topics of ` sub_client/upstream` and `sub_client/downlink`:
 
-![WechatIMG2692.png](https://static.emqx.net/images/80baf3902be1d070a619caf35da10b33.png)
+![WechatIMG2692.png](https://assets.emqx.com/images/80baf3902be1d070a619caf35da10b33.png)
 
 
 
@@ -237,7 +237,7 @@ backend.mysql.hook.message.publish.1     = {"topic": "#", "action": {"function":
 
 In the EMQX management console **WebSocket** page, publish multiple messages to the topic ` upstream_topic`, and EMQX persists the message list to the `mqtt_msg` table:
 
-![image20181119110712267.png](https://static.emqx.net/images/4dd20d779080afab2edf46a9421ee341.png)
+![image20181119110712267.png](https://assets.emqx.com/images/4dd20d779080afab2edf46a9421ee341.png)
 
 >Only QoS 1 2 message persistence is supported for the time being.
 
@@ -270,7 +270,7 @@ backend.mysql.hook.message.publish.3     = {"topic": "#", "action": {"function":
 
 After establishing a connection on the **WebSocket** page of the EMQX management console, publish the message and select **Retain**:
 
-![WechatIMG2691.png](https://static.emqx.net/images/85f3ecea4d45b295e72fa9d51c160917.png)
+![WechatIMG2691.png](https://assets.emqx.com/images/85f3ecea4d45b295e72fa9d51c160917.png)
 
 
 
@@ -278,7 +278,7 @@ After establishing a connection on the **WebSocket** page of the EMQX management
 
 When a non-empty retain message is published, EMQX will use topic as the unique key to persist the message to the `mqtt_retain` table. Different retain messages will be published under the same topic. Only the last message will be persisted:
 
-![image20181119164153931.png](https://static.emqx.net/images/5b0f0c250f7d518cb2d16e8cbbe0b424.png)
+![image20181119164153931.png](https://assets.emqx.com/images/5b0f0c250f7d518cb2d16e8cbbe0b424.png)
 
 **Subscribe**
 
@@ -318,13 +318,13 @@ backend.mysql.hook.session.unsubscribed.1= {"topic": "#", "action": {"sql": ["de
 
 After establishing a connection in the EMQX Management Console **WebSocket** page, subscribe to topics with QoS> 0:
 
-![WechatIMG2693.png](https://static.emqx.net/images/b9bd87a9a0908f4bb049886f657208e1.png)
+![WechatIMG2693.png](https://assets.emqx.com/images/b9bd87a9a0908f4bb049886f657208e1.png)
 
 
 
 At this point, the `mqtt_acked` table will be inserted with the initialization data row. At each time a message with a QoS> 0 is published to the topic , the data row mid will increase by 1 when the message arrives:
 
-![image20181119140354855.png](https://static.emqx.net/images/f6a175ec34896406b5e2add4ec8d8e99.png)
+![image20181119140354855.png](https://assets.emqx.com/images/f6a175ec34896406b5e2add4ec8d8e99.png)
 
 > Topics in the agent subscription that satisfy QoS> 0 will also initialize the records, and the related records will be deleted after the client cancels the subscription.
 
@@ -381,7 +381,7 @@ backend.mysql.hook.client.disconnected.3 = {"action": {"sql": ["insert into conn
 
 When the MQTT client goes online or offline, it will fill in and execute the preset SQL statement, and write the connection log to `connect_logs` table:
 
-![image20181119154828728.png](https://static.emqx.net/images/529c2fa0048d7306ba55ae002ee6f82a.png)
+![image20181119154828728.png](https://assets.emqx.com/images/529c2fa0048d7306ba55ae002ee6f82a.png)
 
 
 

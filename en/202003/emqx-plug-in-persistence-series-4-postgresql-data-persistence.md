@@ -102,13 +102,13 @@ backend.pgsql.hook.client.disconnected.1 = {"action": {"function": "on_client_di
 
 Opens  `http://127.0.0.1:18083`  EMQX management console through the browser, create a new client connection in **Tools ->  Websocket**, specify clientid as sub_client, click on **connect**, and disconnect manually after successful connection:
 
-![image20181116105333637.png](https://static.emqx.net/images/8cf8ae74eb385c2582a20de5593a01c6.png)
+![image20181116105333637.png](https://assets.emqx.com/images/8cf8ae74eb385c2582a20de5593a01c6.png)
 
 
 
 View the `mqtt_client` table, at which point a client online and offline record will be written/updated:
 
-![Example.png](https://static.emqx.net/images/80e6e3c8f15e2fed81db294cc2023f39.png)
+![Example.png](https://assets.emqx.com/images/80e6e3c8f15e2fed81db294cc2023f39.png)
 
 
 
@@ -159,7 +159,7 @@ insert into mqtt_sub(clientid, topic, qos) values('sub_client', 'sub_client/down
 
 2. In the EMQX management console **WebSocket** page, create a new client connection with clientid `sub_client`, switch to **subscription** page, it can be seen that the current client automatically subscribes to the two QoS 1 topics of ` sub_client/upstream` and `sub_client/downlink`:
 
-![image20181116110036523.png](https://static.emqx.net/images/a1743eaa61d8d9bb1663541d9af8dfd8.png)
+![image20181116110036523.png](https://assets.emqx.com/images/a1743eaa61d8d9bb1663541d9af8dfd8.png)
 
 
 
@@ -207,7 +207,7 @@ backend.pgsql.hook.message.publish.1     = {"topic": "#", "action": {"function":
 
 In the EMQX management console **WebSocket** page, use clientdi `sub_client` to establish a connection, publish multiple messages to the topic ` upstream_topic`, and EMQX persists the message list to the `mqtt_msg` table:
 
-![image20181119162834606.png](https://static.emqx.net/images/a025af3fa62148737f176257b3149d5b.png)
+![image20181119162834606.png](https://assets.emqx.com/images/a025af3fa62148737f176257b3149d5b.png)
 
 >Only QoS 1 2 message persistence is supported for the time being.
 
@@ -259,7 +259,7 @@ backend.pgsql.hook.message.publish.3     = {"topic": "#", "action": {"function":
 
 After establishing a connection on the **WebSocket** page of the EMQX management console, publish the message and select **Reserve**:
 
-![image20181119111926675.png](https://static.emqx.net/images/fd9fba3a1a64f2a9b84ca7020f95e650.png)
+![image20181119111926675.png](https://assets.emqx.com/images/fd9fba3a1a64f2a9b84ca7020f95e650.png)
 
 
 
@@ -267,7 +267,7 @@ After establishing a connection on the **WebSocket** page of the EMQX management
 
 When a non-empty retain message is published, EMQX will use topic as the unique key to persist the message to the `mqtt_retain` table. Different retain messages will be published under the same topic. Only the last message will be persisted:
 
-![image20181119112306703.png](https://static.emqx.net/images/8059ea91aea1da218eb6f74301687e13.png)
+![image20181119112306703.png](https://assets.emqx.com/images/8059ea91aea1da218eb6f74301687e13.png)
 
 
 
@@ -330,12 +330,12 @@ backend.pgsql.hook.session.unsubscribed.1= {"topic": "#", "action": {"sql": ["de
 
 After establishing a connection in the EMQX Management Console **WebSocket** page, subscribe to topics with QoS> 0:
 
-![image20181119140251843.png](https://static.emqx.net/images/ae8589fa59a057fadd396ea525a30c62.png)
+![image20181119140251843.png](https://assets.emqx.com/images/ae8589fa59a057fadd396ea525a30c62.png)
 
 
 At this point, the `mqtt_acked` table will be inserted with the initialization data row. At each time a message with a QoS> 0 is issued to the topic , the data row mid will increase by 1 when the message arrives:
 
-![image20181119165248998.png](https://static.emqx.net/images/9bb256e8f7d635ebdd42450cc41c6218.png)
+![image20181119165248998.png](https://assets.emqx.com/images/9bb256e8f7d635ebdd42450cc41c6218.png)
 
 > Topics in the agent subscription that satisfy QoS> 0 will also initialize the records, and the related records will be deleted after the client cancels the subscription.
 
@@ -402,7 +402,7 @@ backend.pgsql.hook.client.disconnected.3 = {"action": {"sql": ["update clients s
 
 When the client goes online, it will fill in and execute the preset SQL statement, and and update the `state` field of the device online status to `true`:
 
-![image20181119170648517.png](https://static.emqx.net/images/171fac0ca78984bc7909f1ad8ed46a87.png)
+![image20181119170648517.png](https://assets.emqx.com/images/171fac0ca78984bc7909f1ad8ed46a87.png)
 
 
 

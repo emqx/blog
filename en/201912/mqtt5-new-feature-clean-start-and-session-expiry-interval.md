@@ -9,7 +9,7 @@ Clean Start and Session Expiry Interval in MQTT V5.0 are not unfamiliar to those
 
 > If Clean Session is set to 1, the client and server must discard any previous session and create a new session. The life cycle of the session will be consistent with the network connection, and its session state must not be reused by any subsequent session.
 
-![1.png](https://static.emqx.net/images/a30fd96ea411321fc7095f5c96180230.png)
+![1.png](https://assets.emqx.com/images/a30fd96ea411321fc7095f5c96180230.png)
 
 As can be seen, it is expected by MQTT to avoid the loss of messages after the client disconnects and reconnects through this mechanism of persistent session, and to avoid the repeated subscription process after the client connects. This function is very useful in Iot scenarios with small bandwidth and unstable network. However, the Clean Session also limits the behavior of the client and server in both the connection and disconnection states, which is not a good implementation. In addition, in some scenarios, when the session does not require the server to keep its state permanently, this mechanism will lead to a waste of server resources.
 
@@ -26,7 +26,7 @@ As can be seen, it is expected by MQTT to avoid the loss of messages after the c
 >
 > If the Session Expiry Interval is greater than 0 when the network connection closes (the Session Expiry Interval in DISCONNECT packet may override the setting in the CONNECT packet), the client and server **must** store the Session state.
 
-![image20190909181321466.png](https://static.emqx.net/images/86191a805c34b82d0de14c063ec97b1c.png)
+![image20190909181321466.png](https://assets.emqx.com/images/86191a805c34b82d0de14c063ec97b1c.png)
 
 Clean Start now replaces the original Clean Session, but is no longer used to indicate whether to store session state. It is only used to indicate whether the server should attempt to restore a previous session or create a new session directly when connecting. The storage duration of the session state on the server is completely decided by Session Expiry Interval.
 

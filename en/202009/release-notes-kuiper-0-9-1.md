@@ -8,7 +8,7 @@ EMQX Kuiper is an edge lightweight IoT data analytics / streaming software imple
 
 The user scenarios of Kuiper including, real-time processing of production line data in the IIoT; Gateway of Connected Vehicle analyze the data from data-bus in real time; Real-time analysis of urban facility data in smart city scenarios. Kuiper processing at the edge can reduce system response latency, save network bandwidth and storage costs, and improve system security.
 
-![arch.png](https://static.emqx.net/images/eec72ada11792bbc3be3b5d0e8e86005.png)
+![arch.png](https://assets.emqx.com/images/eec72ada11792bbc3be3b5d0e8e86005.png)
 
 This release includes several new features and bug fixes.
 
@@ -24,15 +24,15 @@ Kuiper 0.9.1 provides a management console, which can be used for Kuiper node ma
 
 - Visualize management: A separated new Docker image was released with this new version. The image is a web based management console, and it provides streams, rules and plugins management. Please refer to [doc] (https://github.com/emqx/kuiper/tree/master/docs/en_US/manager-ui/overview.md) fore more detailed information.
 
- ![stream.png](https://static.emqx.net/images/2cc9f228be272beff3785c38bafc04ab.png)
+ ![stream.png](https://assets.emqx.com/images/2cc9f228be272beff3785c38bafc04ab.png)
 
   Stream creation UI, user can select different stream sources in the list.
 
-  ![sql.png](https://static.emqx.net/images/f615a97c77b3ec0deaf83934885f3133.png)
+  ![sql.png](https://assets.emqx.com/images/f615a97c77b3ec0deaf83934885f3133.png)
 
   SQL editor for rule, system prompts user when writing SQLs.
 
-  ![mqtt_sink.png](https://static.emqx.net/images/cf94a8a9f76b8d5fb1f070ed91455355.png)
+  ![mqtt_sink.png](https://assets.emqx.com/images/cf94a8a9f76b8d5fb1f070ed91455355.png)
 
   MQTT sink configurations setting, user can input or select related properties in the UI.
 

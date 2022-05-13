@@ -22,16 +22,16 @@
 
 目前支持 http 自定义认证，MySQL、PostgreSQL 外部认证授权（新增），可以通过如下配置完成认证和访问控制。
 
-![MySQL、PostgreSQL 外部认证授权](https://static.emqx.net/images/326ecf93a93399045ab8a63e9fc9b558.png)
+![MySQL、PostgreSQL 外部认证授权](https://assets.emqx.com/images/326ecf93a93399045ab8a63e9fc9b558.png)
  
 
 **MySQL 认证/访问控制**
 
-![MySQL 认证/访问控制](https://static.emqx.net/images/0bea379e5c4f3a01f2e7041ca03aa900.png)
+![MySQL 认证/访问控制](https://assets.emqx.com/images/0bea379e5c4f3a01f2e7041ca03aa900.png)
 
 **PostgreSQL 认证/访问控制**
 
-![PostgreSQL 认证/访问控制](https://static.emqx.net/images/486c47cfb97f0aa8b0640bcbc6c3f682.png)
+![PostgreSQL 认证/访问控制](https://assets.emqx.com/images/486c47cfb97f0aa8b0640bcbc6c3f682.png)
  
 
 通过外部认证授权功能，使得从外部 MySQL、PostgreSQL 数据库中验证认证信息作为认证数据源成为可能，快速存储⼤量数据的同时也更加⽅便与外部设备管理系统集成。

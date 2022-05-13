@@ -39,7 +39,7 @@ Thanks to the popularization of network technology in the petroleum industry, ne
 
 Take the EMQ cloud-edge data collection solution as an example:
 
-![EMQ cloud-edge data collection solution](https://static.emqx.net/images/5eeb8696f540a403318ed1291381793c.png)
+![EMQ cloud-edge data collection solution](https://assets.emqx.com/images/5eeb8696f540a403318ed1291381793c.png)
 
 ### Convert various industrial protocols to MQTT to achieve unified access
 
@@ -78,3 +78,12 @@ The lightweight design of MQTT greatly reduces the hardware requirements from th
 Due to the light front-end and heavy back-end architecture, the number and complexity of on-site equipment are greatly reduced, and the on-site operation and maintenance load and personnel cost can be reduced by more than 70%.
 
 Through the data collection architecture based on the MQTT protocol, the plant data center can obtain various on-site real-time data so as to carry out new business applications such as remote equipment operation, wellbore location optimization analysis, monitoring operation environment control emissions, remote auxiliary maintenance through these high-quality business data, which can help achieve cost reduction, efficiency improvement and business innovation for petroleum enterprises.
+
+
+<section class="promotion">
+    <div>
+        Try EMQX Cloud for Free
+        <div class="is-size-14 is-text-normal has-text-weight-normal">A fully managed, cloud-native MQTT service</div>
+    </div>
+    <a href="https://www.emqx.com/en/signup?continue=https://cloud-intl.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">Get Started →</a >
+</section>

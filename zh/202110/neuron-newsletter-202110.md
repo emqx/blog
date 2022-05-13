@@ -23,3 +23,11 @@
 ## Neuron 1.x 当前状态
 
 目前，Neuron 的最新版本是 v1.3.3，我们将会在下个月发布 v1.3.4 版本。主要对数据 Log 大小的维护功能进行修复，避免 Log 因时间增加变得过大，影响系统运作。
+
+
+<section class="promotion">
+    <div>
+        免费试用 Neuron
+    </div>
+    <a href="https://www.emqx.com/zh/try?product=neuron" class="button is-gradient px-5">开始试用 →</a >
+</section>

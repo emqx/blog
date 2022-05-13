@@ -12,7 +12,7 @@ GB/T32960 is the guideline standard for communication between remote service pla
 
 EMQX Enterprise provides the GB/T 32960 protocol gateway module. The whole process of message exchange can be divided into three parts according to its functional logic and the relationship to the whole system: the terminal side, the platform side, and the other side.
 
-![画板2x.png](https://static.emqx.net/images/1309966aded70c111bf9b8ed3b3a5ee4.png)
+![画板2x.png](https://assets.emqx.com/images/1309966aded70c111bf9b8ed3b3a5ee4.png)
 
 1. The terminal side: Data is exchanged via the GB/T 32960 protocol, implementing different types of data to be reported or sending downstream messages to the terminal.
 2. The platform side: The EMQX GB/T 32960 gateway decodes the packets and converts them internally in EMQX to the [MQTT protocol](https://www.emqx.com/en/mqtt) for upstreaming and downstreaming data operations.
@@ -31,13 +31,13 @@ Download EMQX Enterprise v4.2.3 onwards, open the Dashboard after launching and 
 3. After configuring parameters such as the retransmission, packet, and message length, configure the TCP listener parameters and click Add to enable the GB/T 32960 gateway.
 
 
-![WechatIMG46.png](https://static.emqx.net/images/c5bcffdd46b4472c883c9f8bdd687629.png)
+![WechatIMG46.png](https://assets.emqx.com/images/c5bcffdd46b4472c883c9f8bdd687629.png)
 
 
-![WechatIMG48.png](https://static.emqx.net/images/b2d6f883a5281970dac9dfef974df334.png)
+![WechatIMG48.png](https://assets.emqx.com/images/b2d6f883a5281970dac9dfef974df334.png)
 
 
-![WechatIMG47.png](https://static.emqx.net/images/a34ef3e71e3fda8549de7dbfce1a83a2.png)
+![WechatIMG47.png](https://assets.emqx.com/images/a34ef3e71e3fda8549de7dbfce1a83a2.png)
 
 
 ## Appendix: Example of data exchange format
@@ -236,3 +236,11 @@ Vehicular terminal alarm:
     "Param": {"Level": 0, "Message": "alarm message"}
 }
 ```
+
+
+<section class="promotion">
+    <div>
+        Try EMQX Enterprise for Free
+    </div>
+    <a href="https://www.emqx.com/en/try?product=enterprise" class="button is-gradient px-5">Get Started →</a >
+</section>

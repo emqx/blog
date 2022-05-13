@@ -50,7 +50,7 @@ MQTT 5 的用户属性，可扩展为使用其进行文件传输，而不是像�
 }
 ```
 
-![MQTT 资源解析](https://static.emqx.net/images/c2f4e34d2ff553f12a81826382846366.png)
+![MQTT 资源解析](https://assets.emqx.com/images/c2f4e34d2ff553f12a81826382846366.png)
 
 ### 消息路由
 
@@ -63,7 +63,7 @@ MQTT 5 的用户属性，可扩展为使用其进行文件传输，而不是像�
 }
 ```
 
-![MQTT 消息路由](https://static.emqx.net/images/39dfdc8de0b0251bab3697d72169dfef.png)
+![MQTT 消息路由](https://assets.emqx.com/images/39dfdc8de0b0251bab3697d72169dfef.png)
 
 ## 在客户端中配置用户属性
 
@@ -122,6 +122,15 @@ client.on('message', (topic, payload, packet) => {
 
 此时我们看到控制台中已经打印并输出了刚才发送时所配置的用户属性。
 
-![MQTT 消息接收](https://static.emqx.net/images/d4b8692b38ebe33f1ab126845461e667.png)
+![MQTT 消息接收](https://assets.emqx.com/images/d4b8692b38ebe33f1ab126845461e667.png)
 
 对于其它客户端，我们将在[跨平台 MQTT 5.0 桌面客户端工具 - MQTT X](https://mqttx.app/zh) 的后续版本中支持用户属性的自定义配置，方便用户快速测试 MQTT 5.0 的一些新特性，敬请期待！
+
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX Cloud
+        <div class="is-size-14 is-text-normal has-text-weight-normal">全托管的云原生 MQTT 消息服务</div>
+    </div>
+    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a >
+</section>

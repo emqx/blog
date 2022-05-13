@@ -6,7 +6,7 @@ In response to the trend of the times, SAIC Volkswagen is launching a new smart 
 
 From 2018, when SAIC Volkswagen designed and developed the new generation IoV system, the SC department took into account the needs of the new IoV scenario of large concurrency, low latency, and high throughput, referred to the mainstream new IoV system architecture at home and abroad, and adopted the [MQTT protocol](https://www.emqx.com/en/mqtt) to establish the new generation IoV platform. The new IoV platform needs to be able to support SAIC Volkswagen's IoV development in the next few years, **which requires the [MQTT Broker](https://www.emqx.com/en/products/emqx)  in the platform to have the ability to support connectivity and data delivery from millions to tens of millions of IoV vehicle and machine,** covering IoV business support such as IoV data reporting, POI sending, pushing files, sending configuration, pushing messages, operation care, etc.
 
-![1.jpeg](https://static.emqx.net/images/74feb63cc8309809382e65a841d9e8f5.jpeg)
+![1.jpeg](https://assets.emqx.com/images/74feb63cc8309809382e65a841d9e8f5.jpeg)
 
 In selecting the MQTT message broker for building the new platform, the SC department mainly considered the following functional and performance requirements:
 
@@ -37,12 +37,20 @@ A comprehensive monitoring system is required, and the export and integration of
 
 With these requirements in mind, **SAIC Volkswagen chose EMQX Enterprise as the IoT MQTT messaging broker for its next-generation IoV access platform** after more than a year of comparative analysis and functional performance testing of different products.
 
-![2.png](https://static.emqx.net/images/f4a466363c48f0018aecc91d6564f123.png)
+![2.png](https://assets.emqx.com/images/f4a466363c48f0018aecc91d6564f123.png)
 
 EMQX, a well-known open-source MQTT messaging broker project, provides secure and stable access and low latency data processing capabilities for T-box and mobile devices in the millions to tens of millions range. The EMQX Enterprise based IoV access layer solution provides features such as **data persistence, southbound message caching, secure connectivity, and secure authentication** to meet SAIC Volkswagen's needs in the next generation establishment of IoV.
 
-![3.png](https://static.emqx.net/images/131d31c9c2cdafeea323a8254bd29fd3.png)SAIC Volkswagen IoV Access Platform Operation and Maintenance Dashboard
+![3.png](https://assets.emqx.com/images/131d31c9c2cdafeea323a8254bd29fd3.png)SAIC Volkswagen IoV Access Platform Operation and Maintenance Dashboard
 
 This year, SAIC Volkswagen's new-generation IoV platform was on-line, and more new models have been connected one after another. The total number of vehicles connected to the platform has now reached hundreds of thousands and is still growing, while the platform has always maintained a stable operation. So far, with EMQX, the business needs of SAIC Volkswagen's new IoV and new vehicle and machine system in the access layer have been met. On this basis, SAIC Volkswagen is also actively investigating the implementation of more business rule filtering and distribution in the messaging middleware layer based on the built-in rule engine and codec capabilities provided in the new version of EMQX, to provide a more convenient data interface for the development of upper-layer applications.
 
 In the future, SAIC Volkswagen's new-generation IoV platform will continue to connect to more new models of the brand's other petrol cars and new energy vehicles, providing SAIC Volkswagen customers with a more intelligent and convenient human-vehicle interaction experience and creating a new generation of the human-vehicle social platform.
+
+
+<section class="promotion">
+    <div>
+        Try EMQX Enterprise for Free
+    </div>
+    <a href="https://www.emqx.com/en/try?product=enterprise" class="button is-gradient px-5">Get Started →</a >
+</section>

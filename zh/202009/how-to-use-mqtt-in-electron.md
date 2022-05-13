@@ -180,13 +180,13 @@ client.on('message', (topic, message, packet) => {
 
 可以看到，在编写完以上代码后并且运行该项目后可以在控制台看到以下内容输出：
 
-![electronconsole.png](https://static.emqx.net/images/eb708f312630c441bd6f2453af36372e.png)
+![electronconsole.png](https://assets.emqx.com/images/eb708f312630c441bd6f2453af36372e.png)
 
 MQTT 模块运行正常。在设置好模块后，我们就可以编写一个简单的 UI 界面来手动输入 MQTT 连接时所需要的配置等，并在点击连接按钮后可以连接到 MQTT 服务器，此外还可以断开连接，订阅主题，收发消息等。
 
 **应用程序界面**
 
-![electronui.png](https://static.emqx.net/images/f628816b73b31e6d3c695cd39c439ca6.png)
+![electronui.png](https://assets.emqx.com/images/f628816b73b31e6d3c695cd39c439ca6.png)
 
 项目完整代码请见：[https://github.com/emqx/MQTT-Client-Examples/tree/master/mqtt-client-Electron](https://github.com/emqx/MQTT-Client-Examples/tree/master/mqtt-client-Electron)。
 
@@ -310,11 +310,11 @@ client.on('message', (topic, message) => {
 
 使用 MQTT X 向客户端发送一条消息时，可以看到能正常接收到消息：
 
-![electronmessage.png](https://static.emqx.net/images/bfb62b9f23f6836627d8e129d38b9160.png)
+![electronmessage.png](https://assets.emqx.com/images/bfb62b9f23f6836627d8e129d38b9160.png)
 
 使用自己编写的客户端向 MQTT X 发送一条消息，此时可以看到 MQTT X 也能正常接收到消息：
 
-![mqttx.png](https://static.emqx.net/images/cc97fe533fcce20765530970d7696f58.png)
+![mqttx.png](https://assets.emqx.com/images/cc97fe533fcce20765530970d7696f58.png)
 
 
 
@@ -325,3 +325,12 @@ client.on('message', (topic, message) => {
 
 
 [^1]: https://zh.wikipedia.org/wiki/Electron
+
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX Cloud
+        <div class="is-size-14 is-text-normal has-text-weight-normal">全托管的云原生 MQTT 消息服务</div>
+    </div>
+    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a >
+</section>

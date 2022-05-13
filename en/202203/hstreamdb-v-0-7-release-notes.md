@@ -18,7 +18,7 @@ In previous versions, HStreamDB has supported the storage and management of larg
 
 - As for the sequence order, each piece of written data will carry an ordering key specified by the user. Each ordering key conceptually corresponds to a logical shard. Data in the same logical shard will be delivered to the same consumer in written order, as shown in the figure below.
 
-  ![HStreamDB](https://static.emqx.net/images/dffa53e70e086e03fe2c537321eacd7f.png)
+  ![HStreamDB](https://assets.emqx.com/images/dffa53e70e086e03fe2c537321eacd7f.png)
 
 It is worth noting that partitions are entirely transparent to users in HStreamDB v0.7. Users do not need to specify the number of shards or any sharding logic in advance. Nor do they need to worry about data redistribution and data disorder caused by shards change. From a perspective of system implementation, sharding is an effective method to solve single-point bottlenecks and improve the horizontal scalability of the system. From users' standpoint, exposing partitions directly to users destroys the abstraction of the upper layer and dramatically increases the cost of users' learning, use, and maintenance. Transparent sharding achieves scalability and ensures sequencing without exposing additional complexity to users, significantly improving the user experience.
 

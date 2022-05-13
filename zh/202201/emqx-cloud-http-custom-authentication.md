@@ -16,14 +16,14 @@ EMQX Cloud 在设备连接事件中使用当前客户端相关信息作为参数
 
 登录 EMQX Cloud，在部署中左侧点击「认证鉴权」-「自定义认证」，在初始界面中点击「配置认证」开始配置 HTTP 自定义认证。
 
-![EMQX Cloud 配置 HTTP 自定义认证](https://static.emqx.net/images/b4fc20b6537e4b57ef4bf277d68d825f.png)
+![EMQX Cloud 配置 HTTP 自定义认证](https://assets.emqx.com/images/b4fc20b6537e4b57ef4bf277d68d825f.png)
  
 
 进行身份认证时，EMQX Cloud 将使用当前客户端信息填充并发起用户配置的认证查询请求，查询出该客户端在 HTTP 服务器端的认证数据。
 
 在表单页配置权限认证的必填参数，包括认证请求地址、认证请求参数、HTTP 请求方法和请求内容的类型。其余的参数如果没有特殊要求使用默认值即可。
 
-![EMQX Cloud 配置 HTTP 自定义认证](https://static.emqx.net/images/5538c96ad275646583cc48358c1348c3.png)
+![EMQX Cloud 配置 HTTP 自定义认证](https://assets.emqx.com/images/5538c96ad275646583cc48358c1348c3.png)
  
 
 > 注：
@@ -40,10 +40,19 @@ EMQX Cloud 在设备连接事件中使用当前客户端相关信息作为参数
 
 我们最近也在 EMQX Cloud 的整体使用流程上进行了很多优化，例如连接指引和帮助文档的优化，多语言 SDK 接入 Demo，帮助用户快速上手使用产品。
 
-![EMQX Cloud 新手引导优化](https://static.emqx.net/images/80e2b925616f735dee62f23966b2fd02.png)
+![EMQX Cloud 新手引导优化](https://assets.emqx.com/images/80e2b925616f735dee62f23966b2fd02.png)
 
 <center>新手引导优化</center>
 
-![EMQX Cloud 帮助文档结构优化](https://static.emqx.net/images/7674ead69739d888ac542f9906aa5bf8.png)
+![EMQX Cloud 帮助文档结构优化](https://assets.emqx.com/images/7674ead69739d888ac542f9906aa5bf8.png)
 
 <center>帮助文档结构优化</center>
+
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX Cloud
+        <div class="is-size-14 is-text-normal has-text-weight-normal">无须绑定信用卡</div>
+    </div>
+    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a >
+</section>

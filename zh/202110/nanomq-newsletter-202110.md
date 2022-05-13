@@ -63,3 +63,11 @@ http_server.password=public
 ## 社区 Issue 和 bug 修复
 
 0.5.0 版本还修复了社区提交的几个重要安全相关漏洞。NanoMQ 团队将继续倾听用户的声音，为社区和行业交付稳定、强大和安全的边缘 MQTT 消息服务和消息总线。
+
+
+<section class="promotion">
+    <div>
+        免费试用 NanoMQ
+    </div>
+    <a href="https://www.emqx.com/zh/try?product=nanomq" class="button is-gradient px-5">开始试用 →</a >
+</section>

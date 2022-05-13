@@ -8,7 +8,7 @@ Introduction to EMQX Enterprise: [https://www.emqx.com/en/products/emqx](https:/
 Download address: [https://www.emqx.com/en/try](https://www.emqx.com/en/try?product=enterprise)
 
 
-![EMQX Enterprise](https://static.emqx.net/images/4b87d5ae6dc17bb84f6414e4d8fc504c.png)
+![EMQX Enterprise](https://assets.emqx.com/images/4b87d5ae6dc17bb84f6414e4d8fc504c.png)
 
 
 ## Overview
@@ -24,7 +24,7 @@ Detailed update log: [https://www.emqx.com/en/changelogs/enterprise/v4.3.0](http
 
 As a major function of EMQX, the rule engine provides a clear and flexible 「configuration」business integration solution based on SQL, which simplifies the business development process, improves user ease of use and reduces the coupling between the business system and EMQX.
 
-![IoT Rule engine](https://static.emqx.net/images/40b090be34291c0d202613e2598ff767.png)
+![IoT Rule engine](https://assets.emqx.com/images/40b090be34291c0d202613e2598ff767.png)
 
 ### Add the function of bridging message to Kafka partition to support dynamic expansion
 
@@ -32,7 +32,7 @@ Combined with Apache Kafka, EMQX can integrate IoT devices with enterprise syste
 
 Since the release of the function, the EMQX + Kafka solution is robust and mature enough to meet the requirements of a large number of enterprise customers for the overall performance of IoT applications and the security and stability of data in key businesses. In the past version iteration, we continued to optimize the Kafka solution. Initially, we used a self-developed driver to improve production performance. Later, we introduced the Kafka production capacity into the rule engine to improve the flexibility of data integration. In the latest version 4.2, we added a caching mechanism for the Kafka driver to further ensure data reliability.
 
-![Bridging MQTT message to Kafka](https://static.emqx.net/images/12d0fb25e06f518e620cf718b094b85c.png)
+![Bridging MQTT message to Kafka](https://assets.emqx.com/images/12d0fb25e06f518e620cf718b094b85c.png)
 
 In Enterprise v4.3.0, we have added the capability of dynamic expansion of Kafka partitions.
 
@@ -59,7 +59,7 @@ We have added HTTPS support for InfluxDB and support batch writing of InfluxDB.
 
 EMQX's module -> Kafka consumer group function can use external Kafka as a [message queue](https://www.emqx.com/en/blog/mqtt5-feature-inflight-window-message-queue) to consume messages from a specified Kafka topic, convert them into MQTT messages and send them to specific MQTT topics. The data flow is shown in the following figure:
 
-![Kafka distribution improvement](https://static.emqx.net/images/9fe7501172ea1e95ec7052c733c1c8ec.png)
+![Kafka distribution improvement](https://assets.emqx.com/images/9fe7501172ea1e95ec7052c733c1c8ec.png)
 
 ### Kafka-MQTT 1:M Topic mapping message distribution
 
@@ -97,3 +97,11 @@ Due to the big difference between Kafka and MQTT, Kafka Topic cannot establish a
 - Inconsistent editing data for rule engine action
 - Dashboard module translation problem
 - Rule engine SQL statement supports null function, and undefined is converted to null.
+
+
+<section class="promotion">
+    <div>
+        Try EMQX Enterprise for Free
+    </div>
+    <a href="https://www.emqx.com/en/try?product=enterprise" class="button is-gradient px-5">Get Started →</a >
+</section>

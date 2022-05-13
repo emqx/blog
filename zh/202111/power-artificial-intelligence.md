@@ -26,13 +26,13 @@
 
 EMQ 始终关注物联网时代下企业的数据价值最大化，提供面向物联网架构的数据基础设施软件。针对电力行业人工智能发展所面临的数据挑战，EMQ 通过一系列产品组合，可以实现云边端统一实时数据的「连接、移动、存储、处理与分析」，既能为大数据分析提供良好的数据基础，也能快速构建上层智能应用。通过数据流和应用层解耦，将原来围绕场景构建应用的范式转变为围绕数据构建场景，实现从数据产生到数据变现的闭环，缩短数据变现的周期，降低数据变现成本。
 
-![连接、移动、存储、处理与分析](https://static.emqx.net/images/9b56b99db31520e3ec06ee6f664e62d3.png)
+![连接、移动、存储、处理与分析](https://assets.emqx.com/images/9b56b99db31520e3ec06ee6f664e62d3.png)
 
 ## 可靠数据层，驱动场景应用智能升级
 
 解决了数据层的难题，电力行业的各类场景中就可在海量数据的支持下利用人工智能技术实现更加智能化的应用。以**新能源集控场景**为例：
 
-![新能源场景图](https://static.emqx.net/images/6e88ba9afb654477ecf09483b51fe7f9.png)
+![新能源场景图](https://assets.emqx.com/images/6e88ba9afb654477ecf09483b51fe7f9.png)
 
 新能源场景图
 
@@ -58,7 +58,7 @@ EMQX 支持扩展协议接入，通过 UDP 穿过隔离网闸，实现电力系�
 
 各大区之间部署多套 EMQX 消息中间件，可实现数据的实时同步和本地存储，同时支撑生产区、管理区、场站等各区域的智能应用系统。数据同步过程支持纵向加密和传输压缩，保证安全性，节省传输带宽。
 
-![EMQX 多端数据同步及存储](https://static.emqx.net/images/0c5d90064b726e784108dcde452020ca.png)
+![EMQX 多端数据同步及存储](https://assets.emqx.com/images/0c5d90064b726e784108dcde452020ca.png)
 
  该方案具有以下优势：
 
@@ -66,9 +66,18 @@ EMQX 支持扩展协议接入，通过 UDP 穿过隔离网闸，实现电力系�
 - 整个架构支持全链路端到端的数据双向移动与分发，通过 eKuiper 在场站端进行超低延迟的流式数据处理与分析，调用AI服务，并通过 Neuron 向设备推送指令，形成整个边缘智能的链路闭环，实现边缘决策和业务洞察；
 - EMQX 支持可弹性扩展的集群模式，随着业务增长可以不停机拓展集群规模，单个集群可以处理百万 TPS 的消息并发，在新能源场站数据量倍增的情形下，数据架构层具备良好的可扩展性和稳定性。
 
-![EMQ 产品架构图](https://static.emqx.net/images/14b71056480fee2b93b71ec3d9ba8094.png)
+![EMQ 产品架构图](https://assets.emqx.com/images/14b71056480fee2b93b71ec3d9ba8094.png)
 
 
 ## 结语
 
 企业的数字化转型，本质上是数据采集范围的拓展和数据利用程度的加深。基于 EMQ 物联网数据基础设施软件构建的新能源集控系统，通过场站与集控中心统一的实时数据「连接、移动、存储、处理与分析」，获取海量数据支撑，结合大数据及人工智能应用，即可指导发电优化控制策略，减少损失电量，提高新能源电厂的发电效率，实现新能源智能化运营管理，助力发电企业实现两化融合与企业数字化转型。
+
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX Cloud
+        <div class="is-size-14 is-text-normal has-text-weight-normal">全托管的云原生 MQTT 消息服务</div>
+    </div>
+    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a >
+</section>

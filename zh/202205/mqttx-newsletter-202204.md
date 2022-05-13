@@ -20,7 +20,7 @@
 
 很多新手用户可能不太了解在发布订阅时如何选择 QoS。为此我们在发布和订阅页面中对 QoS 的每一个值进行了注解，方便刚开始接触 MQTT 的用户了解和使用 QoS。
 
-![为 QoS 添加注解](https://static.emqx.net/images/a6f8fc9d29b85c5df91ef8cb8c50c58b.png)
+![为 QoS 添加注解](https://assets.emqx.com/images/a6f8fc9d29b85c5df91ef8cb8c50c58b.png)
 
 ### 其他优化
 
@@ -33,10 +33,10 @@
 
 由于新版本增加了更多不同系统芯片架构下的安装包，我们对社区站中的下载部分也同步进行了优化。针对下载安装和显示的页面进行了分类，用户可以在选择对应的操作系统后，根据安装包右上角的芯片架构标签，找到符合自己的运行环境的文件，点击下载后即可快速安装和使用。
 
-![下载方式优化](https://static.emqx.net/images/1c0ad5590aef0499f6bf9bafb557ffc0.png)
+![下载方式优化](https://assets.emqx.com/images/1c0ad5590aef0499f6bf9bafb557ffc0.png)
 
 ### 文档结构优化
 
 我们还对 MQTTX 文档进行了升级和结构调整，优化了之前大篇幅的单文档阅读模式，对文档结构进行了调整和分层。用户可以根据自己的使用需求，在文档页面内快速找到自己想要阅读和了解的内容。
 
-![文档结构优化](https://static.emqx.net/images/20c20a2505096b29628bd8df69b6767e.png)
+![文档结构优化](https://assets.emqx.com/images/20c20a2505096b29628bd8df69b6767e.png)

@@ -4,7 +4,7 @@ Shared subscription is a new feature introduced by MQTT 5.0 protocol, which is e
 
 We know that the general message publishing process for non-shared subscriptions looks like this:
 
-![WechatIMG316.png](https://static.emqx.net/images/47ff10326b8cd86daa0cedd5de5ee9f3.png)
+![WechatIMG316.png](https://assets.emqx.com/images/47ff10326b8cd86daa0cedd5de5ee9f3.png)
 
 Under this structure, if the subscription node fails, the publisher's messages will be lost (QoS 0) or accumulated in the server (QoS 1, 2). In general, the solution to this problem is to directly increase the number of subscribing nodes, but this generates a large number of duplicate messages, which will wastes performance. In in some business scenarios, subscription nodes also need to be de duplicated by themselves, further increasing the complexity of business.
 
@@ -14,7 +14,7 @@ Secondly, when the publisher's production capacity is strong, there may be situa
 
 Now, in the MQTT 5.0 protocol, you can solve the problems mentioned above through the shared subscription feature. When you use a shared subscription, the flow of messages becomes:
 
-![WechatIMG317.png](https://static.emqx.net/images/9aace6468a314ac10cd9badefb79f9d1.png)
+![WechatIMG317.png](https://assets.emqx.com/images/9aace6468a314ac10cd9badefb79f9d1.png)
 
 Like non-shared subscriptions, shared subscriptions include a topic filter and subscription options. The only difference is that the topic filter format for shared subscriptions must be in the form `$ share / {ShareName} / {filter}`. The meanings of these fields are:
 
@@ -43,11 +43,11 @@ The server uses [emqx-v3.2.4](https://github.com/emqx/emqx/tree/v3.2.4) and the 
 
 Use `./emqx start` to start emqx, then use emqtt to start three subscription clients, which respectively subscribe to $ share / a / topic`,` $ share / a / topic`, `$ share / b / topic`
 
-![image20191111142037391.png](https://static.emqx.net/images/c3ebf7c105b985765208819e67af4c6d.png)
+![image20191111142037391.png](https://assets.emqx.com/images/c3ebf7c105b985765208819e67af4c6d.png)
 
 Start a publishing client to publish messages to the topic.
 
-![image20191111144814890.png](https://static.emqx.net/images/d78a66888dfa5664dc44a819a5b195c6.png)
+![image20191111144814890.png](https://assets.emqx.com/images/d78a66888dfa5664dc44a819a5b195c6.png)
 
 `$ share / a / topic` and` $ share / b / topic` belong to different session groups. The non-shared subscription  `topic` is load-balanced across all session groups. The client `sub3` receives all messages because there is only one session in the group, and the clients` sub1` and `sub2` receive messages randomly according to the random policy we configured.
 

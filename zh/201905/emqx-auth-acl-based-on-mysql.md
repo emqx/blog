@@ -2,7 +2,7 @@
 
 [emqx-auth-mysql](https://github.com/emqx/emqx-auth-mysql) 它通过检查每个终端接入的 `username` 和 `password` 是否与用户指定 的 MySQL 数据库中存储的信息一致来实现对终端的访问控制。其功能逻辑如下：
 
-![2401557472472_.pic_hd.jpg](https://static.emqx.net/images/c97590dd35a944ceffba07ba3e8f52a5.jpg)
+![2401557472472_.pic_hd.jpg](https://assets.emqx.com/images/c97590dd35a944ceffba07ba3e8f52a5.jpg)
 本文假设 MySQL 已经安装在您的机器上，并且您可以连接到 MySQL 服务器。注：EMQX 开源版至 v3.1-beta.2 为止，尚不支持 MySQL 8.0，因此以下内容仅适用于 MySQL 5.7 及以下版本。
 
 ```

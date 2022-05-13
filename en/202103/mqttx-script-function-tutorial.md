@@ -10,7 +10,7 @@ Mac users can download from the APP Store: [https://apps.apple.com/us/app/mqttx/
 
 Linux users can download from the Snapcraft: [https://snapcraft.io/mqttx](https://snapcraft.io/mqttx)
 
-![mqttxpreview.png](https://static.emqx.net/images/fdeeaa3093e114157fdbf46fd18bcd32.png)
+![mqttxpreview.png](https://assets.emqx.com/images/fdeeaa3093e114157fdbf46fd18bcd32.png)
 
 ## Script Function 
 
@@ -50,7 +50,7 @@ execute(handlePayload)
 
 At this time, you can copy this code into the code edit box on the script page, and click on the `Save` button in the top right corner, set the script name to TempAndHum, and save it. We enter a `{}` in the Input box as the initial data. Click on the ` Test` button to see the results in the Output box and if the results are as expected, you can then use the script normally.
 
-![mqttxhumtemp.png](https://static.emqx.net/images/e8c56a968c89ae76bb6fb684ca73027b.png)
+![mqttxhumtemp.png](https://assets.emqx.com/images/e8c56a968c89ae76bb6fb684ca73027b.png)
 
 We use the [Free public MQTT broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker) provided by the EMQX to create a new connection. This service is created based on EMQX's [MQTT IoT cloud platform](https://www.emqx.com/en/cloud). The broker access information is as follows:
 
@@ -60,15 +60,15 @@ We use the [Free public MQTT broker](https://www.emqx.com/en/mqtt/public-mqtt5-b
 
 Once connected, click on the drop-down menu in the top right corner and select `Use Script`. In the pop-up window, select the TempAndHum script you have just saved, then select the application type as Published and click the Confirm button to enable the script function.
 
-![mqttxuse1.png](https://static.emqx.net/images/0cdc5685eec2832049534beaf258fa57.png)
+![mqttxuse1.png](https://assets.emqx.com/images/0cdc5685eec2832049534beaf258fa57.png)
 
 Once the script is on, we will continue to set up the timed sending function. Click on the drop-down function menu in the top right corner and select `Timed messages`, here we set the sending frequency to 1 second, click on confirm and the timed message function will be enabled.
 
-![mqttxtimed.png](https://static.emqx.net/images/8cf5eaf54e3ab5596c03500012463cd7.png)
+![mqttxtimed.png](https://assets.emqx.com/images/8cf5eaf54e3ab5596c03500012463cd7.png)
 
 Once you are ready, you can enter the initial `Payload` and the `Topic` you want to send to, click on Send, and once you have successfully sent a message, you will see that MQTT X will automatically send the simulation data once per second.
 
-![mqttxhumtempsuccess.png](https://static.emqx.net/images/695bfda6171514106492d3543d884686.png)
+![mqttxhumtempsuccess.png](https://assets.emqx.com/images/695bfda6171514106492d3543d884686.png)
 
 This avoids the need for the user to manually enter and modify the data, and the simulated data can be controlled when using the script, with the simulated data interval set in the `random` function of the script. It is easier and more user-friendly if there is a need for visual graphical testing of saved data, or if a certain amount of data needs to be added to the data for testing.
 
@@ -101,15 +101,15 @@ execute(handleTimestamp)
 
 At this point, you can copy this code into the code edit box on the script page, click the `Save` button in the top right corner, set the script name to Time, and save it. We enter a `{ "time": 1608365158 }` in the Input box as the initial data. Click the `Test` button to see the results in the Output box and if the results are as expected, the script will then work as expected.
 
-![mqttxtime.png](https://static.emqx.net/images/145b3c4b24a42bd52f44923fb0e272f9.png)
+![mqttxtime.png](https://assets.emqx.com/images/145b3c4b24a42bd52f44923fb0e272f9.png)
 
 At this point, we still create a new connection, and use the method described above to enable this script. Note that when selecting the application type, you need to select Received.
 
-![mqttxuse2.png](https://static.emqx.net/images/0d3d705ee8a79eecb483cb30ecd15c71.png)
+![mqttxuse2.png](https://assets.emqx.com/images/0d3d705ee8a79eecb483cb30ecd15c71.png)
 
 Once the script function is enabled, we add a `Topic` of `testtopic/time` and we send a `Payload` with a timestamp message to that `Topic`. We then look at the received `Payload` message and see that the timestamp has been automatically converted to normal time.
 
-![mqttxtimesuccess.png](https://static.emqx.net/images/eee40a6a899c8c9912ee55ae9efbd56b.png)
+![mqttxtimesuccess.png](https://assets.emqx.com/images/eee40a6a899c8c9912ee55ae9efbd56b.png)
 
 ## Summary
 

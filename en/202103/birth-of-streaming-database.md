@@ -12,7 +12,7 @@ With the rise and booming of the Internet in the 21st century, traditional relat
 - Full-text indexing databases represented by Elasticsearch
 - Graph databases represented by Neo4j
 
-![image.png](https://static.emqx.net/images/0b642fae86c9de4dcf90ee0195ab9316.png)
+![image.png](https://assets.emqx.com/images/0b642fae86c9de4dcf90ee0195ab9316.png)
 
 Figure 1: The number of different types of databases counted on db-engines
 
@@ -24,7 +24,7 @@ So far, no database system can satisfy all the business needs of an entire indus
 
 **With the development of new industries, the opening of new business markets, and the future emerging needs of these new businesses, new database systems are bound to emerge.** For example, the rise of the IoT industry and the AI industry in recent years has led directly to the creation of many new time series and graph databases.
 
-![image2.png](https://static.emqx.net/images/316ab8bd26598bf9f9a05fae921beaf6.png)
+![image2.png](https://assets.emqx.com/images/316ab8bd26598bf9f9a05fae921beaf6.png)
 
 Figure 2: Change in prevalence of various databases since 2013
 
@@ -39,7 +39,7 @@ With the rapid development and expansion of computing and network technology, da
 
 According to a report by a leading international analyst firm IDC[^1], **Real-time stream data are occupying an increasingly large proportion of the overall data size.** 
 
-![image3.png](https://static.emqx.net/images/0b7d29218cd1679d1bda44e70bebd0df.png)
+![image3.png](https://assets.emqx.com/images/0b7d29218cd1679d1bda44e70bebd0df.png)
 
 Figure 3: Trends in the growth of real-time data [1]
 

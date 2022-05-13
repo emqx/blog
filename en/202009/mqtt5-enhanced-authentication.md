@@ -68,3 +68,12 @@ In the enhanced authentication process, the client and broker need to exchange a
 After the enhanced authentication is completed, the client can initiate re-authentication at any time by sending an AUTH packet. After the re-authentication starts, the client and the broker exchange authentication data by exchanging the AUTH packet, just like with the enhanced authentication, until the broker sends an AUTH packet with the reason code 0x00 (success) to the client to indicate that the re-authentication was successful. It should be noted that the authentication method for re-authentication must be the same as enhanced Authentication.
 
 During the re-authentication process, other packets of the client and broker can continue using the previous authentication.
+
+
+<section class="promotion">
+    <div>
+        Try EMQX Cloud for Free
+        <div class="is-size-14 is-text-normal has-text-weight-normal">A fully managed, cloud-native MQTT 5.0 service</div>
+    </div>
+    <a href="https://www.emqx.com/en/signup?continue=https://cloud-intl.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">Get Started →</a >
+</section>

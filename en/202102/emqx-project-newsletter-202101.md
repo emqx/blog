@@ -18,3 +18,12 @@ We are looking forward to seeing more contributors around the world join our com
     - Async Mnesia transaction replication PoC, aiming to solve large cluster’s brain-split.
 - Community updates
   - In January, four new members from EMQ joined oasis-open MQTT-TC. We are looking forward to being more active in the MQTT & MQTT-SN standardization processes.
+
+
+<section class="promotion">
+    <div>
+        Try EMQX Cloud for Free
+        <div class="is-size-14 is-text-normal has-text-weight-normal">No credit card required</div>
+    </div>
+    <a href="https://www.emqx.com/en/signup?continue=https://cloud-intl.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">Get Started →</a >
+</section>

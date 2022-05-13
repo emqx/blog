@@ -4,7 +4,7 @@
 
 ### 保留消息
 
-![image20191014152158994.png](https://static.emqx.net/images/211d363915c98f86e3f55ff2e5b20326.png)
+![image20191014152158994.png](https://assets.emqx.com/images/211d363915c98f86e3f55ff2e5b20326.png)
 
 当服务端收到 Retain 标志为 1 的 PUBLISH 报文时，它将进行以下操作：
 

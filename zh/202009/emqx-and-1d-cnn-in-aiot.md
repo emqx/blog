@@ -12,7 +12,7 @@
 
 * 在该数据集中，TS1.txt, TS2.txt, TS3.txt, TS4.txt 分别为 4 个液压系统的冷却器温度传感器以 60 秒一个周期所获取到的温度数据，第一个周期传感器温度数据如下图：
 
-  ![cooler.png](https://static.emqx.net/images/9d0cbe946ed032f18ffcc37ba286c703.png)
+  ![cooler.png](https://assets.emqx.com/images/9d0cbe946ed032f18ffcc37ba286c703.png)
 
 * profile.txt 第一列表示当前周期内液压系统冷却器状态
 
@@ -52,7 +52,7 @@
 
   从报告中可以看出通过温度数据预测冷却器状态 3 (接近故障)，20 (低效率)，100 (全效率) 准确率分别为 95%，80%，89%。
 
-  ![模型分类指标的报告.png](https://static.emqx.net/images/5455a9027940b7ca82b5b2e3a31b49fa.png)
+  ![模型分类指标的报告.png](https://assets.emqx.com/images/5455a9027940b7ca82b5b2e3a31b49fa.png)
 
 
 
@@ -226,11 +226,11 @@ if __name__ == '__main__':
 
    访问 [EMQX Dashboard](http://127.0.0.1:18083)，登录用户名和密码为 admin, public，点击左侧菜单栏规则 -> 资源，创建资源。
 
-   ![EMQX Broker 资源创建.png](https://static.emqx.net/images/99dcfe4ec7bd95b60fdcca9348ec72d2.png)
+   ![EMQX Broker 资源创建.png](https://assets.emqx.com/images/99dcfe4ec7bd95b60fdcca9348ec72d2.png)
 
 3. EMQX Broker 规则创建
 
-   ![EMQX Broker 规则创建.png](https://static.emqx.net/images/d61f17680d6a44d4c8aeeeda230ba537.png)
+   ![EMQX Broker 规则创建.png](https://assets.emqx.com/images/d61f17680d6a44d4c8aeeeda230ba537.png)
 
 
 
@@ -241,7 +241,7 @@ if __name__ == '__main__':
    ```bash
    python3 webhook.py
    ```
-    ![启动 Webhook.png](https://static.emqx.net/images/d86bf702732060624f3aeb9265fb11eb.png)
+    ![启动 Webhook.png](https://assets.emqx.com/images/d86bf702732060624f3aeb9265fb11eb.png)
    
 
 2. 启动 EMQX Broker
@@ -250,7 +250,7 @@ if __name__ == '__main__':
    ./bin/emqx start
    ```
 
-   ![启动 EMQX Broker.png](https://static.emqx.net/images/03e52f0053ac31620417dc1bfd3ec174.png)
+   ![启动 EMQX Broker.png](https://assets.emqx.com/images/03e52f0053ac31620417dc1bfd3ec174.png)
 
 3. 模拟数据输入
 
@@ -258,13 +258,13 @@ if __name__ == '__main__':
    python publish.py
    ```
 
-   ![模拟数据输入.png](https://static.emqx.net/images/93b1c412d7c31446c1ea72918e770e74.png)
+   ![模拟数据输入.png](https://assets.emqx.com/images/93b1c412d7c31446c1ea72918e770e74.png)
 
 4. 查看液压系统冷却器状态预测结果
 
    从下图中我们可以看出前五个周期内，通过输入传感器温度预测出当前冷却器状态为接近故障(close to total failure)，这与数据集中给出的冷却器状态一致。
 
-   ![查看液压系统.png](https://static.emqx.net/images/69a8c52cfbaa02be2a99158507875984.png)
+   ![查看液压系统.png](https://assets.emqx.com/images/69a8c52cfbaa02be2a99158507875984.png)
 
 5. 分别调整输入数据，查看不同温度下冷却器状态预测结果，并和数据集中实验结果做对比
 
@@ -272,7 +272,7 @@ if __name__ == '__main__':
 
      > 修改 publish.py 文件中: for x_data in data:  ->  for x_data in data[:10]:
 
-     ![5.1.png](https://static.emqx.net/images/aaa0e92dd30dd0ac29d93f1e8dceabb4.png)
+     ![5.1.png](https://assets.emqx.com/images/aaa0e92dd30dd0ac29d93f1e8dceabb4.png)
 
      从上图中我们可以看到预测结果与试验台收集结果一致
 
@@ -280,7 +280,7 @@ if __name__ == '__main__':
 
      > 修改 publish.py 文件中: for x_data in data:  ->  for x_data in data[728:737]:
 
-     ![结果做对比.png](https://static.emqx.net/images/0217e0578357e4db236964052d9034a5.png)
+     ![结果做对比.png](https://assets.emqx.com/images/0217e0578357e4db236964052d9034a5.png)
 
      从上图中我们可以看到预测结果与实验台收集结果有一定误差，这也验证了模型分类指标的报告中预测准确性概率。
 
@@ -289,7 +289,7 @@ if __name__ == '__main__':
      > 修改 publish.py 文件中: for x_data in data:  ->  for x_data in data[-10:]:
 
      
-     ![十个周期内温度传感器.png](https://static.emqx.net/images/58f39d793cbc561eba917cc548eb3e39.png)
+     ![十个周期内温度传感器.png](https://assets.emqx.com/images/58f39d793cbc561eba917cc548eb3e39.png)
 
      从上图中我们可以看到预测结果与试验台收集结果大致一致，但还是存在一定偏差
 
@@ -300,3 +300,12 @@ if __name__ == '__main__':
 在工业各个领域，不论是机械、电子、钢铁，还是制造、橡胶、纺织、化工、食品，液压传动技术都已成为一项基本应用技术。随着现代工业的不断发展，液压系统逐渐向高性能、高精度演进，其可靠性就变得至关重要，液压系统故障的检测与诊断也因此越来越受到重视。利用 AI 与深度学习，通过 IoT 大数据采集与分析对液压系统的状态进行监控，从而实现故障预测，是 AIoT 为传统工业领域带来的新的可能。
 
 而在各领域对液压系统故障预测的实际应用中，为了利用 AI 作出更加精准的预测，需要采集量级更高的时序数据加以分析训练。因此，需要选用性能指标突出且高度稳定可靠的消息中间件以进行海量数据的接入与传输。 **EMQX Broker 作为一款高并发低延时，支持分布式集群架构的开源 MQTT 消息服务器，支持单机百万连接，无疑可满足该应用场景以及其他更多物联网应用下的数据传输需求**
+
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX Cloud
+        <div class="is-size-14 is-text-normal has-text-weight-normal">全托管的云原生 MQTT 消息服务</div>
+    </div>
+    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a >
+</section>

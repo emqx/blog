@@ -22,13 +22,13 @@ QoS 0 adalah mode pengiriman pesan “fire and forget”. Setelah pengirim (publ
 
 Ketika QoS adalah 0, pengiriman pesan tergantung dari kemampuan jaringan. Si pengirim akan mengirim pesan sekali, si penerima tidak akan menjawab pesan, dan si pengirim tidak akan menyimpan dan mengirim ulang pesan tersebut. Pesan memiliki tingkat efisiensi tertinggi dalam hal transmisi, tapi bisa saja sama sekali tidak terkirim.
 
-![MQTT_1.png](https://static.emqx.net/images/8c6e4c6b37e76e23b84d3341a2ff9b33.png)
+![MQTT_1.png](https://assets.emqx.com/images/8c6e4c6b37e76e23b84d3341a2ff9b33.png)
 
 ### QoS 1 - Minimal kirim sekali
 
 Ketika QoS adalah 1, ini akan menjamin pesan untuk dikirim setidaknya sekali. MQTT menjamin QOS 1 melalui mekanisme ACK yang sederhana. Si pengirim akan mengirim pesan dan menunggu respon PUBACK dari si penerima. Jika respon PUBACK tidak diterima dalam waktu yang telah ditentukan, si pengirim akan mengatur DUP pesan ke 1 dan mengirim ulang pesan tersebut. Si penerima dapat menerima pesan berulang kali. Tanpa mempedulikan DUP flag, si penerima akan memperlakukan pesan sebagai pesan baru dan mengirimkan PUBACK packet sebagai respon.
 
-![MQTT_2.png](https://static.emqx.net/images/6777e0797f80ddaa1d623b173890f63c.png)
+![MQTT_2.png](https://assets.emqx.com/images/6777e0797f80ddaa1d623b173890f63c.png)
 
 ### QoS 2 - Cuma kirim sekali
 
@@ -44,7 +44,7 @@ Ketika pesan hilang dalam tahap transmisi, si pengirim akan bertanggung jawab un
 
 Karena itu, si penerima juga perlu merespon ke setiap command message.
 
-![MQTT_3.png](https://static.emqx.net/images/9d1234bb84dc9a3e3c178c55732f8444.png)
+![MQTT_3.png](https://assets.emqx.com/images/9d1234bb84dc9a3e3c178c55732f8444.png)
 
 
 ## Perbedaan QoS dalam publishing dan subscribing

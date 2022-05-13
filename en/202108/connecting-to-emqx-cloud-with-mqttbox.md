@@ -41,7 +41,7 @@ For more details, please visit [EMQX Cloud website](https://www.emqx.com/en/clou
 
 After opening the software, enter the main interface of the software, click the `Create MQTT Client` button on the top menu bar, and enter the page of `create MQTT client`.
 
-![MQTTBox Initialization page](https://static.emqx.net/images/75d7f67d4c584a017f0f50ffd8a4f87e.png)
+![MQTTBox Initialization page](https://assets.emqx.com/images/75d7f67d4c584a017f0f50ffd8a4f87e.png)
 
 #### Create a connection
 
@@ -49,7 +49,7 @@ After entering the page for creating an MQTT client, fill in the MQTT-related co
 
 > Note: When filling in the Host, you need to fill in the complete address, including the port number of the connection. If it is a WebSocket connection, you need to add Path. If MQTT Broker enables user name/password authentication, you also need to enter Username/Password in the configuration page.
 
-![MQTTBox Create a connection](https://static.emqx.net/images/f371711eda1ffc0ebd6a12976e88cfbd.png)
+![MQTTBox Create a connection](https://assets.emqx.com/images/f371711eda1ffc0ebd6a12976e88cfbd.png)
 
 After saving successfully, you will enter a page of client details. If the button in the upper right corner shows `Connected` and its color is green, it means that the MQTT client has been successfully connected. You can disconnect the client by clicking it again.
 
@@ -67,7 +67,7 @@ Then we enter the topic to be published in the blue box. Here, we enter the `tes
 
 At this point, we can see the message just published in the subscription box on the right. So far, we have created an MQTT client and successfully tested functions such as connection, publishing, and subscription.
 
-![MQTTBox publish message](https://static.emqx.net/images/638cea055bb29c8b6265ac6df0496413.png)
+![MQTTBox publish message](https://assets.emqx.com/images/638cea055bb29c8b6265ac6df0496413.png)
 
 ### TLS/SSL connection
 
@@ -77,4 +77,13 @@ If you use EMQX Cloud, you can refer to this [document](https://docs.emqx.io/en/
 
 If it is two-way authentication, you can select the CA certificate file, the client certificate, and the client key file on the configuration page, and then select connection. Please confirm the TLS/SSL connection port and modify it before connecting.
 
-![MQTTBox TLS/SSL connection](https://static.emqx.net/images/6d53d3f95ac3b4bef0cfcdd2bc51a11f.jpg)
+![MQTTBox TLS/SSL connection](https://assets.emqx.com/images/6d53d3f95ac3b4bef0cfcdd2bc51a11f.jpg)
+
+
+<section class="promotion">
+    <div>
+        Try EMQX Cloud for Free
+        <div class="is-size-14 is-text-normal has-text-weight-normal">No credit card required</div>
+    </div>
+    <a href="https://www.emqx.com/en/signup?continue=https://cloud-intl.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">Get Started →</a >
+</section>

@@ -18,7 +18,7 @@
 
 一站式平台网关配置管理。所有配置、规则、标签可通过 **Web平台统一管理**，通过 Web 服务可省却现场操作，远程即可实现设备的监控、维护、配置管理等功能。
 
-![Web 管控平台.png](https://static.emqx.net/images/657a2478f2604fb042f4b1b533dd5b2a.png)
+![Web 管控平台.png](https://assets.emqx.com/images/657a2478f2604fb042f4b1b533dd5b2a.png)
 
 ### 跨平台、低功耗
 
@@ -29,7 +29,7 @@
 
 Neuron 的发布无疑将使 5G 时代的工业物联网如虎添翼。不仅如此，我们将通过集成 Neuron，Edge 和 Kuiper 等软件，实现在边缘端的工业协议解析、数据汇聚和流式处理的一整套边缘解决方案；其与云端的 EMQX Broker/Enterprise 等系列产品进一步集成，则可以实现一个端到端的从边缘到云端的完整工业解决方案。
 
-![跨平台、低功耗.png](https://static.emqx.net/images/ba0d5b290ecb9d0a8f7e92b60462a405.png)
+![跨平台、低功耗.png](https://assets.emqx.com/images/ba0d5b290ecb9d0a8f7e92b60462a405.png)
 
 这一完整工业解决方案计划于 **2020 年 9 月**发布，将探索边云协同的全栈全场景，在构建面向 5G 的泛工业物联网平台，赋能工业领域的网络化、数字化和智能化等方面做出积极努力，助力推进工业4.0 进程。
 
@@ -37,3 +37,11 @@ Neuron 的发布无疑将使 5G 时代的工业物联网如虎添翼。不仅如
 
 
 > **Neuron 产品研发的主要贡献者：** Joey Cheung，Neuron 产品线总监，15 年自动化设备控制软件、HMI、SCADA 编写经验，参与过国内外大型工业自动化生产线项目，现专注工业物联网平台的软件开发。
+
+
+<section class="promotion">
+    <div>
+        免费试用 Neuron
+    </div>
+    <a href="https://www.emqx.com/zh/try?product=neuron" class="button is-gradient px-5">开始试用 →</a >
+</section>

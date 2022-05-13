@@ -8,7 +8,7 @@
 >
 > Linux users can download it in Snapcraft: [https://snapcraft.io/mqttx](https://snapcraft.io/mqttx)
 
-![MQTT X](https://static.emqx.net/images/ed504e3746e5b9d67360ccd359d463df.png)
+![MQTT X](https://assets.emqx.com/images/ed504e3746e5b9d67360ccd359d463df.png)
 
 ## New Features Preview
 
@@ -16,13 +16,13 @@
 
 In this release, in addition, to supporting [MQTT 5.0](https://www.emqx.com/en/mqtt/mqtt5) subscription options, we have added support for [Subscription Identifiers](https://www.emqx.com/en/blog/subscription-identifier-and-subscription-options), we can specify a Subscription Identifier when subscribing. The broker will establish and store the mapping relationship between this subscription and the Subscription Identifier when successfully creating or modifying the subscription. The broker will return the Subscription Identifier associated with this PUBLISH packet and the PUBLISH packet to the client when needed to forward PUBLISH packets matching this subscription to this client.
 
-![MQTT 5.0 Subscription Identifier](https://static.emqx.net/images/d7fe5b3b7611351c1e2b21d42e181108.png)
+![MQTT 5.0 Subscription Identifier](https://assets.emqx.com/images/d7fe5b3b7611351c1e2b21d42e181108.png)
 
 ### Expose more MQTT 5.0 properties on display
 
 In this release, we have optimized the display of properties in MQTT 5.0. In addition to displaying User Properties, we also support displaying the Content Type, Subscription Identifier, Topic Alias, Response Topic, and Correlation Data contained in the message box when sent and received, as well as optimizing the display of User Properties.
 
-![MQTT 5.0 properties](https://static.emqx.net/images/f06ec9b6d35c81f256913f244cd128f2.png)
+![MQTT 5.0 properties](https://assets.emqx.com/images/f06ec9b6d35c81f256913f244cd128f2.png)
 
 ### Support Edit/Disable/Enable Topics
 
@@ -32,7 +32,7 @@ At the same time, this version also supports disable/enable Topic, when subscrib
 
 Use: Right-click on the subscribed Topic list item, in the context menu we can quickly choose to edit, disable or enable the operation.
 
-![Edit/Disable/Enable MQTT Topics](https://static.emqx.net/images/f508a287cf7275542e8e64989e017998.png)
+![Edit/Disable/Enable MQTT Topics](https://assets.emqx.com/images/f508a287cf7275542e8e64989e017998.png)
 
 ### Others
 

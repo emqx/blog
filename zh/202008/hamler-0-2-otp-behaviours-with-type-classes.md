@@ -2,7 +2,7 @@
 
 Hamler 是一门构建在 [Erlang](https://www.erlang.org/) 虚拟机(VM)上的 [Haskell](https://www.haskell.org/) 风格的强类型(Strongly-typed)编程语言，独特地结合了编译时的类型检查推导，与对运行时高并发和软实时能力的支持。
 
-![HamlerCompilerDesign](https://static.emqx.net/images/15dc96a3d0ae43081a138cac15c2546d.png)
+![HamlerCompilerDesign](https://assets.emqx.com/images/15dc96a3d0ae43081a138cac15c2546d.png)
 
 Hamler 0.2 现已支持大部分 Erlang 的并发编程特性，包括基于 Actor Model 的 Message Passing Concurrency 和 OTP Behaviours。
 
@@ -20,7 +20,7 @@ Hamler 0.2 现已支持大部分 Erlang 的并发编程特性，包括基于 Act
 
 Hamler/Erlang 中的 Actor 被定义为一个进程，它的工作方式就像一个 OS 进程。每个进程都有自己的内存，由一个 Mailbox、一个 Heap、一个 Stack 和一个包含进程信息的 Process Control Block(PCB) 组成。
 
-![Process](https://static.emqx.net/images/9aebe5ddeae7568a8c283fd1fa567dad.png)
+![Process](https://assets.emqx.com/images/9aebe5ddeae7568a8c283fd1fa567dad.png)
 
 Erlang 中的进程是非常轻量的，我们可以在一个正在运行的 Erlang 虚拟机上快速创建数百万个进程。
 
@@ -102,7 +102,7 @@ Generic Server Behaviour 是对 *客户端-服务器* 关系模型中服务器�
 
 *参考资料 [Erlang gen_server Behaviour](https://erlang.org/doc/design_principles/gen_server_concepts.html)*。
 
-![ClientServerMode](https://static.emqx.net/images/03ca074fb68effed09640b7c28103b4c.png)
+![ClientServerMode](https://assets.emqx.com/images/03ca074fb68effed09640b7c28103b4c.png)
 
 **GenServer Typeclass**
 
@@ -287,7 +287,7 @@ opened t e d = unhandled t e Opened d
 
 监督者可以监控上文提到的 `GenServer` 或 `GenStatem` 生成的进程，同样也可以监控另外一个监督者。这便构成了 **监控树(Supervision Tree)**。如下图所示：
 
-![SupervisorTree](https://static.emqx.net/images/9091ca68398a470a2d35e88b93824221.png)
+![SupervisorTree](https://assets.emqx.com/images/9091ca68398a470a2d35e88b93824221.png)
 
 其中矩形表示一个监督者，圆表示一个工作者（它可以是一个 GenServer，GenStatem 或其它任意的进程）。当有进程异常退出时，监督者会按回调函数中配置的方式进行重启，例如：
 

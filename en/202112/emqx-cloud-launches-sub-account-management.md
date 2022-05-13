@@ -8,7 +8,7 @@ Recently, the **Sub-account management function is also officially launched**. T
 
 ## Application scenarios for sub-account management
 
-![Application scenarios for sub-account management](https://static.emqx.net/images/06c3c78db866209a77f81b46235c7533.png)
+![Application scenarios for sub-account management](https://assets.emqx.com/images/06c3c78db866209a77f81b46235c7533.png)
 
 
 ### Classified management of production and development test environments, without mutual interference
@@ -39,12 +39,12 @@ First, we will explain the several account roles currently supported by EMQX Clo
 
 After registering on the website ([https://www.emqx.com/en](https://www.emqx.com/en)), you will become the administrator user of the account by default. You can enter the console, find 「User Management」 in the menu bar at the upper right corner, click 「New User」, enter the email and password of the sub-account you want to authorize, and assign it different roles (multiple roles can be selected).
 
-![New user](https://static.emqx.net/images/ba00b83715c46d7725c40c4ad7c03aa7.png)
+![New user](https://assets.emqx.com/images/ba00b83715c46d7725c40c4ad7c03aa7.png)
  
 
 After that, the sub-account user will receive the corresponding login link in the mailbox. After entering the mailbox and password, he can log in and perform the corresponding operation.
 
-![mailbox](https://static.emqx.net/images/36b4e90118c6ca83ee47ba8d3a8eb6b1.png)
+![mailbox](https://assets.emqx.com/images/36b4e90118c6ca83ee47ba8d3a8eb6b1.png)
 
 > Note: 1 for account verification and first login, 2 for subsequent sub-account login.
 
@@ -56,10 +56,19 @@ You can find the 「Project Center」 in the menu at the upper right corner, whe
 
 Click on the upper right corner of the specified project
 
-![project](https://static.emqx.net/images/560713ac83e8551df400263a30049ce8.png)
+![project](https://assets.emqx.com/images/560713ac83e8551df400263a30049ce8.png)
 
 Click「Add」, enter account keywords, and related accounts will be automatically associated. Roles that can be granted include "Project Administrator" and "Project User".
 
-![roles](https://static.emqx.net/images/92243347a6ad10eff2fc9796835e902e.png)
+![roles](https://assets.emqx.com/images/92243347a6ad10eff2fc9796835e902e.png)
 
 The EMQX Cloud team is committed to providing users with easy, convenient, automated and [fully managed MQTT cloud services](https://www.emqx.com/en/cloud). We will continue to improve the functional development of the permission management module to bring users a more pleasant product experience.
+
+
+<section class="promotion">
+    <div>
+        Try EMQX Cloud for Free
+        <div class="is-size-14 is-text-normal has-text-weight-normal">No credit card required</div>
+    </div>
+    <a href="https://www.emqx.com/en/signup?continue=https://cloud-intl.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">Get Started →</a >
+</section>

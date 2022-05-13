@@ -18,7 +18,7 @@ HStreamDB v0.6 正式支持 HServer 的集群模式。实现集群模式后，HS
 - [https://hstream.io/docs/zh/latest/deployment/deploy-docker.html](https://hstream.io/docs/zh/latest/deployment/deploy-docker.html) 
 - [https://hstream.io/docs/en/latest/deployment/deploy-k8s.html](https://hstream.io/docs/en/latest/deployment/deploy-k8s.html ) 
 
-![HStreamDB 架构图](https://static.emqx.net/images/553197ac2ae839659a3ba7cdd4b016e7.png)
+![HStreamDB 架构图](https://assets.emqx.com/images/553197ac2ae839659a3ba7cdd4b016e7.png)
 
 ### 支持共享订阅，数据分发实时性增强
 
@@ -49,13 +49,13 @@ LIMIT 0, 5;
 
 查询结果如下图所示：
 
-![查询结果](https://static.emqx.net/images/11bc8c9fb3b67f8eb6466327e547439f.png)
+![查询结果](https://assets.emqx.com/images/11bc8c9fb3b67f8eb6466327e547439f.png)
 
 ### 新增数据写入 Rest API，基于 HStreamDB 的更多可能
 
 现在可以使用任何语言通过 Rest API 向 HStreamDB 写入数据，后续我们计划将开放更多 Rest API，方便开源用户围绕 HStreamDB 进行二次开发，例如：通过 HStream Rest API 结合 EMQX 开源版的 Webhook 功能，能够实现 EMQX 和 HStreamDB 的快速集成。
 
-![HStreamDB Rest API](https://static.emqx.net/images/efe9a264a84a0c302bb9e5ba62c13c47.png)
+![HStreamDB Rest API](https://assets.emqx.com/images/efe9a264a84a0c302bb9e5ba62c13c47.png)
 
 
 ## 发展规划

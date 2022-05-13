@@ -171,13 +171,13 @@ backend.mysql.hook.client.disconnected.1 = {"action": {"function": "on_client_di
 
 浏览器打开 `http://127.0.0.1:18083` EMQX 管理控制台，在 **工具** -> **Websocket** 中新建一个客户端连接，指定 clientid 为 sub_client，点击连接，连接成功后手动断开:
 
-![image20181116105333637.png](https://static.emqx.net/images/20f7a8592d5fdaa8d9db4a385f2fd964.png)
+![image20181116105333637.png](https://assets.emqx.com/images/20f7a8592d5fdaa8d9db4a385f2fd964.png)
 
 
 
 在 MySQL Workbeanch 中点击 `mqtt_client` 表查看，此时将写入 / 更新一条客户端上下线记录：
 
-![image20181119105034528.png](https://static.emqx.net/images/2a1d3b6ed6e5b1ad2611d839f8484be9.png)
+![image20181119105034528.png](https://assets.emqx.com/images/2a1d3b6ed6e5b1ad2611d839f8484be9.png)
 
 
 
@@ -211,7 +211,7 @@ insert into mqtt_sub(clientid, topic, qos) values("sub_client", "sub_client/down
 
 2. EMQX  管理控制台 **WebSocket** 页面，以 clientid `sub_client`  新建一个客户端连接，切换至**订阅**页面，可见当前客户端自动订阅了 `sub_client/upstream` 与 `sub_client/downlink` 两个 QoS 1 的主题：
 
-![image20181116110036523.png](https://static.emqx.net/images/30b6bc892f1df5ba300fcbfe145345d5.png)
+![image20181116110036523.png](https://assets.emqx.com/images/30b6bc892f1df5ba300fcbfe145345d5.png)
 
 
 
@@ -240,7 +240,7 @@ backend.mysql.hook.message.publish.1     = {"topic": "#", "action": {"function":
 
 在 EMQX 管理控制台 **WebSocket** 页面中，向主题 `upstream_topic` 发布多条消息，EMQX 将消息列表持久化至 `mqtt_msg` 表中：
 
-![image20181119110712267.png](https://static.emqx.net/images/964dabfb8bf10ae868b69f117e849c9b.png)
+![image20181119110712267.png](https://assets.emqx.com/images/964dabfb8bf10ae868b69f117e849c9b.png)
 
 
 >暂只支持 QoS 1 2 的消息持久化。
@@ -274,7 +274,7 @@ backend.mysql.hook.message.publish.3     = {"topic": "#", "action": {"function":
 
 在 EMQX 管理控制台 **WebSocket** 页面中建立连接后，发布消息勾选**保留**：
 
-![image20181119111926675.png](https://static.emqx.net/images/9460dfcbb0188867ad37aa7a36c1687b.png)
+![image20181119111926675.png](https://assets.emqx.com/images/9460dfcbb0188867ad37aa7a36c1687b.png)
 
 
 
@@ -283,7 +283,7 @@ backend.mysql.hook.message.publish.3     = {"topic": "#", "action": {"function":
 非空的 retain 消息发布时，EMQX 将以 topic 为唯一键，持久化该条消息至 `mqtt_retain` 表中，相同主题下发不同的 retain 消息，只有最后一条消息会被持久化：
 
 
-![image20181119164153931.png](https://static.emqx.net/images/9b17858dedd4ed083c73c4678b26b769.png)
+![image20181119164153931.png](https://assets.emqx.com/images/9b17858dedd4ed083c73c4678b26b769.png)
 
 
 **订阅**
@@ -324,13 +324,13 @@ backend.mysql.hook.session.unsubscribed.1= {"topic": "#", "action": {"sql": ["de
 
 在 EMQX 管理控制台 **WebSocket** 页面中建立连接后，订阅 QoS > 0 的主题：
 
-![image20181119140251843.png](https://static.emqx.net/images/0f102ddaa6b0f7de7ad74993e7df8895.png)
+![image20181119140251843.png](https://assets.emqx.com/images/0f102ddaa6b0f7de7ad74993e7df8895.png)
 
 
 
 此时 `mqtt_acked` 表将插入初始化数据行，每向主题发布一条 QoS > 0 的消息，消息抵达后数据行 mid 将自增 1：
 
-![image20181119140354855.png](https://static.emqx.net/images/05346a44ee99ff82d98116638619258b.png)
+![image20181119140354855.png](https://assets.emqx.com/images/05346a44ee99ff82d98116638619258b.png)
 
 > 代理订阅中满足 QoS > 0 的 topic 也会初始化记录，客户端取消订阅后相关记录将被删除。
 
@@ -387,7 +387,7 @@ backend.mysql.hook.client.disconnected.3 = {"action": {"sql": ["insert into conn
 
 客户端上下线时将填充并执行预定的 SQL 语句，将连接记录写入 `connect_logs` 表。
 
-![image20181119154828728.png](https://static.emqx.net/images/5fc04e622dc690074ffc096ce3354806.png)
+![image20181119154828728.png](https://assets.emqx.com/images/5fc04e622dc690074ffc096ce3354806.png)
 
 
 

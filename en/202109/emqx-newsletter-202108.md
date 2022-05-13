@@ -6,13 +6,13 @@ EMQX 5.0 will come with a freshly redesigned management UI. The new design focus
 
 To show off, here is a screenshot of the new UI for advanced [MQTT](https://www.emqx.com/en/mqtt) features. 
 
-![New UI for advanced MQTT](https://static.emqx.net/images/e638f39e3c4875aa19bae385f0536b50.png)
+![New UI for advanced MQTT](https://assets.emqx.com/images/e638f39e3c4875aa19bae385f0536b50.png)
 
 Managing Topic Rewrite, Auto Subscribes, Delayed Publish, and Event Messages will be a breeze experience with the new UI.
 
 ## Reconfigure EMQX on the fly
 
-![Reconfigure EMQX on the fly](https://static.emqx.net/images/0a952d8445d3cc4a59d0949d67e2b011.png)
+![Reconfigure EMQX on the fly](https://assets.emqx.com/images/0a952d8445d3cc4a59d0949d67e2b011.png)
 
 As we showed in the previous newsletter, EMQX 5.0 uses Open API 3.0 for management APIs. If you visit [https://:localhost:18083/api-docs](http://localhost:18083/api-docs), the browser will take you to the Swagger UI where you can try out API calls directly from the GUI as well as viewing the detailed documentation of the API.
 
@@ -34,7 +34,7 @@ In EMQX 5.0, source code will become the single source of truth for API and conf
 
 Here in the picture is a screenshot of the generated configuration document for the QUIC listener --- Yes, in case you have missed our previous updates, EMQX now has a PoC implementation of MQTT over [QUIC](https://datatracker.ietf.org/doc/rfc9000/).
 
-![generated configuration document for the QUIC listener](https://static.emqx.net/images/8e3946d74c74a232d0a06afab61800c9.png)
+![generated configuration document for the QUIC listener](https://assets.emqx.com/images/8e3946d74c74a232d0a06afab61800c9.png)
 
 ## RLog is now named Mria
 
@@ -43,3 +43,12 @@ We have previously named the async Mnesia database replication project RLog (as 
 We believe this project will benefit the Erlang/Elixir community, so we have decided to move it out to its own repo: [mria](https://github.com/emqx/mria).
 
 The project ‘mria’ is named after [the biggest aircraft in the world AN-225 “MRIA”](https://englishrussia.com/2011/03/17/an-225-mria-the-biggest-aircraft-in-the-world/), and it also shares the same ‘-ia’ suffix as its origin: Mnesia
+
+
+<section class="promotion">
+    <div>
+        Try EMQX Cloud for Free
+        <div class="is-size-14 is-text-normal has-text-weight-normal">No credit card required</div>
+    </div>
+    <a href="https://www.emqx.com/en/signup?continue=https://cloud-intl.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">Get Started →</a >
+</section>

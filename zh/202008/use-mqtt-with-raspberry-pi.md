@@ -185,11 +185,11 @@ client.loop_forever()
 
 2. 使用 MQTT X 客户端与 MQTT 服务器建立连接，并向主题 `raspberry/topic` 发送消息 。
 
-   ![7B5ORTmqFbJJj6mM__thumbnail.png](https://static.emqx.net/images/e3ae859641f45129c13bfe3ecc6d83d8.png)
+   ![7B5ORTmqFbJJj6mM__thumbnail.png](https://assets.emqx.com/images/e3ae859641f45129c13bfe3ecc6d83d8.png)
 
 3. 查看树莓派终端信息，将会看到已成功接收到 MQTT X 发布的消息。
 
-   ![ZKNT7l232qHsjQYC__thumbnail.png](https://static.emqx.net/images/287177254b6de742ebd97e30f55206ab.png)
+   ![ZKNT7l232qHsjQYC__thumbnail.png](https://assets.emqx.com/images/287177254b6de742ebd97e30f55206ab.png)
 
 ### 测试发布消息 
 
@@ -197,11 +197,11 @@ client.loop_forever()
 
 2. 在终端运行 Python 代码。
 
-   ![k19xv59gQdqnpPog__thumbnail.png](https://static.emqx.net/images/713e54f2afa1bbafafc8237fea0ccb90.png)
+   ![k19xv59gQdqnpPog__thumbnail.png](https://assets.emqx.com/images/713e54f2afa1bbafafc8237fea0ccb90.png)
 
 3. 在 MQTT X 客户端中，查看树莓派发送的消息。
    
-   ![mp39coxpnEprWOE6__thumbnail.png](https://static.emqx.net/images/a1205fe2264876782a9818f17203f671.png)
+   ![mp39coxpnEprWOE6__thumbnail.png](https://assets.emqx.com/images/a1205fe2264876782a9818f17203f671.png)
 
 ### 测试遗嘱消息 
 
@@ -210,13 +210,13 @@ client.loop_forever()
 
 1. 在 MQTT X 客户端中，订阅 `raspberry/status`。
 
-   ![XKo2GYFsqSLc7nVH__thumbnail.png](https://static.emqx.net/images/5979c93e7967c7350846b56521b8a27e.png)
+   ![XKo2GYFsqSLc7nVH__thumbnail.png](https://assets.emqx.com/images/5979c93e7967c7350846b56521b8a27e.png)
 
 2. 中断程序，或者断开树莓派的网络。 
 
 3. 在 MQTT X 客户端中，查看 `raspberry/status` 主题接收到的消息。
 
-   ![RXNIVuQ7HK0z05RV__thumbnail.png](https://static.emqx.net/images/5d6e7497c02b48f1b1e2923725e015fc.png)
+   ![RXNIVuQ7HK0z05RV__thumbnail.png](https://assets.emqx.com/images/5d6e7497c02b48f1b1e2923725e015fc.png)
 
 
 
@@ -231,3 +231,12 @@ client.loop_forever()
 3. 可以通过将树莓派接入 MQTT 服务器，并配合各类传感器及 ESP 模块创建很多有趣的物联网应用。
 
 接下来我们将会陆续发布更多关于物联网开发及树莓派的相关文章，敬请关注。
+
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX Cloud
+        <div class="is-size-14 is-text-normal has-text-weight-normal">全托管的云原生 MQTT 消息服务</div>
+    </div>
+    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a >
+</section>

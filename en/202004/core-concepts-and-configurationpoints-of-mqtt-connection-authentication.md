@@ -128,7 +128,7 @@ auth.mysql.password_hash = sha256,salt
 
 Taking PostgreSQL authentication as an example, its functional logic is as follows:
 
-![image202002171542542024409681.png](https://static.emqx.net/images/c62f36f8356d7e887d3d6c4b2685b430.png)
+![image202002171542542024409681.png](https://assets.emqx.com/images/c62f36f8356d7e887d3d6c4b2685b430.png)
 
 > The authentication can be performed normally when the salting rules and hash method of the written data are consistent with the configuration of the corresponding plugin. It will invalidate existing authentication data when changing the hashing method.
 
@@ -147,7 +147,7 @@ When enabling multiple authentication methods at the same time, EMQX will perfor
   - Allow client access when anonymous authentication is enabled
   - Deny client access when anonymous authentication is disabled
 
-![guide_2.png](https://static.emqx.net/images/38ca581b0d0faec35a5c59ba4669fc75.png)
+![guide_2.png](https://assets.emqx.com/images/38ca581b0d0faec35a5c59ba4669fc75.png)
 
 
 >  It can improve client authentication efficiency when enabling only one authentication plugin at the same time.

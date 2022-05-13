@@ -22,7 +22,7 @@ There are quite a few different strategies for implementing cluster-wide persist
 
 However more scalable solutions typically tackle this problem in a distributed way, i.e., there is data migration from one node to another. This migration is called session takeover. Session takeover should be completely transparent to clients, however it comes with a price, especially when there are a lot messages to shuffle around.
 
-![Session takeover](https://static.emqx.net/images/ea4c881df579ece79600af69bec76244.png)
+![Session takeover](https://assets.emqx.com/images/ea4c881df579ece79600af69bec76244.png)
 
 
 ### Sticky session to the rescue
@@ -188,3 +188,12 @@ In this example, the client `subscriber1` is sticked to server `emqx2`.
 
 - [MQTT broker clustering part 1: Load balancing](https://www.emqx.com/en/blog/mqtt-broker-clustering-part-1-load-balancing)
 - [MQTT broker clustering part 3: Challenges and Solutions of EMQX horizontal scalability](https://www.emqx.com/en/blog/mqtt-broker-clustering-part-3-challenges-and-solutions-of-emqx-horizontal-scalability)
+
+
+<section class="promotion">
+    <div>
+        Try EMQX Cloud for Free
+        <div class="is-size-14 is-text-normal has-text-weight-normal">A fully managed, cloud-native MQTT service</div>
+    </div>
+    <a href="https://www.emqx.com/en/signup?continue=https://cloud-intl.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">Get Started →</a >
+</section>

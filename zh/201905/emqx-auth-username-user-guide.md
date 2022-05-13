@@ -4,7 +4,7 @@
 
 [emqx_auth_username](https://github.com/emqx/emqx-auth-username/) 它通过比对每个终端的接入的 `username` 和 `password` 与 EMQX 中存储的是否一致来实现终端接入的控制。其功能逻辑如下：
 
-![2671557804540_.pic.jpg](https://static.emqx.net/images/1a54b88722d76486f22ebc1215b4e7bb.jpg)
+![2671557804540_.pic.jpg](https://assets.emqx.com/images/1a54b88722d76486f22ebc1215b4e7bb.jpg)
 
 emqx_auth_username 目前版本仅提供了 **连接认证** 的功能。且提供了 *CLI* 和 *REST API* 来进行管理当前集群中的 *Username 库*
 

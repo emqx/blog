@@ -8,7 +8,7 @@
 >
 > Linux 用户可在 Snapcraft 中进行下载：[https://snapcraft.io/mqttx](https://snapcraft.io/mqttx)
 
-![MQTT X 界面](https://static.emqx.net/images/d88034adb1312466ca146e27c36c4b74.png)
+![MQTT X 界面](https://assets.emqx.com/images/d88034adb1312466ca146e27c36c4b74.png)
 
 ## 新功能预览
 
@@ -16,19 +16,19 @@
 
 共享订阅也支持了 Topic 的颜色标记，在使用[共享订阅](https://www.emqx.com/zh/blog/introduction-to-mqtt5-protocol-shared-subscription)时，MQTT X 也可以通过自定义颜色标记来区分出当前消息来自于哪个共享订阅。
 
-![MQTT X 共享订阅](https://static.emqx.net/images/9b686e84a1671c793dbbcb68aea2ec13.png)
+![MQTT X 共享订阅](https://assets.emqx.com/images/9b686e84a1671c793dbbcb68aea2ec13.png)
 
 ### 增加更多的 ARM 包
 
 该版本我们新增了一些可以支持在 ARM64 架构的机器上使用的安装包，对于 macOS 系统和 Linux 系统的用户，无论是什么架构，都可以下载对应的安装包使用。目前使用 ARM64 的包需要到 [Github](https://github.com/emqx/MQTTX/releases/tag/v1.7.2) 或 [官方下载地址](https://www.emqx.com/zh/downloads/MQTTX/v1.7.2) 内找到包含有 `arm64` 的后缀的包来下载和使用。
 
-![MQTT X 下载列表](https://static.emqx.net/images/e3f5a841c487f56d4cda3d848b6482a1.png)
+![MQTT X 下载列表](https://assets.emqx.com/images/e3f5a841c487f56d4cda3d848b6482a1.png)
 
 ### 支持设置重连周期
 
 在新建或编辑连接时，该版本对重连部分进行了优化，当设置了连接可以自动重连时，我们还可以配置每次重连时的时间间隔，也就是重连周期，默认是 `4000ms`，注意这里单位是毫秒。
 
-![MQTT X 设置重连周期](https://static.emqx.net/images/261b7ae46dd61558475fae4b23008d79.png)
+![MQTT X 设置重连周期](https://assets.emqx.com/images/261b7ae46dd61558475fae4b23008d79.png)
 
  
 ## 修复及优化

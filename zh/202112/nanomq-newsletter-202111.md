@@ -60,3 +60,11 @@ NNG 框架的编程风格有较高的上手门槛，需要用户对其 AIO 和 C
 可见在多核平台中，单个客户端情况下，NanoSDK 在 QoS 1/2 场景有着巨大优势。同时由于 NanoSDK 基于 NNG 用 C 语言实现了 MQTT 的类 Actor 编程模型，全异步 I/O 实现可以很好地将负载均衡分配到多个 CPU 核心。开发者可以按照我们的 Context 例程启动多个 MQTT 连接来达到 QoS 0 的更高消费能力，而不用苦恼于多线程并发开发。
 
 NanoMQ 团队计划于 12 月与 NNG 项目维护者 Garrett 举行开源开发会议，讨论如何双方项目的合并事宜。欢迎大家试用 NanoMQ Fork 的 NNG 仓库内的 nng-mqtt 分支[https://github.com/nanomq/nng/tree/nng-mqtt](https://github.com/nanomq/nng/tree/nng-mqtt)，抢先体验。
+
+
+<section class="promotion">
+    <div>
+        免费试用 NanoMQ
+    </div>
+    <a href="https://www.emqx.com/zh/try?product=nanomq" class="button is-gradient px-5">开始试用 →</a >
+</section>

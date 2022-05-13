@@ -4,7 +4,7 @@
 
 作为首个专为流数据设计的云原生流数据库，HStreamDB 致力于高效的大规模数据流存储和管理。EMQX 与 HStreamDB 的组合，将使海量数据接入、存储、实时处理与分析的一站式管理变得不再困难。
 
-![EMQX 与 HStreamDB](https://static.emqx.net/images/fc0fe48820b6158dd404cd8757ff9658.png)
+![EMQX 与 HStreamDB](https://assets.emqx.com/images/fc0fe48820b6158dd404cd8757ff9658.png)
 
 最近发布的[ HStreamDB v0.6 ](https://hstream.io/zh/blog/hstreamdb-v-0-6-release-notes)新增了数据写入 Rest API，可以使用任何语言通过 Rest API 向 HStreamDB 写入数据，方便开源用户围绕 HStreamDB 进行二次开发。我们也通过这一功能与 EMQX 开源版的 Webhook 功能结合，实现了 EMQX 和 HStreamDB 的快速集成。
 
@@ -98,21 +98,21 @@ emqx_rule_engine_output
 
 然后，我们打开 EMQX 的 Dashboard，点击规则引擎（Rule Engine），进入资源（Resource）界面。
 
-![EMQX Dashboard 资源页面](https://static.emqx.net/images/d110d6a38ba3a2ca0f238669d1d5a807.png)
+![EMQX Dashboard 资源页面](https://assets.emqx.com/images/d110d6a38ba3a2ca0f238669d1d5a807.png)
 
 我们可以先创建一个 WebHook 资源，如下图：
 
-![EMQX Dashboard 创建 WebHook](https://static.emqx.net/images/cfec5314f7b36d101d0cf963d2186bc2.png)
+![EMQX Dashboard 创建 WebHook](https://assets.emqx.com/images/cfec5314f7b36d101d0cf963d2186bc2.png)
 
 
 在 `Request URL` 一栏中填入 `hstream-http-server` 的监听地址，`<host>:6580/streams/emqx_rule_engine_output:publish`，然后点击 `test connection` 测试链接。
 
-![EMQX Dashboard test connection](https://static.emqx.net/images/a811a5d1cfafa32a7102e0defeb9dc80.png)
+![EMQX Dashboard test connection](https://assets.emqx.com/images/a811a5d1cfafa32a7102e0defeb9dc80.png)
 
 
 接着，我们来创建所需要的规则引擎规则：
 
-![创建 EMQX 规则引擎规则](https://static.emqx.net/images/41af650187256542b881bf345004d5d2.png)
+![创建 EMQX 规则引擎规则](https://assets.emqx.com/images/41af650187256542b881bf345004d5d2.png)
 
 
 ```
@@ -126,7 +126,7 @@ FROM
 
 我们需要增加一个 Action Handler ，选择 `Action` 为 `Data to Web Server`：
 
-![EMQX 规则引擎 Action](https://static.emqx.net/images/f1434d7eeb1304842c18f9cda7e7c735.png)
+![EMQX 规则引擎 Action](https://assets.emqx.com/images/f1434d7eeb1304842c18f9cda7e7c735.png)
 
 
 将 `Method` 设置为 `POST` ，`Header` 加入 `content-type` `application/json`。
@@ -148,12 +148,12 @@ FROM
 
 以下用 WebSocket 举例，我们可以先连接上我们启动的 EMQX 集群：
 
-![EMQX DashBoard 的 WebSocket 客户端](https://static.emqx.net/images/9e26f3437c419c79caf834b57efb2c08.png)
+![EMQX DashBoard 的 WebSocket 客户端](https://assets.emqx.com/images/9e26f3437c419c79caf834b57efb2c08.png)
 
 
 再向指定的 topic 发送数据：
 
-![EMQX DashBoard 的 WebSocket 发送数据](https://static.emqx.net/images/00fbff89e8f0e58933703f541a74a6fa.png)
+![EMQX DashBoard 的 WebSocket 发送数据](https://assets.emqx.com/images/00fbff89e8f0e58933703f541a74a6fa.png)
 
 如果一切正常的话，我们就可以实时地在 HStreamDB CLI 看到我们发到 EMQX 的数据。
 

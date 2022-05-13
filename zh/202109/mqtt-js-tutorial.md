@@ -293,3 +293,12 @@ Client 除监听事件外，也内置一些方法，用来进行发布订阅的�
 - [如何在 Electron 项目中使用 MQTT](https://www.emqx.com/zh/blog/how-to-use-mqtt-in-electron)
 - [如何在 Node.js 项目中使用 MQTT](https://www.emqx.com/zh/blog/how-to-use-mqtt-in-nodejs)
 - [使用 WebSocket 连接 MQTT 服务器](https://www.emqx.com/zh/blog/connect-to-mqtt-broker-with-websocket)
+
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX Cloud
+        <div class="is-size-14 is-text-normal has-text-weight-normal">全托管的云原生 MQTT 消息服务</div>
+    </div>
+    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a >
+</section>

@@ -68,7 +68,7 @@ TBox 接入最常见的是使用证书认证，EMQX 提供可扩展的认证链�
 
 此外绝大部分用户都启用了 EMQX 鉴权功能，为不同 TBox 终端分配相应的发布、订阅权限以有效保护数据安全。
 
-![EMQX 安全保障](https://static.emqx.net/images/4ff574a38707a1a8160882dca8cd16e7.png)
+![EMQX 安全保障](https://assets.emqx.com/images/4ff574a38707a1a8160882dca8cd16e7.png)
 
 ### 数据集成
 
@@ -76,7 +76,7 @@ TBox 接入最常见的是使用证书认证，EMQX 提供可扩展的认证链�
 
 Kafka 专注于数据的存储和读取，而 EMQX 则侧重于客户端和服务器之间的通信，EMQX 用来快速接收和处理来自大量物联网设备的消息，Kafka 可以收集并存储这些数据并将其发送给后端程序来分析和处理，这个架构是目前应用最广的数据集成方案。
 
-![EMQX 数据集成](https://static.emqx.net/images/382114e90c6a728659ac9316b73ddd60.png)
+![EMQX 数据集成](https://assets.emqx.com/images/382114e90c6a728659ac9316b73ddd60.png)
 
 ## 写在最后
 
@@ -94,3 +94,12 @@ Kafka 专注于数据的存储和读取，而 EMQX 则侧重于客户端和服�
 - [车联网平台搭建从入门到精通 05 | 车联网平台百万级消息吞吐架构设计](https://www.emqx.com/zh/blog/million-level-message-throughput-architecture-design-for-internet-of-vehicles)
 
 - [车联网平台搭建从入门到精通 06 | 车联网通信安全之 SSL/TLS 协议](https://www.emqx.com/zh/blog/ssl-tls-for-internet-of-vehicles-communication-security)
+
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX Cloud
+        <div class="is-size-14 is-text-normal has-text-weight-normal">全托管的云原生 MQTT 消息服务</div>
+    </div>
+    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a >
+</section>

@@ -49,13 +49,13 @@ Create `emqx_rule_engine_output` topic:
 
 Open EMQX Dashboard, enter the **Resources** page on the left menu, click the **New** button, and enter the Pulsar server information for resource creation.
 
-![WX201907181431432x.png](https://static.emqx.net/images/af365bd26f541a96206563aa2bdb548a.png)
+![WX201907181431432x.png](https://assets.emqx.com/images/af365bd26f541a96206563aa2bdb548a.png)
 
 
 
 The network environment of the nodes in the EMQX cluster may be different from each other. After the resources are successfully created, click the  **Status button**  in the list to view the resource connection status of each node. If the resources on the nodes are not available, please check whether the configuration is correct and the network connectivity is OK, and click the **Reconnect**  button to reconnect manually.
 
-![WX201907181432172x.png](https://static.emqx.net/images/3734b43f894d65884c4bcc6e132b247f.png)
+![WX201907181432172x.png](https://assets.emqx.com/images/3734b43f894d65884c4bcc6e132b247f.png)
 
 
 
@@ -65,7 +65,7 @@ Enter the **Rules** page on the left menu and click the **New** button to create
 
 After the trigger event is selected, we can see optional fields and sample SQL on the interface:
 
-![image20190716174727991.png](https://static.emqx.net/images/0782fbb63d51c05cf947fb3aa28834e9.png)
+![image20190716174727991.png](https://assets.emqx.com/images/0782fbb63d51c05cf947fb3aa28834e9.png)
 
 
 
@@ -135,7 +135,7 @@ The payload data is as follows, pay attention to changing the value of `tachomet
 
 Click the **SQL Test** toggle button, change the `topic` and `payload` to be the information in the scenario, and click the **Test** button to see the data output:
 
-![image20190716184242159.png](https://static.emqx.net/images/13907e261529a96d3d26e475453ce701.png)
+![image20190716184242159.png](https://assets.emqx.com/images/13907e261529a96d3d26e475453ce701.png)
 
 
 
@@ -163,7 +163,7 @@ After the SQL condition input and output are correct, we continue to add respons
 
 Click the **Add** button in the response action, select the action of **Bridge data to Pulsar**, select the resource just selected, and fill in the Pulsar topic with the `emqx_rule_engine_output`  created above
 
-![WX201907181433432x.png](https://static.emqx.net/images/7e092a65d7891f352e7d818860109154.png)
+![WX201907181433432x.png](https://assets.emqx.com/images/7e092a65d7891f352e7d818860109154.png)
 
 
 
@@ -201,7 +201,7 @@ Switch to the **Tools ->  Websocket** page, use any information client to connec
 
 
 
-![image20190716190238252.png](https://static.emqx.net/images/c44066c3b547e6e609e9f0563de0220e.png)
+![image20190716190238252.png](https://assets.emqx.com/images/c44066c3b547e6e609e9f0563de0220e.png)
 
 
 

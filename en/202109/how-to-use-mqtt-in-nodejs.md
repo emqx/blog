@@ -181,15 +181,15 @@ npm start
 
 After running, we can see the output information of the console as follows:
 
-![NodeJS MQTT Start](https://static.emqx.net/images/9897e6cd56163dfe7139cf6d84361e63.png)
+![NodeJS MQTT Start](https://assets.emqx.com/images/9897e6cd56163dfe7139cf6d84361e63.png)
 
 We see that the client has successfully connected to the [MQTT broker](https://www.emqx.io) and subscribed to the topic, received and published messages successfully. At this point, we will use [MQTT 5.0 Client Tool - MQTT X](https://mqttx.app) as another client for the message publishing and receiving test.
 
-![MQTT 5.0 Client Tool - MQTT X](https://static.emqx.net/images/5c841598f78eed0b186572165832f861.png)
+![MQTT 5.0 Client Tool - MQTT X](https://assets.emqx.com/images/5c841598f78eed0b186572165832f861.png)
 
 We can see that the message sent by MQTT X is printed in the console.
 
-![MQTT messages](https://static.emqx.net/images/02d8a35312ca1309f18a628dacca8910.png)
+![MQTT messages](https://assets.emqx.com/images/02d8a35312ca1309f18a628dacca8910.png)
 
 So far, we have used Node.js as an MQTT client to connect to the [public MQTT broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker), and realizes the connection, message publishing and subscription between the test client and MQTT server.
 

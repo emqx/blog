@@ -12,7 +12,7 @@ EMQX Cloud 最高可支持千万级设备连接，每秒处理百万级 MQTT 消
 
 而 Google 拥有独家私有全球光纤和分层网络，在全球范围内拥有 18 条海底电缆、27 个云计算区域以及 82 个云计算可用区。这使得 GCP 无需经过其他 Pop 节点，节省了在各个节点的时间，提高了速度和稳定性。
 
-![EMQX Cloud + Google Cloud](https://static.emqx.net/images/790c3ee6532f925e06192c786cbc5f1f.png)
+![EMQX Cloud + Google Cloud](https://assets.emqx.com/images/790c3ee6532f925e06192c786cbc5f1f.png)
 
 EMQX Cloud + GCP 的组合，无疑将更有利于消息的实时传送。
 
@@ -32,7 +32,7 @@ EMQX Cloud 采用 Masterless 集群架构以确保服务的高可用性。
 
 针对企业的多云、混合云的需求，EMQX Cloud 提供跨多云的统一 MQTT 云服务，国内支持阿里云、华为云、腾讯云、亚马逊云科技的 20 多个可用区，海外支持 AWS、Azure、GCP 平台上 10 余个地域运行。
 
-![EMQX Cloud 提供跨多云的统一 MQTT 云服务](https://static.emqx.net/images/1f263450c04b53dd7cca679aa90c881e.png)
+![EMQX Cloud 提供跨多云的统一 MQTT 云服务](https://assets.emqx.com/images/1f263450c04b53dd7cca679aa90c881e.png)
 
 而 Google 旗下的 Anthos 是以 Kubernetes 为核心的混合云/多云管理平台。部署在 GCP 的用户可以使用 Anthos 在其本地数据中心和云之间选择一系列混合连接选项，适用于任何位置、预算或带宽要求，以及专用互连和合作伙伴互连。
 
@@ -44,18 +44,27 @@ EMQX Cloud 采用 Masterless 集群架构以确保服务的高可用性。
 
 ### 选择版本
 
-![部署全托管 MQTT 5.0 服务-选择版本](https://static.emqx.net/images/8d74c6768f3e83d0ed10f85549500501.png)
+![部署全托管 MQTT 5.0 服务-选择版本](https://assets.emqx.com/images/8d74c6768f3e83d0ed10f85549500501.png)
 
 ### 选择相关配置
 
-![部署全托管 MQTT 5.0 服务-选择相关配置](https://static.emqx.net/images/8f4f6fd9aab86c2e727b3347c86a7579.png)
+![部署全托管 MQTT 5.0 服务-选择相关配置](https://assets.emqx.com/images/8f4f6fd9aab86c2e727b3347c86a7579.png)
 
 ### 确认和部署
 
-![部署全托管 MQTT 5.0 服务-确认和部署](https://static.emqx.net/images/6b322b8f4a639fc5caf00ea5c1af1d91.png)
+![部署全托管 MQTT 5.0 服务-确认和部署](https://assets.emqx.com/images/6b322b8f4a639fc5caf00ea5c1af1d91.png)
 
 从车联网到工业互联网，从运营商到金融支付，从能源电力到智慧城市，EMQ 与全球各行业客户一起通过物联网创造更美好的世界。
 
 作为一家秉承「服务导向、客户至上」原则的开源软件企业，EMQ 愿始终与客户一起，共同构建「面向未来」的物联网平台与应用，服务社会与产业的数字化、实时化、智能化转型升级。
 
 对我们的产品和服务如有任何意见或问题，欢迎发送邮件至 [cloud-support@emqx.io](mailto:cloud-support@emqx.io)，我们的团队将为您提供一对一的咨询服务。
+
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX Cloud
+        <div class="is-size-14 is-text-normal has-text-weight-normal">无须绑定信用卡</div>
+    </div>
+    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a >
+</section>

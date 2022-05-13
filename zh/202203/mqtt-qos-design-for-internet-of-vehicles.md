@@ -16,19 +16,19 @@ MQTT 设计了 3 个 QoS 等级：
 
   消息最多传递一次，如果当时 [MQTT 客户端](https://www.emqx.io/zh/mqtt-client)不可用，则会丢失该消息。Sender (可能是 Publisher 或者 Broker) 发送一条消息之后，就不再关心它有没有发送到对方，也不设置任何重发机制。
 
-  ![MQTT QoS 0](https://static.emqx.net/images/fb046bde08b7cd1e653d3eaacde480fc.png)
+  ![MQTT QoS 0](https://assets.emqx.com/images/fb046bde08b7cd1e653d3eaacde480fc.png)
 
 - **QoS 1**
 
   消息传递至少 1 次。包含了简单的重发机制，Sender 发送消息之后等待接收者的 ACK，如果没收到 ACK 则重新发送消息。这种模式能保证消息至少能到达一次，但无法保证消息重复。
 
-  ![MQTT QoS 1](https://static.emqx.net/images/8a707edb6b019f4c62e5e25fa3345030.png)
+  ![MQTT QoS 1](https://assets.emqx.com/images/8a707edb6b019f4c62e5e25fa3345030.png)
 
 - **QoS 2**
 
   消息仅传送一次。设计了重发和重复消息发现机制，保证消息到达对方并且严格只到达一次。
 
-  ![MQTT QoS 2](https://static.emqx.net/images/752c86832c5328c428120a81596ee388.png)
+  ![MQTT QoS 2](https://assets.emqx.com/images/752c86832c5328c428120a81596ee388.png)
 
 ## 车联网场景中的消息 QoS 设计
 
@@ -81,3 +81,13 @@ MQTT 设计了 3 个 QoS 等级：
 - [车联网平台搭建从入门到精通 05 | 车联网平台百万级消息吞吐架构设计](https://www.emqx.com/zh/blog/million-level-message-throughput-architecture-design-for-internet-of-vehicles)
 
 - [车联网平台搭建从入门到精通 06 | 车联网通信安全之 SSL/TLS 协议](https://www.emqx.com/zh/blog/ssl-tls-for-internet-of-vehicles-communication-security)
+
+
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX Cloud
+        <div class="is-size-14 is-text-normal has-text-weight-normal">无须绑定信用卡</div>
+    </div>
+    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a >
+</section>

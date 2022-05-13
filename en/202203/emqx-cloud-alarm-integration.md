@@ -31,7 +31,7 @@ At the same time, rich alerts events are configured:
 
 The specific warning prompts are as follows:
 
-![EMQX Cloud Alerts List](https://static.emqx.net/images/cde3aef6b6dbaa68a934ebd99b829b42.png)
+![EMQX Cloud Alerts List](https://assets.emqx.com/images/cde3aef6b6dbaa68a934ebd99b829b42.png)
 
 ## How to set alerts integration
 
@@ -41,7 +41,7 @@ Enter the EMQX Cloud console, click 「Alerts」 on the left menu bar to start s
 
 You just need to add the mailbox that accepts the alerts information. When the deployment generates a alert, the alerts reminder can be sent to the mailbox as soon as possible.
 
-![EMQX Cloud Mailbox alerts integration](https://static.emqx.net/images/2ddd29ab2c46e3834e9a1efd969cae9a.png)
+![EMQX Cloud Mailbox alerts integration](https://assets.emqx.com/images/2ddd29ab2c46e3834e9a1efd969cae9a.png)
  
 
 ### PagerDuty alerts integration
@@ -50,15 +50,15 @@ It sends the alerts to the event in PagerDuty and specifies the notification met
 
 1. Create alert service in PagerDuty
 
-	![EMQX Cloud Create alert service in PagerDuty](https://static.emqx.net/images/2f482f2c10d01eb9a93127b319827d5d.png)
+	![EMQX Cloud Create alert service in PagerDuty](https://assets.emqx.com/images/2f482f2c10d01eb9a93127b319827d5d.png)
  
 2. Add api v2 integration and copy the integration key
 
-	![EMQX Cloud Add api v2 integration](https://static.emqx.net/images/6e24f9335779f40d3dff46921c81ced1.png)
+	![EMQX Cloud Add api v2 integration](https://assets.emqx.com/images/6e24f9335779f40d3dff46921c81ced1.png)
  
 3. Fill in the Integration key on EMQX Cloud
 
-	![Fill in the Integration key on EMQX Cloud](https://static.emqx.net/images/266896882af3819bcfef98629272f264.png)
+	![Fill in the Integration key on EMQX Cloud](https://assets.emqx.com/images/266896882af3819bcfef98629272f264.png)
 
 ### Webhook alerts integration
 
@@ -70,7 +70,7 @@ Through the Webhook alerts integration, you can send alerts to communication sof
 
 2. Copy the Webhook API address, and in the alarm configuration, select Slack and fill in the name and Webhook address to complete the configuration.
 
-	![EMQX Cloud Slack integration](https://static.emqx.net/images/3fb039362fc3ee7d2f3774dc8e85be46.png)
+	![EMQX Cloud Slack integration](https://assets.emqx.com/images/3fb039362fc3ee7d2f3774dc8e85be46.png)
     
 3. To verify the configuration, you can use the test function to send a default message to check if the configuration is successful by selecting Slack item.
 
@@ -82,7 +82,7 @@ In addition to sending alerts messages to robots in communication software, we c
 
 2. Fill in the request address of the Webhook service in the new dialog box. At the same time, additional keys and values of request headers can be added.
 
-	![EMQX Cloud Webhook](https://static.emqx.net/images/1d8a406423f407a00e3aed3faf4ec135.png)  
+	![EMQX Cloud Webhook](https://assets.emqx.com/images/1d8a406423f407a00e3aed3faf4ec135.png)  
 
 3. To verify the configuration, you can use the test function to send a default message to check if the configuration is successful by selecting the configured Webhook alerts.
 
@@ -90,3 +90,12 @@ In addition to sending alerts messages to robots in communication software, we c
 Through the above rich alerts modes, you can flexibly and freely set different alerts events for fault warning, and deal with the abnormality as soon as possible to ensure the stability of the business.
 
 EMQX Cloud now offers a 14-day free trial. Don’t hesitate to click the link [Fully managed IoT MQTT cloud platform](https://www.emqx.com/en/cloud) to try out new features and give us your valuable advice.
+
+
+<section class="promotion">
+    <div>
+        Try EMQX Cloud for Free
+        <div class="is-size-14 is-text-normal has-text-weight-normal">No credit card required</div>
+    </div>
+    <a href="https://www.emqx.com/en/signup?continue=https://cloud-intl.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">Get Started →</a >
+</section>

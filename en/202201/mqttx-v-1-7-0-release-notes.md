@@ -9,7 +9,7 @@ Mac users can download it in the App Store: [https://apps.apple.com/us/app/mqttx
 
 Linux users can download it in Snapcraft: [https://snapcraft.io/mqttx](https://snapcraft.io/mqttx)
 
-![v1.7.0 interface overview](https://static.emqx.net/images/5c6088dcd04edddd0bcf04895c030282.png)
+![v1.7.0 interface overview](https://assets.emqx.com/images/5c6088dcd04edddd0bcf04895c030282.png)
 
 v1.7.0 interface overview
 

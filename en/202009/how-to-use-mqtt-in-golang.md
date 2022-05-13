@@ -224,7 +224,7 @@ func sub(client mqtt.Client) {
 ```
 
 Run code, we can see that the MQTT connection and subscription are successfully, and we can successfully receive the message of subscribing topic.
-![gomqtt.png](https://static.emqx.net/images/0a76a6f83d8497245f883abd04812664.png)
+![gomqtt.png](https://assets.emqx.com/images/0a76a6f83d8497245f883abd04812664.png)
 
 
 

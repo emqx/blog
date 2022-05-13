@@ -4,7 +4,7 @@
 
 目前，EMQX Cloud 基础版和专业版均会会赠送一定免费流量。 若每月消耗流量超出赠送额度，则会按照 ¥1.5/GB 的价格收取费用。
 
-![EMQX Cloud 赠送流量](https://static.emqx.net/images/dd054a3833308f4dc209a26fd107e58a.jpeg)
+![EMQX Cloud 赠送流量](https://assets.emqx.com/images/dd054a3833308f4dc209a26fd107e58a.jpeg)
 
 在用户的实际使用场景中，会出现连接设备少、消息数量大的情况，如工业数据采集、车联网新能源车数据采集、在线教育、即时通讯等。在这类场景中，用户选择较低线数的规格即可满足设备连接需求，但由于消息吞吐量大，消耗的流量很有可能超出低线数规格中赠送的 100G/月。
 
@@ -16,11 +16,11 @@
 
 1、登陆 EMQX Cloud 控制台，在菜单栏点击「增值服务」，选择流量包。
 
-![EMQX Cloud 流量包](https://static.emqx.net/images/3deaac604c292d94fc6d7d73ebdbe7e7.png)
+![EMQX Cloud 流量包](https://assets.emqx.com/images/3deaac604c292d94fc6d7d73ebdbe7e7.png)
 
 2、在部署的流量消耗处点击「购买流量包」。
 
-![EMQX Cloud 购买流量包](https://static.emqx.net/images/8a0abeecb79d1263e53d04b69192854b.png)
+![EMQX Cloud 购买流量包](https://assets.emqx.com/images/8a0abeecb79d1263e53d04b69192854b.png)
 
 目前我们提供 100 GB 和 1 TB 两种规格的流量包，每种流量包的单次购买上限为 10 个。两规格流量包售价分别为 120元 和 1128 元，相较于流量按量付费可节约 20+% 的费用。
 
@@ -39,16 +39,25 @@
 
 1、在控制台顶部菜单栏 「增值服务」找到流量包，点击服务详情。
 
-![EMQX Cloud 流量包](https://static.emqx.net/images/3090671e21efc93847a1ef8ac0d1ebdb.png)
+![EMQX Cloud 流量包](https://assets.emqx.com/images/3090671e21efc93847a1ef8ac0d1ebdb.png)
 
 2、在服务详情页面可查看到流量包 ID、使用情况(GB)、生效时间、到期时间、状态。
 
-![EMQX Cloud 流量包](https://static.emqx.net/images/c2b044e4c66b25c66c4d1b386fa43572.png)
+![EMQX Cloud 流量包](https://assets.emqx.com/images/c2b044e4c66b25c66c4d1b386fa43572.png)
 
 3、点击右侧操作的详情按钮，可查看到流量包使用详情。
 
-![EMQX Cloud 流量包](https://static.emqx.net/images/b47f1e1868919a503815b3eed982dddb.png)
+![EMQX Cloud 流量包](https://assets.emqx.com/images/b47f1e1868919a503815b3eed982dddb.png)
 
 EMQX Cloud 的定价模式以连接数作为主要计价衡量因素，相较于按收发消息数计价的方式，EMQX Cloud 为企业用户提供了更加经济实惠的全托管 MQTT 消息服务，避免了因为消息量飙升而导致成本急剧升高的情况，可以帮助企业有效控制成本。而新上线的流量包服务，则进一步满足了不同类型和规模的业务场景对于消息吞吐的动态需求。
 
 EMQX Cloud 将持续完善产品功能，提升使用体验，通过可靠、实时的物联网数据移动、处理和集成，加速您的物联网应用开发。
+
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX Cloud
+        <div class="is-size-14 is-text-normal has-text-weight-normal">无须绑定信用卡</div>
+    </div>
+    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a >
+</section>

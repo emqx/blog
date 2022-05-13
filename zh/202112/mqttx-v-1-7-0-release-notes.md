@@ -10,7 +10,7 @@
 >
 > Linux 用户可在 Snapcraft 中进行下载：[https://snapcraft.io/mqttx](https://snapcraft.io/mqttx)
 
-![MQTT X v1.7.0 界面一览](https://static.emqx.net/images/ba629cd3f538e19317d9a782ea43c0c8.png)
+![MQTT X v1.7.0 界面一览](https://assets.emqx.com/images/ba629cd3f538e19317d9a782ea43c0c8.png)
 
 <center>v1.7.0 界面一览</center>
 

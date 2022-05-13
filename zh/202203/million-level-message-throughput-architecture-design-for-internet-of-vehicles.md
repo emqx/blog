@@ -54,7 +54,7 @@ Kafka 作为主流消息队列之一，具有持久化数据存储能力，可�
 4. Kafka 作为总体消息队列，EMQX 把全量消息通过规则引擎，转发给后端 Kafka 集群中。
 5. 后端 TSP 平台/OTA 等应用通过订阅 Kafka 的主题接收相应的消息，业务平台的控制指令和推送消息可通过 Kafka/API 的方式下发到 EMQX。
 
-![车联网架构图](https://static.emqx.net/images/af9f5b83afe53e9255f942ee80cfcba5.png)
+![车联网架构图](https://assets.emqx.com/images/af9f5b83afe53e9255f942ee80cfcba5.png)
 
 <center>总体架构图</center>
 
@@ -70,28 +70,28 @@ Kafka 作为主流消息队列之一，具有持久化数据存储能力，可�
 
 为了验证上述架构的吞吐能力，在条件允许的情况下，我们可以通过以下配置搭建百万级消息吞吐测试场景。压测工具可以选用 Benchmark Tools、JMeter 或 XMeter 测试平台。共模拟 100 万设备，每个设备分别都有自己的主题，每个设备每秒发送一次消息，持续压测 12 小时。
 
-![百万吞吐场景验证](https://static.emqx.net/images/2645becd51bba943258083d729e877ec.png)
+![百万吞吐场景验证](https://assets.emqx.com/images/2645becd51bba943258083d729e877ec.png)
 
 压测架构图如下：
 
-![车联网压测架构图](https://static.emqx.net/images/e3265de6b86f950241f2f51a76a13a70.png)
+![车联网压测架构图](https://assets.emqx.com/images/e3265de6b86f950241f2f51a76a13a70.png)
 
 性能测试部分结果呈现：
 
-![EMQX 集群 Dashboard 统计](https://static.emqx.net/images/66dc0f07055145a319e84f16ea2c1ff6.png)
+![EMQX 集群 Dashboard 统计](https://assets.emqx.com/images/66dc0f07055145a319e84f16ea2c1ff6.png)
 
 <center>EMQX 集群 Dashboard 统计</center>
 
 
 EMQX 规则引擎中可以看到每个节点速度为 10 万/秒的处理速度，10 个节点总共 100 万/秒的速度进行。
 
-![EMQX 规则引擎统计EMQX 规则引擎统计](https://static.emqx.net/images/fc478f6686f4f64b64fcbe34936e4219.png)
+![EMQX 规则引擎统计EMQX 规则引擎统计](https://assets.emqx.com/images/fc478f6686f4f64b64fcbe34936e4219.png)
 
 <center>EMQX 规则引擎统计</center>
 
 在 Kafka 中可以看到每秒 100 万的写入速度，并且一直持续存储。
 
-![Kafka 管理界面](https://static.emqx.net/images/4686be6ef2a2fe361b62f954eda1bf43.png)
+![Kafka 管理界面](https://assets.emqx.com/images/4686be6ef2a2fe361b62f954eda1bf43.png)
 
 <center>Kafka 管理界面统计</center>
 
@@ -112,7 +112,7 @@ InfluxDB 是一个高性能的时序数据库，被广泛应用于存储系统�
 4. EMQX 把全量消息通过规则引擎转发给后端InfluxDB进行数据持久化存储。
 5. 后端大数据平台通过 InfluxDB 接收相应的消息，对其进行大数据分析，分析后再通过 API 的方式把想要的信息传输到 EMQX。
 
-![百万级吞吐车联网平台](https://static.emqx.net/images/cf7cbe5d0593be0671f50b002d475a2c.png)
+![百万级吞吐车联网平台](https://assets.emqx.com/images/cf7cbe5d0593be0671f50b002d475a2c.png)
 
 <center>总体架构图</center>
 
@@ -120,23 +120,23 @@ InfluxDB 是一个高性能的时序数据库，被广泛应用于存储系统�
 
 如测试架构图中所示，XMeter 压力机模拟 10 万 MQTT 客户端向 EMQX 发起连接，新增连接速率为每秒 10000，客户端心跳间隔(Keep Alive)300 秒。所有连接成功后每个客户端每秒发送一条 QoS 为 1、Payload 为 200B 的消息，所有消息通过 HTTP InfluxDB 规则引擎桥过滤筛选并持久化发至 InfluxDB 数据库。
 
-![车联网测试](https://static.emqx.net/images/9bdd0134e6747cc469bf7b239de0250f.png)
+![车联网测试](https://assets.emqx.com/images/9bdd0134e6747cc469bf7b239de0250f.png)
 
 测试结果呈现如下：
 
-![EMQX Dashboard 统计](https://static.emqx.net/images/6788c7b9c73fa9613b148b264b6d1bb8.png)
+![EMQX Dashboard 统计](https://assets.emqx.com/images/6788c7b9c73fa9613b148b264b6d1bb8.png)
 
 <center>EMQX Dashboard 统计</center>
 
-![EMQX 规则引擎统计](https://static.emqx.net/images/104771f0beb7f68eba1c59ec763adafa.png)
+![EMQX 规则引擎统计](https://assets.emqx.com/images/104771f0beb7f68eba1c59ec763adafa.png)
 
 <center>EMQX 规则引擎统计</center>
 
-![InfluxDB 数据库收到数据](https://static.emqx.net/images/8faf7561a0b60d1ae486f704c6b4a1ad.png)
+![InfluxDB 数据库收到数据](https://assets.emqx.com/images/8faf7561a0b60d1ae486f704c6b4a1ad.png)
 
 <center>InfluxDB 数据库收到数据</center>
 
-![EMQX Dashboard 消息数统计](https://static.emqx.net/images/3f1f07d367900eb224d1d26f26aab3f6.png)
+![EMQX Dashboard 消息数统计](https://assets.emqx.com/images/3f1f07d367900eb224d1d26f26aab3f6.png)
 
 <center>EMQX Dashboard 消息数统计</center>
 
@@ -159,3 +159,13 @@ InfluxDB 是一个高性能的时序数据库，被广泛应用于存储系统�
 - [车联网平台搭建从入门到精通 04 | MQTT QoS 设计：车联网平台消息传输质量保障](https://www.emqx.com/zh/blog/mqtt-qos-design-for-internet-of-vehicles)
 
 - [车联网平台搭建从入门到精通 06 | 车联网通信安全之 SSL/TLS 协议](https://www.emqx.com/zh/blog/ssl-tls-for-internet-of-vehicles-communication-security)
+
+
+
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX 企业版
+    </div>
+    <a href="https://www.emqx.com/zh/try?product=enterprise" class="button is-gradient px-5">开始试用 →</a >
+</section>

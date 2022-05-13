@@ -86,11 +86,11 @@ mysql> desc use_statistics;
 
 Open EMQX Dashboard, go to the **Resources** page on the left menu, click the **New** button, type MySQL server information for resource creation.
 
-![image20190716172916980.jpg](https://static.emqx.net/images/7af5c43283b3605f61897dfd83eb4ca8.jpg)
+![image20190716172916980.jpg](https://assets.emqx.com/images/7af5c43283b3605f61897dfd83eb4ca8.jpg)
 
 The network environment of the nodes in the EMQX cluster may be different. After the resources are created successfully, click the **Status button ** in the list to check the connection status of each node. If the resources on the node are unavailable, check whether the configuration is correct and the network connectivity is correct, and click the **Reconnect** button to manually reconnect.
 
-![image20190716173259015.jpg](https://static.emqx.net/images/c33b326610e84582d33d7a78466ff1f3.jpg)
+![image20190716173259015.jpg](https://assets.emqx.com/images/c33b326610e84582d33d7a78466ff1f3.jpg)
 
 
 
@@ -100,7 +100,7 @@ Go to the **Rules** page on the left menu and click the **New** button to create
 
 After selecting the trigger event, we can see the optional fields and sample SQL on the interface:
 
-![image20190716174727991.jpg](https://static.emqx.net/images/2bb72c48b0cb527dc619fe0f70c33ce5.jpg)
+![image20190716174727991.jpg](https://assets.emqx.com/images/2bb72c48b0cb527dc619fe0f70c33ce5.jpg)
 
 
 
@@ -170,7 +170,7 @@ The payload data is as follows, note to change the `tachometer` value to satisfy
 
 Click the **SQL Test** toggle button, change `topic` and `payload` into the information in the scenario, and click the **Test** button to view the data output:
 
-![image20190716184242159.jpg](https://static.emqx.net/images/0f9b63a1ad40b2072a0838a7c4727df9.jpg)
+![image20190716184242159.jpg](https://assets.emqx.com/images/0f9b63a1ad40b2072a0838a7c4727df9.jpg)
 
 
 
@@ -207,7 +207,7 @@ VALUES
 	(${client_id}, ${speed}, ${tachometer}, ${ts}, ${id});
 ```
 
-![image20190716182818011.jpg](https://static.emqx.net/images/968c8abc7075fecdb02f536ad1f36ced.jpg)
+![image20190716182818011.jpg](https://assets.emqx.com/images/968c8abc7075fecdb02f536ad1f36ced.jpg)
 
 
 
@@ -248,13 +248,13 @@ Switch to **tools -> Websocket** page, connect to EMQX with any client, and send
   ```
 
 
-![image20190716190238252.jpg](https://static.emqx.net/images/5f022cfca5aceb231cba61b7014a3fe1.jpg)
+![image20190716190238252.jpg](https://assets.emqx.com/images/5f022cfca5aceb231cba61b7014a3fe1.jpg)
 
 
 
 Click the **Send** button to view the rule **hit** statistics after the successful transmission. The data statistic value of hit is 1 to indicate that the rule has been successfully hit. View the data table record  with the MySQL command line  to get the following data:
 
-![image20190717141918330.png](https://static.emqx.net/images/a4606e0e73c431c5eccaa2a635610417.png)
+![image20190717141918330.png](https://assets.emqx.com/images/a4606e0e73c431c5eccaa2a635610417.png)
 
 So far, we have implemented the business development of using the rules engine to store messages to MySQL .
 

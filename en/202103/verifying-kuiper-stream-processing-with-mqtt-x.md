@@ -1,6 +1,6 @@
 This article will use the MQTT X scripts and timing function to simulate reporting temperature and humidity data. EMQX Edge acts as the messaging middleware to forward messages, and EMQX Kuiper performs receiving messages and processing rules. Finally, the processed data will be sent to MQTT X via EMQX Edge.
 
-![mqttxedgekuiper.png](https://static.emqx.net/images/9f96444f39724baa8ed5ee6d814618ed.png)
+![mqttxedgekuiper.png](https://assets.emqx.com/images/9f96444f39724baa8ed5ee6d814618ed.png)
 
 ## Introduction and installation
 
@@ -74,7 +74,7 @@ After the environment has been built, we can collocate with the features between
 
 First, we create and configure the streams and rules for Kuiper. After installing and successfully running Kuiper-manager, we open a browser and enter `http://localhost:9082`. If you access kuiper-manager from other computers, please change `localhost` to the IP address where you are running kuiper-manager. The password and username you will need to enter when you first open it is: `admin` / `public`. It is recommended that you change your password after logging in for the first time.
 
-![kuipermanagerlogin.png](https://static.emqx.net/images/de28b1b45f019523ec9c8ed7b38851e5.png)
+![kuipermanagerlogin.png](https://assets.emqx.com/images/de28b1b45f019523ec9c8ed7b38851e5.png)
 
 #### Nodes
 
@@ -82,7 +82,7 @@ After a successful login, you will be taken to a node management interface. Clic
 
 > Note: If you use Docker to start it, the endpoint address needs to be entered as the IP address within the Docker container.
 
-![kuiperaddnodes.png](https://static.emqx.net/images/e219d0c1d211bb49a88866310ecbd3db.png)
+![kuiperaddnodes.png](https://assets.emqx.com/images/e219d0c1d211bb49a88866310ecbd3db.png)
 
 After successfully added, we can access the node instance through clicking on the node name in the node list. Once inside, we will then create and configure the flows and rules of this Kuiper instance.
 
@@ -104,7 +104,7 @@ Once you are on the Kuiper instance page, you will go to the Tab page of streams
 
 6. Select `Stream Format`, which will be chosen as `json` finally.
 
-![kuipercreatestream.png](https://static.emqx.net/images/f7d5df43a41e46815c67716567f322da.png)
+![kuipercreatestream.png](https://assets.emqx.com/images/f7d5df43a41e46815c67716567f322da.png)
 
 In addition to the above visual creation methods, we can also switch to text mode by clicking on the toggle button in the top right corner of the page. A stream can be created by entering the SQL statement used to create the stream directly. SQL example:
 
@@ -135,7 +135,7 @@ Click on the Tab item of the rule to go to the list of rules page. We click on t
 
 4. Set `Options`, and part of options are optional and all options have default values. If you wish to change them, you can do so by referring to the [Kuiper documentation](https://docs.emqx.cn/cn/kuiper/latest/rules/overview.html#%E9%80%89%E9%A1%B9).
 
-![kuipercreaterule.png](https://static.emqx.net/images/66bffdc71ba9c49183b080d42d6135b4.png)
+![kuipercreaterule.png](https://assets.emqx.com/images/66bffdc71ba9c49183b080d42d6135b4.png)
 
 In addition to the above visual creation methods, we can also switch to text mode by clicking on the toggle button in the top right corner of the page. Rules can be created by entering the JSON data of creation rule directly, JSON example:
 
@@ -184,31 +184,31 @@ function handlePayload(value) {
 execute(handlePayload)
 ```
 
-![mqttxscript.png](https://static.emqx.net/images/5aef8144b3c75fab5730afd7f7545c31.png)
+![mqttxscript.png](https://assets.emqx.com/images/5aef8144b3c75fab5730afd7f7545c31.png)
 
 Testing found that the simulated data was successful, and we went to the connection page, opened the script to use the function (using the script function is not described in detail in this article, you can refer to the [MQTT X documentation](https://github.com/emqx/MQTTX/blob/master/docs/manual-cn.md#%E8%84%9A%E6%9C%AC)). Enter the `Payload` data template to be sent as `{}`, enter `Topic` as the `Data Source` in the stream definition, in this case `/kuiper/stream`, then set the timing message, set the sending frequency to 1 second, then click Send. After the message has been successfully sent, MQTT X will automatically send one simulated test data per second.
 
-![mqttxtimed.png](https://static.emqx.net/images/6358d2d739f455bb36670269eb3e2c52.png)
+![mqttxtimed.png](https://assets.emqx.com/images/6358d2d739f455bb36670269eb3e2c52.png)
 
 At this point, we create a new connection again called `edge2` to the EMQX Edge with the same configuration as the Kuiper Sink and subscribe to the `Topic` configured in the MQTT Sink. In this case, we subscribe to the `/kuiper/rule` topic, to receive data processed by Kuiper.
 
-![mqttxrule.png](https://static.emqx.net/images/d3d9bc645f87f0bfe5d63a6c2b6ee62a.png)
+![mqttxrule.png](https://assets.emqx.com/images/d3d9bc645f87f0bfe5d63a6c2b6ee62a.png)
 
 ### Verify Results
 
 Once we have sent the simulated data, we can see if any messages are coming in or going out by clicking on the `Status` button in the rules list. We can see from the screenshot below that Kuiper received a total of 40 messages and filtered out 14 messages.
 
-![kuiperrulestatus.png](https://static.emqx.net/images/73b59e082e4af79cdc8c7491b6fed441.png)
+![kuiperrulestatus.png](https://assets.emqx.com/images/73b59e082e4af79cdc8c7491b6fed441.png)
 
 Then continue to look at the messages within MQTT X. `edge1` has sent a total of 40 simulated messages at regular intervals, switching to `edge2` we see that a total of 14 messages have been received. The sent and received data is consistent with the Kuiper inflow and outflow data, and the `temperature` in the received messages is exactly above 30, which satisfies the filtering conditions we set in Kuiper. This means that our Kuiper stream processing function has successfully completed the data processing requirements we set, and the test and verification was successful.
 
-![mqttxsend.png](https://static.emqx.net/images/3aabe367e47e56a41033aa3a6cfed18e.png)
+![mqttxsend.png](https://assets.emqx.com/images/3aabe367e47e56a41033aa3a6cfed18e.png)
 
-![mqttxres.png](https://static.emqx.net/images/489c0e0422a1eae70a730cb0a70af7ec.png)
+![mqttxres.png](https://assets.emqx.com/images/489c0e0422a1eae70a730cb0a70af7ec.png)
 
 In addition to viewing the information of data processed by Kuiper rules via the Status button, you can also click on the `Topology' button to go to the topology diagram of the rule, which shows the complete flow of data and the status of the rule, and allows you to view real-time dynamic information about the specific data processing modules.
 
-![kuiperruletopo.png](https://static.emqx.net/images/e6790e6b1ebee6501f96670b8d23129d.png)
+![kuiperruletopo.png](https://assets.emqx.com/images/e6790e6b1ebee6501f96670b8d23129d.png)
 
 ## Summary
 

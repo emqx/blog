@@ -73,7 +73,7 @@ $ docker exec -it timescaledb psql -U postgres
 
 打开 EMQX Dashboard，进入左侧菜单的 **资源** 页面，点击 **新建** 按钮，选择 TimescaleDB 资源类型并完成相关配置进行资源创建。
 
-![image20190725121129697.png](https://static.emqx.net/images/f5a03d8bd27e4c8f8350a9488c4fee56.png)
+![image20190725121129697.png](https://assets.emqx.com/images/f5a03d8bd27e4c8f8350a9488c4fee56.png)
 
 
 
@@ -83,7 +83,7 @@ $ docker exec -it timescaledb psql -U postgres
 
 选定触发事件后，我们可在界面上看到可选字段及示例 SQL：
 
-![image20190719112141128.png](https://static.emqx.net/images/5430aa165efedc4e10ab57aaf2d04762.png)
+![image20190719112141128.png](https://assets.emqx.com/images/5430aa165efedc4e10ab57aaf2d04762.png)
 
 
 
@@ -108,7 +108,7 @@ WHERE
 
 借助 SQL 测试功能，我们可以快速确认刚刚填写的 SQL 语句能否达成我们的目的。首先填写用于测试的 payload 等数据如下：
 
-![image20190725133827927.png](https://static.emqx.net/images/dcada3c8dac0a0fec9bb57888d9d972f.png)
+![image20190725133827927.png](https://assets.emqx.com/images/dcada3c8dac0a0fec9bb57888d9d972f.png)
 
 然后点击 **测试** 按钮，我们得到以下数据输出：
 
@@ -134,7 +134,7 @@ SQL 条件输入输出无误后，我们继续添加响应动作，配置写入 
 
 最后点击 **新建** 按钮完成规则创建。
 
-![image20190725134423471.png](https://static.emqx.net/images/1bcf17542a85a02b7506c2d3e20e7669.png)
+![image20190725134423471.png](https://assets.emqx.com/images/1bcf17542a85a02b7506c2d3e20e7669.png)
 
 
 
@@ -164,7 +164,7 @@ SQL 条件输入输出无误后，我们继续添加响应动作，配置写入 
     "humidity": 46.4
   }
   ```
-![image20190725134813146.png](https://static.emqx.net/images/b3df2a5a3705e887c0e22b5b2974ceb6.png)
+![image20190725134813146.png](https://assets.emqx.com/images/b3df2a5a3705e887c0e22b5b2974ceb6.png)
 
 点击 **发送** 按钮，发送成功后可以看到当前规则已命中次数已经变为了 1。
 
@@ -188,5 +188,5 @@ tutorial=# SELECT * FROM sensor_data LIMIT 100;
         免费试用 EMQX Cloud
         <div class="is-size-14 is-text-normal has-text-weight-normal">全托管的云原生 MQTT 消息服务</div>
     </div>
-    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a>
+    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a >
 </section>

@@ -40,7 +40,7 @@ EMQ 联合万为致力于打造 AI、IoT “一体化”，EMQ 打通前端 IoT 
 - 具备快速部署、快速对接能力，大大加速应用实现
 - 支持国标数据标准接入，支持多级平台
 
-![统一接入平台特征](https://static.emqx.net/images/93f08f5b019f479df4991ede54519571.png)
+![统一接入平台特征](https://assets.emqx.com/images/93f08f5b019f479df4991ede54519571.png)
 
 ### 整体方案能力与特点：
 
@@ -51,7 +51,7 @@ EMQ 联合万为致力于打造 AI、IoT “一体化”，EMQ 打通前端 IoT 
 
 ### 方案1：平台层统一接入集成
 
-![平台层统一接入集成](https://static.emqx.net/images/d4e740c866d387aea475846b6106d205.png)
+![平台层统一接入集成](https://assets.emqx.com/images/d4e740c866d387aea475846b6106d205.png)
 
 #### 方案特点：
 
@@ -63,7 +63,7 @@ EMQ 联合万为致力于打造 AI、IoT “一体化”，EMQ 打通前端 IoT 
 
 ### 方案2：平台层统一接入集成
 
-![平台层统一接入集成](https://static.emqx.net/images/3f57c940b84fa7a78cb07125e1152503.png)
+![平台层统一接入集成](https://assets.emqx.com/images/3f57c940b84fa7a78cb07125e1152503.png)
 
 #### 方案特点：
 
@@ -79,7 +79,7 @@ EMQ 联合万为致力于打造 AI、IoT “一体化”，EMQ 打通前端 IoT 
 
 ### 方案3：边缘端统一集成
 
-![边缘端统一集成](https://static.emqx.net/images/bb4ae9ae6da2b6d508408d0fc4ea8051.png)
+![边缘端统一集成](https://assets.emqx.com/images/bb4ae9ae6da2b6d508408d0fc4ea8051.png)
 
 #### 方案特点：
 
@@ -92,3 +92,12 @@ EMQ 联合万为致力于打造 AI、IoT “一体化”，EMQ 打通前端 IoT 
 ##  总结
 
 整体实现感知 IoT 数据与视频流数据统一联网的无死角全覆盖的智能化防控体系，并提供了大数据互联、事前 AI 布控、事后识别应用等 AIoT 的融合，对于数据活化与兼容能力泛化，提供了坚实的架构体系，完美匹配 AIoT 日益增速的需求趋势。
+
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX Cloud
+        <div class="is-size-14 is-text-normal has-text-weight-normal">全托管的云原生 MQTT 消息服务</div>
+    </div>
+    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a >
+</section>

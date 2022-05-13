@@ -45,3 +45,12 @@ CONNECT 和 CONNACK 报文中新增的属性字段，主要是增强了客户端
 ### 自动分配 Client ID
 
 通过 CONNACK 报文中的 Assigned Client Identifier 属性，MQTT 5.0 还提供了一个非常便捷的功能，即允许由 Broker 统一为 Client 分配 Client ID，而不是由 Client 自行指定，毕竟提前为 Client 分配一个全局唯一的 Client ID 在某些场景下不是一件容易的事情。这个全新特性的使用也非常简单，只要 Client 在连接时提供一个零字节的 Client ID，Broker 就会在响应的 CONNACK 报文中携带 Assigned Client Identifier 属性，该属性的值就是自动分配的 Client ID。Client 可以一直持有和使用这个 Client ID，直到会话过期。
+
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX Cloud
+        <div class="is-size-14 is-text-normal has-text-weight-normal">全托管的云原生 MQTT 消息服务</div>
+    </div>
+    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a >
+</section>

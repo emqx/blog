@@ -44,7 +44,7 @@ devices/{device_id}/messages
 ## 方案介绍
 
 如下图所示，采用边缘分析/流式数据处理的方式，在边缘端我们采用了 EMQX 的方案，最后将计算结果输出到 Azure 的 IoT Hub 中。
-![emqx_azure.png](https://static.emqx.net/images/3bda2c46f1184027756cd2bb3ee7b08d.png)
+![emqx_azure.png](https://assets.emqx.com/images/3bda2c46f1184027756cd2bb3ee7b08d.png)
 
 - EMQX Edge 可以接入各种协议类型的设备，比如 MQTT、CoAP、LwM2M 等，这样用户可以不需要关心协议适配方面的问题；另外它本身也比较轻量级，适合部署在边缘设备上。
 - EMQX Kuiper 是 EMQ 发布的基于 SQL 的轻量级边缘流式数据分析引擎，安装包只有约 7MB，非常适合于运行在边缘设备端
@@ -216,7 +216,7 @@ SELECT avg(temperature) AS t_av, max(temperature) AS t_max, min(temperature) AS 
 
 如下图所示，在 Azure IoT Hub 中创建完成的相关设备。
 
-![azure_iot.jpg](https://static.emqx.net/images/1539caf0f8c94711d7b4613437d4228d.jpg)
+![azure_iot.jpg](https://assets.emqx.com/images/1539caf0f8c94711d7b4613437d4228d.jpg)
 
 
 

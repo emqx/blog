@@ -17,7 +17,7 @@ To integrate the different needs of OT and IT at the edge, **EMQ officially  lau
 
 This solution can implement the industrial protocol parsing, data aggregation and streaming analysing at the edge and store the data that is through streaming analysing in a lightweight time-series database deployed at the edge.  The applications running at the edge-end can get data from the time-series database and process it and present it to the user. The Edge Manager running at the edge-end provides a management console for easy software configuration and management.
 
-![iiot_sol_1.jpg](https://static.emqx.net/images/9ef14959f493f1988071226e28003dbc.jpg)
+![iiot_sol_1.jpg](https://assets.emqx.com/images/9ef14959f493f1988071226e28003dbc.jpg)
 
 ### Applicable scenarios
 
@@ -88,7 +88,7 @@ To make it easier for users to try, the demo scenario utilizes Docker and Docker
 
 In this sample scenario, the data is sent out via the Modbus TCP protocol to simulate temperature and humidity data, which enters the system to achieve data collection, aggregation, cleaning, storage analysis and visualization capabilities. The following is a visualization report of temperature and humidity presented in Grafana.
 
-![edge_sol.png](https://static.emqx.net/images/75ddaac7e174e12137caa4433ca7e818.png)
+![edge_sol.png](https://assets.emqx.com/images/75ddaac7e174e12137caa4433ca7e818.png)
 
 Note: The container images released by TDengine are by default for x86*64 environments, so if you want to switch to an ARM architecture, you need to manually change `docker-compose.yml` to point to the correct version.
 
@@ -98,7 +98,7 @@ Note: The container images released by TDengine are by default for x86*64 enviro
 
 This approach differs from the above in that it **introduces the concept of cloud edge collaboration,** with underlying distribution and orchestration capabilities for container-based applications on the edge similar to those provided by KubeEdge/IEF. The centralized management of instances such as Neuron, Edge and Kuiper enables **online management and updating of data collection, aggregation and analysis logic at the edge in the cloud.**  Also in the cloud, by deploying EMQX Enterprise's distributed, highly available clustering capabilities to access and analyze data from devices distributed across different edge endpoints.
 
-![iiot_sol_2.png](https://static.emqx.net/images/b2159860f854daaface005fbf339dcd7.png)
+![iiot_sol_2.png](https://assets.emqx.com/images/b2159860f854daaface005fbf339dcd7.png)
 
 ### Applicable scenarios
 
@@ -136,3 +136,11 @@ This solution will use the following products except the products which used in 
 ## Summary
 
 Based on the industrial internet infrastructure capability platform built by this solution, users can implement efficient and low-cost industrial Internet device connectivity, acquisition and analysis. Whether it is a lightweight pure edge solution or a cloud-edge collaboration solution with a more complex deployment environment, it can be realized by this solution.
+
+
+<section class="promotion">
+    <div>
+        Try EMQX Enterprise for Free
+    </div>
+    <a href="https://www.emqx.com/en/try?product=enterprise" class="button is-gradient px-5">Get Started →</a >
+</section>

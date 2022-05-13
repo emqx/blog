@@ -8,7 +8,7 @@ Mac 用户可在 App Store 中进行下载：https://apps.apple.com/cn/app/mqttx
 
 Linux 用户可在 Snapcraft 中进行下载：https://snapcraft.io/mqttx
 
-![mqttxpreview.png](https://static.emqx.net/images/26e44fe583be1d22b0fca8da42d381e0.png)
+![mqttxpreview.png](https://assets.emqx.com/images/26e44fe583be1d22b0fca8da42d381e0.png)
 
 ## 新功能概览
 
@@ -20,25 +20,25 @@ Linux 用户可在 Snapcraft 中进行下载：https://snapcraft.io/mqttx
 
   在之前版本中，对于删除不需要的连接客户端时，只能通过右上角的下拉菜单，选择删除选项才可以实现该操作，该版本中对此进行了优化，可以实现鼠标右键点击连接客户端的一栏，弹出右键菜单后点击删除即可完成该操作，提升了易用性。
 
-   ![mqttxdelete.png](https://static.emqx.net/images/247b4af27bf276c9f6a5ca5ef2ae08b0.png)
+   ![mqttxdelete.png](https://assets.emqx.com/images/247b4af27bf276c9f6a5ca5ef2ae08b0.png)
 
 - 支持对接收到的消息进行编码转化
 
   在之前版本中，MQTT X 支持在发送消息时，将 Payload 转化为 `Base64`，`Hex`, `Plaintext` 和 `JSON` 的编码格式。在该版本中对该功能进行了扩展，同时支持了对接收消息进行编码格式的转化，用户可以根据自己需求实现在发送端和接受端进行不同的消息格式编码转化。
 
-  ![mqttxencode.png](https://static.emqx.net/images/e38e5c8b3b088fe309636f89061ec592.png)
+  ![mqttxencode.png](https://assets.emqx.com/images/e38e5c8b3b088fe309636f89061ec592.png)
 
 - 支持快速选择已经创建过的 MQTT 连接配置
 
   对于每次创建新的连接客户端时，很多连接配置都会相同，因此在该版本中对其进行了优化，每当创建不同配置的连接时，都会对其进行存储。当用户下次需要创建相同配置连接时，便可以在连接名称一栏中，快速选择已经创建过的连接配置，从而达到快速创建连接的目的。
 
-  ![mqttxconfig.png](https://static.emqx.net/images/cf2a890c9b9ba3ab1af0a04da93d8543.png)
+  ![mqttxconfig.png](https://assets.emqx.com/images/cf2a890c9b9ba3ab1af0a04da93d8543.png)
 
 - 支持在 MQTT 5.0 中配置遗嘱消息的属性
 
   新版本还对 MQTT 5.0 中的一些功能特性进行了支持。创建连接时，选择 MQTT 的版本为 5.0，便可以对遗嘱消息中的 `willDelayInterval`, `payloadFormatIndicator`, `messageExpiryInterval` 和 `contentType` 属性进行配置。
 
-  ![mqttxwill5.0.png](https://static.emqx.net/images/54c5fa17474b0e3a56911dc6260b8607.png)
+  ![mqttxwill5.0.png](https://assets.emqx.com/images/54c5fa17474b0e3a56911dc6260b8607.png)
 
 
 

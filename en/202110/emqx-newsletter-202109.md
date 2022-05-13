@@ -32,3 +32,12 @@ When under high load, an “ideal robust system” should automatically start ba
 EMQX is highly extensible, as we wrote in a [blog post](https://www.emqx.com/en/blog/develop-and-deploy-emqx-plugin-for-enterprise-4-3), it is possible for plugins to be installed independently.
 
 Starting from 5.0, EMQX open source users will be able to drop-in install an extension package to upgrade to Enterprise.
+
+
+<section class="promotion">
+    <div>
+        Try EMQX Cloud for Free
+        <div class="is-size-14 is-text-normal has-text-weight-normal">No credit card required</div>
+    </div>
+    <a href="https://www.emqx.com/en/signup?continue=https://cloud-intl.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">Get Started →</a >
+</section>

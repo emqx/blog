@@ -37,3 +37,11 @@ Before Neuron v2.0 is officially commercialized, the functionality upgrade and m
 
 
 Neuron v1.x has been widely used or is being tested in different industries, including shipping, oil field, semiconductor and so on. The Neuron team is also improving Neuron v1.x based on user feedback and needs. v1.4.0 will be released soon, please stay tuned.
+
+ 
+<section class="promotion">
+    <div>
+        Try Neuron for Free
+    </div>
+    <a href="https://www.emqx.com/en/try?product=neuron" class="button is-gradient px-5">Get Started →</a >
+</section>

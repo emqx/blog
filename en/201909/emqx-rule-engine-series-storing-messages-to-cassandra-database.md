@@ -11,7 +11,7 @@ Installation Reference of Cassandra：https://cassandra.apache.org/doc/latest/ge
 ## Principle overview
 
 By configuring the rules engine, EMQX stores messages that meet certain criteria under a given topic into the Cassandra database. The message flow diagram is as follows:
-![Artboard.png](https://static.emqx.net/images/347f6b4787038e60ff443409df36b76a.png)
+![Artboard.png](https://assets.emqx.com/images/347f6b4787038e60ff443409df36b76a.png)
 
 among them:
 
@@ -117,14 +117,14 @@ CREATE TABLE emqx_rule_engine_output.use_statistics (
 
 Open the EMQX Dashboard, go to the **Resources** page of the left menu, click the **New** button, select the Cassandra resource type to create:
 
-![cassrescreate2x.jpg](https://static.emqx.net/images/4b22f6ad34e1d1fccf392bb7f5d2d64b.jpg)
+![cassrescreate2x.jpg](https://assets.emqx.com/images/4b22f6ad34e1d1fccf392bb7f5d2d64b.jpg)
 
 
 
 The network environment of the nodes in the EMQX cluster may be different. After the resources are created successfully, click the **Status button ** in the list to check the connection status of each node. If the resources on the node are unavailable, check whether the configuration is correct and the network connectivity is correct, and click the **Reconnect** button to manually reconnect.
 
 
-![cassresstatus2x.jpg](https://static.emqx.net/images/45a380b895ca101d9dd722eccba84306.jpg)
+![cassresstatus2x.jpg](https://assets.emqx.com/images/45a380b895ca101d9dd722eccba84306.jpg)
 
 
 ### Create a rule
@@ -133,7 +133,7 @@ Go to the **Rules** page on the left menu and click the **New** button to create
 
 After selecting the trigger event, we can see the optional fields and sample SQL on the interface:
 
-![rulecondition2x.jpg](https://static.emqx.net/images/a700543920da98477e073a5e05d6376c.jpg)
+![rulecondition2x.jpg](https://assets.emqx.com/images/a700543920da98477e073a5e05d6376c.jpg)
 
 #### Screen the required fields
 
@@ -201,7 +201,7 @@ The payload data is as follows, note to change the `tachometer` value to satisfy
 
 Click the **SQL Test** toggle button, change `topic` and `payload` to the information in the scenario, and click the **Test** button to view the data output:
 
-![rulesqltest2x.jpg](https://static.emqx.net/images/b635b3c57aa0a9f2528c29c3fe259fbc.jpg)
+![rulesqltest2x.jpg](https://assets.emqx.com/images/b635b3c57aa0a9f2528c29c3fe259fbc.jpg)
 
 
 
@@ -234,7 +234,7 @@ INSERT INTO use_statistics (msgid, client_id, speed, tachometer, ts) VALUES (${i
 ```
 
 
-![cassrulecreate2x.jpg](https://static.emqx.net/images/37d7961092f8690847197561d07ca8be.jpg)
+![cassrulecreate2x.jpg](https://assets.emqx.com/images/37d7961092f8690847197561d07ca8be.jpg)
 
 
 
@@ -273,14 +273,14 @@ Switch to the **Tools => Websocket** page and use any information client to conn
   ```
 
 
-![WechatIMG2206.png](https://static.emqx.net/images/f3aeefde473e6ea328bb31b313fd6b17.png)
+![WechatIMG2206.png](https://assets.emqx.com/images/f3aeefde473e6ea328bb31b313fd6b17.png)
 
 
 
 Click the **Send** button. At this time, the value of `tachometer` in the message body satisfies the condition of `tachometer > 8000` set above. The current rule has been hit and the statistic value plus one.
 
 View the data table records in the Cassandra command line to get the following data:
-![cassruleresult2x.png](https://static.emqx.net/images/9ef015e4beb934fc94ba3581b042efa1.png)
+![cassruleresult2x.png](https://assets.emqx.com/images/9ef015e4beb934fc94ba3581b042efa1.png)
 
 So far, we have implemented a business development to store messages to the Cassandra database through the rules engine.
 

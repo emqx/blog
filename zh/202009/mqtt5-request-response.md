@@ -6,7 +6,7 @@ MQTT v5 带来了很多新的特性，我们会尽量以通俗易懂的方式展
 
 如果同一个请求主题存在多个请求方，为了将响应正确地返回给请求方，需要多个不同的响应主题，最常见的办法就是在 Payload 首部或是其他位置插入客户端标识符（Client ID）等能够唯一标识该请求客户端的字段，响应方在收到请求后按照事先约定的规则提取这些字段以及真正的 Payload，并将这些字段用于构造响应主题。
 
-![image20200901155125123.png](https://static.emqx.net/images/69291346e45e2e0d3ccb0ad455d9378e.png)
+![image20200901155125123.png](https://assets.emqx.com/images/69291346e45e2e0d3ccb0ad455d9378e.png)
 
 但显然这不是一个好的实现，我们期望请求接收方只需要关注怎么处理请求即可，而不用花费额外的精力考虑怎么将响应正确返回给请求方。因此，MQTT 5.0 新增了 **响应主题（Response Topic）** 属性，并定义了以下请求响应交互过程：
 
@@ -14,13 +14,13 @@ MQTT v5 带来了很多新的特性，我们会尽量以通俗易懂的方式展
 2. 假如有其他 MQTT 客户端（响应方）订阅了与请求消息发布时使用的主题名相匹配的主题过滤器，那么将收到该请求消息。
 3. 响应方根据请求消息采取适当的操作，然后向该 **响应主题** 属性指定的主题发布响应消息。
 
-![image20200901155200573.png](https://static.emqx.net/images/2a9ac9bf360343097e9f6264bb4dd106.png)
+![image20200901155200573.png](https://assets.emqx.com/images/2a9ac9bf360343097e9f6264bb4dd106.png)
 
 #### 对比数据
 
 与 HTTP 的请求响应模式不同，MQTT 的[请求响应](https://www.emqx.com/zh/blog/mqtt5-request-response)是异步的，这带来了一个问题，即响应消息与请求消息如何关联。最常用的办法就是在请求消息中携带一个特征字段，响应方在响应时将收到的字段原封不动地返回，请求方在收到响应消息时就可以根据其中的特征字段来匹配相应的请求。很显然 MQTT 也是这么考虑的，所以为 PUBLISH 报文新增了一个 **对比数据（Correlation Data）** 属性。
 
-![image20200901154600805.png](https://static.emqx.net/images/70e08cb4bcc0343ad5cd98fb4fbebe99.png)
+![image20200901154600805.png](https://assets.emqx.com/images/70e08cb4bcc0343ad5cd98fb4fbebe99.png)
 
 #### 响应信息
 
@@ -28,7 +28,7 @@ MQTT v5 带来了很多新的特性，我们会尽量以通俗易懂的方式展
 
 为了解决此问题，MQTT 5.0 在 CONNACK 报文中定义了一个名为响应信息的属性。服务端可以使用此属性指导客户端如何选择使用的响应主题。此机制对于服务端和客户端都是可选的。连接时，客户端通过设置 CONNECT 报文中的请求响应信息属性来请求服务端发送响应信息。这会导致服务端在 CONNACK 报文中插入响应信息属性，请求方可以使用响应信息来构建响应主题。
 
-![image20200901161153410.png](https://static.emqx.net/images/59b495acf6b75924c8392035d802484e.png)
+![image20200901161153410.png](https://assets.emqx.com/images/59b495acf6b75924c8392035d802484e.png)
 
 ### 使用建议
 
@@ -40,3 +40,12 @@ MQTT v5 带来了很多新的特性，我们会尽量以通俗易懂的方式展
 - 要特别注意多个响应方订阅同一个请求主题和多个请求方订阅同一个响应主题的情况，请确保你能够正确处理这些情况。
 
 [^1]: QoS 大于 0 时，发布者保证消息投递给服务端，服务端[保留消息](https://www.emqx.com/zh/blog/message-retention-and-message-expiration-interval-of-emqx-mqtt5-broker)投递给订阅者。
+
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX Cloud
+        <div class="is-size-14 is-text-normal has-text-weight-normal">全托管的云原生 MQTT 消息服务</div>
+    </div>
+    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a >
+</section>

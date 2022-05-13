@@ -35,7 +35,7 @@
 
 ## 项目示意图
 
-![project.png](https://static.emqx.net/images/2b803a4a4a826dda66d98ba2b39bf55e.png)
+![project.png](https://assets.emqx.com/images/2b803a4a4a826dda66d98ba2b39bf55e.png)
 
 
 
@@ -43,7 +43,7 @@
 
 ### 电路连接
 
-![schematics.png](https://static.emqx.net/images/e59c152ec1c2cb71970c7e23543fc8b4.png)
+![schematics.png](https://assets.emqx.com/images/e59c152ec1c2cb71970c7e23543fc8b4.png)
 
 ### 树莓派配置
 
@@ -213,7 +213,7 @@ if __name__ == "__main__":
   $  ./bin/cli show rules
   ```
 
-![show_rules.png](https://static.emqx.net/images/fbe7bd838db53a172dd4e7e926d02874.png)
+![show_rules.png](https://assets.emqx.com/images/fbe7bd838db53a172dd4e7e926d02874.png)
 
 ### LED 灯控制
 
@@ -282,15 +282,15 @@ if __name__ == "__main__":
 
 1. `python gy30.py` 获取光照数据，并将数据上报到 smartHomeHubs/light 主题。
 
-![gy30.png](https://static.emqx.net/images/aeb2b3f64d8b4371563c139c85de2f48.png)
+![gy30.png](https://assets.emqx.com/images/aeb2b3f64d8b4371563c139c85de2f48.png)
 
 2. `python led.py` 订阅 **smartHomeHubs/led** 主题，监听 LED 控制信息。
 
-![led.png](https://static.emqx.net/images/3ea950ce6411efadbc5faf3305f30fb3.png)
+![led.png](https://assets.emqx.com/images/3ea950ce6411efadbc5faf3305f30fb3.png)
 
 3. 当我们手动降低或升高光照时，可以看到 LED 灯同时也开启和关闭。
 
-![auth_control_led.png](https://static.emqx.net/images/725aa74e8dcc2d56af2648882c2afb0e.png)
+![auth_control_led.png](https://assets.emqx.com/images/725aa74e8dcc2d56af2648882c2afb0e.png)
 
 
 
@@ -301,3 +301,12 @@ if __name__ == "__main__":
 我们使用 Raspberry Pi 为网关提供丰富的外部通信接口，使用 EMQX Edge 为网关提供设备之间的通信功能，使用 EMQX Kuiper 为网关提供设备数据处理以及分析功能。
 
 之后，我们使用光照传感器获取光照强度，通过光照强度来控制 LED 的开和关。在整个过程中所有数据都在本地处理和分析，降低了家庭私密数据泄漏的风险。
+
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX Cloud
+        <div class="is-size-14 is-text-normal has-text-weight-normal">全托管的云原生 MQTT 消息服务</div>
+    </div>
+    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a >
+</section>

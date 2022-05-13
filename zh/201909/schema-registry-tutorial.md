@@ -5,7 +5,7 @@
 ## 数据格式
 
 下图展示了 Schema Registry 的一个应用案例。多个设备上报不同格式的数据，经过 Schema Registry 解码之后，变为统一的内部格式，然后转发给后台应用。
-![1.png](https://static.emqx.net/images/1a11b01e24279067b4f17a2afe1898e1.png)
+![1.png](https://assets.emqx.com/images/1a11b01e24279067b4f17a2afe1898e1.png)
 
 [图1: 使用 Schema Registry 对设备数据进行编解码]
 
@@ -19,7 +19,7 @@ Schema Registry 为 Avro 和 Protobuf 等内置编码格式维护 Schema 文本�
 
 Schema Registry 既可以解码，也可以编码。编码和解码时需要指定 Schema ID。
 
-![2.png](https://static.emqx.net/images/95348543ba0a142d045f1c4427961aa2.png)
+![2.png](https://assets.emqx.com/images/95348543ba0a142d045f1c4427961aa2.png)
 
 [图2: Schema Registry 架构示意图]
 
@@ -45,7 +45,7 @@ EMQX 的消息处理层面可分为消息路由(Messaging)、规则引擎(Rule E
 
 EMQX 的 PUB/SUB 系统将消息路由到指定的主题。规则引擎可以灵活地配置数据的业务规则，按规则匹配消息，然后指定相应动作。数据格式转换发生在规则匹配的过程之前，先将数据转换为可参与规则匹配的 Map 格式，然后进行匹配。
 
-![3.png](https://static.emqx.net/images/984e2382dc2382604afb9afb76c82345.png)
+![3.png](https://assets.emqx.com/images/984e2382dc2382604afb9afb76c82345.png)
 
 [图3: Messaging, Rule Engine and Schema Registry]
 

@@ -24,13 +24,13 @@ QoS 2 设计了重发和重复消息发现机制，保证消息到达对方并�
 
 当 QoS 为 0 时，消息的分发依赖于底层网络的能力。发布者只会发布一次消息，接收者不会应答消息，发布者也不会储存和重发消息。消息在这个等级下具有最高的传输效率，但可能送达一次也可能根本没送达。 
 
-![MQTT_1.png](https://static.emqx.net/images/b6e2c8b638f4f1b6f3388de0901c24e0.png)
+![MQTT_1.png](https://assets.emqx.com/images/b6e2c8b638f4f1b6f3388de0901c24e0.png)
 
 #### Qos 1 - 至少分发一次
 
 当 QoS 为 1 时，可以保证消息至少送达一次。MQTT 通过简单的 ACK 机制来保证 QoS 1。发布者会发布消息，并等待接收者的 PUBACK 报文的应答，如果在规定的时间内没有收到 PUBACK 的应答，发布者会将消息的 DUP 置为 1 并重发消息。接收者接收到 QoS 为 1 的消息时应该回应 PUBACK 报文，接收者可能会多次接受同一个消息，无论 DUP 标志如何，接收者都会将收到的消息当作一个新的消息并发送 PUBACK 报文应答。
 
-![MQTT_2.png](https://static.emqx.net/images/a54f70242a83f7d39b51800008a724dd.png)
+![MQTT_2.png](https://assets.emqx.com/images/a54f70242a83f7d39b51800008a724dd.png)
 
 #### QoS 2 - 只分发一次
 
@@ -42,7 +42,7 @@ QoS 2 设计了重发和重复消息发现机制，保证消息到达对方并�
 
 无论在传输过程中何时出现丢包，发送端都负责重发上一条消息。不管发送端是 Publisher 还是 Broker，都是如此。因此，接收端也需要对每一条命令消息都进行应答。
 
-![MQTT_3.png](https://static.emqx.net/images/6656481cb11432b89be67f4e937f39cf.png)
+![MQTT_3.png](https://assets.emqx.com/images/6656481cb11432b89be67f4e937f39cf.png)
 
 
 
@@ -89,3 +89,13 @@ QoS 级别越高，流程越复杂，系统资源消耗越大。应用程序可�
 
 - 不能忍受消息丢失（消息的丢失会造成生命或财产的损失），且不希望收到重复的消息。
 - 数据完整性与及时性要求较高的银行、消防、航空等行业。
+
+
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX Cloud
+        <div class="is-size-14 is-text-normal has-text-weight-normal">全托管的云原生 MQTT 消息服务</div>
+    </div>
+    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a >
+</section>

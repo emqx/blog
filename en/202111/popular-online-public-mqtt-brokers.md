@@ -70,7 +70,7 @@ In this part, We used the [MQTT client tool - MQTT X](https://mqttx.app/) for th
 | Mosquitto | `test.mosquitto.org`      | 1883 | YES       |
 | HiveMQ    | `broker.hivemq.com`       | 1883 | YES       |
 
-![MQTT X](https://static.emqx.net/images/85637f1261315f2f218aadd671c8666e.png)
+![MQTT X](https://assets.emqx.com/images/85637f1261315f2f218aadd671c8666e.png)
 
 ### Test Data
 
@@ -78,7 +78,7 @@ MQTT X has the function of connection, import and export. The following is the c
 
 - [MQTTX-backup-free-public-mqtt-broker.json](https://github.com/wivwiv/mqtt-explore/blob/master/MQTTX-backup-free-public-mqtt-broker.json)
 
-![MQTT X Data recovery](https://static.emqx.net/images/9c4fdada948c4cd3cab3dd1335bc217d.png)
+![MQTT X Data recovery](https://assets.emqx.com/images/9c4fdada948c4cd3cab3dd1335bc217d.png)
 
 ## International network delay test
 
@@ -149,7 +149,7 @@ With the help of the open-source MQTT performance test tool [emqtt-bench](https:
 
 **For practicality considerations**, this test is not to explore the upper rate limit of each access point, but to consider that each access point can meet the conventional use intensity. The scenario designed in this round is that a single client’s Sub/Pub message is 1000 msg/s for 1 minute, and the message size is 256 Bytes. Then, we record whether each access point meets the standard and whether the speed is limited. The following figure shows the test architecture:
 
-![test architecture](https://static.emqx.net/images/0030af57d2d50b9a87ecf27a72ddfe5c.png)
+![test architecture](https://assets.emqx.com/images/0030af57d2d50b9a87ecf27a72ddfe5c.png)
 
 After emqtt-bench is ready, each of the following Sub/Pub commands is executed in a different window:
 
@@ -204,7 +204,7 @@ Test step: The client connects to the public server and publishes a time-stamped
 
 The test model is as follows:
 
-![mqtt broker test model](https://static.emqx.net/images/4fea7f9e1f965c546b3027d98f167394.png)
+![mqtt broker test model](https://assets.emqx.com/images/4fea7f9e1f965c546b3027d98f167394.png)
 
 Test code: [free-online-public-broker-test.js](https://github.com/wivwiv/mqtt-explore/blob/master/free-online-public-broker-test.js)
 
@@ -212,7 +212,7 @@ Test code: [free-online-public-broker-test.js](https://github.com/wivwiv/mqtt-ex
 
 Count the client message delay and remove data with large errors (>5000ms):
 
-![MQTT broker Time delay history](https://static.emqx.net/images/73dd2167a1b6a8bd67b2b6e17f7a0817.png)
+![MQTT broker Time delay history](https://assets.emqx.com/images/73dd2167a1b6a8bd67b2b6e17f7a0817.png)
 
 ### Average delay
 

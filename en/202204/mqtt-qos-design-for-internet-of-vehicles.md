@@ -14,19 +14,19 @@ The MQTT has three QoS levels:
 
   A message is delivered at most once and will be lost if the client is unavailable at the time. Once Sender (either Publisher or Broker) sends a message, it no longer cares if it is sent to the other party, nor does it set up any re-transmission mechanism.
 
-  ![MQTT QoS 0](https://static.emqx.net/images/fb046bde08b7cd1e653d3eaacde480fc.png)
+  ![MQTT QoS 0](https://assets.emqx.com/images/fb046bde08b7cd1e653d3eaacde480fc.png)
 
 - **QoS 1**
 
   The message is delivered at least once. A simple re-transmission mechanism is included: Sender waits for the receiver's ACK after sending the message, which can be re-transmitted if the ACK is not received. This mode guarantees that the message will arrive at least once, but it does not guarantee that the message will be repeated or not.
 
-  ![MQTT QoS 1](https://static.emqx.net/images/8a707edb6b019f4c62e5e25fa3345030.png)
+  ![MQTT QoS 1](https://assets.emqx.com/images/8a707edb6b019f4c62e5e25fa3345030.png)
 
 - **QoS 2**
 
   The message is delivered only once. The mechanism of re-transmission and repeated message discovery mechanism is designed to ensure that the message reaches the subscriber and only once.
 
-  ![MQTT QoS 2](https://static.emqx.net/images/752c86832c5328c428120a81596ee388.png)
+  ![MQTT QoS 2](https://assets.emqx.com/images/752c86832c5328c428120a81596ee388.png)
 
 ## QoS Design Message in IoV Scenarios
 

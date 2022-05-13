@@ -360,22 +360,22 @@ The following command generates the `sub`, `pub` binary file  in the `mqtt-examp
 cargo build
 ```
 
-![rustmqttbin.png](https://static.emqx.net/images/7e95c531f0a3534bb48dcb9f17b778c6.png)
+![rustmqttbin.png](https://assets.emqx.com/images/7e95c531f0a3534bb48dcb9f17b778c6.png)
 
 ### Message subscription
 
 Execute the `sub` binary file and wait for the message to be published.
 
-![rustmqttsub1.png](https://static.emqx.net/images/bb040cf5a869a301023e7167895b4d4a.png)
+![rustmqttsub1.png](https://assets.emqx.com/images/bb040cf5a869a301023e7167895b4d4a.png)
 
 ### Message publishing
 
 Executing the `pub` binary file, you can see that messages have been published to the topics `rust/test` and `rust/mqtt`, respectively.
 
-![rustmqttpub.png](https://static.emqx.net/images/28949361d916b71fb10f083852a9bbe1.png)
+![rustmqttpub.png](https://assets.emqx.com/images/28949361d916b71fb10f083852a9bbe1.png)
 Meanwhile, the published messages are also visible in the message subscription.
 
-![rustmqttsub2.png](https://static.emqx.net/images/e71402d26419eff673247c1c7db81e9b.png)
+![rustmqttsub2.png](https://assets.emqx.com/images/e71402d26419eff673247c1c7db81e9b.png)
 
 So far, we have completed using the **paho-mqtt** client to connect to the [public MQTT broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker), and implemented connection, message publishing and subscription between the test client and  MQTT broker.
 

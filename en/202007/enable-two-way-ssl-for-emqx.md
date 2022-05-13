@@ -18,7 +18,7 @@ The process of communication in the TLS/SSL protocol consists of two parts. The 
 
 The following picture describes the process of the TLS/SSL handshake protocol. From "hello" of the client until "finished" of the broker. If you are interested in this, you can view more detailed material. Even if you do not know this process, you can also enable this function in [EMQX](https://www.emqx.com/en/products/emqx).
 
-![what-is-ssl](https://static.emqx.net/images/29b8bd83af006c104add0635a11682bb.gif)
+![what-is-ssl](https://assets.emqx.com/images/29b8bd83af006c104add0635a11682bb.gif)
 
 
 
@@ -173,13 +173,13 @@ After finished configuring and restarted EMQX, we use [MQTT client tool - MQTT X
 
 - Refer to the following picture to create `MQTT client` in the MQTT X (`127.0.0.1` in the Host input box need to be replaced by the real IP of EMQX broker)
 
-![mqttxconfig.png](https://static.emqx.net/images/fc0bf47beab8f1b6b9e7d992c260e188.png)
+![mqttxconfig.png](https://assets.emqx.com/images/fc0bf47beab8f1b6b9e7d992c260e188.png)
 
 At this time, you need to select `Self signed` in the column `Certificate` and carry the file `ca.pem` generated in the self-signed certificate and the client certificate `client.pem` and the client key `client.key` file.
 
 - Click the button `Connect`, after the connection succeeds, if you can normally perform MQTT publish/subscribe operation, the configuration of SSL two-way connection authentication succeeds.
 
-![mqttxconnected.png](https://static.emqx.net/images/d453f16b1beb945af6d8dc99840e364d.png)
+![mqttxconnected.png](https://assets.emqx.com/images/d453f16b1beb945af6d8dc99840e364d.png)
 
 
 
@@ -189,4 +189,12 @@ Finally, open the Dashboard of EMQX. On the Listeners page, you can see that the
 
 So far, we successfully finished the SSL/TLS configuration of the EMQX Broker and the test of a two-way authentication connection.
 
-![emqxdashboard.png](https://static.emqx.net/images/ca678e3f6fb0b23b46818a022f71de1f.png)
+![emqxdashboard.png](https://assets.emqx.com/images/ca678e3f6fb0b23b46818a022f71de1f.png)
+
+<section class="promotion">
+    <div>
+        Try EMQX Cloud for Free
+        <div class="is-size-14 is-text-normal has-text-weight-normal">A fully managed, cloud-native MQTT service</div>
+    </div>
+    <a href="https://www.emqx.com/en/signup?continue=https://cloud-intl.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">Get Started →</a >
+</section>

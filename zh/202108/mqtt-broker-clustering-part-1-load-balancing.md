@@ -32,7 +32,7 @@ MQTT 协议听起来似乎离我们很遥远，其实它早已渗透到了我们
 
 ## MQTT 负载均衡
 
-![MQTT 负载均衡](https://static.emqx.net/images/017284bd21723e22993d75f2305jjsjajs.png)
+![MQTT 负载均衡](https://assets.emqx.com/images/017284bd21723e22993d75f2305jjsjajs.png)
 
 <p align="center">MQTT 负载均衡</p>
 
@@ -65,3 +65,12 @@ Nginx Plus 是在 Nginx（一个开源的 Web 服务器，适用于高流量网�
 
 - [MQTT Broker 集群详解（二）：粘性会话负载均衡](https://www.emqx.com/zh/blog/mqtt-broker-clustering-part-2-sticky-session-load-balancing)
 - [MQTT Broker 集群详解（三）：有关 EMQX 水平可扩展性的挑战与对策](https://www.emqx.com/zh/blog/mqtt-broker-clustering-part-3-challenges-and-solutions-of-emqx-horizontal-scalability)
+
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX Cloud
+        <div class="is-size-14 is-text-normal has-text-weight-normal">全托管的云原生 MQTT 消息服务</div>
+    </div>
+    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a >
+</section>

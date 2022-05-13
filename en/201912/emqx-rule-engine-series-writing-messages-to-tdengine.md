@@ -18,7 +18,7 @@ Smart door locks have become the focus of smart home products. In order to ensur
 
 The issued instructions and reported data from smart door lock are transmitted via EMQX through the MQTT protocol. Users can optionally use the rule engine to filter or set the consumer client for processing on EMQX, and  write the data satisfying the conditions into TDEngine data platform. The whole data flow process is as follows:
 
-![1.png](https://static.emqx.net/images/4c14b86b4b8b14b1c23eebcc9a136118.png)
+![1.png](https://assets.emqx.com/images/4c14b86b4b8b14b1c23eebcc9a136118.png)
 
 
 
@@ -123,7 +123,7 @@ In EMQX Dashboard, click the main menu of **Rules**  , and create a new WebHook 
 See the RESTful Connector tutorial for details:[TDEngine RESTful Connector](https://www.taosdata.com/cn/documentation/connector/#RESTful-Connector)
 
 
-![2.png](https://static.emqx.net/images/2174df7b9c7e132649c6be3c347ab421.png)
+![2.png](https://assets.emqx.com/images/2174df7b9c7e132649c6be3c347ab421.png)
 
 Click **Test Connection**. After the test passes, click the **OK**  button to complete the creation.
 
@@ -153,7 +153,7 @@ WHERE
 
 
 
-![3.png](https://static.emqx.net/images/852c8f21042ef89d377697777097366b.png)
+![3.png](https://assets.emqx.com/images/852c8f21042ef89d377697777097366b.png)
 
 
 Using the SQL test function, input the raw reported data and related variables, and get the following output results:
@@ -336,11 +336,11 @@ With the built-in MQTT client (WebSocket) of EMQX Dashboard, it can quickly simu
 
 
 
-![4.jpg](https://static.emqx.net/images/d8301c71bf8ad2138189fc6c76f4b4c5.jpg)
+![4.jpg](https://assets.emqx.com/images/d8301c71bf8ad2138189fc6c76f4b4c5.jpg)
 
 After Published multiple times,  click the  **Monitor** icon in the **Rules Engine** list to quickly view the execution data of current rule . As can be seen from the figure below, 4 messages are hit by 3 times and succeeded for 3 times:
 
-![5.png](https://static.emqx.net/images/a89a298132167ed1a519005ea173ded1.png)
+![5.png](https://assets.emqx.com/images/a89a298132167ed1a519005ea173ded1.png)
 
 View the data in `db.v_51dc0c50f55d11e9a4fec59e26b058d5` in the TDEngine dashboard, and there are three pieces of data:
 

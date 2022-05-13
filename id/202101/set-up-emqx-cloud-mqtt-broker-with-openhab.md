@@ -42,23 +42,23 @@ Jika ini adalah pengalaman pertama Anda menggunakan EMQX Cloud, jangan khawatir.
 
 6. Klik `Settings` dan unduh MQTT binding:
 
-    ![openHAB MQTT binding.png](https://static.emqx.net/images/cc395740e3aaa6c3b7f6599f38543c16.png)
+    ![openHAB MQTT binding.png](https://assets.emqx.com/images/cc395740e3aaa6c3b7f6599f38543c16.png)
 
 
 7. Tambahkan MQTT ke  `Things`.
 
-    ![add mqtt to openHAB things](https://static.emqx.net/images/b6f79d674a5fb01e49e4a391d751b2d1.png)
+    ![add mqtt to openHAB things](https://assets.emqx.com/images/b6f79d674a5fb01e49e4a391d751b2d1.png)
 
 8. Pilih`MQTT Broker` dan masukkan informasi deployment yang kita buat sebelumnya.
 
-9. ![select mqtt broker](https://static.emqx.net/images/1589a0bec044b3ce55522c81a47a8f85.png)
+9. ![select mqtt broker](https://assets.emqx.com/images/1589a0bec044b3ce55522c81a47a8f85.png)
 
-   Untuk username dan password, masukkan informasi sesuai dengan yang kita buat sebelumnya.![mqtt broker info](https://static.emqx.net/images/30bc01230493f1da0cb7c39818905a9c.png)
+   Untuk username dan password, masukkan informasi sesuai dengan yang kita buat sebelumnya.![mqtt broker info](https://assets.emqx.com/images/30bc01230493f1da0cb7c39818905a9c.png)
 
 10. Ketika terdapat label berwarna hijau yang menampilkan kata **ONLINE,** artinya Anda telah berhasil mengkoneksikan openHAB dengan EMQX Cloud. Selamat!
 
-![mqtt broker inline](https://static.emqx.net/images/a29093ef1b02ff829a64a6785c57c9b6.png)
+![mqtt broker inline](https://assets.emqx.com/images/a29093ef1b02ff829a64a6785c57c9b6.png)
 
    Anda juga dapat mengecek statusnya dari halaman monitor EMQX Cloud.
 
-![EMQX Cloud's monitor page](https://static.emqx.net/images/8077ce96ef86b572fb6c15b1b8343cd0.png)
+![EMQX Cloud's monitor page](https://assets.emqx.com/images/8077ce96ef86b572fb6c15b1b8343cd0.png)

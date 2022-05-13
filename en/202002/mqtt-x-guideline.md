@@ -32,11 +32,11 @@ docker run -d --name emqx -p 1883:1883 -p 8083:8083 -p 8883:8883 -p 8084:8084 -p
 
 After MQTT Broker is ready, enter the main program page and click the "+"  in the menu bar on the left. If there is no data on the page, you can also click the `New Connection` button on the right to quickly configure a new client connection.
 
-![mqttxcreate.png](https://static.emqx.net/images/c0bee729cd26e338535ae234d7212384.png)
+![mqttxcreate.png](https://assets.emqx.com/images/c0bee729cd26e338535ae234d7212384.png)
 
 After entering the  `New Connection`  page, you need to configure or fill in the relevant information relevant to the client connection. The reader can configure all settings that define the Broker connection here, such as `Broker Host`,` Broker Port`, `Client ID`,` Username`, `Password`,` Clean Session`, .etc.
 
-![2.png](https://static.emqx.net/images/cd943b647eb222d35c5dd1acdd7df9df.png)
+![2.png](https://assets.emqx.com/images/cd943b647eb222d35c5dd1acdd7df9df.png)
 
 1. Broker information
 
@@ -52,7 +52,7 @@ After entering the  `New Connection`  page, you need to configure or fill in the
 
    If you select `Self signed`, you can configure the certificate. Click the folder button on the far right and select the certificates that has been generated. For one-way connection,you  just need to select your ` CA File`. For two-way authentication, you also need to choose to configure `Client Certificate File`  and ` Client key file`.
 
-![3.png](https://static.emqx.net/images/48fbcdc6d3f29704ac1b7fa6154a4fe4.png)
+![3.png](https://assets.emqx.com/images/48fbcdc6d3f29704ac1b7fa6154a4fe4.png)
 
 4. Advanced configuration
 
@@ -74,7 +74,7 @@ After the connection is successfully created, you can enter the main interface o
 
 After the connection is established, you can simply enter `Topic` and` Payload` in the input boxes at the bottom of the connection main page, and then click the button in the lower right corner to send a test message. macOS users can use the `command + enter`  shortcut to quickly send messages, and other users can use the`control + enter`  shortcut for that.
 
-![fabu.png](https://static.emqx.net/images/59dffcc0988d9815714359a83333b873.png)
+![fabu.png](https://assets.emqx.com/images/59dffcc0988d9815714359a83333b873.png)
 
 ## Subscribe
 
@@ -86,9 +86,9 @@ When hovering over a card in the `Topic` list, click the red button in the upper
 
 Let's create a new test connection for the message publishing test. Fill in the `Topic` information you just subscribed to in the lower right corner of the page, input the content of the Payload, and click the send button on the far right to send a message to the connected client that subscribed to the  `Topic` .
 
-![一条消息1.png](https://static.emqx.net/images/9c4de8dc1c3e978c5e6b2befe9f4011a.png)
+![一条消息1.png](https://assets.emqx.com/images/9c4de8dc1c3e978c5e6b2befe9f4011a.png)
 
-![一条消息2.png](https://static.emqx.net/images/c157de49efe9bf8714dc7c0d7bc3b8d4.png)
+![一条消息2.png](https://assets.emqx.com/images/c157de49efe9bf8714dc7c0d7bc3b8d4.png)
 
 If the sending client also subscribes to the same `topic`, the client will immediately receive the message after sending successfully. Note that in the message box, the right column is the sent message, and the left column is the received message.
 
@@ -101,7 +101,7 @@ If the sending client also subscribes to the same `topic`, the client will immed
 
 2. Drop-down menu on the message page
 
-![xlcd.png](https://static.emqx.net/images/08707251ab7113cfd713ba8972cf9d60.png)
+![xlcd.png](https://assets.emqx.com/images/08707251ab7113cfd713ba8972cf9d60.png)
 
    Through the button of `All`,` Received`, `Published` in the upper right corner of the message bar, it can filter out all messages, received messages, and published messages.
 
@@ -115,7 +115,7 @@ If the sending client also subscribes to the same `topic`, the client will immed
 
    Click the `i` button on the left bottom to display the ` About` page to learn about the version of **MQTT X**  and related information of [EMQX](https://www.emqx.com/en) . Click `Check for Updates` to check if there are newer versions.
 
-![mqttxupdate.png](https://static.emqx.net/images/889ae0041b88ba2ac8f6fefc44a92fde.png)
+![mqttxupdate.png](https://assets.emqx.com/images/889ae0041b88ba2ac8f6fefc44a92fde.png)
 
 
 

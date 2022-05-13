@@ -12,7 +12,7 @@ Cassandra 的安装参考：https://cassandra.apache.org/doc/latest/getting_star
 
 通过配置规则引擎，EMQX 可将指定主题下满足某条件的消息存储到 Cassandra 数据库。其消息流向简图如下：
 
-![Artboard.png](https://static.emqx.net/images/f5edf360ac6d5bab6e364450d10a17c7.png)
+![Artboard.png](https://assets.emqx.com/images/f5edf360ac6d5bab6e364450d10a17c7.png)
 
 其中：
 
@@ -118,13 +118,13 @@ CREATE TABLE emqx_rule_engine_output.use_statistics (
 
 打开 EMQX Dashboard，进入左侧菜单的 **资源** 页面，点击 **新建** 按钮，选择 Cassandra 资源类型进行创建：
 
-![cassrescreate2x.png](https://static.emqx.net/images/7524eb9b668bd10c30d5d24ef773eb5a.png)
+![cassrescreate2x.png](https://assets.emqx.com/images/7524eb9b668bd10c30d5d24ef773eb5a.png)
 
 
 
 EMQX 集群中节点所在网络环境可能互不相同，资源创建成功后点击列表中 **状态按钮**，查看各个节点资源连接状况，如果节点上资源不可用，请检查配置是否正确、网络连通性，并点击 **重连** 按钮手动重连。
 
-![cassresstatus2x.png](https://static.emqx.net/images/9f56ce737134bd652d2dd93051f0796d.png)
+![cassresstatus2x.png](https://assets.emqx.com/images/9f56ce737134bd652d2dd93051f0796d.png)
 
 
 ### 创建规则
@@ -133,7 +133,7 @@ EMQX 集群中节点所在网络环境可能互不相同，资源创建成功后
 
 选定触发事件后，我们可在界面上看到可选字段及示例 SQL：
 
-![rulecondition2x.png](https://static.emqx.net/images/df2e101f3cf1524519745f01652dc099.png)
+![rulecondition2x.png](https://assets.emqx.com/images/df2e101f3cf1524519745f01652dc099.png)
 
 
 
@@ -203,7 +203,7 @@ payload 数据如下，注意更改 `tachometer` 数值大小，以满足 SQL �
 
 点击 **SQL 测试** 切换按钮，更改 `topic` 与 `payload` 为场景中的信息，点击 **测试** 按钮查看数据输出：
 
-![rulesqltest2x.png](https://static.emqx.net/images/eea3ebd809866d6ad84c8ab53da01e29.png)
+![rulesqltest2x.png](https://assets.emqx.com/images/eea3ebd809866d6ad84c8ab53da01e29.png)
 
 
 
@@ -236,7 +236,7 @@ INSERT INTO use_statistics (msgid, client_id, speed, tachometer, ts) VALUES (${i
 ```
 
 
-![cassrulecreate2x.png](https://static.emqx.net/images/d1745cdd45ee2cb9d30e79ed671995a2.png)
+![cassrulecreate2x.png](https://assets.emqx.com/images/d1745cdd45ee2cb9d30e79ed671995a2.png)
 
 
 
@@ -276,14 +276,14 @@ INSERT INTO use_statistics (msgid, client_id, speed, tachometer, ts) VALUES (${i
 
 
 
-![websocket2x.png](https://static.emqx.net/images/da3340a1ee6f88b0ada1560fd4ed8f53.png)
+![websocket2x.png](https://assets.emqx.com/images/da3340a1ee6f88b0ada1560fd4ed8f53.png)
 
 
 
 点击 **发送** 按钮，此时消息体中的 `tachometer` 数值，满足上面设置的 `tachometer > 8000` 的条件，当前规则已命中统计值为加 1。
 
 Cassandra 命令行中查看数据表记录得到数据如下：
-![cassruleresult2x.png](https://static.emqx.net/images/2e1437c76b8f8151167b530d740fb8c3.png)
+![cassruleresult2x.png](https://assets.emqx.com/images/2e1437c76b8f8151167b530d740fb8c3.png)
 
 至此，我们通过规则引擎实现了使用规则引擎存储消息到 Cassandra 数据库的业务开发。
 

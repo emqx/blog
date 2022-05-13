@@ -128,7 +128,7 @@ statsd.interval = 15000
 
 > Prometheus 仅提供简单图表数据展示，如需更精美的可视化展示请结合 Grafana 使用。
 
-![image20191205152623657.png](https://static.emqx.net/images/d4e02e402f1f4987098ed711c443bd7b.png)
+![image20191205152623657.png](https://assets.emqx.com/images/d4e02e402f1f4987098ed711c443bd7b.png)
 
 
 
@@ -156,7 +156,7 @@ docker run -d --name=grafana -p 3000:3000 grafana/grafana
 
 在 Grafana 中添加数据源，选择 Prometheus 并填写正确的地址完成数据源添加。
 
-![image20200507160650116.png](https://static.emqx.net/images/6bde180d16cd79922bd7a726afce5b47.png)
+![image20200507160650116.png](https://assets.emqx.com/images/6bde180d16cd79922bd7a726afce5b47.png)
 
 
 
@@ -168,7 +168,7 @@ docker run -d --name=grafana -p 3000:3000 grafana/grafana
 
 点击 Upload.json file 按钮，导入后选择对应的文件夹与数据源即可。
 
-![image20200507161318909.png](https://static.emqx.net/images/632ebb891bd5be0bae5e5c1939d2bbd6.png)
+![image20200507161318909.png](https://assets.emqx.com/images/632ebb891bd5be0bae5e5c1939d2bbd6.png)
 
 
 
@@ -184,12 +184,12 @@ docker run -d --name=grafana -p 3000:3000 grafana/grafana
 
 
 
-![image20200507161914310.png](https://static.emqx.net/images/dd7babe4c66f789c8d05b553b41d9168.png)
+![image20200507161914310.png](https://assets.emqx.com/images/dd7babe4c66f789c8d05b553b41d9168.png)
 
-![image20200507161948328.png](https://static.emqx.net/images/18917f9ea67938d2cb00352275b926f3.png)
+![image20200507161948328.png](https://assets.emqx.com/images/18917f9ea67938d2cb00352275b926f3.png)
 
 
-![image20200507162019439.png](https://static.emqx.net/images/31cc134182b8b307791a9583a2bdbb9f.png)
+![image20200507162019439.png](https://assets.emqx.com/images/31cc134182b8b307791a9583a2bdbb9f.png)
 
 ## 告警管理
 
@@ -486,3 +486,12 @@ emqx_session_discarded 0
 # TYPE emqx_session_terminated counter
 emqx_session_terminated 0
 ```
+
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX Cloud
+        <div class="is-size-14 is-text-normal has-text-weight-normal">全托管的云原生 MQTT 消息服务</div>
+    </div>
+    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a >
+</section>

@@ -3,7 +3,7 @@
 [InfluxDB](https://www.influxdata.com/) 是一个用于存储和分析时间序列数据的开源数据库，内置 HTTP API，类 SQL 语句的支持和无结构的特性对使用者而言都非常友好。它强大的数据吞吐能力以及稳定的性能表现使其非常适合 IoT 领域。
 
 通过 EMQX 消息引擎，我们可以自定义 Template 文件，然后将 Json 格式的 MQTT 消息转换为 Measurement 写入 InfluxDB：
-![Artboard.jpg](https://static.emqx.net/images/781e57b8706495ae9cfb144b12ccf0c4.jpg)
+![Artboard.jpg](https://assets.emqx.com/images/781e57b8706495ae9cfb144b12ccf0c4.jpg)
 
 ## 场景介绍
 
@@ -52,7 +52,7 @@ $ docker run --name=influxdb --rm -d -p 8086:8086 -p 8089:8089/udp -v ${PWD}/fil
 
 打开 EMQX Dashboard，进入左侧菜单的 **资源** 页面，点击 **新建** 按钮，选择 InfluxDB 资源类型并完成相关配置进行资源创建。
 
-![image20190719110910530.png](https://static.emqx.net/images/e377272c97ccaa4eb673e2af15e22d78.png)
+![image20190719110910530.png](https://assets.emqx.com/images/e377272c97ccaa4eb673e2af15e22d78.png)
 
 
 
@@ -62,7 +62,7 @@ $ docker run --name=influxdb --rm -d -p 8086:8086 -p 8089:8089/udp -v ${PWD}/fil
 
 选定触发事件后，我们可在界面上看到可选字段及示例 SQL：
 
-![image20190719112141128.png](https://static.emqx.net/images/0f7df5a54f07b24fc2cf73f895d11e7f.png)
+![image20190719112141128.png](https://assets.emqx.com/images/0f7df5a54f07b24fc2cf73f895d11e7f.png)
 
 
 
@@ -88,7 +88,7 @@ WHERE
 
 借助 SQL 测试功能，我们可以快速确认刚刚填写的 SQL 语句是否能达到我们的目的。首先填写用于测试的 payload 等数据如下：
 
-![image20190719113731130.png](https://static.emqx.net/images/522c9d849bea4eb8335dbdd9951bada0.png)
+![image20190719113731130.png](https://assets.emqx.com/images/522c9d849bea4eb8335dbdd9951bada0.png)
 
 然后点击 **测试** 按钮，得到以下输出结果，与预期相符。
 
@@ -109,7 +109,7 @@ SQL 条件输入输出无误后，我们继续添加响应动作，配置写入 
 
 点击响应动作中的 **添加** 按钮，选择动作 **保存数据到 InfluxDB**，选取刚刚创建的 `InfluxDB` 资源，再按照实际需求将 `${fieldName}` 填写到 `Field Keys`, `Tag Keys` 和 `Timestamp Key` 中，`Measurement` 表示将数据写入 `InfluxDB` 时使用的 `Measurement`，最后点击 **新建** 按钮完成规则创建。
 
-![image20190719115340429.png](https://static.emqx.net/images/0b5f6518dacde423e625b40a71179886.png)
+![image20190719115340429.png](https://assets.emqx.com/images/0b5f6518dacde423e625b40a71179886.png)
 
 
 
@@ -143,7 +143,7 @@ SQL 条件输入输出无误后，我们继续添加响应动作，配置写入 
   }
   ```
 
-![image20190719133414535.png](https://static.emqx.net/images/8942e14397092ed1390362ae4e4c22d6.png)
+![image20190719133414535.png](https://assets.emqx.com/images/8942e14397092ed1390362ae4e4c22d6.png)
 
 点击 **发送** 按钮，发送成功后可以看到当前规则已命中次数已经变为 1。
 

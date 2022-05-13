@@ -8,7 +8,7 @@ Mac 用户可在 App Store 中进行下载：[https://apps.apple.com/cn/app/mqtt
 
 Linux 用户可在 Snapcraft 中进行下载：[https://snapcraft.io/mqttx](https://snapcraft.io/mqttx)
 
-![mqttxpreview.png](https://static.emqx.net/images/fdeeaa3093e114157fdbf46fd18bcd32.png)
+![mqttxpreview.png](https://assets.emqx.com/images/fdeeaa3093e114157fdbf46fd18bcd32.png)
 
 ## 新功能概览
 

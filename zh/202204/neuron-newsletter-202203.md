@@ -20,3 +20,11 @@
 - 升级 IEC104 第三方库，解决因连不上 IEC104 设备导致的程序异常退出。
 - IEC104 修改为总召唤的方式读取数据点位，适配了三峡客户设备。
 - 修正页面修改 Object 属性失败的问题。
+
+
+<section class="promotion">
+    <div>
+        免费试用 Neuron
+    </div>
+    <a href="https://www.emqx.com/zh/try?product=neuron" class="button is-gradient px-5">开始试用 →</a >
+</section>

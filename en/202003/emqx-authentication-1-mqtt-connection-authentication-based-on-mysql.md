@@ -17,7 +17,7 @@ MQTT Safety specifications are fully supported by EMQ, and the built-in safety f
 
 emqx_auth_mysql is an MQTT authentication/access control plug-in based on the MySQL database. It realizes connection authentication and access control of the terminal by checking whether the `username` and ` password` accessed by each terminal are consistent with the information stored in the user-specified MySQL database. Its functional logic is as follows:
 
-![1313.jpg](https://static.emqx.net/images/bada404720935875a97ce0b1e6b79ad7.jpg)
+![1313.jpg](https://assets.emqx.com/images/bada404720935875a97ce0b1e6b79ad7.jpg)
 
 In this article, only the authentication function is introduced. ACL function will be introduced in the following article.
 

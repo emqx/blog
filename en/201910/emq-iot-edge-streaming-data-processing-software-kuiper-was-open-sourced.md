@@ -38,7 +38,7 @@ As shown in the following figure, Kuiper Server consists of three parts:
 - RPC interface: The RPC interface is mainly used for interaction with client command line tools, including streaming definition and management, rule definition and management, query tools, etc.
 - Rest API interface: The Rest API is mainly used for future management interfaces and interactions in the planned management interface, including streaming definition and management, rule definition and management, query tools, etc.
 
-![components.jpg](https://static.emqx.net/images/0683da520685cd30efd34595da22f4a4.jpg)
+![components.jpg](https://assets.emqx.com/images/0683da520685cd30efd34595da22f4a4.jpg)
 
 
 ## Overview of Kuiper Usage Steps

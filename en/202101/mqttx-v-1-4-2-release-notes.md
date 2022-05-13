@@ -8,7 +8,7 @@ Mac users can download from the App Store: [https://apps.apple.com/us/app/mqttx/
 
 Linux users can download from the Snapcraft: [https://snapcraft.io/mqttx](https://snapcraft.io/mqttx)
 
-![mqttxpreview.png](https://static.emqx.net/images/eae55fcaa5b4abd9b562bc2aa5fc9dd9.png)
+![mqttxpreview.png](https://assets.emqx.com/images/eae55fcaa5b4abd9b562bc2aa5fc9dd9.png)
 
 ## Overview of new features
 
@@ -26,13 +26,13 @@ Once you have written your script, you can switch to the connection page. Click 
 
 > Note: This function is extensible and flexible, so users need to use it according to their actual needs.
 
-![mqttxscript.png](https://static.emqx.net/images/cd4daadad6483bd7c7a20805ac746933.png)
+![mqttxscript.png](https://assets.emqx.com/images/cd4daadad6483bd7c7a20805ac746933.png)
 
 ### Automatically append timestamp to MQTT client ID
 
 To prevent kick-outs when clients with the same Client ID connect, this version has added a new function that automatically adds a timestamp to the Client ID for optimizing. This function ensures the connection will have a different Client ID each time. When creating a connection, the user simply clicks on the Time button behind the Client ID input box and when the color status of the button icon changed, the function is enabled and can be canceled when clicked again.
 
-![mqttxclientidtime.png](https://static.emqx.net/images/b16191291027f1f12229652979afc443.png)
+![mqttxclientidtime.png](https://assets.emqx.com/images/b16191291027f1f12229652979afc443.png)
 
 ## Fixes and optimizations
 

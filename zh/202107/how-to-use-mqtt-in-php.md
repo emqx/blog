@@ -198,7 +198,7 @@ $mqtt->loop(true);
 php pubsub_tcp.php
 ```
 
-![PHP MQTT 测试](https://static.emqx.net/images/61618d56823886f101feaf6741a20c3f.png)
+![PHP MQTT 测试](https://assets.emqx.com/images/61618d56823886f101feaf6741a20c3f.png)
 
 
 ## 总结

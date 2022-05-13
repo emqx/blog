@@ -916,3 +916,12 @@ StorageClass 为管理员提供了描述存储 "class（类）" 的方法。 不
   输出结果表明该 PVC 的状态为 Bound，PVC 存储已经成功的建立了，当 Pod 被重新调度时，EMQX Broker 会读取挂载到 PVC 中的数据，从而实现持久化。
 
 EMQX Broker 在 kubernetes 上建立持久化的集群就完成了，本文略过了部分细节，部署的过程也是偏向简单的 Demo，用户可以自行阅读 [kubernetes 文档](https://kubernetes.io/zh/docs/home/) 与  EMQX Team 提供的 [Helm chart 源码](https://github.com/emqx/emqx-rel/tree/master/deploy/charts/emqx) 来继续深入研究，当然也欢迎在 Github 贡献 issue、pull requests 以及 start。
+
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX Cloud
+        <div class="is-size-14 is-text-normal has-text-weight-normal">全托管的云原生 MQTT 消息服务</div>
+    </div>
+    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a >
+</section>

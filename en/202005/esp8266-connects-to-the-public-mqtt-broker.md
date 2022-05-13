@@ -18,7 +18,7 @@ In this project, we will implement connecting ESP8266 to [free public MQTT broke
 
 ## ESP8266 Pub/Sub
 
-![project.png](https://static.emqx.net/images/35a817d8c8b74c0481983b8c9ac0fee7.png)
+![project.png](https://assets.emqx.com/images/35a817d8c8b74c0481983b8c9ac0fee7.png)
 
 
 ## The code
@@ -181,15 +181,15 @@ In this project, we will implement connecting ESP8266 to [free public MQTT broke
 
 1. Please use  [Arduino IDE](https://www.arduino.cc/en/Main/Software) to upload the complete code to ESP8266 and open the serial monitor
 
-   ![esp_con.png](https://static.emqx.net/images/4c97b1546d31021cc22c64ae7ce4863b.png)
+   ![esp_con.png](https://assets.emqx.com/images/4c97b1546d31021cc22c64ae7ce4863b.png)
 
 2. Establish the connection between MQTT X client and MQTT broker, and send messages to ESP8266
 
-   ![mqttx_pub.png](https://static.emqx.net/images/daa2c401453155045f2c068bcd57d66a.png)
+   ![mqttx_pub.png](https://assets.emqx.com/images/daa2c401453155045f2c068bcd57d66a.png)
 
 3. View the messages ESP8266 received in the serial monitor
 
-   ![esp_msg.png](https://static.emqx.net/images/8c98d850cdfd5c98db94471d0f6a308f.png)
+   ![esp_msg.png](https://assets.emqx.com/images/8c98d850cdfd5c98db94471d0f6a308f.png)
 
 
 ## Summary

@@ -28,7 +28,7 @@
 
 以数字储能集装箱为例，物联网终端对多台集装箱内总数约数十万个点以每 100ms~200ms 的频率进行采集，一年的数据量超过 445T。大规模的数据显著增加了存储和计算资源的压力，同时超高的采集频率也对物联网终端设备的性能和稳定性提出了更高的要求。
 
-![数据量和采集频率](https://static.emqx.net/images/980e8a69d2d83c847a7b3b2ce1e54b7b.png)
+![数据量和采集频率](https://assets.emqx.com/images/980e8a69d2d83c847a7b3b2ce1e54b7b.png)
 
 <center>数据量和采集频率</center>
 
@@ -59,7 +59,7 @@
 
 本项目采用了边云协同架构实现了对海量储能数据的有效管理和储能状态的实时感知，并基于自律分散思想建立系统的一致性控制策略，保证储能系统响应的速度和准确性。
 
-![云边一体设计方案.png](https://static.emqx.net/images/2f41c1d874ba8dba7e2e8c46c9cafcc1.png)
+![云边一体设计方案.png](https://assets.emqx.com/images/2f41c1d874ba8dba7e2e8c46c9cafcc1.png)
 
 <center>总体设计方案</center>
 
@@ -93,7 +93,7 @@
 
 下图所示为 Neuron 的配置界面：
 
-![Neuron 配置界面](https://static.emqx.net/images/b592b1a948f56afd6b32fbc52a4657c8.png)
+![Neuron 配置界面](https://assets.emqx.com/images/b592b1a948f56afd6b32fbc52a4657c8.png)
 
 <center>Neuron网关配置界面</center>
 
@@ -105,9 +105,9 @@
 
 边缘计算单元承担解析MQTT数据包，进行流式计算并将计算结果以MQTT协议发布到中心Broker的任务，最后由中心Broker解析后分发到不同主题，供消费者订阅。目前边缘计算单元使用开源软件eKuiper，采用基于数据源（source）- 业务处理逻辑（rule）- 目标（sink）的规则引擎来进行流式计算。 
 
-![边缘计算单元计算流程1](https://static.emqx.net/images/d3c02363f1fb42e23e64f105d08da3f4.png)
+![边缘计算单元计算流程1](https://assets.emqx.com/images/d3c02363f1fb42e23e64f105d08da3f4.png)
 
-![边缘计算单元计算流程2](https://static.emqx.net/images/7033aaae41c6e8c68c5a4d1c78f57f4a.png)
+![边缘计算单元计算流程2](https://assets.emqx.com/images/7033aaae41c6e8c68c5a4d1c78f57f4a.png)
 
 <center>边缘计算单元计算流程</center>
 
@@ -155,11 +155,11 @@
 
   对于大多数复杂场景，例如需要对数据流进行拆分、循环、条件筛选或者执行复杂公式计算的，基于SQL的查询语句无法满足我们的要求。eKuiper 提供了原生插件、可移植插件、外部函数扩展三种方式：
 
-	![eKuiper 插件开发](https://static.emqx.net/images/0a64f7f57ec8edb69be9cea8d9e702f0.png)
+	![eKuiper 插件开发](https://assets.emqx.com/images/0a64f7f57ec8edb69be9cea8d9e702f0.png)
 
   本项目中通过开发 go 语言的可移植插件来实现要求的功能。可移植插件的开发需要下载、引入 eKuiper 源码和 SDK，我们从 GitHub 上下载 eKuiper 源代码作为开发编译环境，在本机进行插件的开发、调试和单元测试、编译打包完毕后加载至边缘计算设备。流程如下：
 
-	![eKuiper 插件开发](https://static.emqx.net/images/4908abab4b0624d2afdac5ec7898b1e3.png)
+	![eKuiper 插件开发](https://assets.emqx.com/images/4908abab4b0624d2afdac5ec7898b1e3.png)
 
 ### 中心 Broker
 
@@ -173,11 +173,11 @@
 
   实施过程中，为命中分发规则的的消息添加如下动作，将消息以元素的"addr"的属性为主题进行分发，供前端消费者订阅：
 
-	![EMQX 规则引擎](https://static.emqx.net/images/d857f4eae1e2bcd7c39dc7fe1c48e6d0.png)
+	![EMQX 规则引擎](https://assets.emqx.com/images/d857f4eae1e2bcd7c39dc7fe1c48e6d0.png)
 
   在客户端上订阅主题"010101"时，即可获取对应的计算结果：
 
-	![MQTT 订阅](https://static.emqx.net/images/04473702542ba9e64d3c6e3ec37598c3.png)
+	![MQTT 订阅](https://assets.emqx.com/images/04473702542ba9e64d3c6e3ec37598c3.png)
 
 - 数据持久化
 
@@ -228,3 +228,12 @@ EMQ 边缘管理平台是基于 EMQ 核心产品构建的基础 IoT 平台框架
 ### 大幅提升储能安全，节省持续运检成本
 
 通过实现毫秒级电池网络拓扑重构能力以及毫秒级故障电池模组在线检测及自动隔离功能，完美应对了在不同电力出力场景下电池电化学差异性所带的储能系统的本征安全挑战，预防电池故障于未然。真正做到远程在线式的电池本征安全风险的无人化实时及时的应对与管控，几乎避免了对上站人工操作的依赖，尤其在大规模储能应用场景中，可直接节省运维成本 30~50%。
+
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX Cloud
+        <div class="is-size-14 is-text-normal has-text-weight-normal">全托管的云原生 MQTT 消息服务</div>
+    </div>
+    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a >
+</section>

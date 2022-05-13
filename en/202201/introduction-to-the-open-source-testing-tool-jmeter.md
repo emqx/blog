@@ -24,38 +24,38 @@ After installing Java, download JMeter from the website：[https://jmeter.apache
 
 After the download, decompress it and enter the bin subdirectory of the decompressed directory. Depending on the operating system, run jmeter.bat (Windows system) or jmeter (Unix system). If everything goes well, JMeter's script editing interface will be presented to you:
 
-![JMeter](https://static.emqx.net/images/8c0762b8342ab42ec2c5c9051525bc47.png)
+![JMeter](https://assets.emqx.com/images/8c0762b8342ab42ec2c5c9051525bc47.png)
 
 Next, let's take HTTP as an example to see how to use JMeter to build and run a simple test case.
 
 1. Add a virtual user group (Thread Group): Right-click on the test plan > Add > Threads (Users) > Thread Group
 
-   ![JMeter Add Thread Group](https://static.emqx.net/images/d2932f0be1273de1c977ce85437f6465.png)
+   ![JMeter Add Thread Group](https://assets.emqx.com/images/d2932f0be1273de1c977ce85437f6465.png)
 
    JMeter uses a single thread to simulate a user, and a Thread Group refers to a group of users as a virtual user group simulating access to the system under test.
 
    「Number of Threads」 in 「Thread Properties」 can be used to configure the number of concurrent users in a virtual user group. The higher the value, the greater the amount of concurrency; 「Loop Count」 can be used to configure how many tests each virtual user performs.
 
-   ![JMeter Thread Properties](https://static.emqx.net/images/e5d5e8c0c14d97c3c340acbb9808e56a.png)
+   ![JMeter Thread Properties](https://assets.emqx.com/images/e5d5e8c0c14d97c3c340acbb9808e56a.png)
 
 2. Add the HTTP page under test: Right-click on the Thread Group > Add > Sampler > HTTP Request
 
-   ![JMeter Add the HTTP page](https://static.emqx.net/images/28f9382ea3c9eaaaeec6fe6cbdd6334a.png)
+   ![JMeter Add the HTTP page](https://assets.emqx.com/images/28f9382ea3c9eaaaeec6fe6cbdd6334a.png)
 
    In the sample test script, we only use the default HTTP request settings to initiate an HTTP request to the bing website. You can configure it according to the actual situation.
 
-   ![JMeter HTTP request](https://static.emqx.net/images/ab4e18dd509091a73fdc09227f509e6b.png)
+   ![JMeter HTTP request](https://assets.emqx.com/images/ab4e18dd509091a73fdc09227f509e6b.png)
 
 3. Add a result listener: Right-click on the thread group > Add > Listener > View Results Tree
 
    The listener is not necessary in the actual performance test, but it can help you see the test results intuitively and facilitate debugging in the process of writing scripts. In this sample script, we will use 「view result tree」 to help view the response information of the request.
 
-   ![JMeter Add a result listener](https://static.emqx.net/images/63ad7b6386eec1a26a8ba8e794cda6e8.png)
+   ![JMeter Add a result listener](https://assets.emqx.com/images/63ad7b6386eec1a26a8ba8e794cda6e8.png)
 
 4. Run the test
 
    After saving the test script, click the 「Start」button in the operation bar to run the test script. It is recommended that the number of threads and the loop count in the thread group be set smaller (such as within 10) to avoid being banned.
 
-   ![JMeter Run the test](https://static.emqx.net/images/29baf88be6fc46c19ba4327882c7d30b.png)
+   ![JMeter Run the test](https://assets.emqx.com/images/29baf88be6fc46c19ba4327882c7d30b.png)
 
 Now, we have completed a simple HTTP test script. You can draw inferences from this case and try other protocols. In the next article, we will introduce the various test components of JMeter in more detail, which can be used together to build more complex test scenarios.

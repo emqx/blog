@@ -8,7 +8,7 @@ Mac 用户可在 App Store 中进行下载：[https://apps.apple.com/cn/app/mqtt
 
 Linux 用户可在 Snapcraft 中进行下载：[https://snapcraft.io/mqttx](https://snapcraft.io/mqttx)
 
-![mqttx-preview](https://static.emqx.net/images/9c1ad0d3e678954b67dce923087c7a7a.png)
+![mqttx-preview](https://assets.emqx.com/images/9c1ad0d3e678954b67dce923087c7a7a.png)
 
 > **注意：** 该版本包含破坏性改动！我们重构了底层数据存储结构，升级后将没有原来的数据，请提前备份好重要数据。（可以在设置页面中导出需要数据，在新版本中进行导入）。这是一个重构版本，没有更多的新功能，有问题可以到 [issue](https://github.com/emqx/MQTTX/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc) 区进行讨论。感谢你的帮助和支持。
 

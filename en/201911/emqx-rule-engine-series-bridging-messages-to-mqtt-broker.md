@@ -5,7 +5,7 @@ Bridge is a way to connect multiple EMQX or other MQTT message middleware. Unlik
 - Forward messages to the bridge node according to the rules;
 - Subscribe to the topic from the bridge node and forward the message in the node/cluster after receiving the message.
 
-![WX20191108094216.png](https://static.emqx.net/images/ec8720b15fa3ce2f51b1549fa04f9ab6.png)
+![WX20191108094216.png](https://assets.emqx.com/images/ec8720b15fa3ce2f51b1549fa04f9ab6.png)
 
 There are different application scenarios for working in the bridge mode and working in the cluster mode. The bridge can complete some functions that cannot be realized by using the cluster alone:
 
@@ -70,11 +70,11 @@ $ mosquitto -c /usr/local/etc/mosquitto/mosquitto.conf
 
 Open EMQX Dashboard, go to the **Resources** page on the left menu, click the **New** button, type Mosquitto server information to create a resource.
 
-![image01.jpg](https://static.emqx.net/images/c1c7f02109bc77b9df69011b67e27ac2.jpg)
+![image01.jpg](https://assets.emqx.com/images/c1c7f02109bc77b9df69011b67e27ac2.jpg)
 
 The network environment of the nodes in the EMQX cluster may not be connected to each other. After the resource is created successfully, click the **Status button ** in the list to check the resource connection status of each node. If the resources on the node are unavailable, check whether the configuration is correct and the network connectivity is correct, and click the **Reconnect** button to manually reconnect.
 
-![image02.jpg](https://static.emqx.net/images/169d0ba48bab14af6b496cbb403b5446.jpg)
+![image02.jpg](https://assets.emqx.com/images/169d0ba48bab14af6b496cbb403b5446.jpg)
 
 
 #### Create a rule
@@ -83,7 +83,7 @@ Go to the **Rules** page on the left menu and click the **New** button to create
 
 After selecting the trigger event, we can see the optional fields and sample SQL on the interface:
 
-![image03.jpg](https://static.emqx.net/images/92b57950543da05e7c9981199e28d07b.jpg)
+![image03.jpg](https://assets.emqx.com/images/92b57950543da05e7c9981199e28d07b.jpg)
 
 #### Filter the required fields
 
@@ -145,7 +145,7 @@ The payload data is as follows, note to change the `tachometer` value to satisfy
 
 Click the **SQL Test** toggle button, change `topic` and `payload` to be the information in the scene, and click the **Test** button to check the data output:
 
-![image04.jpg](https://static.emqx.net/images/a33a26df264dc3eee90aaf958e49a398.jpg)
+![image04.jpg](https://assets.emqx.com/images/a33a26df264dc3eee90aaf958e49a398.jpg)
 
 The test output data is:
 
@@ -167,7 +167,7 @@ After the SQL condition input and output is correct, we continue to add the  res
 
 Click the **Add** button in the response action, select the **Bridge data to MQTT Broker** action, and select the resource just selected.
 
-![image05.jpg](https://static.emqx.net/images/9d2912218ef2cc86c949c46302316145.jpg)
+![image05.jpg](https://assets.emqx.com/images/9d2912218ef2cc86c949c46302316145.jpg)
 
 ### Test
 
@@ -200,13 +200,13 @@ Switch to the **Tools** --> **Websocket** page, use any information client to co
 }
 ```
 
-![image06.jpg](https://static.emqx.net/images/fd95228a9f6b28120b79f3c06c494daa.jpg)
+![image06.jpg](https://assets.emqx.com/images/fd95228a9f6b28120b79f3c06c494daa.jpg)
 
 Click the **send** button  , after sending successfully, the statistical value of  current rule hit is 1.
 
 View the data table records in the command line to get the following data:
 
-![image07.png](https://static.emqx.net/images/1631addf2ba5dbf56a2b5518d07aaea8.png)
+![image07.png](https://assets.emqx.com/images/1631addf2ba5dbf56a2b5518d07aaea8.png)
 
 So far, we have implemented business development using the rules engine to bridge messages to the MQTT Broker through the rules engine.
 
@@ -224,11 +224,11 @@ Prepare another emqx node and enable two emqx.
 
 Open EMQX Dashboard, go to the **Resources** page on the left menu, click the **New** button, type EMQX server information for resource creation.
 
-![image01.jpg](https://static.emqx.net/images/b039915b5a3344cd31d6ac2b90258749.jpg)
+![image01.jpg](https://assets.emqx.com/images/b039915b5a3344cd31d6ac2b90258749.jpg)
 
 The network environment of the nodes in the EMQX cluster may not be connected to each other. After the resource is created successfully, click the **Status button ** in the list to check the resource connection status of each node. If the resources on the node are unavailable, check whether the configuration is correct and the network connectivity is correct, and click the **Reconnect** button to manually reconnect.
 
-![image02.jpg](https://static.emqx.net/images/e8a1e9b8fe12623ee6e66419ebb031d3.jpg)
+![image02.jpg](https://assets.emqx.com/images/e8a1e9b8fe12623ee6e66419ebb031d3.jpg)
 
 #### Create a rule
 
@@ -236,7 +236,7 @@ Go to the **Rules** page on the left menu and click the **New** button to create
 
 After selecting the trigger event, we can see the optional fields and sample SQL on the interface:
 
-![image03.jpg](https://static.emqx.net/images/78e78b1e5aea8c76388a066ab7f727b4.jpg)
+![image03.jpg](https://assets.emqx.com/images/78e78b1e5aea8c76388a066ab7f727b4.jpg)
 
 #### Filter the required fields
 
@@ -298,7 +298,7 @@ The payload data is as follows, note to change the `tachometer` value to satisfy
 
 Click the **SQL Test** toggle button, change `topic` and `payload` to be the information in the scene, and click the **Test** button to check the data output:
 
-![image04.jpg](https://static.emqx.net/images/67b7f260a34ac11be15247850bd5af74.jpg)
+![image04.jpg](https://assets.emqx.com/images/67b7f260a34ac11be15247850bd5af74.jpg)
 
 The test output data is:
 
@@ -320,7 +320,7 @@ After the SQL condition input and output is correct, we continue to add the  res
 
 Click the **Add** button in the response action, select the **Bridge data to MQTT Broker** action, and select the resource just selected.
 
-![image05.jpg](https://static.emqx.net/images/5eeab650e0640cc46edaad9138f0000e.jpg)
+![image05.jpg](https://assets.emqx.com/images/5eeab650e0640cc46edaad9138f0000e.jpg)
 
 
 
@@ -355,13 +355,13 @@ Switch to the **Tools** --> **Websocket** page, use any information client to co
 }
 ```
 
-![image16.jpg](https://static.emqx.net/images/7716752ea559b750d4fa86a2a0aa3a6f.jpg)
+![image16.jpg](https://assets.emqx.com/images/7716752ea559b750d4fa86a2a0aa3a6f.jpg)
 
 Click the **send** button  , after sending successfully, the statistical value of  current rule hit is 1.
 
 View the data table records in the command line to get the following data:
 
-![image17.png](https://static.emqx.net/images/1f7d506e2efc9990008d2d1eba0356f3.png)
+![image17.png](https://assets.emqx.com/images/1f7d506e2efc9990008d2d1eba0356f3.png)
 
 
 

@@ -81,7 +81,7 @@ node app.js
 
 在 **Dashboard** --> **规则引擎** --> **资源** 页面点击右上角，点击 **新建** 按钮，选择 WebHook 资源类型，填入接入地址与认证信息：
 
-![1.png](https://static.emqx.net/images/d7529f8df3c4b463fd1eaa2073f60d9c.png)
+![1.png](https://assets.emqx.com/images/d7529f8df3c4b463fd1eaa2073f60d9c.png)
 ### 创建规则
 
 资源创建完毕后我们可以进行规则创建，规则引擎 --> **规则** 页面中点击 **新建** 按钮进入规则创建页面。
@@ -149,7 +149,7 @@ speed > 60
 
 切换到 **工具** --> **Websocket** 页面，客户端 ID，用户名，密码均填写 `emqx_c` 模拟设备接入：
 
-![2.png](https://static.emqx.net/images/532f65dd143daa0d2d8785a77b743ecc.png)
+![2.png](https://assets.emqx.com/images/532f65dd143daa0d2d8785a77b743ecc.png)
 
 连接成功后向 `/monitor/emqx_c/state` 主题发送如下消息：
 
@@ -195,7 +195,7 @@ CREATE TABLE `emqx`.`devices` (
 `connected_at` VARCHAR(45) NULL COMMENT '连接时间，毫秒级时间戳',
 PRIMARY KEY (`id`));
 
--- 初始化数据![cf.png](https://static.emqx.net/images/6851bc635b0862f6469ff65eaaf7271e.png)
+-- 初始化数据![cf.png](https://assets.emqx.com/images/6851bc635b0862f6469ff65eaaf7271e.png)
 
 INSERT INTO `emqx`.`devices` (`client_id`) VALUES ('emqx_c');
 -- 连接记录表
@@ -212,12 +212,12 @@ PRIMARY KEY (`id`));
 
 在 **Dashboard** --> **规则引擎** --> **资源** 页面点击右上角，点击 **新建** 按钮，选择 MySQL 资源类型，填入相关参数创建 MySQL 连接资源，保存配置前可点击 **测试连接** 进行可用性测试：
 
-![MySQL连接.png](https://static.emqx.net/images/dc19cc6b279e6898114f89a39178582c.png)
+![MySQL连接.png](https://assets.emqx.com/images/dc19cc6b279e6898114f89a39178582c.png)
 #### 在资源中创建告警 API 接口
 
 重复资源创建操作，创建 WehHook 类型的资源用于设备下线通知。此处用户可根据业务逻辑自行开发告警服务：
 
-![API接口.png](https://static.emqx.net/images/1190a3a5aee9b4e308f3f6a4c8399f16.png)
+![API接口.png](https://assets.emqx.com/images/1190a3a5aee9b4e308f3f6a4c8399f16.png)
 
 ### 创建规则
 
@@ -227,7 +227,7 @@ PRIMARY KEY (`id`));
 
 设备上下、线对应的事件分别是 **连接完成** 与 **连接断开**，首先选择 **连接完成** 事件进行上线记录：
 
-![cf.png](https://static.emqx.net/images/4b68343bcb7ed99065a57d9c1e3f3a17.png)
+![cf.png](https://assets.emqx.com/images/4b68343bcb7ed99065a57d9c1e3f3a17.png)
 
 #### 创建上线处理规则
 
@@ -260,7 +260,7 @@ SET `state`=1, `connected_at`= ${connected_at}
 WHERE `client_id`= ${client_id}
 LIMIT 1
 ```
-![ygdz .png](https://static.emqx.net/images/c32aa3aef9a309660659bb164f01d789.png)
+![ygdz .png](https://assets.emqx.com/images/c32aa3aef9a309660659bb164f01d789.png)
 
 **再添加一个动作，在设备连接表 中插入一条记录，记录设备上线历史：**
 
@@ -319,7 +319,7 @@ VALUES (${client_id}, '2', ${reason_code});
 **将下线消息发送到 Web Server，触发业务系统的设备下线通知：**
 
 新增一个 **发送数据到 Web 服务** 动作，选择 **准备** 步骤中创建的 Web 接入点，消息将以 HTTP 请求发送到该接入点。
-![发送数据到 Web 服务.png](https://static.emqx.net/images/10b3689ebee8d10e450381da3bc459e6.png)
+![发送数据到 Web 服务.png](https://assets.emqx.com/images/10b3689ebee8d10e450381da3bc459e6.png)
 
 点击 **新建** 完成规则的创建，该条规则包含三个动作。
 
@@ -336,21 +336,21 @@ VALUES (${client_id}, '2', ${reason_code});
 
 切换到 **工具** --> **Websocket** 页面，客户端 ID，用户名，密码均填写 `emqx_c` 模拟设备接入：
 
-![Websocket 工具测试.png](https://static.emqx.net/images/1468d6659d7d686e1bdaa33acfa3e317.png)
+![Websocket 工具测试.png](https://assets.emqx.com/images/1468d6659d7d686e1bdaa33acfa3e317.png)
 
 **连接成功后，分别查看 设备表 与 连接记录表 得到以下数据：**
 
 设备状态已被更新，连接记录表新增一条数据
 
-![连接成功后1.png](https://static.emqx.net/images/871e75d8dc40022c811d5d0d00c5ff4c.png)
-![连接成功后2.png](https://static.emqx.net/images/ca00f7ef8bc79b7698504dc36368c7bc.png)
+![连接成功后1.png](https://assets.emqx.com/images/871e75d8dc40022c811d5d0d00c5ff4c.png)
+![连接成功后2.png](https://assets.emqx.com/images/ca00f7ef8bc79b7698504dc36368c7bc.png)
 **手动断开连接，数据表中数据如下：**
 
 设备状态已被更新，连接记录表新增一条离线数据，告警 API 接口应当收到了设备离线数据，此处不再赘述。
 
-![手动断开连接1.png](https://static.emqx.net/images/e9080c19d3ed216c9c9a1d2c9818b3e7.png)
+![手动断开连接1.png](https://assets.emqx.com/images/e9080c19d3ed216c9c9a1d2c9818b3e7.png)
 
-![手动断开连接2.png](https://static.emqx.net/images/a667888ca6b150f64bc7147da5443727.png)
+![手动断开连接2.png](https://assets.emqx.com/images/a667888ca6b150f64bc7147da5443727.png)
 
 至此，我们通过两条规则实现了预定的在线状态切换，上下线记录与下线告警相关业务开发。
 

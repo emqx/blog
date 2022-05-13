@@ -225,26 +225,26 @@ if __name__ == '__main__':
 
 运行 MQTT 消息发布代码，我们将看到客户端连接成功，并且成功发布消息。
 
-![hbmqtt_pub.png](https://static.emqx.net/images/afb947f2a8af5b2b3485d43ad1bfd739.png)
+![hbmqtt_pub.png](https://assets.emqx.com/images/afb947f2a8af5b2b3485d43ad1bfd739.png)
 
 
 如下为 MQTT X 客户端成功接收到 HBMQTT 客户端发布的消息：
 
-![mqttx_sub.png](https://static.emqx.net/images/b16f8c811d7528ed80d98ef3ffb6ccf1.png)
+![mqttx_sub.png](https://assets.emqx.com/images/b16f8c811d7528ed80d98ef3ffb6ccf1.png)
 
 ### 消息订阅
 
 运行 MQTT 消息订阅代码，我们将看到客户端连接成功，此时客户端正在等待消息进入
 
-![running_sub_py.png](https://static.emqx.net/images/48740199e70903cc21f24360d5101a6a.png)
+![running_sub_py.png](https://assets.emqx.com/images/48740199e70903cc21f24360d5101a6a.png)
 
 使用 MQTT X 客户端连接 broker.emqx.io，然后向主题 a/b 发送 10 次消息
 
-![pub_from_mqttx.png](https://static.emqx.net/images/2d3c9a2fc3fb320b643b47f119141ec0.png)
+![pub_from_mqttx.png](https://assets.emqx.com/images/2d3c9a2fc3fb320b643b47f119141ec0.png)
 
 回到终端，我们看到客户端接收并打印消息，并且在收到 10 条消息后，主动退出了程序。
 
-![finished_sub_py.png](https://static.emqx.net/images/d7a097b207a30a45a6d7374ca13022c9.png)
+![finished_sub_py.png](https://assets.emqx.com/images/d7a097b207a30a45a6d7374ca13022c9.png)
 
 
 
@@ -253,3 +253,12 @@ if __name__ == '__main__':
 至此，我们完成了 HBMQTT 库连接到[公共 MQTT 服务器](https://www.emqx.com/zh/mqtt/public-mqtt5-broker)，并实现了测试客户端与 MQTT 服务器的连接、消息发布和订阅。通过使用 Python 异步 IO 执行消息的发送接收，可以帮助我们实现更加高效的 MQTT 客户端。
 
 接下来我们将会陆续发布更多关于物联网开发及 Python 的相关文章，敬请关注。
+
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX Cloud
+        <div class="is-size-14 is-text-normal has-text-weight-normal">全托管的云原生 MQTT 消息服务</div>
+    </div>
+    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a >
+</section>

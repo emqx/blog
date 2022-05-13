@@ -24,7 +24,7 @@
 
 然而，更具可扩展性的解决方案通常以分布式方式解决这个问题，即数据从一个节点迁移到另一个节点。这种迁移称为会话接管。会话接管应该对客户端完全透明，但它是有代价的，尤其是当有很多消息需要处理时。
 
-![会话接管](https://static.emqx.net/images/ea4c881df579ece79600af69bec76244.png)
+![会话接管](https://assets.emqx.com/images/ea4c881df579ece79600af69bec76244.png)
 
 
 ### 粘性会话解决方案
@@ -204,3 +204,12 @@ show table emqx_tcp_back" | sudo socat stdio tcp4-connect:127.0.0.1:9999
 
 - [MQTT Broker 集群详解（一）：负载均衡](https://www.emqx.com/zh/blog/mqtt-broker-clustering-part-1-load-balancing)
 - [MQTT Broker 集群详解（三）：有关 EMQX 水平可扩展性的挑战与对策](https://www.emqx.com/zh/blog/mqtt-broker-clustering-part-3-challenges-and-solutions-of-emqx-horizontal-scalability)
+
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX Cloud
+        <div class="is-size-14 is-text-normal has-text-weight-normal">全托管的云原生 MQTT 消息服务</div>
+    </div>
+    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a >
+</section>

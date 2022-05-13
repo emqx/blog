@@ -35,7 +35,7 @@ Through real-time analyze the various data of the smart home device, can impleme
 
 ## Project diagram
 
-![project.png](https://static.emqx.net/images/1e76f173b4c03d07127e5fb192a96ce7.png)
+![project.png](https://assets.emqx.com/images/1e76f173b4c03d07127e5fb192a96ce7.png)
 
 
 
@@ -43,7 +43,7 @@ Through real-time analyze the various data of the smart home device, can impleme
 
 ### Diagram of a breadboard setup
 
-![schematics.png](https://static.emqx.net/images/56559dbf9fc940657314927665c8a11c.png)
+![schematics.png](https://assets.emqx.com/images/56559dbf9fc940657314927665c8a11c.png)
 
 ### Raspberry Pi configuration
 
@@ -213,7 +213,7 @@ In this article, we will calculate the average value of light intensity. When th
   $  ./bin/cli show rules
   ```
 
-  ![show_rules.png](https://static.emqx.net/images/5de79533d049f68e02d39806fc0b4732.png)
+  ![show_rules.png](https://assets.emqx.com/images/5de79533d049f68e02d39806fc0b4732.png)
 
 ### Control LED
 
@@ -282,15 +282,15 @@ if __name__ == "__main__":
 
 1. `python gy30.py` obtains the light data and uploads the data to the topic **smartHomeHubs/light**.
 
-   ![gy30.png](https://static.emqx.net/images/6f91879ffb5a4b1f8a6ec60068a66b94.png)
+   ![gy30.png](https://assets.emqx.com/images/6f91879ffb5a4b1f8a6ec60068a66b94.png)
 
 2. `python led.py` subscribes to the topic **smartHomeHubs/led**, monitor the LED control messages.
 
-    ![led.png](https://static.emqx.net/images/7fb7d5aa0a1149802ea039fa1f2805e8.png)  
+    ![led.png](https://assets.emqx.com/images/7fb7d5aa0a1149802ea039fa1f2805e8.png)  
 
 3. When we manually lower or raise the light, we can see that the LED light is also turn on and turn off.
 
-   ![auth_control_led.png](https://static.emqx.net/images/7e3aa2d8556dbb340df3ef178f64818f.png)
+   ![auth_control_led.png](https://assets.emqx.com/images/7e3aa2d8556dbb340df3ef178f64818f.png)
 
 
 
@@ -301,3 +301,12 @@ So far, we successfully built the smart home hub based on [Raspberry Pi](https:/
 We use Raspberry Pi to provide a rich external communication interface, EMQX Edge to provide the communication function between the devices, EMQX Kuiper to process and analyze the data of devices.
 
 After that, we use a light sensor to obtain the light intensity, control turn on or turn off the LED through the light intensity. In the whole process, all data is processed and analyzed locally, reducing the risk of family private data leakage.!
+
+
+<section class="promotion">
+    <div>
+        Try EMQX Cloud for Free
+        <div class="is-size-14 is-text-normal has-text-weight-normal">A fully managed, cloud-native MQTT service</div>
+    </div>
+    <a href="https://www.emqx.com/en/signup?continue=https://cloud-intl.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">Get Started →</a >
+</section>

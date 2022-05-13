@@ -125,7 +125,7 @@ $ sudo service haproxy start
 
 You can access the dashboard via `18083` now.
 
-![dashboard.png](https://static.emqx.net/images/65ad1bec10a4515577e75e8b120c9a49.png)
+![dashboard.png](https://assets.emqx.com/images/65ad1bec10a4515577e75e8b120c9a49.png)
 
 Connect to the cluster via `1883`. The connection status can be checked in the dashboard or by executing the command on the node.
 
@@ -158,3 +158,14 @@ So far, we have completed the build and use of the EMQX cluster based on HAProxy
 
 
 [^1]: https://en.wikipedia.org/wiki/HAProxy
+
+
+
+
+<section class="promotion">
+    <div>
+        Try EMQX Cloud for Free
+        <div class="is-size-14 is-text-normal has-text-weight-normal">A fully managed, cloud-native MQTT service</div>
+    </div>
+    <a href="https://www.emqx.com/en/signup?continue=https://cloud-intl.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">Get Started →</a >
+</section>

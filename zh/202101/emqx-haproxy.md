@@ -129,7 +129,7 @@ $ sudo service haproxy start
 
 此时便可以通过 `18083` 访问 dashboard
 
-![dashboard.png](https://static.emqx.net/images/0f815d5597514fd6f26aeba7ead041a7.png)
+![dashboard.png](https://assets.emqx.com/images/0f815d5597514fd6f26aeba7ead041a7.png)
 
 通过 `1883` 连接到集群，连接情况可以在 dashboard 查看，或者在节点上执行命令
 
@@ -158,3 +158,12 @@ frontend frontend_emqx_tcp
 
 
 至此，我们完成了基于 HAProxy 搭建 EMQX 集群以及使用，HAProxy 更详细的使用参见 [HAProxy Documentation](https://cbonte.github.io/haproxy-dconv/2.2/intro.html)。
+
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX Cloud
+        <div class="is-size-14 is-text-normal has-text-weight-normal">全托管的云原生 MQTT 消息服务</div>
+    </div>
+    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a >
+</section>

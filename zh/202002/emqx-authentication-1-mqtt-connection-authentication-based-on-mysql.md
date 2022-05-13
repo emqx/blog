@@ -19,7 +19,7 @@ EMQX 完整支持 MQTT 各项安全规范，内置的安全功能无需编程开
 
 emqx_auth_mysql 是基于 MySQL 数据库的 MQTT 认证/访问控制插件，通过检查每个终端接入的 `username` 和 `password` 是否与用户指定的 MySQL 数据库中存储的信息一致性来实现对终端的连接认证和访问控制。其功能逻辑如下：
 
-![1313.jpg](https://static.emqx.net/images/7776f1d04279f47cd1a7f5b9ac7ca975.jpg)
+![1313.jpg](https://assets.emqx.com/images/7776f1d04279f47cd1a7f5b9ac7ca975.jpg)
 
 本文仅介绍认证功能，ACL 功能见后续文章。
 

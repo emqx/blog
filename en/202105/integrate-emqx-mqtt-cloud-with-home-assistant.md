@@ -26,15 +26,15 @@ If it's your first time using EMQX Cloud, don't worry. We will guide you through
 
 3. After the new deployment is created and the status is **running**, add the client authentication information (you could choose to add manually or import from the file.  
 
-    ![add authentication](https://static.emqx.net/images/9142d9a045b570402515eaa47c6698a6.png)
+    ![add authentication](https://assets.emqx.com/images/9142d9a045b570402515eaa47c6698a6.png)
 
 4. Go to Home Assistant's configuration to add integration.
 
 5. Select MQTT and fill in the deployment information
 
-    ![Add MQTT Broker to Home Assistant](https://static.emqx.net/images/1da096c0f7a5f4b200b1f14583c49414.png)
+    ![Add MQTT Broker to Home Assistant](https://assets.emqx.com/images/1da096c0f7a5f4b200b1f14583c49414.png)
 
-    ![EMQX MQTT Cloud deployment information](https://static.emqx.net/images/26b958bcc271d1f6801d06152c65fd78.png)
+    ![EMQX MQTT Cloud deployment information](https://assets.emqx.com/images/26b958bcc271d1f6801d06152c65fd78.png)
 
    You should enter the `Connect Address` for Broker and the `Connect Port (mqtt)` for Port. Enter the username and password you created on the authentication page. 
 
@@ -42,4 +42,13 @@ If it's your first time using EMQX Cloud, don't worry. We will guide you through
 
 7. Your EMQX Cloud deployment is now integrating with Home Assistant, congratulations!
 
-    ![Successfully integrating with Home Assistant](https://static.emqx.net/images/e6bd46c82942efdbac70ed9d09faa35b.png)
+    ![Successfully integrating with Home Assistant](https://assets.emqx.com/images/e6bd46c82942efdbac70ed9d09faa35b.png)
+
+
+<section class="promotion">
+    <div>
+        Try EMQX Cloud for Free
+        <div class="is-size-14 is-text-normal has-text-weight-normal">No credit card required</div>
+    </div>
+    <a href="https://www.emqx.com/en/signup?continue=https://cloud-intl.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">Get Started →</a >
+</section>

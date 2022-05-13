@@ -74,7 +74,7 @@ EMQX Neuron 支持包括 Modbus、OPC 等在内的各类工业协议，可以基
 
 ## EMQX Neuron 与 EMQX Broker 的工业架构图
 
-![image20200807171225345.png](https://static.emqx.net/images/12761e4b416abbc4623b9702138af74f.png)
+![image20200807171225345.png](https://assets.emqx.com/images/12761e4b416abbc4623b9702138af74f.png)
 
 
 
@@ -143,35 +143,35 @@ MQPASSWORD=neuron123
 
 4.登陆 EMQX Neuron Web 界面，访问 IP:7000，默认用户名密码 admin/0000。
 
-![neuron 2.png](https://static.emqx.net/images/973234d18311847a14cf528905470003.png)
+![neuron 2.png](https://assets.emqx.com/images/973234d18311847a14cf528905470003.png)
 
 
 
 5.点击 Edit Driver，编辑 Modbus tcp 地址。
 
-![image20200721163444017.png](https://static.emqx.net/images/50eec1ed148b0e0915631d959797d16c.png)
+![image20200721163444017.png](https://assets.emqx.com/images/50eec1ed148b0e0915631d959797d16c.png)
 
-![image20200721163701173.png](https://static.emqx.net/images/66a82faba86ba6805130d0652a625add.png)
+![image20200721163701173.png](https://assets.emqx.com/images/66a82faba86ba6805130d0652a625add.png)
 
 
 6.创建 Object，定义 Object 里面的内容。
 
-![image20200807162508543.png](https://static.emqx.net/images/d89381a20c603d47d6c00ac8a1747efb.png)
+![image20200807162508543.png](https://assets.emqx.com/images/d89381a20c603d47d6c00ac8a1747efb.png)
 
 在这个 Object 里面创建一个 Attribute，然后配置 Attribute 的信息，
 
 这里模拟定义名称为 Err1@@2D7WS_GAS 的报警点位，点位位置为 1!1!07497。
 
-![image20200807162911196.png](https://static.emqx.net/images/36b42a9ff0e916276319eb7dd3c2004c.png)
+![image20200807162911196.png](https://assets.emqx.com/images/36b42a9ff0e916276319eb7dd3c2004c.png)
 
-![image20200807163023400.png](https://static.emqx.net/images/9faedfb368dfc1817bdee1ad2ed4fc48.png)
+![image20200807163023400.png](https://assets.emqx.com/images/9faedfb368dfc1817bdee1ad2ed4fc48.png)
 
 
 ### 连接布署好的 EMQX Broker 产品
 
 在 EMQX Broker 界面上可以查看连接的 EMQX Neuron 网关，Client ID 为 EMQX Neuron 网关随机生成一串字符。
 
-![image20200807163206577.png](https://static.emqx.net/images/489ab3a96deb7680692a67c102bff461.png)
+![image20200807163206577.png](https://assets.emqx.com/images/489ab3a96deb7680692a67c102bff461.png)
 
 
 
@@ -179,20 +179,20 @@ MQPASSWORD=neuron123
 
 配置刚才 1!1!07497 点位值为 1，然后进行数据上报。
 
-![image20200807164517861.png](https://static.emqx.net/images/72ce71e681e9a388b593c16e0626b88f.png)
+![image20200807164517861.png](https://assets.emqx.com/images/72ce71e681e9a388b593c16e0626b88f.png)
 
 
 
 点击 EMQX Neuron 界面中的 Data Monitoring，Attribute 中配置 1!1!07497 点位的数值已经为 1。
 
-![image20200807164756754.png](https://static.emqx.net/images/20c4b877d66dfe467d70bf2048af52e0.png)
+![image20200807164756754.png](https://assets.emqx.com/images/20c4b877d66dfe467d70bf2048af52e0.png)
 
 
 ### 用 MQTT X 订阅数据进行展示
 
 打开连接好的 MQTT X，连接到 EMQX Broker，订阅上面 EMQX Neuron 发布的主题，在 MQTT X 可以收到 AlarmObj 里 2D7WS 的值为 1。客户端收到这些数据后，可以在应用界面上显示告警，也可以通过业务逻辑实现业务上的其它业务转换.
 
-![image20200807165527066.png](https://static.emqx.net/images/fea1dd077e66b71857e2f3530c71cfc9.png)
+![image20200807165527066.png](https://assets.emqx.com/images/fea1dd077e66b71857e2f3530c71cfc9.png)
 
 
 ## 总结
@@ -201,4 +201,12 @@ MQPASSWORD=neuron123
 
 **2020 年 9 月**底，我们将通过集成 [Neuron](https://www.emqx.com/zh/products/neuron)，[Edge](https://www.emqx.com/zh/products/emqx) 和 [Kuiper](https://github.com/lf-edge/ekuiper) 等软件，实现在边缘端的工业协议解析、数据汇聚和流式处理的一整套边缘解决方案；该方案通过与云端的 EMQX Broker / Enterprise 等系列产品集成，则可以实现一个端到端的、从边缘到云端的完整工业解决方案。
 
-![Artboard Copy 9备份 4.png](https://static.emqx.net/images/17040dd8943482858425cfb3fe197e82.png)
+![Artboard Copy 9备份 4.png](https://assets.emqx.com/images/17040dd8943482858425cfb3fe197e82.png)
+
+
+<section class="promotion">
+    <div>
+        免费试用 Neuron
+    </div>
+    <a href="https://www.emqx.com/zh/try?product=neuron" class="button is-gradient px-5">开始试用 →</a >
+</section>

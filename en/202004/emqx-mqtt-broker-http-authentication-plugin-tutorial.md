@@ -4,7 +4,7 @@ Before reading this tutorial, we suppose that you already known some basic [MQTT
 
 [emqx_auth_http](https://github.com/emqx/emqx-auth-http/) will throw authentication and access control event for each **MQTT client** to the user's own *WebServer*, to implement authentication and ACL. The architecture logic is:
 
-![emqx_auth_http.png](https://static.emqx.net/images/cf59952934faf013fe1b1c5c74c5e01b.png)
+![emqx_auth_http.png](https://assets.emqx.com/images/cf59952934faf013fe1b1c5c74c5e01b.png)
 
 **The events that `emqx_auth_http` mainly process are :**
 

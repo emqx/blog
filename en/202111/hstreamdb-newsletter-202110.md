@@ -28,7 +28,7 @@ It should be noted that the order of data is not maintained in the [shared subsc
 
 HStreamDB v0.6 also adds a basic data statistics function to support the statistics of key indicators such as stream write rate and consumption rate. Users can view the corresponding statistical indicators through HStream CLI, as shown in the figure below.
 
-![HStream CLI 统计功能](https://static.emqx.net/images/d4dd69dd47f47163f028154245833913.png)
+![HStream CLI 统计功能](https://assets.emqx.com/images/d4dd69dd47f47163f028154245833913.png)
 
 ## Add REST API for data writing
 

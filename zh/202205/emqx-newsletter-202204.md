@@ -19,9 +19,9 @@
 本月 EMQX 团队对 5.0 Dashboard UI 风格与交互样式进行了诸多改进，也对各项功能进行了细节上的打磨和完善。目前 5.0.0-rc.2 还在进行最后的测试，相信几天之后就能与大家见面，届时也欢迎广大用户朋友下载试用。
 
 
-![EMQX 5.0 Dashboard 1](https://static.emqx.net/images/d21c69265ffe6bc5d52bd56cc8bf2a49.png)
+![EMQX 5.0 Dashboard 1](https://assets.emqx.com/images/d21c69265ffe6bc5d52bd56cc8bf2a49.png)
 
-![EMQX 5.0 Dashboard 2](https://static.emqx.net/images/a73d10ee1d0cd9c5988c1538bafabc52.png)
+![EMQX 5.0 Dashboard 2](https://assets.emqx.com/images/a73d10ee1d0cd9c5988c1538bafabc52.png)
 
 ### 维护版本快速迭代
 
@@ -29,7 +29,7 @@
 
 > 如果您遇到的问题未包含在以上修复内容中，可以通过我们的 [Github 社区](https://github.com/emqx/emqx/issues) 或者 [EMQ 问答社区](https://askemq.com/) 反馈，我们将积极帮助您解决。
 
-![维护版本快速迭代](https://static.emqx.net/images/8d831b2164c7d01e7129a915dc48b25b.jpeg)
+![维护版本快速迭代](https://assets.emqx.com/images/8d831b2164c7d01e7129a915dc48b25b.jpeg)
 
 除了提升使用稳定性，以上新版本也为大家带来了多项功能改进：包括规则引擎支持重置指定规则的统计指标、新增连接确认和鉴权完成事件、支持 zip 与 gzip 等压缩函数、强化对 Pulsar 的支持、编解码功能支持使用 gRPC 服务等。
 
@@ -45,13 +45,13 @@
 
 用户在增值服务模块中即可自行开通流量包服务。目前流量包仅支持国内部署。
 
-![EMQX Cloud 流量包](https://static.emqx.net/images/7ecfa36b8b23bad99cae45cb830f2731.png)
+![EMQX Cloud 流量包](https://assets.emqx.com/images/7ecfa36b8b23bad99cae45cb830f2731.png)
 
 ### 自定义函数
 
 自定义函数是新开发上线的增值服务，使用自定义函数为 Topic 绑定脚本。目前支持 ECMAScript5.1/JavaScript，可实现对 Payload 内容的编解码或预处理，解决了在工业设备连接等场景下设备上报的数据和应用端数据转化的问题。例如设备上报的是二进制的编码数据，可以转化成 JSON 格式的数据上报到服务端进行处理。Topic 中的数据在经过自定义函数处理之后，可以使用数据集成功能分发到云资源中去，也可以直接被订阅消费，十分灵活。
 
-![自定义函数](https://static.emqx.net/images/a364e3fc0cced9500e22e541e15790f0.png)
+![自定义函数](https://assets.emqx.com/images/a364e3fc0cced9500e22e541e15790f0.png)
 
 当前自定义函数服务处于内测阶段中，用户可通过工单申请获得 14 天的免费试用。更多请查看[帮助文档](https://docs.emqx.com/zh/cloud/latest/vas/codec.html)。
 
@@ -59,9 +59,9 @@
 
 国内站新增了连续包年部署，用户（包含新购部署、计时部署转包年部署、续费购买包年部署）可以选择直接购买 1 - 3 年时长的连续包年部署。同时增加了订单体系，提交订单后，用户可以在控制台查询订单，也可以下载 PDF 格式订单作为企业内部提交付款申请的依据，方便用户企业内部的财务审批流程。详情请查看：[https://www.emqx.com/zh/blog/emqx-cloud-order-system-optimization](https://www.emqx.com/zh/blog/emqx-cloud-order-system-optimization) 
 
-![连续包年](https://static.emqx.net/images/a8b1ffff9ed1cd28d9dfdd957ee650ad.png)
+![连续包年](https://assets.emqx.com/images/a8b1ffff9ed1cd28d9dfdd957ee650ad.png)
 
-![查询订单](https://static.emqx.net/images/8755e0e701970a77309afc6ae9f57266.png)
+![查询订单](https://assets.emqx.com/images/8755e0e701970a77309afc6ae9f57266.png)
 
 ### 阿里云部署支持私网连接（Private Link）
 
@@ -77,7 +77,7 @@
 
 在部署详情页面中，点击左侧菜单【认证鉴权】- 【外部认证鉴权】选择相应的认证方式进行配置。
 
-![外部认证及访问控制](https://static.emqx.net/images/ef5328f4a9148c065041d1c616abb66c.png)
+![外部认证及访问控制](https://assets.emqx.com/images/ef5328f4a9148c065041d1c616abb66c.png)
 
 ## EMQX Kubernetes Operator
 
@@ -108,4 +108,13 @@ EMQX 现已加入 Docker 官方镜像：[https://hub.docker.com/_/emqx](https://
 
 用户现在可以通过 `docker pull emqx `直接获取 EMQX 镜像。
 
-![EMQX Docker 镜像](https://static.emqx.net/images/0b24b183a5581754b39742d9c65cbd0c.png)
+![EMQX Docker 镜像](https://assets.emqx.com/images/0b24b183a5581754b39742d9c65cbd0c.png)
+
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX Cloud
+        <div class="is-size-14 is-text-normal has-text-weight-normal">无须绑定信用卡</div>
+    </div>
+    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a >
+</section>

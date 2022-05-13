@@ -6,7 +6,7 @@
 
 - SQL：SQL 是你流式数据处理指定业务逻辑的地方，Kuiper 提供了 SQL 语句可以对数据进行抽取、过滤和转换；
 - 目标（Sink）：目标用于将分析结果发送到特定的目标。例如，将分析结果发送到另外的 MQTT 服务器，或者一个 HTTP Rest 地址；
-![arch.png](https://static.emqx.net/images/08ece006c10dfe6d52be4cbfc50b800c.png)
+![arch.png](https://assets.emqx.com/images/08ece006c10dfe6d52be4cbfc50b800c.png)
 
 使用 Kuiper，一般需要完成以下三个步骤。
 
@@ -34,7 +34,7 @@
 
 - 扩展支持 EdgeX 消息总线目标（sink），用于将处理结果写回至 EdgeX 消息总线。用户也可以选择将分析结果发送到 Kuiper 之前已经支持的 RestAPI 接口等。
 
-![30501589427209_.pic.jpg](https://static.emqx.net/images/e872341be9a65ffad423b16da24b0865.jpg)
+![30501589427209_.pic.jpg](https://assets.emqx.com/images/e872341be9a65ffad423b16da24b0865.jpg)
 
 ## 运行 EdgeX Docker 实例
 

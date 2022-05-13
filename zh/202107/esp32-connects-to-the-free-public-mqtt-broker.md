@@ -22,19 +22,19 @@
 
 点击 工具 -> 开发板 -> 开发板管理 -> 搜索 ESP32 -> 点击安装
 
-![安装 ESP32 开发板](https://static.emqx.net/images/082b895a83d44063af2da5161e1916d2.png)
+![安装 ESP32 开发板](https://assets.emqx.com/images/082b895a83d44063af2da5161e1916d2.png)
 
 ### 安装 PubSub client
 
 项目 -> 加载库 -> 管理库... -> 搜索 PubSubClient -> 安装 PubSubClient by Nick O’Leary
 
-![安装 PubSub client](https://static.emqx.net/images/99a1b042e8e54fb487752cf1f0dff75e.png)
+![安装 PubSub client](https://assets.emqx.com/images/99a1b042e8e54fb487752cf1f0dff75e.png)
 
 
 
 ## ESP32 Pub/Sub 示意图
 
-![ESP32 Pub/Sub 示意图](https://static.emqx.net/images/d6265585d6257fc02c722fe45888bdac.png)
+![ESP32 Pub/Sub 示意图](https://assets.emqx.com/images/d6265585d6257fc02c722fe45888bdac.png)
 
 ## ESP32 代码编写
 
@@ -190,11 +190,11 @@ void loop() {
 
 2. 打开串口监视器，选择 115200 波特率，查看 ESP32 连接情况
 
-	![查看 ESP32 连接情况](https://static.emqx.net/images/f8cb5792593d29b5b29b0feacd03a26c.png)
+	![查看 ESP32 连接情况](https://assets.emqx.com/images/f8cb5792593d29b5b29b0feacd03a26c.png)
 
 3. 使用 MQTT X 客户端 连接到公共 MQTT 服务器, 并向 ESP32 发送消息
 
-	![使用 MQTT X 客户端向 ESP32 发送消息](https://static.emqx.net/images/2dc50309dbba7bdc8a65ec9b4b082b8c.png)
+	![使用 MQTT X 客户端向 ESP32 发送消息](https://assets.emqx.com/images/2dc50309dbba7bdc8a65ec9b4b082b8c.png)
 
 
 ## 总结
@@ -202,3 +202,12 @@ void loop() {
 至此，我们已成功使 ESP32 连接到 [EMQX Cloud](https://www.emqx.com/zh/cloud) 提供的公共 MQTT 服务器。 在本项目中我们简单的将 ESP32 连接到 MQTT 服务器，这只是 ESP32 较为基础的能力之一，ESP32 其实还能与各类物联网传感器相连，并将传感器数据上报至 MQTT 服务器。
 
 接下来我们将会陆续发布更多关于物联网开发及 ESP32 的相关文章，敬请关注。
+
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX Cloud
+        <div class="is-size-14 is-text-normal has-text-weight-normal">全托管的云原生 MQTT 消息服务</div>
+    </div>
+    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a >
+</section>

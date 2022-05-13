@@ -61,3 +61,11 @@ Neuron 1.4.0 也在本月完成了开发。其中一个重要功能升级是增�
 - 修复 OPCUA 支持使用 utf8。
 - 修复不可读点演示。
 - 修复 API 函数 50。
+
+
+<section class="promotion">
+    <div>
+        免费试用 Neuron
+    </div>
+    <a href="https://www.emqx.com/zh/try?product=neuron" class="button is-gradient px-5">开始试用 →</a >
+</section>

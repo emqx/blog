@@ -63,9 +63,9 @@
 4. 基于 CDK 的 EMQX 集群部署
    本月 EMQX 欧洲研发团队开源了一个集群部署的内部工具 [cdk-emqx-cluster](https://github.com/emqx/cdk-emqx-cluster)，该工具基于 AWS 的 [CDK](https://aws.amazon.com/cdk/) 开发包，有能力部署并配置 EMQX集群以及周边集成的服务，例如 etcd，Kafka 用于跑压力测试的 load generator，以及用于监控的 Prometheus，并自带一个完备的 Grafana Dashboard。
 
-   ![EMQX Grafana Dashboard](https://static.emqx.net/images/49e918ea98315414d4c1022381bef520.png)
+   ![EMQX Grafana Dashboard](https://assets.emqx.com/images/49e918ea98315414d4c1022381bef520.png)
 
-   ![EMQX Grafana Dashboard](https://static.emqx.net/images/18e291801e09a72ccbf83c74faed1e8d.png)
+   ![EMQX Grafana Dashboard](https://assets.emqx.com/images/18e291801e09a72ccbf83c74faed1e8d.png)
 
 ## EMQX Cloud：关注用户痛点，持续体验优化
 
@@ -94,3 +94,12 @@ EMQX Cloud 支持将数据转发到非关系型数据库。目前规则引擎的
  
 
 为了完成「通过世界级开源软件产品服务人类未来产业与社会」的使命，敬请期待一个更优秀的 EMQX。
+
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX Cloud
+        <div class="is-size-14 is-text-normal has-text-weight-normal">无须绑定信用卡</div>
+    </div>
+    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a >
+</section>

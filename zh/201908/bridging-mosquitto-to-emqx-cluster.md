@@ -10,7 +10,7 @@ EMQX 与 Mosquitto 均完整支持了 [MQTT 协议](https://www.emqx.com/zh/mqtt
 
 假设我们有一个 EMQX 服务器集群 `emqx1`，和一台 Mosquitto 服务器，我们需要在 Mosquitto 上创建一条桥接，把所有 `传感器(sensor)` 主题消息转发至 `emqx1`  集群，并从 EMQX 订阅所有`控制(control)`主题。
 
-![Artboard.jpg](https://static.emqx.net/images/f82cb9c8cc1d94b34d5d745ecc259cbd.jpg)
+![Artboard.jpg](https://assets.emqx.com/images/f82cb9c8cc1d94b34d5d745ecc259cbd.jpg)
 
 **EMQX**  
 

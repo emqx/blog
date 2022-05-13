@@ -12,7 +12,7 @@
 
 HStreamDB 的整体架构如下图所示，单个 HStreamDB 节点主要由 HStream Server (HSQL) 和 HStream Storage (HStore) 两个核心部件组成，一个 HStream 集群由若干个对等的 HStreamDB 节点组成， 客户端可连接至集群中任意一个 HStreamDB 节点， 并通过熟悉的 SQL 语言来完成各种从简单到复杂的流处理和分析任务。
 
-![HStreamDB 整体架构.png](https://static.emqx.net/images/faab4a8b1d02f14bc5a4153fe37f21ca.png)
+![HStreamDB 整体架构.png](https://assets.emqx.com/images/faab4a8b1d02f14bc5a4153fe37f21ca.png)
 
 <center>HStreamDB 整体架构</center> 
 
@@ -69,7 +69,7 @@ HStream Storage (HStore) 的核心存储模型是非常贴合流式数据的日�
 
 *注：以下功能特性为到 HStreamDB 1.0 版本为止的全部规划，部分功能正在持续开发中，当前版本暂未实现，敬请期待。*
 
-![HStreamDB 功能架构](https://static.emqx.net/images/ca810cdf1d13ffbc1fe15ce41daa1695.png)
+![HStreamDB 功能架构](https://assets.emqx.com/images/ca810cdf1d13ffbc1fe15ce41daa1695.png)
 
 <center>HStreamDB 功能架构</center>
 

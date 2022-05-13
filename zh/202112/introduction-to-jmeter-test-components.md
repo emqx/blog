@@ -10,7 +10,7 @@ JMeter的测试脚本在界面中以「树」的形式呈现，保存后的测�
 
 线程组的界面如下图：
 
-![JMeter线程组](https://static.emqx.net/images/a9cd09784f960db56f94a9ce3c5a9c94.png)
+![JMeter线程组](https://assets.emqx.com/images/a9cd09784f960db56f94a9ce3c5a9c94.png)
 
 在线程组界面中可以设置以下数据，进行线程组的控制：
 
@@ -60,7 +60,7 @@ TCP 取样器通过TCP/IP来连接指定服务器，连接成功后向服务器�
 
 界面如图：
 
-![JMeter取样器](https://static.emqx.net/images/485d116a3ffd4b72c8618f51f449f1a3.png)
+![JMeter取样器](https://assets.emqx.com/images/485d116a3ffd4b72c8618f51f449f1a3.png)
 
 TCP取样器中可以设置的属性有：
 
@@ -99,7 +99,7 @@ TCP取样器中可以设置的属性有：
 
 HTTP取样器向web服务器发送HTTP/HTTPS请求。
 
-![JMeter HTTP请求](https://static.emqx.net/images/763f30e5663b4116a2584e4a6111ef49.png)
+![JMeter HTTP请求](https://assets.emqx.com/images/763f30e5663b4116a2584e4a6111ef49.png)
 
 **1.名称和注释**
 
@@ -163,7 +163,7 @@ JMeter 中的逻辑控制器主要分为两类：
 
 如下图添加事务控制器：
 
-![JMeter事务控制器](https://static.emqx.net/images/77116aa03df5d0ce7b55cc14bba0bdba.png)
+![JMeter事务控制器](https://assets.emqx.com/images/77116aa03df5d0ce7b55cc14bba0bdba.png)
 
 事务控制器的配置项有：
 
@@ -173,11 +173,11 @@ JMeter 中的逻辑控制器主要分为两类：
 
 例如，未勾选情况下汇总报告如下：
 
-![JMeter事务控制器](https://static.emqx.net/images/21741fb9f7f35bbf47b8addc7bbbe7b4.png)
+![JMeter事务控制器](https://assets.emqx.com/images/21741fb9f7f35bbf47b8addc7bbbe7b4.png)
 
 勾选情况下汇总报告如下：
 
-![JMeter汇总报告](https://static.emqx.net/images/25efe79c708fb2b35783bf369f707be9.png)
+![JMeter汇总报告](https://assets.emqx.com/images/25efe79c708fb2b35783bf369f707be9.png)
 
 **2.include duration of timer and pre-post processors in generated samle：**
 
@@ -189,11 +189,11 @@ JMeter 中的逻辑控制器主要分为两类：
 
 如下图添加仅一次控制器：
 
-![JMeter仅一次控制器](https://static.emqx.net/images/01350c39bd6f52b8e3deb13c93be2dd8.png)
+![JMeter仅一次控制器](https://assets.emqx.com/images/01350c39bd6f52b8e3deb13c93be2dd8.png)
 
 如果我们将线程组循环次数设置为 2，运行后查看结果树，可看到仅一次控制器下的请求“HTTP请求3”只执行了1次，其它请求执行了2次
 
-![JMeter控制器](https://static.emqx.net/images/4dc10693a833c2ca46dd27861e86ee5b.png)
+![JMeter控制器](https://assets.emqx.com/images/4dc10693a833c2ca46dd27861e86ee5b.png)
  
 
 ## 四、监听器
@@ -204,7 +204,7 @@ JMeter 中的逻辑控制器主要分为两类：
 
 该组件以树形结构展示了每一个取样器的结果、请求内容、响应时间、响应码、响应内容等信息，查看这些信息可以辅助分析是否存在问题。它提供多种的查看格式和筛选方法，也可以将结果写入指定文件进行批量分析处理。
 
-![JMeter查看结果树](https://static.emqx.net/images/7847b38aa19d7631a13b5550aabedafe.png)
+![JMeter查看结果树](https://assets.emqx.com/images/7847b38aa19d7631a13b5550aabedafe.png)
 
 ## 五、配置元件
 
@@ -212,30 +212,30 @@ JMeter 中的逻辑控制器主要分为两类：
 
 ### 用户自定义变量
 
-![JMeter 用户自定义变量](https://static.emqx.net/images/b21042455b532544192e3083fc848d5d.png)
+![JMeter 用户自定义变量](https://assets.emqx.com/images/b21042455b532544192e3083fc848d5d.png)
 
 通过设置一系列的变量，达到在性能测试过程中可以随机选取变量的目的。变量名可以在作用域内引用，通过${变量名}方式来引用变量。
 
 除了“用户自定义变量”这个组件外，测试计划和HTTP请求等多个组件中也可以定义变量：
 
-![JMeter 测试计划](https://static.emqx.net/images/57d2725b5091fbbc6601b8103baa6e33.png)
+![JMeter 测试计划](https://assets.emqx.com/images/57d2725b5091fbbc6601b8103baa6e33.png)
 
-![JMeter HTTP 请求](https://static.emqx.net/images/3148af4c0e9af654580aad09061e476f.png)
+![JMeter HTTP 请求](https://assets.emqx.com/images/3148af4c0e9af654580aad09061e476f.png)
 
 例如：在HTTP请求中引用了已定义的变量：
 
-![JMeter HTTP 请求自定义变量](https://static.emqx.net/images/8f849f2ce19433d17af58dc3a17c3262.png)
+![JMeter HTTP 请求自定义变量](https://assets.emqx.com/images/8f849f2ce19433d17af58dc3a17c3262.png)
 
 
 查看执行结果，能看到确实获取到了变量的取值：
 
-![JMeter 查看执行结果](https://static.emqx.net/images/17039b4f32149ebb3022e3adcb8ff6af.png)
+![JMeter 查看执行结果](https://assets.emqx.com/images/17039b4f32149ebb3022e3adcb8ff6af.png)
 
 ### CSV数据文件设置
 
 在性能测试过程中我们往往需要一些参数化的输入参数，比如登录操作里面的用户名密码。当并发量比较大的时候 ，运行时生成数据会对CPU和内存造成较大的负担，而CSV数据文件配置可以作为这种场景下所需的参数来源。
 
-![JMeter CSV数据文件设置](https://static.emqx.net/images/3328c7c6b1ce8a96549dc610ec5578ff.png)
+![JMeter CSV数据文件设置](https://assets.emqx.com/images/3328c7c6b1ce8a96549dc610ec5578ff.png)
 
 CSV数据文件设置中部分参数的说明如下：
 
@@ -256,7 +256,7 @@ JMeter 常用断言主要有响应断言（Response Assertion）、JSON断言（
 
 下图在一个HTTP取样器上添加 JSON 断言：
 
-![JMeter JSON 断言](https://static.emqx.net/images/e4ae8f84eb75360cede582bb2861edd2.png)
+![JMeter JSON 断言](https://assets.emqx.com/images/e4ae8f84eb75360cede582bb2861edd2.png)
 
 JSON断言配置项有：
 
@@ -271,19 +271,19 @@ JSON断言配置项有：
 
 下面以请求 http://www.kuaidi100.com/query 为例，其中 `$.message` 表示响应 json 对象的中 `message`，勾选 `Additionally assert value` 表示要根据 `message` 的值去判断，`Expected value` 为 `ok` 表示判断 `message`的值是否为 `ok`。
 
-![JMeter 请求结果](https://static.emqx.net/images/dc584e85b999283e68f3122f77155eac.png)
+![JMeter 请求结果](https://assets.emqx.com/images/dc584e85b999283e68f3122f77155eac.png)
 
 运行脚本，查看结果，可看到断言是通过的
 
-![JMeter断言通过](https://static.emqx.net/images/c735868f82ef5fb488e8ebe3e43f14a8.png)
+![JMeter断言通过](https://assets.emqx.com/images/c735868f82ef5fb488e8ebe3e43f14a8.png)
 
 断言的判断条件主要包括：如果响应结果不是 json 格式的，失败；如果 json path 找不到元素，失败；如果 json path 找到元素，没有设置条件，通过；如果 json path 找到元素，但不符合条件，失败；如果 json path 找到元素，且符合条件，通过；如果 json path 返回的是一个数组，会迭代判断是否有元素符合条件，有则通过，没有则失败。回到“JSON断言”，勾选 `Invert assertion`
 
-![JMeter断言](https://static.emqx.net/images/3b610e2ad1f89055bd5729826faa82c1.png)
+![JMeter断言](https://assets.emqx.com/images/3b610e2ad1f89055bd5729826faa82c1.png)
 
 运行脚本，查看结果，可看到断言是失败的
 
-![JMeter断言失败](https://static.emqx.net/images/9ad9c54de71e490aaccd4051881c9417.png)
+![JMeter断言失败](https://assets.emqx.com/images/9ad9c54de71e490aaccd4051881c9417.png)
 
 ## 七、定时器
 
@@ -300,15 +300,15 @@ JMeter定时器主要包括：固定定时器（Constant Timer），统一随机
 
 下图在一个事务控制器上添加固定定时器：
 
-![JMeter固定定时器](https://static.emqx.net/images/c31f586f340137ae74ace3baaa19acb8.png)
+![JMeter固定定时器](https://assets.emqx.com/images/c31f586f340137ae74ace3baaa19acb8.png)
 
 将线程延迟分别配置为 100 和 1000后，运行脚本
 
-![JMeter运行脚本](https://static.emqx.net/images/72543ccf59a6e58a49ec522df5f67ce7.png)
+![JMeter运行脚本](https://assets.emqx.com/images/72543ccf59a6e58a49ec522df5f67ce7.png)
 
 查看表格结果中的数据，其中1、2是配置为 100 毫秒时的运行结果，4、5是配置为 1000 毫秒时的运行结果，可看到 4、5 的间隔时间明显比 1、2 的间隔时间长
 
-![JMeter运行结果](https://static.emqx.net/images/0116363f71b3f38f17970aa4b3e4dff0.png)
+![JMeter运行结果](https://assets.emqx.com/images/0116363f71b3f38f17970aa4b3e4dff0.png)
 
 ### 常数吞吐量定时器:
 
@@ -316,15 +316,15 @@ JMeter定时器主要包括：固定定时器（Constant Timer），统一随机
 
 下图在一个事务控制器上添加常数吞吐量定时器：
 
-![JMeter常数吞吐量定时器](https://static.emqx.net/images/745e97e7ba5133e578b93524ff66b82c.png)
+![JMeter常数吞吐量定时器](https://assets.emqx.com/images/745e97e7ba5133e578b93524ff66b82c.png)
 
 配置目标吞吐量为 120（注意单位是分钟），基于计算吞吐量选择“当前线程组中的所有活动线程（共享）”
 
-![JMeter常数吞吐量定时器](https://static.emqx.net/images/1f16386de8c081d432519a4fb73b0772.png)
+![JMeter常数吞吐量定时器](https://assets.emqx.com/images/1f16386de8c081d432519a4fb73b0772.png)
 
 运行脚本，查看结果，可看到吞吐量基本维持在 2/每秒（120/60）
 
-![JMeter运行结果](https://static.emqx.net/images/ec2021f0f4cdd022cd7de7ba53d72034.png)
+![JMeter运行结果](https://assets.emqx.com/images/ec2021f0f4cdd022cd7de7ba53d72034.png)
 
 ## 八、前置处理器和后置处理器
 

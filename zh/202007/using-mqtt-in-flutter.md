@@ -184,19 +184,28 @@ client.disconnect();
 
 应用界面：
 
-![device.png](https://static.emqx.net/images/9c6e9d500faa607512eaa5d767630474.png)
+![device.png](https://assets.emqx.com/images/9c6e9d500faa607512eaa5d767630474.png)
 
 使用 MQTTX 作为另一个客户端进行消息收发：
 
-![mqttx_flutter.png](https://static.emqx.net/images/ac306b8d6139cdcd2a7446de58c87847.png)
+![mqttx_flutter.png](https://assets.emqx.com/images/ac306b8d6139cdcd2a7446de58c87847.png)
 
 
 我们可以看到整个过程的日志。
 
-![log.png](https://static.emqx.net/images/d5e2065b8265787de99d1daefd7ba444.png)
+![log.png](https://assets.emqx.com/images/d5e2065b8265787de99d1daefd7ba444.png)
 
 ## 总结
 
 至此，我们完成了在 Android 平台上利用 Flutter 构建 MQTT 应用，实现了客户端与 MQTT 服务器的连接、订阅、取消订阅、收发消息等功能。
 
 Flutter 通过统一的开发语言和跨平台特性让开发强大的移动应用变得十分容易，它将来可能会是开发移动应用的最佳解决方案。结合 Flutter、MQTT 协议及 [MQTT 云服务](https://www.emqx.com/zh/cloud)，我们可以开发更多有趣的应用。
+
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX Cloud
+        <div class="is-size-14 is-text-normal has-text-weight-normal">全托管的云原生 MQTT 消息服务</div>
+    </div>
+    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a >
+</section>
