@@ -195,3 +195,12 @@ Flask-MQTT 目前不适合使用多个工作实例，如果您需要使用 *geve
 ## 总结
 
 至此，我们使用 Flask-MQTT 完成了简单的 MQTT 客户端，并且可以在 Flask 应用中订阅、发布消息。
+
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX Cloud
+        <div class="is-size-14 is-text-normal has-text-weight-normal">全托管的云原生 MQTT 消息服务</div>
+    </div>
+    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a>
+</section>
