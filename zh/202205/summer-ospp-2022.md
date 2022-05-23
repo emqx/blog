@@ -4,7 +4,7 @@
 >
 > 开源之夏官方主页：[https://summer-ospp.ac.cn/](https://summer-ospp.ac.cn/) 
 
-今年，EMQ 将携旗下 EMQX、MQTT X、LF Edge eKuiper 三大开源项目首次参加开源之夏！
+今年，EMQ 将携 EMQX、MQTT X、LF Edge eKuiper 三大开源项目首次参加开源之夏！
 
 ## 三大开源项目介绍
 
