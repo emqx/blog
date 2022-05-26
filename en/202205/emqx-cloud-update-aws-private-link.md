@@ -1,6 +1,6 @@
 Recently, [EMQX Cloud](https://www.emqx.com/en/cloud), the fully-managed cloud-native MQTT service from EMQ, officially supports the establishment of a secure and stable private connection to AWS services via AWS PrivateLink. This enables bi-directional connectivity between public cloud services and EMQX Cloud deployments via intranet IP addresses.
 
-## What's AWS Private link？
+## What's AWS PrivateLink？
 
 AWS PrivateLink provides private connectivity between VPCs, AWS services, and your on-premises networks, without exposing your traffic to the public internet. AWS PrivateLink makes it easy to connect services across different accounts and VPCs to significantly simplify your network architecture.
 
@@ -20,7 +20,7 @@ You can connect services across different accounts and Amazon VPCs, with no need
 
 AWS PrivateLink makes it easier to migrate traditional on-premises applications to SaaS offerings hosted in the cloud.  Since your data does not get exposed to the Internet where it can be compromised, you can migrate and use more cloud services with the confidence that your traffic remains secure. You no longer have to choose between using a service and exposing your critical data to the Internet.
 
-## How to connect to EMQX Cloud via AWS Private Link
+## How to connect to EMQX Cloud via AWS PrivateLink
 
 > Note: The feature is only available in the professional plan.
 
