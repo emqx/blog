@@ -70,3 +70,8 @@ EMQX Cloud has formed a complete set of data security solutions in the five aspe
     </div>
     <a href="https://www.emqx.com/en/signup?continue=https://cloud-intl.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">Get Started →</a>
 </section>
+::: hljs-center
+
+居中
+
+:::

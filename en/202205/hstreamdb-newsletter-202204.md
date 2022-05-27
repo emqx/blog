@@ -46,3 +46,4 @@ Moreover, considering that we upgraded the original location of the HTTP Server 
 ### HStreamDB Erlang Client
 
 We added an Erlang client library hstreamdb-erlang for HStreamDB, GitHub address:[https://github.com/hstreamdb/hstreamdb-erlang](https://github.com/hstreamdb/hstreamdb-erlang) . It is mainly used to support efficient integration with the high-performance IoT message server [EMQX](https://www.emqx.com/en/products/emqx) to achieve the rapid and persistent storage of massive IoT data received by EMQX to HStreamDB and provide end-to-end solution of IoT data for users. The Erlang client has the essential capability of creating streams and writing data. However, the client is still in the early stage of development, and new features and performance optimization are ongoing.
+居中
