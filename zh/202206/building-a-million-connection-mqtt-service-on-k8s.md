@@ -1,10 +1,10 @@
-随着 Kubernetes（K8s） 的全面成熟，越来越多的组织开始大规模地基于 K8s 构建基础设施层。
+随着 Kubernetes（K8s）的全面成熟，越来越多的组织开始大规模地基于 K8s 构建基础设施层。
 
 根据 Sysdig 在容器编排领域的调研报告，K8s 在市场上的占有率高达 75%。在 K8s 部署运维工具中，Operator 和 Helm 是较为主流的两种。但由于 Helm 缺少对生命周期的管理，所以 Operator 在全生命期的管理中成为了唯一的选择。
 
 K8s Operator 是一种特定于应用的控制器，能持续监听 K8s 资源对象的变化事件，进行全生命期的监控响应，高可靠地完成部署交付。Operator 提供了一个框架，通俗来说就是把运维的经验沉淀为代码，实现运维的代码化、自动化、智能化。
 
-为了对云原生分布式 [MQTT 消息服务器 EMQX](https://www.emqx.com/zh/products/emqx) 进行全生命期管理， [EMQX Operator](https://www.emqx.com/zh/emqx-kubernetes-operator) 应运而生。 使用 EMQX Operator，即使在网络和存储环境复杂的 K8s 环境中，也可以轻松搭建百万连接的 MQTT 集群。本文将使用 EMQX Operator 进行基于 k8s 的百万级 MQTT 连接服务搭建，并通过测试验证搭建结果。
+为了对云原生分布式 [MQTT 消息服务器 EMQX](https://www.emqx.com/zh/products/emqx) 进行全生命期管理， [EMQX Operator](https://www.emqx.com/zh/emqx-kubernetes-operator) 应运而生。 使用 EMQX Operator，即使在网络和存储环境复杂的 K8s 环境中，也可以轻松搭建百万连接的 MQTT 集群。本文将使用 EMQX Operator 进行基于 K8s 的百万级 MQTT 连接服务搭建，并通过测试验证搭建结果。
 
 ## 什么是 EMQX Operator
 
