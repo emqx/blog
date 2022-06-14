@@ -10,7 +10,7 @@
 
 ![JMeter Kubernetes](https://assets.emqx.com/images/f048597d6a37226fcdc589669720a9be.png)
 
-如果希望使用其他云厂商的 Kubernetes 集群服务部署 XMeter 企业版 4.0.0 的测试资源，或者希望使用自建的 Kubernetes 服务，请点击文末「阅读原文」与我们取得联系以做进一步的评估。
+如果希望使用其他云厂商的 Kubernetes 集群服务部署 XMeter 企业版 4.0.0 的测试资源，或者希望使用自建的 Kubernetes 服务，请点击[联系我们](https://www.emqx.com/zh/contact?product=xmeter)与我们取得联系以做进一步的评估。
 
 ### 系统配置可在管理员端操作
 
