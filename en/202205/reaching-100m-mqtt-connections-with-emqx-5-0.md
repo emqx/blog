@@ -36,6 +36,8 @@ Even our benchmarking tool needed a few adjustments to help with such a large vo
 
 ![Test Results](https://assets.emqx.com/images/f83818eb466eb81ba61d57c90a245da2.gif)
  
+>**NOTE**:  In this test, all of the paired publishers and subscribers happened to reside in the same broker, which is not an ideal scenario close to real life use cases. The EMQX team is conducting more tests, and will follow up with more updates.
+
 
 The animation above illustrates our final results for the 1-to-1 publish-subscribe tests. We established 100 million connections, 50 M of which were subscribers and 50 M were publishers. By publishing every 90 seconds, we see that average inbound and outbound rates of over 1 M messages per second are achieved. At the publishing plateau, each of the 20 replicant nodes (which, we remind, are the ones taking in connections) consumed on average 90 % of its memory (about 113 GiB), and around 97 % CPU during the publishing waves (64 arm64 cores). The 3 core nodes handling the transactions were quite idle in CPU (less than 1 % usage) and used up only 28 % of their memory (about 36 GiB). The network traffic required during the publishing waves of 256 bytes payloads was between 240 and 290 MB / s. The *loadgens* required almost all their memory (about 120 GiB) and their entire CPU during the publishing plateau.
 
@@ -43,14 +45,24 @@ The animation above illustrates our final results for the 1-to-1 publish-subscri
 
 <center>Grafana screenshot of CPU, memory and network usage of EMQX nodes during the test</center>
 
-In order to compare a RLOG cluster with an equivalent Mnesia cluster, we used another topology with fewer total connections: 3 core nodes + 7 replicants for RLOG, and a 10-node Mnesia cluster where only 7 of those took in connections. With such topology, we performed connections and subscriptions without publishing at different rates. The plot below illustrates our results. For Mnesia, the faster we try to connect and subscribe to the nodes, the more we observe a "flattening" behavior, where the cluster is not able to reach the target maximum number of connections, which is 50 million in those tests. For RLOG, we see that we can reach higher connection rates without the cluster exhibiting such flattening behavior. With that, we see that Mria using RLOG can perform better under higher connection rates than the older Mnesia backend.
+In order to fairly compare a RLOG cluster to an equivalent Mnesia cluster, we used another topology with fewer total connections: 3 core nodes + 7 replicants for RLOG, and a 10-node Mnesia cluster where only 7 of those took in connections. With such topology, we performed connections and subscriptions without publishing at different rates. The plot below illustrates our results. For Mnesia, the faster we try to connect and subscribe to the nodes, the more we observe a "flattening" behavior, where the cluster is not able to reach the target maximum number of connections, which is 50 million in those tests. For RLOG, we see that we can reach higher connection rates without the cluster exhibiting such flattening behavior. With that, we see that Mria using RLOG can perform better under higher connection rates than the older Mnesia backend.
 
 ![Mria using RLOG can perform better under higher connection rates than the older Mnesia backend](https://assets.emqx.com/images/7972c44991b97d35264dd484b0b7f5c1.png)
  
 
 ## Final remarks
 
-After seeing those optimistic results, we believe that the RLOG DB backend offered by Mria is ready for production usage in EMQX 5.0. It is already the default DB backend in the current `master` branch, if you want to try it out today. It'll be available in the next 5.0.0 release candidate as well.
+After seeing those optimistic results, we believe that the RLOG DB backend offered by Mria is ready for production usage in EMQX 5.0. It is already the default DB backend in the current `master` branch.
+
+
+
+<section class="promotion">
+    <div>
+        Try EMQX Cloud for Free
+        <div class="is-size-14 is-text-normal has-text-weight-normal">A fully managed, cloud-native MQTT service</div>
+    </div>
+    <a href="https://www.emqx.com/en/signup?continue=https://cloud-intl.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">Get Started →</a>
+</section>
 
  
 
@@ -78,14 +90,4 @@ After seeing those optimistic results, we believe that the RLOG DB backend offer
 
 [11] - [feat: bump max procs to 16M by qzhuyan · Pull Request #138 · emqx/emqtt-bench](https://github.com/emqx/emqtt-bench/pull/138) 
 
-[12] - [feat: tune gc for publishing by thalesmg · Pull Request #164 · emqx/emqtt-bench](https://github.com/emqx/emqtt-bench/pull/164) 
-
-
-
-<section class="promotion">
-    <div>
-        Try EMQX Cloud for Free
-        <div class="is-size-14 is-text-normal has-text-weight-normal">A fully managed, cloud-native MQTT service</div>
-    </div>
-    <a href="https://www.emqx.com/en/signup?continue=https://cloud-intl.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">Get Started →</a>
-</section>
+[12] - [feat: tune gc for publishing by thalesmg · Pull Request #164 · emqx/emqtt-bench](https://github.com/emqx/emqtt-bench/pull/164)
