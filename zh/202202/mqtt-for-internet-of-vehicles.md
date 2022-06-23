@@ -82,6 +82,13 @@ Kafka 专注于数据的存储和读取，而 EMQX 则侧重于客户端和服�
 
 目前汽车电子发展迅速，助推车联网行业技术升级，智能交通及汽车行业未来市场前景可观，可以预见有更多的车主消费者和骑车厂家将从中收益。基于完善的 MQTT 协议和 EMQX 强大的产品能力可以帮助车联网平台开发者快速构建健壮、灵活的车联网平台。EMQ 也将紧跟行业发展趋势，推进消息传输和边缘计算相关的技术发展和落地，为自动驾驶、车辆协同、车联网用户提供更快、更好、更智能的消息服务基础设置。
 
+<section class="promotion">
+    <div>
+        免费试用 EMQX Cloud
+        <div class="is-size-14 is-text-normal has-text-weight-normal">全托管的云原生 MQTT 消息服务</div>
+    </div>
+    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a >
+</section>
 
 ## 本系列中的其它文章
 
@@ -95,11 +102,4 @@ Kafka 专注于数据的存储和读取，而 EMQX 则侧重于客户端和服�
 
 - [车联网平台搭建从入门到精通 06 | 车联网通信安全之 SSL/TLS 协议](https://www.emqx.com/zh/blog/ssl-tls-for-internet-of-vehicles-communication-security)
 
-
-<section class="promotion">
-    <div>
-        免费试用 EMQX Cloud
-        <div class="is-size-14 is-text-normal has-text-weight-normal">全托管的云原生 MQTT 消息服务</div>
-    </div>
-    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a >
-</section>
+- [车联网平台搭建从入门到精通 07 | 车联网中 MQTT 心跳保活与远程唤醒设计](https://www.emqx.com/zh/blog/mqtt-keep-alive-design-in-the-internet-of-vehicles)

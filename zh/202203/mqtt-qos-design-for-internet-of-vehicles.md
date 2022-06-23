@@ -70,6 +70,16 @@ MQTT 设计了 3 个 QoS 等级：
 
 通过本文我们可以看到，MQTT 协议的 QoS 特性对于车联网场景下消息数据的安全传输具有重要意义。作为完整支持 MQTT 协议标准的云原生分布式消息服务器，EMQX 在产品设计中充分利用 MQTT 协议的特性优势，为物联网平台与应用构建提供可靠的数据连接、移动、处理与集成。
 
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX Cloud
+        <div class="is-size-14 is-text-normal has-text-weight-normal">无须绑定信用卡</div>
+    </div>
+    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a >
+</section>
+
+
 ## 本系列中的其它文章
 
 - [车联网平台搭建从入门到精通 01 | 车联网场景中的 MQTT 协议](https://www.emqx.com/zh/blog/mqtt-for-internet-of-vehicles)
@@ -82,12 +92,4 @@ MQTT 设计了 3 个 QoS 等级：
 
 - [车联网平台搭建从入门到精通 06 | 车联网通信安全之 SSL/TLS 协议](https://www.emqx.com/zh/blog/ssl-tls-for-internet-of-vehicles-communication-security)
 
-
-
-<section class="promotion">
-    <div>
-        免费试用 EMQX Cloud
-        <div class="is-size-14 is-text-normal has-text-weight-normal">无须绑定信用卡</div>
-    </div>
-    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a >
-</section>
+- [车联网平台搭建从入门到精通 07 | 车联网中 MQTT 心跳保活与远程唤醒设计](https://www.emqx.com/zh/blog/mqtt-keep-alive-design-in-the-internet-of-vehicles)

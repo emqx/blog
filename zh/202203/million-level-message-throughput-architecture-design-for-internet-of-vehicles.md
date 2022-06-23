@@ -147,6 +147,13 @@ InfluxDB 是一个高性能的时序数据库，被广泛应用于存储系统�
 
 通过本文，我们介绍了车联网场景消息吞吐设计需要考虑的因素，同时提供了两种较为主流的百万级吞吐平台架构设计方案。面对车联网场景下日益增加的数据量，希望本文能够为相关团队和开发者在车联网平台设计与开发过程中提供参考。
 
+<section class="promotion">
+    <div>
+        免费试用 EMQX 企业版
+    </div>
+    <a href="https://www.emqx.com/zh/try?product=enterprise" class="button is-gradient px-5">开始试用 →</a >
+</section>
+
 
 ## 本系列中的其它文章
 
@@ -160,12 +167,4 @@ InfluxDB 是一个高性能的时序数据库，被广泛应用于存储系统�
 
 - [车联网平台搭建从入门到精通 06 | 车联网通信安全之 SSL/TLS 协议](https://www.emqx.com/zh/blog/ssl-tls-for-internet-of-vehicles-communication-security)
 
-
-
-
-<section class="promotion">
-    <div>
-        免费试用 EMQX 企业版
-    </div>
-    <a href="https://www.emqx.com/zh/try?product=enterprise" class="button is-gradient px-5">开始试用 →</a >
-</section>
+- [车联网平台搭建从入门到精通 07 | 车联网中 MQTT 心跳保活与远程唤醒设计](https://www.emqx.com/zh/blog/mqtt-keep-alive-design-in-the-internet-of-vehicles)

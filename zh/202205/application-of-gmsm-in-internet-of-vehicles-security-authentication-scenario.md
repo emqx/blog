@@ -401,6 +401,15 @@ SM9 是基于对的标识密码算法，与 SM2 类似，包含四个部分：�
 EMQ 车联网 GmSSL 集成解决方案紧密对接车联网产业对网络安全、数据安全的迫切需求，为车联网通信安全提供了有力保障。目前已经部署应用在车联网平台安全认证和 V2X 车路协同等多个车云安全通信场景。
 
 
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX 企业版
+    </div>
+    <a href="https://www.emqx.com/zh/try?product=enterprise" class="button is-gradient px-5">开始试用 →</a>
+</section>
+
+
 ## 本系列中的其它文章
 
 - [车联网平台搭建从入门到精通 01 | 车联网场景中的 MQTT 协议](https://www.emqx.com/zh/blog/mqtt-for-internet-of-vehicles)
@@ -409,11 +418,4 @@ EMQ 车联网 GmSSL 集成解决方案紧密对接车联网产业对网络安全
 - [车联网平台搭建从入门到精通 04 | MQTT QoS 设计：车联网平台消息传输质量保障](https://www.emqx.com/zh/blog/mqtt-qos-design-for-internet-of-vehicles)
 - [车联网平台搭建从入门到精通 05 | 车联网平台百万级消息吞吐架构设计](https://www.emqx.com/zh/blog/million-level-message-throughput-architecture-design-for-internet-of-vehicles)
 - [车联网平台搭建从入门到精通 06 | 车联网通信安全之 SSL/TLS 协议](https://www.emqx.com/zh/blog/ssl-tls-for-internet-of-vehicles-communication-security)
-
-
-<section class="promotion">
-    <div>
-        免费试用 EMQX 企业版
-    </div>
-    <a href="https://www.emqx.com/zh/try?product=enterprise" class="button is-gradient px-5">开始试用 →</a>
-</section>
+- [车联网平台搭建从入门到精通 07 | 车联网中 MQTT 心跳保活与远程唤醒设计](https://www.emqx.com/zh/blog/mqtt-keep-alive-design-in-the-internet-of-vehicles)

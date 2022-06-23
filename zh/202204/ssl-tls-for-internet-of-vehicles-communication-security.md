@@ -190,6 +190,14 @@ ssl:connect("zhouzb.club", 8883, [{cacertfile, "etc/certs/zhouzb.club/DigiCertGl
 工业和信息化部印发的《车联网网络安全和数据安全标准系统建设指南》中明确指出，要构建车联网网络安全和数据安全的标准体系。车联网领域的网络通信安全和数据安全将受到越来越多的关注，是车联网企业提高竞争力的关键影响因素之一。希望通过本文，读者可以掌握 SSL/TLS 协议的使用方式，在实际业务场景中正确应用，实现车联网通信安全保障。
 
 
+<section class="promotion">
+    <div>
+        免费试用 EMQX 企业版
+    </div>
+    <a href="https://www.emqx.com/zh/try?product=enterprise" class="button is-gradient px-5">开始试用 →</a >
+</section>
+
+
 ## 本系列中的其它文章
 
 - [车联网平台搭建从入门到精通 01 | 车联网场景中的 MQTT 协议](https://www.emqx.com/zh/blog/mqtt-for-internet-of-vehicles)
@@ -202,10 +210,4 @@ ssl:connect("zhouzb.club", 8883, [{cacertfile, "etc/certs/zhouzb.club/DigiCertGl
 
 - [车联网平台搭建从入门到精通 05 | 车联网平台百万级消息吞吐架构设计](https://www.emqx.com/zh/blog/million-level-message-throughput-architecture-design-for-internet-of-vehicles)
 
-
-<section class="promotion">
-    <div>
-        免费试用 EMQX 企业版
-    </div>
-    <a href="https://www.emqx.com/zh/try?product=enterprise" class="button is-gradient px-5">开始试用 →</a >
-</section>
+- [车联网平台搭建从入门到精通 07 | 车联网中 MQTT 心跳保活与远程唤醒设计](https://www.emqx.com/zh/blog/mqtt-keep-alive-design-in-the-internet-of-vehicles)
