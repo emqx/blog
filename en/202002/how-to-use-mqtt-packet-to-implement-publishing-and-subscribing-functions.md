@@ -152,7 +152,7 @@ If the retain flag of the Publish packet sent by the client to the server is 0, 
 
 #### Payload
 
-The payload contains application messages to be published. The content and format of the data is specific to the application and images, any encoded text, encrypted data, and almost all binary data can be sent .
+The payload contains application messages to be published. The content and format of the data is specific to the application and images, any encoded text, encrypted data, and almost all binary data can be sent.
 
 <section class="promotion">
     <div>

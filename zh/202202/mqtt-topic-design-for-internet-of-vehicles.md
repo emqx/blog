@@ -187,6 +187,15 @@ EMQX 企业版提供了以主题为监控维度的运行数据监控，可以在
 随着 MQTT 协议在车联网业务中的广泛普及，车联网 TSP 平台的 MQTT 消息主题设计将是各主机厂与 TSP 平台方案供应商必须面对的课题。本文是我们结合多年 TSP 平台建设经验，针对车联网业务从多维度总结的 MQTT 主题设计思路，希望能够在平台前期设计与业务扩展阶段给行业同仁一些帮助与启发。
 
 
+<section class="promotion">
+    <div>
+        免费试用 EMQX Cloud
+        <div class="is-size-14 is-text-normal has-text-weight-normal">全托管的云原生 MQTT 消息服务</div>
+    </div>
+    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a >
+</section>
+
+
 ## 本系列中的其它文章
 
 - [车联网平台搭建从入门到精通 01 | 车联网场景中的 MQTT 协议](https://www.emqx.com/zh/blog/mqtt-for-internet-of-vehicles)
@@ -199,11 +208,4 @@ EMQX 企业版提供了以主题为监控维度的运行数据监控，可以在
 
 - [车联网平台搭建从入门到精通 06 | 车联网通信安全之 SSL/TLS 协议](https://www.emqx.com/zh/blog/ssl-tls-for-internet-of-vehicles-communication-security)
 
-
-<section class="promotion">
-    <div>
-        免费试用 EMQX Cloud
-        <div class="is-size-14 is-text-normal has-text-weight-normal">全托管的云原生 MQTT 消息服务</div>
-    </div>
-    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a >
-</section>
+- [车联网平台搭建从入门到精通 07 | 车联网中 MQTT 心跳保活与远程唤醒设计](https://www.emqx.com/zh/blog/mqtt-keep-alive-design-in-the-internet-of-vehicles)

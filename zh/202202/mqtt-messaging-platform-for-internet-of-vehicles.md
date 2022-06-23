@@ -154,6 +154,13 @@ EMQX 为人、路端提供针对手机 APP、RSU 等终端的消息采集和处�
 
 EMQ 作为全球领先的物联网数据基础设施软件提供商，致力于构建高性能、低延时、高可用、高可靠的产品，为新一代车联网体系提供消息采集、移动、处理和分析的整体解决方案，为整车制造商、T1 供应商、后市场服务商、出行服务公司和政府管理机构的自动驾驶、智能网联汽车业务提供基础设施服务保障，实现人、车、路、云的智能连接。
 
+<section class="promotion">
+    <div>
+        免费试用 EMQX Cloud
+        <div class="is-size-14 is-text-normal has-text-weight-normal">全托管的云原生 MQTT 消息服务</div>
+    </div>
+    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a >
+</section>
  
 
 > **关于作者**
@@ -174,11 +181,4 @@ EMQ 作为全球领先的物联网数据基础设施软件提供商，致力于�
 
 - [车联网平台搭建从入门到精通 06 | 车联网通信安全之 SSL/TLS 协议](https://www.emqx.com/zh/blog/ssl-tls-for-internet-of-vehicles-communication-security)
 
-
-<section class="promotion">
-    <div>
-        免费试用 EMQX Cloud
-        <div class="is-size-14 is-text-normal has-text-weight-normal">全托管的云原生 MQTT 消息服务</div>
-    </div>
-    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a >
-</section>
+- [车联网平台搭建从入门到精通 07 | 车联网中 MQTT 心跳保活与远程唤醒设计](https://www.emqx.com/zh/blog/mqtt-keep-alive-design-in-the-internet-of-vehicles)
