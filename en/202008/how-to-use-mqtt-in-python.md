@@ -52,7 +52,7 @@ Set the address, port and topic of MQTT Broker connection. At the same time, we 
 ```python
 broker = 'broker.emqx.io'
 port = 1883
-topic = "/python/mqtt"
+topic = "python/mqtt"
 client_id = f'python-mqtt-{random.randint(0, 1000)}'
 # username = 'emqx'
 # password = 'public'
@@ -79,7 +79,7 @@ def connect_mqtt():
 
 ### Publish messages
 
-First, we define a while loop. In this loop, and we will set the MQTT client `publish` function to send messages to the topic `/python/mqtt` every second.
+First, we define a while loop. In this loop, and we will set the MQTT client `publish` function to send messages to the topic `python/mqtt` every second.
 
 ```python
  def publish(client):
@@ -99,7 +99,7 @@ First, we define a while loop. In this loop, and we will set the MQTT client `pu
 
 ### Subscribe
 
-Write the message callback function `on_message`. This function will be called after the client received messages from the MQTT Broker. In this function, we will print out the name of subscribed topics and the received messages. 
+Write the message callback function `on_message`. This function will be called after the client received messages from the MQTT Broker. In this function, we will print out the name of subscribed topics and the received messages.
 
 ```python
 def subscribe(client: mqtt_client):
@@ -112,7 +112,7 @@ def subscribe(client: mqtt_client):
 
 ### The full code
 
- **The code of publishing messages** 
+**The code of publishing messages**
 
 ```python
 # python 3.6
