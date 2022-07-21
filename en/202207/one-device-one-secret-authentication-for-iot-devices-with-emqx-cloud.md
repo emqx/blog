@@ -108,7 +108,7 @@ You can adapt the authentication query command to your business needs, using any
 
 ② If the salt configuration is enabled, the second data in the query result must be the salt field, which is used by EMQX as the salt value
 
-In the deployment, click Authentication Authentication - External Authentication Authorization - Redis Authentication/Access Control and click Configure Authentication to create a new authentication.
+In the deployment, click Authentication & ACL - External Authentication Authorization - Redis Authentication/Access Control and click Configure Authentication to create a new authentication.
 
 The authentication query command is available as follows:
 
