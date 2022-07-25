@@ -143,3 +143,8 @@ Core 节点需要较大的内存，在不承接连接的情况下，CPU 消耗�
 > - [Challenges and Solutions of EMQX horizontal scalability - MQTT broker clustering part 3](https://www.emqx.com/en/blog/mqtt-broker-clustering-part-3-challenges-and-solutions-of-emqx-horizontal-scalability)
 >
 > - [高度可扩展，EMQX 5.0 达成 1 亿 MQTT 连接](https://www.emqx.com/zh/blog/reaching-100m-mqtt-connections-with-emqx-5-0)
+
+
+## 本系列中的其它文章
+
+- [EMQX 5.0 产品解读 02 | MQTT over QUIC：物联网消息传输还有更多可能](https://www.emqx.com/zh/blog/mqtt-over-quic)
