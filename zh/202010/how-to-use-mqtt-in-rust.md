@@ -1,6 +1,6 @@
 [Rust](https://www.rust-lang.org/zh-CN/)  是由 Mozilla 主导开发的通用、编译型编程语言。该语言的设计准则为：安全、并发、实用，支持 [函数式](https://zh.wikipedia.org/wiki/函數程式語言)、[并发式](https://zh.wikipedia.org/wiki/演员模型)、[过程式](https://zh.wikipedia.org/wiki/程序編程)以及[面向对象](https://zh.wikipedia.org/wiki/面向对象程序设计)的编程风格。Rust 速度惊人且内存利用率极高。由于没有运行时和垃圾回收，它能够胜任对性能要求特别高的服务，可以在嵌入式设备上运行，还能轻松和其他语言集成。Rust 丰富的类型系统和所有权模型保证了内存安全和线程安全，让您在编译期就能够消除各种各样的错误。
 
-[MQTT](https://www.emqx.com/zh/mqtt) 是一种基于发布/订阅模式的 **轻量级物联网消息传输协议** ，可以用极少的代码和带宽为联网设备提供实时可靠的消息服务，它广泛应用于物联网、移动互联网、智能硬件、车联网、电力能源等行业。
+[MQTT](https://www.emqx.com/zh/mqtt) 是一种基于发布/订阅模式的 **轻量级物联网消息传输协议** ，可以用极少的代码和带宽为联网设备提供实时可靠的消息服务，它广泛应用于物联网、移动互联网、智能硬件、[车联网](https://www.emqx.com/zh/blog/category/internet-of-vehicles)、电力能源等行业。
 
 本文主要介绍如何在 Rust 项目中使用 **paho-mqtt** 客户端库 ，实现客户端与 MQTT 服务器的连接、订阅、取消订阅、收发消息等功能。
 

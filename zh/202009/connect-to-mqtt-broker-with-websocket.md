@@ -16,7 +16,7 @@ WebSocket 使得客户端和服务器之间的数据交换变得更加简单，�
 
 ### MQTT.js
 
-[MQTT.js](https://github.com/mqttjs/MQTT.js) 是一个完全开源的 MQTT 协议的客户端库，使用 JavaScript 编写，可用于 Node.js 和浏览器。在 Node.js 端可以通过全局安装使用命令行连接，同时支持  MQTT/TCP、MQTT/TLS、MQTT/WebSocket 连接；值得一提的是 MQTT.js 还对微信小程序有较好的支持。
+[MQTT.js](https://github.com/mqttjs/MQTT.js) 是一个完全开源的 MQTT 协议的客户端库，使用 JavaScript 编写，可用于 Node.js 和浏览器。在 Node.js 端可以通过全局安装使用命令行连接，同时支持  MQTT/TCP、MQTT/TLS、MQTT/WebSocket 连接；值得一提的是 MQTT.js 还对[微信小程序](https://www.emqx.com/zh/blog/how-to-use-mqtt-in-wechat-miniprogram)有较好的支持。
 
 本文将使用 MQTT.js 库进行 WebSocket 的连接讲解。
 

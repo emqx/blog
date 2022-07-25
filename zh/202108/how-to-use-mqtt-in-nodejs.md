@@ -1,6 +1,6 @@
 [Node.js](https://nodejs.org/zh-cn/) 是一个基于 [Chrome V8 引擎](https://v8.dev/) 的 JavaScript 运行时环境。在 Node.js 出现之前，JavaScript 通常作为客户端程序设计语言使用，以 JavaScript 写出的程序常在用户的浏览器上运行。Node.js 的出现使 JavaScript 也能用于服务端编程。
 
-[MQTT](https://www.emqx.com/zh/mqtt) 是一种基于发布/订阅模式的轻量级物联网消息传输协议，可以用极少的代码和带宽为联网设备提供实时可靠的消息服务，它广泛应用于物联网、移动互联网、智能硬件、车联网、电力能源等行业。
+[MQTT](https://www.emqx.com/zh/mqtt) 是一种基于发布/订阅模式的轻量级物联网消息传输协议，可以用极少的代码和带宽为联网设备提供实时可靠的消息服务，它广泛应用于物联网、移动互联网、智能硬件、[车联网](https://www.emqx.com/zh/blog/category/internet-of-vehicles)、电力能源等行业。
 
 本文主要介绍如何在 Node.js 项目中使用 MQTT 实现客户端与 MQTT 服务器的连接、订阅、取消订阅、收发消息等功能。
 

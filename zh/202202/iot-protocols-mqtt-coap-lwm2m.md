@@ -127,7 +127,7 @@ MQTT 采用发布订阅模式通信，发布订阅模式区别于传统的客户
 
 MQTT 是 IoT 领域的最重要的标准协议之一，广泛用于物联网、车联网、工业物联网、智能家居、智慧城市、电力石油能源等行业。
 
-MQTT 是 AWS IoT Core、 Azure IoT Hub、阿里云物联网平台等顶级云厂商物联网平台标准通信协议，是工业互联网、车联网、智能家居等各个行业以及诸多网关协议上云的首选协议。
+MQTT 是 AWS IoT Core、 Azure IoT Hub、阿里云物联网平台等顶级云厂商物联网平台标准通信协议，是[工业互联网](https://www.emqx.com/zh/use-cases/industrial-iot)、[车联网](https://www.emqx.com/zh/blog/category/internet-of-vehicles)、[智能家居](https://www.emqx.com/zh/blog/tag/%E6%99%BA%E8%83%BD%E5%AE%B6%E5%B1%85)等各个行业以及诸多网关协议上云的首选协议。
 
 [EMQX](https://www.emqx.com/zh/products/emqx) 作为全球最热门、最成熟的 MQTT Broker 之一，提供了「随处运行，无限连接，任意集成」云原生分布式物联网接入平台，一体化的分布式 MQTT 消息服务和强大的 IoT 规则引擎，为高可靠、高性能的物联网实时数据移动、处理和集成提供动力，助力企业快速构建关键业务的 IoT 平台与应用。
 
