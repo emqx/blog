@@ -1,6 +1,6 @@
 [Dart](https://dart.dev/) 是一种为客户端开发而设计的编程语言，比如用于 Web 和移动应用，它由 Google 主导开发，于 2011 年 10 月公开。它的开发团队由 Google Chrome 浏览器 V8 引擎团队的领导者拉尔斯·巴克主持，目标在于成为下一代结构化 Web 开发语言。类似 JavaScript，Dart 也是一种面向对象语言，但是它采用基于类的编程。它只允许单一继承继承，语法风格接近 C 语言。Dart 可在任何平台上开发快速的应用程序。其目标是为多平台开发提供最高效的编程语言，并为应用程序框架搭配了[灵活的运行时执行平台](https://dart.cn/overview#platform)。
 
-[MQTT](https://www.emqx.com/zh/mqtt) 是一种基于发布/订阅模式的 **轻量级物联网消息传输协议** ，可以用极少的代码和带宽为联网设备提供实时可靠的消息服务，它广泛应用于物联网、移动互联网、智能硬件、车联网、电力能源等行业。
+[MQTT](https://www.emqx.com/zh/mqtt) 是一种基于发布/订阅模式的 **轻量级物联网消息传输协议** ，可以用极少的代码和带宽为联网设备提供实时可靠的消息服务，它广泛应用于物联网、移动互联网、智能硬件、[车联网](https://www.emqx.com/zh/blog/category/internet-of-vehicles)、电力能源等行业。
 
 本文主要介绍如何在 Dart 项目中使用 [mqtt_client](https://pub.dev/packages/mqtt_client) 库 ，实现客户端与 [MQTT 服务器](https://www.emqx.io/zh)的连接、订阅、收发消息等功能。
 

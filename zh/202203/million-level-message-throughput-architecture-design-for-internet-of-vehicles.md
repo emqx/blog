@@ -166,5 +166,3 @@ InfluxDB 是一个高性能的时序数据库，被广泛应用于存储系统�
 - [车联网平台搭建从入门到精通 04 | MQTT QoS 设计：车联网平台消息传输质量保障](https://www.emqx.com/zh/blog/mqtt-qos-design-for-internet-of-vehicles)
 
 - [车联网平台搭建从入门到精通 06 | 车联网通信安全之 SSL/TLS 协议](https://www.emqx.com/zh/blog/ssl-tls-for-internet-of-vehicles-communication-security)
-
-- [车联网平台搭建从入门到精通 07 | 车联网中 MQTT 心跳保活与远程唤醒设计](https://www.emqx.com/zh/blog/mqtt-keep-alive-design-in-the-internet-of-vehicles)
