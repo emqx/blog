@@ -1,4 +1,4 @@
-[MQTT Web Toolkit ](http://tools.emqx.io)是 EMQ 最近开源的一款 MQTT (WebSocket) 测试工具，支持线上 ([tools.emqx.io](http://tools.emqx.io)) 访问使用。该工具采用了聊天界面形式，简化了页面操作逻辑，方便用户快速测试验证 [MQTT](https://www.emqx.com/zh/mqtt) 应用场景。
+[MQTT Web Toolkit ](http://www.emqx.io/online-mqtt-client/)是 EMQ 最近开源的一款 MQTT (WebSocket) 测试工具，支持线上 ([www.emqx.io/online-mqtt-client/](http://www.emqx.io/online-mqtt-client/)) 访问使用。该工具采用了聊天界面形式，简化了页面操作逻辑，方便用户快速测试验证 [MQTT](https://www.emqx.com/zh/mqtt) 应用场景。
 
 
 ## 功能简介
@@ -12,7 +12,7 @@
 
 ### 创建/删除链接
 
-使用浏览器打开地址 [tools.emqx.io](http://tools.emqx.io)，点击左下角的 **New Connection** 按钮，在弹出框里输入链接信息创建链接。
+使用浏览器打开地址 [www.emqx.io/online-mqtt-client/](http://www.emqx.io/online-mqtt-client/)，点击左下角的 **New Connection** 按钮，在弹出框里输入链接信息创建链接。
 
 鼠标 **Hover** 到左侧链接列表里的某一项时，会显示删除图标，点击该图标可删除该链接。
 
@@ -33,7 +33,7 @@
 
 
 
-欢迎访问 [tools.emqx.io](http://tools.emqx.io) 在线试用。
+欢迎访问 [www.emqx.io/online-mqtt-client/](http://www.emqx.io/online-mqtt-client/) 在线试用。
 
 ------
 

@@ -60,7 +60,7 @@ MQTT X Web 是一款开源的 MQTT 5.0 浏览器客户端，也是一个在线 M
 
 了解详情可查看 MQTT X Web GitHub 仓库：[https://github.com/emqx/MQTTX/tree/main/web](https://github.com/emqx/MQTTX/tree/main/web) 
 
-快速使用和体验课访问 MQTT X Web 在线地址：[http://tools.emqx.io/](http://tools.emqx.io/) 
+快速使用和体验课访问 MQTT X Web 在线地址：[http://www.emqx.io/online-mqtt-client/](http://www.emqx.io/online-mqtt-client/) 
 
 > 注意：在浏览器端只支持使用 WebSocket 连接到 MQTT 服务，请注意配置连接 MQTT 的协议和端口号，目前仅支持使用部分 MQTT X 的功能，我们将在后续继续同步与更新，将尽快统一 MQTT X 本地与在线工具的使用体验。
 

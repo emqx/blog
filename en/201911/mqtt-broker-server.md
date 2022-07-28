@@ -82,11 +82,11 @@ To facilitate testing, we use the online broker provided by  [EMQ](<https://gith
 >
 > **Broker port**： 1883、8883（SSL）、8083（Websocket）、8084（WSS）
 
-We use the online version of the WebSocket tool provided by EMQ to connect to the client :[http://tools.emqx.io](http://tools.emqx.io/)。
+We use the online version of the WebSocket tool provided by EMQ to connect to the client :[http://www.emqx.io/online-mqtt-client/](http://www.emqx.io/online-mqtt-client/)。
 
 ### MQTT broker connection
 
-Open the address [http://tools.emqx.io](http://tools.emqx.io/) using the browser, click the **New Connection** button in the lower left corner, and fill in the link information in the box on the right. Fill out the required fields and click the **Connect** button to create a link and connect to the Broker.
+Open the address [http://www.emqx.io/online-mqtt-client/](http://www.emqx.io/online-mqtt-client/) using the browser, click the **New Connection** button in the lower left corner, and fill in the link information in the box on the right. Fill out the required fields and click the **Connect** button to create a link and connect to the Broker.
 
 ![image20191021162759103.png](https://assets.emqx.com/images/30b5213111f97b77b0d240bf362c5884.png)
 

@@ -277,7 +277,7 @@ The interface and interaction of MQTT WebSocket Toolkit still use the design and
 
 **Operating system:** Windows, macOS, Linux, Chrome OS
 
-**Online address:** [MQTT WebSocket Toolkit](http://tools.emqx.io/)
+**Online address:** [MQTT WebSocket Toolkit](http://www.emqx.io/online-mqtt-client/)
 
 **Project address:** [MQTT WebSocket Toolkit GitHub](https://github.com/emqx/MQTT-Web-Toolkit)
 

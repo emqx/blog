@@ -173,9 +173,9 @@ Follow these steps to edit the code to suit your own Wi-Fi and MQTT settings
 
 - MQTT client receives messages
 
-  - Use [MQTT Websocket Toolkit](<http://tools.emqx.io/>)  to test the reported message
+  - Use [MQTT Websocket Toolkit](<http://www.emqx.io/online-mqtt-client/>)  to test the reported message
 
-    > MQTT Websocket Toolkit is a recently open sourced MQTT (WebSocket) test tool from EMQ, which supports online access (tools.emqx.io). We can easily verify whether the NodeMCU reports MQTT messages.
+    > MQTT Websocket Toolkit is a recently open sourced MQTT (WebSocket) test tool from EMQ, which supports online access (www.emqx.io/online-mqtt-client/). We can easily verify whether the NodeMCU reports MQTT messages.
 
     1. Create an MQTT connection
        ![695302069d88c8000fac11ea8c544c8dd42b0d25.png](https://assets.emqx.com/images/6b70ac640041ab7aadb211553bc729e8.png)
