@@ -83,11 +83,11 @@ MQTT Broker 广泛应用于：电力、新能源、智慧城市、智能家居�
 >
 > **Broker 端口**： 1883、8883（SSL）、8083（Websocket）、8084（WSS）
 
-连接客户端我们使用 EMQ 提供的线上版 Websocket 工具：[http://tools.emqx.io](http://tools.emqx.io/)。
+连接客户端我们使用 EMQ 提供的线上版 Websocket 工具：[http://www.emqx.io/online-mqtt-client/](http://www.emqx.io/online-mqtt-client/)。
 
 ### MQTT Broker 的连接
 
-使用浏览器打开地址 [http://tools.emqx.io](http://tools.emqx.io/)，点击左下角的 **New Connection** 按钮，并在右侧框里填写链接信息，填写好必填字段后点击 **Connect** 按钮创建链接并连接至 Broker。
+使用浏览器打开地址 [http://www.emqx.io/online-mqtt-client/](http://www.emqx.io/online-mqtt-client/)，点击左下角的 **New Connection** 按钮，并在右侧框里填写链接信息，填写好必填字段后点击 **Connect** 按钮创建链接并连接至 Broker。
 
 ![image20191021162759103.png](https://assets.emqx.com/images/e1b4f7bd9aa72ca5ff936524c6c8aec4.png)
 

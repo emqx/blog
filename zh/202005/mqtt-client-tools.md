@@ -279,7 +279,7 @@ MQTT WebSocket Toolkit 的界面和交互沿用了 [MQTT X](https://mqttx.app/zh
 
 **操作系统：** Windows，macOS，Linux
 
-**在线地址：** [MQTT WebSocket Toolkit](http://tools.emqx.io/)
+**在线地址：** [MQTT WebSocket Toolkit](http://www.emqx.io/online-mqtt-client/)
 
 **项目地址：** [MQTT WebSocket Toolkit GitHub](https://github.com/emqx/MQTT-Web-Toolkit)
 
