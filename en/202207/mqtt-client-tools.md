@@ -1,64 +1,159 @@
-With the rapid development of the IoT industry, the MQTT protocol is being used by more and more companies and developers. In the process of [learning and using MQTT](https://www.emqx.com/en/mqtt), a handy client tool can greatly facilitate developers to explore MQTT features and debug IoT applications, shortening the development cycle.
+## Overview
 
-There is a wide variety of MQTT client tools with different functional focuses. For beginners and even MQTT experts, it is a challenge to choose a suitable MQTT client tool.
+During learning and using [MQTT](https://www.emqx.com/en/mqtt), a handy client tool can greatly facilitate the user to explore the MQTT features and debug the functional components. Developers from all over the world have developed a number of client test tools for the MQTT protocol around different operating systems.
 
-This article combines the experience of EMQ engineers, lists some client tools that we think are very good, and categorizes them by desktop, browser, and command line. To help MQTT developers quickly find a suitable MQTT client tool.
+The type of these [MQTT client tools](https://www.emqx.com/en/blog/mqtt-client-tools) is various, with different features emphasis. Therefore, as for beginners and even MQTT experts, how to choose a suitable MQTT client tool is a problem. 
 
+This article will collect and sort out as much as possible, and make a comprehensive evaluation of various MQTT client tools on the market for readers' reference.
 
+## Features required for MQTT client tools
 
-## How to choose an MQTT client?
+MQTT client tools are often used to establish connections with the [MQTT broker](https://www.emqx.com/en/products/emqx) for subscribing topics and receiving and publishing messages. The characteristic of functions for an MQTT client tool can be evaluated from the following aspects:
 
-MQTT client tools are commonly used to establish connections to [MQTT brokers](https://www.emqx.com/en/mqtt/public-mqtt5-broker) for subscription, message sending and receiving operations. A good MQTT client tool should have the following features.
-
-- Support for one-way and two-way SSL authentication.
-- Support for [MQTT 5](https://www.emqx.com/en/mqtt/mqtt5) features.
-- Maintain ease of use on a full-featured basis.
-- Support for multiple clients online at the same time.
+- In each usage phase, the tool needs to provide as much comprehensive parameter configuration capabilities to facilitate to users cope with any using scenarios and simulation tests of using ways. For example, supporting client authentication, configuring certificates and various encryption connections, configuring multiple parameters during the connection, publishing, and subscription process of MQTT, supporting [MQTT 5](https://www.emqx.com/en/mqtt/mqtt5), etc.
+- Enhance user interaction convenience on a full-featured basis and operating interface fluently.
+- Provide other extension functions, such as supporting multiple client connections and [MQTT protocol](https://www.emqx.com/en/mqtt) debugging at the same time.
 - Cross-platform, available under different operating systems.
-- Support MQTT over WebSocket.
-- Advanced features: Customized script, logging, payload format conversion, etc.
+- Whether supporting multiple languages such as Chinese/English.
+- Whether support MQTT payload format converting.
 
+This article will combine the features of each MQTT client tool to introduce evaluations from the above aspects. The participating client tools are as follows:
 
+- MQTT X
 
-## MQTT desktop client
+- Mosquitto CLI
 
-### MQTT X
+- MQTT.fx
 
-[MQTT X](https://mqttx.app/) is a cross-platform MQTT 5.0 client tool open sourced by EMQ, which can run on macOS, Linux and Windows, and supports formatting MQTT payload.
+- MQTT Explorer
 
-MQTT X simplifies the operation logic of the page with the help of chatting software, makes it easy and quick to create multiple simultaneous online MQTT client connections, test the connection, publish, and subscribe functions of MQTT/TCP, MQTT/TLS, MQTT/WebSocket as well as other MQTT protocol features.
+- MQTT Box
 
-MQTT X is dedicated to building an elegant, easy-to-use, full-platform MQTT client, and has recently released both MQTT X CLI and MQTT X Web. Now, MQTT X has reached 2K on GitHub Star and is loved by more and more developers.
+- mqtt-spy
 
-#### Features
+- MQTT Lens
 
-- Cross-platform for Windows, macOS, Linux
+- MQTT WebSocket Toolkit
+
+## MQTT X
+
+### Introduction to client
+
+[MQTT X](https://mqttx.app/) is a cross-platform [MQTT 5.0](https://www.emqx.com/en/mqtt/mqtt5) desktop testing client open sourced by [EMQ](https://www.emqx.com/en), the world's leading provider of **open source IoT middleware**, which supports macOS, Linux, Windows. The user interface of MQTT X uses the chatting software form to simplify the operation logic of pages. Users can quickly create multiple simultaneously online **MQTT client** for convenient testing the connect/publish/subscribe functions of MQTT/TCP, MQTT/TLS, MQTT/WebSocket and other **MQTT protocol** features.
+
+MQTT X has relatively comprehensive functions. Users can quickly test the connection/publishing/subscribing function of MQTT/TCP, MQTT/TLS, MQTT/WebSocket and other MQTT protocol features.
+
+### Features of client
+
+- Cross-platform for Windows，macOS，Linux
 - Support MQTT v3.1.1 and MQTT v5.0 protocols
 - Support CA, self-signed certificate, and single and two-way SSL /TLS authentication
 - Support theme switching between Light, Dark and Night
-- Support MQTT over WebSocket
+- Support MQTT over WebSockets
 - Support Hex, Base64, JSON, Plaintext
-- Support English, Japanese, Simplified Chinese, Turkish and Hungarian
-- Support custom color marking when subscribing to topics
+- Support Simplified Chinese, English, Japanese and Turkish
+- Support custom color marking when subscribing topics
 - Support for automatic subscription to $SYS and view bytes statistics
 - Customizable script to simulate data testing
 - Full logging capabilities
 
-![MQTT X](https://assets.emqx.com/images/ada10fb84b685af3cadcae6c95197c4f.gif)
+![1.png](https://assets.emqx.com/images/mdt40vcf7ebdrxohghlzwpdyr4u9494l.png)
 
-#### Download
+### Download client
 
-Website: [https://mqttx.app/](https://mqttx.app/)
+**Operating system:** Windows，macOS，Linux
 
-GitHub: [https://github.com/emqx/MQTTX/releases](https://github.com/emqx/MQTTX/releases)
+**Project address:** [MQTT X](https://mqttx.app/)
 
-### MQTT Explorer
+**Download link:** [MQTT X GitHub](https://github.com/emqx/MQTTX/releases)
 
-MQTT Explorer is a comprehensive MQTT client that provides a structured overview of your MQTT topics and makes working with devices/services on your broker dead-simple.
 
-MQTT Explorer supports difference comparison and visual chart display of received payload messages. Similar to MQTT.fx, MQTT Explorer can only create a single connection and cannot have multiple clients online at the same time.
 
-#### Features
+## Mosquitto CLI
+
+### Introduction to client
+
+Mosquitto is an open-sourced (EPL/EDL license) message broker. Mosquitto provides two command-line MQTT client tools, [mosquitto_pub](https://mosquitto.org/man/mosquitto_pub-1.html) and [mosquitto_sub](https://mosquitto.org/man/mosquitto_sub-1.html)  by default after installation.
+
+Mosquitto CLI has multiple configuration options, supports connections through TLS certificate and a proxy server, supports debug mode, and can get more detailed message information in debug mode.
+
+It is also very easy to use, only needs to provide a few parameters in the default usage environment to use:
+
+```bash
+## Enable debug mode to subscribe to testtopic/# topic
+wivwiv-mac:workspace emqtt$ mosquitto_sub -t "testtopic/#" -d
+Client mosqsub/66418-wivwiv-ma sending CONNECT
+Client mosqsub/66418-wivwiv-ma received CONNACK
+Client mosqsub/66418-wivwiv-ma sending SUBSCRIBE (Mid: 1, Topic: testtopic/#, QoS: 0)
+Client mosqsub/66418-wivwiv-ma received SUBACK
+Subscribed (mid: 1): 0
+Client mosqsub/66418-wivwiv-ma received PUBLISH (d0, q0, r0, m0, 'testtopic/1', ... (5 bytes))
+Hello
+
+## Publish a message to testtopic / 1 topic
+mosquitto_pub -t "testtopic/1" -m "Hello"
+```
+
+### Features of client
+
+- Thie lightweight command-line tool, support debug mode, easy to install
+- Support encrypted and nonencrypted connecting to MQTTQ server
+- Easy to test in the remote server
+
+### Download client
+
+**Operating system:** Windows，macOS，Linux
+
+**Project address:** [Github Mosquitto](https://github.com/eclipse/mosquitto)
+
+**Download link:** [Mosquitto website](https://mosquitto.org/) 
+
+
+
+## MQTT.fx
+
+### Introduction to client
+
+MQTT.fx is a currently mainstream MQTT client developed by [Jens Deters](https://www.jensd.de/) that can quickly verify whether it can interact with IoT Hub services to publish or subscribe to messages. MQTT.fx is applicable for the Apache License 2.0 protocol but without providing source code. Unfortunately, MQTT.fx has been discontinued and is now being developed under a commercial version, MQTT.fx® 5.0, funded by Softblade, which operates the software under a fee-based license. MQTT.fx in this document refers to version 1.0 unless otherwise specified.
+
+MQTT.fx is an established MQTT client tool. The related product documentation tutorials of cloud product providers such as Azure IoT Hub, AWS IoT, and Alibaba Cloud IoT are all using MQTT.fx as an example. MQTT.fx use JavaFX technology to develop, and may have a stuck experience on some older machines because of Java virtual machine.
+
+In terms of basic functions, MQTT .fx can save multiple connection configurations, support multiple types of TCL encryption, and specify multiple types of certificates. When creating a connection, you can specify to use an HTTP proxy server. After successfully connecting, the usage of entire publishing and subscription functions are relatively reasonable and smooth. It is a function highlight that the `Topics Collector` function can find the subscribed topics through other methods such as the Broker-side proxy subscribe. Mqtt.fx also supports the connection test of Google Cloud IoT.
+
+Among the advanced features, the biggest highlight of MQTT.fx is to support the JavaScript function scripts. With the JavaScript code written by Nashorn Engine users, users can access Java methods and fields to implement function extension. After familiarizing with the APIs related to MQTT.fx, users can write test scripts that adapt to the business, simulate sensor reporting data, even performance testing tools and other powerful functions.
+
+If you are using Mosquitto broker, MQTT.fx provides a dedicated tab to implement visualize viewing Broker status through subscribing to both **system topics** (topics for publishing Broker run information). That also can get system information about the version and time of Broker, the number of clients and messages, network traffic, load status and other run information.
+
+All in all, MQTT.fx has rich and mature functions, and supports all the configuration items that may encounter in the TCP connection. Except for the slightly poor interaction, interface stuck,  and users can only establish one connection at the same time, which cannot satisfy the demand of using multiple test connections simultaneously. Besides, it does not implement the support for WebSocket, which means that it cannot be used in the test scenario of MQTT over WebSockets.
+
+### Features of client
+
+- Predefine message template
+- Get status of the broker through the system topic `$SYS`
+- Remember the recently used topics
+- Support for JavaScript scripts through Nashorn Engine
+- Support log display, display log information in the connection
+- Cross-platform desktop with support for Windows, macOS and Linux
+
+![2.png](https://assets.emqx.com/images/4f592bb17cbbfe3adf0d13e07277c0dd.png)
+
+### Download client
+
+**Operaring system:** Windows，macOS，Linux
+
+**Download link:** https://mqttfx.jensd.de/index.php/download
+
+
+
+## MQTT Explorer
+
+### Introduction to client
+
+[MQTT Explorer](https://www.emqx.com/en/blog/connecting-to-emqx-cloud-with-mqtt-explorer) is a comprehensive MQTT client that provides a structured overview of your MQTT topics and makes working with devices/services on your broker dead-simple. Currently, it based on CC BY-NC-ND 4.0 protocol open source, and users can view and use source code at will.
+
+Visualization and vertical layered display of topics and dynamic preview are the highlights of MQTT-Explorer. Layered view enable this tool to use easily, and has distinguished MQTT Explorer with other outstanding MQTT desktop client. Custom subscribing can limit the number of message which need MQTT Explorer to process, and users can manage subscriptions in advanced connection settings. Users can also display the view of difference of received payload messages. The disadvantages are that users can only create a single client connection, and cannot connect multiple clients and enable them to be online at the same time.
+
+### Features of client
 
 - Visualize topics and dynamic preview of the change of topic
 - Delete the reserved topics
@@ -70,172 +165,121 @@ MQTT Explorer supports difference comparison and visual chart display of receive
 - Retain the historic record of every topic
 - Dark/Light topic
 
-![mqtt-explorer](https://assets.emqx.com/images/7be0606fdbb16f93359429dba0cc3e6e.png)
+![mqtt-explorer.png](https://assets.emqx.com/images/7be0606fdbb16f93359429dba0cc3e6e.png)
 
-#### Download
+### Download client
 
-[https://github.com/thomasnordquist/MQTT-Explorer](https://github.com/thomasnordquist/MQTT-Explorer)
+**Operating system:** Windows，macOS，Linux
 
-### MQTT.fx
+**Project address:** [Github MQTT-Explorer](https://github.com/thomasnordquist/MQTT-Explorer)
 
-MQTT.fx was developed by Jens Deters. Since January 2021 MQTT.fx has moved to Softblade - a new founded German company now taking care about further development of MQTT.fx, and released the commercial version MQTT.fx® 5.0. The MQTT.fx described in this article is the free 1.x version.
+**Download link:** [https://mqtt-explorer.com/](https://mqtt-explorer.com/)
 
-MQTT.fx is developed with JavaFX, supports saving multiple connection configurations, multiple types of encryption methods, specifies multiple types of certificates, and can set an HTTP proxy server when creating a connection.
 
-In general, MQTT.fx has rich and mature functions and supports many configuration items in TCP connections, but users can only establish one connection at a time. In addition, it does not implement support for WebSocket and cannot be used in the test scenario of MQTT over WebSocket.
 
-#### Features
+## MQTT Box
 
-- Predefine message template
-- Get the status of the broker through the system topic `$SYS`
-- Support for JavaScript scripts through Nashorn Engine
-- Support log display, display log information in the connection
-- Cross-platform desktop with support for Windows, macOS, and Linux
+### Introduction to client
 
-![MQTT.fx](https://assets.emqx.com/images/4f592bb17cbbfe3adf0d13e07277c0dd.png)
+MQTT Box is an MQTT client tool developed by Sathya Vikram, originally only used in [Chrome](https://chrome.google.com/webstore/detail/mqtt-client-tcp-and-ws/kaajoficamnjijhkeomgfljpicifbkaf?utm_source=chrome-ntp-launcher) for installation and usage of browser extensions. After rewritten open source, it becomes a desktop-side cross-platform independent software. 
 
-#### Download
+MQTT Box also adopts Electron cross-platform technology. The interface is simple and direct and supports multiple clients to be online at the same time. However, switching and messaging between clients is still inconvenient. MQTT Box is a worthwhile MQTT client tool with the powerful cross-platform features with the help of Chrome and combined with simple load testing.
 
-[https://www.jensd.de/wordpress/?p=2746](https://www.jensd.de/wordpress/?p=2746)
+### Features of client
 
+- Support installation as Chrome plugin
+- Support MQTT, MQTT over WebSocket, multiple TCP encryption connections
+- Save the sent history
+- Copy/paste messages in history
+- Save the history of subscription message 
+- Simple performance test, testing the load of the broker and viewing the test results through chart visualization
 
+![3.png](https://assets.emqx.com/images/4d230117efab9a40e2ff30f7cd82744d.png)
 
-## MQTT online client
+### Download client
 
-### MQTT X Web
+**Operating system:** Windows，macOS，Linux, Chrome OS
 
-[MQTT X Web](https://mqttx.app/web) is an open source MQTT 5.0 browser client and an online MQTT WebSocket client tool. Developers can use WebSockets to quickly connect to MQTT servers in the browser and debug MQTT services and applications faster without installing MQTT X.
+**Project address:** [GitHub MQTTBox](https://github.com/workswithweb/MQTTBox)
 
-![MQTT X Web](https://mqttx-static.emqx.net/img/banner.268d1fa.png)
+**Download link:** https://workswithweb.com/mqttbox.html
 
-Try now：[http://www.emqx.io/online-mqtt-client](http://www.emqx.io/online-mqtt-client)
 
-For more information, please check out: [https://github.com/emqx/MQTTX/tree/main/web](https://github.com/emqx/MQTTX/tree/main/web)
 
+## mqtt-spy
 
+### Introduction to client
 
-## MQTT CLI
+Mqtt-spy is part of Eclipse Paho and Eclipse IoT. It runs on top of Java 8 and JavaFX by directly launching JAR files. Mqtt-spy has a good interaction way to display the basic MQTT publish/subscribe mechanism.
 
-### MQTT X CLI
+Mqtt-spy does not provide a separate installation package, which needs users to install the Java runtime environment before using mqtt-spy. But after launching, mqtt-spy has a friendly hands-on experience, and the guide feature is eye-catching. MQTT newbies can easily connect to the [public MQTT broker](https://www.emqx.com/en/blog/popular-online-public-mqtt-brokers) using mqtt-spy for exploration. The function interface of mqtt-spy is slightly complicated, but after familiar with the function of each component, it will become a development and debugging tool. It is also worth mentioning that the performance and stability of mqtt-spy are poor, maybe is because that the version used by the author is the latest beta. After connecting multiple brokers, there are frequent crashes and suspended animations.
 
-[MQTT X CLI](https://mqttx.app/cli) is a fully open source MQTT 5.0 command line client tool, i.e., MQTT X on the command line. This allows developers to develop and debug MQTT services and applications faster using the command line without the graphical interface.
+### Features of client
 
-#### Features
+- Support for MQTT and MQTT over WebSocket
+- Easy to interact, can publish and subscribe at the same time, connect multiple brokers on different tabs
+- Can close different areas of the [pub/sub](https://www.emqx.com/en/blog/mqtt-5-introduction-to-publish-subscribe-model) window (publish, new subscriptions, subscriptions and messages) to make room for space currently in use
+- The search function allows searching for commonly used MQTT messages, allowing outputting publishing/subscribing messages to standard output or logging to a file for subsequent analysis
 
-- **Dependency-free**: Get up and run with no prerequisites required
+![4.png](https://assets.emqx.com/images/9836d2b3d18279f9e4d43c5e4c6660f0.png)
 
-- **Easy to Integrate**: Quick integration into automation test scripts
+![5.png](https://assets.emqx.com/images/25b0be7357a3c3cfdc46bae9474c4477.png)
 
-- **One and Two Way SSL**: Support for one-way and two-way SSL authentication
+### Download client
 
-#### Download
+**Operating system:** Windows，macOS，Linux
 
-The MQTT X CLI can be quickly downloaded and installed on macOS, Linux, and Windows systems without any environmental dependencies, simply by executing commands in a terminal.
+**Project address:** [GitHub mqtt-spy](https://github.com/eclipse/paho.mqtt-spy)
 
-Try Now: [https://mqttx.app/cli]( https://mqttx.app/cli)
+**Download link:** https://github.com/eclipse/paho.mqtt-spy/releases
 
-#### Usage
 
-Connect
 
-```
-mqttx conn -h 'broker.emqx.io' -p 1883 -u 'admin' -P 'public'
-```
+## MQTT Lens
 
-Subscribe
+### Introduction to client
 
-```
-mqttx sub -t 'hello' -h 'broker.emqx.io' -p 1883
-```
+MQTT Lens is a Chrome extension tool that can be installed from the Chrome Web Store. MQTT Lens interface is very concise and provides basic publishing and subscribing function.
 
-Publish
+Although MQTT Lens is simple enough, provides the fundamental MQTT and MQTT over WebSocket connection function, and can quickly get started, explore and use.
 
-```
-mqttx pub -t 'hello' -h 'broker.emqx.io' -p 1883 -m 'from MQTTX CLI'
-```
+### Features of client
 
-Publishing multiple messages
+- Accept connections to multiple mqtt brokers at the same time, with different colors to associate
+- The interface for subscribing, publishing and viewing all received messages is very simple and easy to master
+- Support for MQTT and MQTT over WebSocket
 
-```
-mqttx pub -t 'mqttx/cli' -h 'broker.emqx.io' -p 1883 -s -M
-```
+### Download client
 
-The MQTT X CLI also supports a pub command to publish multiple messages, just add a -M parameter and a -s parameter to the command in the editor, and newline it after each entry.
+**Operating system:** Windows，macOS，Linux, Chrome OS
 
-![MQTT CLI](https://assets.emqx.com/images/549a31f8b062f099c0eac8c0c6047f35.png)
+**Download link:** [Chrome Web Store](https://chrome.google.com/webstore/detail/mqttlens/hemojaaeigabkbcookmlgmdigohjobjm)
 
-### NanoMQ CLI
 
-[NanoMQ](https://nanomq.io/) is an ultra-lightweight and blazing-fast MQTT broker for IoT edge, which contains an abundant toolkit including broker, bench, conn, pub, sub client.
 
-#### Features
+## MQTT WebSocket Toolkit
 
-- Support performance testing
-- Support MQTT 5.0
-- Ability to run on edge devices
-- Support reading file content as payload
+### Introduction to client
 
-#### Download
+[MQTT WebSocket Toolkit](https://www.emqx.com/en/mqtt/mqtt-websocket-toolkit) is a simple and easy-to-use online MQTT client test tool. It based on browser-side to use, only supports MQTT over WebSocket connection, and provides basic MQTT configuring connection settings.
 
-[https://nanomq.io/downloads](https://nanomq.io/downloads)
+The interface and interaction of MQTT WebSocket Toolkit still use the design and usage style of [MQTT X](https://mqttx.app/). It publishes and receives messages in the form of message chat and allows establishing and connecting multiple clients at the same time and freely switches to communicate with each other,  which improves the efficiency of the MQTT development test. When you need to test MQTT WebSocket connections, users do not need to download and install extra tools, so this tool is quick and available.
 
-#### Usage
+### Features of client
 
-MQTT performance testing tool
+- Online quickly access, without installing, and with the concise and easy-to-use interface
+- Support  MQTT over WebSockets
+- Support for creating multiple clients, and can retain the information of the client until the next access.
 
-```
-# Start 10 connections and send 100 Qos0 messages to the topic t every second, 
-# where the size of each message payload is 16 bytes
-nanomq_cli bench pub -t t -h broker.emqx.io -s 16 -q 0 -c 10 -I 10
+![mqtt-websocket-toolkit.png](https://assets.emqx.com/images/bb8967f026a3df9fad1ad92ac057caf3.png)
 
-# Start 500 connections, and each subscribes to the t topic with Qos0
-nanomq_cli bench sub -t t -h broker.emqx.io -c 500
+### Download client
 
-# Start 100 connections
-nanomq_cli bench conn -h broker.emqx.io -c 100
-```
+**Operating system:** Windows, macOS, Linux, Chrome OS
 
-MQTT client
+**Online address:** [MQTT WebSocket Toolkit](http://www.emqx.io/online-mqtt-client/)
 
-```
-# Send 100 Qos2 messages test to the topic t
-nanomq_cli pub -t t -h broker.emqx.io -q 2 -L 100 -m test
-
-# Subscribe
-nanomq_cli sub -t t -h broker.emqx.io -q 1
-```
-
-### Mosquitto CLI
-
-Mosquitto is an open source implementation of a server for versions 5.0, 3.1.1, and 3.1 of the MQTT protocol. It also includes a C and C++ client library, and the `mosquitto_pub` and `mosquitto_sub` utilities for publishing and subscribing.
-
-Mosquitto CLI has multiple configuration options, supports connections through TLS certificate and a proxy server, supports debug mode, and can get more detailed message information in debug mode.
-
-#### Features
-
-- Thie lightweight command-line tool, support debug mode
-- Support encrypted and nonencrypted connecting to MQTT broker
-- Easy to test in the remote server
-
-#### Download
-
-[https://github.com/eclipse/mosquitto](https://github.com/eclipse/mosquitto)
-
-#### Usage
-
-Subscribe
-
-```
-mosquitto_sub -t 'test/topic' -v
-```
-
-Publish
-
-```
-mosquitto_pub -t 'test/topic' -m 'hello world'
-```
-
-
+**Project address:** [MQTT WebSocket Toolkit GitHub](https://github.com/emqx/MQTT-Web-Toolkit)
 
 
 
