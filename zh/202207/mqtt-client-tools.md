@@ -2,8 +2,7 @@
 
 目前 MQTT 客户端工具种类繁多，功能侧重点也不尽相同。对于初学者乃至 MQTT 专家来说，如何选择一个合适的 MQTT 客户端工具是一个难题。
 
-本文结合了 EMQ 工程师的使用经验，整理了一些我们觉得非常不错的客户端工具，并按桌面端、浏览器端、命令行分类列出。以帮助 MQTT 开发者快速找到一个合适的 MQTT 客户端工具。
-
+我们根据自身的使用经验，对目前市面上常见的客户端工具进行了筛选和整理，选择了截至 2022 年最新、最实用的 7 个 MQTT 客户端工具，并按桌面端、浏览器端、命令行分类列出。希望本文可以帮助 MQTT 开发者快速找到一个合适的客户端工具，开展 MQTT 连接测试。
 
 
 ## 如何选择一个 MQTT 客户端？
@@ -137,19 +136,19 @@ MQTT X CLI 可以快速下载并安装到 macOS、Linux 和 Windows 系统上，
 
 #### 快速开始
 
-**订阅**
+订阅
 
 ```
 mqttx sub -t 'mqttx/cli' -h 'broker.emqx.io' -p 1883
 ```
 
-**发布**
+发布
 
 ```
 mqttx pub -t 'mqttx/cli' -h 'broker.emqx.io' -p 1883 -m 'hello from MQTTX CLI!'
 ```
 
-**发布多条消息**
+发布多条消息
 
 ```
 mqttx pub -t 'mqttx/cli' -h 'broker.emqx.io' -p 1883 -s -M
@@ -176,7 +175,7 @@ MQTT X CLI 支持一个 `pub` 命令可以发布多条消息的功能，只需�
 
 #### 快速开始
 
-**性能测试工具 bench**
+性能测试工具 bench
 
 ```
 # 启动 10 个连接，每秒向主题 t 发送 100 条 Qos0 消息，其中每个消息负载的大小为 16 字节
@@ -189,7 +188,7 @@ nanomq_cli bench sub -t t -h broker.emqx.io -c 500
 nanomq_cli bench conn -h broker.emqx.io -c 100
 ```
 
-**MQTT 测试客户端**
+MQTT 测试客户端
 
 ```
 # 向主题 t 发送 100 条 Qos2 消息测试。
@@ -217,13 +216,13 @@ Mosquitto CLI 有多个配置选项，支持 TLS 证书连接、通过代理服�
 
 #### 快速开始
 
-**订阅**
+订阅
 
 ```
 mosquitto_sub -t 'test/topic' -v
 ```
 
-**发布**
+发布
 
 ```
 mosquitto_pub -t 'test/topic' -m 'hello world'
