@@ -1,22 +1,20 @@
-本文将以 [MQTT.fx](http://www.mqttfx.jensd.de/) 作为 [MQTT 客户端](https://www.emqx.com/zh/blog/introduction-to-the-commonly-used-mqtt-client-library)测试工具，接入 [MQTT 云服务 - EMQX Cloud](https://www.emqx.com/zh/cloud)。通过本文，你将能快速了解 MQTT.fx 的基础用法以及 MQTT 协议的基本概念与使用。
-
+本文将以 MQTT.fx 作为 [MQTT 客户端工具](https://www.emqx.com/zh/blog/mqtt-client-tools)，接入 [MQTT 云服务 - EMQX Cloud](https://www.emqx.com/zh/cloud)。通过本文，你将能快速了解 MQTT.fx 的基础用法以及 MQTT 协议的基本概念与使用。
 
 
 ## MQTT.fx 简介
 
-[MQTT.fx](http://www.mqttfx.jensd.de/) 是目前最为流行的 MQTT 桌面客户端工具，[MQTT.fx](http://www.mqttfx.jensd.de/) 1.0 Major 版本由 [Jens Deters](https://www.jensd.de/wordpress/) 使用[JavaFX](https://en.wikipedia.org/wiki/JavaFX) 技术开发，即为 Java 虚拟机应用。遗憾的是 [MQTT.fx](http://www.mqttfx.jensd.de/) 目前已经停止维护，并转为由 Softblade 公司资助开发另发行了其商业版本 [MQTT.fx® 5.0](https://softblade.de/en/mqtt-fx/)，采用收费许可证方式经营该软件。本文中的 [MQTT.fx](http://www.mqttfx.jensd.de/) 不经特殊说明即特指 1.0 版本。
+MQTT.fx 1.0 Major 版本由 Jens Deters 使用[JavaFX](https://en.wikipedia.org/wiki/JavaFX) 技术开发，即为 Java 虚拟机应用。遗憾的是 MQTT.fx 目前已经停止维护，并转为由 Softblade 公司资助开发另发行了其商业版本 MQTT.fx® 5.0，采用收费许可证方式经营该软件。本文中的 MQTT.fx 不经特殊说明即特指 1.0 版本。
 
 它包含主流的 MQTT 客户端功能：
 
 - 基本订阅/推送/连接功能
 - 用户认证
 - SSL/TLS连接支持
-- [易用的消息编辑栏](https://github.com/Jerady/mqttfx-payload-decoders)
+- 易用的消息编辑栏
 - 支持代理
 
-此外 [MQTT.fx](http://www.mqttfx.jensd.de/) 也有其他优秀特性:
+此外 MQTT.fx 也有其他优秀特性:
 
-- 软件自由，其开源协议为 [Apache 2.0 license](https://www.apache.org/licenses/LICENSE-2.0)
 - 支持跨平台
 - 支持 $SYS 主题订阅管理 MQTT Broker
 - 完整的日志控制台
@@ -33,7 +31,7 @@
 
 ## EMQX Cloud 简介
 
-[EMQX Cloud](https://www.emqx.com/zh/cloud) 是由 [EMQ](https://www.emqx.com/zh) 公司推出的可连接海量物联网设备，集成各类数据库及业务系统的全托管云原生 MQTT 服务。作为**全球首个全托管的** [**MQTT 5.0**](https://www.emqx.com/zh/mqtt/mqtt5) **公有云服务**，EMQX Cloud 提供了一站式运维代管、独有隔离环境的 MQTT 消息服务。
+[EMQX Cloud](https://www.emqx.com/zh/cloud) 是由 EMQ 推出的可连接海量物联网设备，集成各类数据库及业务系统的全托管云原生 MQTT 服务。作为**全球首个全托管的** [**MQTT 5.0**](https://www.emqx.com/zh/mqtt/mqtt5) **公有云服务**，EMQX Cloud 提供了一站式运维代管、独有隔离环境的 MQTT 消息服务。
 
 在万物互联的时代，EMQX Cloud 可以帮助用户快速构建面向物联网领域的行业应用，轻松实现物联网数据的采集、传输、计算和持久化。
 
@@ -43,7 +41,7 @@
 - TCP Port: **1883**
 - SSL/TLS Port: **8883**
 
-更多详情请访问 [EMQX Cloud 官网](https://www.emqx.com/zh/cloud)，或查看 [EMQX Cloud 文档](https://docs.emqx.cn/cloud/latest/)。 
+更多详情请访问 [EMQX Cloud 官网](https://www.emqx.com/zh/cloud)，或查看 [EMQX Cloud 文档](https://docs.emqx.com/zh/cloud/latest/)。 
 
 
 
@@ -137,8 +135,6 @@ function execute(action) {
 ![MQTT.fx 连接日志](https://assets.emqx.com/images/5ea2e8316df5c33d907b6d784309a025.png)
 
 ![MQTT.fx SSL/TLS 状态](https://assets.emqx.com/images/b3efb08a666b6c3dca2485b5fb5b403a.png)
-
-以上就是使用 MQTT.fx 接入 EMQX Cloud 的简单示例，更多详情可访问 [EMQX Cloud](https://www.emqx.com/zh/cloud)。
 
 
 <section class="promotion">

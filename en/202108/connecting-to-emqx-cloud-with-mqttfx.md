@@ -1,22 +1,21 @@
-This article will take [MQTT.fx](http://www.mqttfx.jensd.de/) as [MQTT client](https://www.emqx.com/en/blog/introduction-to-the-commonly-used-mqtt-client-library) test tool to connect to [MQTT Cloud Service - EMQX Cloud](https://www.emqx.com/en/cloud). Through this article, you will be able to quickly understand the basic usage of MQTT.fx and the basic concepts and usage of the [MQTT protocol](https://www.emqx.com/en/mqtt).
+This article will take MQTT.fx as [MQTT client tool](https://www.emqx.com/en/blog/mqtt-client-tools) to connect to [MQTT Cloud Service - EMQX Cloud](https://www.emqx.com/en/cloud). Through this article, you will be able to quickly understand the basic usage of MQTT.fx and the basic concepts and usage of the [MQTT protocol](https://www.emqx.com/en/mqtt).
 
 
 
 ## Introduction to MQTT.fx 
 
-[MQTT.fx](http://www.mqttfx.jensd.de/) is the most popular MQTT desktop client tool currently.  The major version of MQTT.fx 1.0  is developed by [Jens Deters](https://www.jensd.de/wordpress/) using [JavaFX](https://en.wikipedia.org/wiki/JavaFX) technology, which is a Java virtual machine application. Unfortunately, the maintenance of MQTT.fx has now stopped maintenance and Softblade company has sponsored the development and released its commercial version MQTT.fx® 5.0, which is operated with a fee-based license. MQTT.fx in this article refers to version 1.0 without special instructions.
+The major version of MQTT.fx 1.0 is developed by Jens Deters using [JavaFX](https://en.wikipedia.org/wiki/JavaFX) technology, which is a Java virtual machine application. Unfortunately, the maintenance of MQTT.fx has now stopped maintenance and Softblade company has sponsored the development and released its commercial version MQTT.fx® 5.0, which is operated with a fee-based license. MQTT.fx in this article refers to version 1.0 without special instructions.
 
 It contains mainstream MQTT client functions:
 
 - Basic subscribe/publish/connect function
 - User Authentication
 - SSL/TLS connection support
-- [Easy to use message editing bar](https://github.com/Jerady/mqttfx-payload-decoders)
+- Easy to use message editing bar
 - Support agent
 
-In addition, [MQTT.fx](http://www.mqttfx.jensd.de/) also has other excellent features:
+In addition, MQTT.fx also has other excellent features:
 
-- The software is free, and its open source protocol is  [Apache 2.0 license](https://www.apache.org/licenses/LICENSE-2.0)
 - Support cross-platform
 - Support $SYS topic subscription management MQTT Broker
 - Complete log console
@@ -27,13 +26,13 @@ But there are also defects:
 
 - [MQTT 5.0](https://www.emqx.com/en/mqtt/mqtt5) protocol is not supported
 - Only one connection can be established at a time, which is inconvenient for multi-connection debugging
-- WebSocket protocol is not supported and the situation of MQTT over Webscoket cannot be debugged
+- The webSocket protocol is not supported and the situation of MQTT over Webscoket cannot be debugged
 
 
 
 ## Introduction to EMQX Cloud
 
-[EMQX Cloud](https://www.emqx.com/en/cloud) is a fully managed cloud-native MQTT service launched by [EMQ](https://www.emqx.com/en) company that can connect to a large number of IoT devices and integrate various databases and business systems. As the **world's first fully managed** [**MQTT 5.0**](https://www.emqx.com/en/mqtt/mqtt5) **public cloud service**, EMQX Cloud provides MQTT message service with one-stop operation and maintenance management and a unique isolation environment.
+[EMQX Cloud](https://www.emqx.com/en/cloud) is a fully managed cloud-native MQTT service launched by EMQ that can connect to a large number of IoT devices and integrate various databases and business systems. As the **world's first fully managed** [**MQTT 5.0**](https://www.emqx.com/en/mqtt/mqtt5) **public cloud service**, EMQX Cloud provides MQTT message service with one-stop operation and maintenance management and a unique isolation environment.
 
 In the era of the Internet of Everything, EMQX Cloud can help users quickly build industry applications for the IoT area and easily realize the collection, transmission, calculation, and persistence of IoT data.
 
@@ -43,7 +42,7 @@ This article will use [Free Public MQTT Server](https://www.emqx.com/en/mqtt/pub
 - TCP Port: **1883**
 - SSL/TLS Port: **8883**
 
-For more details, please visit [EMQX Cloud website](https://www.emqx.com/en/cloud) or check [EMQX Cloud documentation](https://docs.emqx.io/en/cloud/latest/).
+For more details, please visit [EMQX Cloud website](https://www.emqx.com/en/cloud) or check [EMQX Cloud documentation](https://docs.emqx.com/en/cloud/latest/).
 
  
 
