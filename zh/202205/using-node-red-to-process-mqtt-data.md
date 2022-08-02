@@ -11,13 +11,13 @@ Node-RED 无论是在你本地的电脑上，还是树莓派等设备，亦或�
 使用 `npm` 进行全局安装：
 
 ```
-1npm install -g --unsafe-perm node-red
+npm install -g --unsafe-perm node-red
 ```
 
 使用 `Docker` 进行安装：
 
 ```
-1docker run -it -p 1880:1880 --name mynodered nodered/node-red
+docker run -it -p 1880:1880 --name mynodered nodered/node-red
 ```
 
 ## 运行
