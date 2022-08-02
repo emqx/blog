@@ -1,8 +1,8 @@
 [Python](https://www.python.org/) is an interpreted, high-level, general-purpose programming language. Created by Guido van Rossum and first released in 1991, Python's design philosophy emphasizes code readability with its notable use of significant whitespace. Its language constructs and object-oriented approach aim to help programmers write clear, logical code for small and large-scale projects.[^1]
 
-[MQTT](https://www.emqx.com/en/mqtt) is a kind of **lightweight IoT messaging protocol** based on the publish/subscribe model, which can provide real-time and reliable messaging service for IoT devices, only using very little code and bandwidth. It is suitable for devices with limited hardware resources and the network environment with limited bandwidth. Therefore, [MQTT protocol](https://www.emqx.com/en/mqtt) is widely used in IoT, mobile internet, IoV, electricity power, and other industries.
+MQTT is a kind of **lightweight IoT messaging protocol** based on the publish/subscribe model, which can provide real-time and reliable messaging service for IoT devices, only using very little code and bandwidth. It is suitable for devices with limited hardware resources and the network environment with limited bandwidth. Therefore, [MQTT protocol](https://www.emqx.com/en/mqtt) is widely used in IoT, mobile internet, IoV, electricity power, and other industries.
 
-This article mainly introduces how to use the **paho-mqtt** client and implement connection, subscribe, messaging, and other functions between the [MQTT client](https://www.emqx.com/en/mqtt-client-sdk) and [MQTT broker](https://www.emqx.io), in the Python project.
+This article mainly introduces how to use the **paho-mqtt** client and implement connection, subscribe, messaging, and other functions between the [MQTT client](https://www.emqx.io/mqtt-client) and [MQTT broker](https://www.emqx.io), in the Python project.
 
 
 
@@ -33,7 +33,7 @@ pip3 install paho-mqtt
 
 ### Connect to the MQTT broker
 
-This article will use [the free public MQTT broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker) provided by EMQX. This service is based on [MQTT IoT cloud platform](https://www.emqx.com/en/cloud) to create. The accessing information of the broker is as follows:
+This article will use [the free public MQTT broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker) provided by EMQX. This service is based on [MQTT cloud service - EMQX Cloud](https://www.emqx.com/en/cloud) to create. The accessing information of the broker is as follows:
 
 - Broker: **broker.emqx.io**
 - TCP Port: **1883**
@@ -45,9 +45,9 @@ This article will use [the free public MQTT broker](https://www.emqx.com/en/mqtt
 from paho.mqtt import client as mqtt_client
 ```
 
-#### Set the parameter of MQTT Broker connection
+#### Set the parameter of the MQTT Broker connection
 
-Set the address, port and topic of MQTT Broker connection. At the same time, we call the Python function `random.randint` to randomly generate the MQTT client id.
+Set the address, port and topic of the MQTT Broker connection. At the same time, we call the Python function `random.randint` to randomly generate the MQTT client id.
 
 ```python
 broker = 'broker.emqx.io'
@@ -99,7 +99,7 @@ First, we define a while loop. In this loop, and we will set the MQTT client `pu
 
 ### Subscribe
 
-Write the message callback function `on_message`. This function will be called after the client received messages from the MQTT Broker. In this function, we will print out the name of subscribed topics and the received messages.
+Write the message callback function `on_message`. This function will be called after the client receives messages from the MQTT Broker. In this function, we will print out the name of subscribed topics and the received messages.
 
 ```python
 def subscribe(client: mqtt_client):
@@ -252,7 +252,7 @@ python3 sub.py
 
 So far, we have finished that use the **paho-mqtt** client to connect to [the free public MQTT broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker), and implemented the connect, publish messages and subscribe to messages between the test client and MQTT broker.
 
-Python is different from the high-level languages like C++ or Java, it is more suitable for implementing the business logic on the device side. Using Python can reduce the logic complexity of code and reducing the cost of interaction with the device. We believe that Python will have wider applications in the field of IoT.
+Python is different from high-level languages like C++ or Java, it is more suitable for implementing the business logic on the device side. Using Python can reduce the logic complexity of code and reduce the cost of interaction with the device. We believe that Python will have wider applications in the field of IoT.
 
 Next, we will publish more articles about IoT development and Python. Stay tuned.
 
