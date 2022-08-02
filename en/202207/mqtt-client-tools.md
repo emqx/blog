@@ -2,9 +2,7 @@ With the rapid development of the IoT industry, the MQTT protocol is being used 
 
 There is a wide variety of MQTT client tools with different functional focuses. For beginners and even MQTT experts, it is a challenge to choose a suitable MQTT client tool.
 
-This article combines the experience of EMQ engineers, lists some client tools that we think are very good, and categorizes them by desktop, browser, and command line. To help MQTT developers quickly find a suitable MQTT client tool.
-
-
+We have selected seven of the most useful MQTT client tools in 2022 and listed them by desktop, browser, and command line categories. We hope this article will help you quickly find a suitable client tool for MQTT testing.
 
 ## How to choose an MQTT client?
 
