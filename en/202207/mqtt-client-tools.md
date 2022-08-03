@@ -24,7 +24,7 @@ MQTT client tools are commonly used to establish connections to [MQTT brokers](h
 
 [MQTT X](https://mqttx.app/) is a cross-platform MQTT 5.0 client tool open sourced by EMQ, which can run on macOS, Linux and Windows, and supports formatting MQTT payload.
 
-MQTT X simplifies the operation logic of the page with the help of chatting software, makes it easy and quick to create multiple simultaneous online MQTT client connections, test the connection, publish, and subscribe functions of MQTT/TCP, MQTT/TLS, MQTT/WebSocket as well as other MQTT protocol features.
+It simplifies test operation with the help of a familiar, chat-like interface. It’s easy and quick to create multiple, simultaneous online MQTT client connections, and can test the connection, publishing, and subscription functions of MQTT/TCP, MQTT/TLS, MQTT/WebSocket as well as other MQTT protocol features.
 
 MQTT X is dedicated to building an elegant, easy-to-use, full-platform MQTT client, and has recently released both MQTT X CLI and MQTT X Web. Now, MQTT X has reached 2K on GitHub Star and is loved by more and more developers.
 
@@ -59,7 +59,7 @@ MQTT Explorer supports difference comparison and visual chart display of receive
 #### Features
 
 - Visualize topics and dynamic preview of the change of topic
-- Delete the reserved topics
+- Delete the retained topics
 - Search/filter topics
 - Recursive delete topics
 - Difference view of current and previously  received messages
