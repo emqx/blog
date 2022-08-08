@@ -12,12 +12,11 @@ MQTT 协议标准中规定 Broker 必须存储离线客户端的消息。在之�
 
 在协议规范中，QoS 1 和 QoS 2 消息首先会在客户端与 Broker 存储起来，在最终确认抵达订阅端后才会被删除，此过程需要 Broker 将状态与客户端相关联，这称为会话状态。除了消息存储外，订阅信息（客户端订阅的主题列表）也是会话状态的一部分。
 
-
-![QoS 1 消息流程示意图](https://assets.emqx.com/images/f2972ea24849d46e56e6f758de39d278.png)
+![QoS 1 消息流程示意图](https://assets.emqx.com/images/461e1595c5025533c1dc068b35827de5.png)
 
 <center>QoS 1 消息流程示意图</center>
 
-![QoS 2 消息流程示意图](https://assets.emqx.com/images/d2c6c56b3ed0c178b177b8c26c561dd4.png)
+![QoS 2 消息流程示意图](https://assets.emqx.com/images/673176007a6f228bcd2bc3142ded28b5.png)
 
 <center>QoS 2 消息流程示意图</center>
 
@@ -45,7 +44,7 @@ MQTT 协议标准中规定 Broker 必须存储离线客户端的消息。在之�
 
 <center>MQTT 3.1.1 中会话生命周期与 Clean Session 的关系</center>
 
-![MQTT Session Expiry Interval](https://assets.emqx.com/images/9591c8fcdf979db3072bd480cacf2acc.png)
+![MQTT Session Expiry Interval](https://assets.emqx.com/images/45db8d99b5ca71eaa41352ba0925353d.png)
 
 <center>MQTT 5.0 中会话生命周期与 Session Expiry Interval 的关系</center>
 
@@ -128,7 +127,7 @@ RocksDB 的引入为 EMQX 提供了一个高性能、可靠的持久化层，在
 
 消息重放能够用于设备初始化、OTA 升级这类不关心指令时效性的场景中，在发布者和订阅者之间更灵活的传输数据。
 
-![消息重放典型流程](https://assets.emqx.com/images/361edad4595330e2411cbe79dc192ac6.png)
+![消息重放典型流程](https://assets.emqx.com/images/8018540969e6f15c4a7a124f8d86a5a2.png)
 
 消息重放典型流程
 
