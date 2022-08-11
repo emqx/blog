@@ -94,7 +94,7 @@ In general, MQTT.fx has rich and mature functions and supports many configuratio
 
 #### Download
 
-[https://www.jensd.de/wordpress/?p=2746](https://www.jensd.de/wordpress/?p=2746)
+[https://mqttfx.jensd.de/](https://mqttfx.jensd.de/)
 
 
 
