@@ -56,6 +56,9 @@ companion object {
 ```kotlin
 fun connect(context: Context) {
         val serverURI = "tcp://broker.emqx.io:1883"
+        val username = "emqx"
+        val password = "public"
+
         mqttClient = MqttAndroidClient(context, serverURI, "kotlin_client")
         mqttClient.setCallback(object : MqttCallback {
             override fun messageArrived(topic: String?, message: MqttMessage?) {
@@ -71,6 +74,9 @@ fun connect(context: Context) {
             }
         })
         val options = MqttConnectOptions()
+        options.userName = username
+        options.password = password.toCharArray()
+        
         try {
             mqttClient.connect(options, null, object : IMqttActionListener {
                 override fun onSuccess(asyncActionToken: IMqttToken?) {
