@@ -144,9 +144,9 @@ EMQ has planned the ability to connect mass equipment and support mass topics fr
 
 #### Powerful rules engine
 
-EMQX provides a built-in rule engine, which can provide data searching, filtering, splitting and rerouting messages for different topics. With the rule engine, we can reprocess the data in the existing topic by creating new routing rules and data pre-processing rules in the scenario where the existing vehicle-mounted equipment and application topics have been established. After the vehicle is launched, the new business application is supported by defining new rules on the platform side.
+EMQX provides a built-in [rule engine](https://www.emqx.com/en/solutions/iot-rule-engine), which can provide data searching, filtering, splitting and rerouting messages for different topics. With the rule engine, we can reprocess the data in the existing topic by creating new routing rules and data pre-processing rules in the scenario where the existing vehicle-mounted equipment and application topics have been established. After the vehicle is launched, the new business application is supported by defining new rules on the platform side.
 
-In EMQX Enterprise, the rule engine provide data persistence docking capability, which can directly dock data in different topics to different persistence schemes through the configuration in the rule engine. For example, for the data with high data throughput, the rules engine can be bridged to the high throughput message queues such as Kafka and Apache Pulsar for data buffering, while the topic data with small throughput and low-latency such as vehicle alarm can be directly connected to the application to realize fast routing consumption of data.
+In EMQX Enterprise, the rule engine provides data persistence docking capability, which can directly dock data in different topics to different persistence schemes through the configuration in the rule engine. For example, for the data with high data throughput, the rules engine can be bridged to the high throughput message queues such as Kafka and Apache Pulsar for data buffering, while the topic data with small throughput and low-latency such as vehicle alarm can be directly connected to the application to realize fast routing consumption of data.
 
 #### Proxy subscription function   
 

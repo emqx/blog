@@ -1,15 +1,14 @@
 [Node.js](https://nodejs.org/en/) is a JavaScript runtime built on Chrome's V8 JavaScript engine. Before the emergence of Node.js, JavaScript was usually used as a client-side programming language, and the programs are written in JavaScript often ran on the user's browser. The appearance of node.js enables JavaScript to be used for server-side programming.
 
-[MQTT](https://www.emqx.com/en/mqtt) is a lightweight IoT messaging protocol based on the publish/subscribe model. It can provide real-time and reliable messaging services for networked devices with very little code and bandwidth. It is widely used in the industries such as the IoT, mobile Internet, smart hardware, Internet of Vehicles and power energy.
+[MQTT](https://www.emqx.com/en/mqtt) is a lightweight [IoT messaging](https://www.emqx.com/en/solutions/reliable-iot-messaging) protocol based on the publish/subscribe model. It can provide real-time and reliable messaging services for networked devices with very little code and bandwidth. It is widely used in the industries such as the IoT, mobile Internet, smart hardware, [Internet of Vehicles](https://www.emqx.com/en/use-cases/internet-of-vehicles) and power energy.
 
-This article mainly introduces how to use MQTT in the Node.js project to realize the functions of connecting, subscribing, unsubscribing, sending and receiving messages between the client and the MQTT server.
+This article mainly introduces how to use MQTT in the Node.js project to realize the functions of connecting, subscribing, unsubscribing, publishing and receiving messages between the client and the [MQTT broker](https://www.emqx.io/).
 
 
 
 ## MQTT client library
 
-[MQTT.js](https://github.com/mqttjs/MQTT.js) is a client library of the [MQTT protocol](https://www.emqx.com/en/mqtt), written in JavaScript and used in Node.js and browser environments. It is currently the most widely used [MQTT client library](https://www.emqx.com/en/blog/introduction-to-the-commonly-used-mqtt-client-library) in the JavaScript ecosystem.
-
+[MQTT.js](https://github.com/mqttjs/MQTT.js) is a client library of the MQTT protocol, written in JavaScript and used in Node.js and browser environments. It is currently the most widely used [MQTT client library](https://www.emqx.com/en/blog/introduction-to-the-commonly-used-mqtt-client-library) in the JavaScript ecosystem.
 
 
 ## Project initialization
@@ -42,7 +41,7 @@ After the installation, we create a new index.js file in the current directory a
 
 ### Connect to MQTT server
 
-This article will use [Free Public MQTT Server](https://www.emqx.com/en/mqtt/public-mqtt5-broker) provided by EMQX, which is created based on EMQX's [MQTT IoT Cloud Platform](https://www.emqx.com/en/cloud). The server access information is as follows:
+This article will use [Free Public MQTT Server](https://www.emqx.com/en/mqtt/public-mqtt5-broker) provided by EMQX, which is created based on EMQ's [MQTT cloud](https://www.emqx.com/en/cloud). The server access information is as follows:
 
 - Broker: **broker.emqx.io**
 - TCP Port: **1883**
@@ -97,7 +96,7 @@ client.on('connect', () => {
 })
 ```
 
-After subscribing to the topic successfully, we then use the on function to monitor the function of receiving the message. When the message is received, we can get the topic and message in the callback function of this function.
+After subscribing to the topic successfully, we then use the `on` function to monitor the function of receiving the message. When the message is received, we can get the topic and message in the callback function of this function.
 
 > Note: The message in the callback function is of Buffer type and needs to be converted into a string by the toString function
 
@@ -191,7 +190,7 @@ We can see that the message sent by MQTT X is printed in the console.
 
 ![MQTT messages](https://assets.emqx.com/images/02d8a35312ca1309f18a628dacca8910.png)
 
-So far, we have used Node.js as an MQTT client to connect to the [public MQTT broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker), and realizes the connection, message publishing and subscription between the test client and MQTT server.
+So far, we have used Node.js as an [MQTT client](https://www.emqx.io/mqtt-client) to connect to the [public MQTT broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker), and realizes the connection, message publishing and subscription between the test client and MQTT server.
 
 
 <section class="promotion">
