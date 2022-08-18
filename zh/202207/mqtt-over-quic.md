@@ -205,3 +205,6 @@ MQTT over QUIC 在 EMQX 5.0 中的率先实现，让 EMQ 再次走在全球物�
 ## 本系列中的其它文章
 
 - [EMQX 5.0 产品解读 01 | Mria + RLOG 新架构下的 EMQX 5.0 如何实现 1 亿 MQTT 连接](https://www.emqx.com/zh/blog/how-emqx-5-0-achieves-100-million-mqtt-connections)
+- [EMQX 5.0 产品解读 03 | 基于 RocksDB 实现高可靠、低时延的 MQTT 数据持久化](https://www.emqx.com/zh/blog/mqtt-persistence-based-on-rocksdb)
+- [EMQX 5.0 产品解读 04 | 全新物联网数据集成 ：Flow 可视化编排 & 双向数据桥接](https://www.emqx.com/zh/blog/iot-data-integration)
+- [EMQX 5.0 产品解读 05 | 灵活多样认证授权，零开发投入保障 IoT 安全](https://www.emqx.com/zh/blog/securing-the-iot)
