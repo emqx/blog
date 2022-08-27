@@ -6,14 +6,14 @@ The public announcement first appeared at the top of its IoT Core web page, foll
 
 Now is the time to consider your best Google Cloud IoT Core alternative.
 
-Given that Google IoT Core is based on MQTT, the best alternative options for seamless migration undoubtedly are MQTT-based IoT messaging platforms or services. As a trusted partner to Google Cloud Platform (GCP), EMQ has brought solid and well-round IoT connectivity solutions to our mutual customers. We are here to provide ideal migration options for those seeking the best Google IoT Core alternatives. EMQX, the world’s most scalable open source [MQTT Broker](https://www.emqx.io/), and [EMQX Cloud](https://www.emqx.com/en/cloud), a fully-managed MQTT service [available on Google Cloud Platform](https://www.emqx.com/en/blog/introducing-emqx-cloud-on-google-cloud-platform), are both based on **open standards, 100% compliant with MQTT 5.0 and 3.x standards and deep integrated with GCP.**
+Given that Google IoT Core is based on MQTT, the best alternative options for seamless migration undoubtedly are MQTT-based IoT messaging platforms or services. As a trusted partner to Google Cloud Platform (GCP), EMQ has already brought solid and well-rounded IoT connectivity solutions to our mutual customers. We are here to provide ideal migration options for those seeking the best Google IoT Core alternatives. [EMQX](https://www.emqx.com/en/products/emqx), the world’s most scalable open source [MQTT Broker](https://www.emqx.io/), and [EMQX Cloud](https://www.emqx.com/en/cloud), a fully-managed MQTT service already [available on Google Cloud Platform](https://www.emqx.com/en/blog/introducing-emqx-cloud-on-google-cloud-platform), are both based on **open standards, 100% compliant with MQTT 5.0 and 3.x standards and deeply integrated with GCP.**
 
 ### Choose EMQX as Your Perfect Replacement for Google IoT Core
 
-EMQX, the world’s most scalable open source MQTT Broker, offers users capabilities to connect any device at any scale. It moves and processes IoT data in real-time anywhere. The outstanding scalability, high performance, and rich features of EMQX make it an ideal choice for Google IoT Core users:
+EMQX offers users the ability to connect any device at any scale, then move and processe IoT data anywhere in real-time. The outstanding scalability, high performance, and rich features of EMQX make it an ideal choice for Google IoT Core users:
 
-- **World’s #1 scalability:** EMQX has been verified in [test scenarios](https://www.emqx.com/en/blog/reaching-100m-mqtt-connections-with-emqx-5-0) to scale to 100 million concurrent MQTT connections in one cluster of 20 nodes, making it the world’s most scalable MQTT platform.
-- **Business-critical reliability:** EMQX can ingest and process millions of MQTT messages efficiently per second per node while guaranteeing sub-millisecond latency in message delivery with the soft real-time runtime. It commits up to 99.99% SLA and ensures no data loss with built-in RocksDB data persistence.
+- **World’s #1 scalability:** EMQX has been verified in [test scenarios](https://www.emqx.com/en/blog/reaching-100m-mqtt-connections-with-emqx-5-0) to scale to 100 million concurrent MQTT connections in one cluster of 20 nodes, making it the world’s most scalable open source MQTT platform.
+- **Business-critical reliability:** EMQX can ingest and process millions of MQTT messages efficiently per second per cluster while guaranteeing sub-millisecond latency in message delivery with its soft real-time runtime. It supports up to 99.99% SLA and ensures no data loss with built-in RocksDB data persistence.
 - **Widely adopted and fully proven:** Since its first release in 2013, EMQX has been downloaded 20M+ times, connecting 100M+ IoT devices worldwide every day, and boasts more than 20K+ global users. EMQX is trusted by over 300 customers from various industries like automotive, IIoT, transportation & logistics, energy & utilities, and more in mission-critical IoT scenarios, including well-known brands like HPE, VMware, Verifone, SAIC Volkswagen, and Ericsson.
 
 ### A True Seamless and Effortless Migration from Google IoT Core
@@ -28,9 +28,9 @@ EMQX Cloud supports VPC peering on GCP. Users who want to migrate from Google Io
 
 ### **Migrate from Google Cloud IoT Core to** [**EMQX**](https://www.emqx.com/en/cloud) **Today!**
 
-Large amounts of global enterprise customers, spanning from automotive, IIoT, transportation & logistics, energy & utilities, and more, have proven EMQX's scalability and reliability with massive deployments of mission-critical IoT applications on GCP by using EMQX. For existing Google Cloud IoT Core customers, EMQX will be your perfect alternative which offers outstanding product capabilities and minimizes the possible impact on your current running systems.
+Global enterprise customers, spanning automotive, IIoT, transportation & logistics, energy & utilities, and more, have proven EMQX's scalability and reliability with massive deployments of mission-critical IoT applications on GCP. For existing Google Cloud IoT Core customers, EMQX will be your perfect alternative, offering outstanding product capabilities and minimizing the possible impact on your current running systems.
 
-Make the right decisions and [get in touch](https://www.emqx.com/en/contact?product=cloud) with our dedicated IoT experts about your choices after Google Cloud IoT Core. We will assist you in starting your ideal replacement in no time.
+Make the right decision and [get in touch](https://www.emqx.com/en/contact?product=cloud) with our dedicated IoT experts about your options after Google Cloud IoT Core. We will assist you in building your ideal replacement immediately.
 
 
 
