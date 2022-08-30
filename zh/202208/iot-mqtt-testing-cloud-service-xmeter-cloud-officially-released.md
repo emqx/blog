@@ -66,7 +66,7 @@ XMeter Cloud 提供基础版和专业版两个版本，按使用的测试机规�
 
 ### 免费试用
 
-  XMeter Cloud 为试用用户提供 300 元的测试赠券，可体验总计 60 分钟左右的测试服务。基础版测试价格为每分钟 4.90 元，专业版测试价格需根据测试需求定制，咨询详细报价请点击文末「阅读原文」与商务团队联系。
+  XMeter Cloud 为试用用户提供 300 元的测试赠券，可体验总计 60 分钟左右的测试服务。基础版测试价格为每分钟 4.90 元，专业版测试价格需根据测试需求定制，咨询详细报价请[商务团队](https://www.emqx.com/zh/blog/iot-mqtt-testing-cloud-service-xmeter-cloud-officially-released)联系。
 
 ## 未来展望
 
