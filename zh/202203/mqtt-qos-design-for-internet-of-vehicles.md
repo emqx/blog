@@ -83,11 +83,9 @@ MQTT 设计了 3 个 QoS 等级：
 ## 本系列中的其它文章
 
 - [车联网平台搭建从入门到精通 01 | 车联网场景中的 MQTT 协议](https://www.emqx.com/zh/blog/mqtt-for-internet-of-vehicles)
-
 - [车联网平台搭建从入门到精通 02 | 千万级车联网 MQTT 消息平台架构设计](https://www.emqx.com/zh/blog/mqtt-messaging-platform-for-internet-of-vehicles)
-
 - [车联网平台搭建从入门到精通 03 | 车联网 TSP 平台场景中的 MQTT 主题设计](https://www.emqx.com/zh/blog/mqtt-topic-design-for-internet-of-vehicles)
-
 - [车联网平台搭建从入门到精通 05 | 车联网平台百万级消息吞吐架构设计](https://www.emqx.com/zh/blog/million-level-message-throughput-architecture-design-for-internet-of-vehicles)
-
 - [车联网平台搭建从入门到精通 06 | 车联网通信安全之 SSL/TLS 协议](https://www.emqx.com/zh/blog/ssl-tls-for-internet-of-vehicles-communication-security)
+- [车联网平台搭建从入门到精通 07 | 国密在车联网安全认证场景中的应用](https://www.emqx.com/zh/blog/application-of-gmsm-in-internet-of-vehicles-security-authentication-scenario)
+- [车联网平台搭建从入门到精通 08 | 云原生赋能智能网联汽车消息处理基础框架构建](https://www.emqx.com/zh/blog/cloud-native-smart-connected-car-messaging)
