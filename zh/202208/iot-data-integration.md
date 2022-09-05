@@ -32,7 +32,7 @@ EMQX 数据集成即旨在解决这一问题。通过提供灵活低代码的配
 
 经过多年来在各行业物联网应用场景中的落地实践，EMQX 数据集成能力已经成为构建整体应用的必备关键功能，持续为用户创造价值。
 
-![EMQ 车联网整体解决方案](https://assets.emqx.com/images/1fabbbb1ecdb1f792c58c385615dbf5a.png)
+![EMQ 车联网整体解决方案](https://assets.emqx.com/images/d2d3aca57bbe2259b7f1f3d7bdf8e805.jpg)
 
 <center>EMQ 车联网整体解决方案：围绕规则引擎构建上层 TSP 和其他业务</center>
 
