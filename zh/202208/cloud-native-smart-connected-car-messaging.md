@@ -16,7 +16,7 @@
 
 ## 云原生技术赋能新一代车联网消息处理
 
-CNCF（Cloud Native Computing Foundation）旗下项目中？以容器编排系统 Kubernetes 最为核心和基础。Kubernetes 通过将应用程序的容器组合成逻辑单元，以便于管理与服务发现，其为开源系统，可以自由地部署在企业内部、私有云、混合云或公有云，方便用户做出自由选择。
+CNCF（Cloud Native Computing Foundation）旗下项目中以容器编排系统 Kubernetes 最为核心和基础。Kubernetes 通过将应用程序的容器组合成逻辑单元，以便于管理与服务发现，其为开源系统，可以自由地部署在企业内部、私有云、混合云或公有云，方便用户做出自由选择。
 
 ![Kubernetes](https://assets.emqx.com/images/0d5e91a11f099f3d034f387c4392795c.jpeg)
 
