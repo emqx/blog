@@ -24,7 +24,7 @@ With announcing [support for Google Cloud Platform (GCP](https://www.emqx.com/en
 
 ![A True Seamless and Effortless Migration from Google IoT Core](https://assets.emqx.com/images/3c833240befdf29e5e72fa0c54336d6c.jpeg)
 
-EMQX Cloud supports VPC peering on GCP. Users who want to migrate from Google IoT Core simply need to choose Google Cloud as the cloud platform when creating new deployments on EMQX Cloud. EMQX cluster and user's resources on GCP, such as Cloud SQL, Kafka, MongoDB, and InfluxDB, can communicate by establishing a VPC peering connection. This communication is under the same network, making it more secure and reliable than a private network connection.
+EMQX Cloud supports VPC peering on GCP. Users who want to migrate from Google IoT Core simply need to choose Google Cloud as the cloud platform when creating new deployments on EMQX Cloud. EMQX cluster and user's resources on GCP, such as Cloud SQL, Kafka, MongoDB, and InfluxDB, can communicate by establishing a VPC peering connection. This communication is under the same network, making it more secure and reliable as it's a private network connection.
 
 ### **Migrate from Google Cloud IoT Core to** [**EMQX**](https://www.emqx.com/en/cloud) **Today!**
 
