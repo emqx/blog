@@ -2,7 +2,7 @@ Node-RED is a programming tool for wiring together hardware devices, APIs and on
 
 It provides a browser-based editor that makes it easy to wire together flows using the wide range of nodes in the palette that can be deployed to its runtime in a single click. 
 
-Besides some basic network service application nodes, such as HTTP and WebScoket, Node-RED provides access support to the [MQTT](https://www.emqx.com/en/mqtt) protocol. Currently, it provides an MQTT subscription node and a release node. The subscription node is used for data input, while the release node can be used for data output.
+Besides some basic network service application nodes, such as HTTP and WebSocket, Node-RED provides access support to the [MQTT](https://www.emqx.com/en/mqtt) protocol. Currently, it provides an MQTT subscription node and a release node. The subscription node is used for data input, while the release node can be used for data output.
 
 This article will introduce the complete operation process for accessing the MQTT server by using Node-RED, filtering and processing the MQTT data before sending it to the [MQTT broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker). Users may quickly understand how to use Node-RED for simple stream processing of MQTT data.
 
