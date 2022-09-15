@@ -58,7 +58,7 @@ If the CleanSession flag is set to 0, the server must resume communication with 
 
 When the client sends a Connect packet to request a connection to the server, the server must send a Connack packet as a response to the Connect packet  from the client. If the client does not receive the CONNACK packet from the server within a reasonable time, the client should close the network connection. The reasonable time depends on the type of application and the communication infrastructure. In  **[MQTTX](https://github.com/emqx/MQTTX)**, you can set a reasonable timeout time through Connection Timeout.
 
-![Connect.png](https://assets.emqx.com/images/cc1c9341a7e7471f0528e884788ab82e.png)
+![Connect.png](https://assets.emqx.com/images/81aa5b6578e595c8f82fecefffb05edb.png)
 
 Connack messages contain two important signs of Session Present and Connect Return code.
 
@@ -98,7 +98,7 @@ Use **[MQTTX](https://github.com/emqx/MQTTX)** to connect the Broker of  `broker
 
 The server sends a Suback packet to the client to confirm that it has received Subscribe packet and is processing it .
 
-![Subscribe.png](https://assets.emqx.com/images/5dbc2a5fcbd65cfb8283d61bdc94c748.png)
+![Subscribe.png](https://assets.emqx.com/images/19cda2ec9d3f0536e89715c66764195d.png)
 
 The Suback packet contains a list of reason codes, which is used to specify the maximum QoS level or an error that occurs for each subscription requested by the Subscribe packet. Each reason code corresponds to a topic filter in the Subscribe packet. The reason code sequence in the Suback packet must match the order of the topic filters in the Subscribe packet.
 
@@ -115,7 +115,7 @@ Allowed values of return code:
 
 Publish packet refers to an application message transmitted from the client to the server or from the server to the client. After receiving the Publish packet, the server forwards the message to other clients according to the topic filter.
 
-![Publish.png](https://assets.emqx.com/images/94513f3dab1454b41d9c66992d149a82.png)
+![Publish.png](https://assets.emqx.com/images/3a80fad29f6a555c195ac2831c933e3e.png)
 
 Try using **[MQTTX](https://github.com/emqx/MQTTX)** to publish a message with the topic `testtopic/mytopic` and the content` {"msg":"hello world"} `. Because  the topic `testtopic/#`  has been subscribed before, the message forwarded by Broker is received immediately.
 
