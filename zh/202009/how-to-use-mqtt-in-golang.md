@@ -125,7 +125,7 @@ func NewTlsConfig() *tls.Config {
 var broker = "broker.emqx.io"
 var port = 8883
 opts := mqtt.NewClientOptions()
-opts.AddBroker(fmt.Sprintf("tcp://%s:%d", broker, port))
+opts.AddBroker(fmt.Sprintf("ssl://%s:%d", broker, port))
 tlsConfig := NewTlsConfig()
 opts.SetTLSConfig(tlsConfig)
 // other options
