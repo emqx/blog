@@ -18,8 +18,7 @@ In this project, we will implement connecting ESP8266 to [free public MQTT broke
 
 ## ESP8266 Pub/Sub
 
-![project.png](https://assets.emqx.com/images/35a817d8c8b74c0481983b8c9ac0fee7.png)
-
+![project.png](https://assets.emqx.com/images/800906ed7aa829fb5134a6237cbc05b4.png)
 
 ## The code
 
