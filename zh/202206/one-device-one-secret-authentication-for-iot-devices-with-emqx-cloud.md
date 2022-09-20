@@ -21,7 +21,7 @@
 2. 生成客户端 root ca 自签名证书，使用自签名 root ca 证书签发客户端证书需确保 Common Name 唯一。
 
    ```
-   # CA 证书生成 client-ca.crt，subj 依据实际使用情况调整。
+   # CA 证书生成 client-ca.crt，subj 依据实际使用情况调整。
    openssl req \
        -new \
        -newkey rsa:2048 \
@@ -32,13 +32,13 @@
        -keyout client-ca.key \
        -out client-ca.crt
        
-   # 客户端秘钥生成 client.key
+   # 客户端秘钥生成 client.key
    openssl genrsa -out client.key 2048
    
-   # 生成客户端证书请求文件 client.csr，Common Name 为客户端携带认证信息
+   # 生成客户端证书请求文件 client.csr，Common Name 为客户端携带认证信息
    openssl req -new -key client.key -out client.csr -subj "/Common Name=346a004d-1dab-4016-bb38-03cca7094415"
    
-   # 用 CA 证书给客户端证书签名，生成 client.crt
+   # 用 CA 证书给客户端证书签名，生成 client.crt
    openssl x509 -req -days 365 -sha256 -in client.csr -CA client-ca.crt -CAkey client-ca.key -CAcreateserial -out client.crt
    
    # 查看客户端端证书信息

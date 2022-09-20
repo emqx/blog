@@ -81,14 +81,14 @@ Kubernetes 中的 Helm Chart 和 Operator 则解决了这一难题。这两种�
   通过 EMQX Kubernetes Operator，只需要简单的数行 YAML 就可以部署一个 EMQX 集群。
 
 ```
-$ cat << "EOF" | kubectl apply -f -                
+$ cat << "EOF" | kubectl apply -f -                
   apiVersion: apps.emqx.io/v2alpha1
   kind: EMQX
   metadata:
-    name: emqx 
-  spec:                      
-    emqxTemplate:   
-      image: emqx/emqx:5.0.6
+    name: emqx 
+  spec:                      
+    emqxTemplate:   
+      image: emqx/emqx:5.0.6
 EOF
 emqx.apps.emqx.io/emqx applied
 ```
@@ -97,59 +97,59 @@ EMQX Kubernetes Operator 默认部署 3 个 Core 节点以及 3 个 Replicant �
 
 ```
 $ kubectl get pods 
-NAME                              READY   STATUS    RESTARTS        AGE
-emqx-core-0                       1/1     Running   0               75s
-emqx-core-1                       1/1     Running   0               75s
-emqx-core-2                       1/1     Running   0               75s
-emqx-replicant-6c8b4fccfb-bkk4s   1/1     Running   0               75s
-emqx-replicant-6c8b4fccfb-kmg9j   1/1     Running   0               75s
-emqx-replicant-6c8b4fccfb-zc929   1/1     Running   0               75s
+NAME                              READY   STATUS    RESTARTS        AGE
+emqx-core-0                       1/1     Running   0               75s
+emqx-core-1                       1/1     Running   0               75s
+emqx-core-2                       1/1     Running   0               75s
+emqx-replicant-6c8b4fccfb-bkk4s   1/1     Running   0               75s
+emqx-replicant-6c8b4fccfb-kmg9j   1/1     Running   0               75s
+emqx-replicant-6c8b4fccfb-zc929   1/1     Running   0               75s
 ```
 
 ```
 $ kubectl get emqx emqx -o json | jq ".status.emqxNodes"
 [
   {
-    "node": "emqx@172.17.0.11",
-    "node_status": "running",
-    "otp_release": "24.2.1-1/12.2.1",
-    "role": "replicant",
-    "version": "5.0.6"
+    "node": "emqx@172.17.0.11",
+    "node_status": "running",
+    "otp_release": "24.2.1-1/12.2.1",
+    "role": "replicant",
+    "version": "5.0.6"
   },
   {
-    "node": "emqx@172.17.0.12",
-    "node_status": "running",
-    "otp_release": "24.2.1-1/12.2.1",
-    "role": "replicant",
-    "version": "5.0.6"
+    "node": "emqx@172.17.0.12",
+    "node_status": "running",
+    "otp_release": "24.2.1-1/12.2.1",
+    "role": "replicant",
+    "version": "5.0.6"
   },
   {
-    "node": "emqx@172.17.0.13",
-    "node_status": "running",
-    "otp_release": "24.2.1-1/12.2.1",
-    "role": "replicant",
-    "version": "5.0.6"
+    "node": "emqx@172.17.0.13",
+    "node_status": "running",
+    "otp_release": "24.2.1-1/12.2.1",
+    "role": "replicant",
+    "version": "5.0.6"
   },
   {
-    "node": "emqx@emqx-core-0.emqx-headless.default.svc.cluster.local",
-    "node_status": "running",
-    "otp_release": "24.2.1-1/12.2.1",
-    "role": "core",
-    "version": "5.0.6"
+    "node": "emqx@emqx-core-0.emqx-headless.default.svc.cluster.local",
+    "node_status": "running",
+    "otp_release": "24.2.1-1/12.2.1",
+    "role": "core",
+    "version": "5.0.6"
   },
   {
-    "node": "emqx@emqx-core-1.emqx-headless.default.svc.cluster.local",
-    "node_status": "running",
-    "otp_release": "24.2.1-1/12.2.1",
-    "role": "core",
-    "version": "5.0.6"
+    "node": "emqx@emqx-core-1.emqx-headless.default.svc.cluster.local",
+    "node_status": "running",
+    "otp_release": "24.2.1-1/12.2.1",
+    "role": "core",
+    "version": "5.0.6"
   },
   {
-    "node": "emqx@emqx-core-2.emqx-headless.default.svc.cluster.local",
-    "node_status": "running",
-    "otp_release": "24.2.1-1/12.2.1",
-    "role": "core",
-    "version": "5.0.6"
+    "node": "emqx@emqx-core-2.emqx-headless.default.svc.cluster.local",
+    "node_status": "running",
+    "otp_release": "24.2.1-1/12.2.1",
+    "role": "core",
+    "version": "5.0.6"
   }
 ]
 ```
