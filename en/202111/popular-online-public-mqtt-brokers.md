@@ -164,34 +164,34 @@ After emqtt-bench is ready, each of the following Sub/Pub commands is executed i
 ```bash
 # EMQX
 ## Sub
-./emqtt_bench sub -t t/1 -c 1 -h broker.emqx.io
+./emqtt_bench sub -t t/1 -c 1 -h broker.emqx.io
 ## Pub
-./emqtt_bench pub -t t/1 -c 1 -h broker.emqx.io -I 1
+./emqtt_bench pub -t t/1 -c 1 -h broker.emqx.io -I 1
 
 # EMQX CN
 ## Sub
-./emqtt_bench sub -t t/1 -c 1 -h broker-cn.emqx.io
+./emqtt_bench sub -t t/1 -c 1 -h broker-cn.emqx.io
 ## Pub
-./emqtt_bench pub -t t/1 -c 1 -h broker-cn.emqx.io -I 1
+./emqtt_bench pub -t t/1 -c 1 -h broker-cn.emqx.io -I 1
 
 # Eclipse
 ## Sub
-./emqtt_bench sub -t t/1 -c 1 -h mqtt.eclipseprojects.io
+./emqtt_bench sub -t t/1 -c 1 -h mqtt.eclipseprojects.io
 ## Pub
-./emqtt_bench pub -t t/1 -c 1 -h mqtt.eclipseprojects.io -I 1
+./emqtt_bench pub -t t/1 -c 1 -h mqtt.eclipseprojects.io -I 1
 
 
 # Mosquitto
 ## Sub
-./emqtt_bench sub -t t/1 -c 1 -h test.mosquitto.org
+./emqtt_bench sub -t t/1 -c 1 -h test.mosquitto.org
 ## Pub
-./emqtt_bench pub -t t/1 -c 1 -h test.mosquitto.org -I 1
+./emqtt_bench pub -t t/1 -c 1 -h test.mosquitto.org -I 1
 
 # HiveMQ
 ## Sub
-./emqtt_bench sub -t t/1 -c 1 -h broker.hivemq.com
+./emqtt_bench sub -t t/1 -c 1 -h broker.hivemq.com
 ## Pub
-./emqtt_bench pub -t t/1 -c 1 -h broker.hivemq.com -I 1
+./emqtt_bench pub -t t/1 -c 1 -h broker.hivemq.com -I 1
 ```
 
  

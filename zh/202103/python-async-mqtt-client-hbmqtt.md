@@ -49,9 +49,9 @@ pip3 install -i https://pypi.doubanio.com/simple hbmqtt
 
 本文将使用 EMQX 提供的[免费公共 MQTT 服务器](https://www.emqx.com/zh/mqtt/public-mqtt5-broker)，该服务基于 EMQX 的[MQTT 物联网云平台](https://www.emqx.com/zh/cloud)创建。服务器接入信息如下：
 
-* Broker: broker.emqx.io
-* TCP Port: 1883
-* Websocket Port: 8083
+* Broker: broker.emqx.io
+* TCP Port: 1883
+* Websocket Port: 8083
 
 首先，导入 MQTT 客户端库。
 
@@ -69,8 +69,8 @@ client.disconnect()
 
 ```python
 async def test_pub():
-    client = MQTTClient()
-    await client.connect('mqtt://broker.emqx.io/')
+    client = MQTTClient()
+    await client.connect('mqtt://broker.emqx.io/')
     await client.disconnect()
 ```
 
@@ -90,15 +90,15 @@ client.publish('a/b', b'TEST MESSAGE WITH QOS_0', qos=QOS_0)
 
 ```
 async def test_pub():
-    client = MQTTClient()
-    await Client.connect('mqtt://broker.emqx.io/')
-    await asyncio.gather(
-        client.publish('a/b', b'TEST MESSAGE WITH QOS_0', qos=QOS_0),
-        client.publish('a/b', b'TEST MESSAGE WITH QOS_1', qos=QOS_1),
-        client.publish('a/b', b'TEST MESSAGE WITH QOS_2', qos=QOS_2)
-    )
-    logging.info("messages published")
-    await Client.disconnect()
+    client = MQTTClient()
+    await Client.connect('mqtt://broker.emqx.io/')
+    await asyncio.gather(
+        client.publish('a/b', b'TEST MESSAGE WITH QOS_0', qos=QOS_0),
+        client.publish('a/b', b'TEST MESSAGE WITH QOS_1', qos=QOS_1),
+        client.publish('a/b', b'TEST MESSAGE WITH QOS_2', qos=QOS_2)
+    )
+    logging.info("messages published")
+    await Client.disconnect()
 ```
 
 在这段代码中，我们将三个发送消息函数放进 asyncio 的任务列表里，它们将会依次被运行。当所有任务都完成后，断开连接。
@@ -114,7 +114,7 @@ client = MQTTClient()
 # 订阅
 client.subscribe([
   ('topic/0', QOS_0),
-  ('topic/1', QOS_1),  
+  ('topic/1', QOS_1),  
 ])
 # 取消订阅
 client.unsubscribe([
@@ -126,16 +126,16 @@ client.unsubscribe([
 
 ```python
 async def test_sub():
-    client = MQTTClient()
-    await client.connect('mqtt://broker.emqx.io/')
-    await client.subscribe([
-            ('a/b', QOS_1),
-         ])
-    for i in range(0, 10):
-        message = await client.deliver_message()
-        packet = message.publish_packet
-        print(f"{i}:  {packet.variable_header.topic_name} => {packet.payload.data}")
-    await client.disconnect()
+    client = MQTTClient()
+    await client.connect('mqtt://broker.emqx.io/')
+    await client.subscribe([
+            ('a/b', QOS_1),
+         ])
+    for i in range(0, 10):
+        message = await client.deliver_message()
+        packet = message.publish_packet
+        print(f"{i}:  {packet.variable_header.topic_name} => {packet.payload.data}")
+    await client.disconnect()
 ```
 
 在这段代码中，我们在接收消息时设置了 await 等待，当代码执行到如下位置时，CPU 会先去执行其它任务，直到有消息传达，再将其打印。

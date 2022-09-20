@@ -101,41 +101,41 @@ Cluster status: #{running_nodes => ['emqx@n1.test.net','emqx@n2.test.net'], stop
 
 ```
 global
-  log stdout format raw daemon debug
-  nbproc 1
-  nbthread 2
-  cpu-map auto:1/1-2 0-1
-  # Enable the HAProxy Runtime API
-  # e.g. echo "show table emqx_tcp_back" | sudo socat stdio tcp4-connect:172.100.239.4:9999
-  stats socket :9999 level admin expose-fd listeners
+  log stdout format raw daemon debug
+  nbproc 1
+  nbthread 2
+  cpu-map auto:1/1-2 0-1
+  # Enable the HAProxy Runtime API
+  # e.g. echo "show table emqx_tcp_back" | sudo socat stdio tcp4-connect:172.100.239.4:9999
+  stats socket :9999 level admin expose-fd listeners
 
 defaults
-  log global
-  mode tcp
-  option tcplog
-  maxconn 1024000
-  timeout connect 30000
-  timeout client 600s
-  timeout server 600s
+  log global
+  mode tcp
+  option tcplog
+  maxconn 1024000
+  timeout connect 30000
+  timeout client 600s
+  timeout server 600s
 
 frontend emqx_tcp
-  mode tcp
-  option tcplog
-  bind *:1883
-  default_backend emqx_tcp_back
+  mode tcp
+  option tcplog
+  bind *:1883
+  default_backend emqx_tcp_back
 
 backend emqx_tcp_back
-  mode tcp
+  mode tcp
 
-  # Create a stick table for session persistence
-  stick-table type string len 32 size 100k expire 30m
+  # Create a stick table for session persistence
+  stick-table type string len 32 size 100k expire 30m
 
-  # Use ClientID / client_identifier as persistence key
-  stick on req.payload(0,0),mqtt_field_value(connect,client_identifier)
+  # Use ClientID / client_identifier as persistence key
+  stick on req.payload(0,0),mqtt_field_value(connect,client_identifier)
 
-  # send proxy-protocol v2 headers
-  server emqx1 n1.test.net:1883 check-send-proxy send-proxy-v2
-  server emqx2 n2.test.net:1883 check-send-proxy send-proxy-v2
+  # send proxy-protocol v2 headers
+  server emqx1 n1.test.net:1883 check-send-proxy send-proxy-v2
+  server emqx2 n2.test.net:1883 check-send-proxy send-proxy-v2
 ```
 
 
@@ -144,11 +144,11 @@ backend emqx_tcp_back
 
 ```
 docker run -d \
-  --net test.net \
-  --name proxy.test.net \
-  -p 9999:9999 \
-  -v /tmp/haproxy.cfg:/haproxy.cfg \
-  haproxy:2.4 haproxy -f /haproxy.cfg
+  --net test.net \
+  --name proxy.test.net \
+  -p 9999:9999 \
+  -v /tmp/haproxy.cfg:/haproxy.cfg \
+  haproxy:2.4 haproxy -f /haproxy.cfg
 ```
 
 

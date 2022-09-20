@@ -22,9 +22,9 @@
 下载完成之后解压，进入解压后的目录：
 
 ```shell
-% ls
-LICENSE         README.md       RELEASE_NOTES.md data             ext             licenses         sbin
-NOTICE           README_ZH.md     conf             docs             lib             logs             tools
+% ls
+LICENSE         README.md       RELEASE_NOTES.md data             ext             licenses         sbin
+NOTICE           README_ZH.md     conf             docs             lib             logs             tools
 ```
 
 要启用 IoTDB 的 [MQTT 协议](https://www.emqx.com/zh/mqtt)支持，需要改动 IoTDB 的配置文件 `conf/iotdb-engine.properties`：
@@ -64,13 +64,13 @@ mqtt_max_message_size=1048576
 ---------------------
 Starting IoTDB
 ---------------------
-Maximum memory allocation pool = 2048MB, initial memory allocation pool = 512MB
-If you want to change this configuration, please check conf/iotdb-env.sh(Unix or OS X, if you use Windows, check conf/iotdb-env.bat).
-2022-01-10 14:15:31,914 [main] INFO o.a.i.d.c.IoTDBDescriptor:121 - Start to read config file file:./sbin/../conf/iotdb-engine.properties
+Maximum memory allocation pool = 2048MB, initial memory allocation pool = 512MB
+If you want to change this configuration, please check conf/iotdb-env.sh(Unix or OS X, if you use Windows, check conf/iotdb-env.bat).
+2022-01-10 14:15:31,914 [main] INFO o.a.i.d.c.IoTDBDescriptor:121 - Start to read config file file:./sbin/../conf/iotdb-engine.properties
 ...
-2022-01-10 14:14:28,690 [main] INFO o.a.i.d.s.UpgradeSevice:73 - Upgrade service stopped
-2022-01-10 14:14:28,690 [main] INFO o.a.i.db.service.IoTDB:153 - Congratulation, IoTDB is set up successfully. Now, enjoy yourself!
-2022-01-10 14:14:28,690 [main] INFO o.a.i.db.service.IoTDB:101 - IoTDB has started
+2022-01-10 14:14:28,690 [main] INFO o.a.i.d.s.UpgradeSevice:73 - Upgrade service stopped
+2022-01-10 14:14:28,690 [main] INFO o.a.i.db.service.IoTDB:153 - Congratulation, IoTDB is set up successfully. Now, enjoy yourself!
+2022-01-10 14:14:28,690 [main] INFO o.a.i.db.service.IoTDB:101 - IoTDB has started
 ```
 
 我们保持这个终端窗口不动，另外打开一个新的命令行终端窗口，启动 IoTDB 的 shell 工具：
@@ -80,12 +80,12 @@ If you want to change this configuration, please check conf/iotdb-env.sh(Unix or
 ---------------------
 Starting IoTDB Cli
 ---------------------
-_____       _________ ______   ______
-|_   _|     | _   _ ||_   _ `.|_   _ \
-| |   .--.|_/ | | \_| | | `. \ | |_) |
-| | / .'`\ \ | |     | | | | | __'.
-_| |_| \__. | _| |_   _| |_.' /_| |__) |
-|_____|'.__.' |_____| |______.'|_______/ version 0.12.4
+_____       _________ ______   ______
+|_   _|     | _   _ ||_   _ `.|_   _ \
+| |   .--.|_/ | | \_| | | `. \ | |_) |
+| | / .'`\ \ | |     | | | | | __'.
+_| |_| \__. | _| |_   _| |_.' /_| |__) |
+|_____|'.__.' |_____| |______.'|_______/ version 0.12.4
 
 
 IoTDB> login successfully
@@ -101,27 +101,27 @@ IoTDB>
 我们直接使用命令行下载 macOS 版本的 EMQX 开源版，更多安装包请访问 [EMQX 开源版下载页面](https://www.emqx.io/zh/downloads)。
 
 ```shell
-% wget https://www.emqx.com/en/downloads/broker/4.3.11/emqx-macos-4.3.11-amd64.zip
+% wget https://www.emqx.com/en/downloads/broker/4.3.11/emqx-macos-4.3.11-amd64.zip
 ```
 
 然后解压并启动 EMQX：
 
 ```shell
-% unzip -q emqx-macos-4.3.11-amd64.zip
-% cd emqx
+% unzip -q emqx-macos-4.3.11-amd64.zip
+% cd emqx
 % ./bin/emqx console
 
-log.to = "console"
-Erlang/OTP 23 [erts-11.1.8] [emqx] [64-bit] [smp:8:8] [ds:8:8:8] [async-threads:4] [hipe]
-Starting emqx on node emqx@127.0.0.1
-Start mqtt:tcp:internal listener on 127.0.0.1:11883 successfully.
-Start mqtt:tcp:external listener on 0.0.0.0:1883 successfully.
-Start mqtt:ws:external listener on 0.0.0.0:8083 successfully.
-Start mqtt:ssl:external listener on 0.0.0.0:8883 successfully.
-Start mqtt:wss:external listener on 0.0.0.0:8084 successfully.
-Start http:management listener on 8081 successfully.
-Start http:dashboard listener on 18083 successfully.
-EMQX Broker 4.3.11 is running now!
+log.to = "console"
+Erlang/OTP 23 [erts-11.1.8] [emqx] [64-bit] [smp:8:8] [ds:8:8:8] [async-threads:4] [hipe]
+Starting emqx on node emqx@127.0.0.1
+Start mqtt:tcp:internal listener on 127.0.0.1:11883 successfully.
+Start mqtt:tcp:external listener on 0.0.0.0:1883 successfully.
+Start mqtt:ws:external listener on 0.0.0.0:8083 successfully.
+Start mqtt:ssl:external listener on 0.0.0.0:8883 successfully.
+Start mqtt:wss:external listener on 0.0.0.0:8084 successfully.
+Start http:management listener on 8081 successfully.
+Start http:dashboard listener on 18083 successfully.
+EMQX Broker 4.3.11 is running now!
 Eshell V11.1.8 (abort with ^G)
 (emqx@127.0.0.1)1>
 ```
@@ -137,10 +137,10 @@ SQL 语句为：
 ```sql
 SELECT
     clientid,
-    now_timestamp('millisecond') as now_ts_ms,
-    payload.bar as bar
+    now_timestamp('millisecond') as now_ts_ms,
+    payload.bar as bar
 FROM
-    "t/#"
+    "t/#"
 ```
 
 然后我们在页面的底部，给规则加一个 "桥接数据到 MQTT Broker" 动作：
@@ -167,13 +167,13 @@ IoTDB 要求消息内容是一个 JSON 格式，消息内容模板可以按照�
 
 ```json
 {
- "device": "root.sg.${clientid}",
- "timestamp": ${now_ts_ms},
- "measurements": [
-   "bar"
+ "device": "root.sg.${clientid}",
+ "timestamp": ${now_ts_ms},
+ "measurements": [
+   "bar"
  ],
- "values": [
-   ${bar}
+ "values": [
+   ${bar}
  ]
 }
 ```
@@ -196,7 +196,7 @@ MQTT 客户端的连接参数里面，我们只需要填一个参数，Client ID
 
 ```json
 {
- "bar": 0.2
+ "bar": 0.2
 }
 ```
 
@@ -207,24 +207,24 @@ MQTT 客户端的连接参数里面，我们只需要填一个参数，Client ID
 最后我们回到命令行终端的 IoTDB 客户端窗口，使用下面的 SQL 语句查询数据：
 
 ```sql
-IoTDB> SHOW TIMESERIES root.sg.abc
+IoTDB> SHOW TIMESERIES root.sg.abc
 +---------------+-----+-------------+--------+--------+-----------+----+----------+
-|     timeseries|alias|storage group|dataType|encoding|compression|tags|attributes|
+|     timeseries|alias|storage group|dataType|encoding|compression|tags|attributes|
 +---------------+-----+-------------+--------+--------+-----------+----+----------+
-|root.sg.abc.bar| null|     root.sg|   FLOAT| GORILLA|     SNAPPY|null|      null|
+|root.sg.abc.bar| null|     root.sg|   FLOAT| GORILLA|     SNAPPY|null|      null|
 +---------------+-----+-------------+--------+--------+-----------+----+----------+
-Total line number = 1
-It costs 0.006s
+Total line number = 1
+It costs 0.006s
 
-IoTDB> SELECT * FROM root.sg.abc
+IoTDB> SELECT * FROM root.sg.abc
 +-----------------------------+---------------+
-|                         Time|root.sg.abc.bar|
+|                         Time|root.sg.abc.bar|
 +-----------------------------+---------------+
-|2022-01-10T17:39:41.724+08:00|            0.3|
-|2022-01-10T17:40:32.805+08:00|            0.2|
+|2022-01-10T17:39:41.724+08:00|            0.3|
+|2022-01-10T17:40:32.805+08:00|            0.2|
 +-----------------------------+---------------+
-Total line number = 2
-It costs 0.007s
+Total line number = 2
+It costs 0.007s
 IoTDB>
 ```
 
