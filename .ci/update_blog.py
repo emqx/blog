@@ -1,5 +1,6 @@
 import os
 import sys
+import time
 
 import requests
 
@@ -29,7 +30,8 @@ if __name__ == '__main__':
             response = requests.put(
                 url=f'{update_api}/{lang}/{title}',
                 json={'contents': content},
-                headers={'token': update_token}
+                headers={'token': update_token},
+                timeout=50
             )
             if response.status_code == 200:
                 print(f'Updated {file_name}')
@@ -38,6 +40,7 @@ if __name__ == '__main__':
             else:
                 print(response.status_code, response.text)
                 update_status = False
+            time.sleep(2)
 
     if update_status:
         print('Update blog successfully')
