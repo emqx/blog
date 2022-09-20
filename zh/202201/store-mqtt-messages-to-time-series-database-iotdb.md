@@ -163,7 +163,7 @@ FROM
 
 IoTDB 不关心消息主题，我们填一个任意的主题：`foo`。
 
-IoTDB 要求消息内容是一个 JSON 格式，消息内容模板可以按照上图中样式填写。详情请参见 IoTDB 的[通信服务协议文档](https://iotdb.apache.org/zh/UserGuide/Master/Communication-Service-Protocol/Programming-MQTT.html#mqtt-协议)。
+IoTDB 要求消息内容是一个 JSON 格式，消息内容模板可以按照上图中样式填写。详情请参见 IoTDB 的[通信服务协议文档](https://iotdb.apache.org/zh/UserGuide/V0.12.x/Communication-Service-Protocol/Programming-MQTT.html)。
 
 ```json
 {
