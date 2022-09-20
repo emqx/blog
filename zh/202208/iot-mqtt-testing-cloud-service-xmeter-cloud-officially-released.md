@@ -82,5 +82,5 @@ XMeter Cloud 现已开放试用，您在使用过程中如有任何问题和建�
     <div>
         现在试用 XMeter Cloud
     </div>
-    <a href="https://www.emqx.com/zh/signup?continue=https://xmeter-cloud.emqx.com/commercialPage.html" class="button is-gradient px-5">免费试用 →</a>
+    <a href="https://accounts-zh.emqx.com/signup?continue=https://xmeter-cloud.emqx.com/commercialPage.html" class="button is-gradient px-5">免费试用 →</a>
 </section>

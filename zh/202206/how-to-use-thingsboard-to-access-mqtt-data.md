@@ -10,7 +10,7 @@
 
 > 注意：只有专业版具备 [平台集成](https://thingsboard.io/docs/user-guide/integrations/) 功能，所以需要使用 ThingsBoard Cloud 或者是下载部署专业版。
 
-本文使用全托管的 MQTT 消息云服务 - EMQX Cloud 创建第三方 Broker。[注册登录 EMQX Cloud](https://www.emqx.com/zh/signup?continue=https%3A%2F%2Fcloud.emqx.com%2Fconsole%2Fdeployments%2F0%3Foper%3Dnew) 控制台，新建部署，一个部署即为一个 Broker。新用户同时拥有 14 天基础版和 14 天专业版免费试用机会。
+本文使用全托管的 MQTT 消息云服务 - EMQX Cloud 创建第三方 Broker。[注册登录 EMQX Cloud](https://accounts-zh.emqx.com/signup?continue=https%3A%2F%2Fcloud.emqx.com%2Fconsole%2Fdeployments%2F0%3Foper%3Dnew) 控制台，新建部署，一个部署即为一个 Broker。新用户同时拥有 14 天基础版和 14 天专业版免费试用机会。
 
 EMQX Cloud 提供 VPC 对等连接和 REST API 等功能，且具备强大灵活的数据集成能力，方便用户与其现有云服务资源对接。提供一站式运维代管，可以节省大量的时间和人力成本，让企业专注在交付更有价值的业务系统。
 
@@ -150,7 +150,7 @@ EMQX Cloud 提供 VPC 对等连接和 REST API 等功能，且具备强大灵活
         免费试用 EMQX Cloud
         <div class="is-size-14 is-text-normal has-text-weight-normal">无须绑定信用卡</div>
     </div>
-    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a>
+    <a href="https://accounts-zh.emqx.com/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a>
 </section>
 
 

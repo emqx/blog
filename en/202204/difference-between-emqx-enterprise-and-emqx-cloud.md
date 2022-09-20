@@ -50,6 +50,6 @@ The scheme of the price of EMQX Enterprise will provide different modes of the p
 
 With this article, you will have a clearer understanding of EMQX Enterprise and EMQX Cloud. You can make a choice by the development status, business form, and business demand of your enterprise. Meanwhile, EMQX Enterprise and EMQX Cloud both offered a free trial. You are welcome to try it and determine which one is better for your business.
 
-EMQX Cloud: [Sign up for EMQX Cloud](https://www.emqx.com/en/signup?continue=https%3A%2F%2Fcloud-intl.emqx.com%2Fconsole%2Fdeployments%2F0%3Foper%3Dnew) 
+EMQX Cloud: [Sign up for EMQX Cloud](https://accounts.emqx.com/signup?continue=https%3A%2F%2Fcloud-intl.emqx.com%2Fconsole%2Fdeployments%2F0%3Foper%3Dnew) 
 
 EMQX Enterprise: [https://www.emqx.com/en/try?product=enterprise](https://www.emqx.com/en/try?product=enterprise)
