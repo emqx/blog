@@ -31,10 +31,14 @@ if __name__ == '__main__':
                 json={'contents': content},
                 headers={'token': update_token}
             )
-            print(response.status_code, response.text)
-            if response.status_code != 200:
+            if response.status_code == 200:
+                print(f'Updated {file_name}')
+            elif response.status_code == 404:
+                print(f'Remove {file_name}')
+            else:
+                print(response.status_code, response.text)
                 update_status = False
-    
+
     if update_status:
         print('Update blog successfully')
     else:
