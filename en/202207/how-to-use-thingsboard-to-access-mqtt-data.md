@@ -8,7 +8,7 @@ Since we are using ThingsBoard Cloud, we do not need to download and install it.
 
 > Note: Only the Professional Edition has [platform integration](https://thingsboard.io/docs/user-guide/integrations/). You need to use ThingsBoard Cloud or download and deploy the Professional Edition. 
 
-We will use EMQX Cloud to create a third-party MQTT broker. [Sign up for the EMQX Cloud](https://www.emqx.com/en/signup?continue=https%3A%2F%2Fcloud-intl.emqx.com%2Fconsole%2F) console and create a new deployment. As a new user, you will have a free 14-day trial for both the Standard and Professional plans.
+We will use EMQX Cloud to create a third-party MQTT broker. [Sign up for the EMQX Cloud](https://accounts.emqx.com/signup?continue=https%3A%2F%2Fcloud-intl.emqx.com%2Fconsole%2F) console and create a new deployment. As a new user, you will have a free 14-day trial for both the Standard and Professional plans.
 
 EMQX Cloud Professional edition provides VPC peer-to-peer connectivity and a REST API, and has powerful and flexible data integration capabilities, making it easy for users to interface with their existing cloud service resources. Providing a one-stop operations and monitoring service saves a lot of time and labor costs, allowing businesses to focus on delivering more business value.
 
@@ -157,7 +157,7 @@ At this point, we have finished integrating the EMQX Cloud deployment in ThingsB
         Try EMQX Cloud for Free
         <div class="is-size-14 is-text-normal has-text-weight-normal">No credit card required</div>
     </div>
-    <a href="https://www.emqx.com/en/signup?continue=https://cloud-intl.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">Get Started →</a>
+    <a href="https://accounts.emqx.com/signup?continue=https://cloud-intl.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">Get Started →</a>
 </section>
 
 

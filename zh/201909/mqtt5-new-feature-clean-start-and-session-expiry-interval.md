@@ -38,5 +38,5 @@ Clean Start 与 Session Expiry Interval 不仅解决了 Clean Session 的遗留�
         免费试用 EMQX Cloud
         <div class="is-size-14 is-text-normal has-text-weight-normal">全托管的云原生 MQTT 消息服务</div>
     </div>
-    <a href="https://www.emqx.com/zh/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a>
+    <a href="https://accounts-zh.emqx.com/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a>
 </section>

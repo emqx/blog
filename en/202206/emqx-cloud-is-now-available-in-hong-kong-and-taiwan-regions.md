@@ -32,5 +32,5 @@ In the future, EMQX Cloud will do more extensions in the cloud platform and depl
         Try EMQX Cloud for Free
         <div class="is-size-14 is-text-normal has-text-weight-normal">No credit card required</div>
     </div>
-    <a href="https://www.emqx.com/en/signup?continue=https://cloud-intl.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">Get Started →</a>
+    <a href="https://accounts.emqx.com/signup?continue=https://cloud-intl.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">Get Started →</a>
 </section>
