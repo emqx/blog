@@ -73,7 +73,7 @@ sensor/1/temperature
 
 ### 系统主题
 
-以 `$SYS/` 开头的主题为系统主题，系统主题主要用于获取 MQTT 服务器自身运行状态、消息统计、客户端上下线事件等数据。目前，MQTT 协议暂未明确规定 `$SYS/` 主题标准，但大多数 MQTT 服务器都遵循该[标准建议](https://github.com/mqtt/mqtt.org/wiki/SYS-Topics)。
+以 `$SYS/` 开头的主题为系统主题，系统主题主要用于获取 [MQTT 服务器](https://www.emqx.com/zh/mqtt/public-mqtt5-broker)自身运行状态、消息统计、客户端上下线事件等数据。目前，MQTT 协议暂未明确规定 `$SYS/` 主题标准，但大多数 MQTT 服务器都遵循该[标准建议](https://github.com/mqtt/mqtt.org/wiki/SYS-Topics)。
 
 例如，EMQX 服务器支持通过以下主题获取集群状态。
 
