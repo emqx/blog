@@ -6,7 +6,7 @@ MQTT v3.1.1 protocol has only 10 return codes. These return codes can represent 
 
 There are only 6 return codes in the CONNECT packet. Only when the return code of the CONNACK packet sent back by the server is 0, the connection is successfully established.
 
-|  值   |                           返回码                           |                             描述                             |
+|  Value   |                           Return code                           |                             	Description                             |
 | :---: | :--------------------------------------------------------: | :----------------------------------------------------------: |
 |   0   |                  0x00 Connection accepted                  |                     Connection accepted                      |
 |   1   | 0x01  Connection rejected for unsupported protocol version | The server does not support the MQTT protocol requested by the client. |
