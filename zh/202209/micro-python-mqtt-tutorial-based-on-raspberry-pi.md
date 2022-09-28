@@ -37,7 +37,7 @@
 
 本文将使用 EMQ 提供的 [免费公共 MQTT 服务器](https://www.emqx.com/zh/mqtt/public-mqtt5-broker)，该服务基于 [MQTT 物联网云平台 - EMQX Cloud](https://www.emqx.com/en/cloud) 创建。服务器接入信息如下：
 
-- Broker: `broker-cn.emqx.io`
+- Broker: `broker.emqx.io`
 - TCP Port: `1883`
 - Websocket Port: `8083`
 
@@ -53,7 +53,7 @@ import time
 from umqtt.simple import MQTTClient
 
 # 定义 sub 客户端的连接信息
-SERVER="broker-cn.emqx.io"
+SERVER="broker.emqx.io"
 ClientID = f'raspberry-sub-{time.time_ns()}'
 user = "emqx"
 password = "public"
@@ -61,16 +61,16 @@ topic = "raspberry/mqtt"
 msg = b'{"msg":"hello"}'
 
 def sub(topic, msg):
-# 在回调函数打印主题和消息
+    # 在回调函数打印主题和消息
     print('received message %s on topic %s' % (msg, topic))
 
 def main(server=SERVER):
-# 创建连接，参数分别为客户端 ID，broker 地址，broker 端口号，认证信息
+    # 创建连接，参数分别为客户端 ID，broker 地址，broker 端口号，认证信息
     client = MQTTClient(ClientID, server, 1883, user, password)
     client.set_callback(sub)
     client.connect()
     print('Connected to MQTT Broker "%s"' % (server))
-# 如果与 broker 失去连接后重连，仍然会继续订阅 raspberry/topic 主题
+    # 如果与 broker 失去连接后重连，仍然会继续订阅 raspberry/topic 主题
     client.subscribe(topic)
     while True:
         if True:
@@ -95,7 +95,7 @@ import time
 from umqtt.simple import MQTTClient
 
 # 定义 pub 客户端的连接信息
-server="broker-cn.emqx.io"
+server="broker.emqx.io"
 ClientID = f'raspberry-pub-{time.time_ns()}'
 user = "emqx"
 password = "public"
@@ -110,7 +110,7 @@ def connect():
     return client
 
 def reconnect():
-# 若无法连接到 broker，打印一条消息以通知连接不成功，并且等待 5 秒发起重连
+    # 若无法连接到 broker，打印一条消息以通知连接不成功，并且等待 5 秒发起重连
     print('Failed to connect to MQTT broker, Reconnecting...' % (server))
     time.sleep(5)
     client.reconnect()
