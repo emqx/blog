@@ -1,10 +1,10 @@
 [Vue](https://vuejs.org) is a progressive framework for building user interfaces. Unlike other monolithic frameworks, Vue is designed from the ground up to be incrementally adoptable. The core library is focused on the view layer only, and is easy to pick up and integrate with other libraries or existing projects. On the other hand, Vue is also perfectly capable of powering sophisticated Single-Page Applications when used in combination with modern tooling and supporting libraries.
 
-[MQTT](https://www.emqx.com/en/mqtt) is a kind of **lightweight IoT messaging protocol** based on the publish/subscribe model. This protocol provides one-to-many message distribution and decoupling of applications. It has several advantages which are low transmission consumption and protocol data exchange, minimized network traffic, three different service quality levels of message which can meet different delivery needs. 
+[MQTT](https://www.emqx.com/en/mqtt) is a kind of **lightweight IoT messaging protocol** based on the publish/subscribe model. This protocol provides one-to-many message distribution and decoupling of applications. It has several advantages which are low transmission consumption and protocol data exchange, minimized network traffic, three different service quality levels of message which can meet different delivery needs.
 
 This article mainly introduces how to use MQTT in the Vue project, and implement the connection, subscription, messaging, unsubscribing and other functions between the client and MQTT broker.
 
-
+> To create an MQTT connection in Vue 3 application using MQTT.js, please refer to https://github.com/emqx/MQTT-Client-Examples/tree/master/mqtt-client-Vue3.js
 
 ## Project initialization
 
@@ -12,10 +12,10 @@ This article mainly introduces how to use MQTT in the Vue project, and implement
 
 The reference link is as follows:
 
-- [Use Vue CLI create Vue project](https://cli.vuejs.org/guide/creating-a-project.html#vue-create) 
+- [Use Vue CLI create Vue project](https://cli.vuejs.org/guide/creating-a-project.html#vue-create)
 - [Create Vue project through introduce Vue.js](https://vuejs.org/v2/guide/installation.html)
 
-Examples: 
+Examples:
 
 ```shell
 vue create vue-mqtt-test
@@ -55,81 +55,101 @@ This article will use the [free public MQTT broker](https://www.emqx.com/en/mqtt
 
 - Broker: **broker.emqx.io**
 - TCP Port: **1883**
-- Websocket Port: **8083**
+- WebSocket Port: **8083**
+- WebSocket Secure Port: **8084**
 
 The key code of connection:
 
 ```vue
 <script>
-import mqtt from 'mqtt'
+import mqtt from "mqtt";
 
 export default {
   data() {
     return {
       connection: {
-        host: 'broker.emqx.io',
+        protocol: "ws",
+        host: "broker.emqx.io",
+        // ws: 8083; wss: 8084
         port: 8083,
-        endpoint: '/mqtt',
-        clean: true, // Reserved session
-        connectTimeout: 4000, // Time out
-        reconnectPeriod: 4000, // Reconnection interval
-        // Certification Information
-        clientId: 'mqttjs_3be2c321',
-        username: 'emqx_test',
-        password: 'emqx_test',
+        endpoint: "/mqtt",
+        // for more options, please refer to https://github.com/mqttjs/MQTT.js#mqttclientstreambuilder-options
+        clean: true,
+        connectTimeout: 30 * 1000, // ms
+        reconnectPeriod: 4000, // ms
+        clientId: "emqx_vue_" + Math.random().toString(16).substring(2, 8),
+        // auth
+        username: "emqx_test",
+        password: "emqx_test",
       },
       subscription: {
-        topic: 'topic/mqttx',
+        topic: "topic/mqttx",
         qos: 0,
       },
       publish: {
-        topic: 'topic/browser',
+        topic: "topic/browser",
         qos: 0,
         payload: '{ "msg": "Hello, I am browser." }',
       },
-      receiveNews: '',
-      qosList: [
-        { label: 0, value: 0 },
-        { label: 1, value: 1 },
-        { label: 2, value: 2 },
-      ],
+      receiveNews: "",
+      qosList: [0, 1, 2],
       client: {
         connected: false,
       },
       subscribeSuccess: false,
-    }
+      connecting: false,
+      retryTimes: 0,
+    };
   },
 
   methods: {
-    // Create connection
-    createConnection() {
-      // Connect string, and specify the connection method used through protocol
-      // ws unencrypted WebSocket connection
-      // wss encrypted WebSocket connection
-      // mqtt unencrypted TCP connection
-      // mqtts encrypted TCP connection
-      // wxs WeChat mini app connection
-      // alis Alipay mini app connection
-      const { host, port, endpoint, ...options } = this.connection
-      const connectUrl = `ws://${host}:${port}${endpoint}`
-      try {
-        this.client = mqtt.connect(connectUrl, options)
-      } catch (error) {
-        console.log('mqtt.connect error', error)
-      }
-      this.client.on('connect', () => {
-        console.log('Connection succeeded!')
-      })
-      this.client.on('error', error => {
-        console.log('Connection failed', error)ß
-      })
-      this.client.on('message', (topic, message) => {
-        this.receiveNews = this.receiveNews.concat(message)
-        console.log(`Received message ${message} from topic ${topic}`)
-      })
+    initData() {
+      this.client = {
+        connected: false,
+      };
+      this.retryTimes = 0;
+      this.connecting = false;
+      this.subscribeSuccess = false;
     },
-  }
-}
+    handleOnReConnect() {
+      this.retryTimes += 1;
+      if (this.retryTimes > 5) {
+        try {
+          this.client.end();
+          this.initData();
+          this.$message.error("Connection maxReconnectTimes limit, stop retry");
+        } catch (error) {
+          this.$message.error(error.toString());
+        }
+      }
+    },
+    createConnection() {
+      try {
+        this.connecting = true;
+        const { protocol, host, port, endpoint, ...options } = this.connection;
+        const connectUrl = `${protocol}://${host}:${port}${endpoint}`;
+        this.client = mqtt.connect(connectUrl, options);
+        if (this.client.on) {
+          this.client.on("connect", () => {
+            this.connecting = false;
+            console.log("Connection succeeded!");
+          });
+          this.client.on("reconnect", this.handleOnReConnect);
+          this.client.on("error", (error) => {
+            console.log("Connection failed", error);
+          });
+          this.client.on("message", (topic, message) => {
+            this.receiveNews = this.receiveNews.concat(message);
+            console.log(`Received message ${message} from topic ${topic}`);
+          });
+        }
+      } catch (error) {
+        this.connecting = false;
+        console.log("mqtt.connect error", error);
+      }
+    },
+  },
+};
 </script>
 ```
 
@@ -145,8 +165,8 @@ doSubscribe() {
     }
     this.subscribeSuccess = true
     console.log('Subscribe to topics res', res)
- 	})
-},
+  })
+}
 ```
 
 ### Unsubscribe
@@ -166,8 +186,8 @@ doUnSubscribe() {
 
 ```js
 doPublish() {
-  const { topic, qos, payload } = this.publication
-  this.client.publish(topic, payload, qos, error => {
+  const { topic, qos, payload } = this.publish
+  this.client.publish(topic, payload, { qos }, error => {
     if (error) {
       console.log('Publish error', error)
     }
@@ -181,11 +201,10 @@ doPublish() {
 destroyConnection() {
   if (this.client.connected) {
     try {
-      this.client.end()
-      this.client = {
-        connected: false,
-      }
-      console.log('Successfully disconnected!')
+      this.client.end(false, () => {
+        this.initData()
+        console.log('Successfully disconnected!')
+      })
     } catch (error) {
       console.log('Disconnect failed', error.toString())
     }
