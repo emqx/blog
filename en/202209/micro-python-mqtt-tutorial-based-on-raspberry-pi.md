@@ -9,9 +9,12 @@ In this article, we will discuss how to write a simple [MQTT client](https://www
 
 ## Environment setup
 
-1. Install MicroPython
+### Install MicroPython
 
-   This project uses MicroPython for development, you can use the following command to install it.
+   The Raspberry Pi OS used in this article is `Raspberry Pi OS with desktop
+(Debian version: 10, 64-bit)`.
+
+- When the OS used by the Raspberry Pi is based on `Debian version: 10 (buster)`, you can install MicroPython directly with the following command.
 
    ```
    sudo apt-get update
@@ -19,17 +22,36 @@ In this article, we will discuss how to write a simple [MQTT client](https://www
    sudo apt-get -y install micropython
    ```
 
-   After the installation is complete, execute `micropython` in the terminal, and if MicroPython x.x.x (x means number) is returned, the installation is successful.
+   > **Note**
+   >
+   > If you get an `E: Unable to locate package micropython` error during installation, you can use the `snap` or `build from source` to install.
 
-   ![MicroPython](https://assets.emqx.com/images/b9b6de52e3c29063df1f4d906d52e578.png)
-
-2. Install the MQTT client library
-
-   In order to easily connect to the MQTT server, we need to install the `umqtt.simple` library.
+- If your Raspberry Pi OS is based on `Debian version: 11 (bullseye)`, you can install MicroPython using snap.
 
    ```
-   micropython -m upip install umqtt.simple
+   sudo apt update
+   sudo apt install snapd
+   sudo reboot
+   sudo snap install core
+   sudo snap install micropython
    ```
+
+- Install MicroPython from source.
+
+   For more details, please refer to the Raspberry Pi documentation at [https://docs.micropython.org/en/latest/develop/gettingstarted.html](https://docs.micropython.org/en/latest/develop/gettingstarted.html).
+
+
+After the installation is complete, execute `micropython` in the terminal, and if MicroPython x.x.x (x means number) is returned, the installation is successful.
+
+![MicroPython](https://assets.emqx.com/images/b9b6de52e3c29063df1f4d906d52e578.png)
+
+### Install the MQTT client library
+
+In order to easily connect to the MQTT server, we need to install the `umqtt.simple` library.
+
+```
+micropython -m upip install umqtt.simple
+```
 
    
 ## Connecting to the MQTT broker
