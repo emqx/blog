@@ -10,9 +10,11 @@
 
 ## 环境搭建
 
-1. 安装 MicroPython
+### 安装 MicroPython
 
-   本项目使用 MicroPython 进行开发，可以使用下面的命令进行安装。
+本文使用的树莓派操作系统为 `Raspberry Pi OS with desktop (Debian version: 10，64-bit)`。
+
+- 当树莓派使用的操作系统基于 `Debian version: 10` 时可直接使用如下命令安装 MicroPython。
 
    ```
    sudo apt-get update
@@ -20,17 +22,33 @@
    sudo apt-get -y install micropython
    ```
 
-   安装完成后，在终端执行 micropython，如果显示 MicroPython x.x.x（x 表示数字）则表示已经安装成功。
+   > **提示**
+   > 如果安装过程中出现 `E: Unable to locate package micropython` 错误，可使用下面的 snap 或者源码编译方式安装。
 
-   ![MicroPython](https://assets.emqx.com/images/9a4dae4baa22fa6531e09cfa7cb55c84.png)
-
-2. 安装 MQTT 客户端库
-
-   为了方便连接到 MQTT 服务器，我们需要安装 `umqtt.simple` 库。
+- 如果您的树莓派使用的操作系统基于 `Debian version: 11`，则可使用如下 snap 方式进行安装。
 
    ```
-   micropython -m upip install umqtt.simple
+   sudo apt update
+   sudo apt install snapd
+   sudo reboot
+   sudo snap install core
+   sudo snap install micropython
    ```
+
+- 您也可以使用源码编译的方式进行安装。
+   具体细节请参考树莓派文档：[https://docs.micropython.org/en/latest/develop/gettingstarted.html](https://docs.micropython.org/en/latest/develop/gettingstarted.html)
+   
+安装完成后，在终端执行 micropython，如果显示 MicroPython x.x.x（x 表示数字）则表示已经安装成功。
+
+![MicroPython](https://assets.emqx.com/images/9a4dae4baa22fa6531e09cfa7cb55c84.png)
+
+### 安装 MQTT 客户端库
+
+为了方便连接到 MQTT 服务器，我们需要安装 `umqtt.simple` 库。
+
+```
+micropython -m upip install umqtt.simple
+```
 
 
 ## 连接 MQTT 服务器
