@@ -9,7 +9,7 @@ In the near future, we will have more billing models, so stay tuned!
 
 While EMQX Cloud has always been available on AWS, before making it available through the marketplace, you needed to sign up and provide a credit card as a form of payment to get started, which meant having to manage an additional bill in addition to your AWS bill. This could be a point of friction since those of us who are familiar with AWS want the flexibility to focus on development when launching services available for consumption through our existing accounts.
 
-We are happy to say that having two separate bills is no longer necessary, and you can now subscribe to EMQX Cloud with your existing AWS account. And just like that, any consumption of Confluent Cloud will be reflected on your monthly AWS bill.
+We are happy to say that having two separate bills is no longer necessary, and you can now subscribe to EMQX Cloud with your existing AWS account. And just like that, any consumption of EMQX Cloud will be reflected on your monthly AWS bill.
 
 Having EMQX Cloud through a single, integrated billing model is not the only advantage. As the world's first fully managed MQTT 5.0 public cloud service, EMQX Cloud provides a one-stop O&M colocation and a unique isolated environment for MQTT services. Now you can use EMQX Cloud through AWS marketplace and easily combine it with other AWS services like Amazon S3, Amazon Kinesis, and Amazon Redshift, which allow you to focus on creating and inventing applications.
 
