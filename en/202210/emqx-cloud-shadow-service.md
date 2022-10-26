@@ -84,7 +84,7 @@ At the same time, we provide you with several call examples for reference: [http
 
 On the "Shadow Model List" page, you can add, edit, and modify shadow models, and import customized shadow models in batches through templates.
 
-![Shadow Model List](https://assets.emqx.com/images/857105d9dfad505bbe41c3cd1571d3dd.png)
+![Shadow Model List](https://assets.emqx.com/images/8827c5043ac9decf0b23f5a7ccdc46c9.png)
 
 ###  **Instructions**
 
