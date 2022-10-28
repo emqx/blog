@@ -47,7 +47,7 @@ You can have a quick overview of the cost trend by day or month.
 
 ![Cost Trend](https://assets.emqx.com/images/b86e7d214ca251c869a2fac54c5b3641.png)
 
-### Payment verification
+### Payment Verification
 
 After you add your credit card information, we will make a $1 test charge to your credit card through the Stripe service. Don't worry, this is just to verify that your credit card supports the charge and to verify that the bundle was successful.
 
