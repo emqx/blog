@@ -95,7 +95,7 @@ curl -i --basic -u admin:public -X POST "http://localhost:8081/api/v4/mqtt/publi
 各版本 BUG 修复详情请查看：
 
 - 开源版 v4.3.16： [https://www.emqx.com/zh/changelogs/broker/4.3.16](https://www.emqx.com/zh/changelogs/broker/4.3.16)
-- 开源版 v4.4.5： [https://www.emqx.com/zh/changelogs/broker/4.4.5](https://www.emqx.com/zh/changelogs/broker/4.4.45) 
+- 开源版 v4.4.5： [https://www.emqx.com/zh/changelogs/broker/4.4.5](https://www.emqx.com/zh/changelogs/broker/4.4.5) 
 - 企业版 v4.3.11：[https://www.emqx.com/zh/changelogs/enterprise/4.3.11](https://www.emqx.com/zh/changelogs/enterprise/4.3.11)
 - 企业版 v4.4.5： [https://www.emqx.com/zh/changelogs/enterprise/4.4.5](https://www.emqx.com/zh/changelogs/enterprise/4.4.5)
 
