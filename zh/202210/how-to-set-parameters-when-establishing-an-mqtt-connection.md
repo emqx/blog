@@ -74,7 +74,7 @@ MQTT 协议可以通过用户名和密码来进行相关的认证和授权，但
 
 ### 清除会话（Clean Session）
 
-为 `false` 时表示创建一个持久会话，在客户端断开连接时，会话仍然保持并保存离线消息，直到会话超时注销。为 `true` 时表示创建一个新的临时会话，在客户端断开时，会话自动销毁。
+为 `false` 时表示创建一个[持久会话](https://www.emqx.com/zh/blog/mqtt-session)，在客户端断开连接时，会话仍然保持并保存离线消息，直到会话超时注销。为 `true` 时表示创建一个新的临时会话，在客户端断开时，会话自动销毁。
 
 持久会话避免了客户端掉线重连后消息的丢失，并且免去了客户端连接后重复的订阅开销。这一功能在带宽小，网络不稳定的物联网场景中非常实用。
 
@@ -107,11 +107,11 @@ MQTT 协议可以通过用户名和密码来进行相关的认证和授权，但
 
 **Clean Start & Session Expiry Interval**
 
-MQTT 5.0 使用 Clean Start 连接参数替代了原先的 Clean Session，并且新增了 Session Expiry Interval 连接属性用于设置会话的过期时间，这解决了 MQTT 3.1 中由服务器设置统一决定会话过期时间的问题。
+MQTT 5.0 中将 Clean Session 拆分成了 Clean Start 与 Session Expiry Interval。
 
-Clean Start 为 `true` 时同样表示创建一个新的临时会话，连接断开后会话不会被保存。此时 Session Expiry Interval 应该设置为 0，设置为其他值无意义。
+Clean Start 用于指定连接时是创建一个全新的会话还是尝试复用一个已存在的会话。为 `true` 时表示必须丢弃任何已存在的会话，并创建一个全新的会话；为 `false` 时表示必须使用与 Client ID 关联的会话来恢复与客户端的通信（除非会话不存在）。
 
-Clean Start 为 `false` 时表示创建一个持久会话，该会话的过期时间由 Session Expiry Interval 决定（单位为秒）。如果此时 Session Expiry Interval 设置为 0 或未设置，则表示断开连接时会话即到期。Session Expiry Interval 设置为 `0xFFFFFFFF` 表示会话永远不会过期。
+Session Expiry Interval 用于指定网络连接断开后会话的过期时间。设置为 0 或未设置，表示断开连接时会话即到期；设置为大于 0 的数值，则表示会话在网络连接关闭后会保持多少秒；设置为 0xFFFFFFFF 表示会话永远不会过期。
 
 更多细节可查看博客：[Clean Start 与 Session Expiry Interval](https://www.emqx.com/zh/blog/mqtt5-new-feature-clean-start-and-session-expiry-interval)。
 
