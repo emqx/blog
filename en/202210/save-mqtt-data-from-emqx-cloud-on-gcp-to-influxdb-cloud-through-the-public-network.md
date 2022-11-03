@@ -44,7 +44,7 @@ After logging in to InfluxDB's console, go to the Load Data page and create a ne
 
 ## [Data Integrations](https://docs.emqx.com/en/cloud/latest/rule_engine/rule_engine_confluent.html)
 
-### 1. Create Kafka resources
+### 1. Create InfluxDB HTTP V2 resources
 
 Go to the Data Integrations page. On the data integration page, click **InfluxDB HTTP V2** Service resources.
 
