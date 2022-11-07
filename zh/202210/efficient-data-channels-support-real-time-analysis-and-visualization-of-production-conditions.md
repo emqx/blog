@@ -40,7 +40,7 @@
 
 4. 企业级 MQTT 物联网接入平台 EMQX Enterprise 布置在厂级信息中心或集团云，在专网或互联网上为生产数据提供高可用、高并发、低延时的数据传输、分析、对接能力。同时基于规则引擎强大的能力，向生产数据大数据分析的数据库提供高频、可靠、高价值的数据持久化能力。 通过简易、灵活的方式，即可构建起车间、厂级中心、集团云等各层级业务和应用数据消费架构。
 
-   ![image.png](https://assets.emqx.com/images/cf92500d3054becc7350314ce9f8f5b8.png)
+   ![image.png](https://assets.emqx.com/images/bf2efb57f26faadb0de97fc074d370da.png)
 
    <center>生产数据多级展示消费架构</center>
 
