@@ -384,7 +384,7 @@ public class KafkaSampler extends AbstractSampler {
 
 ### 步骤4：编译、打包和部署
 
-打包过程与 [JMeter 扩展开发：自定义函数](https://emqx.atlassian.net/wiki/spaces/CM/pages/429654283/2022.09.16+JMeter) 中提到的相似，注意把本插件需要的 Kafka 相关依赖库文件也一并打入，否则还需要将所依赖的 Kafka jar 包单独部署到 JMeter 插件目录下。可以参考以下方式在 pom.xml 中配置 build 插件：
+打包过程与 [JMeter 扩展开发：自定义函数](https://www.emqx.com/zh/blog/jmeter-extension-development-custom-functions) 中提到的相似，注意把本插件需要的 Kafka 相关依赖库文件也一并打入，否则还需要将所依赖的 Kafka jar 包单独部署到 JMeter 插件目录下。可以参考以下方式在 pom.xml 中配置 build 插件：
 
 ```
 <build>
