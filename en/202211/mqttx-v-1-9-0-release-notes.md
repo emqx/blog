@@ -17,7 +17,7 @@ In v1.9.0, MQTT X CLI provides an out-of-the-box benchmark tool -- `mqttx bench`
 
 Users can use the `bench` command to create a custom number of connections at a specified rate, subscribe to a custom number of topics, publish the custom number of messages to single or multiple topics, and test the connection performance and message throughput of a single or cluster MQTT broker through a single command. For example:
 
-1. Create 10000 connections at a rate of 10 milliseconds per connection, and the client ID is `mqttx-bench-%i`, where `%i` is the index placeholder, that is, the client ID of the first client connection is mqttx-bench-1:
+1. Create 10000 connections at a rate of 10 milliseconds per connection, and the client ID is `mqttx-bench-%i`, where `%i` is the index placeholder, that is, the client ID of the Nth client connection is `mqttx-bench-n`:
 
    ```
    mqttx bench conn -c 10000 -i 10 -I "mqttx-bench-%i"
@@ -99,7 +99,7 @@ MQTTX is still continuously improving and perfecting, to bring more practical an
 - Plugins
 - Script test automation (Flow)
 
-Please look forward to it！
+Please look forward to it!
 
 
 
