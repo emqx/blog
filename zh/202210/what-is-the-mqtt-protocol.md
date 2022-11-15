@@ -66,7 +66,7 @@ MQTT 协议提供了 3 种消息服务质量等级（Quality of Service），保
 
 更多关于 MQTT QoS 的介绍可查看博客：[MQTT QoS 服务质量介绍](https://www.emqx.com/zh/blog/introduction-to-mqtt-qos)。
 
-除了 QoS 之外，MQTT 还提供了清除会话机制。对于那些想要在重新连接后，收到离线期间错过的消息的客户端，可在连接时设置关闭清除会话，此时服务端将会为客户端存储订阅关系及离线消息，并在客户端再次上线后发送给客户端。
+除了 QoS 之外，MQTT 还提供了[清除会话（Clean Session）](https://www.emqx.com/zh/blog/mqtt-session)机制。对于那些想要在重新连接后，收到离线期间错过的消息的客户端，可在连接时设置关闭清除会话，此时服务端将会为客户端存储订阅关系及离线消息，并在客户端再次上线后发送给客户端。
 
 ### 海量连接支持
 
@@ -84,7 +84,7 @@ MQTT 协议从诞生之时便考虑到了日益增长的海量物联网设备，
 
 为了应对网络不稳定的情况，MQTT 提供了[心跳保活（Keep Alive）](https://www.emqx.com/zh/blog/mqtt-keep-alive)机制。在客户端与服务端长时间无消息交互的情况下，Keep Alive 保持连接不被断开，若一旦断开，客户端可即时感知并立即重连。
 
-同时，MQTT 设计了[遗愿（Last Will） 消息](https://www.emqx.com/zh/blog/use-of-mqtt-will-message)，让服务端在发现客户端异常下线的情况下，帮助客户端发布一条遗愿消息到指定的主题。
+同时，MQTT 设计了[遗愿（Last Will） 消息](https://www.emqx.com/zh/blog/use-of-mqtt-will-message)，让服务端在发现客户端异常下线的情况下，帮助客户端发布一条遗愿消息到指定的 [MQTT 主题](https://www.emqx.com/zh/blog/advanced-features-of-mqtt-topics)。
 
 另外，部分 MQTT 服务器如 EMQX 也提供了上下线事件通知功能，当后端服务订阅了特定主题后，即可收到所有客户端的上下线事件，这样有助于后端服务统一处理客户端的上下线事件。
 
