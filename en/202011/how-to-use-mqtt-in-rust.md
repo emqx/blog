@@ -1,6 +1,6 @@
 Rust is a multi-paradigm programming language designed for performance and safety, especially safe concurrency. Rust is syntactically similar to C++, but can guarantee memory safety by using a borrow checker to validate references. Rust achieves memory safety without garbage collection, and reference counting is optional.[^1]
 
-[MQTT](https://www.emqx.com/en/mqtt) is a kind of **lightweight IoT messaging protocol** based on the publish/subscribe model. It can use very little code and bandwidth to provide a real-time reliable message service for networked equipment. Also, it is widely used in the IoT, mobile Internet, smart hardware, IoV, power and energy industries.
+[MQTT](https://mqtt.org/) is a kind of **lightweight IoT messaging protocol** based on the publish/subscribe model. It can use very little code and bandwidth to provide a real-time reliable message service for networked equipment. Also, it is widely used in the IoT, mobile Internet, smart hardware, IoV, power and energy industries.
 
 This article mainly introduces how to use the **paho-mqtt** client library in the Rust project, and how to implement connect, subscribe, messaging and unsubscribe, etc., between the client and MQTT broker. 
 
@@ -17,7 +17,7 @@ rustc 1.44.0 (49cae5576 2020-06-01)
 
 ### Selecting the MQTT client library
 
-paho-mqtt is the most versatile and widely used MQTT client in the current Rust. The latest version `0.7.1` supports MQTT v5, 3.1.1, 3.1, and also supports data transfer via standard TCP, SSL / TLS, WebSockets, and QoS support 0, 1, 2, etc.
+`paho-mqtt` is the most versatile and widely used [MQTT client](https://www.emqx.com/en/mqtt-client-sdk) in the current Rust. The latest version `0.7.1` supports MQTT v5, 3.1.1, 3.1, and also supports data transfer via standard TCP, SSL / TLS, WebSockets, and QoS support 0, 1, 2, etc.
 
 ### Initialisation project
 
@@ -49,7 +49,7 @@ path = "src/pub/main.rs"
 
 ### Create a client connection
 
-This article will use [the free public MQTT broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker) which is provided by EMQX as the MQTT broker of the test connection. This service is based on EMQX's [MQTT IoT cloud platform](https://www.emqx.com/en/cloud) to create. The server access information is as follows:
+This article will use [the free public MQTT broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker) which is provided by EMQX as the MQTT broker of the test connection. This service is based on EMQX's [MQTT cloud service](https://www.emqx.com/en/cloud) to create. The server access information is as follows:
 
 - Broker: **broker.emqx.io**
 - TCP Port: **1883**
@@ -377,7 +377,12 @@ Meanwhile, the published messages are also visible in the message subscription.
 
 ![rustmqttsub2.png](https://assets.emqx.com/images/e71402d26419eff673247c1c7db81e9b.png)
 
+
+## Summary
+
 So far, we have completed using the **paho-mqtt** client to connect to the [public MQTT broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker), and implemented connection, message publishing and subscription between the test client and  MQTT broker.
+
+Next, you can check out [The Easy-to-understand Guide to MQTT Protocol](https://www.emqx.com/en/mqtt) series of articles provided by EMQ to learn about MQTT protocol features, explore more advanced applications of MQTT, and get started with MQTT application and service development.
 
 
 

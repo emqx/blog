@@ -1,12 +1,12 @@
-[MQTT](https://en.wikipedia.org/wiki/MQTT) is a lightweight and flexible protocol for exchanging IoT messages and delivering data. It is used to achieve a balance between flexibility and hardware/internet resources for IoT developers.
+[MQTT](https://mqtt.org/) is a lightweight and flexible protocol for exchanging IoT messages and delivering data. It is used to achieve a balance between flexibility and hardware/internet resources for IoT developers.
 
 [Kotlin](https://kotlinlang.org/) is a programming language developed by  JetBrains. Kotlin is based on the JVM, so developers can easily use it for Android development, and it supports mixed writing of Kotlin and Java.
 
-This article mainly introduce that how to use Kotlin in the Android platform for using MQTT.
+This article mainly introduces how to use Kotlin in the Android platform for using MQTT.
 
 ### Create the Kotlin project
 
-Open Android Studio, create a new project, selecte Kotlin as the language, and then Android Studio will automatically create the related configurations to Kotlin. If you need to configure the existing projects, can refer to [Add Kotlin to an existing app](https://developer.android.com/kotlin/add-kotlin).
+Open Android Studio, create a new project, select Kotlin as the language, and then Android Studio will automatically create the related configurations to Kotlin. If you need to configure the existing projects, can refer to [Add Kotlin to an existing app](https://developer.android.com/kotlin/add-kotlin).
 
 ### Add dependency
 
@@ -47,7 +47,7 @@ companion object {
 
 ### Connect MQTT broker
 
-This article will use the [MQTT broker](https://www.emqx.com/en/products/emqx) which is operated and maintained by EMQX [MQTT Cloud](https://www.emqx.com/en/cloud). EMQX Cloud is the MQTT IoT cloud service platform released by [EMQ](https://www.emqx.com/en), it provides the service for accessing **MQTT 5.0** with all-in-one operation and maintenance and unique isolation environment.
+This article will use the [MQTT broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker) which is operated and maintained by EMQX [MQTT Cloud](https://www.emqx.com/en/cloud). EMQX Cloud is the MQTT IoT cloud service platform released by [EMQ](https://www.emqx.com/en), it provides the service for accessing **MQTT 5.0** with all-in-one operation and maintenance and unique isolation environment.
 
 - Broker: **broker.emqx.io**
 - TCP Port: **1883**
@@ -164,7 +164,7 @@ fun publish(topic: String, msg: String, qos: Int = 1, retained: Boolean = false)
     }
 ```
 
-###  Disconnect from the MQTT  Broker
+###  Disconnect from the MQTT Broker
 
 ```kotlin
 fun disconnect() {
@@ -200,11 +200,14 @@ We publish messages on the client to the topic: `a/b`. Because we subscribed to 
 
 ![publish mqtt message and disconnect](https://assets.emqx.com/images/150e861f4c2375ab938adf4dd01e7ab6.png)
 
-So far, we have finished the construction of MQTT client on the Android and implemented the connection between the client and MQTT broker, subscribing topics, messaging, etc.
 
-MQTT can provide the real-time and reliable message service for connecting remote devices, only with a few code and limited bandwidth. Since it is a kind of low-cost, low-bandwidth occupancy instant communicating protocol, it is widely used for IoT, small size equipments, mobile applications, etc.
+## Summary
 
-Kotlin is also a language promoted by Google, and we can develop more interesting applications by using the [MQTT protocol](https://www.emqx.com/en/mqtt) and [MQTT cloud service](https://www.emqx.com/en/cloud).
+So far, we have finished the construction of the [MQTT client](https://www.emqx.com/en/mqtt-client-sdk) on the Android and implemented the connection between the client and MQTT broker, subscribing topics, messaging, etc.
+
+MQTT can provide real-time and reliable message service for connecting remote devices, only with a few code and limited bandwidth. Since it is a kind of low-cost, low-bandwidth occupancy instant communicating protocol, it is widely used for IoT, small size equipments, mobile applications, etc.
+
+Next, you can check out [The Easy-to-understand Guide to MQTT Protocol](https://www.emqx.com/en/mqtt) series of articles provided by EMQ to learn about MQTT protocol features, explore more advanced applications of MQTT, and get started with MQTT application and service development.
 
 
 <section class="promotion">

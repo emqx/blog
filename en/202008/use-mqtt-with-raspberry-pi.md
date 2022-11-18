@@ -1,6 +1,6 @@
 [Raspberry Pi](https://www.raspberrypi.org/) is a small single-board computer based on ARM and developed by the Raspberry Pi Foundation in the United Kingdom. This board provides USB interfaces and Ethernet interfaces can connect the keyboard, mouse, and networking cable. This board has the basic functions of PC and Raspberry Pi integrates Wi-Fi, Bluetooth, and a large number of GPIO, and is widely used in teaching, family entertainment, IoT, etc.
 
-[MQTT](https://www.emqx.com/en/mqtt) is a kind of **lightweight IoT messaging protocol** based on the publish/subscribe model, which can provide real-time and reliable messaging service for IoT devices, only using very little code and bandwidth. It is suitable for devices with limited hardware resources and the network environment with limited bandwidth. Therefore, MQTT protocol is widely used in IoT, mobile internet, IoV, electricity power, and other industries.
+[MQTT](https://mqtt.org/) is a kind of **lightweight IoT messaging protocol** based on the publish/subscribe model, which can provide real-time and reliable messaging service for IoT devices, only using very little code and bandwidth. It is suitable for devices with limited hardware resources and the network environment with limited bandwidth. Therefore, the MQTT protocol is widely used in IoT, mobile internet, IoV, electricity power, and other industries.
 
 In this project, we will use Python to write a simple [MQTT client](https://www.emqx.com/en/mqtt-client-sdk) on Raspberry Pi and implement connect, subscribe, unsubscribe, messaging, and other functions between this client and [MQTT broker](https://www.emqx.io).
 
@@ -52,7 +52,7 @@ This article will use [the free public MQTT broker](https://www.emqx.com/en/mqtt
 * TCP Port: **1883** 
 * Websocket Port: **8083** 
 
-If it is needed, you can use docker to quickly install the EMQX broker locally.
+If it is needed, you can use docker to install the EMQX locally quickly.
 
 ```
 docker run -d --name emqx -p 1883:1883 -p 8083:8083 -p 8084:8084 -p 18083:18083 emqx/emqx 
@@ -221,15 +221,15 @@ Next, testing whether the will message, is set successfully.
 
 ## Summary 
 
-We have finished that use the [Python MQTT client library](https://www.emqx.com/en/blog/python-async-mqtt-client-hbmqtt) `paho-mqtt ` to write and test the client on the Raspberry Pi and implemented the connect, subscribe, unsubscribe, messaging and other functions between the client and the MQTT broker.
+We have finished that use the Python MQTT client library `paho-mqtt ` to write and test the client on the Raspberry Pi and implemented the connect, subscribe, unsubscribe, messaging and other functions between the client and the MQTT broker.
 
 So far, you've learned how to simply use the MQTT service, although this is only one part of the MQTT service, it is enough to finish many interesting things. For example:
 
-1. Use a mobile phone to send MQTT messages, remotely control the Raspberry Pi.
+1. Use a mobile phone to send MQTT messages, and remotely control the Raspberry Pi.
 2. Send the device information of Raspberry Pi to the MQTT broker regularly and receive messages through mobile phone, then can round-the-clock monitor.
 3. You can access the MQTT broker through the Raspberry Pi and use various kinds of sensors and ESP modules to create many interesting IoT applications.
 
-Next, we will publish more articles about IoT development and Raspberry Pi. Stay tuned.
+Next, you can check out [The Easy-to-understand Guide to MQTT Protocol](https://www.emqx.com/en/mqtt) series of articles provided by EMQ to learn about MQTT protocol features, explore more advanced applications of MQTT, and get started with MQTT application and service development.
 
 
 <section class="promotion">

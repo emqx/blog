@@ -1,6 +1,6 @@
 ## Introduction
 
-[MQTT.js](https://github.com/mqttjs/MQTT.js) is a client library for the [MQTT protocol](https://www.emqx.com/en/mqtt) protocol, written in JavaScript for node.js and the browser. It is currently the most widely used [MQTT client library](https://www.emqx.com/en/mqtt-client-sdk) in the JavaScript ecosystem.
+[MQTT.js](https://github.com/mqttjs/MQTT.js) is a client library for the [MQTT protocol](https://mqtt.org/) protocol, written in JavaScript for node.js and the browser. It is currently the most widely used [MQTT client library](https://www.emqx.com/en/mqtt-client-sdk) in the JavaScript ecosystem.
 
 > MQTT is a lightweight IoT messaging protocol based on the publish/subscribe model. It can provide real-time and reliable messaging services for networked devices with very little code and bandwidth. It is widely used in the industries such as the IoT, mobile Internet, smart hardware, Internet of Vehicles and power energy.
 
@@ -11,9 +11,10 @@ Due to the single-thread feature of JavaScript, MQTT.js is a fully asynchronous 
 
 In different environments, except for a few different connection parameters, other APIs are the same. For MQTT.js v3.0.0 and later versions, MQTT 5.0 has been fully supported.
 
+
 ## Installation
 
-### Install using NPM or yarn
+### Install MQTT.js using NPM or Yarn
 
 ```shell
 npm install mqtt --save
@@ -25,9 +26,9 @@ yarn add mqtt
 
 **Note**: **v4.0.0** (Released 04/2020) removes support for all end of life node versions, and now supports node v12 and v14.
 
-### Install using CDN
+### Install MQTT.js using CDN
 
-In the browser, we can also use CDN to introduce MQTT.js. The bundle package of MQTT.js is managed by [http://unpkg.com](http://unpkg.com/), and we can directly add [unpkg.com/mqtt/dist/mqtt.min.js](https://unpkg.com/mqtt/dist/mqtt.min.js) to use it.
+In the browser, we can also use CDN to import MQTT.js. The bundle package of MQTT.js is managed by [http://unpkg.com](http://unpkg.com/), and we can directly add [unpkg.com/mqtt/dist/mqtt.min.js](https://unpkg.com/mqtt/dist/mqtt.min.js) to use it.
 
 ```html
 <script src="https://unpkg.com/mqtt/dist/mqtt.min.js"></script>
@@ -47,19 +48,18 @@ npm install mqtt -g
 
 We will describe in detail how to use the command-line tool of MQTT.js in some tutorials below.
 
+
 ## Usage
 
-This article will use the [Free Public MQTT Server](https://www.emqx.com/en/mqtt/public-mqtt5-broker) provided by EMQX Cloud as the MQTT server address for this test. The server access information is as follows:
+This article will use [free public MQTT Broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker) provided by EMQ. The service is created based on [MQTT Cloud service - EMQX Cloud](https://www.emqx.com/en/cloud). The server access information is as follows:
 
 - Broker: **broker.emqx.io**
 - TCP Port: **1883**
 - SSL/TLS Port: **8883**
 
-For more details, please visit [EMQX Cloud website](https://www.emqx.com/en/cloud), or check [EMQX Cloud documentation](https://docs.emqx.io/en/cloud/latest/ ).
-
 ### Simple example
 
-We simply write a piece of code to connect to EMQX Cloud and complete an example of subscribing to topics and sending and receiving messages:
+We simply write a piece of code to connect to EMQX Cloud and complete an example of subscribing to topics and sending and receiving messages.
 
 ```javascript
 const mqtt = require('mqtt')
@@ -210,7 +210,7 @@ When the connection is successful, the returned Client object can listen to mult
 
 #### Client function
 
-In addition to listening to events, Client also has some built-in functions for publishing and subscribing operations. Here are some commonly-used functions.
+In addition to listening to events, the Client also has some built-in functions for publishing and subscribing operations. Here are some commonly-used functions.
 
 - `Client.publish(topic, message, [options], [callback])`
 
@@ -285,13 +285,16 @@ In addition to listening to events, Client also has some built-in functions for 
 
 ## Summary
 
-So far, this article has briefly introduced the usage functions of some common APIs of MQTT.js. For specific use in actual projects, please refer to the following links:
+So far, this article has briefly introduced the usage functions of some common APIs of MQTT.js. Next, you can check out [The Easy-to-understand Guide to MQTT Protocol](https://www.emqx.com/en/mqtt) series of articles provided by EMQ to learn about MQTT protocol features, explore more advanced applications of MQTT, and get started with MQTT application and service development.
+
+For specific use in actual projects, please refer to the following links.
 
 - [How to use MQTT in Vue](https://www.emqx.com/en/blog/how-to-use-mqtt-in-vue)
 - [How to use MQTT in React](https://www.emqx.com/en/blog/how-to-use-mqtt-in-react)
 - [How to use MQTT in Electron](https://www.emqx.com/en/blog/how-to-use-mqtt-in-electron)
 - [How to use MQTT in Node.js](https://www.emqx.com/en/blog/how-to-use-mqtt-in-nodejs)
 - [Connect to MQTT server with WebSocket](https://www.emqx.com/en/blog/connect-to-mqtt-broker-with-websocket)
+
 
 
 <section class="promotion">

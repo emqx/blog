@@ -1,6 +1,6 @@
 React (also known as React.js or ReactJS) is an open-source, front end, JavaScript library for building user interfaces or UI components. It is maintained by Facebook and a community of individual developers and companies. React can be used as a base in the development of single-page or mobile applications. However, React is only concerned with rendering data to the DOM, and so creating React applications usually requires the use of additional libraries for state management and routing. Redux and React Router are respective examples of such libraries.[^1]
 
-This article mainly introduces how to use [MQTT](https://www.emqx.com/en/mqtt) in the React project for implementing connect, subscribe, messaging and unsubscribe, etc., between the client and MQTT broker.
+This article mainly introduces how to use [MQTT](https://mqtt.org/) in the React project for implementing connect, subscribe, messaging and unsubscribe, etc., between the client and MQTT broker.
 
 
 
@@ -191,6 +191,7 @@ In summary, we have implemented the creation of an MQTT connection in the React 
 
 In this article, we use React v16.13.1, so the Hook Component feature will be used as example code to demonstrate, or if required, you can refer to the ClassMqtt component in the full example code to use the Class Component feature for project building.
 
+Next, you can check out [The Easy-to-understand Guide to MQTT Protocol](https://www.emqx.com/en/mqtt) series of articles provided by EMQ to learn about MQTT protocol features, explore more advanced applications of MQTT, and get started with MQTT application and service development.
 
 
 [^1]: https://en.wikipedia.org/wiki/React_(web_framework)
