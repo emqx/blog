@@ -1,8 +1,8 @@
 [Vue](https://vuejs.org) is a progressive framework for building user interfaces. Unlike other monolithic frameworks, Vue is designed from the ground up to be incrementally adoptable. The core library is focused on the view layer only, and is easy to pick up and integrate with other libraries or existing projects. On the other hand, Vue is also perfectly capable of powering sophisticated Single-Page Applications when used in combination with modern tooling and supporting libraries.
 
-[MQTT](https://www.emqx.com/en/mqtt) is a kind of **lightweight IoT messaging protocol** based on the publish/subscribe model. This protocol provides one-to-many message distribution and decoupling of applications. It has several advantages which are low transmission consumption and protocol data exchange, minimized network traffic, three different service quality levels of message which can meet different delivery needs.
+[MQTT](https://mqtt.org/) is a kind of **lightweight IoT messaging protocol** based on the publish/subscribe model. This protocol provides one-to-many message distribution and decoupling of applications. It has several advantages which are low transmission consumption and protocol data exchange, minimized network traffic, and three different service quality levels of messages which can meet different delivery needs.
 
-This article mainly introduces how to use MQTT in the Vue project, and implement the connection, subscription, messaging, unsubscribing and other functions between the client and MQTT broker.
+This article mainly introduces how to use MQTT in the Vue project, and implements the connection, subscription, messaging, unsubscribing and other functions between the client and MQTT broker.
 
 > To create an MQTT connection in Vue 3 application using MQTT.js, please refer to https://github.com/emqx/MQTT-Client-Examples/tree/master/mqtt-client-Vue3.js
 
@@ -216,7 +216,7 @@ destroyConnection() {
 
 ## Test
 
-We use Vue to write the following simple browser application. This application has: create connection, subscribe topic, messaging, unsubscribe, disconnect and other functions.
+We use Vue to write the following simple browser application. This application has: create connections, subscribe topics, messaging, unsubscribe, disconnect and other functions.
 
 The complete code for this project: [https://github.com/emqx/MQTT-Client-Examples/tree/master/mqtt-client-Vue.js](https://github.com/emqx/MQTT-Client-Examples/tree/master/mqtt-client-Vue.js)。
 
@@ -228,7 +228,7 @@ Use [MQTT 5.0 client tool - MQTT X](https://mqttx.app/) as another client to tes
 
 ![vuemqttx.png](https://assets.emqx.com/images/2013cbab1bdffcae69b817bfebb4a33f.png)
 
-If you unsubscribe on the browser-side, before MQTT X sends the second message, the browser will not receive the subsequent messages from MQTT X.
+If you unsubscribe on the browser side, before MQTT X sends the second message, the browser will not receive the subsequent messages from MQTT X.
 
 
 
@@ -236,7 +236,9 @@ If you unsubscribe on the browser-side, before MQTT X sends the second message, 
 
 In summary, we have implemented the creation of an MQTT connection in a Vue project, simulated subscribing, sending and receiving messages, unsubscribing, and disconnecting between the client and MQTT broker.
 
-As one of the most three popular front-end frames, Vue can be used on the browser-side, and can also be used on the mobile-side. Combining the [MQTT protocol](https://www.emqx.com/en/mqtt) and [MQTT IoT cloud service](https://www.emqx.com/en/cloud), can develop many interesting applications, for example, a customer service chat system or a management system that monitors IoT device information in real-time.
+As one of the three most popular front-end frames, Vue can be used on the browser-side, and can also be used on the mobile side. Combining the MQTT protocol and [MQTT cloud service](https://www.emqx.com/en/cloud), can develop many interesting applications, for example, a customer service chat system or a management system that monitors IoT device information in real-time.
+
+Next, you can check out [The Easy-to-understand Guide to MQTT Protocol](https://www.emqx.com/en/mqtt) series of articles provided by EMQ to learn about MQTT protocol features, explore more advanced applications of MQTT, and get started with MQTT application and service development.
 
 
 <section class="promotion">

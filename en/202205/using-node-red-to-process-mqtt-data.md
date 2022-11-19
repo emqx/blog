@@ -2,7 +2,7 @@ Node-RED is a programming tool for wiring together hardware devices, APIs and on
 
 It provides a browser-based editor that makes it easy to wire together flows using the wide range of nodes in the palette that can be deployed to its runtime in a single click. 
 
-Besides some basic network service application nodes, such as HTTP and WebSocket, Node-RED provides access support to the [MQTT](https://www.emqx.com/en/mqtt) protocol. Currently, it provides an MQTT subscription node and a release node. The subscription node is used for data input, while the release node can be used for data output.
+Besides some basic network service application nodes, such as HTTP and WebSocket, Node-RED provides access support to the [MQTT](https://mqtt.org/) protocol. Currently, it provides an MQTT subscription node and a release node. The subscription node is used for data input, while the release node can be used for data output.
 
 This article will introduce the complete operation process for accessing the MQTT server by using Node-RED, filtering and processing the MQTT data before sending it to the [MQTT broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker). Users may quickly understand how to use Node-RED for simple stream processing of MQTT data.
 
@@ -79,8 +79,9 @@ As the temperature value has not changed at this time, and when we modify the te
 
 Now we have completed the whole process for installing and connecting with MQTT cloud service by using Node-RED, and filtering and processing MQTT message data, and finally sending the processed data message.
 
-The interaction and use of Node-RED, that is, using UI to describe general business logic, can lower the threshold for non-professional developers to get started. TO use a visual tool to quickly create the required complex execution tasks, users may build complex tasks through simple node connection, which is very helpful, especially for some IoT application scenarios.
+The interaction and use of Node-RED, that is, using UI to describe general business logic, can lower the threshold for non-professional developers to get started. To use a visual tool to create the required complex execution tasks quickly, users may build complex tasks through simple node connection, which is very helpful, especially for some IoT application scenarios.
 
+Next, you can check out [The Easy-to-understand Guide to MQTT Protocol](https://www.emqx.com/en/mqtt) series of articles provided by EMQ to learn about MQTT protocol features, explore more advanced applications of MQTT, and get started with MQTT application and service development.
 
 <section class="promotion">
     <div>

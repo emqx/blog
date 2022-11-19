@@ -1,4 +1,4 @@
-[ThingsBoard](https://thingsboard.io/) is an open-source IoT platform for data collection, processing, visualization and device management. It supports device connectivity via protocols, such as [MQTT](https://www.emqx.com/en/mqtt), [CoAP](https://www.emqx.com/en/blog/connecting-coap-devices-to-emqx-cloud) and HTTP, and supports both cloud and private deployments. Deliver, monitor and control your IoT entities in a secure way using rich server-side APIs that define the relationships between your devices, assets, customers, or any other entities. Collect and store telemetry data in a scalable and fault-tolerant manner, visualize your data with built-in or custom widgets and flexible dashboards, and share the Dashboard interface with your customers.
+[ThingsBoard](https://thingsboard.io/) is an open-source IoT platform for data collection, processing, visualization and device management. It supports device connectivity via protocols, such as [MQTT](https://mqtt.org/), [CoAP](https://www.emqx.com/en/blog/connecting-coap-devices-to-emqx-cloud) and HTTP, and supports both cloud and private deployments. Deliver, monitor and control your IoT entities in a secure way using rich server-side APIs that define the relationships between your devices, assets, customers, or any other entities. Collect and store telemetry data in a scalable and fault-tolerant manner, visualize your data with built-in or custom widgets and flexible dashboards, and share the Dashboard interface with your customers.
 
 In this article, we will use ThingsBoard Cloud in conjunction with EMQ’s fully managed [MQTT cloud service - EMQX Cloud](https://www.emqx.com/en/cloud), to describe how to integrate a third-party MQTT broker into ThingsBoard and custom configure the Dashboard UI to access MQTT data.
 
@@ -148,8 +148,11 @@ After completing the above integration configuration, use the[MQTT 5.0 client to
 
 ## Summary
 
-At this point, we have finished integrating the EMQX Cloud deployment in ThingsBoard Cloud, verified the integration functionality using MQTT X tests, and finally configured a simple Dashboard to display the MQTT data. In real projects, more complex Dashboard configurations can be performed after learning more about ThingsBoard. This will allow you to visually monitor device-related data in real-time detail and set alert thresholds to help you resolve issues in a timely manner.
+At this point, we have finished integrating the EMQX Cloud deployment in ThingsBoard Cloud, verified the integration functionality using MQTT X tests, and finally configured a simple Dashboard to display the MQTT data. 
 
+In real projects, more complex Dashboard configurations can be performed after learning more about ThingsBoard. This will allow you to monitor device-related data in real-time detail visually and set alert thresholds to help you resolve issues in a timely manner.
+
+Next, you can check out [The Easy-to-understand Guide to MQTT Protocol](https://www.emqx.com/en/mqtt) series of articles provided by EMQ to learn about MQTT protocol features, explore more advanced applications of MQTT, and get started with MQTT application and service development.
  
 
 <section class="promotion">
