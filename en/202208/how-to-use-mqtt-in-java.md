@@ -12,7 +12,7 @@ The development environment for this article is:
 -  IDE: [IntelliJ IDEA](https://www.jetbrains.com/idea/)
 -  Java: JDK 1.8.0
 
-We will use [Eclipse Paho Java Client](https://github.com/eclipse/paho.mqtt.java) as the client, which is the most widely used MQTT client library in the Java language.
+We will use [Eclipse Paho Java Client](https://github.com/eclipse/paho.mqtt.java) as the client, which is the most widely used [MQTT client library](https://www.emqx.com/en/mqtt-client-sdk) in the Java language.
 
 Add the following dependencies to the `pom.xml` file.
 
@@ -310,11 +310,13 @@ Next, run `SubscribeSample` to subscribe to the `mqtt/test` topic. Then run `Pub
 ![Java MQTT](https://assets.emqx.com/images/6ba659361e5cbaf0fc90996b77c547cf.png?imageMogr2/thumbnail/1520x)
 
 
+## Summary
 
 Now we are done using Paho Java Client as an MQTT client to connect to the [public MQTT server](https://www.emqx.com/en/mqtt/public-mqtt5-broker) and implement message publishing and subscription.
 
 The full code is available at: [https://github.com/emqx/MQTT-Client-Examples/tree/master/mqtt-client-Java](https://github.com/emqx/MQTT-Client-Examples/tree/master/mqtt-client-Java).
 
+Next, you can check out [The Easy-to-understand Guide to MQTT Protocol](https://www.emqx.com/en/mqtt) series of articles provided by EMQ to learn about MQTT protocol features, explore more advanced applications of MQTT, and get started with MQTT application and service development.
 
 <section class="promotion">
     <div>
