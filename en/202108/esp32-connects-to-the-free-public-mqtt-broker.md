@@ -1,8 +1,8 @@
-[MQTT](https://www.emqx.com/en/mqtt) is a lightweight and flexible IoT message exchange and data transmission protocol, which is dedicated to achieving the balance between flexibility and hardware/network resources for IoT developers.
+[MQTT](https://mqtt.org/) is a lightweight and flexible IoT message exchange and data transmission protocol, which is dedicated to achieving the balance between flexibility and hardware/network resources for IoT developers.
 
 [ESP32](https://www.espressif.com/en/products/socs/esp32) is an upgraded version of ESP8266. In addition to the Wi-Fi module, this module also includes a Bluetooth 4.0 module. The dual-core CPU operates at a frequency of 80 to 240 MHz. It contains two Wi-Fi and Bluetooth modules and various input and output pins. ESP32 is an ideal choice for IoT projects.
 
-In this project, we will connect ESP32 to the [free public MQTT server](https://www.emqx.com/en/mqtt/public-mqtt5-broker) operated and maintained by EMQX [MQTT Cloud](https://www.emqx.com/en/cloud), and use the Arduino IDE to program the ESP32. EMQX Cloud is a secure MQTT IoT cloud service platform launched by [EMQ](https://www.emqx.com/en). It provides [MQTT 5.0 ](https://www.emqx.com/en/mqtt/mqtt5) access service with one-stop operation and maintenance management and a unique isolation environment.
+In this project, we will connect ESP32 to the [free public MQTT broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker) operated and maintained by EMQX [MQTT Cloud](https://www.emqx.com/en/cloud), and use the Arduino IDE to program the ESP32. EMQX Cloud is a secure MQTT IoT cloud service platform launched by [EMQ](https://www.emqx.com/en). It provides [MQTT 5.0 ](https://www.emqx.com/en/mqtt/mqtt5) access service with one-stop operation and maintenance management and a unique isolation environment.
 
 
 
@@ -11,7 +11,7 @@ In this project, we will connect ESP32 to the [free public MQTT server](https://
 * ESP32
 * Arduino IDE
 * [MQTT 5.0 client tool - MQTT X](https://mqttx.app)
-* A free public [MQTT server](https://www.emqx.io) deployed on [EMQX Cloud](https://www.emqx.com/en/cloud)
+* A [free public MQTT broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker) deployed on [EMQX Cloud](https://www.emqx.com/en/cloud)
   - Broker: **broker.emqx.io**
   - TCP Port: **1883**
   - Websocket Port: **8083**
@@ -202,7 +202,7 @@ void loop() {
 
 So far, we have successfully connected ESP32 to the public MQTT server provided by [EMQX Cloud](https://www.emqx.com/en/cloud). In this project, we simply connect ESP32 to the MQTT server. This is just one of ESP32's basic capabilities. ESP32 can actually connect to various IoT sensors and report sensor data to the MQTT server.
 
-Next, we will publish more articles about IoT development and ESP32, so stay tuned.
+Next, you can check out [The Easy-to-understand Guide to MQTT Protocol](https://www.emqx.com/en/mqtt) series of articles provided by EMQ to learn about MQTT protocol features, explore more advanced applications of MQTT, and get started with MQTT application and service development.
 
 
 <section class="promotion">
