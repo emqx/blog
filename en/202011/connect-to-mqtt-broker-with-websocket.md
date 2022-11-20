@@ -246,8 +246,7 @@ location / {
 
 The complete project code: [https://github.com/emqx/MQTT-Client-Examples/tree/master/mqtt-client-WebSocket](https://github.com/emqx/MQTT-Client-Examples/tree/master/mqtt-client-WebSocket)
 
-An online MQTT WebSocket toolkit: [https://www.emqx.com/en/mqtt/mqtt-websocket-toolkit](https://www.emqx.com/en/mqtt/mqtt-websocket-toolkit)
-
+Check out [The Easy-to-understand Guide to MQTT Protocol](https://www.emqx.com/en/mqtt) series of articles provided by EMQ to learn about MQTT protocol features, explore more advanced applications of MQTT, and get started with MQTT application and service development.
 
 
 

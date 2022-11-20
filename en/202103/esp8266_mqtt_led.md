@@ -1,8 +1,8 @@
-[MQTT](https://en.wikipedia.org/wiki/MQTT) is a lightweight and flexible IoT message exchanging and data delivery protocol. It dedicates to implement a balance of flexibility and hardware/network resources for IoT developers.
+[MQTT](https://mqtt.org/) is a lightweight and flexible IoT message exchanging and data delivery protocol. It dedicates to implementing a balance of flexibility and hardware/network resources for IoT developers.
 
-[NodeMCU](https://www.nodemcu.com/) is an open source IoT platform. It uses the Lua language to program. This platform is based on eLua open source projects, and its underlying layer uses the ESP8266 SDK 0.9.5.
+[NodeMCU](https://www.nodemcu.com/) is an open-source IoT platform. It uses the Lua language to program. This platform is based on eLua open-source projects, and its underlying layer uses the ESP8266 SDK 0.9.5.
 
-In this project, we will implement remote control LED lights via NodeMCU(ESP8266) and the free [public MQTT broker](https://www.emqx.com/en/blog/popular-online-public-mqtt-brokers) which is operated and maintained by [EMQX Cloud](https://www.emqx.com/en/cloud), and use the Arduino IDE to program NodeMCU ESP8266. EMQX Cloud is the [MQTT IoT Cloud Service Platform](https://www.emqx.com/en/cloud) launched by EMQ, which provides the **MQTT 5.0** access service with one-stop operations and maintenance managed and a unique isolated environment.
+In this project, we will implement remote control LED lights via NodeMCU(ESP8266) and the free [public MQTT broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker) which is operated and maintained by [EMQX Cloud](https://www.emqx.com/en/cloud), and use the Arduino IDE to program NodeMCU ESP8266. EMQX Cloud is the [MQTT IoT Cloud Service Platform](https://www.emqx.com/en/cloud) launched by EMQ, which provides the **MQTT 5.0** access service with one-stop operations and maintenance managed and a unique isolated environment.
 
 
 ### Required components
@@ -206,7 +206,7 @@ In this project, we will implement remote control LED lights via NodeMCU(ESP8266
 
 So far, we have successfully implemented remote control of the LED light using the NodeMCU ESP8266 and free public MQTT broker. This example only describes a simple scenario, while a more secure connection method and persistence of IoT data are needed in the actual projects.
 
-Stay tuned for more IoT development and ESP8266 related articles.
+Next, you can check out [The Easy-to-understand Guide to MQTT Protocol](https://www.emqx.com/en/mqtt) series of articles provided by EMQ to learn about MQTT protocol features, explore more advanced applications of MQTT, and get started with MQTT application and service development.
 
 
 <section class="promotion">
