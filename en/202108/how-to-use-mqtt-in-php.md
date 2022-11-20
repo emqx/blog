@@ -19,7 +19,7 @@ MQTT communication belongs to a network communication scenario outside the HTTP 
 
 ## Project initialization
 
-### Confirm PHP version
+### Confirm the PHP version
 
 This project uses 7.4.21 for development and testing. Readers can confirm the PHP version with the following command.
 
@@ -32,7 +32,7 @@ Zend Engine v3.4.0, Copyright (c) Zend Technologies
     with Zend OPcache v7.4.21, Copyright (c), by Zend Technologies
 ```
 
-### Use Composer to install php-mqtt/client
+### Use Composer to install `php-mqtt/client`
 
 Composer is a dependency management tool for PHP, which can manage all the dependencies your PHP project needs.
 
@@ -44,15 +44,15 @@ composer require php-mqtt/client
 
 ## PHP MQTT usage
 
-### Connect to MQTT server
+### Connect to the MQTT broker
 
-This article will use the [Free Public MQTT Server](https://www.emqx.com/en/mqtt/public-mqtt5-broker) provided by EMQX, which is created on EMQX's [MQTT Cloud Service](https://www.emqx.com/en/cloud). The server access information is as follows:
+This article will use the [free public MQTT broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker) provided by EMQX, which is created on EMQX's [MQTT Cloud Service](https://www.emqx.com/en/cloud). The server access information is as follows:
 
 - Broker: **broker.emqx.io**
 - TCP Port: **1883**
 - SSL/TLS Port: **8883**
 
-#### Import composer autoload file and php-mqtt/client
+#### Import composer autoload file and `php-mqtt/client`
 
 ```php
 require('vendor/autoload.php');
@@ -69,19 +69,19 @@ $server   = 'broker.emqx.io';
 $port     = 1883;
 $clientId = rand(5, 15);
 $username = 'emqx_user';
-$password = null;
+$password = 'public';
 $clean_session = false;
+$mqtt_version = MqttClient::MQTT_3_1_1;
 ```
 
-#### Write MQTT connection function
+#### Write the MQTT connection function
 
 Use the above parameters to connect, and set the connection parameters through `ConnectionSettings`, such as:
 
 ```php
-$connectionSettings  = new ConnectionSettings();
-$connectionSettings
+$connectionSettings = (new ConnectionSettings)
   ->setUsername($username)
-  ->setPassword(null)
+  ->setPassword($password)
   ->setKeepAliveInterval(60)
   ->setLastWillTopic('emqx/test/last-will')
   ->setLastWillMessage('client disconnect')
@@ -143,20 +143,20 @@ $server   = 'broker.emqx.io';
 $port     = 1883;
 $clientId = rand(5, 15);
 $username = 'emqx_user';
-$password = null;
+$password = 'public';
 $clean_session = false;
+$mqtt_version = MqttClient::MQTT_3_1_1;
 
-$connectionSettings  = new ConnectionSettings();
-$connectionSettings
+$connectionSettings = (new ConnectionSettings)
   ->setUsername($username)
-  ->setPassword(null)
+  ->setPassword($password)
   ->setKeepAliveInterval(60)
   ->setLastWillTopic('emqx/test/last-will')
   ->setLastWillMessage('client disconnect')
   ->setLastWillQualityOfService(1);
 
 
-$mqtt = new MqttClient($server, $port, $clientId);
+$mqtt = new MqttClient($server, $port, $clientId, $mqtt_version);
 
 $mqtt->connect($connectionSettings, $clean_session);
 printf("client connected\n");
@@ -204,6 +204,9 @@ php pubsub_tcp.php
 ## Summary
 
 So far, we have used the **php-mqtt/client** to connect to the [public MQTT server](https://www.emqx.com/en/mqtt/public-mqtt5-broker), and implemented the connection, message publishing and subscription between the test client and the MQTT server.
+
+Next, you can check out [The Easy-to-understand Guide to MQTT Protocol](https://www.emqx.com/en/mqtt) series of articles provided by EMQ to learn about MQTT protocol features, explore more advanced applications of MQTT, and get started with MQTT application and service development.
+
 
 
 <section class="promotion">

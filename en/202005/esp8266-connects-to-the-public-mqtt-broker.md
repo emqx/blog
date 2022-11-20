@@ -1,15 +1,16 @@
-[MQTT](https://www.emqx.com/en/mqtt) is a lightweight and flexible protocol to exchange IoT messages and deliver data. It dedicates to achieve a balance between flexibility and hardware/network resources for the IoT developer.
+[MQTT](https://mqtt.org/) is a lightweight and flexible protocol to exchange IoT messages and deliver data. It dedicates to achieving a balance between flexibility and hardware/network resources for the IoT developer.
 
-[ESP8266](https://www.espressif.com) provides a highly integrated Wi-Fi SoC solution. Its low-power, compact design, and high stability can meet user's requirements. ESP8266 has a complete and self-contained Wi-Fi network function, which can be applied independently or can run as a slave at another host MCU.
+[ESP8266](https://www.espressif.com) provides a highly integrated Wi-Fi SoC solution. Its low power, compact design, and high stability can meet user's requirements. ESP8266 has a complete and self-contained Wi-Fi network function, which can be applied independently or can run as a slave at another host MCU.
 
-In this project, we will implement connecting ESP8266 to [free public MQTT broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker) operated and maintained by [EMQX MQTT Cloud](https://www.emqx.com/en/cloud), and programming ESP8266 by using Arduino IDE. EMQX Cloud is an **MQTT IoT cloud service platform with security** launched by [EMQ](https://www.emqx.com/en). It provides a one-stop operation and maintenance agency and [MQTT 5.0](https://www.emqx.com/en/mqtt/mqtt5) access service with a uniquely isolated environment.
+In this project, we will implement connecting ESP8266 to [free public MQTT broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker) operated and maintained by [EMQX Cloud](https://www.emqx.com/en/cloud), and programming ESP8266 by using Arduino IDE. EMQX Cloud is an **MQTT IoT cloud service platform with security** launched by [EMQ](https://www.emqx.com/en). It provides a one-stop operation and maintenance agency and [MQTT 5.0](https://www.emqx.com/en/mqtt/mqtt5) access service with a uniquely isolated environment.
+
 
 ## The required IoT components 
 
 - ESP8266
 - Arduino IDE
 - [MQTT X](https://mqttx.app): Cross-platform MQTT 5.0 client tool
-- The free public [MQTT broker](https://www.emqx.com/en/products/emqx)
+- The [free public MQTT broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker)
   - Broker: **broker.emqx.io**
   - TCP Port: **1883**
   - Websocket Port: **8083**
@@ -22,7 +23,7 @@ In this project, we will implement connecting ESP8266 to [free public MQTT broke
 
 ## The code
 
-1. Firstly, we import libraries **ESP8266WiFi** and **PubSubClient**. ESP8266WiFi library can connect ESP8266 to the Wi-Fi network, PubSubClient library can enable ESP8266 to connect to MQTT broker for publishing messages and subscribing topics.
+1. Firstly, we import libraries **ESP8266WiFi** and **PubSubClient**. ESP8266WiFi library can connect ESP8266 to the Wi-Fi network, PubSubClient library can enable ESP8266 to connect to the MQTT broker for publishing messages and subscribing topics.
 
    ```c
    #include <ESP8266WiFi.h>
@@ -57,7 +58,7 @@ In this project, we will implement connecting ESP8266 to [free public MQTT broke
    }
    ```
 
-4. Set MQTT broker, write callback function, and print connection information on the serial monitor at the same time.
+4. Set MQTT broker, write the callback function, and print connection information on the serial monitor at the same time.
 
    ```c
    client.setServer(mqtt_broker, mqtt_port);
@@ -94,7 +95,7 @@ In this project, we will implement connecting ESP8266 to [free public MQTT broke
    client.subscribe(topic);
    ```
 
-6. Printing the topic name to the serial port and then print every byte of received messages.
+6. Print the topic name to the serial port and then print every byte of received messages.
 
    ```c
    void callback(char *topic, byte *payload, unsigned int length) {
@@ -182,7 +183,7 @@ In this project, we will implement connecting ESP8266 to [free public MQTT broke
 
    ![esp_con.png](https://assets.emqx.com/images/4c97b1546d31021cc22c64ae7ce4863b.png)
 
-2. Establish the connection between MQTT X client and MQTT broker, and send messages to ESP8266
+2. Establish the connection between the MQTT X client and the MQTT broker, and send messages to ESP8266
 
    ![mqttx_pub.png](https://assets.emqx.com/images/daa2c401453155045f2c068bcd57d66a.png)
 
@@ -195,7 +196,7 @@ In this project, we will implement connecting ESP8266 to [free public MQTT broke
 
 So far, we have successfully connected ESP8266 to the free public MQTT broker provided by EMQX Cloud. In this project, we connect ESP8266 to the MQTT broker, which is one of the relatively basic capabilities of ESP8266. Besides that, ESP8266 can also connect to various IoT sensors, and report the sensor data to the MQTT broker.
 
-We will release more articles related to IoT development and ESP8266. Stay tuned.
+Next, you can check out [The Easy-to-understand Guide to MQTT Protocol](https://www.emqx.com/en/mqtt) series of articles provided by EMQ to learn about MQTT protocol features, explore more advanced applications of MQTT, and get started with MQTT application and service development.
 
 
 <section class="promotion">

@@ -1,8 +1,8 @@
 [Golang](https://golang.org/) is a statically strongly typed, compiled, concurrent, and garbage-collecting programming language developed by Google. Go is expressive, clean, and efficient. Its concurrency mechanism makes it easy to write programs that maximize the use of multicore and network machines, and its innovative type system enables flexible and modular program construction. Go compiles quickly to machine code, but with the convenience of garbage collection and the power of runtime reflection. It is a fast, statically typed, compiled language, like a dynamically typed, interpreted language.
 
-[MQTT](https://www.emqx.com/en/mqtt) is a kind of **lightweight IoT messaging protocol** based on the publish/subscribe model, which can provide real-time and reliable messaging service for IoT devices, only using very little code and bandwidth. It is suitable for devices with limited hardware resources and the network environment with limited bandwidth. Therefore, [MQTT protocol](https://www.emqx.com/en/mqtt) is widely used in IoT, mobile internet, IoV, electricity power, and other industries.
+[MQTT](https://mqtt.org/) is a kind of **lightweight IoT messaging protocol** based on the publish/subscribe model, which can provide real-time and reliable messaging service for IoT devices, only using very little code and bandwidth. It is suitable for devices with limited hardware resources and the network environment with limited bandwidth. Therefore, [MQTT protocol](https://www.emqx.com/en/mqtt) is widely used in IoT, mobile internet, IoV, electricity power, and other industries.
 
-This article mainly introduces how to use **paho.mqtt.golang** client library in the Golang project, and implement the connection, subscription and messaging between the client and the [MQTT broker](https://www.emqx.com/en/products/emqx).
+This article mainly introduces how to use **paho.mqtt.golang** client library in the Golang project, and implement the connection, subscription and messaging between the client and the [MQTT broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker).
 
 
 
@@ -232,8 +232,7 @@ Run code, we can see that the MQTT connection and subscription are successfully,
 
 So far, we have completed using the **paho.mqtt.golang** client to connect to the [public MQTT broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker) and have implemented the connection, message publishing and subscription between the test client and the MQTT broker.
 
-We will publish more articles about IoT development and MQTT, so stay tuned.
-
+Next, you can check out [The Easy-to-understand Guide to MQTT Protocol](https://www.emqx.com/en/mqtt) series of articles provided by EMQ to learn about MQTT protocol features, explore more advanced applications of MQTT, and get started with MQTT application and service development.
 
 <section class="promotion">
     <div>

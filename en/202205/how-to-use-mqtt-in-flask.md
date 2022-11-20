@@ -1,6 +1,6 @@
 [Flask](https://flask.palletsprojects.com/en/2.1.x/) is a lightweight Web application framework written with Python, which is called "micro-framework" because it uses a simple core for extension of other features, such as: ORM, form validation tools, file upload, various open authentication techniques, etc.  
 
-[MQTT](https://www.emqx.com/en/mqtt) is a lightweight Internet of Things (IoT) message transmission protocol based on publish/subscribe mode. It can provide a real-time and reliable message service for networked devices with very less code and smaller bandwidth. It is widely used in IoT, mobile Internet, intelligent hardware, IoV, power and energy industries, etc.
+[MQTT](https://mqtt.org/) is a lightweight Internet of Things (IoT) message transmission protocol based on publish/subscribe mode. It can provide a real-time and reliable message service for networked devices with very less code and smaller bandwidth. It is widely used in IoT, mobile Internet, intelligent hardware, IoV, power and energy industries, etc.
 
 This article mainly introduces how to use MQTT in the Flask project, and implement the connection, subscription, messaging, unsubscribing and other functions between the  [MQTT client](https://www.emqx.com/en/blog/introduction-to-the-commonly-used-mqtt-client-library) and [MQTT broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker).
 
@@ -196,6 +196,7 @@ if __name__ == '__main__':
 
 So far, we have completed a simple MQTT client using Flask-MQTT and can subscribe and publish messages in the Flask application.
 
+Next, you can check out [The Easy-to-understand Guide to MQTT Protocol](https://www.emqx.com/en/mqtt) series of articles provided by EMQ to learn about MQTT protocol features, explore more advanced applications of MQTT, and get started with MQTT application and service development.
 
 
 <section class="promotion">
