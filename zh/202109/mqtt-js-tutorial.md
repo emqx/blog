@@ -130,8 +130,8 @@ mqtt pub -t 'testtopic/hello' -h 'broker.emqx.io' -m 'from MQTT.js'
 - 如果需要配置 SSL/TLS 连接，Option 对象会被传递给 [`tls.connect()`](http://nodejs.org/api/tls.html#tls_tls_connect_options_callback) ，因此可以在 option 中配置以下属性
   - `rejectUnauthorized`: 是否验证服务端证书链和地址名称，设置为 false 时将跳过验证，会暴露在中间人的攻击之下，所以不建议在生产环境中使用这种配置，当设置为 true 时，将开启强认证模式，且如果是自签名证书，请在证书配置时设置 Alt name。
   - `ca`:  只有在服务器使用自签名证书时才有必要，自签名证书中生成的 CA 文件
-  - cert: 只有当服务器需要客户证书认证时才有必要（双向认证），客户端证书
-  - key: 只有当服务器需要客户证书认证时才有必要（双向认证），客户端密钥
+  - `cert`: 只有当服务器需要客户证书认证时才有必要（双向认证），客户端证书
+  - `key`: 只有当服务器需要客户证书认证时才有必要（双向认证），客户端密钥
 
 #### Client 事件
 
