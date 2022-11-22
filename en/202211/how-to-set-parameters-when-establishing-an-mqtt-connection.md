@@ -151,3 +151,12 @@ Two-way authentication means that both the server and the client must provide ce
 At this point, you should have a good understanding of how MQTT connections are established and the role of each connection parameter.
 
 Next, you can check out [The Easy-to-understand Guide to MQTT Protocol](https://www.emqx.com/en/mqtt) series of articles provided by EMQ to learn about MQTT Topics, Wildcards, Retained Messages, Last-Will, and other features. Explore more advanced applications of MQTT and get started with MQTT application and service development.
+
+
+<section class="promotion">
+    <div>
+        Try EMQX Cloud for Free
+        <div class="is-size-14 is-text-normal has-text-weight-normal">A fully managed MQTT service for IoT</div>
+    </div>
+    <a href="https://accounts.emqx.com/signup?continue=https://cloud-intl.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">Get Started →</a>
+</section>
