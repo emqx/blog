@@ -236,7 +236,9 @@ MQTT 客户端向服务器发起连接请求时，可以设置是否发送遗嘱
 ![MQTT 遗嘱消息](https://assets.emqx.com/images/a216808a1ba964bbddc75708bc55c072.png)
 
 
-至此，我们完成了对 MQTT 相关基础概念及其使用流程的讲解与演示，读者可以根据本文所学尝试上手使用 MQTT 协议。接下来读者可访问 EMQ 提供的 [MQTT 客户端编程](https://www.emqx.com/zh/blog/tag/mqtt-客户端编程)系列博客，学习如何在 Java、Python、PHP、Node.js 等编程语言中使用 MQTT，开始 MQTT 应用及服务开发，探索 MQTT 的更多高级应用。
+至此，我们完成了对 MQTT 相关基础概念及其使用流程的讲解与演示，读者可以根据本文所学尝试上手使用 MQTT 协议。
+
+接下来读者可访问 EMQ 提供的 [MQTT 入门与进阶](https://www.emqx.com/zh/mqtt)系列文章学习 MQTT 主题及通配符、保留消息、遗嘱消息等相关概念。也可访问 [MQTT 客户端编程](https://www.emqx.com/zh/blog/tag/mqtt-客户端编程)系列博客，学习如何在 Java、Python、PHP、Node.js 等编程语言中使用 MQTT，开始 MQTT 应用及服务开发，探索 MQTT 的更多高级应用。
 
 
 <section class="promotion">
