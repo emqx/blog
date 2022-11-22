@@ -1,6 +1,6 @@
 [树莓派](https://www.raspberrypi.org/) 由英国树莓派基金会开发，是一款基于 ARM 的微型计算机主板。该主板提供 USB 接口和以太网接口，可以连接键盘、鼠标和网线，该主板具备 PC 的基本功能，同时树莓派集成了 Wi-Fi，蓝牙以及大量 GPIO，被广泛运用在教学、家庭娱乐、物联网等。 
 
-[MQTT](https://www.emqx.com/zh/mqtt) 是一种基于发布/订阅模式的 **轻量级物联网消息传输协议** ，可以用极少的代码和带宽为联网设备提供实时可靠的消息服务，它适用于硬件资源有限的设备及带宽有限的网络环境。因此，MQTT 协议广泛应用于物联网、移动互联网、智能硬件、车联网、电力能源等行业。 
+[MQTT](https://mqtt.org/) 是一种基于发布/订阅模式的 **轻量级物联网消息传输协议** ，可以用极少的代码和带宽为联网设备提供实时可靠的消息服务，它适用于硬件资源有限的设备及带宽有限的网络环境。因此，MQTT 协议广泛应用于物联网、移动互联网、智能硬件、车联网、电力能源等行业。 
 
 在此项目中，我们将在树莓派上使用 Python 编写简单的 [MQTT 客户端](https://www.emqx.com/zh/mqtt-client-sdk)，并实现该客户端与 [MQTT 服务器](https://www.emqx.io/zh)的连接、订阅、取消订阅、收发消息等功能。 
 
@@ -46,7 +46,7 @@ pip3 install paho-mqtt
 
 ### 连接 MQTT 服务器 
 
-本文将使用 EMQX 提供的 [免费公共 MQTT 服务器](https://www.emqx.com/zh/mqtt/public-mqtt5-broker)，该服务基于 EMQX 的 [MQTT 物联网云平台](https://www.emqx.com/en/cloud) 创建。服务器接入信息如下： 
+本文将使用 EMQX 提供的 [免费公共 MQTT 服务器](https://www.emqx.com/zh/mqtt/public-mqtt5-broker)，该服务基于 EMQX 的 [MQTT 物联网云平台](https://www.emqx.com/zh/cloud) 创建。服务器接入信息如下： 
 
 
 * Broker: **broker.emqx.io** 
@@ -230,7 +230,7 @@ client.loop_forever()
 2. 定时将树莓派的设备信息发送到 MQTT 服务器，通过手机接收消息，可以进行全天候监控。
 3. 可以通过将树莓派接入 MQTT 服务器，并配合各类传感器及 ESP 模块创建很多有趣的物联网应用。
 
-接下来我们将会陆续发布更多关于物联网开发及树莓派的相关文章，敬请关注。
+接下来，您可访问 EMQ 提供的 [MQTT 入门与进阶](https://www.emqx.com/zh/mqtt)系列文章学习 MQTT 主题及通配符、保留消息、遗嘱消息等相关概念，探索 MQTT 的更多高级应用，开启 MQTT 应用及服务开发。
 
 
 <section class="promotion">
