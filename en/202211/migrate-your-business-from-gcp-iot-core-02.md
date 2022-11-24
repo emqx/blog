@@ -1,4 +1,4 @@
-In [the previous article](https://www.emqx.com/en/blog/migrate-your-business-from-gcp-iot-core-01), we succeeded in creating deployment and connecting devices on EMQX Cloud. To secure the connection, we need to set up TLS/SSl to enable the 8883 port.
+In [the previous article](https://www.emqx.com/en/blog/migrate-your-business-from-gcp-iot-core-01), we succeeded in creating deployment and connecting devices on EMQX Cloud. To secure the connection, we need to set up TLS/SSL to enable the 8883 port.
 
 In GCP IoT Core, the connection uses a TLS/SSL one-way authentication handshake. This TLS handshake is initiated via mqtt.googleapis.com or the long-term support domain mqtt.2030.ltsapis.goog on port 8883 or 443.
 
@@ -36,7 +36,7 @@ EMQX Cloud Professional Deployment provides custom one-way/two-way TLS/SSL confi
 
    ![SSL Config](https://assets.emqx.com/images/415bb87e75723aefee4877b3562798cb.png)
 
-3. It' all done when TLS/SSL status is running.
+3. It's all done when TLS/SSL status is running.
 
    ![running status](https://assets.emqx.com/images/afe9fb43c7e6a4edbaf0a2dff77f549f.png)
 
