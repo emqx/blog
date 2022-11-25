@@ -9,8 +9,7 @@ Due to the single-thread feature of JavaScript, MQTT.js is a fully asynchronous 
 - Browser: MQTT over WebSocket
 - Node.js: MQTT, MQTT over WebSocket
 
-In different environments, except for a few different connection parameters, other APIs are the same. For MQTT.js v3.0.0 and later versions, MQTT 5.0 has been fully supported.
-
+> **Note**: Other APIs are the same in different environments except for a few different connection parameters. For MQTT.js v3.0.0 and later versions, MQTT 5.0 is fully supported.
 
 ## Installation
 
@@ -28,7 +27,7 @@ yarn add mqtt
 
 ### Install MQTT.js using CDN
 
-In the browser, we can also use CDN to import MQTT.js. The bundle package of MQTT.js is managed by [http://unpkg.com](http://unpkg.com/), and we can directly add [unpkg.com/mqtt/dist/mqtt.min.js](https://unpkg.com/mqtt/dist/mqtt.min.js) to use it.
+In the **browser**, we can also use CDN to import MQTT.js. The bundle package of MQTT.js is managed by [http://unpkg.com](http://unpkg.com/), and we can directly add [unpkg.com/mqtt/dist/mqtt.min.js](https://unpkg.com/mqtt/dist/mqtt.min.js) to use it.
 
 ```html
 <script src="https://unpkg.com/mqtt/dist/mqtt.min.js"></script>
@@ -48,10 +47,13 @@ npm install mqtt -g
 
 We will describe in detail how to use the command-line tool of MQTT.js in some tutorials below.
 
-
 ## Usage
 
-This article will use [free public MQTT Broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker) provided by EMQ. The service is created based on [MQTT Cloud service - EMQX Cloud](https://www.emqx.com/en/cloud). The server access information is as follows:
+This article will use [free public MQTT Broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker) provided by EMQ. The service is created based on [MQTT Cloud service - EMQX Cloud](https://www.emqx.com/en/cloud).
+
+Because the WebSocket connection is only supported in the browser, we will use different connection parameters in the **browser** and **Node.js** to complete the connection. However, other parameters are the same except for the connection url, so readers can choose to use them according to their actual situation.
+
+The server access information is as follows:
 
 - Broker: **broker.emqx.io**
 - TCP Port: **1883**
@@ -63,25 +65,44 @@ We simply write a piece of code to connect to EMQX Cloud and complete an example
 
 ```javascript
 const mqtt = require('mqtt')
+
+/***
+ * Browser
+ * Using MQTT over WebSocket with ws and wss protocols
+ * EMQX's ws connection default port is 8083, wss is 8084
+ * Note that you need to add a path after the connection address, such as /mqtt
+ */
+const url = 'ws://broker.emqx.io:8083/mqtt'
+/***
+ * Node.js
+ * Using MQTT over TCP with mqtt and mqtts protocols
+ * EMQX's mqtt connection default port is 1883, mqtts is 8883
+ */
+// const url = 'mqtt://broker.emqx.io:1883'
+
+// Create an MQTT client instance
 const options = {
   // Clean session
   clean: true,
   connectTimeout: 4000,
-  // Auth
+  // Authentication
   clientId: 'emqx_test',
   username: 'emqx_test',
   password: 'emqx_test',
 }
-const client  = mqtt.connect('mqtt://broker.emqx.io:1883', options)
+const client  = mqtt.connect(url, options)
 client.on('connect', function () {
   console.log('Connected')
+  // Subscribe to a topic
   client.subscribe('test', function (err) {
     if (!err) {
+      // Publish a message to a topic
       client.publish('test', 'Hello mqtt')
     }
   })
 })
 
+// Receive messages
 client.on('message', function (topic, message) {
   // message is Buffer
   console.log(message.toString())
@@ -99,17 +120,21 @@ Example: connect to `broker.emqx.io` and subscribe to the `testtopic/#` topic:
 mqtt sub -t 'testtopic/#' -h 'broker.emqx.io' -v
 ```
 
-Example: connect to `broker.emqx.io` and send a message to the `testtopic/hello` topic 
+Example: connect to `broker.emqx.io` and send a message to the `testtopic/hello` topic
 
 ```shell
 mqtt pub -t 'testtopic/hello' -h 'broker.emqx.io' -m 'from MQTT.js'
 ```
 
+If you need a more comprehensive MQTT command-line tool, you can refer to [MQTT X CLI](https://mqttx.app/cli).
+
 ### API introduction
 
 #### mqtt.connect([url], options)
 
-This API connects to the specified MQTT Broker function and always returns a Client object. The first parameter passes in a URL value. The URL can be the following protocols: `mqtt`, `mqtts`, `tcp`, `tls`, `ws`, `wss`. The URL can also be an object returned by URL.parse(). Then, this API passes in an Options object to configure the options of the MQTT connection. Here are some commonly-used attribute values in the Options object:
+This API connects to the specified MQTT Broker function and always returns a Client object. The first parameter passes in a URL value. The URL can be the following protocols: `mqtt`, `mqtts`, `tcp`, `tls`, `ws`, `wss`. The URL can also be an object returned by URL.parse(). Then, this API passes in an Options object to configure the options of the MQTT connection. When using a WebSocket connection, you must consider whether a path needs to be added after the address, such as `/mqtt`.
+
+Here are some commonly-used attribute values in the Options object:
 
 - Options
   - `keepalive`: The unit is `seconds`, the type is integar, the default is 60 seconds, and it is disabled when it is set to 0
@@ -129,8 +154,8 @@ This API connects to the specified MQTT Broker function and always returns a Cli
 - If you need to configure an SSL/TLS connection, the Option object will be passed to [`tls.connect()`](http://nodejs.org/api/tls.html#tls_tls_connect_options_callback), and you can configure the following properties in option
   - `rejectUnauthorized`: Whether to verify the server certificate chain and address name. When it is set to false, the verification will be skipped and it will be exposed to the attacks of man-in-the-middle. Therefore, this configuration is not recommended in a production environment. When it is set to true, the strong authentication mode will be enabled. If it is a self-signed certificate, please set the Alt name during certificate configuration.
   - `ca`:  The CA file generated in the self-signed certificate. It is necessary only when the server uses a self-signed certificate
-  - cert: Client certificate. It is necessary only when the server requires client certificate authentication (two-way authentication),
-  - key:  Client key. It is necessary only when the server requires client certificate authentication (two-way authentication)
+  - `cert`: Client certificate. It is necessary only when the server requires client certificate authentication (two-way authentication),
+  - `key`:  Client key. It is necessary only when the server requires client certificate authentication (two-way authentication)
 
 #### Client Event
 
@@ -206,7 +231,6 @@ When the connection is successful, the returned Client object can listen to mult
     console.log(`Topic: ${topic}, Message: ${payload.toString()}, QoS: ${packet.qos}`)
   })
   ```
-
 
 #### Client function
 
@@ -294,8 +318,6 @@ For specific use in actual projects, please refer to the following links.
 - [How to use MQTT in Electron](https://www.emqx.com/en/blog/how-to-use-mqtt-in-electron)
 - [How to use MQTT in Node.js](https://www.emqx.com/en/blog/how-to-use-mqtt-in-nodejs)
 - [Connect to MQTT server with WebSocket](https://www.emqx.com/en/blog/connect-to-mqtt-broker-with-websocket)
-
-
 
 <section class="promotion">
     <div>
