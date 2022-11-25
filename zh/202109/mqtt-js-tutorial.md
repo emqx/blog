@@ -9,7 +9,7 @@
 - 浏览器环境：MQTT over WebSocket（包括微信小程序、支付宝小程序等定制浏览器环境）
 - Node.js 环境：MQTT、MQTT over WebSocket
 
-不同环境里除了少部分连接参数不同，其他 API 均是相同的。且在 MQTT.js v3.0.0 及以上版本后，已经完整支持到 MQTT 5.0。
+> 注意：不同环境里除了少部分连接参数不同，其他 API 均是相同的。且在 MQTT.js v3.0.0 及以上版本后，已经完整支持到 MQTT 5.0。
 
 ## 安装
 
@@ -27,7 +27,7 @@ yarn add mqtt
 
 ### 使用 CDN 安装
 
-在浏览器环境中，我们还可以使用 CDN 的方式引入 MQTT.js。MQTT.js 的 bundle 包通过 [http://unpkg.com](http://unpkg.com/) 管理，我们可以直接添加 [unpkg.com/mqtt/dist/mqtt.min.js](https://unpkg.com/mqtt/dist/mqtt.min.js) 来进行使用。
+在**浏览器环境**中，我们还可以使用 CDN 的方式引入 MQTT.js。MQTT.js 的 bundle 包通过 [http://unpkg.com](http://unpkg.com/) 管理，我们可以直接添加 [unpkg.com/mqtt/dist/mqtt.min.js](https://unpkg.com/mqtt/dist/mqtt.min.js) 来进行使用。
 
 ```html
 <script src="https://unpkg.com/mqtt/dist/mqtt.min.js"></script>
@@ -59,29 +59,48 @@ npm install mqtt -g
 
 ### 简单例子
 
-我们简单编写一段代码实现连接到 EMQX Cloud 的并完成订阅主题、收发消息的例子：
+我们简单编写一段代码实现连接到 EMQX Cloud 并完成订阅主题、收发消息的简单例子。因为在浏览器环境中仅支持使用 WebSocket 连接，所以我们将使用在**浏览器环境**和 **Node.js 环境**两种不同的连接参数来完成连接。不过除连接地址外，其它参数均是相同的，因此读者可根据自己的实际情况选择使用。
 
 ```javascript
 const mqtt = require('mqtt')
+
+/***
+ * 浏览器环境
+ * 使用协议为 ws 和 wss 的 MQTT over WebSocket 连接
+ * EMQX 的 ws 连接默认端口为 8083，wss 为 8084
+ * 注意需要在连接地址后加上一个 path, 例如 /mqtt
+ */
+const url = 'ws://broker.emqx.io:8083/mqtt'
+/***
+ * Node.js 环境
+ * 使用协议为 mqtt 和 mqtts 的 MQTT over TCP 连接
+ * EMQX 的 mqtt 连接默认端口为 1883，mqtts 为 8084
+ */
+// const url = 'mqtt://broker.emqx.io:1883'
+
+// 创建客户端实例
 const options = {
   // Clean session
   clean: true,
   connectTimeout: 4000,
-  // Auth
+  // 认证信息
   clientId: 'emqx_test',
   username: 'emqx_test',
   password: 'emqx_test',
 }
-const client = mqtt.connect('mqtt://broker.emqx.io:1883', options)
+const client = mqtt.connect(url, options)
 client.on('connect', function () {
   console.log('Connected')
+  // 订阅主题
   client.subscribe('test', function (err) {
     if (!err) {
+      // 发布消息
       client.publish('test', 'Hello mqtt')
     }
   })
 })
 
+// 接收消息
 client.on('message', function (topic, message) {
   // message is Buffer
   console.log(message.toString())
@@ -105,11 +124,15 @@ mqtt sub -t 'testtopic/#' -h 'broker.emqx.io' -v
 mqtt pub -t 'testtopic/hello' -h 'broker.emqx.io' -m 'from MQTT.js'
 ```
 
+如需使用功能更加全面的 MQTT 命令行工具，可参考使用 [MQTT X CLI](https://mqttx.app/zh/cli)。
+
 ### API 介绍
 
 #### mqtt.connect([url], options)
 
-连接到指定的 MQTT Broker 的函数，并始终返回一个 Client 对象。第一个参数传入一个 URL 值，URL 可以是以下协议：`mqtt`, `mqtts`, `tcp`, `tls`, `ws`, `wss`。URL 也可以是一个由 URL.parse() 返回的对象。然后再传入一个 Options 对象，用于配置 MQTT 连接时的选项。下面列举一些常用的 Options 对象中的属性值：
+连接到指定的 MQTT Broker 的函数，并始终返回一个 Client 对象。第一个参数传入一个 URL 值，URL 可以是以下协议：`mqtt`, `mqtts`, `tcp`, `tls`, `ws`, `wss`。URL 也可以是一个由 URL.parse() 返回的对象。然后再传入一个 Options 对象，用于配置 MQTT 连接时的选项。当使用 WebSocket 连接时需要注意地址后是否需要加上一个 path，例如 `/mqtt`。
+
+下面列举一些常用的 Options 对象中的属性值：
 
 - Options
   - `keepalive`: 单位为`秒`，数值类型，默认为 60 秒，设置为 0 时禁止
@@ -208,7 +231,6 @@ mqtt pub -t 'testtopic/hello' -h 'broker.emqx.io' -m 'from MQTT.js'
   })
   ```
 
-
 #### Client 方法
 
 Client 除监听事件外，也内置一些方法，用来进行发布订阅的操作等，以下列举一些常用的方法。
@@ -293,7 +315,6 @@ Client 除监听事件外，也内置一些方法，用来进行发布订阅的�
 - [如何在 Electron 项目中使用 MQTT](https://www.emqx.com/zh/blog/how-to-use-mqtt-in-electron)
 - [如何在 Node.js 项目中使用 MQTT](https://www.emqx.com/zh/blog/how-to-use-mqtt-in-nodejs)
 - [使用 WebSocket 连接 MQTT 服务器](https://www.emqx.com/zh/blog/connect-to-mqtt-broker-with-websocket)
-
 
 <section class="promotion">
     <div>
