@@ -9,7 +9,7 @@ sensor/+/temperature
 sensor/#
 ```
 
-In comparison to topics in other messaging systems, for example Kafka and Pulsar, MQTT topics are not to be created in advance. The client creates the topic when subscribing or publishing, and does not need to delete the topic.
+In comparison to topics in other messaging systems, for example Kafka and Pulsar, MQTT topics are not to be created in advance. **The client will create the topic automatically when subscribing or publishing, and does not need to delete the topic.**
 
 Although allowed, it is usually not recommended to use topics begin or end with `/`, such as `/chat` or `chat/`.
 
