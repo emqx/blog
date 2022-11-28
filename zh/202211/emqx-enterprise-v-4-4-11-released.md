@@ -64,11 +64,11 @@ appid2:secret2
 - 修正了 `/status` API 的响应状态代码 [#9210](https://github.com/emqx/emqx/pull/9210)。 在修复之前，它总是返回 `200`，即使 EMQX 应用程序没有运行。 现在它在这种情况下返回 `503`。
 - 修复规则引擎的消息事件编码失败 [#9226](https://github.com/emqx/emqx/pull/9226)。 带消息的规则引擎事件，例如 `$events/message_delivered` 和 `$events/message_dropped`, 如果消息事件是共享订阅产生的，在编码（到 JSON 格式）过程中会失败。 影响到的版本：`v4.3.21`, `v4.4.10`, `e4.3.16` 和 `e4.4.10`。
 - 修复调用 'DELETE /alarms/deactivated' 只在单个节点上生效的问题，现在将会删除所有节点上的非活跃警告 [#9280](https://github.com/emqx/emqx/pull/9280)。
-- 在进行消息重发布或桥接消息到其他 mqtt broker 时，检查 topic 合法性，确定其不带有主题通配符 [#9291](https://github.com/emqx/emqx/pull/9291)。
+- 在进行消息重发布或桥接消息到其他 MQTT Broker 时，检查 topic 合法性，确定其不带有主题通配符 [#9291](https://github.com/emqx/emqx/pull/9291)。
 - 关闭管理端口（默认为8081）上对 HTTP API `api/v4/emqx_prometheus` 的认证，Prometheus 对时序数据抓取不在需要配置认证 [#9294](https://github.com/emqx/emqx/pull/9294)。
 - 修正了在 Kafka Consumer 中选择 `reset_by_subscriber` 偏移重置策略的选项。
 - 修复了 SQL Server 资源中，无法在 `server` 字段里使用除 `1433` 之外的端口的问题。
-- 解决从 e4.4.5 以及更早的版本升级 emqx 的时候，Kafka 资源的认证类型从 `PLAIN` 变成了 `NONE` 的错误。
+- 解决从 e4.4.5 以及更早的版本升级 EMQX 的时候，Kafka 资源的认证类型从 `PLAIN` 变成了 `NONE` 的错误。
 
 ## 结语
 
