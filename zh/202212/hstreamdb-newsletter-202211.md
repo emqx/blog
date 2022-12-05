@@ -7,8 +7,8 @@
 
 - 调整 HServer 的启动参数 `host` 和 `address` 为 `bind-address` 和 `advertised-address` ，使它们更容易被理解和使用
 - 移除 HServer 端的压缩选项，目前推荐使用端到端压缩功能
-- 统一内的资源命名规则并改进了相应的资源命名校验
-- 新增对获取 stream 和 subscription 的创建时间的支持
+- 统一内部资源命名规则并改进了相应的资源命名校验
+- 支持获取 stream 和 subscription 的创建时间
 - 修复对部分 Client 的 RPC 请求的路由校验
 - HStream CLI 新增 subscription 子命令
 - 修复提交 subscripton 进度可能失败的问题
@@ -18,7 +18,7 @@
 
 ## hdt 新增对 ELK Stack 的部署支持
 
-hdt 是 HStreamDB 的自动化集群部署工具，目前它除了能在多个节点上快速部署 HStreamDB 的核心组件外，还支持同时可选地部署 Promethus、HStream Exporter、Grafana 等监控组件。
+hdt 是 HStreamDB 的自动化集群部署工具，目前它除了能在多个节点上快速部署 HStreamDB 的核心组件外，还支持同时可选地部署 Prometheus、HStream Exporter、Grafana 等监控组件。
 
 为了更方便用户部署测试以及观测 HStreamDB 集群，本月 hdt 新增了支持通过部署 ELK Stack 来收集和查询 HStreamDB 的运行日志，如果启用了相应选项，hdt 在部署的过程中会自动配置好 Logstash 将 HStreamDB 集群的日志导入 ElasticSearch，并提供默认的 Kibana 面板。
 
