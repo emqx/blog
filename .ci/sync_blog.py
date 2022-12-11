@@ -11,7 +11,10 @@ if __name__ == '__main__':
         for lang in langs:
             api = f'https://www.emqx.com/api/v1/blog?_sort=updateAt&_limit=50&site={site}'
             blog_records = requests.get(url=api, headers={'Content-Language': lang}).json()
-            blog_records = blog_records['items']
+            if not blog_records['success']:
+                print(f'Failed to get blog records: {blog_records}')
+                exit(1)
+            blog_records = blog_records['data']['items']
             for blog_record in blog_records:
                 blog_lang = blog_record['language']
                 blog_date = '' .join(blog_record['createAt'].split('-')[:2]).replace('-', '')
