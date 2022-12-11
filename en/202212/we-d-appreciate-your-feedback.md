@@ -4,7 +4,7 @@ We are truly thankful and honored to be your choice and extend our gratitude to 
 
 [![Review EMQX on G2](https://assets.emqx.com/images/25919942452c2342bacb5ca5df54de93.png)](https://www.g2.com/contributor/emqx_rl?secure[page_id]=emqx_rl&secure[rewards]=true&secure[token]=73bd4190ce605183a6f0a52b4a4542b18a5c67fc8e6b0594101f6e4c40397a89)
 
-In fact, can you spare 1 minute right now to share your genuine feedback on our products and services? As a thank you, we will send you **an Amazon gift card worth $50**. A little something to show you that we appreciate your time!
+In fact, can you spare 1 minute right now to share your genuine feedback on our products and services? As a thank you, we will send you **a gift card worth $50 for your published review**. A little something to show you that we appreciate your time!
 
 Not only do your insights help us out, but it also helps your peers who are trying to determine the best IoT data solutions for their needs.
 
