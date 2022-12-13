@@ -2,15 +2,15 @@ Throughout the year, [EMQX](https://www.emqx.io/) has seen a consistent rise in 
 
 We are truly thankful and honored to be your choice and extend our gratitude to all of our open-source contributors. We value your opinions and strive to incorporate your valuable suggestions and ideas at each stage of software development.  
 
-[![Review EMQX on G2](https://assets.emqx.com/images/25919942452c2342bacb5ca5df54de93.png)](https://www.g2.com/contributor/emqx_rl?secure[page_id]=emqx_rl&secure[rewards]=true&secure[token]=73bd4190ce605183a6f0a52b4a4542b18a5c67fc8e6b0594101f6e4c40397a89)
+[![Review EMQX on G2](https://assets.emqx.com/images/2b2510e8f934f43847b879ef5c1e6008.jpeg)](https://www.g2.com/contributor/emqx_visa?secure%5Bpage_id%5D=emqx_visa&secure%5Brewards%5D=true&secure%5Btoken%5D=ec4499cfa0610d93607da332c12040932692878e43cf033accd5bb9c07e03241)
 
-In fact, can you spare 1 minute right now to share your genuine feedback on our products and services? As a thank you, we will send you **a gift card worth $50 for your published review**. A little something to show you that we appreciate your time!
+In fact, can you spare 1 minute right now to share your genuine feedback on our products and services? As a thank you, we will send you a gift card worth **$25 for the first 20 published reviews**. A little something to show you that we appreciate your time!
 
 Not only do your insights help us out, but it also helps your peers who are trying to determine the best IoT data solutions for their needs.
 
-[![Review EMQX on G2](https://assets.emqx.com/images/d977a237ea50612bb6b46e8e5f8d0e34.png)](https://www.g2.com/contributor/emqx_rl?secure[page_id]=emqx_rl&secure[rewards]=true&secure[token]=73bd4190ce605183a6f0a52b4a4542b18a5c67fc8e6b0594101f6e4c40397a89)
+[![Review EMQX on G2](https://assets.emqx.com/images/d977a237ea50612bb6b46e8e5f8d0e34.png)](https://www.g2.com/contributor/emqx_visa?secure%5Bpage_id%5D=emqx_visa&secure%5Brewards%5D=true&secure%5Btoken%5D=ec4499cfa0610d93607da332c12040932692878e43cf033accd5bb9c07e03241)
 
-Are you satisfied with our product? Have you been wowed by EMQX’s capabilities? Do you have any comments or issues that you would like to share? If so, please [leave a short review about EMQX](https://www.g2.com/contributor/emqx_rl?secure[page_id]=emqx_rl&secure[rewards]=true&secure[token]=73bd4190ce605183a6f0a52b4a4542b18a5c67fc8e6b0594101f6e4c40397a89) on G2 and claim your $50 gift card.
+Are you satisfied with our product? Have you been wowed by EMQX’s capabilities? Do you have any comments or issues that you would like to share? If so, please [leave a short review about EMQX](https://www.g2.com/contributor/emqx_visa?secure%5Bpage_id%5D=emqx_visa&secure%5Brewards%5D=true&secure%5Btoken%5D=ec4499cfa0610d93607da332c12040932692878e43cf033accd5bb9c07e03241) on G2 and claim your $25 gift card.
 
 We hope our expertise, technologies, and customer-focused services will help you achieve success in the IoT era. Anytime. Anywhere.
 
@@ -25,7 +25,7 @@ So far, we've connected over 100M IoT devices around the globe. Our edge-to-clou
 
 <section class="promotion">
     <div>
-        Review EMQX on G2 and Claim Your $50 Amazon Gift Card.
+        Review EMQX on G2 and Claim Your $25 Amazon Gift Card.
     </div>
-    <a href="https://www.g2.com/contributor/emqx_rl?secure[page_id]=emqx_rl&secure[rewards]=true&secure[token]=73bd4190ce605183a6f0a52b4a4542b18a5c67fc8e6b0594101f6e4c40397a89" class="button is-gradient px-5">Review EMQX on G2 →</a>
+    <a href="https://www.g2.com/contributor/emqx_visa?secure%5Bpage_id%5D=emqx_visa&secure%5Brewards%5D=true&secure%5Btoken%5D=ec4499cfa0610d93607da332c12040932692878e43cf033accd5bb9c07e03241" class="button is-gradient px-5">Review EMQX on G2 →</a>
 </section>
