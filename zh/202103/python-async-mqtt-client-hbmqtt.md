@@ -6,6 +6,11 @@ CPU 的速度远远快于磁盘、网络等 IO 操作，而在一个线程中，
 
 在 Python 的 [MQTT 客户端](https://www.emqx.com/zh/mqtt-client-sdk)库中，[HBMQTT](https://github.com/beerfactory/hbmqtt) 是最早支持异步 IO 的 [Python MQTT](https://www.emqx.com/zh/blog/comparision-of-python-mqtt-client) 库。
 
+> ** 提示 **
+>
+> 目前，HBMQTT 的开发者已在 [GitHub README](https://github.com/beerfactory/hbmqtt#no-longer-maintained) 宣布停止对该库的维护。
+>
+> 读者可以尝试使用 [aMQTT](https://github.com/Yakifo/amqtt)，这是一个从 HBMQTT 派生出来的库, 目前仍在积极维护。
 
 
 ## HBMQTT 库

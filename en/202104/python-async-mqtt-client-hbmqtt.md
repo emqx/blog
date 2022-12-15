@@ -6,6 +6,9 @@ To solve this problem, Python added the feature of asynchronous IO. In Python 3.
 
 In the MQTT client libraries for Python, [HBMQTT](https://github.com/beerfactory/hbmqtt) was the first Python MQTT library supporting asynchronous IO.
 
+> **Note**
+>
+> **HBMQTT is no longer maintained**. There is a fork [aMQTT](https://github.com/Yakifo/amqtt) under active development by different people. See [here](https://github.com/beerfactory/hbmqtt/issues/235) for some background.
 
 
 ## HBMQTT Library

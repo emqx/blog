@@ -289,7 +289,7 @@ CMAKE_TOOLCHAIN_FILE 参数用于指定 .cmake 文件的路径。
 
 ## 结语
 
-至此，我们就完成了使用 Neuron 源码进行交叉编译的全部操作。用户可以根据本文，自行编译出所需架构的可执行文件，从而更好地将 Neuron 运行在不用架构平台上，实现相应的业务目标。
+至此，我们就完成了使用 Neuron 源码进行交叉编译的全部操作。用户可以根据本文，自行编译出所需架构的可执行文件，从而更好地将 Neuron 运行在不同架构平台上，实现相应的业务目标。
 
 有关 Neuron 开源版使用中的任何建议或问题，欢迎在 GitHub 仓库提交 PR 和 Issues：[https://github.com/emqx/neuron](https://github.com/emqx/neuron )
 
