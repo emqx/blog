@@ -156,3 +156,10 @@ With this series of tutorials, you can enjoy a smooth migration of your business
     </div>
     <a href="https://accounts.emqx.com/signup?continue=https://cloud-intl.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">Get Started →</a>
 </section>
+
+
+## Other articles in this series
+
+- [Migrate Your Business from GCP IoT Core 01 | Create Deployment and Connect Devices](https://www.emqx.com/en/blog/migrate-your-business-from-gcp-iot-core-01)
+- [Migrate Your Business from GCP IoT Core 02 | Enable TLS/SSL over MQTT to Secure Your Connection](https://www.emqx.com/en/blog/migrate-your-business-from-gcp-iot-core-02)
+- [Migrate Your Business from GCP IoT Core 03｜Use JSON Web Token (JWT) to Verify Device Credentials](https://www.emqx.com/en/blog/migrate-your-business-from-gcp-iot-core-03)
