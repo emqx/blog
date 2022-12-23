@@ -18,7 +18,7 @@ In this article, we will introduce how to integrate the monitoring data of EMQX 
 
 Before starting, we need to prepare the following running environment, install and run EMQX 5.0, prepare the installation package of Prometheus, and install and start Grafana. Users can also download the installation or binary package according to the download address provided in the article and install it themselves. In the example, we will use Docker to install and activate.
 
-### Install EMQ X 5.0
+### Install EMQX 5.0
 
 Following is the way to quickly install and start EMQX 5.0 by using Docker:
 
@@ -26,7 +26,7 @@ Following is the way to quickly install and start EMQX 5.0 by using Docker:
 docker run -d --name emqx -p 1883:1883 -p 8083:8083 -p 8883:8883 -p 8084:8084 -p 18083:18083 emqx/emqx:latest
 ```
 
-In addition to using Docker to install EMQX, we can also use RPM or DEB packages to install it. For specific installation methods, please refer to [EMQ X 5.0 Installation Guide](https://www.emqx.io/docs/en/v5.0/deploy/install.html#install).
+In addition to using Docker to install EMQX, we can also use RPM or DEB packages to install it. For specific installation methods, please refer to [EMQX 5.0 Installation Guide](https://www.emqx.io/docs/en/v5.0/deploy/install.html#install).
 
 After the installation, we can open `http://localhost:18083` to access the EMQX Dashboard to view the running status. If you can access it, usually, EMQX has been installed successfully.
 
@@ -117,7 +117,7 @@ scrape_configs:
           instance: dashboard-local
 ```
 
-On the above configuration, `job_name` is the task name of data collection, `static_configs` is the data collection target, `targets` is the target data collection address, and `127.0.0.1:18083` is the endpoint of EMQ X 5.0 API service.
+On the above configuration, `job_name` is the task name of data collection, `static_configs` is the data collection target, `targets` is the target data collection address, and `127.0.0.1:18083` is the endpoint of EMQX 5.0 API service.
 
 Ultimately, we save the above configuration file content as `prometheus.yaml` and copy it to the `/etc/prometheus/` directory or store it **in the custom path** where you need to keep the file. At this point, we have completed the simple configuration of Prometheus.
 
@@ -245,7 +245,7 @@ Such as the endpoint of EMQX, the API for obtaining metric data, etc. Click the 
 
 In the same way, the help can be divided into two configuration modes: default and using Pushgateway. In the configuration mode using Pushgateway, you can open the switch on the page, enter the address of Pushgateway and the time to report the data, and click Save to complete the configuration after saving.
 
-For more about configuring the integration of Prometheus in Dashboard, you can refer to the [EMQ X Dashboard Configuration Monitoring Integration](https://www.emqx.io/docs/en/v5.0/dashboard/configuration.html#monitoring) document.
+For more about configuring the integration of Prometheus in Dashboard, you can refer to the [EMQX Dashboard Configuration Monitoring Integration](https://www.emqx.io/docs/en/v5.0/dashboard/configuration.html#monitoring) document.
 
 ## Conclusion
 
