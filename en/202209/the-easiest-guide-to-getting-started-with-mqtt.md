@@ -233,7 +233,7 @@ When the MQTT client makes a CONNECT request to the server, it can set whether t
 
 When the MQTT client is abnormally offline (the DISCONNECT message is not sent to the server before the client disconnects), the MQTT server will publish a will message.
 
-For more details on MQTT Last Will, please check the blog [Use of MQTT Will Message](https://www.emqx.com/en/blog/use-of-mqtt-will-message).
+For more details on MQTT Will Message, please check the blog [Use of MQTT Will Message](https://www.emqx.com/en/blog/use-of-mqtt-will-message).
 
 As follows, we create a connection named `Last Will`.
 

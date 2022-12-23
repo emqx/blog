@@ -1,38 +1,48 @@
-## Keep Alive in MQTT protocol
-
-### Why we need Keep Alive
+## Why we need Keep Alive
 
 The MQTT protocol is hosted on top of the TCP protocol, which is connection-oriented, and provides a stable and orderly flow of bytes between two connected parties. However, in some cases, TCP can have half-connection problems. A half-connection is a connection that has been disconnected or not established on one side, while the connection on the other side is still maintained. In this case, the half-connected party may continuously send data, which obviously never reaches the other side. To avoid black holes in communication caused by half-connections, the MQTT protocol provides a Keep Alive mechanism that allows the client and MQTT server to determine whether there is a half-connection problem, and close the corresponding connection.
 
-### Mechanism and use of Keep Alive
+## Mechanism and use of MQTT Keep Alive
 
-**At Connection**
+### At Connection
 
 When an [MQTT client](https://www.emqx.com/en/blog/mqtt-client-tools) creates a connection to the [MQTT broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker), the Keep Alive mechanism can be enabled between the communicating parties by setting the Keep Alive variable header field in the connection request protocol packet to a non-zero value. Keep Alive is an integer from 0 to 65535, representing the maximum time in seconds allowed to elapse between MQTT protocol packets sent by the client.
 
 When the broker receives a connection request from a client, it checks the value of the Keep Alive field in the variable header. When there is a value, the broker will enable the Keep Alive mechanism.
 
+### MQTT 5.0 Server Keep Alive
+
 In the [MQTT 5.0](https://www.emqx.com/en/mqtt/mqtt5) standard, the concept of Server Keep Alive was also introduced, allowing the broker to choose to accept the Keep Alive value carried in the client request, or to override it, depending on its implementation and other factors. If the broker chooses to override this value, it needs to set the new value in the Server Keep Alive field of the Connection Acknowledgement Packet (CONNACK), and the client needs to use this value to override its own previous Keep Alive value when it reads it in the CONNACK.
 
-**The Keep Alive Process**
+### The Keep Alive Process
 
-1. Client process
+**Client process**
 
-   After the connection is established, the client needs to ensure that the interval between any two MQTT protocol packets it sends does not exceed the Keep Alive value. If the client is idle and has no packets to send, it can send PINGREQ protocol packets, instead.
+After the connection is established, the client needs to ensure that the interval between any two MQTT protocol packets it sends does not exceed the Keep Alive value. If the client is idle and has no packets to send, it can send PINGREQ protocol packets, instead.
 
-   When the client sends a PINGREQ packet, the broker must return a PINGRESP packet. If the client does not receive a PINGRESP packet from the server within a reliable time, it means that there is a half-connection, the broker is offline, or there is a network failure, and the client should close the connection.
+When the client sends a PINGREQ packet, the broker must return a PINGRESP packet. If the client does not receive a PINGRESP packet from the server within a reliable time, it means that there is a half-connection, the broker is offline, or there is a network failure, and the client should close the connection.
 
-2. Broker process
+**Broker process**
 
-   After the connection is established, if the broker does not receive any packets from the client within 1.5 times the Keep Alive time, it will assume that there is a problem with the connection to the client, and the broker will disconnect from the client.
+After the connection is established, if the broker does not receive any packets from the client within 1.5 times the Keep Alive time, it will assume that there is a problem with the connection to the client, and the broker will disconnect from the client.
 
-   If the broker receives a PINGREQ protocol packet from the client, it needs to reply with a PINGRESP protocol packet for confirmation.
+If the broker receives a PINGREQ protocol packet from the client, it needs to reply with a PINGRESP protocol packet for confirmation.
 
-3. Client takeover mechanism
+**Client takeover mechanism**
 
-   When there is a half-connection within the broker, and when the corresponding client initiates a reconnection or a new connection, the broker will start the client takeover mechanism: it closes the old half-connection and establishes a new connection with the client.
+When there is a half-connection within the broker, and when the corresponding client initiates a reconnection or a new connection, the broker will start the client takeover mechanism: it closes the old half-connection and establishes a new connection with the client.
 
-   This mechanism ensures that the client will not be prevented from reconnecting due to a half-connection problem.
+This mechanism ensures that the client will not be prevented from reconnecting due to a half-connection problem.
+
+## Keep Alive & Will Message
+
+Keep Alive is typically used in conjunction with Will Message, which allow the device to promptly notify other clients in the event of an unexpected offline event.
+
+As shown in the figure, when this client connects, Keep Alive is set to 5 seconds and a will message is set. If the server does not receive any packets from the client within 7.5 seconds (1.5 times the Keep Alive), it will send a will message with a payload of 'offline' to the 'last_will' topic.
+
+![MQTT Will Message](https://assets.emqx.com/images/3fc9e2c463bd38c21dc7f523520c7076.png)
+
+For more details on MQTT Will Message, please check the blog [Use of MQTT Will Message](https://www.emqx.com/en/blog/use-of-mqtt-will-message).
 
 ## How to use Keep Alive in EMQX
 
@@ -69,9 +79,11 @@ The default value of backoff is 0.75. Therefore, the behavior of EMQX will be fu
 
 Refer to the [EMQX configuration documentation](https://www.emqx.io/docs/en/v4.3/configuration/configuration.html) for more information.
 
-**Note: Setting Keep Alive for WebSocket connections**
+> **Note: Setting Keep Alive for WebSocket connections**
+>
+> EMQX supports client access via WebSockets. When a client initiates a connection using WebSockets, it only needs to set the Keep Alive value in the client connection parameters. Refer to [Connecting to an MQTT Server Using WebSocket](https://www.emqx.com/en/blog/connect-to-mqtt-broker-with-websocket).
 
-EMQX supports client access via WebSockets. When a client initiates a connection using WebSockets, it only needs to set the Keep Alive value in the client connection parameters. Refer to [Connecting to an MQTT Server Using WebSocket](https://www.emqx.com/en/blog/connect-to-mqtt-broker-with-websocket).
+
 
 ## Summary
 
