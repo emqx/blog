@@ -122,7 +122,7 @@ scrape_configs:
           instance: dashboard-local
 ```
 
-在上述配置中，`job_name` 为数据采集的任务名称，`static_configs` 为数据采集的目标，`targets` 为数据采集的目标地址，`127.0.0.1:18083` 为 EMQ X 5.0 的 API 服务的地址端口。
+在上述配置中，`job_name` 为数据采集的任务名称，`static_configs` 为数据采集的目标，`targets` 为数据采集的目标地址，`127.0.0.1:18083` 为 EMQX 5.0 的 API 服务的地址端口。
 
 最后再将上述的配置文件内容保存为 `prometheus.yaml`，并将其拷贝到 `/etc/prometheus/` 目录下，或存储到您的需要存储该文件的自定义路径下。至此我们就完成了 Prometheus 的简单配置。
 
@@ -246,7 +246,7 @@ EMQX 提供了一个配置 Pushgateway 服务的 [API](https://www.emqx.io/docs/
 
 同样在帮助页面中，可以分为默认和使用 Pushgateway 两种配置方式。使用 Pushgateway 的配置方式，可以在页面中打开启动开关，输入 Pushgateway 的地址和上报数据时间，点击保存后，即可完成配置。
 
-更多关于如何在 Dashboard 中配置集成 Prometheus 的信息，可以参考 [EMQ X Dashboard 配置监控集成](https://www.emqx.io/docs/zh/v5.0/dashboard/configuration.html#监控)的文档。
+更多关于如何在 Dashboard 中配置集成 Prometheus 的信息，可以参考 [EMQX Dashboard 配置监控集成](https://www.emqx.io/docs/zh/v5.0/dashboard/configuration.html#监控)的文档。
 
 ## 总结
 
