@@ -125,3 +125,4 @@ To sum up, EMQX Cloud JWT authentication can verify device credentials in the sc
 - [Migrate Your Business from GCP IoT Core 01 | Create Deployment and Connect Devices](https://www.emqx.com/en/blog/migrate-your-business-from-gcp-iot-core-01)
 - [Migrate Your Business from GCP IoT Core 02 | Enable TLS/SSL over MQTT to Secure Your Connection](https://www.emqx.com/en/blog/migrate-your-business-from-gcp-iot-core-02)
 - [Migrate Your Business from GCP IoT Core 04｜VPC Network Peering and Transfer Data to GCP](https://www.emqx.com/en/blog/migrate-your-business-from-gcp-iot-core-04)
+- [Migrate Your Business from GCP IoT Core 05｜Bridge Data to GCP Pub/Sub](https://www.emqx.com/en/blog/migrate-your-business-from-gcp-iot-core-05)
