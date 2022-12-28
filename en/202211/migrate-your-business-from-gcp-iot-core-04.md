@@ -163,3 +163,4 @@ With this series of tutorials, you can enjoy a smooth migration of your business
 - [Migrate Your Business from GCP IoT Core 01 | Create Deployment and Connect Devices](https://www.emqx.com/en/blog/migrate-your-business-from-gcp-iot-core-01)
 - [Migrate Your Business from GCP IoT Core 02 | Enable TLS/SSL over MQTT to Secure Your Connection](https://www.emqx.com/en/blog/migrate-your-business-from-gcp-iot-core-02)
 - [Migrate Your Business from GCP IoT Core 03｜Use JSON Web Token (JWT) to Verify Device Credentials](https://www.emqx.com/en/blog/migrate-your-business-from-gcp-iot-core-03)
+- [Migrate Your Business from GCP IoT Core 05｜Bridge Data to GCP Pub/Sub](https://www.emqx.com/en/blog/migrate-your-business-from-gcp-iot-core-05)
