@@ -26,7 +26,7 @@
 
 > **HTTP/3 协议介绍**
 >
-> 2018 年 10 月，IETF 的 HTTP 和 QUIC 工作组联合决定将 QUIC 上的 HTTP 映射称为 [HTTP/3](https://en.wikipedia.org/wiki/HTTP/3)，以提前使其成为全球标准。2022 年 6 月 6 日，IETF 将 HTTP/3 标准化为[RFC ](https://en.wikipedia.org/wiki/RFC_(identifier))[9114](https://datatracker.ietf.org/doc/html/rfc9114)。
+> 2018 年 10 月，IETF 的 HTTP 和 QUIC 工作组联合决定将 QUIC 上的 HTTP 映射称为 [HTTP/3](https://en.wikipedia.org/wiki/HTTP/3)，以提前使其成为全球标准。2022 年 6 月 6 日，IETF 将 HTTP/3 标准化为 [RFC](https://en.wikipedia.org/wiki/Request_for_Comments) <sup>[9114](https://datatracker.ietf.org/doc/html/rfc9114)</sup>。
 >
 > HTTP/3 的目标是通过解决 HTTP/2 的传输相关问题，在所有形式的设备上提供快速、可靠和安全的 Web 连接。HTTP/3 使用与 HTTP/2 版本类似的语义，包括相同的请求方法、状态代码和消息字段，两者根本区别在于，HTTP/2 底层使用的是 TCP/TLS 协议，而 HTTP/3 使用的是 QUIC 协议。
 >
