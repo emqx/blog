@@ -42,7 +42,7 @@ QUIC has many advantages over existing TLS over TCP implementation:
 
 > **Introduction to the HTTP/3 protocol**
 >
-> In October 2018, the IETF's HTTP and QUIC Working Group jointly decided to name HTTP mapping over QUIC as [HTTP/3](https://en.wikipedia.org/wiki/HTTP/3) in order to accelerate its adoption as a global standard. On June 6, 2022, the IETF standardized HTTP/3 to [RFC ](https://en.wikipedia.org/wiki/RFC_(identifier))[9114](https://datatracker.ietf.org/doc/html/rfc9114).
+> In October 2018, the IETF's HTTP and QUIC Working Group jointly decided to name HTTP mapping over QUIC as [HTTP/3](https://en.wikipedia.org/wiki/HTTP/3) in order to accelerate its adoption as a global standard. On June 6, 2022, the IETF standardized HTTP/3 to [RFC](https://en.wikipedia.org/wiki/Request_for_Comments) <sup>[9114](https://datatracker.ietf.org/doc/html/rfc9114)</sup>.
 >
 > The goal of HTTP/3 is to provide fast, reliable and secure Web connections on all types of devices by solving the transport-related problems of HTTP/2. HTTP/3 uses similar semantics to the HTTP/2 version, including the same request methods, status codes and message fields. The fundamental difference is that HTTP/2 uses TCP/TLS as the underlying protocol, whereas HTTP/3 uses QUIC.
 >
