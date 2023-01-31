@@ -124,9 +124,12 @@ MQTT.fx 使用 JavaFX 技术开发，可以保存多个连接配置，支持多�
 #### 特性
 
 - **无依赖限制**：基于命令行的安装和使用，无任何环境依赖要求
-- **开放源码**：基于 Apache License 2.0 协议，开放源码
-- **易于集成**：可快速集成到自动化测试脚本中
-- **单/双向 SSL 认证**：支持 CA、自签名证书，以及单、双向 SSL 认证
+
+- **MQTT 基准测试**: 开箱即用的 MQTT 性能测试工具
+
+- **配置文件**: 支持为 `连接`、`发布` 和 `订阅` 保存为本地配置文件
+
+- **优雅的输出**: 输出对用户友好、易于理解的命令行内容，便于查看测试步骤及内容
 
 #### 下载
 
@@ -155,6 +158,17 @@ mqttx pub -t 'mqttx/cli' -h 'broker.emqx.io' -p 1883 -s -M
 ```
 
 MQTT X CLI 支持一个 `pub` 命令可以发布多条消息的功能，只需要在编辑是在命令中添加一个 `-M` 参数和 `-s` 参数，每次输入完成后换行即可。
+
+性能测试
+
+```
+# Connect Benchmark
+mqttx bench conn -c 5000
+# Subscribe Benchmark
+mqttx bench sub -c 5000 -t bench/%i
+# Publish Benchmark
+mqttx bench pub -c 5000 -t bench/%i
+```
 
 ![MQTT CLI](https://assets.emqx.com/images/549a31f8b062f099c0eac8c0c6047f35.png)
 
