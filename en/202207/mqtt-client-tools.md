@@ -122,9 +122,11 @@ For more information, please check out: [https://github.com/emqx/MQTTX/tree/main
 
 - **Dependency-free**: Get up and run with no prerequisites required
 
-- **Easy to Integrate**: Quick integration into automation test scripts
+- **MQTT Benchmark testing**: Out-of-box MQTT benchmark tool
 
-- **One and Two Way SSL**: Support for one-way and two-way SSL authentication
+- **Configuration file**: Support saving and loading config files for `conn` / `sub` / `pub`
+
+- **Beauty output**: User-friendly, easy-to-understand command line content entry for easy viewing
 
 #### Download
 
@@ -156,6 +158,19 @@ Publishing multiple messages
 
 ```
 mqttx pub -t 'mqttx/cli' -h 'broker.emqx.io' -p 1883 -s -M
+```
+
+Benchmark
+
+```
+# Connect Benchmark
+mqttx bench conn -c 5000
+
+# Subscribe Benchmark
+mqttx bench sub -c 5000 -t bench/%i
+
+# Publish Benchmark
+mqttx bench pub -c 5000 -t bench/%i
 ```
 
 The MQTT X CLI also supports a pub command to publish multiple messages, just add a -M parameter and a -s parameter to the command in the editor, and newline it after each entry.
