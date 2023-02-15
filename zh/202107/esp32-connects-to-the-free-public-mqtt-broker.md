@@ -34,7 +34,7 @@
 
 ## ESP32 Pub/Sub 示意图
 
-![ESP32 Pub/Sub 示意图](https://assets.emqx.com/images/d6265585d6257fc02c722fe45888bdac.png)
+![ESP32 Pub/Sub 示意图](https://assets.emqx.com/images/601c4415dc368b9eb245ca92fb6b60f4.jpg)
 
 ## ESP32 代码编写
 
