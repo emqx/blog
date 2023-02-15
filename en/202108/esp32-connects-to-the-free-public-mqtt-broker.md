@@ -35,7 +35,7 @@ Project -> Load library -> Library manager... -> Search PubSubClient -> Install 
 
 ## ESP32 Pub/Sub diagram 
 
-![ESP32 Pub/Sub diagram](https://assets.emqx.com/images/d6265585d6257fc02c722fe45888bdac.png)
+![ESP32 Pub/Sub diagram](https://assets.emqx.com/images/f806ce3df585c26ca01fd1aa3711be46.jpg)
 
 ## Programming ESP32 Board with Arduino IDE
 
