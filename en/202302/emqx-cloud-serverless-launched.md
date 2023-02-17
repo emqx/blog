@@ -1,4 +1,8 @@
-EMQ now officially launches its MQTT Serverless cloud service, the EMQX Cloud Serverless (Beta). Based on the innovative multi-tenant technology, EMQX Cloud Serverless provides users with the blazing-fast deployment of MQTT services in just 5 seconds **without concerns about server infrastructure management or resource allocation when service scales**.
+EMQ now officially launches its serverless MQTT service, the EMQX Cloud Serverless (Beta). Based on the innovative multi-tenant technology, EMQX Cloud Serverless provides users with the blazing-fast deployment of MQTT services in just 5 seconds **without concerns about server infrastructure management or resource allocation when service scales**.
+
+<video controls width="760px">
+    <source src="https://cdn.emqx.com/video/emqx-cloud-serverless-launched-en.mp4" type="video/mp4">
+</video>
 
 EMQX Cloud Serverless features seamless and automatic scaling to meet business demands and offers a convenient pay-as-you-go pricing model. Moreover, it offers a forever free monthly package of 1 million session minutes per month, equivalent to about 23 devices online for a month, making it the ideal choice for projects under development and testing.
 
@@ -6,23 +10,19 @@ EMQX Cloud, as a fully managed MQTT service for IoT that is trusted by over 300 
 
 EMQX Cloud Serverless Beta-testing version is now **open for** [**free trials**](https://www.emqx.com/en/cloud/pricing) **on the EMQX Cloud website, starting today until March 31, 2023.**
 
-## MQTT Serverless Based on a Multi-Tenant Architecture
+## Serverless MQTT Service Based on a Multi-Tenant Architecture
 
-As cloud computing evolves, Serverless is emerging as a leading trend and the future of cloud technology. EMQX Cloud Serverless, as a Serverless MQTT Broker, provides a cutting-edge solution for fully automated construction, deployment, and scaling of MQTT services. Users can eliminate the need to manage deployment and maintenance, and instead focus all their efforts on IoT-powered business logic and product development.
+As cloud computing evolves, serverless is emerging as a leading trend and the future of cloud technology. EMQX Cloud Serverless, as a serverless MQTT service, provides a cutting-edge solution for fully automated construction, deployment, and scaling of MQTT services. Users can eliminate the need to manage deployment and maintenance, and instead focus all their efforts on IoT-powered business logic and product development.
 
 ### Lightning-Fast Deployment in Just 5 Seconds
 
 EMQX Cloud Serverless leverages a clustered multi-tenancy architecture, as opposed to traditional single-tenant clusters. This innovative approach allows for efficient utilization of service capacity through sharing across multiple tenants while maintaining complete isolation of each tenant's data and communication for maximum security. Moreover, well-planned configuration and limiting ensure that the high concurrency of any one tenant does not negatively impact the performance of others.
 
-With its multi-tenant architecture, EMQX Cloud Serverless enables swift and efficient sharing of the created cluster, reducing the time required for cluster deployment creation. In just 5 seconds, developers can establish a secure, reliable, and fully functional MQTT Broker.
-
-<video controls width="760px">
-    <source src="https://cdn.emqx.com/video/emqx-cloud-serverless-launched-en.mp4" type="video/mp4">
-</video>
+With its multi-tenant architecture, EMQX Cloud Serverless enables swift and efficient sharing of the created cluster, reducing the time required for cluster deployment creation. In just 5 seconds, developers can establish a secure, reliable, and fully functional MQTT service.
 
 ### Auto Scaling
 
-The Serverless approach emphasizes the "No Server" aspect for users, meaning that cloud vendors take care of the servers, so users can focus solely on their business without being concerned with the resources and scaling.
+The serverless approach emphasizes the "No Server" aspect for users, meaning that cloud vendors take care of the servers, so users can focus solely on their business without being concerned with the resources and scaling.
 
 EMQX Cloud Serverless offers a streamlined and convenient solution for developers with its automated MQTT services. Its fully managed model reduces deployment and maintenance costs for users, and its intelligent, self-scaling capabilities make it possible to smoothly respond to fluctuating business demands, leading to a significant decrease in the total cost.
 
