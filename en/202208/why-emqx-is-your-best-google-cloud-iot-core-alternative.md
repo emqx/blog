@@ -1,12 +1,12 @@
-Google made its decision to shut down Cloud IoT Core Service on August 16, 2023, leaving one year for its users to migrate from their service to an alternative one. 
+Google announced the retirement of their Cloud IoT Core service **on August 16, 2023,** emailing customers to say bluntly that **“your access to the IoT Core Device Manager APIs will no longer be available. As of that date, devices will be unable to connect to the Google Cloud IoT Core MQTT and HTTP bridges and existing connections will be shut down.”**
 
-![Google Cloud IoT Core](https://assets.emqx.com/images/d7da77fa041eb81ed5376eb033176621.png)
+There is obviously a pressing need for existing users to find a replacement for the IoT Core.
 
-The public announcement first appeared at the top of its IoT Core web page, followed by emails to its customers, notifying that exactly one year from now, access to IoT Core Device Manager APIs “**will no longer be available. As of that date, devices will be unable to connect to the Google Cloud IoT Core MQTT and HTTP bridges and existing connections will be shut down.**”
+Given that Google IoT Core is based on MQTT, the best alternative options for seamless migration undoubtedly are MQTT-based IoT messaging platforms or services. 
 
-Now is the time to consider your best Google Cloud IoT Core alternative.
+As an official Google Cloud migration partner, EMQ has brought solid and well-round IoT connectivity solutions to our mutual customers. We are here to provide ideal migration options for those seeking the best Google IoT Core alternatives. EMQX, the world’s most scalable open source MQTT Broker, and [EMQX Cloud](https://www.emqx.com/en/cloud), a fully-managed MQTT service [available on Google Cloud Platform](https://www.emqx.com/en/blog/introducing-emqx-cloud-on-google-cloud-platform), are both based on **open standards,100% compliance with MQTT 5.0 and 3.x standards and deep integration with GCP.**
 
-Given that Google IoT Core is based on MQTT, the best alternative options for seamless migration undoubtedly are MQTT-based IoT messaging platforms or services. As a trusted partner to Google Cloud Platform (GCP), EMQ has already brought solid and well-rounded IoT connectivity solutions to our mutual customers. We are here to provide ideal migration options for those seeking the best Google IoT Core alternatives. [EMQX](https://www.emqx.com/en/products/emqx), the world’s most scalable open source [MQTT Broker](https://www.emqx.io/), and [EMQX Cloud](https://www.emqx.com/en/cloud), a fully-managed MQTT service already [available on Google Cloud Platform](https://www.emqx.com/en/blog/introducing-emqx-cloud-on-google-cloud-platform), are both based on **open standards, 100% compliant with MQTT 5.0 and 3.x standards and deeply integrated with GCP.**
+![Google Cloud migration partner](https://assets.emqx.com/images/b23e300b6626dcc777c8f8ea1c8da9bc.png)
 
 ### Choose EMQX as Your Perfect Replacement for Google IoT Core
 
@@ -26,11 +26,21 @@ With announcing [support for Google Cloud Platform (GCP](https://www.emqx.com/en
 
 EMQX Cloud supports VPC peering on GCP. Users who want to migrate from Google IoT Core simply need to choose Google Cloud as the cloud platform when creating new deployments on EMQX Cloud. EMQX cluster and user's resources on GCP, such as Cloud SQL, Kafka, MongoDB, and InfluxDB, can communicate by establishing a VPC peering connection. This communication is under the same network, making it more secure and reliable as it's a private network connection.
 
-### **Migrate from Google Cloud IoT Core to** [**EMQX**](https://www.emqx.com/en/cloud) **Today!**
+### Thinking of switching to EMQX Cloud?
 
-Global enterprise customers, spanning automotive, IIoT, transportation & logistics, energy & utilities, and more, have proven EMQX's scalability and reliability with massive deployments of mission-critical IoT applications on GCP. For existing Google Cloud IoT Core customers, EMQX will be your perfect alternative, offering outstanding product capabilities and minimizing the possible impact on your current running systems.
+Our handy migration guides will make your migration process faster and more efficient.
 
-Make the right decision and [get in touch](https://www.emqx.com/en/contact?product=cloud) with our dedicated IoT experts about your options after Google Cloud IoT Core. We will assist you in building your ideal replacement immediately.
+Step-by-step instructions: 
+
+- Part 1: [Create Deployment and Connect Devices](https://www.emqx.com/en/blog/migrate-your-business-from-gcp-iot-core-01)
+- Part2: [Enable TLS/SSL over MQTT to Secure Your Connection](https://www.emqx.com/en/blog/migrate-your-business-from-gcp-iot-core-02)
+- Part3: [Use JSON Web Token (JWT) to Verify Device Credentials](https://www.emqx.com/en/blog/migrate-your-business-from-gcp-iot-core-03)
+- Part4: [VPC Network Peering and Transfer Data to GCP](https://www.emqx.com/en/blog/migrate-your-business-from-gcp-iot-core-04)
+- Part5: [Bridge Data to GCP Pub/Sub](https://www.emqx.com/en/blog/migrate-your-business-from-gcp-iot-core-05)
+
+Large amounts of global enterprise customers, spanning automotive, IIoT, transportation & logistics, energy & utilities, and more, have proven EMQX's scalability and reliability with massive deployments of mission-critical IoT applications on GCP by using EMQX. For existing Google Cloud IoT Core customers, EMQX will be your perfect alternative which offers outstanding product capabilities and minimizes the possible impact on your current running systems.
+
+Make the right decisions and [get in touch](https://www.emqx.com/en/contact?product=cloud) with our dedicated IoT experts about your choices after Google Cloud IoT Core. We will assist you in starting your ideal replacement in no time.
 
 
 
