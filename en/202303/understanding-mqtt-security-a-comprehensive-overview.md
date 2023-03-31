@@ -40,7 +40,7 @@ On the other hand, the security mechanism at the application layer is usually th
 
 All in all, MQTT security is a crucial factor in protecting IoT systems from various attacks and threats. In this article, we have provided a comprehensive overview of MQTT security, covering the importance of MQTT security and some common security challenges that developers and system administrators may encounter. Also, as we mentioned in the article, there’re many measures we can implement with MQTT to enhance the security of your IoT systems devices. By reading the following articles of this series, we believe that you are able to adopt a more comprehensive and proactive approach to MQTT security and ensure the long-term stability and reliability of your systems.
 
-In the coming article, we will introduce the **password-based authentication** method. Please stay tuned.
+In the coming article, we will introduce the [**password-based authentication**](https://www.emqx.com/en/blog/securing-mqtt-with-username-and-password-authentication) method. Please stay tuned.
 
 
 <section class="promotion">
