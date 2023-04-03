@@ -44,7 +44,7 @@
 
 ### 一、EMQX Cloud 相关配置
 
-1. 通过[快速入门](https://docs.emqx.com/zh/cloud/latest/quick_start/create_free_trial.html)创建部署 EMQX Cloud
+1. 通过[快速入门](https://docs.emqx.com/zh/cloud/latest/create/overview.html)创建部署 EMQX Cloud
 
 2. 开通[内网 SLB](https://docs.emqx.com/zh/cloud/latest/vas/intranet-lb.html)，获取内网连接地址
 

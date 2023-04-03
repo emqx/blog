@@ -18,7 +18,7 @@ For more information, please go to the [EMQX Cloud website ](https://www.emqx.co
 
 ### Create EMQX Cluster
 
-[Create a GCP deployment](https://docs.emqx.com/en/cloud/latest/quick_start/create_free_trial.html) of EMQX Cloud, other options default.
+[Create a GCP deployment](https://docs.emqx.com/en/cloud/latest/create/overview.html) of EMQX Cloud, other options default.
 
 ![Create a GCP deployment](https://assets.emqx.com/images/3cb826c937ec34673ce17e1e17ec6852.png)
 
