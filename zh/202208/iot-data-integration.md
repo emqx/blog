@@ -12,7 +12,7 @@ EMQX 5.0 将 Webhook、数据存储/桥接插件整合到一起，使用统一�
 
 ## 什么是数据集成
 
-EMQX 数据集成即 4.x 版本中的[规则引擎](https://www.emqx.com/zh/solutions/iot-rule-engine)与桥接功能的组合。它是在发布订阅模型基础之上的数据处理与分发组件，通过简单、可视化的配置，即可将**消息流**、**设备事件**与 Kafka、RabbitMQ 等消息中间件以及各类 SQL / NoSQL / 时序数据库等数据系统集成。
+EMQX 数据集成即 4.x 版本中的[规则引擎](https://www.emqx.com/zh/solutions/mqtt-data-processing)与桥接功能的组合。它是在发布订阅模型基础之上的数据处理与分发组件，通过简单、可视化的配置，即可将**消息流**、**设备事件**与 Kafka、RabbitMQ 等消息中间件以及各类 SQL / NoSQL / 时序数据库等数据系统集成。
 
 EMQX 实时、简洁、高效的数据集成方案主要通过**规则**与**数据桥接**两个功能实现。
 

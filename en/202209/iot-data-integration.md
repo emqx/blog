@@ -12,7 +12,7 @@ This article will demonstrate the value and application of this important capabi
 
 ## What is data integration?
 
-EMQX data integration is a combination of the [rules engine](https://www.emqx.com/en/solutions/iot-rule-engine) and data bridge features introduced in version 4.x. It is a data processing and distribution component based on the publish/subscribe model. Through simple, visual configuration, you can integrate **message flows** and **device events** with message brokers such as Kafka, RabbitMQ, and various SQL / NoSQL / chronological databases and other data systems.
+EMQX data integration is a combination of the [rules engine](https://www.emqx.com/en/solutions/mqtt-data-processing) and data bridge features introduced in version 4.x. It is a data processing and distribution component based on the publish/subscribe model. Through simple, visual configuration, you can integrate **message flows** and **device events** with message brokers such as Kafka, RabbitMQ, and various SQL / NoSQL / chronological databases and other data systems.
 
 EMQX's simple, efficient, real-time data integration solution is achieved through two main features: **Rules** and **Data Bridges**.
 

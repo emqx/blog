@@ -1,6 +1,6 @@
 [Node.js](https://nodejs.org/en/) is a JavaScript runtime built on Chrome's V8 JavaScript engine. Before the emergence of Node.js, JavaScript was usually used as a client-side programming language, and the programs are written in JavaScript often ran on the user's browser. The appearance of node.js enables JavaScript to be used for server-side programming.
 
-[MQTT](https://mqtt.org/) is a lightweight [IoT messaging](https://www.emqx.com/en/solutions/reliable-iot-messaging) protocol based on the publish/subscribe model. It can provide real-time and reliable messaging services for networked devices with very little code and bandwidth. It is widely used in the industries such as the IoT, mobile Internet, smart hardware, [Internet of Vehicles](https://www.emqx.com/en/use-cases/internet-of-vehicles) and power energy.
+[MQTT](https://mqtt.org/) is a lightweight [IoT messaging](https://www.emqx.com/en/solutions/reliable-mqtt-messaging) protocol based on the publish/subscribe model. It can provide real-time and reliable messaging services for networked devices with very little code and bandwidth. It is widely used in the industries such as the IoT, mobile Internet, smart hardware, [Internet of Vehicles](https://www.emqx.com/en/use-cases/internet-of-vehicles) and power energy.
 
 This article mainly introduces how to use MQTT in the Node.js project to realize the functions of connecting, subscribing, unsubscribing, publishing and receiving messages between the client and the [MQTT broker](https://www.emqx.io/).
 
