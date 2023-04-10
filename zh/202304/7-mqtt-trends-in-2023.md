@@ -29,7 +29,7 @@ QUIC（Quick UDP Internet Connections）是由 Google 开发的一种新的传�
 
 [MQTT over QUIC](https://www.emqx.com/zh/blog/mqtt-over-quic) 是自 2017 年 MQTT 5.0 规范发布以来 MQTT 协议中最具创新性的进展。凭借多路复用、更快的连接建立和迁移等优势特性，其具有成为下一代 MQTT 协议标准的潜力。
 
-MQTT 5.0 定义了三种传输类型：TCP、TLS 和 WebSocket。在物联网安全最佳实践中，MQTT over TLS/SSL 广泛用于生产环境以保护客户端和 Broker 之间的通信。然而它速度慢、延迟高，需要 7 个 RTT，即 TCP 3 次握手以及 TLS 4 次握手才能建立新的 MQTT 连接。
+MQTT 5.0 定义了三种传输类型：TCP、TLS 和 WebSocket。在物联网安全最佳实践中，MQTT over TLS/SSL 广泛用于生产环境以保护客户端和 Broker 之间的通信。然而它速度慢、延迟高，需要 3.5 个 RTT，即 TCP 3 次握手以及 TLS 4 次握手才能建立新的 [MQTT 连接](https://www.emqx.com/zh/blog/how-to-set-parameters-when-establishing-an-mqtt-connection)。
 
 与 MQTT over TLS/SSL 相比，MQTT over QUIC 更快且延迟更低，在初次建立连接时仅需 1 RTT，并可以利用 0 RTT 连接恢复的特性来加速重连。QUIC 协议栈可以针对各种用例进行定制，例如在不稳定网络环境下，或是客户端到服务器更低延迟通信的场景。它能够在诸如移动网络下的车联网（IoV）以及要求极低时延的工业物联网（IIoT）场景下发挥重要作用，并有效提升其使用体验。
 
