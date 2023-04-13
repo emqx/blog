@@ -109,7 +109,7 @@ An MQTT Broker cluster is a system that distributes the workload of connecting a
 
 Clients can interact with the cluster as a unified entity, without being aware of the internal workings or any changes in the number of nodes. The cluster handles connections and also publishes and subscribes messages just like a single node.
 
-![MQTT load balance](https://assets.emqx.com/images/e747649176d8517c3092b4f2f9d9450a.png)
+![MQTT load balance](https://assets.emqx.com/images/adde22edec17a94cc8f8ec96d82e79d0.png)
 
 ### Why Do We Need MQTT Broker Cluster?
 

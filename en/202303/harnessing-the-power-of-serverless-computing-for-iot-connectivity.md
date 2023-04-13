@@ -30,14 +30,6 @@ Managing infrastructure can be overwhelming, but at [EMQ](https://www.emqx.com/e
 
 Our team of experts is dedicated to delivering the latest features and technologies, ensuring that our clients can access the best tools for their IoT applications. Our dedicated, 24/7 support team is always ready to address any concerns you may have.
 
-**Join Us in the Future of [IoT Connectivity](https://www.emqx.com/en/solutions/iot-device-connectivity) with EMQX Cloud Serverless**
-
-[![Serverless MQTT](https://assets.emqx.com/images/b9ba1687a0b2e82c139efab64946b43f.png)](https://www.emqx.com/en/events/simplify-scale-your-iot-projects-with-serverless-mqtt)
-
-**Click** [**here**](https://www.emqx.com/en/events/simplify-scale-your-iot-projects-with-serverless-mqtt) **to attend our Serverless MQTT webinar, we’ll cover everything you need to know about this revolutionary technology and how it can help your business. Don't miss out on this opportunity to stay ahead of the curve and** [**register now**](https://www.emqx.com/en/events/simplify-scale-your-iot-projects-with-serverless-mqtt)**!**
-
- 
-
 At EMQ, we're committed to empowering every developer to achieve their IoT goals.
 
  

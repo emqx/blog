@@ -8,7 +8,6 @@
 - [MQTT and Connectivity](#mqtt-and-connectivity)
 - [Security](#security)
 - [Authentication and Authorization](#authentication-and-authorization)
-- [Rule Engine](#rule-engine)
 - [Data Integration](#data-integration)
 - [Operability and Observability](#operability-and-observability)
 - [Cloud-Native and Kubernetes](#cloud-native-and-kubernetes)
@@ -19,15 +18,15 @@
 
 ## Introduction
 
-MQTT (Message Queuing Telemetry Transport) is a de facto standard messaging protocol for the Internet of Things (IoT). 
+MQTT (Message Queuing Telemetry Transport) is a de facto standard messaging protocol for the Internet of Things (IoT). With the growth of the Internet of Things (IoT), MQTT brokers are becoming vital in connecting IoT devices and moving data between connected devices and cloud services.
 
-With the growth of the Internet of Things (IoT), MQTT brokers are becoming vital in connecting IoT devices and moving data between connected devices and cloud services.
+[EMQX](https://www.emqx.io/) and [Mosquitto](https://mosquitto.org/) are two of the most popular open-source MQTT brokers. EMQX is a highly scalable, distributed MQTT broker with clustering support. Mosquitto is a lightweight MQTT broker with a small footprint and a single-threaded architecture.
 
-[EMQX](https://www.emqx.io/) and [Mosquitto](https://mosquitto.org/) are two of the most popular open-source MQTT brokers. This blog post will provide an in-depth comparison of EMQX and Mosquitto as MQTT brokers in 2023.
+This blog post will provide an in-depth comparison of the two brokers in 2023.
 
 ## Mosquitto Overview
 
-The Mosquitto project was initially developed by IBM and Eurotech in 2013 and later donated to the Eclipse Foundation in 2016, licensed under the Eclipse Public License (EPL/EDL license). As one of the world's most widely used MQTT brokers, Mosquitto has over 7k GitHub Stars as of March 2023.
+The Mosquitto project was initially developed by Roger Light in 2013 and later donated to the Eclipse Foundation, licensed under the Eclipse Public License (EPL/EDL license). As one of the world's most widely used MQTT brokers, Mosquitto has over 7k GitHub Stars as of March 2023.
 
 Mosquitto is written in C/C++ and uses a single-threaded architecture. Mosquitto implements MQTT protocol versions 5.0, 3.1.1, and 3.1 and supports SSL/TLS and WebSockets. Its lightweight design makes Mosquitto suitable for deployment on embedded devices or servers with limited resources.
 
@@ -49,7 +48,7 @@ Mosquitto is written in C/C++ and uses a single-threaded architecture. Mosquitto
 
 ## EMQX Overview
 
-The EMQX project was launched on GitHub in 2012 and is licensed under Apache version 2.0. EMQX is now the world's most scalable MQTT messaging server and is widely used in mission-critical business scenarios such as the IoT, Industrial IoT (IIoT), and Internet of Vehicles (IoV).
+The EMQX project was launched on GitHub in 2012 and is licensed under Apache version 2.0. EMQX is now the world's most scalable MQTT messaging server that supports advanced features such as MQTT 5.0, MQTT-SN, and MQTT over QUIC. It is widely used in business-critical applications in IoT, Industrial IoT (IIoT), and the Internet of Vehicles (IoV).
 
 EMQX is written in Erlang/OTP, a programming language for building massively scalable soft real-time systems. Unlike Mosquitto, EMQX has adopted a masterless distributed architecture from its inception to achieve high availability and horizontal scalability. EMQX 5.0, the latest version, scales to establish 100 million concurrent MQTT connections with a single cluster of 23 nodes.
 
@@ -81,6 +80,8 @@ See: [Reaching 100M MQTT connections with EMQX 5.0](https://www.emqx.com/en/blog
 | :---------------------------------- | :------------------------------------------ | :------------------------------------------------------- |
 | **GitHub Project**                  | [EMQX GitHub](https://github.com/emqx/emqx) | [Mosquitto GitHub](https://github.com/eclipse/mosquitto) |
 | **Project Created**                 | 2012                                        | 2013                                                     |
+| **License**                         | Apache Version 2.0                          | EPL/EDL License                                          |
+| **Programming Language**            | Erlang                                      | C                                                        |
 | **Latest Release**                  | v5.0.21 (March 2023)                        | 2.0.15 (Aug 2022)                                        |
 | **GitHub Stars**                    | 11.4k                                       | 7.2 k                                                    |
 | **GitHub Forks**                    | 2k                                          | 2.1k                                                     |
@@ -91,15 +92,13 @@ See: [Reaching 100M MQTT connections with EMQX 5.0](https://www.emqx.com/en/blog
 | **GitHub PRs**                      | 6000+                                       | 600                                                      |
 | **GitHub Contributors**             | 100+                                        | 110+                                                     |
 
+
+
 <center>Community and Popularity (Mar 24, 2023)</center>
-
-<br>
-
-> **Note:** The Mosquitto project was created by Roger Light in 2008 and later acquired by Eclipse Foundation in 2013.
 
 ## Scalability and Performance
 
-Mosquitto, as a lightweight MQTT broker, does not support clustering architecture but has excellent single-node performance. A server with a small resource footprint can support 10k concurrent MQTT connections.
+Mosquitto, as a lightweight MQTT broker, does not support clustering architecture but has excellent single-node performance. A server with a small resource footprint can support 100k concurrent MQTT connections.
 
 EMQX, as a highly scalable distributed MQTT messaging broker, can support millions of concurrent connections on a single node and 100 million connections on a single cluster, but with much higher CPU and memory usage.
 
@@ -173,26 +172,14 @@ In addition, EMQX provides flapping detect and blocklist features, enabling user
 | **Flapping Detect**                  | ✅        | ❌             |                                                              |
 | **Block List**                       | ✅        | ❌             |                                                              |
 
-## Rule Engine
-
-EMQX has a built-in SQL-based rule engine to help extract, filter, enrich, and transform MQTT messages in real-time within the broker.
-
-|                        | **EMQX**               | **Mosquitto** | **Notes and Links**                                          |
-| :--------------------- | :--------------------- | :------------ | :----------------------------------------------------------- |
-| **Rule Engine**        | ✅                      | ❌             | [Rule Engine](https://www.emqx.io/docs/en/v5.0/data-integration/rules.html) |
-| **Built-in Functions** | ✅                      | ❌             | [Built-in SQL Functions](https://www.emqx.io/docs/en/v5.0/data-integration/rule-sql-builtin-functions.html#built-in-sql-functions) |
-| **JQ Functions**       | ✅                      | ❌             | [JQ functions](https://www.emqx.io/docs/en/v5.0/data-integration/rule-sql-jq.html#jq-functions) |
-| **Event Trigger**      | ✅                      | ❌             | [Rule Engine](https://www.emqx.io/docs/en/v5.0/data-integration/rules.html#rule-engine) |
-| **JSON Codec**         | ✅                      | ❌             |                                                              |
-| **Avro Codec**         | ✅(Enterprise Edition)  | ❌             | [Custom codec example - Avro](https://docs.emqx.com/en/enterprise/v4.4/rule/schema-registry-examp-avro.html) |
-| **ProtoBuf Codec**     | ✅(Enterprise Edition)  | ❌             | [Custom codec example - Protobuf](https://docs.emqx.com/en/enterprise/v4.4/rule/schema-registry-examp-protobuf.html) |
-| **Schema Registry**    | ✅ (Enterprise Edition) | ❌             | [Introduction to Schema Registry](https://docs.emqx.com/en/enterprise/v4.4/rule/schema-registry.html) |
 
 ## Data Integration
 
 As a lightweight broker, Mosquitto does not support data integration. Users can write code to consume MQTT messages from Mosquitto and ingest them into external databases or cloud services.
 
-EMQX, especially the Enterprise Edition, can seamlessly integrate with Kafka, databases, and cloud services using the built-in rule engine and out-of-the-box data bridge.
+EMQX has a built-in SQL-based rule engine to help extract, filter, enrich, and transform MQTT messages in real-time within the broker.
+
+The Enterprise Edition of EMQX can seamlessly integrate with Kafka, databases, and cloud services using the rule engine and out-of-the-box data bridges.
 
 |                     | **EMQX**               | **Mosquitto** | **Notes and Links**                                          |
 | :------------------ | :--------------------- | :------------ | :----------------------------------------------------------- |
@@ -255,7 +242,7 @@ EMQX Kubernetes Operator: [https://github.com/emqx/emqx-operator](https://github
 
 ## Bridging Mosquitto to EMQX
 
-Although EMQX and Mosquitto are two very different MQTT brokers, they can work perfectly with the MQTT bridge approach.
+Although EMQX and Mosquitto are two very different MQTT brokers, they can work perfectly with the MQTT bridging approach.
 
 We can deploy Mosquitto on embedded hardware or gateways at the IoT edge, and then aggregate and ingest IoT data into a large-scale EMQX cluster in the cloud via an MQTT bridge.
 
@@ -268,9 +255,9 @@ See [Bridging Mosquitto MQTT Messages to EMQX](https://www.emqx.com/en/blog/brid
 
 The comparison above shows that EMQX and Mosquitto are popular MQTT brokers catering to different needs and use cases.
 
-Mosquitto, as a single-threaded lightweight MQTT Broker, is more suitable for deployment in embedded hardware, industrial gateways, and small servers for IoT edge.
+Mosquitto, as a single-threaded lightweight MQTT Broker, is more suitable for deployment on embedded hardware, industrial gateways, and small servers for IoT edge.
 
-EMQX is a highly scalable, distributed MQTT server with clustering architecture supporting high availability and horizontal scalability. It is more suitable for deployment in the cloud, providing mission-critical services for large-scale applications in IoT, IIoT, and connected cars.
+EMQX is a highly scalable, distributed MQTT server supporting high availability and horizontal scalability. It is more suitable for cloud deployment, large-scale IoT, IIoT, and connected car applications.
 
 In short, you can choose Mosquitto for embedded hardware and IoT edge deployments and use EMQX as a massively scalable, highly available MQTT messaging service in the cloud.
 
