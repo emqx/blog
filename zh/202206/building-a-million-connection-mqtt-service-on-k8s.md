@@ -8,7 +8,7 @@ K8s Operator 是一种特定于应用的控制器，能持续监听 K8s 资源�
 
 ## 什么是 EMQX Operator
 
-[EMQX](https://www.emqx.com/zh/products/emqx) 是基于 Erlang/OTP 平台开发的云原生分布式 MQTT 消息服务器。随着云原生理念的深入，以及 K8s 和 Operator 概念的普及，我们开发了 [EMQX Operator](https://github.com/emqx/emqx-operator) ( https://github.com/emqx/emqx-operator)，它可以在 Kubernetes 的环境上快速创建和管理 EMQX 集群，实现对 EMQX 生命周期的管理，大大简化部署和管理 EMQX 集群的流程。其主要有以下功能优势:
+[EMQX](https://www.emqx.com/zh/products/emqx) 是基于 Erlang/OTP 平台开发的云原生分布式 MQTT 消息服务器。随着云原生理念的深入，以及 K8s 和 Operator 概念的普及，我们开发了 [EMQX Operator](https://github.com/emqx/emqx-operator)，它可以在 Kubernetes 的环境上快速创建和管理 EMQX 集群，实现对 EMQX 生命周期的管理，大大简化部署和管理 EMQX 集群的流程。其主要有以下功能优势:
 
 - 降低 EMQX 在 K8s 环境中部署成本
 - 提供对持久化数据备份和恢复的基础能力
