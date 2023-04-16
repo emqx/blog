@@ -6,7 +6,6 @@
 - [Community and Popularity](#community-and-popularity)
 - [Features and Capabilities](#features-and-capabilities)
 - [Scalability and Performance](#scalability-and-performance)
-- [Rule Engine](#rule-engine)
 - [Data Integrations (Out of the box)](#data-integrations-out-of-the-box)
 - [Extensibility](#extensibility)
 - [Operability and Observability](#operability-and-observability)
