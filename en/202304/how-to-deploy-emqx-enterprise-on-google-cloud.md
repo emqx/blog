@@ -197,6 +197,11 @@ In addition to manual installation, you can also deploy EMQX Enterprise on GCP t
 
 In the following blogs, we will introduce how to migrate devices from GCP IoT Core to EMQX Enterprise, and how to seamlessly migrate IoT Core services through the GCP Pub/Sub integration of EMQX Enterprise.
 
+## Other Articles in This Series
+
+- [3-Step Guide for IoT Core Migration 02 | Migrating Devices from GCP IoT Core to EMQX Enterprise](https://www.emqx.com/en/blog/migrating-devices-from-gcp-iot-core-to-emqx-enterprise)
+- [3-Step Guide for IoT Core Migration 03 | Ingesting IoT Data From EMQX Enterprise to GCP Pub/Sub](https://www.emqx.com/en/blog/ingesting-iot-data-from-emqx-enterprise-to-gcp-pub-sub)
+
 
 
 <section class="promotion">
