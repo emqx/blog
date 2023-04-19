@@ -136,7 +136,7 @@ For VerneMQ, few benchmark reports are available on the scalability and performa
 | **Scalability**                              | 4M MQTT connections per node100M MQTT connections per cluster | **?**                         | [Reaching 100M MQTT connections with EMQX 5.0](https://www.emqx.com/en/blog/reaching-100m-mqtt-connections-with-emqx-5-0) |
 | **Performance**                              | 4 million QoS0 MQTT msgs/sec per node800k QoS1 msgs/sec200k QoS2 msgs/sec | **?**                         |                                                              |
 | **Latency**                                  | 1-5 millisecond                                              | **?**                         |                                                              |
-| **Reliability**                              | Message Persistence in RocksDB and external Database         | Message Persistenc in LevelDB | [Highly Reliable MQTT Data Persistence Based on RocksDB](https://www.emqx.com/en/blog/mqtt-persistence-based-on-rocksdb) <br>[VerneMQ Storage](https://docs.vernemq.com/configuring-vernemq/storage) |
+| **Reliability**                              | Message Persistence in RocksDB and external Database         | Message Persistence in LevelDB | [Highly Reliable MQTT Data Persistence Based on RocksDB](https://www.emqx.com/en/blog/mqtt-persistence-based-on-rocksdb) <br>[VerneMQ Storage](https://docs.vernemq.com/configuring-vernemq/storage) |
 | **Clustering**                               | 20+ nodes of cluster                                         | **?**                         | [EMQX Cluster Scalability](https://www.emqx.io/docs/en/v5.0/deploy/cluster/db.html#node-roles)<br>[Vernemq - Cluster](https://docs.vernemq.com/vernemq-clustering/introduction) |
 | **Elastic and Resilient scaling at runtime** | ✅                                                            | **?**                         |                                                              |
 | **Auto Clustering**                          | ✅                                                            | **?**                         | [EMQX Node Discovery and Autocluster](https://www.emqx.io/docs/en/v5.0/deploy/cluster/intro.html#emqx-node-discovery-and-autocluster) |
@@ -157,26 +157,26 @@ The Enterprise Edition of EMQX can seamlessly integrate with Kafka, databases, a
 | **Rule Engine**       | ✅        | ❌           | [Introduction to Data Integration](https://www.emqx.io/docs/en/v5.0/data-integration/introduction.html) |
 | **Message Codec**     | ✅        | ❌           | [Introduction to Schema Registry](https://docs.emqx.com/en/enterprise/v4.4/rule/schema-registry.html) |
 | **Data Bridge**       | ✅        | ❌           | [Data Bridges](https://www.emqx.io/docs/en/v5.0/data-integration/data-bridges.html) |
-| **MQTT Bridge**       | ✅        | ✅           | [Bridge Data into MQTT Broker](https://docs.emqx.com/en/enterprise/v5.0/data-integration/data-bridge-mqtt.html) [MQTT Bridge](https://docs.vernemq.com/configuring-vernemq/bridge) |
-| **Webhook**           | ✅        | ✅           | [Ingest Data into Webhook](https://docs.emqx.com/en/enterprise/v5.0/data-integration/data-bridge-webhook.html) [Webhooks](https://docs.vernemq.com/plugin-development/webhookplugins) |
-| **Kafka/Confluent**   | ✅        | **?**       | [Bridge data to Kafka](https://docs.emqx.com/en/enterprise/v4.4/rule/bridge_kafka.html)<br>[GitHub - crisrise/vmq_kafka: A VerneMQ plugin that sends all published messages to Apache Kafka](https://github.com/crisrise/vmq_kafka) |
-| **Azure Event Hubs**  | ✅        | ❌           | [Bridge data to Kafka](https://docs.emqx.com/en/enterprise/v4.4/rule/bridge_kafka.html) |
+| **MQTT Bridge**       | ✅        | ✅           | [Bridge Data into MQTT Broker](https://docs.emqx.com/en/enterprise/v5.0/data-integration/data-bridge-mqtt.html)<br>[MQTT Bridge](https://docs.vernemq.com/configuring-vernemq/bridge) |
+| **Webhook**           | ✅        | ✅           | [Ingest Data into Webhook](https://docs.emqx.com/en/enterprise/v5.0/data-integration/data-bridge-webhook.html)<br>[Webhooks](https://docs.vernemq.com/plugin-development/webhookplugins) |
+| **Kafka/Confluent**   | ✅        | **?**       | [Stream Data into Kafka](https://docs.emqx.com/en/enterprise/v4.4/rule/bridge_kafka.html)<br>[GitHub - crisrise/vmq_kafka: A VerneMQ plugin that sends all published messages to Apache Kafka](https://github.com/crisrise/vmq_kafka) |
+| **Azure Event Hubs**  | ✅        | ❌           | [Stream Data into Kafka](https://docs.emqx.com/en/enterprise/v4.4/rule/bridge_kafka.html) |
 | **Apache Pulsar**     | ✅        | ❌           | [Ingest Data into Pulsar](https://docs.emqx.com/en/enterprise/v4.4/rule/bridge_pulsar.html) |
-| **Apache RocketMQ**   | ✅        | ❌           | [EMQX RocketMQ](https://docs.emqx.com/en/enterprise/v4.4/rule/bridge_rocketmq.html) |
-| **RabbitMQ**          | ✅        | ❌           | [Bridge data to RabbitMQ](https://docs.emqx.com/en/enterprise/v4.4/rule/bridge_rabbitmq.html) |
-| **MySQL**             | ✅        | ❌           | [EMQX MySQL](https://docs.emqx.com/en/enterprise/v4.4/rule/backend_mysql.html) |
+| **Apache RocketMQ**   | ✅        | ❌           | [Ingest Data into RocketMQ](https://docs.emqx.com/en/enterprise/v4.4/rule/bridge_rocketmq.html) |
+| **RabbitMQ**          | ✅        | ❌           | [Ingest Data into RabbitMQ](https://docs.emqx.com/en/enterprise/v4.4/rule/bridge_rabbitmq.html) |
+| **MySQL**             | ✅        | ❌           | [Ingest Data into MySQL](https://docs.emqx.com/en/enterprise/v4.4/rule/backend_mysql.html) |
 | **PostgreSQL**        | ✅        | ❌           | [Ingest Data into PostgreSQL](https://docs.emqx.com/en/enterprise/v4.4/rule/backend_pgsql.html) |
 | **SQL Server**        | ✅        | ❌           | [Ingest Data into SQL Server](https://docs.emqx.com/en/enterprise/v4.4/rule/backend_sqlserver.html) |
-| **MongoDB**           | ✅        | ❌           | [Save data to MongoDB](https://docs.emqx.com/en/enterprise/v4.4/rule/backend_mongodb.html) |
+| **MongoDB**           | ✅        | ❌           | [Ingest Data into MongoDB](https://docs.emqx.com/en/enterprise/v4.4/rule/backend_mongodb.html) |
 | **Redis**             | ✅        | ❌           | [Ingest Data into Redis](https://docs.emqx.com/en/enterprise/v4.4/rule/backend_redis.html) |
 | **Cassandra**         | ✅        | ❌           | [Ingest Data into Cassandra](https://docs.emqx.com/en/enterprise/v4.4/rule/backend_cassandra.html) |
 | **AWS DynamoDB**      | ✅        | ❌           | [Ingest Data into DynamoDB](https://docs.emqx.com/en/enterprise/v4.4/rule/backend_dynamodb.html) |
 | **ClickHouse**        | ✅        | ❌           | [Ingest Data into ClickHouse](https://docs.emqx.com/en/enterprise/v4.4/rule/backend_clickhouse.html) |
 | **OpenTSDB**          | ✅        | ❌           | [Ingest Data into OpenTSDB](https://docs.emqx.com/en/enterprise/v4.4/rule/backend_opentsdb.html) |
 | **InfluxDB**          | ✅        | ❌           | [Ingest Data into InfluxDB](https://docs.emqx.com/en/enterprise/v4.4/rule/backend_influxdb.html) |
-| **TimeScaleDB**       | ✅        | ❌           | [Save data to TimescaleDB](https://docs.emqx.com/en/enterprise/v4.4/rule/backend_timescaledb.html) |
-| **Oracle DB**         | ✅        | ❌           | [Save data to TimescaleDB](https://docs.emqx.com/en/enterprise/v4.4/rule/backend_timescaledb.html) |
-| **HStreamDB**         | ✅        | ❌           | [Data to HStreamDB](https://docs.emqx.com/en/enterprise/v4.4/rule/backend_hstreamdb.html) |
+| **TimeScaleDB**       | ✅        | ❌           | [Ingest Data into TimescaleDB](https://docs.emqx.com/en/enterprise/v4.4/rule/backend_timescaledb.html) |
+| **Oracle DB**         | ✅        | ❌           | [Ingest Data into Oracle](https://docs.emqx.com/en/enterprise/v4.4/rule/backend_oracle.html) |
+| **HStreamDB**         | ✅        | ❌           | [Stream Data into HStreamDB](https://docs.emqx.com/en/enterprise/v4.4/rule/backend_hstreamdb.html) |
 
 ## Extensibility
 
