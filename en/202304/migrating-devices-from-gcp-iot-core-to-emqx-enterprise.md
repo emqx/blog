@@ -324,6 +324,10 @@ server.listen(3000, () => {
 });
 ```
 
+## Other Articles in This Series
+
+- [3-Step Guide for IoT Core Migration 01 | How to Deploy EMQX Enterprise on Google Cloud](https://www.emqx.com/en/blog/how-to-deploy-emqx-enterprise-on-google-cloud)
+- [3-Step Guide for IoT Core Migration 03 | Ingesting IoT Data From EMQX Enterprise to GCP Pub/Sub](https://www.emqx.com/en/blog/ingesting-iot-data-from-emqx-enterprise-to-gcp-pub-sub)
  
 
 <section class="promotion">
