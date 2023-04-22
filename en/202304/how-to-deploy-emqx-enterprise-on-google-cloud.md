@@ -21,7 +21,7 @@ To migrate your business from IoT Core to EMQX Enterprise, you basically have th
 
 To start with, this article will guide you through the process of deploying EMQX Enterprise on GCP and then test the publishing and subscription of the migrated services.
 
-![GCP IoT Core Migration](https://static.emqx.com/_nuxt/img/architecture.53fed56.png)
+![GCP IoT Core Migration](https://assets.emqx.com/images/b6f165320268d0442e7d8f54dcd1396d.png)
 
 ## Create a Virtual Machine Instance on GCP
 

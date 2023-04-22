@@ -30,7 +30,7 @@ The Mosquitto project was initially developed by Roger Light in 2013 and later d
 
 Mosquitto is written in C/C++ and uses a single-threaded architecture. Mosquitto implements MQTT protocol versions 5.0, 3.1.1, and 3.1 and supports SSL/TLS and WebSockets. Its lightweight design makes Mosquitto suitable for deployment on embedded devices or servers with limited resources.
 
-![Mosquitto MQTT Broker](https://assets.emqx.com/images/60243f02373956439d68b2008a8d0959.png)
+![Mosquitto](https://assets.emqx.com/images/82027ea30acf44e5e1ba3e0a68f8bd4f.png)
 
 **Pros:**
 
