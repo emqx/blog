@@ -27,7 +27,7 @@ Mosquitto’s design is straightforward and clean. It runs as a single-threaded 
 
 Although simple, this architectural design restricts Mosquitto from using multi-core CPUs to connect more concurrent MQTT clients. At the same time, latency will increase as throughput increases.
 
-![Mosquitto](https://assets.emqx.com/images/60243f02373956439d68b2008a8d0959.png)
+![Mosquitto](https://assets.emqx.com/images/82027ea30acf44e5e1ba3e0a68f8bd4f.png)
 
 **Pros:**
 
@@ -121,11 +121,13 @@ NanoMQ, a modern designed MQTT broker for edge computing, continuously evolves t
 
 Mosquitto, on the other hand, targets traditional embedded scenarios, which means it is more resource-friendly and consumes less memory and CPU. Therefore, Mosquitto is ideal for IoT sensors and devices with low processing power, while NanoMQ is suitable for high-performance gateways and servers. Additionally, Mosquitto, as an open-source project with a long legacy, assures stability; it is the best fit when users only have limited performance and feature requests and a swift project development cycle. 
 
-|                                                              | **Mosquitto**                                                | **NanoMQ**                                                   | **Notes and Links**                               |
-| :----------------------------------------------------------- | :----------------------------------------------------------- | :----------------------------------------------------------- | :------------------------------------------------ |
-| **Scalability**                                              | 160k                                                         | 160k MQTT connections per node                               |                                                   |
-| **Performance**                                              | Up to 120k QoS0 MQTT msgs/sec per node<br>80k QoS1 msgs/sec<br>40k QoS2 msgs/sec | Up to 1 million+ QoS0 MQTT msgs/sec per node<br>800k QoS1 msgs/sec<br>400k QoS2 msgs/sec |                                                   |
-| **Latency**                                                  | 1~500 millisecond                                            | 1～10 millisecond                                            |                                                   |
+See: [Mosquitto vs NanoMQ Performance Benchmark Report](https://www.emqx.com/en/blog/open-mqtt-benchmarking-comparison-mosquitto-vs-nanomq).
+
+|                 | **Mosquitto**                                                | **NanoMQ**                                                   |
+| :-------------- | :----------------------------------------------------------- | :----------------------------------------------------------- |
+| **Scalability** | 160k                                                         | 160k MQTT connections per node                               |
+| **Performance** | Up to 120k QoS0 MQTT msgs/sec per node<br>80k QoS1 msgs/sec<br>40k QoS2 msgs/sec | Up to 1 million+ QoS0 MQTT msgs/sec per node<br>800k QoS1 msgs/sec<br>400k QoS2 msgs/sec |
+| **Latency**     | 1~500 millisecond                                            | 1～10 millisecond                                            |
 
 ## Ease of Use
 
@@ -135,16 +137,17 @@ Mosquitto uses a configuration file in a key-value format, making it configure i
 
 In contrast, NanoMQ may pose a challenge for beginners due to its more advanced configuration requirements. But for experienced users, it offers more control and customization options.
 
-|                    | **Mosquitto**                                       | **NanoMQ**   | **Notes and Links**                                          |
-| :----------------- | :-------------------------------------------------- | :----------- | :----------------------------------------------------------- |
-| **Configuration**  | Key-Value Format                                    | HOCON Format |                                                              |
-| **HTTP API**       | ❌                                                   | ✅            | [REST API](https://www.emqx.io/docs/en/v5.0/admin/api.html)  |
-| **CLI**            | ✅                                                   | ✅            | [Command Line Interface](https://www.emqx.io/docs/en/v5.0/admin/cli.html) |
-| **Dashboard**      | ❌                                                   | ❌            |                                                              |
-| **Grafana**        | ❌ | ❌          | [Integrate with Prometheus](https://www.emqx.io/docs/en/v5.0/observability/prometheus.html) |
-| **Prometheus**     | ❌                                                   | ❌            | [Integrate with Prometheus](https://www.emqx.io/docs/en/v5.0/observability/prometheus.html) |
-| **Docker**         | ✅                                                   | ✅            |                                                              |
-| **Cross Platform** | ✅                                                   | ✅            |                                                              |
+|                    | **Mosquitto**    | **NanoMQ**   | **Notes and Links**                                          |
+| :----------------- | :--------------- | :----------- | :----------------------------------------------------------- |
+| **Configuration**  | Key-Value Format | HOCON Format |                                                              |
+| **HTTP API**       | ❌                | ✅            | [REST API](https://nanomq.io/docs/en/latest/http-api/v4.html) |
+| **CLI**            | ✅                | ✅            | [Command Line Interface](https://nanomq.io/docs/en/latest/toolkit.html#client) |
+| **Dashboard**      | ❌                | ❌            |                                                              |
+| **Grafana**        | ❌                | ❌            |                                                              |
+| **Prometheus**     | ❌                | ❌            |                                                              |
+| **Docker**         | ✅                | ✅            | [NanoMQ Docker](https://hub.docker.com/r/emqx/nanomq)        |
+| **Cross Platform** | ✅                | ✅            |  
+
 
 ## Bridging to EMQX Cloud
 
