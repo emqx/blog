@@ -10,7 +10,7 @@
 
 - [How Does MQTT Benefit Connected Cars?](#how-does-mqtt-benefit-connected-cars)
 
-- [How EMQX Powers Connected Car Communication?](#how-emqx-powers-connected-car-communication)
+- [How EMQX Powers Connected Car Communication](#how-emqx-powers-connected-car-communication)
 
 - [Join Our Webinar on the Future of Connected Vehicle Services](#join-our-webinar-on-the-future-of-connected-vehicle-services)
 
@@ -87,7 +87,7 @@ Here are some potential use cases for MQTT in connected cars:
 
 > **Read our blog: [MQTT in an IoV scenario](https://www.emqx.com/en/blog/mqtt-for-internet-of-vehicles)**
 
-## How EMQX Powers Connected Car Communication?
+## How EMQX Powers Connected Car Communication
 
 [EMQX](https://www.emqx.com/en/products/emqx) provides connectivity and messaging solutions for IoT. It provides the most scalable MQTT messaging platform designed for high-performance, scalability and fault-tolerance. EMQX enables software in connected cars to communicate with each other, with edge servers, and with the cloud. It lets you move and process IoV data reliably in real-time, to easily build a secure, reliable and scalable connected car platform with innovative applications.
 

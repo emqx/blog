@@ -18,7 +18,7 @@
 
 EMQX is a highly scalable, distributed MQTT Broker for connecting millions of IoT devices to the cloud, while NanoMQ is a fast and lightweight broker designed for IoT edge.
 
-We'll compare these two brokers in the second post of the "2023 MQTT Broker Comparison" blog series.
+We'll compare these two brokers in the second post of the "[2023 MQTT Broker Comparison](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison)" blog series.
 
 ## EMQX Overview
 

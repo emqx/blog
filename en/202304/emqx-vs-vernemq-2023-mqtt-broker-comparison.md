@@ -17,7 +17,7 @@
 
 EMQX is now one of the most popular MQTT brokers in the world. While VerneMQ has not been actively developing and maintaining these years.
 
-In the fourth blog of the “2023 MQTT Broker Comparison“ series, we will briefly compare these two brokers as a memo in the history of MQTT.
+In the fourth blog of the “[2023 MQTT Broker Comparison](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison)“ series, we will briefly compare these two brokers as a memo in the history of MQTT.
 
 ## EMQX Overview
 

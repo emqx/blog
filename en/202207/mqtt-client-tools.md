@@ -6,7 +6,7 @@ We have selected seven of the most useful MQTT client tools in 2022 and listed t
 
 ## How to choose an MQTT client?
 
-MQTT client tools are commonly used to establish connections to [MQTT brokers](https://www.emqx.com/en/mqtt/public-mqtt5-broker) for subscription, message sending and receiving operations. A good MQTT client tool should have the following features.
+MQTT client tools are commonly used to establish connections to [MQTT brokers](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) for subscription, message sending and receiving operations. A good MQTT client tool should have the following features.
 
 - Support for one-way and two-way SSL authentication.
 - Support for [MQTT 5](https://www.emqx.com/en/mqtt/mqtt5) features.
