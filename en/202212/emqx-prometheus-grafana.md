@@ -62,7 +62,7 @@ After Grafana installation, we can open `http://localhost:3000` to access Grafan
 
 Install Node Exporter, **optional** if users want to monitor the system information of physical machines or VM. Node Exporter collects monitoring data of the server, such as CPU, memory, disk, network, etc.
 
-> Note: Node Exporter only supports the *nix systems
+> Note: Node Exporter only supports the **\*nix systems**, the [Windows exporter](https://github.com/prometheus-community/windows_exporter) is recommended for Windows users.
 
 It's not recommended to use Docker to install Node Exporter in this article. For the installation and use of Node Exporter, please refer to [Node Exporter Official Document](https://prometheus.io/docs/guides/node-exporter/#monitoring-linux-host-metrics-with-the-node-exporter). After the installation, we can access the monitoring data of the system host through `http://localhost:9100/metrics`. If we can access the monitoring data of the system host, it means that Node Exporter has been installed successfully.
 
