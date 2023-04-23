@@ -4,7 +4,7 @@ In this test, each MQTT client subscribed to a unique wildcard topic, which requ
 
 ## Introduction
 
-[EMQX](https://github.com/emqx/emqx/) is an open-source, highly scalable, and distributed MQTT messaging broker written in Erlang/OTP that can support millions of concurrent clients. As such, there is a need to persist and replicate various data among the cluster nodes. For example: MQTT topics and their subscribers, routing information, ACL rules, various configurations, and many more. Since its beginning, EMQX has used Mnesia as the database backend for such needs.
+[EMQX](https://github.com/emqx/emqx/) is an open-source, highly scalable, and distributed [MQTT messaging broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) written in Erlang/OTP that can support millions of concurrent clients. As such, there is a need to persist and replicate various data among the cluster nodes. For example: MQTT topics and their subscribers, routing information, ACL rules, various configurations, and many more. Since its beginning, EMQX has used Mnesia as the database backend for such needs.
 
 Mnesia is an embedded ACID distributed database that comes with Erlang/OTP. It uses a full-mesh peer-to-peer Erlang distribution for transaction coordination and replication. Because of this characteristic, it has trouble scaling horizontally: the more nodes and replicas of the date there are, the bigger is the overhead for write-transaction coordination and the bigger is the risk of split-brain scenarios.
 

@@ -5,7 +5,7 @@ EMQ officially announced the latest release of its IoT platform and MQTT broker,
 
 The latest version has been verified in [test scenarios](https://www.emqx.com/en/blog/reaching-100m-mqtt-connections-with-emqx-5-0) to scale to 100 million concurrent device connections, which is a critically important milestone for IoT designers. It also comes with plenty of exciting new features and huge performance improvements, including a more powerful rule engine, enhanced security management, Mria database extension, and much more to enhance the scalability of IoT applications.
 
-Feng Lee, Founder and CEO of EMQ, said: “EMQX 5.0 is a huge accomplishment for MQTT technology, as it is the world’s first distributed MQTT broker to support 100M connections in a single cluster! It also introduces the first implementation of MQTT over QUIC. Keeping pace with the frontier of tech advancement is critical, and we’re committed to accelerating our product development cycle to tackle the grand challenges of large-scale IoT deployments.”
+Feng Lee, Founder and CEO of EMQ, said: “EMQX 5.0 is a huge accomplishment for MQTT technology, as it is the world’s first distributed [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) to support 100M connections in a single cluster! It also introduces the first implementation of MQTT over QUIC. Keeping pace with the frontier of tech advancement is critical, and we’re committed to accelerating our product development cycle to tackle the grand challenges of large-scale IoT deployments.”
 
 During the last several years, EMQX has gained popularity among IoT companies and is used by more than 20,000 global users from over 50 countries, with more than 100 million IoT device connections supported worldwide.
 

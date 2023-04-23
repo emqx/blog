@@ -14,7 +14,7 @@ As an official Google Cloud migration partner, EMQ Technologies Inc. has brought
 
 ![Google Cloud migration partner](https://assets.emqx.com/images/b23e300b6626dcc777c8f8ea1c8da9bc.png)
 
-EMQX is the world’s most scalable MQTT Broker,  based on **open standards,100% compliance with MQTT 5.0 and 3.x standards and deep integration with GCP.**
+EMQX is the world’s most scalable [MQTT Broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison),  based on **open standards,100% compliance with MQTT 5.0 and 3.x standards and deep integration with GCP.**
 
 EMQX offers users the ability to connect any device at any scale, then move and processe IoT data anywhere in real-time. The outstanding scalability, high performance, and rich features of EMQX make it an ideal choice for Google IoT Core users:
 

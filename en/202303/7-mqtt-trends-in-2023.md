@@ -14,7 +14,7 @@
 
 Message Queuing Telemetry Transport (MQTT) is the standard messaging protocol for the Internet of Things (IoT). MQTT follows an extremely lightweight publish-subscribe messaging model, connecting IoT devices in a scalable, reliable, and efficient manner.
 
-It's been over 20 years since MQTT was invented in 1999 by IBM and 10 years since we launched one of the most popular open-source MQTT brokers, [EMQX](https://github.com/emqx/emqx), on GitHub in 2012.
+It's been over 20 years since MQTT was invented in 1999 by IBM and 10 years since we launched one of the most popular open-source [MQTT brokers](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison), [EMQX](https://github.com/emqx/emqx), on GitHub in 2012.
 
 As we move into 2023 and look forward to the years ahead, we can anticipate 7 developing trends in MQTT technology, as the use of MQTT in IoT is growing tremendously and diversely, driven by the progress of emerging technologies.
 
