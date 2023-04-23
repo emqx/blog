@@ -68,7 +68,7 @@ docker run -d --name grafana -p 3000:3000 grafana/grafana-oss
 
 如果想要监控部署 EMQX 的主机信息，可以使用 Node Exporter 来获取主机的信息。Node Exporter 用于收集服务器的监控数据，例如 CPU、内存、磁盘、网络等信息。
 
-> **注意**：Node Exporter 仅支持获取 Linux 系统的监控数据
+> **注意**：Node Exporter 仅支持获取 **\*nix （类 Unix）系统**的监控数据，Windows 用户推荐使用 [Windows exporter](https://github.com/prometheus-community/windows_exporter)。
 
 本文不建议使用 Docker 来安装 Node Exporter，具体安装和使用操作请参考 [Node Exporter 官方文档](https://prometheus.io/docs/guides/node-exporter/#monitoring-linux-host-metrics-with-the-node-exporter)。安装完成后，我们可以通过 `http://localhost:9100/metrics` 来访问 Node Exporter 的监控数据。如果可以访问到系统主机的监控数据，说明 Node Exporter 已经安装成功。
 
