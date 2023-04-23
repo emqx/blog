@@ -102,6 +102,8 @@ Mosquitto, as a lightweight MQTT broker, does not support clustering architectur
 
 EMQX, as a highly scalable distributed MQTT messaging broker, can support millions of concurrent connections on a single node and 100 million connections on a single cluster, but with much higher CPU and memory usage.
 
+See: [EMQX vs Mosquitto Performance Benchmark Report](https://www.emqx.com/en/blog/open-mqtt-benchmarking-comparison-emqx-vs-mosquitto).
+
 |                                              | **EMQX**                                                     | **Mosquitto**                                                | **Notes & Links**                                            |
 | :------------------------------------------- | :----------------------------------------------------------- | :----------------------------------------------------------- | :----------------------------------------------------------- |
 | **Scalability**                              | - 4M MQTT connections per node<br>- 100M MQTT connections per cluster | <100K MQTT connections per node                              | [Reaching 100M MQTT connections with EMQX 5.0](https://www.emqx.com/en/blog/reaching-100m-mqtt-connections-with-emqx-5-0) |
