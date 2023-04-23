@@ -1,4 +1,4 @@
-> The blog post [Open MQTT Benchmark Suite: The Ultimate Guide to MQTT Performance Testing](https://www.emqx.com/en/blog/open-mqtt-benchmark-suite-the-ultimate-guide-to-mqtt-performance-testing) introduced the Open MQTT Benchmark Suite developed by EMQ. We defined MQTT benchmark scenarios, use cases, and observation metrics in [the GitHub project](https://github.com/emqx/mqttbs). Based on the activity and popularity of the community and GitHub project, the top 4 open-source MQTT brokers in 2023 – EMQX,  Mosquitto, NanoMQ, and Vernemq, were chosen to perform the benchmark test. 
+> The blog post [Open MQTT Benchmark Suite: The Ultimate Guide to MQTT Performance Testing](https://www.emqx.com/en/blog/open-mqtt-benchmark-suite-the-ultimate-guide-to-mqtt-performance-testing) introduced the Open MQTT Benchmark Suite developed by EMQ. We defined MQTT benchmark scenarios, use cases, and observation metrics in [the GitHub project](https://github.com/emqx/mqttbs). Based on the activity and popularity of the community and GitHub project, the top 4 open-source [MQTT brokers in 2023](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) – EMQX,  Mosquitto, NanoMQ, and Vernemq, were chosen to perform the benchmark test. 
 >
 > This blog series presents the benchmark test results and aims to help you choose a suitable MQTT broker based on your needs and use cases.
 
@@ -124,11 +124,11 @@ XMeter provides a private deployment version (on-premise) and a public cloud Saa
 
 | **Latency (ms)** | **Mosquitto** | **NanoMQ** |
 | :--------------- | :------------ | :--------- |
-| p50              | 12378         | 14         |
-| p75              | 12522         | 18         |
-| p90              | 12571         | 21         |
-| p95              | 12596         | 23         |
-| p99              | 12627         | 26         |
+| p50              | 12,378        | 14         |
+| p75              | 12,522        | 18         |
+| p90              | 12,571        | 21         |
+| p95              | 12,596        | 23         |
+| p99              | 12,627        | 26         |
 
 #### Result Charts
 
@@ -159,11 +159,11 @@ XMeter provides a private deployment version (on-premise) and a public cloud Saa
 
 | **Latency (ms)** | **Mosquitto** | **NanoMQ** |
 | :--------------- | :------------ | :--------- |
-| p50              | 13138         | 2          |
-| p75              | 13281         | 3          |
-| p90              | 13423         | 4          |
-| p95              | 13526         | 5          |
-| p99              | 13736         | 21         |
+| p50              | 13,138        | 2          |
+| p75              | 13,281        | 3          |
+| p90              | 13,423        | 4          |
+| p95              | 13,526        | 5          |
+| p99              | 13,736        | 21         |
 
 #### Result Charts
 
