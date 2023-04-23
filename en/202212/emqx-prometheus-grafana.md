@@ -40,7 +40,7 @@ In the same way, we will use Docker to quickly install and use Prometheus in the
 docker pull prom/prometheus
 ```
 
-Because after the installation, we need to configure a Prometheus configuration file to specify the data source of Prometheus, alert rules, and other scrap configs. Therefore, in the tutorial after the article, we will configure the Prometheus configuration file after the configuration is completed and then start it by mounting the configuration file to the container for running.
+Because after the installation, we need to configure a Prometheus configuration file to specify the data source of Prometheus, alert rules, and other scrape configs. Therefore, in the tutorial after the article, we will configure the Prometheus configuration file after the configuration is completed and then start it by mounting the configuration file to the container for running.
 
 Users can also refer to the [Prometheus document](https://prometheus.io/docs/prometheus/latest/getting_started/) to download and use the binary package to install and run Prometheus.
 
