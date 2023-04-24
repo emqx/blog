@@ -134,6 +134,8 @@ NanoMQ has an excellent lightweight design based on NNG’s async-io and multi-t
 
 In short, both brokers have performance, scalability, and reliability strengths compared to other MQTT brokers.
 
+See: [EMQX vs NanoMQ Performance Benchmark Report](https://www.emqx.com/en/blog/open-mqtt-benchmarking-comparison-emqx-vs-nanomq).
+
 |                                              | **EMQX**                                                     | **NanoMQ**                                                   | **Notes and Links**                                          |
 | :------------------------------------------- | :----------------------------------------------------------- | :----------------------------------------------------------- | :----------------------------------------------------------- |
 | **Clustering**                               | ✅ 20+ nodes of cluster                                       | ❌                                                            | [EMQX Cluster](https://www.emqx.io/docs/en/v5.0/deploy/cluster/introduction.html) |
