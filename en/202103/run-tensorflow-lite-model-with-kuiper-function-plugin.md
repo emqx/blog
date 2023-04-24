@@ -1,4 +1,4 @@
-[EMQX Kuiper](https://docs.emqx.io/en/kuiper/latest/) is an edge lightweight IoT data analytics / streaming software which can be run at all kinds of resource constrained IoT devices.
+[EMQX Kuiper](https://ekuiper.org/docs/en/latest/) is an edge lightweight IoT data analytics / streaming software which can be run at all kinds of resource constrained IoT devices.
 
 [TensorFlow Lite](https://www.tensorflow.org/lite/guide) is a set of tools to help developers run TensorFlow models on mobile, embedded, and IoT devices. It enables on-device machine learning inference with low latency and a small binary size.
 
@@ -15,7 +15,7 @@ To integrate Kuiper with TensorFlow lite, we will develop a customized Kuiper fu
 To develop the function plugin, we need to:
 
 1. Create the plugin go file. For example, in kuiper source code, create *plugins/functions/labelImage/labelImage.go* file.
-2. Create a struct that implements [api.Function interface](https://github.com/emqx/kuiper/blob/master/xstream/api/stream.go).
+2. Create a struct that implements [api.Function interface](https://github.com/lf-edge/ekuiper/blob/master/xstream/api/stream.go).
 3. Export the struct.
 
 The key part of the implementation is the *Exec* function. The pseudo code is like:
@@ -51,7 +51,7 @@ var LabelImage = labelImage{
 }
 ```
 
-Check [this tutorial](https://github.com/emqx/kuiper/blob/master/docs/en_US/plugins/plugins_tutorial.md) for detail steps of creating Kuiper plugins. Please refer to [labelImage.go](https://github.com/emqx/kuiper/blob/master/plugins/functions/labelImage/labelImage.go) for the full source code.
+Check [this tutorial](https://github.com/lf-edge/ekuiper/blob/master/docs/en_US/plugins/plugins_tutorial.md) for detail steps of creating Kuiper plugins. Please refer to [labelImage.go](https://github.com/lf-edge/ekuiper/blob/master/plugins/functions/labelImage/labelImage.go) for the full source code.
 
 ## Build and install the plugin
 
@@ -82,7 +82,7 @@ There is a very simple [instruction](https://github.com/tensorflow/tensorflow/tr
 
 1. Install [Python 3](https://www.tensorflow.org/install/pip#1.-install-the-python-development-environment-on-your-system).
 
-2. Copy [requirements.txt](https://github.com/emqx/kuiper/blob/master/docs/en_US/plugins/functions/requirements.txt) to your location. Install required python lib: `pip3 install -r requirements.txt`. The requirements are from `tensorflow/tensorflow/tools/pip_package/setup.py` of the corresponding TensorFlow version.
+2. Copy [requirements.txt](https://github.com/lf-edge/ekuiper/blob/master/docs/en_US/plugins/functions/requirements.txt) to your location. Install required python lib: `pip3 install -r requirements.txt`. The requirements are from `tensorflow/tensorflow/tools/pip_package/setup.py` of the corresponding TensorFlow version.
 
 3. Install [Bazel](https://docs.bazel.build/versions/4.0.0/install-ubuntu.html) which is the build tool for TensorFlow.
 
@@ -133,7 +133,7 @@ Package all files and directories inside *plugins/functions/labelImage* into a z
 - LabelImage.so
 - tflite.conf
 
-Install the packaged plugin to the target system like [Install by pre-built zip](https://github.com/emqx/kuiper/blob/master/docs/en_US/plugins/functions/tensorflow_lite_tutorial.md#install-by-pre-built-zip).
+Install the packaged plugin to the target system like [Install by pre-built zip](https://github.com/lf-edge/ekuiper/blob/master/docs/en_US/plugins/functions/tensorflow_lite_tutorial.md#install-by-pre-built-zip).
 
 ## Run the plugin
 

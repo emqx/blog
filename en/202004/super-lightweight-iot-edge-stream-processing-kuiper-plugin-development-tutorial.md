@@ -51,12 +51,12 @@ require (
 )
 ```
 
-The Kuiper plugin has three types. The source code can be put into the corresponding directory. For the detailed method of plugin development: [EMQX Kuiper extension](https://github.com/emqx/kuiper/blob/master/docs/en_US/extension/overview.md). This article will take the Sink plugin as an example to introduce the process of plugin development and deployment. We will develop a basic MySql sink, for write stream output data to the MySql database.
+The Kuiper plugin has three types. The source code can be put into the corresponding directory. For the detailed method of plugin development: [EMQX Kuiper extension](https://github.com/lf-edge/ekuiper/blob/master/docs/en_US/extension/overview.md). This article will take the Sink plugin as an example to introduce the process of plugin development and deployment. We will develop a basic MySql sink, for write stream output data to the MySql database.
 
 - Create plugin project samplePlugin with the above directory structure
 - Create file mysql.go under the sinks directory
 - Edit file mysql.go for implementing the plugin
-  -  Implement [api.Sink](https://github.com/emqx/kuiper/blob/master/xstream/api/stream.go) interface
+  -  Implement [api.Sink](https://github.com/lf-edge/ekuiper/blob/master/xstream/api/stream.go) interface
   -  Export Symbol: Mysql
 - Edit go.mod, add Mysql driver module
 
@@ -185,7 +185,7 @@ From 0.3.0, Kuiper provides development docker image (`kuiper:x.x.x-dev`). Compa
 
 ### Debug and run the plugin
 
-Run Kuiper in the local or Docker, create streams and rules, set action of the rule to mysql, then users can test the customized mysql sink plugin. Please refer [Kuiper documentation](https://github.com/emqx/kuiper/blob/master/docs/en_US/getting_started.md) for the steps of creating streams and rules. The following provides a rule using the mysql plugin for reference.
+Run Kuiper in the local or Docker, create streams and rules, set action of the rule to mysql, then users can test the customized mysql sink plugin. Please refer [Kuiper documentation](https://github.com/lf-edge/ekuiper/blob/master/docs/en_US/getting_started.md) for the steps of creating streams and rules. The following provides a rule using the mysql plugin for reference.
 
 ```
 {
@@ -217,7 +217,7 @@ Please refer [Docker compile](#docker编译) for the compilation process.
 
 ### Plugin deployment 
 
-Users can use [REST API](https://github.com/emqx/kuiper/blob/master/docs/en_US/restapi/plugins.md) or [CLI](https://github.com/emqx/kuiper/blob/master/docs/en_US/cli/plugins.md) to manage plugins. The following takes the REST API as an example to deploy the plugin compiled in the previous step to the production environment. 
+Users can use [REST API](https://github.com/lf-edge/ekuiper/blob/master/docs/en_US/restapi/plugins.md) or [CLI](https://github.com/lf-edge/ekuiper/blob/master/docs/en_US/cli/plugins.md) to manage plugins. The following takes the REST API as an example to deploy the plugin compiled in the previous step to the production environment. 
 
 1. Package the plugin and put it into the http server. Package the file `.so` of the plugin compiled in the previous step and the default configuration file (only required for source) `.yaml` into a `.zip` file (assuming that the file is `mysqlSink.zip`). Put this file into the http server that the production environment can also access. 
 

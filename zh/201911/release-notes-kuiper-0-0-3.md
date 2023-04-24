@@ -2,7 +2,7 @@
 
 Kuiper团队将宣布发布Kuiper 0.0.3
 
-Kuiper 0.0.3 [可以从这里下载](https://github.com/emqx/kuiper/releases/tag/0.0.3).
+Kuiper 0.0.3 [可以从这里下载](https://github.com/lf-edge/ekuiper/releases/tag/0.0.3).
 
 Kuiper是一款基于SQL的轻量级物联网分析/流数据软件，运行在资源受限的边缘设备上。这个版本包括几个新特性，并对之前版本错误进行修复。
 
@@ -25,8 +25,8 @@ Github仓库： https://github.com/emqx/kuiper
 
 ### 问题修复
 
-- [#7](https://github.com/emqx/kuiper/issues/7) GROUP BY问题
-- [#13](https://github.com/emqx/kuiper/issues/13) 删除规则后Kuiper服务器退出
+- [#7](https://github.com/lf-edge/ekuiper/issues/7) GROUP BY问题
+- [#13](https://github.com/lf-edge/ekuiper/issues/13) 删除规则后Kuiper服务器退出
 
 ### 联系
 

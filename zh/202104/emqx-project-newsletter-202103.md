@@ -32,7 +32,7 @@
 - 成立了专门的测试团队，该团队将为 EMQX 项目在 GitHub CI 中提供更多的自动化集成测试。
 - 我们的主项目 [emqx/emqx.git](https://github.com/emqx/emqx) 已经全部通过了 rebar dialyzer 检查。
 - [Quicer](https://github.com/emqx/quic) (QUIC 协议的 Erlang/Elixir 支持) 提供了 macOS 上的构建；增加了类似 inet/gen_tcp 风格的 APIs，开始了 MQTT-on-QUIC 的试验性功能实现。
-- 开始了Rlog 项目，该项目旨在提高 EMQX 集群的伸缩能力。Rlog 是 [ekka](https://github.com/emqx/ekka) 库的一部分，将提供一种 Mnesia 数据库的异步复本复制功能，详情请参见 [EIP-0004](https://github.com/emqx/eip/blob/main/active/0004-async-mnesia-change-log-replication.md)。
+- 开始了Rlog 项目，该项目旨在提高 EMQX 集群的伸缩能力。Rlog 是 [ekka](https://github.com/emqx/ekka) 库的一部分，将提供一种 Mnesia 数据库的异步复本复制功能，详情请参见 [EIP-0004](https://github.com/emqx/eip/blob/main/implemented/0004-async-mnesia-change-log-replication.md)。
 - jq.erl。 [jq](https://stedolan.github.io/jq/) 是 JSON 处理的事实标准。基于其开源内核，我们将提供一个 Erlang 的 NIF 实现。它将被应用于 EMQX 规则引擎中，为 JSON 数据流处理提供灵活强大的扩展。
 
 

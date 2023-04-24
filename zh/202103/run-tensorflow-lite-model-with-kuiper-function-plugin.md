@@ -1,4 +1,4 @@
-[EMQX Kuiper](https://docs.emqx.io/en/kuiper/latest/) 是一款边缘轻量级物联网数据分析/流软件，可在各种资源受限的物联网设备上运行。
+[EMQX Kuiper](https://ekuiper.org/docs/en/latest/) 是一款边缘轻量级物联网数据分析/流软件，可在各种资源受限的物联网设备上运行。
 
 [TensorFlow Lite](https://www.tensorflow.org/lite/guide) 是一组帮助开发人员在移动端、嵌入式和物联网设备上运行 TensorFlow 模型的工具，它使得设备上的机器学习预测具有低延迟和较小的二进制容量。
 
@@ -15,7 +15,7 @@
 要开发函数插件，我们需要：
 
 1. 创建插件 go 文件。例如，在 kuiper 源代码中，创建 *plugins/functions/labelImage/labelImage.go* 文件。
-2. 创建一个实现 [**api.函数接口** ](https://github.com/emqx/kuiper/blob/master/xstream/api/stream.go) 的 struct。
+2. 创建一个实现 [**api.函数接口** ](https://github.com/lf-edge/ekuiper/blob/master/xstream/api/stream.go) 的 struct。
 3. 导出 struct。
 
 实现的关键是 *Exec* 函数。伪代码如下：
@@ -50,7 +50,7 @@ var LabelImage = labelImage{
 }
 ```
 
-查阅 [本教程](https://github.com/emqx/kuiper/blob/master/docs/zh_CN/plugins/plugins_tutorial.md) 以获得创建 Kuiper 插件的详细步骤。请参阅 [labelImage.go](https://github.com/emqx/kuiper/blob/master/plugins/functions/labelImage/labelImage.go) 以获取完整的源代码。
+查阅 [本教程](https://github.com/lf-edge/ekuiper/blob/master/docs/zh_CN/plugins/plugins_tutorial.md) 以获得创建 Kuiper 插件的详细步骤。请参阅 [labelImage.go](https://github.com/lf-edge/ekuiper/blob/master/plugins/functions/labelImage/labelImage.go) 以获取完整的源代码。
 
 ## 构建并安装插件
 
@@ -80,7 +80,7 @@ Content-Type: application/json
 
 1. 安装 [Python 3](https://www.tensorflow.org/install/pip#1.-install-the-python-development-environment-on-your-system).
 
-2. 将 [requirements.txt](https://github.com/emqx/kuiper/blob/master/docs/zh_CN/plugins/functions/requirements.txt) 复制到您指定位置。 安装所需的 python 库：`pip3 install -r requirements.txt`。 requirements 来自相应 TensorFlow 版本的 `tensorflow/tensorflow/tools/pip_package/setup.py`。
+2. 将 [requirements.txt](https://github.com/lf-edge/ekuiper/blob/master/docs/zh_CN/plugins/functions/requirements.txt) 复制到您指定位置。 安装所需的 python 库：`pip3 install -r requirements.txt`。 requirements 来自相应 TensorFlow 版本的 `tensorflow/tensorflow/tools/pip_package/setup.py`。
 
 3. 安装 TensorFlow 的构建工具 [Bazel](https://docs.bazel.build/versions/4.0.0/install-ubuntu.html)。
 
@@ -131,7 +131,7 @@ $ go build -trimpath --buildmode=plugin -o plugins/functions/LabelImage.so plugi
 - LabelImage.so
 - tflite.conf
 
-将打包的插件安装到目标系统，如 [通过预构建 zip 安装](https://github.com/emqx/kuiper/blob/master/docs/zh_CN/plugins/functions/tensorflow_lite_tutorial.md#install-by-pre-built-zip) 所示。
+将打包的插件安装到目标系统，如 [通过预构建 zip 安装](https://github.com/lf-edge/ekuiper/blob/master/docs/zh_CN/plugins/functions/tensorflow_lite_tutorial.md#install-by-pre-built-zip) 所示。
 
 ## 运行插件
 

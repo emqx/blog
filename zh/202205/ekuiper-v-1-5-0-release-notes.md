@@ -40,7 +40,7 @@ CREATE STREAM demo() WITH (TYPE="neuron",SHARED="TRUE")
 }
 ```
 
-详细信息，请参考文档 [Neuron 源](https://ekuiper.org/docs/zh/latest/rules/sources/builtin/neuron.html)和 [Neuron Sink](https://ekuiper.org/docs/zh/latest/rules/sinks/builtin/neuron.html)。
+详细信息，请参考文档 [Neuron 源](https://ekuiper.org/docs/zh/latest/guide/sources/builtin/neuron.html)和 [Neuron Sink](https://ekuiper.org/docs/zh/latest/guide/sinks/builtin/neuron.html)。
 
 ### SQL 拉取和写入
 
@@ -52,7 +52,7 @@ eKuiper 提供了统一的\多数据库通用的 SQL 拉取 source，可定时�
 
 除了数据拉取，我们也提供了数据写入的通用 SQL 插件。值得注意的是，eKuiper 本身已经提供了针对 InfluxDB、TDengine 等时序数据库的专用插件。通用 SQL 插件同样可以支持连接这些数据库，但提供的是 insert 功能，不支持特定数据库的非标准概念，例如 TDengine 的超级表只能使用 TDengine 插件进行写入。
 
-更多信息以及支持的数据库列表，请参见 [SQL source 插件](https://ekuiper.org/docs/zh/latest/rules/sources/plugin/sql.html)和 [SQL sink 插件文档](https://ekuiper.org/docs/zh/latest/rules/sinks/plugin/sql.html)。
+更多信息以及支持的数据库列表，请参见 [SQL source 插件](https://ekuiper.org/docs/zh/latest/guide/sources/plugin/sql.html)和 [SQL sink 插件文档](https://ekuiper.org/docs/zh/latest/guide/sinks/plugin/sql.html)。
 
 ## eKuiper SQL 改进
 
@@ -99,7 +99,7 @@ SELECT object_construct("key1", col1, "key2", col2, "key3", col3) AS file1, obje
 
 ### 按需编译
 
-作为边缘流式处理引擎，需要部署的异构目标系统很多，既有算力较好的边缘端的机房、网关等，也有出于成本以及业务的特殊要求考虑而采用成本更便宜或是定制化的软硬件方案。随着功能的逐渐增强，全功能的 eKuiper 在极端资源受限的设备上，例如内存少于 50MB 的终端上，可能会稍显臃肿。新的版本中，我们将 eKuiper 的核心功能和其他功能通过 go 语言的编译标签进行剥离。用户在使用的时候，可以通过设置编译参数的方式，按需编译部分功能，从而得到更小的运行文件。例如，仅编译核心功能，可使用 make build_core 得到一个只包含核心功能的运行文件。进一步信息，请参考 [按需编译](https://ekuiper.org/docs/zh/latest/features.html)。
+作为边缘流式处理引擎，需要部署的异构目标系统很多，既有算力较好的边缘端的机房、网关等，也有出于成本以及业务的特殊要求考虑而采用成本更便宜或是定制化的软硬件方案。随着功能的逐渐增强，全功能的 eKuiper 在极端资源受限的设备上，例如内存少于 50MB 的终端上，可能会稍显臃肿。新的版本中，我们将 eKuiper 的核心功能和其他功能通过 go 语言的编译标签进行剥离。用户在使用的时候，可以通过设置编译参数的方式，按需编译部分功能，从而得到更小的运行文件。例如，仅编译核心功能，可使用 make build_core 得到一个只包含核心功能的运行文件。进一步信息，请参考 [按需编译](https://ekuiper.org/docs/zh/latest/operation/compile/features.html)。
 
 ## 文档更易用
 

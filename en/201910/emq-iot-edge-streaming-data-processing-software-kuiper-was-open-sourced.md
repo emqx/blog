@@ -98,8 +98,8 @@ Kuiper's usage process is similar to traditional streaming tools, mainly includi
 
 ## Start Using
 
-Readers can complete Kuiper's first experience by following the [Tutorial Documentation](https://github.com/emqx/kuiper/blob/master/docs/getting_started.md) on Github. The Kuiper project is based on the Apache 2.0 open source license and any problems found in the use process can be directly submitted in the project.
+Readers can complete Kuiper's first experience by following the [Tutorial Documentation](https://github.com/lf-edge/ekuiper/blob/master/docs/getting_started.md) on Github. The Kuiper project is based on the Apache 2.0 open source license and any problems found in the use process can be directly submitted in the project.
 
 ------
 
-Welcome to our open source project [github.com/emqx/emqx](https://github.com/emqx/emqx). Please visit the [official documentation](https://docs.emqx.io) for details.
+Welcome to our open source project [github.com/emqx/emqx](https://github.com/emqx/emqx). Please visit the [official documentation](https://www.emqx.io/docs/en/latest/) for details.

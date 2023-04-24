@@ -10,11 +10,11 @@ MQTT adalah network protocol berjenis publish-subscribe **lightweight** yang men
 
  
 
-EMQX Cloud memiliki 3 jenis paket: Basic, Professional dan Unlimited. Ketiga paket ini menawarkan sejumlah spesifikasi produk yang fleksibel untuk mendukung deployment dari berbagai servis MQTT secara eksklusif untuk Anda dengan salah satu public cloud terkemuka di dunia. Tertarik untuk tau lebih lanjut tentang paket produk EMQX Cloud? Klik [disini](https://docs.emqx.io/en/cloud/latest/pricing.html).
+EMQX Cloud memiliki 3 jenis paket: Basic, Professional dan Unlimited. Ketiga paket ini menawarkan sejumlah spesifikasi produk yang fleksibel untuk mendukung deployment dari berbagai servis MQTT secara eksklusif untuk Anda dengan salah satu public cloud terkemuka di dunia. Tertarik untuk tau lebih lanjut tentang paket produk EMQX Cloud? Klik [disini](https://docs.emqx.com/en/cloud/latest/pricing.html).
 
  
 
-Produk mantap seperti ini adalah pilihan tepat untuk diitegrasikan dengan Home Assistant. Anda dapat mengunjungi [dokumentasi EMQX Cloud](https://docs.emqx.io/en/cloud/latest/) untuk informasi lebih lanjut mengenai EMQX Cloud.
+Produk mantap seperti ini adalah pilihan tepat untuk diitegrasikan dengan Home Assistant. Anda dapat mengunjungi [dokumentasi EMQX Cloud](https://docs.emqx.com/en/cloud/latest/) untuk informasi lebih lanjut mengenai EMQX Cloud.
 
 ## Set Up Home Assistant dengan EMQX Cloud
 

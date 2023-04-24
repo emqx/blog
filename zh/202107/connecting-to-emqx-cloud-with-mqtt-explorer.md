@@ -4,7 +4,7 @@
 
 ## MQTT Explorer 简介
 
-[MQTT Explorer](https://mqtt-explorer.com/) 是目前较为活跃的 MQTT 客户端桌面应用，一直受到开发者们的喜爱。主要技术是 [Electron](https://github.com/electron/electron)，由 [@thomasnordquist](https://github.com/thomasnordquist) 开发并且开源，遵循 [Creative Commons Public Licenses](https://wiki.creativecommons.org/wiki/Considerations_for_licensors_and_licensees#Considerations_for_licensees) 协议，GitHub 地址为 https://github.com/thomasnordquist/MQTT-Explorer。
+[MQTT Explorer](https://mqtt-explorer.com/) 是目前较为活跃的 MQTT 客户端桌面应用，一直受到开发者们的喜爱。主要技术是 [Electron](https://github.com/electron/electron)，由 [@thomasnordquist](https://github.com/thomasnordquist) 开发并且开源，遵循 [Creative Commons Public Licenses](https://wiki.creativecommons.org/wiki/Considerations_for_licensors_and_licensees#Considerations_for_licensees) 协议，GitHub 地址为 https://github.com/thomasnordquist/MQTT-Explorer
 
 其包含主要特性有：
 
@@ -42,7 +42,7 @@ MQTT Explorer 能够满足大部分开发的需求，但是也有一些缺点：
 - TCP Port: **1883**
 - SSL/TLS Port: **8883**
 
-更多详情请访问 [EMQX Cloud 官网](https://www.emqx.com/zh/cloud)，或查看 [EMQX Cloud 文档](https://docs.emqx.cn/cloud/latest/)。 
+更多详情请访问 [EMQX Cloud 官网](https://www.emqx.com/zh/cloud)，或查看 [EMQX Cloud 文档](https://docs.emqx.com/zh/cloud/latest/)。 
 
 
 

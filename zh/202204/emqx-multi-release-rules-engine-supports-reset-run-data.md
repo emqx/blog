@@ -61,7 +61,7 @@ FROM "t/#"
 
 包含版本： 企业版 v4.3.9 企业版 v4.4.3
 
-此前的 企业版 v4.3.8 中我们提供了 [Pulsar Proxy](https://pulsar.apache.org/docs/en/administration-proxy/) 的支持，本次更新我们新增 Pulsar 资源 TLS 连接，为规则引擎数据集成提供更好的安全性。
+此前的 企业版 v4.3.8 中我们提供了 [Pulsar Proxy](https://pulsar.apache.org/docs/2.11.x/administration-proxy/) 的支持，本次更新我们新增 Pulsar 资源 TLS 连接，为规则引擎数据集成提供更好的安全性。
 
 ### 编解码支持 gRPC 通道
 

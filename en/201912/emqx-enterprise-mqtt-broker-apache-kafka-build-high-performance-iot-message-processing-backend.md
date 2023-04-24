@@ -90,7 +90,7 @@ In this solution, Kafka is integrated  to provide a message queue and a message 
 
 ### Installation
 
-> If you are new to EMQX, we recommend getting started with  [EMQX Guide](https://docs.emqx.io/tutorial/v3/en/) 
+> If you are new to EMQX, we recommend getting started with  [EMQX Guide](https://www.emqx.io/docs/en/v3.0/) 
 
 Visit [EMQ website](https://www.emqx.com/en/try)  to download the installation package suitable for your operating system. **As data persistence is an enterprise function, you need to download EMQX Enterprise Edition (you can apply for a license trial) .** At the time of this writing, the latest version of EMQX Enterprise Edition is v3.4.4. The startup steps for downloading the zip package are as follows:
 

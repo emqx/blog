@@ -50,7 +50,7 @@ When the server has no public network access or needs to quickly deploy and veri
 
 #### Download the installation package
 
-Visit the [EMQX download address](https://www.emqx.io/en/downloads?os=Ubuntu). Select the `Package` tag, select `Ubuntu20.04 amd64/tag.gz` for the installation package type, and then click the “copy” icon on the right (this will copy the whole line of wget download command).
+Visit the [EMQX download address](https://www.emqx.io/downloads?os=Ubuntu). Select the `Package` tag, select `Ubuntu20.04 amd64/tag.gz` for the installation package type, and then click the “copy” icon on the right (this will copy the whole line of wget download command).
 
 Paste the download command to the ubuntu terminal and perform the download operation.
 

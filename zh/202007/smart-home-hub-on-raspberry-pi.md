@@ -71,7 +71,7 @@ $ ./bin/emqx start
 ```bash
 $ cd ~/smart-home-hubs
 # 下载软件包
-$ wget https://github.com/emqx/kuiper/releases/download/0.4.2/kuiper-0.4.2-linux-armv7l.zip
+$ wget https://github.com/lf-edge/ekuiper/releases/download/0.4.2/kuiper-0.4.2-linux-armv7l.zip
 $ unzip kuiper-0.4.2-linux-armv7l.zip
 $ mv kuiper-0.4.2-linux-armv7l ./kuiper
 $ cd ./kuiper

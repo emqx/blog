@@ -52,7 +52,7 @@ Below is the way to quickly install and start Grafana by using Docker:
 docker run -d --name grafana -p 3000:3000 grafana/grafana-oss
 ```
 
-Users can also refer to the [Grafana document](https://grafana.com/docs/grafana/latest/installation/docker/) to download and use the binary package to install and run Grafana.
+Users can also refer to the [Grafana document](https://grafana.com/docs/grafana/latest/setup-grafana/installation/docker/) to download and use the binary package to install and run Grafana.
 
 After Grafana installation, we can open `http://localhost:3000` to access Grafana. If we can access the login page of Grafana usually, it means that Grafana started successfully.
 

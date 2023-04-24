@@ -76,7 +76,7 @@ As shown in the figure below, the edge analysis / streaming data processing meth
 
 - Install and start Kuiper
 
-  Click [here](https://github.com/emqx/kuiper/releases)  to download the latest version of Kuiper and unzip it. At the time of this writing this article, the latest version of Kuiper is 0.0.3.
+  Click [here](https://github.com/lf-edge/ekuiper/releases)  to download the latest version of Kuiper and unzip it. At the time of this writing this article, the latest version of Kuiper is 0.0.3.
 
   ```shell
   # unzip kuiper-linux-amd64-0.0.3.zip
@@ -91,7 +91,7 @@ As shown in the figure below, the edge analysis / streaming data processing meth
 
 Kuiper provides a command to manage streams and rules. Users can check which subcommands and helps are available by typing ``bin/cli`` in the command line window. The ``cli`` command is connected to the local Kuiper server by default. The ``cli`` command can also be connected to other Kuiper servers. Users can modify the connected Kuiper server in the ``etc/client.yaml`` configuration file. Users who want to know more about the command line can refer to [here](https://github.com/lf-edge/ekuiper/tree/master/docs/en_US/cli).
 
-Create a stream definition: The purpose of creating a stream is to define the format of the data sent to the stream,  which is similar to defining the structure of a table in a relational database. All supported data types in Kuiper can be found in [here](https://github.com/lf-edge/ekuiper/blob/master/docs/en_US/cli/streams.md).
+Create a stream definition: The purpose of creating a stream is to define the format of the data sent to the stream,  which is similar to defining the structure of a table in a relational database. All supported data types in Kuiper can be found in [here](https://ekuiper.org/docs/en/latest/api/cli/streams.html).
 
 ```shell
 # cd kuiper
@@ -221,7 +221,7 @@ After debugging the SQL, users start configuring the rules file and send the res
   - Private key: Similar to ``d3807d9fa5-private.pem.key``
   - Public key: Similar to ``d3807d9fa5-public.pem.key``
 
-  Refer to  [AWS device creation document ](https://docs.aws.amazon.com/iot/latest/developerguide/register-device.html) for more detailed information.
+  Refer to  [AWS device creation document ](https://docs.aws.amazon.com/iot/latest/developerguide/thing-registry.html) for more detailed information.
 
 **Write a Kuiper rules file**
 

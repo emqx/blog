@@ -12,7 +12,7 @@
 
 > 版本：v1.0.2
 
-[下载链接](https://github.com/lf-edge/ekuiper) ｜ [安装文档](https://docs.emqx.cn/kuiper/latest/getting_started.html#%E4%B8%8B%E8%BD%BD%E5%92%8C%E5%AE%89%E8%A3%85)
+[下载链接](https://github.com/lf-edge/ekuiper) ｜ [安装文档](https://ekuiper.org/docs/zh/latest/installation.html)
 
 ```shell
 # 获取 Docker 镜像
@@ -44,7 +44,7 @@ $ docker run -p 9082:9082 -d emqx/kuiper-manager:1.0.2
 
 > 版本：v4.2.4
 
-[下载链接](https://www.emqx.com/zh/try?product=nanomq) | [安装文档](https://docs.emqx.cn/edge/latest/install.html)
+[下载链接](https://www.emqx.com/zh/try?product=nanomq) | [安装文档](https://nanomq.io/docs/zh/latest/)
 
 ```shell
 # 获取 Docker 镜像
@@ -135,7 +135,7 @@ CREATE STREAM demo (
 
    > 注意：如果使用的 MQTT Broker 为 Docker 启动的 EMQX Edge 话，Broker 地址需要填写为 Docker 容器内的 IP 地址
 
-4. 设置 `选项`，选项部分为可选，均有默认值，如需修改可参考 [Kuiper 文档](https://docs.emqx.cn/kuiper/latest/rules/overview.html#%E9%80%89%E9%A1%B9) 进行设置。
+4. 设置 `选项`，选项部分为可选，均有默认值，如需修改可参考 [Kuiper 文档](https://ekuiper.org/docs/zh/latest/) 进行设置。
 
 ![kuipercreaterule.png](https://assets.emqx.com/images/66bffdc71ba9c49183b080d42d6135b4.png)
 
@@ -188,7 +188,7 @@ execute(handlePayload)
 
 ![mqttxscript.png](https://assets.emqx.com/images/5aef8144b3c75fab5730afd7f7545c31.png)
 
-测试发现模拟数据成功，我们到连接页面中，打开脚本使用功能（使用脚本功能本文不做详细描述，可参考 [MQTT X 文档](https://github.com/emqx/MQTTX/blob/master/docs/manual-cn.md#%E8%84%9A%E6%9C%AC)），输入发送的  `Payload`  数据模版为  `{}` ，输入 `Topic` 为流定义中的 `Data Source`，这里就填写 `/kuiper/stream`，然后设置定时消息，设置发送频率为 1 秒，然后点击发送一条消息成功后，MQTT X 将每秒自动发送一条模拟测试数据。
+测试发现模拟数据成功，我们到连接页面中，打开脚本使用功能（使用脚本功能本文不做详细描述，可参考 [MQTT X 文档](https://github.com/emqx/MQTTX/blob/main/docs/manual-cn.md#%E8%84%9A%E6%9C%AC)），输入发送的  `Payload`  数据模版为  `{}` ，输入 `Topic` 为流定义中的 `Data Source`，这里就填写 `/kuiper/stream`，然后设置定时消息，设置发送频率为 1 秒，然后点击发送一条消息成功后，MQTT X 将每秒自动发送一条模拟测试数据。
 
 ![mqttxtimed.png](https://assets.emqx.com/images/6358d2d739f455bb36670269eb3e2c52.png)
 

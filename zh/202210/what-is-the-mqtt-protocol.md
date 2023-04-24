@@ -12,7 +12,7 @@ MQTT 协议由 [Andy Stanford-Clark](http://en.wikipedia.org/wiki/Andy_Stanford-
 - 数据无关（不关心 Payload 数据格式）
 - 有持续地会话感知能力（时刻知道设备是否在线）
 
-据 Arlen Nipper 在 [IBM Podcast 上的自述](https://www.ibm.com/podcasts/software/websphere/connectivity/piper_diaz_nipper_mq_tt_11182011.pdf)，MQTT 原名是 `MQ TT`，注意 `MQ` 与 `TT`之间的空格，其全称为: MQ Telemetry Transport，是九十年代早期他在参与 Conoco Phillips 公司的一个原油管道数据采集监控系统（pipeline SCADA system）时开发的一个实时数据传输协议。它的目的在于让传感器通过带宽有限的 [VSAT](https://en.wikipedia.org/wiki/Very-small-aperture_terminal) ，与 IBM 的 MQ Integrator 通信。由于 Nipper 是遥感和数据采集监控专业出身，所以按业内惯例取了 `MQ TT` 这个名字。
+据 Arlen Nipper 在 [IBM Podcast 上的自述](https://f.hubspotusercontent00.net/hubfs/6941105/Que%20es%20MQTT%20-%20IBM%20podcast%20-%20Piper,%20Diaz,%20Nipper%20-%2011182011-1.pdf)，MQTT 原名是 `MQ TT`，注意 `MQ` 与 `TT`之间的空格，其全称为: MQ Telemetry Transport，是九十年代早期他在参与 Conoco Phillips 公司的一个原油管道数据采集监控系统（pipeline SCADA system）时开发的一个实时数据传输协议。它的目的在于让传感器通过带宽有限的 [VSAT](https://en.wikipedia.org/wiki/Very-small-aperture_terminal) ，与 IBM 的 MQ Integrator 通信。由于 Nipper 是遥感和数据采集监控专业出身，所以按业内惯例取了 `MQ TT` 这个名字。
 
 ### MQTT 与其他协议对比
 

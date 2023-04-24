@@ -24,7 +24,7 @@
 - [携程](https://www.infoq.cn/article/WZ7aiC27lLrB7_BcGJoL) 内部从 18 年 7 月份开始接入试用，目前 80% 的业务都跑在 ClickHouse 上。每天数据增量十多亿，近百万次查询请求。
 - [快手](https://archsummit.infoq.cn/2019/beijing/presentation/2183) 内部也在使用 ClickHouse，存储总量大约 10PB， 每天新增 200TB， 90% 查询小于 3S。
 
-在国外，Yandex 内部有数百节点用于做用户点击行为分析，优步、CloudFlare、Spotify 等头部公司也在使用，更多用户列表见 [ClickHouse 官网-用户列表](https://clickhouse.tech/docs/en/introduction/adopters/)。
+在国外，Yandex 内部有数百节点用于做用户点击行为分析，优步、CloudFlare、Spotify 等头部公司也在使用，更多用户列表见 [ClickHouse 官网-用户列表](https://clickhouse.com/docs/en/introduction/adopters)。
 
 
 ### Grafana 简介
@@ -96,7 +96,7 @@ EMQX Cloud 为新注册用户提供 6 个月时长的免费试用，注册账号
 
 #### 方式二：私有部署安装
 
-> 如果您是 EMQX 新手用户，推荐通过 [EMQX 文档](https://docs.emqx.cn/broker/latest/) 快速上手
+> 如果您是 EMQX 新手用户，推荐通过 [EMQX 文档](https://www.emqx.io/docs/zh/latest/) 快速上手
 
 访问 [EMQ 下载](https://www.emqx.com/zh/try) 页面下载适合您操作系统的安装包，本文截稿时 EMQX 企业版本为 v4.1.2，下载 zip 包的启动步骤如下 ：
 
@@ -157,7 +157,7 @@ docker run -d --name=grafana -p 3000:3000 grafana/grafana
 
 ## 配置 EMQX 存储数据到 ClickHouse
 
-> EMQX 企业版支持通过规则引擎将设备事件与消息数据写入到各类数据库与消息中间件中（包括 ClickHouse），参考[文档](https://docs.emqx.cn/broker/latest/rule/rule-example.html#%E4%BF%9D%E5%AD%98%E6%95%B0%E6%8D%AE%E5%88%B0-clickhouse)。
+> EMQX 企业版支持通过规则引擎将设备事件与消息数据写入到各类数据库与消息中间件中（包括 ClickHouse），参考[文档](https://docs.emqx.com/zh/enterprise/v4.4/rule/rule-engine.html)。
 
 ### ClickHouse 创建数据库与数据表
 
@@ -175,7 +175,7 @@ create database test;
 use test;
 ```
 
-创建 sensor_data 表，ClickHouse SQL 语法与常规关系数据库有所差别，具体请参考 [ClickHouse 文档-SQL语法](https://clickhouse.tech/docs/zh/sql-reference/syntax/)：
+创建 sensor_data 表，ClickHouse SQL 语法与常规关系数据库有所差别，具体请参考 [ClickHouse 文档-SQL语法](https://clickhouse.com/docs/zh/sql-reference/syntax)：
 
 > Grafana 时序显示时需要添加 DataTime 列与 Date 列
 

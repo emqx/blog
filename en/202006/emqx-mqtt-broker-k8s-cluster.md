@@ -6,7 +6,7 @@ Reading this article needs users to know the basic concept of Kubernetes and hav
 
 ### Use pod directly deploy EMQX Broker
 
-In Kubernetes, the smallest management element is [Pod](https://kubernetes.io/zh/docs/concepts/workloads/pods/pod-overview/) than individual containers. Pod is the basic executing unit of Kubernetes applications, which means that it is the smallest and simplest unit be created or deployed in the Kubernetes object model. Pod represents the processes running on the [cluster](https://kubernetes.io/zh/docs/reference/glossary/?all=true#term-cluster).
+In Kubernetes, the smallest management element is [Pod](https://kubernetes.io/zh/docs/concepts/workloads/pods/pod-overview/) than individual containers. Pod is the basic executing unit of Kubernetes applications, which means that it is the smallest and simplest unit be created or deployed in the Kubernetes object model. Pod represents the processes running on the [cluster](https://kubernetes.io/zh-cn/docs/reference/glossary/?all=true#term-cluster).
 
 EMQX Broker has provided mirroring in [docker hub](https://hub.docker.com/r/emqx/emqx), so users can easily deploy EMQX Broker in the single pod. Using the command `kubectl run` to create a pod running EMQX Broker. 
 
@@ -124,7 +124,7 @@ Use Deployment deploy an EMQX Broker Pod：
 
 ### Use services exposing EMQX Broker Pod service
 
-Kubernetes [Pods](https://kubernetes.io/docs/concepts/workloads/pods/pod-overview/) has a life cycle. They can be created, and will not run if they are destroyed. It can dynamically create and destroy pod, if use [Deployment](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/) to run applications.
+Kubernetes [Pods](https://kubernetes.io/docs/concepts/workloads/pods/) has a life cycle. They can be created, and will not run if they are destroyed. It can dynamically create and destroy pod, if use [Deployment](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/) to run applications.
 
 Every pod has its IP address, but in Deployment, the pod collection running at the same moment may differ from that runs this application later.
 
@@ -132,7 +132,7 @@ This will cause a problem: if use EMQX Broker Pod to provide service to the **MQ
 
 The answer is: Service
 
-Service is an abstract method for exposing the application which is running on a set of [Pods](https://kubernetes.io/docs/concepts/workloads/pods/pod-overview/) as network service.
+Service is an abstract method for exposing the application which is running on a set of [Pods](https://kubernetes.io/docs/concepts/workloads/pods/) as network service.
 
 Use Service to expose EMQX Broker Pod as network service.
 
@@ -229,7 +229,7 @@ You can see that the number of EMQX Broker Pod is expanded to three, but each po
 
 ### Modify EMQX Broker configuration
 
-View the content related to [automatically cluster](https://docs.emqx.io/broker/latest/en/advanced/cluster.html#emqx-service-discovery-k8s) in the EMQX Broker documentation, you can see that we need to modify the configuration of EMQX Broker.
+View the content related to [automatically cluster](https://www.emqx.io/docs/en/v5.0/deploy/cluster/introduction.html) in the EMQX Broker documentation, you can see that we need to modify the configuration of EMQX Broker.
 
 ```
 cluster.discovery = kubernetes
@@ -501,7 +501,7 @@ The Deployment used above to manage Pod, but the network of Pod is constantly ch
 
 [ConfigMap](https://kubernetes.io/docs/concepts/configuration/configmap/) is an API object which is used to store non-confidential data to key-value pairs. It will be used as an environment variables, command-line arguments, or as configuration files in a volume.
 
-ConfigMap decouples your environment configuration information from [container mirroring](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/#why-containers), so that you can easily modify application configuration.
+ConfigMap decouples your environment configuration information from [container mirroring](https://kubernetes.io/docs/concepts/overview/#why-containers), so that you can easily modify application configuration.
 
 > ConfigMap does not provide secrecy or encryption. If the data you want to store are confidential, use a [Secret](https://kubernetes.io/docs/concepts/configuration/secret/) rather than a ConfigMap, or use third-party tools to keep your data private.
 
@@ -598,7 +598,7 @@ The configuration files of EMQX Broker have decoupled to Configmap. If necessary
 
 ### StatefulSet
 
-[StatefulSet](https://kubernetes.io/zh/docs/concepts/workloads/controllers/statefulset/) is used for figuring out the problem that is stateful service(Deployments and ReplicaSets are designed for stateless service). The scenarios it is applied including:
+[StatefulSet](https://kubernetes.io/zh-cn/docs/concepts/workloads/controllers/statefulset/) is used for figuring out the problem that is stateful service(Deployments and ReplicaSets are designed for stateless service). The scenarios it is applied including:
 
 - Stable persistence storage, that is,  after the pod is re-dispatched, it can also access the same persistence data. Based on PVC to implement.
 - Stable network sign, that is, after the pod is re-dispatched, it's PodName and HostName have no changes. Based on Headless Service(the Service without Cluster IP) to implement.

@@ -28,7 +28,7 @@ Neuron 支持同时为多个不同通讯协议设备、数十种工业协议进�
 
 - 请在 [PeakHMI 官网](https://hmisys.com/) 中下载 Modbus 模拟器并进行安装，之后打开 Modbus TCP slave Ex。
 
-Neuron 使用入门请参照：[Neuron 快速教程](https://neugates.io/docs/zh/latest/getting-started/quick_start.html#环境搭建)。
+Neuron 使用入门请参照：[Neuron 快速教程](https://neugates.io/docs/zh/latest/quick-start/hardware-specifications.html#环境搭建)。
 
 
 ## 操作流程

@@ -10,7 +10,7 @@ For more information, please go to the [EMQX Cloud website](https://www.emqx.com
 
 ## InfluxDB Cloud
 
-[InfluxDB Cloud](https://docs.influxdata.com/influxdb/cloud/sign-up/) is a fully managed and hosted version of InfluxDB 2.0, the time series platform purpose-built to collect, store, process and visualize metrics and events. As an open source chronological database developed by InfluxData, focusing on high performance reading and writing; efficient storage and real-time analysis of massive chronological data, etc. It is ranked No.1 in the DB-Engines Ranking chronological database, and is widely used in DevOps monitoring, IoT monitoring, real-time analysis, and other scenarios. 
+[InfluxDB Cloud](https://docs.influxdata.com/influxdb/v2.6//cloud/sign-up/) is a fully managed and hosted version of InfluxDB 2.0, the time series platform purpose-built to collect, store, process and visualize metrics and events. As an open source chronological database developed by InfluxData, focusing on high performance reading and writing; efficient storage and real-time analysis of massive chronological data, etc. It is ranked No.1 in the DB-Engines Ranking chronological database, and is widely used in DevOps monitoring, IoT monitoring, real-time analysis, and other scenarios. 
 
 InfluxDB is simple to deploy and easy to use, taking full advantage of the Go language in its technical implementation, and can be deployed independently without any external dependencies. Provides a SQL-like query language with a friendly and easy-to-use interface. Rich aggregation and sampling capabilities, flexible Retention Policy to set the retention time and number of copies of data, while ensuring data reliability; timely deletion of expired data to free up storage space, and flexible continuous query to achieve the sampling of massive data. A wide range of protocols is supported. In addition to native protocols such as HTTP and UDP, it is also compatible with the communication protocols of components such as CollectD, Graphite, OpenTSDB, and Prometheus.
 
@@ -28,7 +28,7 @@ When the status is Running, the creation of the deployment is complete.
 
 ### Create InfluxDB Cloud instances
 
-If you are creating an InfluxDB Cloud instance for the first time, you can refer to the [help document](https://docs.influxdata.com/influxdb/cloud/sign-up/). Go to the Load Data page and find a new token. You could choose to activate/deactivate the token.
+If you are creating an InfluxDB Cloud instance for the first time, you can refer to the [help document](https://docs.influxdata.com/influxdb/v2.6//cloud/sign-up/). Go to the Load Data page and find a new token. You could choose to activate/deactivate the token.
 
 ![Create InfluxDB Cloud instances](https://assets.emqx.com/images/4c0fe0dfe5b449310a94074513a71ca9.png)
 
@@ -110,7 +110,7 @@ Tags: location ${location}
 
 We recommend you to use [MQTT X](https://mqttx.app/), an elegant cross-platform MQTT 5.0 desktop client to subscribe/publish messages.
 
-Click on the add button and fill in the deployment information to connect to the deployment. You need to replace `broker.emqx.io` with the created deployment [connection address](https://docs.emqx.com/en/cloud/latest/deployments/view_deployment.html#view-deployment-information),  add [client authentication information](https://docs.emqx.com/en/cloud/latest/deployments/auth.html#authentication) to the EMQX Cloud console.  Enter the topic name and payload message to publish the message.
+Click on the add button and fill in the deployment information to connect to the deployment. You need to replace `broker.emqx.io` with the created deployment [connection address](https://docs.emqx.com/en/cloud/latest/create/overview.html#view-deployment-information),  add [client authentication information](https://docs.emqx.com/en/cloud/latest/deployments/auth_overview.html#authentication) to the EMQX Cloud console.  Enter the topic name and payload message to publish the message.
 
 ![MQTT Client](https://assets.emqx.com/images/fe1ee590e24e224b90624c2017ba8aaf.png)
 

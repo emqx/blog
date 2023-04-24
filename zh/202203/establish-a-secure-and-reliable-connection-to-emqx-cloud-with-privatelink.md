@@ -47,7 +47,7 @@
 
 ### 一、创建部署
 
-[新建部署](https://docs.emqx.com/zh/cloud/latest/deployments/create_deployment.html#限制)，在 EMQX Cloud 概览开通增值服务-内网负载均衡。
+[新建部署](https://docs.emqx.com/zh/cloud/latest/create/overview.html#限制)，在 EMQX Cloud 概览开通增值服务-内网负载均衡。
 
 ![开通增值服务-内网负载均衡](https://assets.emqx.com/images/880a1e08979646760a3d6d37baab19f0.png)
 

@@ -16,7 +16,7 @@ Linux 用户可在 Snapcraft 中进行下载：https://snapcraft.io/mqttx
 
   此功能可通过点击右上角的下来菜单，选择流量统计，MQTT X 会自动订阅系统主题，并可以在页面中展示该 Broker 下的简单的流量统计图表，运行版本和运行时间。
 
-  > 注意：使用该功能时，可能会出现订阅系统主题失败的错误，此时可能是因为 EMQX 默认 **只允许** 本机的 MQTT 客户端订阅 $SYS 主题，或请参照 [内置 ACL](https://docs.emqx.cn/broker/latest/advanced/acl-file.html) 修改发布订阅 ACL 规则。
+  > 注意：使用该功能时，可能会出现订阅系统主题失败的错误，此时可能是因为 EMQX 默认 **只允许** 本机的 MQTT 客户端订阅 $SYS 主题，或请参照 [内置 ACL](https://www.emqx.io/docs/zh/latest/advanced/acl-file.html) 修改发布订阅 ACL 规则。
 
   ![mqttxbytes.png](https://assets.emqx.com/images/6f10f501a0e5fb530f8bbc9929dd2e03.png)
 

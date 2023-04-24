@@ -8,9 +8,6 @@ MySQL 属于传统的关系型数据库产品，其开放式的架构使得用�
 
 为方便管理操作，可下载使用官方免费图形化管理软件 [MySQL Workbeanch](https://dev.mysql.com/downloads/workbench/)。
 
-> 如果读者使用的是 MySQL 8.0 及以上版本，MySQL 需按照[ EMQX 无法连接 MySQL 8.0](https://docs.emqx.io/faq/v3/cn/errors.html#emq-x-无法连接-mysql-80) 教程特殊配置。
-
-
 
 ## 准备
 

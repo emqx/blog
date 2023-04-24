@@ -174,7 +174,7 @@ Once the connection is configured, we need to tell InfluxDB Cloud which topics i
 
 Just give the topic name here. I used "influxdb" for this demo. It's easy to understand. All data sent to this topic will be forwarded to InfluxDB Cloud.
 
-While we've used an explicit topic name here, InfluxDB Cloud Native Collector do support wildcards like "+" and "#". Using wildcards is more practical in real use cases. Check [InfluxDB Cloud’s doc](https://docs.influxdata.com/influxdb/cloud/) for more information.
+While we've used an explicit topic name here, InfluxDB Cloud Native Collector do support wildcards like "+" and "#". Using wildcards is more practical in real use cases. Check [InfluxDB Cloud’s doc](https://docs.influxdata.com/influxdb/v2.6//cloud/) for more information.
 
 #### Set Write Destination
 

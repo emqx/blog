@@ -24,7 +24,7 @@ eKuiper 提供了统一的，多数据库通用的 SQL 拉取 source，可定时
 
 除了数据拉取，我们也提供了数据写入的通用 SQL 插件。值得注意的是，eKuiper 本身已经提供了针对 InfluxDB、TDengine 等时序数据库的专用插件。通用 SQL 插件同样可以支持连接这些数据库，但提供的是 insert 功能，不支持特定数据库的非标准概念，例如 TDengine 的超级表只能使用 TDengine 插件进行写入。
 
-更多信息以及支持的数据库列表，请参见 [SQL source 插件](https://ekuiper.org/docs/zh/latest/rules/sources/plugin/sql.html)和 [SQL sink 插件](https://ekuiper.org/docs/zh/latest/rules/sinks/plugin/sql.html)文档。
+更多信息以及支持的数据库列表，请参见 [SQL source 插件](https://ekuiper.org/docs/zh/latest/guide/sources/plugin/sql.html)和 [SQL sink 插件](https://ekuiper.org/docs/zh/latest/guide/sinks/plugin/sql.html)文档。
 
 ### 其余新功能回顾
 

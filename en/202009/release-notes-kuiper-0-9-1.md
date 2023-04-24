@@ -2,7 +2,7 @@ Date: 2020/9/22
 
 The Kuiper team would like to announce the release of Kuiper 0.9.1. 
 
-Kuiper 0.9.1 now is [available for download](https://github.com/emqx/kuiper/releases/tag/0.9.1).
+Kuiper 0.9.1 now is [available for download](https://github.com/lf-edge/ekuiper/releases/tag/0.9.1).
 
 EMQX Kuiper is an edge lightweight IoT data analytics / streaming software implemented by Golang, and it can be run at all kinds of resource constrained edge devices. One goal of Kuiper is to migrate the cloud streaming software frameworks (such as [Apache Spark](https://spark.apache.org/)，[Apache Storm](https://storm.apache.org/) and [Apache Flink](https://flink.apache.org/)) to edge side. Kuiper references these cloud streaming frameworks, and also considered special requirement of edge analytics, and introduced **rule engine**, which is based on `Source`, `SQL (business logic)` and `Sink`, rule engine is used for developing streaming applications at edge side.
 
@@ -22,7 +22,7 @@ Kuiper 0.9.1 provides a management console, which can be used for Kuiper node ma
 
 ### Features & fixes
 
-- Visualize management: A separated new Docker image was released with this new version. The image is a web based management console, and it provides streams, rules and plugins management. Please refer to [doc] (https://github.com/emqx/kuiper/tree/master/docs/en_US/manager-ui/overview.md) fore more detailed information.
+- Visualize management: A separated new Docker image was released with this new version. The image is a web based management console, and it provides streams, rules and plugins management. Please refer to [doc] (https://github.com/lf-edge/ekuiper/tree/master/docs/en_US/manager-ui/overview.md) fore more detailed information.
 
  ![stream.png](https://assets.emqx.com/images/2cc9f228be272beff3785c38bafc04ab.png)
 
@@ -36,7 +36,7 @@ Kuiper 0.9.1 provides a management console, which can be used for Kuiper node ma
 
   MQTT sink configurations setting, user can input or select related properties in the UI.
 
-- Binary plugins: From this version, all of the plugins that submit to Github main repository will be compiled and published automatically when a new version is released. User can install & use the plugins through management console. When developer create PR for plugin code, the [plugin metadata information](https://github.com/emqx/kuiper/blob/master/docs/zh_CN/plugins/overview.md) can be provided, and then the related information will be displayed in the management console. It can greatly reduce the effort for using the plugins.
+- Binary plugins: From this version, all of the plugins that submit to Github main repository will be compiled and published automatically when a new version is released. User can install & use the plugins through management console. When developer create PR for plugin code, the [plugin metadata information](https://github.com/lf-edge/ekuiper/blob/master/docs/zh_CN/plugins/overview.md) can be provided, and then the related information will be displayed in the management console. It can greatly reduce the effort for using the plugins.
 
 - User can control to cache the data that failed to publish in the sink by set `disableCache` of `kuiper.yaml`. 
 
@@ -48,11 +48,11 @@ Kuiper 0.9.1 provides a management console, which can be used for Kuiper node ma
 
 - Fixed below issues
 
-  - [Edgex-ui cannot post cross-domain requests](https://github.com/emqx/kuiper/issues/405)
-  - [Kuiper process exits in log debug mode]( https://github.com/emqx/kuiper/issues/438)
-  - [Rule is created even with error reported during rule creation](https://github.com/emqx/kuiper/issues/426)
-  - [Set sendSingle as true but no data template is specified, the process is quit](https://github.com/emqx/kuiper/issues/416)
-  - [Use describe plugin command error](https://github.com/emqx/kuiper/issues/413)
+  - [Edgex-ui cannot post cross-domain requests](https://github.com/lf-edge/ekuiper/issues/405)
+  - [Kuiper process exits in log debug mode]( https://github.com/lf-edge/ekuiper/issues/438)
+  - [Rule is created even with error reported during rule creation](https://github.com/lf-edge/ekuiper/issues/426)
+  - [Set sendSingle as true but no data template is specified, the process is quit](https://github.com/lf-edge/ekuiper/issues/416)
+  - [Use describe plugin command error](https://github.com/lf-edge/ekuiper/issues/413)
   - Nested struct definition reports syntax error.
 
 ### Thanks
@@ -68,7 +68,7 @@ The Kuiper project will keep the good momentum of rapidly development in 2020, i
 - Kuiper 1.0.0（Q3 or Q4）release: 1.0.0 version will be released at Q3 or Q4 of 2020.
 - EdgeX Hanoi version integration (Q4): Kuiper will support the newly added array data type in EdgeX; and support the EdgeX UI to manage Kuiper's streams, rules, etc., it will be more convenient when using Kuiper. 
 
-You can click [Kuiper 2020 milestone](https://github.com/emqx/kuiper/projects/1) to get more detailed information, and the latest updates.
+You can click [Kuiper 2020 milestone](https://github.com/lf-edge/ekuiper/projects/1) to get more detailed information, and the latest updates.
 
 ## Contact
 

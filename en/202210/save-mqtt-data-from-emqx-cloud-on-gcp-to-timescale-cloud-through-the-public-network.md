@@ -34,7 +34,7 @@ If you are creating a Timescale Cloud instance for the first time, you can refer
  
 ![Create Timescale Cloud instances](https://assets.emqx.com/images/f330ba69cdee0da95221c1f90ce4847a.png)
  
-When you have a service up and running, you can connect to it from your local system using the psql command-line utility. If you've used PostgreSQL before, you might already have [psql installed](https://docs.timescale.com/timescaledb/latest/how-to-guides/connecting/psql/). If not, check out the installing psql section.
+When you have a service up and running, you can connect to it from your local system using the psql command-line utility. If you've used PostgreSQL before, you might already have [psql installed](https://docs.timescale.com/use-timescale/latest/connecting/psql/). If not, check out the installing psql section.
 
 ```
 # install psql
@@ -158,7 +158,7 @@ In the Timescale Cloud database instance, the default max_connections is 25, whi
 
    We recommend you to use [MQTT X](https://mqttx.app/), an elegant cross-platform MQTT 5.0 desktop client to subscribe/publish messages.
 
-   Click on the add button and fill in the deployment information to connect to the deployment. You need to replace `broker.emqx.io` with the created deployment [connection address](https://docs.emqx.com/en/cloud/latest/deployments/view_deployment.html#view-deployment-information), add [client authentication information](https://docs.emqx.com/en/cloud/latest/deployments/auth.html#authentication) to the EMQX Cloud console. Enter the topic name and payload message to publish the message.
+   Click on the add button and fill in the deployment information to connect to the deployment. You need to replace `broker.emqx.io` with the created deployment [connection address](https://docs.emqx.com/en/cloud/latest/create/overview.html#view-deployment-information), add [client authentication information](https://docs.emqx.com/en/cloud/latest/deployments/auth_overview.html#authentication) to the EMQX Cloud console. Enter the topic name and payload message to publish the message.
 
    ![MQTT Client](https://assets.emqx.com/images/220a77e00ad55b085c2880ca76ad51a6.png) 
 

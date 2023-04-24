@@ -172,7 +172,7 @@ MQTT X 具备连接导入导出功能，以下是本文测试使用的连接数�
 ![MQTT 服务器消息传输延时测试模型](https://assets.emqx.com/images/be1b6d5e21db52fb8d2514206905b5de.png)
 
 
-测试代码：[free-online-public-broker-test.js](https://github.com/wivwiv/mqtt-explore/blob/master/free-online-public-broker-test.js)
+测试代码：[free-online-public-broker-test.js](https://github.com/wivwiv/mqtt-explore/blob/master/free_online_public_broker_test.js)
 
 ### 时延历史
 

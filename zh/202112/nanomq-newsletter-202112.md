@@ -113,7 +113,7 @@ bridge.mqtt.parallel=2
 
 ![NanoMQ.png](https://assets.emqx.com/images/4c2eb846529d49339b79dc0911d59798.png)
 
-NanoMQ 桥接至 EMQX 的配置如上一章节所述。EMQX 桥接至 NanoMQ 的配置可参考 [https://docs.emqx.io/en/broker/v4.3/bridge/bridge-mqtt.html#mqtt-bridge](https://docs.emqx.io/en/broker/v4.3/bridge/bridge-mqtt.html#mqtt-bridge)
+NanoMQ 桥接至 EMQX 的配置如上一章节所述。EMQX 桥接至 NanoMQ 的配置可参考 [https://www.emqx.io/docs/en/v4.3/bridge/bridge-mqtt.html](https://www.emqx.io/docs/en/v4.3/bridge/bridge-mqtt.html)
 
 
 <section class="promotion">

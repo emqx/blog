@@ -22,7 +22,7 @@ EMQX Enterprise v4.3.0 版本继承了开源版 4.3.0 版本中的诸多性能�
 
 ## 规则引擎升级：数据灵活无限集成
 
-[EMQX 的规则引擎](https://docs.emqx.cn/enterprise/latest/rule/rule-engine.html)是标准 MQTT 之上基于 SQL 的核心数据处理与分发组件，可以方便的筛选并处理 MQTT 消息与设备生命周期事件，分发移动数据到包括 MySQL、InfluxDB、Kafka 在内的十余种数据库和消息系统中，能够零代码集成企业系统，帮助企业快速构建 IoT 平台和应用。
+[EMQX 的规则引擎](https://docs.emqx.com/zh/enterprise/v4.4/rule/rule-engine.html)是标准 MQTT 之上基于 SQL 的核心数据处理与分发组件，可以方便的筛选并处理 MQTT 消息与设备生命周期事件，分发移动数据到包括 MySQL、InfluxDB、Kafka 在内的十余种数据库和消息系统中，能够零代码集成企业系统，帮助企业快速构建 IoT 平台和应用。
 
 作为 EMQX 重磅功能，规则引擎基于 SQL 提供了清晰、灵活的「配置式」业务集成方案，简化了业务开发流程，提升用户易用性并降低业务系统与 EMQX 的耦合度。
 ![配图3.png](https://assets.emqx.com/images/40b090be34291c0d202613e2598ff767.png)

@@ -55,7 +55,7 @@ npm install mqtt -g
 - TCP Port: **1883**
 - SSL/TLS Port: **8883**
 
-更多详情请访问 [EMQX Cloud 官网](https://www.emqx.com/zh/cloud)，或查看 [EMQX Cloud 文档](https://docs.emqx.cn/cloud/latest/)。
+更多详情请访问 [EMQX Cloud 官网](https://www.emqx.com/zh/cloud)，或查看 [EMQX Cloud 文档](https://docs.emqx.com/zh/cloud/latest/)。
 
 ### 简单例子
 

@@ -14,9 +14,9 @@ MQTT, known as Message Queuing Telemetry Transport, is a lightweight IoT messagi
 
 [EMQX Cloud](https://www.emqx.com/en/cloud) is an MQTT messaging middleware product for the IoT domain from EMQ. As the world's first fully managed [MQTT 5.0](https://www.emqx.com/en/mqtt/mqtt5) public cloud service, EMQX Cloud provides a one-stop O&M colocation and a unique isolated environment for MQTT messaging services. It serves dozens of countries and regions around the world, providing low-cost, secure, and reliable cloud services for 5G and Internet of Everything applications.
 
-EMQX Cloud is available in three plans: Basic, Professional, and Unlimited, which offers a variety of flexible product specifications to support the deployment of fully managed MQTT services exclusively for you on the world's leading public clouds. Need more information with EMQX Cloud's product plan? Click[ here](https://docs.emqx.io/en/cloud/latest/pricing.html).
+EMQX Cloud is available in three plans: Basic, Professional, and Unlimited, which offers a variety of flexible product specifications to support the deployment of fully managed MQTT services exclusively for you on the world's leading public clouds. Need more information with EMQX Cloud's product plan? Click[ here](https://docs.emqx.com/en/cloud/latest/pricing.html).
 
-Such a powerful product is a great choice to integrate with openHAB. You could check out the[ documentation](https://docs.emqx.io/en/cloud/latest/) to get more information regarding EMQX Cloud。
+Such a powerful product is a great choice to integrate with openHAB. You could check out the[ documentation](https://docs.emqx.com/en/cloud/latest/) to get more information regarding EMQX Cloud。
 
 
 
@@ -33,8 +33,6 @@ If it's your first time using EMQX Cloud, don't worry. We will guide you through
    ```
 
 3. After the new deployment is created and the status is **running**, add the client authentication information (you could choose to add manually or import from the file).  
-
-   ![add authentication](https://docs.emqx.io/assets/img/auth.6543e1b4.png)
 
 4. Install openHAB. You could easily get openHAB installed by following the steps shown [here](https://www.openhab.org/docs/installation/). OpenHAB could be run on various systems based on your preference. 
 

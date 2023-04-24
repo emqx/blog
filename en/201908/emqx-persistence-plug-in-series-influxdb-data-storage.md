@@ -8,7 +8,7 @@ This article uses the actual example in the `CentOS 7.2` system to illustrate ho
 
 ## Install and verify the InfluxDB server
 
-Readers can refer to the InfluxDB official documentation (https://docs.influxdata.com/influxdb) or Docker (https://hub.docker.com/_/influxdb) to download and install the InfluxDB server. This article uses the InfluxDB version 1.7.
+Readers can refer to the InfluxDB official documentation (https://docs.influxdata.com/influxdb/v2.6/) or Docker (https://hub.docker.com/_/influxdb) to download and install the InfluxDB server. This article uses the InfluxDB version 1.7.
 
 
 

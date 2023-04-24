@@ -106,7 +106,7 @@ EMQX 部署成功后，将部署 3 副本的有状态副本集（Statefulsets）
 
 ![](https://pek3b.qingstor.com/kubesphere-docs/png/20191025104359.png)
 
-3. 在首页的监控列表即可看到 EMQX Broker 的系统信息，包括 3 Nodes 和 3 Stats 监控信息，状态显示 Running。用户可通过 Web 控制台，查看服务器 **运行状态、统计数据、连接(Connections)、会话(Sessions)、主题(Topics)、订阅(Subscriptions)、插件(Plugins)** 等信息。关于 EMQX 的详细使用请参考 EMQX 官方文档 (docs.emqx.io)。
+1. 在首页的监控列表即可看到 EMQX Broker 的系统信息，包括 3 Nodes 和 3 Stats 监控信息，状态显示 Running。用户可通过 Web 控制台，查看服务器 **运行状态、统计数据、连接(Connections)、会话(Sessions)、主题(Topics)、订阅(Subscriptions)、插件(Plugins)** 等信息。关于 EMQX 的详细使用请参考 EMQX 官方文档 (https://www.emqx.io/docs/zh/latest/)。
 
 ![](https://pek3b.qingstor.com/kubesphere-docs/png/20191025104904.png)
 

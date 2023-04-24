@@ -119,6 +119,6 @@ If the sending client also subscribes to the same `topic`, the client will immed
 
 
 
-The above is a brief overview of how to use MQTT X. Readers can use MQTT X entirety through the  [manual](https://github.com/emqx/MQTTX/blob/master/docs/manual.md) on GitHub.
+The above is a brief overview of how to use MQTT X. Readers can use MQTT X entirety through the  [manual](https://github.com/emqx/MQTTX/blob/main/docs/manual.md) on GitHub.
 
 This project is based on the Apache 2.0 open source protocol. In the process of using, you can go to [GitHub issues](https://github.com/emqx/MQTTX/issues) to submit issues, discuss opinions or submit PR to us. We will carefully review and respond to all questions.

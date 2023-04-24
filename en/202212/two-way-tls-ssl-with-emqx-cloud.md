@@ -10,7 +10,7 @@ In this article, we will set up a two-way TLS/SSL authentication for an EMQX Clo
 
 ## Prerequisites
 
-- An [EMQX Cloud Professional deployment](https://docs.emqx.com/en/cloud/latest/deployments/create_deployment.html) up and running: for this example, a deployment to AWS will be used.
+- An [EMQX Cloud Professional deployment](https://docs.emqx.com/en/cloud/latest/create/overview.html) up and running: for this example, a deployment to AWS will be used.
 - An MQTT client installed: for this example, [MQTT X](https://mqttx.app/docs/downloading-and-installation) will be used.
 - A registered domain: for this example, [AWS Route 53](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/domain-register.html#domain-register-procedure) will be used.
 
@@ -164,7 +164,7 @@ More information from Let's Encrypt on their certificate chain can be found [her
 
 ## Test two-way TLS/SSL with MQTT X
 
-1. Ensure the existence of a username and password to connect to the deployment. Help creating users can be found [here](https://docs.emqx.com/en/cloud/latest/deployments/auth.html#authentication).
+1. Ensure the existence of a username and password to connect to the deployment. Help creating users can be found [here](https://docs.emqx.com/en/cloud/latest/deployments/auth_overview.html#authentication).
 
 2. In the Let's Encrypt certificate directory, create a new `root.pem` file and add the root (last) certificate from `fullchain.pem`.
 

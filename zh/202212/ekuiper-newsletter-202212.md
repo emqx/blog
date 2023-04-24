@@ -13,7 +13,7 @@ eKuiper 通过 source/sink 与外部系统进行连接、读入或写出数据�
 
 ### 连接和序列化
 
-此前，连接和序列化通常在 source 内部实现，因此当用户需要解析自定义格式时，即使连接协议是 MQTT 等已支持协议，仍然需要编写完整的 source 插件。新的版本中，格式和 source 类型进一步分离，用户可以自定义格式，而各种格式可以与不同的连接类型结合使用。自定义格式的编写方法请参考[格式扩展](https://ekuiper.org/docs/zh/latest/rules/codecs.html#格式扩展)。
+此前，连接和序列化通常在 source 内部实现，因此当用户需要解析自定义格式时，即使连接协议是 MQTT 等已支持协议，仍然需要编写完整的 source 插件。新的版本中，格式和 source 类型进一步分离，用户可以自定义格式，而各种格式可以与不同的连接类型结合使用。自定义格式的编写方法请参考[格式扩展](https://ekuiper.org/docs/zh/latest/guide/serialization/serialization.html#格式扩展)。
 
 例如，创建 MQTT 类型的数据流时可定义各种不同的 payload 格式。默认的 JSON 格式：
 

@@ -12,7 +12,7 @@ MQTT was created by [Andy Stanford-Clark](http://en.wikipedia.org/wiki/Andy_Stan
 - Data irrelevant (Payload data format does not matter)
 - Continuous session awareness (always know whether the device is online)
 
-According to Arlen Nipper on [IBM Podcast](https://www.ibm.com/podcasts/software/websphere/connectivity/piper_diaz_nipper_mq_tt_11182011.pdf), MQTT was originally named `MQ TT`. Note the space between `MQ` and `TT`. The full name is MQ Telemetry Transport. It is a real-time data transmission protocol that he developed while working on a crude oil pipeline SCADA system for Conoco Phillips in the early 1990s. Its purpose was to allow sensors to communicate with IBM's MQ Integrator via [VSAT](https://en.wikipedia.org/wiki/Very-small-aperture_terminal), which has limited bandwidth. The name `MQ TT` was chosen in accordance with industry practice because Nipper is a remote sensing and data acquisition and monitoring professional.
+According to Arlen Nipper on [IBM Podcast](https://f.hubspotusercontent00.net/hubfs/6941105/Que%20es%20MQTT%20-%20IBM%20podcast%20-%20Piper,%20Diaz,%20Nipper%20-%2011182011-1.pdf), MQTT was originally named `MQ TT`. Note the space between `MQ` and `TT`. The full name is MQ Telemetry Transport. It is a real-time data transmission protocol that he developed while working on a crude oil pipeline SCADA system for Conoco Phillips in the early 1990s. Its purpose was to allow sensors to communicate with IBM's MQ Integrator via [VSAT](https://en.wikipedia.org/wiki/Very-small-aperture_terminal), which has limited bandwidth. The name `MQ TT` was chosen in accordance with industry practice because Nipper is a remote sensing and data acquisition and monitoring professional.
 
 ### Comparison Between MQTT and Other Protocols
 

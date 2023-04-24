@@ -257,7 +257,7 @@ payload:
 
 ![img](https://assets.emqx.com/images/489401abf7ae1cadf35ea31d6f5db5df.png)            
 
-注意：如果测试失败，请检查是否完成对等连接，详情请看 [VPC 对等连接](https://docs.emqx.cn/cloud/latest/deployments/vpc_peering.html)，并检查 URL 是否正确。
+注意：如果测试失败，请检查是否完成对等连接，详情请看 [VPC 对等连接](https://docs.emqx.com/zh/cloud/latest/deployments/vpc_peering.html)，并检查 URL 是否正确。
 
 点击确定，返回到配置动作页面，Kafka 主题填写刚刚创建的 testTopic 主题，在消息内容模板里填写 "hello from emqx cloud"，资源 ID 默认，点击确定。
 
@@ -268,7 +268,7 @@ payload:
 
 #### 6.4 测试
 
-如果您是第一次使用 EMQX Cloud 可以前往[部署连接指南](https://docs.emqx.cn/cloud/latest/connect_to_deployments/introduction.html)，查看 MQTT 客户端连接和测试指南
+如果您是第一次使用 EMQX Cloud 可以前往[部署连接指南](https://docs.emqx.com/zh/cloud/latest/connect_to_deployments/overview.html)，查看 MQTT 客户端连接和测试指南
 
 我们尝试向 home/sensor 主题发送下面的数据
 

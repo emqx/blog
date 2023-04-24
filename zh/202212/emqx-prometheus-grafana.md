@@ -56,7 +56,7 @@ docker pull prom/prometheus
 docker run -d --name grafana -p 3000:3000 grafana/grafana-oss
 ```
 
-读者也可以参考 [Grafana 官方文档](https://grafana.com/docs/grafana/latest/installation/docker/)，下载和使用二进制包来安装和运行 Grafana。
+读者也可以参考 [Grafana 官方文档](https://grafana.com/docs/grafana/latest/setup-grafana/installation/docker/)，下载和使用二进制包来安装和运行 Grafana。
 
 当 Grafana 启动完成后，我们可以打开 `http://localhost:3000` 来访问 Grafana，如果能够正常访问到 Grafana 的登录页面，此时说明 Grafana 已经安装成功。
 

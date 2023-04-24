@@ -115,7 +115,7 @@ auth.http.auth_req.headers.content_type = application/x-www-form-urlencoded
 auth.http.auth_req.params = clientid=%c,username=%u,password=%P
 ```
 
-配置完成后，NanoMQ 就会根据配置设置的请求格式将客户端 Connect 包的信息请求对应的 HTTP URL。并根据返回码判断是否允许客户端连接成功（Code 200 表示成功）。更详细的配置方式请参阅官网配置文档[https://nanomq.io/docs/en/latest/config-description.html#parameter-description](https://nanomq.io/docs/en/latest/config-description.html#parameter-description)。
+配置完成后，NanoMQ 就会根据配置设置的请求格式将客户端 Connect 包的信息请求对应的 HTTP URL。并根据返回码判断是否允许客户端连接成功（Code 200 表示成功）。更详细的配置方式请参阅官网配置文档[https://nanomq.io/docs/en/latest/config-description/v014.html#parameter-description](https://nanomq.io/docs/en/latest/config-description/v014.html#parameter-description)。
 
 ## 其他功能优化及 Bug 修复
 

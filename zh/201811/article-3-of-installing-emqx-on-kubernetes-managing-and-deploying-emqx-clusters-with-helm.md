@@ -50,7 +50,7 @@ Tiller 服务器通过 Kubernetes 的 ConfigMap 存储信息，因此本身没�
 
 在进行 Helm 客户端安装前，请确认已有可用的 Kubernetes 集群环境，并已安装了 `kubectl`。
 
-通过访问：https://github.com/kubernetes/helm/releases。
+通过访问：<https://github.com/kubernetes/helm/releases> 。
 下载 Helm 的合适的版本。
 
 1. 此文下载 `helm-v2.8.0-linux-amd64.tgz` 版本；

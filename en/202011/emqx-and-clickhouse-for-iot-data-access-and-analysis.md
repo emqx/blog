@@ -89,7 +89,7 @@ EMQX Cloud offers a 6-month free trial to newly registered users. After register
 
 #### Method 2: private deployment installation
 
-> If you are new to EMQX, we recommend [EMQX documentation](https://docs.emqx.io/broker/latest/en/) to get started quickly.
+> If you are new to EMQX, we recommend [EMQX documentation](https://www.emqx.io/docs/en/latest/) to get started quickly.
 
 Access the [EMQ download](https://www.emqx.com/en/try?product=enterprise) page to download the appropriate package for your operating system. At the time of this writing, the Enterprise version of EMQX is v4.1.2. The steps to download the zip package are as follows:
 
@@ -164,7 +164,7 @@ create database test;
 use test;
 ```
 
-The ClickHouse SQL syntax for creating a sensor_data table differs from that of a regular relational database, see [ClickHouse documentation-SQL-syntax](https://clickhouse.tech/docs/zh/sql-reference/syntax/):
+The ClickHouse SQL syntax for creating a sensor_data table differs from that of a regular relational database, see [ClickHouse documentation-SQL-syntax](https://clickhouse.com/docs/zh/sql-reference/syntax):
 
 > The DataTime and Date columns need to be added to the Grafana chronological display.
 

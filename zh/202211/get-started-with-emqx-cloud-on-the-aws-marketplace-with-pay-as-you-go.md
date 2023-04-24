@@ -57,7 +57,7 @@
 
 关于如何学习上手使用 EMQX Cloud，可参考如下教程：
 
-- [Have an overview of EMQX Cloud deployment](https://docs.emqx.com/en/cloud/latest/deployments/view_deployment.html)
+- [Have an overview of EMQX Cloud deployment](https://docs.emqx.com/en/cloud/latest/create/overview.html)
 - [How to connect to the deployment with MQTT X](https://docs.emqx.com/en/cloud/latest/connect_to_deployments/mqttx.html)
 - [How to configure TLS/SSL](https://docs.emqx.com/en/cloud/latest/deployments/tls_ssl.html)
 - [VAS Introduction](https://docs.emqx.com/en/cloud/latest/vas/vas-intro.html)

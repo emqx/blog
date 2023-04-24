@@ -8,7 +8,7 @@ InfluxDB 是一个由 InfluxData 开发的开源时序型数据库。 它由 Go 
 
 ## 安装与验证 InfluxDB 服务器
 
-读者可以参考 InfluxDB 官方文档(https://docs.influxdata.com/influxdb) 或 Docker (https://hub.docker.com/_/influxdb) 来下载安装 InfluxDB 服务器，本文使用 InfluxDB 1.7 版本。
+读者可以参考 InfluxDB 官方文档(https://docs.influxdata.com/influxdb/v2.6/) 或 Docker (https://hub.docker.com/_/influxdb) 来下载安装 InfluxDB 服务器，本文使用 InfluxDB 1.7 版本。
 
 
 
