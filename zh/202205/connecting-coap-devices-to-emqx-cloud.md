@@ -34,7 +34,7 @@ CoAP 参考了很多 HTTP 的设计思路，同时也根据受限资源限制设
 
 ### 创建部署
 
-[新建部署](https://docs.emqx.com/zh/cloud/latest/deployments/create_deployment.html#限制)，在 EMQX Cloud 部署页面，获取到公网连接地址：120.77.x.x。
+[新建部署](https://docs.emqx.com/zh/cloud/latest/create/overview.html#限制)，在 EMQX Cloud 部署页面，获取到公网连接地址：120.77.x.x。
 
 ![EMQX Cloud 创建部署](https://assets.emqx.com/images/ea55ccbe53315026bec4f2a05fa3cd07.png)
 

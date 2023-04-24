@@ -8,7 +8,7 @@ This article mainly introduces how to use [MQTT](https://mqtt.org/) in the React
 
 ### New project
 
-Reference link: [https://reactjs.org/docs/getting-started.html](https://reactjs.org/docs/getting-started.html)
+Reference link: [https://legacy.reactjs.org/docs/getting-started.html](https://legacy.reactjs.org/docs/getting-started.html)
 
 - Creating new React applications with `Create React App`
 

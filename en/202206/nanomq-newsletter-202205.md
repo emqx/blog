@@ -106,7 +106,7 @@ auth.http.auth_req.headers.content_type = application/x-www-form-urlencoded
 auth.http.auth_req.params = clientid=%c,username=%u,password=%P
 ```
 
-Upon completion of the configuration, NanoMQ will request the corresponding HTTP URL for the message of the client-side Connect package according to the request format set in the configuration, and judge whether the client connection is allowed to succeed according to the return code (Code 200 expresses success). Please refer to the official website configuration files for more detailed configuration methods: [https://nanomq.io/docs/en/latest/config-description.html#parameter-description](https://nanomq.io/docs/en/latest/config-description.html#parameter-description).
+Upon completion of the configuration, NanoMQ will request the corresponding HTTP URL for the message of the client-side Connect package according to the request format set in the configuration, and judge whether the client connection is allowed to succeed according to the return code (Code 200 expresses success). Please refer to the official website configuration files for more detailed configuration methods: [https://nanomq.io/docs/en/latest/config-description/v014.html#parameter-description](https://nanomq.io/docs/en/latest/config-description/v014.html#parameter-description).
 
 ## Other optimization and bug fix
 

@@ -120,7 +120,7 @@ Until the status of the table is active, it means that you have successfully cre
 
    We recommend you to use [MQTT X](https://mqttx.app/), an elegant cross-platform MQTT 5.0 desktop client to subscribe/publish messages.
 
-   Click on the add button and fill in the deployment information to connect to the deployment. You need to replace `broker.emqx.io` with the created deployment [connection address](https://docs.emqx.com/en/cloud/latest/deployments/view_deployment.html#view-deployment-information), add [client authentication information](https://docs.emqx.com/en/cloud/latest/deployments/auth.html#authentication) to the EMQX Cloud console. Enter the topic name and payload message to publish the message.
+   Click on the add button and fill in the deployment information to connect to the deployment. You need to replace `broker.emqx.io` with the created deployment [connection address](https://docs.emqx.com/en/cloud/latest/create/overview.html#view-deployment-information), add [client authentication information](https://docs.emqx.com/en/cloud/latest/deployments/auth_overview.html#authentication) to the EMQX Cloud console. Enter the topic name and payload message to publish the message.
 
    ![MQTTX](https://assets.emqx.com/images/3d3ba6a7cf7228c0661beb4a15c5f20f.png)
 

@@ -239,7 +239,7 @@ $ curl -i --basic -u admin:public -X POST "http://localhost:8081/api/v1" -d '{"r
 | :--- | :------ | :------- | :----- | :----------------------------------------------------------- |
 | req  | Integer | Required | 12     | 请求码 *12*。                                                |
 | seq  | Integer | Required | unique | seq 是全局唯一的，请求/响应信息都会携带该信息，可以通过该值确定对应的请求响应。 |
-| data | Object  | Required |        | 同获取配置一致[data](https://nanomq.io/docs/zh/latest/http-api.html#获取当前配置)。 |
+| data | Object  | Required |        | 同获取配置一致[data](https://nanomq.io/docs/zh/latest/http-api/v4.html#获取当前配置)。 |
 
 **Success Response Body (JSON)**
 
@@ -251,7 +251,7 @@ $ curl -i --basic -u admin:public -X POST "http://localhost:8081/api/v1" -d '{"r
 
 > 注意：远程修改配置后，需要重启 NanoMQ 以生效。
 
-关于其他 HTTP API 支持以及返回码和状态码具体细节请参阅 [https://nanomq.io/docs/zh/latest/http-api.html](https://nanomq.io/docs/zh/latest/http-api.html)。
+关于其他 HTTP API 支持以及返回码和状态码具体细节请参阅 [https://nanomq.io/docs/zh/latest/http-api/v4.html](https://nanomq.io/docs/zh/latest/http-api/v4.html)。
 
 ## Bug 修复
 

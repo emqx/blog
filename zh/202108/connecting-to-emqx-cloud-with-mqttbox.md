@@ -27,7 +27,7 @@ MQTTBox 完整的支持了以下功能：
 - TCP Port: **1883**
 - SSL/TLS Port: **8883**
 
-更多详情请访问 [EMQX Cloud 官网](https://www.emqx.com/zh/cloud)，或查看 [EMQX Cloud 文档](https://docs.emqx.cn/cloud/latest/)。 
+更多详情请访问 [EMQX Cloud 官网](https://www.emqx.com/zh/cloud)，或查看 [EMQX Cloud 文档](https://docs.emqx.com/zh/cloud/latest/)。 
 
 
 
@@ -71,7 +71,7 @@ MQTTBox 完整的支持了以下功能：
 
 除普通连接外，MQTTBox 还支持 TLS/SSL 连接。
 
-如使用 EMQX Cloud 的话，可以参考该[文档](https://docs.emqx.cn/cloud/latest/deployments/tls_ssl.html#%E8%AF%81%E4%B9%A6%E9%99%90%E5%88%B6)来创建证书。我们可以进入到客户端详情页中，选择协议为 mqtts/tls 或者 wss，然后选择保存。
+如使用 EMQX Cloud 的话，可以参考该[文档](https://docs.emqx.com/zh/cloud/latest/deployments/tls_ssl.html#%E8%AF%81%E4%B9%A6%E9%99%90%E5%88%B6)来创建证书。我们可以进入到客户端详情页中，选择协议为 mqtts/tls 或者 wss，然后选择保存。
 
 如果是双向认证的话，可以在配置页面中选择 CA 证书文件，客户端证书和客户端 Key 文件，再选择连接。连接前请确定 TLS/SSL 连接的端口并做修改。
 

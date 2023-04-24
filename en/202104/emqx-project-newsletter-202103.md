@@ -21,7 +21,7 @@ In March, EMQ open-source team has got in touch with Synopsys Software Integrity
 - A dedicated test team is going to help us setup even more automated integration tests in  GitHub CI.
 - Our main Erlang project [emqx/emqx.git](https://github.com/emqx/emqx) is now passing dialyzer checks for the entire code base.
 - [Quicer](https://github.com/emqx/quic) (the QUIC protocol binding for Erlang/Elixir) project now supports macOS; and more inet/gen_tcp style APIs are added. We are finally about to start the PoC project MQTT-on-QUIC.
-- Kicked off the Rlog project aiming to make EMQX cluster more scalable. Rlog, implemented as a part of the [ekka](https://github.com/emqx/ekka) library, will provide a mechanism to asynchronously replicate Mnesia database. See [EIP-0004](https://github.com/emqx/eip/blob/main/active/0004-async-mnesia-change-log-replication.md) for more details.
+- Kicked off the Rlog project aiming to make EMQX cluster more scalable. Rlog, implemented as a part of the [ekka](https://github.com/emqx/ekka) library, will provide a mechanism to asynchronously replicate Mnesia database. See [EIP-0004](https://github.com/emqx/eip/blob/main/implemented/0004-async-mnesia-change-log-replication.md) for more details.
 - jq.erl. [jq](https://stedolan.github.io/jq/), de-facto JSON processing standard. Based on the open-source core, we have built a NIF binding which will then be integrated into EMQX's rule engine as a data processing function.
 
 

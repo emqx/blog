@@ -30,7 +30,7 @@
   CREATE STREAM demo (temperature bigint) WITH (FORMAT="JSON"...)
   ```
 
-  然而在 EdgeX 中，数据类型定义在 EdgeX `Core contract Service` 中已经指定，为了提升使用体验，用户可以在创建流的时候不指定数据类型。Kuiper 源会在初始化规则的时候，从 `Core contract Service` 中获取所有的 `value descriptors` 定义（所以如果有任何数据类型定义的变化，你需要重启规则）。当接收到来自于消息总线的数据的时候，会根规则转换为[相应的数据类型](https://github.com/emqx/kuiper/blob/master/docs/zh_CN/rules/sources/edgex.md)。
+  然而在 EdgeX 中，数据类型定义在 EdgeX `Core contract Service` 中已经指定，为了提升使用体验，用户可以在创建流的时候不指定数据类型。Kuiper 源会在初始化规则的时候，从 `Core contract Service` 中获取所有的 `value descriptors` 定义（所以如果有任何数据类型定义的变化，你需要重启规则）。当接收到来自于消息总线的数据的时候，会根规则转换为[相应的数据类型](https://github.com/lf-edge/ekuiper/blob/master/docs/zh_CN/rules/sources/edgex.md)。
 
 - 扩展支持 EdgeX 消息总线目标（sink），用于将处理结果写回至 EdgeX 消息总线。用户也可以选择将分析结果发送到 Kuiper 之前已经支持的 RestAPI 接口等。
 
@@ -84,7 +84,7 @@ curl -X POST \
 }'
 ```
 
-关于其它 API，请参考[该文档](https://github.com/emqx/kuiper/blob/master/docs/zh_CN/restapi/overview.md).
+关于其它 API，请参考[该文档](https://github.com/lf-edge/ekuiper/blob/master/docs/zh_CN/restapi/overview.md).
 
 #### 方式2: 使用 Kuiper 命令行
 
@@ -100,7 +100,7 @@ docker exec -it kuiper /bin/sh
 bin/cli create stream demo'() WITH (FORMAT="JSON", TYPE="edgex")'
 ```
 
-其它命令行，请参考[该文档](https://github.com/emqx/kuiper/blob/master/docs/zh_CN/cli/overview.md)。
+其它命令行，请参考[该文档](https://github.com/lf-edge/ekuiper/blob/master/docs/zh_CN/cli/overview.md)。
 
 ------
 
@@ -117,11 +117,11 @@ default:
 .....  
 ```
 
-更多关于配置文件的信息，请参考[该文档](https://github.com/emqx/kuiper/blob/master/docs/zh_CN/rules/sources/edgex.md).
+更多关于配置文件的信息，请参考[该文档](https://github.com/lf-edge/ekuiper/blob/master/docs/zh_CN/rules/sources/edgex.md).
 
 ### 创建规则
 
-让我们创建一条规则，将分析结果发送至 MQTT 服务器，关于 MQTT 目标的相关配置，请参考[这个链接](https://github.com/emqx/kuiper/blob/master/docs/zh_CN/rules/sinks/mqtt.md)。与创建流的过程类似，你可以选择使用 REST 或者命令行来管理规则。
+让我们创建一条规则，将分析结果发送至 MQTT 服务器，关于 MQTT 目标的相关配置，请参考[这个链接](https://github.com/lf-edge/ekuiper/blob/master/docs/zh_CN/rules/sinks/mqtt.md)。与创建流的过程类似，你可以选择使用 REST 或者命令行来管理规则。
 
 以下例子将选出所有 `events` 主题上所有的数据，分析结果将被
 
@@ -185,7 +185,7 @@ Rule rule1 was created successfully, please use 'cli getstatus rule rule1' comma
 
 ------
 
-如想将结果发送到别的目标，请参考 Kuiper 中支持的[其它目标](https://github.com/emqx/kuiper/blob/master/docs/zh_CN/rules/overview.md#actions)。你现在可以看一下在 `log/stream.log`中的日志文件，查看规则的详细信息。
+如想将结果发送到别的目标，请参考 Kuiper 中支持的[其它目标](https://github.com/lf-edge/ekuiper/blob/master/docs/zh_CN/rules/overview.md#actions)。你现在可以看一下在 `log/stream.log`中的日志文件，查看规则的详细信息。
 
 ```
 time="2020-04-17T06:32:24Z" level=info msg="Serving kuiper (version - 0.3.1-4-g9e63fe1) on port 20498, and restful api on port 9081. \n" file="server.go:101"
@@ -223,7 +223,7 @@ time="2020-04-17T06:32:31Z" level=info msg="sink result for rule rule1: [{\"bool
 ...
 ```
 
-你也可以敲入以下的命令来查看规则执行的状态。相关的查看规则状态的 REST API 也有提供，请检查[相关文档](https://github.com/emqx/kuiper/blob/master/docs/zh_CN/restapi/overview.md).
+你也可以敲入以下的命令来查看规则执行的状态。相关的查看规则状态的 REST API 也有提供，请检查[相关文档](https://github.com/lf-edge/ekuiper/blob/master/docs/zh_CN/restapi/overview.md).
 
 ```
 # bin/cli getstatus rule rule1
@@ -267,15 +267,15 @@ Connecting to 127.0.0.1:20498...
 
 ## 更多练习
 
-目前的规则没有过滤发送给 Kuiper 的任何数据，那么如何过滤数据呢？请使用[删除规则](https://github.com/emqx/kuiper/blob/master/docs/zh_CN/cli/rules.md)，然后试着更改一下 SQL 语句，完成更改后，重新部署规则。这时候如果监听 MQTT 服务的结果主题，检查一下相关的规则是否起作用？
+目前的规则没有过滤发送给 Kuiper 的任何数据，那么如何过滤数据呢？请使用[删除规则](https://github.com/lf-edge/ekuiper/blob/master/docs/zh_CN/cli/rules.md)，然后试着更改一下 SQL 语句，完成更改后，重新部署规则。这时候如果监听 MQTT 服务的结果主题，检查一下相关的规则是否起作用？
 
 ### 扩展阅读
 
-- 阅读 [EdgeX 源](https://github.com/emqx/kuiper/blob/master/docs/zh_CN/rules/sources/edgex.md) 获取更多详细信息，以及类型转换等。
-- [如何使用 meta 函数抽取在 EdgeX 消息总线中发送的更多信息？](https://github.com/emqx/kuiper/blob/master/docs/zh_CN/edgex/edgex_meta.md) 设备服务往总线上发送数据的时候，一些额外的信息也随之发送，比如时间创建时间，id 等。如果你想在 SQL 语句中使用这些信息，请参考这篇文章。
-- [EdgeX 消息总线目标](https://github.com/emqx/kuiper/blob/master/docs/zh_CN/rules/sinks/edgex.md). 该文档描述了如何使用 EdgeX 消息总线目标。如果你想把分析结果发送到消息总线中，你可能对此文章感兴趣。
+- 阅读 [EdgeX 源](https://github.com/lf-edge/ekuiper/blob/master/docs/zh_CN/rules/sources/edgex.md) 获取更多详细信息，以及类型转换等。
+- [如何使用 meta 函数抽取在 EdgeX 消息总线中发送的更多信息？](https://github.com/lf-edge/ekuiper/blob/master/docs/zh_CN/edgex/edgex_meta.md) 设备服务往总线上发送数据的时候，一些额外的信息也随之发送，比如时间创建时间，id 等。如果你想在 SQL 语句中使用这些信息，请参考这篇文章。
+- [EdgeX 消息总线目标](https://github.com/lf-edge/ekuiper/blob/master/docs/zh_CN/rules/sinks/edgex.md). 该文档描述了如何使用 EdgeX 消息总线目标。如果你想把分析结果发送到消息总线中，你可能对此文章感兴趣。
 
 如想了解更多的 EMQX Kuiper 的信息，请参考以下资源。
 
-- [Kuiper Github 代码库](https://github.com/emqx/kuiper/)
-- [Kuiper 参考指南](https://github.com/emqx/kuiper/blob/master/docs/zh_CN/reference.md)
+- [Kuiper Github 代码库](https://github.com/lf-edge/ekuiper/)
+- [Kuiper 参考指南](https://github.com/lf-edge/ekuiper/blob/master/docs/zh_CN/reference.md)

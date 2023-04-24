@@ -51,12 +51,12 @@ require (
 )
 ```
 
-Kuiper 插件有三种类型，源代码可放入对应的目录中。插件开发的详细方法请参看 [EMQX Kuiper 扩展](https://github.com/emqx/kuiper/blob/master/docs/en_US/extension/overview.md)。本文以目标（sink)为例，介绍插件的开发部署过程。我们将开发一个最基本的 MySql 目标，用于将流输出写入到 MySql 数据库中。
+Kuiper 插件有三种类型，源代码可放入对应的目录中。插件开发的详细方法请参看 [EMQX Kuiper 扩展](https://github.com/lf-edge/ekuiper/blob/master/docs/en_US/extension/overview.md)。本文以目标（sink)为例，介绍插件的开发部署过程。我们将开发一个最基本的 MySql 目标，用于将流输出写入到 MySql 数据库中。
 
 - 新建名为 samplePlugin 的插件项目，采用上文的目录结构
 - 在 sinks 目录下，新建 mysql.go 文件
 - 编辑 mysql.go 文件以实现插件
-  -  实现 [api.Sink](https://github.com/emqx/kuiper/blob/master/xstream/api/stream.go)接口
+  -  实现 [api.Sink](https://github.com/lf-edge/ekuiper/blob/master/xstream/api/stream.go)接口
   -  导出 Symbol：Mysql
 - 编辑 go.mod, 添加 mysql 驱动模块
 
@@ -185,7 +185,7 @@ require (
 
 ### 调试运行插件
 
-在本地或 Docker 中启动 Kuiper，创建流和规则，规则的 action 设置为 mysql 即可对自定义的 mysql sink 插件进行测试。创建流和规则的步骤请参考[ Kuiper 文档](https://github.com/emqx/kuiper/blob/master/docs/zh_CN/getting_started.md)。以下提供一个使用了 mysql 插件的规则供参考。
+在本地或 Docker 中启动 Kuiper，创建流和规则，规则的 action 设置为 mysql 即可对自定义的 mysql sink 插件进行测试。创建流和规则的步骤请参考[ Kuiper 文档](https://github.com/lf-edge/ekuiper/blob/master/docs/zh_CN/getting_started.md)。以下提供一个使用了 mysql 插件的规则供参考。
 
 ```
 {
@@ -217,7 +217,7 @@ require (
 
 ### 插件部署
 
-可以采用 [REST API](https://github.com/emqx/kuiper/blob/master/docs/en_US/restapi/plugins.md) 或者 [CLI](https://github.com/emqx/kuiper/blob/master/docs/en_US/cli/plugins.md) 进行插件管理。下文以 REST API 为例，将上一节编译的插件部署到生产环境中。
+可以采用 [REST API](https://github.com/lf-edge/ekuiper/blob/master/docs/en_US/restapi/plugins.md) 或者 [CLI](https://github.com/lf-edge/ekuiper/blob/master/docs/en_US/cli/plugins.md) 进行插件管理。下文以 REST API 为例，将上一节编译的插件部署到生产环境中。
 
 1. 插件打包并放到 http 服务器。将上一节编译好的插件 `.so` 文件及默认配置文件（只有 source 需要） `.yaml` 文件一起打包到一个 `.zip` 文件中，假设为 `mysqlSink.zip`。把该文件放置到生产环境也可访问的 http 服务器中。
 

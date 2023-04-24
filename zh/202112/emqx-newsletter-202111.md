@@ -1,4 +1,4 @@
-本月 EMQX 各团队针对近期发现的各项问题及用户反馈对产品进行了修复及功能升级。[EMQX 开源版](https://emqx.io/zh)发布了 v4.3.10，[EMQX 企业版](https://www.emqx.com/zh/products/emqx)发布了 v4.2.9 与 v4.3.5，进行了基于内置数据库的 ACL 性能优化、集群间调用可能导致客户端进程失去响应的问题修复等更新。[EMQX Cloud](https://www.emqx.com/zh/cloud) 本月上线了多个基于用户实际需求的新功能，持续完善产品体验。
+本月 EMQX 各团队针对近期发现的各项问题及用户反馈对产品进行了修复及功能升级。[EMQX 开源版](https://www.emqx.io/zh)发布了 v4.3.10，[EMQX 企业版](https://www.emqx.com/zh/products/emqx)发布了 v4.2.9 与 v4.3.5，进行了基于内置数据库的 ACL 性能优化、集群间调用可能导致客户端进程失去响应的问题修复等更新。[EMQX Cloud](https://www.emqx.com/zh/cloud) 本月上线了多个基于用户实际需求的新功能，持续完善产品体验。
 
 ## EMQX ：企业版 v4.4 问世在即，开源版 v5.0-beta.2 进入测试阶段
 

@@ -31,7 +31,7 @@ EdgeX uses [message bus](https://github.com/edgexfoundry/go-mod-messaging) to ex
   CREATE STREAM demo (temperature bigint) WITH (FORMAT="JSON"...)
   ```
 
-  However, data type definitions are already specified through EdgeX `Core contract Service` , and to improve the using experience, user are NOT necessary to specify data types when creating stream. Kuiper source tries to load all of `value descriptors` from `Core contract Service` during initialization of a rule (so now if you have any updated value descriptors, you will have to **restart the rule**), then if with any data sending from message bus, it will be converted into [corresponding data types](https://github.com/emqx/kuiper/blob/master/docs/en_US/rules/sources/edgex.md).
+  However, data type definitions are already specified through EdgeX `Core contract Service` , and to improve the using experience, user are NOT necessary to specify data types when creating stream. Kuiper source tries to load all of `value descriptors` from `Core contract Service` during initialization of a rule (so now if you have any updated value descriptors, you will have to **restart the rule**), then if with any data sending from message bus, it will be converted into [corresponding data types](https://github.com/lf-edge/ekuiper/blob/master/docs/en_US/rules/sources/edgex.md).
 
 - An EdgeX message bus sink is extended to support send analysis result back to EdgeX Message Bus. User can also choose to send analysis result to RestAPI, Kuiper already supported it.
 
@@ -89,7 +89,7 @@ curl -X POST \
 }'
 ```
 
-For other Rest APIs, please refer to [this doc](https://github.com/emqx/kuiper/blob/master/docs/en_US/restapi/overview.md).
+For other Rest APIs, please refer to [this doc](https://github.com/lf-edge/ekuiper/blob/master/docs/en_US/restapi/overview.md).
 
 #### Option 2: Use Kuiper CLI
 
@@ -105,7 +105,7 @@ Use following command to create a stream named `demo`.
 bin/cli create stream demo'() WITH (FORMAT="JSON", TYPE="edgex")'
 ```
 
-For other command line tools, please refer to [this doc](https://github.com/emqx/kuiper/blob/master/docs/en_US/cli/overview.md).
+For other command line tools, please refer to [this doc](https://github.com/lf-edge/ekuiper/blob/master/docs/en_US/cli/overview.md).
 
 ------
 
@@ -122,11 +122,11 @@ default:
 .....  
 ```
 
-For more detailed information of configuration file, please refer to [this doc](https://github.com/emqx/kuiper/blob/master/docs/en_US/rules/sources/edgex.md).
+For more detailed information of configuration file, please refer to [this doc](https://github.com/lf-edge/ekuiper/blob/master/docs/en_US/rules/sources/edgex.md).
 
 ### Create a rule
 
-Let's create a rule that send result data to an MQTT broker, for detailed information of MQTT sink, please refer to [this link](https://github.com/emqx/kuiper/blob/master/docs/en_US/rules/sinks/mqtt.md). Similar to create a stream, you can also choose REST or CLI to manage rules.
+Let's create a rule that send result data to an MQTT broker, for detailed information of MQTT sink, please refer to [this link](https://github.com/lf-edge/ekuiper/blob/master/docs/en_US/rules/sinks/mqtt.md). Similar to create a stream, you can also choose REST or CLI to manage rules.
 
 So the below rule will get all of values from `event` topic. The sink result will
 
@@ -190,7 +190,7 @@ Rule rule1 was created successfully, please use 'cli getstatus rule rule1' comma
 
 ------
 
-If you want to send analysis result to another sink, please refer to [other sinks](https://github.com/emqx/kuiper/blob/master/docs/en_US/rules/overview.md#actions) that supported in Kuiper.
+If you want to send analysis result to another sink, please refer to [other sinks](https://ekuiper.org/docs/en/latest/concepts/rules.html#actions) that supported in Kuiper.
 
 Now you can also take a look at the log file under `log/stream.log`, or through command `docker logs edgex-kuiper `to see detailed info of rule.
 
@@ -230,7 +230,7 @@ $ mosquitto_sub -h broker.emqx.io -t result
 [{"float64":1.737076e+306}]
 ```
 
-You can also type below command to look at the rule execution status. The corresponding REST API is also available for getting rule status, please check [related document](https://github.com/emqx/kuiper/blob/master/docs/en_US/restapi/overview.md).
+You can also type below command to look at the rule execution status. The corresponding REST API is also available for getting rule status, please check [related document](https://github.com/lf-edge/ekuiper/blob/master/docs/en_US/restapi/overview.md).
 
 ```
 # bin/cli getstatus rule rule1
@@ -275,15 +275,14 @@ In this tutorial, we introduce a very simple use of EdgeX Kuiper rule engine. If
 
 ## More Excecise
 
-Current rule does not filter any data that are sent to Kuiper, so how to filter data? Please [drop rule](https://github.com/emqx/kuiper/blob/master/docs/en_US/cli/rules.md) and change the SQL in previous rule accordingly. After update the rule file, and then deploy the rule again. Please monitor the `result` topic of MQTT broker, and please verify see if the rule works or not.
+Current rule does not filter any data that are sent to Kuiper, so how to filter data? Please [drop rule](https://github.com/lf-edge/ekuiper/blob/master/docs/en_US/cli/rules.md) and change the SQL in previous rule accordingly. After update the rule file, and then deploy the rule again. Please monitor the `result` topic of MQTT broker, and please verify see if the rule works or not.
 
 ### Extended Reading
 
-- Read [EdgeX source](https://github.com/emqx/kuiper/blob/master/docs/en_US/rules/sources/edgex.md) for more detailed information of configurations and data type conversion.
-- [How to use meta function to extract additional data from EdgeX message bus?](https://github.com/emqx/kuiper/blob/master/docs/en_US/edgex/edgex_meta.md) There are some other information are sent along with device service, such as event created time, event id etc. If you want to use such metadata information in your SQL statements, please refer to this doc.
-- [EdgeX message bus sink doc](https://github.com/emqx/kuiper/blob/master/docs/en_US/rules/sinks/edgex.md). The document describes how to use EdgeX message bus sink. If you'd like to send the analysis result into message bus, you are probably interested in this article.
+- Read [EdgeX source](https://github.com/lf-edge/ekuiper/blob/master/docs/en_US/rules/sources/edgex.md) for more detailed information of configurations and data type conversion.
+- [How to use meta function to extract additional data from EdgeX message bus?](https://github.com/lf-edge/ekuiper/blob/master/docs/en_US/edgex/edgex_meta.md) There are some other information are sent along with device service, such as event created time, event id etc. If you want to use such metadata information in your SQL statements, please refer to this doc.
+- [EdgeX message bus sink doc](https://github.com/lf-edge/ekuiper/blob/master/docs/en_US/rules/sinks/edgex.md). The document describes how to use EdgeX message bus sink. If you'd like to send the analysis result into message bus, you are probably interested in this article.
 
 If you want to explore more features of EMQX Kuiper, please refer to below resources.
 
-- [Kuiper Github code repository](https://github.com/emqx/kuiper/)
-- [Kuiper reference guide](https://github.com/lf-edge/ekuiper/blob/master/docs/en_US/reference.md)
+- [Kuiper Github code repository](https://github.com/lf-edge/ekuiper/)

@@ -70,7 +70,7 @@ SQL 在处理数据变换为核心的规则时显得得心应手。然而在部�
 - nodeType：节点的实现类型，定义了节点的业务逻辑，包括内置类型和由插件定义的扩展类型。
 - props：节点的属性。它对每个 nodeType 都是不同的。
 
-对于 source 和 sink，其 nodeType 与系统中内置的和通过插件扩展的类型完全对应。对于 operator 节点，我们提供了一系列对应 SQL 语法的内置节点，打到与 SQL 相同的表达能力。用户扩展的函数，可通过 funciton 节点或者 aggfunc 节点进行调用。完整的节点列表，请参考[https://ekuiper.org/docs/zh/latest/rules/graph_rule.html#内置-operator-节点类型](https://ekuiper.org/docs/zh/latest/rules/graph_rule.html#内置-operator-节点类型) 。
+对于 source 和 sink，其 nodeType 与系统中内置的和通过插件扩展的类型完全对应。对于 operator 节点，我们提供了一系列对应 SQL 语法的内置节点，打到与 SQL 相同的表达能力。用户扩展的函数，可通过 funciton 节点或者 aggfunc 节点进行调用。完整的节点列表，请参考[https://ekuiper.org/docs/zh/latest/guide/rules/graph_rule.html#内置-operator-节点类型](https://ekuiper.org/docs/zh/latest/guide/rules/graph_rule.html#内置-operator-节点类型) 。
 
 ### Flow Editor
 

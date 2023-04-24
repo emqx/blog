@@ -10,7 +10,7 @@
 
 ### 支持通过规则引擎将数据持久化到 HStreamDB
 
-[HStreamDB](https://www.emqx.com/zh/products/hstreamdb) 作为 EMQ 推出的首个专为流数据设计的流数据库，拥有低时延且可靠的流数据持久化存储性能，能够轻松支持和管理大规模的数据流。本月，我们实现了 EMQX 与 HStreamDB 的集成，用户现在将可以通过规则引擎将数据持久化到 HStreamDB。目前，我们已经达成了 10w TPS 的写入性能测试，更高吞吐的压测仍在进行，目的是探索 EMQX 集成 HStream 的性能极限。此功能将在近期的版本更新中正式上线。
+[HStreamDB](https://hstream.io/zh) 作为 EMQ 推出的首个专为流数据设计的流数据库，拥有低时延且可靠的流数据持久化存储性能，能够轻松支持和管理大规模的数据流。本月，我们实现了 EMQX 与 HStreamDB 的集成，用户现在将可以通过规则引擎将数据持久化到 HStreamDB。目前，我们已经达成了 10w TPS 的写入性能测试，更高吞吐的压测仍在进行，目的是探索 EMQX 集成 HStream 的性能极限。此功能将在近期的版本更新中正式上线。
 
 ![持久化 MQTT 消息至 HStreamDB](https://assets.emqx.com/images/9bd389d45b9bed879de61a227c5b98cb.png)
  

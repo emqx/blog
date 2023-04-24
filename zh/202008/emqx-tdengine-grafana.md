@@ -71,7 +71,7 @@ sensor/data
 
 ### 安装 EMQX
 
-> 如果您是 EMQX 新手用户，推荐通过 [EMQX 文档](https://docs.emqx.io/broker/latest/cn/) 快速上手
+> 如果您是 EMQX 新手用户，推荐通过 [EMQX 文档](https://www.emqx.io/docs/zh/latest/) 快速上手
 
 访问 [EMQX 下载](https://www.emqx.com/zh/try) 页面下载适合您操作系统的安装包，本文截稿时 EMQX 开源版最新版本为 v4.1.1，下载 zip 包的启动步骤如下 ：
 
@@ -86,7 +86,7 @@ cd emqx
 
 启动成功后浏览器访问 [http://127.0.0.1:18083](http://127.0.0.1:18083) 访问 EMQX 管理控制台 Dashboard，使用 `admin` `public` 默认用户名密码完成初次登录。
 
-**EMQX 企业版 4.1.2 提供了原生 TDengine 写入插件，性能更好、使用更方便，请移步[规则引擎-写入数据到 TDengine](https://docs.emqx.cn/enterprise/latest/rule/rule-example.html#%E4%BF%9D%E5%AD%98%E6%95%B0%E6%8D%AE%E5%88%B0-opentsdb)查看**
+**EMQX 企业版 4.1.2 提供了原生 TDengine 写入插件，性能更好、使用更方便，请移步[规则引擎-写入数据到 TDengine](https://docs.emqx.com/zh/enterprise/latest/rule/rule-engine.html)查看**
 
 ### 安装 TDengine
 

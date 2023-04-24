@@ -11,7 +11,7 @@ EMQX Operator 使 EMQX 的部署、调优和运维变成一种低成本、标准
 
 ## 云平台简介：Azure AKS
 
-AKS: Azure Kubernetes 服务 (AKS) 通过将操作开销卸载到 Azure，简化了在 Azure 中部署托管 Kubernetes 群集的过程。 作为一个托管的 Kubernetes 服务，Azure 可以自动处理运行状况监视和维护等关键任务。 由于 Kubernetes 主节点由 Azure 管理，因此你只需要管理和维护代理节点。详见：[Introduction to Azure Kubernetes Service - Azure Kubernetes Service](https://docs.microsoft.com/en-us/azure/aks/intro-kubernetes)
+AKS: Azure Kubernetes 服务 (AKS) 通过将操作开销卸载到 Azure，简化了在 Azure 中部署托管 Kubernetes 群集的过程。 作为一个托管的 Kubernetes 服务，Azure 可以自动处理运行状况监视和维护等关键任务。 由于 Kubernetes 主节点由 Azure 管理，因此你只需要管理和维护代理节点。详见：[Introduction to Azure Kubernetes Service - Azure Kubernetes Service](https://learn.microsoft.com/en-us/azure/aks/intro-kubernetes)
 
 ## 创建 AKS 集群
 
@@ -27,7 +27,7 @@ AKS: Azure Kubernetes 服务 (AKS) 通过将操作开销卸载到 Azure，简化
 
 点击创建，完成创建 Kubernetes 集群
 
-细节请参考：[Quickstart: Deploy an AKS cluster by using the Azure portal - Azure Kubernetes Service](https://docs.microsoft.com/en-us/azure/aks/learn/quick-kubernetes-deploy-portal?tabs=azure-cli)
+细节请参考：[Quickstart: Deploy an AKS cluster by using the Azure portal - Azure Kubernetes Service](https://learn.microsoft.com/en-us/azure/aks/learn/quick-kubernetes-deploy-portal?tabs=azure-cli)
 
 
 ## 访问 Kubernetes 集群
@@ -36,12 +36,12 @@ AKS: Azure Kubernetes 服务 (AKS) 通过将操作开销卸载到 Azure，简化
 
 ![访问 Kubernetes 集群](https://assets.emqx.com/images/b893e36b4a755de1d7fb2ad577173102.png)
 
-细节请参考：[Azure Cloud Shell overview](https://docs.microsoft.com/en-us/azure/cloud-shell/overview)
+细节请参考：[Azure Cloud Shell overview](https://learn.microsoft.com/en-us/azure/cloud-shell/overview)
 
 
 ## StorageClass 配置
 
-这里采用 NSF 文件存储。其他 StorageClass 可参考：[Use Container Storage Interface (CSI) driver for Azure Files on Azure Kubernetes Service (AKS) - Azure Kubernetes Service](https://docs.microsoft.com/en-us/azure/aks/azure-files-csi)
+这里采用 NSF 文件存储。其他 StorageClass 可参考：[Use Container Storage Interface (CSI) driver for Azure Files on Azure Kubernetes Service (AKS) - Azure Kubernetes Service](https://learn.microsoft.com/en-us/azure/aks/azure-files-csi)
 
 创建 StroageClass
 

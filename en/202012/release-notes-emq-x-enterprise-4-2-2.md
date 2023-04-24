@@ -20,7 +20,7 @@ Detailed update log: https://www.emqx.com/en/changelogs/enterprise/v4.2.2
 
 ### Rules engine
 
-[EMQX rules engine](https://docs.emqx.io/en/broker/latest/rule/rule-engine.html) is used to configure the message flows, and processing and forwarding rules of device events, and **supports forwarding data to various databases, flow processing and data analysis systems, including Apache Kafka and Clickhouse, to quickly build a one-stop platform for IoT data integration, cleaning, storage, analysis and visualization.**
+[EMQX rules engine](https://www.emqx.io/docs/en/latest/data-integration/rules.html) is used to configure the message flows, and processing and forwarding rules of device events, and **supports forwarding data to various databases, flow processing and data analysis systems, including Apache Kafka and Clickhouse, to quickly build a one-stop platform for IoT data integration, cleaning, storage, analysis and visualization.**
 
 As a key feature of EMQX, the rules engine provides a clear and flexible "configurable" business integration solution based on SQL, simplifying the business development process, improving user usability and reducing the coupling between the business system and EMQX. 
 

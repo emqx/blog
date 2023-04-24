@@ -20,22 +20,22 @@ EMQX Kuiper 是 Golang 实现的轻量级物联网边缘分析、流式处理开
 
 - 0.4.0
 
-  - 增加了对所有 sink 的[模版功能](https://github.com/emqx/kuiper/blob/develop/docs/en_US/rules/overview.md#data-template)，用户可以通过模版实现对 sink 中复杂数据输出的定制能力
+  - 增加了对所有 sink 的[模版功能](https://github.com/lf-edge/ekuiper/blob/develop/docs/en_US/rules/overview.md#data-template)，用户可以通过模版实现对 sink 中复杂数据输出的定制能力
   - 用户在调用创建插件 API 的时候，用户可以在插件的 zip 文件中加入 install.sh 脚本，实现复杂的依赖库文件安装的能力
   - 增加插件的系统测试脚本
   - 更新了文档的组织结构
   - 增加了基于 Debian 的 Docker 镜像，对于需要更多依赖库的用户可以选择该镜像
-  - 增加 Kuiper [插件开发教程 (英文)](https://github.com/emqx/kuiper/blob/develop/docs/en_US/plugins/plugins_tutorial.md)
+  - 增加 Kuiper [插件开发教程 (英文)](https://github.com/lf-edge/ekuiper/blob/develop/docs/en_US/plugins/plugins_tutorial.md)
 
 - 与 EdgeX 的集成
 
   - 0.3.2
-    - Kuiper 0.3.2 为 EdgeX Foundry Geneva 版集成的候选版本，用户可以参考[该教程](https://github.com/emqx/kuiper/blob/master/docs/en_US/edgex/edgex_rule_engine_tutorial.md)来开始使用 EdgeX Foundry Geneva 中的规则引擎.
+    - Kuiper 0.3.2 为 EdgeX Foundry Geneva 版集成的候选版本，用户可以参考[该教程](https://github.com/lf-edge/ekuiper/blob/master/docs/en_US/edgex/edgex_rule_engine_tutorial.md)来开始使用 EdgeX Foundry Geneva 中的规则引擎.
     - 增加浮点数据处理
 
   - 0.3.1
-    - EdgeX MQTT 消息总线支持。Kuiper [源](https://github.com/emqx/kuiper/blob/master/docs/zh_CN/rules/sources/edgex.md) & [目标](https://github.com/emqx/kuiper/blob/master/docs/zh_CN/rules/sinks/edgex.md) 现可以支持基于 [MQTT 服务器](https://www.emqx.io/zh)的消息总线。
-    - EdgeX 源基准性能测试：在  AWS t2.micro ( 1 Core * 1 GB) 配置的运行环境上，EdgeX Kuiper 规则引擎支持 11.4k/秒的消息吞吐量。参考[该文档](https://github.com/emqx/kuiper/tree/master#edgex-throughput-test) 获取更详尽的信息。
+    - EdgeX MQTT 消息总线支持。Kuiper [源](https://github.com/lf-edge/ekuiper/blob/master/docs/zh_CN/rules/sources/edgex.md) & [目标](https://github.com/lf-edge/ekuiper/blob/master/docs/zh_CN/rules/sinks/edgex.md) 现可以支持基于 [MQTT 服务器](https://www.emqx.io/zh)的消息总线。
+    - EdgeX 源基准性能测试：在  AWS t2.micro ( 1 Core * 1 GB) 配置的运行环境上，EdgeX Kuiper 规则引擎支持 11.4k/秒的消息吞吐量。参考[该文档](https://github.com/lf-edge/ekuiper/tree/master#edgex-throughput-test) 获取更详尽的信息。
     - 在 Docker 环境变量中暴露 Kuiper Rest API 端口。
 
 - 0.3.2 
@@ -45,7 +45,7 @@ EMQX Kuiper 是 Golang 实现的轻量级物联网边缘分析、流式处理开
 
 - 0.3.1
 
-  - 增加 Kuiper [插件开发教程 (中文)](https://github.com/emqx/kuiper/blob/develop/docs/zh_CN/plugins/plugins_tutorial.md)。
+  - 增加 Kuiper [插件开发教程 (中文)](https://github.com/lf-edge/ekuiper/blob/develop/docs/zh_CN/plugins/plugins_tutorial.md)。
 
 
 ### 问题修复

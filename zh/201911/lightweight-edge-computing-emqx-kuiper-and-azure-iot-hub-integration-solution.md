@@ -75,7 +75,7 @@ devices/{device_id}/messages
 
 - 安装、启动 Kuiper
 
-  点击[这里](https://github.com/emqx/kuiper/releases)下载最新版 Kuiper，并解压。在写本文的时候，Kuiper 最新版本为 0.0.3。
+  点击[这里](https://github.com/lf-edge/ekuiper/releases)下载最新版 Kuiper，并解压。在写本文的时候，Kuiper 最新版本为 0.0.3。
 
   ```shell
   # unzip kuiper-linux-amd64-0.0.3.zip
@@ -88,9 +88,9 @@ devices/{device_id}/messages
 
 ### 创建流
 
-Kuiper 提供了一个命令用于管理流和规则，用户可以通过在命令行窗口中敲入 ``bin/cli`` 查看有哪些子命令及其帮助。``cli`` 命令缺省连接的是本地的 Kuiper 服务器，``cli`` 命令也可以连接到别的 Kuiper 服务器，用户可以在 ``etc/client.yaml``配置文件中修改连接的 Kuiper 服务器。用户如果想了解更多关于命令行的信息，可以参考[这里](https://github.com/emqx/kuiper/tree/master/docs/cli)。
+Kuiper 提供了一个命令用于管理流和规则，用户可以通过在命令行窗口中敲入 ``bin/cli`` 查看有哪些子命令及其帮助。``cli`` 命令缺省连接的是本地的 Kuiper 服务器，``cli`` 命令也可以连接到别的 Kuiper 服务器，用户可以在 ``etc/client.yaml``配置文件中修改连接的 Kuiper 服务器。用户如果想了解更多关于命令行的信息，可以参考[这里](https://github.com/lf-edge/ekuiper/tree/master/docs/cli)。
 
-创建流定义：创建流的目的是为了定义发送到该流上的数据格式，类似于在关系数据库中定义表的结构。 Kuiper 中所有支持的数据类型，可以参考[这里](https://github.com/emqx/kuiper/blob/master/docs/streams.md)。
+创建流定义：创建流的目的是为了定义发送到该流上的数据格式，类似于在关系数据库中定义表的结构。 Kuiper 中所有支持的数据类型，可以参考[这里](https://github.com/lf-edge/ekuiper/blob/master/docs/streams.md)。
 
 ```shell
 # cd kuiper
@@ -212,7 +212,7 @@ SELECT avg(temperature) AS t_av, max(temperature) AS t_max, min(temperature) AS 
 
 - IoT Hub：本文创建的名称为 ``rockydemo``，用于接入设备
 - IoT Device：代表了一个设备，此处为处理设备数据的网关，该网关安装了 Kuiper，网关在把相关相关数据处理完毕后，将结果发送到 Azure 云端
-- 设备连接用户名和密码：请参考 Azure [相关的文档](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-mqtt-support)了解 Azure IoT MQTT 连接的用户名和密码；关于生成 SAS Token，用户可以参考[此文档](https://docs.microsoft.com/en-us/cli/azure/ext/azure-cli-iot-ext/iot/hub?view=azure-cli-latest#ext-azure-cli-iot-ext-az-iot-hub-generate-sas-token)。
+- 设备连接用户名和密码：请参考 Azure [相关的文档](https://learn.microsoft.com/en-us/azure/iot-hub/iot-hub-mqtt-support)了解 Azure IoT MQTT 连接的用户名和密码；关于生成 SAS Token，用户可以参考[此文档](https://docs.microsoft.com/en-us/cli/azure/ext/azure-cli-iot-ext/iot/hub?view=azure-cli-latest#ext-azure-cli-iot-ext-az-iot-hub-generate-sas-token)。
 
 如下图所示，在 Azure IoT Hub 中创建完成的相关设备。
 

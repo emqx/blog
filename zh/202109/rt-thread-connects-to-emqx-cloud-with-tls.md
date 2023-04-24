@@ -13,7 +13,7 @@
 
 ## 创建和部署 EMQX Cloud
 
-通过[**快速入门**](https://docs.emqx.cn/cloud/latest/quick_start/introduction.html)创建部署 EMQX Cloud，以下是创建完成的实例：
+通过[**快速入门**](https://docs.emqx.com/zh/cloud/latest/quick_start/introduction.html)创建部署 EMQX Cloud，以下是创建完成的实例：
 
 - 基础版
 
@@ -23,7 +23,7 @@
 
 ![EMQX Cloud 专业版](https://assets.emqx.com/images/a92dfa731423dd0c9be910d63b57b4e8.png)
 
-- **TLS/SSL** 配置可参考 [EMQX Cloud 文档](https://docs.emqx.cn/cloud/latest/deployments/tls_ssl.html)
+- **TLS/SSL** 配置可参考 [EMQX Cloud 文档](https://docs.emqx.com/zh/cloud/latest/deployments/tls_ssl.html)
 
 
 

@@ -115,7 +115,7 @@ After the compiling is completed, you will be able to run the command below to c
 quic_client sub/pub mqtt-quic://54.75.171.11:14567 topic msg
 ```
 
-NanoSDK also provides Java binding and Python binding. For examples please refer to: [MqttQuicClient.java](https://github.com/nanomq/nanosdk-java/blob/main/demo/src/main/java/io/sisu/nng/demo/quicmqtt/MqttQuicClient.java) and [mqttsub.py](https://github.com/wanghaEMQ/pynng-mqtt/blob/master/examples/mqttsub.py).
+NanoSDK also provides Java binding and Python binding. For examples please refer to: [MqttQuicClient.java](https://github.com/nanomq/nanosdk-java/blob/main/demo/src/main/java/io/sisu/nng/demo/quicmqtt/MqttQuicClient.java) and [mqttsub.py](https://github.com/wanghaEMQ/pynng-mqtt/blob/master/examples/mqtt_tcp_sub.py).
 
 ## Bridge MQTT 3.1.1/5.0 and MQTT over QUIC via NanoMQ
 

@@ -1,6 +1,6 @@
 **HStreamDB 是一款专为流式数据设计的云原生分布式数据库，可针对大规模实时数据流的接入、存储、处理、分发等环节进行全生命周期管理。** 它使用标准 SQL (及其流式拓展）作为主要接口语言，以实时性作为主要特征，旨在简化数据流的运维管理以及实时应用的开发，不仅支持高效存储和管理大规模数据流，还能够在动态变化的数据流上进行复杂的实时分析。
 
-在[《当数据库遇上流计算：流数据库的诞生》](https://www.emqx.com/zh/blog/birth-of-streaming-database)一文中，我们介绍了流数据库的概念。以此为产品设计理念基础，我们所开发的[流数据库 - HStreamDB](https://www.emqx.com/zh/products/hstreamdb) 于今年初正式开源。
+在[《当数据库遇上流计算：流数据库的诞生》](https://www.emqx.com/zh/blog/birth-of-streaming-database)一文中，我们介绍了流数据库的概念。以此为产品设计理念基础，我们所开发的[流数据库 - HStreamDB](https://hstream.io/zh) 于今年初正式开源。
 
 今天，EMQ HStreamDB 团队非常高兴地向大家宣布：**HStreamDB v0.5 正式发布！**
 

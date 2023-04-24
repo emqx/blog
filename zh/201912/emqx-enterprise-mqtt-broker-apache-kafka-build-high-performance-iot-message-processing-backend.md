@@ -93,7 +93,7 @@ kafka 有以下特性：
 
 ### 安装
 
-> 如果您是 EMQX 新手用户，推荐通过 [EMQX 指南](https://docs.emqx.io/tutorial/v3/en/) 快速上手
+> 如果您是 EMQX 新手用户，推荐通过 [EMQX 指南](https://www.emqx.io/docs/en/v3.0/) 快速上手
 
 访问 [EMQ 官网](https://www.emqx.com/zh/try) 下载适合您操作系统的安装包，**由于数据持久化是企业功能，您需要下载 EMQX 企业版（可以申请 License 试用）** 写本文的时候 EMQX 企业版最新版本为 v3.4.4，下载 zip 包的启动步骤如下 ：
 

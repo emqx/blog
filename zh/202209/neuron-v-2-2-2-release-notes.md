@@ -65,7 +65,7 @@ $ make
 $ sudo ./neuron --log
 ```
 
-SDK 包使用教程链接：[https://neugates.io/docs/zh/latest/sdk/sdk_based-driver-development.html)基于 SDK 的驱动开发](https://neugates.io/docs/zh/latest/sdk/sdk_based-driver-development.html) 
+SDK 包使用教程链接：[https://neugates.io/docs/zh/latest/dev-guide/sdk-tutorial/sdk-tutorial.html)基于 SDK 的驱动开发](https://neugates.io/docs/zh/latest/dev-guide/sdk-tutorial/sdk-tutorial.html) 
 
 ## 新增商业驱动插件
 

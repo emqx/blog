@@ -12,8 +12,8 @@ This article mainly introduces how to use MQTT in the Flutter project to impleme
 
 Create a new project, can refer to the following links:
 
-- [Set up an editor](https://flutter.dev/docs/get-started/editor?tab=androidstudio)
-- [Android Studio and IntelliJ](https://flutter.dev/docs/development/tools/android-studio)
+- [Set up an editor](https://docs.flutter.dev/get-started/editor?tab=androidstudio)
+- [Android Studio and IntelliJ](https://docs.flutter.dev/development/tools/android-studio)
 
 ### Install dependencies
 

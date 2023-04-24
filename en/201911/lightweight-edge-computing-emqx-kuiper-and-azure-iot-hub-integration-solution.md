@@ -76,7 +76,7 @@ As shown in the figure below, the edge analysis / streaming data processing meth
 
 - Install and start Kuiper
 
-  Click [here](https://github.com/emqx/kuiper/releases)  to download the latest version of Kuiper and unzip it. At the time of this writing this article, the latest version of Kuiper is 0.0.3.
+  Click [here](https://github.com/lf-edge/ekuiper/releases)  to download the latest version of Kuiper and unzip it. At the time of this writing this article, the latest version of Kuiper is 0.0.3.
 
   ```shell
   # unzip kuiper-linux-amd64-0.0.3.zip
@@ -91,7 +91,7 @@ As shown in the figure below, the edge analysis / streaming data processing meth
 
 Kuiper provides a command to manage streams and rules. Users can check which subcommands and helps are available by typing ``bin/cli`` in the command line window. The ``cli`` command is connected to the local Kuiper server by default. The ``cli`` command can also be connected to other Kuiper servers. Users can modify the connected Kuiper server in the ``etc/client.yaml`` configuration file. Users who want to know more about the command line can refer to [here](https://github.com/lf-edge/ekuiper/tree/master/docs/en_US/cli).
 
-Create a stream definition: The purpose of creating a stream is to define the format of the data sent to the stream,  which is similar to defining the structure of a table in a relational database. All supported data types in Kuiper can be found in [here](https://github.com/lf-edge/ekuiper/blob/master/docs/en_US/cli/streams.md).
+Create a stream definition: The purpose of creating a stream is to define the format of the data sent to the stream,  which is similar to defining the structure of a table in a relational database. All supported data types in Kuiper can be found in [here](https://ekuiper.org/docs/en/latest/api/cli/streams.html).
 
 ```shell
 # cd kuiper
@@ -213,7 +213,7 @@ After debugging the SQL, users start configuring the rules file and send the res
 
 - IoT Hub: The name created in this article is ``rockydemo``, which is used to access the device.
 - IoT Device: It represents a device, here is the gateway for processing device data. The gateway is installed with Kuiper. After the relevant data is processed, the gateway sends the result to the Azure cloud.
-- Device access username and password: Please refer to Azure [Related Documentation](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-mqtt-support) for Azure IoT MQTT connections Username and password. For generating SAS Token, users can refer to [this document](https://docs.microsoft.com/en-us/cli/azure/iot/hub?view=azure-cli-latest#az_iot_hub_generate_sas_token).
+- Device access username and password: Please refer to Azure [Related Documentation](https://learn.microsoft.com/en-us/azure/iot-hub/iot-hub-mqtt-support) for Azure IoT MQTT connections Username and password. For generating SAS Token, users can refer to [this document](https://learn.microsoft.com/en-us/cli/azure/iot/hub?view=azure-cli-latest#az_iot_hub_generate_sas_token).
 
 Related devices are created in the Azure IoT Hub as shown below.
 
@@ -298,4 +298,4 @@ If you are interested in learning more about edge streaming data analysis, pleas
 
 ------
 
-Welcome to our open source project [github.com/emqx/emqx](https://github.com/emqx/emqx). Please visit the [ documentation](https://docs.emqx.io) for details.
+Welcome to our open source project [github.com/emqx/emqx](https://github.com/emqx/emqx). Please visit the [ documentation](https://www.emqx.io/docs/en/latest/) for details.

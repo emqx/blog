@@ -42,7 +42,7 @@ This article will use [Free Public MQTT Server](https://www.emqx.com/en/mqtt/pub
 - TCP Port: **1883**
 - SSL/TLS Port: **8883**
 
-For more details, please visit [EMQX Cloud website](https://www.emqx.com/en/cloud) or check [EMQX Cloud documentation](https://docs.emqx.io/cloud/latest/).
+For more details, please visit [EMQX Cloud website](https://www.emqx.com/en/cloud) or check [EMQX Cloud documentation](https://docs.emqx.com/en/cloud/latest/).
 
 
 

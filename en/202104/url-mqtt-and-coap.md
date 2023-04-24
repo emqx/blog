@@ -13,7 +13,7 @@ As an IoT message broker, EMQX Broker is on a mission to enable these devices to
 
 ### Step 1: Enable EMQX Broker, open the CoAP plugin and ensure that the plugin is running.
 
-You can find help on how to install and run EMQX Broker [here](https://docs.emqx.io/en/broker/v4.3/index.html).
+You can find help on how to install and run EMQX Broker [here](https://www.emqx.io/docs/en/latest/).
 
 Open Dashboard, click on Plugin on the left, search for CoAP on the right, and click `Start` to run the `CoAP Plugin` (default port 5683).
 ![WechatIMG13.png](https://assets.emqx.com/images/3358349652fcf16052d5354bf8fa543f.png)

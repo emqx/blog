@@ -76,7 +76,7 @@ devices/{device_id}/messages
 
 - 安装、启动 Kuiper
 
-  点击[这里](https://github.com/emqx/kuiper/releases)下载最新版 Kuiper，并解压。在写本文的时候，Kuiper 最新版本为 0.0.3。
+  点击[这里](https://github.com/lf-edge/ekuiper/releases)下载最新版 Kuiper，并解压。在写本文的时候，Kuiper 最新版本为 0.0.3。
 
   ```shell
   # unzip kuiper-linux-amd64-0.0.3.zip
@@ -89,9 +89,9 @@ devices/{device_id}/messages
 
 ### 创建流
 
-Kuiper 提供了一个命令用于管理流和规则，用户可以通过在命令行窗口中敲入 ``bin/cli`` 查看有哪些子命令及其帮助。``cli`` 命令缺省连接的是本地的 Kuiper 服务器，``cli`` 命令也可以连接到别的 Kuiper 服务器，用户可以在 ``etc/client.yaml``配置文件中修改连接的 Kuiper 服务器。用户如果想了解更多关于命令行的信息，可以参考[这里](https://github.com/emqx/kuiper/tree/master/docs/cli)。
+Kuiper 提供了一个命令用于管理流和规则，用户可以通过在命令行窗口中敲入 ``bin/cli`` 查看有哪些子命令及其帮助。``cli`` 命令缺省连接的是本地的 Kuiper 服务器，``cli`` 命令也可以连接到别的 Kuiper 服务器，用户可以在 ``etc/client.yaml``配置文件中修改连接的 Kuiper 服务器。用户如果想了解更多关于命令行的信息，可以参考[这里](https://github.com/lf-edge/ekuiper/tree/master/docs/cli)。
 
-创建流定义：创建流的目的是为了定义发送到该流上的数据格式，类似于在关系数据库中定义表的结构。 Kuiper 中所有支持的数据类型，可以参考[这里](https://github.com/emqx/kuiper/blob/master/docs/streams.md)。
+创建流定义：创建流的目的是为了定义发送到该流上的数据格式，类似于在关系数据库中定义表的结构。 Kuiper 中所有支持的数据类型，可以参考[这里](https://github.com/lf-edge/ekuiper/blob/master/docs/streams.md)。
 
 ```shell
 # cd kuiper
@@ -221,7 +221,7 @@ SELECT avg(temperature) AS t_av, max(temperature) AS t_max, min(temperature) AS 
   - 私钥：类似于 ``d3807d9fa5-private.pem.key``
   - 公钥：类似于 ``d3807d9fa5-public.pem.key``
 
-  关于这方面更多的信息，请参考 AWS [创建设备的文档](https://docs.aws.amazon.com/iot/latest/developerguide/register-device.html)。
+  关于这方面更多的信息，请参考 AWS [创建设备的文档](https://docs.aws.amazon.com/iot/latest/developerguide/thing-registry.html)。
 
 **编写 Kuiper 规则文件**
 

@@ -1,6 +1,6 @@
 ##  Ingress 介绍
 
-[Ingress](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.19/#ingress-v1beta1-networking-k8s-io) 公开了从集群外部到集群内 [服务](https://kubernetes.io/zh/docs/concepts/services-networking/service/) 的 HTTP 和 HTTPS 路由。 流量路由由 Ingress 资源上定义的规则控制。官网的一个简单示例如下：
+[Ingress](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.19/#ingress-v1beta1-networking-k8s-io) 公开了从集群外部到集群内 [服务](https://kubernetes.io/zh-cn/docs/concepts/services-networking/service/) 的 HTTP 和 HTTPS 路由。 流量路由由 Ingress 资源上定义的规则控制。官网的一个简单示例如下：
 
 ![ingres.png](https://assets.emqx.com/images/613a343074a20d1d246e04e7801e9bfe.png)
 

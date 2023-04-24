@@ -1,6 +1,6 @@
 **HStreamDB is a [streaming database](https://www.emqx.com/en/products/hstreamdb) designed for streaming data, with complete lifecycle management for accessing, storing, processing, and distributing large-scale real-time data streams**. Standard SQL (and its streaming extensions) as the primary interface language, HStream is designed to simplify the management of data streams and the development of real-time applications by supporting efficient storage and management of large-scale data streams and complex real-time analysis on continuously changing data streams.
 
-In the previous article, ["When Database Meets Stream Computing: The Birth of Stream Database"](https://www.emqx.com/en/blog/birth-of-streaming-database), we have introduced the concept of stream database. Using this as the basis for our product design concept, we developed HStreamDB,  and it's officially [open sourced earlier this year](https://www.emqx.com/en/blog/hstreamdb-is-now-officially-open-source).
+In the previous article, ["When Database Meets Stream Computing: The Birth of Stream Database"](https://hstream.io/blog/birth-of-streaming-database), we have introduced the concept of stream database. Using this as the basis for our product design concept, we developed HStreamDB,  and it's officially [open sourced earlier this year](https://www.emqx.com/en/blog/hstreamdb-is-now-officially-open-source).
 
 Today, the EMQ HStreamDB team is pleased to announce the release of HStreamDB v0.5!
 

@@ -50,7 +50,7 @@
 
 #### 2、配置流程
 
-登录 [EMQX Cloud 控制台](https://www.emqx.com/zh/signin?continue=https://cloud.emqx.com/console/) 。进入部署详情，点击 +TLS/SSL 配置按钮，配置证书内容，您可以上传文件或者直接填写证书内容 TLS/SSL 认证类型：
+登录 [EMQX Cloud 控制台](https://accounts-zh.emqx.com/signin?continue=https://cloud.emqx.com/console/) 。进入部署详情，点击 +TLS/SSL 配置按钮，配置证书内容，您可以上传文件或者直接填写证书内容 TLS/SSL 认证类型：
 
 ① 单向认证：仅客户端验证服务端证书。
 

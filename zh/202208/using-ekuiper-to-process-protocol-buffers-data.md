@@ -6,7 +6,7 @@ LF Edge [eKuiper](https://ekuiper.org/zh) 是适合部署于资源受限的边�
 
 本文将以 Protobuf 格式为例，讲解如何在 eKuiper 中设置编解码格式，通过 source 读入并解析该格式的数据以及在 sink 中使用该格式编码写入，从而实现高效的云边协同数据传输，缓解云边传输带宽紧张问题。
 
-> 本教程采用 eKuiper Manager 进行规则的创建和管理，请参考 [UI 教程](https://github.com/ngjaying/kuiper/blob/doc/docs/zh_CN/operation/manager-ui/overview.md)。您也可以采用 [REST API](https://github.com/ngjaying/kuiper/blob/doc/docs/zh_CN/operation/restapi/overview.md) 或者在 eKuiper 运行的边端运行[命令行工具](https://github.com/ngjaying/kuiper/blob/doc/docs/zh_CN/operation/cli/overview.md)来完成相同的规则管理操作。
+> 本教程采用 eKuiper Manager 进行规则的创建和管理，请参考 [UI 教程](https://github.com/ngjaying/kuiper/blob/doc/docs/zh_CN/operation/manager-ui/overview.md)。您也可以采用 [REST API](https://ekuiper.org/docs/zh/latest/api/restapi/overview.html) 或者在 eKuiper 运行的边端运行[命令行工具](https://ekuiper.org/docs/zh/latest/api/cli/overview.html)来完成相同的规则管理操作。
 
 ## 环境准备
 

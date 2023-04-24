@@ -6,7 +6,7 @@ EMQX Team 提供了 Helm chart 方便用户在 kubernetes 集群上一键部署 
 
 ### 使用 Pod 直接部署 EMQX Broker
 
-在Kubernetes中，最小的管理元素不是一个个独立的容器，而是 [Pod](https://kubernetes.io/zh/docs/concepts/workloads/pods/pod-overview/)，Pod 是 Kubernetes 应用程序的基本执行单元，即它是 Kubernetes 对象模型中创建或部署的最小和最简单的单元。Pod 表示在 [集群](https://kubernetes.io/zh/docs/reference/glossary/?all=true#term-cluster) 上运行的进程。
+在Kubernetes中，最小的管理元素不是一个个独立的容器，而是 [Pod](https://kubernetes.io/zh/docs/concepts/workloads/pods/pod-overview/)，Pod 是 Kubernetes 应用程序的基本执行单元，即它是 Kubernetes 对象模型中创建或部署的最小和最简单的单元。Pod 表示在 [集群](https://kubernetes.io/zh-cn/docs/reference/glossary/?all=true#term-cluster) 上运行的进程。
 
 EMQX Broker 在 [docker hub](https://hub.docker.com/r/emqx/emqx) 上提供了镜像, 因此可以很方便的在单个的 pod 上部署 EMQX Broker，使用 `kubectl run` 命令创建一个运行着 EMQX Broker 的 Pod：
 
@@ -38,7 +38,7 @@ Pod 并不是被设计成一个持久化的资源，它不会在调度失败，�
 
 ### 使用 Deoloyment 部署 Pod
 
-[Deployment](https://kubernetes.io/zh/docs/concepts/workloads/controllers/deployment/) 为 Pod 和 ReplicaSet 提供了一个声明式定义（declarative）方法，用来替代以前的[ReplicationController](https://www.kubernetes.org.cn/replication-controller-kubernetes) 来方便的管理应用。典型的应用场景包括：
+[Deployment](https://kubernetes.io/zh-cn/docs/concepts/workloads/controllers/deployment/) 为 Pod 和 ReplicaSet 提供了一个声明式定义（declarative）方法，用来替代以前的[ReplicationController](https://www.kubernetes.org.cn/replication-controller-kubernetes) 来方便的管理应用。典型的应用场景包括：
 
 - 定义Deployment来创建Pod和ReplicaSet
 - 滚动升级和回滚应用
@@ -124,7 +124,7 @@ Pod 并不是被设计成一个持久化的资源，它不会在调度失败，�
 
 ### 使用 Services 公开 EMQX Broker Pod 服务
 
-Kubernetes [Pods](https://kubernetes.io/docs/concepts/workloads/pods/pod-overview/) 是有生命周期的。他们可以被创建，而且销毁不会再启动。 如果使用 [Deployment](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/) 来运行应用程序，则它可以动态创建和销毁 Pod。
+Kubernetes [Pods](https://kubernetes.io/docs/concepts/workloads/pods/) 是有生命周期的。他们可以被创建，而且销毁不会再启动。 如果使用 [Deployment](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/) 来运行应用程序，则它可以动态创建和销毁 Pod。
 
 每个 Pod 都有自己的 IP 地址，但是在 Deployment 中，在同一时刻运行的 Pod 集合可能与稍后运行该应用程序的 Pod 集合不同。
 
@@ -132,7 +132,7 @@ Kubernetes [Pods](https://kubernetes.io/docs/concepts/workloads/pods/pod-overvie
 
 答案是：Service
 
-Service 是将运行在一组 [Pods](https://kubernetes.io/docs/concepts/workloads/pods/pod-overview/) 上的应用程序公开为网络服务的抽象方法。
+Service 是将运行在一组 [Pods](https://kubernetes.io/docs/concepts/workloads/pods/) 上的应用程序公开为网络服务的抽象方法。
 
 使用 Service 将 EMQX Broker Pod 公开为网络服务：
 
@@ -229,7 +229,7 @@ Cluster status: #{running_nodes =>
 
 ### 修改 EMQX Broker 的配置
 
-查看 EMQX Broker 文档中关于[自动集群](https://docs.emqx.io/broker/latest/cn/advanced/cluster.html#emqx-service-discovery-kubernetes)的内容，可以看到需要修改 EMQX Broker 的配置：
+查看 EMQX Broker 文档中关于[自动集群](https://www.emqx.io/docs/zh/latest/deploy/cluster/introduction.html)的内容，可以看到需要修改 EMQX Broker 的配置：
 
 ```
 cluster.discovery = kubernetes
@@ -499,9 +499,9 @@ Pod 因为权限问题在访问 kubernetes apiserver 的时候被拒绝，返回
 
 ### ConfigMap
 
-[ConfigMap](https://kubernetes.io/zh/docs/concepts/configuration/configmap/) 是 configMap 是一种 API 对象，用来将非机密性的数据保存到健值对中。使用时可以用作环境变量、命令行参数或者存储卷中的配置文件。
+[ConfigMap](https://kubernetes.io/zh-cn/docs/concepts/configuration/configmap/) 是 configMap 是一种 API 对象，用来将非机密性的数据保存到健值对中。使用时可以用作环境变量、命令行参数或者存储卷中的配置文件。
 
-ConfigMap 将您的环境配置信息和 [容器镜像](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/#why-containers) 解耦，便于应用配置的修改。
+ConfigMap 将您的环境配置信息和 [容器镜像](https://kubernetes.io/docs/concepts/overview/#why-containers) 解耦，便于应用配置的修改。
 
 > ConfigMap 并不提供保密或者加密功能。如果你想存储的数据是机密的，请使用 [Secret](https://kubernetes.io/docs/concepts/configuration/secret/) ，或者使用其他第三方工具来保证你的数据的私密性，而不是用 ConfigMap。
 
@@ -598,7 +598,7 @@ EMQX Broker 的配置文件已经解耦到 Configmap 中了，如果有需要，
 
 ### StatefulSet
 
-[StatefulSet](https://kubernetes.io/zh/docs/concepts/workloads/controllers/statefulset/) 是为了解决有状态服务的问题（对应 Deployments 和 ReplicaSets 是为无状态服务而设计），其应用场景包括
+[StatefulSet](https://kubernetes.io/zh-cn/docs/concepts/workloads/controllers/statefulset/) 是为了解决有状态服务的问题（对应 Deployments 和 ReplicaSets 是为无状态服务而设计），其应用场景包括
 
 - 稳定的持久化存储，即 Pod 重新调度后还是能访问到相同的持久化数据，基于 PVC 来实现
 - 稳定的网络标志，即 Pod 重新调度后其 PodName 和 HostName 不变，基于 Headless Service（即没有Cluster IP的Service）来实现
@@ -915,7 +915,7 @@ StorageClass 为管理员提供了描述存储 "class（类）" 的方法。 不
 
   输出结果表明该 PVC 的状态为 Bound，PVC 存储已经成功的建立了，当 Pod 被重新调度时，EMQX Broker 会读取挂载到 PVC 中的数据，从而实现持久化。
 
-EMQX Broker 在 kubernetes 上建立持久化的集群就完成了，本文略过了部分细节，部署的过程也是偏向简单的 Demo，用户可以自行阅读 [kubernetes 文档](https://kubernetes.io/zh/docs/home/) 与  EMQX Team 提供的 [Helm chart 源码](https://github.com/emqx/emqx-rel/tree/master/deploy/charts/emqx) 来继续深入研究，当然也欢迎在 Github 贡献 issue、pull requests 以及 start。
+EMQX Broker 在 kubernetes 上建立持久化的集群就完成了，本文略过了部分细节，部署的过程也是偏向简单的 Demo，用户可以自行阅读 [kubernetes 文档](https://kubernetes.io/zh-cn/docs/home/) 与  EMQX Team 提供的 [Helm chart 源码](https://github.com/emqx/emqx-rel/tree/master/deploy/charts/emqx) 来继续深入研究，当然也欢迎在 Github 贡献 issue、pull requests 以及 start。
 
 
 <section class="promotion">

@@ -18,7 +18,7 @@ eKuiper provides a unified SQL pull source that pulls data from multiple types o
 
 In addition to data pulling, we also provide generic SQL plug-ins for data writing. It is worth noting that eKuiper itself already provides dedicated plugins for temporal databases such as influxDB and TDengine. The generic SQL plug-in also supports connections to these databases, but provides insert functionality and does not support non-standard concepts for specific databases.
 
-For more information and a list of supported databases, checkou out the [SQL source plug-in](https://ekuiper.org/docs/en/latest/rules/sources/plugin/sql.html) and [SQL sink plug-in](https://ekuiper.org/docs/en/latest/rules/sinks/plugin/sql.html) documentation.
+For more information and a list of supported databases, checkou out the [SQL source plug-in](https://ekuiper.org/docs/en/latest/guide/sources/plugin/sql.html) and [SQL sink plug-in](https://ekuiper.org/docs/en/latest/guide/sinks/plugin/sql.html) documentation.
 
 ### Other features review
 

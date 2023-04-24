@@ -12,7 +12,7 @@ All the runtime environments demonstrated in this article are all built through 
 
 > Version: v1.0.2
 
-[Download link](https://github.com/lf-edge/ekuiper) ｜ [Installation document](https://docs.emqx.io/en/kuiper/latest/getting_started.html#download-install)
+[Download link](https://github.com/lf-edge/ekuiper) ｜ [Installation document](https://ekuiper.org/docs/en/latest/getting_started.html#download-install)
 
 ```shell
 # Get a Docker mirroring
@@ -44,7 +44,7 @@ $ docker run -p 9082:9082 -d emqx/kuiper-manager:1.0.2
 
 > Version: v4.2.4
 
-[Download link](https://www.emqx.com/en/try?product=nanomq) | [Installation document](https://docs.emqx.io/en/edge/latest/install.html)
+[Download link](https://www.emqx.com/en/try?product=nanomq) | [Installation document](https://nanomq.io/docs/en/latest/quick-start.html)
 
 ```shell
 # Get a Docker mirroring
@@ -133,7 +133,7 @@ Click on the Tab item of the rule to go to the list of rules page. We click on t
 
    > Note: If the MQTT Broker used is the EMQX Edge initiated by Docker, the address of Broker needs to be filled as the IP address within the Docker container
 
-4. Set `Options`, and part of options are optional and all options have default values. If you wish to change them, you can do so by referring to the [Kuiper documentation](https://docs.emqx.cn/cn/kuiper/latest/rules/overview.html#%E9%80%89%E9%A1%B9).
+4. Set `Options`, and part of options are optional and all options have default values. If you wish to change them, you can do so by referring to the [Kuiper documentation](https://ekuiper.org/docs/en/latest/guide/rules/overview.html).
 
 ![kuipercreaterule.png](https://assets.emqx.com/images/66bffdc71ba9c49183b080d42d6135b4.png)
 
@@ -186,7 +186,7 @@ execute(handlePayload)
 
 ![mqttxscript.png](https://assets.emqx.com/images/5aef8144b3c75fab5730afd7f7545c31.png)
 
-Testing found that the simulated data was successful, and we went to the connection page, opened the script to use the function (using the script function is not described in detail in this article, you can refer to the [MQTT X documentation](https://github.com/emqx/MQTTX/blob/master/docs/manual-cn.md#%E8%84%9A%E6%9C%AC)). Enter the `Payload` data template to be sent as `{}`, enter `Topic` as the `Data Source` in the stream definition, in this case `/kuiper/stream`, then set the timing message, set the sending frequency to 1 second, then click Send. After the message has been successfully sent, MQTT X will automatically send one simulated test data per second.
+Testing found that the simulated data was successful, and we went to the connection page, opened the script to use the function (using the script function is not described in detail in this article, you can refer to the [MQTT X documentation](https://github.com/emqx/MQTTX/blob/main/docs/manual-cn.md#%E8%84%9A%E6%9C%AC)). Enter the `Payload` data template to be sent as `{}`, enter `Topic` as the `Data Source` in the stream definition, in this case `/kuiper/stream`, then set the timing message, set the sending frequency to 1 second, then click Send. After the message has been successfully sent, MQTT X will automatically send one simulated test data per second.
 
 ![mqttxtimed.png](https://assets.emqx.com/images/6358d2d739f455bb36670269eb3e2c52.png)
 

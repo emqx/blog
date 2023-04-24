@@ -191,7 +191,7 @@ public class SampleHandler extends DefaultCommunicationHandler {
 
 2. 重载了 `on<hookName>` 方法，这些方法是实际处理钩子事件的回调函数，函数命名方式为各个钩子名称变体后前面加 `on` 前缀，变体方式为钩子名称去掉下划线后使用骆驼拼写法（CamelCase），例如，钩子client_connect对应的函数名为onClientConnect。 EMQX 客户端产生的事件，例如：连接、发布、订阅等，都会最终分发到这些钩子事件回调函数上，然后回调函数可对各属性及状态进行相关操作。 示例程序中仅对各参数进行了打印输出。如果只关心部分钩子事件，只需对这部分钩子事件的回调函数进行重载即可，不需要重载所有回调函数。
 
-各回调函数的执行时机和支持的钩子列表与 EMQX 内置的钩子完全一致，参见：[Hooks - EMQX](https://docs.emqx.io/broker/latest/en/advanced/hooks.html#hookpoint)
+各回调函数的执行时机和支持的钩子列表与 EMQX 内置的钩子完全一致，参见：[Hooks - EMQX](https://www.emqx.io/docs/zh/latest/extensions/hooks.html)
 
 在实现自己的扩展程序时，最简单的方式也是继承 `DefaultCommunicationHandler` 父类，该类对各钩子与回调函数的绑定进行了封装，并进一步封装了回调函数涉及到的参数数据结构，以方便快速上手使用。
 
@@ -215,7 +215,7 @@ public interface CommunicationHandler {
 - `init()` 方法：用于初始化，声明扩展需要挂载哪些钩子，以及挂载的配置
 - `deinit()` 方法：用于注销。
 
-详细数据格式说明，参见 [设计文档](https://github.com/emqx/emqx-extension-hook/blob/master/docs/design.md)。
+详细数据格式说明，参见 [设计文档](https://github.com/emqx/emqx-exhook/blob/master/docs/design.md)。
 
 
 <section class="promotion">

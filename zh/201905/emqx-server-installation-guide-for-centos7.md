@@ -70,7 +70,7 @@ Node 'emqx@127.0.0.1' is started
 emqx v3.1.0 is running
 ```
 
-4.EMQX 启动成功，如何使用请参考[官方文档](https://docs.emqx.io/broker/v3/cn/getstarted.html)
+4.EMQX 启动成功，如何使用请参考[官方文档](https://www.emqx.io/docs/en/latest/)
 
 ### 使用软件包安装 EMQX 
 
@@ -96,7 +96,7 @@ Node 'emqx@127.0.0.1' is started
 emqx v3.1.0 is running
 ```
 
-4.EMQX 启动成功，如何使用请参考[官方文档](https://docs.emqx.io/broker/v3/cn/getstarted.html)
+4.EMQX 启动成功，如何使用请参考[官方文档](https://www.emqx.io/docs/en/latest/)
 
 #### 从 `.zip` 文件安装
 
@@ -114,4 +114,4 @@ $ unzip /path/to/emqx-centos7-v3.1.0.zip
 $ cd emqx $ ./bin/emqx start emqx 3.1 is started successfully! $ ./bin/emqx_ctl status Node 'emqx@127.0.0.1' is started emqx v3.1.0 is running 
 ```
 
-4.EMQX 启动成功，如何使用请参考[官方文档](https://docs.emqx.io/broker/v3/cn/getstarted.html)
+4.EMQX 启动成功，如何使用请参考[官方文档](https://www.emqx.io/docs/en/latest/)

@@ -1,6 +1,6 @@
 EMQX **MQTT 5.0 topic rewrite** supports rewriting topic A to topic B,  when subscribing topics, publishing messages and unsubscribing in MQTT client according to the rule configured by clients.
 
-The EMQX  [MQTT retained message](https://docs.emqx.io/broker/latest/en/advanced/retained.html) and  [delayed publish](https://docs.emqx.io/broker/latest/en/advanced/delay-publish.html) can cooperate with the rewriting topic function to use. For example, when users want to use delayed publish, but it is difficult to modify the topic published by the MQTT client, they can use rewriting topic function to rewrite related MQTT topics into the format of delayed publish topic. 
+The EMQX  [MQTT retained message](https://www.emqx.io/docs/en/v5.0/messaging/mqtt-retained-message.html) and  [delayed publish](https://www.emqx.io/docs/en/latest/messaging/mqtt-delayed-publish.html) can cooperate with the rewriting topic function to use. For example, when users want to use delayed publish, but it is difficult to modify the topic published by the MQTT client, they can use rewriting topic function to rewrite related MQTT topics into the format of delayed publish topic. 
 
 ## Enable MQTT topic rewrite
 

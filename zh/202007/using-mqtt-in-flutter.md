@@ -10,8 +10,8 @@
 
 新建一个项目，可以参考以下链接：
 
-- [Set up an editor](https://flutter.dev/docs/get-started/editor?tab=androidstudio)
-- [Android Studio and IntelliJ](https://flutter.dev/docs/development/tools/android-studio)
+- [Set up an editor](https://docs.flutter.dev/get-started/editor?tab=androidstudio)
+- [Android Studio and IntelliJ](https://docs.flutter.dev/development/tools/android-studio)
 
 ### 安装依赖
 

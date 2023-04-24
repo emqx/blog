@@ -29,7 +29,7 @@ This article will use [Free Public MQTT Server](https://www.emqx.com/en/mqtt/pub
 - TCP Port: **1883**
 - SSL/TLS Port: **8883**
 
-For more details, please visit [EMQX Cloud website](https://www.emqx.com/en/cloud) or check [EMQX Cloud documentation](https://docs.emqx.io/en/cloud/latest/).
+For more details, please visit [EMQX Cloud website](https://www.emqx.com/en/cloud) or check [EMQX Cloud documentation](https://docs.emqx.com/en/cloud/latest/).
 
 
 
@@ -73,7 +73,7 @@ At this point, we can see the message just published in the subscription box on 
 
 In addition to normal connections, MQTTBox also supports TLS/SSL connections.
 
-If you use EMQX Cloud, you can refer to this [document](https://docs.emqx.io/en/cloud/latest/deployments/tls_ssl.html) to create a certificate. We can enter the client details page, select the protocol as mqtts/tls or wss, and then select save.
+If you use EMQX Cloud, you can refer to this [document](https://docs.emqx.com/en/cloud/latest/deployments/tls_ssl.html) to create a certificate. We can enter the client details page, select the protocol as mqtts/tls or wss, and then select save.
 
 If it is two-way authentication, you can select the CA certificate file, the client certificate, and the client key file on the configuration page, and then select connection. Please confirm the TLS/SSL connection port and modify it before connecting.
 

@@ -14,9 +14,9 @@ MQTT, atau panjangnya Message Queuing Telemetry Transport, adalah protokol messa
 
 [EMQX Cloud](https://www.emqx.com/en/cloud) adalah sebuah produk MQTT perantara messaging untuk domain IoT dari EMQ. Sebagai servis public cloud MQTT 5.0 pertama di dunia yang sepenuhnya dikelola oleh EMQ, EMQX Cloud menyediakan solusi O&M colocation komplit dan lingkungan unik terisolasi untuk servis MQTT messaging. EMQX Cloud melayani banyak negara di seluruh dunia dan menyediakan layanan cloud yang terjangkau, aman dan dapat diandalkan untuk aplikasi-aplikasi 5G dan Internet of Everything.  
 
-EMQX Cloud memiliki 3 jenis paket: Basic, Professional dan Unlimited. Ketiga paket ini menawarkan sejumlah spesifikasi produk yang fleksibel untuk mendukung deployment dari berbagai servis MQTT secara eksklusif untuk Anda dengan salah satu public cloud terkemuka di dunia. Tertarik untuk tau lebih lanjut tentang paket produk EMQX Cloud? Klik [disini](https://docs.emqx.io/en/cloud/latest/pricing.html). 
+EMQX Cloud memiliki 3 jenis paket: Basic, Professional dan Unlimited. Ketiga paket ini menawarkan sejumlah spesifikasi produk yang fleksibel untuk mendukung deployment dari berbagai servis MQTT secara eksklusif untuk Anda dengan salah satu public cloud terkemuka di dunia. Tertarik untuk tau lebih lanjut tentang paket produk EMQX Cloud? Klik [disini](https://docs.emqx.com/en/cloud/latest/pricing.html). 
 
-Produk mantap seperti ini adalah pilihan tepat untuk diitegrasikan dengan openHAB. Anda dapat mengunjungi bagian [dokumentasi](https://docs.emqx.io/en/cloud/latest/) untuk informasi lebih lanjut mengenai EMQX Cloud.
+Produk mantap seperti ini adalah pilihan tepat untuk diitegrasikan dengan openHAB. Anda dapat mengunjungi bagian [dokumentasi](https://docs.emqx.com/en/cloud/latest/) untuk informasi lebih lanjut mengenai EMQX Cloud.
 
 
 
@@ -33,8 +33,6 @@ Jika ini adalah pengalaman pertama Anda menggunakan EMQX Cloud, jangan khawatir.
    ```
 
 3. Setelah deployment baru selesai dibuat dan statusnya menjadi **running**, masukkan informasi otentikasi pengguna (bisa secara manual atau impor dari file).
-
-   ![add authentication](https://docs.emqx.io/assets/img/auth.6543e1b4.png)
 
 4. Unduh openHAB. Anda dapat mengunduh openHAB dengan mudah dengan mengikuti langkah-langkah [disini](https://www.openhab.org/docs/installation/). OpenHAB dapat digunakan dengan bermacam-macam sistem sesuai dengan pilihan Anda.
 

@@ -40,7 +40,7 @@ A new data type Object was added in the EdgeX Foundry Jarkata, which can be used
 - Improve UI adaptation: Solve multiple UI problems, such as shared connection configuration, plugin installation page error, display problems of Chinese name rules, etc.
 - Runtime performance optimization. In the test case of shared source multiple rules, the CPU usage is reduced by another 20% based on the previous version.
 - HTTP source and sink support configuring https certificates.
-- For other bug fixes, see [1.4.1](https://github.com/lf-edge/ekuiper/releases/tag/1.4.1) and [1.4.2](https://github.com/ lf-edge/ekuiper/releases/tag/1.4.2) release notes.
+- For other bug fixes, see [1.4.1](https://github.com/lf-edge/ekuiper/releases/tag/1.4.1) and [1.4.2](https://github.com/lf-edge/ekuiper/releases/tag/1.4.2) release notes.
 
 ## Start 1.5.0 development
 
@@ -52,4 +52,4 @@ As an edge streaming engine, there are many heterogeneous target systems to be d
 
 ## Documentation update
 
-According to user feedback, we will continue to improve the documentation and add more examples and cases in the new year. We have already adjusted the structure of the documentation, reducing the main directory tree of the documentation into installation, user guide, rules, SQL and extensions, so as to facilitate users to find the required information. You can click [eKuiper Documentation](https://docs.emqx.cn/kuiper/latest/) to view it and submit feedback.
+According to user feedback, we will continue to improve the documentation and add more examples and cases in the new year. We have already adjusted the structure of the documentation, reducing the main directory tree of the documentation into installation, user guide, rules, SQL and extensions, so as to facilitate users to find the required information. You can click [eKuiper Documentation](https://ekuiper.org/docs/en/latest/) to view it and submit feedback.

@@ -22,14 +22,14 @@ Kuiper 1.1.2 添加了一个示例插件 *LabelImage*，用于演示与机器学
 
 - 与 TensorFlowLite 集成
   - 示例插件 *LabelImage* 可利用提前训练的 TensorFlowLite 模型标记图像
-  - [**使用 Kuiper 函数插件运行 TensorFlow Lite 模型**](https://github.com/emqx/kuiper/blob/master/docs/en_US/plugins/functions/tensorflow_lite_tutorial.md)的教程
+  - [**使用 Kuiper 函数插件运行 TensorFlow Lite 模型**](https://github.com/lf-edge/ekuiper/blob/master/docs/en_US/plugins/functions/tensorflow_lite_tutorial.md)的教程
 - 插件增强
   - 在一个函数插件中支持多个函数
   - 支持在上下文 `ctx.GetRootPath()` 中获取 Kuiper 根路径
   - 将图像函数重构为一个插件
-  - 添加 [GeoHash 插件](https://github.com/emqx/kuiper/blob/master/docs/en_US/plugins/functions/functions.md#geohash-plugin) 以支持多个 geo hash 函数
+  - 添加 [GeoHash 插件](https://github.com/lf-edge/ekuiper/blob/master/docs/en_US/plugins/functions/functions.md#geohash-plugin) 以支持多个 geo hash 函数
 - 构建
-  - 为 *kuiperd* 构建添加 `--trimpath` 构建选项。 从此版本开始，此属性是[构建扩展插件](https://github.com/emqx/kuiper/blob/master/docs/en_US/extension/overview.md#setup-the-plugin-developing-environment)所必需的
+  - 为 *kuiperd* 构建添加 `--trimpath` 构建选项。 从此版本开始，此属性是[构建扩展插件](https://github.com/lf-edge/ekuiper/blob/master/docs/en_US/extension/overview.md#setup-the-plugin-developing-environment)所必需的
   - 以 *kuiper* 用户身份运行进程/容器，以避免安全风险
 - 支持数组负数索引，例如 `array[:-1]`
 - 添加内置函数  `cardinality(array)` 以获取数组的长度
@@ -58,11 +58,11 @@ Kuiper 1.1.2 添加了一个示例插件 *LabelImage*，用于演示与机器学
 docker run -p 9081:9081 -d --name kuiper emqx/kuiper:1.1.2
 ```
 
-下载安装包 : https://github.com/emqx/kuiper/releases/tag/1.1.2
+下载安装包 : https://github.com/lf-edge/ekuiper/releases/tag/1.1.2
 
 ## Kuiper 2021 里程碑
 
-点击 [Kuiper 2021 里程碑](https://github.com/emqx/kuiper/projects/10)以获取更多详细信息和最新更新。
+点击 [Kuiper 2021 里程碑](https://github.com/lf-edge/ekuiper/projects/10)以获取更多详细信息和最新更新。
 
 - Q1 - Q4: 1.1.x - 1.4.x
 - 插件增强功能

@@ -60,7 +60,7 @@ raspberrypi Ready   <none>  31m   v1.13.4-k3s.1
 
 #### 安装helm客户端
 
-- 通过访问：https://github.com/kubernetes/helm/releases。下载 Helm 的合适的版本。
+- 通过访问：<https://github.com/kubernetes/helm/releases>。下载 Helm 的合适的版本。
 
   1.此文下载 `helm-v2.8.0-linux-amd64.tgz` 版本；
 

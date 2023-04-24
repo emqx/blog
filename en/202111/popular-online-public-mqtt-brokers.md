@@ -206,7 +206,7 @@ The test model is as follows:
 
 ![mqtt broker test model](https://assets.emqx.com/images/4fea7f9e1f965c546b3027d98f167394.png)
 
-Test code: [free-online-public-broker-test.js](https://github.com/wivwiv/mqtt-explore/blob/master/free-online-public-broker-test.js)
+Test code: [free-online-public-broker-test.js](https://github.com/wivwiv/mqtt-explore/blob/master/free_online_public_broker_test.js)
 
 ### Time delay history
 

@@ -20,7 +20,7 @@ Detailed update log: [https://www.emqx.com/en/changelogs/enterprise/v4.3.0](http
 
 ## Rule engine upgrade: flexible and unlimited data integration
 
-[EMQX rule engine](https://docs.emqx.io/en/enterprise/v4.3/rule/rule-engine.html) is a SQL-based core data processing and distribution component on the standard MQTT. It can easily filter and Process MQTT messages and device life cycle events and distribute mobile data to more than a dozen databases and messaging systems, including MySQL, InfluxDB, and Kafka. It can integrate enterprise systems with zero-coding and help enterprises quickly build IoT platforms and applications.
+[EMQX rule engine](https://docs.emqx.com/en/enterprise/v4.3/rule/rule-engine.html) is a SQL-based core data processing and distribution component on the standard MQTT. It can easily filter and Process MQTT messages and device life cycle events and distribute mobile data to more than a dozen databases and messaging systems, including MySQL, InfluxDB, and Kafka. It can integrate enterprise systems with zero-coding and help enterprises quickly build IoT platforms and applications.
 
 As a major function of EMQX, the rule engine provides a clear and flexible 「configuration」business integration solution based on SQL, which simplifies the business development process, improves user ease of use and reduces the coupling between the business system and EMQX.
 

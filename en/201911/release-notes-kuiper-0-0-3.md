@@ -2,7 +2,7 @@ Date: 2019/11/20
 
 The Kuiper team would like to announce the release of Kuiper 0.0.3
 
-Kuiper 0.0.3 is [available for download](https://github.com/emqx/kuiper/releases/tag/0.0.3).
+Kuiper 0.0.3 is [available for download](https://github.com/lf-edge/ekuiper/releases/tag/0.0.3).
 
 Kuiper is a SQL based lightweight IoT analytics/streaming software running at resource constrained edge devices. This release includes several new features and bug fixes.
 
@@ -25,8 +25,8 @@ Github Repository: https://github.com/emqx/kuiper
 
 ### Bug fixes
 
-- [#7](https://github.com/emqx/kuiper/issues/7) GROUP BY issue
-- [#13](https://github.com/emqx/kuiper/issues/13) Kuiper server quits when a rule is drop
+- [#7](https://github.com/lf-edge/ekuiper/issues/7) GROUP BY issue
+- [#13](https://github.com/lf-edge/ekuiper/issues/13) Kuiper server quits when a rule is drop
 
 ### Contact
 
@@ -36,4 +36,4 @@ If having any problems for Kuiper, feel free to contact us through contact@emqx.
 
 ------
 
-Welcome to our open source project [github.com/emqx/emqx](https://github.com/emqx/emqx). Please visit the [ documentation](https://docs.emqx.io) for details.
+Welcome to our open source project [github.com/emqx/emqx](https://github.com/emqx/emqx). Please visit the [ documentation](https://www.emqx.io/docs/en/latest/) for details.

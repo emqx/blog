@@ -84,11 +84,11 @@ EMQX 开源版 v4.3.19 & v4.4.8 以及企业版 v4.3.14 & v4.4.8 也将于本月
 
 用户在各主流云平台进行 EMQX 集群部署时可参考以下文档：
 
-- [阿里云 ACK 部署文档](https://github.com/emqx/emqx-operator/blob/main/docs/zh_CN/deployment/aliyun-ack-deployment.md)
-- [AWS EKS 部署文档](https://github.com/emqx/emqx-operator/blob/main/docs/zh_CN/deployment/aws-eks-deployment.md)
-- [Azure AKS 部署文档](https://github.com/emqx/emqx-operator/blob/main/docs/zh_CN/deployment/azure-deployment.md)
-- [华为云 CCE 部署文档](https://github.com/emqx/emqx-operator/blob/main/docs/zh_CN/deployment/cce-deployment.md)
-- [腾讯云TKE 部署文档](https://github.com/emqx/emqx-operator/blob/main/docs/zh_CN/deployment/tencent-tke-deployment.md)
+- [阿里云 ACK 部署文档](https://docs.emqx.com/zh/emqx-operator/latest/deployment/on-alibaba-cloud.html)
+- [AWS EKS 部署文档](https://docs.emqx.com/en/emqx-operator/latest/deployment/on-aws-eks.html)
+- [Azure AKS 部署文档](https://docs.emqx.com/en/emqx-operator/latest/deployment/on-azure-aks.html)
+- [华为云 CCE 部署文档](https://docs.emqx.com/zh/emqx-operator/latest/deployment/on-huawei-cloud.html)
+- [腾讯云TKE 部署文档](https://docs.emqx.com/zh/emqx-operator/latest/deployment/on-tencent-cloud.html)
 
 
 <section class="promotion">

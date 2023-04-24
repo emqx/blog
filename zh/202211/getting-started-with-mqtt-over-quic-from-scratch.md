@@ -105,7 +105,7 @@ nng_mqtt_quic_client_open(&socket, url);
 quic_client sub/pub mqtt-quic://54.75.171.11:14567 topic msg
 ```
 
-NanoSDK 也提供 Java 和 Python 的 binding，例程可以分别参考 [https://github.com/nanomq/nanosdk-java/blob/main/demo/src/main/java/io/sisu/nng/demo/quicmqtt/MqttQuicClient.java](https://github.com/nanomq/nanosdk-java/blob/main/demo/src/main/java/io/sisu/nng/demo/quicmqtt/MqttQuicClient.java) 和 [https://github.com/wanghaEMQ/pynng-mqtt/blob/master/examples/mqttsub.py](https://github.com/wanghaEMQ/pynng-mqtt/blob/master/examples/mqttsub.py) 
+NanoSDK 也提供 Java 和 Python 的 binding，例程可以分别参考 [https://github.com/nanomq/nanosdk-java/blob/main/demo/src/main/java/io/sisu/nng/demo/quicmqtt/MqttQuicClient.java](https://github.com/nanomq/nanosdk-java/blob/main/demo/src/main/java/io/sisu/nng/demo/quicmqtt/MqttQuicClient.java) 和 [https://github.com/wanghaEMQ/pynng-mqtt/blob/master/examples/mqtt_tcp_sub.py](https://github.com/wanghaEMQ/pynng-mqtt/blob/master/examples/mqtt_tcp_sub.py) 
 
 
 ## 通过 NanoMQ 桥接完成 MQTT 3.1.1/5.0 与 MQTT over QUIC 的转换兼容

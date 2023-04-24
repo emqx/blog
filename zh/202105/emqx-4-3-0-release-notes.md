@@ -7,7 +7,7 @@
 
 ## 概览
 
-EMQX v4.3.0 版本修复了一些已知问题并新增了诸多特性，在通配符订阅性能、路由表内存占用、规则引擎性能以及大量客户端离线处理性能方面做了较大改进，同时将 [多语言](https://docs.emqx.cn/broker/v4.3/advanced/lang-exhook.html) 扩展底层通信方式由 erlport 更换为更为灵活的 gRPC 通信。
+EMQX v4.3.0 版本修复了一些已知问题并新增了诸多特性，在通配符订阅性能、路由表内存占用、规则引擎性能以及大量客户端离线处理性能方面做了较大改进，同时将 [多语言](https://www.emqx.io/docs/zh/v4.3/advanced/lang-exhook.html) 扩展底层通信方式由 erlport 更换为更为灵活的 gRPC 通信。
 
 该版本是 4.x 最后一个次要版本，旨在于为用户提供一个功能丰富、性能稳定的 [MQTT 服务器](https://www.emqx.com/zh/products/emqx)，推荐所有 4.x 用户升级到此版本，此后 4.x 版本将进入维护状态，EMQX Team 将进入到后续 5.0 版本开发工作中。
 
@@ -20,9 +20,9 @@ EMQX v4.3.0 版本修复了一些已知问题并新增了诸多特性，在通�
 
 
 ## 升级到 4.3 版本
-查看升级指南：[https://docs.emqx.cn/broker/v4.3/changes/upgrade-4.3.html#升级到-4-3-版本](https://docs.emqx.cn/broker/v4.3/changes/upgrade-4.3.html#升级到-4-3-版本)
+查看升级指南：[https://www.emqx.io/docs/zh/v4.3/changes/upgrade-4.3.html#%E5%8D%87%E7%BA%A7%E5%88%B0-4-3-%E7%89%88%E6%9C%AC](https://www.emqx.io/docs/zh/v4.3/changes/upgrade-4.3.html#%E5%8D%87%E7%BA%A7%E5%88%B0-4-3-%E7%89%88%E6%9C%AC)
 
-详细更新日志：[https://docs.emqx.cn/broker/v4.3/changes/changes-4.3.html](https://docs.emqx.cn/broker/v4.3/changes/changes-4.3.html)
+详细更新日志：[https://www.emqx.io/docs/zh/v4.3/changes/changes-4.3.html](https://www.emqx.io/docs/zh/v4.3/changes/changes-4.3.html)
 
 
 
@@ -89,7 +89,7 @@ EMQX v4.3.0 版本修复了一些已知问题并新增了诸多特性，在通�
 - 仅在正式版本中启用数据遥测功能
 - 支持清除所有 ACL 缓存
 - Redis 哨兵模式支持 SSL 连接 
-- emqx_auth_clientid 与 emqx_auth_usernmae 合并为 emqx_auth_mnesia。请参考 [文档](https://docs.emqx.io/en/broker/v4.3/advanced/data-import-and-export.html) 将数据到旧版本导出，并导入到 4.3 中
+- emqx_auth_clientid 与 emqx_auth_usernmae 合并为 emqx_auth_mnesia。请参考 [文档](https://www.emqx.io/docs/zh/latest/deploy/upgrade-from-v4.html) 将数据到旧版本导出，并导入到 4.3 中
 - Docker 默认输出日志到控制台，设置 EMQX_LOG__TO=file 使日志输出到文件
 - 支持输出 JSON 格式的日志，某些日志分析系统如 ELK 可以更好的进行配置使用
 

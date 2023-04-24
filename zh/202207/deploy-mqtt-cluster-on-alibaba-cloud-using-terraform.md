@@ -148,4 +148,4 @@ terraform apply -auto-approve
 >
 > 代码仓库: <https://github.com/emqx/terraform-emqx-emqx-alicloud>
 >
-> EMQX Terraform 模块官方文档：<https://docs.emqx.com/zh/emqx-terraform/latest>
+> EMQX Terraform 模块官方文档：<https://docs.emqx.com/zh/emqx-terraform/latest/>

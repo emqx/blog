@@ -53,11 +53,11 @@
 
 ### 帮助文档指引及结构优化
 
-帮助中心上线了全新的引导首页（[https://docs.emqx.cn/cloud/latest/](https://docs.emqx.cn/cloud/latest/)），可以帮助用户更清晰快速了解我们的产品。针对采购、商务、开发人员等不同角色进行了模块聚合，方便用户快速找到自己需要的内容，并根据引导掌握 EMQX Cloud 的所有功能使用操作。
+帮助中心上线了全新的引导首页（[https://docs.emqx.com/zh/cloud/latest/](https://docs.emqx.com/zh/cloud/latest/)），可以帮助用户更清晰快速了解我们的产品。针对采购、商务、开发人员等不同角色进行了模块聚合，方便用户快速找到自己需要的内容，并根据引导掌握 EMQX Cloud 的所有功能使用操作。
 
 ### 更完善的多语言 SDK 接入Demo
 
-我们优化和更新了主流编程语言的 SDK 连接到 MQTT 服务的代码示例以及讲解，其中包括 Java、Python、Go、C、C#、JS（Node.js）这些常用的开发语言，并且包含 React、Vue、Electron 的示例 Demo 帮助全栈开发者快速使用我们的产品。同时还更新了针对于开发版的 ESP8266 和 ESP32 的教程，让嵌入式开发者更快地连接到 MQTT 服务。您可以根据教程引导（[https://docs.emqx.cn/cloud/latest/connect_to_deployments/overview.html](https://docs.emqx.cn/cloud/latest/connect_to_deployments/overview.html)），直接复制相关的代码就可以快速实现连接。
+我们优化和更新了主流编程语言的 SDK 连接到 MQTT 服务的代码示例以及讲解，其中包括 Java、Python、Go、C、C#、JS（Node.js）这些常用的开发语言，并且包含 React、Vue、Electron 的示例 Demo 帮助全栈开发者快速使用我们的产品。同时还更新了针对于开发版的 ESP8266 和 ESP32 的教程，让嵌入式开发者更快地连接到 MQTT 服务。您可以根据教程引导（[https://docs.emqx.com/zh/cloud/latest/connect_to_deployments/overview.html](https://docs.emqx.com/zh/cloud/latest/connect_to_deployments/overview.html)），直接复制相关的代码就可以快速实现连接。
 
 ### 欠费停机规则更新
 

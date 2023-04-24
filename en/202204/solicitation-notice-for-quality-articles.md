@@ -38,7 +38,7 @@ Content that pertains to the following will be more likely to be accepted:
 
 - Leading insights or proven practical experience in the above technical fields
 
-  References: [When database meets stream computing: the birth of the streaming database](https://www.emqx.com/en/blog/birth-of-streaming-database) 
+  References: [When database meets stream computing: the birth of the streaming database](https://hstream.io/blog/birth-of-streaming-database) 
 
 ## Manuscript requirements
 

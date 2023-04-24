@@ -16,16 +16,16 @@
 本文档将不涉及 EdgeX 和 EMQX Kuiper 的基本操作，因此读者应具有以下基本知识：
 
 - 了解 [EdgeX](https://docs.edgexfoundry.org/1.2/) 的基础知识，最好完成[快速入门](https://docs.edgexfoundry.org/1.2/getting-started/quick-start/)。
-- 阅读 [EdgeX Kuiper 规则引擎入门教程](https://github.com/emqx/kuiper/blob/master/docs/en_US/edgex/edgex_rule_engine_tutorial.md)：您最好阅读此入门教程，并开始在EdgeX中试用规则引擎。
+- 阅读 [EdgeX Kuiper 规则引擎入门教程](https://github.com/lf-edge/ekuiper/blob/master/docs/en_US/edgex/edgex_rule_engine_tutorial.md)：您最好阅读此入门教程，并开始在EdgeX中试用规则引擎。
 - [Go 模板](https://golang.org/pkg/text/template/)：EMQX Kuiper 使用Go模板从分析结果中提取数据。 了解 Go 模板可以帮助您从分析结果中提取所需的数据。
 
 ## 开始使用
 
-请务必遵循文档 [EdgeX Kuiper规则引擎入门教程](https://github.com/emqx/kuiper/blob/master/docs/en_US/edgex/edgex_rule_engine_tutorial.md)，确保教程能够成功运行。
+请务必遵循文档 [EdgeX Kuiper规则引擎入门教程](https://github.com/lf-edge/ekuiper/blob/master/docs/en_US/edgex/edgex_rule_engine_tutorial.md)，确保教程能够成功运行。
 
 ### 创建 EdgeX 流
 
-在创建规则之前，应创建一个流，该流可以使用来自 EdgeX 应用程序服务的流数据。 如果您已经完成 [EdgeX Kuiper 规则引擎入门教程](https://github.com/emqx/kuiper/blob/master/docs/en_US/edgex/edgex_rule_engine_tutorial.md)，则不需要此步骤。
+在创建规则之前，应创建一个流，该流可以使用来自 EdgeX 应用程序服务的流数据。 如果您已经完成 [EdgeX Kuiper 规则引擎入门教程](https://github.com/lf-edge/ekuiper/blob/master/docs/en_US/edgex/edgex_rule_engine_tutorial.md)，则不需要此步骤。
 
 ```
 curl -X POST \
@@ -208,5 +208,4 @@ Kuiper 使用 [Go模板](https://golang.org/pkg/text/template/) 从分析结果�
 
 如果您想了解EMQX Kuiper的更多特性，请阅读下面的参考资料：
 
-- [EMQX Kuiper Github](https://github.com/emqx/kuiper/)
-- [EMQX Kuiper 参考指南](https://github.com/emqx/kuiper/blob/edgex/docs/en_US/reference.md)
+- [EMQX Kuiper Github](https://github.com/lf-edge/ekuiper/)

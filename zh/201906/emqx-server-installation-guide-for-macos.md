@@ -54,7 +54,7 @@
    emqx v3.1.0 is running
    ```
 
-4. EMQX 启动成功，如何使用请参考[官方文档](https://docs.emqx.io/broker/cn)
+4. EMQX 启动成功，如何使用请参考[官方文档](https://www.emqx.io/docs/zh/latest/)
 
 
 <section class="promotion">

@@ -184,7 +184,7 @@ if __name__ == '__main__':
     asyncio.get_event_loop().run_until_complete(test_coro())
 ```
 
-更多使用细节情参考官方文档：https://hbmqtt.readthedocs.io/en/latest/。
+更多使用细节情参考官方文档：https://hbmqtt.readthedocs.io/en/latest/
 
 
 
