@@ -71,7 +71,7 @@ The server will treat the packet as a malformed packet.
 
 ### DISCONNECT PACKET(new)
 
-**The DISCONNECT packet is a new packet from MQTT 5.0. Its introduction means that the mqtt broker has the ability to actively disconnect. The properties of the DISCONNECT packet are:**
+**The DISCONNECT packet is a new packet from MQTT 5.0. Its introduction means that the [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) has the ability to actively disconnect. The properties of the DISCONNECT packet are:**
 
 ![DISCONNECT 报文新增.jpg](https://assets.emqx.com/images/fe76d0003f158a53f9fee55a67d1a794.jpg)
 

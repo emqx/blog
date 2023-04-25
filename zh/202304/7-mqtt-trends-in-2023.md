@@ -1,22 +1,3 @@
-**目录**
-
-- [MQTT over QUIC](#mqtt-over-quic)
-
-- [MQTT Serverless](#mqtt-serverless)
-
-- [MQTT 多租户架构](#mqtt-多租户架构)
-
-- [MQTT Sparkplug 3.0](#mqtt-sparkplug-3-0)
-
-- [MQTT 统一命名空间](#mqtt-统一命名空间)
-
-- [MQTT 跨域集群](#mqtt-跨域集群)
-
-- [MQTT Streams](#mqtt-streams)
-
-- [结语](#结语)
-
-  
 MQTT 是物联网消息传输标准协议，其采用极其轻量级的发布订阅消息模型，以可扩展、可靠且高效的方式连接物联网设备。
 
 自 1999 年 IBM 发布 MQTT 以来已经过去了二十多年，而自 2012 年 EMQ 在 GitHub 上发布[开源 MQTT 消息服务器 EMQX](https://github.com/emqx/emqx)，也已经过去了十年。如今，我们来到了各类新兴技术飞速进步的 2023 年，随着 MQTT 在物联网中的使用规模不断增长，场景更加多样化，我们可以预见在 MQTT 技术领域中将会出现以下 7 个发展趋势。

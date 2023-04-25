@@ -1,13 +1,3 @@
-**Table of Contents**
-
-- [Introduction](#introduction)
-- [Born for Impartial MQTT Load Testing](#born-for-impartial-mqtt-load-testing)
-- [What’s Inside the Open MQTT Benchmark Suite](#whats-inside-the-open-mqtt-benchmark-suite)
-- [An Example Benchmark Result](#an-example-benchmark-result)
-- [Future Works](#future-works)
-
-
-
 ## Introduction
 
 We are thrilled to announce that the [Open MQTT Benchmark Suite](https://github.com/emqx/mqttbs) presented by EMQ is now available! With typical and practical use cases, primary metrics for measuring broker performance, and a tool to simulate loads and collect benchmark results, our Open MQTT Benchmark Suite can help you evaluate the scalability and performance of MQTT brokers to make an informed selection.

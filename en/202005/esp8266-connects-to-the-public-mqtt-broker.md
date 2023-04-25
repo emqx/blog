@@ -23,7 +23,7 @@ In this project, we will implement connecting ESP8266 to [free public MQTT broke
 
 ## The code
 
-1. Firstly, we import libraries **ESP8266WiFi** and **PubSubClient**. ESP8266WiFi library can connect ESP8266 to the Wi-Fi network, PubSubClient library can enable ESP8266 to connect to the MQTT broker for publishing messages and subscribing topics.
+1. Firstly, we import libraries **ESP8266WiFi** and **PubSubClient**. ESP8266WiFi library can connect ESP8266 to the Wi-Fi network, PubSubClient library can enable ESP8266 to connect to the [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) for publishing messages and subscribing topics.
 
    ```c
    #include <ESP8266WiFi.h>
