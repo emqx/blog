@@ -1,17 +1,3 @@
-**Table of Contents**
-
-- [Introduction](#introduction)
-- [EMQX Overview](#emqx-overview)
-- [NanoMQ Overview](#nanomq-overview)
-- [Community and Popularity](#community-and-popularity)
-- [Features and Capabilities](#features-and-capabilities)
-- [Scalability and Performance](#scalability-and-performance)
-- [Operability and Observability](#operability-and-observability)
-- [Data Integration](#data-integration)
-- [Bridging NanoMQ to EMQX](#bridging-nanomq-to-emqx)
-- [Conclusion](#conclusion)
-- [References](#references)
-
 ## Introduction
 
 [EMQX](https://www.emqx.io/) and [NanoMQ](https://nanomq.io/) are both open-source MQTT Brokers, initially developed by [EMQ Technologies Inc](https://www.emqx.com/en/about), a leading open-source IoT data infrastructure software provider. 

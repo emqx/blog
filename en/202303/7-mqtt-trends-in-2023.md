@@ -1,15 +1,3 @@
-**Table of Contents**
-
-- [Introduction](#introduction)
-- [MQTT over QUIC](#mqtt-over-quic)
-- [MQTT Serverless](#mqtt-serverless)
-- [MQTT Multi-tenancy](#mqtt-multi-tenancy)
-- [MQTT Sparkplug 3.0](#mqtt-sparkplug-3-0)
-- [MQTT Unified Namespace](#mqtt-unified-namespace)
-- [MQTT Geo-Distribution](#mqtt-geo-distribution)
-- [MQTT Streams](#mqtt-streams)
-- [Conclusion](#conclusion)
-
 ## Introduction
 
 Message Queuing Telemetry Transport (MQTT) is the standard messaging protocol for the Internet of Things (IoT). MQTT follows an extremely lightweight publish-subscribe messaging model, connecting IoT devices in a scalable, reliable, and efficient manner.

@@ -1,12 +1,3 @@
-## 目录
-
-- [在 GCP 上创建并启动虚拟机实例](#在-gcp-上创建并启动虚拟机实例)
-- [安装 EMQX 企业版](#安装-emqx-企业版)
-- [在 GCP 上打开防火墙端口](#在-gcp-上打开防火墙端口)
-- [通过 MQTT X 快速测试](#通过-mqtt-x-快速测试)
-- [写在最后](#写在最后)
-
-
 Google Cloud 的 IoT Core 产品将于 2023 年 8 月 16 日停止服务，随着这一日期的临近，许多用户正在为他们现有的物联网业务寻找新的解决方案，而 EMQX 企业版是实现这一目标的理想选择。
 
 [EMQX 企业版](https://www.emqx.com/zh/products/emqx)是一款大规模分布式 MQTT 消息服务平台，能够通过多种方式部署到 Google Cloud Platform（GCP） 上。您可以轻松地将 IoT Core 上的设备迁移到 EMQX Enterprise，然后继续与 GCP 中的数据服务无缝集成，实现快速迁移而不影响现有业务。

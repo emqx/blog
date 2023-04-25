@@ -1,16 +1,3 @@
-**Table of Contents**
-
-- [Introduction](#introduction)
-- [EMQX Overview](#emqx-overview)
-- [VerneMQ Overview](#vernemq-overview)
-- [Community and Popularity](#community-and-popularity)
-- [Features and Capabilities](#features-and-capabilities)
-- [Scalability and Performance](#scalability-and-performance)
-- [Data Integrations (Out of the box)](#data-integrations-out-of-the-box)
-- [Extensibility](#extensibility)
-- [Operability and Observability](#operability-and-observability)
-- [Conclusion](#conclusion)
-
 ## Introduction
 
 [EMQX](https://www.emqx.io/) and [VerneMQ](https://vernemq.com/) are open-source, highly scalable distributed MQTT brokers written in Erlang/OTP, known for their robustness, fault tolerance, and scalability.

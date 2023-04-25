@@ -232,7 +232,7 @@ So far, it has completed the simple process of collecting data from NodeMCU, upl
 - Persistence of  data
 - Larger scale connection
 
-[EMQ Enterprise Edition](<https://www.emqx.com/en/products/emqx>) and its [Cloud service](<https://www.emqx.com/en/cloud>)  have provide good solution to solve the above problems. Readers can refer to related links for more information.
+[EMQX Enterprise](<https://www.emqx.com/en/products/emqx>) and its [Cloud service](<https://www.emqx.com/en/cloud>) have provide good solution to solve the above problems. Readers can refer to related links for more information.
 
 
 In order to achieve high data security (avoid uploading to the cloud), reduce business processing delays, and reduce data transmission costs, edge computing can be considered in the solution. Azure IoT Edge and AWS's Greengrass provide solutions at the edge. EMQ also provides an open sourced ultra-lightweight edge IoT edge streaming analytics solution  [Kuiper](<https://github.com/lf-edge/ekuiper>). Readers can refer to[ this Article](https://medium.com/@emqtt/lightweight-edge-computing-emq-x-kuiper-and-azure-iot-hub-integration-solution-151134ead024) for more detailed information.

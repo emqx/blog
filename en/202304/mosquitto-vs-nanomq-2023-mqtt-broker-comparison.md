@@ -1,16 +1,3 @@
-**Table of Contents**
-
-- [Introduction](#introduction)
-- [Mosquitto Overview](#mosquitto-overview)
-- [NanoMQ Overview](#nanomq-overview)
-- [Community and Popularity](#community-and-popularity)
-- [Features and Capabilities](#features-and-capabilities)
-- [Scalability and Performance](#scalability-and-performance)
-- [Ease of Use](#ease-of-use)
-- [Bridging to EMQX Cloud](#bridging-to-emqx-cloud)
-- [Future Outlook](#future-outlook)
-- [Conclusion](#conclusion)
-
 ## Introduction
 
 [Mosquitto](https://mosquitto.org/) and [NanoMQ](https://nanomq.io/) are fast, lightweight open-source message brokers written in C/C++, fully implementing MQTT version 3.1.1 and 5.0.

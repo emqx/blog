@@ -1,13 +1,3 @@
-**Table of Contents**
-
-- [Preparation](#preparation)
-- [Enabling SSL/TLS one-way authentication on EMQX Enterprise](#enabling-ssltls-one-way-authentication-on-emqx-enterprise)
-- [Configure EMQX Enterprise to Enable SSL/TLS connection](#configure-emqx-enterprise-to-enable-ssltls-connection)
-- [Implement GCP IoT Core Authentication on EMQX Enterprise](#implement-gcp-iot-core-authentication-on-emqx-enterprise)
-- [Migrate connections to EMQX Enterprise](#migrate-connections-to-emqx-enterprise)
-- [Summary](#summary)
-- [Appendix - Authentication Service Sample Code](#appendix---authentication-service-sample-code)
-
 Our [previous blog](https://www.emqx.com/en/blog/how-to-deploy-emqx-enterprise-on-google-cloud) discussed setting up an EMQX Enterprise deployment on GCP and conducting message publish/subscribe tests. This blog will demonstrate how to connect your devices on GCP IoT Core to the EMQX Enterprise we’ve deployed already.
 
 ## Preparation

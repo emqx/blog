@@ -1,12 +1,3 @@
-**Table of Contents**
-
-- [Create a Virtual Machine Instance on GCP](#create-a-virtual-machine-instance-on-gcp)
-- [Install EMQX Enterprise](#install-emqx-enterprise)
-- [Opening Firewall Ports on GCP](#opening-firewall-ports-on-gcp)
-- [Quick Test with MQTT X Client](#quick-test-with-mqtt-x-client)
-- [Summary](#summary)
-
-
 Google Cloud IoT Core will be retired on August 16, 2023. As this date approaches, many users are looking for new solutions for their existing IoT businesses, and EMQX Enterprise is an ideal choice to achieve this goal.
 
 [EMQX Enterprise](https://www.emqx.com/en/products/emqx) is a large-scale distributed MQTT messaging platform that can be deployed on the Google Cloud Platform (GCP) in multiple ways. You can easily and quickly migrate your devices on IoT Core to EMQX Enterprise and then continue to integrate with your data services in GCP, without affecting the existing business.

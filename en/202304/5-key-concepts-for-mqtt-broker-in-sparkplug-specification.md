@@ -1,12 +1,3 @@
-**Table of Contents**
-- [Introduction](#introduction)
-- [Concept 1 - MQTT Messaging Architecture](#concept-1---mqtt-messaging-architecture)
-- [Concept 2 - Session State Awareness](#concept-2---session-state-awareness)
-- [Concept 3 - Unified Namespace](#concept-3---unified-namespace)
-- [Concept 4 - Central Data Repository](#concept-4---central-data-repository)
-- [Concept 5 - Single Source of Truth](#concept-5---single-source-of-truth)
-- [Conclusion](#conclusion)
-
 ## Introduction
 
 Sparkplug is an industrial IoT communication protocol designed for use in SCADA systems. It provides a standard communication format for industrial devices and applications, making devices from different manufacturers interoperable. The Sparkplug specification was developed by Cirrus Link Solutions and Eclipse Foundation. It is openly available and not proprietary to a single company. So, it has the following benefits for the Sparkplug community:

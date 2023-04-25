@@ -1,21 +1,3 @@
-**Table of Contents**
-
-- [Introduction](#introduction)
-- [Mosquitto Overview](#mosquitto-overview)
-- [EMQX Overview](#emqx-overview)
-- [Community and Popularity](#community-and-popularity)
-- [Scalability and Performance](#scalability-and-performance)
-- [MQTT and Connectivity](#mqtt-and-connectivity)
-- [Security](#security)
-- [Authentication and Authorization](#authentication-and-authorization)
-- [Data Integration](#data-integration)
-- [Operability and Observability](#operability-and-observability)
-- [Cloud-Native and Kubernetes](#cloud-native-and-kubernetes)
-- [Bridging Mosquitto to EMQX](#bridging-mosquitto-to-emqx)
-- [Conclusion](#conclusion)
-- [References](#references)
-
-
 ## Introduction
 
 MQTT (Message Queuing Telemetry Transport) is a de facto standard messaging protocol for the Internet of Things (IoT). With the growth of the Internet of Things (IoT), MQTT brokers are becoming vital in connecting IoT devices and moving data between connected devices and cloud services.

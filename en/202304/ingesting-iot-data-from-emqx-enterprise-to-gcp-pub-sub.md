@@ -1,10 +1,3 @@
-**Table of Contents**
-
-- [Create and Manage Pub/Sub Topics](#create-and-manage-pub-sub-topics)
-- [Forward MQTT Messages to Pub/Sub](#forward-mqtt-messages-to-pub-sub)
-- [Testing and Verification](#testing-and-verification)
-- [Summary](#summary)
-
 You may have already successfully connected your IoT devices to [EMQX Enterprise](https://www.emqx.com/en/products/emqx) using the instructions provided in our [previous posts](https://www.emqx.com/en/blog/migrating-devices-from-gcp-iot-core-to-emqx-enterprise). This article will introduce how to ingest IoT data from EMQX Enterprise to GCP Pub/Sub service to help you complete the migration.
 
 
