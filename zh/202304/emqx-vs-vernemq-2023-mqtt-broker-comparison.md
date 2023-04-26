@@ -64,7 +64,7 @@ EMQX 和 VerneMQ 项目都托管在 GitHub 上。EMQX 始于 2012 年，是最�
 | :---------------------------------- | :------------------------------------------ | :--------------------------------------------------- | :----------------------------------------------------------- |
 | **GitHub Project**                  | [EMQX GitHub](https://github.com/emqx/emqx) | [VerneMQ GitHub](https://github.com/vernemq/vernemq) |                                                              |
 | **Product Created**                 | 2012                                        | 2014                                                 |                                                              |
-| **License Mode**                    | Apache Version 2.0                          | Apache License 2.0                                   |                                                              |
+| **License Mode**                    | Apache License 2.0                          | Apache License 2.0                                   |                                                              |
 | **Latest Release**                  | v5.0.21 (March 2023)                        | v1.12.6.2 (Nov. 2022)                                |                                                              |
 | **GitHub Stars**                    | 11.4k+                                      | 3k                                                   |                                                              |
 | **GitHub Forks**                    | 2k                                          | 300+                                                 | [EMQX GitHub Forks](https://github.com/emqx/emqx/network/members)<br>[VerneMQ GitHub Forks](https://github.com/vernemq/vernemq/forks) |
@@ -114,7 +114,7 @@ EMQX 已有超过 30000 个集群在生产环境中部署，具有经过验证�
 | :------------------------------------------- | :----------------------------------------------------------- | :---------------------------- | :----------------------------------------------------------- |
 | **Scalability**                              | 4M MQTT connections per node<br>100M MQTT connections per cluster | **?**                         | [Reaching 100M MQTT connections with EMQX 5.0](https://www.emqx.com/zh/blog/reaching-100m-mqtt-connections-with-emqx-5-0) |
 | **Performance**                              | 4 million QoS0 MQTT msgs/sec per node<br>800k QoS1 msgs/sec<br>200k QoS2 msgs/sec | **?**                         |                                                              |
-| **Latency**                                  | 1-5 millisecond                                              | **?**                         |                                                              |
+| **Latency**                                  | Single-digit millisecond latency in most scenarios                                              | Up to seconds latency in some scenarios                         |                                                              |
 | **Reliability**                              | Message Persistence in RocksDB and external Database         | Message Persistence in LevelDB | [Highly Reliable MQTT Data Persistence Based on RocksDB](https://www.emqx.com/zh/blog/mqtt-persistence-based-on-rocksdb)<br>[VerneMQ Storage](https://docs.vernemq.com/configuring-vernemq/storage) |
 | **Clustering**                               | 20+ nodes of cluster                                         | **?**                         | [EMQX Cluster Scalability](https://www.emqx.io/docs/en/v5.0/deploy/cluster/db.html#node-roles)<br>[Vernemq - Cluster](https://docs.vernemq.com/vernemq-clustering/introduction) |
 | **Elastic and Resilient scaling at runtime** | ✅                                                            | **?**                         |                                                              |
@@ -180,7 +180,7 @@ EMQX 和 VerneMQ 都支持使用钩子和插件实现灵活的扩展。此外，
 
 ## 可操作性和可观测性
 
-EMQX 拥有易用的 Dashboard 和丰富的 HTTP API，支持通过 StatsD、Prometheus 和 Grafana 进行监控。而 VerneMQ 部署简单、配置方便，但它在管理和监控方面还不够完善。
+EMQX 拥有易用的 Dashboard 和丰富的 HTTP API，支持通过 Prometheus 和 Grafana 进行监控。而 VerneMQ 部署简单、配置方便，但它在管理和监控方面还不够完善。
 
 |                                  | **EMQX**     | **VerneMQ**     | **Notes and Links**                                          |
 | :------------------------------- | :----------- | :-------------- | :----------------------------------------------------------- |
@@ -195,7 +195,6 @@ EMQX 拥有易用的 Dashboard 和丰富的 HTTP API，支持通过 StatsD、Pro
 | **Alarm Alerts**                 | ✅            | ❌               | [System Topic](https://www.emqx.io/docs/en/v5.0/advanced/system-topic.html#alarms-system-alarms) |
 | **Slow Subscription Monitoring** | ✅            | ❌               | [Slow subscribers statistics](https://www.emqx.io/docs/en/v5.0/observability/slow_subscribers_statistics.html) |
 | **Prometheus**                   | ✅            | ✅               | [Integrate with Prometheus](https://www.emqx.io/docs/en/v5.0/observability/prometheus.html#dashboard-update)<br>[Prometheus](https://docs.vernemq.com/monitoring/prometheus) |
-| **StatsD**                       | ✅            | ❌               | [Integrate with StatsD](https://www.emqx.io/docs/en/v5.0/observability/statsd.html#statsd) |
 
 ## 结语
 

@@ -4,7 +4,7 @@ There is a wide variety of MQTT client tools with different functional focuses. 
 
 We have selected seven of the most useful MQTT client tools in 2022 and listed them by desktop, browser, and command line categories. We hope this article will help you quickly find a suitable client tool for MQTT testing.
 
-## How to choose an MQTT client?
+## How to Choose an MQTT Client?
 
 MQTT client tools are commonly used to establish connections to [MQTT brokers](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) for subscription, message sending and receiving operations. A good MQTT client tool should have the following features.
 
@@ -18,7 +18,7 @@ MQTT client tools are commonly used to establish connections to [MQTT brokers](h
 
 
 
-## MQTT desktop client
+## MQTT Desktop Client
 
 ### MQTT X
 
@@ -98,7 +98,7 @@ In general, MQTT.fx has rich and mature functions and supports many configuratio
 
 
 
-## MQTT online client
+## MQTT Online Client
 
 ### MQTT X Web
 
