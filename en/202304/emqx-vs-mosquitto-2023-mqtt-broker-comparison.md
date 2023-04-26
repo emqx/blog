@@ -1,6 +1,6 @@
 ## Introduction
 
-MQTT (Message Queuing Telemetry Transport) is a de facto standard messaging protocol for the Internet of Things (IoT). With the growth of the Internet of Things (IoT), MQTT brokers are becoming vital in connecting IoT devices and moving data between connected devices and cloud services.
+MQTT (Message Queuing Telemetry Transport) is a de facto standard messaging protocol for the Internet of Things (IoT). With the growth of IoT, [MQTT brokers](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) are becoming vital in connecting IoT devices and moving data between connected devices and cloud services.
 
 [EMQX](https://www.emqx.io/) and [Mosquitto](https://mosquitto.org/) are two of the most popular open-source MQTT brokers. EMQX is a highly scalable, distributed MQTT broker with clustering support. Mosquitto is a lightweight MQTT broker with a small footprint and a single-threaded architecture.
 
@@ -8,7 +8,7 @@ This blog post will provide an in-depth comparison of the two brokers in 2023.
 
 ## Mosquitto Overview
 
-The Mosquitto project was initially developed by Roger Light in 2013 and later donated to the Eclipse Foundation, licensed under the Eclipse Public License (EPL/EDL license). As one of the world's most widely used MQTT brokers, Mosquitto has over 7k GitHub Stars as of March 2023.
+The Mosquitto project was initially developed by Roger Light in 2009 and later donated to the Eclipse Foundation, licensed under the Eclipse Public License (EPL/EDL license). As one of the world's most widely used MQTT brokers, Mosquitto has over 7k GitHub Stars as of March 2023.
 
 Mosquitto is written in C/C++ and uses a single-threaded architecture. Mosquitto implements MQTT protocol versions 5.0, 3.1.1, and 3.1 and supports SSL/TLS and WebSockets. Its lightweight design makes Mosquitto suitable for deployment on embedded devices or servers with limited resources.
 
@@ -49,8 +49,9 @@ See: [Reaching 100M MQTT connections with EMQX 5.0](https://www.emqx.com/en/blog
 
 **Cons:**
 
-- Complex to set up
+- Complex to set up and configure
 - Difficult to manage effectively
+- Logs may be confusing
 
 ## Community and Popularity
 
@@ -61,8 +62,8 @@ See: [Reaching 100M MQTT connections with EMQX 5.0](https://www.emqx.com/en/blog
 |                                     | **EMQX**                                    | **Mosquitto**                                            |
 | :---------------------------------- | :------------------------------------------ | :------------------------------------------------------- |
 | **GitHub Project**                  | [EMQX GitHub](https://github.com/emqx/emqx) | [Mosquitto GitHub](https://github.com/eclipse/mosquitto) |
-| **Project Created**                 | 2012                                        | 2013                                                     |
-| **License**                         | Apache Version 2.0                          | EPL/EDL License                                          |
+| **Project Created**                 | 2012                                        | 2009                                                     |
+| **License**                         | Apache License 2.0                          | EPL/EDL License                                          |
 | **Programming Language**            | Erlang                                      | C                                                        |
 | **Latest Release**                  | v5.0.21 (March 2023)                        | 2.0.15 (Aug 2022)                                        |
 | **GitHub Stars**                    | 11.4k                                       | 7.2 k                                                    |
@@ -80,7 +81,7 @@ See: [Reaching 100M MQTT connections with EMQX 5.0](https://www.emqx.com/en/blog
 
 ## Scalability and Performance
 
-Mosquitto, as a lightweight MQTT broker, does not support clustering architecture but has excellent single-node performance. A server with a small resource footprint can support 100k concurrent MQTT connections.
+Mosquitto, as a lightweight MQTT broker, does not support clustering architecture but has excellent single-node performance. A server with a small resource footprint can support over 100k concurrent MQTT connections.
 
 EMQX, as a highly scalable distributed MQTT messaging broker, can support millions of concurrent connections on a single node and 100 million connections on a single cluster, but with much higher CPU and memory usage.
 
@@ -88,9 +89,9 @@ See: [EMQX vs Mosquitto Performance Benchmark Report](https://www.emqx.com/en/bl
 
 |                                              | **EMQX**                                                     | **Mosquitto**                                                | **Notes & Links**                                            |
 | :------------------------------------------- | :----------------------------------------------------------- | :----------------------------------------------------------- | :----------------------------------------------------------- |
-| **Scalability**                              | - 4M MQTT connections per node<br>- 100M MQTT connections per cluster | <100K MQTT connections per node                              | [Reaching 100M MQTT connections with EMQX 5.0](https://www.emqx.com/en/blog/reaching-100m-mqtt-connections-with-emqx-5-0) |
+| **Scalability**                              | - 4M MQTT connections per node<br>- 100M MQTT connections per cluster | <160K MQTT connections per node                              | [Reaching 100M MQTT connections with EMQX 5.0](https://www.emqx.com/en/blog/reaching-100m-mqtt-connections-with-emqx-5-0) |
 | **Performance**                              | - 2 million QoS0 MQTT msgs/sec per node<br>- 800k QoS1 msgs/sec<br>- 200k QoS2 msgs/sec | - Up to 120k QoS0 MQTT msgs/sec per node<br>- 80k QoS1 msgs/sec<br> - 60k QoS2 msgs/sec |                                                              |
-| **Latency**                                  | 1-5 millisecond                                              | 1-1000 millisecond                                           |                                                              |
+| **Latency**                                  | Single-digit millisecond latency at scale                                              | Up to seconds latency in some scenarios                                           |                                                              |
 | **Clustering**                               | 20+ nodes of cluster                                         | ❌                                                            | [Cluster Scalability](https://www.emqx.io/docs/en/v5.0/deploy/cluster/db.html#node-roles) |
 | **Elastic and Resilient scaling at runtime** | ✅                                                            | ❌                                                            |                                                              |
 | **Auto Clustering**                          | ✅                                                            | ❌                                                            | [EMQX Node Discovery and Autocluster](https://www.emqx.io/docs/en/v5.0/deploy/cluster/intro.html#emqx-node-discovery-and-autocluster) |
@@ -132,7 +133,6 @@ Security is crucial for connecting IoT devices and data exchanged between connec
 | **QUIC**                | ✅        | ❌             | [MQTT over QUIC: Next-Generation IoT Standard Protocol](https://www.emqx.com/en/blog/mqtt-over-quic) |
 | **OCSP Stapling**       | ✅        | ✅             | [EMQX Supports OCSP stapling](https://www.youtube.com/watch?v=e9SiF7ptvpU) |
 | **Audit Logs**          | ✅        | ❌             |                                                              |
-| **Black Duck Analysis** | ✅        | ❌             | Partner with Synopsis                                        |
 
 ## Authentication and Authorization
 
@@ -169,6 +169,7 @@ The Enterprise Edition of EMQX can seamlessly integrate with Kafka, databases, a
 | :------------------ | :--------------------- | :------------ | :----------------------------------------------------------- |
 | **Webhook**         | ✅                      | ✅             | [Webhook](https://www.emqx.io/docs/en/v5.0/data-integration/data-bridge-webhook.html#example-setup-webhook-using-config-files) |
 | **Rule Engine**     | ✅                      | ❌             | [Rule Engine](https://www.emqx.io/docs/en/v5.0/data-integration/rules.html) |
+| **Message Codec**   | ✅                      | ❌             |  |
 | **Data Bridge**     | ✅                      | ❌             | [Data bridges](https://www.emqx.io/docs/en/v5.0/data-integration/data-bridges.html) |
 | **Confluent/Kafka** | ✅ (Enterprise Edition) | ❌             | [Stream Data into Kafka](https://docs.emqx.com/en/enterprise/v4.4/rule/bridge_kafka.html) |
 | **SAP Event Mesh**  | ✅(Enterprise Edition)  | ❌             | [Ingest Data into SAP Event Mesh](https://docs.emqx.com/en/enterprise/v4.4/rule/bridge_sap_event_mesh.html#bridge-data-to-sap-event-mesh) |
@@ -190,7 +191,7 @@ The Enterprise Edition of EMQX can seamlessly integrate with Kafka, databases, a
 
 Mosquitto offers fundamental logging and debugging capabilities for monitoring broker status and troubleshooting issues. However, it lacks advanced management and monitoring features, making it difficult to gain insight into the running status and optimize the performance.
 
-EMQX provides rich and visual monitoring capabilities through HTTP API and Dashboard, making it easier to monitor and manage. In addition, EMQX supports integration with **Prometheus**, **StatsD**, and **Datadog**, enabling O&M teams to use third-party monitoring platforms easily.
+EMQX provides rich and visual monitoring capabilities through HTTP API and Dashboard, making it easier to monitor and manage. In addition, EMQX supports integration with **Prometheus** and **Datadog**, enabling O&M teams to use third-party monitoring platforms easily.
 
 |                                  | **EMQX**     | **Mosquitto**   | **Notes and Links**                                          |
 | :------------------------------- | :----------- | :-------------- | :----------------------------------------------------------- |
@@ -205,7 +206,6 @@ EMQX provides rich and visual monitoring capabilities through HTTP API and Dashb
 | **Alarm Alerts**                 | ✅            | ❌               | [System Topic](https://www.emqx.io/docs/en/v5.0/advanced/system-topic.html#alarms-system-alarms) |
 | **Slow Subscription Monitoring** | ✅            | ❌               | [Slow subscribers statistics](https://www.emqx.io/docs/en/v5.0/observability/slow_subscribers_statistics.html) |
 | **Prometheus**                   | ✅            | ✅               | [Integrate with Prometheus](https://www.emqx.io/docs/en/v5.0/observability/prometheus.html#dashboard-update) |
-| **StatsD**                       | ✅            | ❌               | [Integrate with StatsD](https://www.emqx.io/docs/en/v5.0/observability/statsd.html#statsd) |
 
 ## Cloud-Native and Kubernetes
 

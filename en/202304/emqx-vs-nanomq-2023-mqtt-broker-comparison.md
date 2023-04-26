@@ -28,14 +28,14 @@ See: [Reaching 100M MQTT connections with EMQX 5.0](https://www.emqx.com/en/blog
 
 **Cons**
 
-- Complex to set up and configure
+- Complicated to set up and configure
 - Difficult to manage effectively
 
 ## NanoMQ Overview
 
 NanoMQ is a lightweight and fast MQTT broker designed for the IoT edge. NanoMQ is implemented in purely C, based on NNG's asynchronous I/O with a multi-threading [Actor Model](https://en.wikipedia.org/wiki/Actor_model), and fully supports MQTT 3.1.1 and MQTT 5.0 protocol versions. 
 
-NanoMQ is high performance in the context of a stand-alone broker. The fascinating advantage is its portability. It can be deployed on any POSIX-compatible platform and runs on different CPU architectures such as x86_64, ARM, MIPS, and RISC-V.
+NanoMQ is high-performance in the context of a stand-alone broker. The fascinating advantage is its portability. It can be deployed on any POSIX-compatible platform and runs on different CPU architectures such as x86_64, ARM, MIPS, and RISC-V.
 
 ![NanoMQ MQTT Broker](https://assets.emqx.com/images/892a0de52bd6288686aec1f0bbc330d9.png)
 
@@ -72,7 +72,7 @@ EMQX and NanoMQ open-source projects are hosted on GitHub. Launched in 2012, EMQ
 | :---------------------------------- | :------------------------------------------ | :---------------------------------------------- |
 | **GitHub Project**                  | [EMQX GitHub](https://github.com/emqx/emqx) | [NanoMQ GitHub](https://github.com/emqx/nanomq) |
 | **Project Created**                 | 2012                                        | 2020                                            |
-| **License**                         | Apache Version 2.0                          | The MIT License                                 |
+| **License**                         | Apache License 2.0                          | The MIT License                                 |
 | **Latest Release**                  | v5.0.21 (March 2023)                        | v0.17.0 (March 2023)                            |
 | **GitHub Stars**                    | 11.4k                                       | 800+                                            |
 | **GitHub Forks**                    | 2k                                          | 100+                                            |
@@ -86,7 +86,7 @@ EMQX and NanoMQ open-source projects are hosted on GitHub. Launched in 2012, EMQ
 
 EMQX and NanoMQ fully implement the MQTT 3.1.1 and 5.0 specifications, support [MQTT over WebSocket](https://www.emqx.com/en/blog/connect-to-mqtt-broker-with-websocket) and SSL/TLS encryption, and pioneer [MQTT Over QUIC](https://www.emqx.com/en/blog/mqtt-over-quic), the next generation of the MQTT standard.
 
-EMQX is a scalable MQTT Broker with multiple protocol gateways, including LwM2M/CoAP, MQTT-SN, and Stomp. In contrast, NanoMQ is a lightweight broker which supports brokerless mode and can work with DDS, ZeroMQ, and Nanomsg.
+EMQX is a highly scalable MQTT Broker with multiple protocol gateways, including LwM2M/CoAP, MQTT-SN, and Stomp. In contrast, NanoMQ is a lightweight broker which supports brokerless mode and can work with DDS, ZeroMQ, and Nanomsg.
 
 Both brokers offer various authentication mechanisms, including username-password, JWT, OAuth 2.0 authentication, and IP white-/blacklisting.
 
@@ -127,7 +127,7 @@ See: [EMQX vs NanoMQ Performance Benchmark Report](https://www.emqx.com/en/blog/
 | **Clustering**                               | ✅ 20+ nodes of cluster                                       | ❌                                                            | [EMQX Cluster](https://www.emqx.io/docs/en/v5.0/deploy/cluster/introduction.html) |
 | **Scalability**                              | - 4M MQTT connections per node<br>- 100M MQTT connections per cluster | 200k MQTT connections per node                               | [Reaching 100M MQTT connections with EMQX 5.0](https://www.emqx.com/en/blog/reaching-100m-mqtt-connections-with-emqx-5-0) |
 | **Performance**                              | - 2 million QoS0 MQTT msgs/sec per node<br>- 800k QoS1 msgs/sec<br>- 200k QoS2 msgs/sec | - Up to 1 million+ QoS0 MQTT msgs/sec per node<br>- 500k QoS1 msgs/sec<br>- 180k QoS2 msgs/sec |                                                              |
-| **Latency**                                  | 1~5 millisecond                                              | 1～5 millisecond                                             |                                                              |
+| **Latency**                                  | Single-digit millisecond latency in most scenarios                                              | Less than 10 milliseconds in most scenarios                                             |                                                              |
 | **Booting footprint**                        | 30Mb+                                                        | 200Kb+                                                       |                                                              |
 | **Elastic and Resilient scaling at runtime** | ✅                                                            | ❌                                                            |                                                              |
 | **Auto Clustering**                          | ✅                                                            | ❌                                                            |                                                              |
@@ -160,22 +160,24 @@ As a lightweight broker, NanoMQ does not support data integration. EMQX, especia
 |                     | **EMQX**               | **NanoMQ** | **Notes and Links**                                          |
 | :------------------ | :--------------------- | :--------- | :----------------------------------------------------------- |
 | **Rule Engine**     | ✅                      | ✅Limited   | [EMQX Rule Engine](https://www.emqx.io/docs/en/v5.0/data-integration/rules.html) |
+| **Message Codec**   | ✅                      | ❌          |  |
 | **Data Bridge**     | ✅                      | ❌          | [Data bridges](https://www.emqx.io/docs/en/v5.0/data-integration/data-bridges.html) |
-| **Confluent/Kafka** | ✅ (Enterprise Edition) | ❌          | [Bridge data to Kafka](https://docs.emqx.com/en/enterprise/v4.4/rule/bridge_kafka.html) |
+| **Confluent/Kafka** | ✅ (Enterprise Edition) | ❌          | [Stream Data into Kafka](https://docs.emqx.com/en/enterprise/v4.4/rule/bridge_kafka.html) |
 | **SAP Event Mesh**  | ✅(Enterprise Edition)  | ❌          | [Ingest Data into SAP Event Mesh](https://docs.emqx.com/en/enterprise/v4.4/rule/bridge_sap_event_mesh.html#bridge-data-to-sap-event-mesh) |
 | **Apache Pulsar**   | ✅(Enterprise Edition)  | ❌          | [Bridge data to Pulsar](https://docs.emqx.com/en/enterprise/v4.4/rule/bridge_pulsar.html) |
 | **RabbitMQ**        | ✅(Enterprise Edition)  | ❌          | [Bridge data to RabbitMQ](https://docs.emqx.com/en/enterprise/v4.4/rule/bridge_rabbitmq.html) |
 | **MySQL**           | ✅(Enterprise Edition)  | ❌          | [EMQX MySQL](https://docs.emqx.com/en/enterprise/v4.4/rule/backend_mysql.html) |
-| **PostgreSQL**      | ✅(Enterprise Edition)  | ❌          | [Save data to PostgreSQL](https://docs.emqx.com/en/enterprise/v4.4/rule/backend_pgsql.html) |
-| **SQL Server**      | ✅(Enterprise Edition)  | ❌          | [Save data to SQLServer](https://docs.emqx.com/en/enterprise/v4.4/rule/backend_sqlserver.html) |
-| **MongoDB**         | ✅(Enterprise Edition)  | ❌          | [Save data to MongoDB](https://docs.emqx.com/en/enterprise/v4.4/rule/backend_mongodb.html) |
-| **Redis**           | ✅(Enterprise Edition)  | ❌          | [Save data to Redis](https://docs.emqx.com/en/enterprise/v4.4/rule/backend_redis.html) |
-| **Cassandra**       | ✅(Enterprise Edition)  | ❌          | [Save data to Cassandra](https://docs.emqx.com/en/enterprise/v4.4/rule/backend_cassandra.html) |
-| **AWS DynamoDB**    | ✅(Enterprise Edition)  | ❌          | [Save data to DynamoDB](https://docs.emqx.com/en/enterprise/v4.4/rule/backend_dynamodb.html) |
-| **ClickHouse**      | ✅(Enterprise Edition)  | ❌          | [Save data to ClickHouse](https://docs.emqx.com/en/enterprise/v4.4/rule/backend_clickhouse.html) |
-| **InfluxDB**        | ✅(Enterprise Edition)  | ❌          | [Save data to InfluxDB](https://docs.emqx.com/en/enterprise/v4.4/rule/backend_influxdb.html) |
-| **TimeScaleDB**     | ✅(Enterprise Edition)  | ❌          | [Save data to TimescaleDB](https://docs.emqx.com/en/enterprise/v4.4/rule/backend_timescaledb.html) |
-| **Oracle**          | ✅(Enterprise Edition)  | ❌          | [Save data to Oracle](https://docs.emqx.com/en/enterprise/v4.4/rule/backend_oracle.html) |
+| **PostgreSQL**      | ✅(Enterprise Edition)  | ❌          | [Ingest data into PostgreSQL](https://docs.emqx.com/en/enterprise/v4.4/rule/backend_pgsql.html) |
+| **SQL Server**      | ✅(Enterprise Edition)  | ❌          | [Ingest data into SQLServer](https://docs.emqx.com/en/enterprise/v4.4/rule/backend_sqlserver.html) |
+| **MongoDB**         | ✅(Enterprise Edition)  | ❌          | [Ingest data into MongoDB](https://docs.emqx.com/en/enterprise/v4.4/rule/backend_mongodb.html) |
+| **Redis**           | ✅(Enterprise Edition)  | ❌          | [Ingest data into Redis](https://docs.emqx.com/en/enterprise/v4.4/rule/backend_redis.html) |
+| **Cassandra**       | ✅(Enterprise Edition)  | ❌          | [Ingest data into Cassandra](https://docs.emqx.com/en/enterprise/v4.4/rule/backend_cassandra.html) |
+| **AWS DynamoDB**    | ✅(Enterprise Edition)  | ❌          | [Ingest data into DynamoDB](https://docs.emqx.com/en/enterprise/v4.4/rule/backend_dynamodb.html) |
+| **ClickHouse**      | ✅(Enterprise Edition)  | ❌          | [Ingest data into ClickHouse](https://docs.emqx.com/en/enterprise/v4.4/rule/backend_clickhouse.html) |
+| **InfluxDB**        | ✅(Enterprise Edition)  | ❌          | [Ingest data into InfluxDB](https://docs.emqx.com/en/enterprise/v4.4/rule/backend_influxdb.html) |
+| **TimeScaleDB**     | ✅(Enterprise Edition)  | ❌          | [Ingest data into TimescaleDB](https://docs.emqx.com/en/enterprise/v4.4/rule/backend_timescaledb.html) |
+| **Oracle**          | ✅(Enterprise Edition)  | ❌          | [Ingest data into Oracle](https://docs.emqx.com/en/enterprise/v4.4/rule/backend_oracle.html) |
+| **HStreamDB**       | ✅(Enterprise Edition)  | ❌          | [Stream Data into HStreamDB ](https://docs.emqx.com/en/enterprise/v4.4/rule/backend_hstreamdb.html) |
 
 <section class="promotion">
     <div>
