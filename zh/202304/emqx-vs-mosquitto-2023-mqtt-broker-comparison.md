@@ -4,7 +4,7 @@
 
 ## Mosquitto 简介
 
-[Mosquitto](https://github.com/eclipse/mosquitto) 项目最初由 IBM 和 Eurotech 于 2013 年开发，后来于 2016 年捐赠给 Eclipse 基金会。Eclipse Mosquitto 基于 Eclipse 公共许可证(EPL/EDL license)发布，用户可以免费使用。作为全球使用最广的 MQTT 协议实现之一 ，截至 2023 年 3 月，Mosquitto 的 GitHub Star 数超过了 7.1 K。
+[Mosquitto](https://github.com/eclipse/mosquitto) 项目最初由 Roger Light 于 2009 年开发，后来捐赠给了 Eclipse 基金会。Eclipse Mosquitto 基于 Eclipse 公共许可证(EPL/EDL license)发布，用户可以免费使用。作为全球使用最广的 MQTT 协议实现之一 ，截至 2023 年 3 月，Mosquitto 的 GitHub Star 数超过了 7.1 K。
 
 Mosquitto 用 C/C++ 编写，采用单线程架构。Mosquitto 支持 MQTT 协议的 5.0、3.1.1 和 3.1 版本，同时支持 SSL/TLS 和 WebSockets。轻量级设计使其适合部署在嵌入式设备或资源有限的服务器上。
 
@@ -51,8 +51,8 @@ Mosquitto 以其轻量级的单线程架构在部署上比 EMQX 更普遍，特�
 |                                     | **EMQX**                                    | **Mosquitto**                                                |
 | :---------------------------------- | :------------------------------------------ | :----------------------------------------------------------- |
 | **GitHub Project**                  | [EMQX GitHub](https://github.com/emqx/emqx) | [Mosquitto GitHub](https://github.com/eclipse/mosquitto)     |
-| **Project Created**                 | 2012                                        | 2013                                                         |
-| **Latest Release**                  | v5.0.21 (March 2023)                        | 2.0.15 (Aug 2022)                                            |
+| **Project Created**                 | 2009                                        | 2013                                                         |
+| **License**                  | Apache License 2.0                        | EPL/EDL License                                            |
 | **GitHub Stars**                    | 11.4k                                       | 7.2 k                                                        |
 | **GitHub Forks**                    | 2k                                          | 2.1k                                                         |
 | **GitHub Commits**                  | 14k+                                        | 2.8k+                                                        |
@@ -64,9 +64,6 @@ Mosquitto 以其轻量级的单线程架构在部署上比 EMQX 更普遍，特�
 
 <center>以上数据截至 2023-03-24</center>
 
-<br>
-
-> 注：Mosquitto 项目最初由 Roger Light 在 2008 年创建，后来在 2013 年被 Eclipse 基金会接收。
 
 ## 性能与可扩展性
 
@@ -78,7 +75,7 @@ EMQX 作为可集群部署的大规模消息服务器，单节点可以支持百
 | :------------------------------------------- | :----------------------------------------------------------- | :----------------------------------------------------------- | :----------------------------------------------------------- |
 | **Scalability**                              | - 4M MQTT connections per node<br>- 100M MQTT connections per cluster | <100K MQTT connections per node                              | [Reaching 100M MQTT connections with EMQX 5.0](https://www.emqx.com/en/blog/reaching-100m-mqtt-connections-with-emqx-5-0) |
 | **Performance**                              | - 2 million QoS0 MQTT msgs/sec per node<br>- 800k QoS1 msgs/sec<br>- 200k QoS2 msgs/sec | - Up to 120k QoS0 MQTT msgs/sec per node<br>- 80k QoS1 msgs/sec<br> - 60k QoS2 msgs/sec |                                                              |
-| **Latency**                                  | 1-5 millisecond                                              | 1-1000 millisecond                                           |                                                              |
+| **Latency**                                  | 大规模场景下延迟低至个位数毫秒级                                              | 某些情况下延迟可达几秒                                           |                                                              |
 | **Clustering**                               | 20+ nodes of cluster                                         | ❌                                                            | [Cluster Scalability](https://www.emqx.io/docs/en/v5.0/deploy/cluster/db.html#node-roles) |
 | **Elastic and Resilient scaling at runtime** | ✅                                                            | ❌                                                            |                                                              |
 | **Auto Clustering**                          | ✅                                                            | ❌                                                            | [EMQX Node Discovery and Autocluster](https://www.emqx.io/docs/en/v5.0/deploy/cluster/intro.html#emqx-node-discovery-and-autocluster) |
@@ -125,7 +122,6 @@ EMQX 同样完整支持 MQTT 3.1/3.1.1/5.0 以及 MQTT over Websocket 协议。�
 | **QUIC**                | ✅        | ❌             | [MQTT over QUIC: Next-Generation IoT Standard Protocol](https://www.emqx.com/en/blog/mqtt-over-quic) |
 | **OCSP Stapling**       | ✅        | ✅             | [EMQX Supports OCSP stapling](https://www.youtube.com/watch?v=e9SiF7ptvpU) |
 | **Audit Logs**          | ✅        | ❌             |                                                              |
-| **Black Duck Analysis** | ✅        | ❌             | Partner with Synopsis                                        |
 
 ## 认证与鉴权
 
@@ -159,6 +155,7 @@ EMQX 在数据集成方面提供了 WebHook 方式将客户端消息和事件推
 | :------------------ | :--------------------- | :------------ | :----------------------------------------------------------- |
 | **Webhook**         | ✅                      | ✅             | [Webhook](https://www.emqx.io/docs/en/v5.0/data-integration/data-bridge-webhook.html#example-setup-webhook-using-config-files) |
 | **Rule Engine**     | ✅                      | ❌             | [Rule Engine](https://www.emqx.io/docs/en/v5.0/data-integration/rules.html) |
+| **Message Codec**     | ✅                    | ❌             |  |
 | **Data Bridge**     | ✅                      | ❌             | [Data bridges](https://www.emqx.io/docs/en/v5.0/data-integration/data-bridges.html) |
 | **Confluent/Kafka** | ✅ (Enterprise Edition) | ❌             | [Stream Data into Kafka](https://docs.emqx.com/en/enterprise/v4.4/rule/bridge_kafka.html) |
 | **SAP Event Mesh**  | ✅(Enterprise Edition)  | ❌             | [Ingest Data into SAP Event Mesh](https://docs.emqx.com/en/enterprise/v4.4/rule/bridge_sap_event_mesh.html#bridge-data-to-sap-event-mesh) |
@@ -202,7 +199,7 @@ EMQX 在数据集成方面提供了 WebHook 方式将客户端消息和事件推
 
 Mosquitto 提供了基本的日志和调试功能，用于监控代理状态和故障排除。然而，它缺乏先进的管理和监控功能，使用户难以从其运行状态获得更多洞察进行性能优化。
 
-EMQX 通过 HTTP API 和 Dashboard 提供丰富和可视化的监控功能，使其更容易监控和管理。此外，EMQX 支持与 Prometheus、StatsD 和Datadog 的集成，使运维团队能够轻松使用第三方监控平台。
+EMQX 通过 HTTP API 和 Dashboard 提供丰富和可视化的监控功能，使其更容易监控和管理。此外，EMQX 支持与 Prometheus 和 Datadog 的集成，使运维团队能够轻松使用第三方监控平台。
 
 |                                  | **EMQX**     | **Mosquitto**   | **Notes and Links**                                          |
 | :------------------------------- | :----------- | :-------------- | :----------------------------------------------------------- |
@@ -217,7 +214,6 @@ EMQX 通过 HTTP API 和 Dashboard 提供丰富和可视化的监控功能，使
 | **Alarm Alerts**                 | ✅            | ❌               | [System Topic](https://www.emqx.io/docs/en/v5.0/advanced/system-topic.html#alarms-system-alarms) |
 | **Slow Subscription Monitoring** | ✅            | ❌               | [Slow subscribers statistics](https://www.emqx.io/docs/en/v5.0/observability/slow_subscribers_statistics.html) |
 | **Prometheus**                   | ✅            | ✅               | [Integrate with Prometheus](https://www.emqx.io/docs/en/v5.0/observability/prometheus.html#dashboard-update) |
-| **StatsD**                       | ✅            | ❌               | [Integrate with StatsD](https://www.emqx.io/docs/en/v5.0/observability/statsd.html#statsd) |
 
 ## 云原生部署与 K8s 支持
 
@@ -230,7 +226,7 @@ Mosquitto 支持基于 docker 的容器化部署。EMQX 在此基础上提供了
 | **Terraform**           | ✅                                             | ❌             | [EMQX Terraform](https://www.emqx.com/en/emqx-terraform)     |
 | **Cloud Service**       | - Serverless<br>- Hosting/Dedicated<br>- BYOC | Hosting       |                                                              |
 
-EMQX Kubernetes Operator: https://github.com/emqx/emqx-operator
+EMQX Kubernetes Operator: [https://github.com/emqx/emqx-operator](https://github.com/emqx/emqx-operator)
 
 ![EMQX Kubernetes Operator](https://assets.emqx.com/images/f8483728a4241191e4f49ac3f8fa5740.png?imageMogr2/thumbnail/1520x)
 

@@ -8,7 +8,7 @@ Both are suitable for industrial IoT and embedded devices with constrained resou
 
 ## Mosquitto Overview
 
-The Mosquitto project was initially developed by Roger Light in 2013 and later donated to the Eclipse Foundation, licensed under the Eclipse Public License (EPL/EDL license).
+The Mosquitto project was initially developed by Roger Light in 2009 and later donated to the Eclipse Foundation, licensed under the Eclipse Public License (EPL/EDL license).
 
 Mosquitto’s design is straightforward and clean. It runs as a single-threaded daemon process with epoll support. It receives incoming data from one socket and dispatches it to other sockets.
 
@@ -60,7 +60,7 @@ Both open-source projects are hosted on GitHub. The following community metrics 
 |                                     | **Mosquitto**                                            | **NanoMQ**                                      |
 | :---------------------------------- | :------------------------------------------------------- | :---------------------------------------------- |
 | **GitHub Project**                  | [Mosquitto GitHub](https://github.com/eclipse/mosquitto) | [NanoMQ GitHub](https://github.com/emqx/nanomq) |
-| **Project Created**                 | 2013                                                     | 2020                                            |
+| **Project Created**                 | 2009                                                     | 2020                                            |
 | **License**                         | EPL/EDL License                                          | MIT License                                     |
 | **Programming Language**            | C/C++                                                    | C                                               |
 | **Latest Release**                  | 2.0.15 (Aug 2022)                                        | v0.17.0 (March 2023)                            |
@@ -114,7 +114,7 @@ See: [Mosquitto vs NanoMQ Performance Benchmark Report](https://www.emqx.com/en/
 | :-------------- | :----------------------------------------------------------- | :----------------------------------------------------------- |
 | **Scalability** | 160k                                                         | 160k MQTT connections per node                               |
 | **Performance** | Up to 120k QoS0 MQTT msgs/sec per node<br>80k QoS1 msgs/sec<br>40k QoS2 msgs/sec | Up to 1 million+ QoS0 MQTT msgs/sec per node<br>800k QoS1 msgs/sec<br>400k QoS2 msgs/sec |
-| **Latency**     | 1~500 millisecond                                            | 1～10 millisecond                                            |
+| **Latency**     | Up to seconds latency in some scenarios                                            | Less than 10 milliseconds in most scenarios                                            |
 
 ## Ease of Use
 
@@ -150,7 +150,7 @@ NanoMQ is pioneering [MQTT over QUIC](https://www.emqx.com/en/blog/mqtt-over-qui
 
 ## Conclusion
 
-In conclusion, Mosquitto and NanoMQ are excellent lightweight MQTT brokers for messaging at the IoT edge. You can choose any for your deployments on low-power sensors, embedded hardware, and industrial IoT in 2023.
+In conclusion, Mosquitto and NanoMQ are excellent lightweight [MQTT brokers](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) for messaging at the IoT edge. You can choose any for your deployments on low-power sensors, embedded hardware, and industrial IoT in 2023.
 
 ## References
 

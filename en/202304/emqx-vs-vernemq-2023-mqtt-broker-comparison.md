@@ -29,9 +29,9 @@ EMQX offers rich enterprise features, data integration, cloud hosting services, 
 
 **Cons:**
 
+- Complex to set up and configure
 - Difficult to manage effectively
-- Complex configuration
-- Logging may be confusing
+- Logs may be confusing
 
 <section class="promotion">
     <div>
@@ -72,7 +72,7 @@ Both the EMQX and VerneMQ projects are hosted on GitHub. EMQX was launched in 20
 | :---------------------------------- | :------------------------------------------ | :--------------------------------------------------- | :----------------------------------------------------------- |
 | **GitHub Project**                  | [EMQX GitHub](https://github.com/emqx/emqx) | [VerneMQ GitHub](https://github.com/vernemq/vernemq) |                                                              |
 | **Product Created**                 | 2012                                        | 2014                                                 |                                                              |
-| **License Mode**                    | Apache Version 2.0                          | Apache License 2.0                                   |                                                              |
+| **License Mode**                    | Apache License 2.0                          | Apache License 2.0                                   |                                                              |
 | **Latest Release**                  | v5.0.21 (March 2023)                        | v1.12.6.2 (Nov. 2022)                                |                                                              |
 | **GitHub Stars**                    | 11.4k+                                      | 3k                                                   |                                                              |
 | **GitHub Forks**                    | 2k                                          | 300+                                                 | [EMQX GitHub Forks](https://github.com/emqx/emqx/network/members)<br>[VerneMQ GitHub Forks](https://github.com/vernemq/vernemq/forks) |
@@ -120,9 +120,9 @@ For VerneMQ, few benchmark reports are available on the scalability and performa
 
 |                                              | **EMQX**                                                     | **VerneMQ**                   | **Notes & Links**                                            |
 | :------------------------------------------- | :----------------------------------------------------------- | :---------------------------- | :----------------------------------------------------------- |
-| **Scalability**                              | 4M MQTT connections per node100M MQTT connections per cluster | **?**                         | [Reaching 100M MQTT connections with EMQX 5.0](https://www.emqx.com/en/blog/reaching-100m-mqtt-connections-with-emqx-5-0) |
-| **Performance**                              | 4 million QoS0 MQTT msgs/sec per node800k QoS1 msgs/sec200k QoS2 msgs/sec | **?**                         |                                                              |
-| **Latency**                                  | 1-5 millisecond                                              | **?**                         |                                                              |
+| **Scalability**                              | 4M MQTT connections per node<br>100M MQTT connections per cluster | **?**                         | [Reaching 100M MQTT connections with EMQX 5.0](https://www.emqx.com/en/blog/reaching-100m-mqtt-connections-with-emqx-5-0) |
+| **Performance**                              | 4 million QoS0 MQTT msgs/sec per node<br>800k QoS1 msgs/sec<br>200k QoS2 msgs/sec | **?**                         |                                                              |
+| **Latency**                                  | Single-digit millisecond latency in most scenarios                                             | Up to seconds latency in some scenarios                         |                                                              |
 | **Reliability**                              | Message Persistence in RocksDB and external Database         | Message Persistence in LevelDB | [Highly Reliable MQTT Data Persistence Based on RocksDB](https://www.emqx.com/en/blog/mqtt-persistence-based-on-rocksdb) <br>[VerneMQ Storage](https://docs.vernemq.com/configuring-vernemq/storage) |
 | **Clustering**                               | 20+ nodes of cluster                                         | **?**                         | [EMQX Cluster Scalability](https://www.emqx.io/docs/en/v5.0/deploy/cluster/db.html#node-roles)<br>[Vernemq - Cluster](https://docs.vernemq.com/vernemq-clustering/introduction) |
 | **Elastic and Resilient scaling at runtime** | ✅                                                            | **?**                         |                                                              |
@@ -179,7 +179,7 @@ Both EMQX and VerneMQ can be easily extended with Hooks and Plugins. In addition
 
 ## Operability and Observability
 
-EMQX offers a user-friendly dashboard and extensive HTTP APIs. It supports monitoring with StatsD, Prometheus, and Grafana. VerneMQ is easy to deploy and configure but lacks advanced management and monitoring features.
+EMQX offers a user-friendly dashboard and extensive HTTP APIs. It supports monitoring with Prometheus, and Grafana. VerneMQ is easy to deploy and configure but lacks advanced management and monitoring features.
 
 |                                  | **EMQX**     | **VerneMQ**     | **Notes and Links**                                          |
 | :------------------------------- | :----------- | :-------------- | :----------------------------------------------------------- |
@@ -194,7 +194,7 @@ EMQX offers a user-friendly dashboard and extensive HTTP APIs. It supports monit
 | **Alarm Alerts**                 | ✅            | ❌               | [System Topic](https://www.emqx.io/docs/en/v5.0/advanced/system-topic.html#alarms-system-alarms) |
 | **Slow Subscription Monitoring** | ✅            | ❌               | [Slow subscribers statistics](https://www.emqx.io/docs/en/v5.0/observability/slow_subscribers_statistics.html) |
 | **Prometheus**                   | ✅            | ✅               | [Integrate with Prometheus](https://www.emqx.io/docs/en/v5.0/observability/prometheus.html#dashboard-update)<br>[Prometheus](https://docs.vernemq.com/monitoring/prometheus) |
-| **StatsD**                       | ✅            | ❌               | [Integrate with StatsD](https://www.emqx.io/docs/en/v5.0/observability/statsd.html#statsd) |
+
 
 ## Conclusion
 
