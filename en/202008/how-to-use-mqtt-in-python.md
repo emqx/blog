@@ -6,7 +6,7 @@ This article mainly introduces how to use the **paho-mqtt** client and implement
 
 
 
-## Project initialization
+## Project Initialization
 
 This project uses Python 3.6 to develop and test. Readers can use the following command to confirm the Python version.
 
@@ -15,7 +15,7 @@ This project uses Python 3.6 to develop and test. Readers can use the following 
 Python 3.6.7
 ```
 
-### Choose the MQTT client
+### Choose The MQTT Client
 
 The [Paho Python Client](https://www.eclipse.org/paho/clients/python/) provides a client class with support for both MQTT v3.1 and v3.1.1 on Python 2.7 or 3.x. It also provides some helper functions to make publishing one off messages to an MQTT server very straightforward.
 
@@ -28,7 +28,7 @@ pip3 install paho-mqtt
 ```
 
 
-## The use of Python MQTT
+## The USe of Python MQTT
 
 ### Connect to the MQTT broker
 
