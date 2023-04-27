@@ -8,7 +8,7 @@
 
 ## Mosquitto 简介
 
-Mosquitto 是由 Roger Light 在 2013 年开发的开源 MQTT 消息 Broker（EPL/EDL 许可证），后来捐赠给了 Eclipse 基金会。
+Mosquitto 是由 Roger Light 在 2009 年开发的开源 MQTT 消息 Broker（EPL/EDL 许可证），后来捐赠给了 Eclipse 基金会。
 
 Mosquitto 设计简洁高效，以单线程守护进程的形式运行，并支持 epoll。它能够接收某个套接字传入的数据，然后将其转发给其他套接字。
 
@@ -60,7 +60,7 @@ NanoMQ 作为一个 2020 年才启动的项目，虽然还处于早期阶段，�
 |                                     | **Mosquitto**                                            | **NanoMQ**                                      |
 | :---------------------------------- | :------------------------------------------------------- | :---------------------------------------------- |
 | **GitHub Project**                  | [Mosquitto GitHub](https://github.com/eclipse/mosquitto) | [NanoMQ GitHub](https://github.com/emqx/nanomq) |
-| **Project Created**                 | 2013                                                     | 2020                                            |
+| **Project Created**                 | 2009                                                     | 2020                                            |
 | **License**                         | EPL/EDL License                                          | MIT License                                     |
 | **Programming Language**            | C/C++                                                    | C                                               |
 | **Latest Release**                  | 2.0.15 (Aug 2022)                                        | v0.17.0 (March 2023)                            |
@@ -112,7 +112,7 @@ Mosquitto 针对的是传统嵌入式场景，这意味着它更加节省资源�
 | :-------------- | :----------------------------------------------------------- | :----------------------------------------------------------- |
 | **Scalability** | 160k                                                         | 160k MQTT connections per node                               |
 | **Performance** | Up to 120k QoS0 MQTT msgs/sec per node<br>80k QoS1 msgs/sec<br>40k QoS2 msgs/sec | Up to 1 million+ QoS0 MQTT msgs/sec per node<br>800k QoS1 msgs/sec<br>400k QoS2 msgs/sec |
-| **Latency**     | 1~500 millisecond                                            | 1～10 millisecond                                            |
+| **Latency**     | Up to seconds latency in some scenarios                                           | Less than 10 milliseconds in most scenarios                                            |
 
 
 

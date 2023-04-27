@@ -1,6 +1,6 @@
 ## 引言
 
-我们很高兴地宣布：由 EMQ 提供的 [MQTT 开放基准测试规范](https://github.com/emqx/mqttbs)现已正式发布！
+我们很高兴地宣布：由 EMQ 发起的面向全球的 [MQTT 开放基准测试规范](https://github.com/emqx/mqttbs)现已正式发布！
 
 该测试规范包含了实用的典型使用场景、一套衡量 Broker 性能的主要指标，以及一个模拟负载和收集测试结果的工具，可以帮助开发者评估 MQTT Broker 的可扩展性和性能，从而选择最需要和合适的产品。
 
