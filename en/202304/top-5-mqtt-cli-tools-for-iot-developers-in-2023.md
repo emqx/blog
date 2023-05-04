@@ -101,10 +101,10 @@ mqttx bench sub -c 100 -t bench/%i -h 'broker.emqx.io' -p 1883
 
 <section class="promotion">
     <div>
-        Download MQTTX
+        Download MQTTX CLI
       <div class="is-size-14 is-text-normal has-text-weight-normal">A powerful and easy-to-use MQTT 5.0 command line tool.</div>
     </div>
-    <a href="https://www.emqx.com/en/try?product=MQTTX" class="button is-gradient px-5">Download Now →</a>
+    <a href="https://mqttx.app/cli#download" class="button is-gradient px-5">Download Now →</a>
 </section>
 
 ## #2: Mosquitto CLI
