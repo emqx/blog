@@ -30,10 +30,10 @@ In the customer's cloud environment, an EMQX cluster and BYOC Agent node are put
 
 On the EMQX Cloud’s environment side, there's a management console with BYOC. This allows you to easily manage and control your EMQX clusters using a GUI interface and view cluster logs and monitoring data.
 
-When it comes to data control, the architecture can be divided into the control panel and the data panel. 
+When it comes to data control, the architecture can be divided into the control plane and the data plane. 
 
-- The control panel, located on the EMQX cloud environment side, collects monitoring data and sends control instructions to your cluster. It does not handle any business data inflow or outflow. 
-- The data panel includes the EMQX clusters and BYOC Agent nodes that are in the your cloud environment. They mainly manage the inflow and outflow of customers' business data. 
+- The control plane, located on the EMQX cloud environment side, collects monitoring data and sends control instructions to your cluster. It does not handle any business data inflow or outflow. 
+- The data plane includes the EMQX clusters and BYOC Agent nodes that are in the your cloud environment. They mainly manage the inflow and outflow of customers' business data. 
 
 With this BYOC architecture, customers' business data is well isolated in your cloud environment, which meets your company's security and compliance needs.
 
