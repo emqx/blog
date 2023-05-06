@@ -1,11 +1,11 @@
 [MQTT](https://mqtt.org/) is a lightweight IoT messaging protocol based on publish/subscribe model, which can provide real-time reliable messaging services for connected devices with very little code and bandwidth. It is widely used in industries such as IoT, mobile Internet, smart hardware, [Internet of vehicles](https://www.emqx.com/en/blog/category/internet-of-vehicles), and power and energy.
 
-[Django](https://www.djangoproject.com/) is an open-source Web framework and one of the more popular Python Web frameworks. This article mainly introduces how to connect, subscribe, unsubscribe, and send and receive messages between [MQTT client](https://www.emqx.io/mqtt-client) and [MQTT Broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker) in the Django project.
+[Django](https://www.djangoproject.com/) is an open-source Web framework and one of the more popular Python Web frameworks. This article mainly introduces how to connect, subscribe, unsubscribe, and send and receive messages between [MQTT client](https://www.emqx.io/mqtt-client) and [MQTT Broker](https://www.emqx.io/) in the Django project.
 
 We will write a simple MQTT client using [paho-mqtt](https://www.eclipse.org/paho/index.php?page=clients/python/index.php) client library. `paho-mqtt` is a widely used MQTT client library in Python that provides client support for MQTT 5.0, 3.1.1, and 3.1 on Python 2.7 and 3.x.
 
 
-## Project initialization
+## Project Initialization
 
 This project uses Python 3.8 for development testing, and the reader can confirm the version of Python with the following command.
 
@@ -192,6 +192,17 @@ At this point, we have completed the development of the MQTT client using `paho-
 
 Next, readers can check out [The Easy-to-understand Guide to MQTT Protocol](https://www.emqx.com/en/mqtt) series of articles provided by EMQ to learn about MQTT protocol features, explore more advanced applications of MQTT, and get started with MQTT application and service development.
 
+## Other Articles in This Series
+
+- [How to Use MQTT in Python (Paho)](https://www.emqx.com/en/blog/how-to-use-mqtt-in-python)
+
+- [Python MQTT Asynchronous Framework - HBMQTT](https://www.emqx.com/en/blog/python-async-mqtt-client-hbmqtt)
+
+- [Comparison of Python MQTT clients](https://www.emqx.com/en/blog/comparision-of-python-mqtt-client)
+
+- [How to use MQTT in Flask](https://www.emqx.com/en/blog/how-to-use-mqtt-in-flask)
+
+- [MicroPython MQTT Tutorial Based on Raspberry Pi](https://www.emqx.com/en/blog/micro-python-mqtt-tutorial-based-on-raspberry-pi)
 
 
 <section class="promotion">

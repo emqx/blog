@@ -24,7 +24,7 @@ The full name of [MQTT](https://www.emqx.com/en/mqtt) is Message Queuing Telemet
 
 - M2M Communication and Big Data Acquisition in the Internet of Things.
 
-- Android message push and WEB message push.
+- Android message push and WEB message push. (Learn more: [How to use MQTT on Android](https://www.emqx.com/en/blog/android-connects-mqtt-using-kotlin).)
 
 - Mobile instant messaging, such as Facebook Messenger.
 

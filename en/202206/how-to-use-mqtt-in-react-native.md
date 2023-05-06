@@ -1,11 +1,12 @@
-React Native is Facebook’s open-source cross-platform mobile application development framework, a derivative of React for the native mobile application platform, which supports both iOS and Android platforms. React Native uses Javascript, similar to HTML’s JSX, and CSS to develop mobile applications, allowing technical staff familiar with web front-end development to start working on mobile application development with a minimal learning curve. React Native also offers performance and experience close to that of native applications.
+React Native is Facebook’s open-source cross-platform mobile application development framework, a derivative of React for the native mobile application platform, which supports both iOS and Android platforms. React Native uses Javascript, similar to HTML JSX, and CSS to develop mobile applications, allowing technical staff familiar with web front-end development to start working on mobile application development with a minimal learning curve. React Native also offers performance and experience close to that of native applications.
 
-[MQTT](https://mqtt.org/) is a **lightweight IoT messaging protocol** based on a publish/subscribe model that enables stable transmission over severely constrained hardware devices and low-bandwidth, high-latency networks. With its easy implementation, QoS support, and small message size, it has been widely used in IoT industry.
+[MQTT](https://mqtt.org/) is a **lightweight IoT messaging protocol** based on a publish/subscribe model that enables stable transmission over severely constrained hardware devices and low-bandwidth, high-latency networks. With its easy implementation, QoS support, and small message size, it has been widely used in the IoT industry.
 
-This article focuses on the use of MQTT in React Native projects to connect, subscribe and unsubscribe, and send and receive messages from clients to [MQTT brokers](https://www.emqx.com/en/blog/popular-online-public-mqtt-brokers).
+This article focuses on the use of MQTT in React Native projects to connect, subscribe and unsubscribe, and send and receive messages from clients to [MQTT brokers](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison).
 
+> Learn more: [How to use MQTT on Android](https://www.emqx.com/en/blog/android-connects-mqtt-using-kotlin).
 
-## Create a new React Native project
+## Create a New React Native Project
 
 Here is an example of creating a project named, RNMQTTDemo, in the macOS development environment and iOS application platform. Refer to [Setting up the development environment](https://reactnative.dev/docs/environment-setup) for details.
 
@@ -15,7 +16,7 @@ After the project is created, execute the following commands to install the requ
 npm install @react-native-async-storage/async-storage @rneui/base @rneui/themed
 ```
 
-## Install the MQTT client module
+## Install the MQTT Client Module
 
 ```
 npm install react_native_mqtt
@@ -23,7 +24,7 @@ npm install react_native_mqtt
 
 react_native_mqtt is an MQTT client module used for the React Native project, which supports iOS and Android.
 
-## How to Use  MQTT client module
+## How to Use MQTT Client Module
 
 **Connecting to an MQTT Server**
 
@@ -117,7 +118,7 @@ After that you will see the application run in the iOS emulator, where the clien
 
 ![MQTT React Native](https://assets.emqx.com/images/bbdb1456750727915df96cb60d4f4d0a.png)
 
-## MQTT connection test
+## MQTT Connection Test
 
 We will use the [MQTT 5.0 client tool - MQTT X](https://mqttx.app) to perform the relevant tests. Create a connection named react-native-demo, use the default values for all configuration items, click the connect button, and add a subscription with the topic name, `testTopic`, after a successful connection, as follows:
 

@@ -7,11 +7,36 @@ In this first post, we provide the benchmarking results of NanoMQ and Mosquitto 
 
 ## MQTT Benchmark Scenarios and Use Cases
 
+[The MQTT Benchmark Suite](https://github.com/emqx/mqttbs) designs two sets of benchmark use cases. One is named Basic Set, which is for small-scale performance verification, and another is called Enterprise Set, which aims for enterprise level verification.
+
 Detailed descriptions of the testing scenarios are already available on the [GitHub project](https://github.com/emqx/mqttbs), but for convenience, we briefly list them here as well.
 
 All the tests are executed on a single node.
 
 ### Use Cases
+
+#### Basic Set
+
+- **Point-to-Point**: p2p-1K-1K-1K-1K
+  - 1k publishers, 1k subscribers, 1k topics
+  - Each publisher pubs 1 message per second
+  - QoS 1, payload 16B
+- **Fan-out**: fanout-1-1k-1-1K
+  - 1 publisher, 1 topic, 1000 subscribers
+  - 1 publisher pubs 1 message per second
+  - QoS 1, payload 16B
+- **Fan-in:** sharedsub-1K-5-1K-1K
+  - 1k publishers, 1k pub topics
+  - 5 subscribers consume all messages in a shared subscription way
+  - Publish rate: 1k/s (each publisher pubs a message per second)
+  - Shared subscription’s topic: $share/perf/test/#
+  - Publish topics: test/$clientid
+  - QoS 1, payload 16B
+- **Concurrent connections**: conn-tcp-10k-100
+  - 10k connections
+  - Connection rate (cps): 100/s
+
+#### Enterprise Set
 
 - **Point-to-Point**: p2p-50K-50K-50K-50K
   - 50k publishers, 50k subscribers, 50k topics
@@ -70,20 +95,52 @@ XMeter provides a private deployment version (on-premise) and a public cloud Saa
 
 ## Benchmarking Results
 
-### **point-to-point**: p2p-50K-50K-50K-50K
+### Basic Set
 
-#### Metrics
+#### **point-to-point**: 1K:1K
+
+|               | Average pub-to-sub latency (ms) | Max CPU user+system | Avg CPU user+system | Max memory used | Avg memory used |
+| :------------ | ------------------------------- | ------------------- | ------------------- | --------------- | --------------- |
+| **Mosquitto** | 0.25                            | 0%                  | 0%                  | 278M            | 254M            |
+| **NanoMQ**    | 0.25                            | 1%                  | 0%                  | 271M            | 270M            |
+
+#### Fan-out 1k QoS 1
+
+|               | Average pub-to-sub latency (ms) | Max CPU user+system | Avg CPU user+system | Max memory used | Avg memory used |
+| :------------ | ------------------------------- | ------------------- | ------------------- | --------------- | --------------- |
+| **Mosquitto** | 5.73                            | 0%                  | 0%                  | 270M            | 260M            |
+| **NanoMQ**    | 13.66                           | 0%                  | 0%                  | 271M            | 263M            |
+
+#### Fan-in 1k - shared subscription QoS 1
+
+|               | Average pub-to-sub latency (ms) | Max CPU user+system | Avg CPU user+system | Max memory used | Avg memory used |
+| :------------ | ------------------------------- | ------------------- | ------------------- | --------------- | --------------- |
+| **Mosquitto** | 0.20                            | 0%                  | 0%                  | 281M            | 246M            |
+| **NanoMQ**    | 0.18                            | 0%                  | 0%                  | 294M            | 267M            |
+
+#### 10K connections cps 100
+
+|               | Average latency (ms) | Max CPU user+system | Avg CPU user+system | Max memory used | Memory used Stable at |
+| :------------ | -------------------- | ------------------- | ------------------- | --------------- | --------------------- |
+| **Mosquitto** | 0.6                  | 0%                  | 0%                  | 306M            | 264M                  |
+| **NanoMQ**    | 0.59                 | 0%                  | 0%                  | 320M            | 320M                  |
+
+### Enterprise Set
+
+#### **point-to-point**: p2p-50K-50K-50K-50K
+
+**Metrics**
 
 |               | Actual msg rate | Average pub-to-sub latency (ms) | Max CPU user+system | Avg CPU user+system | Max memory used | Avg memory used |
 | :------------ | --------------- | ------------------------------- | ------------------- | ------------------- | --------------- | --------------- |
 | **Mosquitto** | 37k:37k         | 353.82                          | 6%                  | 6%                  | 341M            | 318M            |
 | **NanoMQ**    | 50k:50k         | 91                              | 35%                 | 30%                 | 1.33G           | 1.3G            |
 
-> In this scenario, Mosquitto cannot reach to the expected message rate. It stabilized at 37300/s for both pub and sub. 
+> In this scenario, Mosquitto cannot reach to the target message rate. It stabilized at 37300/s for both pub and sub. 
 >
 > NanoMQ keeps the stable pub & sub rate at 50000/s during the 30-minutes' test.
 
-#### pub-to-sub latency percentiles
+**pub-to-sub latency percentiles**
 
 ![pub-to-sub latency percentiles](https://assets.emqx.com/images/dff9e6e24c0cbbbdb2fbacb2fe40abdf.png)
 
@@ -95,7 +152,7 @@ XMeter provides a private deployment version (on-premise) and a public cloud Saa
 | p95              | 378           | 225        |
 | p99              | 417           | 251        |
 
-#### Result Charts
+**Result Charts**
 
 - Mosquitto
 
@@ -105,20 +162,20 @@ XMeter provides a private deployment version (on-premise) and a public cloud Saa
 
   ![NanoMQ Result Charts](https://assets.emqx.com/images/8313fed21a7d383cb7179e9e72423ac7.png)
 
-### **Fan-out**: fanout-5-1000-5-250K
+#### **Fan-out**: fanout-5-1000-5-250K
 
-#### Metrics
+**Metrics**
 
 |               | Actual msg rate | Average pub-to-sub latency (ms) | Max CPU user+system | Avg CPU user+system | Max memory used | Avg memory used |
 | :------------ | --------------- | ------------------------------- | ------------------- | ------------------- | --------------- | --------------- |
 | **Mosquitto** | 82k             | 12,240.83                       | 7%                  | 6%                  | 355M            | 341M            |
 | **NanoMQ**    | 255k            | 13.91                           | 73%                 | 71%                 | 781M            | 682M            |
 
-> In this scenario, Mosquitto cannot reach to the expected message rate. The throughput has been fluctuating around 80,000/s. 
+> In this scenario, Mosquitto cannot reach to the target message rate. The throughput has been fluctuating around 80,000/s. 
 >
 > NanoMQ keeps the stable rate at 250,000+/s throughout the test.
 
-#### pub-to-sub latency percentiles
+**pub-to-sub latency percentiles**
 
 ![pub-to-sub latency percentiles](https://assets.emqx.com/images/728c1e8db438652164b79a1d39de40f4.png)
 
@@ -130,7 +187,7 @@ XMeter provides a private deployment version (on-premise) and a public cloud Saa
 | p95              | 12,596        | 23         |
 | p99              | 12,627        | 26         |
 
-#### Result Charts
+**Result Charts**
 
 - Mosquitto
 
@@ -140,20 +197,20 @@ XMeter provides a private deployment version (on-premise) and a public cloud Saa
 
   ![NanoMQ Result Charts](https://assets.emqx.com/images/1570427cf926486387e66be698b24704.png)
 
-### **Fan-in:** sharedsub-50K-500-50K-50K
+#### **Fan-in:** sharedsub-50K-500-50K-50K
 
-#### Metrics
+**Metrics**
 
 |               | Actual msg rate  | Average pub-to-sub latency (ms) | Max CPU user+system | Avg CPU user+system | Max memory used | Avg memory used |
 | :------------ | ---------------- | ------------------------------- | ------------------- | ------------------- | --------------- | --------------- |
 | **Mosquitto** | pub: 50ksub: 40k | 12,723.07                       | 7%                  | 7%                  | 485M            | 456M            |
 | **NanoMQ**    | pub: 50ksub: 50k | 2.76                            | 34%                 | 34%                 | 795M            | 783M            |
 
-> In this scenario, the consumption rate of Mosquitto cannot reach to the expected rate. It stabilized at 41,000/s. 
+> In this scenario, the consumption rate of Mosquitto cannot reach to the target rate. It stabilized at 41,000/s. 
 >
 > NanoMQ keeps the stable pub & sub rate at 50,000/s throughout the test.
 
-#### pub-to-sub latency percentiles
+**pub-to-sub latency percentiles**
 
 ![pub-to-sub latency percentiles](https://assets.emqx.com/images/37c8a28c3c68e86cae6e0102695eb08d.png)
 
@@ -165,7 +222,7 @@ XMeter provides a private deployment version (on-premise) and a public cloud Saa
 | p95              | 13,526        | 5          |
 | p99              | 13,736        | 21         |
 
-#### Result Charts
+**Result Charts**
 
 - Mosquitto
 
@@ -175,16 +232,16 @@ XMeter provides a private deployment version (on-premise) and a public cloud Saa
 
   ![NanoMQ Result Charts](https://assets.emqx.com/images/2275dba61116d31a256f2e33d7839f7b.png)
 
-### **Concurrent Connection**: conn-tcp-1M-5K
+#### **Concurrent Connection**: conn-tcp-1M-5K
 
-#### Metrics
+**Metrics**
 
 |               | Average latency (ms) | Max CPU user+system | Avg CPU user+system | Max memory used | Memory used Stable at |
 | :------------ | -------------------- | ------------------- | ------------------- | --------------- | --------------------- |
 | **Mosquitto** | 5.74                 | 2%                  | 2%                  | 1G              | 1G                    |
 | **NanoMQ**    | 3.16                 | 5%                  | 4%                  | 6.9G            | 6.9G                  |
 
-#### Latency percentiles
+**Latency percentiles**
 
 ![Latency percentiles](https://assets.emqx.com/images/4f1c661a88962a1b89ce929634affddb.png)
 
@@ -196,7 +253,7 @@ XMeter provides a private deployment version (on-premise) and a public cloud Saa
 | p95              | 2             | 2          |
 | p99              | 9             | 3          |
 
-#### Result Charts
+**Result Charts**
 
 - Mosquitto
 
@@ -208,7 +265,7 @@ XMeter provides a private deployment version (on-premise) and a public cloud Saa
 
 ## Conclusion
 
-As mentioned in the [blog post](https://www.emqx.com/en/blog/mosquitto-vs-nanomq-2023-mqtt-broker-comparison), Mosquitto is a single-threaded design, while NanoMQ is built on NNG's asynchronous I/O with a built-in actor multi-threading model. The above test results have proven that NanoMQ fully utilizes the multi-core and multi-threading capabilities to support higher and more stable message throughput. 
+As mentioned in the [blog post](https://www.emqx.com/en/blog/mosquitto-vs-nanomq-2023-mqtt-broker-comparison), Mosquitto is a single-threaded design, while NanoMQ is built on NNG's asynchronous I/O with a built-in actor multi-threading model. The above test results have proven it. Under the basic set, the performance of these two is similar, while in the enterprise level tests, NanoMQ fully utilizes the multi-core and multi-threading capabilities to support higher and more stable message throughput. 
 
 For example, in the fan-out scenario, Mosquitto can only support an outgoing message rate of around 82k per second, while NanoMQ can keep a stable rate of 250k. Even NanoMQ can stably handle message throughput of up to 500k on this c5.4xlarge virtual machine. 
 

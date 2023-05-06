@@ -127,7 +127,7 @@ try {
 }
 ```
 
-This is how to perform TLS/SSL one-way and two-way authentication with MQTT on Android.
+This is how to perform TLS/SSL one-way and two-way authentication with [MQTT on Android](https://www.emqx.com/en/blog/android-connects-mqtt-using-kotlin).
 
 
 
