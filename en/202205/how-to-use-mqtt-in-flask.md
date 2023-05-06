@@ -2,7 +2,7 @@
 
 [MQTT](https://mqtt.org/) is a lightweight Internet of Things (IoT) message transmission protocol based on publish/subscribe mode. It can provide a real-time and reliable message service for networked devices with very less code and smaller bandwidth. It is widely used in IoT, mobile Internet, intelligent hardware, IoV, power and energy industries, etc.
 
-This article mainly introduces how to use MQTT in the Flask project, and implement the connection, subscription, messaging, unsubscribing and other functions between the  [MQTT client](https://www.emqx.com/en/blog/introduction-to-the-commonly-used-mqtt-client-library) and [MQTT broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker).
+This article mainly introduces how to use MQTT in the Flask project, and implement the connection, subscription, messaging, unsubscribing and other functions between the  [MQTT client](https://www.emqx.com/en/blog/introduction-to-the-commonly-used-mqtt-client-library) and [MQTT broker](https://www.emqx.io/).
 
 We will use the [Flask-MQTT](https://flask-mqtt.readthedocs.io/en/latest/index.html) client library, which is a Flask extension and can be regarded as a decorator of [paho-mqtt](https://www.eclipse.org/paho/clients/python/) to simplify the MQTT integration in Flask applications.
 
@@ -197,6 +197,21 @@ if __name__ == '__main__':
 So far, we have completed a simple MQTT client using Flask-MQTT and can subscribe and publish messages in the Flask application.
 
 Next, you can check out [The Easy-to-understand Guide to MQTT Protocol](https://www.emqx.com/en/mqtt) series of articles provided by EMQ to learn about MQTT protocol features, explore more advanced applications of MQTT, and get started with MQTT application and service development.
+
+
+## Other Articles in This Series
+
+- [How to Use MQTT in Python (Paho)](https://www.emqx.com/en/blog/how-to-use-mqtt-in-python)
+
+- [Python MQTT Asynchronous Framework - HBMQTT](https://www.emqx.com/en/blog/python-async-mqtt-client-hbmqtt)
+
+- [Comparison of Python MQTT clients](https://www.emqx.com/en/blog/comparision-of-python-mqtt-client)
+
+- [How to Use MQTT in The Django Project](https://www.emqx.com/en/blog/how-to-use-mqtt-in-django)
+
+- [MicroPython MQTT Tutorial Based on Raspberry Pi](https://www.emqx.com/en/blog/micro-python-mqtt-tutorial-based-on-raspberry-pi)
+
+
 
 
 <section class="promotion">

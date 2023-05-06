@@ -4,13 +4,14 @@
 
 In this project, we will implement remote control LED lights via NodeMCU(ESP8266) and the free [public MQTT broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker) which is operated and maintained by [EMQX Cloud](https://www.emqx.com/en/cloud), and use the Arduino IDE to program NodeMCU ESP8266. EMQX Cloud is the [MQTT IoT Cloud Service Platform](https://www.emqx.com/en/cloud) launched by EMQ, which provides the **MQTT 5.0** access service with one-stop operations and maintenance managed and a unique isolated environment.
 
+> Learn more: [ESP32 Connects to The Free Public MQTT Broker](https://www.emqx.com/en/blog/esp32-connects-to-the-free-public-mqtt-broker)
 
-### Required components
+## Required Components
 
 * NodeMCU
 * Arduino IDE
 * LED * 1，330 Ω resistor
-* [MQTT X](https://mqttx.app/): Elegant cross-platform MQTT 5.0 client tool
+* [MQTTX](https://mqttx.app/): Elegant cross-platform MQTT 5.0 client tool
 * The free public MQTT broker
   - Broker:  **broker.emqx.io**
   - TCP Port:  **1883**
@@ -18,13 +19,13 @@ In this project, we will implement remote control LED lights via NodeMCU(ESP8266
 
 
 
-### NodeMCU ESP8266 and LED connection diagram
+## NodeMCU ESP8266 and LED Connection Diagram
 
 ![project](https://assets.emqx.com/images/esp8266_control_led.png)
 
 
 
-### Code writing
+## Code
 
 1. First, we will import the **ESP8266WiFi** and **PubSubClient** libraries. The ESP8266WiFi library can connect the ESP8266 to the WiFi network, and the PubSubClient library allows us to connect to the MQTT broker and publish/subscribe to topics.
 
@@ -190,19 +191,19 @@ In this project, we will implement remote control LED lights via NodeMCU(ESP8266
 
 
 
-### Connecting and testing
+## Testing
 
 1. Please use [Arduino IDE ](<https://www.arduino.cc/en/Main/Software>) to upload the complete code to ESP8266 and open the serial monitor.
 
    ![esp_con](https://assets.emqx.com/images/esp8266_connect_ssuccessful.png)
 
-2. Establish the connection between the MQTT X client and MQTT Broker and send commands to the ESP8266.
+2. Establish the connection between the MQTTX client and MQTT Broker and send commands to the ESP8266.
 
    ![esp_con](https://assets.emqx.com/images/esp8266_control_led_publish.png)
 
 
 
-### Summary
+## Summary
 
 So far, we have successfully implemented remote control of the LED light using the NodeMCU ESP8266 and free public MQTT broker. This example only describes a simple scenario, while a more secure connection method and persistence of IoT data are needed in the actual projects.
 

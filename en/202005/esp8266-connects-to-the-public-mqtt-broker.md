@@ -4,8 +4,9 @@
 
 In this project, we will implement connecting ESP8266 to [free public MQTT broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker) operated and maintained by [EMQX Cloud](https://www.emqx.com/en/cloud), and programming ESP8266 by using Arduino IDE. EMQX Cloud is an **MQTT IoT cloud service platform with security** launched by [EMQ](https://www.emqx.com/en). It provides a one-stop operation and maintenance agency and [MQTT 5.0](https://www.emqx.com/en/mqtt/mqtt5) access service with a uniquely isolated environment.
 
+> Learn more: [ESP32 Connects to The Free Public MQTT Broker](https://www.emqx.com/en/blog/esp32-connects-to-the-free-public-mqtt-broker)
 
-## The required IoT components 
+## The Required IoT Components 
 
 - ESP8266
 - Arduino IDE
@@ -177,7 +178,7 @@ In this project, we will implement connecting ESP8266 to [free public MQTT broke
    ```
 
 
-## Run and test
+## Run and Test
 
 1. Please use  [Arduino IDE](https://www.arduino.cc/en/Main/Software) to upload the complete code to ESP8266 and open the serial monitor
 

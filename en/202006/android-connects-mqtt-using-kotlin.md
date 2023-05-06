@@ -4,7 +4,7 @@
 
 This article mainly introduces how to use Kotlin in the Android platform for using MQTT.
 
-### Create the Kotlin project
+## Project Initialization
 
 Open Android Studio, create a new project, select Kotlin as the language, and then Android Studio will automatically create the related configurations to Kotlin. If you need to configure the existing projects, can refer to [Add Kotlin to an existing app](https://developer.android.com/kotlin/add-kotlin).
 
@@ -21,7 +21,7 @@ dependencies {
 
 ### Configure `AndroidManifest.xml`
 
-Android Service is a backend service, which based on Android and developed by Eclipse. We need to register it to the file AndroidManifest.xml. Meanwhile, we also need to register the permission.  
+Android Service is a backend service, based on Android and developed by Eclipse. We need to register it to the file AndroidManifest.xml. Meanwhile, we also need to register the permission.  
 
 ```xml
 <uses-permission android:name="android.permission.INTERNET" />
@@ -35,6 +35,8 @@ Android Service is a backend service, which based on Android and developed by Ec
 
 ```
 
+## Using MQTT
+
 ### Create MQTT client
 
 ```kotlin
@@ -45,7 +47,7 @@ companion object {
 }
 ```
 
-### Connect MQTT broker
+### Connect to the MQTT broker
 
 This article will use the [MQTT broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker) which is operated and maintained by EMQX [MQTT Cloud](https://www.emqx.com/en/cloud). EMQX Cloud is the MQTT IoT cloud service platform released by [EMQ](https://www.emqx.com/en), it provides the service for accessing **MQTT 5.0** with all-in-one operation and maintenance and unique isolation environment.
 
@@ -90,13 +92,13 @@ fun connect(context: Context) {
 
 The interface `MqttCallback` includes three methods:
 
-1. messageArrived: receive new messages from broker
-2. connectionLost: lost the connection to broker
-3. deliveryComplete: complete message delivery  to the broker
+1. messageArrived: receive new messages from the broker
+2. connectionLost: lost the connection to the broker
+3. deliveryComplete: complete message delivery to the broker
 
 `MqttConnectOptions` is used to configure connection settings including users' password, timeout configuration, etc. Please view its function for details.
 
-### Create MQTT subscription
+### Create an MQTT subscription
 
 Subscribe topic
 
@@ -118,9 +120,7 @@ fun subscribe(topic: String, qos: Int = 1) {
     }
 ```
 
-### Cancel subscription
-
-Cancel subscribing topic
+### Unsubscription
 
 ```kotlin
 fun unsubscribe(topic: String) {
@@ -184,7 +184,7 @@ fun disconnect() {
     }
 ```
 
-### Test
+## Test
 
 Firstly, you need to connect the Android client to the MQTT broker then subscribe topic: `a/b`, and then you can see the log of successfully connecting and subscribing.
 
@@ -205,7 +205,7 @@ We publish messages on the client to the topic: `a/b`. Because we subscribed to 
 
 So far, we have finished the construction of the [MQTT client](https://www.emqx.com/en/mqtt-client-sdk) on the Android and implemented the connection between the client and MQTT broker, subscribing topics, messaging, etc.
 
-MQTT can provide real-time and reliable message service for connecting remote devices, only with a few code and limited bandwidth. Since it is a kind of low-cost, low-bandwidth occupancy instant communicating protocol, it is widely used for IoT, small size equipments, mobile applications, etc.
+MQTT can provide real-time and reliable message service for connecting remote devices, only with a few codes and limited bandwidth. Since it is a kind of low-cost, low-bandwidth occupancy instant communicating protocol, it is widely used for IoT, small-size equipment, mobile applications, etc.
 
 Next, you can check out [The Easy-to-understand Guide to MQTT Protocol](https://www.emqx.com/en/mqtt) series of articles provided by EMQ to learn about MQTT protocol features, explore more advanced applications of MQTT, and get started with MQTT application and service development.
 

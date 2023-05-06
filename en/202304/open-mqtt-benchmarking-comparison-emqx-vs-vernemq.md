@@ -6,11 +6,36 @@ This is the last post of the blog series, which provides the benchmarking result
 
 ## MQTT Benchmark Scenarios and Use Cases
 
+[The MQTT Benchmark Suite](https://github.com/emqx/mqttbs) designs two sets of benchmark use cases. One is named Basic Set, which is for small-scale performance verification, and another is called Enterprise Set, which aims for enterprise level verification.
+
 Detailed descriptions of the testing scenarios are already available on the [GitHub project](https://github.com/emqx/mqttbs) , for convenience we briefly list them here as well.
 
 All the tests are executed on a single node.
 
 ### Use Cases
+
+#### Basic Set
+
+- **Point-to-Point**: p2p-1K-1K-1K-1K
+  - 1k publishers, 1k subscribers, 1k topics
+  - Each publisher pubs 1 message per second
+  - QoS 1, payload 16B
+- **Fan-out**: fanout-1-1k-1-1K
+  - 1 publisher, 1 topic, 1000 subscribers
+  - 1 publisher pubs 1 message per second
+  - QoS 1, payload 16B
+- **Fan-in:** sharedsub-1K-5-1K-1K
+  - 1k publishers, 1k pub topics
+  - 5 subscribers consume all messages in a shared subscription way
+  - Publish rate: 1k/s (each publisher pubs a message per second)
+  - Shared subscription’s topic: $share/perf/test/#
+  - Publish topics: test/$clientid
+  - QoS 1, payload 16B
+- **Concurrent connections**: conn-tcp-10k-100
+  - 10k connections
+  - Connection rate (cps): 100/s
+
+#### Enterprise Set
 
 - **Point-to-Point**: p2p-50K-50K-50K-50K
   - 50k publishers, 50k subscribers, 50k topics
@@ -69,18 +94,50 @@ XMeter provides a private deployment version (on-premise) and a public cloud Saa
 
 ## Benchmarking Results
 
+### Basic Set
+
+#### **point-to-point**: 1K:1K
+
+|             | Average pub-to-sub latency (ms) | Max CPU user+system | Avg CPU user+system | Max memory used | Avg memory used |
+| :---------- | ------------------------------- | ------------------- | ------------------- | --------------- | --------------- |
+| **EMQX**    | 0.27                            | 4%                  | 2%                  | 510M            | 495M            |
+| **VerneMQ** | 0.33                            | 0.4                 | 10%                 | 6%              | 1.3G            |
+
+#### Fan-out 1k QoS 1
+
+|             | Average pub-to-sub latency (ms) | Max CPU user+system | Avg CPU user+system | Max memory used | Avg memory used |
+| :---------- | ------------------------------- | ------------------- | ------------------- | --------------- | --------------- |
+| **EMQX**    | 3                               | 2%                  | 1%                  | 475M            | 460M            |
+| **VerneMQ** | 21.55                           | 4%                  | 2%                  | 1.2G            | 1.1G            |
+
+#### Fan-in 1k - shared subscription QoS 1
+
+|             | Average pub-to-sub latency (ms) | Max CPU user+system | Avg CPU user+system | Max memory used | Avg memory used |
+| :---------- | ------------------------------- | ------------------- | ------------------- | --------------- | --------------- |
+| **EMQX**    | 0.19                            | 3%                  | 2%                  | 468M            | 460M            |
+| **VerneMQ** | 0.34                            | 6%                  | 5%                  | 1.3G            | 1.2G            |
+
+#### 10K connections cps 100
+
+|             | Average latency (ms) | Max CPU user+system | Avg CPU user+system | Max memory used | Memory used Stable at |
+| :---------- | -------------------- | ------------------- | ------------------- | --------------- | --------------------- |
+| **EMQX**    | 0.74                 | 2%                  | 1%                  | 540M            | 510M                  |
+| **VerneMQ** | 0.89                 | 3%                  | 0%                  | 1.1G            | 1.0G                  |
+
+### Enterprise Set
+
 ### **point-to-point**: p2p-50K-50K-50K-50K
 
-#### Metrics
+**Metrics**
 
 |             | Actual msg rate | Average pub-to-sub latency (ms) | Max CPU user+system | Avg CPU user+system | Max memory used | Avg memory used |
 | :---------- | --------------- | ------------------------------- | ------------------- | ------------------- | --------------- | --------------- |
 | **EMQX**    | 50k:50k         | 1.58                            | 88%                 | 80%                 | 5.71G           | 5.02G           |
 | **VerneMQ** | 50k:50k         | 2136.62                         | 91%                 | 90%                 | 6.30G           | 6.02G           |
 
-> EMQX keeps the stable pub & sub rate at 50000/s during the 30-minutes' test. VerneMQ is able to handle the expected 50k message incoming and outgoing throughput, but the latency was quite high.
+> EMQX keeps the stable pub & sub rate at 50000/s during the 30-minute's test. VerneMQ is able to handle the target 50k message incoming and outgoing throughput, but the latency was quite high.
 
-#### pub-to-sub latency percentiles
+**pub-to-sub latency percentiles**
 
 ![image.png](https://assets.emqx.com/images/d94211c93890754dd45d113d87104dcc.png)
 
@@ -92,7 +149,7 @@ XMeter provides a private deployment version (on-premise) and a public cloud Saa
 | p95              | 4        | 9,517       |
 | p99              | 18       | 16,500      |
 
-#### Result Charts
+**Result Charts**
 
 - EMQX
 
@@ -102,20 +159,20 @@ XMeter provides a private deployment version (on-premise) and a public cloud Saa
 
    ![VerneMQ Result Charts](https://assets.emqx.com/images/17ccdda6e301e1aabac19244efbbbb8a.png)
 
-### **Fan-out**: fanout-5-1000-5-250K
+#### **Fan-out**: fanout-5-1000-5-250K
 
-#### Metrics
+**Metrics**
 
 |             | Actual msg rate | Average pub-to-sub latency (ms) | Max CPU user+system | Avg CPU user+system | Max memory used | Avg memory used |
 | :---------- | --------------- | ------------------------------- | ------------------- | ------------------- | --------------- | --------------- |
 | **EMQX**    | 250k            | 1.99                            | 73%                 | 71%                 | 530M            | 483M            |
 | **VerneMQ** | 82k             | 11,802.11                       | 93%                 | 92%                 | 3.01G           | 2.94G           |
 
-> In this scenario, Verne cannot reach to the expected message rate. The throughput has been fluctuating around 82,000/s. 
+> In this scenario, Verne cannot reach to the target message rate. The throughput has been fluctuating around 82,000/s. 
 >
 > EMQX keeps the stable rate at 250,000+/s throughout the test.
 
-#### pub-to-sub latency percentiles
+**pub-to-sub latency percentiles**
 
 ![pub-to-sub latency percentiles](https://assets.emqx.com/images/58f1c28ff3fc629fd54342f84b9132bc.png)
 
@@ -127,7 +184,7 @@ XMeter provides a private deployment version (on-premise) and a public cloud Saa
 | p95              | 3        | 13,357      |
 | p99              | 4        | 13,884      |
 
-#### Result Charts
+**Result Charts**
 
 - EMQX
 
@@ -137,16 +194,16 @@ XMeter provides a private deployment version (on-premise) and a public cloud Saa
 
    ![VerneMQ Result Charts](https://assets.emqx.com/images/f0ea6af5a157fa3ade9bcea192616116.png)
 
-### **Fan-in:** sharedsub-50K-500-50K-50K
+#### **Fan-in:** sharedsub-50K-500-50K-50K
 
-#### Metrics
+**Metrics**
 
 |             | Actual msg rate         | Average pub-to-sub latency (ms) | Max CPU user+system | Avg CPU user+system | Max memory used | Avg memory used |
 | :---------- | ----------------------- | ------------------------------- | ------------------- | ------------------- | --------------- | --------------- |
 | **EMQX**    | pub: 50k<br>sub: 50k    | 1.47                            | 94%                 | 93%                 | 8.19G           | 6.67G           |
 | **VerneMQ** | pub: 7.6k<br> sub: 3.5k | 116,888.61                      | 83%                 | 74%                 | 12.16G          | 8.38G           |
 
-#### pub-to-sub latency percentiles
+**pub-to-sub latency percentiles**
 
 ![pub-to-sub latency percentiles](https://assets.emqx.com/images/5ea05208b58e27e5f7169302012f3661.png)
 
@@ -158,7 +215,7 @@ XMeter provides a private deployment version (on-premise) and a public cloud Saa
 | p95              | 2        | 137,106     |
 | p99              | 19       | 140,528     |
 
-#### Result Charts
+**Result Charts**
 
 - EMQX
 
@@ -168,9 +225,9 @@ XMeter provides a private deployment version (on-premise) and a public cloud Saa
 
    ![VerneMQ Result Charts](https://assets.emqx.com/images/83796fa0b3605d55f02a2cc08cfcbe41.png)
 
-### **Concurrent connections**: conn-tcp-1M-5K
+#### **Concurrent connections**: conn-tcp-1M-5K
 
-#### Metrics
+**Metrics**
 
 |             | Average latency (ms) | Max CPU user+system | Avg CPU user+system | Max memory used | Memory used Stable at |
 | :---------- | -------------------- | ------------------- | ------------------- | --------------- | --------------------- |
@@ -179,7 +236,7 @@ XMeter provides a private deployment version (on-premise) and a public cloud Saa
 
 > During a 30-minute’s test for VerneMQ, the memory used keeps increasing. It rose from 18GB when 1 million connections were completed to 22.4GB at the end of the test.
 
-#### Latency percentiles
+**Latency percentiles**
 
 ![Latency percentiles](https://assets.emqx.com/images/e62ea969bdeb9e438bc8303d26d2548f.png)
 
@@ -191,7 +248,7 @@ XMeter provides a private deployment version (on-premise) and a public cloud Saa
 | p95              | 2        | 3           |
 | p99              | 3        | 3           |
 
-#### Result Charts
+**Result Charts**
 
 - EMQX
 
@@ -203,7 +260,7 @@ XMeter provides a private deployment version (on-premise) and a public cloud Saa
 
 ## Conclusion
 
-EMQX and VerneMQ have similar performance for the test case of 1 million concurrent connections. However, it was observed that VerneMQ's memory slowly increased and did not stabilize at the end of the test, which could be a potential issue. Additionally, in the messaging scenarios, VerneMQ's response time is considerably long, ranging from 10 to over 100 seconds, while EMQX responds within a few milliseconds. As stated in [another post](https://www.emqx.com/en/blog/emqx-vs-vernemq-2023-mqtt-broker-comparison), EMQX is one of the best choices for deploying MQTT brokers in production in 2023.
+EMQX and VerneMQ have similar performance for the basic test cases. In the enterprise level testing,  EMQX outperformed VerneMQ across all scenarios. As stated in another[ post](https://www.emqx.com/en/blog/emqx-vs-vernemq-2023-mqtt-broker-comparison), EMQX is one of the best choices for deploying MQTT brokers in production in 2023.
 
 
 

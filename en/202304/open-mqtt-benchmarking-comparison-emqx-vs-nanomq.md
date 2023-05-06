@@ -6,11 +6,36 @@ This is the second post of the blog series, which provides the benchmarking resu
 
 ## MQTT Benchmark Scenarios and Use Cases
 
+[The MQTT Benchmark Suite](https://github.com/emqx/mqttbs) designs two sets of benchmark use cases. One is named Basic Set, which is for small-scale performance verification, and another is called Enterprise Set, which aims for enterprise level verification.
+
 Detailed descriptions of the testing scenarios are already available on the [GitHub project](https://github.com/emqx/mqttbs). For convenience, we briefly list them here as well.
 
 All the tests are executed on a single node.
 
 ### Use Cases
+
+#### Basic Set
+
+- **Point-to-Point**: p2p-1K-1K-1K-1K
+  - 1k publishers, 1k subscribers, 1k topics
+  - Each publisher pubs 1 message per second
+  - QoS 1, payload 16B
+- **Fan-out**: fanout-1-1k-1-1K
+  - 1 publisher, 1 topic, 1000 subscribers
+  - 1 publisher pubs 1 message per second
+  - QoS 1, payload 16B
+- **Fan-in:** sharedsub-1K-5-1K-1K
+  - 1k publishers, 1k pub topics
+  - 5 subscribers consume all messages in a shared subscription way
+  - Publish rate: 1k/s (each publisher pubs a message per second)
+  - Shared subscription’s topic: $share/perf/test/#
+  - Publish topics: test/$clientid
+  - QoS 1, payload 16B
+- **Concurrent connections**: conn-tcp-10k-100
+  - 10k connections
+  - Connection rate (cps): 100/s
+
+#### Enterprise Set
 
 - **point-to-point**: p2p-50K-50K-50K-50K
   - 50k publishers, 50k subscribers, 50k topics
@@ -69,16 +94,48 @@ XMeter provides a private deployment version (on-premise) and a public cloud Saa
 
 ## Benchmarking Results
 
-### **point-to-point**: p2p-50K-50K-50K-50K
+### Basic Set
 
-#### Metrics
+#### **point-to-point**: 1K:1K
+
+|            | Average pub-to-sub latency (ms) | Max CPU user+system | Avg CPU user+system | Max memory used | Avg memory used |
+| :--------- | ------------------------------- | ------------------- | ------------------- | --------------- | --------------- |
+| **EMQX**   | 0.27                            | 4%                  | 2%                  | 510M            | 495M            |
+| **NanoMQ** | 0.25                            | 1%                  | 0%                  | 271M            | 270M            |
+
+#### Fan-out 1k QoS 1
+
+|            | Average pub-to-sub latency (ms) | Max CPU user+system | Avg CPU user+system | Max memory used | Avg memory used |
+| :--------- | ------------------------------- | ------------------- | ------------------- | --------------- | --------------- |
+| **EMQX**   | 3                               | 2%                  | 1%                  | 475M            | 460M            |
+| **NanoMQ** | 13.66                           | 0%                  | 0%                  | 271M            | 263M            |
+
+#### Fan-in 1k - shared subscription QoS 1
+
+|            | Average pub-to-sub latency (ms) | Max CPU user+system | Avg CPU user+system | Max memory used | Avg memory used |
+| :--------- | ------------------------------- | ------------------- | ------------------- | --------------- | --------------- |
+| **EMQX**   | 0.19                            | 3%                  | 2%                  | 468M            | 460M            |
+| **NanoMQ** | 0.18                            | 0%                  | 0%                  | 294M            | 267M            |
+
+#### 10K connections cps 100
+
+|            | Average latency (ms) | Max CPU user+system | Avg CPU user+system | Max memory used | Memory used Stable at |
+| :--------- | -------------------- | ------------------- | ------------------- | --------------- | --------------------- |
+| **EMQX**   | 0.74                 | 2%                  | 1%                  | 540M            | 510M                  |
+| **NanoMQ** | 0.59                 | 0%                  | 0%                  | 320M            | 320M                  |
+
+### Enterprise Set
+
+#### **point-to-point**: p2p-50K-50K-50K-50K
+
+**Metrics**
 
 |            | Actual msg rate | Average pub-to-sub latency (ms) | Max CPU user+system | Avg CPU user+system | Max memory used | Avg memory used |
 | :--------- | --------------- | ------------------------------- | ------------------- | ------------------- | --------------- | --------------- |
 | **EMQX**   | 50k:50k         | 1.58                            | 88%                 | 80%                 | 5.71G           | 5.02G           |
 | **NanoMQ** | 50k:50k         | 91                              | 35%                 | 30%                 | 1.33G           | 1.3G            |
 
-#### pub-to-sub latency percentiles
+**pub-to-sub latency percentiles**
 
 ![pub-to-sub latency percentiles](https://assets.emqx.com/images/cca484817f7f13516b164839edc723cc.png)
 
@@ -90,7 +147,7 @@ XMeter provides a private deployment version (on-premise) and a public cloud Saa
 | p95              | 4        | 225        |
 | p99              | 18       | 251        |
 
-#### Result Charts
+**Result Charts**
 
 - EMQX
 
@@ -100,16 +157,16 @@ XMeter provides a private deployment version (on-premise) and a public cloud Saa
 
    ![NanoMQ Result Charts](https://assets.emqx.com/images/b40620b14adafeadcf9e1ee2f5917388.png)
 
-### **Fan-out**: fanout-5-1000-5-250K
+#### **Fan-out**: fanout-5-1000-5-250K
 
-#### Metrics
+**Metrics**
 
 |            | Actual msg rate | Average pub-to-sub latency (ms) | Max CPU user+system | Avg CPU user+system | Max memory used | Avg memory used |
 | :--------- | --------------- | ------------------------------- | ------------------- | ------------------- | --------------- | --------------- |
 | **EMQX**   | 250k            | 1.99                            | 73%                 | 71%                 | 530M            | 483M            |
 | **NanoMQ** | 255k            | 13.91                           | 73%                 | 71%                 | 781M            | 682M            |
 
-#### pub-to-sub latency percentiles
+**pub-to-sub latency percentiles**
 
 ![pub-to-sub latency percentiles](https://assets.emqx.com/images/336a87a63b5dc619ec74c74e2a033bb6.png)
 
@@ -121,7 +178,7 @@ XMeter provides a private deployment version (on-premise) and a public cloud Saa
 | p95              | 3        | 23         |
 | p99              | 4        | 26         |
 
-#### Result Charts
+**Result Charts**
 
 - EMQX
 
@@ -131,16 +188,16 @@ XMeter provides a private deployment version (on-premise) and a public cloud Saa
 
    ![NanoMQ Result Charts](https://assets.emqx.com/images/d39255630dfcaf58bed9ef6dc0f8e9bd.png)
 
-### **Fan-in:** sharedsub-50K-500-50K-50K
+#### **Fan-in:** sharedsub-50K-500-50K-50K
 
-#### Metrics
+**Metrics**
 
 |            | Actual msg rate      | Average pub-to-sub latency (ms) | Max CPU user+system | Avg CPU user+system | Max memory used | Avg memory used |
 | :--------- | -------------------- | ------------------------------- | ------------------- | ------------------- | --------------- | --------------- |
 | **EMQX**   | pub: 50k<br>sub: 50k | 1.47                            | 94%                 | 93%                 | 8.19G           | 6.67G           |
 | **NanoMQ** | pub: 50k<br>sub: 50k | 2.76                            | 34%                 | 34%                 | 795M            | 783M            |
 
-#### pub-to-sub latency percentiles
+**pub-to-sub latency percentiles**
 
 ![pub-to-sub latency percentiles](https://assets.emqx.com/images/fe7e00058b534bf39120e1ba199849fe.png)
 
@@ -152,7 +209,7 @@ XMeter provides a private deployment version (on-premise) and a public cloud Saa
 | p95              | 2        | 5          |
 | p99              | 19       | 21         |
 
-#### Result Charts
+**Result Charts**
 
 - EMQX
 
@@ -162,16 +219,16 @@ XMeter provides a private deployment version (on-premise) and a public cloud Saa
 
    ![NanoMQ Result Charts](https://assets.emqx.com/images/2aac1bf9fc36a473821a0147a84d1321.png)
 
-### **Concurrent connections**: conn-tcp-1M-5K
+#### **Concurrent connections**: conn-tcp-1M-5K
 
-#### Metrics
+**Metrics**
 
 |            | Average latency (ms) | Max CPU user+system | Avg CPU user+system | Max memory used | Memory used Stable at |
 | :--------- | -------------------- | ------------------- | ------------------- | --------------- | --------------------- |
 | **EMQX**   | 2.4                  | 35%                 | 22%                 | 10.77G          | 8.68G                 |
 | **NanoMQ** | 3.16                 | 5%                  | 4%                  | 6.9G            | 6.9G                  |
 
-#### latency percentiles
+**latency percentiles**
 
 ![latency percentiles](https://assets.emqx.com/images/6d855ce6cefd18a3cd3dd25441025025.png)
 
@@ -183,7 +240,7 @@ XMeter provides a private deployment version (on-premise) and a public cloud Saa
 | p95              | 2        | 2          |
 | p99              | 3        | 3          |
 
-#### Result Charts
+**Result Charts**
 
 - EMQX
 

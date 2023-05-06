@@ -6,7 +6,7 @@ In this project, we will connect ESP32 to the [free public MQTT broker](https://
 
 
 
-## Required IoT components
+## Required IoT Components
 
 * ESP32
 * Arduino IDE
@@ -17,7 +17,7 @@ In this project, we will connect ESP32 to the [free public MQTT broker](https://
   - Websocket Port: **8083**
 
 
-## Arduino configuration
+## Arduino Configuration
 
 ### Install ESP32 development board
 
@@ -33,7 +33,7 @@ Project -> Load library -> Library manager... -> Search PubSubClient -> Install 
 
 
 
-## ESP32 Pub/Sub diagram 
+## ESP32 Pub/Sub Diagram 
 
 ![ESP32 Pub/Sub diagram](https://assets.emqx.com/images/f806ce3df585c26ca01fd1aa3711be46.jpg)
 
@@ -118,7 +118,7 @@ Project -> Load library -> Library manager... -> Search PubSubClient -> Install 
    }
    ```
 
-### Full code
+### Full Code
 
 ```c
 #include <WiFi.h>
@@ -185,7 +185,7 @@ void loop() {
 ```
 
 
-## Running and testing
+## Running and Testing
 
 1. Use Arduino to upload the complete code and power on the esp32.
 

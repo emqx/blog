@@ -1,4 +1,4 @@
-## What is asynchronous
+## What is Asynchronous
 
 The speed of the CPU is much faster than the disk, network, and other IO operations. However, in a thread, no matter how fast the CPU is executing, when it encounters an IO operation, it has to stop and wait for the read/write to complete, which undoubtedly wastes a lot of time.
 
@@ -48,7 +48,7 @@ pip3 install -i https://pypi.doubanio.com/simple hbmqtt
 
 
 
-## Connect to the MQTT broker
+## Connect to The MQTT Broker
 
 This article will use the [free public MQTT broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker) provided by EMQX. This service is created based on the [IoT cloud platform](https://www.emqx.com/en/cloud) of EMQX. The information of broker access is as follows:
 
@@ -256,6 +256,20 @@ Back in the terminal, we see that the client receives and prints messages. Also,
 So far, we have completed connecting the HBMQTT library to the [public MQTT broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker) and implemented the connection, message publishing, and subscription between the test client and the MQTT broker. We can implement a more effective MQTT client by using Python asynchronous IO to perform the sending and receiving of messages. 
 
 We will continue to publish more articles on IoT development and Python, so stay tuned for more.
+
+
+## Other Articles in This Series
+
+- [How to Use MQTT in Python (Paho)](https://www.emqx.com/en/blog/how-to-use-mqtt-in-python)
+
+- [Comparison of Python MQTT clients](https://www.emqx.com/en/blog/comparision-of-python-mqtt-client)
+- [How to Use MQTT in The Django Project](https://www.emqx.com/en/blog/how-to-use-mqtt-in-django)
+
+- [How to use MQTT in Flask](https://www.emqx.com/en/blog/how-to-use-mqtt-in-flask)
+
+- [MicroPython MQTT Tutorial Based on Raspberry Pi](https://www.emqx.com/en/blog/micro-python-mqtt-tutorial-based-on-raspberry-pi)
+
+
 
 
 <section class="promotion">

@@ -7,7 +7,7 @@ MicroPython is a complete software implementation of the Python 3 programming la
 In this article, we will discuss how to write a simple [MQTT client](https://www.emqx.com/en/mqtt-client-sdk) on Raspberry Pi using MicroPython, and implement the functions of connecting, subscribing and publishing between the client and [MQTT broker.](https://www.emqx.com/en/mqtt/public-mqtt5-broker)
 
 
-## Environment setup
+## Environment Setup
 
 ### Install MicroPython
 
@@ -54,7 +54,7 @@ micropython -m upip install umqtt.simple
 ```
 
    
-## Connecting to the MQTT broker
+## Connecting to The MQTT Broker
 
 This article will use the [free public MQTT broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker) provided by EMQ, which was created based on the [MQTT Cloud Service - EMQX Cloud](https://www.emqx.com/en/cloud). The broker access information is as follows.
 
@@ -183,3 +183,24 @@ We use the [MQTT 5.0 client tool - MQTT X](https://mqttx.app/) to perform the fo
 ## Summary
 
 This is a simple example of programming with MicroPython on a Raspberry Pi. We implemented a simple test client with MicroPython `umqtt.simple`, and completed the connection and message sending and receiving between the client and the MQTT server. The biggest advantage of MQTT is that it provides real-time reliable messaging services for connected remote devices with very little code and limited bandwidth, while the Raspberry Pi is a small, low heat, low energy, and relatively comprehensive hardware module. Combining the two can help you develop more innovative applications, even in microcontrollers or constrained environments.
+
+## Other Articles in This Series
+
+- [How to Use MQTT in Python (Paho)](https://www.emqx.com/en/blog/how-to-use-mqtt-in-python)
+
+- [Python MQTT Asynchronous Framework - HBMQTT](https://www.emqx.com/en/blog/python-async-mqtt-client-hbmqtt)
+
+- [Comparison of Python MQTT clients](https://www.emqx.com/en/blog/comparision-of-python-mqtt-client)
+- [How to Use MQTT in The Django Project](https://www.emqx.com/en/blog/how-to-use-mqtt-in-django)
+
+- [How to use MQTT in Flask](https://www.emqx.com/en/blog/how-to-use-mqtt-in-flask)
+
+
+
+<section class="promotion">
+    <div>
+        Try EMQX Cloud for Free
+        <div class="is-size-14 is-text-normal has-text-weight-normal">A fully managed MQTT service for IoT</div>
+    </div>
+    <a href="https://accounts.emqx.com/signup?continue=https://cloud-intl.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">Get Started →</a>
+</section>

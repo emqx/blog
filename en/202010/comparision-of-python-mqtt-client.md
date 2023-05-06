@@ -318,7 +318,7 @@ if __name__ == '__main__':
 
 
 
-## How to choose
+## How to Choose
 
 After introducing these three Python MQTT client libraries, let's look at how to choose the proper MQTT client library for yourself. Each of the three clients has its advantages and disadvantages:
 
@@ -334,6 +334,21 @@ Therefore, you can refer to the following ideas when choosing one:
 * If you are a normal developer and want to use it in a production environment, paho-mqtt is undoubtedly the best choice. Its stability and code readability far exceeds that of the other two libraries. When you get some problems, the excellent documentation and a large number of entries on the Internet will also help you to find more solutions.
 * For the readers who are familiar with the asyncio library, you can try HBMQTT and gmqtt.
 * If you want to learn or participate in an open-source project, or use MQTT 5.0, try gmqtt and try submitting a pull request for it.
+
+
+## Other Articles in This Series
+
+- [How to Use MQTT in Python (Paho)](https://www.emqx.com/en/blog/how-to-use-mqtt-in-python)
+
+- [Python MQTT Asynchronous Framework - HBMQTT](https://www.emqx.com/en/blog/python-async-mqtt-client-hbmqtt)
+
+- [How to Use MQTT in The Django Project](https://www.emqx.com/en/blog/how-to-use-mqtt-in-django)
+
+- [How to use MQTT in Flask](https://www.emqx.com/en/blog/how-to-use-mqtt-in-flask)
+
+- [MicroPython MQTT Tutorial Based on Raspberry Pi](https://www.emqx.com/en/blog/micro-python-mqtt-tutorial-based-on-raspberry-pi)
+
+
 
 
 <section class="promotion">
