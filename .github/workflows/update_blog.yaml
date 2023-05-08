@@ -1,14 +1,14 @@
 name: Update Blog
 
 on:
-  push:
-    branches:
-      - main
+  pull_request:
+    types:
+      - closed
 
 jobs:
   update_blog:
     runs-on: ubuntu-latest
-    if: github.repository == 'emqx/blog'
+    if: github.repository == 'emqx/blog' && github.event.pull_request.merged == true && github.event.pull_request.base.ref == 'main' && github.event.pull_request.title != 'sync blogs'
     steps:
       - name: Check out code
         uses: actions/checkout@v3

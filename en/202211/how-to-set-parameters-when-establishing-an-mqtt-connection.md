@@ -127,7 +127,7 @@ Check out [the blog](https://www.emqx.com/en/blog/mqtt5-new-feature-clean-start-
 
 **Connect Properties**
 
-MQTT 5.0 also adds new connection properties to enhance the extensibility of the protocol. Check out [the blog](https://www.emqx.com/en/blog/mqtt5-connect-properties) to learn more about Connect Properties.
+MQTT 5.0 also adds new connection properties to enhance the extensibility of the protocol. Check out [the blog](https://www.emqx.com/en/blog/mqtt5-user-properties) to learn more about Connect Properties.
 
 ## How to establish a secure MQTT connection?
 
