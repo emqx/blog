@@ -39,19 +39,19 @@ EMQX 采用 Erlang/OTP 编写，这是一种用于构建大规模可扩展软实
 
 缺点：
 
-- 上手复杂
+- 上手相对复杂
 - 难以有效管理
 
 ## 社区情况
 
-EMQX 是 GitHub 上评价最高、最活跃的 MQTT Broker 项目，在过去 12 个月里有 11.4K 个 Star 和超过 3000 个 Commit。
+EMQX 是 GitHub 上最活跃、Star 数最高的 MQTT Broker 项目，在过去 12 个月里有 11.4K 个 Star 和超过 3000 个 Commit。
 
 Mosquitto 以其轻量级的单线程架构在部署上比 EMQX 更普遍，特别是在资源有限的嵌入式设备上。
 
 |                                     | **EMQX**                                    | **Mosquitto**                                                |
 | :---------------------------------- | :------------------------------------------ | :----------------------------------------------------------- |
 | **GitHub Project**                  | [EMQX GitHub](https://github.com/emqx/emqx) | [Mosquitto GitHub](https://github.com/eclipse/mosquitto)     |
-| **Project Created**                 | 2009                                        | 2013                                                         |
+| **Project Created**                 | 2013                                        | 2009                                                         |
 | **License**                  | Apache License 2.0                        | EPL/EDL License                                            |
 | **GitHub Stars**                    | 11.4k                                       | 7.2 k                                                        |
 | **GitHub Forks**                    | 2k                                          | 2.1k                                                         |

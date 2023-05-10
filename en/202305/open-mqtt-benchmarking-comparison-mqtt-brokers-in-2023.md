@@ -103,7 +103,7 @@ XMeter provides a private deployment version (on-premise) and a public cloud Saa
 | **Mosquitto** | 0.25                            | 0%                  | 0%                  | 278M            | 254M            |
 | **NanoMQ**    | 0.25                            | 1%                  | 0%                  | 271M            | 270M            |
 | **EMQX**      | 0.27                            | 4%                  | 2%                  | 510M            | 495M            |
-| **VerneMQ**   | 0.33                            | 0.4                 | 10%                 | 6%              | 1.3G            |
+| **VerneMQ**   | 0.4                            | 10%                 | 6%                 | 1.3G              | 1.2G            |
 
 #### Fan-out 1k QoS 1
 
