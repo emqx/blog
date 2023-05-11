@@ -28,7 +28,7 @@ pip3 install paho-mqtt
 ```
 
 
-## The USe of Python MQTT
+## The Use of Python MQTT
 
 ### Connect to the MQTT broker
 
