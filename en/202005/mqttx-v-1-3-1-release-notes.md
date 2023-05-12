@@ -1,8 +1,8 @@
-[MQTT X](https://mqttx.app/) is a cross-platform **MQTT 5.0** client tool open-sourced by [EMQ](https://www.emqx.com/en), supports macOS, Linux, Windows. The user interface of MQTT X simplifies the operating logic with the help of the chat software format. Users can quickly create multiple simultaneous online **MQTT client** to facilitate testing the connection/publishing/subscribing of MQTT / TCP, MQTT / TLS, MQTT / WebSocket, and other **MQTT protocol** features.
+[MQTTX](https://mqttx.app/) is a cross-platform **MQTT 5.0** client tool open-sourced by [EMQ](https://www.emqx.com/en), supports macOS, Linux, Windows. The user interface of MQTTX simplifies the operating logic with the help of the chat software format. Users can quickly create multiple simultaneous online **MQTT client** to facilitate testing the connection/publishing/subscribing of MQTT / TCP, MQTT / TLS, MQTT / WebSocket, and other **MQTT protocol** features.
 
-MQTT X website: [https://mqttx.app](https://mqttx.app/)
+MQTTX website: [https://mqttx.app](https://mqttx.app/)
 
-Download MQTT X v1.3.1: [https://github.com/emqx/MQTTX/releases/tag/v1.3.1](https://github.com/emqx/MQTTX/releases/tag/v1.3.1)
+Download MQTTX v1.3.1: [https://github.com/emqx/MQTTX/releases/tag/v1.3.1](https://github.com/emqx/MQTTX/releases/tag/v1.3.1)
 
 
 
@@ -42,4 +42,4 @@ Download MQTT X v1.3.1: [https://github.com/emqx/MQTTX/releases/tag/v1.3.1](http
 
 
 
-This project is completely open source, you can submit the problems you met when using it to [MQTT X GitHub](https://github.com/emqx/MQTTX/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc), or submit the modified PR to the project Fork MQTT X. We will view and deal with it in time.
+This project is completely open source, you can submit the problems you met when using it to [MQTTX GitHub](https://github.com/emqx/MQTTX/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc), or submit the modified PR to the project Fork MQTTX. We will view and deal with it in time.

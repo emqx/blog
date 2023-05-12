@@ -213,13 +213,13 @@ disconnect() {
 
 ## 真机测试验证
 
-本文使用 [MQTT 5.0 客户端工具 - MQTT X](https://mqttx.app/zh) 作为测试的客户端和小程序互相收发消息。
+本文使用 [MQTT 5.0 客户端工具 - MQTTX](https://mqttx.app/zh) 作为测试的客户端和小程序互相收发消息。
 
-小程序建立连接，并订阅主题 `testtopic/miniprogram`，然后向该主题发送一条消息。与此同时使用 MQTT X 连接相同的地址，订阅主题 `testtopic/#` 。
+小程序建立连接，并订阅主题 `testtopic/miniprogram`，然后向该主题发送一条消息。与此同时使用 MQTTX 连接相同的地址，订阅主题 `testtopic/#` 。
 
 ![MQTT 客户端](https://assets.emqx.com/images/a6bb1493019db39d2e1bded09dadaac8.png)
 
-可以看到 MQTT X 可以正常接收来自小程序发送过来的消息。同样，使用 MQTT X 向主题 `testtopic/miniprogram` 发送一条消息时，也可以看到小程序能正常接收到该消息。
+可以看到 MQTTX 可以正常接收来自小程序发送过来的消息。同样，使用 MQTTX 向主题 `testtopic/miniprogram` 发送一条消息时，也可以看到小程序能正常接收到该消息。
 
 ![微信小程序 MQTT](https://assets.emqx.com/images/321f341661bb4c411040b67637ead096.png)
 

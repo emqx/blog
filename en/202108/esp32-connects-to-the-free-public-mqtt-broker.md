@@ -10,7 +10,7 @@ In this project, we will connect ESP32 to the [free public MQTT broker](https://
 
 * ESP32
 * Arduino IDE
-* [MQTT 5.0 client tool - MQTT X](https://mqttx.app)
+* [MQTT 5.0 client tool - MQTTX](https://mqttx.app)
 * A [free public MQTT broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker) deployed on [EMQX Cloud](https://www.emqx.com/en/cloud)
   - Broker: **broker.emqx.io**
   - TCP Port: **1883**
@@ -193,9 +193,9 @@ void loop() {
 
    ![check the ESP32 connection status](https://assets.emqx.com/images/08d1cf506e708f40861f4d2ea4776c1f.png)
 
-3. Use the MQTT X client to connect to the public MQTT server and publish messages to ESP32.
+3. Use the MQTTX client to connect to the public MQTT server and publish messages to ESP32.
 
-   ![MQTT X client](https://assets.emqx.com/images/2dc50309dbba7bdc8a65ec9b4b082b8c.png)
+   ![MQTTX client](https://assets.emqx.com/images/2dc50309dbba7bdc8a65ec9b4b082b8c.png)
 
 
 ## Summary 

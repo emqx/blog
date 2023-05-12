@@ -103,9 +103,9 @@ Tablestore 支持的数据格式：
 
 ### 生产测试数据
 
-使用先进的桌面 [MQTT 客户端 - MQTT X](https://mqttx.app/zh) ，登录设备，并发送一条数据。
+使用先进的桌面 [MQTT 客户端 - MQTTX](https://mqttx.app/zh) ，登录设备，并发送一条数据。
 
-![MQTT X](https://assets.emqx.com/images/ba13e606167ebeccc5cd90dce8a574a6.png)
+![MQTTX](https://assets.emqx.com/images/ba13e606167ebeccc5cd90dce8a574a6.png)
 
 输入度量名称（演示使用的是 m_re2），client ID 为 123456，我们使用 client=123456 作为查询条件，点击查询。
 

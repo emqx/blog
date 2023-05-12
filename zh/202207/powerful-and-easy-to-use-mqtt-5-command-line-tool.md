@@ -1,22 +1,22 @@
-近日，由 EMQ 开源的 [MQTT 5.0 跨平台桌面客户端 MQTT X](https://mqttx.app/zh) 发布了 1.8.0 版本。MQTT X 为连接测试各类 [MQTT 消息服务器](https://www.emqx.io/zh)而生，支持快速创建多个同时在线的 [MQTT 客户端](https://www.emqx.io/zh/mqtt-client)连接，采用一键式的连接方式和简洁的图形界面，帮助使用者便捷地测试 MQTT/TCP、MQTT/TLS、MQTT/WebSocket 的连接、发布、订阅功能，探索更多 [MQTT 协议](https://www.emqx.com/zh/mqtt)特性。
+近日，由 EMQ 开源的 [MQTT 5.0 跨平台桌面客户端 MQTTX](https://mqttx.app/zh) 发布了 1.8.0 版本。MQTTX 为连接测试各类 [MQTT 消息服务器](https://www.emqx.io/zh)而生，支持快速创建多个同时在线的 [MQTT 客户端](https://www.emqx.io/zh/mqtt-client)连接，采用一键式的连接方式和简洁的图形界面，帮助使用者便捷地测试 MQTT/TCP、MQTT/TLS、MQTT/WebSocket 的连接、发布、订阅功能，探索更多 [MQTT 协议](https://www.emqx.com/zh/mqtt)特性。
 
-最新发布的 v1.8.0 除了通过新增的快速复制连接功能优化使用体验之外，还扩展了两个新的使用场景，即增加了 CLI（命令行） 和 Web 端这两种新的交互方式 。这使得 MQTT X 1.8.0 成为支持使用场景最完整的 MQTT 测试客户端。用户可以根据使用需求，自行选择下载桌面客户端、使用终端命令行或是在桌面浏览器上快速完成对 MQTT 的连接测试。
+最新发布的 v1.8.0 除了通过新增的快速复制连接功能优化使用体验之外，还扩展了两个新的使用场景，即增加了 CLI（命令行） 和 Web 端这两种新的交互方式 。这使得 MQTTX 1.8.0 成为支持使用场景最完整的 MQTT 测试客户端。用户可以根据使用需求，自行选择下载桌面客户端、使用终端命令行或是在桌面浏览器上快速完成对 MQTT 的连接测试。
 
-## MQTT X CLI：在终端快速开发和调试 MQTT 服务与应用
+## MQTTX CLI：在终端快速开发和调试 MQTT 服务与应用
 
-随着 MQTT 协议在物联网领域的广泛使用，越来越多的用户选择使用 MQTT X 进行物联网连接测试。对于部分用户如服务端开发者、服务运维人员等来说，下载桌面客户端可能会占用系统的大量磁盘空间，每次测试前都需要在带有图形化界面的操作系统中打开客户端应用来调试。在这种情况下，桌面客户端这种使用方式就变得不太友好。
+随着 MQTT 协议在物联网领域的广泛使用，越来越多的用户选择使用 MQTTX 进行物联网连接测试。对于部分用户如服务端开发者、服务运维人员等来说，下载桌面客户端可能会占用系统的大量磁盘空间，每次测试前都需要在带有图形化界面的操作系统中打开客户端应用来调试。在这种情况下，桌面客户端这种使用方式就变得不太友好。
 
-因此 MQTT X 增加了命令行这一交互形式——MQTT X CLI。这是一款全开源的 MQTT 5.0 命令行客户端工具，即命令行上的 MQTT X。**开发者无需使用图形化界面，就能通过 MQTT X CLI 使用命令行快速开发和调试 MQTT 服务与应用。**从而实现以下使用目标：
+因此 MQTTX 增加了命令行这一交互形式——MQTTX CLI。这是一款全开源的 MQTT 5.0 命令行客户端工具，即命令行上的 MQTTX。**开发者无需使用图形化界面，就能通过 MQTTX CLI 使用命令行快速开发和调试 MQTT 服务与应用。**从而实现以下使用目标：
 
 - 在服务器终端内就可以测试已经部署好的 MQTT 服务
 - 通过编辑和使用命令行脚本完成 MQTT 服务的快速测试
 - 使用命令行脚本来完成一些简单的压力测试或自动化测试
 
-> MQTT X CLI 网站：[https://mqttx.app/zh/cli](https://mqttx.app/zh/cli) 
+> MQTTX CLI 网站：[https://mqttx.app/zh/cli](https://mqttx.app/zh/cli) 
 >
-> MQTT X CLI v1.8.0 版本下载：[https://github.com/emqx/MQTTX/releases/tag/v1.8.0](https://github.com/emqx/MQTTX/releases/tag/v1.8.0) 
+> MQTTX CLI v1.8.0 版本下载：[https://github.com/emqx/MQTTX/releases/tag/v1.8.0](https://github.com/emqx/MQTTX/releases/tag/v1.8.0) 
 >
-> MQTT X CLI GitHub 仓库：[https://github.com/emqx/MQTTX/tree/main/cli](https://github.com/emqx/MQTTX/tree/main/cli) 
+> MQTTX CLI GitHub 仓库：[https://github.com/emqx/MQTTX/tree/main/cli](https://github.com/emqx/MQTTX/tree/main/cli) 
 
 ![MQTT CLI](https://assets.emqx.com/images/6e1009d394255edd48a9da76ae698a94.jpeg)
 
@@ -26,9 +26,9 @@
 
 ### 安装
 
-MQTT X CLI 可以快速下载并安装到 macOS、Linux 和 Windows 系统上，**安装前不需要任何的依赖环境准备**，只需在终端内执行命令，即可安装和使用 MQTT X CLI。
+MQTTX CLI 可以快速下载并安装到 macOS、Linux 和 Windows 系统上，**安装前不需要任何的依赖环境准备**，只需在终端内执行命令，即可安装和使用 MQTTX CLI。
 
-对于 macOS 和 Linux 系统的用户，我们提供了快捷的安装方法，使用命令行可以快速下载二进制文件，并安装最新的 MQTT X CLI 稳定版到操作系统上。Windows 用户则可以到 MQTT X 的[发布页面](https://github.com/emqx/MQTTX/releases)内，找到对应的系统架构的 `exe` 包，手动下载后使用。
+对于 macOS 和 Linux 系统的用户，我们提供了快捷的安装方法，使用命令行可以快速下载二进制文件，并安装最新的 MQTTX CLI 稳定版到操作系统上。Windows 用户则可以到 MQTTX 的[发布页面](https://github.com/emqx/MQTTX/releases)内，找到对应的系统架构的 `exe` 包，手动下载后使用。
 
 > 注意：下载安装时请注意区分当前使用系统环境的 CPU 架构
 
@@ -36,7 +36,7 @@ MQTT X CLI 可以快速下载并安装到 macOS、Linux 和 Windows 系统上，
 
 - **Homebrew**
 
-  macOS 用户可以通过 Homebrew 来快速安装和使用 MQTT X CLI
+  macOS 用户可以通过 Homebrew 来快速安装和使用 MQTTX CLI
 
   ```
   brew install emqx/mqttx/mqttx-cli
@@ -74,7 +74,7 @@ MQTT X CLI 可以快速下载并安装到 macOS、Linux 和 Windows 系统上，
 
 #### **Windows**
 
-Windows 用户请到 MQTT X 的下载页面内手动下载对应的 `exe` 文件来使用，下载地址：[https://github.com/emqx/MQTTX/releases/tag/v1.8.0](https://github.com/emqx/MQTTX/releases/tag/v1.8.0) 
+Windows 用户请到 MQTTX 的下载页面内手动下载对应的 `exe` 文件来使用，下载地址：[https://github.com/emqx/MQTTX/releases/tag/v1.8.0](https://github.com/emqx/MQTTX/releases/tag/v1.8.0) 
 
 ![Windows MQTT](https://assets.emqx.com/images/e236e184d509efcad443b0551f00dacf.png)
 
@@ -88,14 +88,14 @@ npm install mqttx-cli -g
 
 ### 快速开始
 
-在完成下载安装后，便可在终端内直接输入 `mqttx` 命令来运行和使用了。您可以加 `-V` 参数来验证 MQTT X CLI 是否安装成功，当输出一个版本号时，就证明 MQTT X CLI 已经成功安装。
+在完成下载安装后，便可在终端内直接输入 `mqttx` 命令来运行和使用了。您可以加 `-V` 参数来验证 MQTTX CLI 是否安装成功，当输出一个版本号时，就证明 MQTTX CLI 已经成功安装。
 
 ```
 $ mqttx -V
 1.8.0
 ```
 
-为测试 MQTT X CLI 的使用，我们需要准备一个 MQTT 服务，本文将使用 EMQ 提供的 [免费公共 MQTT 服务器](https://www.emqx.com/zh/mqtt/public-mqtt5-broker)，该服务基于 [MQTT 物联网云平台 - EMQX Cloud](https://www.emqx.com/zh/cloud) 创建，服务器接入信息如下：
+为测试 MQTTX CLI 的使用，我们需要准备一个 MQTT 服务，本文将使用 EMQ 提供的 [免费公共 MQTT 服务器](https://www.emqx.com/zh/mqtt/public-mqtt5-broker)，该服务基于 [MQTT 物联网云平台 - EMQX Cloud](https://www.emqx.com/zh/cloud) 创建，服务器接入信息如下：
 
 - Broker: `broker.emqx.io`
 - TCP Port: **1883**
@@ -123,7 +123,7 @@ mqttx pub -t 'mqttx/cli' -h 'broker.emqx.io' -p 1883 -m 'hello from MQTTX CLI!'
 
 **发布多条消息**
 
-MQTT X CLI 还支持一个 `pub` 命令可以发布多条消息的功能，只需要在编辑是在命令中添加一个  `-M` 参数和 `-s` 参数，每次输入完成后换行即可。
+MQTTX CLI 还支持一个 `pub` 命令可以发布多条消息的功能，只需要在编辑是在命令中添加一个  `-M` 参数和 `-s` 参数，每次输入完成后换行即可。
 
 ```
 mqttx pub -t 'mqttx/cli' -h 'broker.emqx.io' -p 1883 -s -M
@@ -131,25 +131,25 @@ mqttx pub -t 'mqttx/cli' -h 'broker.emqx.io' -p 1883 -s -M
 
 ![MQTT CLI](https://assets.emqx.com/images/549a31f8b062f099c0eac8c0c6047f35.png)
 
-最后，我们再通过使用 MQTT X 的桌面客户端来和 MQTT X CLI 来连接到同一个 MQTT 服务，来测试和验证 MQTT X CLI 的功能，我们使用 MQTT X CLI 发布一条消息，通过 MQTT X 桌面客户端来接收，再反向使用 MQTT X 桌面客户端来发送一条消息到 MQTT X CLI。此时，我们可以看到两边都收到了各自收发的消息。
+最后，我们再通过使用 MQTTX 的桌面客户端来和 MQTTX CLI 来连接到同一个 MQTT 服务，来测试和验证 MQTTX CLI 的功能，我们使用 MQTTX CLI 发布一条消息，通过 MQTTX 桌面客户端来接收，再反向使用 MQTTX 桌面客户端来发送一条消息到 MQTTX CLI。此时，我们可以看到两边都收到了各自收发的消息。
 
 ![MQTT 桌面客户端](https://assets.emqx.com/images/e8712613d23e472e642949c639d471ac.png)
 
-<center>MQTT X 桌面客户端</center>
+<center>MQTTX 桌面客户端</center>
 
 ![MQTT CLI](https://assets.emqx.com/images/af38097e9c9832ad8cfa3959085ed280.png)
 
-<center>MQTT X CLI</center>
+<center>MQTTX CLI</center>
 
 ## 结语
 
-至此，我们就完成了使用 MQTT X CLI 对 MQTT 消息发布订阅功能的测试和验证。除上述常用功能使用外，MQTT X CLI 还支持设置遗嘱消息、使用 SSL/TLS 来测试 mqtts 的连接等。未来还将支持 MQTT 5.0 连接。
+至此，我们就完成了使用 MQTTX CLI 对 MQTT 消息发布订阅功能的测试和验证。除上述常用功能使用外，MQTTX CLI 还支持设置遗嘱消息、使用 SSL/TLS 来测试 mqtts 的连接等。未来还将支持 MQTT 5.0 连接。
 
-MQTT X CLI 的发布，为物联网开发者进行 MQTT 连接测试提供了一种新的选择。而对命令行调用、桌面客户端下载和在线浏览器这几种交互形式的完整支持，使得 MQTT X 1.8.0 可帮助不同使用场景需求的用户完成对 MQTT 服务或应用的开发与调试，从而提高用户自身相关业务能力与稳定性。简单易用的测试客户端工具 MQTT X 结合高效可靠的物联网消息服务器 EMQX，将帮助物联网开发者构建具有竞争力的物联网平台与应用。
+MQTTX CLI 的发布，为物联网开发者进行 MQTT 连接测试提供了一种新的选择。而对命令行调用、桌面客户端下载和在线浏览器这几种交互形式的完整支持，使得 MQTTX 1.8.0 可帮助不同使用场景需求的用户完成对 MQTT 服务或应用的开发与调试，从而提高用户自身相关业务能力与稳定性。简单易用的测试客户端工具 MQTTX 结合高效可靠的物联网消息服务器 EMQX，将帮助物联网开发者构建具有竞争力的物联网平台与应用。
 
 ## 附：使用帮助
 
-您可以在命令行内输入 `--help` 参数来获取使用帮助，或查阅下方的使用参数表来使用 MQTT X CLI。
+您可以在命令行内输入 `--help` 参数来获取使用帮助，或查阅下方的使用参数表来使用 MQTTX CLI。
 
 ```
 # 获取 mqttx 命令的帮助
@@ -166,7 +166,7 @@ mqttx pub --help
 
 | 参数          | 描述                         |
 | :------------ | :--------------------------- |
-| -V, --version | 输出当前 MQTT X CLI 的版本号 |
+| -V, --version | 输出当前 MQTTX CLI 的版本号 |
 | -h, --help    | 展示 mqttx 命令的帮助信息    |
 
 | 命令 | 描述               |

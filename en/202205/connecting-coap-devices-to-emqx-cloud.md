@@ -84,9 +84,9 @@ We use libcoap to publish a message to the EMQX Cloud deployment.
 
 ![CoAP terminal sends the message](https://assets.emqx.com/images/7983bafd716c5f631cc16173dd4cdc91.png)
 
-Next, we use [MQTT X](https://mqttx.app) to subscribe to the corresponding `topic1`, you can see that the message has been successfully published.
+Next, we use [MQTTX](https://mqttx.app) to subscribe to the corresponding `topic1`, you can see that the message has been successfully published.
 
-![MQTT X receive messages](https://assets.emqx.com/images/73eb0bb27c70213dded07d7569cebba1.png)
+![MQTTX receive messages](https://assets.emqx.com/images/73eb0bb27c70213dded07d7569cebba1.png)
 
 #### 2、Subscription Example 
 
@@ -100,7 +100,7 @@ We use libcoap to subscribe to a topic.
 
 Next, we use MQTTX to send "hello, EMQX Cloud" to `topic1`.
 
-![MQTT X send messages](https://assets.emqx.com/images/45f5cd23ad12da6b86d95b901d91bbbe.png)
+![MQTTX send messages](https://assets.emqx.com/images/45f5cd23ad12da6b86d95b901d91bbbe.png)
 
 
 ```

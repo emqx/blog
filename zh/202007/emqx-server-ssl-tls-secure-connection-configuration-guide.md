@@ -149,14 +149,14 @@ listener.ssl.external.certfile = etc/certs/emqx.crt
 
 #### MQTT 连接测试
 
-当配置完成并重启 EMQX 后，我们使用 [MQTT 客户端工具 - MQTT X](https://mqttx.app/zh)（该工具跨平台且支持 [MQTT 5.0](https://www.emqx.com/zh/mqtt/mqtt5)），来验证 TLS 服务是否正常运行。
+当配置完成并重启 EMQX 后，我们使用 [MQTT 客户端工具 - MQTTX](https://mqttx.app/zh)（该工具跨平台且支持 [MQTT 5.0](https://www.emqx.com/zh/mqtt/mqtt5)），来验证 TLS 服务是否正常运行。
 
 
-> MQTT X 版本要求：v1.3.2 及以上版本
+> MQTTX 版本要求：v1.3.2 及以上版本
 
 
 
-- 参照下图在 MQTT X 中创建 `MQTT 客户端`（Host 输入框里的 `mqttx.app` 需替换为实际的域名）
+- 参照下图在 MQTTX 中创建 `MQTT 客户端`（Host 输入框里的 `mqttx.app` 需替换为实际的域名）
 
 ![mqttxconfigserver.png](https://assets.emqx.com/images/2e5bdd705694388d29cc80bf087ef92f.png)
 
@@ -229,13 +229,13 @@ listener.ssl.external.cacertfile = etc/certs/ca.pem
   2020-11-26 17:39:13.933 [debug] 127.0.0.1:51348 [MQTT] RECV CONNECT(Q0, R0, D0, ClientId=a, ProtoName=MQTT, ProtoVsn=4, CleanStart=false, KeepAlive=0, Username=undefined, Password=undefined)
   ```
 
-#### MQTT 连接测试（MQTT X）
+#### MQTT 连接测试（MQTTX）
 
-当配置完成并重启 EMQX 后，我们使用 [MQTT 客户端工具 - MQTT X](https://mqttx.app/zh)（该工具跨平台且支持 [MQTT 5.0](https://www.emqx.com/zh/mqtt/mqtt5)），来验证 TLS 服务是否正常运行。
+当配置完成并重启 EMQX 后，我们使用 [MQTT 客户端工具 - MQTTX](https://mqttx.app/zh)（该工具跨平台且支持 [MQTT 5.0](https://www.emqx.com/zh/mqtt/mqtt5)），来验证 TLS 服务是否正常运行。
 
-> MQTT X 版本要求：v1.3.2 及以上版本
+> MQTTX 版本要求：v1.3.2 及以上版本
 
-- 参照下图在 MQTT X 中创建 `MQTT 客户端`（Host 输入框里的 `127.0.0.1` 需替换为实际的 EMQX 服务器 IP）
+- 参照下图在 MQTTX 中创建 `MQTT 客户端`（Host 输入框里的 `127.0.0.1` 需替换为实际的 EMQX 服务器 IP）
 
 ![1594612437782.jpg](https://assets.emqx.com/images/9c966931c2c83165ba181aa4c704b8e1.jpg)
   此时 `Certificate` 一栏需要选择 `Self signed` ，并携带自签名证书中生成的 `ca.pem` 文件。

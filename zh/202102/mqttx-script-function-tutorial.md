@@ -1,10 +1,10 @@
 ## 概述
 
-[MQTT X](https://mqttx.app/zh) 是由全球领先的 **开源物联网中间件** 提供商 [EMQ](https://www.emqx.com/zh) 开源的一款跨平台 [MQTT 5.0](https://www.emqx.com/zh/mqtt/mqtt5) 桌面测试客户端，它支持 macOS，Linux，Windows。MQTT X 的用户界面借助聊天软件的形式简化了页面的操作逻辑，用户可以快速创建多个同时在线的 **MQTT 客户端，** 方便测试 MQTT/TCP、MQTT/TLS、MQTT/WebSocket  的连接/发布/订阅功能及其他 **MQTT 协议** 特性。
+[MQTTX](https://mqttx.app/zh) 是由全球领先的 **开源物联网中间件** 提供商 [EMQ](https://www.emqx.com/zh) 开源的一款跨平台 [MQTT 5.0](https://www.emqx.com/zh/mqtt/mqtt5) 桌面测试客户端，它支持 macOS，Linux，Windows。MQTTX 的用户界面借助聊天软件的形式简化了页面的操作逻辑，用户可以快速创建多个同时在线的 **MQTT 客户端，** 方便测试 MQTT/TCP、MQTT/TLS、MQTT/WebSocket  的连接/发布/订阅功能及其他 **MQTT 协议** 特性。
 
-MQTT X 网站：[https://mqttx.app/zh](https://mqttx.app/zh)
+MQTTX 网站：[https://mqttx.app/zh](https://mqttx.app/zh)
 
-MQTT X v1.5.2 版本下载：[https://github.com/emqx/MQTTX/releases/tag/v1.5.2](https://github.com/emqx/MQTTX/releases/tag/v1.5.2)
+MQTTX v1.5.2 版本下载：[https://github.com/emqx/MQTTX/releases/tag/v1.5.2](https://github.com/emqx/MQTTX/releases/tag/v1.5.2)
 
 Mac 用户可在 App Store 中进行下载：[https://apps.apple.com/cn/app/mqttx/id1514074565?mt=12](https://apps.apple.com/cn/app/mqttx/id1514074565?mt=12)
 
@@ -14,7 +14,7 @@ Linux 用户可在 Snapcraft 中进行下载：[https://snapcraft.io/mqttx](http
 
 ## 脚本功能
 
-**MQTT X 在 v1.4.2 版本后，加入了脚本功能，** 支持让用户使用脚本对 `Payload` 进行自定义转换，可用来模拟自定义测试场景，目前支持的脚本语言为 JavaScript。下文将通过两个简单的实例来介绍脚本功能的使用， **需注意：在 v1.4.2 版本中脚本功能属于开放性测试功能，使用流程、安全性和功能性还需后续继续优化提升和完善。** 也欢迎您到 MQTT X 的 [GitHub issue](https://github.com/emqx/MQTTX/issues) 区进行详细讨论，我们将会认真审阅和回复。
+**MQTTX 在 v1.4.2 版本后，加入了脚本功能，** 支持让用户使用脚本对 `Payload` 进行自定义转换，可用来模拟自定义测试场景，目前支持的脚本语言为 JavaScript。下文将通过两个简单的实例来介绍脚本功能的使用， **需注意：在 v1.4.2 版本中脚本功能属于开放性测试功能，使用流程、安全性和功能性还需后续继续优化提升和完善。** 也欢迎您到 MQTTX 的 [GitHub issue](https://github.com/emqx/MQTTX/issues) 区进行详细讨论，我们将会认真审阅和回复。
 
 在编辑脚本功能中，全局只包含了一个 `execute` API，用户需要编写一个自定义函数，该函数接收一个 `value` 参数，即为 `Payload`, 函数中便可对 `value` 进行自定义修改转化，最后将该函数作为参数传入到 `execute` 中即可执行自定义编写的函数。
 
@@ -66,7 +66,7 @@ execute(handlePayload)
 
 ![mqttxtimed.png](https://assets.emqx.com/images/8cf5eaf54e3ab5596c03500012463cd7.png)
 
-准备好后，便可以输入初始的 `Payload` 和需要发送到的`Topic`，点击发送成功一条消息后，便可以看到 MQTT X 将每秒自动发送了一次模拟数据。
+准备好后，便可以输入初始的 `Payload` 和需要发送到的`Topic`，点击发送成功一条消息后，便可以看到 MQTTX 将每秒自动发送了一次模拟数据。
 
 ![mqttxhumtempsuccess.png](https://assets.emqx.com/images/695bfda6171514106492d3543d884686.png)
 
@@ -113,6 +113,6 @@ execute(handleTimestamp)
 
 ## 总结
 
-至此，我们完成了 MQTT X 的脚本实例使用的教程。该功能具有一定的扩展性和灵活性，需用户配合实际需求来进行使用。脚本使用实例可在 GitHub 仓库的 [/docs/script-example](https://github.com/emqx/MQTTX/tree/master/docs/script-example) 文件夹中查看，目前提供了两个内置脚本，时间戳转化和温湿度数据模拟。如果在您的使用中有更好的，更实用的脚本也可以提交您的代码到这里，方便让更多的人使用到。
+至此，我们完成了 MQTTX 的脚本实例使用的教程。该功能具有一定的扩展性和灵活性，需用户配合实际需求来进行使用。脚本使用实例可在 GitHub 仓库的 [/docs/script-example](https://github.com/emqx/MQTTX/tree/master/docs/script-example) 文件夹中查看，目前提供了两个内置脚本，时间戳转化和温湿度数据模拟。如果在您的使用中有更好的，更实用的脚本也可以提交您的代码到这里，方便让更多的人使用到。
 
-该项目完全开源，您可以到 [GitHub](https://github.com/emqx/MQTTX/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc) 来提交使用过程中遇到的问题，或是 Fork MQTT X 项目向我们提交修改后的 PR，我们将会及时查阅和处理。也特此感谢社区中所有用户的贡献和反馈。
+该项目完全开源，您可以到 [GitHub](https://github.com/emqx/MQTTX/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc) 来提交使用过程中遇到的问题，或是 Fork MQTTX 项目向我们提交修改后的 PR，我们将会及时查阅和处理。也特此感谢社区中所有用户的贡献和反馈。

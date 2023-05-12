@@ -165,9 +165,9 @@ When the vpc status turns to running, you successfully create the vpc peering co
 
    You need to replace [broker.emqx.io](http://broker.emqx.io/) with the created deployment [connection address](https://docs.emqx.com/en/cloud/latest/create/overview.html#view-deployment-information), add [client authentication information](https://docs.emqx.com/en/cloud/latest/deployments/auth_overview.html#authentication) to the EMQX Cloud console.
 
-   ![MQTT X connection](https://assets.emqx.com/images/a03bd8c2fe2c42fbe55a48111dddb79b.png)
+   ![MQTTX connection](https://assets.emqx.com/images/a03bd8c2fe2c42fbe55a48111dddb79b.png)
 
-   ![MQTT X message](https://assets.emqx.com/images/c5f181acd6a1a5549f299e5cf1949f31.png) 
+   ![MQTTX message](https://assets.emqx.com/images/c5f181acd6a1a5549f299e5cf1949f31.png) 
 
 2. View data bridging results
 

@@ -161,26 +161,26 @@ python3 manage.py runserver
 
 ## 测试
 
-接下来我们使用[开源的跨平台 MQTT 客户端 - MQTT X](https://mqttx.app/zh) 进行连接、订阅、发布测试。
+接下来我们使用[开源的跨平台 MQTT 客户端 - MQTTX](https://mqttx.app/zh) 进行连接、订阅、发布测试。
 
 ### 测试消息接收
 
-1. 在 MQTT X 中创建 MQTT 连接，输入连接名称，其他参数保持默认，并点击右上角的 `Connect` 按钮连接至服务器。
+1. 在 MQTTX 中创建 MQTT 连接，输入连接名称，其他参数保持默认，并点击右上角的 `Connect` 按钮连接至服务器。
 
    ![创建 MQTT 连接](https://assets.emqx.com/images/f9b4449af7ac15183ca9b66ea7210ed1.png)
 
-2. 在 MQTT X 底部的消息发布框里向 `django/mqtt` 主题发布消息 `Hello from MQTT X`。
+2. 在 MQTTX 底部的消息发布框里向 `django/mqtt` 主题发布消息 `Hello from MQTTX`。
 
       ![发布 MQTT 消息](https://assets.emqx.com/images/1d138bc5e7720c3a8c938137e6472ecb.png)
 
-3. 在 Django 运行窗口中将能看到 MQTT X 发送的消息。
+3. 在 Django 运行窗口中将能看到 MQTTX 发送的消息。
 
       ![Django 接收 MQTT 消息](https://assets.emqx.com/images/ad1a0e19f4bb66c7ebb614eac362a22c.png)
 
 
 ### 测试消息发布接口
 
-1. 在 MQTT X 中订阅 `django/mqtt` 主题。
+1. 在 MQTTX 中订阅 `django/mqtt` 主题。
 
     ![订阅 MQTT 主题](https://assets.emqx.com/images/fe6d48d40f8411a8921747d02ff8abc6.png)
 
@@ -188,7 +188,7 @@ python3 manage.py runserver
 
    ![Postman 调用发布接口](https://assets.emqx.com/images/047e4c70a29041ab23d67379b3114bce.png)
 
-3. 在 MQTT X 中将能看到 Django 发送过来的消息。
+3. 在 MQTTX 中将能看到 Django 发送过来的消息。
 
    ![接收 MQTT 消息](https://assets.emqx.com/images/9490d8e462c63a461f5540032d03aadc.png)
 

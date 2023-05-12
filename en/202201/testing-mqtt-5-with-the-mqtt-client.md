@@ -1,14 +1,14 @@
-Recently, the cross-platform MQTT 5.0 desktop test client MQTT X, which is open-sourced by EMQ, [released the latest version of v1.7.0](https://github.com/emqx/MQTTX/releases/tag/v1.7.0). MQTT X supports the rapid creation of multiple simultaneous online MQTT client connections, tests the connection, publish, and subscribe functions of MQTT/TCP, MQTT/TLS, MQTT/WebSocket as well as other MQTT protocol features.
+Recently, the cross-platform MQTT 5.0 desktop test client MQTTX, which is open-sourced by EMQ, [released the latest version of v1.7.0](https://github.com/emqx/MQTTX/releases/tag/v1.7.0). MQTTX supports the rapid creation of multiple simultaneous online MQTT client connections, tests the connection, publish, and subscribe functions of MQTT/TCP, MQTT/TLS, MQTT/WebSocket as well as other MQTT protocol features.
 
 The newly released v1.7.0 provides more comprehensive support for MQTT 5.0 and is the desktop test client tool that supports MQTT 5.0 most worldwide so far. At the same time, many new features have been added to optimize the user experience.
 
-In this article, we will introduce in detail the specific use of the new features of MQTT X v1.7.0, especially how to use MQTT X to test features of MQTT 5.0, so that readers can apply MQTT 5.0 in projects better.
+In this article, we will introduce in detail the specific use of the new features of MQTTX v1.7.0, especially how to use MQTTX to test features of MQTT 5.0, so that readers can apply MQTT 5.0 in projects better.
 
 ## Get MQTT Broker Ready
 
-Before using MQTT X v1.7.0 to test the features of MQTT 5.0, we first need to get an MQTT Broker that supports MQTT 5.0.
+Before using MQTTX v1.7.0 to test the features of MQTT 5.0, we first need to get an MQTT Broker that supports MQTT 5.0.
 
-This article will use the public MQTT 5.0 Broker provided by [EMQX Cloud](https://www.emqx.com/en/cloud) with the MQTT X client for testing. As a fully managed cloud-native MQTT 5.0 message service, EMQX Cloud can quickly create an MQTT Broker instantly in minutes and fully supports MQTT 5.0. It is also the world's first fully managed MQTT 5.0 public cloud service.
+This article will use the public MQTT 5.0 Broker provided by [EMQX Cloud](https://www.emqx.com/en/cloud) with the MQTTX client for testing. As a fully managed cloud-native MQTT 5.0 message service, EMQX Cloud can quickly create an MQTT Broker instantly in minutes and fully supports MQTT 5.0. It is also the world's first fully managed MQTT 5.0 public cloud service.
 
 Start a 30-day free trial: [fully managed cloud-native MQTT message service](https://www.emqx.com/en/cloud)
 
@@ -40,7 +40,7 @@ After configuring the user properties, click the Save button. At this time, we e
 
 ![message box contains the user properties](https://assets.emqx.com/images/d047089b3a9c14b49bc50e03a360a5cc.png)
 
-With MQTT X's support for user properties, it can help developers quickly verify and test the function of the MQTT 5.0 user properties, thereby improving the efficiency of development and use.
+With MQTTX's support for user properties, it can help developers quickly verify and test the function of the MQTT 5.0 user properties, thereby improving the efficiency of development and use.
 
 ### Request Response
 
@@ -72,7 +72,7 @@ Click Send button, and we can receive the response message from the light device
 
 ![MQTT Response Topic](https://assets.emqx.com/images/1e7ecbb59602251011fdd7bdf19f2f62.png)
 
-Currently, for the Request Response feature, MQTT X only supports configuring the Response Topic and Correlation Data when sending. In the future, we will continue to optimize the configuration of the response part to bring users a more complete capability to test Request Response.
+Currently, for the Request Response feature, MQTTX only supports configuring the Response Topic and Correlation Data when sending. In the future, we will continue to optimize the configuration of the response part to bring users a more complete capability to test Request Response.
 
 ### **Content type and Payload Format Indicator**
 
@@ -118,10 +118,10 @@ The control of automatic scrolling of the message list when receiving and publis
 
 > Note: When the auto-scroll function is turned off, the performance of sending and receiving messages can be improved.
 
-![MQTT X automatic scrolling](https://assets.emqx.com/images/944659abebc73c140c86f53b8dfa3371.png)
+![MQTTX automatic scrolling](https://assets.emqx.com/images/944659abebc73c140c86f53b8dfa3371.png)
 
 ## Conclusion
 
-Through this article, we believe that you have a better understanding of the functions of MQTT X v1.7.0. The combination of MQTT X and EMQX can help you fully grasp the MQTT 5.0 protocol and better apply its features in projects.
+Through this article, we believe that you have a better understanding of the functions of MQTTX v1.7.0. The combination of MQTTX and EMQX can help you fully grasp the MQTT 5.0 protocol and better apply its features in projects.
 
-In the future, we will also improve the ability of MQTT X to support configurations such as Topic Alias, Request Responses, and Subscription Identifier, please stay tuned.
+In the future, we will also improve the ability of MQTTX to support configurations such as Topic Alias, Request Responses, and Subscription Identifier, please stay tuned.

@@ -1,4 +1,4 @@
-MQTT X 1.9.1, an MQTT 5.0 client tool, is now available after two beta iterations.
+MQTTX 1.9.1, an MQTT 5.0 client tool, is now available after two beta iterations.
 
 This version has seen significant improvements in stability through extensive performance optimization and resolution of known issues. In particular, when handling a large number of messages, version 1.9.1 has significantly reduced CPU and memory usage by 80% compared to the previous version, resulting in greatly optimized overall performance and reduced risk of system crashes. The improved stability offers users a more dependable environment for conducting IoT performance testing and building IoT applications.
 
@@ -9,15 +9,15 @@ Download the latest version here: [https://www.emqx.com/en/try?product=MQTTX](ht
 
 ### Performance Optimization
 
-MQTT X 1.9.1 features numerous performance optimizations for the desktop client to enhance the efficiency of topic filtering when handling a large number of messages and to prevent any potential high consumption of CPU resources that could result in lagging. The previous issue of database crashes due to excessive message traffic on Windows has been resolved, providing a much-improved user experience.
+MQTTX 1.9.1 features numerous performance optimizations for the desktop client to enhance the efficiency of topic filtering when handling a large number of messages and to prevent any potential high consumption of CPU resources that could result in lagging. The previous issue of database crashes due to excessive message traffic on Windows has been resolved, providing a much-improved user experience.
 
 ### Comparison Test
 
-A performance comparison was conducted between version 1.9.0 and version 1.9.1 of MQTT X using the bench command of the MQTT X CLI.
+A performance comparison was conducted between version 1.9.0 and version 1.9.1 of MQTTX using the bench command of the MQTTX CLI.
 
 #### Test Scenario
 
-To perform a benchmark test, a new local MQTT Broker connection was created and subscribed to an mqttx/bench topic. The bench command was then utilized to publish 1000 messages per second, each with a payload of "hello" and a QoS of 0, to the topic for 1 minute. During this scenario, where 1000 messages were being received per second, the CPU usage and memory usage changes were monitored using the debugging tools available in the MQTT X development environment.
+To perform a benchmark test, a new local MQTT Broker connection was created and subscribed to an mqttx/bench topic. The bench command was then utilized to publish 1000 messages per second, each with a payload of "hello" and a QoS of 0, to the topic for 1 minute. During this scenario, where 1000 messages were being received per second, the CPU usage and memory usage changes were monitored using the debugging tools available in the MQTTX development environment.
 
 ![benchmark test](https://assets.emqx.com/images/cab9054e5e262ad6684d338988a361eb.png)
 
@@ -31,13 +31,13 @@ The results of the benchmark test revealed that in version 1.9.0, while receivin
 
 In version 1.9.1, during the receipt of a large number of messages, the average CPU usage was around 50%. The memory usage reached a peak of close to 200MB but was subsequently maintained at approximately 150MB. Additionally, the page refresh was observed to be smooth and without any lag.
 
-A comparison of the memory and CPU usage reveals that the latest version of the MQTT X desktop client exhibits an optimization of approximately 80% in terms of performance. From a user's perspective, the issues of page stuttering or crashes have also been significantly mitigated.
+A comparison of the memory and CPU usage reveals that the latest version of the MQTTX desktop client exhibits an optimization of approximately 80% in terms of performance. From a user's perspective, the issues of page stuttering or crashes have also been significantly mitigated.
 
 Aside from performance optimizations in message reception, other optimizations have been made including improved performance in topic filtering and message searching, support for bulk storage of messages, and resolution of previous database crash issues.
 
 ### Interaction Enhancement
 
-In previous versions of MQTT X, the default setting of automatically scrolling to the latest message when receiving a new one caused inconvenience for users who wanted to view historical messages. Deactivating this setting would also mean that users would miss out on the latest news in real-time.
+In previous versions of MQTTX, the default setting of automatically scrolling to the latest message when receiving a new one caused inconvenience for users who wanted to view historical messages. Deactivating this setting would also mean that users would miss out on the latest news in real-time.
 
 The latest version, 1.9.1, enhances the user experience by introducing a new message alert displayed at the bottom of the message list. Upon receiving a new message, users can opt to remain on the current page and continue to view the historical messages or they can click on the alert to access the latest message, making their experience more seamless.
 
@@ -63,11 +63,11 @@ In addition to performance optimizations, this release also fixes and optimizes 
 - Optimizes the alert of unconnected status when clicking the Subscribe button.
 - Optimizes the hint of filling in the topic input box.
 
-## MQTT X CLI
+## MQTTX CLI
 
 ### Adjust the Date and Time Format
 
-The output log in MQTT X CLI version 1.9.1 has been optimized by adding a new date and time format, enabling users to accurately view and log the current test time. The new format is as follows:
+The output log in MQTTX CLI version 1.9.1 has been optimized by adding a new date and time format, enabling users to accurately view and log the current test time. The new format is as follows:
 
 ```
 $ mqttx conn -h broker.emqx.io -p 1883
@@ -79,20 +79,20 @@ In the future, we plan to offer users the ability to customize the date and time
 
 ### Other Updates
 
-In addition to the date and time format, MQTT X CLI had integrated several new, user-friendly features in the 1.9.1 beta version, including:
+In addition to the date and time format, MQTTX CLI had integrated several new, user-friendly features in the 1.9.1 beta version, including:
 
-- Support automatic reconnection. MQTT X CLI will automatically reconnect after any disconnections occur, even when using the bench command.
+- Support automatic reconnection. MQTTX CLI will automatically reconnect after any disconnections occur, even when using the bench command.
 - Allow users to save their connection parameters to a local file and then easily read the parameters from the file when they want to connect. The feature also supports saving all CLI commands to the configuration file.
 - Support specifying message format. Incoming messages can be effortlessly transformed into various formats, including String, Hex, Base64, and JSON, for more convenient viewing and logging.
 
-All of the aforementioned enhancements can be found in the 1.9.1 release. For a comprehensive overview of the new features, please refer to the previous article [MQTT X newsletter 2022-11](https://www.emqx.com/en/blog/mqttx-newsletter-202211).
+All of the aforementioned enhancements can be found in the 1.9.1 release. For a comprehensive overview of the new features, please refer to the previous article [MQTTX newsletter 2022-11](https://www.emqx.com/en/blog/mqttx-newsletter-202211).
 
 ## Roadmap
 
-MQTT X is undergoing constant improvements to offer more practical and powerful capabilities to its users, and make the testing and development of IoT applications and services more accessible. We are going to concentrate on certain areas, so keep an eye out for updates:
+MQTTX is undergoing constant improvements to offer more practical and powerful capabilities to its users, and make the testing and development of IoT applications and services more accessible. We are going to concentrate on certain areas, so keep an eye out for updates:
 
 - Supports MQTT Debug
-- Optimizes the output of system topics, allowing users to easily monitor and view data metrics of MQTT Broker using MQTT X
+- Optimizes the output of system topics, allowing users to easily monitor and view data metrics of MQTT Broker using MQTTX
 - Charts automatically based on incoming messages
 - Adds Plugins
 - Supports Sparkplug B format
@@ -103,7 +103,7 @@ MQTT X is undergoing constant improvements to offer more practical and powerful 
 
 <section class="promotion">
     <div>
-        Try MQTT X for Free
+        Try MQTTX for Free
     </div>
     <a href="https://www.emqx.com/en/try?product=MQTTX" class="button is-gradient px-5">Get Started →</a>
 </section>

@@ -56,7 +56,7 @@ So far, the preparations have been completed.
 
 ### Step 2：Invite the first participant, the MQTT client
 
-Connect the [MQTT client - MQTT X](https://mqttx.app/) to your EMQX Broker and subscribe to the topic `coap_to_mqtt` for it.
+Connect the [MQTT client - MQTTX](https://mqttx.app/) to your EMQX Broker and subscribe to the topic `coap_to_mqtt` for it.
 
 ![image20210410173501967.png](https://assets.emqx.com/images/776af3a1e1205e1fd99b33e695f876ca.png)
 
@@ -97,7 +97,7 @@ After  the installation is complete, the CoAP client PUT message to the `coap_to
 # Replace 127.0.0.1 in the command with the address of your EMQX Broker deployment
 ```
 
-We can see that MQTT X has received a greeting from CoAP.
+We can see that MQTTX has received a greeting from CoAP.
 
 ![WechatIMG12.png](https://assets.emqx.com/images/15c80f669399ee8a47ea8a0fc8e43770.png)
 
@@ -108,7 +108,7 @@ Now subscribe to the `mqtt_to_coap` theme for CoAP terminals.
 ./examples/coap-client -m get -s 20 "coap://127.0.0.1/mqtt/mqtt_to_coap?c=client1&u=tom&p=secret"
 ```
 
-MQTT X sends `hello CoAP, I am MQTT, welcome to EMQX Wrold!`  to the topic `mqtt_to_coap`.
+MQTTX sends `hello CoAP, I am MQTT, welcome to EMQX Wrold!`  to the topic `mqtt_to_coap`.
 
 ![WechatIMG11.png](https://assets.emqx.com/images/1b3ace0680fef3e3d088241a01fe7cba.png)
 

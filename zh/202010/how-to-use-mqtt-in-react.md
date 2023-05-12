@@ -177,11 +177,11 @@ const mqttDisconnect = () => {
 
 ![reactmqttpage.png](https://assets.emqx.com/images/d1c51195c056f3b4afb267edaeb217f0.png)
 
-使用 [MQTT 5.0 客户端工具 - MQTT X](https://mqttx.app/zh) 作为另一个客户端进行消息收发测试。
+使用 [MQTT 5.0 客户端工具 - MQTTX](https://mqttx.app/zh) 作为另一个客户端进行消息收发测试。
 
 ![reactmqttx.png](https://assets.emqx.com/images/621ba9544ea69f9ee7b24203846d0409.png)
 
-可以看到 MQTT X 可以正常接收来自浏览器端发送的消息，同样，使用 MQTT X 向该主题发送一条消息时，也可以看到浏览器端可以正常接收到该消息。
+可以看到 MQTTX 可以正常接收来自浏览器端发送的消息，同样，使用 MQTTX 向该主题发送一条消息时，也可以看到浏览器端可以正常接收到该消息。
 
 ![reactmqtttest.png](https://assets.emqx.com/images/da008ae3544a83a3efa78266190ea364.png)
 

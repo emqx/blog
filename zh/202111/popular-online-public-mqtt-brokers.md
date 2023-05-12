@@ -66,7 +66,7 @@
 
 ### 测试结果
 
-该环节中使用 [MQTT 客户端工具 - MQTT X](https://mqttx.app/zh) 进行可访问性测试，尝试通过 TCP 1883 端口建立连接，经过反复测试只有 Eclipse 提供的免费服务无法访问，总体结果如下：
+该环节中使用 [MQTT 客户端工具 - MQTTX](https://mqttx.app/zh) 进行可访问性测试，尝试通过 TCP 1883 端口建立连接，经过反复测试只有 Eclipse 提供的免费服务无法访问，总体结果如下：
 
 | 名称          | Broker 地址               | TCP  | 可用 |
 | :------------ | :------------------------ | :--- | :--- |
@@ -81,11 +81,11 @@
 
 ### 测试配置文件下载
 
-MQTT X 具备连接导入导出功能，以下是本文测试使用的连接数据，可以通过数据恢复的方式导入 MQTT X 中。
+MQTTX 具备连接导入导出功能，以下是本文测试使用的连接数据，可以通过数据恢复的方式导入 MQTTX 中。
 
 - [MQTTX-backup-free-public-mqtt-broker.json](https://github.com/wivwiv/mqtt-explore/blob/master/MQTTX-backup-free-public-mqtt-broker.json)
 
-![MQTT X 配置文件导入](https://assets.emqx.com/images/a7a336d10e7358ee2f8721676a7ba34b.png)
+![MQTTX 配置文件导入](https://assets.emqx.com/images/a7a336d10e7358ee2f8721676a7ba34b.png)
 
 
 ## 国内网络延时测试

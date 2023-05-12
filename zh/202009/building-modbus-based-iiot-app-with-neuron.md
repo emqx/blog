@@ -8,7 +8,7 @@ IIoT 即 Industrial Internet of Things 的简称，是指数以亿计的工业�
 
 随着 [工业 4.0](https://baike.baidu.com/item/%E5%B7%A5%E4%B8%9A4.0/2120694) 概念的普及与行业实践的深入，传统的集中式控制模式向分散式增强型控制模式转变。同时，5G 时代的到来，也加速了传统工业改造和工业物联网化的进程。为了实现个性化、数字化的产品与服务的灵活生产，在工业设备智能化、网络化的过程中，需要将新旧工业设备连接到互联网中，实现对工业设备的数据采集、远程控制、配置更新等业务。EMQX 系列产品可提供从工业网关到平台的整体解决方案，支持在厂区和工业现场等边缘端实现工业设备的数据汇聚并发送到云端。同时，其对边缘计算流数据的处理能力，可在平台端为工业物联网应用提供云端工业设备数据接入、数据存储以及与云端组态和应用的对接，方便工业互联网应用的快速开发。
 
-以下，我们将通过 [EMQX Neuron](https://www.emqx.com/zh/products/neuron)、[EMQX Broker](https://www.emqx.com/zh/products/emqx) 构建基于 [Modbus](https://zh.wikipedia.org/zh-cn/Modbus) 的简易 IIoT 应用，并使用 [MQTT X](https://mqttx.app/zh) 订阅/展示数据。
+以下，我们将通过 [EMQX Neuron](https://www.emqx.com/zh/products/neuron)、[EMQX Broker](https://www.emqx.com/zh/products/emqx) 构建基于 [Modbus](https://zh.wikipedia.org/zh-cn/Modbus) 的简易 IIoT 应用，并使用 [MQTTX](https://mqttx.app/zh) 订阅/展示数据。
 
 
 
@@ -85,7 +85,7 @@ EMQX Neuron 支持包括 Modbus、OPC 等在内的各类工业协议，可以基
 | PeakHMI Slave Simulator | /     | Modbus 模拟器        | Windows Server 2019 |
 | EMQX Neuron            | 1.4.6 | 工业协议网关接入软件 | Ubuntu 16.04        |
 | EMQX Broker            | 4.0.7 | MQTT Broker          | Ubuntu 16.04        |
-| MQTT X                  | 1.3.2 | MQTT 客户端工具      | macOS 10.13.4       |
+| MQTTX                  | 1.3.2 | MQTT 客户端工具      | macOS 10.13.4       |
 
 
 
@@ -188,16 +188,16 @@ MQPASSWORD=neuron123
 ![image20200807164756754.png](https://assets.emqx.com/images/20c4b877d66dfe467d70bf2048af52e0.png)
 
 
-### 用 MQTT X 订阅数据进行展示
+### 用 MQTTX 订阅数据进行展示
 
-打开连接好的 MQTT X，连接到 EMQX Broker，订阅上面 EMQX Neuron 发布的主题，在 MQTT X 可以收到 AlarmObj 里 2D7WS 的值为 1。客户端收到这些数据后，可以在应用界面上显示告警，也可以通过业务逻辑实现业务上的其它业务转换.
+打开连接好的 MQTTX，连接到 EMQX Broker，订阅上面 EMQX Neuron 发布的主题，在 MQTTX 可以收到 AlarmObj 里 2D7WS 的值为 1。客户端收到这些数据后，可以在应用界面上显示告警，也可以通过业务逻辑实现业务上的其它业务转换.
 
 ![image20200807165527066.png](https://assets.emqx.com/images/fea1dd077e66b71857e2f3530c71cfc9.png)
 
 
 ## 总结
 
-以上我们使用 EMQX Neuron、EMQX Broker、MQTT X 等工具完整进行全流程的工业接入模拟测试，对于工业设备上云形成更加清晰与直观的认知。当然，您也可以结合 EMQX Neuron 强大协议支持与 EMQX Broker 强大的接入/转发能力，自己开发一套应用展示系统，构建一整套 IIoT 平台。
+以上我们使用 EMQX Neuron、EMQX Broker、MQTTX 等工具完整进行全流程的工业接入模拟测试，对于工业设备上云形成更加清晰与直观的认知。当然，您也可以结合 EMQX Neuron 强大协议支持与 EMQX Broker 强大的接入/转发能力，自己开发一套应用展示系统，构建一整套 IIoT 平台。
 
 **2020 年 9 月**底，我们将通过集成 [Neuron](https://www.emqx.com/zh/products/neuron)，[Edge](https://www.emqx.com/zh/products/emqx) 和 [Kuiper](https://github.com/lf-edge/ekuiper) 等软件，实现在边缘端的工业协议解析、数据汇聚和流式处理的一整套边缘解决方案；该方案通过与云端的 EMQX Broker / Enterprise 等系列产品集成，则可以实现一个端到端的、从边缘到云端的完整工业解决方案。
 

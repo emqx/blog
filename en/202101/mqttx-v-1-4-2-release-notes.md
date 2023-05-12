@@ -1,8 +1,8 @@
-[MQTT X](https://mqttx.app/) is a cross-platform [MQTT 5.0](https://www.emqx.com/en/mqtt/mqtt5) desktop testing client open sourced by [EMQ](https://www.emqx.com/en), the world's leading provider of **open source IoT middleware**, which supports macOS, Linux, Windows. The user interface of MQTT X uses the chatting software form to simplify the operation logic of pages. Users can quickly create multiple simultaneously online **MQTT client** for convenient testing the connect/publish/subscribe functions of MQTT/TCP, MQTT/TLS, MQTT/WebSocket and other **MQTT protocol** features.
+[MQTTX](https://mqttx.app/) is a cross-platform [MQTT 5.0](https://www.emqx.com/en/mqtt/mqtt5) desktop testing client open sourced by [EMQ](https://www.emqx.com/en), the world's leading provider of **open source IoT middleware**, which supports macOS, Linux, Windows. The user interface of MQTTX uses the chatting software form to simplify the operation logic of pages. Users can quickly create multiple simultaneously online **MQTT client** for convenient testing the connect/publish/subscribe functions of MQTT/TCP, MQTT/TLS, MQTT/WebSocket and other **MQTT protocol** features.
 
-MQTT X Website: [https://mqttx.app/](https://mqttx.app/)
+MQTTX Website: [https://mqttx.app/](https://mqttx.app/)
 
-Download MQTT X v1.4.2: [https://github.com/emqx/MQTTX/releases/tag/v1.4.2](https://github.com/emqx/MQTTX/releases/tag/v1.4.2)
+Download MQTTX v1.4.2: [https://github.com/emqx/MQTTX/releases/tag/v1.4.2](https://github.com/emqx/MQTTX/releases/tag/v1.4.2)
 
 Mac users can download from the App Store: [https://apps.apple.com/us/app/mqttx/id1514074565?mt=12](https://apps.apple.com/us/app/mqttx/id1514074565?mt=12)
 
@@ -14,7 +14,7 @@ Linux users can download from the Snapcraft: [https://snapcraft.io/mqttx](https:
 
 ### Script function (Beta)
 
-In this version, MQTT X has added the script editing function. Users can implement writing a custom script (JavaScript) to perform custom conversion of the sent and received `Payload`. When combined with the timing send function, this enables automated testing of, for example, simulated data uploads. 
+In this version, MQTTX has added the script editing function. Users can implement writing a custom script (JavaScript) to perform custom conversion of the sent and received `Payload`. When combined with the timing send function, this enables automated testing of, for example, simulated data uploads. 
 
 > Note: This feature currently belongs to the testing Beta phase.
 

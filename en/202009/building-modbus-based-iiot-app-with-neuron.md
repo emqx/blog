@@ -8,7 +8,7 @@ IIoT is the acronyms of the Industrial Internet of Things, which is the Industri
 
 With the popularization of [industry 4.0](https://en.wikipedia.org/wiki/Fourth_Industrial_Revolution) concept and the deepening of industrial practice, the traditional centralized control model has transformed into a distributed enhanced control model. At the same time, the advent of the 5G era has accelerated the process of traditional industrial transformation and industrial IoT. To implement the flexible production of personalized and digital products and services, in the process of industrial devices intelligent and networked, the new and old industrial equipment needs to be connected to the internet to implement the business of data collection, remote control and configuration update of industrial equipment. EMQX series products can provide the entire solution from the industrial gateway to the platform and implement data aggregation of the industrial device and sending these data to the cloud, at the edge end of the plant and industrial site. At the same time, its processing ability for edge computing streaming data can provide cloud industrial device data access, data storage and interfacing with cloud-based configuration and applications for the industrial IoT at the platform end. Also, it can facilitate the rapid development of industrial Internet applications.
 
-We will build a simple IIoT application based on [Modbus](https://en.wikipedia.org/wiki/Modbus) through [EMQX Neuron](https://www.emqx.com/en/products/neuron) and [EMQX Broker](https://www.emqx.com/en/products/emqx), and use [MQTT X](https://mqttx.app/) to subscribe/display data.
+We will build a simple IIoT application based on [Modbus](https://en.wikipedia.org/wiki/Modbus) through [EMQX Neuron](https://www.emqx.com/en/products/neuron) and [EMQX Broker](https://www.emqx.com/en/products/emqx), and use [MQTTX](https://mqttx.app/) to subscribe/display data.
 
 
 
@@ -84,7 +84,7 @@ EMQX Neuron supports various kinds of industrial protocol, including Modbus, OPC
 | PeakHMI Slave Simulator | /       | Modbus simulator                            | Windows Server 2019 |
 | EMQX Neuron            | 1.4.6   | Industrial protocol gateway access software | Ubuntu 16.04        |
 | EMQX Broker            | 4.0.7   | MQTT Broker                                 | Ubuntu 16.04        |
-| MQTT X                  | 1.3.2   | MQTT client tool                            | macOS 10.13.4       |
+| MQTTX                  | 1.3.2   | MQTT client tool                            | macOS 10.13.4       |
 
 
 
@@ -188,9 +188,9 @@ Click the Data Monitoring in the EMQX Neuron interface, the reported value of At
 ![image20200807164756754.png](https://assets.emqx.com/images/af14d897b8f2d7d876e9611dc91ee1b7.png)
 
 
-### Use MQTT X subscribe to data for display
+### Use MQTTX subscribe to data for display
 
-Open the connected MQTT X, connect to the EMQX Broker, subscribe to the above topic pubulished by EMQX Neuron, and in MQTT X you will receive the value of 1 for 2D7WS in AlarmObj. After receiving these data, the client can display alarms on the application interface, and can also implement other business transformations through the business logic.
+Open the connected MQTTX, connect to the EMQX Broker, subscribe to the above topic pubulished by EMQX Neuron, and in MQTTX you will receive the value of 1 for 2D7WS in AlarmObj. After receiving these data, the client can display alarms on the application interface, and can also implement other business transformations through the business logic.
 
 ![image20200807165527066.png](https://assets.emqx.com/images/5ef32b447681d675cd1644e8a68315a1.png)
 
@@ -198,7 +198,7 @@ Open the connected MQTT X, connect to the EMQX Broker, subscribe to the above to
 
 ## Summary
 
-The above is a complete simulation test of industrial access using EMQX Neuron, EMQX Broker, MQTT X and other tools to form a clearer and more intuitive understanding of industrial equipment on the cloud. Of course, you can also use the powerful protocol support of EMQX Neuron and the powerful access/forward ability of EMQX Broker to develop your own application demonstration system and build a complete IIoT platform.
+The above is a complete simulation test of industrial access using EMQX Neuron, EMQX Broker, MQTTX and other tools to form a clearer and more intuitive understanding of industrial equipment on the cloud. Of course, you can also use the powerful protocol support of EMQX Neuron and the powerful access/forward ability of EMQX Broker to develop your own application demonstration system and build a complete IIoT platform.
 
 By the end of September 2020, we will implement a complete edge solution for industrial protocol parsing, data aggregation and streaming processing at the edge end through integrating [Neuron](https://www.emqx.com/en/products/neuron), [Edge](https://www.emqx.com/en/products/emqx), [Kuiper](https://github.com/lf-edge/ekuiper) and other software. This solution can implement a complete industrial solution from end to end, and edge to cloud though integrating the cloud series product EMQX Broker / Enterprise.
 

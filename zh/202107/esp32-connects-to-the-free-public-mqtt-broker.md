@@ -9,7 +9,7 @@
 
 * ESP32
 * Arduino IDE
-* [MQTT 5.0 客户端工具 - MQTT X](https://mqttx.app/zh)
+* [MQTT 5.0 客户端工具 - MQTTX](https://mqttx.app/zh)
 * 部署在 [EMQX Cloud](https://www.emqx.com/zh/cloud) 上的免费的公共 [MQTT 服务器](https://www.emqx.io/zh)
   - Broker: **broker-cn.emqx.io**
   - TCP Port: **1883**
@@ -192,9 +192,9 @@ void loop() {
 
 	![查看 ESP32 连接情况](https://assets.emqx.com/images/f8cb5792593d29b5b29b0feacd03a26c.png)
 
-3. 使用 MQTT X 客户端 连接到公共 MQTT 服务器, 并向 ESP32 发送消息
+3. 使用 MQTTX 客户端 连接到公共 MQTT 服务器, 并向 ESP32 发送消息
 
-	![使用 MQTT X 客户端向 ESP32 发送消息](https://assets.emqx.com/images/2dc50309dbba7bdc8a65ec9b4b082b8c.png)
+	![使用 MQTTX 客户端向 ESP32 发送消息](https://assets.emqx.com/images/2dc50309dbba7bdc8a65ec9b4b082b8c.png)
 
 
 ## 总结

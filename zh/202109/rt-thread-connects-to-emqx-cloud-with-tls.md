@@ -360,7 +360,7 @@
 
    
 
-## 使用 [MQTT X](https://mqttx.app/zh) 测试数据收发
+## 使用 [MQTTX](https://mqttx.app/zh) 测试数据收发
 
 客户端连接配置
 

@@ -124,7 +124,7 @@ client.on('message', (topic, payload, packet) => {
 
 ![MQTT 消息接收](https://assets.emqx.com/images/d4b8692b38ebe33f1ab126845461e667.png)
 
-对于其它客户端，我们将在[跨平台 MQTT 5.0 桌面客户端工具 - MQTT X](https://mqttx.app/zh) 的后续版本中支持用户属性的自定义配置，方便用户快速测试 MQTT 5.0 的一些新特性，敬请期待！
+对于其它客户端，我们将在[跨平台 MQTT 5.0 桌面客户端工具 - MQTTX](https://mqttx.app/zh) 的后续版本中支持用户属性的自定义配置，方便用户快速测试 MQTT 5.0 的一些新特性，敬请期待！
 
 
 <section class="promotion">

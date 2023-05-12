@@ -88,9 +88,9 @@ EMQX Cloud 提供 VPC 对等连接和 REST API 等功能，且具备强大灵活
 
 ## 集成测试
 
-在完成上述集成配置之后，我们使用 [MQTT 5.0 客户端工具 - MQTT X](https://mqttx.app/zh) 来模拟一个设备测试和验证该功能的有效性。
+在完成上述集成配置之后，我们使用 [MQTT 5.0 客户端工具 - MQTTX](https://mqttx.app/zh) 来模拟一个设备测试和验证该功能的有效性。
 
-1. 使用 MQTT X 作为一个设备连接到 EMQX Cloud 部署。
+1. 使用 MQTTX 作为一个设备连接到 EMQX Cloud 部署。
 
    ![MQTT 连接](https://assets.emqx.com/images/a68a6f4bf8c5a820ddeae0a8cc0561a1.png)
     
@@ -109,7 +109,7 @@ EMQX Cloud 提供 VPC 对等连接和 REST API 等功能，且具备强大灵活
 
    ![MQTT Dashboard](https://assets.emqx.com/images/20e58d1179dc986cb01f4cf4770e0eec.png)
     
-2. 打开 dashboard 点击右下角橙色的编辑图标，然后进行图中所示的操作新增一个 [别名](https://thingsboard.io/docs/pe/user-guide/ui/aliases/)（定义将使用实体的数据）。过滤类型选择单个实体，类型选择设备并选中上面 MQTT X 模拟的 Device Test 设备。添加完所有的配置信息之后，需要点击右下角的应用图标，否则将无法应用或保存之前已完成好的配置。
+2. 打开 dashboard 点击右下角橙色的编辑图标，然后进行图中所示的操作新增一个 [别名](https://thingsboard.io/docs/pe/user-guide/ui/aliases/)（定义将使用实体的数据）。过滤类型选择单个实体，类型选择设备并选中上面 MQTTX 模拟的 Device Test 设备。添加完所有的配置信息之后，需要点击右下角的应用图标，否则将无法应用或保存之前已完成好的配置。
 
    ![MQTT Device](https://assets.emqx.com/images/ed50f4d33df96e8234b2d56a63d176f1.png)
 
@@ -131,18 +131,18 @@ EMQX Cloud 提供 VPC 对等连接和 REST API 等功能，且具备强大灵活
 
       ![ThingsBoard Timeseries table](https://assets.emqx.com/images/c479513a6f18c02e969f7ae54be56d72.png)
        
-   5. 我们现在回到 MQTT X 改变温度值为 25，湿度为 80，再次发布一条消息，可以看到刚刚配置好的表格中便有了相应的数据。
+   5. 我们现在回到 MQTTX 改变温度值为 25，湿度为 80，再次发布一条消息，可以看到刚刚配置好的表格中便有了相应的数据。
 
       ![ThingsBoard Timeseries table](https://assets.emqx.com/images/0d3fa3f604ce7261774bc85e7c66f57a.png)
        
-4. 与上面第 3 步类似，我们点击添加小组件，搜索输入 charts ，然后选择 Timeseries Line Chart，进行配置且把实时时间范围改为最近 5 小时。使用 MQTT X 再次发送一条数据，可以看到两个组件中均展示了对应的数据。
+4. 与上面第 3 步类似，我们点击添加小组件，搜索输入 charts ，然后选择 Timeseries Line Chart，进行配置且把实时时间范围改为最近 5 小时。使用 MQTTX 再次发送一条数据，可以看到两个组件中均展示了对应的数据。
 
    ![ThingsBoard Timeseries Line Chart](https://assets.emqx.com/images/669296e788958c1375bcbc830ee5e2ab.png)
 
 
 ## 总结
 
-至此，我们完成了在 ThingsBoard Cloud 中集成 EMQX Cloud 部署，并且使用 MQTT X 测试验证了集成功能，最后自定义配置了一个简单的 Dashboard 接入展示 MQTT 数据。在实际项目中，我们可以在深入学习了解 ThingsBoard 后，进行更复杂的 Dashboard 配置，能够更加形象具体地实时监控设备的相关数据，并设置告警阀值，接收告警信息并及时作出相应处理。
+至此，我们完成了在 ThingsBoard Cloud 中集成 EMQX Cloud 部署，并且使用 MQTTX 测试验证了集成功能，最后自定义配置了一个简单的 Dashboard 接入展示 MQTT 数据。在实际项目中，我们可以在深入学习了解 ThingsBoard 后，进行更复杂的 Dashboard 配置，能够更加形象具体地实时监控设备的相关数据，并设置告警阀值，接收告警信息并及时作出相应处理。
 
 
 <section class="promotion">

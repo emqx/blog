@@ -70,15 +70,15 @@ docker run -it -p 1880:1880 --name mynodered nodered/node-red
 
 ### 功能测试
 
-在完成整个流数据处理的功能编排以后，我们使用 [MQTT 5.0 客户端工具 - MQTT X](https://mqttx.app/zh) 来测试和验证该功能的可用性。我们新建一个连接，连接到刚才在 Node-RED 中配置的 MQTT 云服务地址，然后输入 MQTT in 节点内的 Topic 来发送一条消息，使 Node-RED 能够接收到我们发送的 MQTT 数据。
+在完成整个流数据处理的功能编排以后，我们使用 [MQTT 5.0 客户端工具 - MQTTX](https://mqttx.app/zh) 来测试和验证该功能的可用性。我们新建一个连接，连接到刚才在 Node-RED 中配置的 MQTT 云服务地址，然后输入 MQTT in 节点内的 Topic 来发送一条消息，使 Node-RED 能够接收到我们发送的 MQTT 数据。
 
-然后我们再在 MQTT X 中订阅一个在 MQTT out 节点内配置的 Topic，用于接收处理过的消息数据。当发送一条包含了温湿度的消息数据后，我们可以接收到一条根据我们设定的消息模版发送过来的消息，再次发送就无法接收到。
+然后我们再在 MQTTX 中订阅一个在 MQTT out 节点内配置的 Topic，用于接收处理过的消息数据。当发送一条包含了温湿度的消息数据后，我们可以接收到一条根据我们设定的消息模版发送过来的消息，再次发送就无法接收到。
 
-![MQTT X 消息发送](https://assets.emqx.com/images/d7f584d50d337c45918af3f3187e522b.png)
+![MQTTX 消息发送](https://assets.emqx.com/images/d7f584d50d337c45918af3f3187e522b.png)
 
 因为此时温度值没有发生变化，当我们再次修改温度值后，就会发现我们又接收到了一条包含提醒温度值发生变化的消息。
 
-![MQTT X 消息接收](https://assets.emqx.com/images/04d009b040ca894f026a4beb34014f92.png)
+![MQTTX 消息接收](https://assets.emqx.com/images/04d009b040ca894f026a4beb34014f92.png)
 
 ## 总结
 

@@ -128,7 +128,7 @@ After you have installed the service or application on GCP, you need to manually
 
    ![Firewall rule](https://assets.emqx.com/images/5cdc08a7abb3da60d6ebf90ca4265a8e.png)
 
-## Quick Test with MQTT X Client
+## Quick Test with MQTTX Client
 
 Now you have completed the installation of EMQX Enterprise on GCP and opened all the required ports. Here are the connection details:
 
@@ -141,13 +141,13 @@ Now you have completed the installation of EMQX Enterprise on GCP and opened all
 | Dashboard Port         | 18083                                                        |
 | REST API Port          | 8081                                                         |
 
-We will use [MQTT X](https://mqttx.app/) to simulate the access of IoT MQTT devices and quickly test whether the server is available.
+We will use [MQTTX](https://mqttx.app/) to simulate the access of IoT MQTT devices and quickly test whether the server is available.
 
-> [MQTT X](https://mqttx.app/) is a cross-platform MQTT 5.0 client tool open-sourced by EMQ. It supports macOS, Linux, and Windows, has rich features, and allows you to easily test MQTT/TCP, MQTT/TLS, and MQTT/WebSocket connections through MQTT X's one-click connection method and graphical interface.
+> [MQTTX](https://mqttx.app/) is a cross-platform MQTT 5.0 client tool open-sourced by EMQ. It supports macOS, Linux, and Windows, has rich features, and allows you to easily test MQTT/TCP, MQTT/TLS, and MQTT/WebSocket connections through MQTTX's one-click connection method and graphical interface.
 >
-> [MQTT X Web](https://mqttx.app/web) is the browser version of MQTT X, which eliminates the need for downloading and installation. You can quickly connect to the MQTT server via WebSocket by simply opening the browser.
+> [MQTTX Web](https://mqttx.app/web) is the browser version of MQTTX, which eliminates the need for downloading and installation. You can quickly connect to the MQTT server via WebSocket by simply opening the browser.
 
-1. Access the [MQTT X Web](http://www.emqx.io/online-mqtt-client#/recent_connections) page and click **New Connection** or the **+** icon on the menu bar to create a connection.
+1. Access the [MQTTX Web](http://www.emqx.io/online-mqtt-client#/recent_connections) page and click **New Connection** or the **+** icon on the menu bar to create a connection.
 
    ![New Connection](https://assets.emqx.com/images/99bdfb1838f377b7f080472bbc6f8287.png)
 
@@ -155,11 +155,11 @@ We will use [MQTT X](https://mqttx.app/) to simulate the access of IoT MQTT devi
 
    - **Name**: Connection name, such as **GCP EMQX Enterprise**.
    - **Host:**
-     - Select the connection type as **ws://**, as MQTT X Web only supports WebSocket protocol. If you want to test SSL/TLS authentication connections, please download the [MQTT X client](https://mqttx.app/)
+     - Select the connection type as **ws://**, as MQTTX Web only supports WebSocket protocol. If you want to test SSL/TLS authentication connections, please download the [MQTTX client](https://mqttx.app/)
      - Enter the VM instance public IP address.
    - **Port**: **8083**, which is the port corresponding to the WebSockets protocol.
 
-   Leave other options at their default settings. You can keep the default settings for the rest fields or set as per your business needs. The corresponding configuration instructions can be found in the [MQTT X Manual - Quick Connect](https://mqttx.app/docs/get-started).
+   Leave other options at their default settings. You can keep the default settings for the rest fields or set as per your business needs. The corresponding configuration instructions can be found in the [MQTTX Manual - Quick Connect](https://mqttx.app/docs/get-started).
 
    After configuration, click **Connect** in the upper right corner of the page to establish the connection.
 

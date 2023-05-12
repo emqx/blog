@@ -110,7 +110,7 @@ EMQX Dashboard 的访问也非常简单方便，支持在浏览器内访问，�
 
 > 首次登录后，系统会自动检测到您正在使用默认用户名和密码登录，并会强制要求修改默认密码，这有利于访问 Dashboard 的安全性提升，注意修改的密码不能与原密码相同，且不建议再次使用 public 做为登录密码。
 
-进入 EMQX Dashboard 页面后，我们使用 [MQTT X 客户端](https://mqttx.app/zh)工具来模拟和演示设备连接到 EMQX。订阅一个 `t/#` 的主题，发送几条消息。
+进入 EMQX Dashboard 页面后，我们使用 [MQTTX 客户端](https://mqttx.app/zh)工具来模拟和演示设备连接到 EMQX。订阅一个 `t/#` 的主题，发送几条消息。
 
 ![MQTT 客户端](https://assets.emqx.com/images/57588774d84967c2109b7041ee8a8d6c.png)
 

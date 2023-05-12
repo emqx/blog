@@ -170,7 +170,7 @@ Calling function `publish()` can send messages to a topic. In the above code, we
 
 ## Test 
 
-We use [MQTT 5.0 client tool - MQTT X](https://mqttx.app) to do the following tests.
+We use [MQTT 5.0 client tool - MQTTX](https://mqttx.app) to do the following tests.
 
 ### Test topic subscription 
 
@@ -182,11 +182,11 @@ Run the Python code and actively send messages.
    python3 subscriber.py
    ```
 
-2. Use MQTT X client to connect to the MQTT broker and send messages to the topic `raspberry/topic`.
+2. Use MQTTX client to connect to the MQTT broker and send messages to the topic `raspberry/topic`.
 
-   ![MQTT X](https://assets.emqx.com/images/cc93d1c6d99f3bfa3a78d8472a6209af.jpg)
+   ![MQTTX](https://assets.emqx.com/images/cc93d1c6d99f3bfa3a78d8472a6209af.jpg)
 
-3. View the terminal information of Raspberry Pi, and you will see the messages published by MQTT X.
+3. View the terminal information of Raspberry Pi, and you will see the messages published by MQTTX.
 
 
      ![mqtt subscriber](https://assets.emqx.com/images/9c4e5b191e9bd00317fed06f94b13850.png)
@@ -194,28 +194,28 @@ Run the Python code and actively send messages.
 ### Test publish message
 
 
-1. Subscribe to the topic `raspberry/topic` in the MQTT X client.
+1. Subscribe to the topic `raspberry/topic` in the MQTTX client.
 
 2. Run Python code in the terminal.
 
    ![mqtt publisher](https://assets.emqx.com/images/9ea832adda032c9297c84fbf585fb294.png)
 
-3. View the messages published by the Raspberry Pi in the MQTT X client.
+3. View the messages published by the Raspberry Pi in the MQTTX client.
 
-    ![MQTT X publish message](https://assets.emqx.com/images/07ffb81c764145100b1e21572357c675.jpg)
+    ![MQTTX publish message](https://assets.emqx.com/images/07ffb81c764145100b1e21572357c675.jpg)
 
 ### Test the will message 
 
 Next, testing whether the will message, is set successfully.
 
 
-1. Subscribe to `raspberry/status` in the MQTT X client.
+1. Subscribe to `raspberry/status` in the MQTTX client.
 
-   ![subscribe to mqtt topic in the MQTT X](https://assets.emqx.com/images/c704c8b0f7117079306d16b5af8c2557.jpg)
+   ![subscribe to mqtt topic in the MQTTX](https://assets.emqx.com/images/c704c8b0f7117079306d16b5af8c2557.jpg)
 
 2. Interrupt the program or disconnect the network of the Raspberry Pi.
 
-3. View the messages that `raspberry/status` received, in the MQTT X client.  ![receive mqtt message](https://assets.emqx.com/images/048da27682c9a86c536f85ffd6417bf2.jpg)
+3. View the messages that `raspberry/status` received, in the MQTTX client.  ![receive mqtt message](https://assets.emqx.com/images/048da27682c9a86c536f85ffd6417bf2.jpg)
 
 
 

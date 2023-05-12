@@ -175,11 +175,11 @@ The complete project example code: [https://github.com/emqx/MQTT-Client-Examples
 
 ![reactmqttpage.png](https://assets.emqx.com/images/d1c51195c056f3b4afb267edaeb217f0.png)
 
-Use [MQTT 5.0 client tool - MQTT X](https://mqttx.app/) as another client to test sending and receiving messages.
+Use [MQTT 5.0 client tool - MQTTX](https://mqttx.app/) as another client to test sending and receiving messages.
 
 ![reactmqttx.png](https://assets.emqx.com/images/621ba9544ea69f9ee7b24203846d0409.png)
 
-You can see that MQTT X can receive messages from the browser side normally, as can be seen when sending a message to the topic using MQTT X.
+You can see that MQTTX can receive messages from the browser side normally, as can be seen when sending a message to the topic using MQTTX.
 
 ![reactmqtttest.png](https://assets.emqx.com/images/da008ae3544a83a3efa78266190ea364.png)
 

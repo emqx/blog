@@ -42,7 +42,7 @@ MQTTX is dedicated to building an elegant, easy-to-use, full-platform MQTT clien
 - Customizable script to simulate data testing
 - Full logging capabilities
 
-![MQTT X](https://assets.emqx.com/images/ada10fb84b685af3cadcae6c95197c4f.gif)
+![MQTTX](https://assets.emqx.com/images/ada10fb84b685af3cadcae6c95197c4f.gif)
 
 #### Download
 

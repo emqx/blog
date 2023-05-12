@@ -134,9 +134,9 @@ To see the created rules, go to Data Integrations/View Created Rules. Click the 
 
 ## Verification
 
-### 1. Use MQTT X to simulate data reporting
+### 1. Use MQTTX to simulate data reporting
 
-We recommend you use [MQTT X](https://mqttx.app/), an elegant cross-platform MQTT 5.0 desktop client to subscribe/publish messages.
+We recommend you use [MQTTX](https://mqttx.app/), an elegant cross-platform MQTT 5.0 desktop client to subscribe/publish messages.
 
 Click on the add button and fill in the deployment information to connect to the deployment. You need to replace `broker.emqx.io` with the created deployment [connection address](https://docs.emqx.com/en/cloud/latest/create/overview.html#view-deployment-information), and add [client authentication information](https://docs.emqx.com/en/cloud/latest/deployments/auth_overview.html#authentication) to the EMQX Cloud console. Enter the topic name and payload message to publish the message.
 

@@ -60,7 +60,7 @@ Related introduction: [mqtt-dashboard.com](http://www.mqtt-dashboard.com/)
 
 ## Accessibility test
 
-In this part, We used the [MQTT client tool - MQTT X](https://mqttx.app/) for this test. We try to establish a connection through TCP 1883. After repeated testing, all servers can be accessed. The overall results are as follows:
+In this part, We used the [MQTT client tool - MQTTX](https://mqttx.app/) for this test. We try to establish a connection through TCP 1883. After repeated testing, all servers can be accessed. The overall results are as follows:
 
 | Name      | Broker Address            | TCP  | Available |
 | :-------- | :------------------------ | :--- | :-------- |
@@ -70,15 +70,15 @@ In this part, We used the [MQTT client tool - MQTT X](https://mqttx.app/) for th
 | Mosquitto | `test.mosquitto.org`      | 1883 | YES       |
 | HiveMQ    | `broker.hivemq.com`       | 1883 | YES       |
 
-![MQTT X](https://assets.emqx.com/images/85637f1261315f2f218aadd671c8666e.png)
+![MQTTX](https://assets.emqx.com/images/85637f1261315f2f218aadd671c8666e.png)
 
 ### Test Data
 
-MQTT X has the function of connection, import and export. The following is the connection data used in the test of this article, which can be imported into MQTT X through data recovery.
+MQTTX has the function of connection, import and export. The following is the connection data used in the test of this article, which can be imported into MQTTX through data recovery.
 
 - [MQTTX-backup-free-public-mqtt-broker.json](https://github.com/wivwiv/mqtt-explore/blob/master/MQTTX-backup-free-public-mqtt-broker.json)
 
-![MQTT X Data recovery](https://assets.emqx.com/images/9c4fdada948c4cd3cab3dd1335bc217d.png)
+![MQTTX Data recovery](https://assets.emqx.com/images/9c4fdada948c4cd3cab3dd1335bc217d.png)
 
 ## International network delay test
 

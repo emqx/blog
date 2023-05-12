@@ -182,11 +182,11 @@ destroyConnection() {
 
 ![Angular MQTT Demo](https://assets.emqx.com/images/60a0b5943d2c96c1d66a96a68e671d22.png)
 
-使用 [MQTT 5.0 客户端工具 - MQTT X](https://mqttx.app/zh) 作为另一个客户端进行消息收发测试。
+使用 [MQTT 5.0 客户端工具 - MQTTX](https://mqttx.app/zh) 作为另一个客户端进行消息收发测试。
 
 ![MQTT 5.0 客户端工具](https://assets.emqx.com/images/409493dd7b27f7744a805e286a337329.png)
 
-在 MQTT X 发送第二条消息之前，在浏览器端进行取消订阅操作，浏览器端将不会收到 MQTT X 发送的后续消息。
+在 MQTTX 发送第二条消息之前，在浏览器端进行取消订阅操作，浏览器端将不会收到 MQTTX 发送的后续消息。
 
 ## 总结
 

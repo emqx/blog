@@ -116,7 +116,7 @@ MQTT 应用通常需要基于 MQTT 客户端库来实现 MQTT 通信。目前，
 
 MQTT 应用开发还离不开 MQTT 测试工具的支持，一款易用且功能强大的 MQTT 测试工具可帮助开发者缩短开发周期，创建一个稳定的物联网应用。
 
-[MQTT X](https://mqttx.app/zh) 是一款开源的跨平台桌面客户端，它简单易用且提供全面的 MQTT 5.0 功能、特性测试，可运行在macOS, Linux 和 Windows 上。同时，它还提供了命令行及浏览器版本，满足不同场景下的 MQTT 测试需求。感兴趣的读者可访问 MQTT X 官网进行下载试用：[https://mqttx.app/zh](https://mqttx.app/zh)。
+[MQTTX](https://mqttx.app/zh) 是一款开源的跨平台桌面客户端，它简单易用且提供全面的 MQTT 5.0 功能、特性测试，可运行在macOS, Linux 和 Windows 上。同时，它还提供了命令行及浏览器版本，满足不同场景下的 MQTT 测试需求。感兴趣的读者可访问 MQTTX 官网进行下载试用：[https://mqttx.app/zh](https://mqttx.app/zh)。
 
 ![MQTT 客户端](https://assets.emqx.com/images/ada10fb84b685af3cadcae6c95197c4f.gif?imageMogr2/thumbnail/1520x) 
 

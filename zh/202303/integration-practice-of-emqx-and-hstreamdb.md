@@ -129,7 +129,7 @@ SQL STATEMENTS:
 
 ## 向 EMQX 写入消息测试规则引擎
 
-可以使用跨平台的桌面客户端 [MQTT X](https://mqttx.app/zh) 来连接到 EMQX 并发送消息：
+可以使用跨平台的桌面客户端 [MQTTX](https://mqttx.app/zh) 来连接到 EMQX 并发送消息：
 
 ![MQTT 桌面客户端](https://assets.emqx.com/images/dfd41450b0fbf97e1c78ddfc4f920231.png)
 

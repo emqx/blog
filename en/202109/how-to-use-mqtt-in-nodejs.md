@@ -183,11 +183,11 @@ After running, we can see the output information of the console as follows:
 
 ![NodeJS MQTT Start](https://assets.emqx.com/images/9897e6cd56163dfe7139cf6d84361e63.png)
 
-We see that the client has successfully connected to the [MQTT broker](https://www.emqx.io) and subscribed to the topic, received and published messages successfully. At this point, we will use [MQTT 5.0 Client Tool - MQTT X](https://mqttx.app) as another client for the message publishing and receiving test.
+We see that the client has successfully connected to the [MQTT broker](https://www.emqx.io) and subscribed to the topic, received and published messages successfully. At this point, we will use [MQTT 5.0 Client Tool - MQTTX](https://mqttx.app) as another client for the message publishing and receiving test.
 
-![MQTT 5.0 Client Tool - MQTT X](https://assets.emqx.com/images/5c841598f78eed0b186572165832f861.png)
+![MQTT 5.0 Client Tool - MQTTX](https://assets.emqx.com/images/5c841598f78eed0b186572165832f861.png)
 
-We can see that the message sent by MQTT X is printed in the console.
+We can see that the message sent by MQTTX is printed in the console.
 
 ![MQTT messages](https://assets.emqx.com/images/02d8a35312ca1309f18a628dacca8910.png)
 

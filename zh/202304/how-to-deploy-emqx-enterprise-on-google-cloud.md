@@ -115,7 +115,7 @@ GCP 的 Virtual Machine Instances 允许用户轻松部署和管理应用程序�
 
    ![完成防火墙规则创建](https://assets.emqx.com/images/231d4e10a6b78048e519f84a20344717.png)
 
-## 通过 MQTT X 快速测试
+## 通过 MQTTX 快速测试
 
 至此，您已经在 GCP 上完成 EMQX 企业版的安装并开通了所有需要的端口，对应的连接信息如下：
 
@@ -128,13 +128,13 @@ GCP 的 Virtual Machine Instances 允许用户轻松部署和管理应用程序�
 | Dashboard 访问端口     | 18083                                                        |
 | REST API 端口          | 8081                                                         |
 
-下面我们使用 MQTT X 模拟物联网 MQTT 设备的接入，快速测试服务器是否可用。
+下面我们使用 MQTTX 模拟物联网 MQTT 设备的接入，快速测试服务器是否可用。
 
-> [MQTT X ](https://mqttx.app/zh)是 EMQ 开源的一款跨平台 MQTT 5.0 客户端工具，它支持 macOS、Linux、Windows，具有丰富的功能，您可通过 MQTT X 一键式的连接方式和图形界面，轻松测试 MQTT/TCP、MQTT/TLS、MQTT/WebSocket 连接。
+> [MQTTX ](https://mqttx.app/zh)是 EMQ 开源的一款跨平台 MQTT 5.0 客户端工具，它支持 macOS、Linux、Windows，具有丰富的功能，您可通过 MQTTX 一键式的连接方式和图形界面，轻松测试 MQTT/TCP、MQTT/TLS、MQTT/WebSocket 连接。
 >
-> [MQTT X Web](https://mqttx.app/zh/web) 是 MQTT X 的浏览器版本，可以免除下载与安装，打开浏览器即可通过 WebSocket 快速连接至 MQTT 服务器。
+> [MQTTX Web](https://mqttx.app/zh/web) 是 MQTTX 的浏览器版本，可以免除下载与安装，打开浏览器即可通过 WebSocket 快速连接至 MQTT 服务器。
 
-1. 访问 [MQTT X Web](http://www.emqx.io/online-mqtt-client#/recent_connections) 页面，点击 **New Connection** 或菜单栏 **+** 图标创建连接。
+1. 访问 [MQTTX Web](http://www.emqx.io/online-mqtt-client#/recent_connections) 页面，点击 **New Connection** 或菜单栏 **+** 图标创建连接。
 
    ![New Connection](https://assets.emqx.com/images/f761642f67fe59fb0b36cd7196635b1a.png)
 
@@ -144,12 +144,12 @@ GCP 的 Virtual Machine Instances 允许用户轻松部署和管理应用程序�
 
    - **Host**
 
-     - 选择连接类型为 **ws://**，MQTT X Web 仅支持 WebSocket 协议，如希望测试 SSL/TLS 认证连接，请下载 [MQTT X 客户端](https://mqttx.app/zh)
+     - 选择连接类型为 **ws://**，MQTTX Web 仅支持 WebSocket 协议，如希望测试 SSL/TLS 认证连接，请下载 [MQTTX 客户端](https://mqttx.app/zh)
      - 填入 VM instance 公共 IP 地址
 
    - **Port**: 填入 **8083**, 即 WebSockets 协议对应的端口
 
-     其他选项保持默认配置，你也可以根据具体业务场景修改，对应的配置说明可参考 [MQTT X 手册 - 快速建立连接](https://mqttx.app/zh/docs/get-started)
+     其他选项保持默认配置，你也可以根据具体业务场景修改，对应的配置说明可参考 [MQTTX 手册 - 快速建立连接](https://mqttx.app/zh/docs/get-started)
 
    配置完成后，点击页面右上角的 **Connect** 建立连接。
 

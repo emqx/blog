@@ -112,7 +112,7 @@ This page provides you with a variety of ways to establish MQTT client connectio
 
 ## Using MQTTX to Test Connections to Serverless Deployment
 
-In this tutorial, we choose [MQTTX](https://mqttx.app/) to test the connection. MQTT X is an elegant cross-platform MQTT 5.0 desktop client provided by EMQ. 
+In this tutorial, we choose [MQTTX](https://mqttx.app/) to test the connection. MQTTX is an elegant cross-platform MQTT 5.0 desktop client provided by EMQ. 
 
 Download and Install: [https://www.emqx.com/en/try?product=MQTTX](https://www.emqx.com/en/try?product=MQTTX) 
 

@@ -171,7 +171,7 @@ client.loop_forever()
 
 ## 测试 
 
-我们使用 [MQTT 5.0 客户端工具 - MQTT X](https://mqttx.app/zh) 进行以下测试。 
+我们使用 [MQTT 5.0 客户端工具 - MQTTX](https://mqttx.app/zh) 进行以下测试。 
 
 ### 测试订阅消息 
 
@@ -183,23 +183,23 @@ client.loop_forever()
    python3 subscriber.py
    ```
 
-2. 使用 MQTT X 客户端与 MQTT 服务器建立连接，并向主题 `raspberry/topic` 发送消息 。
+2. 使用 MQTTX 客户端与 MQTT 服务器建立连接，并向主题 `raspberry/topic` 发送消息 。
 
    ![7B5ORTmqFbJJj6mM__thumbnail.png](https://assets.emqx.com/images/e3ae859641f45129c13bfe3ecc6d83d8.png)
 
-3. 查看树莓派终端信息，将会看到已成功接收到 MQTT X 发布的消息。
+3. 查看树莓派终端信息，将会看到已成功接收到 MQTTX 发布的消息。
 
    ![ZKNT7l232qHsjQYC__thumbnail.png](https://assets.emqx.com/images/287177254b6de742ebd97e30f55206ab.png)
 
 ### 测试发布消息 
 
-1. 在 MQTT X 客户端中订阅 `raspberry/topic` 主题 。
+1. 在 MQTTX 客户端中订阅 `raspberry/topic` 主题 。
 
 2. 在终端运行 Python 代码。
 
    ![k19xv59gQdqnpPog__thumbnail.png](https://assets.emqx.com/images/713e54f2afa1bbafafc8237fea0ccb90.png)
 
-3. 在 MQTT X 客户端中，查看树莓派发送的消息。
+3. 在 MQTTX 客户端中，查看树莓派发送的消息。
    
    ![mp39coxpnEprWOE6__thumbnail.png](https://assets.emqx.com/images/a1205fe2264876782a9818f17203f671.png)
 
@@ -208,13 +208,13 @@ client.loop_forever()
 接下来测试一下遗嘱消息是否设置成功。
 
 
-1. 在 MQTT X 客户端中，订阅 `raspberry/status`。
+1. 在 MQTTX 客户端中，订阅 `raspberry/status`。
 
    ![XKo2GYFsqSLc7nVH__thumbnail.png](https://assets.emqx.com/images/5979c93e7967c7350846b56521b8a27e.png)
 
 2. 中断程序，或者断开树莓派的网络。 
 
-3. 在 MQTT X 客户端中，查看 `raspberry/status` 主题接收到的消息。
+3. 在 MQTTX 客户端中，查看 `raspberry/status` 主题接收到的消息。
 
    ![RXNIVuQ7HK0z05RV__thumbnail.png](https://assets.emqx.com/images/5d6e7497c02b48f1b1e2923725e015fc.png)
 

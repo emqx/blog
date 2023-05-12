@@ -135,7 +135,7 @@
 
 ## 测试验证
 
-我们使用 [MQTT X](https://mqttx.app/zh) 模拟客户端携带以下信息连接到 EMQX Cloud。
+我们使用 [MQTTX](https://mqttx.app/zh) 模拟客户端携带以下信息连接到 EMQX Cloud。
 
 ① 服务端 CA
 
@@ -143,11 +143,11 @@
 
 ③ password：public
 
-![MQTT X](https://assets.emqx.com/images/09a7d8bca9dbaeb64f180bc4b52e04a8.png)
+![MQTTX](https://assets.emqx.com/images/09a7d8bca9dbaeb64f180bc4b52e04a8.png)
 
 点击 右上角 connect，出现 connected 表示已连接成功。至此，带有指定 common name 的设备已成功连接至 EMQX Cloud，即一机一密设备通过验证并连接至 EMQX Cloud 已成功。 
 
-![MQTT X](https://assets.emqx.com/images/d22cded4367df74623594a26cf44a51b.png) 
+![MQTTX](https://assets.emqx.com/images/d22cded4367df74623594a26cf44a51b.png) 
  
 
 ## **结语**

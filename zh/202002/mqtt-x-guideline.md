@@ -1,4 +1,4 @@
-在介绍和使用前，读者可以访问我们 [项目地址](https://github.com/emqx/MQTTX) 或 [官方网站](https://mqttx.app)，了解并获取到最新的版本信息，MQTT X 正在快速开发迭代阶段，使用最新版本有助于提高使用体验。
+在介绍和使用前，读者可以访问我们 [项目地址](https://github.com/emqx/MQTTX) 或 [官方网站](https://mqttx.app)，了解并获取到最新的版本信息，MQTTX 正在快速开发迭代阶段，使用最新版本有助于提高使用体验。
 
 
 
@@ -118,11 +118,11 @@ docker run -d --name emqx -p 1883:1883 -p 8083:8083 -p 8883:8883 -p 8084:8084 -p
 
 3. 检查更新
 
-   点击左侧底部的 `i` 按钮，可进入到 `About` 页面，了解 **MQTT X** 的版本信息和 [EMQX](https://www.emqx.com/en) 的相关信息。点击 `Check for Updates` 可以检查是否有更新版本。
+   点击左侧底部的 `i` 按钮，可进入到 `About` 页面，了解 **MQTTX** 的版本信息和 [EMQX](https://www.emqx.com/en) 的相关信息。点击 `Check for Updates` 可以检查是否有更新版本。
 
 ![mqttxupdate.png](https://assets.emqx.com/images/de17680e289b43e3c555a1a40315ec1c.png)
 
 
-以上为 MQTT X 使用方法的简单概述。读者可以通过在 GitHub 上的 [使用手册](https://github.com/emqx/MQTTX/blob/main/docs/manual.md) 来完整的使用 MQTT X。
+以上为 MQTTX 使用方法的简单概述。读者可以通过在 GitHub 上的 [使用手册](https://github.com/emqx/MQTTX/blob/main/docs/manual.md) 来完整的使用 MQTTX。
 
 本项目基于 Apache 2.0 开源协议，使用过程中，有任何问题都可以到 [GitHub issues](https://github.com/emqx/MQTTX/issues) 来发表问题，讨论观点或是向我们提交 PR，我们会认真查阅并回复所有问题。

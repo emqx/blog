@@ -1,14 +1,14 @@
-近日，由 EMQ 开源的跨平台 MQTT 5.0 桌面测试客户端[ MQTT X 发布了最新版本 v1.7.0](https://www.emqx.com/zh/blog/mqttx-v-1-7-0-release-notes)。MQTT X 支持快速创建多个同时在线的 MQTT 客户端，方便测试 MQTT/TCP、MQTT/TLS、MQTT/WebSocket 的连接、发布、订阅功能及其他 [MQTT 协议](https://www.emqx.com/zh/mqtt)特性。
+近日，由 EMQ 开源的跨平台 MQTT 5.0 桌面测试客户端[ MQTTX 发布了最新版本 v1.7.0](https://www.emqx.com/zh/blog/mqttx-v-1-7-0-release-notes)。MQTTX 支持快速创建多个同时在线的 MQTT 客户端，方便测试 MQTT/TCP、MQTT/TLS、MQTT/WebSocket 的连接、发布、订阅功能及其他 [MQTT 协议](https://www.emqx.com/zh/mqtt)特性。
 
 新发布的 1.7.0 版本对 [MQTT 5.0](https://www.emqx.com/zh/mqtt/mqtt5) 实现了更为全面的支持，是全球目前为止对 MQTT 5.0 支持最为完整的桌面测试客户端工具。同时新增了很多优化用户体验的功能。
 
-在本文中，我们将详细介绍 MQTT X v1.7.0 新增功能的具体使用操作，特别是如何使用 MQTT X 来测试 MQTT 5.0 的诸多特性，以便读者可以在实际项目中更好地应用 MQTT 5.0。
+在本文中，我们将详细介绍 MQTTX v1.7.0 新增功能的具体使用操作，特别是如何使用 MQTTX 来测试 MQTT 5.0 的诸多特性，以便读者可以在实际项目中更好地应用 MQTT 5.0。
 
 ## 准备 MQTT 消息服务器
 
-在使用 MQTT X v1.7.0 对 MQTT 5.0 的特性进行测试之前，我们首先需要准备支持 MQTT 5.0 的 [MQTT Broker](https://www.emqx.io/zh)。
+在使用 MQTTX v1.7.0 对 MQTT 5.0 的特性进行测试之前，我们首先需要准备支持 MQTT 5.0 的 [MQTT Broker](https://www.emqx.io/zh)。
 
-本文将使用由 [EMQX Cloud](https://www.emqx.com/zh/cloud) 提供的免费在线 MQTT 5.0 服务器配合 MQTT X 客户端进行测试。作为一款全托管的云原生 MQTT 5.0 消息服务，EMQX Cloud 可以在数分钟内快速创建一个 MQTT 服务，并且完整支持 MQTT 5.0 协议，也是全球首个全托管的 MQTT 5.0 公有云服务。
+本文将使用由 [EMQX Cloud](https://www.emqx.com/zh/cloud) 提供的免费在线 MQTT 5.0 服务器配合 MQTTX 客户端进行测试。作为一款全托管的云原生 MQTT 5.0 消息服务，EMQX Cloud 可以在数分钟内快速创建一个 MQTT 服务，并且完整支持 MQTT 5.0 协议，也是全球首个全托管的 MQTT 5.0 公有云服务。
 
 开始 30 天免费试用：[https://www.emqx.com/zh/cloud](https://www.emqx.com/zh/cloud) 
 
@@ -41,7 +41,7 @@
 
 ![消息框内的用户属性](https://assets.emqx.com/images/93f27cdf5831517109a58ed3de9c56f5.png) 
 
-MQTT X 对于用户属性的支持，可以帮助开发者在测试和验证具有 MQTT 5.0 用户属性功能的应用场景时，对该功能进行快速验证和测试，从而提升开发和使用效率。
+MQTTX 对于用户属性的支持，可以帮助开发者在测试和验证具有 MQTT 5.0 用户属性功能的应用场景时，对该功能进行快速验证和测试，从而提升开发和使用效率。
 
 ### 请求响应
 
@@ -74,7 +74,7 @@ client.on('message', (topic, payload, packet) => {
 ![MQTT 发布消息](https://assets.emqx.com/images/1e34a978935a109429f75ca7814494b6.png)
  
 
-不过目前 MQTT X 对于请求响应特性仅支持在发送时配置响应主题和对比数据。后续将继续优化响应部分的配置，为用户带来更完整的测试请求响应的能力。
+不过目前 MQTTX 对于请求响应特性仅支持在发送时配置响应主题和对比数据。后续将继续优化响应部分的配置，为用户带来更完整的测试请求响应的能力。
 
 ### 内容类型和载荷格式
 
@@ -120,13 +120,13 @@ Retain Handling 这一选项用来指定订阅建立时服务端是否向客户�
 
 > 注意：当关闭自动滚动功能后，可以提升部分发送和接收消息时的性能。
 
-![MQTT X 禁止消息自动滚动](https://assets.emqx.com/images/ad7e215dde3b8f4410c39748023dd16d.png)
+![MQTTX 禁止消息自动滚动](https://assets.emqx.com/images/ad7e215dde3b8f4410c39748023dd16d.png)
 
 ## 结语
 
-通过本文，相信大家对 MQTT X v1.7.0 的功能使用有了更多了解。MQTT X 与 EMQX 配合使用，可以帮助您充分掌握 MQTT 5.0 协议，并在实际项目中将其特性更好地加以应用。
+通过本文，相信大家对 MQTTX v1.7.0 的功能使用有了更多了解。MQTTX 与 EMQX 配合使用，可以帮助您充分掌握 MQTT 5.0 协议，并在实际项目中将其特性更好地加以应用。
 
-后续我们还会完善 MQTT X 对类似主题别名、请求响应和订阅标识符等配置的支持能力，敬请期待。
+后续我们还会完善 MQTTX 对类似主题别名、请求响应和订阅标识符等配置的支持能力，敬请期待。
 
 
 <section class="promotion">

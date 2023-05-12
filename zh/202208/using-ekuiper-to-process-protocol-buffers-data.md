@@ -14,7 +14,7 @@ LF Edge [eKuiper](https://ekuiper.org/zh) 是适合部署于资源受限的边�
 
 - [MQTT 服务器](https://www.emqx.com/zh/mqtt/public-mqtt5-broker)用于数据传输。
    本教程使用位于 `tcp://broker.emqx.io:1883` 的 MQTT 服务器， `broker.emqx.io` 是一个由 [EMQX Cloud](https://www.emqx.com/zh/cloud) 提供的公共 MQTT 服务器。若本地运行 eKuiper，需要更改 `etc/mqtt_source.yaml`，配置项 server 改为"tcp://broker.emqx.io:1883"；若使用 docker 启动，应设置环境变量 MQTT_SOURCE__DEFAULT__SERVER="tcp://broker.emqx.io:1883"。
-- 为了方便观察运行结果，我们需要安装一个 [MQTT 客户端](https://www.emqx.io/zh/mqtt-client)，例如 [MQTT X](https://mqttx.app/zh) 。
+- 为了方便观察运行结果，我们需要安装一个 [MQTT 客户端](https://www.emqx.io/zh/mqtt-client)，例如 [MQTTX](https://mqttx.app/zh) 。
 
 ## 模式注册（Schema Registry）
 
@@ -73,7 +73,7 @@ message Book {
 
 4. 发送数据并查看结果：我们将使用 MQTTX 发送 Protobuf 编码后的二进制数据到 `protoDemo` 主题中，观察收到的结果是否是解码后的正确数据。
 
-   1. 打开 MQTT X，连接到云端 `tcp://broker.emqx.io:1883`。
+   1. 打开 MQTTX，连接到云端 `tcp://broker.emqx.io:1883`。
 
    2. 订阅主题上文规则发送结果的主题 `result/protobuf`，便于观察结果。
 

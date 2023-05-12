@@ -1,4 +1,4 @@
-Before introduction and use, readers can visit our [GitHub](https://github.com/emqx/MQTTX) or [website](https://mqttx.app) to understand and get the information of latest version.  MQTT X is undergoing rapid development and iterations, and the latest version will help improve the using experience.
+Before introduction and use, readers can visit our [GitHub](https://github.com/emqx/MQTTX) or [website](https://mqttx.app) to understand and get the information of latest version.  MQTTX is undergoing rapid development and iterations, and the latest version will help improve the using experience.
 
 ## Download
 
@@ -113,12 +113,12 @@ If the sending client also subscribes to the same `topic`, the client will immed
 
 3. Check for updates
 
-   Click the `i` button on the left bottom to display the ` About` page to learn about the version of **MQTT X**  and related information of [EMQX](https://www.emqx.com/en) . Click `Check for Updates` to check if there are newer versions.
+   Click the `i` button on the left bottom to display the ` About` page to learn about the version of **MQTTX**  and related information of [EMQX](https://www.emqx.com/en) . Click `Check for Updates` to check if there are newer versions.
 
 ![mqttxupdate.png](https://assets.emqx.com/images/889ae0041b88ba2ac8f6fefc44a92fde.png)
 
 
 
-The above is a brief overview of how to use MQTT X. Readers can use MQTT X entirety through the  [manual](https://github.com/emqx/MQTTX/blob/main/docs/manual.md) on GitHub.
+The above is a brief overview of how to use MQTTX. Readers can use MQTTX entirety through the  [manual](https://github.com/emqx/MQTTX/blob/main/docs/manual.md) on GitHub.
 
 This project is based on the Apache 2.0 open source protocol. In the process of using, you can go to [GitHub issues](https://github.com/emqx/MQTTX/issues) to submit issues, discuss opinions or submit PR to us. We will carefully review and respond to all questions.

@@ -73,9 +73,9 @@ make
 
 ![CoAP 消息发送](https://assets.emqx.com/images/d7b4f28d0d0d9223eaf59b9a8ccb6194.png)
 
-接下来，我们使用 [MQTT X](https://mqttx.app/zh) 订阅对应主题 topic1，即可看到消息已成功发布。
+接下来，我们使用 [MQTTX](https://mqttx.app/zh) 订阅对应主题 topic1，即可看到消息已成功发布。
 
-![MQTT X 消息接收](https://assets.emqx.com/images/2d3a34b5c2678b77be69a08e409f0b43.png)
+![MQTTX 消息接收](https://assets.emqx.com/images/2d3a34b5c2678b77be69a08e409f0b43.png)
 
 #### 2、订阅示例
 
@@ -87,9 +87,9 @@ make
 - 密码为："public"
 - Payload 为："hello,EMQX Cloud"
 
-接下来，我们使用 MQTT X 发送 "hello,EMQX Cloud" 给 `topic1` 主题。
+接下来，我们使用 MQTTX 发送 "hello,EMQX Cloud" 给 `topic1` 主题。
 
-![MQTT X 消息发送](https://assets.emqx.com/images/0a12db9e69ea71637541339313da231d.png)
+![MQTTX 消息发送](https://assets.emqx.com/images/0a12db9e69ea71637541339313da231d.png)
 
 ```shell
 # CoAP 终端订阅 topic1 主题，-s 20表示订阅维持20秒

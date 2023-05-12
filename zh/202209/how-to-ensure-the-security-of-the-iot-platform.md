@@ -110,9 +110,9 @@ listeners.ssl.default {
 }
 ```
 
-#### 使用 MQTT X CLI 测试
+#### 使用 MQTTX CLI 测试
 
-启动 EMQX，然后使用 [MQTT X CLI](https://mqttx.app/zh/cli) 进行连接测试：
+启动 EMQX，然后使用 [MQTTX CLI](https://mqttx.app/zh/cli) 进行连接测试：
 
 ```
 # 使用服务器证书中的地址和端口进行连接

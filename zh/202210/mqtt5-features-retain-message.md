@@ -20,9 +20,9 @@
 
 ## MQTT 保留消息的使用
 
-若要使用 MQTT 保留消息，只需在消息发布时将 Retained 状态设置为 true 即可。接下来我们以开源的跨平台 [MQTT 5.0 桌面客户端工具 - MQTT X](https://mqttx.app/zh) 为例，演示如何使用  MQTT 保留消息。
+若要使用 MQTT 保留消息，只需在消息发布时将 Retained 状态设置为 true 即可。接下来我们以开源的跨平台 [MQTT 5.0 桌面客户端工具 - MQTTX](https://mqttx.app/zh) 为例，演示如何使用  MQTT 保留消息。
 
-打开 MQTT X 后如下所示，需点击 `New Connection` 按钮创建一个 MQTT 连接。
+打开 MQTTX 后如下所示，需点击 `New Connection` 按钮创建一个 MQTT 连接。
 
 ![创建 MQTT 连接 1](https://assets.emqx.com/images/c3c89247952538c127839de49a398aec.png)
 

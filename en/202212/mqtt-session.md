@@ -43,9 +43,9 @@ MQTT 3.1.1 does not specify when a Persistent Session will expire; if understood
 
 For example, the[ Free Public MQTT Broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker) provided by EMQ sets a session expiration time of 5 minutes, a maximum number of 1000 messages, and does not save QoS 0 messages.
 
-Next, we will demonstrate the use of Clean Session with the open-source cross-platform [MQTT 5.0 desktop client tool - MQTT X](https://mqttx.app/).
+Next, we will demonstrate the use of Clean Session with the open-source cross-platform [MQTT 5.0 desktop client tool - MQTTX](https://mqttx.app/).
 
-After opening MQTT X, click `New Connection` button to create an [MQTT connection](https://www.emqx.com/en/blog/how-to-set-parameters-when-establishing-an-mqtt-connection) as shown below.
+After opening MQTTX, click `New Connection` button to create an [MQTT connection](https://www.emqx.com/en/blog/how-to-set-parameters-when-establishing-an-mqtt-connection) as shown below.
 
 ![Click New Connection](https://assets.emqx.com/images/905a669d634a4438a7bdcc6cad90b975.png)
 

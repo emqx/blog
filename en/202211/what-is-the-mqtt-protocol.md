@@ -120,7 +120,7 @@ MQTT applications usually need to implement MQTT communication based on MQTT cli
 
 MQTT application development is also inseparable from the support of the MQTT testing tool. An easy-to-use and powerful MQTT testing tool can help developers shorten the development cycle and create a stable IoT application.
 
-[MQTT X](https://mqttx.app/) is an open-source cross-platform desktop client. It is easy to use and provides comprehensive MQTT 5.0 functionality, feature testing, and runs on macOS, Linux and Windows. It also provides command line and browser versions to meet MQTT testing needs in different scenarios. You can visit the MQTT X website to download and try it out: https://mqttx.app/.
+[MQTTX](https://mqttx.app/) is an open-source cross-platform desktop client. It is easy to use and provides comprehensive MQTT 5.0 functionality, feature testing, and runs on macOS, Linux and Windows. It also provides command line and browser versions to meet MQTT testing needs in different scenarios. You can visit the MQTTX website to download and try it out: https://mqttx.app/.
 
 ![MQTT Client](https://assets.emqx.com/images/ada10fb84b685af3cadcae6c95197c4f.gif)
 

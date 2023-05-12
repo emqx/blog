@@ -12,7 +12,7 @@
 * NodeMCU
 * Arduino IDE
 * LED * 1，330 Ω 电阻
-* [MQTT X](<https://mqttx.app/>):  优雅的跨平台 MQTT 5.0 客户端工具
+* [MQTTX](<https://mqttx.app/>):  优雅的跨平台 MQTT 5.0 客户端工具
 * 免费的公共 MQTT 服务器
   - Broker:  **broker.emqx.io**
   - TCP Port:  **1883**
