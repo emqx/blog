@@ -381,13 +381,13 @@ function onDisconnect() {
 
 ### Client test
 
-At this point, we test the sending and receiving of messages with a [MQTT 5.0 client tool - MQTT X](https://mqttx.app), also written in Electron.
+At this point, we test the sending and receiving of messages with a [MQTT 5.0 client tool - MQTTX](https://mqttx.app), also written in Electron.
 
-When using MQTT X to send a message to the client, you can see that the message is received properly:
+When using MQTTX to send a message to the client, you can see that the message is received properly:
 
 ![electronmessage.png](https://assets.emqx.com/images/bfb62b9f23f6836627d8e129d38b9160.png)
 
-Send a message to MQTT X using the client you wrote yourself, and now you can see that MQTT X is also receiving the message properly:
+Send a message to MQTTX using the client you wrote yourself, and now you can see that MQTTX is also receiving the message properly:
 
 ![mqttx.png](https://assets.emqx.com/images/cc97fe533fcce20765530970d7696f58.png)
 

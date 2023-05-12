@@ -1,32 +1,32 @@
-Recently, [MQTT X](https://mqttx.app/), the cross-platform desktop client for [MQTT 5.0](https://www.emqx.com/en/mqtt/mqtt5), was released in version 1.8.0. MQTT X is designed to connect to MQTT brokers such as [EMQX](https://www.emqx.com/en/products/emqx). It makes it easy and quick to create multiple simultaneous [online MQTT client](http://www.emqx.io/online-mqtt-client) connections and test the connection, publishing, and subscription functions of MQTT/TCP, MQTT/TLS, MQTT/WebSocket as well as other MQTT protocol features.
+Recently, [MQTTX](https://mqttx.app/), the cross-platform desktop client for [MQTT 5.0](https://www.emqx.com/en/mqtt/mqtt5), was released in version 1.8.0. MQTTX is designed to connect to MQTT brokers such as [EMQX](https://www.emqx.com/en/products/emqx). It makes it easy and quick to create multiple simultaneous [online MQTT client](http://www.emqx.io/online-mqtt-client) connections and test the connection, publishing, and subscription functions of MQTT/TCP, MQTT/TLS, MQTT/WebSocket as well as other MQTT protocol features.
 
-The latest release of v1.8.0 not only optimizes the experience with a quick connection duplication feature but also supports new use cases by adding two new interaction methods, namely CLI (command line) and browser. This makes MQTT X 1.8.0 the most complete MQTT test client in terms of supported scenarios. Depending on your needs, you can choose to download the desktop client, use the terminal command line, or quickly test MQTT connections in your web browser.
+The latest release of v1.8.0 not only optimizes the experience with a quick connection duplication feature but also supports new use cases by adding two new interaction methods, namely CLI (command line) and browser. This makes MQTTX 1.8.0 the most complete MQTT test client in terms of supported scenarios. Depending on your needs, you can choose to download the desktop client, use the terminal command line, or quickly test MQTT connections in your web browser.
 
-## MQTT X CLI: Rapidly develop and debug MQTT services and applications in the terminal
+## MQTTX CLI: Rapidly develop and debug MQTT services and applications in the terminal
 
-With the widespread use of the MQTT protocol in the IoT industry, more developers are choosing to use MQTT X for connectivity testing. 
+With the widespread use of the MQTT protocol in the IoT industry, more developers are choosing to use MQTTX for connectivity testing. 
 
-In order to provide more choices and convenience for users to implement MQTT connection tests, MQTT X v1.8.0 adds the command line as a form of interaction - the [MQTT X CLI](https://mqttx.app/cli), a fully open source MQTT 5.0 command line client tool. **This allows developers to develop and debug MQTT services and applications faster using the command line without the graphical interface.** This enables the following usage goals:
+In order to provide more choices and convenience for users to implement MQTT connection tests, MQTTX v1.8.0 adds the command line as a form of interaction - the [MQTTX CLI](https://mqttx.app/cli), a fully open source MQTT 5.0 command line client tool. **This allows developers to develop and debug MQTT services and applications faster using the command line without the graphical interface.** This enables the following usage goals:
 
 - Test deployed MQTT services in the server terminal
 - Quickly test MQTT services by editing and using command line scripts
 - Use command line scripts to perform simple stress tests or automated tests 
 
-> MQTT X CLI website: [https://mqttx.app/cli](https://mqttx.app/cli)
+> MQTTX CLI website: [https://mqttx.app/cli](https://mqttx.app/cli)
 >
-> MQTT X CLI 1.8.0 download: [https://github.com/emqx/MQTTX/releases/tag/v1.8.0](https://github.com/emqx/MQTTX/releases/tag/v1.8.0)
+> MQTTX CLI 1.8.0 download: [https://github.com/emqx/MQTTX/releases/tag/v1.8.0](https://github.com/emqx/MQTTX/releases/tag/v1.8.0)
 >
-> MQTT X CLI GitHub repository: [https://github.com/emqx/MQTTX/tree/main/cli](https://github.com/emqx/MQTTX/tree/main/cli)
+> MQTTX CLI GitHub repository: [https://github.com/emqx/MQTTX/tree/main/cli](https://github.com/emqx/MQTTX/tree/main/cli)
 
-![MQTT X CLI](https://assets.emqx.com/images/ee9ee7ee619f209c725ef1c67f59d4ae.png)
+![MQTTX CLI](https://assets.emqx.com/images/ee9ee7ee619f209c725ef1c67f59d4ae.png)
 
 ## Dependency-free: Get up and running with no prerequisites required
 
 ### Installation
 
-The MQTT X CLI can be quickly downloaded and installed on macOS, Linux, and Windows systems without any environmental dependencies, simply by executing commands in a terminal.
+The MQTTX CLI can be quickly downloaded and installed on macOS, Linux, and Windows systems without any environmental dependencies, simply by executing commands in a terminal.
 
-For macOS and Linux users, we provide a quick installation method using the command line to quickly download the binaries and install the latest stable version of MQTT X CLI on the operating system. Windows users can go to the MQTT X release page to find the exe package for the corresponding system architecture and manually download it for use.
+For macOS and Linux users, we provide a quick installation method using the command line to quickly download the binaries and install the latest stable version of MQTTX CLI on the operating system. Windows users can go to the MQTTX release page to find the exe package for the corresponding system architecture and manually download it for use.
 
 > Note: When downloading and installing, please be careful to distinguish the CPU architecture of the current system environment
 
@@ -34,7 +34,7 @@ For macOS and Linux users, we provide a quick installation method using the comm
 
 - **Homebrew**
 
-   macOS users can quickly install and use the MQTT X CLI via Homebrew
+   macOS users can quickly install and use the MQTTX CLI via Homebrew
 
    ```
    brew install emqx/mqttx/mqttx-cli
@@ -72,9 +72,9 @@ For macOS and Linux users, we provide a quick installation method using the comm
 
 #### Windows
 
-Windows users should manually download the corresponding exe file from the MQTT X download page at: https://github.com/emqx/MQTTX/releases/tag/v1.8.0 
+Windows users should manually download the corresponding exe file from the MQTTX download page at: https://github.com/emqx/MQTTX/releases/tag/v1.8.0 
 
-![MQTT X CLI Windows](https://assets.emqx.com/images/dccac8ea2f04693c55e77623ad507eba.png)
+![MQTTX CLI Windows](https://assets.emqx.com/images/dccac8ea2f04693c55e77623ad507eba.png)
 
 #### NPM
 
@@ -86,14 +86,14 @@ npm install mqttx-cli -g
 
 ### Quick Start
 
-Once you have completed the download and installation, you can run and use the `mqttx` command by typing it directly into the terminal. You can verify that the MQTT X CLI has been installed successfully by adding the -V parameter, and when a version number is an output, the MQTT X CLI has been successfully installed.
+Once you have completed the download and installation, you can run and use the `mqttx` command by typing it directly into the terminal. You can verify that the MQTTX CLI has been installed successfully by adding the -V parameter, and when a version number is an output, the MQTTX CLI has been successfully installed.
 
 ```
 $ mqttx -V
 1.8.0
 ```
 
-To test operation of the MQTT X CLI, you first need to connect to an MQTT server. In this article, we will use EMQ’s [free public MQTT broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker), which runs on the fully managed [MQTT cloud](https://www.emqx.com/en/cloud), EMQX Cloud, with the following access information:
+To test operation of the MQTTX CLI, you first need to connect to an MQTT server. In this article, we will use EMQ’s [free public MQTT broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker), which runs on the fully managed [MQTT cloud](https://www.emqx.com/en/cloud), EMQX Cloud, with the following access information:
 
 - Broker: **broker.emqx.io**
 - TCP Port: **1883**
@@ -117,11 +117,11 @@ mqttx pub -t 'mqttx/cli' -h 'broker.emqx.io' -p 1883 -m 'hello from MQTTX CLI!'
 
 At this point, we can see a message that was just posted in the window of the Subscribe to Topic command.
 
-![MQTT X CLI Publish](https://assets.emqx.com/images/db6f9c76559376f3e490c1cf46e6eff2.png)
+![MQTTX CLI Publish](https://assets.emqx.com/images/db6f9c76559376f3e490c1cf46e6eff2.png)
 
 **Publishing multiple messages**
 
-The MQTT X CLI also supports a pub command to publish multiple messages, just add an -M parameter and an -s parameter to the command in the editor and separate each entry with a newline.
+The MQTTX CLI also supports a pub command to publish multiple messages, just add an -M parameter and an -s parameter to the command in the editor and separate each entry with a newline.
 
 ```
 mqttx pub -t 'mqttx/cli' -h 'broker.emqx.io' -p 1883 -s -M
@@ -129,25 +129,25 @@ mqttx pub -t 'mqttx/cli' -h 'broker.emqx.io' -p 1883 -s -M
 
 ![Publishing multiple messages](https://assets.emqx.com/images/3d565168651086abf2540de4a826af55.png)
 
-Finally, we test and verify the functionality of the MQTT X CLI by using the MQTT X desktop client to connect to the same MQTT service as the MQTT X CLI. We use the MQTT X CLI to publish a message, receive it through the MQTT X desktop client, and then reverse the process by using the MQTT X desktop client to send a message to the MQTT X CLI. At this point, we can see that both sides have received their respective incoming and outgoing messages.
+Finally, we test and verify the functionality of the MQTTX CLI by using the MQTTX desktop client to connect to the same MQTT service as the MQTTX CLI. We use the MQTTX CLI to publish a message, receive it through the MQTTX desktop client, and then reverse the process by using the MQTTX desktop client to send a message to the MQTTX CLI. At this point, we can see that both sides have received their respective incoming and outgoing messages.
 
-![MQTT X desktop client ](https://assets.emqx.com/images/2a79737764ec04f5a1344ad84a06c3e5.png)
+![MQTTX desktop client ](https://assets.emqx.com/images/2a79737764ec04f5a1344ad84a06c3e5.png)
 
-<center>MQTT X desktop client</center>
+<center>MQTTX desktop client</center>
 
-![MQTT X CLI](https://assets.emqx.com/images/4eff2f4b27c0de96b15bfb7878c9401a.png)
+![MQTTX CLI](https://assets.emqx.com/images/4eff2f4b27c0de96b15bfb7878c9401a.png)
 
-<center>MQTT X CLI</center>
+<center>MQTTX CLI</center>
 
 ## Summary
 
-This concludes our testing and verification of the MQTT message publish-subscribe feature using the MQTT X CLI. In addition to the common features mentioned above, the MQTT X CLI also supports setting up last will messages, using SSL/TLS to test mqtts connections, and more. MQTT 5.0 connectivity will also be supported in the future.
+This concludes our testing and verification of the MQTT message publish-subscribe feature using the MQTTX CLI. In addition to the common features mentioned above, the MQTTX CLI also supports setting up last will messages, using SSL/TLS to test mqtts connections, and more. MQTT 5.0 connectivity will also be supported in the future.
 
-The release of the MQTT X CLI provides a new option for IoT developers to test MQTT connections. With complete support for command line calls, desktop client downloads, and online browsers, MQTT X 1.8.0 helps users with different use cases to complete the development and debugging of MQTT services or applications, improving their own business capabilities and stability. The easy-to-use test client tool, MQTT X, combined with the efficient, [reliable MQTT broker](https://www.emqx.io/), EMQX, will help IoT developers build competitive IoT platforms and applications.
+The release of the MQTTX CLI provides a new option for IoT developers to test MQTT connections. With complete support for command line calls, desktop client downloads, and online browsers, MQTTX 1.8.0 helps users with different use cases to complete the development and debugging of MQTT services or applications, improving their own business capabilities and stability. The easy-to-use test client tool, MQTTX, combined with the efficient, [reliable MQTT broker](https://www.emqx.io/), EMQX, will help IoT developers build competitive IoT platforms and applications.
 
 ## Appendix: User Help
 
-You can enter the --help parameter on the command line to get help or check the usage parameter table below to use the MQTT X CLI.
+You can enter the --help parameter on the command line to get help or check the usage parameter table below to use the MQTTX CLI.
 
 ```
 # Get help for the mqttx command
@@ -206,7 +206,7 @@ mqttx pub --help
 | -i, --client-id <ID>   | the client id                                       |
 | -q, --qos <0/1/2>      | the QoS of the message (default: 0)                 |
 | -t, --topic <TOPIC>    | the message topic                                   |
-| -m, --message<MSG>     | the message body (default: "Hello From MQTT X CLI") |
+| -m, --message<MSG>     | the message body (default: "Hello From MQTTX CLI") |
 | -r, --retain           | send a retained message (default: false)            |
 | -s, --stdin            | read the message body from stdin                    |
 | -M, --multiline        | read lines from stdin as multiple messages          |
@@ -227,7 +227,7 @@ mqttx pub --help
 
 <section class="promotion">
     <div>
-       Try MQTT X
+       Try MQTTX
     </div>
     <a href="https://www.emqx.com/en/try?product=MQTTX" class="button is-gradient px-5">Download Now →</a>
 </section>

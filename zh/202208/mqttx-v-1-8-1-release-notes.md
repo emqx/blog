@@ -1,22 +1,22 @@
-近日，MQTT X 发布了最新的 1.8.1 版本（下载地址：[https://github.com/emqx/MQTTX/releases/tag/v1.8.1](https://github.com/emqx/MQTTX/releases/tag/v1.8.1)），MQTT X 桌面端版本已支持自动更新，并对 MQTT X Web 页面进行了优化。目前已完成了 MQTT X CLI 对于 [MQTT 5.0](https://www.emqx.com/zh/mqtt/mqtt5) 的连接支持及用户属性设置支持，并新增了一个 conn 命令来快速测试连接，后续还将添加 bench 命令，将支持部分场景下的 [MQTT 协议](https://www.emqx.com/zh/mqtt)性能测试。
+近日，MQTTX 发布了最新的 1.8.1 版本（下载地址：[https://github.com/emqx/MQTTX/releases/tag/v1.8.1](https://github.com/emqx/MQTTX/releases/tag/v1.8.1)），MQTTX 桌面端版本已支持自动更新，并对 MQTTX Web 页面进行了优化。目前已完成了 MQTTX CLI 对于 [MQTT 5.0](https://www.emqx.com/zh/mqtt/mqtt5) 的连接支持及用户属性设置支持，并新增了一个 conn 命令来快速测试连接，后续还将添加 bench 命令，将支持部分场景下的 [MQTT 协议](https://www.emqx.com/zh/mqtt)性能测试。
 
-![MQTT X](https://assets.emqx.com/images/2df897d02b73e237048faad97688e51f.png)
+![MQTTX](https://assets.emqx.com/images/2df897d02b73e237048faad97688e51f.png)
 
-## MQTT X 桌面客户端
+## MQTTX 桌面客户端
 
 ### 自动更新功能
 
 在之前每次的版本发布中，用户可以通过升级提示框的下载按钮跳转到最新版本下载页面，手动下载安装包完成对软件的更新。从 v1.8.1 开始，用户不再需要手动下载安装，只需在收到升级提示点击按钮，软件后台即可自动将版本升级至最新。自动更新功能可以让用户更快体验到最新功能，提升使用体验。
 
-![MQTT X 自动更新](https://assets.emqx.com/images/c04d3beaf1dab9bfed47fef19d2c9c95.jpeg)
+![MQTTX 自动更新](https://assets.emqx.com/images/c04d3beaf1dab9bfed47fef19d2c9c95.jpeg)
 
 更新完成后，可以在弹出框内查看最新的发布日志，快速了解到当前版本的更新内容，提升使用体验。
 
-![MQTT X 更新日志](https://assets.emqx.com/images/66063022ae15a278aa87e32f6f55e201.png)
+![MQTTX 更新日志](https://assets.emqx.com/images/66063022ae15a278aa87e32f6f55e201.png)
 
 ### 默认 MQTT 5.0 连接
 
-在之前的版本中，MQTT X 默认是 MQTT 3.1.1 连接。作为目前支持 MQTT 5.0 特性最为完整的 MQTT 客户端工具，我们在最新版本中将 MQTT X 默认连接时的 MQTT 版本修改为了 5.0，方便更多的用户快速使用和体验 MQTT 5.0 的新特性。
+在之前的版本中，MQTTX 默认是 MQTT 3.1.1 连接。作为目前支持 MQTT 5.0 特性最为完整的 MQTT 客户端工具，我们在最新版本中将 MQTTX 默认连接时的 MQTT 版本修改为了 5.0，方便更多的用户快速使用和体验 MQTT 5.0 的新特性。
 
 ### 对 Topic 进行发布前的验证
 
@@ -24,11 +24,11 @@
 
 ![MQTT Topic 验证](https://assets.emqx.com/images/403b1a09c39f1e8f38b427981baa443c.png)
 
-## MQTT X CLI
+## MQTTX CLI
 
 ### MQTT 5.0 支持
 
-MQTT X CLI 1.8.1 目前已经完成了对于 MQTT 5.0 的连接支持，并在使用时默认使用 MQTT 5.0 连接。同时还新增了一个用户属性参数 `--user-properties`，支持在连接、发布、订阅时设置用户属性。例如：
+MQTTX CLI 1.8.1 目前已经完成了对于 MQTT 5.0 的连接支持，并在使用时默认使用 MQTT 5.0 连接。同时还新增了一个用户属性参数 `--user-properties`，支持在连接、发布、订阅时设置用户属性。例如：
 
 ```
 mqttx pub -t 'hello' -h 'broker.emqx.io' -p 1883 -m 'from MQTTX CLI' -up "name: mqttx" "company: EMQ" 
@@ -42,36 +42,36 @@ mqttx pub -t 'hello' -h 'broker.emqx.io' -p 1883 -m 'from MQTTX CLI' -up "name: 
 mqttx conn -h 'broker.emqx.io' -p 1883 -u 'admin' -P 'public'
 ```
 
-## MQTT X Web
+## MQTTX Web
 
-MQTT X Web 目前在线地址已修改为：[http://www.emqx.io/online-mqtt-client](http://www.emqx.io/online-mqtt-client) 
+MQTTX Web 目前在线地址已修改为：[http://www.emqx.io/online-mqtt-client](http://www.emqx.io/online-mqtt-client) 
 
 只需要访问上述地址，即可快速使用这款在线的 MQTT 5.0 客户端工具，通过 MQTT over WebSocket 连接到 MQTT Broker 并在浏览器中测试消息发布和接收，快速开发和调试您的 MQTT 服务与应用。
 
 在 1.8.1 版本中，优化了页面样式，完善测试功能等。后续还将继续完善 MQTT 5.0 的属性配置功能。
 
-![MQTT X Web](https://assets.emqx.com/images/108265b02b225ecb95f7001981d3978d.png)
+![MQTTX Web](https://assets.emqx.com/images/108265b02b225ecb95f7001981d3978d.png)
 
 ## 修复及优化
 
 除添加上述新特性外，本次更新还修复了很多已知问题，稳定性得到了进一步提升。
 
-- 修复 MQTT X 在 macOS 系统中，意外退出的弹框提醒
-- 修复 MQTT X 在消息列表中展示用户属性时的样式问题
-- 修复 MQTT X CLI 下无效的 `--clean` 参数，使用 `--no-clean` 参数替代
+- 修复 MQTTX 在 macOS 系统中，意外退出的弹框提醒
+- 修复 MQTTX 在消息列表中展示用户属性时的样式问题
+- 修复 MQTTX CLI 下无效的 `--clean` 参数，使用 `--no-clean` 参数替代
 
 ## 未来规划
 
-MQTT X 还在持续增强完善中，以期为用户带来更多实用、强大的功能，为物联网平台的测试和开发提供便利。
+MQTTX 还在持续增强完善中，以期为用户带来更多实用、强大的功能，为物联网平台的测试和开发提供便利。
 
 接下来我们将重点关注以下方面：
 
 - 使用体验升级
-- MQTT X CLI 将支持 bench 命令
-- 插件系统（例如支持 SparkPlug B、集成 MQTT X CLI）
+- MQTTX CLI 将支持 bench 命令
+- 插件系统（例如支持 SparkPlug B、集成 MQTTX CLI）
 - 脚本功能优化
-- 推出 MQTT X Mobile 移动端应用
-- 完善 MQTT X Web 功能
+- 推出 MQTTX Mobile 移动端应用
+- 完善 MQTTX Web 功能
 - MQTT Debug 功能
 
 ## 附：连接命令的使用帮助
@@ -107,7 +107,7 @@ mqttx conn --help
 
 <section class="promotion">
     <div>
-        立即体验 MQTT X
+        立即体验 MQTTX
     </div>
     <a href="https://www.emqx.com/zh/try?product=MQTTX" class="button is-gradient px-5">免费下载 →</a>
 </section>

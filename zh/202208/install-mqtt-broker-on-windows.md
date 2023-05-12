@@ -166,11 +166,11 @@ PS: D:\Project\nanomq\build> .\nanomq\nanomq.exe broker start
 
 ### 运行测试
 
-除了 NanoMQ 自带的客户端工具，还可以使用 [开源 MQTT 测试客户端工具 MQTT X](https://mqttx.app/zh) 来进行基础的消息收发测试。
+除了 NanoMQ 自带的客户端工具，还可以使用 [开源 MQTT 测试客户端工具 MQTTX](https://mqttx.app/zh) 来进行基础的消息收发测试。
 
-MQTT X 下载地址：[https://www.emqx.com/zh/try?product=MQTTX](https://www.emqx.com/zh/try?product=MQTTX) 
+MQTTX 下载地址：[https://www.emqx.com/zh/try?product=MQTTX](https://www.emqx.com/zh/try?product=MQTTX) 
 
-![MQTT 测试客户端工具 MQTT X](https://assets.emqx.com/images/0788a29dbccc7d6f253fa6bc0914ffe2.png)
+![MQTT 测试客户端工具 MQTTX](https://assets.emqx.com/images/0788a29dbccc7d6f253fa6bc0914ffe2.png)
 
 从 MQTTX 可以看到消息能够通过 NanoMQ 进行正常收发。
 

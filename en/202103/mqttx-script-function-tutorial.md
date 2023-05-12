@@ -1,10 +1,10 @@
 ## Overview
 
-[MQTT X](https://mqttx.app) is a cross-platform [MQTT 5.0](https://www.emqx.com/en/mqtt/mqtt5) desktop test client provided by the [EMQ](https://www.emqx.com/en), the world's leading provider of **open source IoT middleware**, and supports macOS, Linux, and Windows. The user interface of MQTT X simplifies the operation logic of pages with the help of a chat software format that allows users to quickly create multiple simultaneous online **MQTT clients**, and facilitate testing the connection/publish/subscribe function of MQTT/TCP, MQTT/TLS, MQTT/WebSocket and other **MQTT protocol** features.
+[MQTTX](https://mqttx.app) is a cross-platform [MQTT 5.0](https://www.emqx.com/en/mqtt/mqtt5) desktop test client provided by the [EMQ](https://www.emqx.com/en), the world's leading provider of **open source IoT middleware**, and supports macOS, Linux, and Windows. The user interface of MQTTX simplifies the operation logic of pages with the help of a chat software format that allows users to quickly create multiple simultaneous online **MQTT clients**, and facilitate testing the connection/publish/subscribe function of MQTT/TCP, MQTT/TLS, MQTT/WebSocket and other **MQTT protocol** features.
 
-MQTT X Website: [https://mqttx.app](https://mqttx.app)
+MQTTX Website: [https://mqttx.app](https://mqttx.app)
 
-Download MQTT X v1.5.2: [https://github.com/emqx/MQTTX/releases/tag/v1.5.2](https://github.com/emqx/MQTTX/releases/tag/v1.5.2)
+Download MQTTX v1.5.2: [https://github.com/emqx/MQTTX/releases/tag/v1.5.2](https://github.com/emqx/MQTTX/releases/tag/v1.5.2)
 
 Mac users can download from the APP Store: [https://apps.apple.com/us/app/mqttx/id1514074565?mt=12](https://apps.apple.com/cn/app/mqttx/id1514074565?mt=12)
 
@@ -14,7 +14,7 @@ Linux users can download from the Snapcraft: [https://snapcraft.io/mqttx](https:
 
 ## Script Function 
 
-**After the v1.4.2 version, the script function has been added to the MQTT X.** It allows users to use a script to customize converting `Payload`, and can be used to simulate custom test scenarios. The scripting language is currently supported in JavaScript. The following article will use two simple instances to introduce the use of the script function. **Please note that in v1.4.2, the scripting feature is an open test feature, so the use process, security, and functionality will need to be improved.** You are also welcome to discuss this in detail in the MQTT X [GitHub issue](https://github.com/emqx/MQTTX/issues) section, which we will review and respond to.
+**After the v1.4.2 version, the script function has been added to the MQTTX.** It allows users to use a script to customize converting `Payload`, and can be used to simulate custom test scenarios. The scripting language is currently supported in JavaScript. The following article will use two simple instances to introduce the use of the script function. **Please note that in v1.4.2, the scripting feature is an open test feature, so the use process, security, and functionality will need to be improved.** You are also welcome to discuss this in detail in the MQTTX [GitHub issue](https://github.com/emqx/MQTTX/issues) section, which we will review and respond to.
 
 In the edit script function, there is only an `execute` API globally, and the user needs to write a custom function that takes a `value` parameter, `Payload`, in which the `value` can be modified and transformed in a custom way. Finally, the function is passed as a parameter to `execute` to execute the custom-written function.
 
@@ -22,7 +22,7 @@ In the edit script function, there is only an `execute` API globally, and the us
 
 Simulation of temperature and humidity data reporting in cooperation with the timer sending function.
 
-For example,  when a user is using EMQX, they need to save data to the database using the rules engine function. Once configured, you can use MQTT X to connect to EMQX and test it using the script function. Assuming that the user needs to save the reported temperature and humidity data in JSON format, we can simulate the data using the following script.
+For example,  when a user is using EMQX, they need to save data to the database using the rules engine function. Once configured, you can use MQTTX to connect to EMQX and test it using the script function. Assuming that the user needs to save the reported temperature and humidity data in JSON format, we can simulate the data using the following script.
 
 ```javascript
 /**
@@ -66,7 +66,7 @@ Once the script is on, we will continue to set up the timed sending function. Cl
 
 ![mqttxtimed.png](https://assets.emqx.com/images/8cf5eaf54e3ab5596c03500012463cd7.png)
 
-Once you are ready, you can enter the initial `Payload` and the `Topic` you want to send to, click on Send, and once you have successfully sent a message, you will see that MQTT X will automatically send the simulation data once per second.
+Once you are ready, you can enter the initial `Payload` and the `Topic` you want to send to, click on Send, and once you have successfully sent a message, you will see that MQTTX will automatically send the simulation data once per second.
 
 ![mqttxhumtempsuccess.png](https://assets.emqx.com/images/695bfda6171514106492d3543d884686.png)
 
@@ -113,8 +113,8 @@ Once the script function is enabled, we add a `Topic` of `testtopic/time` and we
 
 ## Summary
 
-So far, we have completed the tutorial on the use of the MQTT X script instance. This feature is scalable and flexible, so you will need to use it according to your needs. Examples of scripts can be found in the [/docs/script-example](https://github.com/emqx/MQTTX/tree/master/docs/script-example) folder of the GitHub repository, and two built-in scripts are currently available, timestamp conversion and temperature and humidity data simulation. If you have a better, more useful script in your use, please submit your code here so that more people can use it.
+So far, we have completed the tutorial on the use of the MQTTX script instance. This feature is scalable and flexible, so you will need to use it according to your needs. Examples of scripts can be found in the [/docs/script-example](https://github.com/emqx/MQTTX/tree/master/docs/script-example) folder of the GitHub repository, and two built-in scripts are currently available, timestamp conversion and temperature and humidity data simulation. If you have a better, more useful script in your use, please submit your code here so that more people can use it.
 
-The project is fully open source, so you can submit any issues you encounter during use on [GitHub](https://github.com/emqx/MQTTX/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc), or submit a revised PR to us after forking MQTT X, we will review and address it in time. We would also like to thank all the users in the community for their contributions and feedback.
+The project is fully open source, so you can submit any issues you encounter during use on [GitHub](https://github.com/emqx/MQTTX/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc), or submit a revised PR to us after forking MQTTX, we will review and address it in time. We would also like to thank all the users in the community for their contributions and feedback.
 
 If you think this project is still helpful to you, please give us a Star on [GitHub](https://github.com/emqx/MQTTX) to encourage us to do better! :)

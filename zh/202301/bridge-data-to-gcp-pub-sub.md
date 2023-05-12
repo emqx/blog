@@ -87,7 +87,7 @@ GCP Pub/Sub 提供了丰富的 API，用户可以通过编程方式对数据进�
 
    ![查看刚才创建的 SQL 语句规则和动作](https://assets.emqx.com/images/083583e04d9093c20a3b0d46da9c622b.png) 
 
-4. 使用 MQTT X 进行消息收发测试。
+4. 使用 MQTTX 进行消息收发测试。
 
    您需要替换 `broker.emqx.io` 为您创建的部署的连接地址（可以在 Deployment Overview 页面找到），并添加设备认证信息。
 

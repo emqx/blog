@@ -1,6 +1,6 @@
-In early November, the MQTT X team released version 1.9.0. This update includes support for MQTT performance testing via MQTT X CLI and a help page to help users learn more about MQTT within the desktop application. Additionally, the update includes various improvements and bug fixes.
+In early November, the MQTTX team released version 1.9.0. This update includes support for MQTT performance testing via MQTTX CLI and a help page to help users learn more about MQTT within the desktop application. Additionally, the update includes various improvements and bug fixes.
 
-The team currently focuses on version 1.91. In this version, the MQTT X CLI will be able to automatically reconnect, save and read local configuration files, and convert messages to different formats. The desktop application will support the setting of the scroll interval and will fix some issues.
+The team currently focuses on version 1.91. In this version, the MQTTX CLI will be able to automatically reconnect, save and read local configuration files, and convert messages to different formats. The desktop application will support the setting of the scroll interval and will fix some issues.
 
 Download the latest version here: [https://www.emqx.com/en/try?product=MQTTX](https://www.emqx.com/en/try?product=MQTTX)  
 
@@ -13,7 +13,7 @@ In v1.9.1, we add a configuration item: Auto scroll interval. This option is use
 
 In previous versions, the "Auto scroll" feature automatically scrolled the list of messages down as new messages came in. However, this made it difficult for users to see the content of messages if the scrolling speed was too fast. To address this issue, we have added a setting on the Settings page that allows users to specify the interval for scrolling in seconds. This allows users to adjust the scrolling speed to their preference and ensures that the messages are automatically scrolled to the bottom of the list at a pace that is comfortable for them to read.
 
-![MQTT X support setting scroll interval](https://assets.emqx.com/images/8e707db281fbea2e6d40c688c8609ab8.png)
+![MQTTX support setting scroll interval](https://assets.emqx.com/images/8e707db281fbea2e6d40c688c8609ab8.png)
 
 ### Adjust the help page
 
@@ -27,15 +27,15 @@ There was a help page for users to learn about the MQTT in previous versions. In
 - Optimize UI design and interaction.
 - Fix some known bugs.
 
-## MQTT X CLI
+## MQTTX CLI
 
 ### Support automatic reconnection
 
-In previous versions, MQTT X CLI would automatically disconnect and exit if the MQTT server encountered an exception. Users have to reconnect to the server manually when it is recovered. In v1.9.1, we provide a mechanism for automatic reconnecting so that MQTT X CLI automatically reconnects after disconnecting from the MQTT server.
+In previous versions, MQTTX CLI would automatically disconnect and exit if the MQTT server encountered an exception. Users have to reconnect to the server manually when it is recovered. In v1.9.1, we provide a mechanism for automatic reconnecting so that MQTTX CLI automatically reconnects after disconnecting from the MQTT server.
 
 ![MQTT CLI](https://assets.emqx.com/images/5c65e7ea10826afdd4a424bdb2fd2134.png)
 
-The number of reconnection attempts is limited, and once this maximum is reached, MQTT X CLI will exit to prevent further attempts. The number of attempts is set to 10 by default, but this can be adjusted using the `-maximun-reconnect-times` option.
+The number of reconnection attempts is limited, and once this maximum is reached, MQTTX CLI will exit to prevent further attempts. The number of attempts is set to 10 by default, but this can be adjusted using the `-maximun-reconnect-times` option.
 
 ```
 # For example, change the number of attempts to 5
@@ -43,7 +43,7 @@ The number of reconnection attempts is limited, and once this maximum is reached
 mqttx conn -h 'broker.emqx.io' -p 1883 --maximun-reconnect-times 5
 ```
 
-In addition to the number of attempts, we also add a configuration setting for the reconnect interval. If the MQTT server experiences an exception, MQTT X CLI will attempt to reconnect according to the reconnection interval measured in milliseconds. The interval is set to 1000 milliseconds by default, but this can be customized using the `-reconnect-period` option.
+In addition to the number of attempts, we also add a configuration setting for the reconnect interval. If the MQTT server experiences an exception, MQTTX CLI will attempt to reconnect according to the reconnection interval measured in milliseconds. The interval is set to 1000 milliseconds by default, but this can be customized using the `-reconnect-period` option.
 
 > Note: If the reconnect interval is set to 0, auto-reconnect will be disabled.
 
@@ -65,13 +65,13 @@ To save a configuration file, input the `--save` parameter and the file path whe
 
 To read a configuration file, use the `--config` parameter and the path to the configuration file when running a command.
 
-> Note: The MQTT X CLI supports both JSON and YAML, but when using the `-save` parameter, you need to specify the file format, such as `-save mqttx-cli-config.json` or `-save mqttx-cli-config.yaml`.
+> Note: The MQTTX CLI supports both JSON and YAML, but when using the `-save` parameter, you need to specify the file format, such as `-save mqttx-cli-config.json` or `-save mqttx-cli-config.yaml`.
 
 ![Support saving and reading local configuration files](https://assets.emqx.com/images/12d71f645eea052ad96ec67c8ffc29cd.png)
 
 ### Support specifying message format
 
-In previous versions, MQTT X CLI only supported String messages. If users sent messages with hex type, there were problems converting them to string. Therefore, in v1.91, MQTT X CLI add a feature for converting the message format so that users can specify the format of incoming messages.
+In previous versions, MQTTX CLI only supported String messages. If users sent messages with hex type, there were problems converting them to string. Therefore, in v1.91, MQTTX CLI add a feature for converting the message format so that users can specify the format of incoming messages.
 
 The following formats are supported:
 
@@ -85,15 +85,15 @@ In addition to the String format, you can specify the message format by simply a
 ![Support specifying message format](https://assets.emqx.com/images/cc049cd58b28ba0d629cf2e9a2d84d72.png)
 
 
-## MQTT X Web
+## MQTTX Web
 
-MQTT X Web makes some changes to the functions and page layouts in accordance with the MQTT X desktop application.
+MQTTX Web makes some changes to the functions and page layouts in accordance with the MQTTX desktop application.
 
 You can have a quick experience here: [http://www.emqx.io/online-mqtt-client/](http://www.emqx.io/online-mqtt-client/) 
 
 ## Future plans
 
-MQTT X is continuing to be improved to provide users with more practical and powerful features and facilitate the development and testing of IoT-based applications and services. Next, we will focus on the following aspects:
+MQTTX is continuing to be improved to provide users with more practical and powerful features and facilitate the development and testing of IoT-based applications and services. Next, we will focus on the following aspects:
 
 - Optimize the performance for receiving and storing messages to ensure that the system runs smoothly when there are too many messages coming in.
 - Support MQTT Debug.
@@ -108,7 +108,7 @@ MQTT X is continuing to be improved to provide users with more practical and pow
 
 <section class="promotion">
     <div>
-        Try MQTT X for Free
+        Try MQTTX for Free
     </div>
     <a href="https://www.emqx.com/en/try?product=MQTTX" class="button is-gradient px-5">Get Started →</a>
 </section>

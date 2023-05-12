@@ -124,7 +124,7 @@ mqtt sub -t 'testtopic/#' -h 'broker.emqx.io' -v
 mqtt pub -t 'testtopic/hello' -h 'broker.emqx.io' -m 'from MQTT.js'
 ```
 
-如需使用功能更加全面的 MQTT 命令行工具，可参考使用 [MQTT X CLI](https://mqttx.app/zh/cli)。
+如需使用功能更加全面的 MQTT 命令行工具，可参考使用 [MQTTX CLI](https://mqttx.app/zh/cli)。
 
 ### API 介绍
 

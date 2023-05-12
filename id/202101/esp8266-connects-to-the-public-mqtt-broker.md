@@ -10,7 +10,7 @@ EMQX Cloud adalah sebuah platform servis cloud MQTT IoT aman yang diluncurkan ol
 
 * ESP8266
 * Arduino IDE
-* [MQTT X](https://mqttx.app): Cross-platform MQTT 5.0 client tool yang elegan
+* [MQTTX](https://mqttx.app): Cross-platform MQTT 5.0 client tool yang elegan
 * The free public [MQTT broker](https://www.emqx.com/en/products/emqx)
   - Broker: **broker.emqx.io**
   - TCP Port: **1883**
@@ -187,7 +187,7 @@ EMQX Cloud adalah sebuah platform servis cloud MQTT IoT aman yang diluncurkan ol
 
    ![esp_con.png](https://assets.emqx.com/images/4c97b1546d31021cc22c64ae7ce4863b.png)
 
-2. Buat koneksi antara MQTT X Client dan MQTT broker lalu kirim pesan ke ESP8266.
+2. Buat koneksi antara MQTTX Client dan MQTT broker lalu kirim pesan ke ESP8266.
 
    ![mqttx_pub.png](https://assets.emqx.com/images/daa2c401453155045f2c068bcd57d66a.png)
 

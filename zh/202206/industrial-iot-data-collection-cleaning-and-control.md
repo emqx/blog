@@ -26,7 +26,7 @@ Neuron 和 eKuiper 部署在靠近设备的边缘端网关或者工控机上。N
 开始动手操作之前，需要准备以下环境：
 
 - MQTT 服务器：可以使用 EMQ 提供的[公共 MQTT 服务器](https://www.emqx.com/zh/mqtt/public-mqtt5-broker)，或参考 [EMQX 文档](https://www.emqx.io/docs/zh/v4.4/getting-started/getting-started.html#快速开始)快速部署一个本地 MQTT broker。假设 MQTT broker 地址为 `tcp://broker.emqx.io:1883`，以下教程将以此地址为例。
-- 为了方便观察运行结果，我们需要安装一个 MQTT 客户端，例如 [MQTT X](https://mqttx.app/zh)。
+- 为了方便观察运行结果，我们需要安装一个 MQTT 客户端，例如 [MQTTX](https://mqttx.app/zh)。
 
 ## 快速部署
 
@@ -147,7 +147,7 @@ Neuron 流建立之后，我们可以在 eKuiper 里创建任意多条规则，�
 - tag1: decimal 表示的温度数据，实际温度应该除以10
 - tag2: 整型的湿度数据。
 
-本规则将采集的 Neuron 数据换算为正确的精度，并重命名为有意义的名字。结果发送到云端的 MQTT 动态 topic ${nodeName}/${groupName}中。 创建规则的 REST 命令如下。其中，规则名为 ruleNAll, 规则的 SQL 中对采集的值进行计算，并选取了node_name 和 group_name 这些元数据。在动作中，规则的结果发送到云端的 MQTT broker，而且 topic 为动态名字。根据前文配置，我们采集的 node_name 为 modbus-plus-tcp-1，group_name 为 group-1。因此，在 MQTT X 中，订阅 modbus-plus-tcp-1/group-1 主题即可得到计算的结果。
+本规则将采集的 Neuron 数据换算为正确的精度，并重命名为有意义的名字。结果发送到云端的 MQTT 动态 topic ${nodeName}/${groupName}中。 创建规则的 REST 命令如下。其中，规则名为 ruleNAll, 规则的 SQL 中对采集的值进行计算，并选取了node_name 和 group_name 这些元数据。在动作中，规则的结果发送到云端的 MQTT broker，而且 topic 为动态名字。根据前文配置，我们采集的 node_name 为 modbus-plus-tcp-1，group_name 为 group-1。因此，在 MQTTX 中，订阅 modbus-plus-tcp-1/group-1 主题即可得到计算的结果。
 
 ```
 curl -X POST --location http://127.0.0.1:9081/rules \
@@ -166,9 +166,9 @@ curl -X POST --location http://127.0.0.1:9081/rules \
     
 ```
 
-打开 MQTT X，连接到云端 broker， 订阅 `modbus-plus-tcp-1/group-1` 主题，则可得到如下结果。由于采集频率为100ms 一次，此处收到的数据也是类似的频率。
+打开 MQTTX，连接到云端 broker， 订阅 `modbus-plus-tcp-1/group-1` 主题，则可得到如下结果。由于采集频率为100ms 一次，此处收到的数据也是类似的频率。
 
-![MQTT X](https://assets.emqx.com/images/8341d7dd6beca0130a94d705aa618317.png)
+![MQTTX](https://assets.emqx.com/images/8341d7dd6beca0130a94d705aa618317.png)
 
 在 Modbus TCP 模拟器修改数据，可得到变化的输出。
 
@@ -193,7 +193,7 @@ curl -X POST --location http://127.0.0.1:9081/rules \
  
 ```
 
-打开 MQTT X，连接到云端 broker， 订阅 changed/modbus-plus-tcp-1/group-1 主题，收到数据的频率大大降低。在 Modbus TCP 模拟器修改数据才可收到新的数据。
+打开 MQTTX，连接到云端 broker， 订阅 changed/modbus-plus-tcp-1/group-1 主题，收到数据的频率大大降低。在 Modbus TCP 模拟器修改数据才可收到新的数据。
 
 ## 通过 Neuron 控制设备
 
@@ -230,7 +230,7 @@ curl -X POST --location http://127.0.0.1:9081/rules \
  
 ```
 
-规则运行之后，打开 MQTT X，向 command 主题写入如下格式的 JSON 串。需要注意的是，应当确保 node 和 group 在 Neuron 中已创建。在本教程的配置中，只创建了 modbus-plus-tcp-1 和 group-1。
+规则运行之后，打开 MQTTX，向 command 主题写入如下格式的 JSON 串。需要注意的是，应当确保 node 和 group 在 Neuron 中已创建。在本教程的配置中，只创建了 modbus-plus-tcp-1 和 group-1。
 
 ```
 {

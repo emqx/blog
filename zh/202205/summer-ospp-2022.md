@@ -4,7 +4,7 @@
 >
 > 开源之夏官方主页：[https://summer-ospp.ac.cn/](https://summer-ospp.ac.cn/) 
 
-今年，EMQ 将携 EMQX、MQTT X、LF Edge eKuiper 三大开源项目首次参加开源之夏！
+今年，EMQ 将携 EMQX、MQTTX、LF Edge eKuiper 三大开源项目首次参加开源之夏！
 
 ## 三大开源项目介绍
 
@@ -14,9 +14,9 @@ EMQX 是一款大规模可弹性伸缩的云原生分布式物联网 MQTT 消息
 
 GitHub 主页：[https://github.com/emqx/emqx](https://github.com/emqx/emqx) 
 
-### MQTT X ：优雅的跨平台 MQTT 5.0 开源桌面客户端工具
+### MQTTX ：优雅的跨平台 MQTT 5.0 开源桌面客户端工具
 
-MQTT X 是一款完全开源的 MQTT 5.0 跨平台桌面客户端。支持快速创建多个同时在线的 MQTT 客户端连接，方便测试 MQTT/TCP、MQTT/TLS、MQTT/WebSocket 的连接、发布、订阅功能及其他 MQTT 协议特性。它基于 Electron 并使用 TypeScript 开发，前端框架使用的是 Vue.js，数据库采用的是 SQLite。
+MQTTX 是一款完全开源的 MQTT 5.0 跨平台桌面客户端。支持快速创建多个同时在线的 MQTT 客户端连接，方便测试 MQTT/TCP、MQTT/TLS、MQTT/WebSocket 的连接、发布、订阅功能及其他 MQTT 协议特性。它基于 Electron 并使用 TypeScript 开发，前端框架使用的是 Vue.js，数据库采用的是 SQLite。
 
 GitHub 主页：[https://github.com/emqx/MQTTX](https://github.com/emqx/MQTTX) 
 
@@ -52,11 +52,11 @@ GitHub 主页：[https://github.com/lf-edge/ekuiper](https://github.com/lf-edge/
 
 申请地址：[https://summer-ospp.ac.cn/#/org/prodetail/226dc0430](https://summer-ospp.ac.cn/#/org/prodetail/226dc0430) 
 
-### MQTT X 旗下项目
+### MQTTX 旗下项目
 
 **Electron 桌面客户端软件的自动更新**
 
-项目描述：MQTT X 目前已经支持并提供了完整的 MQTT 协议的功能测试能力，需要一些针对前端和网络功能方面的优化，使其更加完整易用。本项目将为 MQTT X 添加一些可自动更新版本的功能，程序内更新后显示新版本的发布日志等的功能，用户可以减少一些手动操作来更快体验和使用到后续新版本的功能，从而提升整体的软件使用体验。
+项目描述：MQTTX 目前已经支持并提供了完整的 MQTT 协议的功能测试能力，需要一些针对前端和网络功能方面的优化，使其更加完整易用。本项目将为 MQTTX 添加一些可自动更新版本的功能，程序内更新后显示新版本的发布日志等的功能，用户可以减少一些手动操作来更快体验和使用到后续新版本的功能，从而提升整体的软件使用体验。
 
 项目导师：ysfscream（[yusf@emqx.io](mailto:yusf@emqx.io)）
 

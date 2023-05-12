@@ -119,7 +119,7 @@ topic control/# in 1
 
 ## 测试配置
 
-我们可以使用 [MQTT 客户端工具](https://www.emqx.com/zh/blog/mqtt-client-tools)来测试 MQTT 桥接的配置是否成功，此处使用的是 [MQTT X CLI](https://mqttx.app/zh/cli)，一款由 EMQ 开发的强大而易用的 MQTT 5.0 命令行工具。
+我们可以使用 [MQTT 客户端工具](https://www.emqx.com/zh/blog/mqtt-client-tools)来测试 MQTT 桥接的配置是否成功，此处使用的是 [MQTTX CLI](https://mqttx.app/zh/cli)，一款由 EMQ 开发的强大而易用的 MQTT 5.0 命令行工具。
 
 ### 测试桥接的 out 方向
 

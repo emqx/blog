@@ -1,26 +1,26 @@
-[MQTT X](https://mqttx.app/zh) 是由 [EMQ](https://www.emqx.com/zh) 开源的一款跨平台 [MQTT 5.0](https://www.emqx.com/zh/mqtt/mqtt5) 桌面测试客户端，支持 macOS、Linux、Windows 系统。MQTT X 的用户界面借助聊天软件的形式简化了页面的操作逻辑，用户可以快速创建多个同时在线的[MQTT 客户端](https://www.emqx.com/zh/mqtt-client-sdk)，方便测试 MQTT/TCP、MQTT/TLS、MQTT/WebSocket 的连接/发布/订阅功能及其他 [MQTT 协议特性](https://www.emqx.com/zh/mqtt)。
+[MQTTX](https://mqttx.app/zh) 是由 [EMQ](https://www.emqx.com/zh) 开源的一款跨平台 [MQTT 5.0](https://www.emqx.com/zh/mqtt/mqtt5) 桌面测试客户端，支持 macOS、Linux、Windows 系统。MQTTX 的用户界面借助聊天软件的形式简化了页面的操作逻辑，用户可以快速创建多个同时在线的[MQTT 客户端](https://www.emqx.com/zh/mqtt-client-sdk)，方便测试 MQTT/TCP、MQTT/TLS、MQTT/WebSocket 的连接/发布/订阅功能及其他 [MQTT 协议特性](https://www.emqx.com/zh/mqtt)。
 
-近日，MQTT X v1.7.0 正式发布。从这一版本起，MQTT X 将进一步支持 MQTT 5.0 的诸多新特性，这也是全球目前为止对 MQTT 5.0 支持最为完整的桌面测试客户端工具。
+近日，MQTTX v1.7.0 正式发布。从这一版本起，MQTTX 将进一步支持 MQTT 5.0 的诸多新特性，这也是全球目前为止对 MQTT 5.0 支持最为完整的桌面测试客户端工具。
 
-> MQTT X 网站：[https://mqttx.app/zh](https://mqttx.app/zh)
+> MQTTX 网站：[https://mqttx.app/zh](https://mqttx.app/zh)
 >
-> MQTT X v1.7.0 版本下载：[https://www.emqx.com/zh/try?product=MQTTX](https://www.emqx.com/zh/try?product=MQTTX)
+> MQTTX v1.7.0 版本下载：[https://www.emqx.com/zh/try?product=MQTTX](https://www.emqx.com/zh/try?product=MQTTX)
 >
 > Mac 用户可在 App Store 中进行下载：[‎https://apps.apple.com/cn/app/mqttx/id1514074565?mt=12](https://apps.apple.com/cn/app/mqttx/id1514074565?mt=12)
 >
 > Linux 用户可在 Snapcraft 中进行下载：[https://snapcraft.io/mqttx](https://snapcraft.io/mqttx)
 
-![MQTT X v1.7.0 界面一览](https://assets.emqx.com/images/ba629cd3f538e19317d9a782ea43c0c8.png)
+![MQTTX v1.7.0 界面一览](https://assets.emqx.com/images/ba629cd3f538e19317d9a782ea43c0c8.png)
 
 <center>v1.7.0 界面一览</center>
 
 ## 更全面的 MQTT 5.0 支持
 
-在 1.7.0 版本中，MQTT X 新增很多关于 MQTT 5.0 的属性配置功能支持，使其成为目前同类工具中支持 MQTT 5.0 最为完整的 MQTT 桌面客户端工具。
+在 1.7.0 版本中，MQTTX 新增很多关于 MQTT 5.0 的属性配置功能支持，使其成为目前同类工具中支持 MQTT 5.0 最为完整的 MQTT 桌面客户端工具。
 
->要想对 MQTT 5.0 的特性进行使用和测试，需要 MQTT X v1.7.0 与支持 MQTT 5.0 的 MQTT Broker 配合使用。
+>要想对 MQTT 5.0 的特性进行使用和测试，需要 MQTTX v1.7.0 与支持 MQTT 5.0 的 MQTT Broker 配合使用。
 >
->[云原生分布式 MQTT 消息服务器 EMQX](https://www.emqx.io/zh) 从 3.0 版本开始支持 MQTT 5.0 协议，是开源社区中第一个支持该协议规范的消息服务器，并且完全兼容 MQTT 3.1 和 3.1.1 协议。使用 MQTT X 连接到 EMQX，就可以快速使用和测试 MQTT 5.0 的功能特性。
+>[云原生分布式 MQTT 消息服务器 EMQX](https://www.emqx.io/zh) 从 3.0 版本开始支持 MQTT 5.0 协议，是开源社区中第一个支持该协议规范的消息服务器，并且完全兼容 MQTT 3.1 和 3.1.1 协议。使用 MQTTX 连接到 EMQX，就可以快速使用和测试 MQTT 5.0 的功能特性。
 
 ### 支持 MQTT 5.0 用户属性配置
 
@@ -58,13 +58,13 @@ v1.7.0 设置中新增了对接收和发布消息时消息列表自动滚动的�
 
 ### 主题跟随操作系统主题变化（仅支持 macOS）
 
-MQTT X 目前支持 Light、Dark 和 Night 三种主题模式，之前需要手动切换，新版本对此进行了优化。当操作系统的系统主题进行变化时，MQTT X 可以自动切换主题。当 macOS 系统主题是 Dark Mode 时，MQTT X 将自动切换到 Night 主题。
+MQTTX 目前支持 Light、Dark 和 Night 三种主题模式，之前需要手动切换，新版本对此进行了优化。当操作系统的系统主题进行变化时，MQTTX 可以自动切换主题。当 macOS 系统主题是 Dark Mode 时，MQTTX 将自动切换到 Night 主题。
 
 ### 国际化扩展
 
-借助来自社区的力量， MQTT X 的国际化扩展更进一步。除支持简体中文、英文、日文和土耳其文外，我们在一位匈牙利贡献者的帮助下，在 1.7.0 版本中实现了匈牙利语支持。
+借助来自社区的力量， MQTTX 的国际化扩展更进一步。除支持简体中文、英文、日文和土耳其文外，我们在一位匈牙利贡献者的帮助下，在 1.7.0 版本中实现了匈牙利语支持。
 
-欢迎更多的社区伙伴参与贡献，和我们一起打造更加优秀的 MQTT X。
+欢迎更多的社区伙伴参与贡献，和我们一起打造更加优秀的 MQTTX。
 
 ## 更精细的产品打磨
 
@@ -83,7 +83,7 @@ MQTT X 目前支持 Light、Dark 和 Night 三种主题模式，之前需要手�
 
 ## 未来规划
 
-MQTT X 还在持续增强完善中，以期为用户带来更多实用、强大的功能，为物联网平台的测试和开发提供便利。
+MQTTX 还在持续增强完善中，以期为用户带来更多实用、强大的功能，为物联网平台的测试和开发提供便利。
 
 接下来我们将重点关注以下方面：
 
@@ -94,6 +94,6 @@ MQTT X 还在持续增强完善中，以期为用户带来更多实用、强大�
 
 ## 结语
 
-MQTT X 为连接测试 EMQX 等 MQTT 消息服务器而生，通过一键式的连接方式和简洁的图形界面帮助使用者进行 MQTT 特性探索和功能组件调试。除提供基础 MQTT 测试连接功能，全开源和社区驱动等特性还使其集成了更多丰富、强大、符合用户使用习惯的功能特性。结合 MQTT X 与云原生分布式消息中间件 [EMQX](https://www.emqx.com/zh/products/emqx)，我们相信物联网平台的测试开发工作将变得更加轻松。
+MQTTX 为连接测试 EMQX 等 MQTT 消息服务器而生，通过一键式的连接方式和简洁的图形界面帮助使用者进行 MQTT 特性探索和功能组件调试。除提供基础 MQTT 测试连接功能，全开源和社区驱动等特性还使其集成了更多丰富、强大、符合用户使用习惯的功能特性。结合 MQTTX 与云原生分布式消息中间件 [EMQX](https://www.emqx.com/zh/products/emqx)，我们相信物联网平台的测试开发工作将变得更加轻松。
 
-MQTT X 项目完全开源，您可以到 [GitHub](https://github.com/emqx/MQTTX/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc) 来提交使用过程中遇到的问题，或是 Fork MQTT X 项目向我们提交修改后的 PR，我们将会及时查阅和处理。也特此感谢社区中所有用户的贡献和反馈，每一个社区用户的使用与肯定，都是我们产品前进的动力。
+MQTTX 项目完全开源，您可以到 [GitHub](https://github.com/emqx/MQTTX/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc) 来提交使用过程中遇到的问题，或是 Fork MQTTX 项目向我们提交修改后的 PR，我们将会及时查阅和处理。也特此感谢社区中所有用户的贡献和反馈，每一个社区用户的使用与肯定，都是我们产品前进的动力。

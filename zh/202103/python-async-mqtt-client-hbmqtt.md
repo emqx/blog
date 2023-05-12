@@ -233,7 +233,7 @@ if __name__ == '__main__':
 ![hbmqtt_pub.png](https://assets.emqx.com/images/afb947f2a8af5b2b3485d43ad1bfd739.png)
 
 
-如下为 MQTT X 客户端成功接收到 HBMQTT 客户端发布的消息：
+如下为 MQTTX 客户端成功接收到 HBMQTT 客户端发布的消息：
 
 ![mqttx_sub.png](https://assets.emqx.com/images/b16f8c811d7528ed80d98ef3ffb6ccf1.png)
 
@@ -243,7 +243,7 @@ if __name__ == '__main__':
 
 ![running_sub_py.png](https://assets.emqx.com/images/48740199e70903cc21f24360d5101a6a.png)
 
-使用 MQTT X 客户端连接 broker.emqx.io，然后向主题 a/b 发送 10 次消息
+使用 MQTTX 客户端连接 broker.emqx.io，然后向主题 a/b 发送 10 次消息
 
 ![pub_from_mqttx.png](https://assets.emqx.com/images/2d3c9a2fc3fb320b643b47f119141ec0.png)
 

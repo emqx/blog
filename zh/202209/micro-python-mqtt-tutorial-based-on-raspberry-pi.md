@@ -152,7 +152,7 @@ while True:
 
 ## 测试
 
-我们使用 [MQTT 5.0 客户端工具 - MQTT X](https://mqttx.app/zh) 进行以下测试。
+我们使用 [MQTT 5.0 客户端工具 - MQTTX](https://mqttx.app/zh) 进行以下测试。
 
 ### 测试订阅消息
 
@@ -166,18 +166,18 @@ while True:
 
    ![运行订阅客户端](https://assets.emqx.com/images/0e20dafbe8acf5be38d66f91f97d9c2a.png)
 
-2. 使用 MQTT X 客户端与 MQTT 服务器建立连接，并向主题 raspberry/mqtt 发送消息 。
+2. 使用 MQTTX 客户端与 MQTT 服务器建立连接，并向主题 raspberry/mqtt 发送消息 。
 
    ![MQTT 消息发布](https://assets.emqx.com/images/70f2482e232882d8ced2c526f87a0dc3.png)
 
-3. 查看树莓派终端信息，将会看到已成功接收到 MQTT X 发布的消息。
+3. 查看树莓派终端信息，将会看到已成功接收到 MQTTX 发布的消息。
 
    ![MQTT 消息接收](https://assets.emqx.com/images/5b973b646249741071e3e1f2560eabd0.png)
 
 
 ### 测试发布消息
 
-1. 在 MQTT X 客户端中订阅 `raspberry/mqtt` 主题 。
+1. 在 MQTTX 客户端中订阅 `raspberry/mqtt` 主题 。
 
 2. 在终端运行 MicroPython 代码 ，发布消息。
 
@@ -187,9 +187,9 @@ while True:
 
    ![MQTT 消息发布](https://assets.emqx.com/images/558d9410fbff971b58b148bf133ff29f.png)
 
-3. 在 MQTT X 客户端中，查看树莓派发送的消息。
+3. 在 MQTTX 客户端中，查看树莓派发送的消息。
 
-   ![MQTT X 接收消息](https://assets.emqx.com/images/04843f182ab1c26fdd30b2a42b1e1a00.png)
+   ![MQTTX 接收消息](https://assets.emqx.com/images/04843f182ab1c26fdd30b2a42b1e1a00.png)
 
 
 ## 结语

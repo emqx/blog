@@ -170,7 +170,7 @@ client.disconnect();
 
 ## 测试
 
-我们给该项目编写了一个简单的 UI 界面，并配合 [MQTT 5.0 客户端工具 - MQTT X](https://mqttx.app/zh) 进行以下测试：
+我们给该项目编写了一个简单的 UI 界面，并配合 [MQTT 5.0 客户端工具 - MQTTX](https://mqttx.app/zh) 进行以下测试：
 
 - 连接
 

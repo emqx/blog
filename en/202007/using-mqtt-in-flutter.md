@@ -172,7 +172,7 @@ client.disconnect();
 
 ## Test
 
-We write a simple UI interface for this project and use [MQTT 5.0 client tool - MQTT X](https://mqttx.app/) to do the following tests:
+We write a simple UI interface for this project and use [MQTT 5.0 client tool - MQTTX](https://mqttx.app/) to do the following tests:
 
 - connect
 
@@ -188,7 +188,7 @@ The interface of the application:
 
 ![画板1x.png](https://assets.emqx.com/images/4aeb38a0dc6b0329164a91fc38e572cc.png)
 
-Use MQTT X as another client to send and receive messages:
+Use MQTTX as another client to send and receive messages:
 
 ![mqttx_flutter.png](https://assets.emqx.com/images/b46731e7278ad148a0bfe3cc0890138b.png)
 

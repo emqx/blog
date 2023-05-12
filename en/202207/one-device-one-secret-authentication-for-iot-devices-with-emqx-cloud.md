@@ -121,7 +121,7 @@ That is, the device needs to carry the client certificate, the client secret key
 
 ## Test Authentication
 
-We use MQTT X to simulate a client with the following information to connect to EMQX Cloud.
+We use MQTTX to simulate a client with the following information to connect to EMQX Cloud.
 
 ① Serverside CA
 

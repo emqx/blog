@@ -175,7 +175,7 @@ Fungsi `publish()` akan mengirim pesan ke sebuah topik. Dalam kode diatas, kita 
 
 ## Tes
 
-Kita akan menggunakan [MQTT 5.0 client tool - MQTT X](https://mqttx.app/) untuk melakukan beberapa tes dibawah ini.
+Kita akan menggunakan [MQTT 5.0 client tool - MQTTX](https://mqttx.app/) untuk melakukan beberapa tes dibawah ini.
 
 ### Tes men-subscribe topik
 
@@ -187,11 +187,11 @@ Mulai kode Python dan kirim pesan secara aktif.
    python3 subscriber.py
    ```
 
-2. Pakai MQTT X client untuk mengkoneksikan ke MQTT broker dan kirim pesan ke topik  `raspberry/topic`.
+2. Pakai MQTTX client untuk mengkoneksikan ke MQTT broker dan kirim pesan ke topik  `raspberry/topic`.
 
    ![7B5ORTmqFbJJj6mM__thumbnail.png](https://assets.emqx.com/images/cc93d1c6d99f3bfa3a78d8472a6209af.jpg)
 
-3. Lihat informasi terminal Raspberry Pi dan Anda akan melihat pesan yang dipublikasi oleh MQTT X.
+3. Lihat informasi terminal Raspberry Pi dan Anda akan melihat pesan yang dipublikasi oleh MQTTX.
 
 
   ![ZKNT7l232qHsjQYC__thumbnail.png](https://assets.emqx.com/images/9c4e5b191e9bd00317fed06f94b13850.png)
@@ -199,13 +199,13 @@ Mulai kode Python dan kirim pesan secara aktif.
 ### Tes publikasi pesan
 
 
-1. Subscribe ke topik `raspberry/topic` dalam MQTT X client.
+1. Subscribe ke topik `raspberry/topic` dalam MQTTX client.
 
 1. Mulai kode Python di terminal.
 
 ![k19xv59gQdqnpPog__thumbnail.png](https://assets.emqx.com/images/9ea832adda032c9297c84fbf585fb294.png)
 
-1. Cek pesan yang dipublikasi Raspberry Pi dalam MQTT X client.
+1. Cek pesan yang dipublikasi Raspberry Pi dalam MQTTX client.
 
    ![mp39coxpnEprWOE6__thumbnail.png](https://assets.emqx.com/images/07ffb81c764145100b1e21572357c675.jpg)
 
@@ -214,13 +214,13 @@ Mulai kode Python dan kirim pesan secara aktif.
 Selanjutnya, kita akan mengetes apakah pengaturan will message telah berhasil.
 
 
-1. Subscribe ke `raspberry/status` dalam MQTT X client.
+1. Subscribe ke `raspberry/status` dalam MQTTX client.
 
    ![XKo2GYFsqSLc7nVH__thumbnail.png](https://assets.emqx.com/images/c704c8b0f7117079306d16b5af8c2557.jpg)
 
 2. Coba ganggu jalannya program atau matikan koneksi Raspberry Pi.
 
-3. Cek apakah pesan  `raspberry/status` telah diterima didalam MQTT X client.
+3. Cek apakah pesan  `raspberry/status` telah diterima didalam MQTTX client.
 
   ![RXNIVuQ7HK0z05RV__thumbnail.png](https://assets.emqx.com/images/048da27682c9a86c536f85ffd6417bf2.jpg)
 

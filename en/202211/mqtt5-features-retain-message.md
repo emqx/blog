@@ -27,9 +27,9 @@ For MQTT client SDKs, there are typically APIs or parameters to set the `Retain`
 For MQTT client applications, either with a command line or graphic interface, you should be able to find where to set the `Retain` flag.
 
 In this post, we are not going to dig into the programming SDKs.
-We will try to demonstrate MQTT retained messages using the [open-source cross-platform MQTT 5.0 desktop client - MQTT X](https://mqttx.app/).
+We will try to demonstrate MQTT retained messages using the [open-source cross-platform MQTT 5.0 desktop client - MQTTX](https://mqttx.app/).
 
-If you start the MQTT X application for the first time, you will see the main window below. Click the `New Connection` button to create an MQTT connection.
+If you start the MQTTX application for the first time, you will see the main window below. Click the `New Connection` button to create an MQTT connection.
 
 ![Create an MQTT connection](https://assets.emqx.com/images/c3c89247952538c127839de49a398aec.png)
 

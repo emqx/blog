@@ -126,7 +126,7 @@ Example: connect to `broker.emqx.io` and send a message to the `testtopic/hello`
 mqtt pub -t 'testtopic/hello' -h 'broker.emqx.io' -m 'from MQTT.js'
 ```
 
-If you need a more comprehensive MQTT command-line tool, you can refer to [MQTT X CLI](https://mqttx.app/cli).
+If you need a more comprehensive MQTT command-line tool, you can refer to [MQTTX CLI](https://mqttx.app/cli).
 
 ### API introduction
 

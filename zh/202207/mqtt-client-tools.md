@@ -21,15 +21,15 @@ MQTT 客户端工具常用于建立与 [MQTT 服务器](https://www.emqx.com/zh/
 
 ## MQTT 桌面客户端
 
-### MQTT X
+### MQTTX
 
-[MQTT X](https://mqttx.app/zh) 是 EMQ 开源的一款跨平台 MQTT 5.0 客户端工具，它支持 macOS, Linux, Windows，并且支持 MQTT 消息格式转换。
+[MQTTX](https://mqttx.app/zh) 是 EMQ 开源的一款跨平台 MQTT 5.0 客户端工具，它支持 macOS, Linux, Windows，并且支持 MQTT 消息格式转换。
 
-MQTT X 的用户界面借助聊天软件的形式简化了页面的操作逻辑，用户可以快速创建连接保存并同时建立多个连接客户端，方便用户快速测试 MQTT/TCP、MQTT/TLS、MQTT/WebSocket 的 **连接/发布/订阅** 功能及其他特性。
+MQTTX 的用户界面借助聊天软件的形式简化了页面的操作逻辑，用户可以快速创建连接保存并同时建立多个连接客户端，方便用户快速测试 MQTT/TCP、MQTT/TLS、MQTT/WebSocket 的 **连接/发布/订阅** 功能及其他特性。
 
-MQTT X 致力于打造优雅、易用的全平台 MQTT 客户端，并在最近发布了 MQTT X CLI 及  MQTT X Web 两个版本，目前在 GitHub Star 数已达到 2K，已成为使用场景最完整的 MQTT 测试客户端。
+MQTTX 致力于打造优雅、易用的全平台 MQTT 客户端，并在最近发布了 MQTTX CLI 及  MQTTX Web 两个版本，目前在 GitHub Star 数已达到 2K，已成为使用场景最完整的 MQTT 测试客户端。
 
-![MQTT X](https://assets.emqx.com/images/ada10fb84b685af3cadcae6c95197c4f.gif)
+![MQTTX](https://assets.emqx.com/images/ada10fb84b685af3cadcae6c95197c4f.gif)
 
 #### 特性
 
@@ -101,9 +101,9 @@ MQTT.fx 使用 JavaFX 技术开发，可以保存多个连接配置，支持多�
 
 ## MQTT 在线客户端
 
-### MQTT X Web
+### MQTTX Web
 
-[MQTT X Web](https://mqttx.app/zh/web) 是一款开源的 MQTT 5.0 浏览器客户端，也是一个在线 MQTT WebSocket 客户端工具。开发者无需在本地下载和安装 MQTT X，即可使用 WebSocket 在浏览器中快速连接到 MQTT 服务器，更快地开发和调试 MQTT 服务和应用。
+[MQTTX Web](https://mqttx.app/zh/web) 是一款开源的 MQTT 5.0 浏览器客户端，也是一个在线 MQTT WebSocket 客户端工具。开发者无需在本地下载和安装 MQTTX，即可使用 WebSocket 在浏览器中快速连接到 MQTT 服务器，更快地开发和调试 MQTT 服务和应用。
 
 ![](https://mqttx-static.emqx.net/img/banner.268d1fa.png)
 
@@ -115,9 +115,9 @@ MQTT.fx 使用 JavaFX 技术开发，可以保存多个连接配置，支持多�
 
 ## MQTT 命令行客户端
 
-### MQTT X CLI
+### MQTTX CLI
 
-[MQTT X CLI](https://mqttx.app/zh/cli) 是一款全开源的、强大而易用的 MQTT 5.0 命令行客户端工具，也是命令行上的 MQTT X，旨在帮助开发者无需使用图形化界面，也能快速开发和调试 MQTT 服务与应用。
+[MQTTX CLI](https://mqttx.app/zh/cli) 是一款全开源的、强大而易用的 MQTT 5.0 命令行客户端工具，也是命令行上的 MQTTX，旨在帮助开发者无需使用图形化界面，也能快速开发和调试 MQTT 服务与应用。
 
 ![MQTT CLI](https://assets.emqx.com/images/6e1009d394255edd48a9da76ae698a94.jpeg)
 
@@ -133,7 +133,7 @@ MQTT.fx 使用 JavaFX 技术开发，可以保存多个连接配置，支持多�
 
 #### 下载
 
-MQTT X CLI 可以快速下载并安装到 macOS、Linux 和 Windows 系统上，**安装前不需要任何的依赖环境准备**，只需在终端内执行命令，即可安装和使用 MQTT X CLI。
+MQTTX CLI 可以快速下载并安装到 macOS、Linux 和 Windows 系统上，**安装前不需要任何的依赖环境准备**，只需在终端内执行命令，即可安装和使用 MQTTX CLI。
 
 立即下载试用：[https://mqttx.app/zh/cli](https://mqttx.app/zh/cli)
 
@@ -157,7 +157,7 @@ mqttx pub -t 'mqttx/cli' -h 'broker.emqx.io' -p 1883 -m 'hello from MQTTX CLI!'
 mqttx pub -t 'mqttx/cli' -h 'broker.emqx.io' -p 1883 -s -M
 ```
 
-MQTT X CLI 支持一个 `pub` 命令可以发布多条消息的功能，只需要在编辑是在命令中添加一个 `-M` 参数和 `-s` 参数，每次输入完成后换行即可。
+MQTTX CLI 支持一个 `pub` 命令可以发布多条消息的功能，只需要在编辑是在命令中添加一个 `-M` 参数和 `-s` 参数，每次输入完成后换行即可。
 
 性能测试
 

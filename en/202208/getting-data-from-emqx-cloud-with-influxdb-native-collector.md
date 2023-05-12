@@ -251,7 +251,7 @@ How to know if the integration is a success?  Simple answer: Let’s send a mess
 
 #### Choose an MQTT client
 
-Use can use any MQTT client as you like. In this tutorial, I will use [MQTT X](https://mqttx.app/), a user-friendly MQTT desktop application that is good for testing purposes.
+Use can use any MQTT client as you like. In this tutorial, I will use [MQTTX](https://mqttx.app/), a user-friendly MQTT desktop application that is good for testing purposes.
 
 ![Create New Connection](https://assets.emqx.com/images/0a1b227fb93b3a9c9a39cde30f00cf9f.jpeg)
 
@@ -259,7 +259,7 @@ Use can use any MQTT client as you like. In this tutorial, I will use [MQTT X](h
 
 #### Connect to EMQX Cloud
 
-Click ‘New Connection’ on MQTT X and fill out the connection form:
+Click ‘New Connection’ on MQTTX and fill out the connection form:
 
 ![Set Connection Details](https://assets.emqx.com/images/006caa8977541d5da34f6887adf99dac.jpeg)
 
@@ -298,7 +298,7 @@ Click the Send icon on the right. You can change the temperature value and send 
 
 #### Check the data on InfluxDB Cloud
 
-Now, it's time to view the data on InfluxDB Cloud. Ideally, the data you send using MQTT X will go into EMQX Cloud and then be persisted to the target bucket in InfluxDB Cloud.
+Now, it's time to view the data on InfluxDB Cloud. Ideally, the data you send using MQTTX will go into EMQX Cloud and then be persisted to the target bucket in InfluxDB Cloud.
 
 ![Go to Data Explorer](https://assets.emqx.com/images/9637a3dd3ff93d0afa9784221b8f833c.jpeg)
 

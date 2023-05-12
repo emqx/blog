@@ -118,9 +118,9 @@ npx react-native run-ios
 
 ### MQTT 连接测试
 
-这里使用 [MQTT 5.0 客户端工具 - MQTT X](https://mqttx.app/zh) 进行相关测试，创建一个名为 react-native-demo 的连接，所有配置项均使用默认值，点击连接按钮，连接成功后添加一个主题名称为 testTopic 的订阅，显示如下：
+这里使用 [MQTT 5.0 客户端工具 - MQTTX](https://mqttx.app/zh) 进行相关测试，创建一个名为 react-native-demo 的连接，所有配置项均使用默认值，点击连接按钮，连接成功后添加一个主题名称为 testTopic 的订阅，显示如下：
 
-![MQTT 5.0 客户端工具 - MQTT X](https://assets.emqx.com/images/f4b8a59a025f95cf712c26e9482419d3.png)
+![MQTT 5.0 客户端工具 - MQTTX](https://assets.emqx.com/images/f4b8a59a025f95cf712c26e9482419d3.png)
 
 #### 连接
 
@@ -140,17 +140,17 @@ npx react-native run-ios
 
 ![MQTT 消息发布](https://assets.emqx.com/images/b6cc5c392784791198c10660380dd39c.png)
 
-同时在 MQTT X 的 react-native-demo 连接下，也往 `testTopic` 主题发布一些消息，同时也能看到客户端 id 为 id_67458 往该主题发布的消息，显示如下：
+同时在 MQTTX 的 react-native-demo 连接下，也往 `testTopic` 主题发布一些消息，同时也能看到客户端 id 为 id_67458 往该主题发布的消息，显示如下：
 
 ![MQTT 消息发布](https://assets.emqx.com/images/2aec69acb78aeddc53cc11531298e697.png)
 
 #### 取消订阅
 
-在 APP 中点击 UNSCRIBE 按钮，然后在 MQTT X 上继续往 testTopic 主题发布一条内容为 `{ "msg": "hello test" }` 的消息，显示如下：
+在 APP 中点击 UNSCRIBE 按钮，然后在 MQTTX 上继续往 testTopic 主题发布一条内容为 `{ "msg": "hello test" }` 的消息，显示如下：
 
 ![MQTT 消息发布](https://assets.emqx.com/images/c9c7b3cb40785fbf111b6c6487774fa0.png)
 
-取消订阅 testTopic 主题后，未收到 MQTT X 往该主题发布的消息 `{ "msg": "hello test" }`
+取消订阅 testTopic 主题后，未收到 MQTTX 往该主题发布的消息 `{ "msg": "hello test" }`
 
 ![MQTT 取消订阅](https://assets.emqx.com/images/27caa87029972c19f711ba986b3638e8.png)
 

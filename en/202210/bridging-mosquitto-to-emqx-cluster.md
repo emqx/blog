@@ -118,7 +118,7 @@ No parameters need to be configured when the public server is used. In practical
 
 ## Test configuration
 
-We can use the [MQTT client tool](https://www.emqx.com/en/blog/mqtt-client-tools) to test whether the configuration of the MQTT bridge is successful. Here [MQTT X CLI](https://mqttx.app/cli) is used, which is a powerful and easy-to-use MQTT 5.0 command line tool developed by EMQ.
+We can use the [MQTT client tool](https://www.emqx.com/en/blog/mqtt-client-tools) to test whether the configuration of the MQTT bridge is successful. Here [MQTTX CLI](https://mqttx.app/cli) is used, which is a powerful and easy-to-use MQTT 5.0 command line tool developed by EMQ.
 
 ### Test the out direction of the bridge
 

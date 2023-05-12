@@ -231,7 +231,7 @@ Execute the MQTT message publishing code and we will see that the client connect
 ![hbmqtt_pub.png](https://assets.emqx.com/images/afb947f2a8af5b2b3485d43ad1bfd739.png)
 
 
-The following is that the [MQTT X](https://mqttx.app/) client successfully received the messages published by the HBMQTT client.
+The following is that the [MQTTX](https://mqttx.app/) client successfully received the messages published by the HBMQTT client.
 
 ![mqttx_sub.png](https://assets.emqx.com/images/b16f8c811d7528ed80d98ef3ffb6ccf1.png)
 
@@ -241,7 +241,7 @@ Executing the MQTT message subscription code, we will see that the client is suc
 
 ![running_sub_py.png](https://assets.emqx.com/images/48740199e70903cc21f24360d5101a6a.png)
 
-Use the MQTT X client to connect to broker.emqx.io and then send a message 10 times to topic a/b.
+Use the MQTTX client to connect to broker.emqx.io and then send a message 10 times to topic a/b.
 
 ![pub_from_mqttx.png](https://assets.emqx.com/images/2d3c9a2fc3fb320b643b47f119141ec0.png)
 

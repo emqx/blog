@@ -65,15 +65,15 @@ Finally, send the processed data by MQTT after the above data processing and fil
 
 ## Test
 
-After finishing the function arrangement of the whole stream data processing, we use [MQTT 5.0 client - MQTT X](https://mqttx.app) to test and validate the usability of this function. We create a new connection, connect it with the MQTT cloud service address previously configured in Node-RED, and then enter the Topic in the MQTT in node to send a message, so that Node-RED can receive the MQTT data we have sent.
+After finishing the function arrangement of the whole stream data processing, we use [MQTT 5.0 client - MQTTX](https://mqttx.app) to test and validate the usability of this function. We create a new connection, connect it with the MQTT cloud service address previously configured in Node-RED, and then enter the Topic in the MQTT in node to send a message, so that Node-RED can receive the MQTT data we have sent.
 
-Then we subscribe to a Topic configured in MQTT X node to receive the processed message data. When a message data containing temperature and humidity information is sent, we can receive a message sent according to the message template we set, but we can't receive it again if it is sent again.
+Then we subscribe to a Topic configured in MQTTX node to receive the processed message data. When a message data containing temperature and humidity information is sent, we can receive a message sent according to the message template we set, but we can't receive it again if it is sent again.
 
-![MQTT X publish messages](https://assets.emqx.com/images/d7f584d50d337c45918af3f3187e522b.png)
+![MQTTX publish messages](https://assets.emqx.com/images/d7f584d50d337c45918af3f3187e522b.png)
 
 As the temperature value has not changed at this time, and when we modify the temperature value again, we will find that we have received another message reminding us that the temperature value has changed.
 
-![MQTT X receive messages](https://assets.emqx.com/images/04d009b040ca894f026a4beb34014f92.png)
+![MQTTX receive messages](https://assets.emqx.com/images/04d009b040ca894f026a4beb34014f92.png)
 
 ## Summary
 

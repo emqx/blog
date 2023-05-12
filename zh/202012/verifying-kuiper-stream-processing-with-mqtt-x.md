@@ -1,4 +1,4 @@
-本篇文章将使用 MQTT X 的脚本及定时功能模拟温湿度数据上报，EMQX Edge 作为消息中间件进行消息转发，EMQX Kuiper 进行消息接收并进行规则处理，最终将处理过的数据通过 EMQX Edge 下发到 MQTT X。
+本篇文章将使用 MQTTX 的脚本及定时功能模拟温湿度数据上报，EMQX Edge 作为消息中间件进行消息转发，EMQX Kuiper 进行消息接收并进行规则处理，最终将处理过的数据通过 EMQX Edge 下发到 MQTTX。
 
 ![mqttxedgekuiper.png](https://assets.emqx.com/images/9f96444f39724baa8ed5ee6d814618ed.png)
 
@@ -54,15 +54,15 @@ $ docker pull emqx/emqx-edge:4.2.4
 $ docker run -d --name emqx -p 1883:1883 emqx/emqx-edge:4.2.4
 ```
 
-### MQTT X
+### MQTTX
 
-[MQTT X](https://mqttx.app/zh) 是由一款跨平台 [MQTT 5.0](https://www.emqx.com/zh/mqtt/mqtt5) 桌面测试客户端，它支持 macOS，Linux，Windows。用户可以快速创建多个同时在线的 **MQTT 客户端**，方便测试 MQTT/TCP、MQTT/TLS、MQTT/WebSocket 的连接/发布/订阅功能及其他 **MQTT 协议** 特性。项目地址：[https://github.com/emqx/MQTTX](https://github.com/emqx/MQTTX)
+[MQTTX](https://mqttx.app/zh) 是由一款跨平台 [MQTT 5.0](https://www.emqx.com/zh/mqtt/mqtt5) 桌面测试客户端，它支持 macOS，Linux，Windows。用户可以快速创建多个同时在线的 **MQTT 客户端**，方便测试 MQTT/TCP、MQTT/TLS、MQTT/WebSocket 的连接/发布/订阅功能及其他 **MQTT 协议** 特性。项目地址：[https://github.com/emqx/MQTTX](https://github.com/emqx/MQTTX)
 
 > 版本：v1.4.2
 
 [下载链接](https://mqttx.app/zh) | [GitHub](https://github.com/emqx/MQTTX/releases/tag/v1.4.2)
 
-用户可到 MQTT X 官网或 GitHub 下载页下载所对应操作系统的安装包进行安装使用。
+用户可到 MQTTX 官网或 GitHub 下载页下载所对应操作系统的安装包进行安装使用。
 
 Mac 用户可在 App Store 中进行下载：[https://apps.apple.com/cn/app/mqttx/id1514074565?mt=12](https://apps.apple.com/cn/app/mqttx/id1514074565?mt=12)
 
@@ -156,11 +156,11 @@ CREATE STREAM demo (
 }
 ```
 
-点击 `提交` 按钮后，我们就成功创建了一条规则。至此，我们就已经完成了 Kuiper 数据流和规则配置，接下来我们将使用 MQTT X 来测试和验证 Kuiper 的流处理功能。
+点击 `提交` 按钮后，我们就成功创建了一条规则。至此，我们就已经完成了 Kuiper 数据流和规则配置，接下来我们将使用 MQTTX 来测试和验证 Kuiper 的流处理功能。
 
-### MQTT X 使用
+### MQTTX 使用
 
-下载安装完成后，打开 MQTT X，我们新建一个名为 `edge1` 的连接，连接到和 Kuiper Source 配置相同的 EMQX Edge 上。测试连接成功后，我们进入到 ` 脚本` 页面，使用以下提供的示例脚本，来生成模拟数据。
+下载安装完成后，打开 MQTTX，我们新建一个名为 `edge1` 的连接，连接到和 Kuiper Source 配置相同的 EMQX Edge 上。测试连接成功后，我们进入到 ` 脚本` 页面，使用以下提供的示例脚本，来生成模拟数据。
 
 ```javascript
 /**
@@ -188,7 +188,7 @@ execute(handlePayload)
 
 ![mqttxscript.png](https://assets.emqx.com/images/5aef8144b3c75fab5730afd7f7545c31.png)
 
-测试发现模拟数据成功，我们到连接页面中，打开脚本使用功能（使用脚本功能本文不做详细描述，可参考 [MQTT X 文档](https://github.com/emqx/MQTTX/blob/main/docs/manual-cn.md#%E8%84%9A%E6%9C%AC)），输入发送的  `Payload`  数据模版为  `{}` ，输入 `Topic` 为流定义中的 `Data Source`，这里就填写 `/kuiper/stream`，然后设置定时消息，设置发送频率为 1 秒，然后点击发送一条消息成功后，MQTT X 将每秒自动发送一条模拟测试数据。
+测试发现模拟数据成功，我们到连接页面中，打开脚本使用功能（使用脚本功能本文不做详细描述，可参考 [MQTTX 文档](https://github.com/emqx/MQTTX/blob/main/docs/manual-cn.md#%E8%84%9A%E6%9C%AC)），输入发送的  `Payload`  数据模版为  `{}` ，输入 `Topic` 为流定义中的 `Data Source`，这里就填写 `/kuiper/stream`，然后设置定时消息，设置发送频率为 1 秒，然后点击发送一条消息成功后，MQTTX 将每秒自动发送一条模拟测试数据。
 
 ![mqttxtimed.png](https://assets.emqx.com/images/6358d2d739f455bb36670269eb3e2c52.png)
 
@@ -202,7 +202,7 @@ execute(handlePayload)
 
 ![kuiperrulestatus.png](https://assets.emqx.com/images/73b59e082e4af79cdc8c7491b6fed441.png)
 
-然后继续查看 MQTT X 内的信息，`edge1` 一共定时发送了 40 条模拟消息，切换到 `edge2` 可以查看到一共收到 14 条消息。发送和接收数据和 Kuiper 内统计流入流出数据一致，且查看接收到的消息中的 `temperature` 都完全大于 30，满足了我们在 Kuiper 中设置的过滤条件。说明我们的 Kuiper 流处理功能已经成功完成了我们所设置的数据处理需求，测试和验证成功。
+然后继续查看 MQTTX 内的信息，`edge1` 一共定时发送了 40 条模拟消息，切换到 `edge2` 可以查看到一共收到 14 条消息。发送和接收数据和 Kuiper 内统计流入流出数据一致，且查看接收到的消息中的 `temperature` 都完全大于 30，满足了我们在 Kuiper 中设置的过滤条件。说明我们的 Kuiper 流处理功能已经成功完成了我们所设置的数据处理需求，测试和验证成功。
 
 ![mqttxsend.png](https://assets.emqx.com/images/3aabe367e47e56a41033aa3a6cfed18e.png)
 
@@ -214,7 +214,7 @@ execute(handlePayload)
 
 ## 总结
 
-至此，本文就完成了一个使用 MQTT X 客户端验证 Kuiper 流处理的功能的简易教程。Kuiper 可以运行在各类物联网的边缘使用场景中，通过 Kuiper 在边缘端的处理，可以提升系统响应速度，节省网络带宽费用和存储成本，以及提高系统安全性等。
+至此，本文就完成了一个使用 MQTTX 客户端验证 Kuiper 流处理的功能的简易教程。Kuiper 可以运行在各类物联网的边缘使用场景中，通过 Kuiper 在边缘端的处理，可以提升系统响应速度，节省网络带宽费用和存储成本，以及提高系统安全性等。
 
 除文章中所示例的 MQTT Source 和 MQTT Sink 外，Kuiper 还内置了许多多样化的 Source 和 Sink 配置，并且包含了与 EdgeX Foundry、KubeEdge、EMQX Edge 等的集成能力。规则 SQL 内还支持 60+ 常见的函数，提供扩展点可以扩展自定义函数。提供了强大的插件系统，高度可扩展。
 

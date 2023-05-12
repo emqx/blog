@@ -109,34 +109,34 @@ if __name__ == '__main__':
 
 ## 测试
 
-接下来我们使用 [MQTT 客户端 - MQTT X](https://mqttx.app/zh) 进行连接、订阅、发布测试。
+接下来我们使用 [MQTT 客户端 - MQTTX](https://mqttx.app/zh) 进行连接、订阅、发布测试。
 
 ### 测试消息接收
 
-1. 在 MQTT X 中创建链接并连接到服务器。
+1. 在 MQTTX 中创建链接并连接到服务器。
 
-   ![MQTT X 中创建链接](https://assets.emqx.com/images/0813905d4d732565476cdbf5275a65e2.png)
+   ![MQTTX 中创建链接](https://assets.emqx.com/images/0813905d4d732565476cdbf5275a65e2.png)
 
-2. 在 MQTT X 中向 `/flask/mqtt` 主题发布消息 `Hello from MQTT X`。
+2. 在 MQTTX 中向 `/flask/mqtt` 主题发布消息 `Hello from MQTTX`。
 
-   ![MQTT X 消息发布](https://assets.emqx.com/images/b4b533b9113da3735304c7b38397aa12.png)
+   ![MQTTX 消息发布](https://assets.emqx.com/images/b4b533b9113da3735304c7b38397aa12.png)
 
-3. 在 Flask 运行窗口中将能看到 MQTT X 发送的消息。
+3. 在 Flask 运行窗口中将能看到 MQTTX 发送的消息。
 
    ![Flask 接收 MQTT 消息](https://assets.emqx.com/images/ce56d6aa495c5193f0fe8fd63c911c40.png)
 
 
 ### 测试消息发布接口
 
-1. 在 MQTT X 中订阅 `/flask/mqtt` 主题。
+1. 在 MQTTX 中订阅 `/flask/mqtt` 主题。
 
-   ![MQTT X 订阅主题](https://assets.emqx.com/images/b2d98f1d30a9158444c2894294014dcf.png)
+   ![MQTTX 订阅主题](https://assets.emqx.com/images/b2d98f1d30a9158444c2894294014dcf.png)
 
 2. 使用 Postman 调用 `/publish` 接口：发送消息 `Hello from Flask` 至 `/flask/mqtt` 主题。
 
    ![Postman 调用发布接口](https://assets.emqx.com/images/901ac5434b526edd82c413c26cf21c72.png)
 
-3. 在 MQTT X 中将能看到 Flask 发送过来的消息。
+3. 在 MQTTX 中将能看到 Flask 发送过来的消息。
 
    ![Flask 发布 MQTT 消息](https://assets.emqx.com/images/3bcb310ab66fdb20b2f3d169673dd4b7.png)
 

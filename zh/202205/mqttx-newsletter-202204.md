@@ -1,4 +1,4 @@
->MQTT X 是一款由 EMQ 开源的 MQTT 5.0 跨平台桌面客户端。支持快速创建多个同时在线的 MQTT 客户端连接，方便测试 MQTT/TCP、MQTT/TLS、MQTT/WebSocket 的连接、发布、订阅功能及其他 MQTT 协议特性。
+>MQTTX 是一款由 EMQ 开源的 MQTT 5.0 跨平台桌面客户端。支持快速创建多个同时在线的 MQTT 客户端连接，方便测试 MQTT/TCP、MQTT/TLS、MQTT/WebSocket 的连接、发布、订阅功能及其他 MQTT 协议特性。
 >
 >社区站网址：[https://mqttx.app/zh](https://mqttx.app/zh) 
 >

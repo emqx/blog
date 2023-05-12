@@ -109,34 +109,34 @@ if __name__ == '__main__':
 
 ## Test
 
-Now, we use the [MQTT client - MQTT X](https://mqttx.app) to connect, subscribe, and publish tests.
+Now, we use the [MQTT client - MQTTX](https://mqttx.app) to connect, subscribe, and publish tests.
 
 ### Receive message
 
-1. Create a connection in MQTT X and connect to the MQTT server.
+1. Create a connection in MQTTX and connect to the MQTT server.
 
-   ![MQTT X new connection](https://assets.emqx.com/images/0813905d4d732565476cdbf5275a65e2.png)
+   ![MQTTX new connection](https://assets.emqx.com/images/0813905d4d732565476cdbf5275a65e2.png)
 
-2. Publish `Hello from MQTT X` to the `/flask/mqtt` topic in MQTT X.
+2. Publish `Hello from MQTTX` to the `/flask/mqtt` topic in MQTTX.
 
-   ![MQTT X publish MQTT message](https://assets.emqx.com/images/b4b533b9113da3735304c7b38397aa12.png)
+   ![MQTTX publish MQTT message](https://assets.emqx.com/images/b4b533b9113da3735304c7b38397aa12.png)
 
-3. We will see the message sent by MQTT X in the Flask running window.
+3. We will see the message sent by MQTTX in the Flask running window.
 
    ![Flask receive MQTT message](https://assets.emqx.com/images/ce56d6aa495c5193f0fe8fd63c911c40.png)
 
 
 ### Publish message
 
-1. Subscribe to the `/flask/mqtt` topic in MQTT X.
+1. Subscribe to the `/flask/mqtt` topic in MQTTX.
 
-   ![MQTT X subscribe](https://assets.emqx.com/images/b2d98f1d30a9158444c2894294014dcf.png)
+   ![MQTTX subscribe](https://assets.emqx.com/images/b2d98f1d30a9158444c2894294014dcf.png)
 
 2. Use Postman to call the `/publish` API: Send the message `Hello from Flask` to the `/flask/mqtt` topic.
 
    ![Postman test](https://assets.emqx.com/images/901ac5434b526edd82c413c26cf21c72.png)
 
-3. We can see the message sent from Flask in MQTT X.
+3. We can see the message sent from Flask in MQTTX.
 
    ![Flask publish MQTT message](https://assets.emqx.com/images/3bcb310ab66fdb20b2f3d169673dd4b7.png)
 

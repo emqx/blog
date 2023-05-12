@@ -1,14 +1,14 @@
-[MQTT X](https://mqttx.app/) is a fully open-source cross-platform MQTT 5.0 desktop client open-sourced by [EMQ](https://www.emqx.com/en), It supports macOS, Linux, and Windows systems. Makes it easy and quick to create multiple simultaneous online MQTT client connections, test the connection, publish, and subscribe functions of MQTT/TCP, MQTT/TLS, MQTT/WebSocket as well as other [MQTT protocol](https://www.emqx.com/en/mqtt) features.
+[MQTTX](https://mqttx.app/) is a fully open-source cross-platform MQTT 5.0 desktop client open-sourced by [EMQ](https://www.emqx.com/en), It supports macOS, Linux, and Windows systems. Makes it easy and quick to create multiple simultaneous online MQTT client connections, test the connection, publish, and subscribe functions of MQTT/TCP, MQTT/TLS, MQTT/WebSocket as well as other [MQTT protocol](https://www.emqx.com/en/mqtt) features.
 
-> MQTT X website: [https://mqttx.app/](https://mqttx.app/)
+> MQTTX website: [https://mqttx.app/](https://mqttx.app/)
 >
-> MQTT X v1.7.1 download: [https://github.com/emqx/MQTTX/releases/tag/v1.7.1 ](https://github.com/emqx/MQTTX/releases/tag/v1.7.1 )
+> MQTTX v1.7.1 download: [https://github.com/emqx/MQTTX/releases/tag/v1.7.1 ](https://github.com/emqx/MQTTX/releases/tag/v1.7.1 )
 >
 > Mac users can download it in the App Store: [https://apps.apple.com/us/app/mqttx/id1514074565?mt=12](https://apps.apple.com/us/app/mqttx/id1514074565?mt=12)
 >
 > Linux users can download it in Snapcraft: [https://snapcraft.io/mqttx](https://snapcraft.io/mqttx)
 
-![MQTT X](https://assets.emqx.com/images/ed504e3746e5b9d67360ccd359d463df.png)
+![MQTTX](https://assets.emqx.com/images/ed504e3746e5b9d67360ccd359d463df.png)
 
 ## New Features Preview
 
@@ -57,7 +57,7 @@ In addition to the above new features, it also fixes many known issues in this u
 
 ## Product Roadmap
 
-MQTT X is still in the process of continuous enhancement and improvement, to bring more practical and powerful functions to users and facilitate the testing and development of IoT platforms.
+MQTTX is still in the process of continuous enhancement and improvement, to bring more practical and powerful functions to users and facilitate the testing and development of IoT platforms.
 
 Next, we will focus on the following aspects:
 
@@ -68,6 +68,6 @@ Next, we will focus on the following aspects:
 
 ## Conclusion
 
-MQTT X is designed to connect to test MQTT Brokers such as EMQX. The one-click connection and a clean graphical interface make it easy to explore and debug MQTT features. MQTT X provides comprehensive testing capabilities for MQTT features. Fully open-source and community-driven makes it integrated with more rich, powerful, user-friendly features. With MQTT X and EMQX - the cloud-native distributed messaging broker, we believe that the test and development of IoT platforms will become easier.
+MQTTX is designed to connect to test MQTT Brokers such as EMQX. The one-click connection and a clean graphical interface make it easy to explore and debug MQTT features. MQTTX provides comprehensive testing capabilities for MQTT features. Fully open-source and community-driven makes it integrated with more rich, powerful, user-friendly features. With MQTTX and EMQX - the cloud-native distributed messaging broker, we believe that the test and development of IoT platforms will become easier.
 
-The MQTT X project is completely open-source. You can go to [GitHub](https://github.com/emqx/MQTTX/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc) to submit the problems encountered during use, or fork the MQTT X project to submit a revised PR to us. We will review and deal with it in time. We would also like to thank all users in the community for their contributions and feedback. The use and affirmation of each community user is the driving force for the advancement of our products.
+The MQTTX project is completely open-source. You can go to [GitHub](https://github.com/emqx/MQTTX/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc) to submit the problems encountered during use, or fork the MQTTX project to submit a revised PR to us. We will review and deal with it in time. We would also like to thank all users in the community for their contributions and feedback. The use and affirmation of each community user is the driving force for the advancement of our products.

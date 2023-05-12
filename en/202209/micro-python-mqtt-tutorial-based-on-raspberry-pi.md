@@ -143,7 +143,7 @@ In the above codes, we call the publish() function to send a message to the topi
 
 ## Testing
 
-We use the [MQTT 5.0 client tool - MQTT X](https://mqttx.app/) to perform the following tests.
+We use the [MQTT 5.0 client tool - MQTTX](https://mqttx.app/) to perform the following tests.
 
 ### Test subscribe
 
@@ -155,17 +155,17 @@ We use the [MQTT 5.0 client tool - MQTT X](https://mqttx.app/) to perform the fo
 
    ![micropython sub](https://assets.emqx.com/images/5aceddabb0706609862ba8f6c8436c14.png)
 
-2. Use the MQTT X client to connect with the MQTT server and send messages to the topic `raspberry/mqtt`.
+2. Use the MQTTX client to connect with the MQTT server and send messages to the topic `raspberry/mqtt`.
 
    ![MQTT client tool](https://assets.emqx.com/images/8ebd27d6b93c80dd77a44571557e8bfe.png)
 
-3. Check the Raspberry Pi terminal information and you will see that the MQTT X publish messages have been successfully received.
+3. Check the Raspberry Pi terminal information and you will see that the MQTTX publish messages have been successfully received.
 
    ![Receive MQTT messages](https://assets.emqx.com/images/30cf035b0136f7991990705ed76ec24f.png)
 
 ### Test publish
 
-1. Subscribe to the `raspberry/mqtt` topic in the MQTT X client.
+1. Subscribe to the `raspberry/mqtt` topic in the MQTTX client.
 
 2. Run the MicroPython code in the terminal and publish the message.
 
@@ -175,9 +175,9 @@ We use the [MQTT 5.0 client tool - MQTT X](https://mqttx.app/) to perform the fo
 
    ![Publish MQTT messages](https://assets.emqx.com/images/cdd350b4bb8e9506225f922de1e295dd.png)
 
-3. In the MQTT X client, view the messages sent by the Raspberry Pi.
+3. In the MQTTX client, view the messages sent by the Raspberry Pi.
 
-   ![MQTT X subscribe](https://assets.emqx.com/images/94abe428d1a1431d288630e90fd17f57.png)
+   ![MQTTX subscribe](https://assets.emqx.com/images/94abe428d1a1431d288630e90fd17f57.png)
 
 
 ## Summary

@@ -180,11 +180,11 @@ We create the following simple browser application with Angular, which has the f
 
 ![Angular MQTTT APP](https://assets.emqx.com/images/5fbd7272ef81de85e2cd498762d52b63.png)
 
-Use [MQTT 5.0 client tool - MQTT X](https://mqttx.app/) as another client to test message sending & receiving.
+Use [MQTT 5.0 client tool - MQTTX](https://mqttx.app/) as another client to test message sending & receiving.
 
 ![MQTT Client](https://assets.emqx.com/images/1d5c27483ba0a80800ea3f43bc4e04ed.png)
 
-Before MQTT X sends a second message, unsubscribe at the browser side, and the browser side will not receive subsequent messages sent by MQTT X.
+Before MQTTX sends a second message, unsubscribe at the browser side, and the browser side will not receive subsequent messages sent by MQTTX.
 
 ## Summary
 

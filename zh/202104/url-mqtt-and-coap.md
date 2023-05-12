@@ -58,7 +58,7 @@ get "coap://host:port/mqtt/$topic?c=$client&u=$username&p=$password"
 
 #### Step 2：邀请第一位参会者，MQTT 客户端
 
-将 MQTT X（EMQ 旗下开源 MQTT 桌面客户端）连接至你的 EMQX Broker，并为它订阅主题 `coap_to_mqtt`。
+将 MQTTX（EMQ 旗下开源 MQTT 桌面客户端）连接至你的 EMQX Broker，并为它订阅主题 `coap_to_mqtt`。
 
 ![image20210410173501967.png](https://assets.emqx.com/images/161b58e547d1e123491c85dd3e18424a.png)
 
@@ -102,7 +102,7 @@ make
 
 
 
-我们可以看到 MQTT X 收到了来自 CoAP 的问候。
+我们可以看到 MQTTX 收到了来自 CoAP 的问候。
 
 ![image20210412165307589.png](https://assets.emqx.com/images/d9f62c3d50866c9f6c01ebf4f369ad16.png)
 
@@ -117,7 +117,7 @@ make
 
 
 
-MQTT X 发送 `hello coap, I am mqtt welcome to EMQX Wrold!`  至 `mqtt_to_coap` 主题。
+MQTTX 发送 `hello coap, I am mqtt welcome to EMQX Wrold!`  至 `mqtt_to_coap` 主题。
 
 ![image20210412165434332.png](https://assets.emqx.com/images/966dc4195705ae31e41842261fc7b164.png)
 

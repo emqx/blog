@@ -1,9 +1,9 @@
-Recently, MQTT X v1.7.0 was officially released by EMQ. From this version, MQTT X will further support many new features of [MQTT 5.0](https://www.emqx.com/en/mqtt/mqtt5), which is the most complete desktop test client tool that supports MQTT 5.0 in the world so far.
+Recently, MQTTX v1.7.0 was officially released by EMQ. From this version, MQTTX will further support many new features of [MQTT 5.0](https://www.emqx.com/en/mqtt/mqtt5), which is the most complete desktop test client tool that supports MQTT 5.0 in the world so far.
 
  
-MQTT X website: [https://mqttx.app/](https://mqttx.app/) 
+MQTTX website: [https://mqttx.app/](https://mqttx.app/) 
 
-MQTT X v1.7.0 download: [https://github.com/emqx/MQTTX/releases/tag/v1.7.0](https://github.com/emqx/MQTTX/releases/tag/v1.7.0) 
+MQTTX v1.7.0 download: [https://github.com/emqx/MQTTX/releases/tag/v1.7.0](https://github.com/emqx/MQTTX/releases/tag/v1.7.0) 
 
 Mac users can download it in the App Store: [https://apps.apple.com/us/app/mqttx/id1514074565?mt=12](https://apps.apple.com/us/app/mqttx/id1514074565?mt=12) 
 
@@ -15,11 +15,11 @@ v1.7.0 interface overview
 
 ## More comprehensive support for MQTT 5.0
 
-In 1.7.0, MQTT X adds a lot of support for the property configuration of MQTT 5.0, making it the most complete MQTT desktop client tool among similar tools that supports MQTT 5.0.
+In 1.7.0, MQTTX adds a lot of support for the property configuration of MQTT 5.0, making it the most complete MQTT desktop client tool among similar tools that supports MQTT 5.0.
 
-To use and test the features of MQTT 5.0, MQTT X v1.7.0 needs to be used with MQTT Broker that supports MQTT 5.0.
+To use and test the features of MQTT 5.0, MQTTX v1.7.0 needs to be used with MQTT Broker that supports MQTT 5.0.
 
-Cloud-native distributed [MQTT broker - EMQX](https://www.emqx.io) supports the MQTT 5.0 protocol since version 3.0. It is the first broker in the open-source community to support this protocol specification and is fully compatible with MQTT 3.1 and 3.1.1 protocols. Connecting to EMQX by Using MQTT X, you can quickly use and test the features of MQTT 5.0.
+Cloud-native distributed [MQTT broker - EMQX](https://www.emqx.io) supports the MQTT 5.0 protocol since version 3.0. It is the first broker in the open-source community to support this protocol specification and is fully compatible with MQTT 3.1 and 3.1.1 protocols. Connecting to EMQX by Using MQTTX, you can quickly use and test the features of MQTT 5.0.
 
 ### Support MQTT 5.0 User Properties
 
@@ -59,13 +59,13 @@ The control of automatic scrolling of the message list when receiving and publis
 
 ### Sync with the OS theme(macOS only)
 
-MQTT X currently supports three theme modes of Light, Dark, and Night, which need to be switched manually before. In the new version, this was optimized. When the system theme of the operating system changes, MQTT X can automatically switch the theme. When the macOS system topic is Dark Mode, MQTT X will automatically switch to the Night mode.
+MQTTX currently supports three theme modes of Light, Dark, and Night, which need to be switched manually before. In the new version, this was optimized. When the system theme of the operating system changes, MQTTX can automatically switch the theme. When the macOS system topic is Dark Mode, MQTTX will automatically switch to the Night mode.
 
 ### International expansion
 
-With the help of the community, the international expansion of MQTT X has gone further. In addition to supporting simplified Chinese, English, Japanese, and Turkish, we implemented Hungarian language support in version 1.7.0 with the help of a Hungarian contributor.
+With the help of the community, the international expansion of MQTTX has gone further. In addition to supporting simplified Chinese, English, Japanese, and Turkish, we implemented Hungarian language support in version 1.7.0 with the help of a Hungarian contributor.
 
-More community partners are welcome to participate and contribute to building a better MQTT X with us.
+More community partners are welcome to participate and contribute to building a better MQTTX with us.
 
 ## More refined product improving
 
@@ -84,7 +84,7 @@ In addition to the above new features, it also fixes many known issues in this u
 
 ## Product Roadmap
 
-MQTT X is still in the process of continuous enhancement and improvement, to bring more practical and powerful functions to users and facilitate the testing and development of IoT platforms.
+MQTTX is still in the process of continuous enhancement and improvement, to bring more practical and powerful functions to users and facilitate the testing and development of IoT platforms.
 
 Next, we will focus on the following aspects:
 
@@ -95,6 +95,6 @@ Next, we will focus on the following aspects:
 
 ## Conclusion
 
-MQTT X is designed to connect to test MQTT Brokers such as EMQX. The one-click connection and a clean graphical interface make it easy to explore and debug MQTT features. MQTT X provides comprehensive testing capabilities for MQTT features. Fully open-source and community-driven makes it integrated with more rich, powerful, user-friendly features. With MQTT X and EMQX - the cloud-native distributed messaging broker, we believe that the test and development of IoT platforms will become easier.
+MQTTX is designed to connect to test MQTT Brokers such as EMQX. The one-click connection and a clean graphical interface make it easy to explore and debug MQTT features. MQTTX provides comprehensive testing capabilities for MQTT features. Fully open-source and community-driven makes it integrated with more rich, powerful, user-friendly features. With MQTTX and EMQX - the cloud-native distributed messaging broker, we believe that the test and development of IoT platforms will become easier.
 
-The MQTT X project is completely open-source. You can go to [GitHub](https://github.com/emqx/MQTTX/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc) to submit the problems encountered during use, or fork the MQTT X project to submit a revised PR to us. We will review and deal with it in time. We would also like to thank all users in the community for their contributions and feedback. The use and affirmation of each community user is the driving force for the advancement of our products.
+The MQTTX project is completely open-source. You can go to [GitHub](https://github.com/emqx/MQTTX/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc) to submit the problems encountered during use, or fork the MQTTX project to submit a revised PR to us. We will review and deal with it in time. We would also like to thank all users in the community for their contributions and feedback. The use and affirmation of each community user is the driving force for the advancement of our products.

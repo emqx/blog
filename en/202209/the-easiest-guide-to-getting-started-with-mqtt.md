@@ -15,7 +15,7 @@ Currently, there are mature open-source MQTT client libraries for all programmin
 
 Or you can visit our [MQTT Client Programming](https://www.emqx.com/en/blog/tag/mqtt-client-programming) blog series to learn how to use MQTT in PHP, Node.js, Python, Golang, Node.js, and other programming languages.
 
-In this demonstration, we will use the MQTT client provided by MQTT X that supports browser access: [http://www.emqx.io/online-mqtt-client](http://www.emqx.io/online-mqtt-client). MQTT X also provides a [desktop client](https://mqttx.app/) and a [command line tool](https://mqttx.app/cli).
+In this demonstration, we will use the MQTT client provided by MQTTX that supports browser access: [http://www.emqx.io/online-mqtt-client](http://www.emqx.io/online-mqtt-client). MQTTX also provides a [desktop client](https://mqttx.app/) and a [command line tool](https://mqttx.app/cli).
 
 ### MQTT Broker
 

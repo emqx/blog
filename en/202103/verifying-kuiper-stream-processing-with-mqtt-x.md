@@ -1,4 +1,4 @@
-This article will use the MQTT X scripts and timing function to simulate reporting temperature and humidity data. EMQX Edge acts as the messaging middleware to forward messages, and EMQX Kuiper performs receiving messages and processing rules. Finally, the processed data will be sent to MQTT X via EMQX Edge.
+This article will use the MQTTX scripts and timing function to simulate reporting temperature and humidity data. EMQX Edge acts as the messaging middleware to forward messages, and EMQX Kuiper performs receiving messages and processing rules. Finally, the processed data will be sent to MQTTX via EMQX Edge.
 
 ![mqttxedgekuiper.png](https://assets.emqx.com/images/9f96444f39724baa8ed5ee6d814618ed.png)
 
@@ -54,15 +54,15 @@ $ docker pull emqx/emqx-edge:4.2.4
 $ docker run -d --name emqx -p 1883:1883 emqx/emqx-edge:4.2.4
 ```
 
-### MQTT X
+### MQTTX
 
-[MQTT X](https://mqttx.app/) is a cross-platform [MQTT 5.0](https://www.emqx.com/en/mqtt/mqtt5) desktop test client that supports macOS, Linux, Windows. Users can quickly create multiple simultaneous online **MQTT client** for convenient testing the connect/publish/subscribe functions of MQTT/TCP, MQTT/TLS, MQTT/WebSocket and other **MQTT protocol** features. 
+[MQTTX](https://mqttx.app/) is a cross-platform [MQTT 5.0](https://www.emqx.com/en/mqtt/mqtt5) desktop test client that supports macOS, Linux, Windows. Users can quickly create multiple simultaneous online **MQTT client** for convenient testing the connect/publish/subscribe functions of MQTT/TCP, MQTT/TLS, MQTT/WebSocket and other **MQTT protocol** features. 
 
 > Version: v1.4.2
 
 [Download link](https://mqttx.app/) | [GitHub](https://github.com/emqx/MQTTX/releases/tag/v1.4.2)
 
-Users can download the installation package according to their operating system from the MQTT X website or GitHub download page.
+Users can download the installation package according to their operating system from the MQTTX website or GitHub download page.
 
 Linux users can download in Snapcraft: [https://snapcraft.io/mqttx](https://snapcraft.io/mqttx)
 
@@ -154,11 +154,11 @@ In addition to the above visual creation methods, we can also switch to text mod
 }
 ```
 
-After clicking the `Submit` button, we have successfully created a rule. So far, we have completed the Kuiper data stream and rule configuration. Next we will use MQTT X to test and verify Kuiper's stream processing capabilities.
+After clicking the `Submit` button, we have successfully created a rule. So far, we have completed the Kuiper data stream and rule configuration. Next we will use MQTTX to test and verify Kuiper's stream processing capabilities.
 
-### The use of MQTT X
+### The use of MQTTX
 
-Once the download and installation is complete, we open MQTT X and create a new connection called `edge1` to an EMQX Edge with the same configuration as the Kuiper Source. After testing the connection successfully, we go to the `Scripts` page and use the example script provided below to generate the simulation data.
+Once the download and installation is complete, we open MQTTX and create a new connection called `edge1` to an EMQX Edge with the same configuration as the Kuiper Source. After testing the connection successfully, we go to the `Scripts` page and use the example script provided below to generate the simulation data.
 
 ```javascript
 /**
@@ -186,7 +186,7 @@ execute(handlePayload)
 
 ![mqttxscript.png](https://assets.emqx.com/images/5aef8144b3c75fab5730afd7f7545c31.png)
 
-Testing found that the simulated data was successful, and we went to the connection page, opened the script to use the function (using the script function is not described in detail in this article, you can refer to the [MQTT X documentation](https://github.com/emqx/MQTTX/blob/main/docs/manual-cn.md#%E8%84%9A%E6%9C%AC)). Enter the `Payload` data template to be sent as `{}`, enter `Topic` as the `Data Source` in the stream definition, in this case `/kuiper/stream`, then set the timing message, set the sending frequency to 1 second, then click Send. After the message has been successfully sent, MQTT X will automatically send one simulated test data per second.
+Testing found that the simulated data was successful, and we went to the connection page, opened the script to use the function (using the script function is not described in detail in this article, you can refer to the [MQTTX documentation](https://github.com/emqx/MQTTX/blob/main/docs/manual-cn.md#%E8%84%9A%E6%9C%AC)). Enter the `Payload` data template to be sent as `{}`, enter `Topic` as the `Data Source` in the stream definition, in this case `/kuiper/stream`, then set the timing message, set the sending frequency to 1 second, then click Send. After the message has been successfully sent, MQTTX will automatically send one simulated test data per second.
 
 ![mqttxtimed.png](https://assets.emqx.com/images/6358d2d739f455bb36670269eb3e2c52.png)
 
@@ -200,7 +200,7 @@ Once we have sent the simulated data, we can see if any messages are coming in o
 
 ![kuiperrulestatus.png](https://assets.emqx.com/images/73b59e082e4af79cdc8c7491b6fed441.png)
 
-Then continue to look at the messages within MQTT X. `edge1` has sent a total of 40 simulated messages at regular intervals, switching to `edge2` we see that a total of 14 messages have been received. The sent and received data is consistent with the Kuiper inflow and outflow data, and the `temperature` in the received messages is exactly above 30, which satisfies the filtering conditions we set in Kuiper. This means that our Kuiper stream processing function has successfully completed the data processing requirements we set, and the test and verification was successful.
+Then continue to look at the messages within MQTTX. `edge1` has sent a total of 40 simulated messages at regular intervals, switching to `edge2` we see that a total of 14 messages have been received. The sent and received data is consistent with the Kuiper inflow and outflow data, and the `temperature` in the received messages is exactly above 30, which satisfies the filtering conditions we set in Kuiper. This means that our Kuiper stream processing function has successfully completed the data processing requirements we set, and the test and verification was successful.
 
 ![mqttxsend.png](https://assets.emqx.com/images/3aabe367e47e56a41033aa3a6cfed18e.png)
 
@@ -212,7 +212,7 @@ In addition to viewing the information of data processed by Kuiper rules via the
 
 ## Summary
 
-This article completes an easy tutorial on using the MQTT X client to verify the function of Kuiper stream processing. Kuiper can be used in various IoT edge scenarios. The system response speed can be improved, network bandwidth costs and storage costs can be saved, and system security can be improved via the processing of Kuiper at the edge.
+This article completes an easy tutorial on using the MQTTX client to verify the function of Kuiper stream processing. Kuiper can be used in various IoT edge scenarios. The system response speed can be improved, network bandwidth costs and storage costs can be saved, and system security can be improved via the processing of Kuiper at the edge.
 
 In addition to the MQTT Source and MQTT Sink exemplified in the article, Kuiper has many diverse Source and Sink configurations built in and includes the ability to integrate with EdgeX Foundry, KubeEdge, EMQX Edge, etc. Rule SQL also support for 60+ common functions, provide extension points available to extend custom functions. A powerful plugin system is provided that is highly extensible.
 

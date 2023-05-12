@@ -382,13 +382,13 @@ function onDisconnect() {
 
 ### 客户端测试
 
-此时我们配合一款同样使用 Electron 编写的 [MQTT 5.0 客户端工具 - MQTT X](https://mqttx.app/zh) 进行消息的收发测试。
+此时我们配合一款同样使用 Electron 编写的 [MQTT 5.0 客户端工具 - MQTTX](https://mqttx.app/zh) 进行消息的收发测试。
 
-使用 MQTT X 向客户端发送一条消息时，可以看到能正常接收到消息：
+使用 MQTTX 向客户端发送一条消息时，可以看到能正常接收到消息：
 
 ![electronmessage.png](https://assets.emqx.com/images/bfb62b9f23f6836627d8e129d38b9160.png)
 
-使用自己编写的客户端向 MQTT X 发送一条消息，此时可以看到 MQTT X 也能正常接收到消息：
+使用自己编写的客户端向 MQTTX 发送一条消息，此时可以看到 MQTTX 也能正常接收到消息：
 
 ![mqttx.png](https://assets.emqx.com/images/cc97fe533fcce20765530970d7696f58.png)
 

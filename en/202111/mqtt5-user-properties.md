@@ -122,7 +122,7 @@ At this point, we can see that the User Properties configured just before publis
 
  
 
-For other clients, we will first support the user-defined configuration function for User Properties in subsequent versions of the cross-platform [MQTT 5.0 desktop client tool - MQTT X](https://mqttx.app/zh), which facilitates users to quickly test some new features of MQTT 5.0. Please look forward to it!
+For other clients, we will first support the user-defined configuration function for User Properties in subsequent versions of the cross-platform [MQTT 5.0 desktop client tool - MQTTX](https://mqttx.app/zh), which facilitates users to quickly test some new features of MQTT 5.0. Please look forward to it!
 
 
 <section class="promotion">

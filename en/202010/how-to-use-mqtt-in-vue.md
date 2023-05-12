@@ -224,11 +224,11 @@ The complete code for this project: [https://github.com/emqx/MQTT-Client-Example
 
 
 
-Use [MQTT 5.0 client tool - MQTT X](https://mqttx.app/) as another client to test messaging.
+Use [MQTT 5.0 client tool - MQTTX](https://mqttx.app/) as another client to test messaging.
 
 ![vuemqttx.png](https://assets.emqx.com/images/2013cbab1bdffcae69b817bfebb4a33f.png)
 
-If you unsubscribe on the browser side, before MQTT X sends the second message, the browser will not receive the subsequent messages from MQTT X.
+If you unsubscribe on the browser side, before MQTTX sends the second message, the browser will not receive the subsequent messages from MQTTX.
 
 
 

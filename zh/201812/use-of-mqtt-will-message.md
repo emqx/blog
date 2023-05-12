@@ -33,7 +33,7 @@ Will Properties 中的消息过期间隔（Message Expiry Interval）等属性�
 
 ### 演示遗嘱消息的使用
 
-接下来我们使用 [EMQX](https://www.emqx.io/zh) 和 [MQTT X](https://mqttx.app/zh) 来演示一下遗嘱消息的实际使用。
+接下来我们使用 [EMQX](https://www.emqx.io/zh) 和 [MQTTX](https://mqttx.app/zh) 来演示一下遗嘱消息的实际使用。
 
 为了实现 MQTT 连接被异常断开的效果，我们需要调整一下 EMQX 的默认 ACL 规则与相关配置项：
 
@@ -51,9 +51,9 @@ zone.internal.acl_deny_action = disconnect
 
 完成以上修改后，我们启动 EMQX。
 
-接下来，我们在 MQTT X 中新建一个名为 demo 的连接，Host 修改为 localhost，在 Advanced 部分选择 MQTT Version 为 5.0，并且将 Session Expiry Interval 设置为 10，确保会话不会在遗嘱消息发布前过期。
+接下来，我们在 MQTTX 中新建一个名为 demo 的连接，Host 修改为 localhost，在 Advanced 部分选择 MQTT Version 为 5.0，并且将 Session Expiry Interval 设置为 10，确保会话不会在遗嘱消息发布前过期。
 
-![MQTT X 创建连接](https://assets.emqx.com/images/944beb7b3bade0f748ef8ba941b75b18.png)
+![MQTTX 创建连接](https://assets.emqx.com/images/944beb7b3bade0f748ef8ba941b75b18.png)
 
 然后在 Lass Will and Testament 部分将 Last-Will Topic 设置为 offline，Last-Will Payload 设置为 `I'm offline`，Will Delay Interval (s) 设置为 5。
 

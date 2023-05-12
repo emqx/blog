@@ -10,7 +10,7 @@ In this project, we will implement connecting ESP8266 to [free public MQTT broke
 
 - ESP8266
 - Arduino IDE
-- [MQTT X](https://mqttx.app): Cross-platform MQTT 5.0 client tool
+- [MQTTX](https://mqttx.app): Cross-platform MQTT 5.0 client tool
 - The [free public MQTT broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker)
   - Broker: **broker.emqx.io**
   - TCP Port: **1883**
@@ -184,7 +184,7 @@ In this project, we will implement connecting ESP8266 to [free public MQTT broke
 
    ![esp_con.png](https://assets.emqx.com/images/4c97b1546d31021cc22c64ae7ce4863b.png)
 
-2. Establish the connection between the MQTT X client and the MQTT broker, and send messages to ESP8266
+2. Establish the connection between the MQTTX client and the MQTT broker, and send messages to ESP8266
 
    ![mqttx_pub.png](https://assets.emqx.com/images/daa2c401453155045f2c068bcd57d66a.png)
 

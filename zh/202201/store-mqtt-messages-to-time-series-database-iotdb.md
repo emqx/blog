@@ -184,11 +184,11 @@ IoTDB 要求消息内容是一个 JSON 格式，消息内容模板可以按照�
 
 ## 使用 MQTT Client 发送消息
 
-接下来我们使用 [MQTT 客户端工具 - MQTT X](https://mqttx.app/zh)，来发送一条消息给 EMQX：
+接下来我们使用 [MQTT 客户端工具 - MQTTX](https://mqttx.app/zh)，来发送一条消息给 EMQX：
 
-> MQTT X 是 EMQ 发布的一款完全开源的 MQTT 5.0 跨平台桌面客户端。支持快速创建多个同时在线的 MQTT 客户端连接，方便测试 MQTT/TCP、MQTT/TLS、MQTT/WebSocket 的连接、发布、订阅功能及其他 MQTT 协议特性。
+> MQTTX 是 EMQ 发布的一款完全开源的 MQTT 5.0 跨平台桌面客户端。支持快速创建多个同时在线的 MQTT 客户端连接，方便测试 MQTT/TCP、MQTT/TLS、MQTT/WebSocket 的连接、发布、订阅功能及其他 MQTT 协议特性。
 
-![MQTT 客户端工具 - MQTT X](https://assets.emqx.com/images/207d7a3cd3603ee89cdf82fcaabaecb0.png)
+![MQTT 客户端工具 - MQTTX](https://assets.emqx.com/images/207d7a3cd3603ee89cdf82fcaabaecb0.png)
 
 MQTT 客户端的连接参数里面，我们只需要填一个参数，Client ID："abc"，其他的保持默认值不变。
 

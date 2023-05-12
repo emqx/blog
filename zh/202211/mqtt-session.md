@@ -46,9 +46,9 @@ MQTT 3.1.1 没有规定持久会话应该在什么时候过期，如果仅从协
 
 比如 EMQ 提供的 [免费的公共 MQTT 服务器](https://www.emqx.com/zh/mqtt/public-mqtt5-broker) 设置的会话过期时间为 5 分钟，最大消息数为 1000 条，且不保存 QoS 0 消息。
 
-接下来我们使用开源的跨平台 [MQTT 5.0 桌面客户端工具 - MQTT X](https://mqttx.app/zh) 演示 Clean Session 的使用。
+接下来我们使用开源的跨平台 [MQTT 5.0 桌面客户端工具 - MQTTX](https://mqttx.app/zh) 演示 Clean Session 的使用。
 
-打开 MQTT X 后如下所示，点击 `New Connection` 按钮创建一个 [MQTT 连接](https://www.emqx.com/zh/blog/how-to-set-parameters-when-establishing-an-mqtt-connection)。
+打开 MQTTX 后如下所示，点击 `New Connection` 按钮创建一个 [MQTT 连接](https://www.emqx.com/zh/blog/how-to-set-parameters-when-establishing-an-mqtt-connection)。
 
 ![MQTT Client](https://assets.emqx.com/images/c3c89247952538c127839de49a398aec.png)
 

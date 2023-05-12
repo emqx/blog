@@ -10,7 +10,7 @@
 
 * ESP8266
 * Arduino IDE
-* [MQTT X](https://mqttx.app/zh):  优雅的跨平台 MQTT 5.0 客户端工具
+* [MQTTX](https://mqttx.app/zh):  优雅的跨平台 MQTT 5.0 客户端工具
 * 免费的公共 MQTT 服务器
   - Broker: **broker.emqx.io**
   - TCP Port: **1883**
@@ -188,7 +188,7 @@
 
    ![esp_con.png](https://assets.emqx.com/images/d5632144ec7cf22977b53519f4411227.png)
 
-2. 建立 MQTT X 客户端 与 MQTT 服务器的连接, 并向 ESP8266 发送消息
+2. 建立 MQTTX 客户端 与 MQTT 服务器的连接, 并向 ESP8266 发送消息
 
    ![mqttx_pub.png](https://assets.emqx.com/images/b8df461f137bc73aeb3aff1ae1126549.png)
 

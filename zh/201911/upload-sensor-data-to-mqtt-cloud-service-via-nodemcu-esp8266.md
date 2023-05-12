@@ -204,7 +204,7 @@
 
    ![esp_con.png](https://assets.emqx.com/images/d5632144ec7cf22977b53519f4411227.png)
 
-2. 建立 MQTT X 客户端 与 MQTT 服务器的连接, 并测试温湿度数据接收
+2. 建立 MQTTX 客户端 与 MQTT 服务器的连接, 并测试温湿度数据接收
 
    ![mqttx_sub.png](https://assets.emqx.com/images/esp8266_temp_hum.png)
 

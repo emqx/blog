@@ -190,9 +190,9 @@ Firstly, you need to connect the Android client to the MQTT broker then subscrib
 
 ![MQTT connect and subscribe](https://assets.emqx.com/images/7711763b664ee9c6f0860b50bb0934c4.png)
 
-We test with [MQTT 5.0 client tool - MQTT X](https://mqttx.app), publish messages to the topic: `a/b`, and then we can see the log of receiving messages on the client.
+We test with [MQTT 5.0 client tool - MQTTX](https://mqttx.app), publish messages to the topic: `a/b`, and then we can see the log of receiving messages on the client.
 
-![MQTT 5.0 Client Tool  MQTT X](https://assets.emqx.com/images/041917427b461f7d633faf3ff205b69d.png)
+![MQTT 5.0 Client Tool  MQTTX](https://assets.emqx.com/images/041917427b461f7d633faf3ff205b69d.png)
 
 ![receive MQTT messages](https://assets.emqx.com/images/8451743b47f3e31fbb87377dcc0111d5.png)
 

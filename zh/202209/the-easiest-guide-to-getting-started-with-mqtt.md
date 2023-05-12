@@ -14,7 +14,7 @@
 
 目前，基本所有的编程语言都有成熟的开源 MQTT 客户端库，读者可参考 EMQ 整理的 [MQTT 客户端库大全](https://www.emqx.com/zh/mqtt-client-sdk)选择一个合适的客户端库来构建满足自身业务需求的 MQTT 客户端。也可直接访问 EMQ 提供的 [MQTT 客户端编程](https://www.emqx.com/zh/blog/tag/mqtt-%E5%AE%A2%E6%88%B7%E7%AB%AF%E7%BC%96%E7%A8%8B)系列博客，学习如何在 Java、Python、PHP、Node.js 等编程语言中使用 MQTT。
 
-本次演示我们将使用由 MQTT X 提供的支持浏览器访问的在线 MQTT 客户端：[http://www.emqx.io/online-mqtt-client](http://www.emqx.io/online-mqtt-client)。MQTT X 是目前开源客户端中 GitHub Star 数最多的，它同时也提供了桌面客户端（[https://mqttx.app/zh](https://mqttx.app/zh)）与命令行客户端（[https://mqttx.app/zh/cli](https://mqttx.app/zh/cli)），感兴趣的读者可自行下载使用。
+本次演示我们将使用由 MQTTX 提供的支持浏览器访问的在线 MQTT 客户端：[http://www.emqx.io/online-mqtt-client](http://www.emqx.io/online-mqtt-client)。MQTTX 是目前开源客户端中 GitHub Star 数最多的，它同时也提供了桌面客户端（[https://mqttx.app/zh](https://mqttx.app/zh)）与命令行客户端（[https://mqttx.app/zh/cli](https://mqttx.app/zh/cli)），感兴趣的读者可自行下载使用。
 
 ### MQTT 服务器
 

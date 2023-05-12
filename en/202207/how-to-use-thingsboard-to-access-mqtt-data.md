@@ -88,11 +88,11 @@ EMQX Cloud Professional edition provides VPC peer-to-peer connectivity and a RES
 
 ## Integration Test
 
-After completing the above integration configuration, use the[MQTT 5.0 client tool](https://mqttx.app/), MQTT X, to simulate a device, in order to test and verify the effectiveness of the functionality.
+After completing the above integration configuration, use the[MQTT 5.0 client tool](https://mqttx.app/), MQTTX, to simulate a device, in order to test and verify the effectiveness of the functionality.
 
-1. Use MQTT X to connect to the EMQX Cloud deployment.
+1. Use MQTTX to connect to the EMQX Cloud deployment.
 
-   ![MQTT X](https://assets.emqx.com/images/69dfe498a84946388064161c9a5ff60b.png)
+   ![MQTTX](https://assets.emqx.com/images/69dfe498a84946388064161c9a5ff60b.png)
 
 2. After the connection is successfully established, simulate a device by sending temperature and humidity data to the filter topic /test/integration/emqxcloud, which was configured during the integration above.
 
@@ -116,7 +116,7 @@ After completing the above integration configuration, use the[MQTT 5.0 client to
 
    ![Add a new dashboard](https://assets.emqx.com/images/aac9e3cff12451c0085bb1670dd6d465.png)
 
-2. Open the Dashboard and click the orange edit icon in the bottom right corner. Then, follow the instructions in the figure to add an alias (define the data that will be used for the entity). Select “Single Entity” for Filter Type, “Device” for Type and select the Device Test device simulated by MQTT X above. After adding and saving all the configuration information, click the Apply icon in the bottom right corner.
+2. Open the Dashboard and click the orange edit icon in the bottom right corner. Then, follow the instructions in the figure to add an alias (define the data that will be used for the entity). Select “Single Entity” for Filter Type, “Device” for Type and select the Device Test device simulated by MQTTX above. After adding and saving all the configuration information, click the Apply icon in the bottom right corner.
 
    ![add an alias](https://assets.emqx.com/images/480159f0d87071bd83adee114f992bda.png)
 
@@ -138,17 +138,17 @@ After completing the above integration configuration, use the[MQTT 5.0 client to
 
    ![Drag and drop to resize the table](https://assets.emqx.com/images/396fe956e8fec5dae7d4cee7981c5850.png)
 
-   e. Go back to MQTT X, change the temperature value to 25 and humidity value to 80, publish a message again, and the corresponding data will be displayed in the table that was just configured.
+   e. Go back to MQTTX, change the temperature value to 25 and humidity value to 80, publish a message again, and the corresponding data will be displayed in the table that was just configured.
 
-   ![MQTT X publish](https://assets.emqx.com/images/7efc4dd65b32d21047f167f2a4567028.png)
+   ![MQTTX publish](https://assets.emqx.com/images/7efc4dd65b32d21047f167f2a4567028.png)
 
-4. Similar to step 3 above, click Add a widget, search for charts, select Timeseries Line Chart, configure this, click Apply, and change the live time range to the last 5 hours. Using MQTT X, send another set of data, and the corresponding data will be displayed in both components.
+4. Similar to step 3 above, click Add a widget, search for charts, select Timeseries Line Chart, configure this, click Apply, and change the live time range to the last 5 hours. Using MQTTX, send another set of data, and the corresponding data will be displayed in both components.
 
    ![click Add a widget](https://assets.emqx.com/images/31a94c3210c8fbdc2026cc965e7b5e0f.png)
 
 ## Summary
 
-At this point, we have finished integrating the EMQX Cloud deployment in ThingsBoard Cloud, verified the integration functionality using MQTT X tests, and finally configured a simple Dashboard to display the MQTT data. 
+At this point, we have finished integrating the EMQX Cloud deployment in ThingsBoard Cloud, verified the integration functionality using MQTTX tests, and finally configured a simple Dashboard to display the MQTT data. 
 
 In real projects, more complex Dashboard configurations can be performed after learning more about ThingsBoard. This will allow you to monitor device-related data in real-time detail visually and set alert thresholds to help you resolve issues in a timely manner.
 

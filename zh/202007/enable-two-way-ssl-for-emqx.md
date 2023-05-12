@@ -172,11 +172,11 @@ listener.ssl.external.fail_if_no_peer_cert = true
 
 ### MQTT 连接测试
 
-当配置完成并重启 EMQX 后，我们使用 [MQTT 客户端工具 - MQTT X](https://mqttx.app/zh)（该工具跨平台且支持 [MQTT 5.0](https://www.emqx.com/zh/mqtt/mqtt5)），来验证 TLS 双向认证服务是否正常运行。
+当配置完成并重启 EMQX 后，我们使用 [MQTT 客户端工具 - MQTTX](https://mqttx.app/zh)（该工具跨平台且支持 [MQTT 5.0](https://www.emqx.com/zh/mqtt/mqtt5)），来验证 TLS 双向认证服务是否正常运行。
 
-> MQTT X 版本要求：v1.3.2 及以上版本
+> MQTTX 版本要求：v1.3.2 及以上版本
 
-- 参照下图在 MQTT X 中创建 `MQTT 客户端`（Host 输入框里的 `127.0.0.1` 需替换为实际的 EMQX 服务器 IP）
+- 参照下图在 MQTTX 中创建 `MQTT 客户端`（Host 输入框里的 `127.0.0.1` 需替换为实际的 EMQX 服务器 IP）
 
   ![mqttxconfig.png](https://assets.emqx.com/images/a2ff0f2e94beed4423062473325932ae.png)
 

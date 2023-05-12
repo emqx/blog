@@ -6,12 +6,12 @@ In this article, we will set up a two-way TLS/SSL authentication for an EMQX Clo
 
 - Let's Encrypt, a free third-party Certificate Authority, will be used to certify a custom domain purchased from AWS Route 53, which will point to the EMQX Cloud deployment.
 - OpenSSL will be used for client-side TLS/SSL.
-- MQTT X will be used to validate the encrypted connection.
+- MQTTX will be used to validate the encrypted connection.
 
 ## Prerequisites
 
 - An [EMQX Cloud Professional deployment](https://docs.emqx.com/en/cloud/latest/create/overview.html) up and running: for this example, a deployment to AWS will be used.
-- An MQTT client installed: for this example, [MQTT X](https://mqttx.app/docs/downloading-and-installation) will be used.
+- An MQTT client installed: for this example, [MQTTX](https://mqttx.app/docs/downloading-and-installation) will be used.
 - A registered domain: for this example, [AWS Route 53](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/domain-register.html#domain-register-procedure) will be used.
 
 ## Create client-side self-signed certificate
@@ -162,15 +162,15 @@ More information from Let's Encrypt on their certificate chain can be found [her
 
      ![Client CA certificate](https://assets.emqx.com/images/838b6c63c9d43f5f8babe1423fe9e1c4.png)
 
-## Test two-way TLS/SSL with MQTT X
+## Test two-way TLS/SSL with MQTTX
 
 1. Ensure the existence of a username and password to connect to the deployment. Help creating users can be found [here](https://docs.emqx.com/en/cloud/latest/deployments/auth_overview.html#authentication).
 
 2. In the Let's Encrypt certificate directory, create a new `root.pem` file and add the root (last) certificate from `fullchain.pem`.
 
-3. Open MQTT X and create a new connection.
+3. Open MQTTX and create a new connection.
 
-   ![Open MQTT X](https://assets.emqx.com/images/54d61c5396c4cca7f71df8a8f8fdd78f.png)
+   ![Open MQTTX](https://assets.emqx.com/images/54d61c5396c4cca7f71df8a8f8fdd78f.png)
 
 4. Fill out the new connection prompt with the proper information and click "Connect".
 
@@ -189,12 +189,12 @@ More information from Let's Encrypt on their certificate chain can be found [her
 
    ![the connection is successful](https://assets.emqx.com/images/911f4b18b043a36e7f3215f1aff04e02.png)
 
->If you get a "Error: unable to get issuer certificate" message, [download](https://letsencrypt.org/certs/isrgrootx1.pem) the [ISRG Root X1 Self-signed](https://letsencrypt.org/certificates/) certificate and use it in the MQTT X "CA file" field. The error occurs because Let's Encrypt's default root certificate is itself certified with an older CA that recently expired, causing some devices to no longer trust it. More information [here](https://letsencrypt.org/docs/dst-root-ca-x3-expiration-september-2021/).
+>If you get a "Error: unable to get issuer certificate" message, [download](https://letsencrypt.org/certs/isrgrootx1.pem) the [ISRG Root X1 Self-signed](https://letsencrypt.org/certificates/) certificate and use it in the MQTTX "CA file" field. The error occurs because Let's Encrypt's default root certificate is itself certified with an older CA that recently expired, causing some devices to no longer trust it. More information [here](https://letsencrypt.org/docs/dst-root-ca-x3-expiration-september-2021/).
 
 
 ## Next steps
 
-Now we have finished setting up a two-way TLS authentication for an EMQX Cloud with a custom domain from Route 53 certified by Let’s Encrypt, tested with MQTT X. Two-way TLS/SSL can provide an important layer of security for communication over the internet, helping to protect sensitive information and prevent attacks.
+Now we have finished setting up a two-way TLS authentication for an EMQX Cloud with a custom domain from Route 53 certified by Let’s Encrypt, tested with MQTTX. Two-way TLS/SSL can provide an important layer of security for communication over the internet, helping to protect sensitive information and prevent attacks.
 
 Continue exploring what EMQX Cloud has to offer:
 

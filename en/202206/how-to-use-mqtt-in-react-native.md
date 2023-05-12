@@ -120,9 +120,9 @@ After that you will see the application run in the iOS emulator, where the clien
 
 ## MQTT Connection Test
 
-We will use the [MQTT 5.0 client tool - MQTT X](https://mqttx.app) to perform the relevant tests. Create a connection named react-native-demo, use the default values for all configuration items, click the connect button, and add a subscription with the topic name, `testTopic`, after a successful connection, as follows:
+We will use the [MQTT 5.0 client tool - MQTTX](https://mqttx.app) to perform the relevant tests. Create a connection named react-native-demo, use the default values for all configuration items, click the connect button, and add a subscription with the topic name, `testTopic`, after a successful connection, as follows:
 
-![MQTT Client - MQTT X](https://assets.emqx.com/images/b5953d65971448432bd25f305b410fb3.png)
+![MQTT Client - MQTTX](https://assets.emqx.com/images/b5953d65971448432bd25f305b410fb3.png)
 
 #### Connect
 
@@ -142,17 +142,17 @@ Enter the content of the message to be published, click the PUBLISH button after
 
 ![React Native MQTT publish](https://assets.emqx.com/images/20159b246e15ba5ef5a2b24fa85f75e0.png)
 
-At the same time, under the react-native-demo connection of MQTT X, we will also publish some messages to the `testTopic` topic. The messages published by client ID id_67458 to the topic can also be seen, which is displayed, as follows:
+At the same time, under the react-native-demo connection of MQTTX, we will also publish some messages to the `testTopic` topic. The messages published by client ID id_67458 to the topic can also be seen, which is displayed, as follows:
 
-![MQTT Client - MQTT X](https://assets.emqx.com/images/8be70d496c3332a2481dde78a9962087.png)
+![MQTT Client - MQTTX](https://assets.emqx.com/images/8be70d496c3332a2481dde78a9962087.png)
 
 #### Unsubscribe
 
-Click the UNSCRIBE button in the APP. Then, proceed to post a message with `{ "msg": "hello test" }` to the testTopic topic on MQTT X with the following display:
+Click the UNSCRIBE button in the APP. Then, proceed to post a message with `{ "msg": "hello test" }` to the testTopic topic on MQTTX with the following display:
 
-![MQTT Client - MQTT X](https://assets.emqx.com/images/d3ad89861b5683f3a9c0ca0da1354f4f.png)
+![MQTT Client - MQTTX](https://assets.emqx.com/images/d3ad89861b5683f3a9c0ca0da1354f4f.png)
 
-After unsubscribing from the testTopic topic, no message will be received from MQTT X for this topic `{ "msg": "hello test" }`.
+After unsubscribing from the testTopic topic, no message will be received from MQTTX for this topic `{ "msg": "hello test" }`.
 
 ![React Native MQTT unsubscribe](https://assets.emqx.com/images/9dedf4b4b26b55e4c90d835741bcba07.png)
 
