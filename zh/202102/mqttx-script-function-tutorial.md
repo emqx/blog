@@ -113,6 +113,6 @@ execute(handleTimestamp)
 
 ## 总结
 
-至此，我们完成了 MQTTX 的脚本实例使用的教程。该功能具有一定的扩展性和灵活性，需用户配合实际需求来进行使用。脚本使用实例可在 GitHub 仓库的 [/docs/script-example](https://github.com/emqx/MQTTX/tree/master/docs/script-example) 文件夹中查看，目前提供了两个内置脚本，时间戳转化和温湿度数据模拟。如果在您的使用中有更好的，更实用的脚本也可以提交您的代码到这里，方便让更多的人使用到。
+至此，我们完成了 MQTTX 的脚本实例使用的教程。该功能具有一定的扩展性和灵活性，需用户配合实际需求来进行使用。脚本使用实例可在 GitHub 仓库的 [/script-example](https://github.com/emqx/MQTTX/tree/main/scripts-example) 文件夹中查看，目前提供了两个内置脚本，时间戳转化和温湿度数据模拟。如果在您的使用中有更好的，更实用的脚本也可以提交您的代码到这里，方便让更多的人使用到。
 
 该项目完全开源，您可以到 [GitHub](https://github.com/emqx/MQTTX/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc) 来提交使用过程中遇到的问题，或是 Fork MQTTX 项目向我们提交修改后的 PR，我们将会及时查阅和处理。也特此感谢社区中所有用户的贡献和反馈。
