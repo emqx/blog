@@ -113,7 +113,7 @@ Once the script function is enabled, we add a `Topic` of `testtopic/time` and we
 
 ## Summary
 
-So far, we have completed the tutorial on the use of the MQTTX script instance. This feature is scalable and flexible, so you will need to use it according to your needs. Examples of scripts can be found in the [/docs/script-example](https://github.com/emqx/MQTTX/tree/master/docs/script-example) folder of the GitHub repository, and two built-in scripts are currently available, timestamp conversion and temperature and humidity data simulation. If you have a better, more useful script in your use, please submit your code here so that more people can use it.
+So far, we have completed the tutorial on the use of the MQTTX script instance. This feature is scalable and flexible, so you will need to use it according to your needs. Examples of scripts can be found in the [/script-example](https://github.com/emqx/MQTTX/tree/main/scripts-example) folder of the GitHub repository, and two built-in scripts are currently available, timestamp conversion and temperature and humidity data simulation. If you have a better, more useful script in your use, please submit your code here so that more people can use it.
 
 The project is fully open source, so you can submit any issues you encounter during use on [GitHub](https://github.com/emqx/MQTTX/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc), or submit a revised PR to us after forking MQTTX, we will review and address it in time. We would also like to thank all the users in the community for their contributions and feedback.
 
