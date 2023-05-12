@@ -155,7 +155,7 @@ Unified Namespace (UNS) is a solution architecture built on the MQTT broker for 
 
 The 3 MQTT brokers can work together to build the UNS architecture. A cohesive system is created by deploying Mosquitto and NanoMQ on industrial gateways while deploying EMQX as a centralized hub in the cloud. This configuration allows for the seamless aggregation and ingestion of IIoT data from the edge to the cloud via MQTT bridges.
 
-![MQTT Unified Namespace](https://assets.emqx.com/images/6846dc5cce51199a5ef805653ddf7b53.png)
+![MQTT Unified Namespace](https://assets.emqx.com/images/f7031dc2592e6a32a061b78378821086.png)
 
 ## Conclusion
 
