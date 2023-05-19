@@ -427,6 +427,7 @@
 
 - [Application of MQTT protocol in oil & gas industry](https://github.com/emqx/blog/blob/main/en/202107/application-of-mqtt-protocol-in-oil-and-gas-industry.md)
 - [2019 Smart China Expo - EMQ & Intel MEC IoT Edge Solution](https://github.com/emqx/blog/blob/main/en/201909/2019-smart-china-expo-emq-intel-mec-iot-edge-solution.md)
+- [EMQ&YottaCloud-Retrospect and Prospect of IoT Energy Consumption Monitoring Project](https://github.com/emqx/blog/blob/main/en/201908/emq-and-yottacloud-retrospect-and-prospect-of-iot-energy-consumption-monitoring-project.md)
 - [EMQX helps operators build large-scale NB-IoT platform](https://github.com/emqx/blog/blob/main/en/201908/emqx-helps-operators-build-large-scale-nb-iot-platform.md)
 
 
