@@ -6,7 +6,6 @@
 
 - [EMQX MQTT Broker Deployment Troubleshooting: Ensuring a Smooth Start](https://github.com/emqx/blog/blob/main/en/202305/emqx-mqtt-broker-deployment-troubleshooting-ensuring-a-smooth-start.md)
 - [Getting Started with Rule Engine in MQTT Broker: A Quick Guide](https://github.com/emqx/blog/blob/main/en/202305/getting-started-with-rule-engine-in-mqtt-broker-a-quick-guide.md)
-- [Using Terraform to Deploy EMQX MQTT Broker](https://github.com/emqx/blog/blob/main/en/202305/using-terraform-to-deploy-emqx-mqtt-broker.md)
 - [How to Gracefully Upgrade EMQX on Kubernetes](https://github.com/emqx/blog/blob/main/en/202303/how-to-upgrade-emqx-in-kubernetes.md)
 - [Introduce Multistream Support for MQTT over QUIC ｜EMQX Newsletter 202302](https://github.com/emqx/blog/blob/main/en/202303/emqx-newsletter-202302.md)
 - [Introducing ReplayQ, EMQX's Buffer Layer for Resilient IoT Data Integrations](https://github.com/emqx/blog/blob/main/en/202301/introducing-replayq.md)
@@ -141,9 +140,11 @@
 
 ## [EMQX Enterprise](https://www.emqx.com/en/blog/category/enterprise)
 
+- [One-Click Deploying EMQX MQTT Broker on AWS Using Terraform](https://github.com/emqx/blog/blob/main/en/202305/one-click-deploying-emqx-mqtt-broker-on-aws-using-terraform.md)
 - [One-Click Deploying EMQX MQTT Broker on Azure Using Terraform](https://github.com/emqx/blog/blob/main/en/202305/one-click-deploying-emqx-mqtt-broker-on-azure-using-terraform.md)
 - [One-Click Deploying EMQX MQTT Broker on GCP Using Terraform](https://github.com/emqx/blog/blob/main/en/202305/one-click-deploying-emqx-mqtt-broker-on-gcp-using-terraform.md)
 - [Getting Started with Rule Engine in MQTT Broker: A Quick Guide](https://github.com/emqx/blog/blob/main/en/202305/getting-started-with-rule-engine-in-mqtt-broker-a-quick-guide.md)
+- [Using Terraform to Deploy EMQX MQTT Broker](https://github.com/emqx/blog/blob/main/en/202305/using-terraform-to-deploy-emqx-mqtt-broker.md)
 - [EMQX Enterprise 4.4.18 Released: Enabled Electric Vehicle Charging Support via  OCPP 1.6-J](https://github.com/emqx/blog/blob/main/en/202304/emqx-enterprise-v-4-4-18-release-notes.md)
 - [EMQX Enterprise 4.4.17 Released: Significant Performance Improvement of Rule Engine](https://github.com/emqx/blog/blob/main/en/202304/emqx-enterprise-v-4-4-17-release-notes.md)
 - [Ingesting IoT Data From EMQX Enterprise to GCP Pub/Sub](https://github.com/emqx/blog/blob/main/en/202304/ingesting-iot-data-from-emqx-enterprise-to-gcp-pub-sub.md)
@@ -426,6 +427,7 @@
 
 - [Application of MQTT protocol in oil & gas industry](https://github.com/emqx/blog/blob/main/en/202107/application-of-mqtt-protocol-in-oil-and-gas-industry.md)
 - [2019 Smart China Expo - EMQ & Intel MEC IoT Edge Solution](https://github.com/emqx/blog/blob/main/en/201909/2019-smart-china-expo-emq-intel-mec-iot-edge-solution.md)
+- [EMQ&YottaCloud-Retrospect and Prospect of IoT Energy Consumption Monitoring Project](https://github.com/emqx/blog/blob/main/en/201908/emq-and-yottacloud-retrospect-and-prospect-of-iot-energy-consumption-monitoring-project.md)
 - [EMQX helps operators build large-scale NB-IoT platform](https://github.com/emqx/blog/blob/main/en/201908/emqx-helps-operators-build-large-scale-nb-iot-platform.md)
 
 
