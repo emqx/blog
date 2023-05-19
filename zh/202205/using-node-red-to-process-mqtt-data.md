@@ -1,6 +1,6 @@
 > Node-RED 是一个可视化的编程工具，可以创新和有趣的方式将硬件设备、API 和在线服务等连接起来。它提供了一个基于浏览器的编辑器，通过调色板中广泛的节点将流程轻松连接起来，而这些节点只需通过一次点击即可部署到其运行时。
 >
-> 除 HTTP、WebScoket 等一些基础的网络服务应用节点外，Node-RED 还提供对于 [MQTT 协议](https://www.emqx.com/zh/mqtt)的连接支持。目前同时提供了一个 MQTT 的订阅节点和 MQTT 的发布节点，订阅节点用于数据的输入，而发布节点可以用于数据的输出。
+> 除 HTTP、WebScoket 等一些基础的网络服务应用节点外，Node-RED 还提供对于 [MQTT 协议](https://www.emqx.com/zh/mqtt-guide)的连接支持。目前同时提供了一个 MQTT 的订阅节点和 MQTT 的发布节点，订阅节点用于数据的输入，而发布节点可以用于数据的输出。
 
 本文将介绍使用 Node-RED 连接到 [MQTT 服务器](https://www.emqx.com/zh/mqtt/public-mqtt5-broker)，并对 MQTT 数据进行过滤和处理后再将其发送至 MQTT 服务器的完整操作流程。读者可以快速了解如何使用 Node-RED 对 MQTT 数据进行简单的流处理。
 

@@ -1,6 +1,6 @@
 ## 前言
 
-[MQTT](https://www.emqx.com/zh/mqtt) 是一个轻量的[发布订阅模式](https://www.emqx.com/zh/blog/mqtt-5-introduction-to-publish-subscribe-model)消息传输协议，专门针对低带宽和不稳定网络环境的物联网应用设计。MQTT 基于发布/订阅范式，工作在 TCP/IP 协议族上，MQTT 协议轻量、简单、开放并易于实现，这些特点使它适用范围非常广泛。
+[MQTT](https://www.emqx.com/zh/mqtt-guide) 是一个轻量的[发布订阅模式](https://www.emqx.com/zh/blog/mqtt-5-introduction-to-publish-subscribe-model)消息传输协议，专门针对低带宽和不稳定网络环境的物联网应用设计。MQTT 基于发布/订阅范式，工作在 TCP/IP 协议族上，MQTT 协议轻量、简单、开放并易于实现，这些特点使它适用范围非常广泛。
 
 MQTT 基于客户端-服务器通信模式，MQTT 服务端称为 [MQTT Broker](https://www.emqx.com/zh/products/emqx)，目前行业内可选的 MQTT Broker 较多，其优劣与功能差别比较本文不再赘述。本文以开源社区中[最流行的 MQTT 消息服务器 - EMQX](https://www.emqx.io/zh) 为例，使用 [EMQ](https://www.emqx.com/zh) 提供的[公共 MQTT 服务器](https://www.emqx.com/zh/mqtt/public-mqtt5-broker)，通过一个简单客户端连接 Broker 并发布、处理消息的例子，整理总结不同编程语言、平台下 [MQTT 客户端库](https://www.emqx.com/zh/mqtt-client-sdk)的使用方式与样例。
 

@@ -1,4 +1,4 @@
-近日，MQTTX 发布了最新的 1.8.1 版本（下载地址：[https://github.com/emqx/MQTTX/releases/tag/v1.8.1](https://github.com/emqx/MQTTX/releases/tag/v1.8.1)），MQTTX 桌面端版本已支持自动更新，并对 MQTTX Web 页面进行了优化。目前已完成了 MQTTX CLI 对于 [MQTT 5.0](https://www.emqx.com/zh/mqtt/mqtt5) 的连接支持及用户属性设置支持，并新增了一个 conn 命令来快速测试连接，后续还将添加 bench 命令，将支持部分场景下的 [MQTT 协议](https://www.emqx.com/zh/mqtt)性能测试。
+近日，MQTTX 发布了最新的 1.8.1 版本（下载地址：[https://github.com/emqx/MQTTX/releases/tag/v1.8.1](https://github.com/emqx/MQTTX/releases/tag/v1.8.1)），MQTTX 桌面端版本已支持自动更新，并对 MQTTX Web 页面进行了优化。目前已完成了 MQTTX CLI 对于 [MQTT 5.0](https://www.emqx.com/zh/mqtt/mqtt5) 的连接支持及用户属性设置支持，并新增了一个 conn 命令来快速测试连接，后续还将添加 bench 命令，将支持部分场景下的 [MQTT 协议](https://www.emqx.com/zh/mqtt-guide)性能测试。
 
 ![MQTTX](https://assets.emqx.com/images/2df897d02b73e237048faad97688e51f.png)
 

@@ -1,4 +1,4 @@
-The full name of [MQTT](https://www.emqx.com/en/mqtt) is Message Queuing Telemetry Transport, which is a **lightweight IoT messaging protocol** based on the **publish/subscribe**. [Andy Stanford-Clark](https://en.wikipedia.org/wiki/Andy_Stanford-Clark) ([IBM](https://en.wikipedia.org/wiki/IBM)) and Arlen Nipper (Cirrus Link, then Eurotech) authored the first version of the protocol in 1999.[^1]. After that, the features that easy to implement, support QoS, lightweight and bandwidth saving let the MQTT becoming the standard of IoT communication.
+The full name of [MQTT](https://www.emqx.com/en/mqtt-guide) is Message Queuing Telemetry Transport, which is a **lightweight IoT messaging protocol** based on the **publish/subscribe**. [Andy Stanford-Clark](https://en.wikipedia.org/wiki/Andy_Stanford-Clark) ([IBM](https://en.wikipedia.org/wiki/IBM)) and Arlen Nipper (Cirrus Link, then Eurotech) authored the first version of the protocol in 1999.[^1]. After that, the features that easy to implement, support QoS, lightweight and bandwidth saving let the MQTT becoming the standard of IoT communication.
 
 
 
@@ -20,7 +20,7 @@ The full name of [MQTT](https://www.emqx.com/en/mqtt) is Message Queuing Telemet
 
 ## Application
 
-[MQTT protocol](https://www.emqx.com/en/mqtt) is widely used in the Internet of Things, Mobile Internet, Intelligent Hardware, Internet of Vehicles, Power Energy and so on.
+[MQTT protocol](https://www.emqx.com/en/mqtt-guide) is widely used in the Internet of Things, Mobile Internet, Intelligent Hardware, Internet of Vehicles, Power Energy and so on.
 
 - M2M Communication and Big Data Acquisition in the Internet of Things.
 

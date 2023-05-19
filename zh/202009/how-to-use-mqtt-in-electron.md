@@ -2,7 +2,7 @@
 
 一个基础的 Electron 包含三个文件：`package.json`（元数据）、`main.js`（代码）和 `index.html`（图形用户界面）。框架由 Electron 可执行文件（Windows 中为 electron.exe、macOS 中为 electron.app、Linux 中为 electron）提供。开发者可以自行添加标志、自定义图标、重命名或编辑 Electron 可执行文件。
 
-本文主要介绍如何在 Electron 项目中使用 [MQTT](https://www.emqx.com/zh/mqtt)，完成一个简单的 MQTT 桌面客户端并实现客户端与 [MQTT 服务器](https://www.emqx.com/zh/products/emqx) 的连接、订阅、取消订阅、收发消息等功能。
+本文主要介绍如何在 Electron 项目中使用 [MQTT](https://www.emqx.com/zh/mqtt-guide)，完成一个简单的 MQTT 桌面客户端并实现客户端与 [MQTT 服务器](https://www.emqx.com/zh/products/emqx) 的连接、订阅、取消订阅、收发消息等功能。
 
 ## 项目初始化
 

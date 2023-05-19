@@ -6,7 +6,7 @@
 
 [MQTTLens](https://chrome.google.com/webstore/detail/mqttlens/hemojaaeigabkbcookmlgmdigohjobjm/related?hl=zh_cn) 是有一个 Chrome 拓展工具，可以通过 Chrome 网上应用商店安装。MQTTLens 界面非常简洁，提供基础的发布订阅功能。
 
-MQTTLens 足够简单，借助 Chrome 有很强大的跨平台特性提供了基础的 [MQTT](https://www.emqx.com/zh/mqtt) 和 MQTT over WebSocket 连接功能，可以快速满足入门探索使用。
+MQTTLens 足够简单，借助 Chrome 有很强大的跨平台特性提供了基础的 [MQTT](https://www.emqx.com/zh/mqtt-guide) 和 MQTT over WebSocket 连接功能，可以快速满足入门探索使用。
 
 MQTTLens 完整的支持了以下功能：
 

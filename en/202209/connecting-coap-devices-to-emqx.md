@@ -28,7 +28,7 @@ The **CoAP connection type** can be:
 - coap: Uses normal UDP for transmission.
 - coaps: Enables a secure transport layer. For details on how to enable coaps (including one-way authentication and two-way authentication), refer to the Encrypted Communication Configuration section below.
 
-There are presently two access **modes**: [MQTT](https://www.emqx.com/en/mqtt) and PubSub. The differences will be described in detail later.
+There are presently two access **modes**: [MQTT](https://www.emqx.com/en/mqtt-guide) and PubSub. The differences will be described in detail later.
 
 **TopicName**: EMQX uses Topic as the resource identifier in CoAP. A Topic represents a resource object, which can be any UTF-8 string and allows multiple levels, such as coap/ and coap/test/queryString.
 

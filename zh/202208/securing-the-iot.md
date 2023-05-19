@@ -10,7 +10,7 @@ EMQX 始终十分关注安全性，通过大量开箱即用的安全功能为广
 
 身份认证是大多数应用程序的重要组成部分，在物联网应用中也一样。
 
-[MQTT 协议](https://www.emqx.com/zh/mqtt)允许客户端携带用户名/密码用于身份认证，在此基础上 EMQX 扩展允许客户端在密码中携带  Token 实现 JWT 认证。同时，EMQX 完整支持 [MQTT 5.0 增强认证](https://www.emqx.com/zh/blog/mqtt5-enhanced-authentication)功能，能够通过质询/响应风格方式实现对客户端和服务器的双向认证，实现更强的安全性保障。
+[MQTT 协议](https://www.emqx.com/zh/mqtt-guide)允许客户端携带用户名/密码用于身份认证，在此基础上 EMQX 扩展允许客户端在密码中携带  Token 实现 JWT 认证。同时，EMQX 完整支持 [MQTT 5.0 增强认证](https://www.emqx.com/zh/blog/mqtt5-enhanced-authentication)功能，能够通过质询/响应风格方式实现对客户端和服务器的双向认证，实现更强的安全性保障。
 
 ### 三种认证方式
 

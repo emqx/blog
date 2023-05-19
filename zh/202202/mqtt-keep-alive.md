@@ -90,7 +90,7 @@ EMQX 支持客户端通过 WebSocket 接入，当客户端使用 WebSocket 发�
 
 本文介绍了 MQTT 协议中 Keep Alive 的机制及 EMQX 中 Keep Alive 的使用，开发者可以借助这一特性确保 [MQTT 连接](https://www.emqx.com/zh/blog/how-to-set-parameters-when-establishing-an-mqtt-connection)的稳定性，构建更加健壮的上层物联网应用。
 
-接下来可访问 EMQ 提供的 [MQTT 入门与进阶](https://www.emqx.com/zh/mqtt)系列文章学习 MQTT 主题及通配符、保留消息、遗嘱消息等相关概念，探索 MQTT 的更多高级应用，开启 MQTT 应用及服务开发。
+接下来可访问 EMQ 提供的 [MQTT 入门与进阶](https://www.emqx.com/zh/mqtt-guide)系列文章学习 MQTT 主题及通配符、保留消息、遗嘱消息等相关概念，探索 MQTT 的更多高级应用，开启 MQTT 应用及服务开发。
 
 
 <section class="promotion">

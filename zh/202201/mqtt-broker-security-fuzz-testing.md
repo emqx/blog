@@ -16,7 +16,7 @@
 
 ### 测试工具及对象选择
 
-本文我们选择 Defensics 作为模糊测试的工具。Defensics 是 Synopsys 新思公司开发的黑盒模糊测试工具，提供了对大量文件格式、网络协议、接口的模糊测试套件。它针对 [MQTT](https://www.emqx.com/zh/mqtt) v3.1 协议标准，使用大量自动生成的 MQTT 数据包对 Broker/Client 进行测试，帮助开发者和测试人员提高软件的安全性。
+本文我们选择 Defensics 作为模糊测试的工具。Defensics 是 Synopsys 新思公司开发的黑盒模糊测试工具，提供了对大量文件格式、网络协议、接口的模糊测试套件。它针对 [MQTT](https://www.emqx.com/zh/mqtt-guide) v3.1 协议标准，使用大量自动生成的 MQTT 数据包对 Broker/Client 进行测试，帮助开发者和测试人员提高软件的安全性。
 
 > 针对 MQTT v5 的测试套件目前尚未发布
 

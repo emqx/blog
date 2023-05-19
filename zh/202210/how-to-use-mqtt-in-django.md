@@ -195,7 +195,7 @@ python3 manage.py runserver
 
 ## 总结
 
-至此，我们使用 paho-mqtt 完成了 MQTT 客户端的开发，实现了在 Django 应用中使用 MQTT 进行通信。在实际应用中，我们可以根据业务需求对 MQTT 客户端进行扩展，实现更复杂的业务逻辑。接下来，读者可查看 EMQ 提供的 [MQTT 入门与进阶](https://www.emqx.com/zh/mqtt)系列文章了解 MQTT 协议特性，探索 MQTT 的更多高级应用，开始 MQTT 应用及服务开发。
+至此，我们使用 paho-mqtt 完成了 MQTT 客户端的开发，实现了在 Django 应用中使用 MQTT 进行通信。在实际应用中，我们可以根据业务需求对 MQTT 客户端进行扩展，实现更复杂的业务逻辑。接下来，读者可查看 EMQ 提供的 [MQTT 入门与进阶](https://www.emqx.com/zh/mqtt-guide)系列文章了解 MQTT 协议特性，探索 MQTT 的更多高级应用，开始 MQTT 应用及服务开发。
 
 
 

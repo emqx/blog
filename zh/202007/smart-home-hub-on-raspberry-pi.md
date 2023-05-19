@@ -14,7 +14,7 @@
 
 ### EMQX Edge
 
-智能家居设备之间通信协议有 **MQTT**， **Wi-Fi**， **蓝牙** 等，其中 [MQTT 协议](https://www.emqx.com/zh/mqtt) 是基于发布/订阅模式的物联网通信协议，它简单易实现、支持 QoS、报文小。在本文中我们将使 MQTT 协议作为智能家居设备之间的通信协议。
+智能家居设备之间通信协议有 **MQTT**， **Wi-Fi**， **蓝牙** 等，其中 [MQTT 协议](https://www.emqx.com/zh/mqtt-guide) 是基于发布/订阅模式的物联网通信协议，它简单易实现、支持 QoS、报文小。在本文中我们将使 MQTT 协议作为智能家居设备之间的通信协议。
 
 由于 Raspberry Pi 内存以及处理能力有限，我们选择由 [EMQ](https://www.emqx.com/zh) 开源的 [EMQX Edge](https://www.emqx.com/zh/products/emqx) 作为 MQTT broker，EMQX Edge 是轻量级的物联网边缘计算消息中间件，支持部署在资源受限的物联网边缘硬件。
 

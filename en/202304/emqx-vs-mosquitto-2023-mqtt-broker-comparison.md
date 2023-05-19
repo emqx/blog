@@ -107,7 +107,7 @@ In addition, EMQX can be extended to support multiple protocol gateways, such as
 
 |                              | **EMQX**                                                     | **Mosquitto** | **Notes and Links**                                          |
 | :--------------------------- | :----------------------------------------------------------- | :------------ | :----------------------------------------------------------- |
-| **MQTT 3.1/3.1.1**           | ✅                                                            | ✅             | [The Easy-to-understand Guide to MQTT Protocol](https://www.emqx.com/en/mqtt) |
+| **MQTT 3.1/3.1.1**           | ✅                                                            | ✅             | [The Easy-to-understand Guide to MQTT Protocol](https://www.emqx.com/en/mqtt-guide) |
 | **MQTT 5.0**                 | ✅                                                            | ✅             | [MQTT 5 Explore](https://www.emqx.com/en/mqtt/mqtt5)         |
 | **MQTT Shared Subscription** | ✅                                                            | ✅             |                                                              |
 | **MQTT Add-ons**             | - [Exclusive subscription](https://www.emqx.io/docs/en/v5.0/mqtt/mqtt-exclusive-subscription.html#exclusive-subscription)<br>- [Delayed Publish](https://www.emqx.io/docs/en/v5.0/advanced/delayed-publish.html)<br>- [Auto-subscription](https://www.emqx.io/docs/en/v5.0/advanced/auto-subscriptions.html)<br>- [Topic rewrite](https://www.emqx.io/docs/en/v5.0/advanced/topic-rewrite.html) | ❌             |                                                              |

@@ -29,6 +29,7 @@ jobs:
           echo "::set-output name=branch::$branch"
           git checkout -b $branch
           python3 .ci/sync_blog.py $(pwd)
+          python3 .ci/generate_readme.py $(pwd)
           git status
           if [ -z "$(git status --short)" ]; then
             echo "No changes to push"

@@ -89,7 +89,7 @@ Refer to the [EMQX configuration documentation](https://www.emqx.io/docs/en/v4.3
 
 This article introduces the Keep Alive mechanism in the MQTT protocol and how to use it in EMQX. You can use this feature to ensure the stability of [MQTT connections](https://www.emqx.com/en/blog/reaching-100m-mqtt-connections-with-emqx-5-0) and build more robust IoT applications.
 
-Next, you can check out [The Easy-to-understand Guide to MQTT Protocol](https://www.emqx.com/en/mqtt) series of articles provided by EMQ to learn about MQTT protocol features, explore more advanced applications of MQTT, and get started with MQTT application and service development.
+Next, you can check out [The Easy-to-understand Guide to MQTT Protocol](https://www.emqx.com/en/mqtt-guide) series of articles provided by EMQ to learn about MQTT protocol features, explore more advanced applications of MQTT, and get started with MQTT application and service development.
 
 
 <section class="promotion">

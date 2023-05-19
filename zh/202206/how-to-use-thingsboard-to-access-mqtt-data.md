@@ -1,6 +1,6 @@
 ## 简介
 
-[ThingsBoard](https://thingsboard.io/) 是用于数据收集、处理、可视化和设备管理的开源物联网平台。它支持通过 [MQTT](https://www.emqx.com/zh/mqtt)、[CoAP](https://www.emqx.com/zh/blog/connecting-coap-devices-to-emqx) 和 HTTP 等协议实现设备连接，并支持云和私有部署。使用丰富的服务器端 API，以安全的方式提供、监测和控制您的物联网实体，定义您的设备、资产、客户或任何其他实体之间的关系。以可扩展和容错的方式收集和存储遥测数据，用内置或定制的部件和灵活的仪表盘来可视化您的数据，并且可以和您的客户共享 Dashboard 界面。
+[ThingsBoard](https://thingsboard.io/) 是用于数据收集、处理、可视化和设备管理的开源物联网平台。它支持通过 [MQTT](https://www.emqx.com/zh/mqtt-guide)、[CoAP](https://www.emqx.com/zh/blog/connecting-coap-devices-to-emqx) 和 HTTP 等协议实现设备连接，并支持云和私有部署。使用丰富的服务器端 API，以安全的方式提供、监测和控制您的物联网实体，定义您的设备、资产、客户或任何其他实体之间的关系。以可扩展和容错的方式收集和存储遥测数据，用内置或定制的部件和灵活的仪表盘来可视化您的数据，并且可以和您的客户共享 Dashboard 界面。
 
 本文将使用 ThingsBoard Cloud 结合 [EMQ](https://www.emqx.com/zh) 旗下的全托管 [MQTT 云服务 - EMQX Cloud](https://www.emqx.com/zh/cloud)，介绍如何在 ThingsBoard 中集成第三方 MQTT Broker 并自定义配置 Dashboard UI 接入 MQTT 数据。
 

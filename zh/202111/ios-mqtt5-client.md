@@ -8,7 +8,7 @@ CocoaMQTT 使用 Swift 语言开发，而非 Objective-C。这是因为 Swift �
 
 此外，在 WWDC 2021 大会上，苹果宣布了 Swift 语言中并发模型的重大更新：通过编译器实现的 Actor 并发模型，新增 Actor 引用类型帮助开发者避免数据竞争问题。
 
-因此，我们相信在 [MQTT](https://www.emqx.com/zh/mqtt) 相关的 I/O 密集型并发应用中，相较于 Objective-C，Swift 的表现将更值得期待。
+因此，我们相信在 [MQTT](https://www.emqx.com/zh/mqtt-guide) 相关的 I/O 密集型并发应用中，相较于 Objective-C，Swift 的表现将更值得期待。
 
 ## MQTT 5.0 vs MQTT 3.1.1
 

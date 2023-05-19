@@ -5,7 +5,7 @@
 
 EMQX 5.0 将呈现全新设计的管理 UI (用户界面）。新设计的 UI 非常注重用户体验的改进，同时兼顾 UI 的清晰度和参数化能力。
 
-下图是 [MQTT](https://www.emqx.com/zh/mqtt) 高级功能的新 UI 界面截图。
+下图是 [MQTT](https://www.emqx.com/zh/mqtt-guide) 高级功能的新 UI 界面截图。
 
 ![MQTT 高级功能](https://assets.emqx.com/images/e638f39e3c4875aa19bae385f0536b50.png)
 

@@ -1,4 +1,4 @@
-As a security protocol based on modern cryptographic public key algorithms,  TLS/SSL can ensure the security of transmission in the computer communication network. EMQX has built-in support for TLS/SSL including one-way/two-ways authentication, the X.509 certificate, load balance SSL and many other security certifications. You can enable SSL/TLS for all protocols supported by EMQX, and can also configure HTTP API provided by  EMQX to use TLS. This article will introduce how to enable TLS for [MQTT](https://www.emqx.com/en/mqtt) in EMQX.
+As a security protocol based on modern cryptographic public key algorithms,  TLS/SSL can ensure the security of transmission in the computer communication network. EMQX has built-in support for TLS/SSL including one-way/two-ways authentication, the X.509 certificate, load balance SSL and many other security certifications. You can enable SSL/TLS for all protocols supported by EMQX, and can also configure HTTP API provided by  EMQX to use TLS. This article will introduce how to enable TLS for [MQTT](https://www.emqx.com/en/mqtt-guide) in EMQX.
 
 
 

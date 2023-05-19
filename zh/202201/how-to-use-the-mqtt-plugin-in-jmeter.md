@@ -1,6 +1,6 @@
 如《[JMeter 测试组件介绍](https://www.emqx.com/zh/blog/introduction-to-jmeter-test-components)》所述，JMeter 内置 HTTP/HTTPS、TCP 等支持多种协议，还具备插件扩展机制。
 
-[MQTT 协议](https://www.emqx.com/zh/mqtt)身为物联网界的主流协议，虽然并非 JMeter 自带的协议类型，但在物联网测试场景中极为普遍。为了支持 MQTT 协议的规模测试，[EMQ 映云科技](https://www.emqx.com/zh/about)开发了基于 JMeter 的 MQTT 协议开源测试插件：[https://github.com/xmeter-net/mqtt-jmeter](https://github.com/xmeter-net/mqtt-jmeter) 。
+[MQTT 协议](https://www.emqx.com/zh/mqtt-guide)身为物联网界的主流协议，虽然并非 JMeter 自带的协议类型，但在物联网测试场景中极为普遍。为了支持 MQTT 协议的规模测试，[EMQ 映云科技](https://www.emqx.com/zh/about)开发了基于 JMeter 的 MQTT 协议开源测试插件：[https://github.com/xmeter-net/mqtt-jmeter](https://github.com/xmeter-net/mqtt-jmeter) 。
 
 经过几个版本的迭代，目前 JMeter MQTT 插件的最新版本为 2.0.2，支持连接、消息发布、消息订阅等多种采样器，并可通过组合构建更复杂的测试场景。
 

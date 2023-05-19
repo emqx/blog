@@ -28,7 +28,7 @@ coap 连接类型://Host:Port/模式/TopicName?c=客户端Id&u=用户名&p=密�
 - coap：使用普通的 UDP 进行传输
 - coaps：启用安全传输层，关于如何启用 coaps (包括单向认证、双向认证)，详细见加密通信配置
 
-**模式** 目前有: [MQTT](https://www.emqx.com/zh/mqtt) 和 **PubSub** 两种，具体区别将会在下文详细介绍。
+**模式** 目前有: [MQTT](https://www.emqx.com/zh/mqtt-guide) 和 **PubSub** 两种，具体区别将会在下文详细介绍。
 
 **TopicName** : EMQX 中使用 Topic 作为 CoAP 中的资源标识符，一个 Topic 就代表一个资源对象， 而 Topic 可以为任意 UTF8 字符串，允许多个层级，比如 coap/ 、coap/test/queryString。
 

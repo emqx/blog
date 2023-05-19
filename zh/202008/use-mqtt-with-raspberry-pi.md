@@ -230,7 +230,7 @@ client.loop_forever()
 2. 定时将树莓派的设备信息发送到 MQTT 服务器，通过手机接收消息，可以进行全天候监控。
 3. 可以通过将树莓派接入 MQTT 服务器，并配合各类传感器及 ESP 模块创建很多有趣的物联网应用。
 
-接下来，您可访问 EMQ 提供的 [MQTT 入门与进阶](https://www.emqx.com/zh/mqtt)系列文章学习 MQTT 主题及通配符、保留消息、遗嘱消息等相关概念，探索 MQTT 的更多高级应用，开启 MQTT 应用及服务开发。
+接下来，您可访问 EMQ 提供的 [MQTT 入门与进阶](https://www.emqx.com/zh/mqtt-guide)系列文章学习 MQTT 主题及通配符、保留消息、遗嘱消息等相关概念，探索 MQTT 的更多高级应用，开启 MQTT 应用及服务开发。
 
 
 <section class="promotion">

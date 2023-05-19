@@ -18,7 +18,7 @@ NanoMQ 分为 3 个部分：
 
 1. **nanolib**：主要提供边缘数据缓存、MQTT 订阅关系存储和消息路由能力。
 2. **nanomq**：是一系列工具和服务的入口，其中消息引擎（Broker）功能是其主要功能，管理所有连接，负责提供如状态通知、钩子函数等功能。目前还有消息队列 mq 功能。
-3. **nanonng**：是基于 NNG 优化的可用于 [MQTT 协议](https://www.emqx.com/zh/mqtt)的多线程模型和异步 IO 库。
+3. **nanonng**：是基于 NNG 优化的可用于 [MQTT 协议](https://www.emqx.com/zh/mqtt-guide)的多线程模型和异步 IO 库。
 
 ![产品图.png](https://assets.emqx.com/images/d29c92307e8a830de317e8c2fd460eab.png)
 

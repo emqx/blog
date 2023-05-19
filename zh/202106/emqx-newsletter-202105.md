@@ -12,7 +12,7 @@
 
 ### 集群稳定性增强：粘性会话负载平衡
 
-感谢 Haproxy 团队，在社区版中，我们已有了第一个支持 [MQTT](https://www.emqx.com/zh/mqtt) 协议的负载均衡器。在以 [MQTT 客户端](https://www.emqx.com/zh/blog/introduction-to-the-commonly-used-mqtt-client-library) ID 为键的 stick table 的帮助下，我们认为集群节点之间的 MQTT 会话接管/迁移的数量将大大减少。
+感谢 Haproxy 团队，在社区版中，我们已有了第一个支持 [MQTT](https://www.emqx.com/zh/mqtt-guide) 协议的负载均衡器。在以 [MQTT 客户端](https://www.emqx.com/zh/blog/introduction-to-the-commonly-used-mqtt-client-library) ID 为键的 stick table 的帮助下，我们认为集群节点之间的 MQTT 会话接管/迁移的数量将大大减少。
 
 它的启用也非常简单，举例如下：
 

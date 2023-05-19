@@ -109,4 +109,4 @@ Click on the `Settings` menu under `Retainer`, and you will see that EMQX suppor
 
 This article introduces and demonstrates the use of MQTT Retained Messages. Referring to this article, readers can use MQTT Retained Messages to get data immediately after subscription.
 
-In addition, the MQTT protocol has many more valuable features. Check out EMQ's [MQTT Getting Started and Advanced](https://www.emqx.com/en/mqtt) series of articles for a deeper understanding, to explore more advanced applications of MQTT, and to start developing MQTT applications and services.
+In addition, the MQTT protocol has many more valuable features. Check out EMQ's [MQTT Getting Started and Advanced](https://www.emqx.com/en/mqtt-guide) series of articles for a deeper understanding, to explore more advanced applications of MQTT, and to start developing MQTT applications and services.

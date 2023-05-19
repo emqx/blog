@@ -12,7 +12,7 @@ Sparkplug aims to provide a standardized way to use [MQTT for industrial](https:
 
 ## Concept 1 - MQTT Messaging Architecture
 
-The Sparkplug specification is based on the [MQTT protocol](https://www.emqx.com/en/mqtt), a lightweight messaging protocol widely used in IoT applications. It is designed for low-bandwidth, high-latency networks and is adopted in IoT applications due to the following capabilities.
+The Sparkplug specification is based on the [MQTT protocol](https://www.emqx.com/en/mqtt-guide), a lightweight messaging protocol widely used in IoT applications. It is designed for low-bandwidth, high-latency networks and is adopted in IoT applications due to the following capabilities.
 
 - Lightweight: MQTT is a lightweight protocol requiring minimal network bandwidth and is well-suited for low-bandwidth environments.
 - Reliability: MQTT includes support for [Quality of Service (QoS)](https://www.emqx.com/en/blog/introduction-to-mqtt-qos) levels, which ensure that messages are delivered reliably even in the face of network failures or intermittent connectivity.

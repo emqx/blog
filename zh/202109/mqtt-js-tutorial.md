@@ -1,6 +1,6 @@
 ## 简介
 
-[MQTT.js](https://github.com/mqttjs/MQTT.js) 是一个开源的 [MQTT 协议](https://www.emqx.com/zh/mqtt)的客户端库，使用 JavaScript 编写，主要用于 Node.js 和 浏览器环境中。是目前 JavaScript 生态中使用最为广泛的 [MQTT 客户端库](https://www.emqx.com/zh/blog/introduction-to-the-commonly-used-mqtt-client-library)。
+[MQTT.js](https://github.com/mqttjs/MQTT.js) 是一个开源的 [MQTT 协议](https://www.emqx.com/zh/mqtt-guide)的客户端库，使用 JavaScript 编写，主要用于 Node.js 和 浏览器环境中。是目前 JavaScript 生态中使用最为广泛的 [MQTT 客户端库](https://www.emqx.com/zh/blog/introduction-to-the-commonly-used-mqtt-client-library)。
 
 > MQTT 是一种基于发布/订阅模式的轻量级物联网消息传输协议，可以用极少的代码和带宽为联网设备提供实时可靠的消息服务，它广泛应用于物联网、移动互联网、智能硬件、[车联网](https://www.emqx.com/zh/blog/category/internet-of-vehicles)、电力能源等行业。
 

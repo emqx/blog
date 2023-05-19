@@ -6,7 +6,7 @@ User Properties are the user-defined properties that allow users to add their me
 
 User Properties consist of a user-defined UTF-8 key/value pair array configured in the message property field. As long as the maximum message size is not exceeded, an unlimited number of user properties can be used to add metadata to the MQTT message and transfer information among publishers, MQTT Brokers, and subscribers.
 
-If you are familiar with HTTP protocol, this function is very similar to the concept of HTTP Header. User Properties allow users to extend the [MQTT protocol](https://www.emqx.com/en/mqtt) effectively and can appear in all messages and responses. Because User Properties are defined by the user, they are only meaningful to the user's action.
+If you are familiar with HTTP protocol, this function is very similar to the concept of HTTP Header. User Properties allow users to extend the [MQTT protocol](https://www.emqx.com/en/mqtt-guide) effectively and can appear in all messages and responses. Because User Properties are defined by the user, they are only meaningful to the user's action.
 
 ## Why do we need User Properties？
 

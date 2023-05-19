@@ -1,6 +1,6 @@
 ### Introduction
 
-This example will demonstrate how to report the temperature and humidity data collected by the DHT11 sensor to the MQTT service in the cloud through the [MQTT protocol](https://www.emqx.com/en/mqtt) and the NodeMCU based on ESP8266 , and show how the application subscribes to and processes the data. The reason why mqtt protocol is used in this article is that it is lightweight and energy-saving, which is very suitable for the use scenarios of the Internet of things. At present, all major public cloud providers have basically opened IOT hub services based on MQTT protocol. For example, the IOT Core of AWS and the IOT Hub of Azure can easily access these data to these public cloud services through MQTT protocol.
+This example will demonstrate how to report the temperature and humidity data collected by the DHT11 sensor to the MQTT service in the cloud through the [MQTT protocol](https://www.emqx.com/en/mqtt-guide) and the NodeMCU based on ESP8266 , and show how the application subscribes to and processes the data. The reason why mqtt protocol is used in this article is that it is lightweight and energy-saving, which is very suitable for the use scenarios of the Internet of things. At present, all major public cloud providers have basically opened IOT hub services based on MQTT protocol. For example, the IOT Core of AWS and the IOT Hub of Azure can easily access these data to these public cloud services through MQTT protocol.
 
 The overall architecture of this example is as follows:
 

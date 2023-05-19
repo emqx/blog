@@ -162,7 +162,7 @@ At this point, we have finished building an MQTT app on the iOS platform using R
 
 With React Native, developers can use standard iOS platform components and develop apps that perform nearly as well as native apps. The seamless cross-platform allows teams to work faster, while simply saving changes during development, as shown by the actual results in the iOS simulator. Efficient, near-native performance, hot reloading, and broad community support make React Native the best choice for many mobile app developers. Combining React Native with MQTT protocol and MQTT cloud service, users are also able to develop various interesting and innovative apps.
 
-Next, you can check out [The Easy-to-understand Guide to MQTT Protocol](https://www.emqx.com/en/mqtt) series of articles provided by EMQ to learn about MQTT protocol features, explore more advanced applications of MQTT, and get started with MQTT application and service development.
+Next, you can check out [The Easy-to-understand Guide to MQTT Protocol](https://www.emqx.com/en/mqtt-guide) series of articles provided by EMQ to learn about MQTT protocol features, explore more advanced applications of MQTT, and get started with MQTT application and service development.
 
 
 <section class="promotion">

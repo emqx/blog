@@ -32,7 +32,7 @@ bridge.mqtt.address=mqtt-tcp://broker.emqx.io:1883
 bridge.mqtt.proto_ver=4
 ```
 
-桥接的 [MQTT 协议](https://www.emqx.com/zh/mqtt)版本，目前只支持 MQTT 3.1.1 与 MQTT 4
+桥接的 [MQTT 协议](https://www.emqx.com/zh/mqtt-guide)版本，目前只支持 MQTT 3.1.1 与 MQTT 4
 
 ```
 ## The ClientId of a remote bridge.

@@ -1,6 +1,6 @@
 [Neuron](https://www.emqx.com/zh/products/neuron) 是运行在各类物联网边缘网关硬件上的工业协议网关软件，支持同时为多个不同通讯协议设备、数十种工业协议进行一站式接入及 MQTT 协议转换，仅占用超低资源，即可以原生或容器的方式部署在 X86、ARM 等架构的各类边缘硬件中。同时，用户可以通过基于 Web 的管理控制台实现在线的网关配置管理。
 
-在 eKuiper 1.5.0 之前的版本中，Neuron 与 eKuiper 之间需要采用 [MQTT](https://www.emqx.com/zh/mqtt) 作为中转。二者协同时，需要额外部署 MQTT broker。同时，用户需要自行处理数据格式，包括读入和输出时的解码编码工作。
+在 eKuiper 1.5.0 之前的版本中，Neuron 与 eKuiper 之间需要采用 [MQTT](https://www.emqx.com/zh/mqtt-guide) 作为中转。二者协同时，需要额外部署 MQTT broker。同时，用户需要自行处理数据格式，包括读入和输出时的解码编码工作。
 
 近日发布的 [eKuiper 1.5.0 版本](https://www.emqx.com/zh/blog/ekuiper-v-1-5-0-release-notes)加入了 Neuron source 和 sink，使得用户无需配置即可在 eKuiper 中接入 Neuron 中采集到的数据进行计算；也可以方便地从 eKuiper 中通过 Neuron 控制设备 。两个产品的整合，可以显著降低边缘计算解决方案对资源的使用要求，降低使用门槛。
 

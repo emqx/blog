@@ -5,7 +5,7 @@ Project address: [GitHub](https://github.com/emqx/MQTTX)
 Website: [MQTTX Website](https://mqttx.app)
 ![WX202002101233322x.png](https://assets.emqx.com/images/b0cfa74c62c6425e67c1547f4760f1a6.png)
 
-MQTTX is suitable for users who are building their own MQTT message server to test connections, subscribing and publishing messages, etc. When using a client, the user can be either a publisher or a subscriber. It is also applicable to related users who are developing or researching MQTT Broker. In the research and application of MQTT, no matter what stage you are in, you can quickly and deeply understand the relevant characteristics of the [MQTT protocol](https://www.emqx.com/en/mqtt) through MQTTX.
+MQTTX is suitable for users who are building their own MQTT message server to test connections, subscribing and publishing messages, etc. When using a client, the user can be either a publisher or a subscriber. It is also applicable to related users who are developing or researching MQTT Broker. In the research and application of MQTT, no matter what stage you are in, you can quickly and deeply understand the relevant characteristics of the [MQTT protocol](https://www.emqx.com/en/mqtt-guide) through MQTTX.
 
 This project is completely open source, which uses Vue.js + TypeScript + Electron technology stack for development. You can view and browse the project source code on  [GitHub](https://github.com/emqx/MQTTX). Welcome to discuss and learn Electron project development technology together.
 

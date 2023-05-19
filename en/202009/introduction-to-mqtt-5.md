@@ -1,6 +1,6 @@
 ### Introduction to MQTT
 
-The [MQTT protocol](https://www.emqx.com/en/mqtt) is the most popular IoT protocol in the world today because of its lightweight and flexibility. It has been widely used in IoV, smart homes, logistics, live chat applications and mobile messaging fields and connected hundreds of millions of devices. There are countless devices are using and accessing the MQTT protocol every second of every day. The MQTT protocol provides a stable and reliable communication foundation for these devices. The large number of accesses to these devices also challenges the MQTT protocol specification. The birth of [MQTT 5.0](https://www.emqx.com/en/mqtt/mqtt5) is to better meet this need.
+The [MQTT protocol](https://www.emqx.com/en/mqtt-guide) is the most popular IoT protocol in the world today because of its lightweight and flexibility. It has been widely used in IoV, smart homes, logistics, live chat applications and mobile messaging fields and connected hundreds of millions of devices. There are countless devices are using and accessing the MQTT protocol every second of every day. The MQTT protocol provides a stable and reliable communication foundation for these devices. The large number of accesses to these devices also challenges the MQTT protocol specification. The birth of [MQTT 5.0](https://www.emqx.com/en/mqtt/mqtt5) is to better meet this need.
 
 ### The history of MQTT
 

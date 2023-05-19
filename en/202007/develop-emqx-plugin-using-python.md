@@ -138,7 +138,7 @@ def deinit():
 
 ### Enable
 
-Enable plugin `emqx_extension_hook`. If configuration error or write wrong Python code, it can not be enabled normally.  After it is enabled, try to establish the [MQTT](https://www.emqx.com/en/mqtt) connection and observer the running situation of the business.
+Enable plugin `emqx_extension_hook`. If configuration error or write wrong Python code, it can not be enabled normally.  After it is enabled, try to establish the [MQTT](https://www.emqx.com/en/mqtt-guide) connection and observer the running situation of the business.
 
 ```bash
 ./bin/emqx_ctl plugins load emqx_extension_hook

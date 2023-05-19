@@ -201,7 +201,7 @@ void loop() {
 
 至此，我们已成功使 ESP32 连接到 [EMQX Cloud](https://www.emqx.com/zh/cloud) 提供的公共 MQTT 服务器。 在本项目中我们简单的将 ESP32 连接到 MQTT 服务器，这只是 ESP32 较为基础的能力之一，ESP32 其实还能与各类物联网传感器相连，并将传感器数据上报至 MQTT 服务器。
 
-接下来，读者可访问 EMQ 提供的 [MQTT 入门与进阶](https://www.emqx.com/zh/mqtt)系列文章学习 MQTT 主题及通配符、保留消息、遗嘱消息等相关概念，探索 MQTT 的更多高级应用，开启 MQTT 应用及服务开发。
+接下来，读者可访问 EMQ 提供的 [MQTT 入门与进阶](https://www.emqx.com/zh/mqtt-guide)系列文章学习 MQTT 主题及通配符、保留消息、遗嘱消息等相关概念，探索 MQTT 的更多高级应用，开启 MQTT 应用及服务开发。
 
 <section class="promotion">
     <div>

@@ -1,4 +1,4 @@
-[MQTT](https://www.emqx.com/zh/mqtt) 全称为 Message Queuing Telemetry Transport（消息队列遥测传输），是一种基于 **发布/订阅** 模式的 **轻量级物联网消息传输协议**。[IBM](https://zh.wikipedia.org/wiki/IBM) 公司的安迪·斯坦福-克拉克及 Arcom 公司的阿兰·尼普于 1999 年撰写了该协议的第一个版本[^1]，之后 MQTT 便以简单易实现、支持 QoS、轻量且省带宽等众多特性逐渐成为了 IoT 通讯的标准。
+[MQTT](https://www.emqx.com/zh/mqtt-guide) 全称为 Message Queuing Telemetry Transport（消息队列遥测传输），是一种基于 **发布/订阅** 模式的 **轻量级物联网消息传输协议**。[IBM](https://zh.wikipedia.org/wiki/IBM) 公司的安迪·斯坦福-克拉克及 Arcom 公司的阿兰·尼普于 1999 年撰写了该协议的第一个版本[^1]，之后 MQTT 便以简单易实现、支持 QoS、轻量且省带宽等众多特性逐渐成为了 IoT 通讯的标准。
 
 
 ## MQTT 协议基本特点

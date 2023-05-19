@@ -190,7 +190,7 @@ Next, we will use [open-source cross-platform MQTT client - MQTTX](https://mqttx
 
 At this point, we have completed the development of the MQTT client using `paho-mqtt`, enabling communication using MQTT in Django applications. In practice, we can extend the MQTT client to achieve more complex business logic based on business requirements.
 
-Next, readers can check out [The Easy-to-understand Guide to MQTT Protocol](https://www.emqx.com/en/mqtt) series of articles provided by EMQ to learn about MQTT protocol features, explore more advanced applications of MQTT, and get started with MQTT application and service development.
+Next, readers can check out [The Easy-to-understand Guide to MQTT Protocol](https://www.emqx.com/en/mqtt-guide) series of articles provided by EMQ to learn about MQTT protocol features, explore more advanced applications of MQTT, and get started with MQTT application and service development.
 
 ## Other Articles in This Series
 

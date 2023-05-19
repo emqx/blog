@@ -1,4 +1,4 @@
-在阅读该指南之前，假定你已经了解 [MQTT](https://www.emqx.com/zh/mqtt) 与 EMQX [MQTT 服务器](https://www.emqx.com/zh/products/emqx) 的简单知识。
+在阅读该指南之前，假定你已经了解 [MQTT](https://www.emqx.com/zh/mqtt-guide) 与 EMQX [MQTT 服务器](https://www.emqx.com/zh/products/emqx) 的简单知识。
 
 EMQX Broker 从 V3 版本开始支持速率限制功能，包括了对 **PUBLISH 报文接收速率** 与 **TCP 数据包接收速率** 的限制，本文将详细介绍该功能的配置与使用。
 

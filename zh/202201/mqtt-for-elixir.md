@@ -4,11 +4,11 @@
 
 通过使用 [Nerves](https://www.nerves-project.org/)，我们可以在支持网络的设备上运行 Elixir 代码，并且与一些控制软件交互。
 
-上面提到的书主要关注点在 Nerves，使用 HTTP 协议进行网络交互。 尽管在许多情况下这是一个合理的选择，但我想介绍另一个广泛用于生产物联网 (IoT) 设置的选择：[MQTT](https://www.emqx.com/zh/mqtt)。
+上面提到的书主要关注点在 Nerves，使用 HTTP 协议进行网络交互。 尽管在许多情况下这是一个合理的选择，但我想介绍另一个广泛用于生产物联网 (IoT) 设置的选择：[MQTT](https://www.emqx.com/zh/mqtt-guide)。
 
 ## MQTT 协议
 
-[MQTT](https://www.emqx.com/zh/mqtt) 是一种专为 (IoT) 设备通信而设计的消息传输协议。 它广泛应用于许多领域，例如银行、石油和天然气、制造业等。
+[MQTT](https://www.emqx.com/zh/mqtt-guide) 是一种专为 (IoT) 设备通信而设计的消息传输协议。 它广泛应用于许多领域，例如银行、石油和天然气、制造业等。
 
 MQTT 协议有很多优点，部分如下所示：
 

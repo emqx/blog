@@ -4,7 +4,7 @@
 
 在车联网生态中，TSP（Telematics Service Provider）平台在产业链中居于核心地位，上接汽车、车载设备制造商与网络运营商，下接内容提供商，是主机厂车辆与服务的核心数据连接平台。随着智能汽车的发展和车主用户对应用场景需求的不断提升，主机厂对 TSP 平台的设备与应用承载能力需求将不断增加。
 
-在之前的文章《[车联网场景中的 MQTT 协议](https://www.emqx.com/zh/blog/mqtt-for-internet-of-vehicles)》我们提到，在车载设备与 TSP 平台数据交互协议选择上，[MQTT](https://www.emqx.com/zh/mqtt) 以其轻量化、易扩展、多种消息质量保证（QoS），以及通过发布订阅模式实现数据产生与数据消费系统解偶等优势成为了目前各大主机厂的新一代 TSP 平台的首选协议。
+在之前的文章《[车联网场景中的 MQTT 协议](https://www.emqx.com/zh/blog/mqtt-for-internet-of-vehicles)》我们提到，在车载设备与 TSP 平台数据交互协议选择上，[MQTT](https://www.emqx.com/zh/mqtt-guide) 以其轻量化、易扩展、多种消息质量保证（QoS），以及通过发布订阅模式实现数据产生与数据消费系统解偶等优势成为了目前各大主机厂的新一代 TSP 平台的首选协议。
 
 本文我们将介绍在车联网 TSP 平台搭建过程中，如何进行 [MQTT 消息主题](https://www.emqx.com/zh/blog/advanced-features-of-mqtt-topics)设计。
 

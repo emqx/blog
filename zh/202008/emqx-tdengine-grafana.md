@@ -28,7 +28,7 @@ TDengine 提供社区版、企业版和云服务版，安装/使用教程详见 
 
 ## 业务场景
 
-本文模拟物联网环境数据采集场景，假设现有一定数据的环境数据采集点，所有采集点数据均通过 [MQTT 协议](https://www.emqx.com/zh/mqtt) 传输至采集平台（MQTT Publish），主题设计如下：
+本文模拟物联网环境数据采集场景，假设现有一定数据的环境数据采集点，所有采集点数据均通过 [MQTT 协议](https://www.emqx.com/zh/mqtt-guide) 传输至采集平台（MQTT Publish），主题设计如下：
 
 ```bash
 sensor/data

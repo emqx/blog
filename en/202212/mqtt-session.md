@@ -99,7 +99,7 @@ The MQTT protocol has designed a Session Present field for CONNACK message since
 
 At this point, we have completed our introduction to MQTT Persistent Session and demonstrated the use of Clean Session through the desktop client. You can refer to this article to receive offline messages and reduce subscription overhead by using MQTT Persistent Session.
 
-Next, you can check out [The Easy-to-understand Guide to MQTT Protocol](https://www.emqx.com/en/mqtt) series of articles provided by EMQ to learn about MQTT Topics, Wildcards, Retained Messages, Will Messages, and other features. Explore more advanced applications of MQTT and get started with MQTT application and service development.
+Next, you can check out [The Easy-to-understand Guide to MQTT Protocol](https://www.emqx.com/en/mqtt-guide) series of articles provided by EMQ to learn about MQTT Topics, Wildcards, Retained Messages, Will Messages, and other features. Explore more advanced applications of MQTT and get started with MQTT application and service development.
 
 
 

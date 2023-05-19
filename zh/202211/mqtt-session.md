@@ -102,7 +102,7 @@ MQTT 协议从 v3.1.1 开始，就为 CONNACK 报文设计了 Session Present �
 
 至此，我们完成了对 MQTT 持久会话的介绍，并通过桌面客户端演示了 Clean Session 的使用。读者可参考本文借助 MQTT 持久会话实现离线消息的接收及降低订阅开销。
 
-接下来，读者可访问 EMQ 提供的 [MQTT 入门与进阶](https://www.emqx.com/zh/mqtt)系列文章学习 MQTT 主题及通配符、保留消息、遗嘱消息等相关概念，探索 MQTT 的更多高级应用，开启 MQTT 应用及服务开发。
+接下来，读者可访问 EMQ 提供的 [MQTT 入门与进阶](https://www.emqx.com/zh/mqtt-guide)系列文章学习 MQTT 主题及通配符、保留消息、遗嘱消息等相关概念，探索 MQTT 的更多高级应用，开启 MQTT 应用及服务开发。
 
 
 <section class="promotion">

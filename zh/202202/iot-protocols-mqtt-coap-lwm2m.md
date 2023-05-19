@@ -131,7 +131,7 @@ MQTT 是 AWS IoT Core、 Azure IoT Hub、阿里云物联网平台等顶级云厂
 
 [EMQX](https://www.emqx.com/zh/products/emqx) 作为全球最热门、最成熟的 MQTT Broker 之一，提供了「随处运行，无限连接，任意集成」云原生分布式物联网接入平台，一体化的分布式 MQTT 消息服务和强大的 IoT 规则引擎，为高可靠、高性能的物联网实时数据移动、处理和集成提供动力，助力企业快速构建关键业务的 IoT 平台与应用。
 
-> 参考资料：[MQTT 协议入门与进阶](https://www.emqx.com/zh/mqtt)
+> 参考资料：[MQTT 协议入门与进阶](https://www.emqx.com/zh/mqtt-guide)
 
 ## CoAP
 

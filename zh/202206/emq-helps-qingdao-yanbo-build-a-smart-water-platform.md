@@ -97,7 +97,7 @@ eKuiper 规则配置参考：
 }
 ```
 
-厂站内网通过运营商专网服务对接上级单位生产网。边缘网关通过 [MQTT 协议](https://www.emqx.com/zh/mqtt)将标准化的厂站数据报文实时发给到生产网中 [EMQX](https://www.emqx.com/zh/products/emqx) 的 [MQTT 集群](https://www.emqx.com/zh/blog/tag/mqtt-broker-%E9%9B%86%E7%BE%A4)服务中。在生产网与办公网之间，通过 EMQX 集群桥接方式穿越防火墙进行数据实时桥接，最终将实时数据写到办公网中的 EMQX 集群中。
+厂站内网通过运营商专网服务对接上级单位生产网。边缘网关通过 [MQTT 协议](https://www.emqx.com/zh/mqtt-guide)将标准化的厂站数据报文实时发给到生产网中 [EMQX](https://www.emqx.com/zh/products/emqx) 的 [MQTT 集群](https://www.emqx.com/zh/blog/tag/mqtt-broker-%E9%9B%86%E7%BE%A4)服务中。在生产网与办公网之间，通过 EMQX 集群桥接方式穿越防火墙进行数据实时桥接，最终将实时数据写到办公网中的 EMQX 集群中。
 
 ![厂站数据采集架构图](https://assets.emqx.com/images/ee269b14520e65f8db53f2ca88cac766.png)
 

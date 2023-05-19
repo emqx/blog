@@ -191,7 +191,7 @@ In summary, we have implemented the creation of an MQTT connection in the React 
 
 In this article, we use React v16.13.1, so the Hook Component feature will be used as example code to demonstrate, or if required, you can refer to the ClassMqtt component in the full example code to use the Class Component feature for project building.
 
-Next, you can check out [The Easy-to-understand Guide to MQTT Protocol](https://www.emqx.com/en/mqtt) series of articles provided by EMQ to learn about MQTT protocol features, explore more advanced applications of MQTT, and get started with MQTT application and service development.
+Next, you can check out [The Easy-to-understand Guide to MQTT Protocol](https://www.emqx.com/en/mqtt-guide) series of articles provided by EMQ to learn about MQTT protocol features, explore more advanced applications of MQTT, and get started with MQTT application and service development.
 
 
 [^1]: https://en.wikipedia.org/wiki/React_(web_framework)

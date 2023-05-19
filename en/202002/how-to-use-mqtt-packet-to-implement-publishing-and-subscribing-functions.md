@@ -14,7 +14,7 @@ If you don't have an available MQTT broker for the time being, **[EMQX](https://
 
 ![WX201911281139012x.png](https://assets.emqx.com/images/824bc7779391f86ec9cf02bd73378f42.png)
 
-The configuration of the Client in the MQTTX tool is actually the configuration of the Connect packets in the [MQTT protocol](https://www.emqx.com/en/mqtt). The following explains the related configuration items:
+The configuration of the Client in the MQTTX tool is actually the configuration of the Connect packets in the [MQTT protocol](https://www.emqx.com/en/mqtt-guide). The following explains the related configuration items:
 
 #### Client ID
 

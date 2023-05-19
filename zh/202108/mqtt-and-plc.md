@@ -1,6 +1,6 @@
 ## MQTT 协议概述
 
-[MQTT](https://www.emqx.com/zh/mqtt) 是用于物联网的标准消息传递协议。它被设计为一种非常轻量级的发布/订阅消息传送，非常适合以较小的代码占用量和网络带宽连接远程设备。MQTT 协议具有以下特点：
+[MQTT](https://www.emqx.com/zh/mqtt-guide) 是用于物联网的标准消息传递协议。它被设计为一种非常轻量级的发布/订阅消息传送，非常适合以较小的代码占用量和网络带宽连接远程设备。MQTT 协议具有以下特点：
 
 - **轻巧高效**：[MQTT 客户端](https://www.emqx.com/zh/blog/introduction-to-the-commonly-used-mqtt-client-library)非常小，需要设备资源少。MQTT 消息头很小，可以优化网络带宽。
 - **双向通讯**：MQTT 允许设备到云之间以及云到设备之间的消息传递。

@@ -1,6 +1,6 @@
 ## MQTT protocol
 
-MQTT is a standard messaging protocol for the IoT business. It is designed as a very lightweight publish/subscribe messaging protocol, which is very suitable for connecting remote devices with a small code usage and network bandwidth. [MQTT Protocol](https://www.emqx.com/en/mqtt) has the following characteristics:
+MQTT is a standard messaging protocol for the IoT business. It is designed as a very lightweight publish/subscribe messaging protocol, which is very suitable for connecting remote devices with a small code usage and network bandwidth. [MQTT Protocol](https://www.emqx.com/en/mqtt-guide) has the following characteristics:
 
 - **Lightweight and efficient**: [MQTT Client](https://www.emqx.com/en/blog/introduction-to-the-commonly-used-mqtt-client-library) is and requires fewer device resources. The MQTT message header is very small, which can optimize the network bandwidth.
 - **Two-way communication**: MQTT allows message delivery both from device to cloud and from cloud to the device.
@@ -18,7 +18,7 @@ Today, MQTT is widely used in the industries such as automobiles, manufacturing,
 
 With the rapid development of IoT technology, new information sensing equipment and various wired and wireless network technologies have gradually been widely used in petroleum exploration, production, and storage and transportation environment. Petroleum and petrochemical enterprises hope to use the IoT technology to realize the remote management of oilfield terminal equipment and optimize the efficiency, security and scalability of IoT data storage and management.
 
-In the oil production, transportation and storage scenarios, the traditional industrial bus protocol and PLC protocol are transformed into the IoT [MQTT protocol](https://www.emqx.com/en/mqtt) through the industrial edge gateway, and real-time on-site data is delivered  to the data center to realize remote collection and centralized management of on-site data. This is one of the key directions of production monitoring technology transformation in petroleum and petrochemical enterprises.
+In the oil production, transportation and storage scenarios, the traditional industrial bus protocol and PLC protocol are transformed into the IoT [MQTT protocol](https://www.emqx.com/en/mqtt-guide) through the industrial edge gateway, and real-time on-site data is delivered  to the data center to realize remote collection and centralized management of on-site data. This is one of the key directions of production monitoring technology transformation in petroleum and petrochemical enterprises.
 
 
 

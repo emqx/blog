@@ -199,7 +199,7 @@ MQTT 协议规定主题的长度为两个字节，因此主题最多可包含 **
 
 ## 结语
 
-至此，相信读者已对 MQTT 主题及通配符有了深刻的理解。接下来，可访问 EMQ 提供的 [MQTT 入门与进阶](https://www.emqx.com/zh/mqtt)系列文章了解 MQTT 协议的其他特性，探索 MQTT 的更多高级应用，开启 MQTT 应用及服务开发。
+至此，相信读者已对 MQTT 主题及通配符有了深刻的理解。接下来，可访问 EMQ 提供的 [MQTT 入门与进阶](https://www.emqx.com/zh/mqtt-guide)系列文章了解 MQTT 协议的其他特性，探索 MQTT 的更多高级应用，开启 MQTT 应用及服务开发。
   
 
 <section class="promotion">

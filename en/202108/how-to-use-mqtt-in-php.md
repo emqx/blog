@@ -13,7 +13,7 @@ For more documentation about php-mqtt/client, please refer to [Packagist php-mqt
 MQTT communication belongs to a network communication scenario outside the HTTP system. Due to the limitation of PHP characteristics, using the extensions for network communication such as Swoole/Workerman in the PHP system can bring a better experience. Its use will not be repeated in this article. The relevant MQTT client libraries are as follows:
 
 - [workerman/mqtt](https://packagist.org/packages/workerman/mqtt)：Asynchronous MQTT client for PHP based on workerman.
-- [simps/mqtt](https://packagist.org/packages/simps/mqtt)：[MQTT protocol](https://www.emqx.com/en/mqtt) Analysis and Coroutine Client for PHP.
+- [simps/mqtt](https://packagist.org/packages/simps/mqtt)：[MQTT protocol](https://www.emqx.com/en/mqtt-guide) Analysis and Coroutine Client for PHP.
 
 
 
@@ -205,7 +205,7 @@ php pubsub_tcp.php
 
 So far, we have used the **php-mqtt/client** to connect to the [public MQTT server](https://www.emqx.com/en/mqtt/public-mqtt5-broker), and implemented the connection, message publishing and subscription between the test client and the MQTT server.
 
-Next, you can check out [The Easy-to-understand Guide to MQTT Protocol](https://www.emqx.com/en/mqtt) series of articles provided by EMQ to learn about MQTT protocol features, explore more advanced applications of MQTT, and get started with MQTT application and service development.
+Next, you can check out [The Easy-to-understand Guide to MQTT Protocol](https://www.emqx.com/en/mqtt-guide) series of articles provided by EMQ to learn about MQTT protocol features, explore more advanced applications of MQTT, and get started with MQTT application and service development.
 
 
 

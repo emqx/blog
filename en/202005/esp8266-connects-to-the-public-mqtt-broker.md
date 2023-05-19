@@ -197,7 +197,7 @@ In this project, we will implement connecting ESP8266 to [free public MQTT broke
 
 So far, we have successfully connected ESP8266 to the free public MQTT broker provided by EMQX Cloud. In this project, we connect ESP8266 to the MQTT broker, which is one of the relatively basic capabilities of ESP8266. Besides that, ESP8266 can also connect to various IoT sensors, and report the sensor data to the MQTT broker.
 
-Next, you can check out [The Easy-to-understand Guide to MQTT Protocol](https://www.emqx.com/en/mqtt) series of articles provided by EMQ to learn about MQTT protocol features, explore more advanced applications of MQTT, and get started with MQTT application and service development.
+Next, you can check out [The Easy-to-understand Guide to MQTT Protocol](https://www.emqx.com/en/mqtt-guide) series of articles provided by EMQ to learn about MQTT protocol features, explore more advanced applications of MQTT, and get started with MQTT application and service development.
 
 
 <section class="promotion">

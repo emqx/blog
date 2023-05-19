@@ -1,4 +1,4 @@
-As we mentioned in the [previous article](https://www.emqx.com/en/blog/mqtt-for-internet-of-vehicles) of this series, the [MQTT protocol](https://www.emqx.com/en/mqtt) is currently the most suitable communication protocol for building the data platform for IoV. Based on this, this article will continue to discuss the acquisition and transmission of MQTT messages for the IoV and how to build a ten-million-level IoV MQTT message platform, to provide a reference for enterprise users who are engaged in the business of IoV.
+As we mentioned in the [previous article](https://www.emqx.com/en/blog/mqtt-for-internet-of-vehicles) of this series, the [MQTT protocol](https://www.emqx.com/en/mqtt-guide) is currently the most suitable communication protocol for building the data platform for IoV. Based on this, this article will continue to discuss the acquisition and transmission of MQTT messages for the IoV and how to build a ten-million-level IoV MQTT message platform, to provide a reference for enterprise users who are engaged in the business of IoV.
 
 
 ## Fundamentals of IoV: Data collection and Transmission 

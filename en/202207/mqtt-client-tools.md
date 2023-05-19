@@ -1,4 +1,4 @@
-With the rapid development of the Internet of Things (IoT), the MQTT protocol is being widely used by many companies and developers. In the journey of [learning and using MQTT](https://www.emqx.com/en/mqtt), a handy client tool can greatly facilitate developers to explore MQTT features and debug IoT applications, shortening the development cycle.
+With the rapid development of the Internet of Things (IoT), the MQTT protocol is being widely used by many companies and developers. In the journey of [learning and using MQTT](https://www.emqx.com/en/mqtt-guide), a handy client tool can greatly facilitate developers to explore MQTT features and debug IoT applications, shortening the development cycle.
 
 There are a variety of MQTT client tools with different functional focuses. Choosing a suitable MQTT client tool is challenging for beginners and even MQTT experts.
 

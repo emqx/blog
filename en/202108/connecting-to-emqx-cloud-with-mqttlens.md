@@ -1,4 +1,4 @@
-This article will take [MQTTLens](https://chrome.google.com/webstore/detail/mqttlens/hemojaaeigabkbcookmlgmdigohjobjm/related?hl=zh_cn) as [MQTT client](https://www.emqx.com/en/blog/introduction-to-the-commonly-used-mqtt-client-library) test tool to connect to [MQTT Cloud Service - EMQX Cloud](https://www.emqx.com/en/cloud). Through this article, you will be able to quickly understand the basic usage of MQTTLens and the basic concepts and usage of the [MQTT protocol](https://www.emqx.com/en/mqtt).
+This article will take [MQTTLens](https://chrome.google.com/webstore/detail/mqttlens/hemojaaeigabkbcookmlgmdigohjobjm/related?hl=zh_cn) as [MQTT client](https://www.emqx.com/en/blog/introduction-to-the-commonly-used-mqtt-client-library) test tool to connect to [MQTT Cloud Service - EMQX Cloud](https://www.emqx.com/en/cloud). Through this article, you will be able to quickly understand the basic usage of MQTTLens and the basic concepts and usage of the [MQTT protocol](https://www.emqx.com/en/mqtt-guide).
 
 
 
@@ -6,7 +6,7 @@ This article will take [MQTTLens](https://chrome.google.com/webstore/detail/mqtt
 
 [MQTTLens](https://chrome.google.com/webstore/detail/mqttlens/hemojaaeigabkbcookmlgmdigohjobjm/related?hl=zh_cn) is a Chrome extension tool that can be installed through the Chrome On-line App Store. The MQTTLens interface is very simple and provides basic publish/subscribe functions.
 
-MQTTLens is simple enough. With the help of Chrome’s powerful cross-platform features, it provides the basic [MQTT](https://www.emqx.com/en/mqtt) and [MQTT over WebSocket](https://www.emqx.com/en/blog/connect-to-mqtt-broker-with-websocket) connection functions, which can quickly meet the needs of entry and exploration. 
+MQTTLens is simple enough. With the help of Chrome’s powerful cross-platform features, it provides the basic [MQTT](https://www.emqx.com/en/mqtt-guide) and [MQTT over WebSocket](https://www.emqx.com/en/blog/connect-to-mqtt-broker-with-websocket) connection functions, which can quickly meet the needs of entry and exploration. 
 
 MQTTLens fully supports the following functions:
 

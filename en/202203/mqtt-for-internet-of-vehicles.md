@@ -4,7 +4,7 @@ In this series of articles, we will share how to build a reliable, efficient and
 
 ## Preface
 
-The [MQTT protocol](https://www.emqx.com/en/mqtt) has long been a well-deserved mainstream protocol in the field of IoT. It has been widely used in the building of IoT platforms in many industries by virtue of its characteristics of lightweight, high efficiency, reliability, security and two-way communication. So what about the application of the MQTT protocol in the IoV industry?
+The [MQTT protocol](https://www.emqx.com/en/mqtt-guide) has long been a well-deserved mainstream protocol in the field of IoT. It has been widely used in the building of IoT platforms in many industries by virtue of its characteristics of lightweight, high efficiency, reliability, security and two-way communication. So what about the application of the MQTT protocol in the IoV industry?
 
 Based on EMQ’s use cases in the IoV industry, this article will compare the advantages and disadvantages of different IoT communication protocols in the construction of IoV platforms, and share how enterprises can select appropriate MQTT messaging products and services based on their own conditions, as well as the most popular technical solutions in data transmission security, data integration and so on.
 

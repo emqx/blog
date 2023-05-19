@@ -1,4 +1,4 @@
-由 EMQ 开源的 MQTTX 是一款 MQTT 5.0 跨平台桌面客户端。MQTTX 为连接测试各类 MQTT 消息服务器而生，支持快速创建多个同时在线的 MQTT 客户端连接，采用一键式的连接方式和简洁的图形界面，帮助使用者便捷地测试 MQTT/TCP、MQTT/TLS、MQTT/WebSocket 的连接、发布、订阅功能，探索更多 [MQTT 协议特性](https://www.emqx.com/zh/mqtt)。
+由 EMQ 开源的 MQTTX 是一款 MQTT 5.0 跨平台桌面客户端。MQTTX 为连接测试各类 MQTT 消息服务器而生，支持快速创建多个同时在线的 MQTT 客户端连接，采用一键式的连接方式和简洁的图形界面，帮助使用者便捷地测试 MQTT/TCP、MQTT/TLS、MQTT/WebSocket 的连接、发布、订阅功能，探索更多 [MQTT 协议特性](https://www.emqx.com/zh/mqtt-guide)。
 
 在近期发布的 v1.8.0 中，除了通过新增的快速复制连接功能优化使用体验之外，还扩展了两个新的使用场景，即增加了 CLI（命令行） 和 Web 端（浏览器网页）这两种新的交互方式 。这使得 MQTTX 1.8.0 成为支持使用场景最完整的 [MQTT 客户端工具](https://www.emqx.com/zh/blog/mqtt-client-tools)。用户可以根据使用需求，自行选择下载桌面客户端、使用终端命令行或是在桌面浏览器上快速完成对 MQTT 的连接测试。
 

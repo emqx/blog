@@ -251,7 +251,7 @@ python3 sub.py
 
 So far, we have finished that use the **paho-mqtt** client to connect to [the free public MQTT broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker), and implemented the connect, publish messages and subscribe to messages between the test client and MQTT broker.
 
-Next, you can check out [The Easy-to-understand Guide to MQTT Protocol](https://www.emqx.com/en/mqtt) series of articles provided by EMQ to learn about MQTT protocol features, explore more advanced applications of MQTT, and get started with MQTT application and service development.
+Next, you can check out [The Easy-to-understand Guide to MQTT Protocol](https://www.emqx.com/en/mqtt-guide) series of articles provided by EMQ to learn about MQTT protocol features, explore more advanced applications of MQTT, and get started with MQTT application and service development.
 
 
 [^1]: https://en.wikipedia.org/wiki/Python_(programming_language)

@@ -24,7 +24,7 @@ Click the "Create Deployment" button in the middle of the page to start the depl
 
 EMQX Cloud provides three versions for you to choose from, which are suitable for different usage scenarios.
 
-- Basic version: This version is suitable for the study and experience of [MQTT protocol](https://www.emqx.com/en/mqtt) or EMQX Broker products and the development of lightweight IoT applications. The basic version offers a 30-day free trial.
+- Basic version: This version is suitable for the study and experience of [MQTT protocol](https://www.emqx.com/en/mqtt-guide) or EMQX Broker products and the development of lightweight IoT applications. The basic version offers a 30-day free trial.
 - Professional version: This version is suitable for building mission-critical IoT applications. This version provides advanced functions such as data persistence, message distribution, and VPC peering connections. The professional version offers a 14-day free trial.
 - Flagship version: This version is suitable for the construction of enterprise-level IoT platforms, provides support for multi-region and exclusive hardware deployment and adds functions such as device management, device shadow, and object model.
 

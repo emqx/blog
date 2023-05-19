@@ -2,7 +2,7 @@
 
 A basic Electron includes three files: `package.json` (metadata) `main.js` (code) and `index.html` (graphical user interface). The frame is provided by the Electron executable file (electron.exe on Windows, electron.app on macOS, electron on Linux). Developers are free to add flags, customize icons, rename or edit Electron executable files.
 
-This article mainly introduces how to use [MQTT](https://www.emqx.com/en/mqtt) in Electron projects, and complete a simple MQTT desktop client, and implement the connection, subscription, unsubscribe, messaging and other functions between the client and [MQTT broker](https://www.emqx.com/en/products/emqx).
+This article mainly introduces how to use [MQTT](https://www.emqx.com/en/mqtt-guide) in Electron projects, and complete a simple MQTT desktop client, and implement the connection, subscription, unsubscribe, messaging and other functions between the client and [MQTT broker](https://www.emqx.com/en/products/emqx).
 
 ## Project initialization
 

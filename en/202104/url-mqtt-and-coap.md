@@ -5,7 +5,7 @@ However, unlike the traditional Internet, end-to-end communication is always a d
 ![WechatIMG14.png](https://assets.emqx.com/images/d1206132ad1e17d5ab2b8f50eb5cf9ce.png)
 As an IoT message broker, EMQX Broker is on a mission to enable these devices to provide communication. Therefore, we have developed many IoT protocol plugins. Whether you prefer TCP-based long links such as MQTT, UDP-based connectionless such as CoAP, or private protocols, in the world of EMQX we can help you find a 'soulmate' who can read you.
 
-> About the MQTT protocol: [https://www.emqx.com/en/mqtt](https://www.emqx.com/en/mqtt)
+> About the MQTT protocol: [https://www.emqx.com/en/mqtt](https://www.emqx.com/en/mqtt-guide)
 
 **This article will show you a「date」between MQTT client and CoAP client in the EMQX world**
 
