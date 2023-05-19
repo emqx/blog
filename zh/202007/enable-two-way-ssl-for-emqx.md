@@ -1,6 +1,6 @@
 作为基于现代密码学公钥算法的安全协议，TLS/SSL 能在计算机通讯网络上保证传输安全，EMQX 内置对 TLS/SSL 的支持，包括支持单/双向认证、X.509 证书、负载均衡 SSL 等多种安全认证。你可以为 EMQX 支持的所有协议启用 SSL/TLS，也可以将 EMQX 提供的 HTTP API 配置为使用 TLS。
 
-在上一篇文章中，我们已经介绍过如何为 [EMQX MQTT 服务器启用 SSL/TLS 单向安全连接](https://www.emqx.com/zh/blog/emqx-server-ssl-tls-secure-connection-configuration-guide)，本文将介绍如何在 EMQX 中为 [MQTT](https://www.emqx.com/zh/mqtt) 启用双向 SSL/TLS 安全连接。
+在上一篇文章中，我们已经介绍过如何为 [EMQX MQTT 服务器启用 SSL/TLS 单向安全连接](https://www.emqx.com/zh/blog/emqx-server-ssl-tls-secure-connection-configuration-guide)，本文将介绍如何在 EMQX 中为 [MQTT](https://www.emqx.com/zh/mqtt-guide) 启用双向 SSL/TLS 安全连接。
 
 
 

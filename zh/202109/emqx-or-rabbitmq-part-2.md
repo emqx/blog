@@ -37,7 +37,7 @@ RabbitMQ 使用了 Erlang 语言的分布式连接，即每个节点之间两两
 
 ### MQTT 插件
 
-RabbitMQ 在使用 MQTT 插件后会监听使用 [MQTT 协议](https://www.emqx.com/zh/mqtt)发布的消息。得到消息之后，消息被解析，之后再通过 AMQP 协议进行转化，最后才会被发送到 RabbitMQ 上。
+RabbitMQ 在使用 MQTT 插件后会监听使用 [MQTT 协议](https://www.emqx.com/zh/mqtt-guide)发布的消息。得到消息之后，消息被解析，之后再通过 AMQP 协议进行转化，最后才会被发送到 RabbitMQ 上。
 
 ![MQTT插件.png](https://assets.emqx.com/images/1197c10dd374beb30c9c14d8631801b6.png)
 

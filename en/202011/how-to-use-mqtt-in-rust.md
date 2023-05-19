@@ -382,7 +382,7 @@ Meanwhile, the published messages are also visible in the message subscription.
 
 So far, we have completed using the **paho-mqtt** client to connect to the [public MQTT broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker), and implemented connection, message publishing and subscription between the test client and  MQTT broker.
 
-Next, you can check out [The Easy-to-understand Guide to MQTT Protocol](https://www.emqx.com/en/mqtt) series of articles provided by EMQ to learn about MQTT protocol features, explore more advanced applications of MQTT, and get started with MQTT application and service development.
+Next, you can check out [The Easy-to-understand Guide to MQTT Protocol](https://www.emqx.com/en/mqtt-guide) series of articles provided by EMQ to learn about MQTT protocol features, explore more advanced applications of MQTT, and get started with MQTT application and service development.
 
 
 

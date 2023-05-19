@@ -1,4 +1,4 @@
-[MQTT](https://www.emqx.com/en/mqtt) adalah prokotol fleksibel dan lightweight untuk bertukar pesan IoT dan mengirim pesan. MQTT berfungsi untuk  menyeimbangkan fleksibilitas dan sumber hardware/jaringan untuk developer IoT.
+[MQTT](https://www.emqx.com/en/mqtt-guide) adalah prokotol fleksibel dan lightweight untuk bertukar pesan IoT dan mengirim pesan. MQTT berfungsi untuk  menyeimbangkan fleksibilitas dan sumber hardware/jaringan untuk developer IoT.
 
 [ESP8266](https://www.espressif.com/) menyediakan solusi SoC Wi-Fi yang sangat terintegrasi dengan desainnya yang kompak, hemat tenaga, dan stabilitas yang tinggi. ESP8266 memiliki fungsi jaringan Wi-Fi mandiri dan lengkap yang dapat diaplikasikan secara independen atau dapat dipakai sebagai slave di host MCU lainnya.
 

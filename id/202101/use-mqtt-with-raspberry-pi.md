@@ -2,7 +2,7 @@
 
 
 
- [MQTT](https://www.emqx.com/en/mqtt) adalah sebuah **protokol messaging IoT lightweight** berbasis model publish/subscribe yang menyediakan servis messaging yang dapat diandalkan dan real-time untuk perangkat IoT dengan hanya menggunakan sedikit kode dan bandwith. MQTT cocok untuk perangkat dengan sumber hardware yang terbatas dan jaringan dengan bandwith yang terbatas pula. Karena itu, protokol MQTT banyak digunakan di IoT, internet HP, tenaga listrik, dan industri lainnya.
+ [MQTT](https://www.emqx.com/en/mqtt-guide) adalah sebuah **protokol messaging IoT lightweight** berbasis model publish/subscribe yang menyediakan servis messaging yang dapat diandalkan dan real-time untuk perangkat IoT dengan hanya menggunakan sedikit kode dan bandwith. MQTT cocok untuk perangkat dengan sumber hardware yang terbatas dan jaringan dengan bandwith yang terbatas pula. Karena itu, protokol MQTT banyak digunakan di IoT, internet HP, tenaga listrik, dan industri lainnya.
 
 
 

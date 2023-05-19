@@ -1,6 +1,6 @@
 [Flask](https://flask.palletsprojects.com/en/2.1.x/) 是一个使用 Python 编写的轻量级 Web 应用框架，其被称为 “微框架”，因为它使用简单的核心，用扩展增加其他功能，例如：ORM、窗体验证工具、文件上传、各种开放式身份验证技术等。
 
-[MQTT](https://www.emqx.com/zh/mqtt) 是一种基于发布/订阅模式的 轻量级物联网消息传输协议 ，可以用极少的代码和带宽为联网设备提供实时可靠的消息服务，它广泛应用于物联网、移动互联网、智能硬件、[车联网](https://www.emqx.com/zh/blog/category/internet-of-vehicles)、电力能源等行业。
+[MQTT](https://www.emqx.com/zh/mqtt-guide) 是一种基于发布/订阅模式的 轻量级物联网消息传输协议 ，可以用极少的代码和带宽为联网设备提供实时可靠的消息服务，它广泛应用于物联网、移动互联网、智能硬件、[车联网](https://www.emqx.com/zh/blog/category/internet-of-vehicles)、电力能源等行业。
 
 本文主要介绍如何在 Flask 项目中实现 [MQTT 客户端](https://www.emqx.com/zh/blog/introduction-to-the-commonly-used-mqtt-client-library)与 [MQTT 服务器](https://www.emqx.io/zh)的连接、订阅、取消订阅、收发消息等功能。
 

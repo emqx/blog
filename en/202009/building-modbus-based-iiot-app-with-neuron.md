@@ -14,7 +14,7 @@ We will build a simple IIoT application based on [Modbus](https://en.wikipedia.o
 
 ## Introduction to EMQX Neuron
 
-EMQ has recently published [an industrial protocol access software Neuron](https://www.emqx.com/en/products/neuron) deployed on the edge gateway. As a bridge between humans and machines, it can convert and reorganize the 0/1 data of TCP/IP protocol to an easy-to-understand JSON format, and use [MQTT protocol](https://www.emqx.com/en/mqtt) to export the data to the cloud. Therefore, it can better handle the interaction between humans and objects.
+EMQ has recently published [an industrial protocol access software Neuron](https://www.emqx.com/en/products/neuron) deployed on the edge gateway. As a bridge between humans and machines, it can convert and reorganize the 0/1 data of TCP/IP protocol to an easy-to-understand JSON format, and use [MQTT protocol](https://www.emqx.com/en/mqtt-guide) to export the data to the cloud. Therefore, it can better handle the interaction between humans and objects.
 
 EMQX Neuron supports various kinds of industrial protocol, including Modbus, OPC, etc. It can meet most of the industrial access requirements. The detailed protocol list is as follows:
 

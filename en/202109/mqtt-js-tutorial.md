@@ -309,7 +309,7 @@ In addition to listening to events, the Client also has some built-in functions 
 
 ## Summary
 
-So far, this article has briefly introduced the usage functions of some common APIs of MQTT.js. Next, you can check out [The Easy-to-understand Guide to MQTT Protocol](https://www.emqx.com/en/mqtt) series of articles provided by EMQ to learn about MQTT protocol features, explore more advanced applications of MQTT, and get started with MQTT application and service development.
+So far, this article has briefly introduced the usage functions of some common APIs of MQTT.js. Next, you can check out [The Easy-to-understand Guide to MQTT Protocol](https://www.emqx.com/en/mqtt-guide) series of articles provided by EMQ to learn about MQTT protocol features, explore more advanced applications of MQTT, and get started with MQTT application and service development.
 
 For specific use in actual projects, please refer to the following links.
 

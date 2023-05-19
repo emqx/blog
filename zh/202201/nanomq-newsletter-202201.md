@@ -1,4 +1,4 @@
-本月，NanoMQ 发布了 0.5.9 版本，除了例行的 Bug 修复外，我们基于上月的 MQTT 桥接功能和兼容原生 NNG 功能，为大家带来了高效易用的 [MQTT](https://www.emqx.com/zh/mqtt) 命令行工具包。同时我们也持续修复发现的 Bug 和用户反馈的 Issue，并积极维护 NanoMQ 的姊妹项目 NanoSDK。
+本月，NanoMQ 发布了 0.5.9 版本，除了例行的 Bug 修复外，我们基于上月的 MQTT 桥接功能和兼容原生 NNG 功能，为大家带来了高效易用的 [MQTT](https://www.emqx.com/zh/mqtt-guide) 命令行工具包。同时我们也持续修复发现的 Bug 和用户反馈的 Issue，并积极维护 NanoMQ 的姊妹项目 NanoSDK。
 
 ## MQTT 命令行工具
 

@@ -153,7 +153,7 @@ def deinit():
 
 ### 启动
 
-启动 `emqx_extension_hook` 插件，如果配置错误或代码编写错误将无法正常启动。启动后尝试建立 [MQTT](https://www.emqx.com/zh/mqtt) 连接并观察业务运行情况。
+启动 `emqx_extension_hook` 插件，如果配置错误或代码编写错误将无法正常启动。启动后尝试建立 [MQTT](https://www.emqx.com/zh/mqtt-guide) 连接并观察业务运行情况。
 
 
 

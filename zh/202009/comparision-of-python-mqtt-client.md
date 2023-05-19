@@ -8,7 +8,7 @@ Python 上有许多优秀的 MQTT 客户端库，借助它们，我们可以以�
 
 ## paho-mqtt
 
-[paho-mqtt](https://github.com/eclipse/paho.mqtt.python) 可以说是 Python MQTT 开源客户端库中的佼佼者。它由 Eclipse 基金会主导开发，除了 Python 库以外，同样支持各大主流的编程语言，比如 C++、Java、JavaScript、Golang 等。目前 Python 版本已经实现了 3.1 和 3.1.1 [MQTT 协议](https://www.emqx.com/zh/mqtt)，在最新开发版中实现了 [MQTT 5.0](https://www.emqx.com/zh/mqtt/mqtt5)。
+[paho-mqtt](https://github.com/eclipse/paho.mqtt.python) 可以说是 Python MQTT 开源客户端库中的佼佼者。它由 Eclipse 基金会主导开发，除了 Python 库以外，同样支持各大主流的编程语言，比如 C++、Java、JavaScript、Golang 等。目前 Python 版本已经实现了 3.1 和 3.1.1 [MQTT 协议](https://www.emqx.com/zh/mqtt-guide)，在最新开发版中实现了 [MQTT 5.0](https://www.emqx.com/zh/mqtt/mqtt5)。
 
 在基金会的支持下，以每年一个版本的速度更新，本文发布时的最新版本为 1.5.0（于 2019 年 8 月发布）。
 

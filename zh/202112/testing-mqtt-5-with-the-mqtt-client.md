@@ -1,4 +1,4 @@
-近日，由 EMQ 开源的跨平台 MQTT 5.0 桌面测试客户端[ MQTTX 发布了最新版本 v1.7.0](https://www.emqx.com/zh/blog/mqttx-v-1-7-0-release-notes)。MQTTX 支持快速创建多个同时在线的 MQTT 客户端，方便测试 MQTT/TCP、MQTT/TLS、MQTT/WebSocket 的连接、发布、订阅功能及其他 [MQTT 协议](https://www.emqx.com/zh/mqtt)特性。
+近日，由 EMQ 开源的跨平台 MQTT 5.0 桌面测试客户端[ MQTTX 发布了最新版本 v1.7.0](https://www.emqx.com/zh/blog/mqttx-v-1-7-0-release-notes)。MQTTX 支持快速创建多个同时在线的 MQTT 客户端，方便测试 MQTT/TCP、MQTT/TLS、MQTT/WebSocket 的连接、发布、订阅功能及其他 [MQTT 协议](https://www.emqx.com/zh/mqtt-guide)特性。
 
 新发布的 1.7.0 版本对 [MQTT 5.0](https://www.emqx.com/zh/mqtt/mqtt5) 实现了更为全面的支持，是全球目前为止对 MQTT 5.0 支持最为完整的桌面测试客户端工具。同时新增了很多优化用户体验的功能。
 

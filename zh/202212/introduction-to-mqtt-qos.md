@@ -158,7 +158,7 @@ QoS 2 既可以保证消息到达，也可以保证消息不会重复，但传�
 
 ## 结语
 
-至此，相信读者已对 MQTT QoS 有了深刻的理解。接下来，可访问 EMQ 提供的 [MQTT 入门与进阶](https://www.emqx.com/zh/mqtt)系列文章学习 MQTT 主题及通配符、保留消息、遗嘱消息等相关概念，探索 MQTT 的更多高级应用，开启 MQTT 应用及服务开发。
+至此，相信读者已对 MQTT QoS 有了深刻的理解。接下来，可访问 EMQ 提供的 [MQTT 入门与进阶](https://www.emqx.com/zh/mqtt-guide)系列文章学习 MQTT 主题及通配符、保留消息、遗嘱消息等相关概念，探索 MQTT 的更多高级应用，开启 MQTT 应用及服务开发。
 
 
 <section class="promotion">

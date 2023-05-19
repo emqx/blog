@@ -1,4 +1,4 @@
-自 [NanoMQ](https://www.emqx.com/zh/products/nanomq) 首个版本发布已有近一年时间，这个十月，我们正式发布了项目首个稳定版本 v0.5.0。从该版本开始，NanoMQ 除了完整支持 [MQTT](https://www.emqx.com/zh/mqtt) 3.1.1 协议外，还将支持 [MQTT Over WebSocket](https://www.emqx.com/zh/blog/connect-to-mqtt-broker-with-websocket)。用户也可以通过配置文件或命令行参数修改 NanoMQ 的启动调优选项。此外还增加了内置的 HTTP 服务器，未来将提供更丰富的 HTTP APIs。
+自 [NanoMQ](https://www.emqx.com/zh/products/nanomq) 首个版本发布已有近一年时间，这个十月，我们正式发布了项目首个稳定版本 v0.5.0。从该版本开始，NanoMQ 除了完整支持 [MQTT](https://www.emqx.com/zh/mqtt-guide) 3.1.1 协议外，还将支持 [MQTT Over WebSocket](https://www.emqx.com/zh/blog/connect-to-mqtt-broker-with-websocket)。用户也可以通过配置文件或命令行参数修改 NanoMQ 的启动调优选项。此外还增加了内置的 HTTP 服务器，未来将提供更丰富的 HTTP APIs。
 
 接下来我们主要致力于 NanoMQ/NNG 的 [MQTT SDK](https://www.emqx.com/zh/mqtt-client-sdk) 支持和桥接功能开发，此功能预计在 0.6.0 版本中提供。敬请期待。
 

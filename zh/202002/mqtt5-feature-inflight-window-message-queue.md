@@ -14,7 +14,7 @@
 
 MQTT v5.0 协议为 CONNECT 报文新增了一个 `Receive Maximum` 的属性，官方对它的解释是：*客户端使用此值限制客户端愿意同时处理的 QoS 为 1 和 QoS 为 2 的发布消息最大数量。没有机制可以限制服务端试图发送的 QoS 为 0 的发布消息*。也就是说，服务端可以在等待确认时使用不同的报文标识符向客户端发送后续的 PUBLISH 报文，直到未被确认的报文数量到达 `Receive Maximum` 限制。
 
-不难看出，`Receive Maximum` 其实与 EMQX 消息服务器中的 Inflight Window 机制如出一辙，只是在 MQTT v5.0 协议发布前，EMQX 就已经对接入的 [MQTT 客户端](https://www.emqx.com/zh/mqtt-client-sdk)提供了这一功能。现在，使用 MQTT v5.0 协议的客户端将按照 `Receive Maximum` 的规范来设置 Inflight Window 的最大长度，而更低版本 [MQTT 协议](https://www.emqx.com/zh/mqtt)的客户端则依然按照配置来设置。
+不难看出，`Receive Maximum` 其实与 EMQX 消息服务器中的 Inflight Window 机制如出一辙，只是在 MQTT v5.0 协议发布前，EMQX 就已经对接入的 [MQTT 客户端](https://www.emqx.com/zh/mqtt-client-sdk)提供了这一功能。现在，使用 MQTT v5.0 协议的客户端将按照 `Receive Maximum` 的规范来设置 Inflight Window 的最大长度，而更低版本 [MQTT 协议](https://www.emqx.com/zh/mqtt-guide)的客户端则依然按照配置来设置。
 
 
 

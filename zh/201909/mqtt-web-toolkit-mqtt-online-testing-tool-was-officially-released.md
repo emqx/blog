@@ -1,4 +1,4 @@
-[MQTT Web Toolkit ](http://www.emqx.io/online-mqtt-client/)是 EMQ 最近开源的一款 MQTT (WebSocket) 测试工具，支持线上 ([www.emqx.io/online-mqtt-client/](http://www.emqx.io/online-mqtt-client/)) 访问使用。该工具采用了聊天界面形式，简化了页面操作逻辑，方便用户快速测试验证 [MQTT](https://www.emqx.com/zh/mqtt) 应用场景。
+[MQTT Web Toolkit ](http://www.emqx.io/online-mqtt-client/)是 EMQ 最近开源的一款 MQTT (WebSocket) 测试工具，支持线上 ([www.emqx.io/online-mqtt-client/](http://www.emqx.io/online-mqtt-client/)) 访问使用。该工具采用了聊天界面形式，简化了页面操作逻辑，方便用户快速测试验证 [MQTT](https://www.emqx.com/zh/mqtt-guide) 应用场景。
 
 
 ## 功能简介

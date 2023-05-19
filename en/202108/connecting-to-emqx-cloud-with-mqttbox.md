@@ -1,4 +1,4 @@
-This article will take [MQTTBox](https://github.com/workswithweb/MQTTBox) as [MQTT client](https://www.emqx.com/en/blog/introduction-to-the-commonly-used-mqtt-client-library) test tool to connect to [MQTT Cloud Service-EMQX Cloud](https://www.emqx.com/en/cloud). Through this article, you will be able to quickly understand the basic usage of MQTTBox and the basic concepts and usage of the [MQTT protocol](https://www.emqx.com/en/mqtt).
+This article will take [MQTTBox](https://github.com/workswithweb/MQTTBox) as [MQTT client](https://www.emqx.com/en/blog/introduction-to-the-commonly-used-mqtt-client-library) test tool to connect to [MQTT Cloud Service-EMQX Cloud](https://www.emqx.com/en/cloud). Through this article, you will be able to quickly understand the basic usage of MQTTBox and the basic concepts and usage of the [MQTT protocol](https://www.emqx.com/en/mqtt-guide).
 
 
 

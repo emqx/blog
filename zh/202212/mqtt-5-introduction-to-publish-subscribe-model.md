@@ -70,7 +70,7 @@ HTTP 是万维网数据通信的基础，其简单易用无客户端依赖，被
 
 MQTT 的发布/订阅机制可以很轻易地满足我们一对一、一对多、多对一的通信需要。这也在很大程度上拓宽了 MQTT 在 IoT 领域之外的应用，像网络直播互动、手机消息推送等行业场景，都非常适合使用 MQTT。
 
-至此，相信读者已对 MQTT 的发布/订阅模式有了深刻的理解，接下来，可查看博客[创建 MQTT 连接时如何设置参数？](https://www.emqx.com/zh/blog/how-to-set-parameters-when-establishing-an-mqtt-connection)了解如何创建一个 MQTT 连接。或访问 EMQ 提供的 [MQTT 入门与进阶](https://www.emqx.com/zh/mqtt)系列文章学习 MQTT 主题及通配符、保留消息、遗嘱消息等相关概念，探索 MQTT 的更多高级应用，开启 MQTT 应用及服务开发。
+至此，相信读者已对 MQTT 的发布/订阅模式有了深刻的理解，接下来，可查看博客[创建 MQTT 连接时如何设置参数？](https://www.emqx.com/zh/blog/how-to-set-parameters-when-establishing-an-mqtt-connection)了解如何创建一个 MQTT 连接。或访问 EMQ 提供的 [MQTT 入门与进阶](https://www.emqx.com/zh/mqtt-guide)系列文章学习 MQTT 主题及通配符、保留消息、遗嘱消息等相关概念，探索 MQTT 的更多高级应用，开启 MQTT 应用及服务开发。
 
 
 

@@ -68,7 +68,7 @@ The MQTT publish/subscribe mechanism can easily meet our communication needs of 
 
 So far, you should have a good understanding of the MQTT publish-subscribe pattern. Next, you can check [the blog](https://www.emqx.com/en/blog/how-to-set-parameters-when-establishing-an-mqtt-connection) to learn how to create an MQTT connection.
 
-You can also visit the [MQTT Getting Started and Advanced](https://www.emqx.com/en/mqtt) series of articles provided by EMQ to learn about MQTT topics and related concepts such as wildcards, retained messages, and will messages, and to explore more advanced applications of MQTT. These resources will help you get started with MQTT applications and services development.
+You can also visit the [MQTT Getting Started and Advanced](https://www.emqx.com/en/mqtt-guide) series of articles provided by EMQ to learn about MQTT topics and related concepts such as wildcards, retained messages, and will messages, and to explore more advanced applications of MQTT. These resources will help you get started with MQTT applications and services development.
 
 
 

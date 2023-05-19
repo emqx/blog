@@ -28,7 +28,7 @@ CoAP 参考了很多 HTTP 的设计思路，同时也根据受限资源限制设
 
 ### 市场状况
 
-相比于 [MQTT](https://www.emqx.com/zh/mqtt)，CoAP 更加轻量、开销更低，在某些特定的设备和网络环境下更为合适，EMQX Cloud 以及部分公有云物联网平台都提供提供了 CoAP 接入能力。
+相比于 [MQTT](https://www.emqx.com/zh/mqtt-guide)，CoAP 更加轻量、开销更低，在某些特定的设备和网络环境下更为合适，EMQX Cloud 以及部分公有云物联网平台都提供提供了 CoAP 接入能力。
 
 ## CoAP 协议接入 EMQX Cloud
 

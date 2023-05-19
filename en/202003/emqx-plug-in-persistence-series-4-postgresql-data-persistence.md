@@ -279,7 +279,7 @@ After the client subscribes to the retain topic, EMQX will query the `mqtt_retai
 
 **Publish (message is empty)**
 
-In the [MQTT protocol](https://www.emqx.com/en/mqtt), publishing an empty retain message will clear the retain record. At this time, the retain record will be deleted from the `mqtt_retain` table.
+In the [MQTT protocol](https://www.emqx.com/en/mqtt-guide), publishing an empty retain message will clear the retain record. At this time, the retain record will be deleted from the `mqtt_retain` table.
 
 
 

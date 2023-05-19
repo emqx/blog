@@ -30,7 +30,7 @@ Grafana 4.6+ supports installing Clickhouse data sources via plugin format. It i
 
 ## Business scenarios
 
-In this article, we simulate a data collection scenario in an IoT environment, assuming that there are certain data collection points in the environment, and the data from all the collection points are transmitted to the collection platform via [MQTT protocol](https://www.emqx.com/en/mqtt), the MQTT topic is designed as follows:
+In this article, we simulate a data collection scenario in an IoT environment, assuming that there are certain data collection points in the environment, and the data from all the collection points are transmitted to the collection platform via [MQTT protocol](https://www.emqx.com/en/mqtt-guide), the MQTT topic is designed as follows:
 
 ```bash
 sensor/data

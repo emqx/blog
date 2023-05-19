@@ -238,7 +238,7 @@ In summary, we have implemented the creation of an MQTT connection in a Vue proj
 
 As one of the three most popular front-end frames, Vue can be used on the browser-side, and can also be used on the mobile side. Combining the MQTT protocol and [MQTT cloud service](https://www.emqx.com/en/cloud), can develop many interesting applications, for example, a customer service chat system or a management system that monitors IoT device information in real-time.
 
-Next, you can check out [The Easy-to-understand Guide to MQTT Protocol](https://www.emqx.com/en/mqtt) series of articles provided by EMQ to learn about MQTT protocol features, explore more advanced applications of MQTT, and get started with MQTT application and service development.
+Next, you can check out [The Easy-to-understand Guide to MQTT Protocol](https://www.emqx.com/en/mqtt-guide) series of articles provided by EMQ to learn about MQTT protocol features, explore more advanced applications of MQTT, and get started with MQTT application and service development.
 
 
 <section class="promotion">

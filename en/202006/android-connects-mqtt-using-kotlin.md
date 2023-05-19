@@ -207,7 +207,7 @@ So far, we have finished the construction of the [MQTT client](https://www.emqx.
 
 MQTT can provide real-time and reliable message service for connecting remote devices, only with a few codes and limited bandwidth. Since it is a kind of low-cost, low-bandwidth occupancy instant communicating protocol, it is widely used for IoT, small-size equipment, mobile applications, etc.
 
-Next, you can check out [The Easy-to-understand Guide to MQTT Protocol](https://www.emqx.com/en/mqtt) series of articles provided by EMQ to learn about MQTT protocol features, explore more advanced applications of MQTT, and get started with MQTT application and service development.
+Next, you can check out [The Easy-to-understand Guide to MQTT Protocol](https://www.emqx.com/en/mqtt-guide) series of articles provided by EMQ to learn about MQTT protocol features, explore more advanced applications of MQTT, and get started with MQTT application and service development.
 
 
 <section class="promotion">

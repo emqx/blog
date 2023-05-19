@@ -127,7 +127,7 @@ MQTT application development is also inseparable from the support of the MQTT te
 
 ## Quick Start with MQTT
 
-At this point, I believe you have a preliminary understanding of the MQTT protocol. Next, you can visit the blog [The Easiest Guide to Getting Started with MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) to learn how to start using MQTT, or check out [Learn MQTT](https://www.emqx.com/en/mqtt) series of articles to learn about MQTT protocol features, explore more advanced applications of MQTT, and start MQTT application and service development.
+At this point, I believe you have a preliminary understanding of the MQTT protocol. Next, you can visit the blog [The Easiest Guide to Getting Started with MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) to learn how to start using MQTT, or check out [Learn MQTT](https://www.emqx.com/en/mqtt-guide) series of articles to learn about MQTT protocol features, explore more advanced applications of MQTT, and start MQTT application and service development.
 
 
 

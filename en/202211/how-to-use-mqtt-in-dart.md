@@ -333,7 +333,7 @@ Console output.
 
 At this point, we have finished connecting to the [public MQTT server](https://www.emqx.com/en/mqtt/public-mqtt5-broker) using the [mqtt_client](https://pub.dev/packages/mqtt_client) library in Dart, and implemented the connection, message publishing, subscription, and test between client and MQTT server.
 
-Next, readers can check out [The Easy-to-understand Guide to MQTT Protocol](https://www.emqx.com/en/mqtt) series of articles provided by EMQ to learn about MQTT protocol features, explore more advanced applications of MQTT, and get started with MQTT application and service development.
+Next, readers can check out [The Easy-to-understand Guide to MQTT Protocol](https://www.emqx.com/en/mqtt-guide) series of articles provided by EMQ to learn about MQTT protocol features, explore more advanced applications of MQTT, and get started with MQTT application and service development.
 
 
 <section class="promotion">

@@ -12,7 +12,7 @@ In order to solve the above problems, the industry has proposed a solution for e
 
 ## Business scenario
 
-Suppose there is an existing set of devices. Each device in the group has an id that sends data to the corresponding topic on the MQTT message server via the [MQTT protocol](https://www.emqx.com/en/mqtt). The design of the topic is as follows, where {device_id} is the id of the device.
+Suppose there is an existing set of devices. Each device in the group has an id that sends data to the corresponding topic on the MQTT message server via the [MQTT protocol](https://www.emqx.com/en/mqtt-guide). The design of the topic is as follows, where {device_id} is the id of the device.
 
 ```
 devices/{device_id}/messages

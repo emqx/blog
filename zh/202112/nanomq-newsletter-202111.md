@@ -1,4 +1,4 @@
-11 月 NanoMQ 团队主要致力于为 NNG 添加 [MQTT](https://www.emqx.com/zh/mqtt) 支持，同时对 [NanoMQ](https://nanomq.io/zh) 进行了一些更新。
+11 月 NanoMQ 团队主要致力于为 NNG 添加 [MQTT](https://www.emqx.com/zh/mqtt-guide) 支持，同时对 [NanoMQ](https://nanomq.io/zh) 进行了一些更新。
 
 ## NanoMQ 更新
 

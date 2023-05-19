@@ -6,7 +6,7 @@ It's essential to understand the basic testing scenarios and performance metrics
 
 >**Terms Explanation**
 >
->- MQTT Protocol: MQTT stands for Message Queuing Telemetry Transport. Despite its name containing "message queuing," it has nothing to do with message queues. Instead, it is a lightweight messaging protocol based on a publish/subscribe model. With its simplicity, flexibility, easy implementation, support for QoS, and small message size, MQTT has become the preferred protocol for the Internet of Things (IoT). For more information, please refer to [MQTT Guide 2023: Beginner to Advanced](https://www.emqx.com/en/mqtt).
+>- MQTT Protocol: MQTT stands for Message Queuing Telemetry Transport. Despite its name containing "message queuing," it has nothing to do with message queues. Instead, it is a lightweight messaging protocol based on a publish/subscribe model. With its simplicity, flexibility, easy implementation, support for QoS, and small message size, MQTT has become the preferred protocol for the Internet of Things (IoT). For more information, please refer to [MQTT Guide 2023: Beginner to Advanced](https://www.emqx.com/en/mqtt-guide).
 >- Performance Testing: Performance testing is a process of using testing tools to simulate various normal, peak, or abnormal load conditions to test various performance indicators of the system under tested. The goal is to verify whether the system can meet the user's expectation, discover performance bottlenecks in the system, and so on.
 
 ## Typical MQTT Test Scenarios

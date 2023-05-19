@@ -30,7 +30,7 @@ MQTT v5.0 中的 Clean Start 与 Session Expiry Interval，对于有 MQTT v3.1.1
 
 前面还提到，MQTT v5.0 支持客户端在断开连接时重新指定 Seesion Expiry Interval。这样我们可以非常容易地满足类似客户端网络连接异常断开时会话状态被服务器保留，客户端正常下线时会话则随着连接关闭而结束的场景，只需要客户端在断开连接时将 Session Expiry Interval 设置为 0 即可。即便是一个已经永不过期的会话，客户端也可以在下一次连接中通过设置 Clean Start 为 1 来 "反悔"。
 
-Clean Start 与 Session Expiry Interval 不仅解决了 Clean Session 的遗留问题，同时也扩展了客户端的使用场景，使 [MQTT 协议](https://www.emqx.com/zh/mqtt)在受限的网络环境下更加实用。
+Clean Start 与 Session Expiry Interval 不仅解决了 Clean Session 的遗留问题，同时也扩展了客户端的使用场景，使 [MQTT 协议](https://www.emqx.com/zh/mqtt-guide)在受限的网络环境下更加实用。
 
 
 <section class="promotion">

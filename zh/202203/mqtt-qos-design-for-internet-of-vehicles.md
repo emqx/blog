@@ -8,7 +8,7 @@
 
 ## MQTT 协议中的 QoS 等级
 
-作为现如今车联网行业数据通信协议的首选，[MQTT 协议](https://www.emqx.com/zh/mqtt)中规定了消息服务质量（Quality of Service，以下简称 QoS）。QoS 保证了在不同的网络环境下消息传递的可靠性，可作为车联网场景中保障消息可靠性传输的首要实现技术。
+作为现如今车联网行业数据通信协议的首选，[MQTT 协议](https://www.emqx.com/zh/mqtt-guide)中规定了消息服务质量（Quality of Service，以下简称 QoS）。QoS 保证了在不同的网络环境下消息传递的可靠性，可作为车联网场景中保障消息可靠性传输的首要实现技术。
 
 MQTT 设计了 3 个 QoS 等级：
 

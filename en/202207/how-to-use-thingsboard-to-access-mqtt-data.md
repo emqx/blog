@@ -152,7 +152,7 @@ At this point, we have finished integrating the EMQX Cloud deployment in ThingsB
 
 In real projects, more complex Dashboard configurations can be performed after learning more about ThingsBoard. This will allow you to monitor device-related data in real-time detail visually and set alert thresholds to help you resolve issues in a timely manner.
 
-Next, you can check out [The Easy-to-understand Guide to MQTT Protocol](https://www.emqx.com/en/mqtt) series of articles provided by EMQ to learn about MQTT protocol features, explore more advanced applications of MQTT, and get started with MQTT application and service development.
+Next, you can check out [The Easy-to-understand Guide to MQTT Protocol](https://www.emqx.com/en/mqtt-guide) series of articles provided by EMQ to learn about MQTT protocol features, explore more advanced applications of MQTT, and get started with MQTT application and service development.
  
 
 <section class="promotion">

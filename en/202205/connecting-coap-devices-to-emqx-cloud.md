@@ -39,7 +39,7 @@ CoAP is based on many HTTP design ideas but also improves many design details ac
 
 ### Market Status 
 
-Compared to [MQTT](https://www.emqx.com/en/mqtt), CoAP is lighter, has lower overhead, and is more appropriate in the certain device and network environments.
+Compared to [MQTT](https://www.emqx.com/en/mqtt-guide), CoAP is lighter, has lower overhead, and is more appropriate in the certain device and network environments.
 
 ## CoAP Protocol Access to EMQX Cloud 
 

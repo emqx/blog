@@ -2,7 +2,7 @@
 
 [MicroPython](https://zh.wikipedia.org/wiki/MicroPython) 是 Python 3 编程语言的一个完整软件实现，用 C 语言编写，运行在 MCU（微控制器）硬件之上的完全的 Python 编译器和运行时系统，提供给用户一个交互式提示符（REPL）来立即执行所支持的命令。除了包括选定的核心 Python 库，MicroPython 还包括了给予编程者访问低层硬件的模块，是 Python 3 语言的精简实现 ，包括 Python 标准库的一小部分，经过优化可在微控制器和受限环境中运行。
 
-[MQTT](https://www.emqx.com/zh/mqtt) 是一种基于发布/订阅模式的轻量级物联网消息传输协议 ，可以用极少的代码和带宽为联网设备提供实时可靠的消息服务，它适用于硬件资源有限的设备及带宽有限的网络环境。因此，MQTT 协议广泛应用于物联网、移动互联网、智能硬件、车联网、电力能源等行业。
+[MQTT](https://www.emqx.com/zh/mqtt-guide) 是一种基于发布/订阅模式的轻量级物联网消息传输协议 ，可以用极少的代码和带宽为联网设备提供实时可靠的消息服务，它适用于硬件资源有限的设备及带宽有限的网络环境。因此，MQTT 协议广泛应用于物联网、移动互联网、智能硬件、车联网、电力能源等行业。
 
 本文将介绍如何在树莓派上使用 MicroPython 编写简单的 [MQTT 客户端](https://www.emqx.com/zh/mqtt-client-sdk)，并实现该客户端与 [MQTT 服务器](https://www.emqx.io/zh)的连接、订阅、发布等功能。
 

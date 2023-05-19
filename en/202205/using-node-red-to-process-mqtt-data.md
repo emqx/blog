@@ -81,7 +81,7 @@ Now we have completed the whole process for installing and connecting with MQTT 
 
 The interaction and use of Node-RED, that is, using UI to describe general business logic, can lower the threshold for non-professional developers to get started. To use a visual tool to create the required complex execution tasks quickly, users may build complex tasks through simple node connection, which is very helpful, especially for some IoT application scenarios.
 
-Next, you can check out [The Easy-to-understand Guide to MQTT Protocol](https://www.emqx.com/en/mqtt) series of articles provided by EMQ to learn about MQTT protocol features, explore more advanced applications of MQTT, and get started with MQTT application and service development.
+Next, you can check out [The Easy-to-understand Guide to MQTT Protocol](https://www.emqx.com/en/mqtt-guide) series of articles provided by EMQ to learn about MQTT protocol features, explore more advanced applications of MQTT, and get started with MQTT application and service development.
 
 <section class="promotion">
     <div>

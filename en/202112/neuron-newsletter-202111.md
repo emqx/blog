@@ -3,7 +3,7 @@ In November, the Neuron team still focused on the development of v2.0, improved 
 ## Functionality improvements in Neuron v2.0
 
 - Improve some HTTP request interface of the Webserver, including user login and logout, node setting, start and stop, datatag addition, deletion, subscription and read/write, configuration update of group config, etc.
-- Improve some interface of [MQTT](https://www.emqx.com/en/mqtt), including support for some functional interface of the Webserver, support for node control, datatag addition, deletion, modification, and search, support for the attribute of datatag, support for configuration update of group config, and plug-in acquisition and update.
+- Improve some interface of [MQTT](https://www.emqx.com/en/mqtt-guide), including support for some functional interface of the Webserver, support for node control, datatag addition, deletion, modification, and search, support for the attribute of datatag, support for configuration update of group config, and plug-in acquisition and update.
 - Improve the function and stability of Modbus driver. The function of data periodically reading/writing is optimized, and the subscription relationship changes after the group config is updated.
 
 ## Test of Neuron v2.0

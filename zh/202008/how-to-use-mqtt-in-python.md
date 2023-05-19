@@ -247,7 +247,7 @@ python3 sub.py
 
 与 C ++ 或 Java 之类的高级语言不同，Python 比较适合设备侧的业务逻辑实现，使用 Python 您可以减少代码上的逻辑复杂度，降低与设备的交互成本。我们相信在物联网领域 Python  将会有更广泛的应用。
 
-接下来，读者可访问 EMQ 提供的 [MQTT 入门与进阶](https://www.emqx.com/zh/mqtt)系列文章学习 MQTT 主题及通配符、保留消息、遗嘱消息等相关概念，探索 MQTT 的更多高级应用，开启 MQTT 应用及服务开发。
+接下来，读者可访问 EMQ 提供的 [MQTT 入门与进阶](https://www.emqx.com/zh/mqtt-guide)系列文章学习 MQTT 主题及通配符、保留消息、遗嘱消息等相关概念，探索 MQTT 的更多高级应用，开启 MQTT 应用及服务开发。
 
 
 

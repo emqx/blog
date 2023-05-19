@@ -124,7 +124,7 @@ MQTT 应用开发还离不开 MQTT 测试工具的支持，一款易用且功能
 
 ## 快速体验 MQTT
 
-至此，相信读者已对 MQTT 协议有了初步了解。接下来，读者可访问博客[MQTT 协议快速体验](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt)了解如何开始使用 MQTT，或查看 EMQ 提供的 [MQTT 入门与进阶](https://www.emqx.com/zh/mqtt)系列文章了解 MQTT 协议相关特性，探索 MQTT 的更多高级应用，开启 MQTT 应用及服务开发。
+至此，相信读者已对 MQTT 协议有了初步了解。接下来，读者可访问博客[MQTT 协议快速体验](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt)了解如何开始使用 MQTT，或查看 EMQ 提供的 [MQTT 入门与进阶](https://www.emqx.com/zh/mqtt-guide)系列文章了解 MQTT 协议相关特性，探索 MQTT 的更多高级应用，开启 MQTT 应用及服务开发。
 
 
 

@@ -6,7 +6,7 @@ In the IoT scenario, the safe design is a very important part of the process. Le
 - Encryption algorithms require more computing power, but the performance of IoT devices is often very limited;
 - Network conditions of IoT are often much worse than those of the home or office.
 
-In order to solve the questions blew, the [MQTT protocol](https://www.emqx.com/en/mqtt) provides the simple authentication and the enhanced authentication, which easy to validate devices at the application layer.
+In order to solve the questions blew, the [MQTT protocol](https://www.emqx.com/en/mqtt-guide) provides the simple authentication and the enhanced authentication, which easy to validate devices at the application layer.
 
 
 

@@ -12,7 +12,7 @@
 
 在金融行业中，数字支付既是必然趋势，也是众多银行、IT 服务商以及大型商户所面临的挑战。以目前物联网设备的接入数量与未来的发展速度，如何解决数十万、百万乃至上千万的接入量级是电子交易业务相关供应商应该规划思考的问题。因此，电子交易业务迫切需要一个海量、实时、高可用、安全的信息交互系统。
 
-物联网 [MQTT 协议](https://www.emqx.com/zh/mqtt)具备轻量、低带宽、低能耗、异步等特性，更加适用于资源受限、网络环境复杂、低功耗的环境要求。其发布订阅模式将发布者与订阅者解耦，使得订阅者与发布者不需要建立直接连接，同时可以提供心跳机制、[遗嘱消息](https://www.emqx.com/zh/blog/use-of-mqtt-will-message)、[QoS 消息控制质量](https://www.emqx.com/zh/blog/introduction-to-mqtt-qos)、离线消息、主题和安全管理等，专为物联网而生并发展成为物联网行业事实标准，是构建智慧金融物联设备接入的最佳选择。
+物联网 [MQTT 协议](https://www.emqx.com/zh/mqtt-guide)具备轻量、低带宽、低能耗、异步等特性，更加适用于资源受限、网络环境复杂、低功耗的环境要求。其发布订阅模式将发布者与订阅者解耦，使得订阅者与发布者不需要建立直接连接，同时可以提供心跳机制、[遗嘱消息](https://www.emqx.com/zh/blog/use-of-mqtt-will-message)、[QoS 消息控制质量](https://www.emqx.com/zh/blog/introduction-to-mqtt-qos)、离线消息、主题和安全管理等，专为物联网而生并发展成为物联网行业事实标准，是构建智慧金融物联设备接入的最佳选择。
 
 在 [MQTT 中间件](https://www.emqx.com/zh/products/emqx)领域，[EMQX](https://www.emqx.com/zh/products/emqx) 所具有的高性能、高可用卓越稳定性、良好扩展性以及丰富功能使其在方案构建中优势明显。
 

@@ -1,4 +1,4 @@
-Mosquitto 是一个小型轻量的开源 MQTT 服务器，由 C/C++ 语言编写，采用单核心单线程架构，支持部署在资源有限的嵌入式设备，接入少量 MQTT 设备终端，并实现了 [MQTT 5.0](https://www.emqx.com/zh/mqtt/mqtt5) 和 3.1.1版本协议。Mosquitto 完整支持了 [MQTT 协议](https://www.emqx.com/zh/mqtt) 特性，但基础功能上 Mosquitto 集群功能羸弱，官方和第三方实现的集群方案均难以支撑物联网大规模海量连接的性能需求。
+Mosquitto 是一个小型轻量的开源 MQTT 服务器，由 C/C++ 语言编写，采用单核心单线程架构，支持部署在资源有限的嵌入式设备，接入少量 MQTT 设备终端，并实现了 [MQTT 5.0](https://www.emqx.com/zh/mqtt/mqtt5) 和 3.1.1版本协议。Mosquitto 完整支持了 [MQTT 协议](https://www.emqx.com/zh/mqtt-guide) 特性，但基础功能上 Mosquitto 集群功能羸弱，官方和第三方实现的集群方案均难以支撑物联网大规模海量连接的性能需求。
 
 因此 Mosquitto 并不适合用来做规模化服务的 MQTT 服务器，但由于其足够轻量精简，可以运行在任何低功率单片机包括嵌入式传感器、手机设备、嵌入式微处理器上，是物联网边缘消息接入较好的技术选型之一，结合其桥接功能可以实现消息的本地处理与云端透传。
 

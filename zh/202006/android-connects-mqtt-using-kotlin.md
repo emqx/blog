@@ -215,7 +215,7 @@ MQTT 可以以极少的代码和有限的带宽，为连接远程设备提供实
 
 而 Kotlin 也是 Google 官方主推的一门语言，结合 MQTT 协议及 [MQTT 云服务](https://www.emqx.com/zh/cloud)，我们可以开发更多有趣的应用。
 
-接下来，读者可访问 EMQ 提供的 [MQTT 入门与进阶](https://www.emqx.com/zh/mqtt)系列文章学习 MQTT 主题及通配符、保留消息、遗嘱消息等相关概念，探索 MQTT 的更多高级应用，开启 MQTT 应用及服务开发。
+接下来，读者可访问 EMQ 提供的 [MQTT 入门与进阶](https://www.emqx.com/zh/mqtt-guide)系列文章学习 MQTT 主题及通配符、保留消息、遗嘱消息等相关概念，探索 MQTT 的更多高级应用，开启 MQTT 应用及服务开发。
 
 
 

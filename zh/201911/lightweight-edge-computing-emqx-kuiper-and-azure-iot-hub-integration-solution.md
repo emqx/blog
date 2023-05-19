@@ -12,7 +12,7 @@
 
 ## 业务场景
 
-假设现有一组设备，组中的每个设备有一个 id，通过 [MQTT 协议](https://www.emqx.com/zh/mqtt)往 MQTT 消息服务器上相应的主题发送数据。主题的设计如下，其中 {device_id} 为设备的 id。
+假设现有一组设备，组中的每个设备有一个 id，通过 [MQTT 协议](https://www.emqx.com/zh/mqtt-guide)往 MQTT 消息服务器上相应的主题发送数据。主题的设计如下，其中 {device_id} 为设备的 id。
 
 ```
 devices/{device_id}/messages

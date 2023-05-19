@@ -14,7 +14,7 @@ IIoT 即 Industrial Internet of Things 的简称，是指数以亿计的工业�
 
 ## EMQX Neuron简介
 
-EMQ 于近日发布了布署在边缘网关上的 [工业协议接入软件 Neuron](https://www.emqx.com/zh/products/neuron)。作为人与机器之间的桥梁，它可以把 TCP/IP 协议的 0/1 数据，转化重组成通俗易懂的 JSON 格式，并使用 [MQTT 协议](https://www.emqx.com/zh/mqtt) 输出到云端，更好地处理人与物之间的交互。
+EMQ 于近日发布了布署在边缘网关上的 [工业协议接入软件 Neuron](https://www.emqx.com/zh/products/neuron)。作为人与机器之间的桥梁，它可以把 TCP/IP 协议的 0/1 数据，转化重组成通俗易懂的 JSON 格式，并使用 [MQTT 协议](https://www.emqx.com/zh/mqtt-guide) 输出到云端，更好地处理人与物之间的交互。
 
 EMQX Neuron 支持包括 Modbus、OPC 等在内的各类工业协议，可以基本满足大部分工业接入的需求，详细协议列表见下图。
 

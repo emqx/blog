@@ -1,4 +1,4 @@
-[MQTT 协议](https://www.emqx.com/zh/mqtt)在物联网，小型设备场景，移动应用等方面已经有了广泛的应用，并逐渐成为了物联网通讯的标准。本文重点介绍了组建 MQTT Broker 集群的挑战及负载均衡在 MQTT 集群中所起的作用。
+[MQTT 协议](https://www.emqx.com/zh/mqtt-guide)在物联网，小型设备场景，移动应用等方面已经有了广泛的应用，并逐渐成为了物联网通讯的标准。本文重点介绍了组建 MQTT Broker 集群的挑战及负载均衡在 MQTT 集群中所起的作用。
 
 
 ## MQTT 协议

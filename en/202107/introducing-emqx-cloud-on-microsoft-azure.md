@@ -2,7 +2,7 @@ EMQ, the leader of open-source and cloud-native distributed MQTT broker for IoT,
 
 [EMQX Cloud](https://www.emqx.com/en/cloud) is a fully managed MQTT service built on the worldwide used [open-source MQTT broker - EMQX](https://www.emqx.io), which has more than 10 million downloads and hundreds of thousands of deployments around the globe.
 
-EMQX Cloud helps our users carry out their IoT projects with [MQTT](https://www.emqx.com/en/mqtt) in a simple way, without the burden of deploying and managing the self-managed MQTT service in multiple regions of the cloud.
+EMQX Cloud helps our users carry out their IoT projects with [MQTT](https://www.emqx.com/en/mqtt-guide) in a simple way, without the burden of deploying and managing the self-managed MQTT service in multiple regions of the cloud.
 
 ![EMQX Cloud on Microsoft Azure](https://assets.emqx.com/images/72db2b959360906e1052c2bb5fc48cce.png)
 

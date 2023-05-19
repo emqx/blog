@@ -9,7 +9,7 @@ SaaS 模式已是软件行业商业模式发展的必然趋势。经过近一年
 
 ### 一键拥有全托管 [MQTT 5.0 服务](https://www.emqx.com/zh/cloud)
 
-EMQX Cloud 可在用户选择的公有云服务商的基础设施上部署 [MQTT](https://www.emqx.com/zh/mqtt) 服务，并提供全自动化的环境创建、服务部署、按需伸缩，让用户更专注于构建自己的 IoT 应用。
+EMQX Cloud 可在用户选择的公有云服务商的基础设施上部署 [MQTT](https://www.emqx.com/zh/mqtt-guide) 服务，并提供全自动化的环境创建、服务部署、按需伸缩，让用户更专注于构建自己的 IoT 应用。
 
 ![MQTT 5.0](https://assets.emqx.com/images/1c82ade8442fdd7f524dcb1553eeaceb.png)
 

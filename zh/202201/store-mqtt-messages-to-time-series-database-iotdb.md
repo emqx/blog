@@ -27,7 +27,7 @@ LICENSE         README.md       RELEASE_NOTES.md data             ext           
 NOTICE           README_ZH.md     conf             docs             lib             logs             tools
 ```
 
-要启用 IoTDB 的 [MQTT 协议](https://www.emqx.com/zh/mqtt)支持，需要改动 IoTDB 的配置文件 `conf/iotdb-engine.properties`：
+要启用 IoTDB 的 [MQTT 协议](https://www.emqx.com/zh/mqtt-guide)支持，需要改动 IoTDB 的配置文件 `conf/iotdb-engine.properties`：
 
 > *后续建模使用了一个存储组 [root.sg](http://root.sg/)，为了增加写入并行度，需要同时将 iotdb-engine.properties 中的  virtual_storage_group_num 设置为机器核数。
 

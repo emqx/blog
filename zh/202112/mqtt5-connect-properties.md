@@ -1,6 +1,6 @@
 ## MQTT 连接
 
-我们知道，在 [MQTT 协议](https://www.emqx.com/zh/mqtt)中，存在客户端和 Broker 两种角色，但客户端不能直接相互连接，必须连接至 Broker，由 Broker 完成消息路由。连接只能由客户端发起，首先客户端需要与 Broker 建立 TCP 连接，然后发送 CONNECT 报文，Broker 则响应 CONNACK 报文以表示是否接受此连接。
+我们知道，在 [MQTT 协议](https://www.emqx.com/zh/mqtt-guide)中，存在客户端和 Broker 两种角色，但客户端不能直接相互连接，必须连接至 Broker，由 Broker 完成消息路由。连接只能由客户端发起，首先客户端需要与 Broker 建立 TCP 连接，然后发送 CONNECT 报文，Broker 则响应 CONNACK 报文以表示是否接受此连接。
 
 CONNECT 报文包含客户端标识符（Client Identifier）、用户名（User Name）、密码（Password）等字段，这些字段提供了连接时的必要信息：
 

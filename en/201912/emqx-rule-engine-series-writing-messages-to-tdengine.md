@@ -10,7 +10,7 @@ TDEngine provides community edition, enterprise edition and cloud service editio
 
 ## Scenario introduction
 
-This article uses the example of  accessing the smart door lock of EMQX through [MQTT protocol](https://www.emqx.com/en/mqtt)
+This article uses the example of  accessing the smart door lock of EMQX through [MQTT protocol](https://www.emqx.com/en/mqtt-guide)
 
 Smart door locks have become the focus of smart home products. In order to ensure a more secure unlocking experience for users, smart door locks can usually achieve fingerprint unlocking, password unlocking, IC card unlocking, key unlocking, remote unlocking and other functions. Each business link of the smart door lock involves the sending and transmission of operation-sensitive instructions and status data, which should be stored for subsequent audit use.
 

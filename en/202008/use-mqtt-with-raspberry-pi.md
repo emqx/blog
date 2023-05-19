@@ -229,7 +229,7 @@ So far, you've learned how to simply use the MQTT service, although this is only
 2. Send the device information of Raspberry Pi to the MQTT broker regularly and receive messages through mobile phone, then can round-the-clock monitor.
 3. You can access the MQTT broker through the Raspberry Pi and use various kinds of sensors and ESP modules to create many interesting IoT applications.
 
-Next, you can check out [The Easy-to-understand Guide to MQTT Protocol](https://www.emqx.com/en/mqtt) series of articles provided by EMQ to learn about MQTT protocol features, explore more advanced applications of MQTT, and get started with MQTT application and service development.
+Next, you can check out [The Easy-to-understand Guide to MQTT Protocol](https://www.emqx.com/en/mqtt-guide) series of articles provided by EMQ to learn about MQTT protocol features, explore more advanced applications of MQTT, and get started with MQTT application and service development.
 
 
 <section class="promotion">

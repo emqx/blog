@@ -207,7 +207,7 @@ In this project, we will implement remote control LED lights via NodeMCU(ESP8266
 
 So far, we have successfully implemented remote control of the LED light using the NodeMCU ESP8266 and free public MQTT broker. This example only describes a simple scenario, while a more secure connection method and persistence of IoT data are needed in the actual projects.
 
-Next, you can check out [The Easy-to-understand Guide to MQTT Protocol](https://www.emqx.com/en/mqtt) series of articles provided by EMQ to learn about MQTT protocol features, explore more advanced applications of MQTT, and get started with MQTT application and service development.
+Next, you can check out [The Easy-to-understand Guide to MQTT Protocol](https://www.emqx.com/en/mqtt-guide) series of articles provided by EMQ to learn about MQTT protocol features, explore more advanced applications of MQTT, and get started with MQTT application and service development.
 
 
 <section class="promotion">

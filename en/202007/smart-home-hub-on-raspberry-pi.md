@@ -14,7 +14,7 @@ The [Raspberry Pi 3 Model B+](https://www.raspberrypi.org/products/raspberry-pi-
 
 ### EMQX Edge
 
-The communicating protocols between smart home devices are **MQTT**, **Wi-Fi**, **Bluetooth**, etc. The [MQTT protocol](https://www.emqx.com/en/mqtt) is an IoT communicating protocol based on publish/subscribe model, which is simple and easy to implement, supporting QoS and with the small packet. In this article, we will use the MQTT protocol as the communicating protocol between smart home devices.
+The communicating protocols between smart home devices are **MQTT**, **Wi-Fi**, **Bluetooth**, etc. The [MQTT protocol](https://www.emqx.com/en/mqtt-guide) is an IoT communicating protocol based on publish/subscribe model, which is simple and easy to implement, supporting QoS and with the small packet. In this article, we will use the MQTT protocol as the communicating protocol between smart home devices.
 
 Because of the limited RAM and processing power of raspberry Pi we choose the [EMQX Edge](https://www.emqx.com/en/products/emqx) open-sourced by [EMQ](https://www.emqx.com/en) as the MQTT broker. EMQX Edge is the lightweight IoT edge caculating message middleware and supports the IoT edge hardware.
 

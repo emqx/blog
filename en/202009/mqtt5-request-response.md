@@ -18,7 +18,7 @@ However, this is not a good implementation. We expect that the request recipient
 
 #### Correlation data
 
-Different from the HTTP request-response model, [MQTT](https://www.emqx.com/en/mqtt) request-response is asynchronous, which brings a problem, that is how to associate the response message with the request message. The most commonly used method is to carry one characteristic field in the request message. The responder will intact return the received fields when they receive the response message. Obviously, MQTT also considers this, so we add a new attribute **Correlation Data** for the PUBLISH packet.
+Different from the HTTP request-response model, [MQTT](https://www.emqx.com/en/mqtt-guide) request-response is asynchronous, which brings a problem, that is how to associate the response message with the request message. The most commonly used method is to carry one characteristic field in the request message. The responder will intact return the received fields when they receive the response message. Obviously, MQTT also considers this, so we add a new attribute **Correlation Data** for the PUBLISH packet.
 
 ![image20200901154600805.png](https://assets.emqx.com/images/d624fb3a3061f043f32ae02338f635a0.png)
 

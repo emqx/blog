@@ -15,7 +15,7 @@
 
 ## 业务场景
 
-假设现有一批设备，每个设备有一个 Client ID，所有设备均通过 [MQTT 协议](https://www.emqx.com/zh/mqtt) 往 [MQTT 服务器](https://www.emqx.com/zh/products/emqx) 上相应的主题发送数据，主题的设计如下：
+假设现有一批设备，每个设备有一个 Client ID，所有设备均通过 [MQTT 协议](https://www.emqx.com/zh/mqtt-guide) 往 [MQTT 服务器](https://www.emqx.com/zh/products/emqx) 上相应的主题发送数据，主题的设计如下：
 
 ```bash
 devices/{client_id}/messages

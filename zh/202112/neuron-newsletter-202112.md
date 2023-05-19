@@ -3,7 +3,7 @@
 ### Neuron 2.0-alpha.1 版本功能
 
 - 具有完整的 Web UI 界面。用户可以通过 Web UI 来控制和配置 Neuron、设置点位、读写 Neuron 连接设备的数据。
-- 支持 [MQTT](https://www.emqx.com/zh/mqtt) 连接。用户可以远程通过 MQTT 来控制和配置 Neuron、设置点位，读写neuron连接的设备的数据。
+- 支持 [MQTT](https://www.emqx.com/zh/mqtt-guide) 连接。用户可以远程通过 MQTT 来控制和配置 Neuron、设置点位，读写neuron连接的设备的数据。
 - 支持同时连接多个相同或不同的工业设备。目前已支持 Modbus TCP 和 OPC UA 协议设备。
 - 插件化的应用和驱动支持，可以在运行时独立控制驱动的启动和停止，也可以动态增加应用和驱动，在Neuron 运行时更改配置。
 - 使用 Haskell 语言写的代码生成器来生成 json 解析的C代码及序列化成 json 的 C 代码。极大减少了手写的代码数量，以及手写解析代码和序列化代码带来的错误，增强了程序的稳定性。

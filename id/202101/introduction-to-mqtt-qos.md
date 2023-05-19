@@ -1,4 +1,4 @@
-[MQTT protokol](https://www.emqx.com/en/mqtt) menentukan kualitas sebuah servis yang menjamin keandalan pengiriman pesan melalui berbagai jaringan. Desain QoS adalah fokus MQTT protokol. Sebagai protokol yang secara khusus didesain untuk skenario IoT, skenario penggunaan MQTT tidaklah hanya terbatas sampai PC, tapi juga mencakup jangkauan yang lebih luas dari jaringan narrow-bandwith dan perangkat berdaya rendah. Jika masalah kualitas transmisi dapat diatas di tingkat protokol, perkembangan aplikasi IoT akan menjadi jauh lebih mudah.
+[MQTT protokol](https://www.emqx.com/en/mqtt-guide) menentukan kualitas sebuah servis yang menjamin keandalan pengiriman pesan melalui berbagai jaringan. Desain QoS adalah fokus MQTT protokol. Sebagai protokol yang secara khusus didesain untuk skenario IoT, skenario penggunaan MQTT tidaklah hanya terbatas sampai PC, tapi juga mencakup jangkauan yang lebih luas dari jaringan narrow-bandwith dan perangkat berdaya rendah. Jika masalah kualitas transmisi dapat diatas di tingkat protokol, perkembangan aplikasi IoT akan menjadi jauh lebih mudah.
 
 
 ## Tingkat MQTT QoS

@@ -8,7 +8,7 @@
 
 ### 70+ 工业协议支持
 
-支持超过 **70 种主流工业协议**接入（这一数量还将持续增加），包括 **Modbus RTU、Modbus TCP、Ethernet/IP、OPC/UA** 等，解析并转换为统一的 [MQTT 协议](https://www.emqx.com/zh/mqtt) 后，与 EMQX Edge 和 Kuiper 集成进行边缘流式分析与计算，或直接接入云端工业物联网平台。
+支持超过 **70 种主流工业协议**接入（这一数量还将持续增加），包括 **Modbus RTU、Modbus TCP、Ethernet/IP、OPC/UA** 等，解析并转换为统一的 [MQTT 协议](https://www.emqx.com/zh/mqtt-guide) 后，与 EMQX Edge 和 Kuiper 集成进行边缘流式分析与计算，或直接接入云端工业物联网平台。
 
 ### 超越普通的网关
 

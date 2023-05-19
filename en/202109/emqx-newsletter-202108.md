@@ -4,7 +4,7 @@ In August, the open source team continually focused on EMQX 5.0 feature developm
 
 EMQX 5.0 will come with a freshly redesigned management UI. The new design focuses a lot on user experience improvements, we try our best to strike a balance between the clarity of the UI and the ability to parameterize. 
 
-To show off, here is a screenshot of the new UI for advanced [MQTT](https://www.emqx.com/en/mqtt) features. 
+To show off, here is a screenshot of the new UI for advanced [MQTT](https://www.emqx.com/en/mqtt-guide) features. 
 
 ![New UI for advanced MQTT](https://assets.emqx.com/images/e638f39e3c4875aa19bae385f0536b50.png)
 

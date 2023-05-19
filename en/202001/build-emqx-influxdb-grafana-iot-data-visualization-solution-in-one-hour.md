@@ -13,7 +13,7 @@ Therefore, it is a better choice to use time series database in IoT projects, wh
 
 ## Business Scenario
 
-Assume that there is a batch of devices, and each device has a Client ID. All devices send data to the corresponding topic on the MQTT message server through the [MQTT protocol](https://www.emqx.com/en/mqtt). The topic is designed as follows:
+Assume that there is a batch of devices, and each device has a Client ID. All devices send data to the corresponding topic on the MQTT message server through the [MQTT protocol](https://www.emqx.com/en/mqtt-guide). The topic is designed as follows:
 
 ```bash
 devices/{client_id}/messages
