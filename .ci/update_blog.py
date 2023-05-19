@@ -19,7 +19,10 @@ if __name__ == '__main__':
     update_status = True
 
     for file_name in changed_files:
-        lang, _date, title = file_name.split('/')
+        file_split = file_name.split('/')
+        if len(file_split) != 3:
+            continue
+        lang, _date, title = file_split
         title = title.replace('.md', '')
         print(f'Updating {file_name}')
         if not os.path.exists(os.path.join(base_path, file_name)):
@@ -31,7 +34,7 @@ if __name__ == '__main__':
                 url=f'{update_api}/{lang}/{title}',
                 json={'contents': content},
                 headers={'token': update_token},
-                timeout=50
+                timeout=20
             )
             if response.status_code == 200:
                 print(f'Updated {file_name}')
