@@ -9,7 +9,7 @@ if __name__ == '__main__':
     langs = ['zh', 'en', 'id']
     for site in ['com', 'hstream']:
         for lang in langs:
-            api = f'https://www.emqx.com/api/v1/blog?_sort=updateAt&_limit=50&site={site}'
+            api = f'https://www.emqx.com/api/v1/blog?_sort=updateAt&_limit=1000&site={site}'
             blog_records = requests.get(url=api, headers={'Content-Language': lang}).json()
             if not blog_records['success']:
                 print(f'Failed to get blog records: {blog_records}')
