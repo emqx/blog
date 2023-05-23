@@ -205,7 +205,6 @@
 - [Subscription identifier and subscription options - MQTT 5.0 new features](https://github.com/emqx/blog/blob/main/en/202008/subscription-identifier-and-subscription-options.md)
 - [The process of publishing MQTT 5.0 message](https://github.com/emqx/blog/blob/main/en/202004/mqtt5-message-publishing-process.md)
 - [MQTT 5.0 Features of Inflight Window & Message Queue](https://github.com/emqx/blog/blob/main/en/202003/mqtt5-feature-inflight-window-message-queue.md)
-- [How to use MQTT packet to implement publish and subscribe](https://github.com/emqx/blog/blob/main/en/202002/how-to-use-mqtt-packet-to-implement-publishing-and-subscribing-functions.md)
 - [Use of MQTT Will Message](https://github.com/emqx/blog/blob/main/en/201912/use-of-mqtt-will-message.md)
 - [Shared subscription - MQTT 5.0 new features](https://github.com/emqx/blog/blob/main/en/201912/introduction-to-mqtt5-protocol-shared-subscription.md)
 - [Clean Start and Session Expiry Interval - MQTT 5.0 new features](https://github.com/emqx/blog/blob/main/en/201912/mqtt5-new-feature-clean-start-and-session-expiry-interval.md)
