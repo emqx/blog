@@ -11,7 +11,7 @@ sensor/#
 
 为了避免歧义且易于理解，通常不建议主题以 `/` 开头或结尾，例如 `/chat` 或 `chat/`。
 
-不同于消息队列中的主题（比如 Kafka 和 Pulsar），MQTT 主题不需要提前创建。[MQTT 客户端](https://www.emqx.io/zh/mqtt-client)在订阅或发布时即自动的创建了主题，开发者无需再关心主题的创建，并且也不需要手动删除主题。
+不同于消息队列中的主题（比如 Kafka 和 Pulsar），MQTT 主题不需要提前创建。[MQTT 客户端](https://www.emqx.com/zh/blog/mqtt-client-tools)在订阅或发布时即自动的创建了主题，开发者无需再关心主题的创建，并且也不需要手动删除主题。
 
 下图是一个简单的 MQTT 订阅与发布流程， `APP 1` 订阅了`sensor/2/temperature` 主题后，将能接收到 `Sensor 2` 发布到该主题的消息。
 

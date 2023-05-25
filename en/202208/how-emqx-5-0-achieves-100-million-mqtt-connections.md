@@ -77,7 +77,7 @@ You can set the node as a Replicant node by setting the `emqx.conf` `node.db_rol
 
 > Note：At least one core node is required in the cluster, we recommend starting with a setup of 3 Cores + N Replicants
 
-Core nodes can accept [MQTT client](https://www.emqx.io/mqtt-client) connections, and can also be used purely as a cluster database. we suggest:
+Core nodes can accept [MQTT client](https://www.emqx.com/en/blog/mqtt-client-tools) connections, and can also be used purely as a cluster database. we suggest:
 
 - In a small cluster (3 nodes or less), it is not necessary to use the Core + Replicant replication mode. You can allow the Core nodes to undertake all the traffic to decrease the difficulty of getting started and used.
 - In very large clusters (10 nodes or more), it is recommended to move the MQTT traffic from the Core nodes, which is more stable and horizontally scalable.

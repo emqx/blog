@@ -14,7 +14,7 @@ MQTT 设计了 3 个 QoS 等级：
 
 - **QoS 0**
 
-  消息最多传递一次，如果当时 [MQTT 客户端](https://www.emqx.io/zh/mqtt-client)不可用，则会丢失该消息。Sender (可能是 Publisher 或者 Broker) 发送一条消息之后，就不再关心它有没有发送到对方，也不设置任何重发机制。
+  消息最多传递一次，如果当时 [MQTT 客户端](https://www.emqx.com/zh/blog/mqtt-client-tools)不可用，则会丢失该消息。Sender (可能是 Publisher 或者 Broker) 发送一条消息之后，就不再关心它有没有发送到对方，也不设置任何重发机制。
 
   ![MQTT QoS 0](https://assets.emqx.com/images/fb046bde08b7cd1e653d3eaacde480fc.png)
 

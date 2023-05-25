@@ -2,7 +2,7 @@
 
 Unstable networks and limited hardware resources are the two major problems that IoT applications need to face. The connection between MQTT clients and brokers can be abnormally disconnected at any time due to network fluctuations and resource constraints. To address the impact of network disconnection on communication, the MQTT protocol provides Persistent Session.
 
-[MQTT client](https://www.emqx.io/mqtt-client) can set whether to use a Persistent Session when initiating a connection to the server. A Persistent Session will hold some important data to allow the session to continue over multiple network connections. Persistent Session has three main functions as follows:
+[MQTT client](https://www.emqx.com/en/blog/mqtt-client-tools) can set whether to use a Persistent Session when initiating a connection to the server. A Persistent Session will hold some important data to allow the session to continue over multiple network connections. Persistent Session has three main functions as follows:
 
 - Avoid the additional overhead of need to subscribe repeatedly due to network outages.
 - Avoid missing messages during offline periods.

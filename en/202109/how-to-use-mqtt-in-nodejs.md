@@ -194,7 +194,7 @@ We can see that the message sent by MQTTX is printed in the console.
 
 ## Summary
 
-So far, we have used Node.js as an [MQTT client](https://www.emqx.io/mqtt-client) to connect to the [public MQTT broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker), and realizes the connection, message publishing and subscription between the test client and MQTT server.
+So far, we have used Node.js as an [MQTT client](https://www.emqx.com/en/blog/mqtt-client-tools) to connect to the [public MQTT broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker), and realizes the connection, message publishing and subscription between the test client and MQTT server.
 
 Next, you can check out [The Easy-to-understand Guide to MQTT Protocol](https://www.emqx.com/en/mqtt-guide) series of articles provided by EMQ to learn about MQTT protocol features, explore more advanced applications of MQTT, and get started with MQTT application and service development.
 
