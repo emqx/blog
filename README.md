@@ -39,6 +39,7 @@ Get to know the preferred protocol in IoT from beginner to master.
 
 ## [MQTT Broker](https://www.emqx.com/en/blog/category/mqtt-broker)
 
+- [Exploring the Basics of EMQX MQTT Broker Clustering: An Introduction](https://github.com/emqx/blog/blob/main/en/202305/mqtt-broker-clustering.md)
 - [Multi-Tenancy Architecture in MQTT: Key Points, Benefits, and Challenges](https://github.com/emqx/blog/blob/main/en/202305/multi-tenancy-architecture-in-mqtt.md)
 - [Top 3 Open Source MQTT Brokers for Industrial IoT in 2023](https://github.com/emqx/blog/blob/main/en/202305/top-3-open-source-mqtt-brokers-for-industrial-iot-in-2023.md)
 - [Open MQTT Benchmarking Comparison: MQTT Brokers in 2023](https://github.com/emqx/blog/blob/main/en/202305/open-mqtt-benchmarking-comparison-mqtt-brokers-in-2023.md)
