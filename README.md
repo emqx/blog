@@ -39,6 +39,7 @@ Get to know the preferred protocol in IoT from beginner to master.
 
 ## [MQTT Broker](https://www.emqx.com/en/blog/category/mqtt-broker)
 
+- [Exploring the Basics of EMQX MQTT Broker Clustering: An Introduction](https://github.com/emqx/blog/blob/main/en/202305/mqtt-broker-clustering.md)
 - [Multi-Tenancy Architecture in MQTT: Key Points, Benefits, and Challenges](https://github.com/emqx/blog/blob/main/en/202305/multi-tenancy-architecture-in-mqtt.md)
 - [Top 3 Open Source MQTT Brokers for Industrial IoT in 2023](https://github.com/emqx/blog/blob/main/en/202305/top-3-open-source-mqtt-brokers-for-industrial-iot-in-2023.md)
 - [Open MQTT Benchmarking Comparison: MQTT Brokers in 2023](https://github.com/emqx/blog/blob/main/en/202305/open-mqtt-benchmarking-comparison-mqtt-brokers-in-2023.md)
@@ -214,6 +215,8 @@ EMQX is the world's most scalable open-source MQTT broker with a high performanc
 ## [EMQX Cloud](https://www.emqx.com/en/blog/category/cloud)
 The easiest way to start MQTT service. Connect your IoT devices to any cloud without the burden of maintaining infrastructure.
 
+- [How BYOC MQTT Service Ensures IoT Data Security and Compliance for Your Business](https://github.com/emqx/blog/blob/main/en/202305/how-byoc-mqtt-service-ensures-iot-data-security-and-compliance-for-your-business.md)
+- [Get Started with EMQX Cloud on GCP Marketplace](https://github.com/emqx/blog/blob/main/en/202305/get-started-with-emqx-cloud-on-gcp-marketplace.md)
 - [Optimize Your MQTT Server with EMQX Cloud BYOC's Expert O&M Service](https://github.com/emqx/blog/blob/main/en/202305/optimize-your-mqtt-server-with-emqx-cloud-byoc-s-expert-o-and-m-service.md)
 - [Exploring the Data Privacy-First Architecture of EMQX Cloud BYOC](https://github.com/emqx/blog/blob/main/en/202305/exploring-the-data-privacy-first-architecture-of-emqx-cloud-byoc.md)
 - [A Comprehensive Guide to Serverless MQTT Service | EMQX Cloud](https://github.com/emqx/blog/blob/main/en/202305/a-comprehensive-guide-to-serverless-mqtt-service.md)
