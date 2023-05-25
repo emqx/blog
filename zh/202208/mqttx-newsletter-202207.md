@@ -8,7 +8,7 @@
 
 ### 默认 MQTT 5.0 连接
 
-在之前的版本中，MQTTX 默认是 MQTT 3.1.1 连接。作为目前支持 MQTT 5.0 特性最为完整的 [MQTT 客户端工具](https://www.emqx.io/zh/mqtt-client)，我们在最新版本中将 MQTTX 默认连接时的 MQTT 版本修改为了 5.0，方便更多的用户快速使用和体验 MQTT 5.0 的新特性。
+在之前的版本中，MQTTX 默认是 MQTT 3.1.1 连接。作为目前支持 MQTT 5.0 特性最为完整的 [MQTT 客户端工具](https://www.emqx.com/zh/blog/mqtt-client-tools)，我们在最新版本中将 MQTTX 默认连接时的 MQTT 版本修改为了 5.0，方便更多的用户快速使用和体验 MQTT 5.0 的新特性。
 
 ## MQTTX CLI
 

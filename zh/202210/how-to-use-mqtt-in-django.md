@@ -1,6 +1,6 @@
 [MQTT](https://mqtt.org/) 是一种基于发布/订阅模式的轻量级物联网消息传输协议，可以用极少的代码和带宽为联网设备提供实时可靠的消息服务，它广泛应用于物联网、移动互联网、智能硬件、[车联网](https://www.emqx.com/zh/blog/category/internet-of-vehicles)、电力能源等行业。
 
-[Django](https://www.djangoproject.com/) 是一个开源的 Web 框架，是目前较为流行的 Python Web 框架之一。本文主要介绍如何在 Django 项目中实现 [MQTT 客户端](https://www.emqx.io/zh/mqtt-client)与 [MQTT 服务器](https://www.emqx.com/zh/mqtt/public-mqtt5-broker)的连接、订阅、取消订阅、收发消息等功能。
+[Django](https://www.djangoproject.com/) 是一个开源的 Web 框架，是目前较为流行的 Python Web 框架之一。本文主要介绍如何在 Django 项目中实现 [MQTT 客户端](https://www.emqx.com/zh/blog/mqtt-client-tools)与 [MQTT 服务器](https://www.emqx.com/zh/mqtt/public-mqtt5-broker)的连接、订阅、取消订阅、收发消息等功能。
 
 本文将使用 [paho-mqtt](https://www.eclipse.org/paho/index.php?page=clients/python/index.php) 客户端库编写一个简单 MQTT 客户端，paho-mqtt 是目前 Python 中使用较为广泛的 MQTT 客户端库，它在 Python 2.7 及 3.x 上为客户端提供了对 MQTT v5.0、v3.1.1 和 v3.1 的支持。
 

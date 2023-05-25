@@ -20,7 +20,7 @@
 
 在 MQTT 中，基于密码的认证通常使用用户名和密码作为凭据，但在某些特殊场景下，有些客户端可能无法提供用户名，因此客户端 ID 也可以作为唯一标识来代表身份。
 
-当 [MQTT 客户端](https://www.emqx.io/zh/mqtt-client)与 Broker 建立连接时，它会在 CONNECT 报文中携带**用户名**和**密码**。下面的示例展示了用 Wireshark 工具抓取的客户端 CONNECT 报文，其中 Client ID 为 client1，用户名为 user，密码为 MySecretPassword。
+当 [MQTT 客户端](https://www.emqx.com/zh/blog/mqtt-client-tools)与 Broker 建立连接时，它会在 CONNECT 报文中携带**用户名**和**密码**。下面的示例展示了用 Wireshark 工具抓取的客户端 CONNECT 报文，其中 Client ID 为 client1，用户名为 user，密码为 MySecretPassword。
 
 ![客户端 CONNECT 报文](https://assets.emqx.com/images/001d8254b188ba71a364a3d1ac3fbb3f.png)
 

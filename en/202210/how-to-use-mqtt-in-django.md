@@ -1,6 +1,6 @@
 [MQTT](https://mqtt.org/) is a lightweight IoT messaging protocol based on publish/subscribe model, which can provide real-time reliable messaging services for connected devices with very little code and bandwidth. It is widely used in industries such as IoT, mobile Internet, smart hardware, [Internet of vehicles](https://www.emqx.com/en/blog/category/internet-of-vehicles), and power and energy.
 
-[Django](https://www.djangoproject.com/) is an open-source Web framework and one of the more popular Python Web frameworks. This article mainly introduces how to connect, subscribe, unsubscribe, and send and receive messages between [MQTT client](https://www.emqx.io/mqtt-client) and [MQTT Broker](https://www.emqx.io/) in the Django project.
+[Django](https://www.djangoproject.com/) is an open-source Web framework and one of the more popular Python Web frameworks. This article mainly introduces how to connect, subscribe, unsubscribe, and send and receive messages between [MQTT client](https://www.emqx.com/en/blog/mqtt-client-tools) and [MQTT Broker](https://www.emqx.io/) in the Django project.
 
 We will write a simple MQTT client using [paho-mqtt](https://www.eclipse.org/paho/index.php?page=clients/python/index.php) client library. `paho-mqtt` is a widely used MQTT client library in Python that provides client support for MQTT 5.0, 3.1.1, and 3.1 on Python 2.7 and 3.x.
 

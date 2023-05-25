@@ -22,7 +22,7 @@ Password-based authentication aims to determine if the connecting party is legit
 
 In MQTT, password-based authentication generally refers to using a username and password to authenticate clients, which is also recommended. However, in some scenarios, some clients may not carry a username, so the client ID can also be used as a unique identifier to represent the identity.
 
-When an [MQTT client](https://www.emqx.io/mqtt-client) connects to the broker, it sends its **username** and **password** in the  CONNECT packet. The example below shows a Wireshark capture of the CONNECT packet for a client with the corresponding values of **client1**, **user**, **MySecretPassword**.  
+When an [MQTT client](https://www.emqx.com/en/blog/mqtt-client-tools) connects to the broker, it sends its **username** and **password** in the  CONNECT packet. The example below shows a Wireshark capture of the CONNECT packet for a client with the corresponding values of **client1**, **user**, **MySecretPassword**.  
 
 ![image.png](https://assets.emqx.com/images/001d8254b188ba71a364a3d1ac3fbb3f.png)
 

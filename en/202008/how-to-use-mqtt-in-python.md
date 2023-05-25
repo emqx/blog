@@ -2,7 +2,7 @@
 
 MQTT is a kind of **lightweight IoT messaging protocol** based on the publish/subscribe model, which can provide real-time and reliable messaging service for IoT devices, only using very little code and bandwidth. It is suitable for devices with limited hardware resources and the network environment with limited bandwidth. Therefore, [MQTT protocol](https://mqtt.org/) is widely used in IoT, mobile internet, IoV, electricity power, and other industries.
 
-This article mainly introduces how to use the **paho-mqtt** client and implement connection, subscribe, messaging, and other functions between the [MQTT client](https://www.emqx.io/mqtt-client) and [MQTT broker](https://www.emqx.io), in the Python project.
+This article mainly introduces how to use the **paho-mqtt** client and implement connection, subscribe, messaging, and other functions between the [MQTT client](https://www.emqx.com/en/blog/mqtt-client-tools) and [MQTT broker](https://www.emqx.io), in the Python project.
 
 
 
