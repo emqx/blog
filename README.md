@@ -39,6 +39,8 @@ Get to know the preferred protocol in IoT from beginner to master.
 
 ## [MQTT Broker](https://www.emqx.com/en/blog/category/mqtt-broker)
 
+- [Connecting to Serverless MQTT Broker in Node.js](https://github.com/emqx/blog/blob/main/en/202305/connecting-to-serverless-mqtt-broker-in-nodejs.md)
+- [EMQX MQTT Broker Troubleshooting: Connection Issues](https://github.com/emqx/blog/blob/main/en/202305/emqx-mqtt-broker-connection-troubleshooting.md)
 - [Exploring the Basics of EMQX MQTT Broker Clustering: An Introduction](https://github.com/emqx/blog/blob/main/en/202305/mqtt-broker-clustering.md)
 - [Multi-Tenancy Architecture in MQTT: Key Points, Benefits, and Challenges](https://github.com/emqx/blog/blob/main/en/202305/multi-tenancy-architecture-in-mqtt.md)
 - [Top 3 Open Source MQTT Brokers for Industrial IoT in 2023](https://github.com/emqx/blog/blob/main/en/202305/top-3-open-source-mqtt-brokers-for-industrial-iot-in-2023.md)
@@ -81,6 +83,7 @@ Get to know the preferred protocol in IoT from beginner to master.
 ## [MQTT Programming](https://www.emqx.com/en/blog/category/mqtt-programming)
 Best practice of MQTT in various clients.
 
+- [JavaScript MQTT Client: A Beginner's Guide to MQTT.js](https://github.com/emqx/blog/blob/main/en/202305/mqtt-js-tutorial.md)
 - [How to Use MQTT in Node.js](https://github.com/emqx/blog/blob/main/en/202305/how-to-use-mqtt-in-nodejs.md)
 - [How to Use MQTT in Python with Paho Client](https://github.com/emqx/blog/blob/main/en/202305/how-to-use-mqtt-in-python.md)
 - [How to Use MQTT in Dart](https://github.com/emqx/blog/blob/main/en/202211/how-to-use-mqtt-in-dart.md)
@@ -90,7 +93,6 @@ Best practice of MQTT in various clients.
 - [How to Use MQTT in Java](https://github.com/emqx/blog/blob/main/en/202208/how-to-use-mqtt-in-java.md)
 - [How to Use MQTT in The React Native Project](https://github.com/emqx/blog/blob/main/en/202206/how-to-use-mqtt-in-react-native.md)
 - [How to use MQTT in Flask](https://github.com/emqx/blog/blob/main/en/202205/how-to-use-mqtt-in-flask.md)
-- [MQTT.js tutorial](https://github.com/emqx/blog/blob/main/en/202109/mqtt-js-tutorial.md)
 - [ESP32 Connects to The Free Public MQTT Broker](https://github.com/emqx/blog/blob/main/en/202108/esp32-connects-to-the-free-public-mqtt-broker.md)
 - [How to use MQTT in PHP](https://github.com/emqx/blog/blob/main/en/202108/how-to-use-mqtt-in-php.md)
 - [Python MQTT Asynchronous Framework - HBMQTT](https://github.com/emqx/blog/blob/main/en/202104/python-async-mqtt-client-hbmqtt.md)
@@ -136,6 +138,7 @@ Explore more with & via EMQ.
 ## [EMQX Open Source | Broker](https://www.emqx.com/en/blog/category/emqx)
 EMQX is the world's most scalable open-source MQTT broker with a high performance that connects 100M+ IoT devices in 1 cluster, while maintaining 1M message per second throughput and sub-millisecond latency.
 
+- [EMQX MQTT Broker Troubleshooting: Connection Issues](https://github.com/emqx/blog/blob/main/en/202305/emqx-mqtt-broker-connection-troubleshooting.md)
 - [EMQX ECP Empowers IoT Edge Computing with NanoMQ Integration](https://github.com/emqx/blog/blob/main/en/202305/emqx-ecp-empowers-iot-edge-computing-with-nanomq-integration.md)
 - [EMQX MQTT Broker Deployment Troubleshooting: Ensuring a Smooth Start](https://github.com/emqx/blog/blob/main/en/202305/emqx-mqtt-broker-deployment-troubleshooting-ensuring-a-smooth-start.md)
 - [Getting Started with Rule Engine in MQTT Broker: A Quick Guide](https://github.com/emqx/blog/blob/main/en/202305/getting-started-with-rule-engine-in-mqtt-broker-a-quick-guide.md)
@@ -215,6 +218,7 @@ EMQX is the world's most scalable open-source MQTT broker with a high performanc
 ## [EMQX Cloud](https://www.emqx.com/en/blog/category/cloud)
 The easiest way to start MQTT service. Connect your IoT devices to any cloud without the burden of maintaining infrastructure.
 
+- [Connecting to Serverless MQTT Broker in Node.js](https://github.com/emqx/blog/blob/main/en/202305/connecting-to-serverless-mqtt-broker-in-nodejs.md)
 - [How BYOC MQTT Service Ensures IoT Data Security and Compliance for Your Business](https://github.com/emqx/blog/blob/main/en/202305/how-byoc-mqtt-service-ensures-iot-data-security-and-compliance-for-your-business.md)
 - [Get Started with EMQX Cloud on Google Cloud Marketplace](https://github.com/emqx/blog/blob/main/en/202305/get-started-with-emqx-cloud-on-gcp-marketplace.md)
 - [Optimize Your MQTT Server with EMQX Cloud BYOC's Expert O&M Service](https://github.com/emqx/blog/blob/main/en/202305/optimize-your-mqtt-server-with-emqx-cloud-byoc-s-expert-o-and-m-service.md)
@@ -277,6 +281,7 @@ The easiest way to start MQTT service. Connect your IoT devices to any cloud wit
 ## [EMQX Enterprise](https://www.emqx.com/en/blog/category/enterprise)
 The world's most scalable and reliable MQTT messaging platform to connect, move and process your data in business-critical scenarios for the IoT era.
 
+- [EMQX MQTT Broker Troubleshooting: Connection Issues](https://github.com/emqx/blog/blob/main/en/202305/emqx-mqtt-broker-connection-troubleshooting.md)
 - [One-Click Deploying EMQX MQTT Broker on AWS Using Terraform](https://github.com/emqx/blog/blob/main/en/202305/one-click-deploying-emqx-mqtt-broker-on-aws-using-terraform.md)
 - [One-Click Deploying EMQX MQTT Broker on Azure Using Terraform](https://github.com/emqx/blog/blob/main/en/202305/one-click-deploying-emqx-mqtt-broker-on-azure-using-terraform.md)
 - [One-Click Deploying EMQX MQTT Broker on GCP Using Terraform](https://github.com/emqx/blog/blob/main/en/202305/one-click-deploying-emqx-mqtt-broker-on-gcp-using-terraform.md)
