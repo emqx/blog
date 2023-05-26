@@ -49,7 +49,7 @@ Get to know the preferred protocol in IoT from beginner to master.
 - [Open MQTT Benchmarking Comparison: EMQX vs VerneMQ](https://github.com/emqx/blog/blob/main/en/202304/open-mqtt-benchmarking-comparison-emqx-vs-vernemq.md)
 - [Open MQTT Benchmarking Comparison: EMQX vs NanoMQ](https://github.com/emqx/blog/blob/main/en/202304/open-mqtt-benchmarking-comparison-emqx-vs-nanomq.md)
 - [Open MQTT Benchmarking Comparison: EMQX vs Mosquitto](https://github.com/emqx/blog/blob/main/en/202304/open-mqtt-benchmarking-comparison-emqx-vs-mosquitto.md)
-- [The Ultimate Guide to MQTT Broker Comparison in 2023](https://github.com/emqx/blog/blob/main/en/202304/the-ultimate-guide-to-mqtt-broker-comparison.md)
+- [MQTT Broker: How It Works, Popular Options, and Quickstart](https://github.com/emqx/blog/blob/main/en/202304/the-ultimate-guide-to-mqtt-broker-comparison.md)
 - [Open MQTT Benchmarking Comparison: Mosquitto vs NanoMQ](https://github.com/emqx/blog/blob/main/en/202304/open-mqtt-benchmarking-comparison-mosquitto-vs-nanomq.md)
 - [5 Key Concepts for MQTT Broker in Sparkplug Specification](https://github.com/emqx/blog/blob/main/en/202304/5-key-concepts-for-mqtt-broker-in-sparkplug-specification.md)
 - [EMQX vs VerneMQ | 2023 MQTT Broker Comparison](https://github.com/emqx/blog/blob/main/en/202304/emqx-vs-vernemq-2023-mqtt-broker-comparison.md)
@@ -216,7 +216,7 @@ EMQX is the world's most scalable open-source MQTT broker with a high performanc
 The easiest way to start MQTT service. Connect your IoT devices to any cloud without the burden of maintaining infrastructure.
 
 - [How BYOC MQTT Service Ensures IoT Data Security and Compliance for Your Business](https://github.com/emqx/blog/blob/main/en/202305/how-byoc-mqtt-service-ensures-iot-data-security-and-compliance-for-your-business.md)
-- [Get Started with EMQX Cloud on GCP Marketplace](https://github.com/emqx/blog/blob/main/en/202305/get-started-with-emqx-cloud-on-gcp-marketplace.md)
+- [Get Started with EMQX Cloud on Google Cloud Marketplace](https://github.com/emqx/blog/blob/main/en/202305/get-started-with-emqx-cloud-on-gcp-marketplace.md)
 - [Optimize Your MQTT Server with EMQX Cloud BYOC's Expert O&M Service](https://github.com/emqx/blog/blob/main/en/202305/optimize-your-mqtt-server-with-emqx-cloud-byoc-s-expert-o-and-m-service.md)
 - [Exploring the Data Privacy-First Architecture of EMQX Cloud BYOC](https://github.com/emqx/blog/blob/main/en/202305/exploring-the-data-privacy-first-architecture-of-emqx-cloud-byoc.md)
 - [A Comprehensive Guide to Serverless MQTT Service | EMQX Cloud](https://github.com/emqx/blog/blob/main/en/202305/a-comprehensive-guide-to-serverless-mqtt-service.md)
