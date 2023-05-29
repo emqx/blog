@@ -218,6 +218,7 @@ EMQX is the world's most scalable open-source MQTT broker with a high performanc
 ## [EMQX Cloud](https://www.emqx.com/en/blog/category/cloud)
 The easiest way to start MQTT service. Connect your IoT devices to any cloud without the burden of maintaining infrastructure.
 
+- [Expanding Observability: Enhanced MQTT Monitor Metrics in EMQX Cloud's Latest Release](https://github.com/emqx/blog/blob/main/en/202305/enhanced-mqtt-monitor-metrics-in-emqx-cloud-s-latest-release.md)
 - [Connecting to Serverless MQTT Broker in Node.js](https://github.com/emqx/blog/blob/main/en/202305/connecting-to-serverless-mqtt-broker-in-nodejs.md)
 - [How BYOC MQTT Service Ensures IoT Data Security and Compliance for Your Business](https://github.com/emqx/blog/blob/main/en/202305/how-byoc-mqtt-service-ensures-iot-data-security-and-compliance-for-your-business.md)
 - [Get Started with EMQX Cloud on Google Cloud Marketplace](https://github.com/emqx/blog/blob/main/en/202305/get-started-with-emqx-cloud-on-gcp-marketplace.md)
@@ -331,6 +332,7 @@ Build a reliable, efficient and industry-specific Internet of Vehicles platform 
 ## [MQTTX](https://www.emqx.com/en/blog/category/mqttx)
 MQTTX is a Fully Open-source MQTT 5.0 cross-platform Desktop Client, makes it easy and quick to create multiple simultaneous online MQTT client connections, test the connection, publish, and subscribe functions of MQTT/TCP, MQTT/TLS, MQTT/WebSocket as well as other MQTT protocol features.
 
+- [Boosting Development Efficiency: MQTTX 1.9.3 Introduces Powerful IoT Scenario Data Simulation](https://github.com/emqx/blog/blob/main/en/202305/mqttx-1-9-3-introduces-powerful-iot-scenario-data-simulation-feature.md)
 - [MQTTX 1.9.2 Released: The Best MQTT  Client Toolbox Is Even Better](https://github.com/emqx/blog/blob/main/en/202304/mqttx-v-1-9-2-release-notes.md)
 - [MQTTX 1.9.1 is Released: Resource Utilization Reduced by 80%, and Stability Greatly Improved](https://github.com/emqx/blog/blob/main/en/202302/mqttx-v-1-9-1-release-notes.md)
 - [MQTTX CLI Adds Support for Automatic Reconnection and The Ability to Save and Read Local Files](https://github.com/emqx/blog/blob/main/en/202212/mqttx-newsletter-202211.md)
