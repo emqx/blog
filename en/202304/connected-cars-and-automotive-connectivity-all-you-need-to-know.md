@@ -96,15 +96,15 @@ As an enterprise-grade MQTT message platform, EMQX can help on connected car app
     <a href="https://www.emqx.com/en/try?product=enterprise" class="button is-gradient px-5">Get Started →</a>
 </section>
 
-## Join Our Webinar on the Future of Connected Vehicle Services
+### Join Our Webinar on MQTT & QUIC: A New Standard for Connected Vehicles
 
-The success of connected cars relies on communication protocols that are reliable, secure, and high-performing. MQTT and QUIC are two of the most promising protocols that have surfaced for this purpose.
+Connected cars are revolutionizing the automotive industry by providing drivers with advanced features and functions that were not possible before. However, these vehicles face the challenge of transmitting crucial vehicle data in complex network environments. To address this issue, this upcoming webinar presents a cutting-edge solution: MQTT messaging over the QUIC transport protocol and how the combination of these two can improve connectivity and communication for connected vehicles.
 
-[![Connected Vehicle Webinar](https://assets.emqx.com/images/73fe691859b9f37148682ce2625592dc.png)](https://www.emqx.com/en/events/the-future-of-connected-vehicle-services)
+[![A New Standard for Connected Vehicles](https://assets.emqx.com/images/4a96d320830d21aa3bb7464005d3f62c.png)](https://www.emqx.com/en/events/mqtt-over-quic-a-new-standard-for-connected-vehicles)
 
-Don’t miss our upcoming webinar on April 25th, where you can gain valuable insights into how MQTT and QUIC are helping build the next generation of connected vehicles.
+Don’t miss our upcoming webinar on June 21st, where you can gain valuable insights into how MQTT and QUIC are helping build the next generation of connected vehicles.
 
-[**Register now**](https://www.emqx.com/en/events/the-future-of-connected-vehicle-services) **to secure your spot!**
+Register now to [secure your spot](https://www.emqx.com/en/events/mqtt-over-quic-a-new-standard-for-connected-vehicles)!
 
 
 

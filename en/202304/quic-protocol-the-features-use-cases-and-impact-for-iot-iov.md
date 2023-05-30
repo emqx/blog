@@ -124,6 +124,18 @@ EMQX also provides client SDKs to support MQTT over QUIC in multiple programming
 - [Read our detailed blog post](https://www.emqx.com/en/blog/getting-started-with-mqtt-over-quic-from-scratch) to get started with MQTT over QUIC
 
 
+### Join Our Webinar on MQTT & QUIC: A New Standard for Connected Vehicles
+
+Connected cars are revolutionizing the automotive industry by providing drivers with advanced features and functions that were not possible before. However, these vehicles face the challenge of transmitting crucial vehicle data in complex network environments. To address this issue, this upcoming webinar presents a cutting-edge solution: MQTT messaging over the QUIC transport protocol and how the combination of these two can improve connectivity and communication for connected vehicles.
+
+[![A New Standard for Connected Vehicles](https://assets.emqx.com/images/4a96d320830d21aa3bb7464005d3f62c.png)](https://www.emqx.com/en/events/mqtt-over-quic-a-new-standard-for-connected-vehicles)
+
+
+Don’t miss our upcoming webinar on June 21st, where you can gain valuable insights into how MQTT and QUIC are helping build the next generation of connected vehicles.
+
+Register now to [secure your spot](https://www.emqx.com/en/events/mqtt-over-quic-a-new-standard-for-connected-vehicles)!
+
+
 
 <section class="promotion">
     <div>

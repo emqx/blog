@@ -323,6 +323,7 @@ Build a reliable, efficient and industry-specific Internet of Vehicles platform 
 
 ## [Industrial IoT | Unified Namespace | Sparkplug](https://www.emqx.com/en/blog/category/industrial-iot)
 
+- [A Comparison of IIoT Protocols: MQTT Sparkplug vs OPC-UA](https://github.com/emqx/blog/blob/main/en/202305/a-comparison-of-iiot-protocols-mqtt-sparkplug-vs-opc-ua.md)
 - [Top 3 Open Source MQTT Brokers for Industrial IoT in 2023](https://github.com/emqx/blog/blob/main/en/202305/top-3-open-source-mqtt-brokers-for-industrial-iot-in-2023.md)
 - [Neuron v1.3.0 is officially released with one-stop access to industrial data](https://github.com/emqx/blog/blob/main/en/202108/neuron-1-3-0-release-notes.md)
 - [EMQ officially launched the solution for IIoT](https://github.com/emqx/blog/blob/main/en/202011/emq-industrial-internet-cloud-edge-integrated-solution.md)

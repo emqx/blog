@@ -223,3 +223,14 @@ For data that is not time-sensitive, we can save the data in file or local DB an
 ## Conclusion
 
 In this blog, we have introduced how to collect, process and transfer CAN bus data from vehicles to the cloud with eKuiper and EMQX. In the next blog post, we will go into more detail about each step.
+
+
+### Join Our Webinar on MQTT & QUIC: A New Standard for Connected Vehicles
+
+Connected cars are revolutionizing the automotive industry by providing drivers with advanced features and functions that were not possible before. However, these vehicles face the challenge of transmitting crucial vehicle data in complex network environments. To address this issue, this upcoming webinar presents a cutting-edge solution: MQTT messaging over the QUIC transport protocol and how the combination of these two can improve connectivity and communication for connected vehicles.
+
+[![A New Standard for Connected Vehicles](https://assets.emqx.com/images/4a96d320830d21aa3bb7464005d3f62c.png)](https://www.emqx.com/en/events/mqtt-over-quic-a-new-standard-for-connected-vehicles)
+
+Don’t miss our upcoming webinar on June 21st, where you can gain valuable insights into how MQTT and QUIC are helping build the next generation of connected vehicles.
+
+Register now to [secure your spot](https://www.emqx.com/en/events/mqtt-over-quic-a-new-standard-for-connected-vehicles)!

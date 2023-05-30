@@ -14,7 +14,7 @@ Benefiting from the reliability and small resource footprint, Node.js + serverle
 
 If you have not tried serverless deployment yet, please follow [the guide in this blog](https://www.emqx.com/en/blog/a-comprehensive-guide-to-serverless-mqtt-service) to create one for free. Once you have completed the registration process with the online guide, you will get a running instance with the following similar information from the “Overview” in your deployment. We will use the connection information and CA certificate later.
 
-![Free Serverless MQTT broker](https://assets.emqx.com/images/941542c6408f1c0206e238647d44a170.png)
+![Free Serverless MQTT broker](https://assets.emqx.com/images/b7f54f0922422779d30df5ede63e66fb.png)
 
 
 ## Connection Code Demo
@@ -53,7 +53,7 @@ To establish an MQTT connection, you need to set the connection address, port, a
 const fs = require('fs')
 const protocol = 'mqtts'
 // Set the host and port based on the connection information.
-const host = 'qbc11278.ala.us-east-1.emqxsl.com'
+const host = '******.emqxsl.com'
 const port = '8883'
 const clientId = `mqtt_${Math.random().toString(16).slice(3)}`
 const connectUrl = `${protocol}://${host}:${port}`
