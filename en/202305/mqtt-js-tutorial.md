@@ -490,7 +490,7 @@ nonSYSMessage$.pipe(bufferTime(500)).subscribe((messages: MessageModel[]) => {
 
 ## Summary
 
-This article has briefly introduced the usage functions of some common APIs of MQTT.js. To learn about MQTT topics, wildcards, retained messages, last-will, and other features, check out the [MQTT Guide 2023: Beginner to Advanced](https://www.emqx.com/en/mqtt) series of articles provided by EMQ. Explore more advanced applications of MQTT and get started with MQTT application and service development.
+This article has briefly introduced the usage functions of some common APIs of MQTT.js. To learn about MQTT topics, wildcards, retained messages, last-will, and other features, check out the [MQTT Guide 2023: Beginner to Advanced](https://www.emqx.com/en/mqtt-guide) series of articles provided by EMQ. Explore more advanced applications of MQTT and get started with MQTT application and service development.
 
 For specific use in actual projects, please refer to the following links.
 
