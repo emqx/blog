@@ -157,20 +157,18 @@ Done!
 
 *****
 
-## Upload the Key and Cert Using AWS cli tool
+## Upload the Key and Cert Using AWS CLI Tool
 
-If you are not able to upload the server certificate and its private key in step
-3, you can try the aws cli tool.
+If you are not able to upload the server certificate and its private key in step 3, you can try the AWS CLI tool.
 
-The aws cli tool requires python 2.5.6+ or 3.3+, make sure you have the proper
-python version and pip on your system.
+The AWS CLI tool requires Python 2.5.6+ or 3.3+. Make sure you have the proper Python version and pip on your system.
 
-Install the aws cli:
+Install the AWS CLI:
 ```shell
-$pip install awscli --upgrade --user
+$pip install AWS CLI --upgrade --user
 ```
 
-Configure the asw cli with asw configure:
+Configure the AWS CLI with AWS configure:
 ```shell
 $ aws configuration
 
