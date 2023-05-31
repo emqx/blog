@@ -1,4 +1,4 @@
-このシリーズの[前の記事](https://www.emqx.com/en/blog/mqtt-for-internet-of-vehicles)で述べたように、[MQTTプロトコル](https://www.emqx.com/en/mqtt)は、IoVのデータプラットフォームを構築するために現在最適な通信プロトコルです。これに基づいて、この記事では、IoVのMQTTメッセージの取得と送信について、そして千万レベル接続のためにIoV MQTTメッセージプラットフォームの構築方法について、IoVビジネスに従事する企業ユーザーの参考になるように説明します。
+このシリーズの[前の記事](https://www.emqx.com/en/blog/mqtt-for-internet-of-vehicles)で述べたように、[MQTTプロトコル](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt)は、IoVのデータプラットフォームを構築するために現在最適な通信プロトコルです。これに基づいて、この記事では、IoVのMQTTメッセージの取得と送信について、そして千万レベル接続のためにIoV MQTTメッセージプラットフォームの構築方法について、IoVビジネスに従事する企業ユーザーの参考になるように説明します。
 
 
 ## IoVの基盤：データ収集と伝送

@@ -19,6 +19,7 @@ MQTT has emerged as one of the best IoT protocols due to its unique features and
 - **Continuous, stateful sessions:** MQTT allows clients to maintain stateful sessions with the broker, enabling the system to remember subscriptions and undelivered messages even after disconnection. Clients can also specify a keep-alive interval during connection, which prompts the broker to periodically check the connection status. If the connection is lost, the broker stores undelivered messages (depending on the QoS level) and attempts to deliver them when the client reconnects. This feature ensures reliable communication and reduces the risk of data loss due to intermittent connectivity.
 - **Large-scale IoT device support:** IoT systems often involve a large number of devices, requiring a protocol that can handle massive-scale deployments. MQTT's lightweight nature, low bandwidth consumption, and efficient use of resources make it well-suited for large-scale IoT applications. The publish-subscribe pattern allows MQTT to scale effectively, as it decouples sender and receiver, reducing network traffic and resource usage. Furthermore, the protocol's support for different QoS levels allows customization of message delivery based on the application's requirements, ensuring optimal performance in various scenarios.
 - **Language support:** IoT systems often include devices and applications developed using various programming languages. MQTT's broad language support enables easy integration with multiple platforms and technologies, fostering seamless communication and interoperability in diverse IoT ecosystems.
+  You can visit our [MQTT Client Programming](https://www.emqx.com/en/blog/category/mqtt-programming) blog series to learn how to use MQTT in PHP, Node.js, Python, Golang, Node.js, and other programming languages.
 
 **Learn more in our article: [What is MQTT and Why is it the Best Protocol for IoT?](https://www.emqx.com/en/blog/what-is-the-mqtt-protocol)**
 
@@ -123,13 +124,12 @@ In this post, we will use the MQTT client tool provided by [MQTTX](https://mqttx
 
 [MQTTX](https://mqttx.app/) is an elegant cross-platform MQTT 5.0 desktop client that runs on macOS, Linux, and Windows. Its user-friendly chat-style interface enables users to easily create multiple MQTT/MQTTS connections and subscribe/publish MQTT messages.
 
-![MQTTX](https://assets.emqx.com/images/95bfe7f0779416da02c27e9ba7a0a09c.png)
+![MQTTX](https://assets.emqx.com/images/ada10fb84b685af3cadcae6c95197c4f.gif)
 
 <center>MQTTX Preview</center>
 
 Currently, there are mature open-source MQTT client libraries for all programming languages. We have selected [popular MQTT client libraries & SDKs](https://www.emqx.com/en/mqtt-client-sdk) in various programming languages and provided code examples to help you quickly understand the use of MQTT clients.
 
-Or you can visit our [MQTT Client Programming](https://www.emqx.com/en/blog/tag/mqtt-client-programming) blog series to learn how to use MQTT in PHP, Node.js, Python, Golang, Node.js, and other programming languages.
 
 ### Create an MQTT Connection
 
@@ -281,7 +281,7 @@ For more details on MQTT Will Message, please check the blog [Use of MQTT Will M
 
 At this point, we have finished explaining and demonstrating the basic concepts of MQTT and its usage process, so readers can try their hand at using the MQTT protocol based on what they have learned in this article.
 
-Next, you can check out [MQTT Guide 2023: Beginner to Advanced](https://www.emqx.com/en/mqtt) series of articles provided by EMQ to learn about MQTT Topics, Wildcards, Retained Messages, Last-Will, and other features. Explore more advanced applications of MQTT and get started with MQTT application and service development.
+Next, you can check out [MQTT Guide 2023: Beginner to Advanced](https://www.emqx.com/en/mqtt-guide) series of articles provided by EMQ to learn about MQTT Topics, Wildcards, Retained Messages, Last-Will, and other features. Explore more advanced applications of MQTT and get started with MQTT application and service development.
 
 
 
