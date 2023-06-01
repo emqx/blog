@@ -1,6 +1,6 @@
-## MQTT v3.1.1 
+## MQTT 3.1.1 
 
-MQTT v3.1.1 protocol has only 10 return codes. These return codes can represent little meaning, and the same return code value can have different meanings in different messages.
+MQTT 3.1.1 protocol has only 10 return codes. These return codes can represent little meaning, and the same return code value can have different meanings in different messages.
 
 ### CONNACK Packet
 
@@ -29,9 +29,9 @@ There are only 4 return codes in the SUBACK packet.
 
 There are 4 return codes in the SUBACK packet. Except that the return code 0x80 indicates failure, the other return codes indicate that the subscription is successful, and the three values 0, 1, 2 represent the maximum QoS value of the subscribed message.
 
-## MQTT v5.0
+## MQTT 5.0
 
-The MQTT v5.0 protocol renames the return code to a reason code, adding a reason code to indicate more types of errors.
+The MQTT 5.0 protocol renames the return code to a reason code, adding a reason code to indicate more types of errors.
 
 The following table is a list of reason codes that represent the value of the reason code and the control packet containing the reason code:
 

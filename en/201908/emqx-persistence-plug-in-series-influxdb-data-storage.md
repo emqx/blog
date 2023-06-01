@@ -1,18 +1,18 @@
-InfluxDB is an open source sequential database developed by InfluxData. It was written by Go and focuses on querying and storing sequential data with high performance. InfluxDB is lighter than the OpenTSDB database introduced in the previous issue, and is better than OpenTSDB in benchmarking indicators given officially by InfluxData.
+InfluxDB is an open-source sequential database developed by InfluxData. It was written by Go and focuses on querying and storing sequential data with high performance. InfluxDB is lighter than the OpenTSDB database introduced in the previous issue, and is better than OpenTSDB in benchmarking indicators given officially by InfluxData.
 
 Faced with the large-scale and rapid growth of IoT sensor acquisition, transaction records and other data, accumulation speed of time series data is very fast. Sequential database can process such large-scale data by improving efficiency, and bring performance improvement, including: higher Ingest Rates, faster large-scale queries (although some other databases support more queries than it) and better data compression.
 
-This article uses the actual example in the `CentOS 7.2` system to illustrate how to store related information through InfluxDB.
+This article uses the actual example in the `CentOS 7.2` system to illustrate how to store data through InfluxDB.
 
 
 
-## Install and verify the InfluxDB server
+## Install and Verify the InfluxDB Server
 
 Readers can refer to the InfluxDB official documentation (https://docs.influxdata.com/influxdb/v2.6/) or Docker (https://hub.docker.com/_/influxdb) to download and install the InfluxDB server. This article uses the InfluxDB version 1.7.
 
 
 
-## Configure EMQX server
+## Configure EMQX
 
 EMQX is installed via RPM, the InfluxDB related configuration file is located in  the directory of `/etc/emqx/plugins/emqx_backend_influxdb.conf`, and the InfluxDB plugin only supports message storage considering the function location.
 
@@ -43,7 +43,7 @@ Start the plugin by the method of either `command line` or `console`.
 
 
 
-### Message template
+### Message Template
 
 Because MQTT Message cannot be written directly to InfluxDB, InfluxDB Backend provides the emqx_backend_influxdb.tmpl template file to convert MQTT Messages into DataPoints that can be written to InfluxDB.
 
@@ -154,7 +154,7 @@ On the **WebSocket** page of EMQX Management Console , the above format message 
 
 ## Summary
 
-When the readers understands the data structure stored in InfluxDB and learns to use the message template to configure the written message field format, they can extend the application in conjunction with InfluxDB.
+After understanding the data structure stored in InfluxDB and how to use the message template to configure the written message field format, you can extend the application in conjunction with InfluxDB.
 
 
 <section class="promotion">
