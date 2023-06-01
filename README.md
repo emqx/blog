@@ -31,9 +31,9 @@ Get to know the preferred protocol in IoT from beginner to master.
 - [Use of MQTT Will Message](https://github.com/emqx/blog/blob/main/en/201912/use-of-mqtt-will-message.md)
 - [Shared subscription - MQTT 5.0 new features](https://github.com/emqx/blog/blob/main/en/201912/introduction-to-mqtt5-protocol-shared-subscription.md)
 - [Clean Start and Session Expiry Interval - MQTT 5.0 new features](https://github.com/emqx/blog/blob/main/en/201912/mqtt5-new-feature-clean-start-and-session-expiry-interval.md)
-- [Payload Format Indicator and Content Type - MQTT 5.0 new features](https://github.com/emqx/blog/blob/main/en/201909/mqtt5-new-features-payload-format-indicator-and-content-type.md)
-- [Reason code and ACK - MQTT 5.0 new features](https://github.com/emqx/blog/blob/main/en/201908/mqtt5-new-features-reason-code-and-ack.md)
-- [MQTT 5.0 new features | (1) properties and loads](https://github.com/emqx/blog/blob/main/en/201908/mqtt5-new-features-properties-and-loads.md)
+- [Payload Format Indicator and Content Type | MQTT 5.0 New Features](https://github.com/emqx/blog/blob/main/en/201909/mqtt5-new-features-payload-format-indicator-and-content-type.md)
+- [Reason Code and ACK | MQTT 5.0 New Features](https://github.com/emqx/blog/blob/main/en/201908/mqtt5-new-features-reason-code-and-ack.md)
+- [Properties and Loads | MQTT 5.0 New Features](https://github.com/emqx/blog/blob/main/en/201908/mqtt5-new-features-properties-and-loads.md)
 - [MQTT and  Kafka](https://github.com/emqx/blog/blob/main/en/201908/mqtt-and-kafka.md)
 
 
@@ -126,6 +126,7 @@ Best practice of MQTT in various clients.
 ## [MQTT Integration (Eco & Integration)](https://www.emqx.com/en/blog/category/eco-and-integration)
 Explore more with & via EMQ.
 
+- [Natural Interactions in IoT: Combining MQTT and ChatGPT](https://github.com/emqx/blog/blob/main/en/202305/natural-interactions-in-iot-combining-mqtt-and-chatgpt.md)
 - [Monitoring MQTT broker with Prometheus and Grafana](https://github.com/emqx/blog/blob/main/en/202212/emqx-prometheus-grafana.md)
 - [Getting Data from EMQX Cloud with InfluxDB Native Collector](https://github.com/emqx/blog/blob/main/en/202208/getting-data-from-emqx-cloud-with-influxdb-native-collector.md)
 - [How to access MQTT data with ThingsBoard](https://github.com/emqx/blog/blob/main/en/202207/how-to-use-thingsboard-to-access-mqtt-data.md)
@@ -210,14 +211,15 @@ EMQX is the world's most scalable open-source MQTT broker with a high performanc
 - [Deploying EMQX 4.0 cluster on Kubernetes via Helm3](https://github.com/emqx/blog/blob/main/en/201910/rapidly-deploy-emqx-clusters-on-kubernetes-via-helm.md)
 - [Schema Registry Tutorial](https://github.com/emqx/blog/blob/main/en/201910/schema-registry-tutorial.md)
 - [EMQX rule engine series (6) store messages to DynamoDB database](https://github.com/emqx/blog/blob/main/en/201910/emqx-rule-engine-series-store-messages-to-dynamodb-database.md)
-- [EMQX Rule Engine Series (5) Storing Messages to Cassandra Database](https://github.com/emqx/blog/blob/main/en/201909/emqx-rule-engine-series-storing-messages-to-cassandra-database.md)
+- [Storing Messages to Cassandra Database | EMQX Rule Engine Series](https://github.com/emqx/blog/blob/main/en/201909/emqx-rule-engine-series-storing-messages-to-cassandra-database.md)
 - [EMQX Persistence Plug-in Series (II) - InfluxDB Data Storage](https://github.com/emqx/blog/blob/main/en/201908/emqx-persistence-plug-in-series-influxdb-data-storage.md)
-- [Deploying EMQ with Elastic Load Balancer on AWS](https://github.com/emqx/blog/blob/main/en/201809/deploying-emq-with-elastic-load-balancer-on-aws.md)
 
 
 ## [EMQX Cloud](https://www.emqx.com/en/blog/category/cloud)
 The easiest way to start MQTT service. Connect your IoT devices to any cloud without the burden of maintaining infrastructure.
 
+- [Connecting to Serverless MQTT Broker with Paho Python](https://github.com/emqx/blog/blob/main/en/202305/connecting-to-serverless-mqtt-broker-with-paho-python.md)
+- [How to Get a Forever Free Serverless MQTT Service](https://github.com/emqx/blog/blob/main/en/202305/how-to-get-a-forever-free-serverless-mqtt-service.md)
 - [Expanding Observability: Enhanced MQTT Monitor Metrics in EMQX Cloud's Latest Release](https://github.com/emqx/blog/blob/main/en/202305/enhanced-mqtt-monitor-metrics-in-emqx-cloud-s-latest-release.md)
 - [Connecting to Serverless MQTT Broker in Node.js](https://github.com/emqx/blog/blob/main/en/202305/connecting-to-serverless-mqtt-broker-in-nodejs.md)
 - [How BYOC MQTT Service Ensures IoT Data Security and Compliance for Your Business](https://github.com/emqx/blog/blob/main/en/202305/how-byoc-mqtt-service-ensures-iot-data-security-and-compliance-for-your-business.md)
@@ -333,6 +335,7 @@ Build a reliable, efficient and industry-specific Internet of Vehicles platform 
 ## [MQTTX](https://www.emqx.com/en/blog/category/mqttx)
 MQTTX is a Fully Open-source MQTT 5.0 cross-platform Desktop Client, makes it easy and quick to create multiple simultaneous online MQTT client connections, test the connection, publish, and subscribe functions of MQTT/TCP, MQTT/TLS, MQTT/WebSocket as well as other MQTT protocol features.
 
+- [Natural Interactions in IoT: Combining MQTT and ChatGPT](https://github.com/emqx/blog/blob/main/en/202305/natural-interactions-in-iot-combining-mqtt-and-chatgpt.md)
 - [Boosting Development Efficiency: MQTTX 1.9.3 Introduces Powerful IoT Scenario Data Simulation](https://github.com/emqx/blog/blob/main/en/202305/mqttx-1-9-3-introduces-powerful-iot-scenario-data-simulation-feature.md)
 - [MQTTX 1.9.2 Released: The Best MQTT  Client Toolbox Is Even Better](https://github.com/emqx/blog/blob/main/en/202304/mqttx-v-1-9-2-release-notes.md)
 - [MQTTX 1.9.1 is Released: Resource Utilization Reduced by 80%, and Stability Greatly Improved](https://github.com/emqx/blog/blob/main/en/202302/mqttx-v-1-9-1-release-notes.md)
@@ -429,7 +432,7 @@ Accelerate digital transformation of industries based on EMQ data infrastructure
 
 - [Application of MQTT protocol in oil & gas industry](https://github.com/emqx/blog/blob/main/en/202107/application-of-mqtt-protocol-in-oil-and-gas-industry.md)
 - [2019 Smart China Expo - EMQ & Intel MEC IoT Edge Solution](https://github.com/emqx/blog/blob/main/en/201909/2019-smart-china-expo-emq-intel-mec-iot-edge-solution.md)
-- [EMQX helps operators build large-scale NB-IoT platform](https://github.com/emqx/blog/blob/main/en/201908/emqx-helps-operators-build-large-scale-nb-iot-platform.md)
+- [EMQX Helps Carriers Build Large-Scale NB-IoT Platform](https://github.com/emqx/blog/blob/main/en/201908/emqx-helps-operators-build-large-scale-nb-iot-platform.md)
 
 
 ## [Engineering](https://www.emqx.com/en/blog/category/engineering)
@@ -437,7 +440,7 @@ Accelerate digital transformation of industries based on EMQ data infrastructure
 - [Chaos engineering, model checking and more: advanced testing of Erlang and Elixir applications](https://github.com/emqx/blog/blob/main/en/202202/advanced-testing-of-erlang-and-elixir-applications.md)
 - [Erlang application stop order](https://github.com/emqx/blog/blob/main/en/202108/erlang-application-stop-order.md)
 - [Hamler 0.2 - OTP Behaviours with Type Classes](https://github.com/emqx/blog/blob/main/en/202008/hamler-0-2-otp-behaviours-with-type-classes.md)
-- [Erlang VS Scala](https://github.com/emqx/blog/blob/main/en/201809/erlang-vs-scala.md)
+- [Erlang vs Scala](https://github.com/emqx/blog/blob/main/en/201809/erlang-vs-scala.md)
 
 
 ## [Community](https://www.emqx.com/en/blog/category/community)

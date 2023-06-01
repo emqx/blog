@@ -1,4 +1,4 @@
-## Cassandra introduction and installation
+## Cassandra Introduction and Installation
 
 Cassandra is an open source distributed database system from Apache that supports **linear extension**, **high availability** without losing the original read and write performance. At present, it is widely used in the back-end services of large enterprises, such as Netflix, Apple and so on, which have deployed thousands of nodes.
 
@@ -8,7 +8,7 @@ Installation Reference of Cassandra：https://cassandra.apache.org/doc/latest/ge
 
 
 
-## Principle overview
+## Principle Overview
 
 By configuring the rules engine, EMQX stores messages that meet certain criteria under a given topic into the Cassandra database. The message flow diagram is as follows:
 ![Artboard.png](https://assets.emqx.com/images/347f6b4787038e60ff443409df36b76a.png)
@@ -21,7 +21,7 @@ among them:
 
 
 
-## Scenario introduction
+## Scenario Introduction
 
 To illustrate the use of rule engine in Cassandra database, we take the example of ``storing the vehicle state with engine speed over 8000 in Cassandra`'.
 
@@ -50,7 +50,7 @@ To illustrate the use of rule engine in Cassandra database, we take the example 
 
 ## Preparation
 
-### Create a database
+### Create a Database
 
 Create a `emqx_rule_engine_output` tablespace to store message data:
 
@@ -60,7 +60,7 @@ CREATE KEYSPACE emqx_rule_engine_output WITH replication = {'class': 'SimpleStra
 
 
 
-### Create a data table
+### Create a Data Table
 
 According to the scenario requirements, create the data table `use_statistics` structure and field annotations as follows:
 
@@ -109,11 +109,11 @@ CREATE TABLE emqx_rule_engine_output.use_statistics (
 
 
 
-## Configure rule engine
+## Configure Rule Engine
 
 
 
-### Create a resource
+### Create a Resource
 
 Open the EMQX Dashboard, go to the **Resources** page of the left menu, click the **New** button, select the Cassandra resource type to create:
 
@@ -127,7 +127,7 @@ The network environment of the nodes in the EMQX cluster may be different. After
 ![cassresstatus2x.jpg](https://assets.emqx.com/images/45a380b895ca101d9dd722eccba84306.jpg)
 
 
-### Create a rule
+### Create a Rule
 
 Go to the **Rules** page on the left menu and click the **New** button to create the rule. Select the trigger event  **message release**, which is triggered when the message is published for data processing.
 
@@ -135,7 +135,7 @@ After selecting the trigger event, we can see the optional fields and sample SQL
 
 ![rulecondition2x.jpg](https://assets.emqx.com/images/a700543920da98477e073a5e05d6376c.jpg)
 
-#### Screen the required fields
+#### Screen the Required Fields
 
 The rule engine uses SQL statements to process rule conditions. In this business, we need to select all the fields in `payload` separately, use the `payload.<fieldName>` format to select, and also also need ``topic,qos, id` information in message context. The current SQL is as follows:
 
@@ -152,7 +152,7 @@ WHERE
 
 
 
-#### Establish screening criteria
+#### Establish Screening Criteria
 
 Conditional screening using the SQL statement WHERE clause, in which we need to define two conditions:
 
@@ -176,7 +176,7 @@ WHERE
 
 
 
-#### Output testing is done by using the SQL test function
+#### Output Testing is Done by Using the SQL Test Function
 
 With the SQL test function, we can view the current data output processed  by SQL  in real time. This function requires us to specify the simulated raw data such as payload.
 
@@ -221,7 +221,7 @@ The test output is as expected and we can proceed to the next step.
 
 
 
-### Add a response action and store the message to Cassandra
+### Add a Response Action and Store the Message to Cassandra
 
 After the input and output of SQL condition  is correct, we continue to add the corresponding action, configure to write SQL statement, and store the screening result in Cassandra.
 
@@ -240,7 +240,7 @@ INSERT INTO use_statistics (msgid, client_id, speed, tachometer, ts) VALUES (${i
 
 ## Test
 
-### Expected results
+### Expected Results
 
 We successfully created a rule that contains a processing action, and the expected result of action  is as follows:
 
@@ -249,7 +249,7 @@ We successfully created a rule that contains a processing action, and the expect
 
 
 
-### Test with the Websocket tool in Dashboard
+### Test With the Websocket Tool in Dashboard
 
 Switch to the **Tools => Websocket** page and use any information client to connect to EMQX. After the connection is successful, the **message**  card sends the following message:
 
