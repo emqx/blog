@@ -1,4 +1,4 @@
-## Introduction of MongoDB 
+## Introduction to MongoDB 
 
 > Non-relational databases (NoSQL) are used for the storage of very large-scale data, such as Google or Facebook, which collects trillions of bits of data per day for their users. These types of data storage do not require a fixed pattern and can be scaled horizontally without redundant operations.
 
@@ -10,7 +10,7 @@ MongoDB download address：[https://www.mongodb.com/download-center/community](h
 
 
 
-## Introduction of scenario
+## Scenario Introduction
 
 This scenario requires that messages satisfying certain conditions under the EMQX specified topic to be stored in the MongoDB database. In order to facilitate subsequent analysis and retrieval, message content needs to be split and stored.
 
@@ -41,7 +41,7 @@ When the reported data of engine speed value is greater than `8000`, the current
 
 ## Preparation
 
-### Create administrative users
+### Create Administrative Users
 
 At first, log in to MongoDB with an account that has permissions to create users, and add users to `emqx_rule_engine_output`:
 
@@ -53,7 +53,7 @@ At first, log in to MongoDB with an account that has permissions to create users
 
 
 
-### Create data table
+### Create Data Table
 
 Log in with the new user and create the data set `use_statistics`:
 
@@ -74,9 +74,9 @@ use_statistics
 
 
 
-## Configuration instructions
+## Configuration Instructions
 
-### Create  resource
+### Create  Resource
 
 Open the EMQX Dashboard, go to the **Resources** page on the left menu, click the **New** button, select the MongoDB resource type to create:
 
@@ -90,7 +90,7 @@ The network environment of the nodes in the EMQX cluster may be different. After
 
 
 
-### Create rules
+### Create Rules
 
 Go to the **Rules** page on the left menu and click the **New** button to create the rule. Select the trigger event  **message publish**, which is triggered when the message is published for data processing.
 
@@ -100,7 +100,7 @@ After selecting the trigger event, we can see the optional fields and sample SQL
 
 
 
-#### Filter the required fields
+#### Filter the Required Fields
 
 The rule engine uses SQL statements to process rule conditions. In this business, we need to select all the fields in `payload` separately, use the `payload.<fieldName>` format to select, and also need the information of `topic`, `qos`, `id` in topic context. The current SQL is as follows:
 
@@ -117,7 +117,7 @@ WHERE
 
 
 
-#### Establish filtering criteria
+#### Establish Filtering Criteria
 
 Using the SQL statement WHERE clause for conditional filtering, in which we need to define two conditions:
 
@@ -141,7 +141,7 @@ WHERE
 
 
 
-#### Use SQL test capabilities for output testing
+#### Use SQL Test Capabilities for Output Testing
 
 With the SQL test function, we can check the current SQL processed data output in real time. This function requires us to specify the simulated raw data such as payload.
 
@@ -186,7 +186,7 @@ The test output is as expected and we can proceed to the next step.
 
 
 
-### Add response action, store the message to MongoDB
+### Add Response Action and Store the Message to MongoDB
 
 When the  input and output of SQL condition is correct, we continue to add response actions, configure to write SQL statement, and store the filtered results in MongoDB.
 
@@ -208,7 +208,7 @@ msgid=${id}, client_id=${client_id}, speed=${speed}, tachometer=${tachometer}, t
 
 ## Test
 
-#### Expected result
+#### Expected Result
 
 We successfully created a rule that contains a processing action, and the expected result of action is as follows:
 
@@ -217,7 +217,7 @@ We successfully created a rule that contains a processing action, and the expect
 
 
 
-#### Test with the Websocket tool in Dashboard
+#### Test With the Websocket Tool in Dashboard
 
 Switch to the **Tools => Websocket** page and use any information client to connect to EMQX. After the connection is successful, the sends the following message with the **message** card:
 

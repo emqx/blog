@@ -17,7 +17,7 @@ In a specific application, a bridged originating node can be approximated as a c
 
 
 
-## Scenario introduction
+## Scenario Introduction
 
 This scenario requires bridging messages under EMQX specified topics and satisfying conditions to EMQX or other MQTT Broker.
 
@@ -64,9 +64,9 @@ port 1882
 $ mosquitto -c /usr/local/etc/mosquitto/mosquitto.conf
 ```
 
-### Configuration instructions
+### Configuration Instructions
 
-#### Create a resource
+#### Create a Resource
 
 Open EMQX Dashboard, go to the **Resources** page on the left menu, click the **New** button, type Mosquitto server information to create a resource.
 
@@ -77,7 +77,7 @@ The network environment of the nodes in the EMQX cluster may not be connected to
 ![image02.jpg](https://assets.emqx.com/images/169d0ba48bab14af6b496cbb403b5446.jpg)
 
 
-#### Create a rule
+#### Create a Rule
 
 Go to the **Rules** page on the left menu and click the **New** button to create the rule. Select the trigger event **message publish**, which is triggered when the message is published for data processing.
 
@@ -85,7 +85,7 @@ After selecting the trigger event, we can see the optional fields and sample SQL
 
 ![image03.jpg](https://assets.emqx.com/images/92b57950543da05e7c9981199e28d07b.jpg)
 
-#### Filter the required fields
+#### Filter the Required Fields
 
 The rule engine uses SQL statements to process rule conditions. In this business, we need to select all the fields in `payload` separately with  `payload.fieldName` format, and also need the `topic`, `qos`, `id ` information of message context. The current SQL is as follows:
 
@@ -100,7 +100,7 @@ WHERE
   topic =~ 't/#'
 ```
 
-#### Establish filtration criteria
+#### Establish Filtration Criteria
 
 Conditional filtering is done by using the SQL statement WHERE clause, in which we need to define two conditions:
 
@@ -122,7 +122,7 @@ WHERE
   AND payload.tachometer > 8000
 ```
 
-#### Output testing is done by using SQL test function
+#### Output Testing via SQL Test Function
 
 With the SQL test function, we can view the current SQL processed data output in real time. This function requires us to specify the simulated raw data such as payload.
 
@@ -161,7 +161,7 @@ The test output data is:
 
 The test output is as expected and we can proceed to the next step.
 
-#### Add a response action, bridge the message to Mosquitto
+#### Add a Response Action and Bridge the message to Mosquitto
 
 After the SQL condition input and output is correct, we continue to add the  response action, configure to write SQL statement, and bridge the filter result to Mosquitto.
 
@@ -171,14 +171,14 @@ Click the **Add** button in the response action, select the **Bridge data to MQT
 
 ### Test
 
-#### The expected results
+#### The Expected Results
 
 We successfully created a rule that contains a processing action, and the expected result of the action is as follows:
 
 1. When the device reports a message to the `cmd/state/:id` topic, it will hit SQL when the value of `tachometer` in the message exceeds 8000, and the number of **hits** in the rule list is increased by 1;
 2. The Mosquitto subscriber will receive a piece of data with the same value as the current message.
 
-#### Test with the Websocket tool in Dashboard
+#### Test With the Websocket Tool in Dashboard
 
 Switch to the **Tools** --> **Websocket** page, use any information client to connect to EMQX. After the connection is successful, the **message**  card sends the following information:
 
@@ -212,15 +212,15 @@ So far, we have implemented business development using the rules engine to bridg
 
 
 
-## RPC bridging
+## RPC Bridging
 
 ### Preparation
 
 Prepare another emqx node and enable two emqx.
 
-### Configuration instructions
+### Configuration Instructions
 
-#### Create a resource
+#### Create a Resource
 
 Open EMQX Dashboard, go to the **Resources** page on the left menu, click the **New** button, type EMQX server information for resource creation.
 
@@ -230,7 +230,7 @@ The network environment of the nodes in the EMQX cluster may not be connected to
 
 ![image02.jpg](https://assets.emqx.com/images/e8a1e9b8fe12623ee6e66419ebb031d3.jpg)
 
-#### Create a rule
+#### Create a Rule
 
 Go to the **Rules** page on the left menu and click the **New** button to create the rule. Select the trigger event **message publish**, which is triggered when the message is published for data processing.
 
@@ -238,7 +238,7 @@ After selecting the trigger event, we can see the optional fields and sample SQL
 
 ![image03.jpg](https://assets.emqx.com/images/78e78b1e5aea8c76388a066ab7f727b4.jpg)
 
-#### Filter the required fields
+#### Filter the Required Fields
 
 The rule engine uses SQL statements to process rule conditions. In this business, we need to select all the fields in `payload` separately with  `payload.fieldName` format, and also need the `topic`, `qos`, `id ` information of message context. The current SQL is as follows:
 
@@ -253,7 +253,7 @@ WHERE
   topic =~ 't/#'
 ```
 
-#### Establish filtration criteria
+#### Establish Filtration Criteria
 
 Conditional filtering is done by using the SQL statement WHERE clause, in which we need to define two conditions:
 
@@ -275,7 +275,7 @@ WHERE
   AND payload.tachometer > 8000
 ```
 
-#### Output testing is done by using SQL test function
+#### Output Testing via SQL Test Function
 
 With the SQL test function, we can view the current SQL processed data output in real time. This function requires us to specify the simulated raw data such as payload.
 
@@ -314,7 +314,7 @@ The test output data is:
 
 The test output is as expected and we can proceed to the next step.
 
-#### Add a response action, bridge the message to another EMQX
+#### Add a Response Action and Bridge the message to Another EMQX
 
 After the SQL condition input and output is correct, we continue to add the  response action, configure to write SQL statement, and bridge the filter result to another EMQX.
 
@@ -326,14 +326,14 @@ Click the **Add** button in the response action, select the **Bridge data to MQT
 
 ### Test
 
-#### The expected results
+#### The Expected Results
 
 We successfully created a rule that contains a processing action, and the expected result of the action is as follows:
 
 1. When the device reports a message to the `cmd/state/:id` topic, it will hit SQL when the value of `tachometer` in the message exceeds 8000, and the number of **hits** in the rule list is increased by 1;
 2. The EMQX subscriber will receive a piece of data with the same value as the current message.
 
-#### Test with the Websocket tool in Dashboard
+#### Test With the Websocket Tool in Dashboard
 
 Switch to the **Tools** --> **Websocket** page, use any information client to connect to EMQX. After the connection is successful, the **message**  card sends the following information:
 

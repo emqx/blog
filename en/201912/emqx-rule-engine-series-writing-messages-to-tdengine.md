@@ -1,20 +1,20 @@
-## What is TDEngine?
+## What is TDengine?
 
 TDengine is an open source big data platform designed and optimized for Internet of Things, Internet of Vehicles, Industrial Internet, IT operation and maintenance, etc., launched by TAOS Data (Beijing TAOS Data Technology Co., Ltd.). In addition to the core timing database functions that are more than 10 times faster, it also provides functions such as caching, data subscription, and streaming computing to minimize the complexity of R & D, operation and maintenance.
 
 As a timing processing engine, TDengine can greatly simplify the design of big data platform and reduce the R & D cost and operation cost without  Kafka, HDFS / HBase / Spark, Redis and other software. Because fewer open source components need to be integrated, the system can be more robust and easier to ensure data consistency.
 
-TDEngine provides community edition, enterprise edition and cloud service edition. For installation / use tutorial, please refer to the TDEngine documentation https://www.taosdata.com/cn/products/
+TDengine provides community edition, enterprise edition and cloud service edition. For installation / use tutorial, please refer to the TDEngine documentation https://www.taosdata.com/cn/products/
 
 
 
-## Scenario introduction
+## Scenario Introduction
 
 This article uses the example of  accessing the smart door lock of EMQX through [MQTT protocol](https://www.emqx.com/en/mqtt-guide)
 
 Smart door locks have become the focus of smart home products. In order to ensure a more secure unlocking experience for users, smart door locks can usually achieve fingerprint unlocking, password unlocking, IC card unlocking, key unlocking, remote unlocking and other functions. Each business link of the smart door lock involves the sending and transmission of operation-sensitive instructions and status data, which should be stored for subsequent audit use.
 
-### Collection process
+### Collection Process
 
 The issued instructions and reported data from smart door lock are transmitted via EMQX through the MQTT protocol. Users can optionally use the rule engine to filter or set the consumer client for processing on EMQX, and  write the data satisfying the conditions into TDEngine data platform. The whole data flow process is as follows:
 
@@ -45,7 +45,7 @@ In this scenario, the smart door lock is planned to report the operation receipt
 
 ## Preparation
 
-Although TDEngine is a relational database model, each collecting device is required to create a separate table. Therefore, we create a table for each lock based on the door lock id. At the same time, the compression ratio of floating point data is poor compared to the integer data. Longitude and latitude are usually accurate to 7 decimal places. **Therefore, the longitude and latitude are increased by 1E7 times and converted to long integer for storage:**
+Although TDengine is a relational database model, each collecting device is required to create a separate table. Therefore, we create a table for each lock based on the door lock id. At the same time, the compression ratio of floating point data is poor compared to the integer data. Longitude and latitude are usually accurate to 7 decimal places. **Therefore, the longitude and latitude are increased by 1E7 times and converted to long integer for storage:**
 
 The statement to create the database is:
 
@@ -73,7 +73,7 @@ create table lock(
 ) tags(card int, model binary(10));
 ```
 
-**TDEngine is a relational database model, but requires each collecting device to create a separate table** , with the door lock id as the collection table table name. For example, if the id is 51dc0c50f55d11e9a4fec59e26b058d5, then the statement to create the data table is:
+**TDengine is a relational database model, but requires each collecting device to create a separate table** , with the door lock id as the collection table table name. For example, if the id is 51dc0c50f55d11e9a4fec59e26b058d5, then the statement to create the data table is:
 
 ```sql
 -- specify which supertable it belongs to with using command 
@@ -103,7 +103,7 @@ insert into v_51dc0c50f55d11e9a4fec59e26b058d5 values(
 
 
 
-## Data writing method
+## Data Writing Method
 
 At present, the function of directly writing EMQX message data to TDEngine is still under planning. Thanks to the many connectors provided by TDEngine, we use the following two methods to complete the data writing:
 
@@ -112,9 +112,9 @@ At present, the function of directly writing EMQX message data to TDEngine is st
 
 
 
-## Writing data using the rules engine
+## Writing Data Using the Rule Engine
 
-### Resource preparation
+### Resource Preparation
 
 In EMQX Dashboard, click the main menu of **Rules**  , and create a new WebHook resource on the  **Resources** page to send data to the TDEngine RESTful Connector. Add a request header:
 
@@ -129,7 +129,7 @@ Click **Test Connection**. After the test passes, click the **OK**  button to co
 
 
 
-### Create rules
+### Create Rules
 
 After the resources are created, we can create rules. In the **Rules Engine ->  Rules** page, Click the **New** button to enter the rule creation page.
 
@@ -179,7 +179,7 @@ Using the SQL test function, input the raw reported data and related variables, 
 
 From the output results, the floating point values of latitude and longitude  have been converted to integers, indicating that this step is correct and subsequent operations can be performed.
 
-### Response action
+### Response Action
 
 Click the **Add Action** button at the bottom of the creation page. In the pop-up **Add Action** box, select the action of **Send data to the Web service, Use resources**. Select the resources created in the previous step Resources. In the content template, use the `$ {}` syntax to extract the  data filtered by **conditional SQL**. The spliced written SQL statement is as follows:
 
@@ -213,9 +213,9 @@ Click **Create**  to complete the creation of the rules. The data will be writte
 
 
 
-## Writing data using the TDEngine SDK
+## Writing Data Using the TDengine SDK
 
-TDEngine provides SDK applicable for multiple language platforms. The program can obtain data reported by smart door locks to EMQX by subscribing to MQTT topics or consuming message middleware data, and then stitch the data into SQL and finally write it to TDEngine.
+TDengine provides SDK applicable for multiple language platforms. The program can obtain data reported by smart door locks to EMQX by subscribing to MQTT topics or consuming message middleware data, and then stitch the data into SQL and finally write it to TDEngine.
 
 This article uses the method of subscribing to the [MQTT topic](https://www.emqx.com/en/blog/advanced-features-of-mqtt-topics) to obtain smart door lock reporting data. Considering that the amount of messages may grow to an amount that a single subscription client cannot afford, we use the **shared subscription** method to consume data.
 
@@ -223,7 +223,7 @@ This article uses the method of subscribing to the [MQTT topic](https://www.emqx
 
 
 
-### Code example
+### Code Example
 
 This example uses the Node.js platform to implement data writing operations using TDEngine's RESTful Connector.
 
