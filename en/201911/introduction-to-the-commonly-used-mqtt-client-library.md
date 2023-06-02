@@ -14,7 +14,7 @@ The selected MQTT client libraries are as follows:
 - Eclipse Paho Python
 
 
-## Sample application introduction
+## Sample Application Introduction
 
 The action of the MQTT client throughout its lifecycle can be summarized as: establishing a connection, subscribing to a topic, receiving and processing a message, publishing a message to a specified topic, unsubscribing, and disconnecting.
 
@@ -301,7 +301,7 @@ func main() {
 
 
 
-## emqtt : Erlang MQTT client library provided by EMQ
+## emqtt : Erlang MQTT Client Library Provided by EMQ
 
 [emqtt](https://github.com/emqx/emqtt)  is a client library officially provided by EMQ of the open source MQTT Broker EMQX, which is applicable for the Erlang language.
 
@@ -338,7 +338,7 @@ ok = emqtt:disconnect(ConnPid).
 
 
 
-## MQTT.js Web & Node.js platform MQTT client
+## MQTT.js Web & Node.js Platform MQTT client
 
 [MQTT.js](https://www.npmjs.com/package/mqtt) is a module written in JavaScript that implements the MQTT protocol client functionality and can be used in Node.js or in a browser environment. When used in Node.js, the `-g` global installation can be done with a command line, and it can be integrated into the project for callback.
 

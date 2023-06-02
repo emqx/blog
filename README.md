@@ -77,7 +77,7 @@ Get to know the preferred protocol in IoT from beginner to master.
 - [Using MQTT.fx to connect to EMQX Cloud](https://github.com/emqx/blog/blob/main/en/202108/connecting-to-emqx-cloud-with-mqttfx.md)
 - [Using MQTT Explorer to connect to EMQX Cloud](https://github.com/emqx/blog/blob/main/en/202108/connecting-to-emqx-cloud-with-mqtt-explorer.md)
 - [Comparison of Python MQTT Clients](https://github.com/emqx/blog/blob/main/en/202010/comparision-of-python-mqtt-client.md)
-- [Introduction to the commonly used MQTT client library](https://github.com/emqx/blog/blob/main/en/201911/introduction-to-the-commonly-used-mqtt-client-library.md)
+- [Introduction to the Commonly Used MQTT Client Library](https://github.com/emqx/blog/blob/main/en/201911/introduction-to-the-commonly-used-mqtt-client-library.md)
 
 
 ## [MQTT Programming](https://www.emqx.com/en/blog/category/mqtt-programming)
@@ -108,7 +108,7 @@ Best practice of MQTT in various clients.
 - [Using MQTT in The Flutter Project](https://github.com/emqx/blog/blob/main/en/202007/using-mqtt-in-flutter.md)
 - [Connect Android Client to MQTT Broker with Kotlin](https://github.com/emqx/blog/blob/main/en/202006/android-connects-mqtt-using-kotlin.md)
 - [ESP8266 Connects to MQTT Broker with Arduino](https://github.com/emqx/blog/blob/main/en/202005/esp8266-connects-to-the-public-mqtt-broker.md)
-- [Upload sensor data to MQTT cloud service via NodeMCU (ESP8266)](https://github.com/emqx/blog/blob/main/en/201912/upload-sensor-data-to-mqtt-cloud-service-via-nodemcu-esp8266.md)
+- [Upload Sensor Data to MQTT Cloud Service via NodeMCU (ESP8266)](https://github.com/emqx/blog/blob/main/en/201912/upload-sensor-data-to-mqtt-cloud-service-via-nodemcu-esp8266.md)
 
 
 ## [MQTT Security](https://www.emqx.com/en/blog/category/security)
@@ -133,7 +133,7 @@ Explore more with & via EMQ.
 - [Process MQTT data with Node-RED](https://github.com/emqx/blog/blob/main/en/202205/using-node-red-to-process-mqtt-data.md)
 - [EMQX + ClickHouse implements IoT data collection and analysis](https://github.com/emqx/blog/blob/main/en/202011/emqx-and-clickhouse-for-iot-data-access-and-analysis.md)
 - [Build EMQX + InfluxDB + Grafana IoT data visualization solution in one hour](https://github.com/emqx/blog/blob/main/en/202001/build-emqx-influxdb-grafana-iot-data-visualization-solution-in-one-hour.md)
-- [Upload sensor data to MQTT cloud service via NodeMCU (ESP8266)](https://github.com/emqx/blog/blob/main/en/201912/upload-sensor-data-to-mqtt-cloud-service-via-nodemcu-esp8266.md)
+- [Upload Sensor Data to MQTT Cloud Service via NodeMCU (ESP8266)](https://github.com/emqx/blog/blob/main/en/201912/upload-sensor-data-to-mqtt-cloud-service-via-nodemcu-esp8266.md)
 
 
 ## [EMQX Open Source | Broker](https://www.emqx.com/en/blog/category/emqx)
@@ -202,15 +202,15 @@ EMQX is the world's most scalable open-source MQTT broker with a high performanc
 - [EMQX Rule Engine Series (12) Store Messages to Redis](https://github.com/emqx/blog/blob/main/en/202001/emqx-rule-engine-series-12-store-messages-to-redis.md)
 - [EMQX Rule Engine Series - Store messages to PostgreSQL database](https://github.com/emqx/blog/blob/main/en/201912/emqx-rule-engine-series-11-store-messages-to-postgresql-database.md)
 - [EMQX Rule Engine Series - Storing messages to the OpenTSDB database](https://github.com/emqx/blog/blob/main/en/201912/emqx-rule-engine-series-10-store-messages-to-the-opentsdb-database.md)
-- [EMQX Rule Engine Series - Writing Messages to TDEngine](https://github.com/emqx/blog/blob/main/en/201912/emqx-rule-engine-series-writing-messages-to-tdengine.md)
-- [EMQX Rule Engine Series - Store Messages to InfluxDB Time Series Database](https://github.com/emqx/blog/blob/main/en/201911/emqx-rule-engine-series-store-messages-to-influxdb-time-series-database.md)
-- [EMQX rule engine series - store messages to MySQL database](https://github.com/emqx/blog/blob/main/en/201911/emqx-rule-engine-series-store-messages-to-mysql-database.md)
-- [EMQX rule engine series - bridge data to message queue (Kafka）](https://github.com/emqx/blog/blob/main/en/201911/emqx-rule-engine-series-bridge-data-to-message-queue-kafka.md)
-- [EMQX Rule Engine Series (8) Bridging Messages to MQTT Broker](https://github.com/emqx/blog/blob/main/en/201911/emqx-rule-engine-series-bridging-messages-to-mqtt-broker.md)
-- [EMQX rule engine series (7) store messages to the MongoDB database](https://github.com/emqx/blog/blob/main/en/201910/emqx-rule-engine-series-store-messages-to-the-mongodb-database.md)
+- [Writing Messages to TDengine | EMQX Rule Engine Series](https://github.com/emqx/blog/blob/main/en/201912/emqx-rule-engine-series-writing-messages-to-tdengine.md)
+- [Storing Messages to InfluxDB Time Series Database | EMQX Rule Engine Series](https://github.com/emqx/blog/blob/main/en/201911/emqx-rule-engine-series-store-messages-to-influxdb-time-series-database.md)
+- [Storing Messages to MySQL Database | EMQX Rule Engine Series](https://github.com/emqx/blog/blob/main/en/201911/emqx-rule-engine-series-store-messages-to-mysql-database.md)
+- [Bridging MQTT Data to Kafka | EMQX Rule Engine Series](https://github.com/emqx/blog/blob/main/en/201911/emqx-rule-engine-series-bridge-data-to-message-queue-kafka.md)
+- [Bridging Messages to MQTT Broker | EMQX Rule Engine Series](https://github.com/emqx/blog/blob/main/en/201911/emqx-rule-engine-series-bridging-messages-to-mqtt-broker.md)
+- [Storing Messages to MongoDB Database | EMQX Rule Engine Series](https://github.com/emqx/blog/blob/main/en/201910/emqx-rule-engine-series-store-messages-to-the-mongodb-database.md)
 - [Deploying EMQX 4.0 cluster on Kubernetes via Helm3](https://github.com/emqx/blog/blob/main/en/201910/rapidly-deploy-emqx-clusters-on-kubernetes-via-helm.md)
 - [Schema Registry Tutorial](https://github.com/emqx/blog/blob/main/en/201910/schema-registry-tutorial.md)
-- [EMQX rule engine series (6) store messages to DynamoDB database](https://github.com/emqx/blog/blob/main/en/201910/emqx-rule-engine-series-store-messages-to-dynamodb-database.md)
+- [Storing Messages to DynamoDB | EMQX Rule Engine Series](https://github.com/emqx/blog/blob/main/en/201910/emqx-rule-engine-series-store-messages-to-dynamodb-database.md)
 - [Storing Messages to Cassandra Database | EMQX Rule Engine Series](https://github.com/emqx/blog/blob/main/en/201909/emqx-rule-engine-series-storing-messages-to-cassandra-database.md)
 - [EMQX Persistence Plug-in Series (II) - InfluxDB Data Storage](https://github.com/emqx/blog/blob/main/en/201908/emqx-persistence-plug-in-series-influxdb-data-storage.md)
 
@@ -278,7 +278,7 @@ The easiest way to start MQTT service. Connect your IoT devices to any cloud wit
 - [Quick Start of EMQX MQTT Cloud Service](https://github.com/emqx/blog/blob/main/en/202107/quick-start-of-emqx-mqtt-cloud-service.md)
 - [Set up EMQX Cloud MQTT Broker with openHAB](https://github.com/emqx/blog/blob/main/en/202105/set-up-emqx-cloud-mqtt-broker-with-openhab.md)
 - [Integrate EMQX MQTT Cloud with Home Assistant](https://github.com/emqx/blog/blob/main/en/202105/integrate-emqx-mqtt-cloud-with-home-assistant.md)
-- [Upload sensor data to MQTT cloud service via NodeMCU (ESP8266)](https://github.com/emqx/blog/blob/main/en/201912/upload-sensor-data-to-mqtt-cloud-service-via-nodemcu-esp8266.md)
+- [Upload Sensor Data to MQTT Cloud Service via NodeMCU (ESP8266)](https://github.com/emqx/blog/blob/main/en/201912/upload-sensor-data-to-mqtt-cloud-service-via-nodemcu-esp8266.md)
 
 
 ## [EMQX Enterprise](https://www.emqx.com/en/blog/category/enterprise)
@@ -303,7 +303,7 @@ The world's most scalable and reliable MQTT messaging platform to connect, move 
 - [EMQX Enterprise now supports the IoV GB/T32960 protocol](https://github.com/emqx/blog/blob/main/en/202102/release-notes-emq-x-enterprise-4-2-3.md)
 - [EMQX Enterprise 4.2.2 is now available!](https://github.com/emqx/blog/blob/main/en/202012/release-notes-emq-x-enterprise-4-2-2.md)
 - [EMQX Enterprise + Apache Kafka Build a high-performance IoT message processing backend](https://github.com/emqx/blog/blob/main/en/201912/emqx-enterprise-mqtt-broker-apache-kafka-build-high-performance-iot-message-processing-backend.md)
-- [EMQ new version in September | EMQX Enterprise 3.4.0 Function overview](https://github.com/emqx/blog/blob/main/en/201909/emq-new-version-in-september-emqx-enterprise-3-4-0-function-overview.md)
+- [EMQX Enterprise 3.4.0 Overview](https://github.com/emqx/blog/blob/main/en/201909/emq-new-version-in-september-emqx-enterprise-3-4-0-function-overview.md)
 
 
 ## [Internet of Vehicles | Connected Cars](https://www.emqx.com/en/blog/category/internet-of-vehicles)
@@ -389,6 +389,7 @@ NanoMQ is an MQTT messaging broker + multi-protocol message bus for edge computi
 ## [eKuiper](https://www.emqx.com/en/blog/category/kuiper)
 eKuiper is an edge lightweight IoT data analytics / streaming software implemented by Golang, and it can be run at all kinds of resource constrained edge devices.
 
+- [Bridging Demanded Signals From CAN Bus to MQTT by eKuiper](https://github.com/emqx/blog/blob/main/en/202306/bridging-demanded-signals-from-can-bus-to-mqtt-by-ekuiper.md)
 - [Support Python Virtual Environment ｜eKuiper Newsletter 202302](https://github.com/emqx/blog/blob/main/en/202303/ekuiper-newsletter-202302.md)
 - [eKuiper 1.8.0 Released: Real-time AI Inference on Image/Video Streaming with Zero Coding](https://github.com/emqx/blog/blob/main/en/202302/ekuiper-v-1-8-0-release-notes.md)
 - [Improve Autonomy and Analytic Capability for Rules | eKuiper Newsletter 202211](https://github.com/emqx/blog/blob/main/en/202212/ekuiper-newsletter-202211.md)
@@ -414,7 +415,6 @@ eKuiper is an edge lightweight IoT data analytics / streaming software implement
 - [Release Notes — Kuiper 0.2.0](https://github.com/emqx/blog/blob/main/en/202002/release-notes-kuiper-0.2.0.md)
 - [Release Notes - Kuiper 0.1](https://github.com/emqx/blog/blob/main/en/202001/release-notes-kuiper-0-1.md)
 - [Release Notes - Kuiper 0.0.4](https://github.com/emqx/blog/blob/main/en/201912/release-notes-kuiper-0-0-4.md)
-- [Lightweight edge computing EMQX Kuiper and AWS IoT Hub integration solution](https://github.com/emqx/blog/blob/main/en/201911/lightweight-edge-computing-emqx-kuiper-and-aws-iot-hub-integration-solution.md)
 - [Lightweight edge computing EMQX Kuiper and Azure IoT Hub integration solution](https://github.com/emqx/blog/blob/main/en/201911/lightweight-edge-computing-emqx-kuiper-and-azure-iot-hub-integration-solution.md)
 - [Release Notes - Kuiper 0.0.3](https://github.com/emqx/blog/blob/main/en/201911/release-notes-kuiper-0-0-3.md)
 - [EMQ IoT Edge Streaming Data Processing Software Kuiper Was Open-sourced](https://github.com/emqx/blog/blob/main/en/201910/emq-iot-edge-streaming-data-processing-software-kuiper-was-open-sourced.md)
