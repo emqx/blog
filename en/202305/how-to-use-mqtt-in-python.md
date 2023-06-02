@@ -30,7 +30,7 @@ Want to explore more Python MQTT client libraries? Check out this [comparison bl
 This project has been developed and tested using Python 3.6. To confirm that you have the correct Python version installed, you can use the following command.
 
 ```vim
-➜  ~ python3 --version             
+$ python3 --version             
 Python 3.6.7
 ```
 

@@ -37,7 +37,7 @@ When the reported data of engine speed value is greater than `8000', the current
 
 ## Preparation
 
-### Define DynamoDB data table
+### Define DynamoDB Data Table
 
 According to the scenario requirements, define the data table `use_statistics` structure as follows:
 
@@ -61,7 +61,7 @@ use_statistics.json
 }
 ```
 
-### Create DynamoDB data table
+### Create DynamoDB Data Table
 
 Create  `use_statistics` data table with the aws cli command:
 
@@ -121,9 +121,9 @@ $ aws dynamodb list-tables --region us-west-2 --endpoint-url http://127.0.0.1:80
 }
 ```
 
-## Configuration instructions
+## Configuration Instructions
 
-### Create resource
+### Create Resource
 
 Open EMQX Dashboard, go to the **Resources** page on the left menu, click the **New** button, type DynamoDB server information for resource creation.
 
@@ -133,7 +133,7 @@ The network environment of the nodes in the EMQX cluster may be different. After
 
 ![image02.jpg](https://assets.emqx.com/images/a5973e08b0b26d85eb60505610193714.jpg)
 
-### Create rules
+### Create Rules
 
 Go to the left menu of  **rules**  page, click  **new**  button to create rules. Select trigger event  of **message publishing** to trigger this rule for data processing when the message is published.
 
@@ -141,7 +141,7 @@ After selecting the trigger event, we can see the optional field and sample SQL 
 
 ![image03.jpg](https://assets.emqx.com/images/1c72e2ec615041b9919dc28b500e5c98.jpg)
 
-#### Screen the required fields
+#### Screen the Required Fields
 
 Rule engine uses SQL statements to process rule conditions. In this business, we need to select all the fields in `payload` separately, use the `payload.fieldName` format to select, and also need the topic context information of`topic`, `qos`, `id `. The current SQL is as follows:
 
@@ -156,7 +156,7 @@ WHERE
   topic =~ 't/#'
 ```
 
-#### Establish screening conditions
+#### Establish Screening Conditions
 
 Conditional screening is done by using the SQL statement WHERE clause, in which we need to define two conditions:
 
@@ -178,7 +178,7 @@ WHERE
   AND payload.tachometer > 8000
 ```
 
-#### Output test is done with the SQL test function
+#### Output Test via SQL Test Function
 
 With the SQL test function, we can view the current SQL processed data output in real time. This function requires us to specify the simulated raw data such as payload.
 
@@ -217,7 +217,7 @@ The test output data is:
 
 The test output is as expected and we can proceed to the next step.
 
-### Add a response action and store the message to DynamoDB
+### Add a Response Action and Store the Message to DynamoDB
 
 After the input and output of SQL condition  is correct, we continue to add the corresponding action, configure to write SQL statement, and store the screening result in DynamoDB.
 
@@ -227,14 +227,14 @@ Click the **Add** button in the response action, select the **Save data to Dynam
 
 ## Test
 
-#### Expected result
+#### Expected Result
 
 We successfully created a rule that contains a processing action, and expected result of the action is as follows:
 
 1. When the device reports a message to the `cmd/state/:id` topic, it will hit SQL when the value of `tachometer` in the message exceeds 8000, and the number of **hit** in the rule list is increased by 1;
 2. A piece of data will be added to the 'use_statistics' table in DynamoDB with the same value as the current message.
 
-#### Test with the Websocket tool in Dashboard
+#### Test With the Websocket Tool in Dashboard
 
 Switch to **tools -> Websocket** page, connect to EMQX with any client, and send the following message to  **message**  card after successful connection:
 
