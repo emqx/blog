@@ -2,7 +2,7 @@ The EMQX 3.2 version introduces the ''Rules Engine'' feature that supports scree
 
 
 
-## Scenario introduction
+## Scenario Introduction
 
 This scenario requires bridging the message under the topic specified by EMQX and satisfying the condition to Kafka. In order to facilitate subsequent analysis and retrieval, the message content needs to be split.
 
@@ -35,7 +35,7 @@ When the reported value of engine speed  is greater than `8000', the current inf
 
 ## Preparation
 
-### Create Kafka topic
+### Create Kafka Topic
 
 ```bash
 ./bin/kafka-topics.sh --create --bootstrap-server localhost:9092 --topic 'emqx_rule_engine_output' --partitions 1 --replication-factor 1
@@ -43,9 +43,9 @@ When the reported value of engine speed  is greater than `8000', the current inf
 
 > The topic must be created in Kafka before creating the Kafka Rule, otherwise the Kafka Rule creation fails.
 
-## Configuration instructions
+## Configuration Instructions
 
-### Create resource
+### Create Resource
 
 Open EMQX Dashboard, go to the **Resources** page on the left menu, click the **New** button, type Kafka server information for resource creation.
 
@@ -59,7 +59,7 @@ The network environment of the nodes in the EMQX cluster may be different. After
 
 
 
-### Create rule
+### Create Rule
 
 Go to the **Rules** page on the left menu and click the **New** button to create the rule. Select the trigger event  of **publishing message**, which is triggered when the message is published for data processing.
 
@@ -69,7 +69,7 @@ After selecting the trigger event, we can see the optional fields and sample SQL
 
 
 
-#### Filter the required fields
+#### Filter the Required Fields
 
 The rules engine uses SQL statements for processing/arranging terminal messages or connection events. In this business, we only need to filter out the key fields in `payload` for use.  We can use the `payload.<fieldname> ` format to select the fields in the payload. In addition to the contents of the payload, we also need to save the id information of the message. SQL can be configured in the following format:
 
@@ -86,7 +86,7 @@ WHERE
 
 
 
-#### Create filtering criteria
+#### Create Filtering Criteria
 
 Conditional filtering can be done by using the SQL statement WHERE clause, in which we need to define two conditions:
 
@@ -110,7 +110,7 @@ WHERE
 
 
 
-#### Conducting output testing by using SQL test capabilities
+#### Conducting Output Testing via SQL Test Capabilities
 
 With the SQL test function, we can view the current SQL processed data output in real time. This function requires us to specify the simulated raw data such as payload.
 
@@ -156,7 +156,7 @@ The test output is as expected and we can proceed to the next step.
 
 
 
-### Add a response action, bridge the message to Kafka
+### Add a Response Action and Bridge the Message to Kafka
 
 After the SQL condition input and output is correct, we continue to add the corresponding action, configure the write SQL statement, and bridge the filtered result to Kafka.
 
@@ -168,7 +168,7 @@ Click the **Add** button in the response action, select the **Bridge data to Kaf
 
 ## Test
 
-#### expected outcome
+#### Expected Outcome
 
 We successfully created a rule that contains a processing action, and expected result is as follows:
 
@@ -177,7 +177,7 @@ We successfully created a rule that contains a processing action, and expected r
 
 
 
-#### Test with the Websocket tool in Dashboard
+#### Test With the Websocket Tool in Dashboard
 
 
 Switch to the **Tools** --> **Websocket** page, use any client to connect to EMQX, after the connection is successful, sends the following information with **message** card:

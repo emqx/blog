@@ -6,7 +6,7 @@ With the EMQX messaging engine, we can customize the Template file and then conv
 
 ![Artboard.jpg](https://assets.emqx.com/images/09b103dd807d6fd009fa102c7bcf7d09.jpg)
 
-## Introduction of  Scenario
+## Scenario Introduction
 
 In this scenario, it is required to store the messages that meet the criteria under EMQX in the InfluxDB time series database. In order to facilitate subsequent analysis and retrieval, the message content needs to be split for storage.
 
@@ -31,7 +31,7 @@ In this scenario, it is required to store the messages that meet the criteria un
 
 ## Preparation
 
-### Database installation and initialization
+### Database Installation and Initialization
 
 Create a `db` database and open the 8089 UDP port.
 
@@ -47,9 +47,9 @@ $ docker run --name=influxdb --rm -d -p 8086:8086 -p 8089:8089/udp -v ${PWD}/fil
 
 
 
-## Configuration instructions
+## Configuration Instructions
 
-### Create a resource
+### Create a Resource
 
 Open EMQX Dashboard, go to the **Resources** page on the left menu, click the **New** button, type MySQL server information for resource creation, select the InfluxDB resource type and complete the relevant configuration for resource creation.
 
@@ -57,7 +57,7 @@ Open EMQX Dashboard, go to the **Resources** page on the left menu, click the **
 
 
 
-### Create a rule
+### Create a Rule
 
 Go to the **Rules** page on the left menu and click the **New** button to create the rule. Select the trigger event **message.publish** ,  which is triggered when the message is published for data processing.
 
@@ -67,7 +67,7 @@ After selecting the trigger event, we can see the optional fields and sample SQL
 
 
 
-#### Filter the required fields
+#### Filter the Required Fields
 
 The rules engine uses SQL statements to filter and process data. For example, in the scenario mentioned above, we need to extract the fields in ``payload``, which can be implemented by `payload.<fieldName>`. At the same time we only expect to handle the `data/sensor` topic, then we can use the topic wildcard `=~` to filter the `topic` in the WHERE clause: `topic =~ 'data/sensor'`, and finally we get the SQL as follows:
 
@@ -104,7 +104,7 @@ Then click the **Test** button and get the following output, which is as expecte
 
 
 
-### Add a response action and store the message to InfluxDB
+### Add a Response Action and Store the Message to InfluxDB
 
 After the input and output of SQL condition  is correct, we continue to add the corresponding action, configure to write SQL statement, and store the filtered result in MySQL.
 
@@ -116,7 +116,7 @@ Click the **Add** button in the response action, select action of **Save Data to
 
 ## Test
 
-### Expected result
+### Expected Result
 
 We successfully created a rule that contains a processing action, and expected result of the action is as follows:
 
@@ -125,7 +125,7 @@ We successfully created a rule that contains a processing action, and expected r
 
 
 
-### Test with the Websocket tool in Dashboard
+### Test With the Websocket Tool in Dashboard
 
 Switch to the **Tools** --> **Websocket** page, connect to EMQX with any Client ID, and send the following message in the **Message** card after the connection is successful:
 

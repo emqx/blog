@@ -10,11 +10,11 @@ The following image shows an application case for the Schema Registry. Multiple 
 
 [Figure 1: Using the Schema Registry to encode and decode device data]
 
-### Binary format support
+### Binary Format Support
 
 The built-in Schema Registry data format of EMQX 3.4.0 includes[Avro](https://avro.apache.org) and  [Protobuf](https://developers.google.com/protocol-buffers/). Avro and Protobuf are Schema-dependent data formats. The encoded data is binary. The internal data format (Map, explained later ) decoded by Schema Registry can be used directly by the rules engine and other plugins. In addition, Schema Registry supports user-defined (3rd-party)  coding and decoding services, which are much closer to business needs through HTTP or TCP callbacks.
 
-## Architecture design
+## Architecture Design
 
 Schema Registry maintains Schema text for built-in encoding formats such as Avro and Probouf, but for custom  codec (3rd-party) formats, if Schema is needed, Schema text needs to be maintained by the codec service itself. Schema Registry creates a Schema ID for each Schema, and the Schema API provides add, query, and delete operations through the Schema ID.
 
@@ -50,7 +50,7 @@ EMQX's [PUB/SUB](https://www.emqx.com/en/blog/mqtt-5-introduction-to-publish-sub
 
 [Figure 3:Messaging, Rule Engine and Schema Registry]
 
-### Rule Engine internal data format (Map)
+### Rule Engine Internal Data format (Map)
 
 The data format used internally by the rules engine is Erlang Map, so if the original data content is in binary or other format,  it must be converted to Map using codec functions (such as schema_decode and json_decode functions mentioned above).
 
@@ -91,9 +91,9 @@ The above SQL statement will match the MQTT message with payload content of a JS
 
 ## Coding and Decoding Practice
 
-### Protobuf data analysis example
+### Protobuf Data Analysis Example
 
-#### Rule requirement
+#### Rule Requirement
 
 The device publishes a binary message encoded by Protobuf that needs to be re-published to the topic associated with the "name" field after it has been matched by the rule engine. The format of the topic is "person/${name}".
 
@@ -119,7 +119,7 @@ On the  [Dashboard](http://127.0.0.1:18083/#/schemas/0?oper=create) interface of
 
 After the Schema is created, emqx assigns a Schema ID and Version. If "protobuf_person" is created for the first time, the Schema ID is "protobuf_person:1.0".
 
-#### Create rules
+#### Create Rules
 
 **Write the rule SQL statement using the Schema ID  just created:**
 
@@ -146,7 +146,7 @@ The key point here is `schema_decode('protobuf_person:1.0', payload, 'Person')`:
 
 This action sends the decoded "person" in JSON format to the topic of `person/${person.name}`. Where `${person.name}` is a variable placeholder that will be replaced at runtime with the value of the "name" field in the message content.
 
-#### Device-side code
+#### Device-Side Code
 
 Once the rules are created,  the data can be simulated and tested.
 
@@ -164,7 +164,7 @@ def publish_msg(client):
     client.publish(topic, payload=message, qos=0, retain=False)
 ```
 
-#### Check rule execution result
+#### Check Rule Execution Result
 
 1) In Dashboard's [Websocket](http://127.0.0.1:18083/#/websocket) tool, log in to an MQTT Client and subscribe to "person/#".
 
@@ -188,9 +188,9 @@ t/1 b'\n\x05Shawn\x10\x01\x1a\rliuxy@emqx.io'
 
 
 
-### Avro data analysis example
+### Avro Data Analysis Example
 
-#### Rule requirement
+#### Rule Requirement
 
 The device publishes a binary message encoded by Avro  that needs to be republished to the topic associated with the "name" field after it has been matched by the rule engine. The format of the topic is "avro_user/${name}".
 
@@ -219,7 +219,7 @@ On the  [Dashboard](http://127.0.0.1:18083/#/schemas/0?oper=create) interface of
 
 After the Schema is created, emqx assigns a Schema ID and Version. If  "avro_user" is created for the first time, the Schema ID is "avro_user:1.0".
 
-#### Create rule
+#### Create Rule
 
 **Write the rule SQL statement using the Schema ID just created:**
 
@@ -245,7 +245,7 @@ The key point here is `schema_decode('avro_user:1.0', payload)`:
 
 This action sends the decoded "user" in JSON format to the topic of `avro_user/${avro_user.name}`. Where `${avro_user.name}` ` is a variable placeholder that will be replaced at runtime with the value of the "name" field in the message content.
 
-#### Device-side code
+#### Device-Side Code
 
 Once the rules are created,  the data can be simulated  and tested.
 
@@ -263,7 +263,7 @@ def publish_msg(client):
     client.publish(topic, payload=message, qos=0, retain=False)
 ```
 
-#### Check rule execution result
+#### Check Rule Execution Result
 
 1) In Dashboard's [Websocket](http://127.0.0.1:18083/#/websocket) tool, log in to an MQTT Client and subscribe to  "avro_user/#".
 
@@ -284,9 +284,9 @@ publish to topic: t/1, payload: b'\nShawn\x00\xb4\n\x00\x06red'
 {"favorite_color":"red","favorite_number":666,"name":"Shawn"}
 ```
 
-### Custom codec example
+### Custom Codec Example
 
-#### Rule requirement
+#### Rule Requirement
 
 The device issues an arbitrary message to verify that the self-deployed codec service works.
 
@@ -304,7 +304,7 @@ Other configurations remain the default. Emqx will assign a Schema ID "my_parser
 
 The fifth codec configuration above is optional,  which is a string, and the content is related to the business of the codec service.
 
-#### Create rules
+#### Create Rules
 
 **Write the rule SQL statement using the Schema ID just created:**
 
@@ -333,7 +333,7 @@ This check will print the results filtered by the SQL statement to the emqx cons
 
 If the service is started with emqx console, the print will be displayed directly in the console; if the service is started with emqx start, the print will be output to the erlang.log.N file in the log directory, where "N" is an integer. For example "erlang.log.1", "erlang.log.2".
 
-#### Codec server code
+#### Codec Server Code
 
 Once the rules are created, the data  can be simulated for testing. So first your own codec service need to be written.
 
@@ -391,7 +391,7 @@ $ python3 http_parser_server.py
  * Running on http://127.0.0.1:9003/ (Press CTRL+C to quit)
 ```
 
-#### Check rule execution result
+#### Check Rule Execution Result
 
 Since this example is relatively simple, we use the MQTT Websocket client directly to simulate a message sent by the device.
 
