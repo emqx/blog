@@ -1,4 +1,4 @@
-## Introduction of Scenario
+## Scenario Introduction
 
 In this scenario, it is required to store the messages that meet the criteria under EMQX in the MySQL database. In order to facilitate subsequent analysis and retrieval, the message content needs to be split for storage.
 
@@ -31,7 +31,7 @@ When the reported data of engine speed value is greater than `8000', the current
 
 ## Preparation
 
-### Create a database
+### Create a Database
 
 Create the `iot_data` database to store the message data, specifying the database encoding as `utf8mb4` to avoid coding problems:
 
@@ -41,7 +41,7 @@ CREATE DATABASE `emqx_rule_engine_output` CHARACTER SET utf8mb4;
 
 
 
-### Create a data table
+### Create a Data Table
 
 According to the scenario requirements, create a data table `use_statistics` with structure and field comments as follows:
 
@@ -80,9 +80,9 @@ mysql> desc use_statistics;
 
 
 
-## Configuration instructions
+## Configuration Instructions
 
-### Create a resource
+### Create a Resource
 
 Open EMQX Dashboard, go to the **Resources** page on the left menu, click the **New** button, type MySQL server information for resource creation.
 
@@ -94,7 +94,7 @@ The network environment of the nodes in the EMQX cluster may be different. After
 
 
 
-### Create a rule
+### Create a Rule
 
 Go to the **Rules** page on the left menu and click the **New** button to create the rule. Select the trigger event **Publishing message** here,  which is triggered when the message is published for data processing.
 
@@ -104,7 +104,7 @@ After selecting the trigger event, we can see the optional fields and sample SQL
 
 
 
-#### Filter the required fields
+#### Filter the Required Fields
 
 The rule engine uses SQL statements to process rule conditions. In this business, we need to select all the fields in `payload` separately, use the `payload.fieldName` format to select, and also need the topic context information of `topic`, `qos`, `id ` , the current SQL is as follows:
 
@@ -121,7 +121,7 @@ WHERE
 
 
 
-#### Establish filtering criteria
+#### Establish Filtering Criteria
 
 Conditional filtering is done by using the SQL statement WHERE clause, in which we need to define two conditions:
 
@@ -145,7 +145,7 @@ WHERE
 
 
 
-#### Output testing is done by using SQL test function
+#### Output Testing via SQL Test Function
 
 With the SQL test function, we can view the current SQL processed data output in real time. This function requires us to specify the simulated raw data such as payload.
 
@@ -192,7 +192,7 @@ The test output is as expected and we can proceed to the next step.
 
 
 
-### Add a response action and store the message to MySQL
+### Add a Response Action and Store the Message to MySQL
 
 After the input and output of SQL condition  is correct, we continue to add the corresponding action, configure to write SQL statement, and store the filtered result in MySQL.
 
@@ -215,7 +215,7 @@ VALUES
 
 ## Test
 
-#### Expected result
+#### Expected Result
 
 We successfully created a rule that contains a processing action, and expected result of the action is as follows:
 
@@ -224,7 +224,7 @@ We successfully created a rule that contains a processing action, and expected r
 
 
 
-#### Test with the Websocket tool in Dashboard
+#### Test With the Websocket Tool in Dashboard
 
 Switch to **tools -> Websocket** page, connect to EMQX with any client, and send the following message to  **message**  card after successful connection:
 

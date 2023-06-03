@@ -10,7 +10,7 @@ The relevant installation package is ready for download from [EMQ website](https
 
 
 
-### Brand-new Dashboard UI
+### Brand-New Dashboard UI
 
 In previous versions of EMQX, EMQ has expanded a series of basic functions around MQTT message access to facilitate the rapid construction of IoT applications, such as authentication/ACL, data persistence and message bridging (Enterprise Edition) and integration into Dashboard. .
 
@@ -27,7 +27,7 @@ In order to support the introduction of more new functions and the  improvement 
 
 
 
-### Hot configuration of parameters is supported by Dashboard
+### Hot configuration of Parameters Supported by Dashboard
 
 Prior to 3.4.0, all modifications to the EMQX main configuration `etc/emqx.conf` required a restart to apply, such as anonymous authentication (allow_anonymous), ACL switches and policies (enable_acl), connection statistics (enable_stats),  that all have a need for non-stop changes.
 
@@ -37,7 +37,7 @@ After evaluation, EMQ lists dozens of configuration items that do not affect sys
 
 
 
-### Cluster management is supported by Dashboard
+### Cluster Management Supported by Dashboard
 
 In this version,  management functions are added for clusters. The visual interface provides invitation and kick-out functions for clusters in manual cluster mode. Cluster parameters are displayed in other automatic cluster modes, which greatly facilitates monitoring  management and the reference configuration of new nodes..
 ![Dashboard.png](https://assets.emqx.com/images/a2be9d0a7ebb7f4e8c22b959f65176a6.png)
@@ -82,7 +82,7 @@ WHERE
 
 Using the Schema Registry combined with the rules engine function, the codec rules are created directly in the rules engine through the decode and encode functions. This process greatly simplifies the integration of message applications.
 
-### Support of the  China National Protocol Agreement JT/T808 for vehicle networking
+### Support of the  China National Protocol Agreement JT/T808 for Vehicle Networking
 
 The new vehicle networking protocol access JT/T808, with full name "JT/T 808-2013 Road Transportation Vehicle Satellite Positioning System Beidou Compatible Vehicle Terminal Communication Protocol Technical Specification", is a industry communication protocol. Through the adaptation of the protocol, EMQ has established a complete industry/private protocol access development mode, which provides a successful template for the subsequent customization development of other protocols.
 
@@ -94,7 +94,7 @@ Schematic diagram of JT/T808 protocol access architecture:
 
 
 
-### New version feature planning
+### Future Planning
 
 In future versions, Dashboard's functions will continue to be enhanced, and the following improvements are planned to be achieved through continuous adjustments and optimizations:
 
