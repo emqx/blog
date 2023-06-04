@@ -83,6 +83,7 @@ Get to know the preferred protocol in IoT from beginner to master.
 ## [MQTT Programming](https://www.emqx.com/en/blog/category/mqtt-programming)
 Best practice of MQTT in various clients.
 
+- [How to Use MQTT on Raspberry Pi with Paho Python Client](https://github.com/emqx/blog/blob/main/en/202306/use-mqtt-with-raspberry-pi.md)
 - [JavaScript MQTT Client: A Beginner's Guide to MQTT.js](https://github.com/emqx/blog/blob/main/en/202305/mqtt-js-tutorial.md)
 - [How to Use MQTT in Node.js](https://github.com/emqx/blog/blob/main/en/202305/how-to-use-mqtt-in-nodejs.md)
 - [How to Use MQTT in Python with Paho Client](https://github.com/emqx/blog/blob/main/en/202305/how-to-use-mqtt-in-python.md)
@@ -104,7 +105,6 @@ Best practice of MQTT in various clients.
 - [How to use MQTT in the Vue project](https://github.com/emqx/blog/blob/main/en/202010/how-to-use-mqtt-in-vue.md)
 - [Comparison of Python MQTT Clients](https://github.com/emqx/blog/blob/main/en/202010/comparision-of-python-mqtt-client.md)
 - [How to use MQTT in Golang](https://github.com/emqx/blog/blob/main/en/202009/how-to-use-mqtt-in-golang.md)
-- [Use MQTT with Raspberry Pi](https://github.com/emqx/blog/blob/main/en/202008/use-mqtt-with-raspberry-pi.md)
 - [Using MQTT in The Flutter Project](https://github.com/emqx/blog/blob/main/en/202007/using-mqtt-in-flutter.md)
 - [Connect Android Client to MQTT Broker with Kotlin](https://github.com/emqx/blog/blob/main/en/202006/android-connects-mqtt-using-kotlin.md)
 - [ESP8266 Connects to MQTT Broker with Arduino](https://github.com/emqx/blog/blob/main/en/202005/esp8266-connects-to-the-public-mqtt-broker.md)
