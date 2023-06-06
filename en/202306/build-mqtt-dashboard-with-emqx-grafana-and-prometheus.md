@@ -159,8 +159,8 @@ In the above configuration, the descriptions of some configuration items are as 
 
 - **job_name** The task name of data collection.
 - **targets** The target data collection address list.
-- **cluster** User-defined cluster name, the cluster label of both 'emqx' and 'emqx-exporter' requires consistent to indicate that they belong to a same cluster. The name of different cluster must ensure uniqueness。
-- **from** Used to distinguish the source of metrics data, keep default and do not modify。
+- **cluster** User-defined cluster name, the cluster label of both 'emqx' and 'emqx-exporter' requires consistent to indicate that they belong to a same cluster. The name of different cluster must ensure uniqueness.
+- **from** Used to distinguish the source of metrics data, keep default and do not modify.
 
 We save the above configuration file content as `prometheus.yaml` **in the custom path** where you need to keep the file. At this point, we have completed the configuration of Prometheus.
 
@@ -217,7 +217,7 @@ The specific import steps are as follows:
 
 1. Click `Upload JSON file` and select the dashboard template that was just downloaded.
 2. Click `Import` 
-3. Repeat the steps above to import othter templates.
+3. Repeat the steps above to import other templates.
 
 After importing all templates, you can see monitoring data from EMQX in the `EMQX` dashboard, as shown below:
 
