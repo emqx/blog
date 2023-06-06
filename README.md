@@ -141,6 +141,7 @@ Explore more with & via EMQ.
 ## [EMQX Open Source | Broker](https://www.emqx.com/en/blog/category/emqx)
 EMQX is the world's most scalable open-source MQTT broker with a high performance that connects 100M+ IoT devices in 1 cluster, while maintaining 1M message per second throughput and sub-millisecond latency.
 
+- [Enabling MQTT over QUIC on Kubernetes With EMQX 5.0](https://github.com/emqx/blog/blob/main/en/202306/enabling-mqtt-over-quic-on-kubernetes-with-emqx-5-0.md)
 - [EMQX MQTT Broker Troubleshooting: Connection Issues](https://github.com/emqx/blog/blob/main/en/202305/emqx-mqtt-broker-connection-troubleshooting.md)
 - [EMQX ECP Empowers IoT Edge Computing with NanoMQ Integration](https://github.com/emqx/blog/blob/main/en/202305/emqx-ecp-empowers-iot-edge-computing-with-nanomq-integration.md)
 - [EMQX MQTT Broker Deployment Troubleshooting: Ensuring a Smooth Start](https://github.com/emqx/blog/blob/main/en/202305/emqx-mqtt-broker-deployment-troubleshooting-ensuring-a-smooth-start.md)
@@ -219,6 +220,7 @@ EMQX is the world's most scalable open-source MQTT broker with a high performanc
 ## [EMQX Cloud](https://www.emqx.com/en/blog/category/cloud)
 The easiest way to start MQTT service. Connect your IoT devices to any cloud without the burden of maintaining infrastructure.
 
+- [Seamlessly Integrating EMQX Cloud with the New Timescale Service](https://github.com/emqx/blog/blob/main/en/202306/seamlessly-integrating-emqx-cloud-with-the-new-timescale-service.md)
 - [Google Cloud IoT Core is Shutting Down: How to Migrate](https://github.com/emqx/blog/blob/main/en/202306/why-emqx-is-your-best-google-cloud-iot-core-alternative.md)
 - [Connecting to Serverless MQTT Broker with Paho Python](https://github.com/emqx/blog/blob/main/en/202305/connecting-to-serverless-mqtt-broker-with-paho-python.md)
 - [How to Get a Forever Free Serverless MQTT Service](https://github.com/emqx/blog/blob/main/en/202305/how-to-get-a-forever-free-serverless-mqtt-service.md)
