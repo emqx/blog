@@ -83,6 +83,7 @@ Get to know the preferred protocol in IoT from beginner to master.
 ## [MQTT Programming](https://www.emqx.com/en/blog/category/mqtt-programming)
 Best practice of MQTT in various clients.
 
+- [Connecting to Serverless MQTT Broker with MQTTNet in C#](https://github.com/emqx/blog/blob/main/en/202306/connecting-to-serverless-mqtt-broker-with-mqttnet-in-csharp.md)
 - [How to Use MQTT on Raspberry Pi with Paho Python Client](https://github.com/emqx/blog/blob/main/en/202306/use-mqtt-with-raspberry-pi.md)
 - [JavaScript MQTT Client: A Beginner's Guide to MQTT.js](https://github.com/emqx/blog/blob/main/en/202305/mqtt-js-tutorial.md)
 - [How to Use MQTT in Node.js](https://github.com/emqx/blog/blob/main/en/202305/how-to-use-mqtt-in-nodejs.md)
@@ -126,6 +127,7 @@ Best practice of MQTT in various clients.
 ## [MQTT Integration (Eco & Integration)](https://www.emqx.com/en/blog/category/eco-and-integration)
 Explore more with & via EMQ.
 
+- [Build MQTT Dashboard with EMQX, Grafana and Prometheus](https://github.com/emqx/blog/blob/main/en/202306/build-mqtt-dashboard-with-emqx-grafana-and-prometheus.md)
 - [Natural Interactions in IoT: Combining MQTT and ChatGPT](https://github.com/emqx/blog/blob/main/en/202305/natural-interactions-in-iot-combining-mqtt-and-chatgpt.md)
 - [Monitoring MQTT broker with Prometheus and Grafana](https://github.com/emqx/blog/blob/main/en/202212/emqx-prometheus-grafana.md)
 - [Getting Data from EMQX Cloud with InfluxDB Native Collector](https://github.com/emqx/blog/blob/main/en/202208/getting-data-from-emqx-cloud-with-influxdb-native-collector.md)
@@ -156,7 +158,6 @@ EMQX is the world's most scalable open-source MQTT broker with a high performanc
 - [New IoT Data Integration: Flow Editor & Bidirectional Data Bridging](https://github.com/emqx/blog/blob/main/en/202209/iot-data-integration.md)
 - [Connecting CoAP Devices to EMQX](https://github.com/emqx/blog/blob/main/en/202209/connecting-coap-devices-to-emqx.md)
 - [Highly Reliable MQTT Data Persistence Based on RocksDB](https://github.com/emqx/blog/blob/main/en/202209/mqtt-persistence-based-on-rocksdb.md)
-- [Why EMQX Is Your Best Google Cloud IoT Core Alternative](https://github.com/emqx/blog/blob/main/en/202208/why-emqx-is-your-best-google-cloud-iot-core-alternative.md)
 - [MQTT over QUIC: Next-Generation IoT Standard Protocol](https://github.com/emqx/blog/blob/main/en/202208/mqtt-over-quic.md)
 - [EMQX 5.0 Released, 2 New Database Integrations for EMQX Cloud  | EMQX Newsletter 202207](https://github.com/emqx/blog/blob/main/en/202208/emqx-newsletter-202207.md)
 - [How EMQX under the new architecture of Mria + RLOG achieves 100M MQTT connections](https://github.com/emqx/blog/blob/main/en/202208/how-emqx-5-0-achieves-100-million-mqtt-connections.md)
@@ -218,6 +219,7 @@ EMQX is the world's most scalable open-source MQTT broker with a high performanc
 ## [EMQX Cloud](https://www.emqx.com/en/blog/category/cloud)
 The easiest way to start MQTT service. Connect your IoT devices to any cloud without the burden of maintaining infrastructure.
 
+- [Google Cloud IoT Core is Shutting Down: How to Migrate](https://github.com/emqx/blog/blob/main/en/202306/why-emqx-is-your-best-google-cloud-iot-core-alternative.md)
 - [Connecting to Serverless MQTT Broker with Paho Python](https://github.com/emqx/blog/blob/main/en/202305/connecting-to-serverless-mqtt-broker-with-paho-python.md)
 - [How to Get a Forever Free Serverless MQTT Service](https://github.com/emqx/blog/blob/main/en/202305/how-to-get-a-forever-free-serverless-mqtt-service.md)
 - [Expanding Observability: Enhanced MQTT Monitor Metrics in EMQX Cloud's Latest Release](https://github.com/emqx/blog/blob/main/en/202305/enhanced-mqtt-monitor-metrics-in-emqx-cloud-s-latest-release.md)
@@ -253,7 +255,6 @@ The easiest way to start MQTT service. Connect your IoT devices to any cloud wit
 - [Get Started with EMQX Cloud on the AWS Marketplace with pay as you go](https://github.com/emqx/blog/blob/main/en/202210/get-started-with-emqx-cloud-on-the-aws-marketplace-with-pay-as-you-go.md)
 - [Bridge MQTT Data from EMQX Cloud to Confluent Cloud on GCP](https://github.com/emqx/blog/blob/main/en/202209/bridge-mqtt-data-from-emqx-cloud-to-confluent-cloud-on-gcp.md)
 - [Getting Data from EMQX Cloud with InfluxDB Native Collector](https://github.com/emqx/blog/blob/main/en/202208/getting-data-from-emqx-cloud-with-influxdb-native-collector.md)
-- [Why EMQX Is Your Best Google Cloud IoT Core Alternative](https://github.com/emqx/blog/blob/main/en/202208/why-emqx-is-your-best-google-cloud-iot-core-alternative.md)
 - [EMQX Cloud update: Data integration support HStreamDB and Tablestore](https://github.com/emqx/blog/blob/main/en/202208/data-integration-support-hstreamdb-and-tablestore.md)
 - [EMQX Cloud Update: More Parameters Added to Log Analysis for Better Monitoring and Operations](https://github.com/emqx/blog/blob/main/en/202207/more-parameters-added-to-log-analysis.md)
 - [EMQX Cloud update: Another two external Auth&ACL methods - Redis and JWT](https://github.com/emqx/blog/blob/main/en/202207/emqx-cloud-redis-and-jwt-authentication-authorization.md)
@@ -284,6 +285,8 @@ The easiest way to start MQTT service. Connect your IoT devices to any cloud wit
 ## [EMQX Enterprise](https://www.emqx.com/en/blog/category/enterprise)
 The world's most scalable and reliable MQTT messaging platform to connect, move and process your data in business-critical scenarios for the IoT era.
 
+- [Build MQTT Dashboard with EMQX, Grafana and Prometheus](https://github.com/emqx/blog/blob/main/en/202306/build-mqtt-dashboard-with-emqx-grafana-and-prometheus.md)
+- [Google Cloud IoT Core is Shutting Down: How to Migrate](https://github.com/emqx/blog/blob/main/en/202306/why-emqx-is-your-best-google-cloud-iot-core-alternative.md)
 - [EMQX MQTT Broker Troubleshooting: Connection Issues](https://github.com/emqx/blog/blob/main/en/202305/emqx-mqtt-broker-connection-troubleshooting.md)
 - [One-Click Deploying EMQX MQTT Broker on AWS Using Terraform](https://github.com/emqx/blog/blob/main/en/202305/one-click-deploying-emqx-mqtt-broker-on-aws-using-terraform.md)
 - [One-Click Deploying EMQX MQTT Broker on Azure Using Terraform](https://github.com/emqx/blog/blob/main/en/202305/one-click-deploying-emqx-mqtt-broker-on-azure-using-terraform.md)
