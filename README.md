@@ -314,6 +314,7 @@ The world's most scalable and reliable MQTT messaging platform to connect, move 
 ## [Internet of Vehicles | Connected Cars](https://www.emqx.com/en/blog/category/internet-of-vehicles)
 Build a reliable, efficient and industry-specific Internet of Vehicles platform based on EMQ's practical experience, from theoretical knowledge such as protocol selection to practical operations like platform architecture design.
 
+- [Data Stream Processing for Software-Defined Vehicle](https://github.com/emqx/blog/blob/main/en/202306/data-stream-processing-for-software-defined-vehicle.md)
 - [What Is V2X and The Future of Vehicle to Everything Connectivity](https://github.com/emqx/blog/blob/main/en/202306/what-is-v2x-and-the-future-of-vehicle-to-everything-connectivity.md)
 - [CAN Bus: How It Works, Pros and Cons, and Fast Local Processing Tutorial](https://github.com/emqx/blog/blob/main/en/202305/can-bus-how-it-works-pros-and-cons.md)
 - [QUIC Protocol: the Features, Use Cases and Impact for IoT/IoV](https://github.com/emqx/blog/blob/main/en/202304/quic-protocol-the-features-use-cases-and-impact-for-iot-iov.md)
