@@ -29,6 +29,8 @@ Here are some of the main reasons MQTT brokers are important:
 
 The MQTT broker architecture is based on the [publish-subscribe messaging pattern](https://www.emqx.com/en/blog/mqtt-5-introduction-to-publish-subscribe-model), which decouples message producers (publishers) from message consumers (subscribers). This architecture includes three primary components: clients, topics, and the broker.
 
+![MQTT Broker Architecture](https://assets.emqx.com/images/cf73c3b847af7b4743993c87f82942e1.png)
+
 - **MQTT Broker Server**
 
   The MQTT broker is a server that receives messages from publishers and delivers them to subscribers based on their topic subscriptions. It manages client connections, handles subscriptions and unsubscriptions, and ensures message delivery according to the specified [Quality of Service (QoS) levels](https://www.emqx.com/en/blog/introduction-to-mqtt-qos).

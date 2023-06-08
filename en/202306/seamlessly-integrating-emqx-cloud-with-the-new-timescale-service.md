@@ -4,9 +4,9 @@ The need for efficient and scalable database solutions has become paramount in a
 
 This blog will explore how [EMQX Cloud](https://www.emqx.com/en/cloud), a leading MQTT cloud service, integrates seamlessly with the new Timescale service, providing a powerful and comprehensive solution for managing time series data.
 
-## Timescale Cloud: A Shift in Focus 
+## Timescale: A Shift in Focus 
 
-Timescale has been recognized for its database expertise, particularly with its open-source PostgreSQL extension, TimescaleDB. However, with their recent transformation, Timescale has emerged as a cloud company, placing their cloud product, formerly known as Timescale, at the forefront of their offering. By embracing the cloud-first approach, Timescale aims to empower businesses with a scalable, reliable, and flexible infrastructure for managing their data.
+Timescale has been recognized for its database expertise, particularly with its open-source PostgreSQL extension, TimescaleDB. However, with their recent transformation, Timescale has emerged as a cloud company, placing their cloud product, formerly known as Timescale Cloud, at the forefront of their offering. By embracing the cloud-first approach, Timescale aims to empower businesses with a scalable, reliable, and flexible infrastructure for managing their data.
 
 ![Timescale Cloud](https://assets.emqx.com/images/1b015a07295112f8886c1a7df0034639.png)
 
@@ -29,7 +29,7 @@ Now let's see how to get data from EMQX Cloud to the new Timescale service.
 
 ### Step1: Create a Timescale Service
 
-Login to the Timescale and click go to Create a Service page, select a Region and then click `Create service` button:
+Login to the Timescale and click Create a Service page, select a Region and then click `Create service` button:
 
 ![Create a Timescale Service](https://assets.emqx.com/images/68bf60006f981389c4fa017feddb826c.png)
 
@@ -121,7 +121,7 @@ FROM
 "temp_hum/emqx"
 ```
 
-And you can also test your SQL to see if anything is incorrect.
+You can also test your SQL to see if anything is incorrect.
 
 Then we create an 'Action' with the following script:
 
@@ -129,13 +129,13 @@ Then we create an 'Action' with the following script:
 INSERT INTO temp_hum(up_timestamp, client_id, temp, hum) VALUES (to_timestamp(${up_timestamp}), ${client_id}, ${temp}, ${hum})
 ```
 
-This defines how we insert data into the Timescale database;  Now Click on the ""“NEXT""“ button to finish creating the Rule. 
+This defines how we insert data into the Timescale database;  Now Click on the "NEXT" button to finish creating the Rule. 
 
 #### **View Rules Details**
 
 ![View Rules Details](https://assets.emqx.com/images/5006d91a4ce77c8bbd0f0d0d5c5f7e6d.png)
 
-Now, you can see a rule of Timescale data integration created and defines how to insert data from the MQTT topic `temp_hum/emqx` into your Timescalse database.
+Now, you can see a rule of Timescale data integration that defines how to insert data from the MQTT topic `temp_hum/emqx` into your Timescalse database.
 
 ### Step5: Verify Your Integration
 

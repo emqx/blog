@@ -39,6 +39,7 @@ Get to know the preferred protocol in IoT from beginner to master.
 
 ## [MQTT Broker](https://www.emqx.com/en/blog/category/mqtt-broker)
 
+- [NanoMQ: The Multi-threaded Alternative to Mosquitto for IoT Edge](https://github.com/emqx/blog/blob/main/en/202306/nanomq-the-multi-threaded-alternative-to-mosquitto-for-iot-edge.md)
 - [Connecting to Serverless MQTT Broker in Node.js](https://github.com/emqx/blog/blob/main/en/202305/connecting-to-serverless-mqtt-broker-in-nodejs.md)
 - [EMQX MQTT Broker Troubleshooting: Connection Issues](https://github.com/emqx/blog/blob/main/en/202305/emqx-mqtt-broker-connection-troubleshooting.md)
 - [Exploring the Basics of EMQX MQTT Broker Clustering: An Introduction](https://github.com/emqx/blog/blob/main/en/202305/mqtt-broker-clustering.md)
@@ -384,6 +385,7 @@ IoT edge industrial protocol gateway software, which supports one-stop access to
 ## [NanoMQ - Lightweight MQTT broker for IoT Edge](https://www.emqx.com/en/blog/category/nanomq)
 NanoMQ is an MQTT messaging broker + multi-protocol message bus for edge computing. It supports the MQTT protocol and other commonly-used edge bus protocols such as ZeroMQ and Nanomsg, and integrates broker and brokerless message modes to facilitate the creation of one-stop edge data bus applications.
 
+- [NanoMQ: The Multi-threaded Alternative to Mosquitto for IoT Edge](https://github.com/emqx/blog/blob/main/en/202306/nanomq-the-multi-threaded-alternative-to-mosquitto-for-iot-edge.md)
 - [EMQX ECP Empowers IoT Edge Computing with NanoMQ Integration](https://github.com/emqx/blog/blob/main/en/202305/emqx-ecp-empowers-iot-edge-computing-with-nanomq-integration.md)
 - [Mosquitto vs NanoMQ | 2023 MQTT Broker Comparison](https://github.com/emqx/blog/blob/main/en/202304/mosquitto-vs-nanomq-2023-mqtt-broker-comparison.md)
 - [Bridge connection status monitoring added, log system reconstruction | NanoMQ Newsletter 202209](https://github.com/emqx/blog/blob/main/en/202210/nanomq-newsletter-202209.md)
