@@ -115,6 +115,7 @@ Best practice of MQTT in various clients.
 
 ## [MQTT Security](https://www.emqx.com/en/blog/category/security)
 
+- [Leveraging Enhanced Authentication for MQTT Security](https://github.com/emqx/blog/blob/main/en/202306/leveraging-enhanced-authentication-for-mqtt-security.md)
 - [7 Essential Things to Know about MQTT Security 2023](https://github.com/emqx/blog/blob/main/en/202303/essential-things-to-know-about-mqtt-security.md)
 - [Securing MQTT with Username & Password Authentication](https://github.com/emqx/blog/blob/main/en/202303/securing-mqtt-with-username-and-password-authentication.md)
 - [Understanding MQTT Security: A Comprehensive Overview](https://github.com/emqx/blog/blob/main/en/202303/understanding-mqtt-security-a-comprehensive-overview.md)

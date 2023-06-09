@@ -76,6 +76,8 @@ Another significant cause of multi-core trending is the semiconductor process hi
 
 ![The single-thread performance is flattening out](https://assets.emqx.com/images/5eea878de15d33a729f85aefeb3faef5.png)
 
+<p style="text-align: center">Plot by Karl Rupp from his <a href="https://github.com/karlrupp/microprocessor-trend-data">microprocessor trend data</a> (CC BY 4.0 license)</p>
+
 As we can see from the chart, the single-thread performance is flattening out. Single-core frequency is struggling over the past two decades. The situation is even worse in edge due to power efficiency and heating problem. But there is only one metric that keeps advancing: the number of cores. 
 
 The idea is that using multiple parallel cores at a lower frequency can achieve the same computational performance as a single core at a higher frequency. The difference, of course, is that multi-core architectures can achieve lower power consumption for the same performance. But the cost of optimism is rising.
