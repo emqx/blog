@@ -9,10 +9,10 @@ In this series of articles, we will explain the key aspects of MQTT security and
 
 The series will include:
 
-- [Understanding MQTT Security: A Comprehensive Overview](https://www.emqx.com/en/blog/understanding-mqtt-security-a-comprehensive-overview)
+- **[Understanding MQTT Security: A Comprehensive Overview](https://www.emqx.com/en/blog/understanding-mqtt-security-a-comprehensive-overview)**
 - **Authentication**
-  - [Password-based authentication](https://www.emqx.com/en/blog/securing-mqtt-with-username-and-password-authentication): Describes password-based authentication in MQTT. How it works and what security risks it solves.
-  - **Enhanced Authentication using SCRAM**: Describes SCRAM (Salted Challenge Response Authentication Mechanism) to avoid sending username/password credentials in plain text.
+  - **[Password-based authentication](https://www.emqx.com/en/blog/securing-mqtt-with-username-and-password-authentication)**: Describes password-based authentication in MQTT. How it works and what security risks it solves.
+  - **[Enhanced Authentication using SCRAM](https://www.emqx.com/en/blog/leveraging-enhanced-authentication-for-mqtt-security)**: Describes SCRAM (Salted Challenge Response Authentication Mechanism) to avoid sending username/password credentials in plain text.
   - **Additional Authentication Methods**: Additional authentication methods such as JWT tokens, HTTP hooks and more.
 - **Authorization**: What is authorization and how is it different from authentication? What is ACL and what can we achieve with it?
 - **Flow Control**: Describes different control flow properties.
