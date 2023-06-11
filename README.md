@@ -84,6 +84,7 @@ Get to know the preferred protocol in IoT from beginner to master.
 ## [MQTT Programming](https://www.emqx.com/en/blog/category/mqtt-programming)
 Best practice of MQTT in various clients.
 
+- [MQTT on ESP32: A Beginner's Guide](https://github.com/emqx/blog/blob/main/en/202306/esp32-connects-to-the-free-public-mqtt-broker.md)
 - [Connecting to Serverless MQTT Broker with MQTTNet in C#](https://github.com/emqx/blog/blob/main/en/202306/connecting-to-serverless-mqtt-broker-with-mqttnet-in-csharp.md)
 - [How to Use MQTT on Raspberry Pi with Paho Python Client](https://github.com/emqx/blog/blob/main/en/202306/use-mqtt-with-raspberry-pi.md)
 - [JavaScript MQTT Client: A Beginner's Guide to MQTT.js](https://github.com/emqx/blog/blob/main/en/202305/mqtt-js-tutorial.md)
@@ -96,7 +97,6 @@ Best practice of MQTT in various clients.
 - [How to Use MQTT in Java](https://github.com/emqx/blog/blob/main/en/202208/how-to-use-mqtt-in-java.md)
 - [How to Use MQTT in The React Native Project](https://github.com/emqx/blog/blob/main/en/202206/how-to-use-mqtt-in-react-native.md)
 - [How to use MQTT in Flask](https://github.com/emqx/blog/blob/main/en/202205/how-to-use-mqtt-in-flask.md)
-- [ESP32 Connects to The Free Public MQTT Broker](https://github.com/emqx/blog/blob/main/en/202108/esp32-connects-to-the-free-public-mqtt-broker.md)
 - [How to use MQTT in PHP](https://github.com/emqx/blog/blob/main/en/202108/how-to-use-mqtt-in-php.md)
 - [Python MQTT Asynchronous Framework - HBMQTT](https://github.com/emqx/blog/blob/main/en/202104/python-async-mqtt-client-hbmqtt.md)
 - [Remote control LED with ESP8266 and MQTT](https://github.com/emqx/blog/blob/main/en/202103/esp8266_mqtt_led.md)
