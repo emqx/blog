@@ -84,6 +84,7 @@ Get to know the preferred protocol in IoT from beginner to master.
 ## [MQTT Programming](https://www.emqx.com/en/blog/category/mqtt-programming)
 Best practice of MQTT in various clients.
 
+- [A Quickstart Guide to Using MQTT over WebSocket](https://github.com/emqx/blog/blob/main/en/202306/connect-to-mqtt-broker-with-websocket.md)
 - [MQTT on ESP32: A Beginner's Guide](https://github.com/emqx/blog/blob/main/en/202306/esp32-connects-to-the-free-public-mqtt-broker.md)
 - [Connecting to Serverless MQTT Broker with MQTTNet in C#](https://github.com/emqx/blog/blob/main/en/202306/connecting-to-serverless-mqtt-broker-with-mqttnet-in-csharp.md)
 - [How to Use MQTT on Raspberry Pi with Paho Python Client](https://github.com/emqx/blog/blob/main/en/202306/use-mqtt-with-raspberry-pi.md)
@@ -102,7 +103,6 @@ Best practice of MQTT in various clients.
 - [Remote control LED with ESP8266 and MQTT](https://github.com/emqx/blog/blob/main/en/202103/esp8266_mqtt_led.md)
 - [How to use MQTT in Rust](https://github.com/emqx/blog/blob/main/en/202011/how-to-use-mqtt-in-rust.md)
 - [How to use MQTT in the React project](https://github.com/emqx/blog/blob/main/en/202011/how-to-use-mqtt-in-react.md)
-- [Connect to MQTT broker with Websocket](https://github.com/emqx/blog/blob/main/en/202011/connect-to-mqtt-broker-with-websocket.md)
 - [How to use MQTT in the Electron project](https://github.com/emqx/blog/blob/main/en/202010/how-to-use-mqtt-in-electron.md)
 - [How to use MQTT in the Vue project](https://github.com/emqx/blog/blob/main/en/202010/how-to-use-mqtt-in-vue.md)
 - [Comparison of Python MQTT Clients](https://github.com/emqx/blog/blob/main/en/202010/comparision-of-python-mqtt-client.md)
