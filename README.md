@@ -143,6 +143,7 @@ Explore more with & via EMQ.
 ## [EMQX Open Source | Broker](https://www.emqx.com/en/blog/category/emqx)
 EMQX is the world's most scalable open-source MQTT broker with a high performance that connects 100M+ IoT devices in 1 cluster, while maintaining 1M message per second throughput and sub-millisecond latency.
 
+- [MQTT Stream Processing with EMQX and eKuiper: A Quick Tutorial](https://github.com/emqx/blog/blob/main/en/202306/mqtt-stream-processing-with-emqx-and-ekuiper.md)
 - [Enabling MQTT over QUIC on Kubernetes With EMQX 5.0](https://github.com/emqx/blog/blob/main/en/202306/enabling-mqtt-over-quic-on-kubernetes-with-emqx-5-0.md)
 - [EMQX MQTT Broker Troubleshooting: Connection Issues](https://github.com/emqx/blog/blob/main/en/202305/emqx-mqtt-broker-connection-troubleshooting.md)
 - [EMQX ECP Empowers IoT Edge Computing with NanoMQ Integration](https://github.com/emqx/blog/blob/main/en/202305/emqx-ecp-empowers-iot-edge-computing-with-nanomq-integration.md)
@@ -399,6 +400,7 @@ NanoMQ is an MQTT messaging broker + multi-protocol message bus for edge computi
 ## [eKuiper](https://www.emqx.com/en/blog/category/kuiper)
 eKuiper is an edge lightweight IoT data analytics / streaming software implemented by Golang, and it can be run at all kinds of resource constrained edge devices.
 
+- [MQTT Stream Processing with EMQX and eKuiper: A Quick Tutorial](https://github.com/emqx/blog/blob/main/en/202306/mqtt-stream-processing-with-emqx-and-ekuiper.md)
 - [Bridging Demanded Signals From CAN Bus to MQTT by eKuiper](https://github.com/emqx/blog/blob/main/en/202306/bridging-demanded-signals-from-can-bus-to-mqtt-by-ekuiper.md)
 - [Support Python Virtual Environment ｜eKuiper Newsletter 202302](https://github.com/emqx/blog/blob/main/en/202303/ekuiper-newsletter-202302.md)
 - [eKuiper 1.8.0 Released: Real-time AI Inference on Image/Video Streaming with Zero Coding](https://github.com/emqx/blog/blob/main/en/202302/ekuiper-v-1-8-0-release-notes.md)
