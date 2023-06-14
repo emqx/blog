@@ -13,7 +13,7 @@ The series will include:
 - **Authentication**
   - **[Password-based authentication](https://www.emqx.com/en/blog/securing-mqtt-with-username-and-password-authentication)**: Describes password-based authentication in MQTT. How it works and what security risks it solves.
   - **[Enhanced Authentication using SCRAM](https://www.emqx.com/en/blog/leveraging-enhanced-authentication-for-mqtt-security)**: Describes SCRAM (Salted Challenge Response Authentication Mechanism) to avoid sending username/password credentials in plain text.
-  - **Additional Authentication Methods**: Additional authentication methods such as JWT tokens, HTTP hooks and more.
+  - **[Additional Authentication Methods](https://www.emqx.com/en/blog/a-deep-dive-into-token-based-authentication-and-oauth-2-0-in-mqtt)**: Additional authentication methods such as JWT tokens, HTTP hooks and more.
 - **Authorization**: What is authorization and how is it different from authentication? What is ACL and what can we achieve with it?
 - **Flow Control**: Describes different control flow properties.
 - **TLS/SSL**: The difference between one-way and two-way TLS. What is PSK and how to use new secure cipher suites.
