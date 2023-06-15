@@ -336,6 +336,7 @@ Build a reliable, efficient and industry-specific Internet of Vehicles platform 
 
 ## [Industrial IoT | Unified Namespace | Sparkplug](https://www.emqx.com/en/blog/category/industrial-iot)
 
+- [MQTT Sparkplug Solution for Industrial IoT Using EMQX & Neuron](https://github.com/emqx/blog/blob/main/en/202306/mqtt-sparkplug-solution-for-industrial-iot-using-emqx-and-neuron.md)
 - [A Comparison of IIoT Protocols: MQTT Sparkplug vs OPC-UA](https://github.com/emqx/blog/blob/main/en/202305/a-comparison-of-iiot-protocols-mqtt-sparkplug-vs-opc-ua.md)
 - [Top 3 Open Source MQTT Brokers for Industrial IoT in 2023](https://github.com/emqx/blog/blob/main/en/202305/top-3-open-source-mqtt-brokers-for-industrial-iot-in-2023.md)
 - [Neuron v1.3.0 is officially released with one-stop access to industrial data](https://github.com/emqx/blog/blob/main/en/202108/neuron-1-3-0-release-notes.md)
@@ -369,6 +370,7 @@ MQTTX is a Fully Open-source MQTT 5.0 cross-platform Desktop Client, makes it ea
 ## [Neuron - IIoT Connectivity Server](https://www.emqx.com/en/blog/category/neuron)
 IoT edge industrial protocol gateway software, which supports one-stop access to dozens of industrial protocols and converts them into MQTT protocol to access the cloud industrial IoT platform. It just requires ultra-low resource consumption, and supports three major architectures of X86, ARM, and MIPS.
 
+- [MQTT Sparkplug Solution for Industrial IoT Using EMQX & Neuron](https://github.com/emqx/blog/blob/main/en/202306/mqtt-sparkplug-solution-for-industrial-iot-using-emqx-and-neuron.md)
 - [Enhanced MQTT Plugin with Custom Write Topic Support in Neuron 2.4.5 Release](https://github.com/emqx/blog/blob/main/en/202305/enhanced-mqtt-plugin-with-custom-write-topic-support-in-neuron-2-4-5-release.md)
 - [Experience Neuron Industrial IoT Gateway Software for Free with Time-Unlimited Trial License](https://github.com/emqx/blog/blob/main/en/202305/experience-neuron-industrial-iot-gateway-software-for-free-with-time-unlimited-trial-license.md)
 - [Neuron v 2.4.4 Released: Modbus RTU/TCP Driver Goes Open Source](https://github.com/emqx/blog/blob/main/en/202304/neuron-v-2-4-4-release-notes.md)
