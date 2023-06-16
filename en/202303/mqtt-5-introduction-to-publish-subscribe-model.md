@@ -1,4 +1,4 @@
-## MQTT Publish-subscribe Pattern
+## MQTT Publish-Subscribe Pattern
 
 The Publish-subscribe pattern is a messaging pattern that decouples the clients that send messages (publishers) from the clients that receive messages (subscribers) by allowing them to communicate without having direct connections or knowledge of each other's existence.
 
@@ -30,7 +30,7 @@ The MQTT Publish-Subscribe pattern has four main components: Publisher, Subscrib
 
 <center>MQTT Publish-subscribe Architecture</center>
 
-## Message Routing in MQTT Publish-subscribe
+## Message Routing in MQTT Publish-Subscribe
 
 In the MQTT publish-subscribe pattern, a client can function as a publisher, a subscriber, or both. When a client publishes a message, it sends it to the broker, which then routes the message to all subscribed clients on that topic. If a client subscribes to a topic, it will receive all the messages that the broker forwards for that topic.
 

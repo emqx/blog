@@ -8,7 +8,7 @@ This buffer layer, named `replayq`, makes EMQX data integrations more resilient 
 
 In this post, we will first explain why this buffer is needed, then we will take the Kafka integration as an example, to introduce the high-level design, then drill down for more details to understand better how `replayq` works.
 
-## Why do we need a buffer?
+## Why Do We Need a Buffer?
 
 In each EMQX node, Kafka producer is a pool of workers, one for each Kafka partition. As illustrated below, for a Kafka topic having `M` partitions, there will be a pool of `M` workers running in each EMQX node.
 
@@ -34,13 +34,13 @@ And this is when we’d start to wish that EMQX could smooth out the spikes and 
 
 We may consider the producer workers as queues. Having the 'queue' concept in mind will help to understand the rest of this document.
 
-## What’s ReplayQ
+## What is ReplayQ
 
 `replayq` is a queue library originally used in EMQX Kafka, and later made into a generic solution. It offers a generic queueing mechanism for queueing messages in RAM or on disk depending on how it is configured.
 
 The name ‘replay’ comes from its ability to buffer the messages in disk, and potentially replay old messages.
 
-## **Different buffering mode**
+## **Different Buffering Mode**
 
 For the queues to buffer message, EMQX provided two different buffering modes
 
@@ -49,7 +49,7 @@ For the queues to buffer message, EMQX provided two different buffering modes
 
 The “Memory only” mode is used when the data bridge is not configured with a `replayq` data directory. The buffered messages are volatile in this mode, if the node restarts, all the buffered messages are lost. Compared to no buffer at all, the advantage of having an explicit “Memory only” buffer is its overload protection (which will be discussed later in this post). 
 
-## The disk mode
+## The Disk Mode
 
 To make it easier to understand how disk mode works, let’s zoom in a little, only looking at one specific buffer queue.
 
@@ -107,13 +107,13 @@ In order to detect corruption, queue-elements are written to disk together with 
 
 In case the magic number is not found (at byte 2-5), or the payload checksum does not match, corruption is detected. All the messages starting from the corrupted are discarded (file is truncated).
 
-## Overload protection
+## Overload Protection
 
 Like any other queuing solution, if the incoming rate is higher than the outgoing, it will eventually overflow no matter how great capacity the queue has.
 
 In order to protect EMQX nodes from running out of allocatable RAM or disk space, there are mechanisms to protect the system by discarding the oldest messages.
 
-### Per buffer total bytes limit
+### Per Buffer Total Bytes Limit
 
 For each buffer, there is a configurable limit of total number of bytes allowed to be accumulated. The default is 2GB.
 
@@ -129,7 +129,7 @@ TotalBytesLimit = TotalAllocatableBytes / NumberOfQueues
 
 For example, when planning for a Kafka producer using the disk mode buffering for bridging data to a Kafka topic having `k` partitions, if the total disk space that can be allocated for buffering is `v`, then the capacity for each queue should be `v/k`.
 
-### Drop on high load
+### Drop on High Load
 
 The total bytes limit configuration is a good option to protect the system from consuming too much RAM when running in “Memory Only” mode. Also, a good way to protect it from taking up too much disk space when running in “Disk Mode”. However, the limit is per-Kafka partition, which means it requires some careful calculation and planning. 
 
