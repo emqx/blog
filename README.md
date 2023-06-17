@@ -5,9 +5,11 @@
 ## [MQTT Tutorials](https://www.emqx.com/en/blog/category/mqtt-protocol)
 Get to know the preferred protocol in IoT from beginner to master.
 
+- [An Introduction to Subscription Options in MQTT](https://github.com/emqx/blog/blob/main/en/202306/an-introduction-to-subscription-options-in-mqtt.md)
+- [MQTT Subscription Identifier Explained](https://github.com/emqx/blog/blob/main/en/202306/subscription-identifier-and-subscription-options.md)
 - [MQTT Protocol Explained: The Basics and a Quick Tutorial](https://github.com/emqx/blog/blob/main/en/202305/the-easiest-guide-to-getting-started-with-mqtt.md)
 - [Shaping the Future of IoT: 7 MQTT Technology Trends in 2023](https://github.com/emqx/blog/blob/main/en/202303/7-mqtt-trends-in-2023.md)
-- [Introduction to MQTT Publish-subscribe Pattern](https://github.com/emqx/blog/blob/main/en/202303/mqtt-5-introduction-to-publish-subscribe-model.md)
+- [Introduction to MQTT Publish-Subscribe Pattern](https://github.com/emqx/blog/blob/main/en/202303/mqtt-5-introduction-to-publish-subscribe-model.md)
 - [Introduction to MQTT QoS 0, 1, 2](https://github.com/emqx/blog/blob/main/en/202301/introduction-to-mqtt-qos.md)
 - [MQTT Persistent Session and Clean Session Explained](https://github.com/emqx/blog/blob/main/en/202212/mqtt-session.md)
 - [How to Set Parameters When Establishing an MQTT Connection?](https://github.com/emqx/blog/blob/main/en/202211/how-to-set-parameters-when-establishing-an-mqtt-connection.md)
@@ -25,7 +27,6 @@ Get to know the preferred protocol in IoT from beginner to master.
 - [Introduction to MQTT 5.0](https://github.com/emqx/blog/blob/main/en/202009/introduction-to-mqtt-5.md)
 - [Request Response - MQTT 5.0 new features](https://github.com/emqx/blog/blob/main/en/202009/mqtt5-request-response.md)
 - [Flow control - MQTT 5.0 new features](https://github.com/emqx/blog/blob/main/en/202008/mqtt5-flow-control.md)
-- [Subscription identifier and subscription options - MQTT 5.0 new features](https://github.com/emqx/blog/blob/main/en/202008/subscription-identifier-and-subscription-options.md)
 - [The process of publishing MQTT 5.0 message](https://github.com/emqx/blog/blob/main/en/202004/mqtt5-message-publishing-process.md)
 - [MQTT 5.0 Features of Inflight Window & Message Queue](https://github.com/emqx/blog/blob/main/en/202003/mqtt5-feature-inflight-window-message-queue.md)
 - [Use of MQTT Will Message](https://github.com/emqx/blog/blob/main/en/201912/use-of-mqtt-will-message.md)
@@ -59,7 +60,7 @@ Get to know the preferred protocol in IoT from beginner to master.
 - [Mosquitto vs NanoMQ | 2023 MQTT Broker Comparison](https://github.com/emqx/blog/blob/main/en/202304/mosquitto-vs-nanomq-2023-mqtt-broker-comparison.md)
 - [7 Factors to Consider When Choosing MQTT Broker 2023](https://github.com/emqx/blog/blob/main/en/202304/7-factors-to-consider-when-choosing-mqtt-broker-2023.md)
 - [EMQX vs NanoMQ | 2023 MQTT Broker Comparison](https://github.com/emqx/blog/blob/main/en/202304/emqx-vs-nanomq-2023-mqtt-broker-comparison.md)
-- [EMQX vs Mosquitto | 2023 MQTT Broker Comparison](https://github.com/emqx/blog/blob/main/en/202304/emqx-vs-mosquitto-2023-mqtt-broker-comparison.md)
+- [Mosquitto vs EMQX | 2023 MQTT Broker Comparison](https://github.com/emqx/blog/blob/main/en/202304/emqx-vs-mosquitto-2023-mqtt-broker-comparison.md)
 - [Evaluation for popular online public MQTT broker](https://github.com/emqx/blog/blob/main/en/202111/popular-online-public-mqtt-brokers.md)
 - [Sticky session load balancing - MQTT broker clustering part 2](https://github.com/emqx/blog/blob/main/en/202108/mqtt-broker-clustering-part-2-sticky-session-load-balancing.md)
 - [Load balancing - MQTT broker clustering part 1](https://github.com/emqx/blog/blob/main/en/202108/mqtt-broker-clustering-part-1-load-balancing.md)
@@ -336,6 +337,7 @@ Build a reliable, efficient and industry-specific Internet of Vehicles platform 
 
 ## [Industrial IoT | Unified Namespace | Sparkplug](https://www.emqx.com/en/blog/category/industrial-iot)
 
+- [MQTT Sparkplug Solution for Industrial IoT Using EMQX & Neuron](https://github.com/emqx/blog/blob/main/en/202306/mqtt-sparkplug-solution-for-industrial-iot-using-emqx-and-neuron.md)
 - [A Comparison of IIoT Protocols: MQTT Sparkplug vs OPC-UA](https://github.com/emqx/blog/blob/main/en/202305/a-comparison-of-iiot-protocols-mqtt-sparkplug-vs-opc-ua.md)
 - [Top 3 Open Source MQTT Brokers for Industrial IoT in 2023](https://github.com/emqx/blog/blob/main/en/202305/top-3-open-source-mqtt-brokers-for-industrial-iot-in-2023.md)
 - [Neuron v1.3.0 is officially released with one-stop access to industrial data](https://github.com/emqx/blog/blob/main/en/202108/neuron-1-3-0-release-notes.md)
@@ -369,11 +371,12 @@ MQTTX is a Fully Open-source MQTT 5.0 cross-platform Desktop Client, makes it ea
 ## [Neuron - IIoT Connectivity Server](https://www.emqx.com/en/blog/category/neuron)
 IoT edge industrial protocol gateway software, which supports one-stop access to dozens of industrial protocols and converts them into MQTT protocol to access the cloud industrial IoT platform. It just requires ultra-low resource consumption, and supports three major architectures of X86, ARM, and MIPS.
 
+- [MQTT Sparkplug Solution for Industrial IoT Using EMQX & Neuron](https://github.com/emqx/blog/blob/main/en/202306/mqtt-sparkplug-solution-for-industrial-iot-using-emqx-and-neuron.md)
 - [Enhanced MQTT Plugin with Custom Write Topic Support in Neuron 2.4.5 Release](https://github.com/emqx/blog/blob/main/en/202305/enhanced-mqtt-plugin-with-custom-write-topic-support-in-neuron-2-4-5-release.md)
 - [Experience Neuron Industrial IoT Gateway Software for Free with Time-Unlimited Trial License](https://github.com/emqx/blog/blob/main/en/202305/experience-neuron-industrial-iot-gateway-software-for-free-with-time-unlimited-trial-license.md)
 - [Neuron v 2.4.4 Released: Modbus RTU/TCP Driver Goes Open Source](https://github.com/emqx/blog/blob/main/en/202304/neuron-v-2-4-4-release-notes.md)
 - [Experience Next-Level Industrial IoT Connectivity and Management with Neuron 2.4.0](https://github.com/emqx/blog/blob/main/en/202304/neuron-v-2-4-0-release-notes.md)
-- [Add IEC61850, Profinet driver ｜Neuron Newsletter 202302](https://github.com/emqx/blog/blob/main/en/202303/neuron-newsletter-202302.md)
+- [Add IEC61850, Profinet Driver ｜Neuron Newsletter 202302](https://github.com/emqx/blog/blob/main/en/202303/neuron-newsletter-202302.md)
 - [v2.3 Is Coming Soon with Ethernet/IP Driver | Neuron Newsletter 202211](https://github.com/emqx/blog/blob/main/en/202212/neuron-newsletter-202211.md)
 - [v2.2 released, CNC FANUC and QnA 1E driver are coming | Neuron Newsletter 202209](https://github.com/emqx/blog/blob/main/en/202210/neuron-newsletter-202209.md)
 - [Neuron Newsletter 2022-05｜Added 2 new southing drivers and 1 northing application](https://github.com/emqx/blog/blob/main/en/202206/neuron-newsletter-202205.md)
