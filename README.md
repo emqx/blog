@@ -292,6 +292,7 @@ The easiest way to start MQTT service. Connect your IoT devices to any cloud wit
 ## [EMQX Enterprise](https://www.emqx.com/en/blog/category/enterprise)
 The world's most scalable and reliable MQTT messaging platform to connect, move and process your data in business-critical scenarios for the IoT era.
 
+- [Rebalancing MQTT Connections for a More Balanced EMQX Cluster on Kubernetes](https://github.com/emqx/blog/blob/main/en/202306/rebalancing-mqtt-connections-for-emqx-cluster-on-kubernetes.md)
 - [Build MQTT Dashboard with EMQX, Grafana and Prometheus](https://github.com/emqx/blog/blob/main/en/202306/build-mqtt-dashboard-with-emqx-grafana-and-prometheus.md)
 - [Google Cloud IoT Core is Shutting Down: How to Migrate](https://github.com/emqx/blog/blob/main/en/202306/why-emqx-is-your-best-google-cloud-iot-core-alternative.md)
 - [EMQX MQTT Broker Troubleshooting: Connection Issues](https://github.com/emqx/blog/blob/main/en/202305/emqx-mqtt-broker-connection-troubleshooting.md)
