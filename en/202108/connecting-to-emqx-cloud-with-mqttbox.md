@@ -9,7 +9,7 @@ This article will take [MQTTBox](https://github.com/workswithweb/MQTTBox) as [MQ
 MQTTBox fully supports the following functions:
 
 - Easy to install through Chrome storage that supports Chrome OS, Linux, macOS, and Windows, and support the independent installation of Linux, macOS, and Windows
-- Support MQTT, MQTT over WebSocket, multiple TCP encrypted connections
+- Support MQTT, [MQTT over WebSocket](https://www.emqx.com/en/blog/connect-to-mqtt-broker-with-websocket), multiple TCP encrypted connections
 - Save history of sent messages
 - Copy/paste the messages from history
 - Save subscription message history
