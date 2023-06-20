@@ -8,13 +8,13 @@ MQTTX v1.3.0 download link: https://github.com/emqx/MQTTX/releases/tag/v1.3.0
 
 ## Overview of the new features
 
-- Support MQTT over WebSockets
+- Support [MQTT over WebSocket](https://www.emqx.com/en/blog/connect-to-mqtt-broker-with-websocket)
 
   In this version, WebSocket connection support function is added. In the new connection page, the drop-down box in front of  `Host`  can be used to select the connection protocol, which supports ` mqtt:// `,` ws:// `, if  ` SSL/TLS` authentication connection is used, you need to select `mqtts://`, `wss://`. When the protocol option is `ws` or ` wss`, the connection created is a WebSocket connection.
 
-  **Note:** When the protocol changes, you need to modify the connection port.
+   **Note:** When the protocol changes, you need to modify the connection port.
 
-![2.png](https://assets.emqx.com/images/ac6eefd1e7f676bad67de6aab72d5c83.png)
+   ![2.png](https://assets.emqx.com/images/ac6eefd1e7f676bad67de6aab72d5c83.png)
 
 - The format conversion of Payload is supported
 

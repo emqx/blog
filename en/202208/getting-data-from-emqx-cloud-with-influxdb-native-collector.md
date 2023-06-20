@@ -63,7 +63,7 @@ On the overview page, you will see the instance details. Note the connection add
 
 <center>MQTT Broker Connection Details</center>
 
-Each EMQX Cloud instance creates four listeners for MQTT connections (MQTT, MQTT with TLS, MQTT over WebSocket, and MQTT over WebSocket with TLS). However, InfluxDB Cloud currently only supports the MQTT protocol, so you only need to note the first port.
+Each EMQX Cloud instance creates four listeners for MQTT connections (MQTT, MQTT with TLS, [MQTT over WebSocket](https://www.emqx.com/en/blog/connect-to-mqtt-broker-with-websocket), and MQTT over WebSocket with TLS). However, InfluxDB Cloud currently only supports the MQTT protocol, so you only need to note the first port.
 
 #### Add Credentials for MQTT connection
 

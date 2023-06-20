@@ -81,7 +81,7 @@ Refer to the [EMQX configuration documentation](https://www.emqx.io/docs/en/v4.3
 
 > **Note: Setting Keep Alive for WebSocket connections**
 >
-> EMQX supports client access via WebSockets. When a client initiates a connection using WebSockets, it only needs to set the Keep Alive value in the client connection parameters. Refer to [Connecting to an MQTT Server Using WebSocket](https://www.emqx.com/en/blog/connect-to-mqtt-broker-with-websocket).
+> EMQX supports client access via WebSockets. When a client initiates a connection using WebSockets, it only needs to set the Keep Alive value in the client connection parameters. Refer to [A Quickstart Guide to Using MQTT over WebSocket](https://www.emqx.com/en/blog/connect-to-mqtt-broker-with-websocket).
 
 
 

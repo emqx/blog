@@ -1,6 +1,6 @@
 ## Introduction
 
-MQTT over WebSocket enables real-time and two-way communication between IoT devices and web applications. MQTT WebSocket client tools make it easy for developers to debug the implementation of MQTT and WebSocket protocols in their IoT projects. 
+[MQTT over WebSocket](https://www.emqx.com/en/blog/connect-to-mqtt-broker-with-websocket) enables real-time and two-way communication between IoT devices and web applications. MQTT WebSocket client tools make it easy for developers to debug the implementation of MQTT and WebSocket protocols in their IoT projects. 
 
 ![MQTT over WebSocket](https://assets.emqx.com/images/772cccbb5a614e866fe2307691bec38f.png)
 

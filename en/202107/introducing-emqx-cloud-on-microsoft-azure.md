@@ -13,7 +13,7 @@ EMQX Cloud is a fully managed, cloud-native MQTT service based on the world’s 
 
 ### Connect Any Device
 
-100% MQTT compliant. Supports MQTT v3.1, v3.1.1, and v5.0 as well as other protocols such as MQTT over WebSocket, COAP, LwM2M, MQTT-SN, etc.
+100% MQTT compliant. Supports MQTT v3.1, v3.1.1, and v5.0 as well as other protocols such as [MQTT over WebSocket](https://www.emqx.com/en/blog/connect-to-mqtt-broker-with-websocket), COAP, LwM2M, MQTT-SN, etc.
 
 ### Data Security & Privacy
 
