@@ -5,6 +5,7 @@
 ## [MQTT Tutorials](https://www.emqx.com/en/blog/category/mqtt-protocol)
 Get to know the preferred protocol in IoT from beginner to master.
 
+- [MQTT Reason Code Introduction and Quick Reference](https://github.com/emqx/blog/blob/main/en/202306/mqtt5-new-features-reason-code-and-ack.md)
 - [An Introduction to Subscription Options in MQTT](https://github.com/emqx/blog/blob/main/en/202306/an-introduction-to-subscription-options-in-mqtt.md)
 - [MQTT Subscription Identifier Explained](https://github.com/emqx/blog/blob/main/en/202306/subscription-identifier-and-subscription-options.md)
 - [MQTT Protocol Explained: The Basics and a Quick Tutorial](https://github.com/emqx/blog/blob/main/en/202305/the-easiest-guide-to-getting-started-with-mqtt.md)
@@ -33,9 +34,7 @@ Get to know the preferred protocol in IoT from beginner to master.
 - [Shared subscription - MQTT 5.0 new features](https://github.com/emqx/blog/blob/main/en/201912/introduction-to-mqtt5-protocol-shared-subscription.md)
 - [Clean Start and Session Expiry Interval - MQTT 5.0 new features](https://github.com/emqx/blog/blob/main/en/201912/mqtt5-new-feature-clean-start-and-session-expiry-interval.md)
 - [Payload Format Indicator and Content Type | MQTT 5.0 New Features](https://github.com/emqx/blog/blob/main/en/201909/mqtt5-new-features-payload-format-indicator-and-content-type.md)
-- [Reason Code and ACK | MQTT 5.0 New Features](https://github.com/emqx/blog/blob/main/en/201908/mqtt5-new-features-reason-code-and-ack.md)
 - [Properties and Loads | MQTT 5.0 New Features](https://github.com/emqx/blog/blob/main/en/201908/mqtt5-new-features-properties-and-loads.md)
-- [MQTT and  Kafka](https://github.com/emqx/blog/blob/main/en/201908/mqtt-and-kafka.md)
 
 
 ## [MQTT Broker](https://www.emqx.com/en/blog/category/mqtt-broker)
@@ -131,6 +130,7 @@ Best practice of MQTT in various clients.
 ## [MQTT Integration (Eco & Integration)](https://www.emqx.com/en/blog/category/eco-and-integration)
 Explore more with & via EMQ.
 
+- [MQTT with Kafka: Supercharging IoT Data Integration](https://github.com/emqx/blog/blob/main/en/202306/mqtt-and-kafka.md)
 - [Build MQTT Dashboard with EMQX, Grafana and Prometheus](https://github.com/emqx/blog/blob/main/en/202306/build-mqtt-dashboard-with-emqx-grafana-and-prometheus.md)
 - [Natural Interactions in IoT: Combining MQTT and ChatGPT](https://github.com/emqx/blog/blob/main/en/202305/natural-interactions-in-iot-combining-mqtt-and-chatgpt.md)
 - [Monitoring MQTT broker with Prometheus and Grafana](https://github.com/emqx/blog/blob/main/en/202212/emqx-prometheus-grafana.md)
@@ -292,6 +292,7 @@ The easiest way to start MQTT service. Connect your IoT devices to any cloud wit
 ## [EMQX Enterprise](https://www.emqx.com/en/blog/category/enterprise)
 The world's most scalable and reliable MQTT messaging platform to connect, move and process your data in business-critical scenarios for the IoT era.
 
+- [MQTT with Kafka: Supercharging IoT Data Integration](https://github.com/emqx/blog/blob/main/en/202306/mqtt-and-kafka.md)
 - [Rebalancing MQTT Connections for a More Balanced EMQX Cluster on Kubernetes](https://github.com/emqx/blog/blob/main/en/202306/rebalancing-mqtt-connections-for-emqx-cluster-on-kubernetes.md)
 - [Build MQTT Dashboard with EMQX, Grafana and Prometheus](https://github.com/emqx/blog/blob/main/en/202306/build-mqtt-dashboard-with-emqx-grafana-and-prometheus.md)
 - [Google Cloud IoT Core is Shutting Down: How to Migrate](https://github.com/emqx/blog/blob/main/en/202306/why-emqx-is-your-best-google-cloud-iot-core-alternative.md)
