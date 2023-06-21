@@ -192,6 +192,14 @@ We have successfully created an MQTT connection in an Angular project and simula
 
 As one of the three mainstream front-end frameworks, Angular can be used both on the browser and the mobile side. Various interesting applications can be developed by combining MQTT protocol and [MQTT cloud service](https://www.emqx.com/en/cloud), such as the chat system for customer service or management system for real-time monitoring of IoT device information.
 
+## Resources
+
+- [How to Use MQTT in Vue](https://www.emqx.com/en/blog/how-to-use-mqtt-in-vue)
+- [How to Use MQTT in React](https://www.emqx.com/en/blog/how-to-use-mqtt-in-react)
+- [How to Use MQTT in Electron](https://www.emqx.com/en/blog/how-to-use-mqtt-in-electron)
+- [How to Use MQTT in Node.js](https://www.emqx.com/en/blog/how-to-use-mqtt-in-nodejs)
+- [A Quickstart Guide to Using MQTT over WebSocket](https://www.emqx.com/en/blog/connect-to-mqtt-broker-with-websocket)
+
 
 <section class="promotion">
     <div>

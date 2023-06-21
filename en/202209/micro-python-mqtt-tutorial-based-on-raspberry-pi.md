@@ -187,13 +187,13 @@ This is a simple example of programming with MicroPython on a Raspberry Pi. We i
 ## Other Articles in This Series
 
 - [How to Use MQTT in Python (Paho)](https://www.emqx.com/en/blog/how-to-use-mqtt-in-python)
-
 - [Python MQTT Asynchronous Framework - HBMQTT](https://www.emqx.com/en/blog/python-async-mqtt-client-hbmqtt)
-
 - [Comparison of Python MQTT clients](https://www.emqx.com/en/blog/comparision-of-python-mqtt-client)
 - [How to Use MQTT in The Django Project](https://www.emqx.com/en/blog/how-to-use-mqtt-in-django)
-
 - [How to use MQTT in Flask](https://www.emqx.com/en/blog/how-to-use-mqtt-in-flask)
+- [MQTT on ESP32: A Beginner's Guide](https://www.emqx.com/en/blog/esp32-connects-to-the-free-public-mqtt-broker)
+- [How to Use MQTT on Raspberry Pi with Paho Python Client](https://www.emqx.com/en/blog/use-mqtt-with-raspberry-pi)
+
 
 
 

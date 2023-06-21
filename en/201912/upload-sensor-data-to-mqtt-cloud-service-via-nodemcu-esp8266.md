@@ -1,6 +1,6 @@
 ### Introduction
 
-This example will demonstrate how to report the temperature and humidity data collected by the DHT11 sensor to the MQTT service in the cloud through the [MQTT protocol](https://www.emqx.com/en/mqtt-guide) and the NodeMCU based on ESP8266 , and show how the application subscribes to and processes the data. The reason why mqtt protocol is used in this article is that it is lightweight and energy-saving, which is very suitable for the use scenarios of the Internet of things. At present, all major public cloud providers have basically opened IOT hub services based on MQTT protocol. For example, the IOT Core of AWS and the IOT Hub of Azure can easily access these data to these public cloud services through MQTT protocol.
+This example will demonstrate how to report the temperature and humidity data collected by the DHT11 sensor to the MQTT service in the cloud through the [MQTT protocol](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) and the NodeMCU based on ESP8266 , and show how the application subscribes to and processes the data. The reason why mqtt protocol is used in this article is that it is lightweight and energy-saving, which is very suitable for the use scenarios of the Internet of things. At present, all major public cloud providers have basically opened IOT hub services based on MQTT protocol. For example, the IOT Core of AWS and the IOT Hub of Azure can easily access these data to these public cloud services through MQTT protocol.
 
 The overall architecture of this example is as follows:
 
@@ -35,13 +35,14 @@ The overall architecture of this example is as follows:
 After the data is successfully collected through NodeMCU, it needs to be sent to the MQTT cloud service in the cloud. This article uses the MQTT cloud service provided by EMQX. Readers can also choose other MQTT cloud services according to their own circumstances, such as Azure IoT Hub or AWS IoT Core. Each cloud service needs to provide different authentication methods when accessing. Therefore, when connecting to the MQTT service in the cloud via NodeMCU, it is required to set the connection method according to the security requirements of the target cloud service. For the sake of simplicity, this article uses a non-secure connection method. In a formal production environment, a connection with a secure authentication method must be set.
 
 - Click [EMQX Cloud](<https://accounts.emqx.io/signin?continue=https://cloud.emqx.io>)  registration address to register
+
 - After registration, click  [EMQX Cloud](<https://cloud.emqx.io/console/deployments/0?oper=new>)  to apply for a free trial of 15-day deployment
 
-![69518124b89a0e800f9111ea9203d65d445c3f06.png](https://assets.emqx.com/images/de696779fd64a2fb880e69893ed2dab5.png)
+  ![EMQX Cloud](https://assets.emqx.com/images/de696779fd64a2fb880e69893ed2dab5.png)
 
 - View the broker connection address
 
-![69527781f86bf0800fa711ea9f9e64147e13591f.png](https://assets.emqx.com/images/504ec89295d41afc72daa8e1ebcdc302.png)
+  ![View the broker connection address](https://assets.emqx.com/images/504ec89295d41afc72daa8e1ebcdc302.png)
 
 
 
@@ -155,7 +156,7 @@ Follow these steps to edit the code to suit your own Wi-Fi and MQTT settings
 
 - Arduion configuration
 
-![690047768a924a00095311ea954cdd303e67665a.png](https://assets.emqx.com/images/f30399b37a8c03b2f4faf47a01ab984f.png)
+  ![Arduion configuration](https://assets.emqx.com/images/f30399b37a8c03b2f4faf47a01ab984f.png)
 
 
 
@@ -167,53 +168,43 @@ Follow these steps to edit the code to suit your own Wi-Fi and MQTT settings
 
 - Open Arduino monitor window to view data reporting.
 
-![69004810f4125880095311ea9394640718d5c7c1.png](https://assets.emqx.com/images/e1932131cf52075fbbfb09fa89f8ba91.png)
-
-
+  ![Arduino monitor window](https://assets.emqx.com/images/e1932131cf52075fbbfb09fa89f8ba91.png)
 
 - MQTT client receives messages
 
-  - Use [MQTT Websocket Toolkit](<http://www.emqx.io/online-mqtt-client/>)  to test the reported message
+  In this post, we will use the MQTT client tool provided by [MQTTX](https://mqttx.app/) that supports browser access: http://www.emqx.io/online-mqtt-client. MQTT X also provides a [desktop client](https://mqttx.app/) and a [command line tool](https://mqttx.app/cli).
 
-    > MQTT Websocket Toolkit is a recently open sourced MQTT (WebSocket) test tool from EMQ, which supports online access (www.emqx.io/online-mqtt-client/). We can easily verify whether the NodeMCU reports MQTT messages.
+  1. Create an MQTT connection
+     ![Create an MQTT connection](https://assets.emqx.com/images/6b70ac640041ab7aadb211553bc729e8.png)
 
-    1. Create an MQTT connection
-       ![695302069d88c8000fac11ea8c544c8dd42b0d25.png](https://assets.emqx.com/images/6b70ac640041ab7aadb211553bc729e8.png)
+  2. Subscribe to topics and receive test messages
 
-```
-2.Subscribe to topics and receive test messages
-```
-
-![69528034776129000fa811ea8f6e6057cb3cd279.png](https://assets.emqx.com/images/16d0f34e02926530e021ad9e6f2d3de5.png)
+     ![Subscribe](https://assets.emqx.com/images/16d0f34e02926530e021ad9e6f2d3de5.png)
 
 - Use [Python MQTT client](https://www.emqx.com/en/blog/python-async-mqtt-client-hbmqtt) to view reported messages
 
-  ```python
-  from paho.mqtt import client as mqtt
-  
-  
-  def on_connect(client, userdata, flags, rc):
-      # connect mqtt broker
-      client.subscribe([("temperature", 0), ("humidity", 0)])
-  
-  
-  def on_message(client, userdata, msg):
-      # sub dht11 temperature/humidity data
-      print(f"{msg.topic}: {msg.payload.decode()}")
-  
-  
-  def run():
-      client = mqtt.Client()
-      # Edit MQTT Cloud address
-      client.connect("broker-internet-facing-f1429d8cb54ca4a7.elb.us-east-1.amazonaws.com", 1883)
-      client.on_connect = on_connect
-      client.on_message = on_message
-      client.loop_forever()
-  
-  
-  if __name__ == '__main__':
-      run()
-  ```
+```python
+from paho.mqtt import client as mqtt
+
+def on_connect(client, userdata, flags, rc):
+    # connect mqtt broker
+    client.subscribe([("temperature", 0), ("humidity", 0)])
+
+def on_message(client, userdata, msg):
+    # sub dht11 temperature/humidity data
+    print(f"{msg.topic}: {msg.payload.decode()}")
+
+def run():
+    client = mqtt.Client()
+    # Edit MQTT Cloud address
+    client.connect("broker-internet-facing-f1429d8cb54ca4a7.elb.us-east-1.amazonaws.com", 1883)
+    client.on_connect = on_connect
+    client.on_message = on_message
+    client.loop_forever()
+
+if __name__ == '__main__':
+    run()
+```
 
   Screenshot of Python script running:
 
@@ -232,14 +223,20 @@ So far, it has completed the simple process of collecting data from NodeMCU, upl
 - Persistence of  data
 - Larger scale connection
 
-[EMQX Enterprise](<https://www.emqx.com/en/products/emqx>) and its [Cloud service](<https://www.emqx.com/en/cloud>) have provide good solution to solve the above problems. Readers can refer to related links for more information.
+[EMQX Enterprise](https://www.emqx.com/en/products/emqx) and its [Cloud service](https://www.emqx.com/en/cloud) have provided good solutions to solve the above problems. Readers can refer to related links for more information.
 
 
-In order to achieve high data security (avoid uploading to the cloud), reduce business processing delays, and reduce data transmission costs, edge computing can be considered in the solution. Azure IoT Edge and AWS's Greengrass provide solutions at the edge. EMQ also provides an open sourced ultra-lightweight edge IoT edge streaming analytics solution  [Kuiper](<https://github.com/lf-edge/ekuiper>). Readers can refer to[ this Article](https://medium.com/@emqtt/lightweight-edge-computing-emq-x-kuiper-and-azure-iot-hub-integration-solution-151134ead024) for more detailed information.
+In order to achieve high data security (avoid uploading to the cloud), reduce business processing delays, and reduce data transmission costs, edge computing can be considered in the solution. Azure IoT Edge and AWS's Greengrass provide solutions at the edge. EMQ also provides an open-sourced ultra-lightweight edge IoT edge streaming analytics solution  [eKuiper](https://github.com/lf-edge/ekuiper). Readers can refer to [this Article](https://medium.com/@emqtt/lightweight-edge-computing-emq-x-kuiper-and-azure-iot-hub-integration-solution-151134ead024) for more detailed information.
 
-------
 
-Welcome to our open source project [github.com/emqx/emqx](https://github.com/emqx/emqx). Please visit the [ documentation](https://www.emqx.io/docs/en/latest/) for details.
+## Resources
+
+- [MQTT on ESP32: A Beginner's Guide](https://www.emqx.com/en/blog/esp32-connects-to-the-free-public-mqtt-broker)
+- [How to Use MQTT on Raspberry Pi with Paho Python Client](https://www.emqx.com/en/blog/use-mqtt-with-raspberry-pi)
+- [MicroPython MQTT Tutorial Based on Raspberry Pi](https://www.emqx.com/en/blog/micro-python-mqtt-tutorial-based-on-raspberry-pi)
+- [Remote control LED with ESP8266 and MQTT](https://www.emqx.com/en/blog/esp8266_mqtt_led)
+- [ESP8266 Connects to MQTT Broker with Arduino](https://www.emqx.com/en/blog/esp8266-connects-to-the-public-mqtt-broker)
+
 
 
 <section class="promotion">

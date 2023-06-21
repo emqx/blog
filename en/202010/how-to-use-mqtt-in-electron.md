@@ -395,6 +395,15 @@ Send a message to MQTTX using the client you wrote yourself, and now you can see
 
 So far, we have completed that use Electron to create a simple MQTT desktop client, and simulate the connection, messaging, unsubscribe and disconnect scenarios between the client and MQTT broker. It is also worth noting that since the Electron project includes both a browser environment and a Node.js environment, it is possible to use the browser's WebSocket API to implement an MQTT over WebSocket connection by modifying the connection protocol and port number in the above code.
 
+## Resources
+
+- [How to Use MQTT in Vue](https://www.emqx.com/en/blog/how-to-use-mqtt-in-vue)
+- [How to Use MQTT in React](https://www.emqx.com/en/blog/how-to-use-mqtt-in-react)
+- [How to Use MQTT in Angular](https://www.emqx.com/en/blog/how-to-use-mqtt-in-angular)
+- [How to Use MQTT in Node.js](https://www.emqx.com/en/blog/how-to-use-mqtt-in-nodejs)
+- [A Quickstart Guide to Using MQTT over WebSocket](https://www.emqx.com/en/blog/connect-to-mqtt-broker-with-websocket)
+
+
 [^1]: https://en.wikipedia.org/wiki/Electron_(software_framework)
 
 <section class="promotion">

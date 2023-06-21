@@ -164,6 +164,14 @@ With React Native, developers can use standard iOS platform components and devel
 
 Next, you can check out [The Easy-to-understand Guide to MQTT Protocol](https://www.emqx.com/en/mqtt-guide) series of articles provided by EMQ to learn about MQTT protocol features, explore more advanced applications of MQTT, and get started with MQTT application and service development.
 
+## Resources
+
+- [How to Use MQTT in Vue](https://www.emqx.com/en/blog/how-to-use-mqtt-in-vue)
+- [How to Use MQTT in Angular](https://www.emqx.com/en/blog/how-to-use-mqtt-in-angular)
+- [How to Use MQTT in Electron](https://www.emqx.com/en/blog/how-to-use-mqtt-in-electron)
+- [How to Use MQTT in Node.js](https://www.emqx.com/en/blog/how-to-use-mqtt-in-nodejs)
+- [Connect to MQTT Server with WebSocket](https://www.emqx.com/en/blog/connect-to-mqtt-broker-with-websocket)
+
 
 <section class="promotion">
     <div>

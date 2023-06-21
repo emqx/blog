@@ -565,6 +565,17 @@ So far, we have used Node.js as an [MQTT client](https://www.emqx.com/en/blog/mq
 Next, you can check out the [MQTT Guide: Beginner to Advanced](https://www.emqx.com/en/mqtt-guide) series provided by EMQ to learn about MQTT protocol features, explore more advanced applications of MQTT, and get started with MQTT application and service development.
 
 
+## Resources
+
+- [How to Use MQTT in Vue](https://www.emqx.com/en/blog/how-to-use-mqtt-in-vue)
+- [How to Use MQTT in React](https://www.emqx.com/en/blog/how-to-use-mqtt-in-react)
+- [How to Use MQTT in Angular](https://www.emqx.com/en/blog/how-to-use-mqtt-in-angular)
+- [How to Use MQTT in Electron](https://www.emqx.com/en/blog/how-to-use-mqtt-in-electron)
+- [A Quickstart Guide to Using MQTT over WebSocket](https://www.emqx.com/en/blog/connect-to-mqtt-broker-with-websocket)
+
+
+
+
 <section class="promotion">
     <div>
         Try EMQX Cloud for Free
