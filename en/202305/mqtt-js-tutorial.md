@@ -496,9 +496,10 @@ For specific use in actual projects, please refer to the following links.
 
 - [How to Use MQTT in Vue](https://www.emqx.com/en/blog/how-to-use-mqtt-in-vue)
 - [How to Use MQTT in React](https://www.emqx.com/en/blog/how-to-use-mqtt-in-react)
+- [How to Use MQTT in Angular](https://www.emqx.com/en/blog/how-to-use-mqtt-in-angular)
 - [How to Use MQTT in Electron](https://www.emqx.com/en/blog/how-to-use-mqtt-in-electron)
 - [How to Use MQTT in Node.js](https://www.emqx.com/en/blog/how-to-use-mqtt-in-nodejs)
-- [Connect to MQTT Server with WebSocket](https://www.emqx.com/en/blog/connect-to-mqtt-broker-with-websocket)
+- [A Quickstart Guide to Using MQTT over WebSocket](https://www.emqx.com/en/blog/connect-to-mqtt-broker-with-websocket)
 
 
 

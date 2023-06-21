@@ -1,10 +1,9 @@
-[MQTT](https://mqtt.org/) is a lightweight and flexible protocol to exchange IoT messages and deliver data. It dedicates to achieving a balance between flexibility and hardware/network resources for the IoT developer.
+[MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) is a lightweight and flexible protocol to exchange IoT messages and deliver data. It dedicates to achieving a balance between flexibility and hardware/network resources for the IoT developer.
 
 [ESP8266](https://www.espressif.com) provides a highly integrated Wi-Fi SoC solution. Its low power, compact design, and high stability can meet user's requirements. ESP8266 has a complete and self-contained Wi-Fi network function, which can be applied independently or can run as a slave at another host MCU.
 
 In this project, we will implement connecting ESP8266 to [free public MQTT broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker) operated and maintained by [EMQX Cloud](https://www.emqx.com/en/cloud), and programming ESP8266 by using Arduino IDE. EMQX Cloud is an **MQTT IoT cloud service platform with security** launched by [EMQ](https://www.emqx.com/en). It provides a one-stop operation and maintenance agency and [MQTT 5.0](https://www.emqx.com/en/mqtt/mqtt5) access service with a uniquely isolated environment.
 
-> Learn more: [ESP32 Connects to The Free Public MQTT Broker](https://www.emqx.com/en/blog/esp32-connects-to-the-free-public-mqtt-broker)
 
 ## The Required IoT Components 
 
@@ -198,6 +197,16 @@ In this project, we will implement connecting ESP8266 to [free public MQTT broke
 So far, we have successfully connected ESP8266 to the free public MQTT broker provided by EMQX Cloud. In this project, we connect ESP8266 to the MQTT broker, which is one of the relatively basic capabilities of ESP8266. Besides that, ESP8266 can also connect to various IoT sensors, and report the sensor data to the MQTT broker.
 
 Next, you can check out [The Easy-to-understand Guide to MQTT Protocol](https://www.emqx.com/en/mqtt-guide) series of articles provided by EMQ to learn about MQTT protocol features, explore more advanced applications of MQTT, and get started with MQTT application and service development.
+
+## Resources
+
+- [MQTT on ESP32: A Beginner's Guide](https://www.emqx.com/en/blog/esp32-connects-to-the-free-public-mqtt-broker)
+- [How to Use MQTT on Raspberry Pi with Paho Python Client](https://www.emqx.com/en/blog/use-mqtt-with-raspberry-pi)
+- [MicroPython MQTT Tutorial Based on Raspberry Pi](https://www.emqx.com/en/blog/micro-python-mqtt-tutorial-based-on-raspberry-pi)
+- [Remote control LED with ESP8266 and MQTT](https://www.emqx.com/en/blog/esp8266_mqtt_led)
+- [Upload Sensor Data to MQTT Cloud Service via NodeMCU (ESP8266)](https://www.emqx.com/en/blog/upload-sensor-data-to-mqtt-cloud-service-via-nodemcu-esp8266)
+
+
 
 
 <section class="promotion">
