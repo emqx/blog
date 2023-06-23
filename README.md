@@ -225,6 +225,7 @@ EMQX is the world's most scalable open-source MQTT broker with a high performanc
 ## [EMQX Cloud](https://www.emqx.com/en/blog/category/cloud)
 The easiest way to start MQTT service. Connect your IoT devices to any cloud without the burden of maintaining infrastructure.
 
+- [Connecting to Serverless MQTT Broker with Paho Java](https://github.com/emqx/blog/blob/main/en/202306/connecting-to-serverless-mqtt-broker-with-paho-java.md)
 - [Enhancing Payment Flexibility: EMQX Cloud Unveils US Bank Account Payment Option](https://github.com/emqx/blog/blob/main/en/202306/emqx-cloud-unveils-us-bank-account-payment-option.md)
 - [Seamlessly Integrating EMQX Cloud with the New Timescale Service](https://github.com/emqx/blog/blob/main/en/202306/seamlessly-integrating-emqx-cloud-with-the-new-timescale-service.md)
 - [Google Cloud IoT Core is Shutting Down: How to Migrate](https://github.com/emqx/blog/blob/main/en/202306/why-emqx-is-your-best-google-cloud-iot-core-alternative.md)
@@ -340,6 +341,7 @@ Build a reliable, efficient and industry-specific Internet of Vehicles platform 
 
 ## [Industrial IoT | Unified Namespace | Sparkplug](https://www.emqx.com/en/blog/category/industrial-iot)
 
+- [Sparkplug 3.0: Advancements & Formalization in MQTT for IIoT](https://github.com/emqx/blog/blob/main/en/202306/sparkplug-3-0-advancements-and-formalization-in-mqtt-for-iiot.md)
 - [MQTT Sparkplug Solution for Industrial IoT Using EMQX & Neuron](https://github.com/emqx/blog/blob/main/en/202306/mqtt-sparkplug-solution-for-industrial-iot-using-emqx-and-neuron.md)
 - [A Comparison of IIoT Protocols: MQTT Sparkplug vs OPC-UA](https://github.com/emqx/blog/blob/main/en/202305/a-comparison-of-iiot-protocols-mqtt-sparkplug-vs-opc-ua.md)
 - [Top 3 Open Source MQTT Brokers for Industrial IoT in 2023](https://github.com/emqx/blog/blob/main/en/202305/top-3-open-source-mqtt-brokers-for-industrial-iot-in-2023.md)
