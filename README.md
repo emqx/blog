@@ -145,6 +145,7 @@ Explore more with & via EMQ.
 ## [EMQX Open Source | Broker](https://www.emqx.com/en/blog/category/emqx)
 EMQX is the world's most scalable open-source MQTT broker with a high performance that connects 100M+ IoT devices in 1 cluster, while maintaining 1M message per second throughput and sub-millisecond latency.
 
+- [Overcoming Address Change with MQTT over QUIC](https://github.com/emqx/blog/blob/main/en/202306/overcoming-address-change-with-mqtt-over-quic.md)
 - [MQTT Stream Processing with EMQX and eKuiper: A Quick Tutorial](https://github.com/emqx/blog/blob/main/en/202306/mqtt-stream-processing-with-emqx-and-ekuiper.md)
 - [Enabling MQTT over QUIC on Kubernetes With EMQX 5.0](https://github.com/emqx/blog/blob/main/en/202306/enabling-mqtt-over-quic-on-kubernetes-with-emqx-5-0.md)
 - [EMQX MQTT Broker Troubleshooting: Connection Issues](https://github.com/emqx/blog/blob/main/en/202305/emqx-mqtt-broker-connection-troubleshooting.md)
@@ -294,6 +295,7 @@ The easiest way to start MQTT service. Connect your IoT devices to any cloud wit
 ## [EMQX Enterprise](https://www.emqx.com/en/blog/category/enterprise)
 The world's most scalable and reliable MQTT messaging platform to connect, move and process your data in business-critical scenarios for the IoT era.
 
+- [Overcoming Address Change with MQTT over QUIC](https://github.com/emqx/blog/blob/main/en/202306/overcoming-address-change-with-mqtt-over-quic.md)
 - [MQTT with Kafka: Supercharging IoT Data Integration](https://github.com/emqx/blog/blob/main/en/202306/mqtt-and-kafka.md)
 - [Rebalancing MQTT Connections for a More Balanced EMQX Cluster on Kubernetes](https://github.com/emqx/blog/blob/main/en/202306/rebalancing-mqtt-connections-for-emqx-cluster-on-kubernetes.md)
 - [Build MQTT Dashboard with EMQX, Grafana and Prometheus](https://github.com/emqx/blog/blob/main/en/202306/build-mqtt-dashboard-with-emqx-grafana-and-prometheus.md)
