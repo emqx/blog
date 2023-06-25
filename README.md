@@ -5,6 +5,7 @@
 ## [MQTT Tutorials](https://www.emqx.com/en/blog/category/mqtt-protocol)
 Get to know the preferred protocol in IoT from beginner to master.
 
+- [MQTT Topics and Wildcards: A Beginner's Guide](https://github.com/emqx/blog/blob/main/en/202306/advanced-features-of-mqtt-topics.md)
 - [MQTT Reason Code Introduction and Quick Reference](https://github.com/emqx/blog/blob/main/en/202306/mqtt5-new-features-reason-code-and-ack.md)
 - [An Introduction to Subscription Options in MQTT](https://github.com/emqx/blog/blob/main/en/202306/an-introduction-to-subscription-options-in-mqtt.md)
 - [MQTT Subscription Identifier Explained](https://github.com/emqx/blog/blob/main/en/202306/subscription-identifier-and-subscription-options.md)
@@ -16,7 +17,6 @@ Get to know the preferred protocol in IoT from beginner to master.
 - [How to Set Parameters When Establishing an MQTT Connection?](https://github.com/emqx/blog/blob/main/en/202211/how-to-set-parameters-when-establishing-an-mqtt-connection.md)
 - [What is The MQTT and Why is it the Best  Protocol for IoT?](https://github.com/emqx/blog/blob/main/en/202211/what-is-the-mqtt-protocol.md)
 - [The Beginner's Guide to MQTT Retained Messages](https://github.com/emqx/blog/blob/main/en/202211/mqtt5-features-retain-message.md)
-- [Understanding MQTT Topics & Wildcards by Case](https://github.com/emqx/blog/blob/main/en/202210/advanced-features-of-mqtt-topics.md)
 - [What is the MQTT Keep Alive parameter for?](https://github.com/emqx/blog/blob/main/en/202208/mqtt-keep-alive.md)
 - [MQTT QoS design: Quality assurance for the IoV platform messaging](https://github.com/emqx/blog/blob/main/en/202204/mqtt-qos-design-for-internet-of-vehicles.md)
 - [MQTT topic design in TSP platform scenario](https://github.com/emqx/blog/blob/main/en/202204/mqtt-topic-design-for-internet-of-vehicles.md)
