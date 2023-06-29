@@ -107,7 +107,7 @@ The API follows a similar style to the previous one. You can create an MQTT clie
 nng_mqtt_quic_client_open(&socket, url);
 ```
 
-For the sample code please refer to: [https://github.com/nanomq/NanoSDK/tree/main/demo/quic](https://github.com/nanomq/NanoSDK/tree/main/demo/quic).
+For the sample code please refer to: [https://github.com/nanomq/NanoSDK/tree/main/demo/quic_mqtt](https://github.com/nanomq/NanoSDK/tree/main/demo/quic_mqtt).
 
 After the compiling is completed, you will be able to run the command below to connect to port 14567 for testing.
 
