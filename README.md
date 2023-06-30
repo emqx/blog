@@ -296,6 +296,7 @@ The easiest way to start MQTT service. Connect your IoT devices to any cloud wit
 ## [EMQX Enterprise](https://www.emqx.com/en/blog/category/enterprise)
 The world's most scalable and reliable MQTT messaging platform to connect, move and process your data in business-critical scenarios for the IoT era.
 
+- [EMQX Enterprise 5.1.0: Production-Ready MQTT Over QUIC, MQTT Based File Transfer, and More](https://github.com/emqx/blog/blob/main/en/202306/emqx-enterprise-5-1-0-release-notes.md)
 - [Overcoming Address Change with MQTT over QUIC](https://github.com/emqx/blog/blob/main/en/202306/overcoming-address-change-with-mqtt-over-quic.md)
 - [MQTT with Kafka: Supercharging IoT Data Integration](https://github.com/emqx/blog/blob/main/en/202306/mqtt-and-kafka.md)
 - [Rebalancing MQTT Connections for a More Balanced EMQX Cluster on Kubernetes](https://github.com/emqx/blog/blob/main/en/202306/rebalancing-mqtt-connections-for-emqx-cluster-on-kubernetes.md)
