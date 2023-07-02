@@ -84,6 +84,7 @@ Get to know the preferred protocol in IoT from beginner to master.
 ## [MQTT Programming](https://www.emqx.com/en/blog/category/mqtt-programming)
 Best practice of MQTT in various clients.
 
+- [Best Practices of Maximum Packet Size in MQTT](https://github.com/emqx/blog/blob/main/en/202307/best-practices-of-maximum-packet-size-in-mqtt.md)
 - [A Quickstart Guide to Using MQTT over WebSocket](https://github.com/emqx/blog/blob/main/en/202306/connect-to-mqtt-broker-with-websocket.md)
 - [MQTT on ESP32: A Beginner's Guide](https://github.com/emqx/blog/blob/main/en/202306/esp32-connects-to-the-free-public-mqtt-broker.md)
 - [Connecting to Serverless MQTT Broker with MQTTNet in C#](https://github.com/emqx/blog/blob/main/en/202306/connecting-to-serverless-mqtt-broker-with-mqttnet-in-csharp.md)
@@ -115,6 +116,7 @@ Best practice of MQTT in various clients.
 
 ## [MQTT Security](https://www.emqx.com/en/blog/category/security)
 
+- [Improve the Reliability and Security of MQTT Broker With Rate Limit](https://github.com/emqx/blog/blob/main/en/202306/improve-the-reliability-and-security-of-mqtt-broker-with-rate-limit.md)
 - [Fortifying MQTT Communication Security With SSL/TLS](https://github.com/emqx/blog/blob/main/en/202306/fortifying-mqtt-communication-security-with-ssl-tls.md)
 - [A Deep Dive into Token-Based Authentication and OAuth 2.0 in MQTT](https://github.com/emqx/blog/blob/main/en/202306/a-deep-dive-into-token-based-authentication-and-oauth-2-0-in-mqtt.md)
 - [Leveraging Enhanced Authentication for MQTT Security](https://github.com/emqx/blog/blob/main/en/202306/leveraging-enhanced-authentication-for-mqtt-security.md)
@@ -296,6 +298,7 @@ The easiest way to start MQTT service. Connect your IoT devices to any cloud wit
 ## [EMQX Enterprise](https://www.emqx.com/en/blog/category/enterprise)
 The world's most scalable and reliable MQTT messaging platform to connect, move and process your data in business-critical scenarios for the IoT era.
 
+- [EMQX Enterprise 5.1.0: Production-Ready MQTT Over QUIC, MQTT Based File Transfer, and More](https://github.com/emqx/blog/blob/main/en/202306/emqx-enterprise-5-1-0-release-notes.md)
 - [Overcoming Address Change with MQTT over QUIC](https://github.com/emqx/blog/blob/main/en/202306/overcoming-address-change-with-mqtt-over-quic.md)
 - [MQTT with Kafka: Supercharging IoT Data Integration](https://github.com/emqx/blog/blob/main/en/202306/mqtt-and-kafka.md)
 - [Rebalancing MQTT Connections for a More Balanced EMQX Cluster on Kubernetes](https://github.com/emqx/blog/blob/main/en/202306/rebalancing-mqtt-connections-for-emqx-cluster-on-kubernetes.md)
