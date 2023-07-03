@@ -5,11 +5,11 @@
 作为物联网通信协议的事实标准，MQTT 协议提供了很多与安全相关的功能特性，以保障物联网系统的安全。为了帮助物联网开发者充分了解这些特性，从多维度构建更加安全可靠的物联网系统与应用，EMQ 特别推出了《MQTT 安全》专题系列文章。
 
 该系列文章将包括：
-- [MQTT 安全解析：构建可靠的物联网系统](https://www.emqx.com/zh/blog/understanding-mqtt-security-a-comprehensive-overview)
+- **[MQTT 安全解析：构建可靠的物联网系统](https://www.emqx.com/zh/blog/understanding-mqtt-security-a-comprehensive-overview)**
 - 认证
-  - [用户名/密码认证](https://www.emqx.com/zh/blog/securing-mqtt-with-username-and-password-authentication)：用户名/密码认证方法介绍，如何在 MQTT 中使用，以及该方法可能存在的隐患与解决办法。
-  - SCRAM 增强认证：增强认证的作用及用法，如何通过增强认证弥补用户名/密码认证方法的不足。
-  - 其他认证方法：Token 认证如 JWT 等。
+  - **[用户名/密码认证](https://www.emqx.com/zh/blog/securing-mqtt-with-username-and-password-authentication)**：用户名/密码认证方法介绍，如何在 MQTT 中使用，以及该方法可能存在的隐患与解决办法。
+  - **[SCRAM 增强认证](https://www.emqx.com/zh/blog/leveraging-enhanced-authentication-for-mqtt-security)**：增强认证的作用及用法，如何通过增强认证弥补用户名/密码认证方法的不足。
+  - **[其他认证方法](https://www.emqx.com/zh/blog/a-deep-dive-into-token-based-authentication-and-oauth-2-0-in-mqtt)**：Token 认证如 JWT 等。
 - 授权：权限控制与认证的区别，访问控制列表介绍。
 - 流量控制：常见流量控制策略介绍。
 - TLS/SSL：单向认证、双向认证、TLS PSK、一机一密讲解，TLS 使用注意事项。
