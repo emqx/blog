@@ -71,7 +71,7 @@ Kerberos 在提供较强安全性的同时，也带来了相当的复杂性，�
 
 增强认证为用户提供了引入更多身份验证方法的可能性。您可以选择适合您特定需求的认证方法，进一步增强系统的安全性。
 
-作为广泛使用的 [MQTT Broker](https://site-ip.mqttce.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison)，[EMQX](https://www.emqx.io/zh) 在以其高可扩展性和可用性著称的同时，也始终将确保用户安全放在首位。除了基于密码的认证，EMQX 也支持增强认证。用户可以通过 EMQX 启用 SCRAM 认证，以提高其 MQTT 基础设施的安全级别。
+作为广泛使用的 [MQTT Broker](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison)，[EMQX](https://www.emqx.io/zh) 在以其高可扩展性和可用性著称的同时，也始终将确保用户安全放在首位。除了基于密码的认证，EMQX 也支持增强认证。用户可以通过 EMQX 启用 SCRAM 认证，以提高其 MQTT 基础设施的安全级别。
 
 更多信息请查看：[MQTT 5.0 增强认证](https://www.emqx.io/docs/zh/v5.0/access-control/authn/scram.html)
 
