@@ -28,7 +28,7 @@ I want to let you know that this only applies to response packets, not to PUBLIS
 
 1. Open the installed [MQTTX](https://mqttx.app/).
 
-2. Create an MQTT connection, set the Maximum Packet Size to 100, and connect to the [Free Public MQTT Server](https://site-ip.mqttce.com/en/mqtt/public-mqtt5-broker):
+2. Create an MQTT connection, set the Maximum Packet Size to 100, and connect to the [Free Public MQTT Server](https://www.emqx.com/en/mqtt/public-mqtt5-broker):
 
    ![Create an MQTT connection](https://assets.emqx.com/images/784f1078a559f75b0c9ed10f30a5a218.png)
 

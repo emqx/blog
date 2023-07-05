@@ -84,6 +84,7 @@ Get to know the preferred protocol in IoT from beginner to master.
 ## [MQTT Programming](https://www.emqx.com/en/blog/category/mqtt-programming)
 Best practice of MQTT in various clients.
 
+- [Connecting to Serverless MQTT Broker in PHP](https://github.com/emqx/blog/blob/main/en/202307/connecting-to-serverless-mqtt-broker-in-php.md)
 - [Best Practices of Maximum Packet Size in MQTT](https://github.com/emqx/blog/blob/main/en/202307/best-practices-of-maximum-packet-size-in-mqtt.md)
 - [A Quickstart Guide to Using MQTT over WebSocket](https://github.com/emqx/blog/blob/main/en/202306/connect-to-mqtt-broker-with-websocket.md)
 - [MQTT on ESP32: A Beginner's Guide](https://github.com/emqx/blog/blob/main/en/202306/esp32-connects-to-the-free-public-mqtt-broker.md)
@@ -229,6 +230,7 @@ EMQX is the world's most scalable open-source MQTT broker with a high performanc
 ## [EMQX Cloud](https://www.emqx.com/en/blog/category/cloud)
 The easiest way to start MQTT service. Connect your IoT devices to any cloud without the burden of maintaining infrastructure.
 
+- [Connecting to Serverless MQTT Broker in PHP](https://github.com/emqx/blog/blob/main/en/202307/connecting-to-serverless-mqtt-broker-in-php.md)
 - [Connecting to Serverless MQTT Broker with Paho Java](https://github.com/emqx/blog/blob/main/en/202306/connecting-to-serverless-mqtt-broker-with-paho-java.md)
 - [Enhancing Payment Flexibility: EMQX Cloud Unveils US Bank Account Payment Option](https://github.com/emqx/blog/blob/main/en/202306/emqx-cloud-unveils-us-bank-account-payment-option.md)
 - [Seamlessly Integrating EMQX Cloud with the New Timescale Service](https://github.com/emqx/blog/blob/main/en/202306/seamlessly-integrating-emqx-cloud-with-the-new-timescale-service.md)
@@ -298,6 +300,7 @@ The easiest way to start MQTT service. Connect your IoT devices to any cloud wit
 ## [EMQX Enterprise](https://www.emqx.com/en/blog/category/enterprise)
 The world's most scalable and reliable MQTT messaging platform to connect, move and process your data in business-critical scenarios for the IoT era.
 
+- [Significant Enhancements in EMQX 5.1 MQTT Dashboard: A Breakthrough in UI/UX](https://github.com/emqx/blog/blob/main/en/202307/significant-enhancements-in-emqx-5-1-mqtt-dashboard.md)
 - [EMQX Enterprise 5.1.0: Production-Ready MQTT Over QUIC, MQTT Based File Transfer, and More](https://github.com/emqx/blog/blob/main/en/202306/emqx-enterprise-5-1-0-release-notes.md)
 - [Overcoming Address Change with MQTT over QUIC](https://github.com/emqx/blog/blob/main/en/202306/overcoming-address-change-with-mqtt-over-quic.md)
 - [MQTT with Kafka: Supercharging IoT Data Integration](https://github.com/emqx/blog/blob/main/en/202306/mqtt-and-kafka.md)
@@ -347,6 +350,7 @@ Build a reliable, efficient and industry-specific Internet of Vehicles platform 
 
 ## [Industrial IoT | Unified Namespace | Sparkplug](https://www.emqx.com/en/blog/category/industrial-iot)
 
+- [Unified Namespace (UNS): Next-Generation Data Fabric for IIoT](https://github.com/emqx/blog/blob/main/en/202307/unified-namespace-next-generation-data-fabric-for-iiot.md)
 - [Efficiency Comparison: OPC-UA, Modbus, MQTT, Sparkplug, HTTP](https://github.com/emqx/blog/blob/main/en/202306/efficiency-comparison-opc-ua-modbus-mqtt-sparkplug-http.md)
 - [Bridging Modbus Data to MQTT for IIoT:  A Step-by-Step Tutorial](https://github.com/emqx/blog/blob/main/en/202306/bridging-modbus-data-to-mqtt-for-iiot.md)
 - [Sparkplug 3.0: Advancements & Formalization in MQTT for IIoT](https://github.com/emqx/blog/blob/main/en/202306/sparkplug-3-0-advancements-and-formalization-in-mqtt-for-iiot.md)

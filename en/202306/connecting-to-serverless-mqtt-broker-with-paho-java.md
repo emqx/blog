@@ -120,7 +120,7 @@ client = new MqttClient(server, CLIENT_ID);
 ```
 
 - Broker and port: Obtain the connection address and port information from the server deployment overview page.
-- Client ID: Every MQTT client must have a unique client ID. You can use `Guid.NewGuid()` to generate a new unique identifier in .NET.
+- Client ID: Every MQTT client must have a unique client ID. You can use the MqttClient.generateClientId() function in the Phao Java library to generate a new unique identifier.
 - Topic: Topics are used to identify and differentiate between different messages, forming the basis of MQTT message routing. It will be used when subscribing and publishing.
 
 ### 6. Connect to the broker

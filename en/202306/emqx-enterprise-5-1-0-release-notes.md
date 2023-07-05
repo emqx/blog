@@ -1,11 +1,11 @@
 ## Introduction
 
-We are excited to announce our latest release of the [EMQX Enterprise 5.1 MQTT platform](https://site-ip.mqttce.com/en/products/emqx). This latest version provides an even more powerful and flexible IoT data solution, empowering you to build your digital businesses easily and efficiently, streamlining your IoT data flow from edge to cloud.
+We are excited to announce our latest release of the [EMQX Enterprise 5.1 MQTT platform](https://www.emqx.com/en/products/emqx). This latest version provides an even more powerful and flexible IoT data solution, empowering you to build your digital businesses easily and efficiently, streamlining your IoT data flow from edge to cloud.
 
 Some of the new features from our new EMQX Enterprise MQTT platform include:
 
 - Distributed architecture to scale up to 100 million MQTT connections. 
-- Option to enable [MQTT over QUIC](https://site-ip.mqttce.com/en/blog/mqtt-over-quic), the next generation of IoT messaging.
+- Option to enable [MQTT over QUIC](https://www.emqx.com/en/blog/mqtt-over-quic), the next generation of IoT messaging.
 - MQTT-based large file transfer capability to seamlessly unify IoT data channels.
 - Visualization of bi-directional data integrations.
 
@@ -32,13 +32,13 @@ Our enhanced architecture brings robust horizontal scalability and also ensures 
 
 <br>
 
-The benefits of this architecture are leveraged in [EMQX Cloud](https://site-ip.mqttce.com/en/cloud), our fully managed MQTT Cloud service. Our EMQX Kubernetes Operator implements this new architecture for improved automated deployment and scalability. 
+The benefits of this architecture are leveraged in [EMQX Cloud](https://www.emqx.com/en/cloud), our fully managed MQTT Cloud service. Our EMQX Kubernetes Operator implements this new architecture for improved automated deployment and scalability. 
 
 For more information about the brand-new architecture, please refer to [Architecture](https://docs.emqx.com/en/enterprise/v5.0/deploy/cluster/mria-introduction.html) 
 
 ## MQTT over QUIC: The Next Generation of IoT Messaging
 
-The [MQTT protocol](https://site-ip.mqttce.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) is commonly used for messaging services in the IoT and Internet of Vehicles (IoV) applications. It is designed to work on top of a transport protocol that provides a reliable, ordered, and lossless stream of bytes in both directions. This reliable transport protocol guarantees that messages are delivered accurately and in the order they were sent. Traditionally, IoT applications apply MQTT over TCP-based protocols, such as raw TCP, TCP/TLS (for security), and WebSocket (for web browser adaption). However, there are limitations in scenarios where wireless networks do not provide consistent coverage, causing high latency and packet loss. MQTT over QUIC provides reliable messaging over wireless networks with poor connectivity or low bandwidth.
+The [MQTT protocol](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) is commonly used for messaging services in the IoT and Internet of Vehicles (IoV) applications. It is designed to work on top of a transport protocol that provides a reliable, ordered, and lossless stream of bytes in both directions. This reliable transport protocol guarantees that messages are delivered accurately and in the order they were sent. Traditionally, IoT applications apply MQTT over TCP-based protocols, such as raw TCP, TCP/TLS (for security), and WebSocket (for web browser adaption). However, there are limitations in scenarios where wireless networks do not provide consistent coverage, causing high latency and packet loss. MQTT over QUIC provides reliable messaging over wireless networks with poor connectivity or low bandwidth.
 
 ### What is QUIC
 
