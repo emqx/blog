@@ -134,6 +134,7 @@ Best practice of MQTT in various clients.
 ## [MQTT Integration (Eco & Integration)](https://www.emqx.com/en/blog/category/eco-and-integration)
 Explore more with & via EMQ.
 
+- [Time-Series Database (TSDB) for IoT: The Missing Piece](https://github.com/emqx/blog/blob/main/en/202307/time-series-database-for-iot-the-missing-piece.md)
 - [MQTT with Kafka: Supercharging IoT Data Integration](https://github.com/emqx/blog/blob/main/en/202306/mqtt-and-kafka.md)
 - [Build MQTT Dashboard with EMQX, Grafana and Prometheus](https://github.com/emqx/blog/blob/main/en/202306/build-mqtt-dashboard-with-emqx-grafana-and-prometheus.md)
 - [Natural Interactions in IoT: Combining MQTT and ChatGPT](https://github.com/emqx/blog/blob/main/en/202305/natural-interactions-in-iot-combining-mqtt-and-chatgpt.md)
@@ -230,6 +231,7 @@ EMQX is the world's most scalable open-source MQTT broker with a high performanc
 ## [EMQX Cloud](https://www.emqx.com/en/blog/category/cloud)
 The easiest way to start MQTT service. Connect your IoT devices to any cloud without the burden of maintaining infrastructure.
 
+- [EMQX Cloud BYOC is Now Available on Google Cloud!](https://github.com/emqx/blog/blob/main/en/202307/emqx-cloud-byoc-is-now-available-on-google-cloud.md)
 - [Connecting to Serverless MQTT Broker in PHP](https://github.com/emqx/blog/blob/main/en/202307/connecting-to-serverless-mqtt-broker-in-php.md)
 - [Connecting to Serverless MQTT Broker with Paho Java](https://github.com/emqx/blog/blob/main/en/202306/connecting-to-serverless-mqtt-broker-with-paho-java.md)
 - [Enhancing Payment Flexibility: EMQX Cloud Unveils US Bank Account Payment Option](https://github.com/emqx/blog/blob/main/en/202306/emqx-cloud-unveils-us-bank-account-payment-option.md)
@@ -350,6 +352,7 @@ Build a reliable, efficient and industry-specific Internet of Vehicles platform 
 
 ## [Industrial IoT | Unified Namespace | Sparkplug](https://www.emqx.com/en/blog/category/industrial-iot)
 
+- [MQTT Sparkplug: Bridging IT and OT in Industry 4.0](https://github.com/emqx/blog/blob/main/en/202307/mqtt-sparkplug-bridging-it-and-ot-in-industry-4-0.md)
 - [Unified Namespace (UNS): Next-Generation Data Fabric for IIoT](https://github.com/emqx/blog/blob/main/en/202307/unified-namespace-next-generation-data-fabric-for-iiot.md)
 - [Efficiency Comparison: OPC-UA, Modbus, MQTT, Sparkplug, HTTP](https://github.com/emqx/blog/blob/main/en/202306/efficiency-comparison-opc-ua-modbus-mqtt-sparkplug-http.md)
 - [Bridging Modbus Data to MQTT for IIoT:  A Step-by-Step Tutorial](https://github.com/emqx/blog/blob/main/en/202306/bridging-modbus-data-to-mqtt-for-iiot.md)
