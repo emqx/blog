@@ -1,6 +1,6 @@
 MQTT, designed initially as a lightweight [publish/subscribe messaging protocol](https://www.emqx.com/en/blog/mqtt-5-introduction-to-publish-subscribe-model), is now becoming essential for Industrial IoT (IIoT) and Industry 4.0. Its significance lies in facilitating the seamless connection between diverse industrial devices and the cloud, enabling the convergence of Operational Technology (OT) and Information Technology (IT).
 
-This article compares the top 3 MQTT brokers for IIoT in 2023, including each broker's advantages, disadvantages, and use cases. It also shows how you can leverage the features of these 3 MQTT brokers to build a Unified Namespace (UNS) architecture for your IIoT solution.
+This article compares the top 3 MQTT brokers for IIoT in 2023, including each broker's advantages, disadvantages, and use cases. It also shows how you can leverage the features of these 3 MQTT brokers to build a [Unified Namespace](https://www.emqx.com/en/blog/unified-namespace-next-generation-data-fabric-for-iiot) (UNS) architecture for your IIoT solution.
 
 ## At a Glance: 3 Outstanding Projects
 

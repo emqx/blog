@@ -48,7 +48,7 @@ By introducing a Sparkplug broker and a data ops gateway together as a central d
 
 ## Unified Namespace: Feature of Sparkplug to Simplify IIoT Management
 
-One of the key features of Sparkplug is the use of a unified namespace. A namespace is a naming system used to identify and organize objects in a system. In the context of Industry 4.0, there are typically multiple devices, sensors, and systems that need to communicate with each other. Each device or system may have its own unique naming system or identifier, making it difficult to integrate and manage them in a cohesive manner.
+One of the key features of Sparkplug is the use of a [unified namespace](https://www.emqx.com/en/blog/unified-namespace-next-generation-data-fabric-for-iiot). A namespace is a naming system used to identify and organize objects in a system. In the context of Industry 4.0, there are typically multiple devices, sensors, and systems that need to communicate with each other. Each device or system may have its own unique naming system or identifier, making it difficult to integrate and manage them in a cohesive manner.
 
 The unified namespace enables a centralized management approach. With a unified namespace, administrators can easily monitor and manage all devices and systems in the network from a single location. This can be particularly helpful in large-scale industrial environments where there may be hundreds or thousands of devices and systems to manage.
 

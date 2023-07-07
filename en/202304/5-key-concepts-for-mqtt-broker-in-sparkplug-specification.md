@@ -34,7 +34,7 @@ Session state awareness is a critical feature for mission-critical industrial Io
 
 ## Concept 3 - Unified Namespace
 
-The unified namespace is a concept that refers to the ability of different devices and systems in an industrial setting to share data seamlessly, regardless of their manufacturer or communication protocol. It uses a standard naming convention and data model to ensure interoperability and facilitate data exchange.
+The [unified namespace](https://www.emqx.com/en/blog/unified-namespace-next-generation-data-fabric-for-iiot) is a concept that refers to the ability of different devices and systems in an industrial setting to share data seamlessly, regardless of their manufacturer or communication protocol. It uses a standard naming convention and data model to ensure interoperability and facilitate data exchange.
 
 On the other hand, Sparkplug is a messaging specification to enable efficient and secure communication between IoT devices and applications. It is based on the MQTT protocol and incorporates the unified namespace concept to provide a standardized way of representing data and metadata across different devices and systems.
 

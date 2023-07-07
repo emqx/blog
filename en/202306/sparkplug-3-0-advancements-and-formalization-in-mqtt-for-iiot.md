@@ -1,4 +1,4 @@
-The release of Sparkplug 3.0 brings significant advancements and formalization to the MQTT Sparkplug protocol for Industrial Internet of Things (IIoT) applications. Developed by the Eclipse Sparkplug Working Group, this new version aims to clarify ambiguities present in the previous 2.2 specifications while maintaining the overall intent of the v2.2 specification.
+The release of Sparkplug 3.0 brings significant advancements and formalization to the [MQTT Sparkplug](https://www.emqx.com/en/blog/mqtt-sparkplug-bridging-it-and-ot-in-industry-4-0) protocol for Industrial Internet of Things (IIoT) applications. Developed by the Eclipse Sparkplug Working Group, this new version aims to clarify ambiguities present in the previous 2.2 specifications while maintaining the overall intent of the v2.2 specification.
 
 ## **Key Enhancements in Sparkplug 3.0**
 
