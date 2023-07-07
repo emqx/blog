@@ -55,7 +55,7 @@ MQTT broker with multi-tenancy support will reduce management overhead and allow
 
 ## MQTT Sparkplug 3.0
 
-MQTT Sparkplug 3.0 is the latest version of the MQTT Sparkplug, the open standard specification designed by Eclipse Foundation. It defines how to connect industrial devices, including sensors, actuators, Programmable Logic Controllers (PLCs), and gateways using MQTT messaging protocol.
+MQTT Sparkplug 3.0 is the latest version of the [MQTT Sparkplug](https://www.emqx.com/en/blog/mqtt-sparkplug-bridging-it-and-ot-in-industry-4-0), the open standard specification designed by Eclipse Foundation. It defines how to connect industrial devices, including sensors, actuators, Programmable Logic Controllers (PLCs), and gateways using MQTT messaging protocol.
 
 MQTT Sparkplug 3.0 was released in November 2022 with some key new features and improvements:
 
@@ -69,7 +69,7 @@ MQTT Sparkplug aimed to simplify connecting and communicating with disparate ind
 
 ## MQTT Unified Namespace
 
-Unified Namespace is a solution architecture built on the MQTT broker for Industrial IoT and Industry 4.0. It provides a unified namespace for MQTT topics and a centralized repository for messages and structured data. 
+[Unified Namespace](https://www.emqx.com/en/blog/unified-namespace-next-generation-data-fabric-for-iiot) is a solution architecture built on the MQTT broker for Industrial IoT and Industry 4.0. It provides a unified namespace for MQTT topics and a centralized repository for messages and structured data. 
 
 Unified Namespace connects industrial devices, sensors, and applications, such as SCADA, MES, and ERP, with star topology using a central MQTT broker. Unified Namespace dramatically simplifies the development of industrial IoT applications with an event-driven architecture.
 

@@ -115,7 +115,7 @@ Thanks to the innovative actor model on edge, NanoMQ is on multi-threading stero
 
 #### Offloading with Rule Engine and WebHook
 
-Computation offloading refers to the transfer of computational tasks to a remote device or cloud platform. In recent years, the industry introduced the concept of Unified Namespace(UNS) to make data-stream reusable and reduce network complexity. MQTT broker fits in this place perfectly.
+Computation offloading refers to the transfer of computational tasks to a remote device or cloud platform. In recent years, the industry introduced the concept of [Unified Namespace](https://www.emqx.com/en/blog/unified-namespace-next-generation-data-fabric-for-iiot)(UNS) to make data-stream reusable and reduce network complexity. MQTT broker fits in this place perfectly.
 
 However, the flexibility of offloading strategies requires brokers to provide a context-knowing rule engine to manipulate message sink. Mosquitto and NanoMQ are both MQTT broker that meets the first requirement, but NanoMQ offers awesome features like a built-in rule engine, offline caching, and data persistence, which Mosquitto does not. Data persistence and offline caching are essential when edge applications are running in offline mode and want to keep data safe. NanoMQ is able to resume transmission after the network is restored or persist full-scale data in the backup database. As for Mosquitto, there is no rule engine or protocol proxy, but it also provides data caching feature on SQLite and files. However, this feature is highly limited by the single-threaded design. The broker stops responding to any message when there are too many synchronized disk writing operations.
 

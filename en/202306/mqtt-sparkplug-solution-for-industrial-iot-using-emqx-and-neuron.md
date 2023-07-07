@@ -33,7 +33,7 @@ In this article, we will use [EMQX](https://www.emqx.io/), an open-source distri
 
 ## The New Role of EMQX and Neuron Together
 
-EMQX and Neuron can be used together to create a unified namespace for industrial IoT applications. A unified namespace is a common naming convention for MQTT topics that allows devices and applications to communicate with each other regardless of location or protocol. All devices and applications use the same MQTT topic hierarchy based on a common set of naming conventions and data models. This allows devices to discover and communicate with each other without the need for complex routing or translation mechanism.
+EMQX and Neuron can be used together to create a [unified namespace](https://www.emqx.com/en/blog/unified-namespace-next-generation-data-fabric-for-iiot) for industrial IoT applications. A unified namespace is a common naming convention for MQTT topics that allows devices and applications to communicate with each other regardless of location or protocol. All devices and applications use the same MQTT topic hierarchy based on a common set of naming conventions and data models. This allows devices to discover and communicate with each other without the need for complex routing or translation mechanism.
 
 ![Industrial IoT](https://assets.emqx.com/images/a88f6c54e8877d322f0c1987c9f8e625.png)
 
@@ -43,7 +43,7 @@ Neuron can be configured to support a unified namespace by using the same naming
 
 ## Sparkplug Solution Architecture
 
-The MQTT Sparkplug solution using EMQX and Neuron can be designed as a three-tier architecture. All devices and applications equally connected to a unified namespace in the diagram above can be classified into two layers. The bottom layer is the data producers, while the top layer is the data consumers. The middle layer is where EMQX and Neuron facilitate data exchange between data producers and consumers.
+The [MQTT Sparkplug](https://www.emqx.com/en/blog/mqtt-sparkplug-bridging-it-and-ot-in-industry-4-0) solution using EMQX and Neuron can be designed as a three-tier architecture. All devices and applications equally connected to a unified namespace in the diagram above can be classified into two layers. The bottom layer is the data producers, while the top layer is the data consumers. The middle layer is where EMQX and Neuron facilitate data exchange between data producers and consumers.
 
 ![Sparkplug Solution Architecture](https://assets.emqx.com/images/a97b5c154e3f337c813c1c957b41641d.png)
 
