@@ -150,6 +150,7 @@ Explore more with & via EMQ.
 ## [EMQX Open Source | Broker](https://www.emqx.com/en/blog/category/emqx)
 EMQX is the world's most scalable open-source MQTT broker with a high performance that connects 100M+ IoT devices in 1 cluster, while maintaining 1M message per second throughput and sub-millisecond latency.
 
+- [Embedded MQTT Message Storage Using RocksDB for EMQX Broker](https://github.com/emqx/blog/blob/main/en/202307/embedded-mqtt-message-storage-using-rocksdb-for-emqx-broker.md)
 - [Overcoming Address Change with MQTT over QUIC](https://github.com/emqx/blog/blob/main/en/202306/overcoming-address-change-with-mqtt-over-quic.md)
 - [MQTT Stream Processing with EMQX and eKuiper: A Quick Tutorial](https://github.com/emqx/blog/blob/main/en/202306/mqtt-stream-processing-with-emqx-and-ekuiper.md)
 - [Enabling MQTT over QUIC on Kubernetes With EMQX 5.0](https://github.com/emqx/blog/blob/main/en/202306/enabling-mqtt-over-quic-on-kubernetes-with-emqx-5-0.md)
@@ -302,6 +303,7 @@ The easiest way to start MQTT service. Connect your IoT devices to any cloud wit
 ## [EMQX Enterprise](https://www.emqx.com/en/blog/category/enterprise)
 The world's most scalable and reliable MQTT messaging platform to connect, move and process your data in business-critical scenarios for the IoT era.
 
+- [Embedded MQTT Message Storage Using RocksDB for EMQX Broker](https://github.com/emqx/blog/blob/main/en/202307/embedded-mqtt-message-storage-using-rocksdb-for-emqx-broker.md)
 - [Significant Enhancements in EMQX 5.1 MQTT Dashboard: A Breakthrough in UI/UX](https://github.com/emqx/blog/blob/main/en/202307/significant-enhancements-in-emqx-5-1-mqtt-dashboard.md)
 - [EMQX Enterprise 5.1.0: Production-Ready MQTT Over QUIC, MQTT Based File Transfer, and More](https://github.com/emqx/blog/blob/main/en/202306/emqx-enterprise-5-1-0-release-notes.md)
 - [Overcoming Address Change with MQTT over QUIC](https://github.com/emqx/blog/blob/main/en/202306/overcoming-address-change-with-mqtt-over-quic.md)
