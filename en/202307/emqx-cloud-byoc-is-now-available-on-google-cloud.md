@@ -40,7 +40,7 @@ EMQX Cloud BYOC provides seamless integration with external data systems, such a
 
 We are excited to bring the power and flexibility of EMQX Cloud BYOC to Google Cloud. With its seamless integration, enhanced security, robust monitoring, and easy data integration, EMQX Cloud BYOC on Google Cloud empowers users to build scalable and secure IoT applications with ease. Whether you are starting a new IoT project or migrating your existing infrastructure, EMQX Cloud BYOC on Google Cloud provides the perfect solution for your MQTT messaging needs. 
 
-Get ready to unlock the full potential of your IoT applications with EMQX Cloud BYOC on Google Cloud!
+Get ready to unlock the full potential of your IoT applications with [EMQX Cloud BYOC](https://www.emqx.com/en/cloud/byoc) on Google Cloud!
 
 
 
