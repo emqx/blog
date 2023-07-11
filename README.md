@@ -5,6 +5,7 @@
 ## [MQTT Tutorials](https://www.emqx.com/en/blog/category/mqtt-protocol)
 Get to know the preferred protocol in IoT from beginner to master.
 
+- [Introduction to MQTT Control Packets](https://github.com/emqx/blog/blob/main/en/202307/Introduction-to-mqtt-control-packets.md)
 - [What Is MQTT and Why Is It the Best Protocol for IoT?](https://github.com/emqx/blog/blob/main/en/202306/what-is-the-mqtt-protocol.md)
 - [MQTT Topics and Wildcards: A Beginner's Guide](https://github.com/emqx/blog/blob/main/en/202306/advanced-features-of-mqtt-topics.md)
 - [MQTT Reason Code Introduction and Quick Reference](https://github.com/emqx/blog/blob/main/en/202306/mqtt5-new-features-reason-code-and-ack.md)
@@ -67,6 +68,7 @@ Get to know the preferred protocol in IoT from beginner to master.
 
 ## [MQTT Client](https://www.emqx.com/en/blog/category/mqtt-client)
 
+- [MQTTX: All-In-One Testing and Debugging for IoT Apps](https://github.com/emqx/blog/blob/main/en/202307/mqttx-all-in-one-testing-and-debugging-for-iot-apps.md)
 - [7 Best MQTT Client Tools Worth Trying in 2023](https://github.com/emqx/blog/blob/main/en/202305/mqtt-client-tools.md)
 - [Top 3 MQTT WebSocket Clients in 2023](https://github.com/emqx/blog/blob/main/en/202305/top-3-mqtt-websocket-clients-in-2023.md)
 - [Top 3 MQTT Desktop Client Tools in 2023](https://github.com/emqx/blog/blob/main/en/202305/top-3-mqtt-desktop-client-tools-in-2023.md)
@@ -232,6 +234,7 @@ EMQX is the world's most scalable open-source MQTT broker with a high performanc
 ## [EMQX Cloud](https://www.emqx.com/en/blog/category/cloud)
 The easiest way to start MQTT service. Connect your IoT devices to any cloud without the burden of maintaining infrastructure.
 
+- [EMQX Cloud Extends its Reach: Introducing New Regions for Seamless MQTT Connectivity](https://github.com/emqx/blog/blob/main/en/202307/emqx-cloud-extends-its-reach-introducing-new-regions-for-seamless-mqtt-connectivity.md)
 - [EMQX Cloud BYOC is Now Available on Google Cloud!](https://github.com/emqx/blog/blob/main/en/202307/emqx-cloud-byoc-is-now-available-on-google-cloud.md)
 - [Connecting to Serverless MQTT Broker in PHP](https://github.com/emqx/blog/blob/main/en/202307/connecting-to-serverless-mqtt-broker-in-php.md)
 - [Connecting to Serverless MQTT Broker with Paho Java](https://github.com/emqx/blog/blob/main/en/202306/connecting-to-serverless-mqtt-broker-with-paho-java.md)
@@ -303,6 +306,7 @@ The easiest way to start MQTT service. Connect your IoT devices to any cloud wit
 ## [EMQX Enterprise](https://www.emqx.com/en/blog/category/enterprise)
 The world's most scalable and reliable MQTT messaging platform to connect, move and process your data in business-critical scenarios for the IoT era.
 
+- [MQTT Performance Benchmark Testing: EMQX-Kafka Integration](https://github.com/emqx/blog/blob/main/en/202307/mqtt-performance-benchmark-testing-emqx-kafka-integration.md)
 - [Embedded MQTT Message Storage Using RocksDB for EMQX Broker](https://github.com/emqx/blog/blob/main/en/202307/embedded-mqtt-message-storage-using-rocksdb-for-emqx-broker.md)
 - [Significant Enhancements in EMQX 5.1 MQTT Dashboard: A Breakthrough in UI/UX](https://github.com/emqx/blog/blob/main/en/202307/significant-enhancements-in-emqx-5-1-mqtt-dashboard.md)
 - [EMQX Enterprise 5.1.0: Production-Ready MQTT Over QUIC, MQTT Based File Transfer, and More](https://github.com/emqx/blog/blob/main/en/202306/emqx-enterprise-5-1-0-release-notes.md)
