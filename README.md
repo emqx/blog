@@ -6,6 +6,7 @@
 Get to know the preferred protocol in IoT from beginner to master.
 
 - [Introduction to MQTT Control Packets](https://github.com/emqx/blog/blob/main/en/202307/Introduction-to-mqtt-control-packets.md)
+- [Best Practices of Maximum Packet Size in MQTT](https://github.com/emqx/blog/blob/main/en/202307/best-practices-of-maximum-packet-size-in-mqtt.md)
 - [What Is MQTT and Why Is It the Best Protocol for IoT?](https://github.com/emqx/blog/blob/main/en/202306/what-is-the-mqtt-protocol.md)
 - [MQTT Topics and Wildcards: A Beginner's Guide](https://github.com/emqx/blog/blob/main/en/202306/advanced-features-of-mqtt-topics.md)
 - [MQTT Reason Code Introduction and Quick Reference](https://github.com/emqx/blog/blob/main/en/202306/mqtt5-new-features-reason-code-and-ack.md)
@@ -87,7 +88,6 @@ Get to know the preferred protocol in IoT from beginner to master.
 Best practice of MQTT in various clients.
 
 - [Connecting to Serverless MQTT Broker in PHP](https://github.com/emqx/blog/blob/main/en/202307/connecting-to-serverless-mqtt-broker-in-php.md)
-- [Best Practices of Maximum Packet Size in MQTT](https://github.com/emqx/blog/blob/main/en/202307/best-practices-of-maximum-packet-size-in-mqtt.md)
 - [A Quickstart Guide to Using MQTT over WebSocket](https://github.com/emqx/blog/blob/main/en/202306/connect-to-mqtt-broker-with-websocket.md)
 - [MQTT on ESP32: A Beginner's Guide](https://github.com/emqx/blog/blob/main/en/202306/esp32-connects-to-the-free-public-mqtt-broker.md)
 - [Connecting to Serverless MQTT Broker with MQTTNet in C#](https://github.com/emqx/blog/blob/main/en/202306/connecting-to-serverless-mqtt-broker-with-mqttnet-in-csharp.md)
@@ -306,6 +306,7 @@ The easiest way to start MQTT service. Connect your IoT devices to any cloud wit
 ## [EMQX Enterprise](https://www.emqx.com/en/blog/category/enterprise)
 The world's most scalable and reliable MQTT messaging platform to connect, move and process your data in business-critical scenarios for the IoT era.
 
+- [Simplifying Migration from Google Cloud IoT Core to EMQX Enterprise 4.4.19 ](https://github.com/emqx/blog/blob/main/en/202307/simplifying-migration-from-gcp-iot-core-to-emqx-enterprise-4-4-19.md)
 - [MQTT Performance Benchmark Testing: EMQX-Kafka Integration](https://github.com/emqx/blog/blob/main/en/202307/mqtt-performance-benchmark-testing-emqx-kafka-integration.md)
 - [Embedded MQTT Message Storage Using RocksDB for EMQX Broker](https://github.com/emqx/blog/blob/main/en/202307/embedded-mqtt-message-storage-using-rocksdb-for-emqx-broker.md)
 - [Significant Enhancements in EMQX 5.1 MQTT Dashboard: A Breakthrough in UI/UX](https://github.com/emqx/blog/blob/main/en/202307/significant-enhancements-in-emqx-5-1-mqtt-dashboard.md)
@@ -358,6 +359,7 @@ Build a reliable, efficient and industry-specific Internet of Vehicles platform 
 
 ## [Industrial IoT | Unified Namespace | Sparkplug](https://www.emqx.com/en/blog/category/industrial-iot)
 
+- [Modbus Protocol: The Grandfather of IoT Communication](https://github.com/emqx/blog/blob/main/en/202307/modbus-protocol-the-grandfather-of-iot-communication.md)
 - [MQTT Sparkplug: Bridging IT and OT in Industry 4.0](https://github.com/emqx/blog/blob/main/en/202307/mqtt-sparkplug-bridging-it-and-ot-in-industry-4-0.md)
 - [Unified Namespace (UNS): Next-Generation Data Fabric for IIoT](https://github.com/emqx/blog/blob/main/en/202307/unified-namespace-next-generation-data-fabric-for-iiot.md)
 - [Efficiency Comparison: OPC-UA, Modbus, MQTT, Sparkplug, HTTP](https://github.com/emqx/blog/blob/main/en/202306/efficiency-comparison-opc-ua-modbus-mqtt-sparkplug-http.md)
