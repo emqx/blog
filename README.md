@@ -359,6 +359,7 @@ Build a reliable, efficient and industry-specific Internet of Vehicles platform 
 
 ## [Industrial IoT | Unified Namespace | Sparkplug](https://www.emqx.com/en/blog/category/industrial-iot)
 
+- [MQTT Sparkplug in Action: A Step-by-Step Tutorial](https://github.com/emqx/blog/blob/main/en/202307/mqtt-sparkplug-in-action-a-step-by-step-tutorial.md)
 - [Modbus Protocol: The Grandfather of IoT Communication](https://github.com/emqx/blog/blob/main/en/202307/modbus-protocol-the-grandfather-of-iot-communication.md)
 - [MQTT Sparkplug: Bridging IT and OT in Industry 4.0](https://github.com/emqx/blog/blob/main/en/202307/mqtt-sparkplug-bridging-it-and-ot-in-industry-4-0.md)
 - [Unified Namespace (UNS): Next-Generation Data Fabric for IIoT](https://github.com/emqx/blog/blob/main/en/202307/unified-namespace-next-generation-data-fabric-for-iiot.md)
