@@ -359,6 +359,7 @@ Build a reliable, efficient and industry-specific Internet of Vehicles platform 
 
 ## [Industrial IoT | Unified Namespace | Sparkplug](https://www.emqx.com/en/blog/category/industrial-iot)
 
+- [MQTT Sparkplug in Action: A Step-by-Step Tutorial](https://github.com/emqx/blog/blob/main/en/202307/mqtt-sparkplug-in-action-a-step-by-step-tutorial.md)
 - [Modbus Protocol: The Grandfather of IoT Communication](https://github.com/emqx/blog/blob/main/en/202307/modbus-protocol-the-grandfather-of-iot-communication.md)
 - [MQTT Sparkplug: Bridging IT and OT in Industry 4.0](https://github.com/emqx/blog/blob/main/en/202307/mqtt-sparkplug-bridging-it-and-ot-in-industry-4-0.md)
 - [Unified Namespace (UNS): Next-Generation Data Fabric for IIoT](https://github.com/emqx/blog/blob/main/en/202307/unified-namespace-next-generation-data-fabric-for-iiot.md)
@@ -508,3 +509,8 @@ Guarantee the availability and reliability of the IoT platform.
 - [How to Use the MQTT Plug-in in JMeter](https://github.com/emqx/blog/blob/main/en/202211/how-to-use-the-mqtt-plugin-in-jmeter.md)
 - [Introduction to JMeter test components](https://github.com/emqx/blog/blob/main/en/202202/introduction-to-jmeter-test-components.md)
 - [Introduction to open-source test tool - JMeter](https://github.com/emqx/blog/blob/main/en/202201/introduction-to-the-open-source-testing-tool-jmeter.md)
+
+
+## [Use Cases](https://www.emqx.com/en/blog/category/use-cases)
+
+- [Unlocking Efficiency: How EMQX Revolutionizes Logistics Fleet Management](https://github.com/emqx/blog/blob/main/en/202307/how-emqx-revolutionizes-logistics-fleet-management.md)
