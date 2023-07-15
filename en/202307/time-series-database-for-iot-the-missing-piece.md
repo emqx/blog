@@ -73,7 +73,7 @@ Many use cases demonstrate the versatility and power of integrating MQTT with TS
 
 ![Easy Integration of Time-Series Databases with MQTT](https://assets.emqx.com/images/5b34d4ed43c44eb0c9c379a13c1a9686.png)
 
-The EMQX Data Integration component provides the following features wheno integrating with a TSDB:
+The EMQX Data Integration component provides the following features when integrating with a TSDB:
 
 - **Full support for MQTT 5.0:** EMQX enables devices to connect to a TSDB using either MQTT protocol version 5.0 or 3.1.1.
 - **Reliable data ingestion to TSDB:** EMQX has an on-disk message buffer to prevent data loss when the TSDB is unavailable.
