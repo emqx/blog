@@ -11,7 +11,7 @@ Get to know the preferred protocol in IoT from beginner to master.
 - [MQTT Topics and Wildcards: A Beginner's Guide](https://github.com/emqx/blog/blob/main/en/202306/advanced-features-of-mqtt-topics.md)
 - [MQTT Reason Code Introduction and Quick Reference](https://github.com/emqx/blog/blob/main/en/202306/mqtt5-new-features-reason-code-and-ack.md)
 - [An Introduction to Subscription Options in MQTT](https://github.com/emqx/blog/blob/main/en/202306/an-introduction-to-subscription-options-in-mqtt.md)
-- [MQTT Protocol Explained: The Basics and a Quick Tutorial](https://github.com/emqx/blog/blob/main/en/202305/the-easiest-guide-to-getting-started-with-mqtt.md)
+- [MQTT Protocol: How It Works & Core Concepts Explained](https://github.com/emqx/blog/blob/main/en/202305/the-easiest-guide-to-getting-started-with-mqtt.md)
 - [Shaping the Future of IoT: 7 MQTT Technology Trends in 2023](https://github.com/emqx/blog/blob/main/en/202303/7-mqtt-trends-in-2023.md)
 - [Introduction to MQTT Publish-Subscribe Pattern](https://github.com/emqx/blog/blob/main/en/202303/mqtt-5-introduction-to-publish-subscribe-model.md)
 - [Introduction to MQTT QoS 0, 1, 2](https://github.com/emqx/blog/blob/main/en/202301/introduction-to-mqtt-qos.md)
@@ -136,6 +136,7 @@ Best practice of MQTT in various clients.
 ## [MQTT Integration (Eco & Integration)](https://www.emqx.com/en/blog/category/eco-and-integration)
 Explore more with & via EMQ.
 
+- [MQTT Performance Benchmark Testing: EMQX-HStreamDB Integration](https://github.com/emqx/blog/blob/main/en/202307/mqtt-performance-benchmark-testing-emqx-hstreamdb-integration.md)
 - [Time-Series Database (TSDB) for IoT: The Missing Piece](https://github.com/emqx/blog/blob/main/en/202307/time-series-database-for-iot-the-missing-piece.md)
 - [MQTT with Kafka: Supercharging IoT Data Integration](https://github.com/emqx/blog/blob/main/en/202306/mqtt-and-kafka.md)
 - [Build MQTT Dashboard with EMQX, Grafana and Prometheus](https://github.com/emqx/blog/blob/main/en/202306/build-mqtt-dashboard-with-emqx-grafana-and-prometheus.md)
@@ -359,6 +360,7 @@ Build a reliable, efficient and industry-specific Internet of Vehicles platform 
 
 ## [Industrial IoT | Unified Namespace | Sparkplug](https://www.emqx.com/en/blog/category/industrial-iot)
 
+- [MQTT Sparkplug in Action: A Step-by-Step Tutorial](https://github.com/emqx/blog/blob/main/en/202307/mqtt-sparkplug-in-action-a-step-by-step-tutorial.md)
 - [Modbus Protocol: The Grandfather of IoT Communication](https://github.com/emqx/blog/blob/main/en/202307/modbus-protocol-the-grandfather-of-iot-communication.md)
 - [MQTT Sparkplug: Bridging IT and OT in Industry 4.0](https://github.com/emqx/blog/blob/main/en/202307/mqtt-sparkplug-bridging-it-and-ot-in-industry-4-0.md)
 - [Unified Namespace (UNS): Next-Generation Data Fabric for IIoT](https://github.com/emqx/blog/blob/main/en/202307/unified-namespace-next-generation-data-fabric-for-iiot.md)
@@ -508,3 +510,8 @@ Guarantee the availability and reliability of the IoT platform.
 - [How to Use the MQTT Plug-in in JMeter](https://github.com/emqx/blog/blob/main/en/202211/how-to-use-the-mqtt-plugin-in-jmeter.md)
 - [Introduction to JMeter test components](https://github.com/emqx/blog/blob/main/en/202202/introduction-to-jmeter-test-components.md)
 - [Introduction to open-source test tool - JMeter](https://github.com/emqx/blog/blob/main/en/202201/introduction-to-the-open-source-testing-tool-jmeter.md)
+
+
+## [Use Cases](https://www.emqx.com/en/blog/category/use-cases)
+
+- [Unlocking Efficiency: How EMQX Revolutionizes Logistics Fleet Management](https://github.com/emqx/blog/blob/main/en/202307/how-emqx-revolutionizes-logistics-fleet-management.md)
