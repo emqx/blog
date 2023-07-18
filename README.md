@@ -136,6 +136,7 @@ Best practice of MQTT in various clients.
 ## [MQTT Integration (Eco & Integration)](https://www.emqx.com/en/blog/category/eco-and-integration)
 Explore more with & via EMQ.
 
+- [MQTT to ClickHouse Integration: Fueling Real-Time IoT Data Analytics](https://github.com/emqx/blog/blob/main/en/202307/mqtt-to-clickhouse-integration.md)
 - [MQTT Performance Benchmark Testing: EMQX-HStreamDB Integration](https://github.com/emqx/blog/blob/main/en/202307/mqtt-performance-benchmark-testing-emqx-hstreamdb-integration.md)
 - [Time-Series Database (TSDB) for IoT: The Missing Piece](https://github.com/emqx/blog/blob/main/en/202307/time-series-database-for-iot-the-missing-piece.md)
 - [MQTT with Kafka: Supercharging IoT Data Integration](https://github.com/emqx/blog/blob/main/en/202306/mqtt-and-kafka.md)
