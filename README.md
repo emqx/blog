@@ -380,6 +380,7 @@ Build a reliable, efficient and industry-specific Internet of Vehicles platform 
 ## [MQTTX](https://www.emqx.com/en/blog/category/mqttx)
 MQTTX is a Fully Open-source MQTT 5.0 cross-platform Desktop Client, makes it easy and quick to create multiple simultaneous online MQTT client connections, test the connection, publish, and subscribe functions of MQTT/TCP, MQTT/TLS, MQTT/WebSocket as well as other MQTT protocol features.
 
+- [MQTTX 1.9.4: Empowering High-Frequency MQTT Testing with Protobuf Integration](https://github.com/emqx/blog/blob/main/en/202307/mqttx-v-1-9-4-release-notes.md)
 - [How to Use MQTTX for Serverless MQTT Broker Test](https://github.com/emqx/blog/blob/main/en/202307/how-to-use-mqttx-for-serverless-mqtt-broker-test.md)
 - [Natural Interactions in IoT: Combining MQTT and ChatGPT](https://github.com/emqx/blog/blob/main/en/202305/natural-interactions-in-iot-combining-mqtt-and-chatgpt.md)
 - [Boosting Development Efficiency: MQTTX 1.9.3 Introduces Powerful IoT Scenario Data Simulation](https://github.com/emqx/blog/blob/main/en/202305/mqttx-1-9-3-introduces-powerful-iot-scenario-data-simulation-feature.md)
