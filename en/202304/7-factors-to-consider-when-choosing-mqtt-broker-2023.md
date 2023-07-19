@@ -219,7 +219,7 @@ In addition to the MQTT Broker itself, there are several other factors to consid
 
   When deploying at the edge, it is important to select an MQTT Broker that has low resource consumption, is optimized for edge environments, or has a proven cloud-edge solution.
 
-- **Conclusion**
+## Conclusion
 
   In this article, we have outlined the key criteria that developers should consider when selecting an MQTT Broker for their projects. By carefully evaluating each criterion based on their specific requirements, readers can make an informed decision and choose the MQTT Broker that best fits their needs.
 
