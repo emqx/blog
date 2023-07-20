@@ -405,6 +405,7 @@ MQTTX is a Fully Open-source MQTT 5.0 cross-platform Desktop Client, makes it ea
 ## [Neuron - IIoT Connectivity Server](https://www.emqx.com/en/blog/category/neuron)
 IoT edge industrial protocol gateway software, which supports one-stop access to dozens of industrial protocols and converts them into MQTT protocol to access the cloud industrial IoT platform. It just requires ultra-low resource consumption, and supports three major architectures of X86, ARM, and MIPS.
 
+- [Neuron 2.5.1: Streamlined IIoT Platform Management with Device-Based Templates](https://github.com/emqx/blog/blob/main/en/202307/neuron-v-2-5-1-release-notes.md)
 - [Bridging Modbus Data to MQTT for IIoT:  A Step-by-Step Tutorial](https://github.com/emqx/blog/blob/main/en/202306/bridging-modbus-data-to-mqtt-for-iiot.md)
 - [MQTT Sparkplug Solution for Industrial IoT Using EMQX & Neuron](https://github.com/emqx/blog/blob/main/en/202306/mqtt-sparkplug-solution-for-industrial-iot-using-emqx-and-neuron.md)
 - [Enhanced MQTT Plugin with Custom Write Topic Support in Neuron 2.4.5 Release](https://github.com/emqx/blog/blob/main/en/202305/enhanced-mqtt-plugin-with-custom-write-topic-support-in-neuron-2-4-5-release.md)
