@@ -309,6 +309,7 @@ The easiest way to start MQTT service. Connect your IoT devices to any cloud wit
 ## [EMQX Enterprise](https://www.emqx.com/en/blog/category/enterprise)
 The world's most scalable and reliable MQTT messaging platform to connect, move and process your data in business-critical scenarios for the IoT era.
 
+- [MQTT Performance Benchmark Testing: EMQX-PostgreSQL Integration](https://github.com/emqx/blog/blob/main/en/202307/mqtt-performance-benchmark-testing-emqx-postgresql-integration.md)
 - [Simplifying Migration from Google Cloud IoT Core to EMQX Enterprise 4.4.19 ](https://github.com/emqx/blog/blob/main/en/202307/simplifying-migration-from-gcp-iot-core-to-emqx-enterprise-4-4-19.md)
 - [MQTT Performance Benchmark Testing: EMQX-Kafka Integration](https://github.com/emqx/blog/blob/main/en/202307/mqtt-performance-benchmark-testing-emqx-kafka-integration.md)
 - [Embedded MQTT Message Storage Using RocksDB for EMQX Broker](https://github.com/emqx/blog/blob/main/en/202307/embedded-mqtt-message-storage-using-rocksdb-for-emqx-broker.md)
