@@ -119,6 +119,7 @@ Best practice of MQTT in various clients.
 
 ## [MQTT Security](https://www.emqx.com/en/blog/category/security)
 
+- [5 Strategies for Strengthening MQTT Infrastructure Security](https://github.com/emqx/blog/blob/main/en/202307/five-strategies-for-strengthening-mqtt-infrastructure-security.md)
 - [Improve the Reliability and Security of MQTT Broker With Rate Limit](https://github.com/emqx/blog/blob/main/en/202306/improve-the-reliability-and-security-of-mqtt-broker-with-rate-limit.md)
 - [Fortifying MQTT Communication Security With SSL/TLS](https://github.com/emqx/blog/blob/main/en/202306/fortifying-mqtt-communication-security-with-ssl-tls.md)
 - [A Deep Dive into Token-Based Authentication and OAuth 2.0 in MQTT](https://github.com/emqx/blog/blob/main/en/202306/a-deep-dive-into-token-based-authentication-and-oauth-2-0-in-mqtt.md)
