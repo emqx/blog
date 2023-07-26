@@ -119,6 +119,7 @@ Best practice of MQTT in various clients.
 
 ## [MQTT Security](https://www.emqx.com/en/blog/category/security)
 
+- [5 Strategies for Strengthening MQTT Infrastructure Security](https://github.com/emqx/blog/blob/main/en/202307/five-strategies-for-strengthening-mqtt-infrastructure-security.md)
 - [Improve the Reliability and Security of MQTT Broker With Rate Limit](https://github.com/emqx/blog/blob/main/en/202306/improve-the-reliability-and-security-of-mqtt-broker-with-rate-limit.md)
 - [Fortifying MQTT Communication Security With SSL/TLS](https://github.com/emqx/blog/blob/main/en/202306/fortifying-mqtt-communication-security-with-ssl-tls.md)
 - [A Deep Dive into Token-Based Authentication and OAuth 2.0 in MQTT](https://github.com/emqx/blog/blob/main/en/202306/a-deep-dive-into-token-based-authentication-and-oauth-2-0-in-mqtt.md)
@@ -309,6 +310,7 @@ The easiest way to start MQTT service. Connect your IoT devices to any cloud wit
 ## [EMQX Enterprise](https://www.emqx.com/en/blog/category/enterprise)
 The world's most scalable and reliable MQTT messaging platform to connect, move and process your data in business-critical scenarios for the IoT era.
 
+- [MQTT Performance Benchmark Testing: EMQX-InfluxDB Integration](https://github.com/emqx/blog/blob/main/en/202307/mqtt-performance-benchmark-testing-emqx-influxdb-integration.md)
 - [MQTT Performance Benchmark Testing: EMQX-PostgreSQL Integration](https://github.com/emqx/blog/blob/main/en/202307/mqtt-performance-benchmark-testing-emqx-postgresql-integration.md)
 - [Simplifying Migration from Google Cloud IoT Core to EMQX Enterprise 4.4.19 ](https://github.com/emqx/blog/blob/main/en/202307/simplifying-migration-from-gcp-iot-core-to-emqx-enterprise-4-4-19.md)
 - [MQTT Performance Benchmark Testing: EMQX-Kafka Integration](https://github.com/emqx/blog/blob/main/en/202307/mqtt-performance-benchmark-testing-emqx-kafka-integration.md)
