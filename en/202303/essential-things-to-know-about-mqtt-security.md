@@ -17,8 +17,8 @@ The series will include:
 - **Authorization**: What is authorization and how is it different from authentication? What is ACL and what can we achieve with it?
 - **[TLS/SSL](https://www.emqx.com/en/blog/fortifying-mqtt-communication-security-with-ssl-tls)**: The difference between one-way and two-way TLS. What is PSK and how to use new secure cipher suites.
 - **[Rate Limit](https://www.emqx.com/en/blog/improve-the-reliability-and-security-of-mqtt-broker-with-rate-limit)**: How rate limit ensures security and the common rate limit strategies.
+- **[Strengthening Infrastructure Security](https://www.emqx.com/en/blog/five-strategies-for-strengthening-mqtt-infrastructure-security)**: How to strengthen security from the infrastructure aspect.
 - **Message Encryption**: How to use message encryption as an alternative to TLS for resource constrained devices. The encryption methods available and their advantages and disadvantages.
-- **Strengthening Infrastructure Security**: How to strengthen security from the infrastructure aspect.
 - **Fuzzing with MQTT**: What is Fuzzing testing and how can it be used to find vulnerabilities in an IoT system? How to fuzz your MQTT broker.
 
 
