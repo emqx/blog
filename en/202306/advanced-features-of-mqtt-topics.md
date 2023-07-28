@@ -177,6 +177,10 @@ This very much depends on how the data schema is modeled for the MQTT message pa
 
 For example, if a publisher publishes to `device-id/stream1/foo` and `device-id/stream1/bar` and the subscriber needs to subscribe to both, then it may subscribe `device-id/stream1/#`. A better alternative is perhaps to push the foo and bar part of the namespace down to the payload, so it publishes to only one topic `device-id/stream1`, and the subscriber just subscribes to this one topic.
 
+### How are messages received for overlapping subscriptions of normal and wildcard topics?
+
+For example, if a client subscribes to both `#` and `test` topics, will it receive two duplicate messages when publishing to `test`? This depends on the MQTT broker implementation. EMQX will send messages for each matched subscription. Thus, duplicates may occur. However, users can leverage MQTT 5.0 subscription identifiers to differentiate message sources and handle such duplicate messages in the client based on the identifiers.
+
 ### Can I subscribe to the same topic with a shared subscription and a normal subscription?
 
 Yes, but it is not recommended.
