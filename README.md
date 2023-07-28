@@ -7,6 +7,7 @@ Get to know the preferred protocol in IoT from beginner to master.
 
 - [Introduction to MQTT Control Packets](https://github.com/emqx/blog/blob/main/en/202307/Introduction-to-mqtt-control-packets.md)
 - [Best Practices of Maximum Packet Size in MQTT](https://github.com/emqx/blog/blob/main/en/202307/best-practices-of-maximum-packet-size-in-mqtt.md)
+- [MQTT Subscription Identifier Explained](https://github.com/emqx/blog/blob/main/en/202306/subscription-identifier-and-subscription-options.md)
 - [What Is MQTT and Why Is It the Best Protocol for IoT?](https://github.com/emqx/blog/blob/main/en/202306/what-is-the-mqtt-protocol.md)
 - [MQTT Topics and Wildcards: A Beginner's Guide](https://github.com/emqx/blog/blob/main/en/202306/advanced-features-of-mqtt-topics.md)
 - [MQTT Reason Code Introduction and Quick Reference](https://github.com/emqx/blog/blob/main/en/202306/mqtt5-new-features-reason-code-and-ack.md)
@@ -29,7 +30,6 @@ Get to know the preferred protocol in IoT from beginner to master.
 - [Introduction to MQTT 5.0](https://github.com/emqx/blog/blob/main/en/202009/introduction-to-mqtt-5.md)
 - [Request Response - MQTT 5.0 new features](https://github.com/emqx/blog/blob/main/en/202009/mqtt5-request-response.md)
 - [Flow control - MQTT 5.0 new features](https://github.com/emqx/blog/blob/main/en/202008/mqtt5-flow-control.md)
-- [MQTT Subscription Identifier Explained](https://github.com/emqx/blog/blob/main/en/202007/subscription-identifier-and-subscription-options.md)
 - [The process of publishing MQTT 5.0 message](https://github.com/emqx/blog/blob/main/en/202004/mqtt5-message-publishing-process.md)
 - [MQTT 5.0 Features of Inflight Window & Message Queue](https://github.com/emqx/blog/blob/main/en/202003/mqtt5-feature-inflight-window-message-queue.md)
 - [Use of MQTT Will Message](https://github.com/emqx/blog/blob/main/en/201912/use-of-mqtt-will-message.md)
@@ -119,6 +119,7 @@ Best practice of MQTT in various clients.
 
 ## [MQTT Security](https://www.emqx.com/en/blog/category/security)
 
+- [5 Strategies for Strengthening MQTT Infrastructure Security](https://github.com/emqx/blog/blob/main/en/202307/five-strategies-for-strengthening-mqtt-infrastructure-security.md)
 - [Improve the Reliability and Security of MQTT Broker With Rate Limit](https://github.com/emqx/blog/blob/main/en/202306/improve-the-reliability-and-security-of-mqtt-broker-with-rate-limit.md)
 - [Fortifying MQTT Communication Security With SSL/TLS](https://github.com/emqx/blog/blob/main/en/202306/fortifying-mqtt-communication-security-with-ssl-tls.md)
 - [A Deep Dive into Token-Based Authentication and OAuth 2.0 in MQTT](https://github.com/emqx/blog/blob/main/en/202306/a-deep-dive-into-token-based-authentication-and-oauth-2-0-in-mqtt.md)
@@ -309,6 +310,8 @@ The easiest way to start MQTT service. Connect your IoT devices to any cloud wit
 ## [EMQX Enterprise](https://www.emqx.com/en/blog/category/enterprise)
 The world's most scalable and reliable MQTT messaging platform to connect, move and process your data in business-critical scenarios for the IoT era.
 
+- [File Transfer over MQTT: Transfer Large Payloads via One Protocol with Ease](https://github.com/emqx/blog/blob/main/en/202307/file-transfer-over-mqtt.md)
+- [MQTT Performance Benchmark Testing: EMQX-InfluxDB Integration](https://github.com/emqx/blog/blob/main/en/202307/mqtt-performance-benchmark-testing-emqx-influxdb-integration.md)
 - [MQTT Performance Benchmark Testing: EMQX-PostgreSQL Integration](https://github.com/emqx/blog/blob/main/en/202307/mqtt-performance-benchmark-testing-emqx-postgresql-integration.md)
 - [Simplifying Migration from Google Cloud IoT Core to EMQX Enterprise 4.4.19 ](https://github.com/emqx/blog/blob/main/en/202307/simplifying-migration-from-gcp-iot-core-to-emqx-enterprise-4-4-19.md)
 - [MQTT Performance Benchmark Testing: EMQX-Kafka Integration](https://github.com/emqx/blog/blob/main/en/202307/mqtt-performance-benchmark-testing-emqx-kafka-integration.md)

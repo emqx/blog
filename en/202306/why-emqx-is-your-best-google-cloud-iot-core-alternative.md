@@ -1,4 +1,4 @@
-## What Is Google Cloud IoT Core?
+## Google Cloud for IoT: What Is Google Cloud IoT Core?
 
 Google Cloud Platform’s IoT Core is a managed service that enables secure and reliable communication between Internet of Things (IoT) devices and Google Cloud. It consists of two main components: the Device Manager and Protocol Bridges.
 
@@ -8,7 +8,7 @@ The Device Manager manages device identities, metadata, and authentication, allo
 
 This is part of a series of articles about IoT in the cloud (coming soon).
 
-## The Shutdown of Google IoT Core
+## Future of Google Cloud for IoT: Shutdown of Google IoT Core
 
 Google has declared the discontinuation of IoT Core, with the service set to retire on August 16, 2023.
 
