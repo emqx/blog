@@ -5,6 +5,7 @@
 ## [MQTT Tutorials](https://www.emqx.com/en/blog/category/mqtt-protocol)
 Get to know the preferred protocol in IoT from beginner to master.
 
+- [MQTT vs AMQP for IoT Communications: Head to Head](https://github.com/emqx/blog/blob/main/en/202307/mqtt-vs-amqp-for-iot-communications.md)
 - [Introduction to MQTT Control Packets](https://github.com/emqx/blog/blob/main/en/202307/Introduction-to-mqtt-control-packets.md)
 - [Best Practices of Maximum Packet Size in MQTT](https://github.com/emqx/blog/blob/main/en/202307/best-practices-of-maximum-packet-size-in-mqtt.md)
 - [MQTT Subscription Identifier Explained](https://github.com/emqx/blog/blob/main/en/202306/subscription-identifier-and-subscription-options.md)
@@ -366,6 +367,7 @@ Build a reliable, efficient and industry-specific Internet of Vehicles platform 
 
 ## [Industrial IoT | Unified Namespace | Sparkplug](https://www.emqx.com/en/blog/category/industrial-iot)
 
+- [The Smart Manufacturing Revolution: Examples, Tech & Tips](https://github.com/emqx/blog/blob/main/en/202307/the-smart-manufacturing-revolution.md)
 - [Bridging TwinCAT Data to MQTT: Introduction and Hands-on Tutorial](https://github.com/emqx/blog/blob/main/en/202307/bridging-twincat-data-to-mqtt.md)
 - [MQTT Sparkplug in Action: A Step-by-Step Tutorial](https://github.com/emqx/blog/blob/main/en/202307/mqtt-sparkplug-in-action-a-step-by-step-tutorial.md)
 - [Modbus Protocol: The Grandfather of IoT Communication](https://github.com/emqx/blog/blob/main/en/202307/modbus-protocol-the-grandfather-of-iot-communication.md)
