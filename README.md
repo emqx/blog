@@ -311,6 +311,7 @@ The easiest way to start MQTT service. Connect your IoT devices to any cloud wit
 ## [EMQX Enterprise](https://www.emqx.com/en/blog/category/enterprise)
 The world's most scalable and reliable MQTT messaging platform to connect, move and process your data in business-critical scenarios for the IoT era.
 
+- [EMQX MQTT Broker Troubleshooting: Authentication Issues](https://github.com/emqx/blog/blob/main/en/202307/emqx-mqtt-broker-authentication-troubleshooting.md)
 - [File Transfer over MQTT: Transfer Large Payloads via One Protocol with Ease](https://github.com/emqx/blog/blob/main/en/202307/file-transfer-over-mqtt.md)
 - [MQTT Performance Benchmark Testing: EMQX-InfluxDB Integration](https://github.com/emqx/blog/blob/main/en/202307/mqtt-performance-benchmark-testing-emqx-influxdb-integration.md)
 - [MQTT Performance Benchmark Testing: EMQX-PostgreSQL Integration](https://github.com/emqx/blog/blob/main/en/202307/mqtt-performance-benchmark-testing-emqx-postgresql-integration.md)
@@ -436,6 +437,8 @@ NanoMQ is an MQTT messaging broker + multi-protocol message bus for edge computi
 
 - [NanoMQ: The Multi-threaded Alternative to Mosquitto for IoT Edge](https://github.com/emqx/blog/blob/main/en/202306/nanomq-the-multi-threaded-alternative-to-mosquitto-for-iot-edge.md)
 - [EMQX ECP Empowers IoT Edge Computing with NanoMQ Integration](https://github.com/emqx/blog/blob/main/en/202305/emqx-ecp-empowers-iot-edge-computing-with-nanomq-integration.md)
+- [Open MQTT Benchmarking Comparison: EMQX vs NanoMQ](https://github.com/emqx/blog/blob/main/en/202304/open-mqtt-benchmarking-comparison-emqx-vs-nanomq.md)
+- [Open MQTT Benchmarking Comparison: Mosquitto vs NanoMQ](https://github.com/emqx/blog/blob/main/en/202304/open-mqtt-benchmarking-comparison-mosquitto-vs-nanomq.md)
 - [Mosquitto vs NanoMQ | 2023 MQTT Broker Comparison](https://github.com/emqx/blog/blob/main/en/202304/mosquitto-vs-nanomq-2023-mqtt-broker-comparison.md)
 - [Bridge connection status monitoring added, log system reconstruction | NanoMQ Newsletter 202209](https://github.com/emqx/blog/blob/main/en/202210/nanomq-newsletter-202209.md)
 - [NanoMQ Newsletter 2022-05 | v0.8.0 is out now! WebHook and Authentication plugin](https://github.com/emqx/blog/blob/main/en/202206/nanomq-newsletter-202205.md)
