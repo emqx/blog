@@ -42,7 +42,7 @@ The following diagram illustrates the different layers of a UNS:
 
 ![The different layers of a UNS](https://assets.emqx.com/images/b294138a63506c8a3f18e1fb9dcd1895.png)
 
-At the bottom of the stack is where your **physical devices like HMI/PLC** live, and also where data is generated. Each PLC/HMI, or even a tag with information inside, could be called a namespace, which pushes the readings and events to the **data acquisition layer** for supervisor control and monitoring. It is common to deploy an industrial gateway like Neuron at this layer for data collection.
+At the bottom of the stack is where your **physical devices like HMI/PLC** live, and also where data is generated. Each PLC/HMI, or even a tag with information inside, could be called a namespace, which pushes the readings and events to the **data acquisition layer** for supervisor control and monitoring. It is common to deploy an industrial gateway like [Neuron](https://neugates.io/) at this layer for data collection.
 
 The layer above data acquisition is the **manufacturing execution layer (MES)**, which coordinates between ERP/CRM and the plant floor, converting sales orders into manufacturing schedules. The traditional ERP layer processes customer sales, plans manufacturing, manages inventory, checks finance payments, etc.
 
