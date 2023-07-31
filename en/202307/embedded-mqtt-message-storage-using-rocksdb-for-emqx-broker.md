@@ -35,6 +35,8 @@ The logical layer will provide a simple API to store and retrieve messages, hidi
 
 This message persistence feature will significantly strengthen EMQX’s reliability and open it up to new markets with strict message delivery requirements. The EMQX team is working hard to bring this capability to users as soon as possible.
 
+For more theoretical consideration and implementation details, please refer to: [0023-rocksdb-message-persistence.md](https://github.com/emqx/eip/blob/main/active/0023-rocksdb-message-persistence.md).
+
 
 
 <section class="promotion">
