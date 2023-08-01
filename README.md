@@ -238,6 +238,7 @@ EMQX is the world's most scalable open-source MQTT broker with a high performanc
 ## [EMQX Cloud](https://www.emqx.com/en/blog/category/cloud)
 The easiest way to start MQTT service. Connect your IoT devices to any cloud without the burden of maintaining infrastructure.
 
+- [Get Started with EMQX Cloud on Azure Marketplace](https://github.com/emqx/blog/blob/main/en/202308/get-started-with-emqx-cloud-on-azure-marketplace.md)
 - [How to Use MQTTX for Serverless MQTT Broker Test](https://github.com/emqx/blog/blob/main/en/202307/how-to-use-mqttx-for-serverless-mqtt-broker-test.md)
 - [EMQX Cloud Extends its Reach: Introducing New Regions for Seamless MQTT Connectivity](https://github.com/emqx/blog/blob/main/en/202307/emqx-cloud-extends-its-reach-introducing-new-regions-for-seamless-mqtt-connectivity.md)
 - [EMQX Cloud BYOC is Now Available on Google Cloud!](https://github.com/emqx/blog/blob/main/en/202307/emqx-cloud-byoc-is-now-available-on-google-cloud.md)
