@@ -1,4 +1,4 @@
-OPC-UA、HTTP、Modbus、[MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 和 [Sparkplug](https://www.emqx.com/en/blog/mqtt-sparkplug-bridging-it-and-ot-in-industry-4-0) 是工业通信中常用的主流技术，每种技术都是为特定的通信级别和目的而设计的。
+OPC-UA、HTTP、[Modbus](https://www.emqx.com/zh/blog/modbus-protocol-the-grandfather-of-iot-communication)、[MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 和 [Sparkplug](https://www.emqx.com/en/blog/mqtt-sparkplug-bridging-it-and-ot-in-industry-4-0) 是工业通信中常用的主流技术，每种技术都是为特定的通信级别和目的而设计的。
 
 OPC-UA 通常用于车间环境，HTTP 常用于互联网通信，MQTT 适用于本地或云平台通信，而 Modbus 则普遍用于设备级通信。
 

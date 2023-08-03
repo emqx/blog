@@ -1,4 +1,4 @@
-[MQTT](https://mqtt.org/) is a lightweight and flexible protocol for exchanging IoT messages and delivering data. It is used to achieve a balance between flexibility and hardware/internet resources for IoT developers.
+[MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) is a lightweight and flexible protocol for exchanging IoT messages and delivering data. It is used to achieve a balance between flexibility and hardware/internet resources for IoT developers.
 
 [Kotlin](https://kotlinlang.org/) is a programming language developed by  JetBrains. Kotlin is based on the JVM, so developers can easily use it for Android development, and it supports mixed writing of Kotlin and Java.
 

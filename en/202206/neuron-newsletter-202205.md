@@ -1,4 +1,4 @@
-In May, we released Neuron 2.0.1, of which some problems discovered in v2.0.0 are fixed. We mainly focused on the development of new drivers, adding the southbound BACnet/IP and KNXnet/IP drivers and northbound Sparkplug application, and customizing the extended Modbus TCP protocol, which significantly improved the point acquisition efficiency.
+In May, we released Neuron 2.0.1, of which some problems discovered in v2.0.0 are fixed. We mainly focused on the development of new drivers, adding the southbound BACnet/IP and KNXnet/IP drivers and northbound Sparkplug application, and customizing the extended [Modbus](https://www.emqx.com/en/blog/modbus-protocol-the-grandfather-of-iot-communication) TCP protocol, which significantly improved the point acquisition efficiency.
 
 ## KNXnet/IP Divers
 

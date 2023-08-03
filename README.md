@@ -51,7 +51,7 @@ Get to know the preferred protocol in IoT from beginner to master.
 - [Open MQTT Benchmarking Comparison: MQTT Brokers in 2023](https://github.com/emqx/blog/blob/main/en/202305/open-mqtt-benchmarking-comparison-mqtt-brokers-in-2023.md)
 - [Serverless or Hosting? Choose a Suitable MQTT Service for Your Project](https://github.com/emqx/blog/blob/main/en/202304/serverless-or-hosting-choose-a-suitable-mqtt-service-for-your-project.md)
 - [QUIC Protocol: the Features, Use Cases and Impact for IoT/IoV](https://github.com/emqx/blog/blob/main/en/202304/quic-protocol-the-features-use-cases-and-impact-for-iot-iov.md)
-- [A Comprehensive Comparison of Open Source MQTT Brokers 2023](https://github.com/emqx/blog/blob/main/en/202304/a-comprehensive-comparison-of-open-source-mqtt-brokers-in-2023.md)
+- [Comparison of Open Source MQTT Brokers 2023](https://github.com/emqx/blog/blob/main/en/202304/a-comprehensive-comparison-of-open-source-mqtt-brokers-in-2023.md)
 - [Open MQTT Benchmarking Comparison: EMQX vs VerneMQ](https://github.com/emqx/blog/blob/main/en/202304/open-mqtt-benchmarking-comparison-emqx-vs-vernemq.md)
 - [Open MQTT Benchmarking Comparison: EMQX vs NanoMQ](https://github.com/emqx/blog/blob/main/en/202304/open-mqtt-benchmarking-comparison-emqx-vs-nanomq.md)
 - [Open MQTT Benchmarking Comparison: EMQX vs Mosquitto](https://github.com/emqx/blog/blob/main/en/202304/open-mqtt-benchmarking-comparison-emqx-vs-mosquitto.md)
@@ -113,13 +113,14 @@ Best practice of MQTT in various clients.
 - [Comparison of Python MQTT Clients](https://github.com/emqx/blog/blob/main/en/202010/comparision-of-python-mqtt-client.md)
 - [How to use MQTT in Golang](https://github.com/emqx/blog/blob/main/en/202009/how-to-use-mqtt-in-golang.md)
 - [Using MQTT in The Flutter Project](https://github.com/emqx/blog/blob/main/en/202007/using-mqtt-in-flutter.md)
-- [Connect Android Client to MQTT Broker with Kotlin](https://github.com/emqx/blog/blob/main/en/202006/android-connects-mqtt-using-kotlin.md)
+- [Android and MQTT: Step by Step Guide](https://github.com/emqx/blog/blob/main/en/202006/android-connects-mqtt-using-kotlin.md)
 - [ESP8266 Connects to MQTT Broker with Arduino](https://github.com/emqx/blog/blob/main/en/202005/esp8266-connects-to-the-public-mqtt-broker.md)
 - [Upload Sensor Data to MQTT Cloud Service via NodeMCU (ESP8266)](https://github.com/emqx/blog/blob/main/en/201912/upload-sensor-data-to-mqtt-cloud-service-via-nodemcu-esp8266.md)
 
 
 ## [MQTT Security](https://www.emqx.com/en/blog/category/security)
 
+- [Authorization in MQTT: Using ACLs to Control Access to MQTT Messaging](https://github.com/emqx/blog/blob/main/en/202308/authorization-in-mqtt-using-acls-to-control-access-to-mqtt-messaging.md)
 - [5 Strategies for Strengthening MQTT Infrastructure Security](https://github.com/emqx/blog/blob/main/en/202307/five-strategies-for-strengthening-mqtt-infrastructure-security.md)
 - [Improve the Reliability and Security of MQTT Broker With Rate Limit](https://github.com/emqx/blog/blob/main/en/202306/improve-the-reliability-and-security-of-mqtt-broker-with-rate-limit.md)
 - [Fortifying MQTT Communication Security With SSL/TLS](https://github.com/emqx/blog/blob/main/en/202306/fortifying-mqtt-communication-security-with-ssl-tls.md)
@@ -355,7 +356,7 @@ Build a reliable, efficient and industry-specific Internet of Vehicles platform 
 - [What Is V2X and The Future of Vehicle to Everything Connectivity](https://github.com/emqx/blog/blob/main/en/202306/what-is-v2x-and-the-future-of-vehicle-to-everything-connectivity.md)
 - [CAN Bus: How It Works, Pros and Cons, and Fast Local Processing Tutorial](https://github.com/emqx/blog/blob/main/en/202305/can-bus-how-it-works-pros-and-cons.md)
 - [QUIC Protocol: the Features, Use Cases and Impact for IoT/IoV](https://github.com/emqx/blog/blob/main/en/202304/quic-protocol-the-features-use-cases-and-impact-for-iot-iov.md)
-- [Connected Cars and Automotive Connectivity: All You Need to Know](https://github.com/emqx/blog/blob/main/en/202304/connected-cars-and-automotive-connectivity-all-you-need-to-know.md)
+- [What is a Connected Car? All You Need to Know](https://github.com/emqx/blog/blob/main/en/202304/connected-cars-and-automotive-connectivity-all-you-need-to-know.md)
 - [How to Achieve Flexible Data Collection for Internet of Vehicles](https://github.com/emqx/blog/blob/main/en/202212/how-to-achieve-flexible-data-collection-for-internet-of-vehicles.md)
 - [MQTT Communication Optimization Practices for Internet of Vehicles Mobile Scenarios](https://github.com/emqx/blog/blob/main/en/202212/mqtt-communication-optimization-practices-for-iov.md)
 - [Design of Million-Level Message Throughput Architecture for an IoV Platform](https://github.com/emqx/blog/blob/main/en/202205/million-level-message-throughput-architecture-design-for-internet-of-vehicles.md)
@@ -369,6 +370,7 @@ Build a reliable, efficient and industry-specific Internet of Vehicles platform 
 
 ## [Industrial IoT | Unified Namespace | Sparkplug](https://www.emqx.com/en/blog/category/industrial-iot)
 
+- [IIoT Explained: Examples, Technologies, Benefits and Challenges](https://github.com/emqx/blog/blob/main/en/202308/iiot-explained-examples-technologies-benefits-and-challenges.md)
 - [The Smart Manufacturing Revolution: Examples, Tech & Tips](https://github.com/emqx/blog/blob/main/en/202307/the-smart-manufacturing-revolution.md)
 - [Bridging TwinCAT Data to MQTT: Introduction and Hands-on Tutorial](https://github.com/emqx/blog/blob/main/en/202307/bridging-twincat-data-to-mqtt.md)
 - [MQTT Sparkplug in Action: A Step-by-Step Tutorial](https://github.com/emqx/blog/blob/main/en/202307/mqtt-sparkplug-in-action-a-step-by-step-tutorial.md)

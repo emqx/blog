@@ -1,4 +1,4 @@
-五月，我们发布了 Neuron 2.0.1，该版本主要修复了一些在 2.0.0 版本中发现的问题。此外，这个月我们主要专注于新驱动的开发，新增了南向 BACnet/IP、KNXnet/IP 驱动，北向 Sparkplug 应用，以及定制扩展了 Modbus TCP 协议，极大提高了点位采集效率。
+五月，我们发布了 Neuron 2.0.1，该版本主要修复了一些在 2.0.0 版本中发现的问题。此外，这个月我们主要专注于新驱动的开发，新增了南向 BACnet/IP、KNXnet/IP 驱动，北向 Sparkplug 应用，以及定制扩展了 [Modbus](https://www.emqx.com/zh/blog/modbus-protocol-the-grandfather-of-iot-communication) TCP 协议，极大提高了点位采集效率。
 
 ## KNXnet/IP 驱动
 
