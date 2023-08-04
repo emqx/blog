@@ -1,4 +1,4 @@
-Google Cloud will discontinue its IoT Core service on August 16, 2023, leaving IIoT companies with the need to find an alternative. 
+Google Cloud will discontinue its IoT Core service on August 16, 2023, leaving [IIoT](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges) companies with the need to find an alternative. 
 
 Given that Google IoT Core is based on MQTT, the best alternative options for seamless migration undoubtedly are MQTT-based IoT messaging platforms or services. With its features of 100% compliant with MQTT 3.x/ 5.0, fully-managed MQTT service and deeply integrated with GCP, [EMQX Cloud](https://www.emqx.com/en/cloud) becomes one of the best choices for former IoT Core users.
 

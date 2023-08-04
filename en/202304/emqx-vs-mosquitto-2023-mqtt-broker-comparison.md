@@ -30,7 +30,7 @@ Mosquitto is written in C/C++ and uses a single-threaded architecture. Mosquitto
 
 ## EMQX Overview
 
-The EMQX project was launched on GitHub in 2012 and is licensed under Apache version 2.0. EMQX is now the world's most scalable MQTT messaging server that supports advanced features such as MQTT 5.0, MQTT-SN, and MQTT over QUIC. It is widely used in business-critical applications in IoT, Industrial IoT (IIoT), and the Internet of Vehicles (IoV).
+The EMQX project was launched on GitHub in 2012 and is licensed under Apache version 2.0. EMQX is now the world's most scalable MQTT messaging server that supports advanced features such as MQTT 5.0, MQTT-SN, and MQTT over QUIC. It is widely used in business-critical applications in IoT, Industrial IoT ([IIoT](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges)), and the Internet of Vehicles (IoV).
 
 EMQX is written in Erlang/OTP, a programming language for building massively scalable soft real-time systems. Unlike Mosquitto, EMQX has adopted a masterless distributed architecture from its inception to achieve high availability and horizontal scalability. EMQX 5.0, the latest version, scales to establish 100 million concurrent MQTT connections with a single cluster of 23 nodes.
 

@@ -102,7 +102,7 @@ The following articles will help you evaluate and select the best MQTT broker fo
 
 - **[Top 3 Open Source MQTT Brokers for Industrial IoT in 2023](https://www.emqx.com/en/blog/top-3-open-source-mqtt-brokers-for-industrial-iot-in-2023)**
 
-  This article compares the top 3 MQTT brokers for IIoT in 2023, including each broker's advantages, disadvantages, and use cases.
+  This article compares the top 3 MQTT brokers for [IIoT](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges) in 2023, including each broker's advantages, disadvantages, and use cases.
 
 - **[EMQX vs Mosquitto | 2023 MQTT Broker Comparison](https://www.emqx.com/en/blog/emqx-vs-mosquitto-2023-mqtt-broker-comparison)**
 

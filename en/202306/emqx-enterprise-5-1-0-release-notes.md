@@ -78,7 +78,7 @@ In IoT applications, alongside real-time data transmissions, there is often a ne
 
   Enable bulk upload of vehicle telemetry data, addressing network issues that hinder immediate transmission and facilitating data batch uploads to cloud platforms or data centers.
 
-- **Industrial Internet of Things (IIoT):** Unified Reporting of Unstructured Production Data
+- **Industrial Internet of Things ([IIoT](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges)):** Unified Reporting of Unstructured Production Data
 
   Facilitate the unified reporting of unstructured production data, including text, images, and videos, from industrial environments to servers or cloud platforms.
 

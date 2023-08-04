@@ -98,7 +98,7 @@ You can create an MQTT broker through private deployment or a fully managed clou
 
 - **Private deployment**
 
-  [EMQX](https://www.emqx.io/) is the most scalable open-source MQTT broker for IoT, IIoT, and connected vehicles. You can run the following Docker command to install EMQX.
+  [EMQX](https://www.emqx.io/) is the most scalable open-source MQTT broker for IoT, [IIoT](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges), and connected vehicles. You can run the following Docker command to install EMQX.
 
   ```apache
   docker run -d --name emqx -p 1883:1883 -p 8083:8083 -p 8084:8084 -p 8883:8883 -p 18083:18083 emqx/emqx

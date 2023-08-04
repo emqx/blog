@@ -4,7 +4,7 @@ This year marks a significant milestone for EMQ. Ten years back, on December 17,
 
 <center>First EMQX Commit to GitHub</center>
 
-EMQX was born in a cafe out of a personal enthusiasm for Erlang, MQTT, and open source. Today, EMQX has emerged as one of the most influential Erlang open-source projects for IoT users. It has more than 10K stars on GitHub and has been downloaded more than 20M times. EMQX has grown into the world's most scalable MQTT broker—at the core of mission-critical applications in IoT, IIoT, connected vehicles, and more. It boasts over 20,000 enterprise users and connects over 100M IoT devices worldwide.
+EMQX was born in a cafe out of a personal enthusiasm for Erlang, MQTT, and open source. Today, EMQX has emerged as one of the most influential Erlang open-source projects for IoT users. It has more than 10K stars on GitHub and has been downloaded more than 20M times. EMQX has grown into the world's most scalable MQTT broker—at the core of mission-critical applications in IoT, [IIoT](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges), connected vehicles, and more. It boasts over 20,000 enterprise users and connects over 100M IoT devices worldwide.
 
 ![Birthplace of EMQX](https://assets.emqx.com/images/3c179bf5303b62b1c71005d327977b67.png)
 

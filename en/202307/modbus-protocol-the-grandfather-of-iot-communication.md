@@ -112,7 +112,7 @@ Despite these limitations, the Modbus protocol remains a popular choice for many
 
 ## Integrating the Modbus Protocol with the Industrial Internet of Things (IIoT): Neuron and EMQX
 
-With the growth of the Industrial Internet of Things (IIoT), there are many opportunities for the integration of Modbus protocol with modern IoT devices for automation, control, and data analytics. With IIoT, Modbus devices can now be part of a much larger, interconnected system, where data from these devices can be collected, analyzed, and utilized to optimize operations, improve safety, and reduce costs.
+With the growth of the Industrial Internet of Things ([IIoT](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges)), there are many opportunities for the integration of Modbus protocol with modern IoT devices for automation, control, and data analytics. With IIoT, Modbus devices can now be part of a much larger, interconnected system, where data from these devices can be collected, analyzed, and utilized to optimize operations, improve safety, and reduce costs.
 
 [Neuron](https://neugates.io/) is an open source edge industrial protocol gateway, which provides support for various Modbus drivers, including Modbus TCP, Modbus RTU, Modbus UDP, and Modbus RTU over TCP. These Modbus drivers enable seamless integration of Modbus-enabled devices with Industrial Internet of Things applications. They allow Neuron to communicate with a wide range of industrial devices using different Modbus variants and protocols, enabling data acquisition, control, and interoperability with other components of the solution.
 

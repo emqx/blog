@@ -8,7 +8,7 @@ We'll compare these two brokers in the second post of the "[2023 MQTT Broker Com
 
 ## EMQX Overview
 
-EMQX is the world's most scalable MQTT messaging server and is widely used in mission-critical business scenarios such as the IoT, Industrial IoT (IIoT), and Internet of Vehicles (IoV).
+EMQX is the world's most scalable MQTT messaging server and is widely used in mission-critical business scenarios such as the IoT, Industrial IoT ([IIoT](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges)), and Internet of Vehicles (IoV).
 
 EMQX is written in Erlang/OTP and adopts a masterless distributed architecture to achieve high availability and horizontal scalability.
 

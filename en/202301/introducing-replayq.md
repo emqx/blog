@@ -1,4 +1,4 @@
-EMQX is the most scalable MQTT broker for IoT, IIoT, and connected vehicles. It is also highly extendable to integrate with various databases and streaming platforms. EMQX Enterprise’s Rule-Engine provides a rich set of data integrations out of the box. To name a few: PostgreSQL, MySQL, InfluxDB, and Kafka.
+EMQX is the most scalable MQTT broker for IoT, [IIoT](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges), and connected vehicles. It is also highly extendable to integrate with various databases and streaming platforms. EMQX Enterprise’s Rule-Engine provides a rich set of data integrations out of the box. To name a few: PostgreSQL, MySQL, InfluxDB, and Kafka.
 
 You can find the complete list in [EMQX Enterprise documents](https://docs.emqx.com/en/enterprise/v4.4/rule/rule-engine.html).
 
