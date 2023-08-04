@@ -182,7 +182,7 @@ In this blog, we introduced the overall process of bridging TwinCAT data to MQTT
 
 As a widely used platform for industrial automation, TwinCAT is adopted in a variety of industries, including automotive, aerospace, food and beverage, and more. Neuron, with its powerful connectivity for Industrial IoT, facilitates the data collection from TwinCAT PLCs and seamless transmission of the acquired data to the cloud for convenient remote control and monitoring whenever necessary. 
 
-Neuron also supports other industrial protocols like Modbus, OPC UA, SIEMENS, and more. For more bridging tutorials, read our post: [Bridging Modbus Data to MQTT for IIoT:  A Step-by-Step Tutorial](https://www.emqx.com/en/blog/bridging-modbus-data-to-mqtt-for-iiot#the-architecture-of-modbus-to-mqtt-bridging).
+Neuron also supports other industrial protocols like [Modbus](https://www.emqx.com/en/blog/modbus-protocol-the-grandfather-of-iot-communication), OPC UA, SIEMENS, and more. For more bridging tutorials, read our post: [Bridging Modbus Data to MQTT for IIoT:  A Step-by-Step Tutorial](https://www.emqx.com/en/blog/bridging-modbus-data-to-mqtt-for-iiot#the-architecture-of-modbus-to-mqtt-bridging).
 
 
 

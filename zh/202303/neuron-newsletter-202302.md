@@ -26,7 +26,7 @@ Profinet 是一个通过以太网通信的现场总线。Neuron 将作为 Profin
 
 本月我们对如下问题进行了修复：
 
-- Modbus RTU 配置页面未能根据 schema 正确切换
+- [Modbus](https://www.emqx.com/zh/blog/modbus-protocol-the-grandfather-of-iot-communication) RTU 配置页面未能根据 schema 正确切换
 - 配置多个 OPC UA node 时，SSL 证书导致的连接异常
 - ADS 插件多线程数据竞争
 - S7Comm 插件某些情况下异常退出

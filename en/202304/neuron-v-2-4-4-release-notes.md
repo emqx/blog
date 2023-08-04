@@ -1,4 +1,4 @@
-In April 2023, [Neuron](https://neugates.io/) open-sourced the Modbus RTU/TCP to replace the previous Modbus TCP driver. The new Modbus RTU/TCP driver has better compatibility and supports both Client/Server modes, enabling it to adapt to more industrial devices. In addition, to facilitate user trial and evaluation, the latest version allows trial usage of the plugin without the need to import a license. 
+In April 2023, [Neuron](https://neugates.io/) open-sourced the [Modbus](https://www.emqx.com/en/blog/modbus-protocol-the-grandfather-of-iot-communication) RTU/TCP to replace the previous Modbus TCP driver. The new Modbus RTU/TCP driver has better compatibility and supports both Client/Server modes, enabling it to adapt to more industrial devices. In addition, to facilitate user trial and evaluation, the latest version allows trial usage of the plugin without the need to import a license. 
 
 ## Modbus RTU/TCP Open Sourced
 

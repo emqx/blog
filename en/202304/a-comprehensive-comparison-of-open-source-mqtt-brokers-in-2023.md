@@ -1,6 +1,6 @@
 ## Introduction
 
-MQTT (Message Queue Telemetry Transport), originally designed as a lightweight publish/subscribe messaging transport, is now the de facto standard messaging protocol for the Internet of Things (IoT). An [MQTT Broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) is critical in connecting clients, such as IoT devices, and moving MQTT messages between them.
+[MQTT (Message Queue Telemetry Transport)](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt), originally designed as a lightweight publish/subscribe messaging transport, is now the de facto standard messaging protocol for the Internet of Things (IoT). An [MQTT Broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) is critical in connecting clients, such as IoT devices, and moving MQTT messages between them.
 
 ![publish/subscribe](https://assets.emqx.com/images/b5d67261f50a597d5d37b97eebc1cdf5.png)
 
@@ -181,7 +181,7 @@ Before we dive into the comparison of features and capabilities of these MQTT br
 - Scalability: Can the broker scale horizontally to handle millions of concurrent MQTT connections?
 - Availability: Does the broker support highly available clustering for mission-critical applications?
 - Performance: How many [QoS/0/1/2](https://www.emqx.com/en/blog/introduction-to-mqtt-qos) MQTT messages per second can the broker route and deliver?
-- Latency:  How fast can the broker dispatch and deliver an MQTT message from one client to another?
+- Latency:  How fast can the broker dispatch and deliver an MQTT message from one [MQTT client](https://www.emqx.com/en/blog/mqtt-client-tools) to another?
 - Reliability:  Does the broker support MQTT message persistence and delivery without data loss?
 
 Below is a brief analysis of the four MQTT brokers: 
@@ -243,7 +243,7 @@ EMQX and NanoMQ have committed to advancing the MQTT standard. They are pioneers
 
 ## Security, Authentication & Authorization
 
-Security is crucial for connecting IoT devices and data exchanged between connected devices using MQTT brokers. All the compared brokers support secure connections based on TLS/SSL and authentication and authorization mechanisms such as [username/password](https://www.emqx.com/en/blog/securing-mqtt-with-username-and-password-authentication), JWT, X.509 certificates, and access control lists. 
+Security is crucial for connecting IoT devices and data exchanged between connected devices using MQTT brokers. All the compared brokers support secure connections based on TLS/SSL and authentication and authorization mechanisms such as [username/password](https://www.emqx.com/en/blog/securing-mqtt-with-username-and-password-authentication), JWT, X.509 certificates, and [access control lists](https://www.emqx.com/en/blog/authorization-in-mqtt-using-acls-to-control-access-to-mqtt-messaging). 
 
 Additionally, EMQX offers advanced security features like integration with external databases, OCSP Stapling, fine-grained access control policies, flapping detection, and support for OAuth 2.0 authorization.
 

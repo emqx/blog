@@ -1,6 +1,6 @@
 ## Modbus Introduction
 
-Modbus is a serial communication protocol used to connect industrial automation devices. Originally developed by Modicon in 1979, it has evolved into one of the universal communication standards widely used in industrial automation scenarios.
+[Modbus](https://www.emqx.com/en/blog/modbus-protocol-the-grandfather-of-iot-communication) is a serial communication protocol used to connect industrial automation devices. Originally developed by Modicon in 1979, it has evolved into one of the universal communication standards widely used in industrial automation scenarios.
 
 Modbus adopts a master-slave mode and supports multiple transmission modes, including serial (RS-232/485) and Ethernet versions (TCP/IP). It is mainly used for monitoring and controlling automation equipment such as sensors, motors, and PLCs. It facilitates data exchange between devices and enables the transmission of control commands, allowing different devices to coordinate with each other.
 

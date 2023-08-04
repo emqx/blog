@@ -32,7 +32,7 @@ Both unit test and function test have been added to the daily development proces
 
 At the same time, we fixed the following problems in the previous version:
 
-- Modbus TCP read/write function test failed
+- [Modbus](https://www.emqx.com/en/blog/modbus-protocol-the-grandfather-of-iot-communication) TCP read/write function test failed
 - Memory leak in Data Value shared mode
 - Neuron sometimes crashes when using Control-C to exit
 - Neuron sometimes fails to exit with Control-C

@@ -1,5 +1,7 @@
 In today's rapidly advancing technological landscape, the automotive industry is undergoing a transformative shift. Software-defined vehicles (SDVs) are at the forefront of this revolution, offering unprecedented levels of connectivity, automation, and data-driven insights. As these SDVs generate massive amounts of data, the need for efficient and real-time processing becomes paramount. 
 
+> Related content: [What is a Connected Car? All You Need to Know](https://www.emqx.com/en/blog/connected-cars-and-automotive-connectivity-all-you-need-to-know)
+
 In this blog, we will delve into stream processing for SDV data and how it contributes to enhancing safety, optimizing performance, and revolutionizing the user experience within software-defined vehicles.
 
 ## What Are Software-Define Vehicles?
