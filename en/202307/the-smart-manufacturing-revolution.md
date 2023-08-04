@@ -74,7 +74,7 @@ Finally, cloud computing is a key enabler of smart manufacturing. It provides a 
 
 ## What is the Industrial Internet of Things (IIoT)?
 
-The Industrial Internet of Things (IIoT) is a significant facet of smart manufacturing. It refers to the interconnectedness of industrial equipment, facilities, personnel, and processes. By connecting devices and systems in the industrial environment, valuable data can be captured, analyzed, and utilized to improve operational efficiency and productivity.
+The Industrial Internet of Things ([IIoT](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges)) is a significant facet of smart manufacturing. It refers to the interconnectedness of industrial equipment, facilities, personnel, and processes. By connecting devices and systems in the industrial environment, valuable data can be captured, analyzed, and utilized to improve operational efficiency and productivity.
 
 IIoT is an expansion of the IoT, tailored to the industrial sector. It includes machine-to-machine communication, enabling systems to interact and collaborate, creating an intelligent network of machines and people that can monitor, collect, exchange, and analyze data. This data is then utilized to improve manufacturing processes, enhance supply chain management, and make the overall operation more efficient and effective.
 

@@ -1,6 +1,6 @@
 ## Introduction
 
-[Sparkplug](https://www.emqx.com/en/blog/sparkplug-3-0-advancements-and-formalization-in-mqtt-for-iiot) is an Industrial IoT protocol that provides a standardized way to communicate with industrial devices and applications. An efficient, comprehensive Sparkplug solution can facilitate communication between devices and applications and empower the decision-making of IIoT adopters through insights from data.
+[Sparkplug](https://www.emqx.com/en/blog/sparkplug-3-0-advancements-and-formalization-in-mqtt-for-iiot) is an Industrial IoT protocol that provides a standardized way to communicate with industrial devices and applications. An efficient, comprehensive Sparkplug solution can facilitate communication between devices and applications and empower the decision-making of [IIoT](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges) adopters through insights from data.
 
 This blog will give a practical example of implementing an [MQTT Sparkplug](https://www.emqx.com/en/blog/mqtt-sparkplug-bridging-it-and-ot-in-industry-4-0) solution using EMQX and Neuron.
 

@@ -102,7 +102,7 @@ OPC-UA provides built-in support for data compression, but the data compression 
 
 From the comparison above, we can conclude that the Sparkplug protocol is the most efficient protocol for industrial usage. It provides native support for the "report on change" mechanism, making them well-suited for efficient transmission of data updates. It also has low connection overhead due to its lightweight protocols and persistent connection models, ensuring continuous communication and efficient message delivery. 
 
-Both [EMQX](https://www.emqx.com/en/products/emqx) and [Neuron](https://neugates.io/) support the Sparkplug protocol. EMQX provides advanced features such as load balancing, clustering, and message persistence, ensuring the efficient and reliable transmission of data using the Sparkplug protocol, whereas  Neuron provides features like data aggregation and device management, allowing for handling large-scale deployments of IIoT devices.
+Both [EMQX](https://www.emqx.com/en/products/emqx) and [Neuron](https://neugates.io/) support the Sparkplug protocol. EMQX provides advanced features such as load balancing, clustering, and message persistence, ensuring the efficient and reliable transmission of data using the Sparkplug protocol, whereas  Neuron provides features like data aggregation and device management, allowing for handling large-scale deployments of [IIoT](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges) devices.
 
 
 

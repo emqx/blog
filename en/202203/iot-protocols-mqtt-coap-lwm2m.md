@@ -102,7 +102,7 @@ The data transmission rate of LoRaWAN ranges from 0.3 kbps to 37.5 kbps. In orde
 
 ### Market Conditions
 
-LoRa is extremely flexible for rural or indoor applications in Smart Agriculture, Smart City, Industrial Internet of Things (IIoT), Smart Environment, Smart Home and Buildings, Smart Utilities and Metrology, and Intelligent Supply Chain and Logistics.
+LoRa is extremely flexible for rural or indoor applications in Smart Agriculture, Smart City, Industrial Internet of Things ([IIoT](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges)), Smart Environment, Smart Home and Buildings, Smart Utilities and Metrology, and Intelligent Supply Chain and Logistics.
 
 LoRa is convenient for networking. By using strong penetrating power, LoRa can be connected to a large range of equipment at low cost. Compared with the access through NB-IoT and SIM card of the operator, LoRa does not need to change the card or pay fees every year, so it has a lower cost for long-term use.
 

@@ -122,7 +122,7 @@ In addition, some MQTT brokers, such as EMQX, also provide online and offline ev
 
 ### Industrial IoT
 
-MQTT is also used extensively in Industrial IoT (IIoT) applications. In these applications, various sensors and devices in a factory are connected to a central server, which monitors and controls the devices.
+MQTT is also used extensively in Industrial IoT ([IIoT](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges)) applications. In these applications, various sensors and devices in a factory are connected to a central server, which monitors and controls the devices.
 
 For instance, a temperature sensor in a furnace might publish its readings to an MQTT broker on the server. The server, which is subscribed to the sensor's topic, receives the readings and can take appropriate action if the temperature exceeds a certain threshold. This enables real-time monitoring and control of factory operations, improving efficiency and safety.
 

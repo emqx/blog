@@ -2,7 +2,7 @@
 
 Sparkplug is an MQTT-base communication protocol designed specifically for industrial automation and IoT applications. To implement a Sparkplug solution, two essential components must be in place. One is an [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) for message distribution and management; the other is an edge node to connect local devices to the broker to enable real-time data processing and analysis.
 
-In this article, we will use [EMQX](https://www.emqx.io/), an open-source distributed MQTT broker, and [Neuron](https://neugates.io/), an edge IIoT connectivity server, to provide a scalable and robust platform for building Sparkplug solutions. We will delve into the architecture of Sparkplug solution and the roles that EMQX and Neuron play. 
+In this article, we will use [EMQX](https://www.emqx.io/), an open-source distributed MQTT broker, and [Neuron](https://neugates.io/), an edge [IIoT](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges) connectivity server, to provide a scalable and robust platform for building Sparkplug solutions. We will delve into the architecture of Sparkplug solution and the roles that EMQX and Neuron play. 
 
 ## The Role of EMQX
 
