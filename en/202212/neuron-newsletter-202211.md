@@ -31,7 +31,7 @@ PMC data come from message demand, counter, data table, extended relay, single t
 
 ## Bug fix
 
-- Fix the issue that caused a reconnection exception when the MODBUS plugin is in server mode.
+- Fix the issue that caused a reconnection exception when the [Modbus](https://www.emqx.com/en/blog/modbus-protocol-the-grandfather-of-iot-communication) plugin is in server mode.
 
 
 

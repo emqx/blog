@@ -1,10 +1,12 @@
 Internet of Vehicles（IoV）is a typical application of IoT technology in the field of transportation systems. To some extent, the integration layout and collaborative development of relevant technical fields involved in the IoV industry are connected with the IoT. As an open source IoT data infrastructure software supplier, [EMQ](https://www.emqx.com/en) has provided IoT infrastructure software with cloud-edge collaboration for many customers in the field of IoV for many years.  Thus realizing the unified connection of people, vehicles, roads and clouds, and creating intelligent networking, autonomous driving and V2X scenario solutions for vehicle manufacturers, T1 suppliers, aftermarket service providers, travel service companies, etc.
 
+> Related content: [What is a Connected Car? All You Need to Know](https://www.emqx.com/en/blog/connected-cars-and-automotive-connectivity-all-you-need-to-know)
+
 In this series of articles, we will share how to build a reliable, efficient and industry-specific Internet of Vehicles platform based on EMQ's practical experience in the field of Internet of Vehicles, from theoretical knowledge such as protocol selection to practical operations such as platform architecture design.
 
 ## Preface
 
-The [MQTT protocol](https://www.emqx.com/en/mqtt-guide) has long been a well-deserved mainstream protocol in the field of IoT. It has been widely used in the building of IoT platforms in many industries by virtue of its characteristics of lightweight, high efficiency, reliability, security and two-way communication. So what about the application of the MQTT protocol in the IoV industry?
+The [MQTT protocol](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) has long been a well-deserved mainstream protocol in the field of IoT. It has been widely used in the building of IoT platforms in many industries by virtue of its characteristics of lightweight, high efficiency, reliability, security and two-way communication. So what about the application of the MQTT protocol in the IoV industry?
 
 Based on EMQ’s use cases in the IoV industry, this article will compare the advantages and disadvantages of different IoT communication protocols in the construction of IoV platforms, and share how enterprises can select appropriate MQTT messaging products and services based on their own conditions, as well as the most popular technical solutions in data transmission security, data integration and so on.
 

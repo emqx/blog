@@ -31,7 +31,7 @@ PMC 数据支持采集的数据区域包括 message demand、counter、data tabl
 
 ## 问题修复
 
-- 修复 MODBUS 插件处于 server 模式时重连异常的问题。
+- 修复 [Modbus](https://www.emqx.com/zh/blog/modbus-protocol-the-grandfather-of-iot-communication) 插件处于 server 模式时重连异常的问题。
 
 
 

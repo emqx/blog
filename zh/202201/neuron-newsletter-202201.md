@@ -32,7 +32,7 @@ alpha.2 版本中为 Neuron 增加了持久化功能，可以将 Neuron 的运�
 
 同时，我们对上一版本中的以下问题进行了修复：
 
-- Modbus TCP 读写功能测试失败的问题
+- [Modbus](https://www.emqx.com/zh/blog/modbus-protocol-the-grandfather-of-iot-communication) TCP 读写功能测试失败的问题
 - Data Value 共享模式下的内存泄漏的问题
 - Neuron 有时使用 Control-C 退出崩溃的问题
 - Neuron 有时使用 Control-C 不能成功推出的问题

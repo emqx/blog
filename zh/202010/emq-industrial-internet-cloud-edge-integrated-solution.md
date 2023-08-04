@@ -50,7 +50,7 @@
 **产品基本功能描述**
 
 1. Neuron：工业物联网数据采集
-   - 支持了 Modbus，OPCUA，IEC61850，IEC104 和 BACnet 等众多协议和设备；
+   - 支持了 [Modbus](https://www.emqx.com/zh/blog/modbus-protocol-the-grandfather-of-iot-communication)，OPCUA，IEC61850，IEC104 和 BACnet 等众多协议和设备；
    - 管理控制台，用户可以在浏览器中进行可视化的配置，实现跨工业设备数据的接入；
    - 北向标准 MQTT 数据发送，根据用户指定配置，将数据发送至指定的 MQTT 消息服务器中；
    - 南向控制接口，结合 Kuiper 提供的规则引擎功能，实现基于规则的设备控制；

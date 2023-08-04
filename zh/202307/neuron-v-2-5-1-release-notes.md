@@ -1,6 +1,6 @@
 工业协议网关软件 Neuron 2.5.1 版本现已正式发布！
 
-最新版本带来了基于南向设备的模版、Modbus UDP 传输支持、Modbus 读重试支持、IEC104 高可用主备访问模式等新功能。同时新增了 Profinet IO、Mitsubishi FX、Omron FINS UDP、Panasonic Mewtocol 和 DLT645-1997 五种南向驱动。
+最新版本带来了基于南向设备的模版、[Modbus](https://www.emqx.com/en/blog/modbus-protocol-the-grandfather-of-iot-communication) UDP 传输支持、Modbus 读重试支持、IEC104 高可用主备访问模式等新功能。同时新增了 Profinet IO、Mitsubishi FX、Omron FINS UDP、Panasonic Mewtocol 和 DLT645-1997 五种南向驱动。
 
 此外，从该版本开始，我们对产品进行了如下调整： 
 

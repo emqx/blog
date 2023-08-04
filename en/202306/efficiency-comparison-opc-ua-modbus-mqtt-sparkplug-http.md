@@ -1,4 +1,4 @@
-OPC-UA, HTTP, Modbus, [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt), and Sparkplug are common and popular technologies used in industrial communication, each designed for specific levels and purposes of communication. 
+OPC-UA, HTTP, [Modbus](https://www.emqx.com/en/blog/modbus-protocol-the-grandfather-of-iot-communication), [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt), and Sparkplug are common and popular technologies used in industrial communication, each designed for specific levels and purposes of communication. 
 
 OPC-UA is often used in floor plant environments, HTTP is commonly used for internet communication, MQTT is suitable for on-premises or cloud platform communication, and Modbus is prevalent in device-level communication.
 
