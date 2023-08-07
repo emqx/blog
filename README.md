@@ -313,6 +313,7 @@ The easiest way to start MQTT service. Connect your IoT devices to any cloud wit
 ## [EMQX Enterprise](https://www.emqx.com/en/blog/category/enterprise)
 The world's most scalable and reliable MQTT messaging platform to connect, move and process your data in business-critical scenarios for the IoT era.
 
+- [MQTT Performance Benchmark Testing: EMQX-MongoDB Integration](https://github.com/emqx/blog/blob/main/en/202308/mqtt-performance-benchmark-testing-emqx-mongodb-integration.md)
 - [EMQX MQTT Broker Troubleshooting: Authentication Issues](https://github.com/emqx/blog/blob/main/en/202307/emqx-mqtt-broker-authentication-troubleshooting.md)
 - [File Transfer over MQTT: Transfer Large Payloads via One Protocol with Ease](https://github.com/emqx/blog/blob/main/en/202307/file-transfer-over-mqtt.md)
 - [MQTT Performance Benchmark Testing: EMQX-InfluxDB Integration](https://github.com/emqx/blog/blob/main/en/202307/mqtt-performance-benchmark-testing-emqx-influxdb-integration.md)
@@ -354,6 +355,7 @@ Build a reliable, efficient and industry-specific Internet of Vehicles platform 
 
 - [Data Stream Processing for Software-Defined Vehicle](https://github.com/emqx/blog/blob/main/en/202306/data-stream-processing-for-software-defined-vehicle.md)
 - [What Is V2X and The Future of Vehicle to Everything Connectivity](https://github.com/emqx/blog/blob/main/en/202306/what-is-v2x-and-the-future-of-vehicle-to-everything-connectivity.md)
+- [Bridging Demanded Signals From CAN Bus to MQTT by eKuiper](https://github.com/emqx/blog/blob/main/en/202306/bridging-demanded-signals-from-can-bus-to-mqtt-by-ekuiper.md)
 - [CAN Bus: How It Works, Pros and Cons, and Fast Local Processing Tutorial](https://github.com/emqx/blog/blob/main/en/202305/can-bus-how-it-works-pros-and-cons.md)
 - [QUIC Protocol: the Features, Use Cases and Impact for IoT/IoV](https://github.com/emqx/blog/blob/main/en/202304/quic-protocol-the-features-use-cases-and-impact-for-iot-iov.md)
 - [What is a Connected Car? All You Need to Know](https://github.com/emqx/blog/blob/main/en/202304/connected-cars-and-automotive-connectivity-all-you-need-to-know.md)
@@ -370,6 +372,7 @@ Build a reliable, efficient and industry-specific Internet of Vehicles platform 
 
 ## [Industrial IoT | Unified Namespace | Sparkplug](https://www.emqx.com/en/blog/category/industrial-iot)
 
+- [Bridging OPC UA Data to MQTT for IIoT: A Step-by-Step Tutorial](https://github.com/emqx/blog/blob/main/en/202308/bridging-opc-ua-data-to-mqtt-for-iiot.md)
 - [IIoT Explained: Examples, Technologies, Benefits and Challenges](https://github.com/emqx/blog/blob/main/en/202308/iiot-explained-examples-technologies-benefits-and-challenges.md)
 - [The Smart Manufacturing Revolution: Examples, Tech & Tips](https://github.com/emqx/blog/blob/main/en/202307/the-smart-manufacturing-revolution.md)
 - [Bridging TwinCAT Data to MQTT: Introduction and Hands-on Tutorial](https://github.com/emqx/blog/blob/main/en/202307/bridging-twincat-data-to-mqtt.md)
