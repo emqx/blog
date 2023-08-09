@@ -120,6 +120,7 @@ Best practice of MQTT in various clients.
 
 ## [MQTT Security](https://www.emqx.com/en/blog/category/security)
 
+- [JWT Authentication and JWKS Endpoint in MQTT: Principle and a Hands-on Guide](https://github.com/emqx/blog/blob/main/en/202308/jwt-authentication-and-jwks-endpoint-in-mqtt.md)
 - [Authorization in MQTT: Using ACLs to Control Access to MQTT Messaging](https://github.com/emqx/blog/blob/main/en/202308/authorization-in-mqtt-using-acls-to-control-access-to-mqtt-messaging.md)
 - [5 Strategies for Strengthening MQTT Infrastructure Security](https://github.com/emqx/blog/blob/main/en/202307/five-strategies-for-strengthening-mqtt-infrastructure-security.md)
 - [Improve the Reliability and Security of MQTT Broker With Rate Limit](https://github.com/emqx/blog/blob/main/en/202306/improve-the-reliability-and-security-of-mqtt-broker-with-rate-limit.md)
