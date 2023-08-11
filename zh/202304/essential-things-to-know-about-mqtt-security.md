@@ -10,11 +10,11 @@
   - **[用户名/密码认证](https://www.emqx.com/zh/blog/securing-mqtt-with-username-and-password-authentication)**：用户名/密码认证方法介绍，如何在 MQTT 中使用，以及该方法可能存在的隐患与解决办法。
   - **[SCRAM 增强认证](https://www.emqx.com/zh/blog/leveraging-enhanced-authentication-for-mqtt-security)**：增强认证的作用及用法，如何通过增强认证弥补用户名/密码认证方法的不足。
   - **[其他认证方法](https://www.emqx.com/zh/blog/a-deep-dive-into-token-based-authentication-and-oauth-2-0-in-mqtt)**：Token 认证如 JWT 等。
-- 授权：权限控制与认证的区别，访问控制列表介绍。
-- 流量控制：常见流量控制策略介绍。
-- TLS/SSL：单向认证、双向认证、TLS PSK、一机一密讲解，TLS 使用注意事项。
-- 报文加密：各类加密方式与密钥管理方法介绍。
+- **[授权](https://www.emqx.com/zh/blog/authorization-in-mqtt-using-acls-to-control-access-to-mqtt-messaging)**：权限控制与认证的区别，访问控制列表介绍。
+- **[流量控制](https://www.emqx.com/zh/blog/improve-the-reliability-and-security-of-mqtt-broker-with-rate-limit)**：常见流量控制策略介绍。
+- **[TLS/SSL](https://www.emqx.com/zh/blog/fortifying-mqtt-communication-security-with-ssl-tls)**：单向认证、双向认证、TLS PSK、一机一密讲解，TLS 使用注意事项。
 - 基础设施安全：如何从基础设施方面加强物联网系统安全性。
+- 报文加密：各类加密方式与密钥管理方法介绍。
 - MQTT 模糊测试：如何通过模糊测试发现物联网系统中的安全漏洞。
 
 
