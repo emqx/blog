@@ -120,6 +120,7 @@ Best practice of MQTT in various clients.
 
 ## [MQTT Security](https://www.emqx.com/en/blog/category/security)
 
+- [JWT Authentication and JWKS Endpoint in MQTT: Principle and a Hands-on Guide](https://github.com/emqx/blog/blob/main/en/202308/jwt-authentication-and-jwks-endpoint-in-mqtt.md)
 - [Authorization in MQTT: Using ACLs to Control Access to MQTT Messaging](https://github.com/emqx/blog/blob/main/en/202308/authorization-in-mqtt-using-acls-to-control-access-to-mqtt-messaging.md)
 - [5 Strategies for Strengthening MQTT Infrastructure Security](https://github.com/emqx/blog/blob/main/en/202307/five-strategies-for-strengthening-mqtt-infrastructure-security.md)
 - [Improve the Reliability and Security of MQTT Broker With Rate Limit](https://github.com/emqx/blog/blob/main/en/202306/improve-the-reliability-and-security-of-mqtt-broker-with-rate-limit.md)
@@ -157,6 +158,8 @@ Explore more with & via EMQ.
 ## [EMQX Open Source | Broker](https://www.emqx.com/en/blog/category/emqx)
 EMQX is the world's most scalable open-source MQTT broker with a high performance that connects 100M+ IoT devices in 1 cluster, while maintaining 1M message per second throughput and sub-millisecond latency.
 
+- [MQTT Performance Benchmark Testing: EMQX-TimescaleDB Integration](https://github.com/emqx/blog/blob/main/en/202308/mqtt-performance-benchmark-series-emqx-timescaledb-integration.md)
+- [MQTT Performance Benchmark Testing: EMQX Single Node Supports 5M Connections](https://github.com/emqx/blog/blob/main/en/202308/emqx-single-node-supports-5m-connections.md)
 - [Embedded MQTT Message Storage Using RocksDB for EMQX Broker](https://github.com/emqx/blog/blob/main/en/202307/embedded-mqtt-message-storage-using-rocksdb-for-emqx-broker.md)
 - [Overcoming Address Change with MQTT over QUIC](https://github.com/emqx/blog/blob/main/en/202306/overcoming-address-change-with-mqtt-over-quic.md)
 - [MQTT Stream Processing with EMQX and eKuiper: A Quick Tutorial](https://github.com/emqx/blog/blob/main/en/202306/mqtt-stream-processing-with-emqx-and-ekuiper.md)
@@ -375,6 +378,7 @@ Build a reliable, efficient and industry-specific Internet of Vehicles platform 
 
 ## [Industrial IoT | Unified Namespace | Sparkplug](https://www.emqx.com/en/blog/category/industrial-iot)
 
+- [Bridging FINS Data to MQTT: Protocol Explained and Hands-on Tutorial](https://github.com/emqx/blog/blob/main/en/202308/bridging-fins-data-to-mqtt.md)
 - [Bridging OPC UA Data to MQTT for IIoT: A Step-by-Step Tutorial](https://github.com/emqx/blog/blob/main/en/202308/bridging-opc-ua-data-to-mqtt-for-iiot.md)
 - [IIoT Explained: Examples, Technologies, Benefits and Challenges](https://github.com/emqx/blog/blob/main/en/202308/iiot-explained-examples-technologies-benefits-and-challenges.md)
 - [The Smart Manufacturing Revolution: Examples, Tech & Tips](https://github.com/emqx/blog/blob/main/en/202307/the-smart-manufacturing-revolution.md)
