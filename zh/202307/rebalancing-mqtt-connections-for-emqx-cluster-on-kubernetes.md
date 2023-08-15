@@ -140,7 +140,7 @@ EMQX Operator 会把源节点从 Endpoints 中移除，让新连接只分配给�
         relSessThreshold: "1.1"
    ```
 
-   有关 Rebalance 的配置，请参阅[文档](https://file+.vscode-resource.vscode-cdn.net/Users/raoxiaoli/reference/v1beta4-reference.md#rebalancestrategy)。
+   有关 Rebalance 的配置，请参阅[文档](https://docs.emqx.com/en/enterprise/v5.1/deploy/cluster/rebalancing.html#rebalancing)。
 
 3. 执行以下命令查看 EMQX 群集的重平衡状态
 

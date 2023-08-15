@@ -105,7 +105,7 @@ Before deploying EMQX on Kubernetes, make sure the following requirements are sa
         relSessThreshold: "1.1"
    ```
 
-   >For Rebalance configuration, please refer to the document: [Rebalance Configuration](https://file+.vscode-resource.vscode-cdn.net/Users/raoxiaoli/reference/v1beta4-reference.md#rebalancestrategy).
+   >For Rebalance configuration, please refer to the document: [Rebalance Configuration](https://docs.emqx.com/en/enterprise/v5.1/deploy/cluster/rebalancing.html#rebalancing).
 
 3. Execute the following command to view the rebalancing status of the EMQX cluster.
 
