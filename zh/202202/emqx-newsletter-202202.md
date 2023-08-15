@@ -73,7 +73,7 @@ Code BEAM 会议致力于聚集 Erlang 和 Elixir 社区中的优秀人才，共
 
 初次了解我们产品的用户现在可以在官网来申请更加针对性的演示，除了系统地介绍服务和功能之外，EMQX Cloud 团队还会了解客户的具体需求，帮助用户更好地搭建自己的物联网应用架构。
 
-> 申请入口：[EMQX Cloud 在线演示](https://www.emqx.com/zh/cloud/demo) 
+> 申请入口：[EMQX Cloud 在线演示](https://www.emqx.com/zh/contact?product=cloud) 
 
 ![EMQX Cloud 在线演示](https://assets.emqx.com/images/447a23a1415ab4dfe5ed658d4cc74128.png)
 

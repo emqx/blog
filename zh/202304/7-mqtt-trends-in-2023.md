@@ -14,7 +14,7 @@ MQTT 5.0 定义了三种传输类型：TCP、TLS 和 WebSocket。在物联网安
 
 与 MQTT over TLS/SSL 相比，MQTT over QUIC 更快且延迟更低，在初次建立连接时仅需 1 RTT，并可以利用 0 RTT 连接恢复的特性来加速重连。QUIC 协议栈可以针对各种用例进行定制，例如在不稳定网络环境下，或是客户端到服务器更低延迟通信的场景。它能够在诸如移动网络下的车联网（IoV）以及要求极低时延的工业物联网（IIoT）场景下发挥重要作用，并有效提升其使用体验。
 
-开源 MQTT 消息服务器 EMQX 在其最新的 [5.0 版本](https://www.emqx.com/zh/blog/tag/emqx-5.0-%E4%BA%A7%E5%93%81%E8%A7%A3%E8%AF%BB)中引入了 [MQTT over QUIC 支持](https://www.emqx.com/zh/blog/mqtt-over-quic)，是全球首个支持 MQTT over QUIC 的 MQTT 消息服务器。目前 EMQ 正以 OASIS MQTT 技术委员会成员身份积极推进 MQTT over QUIC 的标准化落地，可以预见在不久的将来，MQTT 也将和 HTTP/3 一样使用 QUIC 作为其主要传输层。
+开源 MQTT 消息服务器 EMQX 在其最新的 [5.0 版本](https://www.emqx.com/zh/blog/tag/emqx-5-0-%E4%BA%A7%E5%93%81%E8%A7%A3%E8%AF%BB)中引入了 [MQTT over QUIC 支持](https://www.emqx.com/zh/blog/mqtt-over-quic)，是全球首个支持 MQTT over QUIC 的 MQTT 消息服务器。目前 EMQ 正以 OASIS MQTT 技术委员会成员身份积极推进 MQTT over QUIC 的标准化落地，可以预见在不久的将来，MQTT 也将和 HTTP/3 一样使用 QUIC 作为其主要传输层。
 
 ![MQTT over QUIC](https://assets.emqx.com/images/a172e1693e8b7c86ec51e5d69936a802.png)
 

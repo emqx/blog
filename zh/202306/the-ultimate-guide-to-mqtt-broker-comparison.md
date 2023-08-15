@@ -68,7 +68,7 @@ MQTT Broker 架构可以是集中式的，也可以是分布式的。在集中�
 
 ### MQTT Broker 对比
 
-- [**2023 年开源 MQTT Broker 综合比较**](https://www.emqx.com/zh/blog/a-comprehensive-comparison-of-open-source-mqtt-brokers-in-2023)
+- [**2023 年开源 MQTT Broker 综合比较**](https://www.emqx.com/en/blog/a-comprehensive-comparison-of-open-source-mqtt-brokers-in-2023)
 
   这篇文章对 2023 年最受欢迎的开源 MQTT Broker 进行了详细比较，以便您根据自己的需求做出明智的选择。
 
