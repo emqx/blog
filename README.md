@@ -158,6 +158,7 @@ Explore more with & via EMQ.
 ## [EMQX Open Source | Broker](https://www.emqx.com/en/blog/category/emqx)
 EMQX is the world's most scalable open-source MQTT broker with a high performance that connects 100M+ IoT devices in 1 cluster, while maintaining 1M message per second throughput and sub-millisecond latency.
 
+- [Troubleshooting Common EMQX Configuration Mistakes](https://github.com/emqx/blog/blob/main/en/202308/troubleshooting-common-emqx-configuration-mistakes.md)
 - [MQTT Performance Benchmark Testing: EMQX-TimescaleDB Integration](https://github.com/emqx/blog/blob/main/en/202308/mqtt-performance-benchmark-series-emqx-timescaledb-integration.md)
 - [MQTT Performance Benchmark Testing: EMQX Single Node Supports 5M Connections](https://github.com/emqx/blog/blob/main/en/202308/emqx-single-node-supports-5m-connections.md)
 - [Embedded MQTT Message Storage Using RocksDB for EMQX Broker](https://github.com/emqx/blog/blob/main/en/202307/embedded-mqtt-message-storage-using-rocksdb-for-emqx-broker.md)
@@ -320,6 +321,8 @@ The easiest way to start MQTT service. Connect your IoT devices to any cloud wit
 ## [EMQX Enterprise](https://www.emqx.com/en/blog/category/enterprise)
 The world's most scalable and reliable MQTT messaging platform to connect, move and process your data in business-critical scenarios for the IoT era.
 
+- [Troubleshooting Common EMQX Configuration Mistakes](https://github.com/emqx/blog/blob/main/en/202308/troubleshooting-common-emqx-configuration-mistakes.md)
+- [EMQX Enterprise 5.1.1 Released: Enhanced MQTT Authorization](https://github.com/emqx/blog/blob/main/en/202308/emqx-enterprise-5-1-1-release-notes.md)
 - [MQTT Performance Benchmark Testing: EMQX-MongoDB Integration](https://github.com/emqx/blog/blob/main/en/202308/mqtt-performance-benchmark-testing-emqx-mongodb-integration.md)
 - [EMQX MQTT Broker Troubleshooting: Authentication Issues](https://github.com/emqx/blog/blob/main/en/202307/emqx-mqtt-broker-authentication-troubleshooting.md)
 - [File Transfer over MQTT: Transfer Large Payloads via One Protocol with Ease](https://github.com/emqx/blog/blob/main/en/202307/file-transfer-over-mqtt.md)
