@@ -158,6 +158,7 @@ Explore more with & via EMQ.
 ## [EMQX Open Source | Broker](https://www.emqx.com/en/blog/category/emqx)
 EMQX is the world's most scalable open-source MQTT broker with a high performance that connects 100M+ IoT devices in 1 cluster, while maintaining 1M message per second throughput and sub-millisecond latency.
 
+- [Troubleshooting Common EMQX Configuration Mistakes](https://github.com/emqx/blog/blob/main/en/202308/troubleshooting-common-emqx-configuration-mistakes.md)
 - [MQTT Performance Benchmark Testing: EMQX-TimescaleDB Integration](https://github.com/emqx/blog/blob/main/en/202308/mqtt-performance-benchmark-series-emqx-timescaledb-integration.md)
 - [MQTT Performance Benchmark Testing: EMQX Single Node Supports 5M Connections](https://github.com/emqx/blog/blob/main/en/202308/emqx-single-node-supports-5m-connections.md)
 - [Embedded MQTT Message Storage Using RocksDB for EMQX Broker](https://github.com/emqx/blog/blob/main/en/202307/embedded-mqtt-message-storage-using-rocksdb-for-emqx-broker.md)
@@ -247,7 +248,7 @@ The easiest way to start MQTT service. Connect your IoT devices to any cloud wit
 - [IoT in the Cloud: 8 Key Benefits and How to Get Started](https://github.com/emqx/blog/blob/main/en/202308/iot-in-the-cloud-8-key-benefits-and-how-to-get-started.md)
 - [EMQX Cloud BYOC Now Available on AWS: Seamlessly Extend Your MQTT Infrastructure](https://github.com/emqx/blog/blob/main/en/202308/emqx-cloud-byoc-is-now-available-on-aws.md)
 - [Get Started with EMQX Cloud on Azure Marketplace](https://github.com/emqx/blog/blob/main/en/202308/get-started-with-emqx-cloud-on-azure-marketplace.md)
-- [How to Use MQTTX for Serverless MQTT Broker Test](https://github.com/emqx/blog/blob/main/en/202307/how-to-use-mqttx-for-serverless-mqtt-broker-test.md)
+- [Connecting to Serverless MQTT Broker using MQTTX: A Quick Guide](https://github.com/emqx/blog/blob/main/en/202307/how-to-use-mqttx-for-serverless-mqtt-broker-test.md)
 - [EMQX Cloud Extends its Reach: Introducing New Regions for Seamless MQTT Connectivity](https://github.com/emqx/blog/blob/main/en/202307/emqx-cloud-extends-its-reach-introducing-new-regions-for-seamless-mqtt-connectivity.md)
 - [EMQX Cloud BYOC is Now Available on Google Cloud!](https://github.com/emqx/blog/blob/main/en/202307/emqx-cloud-byoc-is-now-available-on-google-cloud.md)
 - [Connecting to Serverless MQTT Broker in PHP](https://github.com/emqx/blog/blob/main/en/202307/connecting-to-serverless-mqtt-broker-in-php.md)
@@ -320,6 +321,8 @@ The easiest way to start MQTT service. Connect your IoT devices to any cloud wit
 ## [EMQX Enterprise](https://www.emqx.com/en/blog/category/enterprise)
 The world's most scalable and reliable MQTT messaging platform to connect, move and process your data in business-critical scenarios for the IoT era.
 
+- [Troubleshooting Common EMQX Configuration Mistakes](https://github.com/emqx/blog/blob/main/en/202308/troubleshooting-common-emqx-configuration-mistakes.md)
+- [EMQX Enterprise 5.1.1 Released: Enhanced MQTT Authorization](https://github.com/emqx/blog/blob/main/en/202308/emqx-enterprise-5-1-1-release-notes.md)
 - [MQTT Performance Benchmark Testing: EMQX-MongoDB Integration](https://github.com/emqx/blog/blob/main/en/202308/mqtt-performance-benchmark-testing-emqx-mongodb-integration.md)
 - [EMQX MQTT Broker Troubleshooting: Authentication Issues](https://github.com/emqx/blog/blob/main/en/202307/emqx-mqtt-broker-authentication-troubleshooting.md)
 - [File Transfer over MQTT: Transfer Large Payloads via One Protocol with Ease](https://github.com/emqx/blog/blob/main/en/202307/file-transfer-over-mqtt.md)
@@ -402,8 +405,9 @@ Build a reliable, efficient and industry-specific Internet of Vehicles platform 
 ## [MQTTX](https://www.emqx.com/en/blog/category/mqttx)
 MQTTX is a Fully Open-source MQTT 5.0 cross-platform Desktop Client, makes it easy and quick to create multiple simultaneous online MQTT client connections, test the connection, publish, and subscribe functions of MQTT/TCP, MQTT/TLS, MQTT/WebSocket as well as other MQTT protocol features.
 
+- [MQTTX 1.9.5 Released: JSON Message Highlighting and More!](https://github.com/emqx/blog/blob/main/en/202308/mqttx-1-9-5-released-json-message-highlighting-and-more.md)
 - [MQTTX 1.9.4: Empowering High-Frequency MQTT Testing with Protobuf Integration](https://github.com/emqx/blog/blob/main/en/202307/mqttx-v-1-9-4-release-notes.md)
-- [How to Use MQTTX for Serverless MQTT Broker Test](https://github.com/emqx/blog/blob/main/en/202307/how-to-use-mqttx-for-serverless-mqtt-broker-test.md)
+- [Connecting to Serverless MQTT Broker using MQTTX: A Quick Guide](https://github.com/emqx/blog/blob/main/en/202307/how-to-use-mqttx-for-serverless-mqtt-broker-test.md)
 - [Natural Interactions in IoT: Combining MQTT and ChatGPT](https://github.com/emqx/blog/blob/main/en/202305/natural-interactions-in-iot-combining-mqtt-and-chatgpt.md)
 - [Boosting Development Efficiency: MQTTX 1.9.3 Introduces Powerful IoT Scenario Data Simulation](https://github.com/emqx/blog/blob/main/en/202305/mqttx-1-9-3-introduces-powerful-iot-scenario-data-simulation-feature.md)
 - [MQTTX 1.9.2 Released: The Best MQTT  Client Toolbox Is Even Better](https://github.com/emqx/blog/blob/main/en/202304/mqttx-v-1-9-2-release-notes.md)
