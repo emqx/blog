@@ -74,7 +74,7 @@ MQTT Broker 架构可以是集中式的，也可以是分布式的。在集中�
 
 - [**2023 年最适用于工业物联网领域的三款开源 MQTT Broker**](https://www.emqx.com/zh/blog/top-3-open-source-mqtt-brokers-for-industrial-iot-in-2023)
 
-  这篇文章对 2023 年工业物联网领域最优秀的 3 款 MQTT Broker 进行了对比分析，介绍了它们各自的优缺点和适用场景。
+  这篇文章对 2023 年[工业物联网](https://www.emqx.com/zh/blog/iiot-explained-examples-technologies-benefits-and-challenges)领域最优秀的 3 款 MQTT Broker 进行了对比分析，介绍了它们各自的优缺点和适用场景。
 
 - [**EMQX vs Mosquitto | 2023 年 MQTT Broker 对比**](https://www.emqx.com/zh/blog/emqx-vs-mosquitto-2023-mqtt-broker-comparison)
 

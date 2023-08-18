@@ -4,7 +4,7 @@
 
 近日发布的 [eKuiper 1.5.0 版本](https://www.emqx.com/zh/blog/ekuiper-v-1-5-0-release-notes)加入了 Neuron source 和 sink，使得用户无需配置即可在 eKuiper 中接入 Neuron 中采集到的数据进行计算；也可以方便地从 eKuiper 中通过 Neuron 控制设备 。两个产品的整合，可以显著降低边缘计算解决方案对资源的使用要求，降低使用门槛。
 
-本文将以工业物联网数据采集和清洗的场景为例，介绍如何使用 eKuiper 和 Neuron 进行云边协同的数据采集、数据清理和数据反控。
+本文将以[工业物联网](https://www.emqx.com/zh/blog/iiot-explained-examples-technologies-benefits-and-challenges)数据采集和清洗的场景为例，介绍如何使用 eKuiper 和 Neuron 进行云边协同的数据采集、数据清理和数据反控。
 
 ## Neuron 与 eKuiper 的集成
 

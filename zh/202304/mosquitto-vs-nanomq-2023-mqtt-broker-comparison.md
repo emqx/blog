@@ -4,7 +4,7 @@
 
 虽然 Mosquitto 和 NanoMQ 都具有轻量级和低资源消耗的特点，但它们的架构设计却截然不同。Mosquitto 采用单线程模式，而 NanoMQ 则基于 NNG 的异步 I/O 实现了多线程并行。
 
-两者都很适用于工业物联网和嵌入式设备等资源受限的场景。本文将从功能、性能、技术细节和应用场景等方面对这两款 Broker 进行详细的对比分析。
+两者都很适用于[工业物联网](https://www.emqx.com/zh/blog/iiot-explained-examples-technologies-benefits-and-challenges)和嵌入式设备等资源受限的场景。本文将从功能、性能、技术细节和应用场景等方面对这两款 Broker 进行详细的对比分析。
 
 ## Mosquitto 简介
 

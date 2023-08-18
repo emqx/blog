@@ -96,7 +96,7 @@ LoRaWAN 的数据传输速率范围为 0.3 kbps 至 37.5 kbps，为了最大化�
 
 ### 市场状况
 
-对于智慧农业、智慧城市、工业物联网 (IIoT)、智能环境、智能家居和楼宇、智能公用事业和计量以及智能供应链和物流中的农村或室内应用场景，LoRa 具有极高的灵活性。 
+对于智慧农业、智慧城市、[工业物联网](https://www.emqx.com/zh/blog/iiot-explained-examples-technologies-benefits-and-challenges) (IIoT)、智能环境、智能家居和楼宇、智能公用事业和计量以及智能供应链和物流中的农村或室内应用场景，LoRa 具有极高的灵活性。 
 
 LoRa 组网方便，利用 LoRa 极强的穿透力，可以低成本实现对较大范围内的设备连接，相比通过 NB-IoT 和运营商 SIM 卡接入，LoRa 不需要每年换卡或缴费，长期使用拥有较低的成本。
 

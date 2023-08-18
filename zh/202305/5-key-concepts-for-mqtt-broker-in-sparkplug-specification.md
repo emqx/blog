@@ -1,6 +1,6 @@
 ## 引言
 
-Sparkplug 是一种为 SCADA 系统量身定制的工业物联网通信协议。它为工业设备和应用提供了一种标准的通信格式，实现了不同厂商设备的互操作性。Sparkplug 规范由 Cirrus Link Solutions 和 Eclipse Foundation 共同制定。它是开放的，不属于某一家公司。因此，它给 Sparkplug 社区带来了以下益处：
+Sparkplug 是一种为 SCADA 系统量身定制的[工业物联网](https://www.emqx.com/zh/blog/iiot-explained-examples-technologies-benefits-and-challenges)通信协议。它为工业设备和应用提供了一种标准的通信格式，实现了不同厂商设备的互操作性。Sparkplug 规范由 Cirrus Link Solutions 和 Eclipse Foundation 共同制定。它是开放的，不属于某一家公司。因此，它给 Sparkplug 社区带来了以下益处：
 
 - 促进不同系统和技术之间的顺畅协作，提升效率、降低成本，为消费者提供更多选择。
 - 保证不同厂商产品的兼容性和协作性，增加消费者的选择，促进厂商之间的良性竞争。

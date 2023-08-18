@@ -148,7 +148,7 @@ Neuron 启动之后，我们需要为 Neuron 添加一个 Modbus 南向设备，
 
 ## 结语
 
-本文演示了使用 Neuron 与 eKuiper 进行边缘数据采集与处理的详细流程。通过两者的整合使用，工业领域用户可以实现一站式云边协同的数据采集、清理和反控，为打造工业物联网数据中心奠定基础。
+本文演示了使用 Neuron 与 eKuiper 进行边缘数据采集与处理的详细流程。通过两者的整合使用，工业领域用户可以实现一站式云边协同的数据采集、清理和反控，为打造[工业物联网](https://www.emqx.com/zh/blog/iiot-explained-examples-technologies-benefits-and-challenges)数据中心奠定基础。
 
 
 

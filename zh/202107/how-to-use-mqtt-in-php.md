@@ -46,7 +46,7 @@ composer require php-mqtt/client
 
 - **私有部署**
 
-  [EMQX](https://www.emqx.io/) 是应用于物联网、工业物联网和车联网的最具可扩展性的开源 MQTT Broker。您可以通过以下 Docker 命令来安装 EMQX：
+  [EMQX](https://www.emqx.io/) 是应用于物联网、[工业物联网](https://www.emqx.com/zh/blog/iiot-explained-examples-technologies-benefits-and-challenges)和车联网的最具可扩展性的开源 MQTT Broker。您可以通过以下 Docker 命令来安装 EMQX：
 
   ```bash
   docker run -d --name emqx -p 1883:1883 -p 8083:8083 -p 8084:8084 -p 8883:8883 -p 18083:18083 emqx/emqx

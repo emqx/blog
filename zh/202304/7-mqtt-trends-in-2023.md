@@ -12,7 +12,7 @@ QUIC（Quick UDP Internet Connections）是由 Google 开发的一种新的传�
 
 MQTT 5.0 定义了三种传输类型：TCP、TLS 和 WebSocket。在物联网安全最佳实践中，MQTT over TLS/SSL 广泛用于生产环境以保护客户端和 Broker 之间的通信。然而它速度慢、延迟高，需要 3.5 个 RTT，即 TCP 3 次握手以及 TLS 4 次握手才能建立新的 [MQTT 连接](https://www.emqx.com/zh/blog/how-to-set-parameters-when-establishing-an-mqtt-connection)。
 
-与 MQTT over TLS/SSL 相比，MQTT over QUIC 更快且延迟更低，在初次建立连接时仅需 1 RTT，并可以利用 0 RTT 连接恢复的特性来加速重连。QUIC 协议栈可以针对各种用例进行定制，例如在不稳定网络环境下，或是客户端到服务器更低延迟通信的场景。它能够在诸如移动网络下的车联网（IoV）以及要求极低时延的工业物联网（IIoT）场景下发挥重要作用，并有效提升其使用体验。
+与 MQTT over TLS/SSL 相比，MQTT over QUIC 更快且延迟更低，在初次建立连接时仅需 1 RTT，并可以利用 0 RTT 连接恢复的特性来加速重连。QUIC 协议栈可以针对各种用例进行定制，例如在不稳定网络环境下，或是客户端到服务器更低延迟通信的场景。它能够在诸如移动网络下的车联网（IoV）以及要求极低时延的[工业物联网](https://www.emqx.com/zh/blog/iiot-explained-examples-technologies-benefits-and-challenges)（IIoT）场景下发挥重要作用，并有效提升其使用体验。
 
 开源 MQTT 消息服务器 EMQX 在其最新的 [5.0 版本](https://www.emqx.com/zh/blog/tag/emqx-5-0-%E4%BA%A7%E5%93%81%E8%A7%A3%E8%AF%BB)中引入了 [MQTT over QUIC 支持](https://www.emqx.com/zh/blog/mqtt-over-quic)，是全球首个支持 MQTT over QUIC 的 MQTT 消息服务器。目前 EMQ 正以 OASIS MQTT 技术委员会成员身份积极推进 MQTT over QUIC 的标准化落地，可以预见在不久的将来，MQTT 也将和 HTTP/3 一样使用 QUIC 作为其主要传输层。
 

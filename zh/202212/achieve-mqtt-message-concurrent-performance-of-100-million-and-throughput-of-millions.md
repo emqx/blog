@@ -56,7 +56,7 @@
 
 ![MQTT 性能测试结果 3](https://assets.emqx.com/images/d77f7eeaa3cc073732ee84b9a03cbfe6.png)
 
-这意味着只需要购买一个 NLB 实例、部署一个 EMQX 集群就可以满足亿级设备并发管理的需求，支撑数据业务的平滑扩张，为后续业务的发展垫定坚实基础。这也为飞天洛神云网络 NLB 在车联网、工业物联网等高规格物联网应用场景提供了可靠的技术验证。
+这意味着只需要购买一个 NLB 实例、部署一个 EMQX 集群就可以满足亿级设备并发管理的需求，支撑数据业务的平滑扩张，为后续业务的发展垫定坚实基础。这也为飞天洛神云网络 NLB 在车联网、[工业物联网](https://www.emqx.com/zh/blog/iiot-explained-examples-technologies-benefits-and-challenges)等高规格物联网应用场景提供了可靠的技术验证。
 
 
 ## 未来展望

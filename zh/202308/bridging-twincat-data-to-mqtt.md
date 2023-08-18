@@ -48,7 +48,7 @@ ADS 协议提供了一组[命令](https://infosys.beckhoff.com/english.php?conte
 
 Neuron 2.2.0 版本中发布了 [Beckhoff ADS 插件](https://neugates.io/docs/en/latest/configuration/south-devices/ads/ads.html)。Neuron Beckhoff ADS 插件实现了基于 TCP 的 ADS 协议。该插件支持与 [Beckhoff TwinCAT](https://www.beckhoff.com/en-us/products/automation/twincat/#stage-special-item-s320986-2_t0) PLC 进行通信，进一步丰富了 Neuron 的连接能力，增强了用户体验，满足更多用户需求。
 
-通过 Beckhoff ADS 插件，用户可以轻松地从 TwinCAT PLC 采集数据。与 MQTT 插件一起使用，用户可以将采集的数据推送到工业物联网平台，如 [EMQX](https://www.emqx.com/zh/products/emqx)，或将消息发布回 TwinCAT PLC，触发设备操作，例如打开或关闭灯光、电机和其他设备。
+通过 Beckhoff ADS 插件，用户可以轻松地从 TwinCAT PLC 采集数据。与 MQTT 插件一起使用，用户可以将采集的数据推送到[工业物联网](https://www.emqx.com/zh/blog/iiot-explained-examples-technologies-benefits-and-challenges)平台，如 [EMQX](https://www.emqx.com/zh/products/emqx)，或将消息发布回 TwinCAT PLC，触发设备操作，例如打开或关闭灯光、电机和其他设备。
 
 ### 使用 EMQX 处理 MQTT 消息
 
