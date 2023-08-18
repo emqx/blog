@@ -82,7 +82,7 @@ OPC-UA 发布/订阅模型和 MQTT 支持数据变化发送机制，即只有在
 
 **MQTT：**MQTT 并没有将数据压缩作为其核心规范的一部分。然而，MQTT 可以与其他压缩技术或库结合使用，在传输之前对有效载荷数据进行压缩。
 
-**Sparkplug：**Sparkplug 是一种专为工业物联网应用开发而设计的消息协议，它基于 MQTT 建立。Sparkplug 使用 Google Protobuf 作为其有效载荷数据格式。Protobuf 是一种具有一定压缩能力的数据格式。因此，Sparkplug 可以被视为一种具备数据压缩功能的协议。
+**Sparkplug：**Sparkplug 是一种专为[工业物联网](https://www.emqx.com/zh/blog/iiot-explained-examples-technologies-benefits-and-challenges)应用开发而设计的消息协议，它基于 MQTT 建立。Sparkplug 使用 Google Protobuf 作为其有效载荷数据格式。Protobuf 是一种具有一定压缩能力的数据格式。因此，Sparkplug 可以被视为一种具备数据压缩功能的协议。
 
 ![Data Compression](https://assets.emqx.com/images/c56858826e93a396cd76204f2c5fea42.png)
 

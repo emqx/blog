@@ -30,7 +30,7 @@ EMQX Enterprise v4.2.2 版本规则引擎可以选择同步/异步方式存储�
 
 Oracle、MS SQL Server 均是商业关系型数据库阵营中的杰出代表，拥有较高的市场占有率，此次更新填补了技术栈完整性的不足，覆盖了更多的客户群体。
 
-[DolphinDB](https://www.dolphindb.cn/) 是由浙江智臾科技有限公司研发的一款高性能分布式时序数据库，集成了功能强大的编程语言和高容量高速度的流数据分析系统，为海量结构化数据的快速存储、检索、分析及计算提供一站式解决方案，适用于量化金融及工业物联网等领域。EMQX 结合 DolphinDB 为金融、工业网物联网提供更多的数据处理选择。
+[DolphinDB](https://www.dolphindb.cn/) 是由浙江智臾科技有限公司研发的一款高性能分布式时序数据库，集成了功能强大的编程语言和高容量高速度的流数据分析系统，为海量结构化数据的快速存储、检索、分析及计算提供一站式解决方案，适用于量化金融及[工业物联网](https://www.emqx.com/zh/blog/iiot-explained-examples-technologies-benefits-and-challenges)等领域。EMQX 结合 DolphinDB 为金融、工业网物联网提供更多的数据处理选择。
 
 
 

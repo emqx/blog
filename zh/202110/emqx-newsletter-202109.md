@@ -8,7 +8,7 @@ EMQX 获得了来自海外知名 IIoT 社区 4.0 Solutions 的赞誉，被称为
 
 9 月初，受 IIoT 社区 4.0 Solutions 的邀请，EMQX 团队的技术专家参与了其举办的线上直播活动，向在线用户展示了 EMQ 的先进技术与产品。
 
-4.0 Solutions 社区专注于通过大数据、云平台、人工智能 (AI) 和工业物联网 (IIoT) 等技术帮助企业实现数字化工厂。打造工业物联网的核心是通过 MQTT 消息服务器（集群）连接海量设备，而 EMQX 则正是这一宏伟蓝图中的完美选择，也因此受到了 4.0 Solutions 社区的高度认可。
+4.0 Solutions 社区专注于通过大数据、云平台、人工智能 (AI) 和[工业物联网](https://www.emqx.com/zh/blog/iiot-explained-examples-technologies-benefits-and-challenges) (IIoT) 等技术帮助企业实现数字化工厂。打造工业物联网的核心是通过 MQTT 消息服务器（集群）连接海量设备，而 EMQX 则正是这一宏伟蓝图中的完美选择，也因此受到了 4.0 Solutions 社区的高度认可。
 
 能够深入 IIoT 社区与成员们交流让我们感到十分荣幸。在一个小时的活动中，我们就有关 EMQ 公司及产品的许多迫切问题进行了一一解答。
 

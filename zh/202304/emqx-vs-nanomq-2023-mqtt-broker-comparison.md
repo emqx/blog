@@ -8,7 +8,7 @@ EMQX 是一个高度可扩展的大规模分布式 MQTT Broker，能够将百万
 
 ## EMQX 简介
 
-EMQX 是目前全球最具扩展性的 MQTT 消息服务器，广泛用于物联网、工业物联网（IIoT）和车联网（IoV）等各类关键业务场景。其使用 Erlang/OTP 开发，采用了去中心化的分布式架构，具有高可用性并且支持横向扩展。
+EMQX 是目前全球最具扩展性的 MQTT 消息服务器，广泛用于物联网、[工业物联网](https://www.emqx.com/zh/blog/iiot-explained-examples-technologies-benefits-and-challenges)（IIoT）和车联网（IoV）等各类关键业务场景。其使用 Erlang/OTP 开发，采用了去中心化的分布式架构，具有高可用性并且支持横向扩展。
 
 最新版本 EMQX 5.0 能够通过一个由 23 个节点组成的集群，支持高达 1 亿的 MQTT 并发连接。
 

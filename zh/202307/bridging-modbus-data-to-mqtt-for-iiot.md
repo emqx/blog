@@ -73,7 +73,7 @@ Modbus 数据源将数据发送到 [MQTT Broker](https://www.emqx.com/zh/blog/th
 
 EMQ 旗下的 [Neuron](https://neugates.io/zh) 可以将 Modbus 协议转换为 MQTT；[EMQX](https://www.emqx.io/zh) 则可以作为 MQTT Broker 处理海量连接。
 
-Neuron 是一款现代的工业物联网连接服务器，可以连接多种使用标准协议或者设备专有协议的工业设备，实现了工业物联网平台与各种设备的互联互通。作为一款轻量级的工业协议网关软件，Neuron 可以运行在各种有限资源的物联网边缘硬件设备上，旨在解决以数据为中心的自动化设备数据难以统一访问的问题，为智能制造提供基础支撑。
+Neuron 是一款现代的[工业物联网](https://www.emqx.com/zh/blog/iiot-explained-examples-technologies-benefits-and-challenges)连接服务器，可以连接多种使用标准协议或者设备专有协议的工业设备，实现了工业物联网平台与各种设备的互联互通。作为一款轻量级的工业协议网关软件，Neuron 可以运行在各种有限资源的物联网边缘硬件设备上，旨在解决以数据为中心的自动化设备数据难以统一访问的问题，为智能制造提供基础支撑。
 
 EMQX 是一款大规模可扩展的云原生分布式物联网 MQTT 消息服务器。作为全球最具扩展性的 MQTT 消息服务器，EMQX 提供了高效可靠海量物联网设备连接，能够高性能实时移动与处理消息和事件流数据，帮助用户快速构建关键业务的物联网平台与应用。
 

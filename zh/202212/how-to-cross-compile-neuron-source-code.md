@@ -2,7 +2,7 @@
 
 开源社区用户有时会有使用 Neuron 源码在当前编译平台下编译能够运行在体系结构不同的另一种目标平台上，即进行交叉编译的需求。在这一过程中可能会遇到由于没有安装好依赖库等原因导致的编译错误。
 
-本文将详细介绍使用 Neuron 源码进行交叉编译的操作步骤，帮助用户更好地利用 Neuron 进行进一步的工业物联网业务开发。
+本文将详细介绍使用 Neuron 源码进行交叉编译的操作步骤，帮助用户更好地利用 Neuron 进行进一步的[工业物联网](https://www.emqx.com/zh/blog/iiot-explained-examples-technologies-benefits-and-challenges)业务开发。
 
 Neuron 源码下载：
 

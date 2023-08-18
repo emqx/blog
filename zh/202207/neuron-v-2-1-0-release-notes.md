@@ -1,4 +1,4 @@
-近日，Neuron 2.1.0 正式发布。这是 Neuron 开源后的首个子版本，在 v2.0.0 的基础上对核心代码进行了重构，通过无锁核心提升了产品稳定性。此外 Neuron 2.1.0 还完成了与边缘流式处理引擎 eKuiper 的集成，实现了一站式的边缘数据采集与处理。新增的 Sparkplug B 规范支持和多个驱动插件，也为 Neuron 用户构建符合工业 4.0 时代发展趋势的工业物联网平台提供了更大便利。
+近日，Neuron 2.1.0 正式发布。这是 Neuron 开源后的首个子版本，在 v2.0.0 的基础上对核心代码进行了重构，通过无锁核心提升了产品稳定性。此外 Neuron 2.1.0 还完成了与边缘流式处理引擎 eKuiper 的集成，实现了一站式的边缘数据采集与处理。新增的 Sparkplug B 规范支持和多个驱动插件，也为 Neuron 用户构建符合工业 4.0 时代发展趋势的[工业物联网](https://www.emqx.com/zh/blog/iiot-explained-examples-technologies-benefits-and-challenges)平台提供了更大便利。
 
 
 

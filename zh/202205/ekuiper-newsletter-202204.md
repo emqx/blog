@@ -12,7 +12,7 @@
 
 ### Neuron 整合
 
-Neuron ([https://github.com/emqx/neuron](https://github.com/emqx/neuron)) 是一个EMQ 发起并开源的工业物联网（IIoT）边缘工业协议网关软件，用于现代大数据技术，以发挥工业 4.0 的力量。它支持对多种工业协议的一站式访问，并将其转换为标准 MQTT 协议以访问工业物联网平台。Neuron 和 eKuiper 整合使用，可以方便地进行 IIoT 边缘数据采集和计算。
+Neuron ([https://github.com/emqx/neuron](https://github.com/emqx/neuron)) 是一个EMQ 发起并开源的[工业物联网](https://www.emqx.com/zh/blog/iiot-explained-examples-technologies-benefits-and-challenges)（IIoT）边缘工业协议网关软件，用于现代大数据技术，以发挥工业 4.0 的力量。它支持对多种工业协议的一站式访问，并将其转换为标准 MQTT 协议以访问工业物联网平台。Neuron 和 eKuiper 整合使用，可以方便地进行 IIoT 边缘数据采集和计算。
 
 Neruon 2.0 版本与 eKuiper 1.5.0 版本将无缝整合，用户无需配置即可在 eKuiper 中接入 Neruon 中采集到的数据，进行计算；也可以方便地从 eKuiper 中反控 Neuron 。两个产品的整合，可以显著降低边缘计算解决方案的部署成本，简化使用门槛。使用 NNG 协议进行通信，也可显著降低网络通信消耗，提高性能。
 

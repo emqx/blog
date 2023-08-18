@@ -2,7 +2,7 @@
 
 Neuron 提供了通过对各种工业协议转换实现设备端的数据采集、运行业务逻辑服务、警报判定，并将数据及警报上传及存储到云平台。再通过 Web 服务等部署和客户端应用软件，实现设备远程监控、远程维护、设备绩效管理、设备和资产管理等功能。
 
-Neuron 工业网关南向支持接入主流的工业物联网协议（驱动协议详细列表可参考 EMQ 官网），以及支持自定义协议的扩展。 北向支持通过 [MQTT](https://www.emqx.com/zh/mqtt-guide)、WebSocket 和 HTTP 协议与云平台层进行交互，实现设备上云与云端控制的能力。
+Neuron 工业网关南向支持接入主流的[工业物联网](https://www.emqx.com/zh/blog/iiot-explained-examples-technologies-benefits-and-challenges)协议（驱动协议详细列表可参考 EMQ 官网），以及支持自定义协议的扩展。 北向支持通过 [MQTT](https://www.emqx.com/zh/mqtt-guide)、WebSocket 和 HTTP 协议与云平台层进行交互，实现设备上云与云端控制的能力。
 
 
 ## 新功能概览

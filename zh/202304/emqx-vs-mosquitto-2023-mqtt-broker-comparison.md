@@ -24,7 +24,7 @@ Mosquitto 用 C/C++ 编写，采用单线程架构。Mosquitto 支持 MQTT 协�
 
 ## EMQX 简介
 
-[EMQX](https://github.com/emqx/emqx) 项目于 2012 年底在 Github 发布，许可证为 Apache2，如今已成为世界上最具扩展性的 MQTT 消息服务器，被广泛应用于物联网、车联网、工业物联网等各类关键业务场景。
+[EMQX](https://github.com/emqx/emqx) 项目于 2012 年底在 Github 发布，许可证为 Apache2，如今已成为世界上最具扩展性的 MQTT 消息服务器，被广泛应用于物联网、车联网、[工业物联网](https://www.emqx.com/zh/blog/iiot-explained-examples-technologies-benefits-and-challenges)等各类关键业务场景。
 
 EMQX 采用 Erlang/OTP 编写，这是一种用于构建大规模可扩展软实时系统的编程语言。与 Mosquitto 不同，EMQX 在设计之初即采用了分布式集群架构，可以轻松实现弹性水平扩展，从而稳定承载大规模的 [MQTT 客户端](https://www.emqx.com/zh/blog/mqtt-client-tools)接入。最新版本 EMQX 5.0 可在 23 个节点的单集群中建立 1 亿个并发的 MQTT 连接。
 

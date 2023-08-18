@@ -1,6 +1,6 @@
 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 最初作为一种轻量级的[发布/订阅消息传递协议](https://www.emqx.com/zh/blog/mqtt-5-introduction-to-publish-subscribe-model)而设计，如今已经成为工业物联网（IIoT）和工业 4.0 发展的重要基础。它的意义在于实现了各类工业设备与云端的无缝连接，促进了运营技术（OT）和信息技术（IT）的融合。
 
-本文对比分析了 2023 年工业物联网领域最优秀的三款 MQTT Broker，介绍了它们的优点、缺点和应用场景。同时，还展示了如何利用这三款 MQTT Broker，为您的工业物联网解决方案打造统一命名空间（UNS）架构。
+本文对比分析了 2023 年[工业物联网](https://www.emqx.com/zh/blog/iiot-explained-examples-technologies-benefits-and-challenges)领域最优秀的三款 MQTT Broker，介绍了它们的优点、缺点和应用场景。同时，还展示了如何利用这三款 MQTT Broker，为您的工业物联网解决方案打造统一命名空间（UNS）架构。
 
 ## 项目概览
 

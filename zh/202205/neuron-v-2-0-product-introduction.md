@@ -10,7 +10,7 @@ Neuron 支持同时为多个不同通讯协议设备、数十种工业协议进�
 
 ## 发展历程
 
-Neuron 的产品雏形始于工业物联网 IIoT 尚在起步阶段的 2018 年，那时 IIoT 场景中的数据采集很多都是通过 SCADA 去完成，简单说就是在 SCADA 中增加将数据上报到 IIoT 平台的功能，从而实现设备操作员操作设备的数据同步实时上报。
+Neuron 的产品雏形始于[工业物联网](https://www.emqx.com/zh/blog/iiot-explained-examples-technologies-benefits-and-challenges) IIoT 尚在起步阶段的 2018 年，那时 IIoT 场景中的数据采集很多都是通过 SCADA 去完成，简单说就是在 SCADA 中增加将数据上报到 IIoT 平台的功能，从而实现设备操作员操作设备的数据同步实时上报。
 
 所以我们最早将 Neuron 定位成 SCADA 软件+MQTT 协议数据上报功能。在功能上，我们选择了单连接设备，因为一般 SCADA 软件都只会连接一台 PLC 或设备，但可替换各种协议，以便对接不同品牌 PLC 或设备，进行数据交换。一般情况下，SCADA 必须具有一定基本数据处理能力，包括警报系统、业务规则处理及历史数据。这些功能在 Neuron v1.x 中均得到实现。
 

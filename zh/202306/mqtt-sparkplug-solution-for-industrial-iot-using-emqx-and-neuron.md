@@ -18,7 +18,7 @@ Sparkplug 是基于 MQTT 的一种专门为工业自动化和物联网应用而�
 
 ## EMQX 和 Neuron 共同扮演的新角色
 
-通过协同使用 EMQX 和 Neuron，可以为工业物联网应用创建统一的命名空间。这是一种基于 MQTT 主题的通用命名方式，让设备和应用可以在任何位置使用任何协议进行相互通信。所有的设备和应用都使用相同的 MQTT 主题层次结构，基于一套通用的命名规则和数据模型。这样就实现了设备间的自动发现和通信，无需复杂的路由或转换机制。
+通过协同使用 EMQX 和 Neuron，可以为[工业物联网](https://www.emqx.com/zh/blog/iiot-explained-examples-technologies-benefits-and-challenges)应用创建统一的命名空间。这是一种基于 MQTT 主题的通用命名方式，让设备和应用可以在任何位置使用任何协议进行相互通信。所有的设备和应用都使用相同的 MQTT 主题层次结构，基于一套通用的命名规则和数据模型。这样就实现了设备间的自动发现和通信，无需复杂的路由或转换机制。
 
 ![Industrial IoT](https://assets.emqx.com/images/a88f6c54e8877d322f0c1987c9f8e625.png)
 

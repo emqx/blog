@@ -16,7 +16,7 @@ EMQX 是目前全球最具扩展性的 MQTT Broker。通过采用基于 [Mria+RL
 
 ![MQTT Cluster](https://assets.emqx.com/images/c0ef403f8b9207ebffa1bf228bc7f3a7.png)
 
-EMQX 提供了丰富的企业功能、数据集成、云托管服务以及来自 EMQ 公司的商业支持。多年来，EMQX 凭借其卓越的性能、可靠性和扩展性，在大型企业、创业公司和个人用户中赢得了广泛的认可，被广泛应用于物联网、工业物联网、智能汽车和电信等各个领域。
+EMQX 提供了丰富的企业功能、数据集成、云托管服务以及来自 EMQ 公司的商业支持。多年来，EMQX 凭借其卓越的性能、可靠性和扩展性，在大型企业、创业公司和个人用户中赢得了广泛的认可，被广泛应用于物联网、[工业物联网](https://www.emqx.com/zh/blog/iiot-explained-examples-technologies-benefits-and-challenges)、智能汽车和电信等各个领域。
 
 **优点：**
 

@@ -4,7 +4,7 @@
 
 Kafka 和 MQTT 是实现物联网数据端到端集成的互补技术。通过结合使用 Kafka 和 MQTT，企业可以构建一个强大的物联网架构，实现设备和物联网平台之间的稳定连接和高效数据传输。同时，它还能支持整个物联网系统高吞吐量数据的实时处理和分析。
 
-MQTT 和 Kafka 的集成可以为许多物联网场景带来重要价值，例如[网联汽车](https://www.emqx.com/zh/blog/connected-cars-and-automotive-connectivity-all-you-need-to-know)和车联网、智能城市基础设施、工业物联网监控、物流管理等。在本文中，我们将介绍如何实现 MQTT 数据与 Kafka 在物联网应用中的无缝集成。
+MQTT 和 Kafka 的集成可以为许多物联网场景带来重要价值，例如[网联汽车](https://www.emqx.com/zh/blog/connected-cars-and-automotive-connectivity-all-you-need-to-know)和车联网、智能城市基础设施、[工业物联网](https://www.emqx.com/zh/blog/iiot-explained-examples-technologies-benefits-and-challenges)监控、物流管理等。在本文中，我们将介绍如何实现 MQTT 数据与 Kafka 在物联网应用中的无缝集成。
 
 ## Kafka 和 MQTT 可以解决哪些物联网挑战？
 

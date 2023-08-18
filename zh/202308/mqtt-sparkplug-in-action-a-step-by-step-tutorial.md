@@ -1,6 +1,6 @@
 ## 引言
 
-[Sparkplug](https://www.emqx.com/zh/blog/sparkplug-3-0-advancements-and-formalization-in-mqtt-for-iiot "https://www.emqx.com/zh/blog/sparkplug-3-0-advancements-and-formalization-in-mqtt-for-iiot") 是一种工业物联网协议，旨在为工业设备和应用之间提供标准化的通信方式。高效、全面的 Sparkplug 解决方案可以促进设备和应用的互联互通，并通过数据分析提升工业物联网用户的决策水平。
+[Sparkplug](https://www.emqx.com/zh/blog/sparkplug-3-0-advancements-and-formalization-in-mqtt-for-iiot "https://www.emqx.com/zh/blog/sparkplug-3-0-advancements-and-formalization-in-mqtt-for-iiot") 是一种[工业物联网](https://www.emqx.com/zh/blog/iiot-explained-examples-technologies-benefits-and-challenges)协议，旨在为工业设备和应用之间提供标准化的通信方式。高效、全面的 Sparkplug 解决方案可以促进设备和应用的互联互通，并通过数据分析提升工业物联网用户的决策水平。
 
 本文将使用 EMQX 和 Neuron，展示构建 [MQTT Sparkplug](https://www.emqx.com/zh/blog/mqtt-sparkplug-bridging-it-and-ot-in-industry-4-0) 解决方案的详细过程。
 

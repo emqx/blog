@@ -10,7 +10,7 @@ Serverless 架构是一种云计算模型，它让开发人员可以专注于编
 
 Serverless MQTT 可以为用户带来诸多好处：根据连接设备的数量动态扩展，避免了手动干预和配置的麻烦和风险；此外，按量计费的收费模式也可以节省成本，因为您只需为实际使用的资源付费。
 
-Serverless MQTT 已经在智能家居、工业物联网和智能汽车等多个领域得到了广泛的应用。在这些领域的成功案例展示了它在处理不同类型的工作负载和管理海量数据方面的强大性能和灵活性。
+Serverless MQTT 已经在智能家居、[工业物联网](https://www.emqx.com/zh/blog/iiot-explained-examples-technologies-benefits-and-challenges)和智能汽车等多个领域得到了广泛的应用。在这些领域的成功案例展示了它在处理不同类型的工作负载和管理海量数据方面的强大性能和灵活性。
 
 ## EMQX Cloud Serverless 亮点特性
 
