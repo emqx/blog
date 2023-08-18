@@ -42,7 +42,7 @@ Different PLC CPU models have different memory areas. Take CV500 or CVM1-CPU01-E
 
 ## FINS Command List
 
-In the illustrations of command and response blocks in this section, each box represents one byte (i.e., two hexadecimal or BCD digits). Be careful when adding the header, where each box represents one digit (i.e., four bits). The following table lists the FINS commands supported by CV-series PCs and the PC operating modes during which they are enabled.
+In the Command Code field column in the table below, each cell represents a byte (two hexadecimal digits). The following table lists the FINS commands supported by CV-series PCs and the PC operating modes during which they are enabled.
 
 ![Command List](https://assets.emqx.com/images/28160d8d452c41d9c73bc7b1a4c411de.png)
 
