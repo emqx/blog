@@ -88,6 +88,7 @@ Get to know the preferred protocol in IoT from beginner to master.
 ## [MQTT Programming](https://www.emqx.com/en/blog/category/mqtt-programming)
 Best practice of MQTT in various clients.
 
+- [How to Create an MQTT Application in Qt6](https://github.com/emqx/blog/blob/main/en/202308/how-to-create-an-mqtt-application-in-qt6.md)
 - [Connecting to Serverless MQTT Broker in PHP](https://github.com/emqx/blog/blob/main/en/202307/connecting-to-serverless-mqtt-broker-in-php.md)
 - [A Quickstart Guide to Using MQTT over WebSocket](https://github.com/emqx/blog/blob/main/en/202306/connect-to-mqtt-broker-with-websocket.md)
 - [MQTT on ESP32: A Beginner's Guide](https://github.com/emqx/blog/blob/main/en/202306/esp32-connects-to-the-free-public-mqtt-broker.md)
