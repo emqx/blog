@@ -76,7 +76,7 @@ GitHub: [https://github.com/emqx/emqx](https://github.com/emqx/emqx)
 <section class="promotion">
     <div>
         Download EMQX
-      <div class="is-size-14 is-text-normal has-text-weight-normal">The most scalable open-source MQTT broker for IoT, [IIoT](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges), and connected vehicles.</div>
+      <div class="is-size-14 is-text-normal has-text-weight-normal">The most scalable open-source MQTT broker for IoT, IIoT, and connected vehicles.</div>
     </div>
     <a href="https://www.emqx.com/en/try?product=broker" class="button is-gradient px-5">Download →</a>
 </section>
