@@ -42,6 +42,7 @@ Get to know the preferred protocol in IoT from beginner to master.
 
 ## [MQTT Broker](https://www.emqx.com/en/blog/category/mqtt-broker)
 
+- [Mosquitto MQTT Broker: Pros/Cons, Tutorial, and a Modern Alternative](https://github.com/emqx/blog/blob/main/en/202308/mosquitto-mqtt-broker-pros-cons-tutorial-and-modern-alternatives.md)
 - [NanoMQ: The Multi-threaded Alternative to Mosquitto for IoT Edge](https://github.com/emqx/blog/blob/main/en/202306/nanomq-the-multi-threaded-alternative-to-mosquitto-for-iot-edge.md)
 - [Connecting to Serverless MQTT Broker in Node.js](https://github.com/emqx/blog/blob/main/en/202305/connecting-to-serverless-mqtt-broker-in-nodejs.md)
 - [EMQX MQTT Broker Troubleshooting: Connection Issues](https://github.com/emqx/blog/blob/main/en/202305/emqx-mqtt-broker-connection-troubleshooting.md)
@@ -88,6 +89,7 @@ Get to know the preferred protocol in IoT from beginner to master.
 ## [MQTT Programming](https://www.emqx.com/en/blog/category/mqtt-programming)
 Best practice of MQTT in various clients.
 
+- [How to Create an MQTT Application in Qt6](https://github.com/emqx/blog/blob/main/en/202308/how-to-create-an-mqtt-application-in-qt6.md)
 - [Connecting to Serverless MQTT Broker in PHP](https://github.com/emqx/blog/blob/main/en/202307/connecting-to-serverless-mqtt-broker-in-php.md)
 - [A Quickstart Guide to Using MQTT over WebSocket](https://github.com/emqx/blog/blob/main/en/202306/connect-to-mqtt-broker-with-websocket.md)
 - [MQTT on ESP32: A Beginner's Guide](https://github.com/emqx/blog/blob/main/en/202306/esp32-connects-to-the-free-public-mqtt-broker.md)
@@ -321,6 +323,7 @@ The easiest way to start MQTT service. Connect your IoT devices to any cloud wit
 ## [EMQX Enterprise](https://www.emqx.com/en/blog/category/enterprise)
 The world's most scalable and reliable MQTT messaging platform to connect, move and process your data in business-critical scenarios for the IoT era.
 
+- [MQTT Performance Benchmark Testing: EMQX-MySQL Integration](https://github.com/emqx/blog/blob/main/en/202308/mqtt-performance-benchmark-testing-emqx-mysql-integration.md)
 - [Troubleshooting Common EMQX Configuration Mistakes](https://github.com/emqx/blog/blob/main/en/202308/troubleshooting-common-emqx-configuration-mistakes.md)
 - [EMQX Enterprise 5.1.1 Released: Enhanced MQTT Authorization](https://github.com/emqx/blog/blob/main/en/202308/emqx-enterprise-5-1-1-release-notes.md)
 - [MQTT Performance Benchmark Testing: EMQX-MongoDB Integration](https://github.com/emqx/blog/blob/main/en/202308/mqtt-performance-benchmark-testing-emqx-mongodb-integration.md)
