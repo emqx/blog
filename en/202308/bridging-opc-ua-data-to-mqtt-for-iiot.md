@@ -104,6 +104,8 @@ OPC UA data sources can be captured and aggregated by Neuron's southbound OPC UA
 
 In this blog, we will offer a bridging solution from OPC UA to MQTT with Neuron and EMQX. We will demonstrate using Neuron to collect data from the Prosys OPC UA Simulation Server, upload the collected data to the locally-built EMQX MQTT Broker (mqtt://192.168.10.174:1883), and finally view the changes in the data using the MQTTX subscription topic.
 
+![Bridging OPC UA to MQTT](https://assets.emqx.com/images/0d6aba325262607e1d188703b4e446a3.png)
+
 | **Application**                 | **IP address** | **port** |
 | :------------------------------ | :------------- | :------- |
 | Prosys OPC UA Simulation Server | 192.168.10.174 | 53530    |

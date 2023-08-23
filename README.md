@@ -385,6 +385,7 @@ Build a reliable, efficient and industry-specific Internet of Vehicles platform 
 
 ## [Industrial IoT | Unified Namespace | Sparkplug](https://www.emqx.com/en/blog/category/industrial-iot)
 
+- [Open Manufacturing Hub: A Reference Architecture for Industrial IoT (IIoT)](https://github.com/emqx/blog/blob/main/en/202308/open-manufacturing-hub-a-reference-architecture-for-industrial-iot.md)
 - [Bridging FINS Data to MQTT: Protocol Explained and Hands-on Tutorial](https://github.com/emqx/blog/blob/main/en/202308/bridging-fins-data-to-mqtt.md)
 - [Bridging OPC UA Data to MQTT for IIoT: A Step-by-Step Tutorial](https://github.com/emqx/blog/blob/main/en/202308/bridging-opc-ua-data-to-mqtt-for-iiot.md)
 - [IIoT Explained: Examples, Technologies, Benefits and Challenges](https://github.com/emqx/blog/blob/main/en/202308/iiot-explained-examples-technologies-benefits-and-challenges.md)
