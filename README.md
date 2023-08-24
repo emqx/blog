@@ -245,6 +245,7 @@ EMQX is the world's most scalable open-source MQTT broker with a high performanc
 ## [EMQX Cloud](https://www.emqx.com/en/blog/category/cloud)
 The easiest way to start MQTT service. Connect your IoT devices to any cloud without the burden of maintaining infrastructure.
 
+- [EMQX Cloud Now Available in AWS Sydney: Deploy Your EMQX Cluster Today](https://github.com/emqx/blog/blob/main/en/202308/emqx-cloud-now-available-in-aws-sydney.md)
 - [Azure IoT Hub: 4 Key Features, Use Cases, and How to Get Started](https://github.com/emqx/blog/blob/main/en/202308/azure-iot-hub-4-key-features-use-cases-and-how-to-get-started.md)
 - [Understanding AWS IoT Core: Features, Use Cases & Quick Tutorial](https://github.com/emqx/blog/blob/main/en/202308/understanding-aws-iot-core.md)
 - [IoT in the Cloud: 8 Key Benefits and How to Get Started](https://github.com/emqx/blog/blob/main/en/202308/iot-in-the-cloud-8-key-benefits-and-how-to-get-started.md)
@@ -385,6 +386,7 @@ Build a reliable, efficient and industry-specific Internet of Vehicles platform 
 
 ## [Industrial IoT | Unified Namespace | Sparkplug](https://www.emqx.com/en/blog/category/industrial-iot)
 
+- [Open Manufacturing Hub: A Reference Architecture for Industrial IoT (IIoT)](https://github.com/emqx/blog/blob/main/en/202308/open-manufacturing-hub-a-reference-architecture-for-industrial-iot.md)
 - [Bridging FINS Data to MQTT: Protocol Explained and Hands-on Tutorial](https://github.com/emqx/blog/blob/main/en/202308/bridging-fins-data-to-mqtt.md)
 - [Bridging OPC UA Data to MQTT for IIoT: A Step-by-Step Tutorial](https://github.com/emqx/blog/blob/main/en/202308/bridging-opc-ua-data-to-mqtt-for-iiot.md)
 - [IIoT Explained: Examples, Technologies, Benefits and Challenges](https://github.com/emqx/blog/blob/main/en/202308/iiot-explained-examples-technologies-benefits-and-challenges.md)
