@@ -42,6 +42,9 @@ After the compiling, there are two ways to use it. One is to import qtmqtt as a 
 
    3. Copy the two `.pri` files from `build-qtmqtt-Qt_6_5_1_for_macOS-Release/mkspecs/modules` to `Qt/6.5.1/macos/mkspecs/modules`.
 
+> When we published this blog on Twitter, [Diego Schulz](https://twitter.com/dschulzg) provided a better way to build and install the Qt MQTT module. We have included it [here](https://stackoverflow.com/questions/68928310/build-specific-modules-in-qt6-i-e-qtmqtt/71984521#71984521) for your reference.
+
+
 ## Qt MQTT Examples
 
 Now we can use the Qt MQTT module in Qt. Qt provides some [examples](https://github.com/qt/qtmqtt/tree/6.5.1/examples/mqtt) to demonstrate the functionality provided by the [Qt MQTT](https://doc.qt.io/qt-6/qtmqtt-index.html) module.
