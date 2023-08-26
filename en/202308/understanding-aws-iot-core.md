@@ -162,7 +162,7 @@ After you subscribe to the test topic, run ./start.sh on your device. Immediatel
 
  Click **Continue** to finish the tutorial and see a summary of the activity.
 
-## AWS IoT Core + EMQX: A Better Choice for IoT Communication
+## AWS + EMQX Cloud: A Better Choice for IoT Communication
 
 Working with AWS IoT Core can raise some challenges related to management of large-scale MQTT communications. [EMQX Cloud](https://www.emqx.com/en/cloud) can help, with a comprehensive MQTT service that is fully managed and customizable to the needs of users. This includes flexible pricing models, customizable connection specifications, and the freedom to select a cloud provider and integrate with other cloud resources.
 
