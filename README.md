@@ -89,6 +89,7 @@ Get to know the preferred protocol in IoT from beginner to master.
 ## [MQTT Programming](https://www.emqx.com/en/blog/category/mqtt-programming)
 Best practice of MQTT in various clients.
 
+- [Using MQTT in Unity with M2MqttUnity Library: A Step-by-Step Guide](https://github.com/emqx/blog/blob/main/en/202308/using-mqtt-in-unity-with-m2mqttunity-library-a-step-by-step-guide.md)
 - [How to Create an MQTT Application in Qt6](https://github.com/emqx/blog/blob/main/en/202308/how-to-create-an-mqtt-application-in-qt6.md)
 - [Connecting to Serverless MQTT Broker in PHP](https://github.com/emqx/blog/blob/main/en/202307/connecting-to-serverless-mqtt-broker-in-php.md)
 - [A Quickstart Guide to Using MQTT over WebSocket](https://github.com/emqx/blog/blob/main/en/202306/connect-to-mqtt-broker-with-websocket.md)
@@ -160,6 +161,8 @@ Explore more with & via EMQ.
 ## [EMQX Open Source | Broker](https://www.emqx.com/en/blog/category/emqx)
 EMQX is the world's most scalable open-source MQTT broker with a high performance that connects 100M+ IoT devices in 1 cluster, while maintaining 1M message per second throughput and sub-millisecond latency.
 
+- [MQTT Performance Benchmark Testing: EMQX Single Node Message Latency & Response Time](https://github.com/emqx/blog/blob/main/en/202308/mqtt-performance-benchmark-testing-emqx-single-node-message-latency-response-time.md)
+- [MQTT Performance Benchmark Testing: EMQX Single Node Supports 2M Message Throughput](https://github.com/emqx/blog/blob/main/en/202308/mqtt-performance-benchmark-testing-emqx-single-node-supports-2m-message-throughput.md)
 - [Troubleshooting Common EMQX Configuration Mistakes](https://github.com/emqx/blog/blob/main/en/202308/troubleshooting-common-emqx-configuration-mistakes.md)
 - [MQTT Performance Benchmark Testing: EMQX-TimescaleDB Integration](https://github.com/emqx/blog/blob/main/en/202308/mqtt-performance-benchmark-series-emqx-timescaledb-integration.md)
 - [MQTT Performance Benchmark Testing: EMQX Single Node Supports 5M Connections](https://github.com/emqx/blog/blob/main/en/202308/emqx-single-node-supports-5m-connections.md)
@@ -245,6 +248,7 @@ EMQX is the world's most scalable open-source MQTT broker with a high performanc
 ## [EMQX Cloud](https://www.emqx.com/en/blog/category/cloud)
 The easiest way to start MQTT service. Connect your IoT devices to any cloud without the burden of maintaining infrastructure.
 
+- [EMQX Cloud Now Available in AWS Sydney: Deploy Your EMQX Cluster Today](https://github.com/emqx/blog/blob/main/en/202308/emqx-cloud-now-available-in-aws-sydney.md)
 - [Azure IoT Hub: 4 Key Features, Use Cases, and How to Get Started](https://github.com/emqx/blog/blob/main/en/202308/azure-iot-hub-4-key-features-use-cases-and-how-to-get-started.md)
 - [Understanding AWS IoT Core: Features, Use Cases & Quick Tutorial](https://github.com/emqx/blog/blob/main/en/202308/understanding-aws-iot-core.md)
 - [IoT in the Cloud: 8 Key Benefits and How to Get Started](https://github.com/emqx/blog/blob/main/en/202308/iot-in-the-cloud-8-key-benefits-and-how-to-get-started.md)
@@ -385,6 +389,7 @@ Build a reliable, efficient and industry-specific Internet of Vehicles platform 
 
 ## [Industrial IoT | Unified Namespace | Sparkplug](https://www.emqx.com/en/blog/category/industrial-iot)
 
+- [Open Manufacturing Hub: A Reference Architecture for Industrial IoT (IIoT)](https://github.com/emqx/blog/blob/main/en/202308/open-manufacturing-hub-a-reference-architecture-for-industrial-iot.md)
 - [Bridging FINS Data to MQTT: Protocol Explained and Hands-on Tutorial](https://github.com/emqx/blog/blob/main/en/202308/bridging-fins-data-to-mqtt.md)
 - [Bridging OPC UA Data to MQTT for IIoT: A Step-by-Step Tutorial](https://github.com/emqx/blog/blob/main/en/202308/bridging-opc-ua-data-to-mqtt-for-iiot.md)
 - [IIoT Explained: Examples, Technologies, Benefits and Challenges](https://github.com/emqx/blog/blob/main/en/202308/iiot-explained-examples-technologies-benefits-and-challenges.md)
@@ -408,6 +413,7 @@ Build a reliable, efficient and industry-specific Internet of Vehicles platform 
 ## [MQTTX](https://www.emqx.com/en/blog/category/mqttx)
 MQTTX is a Fully Open-source MQTT 5.0 cross-platform Desktop Client, makes it easy and quick to create multiple simultaneous online MQTT client connections, test the connection, publish, and subscribe functions of MQTT/TCP, MQTT/TLS, MQTT/WebSocket as well as other MQTT protocol features.
 
+- [Simulating the Future: Crafting IoT Scenarios with ChatGPT and MQTTX](https://github.com/emqx/blog/blob/main/en/202308/simulating-the-future-crafting-iot-scenarios-with-chatgpt-and-mqttx.md)
 - [MQTTX 1.9.5 Released: JSON Message Highlighting and More!](https://github.com/emqx/blog/blob/main/en/202308/mqttx-1-9-5-released-json-message-highlighting-and-more.md)
 - [MQTTX 1.9.4: Empowering High-Frequency MQTT Testing with Protobuf Integration](https://github.com/emqx/blog/blob/main/en/202307/mqttx-v-1-9-4-release-notes.md)
 - [Connecting to Serverless MQTT Broker using MQTTX: A Quick Guide](https://github.com/emqx/blog/blob/main/en/202307/how-to-use-mqttx-for-serverless-mqtt-broker-test.md)
