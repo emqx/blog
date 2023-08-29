@@ -327,6 +327,7 @@ The easiest way to start MQTT service. Connect your IoT devices to any cloud wit
 ## [EMQX Enterprise](https://www.emqx.com/en/blog/category/enterprise)
 The world's most scalable and reliable MQTT messaging platform to connect, move and process your data in business-critical scenarios for the IoT era.
 
+- [Building Connected Vehicle Streaming Data Pipelines with MQTT and Kafka: A 3-Minute Guide](https://github.com/emqx/blog/blob/main/en/202308/building-connected-vehicle-streaming-data-pipelines-with-mqtt-and-kafka.md)
 - [MQTT Performance Benchmark Testing: EMQX-MySQL Integration](https://github.com/emqx/blog/blob/main/en/202308/mqtt-performance-benchmark-testing-emqx-mysql-integration.md)
 - [Troubleshooting Common EMQX Configuration Mistakes](https://github.com/emqx/blog/blob/main/en/202308/troubleshooting-common-emqx-configuration-mistakes.md)
 - [EMQX Enterprise 5.1.1 Released: Enhanced MQTT Authorization](https://github.com/emqx/blog/blob/main/en/202308/emqx-enterprise-5-1-1-release-notes.md)
@@ -389,6 +390,7 @@ Build a reliable, efficient and industry-specific Internet of Vehicles platform 
 
 ## [Industrial IoT | Unified Namespace | Sparkplug](https://www.emqx.com/en/blog/category/industrial-iot)
 
+- [OPC UA over MQTT: The Future of IT and OT Convergence](https://github.com/emqx/blog/blob/main/en/202308/opc-ua-over-mqtt-the-future-of-it-and-ot-convergence.md)
 - [Open Manufacturing Hub: A Reference Architecture for Industrial IoT (IIoT)](https://github.com/emqx/blog/blob/main/en/202308/open-manufacturing-hub-a-reference-architecture-for-industrial-iot.md)
 - [Bridging FINS Data to MQTT: Protocol Explained and Hands-on Tutorial](https://github.com/emqx/blog/blob/main/en/202308/bridging-fins-data-to-mqtt.md)
 - [Bridging OPC UA Data to MQTT for IIoT: A Step-by-Step Tutorial](https://github.com/emqx/blog/blob/main/en/202308/bridging-opc-ua-data-to-mqtt-for-iiot.md)
