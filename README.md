@@ -161,6 +161,7 @@ Explore more with & via EMQ.
 ## [EMQX Open Source | Broker](https://www.emqx.com/en/blog/category/emqx)
 EMQX is the world's most scalable open-source MQTT broker with a high performance that connects 100M+ IoT devices in 1 cluster, while maintaining 1M message per second throughput and sub-millisecond latency.
 
+- [EMQX MQTT Broker Troubleshooting: Publish-Subscribe Issues](https://github.com/emqx/blog/blob/main/en/202308/emqx-mqtt-broker-troubleshooting-publish-subscribe-issues.md)
 - [MQTT Performance Benchmark Testing: EMQX Single Node Message Latency & Response Time](https://github.com/emqx/blog/blob/main/en/202308/mqtt-performance-benchmark-testing-emqx-single-node-message-latency-response-time.md)
 - [MQTT Performance Benchmark Testing: EMQX Single Node Supports 2M Message Throughput](https://github.com/emqx/blog/blob/main/en/202308/mqtt-performance-benchmark-testing-emqx-single-node-supports-2m-message-throughput.md)
 - [Troubleshooting Common EMQX Configuration Mistakes](https://github.com/emqx/blog/blob/main/en/202308/troubleshooting-common-emqx-configuration-mistakes.md)
@@ -327,6 +328,8 @@ The easiest way to start MQTT service. Connect your IoT devices to any cloud wit
 ## [EMQX Enterprise](https://www.emqx.com/en/blog/category/enterprise)
 The world's most scalable and reliable MQTT messaging platform to connect, move and process your data in business-critical scenarios for the IoT era.
 
+- [EMQX MQTT Broker Troubleshooting: Publish-Subscribe Issues](https://github.com/emqx/blog/blob/main/en/202308/emqx-mqtt-broker-troubleshooting-publish-subscribe-issues.md)
+- [EMQX Enterprise 4.4.20 Released: Enhancing Kafka, Pub/Sub, and HStream Data Integration](https://github.com/emqx/blog/blob/main/en/202308/emqx-enterprise-v-4-4-20-release-notes.md)
 - [Building Connected Vehicle Streaming Data Pipelines with MQTT and Kafka: A 3-Minute Guide](https://github.com/emqx/blog/blob/main/en/202308/building-connected-vehicle-streaming-data-pipelines-with-mqtt-and-kafka.md)
 - [MQTT Performance Benchmark Testing: EMQX-MySQL Integration](https://github.com/emqx/blog/blob/main/en/202308/mqtt-performance-benchmark-testing-emqx-mysql-integration.md)
 - [Troubleshooting Common EMQX Configuration Mistakes](https://github.com/emqx/blog/blob/main/en/202308/troubleshooting-common-emqx-configuration-mistakes.md)
