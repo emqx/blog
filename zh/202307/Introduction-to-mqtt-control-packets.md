@@ -4,7 +4,7 @@ MQTT 控制报文是 MQTT 数据传输的最小单元。[MQTT 客户端](https:/
 
 MQTT 目前定义了 15 种控制报文类型，如果按照功能进行分类，我们可以将这些报文分为连接、发布、订阅三个类别：
 
-![MQTT control packets](https://assets.emqx.com/images/936acfcc4136e28a53732a7751762abb.png)
+![MQTT control packets](https://assets.emqx.com/images/38dcbe27c83b9d8e1cce010a6554dbc8.png)
 
 其中，CONNECT 报文用于客户端向服务端发起连接，CONNACK 报文则作为响应返回连接的结果。如果想要结束通信，或者遇到了一个必须终止连接的错误，客户端和服务端可以发送一个 DISCONNECT 报文然后关闭网络连接。
 
@@ -24,13 +24,13 @@ SUBSCRIBE 报文用于客户端向服务端发起订阅，UNSUBSCRIBE 报文则�
 
 固定报头固定存在于所有控制报文中，而可变报头和有效载荷是否存在以及它们的内容则取决于具体的报文类型。例如用于维持连接的 PINGREQ 报文就只有一个固定报头，用于传递应用消息的 PUBLISH 报文则完整地包含了这三个部分。
 
-![MQTT Packet Format](https://assets.emqx.com/images/1e9c7ce0b37a9605e3fc49100b6f10fe.png)
+![MQTT Packet Format](https://assets.emqx.com/images/aa4530a68f7576acd841142f5fd90043.png)
 
 ### 固定报头
 
 固定报头由报文类型、标识位和报文剩余长度三个字段组成。
 
-![MQTT Fixed Header](https://assets.emqx.com/images/591a2168c2c192c3b03479e7531c05ea.png)
+![MQTT Fixed Header](https://assets.emqx.com/images/4131b773a84f710314becd143f26a8d9.png)
 
 报文类型位于固定报头第一个字节的高 4 位，它是一个无符号整数，很显然，它表示当前报文的类型，例如 1 表示这是一个 CONNECT 报文，2 表示 CONNACK 报文等等。详细的映射关系可以参阅 [MQTT 5.0 规范 - MQTT 控制报文类型](https://docs.oasis-open.org/mqtt/mqtt/v5.0/os/mqtt-v5.0-os.html#_Toc3901022)。事实上，除了报文类型和剩余长度这两个字段，MQTT 报文剩余部分的内容基本都取决于具体的报文类型，所以这个字段也决定了接收方应该如何解析报文的后续内容。
 
@@ -44,7 +44,7 @@ SUBSCRIBE 报文用于客户端向服务端发起订阅，UNSUBSCRIBE 报文则�
 
 最后的剩余长度指示了当前控制报文剩余部分的字节数，也就是可变报头和有效载荷这两个部分的长度。所以 MQTT 控制报文的总长度实际上等于固定报头的长度加上剩余长度。
 
-![Remaining Length](https://assets.emqx.com/images/32dd746e2ead30c8c50bcf2c84296c1e.png)
+![Remaining Length](https://assets.emqx.com/images/19eb3616e9fd094aa675305e08b391da.png)
 
 #### 可变字节整数
 
@@ -56,13 +56,13 @@ SUBSCRIBE 报文用于客户端向服务端发起订阅，UNSUBSCRIBE 报文则�
 
 所以 MQTT 的可变字节整数就被设计出来了，它将每个字节中的低 7 位用于编码数据，最高的有效位用于指示是否还有更多的字节。这样，长度小于 128 字节时可变字节整数只需要一个字节就可以指示。可变字节整数的最大长度为 4 个字节，所以最多可以指示长度为 (2^28 - 1) 字节，也就是 256 MB 的数据。
 
-![Variable Byte Integer](https://assets.emqx.com/images/82d598ea1ac6fd2e87f4feb567a70f47.png)
+![Variable Byte Integer](https://assets.emqx.com/images/055cf380b41283639f48a514e439cea2.png)
 
 ### 可变报头
 
 可变报头的内容取决于具体的报文类型。例如 CONNECT 报文的可变报头按顺序包含了协议名、协议级别、连接标识、Keep Alive 和属性这五个字段。PUBLISH 报文的可变报头则按顺序包含了主题名、报文标识符和属性这三个字段。
 
-![MQTT Variable Header](https://assets.emqx.com/images/34ee456f79d97ae0bc56c4f3dd4a0ddf.png)
+![MQTT Variable Header](https://assets.emqx.com/images/22e02825f2a09033f311218b4e9985b1.png)
 
 需要注意这里提到的顺序，可变报头中字段出现的顺序必须严格遵循协议规范，因为接收端只会按照协议规定的字段顺序进行解析。我们也不能随意地遗漏某个字段，除非是协议明确要求或允许的。例如，在 CONNECT 报文的可变报头中，如果协议名之后直接就是连接标识，那么就会导致报文解析失败。而在 PUBLISH 报文的可变报头中，报文标识符就只有在 QoS 不为 0 的时候才能存在。
 
@@ -70,13 +70,13 @@ SUBSCRIBE 报文用于客户端向服务端发起订阅，UNSUBSCRIBE 报文则�
 
 属性是 MQTT 5.0 引入的一个概念。属性字段基本上都是可变报头的最后一部分，由属性长度和紧随其后的一组属性组成，这里的属性长度指的是后面所有属性的总长度。
 
-![Properties](https://assets.emqx.com/images/d412f11e0265a54cb0432408777ce7cf.png)
+![Properties](https://assets.emqx.com/images/4dc5e956daa02e22aeb17b7a6b3d1b00.png)
 
 所有的属性都是可选的，因为它们通常都有一个默认值，如果没有任何属性，那么属性长度的值就为 0。
 
 每个属性都由一个定义了属性用途和数据类型的标识符和具体的值组成。不同属性的数据类型可能不同，比如一个是双字节长度的整数，另一个则是 UTF-8 编码的字符串，所以我们需要按照标识符所声明的数据类型对属性进行解析。
 
-![Property](https://assets.emqx.com/images/b82cfee353efc201214a8aba609b2e58.png)
+![Property](https://assets.emqx.com/images/c4c3242f6b3f90518a88f034c8354010.png)
 
 属性之间的顺序可以是任意的，这是因为我们可以根据标识符知道这是哪个属性，以及它的长度是多少。
 
