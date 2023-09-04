@@ -4,7 +4,7 @@ MQTT control packets are the smallest unit of data transfer in [MQTT](https://ww
 
 Currently, MQTT defines 15 types of control packets. If we classify them based on their functionality, we can categorize these packets into three categories: connection, publishing, and subscribing.
 
-![MQTT control packets](https://assets.emqx.com/images/936acfcc4136e28a53732a7751762abb.png)
+![MQTT control packets](https://assets.emqx.com/images/f072fa0c17d4a188db0768caf5d17d19.png)
 
  Among them, the **CONNECT** packet is used by the client to initiate a connection to the server, and the **CONNACK** packet is sent as a response to indicate the result of the connection. If one wants to terminate the communication or encounters an error that requires terminating the connection, the client and server can send a **DISCONNECT** packet and then close the network connection.
 
@@ -22,13 +22,13 @@ In MQTT, regardless of the type of control packet, they all consist of three par
 
 The Fixed Header always exists in all control packets. The existence and content of the Variable Header and Payload depend on the specific packet type. For example, the **PINGREQ** packet used for keeping alive only includes the Fixed Header, while the **PUBLISH** packet used for transmitting application messages includes all three parts.
 
-![MQTT Packet Format](https://assets.emqx.com/images/1e9c7ce0b37a9605e3fc49100b6f10fe.png)
+![MQTT Packet Format](https://assets.emqx.com/images/aa4530a68f7576acd841142f5fd90043.png)
 
 ### Fixed Header
 
 The Fixed Header consists of three fields: MQTT Control Packet Type, Flags, and Remaining Length.
 
-![MQTT Fixed Header](https://assets.emqx.com/images/591a2168c2c192c3b03479e7531c05ea.png)
+![MQTT Fixed Header](https://assets.emqx.com/images/4131b773a84f710314becd143f26a8d9.png)
 
 The MQTT Control Packet Type is located in the high 4 bits of the first byte of the Fixed Header. It is an unsigned integer that represents the type of the current packet. For example, 1 indicates a **CONNECT** packet, 2 indicates a **CONNACK** packet, and so on. The detailed mapping can be found in the [MQTT 5.0 specification - MQTT Control Packet Types](https://docs.oasis-open.org/mqtt/mqtt/v5.0/os/mqtt-v5.0-os.html#_Toc3901022). In fact, except for the MQTT Control Packet Type and Remaining Length fields, the content of the remaining part of the MQTT packet depends on the specific packet type. So, this field determines how the receiver should parse the following content of the packet.
 
@@ -42,7 +42,7 @@ In all other packet types, these 4 bits remain reserved, meaning they have a fix
 
 The final Remaining Length field indicates the number of bytes in the remaining part of the control packet, which includes the Variable Header and the Payload. Therefore, an MQTT control packet's total length is equal to the Fixed Header's length plus the Remaining Length.
 
-![Remaining Length](https://assets.emqx.com/images/32dd746e2ead30c8c50bcf2c84296c1e.png)
+![Remaining Length](https://assets.emqx.com/images/19eb3616e9fd094aa675305e08b391da.png)
 
 #### Variable Byte Integer
 
@@ -54,13 +54,13 @@ For a 2 MB application message, which is a total of 2,097,152 bytes, we would ne
 
 Therefore, MQTT introduces variable byte integers, which utilize the lower 7 bits of each byte to encode data, while the highest bit indicates whether there are more bytes to follow. This way, when the packet length is less than 128 bytes, the variable byte integer only needs one byte to indicate. The maximum length of a variable byte integer is 4 bytes, allowing it to indicate a length of up to (2^28 - 1) bytes, which is 256 MB of data.
 
-![Variable Byte Integer](https://assets.emqx.com/images/82d598ea1ac6fd2e87f4feb567a70f47.png)
+![Variable Byte Integer](https://assets.emqx.com/images/055cf380b41283639f48a514e439cea2.png)
 
 ### Variable Header
 
 The contents of the Variable Header in MQTT depend on the specific packet type. For example, the Variable Header of the **CONNECT** packet includes the Protocol Name, Protocol Level, Connect Flags, Keep Alive, and Properties in that order. The Variable Header of a **PUBLISH** packet includes the Topic name, Packet Identifier (if QoS is not 0), and Properties in that order.
 
-![MQTT Variable Header](https://assets.emqx.com/images/34ee456f79d97ae0bc56c4f3dd4a0ddf.png)
+![MQTT Variable Header](https://assets.emqx.com/images/22e02825f2a09033f311218b4e9985b1.png)
 
 The fields in the Variable Header must strictly follow the protocol specification because the receiver will only parse them in the specified order. We cannot omit any field unless the protocol explicitly requires or allows it. For example, in the Variable Header of the **CONNECT** packet, if the Connect Flags are placed directly after the Protocol Name, it would result in a parsing failure. Similarly, in the Variable Header of the **PUBLISH** packet, the packet identifier is only present when QoS is not 0.
 
@@ -68,13 +68,13 @@ The fields in the Variable Header must strictly follow the protocol specificatio
 
 Properties are a concept introduced in MQTT 5.0. They are basically the last part of the Variable Header. The properties consist of the Property Length field followed by a set of properties. The Property Length indicates the total length of all the properties that follow.
 
-![Properties](https://assets.emqx.com/images/d412f11e0265a54cb0432408777ce7cf.png) 
+![Properties](https://assets.emqx.com/images/4dc5e956daa02e22aeb17b7a6b3d1b00.png) 
 
 All properties are optional, as they usually have a default value. If there is no property, then the value of the Property Length is 0.
 
 Each property consists of an identifier that defines the purpose and data type of the property and a specific value. Different properties may have different data types. For example, one is a two-byte integer, and another is a UTF-8 encoded string, so we need to parse the properties according to the data type declared by their identifiers.
 
-![Property](https://assets.emqx.com/images/b82cfee353efc201214a8aba609b2e58.png)
+![Property](https://assets.emqx.com/images/c4c3242f6b3f90518a88f034c8354010.png)
 
 The order of properties can be arbitrary because we can know which property it is and its length based on the Identifier.
 
