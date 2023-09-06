@@ -143,6 +143,7 @@ Best practice of MQTT in various clients.
 ## [MQTT Integration (Eco & Integration)](https://www.emqx.com/en/blog/category/eco-and-integration)
 Explore more with & via EMQ.
 
+- [AWS MQTT: Managing IoT Communication in AWS (with Tutorial)](https://github.com/emqx/blog/blob/main/en/202309/aws-mqtt-managing-iot-communication-in-aws.md)
 - [MQTT to ClickHouse Integration: Fueling Real-Time IoT Data Analytics](https://github.com/emqx/blog/blob/main/en/202307/mqtt-to-clickhouse-integration.md)
 - [MQTT Performance Benchmark Testing: EMQX-HStreamDB Integration](https://github.com/emqx/blog/blob/main/en/202307/mqtt-performance-benchmark-testing-emqx-hstreamdb-integration.md)
 - [Time-Series Database (TSDB) for IoT: The Missing Piece](https://github.com/emqx/blog/blob/main/en/202307/time-series-database-for-iot-the-missing-piece.md)
@@ -393,6 +394,8 @@ Build a reliable, efficient and industry-specific Internet of Vehicles platform 
 
 ## [Industrial IoT | Unified Namespace | Sparkplug](https://www.emqx.com/en/blog/category/industrial-iot)
 
+- [4 Reasons Why You Should Adopt MQTT in Unified Namespace](https://github.com/emqx/blog/blob/main/en/202309/four-reasons-why-you-should-adopt-mqtt-in-unified-namespace.md)
+- [IIoT Platform: Key Components and 5 Notable Solutions](https://github.com/emqx/blog/blob/main/en/202309/iiot-platform-key-components-and-5-notable-solutions.md)
 - [OPC UA over MQTT: The Future of IT and OT Convergence](https://github.com/emqx/blog/blob/main/en/202308/opc-ua-over-mqtt-the-future-of-it-and-ot-convergence.md)
 - [Open Manufacturing Hub: A Reference Architecture for Industrial IoT (IIoT)](https://github.com/emqx/blog/blob/main/en/202308/open-manufacturing-hub-a-reference-architecture-for-industrial-iot.md)
 - [Bridging FINS Data to MQTT: Protocol Explained and Hands-on Tutorial](https://github.com/emqx/blog/blob/main/en/202308/bridging-fins-data-to-mqtt.md)
