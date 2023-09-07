@@ -5,6 +5,7 @@
 ## [MQTT Tutorials](https://www.emqx.com/en/blog/category/mqtt-protocol)
 Get to know the preferred protocol in IoT from beginner to master.
 
+- [Explore New Features of MQTT 5.0: Usage Examples Based on MQTTX CLI](https://github.com/emqx/blog/blob/main/en/202309/demonstrate-mqtt-5-0-features-using-mqttx-cli.md)
 - [MQTT vs AMQP for IoT Communications: Head to Head](https://github.com/emqx/blog/blob/main/en/202307/mqtt-vs-amqp-for-iot-communications.md)
 - [Introduction to MQTT Control Packets](https://github.com/emqx/blog/blob/main/en/202307/Introduction-to-mqtt-control-packets.md)
 - [Best Practices of Maximum Packet Size in MQTT](https://github.com/emqx/blog/blob/main/en/202307/best-practices-of-maximum-packet-size-in-mqtt.md)
@@ -143,6 +144,7 @@ Best practice of MQTT in various clients.
 ## [MQTT Integration (Eco & Integration)](https://www.emqx.com/en/blog/category/eco-and-integration)
 Explore more with & via EMQ.
 
+- [AWS MQTT: Managing IoT Communication in AWS (with Tutorial)](https://github.com/emqx/blog/blob/main/en/202309/aws-mqtt-managing-iot-communication-in-aws.md)
 - [MQTT to ClickHouse Integration: Fueling Real-Time IoT Data Analytics](https://github.com/emqx/blog/blob/main/en/202307/mqtt-to-clickhouse-integration.md)
 - [MQTT Performance Benchmark Testing: EMQX-HStreamDB Integration](https://github.com/emqx/blog/blob/main/en/202307/mqtt-performance-benchmark-testing-emqx-hstreamdb-integration.md)
 - [Time-Series Database (TSDB) for IoT: The Missing Piece](https://github.com/emqx/blog/blob/main/en/202307/time-series-database-for-iot-the-missing-piece.md)
@@ -393,6 +395,8 @@ Build a reliable, efficient and industry-specific Internet of Vehicles platform 
 
 ## [Industrial IoT | Unified Namespace | Sparkplug](https://www.emqx.com/en/blog/category/industrial-iot)
 
+- [4 Reasons Why You Should Adopt MQTT in Unified Namespace](https://github.com/emqx/blog/blob/main/en/202309/four-reasons-why-you-should-adopt-mqtt-in-unified-namespace.md)
+- [IIoT Platform: Key Components and 5 Notable Solutions](https://github.com/emqx/blog/blob/main/en/202309/iiot-platform-key-components-and-5-notable-solutions.md)
 - [OPC UA over MQTT: The Future of IT and OT Convergence](https://github.com/emqx/blog/blob/main/en/202308/opc-ua-over-mqtt-the-future-of-it-and-ot-convergence.md)
 - [Open Manufacturing Hub: A Reference Architecture for Industrial IoT (IIoT)](https://github.com/emqx/blog/blob/main/en/202308/open-manufacturing-hub-a-reference-architecture-for-industrial-iot.md)
 - [Bridging FINS Data to MQTT: Protocol Explained and Hands-on Tutorial](https://github.com/emqx/blog/blob/main/en/202308/bridging-fins-data-to-mqtt.md)
@@ -418,6 +422,7 @@ Build a reliable, efficient and industry-specific Internet of Vehicles platform 
 ## [MQTTX](https://www.emqx.com/en/blog/category/mqttx)
 MQTTX is a Fully Open-source MQTT 5.0 cross-platform Desktop Client, makes it easy and quick to create multiple simultaneous online MQTT client connections, test the connection, publish, and subscribe functions of MQTT/TCP, MQTT/TLS, MQTT/WebSocket as well as other MQTT protocol features.
 
+- [Explore New Features of MQTT 5.0: Usage Examples Based on MQTTX CLI](https://github.com/emqx/blog/blob/main/en/202309/demonstrate-mqtt-5-0-features-using-mqttx-cli.md)
 - [Simulating the Future: Crafting IoT Scenarios with ChatGPT and MQTTX](https://github.com/emqx/blog/blob/main/en/202308/simulating-the-future-crafting-iot-scenarios-with-chatgpt-and-mqttx.md)
 - [MQTTX 1.9.5 Released: JSON Message Highlighting and More!](https://github.com/emqx/blog/blob/main/en/202308/mqttx-1-9-5-released-json-message-highlighting-and-more.md)
 - [MQTTX 1.9.4: Empowering High-Frequency MQTT Testing with Protobuf Integration](https://github.com/emqx/blog/blob/main/en/202307/mqttx-v-1-9-4-release-notes.md)
