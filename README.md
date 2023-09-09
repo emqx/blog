@@ -144,6 +144,7 @@ Best practice of MQTT in various clients.
 ## [MQTT Integration (Eco & Integration)](https://www.emqx.com/en/blog/category/eco-and-integration)
 Explore more with & via EMQ.
 
+- [Build an IoT Time-Series Data Application for Energy Storage with MQTT and Timescale](https://github.com/emqx/blog/blob/main/en/202309/build-an-iot-time-series-data-application-for-energy-storage-with-mqtt-and-timescale.md)
 - [AWS MQTT: Managing IoT Communication in AWS (with Tutorial)](https://github.com/emqx/blog/blob/main/en/202309/aws-mqtt-managing-iot-communication-in-aws.md)
 - [MQTT to ClickHouse Integration: Fueling Real-Time IoT Data Analytics](https://github.com/emqx/blog/blob/main/en/202307/mqtt-to-clickhouse-integration.md)
 - [MQTT Performance Benchmark Testing: EMQX-HStreamDB Integration](https://github.com/emqx/blog/blob/main/en/202307/mqtt-performance-benchmark-testing-emqx-hstreamdb-integration.md)
