@@ -397,6 +397,7 @@ Build a reliable, efficient and industry-specific Internet of Vehicles platform 
 
 ## [Industrial IoT | Unified Namespace | Sparkplug](https://www.emqx.com/en/blog/category/industrial-iot)
 
+- [Bridging KNX Data to MQTT: Introduction and Hands-on Tutorial](https://github.com/emqx/blog/blob/main/en/202309/bridging-knx-data-to-mqtt-introduction-and-hands-on-tutorial.md)
 - [4 Reasons Why You Should Adopt MQTT in Unified Namespace](https://github.com/emqx/blog/blob/main/en/202309/four-reasons-why-you-should-adopt-mqtt-in-unified-namespace.md)
 - [IIoT Platform: Key Components and 5 Notable Solutions](https://github.com/emqx/blog/blob/main/en/202309/iiot-platform-key-components-and-5-notable-solutions.md)
 - [OPC UA over MQTT: The Future of IT and OT Convergence](https://github.com/emqx/blog/blob/main/en/202308/opc-ua-over-mqtt-the-future-of-it-and-ot-convergence.md)
@@ -452,6 +453,7 @@ MQTTX is a Fully Open-source MQTT 5.0 cross-platform Desktop Client, makes it ea
 ## [Neuron - IIoT Connectivity Server](https://www.emqx.com/en/blog/category/neuron)
 IoT edge industrial protocol gateway software, which supports one-stop access to dozens of industrial protocols and converts them into MQTT protocol to access the cloud industrial IoT platform. It just requires ultra-low resource consumption, and supports three major architectures of X86, ARM, and MIPS.
 
+- [Bridging KNX Data to MQTT: Introduction and Hands-on Tutorial](https://github.com/emqx/blog/blob/main/en/202309/bridging-knx-data-to-mqtt-introduction-and-hands-on-tutorial.md)
 - [Neuron 2.5.1: Streamlined IIoT Platform Management with Device-Based Templates](https://github.com/emqx/blog/blob/main/en/202307/neuron-v-2-5-1-release-notes.md)
 - [Bridging Modbus Data to MQTT for IIoT:  A Step-by-Step Tutorial](https://github.com/emqx/blog/blob/main/en/202306/bridging-modbus-data-to-mqtt-for-iiot.md)
 - [MQTT Sparkplug Solution for Industrial IoT Using EMQX & Neuron](https://github.com/emqx/blog/blob/main/en/202306/mqtt-sparkplug-solution-for-industrial-iot-using-emqx-and-neuron.md)
