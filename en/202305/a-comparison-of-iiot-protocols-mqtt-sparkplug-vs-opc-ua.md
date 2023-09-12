@@ -28,6 +28,26 @@ The [MQTT publish/subscribe (pub/sub) model](https://www.emqx.com/en/blog/mqtt-5
 
 The OPC Foundation released the OPC UA Pub/Sub specification in 2018. This specification defines a publish-subscribe communication model for OPC UA, which can be implemented using the MQTT (Message Queuing Telemetry Transport) protocol as a transport mechanism. OPC UA's Pub/Sub model is a powerful new feature that provides significant benefits for industrial automation and IoT applications.
 
+<section
+  class="is-hidden-touch my-32 is-flex is-align-items-center"
+  style="border-radius: 16px; background: linear-gradient(102deg, #edf6ff 1.81%, #eff2ff 97.99%); padding: 32px 48px;"
+>
+  <div class="mr-40" style="flex-shrink: 0;">
+    <img loading="lazy" src="https://assets.emqx.com/images/0b88fa3cf1c98545e501e3b8073fdccc.png" alt="Open Manufacturing Hub" width="160" height="226">
+  </div>
+  <div>
+    <div class="mb-4 is-size-3 is-text-black has-text-weight-semibold" style="
+    line-height: 1.2;
+">
+      An Innovative Architecture for IIoT System
+    </div>
+    <div class="mb-32">
+      Harnessing the true potential of industrial connectivity and real-time data.
+    </div>
+    <a href="https://www.emqx.com/en/resources/open-manufacturing-hub-a-reference-architecture-for-industrial-iot?utm_campaign=embedded-open-manufacturing-hub&from=blog-a-comparison-of-iiot-protocols-mqtt-sparkplug-vs-opc-ua" class="button is-gradient">Get the Whitepaper →</a>
+  </div>
+</section>
+
 ## Enhancing Industrial Connectivity: MQTT Sparkplug Specification
 
 The MQTT protocol has achieved great success in IoT scenarios. However, its applicability to industrial automation systems is limited due to a lack of interoperability. To address this limitation, Cirrus Link Solutions introduced the Sparkplug specification in 2016, aiming to simplify the implementation of MQTT in industrial automation systems. This specification establishes a standardized format for MQTT messages, facilitating the exchange of data between different devices and applications.
