@@ -68,6 +68,7 @@ A good dashboard should be intuitive and easy to use, even for non-technical use
 
 The dashboard should also provide tools for managing the system. This includes tools for configuring devices, setting up data processing rules, and managing applications. It should provide alerts and notifications to keep users informed about any issues or anomalies in the system.
 
+
 ## 5 Notable IIoT Platforms
 
 ### 1. Neuron and EMQX
