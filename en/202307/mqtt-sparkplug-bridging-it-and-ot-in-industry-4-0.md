@@ -46,6 +46,26 @@ To address these challenges, Sparkplug initiatives focus on developing standardi
 
 By introducing a Sparkplug broker and a data ops gateway together as a central data hub for the IT and OT infrastructure, all host systems and devices are equally connected to this center data hub for data exchange. Sparkplug host systems like ERP and MES and cloud platforms can directly consume the data message from PLC, devices, machines, and robots, realizing the IT and OT convergence.
 
+<section
+  class="is-hidden-touch my-32 is-flex is-align-items-center"
+  style="border-radius: 16px; background: linear-gradient(102deg, #edf6ff 1.81%, #eff2ff 97.99%); padding: 32px 48px;"
+>
+  <div class="mr-40" style="flex-shrink: 0;">
+    <img loading="lazy" src="https://assets.emqx.com/images/0b88fa3cf1c98545e501e3b8073fdccc.png" alt="Open Manufacturing Hub" width="160" height="226">
+  </div>
+  <div>
+    <div class="mb-4 is-size-3 is-text-black has-text-weight-semibold" style="
+    line-height: 1.2;
+">
+      A Reference Architecture for Modern Manufacturing
+    </div>
+    <div class="mb-32">
+      Amplify the power of MQTT Sparkplug.
+    </div>
+    <a href="https://www.emqx.com/en/resources/open-manufacturing-hub-a-reference-architecture-for-industrial-iot?utm_campaign=embedded-open-manufacturing-hub&from=blog-mqtt-sparkplug-bridging-it-and-ot-in-industry-4-0" class="button is-gradient">Get the Whitepaper →</a>
+  </div>
+</section>
+
 ## Unified Namespace: Feature of Sparkplug to Simplify IIoT Management
 
 One of the key features of Sparkplug is the use of a [unified namespace](https://www.emqx.com/en/blog/unified-namespace-next-generation-data-fabric-for-iiot). A namespace is a naming system used to identify and organize objects in a system. In the context of Industry 4.0, there are typically multiple devices, sensors, and systems that need to communicate with each other. Each device or system may have its own unique naming system or identifier, making it difficult to integrate and manage them in a cohesive manner.

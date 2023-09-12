@@ -10,6 +10,26 @@ Sparkplug is an industrial IoT communication protocol designed for use in SCADA 
 
 Sparkplug aims to provide a standardized way to use [MQTT for industrial](https://www.emqx.com/en/use-cases/industrial-iot) applications and promote interoperability between devices and systems from different vendors. As such, the Sparkplug specification has been widely adopted by the industrial IoT community and is supported by many different vendors and organizations.
 
+<section
+  class="is-hidden-touch my-32 is-flex is-align-items-center"
+  style="border-radius: 16px; background: linear-gradient(102deg, #edf6ff 1.81%, #eff2ff 97.99%); padding: 32px 48px;"
+>
+  <div class="mr-40" style="flex-shrink: 0;">
+    <img loading="lazy" src="https://assets.emqx.com/images/0b88fa3cf1c98545e501e3b8073fdccc.png" alt="Open Manufacturing Hub" width="160" height="226">
+  </div>
+  <div>
+    <div class="mb-4 is-size-3 is-text-black has-text-weight-semibold" style="
+    line-height: 1.2;
+">
+      A Reference Architecture for Modern Manufacturing
+    </div>
+    <div class="mb-32">
+      Amplify the power of MQTT Sparkplug.
+    </div>
+    <a href="https://www.emqx.com/en/resources/open-manufacturing-hub-a-reference-architecture-for-industrial-iot?utm_campaign=embedded-open-manufacturing-hub&from=blog-5-key-concepts-for-mqtt-broker-in-sparkplug" class="button is-gradient">Get the Whitepaper →</a>
+  </div>
+</section>
+
 ## Concept 1 - MQTT Messaging Architecture
 
 The Sparkplug specification is based on the [MQTT protocol](https://www.emqx.com/en/mqtt-guide), a lightweight messaging protocol widely used in IoT applications. It is designed for low-bandwidth, high-latency networks and is adopted in IoT applications due to the following capabilities.

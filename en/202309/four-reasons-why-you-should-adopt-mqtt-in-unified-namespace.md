@@ -117,6 +117,26 @@ Theoretically, UNS is a global namespace that unifies all namespaces of your bus
 
 UNS is to take technology across the business and structure it in a way you can navigate. Thus all other solutions could be built on top of it to their best effort. MQTT is responsible for connecting fragmented technologies from OT, CT and the IT world and seamlessly integrates them together.
 
+<section
+  class="is-hidden-touch my-32 is-flex is-align-items-center"
+  style="border-radius: 16px; background: linear-gradient(102deg, #edf6ff 1.81%, #eff2ff 97.99%); padding: 32px 48px;"
+>
+  <div class="mr-40" style="flex-shrink: 0;">
+    <img loading="lazy" src="https://assets.emqx.com/images/0b88fa3cf1c98545e501e3b8073fdccc.png" alt="Open Manufacturing Hub" width="160" height="226">
+  </div>
+  <div>
+    <div class="mb-4 is-size-3 is-text-black has-text-weight-semibold" style="
+    line-height: 1.2;
+">
+      A Reference Architecture for IIoT Based on UNS
+    </div>
+    <div class="mb-32">
+      To build an efficient and scalable IIoT infrastructure.
+    </div>
+    <a href="https://www.emqx.com/en/resources/open-manufacturing-hub-a-reference-architecture-for-industrial-iot?utm_campaign=embedded-open-manufacturing-hub&from=blog-four-reasons-why-you-should-adopt-mqtt-in-unified-namespace" class="button is-gradient">Get the Whitepaper →</a>
+  </div>
+</section>
+
 ## Conclusion
 
 In this blog, we discussed the significance of MQTT within UNS and why MQTT is the data pump of all IT systems. Adopting MQTT in a unified namespace offers a multitude of benefits that can revolutionize how we connect and communicate in the digital world. Organizations can streamline their data flow, create more responsive and connected systems, and unlock new opportunities for innovation and growth. 

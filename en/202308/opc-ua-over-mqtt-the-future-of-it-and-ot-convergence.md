@@ -112,6 +112,26 @@ OPC UA over MQTT's suitability for IoT deployments extends to cloud-based applic
 
 ![Proven Protocol for IT and OT Organization](https://assets.emqx.com/images/f76c2d7f2c580da82d9c0c5b89d7be3e.png)
 
+<section
+  class="is-hidden-touch my-32 is-flex is-align-items-center"
+  style="border-radius: 16px; background: linear-gradient(102deg, #edf6ff 1.81%, #eff2ff 97.99%); padding: 32px 48px;"
+>
+  <div class="mr-40" style="flex-shrink: 0;">
+    <img loading="lazy" src="https://assets.emqx.com/images/0b88fa3cf1c98545e501e3b8073fdccc.png" alt="Open Manufacturing Hub" width="160" height="226">
+  </div>
+  <div>
+    <div class="mb-4 is-size-3 is-text-black has-text-weight-semibold" style="
+    line-height: 1.2;
+">
+      An Innovative Architecture for IIoT System
+    </div>
+    <div class="mb-32">
+      Harnessing the true potential of industrial connectivity and real-time data.
+    </div>
+    <a href="https://www.emqx.com/en/resources/open-manufacturing-hub-a-reference-architecture-for-industrial-iot?utm_campaign=embedded-open-manufacturing-hub&from=blog-opc-ua-over-mqtt-the-future-of-it-and-ot" class="button is-gradient">Get the Whitepaper →</a>
+  </div>
+</section>
+
 ## Security and Authentication
 
 OPC UA over MQTT offers comprehensive security mechanisms, including authentication, authorization, encryption, and data integrity. It addresses the security challenges inherent in industrial environments, helping to protect sensitive data and prevent unauthorized access.

@@ -110,6 +110,26 @@ Another limitation is the protocol's simplicity. While this makes it easy to use
 
 Despite these limitations, the Modbus protocol remains a popular choice for many applications due to its simplicity, robustness, and wide compatibility.
 
+<section
+  class="is-hidden-touch my-32 is-flex is-align-items-center"
+  style="border-radius: 16px; background: linear-gradient(102deg, #edf6ff 1.81%, #eff2ff 97.99%); padding: 32px 48px;"
+>
+  <div class="mr-40" style="flex-shrink: 0;">
+    <img loading="lazy" src="https://assets.emqx.com/images/0b88fa3cf1c98545e501e3b8073fdccc.png" alt="Open Manufacturing Hub" width="160" height="226">
+  </div>
+  <div>
+    <div class="mb-4 is-size-3 is-text-black has-text-weight-semibold" style="
+    line-height: 1.2;
+">
+      An Innovative Architecture for IIoT System
+    </div>
+    <div class="mb-32">
+      Harnessing the true potential of industrial connectivity and real-time data.
+    </div>
+    <a href="https://www.emqx.com/en/resources/open-manufacturing-hub-a-reference-architecture-for-industrial-iot?utm_campaign=embedded-open-manufacturing-hub&from=blog-modbus-protocol-the-grandfather-of-iot-communication" class="button is-gradient">Get the Whitepaper →</a>
+  </div>
+</section>
+
 ## Integrating the Modbus Protocol with the Industrial Internet of Things (IIoT): Neuron and EMQX
 
 With the growth of the Industrial Internet of Things ([IIoT](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges)), there are many opportunities for the integration of Modbus protocol with modern IoT devices for automation, control, and data analytics. With IIoT, Modbus devices can now be part of a much larger, interconnected system, where data from these devices can be collected, analyzed, and utilized to optimize operations, improve safety, and reduce costs.

@@ -4,6 +4,26 @@ In the rapidly evolving landscape of the [Industrial Internet of Things (IIoT)](
 
 Enter the OMH(Open Manufacturing Hub) — an open-source blueprint for industrial IoT presented by EMQ, harnessing the true potential of industrial connectivity and real-time data. In this article, we embark on a journey through the OMH, uncovering how to implement this innovative solution and reshape the way we approach industrial system development.
 
+<section
+  class="is-hidden-touch my-32 is-flex is-align-items-center"
+  style="border-radius: 16px; background: linear-gradient(102deg, #edf6ff 1.81%, #eff2ff 97.99%); padding: 32px 48px;"
+>
+  <div class="mr-40" style="flex-shrink: 0;">
+    <img loading="lazy" src="https://assets.emqx.com/images/0b88fa3cf1c98545e501e3b8073fdccc.png" alt="Open Manufacturing Hub" width="160" height="226">
+  </div>
+  <div>
+    <div class="mb-4 is-size-3 is-text-black has-text-weight-semibold" style="
+    line-height: 1.2;
+">
+      A Reference Architecture for Modern Manufacturing
+    </div>
+    <div class="mb-32">
+      An open-source blueprint for Industry 4.0 to help you build an efficient and scalable IIoT platform.
+    </div>
+    <a href="https://www.emqx.com/en/resources/open-manufacturing-hub-a-reference-architecture-for-industrial-iot?utm_campaign=embedded-open-manufacturing-hub&from=blog-open-manufacturing-hub-a-reference-architecture" class="button is-gradient">Get the Whitepaper →</a>
+  </div>
+</section>
+
 ## A Comprehensive Solution for Industrial IoT
 
 The OMH provides a comprehensive solution for building powerful and scalable Industrial IoT applications. Together they enable seamless data connectivity, efficient message queuing, and reliable storage and analysis of time-series data.

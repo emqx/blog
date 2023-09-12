@@ -165,6 +165,7 @@ Explore more with & via EMQ.
 ## [EMQX Open Source | Broker](https://www.emqx.com/en/blog/category/emqx)
 EMQX is the world's most scalable open-source MQTT broker with a high performance that connects 100M+ IoT devices in 1 cluster, while maintaining 1M message per second throughput and sub-millisecond latency.
 
+- [Home Assistant and MQTT: 4 Things You Could Build](https://github.com/emqx/blog/blob/main/en/202309/home-assistant-and-mqtt-4-things-you-could-build.md)
 - [EMQX MQTT Broker Troubleshooting: Publish-Subscribe Issues](https://github.com/emqx/blog/blob/main/en/202308/emqx-mqtt-broker-troubleshooting-publish-subscribe-issues.md)
 - [MQTT Performance Benchmark Testing: EMQX Single Node Message Latency & Response Time](https://github.com/emqx/blog/blob/main/en/202308/mqtt-performance-benchmark-testing-emqx-single-node-message-latency-response-time.md)
 - [MQTT Performance Benchmark Testing: EMQX Single Node Supports 2M Message Throughput](https://github.com/emqx/blog/blob/main/en/202308/mqtt-performance-benchmark-testing-emqx-single-node-supports-2m-message-throughput.md)
@@ -332,6 +333,7 @@ The easiest way to start MQTT service. Connect your IoT devices to any cloud wit
 ## [EMQX Enterprise](https://www.emqx.com/en/blog/category/enterprise)
 The world's most scalable and reliable MQTT messaging platform to connect, move and process your data in business-critical scenarios for the IoT era.
 
+- [Home Assistant and MQTT: 4 Things You Could Build](https://github.com/emqx/blog/blob/main/en/202309/home-assistant-and-mqtt-4-things-you-could-build.md)
 - [EMQX MQTT Broker Troubleshooting: Publish-Subscribe Issues](https://github.com/emqx/blog/blob/main/en/202308/emqx-mqtt-broker-troubleshooting-publish-subscribe-issues.md)
 - [EMQX Enterprise 4.4.20 Released: Enhancing Kafka, Pub/Sub, and HStream Data Integration](https://github.com/emqx/blog/blob/main/en/202308/emqx-enterprise-v-4-4-20-release-notes.md)
 - [Building Connected Vehicle Streaming Data Pipelines with MQTT and Kafka: A 3-Minute Guide](https://github.com/emqx/blog/blob/main/en/202308/building-connected-vehicle-streaming-data-pipelines-with-mqtt-and-kafka.md)
@@ -397,6 +399,7 @@ Build a reliable, efficient and industry-specific Internet of Vehicles platform 
 
 ## [Industrial IoT | Unified Namespace | Sparkplug](https://www.emqx.com/en/blog/category/industrial-iot)
 
+- [Bridging KNX Data to MQTT: Introduction and Hands-on Tutorial](https://github.com/emqx/blog/blob/main/en/202309/bridging-knx-data-to-mqtt-introduction-and-hands-on-tutorial.md)
 - [4 Reasons Why You Should Adopt MQTT in Unified Namespace](https://github.com/emqx/blog/blob/main/en/202309/four-reasons-why-you-should-adopt-mqtt-in-unified-namespace.md)
 - [IIoT Platform: Key Components and 5 Notable Solutions](https://github.com/emqx/blog/blob/main/en/202309/iiot-platform-key-components-and-5-notable-solutions.md)
 - [OPC UA over MQTT: The Future of IT and OT Convergence](https://github.com/emqx/blog/blob/main/en/202308/opc-ua-over-mqtt-the-future-of-it-and-ot-convergence.md)
@@ -416,6 +419,7 @@ Build a reliable, efficient and industry-specific Internet of Vehicles platform 
 - [MQTT Sparkplug Solution for Industrial IoT Using EMQX & Neuron](https://github.com/emqx/blog/blob/main/en/202306/mqtt-sparkplug-solution-for-industrial-iot-using-emqx-and-neuron.md)
 - [A Comparison of IIoT Protocols: MQTT Sparkplug vs OPC-UA](https://github.com/emqx/blog/blob/main/en/202305/a-comparison-of-iiot-protocols-mqtt-sparkplug-vs-opc-ua.md)
 - [Top 3 Open Source MQTT Brokers for Industrial IoT in 2023](https://github.com/emqx/blog/blob/main/en/202305/top-3-open-source-mqtt-brokers-for-industrial-iot-in-2023.md)
+- [5 Key Concepts for MQTT Broker in Sparkplug Specification](https://github.com/emqx/blog/blob/main/en/202304/5-key-concepts-for-mqtt-broker-in-sparkplug-specification.md)
 - [Neuron v1.3.0 is officially released with one-stop access to industrial data](https://github.com/emqx/blog/blob/main/en/202108/neuron-1-3-0-release-notes.md)
 - [EMQ officially launched the solution for IIoT](https://github.com/emqx/blog/blob/main/en/202011/emq-industrial-internet-cloud-edge-integrated-solution.md)
 - [Build IIoT APP based on Modbus with Neuron](https://github.com/emqx/blog/blob/main/en/202009/building-modbus-based-iiot-app-with-neuron.md)
@@ -452,6 +456,7 @@ MQTTX is a Fully Open-source MQTT 5.0 cross-platform Desktop Client, makes it ea
 ## [Neuron - IIoT Connectivity Server](https://www.emqx.com/en/blog/category/neuron)
 IoT edge industrial protocol gateway software, which supports one-stop access to dozens of industrial protocols and converts them into MQTT protocol to access the cloud industrial IoT platform. It just requires ultra-low resource consumption, and supports three major architectures of X86, ARM, and MIPS.
 
+- [Bridging KNX Data to MQTT: Introduction and Hands-on Tutorial](https://github.com/emqx/blog/blob/main/en/202309/bridging-knx-data-to-mqtt-introduction-and-hands-on-tutorial.md)
 - [Neuron 2.5.1: Streamlined IIoT Platform Management with Device-Based Templates](https://github.com/emqx/blog/blob/main/en/202307/neuron-v-2-5-1-release-notes.md)
 - [Bridging Modbus Data to MQTT for IIoT:  A Step-by-Step Tutorial](https://github.com/emqx/blog/blob/main/en/202306/bridging-modbus-data-to-mqtt-for-iiot.md)
 - [MQTT Sparkplug Solution for Industrial IoT Using EMQX & Neuron](https://github.com/emqx/blog/blob/main/en/202306/mqtt-sparkplug-solution-for-industrial-iot-using-emqx-and-neuron.md)

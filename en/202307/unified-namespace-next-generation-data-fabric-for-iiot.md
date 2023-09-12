@@ -56,6 +56,28 @@ There are several advantages to implementing a Unified Namespace in an organizat
 - **Improved agility:** UNS enables real-time access to the current state of data at any given time, making it possible to test, plan, and deliver faster and more predictably.
 - **Scalability:** Because data producers and consumers are integrated through a central hub, and not directly connected, it becomes possible to connect millions of nodes and enable seamless communication between them.
 
+
+<section
+  class="is-hidden-touch my-32 is-flex is-align-items-center"
+  style="border-radius: 16px; background: linear-gradient(102deg, #edf6ff 1.81%, #eff2ff 97.99%); padding: 32px 48px;"
+>
+  <div class="mr-40" style="flex-shrink: 0;">
+    <img loading="lazy" src="https://assets.emqx.com/images/0b88fa3cf1c98545e501e3b8073fdccc.png" alt="Open Manufacturing Hub" width="160" height="226">
+  </div>
+  <div>
+    <div class="mb-4 is-size-3 is-text-black has-text-weight-semibold" style="
+    line-height: 1.2;
+">
+      A Reference Architecture for IIoT Based on UNS
+    </div>
+    <div class="mb-32">
+      To build an efficient and scalable IIoT infrastructure.
+    </div>
+    <a href="https://www.emqx.com/en/resources/open-manufacturing-hub-a-reference-architecture-for-industrial-iot?utm_campaign=embedded-open-manufacturing-hub&from=blog-unified-namespace-next-generation-data-fabric" class="button is-gradient">Get the Whitepaper →</a>
+  </div>
+</section>
+
+
 ## 4 Types of UNS
 
 There are four kinds of Unified Namespaces in terms, with different uses and methodologies.
