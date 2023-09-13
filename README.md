@@ -44,6 +44,7 @@ Get to know the preferred protocol in IoT from beginner to master.
 
 ## [MQTT Broker](https://www.emqx.com/en/blog/category/mqtt-broker)
 
+- [RabbitMQ vs Kafka: 5 Key Differences & Leading Use Cases](https://github.com/emqx/blog/blob/main/en/202309/rabbitmq-vs-kafka.md)
 - [Mosquitto MQTT Broker: Pros/Cons, Tutorial, and a Modern Alternative](https://github.com/emqx/blog/blob/main/en/202308/mosquitto-mqtt-broker-pros-cons-tutorial-and-modern-alternatives.md)
 - [NanoMQ: The Multi-threaded Alternative to Mosquitto for IoT Edge](https://github.com/emqx/blog/blob/main/en/202306/nanomq-the-multi-threaded-alternative-to-mosquitto-for-iot-edge.md)
 - [Connecting to Serverless MQTT Broker in Node.js](https://github.com/emqx/blog/blob/main/en/202305/connecting-to-serverless-mqtt-broker-in-nodejs.md)
@@ -53,7 +54,7 @@ Get to know the preferred protocol in IoT from beginner to master.
 - [Top 3 Open Source MQTT Brokers for Industrial IoT in 2023](https://github.com/emqx/blog/blob/main/en/202305/top-3-open-source-mqtt-brokers-for-industrial-iot-in-2023.md)
 - [Open MQTT Benchmarking Comparison: MQTT Brokers in 2023](https://github.com/emqx/blog/blob/main/en/202305/open-mqtt-benchmarking-comparison-mqtt-brokers-in-2023.md)
 - [Serverless or Hosting? Choose a Suitable MQTT Service for Your Project](https://github.com/emqx/blog/blob/main/en/202304/serverless-or-hosting-choose-a-suitable-mqtt-service-for-your-project.md)
-- [QUIC Protocol: the Features, Use Cases and Impact for IoT/IoV](https://github.com/emqx/blog/blob/main/en/202304/quic-protocol-the-features-use-cases-and-impact-for-iot-iov.md)
+- [What Is the QUIC Protocol?](https://github.com/emqx/blog/blob/main/en/202304/quic-protocol-the-features-use-cases-and-impact-for-iot-iov.md)
 - [Comparison of Open Source MQTT Brokers 2023](https://github.com/emqx/blog/blob/main/en/202304/a-comprehensive-comparison-of-open-source-mqtt-brokers-in-2023.md)
 - [Open MQTT Benchmarking Comparison: EMQX vs VerneMQ](https://github.com/emqx/blog/blob/main/en/202304/open-mqtt-benchmarking-comparison-emqx-vs-vernemq.md)
 - [Open MQTT Benchmarking Comparison: EMQX vs NanoMQ](https://github.com/emqx/blog/blob/main/en/202304/open-mqtt-benchmarking-comparison-emqx-vs-nanomq.md)
@@ -383,8 +384,8 @@ Build a reliable, efficient and industry-specific Internet of Vehicles platform 
 - [Data Stream Processing for Software-Defined Vehicle](https://github.com/emqx/blog/blob/main/en/202306/data-stream-processing-for-software-defined-vehicle.md)
 - [What Is V2X and The Future of Vehicle to Everything Connectivity](https://github.com/emqx/blog/blob/main/en/202306/what-is-v2x-and-the-future-of-vehicle-to-everything-connectivity.md)
 - [Bridging Demanded Signals From CAN Bus to MQTT by eKuiper](https://github.com/emqx/blog/blob/main/en/202306/bridging-demanded-signals-from-can-bus-to-mqtt-by-ekuiper.md)
-- [CAN Bus: How It Works, Pros and Cons, and Fast Local Processing Tutorial](https://github.com/emqx/blog/blob/main/en/202305/can-bus-how-it-works-pros-and-cons.md)
-- [QUIC Protocol: the Features, Use Cases and Impact for IoT/IoV](https://github.com/emqx/blog/blob/main/en/202304/quic-protocol-the-features-use-cases-and-impact-for-iot-iov.md)
+- [What Is Can Bus and How It Works?](https://github.com/emqx/blog/blob/main/en/202305/can-bus-how-it-works-pros-and-cons.md)
+- [What Is the QUIC Protocol?](https://github.com/emqx/blog/blob/main/en/202304/quic-protocol-the-features-use-cases-and-impact-for-iot-iov.md)
 - [What is a Connected Car? All You Need to Know](https://github.com/emqx/blog/blob/main/en/202304/connected-cars-and-automotive-connectivity-all-you-need-to-know.md)
 - [How to Achieve Flexible Data Collection for Internet of Vehicles](https://github.com/emqx/blog/blob/main/en/202212/how-to-achieve-flexible-data-collection-for-internet-of-vehicles.md)
 - [MQTT Communication Optimization Practices for Internet of Vehicles Mobile Scenarios](https://github.com/emqx/blog/blob/main/en/202212/mqtt-communication-optimization-practices-for-iov.md)

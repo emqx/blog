@@ -42,7 +42,7 @@ The [MQTT protocol](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-st
 
 ### What is QUIC
 
-QUIC, initially developed by Google, was later adopted as a worldwide standard by the Internet Engineering Task Force (IETF). QUIC is the underlying transport protocol of the next-generation internet protocol HTTP/3. QUIC communicates over the UDP instead of the TCP protocol. Compared to TCP/TLS protocols, QUIC provides efficient and flexible transport layer capabilities while reducing connection overhead and message latency, it is well-suited for modern mobile internet like IoT and IoV.
+[QUIC](https://www.emqx.com/en/blog/quic-protocol-the-features-use-cases-and-impact-for-iot-iov), initially developed by Google, was later adopted as a worldwide standard by the Internet Engineering Task Force (IETF). QUIC is the underlying transport protocol of the next-generation internet protocol HTTP/3. QUIC communicates over the UDP instead of the TCP protocol. Compared to TCP/TLS protocols, QUIC provides efficient and flexible transport layer capabilities while reducing connection overhead and message latency, it is well-suited for modern mobile internet like IoT and IoV.
 
 ### Why MQTT over QUIC
 

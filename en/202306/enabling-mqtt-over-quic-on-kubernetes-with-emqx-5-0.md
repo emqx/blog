@@ -118,7 +118,7 @@ You can see that the QUIC listener is enabled in the service.
 
 ## Test QUIC With eMQTT-Bench
 
-[eMQTT-Bench](https://github.com/emqx/emqtt-bench) is a lightweight MQTT 5.0 benchmark tool written in Erlang. You can download and install eMQTT-Bench that supports the QUIC protocol for your platform from [eMQTT-Bench release](https://github.com/emqx/emqtt-bench/releases).
+[eMQTT-Bench](https://github.com/emqx/emqtt-bench) is a lightweight MQTT 5.0 benchmark tool written in Erlang. You can download and install eMQTT-Bench that supports the [QUIC protocol](https://www.emqx.com/en/blog/quic-protocol-the-features-use-cases-and-impact-for-iot-iov) for your platform from [eMQTT-Bench release](https://github.com/emqx/emqtt-bench/releases).
 
 1. Use QUIC protocol to initiate a connection and subscribe by specifying `--quic` option. Here 10 clients are used to subscribe to `t/test` topic.
 

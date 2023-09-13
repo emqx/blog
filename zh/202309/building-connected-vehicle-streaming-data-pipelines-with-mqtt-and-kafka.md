@@ -52,7 +52,7 @@ git submodule update
 
 代码库由 3 部分组成：
 
-- `emqx` 文件夹包含 EMQX-Kafka 集成配置，用于在自动启动 EMQX 时创建规则和数据桥。
+- `emqx` 文件夹包含 EMQX-Kafka 集成配置，用于在自动启动 EMQX 时创建规则和数据桥接。
 - `emqx-exporter`、`prometheus` 和 `grafana-provisioning` 文件夹包含 EMQX 的监控配置。
 - `docker-compose.yml` 可编排多个组件，一键启动项目。
 
@@ -64,28 +64,26 @@ git submodule update
 docker-compose up -d
 ```
 
-现在，MQTTX CLI 模拟的 10 辆特斯拉汽车将连接到 EMQX，并以每秒一次的频率向主题 `MQTTX/simulate/Tesla/{clientid}` 报告其状态。
+现在，MQTTX CLI 模拟的 10 辆特斯拉汽车连接到 EMQX，并以每秒一次的频率向 `mqttx/simulate/Tesla/{clientid}` 主题报告其状态。
 
-EMQX 会创建一条规则来接收来自特斯拉的消息。您也可以修改该规则，使用 EMQX 的[内置 SQL 函数](https://docs.emqx.com/en/enterprise/v5.1/data-integration/rule-sql-builtin-functions.html)添加自定义处理：
+EMQX 会创建一条规则来接收来自特斯拉的消息。您也可以修改该规则，使用 EMQX 的[内置 SQL 函数](https://docs.emqx.com/en/enterprise/v5.1/data-integration/rule-sql-builtin-functions.html)添加自定义消息处理方法：
 
 ```
 SELECT
-payload
+  payload
 FROM
-"mqttx/simulate/#"
+  "mqttx/simulate/#"
 ```
 
-EMQX 还会创建一个数据桥，通过以下配置将车辆数据传送到 Kafka：
+EMQX 还会创建一个数据桥接，通过以下配置将车辆数据传送到 Kafka：
 
 - 向 Kafka 中的 `my-vehicles` 主题发布消息
-- 使用每辆车的客户端 ID 作为消息密钥
+- 使用每辆车的客户端 ID 作为消息 Key
 - 使用消息发布时间作为消息时间戳
 
 ![EMQX kafka 配置](https://assets.emqx.com/images/ad15e9decf2e5be01d712ec0b3aa2090.png)
 
 ### 3. 从 EMQX 订阅车辆数据
-
-> 此步骤对演示没有特殊意义，只是用于检查 MQTTX CLI 和 EMQX 是否正常工作。
 
 Docker Compose 包含一个用于打印所有车辆数据的订阅者。可以使用以下命令查看数据：
 
@@ -107,10 +105,10 @@ mqttx sub -t mqttx/simulate/tesla/+
 
 ```
 docker exec -it kafka \
- kafka-console-consumer.sh \
- --topic my-vehicles \
- --from-beginning \
- --bootstrap-server localhost:9092
+   kafka-console-consumer.sh \
+   --topic my-vehicles \
+   --from-beginning \
+   --bootstrap-server localhost:9092
 ```
 
 您将收到类似下面的 JSON 数据：
@@ -131,7 +129,7 @@ docker exec -it kafka \
 
 本文介绍了如何利用 MQTT 和 Kafka 构建车联网流数据管道。我们采用 EMQX 作为 MQTT Broker，借助 EMQX 的数据集成功能将数据实时传输到 Kafka，从而实现了一个收集和处理流数据的端到端解决方案。
 
-接下来，您可以直接将应用集成到 Kafka 中，获取车辆数据，并实现它们的解耦。您还可以利用 Kafka Streams 对汽车数据进行实时流处理，进行统计分析和异常检测。处理结果还可通过 Kafka Connect 输出到其他系统。
+接下来，您可以直接将应用集成到 Kafka 中，获取车辆数据并实现它们的解耦。您还可以利用 Kafka Streams 对汽车数据进行实时流处理，进行统计分析和异常检测。处理结果还可通过 Kafka Connect 输出到其他系统。
 
 本文提供的是构建可扩展和可靠的流数据管道的入门示例。欢迎读者基于本文继续探索 MQTT 和 Kafka 的强大融合为各个领域的实时分析、监控和决策带来的更多可能。
 

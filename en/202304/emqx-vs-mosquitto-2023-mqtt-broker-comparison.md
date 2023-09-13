@@ -2,7 +2,7 @@
 
 MQTT (Message Queuing Telemetry Transport) is a de facto standard messaging protocol for the Internet of Things (IoT). With the growth of IoT, [MQTT brokers](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) are becoming vital in connecting IoT devices and moving data between connected devices and cloud services.
 
-[EMQX](https://www.emqx.io/) and [Mosquitto](https://mosquitto.org/) are two of the most popular open-source MQTT brokers. EMQX is a highly scalable, distributed MQTT broker with clustering support. Mosquitto is a lightweight MQTT broker with a small footprint and a single-threaded architecture.
+[EMQX](https://www.emqx.io/) and [Mosquitto](https://www.emqx.com/en/blog/mosquitto-mqtt-broker-pros-cons-tutorial-and-modern-alternatives) are two of the most popular open-source MQTT brokers. EMQX is a highly scalable, distributed MQTT broker with clustering support. Mosquitto is a lightweight MQTT broker with a small footprint and a single-threaded architecture.
 
 This blog post will provide an in-depth comparison of the two brokers in 2023.
 

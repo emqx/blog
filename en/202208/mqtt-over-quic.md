@@ -1,4 +1,4 @@
-In the latest version 5.0, EMQX made a breakthrough by relaying MQTT message over QUIC protocol.
+In the latest version 5.0, EMQX made a breakthrough by relaying MQTT message over [QUIC protocol](https://www.emqx.com/en/blog/quic-protocol-the-features-use-cases-and-impact-for-iot-iov).
 
 QUIC (RFC 9000) is the underlying transport protocol of the next-generation Internet protocol HTTP/3, which provides connectivity for the modern mobile Internet with less connection overhead and message latency compared to TCP/TLS protocols.
 

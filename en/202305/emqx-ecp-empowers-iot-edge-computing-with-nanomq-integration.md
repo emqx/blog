@@ -24,7 +24,7 @@ This proves particularly advantageous when multiple NanoMQ instances are deploye
 
 ### Use Case 2:  Empowering Connected Vehicle Data Bridge Management
 
-In the realm of connected vehicles, establishing a robust and efficient data bridge between in-car systems and the cloud is essential to unlocking the full potential of advanced automotive services. As a lightweight MQTT broker, NanoMQ is pivotal in enabling seamless data bridging capabilities, particularly between in-vehicle data buses like DDS, Some/IP, CAN Bus, and the cloud using the MQTT protocol.
+In the realm of connected vehicles, establishing a robust and efficient data bridge between in-car systems and the cloud is essential to unlocking the full potential of advanced automotive services. As a lightweight MQTT broker, NanoMQ is pivotal in enabling seamless data bridging capabilities, particularly between in-vehicle data buses like DDS, Some/IP, [CAN Bus](https://www.emqx.com/en/blog/can-bus-how-it-works-pros-and-cons), and the cloud using the MQTT protocol.
 
 ![Empowering Connected Vehicle Data Bridge Management](https://assets.emqx.com/images/3d82b2e41c8b229ea8d0982e5864cf8f.png)
 
