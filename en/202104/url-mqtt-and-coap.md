@@ -3,7 +3,7 @@ With the progress of the 5G network technology, the IoT world is also developing
 However, unlike the traditional Internet, end-to-end communication is always a difficult part of the IoT business. The differences in the IoT communication protocols used will cause a huge gap in communication between devices. It is just like people cannot communicate properly with each other if they speak different languages.
 
 ![WechatIMG14.png](https://assets.emqx.com/images/d1206132ad1e17d5ab2b8f50eb5cf9ce.png)
-As an IoT message broker, EMQX Broker is on a mission to enable these devices to provide communication. Therefore, we have developed many IoT protocol plugins. Whether you prefer TCP-based long links such as MQTT, UDP-based connectionless such as CoAP, or private protocols, in the world of EMQX we can help you find a 'soulmate' who can read you.
+As an IoT message broker, EMQX Broker is on a mission to enable these devices to provide communication. Therefore, we have developed many IoT protocol plugins. Whether you prefer TCP-based long links such as MQTT, UDP-based connectionless such as [CoAP](https://www.emqx.com/en/blog/iot-protocols-mqtt-coap-lwm2m), or private protocols, in the world of EMQX we can help you find a 'soulmate' who can read you.
 
 > About the MQTT protocol: [https://www.emqx.com/en/mqtt](https://www.emqx.com/en/mqtt-guide)
 

@@ -16,7 +16,7 @@ A large part of the IoT edge computing refers to the processing of streaming dat
 Kuiper can be applied all kinds of edge computing user scenarios, the typical sample scenarios including,
 
 - Industrial server of factory: Analyze data coming from factory product line, and publish the analysis data to cloud. The real-time product-line status can be monitor through by system deployed at local factory or remote sites.
-- Gateway of Connected Vehicle: Analyze data of vehicle CAN bus, and save the valuable analyzed result data to remote cloud or local storage. The real-time status can be accessed through local vehicle system or remote mobile application.
+- Gateway of Connected Vehicle: Analyze data of vehicle [CAN bus](https://www.emqx.com/en/blog/can-bus-how-it-works-pros-and-cons), and save the valuable analyzed result data to remote cloud or local storage. The real-time status can be accessed through local vehicle system or remote mobile application.
 - Smart-home gateway: By analyzing different kinds of data collected from smart-home, the important result could be displayed at home facilities, or send to user's mobile application through cloud. 
 
 The previous scenarios describe the value of edge computing: local data processing improves user experience; local data processing also improves data security, and protects personal privacy; Save the costs of bandwidth and cloud storage. Kuiper can be run at those resource constrained devices, and realized the streaming processing with low cost.

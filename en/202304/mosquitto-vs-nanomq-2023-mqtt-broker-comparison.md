@@ -160,6 +160,7 @@ In conclusion, Mosquitto and NanoMQ are excellent lightweight [MQTT brokers](htt
 4. [NanoMQ Documentation](https://nanomq.io/docs/en/latest/) 
 5. [NanoMQ GitHub](https://github.com/emqx/nanomq) 
 6. [Mosquitto GitHub](https://github.com/eclipse/mosquitto)
+7. [Mosquitto vs EMQX | 2023 MQTT Broker Comparison](https://www.emqx.com/en/blog/emqx-vs-mosquitto-2023-mqtt-broker-comparison)
 
 
 <section class="promotion">

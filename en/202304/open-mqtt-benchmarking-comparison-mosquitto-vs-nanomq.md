@@ -2,7 +2,7 @@
 >
 > This blog series presents the benchmark test results and aims to help you choose a suitable MQTT broker based on your needs and use cases.
 
-In this first post, we provide the benchmarking results of NanoMQ and Mosquitto brokers. Additionally, we compare the features and capabilities of both brokers in detail in another [post.](https://www.emqx.com/en/blog/mosquitto-vs-nanomq-2023-mqtt-broker-comparison) 
+In this first post, we provide the benchmarking results of NanoMQ and [Mosquitto](https://www.emqx.com/en/blog/mosquitto-mqtt-broker-pros-cons-tutorial-and-modern-alternatives) brokers. Additionally, we compare the features and capabilities of both brokers in detail in another [post.](https://www.emqx.com/en/blog/mosquitto-vs-nanomq-2023-mqtt-broker-comparison) 
 
 
 ## MQTT Benchmark Scenarios and Use Cases

@@ -2,7 +2,7 @@
 >
 > This blog series presents the benchmark test results and aims to help you choose a suitable MQTT broker based on your needs and use cases.
 
-This blog post will provide the benchmarking results of [EMQX](https://www.emqx.io/) and [Mosquitto](https://github.com/eclipse/mosquitto). Additionally, we compare the features and capabilities of both brokers in detail in another [post.](https://www.emqx.com/en/blog/emqx-vs-mosquitto-2023-mqtt-broker-comparison) 
+This blog post will provide the benchmarking results of [EMQX](https://www.emqx.io/) and [Mosquitto](https://www.emqx.com/en/blog/mosquitto-mqtt-broker-pros-cons-tutorial-and-modern-alternatives). Additionally, we compare the features and capabilities of both brokers in detail in another post: [Mosquitto vs EMQX | 2023 MQTT Broker Comparison](https://www.emqx.com/en/blog/emqx-vs-mosquitto-2023-mqtt-broker-comparison).
 
 ## MQTT Benchmark Scenarios and Use Cases
 
