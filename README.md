@@ -8,7 +8,7 @@ Get to know the preferred protocol in IoT from beginner to master.
 - [MQTT 5.0 Control Packet Explained 01: CONNECT & CONNACK](https://github.com/emqx/blog/blob/main/en/202309/mqtt-5-0-control-packets-01-connect-connack.md)
 - [Explore New Features of MQTT 5.0: Usage Examples Based on MQTTX CLI](https://github.com/emqx/blog/blob/main/en/202309/demonstrate-mqtt-5-0-features-using-mqttx-cli.md)
 - [MQTT vs AMQP for IoT Communications: Head to Head](https://github.com/emqx/blog/blob/main/en/202307/mqtt-vs-amqp-for-iot-communications.md)
-- [Introduction to MQTT Control Packets](https://github.com/emqx/blog/blob/main/en/202307/Introduction-to-mqtt-control-packets.md)
+- [Introduction to MQTT Packets](https://github.com/emqx/blog/blob/main/en/202307/Introduction-to-mqtt-control-packets.md)
 - [Best Practices of Maximum Packet Size in MQTT](https://github.com/emqx/blog/blob/main/en/202307/best-practices-of-maximum-packet-size-in-mqtt.md)
 - [MQTT Subscription Identifier Explained](https://github.com/emqx/blog/blob/main/en/202306/subscription-identifier-and-subscription-options.md)
 - [What Is MQTT and Why Is It the Best Protocol for IoT?](https://github.com/emqx/blog/blob/main/en/202306/what-is-the-mqtt-protocol.md)
@@ -255,6 +255,7 @@ EMQX is the world's most scalable open-source MQTT broker with a high performanc
 ## [EMQX Cloud](https://www.emqx.com/en/blog/category/cloud)
 The easiest way to start MQTT service. Connect your IoT devices to any cloud without the burden of maintaining infrastructure.
 
+- [Serverless MQTT: Your Key to Efficient IoT Prototyping](https://github.com/emqx/blog/blob/main/en/202309/serverless-mqtt-your-key-to-efficient-iot-prototyping.md)
 - [EMQX Cloud Now Available in AWS Sydney: Deploy Your EMQX Cluster Today](https://github.com/emqx/blog/blob/main/en/202308/emqx-cloud-now-available-in-aws-sydney.md)
 - [Azure IoT Hub: 4 Key Features, Use Cases, and How to Get Started](https://github.com/emqx/blog/blob/main/en/202308/azure-iot-hub-4-key-features-use-cases-and-how-to-get-started.md)
 - [Understanding AWS IoT Core: Features, Use Cases & Quick Tutorial](https://github.com/emqx/blog/blob/main/en/202308/understanding-aws-iot-core.md)
