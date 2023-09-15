@@ -196,12 +196,24 @@ Using an MQTT broker like [EMQX](https://www.emqx.io/) for collecting CAN bus da
 
 Besides these benefits, EMQX provides more features and together with eKuiper, it can help users save bandwidth, reduce latency, and improve reliability when transferring CAN bus data.
 
-<section class="promotion">
-    <div>
-        Try EMQX Enterprise for Free
-      <div class="is-size-14 is-text-normal has-text-weight-normal">Connect any device, at any scale, anywhere.</div>
+<section
+  class="is-hidden-touch my-32 is-flex is-align-items-center"
+  style="border-radius: 16px; background: linear-gradient(102deg, #edf6ff 1.81%, #eff2ff 97.99%); padding: 32px 48px;"
+>
+  <div class="mr-40" style="flex-shrink: 0;">
+    <img loading="lazy" src="https://assets.emqx.com/images/a4b8936bb3d27fbccd734eccbe3f821b.png" alt="Open Manufacturing Hub" width="160" height="226">
+  </div>
+  <div>
+    <div class="mb-4 is-size-3 is-text-black has-text-weight-semibold" style="
+    line-height: 1.2;
+">
+      Rev Up Your Connected Vehicles Future with MQTT
     </div>
-    <a href="https://www.emqx.com/en/try?product=enterprise" class="button is-gradient px-5">Get Started →</a>
+    <div class="mb-32">
+      The key to building a scalable, secure system for your connected-vehicles business.
+    </div>
+    <a href="https://www.emqx.com/en/resources/driving-the-future-of-connected-cars-with-mqtt?utm_campaign=embedded-driving-the-future-of-connected-cars-with-mqtt&from=blog-can-bus-how-it-works-pros-and-cons" class="button is-gradient">Get the Whitepaper →</a>
+  </div>
 </section>
 
 ### Save Bandwidth
@@ -223,14 +235,3 @@ For data that is not time-sensitive, we can save the data in file or local DB an
 ## Conclusion
 
 In this blog, we have introduced how to collect, process and transfer CAN bus data from vehicles to the cloud with eKuiper and EMQX. In the next blog post, we will go into more detail about each step.
-
-
-### Join Our Webinar on MQTT & QUIC: A New Standard for Connected Vehicles
-
-Connected cars are revolutionizing the automotive industry by providing drivers with advanced features and functions that were not possible before. However, these vehicles face the challenge of transmitting crucial vehicle data in complex network environments. To address this issue, this upcoming webinar presents a cutting-edge solution: MQTT messaging over the QUIC transport protocol and how the combination of these two can improve connectivity and communication for connected vehicles.
-
-[![A New Standard for Connected Vehicles](https://assets.emqx.com/images/4a96d320830d21aa3bb7464005d3f62c.png)](https://www.emqx.com/en/events/mqtt-over-quic-a-new-standard-for-connected-vehicles)
-
-Don’t miss our upcoming webinar on June 21st, where you can gain valuable insights into how MQTT and QUIC are helping build the next generation of connected vehicles.
-
-Register now to [secure your spot](https://www.emqx.com/en/events/mqtt-over-quic-a-new-standard-for-connected-vehicles)!

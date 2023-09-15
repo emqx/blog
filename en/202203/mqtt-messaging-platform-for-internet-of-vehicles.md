@@ -126,6 +126,26 @@ In this article, we introduce the architecture design of the ten-million level o
 
 As the world's leading provider of IoT data infrastructure software, EMQ is committed to building products with high performance, low latency, high availability and high reliability thereby providing a total solution for information acquisition, movement, processing and analysis for the new generation of IoV systems. This provides infrastructure service guarantee for automatic driving and intelligent networked automobile business of vehicle manufacturers, T1 suppliers, post-market service providers, travel service companies and government management organizations, and realizes intelligent connection among humans, vehicles, roads and clouds.
 
+<section
+  class="is-hidden-touch my-32 is-flex is-align-items-center"
+  style="border-radius: 16px; background: linear-gradient(102deg, #edf6ff 1.81%, #eff2ff 97.99%); padding: 32px 48px;"
+>
+  <div class="mr-40" style="flex-shrink: 0;">
+    <img loading="lazy" src="https://assets.emqx.com/images/a4b8936bb3d27fbccd734eccbe3f821b.png" alt="Open Manufacturing Hub" width="160" height="226">
+  </div>
+  <div>
+    <div class="mb-4 is-size-3 is-text-black has-text-weight-semibold" style="
+    line-height: 1.2;
+">
+      Rev Up Your Connected Vehicles Future with MQTT
+    </div>
+    <div class="mb-32">
+      The key to building a scalable, secure system for your connected-vehicles business.
+    </div>
+    <a href="https://www.emqx.com/en/resources/driving-the-future-of-connected-cars-with-mqtt?utm_campaign=embedded-driving-the-future-of-connected-cars-with-mqtt&from=blog-mqtt-messaging-platform-for-internet-of-vehicles" class="button is-gradient">Get the Whitepaper →</a>
+  </div>
+</section>
+
 
 ## Other articles in this series
 

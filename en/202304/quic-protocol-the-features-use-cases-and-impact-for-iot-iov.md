@@ -95,6 +95,27 @@ Some use cases for MQTT over QUIC in the Internet of Vehicles include:
 - **Over-the-Air (OTA) updates**: Secure and reliable OTA updates are essential for updating vehicle firmware and software. MQTT over QUIC can provide the necessary security and reliability for delivering these updates without disrupting vehicle operation.
 - **Emergency response**: In emergency situations, reliable and fast communication is critical. MQTT over QUIC can ensure timely and secure exchange of information between emergency vehicles, response teams, and control centers.
 
+<section
+  class="is-hidden-touch my-32 is-flex is-align-items-center"
+  style="border-radius: 16px; background: linear-gradient(102deg, #edf6ff 1.81%, #eff2ff 97.99%); padding: 32px 48px;"
+>
+  <div class="mr-40" style="flex-shrink: 0;">
+    <img loading="lazy" src="https://assets.emqx.com/images/a4b8936bb3d27fbccd734eccbe3f821b.png" alt="Open Manufacturing Hub" width="160" height="226">
+  </div>
+  <div>
+    <div class="mb-4 is-size-3 is-text-black has-text-weight-semibold" style="
+    line-height: 1.2;
+">
+      Rev Up Your Connected Vehicles Future with MQTT
+    </div>
+    <div class="mb-32">
+      The key to building a scalable, secure system for your connected-vehicles business.
+    </div>
+    <a href="https://www.emqx.com/en/resources/driving-the-future-of-connected-cars-with-mqtt?utm_campaign=embedded-driving-the-future-of-connected-cars-with-mqtt&from=blog-quic-protocol-the-features-use-cases" class="button is-gradient">Get the Whitepaper →</a>
+  </div>
+</section>
+
+
 ## EMQX: Leading the Way as the First MQTT Broker to Implement MQTT Over QUIC
 
 [EMQX](https://www.emqx.io/) is a world leading [open-source MQTT broker](https://www.emqx.com/en/blog/a-comprehensive-comparison-of-open-source-mqtt-brokers-in-2023) with a high-performance real-time message processing engine, powering event streaming for IoT devices at massive scale. Starting from version 5.0, EMQX became the first MQTT broker to support MQTT over QUIC, providing a more efficient and secure way of transmitting MQTT messages over modern complex networks, and improving MQTT's performance in certain scenarios.
@@ -122,19 +143,6 @@ EMQX also provides client SDKs to support MQTT over QUIC in multiple programming
 
 - [Learn more](https://docs.emqx.com/en/enterprise/v5.0/mqtt-over-quic/introduction.html#mqtt-over-quic) about the EMQX solution for MQTT over QUIC
 - [Read our detailed blog post](https://www.emqx.com/en/blog/getting-started-with-mqtt-over-quic-from-scratch) to get started with MQTT over QUIC
-
-
-### Join Our Webinar on MQTT & QUIC: A New Standard for Connected Vehicles
-
-Connected cars are revolutionizing the automotive industry by providing drivers with advanced features and functions that were not possible before. However, these vehicles face the challenge of transmitting crucial vehicle data in complex network environments. To address this issue, this upcoming webinar presents a cutting-edge solution: MQTT messaging over the QUIC transport protocol and how the combination of these two can improve connectivity and communication for connected vehicles.
-
-[![A New Standard for Connected Vehicles](https://assets.emqx.com/images/4a96d320830d21aa3bb7464005d3f62c.png)](https://www.emqx.com/en/events/mqtt-over-quic-a-new-standard-for-connected-vehicles)
-
-
-Don’t miss our upcoming webinar on June 21st, where you can gain valuable insights into how MQTT and QUIC are helping build the next generation of connected vehicles.
-
-Register now to [secure your spot](https://www.emqx.com/en/events/mqtt-over-quic-a-new-standard-for-connected-vehicles)!
-
 
 
 <section class="promotion">

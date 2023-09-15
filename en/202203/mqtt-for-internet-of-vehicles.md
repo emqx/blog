@@ -90,6 +90,26 @@ Kafka focuses on data storage and reading, while EMQX focuses on communication b
 
 At present, the rapid development of automotive electronics promotes the technological upgrading of the industry of IoV. The future market prospect of intelligent transportation and vehicle industry is considerable, and it can be predicted that more consumers and vehicle manufacturers will benefit from it. The full support of MQTT protocol and the powerful product capability of EMQX can help developers to quickly build robust and flexible platforms for IoV. EMQ will also keep pace with the development trend of the industry, promote the development and implementation of technologies related to message transmission and edge computing, and provide faster, better and smarter messaging infrastructure for autonomous driving, vehicle collaboration and IoV users.
 
+<section
+  class="is-hidden-touch my-32 is-flex is-align-items-center"
+  style="border-radius: 16px; background: linear-gradient(102deg, #edf6ff 1.81%, #eff2ff 97.99%); padding: 32px 48px;"
+>
+  <div class="mr-40" style="flex-shrink: 0;">
+    <img loading="lazy" src="https://assets.emqx.com/images/a4b8936bb3d27fbccd734eccbe3f821b.png" alt="Open Manufacturing Hub" width="160" height="226">
+  </div>
+  <div>
+    <div class="mb-4 is-size-3 is-text-black has-text-weight-semibold" style="
+    line-height: 1.2;
+">
+      Rev Up Your Connected Vehicles Future with MQTT
+    </div>
+    <div class="mb-32">
+      The key to building a scalable, secure system for your connected-vehicles business.
+    </div>
+    <a href="https://www.emqx.com/en/resources/driving-the-future-of-connected-cars-with-mqtt?utm_campaign=embedded-driving-the-future-of-connected-cars-with-mqtt&from=blog-mqtt-for-internet-of-vehicles" class="button is-gradient">Get the Whitepaper →</a>
+  </div>
+</section>
+
 
 ## Other articles in this series
 
