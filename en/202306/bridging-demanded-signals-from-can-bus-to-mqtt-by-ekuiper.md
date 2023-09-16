@@ -129,6 +129,26 @@ For example, in the below rules, each parsed CAN frame signal will be bridged to
 
 eKuiper allows multiple rules to deal with a single stream. So users can create as many rules as needed to bridge all kinds of CAN bus data to MQTT with organized topics.
 
+<section
+  class="is-hidden-touch my-32 is-flex is-align-items-center"
+  style="border-radius: 16px; background: linear-gradient(102deg, #edf6ff 1.81%, #eff2ff 97.99%); padding: 32px 48px;"
+>
+  <div class="mr-40" style="flex-shrink: 0;">
+    <img loading="lazy" src="https://assets.emqx.com/images/a4b8936bb3d27fbccd734eccbe3f821b.png" alt="Open Manufacturing Hub" width="160" height="226">
+  </div>
+  <div>
+    <div class="mb-4 is-size-3 is-text-black has-text-weight-semibold" style="
+    line-height: 1.2;
+">
+      Rev Up Your Connected Vehicles Future with MQTT
+    </div>
+    <div class="mb-32">
+      The key to building a scalable, secure system for your connected-vehicles business.
+    </div>
+    <a href="https://www.emqx.com/en/resources/driving-the-future-of-connected-cars-with-mqtt?utm_campaign=embedded-driving-the-future-of-connected-cars-with-mqtt&from=blog-bridging-demanded-signals-from-can-bus-to-mqtt-by-ekuiper" class="button is-gradient">Get the Whitepaper →</a>
+  </div>
+</section>
+
 ## Conclusion
 
 To bridge the gap between CAN bus and MQTT, we need a solution that can read data from CAN bus devices, filter and transform the data according to our needs, and publish the data to MQTT brokers. This is where eKuiper comes in handy, providing a simple, performant and flexible way to do the job.

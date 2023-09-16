@@ -55,6 +55,27 @@ This article will use the [MQTT broker](https://www.emqx.com/en/mqtt/public-mqtt
 - TCP Port: **1883**
 - Websocket Port: **8083**
 
+<section
+  class="is-hidden-touch my-32 is-flex is-align-items-center"
+  style="border-radius: 16px; background: linear-gradient(102deg, #edf6ff 1.81%, #eff2ff 97.99%); padding: 32px 48px;"
+>
+  <div class="mr-40" style="flex-shrink: 0;">
+    <img loading="lazy" src="https://assets.emqx.com/images/b4cff1e553053873a87c4fa8713b99bc.png" alt="Open Manufacturing Hub" width="160" height="226">
+  </div>
+  <div>
+    <div class="mb-4 is-size-3 is-text-black has-text-weight-semibold" style="
+    line-height: 1.2;
+">
+      A Practical Guide to MQTT Broker Selection
+    </div>
+    <div class="mb-32">
+      Download this practical guide and learn what to consider when choosing an MQTT broker.
+    </div>
+    <a href="https://www.emqx.com/en/resources/a-practical-guide-to-mqtt-broker-selection?utm_campaign=embedded-a-practical-guide-to-mqtt-broker-selection&from=blog-android-connects-mqtt-using-kotlin" class="button is-gradient">Get the eBook →</a>
+  </div>
+</section>
+
+
 ```kotlin
 fun connect(context: Context) {
         val serverURI = "tcp://broker.emqx.io:1883"
