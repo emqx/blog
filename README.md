@@ -5,10 +5,12 @@
 ## [MQTT Tutorials](https://www.emqx.com/en/blog/category/mqtt-protocol)
 Get to know the preferred protocol in IoT from beginner to master.
 
-- [MQTT 5.0 Control Packet Explained 01: CONNECT & CONNACK](https://github.com/emqx/blog/blob/main/en/202309/mqtt-5-0-control-packets-01-connect-connack.md)
+- [MQTT 5.0 Packet Explained 03: SUBSCRIBE & UNSUBSCRIBE](https://github.com/emqx/blog/blob/main/en/202309/mqtt-5-0-control-packets-03-subscribe-unsubscribe.md)
+- [MQTT 5.0 Packet Explained 02: PUBLISH & PUBACK](https://github.com/emqx/blog/blob/main/en/202309/mqtt-5-0-control-packets-02-publish-puback.md)
+- [MQTT 5.0 Packet Explained 01: CONNECT & CONNACK](https://github.com/emqx/blog/blob/main/en/202309/mqtt-5-0-control-packets-01-connect-connack.md)
 - [Explore New Features of MQTT 5.0: Usage Examples Based on MQTTX CLI](https://github.com/emqx/blog/blob/main/en/202309/demonstrate-mqtt-5-0-features-using-mqttx-cli.md)
 - [MQTT vs AMQP for IoT Communications: Head to Head](https://github.com/emqx/blog/blob/main/en/202307/mqtt-vs-amqp-for-iot-communications.md)
-- [Introduction to MQTT Control Packets](https://github.com/emqx/blog/blob/main/en/202307/Introduction-to-mqtt-control-packets.md)
+- [Introduction to MQTT Packets](https://github.com/emqx/blog/blob/main/en/202307/Introduction-to-mqtt-control-packets.md)
 - [Best Practices of Maximum Packet Size in MQTT](https://github.com/emqx/blog/blob/main/en/202307/best-practices-of-maximum-packet-size-in-mqtt.md)
 - [MQTT Subscription Identifier Explained](https://github.com/emqx/blog/blob/main/en/202306/subscription-identifier-and-subscription-options.md)
 - [What Is MQTT and Why Is It the Best Protocol for IoT?](https://github.com/emqx/blog/blob/main/en/202306/what-is-the-mqtt-protocol.md)
@@ -255,6 +257,7 @@ EMQX is the world's most scalable open-source MQTT broker with a high performanc
 ## [EMQX Cloud](https://www.emqx.com/en/blog/category/cloud)
 The easiest way to start MQTT service. Connect your IoT devices to any cloud without the burden of maintaining infrastructure.
 
+- [Serverless MQTT: Your Key to Efficient IoT Prototyping](https://github.com/emqx/blog/blob/main/en/202309/serverless-mqtt-your-key-to-efficient-iot-prototyping.md)
 - [EMQX Cloud Now Available in AWS Sydney: Deploy Your EMQX Cluster Today](https://github.com/emqx/blog/blob/main/en/202308/emqx-cloud-now-available-in-aws-sydney.md)
 - [Azure IoT Hub: 4 Key Features, Use Cases, and How to Get Started](https://github.com/emqx/blog/blob/main/en/202308/azure-iot-hub-4-key-features-use-cases-and-how-to-get-started.md)
 - [Understanding AWS IoT Core: Features, Use Cases & Quick Tutorial](https://github.com/emqx/blog/blob/main/en/202308/understanding-aws-iot-core.md)
@@ -400,6 +403,7 @@ Build a reliable, efficient and industry-specific Internet of Vehicles platform 
 
 ## [Industrial IoT | Unified Namespace | Sparkplug](https://www.emqx.com/en/blog/category/industrial-iot)
 
+- [Modern Messaging Infrastructure for Smart Manufacturing](https://github.com/emqx/blog/blob/main/en/202309/modern-messaging-infrastructure-for-smart-manufacturing.md)
 - [Bridging KNX Data to MQTT: Introduction and Hands-on Tutorial](https://github.com/emqx/blog/blob/main/en/202309/bridging-knx-data-to-mqtt-introduction-and-hands-on-tutorial.md)
 - [4 Reasons Why You Should Adopt MQTT in Unified Namespace](https://github.com/emqx/blog/blob/main/en/202309/four-reasons-why-you-should-adopt-mqtt-in-unified-namespace.md)
 - [IIoT Platform: Key Components and 5 Notable Solutions](https://github.com/emqx/blog/blob/main/en/202309/iiot-platform-key-components-and-5-notable-solutions.md)
