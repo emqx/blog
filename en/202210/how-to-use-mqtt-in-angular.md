@@ -33,6 +33,26 @@ yarn add ngx-mqtt
 
 We use the [public MQTT Broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker) provided by EMQX in this article, which is built on top of the [MQTT cloud service - EMQX Cloud](https://www.emqx.com/en/cloud). EMQX is a large-scale distributed IoT MQTT message broker that can efficiently and reliably connect massive IoT devices, process and distribute messages and event flow data in real-time, and help customers build business-critical IoT platforms and applications.
 
+<section
+  class="is-hidden-touch my-32 is-flex is-align-items-center"
+  style="border-radius: 16px; background: linear-gradient(102deg, #edf6ff 1.81%, #eff2ff 97.99%); padding: 32px 48px;"
+>
+  <div class="mr-40" style="flex-shrink: 0;">
+    <img loading="lazy" src="https://assets.emqx.com/images/b4cff1e553053873a87c4fa8713b99bc.png" alt="Open Manufacturing Hub" width="160" height="226">
+  </div>
+  <div>
+    <div class="mb-4 is-size-3 is-text-black has-text-weight-semibold" style="
+    line-height: 1.2;
+">
+      A Practical Guide to MQTT Broker Selection
+    </div>
+    <div class="mb-32">
+      Download this practical guide and learn what to consider when choosing an MQTT broker.
+    </div>
+    <a href="https://www.emqx.com/en/resources/a-practical-guide-to-mqtt-broker-selection?utm_campaign=embedded-a-practical-guide-to-mqtt-broker-selection&from=blog-how-to-use-mqtt-in-angular" class="button is-gradient">Get the eBook →</a>
+  </div>
+</section>
+
 The server access information is as follows:
 
 - Broker: `broker.emqx.io`

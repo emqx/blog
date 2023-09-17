@@ -67,7 +67,25 @@ Here are some potential use cases for MQTT in connected cars:
 - **Integration with IoT ecosystems**: MQTT can help connected cars interact with other IoT devices, such as smart home systems, wearable devices, and smartphones, enabling features like remote vehicle control, personalized infotainment experiences, and seamless transitions between different connected environments.
 - **Infotainment systems**: [MQTT's publish-subscribe model](https://www.emqx.com/en/blog/mqtt-5-introduction-to-publish-subscribe-model) can be employed to deliver real-time information, such as news, weather updates, and traffic conditions, to the vehicle's infotainment system. This can enhance the user experience and help drivers make informed decisions on the go.
 
-> **Read our blog: [MQTT in an IoV scenario](https://www.emqx.com/en/blog/mqtt-for-internet-of-vehicles)**
+<section
+  class="is-hidden-touch my-32 is-flex is-align-items-center"
+  style="border-radius: 16px; background: linear-gradient(102deg, #edf6ff 1.81%, #eff2ff 97.99%); padding: 32px 48px;"
+>
+  <div class="mr-40" style="flex-shrink: 0;">
+    <img loading="lazy" src="https://assets.emqx.com/images/a4b8936bb3d27fbccd734eccbe3f821b.png" alt="Open Manufacturing Hub" width="160" height="226">
+  </div>
+  <div>
+    <div class="mb-4 is-size-3 is-text-black has-text-weight-semibold" style="
+    line-height: 1.2;
+">
+      Rev Up Your Connected Vehicles Future with MQTT
+    </div>
+    <div class="mb-32">
+      The key to building a scalable, secure system for your connected-vehicles business.
+    </div>
+    <a href="https://www.emqx.com/en/resources/driving-the-future-of-connected-cars-with-mqtt?utm_campaign=embedded-driving-the-future-of-connected-cars-with-mqtt&from=blog-connected-cars-and-automotive-connectivity" class="button is-gradient">Get the Whitepaper →</a>
+  </div>
+</section>
 
 ## How EMQX Powers Connected Car Communication
 
@@ -94,24 +112,4 @@ As an enterprise-grade MQTT message platform, EMQX can help on connected car app
       <div class="is-size-14 is-text-normal has-text-weight-normal">Build a connected car architecture that's flexible, agile & scales quickly.</div>
     </div>
     <a href="https://www.emqx.com/en/try?product=enterprise" class="button is-gradient px-5">Get Started →</a>
-</section>
-
-### Join Our Webinar on MQTT & QUIC: A New Standard for Connected Vehicles
-
-Connected cars are revolutionizing the automotive industry by providing drivers with advanced features and functions that were not possible before. However, these vehicles face the challenge of transmitting crucial vehicle data in complex network environments. To address this issue, this upcoming webinar presents a cutting-edge solution: MQTT messaging over the QUIC transport protocol and how the combination of these two can improve connectivity and communication for connected vehicles.
-
-[![A New Standard for Connected Vehicles](https://assets.emqx.com/images/4a96d320830d21aa3bb7464005d3f62c.png)](https://www.emqx.com/en/events/mqtt-over-quic-a-new-standard-for-connected-vehicles)
-
-Don’t miss our upcoming webinar on June 21st, where you can gain valuable insights into how MQTT and QUIC are helping build the next generation of connected vehicles.
-
-Register now to [secure your spot](https://www.emqx.com/en/events/mqtt-over-quic-a-new-standard-for-connected-vehicles)!
-
-
-
-<section class="promotion">
-    <div>
-        Try EMQX Cloud for Free
-        <div class="is-size-14 is-text-normal has-text-weight-normal">A fully managed MQTT service for IoT/IoV/IIoT.</div>
-    </div>
-    <a href="https://accounts.emqx.com/signup?continue=https://cloud-intl.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">Get Started →</a>
 </section>
