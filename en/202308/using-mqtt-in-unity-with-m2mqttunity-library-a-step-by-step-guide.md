@@ -26,6 +26,26 @@ Secure WebSocket Port: 8084
 
 The free public MQTT broker is exclusively available for those who wish to learn and test the MQTT protocol. It is important to avoid using it in production environments as it may pose security risks and downtime concerns.
 
+<section
+  class="is-hidden-touch my-32 is-flex is-align-items-center"
+  style="border-radius: 16px; background: linear-gradient(102deg, #edf6ff 1.81%, #eff2ff 97.99%); padding: 32px 48px;"
+>
+  <div class="mr-40" style="flex-shrink: 0;">
+    <img loading="lazy" src="https://assets.emqx.com/images/b4cff1e553053873a87c4fa8713b99bc.png" alt="Open Manufacturing Hub" width="160" height="226">
+  </div>
+  <div>
+    <div class="mb-4 is-size-3 is-text-black has-text-weight-semibold" style="
+    line-height: 1.2;
+">
+      A Practical Guide to MQTT Broker Selection
+    </div>
+    <div class="mb-32">
+      Download this practical guide and learn what to consider when choosing an MQTT broker.
+    </div>
+    <a href="https://www.emqx.com/en/resources/a-practical-guide-to-mqtt-broker-selection?utm_campaign=embedded-a-practical-guide-to-mqtt-broker-selection&from=blog-using-mqtt-in-unity-with-m2mqttunity-library" class="button is-gradient">Get the eBook →</a>
+  </div>
+</section>
+
 ## M2MQTT for Unity
 
 [M2MQTT library](https://github.com/CE-SDV-Unity/M2MqttUnity) is a simple [Unity3d](http://unity3d.com/) project for using [M2MQTT](https://github.com/eclipse/paho.mqtt.m2mqtt) with Unity. It includes an example scene with a UI for controlling the connection to the broker and for testing messaging. In this blog post, we will use the example scene to illustrate how to use MQTT to create an application that communicates with an MQTT broker.
