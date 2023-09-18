@@ -6,7 +6,7 @@ The primary purpose of Reason Code in [MQTT](https://www.emqx.com/en/blog/the-ea
 
 Although MQTT 3.1.1 already supports Reason Code, it doesn't define many available Reason Codes. In fact, they are very limited.
 
-Among the two MQTT packets that support Reason Code, the CONNACK packet has only 5 Reason Codes to indicate failures. And the SUBACK packet has only one Reason Code for indicating failure, it cannot even provide further details about the reason for the subscription failure. Moreover, for operations such as publishing and unsubscribing that don't support Reason Code, we can't even determine whether the operation was successful or not. This makes development debugging unfriendly and hinders the implementation of robust code.
+Among the two [MQTT packets](https://www.emqx.com/en/blog/Introduction-to-mqtt-control-packets) that support Reason Code, the CONNACK packet has only 5 Reason Codes to indicate failures. And the SUBACK packet has only one Reason Code for indicating failure, it cannot even provide further details about the reason for the subscription failure. Moreover, for operations such as publishing and unsubscribing that don't support Reason Code, we can't even determine whether the operation was successful or not. This makes development debugging unfriendly and hinders the implementation of robust code.
 
 ### Reason Code in MQTT 5.0
 

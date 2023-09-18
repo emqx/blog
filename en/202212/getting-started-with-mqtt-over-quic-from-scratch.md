@@ -119,7 +119,7 @@ NanoSDK also provides Java binding and Python binding. For examples please refer
 
 ## Bridge MQTT 3.1.1/5.0 and MQTT over QUIC via NanoMQ
 
-[NanoMQ](https://nanomq.io/) is an ultra-lightweight, high-performance, and cross-platform MQTT broker for IoT edge. It can be used as a message bus for many protocols, and it can bridge the MQTT and the MQTT over QUIC. It relays MQTT packets over QUIC protocol, which are sent to the EMQX on the cloud. Therefore, the edge devices that can't be integrated with the MQTT over QUIC SDK or can’t find the appropriate MQTT over QUIC SDK and the embedded devices whose firmware can't be modified can take advantage of the [QUIC protocol](https://www.emqx.com/en/blog/quic-protocol-the-features-use-cases-and-impact-for-iot-iov) in IoT scenarios. This will be very convenient for the user.
+[NanoMQ](https://nanomq.io/) is an ultra-lightweight, high-performance, and cross-platform MQTT broker for IoT edge. It can be used as a message bus for many protocols, and it can bridge the MQTT and the MQTT over QUIC. It relays [MQTT packets](https://www.emqx.com/en/blog/Introduction-to-mqtt-control-packets) over QUIC protocol, which are sent to the EMQX on the cloud. Therefore, the edge devices that can't be integrated with the MQTT over QUIC SDK or can’t find the appropriate MQTT over QUIC SDK and the embedded devices whose firmware can't be modified can take advantage of the [QUIC protocol](https://www.emqx.com/en/blog/quic-protocol-the-features-use-cases-and-impact-for-iot-iov) in IoT scenarios. This will be very convenient for the user.
 
 ![NanoMQ](https://assets.emqx.com/images/29f87fcca9842bc1ffc22422178c6ca6.png)
 

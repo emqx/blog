@@ -6,7 +6,7 @@ In the process of message delivery between the client and server, in addition to
 
 ## Sample Packets
 
-We use [MQTTX CLI](https://mqttx.app/) to publish three messages with different QoS levels to the [Public MQTT Server](http://broker.emqx.io/), and use [Wireshark](https://www.wireshark.org/) to capture the MQTT packets going back and forth between the client and the server. In Linux, you can use [tcpdump](https://en.wikipedia.org/wiki/Tcpdump) to capture the packets, and then import them into Wireshark for viewing.
+We use [MQTTX CLI](https://mqttx.app/) to publish three messages with different QoS levels to the [Public MQTT Server](http://broker.emqx.io/), and use [Wireshark](https://www.wireshark.org/) to capture the [MQTT packets](https://www.emqx.com/en/blog/Introduction-to-mqtt-control-packets) going back and forth between the client and the server. In Linux, you can use [tcpdump](https://en.wikipedia.org/wiki/Tcpdump) to capture the packets, and then import them into Wireshark for viewing.
 
 The following are the MQTTX CLI commands used in this example. In order to display the Properties of the PUBLISH packet, the commands also set the Message Expiry Interval and Response Topic properties:
 

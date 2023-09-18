@@ -12,7 +12,7 @@ module.rewrite = off
 
 ## Configure MQTT topic rewrite rules
 
-The [EMQX](https://www.emqx.com/en) MQTT topic rewrite rule needs users to configure by themselves, users themselves can add many topic rewrite rules, and the number of rules is unlimited. However, the performance consumption brought by this function in high throughput situation and the number of rules is proportional, because every **MQTT packets** with topics need to match the  rewrite rules again. Therefore, users need to use this function carefully. 
+The [EMQX](https://www.emqx.com/en) MQTT topic rewrite rule needs users to configure by themselves, users themselves can add many topic rewrite rules, and the number of rules is unlimited. However, the performance consumption brought by this function in high throughput situation and the number of rules is proportional, because every [MQTT packets](https://www.emqx.com/en/blog/Introduction-to-mqtt-control-packets) with topics need to match the  rewrite rules again. Therefore, users need to use this function carefully. 
 
 The format of every rewrite topic rule is :
 

@@ -94,7 +94,7 @@ The **SUBSCRIBE** packet follows a similar pattern. The Payload contains the top
 
 ## MQTT Packets - Advanced
 
-In the upcoming blog series, we will explore the fields in various MQTT packets and their primary purposes. At the end of each blog, we will provide a real-world example of a packet and illustrate the distribution of these fields within the packet. The blogs include:
+In the upcoming blog series, we will explore the fields in various [MQTT packets](https://www.emqx.com/en/blog/Introduction-to-mqtt-control-packets) and their primary purposes. At the end of each blog, we will provide a real-world example of a packet and illustrate the distribution of these fields within the packet. The blogs include:
 
 - Establish a Connection: **CONNECT** & **CONNACK**
 - Publish a Message: **PUBLISH**, **PUBACK**, **PUBREC**, **PUBREL** & **PUBCOMP**
