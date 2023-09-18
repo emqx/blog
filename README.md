@@ -403,6 +403,7 @@ Build a reliable, efficient and industry-specific Internet of Vehicles platform 
 
 ## [Industrial IoT | Unified Namespace | Sparkplug](https://www.emqx.com/en/blog/category/industrial-iot)
 
+- [Measuring Excellence: A Deep Dive into KPIs for Smart Manufacturing](https://github.com/emqx/blog/blob/main/en/202309/a-deep-dive-into-kpis-for-smart-manufacturing.md)
 - [Modern Messaging Infrastructure for Smart Manufacturing](https://github.com/emqx/blog/blob/main/en/202309/modern-messaging-infrastructure-for-smart-manufacturing.md)
 - [Bridging KNX Data to MQTT: Introduction and Hands-on Tutorial](https://github.com/emqx/blog/blob/main/en/202309/bridging-knx-data-to-mqtt-introduction-and-hands-on-tutorial.md)
 - [4 Reasons Why You Should Adopt MQTT in Unified Namespace](https://github.com/emqx/blog/blob/main/en/202309/four-reasons-why-you-should-adopt-mqtt-in-unified-namespace.md)

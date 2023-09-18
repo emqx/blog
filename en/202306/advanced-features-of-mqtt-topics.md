@@ -6,9 +6,9 @@ The following is a simple MQTT publish and subscribe flow. If APP 1 subscribes t
 
 ![MQTT Publish Subscribe](https://assets.emqx.com/images/0c35bfdb730f1d29b7f1b7a249c62f8b.png?imageMogr2/thumbnail/1520x)
 
-## Topic Names
+## Topics
 
-A topic name is a UTF-8 encoded string that is the basis for message routing in the MQTT protocol. A topic is typically leveled and separated with a slash `/` between the levels. This is similar to URL paths, for example:
+A topic is a UTF-8 encoded string that is the basis for message routing in the MQTT protocol. A topic is typically leveled and separated with a slash `/` between the levels. This is similar to URL paths, for example:
 
 ```awk
 chat/room/1
