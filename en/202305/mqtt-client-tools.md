@@ -43,12 +43,12 @@ For more information, please check out: [Free Public MQTT Broker](https://www.em
     <div class="mb-4 is-size-3 is-text-black has-text-weight-semibold" style="
     line-height: 1.2;
 ">
-      How to Choose a Suitable MQTT Broker?
+      A Practical Guide to MQTT Broker Selection
     </div>
     <div class="mb-32">
       Download this practical guide and learn what to consider when choosing an MQTT broker.
     </div>
-    <a href="https://www.emqx.com/en/resources/a-practical-guide-to-mqtt-broker-selection?utm_campaign=embedded-a-practical-guide-to-mqtt-broker-selection&from=blog-mqtt-client-tools" class="button is-gradient">Get the Whitepaper →</a>
+    <a href="https://www.emqx.com/en/resources/a-practical-guide-to-mqtt-broker-selection?utm_campaign=embedded-a-practical-guide-to-mqtt-broker-selection&from=blog-mqtt-client-tools" class="button is-gradient">Get the eBook →</a>
   </div>
 </section>
 
