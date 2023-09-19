@@ -47,7 +47,7 @@ MQTT 和 OPC UA 是工业自动化和物联网应用中常用的两种协议，�
 | **会话层**   | 无会话        | 客户端-服务器会话管理          | Sparkplug 会话感知              | 无会话                           |
 | **传输层**   | TCP/IP        | TCP/IP                         | MQTT                            | MQTT                             |
 
-**传输层：**MQTT 和 OPC UA 都使用 TCP/IP 作为底层通信协议。MQTT Sparkplug 和 OPC UA over MQTT 则使用 MQTT 作为传输协议，它们都采用了 MQTT 的发布/订阅模型。
+**传输层：**MQTT 和 OPC UA 都使用 TCP/IP 作为底层通信协议。MQTT Sparkplug 和 [OPC UA over MQTT](https://www.emqx.com/zh/blog/opc-ua-over-mqtt-the-future-of-it-and-ot-convergence) 则使用 MQTT 作为传输协议，它们都采用了 MQTT 的发布/订阅模型。
 
 **会话层：**OPC UA 包含负责管理客户端和服务器之间连接的会话层，处理诸如会话建立、身份验证和加密等任务。相比之下，MQTT 不具备会话层管理功能。然而，MQTT Sparkplug 通过在会话层引入 Sparkplug 会话感知来弥补这个不足。
 

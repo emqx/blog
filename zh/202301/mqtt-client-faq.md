@@ -37,7 +37,7 @@ A：不是。EMQX 中的每个客户端进程都会有一个消息队列，这�
 
 ### Q：EMQX 日志中出现 "Parse failed for function_clause" 是什么原因？
 
-A：这个日志表示报文解析失败，可能因为这不是一个 MQTT 报文，我们遇到过很多向 MQTT 端口发送 HTTP 请求的情况，也可能因为报文中包含了非 UTF-8 字符等等。我们可以在这条 "Parse failed..." 日志中检索 `Frame data` 关键字以查看完整的报文，帮助我们分析解析失败的可能原因。
+A：这个日志表示报文解析失败，可能因为这不是一个 [MQTT 报文](https://www.emqx.com/zh/blog/introduction-to-mqtt-control-packets)，我们遇到过很多向 MQTT 端口发送 HTTP 请求的情况，也可能因为报文中包含了非 UTF-8 字符等等。我们可以在这条 "Parse failed..." 日志中检索 `Frame data` 关键字以查看完整的报文，帮助我们分析解析失败的可能原因。
 
 ### Q：EMQX 日志中出现 "Context: maximum heap size reached" 是什么原因？
 

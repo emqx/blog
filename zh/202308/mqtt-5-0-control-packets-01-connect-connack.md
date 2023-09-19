@@ -1,4 +1,4 @@
-在 [MQTT 5.0 报文介绍](https://www.emqx.com/zh/blog/Introduction-to-mqtt-control-packets) 中，我们介绍了 MQTT 报文由固定报头、可变报头和有效载荷三个部分组成，以及可变字节整数、属性这类 MQTT 报文中的通用概念。现在，我们将按照实际的用途来进一步介绍各个类型的报文的组成。首先，我们将专注于用于建立 MQTT 连接的报文。
+在 [MQTT 5.0 报文介绍](https://www.emqx.com/zh/blog/introduction-to-mqtt-control-packets) 中，我们介绍了 MQTT 报文由固定报头、可变报头和有效载荷三个部分组成，以及可变字节整数、属性这类 MQTT 报文中的通用概念。现在，我们将按照实际的用途来进一步介绍各个类型的报文的组成。首先，我们将专注于用于建立 MQTT 连接的报文。
 
 如果我们想要使用 MQTT 进行通信，第一步必然是建立一个 MQTT 连接，而建立 MQTT 连接需要用到两个控制报文，它们分别是 CONNECT 报文与 CONNACK 报文。CONNECT 报文是客户端与服务端建立网络连接后，向服务端发送的第一个控制报文，用来发起连接请求。服务端将返回 CONNACK 报文告知客户端连接结果。
 

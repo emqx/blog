@@ -38,7 +38,7 @@ Authentication data is binary information used to transmit multiple iterations o
 
 ### Enhanced authentication process
 
-Compared to simple authentication which relies on an interaction between the CONNECT packet and the CONNACK packet, enhanced authentication requires multiple exchanges of authentication data between the client and broker. Therefore, MQTT v5 adds the AUTH packet to implement this. The implementation of enhanced authentication is based on three kinds of MQTT packet types:  CONNECT, CONNACK and AUTH. These three kinds of packet need to carry the authentication method and authentication data for bi-directional authentication.
+Compared to simple authentication which relies on an interaction between the CONNECT packet and the CONNACK packet, enhanced authentication requires multiple exchanges of authentication data between the client and broker. Therefore, MQTT v5 adds the AUTH packet to implement this. The implementation of enhanced authentication is based on three kinds of [MQTT packet](https://www.emqx.com/en/blog/introduction-to-mqtt-control-packets) types:  CONNECT, CONNACK and AUTH. These three kinds of packet need to carry the authentication method and authentication data for bi-directional authentication.
 
 To start the enhanced authentication process, the client needs to send the CONNECT packet containing the authentication method field to the broker. After receiving the CONNECT packet, the broker can continue exchanging authentication data with the client through the AUTH packet and send the CONNACK packet to the client after the authentication is complete.
 

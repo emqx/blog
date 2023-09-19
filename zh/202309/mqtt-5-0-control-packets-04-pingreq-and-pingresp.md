@@ -1,4 +1,4 @@
-欢迎阅读 [MQTT 5.0 报文系列](https://www.emqx.com/zh/blog/Introduction-to-mqtt-control-packets) 的第四篇文章。在上一篇中，我们已经介绍了 [MQTT 5.0 中的 SUBSCRIBE 报文和 UNSUBSCRIBE 报文](https://www.emqx.com/zh/blog/mqtt-5-0-control-packets-03-subscribe-and-unsubscribe)。现在，我们将介绍用于维持连接的控制报文：PINGREQ 和 PINGRESP。
+欢迎阅读 [MQTT 5.0 报文系列](https://www.emqx.com/zh/blog/introduction-to-mqtt-control-packets) 的第四篇文章。在上一篇中，我们已经介绍了 [MQTT 5.0 中的 SUBSCRIBE 报文和 UNSUBSCRIBE 报文](https://www.emqx.com/zh/blog/mqtt-5-0-control-packets-03-subscribe-and-unsubscribe)。现在，我们将介绍用于维持连接的控制报文：PINGREQ 和 PINGRESP。
 
 除了用于连接、发布和订阅的控制报文，MQTT 还有一类报文用于在客户端和服务端之间模拟心跳，以达到保持连接的目的，它们分别是 PINGREQ 报文和 PINGRESP 报文，我们通常也会称它们为心跳报文。
 

@@ -1,4 +1,4 @@
-欢迎阅读 [MQTT 5.0 报文系列](https://www.emqx.com/zh/blog/Introduction-to-mqtt-control-packets) 的第三篇文章。在上一篇中，我们介绍了 [MQTT 5.0 的 PUBLISH 及其响应报文](https://www.emqx.com/zh/blog/mqtt-5-0-control-packets-02-publish-and-response-packets)。现在，我们将介绍用于订阅和取消订阅的控制报文。
+欢迎阅读 [MQTT 5.0 报文系列](https://www.emqx.com/zh/blog/introduction-to-mqtt-control-packets) 的第三篇文章。在上一篇中，我们介绍了 [MQTT 5.0 的 PUBLISH 及其响应报文](https://www.emqx.com/zh/blog/mqtt-5-0-control-packets-02-publish-and-response-packets)。现在，我们将介绍用于订阅和取消订阅的控制报文。
 
 在 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 中，SUBSCRIBE 报文用于发起订阅请求，SUBACK 报文用于返回订阅结果。而 UNSUBSCRIBE 和 UNSUBACK 报文则在取消订阅时使用。相比于取消订阅，订阅操作更加常用。不过在本文中，我们仍然会一并介绍订阅与取消订阅报文的结构与组成。
 

@@ -12,7 +12,7 @@ Before we start, we need to complete the following preparations:
 
 2. Download and install [MQTTX CLI](https://mqttx.app/downloads) 1.9.4. It is an open-source MQTT 5.0 command-line client tool, and we will use it to complete all the examples in this article.
 
-3. Install [Wireshark](https://www.wireshark.org/). In some examples, we will use it to capture and analyze some MQTT packets, which can help us better understand what exactly happened. 
+3. Install [Wireshark](https://www.wireshark.org/). In some examples, we will use it to capture and analyze some [MQTT packets](https://www.emqx.com/en/blog/introduction-to-mqtt-control-packets), which can help us better understand what exactly happened. 
 
 ## Feature 1: Session Expiry
 

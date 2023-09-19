@@ -24,7 +24,7 @@ Every rewrite topic rule make by the space-separated topic filter, the regular e
 
 In the target expression, users can use this formatted variable `$N` to match the extracted element from the regular expression. The value of `$N` is the nth extracted element from the regular expression. For example, `$1` is the first element extracted from the regular expression. 
 
-It should be noted that EMQX uses the reverse order to read the rewrite rule of configuration. When a topic can match the topic filters of multiple topic rewrite rules at the same time, EMQX will only use the first successfully matched rule to rewrite. If the regular expression of this rule unsuccessfully match the MQTT packet topic, then rewrite failed, and no longer try to rewrite using other rules. Therefore, users need to design the MQTT packet topic and topic rewrite rules carefully when they use EMQX.
+It should be noted that EMQX uses the reverse order to read the rewrite rule of configuration. When a topic can match the topic filters of multiple topic rewrite rules at the same time, EMQX will only use the first successfully matched rule to rewrite. If the regular expression of this rule unsuccessfully match the [MQTT packet](https://www.emqx.com/en/blog/introduction-to-mqtt-control-packets) topic, then rewrite failed, and no longer try to rewrite using other rules. Therefore, users need to design the MQTT packet topic and topic rewrite rules carefully when they use EMQX.
 
 ## MQTT topic rewrite example
 

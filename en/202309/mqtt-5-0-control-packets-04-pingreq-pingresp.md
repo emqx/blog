@@ -1,4 +1,4 @@
-Welcome to the fourth article of the [MQTT 5.0 Packet Series](https://www.emqx.com/en/blog/Introduction-to-mqtt-control-packets). In the previous article, we introduced the [SUBSCRIBE and UNSUBSCRIBE packets](https://www.emqx.com/en/blog/mqtt-5-0-control-packets-03-subscribe-unsubscribe) in MQTT 5.0. Now, we will introduce the control packets used to maintain the connection: PINGREQ and PINGRESP.
+Welcome to the fourth article of the [MQTT 5.0 Packet Series](https://www.emqx.com/en/blog/introduction-to-mqtt-control-packets). In the previous article, we introduced the [SUBSCRIBE and UNSUBSCRIBE packets](https://www.emqx.com/en/blog/mqtt-5-0-control-packets-03-subscribe-unsubscribe) in MQTT 5.0. Now, we will introduce the control packets used to maintain the connection: PINGREQ and PINGRESP.
 
 In addition to the control packets used for connecting, publishing, and subscribing, MQTT also has a type of packet used to simulate heartbeats between the client and server to maintain the connection. They are PINGREQ and PINGRESP packets, which we often call heartbeat packets.
 

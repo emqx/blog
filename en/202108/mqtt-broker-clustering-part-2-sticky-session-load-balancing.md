@@ -29,7 +29,7 @@ However more scalable solutions typically tackle this problem in a distributed w
 
 The word ‘sticky’ here is referring to the ability of the load balancer being able to route the client to the old broker at reconnect, which can avoid session take over. This is an especially useful feature when there are many clients reconnecting around the same time, or in case of a problematic client repeatedly disconnecting and connecting again.
 
-For the load balancer to dispatch connections in a ‘sticky’ way, the broker will need to know the client identifier (or sometimes user name) in the connect request – this requires the load balancer to inspect into MQTT packets to look for such information.
+For the load balancer to dispatch connections in a ‘sticky’ way, the broker will need to know the client identifier (or sometimes user name) in the connect request – this requires the load balancer to inspect into [MQTT packets](https://www.emqx.com/en/blog/introduction-to-mqtt-control-packets) to look for such information.
 
 Once the client identifier (or user name) is obtained, for a static-size cluster, the broker can hash the client identifier (or user name) to a broker ID. Or for better flexibility, the load balancer can choose to maintain a mapping table from client identifier (or user name) to the target node ID.
 

@@ -22,7 +22,7 @@ EMQX Broker 4.2-rc.1 正式发布，欢迎大家下载试用，下载地址：ht
 - 【调整】后续版本不再支持 Debian 8、Ubuntu 14.04 和 Raspbian 8 操作系统
 - 【调整】`emqx-statsd` 插件正式更名为 `emqx-prometheus`
 - 【调整】发布与订阅支持独立配置[主题重写](https://www.emqx.com/zh/blog/rewriting-emqx-mqtt5-topic)规则
-- 【调整】允许用户配置是否允许 WebSocket 消息包含多个 MQTT 报文，以兼容部分客户端
+- 【调整】允许用户配置是否允许 WebSocket 消息包含多个 [MQTT 报文](https://www.emqx.com/zh/blog/introduction-to-mqtt-control-packets)，以兼容部分客户端
 - 【修复】修复主题指标中存在的问题
 - 【修复】修复 LwM2M 插件没有正确获取协议版本的问题
 
