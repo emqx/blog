@@ -5,6 +5,7 @@
 ## [MQTT Tutorials](https://www.emqx.com/en/blog/category/mqtt-protocol)
 Get to know the preferred protocol in IoT from beginner to master.
 
+- [Introduction to Message Expiry Interval | Exploring MQTT 5.0 Features](https://github.com/emqx/blog/blob/main/en/202309/mqtt-message-expiry-interval.md)
 - [MQTT 5.0 Packet Explained 06: AUTH](https://github.com/emqx/blog/blob/main/en/202309/mqtt-5-0-control-packets-06-auth.md)
 - [MQTT 5.0 Packet Explained 05: DISCONNECT](https://github.com/emqx/blog/blob/main/en/202309/mqtt-5-0-control-packets-05-disconnect.md)
 - [MQTT 5.0 Packet Explained 04: PINGREQ & PINGRESP](https://github.com/emqx/blog/blob/main/en/202309/mqtt-5-0-control-packets-04-pingreq-pingresp.md)
@@ -503,6 +504,7 @@ NanoMQ is an MQTT messaging broker + multi-protocol message bus for edge computi
 ## [eKuiper](https://www.emqx.com/en/blog/category/kuiper)
 eKuiper is an edge lightweight IoT data analytics / streaming software implemented by Golang, and it can be run at all kinds of resource constrained edge devices.
 
+- [eKuiper 1.11.0 Released: Adds 50+ Functions and Significantly Improves Data Transformation](https://github.com/emqx/blog/blob/main/en/202309/ekuiper-v-1-11-0-release-notes.md)
 - [MQTT Stream Processing with EMQX and eKuiper: A Quick Tutorial](https://github.com/emqx/blog/blob/main/en/202306/mqtt-stream-processing-with-emqx-and-ekuiper.md)
 - [Bridging Demanded Signals From CAN Bus to MQTT by eKuiper](https://github.com/emqx/blog/blob/main/en/202306/bridging-demanded-signals-from-can-bus-to-mqtt-by-ekuiper.md)
 - [Support Python Virtual Environment ｜eKuiper Newsletter 202302](https://github.com/emqx/blog/blob/main/en/202303/ekuiper-newsletter-202302.md)
