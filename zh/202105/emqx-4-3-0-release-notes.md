@@ -125,7 +125,7 @@ EMQX v4.3.0 版本修复了一些已知问题并新增了诸多特性，在通�
 ### MQTT 协议
 
 - 修复 MQTT 心跳报文的处理
-- 修复 MQTT 报文接收计数问题
+- 修复 [MQTT 报文](https://www.emqx.com/zh/blog/introduction-to-mqtt-control-packets)接收计数问题
 - 限制飞行窗口的最大长度为 65535
 - 修复 Server Keep Alive 生效情况下 Dashboard 中 Keep Alive 字段的值未同步的问题
 

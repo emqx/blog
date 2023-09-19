@@ -222,7 +222,7 @@ mqtt pub -t 'testtopic/hello' -h 'broker.emqx.io' -m 'from MQTT.js'
 
 - `message`
 
-  当客户端收到一个发布过来的 Payload 时触发，其中包含三个参数，topic、payload 和 packet，其中 topic 为接收到的消息的 topic，payload 为接收到的消息内容，packet 为 MQTT 报文信息，其中包含 QoS、retain 等信息
+  当客户端收到一个发布过来的 Payload 时触发，其中包含三个参数，topic、payload 和 packet，其中 topic 为接收到的消息的 topic，payload 为接收到的消息内容，packet 为 [MQTT 报文](https://www.emqx.com/zh/blog/introduction-to-mqtt-control-packets)信息，其中包含 QoS、retain 等信息
 
   ```javascript
   client.on('message', function (topic, payload, packet) {

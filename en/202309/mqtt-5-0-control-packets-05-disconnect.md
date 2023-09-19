@@ -1,4 +1,4 @@
-Welcome to the fifth article in the [MQTT 5.0 Packet Series](https://www.emqx.com/en/blog/Introduction-to-mqtt-control-packets). In the previous article, we introduced the [PINGREQ and PINGRESP packets](https://www.emqx.com/en/blog/mqtt-5-0-control-packets-04-pingreq-pingresp) in MQTT 5.0. Now, we will introduce the control packet used when disconnecting: DISCONNECT.
+Welcome to the fifth article in the [MQTT 5.0 Packet Series](https://www.emqx.com/en/blog/introduction-to-mqtt-control-packets). In the previous article, we introduced the [PINGREQ and PINGRESP packets](https://www.emqx.com/en/blog/mqtt-5-0-control-packets-04-pingreq-pingresp) in MQTT 5.0. Now, we will introduce the control packet used when disconnecting: DISCONNECT.
 
 In MQTT, both the client and the server can send a DISCONNECT packet to the other party before disconnecting the network connection, indicating the reason for the connection closure. The DISCONNECT packet sent by the client can also affect the behavior of the server after the connection is disconnected, such as whether to send a will message, or whether to update the Session Expiry Interval.
 

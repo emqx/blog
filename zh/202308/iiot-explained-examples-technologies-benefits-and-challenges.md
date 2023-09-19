@@ -154,7 +154,7 @@ EMQ 提供的轻量级工业协议网关软件 [Neuron](https://www.emqx.com/zh/
 
 7. [**MQTT Sparkplug**](https://www.emqx.com/zh/blog/mqtt-sparkplug-bridging-it-and-ot-in-industry-4-0)：EMQX 是一款支持 Sparkplug 协议的优秀 [MQTT Broker](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison)，而 Neuron 可以从工业设备采集数据，并生成 Sparkplug 消息供应用使用。Neuron 可以根据设备数据的变化情况，以 Sparkplug 消息的形式，将数据发布到 EMQX Broker。EMQX 会将这些消息转发给订阅了相应 Sparkplug 主题的应用。
 
-8. **OPC UA over MQTT**：Neuron 作为工业连接网关，已经增加了对 OPC UA over MQTT 的原生支持。它可以将任何数据格式转换成 OPC UA 格式，并通过 MQTT 协议发送到 EMQX Broker。EMQX Broker 具有高性能和高可靠性，可以处理大规模的 OPC UA over MQTT 部署。
+8. **OPC UA over MQTT**：Neuron 作为工业连接网关，已经增加了对 [OPC UA over MQTT](https://www.emqx.com/zh/blog/opc-ua-over-mqtt-the-future-of-it-and-ot-convergence) 的原生支持。它可以将任何数据格式转换成 OPC UA 格式，并通过 MQTT 协议发送到 EMQX Broker。EMQX Broker 具有高性能和高可靠性，可以处理大规模的 OPC UA over MQTT 部署。
 
 
 通过将 MQTT Broker EMQX 和工业连接网关 Neuron 相结合，工业物联网连接变得更加简洁高效，实现了工业设备和后端系统之间的无缝通信。这些组件的集成简化了数据交换，增强了数据处理，并优化了工业物联网部署，从而提高工业应用的效率、可靠性和实时决策能力。

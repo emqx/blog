@@ -30,7 +30,7 @@ SUBSCRIBE 报文用于客户端向服务端发起订阅，UNSUBSCRIBE 报文则�
 
 ![03fixedheader.png](https://assets.emqx.com/images/0bd7652ec917098f720f27b2a739427b.png)
 
-报文类型位于固定报头第一个字节的高 4 位，它是一个无符号整数，很显然，它表示当前报文的类型，例如 1 表示这是一个 CONNECT 报文，2 表示 CONNACK 报文等等。详细的映射关系可以参阅 [MQTT 5.0 规范 - MQTT 控制报文类型](https://docs.oasis-open.org/mqtt/mqtt/v5.0/os/mqtt-v5.0-os.html#_Toc3901022)。事实上，除了报文类型和剩余长度这两个字段，MQTT 报文剩余部分的内容基本都取决于具体的报文类型，所以这个字段也决定了接收方应该如何解析报文的后续内容。
+报文类型位于固定报头第一个字节的高 4 位，它是一个无符号整数，很显然，它表示当前报文的类型，例如 1 表示这是一个 CONNECT 报文，2 表示 CONNACK 报文等等。详细的映射关系可以参阅 [MQTT 5.0 规范 - MQTT 控制报文类型](https://docs.oasis-open.org/mqtt/mqtt/v5.0/os/mqtt-v5.0-os.html#_Toc3901022)。事实上，除了报文类型和剩余长度这两个字段，[MQTT 报文](https://www.emqx.com/zh/blog/introduction-to-mqtt-control-packets)剩余部分的内容基本都取决于具体的报文类型，所以这个字段也决定了接收方应该如何解析报文的后续内容。
 
 固定报头第一个字节中剩下的低 4 位包含了由控制报文类型决定的标识位。不过到 MQTT 5.0 为止，只有 PUBLISH 报文的这四个比特位被赋予了明确的含义：
 

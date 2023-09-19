@@ -97,7 +97,7 @@ MQTT over QUIC 相比 MQTT over TCP/TLS 具有明显的优势：
 
 EMQX 支持将传输层替换为 QUIC 流，客户端可发起连接并创建双向流，从而实现更加高效可靠的通信。EMQX 支持两种操作模式：
 
-- **单流模式**是一种基本模式，它将 MQTT 报文封装在一个双向的 QUIC 流中。该模式提供了快速握手、有序数据传输、连接恢复、0-RTT、客户端地址迁移以及增强的丢包检测和恢复等功能。这种模式使得客户端和 Broker 之间的通信更加快速和高效，同时保持有序，还能够快速恢复连接，并支持在不影响客户端通信的情况下迁移其本地地址。
+- **单流模式**是一种基本模式，它将 [MQTT 报文](https://www.emqx.com/zh/blog/introduction-to-mqtt-control-packets)封装在一个双向的 QUIC 流中。该模式提供了快速握手、有序数据传输、连接恢复、0-RTT、客户端地址迁移以及增强的丢包检测和恢复等功能。这种模式使得客户端和 Broker 之间的通信更加快速和高效，同时保持有序，还能够快速恢复连接，并支持在不影响客户端通信的情况下迁移其本地地址。
 - **多流模式**利用了 QUIC 的多路复用特性，允许 MQTT 报文在多个流中传输。这使得单个 [MQTT 连接](https://www.emqx.com/zh/blog/how-to-set-parameters-when-establishing-an-mqtt-connection)可以并行传输多个主题的数据且互不干扰。该模式还提供了多项优化，例如解耦连接控制和 MQTT 数据交换、避免 HOL 阻塞、分离上行和下行数据、优先处理不同类型的数据、提高并发性、增强鲁棒性、允许对数据流进行流量控制以及降低订阅延迟等。
 
 ![单流模式与多流模式](https://assets.emqx.com/images/c616fc21fc02c7e3da8ac4839c8f1307.png)

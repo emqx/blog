@@ -292,7 +292,7 @@ Once the connection is successful, the returned Client object can listen to mult
 
 - `message`
 
-  This event is triggered when the client receives a published payload, which contains three parameters: topic, payload, and packet. The topic refers to the topic of the received message, the payload is the content of the received message, and the packet is the MQTT packet containing QoS, retain, and other information.
+  This event is triggered when the client receives a published payload, which contains three parameters: topic, payload, and packet. The topic refers to the topic of the received message, the payload is the content of the received message, and the packet is the [MQTT packet](https://www.emqx.com/en/blog/introduction-to-mqtt-control-packets) containing QoS, retain, and other information.
 
   > Note: The received payload is a value of Buffer type. You can use JSON.parse, JSON.stringify or toString() method as needed to display the final format.
 

@@ -12,7 +12,7 @@
 
 2. 下载并安装 [MQTTX CLI](https://mqttx.app/zh/downloads) 1.9.4。它是一款开源的 MQTT 5.0 命令行客户端工具，我们将通过它来完成本文的所有示例。
 
-3. 安装 [Wireshark](https://www.wireshark.org/)。在部分示例中，我们将用它来抓取并分析一些 MQTT 报文，这可以帮助我们更好地了解究竟发生了什么。
+3. 安装 [Wireshark](https://www.wireshark.org/)。在部分示例中，我们将用它来抓取并分析一些 [MQTT 报文](https://www.emqx.com/zh/blog/introduction-to-mqtt-control-packets)，这可以帮助我们更好地了解究竟发生了什么。
 
 ## 特性 1：会话过期
 

@@ -38,7 +38,7 @@ MQTT CONNECT 报文使用用户名和密码支持基本的网络连接认证，�
 
 ### 增强认证流程
 
-相比于依靠 CONNECT 报文和 CONNACK 报文一次交互的简单认证，增强认证需要客户端与服务器之间多次交换认证数据，因此，MQTT v5 新增了 AUTH 报文来实现这个需求。增强认证是基于 CONNECT 报文、CONNACK 报文以及 AUTH 报文三种 MQTT 报文类型实现的，三种报文都需要携带认证方法与认证数据达成双向认证的目的。
+相比于依靠 CONNECT 报文和 CONNACK 报文一次交互的简单认证，增强认证需要客户端与服务器之间多次交换认证数据，因此，MQTT v5 新增了 AUTH 报文来实现这个需求。增强认证是基于 CONNECT 报文、CONNACK 报文以及 AUTH 报文三种 [MQTT 报文](https://www.emqx.com/zh/blog/introduction-to-mqtt-control-packets)类型实现的，三种报文都需要携带认证方法与认证数据达成双向认证的目的。
 
 要开启增强认证流程，需要客户端向服务器发送包含了认证方法字段的 CONNECT 报文，服务器收到了 CONNECT 报文后，它可以与客户端通过 AUTH 报文继续交换认证数据，在认证完成后向客户端发送 CONNACK 报文。
 

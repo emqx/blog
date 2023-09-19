@@ -29,7 +29,7 @@ MQTT 协议由 [Andy Stanford-Clark](http://en.wikipedia.org/wiki/Andy_Stanford-
 
 MQTT 协议设计简单轻量、路由灵活，将在移动互联网、物联网消息领域，全面取代 PC 时代的 XMPP 协议。
 
-- MQTT 报文体积小且编解码容易，XMPP 基于繁重的 XML，报文体积大且交互繁琐。
+- [MQTT 报文](https://www.emqx.com/zh/blog/introduction-to-mqtt-control-packets)体积小且编解码容易，XMPP 基于繁重的 XML，报文体积大且交互繁琐。
 - MQTT 基于发布订阅模式，相比 XMPP 基于 JID 的点对点消息路由更为灵活。
 - MQTT 支持 JSON、二进制等不同类型报文。XMPP 采用 XML 承载报文，二进制必须 Base64 编码等处理。
 - MQTT 通过 QoS 保证消息可靠传输，XMPP 主协议并未定义类似机制。

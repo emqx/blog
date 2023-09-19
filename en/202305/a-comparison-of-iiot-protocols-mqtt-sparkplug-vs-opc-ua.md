@@ -68,7 +68,7 @@ MQTT and OPC UA are the two main popular protocols used in industrial automation
 | **Transport Layer**    | TCP/IP            | TCP/IP                               | MQTT                                    | MQTT                           |
 
 
-**Transport Layer:** Both MQTT and OPC UA utilize TCP/IP as the underlying protocol for communication. For MQTT Sparkplug and OPC UA over MQTT, the transport protocol uses MQTT as transport protocol, because these two protocols take advantage of the MQTT pub/sub model.
+**Transport Layer:** Both MQTT and OPC UA utilize TCP/IP as the underlying protocol for communication. For MQTT Sparkplug and [OPC UA over MQTT](https://www.emqx.com/en/blog/opc-ua-over-mqtt-the-future-of-it-and-ot-convergence), the transport protocol uses MQTT as transport protocol, because these two protocols take advantage of the MQTT pub/sub model.
 
 **Session Layer:** OPC UA incorporates a session layer responsible for managing the connection between clients and servers. It handles tasks such as session establishment, authentication, and encryption. In contrast, MQTT does not possess a session layer management feature. However, MQTT Sparkplug addresses this limitation by introducing Sparkplug session awareness at the session layer.
 

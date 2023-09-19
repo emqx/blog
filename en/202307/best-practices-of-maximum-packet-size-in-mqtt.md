@@ -1,6 +1,6 @@
 ## What is the Maximum Packet Size?
 
-The theoretical maximum length of an MQTT packet is 268,435,456 bytes, equivalent to 256 MB. However, it is evident that resource-constrained clients and some MQTT servers operating as edge gateways may not be able to handle packets of this size.
+The theoretical maximum length of an [MQTT packet](https://www.emqx.com/en/blog/introduction-to-mqtt-control-packets) is 268,435,456 bytes, equivalent to 256 MB. However, it is evident that resource-constrained clients and some MQTT servers operating as edge gateways may not be able to handle packets of this size.
 
 Considering that different clients may have significantly different capabilities in handling packets, sending excessively large packets can not only affect the normal business processing of the peer but may also directly overwhelm the peer. Therefore, we need to use the Maximum Packet Size property to negotiate the maximum packet length that the client and server can handle.
 

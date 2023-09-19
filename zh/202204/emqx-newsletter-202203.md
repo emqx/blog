@@ -22,7 +22,7 @@
 
 我们即将为社区和企业用户发布 4.3 和 4.4 的最新维护版本，除了进一步提升稳定性，我们还在这些版本中带来了一些增强性的改进，主要包括：
 
-- 在严格模式下为 MQTT 报文增加对 UTF-8 字符串的检查
+- 在严格模式下为 [MQTT 报文](https://www.emqx.com/zh/blog/introduction-to-mqtt-control-packets)增加对 UTF-8 字符串的检查
 - 增加对 Dashboard User 与 AppID 的格式检查
 - 提高规则引擎浮点型数据的写入精度
 - 为 Kafka 生产者增加 OOM 保护（仅企业版）

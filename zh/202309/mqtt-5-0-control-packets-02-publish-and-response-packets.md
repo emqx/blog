@@ -1,4 +1,4 @@
-欢迎阅读 [MQTT 5.0 报文系列](https://www.emqx.com/zh/blog/Introduction-to-mqtt-control-packets) 的第二篇文章。在上一篇中，我们已经介绍了 [MQTT 5.0 的 CONNECT 和 CONNACK 报文](https://www.emqx.com/zh/blog/mqtt-5-0-control-packets-01-connect-connack)。现在，我们将介绍在 MQTT 中用于传递应用消息的 PUBLISH 报文以及它的响应报文。
+欢迎阅读 [MQTT 5.0 报文系列](https://www.emqx.com/zh/blog/introduction-to-mqtt-control-packets) 的第二篇文章。在上一篇中，我们已经介绍了 [MQTT 5.0 的 CONNECT 和 CONNACK 报文](https://www.emqx.com/zh/blog/mqtt-5-0-control-packets-01-connect-connack)。现在，我们将介绍在 MQTT 中用于传递应用消息的 PUBLISH 报文以及它的响应报文。
 
 不管是客户端向服务端发布消息，还是服务端向订阅端转发消息，都需要使用 PUBLISH 报文。决定消息流向的主题、消息的实际内容和 QoS 等级，都包含在 PUBLISH 报文中。
 
