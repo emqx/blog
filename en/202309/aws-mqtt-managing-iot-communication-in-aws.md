@@ -12,7 +12,7 @@ AWS is known for its wide range of features and capabilities. These include on-d
 
 MQTT is often used in Internet of Things (IoT) applications due to its efficient use of network resources, its low power usage, and its minimized data packets. It is most useful in remote locations where a small code footprint is required, or where network bandwidth is at a premium.
 
-The MQTT protocol works by exchanging a series of [MQTT control packets](https://www.emqx.com/en/blog/Introduction-to-mqtt-control-packets) in a defined way. The client and server send each other packets to keep the connection alive, to publish data, to acknowledge receipt of data, and to adjust the quality of service (QoS) level of the connection. MQTT is a publish/subscribe messaging protocol designed for lightweight M2M communications. It was originally developed by IBM in the late 1990s and has been used in a variety of IoT settings.
+The MQTT protocol works by exchanging a series of [MQTT control packets](https://www.emqx.com/en/blog/introduction-to-mqtt-control-packets) in a defined way. The client and server send each other packets to keep the connection alive, to publish data, to acknowledge receipt of data, and to adjust the quality of service (QoS) level of the connection. MQTT is a publish/subscribe messaging protocol designed for lightweight M2M communications. It was originally developed by IBM in the late 1990s and has been used in a variety of IoT settings.
 
 This is part of a series of articles about [IoT in the cloud](https://www.emqx.com/en/blog/iot-in-the-cloud-8-key-benefits-and-how-to-get-started).
 

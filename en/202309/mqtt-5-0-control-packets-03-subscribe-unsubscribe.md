@@ -1,4 +1,4 @@
-Welcome to the third article of the [MQTT 5.0 Packet Series](https://www.emqx.com/en/blog/Introduction-to-mqtt-control-packets). In the previous article, we introduced the [PUBLISH packet and its response packets](https://www.emqx.com/en/blog/mqtt-5-0-control-packets-02-publish-puback) in MQTT 5.0. Now, we will introduce the control packets used for subscription and unsubscription.
+Welcome to the third article of the [MQTT 5.0 Packet Series](https://www.emqx.com/en/blog/introduction-to-mqtt-control-packets). In the previous article, we introduced the [PUBLISH packet and its response packets](https://www.emqx.com/en/blog/mqtt-5-0-control-packets-02-publish-puback) in MQTT 5.0. Now, we will introduce the control packets used for subscription and unsubscription.
 
 In MQTT, the SUBSCRIBE packet is used to initiate a subscription request, while the SUBACK packet is used to return the subscription result. The UNSUBSCRIBE and UNSUBACK packets are used when unsubscribing. Subscribing to topics is more commonly used than unsubscribing. However, in this article, we will still introduce the structure and composition of subscription and unsubscription packets.
 

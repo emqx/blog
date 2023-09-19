@@ -1,4 +1,4 @@
-Welcome to the second article of the [MQTT 5.0 Packet Series](https://www.emqx.com/en/blog/Introduction-to-mqtt-control-packets). In the previous article, we introduced the [CONNECT and CONNACK packets](https://www.emqx.com/en/blog/mqtt-5-0-control-packets-01-connect-connack) of MQTT 5.0. Now, we will introduce the PUBLISH packet used to deliver application messages in MQTT, and its response packets.
+Welcome to the second article of the [MQTT 5.0 Packet Series](https://www.emqx.com/en/blog/introduction-to-mqtt-control-packets). In the previous article, we introduced the [CONNECT and CONNACK packets](https://www.emqx.com/en/blog/mqtt-5-0-control-packets-01-connect-connack) of MQTT 5.0. Now, we will introduce the PUBLISH packet used to deliver application messages in MQTT, and its response packets.
 
 Whether it's the client publishing messages to the server, or the server forwarding messages to the subscriber, the PUBLISH packet is needed. The topic that determines the direction of the message, the actual content of the message, and the QoS level, are all included in the PUBLISH packet.
 
