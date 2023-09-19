@@ -1,4 +1,4 @@
-欢迎阅读 [MQTT 5.0 报文系列](https://www.emqx.com/zh/blog/Introduction-to-mqtt-control-packets) 的第五篇文章。在上一篇中，我们已经介绍了 [MQTT 5.0 的 PINGREQ 和 PINGRESP 报文](https://www.emqx.com/zh/blog/mqtt-5-0-control-packets-04-pingreq-and-pingresp)。现在，我们将介绍下一个控制报文：DISCONNECT。
+欢迎阅读 [MQTT 5.0 报文系列](https://www.emqx.com/zh/blog/introduction-to-mqtt-control-packets) 的第五篇文章。在上一篇中，我们已经介绍了 [MQTT 5.0 的 PINGREQ 和 PINGRESP 报文](https://www.emqx.com/zh/blog/mqtt-5-0-control-packets-04-pingreq-and-pingresp)。现在，我们将介绍下一个控制报文：DISCONNECT。
 
 在 MQTT 中，客户端和服务端可以在断开网络连接前向对端发送一个 DISCONNECT 报文，来指示连接关闭的原因。客户端发送的 DISCONNECT 报文还可以影响服务端在连接断开后的行为，例如是否发送遗嘱消息，是否更新会话过期间隔。
 

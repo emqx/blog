@@ -1,4 +1,4 @@
-欢迎阅读 [MQTT 5.0 报文系列](https://www.emqx.com/zh/blog/Introduction-to-mqtt-control-packets) 的最后一篇文章。在上一篇中，我们已经介绍了 [MQTT 5.0 的 DISCONNECT 报文](https://www.emqx.com/zh/blog/mqtt-5-0-control-packets-05-disconnect)。现在，我们将介绍 MQTT 中的最后一个控制报文：AUTH。
+欢迎阅读 [MQTT 5.0 报文系列](https://www.emqx.com/zh/blog/introduction-to-mqtt-control-packets) 的最后一篇文章。在上一篇中，我们已经介绍了 [MQTT 5.0 的 DISCONNECT 报文](https://www.emqx.com/zh/blog/mqtt-5-0-control-packets-05-disconnect)。现在，我们将介绍 MQTT 中的最后一个控制报文：AUTH。
 
 MQTT 5.0 引入了增强认证特性，它使 MQTT 除了简单密码认证和 Token 认证以外，还能够支持质询/响应风格的认证。为了实现这一点，它在原先 CONNECT 和 CONNACK 报文的基础上，又引入了 AUTH 报文来实现任意多次的认证数据交换，以支持各种不同类型的认证机制，例如 [SCRAM](https://en.wikipedia.org/wiki/Salted_Challenge_Response_Authentication_Mechanism)、[Kerberos](https://en.wikipedia.org/wiki/Kerberos_(protocol)) 认证等等。
 
