@@ -1,3 +1,5 @@
+欢迎阅读 [MQTT 5.0 报文系列](https://www.emqx.com/zh/blog/Introduction-to-mqtt-control-packets) 的第三篇文章。在上一篇中，我们介绍了 [MQTT 5.0 的 PUBLISH 及其响应报文](https://www.emqx.com/zh/blog/mqtt-5-0-control-packets-02-publish-and-response-packets)。现在，我们将介绍用于订阅和取消订阅的控制报文。
+
 在 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 中，SUBSCRIBE 报文用于发起订阅请求，SUBACK 报文用于返回订阅结果。而 UNSUBSCRIBE 和 UNSUBACK 报文则在取消订阅时使用。相比于取消订阅，订阅操作更加常用。不过在本文中，我们仍然会一并介绍订阅与取消订阅报文的结构与组成。
 
 ## 报文示例
@@ -22,9 +24,9 @@ mqttx sub --hostname broker.emqx.io --mqtt-version 5 --topic demo --qos 2
 
 这些由十六进制字节组成的原始且晦涩的报文数据，它们分别对应着以下报文内容：
 
-![SUBSCRIBE 报文.png](https://assets.emqx.com/images/db8a7ad5d48659c96b6367295a168c34.png)
+![01subscribepacket.png](https://assets.emqx.com/images/94d7a3863fabcf0b94d43cad3d354d08.png)
 
-![SUBACK 报文.png](https://assets.emqx.com/images/4a30f4624f78b6b86cd48d33d8e92361.png)
+![02subackpacket.png](https://assets.emqx.com/images/2e6a561b4cffe7ec11144c38a9958509.png)
 
 也许你开始好奇它们是如何完成从简单的 MQTTX CLI 命令到复杂的报文数据的转换，或者好奇当你捕获到一个 MQTT 报文，你应该如何从中提取你想要的信息。
 
@@ -68,7 +70,7 @@ SUBSCRIBE 报文的有效载荷包含一个或多个主题过滤器/订阅选项
 
 ### 固定报头
 
-SUBACK 报文的首字节高 4 位的值为 9，低 4 位都必须全部被设置为 0。
+SUBACK 报文的首字节高 4 位的值为 9（0b1001），低 4 位都必须全部被设置为 0。
 
 ![SUBACK 固定报头](https://assets.emqx.com/images/b1bb02d581f04b546973c073da736b7f.png)
 
@@ -113,7 +115,7 @@ SUBACK 报文的有效载荷包含了一个 Reason Code 列表，Reason Code 指
 
 ### 固定报头
 
-与 SUBSCRIBE 报文相同，唯一的区别是报文类型字段的值从 8 变成了 10。
+与 SUBSCRIBE 报文相同，唯一的区别是报文类型字段的值从 8（0b1000） 变成了 10（0b1010）。
 
 ![UNSUBSCRIBE 固定报头](https://assets.emqx.com/images/c1d2d3bf49f7cc46dcb510647c7ab0f1.png)
 
@@ -131,7 +133,7 @@ UNSUBSCRIBE 报文的有效载荷包含一个或多个客户端希望取消订�
 
 ### 固定报头
 
-UNSUBACK 报文的首字节高 4 位的值为 11，低 4 位都必须全部被设置为 0。
+UNSUBACK 报文的首字节高 4 位的值为 11（0b1011），低 4 位都必须全部被设置为 0。
 
 ![UNSUBACK 固定报头](https://assets.emqx.com/images/1eae85d3d63835f9312ce950a1cb16c7.png)
 
@@ -151,7 +153,7 @@ UNSUBACK 报文的有效载荷同样包含了一个 Reason Code 列表，Reason 
 | --------- | ----------------------------- | ------------------------------------------------------------ |
 | 0x00      | Success                       | 订阅已被删除                                                 |
 | 0x11      | No subscription existed       | 服务端中不存在该订阅。                                       |
-| 0x80      | Unspecified error             | 表示未指明的错误。                                           |
+| 0x80      | Unspecified error             | 取消订阅无法完成，服务器要么不希望透露原因，要么没有其他原因代码适用。       |
 | 0x83      | Implementation specific error | UNSUBSCRIBE 报文有效，但是不被当前服务端的实现所接受。       |
 | 0x87      | Not authorized                | 客户端无权取消此订阅。                                       |
 | 0x8F      | Topic Filter invalid          | 主题过滤器的格式正确，但是不被服务端接受。比如主题过滤器的层级超过了服务端允许的最大数量限制。 |

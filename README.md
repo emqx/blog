@@ -5,12 +5,15 @@
 ## [MQTT Tutorials](https://www.emqx.com/en/blog/category/mqtt-protocol)
 Get to know the preferred protocol in IoT from beginner to master.
 
+- [MQTT 5.0 Packet Explained 06: AUTH](https://github.com/emqx/blog/blob/main/en/202309/mqtt-5-0-control-packets-06-auth.md)
+- [MQTT 5.0 Packet Explained 05: DISCONNECT](https://github.com/emqx/blog/blob/main/en/202309/mqtt-5-0-control-packets-05-disconnect.md)
+- [MQTT 5.0 Packet Explained 04: PINGREQ & PINGRESP](https://github.com/emqx/blog/blob/main/en/202309/mqtt-5-0-control-packets-04-pingreq-pingresp.md)
 - [MQTT 5.0 Packet Explained 03: SUBSCRIBE & UNSUBSCRIBE](https://github.com/emqx/blog/blob/main/en/202309/mqtt-5-0-control-packets-03-subscribe-unsubscribe.md)
 - [MQTT 5.0 Packet Explained 02: PUBLISH & PUBACK](https://github.com/emqx/blog/blob/main/en/202309/mqtt-5-0-control-packets-02-publish-puback.md)
 - [MQTT 5.0 Packet Explained 01: CONNECT & CONNACK](https://github.com/emqx/blog/blob/main/en/202309/mqtt-5-0-control-packets-01-connect-connack.md)
 - [Explore New Features of MQTT 5.0: Usage Examples Based on MQTTX CLI](https://github.com/emqx/blog/blob/main/en/202309/demonstrate-mqtt-5-0-features-using-mqttx-cli.md)
 - [MQTT vs AMQP for IoT Communications: Head to Head](https://github.com/emqx/blog/blob/main/en/202307/mqtt-vs-amqp-for-iot-communications.md)
-- [Introduction to MQTT Packets](https://github.com/emqx/blog/blob/main/en/202307/introduction-to-mqtt-control-packets.md)
+- [All You Need to Know About MQTT Packets](https://github.com/emqx/blog/blob/main/en/202307/introduction-to-mqtt-control-packets.md)
 - [Best Practices of Maximum Packet Size in MQTT](https://github.com/emqx/blog/blob/main/en/202307/best-practices-of-maximum-packet-size-in-mqtt.md)
 - [MQTT Subscription Identifier Explained](https://github.com/emqx/blog/blob/main/en/202306/subscription-identifier-and-subscription-options.md)
 - [What Is MQTT and Why Is It the Best Protocol for IoT?](https://github.com/emqx/blog/blob/main/en/202306/what-is-the-mqtt-protocol.md)
