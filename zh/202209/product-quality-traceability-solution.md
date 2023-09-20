@@ -37,7 +37,7 @@ EMQ 产品质量溯源解决方案，通过云原生技术以及云边协同架�
 
 ### 多维度数据高效采集
 
-利用 Neuron 将工厂内 PLC、非标自动化设备、SCADA 以及各类仪器仪表通过现场总线方式进行实时数据采集。Neuron 支持 Modbus、OPCUA、 Siemens S7 等 80+ 现场总线协议采集，最高采集频率可到100ms，还支持通过 MQTT 和 Restful API 等方式实现对工厂设备的反向控制功能。
+利用 Neuron 将工厂内 PLC、非标自动化设备、SCADA 以及各类仪器仪表通过现场总线方式进行实时数据采集。Neuron 支持 [Modbus](https://www.emqx.com/zh/blog/modbus-protocol-the-grandfather-of-iot-communication)、OPCUA、 Siemens S7 等 80+ 现场总线协议采集，最高采集频率可到100ms，还支持通过 MQTT 和 Restful API 等方式实现对工厂设备的反向控制功能。
 
 数据流式分析引擎 eKuiper 可以对各类应用 API 接口进行数据拉取，通过配置界面设置接口地址、数据拉取频率，并可将拉取数据的格式再定义，并实时推送到 EMQX BC 中，实现工厂 MES、视频监控等各类系统的数据汇聚。此外，eKuiper 还支持定期查询数据库以获取批量工厂数据。
 

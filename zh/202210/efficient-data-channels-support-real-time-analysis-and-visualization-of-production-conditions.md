@@ -10,7 +10,7 @@
 
   基于当前物联网、大数据、云计算、人工智能等新一代信息技术的发展，生产数据不再局限于产线的数据采集，而是扩展到整个工厂或园区包括产线、人员、环控、能源、安全、储存、运输、厂房等各个环节的[工业物联网](https://www.emqx.com/zh/blog/iiot-explained-examples-technologies-benefits-and-challenges)设备，关系到效率、产能、质量、安全、耗能、管理等工厂健康生产的核心指标。
 
-  各类工业或物联网设备种类繁多决定了通讯协议的多样性，涉及到的协议有 Modbus、OPC、MQTT、HTTP 等。一个工厂的设备通讯协议往往从几种到十几种甚至更多，且不同厂家的设备信息存在不同的数据结构，导致业务层处理数据困难。
+  各类工业或物联网设备种类繁多决定了通讯协议的多样性，涉及到的协议有 [Modbus](https://www.emqx.com/zh/blog/modbus-protocol-the-grandfather-of-iot-communication)、OPC、MQTT、HTTP 等。一个工厂的设备通讯协议往往从几种到十几种甚至更多，且不同厂家的设备信息存在不同的数据结构，导致业务层处理数据困难。
 
 - 流式数据的处理需求
 

@@ -42,7 +42,7 @@ Neuron v2.0 采用了插件机制来支持变化多端的用户功能需求，�
 
 ### 支持多种工业设备协议
 
-南向支持从各类品牌 PLC 制造商到全球技术标准委员会发布的数十种协议接入，包括：西门子、罗克韦尔自动化、欧姆龙、三菱、Modbus、OPC、Siemens、Mitshibishi、Omron、IEC、EtherNet/IP 等。北向支持互联网协议，如 MQTT、HTTP、HTTPS 等。
+南向支持从各类品牌 PLC 制造商到全球技术标准委员会发布的数十种协议接入，包括：西门子、罗克韦尔自动化、欧姆龙、三菱、[Modbus](https://www.emqx.com/zh/blog/modbus-protocol-the-grandfather-of-iot-communication)、OPC、Siemens、Mitshibishi、Omron、IEC、EtherNet/IP 等。北向支持互联网协议，如 MQTT、HTTP、HTTPS 等。
 
 ### 支持同时连接多个设备
 
