@@ -30,7 +30,7 @@
 
 储能系统的数据采集需要基于传统的 EMS 系统实现，EMS 系统已经支持 BMS、PCS 以及辅助系统的数据采集，储能系统的数据可通过 EMS 系统获取完整的数据。目前，EMS 能源管理系统一般可以对外提供传统工业协议数据接口，例如 Modbus/TCP、OPC-UA、IEC104 等。通过传统的工业协议接口采集超过 10000点位数据，往往需要数秒的时间，而储能系统数据采集频率要求达到亚秒级。
 
-EMQ 旗下[边缘工业协议网关软件 Neuron](https://www.emqx.com/zh/products/neuron) 提供改进的 Modbus 协议，支持每 100 毫秒一次采集数千点位的数据，可以满足储能系统数据高频的数据采集需求。
+EMQ 旗下[边缘工业协议网关软件 Neuron](https://www.emqx.com/zh/products/neuron) 提供改进的 [Modbus 协议](https://www.emqx.com/zh/blog/modbus-protocol-the-grandfather-of-iot-communication)，支持每 100 毫秒一次采集数千点位的数据，可以满足储能系统数据高频的数据采集需求。
 
 ### 支持迭代流计算的边缘计算框架
 

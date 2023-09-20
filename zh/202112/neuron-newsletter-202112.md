@@ -18,7 +18,7 @@ Neuron 2.0 已经有了完整的单元测试，每个独立的模块都有对应
 
 本月我们修复了 Neuron 2.0 中的以下问题：
 
-- Modbus 循环读有时出现崩溃的问题。
+- [Modbus](https://www.emqx.com/zh/blog/modbus-protocol-the-grandfather-of-iot-communication) 循环读有时出现崩溃的问题。
 - 删除 node 时偶尔崩溃的问题。
 - 重启 adapter 系统假死的问题。
 - 关闭 Neuron 时引用释放的 group config 导致崩溃的问题。
