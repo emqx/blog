@@ -98,6 +98,7 @@ Get to know the preferred protocol in IoT from beginner to master.
 ## [MQTT Programming](https://www.emqx.com/en/blog/category/mqtt-programming)
 Best practice of MQTT in various clients.
 
+- [Connecting to a Serverless MQTT Broker in React](https://github.com/emqx/blog/blob/main/en/202309/connecting-to-a-serverless-mqtt-broker-in-react.md)
 - [Using MQTT in Unity with M2MqttUnity Library: A Step-by-Step Guide](https://github.com/emqx/blog/blob/main/en/202308/using-mqtt-in-unity-with-m2mqttunity-library-a-step-by-step-guide.md)
 - [How to Create an MQTT Application in Qt6](https://github.com/emqx/blog/blob/main/en/202308/how-to-create-an-mqtt-application-in-qt6.md)
 - [Connecting to Serverless MQTT Broker in PHP](https://github.com/emqx/blog/blob/main/en/202307/connecting-to-serverless-mqtt-broker-in-php.md)
@@ -261,6 +262,7 @@ EMQX is the world's most scalable open-source MQTT broker with a high performanc
 ## [EMQX Cloud](https://www.emqx.com/en/blog/category/cloud)
 The easiest way to start MQTT service. Connect your IoT devices to any cloud without the burden of maintaining infrastructure.
 
+- [Connecting to a Serverless MQTT Broker in React](https://github.com/emqx/blog/blob/main/en/202309/connecting-to-a-serverless-mqtt-broker-in-react.md)
 - [Serverless MQTT: Your Key to Efficient IoT Prototyping](https://github.com/emqx/blog/blob/main/en/202309/serverless-mqtt-your-key-to-efficient-iot-prototyping.md)
 - [EMQX Cloud Now Available in AWS Sydney: Deploy Your EMQX Cluster Today](https://github.com/emqx/blog/blob/main/en/202308/emqx-cloud-now-available-in-aws-sydney.md)
 - [Azure IoT Hub: 4 Key Features, Use Cases, and How to Get Started](https://github.com/emqx/blog/blob/main/en/202308/azure-iot-hub-4-key-features-use-cases-and-how-to-get-started.md)
@@ -341,6 +343,7 @@ The easiest way to start MQTT service. Connect your IoT devices to any cloud wit
 ## [EMQX Enterprise](https://www.emqx.com/en/blog/category/enterprise)
 The world's most scalable and reliable MQTT messaging platform to connect, move and process your data in business-critical scenarios for the IoT era.
 
+- [Securing Your MQTT-Based Applications with NGINX Plus's Client ID Substitution and EMQX Enterprise](https://github.com/emqx/blog/blob/main/en/202309/securing-your-mqtt-based-applications-with-nginx-plus-client-id-substitution-and-emqx-enterprise.md)
 - [Home Assistant and MQTT: 4 Things You Could Build](https://github.com/emqx/blog/blob/main/en/202309/home-assistant-and-mqtt-4-things-you-could-build.md)
 - [EMQX MQTT Broker Troubleshooting: Publish-Subscribe Issues](https://github.com/emqx/blog/blob/main/en/202308/emqx-mqtt-broker-troubleshooting-publish-subscribe-issues.md)
 - [EMQX Enterprise 4.4.20 Released: Enhancing Kafka, Pub/Sub, and HStream Data Integration](https://github.com/emqx/blog/blob/main/en/202308/emqx-enterprise-v-4-4-20-release-notes.md)
@@ -563,6 +566,7 @@ Accelerate digital transformation of industries based on EMQ data infrastructure
 
 ## [Community](https://www.emqx.com/en/blog/category/community)
 
+- [Connecting to a Serverless MQTT Broker in React](https://github.com/emqx/blog/blob/main/en/202309/connecting-to-a-serverless-mqtt-broker-in-react.md)
 - [We'd Appreciate Your Feedback](https://github.com/emqx/blog/blob/main/en/202212/we-d-appreciate-your-feedback.md)
 - [Solicitation notice for quality articles](https://github.com/emqx/blog/blob/main/en/202204/solicitation-notice-for-quality-articles.md)
 - [EMQ is now the foundational sponsor of OASIS to drive MQTT specification forward together](https://github.com/emqx/blog/blob/main/en/202202/emq-is-now-the-foundational-member-of-oasis.md)
