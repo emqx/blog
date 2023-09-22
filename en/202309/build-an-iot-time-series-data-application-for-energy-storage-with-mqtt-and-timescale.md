@@ -1,8 +1,7 @@
 ## Introduction
 
-With the rapid growth of renewable energy, real-time monitoring and analysis of energy storage systems is crucial for performance and efficiency. The integration of [EMQX](https://www.emqx.com/en/products/emqx) and [Timescale](https://timescale.com/) provides the foundation for building a scalable IoT platform to holistically monitor distributed energy storage systems.
+As industrial production continues to grow, monitoring energy consumption in factories is crucial for optimizing energy management strategies and reducing costs. EMQX and Timescale provide a scalable IoT platform for efficient collection and analysis of energy consumption data in real-time. This article shows how to use EMQX to collect data from the plant and integrate it with Timescale for reliable data storage and analysis.
 
-In this article, we will create a demo project on how EMQX can collect sensor data from energy storage systems and be integrated with Timescale for real-time storage and analytics. EMQX reliably aggregates data from storage systems via [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt), while Timescale offers a performant time-series database.
 
 ## Prerequisites
 
@@ -120,7 +119,7 @@ $ docker logs -f mqttx
 payload: {"factory_id":"08","factory":"Miller and Sons","values":{"air_compressor_1":3.72,"air_compressor_2":5.01,"lighting":0.95,"cooling_equipment":23.19,"heating_equipment":52.66,"conveyor":10.66,"coating_equipment":5.21,"inspection_equipment":2.6,"welding_equipment":5.27,"packaging_equi...
 ```
 
-To subscribe and receive the data with any MQTT client:
+To subscribe and receive the data with any [MQTT client](https://www.emqx.com/en/blog/mqtt-client-tools):
 
 ```
 mqttx sub -t mqttx/simulate/IEM/+
@@ -130,11 +129,13 @@ mqttx sub -t mqttx/simulate/IEM/+
 
 To view enengy data in the Grafana dashboard, open `http://localhost:3000` in your browser, log in with username `admin` and password `public`.
 
+After successful login, go to “Home → Dashboards” page and select “Energy Monitoring data”. The dashboard comprehensively displays the key energy consumption metrics of various industrial equipment, including the cumulative energy consumption value of each equipment and the energy consumption share of each plant, which fully presents the real-time energy usage of the industrial system and facilitates data-driven energy-saving management.
+
 ![View MQTT Enengy Data in Grafana](https://assets.emqx.com/images/d00a78b068cc7cdfc435a7f99d36306c.png)
 
 ## Conclusion
 
-In this post, we have explored how to integrate EMQX and Timescale to build an industrial energy monitoring pipeline. By leveraging EMQX as a real-time MQTT broker and utilizing its SQL data integration to ingest data into Timescale, we have created an end-to-end solution for collecting and analyzing time-series sensor data.
+In this post, we have explored how to integrate EMQX and Timescale to build an industrial energy monitoring pipeline. By leveraging EMQX as a real-time [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) and utilizing its SQL data integration to ingest data into Timescale, we have created an end-to-end solution for collecting and analyzing time-series energy consumption data.
 
 This demo project provides a starting point for building scalable time-series data platforms, opening opportunities for real-time monitoring, optimization, and intelligence in industrial facilities and other time-sensitive use cases. The reliability of EMQX and the analytical power of Timescale unlock valuable insights from time-series data.
 
