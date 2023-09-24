@@ -68,7 +68,7 @@ By seamlessly integrating information technology (IT) and operational technology
     <div class="mb-4 is-size-3 is-text-black has-text-weight-semibold" style="
     line-height: 1.2;
 ">
-      The Most Advanced Technology Stack for Smart Manufacturing
+      State-of-the-Art Smart Manufacturing Technology Stack
     </div>
     <div class="mb-32">
       Enabling seamless connectivity, real-time data processing, and efficient system management.
