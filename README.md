@@ -24,7 +24,7 @@ Get to know the preferred protocol in IoT from beginner to master.
 - [MQTT Protocol: How It Works & Core Concepts Explained](https://github.com/emqx/blog/blob/main/en/202305/the-easiest-guide-to-getting-started-with-mqtt.md)
 - [Shaping the Future of IoT: 7 MQTT Technology Trends in 2023](https://github.com/emqx/blog/blob/main/en/202303/7-mqtt-trends-in-2023.md)
 - [Introduction to MQTT Publish-Subscribe Pattern](https://github.com/emqx/blog/blob/main/en/202303/mqtt-5-introduction-to-publish-subscribe-model.md)
-- [Introduction to MQTT QoS 0, 1, 2](https://github.com/emqx/blog/blob/main/en/202301/introduction-to-mqtt-qos.md)
+- [MQTT QoS 0, 1, 2 Explained: A Quickstart Guide](https://github.com/emqx/blog/blob/main/en/202301/introduction-to-mqtt-qos.md)
 - [MQTT Persistent Session and Clean Session Explained](https://github.com/emqx/blog/blob/main/en/202212/mqtt-session.md)
 - [How to Set Parameters When Establishing an MQTT Connection?](https://github.com/emqx/blog/blob/main/en/202211/how-to-set-parameters-when-establishing-an-mqtt-connection.md)
 - [The Beginner's Guide to MQTT Retained Messages](https://github.com/emqx/blog/blob/main/en/202211/mqtt5-features-retain-message.md)
@@ -98,6 +98,7 @@ Get to know the preferred protocol in IoT from beginner to master.
 ## [MQTT Programming](https://www.emqx.com/en/blog/category/mqtt-programming)
 Best practice of MQTT in various clients.
 
+- [Connecting to a Serverless MQTT Broker in React](https://github.com/emqx/blog/blob/main/en/202309/connecting-to-a-serverless-mqtt-broker-in-react.md)
 - [Using MQTT in Unity with M2MqttUnity Library: A Step-by-Step Guide](https://github.com/emqx/blog/blob/main/en/202308/using-mqtt-in-unity-with-m2mqttunity-library-a-step-by-step-guide.md)
 - [How to Create an MQTT Application in Qt6](https://github.com/emqx/blog/blob/main/en/202308/how-to-create-an-mqtt-application-in-qt6.md)
 - [Connecting to Serverless MQTT Broker in PHP](https://github.com/emqx/blog/blob/main/en/202307/connecting-to-serverless-mqtt-broker-in-php.md)
@@ -152,7 +153,7 @@ Best practice of MQTT in various clients.
 ## [MQTT Integration (Eco & Integration)](https://www.emqx.com/en/blog/category/eco-and-integration)
 Explore more with & via EMQ.
 
-- [Build an IoT Time-Series Data Application for Energy Storage with MQTT and Timescale](https://github.com/emqx/blog/blob/main/en/202309/build-an-iot-time-series-data-application-for-energy-storage-with-mqtt-and-timescale.md)
+- [Build an IoT Time-Series Data Application for Industrial Energy Monitoring with MQTT and Timescale](https://github.com/emqx/blog/blob/main/en/202309/build-an-iot-time-series-data-application-for-energy-storage-with-mqtt-and-timescale.md)
 - [AWS MQTT: Managing IoT Communication in AWS (with Tutorial)](https://github.com/emqx/blog/blob/main/en/202309/aws-mqtt-managing-iot-communication-in-aws.md)
 - [MQTT to ClickHouse Integration: Fueling Real-Time IoT Data Analytics](https://github.com/emqx/blog/blob/main/en/202307/mqtt-to-clickhouse-integration.md)
 - [MQTT Performance Benchmark Testing: EMQX-HStreamDB Integration](https://github.com/emqx/blog/blob/main/en/202307/mqtt-performance-benchmark-testing-emqx-hstreamdb-integration.md)
@@ -261,6 +262,7 @@ EMQX is the world's most scalable open-source MQTT broker with a high performanc
 ## [EMQX Cloud](https://www.emqx.com/en/blog/category/cloud)
 The easiest way to start MQTT service. Connect your IoT devices to any cloud without the burden of maintaining infrastructure.
 
+- [Connecting to a Serverless MQTT Broker in React](https://github.com/emqx/blog/blob/main/en/202309/connecting-to-a-serverless-mqtt-broker-in-react.md)
 - [Serverless MQTT: Your Key to Efficient IoT Prototyping](https://github.com/emqx/blog/blob/main/en/202309/serverless-mqtt-your-key-to-efficient-iot-prototyping.md)
 - [EMQX Cloud Now Available in AWS Sydney: Deploy Your EMQX Cluster Today](https://github.com/emqx/blog/blob/main/en/202308/emqx-cloud-now-available-in-aws-sydney.md)
 - [Azure IoT Hub: 4 Key Features, Use Cases, and How to Get Started](https://github.com/emqx/blog/blob/main/en/202308/azure-iot-hub-4-key-features-use-cases-and-how-to-get-started.md)
@@ -341,6 +343,7 @@ The easiest way to start MQTT service. Connect your IoT devices to any cloud wit
 ## [EMQX Enterprise](https://www.emqx.com/en/blog/category/enterprise)
 The world's most scalable and reliable MQTT messaging platform to connect, move and process your data in business-critical scenarios for the IoT era.
 
+- [Securing Your MQTT-Based Applications with NGINX Plus's Client ID Substitution and EMQX Enterprise](https://github.com/emqx/blog/blob/main/en/202309/securing-your-mqtt-based-applications-with-nginx-plus-client-id-substitution-and-emqx-enterprise.md)
 - [Home Assistant and MQTT: 4 Things You Could Build](https://github.com/emqx/blog/blob/main/en/202309/home-assistant-and-mqtt-4-things-you-could-build.md)
 - [EMQX MQTT Broker Troubleshooting: Publish-Subscribe Issues](https://github.com/emqx/blog/blob/main/en/202308/emqx-mqtt-broker-troubleshooting-publish-subscribe-issues.md)
 - [EMQX Enterprise 4.4.20 Released: Enhancing Kafka, Pub/Sub, and HStream Data Integration](https://github.com/emqx/blog/blob/main/en/202308/emqx-enterprise-v-4-4-20-release-notes.md)
@@ -407,6 +410,7 @@ Build a reliable, efficient and industry-specific Internet of Vehicles platform 
 
 ## [Industrial IoT | Unified Namespace | Sparkplug](https://www.emqx.com/en/blog/category/industrial-iot)
 
+- [10 Important KPIs for Measuring Smart Manufacturing Performace](https://github.com/emqx/blog/blob/main/en/202309/ten-important-kpis-for-measuring-smart-manufacturing-performace.md)
 - [Measuring Excellence: A Deep Dive into KPIs for Smart Manufacturing](https://github.com/emqx/blog/blob/main/en/202309/a-deep-dive-into-kpis-for-smart-manufacturing.md)
 - [Modern Messaging Infrastructure for Smart Manufacturing](https://github.com/emqx/blog/blob/main/en/202309/modern-messaging-infrastructure-for-smart-manufacturing.md)
 - [Bridging KNX Data to MQTT: Introduction and Hands-on Tutorial](https://github.com/emqx/blog/blob/main/en/202309/bridging-knx-data-to-mqtt-introduction-and-hands-on-tutorial.md)
@@ -563,6 +567,7 @@ Accelerate digital transformation of industries based on EMQ data infrastructure
 
 ## [Community](https://www.emqx.com/en/blog/category/community)
 
+- [Connecting to a Serverless MQTT Broker in React](https://github.com/emqx/blog/blob/main/en/202309/connecting-to-a-serverless-mqtt-broker-in-react.md)
 - [We'd Appreciate Your Feedback](https://github.com/emqx/blog/blob/main/en/202212/we-d-appreciate-your-feedback.md)
 - [Solicitation notice for quality articles](https://github.com/emqx/blog/blob/main/en/202204/solicitation-notice-for-quality-articles.md)
 - [EMQ is now the foundational sponsor of OASIS to drive MQTT specification forward together](https://github.com/emqx/blog/blob/main/en/202202/emq-is-now-the-foundational-member-of-oasis.md)
