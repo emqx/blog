@@ -66,7 +66,7 @@ This vital KPI evaluates equipment productivity by combining availability, perfo
 
 ## Achieve Your KPIs with OMH Offering
 
-The Open Manufacturing Hub (OMH) presented by EMQ is a reference architecture for building powerful and scalable Industrial IoT applications that keep your KPIs in control.
+The Open Manufacturing Hub (OMH) solution presented by EMQ is a reference architecture for building powerful and scalable Industrial IoT applications that keep your KPIs in control.
 
 When deploying the OMH solution, it provides access to a set of pre-defined KPIs that offer two flexible options: first can either use them as they are, or second can customize them to meet specific business goals. In addition to providing these predefined KPIs, OMH also includes a robust business intelligence component. This business intelligence feature helps to delve deeper into the data, facilitating a comprehensive analysis of KPIs. Explore and extract insights to gain a richer understanding of the performance of a particular KPI and its impact on the manufacturing processes. This analytical capability is critical to identifying areas for improvement and optimizing operations.
 
@@ -85,7 +85,7 @@ All in all, OMH's comprehensive offering includes both preset and customizable K
     <div class="mb-4 is-size-3 is-text-black has-text-weight-semibold" style="
     line-height: 1.2;
 ">
-      State-of-the-Art Smart Manufacturing Technology Stack
+      State-of-the-Art Smart Manufacturing Tech Stack
     </div>
     <div class="mb-32">
       Enabling seamless connectivity, real-time data processing, and efficient system management.
