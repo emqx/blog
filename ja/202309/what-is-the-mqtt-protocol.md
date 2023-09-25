@@ -177,7 +177,7 @@ MQTT アプリケーションの開発は、MQTT テスト ツールのサポー
 
 ## EMQX を使用した IoT 環境向けの MQTT クイック スタート
 
-この時点で、MQTT プロトコルについては予備的に理解できたと思います。次に、ブログ[「MQTTプロトコル解説：基礎知識とクイック・チュートリアル」](https://www.emqx.com/ja/blog/the-easiest-guide-to-getting-started-with-mqtt)にアクセスしてMQTT の使用を開始する方法を学習したり、[MQTT ガイド](https://www.emqx.com/en/mqtt-guide)シリーズの記事を参照して MQTT プロトコルの機能を学習し、MQTT のより高度なアプリケーションを探索したり、MQTT を開始したりできます。アプリケーションやサービスの開発。
+この時点で、MQTT プロトコルについては予備的に理解できたと思います。次に、ブログ[「MQTTプロトコル解説：基礎知識とクイック・チュートリアル」](https://www.emqx.com/ja/blog/the-easiest-guide-to-getting-started-with-mqtt)にアクセスしてMQTT の使用を開始する方法を学習したり、[MQTT ガイド](https://www.emqx.com/en/mqtt-guide)シリーズの記事を参照して MQTT プロトコルの機能を学習し、MQTT のより高度なアプリケーションを探索したり、MQTT のアプリケーションやサービスの開発を開始したりできます。
 
 
 
