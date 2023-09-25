@@ -343,6 +343,7 @@ The easiest way to start MQTT service. Connect your IoT devices to any cloud wit
 ## [EMQX Enterprise](https://www.emqx.com/en/blog/category/enterprise)
 The world's most scalable and reliable MQTT messaging platform to connect, move and process your data in business-critical scenarios for the IoT era.
 
+- [EMQX Enterprise 5.2 Released: Flow Designer, Amazon Kinesis, Azure Event Hubs](https://github.com/emqx/blog/blob/main/en/202309/emqx-enterprise-5-2-release-notes.md)
 - [Securing Your MQTT-Based Applications with NGINX Plus's Client ID Substitution and EMQX Enterprise](https://github.com/emqx/blog/blob/main/en/202309/securing-your-mqtt-based-applications-with-nginx-plus-client-id-substitution-and-emqx-enterprise.md)
 - [Home Assistant and MQTT: 4 Things You Could Build](https://github.com/emqx/blog/blob/main/en/202309/home-assistant-and-mqtt-4-things-you-could-build.md)
 - [EMQX MQTT Broker Troubleshooting: Publish-Subscribe Issues](https://github.com/emqx/blog/blob/main/en/202308/emqx-mqtt-broker-troubleshooting-publish-subscribe-issues.md)
@@ -410,6 +411,7 @@ Build a reliable, efficient and industry-specific Internet of Vehicles platform 
 
 ## [Industrial IoT | Unified Namespace | Sparkplug](https://www.emqx.com/en/blog/category/industrial-iot)
 
+- [OEE in Lean Manufacturing: Goals, Evaluation Method, and Six Big Losses](https://github.com/emqx/blog/blob/main/en/202309/oee-in-lean-manufacturing.md)
 - [10 Important KPIs for Measuring Smart Manufacturing Performace](https://github.com/emqx/blog/blob/main/en/202309/ten-important-kpis-for-measuring-smart-manufacturing-performace.md)
 - [Measuring Excellence: A Deep Dive into KPIs for Smart Manufacturing](https://github.com/emqx/blog/blob/main/en/202309/a-deep-dive-into-kpis-for-smart-manufacturing.md)
 - [Modern Messaging Infrastructure for Smart Manufacturing](https://github.com/emqx/blog/blob/main/en/202309/modern-messaging-infrastructure-for-smart-manufacturing.md)

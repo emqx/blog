@@ -2,7 +2,7 @@
 
 In the rapidly evolving landscape of the [Industrial Internet of Things (IIoT)](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges), the demand for seamless connectivity, real-time data processing, and efficient system management has never been greater. As industries continue to embrace the transformative potential of interconnected devices, the need for a robust and flexible technology stack becomes paramount.
 
-Enter the OMH(Open Manufacturing Hub) — an open-source blueprint for industrial IoT presented by EMQ, harnessing the true potential of industrial connectivity and real-time data. In this article, we embark on a journey through the OMH, uncovering how to implement this innovative solution and reshape the way we approach industrial system development.
+Enter the OMH(Open Manufacturing Hub) — an open-source blueprint for industrial IoT presented by EMQ, harnessing the true potential of industrial connectivity and real-time data. In this article, we embark on a journey through the OMH solution, uncovering how to implement this innovative solution and reshape the way we approach industrial system development.
 
 <section
   class="is-hidden-touch my-32 is-flex is-align-items-center"
