@@ -87,7 +87,7 @@ sensor/1/temperature
 | $SYS/brokers/emqx@127.0.0.1/datetime | EMQX 系统时间     |
 | $SYS/brokers/emqx@127.0.0.1/sysdescr | EMQX 系统信息     |
 
-EMQX 还支持客户端上下线事件、收发流量、消息收发、系统监控等丰富的系统主题，用户可通过订阅 `$SYS/#` 主题获取所有系统主题消息。详细请见：[EMQX 系统主题文档](https://www.emqx.io/docs/zh/v5.0/advanced/system-topic.html)。
+EMQX 还支持客户端上下线事件、收发流量、消息收发、系统监控等丰富的系统主题，用户可通过订阅 `$SYS/#` 主题获取所有系统主题消息。详细请见：[EMQX 系统主题文档](https://www.emqx.io/docs/zh/v5.0/observability/mqtt-system-topics.html#%E5%AE%A2%E6%88%B7%E7%AB%AF%E4%B8%8A%E4%B8%8B%E7%BA%BF%E4%BA%8B%E4%BB%B6)。
 
 ### 共享订阅
 
