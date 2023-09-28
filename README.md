@@ -262,6 +262,7 @@ EMQX is the world's most scalable open-source MQTT broker with a high performanc
 ## [EMQX Cloud](https://www.emqx.com/en/blog/category/cloud)
 The easiest way to start MQTT service. Connect your IoT devices to any cloud without the burden of maintaining infrastructure.
 
+- [Connecting to a Serverless MQTT Broker using Postman](https://github.com/emqx/blog/blob/main/en/202309/connecting-to-a-serverless-mqtt-broker-using-postman.md)
 - [Connecting to a Serverless MQTT Broker in React](https://github.com/emqx/blog/blob/main/en/202309/connecting-to-a-serverless-mqtt-broker-in-react.md)
 - [Serverless MQTT: Your Key to Efficient IoT Prototyping](https://github.com/emqx/blog/blob/main/en/202309/serverless-mqtt-your-key-to-efficient-iot-prototyping.md)
 - [EMQX Cloud Now Available in AWS Sydney: Deploy Your EMQX Cluster Today](https://github.com/emqx/blog/blob/main/en/202308/emqx-cloud-now-available-in-aws-sydney.md)
@@ -411,6 +412,8 @@ Build a reliable, efficient and industry-specific Internet of Vehicles platform 
 
 ## [Industrial IoT | Unified Namespace | Sparkplug](https://www.emqx.com/en/blog/category/industrial-iot)
 
+- [The Power of Unified Namespace in Modern Manufacturing](https://github.com/emqx/blog/blob/main/en/202309/the-power-of-unified-namespace-in-modern-manufacturing.md)
+- [Exploring ISA95 Standards in Manufacturing](https://github.com/emqx/blog/blob/main/en/202309/exploring-isa95-standards-in-manufacturing.md)
 - [OEE in Lean Manufacturing: Goals, Evaluation Method, and Six Big Losses](https://github.com/emqx/blog/blob/main/en/202309/oee-in-lean-manufacturing.md)
 - [10 Important KPIs for Measuring Smart Manufacturing Performace](https://github.com/emqx/blog/blob/main/en/202309/ten-important-kpis-for-measuring-smart-manufacturing-performace.md)
 - [Measuring Excellence: A Deep Dive into KPIs for Smart Manufacturing](https://github.com/emqx/blog/blob/main/en/202309/a-deep-dive-into-kpis-for-smart-manufacturing.md)
