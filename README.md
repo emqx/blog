@@ -412,6 +412,7 @@ Build a reliable, efficient and industry-specific Internet of Vehicles platform 
 
 ## [Industrial IoT | Unified Namespace | Sparkplug](https://www.emqx.com/en/blog/category/industrial-iot)
 
+- [Implementing Unified Namespace Using EMQX and Neuron](https://github.com/emqx/blog/blob/main/en/202309/implementing-unified-namespace-using-emqx-and-neuron.md)
 - [The Power of Unified Namespace in Modern Manufacturing](https://github.com/emqx/blog/blob/main/en/202309/the-power-of-unified-namespace-in-modern-manufacturing.md)
 - [Exploring ISA95 Standards in Manufacturing](https://github.com/emqx/blog/blob/main/en/202309/exploring-isa95-standards-in-manufacturing.md)
 - [OEE in Lean Manufacturing: Goals, Evaluation Method, and Six Big Losses](https://github.com/emqx/blog/blob/main/en/202309/oee-in-lean-manufacturing.md)
@@ -572,6 +573,7 @@ Accelerate digital transformation of industries based on EMQ data infrastructure
 
 ## [Community](https://www.emqx.com/en/blog/category/community)
 
+- [Join Hacktoberfest 2023 with EMQ Community!](https://github.com/emqx/blog/blob/main/en/202309/join-hacktoberfest-2023-with-emq-community.md)
 - [Connecting to a Serverless MQTT Broker in React](https://github.com/emqx/blog/blob/main/en/202309/connecting-to-a-serverless-mqtt-broker-in-react.md)
 - [We'd Appreciate Your Feedback](https://github.com/emqx/blog/blob/main/en/202212/we-d-appreciate-your-feedback.md)
 - [Solicitation notice for quality articles](https://github.com/emqx/blog/blob/main/en/202204/solicitation-notice-for-quality-articles.md)
