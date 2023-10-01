@@ -412,6 +412,8 @@ Build a reliable, efficient and industry-specific Internet of Vehicles platform 
 
 ## [Industrial IoT | Unified Namespace | Sparkplug](https://www.emqx.com/en/blog/category/industrial-iot)
 
+- [Incorporating the Unified Namespace with ISA-95: Best Practices](https://github.com/emqx/blog/blob/main/en/202309/incorporating-the-unified-namespace-with-isa-95-best-practices.md)
+- [Implementing Unified Namespace Using EMQX and Neuron](https://github.com/emqx/blog/blob/main/en/202309/implementing-unified-namespace-using-emqx-and-neuron.md)
 - [The Power of Unified Namespace in Modern Manufacturing](https://github.com/emqx/blog/blob/main/en/202309/the-power-of-unified-namespace-in-modern-manufacturing.md)
 - [Exploring ISA95 Standards in Manufacturing](https://github.com/emqx/blog/blob/main/en/202309/exploring-isa95-standards-in-manufacturing.md)
 - [OEE in Lean Manufacturing: Goals, Evaluation Method, and Six Big Losses](https://github.com/emqx/blog/blob/main/en/202309/oee-in-lean-manufacturing.md)
@@ -447,6 +449,7 @@ Build a reliable, efficient and industry-specific Internet of Vehicles platform 
 ## [MQTTX](https://www.emqx.com/en/blog/category/mqttx)
 MQTTX is a Fully Open-source MQTT 5.0 cross-platform Desktop Client, makes it easy and quick to create multiple simultaneous online MQTT client connections, test the connection, publish, and subscribe functions of MQTT/TCP, MQTT/TLS, MQTT/WebSocket as well as other MQTT protocol features.
 
+- [MQTTX 1.9.6 Released: ALPN Protocol Support, Optimized Publish Options Interface](https://github.com/emqx/blog/blob/main/en/202309/mqttx-v-1-9-6-release-notes.md)
 - [Explore New Features of MQTT 5.0: Usage Examples Based on MQTTX CLI](https://github.com/emqx/blog/blob/main/en/202309/demonstrate-mqtt-5-0-features-using-mqttx-cli.md)
 - [Simulating the Future: Crafting IoT Scenarios with ChatGPT and MQTTX](https://github.com/emqx/blog/blob/main/en/202308/simulating-the-future-crafting-iot-scenarios-with-chatgpt-and-mqttx.md)
 - [MQTTX 1.9.5 Released: JSON Message Highlighting and More!](https://github.com/emqx/blog/blob/main/en/202308/mqttx-1-9-5-released-json-message-highlighting-and-more.md)
@@ -572,6 +575,7 @@ Accelerate digital transformation of industries based on EMQ data infrastructure
 
 ## [Community](https://www.emqx.com/en/blog/category/community)
 
+- [Join Hacktoberfest 2023 with EMQ Community!](https://github.com/emqx/blog/blob/main/en/202309/join-hacktoberfest-2023-with-emq-community.md)
 - [Connecting to a Serverless MQTT Broker in React](https://github.com/emqx/blog/blob/main/en/202309/connecting-to-a-serverless-mqtt-broker-in-react.md)
 - [We'd Appreciate Your Feedback](https://github.com/emqx/blog/blob/main/en/202212/we-d-appreciate-your-feedback.md)
 - [Solicitation notice for quality articles](https://github.com/emqx/blog/blob/main/en/202204/solicitation-notice-for-quality-articles.md)
