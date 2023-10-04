@@ -136,6 +136,7 @@ func NewTlsConfig() *tls.Config {
 	certpool.AppendCertsFromPEM(ca)
 	return &tls.Config{
 		RootCAs: certpool,
+        }
 }
 ```
 
