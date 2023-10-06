@@ -413,6 +413,7 @@ Build a reliable, efficient and industry-specific Internet of Vehicles platform 
 
 ## [Industrial IoT | Unified Namespace | Sparkplug](https://www.emqx.com/en/blog/category/industrial-iot)
 
+- [Bridging BACnet Data to MQTT: A Solution to Better Implementing Intelligent Building](https://github.com/emqx/blog/blob/main/en/202310/bridging-bacnet-data-to-mqtt.md)
 - [BACnet Protocol: Basic Concepts, Structure, Obejct Model Explained](https://github.com/emqx/blog/blob/main/en/202310/bacnet-protocol-basic-concepts-structure-obejct-model-explained.md)
 - [Automated KPIs Implementation for Industrial IoT with the Open Manufacturing Hub](https://github.com/emqx/blog/blob/main/en/202310/automated-kpis-implementation-for-iiot-with-the-open-manufacturing-hub.md)
 - [Incorporating the Unified Namespace with ISA-95: Best Practices](https://github.com/emqx/blog/blob/main/en/202309/incorporating-the-unified-namespace-with-isa-95-best-practices.md)
