@@ -262,6 +262,7 @@ EMQX is the world's most scalable open-source MQTT broker with a high performanc
 ## [EMQX Cloud](https://www.emqx.com/en/blog/category/cloud)
 The easiest way to start MQTT service. Connect your IoT devices to any cloud without the burden of maintaining infrastructure.
 
+- [One Key for All: Streamline Access Management with EMQX Cloud's SSO Integrations](https://github.com/emqx/blog/blob/main/en/202310/streamline-access-management-with-emqx-cloud-sso-integrations.md)
 - [Connecting to a Serverless MQTT Broker using Postman](https://github.com/emqx/blog/blob/main/en/202309/connecting-to-a-serverless-mqtt-broker-using-postman.md)
 - [Connecting to a Serverless MQTT Broker in React](https://github.com/emqx/blog/blob/main/en/202309/connecting-to-a-serverless-mqtt-broker-in-react.md)
 - [Serverless MQTT: Your Key to Efficient IoT Prototyping](https://github.com/emqx/blog/blob/main/en/202309/serverless-mqtt-your-key-to-efficient-iot-prototyping.md)
