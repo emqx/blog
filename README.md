@@ -262,6 +262,7 @@ EMQX is the world's most scalable open-source MQTT broker with a high performanc
 ## [EMQX Cloud](https://www.emqx.com/en/blog/category/cloud)
 The easiest way to start MQTT service. Connect your IoT devices to any cloud without the burden of maintaining infrastructure.
 
+- [One Key for All: Streamline Access Management with EMQX Cloud's SSO Integrations](https://github.com/emqx/blog/blob/main/en/202310/streamline-access-management-with-emqx-cloud-sso-integrations.md)
 - [Connecting to a Serverless MQTT Broker using Postman](https://github.com/emqx/blog/blob/main/en/202309/connecting-to-a-serverless-mqtt-broker-using-postman.md)
 - [Connecting to a Serverless MQTT Broker in React](https://github.com/emqx/blog/blob/main/en/202309/connecting-to-a-serverless-mqtt-broker-in-react.md)
 - [Serverless MQTT: Your Key to Efficient IoT Prototyping](https://github.com/emqx/blog/blob/main/en/202309/serverless-mqtt-your-key-to-efficient-iot-prototyping.md)
@@ -520,6 +521,7 @@ NanoMQ is an MQTT messaging broker + multi-protocol message bus for edge computi
 ## [eKuiper](https://www.emqx.com/en/blog/category/kuiper)
 eKuiper is an edge lightweight IoT data analytics / streaming software implemented by Golang, and it can be run at all kinds of resource constrained edge devices.
 
+- [Navigating Urban Traffic with eKuiper: A Low-Code Approach with Realtime Data Processing](https://github.com/emqx/blog/blob/main/en/202310/navigating-urban-traffic-with-ekuiper.md)
 - [eKuiper 1.11.0 Released: Adds 50+ Functions and Significantly Improves Data Transformation](https://github.com/emqx/blog/blob/main/en/202309/ekuiper-v-1-11-0-release-notes.md)
 - [MQTT Stream Processing with EMQX and eKuiper: A Quick Tutorial](https://github.com/emqx/blog/blob/main/en/202306/mqtt-stream-processing-with-emqx-and-ekuiper.md)
 - [Bridging Demanded Signals From CAN Bus to MQTT by eKuiper](https://github.com/emqx/blog/blob/main/en/202306/bridging-demanded-signals-from-can-bus-to-mqtt-by-ekuiper.md)
