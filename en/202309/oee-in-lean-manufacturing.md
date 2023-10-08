@@ -62,11 +62,11 @@ The primary objectives of OEE initiatives are to mitigate or eliminate the so-ca
 
 A fundamental element of OEE is the availability of manufacturing machines and systems. Uptime is the amount of time a machine or system is operational and contributes to productivity. Conversely, downtime occurs when a machine is intended to operate but is unable to do so, resulting in financially costly downtime.
 
-1. Unplanned Stops
+1. Planned Stops
 
    Planned events that cause machine downtime contribute to losses in OEE. These include changeovers, maintenance, inspections and cleaning. By using specialized software, these planned stops can be carefully analyzed and improved to minimize their impact, providing significant room for improvement despite their non-negative nature.
 
-2. Planned Stops
+2. Unplanned Stops
 
    When scheduled production is interrupted by unexpected events such as malfunctions, crashes, power outages, natural disasters or sickness absences, it's called an unplanned stop. To reduce these unproductive periods, accurate reason tracking, digital categorization and continuous analysis help identify process weaknesses.
 
