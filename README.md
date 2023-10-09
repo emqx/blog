@@ -345,6 +345,7 @@ The easiest way to start MQTT service. Connect your IoT devices to any cloud wit
 ## [EMQX Enterprise](https://www.emqx.com/en/blog/category/enterprise)
 The world's most scalable and reliable MQTT messaging platform to connect, move and process your data in business-critical scenarios for the IoT era.
 
+- [Elevating MQTT security with Client Certificate Authentication in EMQX and NGINX Plus](https://github.com/emqx/blog/blob/main/en/202310/elevating-mqtt-security-with-client-certificate-authentication.md)
 - [Harnessing Sticky Sessions in EMQX with NGINX Plus: Using 'Client ID' as the Magic Key](https://github.com/emqx/blog/blob/main/en/202310/harnessing-sticky-sessions-for-mqtt-load-balancing-with-nginx-plus.md)
 - [EMQX Enterprise 5.2 Released: Flow Designer, Amazon Kinesis, Azure Event Hubs](https://github.com/emqx/blog/blob/main/en/202309/emqx-enterprise-5-2-release-notes.md)
 - [Securing Your MQTT-Based Applications with NGINX Plus's Client ID Substitution and EMQX Enterprise](https://github.com/emqx/blog/blob/main/en/202309/securing-your-mqtt-based-applications-with-nginx-plus-client-id-substitution-and-emqx-enterprise.md)
