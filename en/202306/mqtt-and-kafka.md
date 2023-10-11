@@ -89,7 +89,7 @@ The MQTT + Kafka architecture is well-suited for use cases that require real-tim
 
 **Next steps:**
 
-- Discover Best Practices for Streamlining MQTT Data Integration with Kafka [Learn more about EMQX Kafka data integration](https://www.emqx.com/en/use-cases/confluent-kafka)
+- Discover Best Practices for Streamlining MQTT Data Integration with Kafka [Learn more about EMQX Kafka data integration](https://www.emqx.com/en/solutions/technology/mqtt-to-kafka)
 
 
 

@@ -673,7 +673,7 @@ MQTT 5.0は、QoSに加えて、No Local、Retain As Published、Retain Handling
    2. 1を設定: サブスクリプションが確立したときに、そのサブスクリプションがまだ存在しない場合のみ、保留メッセージを送信する。
    3. 2を設定: サブスクリプションの確立時には保留メッセージを送信しない。
 
-[MQTTのサブスクリプションオプション](https://www.emqx.com/ja/blog/an-introduction-to-subscription-options-in-mqtt)の使い方 を参照して、これらのオプションの詳細を理解してください。
+[MQTTのサブスクリプションオプション](https://www.emqx.com/en/blog/an-introduction-to-subscription-options-in-mqtt)の使い方 を参照して、これらのオプションの詳細を理解してください。
 
 ### サンプル1 - No Local:
 

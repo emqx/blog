@@ -273,7 +273,7 @@ MQTT Will Messageの詳細については、ブログ「[Use of MQTT Will Messag
 
 ここまでMQTTの基本概念と使用プロセスについて説明とデモンストレーションを行ってきました。読者の皆さんはこの記事で学んだことをもとに、MQTTプロトコルの利用を試してみてください。
 
-次にEMQが提供する[「MQTT Guide 2023: Beginner to Advanced」](https://www.emqx.com/ja/mqtt-guide)の記事シリーズをチェックして、MQTT Topic、ワイルドカード、保持メッセージ、Last-Will、その他の機能について学ぶことができます。MQTTのより高度なアプリケーションを探求し、MQTTアプリケーションとサービス開発を始めましょう。
+次にEMQが提供する[「MQTT Guide 2023: Beginner to Advanced」](https://www.emqx.com/en/mqtt-guide)の記事シリーズをチェックして、MQTT Topic、ワイルドカード、保持メッセージ、Last-Will、その他の機能について学ぶことができます。MQTTのより高度なアプリケーションを探求し、MQTTアプリケーションとサービス開発を始めましょう。
 
 
 
