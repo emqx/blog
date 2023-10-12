@@ -122,7 +122,7 @@ The following articles will help you evaluate and select the best MQTT broker fo
 
 - **[Evaluation for popular online public MQTT broker](https://www.emqx.com/en/blog/popular-online-public-mqtt-brokers)**
 
-  This article sorts out some popular free online MQTT brokers, which we hope will provide a reference for your choice.
+  This article sorts out some popular [free public MQTT brokers](https://www.emqx.com/en/mqtt/public-mqtt5-broker), which we hope will provide a reference for your choice.
 
 ### MQTT Broker Benchmark Testing
 

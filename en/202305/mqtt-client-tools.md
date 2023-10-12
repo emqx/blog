@@ -205,7 +205,7 @@ MQTTX CLI is compatible with Windows, macOS, and Linux. For additional installat
 
 - **Subscribe**
 
-  Subscribe to an MQTT topic:
+  Subscribe to an [MQTT topic](https://www.emqx.com/en/blog/advanced-features-of-mqtt-topics):
 
   ```
   mqttx sub -t 'topic/#' -h 'broker.emqx.io' -p 1883
