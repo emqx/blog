@@ -74,6 +74,8 @@ Cloud platforms play a crucial role in IIoT, providing the infrastructure for da
 
 For example, a healthcare provider might use a cloud platform to store and analyze patient data, facilitating early disease detection and personalized treatment.
 
+**Learn more in our detailed guide to [IIoT platform](https://www.emqx.com/en/blog/iiot-platform-key-components-and-5-notable-solutions)**
+
 ### Data Analytics and AI
 
 Data analytics and AI are at the heart of IIoT, turning raw data into actionable insights. Data analytics involves examining, cleaning, and modeling data to discover useful information, draw conclusions, and support decision-making. AI, on the other hand, involves creating systems that can learn from data, make decisions, and improve over time.
