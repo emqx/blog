@@ -155,3 +155,9 @@ For more technical details, see our detailed three-step guide to migrating from 
 Global enterprise customers, across industries like automotive, IIoT, transportation and logistics, energy and utilities, have proven EMQX's scalability and reliability, with massive deployments of mission-critical IoT applications on GCP. As an existing Google Cloud IoT Core user, EMQX is a natural alternative with strong product capabilities, which minimizes impact on your current running systems.
 
 **[Get in touch with our IoT experts](https://www.emqx.com/en/contact)** and learn more about migrating from Google Cloud IoT Core to EMQX. We will help you start your migration and ensure you succeed.
+
+
+**Related resources:**
+
+- [Azure IoT Hub: 4 Key Features, Use Cases, and How to Get Started](https://www.emqx.com/en/blog/azure-iot-hub-4-key-features-use-cases-and-how-to-get-started)
+- [AWS MQTT: Managing IoT Communication in AWS (with Tutorial)](https://www.emqx.com/en/blog/aws-mqtt-managing-iot-communication-in-aws)

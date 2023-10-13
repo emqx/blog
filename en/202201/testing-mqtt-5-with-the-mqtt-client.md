@@ -1,4 +1,4 @@
-Recently, the cross-platform MQTT 5.0 desktop test client MQTTX, which is open-sourced by EMQ, [released the latest version of v1.7.0](https://github.com/emqx/MQTTX/releases/tag/v1.7.0). MQTTX supports the rapid creation of multiple simultaneous online MQTT client connections, tests the connection, publish, and subscribe functions of MQTT/TCP, MQTT/TLS, MQTT/WebSocket as well as other MQTT protocol features.
+Recently, the cross-platform MQTT 5.0 desktop test client MQTTX, which is open-sourced by EMQ, [released the latest version of v1.7.0](https://github.com/emqx/MQTTX/releases/tag/v1.7.0). MQTTX supports the rapid creation of multiple simultaneous online [MQTT connections](https://www.emqx.com/en/blog/how-to-set-parameters-when-establishing-an-mqtt-connection), tests the connection, publish, and subscribe functions of MQTT/TCP, MQTT/TLS, MQTT/WebSocket as well as other MQTT protocol features.
 
 The newly released v1.7.0 provides more comprehensive support for MQTT 5.0 and is the desktop test client tool that supports MQTT 5.0 most worldwide so far. At the same time, many new features have been added to optimize the user experience.
 
@@ -84,7 +84,7 @@ A typical application of content type is to store MIME types. For example, text/
 
 When the payload indicator property is set to false, the byte of the message is undetermined. When the property is set to true, it means that the payload in the message body is UTF-8 encoded character data.
 
-This will help the MQTT client or MQTT Broker to parse the content of the message more effectively without deliberately judging the format or type of the payload.
+This will help the [MQTT client](https://www.emqx.com/en/blog/mqtt-client-tools) or [MQTT Broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) to parse the content of the message more effectively without deliberately judging the format or type of the payload.
 
 ### Subscription options
 

@@ -153,6 +153,7 @@ Best practice of MQTT in various clients.
 ## [MQTT Integration (Eco & Integration)](https://www.emqx.com/en/blog/category/eco-and-integration)
 Explore more with & via EMQ.
 
+- [OpenTelemetry: The Basics & Benefits for MQTT and IoT Observability](https://github.com/emqx/blog/blob/main/en/202310/open-telemetry-the-basics-and-benefits-for-mqtt-and-iot-observability.md)
 - [Build an IoT Time-Series Data Application for Industrial Energy Monitoring with MQTT and Timescale](https://github.com/emqx/blog/blob/main/en/202309/build-an-iot-time-series-data-application-for-energy-storage-with-mqtt-and-timescale.md)
 - [AWS MQTT: Managing IoT Communication in AWS (with Tutorial)](https://github.com/emqx/blog/blob/main/en/202309/aws-mqtt-managing-iot-communication-in-aws.md)
 - [MQTT to ClickHouse Integration: Fueling Real-Time IoT Data Analytics](https://github.com/emqx/blog/blob/main/en/202307/mqtt-to-clickhouse-integration.md)
@@ -426,7 +427,7 @@ Build a reliable, efficient and industry-specific Internet of Vehicles platform 
 - [The Power of Unified Namespace in Modern Manufacturing](https://github.com/emqx/blog/blob/main/en/202309/the-power-of-unified-namespace-in-modern-manufacturing.md)
 - [Exploring ISA95 Standards in Manufacturing](https://github.com/emqx/blog/blob/main/en/202309/exploring-isa95-standards-in-manufacturing.md)
 - [OEE in Lean Manufacturing: Goals, Evaluation Method, and Six Big Losses](https://github.com/emqx/blog/blob/main/en/202309/oee-in-lean-manufacturing.md)
-- [10 Important KPIs for Measuring Smart Manufacturing Performace](https://github.com/emqx/blog/blob/main/en/202309/ten-important-kpis-for-measuring-smart-manufacturing-performace.md)
+- [10 Important KPIs for Measuring Smart Manufacturing Performance](https://github.com/emqx/blog/blob/main/en/202309/ten-important-kpis-for-measuring-smart-manufacturing-performace.md)
 - [Measuring Excellence: A Deep Dive into KPIs for Smart Manufacturing](https://github.com/emqx/blog/blob/main/en/202309/a-deep-dive-into-kpis-for-smart-manufacturing.md)
 - [Modern Messaging Infrastructure for Smart Manufacturing](https://github.com/emqx/blog/blob/main/en/202309/modern-messaging-infrastructure-for-smart-manufacturing.md)
 - [Bridging KNX Data to MQTT: Introduction and Hands-on Tutorial](https://github.com/emqx/blog/blob/main/en/202309/bridging-knx-data-to-mqtt-introduction-and-hands-on-tutorial.md)

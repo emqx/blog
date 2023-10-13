@@ -1,6 +1,6 @@
 ## What Is MQTTX?
 
-[MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) is a lightweight publish/subscribe messaging protocol designed for constrained devices and low-bandwidth, high-latency, or unreliable networks. It's typically used in Machine-to-Machine (M2M) or Internet of Things (IoT) applications where a small code footprint is required or network bandwidth is limited.
+[MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) is a lightweight [publish/subscribe](https://www.emqx.com/en/blog/mqtt-5-introduction-to-publish-subscribe-model) messaging protocol designed for constrained devices and low-bandwidth, high-latency, or unreliable networks. It's typically used in Machine-to-Machine (M2M) or Internet of Things (IoT) applications where a small code footprint is required or network bandwidth is limited.
 
 MQTT deployments are growing to support very large numbers of devices and connections—managing, testing, and debugging these deployments can be a complex task. MQTTX simplifies the process by providing a user-friendly, cross-platform client toolbox designed to streamline the development of MQTT-based applications.
 

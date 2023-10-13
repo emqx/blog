@@ -14,8 +14,9 @@ MQTT has emerged as one of the best IoT protocols due to its unique features and
 
 - **Lightweight:** IoT devices are often constrained in terms of processing power, memory, and energy consumption. MQTT's minimal overhead and small packet size make it ideal for these devices, as it consumes fewer resources, enabling efficient communication even with limited capabilities.
 - **Reliable:** IoT networks can experience high latency or unstable connections. MQTT's support for different QoS levels, session awareness, and persistent connections ensures reliable message delivery even in challenging conditions, making it well-suited for IoT applications.
-- **Secure communications:** Security is crucial in IoT networks as they often transmit sensitive data. MQTT supports Transport Layer Security (TLS) and Secure Sockets Layer (SSL) encryption, ensuring data confidentiality during transmission. Additionally, it provides authentication and authorization mechanisms through username/password credentials or client certificates, safeguarding access to the network and its resources.
-- **Bi-directionality:** MQTT's publish-subscribe model allows for seamless bi-directional communication between devices. Clients can both publish messages to topics and subscribe to receive messages on specific topics, enabling effective data exchange in diverse IoT ecosystems without direct coupling between devices. This model also simplifies the integration of new devices, ensuring easy scalability.
+- **Secure communications:** Security is crucial in IoT networks as they often transmit sensitive data. MQTT supports Transport Layer Security (TLS) and Secure Sockets Layer (SSL) encryption, ensuring data confidentiality during transmission. Additionally, it provides [authentication](https://www.emqx.com/en/blog/securing-mqtt-with-username-and-password-authentication) and authorization mechanisms through username/password credentials or client certificates, safeguarding access to the network and its resources.
+    > Related content: Read our guide to [MQTT security](https://www.emqx.com/en/blog/essential-things-to-know-about-mqtt-security).
+- **Bi-directionality:** [MQTT's publish-subscribe model](https://www.emqx.com/en/blog/mqtt-5-introduction-to-publish-subscribe-model) allows for seamless bi-directional communication between devices. Clients can both publish messages to topics and subscribe to receive messages on specific topics, enabling effective data exchange in diverse IoT ecosystems without direct coupling between devices. This model also simplifies the integration of new devices, ensuring easy scalability.
 - **Continuous, stateful sessions:** MQTT allows clients to maintain stateful sessions with the broker, enabling the system to remember subscriptions and undelivered messages even after disconnection. Clients can also specify a keep-alive interval during connection, which prompts the broker to periodically check the connection status. If the connection is lost, the broker stores undelivered messages (depending on the QoS level) and attempts to deliver them when the client reconnects. This feature ensures reliable communication and reduces the risk of data loss due to intermittent connectivity.
 - **Large-scale IoT device support:** IoT systems often involve a large number of devices, requiring a protocol that can handle massive-scale deployments. MQTT's lightweight nature, low bandwidth consumption, and efficient use of resources make it well-suited for large-scale IoT applications. The publish-subscribe pattern allows MQTT to scale effectively, as it decouples sender and receiver, reducing network traffic and resource usage. Furthermore, the protocol's support for different QoS levels allows customization of message delivery based on the application's requirements, ensuring optimal performance in various scenarios.
 - **Language support:** IoT systems often include devices and applications developed using various programming languages. MQTT's broad language support enables easy integration with multiple platforms and technologies, fostering seamless communication and interoperability in diverse IoT ecosystems.
@@ -253,13 +254,13 @@ For more details on Clean Session, please check the blog [MQTT Persistent Sessio
 
 #### Last Will
 
-When the MQTT client makes a CONNECT request to the server, it can set whether to send the flag of Will Message , as well as the Topic and Payload.
+When the MQTT client makes a CONNECT request to the server, it can set whether to send the flag of Will Message, as well as the Topic and [Payload](https://www.emqx.com/en/blog/mqtt5-new-features-payload-format-indicator-and-content-type).
 
 When the MQTT client is abnormally offline (the DISCONNECT message is not sent to the server before the client disconnects), the MQTT server will publish a will message.
 
 As follows, we create a connection named `Last Will`.
 
-- To see the effect quickly, we set Keep Alive to 5 seconds.
+- To see the effect quickly, we set [Keep Alive](https://www.emqx.com/en/blog/mqtt-keep-alive) to 5 seconds.
 - Set Last-Will Topic to `last_will`.
 - Set Last-Will QoS to `1`.
 - Set Last-Will Retain to `true`.
