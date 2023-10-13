@@ -52,6 +52,8 @@ Challenges:
 - **Infrastructure investment**: Implementing V2X technology on a large scale requires significant investment in infrastructure, such as updating traffic signals, deploying roadside units, and integrating sensor systems. This can be a barrier to adoption, particularly for cash-strapped municipalities and transportation agencies.
 - **Regulatory and legal issues**: As V2X technology becomes more prevalent, it raises various regulatory and legal questions, such as liability in the event of an accident, data ownership, and the potential impact on insurance. Policymakers will need to address these issues to ensure a smooth transition to a V2X-enabled transportation system.
 
+> Related content: Read our guide to [can bus](https://www.emqx.com/en/blog/can-bus-how-it-works-pros-and-cons).
+
 ## The Future of V2X with MQTT  
 
 V2X technologies are extending IoT (Internet of Things) connectivity to the road by creating a connected ecosystem of vehicles, infrastructure, pedestrians, and networks, transforming the way we travel. This interconnected system relies on the exchange of data in real-time to improve traffic efficiency, enhance safety, and enable advanced driver-assistance systems (ADAS) and autonomous driving.
@@ -61,6 +63,8 @@ As vehicles become more sophisticated and more roadside infrastructure equipment
 To facilitate the high-speed and reliable data transfer required for V2X, advanced communication protocols and network technologies are essential. The MQTT (Message Queuing Telemetry Transport) protocol is a key enabler that can help overcome this challenge.
 
 [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) is a lightweight, open-source, and publish-subscribe messaging protocol designed for constrained devices and low-bandwidth, high-latency, or unreliable networks. It is particularly well-suited for IoT applications, including connected vehicles, due to its efficient and reliable communication capabilities.
+
+> Related content: Read our guide to [fleet management (use case)](https://www.emqx.com/en/blog/how-emqx-revolutionizes-logistics-fleet-management).
 
 **MQTT has several features that make it an attractive choice for [connected cars](https://www.emqx.com/en/blog/connected-cars-and-automotive-connectivity-all-you-need-to-know) and connected roadside devices**:
 
