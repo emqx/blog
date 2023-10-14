@@ -418,6 +418,7 @@ Build a reliable, efficient and industry-specific Internet of Vehicles platform 
 
 ## [Industrial IoT | Unified Namespace | Sparkplug](https://www.emqx.com/en/blog/category/industrial-iot)
 
+- [OPC UA: Features, Information Models & MQTT Synergy](https://github.com/emqx/blog/blob/main/en/202310/opc-ua-protocol.md)
 - [What Is a Smart Factory? Key Components & 4 Levels of Evolution](https://github.com/emqx/blog/blob/main/en/202310/what-is-a-smart-factory-key-components-4-levels-of-evolution.md)
 - [Bridging BACnet Data to MQTT: A Solution to Better Implementing Intelligent Building](https://github.com/emqx/blog/blob/main/en/202310/bridging-bacnet-data-to-mqtt.md)
 - [BACnet Protocol: Basic Concepts, Structure, Obejct Model Explained](https://github.com/emqx/blog/blob/main/en/202310/bacnet-protocol-basic-concepts-structure-obejct-model-explained.md)
