@@ -32,7 +32,7 @@ I want to let you know that this only applies to response packets, not to PUBLIS
 
    ![Create an MQTT connection](https://assets.emqx.com/images/784f1078a559f75b0c9ed10f30a5a218.png)
 
-3. After a successful connection, we can observe through the Wireshark packet capture tool that the Maximum Packet Size property in the CONNACK packet returned by the server is 1048576. This means that the client can only send a packet of up to 1 KB to the public MQTT server each time:
+3. After a successful connection, we can observe through the Wireshark packet capture tool that the Maximum Packet Size property in the CONNACK packet returned by the server is 1048576. This means that the client can only send a packet of up to 1 MB to the public MQTT server each time:
 
    ![Wireshark packet capture tool](https://assets.emqx.com/images/0d6c9d52f8dbb2c052119386f0bb10b3.png)
 
