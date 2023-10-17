@@ -347,6 +347,7 @@ The easiest way to start MQTT service. Connect your IoT devices to any cloud wit
 ## [EMQX Enterprise](https://www.emqx.com/en/blog/category/enterprise)
 The world's most scalable and reliable MQTT messaging platform to connect, move and process your data in business-critical scenarios for the IoT era.
 
+- [EMQX Enterprise 5.3 Released: Audit Logs, Dashboard RBAC, and SSO One-Stop Login](https://github.com/emqx/blog/blob/main/en/202310/emqx-enterprise-5-3-release-notes.md)
 - [Exploring the Extensibility of EMQX: A Deep Dive into its Plugin Mechanism in Version 5](https://github.com/emqx/blog/blob/main/en/202310/exploring-the-extensibility-of-emqx.md)
 - [Elevating MQTT security with Client Certificate Authentication in EMQX and NGINX Plus](https://github.com/emqx/blog/blob/main/en/202310/elevating-mqtt-security-with-client-certificate-authentication.md)
 - [Harnessing Sticky Sessions in EMQX with NGINX Plus: Using 'Client ID' as the Magic Key](https://github.com/emqx/blog/blob/main/en/202310/harnessing-sticky-sessions-for-mqtt-load-balancing-with-nginx-plus.md)
@@ -418,6 +419,8 @@ Build a reliable, efficient and industry-specific Internet of Vehicles platform 
 
 ## [Industrial IoT | Unified Namespace | Sparkplug](https://www.emqx.com/en/blog/category/industrial-iot)
 
+- [A Digital Transformation Journey to Smart Manufacturing](https://github.com/emqx/blog/blob/main/en/202310/a-digital-transformation-journey-to-smart-manufacturing.md)
+- [OPC UA: Features, Information Models & MQTT Synergy](https://github.com/emqx/blog/blob/main/en/202310/opc-ua-protocol.md)
 - [What Is a Smart Factory? Key Components & 4 Levels of Evolution](https://github.com/emqx/blog/blob/main/en/202310/what-is-a-smart-factory-key-components-4-levels-of-evolution.md)
 - [Bridging BACnet Data to MQTT: A Solution to Better Implementing Intelligent Building](https://github.com/emqx/blog/blob/main/en/202310/bridging-bacnet-data-to-mqtt.md)
 - [BACnet Protocol: Basic Concepts, Structure, Obejct Model Explained](https://github.com/emqx/blog/blob/main/en/202310/bacnet-protocol-basic-concepts-structure-obejct-model-explained.md)
