@@ -486,7 +486,7 @@ nonSYSMessage$.pipe(bufferTime(500)).subscribe((messages: MessageModel[]) => {
 
 ## 概要
 
-本記事では、MQTT.jsの一般的なAPIのうち、いくつかの利用機能を簡単に紹介しました。MQTTのトピック、ワイルドカード、リテインメッセージ、ラストウィルなどの機能については、「[MQTTガイド2023](https://www.emqx.com/ja/mqtt-guide)」をご覧ください：EMQが提供する一連の記事「Beginner to Advanced」をご覧ください。MQTTのより高度なアプリケーションを探求し、MQTTアプリケーションとサービス開発を始めましょう。
+本記事では、MQTT.jsの一般的なAPIのうち、いくつかの利用機能を簡単に紹介しました。MQTTのトピック、ワイルドカード、リテインメッセージ、ラストウィルなどの機能については、「[MQTTガイド2023](https://www.emqx.com/en/mqtt-guide)」をご覧ください：EMQが提供する一連の記事「Beginner to Advanced」をご覧ください。MQTTのより高度なアプリケーションを探求し、MQTTアプリケーションとサービス開発を始めましょう。
 
 実際のプロジェクトでの具体的な使用方法については、以下のリンクをご参照ください。
 
