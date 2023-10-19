@@ -31,7 +31,7 @@ Get to know the preferred protocol in IoT from beginner to master.
 - [What is the MQTT Keep Alive parameter for?](https://github.com/emqx/blog/blob/main/en/202208/mqtt-keep-alive.md)
 - [MQTT QoS design: Quality assurance for the IoV platform messaging](https://github.com/emqx/blog/blob/main/en/202204/mqtt-qos-design-for-internet-of-vehicles.md)
 - [MQTT topic design in TSP platform scenario](https://github.com/emqx/blog/blob/main/en/202204/mqtt-topic-design-for-internet-of-vehicles.md)
-- [MQTT, CoAP, or LwM2M? Which IoT protocol to choose?](https://github.com/emqx/blog/blob/main/en/202203/iot-protocols-mqtt-coap-lwm2m.md)
+- [7 IoT Protocols and Standards Worth Exploring in 2023](https://github.com/emqx/blog/blob/main/en/202203/iot-protocols-mqtt-coap-lwm2m.md)
 - [Topic Alias - MQTT 5.0 new features](https://github.com/emqx/blog/blob/main/en/202202/mqtt5-topic-alias.md)
 - [MQTT for Elixir](https://github.com/emqx/blog/blob/main/en/202201/mqtt-for-elixir.md)
 - [User Properties - MQTT 5.0 new features](https://github.com/emqx/blog/blob/main/en/202111/mqtt5-user-properties.md)
@@ -50,6 +50,7 @@ Get to know the preferred protocol in IoT from beginner to master.
 
 ## [MQTT Broker](https://www.emqx.com/en/blog/category/mqtt-broker)
 
+- [How to Install a Scalable MQTT Broker on OpenWRT](https://github.com/emqx/blog/blob/main/en/202310/how-to-install-a-scalable-mqtt-broker-on-openwrt.md)
 - [RabbitMQ vs Kafka: 5 Key Differences & Leading Use Cases](https://github.com/emqx/blog/blob/main/en/202309/rabbitmq-vs-kafka.md)
 - [Mosquitto MQTT Broker: Pros/Cons, Tutorial, and a Modern Alternative](https://github.com/emqx/blog/blob/main/en/202308/mosquitto-mqtt-broker-pros-cons-tutorial-and-modern-alternatives.md)
 - [NanoMQ: The Multi-threaded Alternative to Mosquitto for IoT Edge](https://github.com/emqx/blog/blob/main/en/202306/nanomq-the-multi-threaded-alternative-to-mosquitto-for-iot-edge.md)
@@ -80,6 +81,7 @@ Get to know the preferred protocol in IoT from beginner to master.
 
 ## [MQTT Client](https://www.emqx.com/en/blog/category/mqtt-client)
 
+- [MQTT over lwIP Practice: A Step-by-Step Tutorial](https://github.com/emqx/blog/blob/main/en/202310/mqtt-over-lwip.md)
 - [MQTTX: All-In-One Testing and Debugging for IoT Apps](https://github.com/emqx/blog/blob/main/en/202307/mqttx-all-in-one-testing-and-debugging-for-iot-apps.md)
 - [7 Best MQTT Client Tools Worth Trying in 2023](https://github.com/emqx/blog/blob/main/en/202305/mqtt-client-tools.md)
 - [Top 3 MQTT WebSocket Clients in 2023](https://github.com/emqx/blog/blob/main/en/202305/top-3-mqtt-websocket-clients-in-2023.md)
@@ -166,7 +168,7 @@ Explore more with & via EMQ.
 - [Getting Data from EMQX Cloud with InfluxDB Native Collector](https://github.com/emqx/blog/blob/main/en/202208/getting-data-from-emqx-cloud-with-influxdb-native-collector.md)
 - [How to access MQTT data with ThingsBoard](https://github.com/emqx/blog/blob/main/en/202207/how-to-use-thingsboard-to-access-mqtt-data.md)
 - [Process MQTT data with Node-RED](https://github.com/emqx/blog/blob/main/en/202205/using-node-red-to-process-mqtt-data.md)
-- [EMQX + ClickHouse implements IoT data collection and analysis](https://github.com/emqx/blog/blob/main/en/202011/emqx-and-clickhouse-for-iot-data-access-and-analysis.md)
+- [EMQX + ClickHouse Implements IoT Data Collection and Analysis](https://github.com/emqx/blog/blob/main/en/202011/emqx-and-clickhouse-for-iot-data-access-and-analysis.md)
 - [Build EMQX + InfluxDB + Grafana IoT data visualization solution in one hour](https://github.com/emqx/blog/blob/main/en/202001/build-emqx-influxdb-grafana-iot-data-visualization-solution-in-one-hour.md)
 - [Upload Sensor Data to MQTT Cloud Service via NodeMCU (ESP8266)](https://github.com/emqx/blog/blob/main/en/201912/upload-sensor-data-to-mqtt-cloud-service-via-nodemcu-esp8266.md)
 
@@ -230,7 +232,7 @@ EMQX is the world's most scalable open-source MQTT broker with a high performanc
 - [We’re gearing for community - EMQX project newsletter 202102](https://github.com/emqx/blog/blob/main/en/202103/emqx-project-newsletter-202102.md)
 - [EMQX project newsletter 202101](https://github.com/emqx/blog/blob/main/en/202102/emqx-project-newsletter-202101.md)
 - [Build an EMQX cluster based on HAProxy](https://github.com/emqx/blog/blob/main/en/202101/emqx-haproxy.md)
-- [EMQX + ClickHouse implements IoT data collection and analysis](https://github.com/emqx/blog/blob/main/en/202011/emqx-and-clickhouse-for-iot-data-access-and-analysis.md)
+- [EMQX + ClickHouse Implements IoT Data Collection and Analysis](https://github.com/emqx/blog/blob/main/en/202011/emqx-and-clickhouse-for-iot-data-access-and-analysis.md)
 - [The converged application of EMQX + CNN in AIoT](https://github.com/emqx/blog/blob/main/en/202010/emqx-and-1d-cnn-in-aiot.md)
 - [The configuration guide of EMQX Rate Limit](https://github.com/emqx/blog/blob/main/en/202007/emqx_rate_limit.md)
 - [Enable two-way SSL/TLS for EMQX](https://github.com/emqx/blog/blob/main/en/202007/enable-two-way-ssl-for-emqx.md)
@@ -347,6 +349,7 @@ The easiest way to start MQTT service. Connect your IoT devices to any cloud wit
 ## [EMQX Enterprise](https://www.emqx.com/en/blog/category/enterprise)
 The world's most scalable and reliable MQTT messaging platform to connect, move and process your data in business-critical scenarios for the IoT era.
 
+- [Smart Ship: Sailing into a New Era with MQTT and EMQX](https://github.com/emqx/blog/blob/main/en/202310/smart-ship-sailing-into-a-new-era-with-mqtt-and-emqx.md)
 - [EMQX Enterprise 5.3 Released: Audit Logs, Dashboard RBAC, and SSO One-Stop Login](https://github.com/emqx/blog/blob/main/en/202310/emqx-enterprise-5-3-release-notes.md)
 - [Exploring the Extensibility of EMQX: A Deep Dive into its Plugin Mechanism in Version 5](https://github.com/emqx/blog/blob/main/en/202310/exploring-the-extensibility-of-emqx.md)
 - [Elevating MQTT security with Client Certificate Authentication in EMQX and NGINX Plus](https://github.com/emqx/blog/blob/main/en/202310/elevating-mqtt-security-with-client-certificate-authentication.md)
@@ -419,6 +422,7 @@ Build a reliable, efficient and industry-specific Internet of Vehicles platform 
 
 ## [Industrial IoT | Unified Namespace | Sparkplug](https://www.emqx.com/en/blog/category/industrial-iot)
 
+- [First Step to a Smart Factory: Accessing the OT and IT Data Sources with EMQX and Neuron](https://github.com/emqx/blog/blob/main/en/202310/first-step-to-a-smart-factory.md)
 - [IIoT vs. IoT: Examples and 5 Key Differences](https://github.com/emqx/blog/blob/main/en/202310/iiot-vs-iot-examples-and-5-key-differences.md)
 - [A Digital Transformation Journey to Smart Manufacturing](https://github.com/emqx/blog/blob/main/en/202310/a-digital-transformation-journey-to-smart-manufacturing.md)
 - [OPC UA: Features, Information Models & MQTT Synergy](https://github.com/emqx/blog/blob/main/en/202310/opc-ua-protocol.md)
@@ -515,6 +519,7 @@ IoT edge industrial protocol gateway software, which supports one-stop access to
 ## [NanoMQ - Lightweight MQTT broker for IoT Edge](https://www.emqx.com/en/blog/category/nanomq)
 NanoMQ is an MQTT messaging broker + multi-protocol message bus for edge computing. It supports the MQTT protocol and other commonly-used edge bus protocols such as ZeroMQ and Nanomsg, and integrates broker and brokerless message modes to facilitate the creation of one-stop edge data bus applications.
 
+- [How to Install a Scalable MQTT Broker on OpenWRT](https://github.com/emqx/blog/blob/main/en/202310/how-to-install-a-scalable-mqtt-broker-on-openwrt.md)
 - [NanoMQ: The Multi-threaded Alternative to Mosquitto for IoT Edge](https://github.com/emqx/blog/blob/main/en/202306/nanomq-the-multi-threaded-alternative-to-mosquitto-for-iot-edge.md)
 - [EMQX ECP Empowers IoT Edge Computing with NanoMQ Integration](https://github.com/emqx/blog/blob/main/en/202305/emqx-ecp-empowers-iot-edge-computing-with-nanomq-integration.md)
 - [Open MQTT Benchmarking Comparison: EMQX vs NanoMQ](https://github.com/emqx/blog/blob/main/en/202304/open-mqtt-benchmarking-comparison-emqx-vs-nanomq.md)
