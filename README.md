@@ -80,6 +80,7 @@ Get to know the preferred protocol in IoT from beginner to master.
 
 ## [MQTT Client](https://www.emqx.com/en/blog/category/mqtt-client)
 
+- [MQTT over lwIP Practice: A Step-by-Step Tutorial](https://github.com/emqx/blog/blob/main/en/202310/mqtt-over-lwip.md)
 - [MQTTX: All-In-One Testing and Debugging for IoT Apps](https://github.com/emqx/blog/blob/main/en/202307/mqttx-all-in-one-testing-and-debugging-for-iot-apps.md)
 - [7 Best MQTT Client Tools Worth Trying in 2023](https://github.com/emqx/blog/blob/main/en/202305/mqtt-client-tools.md)
 - [Top 3 MQTT WebSocket Clients in 2023](https://github.com/emqx/blog/blob/main/en/202305/top-3-mqtt-websocket-clients-in-2023.md)
@@ -419,6 +420,7 @@ Build a reliable, efficient and industry-specific Internet of Vehicles platform 
 
 ## [Industrial IoT | Unified Namespace | Sparkplug](https://www.emqx.com/en/blog/category/industrial-iot)
 
+- [First Step to a Smart Factory: Accessing the OT and IT Data Sources with EMQX and Neuron](https://github.com/emqx/blog/blob/main/en/202310/first-step-to-a-smart-factory.md)
 - [IIoT vs. IoT: Examples and 5 Key Differences](https://github.com/emqx/blog/blob/main/en/202310/iiot-vs-iot-examples-and-5-key-differences.md)
 - [A Digital Transformation Journey to Smart Manufacturing](https://github.com/emqx/blog/blob/main/en/202310/a-digital-transformation-journey-to-smart-manufacturing.md)
 - [OPC UA: Features, Information Models & MQTT Synergy](https://github.com/emqx/blog/blob/main/en/202310/opc-ua-protocol.md)
