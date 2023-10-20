@@ -50,7 +50,7 @@ npm install mqtt -g
 
 ## Preparing an MQTT Broker
 
-Before proceeding, ensure that you have an MQTT broker to communicate and test with. There are several options for obtaining an MQTT broker:
+Before proceeding, ensure that you have an [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) to communicate and test with. There are several options for obtaining an MQTT broker:
 
 - **Private deployment**
 

@@ -53,7 +53,7 @@ Get to know the preferred protocol in IoT from beginner to master.
 - [How to Install a Scalable MQTT Broker on OpenWRT](https://github.com/emqx/blog/blob/main/en/202310/how-to-install-a-scalable-mqtt-broker-on-openwrt.md)
 - [RabbitMQ vs Kafka: 5 Key Differences & Leading Use Cases](https://github.com/emqx/blog/blob/main/en/202309/rabbitmq-vs-kafka.md)
 - [Mosquitto MQTT Broker: Pros/Cons, Tutorial, and a Modern Alternative](https://github.com/emqx/blog/blob/main/en/202308/mosquitto-mqtt-broker-pros-cons-tutorial-and-modern-alternatives.md)
-- [NanoMQ: The Multi-threaded Alternative to Mosquitto for IoT Edge](https://github.com/emqx/blog/blob/main/en/202306/nanomq-the-multi-threaded-alternative-to-mosquitto-for-iot-edge.md)
+- [The Best Mosquitto Alternative: An In-Depth Look at NanoMQ for IoT Edge](https://github.com/emqx/blog/blob/main/en/202306/nanomq-the-multi-threaded-alternative-to-mosquitto-for-iot-edge.md)
 - [Connecting to Serverless MQTT Broker in Node.js](https://github.com/emqx/blog/blob/main/en/202305/connecting-to-serverless-mqtt-broker-in-nodejs.md)
 - [EMQX MQTT Broker Troubleshooting: Connection Issues](https://github.com/emqx/blog/blob/main/en/202305/emqx-mqtt-broker-connection-troubleshooting.md)
 - [Exploring the Basics of EMQX MQTT Broker Clustering: An Introduction](https://github.com/emqx/blog/blob/main/en/202305/mqtt-broker-clustering.md)
@@ -176,6 +176,7 @@ Explore more with & via EMQ.
 ## [EMQX Open Source | Broker](https://www.emqx.com/en/blog/category/emqx)
 EMQX is the world's most scalable open-source MQTT broker with a high performance that connects 100M+ IoT devices in 1 cluster, while maintaining 1M message per second throughput and sub-millisecond latency.
 
+- [Explore the Next-Gen IoT Protocol with EMQ, Intel, and Students from Global Universities](https://github.com/emqx/blog/blob/main/en/202310/emq-intel-and-sjtu-explore-mqtt-over-quic-together.md)
 - [Exploring the Extensibility of EMQX: A Deep Dive into its Plugin Mechanism in Version 5](https://github.com/emqx/blog/blob/main/en/202310/exploring-the-extensibility-of-emqx.md)
 - [Home Assistant and MQTT: 4 Things You Could Build](https://github.com/emqx/blog/blob/main/en/202309/home-assistant-and-mqtt-4-things-you-could-build.md)
 - [EMQX MQTT Broker Troubleshooting: Publish-Subscribe Issues](https://github.com/emqx/blog/blob/main/en/202308/emqx-mqtt-broker-troubleshooting-publish-subscribe-issues.md)
@@ -425,7 +426,7 @@ Build a reliable, efficient and industry-specific Internet of Vehicles platform 
 - [First Step to a Smart Factory: Accessing the OT and IT Data Sources with EMQX and Neuron](https://github.com/emqx/blog/blob/main/en/202310/first-step-to-a-smart-factory.md)
 - [IIoT vs. IoT: Examples and 5 Key Differences](https://github.com/emqx/blog/blob/main/en/202310/iiot-vs-iot-examples-and-5-key-differences.md)
 - [A Digital Transformation Journey to Smart Manufacturing](https://github.com/emqx/blog/blob/main/en/202310/a-digital-transformation-journey-to-smart-manufacturing.md)
-- [OPC UA: Features, Information Models & MQTT Synergy](https://github.com/emqx/blog/blob/main/en/202310/opc-ua-protocol.md)
+- [OPC UA Protocol: Features, Information Models & MQTT Synergy](https://github.com/emqx/blog/blob/main/en/202310/opc-ua-protocol.md)
 - [What Is a Smart Factory? Key Components & 4 Levels of Evolution](https://github.com/emqx/blog/blob/main/en/202310/what-is-a-smart-factory-key-components-4-levels-of-evolution.md)
 - [Bridging BACnet Data to MQTT: A Solution to Better Implementing Intelligent Building](https://github.com/emqx/blog/blob/main/en/202310/bridging-bacnet-data-to-mqtt.md)
 - [BACnet Protocol: Basic Concepts, Structure, Obejct Model Explained](https://github.com/emqx/blog/blob/main/en/202310/bacnet-protocol-basic-concepts-structure-obejct-model-explained.md)
@@ -520,7 +521,7 @@ IoT edge industrial protocol gateway software, which supports one-stop access to
 NanoMQ is an MQTT messaging broker + multi-protocol message bus for edge computing. It supports the MQTT protocol and other commonly-used edge bus protocols such as ZeroMQ and Nanomsg, and integrates broker and brokerless message modes to facilitate the creation of one-stop edge data bus applications.
 
 - [How to Install a Scalable MQTT Broker on OpenWRT](https://github.com/emqx/blog/blob/main/en/202310/how-to-install-a-scalable-mqtt-broker-on-openwrt.md)
-- [NanoMQ: The Multi-threaded Alternative to Mosquitto for IoT Edge](https://github.com/emqx/blog/blob/main/en/202306/nanomq-the-multi-threaded-alternative-to-mosquitto-for-iot-edge.md)
+- [The Best Mosquitto Alternative: An In-Depth Look at NanoMQ for IoT Edge](https://github.com/emqx/blog/blob/main/en/202306/nanomq-the-multi-threaded-alternative-to-mosquitto-for-iot-edge.md)
 - [EMQX ECP Empowers IoT Edge Computing with NanoMQ Integration](https://github.com/emqx/blog/blob/main/en/202305/emqx-ecp-empowers-iot-edge-computing-with-nanomq-integration.md)
 - [Open MQTT Benchmarking Comparison: EMQX vs NanoMQ](https://github.com/emqx/blog/blob/main/en/202304/open-mqtt-benchmarking-comparison-emqx-vs-nanomq.md)
 - [Open MQTT Benchmarking Comparison: Mosquitto vs NanoMQ](https://github.com/emqx/blog/blob/main/en/202304/open-mqtt-benchmarking-comparison-mosquitto-vs-nanomq.md)

@@ -4,7 +4,7 @@
 
 Node.js is widely used in IoT due to its event-driven architecture and real-time data handling. It can easily connect devices, servers, and APIs. By combining Node.js with MQTT, developers can build scalable and secure IoT applications to communicate with devices in real-time, exchange information, and perform complex data analytics.
 
-This article provides a comprehensive guide on using MQTT in a Node.js project for seamless communication between the client and an [MQTT broker](https://www.emqx.io/). You will learn how to establish a connection, subscribe and unsubscribe to topics, publish messages, and receive messages in real-time. This guide will equip you with the skills to leverage MQTT to build scalable and efficient IoT applications.
+This article provides a comprehensive guide on using MQTT in a Node.js project for seamless communication between the client and an [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison). You will learn how to establish a connection, subscribe and unsubscribe to topics, publish messages, and receive messages in real-time. This guide will equip you with the skills to leverage MQTT to build scalable and efficient IoT applications.
 
 
 
@@ -22,7 +22,7 @@ v16.20.0
 
 ### Install the MQTT.js
 
-MQTT.js is a client library for the MQTT protocol, written in JavaScript for node.js and the browser. Due to the single-thread feature of JavaScript, MQTT.js is a fully asynchronous MQTT client. It is currently the most widely used [MQTT client library](https://www.emqx.com/en/mqtt-client-sdk) in the JavaScript ecosystem.
+MQTT.js is a client library for the MQTT protocol, written in JavaScript for node.js and the browser. Due to the single-thread feature of JavaScript, MQTT.js is a fully asynchronous [MQTT client](https://www.emqx.com/en/blog/mqtt-client-tools). It is currently the most widely used [MQTT client library](https://www.emqx.com/en/mqtt-client-sdk) in the JavaScript ecosystem.
 
 We can use NPM or Yarn to install MQTT.js.
 

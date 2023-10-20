@@ -20,7 +20,7 @@ The simplicity of MQTT lies in its minimal protocol commands. It has only a hand
 
 ### MQTT Transport and Framing
 
-MQTT can use TCP, TLS, WebSocket, or [QUIC](https://www.emqx.com/en/blog/quic-protocol-the-features-use-cases-and-impact-for-iot-iov) as its transport layer, creating connections, establishing sessions, and transmitting messages reliably between clients and brokers.
+MQTT can use TCP, TLS, [WebSocket](https://www.emqx.com/en/blog/connect-to-mqtt-broker-with-websocket), or [QUIC](https://www.emqx.com/en/blog/quic-protocol-the-features-use-cases-and-impact-for-iot-iov) as its transport layer, creating connections, establishing sessions, and transmitting messages reliably between clients and brokers.
 
 MQTT frames consist of a 2-byte fixed header, a variable header, and a variable-length payload. The header contains information such as the packet type, quality of service level, remaining length, packet ID, and properties. The binary payload contains the actual message being transmitted.
 
@@ -164,7 +164,7 @@ EMQX provides the following capabilities to support large scale MQTT connectivit
 - **Fast and Reliable Data Delivery:** It offers various message Quality of Service (QoS) levels, along with features like persistent sessions and offline message queues, ensuring fast and reliable data delivery even in unreliable networks.
 - **High Performance and Low Latency:** A cluster of nodes can deliver millions of messages with a latency as low as 1 millisecond, providing the foundational capability support for latency-sensitive IoT business scenarios.
 - **Low-code Real-time Data Processing:** EMQX provides a built-in powerful rule engine based on SQL statements, allowing for one-stop IoT data extraction, filtering, and transformation without the need for writing code.
-- **One-Stop Enterprise System Integration:** With the rule engine and data bridging provided by EMQX, you can easily configure IoT data integration with over 40 enterprise systems such as Kafka, SQL, NoSQL, and time-series databases through a visual interface, without the need for coding.
+- **One-Stop Enterprise System Integration:** With the rule engine and data bridging provided by EMQX, you can easily configure IoT data integration with over 40 enterprise systems such as Kafka, SQL, NoSQL, and time-series databases through a visual interface, without the need for coding. *Related content: Read our guide to [MQTT Kafka](https://www.emqx.com/en/blog/mqtt-and-kafka)*.
 
 EMQX effectively addresses the challenges of handling MQTT at scale, making it suitable for large-scale IoT deployments and applications where millions of devices need to connect and communicate efficiently.
 
