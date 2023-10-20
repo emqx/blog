@@ -28,7 +28,7 @@ Next, we will provide a comprehensive guide to using MQTT over WebSocket.
 
 ## Prepare an MQTT Broker
 
-Before proceeding, please ensure you have an MQTT broker to communicate and test with. There are several options available for obtaining an MQTT broker:
+Before proceeding, please ensure you have an [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) to communicate and test with. There are several options available for obtaining an MQTT broker:
 
 - **Private deployment**
 
