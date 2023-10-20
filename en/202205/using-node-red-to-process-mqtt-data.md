@@ -2,7 +2,7 @@ Node-RED is a programming tool for wiring together hardware devices, APIs and on
 
 It provides a browser-based editor that makes it easy to wire together flows using the wide range of nodes in the palette that can be deployed to its runtime in a single click. 
 
-Besides some basic network service application nodes, such as HTTP and WebSocket, Node-RED provides access support to the [MQTT](https://mqtt.org/) protocol. Currently, it provides an MQTT subscription node and a release node. The subscription node is used for data input, while the release node can be used for data output.
+Besides some basic network service application nodes, such as HTTP and WebSocket, Node-RED provides access support to the [MQTT protocol](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt). Currently, it provides an MQTT subscription node and a release node. The subscription node is used for data input, while the release node can be used for data output.
 
 This article will introduce the complete operation process for accessing the MQTT server by using Node-RED, filtering and processing the MQTT data before sending it to the [MQTT broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker). Users may quickly understand how to use Node-RED for simple stream processing of MQTT data.
 
@@ -26,7 +26,7 @@ docker run -it -p 1880:1880 --name mynodered nodered/node-red
 
 If you use npm for global installation, and after you are prompted that the installation is successful, you can start the Node-RED immediately by simply running the node-red command globally. 
 
-Whether Docker or npm is used, after successful startup, we only need to open the browser and enter the current address plus 1880 port number to open the browser editor page of Node-RED. For example, if running locally, open the browser and enter [http://127.0.0.1:1880](http://127.0.0.1:1880/). When you see the page shown in the following figure, it means that Node-RED has been successfully started:
+Whether Docker or npm is used, after successful startup, we only need to open the browser and enter the current address plus 1880 port number to open the browser editor page of Node-RED. For example, if running locally, open the browser and enter `http://127.0.0.1:1880`. When you see the page shown in the following figure, it means that Node-RED has been successfully started:
 
 ![Node-RED](https://assets.emqx.com/images/cd66e004a35d9588c000d3f7e21ab5c2.png)
 

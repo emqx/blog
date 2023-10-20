@@ -2,7 +2,7 @@
 
 **MQTT is a lightweight IoT message transfer protocol** based on publish/subscribe mode, providing one-to-many message distribution and application decoupling with small transmission consumption, which can minimize network traffic. At the same time, it can meet various delivery requirements thanks to its three QoS (Quality of Service) levels for messages.
 
-This article will introduce how to use MQTT protocol in Angular projects to connect, subscribe, send/receive messages, unsubscribe and perform other functions between clients and MQTT Broker.
+This article will introduce how to use [MQTT protocol](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) in Angular projects to connect, subscribe, send/receive messages, unsubscribe and perform other functions between clients and [MQTT Broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison).
 
 ## Project Initialization
 
@@ -31,7 +31,7 @@ yarn add ngx-mqtt
 
 ### Connecting to MQTT Broker
 
-We use the [public MQTT Broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker) provided by EMQX in this article, which is built on top of the [MQTT cloud service - EMQX Cloud](https://www.emqx.com/en/cloud). EMQX is a large-scale distributed IoT MQTT message broker that can efficiently and reliably connect massive IoT devices, process and distribute messages and event flow data in real-time, and help customers build business-critical IoT platforms and applications.
+We use the [free public MQTT Broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker) provided by EMQX in this article, which is built on top of the [MQTT cloud service - EMQX Cloud](https://www.emqx.com/en/cloud). EMQX is a large-scale distributed IoT MQTT message broker that can efficiently and reliably connect massive IoT devices, process and distribute messages and event flow data in real-time, and help customers build business-critical IoT platforms and applications.
 
 <section
   class="is-hidden-touch my-32 is-flex is-align-items-center"

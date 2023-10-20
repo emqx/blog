@@ -1,4 +1,4 @@
-[MQTT](https://mqtt.org/) is an OASIS standard messaging protocol for the Internet of Things (IoT). It is designed as an extremely lightweight publish/subscribe messaging transport that is ideal for connecting remote devices with a small code footprint and minimal network bandwidth. MQTT today is used in a wide variety of industries, such as automotive, manufacturing, telecommunications, oil and gas, etc.
+[MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) is an OASIS standard messaging protocol for the Internet of Things (IoT). It is designed as an extremely lightweight publish/subscribe messaging transport that is ideal for connecting remote devices with a small code footprint and minimal network bandwidth. MQTT today is used in a wide variety of industries, such as automotive, manufacturing, telecommunications, oil and gas, etc.
 
 This article introduces how to use MQTT in the Java project to realize the functions of connecting, subscribing, unsubscribing, publishing, and receiving messages between the client and the broker.
 
@@ -32,7 +32,7 @@ Add the following dependencies to the `pom.xml` file.
 
 ### MQTT Broker
 
-This article will use the [public MQTT broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker) created based on [EMQX Cloud](https://www.emqx.com/en/cloud). The server access information is as follows:
+This article will use the [free public MQTT broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker) created based on [EMQX Cloud](https://www.emqx.com/en/cloud). The server access information is as follows:
 
 - Broker: **broker.emqx.io**
 - TCP Port: **1883**
@@ -71,7 +71,7 @@ String password = "public";
 String clientid = "publish_client";
 ```
 
-Then create an MQTT client and connect to the broker.
+Then create an [MQTT client](https://www.emqx.com/en/blog/mqtt-client-tools) and connect to the broker.
 
 ```
 MqttClient client = new MqttClient(broker, clientid, new MemoryPersistence());
@@ -345,3 +345,9 @@ Next, you can check out [The Easy-to-understand Guide to MQTT Protocol](https://
     </div>
     <a href="https://accounts.emqx.com/signup?continue=https://cloud-intl.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">Get Started →</a>
 </section>
+
+
+**Related resources:**
+- [A Quickstart Guide to Using MQTT over WebSocket](https://www.emqx.com/en/blog/connect-to-mqtt-broker-with-websocket)
+- [MQTT on ESP32: A Beginner's Guide](https://www.emqx.com/en/blog/esp32-connects-to-the-free-public-mqtt-broker)
+- [How to Use MQTT in Python with Paho Client](https://www.emqx.com/en/blog/how-to-use-mqtt-in-python)

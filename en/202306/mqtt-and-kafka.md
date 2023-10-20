@@ -4,7 +4,7 @@
 
 Kafka and MQTT are complementary technologies that enable end-to-end integration of IoT data. By integrating Kafka and MQTT, businesses can establish a robust IoT architecture that guarantees reliable connectivity and efficient data exchange between devices and IoT platforms. At the same time, it also facilitates high throughput real-time data processing and analysis throughout the entire IoT system.
 
-There are many IoT use cases where integrating MQTT and Kafka provides significant value, such as [Connected Cars](https://www.emqx.com/en/blog/connected-cars-and-automotive-connectivity-all-you-need-to-know) and Telematics, Smart City Infrastructure, Industrial IoT Monitoring, Logistics Management, etc. In this blog post, we will explore the seamless integration of MQTT data with Kafka for the IoT Application.
+There are many IoT use cases where integrating MQTT and Kafka provides significant value, such as [Connected Cars](https://www.emqx.com/en/blog/connected-cars-and-automotive-connectivity-all-you-need-to-know) and Telematics, Smart City Infrastructure, [Industrial IoT](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges) Monitoring, Logistics Management, etc. In this blog post, we will explore the seamless integration of MQTT data with Kafka for the IoT Application.
 
 ## Which IoT Challenges Can Kafka and MQTT Address?
 
@@ -50,7 +50,7 @@ Currently, this solution is limited to supporting MQTT version 3.1.1, and the pe
 
 ### Custom Development with Open-Source MQTT Broker and Kafka
 
-With the use of an open-source MQTT Broker, users have the flexibility to develop their own bridge service that connects MQTT and Kafka. This bridge service can be built using an MQTT client to subscribe to data from the MQTT Broker and utilize the Kafka producer API to publish the data into Kafka.
+With the use of an [open-source MQTT Broker](https://www.emqx.com/en/blog/a-comprehensive-comparison-of-open-source-mqtt-brokers-in-2023), users have the flexibility to develop their own bridge service that connects MQTT and Kafka. This bridge service can be built using an MQTT client to subscribe to data from the MQTT Broker and utilize the Kafka producer API to publish the data into Kafka.
 
 This solution requires development and maintenance efforts, as well as significant work to ensure reliability and scalability.
 

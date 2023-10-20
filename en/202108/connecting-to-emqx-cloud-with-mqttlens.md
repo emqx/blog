@@ -1,12 +1,11 @@
-This article will take [MQTTLens](https://chrome.google.com/webstore/detail/mqttlens/hemojaaeigabkbcookmlgmdigohjobjm/related?hl=zh_cn) as [MQTT client](https://www.emqx.com/en/blog/introduction-to-the-commonly-used-mqtt-client-library) test tool to connect to [MQTT Cloud Service - EMQX Cloud](https://www.emqx.com/en/cloud). Through this article, you will be able to quickly understand the basic usage of MQTTLens and the basic concepts and usage of the [MQTT protocol](https://www.emqx.com/en/mqtt-guide).
-
+This article will take [MQTTLens](https://chrome.google.com/webstore/detail/mqttlens/hemojaaeigabkbcookmlgmdigohjobjm/related?hl=zh_cn) as [MQTT client](https://www.emqx.com/en/blog/mqtt-client-tools) test tool to connect to [MQTT Cloud Service - EMQX Cloud](https://www.emqx.com/en/cloud). Through this article, you will be able to quickly understand the basic usage of MQTTLens and the basic concepts and usage of the [MQTT protocol](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt).
 
 
 ## Introduction to MQTTLens
 
 [MQTTLens](https://chrome.google.com/webstore/detail/mqttlens/hemojaaeigabkbcookmlgmdigohjobjm/related?hl=zh_cn) is a Chrome extension tool that can be installed through the Chrome On-line App Store. The MQTTLens interface is very simple and provides basic publish/subscribe functions.
 
-MQTTLens is simple enough. With the help of Chrome’s powerful cross-platform features, it provides the basic [MQTT](https://www.emqx.com/en/mqtt-guide) and [MQTT over WebSocket](https://www.emqx.com/en/blog/connect-to-mqtt-broker-with-websocket) connection functions, which can quickly meet the needs of entry and exploration. 
+MQTTLens is simple enough. With the help of Chrome’s powerful cross-platform features, it provides the basic [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) and [MQTT over WebSocket](https://www.emqx.com/en/blog/connect-to-mqtt-broker-with-websocket) connection functions, which can quickly meet the needs of entry and exploration. 
 
 MQTTLens fully supports the following functions:
 
@@ -22,7 +21,7 @@ MQTTLens fully supports the following functions:
 
 In the era of the IoT, EMQX Cloud can help users quickly build industry applications for the IoT area and easily realize the collection, transmission, calculation, and persistence of IoT data.
 
-This article will use [Free Public MQTT Server](https://www.emqx.com/en/mqtt/public-mqtt5-broker) provided by EMQX Cloud as the MQTT server address for this test. The server access information is as follows:
+This article will use [Free Public MQTT Broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker) provided by EMQX Cloud as the MQTT server address for this test. The server access information is as follows:
 
 - Broker: **broker.emqx.io**
 - TCP Port: **1883**
