@@ -423,6 +423,7 @@ Build a reliable, efficient and industry-specific Internet of Vehicles platform 
 
 ## [Industrial IoT | Unified Namespace | Sparkplug](https://www.emqx.com/en/blog/category/industrial-iot)
 
+- [Omron FINS Protocol: The Basics & Its Benefits of Bridging to MQTT](https://github.com/emqx/blog/blob/main/en/202310/omron-fins-protocol.md)
 - [First Step to a Smart Factory: Accessing the OT and IT Data Sources with EMQX and Neuron](https://github.com/emqx/blog/blob/main/en/202310/first-step-to-a-smart-factory.md)
 - [IIoT vs. IoT: Examples and 5 Key Differences](https://github.com/emqx/blog/blob/main/en/202310/iiot-vs-iot-examples-and-5-key-differences.md)
 - [A Digital Transformation Journey to Smart Manufacturing](https://github.com/emqx/blog/blob/main/en/202310/a-digital-transformation-journey-to-smart-manufacturing.md)
