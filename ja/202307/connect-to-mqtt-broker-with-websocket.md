@@ -289,7 +289,7 @@ EMQX では、MQTT over WebSocket のデフォルト・パスは `/mqtt` です�
 
 このプロジェクトの完全なコードは、このGitHubリンクにあります：[MQTT-Client-Examples/mqtt-client-WebSocket at master - emqx/MQTT-Client-Examples](https://github.com/emqx/MQTT-Client-Examples/tree/master/mqtt-client-WebSocket).
 
-MQTTプロトコルの機能についてもっと知りたい、MQTTの高度なアプリケーションを探求したい、MQTTアプリケーションやサービス開発を始めたいという方は、MQTTガイドの連載記事をご覧ください：EMQが提供する「[Beginner to Advanced](https://www.emqx.com/ja/mqtt-guide)」をご覧ください。
+MQTTプロトコルの機能についてもっと知りたい、MQTTの高度なアプリケーションを探求したい、MQTTアプリケーションやサービス開発を始めたいという方は、MQTTガイドの連載記事をご覧ください：EMQが提供する「[Beginner to Advanced](https://www.emqx.com/en/mqtt-guide)」をご覧ください。
 
 ## リソース
 
