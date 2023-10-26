@@ -179,7 +179,7 @@ By combining the capabilities of EMQX as an MQTT broker with Neuron's industrial
 
 <section class="promotion">
     <div>
-        Talk to Our Expert
+        Talk to an Expert
     </div>
     <a href="https://www.emqx.com/en/contact?product=solutions" class="button is-gradient px-5">Contact Us →</a>
 </section>

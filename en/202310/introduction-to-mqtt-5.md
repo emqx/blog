@@ -110,7 +110,7 @@ We have built extensive features around our MQTT broker to help you use the prot
 
 <section class="promotion">
     <div>
-        Talk to Our Expert
+        Talk to an Expert
     </div>
     <a href="https://www.emqx.com/en/contact?product=solutions" class="button is-gradient px-5">Contact Us →</a>
 </section>

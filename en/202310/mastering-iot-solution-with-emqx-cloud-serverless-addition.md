@@ -56,7 +56,7 @@ EMQX Serverless provides the most convenient IoT cloud solution for developers a
 
 <section class="promotion">
     <div>
-        Talk to Our Expert
+        Talk to an Expert
     </div>
     <a href="https://www.emqx.com/en/contact?product=solutions" class="button is-gradient px-5">Contact Us →</a>
 </section>
