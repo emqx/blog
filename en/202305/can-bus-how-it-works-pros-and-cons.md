@@ -96,6 +96,8 @@ eKuiper is an open-source edge computing engine that can help you process and an
 -  Can parse the binary CAN frame to meaningful signals to make it possible for rule processing and trigger actions. It supports dynamic DBC file loading, so that users can flexibly change the DBC file to adapt to different CAN bus devices by themselves without restarting the engine. It also makes the DBC file private and secure, no need to share it with the development team.
 -  Can flexibly compose signals from different CAN frames to construct a complete message for applications through rules. Users can agilely change the rule to adapt to different user scenarios or requirement changes with hot reload.
 
+> Notice: Some of the features related to the CAN bus described in this document are not open source. You can experiment with these features by utilizing [ek-can](https://hub.docker.com/r/emqx/ek-can), which extends CAN bus capabilities on top of eKuiper.
+
 ## Tutorial: Local Processing for CAN BUS Data with eKuiper
 
 ### Step 1: Connect to CAN Bus

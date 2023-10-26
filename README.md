@@ -5,6 +5,7 @@
 ## [MQTT Tutorials](https://www.emqx.com/en/blog/category/mqtt-protocol)
 Get to know the preferred protocol in IoT from beginner to master.
 
+- [MQTT 5: 7 New Features and a Migration Checklist](https://github.com/emqx/blog/blob/main/en/202310/introduction-to-mqtt-5.md)
 - [Introduction to Message Expiry Interval | Exploring MQTT 5.0 Features](https://github.com/emqx/blog/blob/main/en/202309/mqtt-message-expiry-interval.md)
 - [MQTT 5.0 Packet Explained 06: AUTH](https://github.com/emqx/blog/blob/main/en/202309/mqtt-5-0-control-packets-06-auth.md)
 - [MQTT 5.0 Packet Explained 05: DISCONNECT](https://github.com/emqx/blog/blob/main/en/202309/mqtt-5-0-control-packets-05-disconnect.md)
@@ -36,7 +37,6 @@ Get to know the preferred protocol in IoT from beginner to master.
 - [MQTT for Elixir](https://github.com/emqx/blog/blob/main/en/202201/mqtt-for-elixir.md)
 - [User Properties - MQTT 5.0 new features](https://github.com/emqx/blog/blob/main/en/202111/mqtt5-user-properties.md)
 - [Enhanced authentication - MQTT 5.0 new features](https://github.com/emqx/blog/blob/main/en/202009/mqtt5-enhanced-authentication.md)
-- [Introduction to MQTT 5.0](https://github.com/emqx/blog/blob/main/en/202009/introduction-to-mqtt-5.md)
 - [Request Response - MQTT 5.0 new features](https://github.com/emqx/blog/blob/main/en/202009/mqtt5-request-response.md)
 - [Flow control - MQTT 5.0 new features](https://github.com/emqx/blog/blob/main/en/202008/mqtt5-flow-control.md)
 - [The process of publishing MQTT 5.0 message](https://github.com/emqx/blog/blob/main/en/202004/mqtt5-message-publishing-process.md)
@@ -423,6 +423,7 @@ Build a reliable, efficient and industry-specific Internet of Vehicles platform 
 
 ## [Industrial IoT | Unified Namespace | Sparkplug](https://www.emqx.com/en/blog/category/industrial-iot)
 
+- [18 Industrial IoT Applications and Why You Need Them](https://github.com/emqx/blog/blob/main/en/202310/industrial-iot-applications.md)
 - [Omron FINS Protocol: The Basics & Its Benefits of Bridging to MQTT](https://github.com/emqx/blog/blob/main/en/202310/omron-fins-protocol.md)
 - [First Step to a Smart Factory: Accessing the OT and IT Data Sources with EMQX and Neuron](https://github.com/emqx/blog/blob/main/en/202310/first-step-to-a-smart-factory.md)
 - [IIoT vs. IoT: Examples and 5 Key Differences](https://github.com/emqx/blog/blob/main/en/202310/iiot-vs-iot-examples-and-5-key-differences.md)
