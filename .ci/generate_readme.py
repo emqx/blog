@@ -1,3 +1,4 @@
+import copy
 import os
 import sys
 
@@ -6,8 +7,8 @@ import requests
 base_path = sys.argv[1]
 
 if __name__ == '__main__':
-    langs = ['en']
-    category_sort = {
+    langs = ['en', 'ja', 'zh']
+    category_dict = {
         'mqtt protocol': {'label': 'MQTT Tutorials', 'description': 'Get to know the preferred protocol in IoT from beginner to master.'},
         'mqtt broker': {'label': 'MQTT Broker', 'description': ''},
         'mqtt client': {'label': 'MQTT Client', 'description': ''},
@@ -31,17 +32,23 @@ if __name__ == '__main__':
     }
 
     for lang in langs:
+        category_sort = copy.deepcopy(category_dict)
         for k, v in category_sort.items():
             category_sort[k]['url'] = f'https://www.emqx.com/{lang}/blog/category/{k.replace(" ", "-")}'
             category_sort[k]['sort'] = list(category_sort.keys()).index(k)
         if lang == 'en':
             readme_path = os.path.join(base_path, 'README.md')
+        else:
+            readme_path = os.path.join(base_path, f'README-{lang.upper()}.md')
+
         api = f'https://www.emqx.com/api/v1/blog?_sort=createAt&_limit=1000&site=com'
         blog_records = requests.get(url=api, headers={'Content-Language': lang}).json()
         if not blog_records['success']:
             print(f'Failed to get blog records: {blog_records}')
             exit(1)
         readme_content = f'# EMQX Blog\n\n'
+        readme_content += '[English](./README.md) | [简体中文](./README-ZH.md) | [日本語](./README-JA.md)\n\n'
+
         category_options = blog_records['data']['categoryOption']
         category_index = len(category_sort.keys())
         for category_option in category_options:
@@ -57,11 +64,12 @@ if __name__ == '__main__':
                 continue
             blog_date = '' .join(blog_record['createAt'].split('-')[:2]).replace('-', '')
             blog_title_url = blog_record['titleUrl']
+            blog_url = f'https://www.emqx.com/{lang}/blog/{blog_title_url}'
             file_path = f'https://github.com/emqx/blog/blob/main/{lang}/{blog_date}/{blog_title_url}.md'
             for c in blog_categories:
                 if 'blogs' not in category_sort[c]:
                     category_sort[c]['blogs'] = []
-                category_sort[c]['blogs'].append({'title': blog_title, 'path': file_path})
+                category_sort[c]['blogs'].append({'title': blog_title, 'path': file_path, 'url': blog_url})
 
         category_sort = dict(sorted(category_sort.items(), key=lambda x: x[1]['sort']))
         for category, category_records in category_sort.items():
@@ -73,7 +81,8 @@ if __name__ == '__main__':
             else:
                 readme_content += '\n\n'
             for record in category_records['blogs']:
-                readme_content += f'- [{record["title"]}]({record["path"]})\n'
+                readme_content += f'- [{record["title"]}]({record["url"]})'
+                readme_content += f' ([Edit]({record["path"]}))\n'
 
         with open(readme_path, 'w') as f:
             f.write(readme_content)
