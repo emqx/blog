@@ -58,6 +58,8 @@ DBC is the key to decoding CAN frame. Without DBC, even CAN bus data is dismisse
 
 As an edge streaming engine, eKuiper is small enough to deploy near the CAN bus devices. It can collect data from various southbound data sources like HTTP, FileSystem, MQTT, and now CAN bus. The collected data can be efficiently processed and subsequently published to northbound data sources like MQTT and HTTP.
 
+> Notice: Some of the features related to the CAN bus described in this document are not open source. You can experiment with these features by utilizing [ek-can](https://hub.docker.com/r/emqx/ek-can), which extends CAN bus capabilities on top of eKuiper.
+
 eKuiper understands CAN bud data. It eases the CAN frame decoding and transforms it into just some configurations. To consume CAN bus data, you can create a stream using the following SQL statement:
 
 ```

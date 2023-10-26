@@ -5,6 +5,8 @@
 ## [MQTT Tutorials](https://www.emqx.com/en/blog/category/mqtt-protocol)
 Get to know the preferred protocol in IoT from beginner to master.
 
+- [Introduction to Clean Start and Session Expiry Interval | Exploring MQTT 5.0 Features](https://github.com/emqx/blog/blob/main/en/202310/mqtt5-new-feature-clean-start-and-session-expiry-interval.md)
+- [MQTT 5: 7 New Features and a Migration Checklist](https://github.com/emqx/blog/blob/main/en/202310/introduction-to-mqtt-5.md)
 - [Introduction to Message Expiry Interval | Exploring MQTT 5.0 Features](https://github.com/emqx/blog/blob/main/en/202309/mqtt-message-expiry-interval.md)
 - [MQTT 5.0 Packet Explained 06: AUTH](https://github.com/emqx/blog/blob/main/en/202309/mqtt-5-0-control-packets-06-auth.md)
 - [MQTT 5.0 Packet Explained 05: DISCONNECT](https://github.com/emqx/blog/blob/main/en/202309/mqtt-5-0-control-packets-05-disconnect.md)
@@ -36,14 +38,12 @@ Get to know the preferred protocol in IoT from beginner to master.
 - [MQTT for Elixir](https://github.com/emqx/blog/blob/main/en/202201/mqtt-for-elixir.md)
 - [User Properties - MQTT 5.0 new features](https://github.com/emqx/blog/blob/main/en/202111/mqtt5-user-properties.md)
 - [Enhanced authentication - MQTT 5.0 new features](https://github.com/emqx/blog/blob/main/en/202009/mqtt5-enhanced-authentication.md)
-- [Introduction to MQTT 5.0](https://github.com/emqx/blog/blob/main/en/202009/introduction-to-mqtt-5.md)
 - [Request Response - MQTT 5.0 new features](https://github.com/emqx/blog/blob/main/en/202009/mqtt5-request-response.md)
 - [Flow control - MQTT 5.0 new features](https://github.com/emqx/blog/blob/main/en/202008/mqtt5-flow-control.md)
 - [The process of publishing MQTT 5.0 message](https://github.com/emqx/blog/blob/main/en/202004/mqtt5-message-publishing-process.md)
 - [MQTT 5.0 Features of Inflight Window & Message Queue](https://github.com/emqx/blog/blob/main/en/202003/mqtt5-feature-inflight-window-message-queue.md)
 - [Use of MQTT Will Message](https://github.com/emqx/blog/blob/main/en/201912/use-of-mqtt-will-message.md)
 - [Shared subscription - MQTT 5.0 new features](https://github.com/emqx/blog/blob/main/en/201912/introduction-to-mqtt5-protocol-shared-subscription.md)
-- [Clean Start and Session Expiry Interval - MQTT 5.0 new features](https://github.com/emqx/blog/blob/main/en/201912/mqtt5-new-feature-clean-start-and-session-expiry-interval.md)
 - [Payload Format Indicator and Content Type | MQTT 5.0 New Features](https://github.com/emqx/blog/blob/main/en/201909/mqtt5-new-features-payload-format-indicator-and-content-type.md)
 - [Properties and Loads | MQTT 5.0 New Features](https://github.com/emqx/blog/blob/main/en/201908/mqtt5-new-features-properties-and-loads.md)
 
@@ -267,6 +267,7 @@ EMQX is the world's most scalable open-source MQTT broker with a high performanc
 ## [EMQX Cloud](https://www.emqx.com/en/blog/category/cloud)
 The easiest way to start MQTT service. Connect your IoT devices to any cloud without the burden of maintaining infrastructure.
 
+- [Mastering IoT Solution with EMQX Cloud Serverless’s Addition: API & Batch Import Users Credentials](https://github.com/emqx/blog/blob/main/en/202310/mastering-iot-solution-with-emqx-cloud-serverless-addition.md)
 - [One Key for All: Streamline Access Management with EMQX Cloud's SSO Integrations](https://github.com/emqx/blog/blob/main/en/202310/streamline-access-management-with-emqx-cloud-sso-integrations.md)
 - [Connecting to a Serverless MQTT Broker using Postman](https://github.com/emqx/blog/blob/main/en/202309/connecting-to-a-serverless-mqtt-broker-using-postman.md)
 - [Connecting to a Serverless MQTT Broker in React](https://github.com/emqx/blog/blob/main/en/202309/connecting-to-a-serverless-mqtt-broker-in-react.md)
@@ -423,6 +424,7 @@ Build a reliable, efficient and industry-specific Internet of Vehicles platform 
 
 ## [Industrial IoT | Unified Namespace | Sparkplug](https://www.emqx.com/en/blog/category/industrial-iot)
 
+- [18 Industrial IoT Applications and Why You Need Them](https://github.com/emqx/blog/blob/main/en/202310/industrial-iot-applications.md)
 - [Omron FINS Protocol: The Basics & Its Benefits of Bridging to MQTT](https://github.com/emqx/blog/blob/main/en/202310/omron-fins-protocol.md)
 - [First Step to a Smart Factory: Accessing the OT and IT Data Sources with EMQX and Neuron](https://github.com/emqx/blog/blob/main/en/202310/first-step-to-a-smart-factory.md)
 - [IIoT vs. IoT: Examples and 5 Key Differences](https://github.com/emqx/blog/blob/main/en/202310/iiot-vs-iot-examples-and-5-key-differences.md)
