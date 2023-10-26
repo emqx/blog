@@ -6,6 +6,7 @@
 Get to know the preferred protocol in IoT from beginner to master.
 
 - [Introduction to Clean Start and Session Expiry Interval | Exploring MQTT 5.0 Features](https://github.com/emqx/blog/blob/main/en/202310/mqtt5-new-feature-clean-start-and-session-expiry-interval.md)
+- [Introduction to Payload Format Indicator and Content Type | Exploring MQTT 5.0 Features](https://github.com/emqx/blog/blob/main/en/202310/mqtt5-new-features-payload-format-indicator-and-content-type.md)
 - [MQTT 5: 7 New Features and a Migration Checklist](https://github.com/emqx/blog/blob/main/en/202310/introduction-to-mqtt-5.md)
 - [Introduction to Message Expiry Interval | Exploring MQTT 5.0 Features](https://github.com/emqx/blog/blob/main/en/202309/mqtt-message-expiry-interval.md)
 - [MQTT 5.0 Packet Explained 06: AUTH](https://github.com/emqx/blog/blob/main/en/202309/mqtt-5-0-control-packets-06-auth.md)
@@ -44,7 +45,6 @@ Get to know the preferred protocol in IoT from beginner to master.
 - [MQTT 5.0 Features of Inflight Window & Message Queue](https://github.com/emqx/blog/blob/main/en/202003/mqtt5-feature-inflight-window-message-queue.md)
 - [Use of MQTT Will Message](https://github.com/emqx/blog/blob/main/en/201912/use-of-mqtt-will-message.md)
 - [Shared subscription - MQTT 5.0 new features](https://github.com/emqx/blog/blob/main/en/201912/introduction-to-mqtt5-protocol-shared-subscription.md)
-- [Payload Format Indicator and Content Type | MQTT 5.0 New Features](https://github.com/emqx/blog/blob/main/en/201909/mqtt5-new-features-payload-format-indicator-and-content-type.md)
 - [Properties and Loads | MQTT 5.0 New Features](https://github.com/emqx/blog/blob/main/en/201908/mqtt5-new-features-properties-and-loads.md)
 
 
