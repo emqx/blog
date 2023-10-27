@@ -1,6 +1,6 @@
 数字时代，数据逐渐成为企业的核心价值和重要资产，数据安全对于每一个企业来说都举足轻重。在网络环境复杂的当下，企业急需重视企业数据的安全问题。
 
-作为一款全托管的 [MQTT 5.0](https://www.emqx.com/zh/mqtt/mqtt5) 公有云服务，[EMQX Cloud](https://www.emqx.com/zh/cloud) 提供了一站式运维代管、独有隔离环境的 MQTT 消息服务。EMQ 十分重视用户的数据安全性，因此在 EMQX Cloud 的产品设计中也特别注意了对数据安全的保障。即使是部署在公有云上，用户也无需担心数据泄漏等风险。
+作为一款全托管的 [MQTT 5.0](https://www.emqx.com/zh/blog/introduction-to-mqtt-5) 公有云服务，[EMQX Cloud](https://www.emqx.com/zh/cloud) 提供了一站式运维代管、独有隔离环境的 MQTT 消息服务。EMQ 十分重视用户的数据安全性，因此在 EMQX Cloud 的产品设计中也特别注意了对数据安全的保障。即使是部署在公有云上，用户也无需担心数据泄漏等风险。
 
 本文将从基础架构、数据通信、认证鉴权、权限管理、隐私数据安全这 5 个方面来解读 EMQX Cloud 的数据安全保障机制。
 

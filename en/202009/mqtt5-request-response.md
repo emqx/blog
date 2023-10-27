@@ -1,4 +1,4 @@
-MQTT v5 brings lots of new features, and we will try our best to present these features in an easy-to-understand way and discuss the impact of these features on developers. So far, we have discussed these [new features of MQTT v5](https://www.emqx.com/en/mqtt/mqtt5). Today, we will continue to discuss: **Request Response**.
+MQTT v5 brings lots of new features, and we will try our best to present these features in an easy-to-understand way and discuss the impact of these features on developers. So far, we have discussed these [new features of MQTT v5](https://www.emqx.com/en/blog/introduction-to-mqtt-5). Today, we will continue to discuss: **Request Response**.
 
 ### Request Response
 

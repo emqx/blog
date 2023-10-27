@@ -13,7 +13,7 @@
 
 ### MQTT 5.0 Server Keep Alive
 
-在 [MQTT 5.0](https://www.emqx.com/zh/mqtt/mqtt5) 标准中，引入了 *Server Keep Alive* 的概念，允许 Broker 根据自身的实现等因素，选择接受客户端请求中携带的 *Keep Alive* 值，或者是覆盖这个值。如果 Broker 选择覆盖这个值，则需要将新值设置在连接确认包(**CONNACK**) 的 *Server Keep Alive* 字段中，客户端如果在连接确认包中读取到了 *Server Keep Alive*，则需要使用该值，覆盖自己之前的 *Keep Alive* 的值。
+在 [MQTT 5.0](https://www.emqx.com/zh/blog/introduction-to-mqtt-5) 标准中，引入了 *Server Keep Alive* 的概念，允许 Broker 根据自身的实现等因素，选择接受客户端请求中携带的 *Keep Alive* 值，或者是覆盖这个值。如果 Broker 选择覆盖这个值，则需要将新值设置在连接确认包(**CONNACK**) 的 *Server Keep Alive* 字段中，客户端如果在连接确认包中读取到了 *Server Keep Alive*，则需要使用该值，覆盖自己之前的 *Keep Alive* 的值。
 
 ### Keep Alive 机制流程
 

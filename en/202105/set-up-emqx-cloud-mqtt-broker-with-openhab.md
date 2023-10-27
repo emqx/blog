@@ -12,7 +12,7 @@ MQTT, known as Message Queuing Telemetry Transport, is a lightweight IoT messagi
 
 ## What is EMQX Cloud MQTT?
 
-[EMQX Cloud](https://www.emqx.com/en/cloud) is an MQTT messaging middleware product for the IoT domain from EMQ. As the world's first fully managed [MQTT 5.0](https://www.emqx.com/en/mqtt/mqtt5) public cloud service, EMQX Cloud provides a one-stop O&M colocation and a unique isolated environment for MQTT messaging services. It serves dozens of countries and regions around the world, providing low-cost, secure, and reliable cloud services for 5G and Internet of Everything applications.
+[EMQX Cloud](https://www.emqx.com/en/cloud) is an MQTT messaging middleware product for the IoT domain from EMQ. As the world's first fully managed [MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5) public cloud service, EMQX Cloud provides a one-stop O&M colocation and a unique isolated environment for MQTT messaging services. It serves dozens of countries and regions around the world, providing low-cost, secure, and reliable cloud services for 5G and Internet of Everything applications.
 
 EMQX Cloud is available in three plans: Basic, Professional, and Unlimited, which offers a variety of flexible product specifications to support the deployment of fully managed MQTT services exclusively for you on the world's leading public clouds. Need more information with EMQX Cloud's product plan? Click[ here](https://docs.emqx.com/en/cloud/latest/pricing.html).
 

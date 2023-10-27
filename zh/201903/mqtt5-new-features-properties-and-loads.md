@@ -1,4 +1,4 @@
-[MQTT 5.0](https://www.emqx.com/zh/mqtt/mqtt5) 协议相比 MQTT 3.1.1 增加了很多属性，这些属性分布于报文的可变头部 ( Variable Header ) 和有效载荷 ( Payload ) 中。
+[MQTT 5.0](https://www.emqx.com/zh/blog/introduction-to-mqtt-5) 协议相比 MQTT 3.1.1 增加了很多属性，这些属性分布于报文的可变头部 ( Variable Header ) 和有效载荷 ( Payload ) 中。
 
 MQTT 5.0 协议中携带有效载荷的报文有 CONNECT 报文，PUBLISH 报文，SUBSCRIBE 报文，SUBACK 报文，UNSUBSCRIBE 报文和 UNSUBACK 报文。
 

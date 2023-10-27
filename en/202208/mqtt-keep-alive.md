@@ -12,7 +12,7 @@ When the broker receives a connection request from a client, it checks the value
 
 ### MQTT 5.0 Server Keep Alive
 
-In the [MQTT 5.0](https://www.emqx.com/en/mqtt/mqtt5) standard, the concept of Server Keep Alive was also introduced, allowing the broker to choose to accept the Keep Alive value carried in the client request, or to override it, depending on its implementation and other factors. If the broker chooses to override this value, it needs to set the new value in the Server Keep Alive field of the Connection Acknowledgement Packet (CONNACK), and the client needs to use this value to override its own previous Keep Alive value when it reads it in the CONNACK.
+In the [MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5) standard, the concept of Server Keep Alive was also introduced, allowing the broker to choose to accept the Keep Alive value carried in the client request, or to override it, depending on its implementation and other factors. If the broker chooses to override this value, it needs to set the new value in the Server Keep Alive field of the Connection Acknowledgement Packet (CONNACK), and the client needs to use this value to override its own previous Keep Alive value when it reads it in the CONNACK.
 
 ### The Keep Alive Process
 

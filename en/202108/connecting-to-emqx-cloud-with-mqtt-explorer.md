@@ -32,7 +32,7 @@ MQTT Explorer can meet most development needs, but it also has some disadvantage
 
 ## Introduction to EMQX Cloud
 
-[EMQX Cloud](https://www.emqx.com/en/cloud) is a fully managed cloud-native MQTT service launched by [EMQ](https://www.emqx.com/en) company that can connect to a large number of IoT devices and integrate various databases and business systems. As the **world's first fully managed** [**MQTT 5.0**](https://www.emqx.com/en/mqtt/mqtt5) **public cloud service**, EMQX Cloud provides MQTT message service with one-stop operation and maintenance management and a unique isolation environment.
+[EMQX Cloud](https://www.emqx.com/en/cloud) is a fully managed cloud-native MQTT service launched by [EMQ](https://www.emqx.com/en) company that can connect to a large number of IoT devices and integrate various databases and business systems. As the **world's first fully managed** [**MQTT 5.0**](https://www.emqx.com/en/blog/introduction-to-mqtt-5) **public cloud service**, EMQX Cloud provides MQTT message service with one-stop operation and maintenance management and a unique isolation environment.
 
 In the era of the Internet of Everything, EMQX Cloud can help users quickly build industry applications for the IoT area and easily realize the collection, transmission, calculation, and persistence of IoT data.
 

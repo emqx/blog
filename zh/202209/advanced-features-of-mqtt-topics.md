@@ -91,7 +91,7 @@ EMQX 还支持客户端上下线事件、收发流量、消息收发、系统监
 
 ### 共享订阅
 
-共享订阅是 [MQTT 5.0](https://www.emqx.com/zh/mqtt/mqtt5) 引入的新特性，用于在多个订阅者之间实现订阅的负载均衡，MQTT 5.0 规定的共享订阅主题以 `$share` 开头。
+共享订阅是 [MQTT 5.0](https://www.emqx.com/zh/blog/introduction-to-mqtt-5) 引入的新特性，用于在多个订阅者之间实现订阅的负载均衡，MQTT 5.0 规定的共享订阅主题以 `$share` 开头。
 
 >虽然 MQTT 协议在 5.0 版本才引入共享订阅，但是 EMQX 从 MQTT 3.1.1 版本开始就支持共享订阅。
 

@@ -10,7 +10,7 @@
 MQTT 客户端工具常用于建立与 [MQTT 服务器](https://www.emqx.com/zh/mqtt/public-mqtt5-broker) 的连接，进行主题订阅、消息收发等操作。一个优秀的 MQTT 客户端工具应该具备如下特性：
 
 - 支持加密连接；
-- 支持 [MQTT 5](https://www.emqx.com/zh/mqtt/mqtt5) 特性；
+- 支持 [MQTT 5](https://www.emqx.com/zh/blog/introduction-to-mqtt-5) 特性；
 - 在功能全面的基础上保持易用性；
 - 支持多个客户端同时在线；
 - 跨平台，不同操作系统下都可以使用；

@@ -37,7 +37,7 @@ EMQX Cloud supports collaboration with EMQX Edge stack. Help move data from devi
 
 ## 3 Steps to Deploy EMQX Cloud in Azure
 
-After completing the registration on the website, we can have a fully managed [MQTT 5.0](https://www.emqx.com/en/mqtt/mqtt5) service in Azure with one-click operation.
+After completing the registration on the website, we can have a fully managed [MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5) service in Azure with one-click operation.
 
 ### Select Plan
 

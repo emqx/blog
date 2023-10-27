@@ -14,7 +14,7 @@
 
 ### Support MQTT 5.0 Subscription Identifier
 
-In this release, in addition, to supporting [MQTT 5.0](https://www.emqx.com/en/mqtt/mqtt5) subscription options, we have added support for [Subscription Identifiers](https://www.emqx.com/en/blog/subscription-identifier-and-subscription-options), we can specify a Subscription Identifier when subscribing. The broker will establish and store the mapping relationship between this subscription and the Subscription Identifier when successfully creating or modifying the subscription. The broker will return the Subscription Identifier associated with this PUBLISH packet and the PUBLISH packet to the client when needed to forward PUBLISH packets matching this subscription to this client.
+In this release, in addition, to supporting [MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5) subscription options, we have added support for [Subscription Identifiers](https://www.emqx.com/en/blog/subscription-identifier-and-subscription-options), we can specify a Subscription Identifier when subscribing. The broker will establish and store the mapping relationship between this subscription and the Subscription Identifier when successfully creating or modifying the subscription. The broker will return the Subscription Identifier associated with this PUBLISH packet and the PUBLISH packet to the client when needed to forward PUBLISH packets matching this subscription to this client.
 
 ![MQTT 5.0 Subscription Identifier](https://assets.emqx.com/images/d7fe5b3b7611351c1e2b21d42e181108.png)
 

@@ -2,7 +2,7 @@
 
 [ESP32](https://www.espressif.com/en/products/socs/esp32) is an upgraded version of ESP8266. In addition to the Wi-Fi module, this module also includes a Bluetooth 4.0 module. The dual-core CPU operates at a frequency of 80 to 240 MHz. It contains two Wi-Fi and Bluetooth modules and various input and output pins. ESP32 is an ideal choice for IoT projects.
 
-In this project, we will connect ESP32 to the [free public MQTT broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker) operated and maintained by EMQX [MQTT Cloud](https://www.emqx.com/en/cloud), and use the Arduino IDE to program the ESP32. EMQX Cloud is a secure MQTT IoT cloud service platform launched by [EMQ](https://www.emqx.com/en). It provides [MQTT 5.0 ](https://www.emqx.com/en/mqtt/mqtt5) access service with one-stop operation and maintenance management and a unique isolation environment.
+In this project, we will connect ESP32 to the [free public MQTT broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker) operated and maintained by EMQX [MQTT Cloud](https://www.emqx.com/en/cloud), and use the Arduino IDE to program the ESP32. EMQX Cloud is a secure MQTT IoT cloud service platform launched by [EMQ](https://www.emqx.com/en). It provides [MQTT 5.0 ](https://www.emqx.com/en/blog/introduction-to-mqtt-5) access service with one-stop operation and maintenance management and a unique isolation environment.
 
 
 

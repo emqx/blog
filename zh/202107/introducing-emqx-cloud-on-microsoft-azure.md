@@ -19,7 +19,7 @@
 
 ## 如何在 Azure 快速部署？
 
-在官网完成注册后，简单操作即可在 Azure 一键部署全托管 [MQTT 5.0](https://www.emqx.com/zh/mqtt/mqtt5) 服务。
+在官网完成注册后，简单操作即可在 Azure 一键部署全托管 [MQTT 5.0](https://www.emqx.com/zh/blog/introduction-to-mqtt-5) 服务。
 
 ### 1、选择版本
 

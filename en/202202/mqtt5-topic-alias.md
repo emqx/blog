@@ -1,4 +1,4 @@
-Compared to MQTT v3.1 and v3.1.1, MQTT v5 provides more new features. We will try to present these features in easy-to-understand ways and discuss their impact on developments. We have already discussed some of the [new features in MQTT v5](https://www.emqx.com/en/mqtt/mqtt5), and we will continue to discuss **Topic Alias** today.
+Compared to MQTT v3.1 and v3.1.1, MQTT v5 provides more new features. We will try to present these features in easy-to-understand ways and discuss their impact on developments. We have already discussed some of the [new features in MQTT v5](https://www.emqx.com/en/blog/introduction-to-mqtt-5), and we will continue to discuss **Topic Alias** today.
 
 ## What is Topic Alias
 

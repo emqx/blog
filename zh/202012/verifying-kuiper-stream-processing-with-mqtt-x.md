@@ -56,7 +56,7 @@ $ docker run -d --name emqx -p 1883:1883 emqx/emqx-edge:4.2.4
 
 ### MQTTX
 
-[MQTTX](https://mqttx.app/zh) 是由一款跨平台 [MQTT 5.0](https://www.emqx.com/zh/mqtt/mqtt5) 桌面测试客户端，它支持 macOS，Linux，Windows。用户可以快速创建多个同时在线的 **MQTT 客户端**，方便测试 MQTT/TCP、MQTT/TLS、MQTT/WebSocket 的连接/发布/订阅功能及其他 **MQTT 协议** 特性。项目地址：[https://github.com/emqx/MQTTX](https://github.com/emqx/MQTTX)
+[MQTTX](https://mqttx.app/zh) 是由一款跨平台 [MQTT 5.0](https://www.emqx.com/zh/blog/introduction-to-mqtt-5) 桌面测试客户端，它支持 macOS，Linux，Windows。用户可以快速创建多个同时在线的 **MQTT 客户端**，方便测试 MQTT/TCP、MQTT/TLS、MQTT/WebSocket 的连接/发布/订阅功能及其他 **MQTT 协议** 特性。项目地址：[https://github.com/emqx/MQTTX](https://github.com/emqx/MQTTX)
 
 > 版本：v1.4.2
 

@@ -37,7 +37,7 @@ NanoMQ 分为 3 个部分：
 
 ## NanoMQ 发展规划
 
-目前 NanoMQ 完整支持 MQTT 3.1.1 协议，部分支持 [MQTT 5.0](https://www.emqx.com/zh/mqtt/mqtt5) 协议。下一版本的规划中，还将具有边缘 MQTT 分布式桥接、嵌入式规则引擎和边缘消息缓存等功能。
+目前 NanoMQ 完整支持 MQTT 3.1.1 协议，部分支持 [MQTT 5.0](https://www.emqx.com/zh/blog/introduction-to-mqtt-5) 协议。下一版本的规划中，还将具有边缘 MQTT 分布式桥接、嵌入式规则引擎和边缘消息缓存等功能。
 未来 EMQ 将与 NNG 一同集成支持包括 ZMQ、MQTT 等在内的更多常用 IoT 协议支持，优化多线程模型，提高吞吐，完善网络 IPC 能力。使广大开发者告别繁杂的 SDK 集成，获得一站式物联网开发体验，探索消息引擎在边缘计算领域的更广泛应用，加速各类边缘计算应用的开发和落地。
 同时 NanoMQ 还将集成 NNG 已有的 SP 协议，提高与 NNG 的开源协同配合度，实现底层 API 互相兼容。
 

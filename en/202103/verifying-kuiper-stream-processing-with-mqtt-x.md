@@ -56,7 +56,7 @@ $ docker run -d --name emqx -p 1883:1883 emqx/emqx-edge:4.2.4
 
 ### MQTTX
 
-[MQTTX](https://mqttx.app/) is a cross-platform [MQTT 5.0](https://www.emqx.com/en/mqtt/mqtt5) desktop test client that supports macOS, Linux, Windows. Users can quickly create multiple simultaneous online **MQTT client** for convenient testing the connect/publish/subscribe functions of MQTT/TCP, MQTT/TLS, MQTT/WebSocket and other **MQTT protocol** features. 
+[MQTTX](https://mqttx.app/) is a cross-platform [MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5) desktop test client that supports macOS, Linux, Windows. Users can quickly create multiple simultaneous online **MQTT client** for convenient testing the connect/publish/subscribe functions of MQTT/TCP, MQTT/TLS, MQTT/WebSocket and other **MQTT protocol** features. 
 
 > Version: v1.4.2
 

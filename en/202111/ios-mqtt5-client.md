@@ -1,4 +1,4 @@
-In August 2017, the draft of MQTT 5.0 was officially released by the OASIS MQTT Technical Committee for Public Review. In 2018, the official version of MQTT 5.0 was released. However, there is still no client SDK that fully supports [MQTT 5.0](https://www.emqx.com/en/mqtt/mqtt5) in the Apple ecosystem.
+In August 2017, the draft of MQTT 5.0 was officially released by the OASIS MQTT Technical Committee for Public Review. In 2018, the official version of MQTT 5.0 was released. However, there is still no client SDK that fully supports [MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5) in the Apple ecosystem.
 
 [CocoaMQTT](https://github.com/emqx/CocoaMQTT) is an MQTT client SDK provided by the EMQ for iOS developers, which is widely used by them at present. To make up for the gap in support of MQTT 5.0 in the Apple ecosystem, the **EMQ team officially released the new CocoaMQTT v2.0 recently.** CocoaMQTT v2.0 supports MQTT 5.0, is compatible with version 3.1.1, and supports iOS, tvOS, and OSX operating systems. Users can now connect iOS system devices to the MQTT 5.0 cloud services through CocoaMQTT and enjoy the powerful features provided by MQTT5.0.
 

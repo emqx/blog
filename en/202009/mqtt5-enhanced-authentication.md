@@ -1,4 +1,4 @@
-MQTT v5 brings lots of new features, and we will try our best to present these features in an easy-to-understand way and discuss the impact of these features on developers. So far, we have discussed these [new features of MQTT v5](https://www.emqx.com/en/mqtt/mqtt5). Today, we will continue to discuss: **enhanced authentication**.
+MQTT v5 brings lots of new features, and we will try our best to present these features in an easy-to-understand way and discuss the impact of these features on developers. So far, we have discussed these [new features of MQTT v5](https://www.emqx.com/en/blog/introduction-to-mqtt-5). Today, we will continue to discuss: **enhanced authentication**.
 
 In the IoT scenario, the safe design is a very important part of the process. Leakage of sensitive data or unauthorized control of edge devices are unacceptable, but compared to other scenarios, the IoT project still has the following limitations:
 

@@ -1,6 +1,6 @@
 三月初春，万物复苏，NanoMQ 项目[https://github.com/emqx/nanomq](https://github.com/emqx/nanomq) 也迎来了一个重大更新：第一个长期支持（LTS）版本 v0.6.6 正式发布。
 
-在未来的一年里，这一版本会和主分支同时维护并得到所有重要的功能更新。在 0.6.6 版本里我们增加了内置性能测试工具，丰富了 HTTP APIs 的支持，这也是第一个能够较完整同时兼容支持 [MQTT 5.0](https://www.emqx.com/zh/mqtt/mqtt5) & 3.1.1 特性的版本。
+在未来的一年里，这一版本会和主分支同时维护并得到所有重要的功能更新。在 0.6.6 版本里我们增加了内置性能测试工具，丰富了 HTTP APIs 的支持，这也是第一个能够较完整同时兼容支持 [MQTT 5.0](https://www.emqx.com/zh/blog/introduction-to-mqtt-5) & 3.1.1 特性的版本。
 
 ## nano_bench 工具
 
