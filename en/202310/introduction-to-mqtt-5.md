@@ -24,15 +24,21 @@ This improvement aids in troubleshooting and allows for more precise error handl
 
 This feature allows the client to specify how long the server should maintain its session after the client disconnects. In previous MQTT versions, a session either ended immediately upon disconnection or continued indefinitely. With MQTT 5, you can define a specific time period for which the session should be kept alive after disconnection. This provides greater flexibility in managing session lifetimes and conserves resources on the server.
 
+> Learn more in our detailed guide to [MQTT Session Expiry Intervals](https://www.emqx.com/en/blog/mqtt5-new-feature-clean-start-and-session-expiry-interval).
+
 ### 3. Topic Aliases: Reducing Overhead in Message Headers
 
 MQTT 5 introduces topic aliases to reduce the overhead in message headers. In previous versions, the topic name needed to be included in every message, leading to larger packet sizes.
 
 With topic aliases, a short numeric alias can be assigned to a topic. This alias can be used in place of the full topic name in subsequent messages, significantly reducing the size of the MQTT header and conserving network bandwidth.
 
+> Learn more in our detailed guide to [MQTT Topic Aliases](https://www.emqx.com/en/blog/mqtt5-topic-alias).
+
 ### 4. User Properties: Custom Metadata in MQTT Headers
 
 This feature allows users to include custom metadata in the headers of MQTT packets. This can be particularly useful for applications that need to send additional information with their MQTT messages, such as the message's timestamp, device location, or other application-specific data User properties provide greater flexibility and control over MQTT messaging.
+
+> Learn more in our detailed guide to [MQTT User Properties](https://www.emqx.com/en/blog/mqtt5-user-properties).
 
 ### 5. Subscription Options: Granular Subscription Controls
 

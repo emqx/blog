@@ -32,6 +32,26 @@ Vehicle data can be transmitted in various ways, including:
 
 > **Read our blog: [How to Achieve Flexible Data Collection for Internet of Vehicles](https://www.emqx.com/en/blog/how-to-achieve-flexible-data-collection-for-internet-of-vehicles)**
 
+<section
+  class="is-hidden-touch my-32 is-flex is-align-items-center"
+  style="border-radius: 16px; background: linear-gradient(102deg, #edf6ff 1.81%, #eff2ff 97.99%); padding: 32px 48px;"
+>
+  <div class="mr-40" style="flex-shrink: 0;">
+    <img loading="lazy" src="https://assets.emqx.com/images/129d83b2aebdc64d6c1385236677b310.png" alt="MQTT over QUIC" width="160" height="226">
+  </div>
+  <div>
+    <div class="mb-4 is-size-3 is-text-black has-text-weight-semibold" style="
+    line-height: 1.2;
+">
+      Next-Gen Standard Protocol for IoV
+    </div>
+    <div class="mb-32">
+      Revolutionizing IoV messaging with MQTT over QUIC.
+    </div>
+    <a href="https://www.emqx.com/en/resources/mqtt-over-quic-revolutionizing-iov-messaging-with-the-next-gen-standard-protocol?utm_campaign=embedded-mqtt-over-quic&from=blog-connected-cars-and-automotive-connectivity-all-you-need-to-know" class="button is-gradient">Get the Whitepaper →</a>
+  </div>
+</section>
+
 ## The Different Types of Connected Car Infrastructure
 
 Connected cars can have two types of systems: embedded and tethered.

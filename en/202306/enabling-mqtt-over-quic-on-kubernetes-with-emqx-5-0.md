@@ -4,6 +4,26 @@
 
 With the continuous development of cloud native, more and more users deploy EMQX clusters on Kubernetes to enjoy the rapid creation and convenient management. This article will introduce how to deploy EMQX clusters on Kubernetes and enable MQTT over QUIC.
 
+<section
+  class="is-hidden-touch my-32 is-flex is-align-items-center"
+  style="border-radius: 16px; background: linear-gradient(102deg, #edf6ff 1.81%, #eff2ff 97.99%); padding: 32px 48px;"
+>
+  <div class="mr-40" style="flex-shrink: 0;">
+    <img loading="lazy" src="https://assets.emqx.com/images/129d83b2aebdc64d6c1385236677b310.png" alt="MQTT over QUIC" width="160" height="226">
+  </div>
+  <div>
+    <div class="mb-4 is-size-3 is-text-black has-text-weight-semibold" style="
+    line-height: 1.2;
+">
+      Next-Gen Standard Protocol for IoV
+    </div>
+    <div class="mb-32">
+      Revolutionizing IoV messaging with MQTT over QUIC.
+    </div>
+    <a href="https://www.emqx.com/en/resources/mqtt-over-quic-revolutionizing-iov-messaging-with-the-next-gen-standard-protocol?utm_campaign=embedded-mqtt-over-quic&from=blog-enabling-mqtt-over-quic-on-kubernetes-with-emqx-5-0" class="button is-gradient">Get the Whitepaper →</a>
+  </div>
+</section>
+
 ## Expose EMQX Service
 
 When deploying EMQX on Kubernetes, you can use `LoadBalancer` or `NodePort` to expose EMQX service to clients outside the cluster. 

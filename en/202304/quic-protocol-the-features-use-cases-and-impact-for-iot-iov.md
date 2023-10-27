@@ -100,18 +100,18 @@ Some use cases for MQTT over QUIC in the Internet of Vehicles include:
   style="border-radius: 16px; background: linear-gradient(102deg, #edf6ff 1.81%, #eff2ff 97.99%); padding: 32px 48px;"
 >
   <div class="mr-40" style="flex-shrink: 0;">
-    <img loading="lazy" src="https://assets.emqx.com/images/a4b8936bb3d27fbccd734eccbe3f821b.png" alt="Open Manufacturing Hub" width="160" height="226">
+    <img loading="lazy" src="https://assets.emqx.com/images/129d83b2aebdc64d6c1385236677b310.png" alt="MQTT over QUIC" width="160" height="226">
   </div>
   <div>
     <div class="mb-4 is-size-3 is-text-black has-text-weight-semibold" style="
     line-height: 1.2;
 ">
-      Rev Up Your Connected Vehicles Future with MQTT
+      Next-Gen Standard Protocol for IoV
     </div>
     <div class="mb-32">
-      The key to building a scalable, secure system for your connected-vehicles business.
+      Revolutionizing IoV messaging with MQTT over QUIC.
     </div>
-    <a href="https://www.emqx.com/en/resources/driving-the-future-of-connected-cars-with-mqtt?utm_campaign=embedded-driving-the-future-of-connected-cars-with-mqtt&from=blog-quic-protocol-the-features-use-cases" class="button is-gradient">Get the Whitepaper →</a>
+    <a href="https://www.emqx.com/en/resources/mqtt-over-quic-revolutionizing-iov-messaging-with-the-next-gen-standard-protocol?utm_campaign=embedded-mqtt-over-quic&from=blog-quic-protocol-the-features" class="button is-gradient">Get the Whitepaper →</a>
   </div>
 </section>
 
