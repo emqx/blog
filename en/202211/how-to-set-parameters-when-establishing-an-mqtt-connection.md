@@ -111,7 +111,7 @@ The Will Message can be seen as a simplified MQTT message that also contains Top
 
 The most used versions of the MQTT protocol are MQTT v3.1, MQTT v3.1.1, and MQTT v5.0. Currently, MQTT 5.0 has become the protocol of choice for most IoT enterprises, and we recommend that first-time MQTT developers use this version directly.
 
-Check out the [MQTT 5.0](https://www.emqx.com/en/mqtt/mqtt5) blog series provided by EMQ to learn about using the new features of MQTT 5.0.
+Check out the [MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5) blog series provided by EMQ to learn about using the new features of MQTT 5.0.
 
 ### New Connection Parameters in MQTT v5.0
 

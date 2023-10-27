@@ -130,7 +130,7 @@ MQTT 遗嘱消息的更多请访问我们的博文：[MQTT 遗嘱消息的使用
 ## MQTT 5.0 协议新增特性
 
 ### 会话过期
-[MQTT 5.0](https://www.emqx.com/zh/mqtt/mqtt5) 把 Clean Session 标识拆分成 Clean Start 标识（指示会话应该在不使用现有会话的情况下开始）和会话过期间隔属性（指示连接断开之后会话保留的时间）。会话过期间隔可以在断开连接时修改。把 Clean Start 标识设置为 1 且会话过期间隔设置为 0，等同于在 MQTT v3.1.1中把 CleanSession 设置为 1。
+[MQTT 5.0](https://www.emqx.com/zh/blog/introduction-to-mqtt-5) 把 Clean Session 标识拆分成 Clean Start 标识（指示会话应该在不使用现有会话的情况下开始）和会话过期间隔属性（指示连接断开之后会话保留的时间）。会话过期间隔可以在断开连接时修改。把 Clean Start 标识设置为 1 且会话过期间隔设置为 0，等同于在 MQTT v3.1.1中把 CleanSession 设置为 1。
 
 ### 为所有响应报文提供原因码
 

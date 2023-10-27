@@ -167,7 +167,7 @@ listener.ssl.external.fail_if_no_peer_cert = true
 
 ### MQTT connection test
 
-After finished configuring and restarted EMQX, we use [MQTT client tool - MQTTX](https://mqttx.app/) (this tool is cross-platform and supports [MQTT 5.0](https://www.emqx.com/en/mqtt/mqtt5)) to verify that whether TLS service is normally running.
+After finished configuring and restarted EMQX, we use [MQTT client tool - MQTTX](https://mqttx.app/) (this tool is cross-platform and supports [MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5)) to verify that whether TLS service is normally running.
 
 > The requirement of MQTTX version: v1.3.2 or higher version
 

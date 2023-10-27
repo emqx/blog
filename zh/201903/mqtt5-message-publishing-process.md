@@ -1,4 +1,4 @@
-[MQTT 5.0](https://www.emqx.com/zh/mqtt/mqtt5) 协议对部分 QoS 报文，以及报文处理的流程做了一些升级，本文对此这部分升级的内容做简单的介绍。
+[MQTT 5.0](https://www.emqx.com/zh/blog/introduction-to-mqtt-5) 协议对部分 QoS 报文，以及报文处理的流程做了一些升级，本文对此这部分升级的内容做简单的介绍。
 
 ## QoS 报文格式及处理流程
 

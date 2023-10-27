@@ -216,7 +216,7 @@ Here are some commonly-used attribute values in the Options object:
     - `QoS`: QoS value sent by the will
     - `retain`: the retain sign of the message published by the will
 
-  - `properties`: the property values of configurable objects that is new added in [MQTT 5.0](https://www.emqx.com/en/mqtt/mqtt5) . For more details, please refer to: [https://github.com/mqttjs/MQTT.js#mqttclientstreambuilder-options](https://github.com/mqttjs/MQTT.js#mqttclientstreambuilder-options)
+  - `properties`: the property values of configurable objects that is new added in [MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5) . For more details, please refer to: [https://github.com/mqttjs/MQTT.js#mqttclientstreambuilder-options](https://github.com/mqttjs/MQTT.js#mqttclientstreambuilder-options)
 
 - If you need to configure an SSL/TLS connection, the Option object will be passed to `tls.connect()`, and you can configure the following properties in option
 

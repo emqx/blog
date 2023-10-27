@@ -24,7 +24,7 @@ In addition, MQTT.fx also has other excellent features:
 
 But there are also defects:
 
-- [MQTT 5.0](https://www.emqx.com/en/mqtt/mqtt5) protocol is not supported
+- [MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5) protocol is not supported
 - Only one connection can be established at a time, which is inconvenient for multi-connection debugging
 - The webSocket protocol is not supported and the situation of MQTT over Webscoket cannot be debugged
 
@@ -32,7 +32,7 @@ But there are also defects:
 
 ## Introduction to EMQX Cloud
 
-[EMQX Cloud](https://www.emqx.com/en/cloud) is a fully managed cloud-native MQTT service launched by EMQ that can connect to a large number of IoT devices and integrate various databases and business systems. As the **world's first fully managed** [**MQTT 5.0**](https://www.emqx.com/en/mqtt/mqtt5) **public cloud service**, EMQX Cloud provides MQTT message service with one-stop operation and maintenance management and a unique isolation environment.
+[EMQX Cloud](https://www.emqx.com/en/cloud) is a fully managed cloud-native MQTT service launched by EMQ that can connect to a large number of IoT devices and integrate various databases and business systems. As the **world's first fully managed** [**MQTT 5.0**](https://www.emqx.com/en/blog/introduction-to-mqtt-5) **public cloud service**, EMQX Cloud provides MQTT message service with one-stop operation and maintenance management and a unique isolation environment.
 
 In the era of the Internet of Everything, EMQX Cloud can help users quickly build industry applications for the IoT area and easily realize the collection, transmission, calculation, and persistence of IoT data.
 

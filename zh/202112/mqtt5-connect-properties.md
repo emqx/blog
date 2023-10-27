@@ -30,7 +30,7 @@ CONNECT 报文包含客户端标识符（Client Identifier）、用户名（User
 
 ## MQTT 5.0 连接属性
 
-除了以上字段，[MQTT 5.0](https://www.emqx.com/zh/mqtt/mqtt5) 新引入了属性概念，不同类型报文拥有不同的属性，进一步增强了协议的可扩展性。
+除了以上字段，[MQTT 5.0](https://www.emqx.com/zh/blog/introduction-to-mqtt-5) 新引入了属性概念，不同类型报文拥有不同的属性，进一步增强了协议的可扩展性。
 
 ### 能力协商
 

@@ -108,7 +108,7 @@ Will メッセージは、トピック、ペイロード、QoS、保持なども
 
 MQTT プロトコルの最もよく使用されるバージョンは、MQTT v3.1、MQTT v3.1.1、および MQTT v5.0 です。現在、MQTT 5.0 はほとんどの IoT 企業で選ばれるプロトコルとなっており、初めて MQTT 開発を行う場合はこのバージョンを直接使用することをお勧めします。
 
-[MQTT 5.0](https://www.emqx.com/en/mqtt/mqtt5)の新機能の使用方法については、EMQ が提供する MQTT 5.0 ブログ シリーズを参照してください。
+[MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5)の新機能の使用方法については、EMQ が提供する MQTT 5.0 ブログ シリーズを参照してください。
 
 ### MQTT v5.0 の新しい接続パラメータ
 

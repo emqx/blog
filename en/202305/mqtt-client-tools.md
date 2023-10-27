@@ -11,7 +11,7 @@ We have selected seven of the most useful MQTT client tools in 2023 and listed t
 A good MQTT client tool should possess the following key features.
 
 - Support for one-way and two-way SSL authentication.
-- Support for [MQTT 5](https://www.emqx.com/en/mqtt/mqtt5) features.
+- Support for [MQTT 5](https://www.emqx.com/en/blog/introduction-to-mqtt-5) features.
 - Maintain ease of use on a full-featured basis.
 - Support for multiple clients online at the same time.
 - Cross-platform, available under different operating systems.

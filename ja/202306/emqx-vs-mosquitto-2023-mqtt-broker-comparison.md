@@ -106,7 +106,7 @@ EMQXは、MQTT 3.1/3.1/5.0と[MQTT over Websocket](https://www.emqx.com/en/blog/
 |                              | **EMQX**                                                     | **Mosquitto** | **参考リンク**                                               |
 | :--------------------------- | :----------------------------------------------------------- | :------------ | :----------------------------------------------------------- |
 | **MQTT 3.1/3.1.1**           | ✅                                                            | ✅             | [MQTTプロトコルのわかりやすい解説書](https://www.emqx.com/en/mqtt-guide) |
-| **MQTT 5.0**                 | ✅                                                            | ✅             | [MQTT 5 エクスプロア](https://www.emqx.com/en/mqtt/mqtt5)    |
+| **MQTT 5.0**                 | ✅                                                            | ✅             | [MQTT 5 エクスプロア](https://www.emqx.com/en/blog/introduction-to-mqtt-5)    |
 | **MQTT Shared Subscription** | ✅                                                            | ✅             |                                                              |
 | **MQTT Add-ons**             | 独占配信<br>ディレイパブリッシュ<br>オートサブスクリプション<br>トピックのリライト | ❌             |                                                              |
 | **MQTT over TCP**            | ✅                                                            | ✅             | [EMQX入門編](https://www.emqx.io/docs/en/v5.0/getting-started/getting-started.html#quick-verification-using-an-mqtt-client) |

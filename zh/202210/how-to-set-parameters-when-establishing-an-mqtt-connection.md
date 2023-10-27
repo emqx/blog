@@ -101,7 +101,7 @@ MQTT 协议可以通过用户名和密码来进行相关的认证和授权，但
 
 使用较多的 MQTT 协议版本有 MQTT v3.1、MQTT v3.1.1 及 MQTT v5.0。目前，MQTT 5.0 已成为绝大多数物联网企业的首选协议，我们建议初次接触 MQTT 的开发者直接使用该版本。
 
-感兴趣的读者可查看 EMQ 提供的 [MQTT 5.0](https://www.emqx.com/zh/mqtt/mqtt5) 系列文章，了解 MQTT 5.0 相关特性的使用。
+感兴趣的读者可查看 EMQ 提供的 [MQTT 5.0](https://www.emqx.com/zh/blog/introduction-to-mqtt-5) 系列文章，了解 MQTT 5.0 相关特性的使用。
 
 ### MQTT 5.0 新增连接参数
 

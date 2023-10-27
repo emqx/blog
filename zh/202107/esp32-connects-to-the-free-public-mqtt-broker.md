@@ -2,7 +2,7 @@
 
 [ESP32](https://www.espressif.com/zh-hans/products/socs/esp32)  是 ESP8266 的升级版本，除了Wi-Fi模块，该模块还包含蓝牙4.0模块。双核CPU工作频率为80至240 MHz，包含两个Wi-Fi和蓝牙模块以及各种输入和输出引脚， ESP32 是物联网项目的理想选择。
 
-在此项目中我们将实现 ESP32 连接到 EMQX [MQTT Cloud](https://www.emqx.com/zh/cloud) 运营和维护的 [免费公共 MQTT 服务器](https://www.emqx.com/zh/mqtt/public-mqtt5-broker)，并使用 Arduino IDE 来对 ESP32 进行编程。 EMQX Cloud 是由 EMQ 推出的安全的 MQTT 物联网云服务平台，它提供一站式运维代管、独有隔离环境的 [MQTT 5.0](https://www.emqx.com/zh/mqtt/mqtt5) 接入服务。
+在此项目中我们将实现 ESP32 连接到 EMQX [MQTT Cloud](https://www.emqx.com/zh/cloud) 运营和维护的 [免费公共 MQTT 服务器](https://www.emqx.com/zh/mqtt/public-mqtt5-broker)，并使用 Arduino IDE 来对 ESP32 进行编程。 EMQX Cloud 是由 EMQ 推出的安全的 MQTT 物联网云服务平台，它提供一站式运维代管、独有隔离环境的 [MQTT 5.0](https://www.emqx.com/zh/blog/introduction-to-mqtt-5) 接入服务。
 
 
 ## 所需物联网组件

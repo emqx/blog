@@ -149,7 +149,7 @@ listener.ssl.external.certfile = etc/certs/emqx.crt
 
 #### MQTT 连接测试
 
-当配置完成并重启 EMQX 后，我们使用 [MQTT 客户端工具 - MQTTX](https://mqttx.app/zh)（该工具跨平台且支持 [MQTT 5.0](https://www.emqx.com/zh/mqtt/mqtt5)），来验证 TLS 服务是否正常运行。
+当配置完成并重启 EMQX 后，我们使用 [MQTT 客户端工具 - MQTTX](https://mqttx.app/zh)（该工具跨平台且支持 [MQTT 5.0](https://www.emqx.com/zh/blog/introduction-to-mqtt-5)），来验证 TLS 服务是否正常运行。
 
 
 > MQTTX 版本要求：v1.3.2 及以上版本
@@ -231,7 +231,7 @@ listener.ssl.external.cacertfile = etc/certs/ca.pem
 
 #### MQTT 连接测试（MQTTX）
 
-当配置完成并重启 EMQX 后，我们使用 [MQTT 客户端工具 - MQTTX](https://mqttx.app/zh)（该工具跨平台且支持 [MQTT 5.0](https://www.emqx.com/zh/mqtt/mqtt5)），来验证 TLS 服务是否正常运行。
+当配置完成并重启 EMQX 后，我们使用 [MQTT 客户端工具 - MQTTX](https://mqttx.app/zh)（该工具跨平台且支持 [MQTT 5.0](https://www.emqx.com/zh/blog/introduction-to-mqtt-5)），来验证 TLS 服务是否正常运行。
 
 > MQTTX 版本要求：v1.3.2 及以上版本
 

@@ -36,7 +36,7 @@
 
 ### 1. 登录 EMQX Cloud
 
-EMQX Cloud MQTT 公有云服务来自于 EMQ 服务客户总结的一些最佳实践， 致力于提供快速部署、轻松管理、弹性扩展、跨多云部署的物联网 [MQTT 5.0](https://www.emqx.com/zh/mqtt/mqtt5) 服务。
+EMQX Cloud MQTT 公有云服务来自于 EMQ 服务客户总结的一些最佳实践， 致力于提供快速部署、轻松管理、弹性扩展、跨多云部署的物联网 [MQTT 5.0](https://www.emqx.com/zh/blog/introduction-to-mqtt-5) 服务。
 
 点击右上角 登录 按钮，使用实验室提供的账号登录 EMQX Cloud，点击 控制台 进入 EMQX Cloud 控制台页面。
 

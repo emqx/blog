@@ -2,7 +2,7 @@
 
 [ESP8266](https://www.espressif.com/zh-hans) 提供了⼀套⾼度集成的 Wi-Fi SoC 解决⽅案，其低功耗、 紧凑设计和⾼稳定性可以满⾜⽤户的需求。ESP8266 拥有完整的且⾃成体系的 Wi-Fi ⽹络功能，既能够独⽴应⽤，也可以作为从机搭载于其他主机 MCU 运⾏。
 
-在此项目中我们将实现 ESP8266 连接到 [EMQX MQTT Cloud](https://www.emqx.com/zh/cloud) 运营和维护的 [免费公共 MQTT 服务器](https://www.emqx.com/zh/mqtt/public-mqtt5-broker)，并使用 Arduino IDE 来对 ESP8266 进行编程。 EMQX Cloud 是由 [EMQ](https://www.emqx.com/zh) 推出的安全的 MQTT 物联网云服务平台，它提供一站式运维代管、独有隔离环境的 [MQTT 5.0](https://www.emqx.com/zh/mqtt/mqtt5) 接入服务。
+在此项目中我们将实现 ESP8266 连接到 [EMQX MQTT Cloud](https://www.emqx.com/zh/cloud) 运营和维护的 [免费公共 MQTT 服务器](https://www.emqx.com/zh/mqtt/public-mqtt5-broker)，并使用 Arduino IDE 来对 ESP8266 进行编程。 EMQX Cloud 是由 [EMQ](https://www.emqx.com/zh) 推出的安全的 MQTT 物联网云服务平台，它提供一站式运维代管、独有隔离环境的 [MQTT 5.0](https://www.emqx.com/zh/blog/introduction-to-mqtt-5) 接入服务。
 
 
 

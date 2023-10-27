@@ -1,4 +1,4 @@
-[MQTTX](https://mqttx.app/zh) 是由全球领先的物联网数据基础设施软件供应商 [EMQ 映云科技](https://www.emqx.com/zh/about) 开源的一款跨平台 [MQTT 5.0](https://www.emqx.com/zh/mqtt/mqtt5) 桌面测试客户端，支持 macOS、Linux、Windows 系统。MQTTX 的用户界面借助聊天软件的形式简化了页面的操作逻辑，用户可以快速创建多个同时在线的 **MQTT 客户端连接**，方便测试 MQTT/TCP、MQTT/TLS、MQTT/WebSocket 的**连接/发布/订阅**功能及其他 [MQTT 协议](https://www.emqx.com/zh/mqtt-guide)特性。
+[MQTTX](https://mqttx.app/zh) 是由全球领先的物联网数据基础设施软件供应商 [EMQ 映云科技](https://www.emqx.com/zh/about) 开源的一款跨平台 [MQTT 5.0](https://www.emqx.com/zh/blog/introduction-to-mqtt-5) 桌面测试客户端，支持 macOS、Linux、Windows 系统。MQTTX 的用户界面借助聊天软件的形式简化了页面的操作逻辑，用户可以快速创建多个同时在线的 **MQTT 客户端连接**，方便测试 MQTT/TCP、MQTT/TLS、MQTT/WebSocket 的**连接/发布/订阅**功能及其他 [MQTT 协议](https://www.emqx.com/zh/mqtt-guide)特性。
 
 
 MQTTX 网站：[https://mqttx.app/zh](https://mqttx.app/zh)

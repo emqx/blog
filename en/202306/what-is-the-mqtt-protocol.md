@@ -150,7 +150,7 @@ Four years after MQTT 3.1.1 was released and became an OASIS standard, MQTT 5.0 
 
 MQTT 5.0 adds several key features including session/message delay, reason codes, topic aliases, user properties, shared subscriptions and so on, which better meet the needs of modern IoT applications. It improves the performance, stability, and scalability of large systems. Currently, MQTT 5.0 has become the preferred protocol for most IoT enterprises, and we recommend that developers who are new to MQTT use this version directly.
 
-If you want to learn more about MQTT 5.0, you can try reading our [MQTT 5.0 Explore](https://www.emqx.com/en/mqtt/mqtt5) series of articles, which will introduce you to the important features of MQTT 5.0 in an easy-to-understand way.
+If you want to learn more about MQTT 5.0, you can try reading our [MQTT 5.0 Explore](https://www.emqx.com/en/blog/introduction-to-mqtt-5) series of articles, which will introduce you to the important features of MQTT 5.0 in an easy-to-understand way.
 
 ## Understanding Key MQTT Components
 

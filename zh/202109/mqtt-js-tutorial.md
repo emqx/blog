@@ -148,7 +148,7 @@ mqtt pub -t 'testtopic/hello' -h 'broker.emqx.io' -m 'from MQTT.js'
     - `payload`: 遗嘱发布的消息
     - `QoS`: 遗嘱发送的 QoS 值
     - `retain`: 遗嘱发布的消息的 retain 标志
-  - `properties`: [MQTT 5.0](https://www.emqx.com/zh/mqtt/mqtt5) 新增，可配置的对象的属性值，详情请参考：[https://github.com/mqttjs/MQTT.js#mqttclientstreambuilder-options](https://github.com/mqttjs/MQTT.js#mqttclientstreambuilder-options)
+  - `properties`: [MQTT 5.0](https://www.emqx.com/zh/blog/introduction-to-mqtt-5) 新增，可配置的对象的属性值，详情请参考：[https://github.com/mqttjs/MQTT.js#mqttclientstreambuilder-options](https://github.com/mqttjs/MQTT.js#mqttclientstreambuilder-options)
 
 - 如果需要配置 SSL/TLS 连接，Option 对象会被传递给 [`tls.connect()`](http://nodejs.org/api/tls.html#tls_tls_connect_options_callback) ，因此可以在 option 中配置以下属性
   - `rejectUnauthorized`: 是否验证服务端证书链和地址名称，设置为 false 时将跳过验证，会暴露在中间人的攻击之下，所以不建议在生产环境中使用这种配置，当设置为 true 时，将开启强认证模式，且如果是自签名证书，请在证书配置时设置 Alt name。

@@ -1,4 +1,4 @@
-2017 年 8 月，OASIS MQTT Technical Committee 正式发布了用于 Public Review 的 [MQTT 5.0](https://www.emqx.com/zh/mqtt/mqtt5) 的草案。2018 年，MQTT 5.0 正式发布，然而直到目前苹果生态里仍没有完整支持 MQTT 5.0 的客户端 SDK 。
+2017 年 8 月，OASIS MQTT Technical Committee 正式发布了用于 Public Review 的 [MQTT 5.0](https://www.emqx.com/zh/blog/introduction-to-mqtt-5) 的草案。2018 年，MQTT 5.0 正式发布，然而直到目前苹果生态里仍没有完整支持 MQTT 5.0 的客户端 SDK 。
 
 [CocoaMQTT](https://github.com/emqx/CocoaMQTT) 是 EMQ 团队为 iOS 开发者提供的 MQTT 客户端 SDK，目前在 iOS 开发者中有着较为广泛的使用。
 

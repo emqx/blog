@@ -6,7 +6,7 @@
 
 遗嘱消息可以看作是一个简化版的 PUBLISH 消息，他也包含 Topic, Payload, QoS 等字段。遗嘱消息会在设备与服务端连接时，通过 CONNECT 报文指定，然后在设备意外断线时由服务端将该遗嘱消息发布到连接时指定的遗嘱主题（Will Topic）上。这也意味着服务端必须在回复 CONNACK 之前完成遗嘱消息的存储，以确保之后任一时刻发生意外断线的情况，服务端都能保证遗嘱消息被发布。
 
-以下为遗嘱消息在 [MQTT 5.0](https://www.emqx.com/zh/mqtt/mqtt5) 和 MQTT 3.1 & 3.1.1 的差异：
+以下为遗嘱消息在 [MQTT 5.0](https://www.emqx.com/zh/blog/introduction-to-mqtt-5) 和 MQTT 3.1 & 3.1.1 的差异：
 
 |                 | MQTT 5.0 | MQTT 3.1 & 3.1.1 |
 | :-------------- | :------- | :--------------- |

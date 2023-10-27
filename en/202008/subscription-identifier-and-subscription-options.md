@@ -1,4 +1,4 @@
-MQTT v5 brings many new features, we will show these features in an easy-to-understand way and discuss the impact of these features on the developer. So far, we have discussed these [new features of MQTT v5](https://www.emqx.com/en/mqtt/mqtt5). Today, we will continue discussing: **subscription identifier** and **subscription options**.
+MQTT v5 brings many new features, we will show these features in an easy-to-understand way and discuss the impact of these features on the developer. So far, we have discussed these [new features of MQTT v5](https://www.emqx.com/en/blog/introduction-to-mqtt-5). Today, we will continue discussing: **subscription identifier** and **subscription options**.
 
 
 

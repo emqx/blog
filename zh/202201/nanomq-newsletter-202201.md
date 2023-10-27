@@ -116,7 +116,7 @@ NanoSDK 上个月增加了 TLS 支持，SSL/TLS 是对链接加密，是建立�
 
 ## 社区互动：关于 nanomsg 客户端与 NanoMQ 桥接模式的意见征集
 
-NanoMQ 从 NNG 中诞生并成长，致力于在边缘端为开源社区提供更灵活完整的消息总线工具。我们一直重视倾听社区的问题和呼声，虽然 MQTT 一直是最广泛使用的物联网协议，但其只支持 Pub/Sub（[MQTT 5.0](https://www.emqx.com/zh/mqtt/mqtt5) 支持 req/rep）模式使其不适合某些边缘场景内部点对点消息（brokerless）通信和 RPC 工作，而 nanomsg/nng 具有多种消息模式，在brokerless领域一直是广受用户喜爱的高性能库。
+NanoMQ 从 NNG 中诞生并成长，致力于在边缘端为开源社区提供更灵活完整的消息总线工具。我们一直重视倾听社区的问题和呼声，虽然 MQTT 一直是最广泛使用的物联网协议，但其只支持 Pub/Sub（[MQTT 5.0](https://www.emqx.com/zh/blog/introduction-to-mqtt-5) 支持 req/rep）模式使其不适合某些边缘场景内部点对点消息（brokerless）通信和 RPC 工作，而 nanomsg/nng 具有多种消息模式，在brokerless领域一直是广受用户喜爱的高性能库。
 
 结合 nanomsg/nng 带来的多种消息模式，以及 RPC 功能能够拓宽 NanoMQ 的使用场景并方便用户构建更灵活的边缘网络拓扑这一优势，我们计划在 NanoMQ 中支持nanomsg客户端与 NanoMQ 的桥接。关于如何定义桥接模式、协议转换规约和配置方式，我们在此诚挚地向各位征求意见。欢迎大家在 GitHub 项目的 Discussion 页面（[https://github.com/nanomq/nanomq/discussions/298](https://github.com/nanomq/nanomq/discussions/298) ）给我们留言，期待您的宝贵意见和建议。
 

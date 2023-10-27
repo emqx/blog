@@ -1,6 +1,6 @@
 In the digital era, data has gradually become the core value and key asset of enterprises, and data security is of great importance to every enterprise. In a complex network environment, enterprises are under pressure to prioritize enterprise data security.
 
-As a fully-managed [MQTT 5.0](https://www.emqx.com/en/mqtt/mqtt5) public cloud service, [EMQX Cloud](https://www.emqx.com/en/cloud) provides one-stop operation and management colocation and MQTT messaging services in a unique isolated environment. EMQ attaches great importance to user data security. Special focus is given to data security in the design of EMQX Cloud. Even when deployed on a public cloud, users do not need to worry about data leakage and other risks.
+As a fully-managed [MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5) public cloud service, [EMQX Cloud](https://www.emqx.com/en/cloud) provides one-stop operation and management colocation and MQTT messaging services in a unique isolated environment. EMQ attaches great importance to user data security. Special focus is given to data security in the design of EMQX Cloud. Even when deployed on a public cloud, users do not need to worry about data leakage and other risks.
 
 This article presents the data security mechanism of EMQX Cloud in five aspects: infrastructure, data communication, authentication and verification, permission management, and privacy data security.
 

@@ -4,7 +4,7 @@
 
 Dalam projek ini, kita akan mengkoneksikan ESP8266 ke [MQTT broker publik gratis](https://www.emqx.com/en/mqtt/public-mqtt5-broker) yang dioperasikan oleh [EMQX MQTT Cloud](https://www.emqx.com/en/cloud) dan memprogram ESP8266 dengan Arduino IDE.
 
-EMQX Cloud adalah sebuah platform servis cloud MQTT IoT aman yang diluncurkan oleh [EMQ](https://www.emqx.com/en). EMQX Cloud menyediakan operasi lengkap, membantu perawatan dan servis akses [MQTT 5.0](https://www.emqx.com/en/mqtt/mqtt5) dengan lingkungan unik yang terisolasi.
+EMQX Cloud adalah sebuah platform servis cloud MQTT IoT aman yang diluncurkan oleh [EMQ](https://www.emqx.com/en). EMQX Cloud menyediakan operasi lengkap, membantu perawatan dan servis akses [MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5) dengan lingkungan unik yang terisolasi.
 
 ## Komponen IoT yang diperlukan
 

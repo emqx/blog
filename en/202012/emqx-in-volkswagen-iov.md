@@ -12,7 +12,7 @@ In selecting the MQTT message broker for building the new platform, the SC depar
 
 ### Functionality
 
-Full support for the MQTT v3.1.1 protocol is required, and full support for the [MQTT v5.0](https://www.emqx.com/en/mqtt/mqtt5) protocol will be available at a later stage. For SAIC Volkswagen's scenarios in IoV applications, the following features also need to be supported:
+Full support for the MQTT v3.1.1 protocol is required, and full support for the [MQTT v5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5) protocol will be available at a later stage. For SAIC Volkswagen's scenarios in IoV applications, the following features also need to be supported:
 
 1. Support the persistence of the data reported by the vehicle and machine on the platform side to ensure that the data is not lost.
 1. In the scenario of POI sending, support to be informed at the platform side whether the feedback information of the message is received at the vehicle and machine side; the platform-side provides caching the data POI send and can set the caching time of POI to ensure that the sending message is not lost when the vehicle and machine are offline, and the message is automatically sent after going online.

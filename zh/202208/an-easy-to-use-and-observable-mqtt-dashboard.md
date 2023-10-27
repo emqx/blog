@@ -56,7 +56,7 @@ EMQX 5.0 的 Dashboard 使用了全新的 UI 设计风格。我们主要优化�
 
 在最新版本中，用户仅通过用户界面，就可以快速实现客户端认证授权机制的配置，无需编写代码或手动编辑配置文件，即可对接各类数据源与认证服务，实现各个级别与各类场景下的安全配置，以更高的开发效率获得更安全的保障。
 
-认证方式支持选择用户名或客户端 ID 加密码认证、JWT 配置以及 [MQTT 5.0](https://www.emqx.com/zh/mqtt/mqtt5) 中的增强认证功能。认证数据源信息可以选择 EMQX 的内置数据库存储和主流数据库，如 MySQL、MongoDB、PostgreSQL、Redis，也可直接使用 HTTP 服务。
+认证方式支持选择用户名或客户端 ID 加密码认证、JWT 配置以及 [MQTT 5.0](https://www.emqx.com/zh/blog/introduction-to-mqtt-5) 中的增强认证功能。认证数据源信息可以选择 EMQX 的内置数据库存储和主流数据库，如 MySQL、MongoDB、PostgreSQL、Redis，也可直接使用 HTTP 服务。
 
 对于发布和订阅时的权限校验配置，支持在页面内直接编辑 ACL 文件，或使用内置数据库，同样也支持直接使用 MySQL、MongoDB、PostgreSQL 和 Redis 等主流数据库来存储和配置授权信息。
 

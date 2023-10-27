@@ -1,4 +1,4 @@
-[EMQX Cloud](https://www.emqx.com/zh/cloud) 是 [EMQ 公司](https://www.emqx.com/zh/about)提供的一款全托管的物联网 [MQTT 5.0](https://www.emqx.com/zh/mqtt/mqtt5) 云服务产品。通过该产品，我们可以快速搭建出一个稳定可靠、功能完整、性能优异的 MQTT 5.0 物联网平台，帮助各类设备数据快速上云，进行后续的分析。
+[EMQX Cloud](https://www.emqx.com/zh/cloud) 是 [EMQ 公司](https://www.emqx.com/zh/about)提供的一款全托管的物联网 [MQTT 5.0](https://www.emqx.com/zh/blog/introduction-to-mqtt-5) 云服务产品。通过该产品，我们可以快速搭建出一个稳定可靠、功能完整、性能优异的 MQTT 5.0 物联网平台，帮助各类设备数据快速上云，进行后续的分析。
 
 在本教程中，我们将带您一步一步搭建一个物联网平台。在完成本教程后，您将了解:
 

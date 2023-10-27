@@ -1,4 +1,4 @@
-Recently, MQTTX v1.7.0 was officially released by EMQ. From this version, MQTTX will further support many new features of [MQTT 5.0](https://www.emqx.com/en/mqtt/mqtt5), which is the most complete desktop test client tool that supports MQTT 5.0 in the world so far.
+Recently, MQTTX v1.7.0 was officially released by EMQ. From this version, MQTTX will further support many new features of [MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5), which is the most complete desktop test client tool that supports MQTT 5.0 in the world so far.
 
  
 MQTTX website: [https://mqttx.app/](https://mqttx.app/) 
