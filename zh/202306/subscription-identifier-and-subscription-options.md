@@ -1,67 +1,61 @@
-## 为什么需要订阅标识符
+MQTT v5 带来了很多新的特性，我们会尽量以通俗易懂的方式展示这些特性，并探讨这些特性对开发者的影响。到目前为止，我们已经探讨过这些 [MQTT v5 新特性](https://www.emqx.com/zh/blog/introduction-to-mqtt-5)，今天我们将继续讨论： **订阅标识符** 和 **订阅选项**。
 
-在大部分 [MQTT 客户端](https://www.emqx.com/zh/mqtt-client-sdk)的实现中，都会通过回调机制来实现对新到达消息的处理。
 
-但是在回调函数中，我们只能知道消息的主题名是什么。如果是非通配符订阅，订阅时使用的主题过滤器将和消息中的主题名完全一致，所以我们可以直接建立订阅主题与回调函数的映射关系。然后在消息到达时，根据消息中的主题名查找并执行对应的回调函数。
+## 订阅标识符
 
-但如果是通配符订阅，消息中的主题名和订阅时的主题过滤器将是两个不同的字符串，我们只有将消息中的主题名与原始的订阅挨个进行主题匹配，才能确定应该执行哪个回调函数。这显然极大地影响了客户端的处理效率。
+客户端可以在订阅时指定一个订阅标识符，服务端将在订阅成功创建或修改时建立并存储该订阅与订阅标识符的映射关系。当有匹配该订阅的 PUBLISH 报文要转发给此客户端时，服务端会将与该订阅关联的订阅标识符随 PUBLISH 报文一并返回给客户端。
 
-![MQTT Subscription](https://assets.emqx.com/images/5b3b24a4406e4d342355138f90dd438b.png)
+因此，客户端可以建立订阅标识符与消息处理程序的映射，以在收到 PUBLISH 报文时直接通过订阅标识符将消息定向至对应的消息处理程序，这会远远快于通过主题匹配来查找消息处理程序的速度。
 
-另外，因为 MQTT 允许一个客户端建立多个订阅，那么当客户端使用通配符订阅时，一条消息可能同时与一个客户端的多个订阅匹配。
+![image20200723152010505.png](https://assets.emqx.com/images/6690eae3f5a79e9f19da8bf64c2466eb.png)
 
-对于这种情况，MQTT 允许服务端为这些重叠的订阅分别发送一次消息，也允许服务端为这些重叠的订阅只发送一条消息，前者意味着客户端将收到多条重复的消息。
+由于 SUBSCRIBE 报文支持包含多个订阅，因此可能出现多个订阅关联到同一个订阅标识符的情况。即便是分开订阅，也可能出现这种情况，但这是被允许的，只是用户应当意识到这样使用可能引起的后果。根据客户端的实际订阅情况，最终客户端收到的 PUBLISH 报文中可能包含多个订阅标识符，这些标识符可能完全不同，也可能有些是相同的，以下是几种常见的情况：
 
-而不管是前者还是后者，客户端都不能确定消息来自于哪个或者哪些订阅。因为即使客户端发现某条消息同时与自己的两个订阅相匹配，也不能保证在服务端向自己转发这条消息时，这两个订阅是否都已经成功创建了。所以，客户端无法为消息触发正确的回调。
+1. 客户端订阅主题 `a` 并指定订阅标识符为 1，订阅主题 `b` 并指定订阅标识符为 2。由于使用了不同的订阅标识符，主题为 `a` 和 `b` 的消息能够被定向至不同的消息处理程序。
+2. 客户端订阅主题 `a` 并指定订阅标识符为 1，订阅主题 `b` 并指定订阅标识符为 1。由于使用了相同的订阅标识符，主题为 `a` 和 `b` 的消息都将被定向至同一个消息处理程序。
+3. 客户端订阅主题 `a/+` 并指定订阅标识符为 1，订阅主题 `a/b` 并指定订阅标识符为 1。主题为 `a/b` 的 PUBLISH 报文将会携带两个相同的订阅标识符，对应的消息处理程序将被触发两次。
+4. 客户端订阅主题 `a/+` 并指定订阅标识符为 1，订阅主题 `a/b` 并指定订阅标识符为 2。主题为 `a/b` 的 PUBLISH 报文将会携带两个不同的订阅标识符，一个消息将触发两个不同的消息处理程序。
 
-![MQTT Subscription](https://assets.emqx.com/images/3a86d62e52c9bfcef85ba590d14c4a19.png)
+![image20200723152040226.png](https://assets.emqx.com/images/1835b90edea8dfd41acbcc3d186ca736.png)
 
-## 订阅标识符的工作原理
+这种 PUBLISH 报文中携带多个订阅标识符的情况，在消息速率低的时候通常不成问题，但在消息速率高时可能会引发一些性能问题，因此我们建议您尽量确保这种情况的出现都是您有意为之。
 
-为了解决这个问题，MQTT 5.0 引入了订阅标识符。它的用法非常简单，客户端可以在订阅时指定一个订阅标识符，服务端则需要存储该订阅与订阅标识符的映射关系。当有匹配该订阅的 PUBLISH 报文要转发给此客户端时，服务端会将与该订阅关联的订阅标识符随 PUBLISH 报文一并返回给客户端。
+## 订阅选项
 
-![Subscription Identifier](https://assets.emqx.com/images/f9f1cf19de90a4e03647dbe52d69f7e7.png)
+在 MQTT v5 中，你可以使用更多的订阅选项来改变服务端的行为。
 
-如果服务端选择为重叠的订阅分别发送一次消息，那么每个 PUBLISH 报文都应该包含与订阅相匹配的订阅标识符，而如果服务端选择为重叠的订阅只发送一条消息，那么 PUBLISH 报文将包含多个订阅标识符。
+![image20200723161859058.png](https://assets.emqx.com/images/388006885ad0edbc4705b9a23e94295a.png)
 
-客户端只需要建立订阅标识符与回调函数的映射，就可以通过消息中的订阅标识符得知这个消息来自哪个订阅，以及应该执行哪个回调函数。
+### QoS
 
-![MQTT Subscription](https://assets.emqx.com/images/7ba966d802c9ee39683870366f5fd7c7.png)
+参见 [MQTT 消息服务质量等级](https://www.emqx.com/zh/blog/introduction-to-mqtt-qos)。
 
-在客户端中，订阅标识符并不属于会话状态的一部分，将订阅标识符和什么内容进行关联，完全由客户端决定。所以除了回调函数，我们也可以建立订阅标识符与订阅主题的映射，或者建立与 Client ID 的映射。后者在转发服务端消息给客户端的网关中非常有用。当消息从服务端到达网关，网关只要根据订阅标识符就能够知道应该将消息转发给哪个客户端，而不需要重新做一次主题的匹配和路由。
+### No Local
 
-一个订阅报文只能包含一个订阅标识符，如果一个订阅报文中有多个订阅请求，那么这个订阅标识符将同时和这些订阅相关联。所以请尽量确保将多个订阅关联至同一个回调是您有意为之的。
+在 MQTT v3.1.1 中，如果你订阅了自己发布消息的主题，那么你将收到自己发布的所有消息。
 
-## 如何使用订阅标识符
+而在 MQTT v5 中，如果你在订阅时将此选项设置为 1，那么服务端将不会向你转发你自己发布的消息。
 
-1. 在 Web 浏览器上访问 [MQTTX Web](http://www.emqx.io/online-mqtt-client)。
 
-2. 创建一个使用 WebSocket 的 MQTT 连接，并且连接免费的 [公共 MQTT 服务器](https://www.emqx.com/zh/mqtt/public-mqtt5-broker)：
+### Retain As Publish
 
-   ![MQTT over WebSocket](https://assets.emqx.com/images/e1c10cbd018d0742f21f3b371ec89c6a.png)
+这一选项用来指定服务端向客户端转发消息时是否要保留其中的 RETAIN 标识，注意这一选项不会影响[保留消息](https://www.emqx.com/zh/blog/message-retention-and-message-expiration-interval-of-emqx-mqtt5-broker)中的 RETAIN 标识。因此当 Retain As Publish 选项被设置为 0 时，客户端直接依靠消息中的 RETAIN 标识来区分这是一个正常的转发消息还是一个保留消息，而不是去判断消息是否是自己订阅后收到的第一个消息（转发消息甚至可能会先于保留消息被发送，视不同 Broker 的具体实现而定）。
 
-3. 连接成功后，我们先订阅主题 `mqttx_4299c767/home/+`，并指定 Subscription Identifier 为 1，然后订阅主题 `mqttx_4299c767/home/PM2_5`，并指定 Subscription Identifier 为 2。由于公共服务器可能同时被很多人使用，为了避免主题与别人重复，这里我们将 Client ID 作为主题前缀：
 
-   ![New Subscription 1](https://assets.emqx.com/images/f3c0aed851e02f20aae69cf100b167d6.png)
+### Retain Handling
 
-   ![New Subscription 2](https://assets.emqx.com/images/212728b6ae71b5baf73a860f75d4545a.png)
+这一选项用来指定订阅建立时服务端是否向客户端发送保留消息：
 
-4. 订阅成功后，我们向主题 `mqttx_4299c767/home/PM2_5` 发布一条消息。我们将看到当前客户端收到了两条消息，消息中的 Subscription Identifier 分别为 1 和 2。这是因为 EMQX 的实现是为重叠的订阅分别发送一条消息：
-
-   ![Receive MQTT Messages](https://assets.emqx.com/images/fd38994dea83422bb31a85b5c14711b1.png)
-
-5. 而如果我们向主题 `mqttx_4299c767/home/temperature` 发布一条消息，我们将看到收到消息中的 Subscription Identifier 为 1：
-
-   ![image.png](https://assets.emqx.com/images/f0a2dba909a1efa8fab0b07ea961a959.png)
-
-到这里，我们通过 MQTTX 演示了如何为订阅设置 Subscription Identifier。如果你仍然好奇如何根据 Subscription Identifier 来触发不同的回调，可以在 [这里](https://github.com/emqx/MQTT-Feature-Examples)  获取 Subscription Identifier 的 Python 示例代码。
+- **Retain Handling 等于 0**，只要客户端订阅成功，服务端就发送保留消息。
+- **Retain Handling 等于 1**，客户端订阅成功且该订阅此前不存在，服务端才发送保留消息。毕竟有些时候客户端重新发起订阅可能只是为了改变一下 QoS，并不意味着它想再次接收保留消息。
+- **Retain Handling 等于 2**，即便客户订阅成功，服务端也不会发送保留消息。
 
 
 
 <section class="promotion">
     <div>
         免费试用 EMQX Cloud
-        <div class="is-size-14 is-text-normal has-text-weight-normal">全托管的 MQTT 消息云服务</div>
+        <div class="is-size-14 is-text-normal has-text-weight-normal">全托管的云原生 MQTT 消息服务</div>
     </div>
-    <a href="https://accounts-zh.emqx.com/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a>
+    <a href="https://accounts-zh.emqx.com/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a >
 </section>
