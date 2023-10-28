@@ -182,6 +182,8 @@ Explore more with & via EMQ.
 ## [EMQX Open Source | Broker](https://www.emqx.com/zh/blog/category/emqx)
 EMQX is the world's most scalable open-source MQTT broker with a high performance that connects 100M+ IoT devices in 1 cluster, while maintaining 1M message per second throughput and sub-millisecond latency.
 
+- [MQTT 性能测试入门指南：快速构建可靠测试平台](https://www.emqx.com/zh/blog/a-beginner-guide-to-mqtt-performance-testing) ([Edit](https://github.com/emqx/blog/blob/main/zh/202310/a-beginner-guide-to-mqtt-performance-testing.md))
+- [EMQX 与 MQTT: AI 大模型时代的分布式数据中枢](https://www.emqx.com/zh/blog/emqx-mqtt-and-ai) ([Edit](https://github.com/emqx/blog/blob/main/zh/202310/emqx-mqtt-and-ai.md))
 - [利用 MQTT over QUIC 解决地址变化问题](https://www.emqx.com/zh/blog/overcoming-address-change-with-mqtt-over-quic) ([Edit](https://github.com/emqx/blog/blob/main/zh/202307/overcoming-address-change-with-mqtt-over-quic.md))
 - [使用 EMQX 和 eKuiper 进行 MQTT 流处理：快速教程](https://www.emqx.com/zh/blog/mqtt-stream-processing-with-emqx-and-ekuiper) ([Edit](https://github.com/emqx/blog/blob/main/zh/202306/mqtt-stream-processing-with-emqx-and-ekuiper.md))
 - [基于 EMQX 和 Neuron 的工业物联网 MQTT Sparkplug 解决方案](https://www.emqx.com/zh/blog/mqtt-sparkplug-solution-for-industrial-iot-using-emqx-and-neuron) ([Edit](https://github.com/emqx/blog/blob/main/zh/202306/mqtt-sparkplug-solution-for-industrial-iot-using-emqx-and-neuron.md))
@@ -369,6 +371,7 @@ The easiest way to start MQTT service. Connect your IoT devices to any cloud wit
 ## [EMQX Enterprise](https://www.emqx.com/zh/blog/category/enterprise)
 The world's most scalable and reliable MQTT messaging platform to connect, move and process your data in business-critical scenarios for the IoT era.
 
+- [EMQX 与 MQTT: AI 大模型时代的分布式数据中枢](https://www.emqx.com/zh/blog/emqx-mqtt-and-ai) ([Edit](https://github.com/emqx/blog/blob/main/zh/202310/emqx-mqtt-and-ai.md))
 - [EMQX Enterprise 4.4.21 发布：支持 Confluent 集成](https://www.emqx.com/zh/blog/emqx-enterprise-4-4-21-release-notes) ([Edit](https://github.com/emqx/blog/blob/main/zh/202310/emqx-enterprise-4-4-21-release-notes.md))
 - [EMQX Enterprise 5.3 发布：审计日志、Dashboard 访问权限控制与 SSO 一站登录](https://www.emqx.com/zh/blog/emqx-enterprise-5-3-release-notes) ([Edit](https://github.com/emqx/blog/blob/main/zh/202310/emqx-enterprise-5-3-release-notes.md))
 - [EMQX Enterprise 5.2.1 发布：改进产品稳定性](https://www.emqx.com/zh/blog/emqx-enterprise-5-2-1-release-notes) ([Edit](https://github.com/emqx/blog/blob/main/zh/202310/emqx-enterprise-5-2-1-release-notes.md))
@@ -650,6 +653,7 @@ eKuiper is an edge lightweight IoT data analytics / streaming software implement
 ## [XMeter](https://www.emqx.com/zh/blog/category/xmeter)
 XMeter support millions of simulated users, concurrent device connections, and message throughput performance testing. XMeter support the testing of many IoT protocols such as MQTT, LwM2M/CoAP, and can extend richer test scenarios and protocol support for IoT applications.
 
+- [MQTT 性能测试入门指南：快速构建可靠测试平台](https://www.emqx.com/zh/blog/a-beginner-guide-to-mqtt-performance-testing) ([Edit](https://github.com/emqx/blog/blob/main/zh/202310/a-beginner-guide-to-mqtt-performance-testing.md))
 - [企业版 3.3.0 发布，支持容器化部署｜XMeter Newsletter 202305](https://www.emqx.com/zh/blog/xmeter-newsletter-202305) ([Edit](https://github.com/emqx/blog/blob/main/zh/202306/xmeter-newsletter-202305.md))
 - [企业版即将升级安装部署方式｜XMeter Newsletter 202304](https://www.emqx.com/zh/blog/xmeter-newsletter-202304) ([Edit](https://github.com/emqx/blog/blob/main/zh/202305/xmeter-newsletter-202304.md))
 - [物联网多协议、多场景自定义测试｜XMeter Cloud 更新](https://www.emqx.com/zh/blog/xmeter-cloud-update-iot-multi-protocol-support) ([Edit](https://github.com/emqx/blog/blob/main/zh/202304/xmeter-cloud-update-iot-multi-protocol-support.md))
@@ -705,6 +709,7 @@ Accelerate digital transformation of industries based on EMQ data infrastructure
 ## [IoT Testing](https://www.emqx.com/zh/blog/category/iot-testing)
 Guarantee the availability and reliability of the IoT platform.
 
+- [MQTT 性能测试入门指南：快速构建可靠测试平台](https://www.emqx.com/zh/blog/a-beginner-guide-to-mqtt-performance-testing) ([Edit](https://github.com/emqx/blog/blob/main/zh/202310/a-beginner-guide-to-mqtt-performance-testing.md))
 - [MQTT 性能测试入门：常见测试场景和指标](https://www.emqx.com/zh/blog/getting-started-with-mqtt-performance-testing-a-primer-on-scenarios-and-metrics) ([Edit](https://github.com/emqx/blog/blob/main/zh/202306/getting-started-with-mqtt-performance-testing-a-primer-on-scenarios-and-metrics.md))
 - [构建可靠的物联网系统：了解 MQTT 性能测试](https://www.emqx.com/zh/blog/building-reliable-iot-systems-an-introduction-to-mqtt-performance-testing) ([Edit](https://github.com/emqx/blog/blob/main/zh/202305/building-reliable-iot-systems-an-introduction-to-mqtt-performance-testing.md))
 - [MQTT 开放基准测试规范：全面评估你的 MQTT Broker 性能](https://www.emqx.com/zh/blog/open-mqtt-benchmark-suite-the-ultimate-guide-to-mqtt-performance-testing) ([Edit](https://github.com/emqx/blog/blob/main/zh/202304/open-mqtt-benchmark-suite-the-ultimate-guide-to-mqtt-performance-testing.md))
