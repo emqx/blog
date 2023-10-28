@@ -22,6 +22,26 @@ By leveraging QUIC transport, the following benefits can be observed:
 
 By adopting MQTT over QUIC, IoT applications can benefit from improved scalability, reduced load on the MQTT broker, and simplified development and testing processes in the presence of client source address changes. 
 
+<section
+  class="is-hidden-touch my-32 is-flex is-align-items-center"
+  style="border-radius: 16px; background: linear-gradient(102deg, #edf6ff 1.81%, #eff2ff 97.99%); padding: 32px 48px;"
+>
+  <div class="mr-40" style="flex-shrink: 0;">
+    <img loading="lazy" src="https://assets.emqx.com/images/129d83b2aebdc64d6c1385236677b310.png" alt="MQTT over QUIC" width="160" height="226">
+  </div>
+  <div>
+    <div class="mb-4 is-size-3 is-text-black has-text-weight-semibold" style="
+    line-height: 1.2;
+">
+      Next-Gen Standard Protocol for IoV
+    </div>
+    <div class="mb-32">
+      Revolutionizing IoV messaging with MQTT over QUIC.
+    </div>
+    <a href="https://www.emqx.com/en/resources/mqtt-over-quic-revolutionizing-iov-messaging-with-the-next-gen-standard-protocol?utm_campaign=embedded-mqtt-over-quic&from=blog-overcoming-address-change-with-mqtt-over-quic" class="button is-gradient">Get the Whitepaper →</a>
+  </div>
+</section>
+
 ## Demo:  Address/Connection Migration in MQTT over QUIC
 
 In this chapter, we will walk you through a step-by-step demonstration of the client address migration feature in MQTT over QUIC. We will assume that you have a basic understanding of [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) and some familiarity with the concept of QUIC. 
