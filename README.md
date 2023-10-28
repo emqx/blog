@@ -353,6 +353,7 @@ The easiest way to start MQTT service. Connect your IoT devices to any cloud wit
 ## [EMQX Enterprise](https://www.emqx.com/en/blog/category/enterprise)
 The world's most scalable and reliable MQTT messaging platform to connect, move and process your data in business-critical scenarios for the IoT era.
 
+- [Building an IoT Time-Series Data Application for Energy Storage with MQTT and InfluxDB](https://www.emqx.com/en/blog/building-an-iot-time-series-data-application-with-mqtt-and-influxdb) ([Edit](https://github.com/emqx/blog/blob/main/en/202310/building-an-iot-time-series-data-application-with-mqtt-and-influxdb.md))
 - [Smart Ship: Sailing into a New Era with MQTT and EMQX](https://www.emqx.com/en/blog/smart-ship-sailing-into-a-new-era-with-mqtt-and-emqx) ([Edit](https://github.com/emqx/blog/blob/main/en/202310/smart-ship-sailing-into-a-new-era-with-mqtt-and-emqx.md))
 - [EMQX Enterprise 5.3 Released: Audit Logs, Dashboard RBAC, and SSO One-Stop Login](https://www.emqx.com/en/blog/emqx-enterprise-5-3-release-notes) ([Edit](https://github.com/emqx/blog/blob/main/en/202310/emqx-enterprise-5-3-release-notes.md))
 - [Exploring the Extensibility of EMQX: A Deep Dive into its Plugin Mechanism in Version 5](https://www.emqx.com/en/blog/exploring-the-extensibility-of-emqx) ([Edit](https://github.com/emqx/blog/blob/main/en/202310/exploring-the-extensibility-of-emqx.md))

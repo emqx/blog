@@ -33,6 +33,26 @@ Based on a large number of IoV user cases and experiences, EMQ has introduced a 
 
 In this solution, we use [eKuiper, the stream processing at the IoT Edge](https://ekuiper.org) to implement flexible data collect on in-vehicle terminals; and adopt [EMQX, the large-scale distributed IoT MQTT broker](https://www.emqx.com/en/products/emqx) to realize the connection, movement and processing of the collected data as well as the control command interaction of the integrated vehicle-cloud. In previous articles on the IoV, we have introduced[ the architecture design of Internet of Vehicles messaging platform based on EMQX](https://www.emqx.com/en/blog/mqtt-messaging-platform-for-internet-of-vehicles) in detail. So, we will not repeat it in this article. Next, this article will use eKuiper to introduce how to achieve flexible data collection for IoV.
 
+<section
+  class="is-hidden-touch my-32 is-flex is-align-items-center"
+  style="border-radius: 16px; background: linear-gradient(102deg, #edf6ff 1.81%, #eff2ff 97.99%); padding: 32px 48px;"
+>
+  <div class="mr-40" style="flex-shrink: 0;">
+    <img loading="lazy" src="https://assets.emqx.com/images/129d83b2aebdc64d6c1385236677b310.png" alt="MQTT over QUIC" width="160" height="226">
+  </div>
+  <div>
+    <div class="mb-4 is-size-3 is-text-black has-text-weight-semibold" style="
+    line-height: 1.2;
+">
+      Next-Gen Standard Protocol for IoV
+    </div>
+    <div class="mb-32">
+      Revolutionizing IoV messaging with MQTT over QUIC.
+    </div>
+    <a href="https://www.emqx.com/en/resources/mqtt-over-quic-revolutionizing-iov-messaging-with-the-next-gen-standard-protocol?utm_campaign=embedded-mqtt-over-quic&from=blog-how-to-achieve-flexible-data-collection-for-internet-of-vehicles" class="button is-gradient">Get the Whitepaper →</a>
+  </div>
+</section>
+
 ## The flexible data collection solution explained
 
 LF Edge eKuiper (abbreviated as eKuiper) is an open-source lightweight data analysis and streaming computing engine. eKuiper is highly compatible and can be adapted to a wide range of CPU architectures such as X86 and ARM vehicle terminals. The software is lightweight and cuttable, with a core package and initial runtime memory in the 10MB level, supporting a wide range of data processing and computation with high throughput and low latency. In the solution, eKuiper is deployed on the vehicle terminal as the core, achieving near real-time flexible data acquisition, processing, and forwarding.
