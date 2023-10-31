@@ -524,6 +524,7 @@ MQTTX is a Fully Open-source MQTT 5.0 cross-platform Desktop Client, makes it ea
 ## [Neuron - IIoT Connectivity Server](https://www.emqx.com/zh/blog/category/neuron)
 IoT edge industrial protocol gateway software, which supports one-stop access to dozens of industrial protocols and converts them into MQTT protocol to access the cloud industrial IoT platform. It just requires ultra-low resource consumption, and supports three major architectures of X86, ARM, and MIPS.
 
+- [Neuron 2.6.0 发布：新增 SECS GEM HSMS 和 KUKA Ethernet KRL TCP 驱动以及格物平台对接](https://www.emqx.com/zh/blog/neuron-v-2-6-0-release-notes) ([Edit](https://github.com/emqx/blog/blob/main/zh/202310/neuron-v-2-6-0-release-notes.md))
 - [工业物联网数据桥接教程：FINS 桥接到 MQTT](https://www.emqx.com/zh/blog/bridging-fins-data-to-mqtt) ([Edit](https://github.com/emqx/blog/blob/main/zh/202308/bridging-fins-data-to-mqtt.md))
 - [MQTT Sparkplug 实战：使用 EMQX 与 Neuron 构建 MQTT Sparkplug 方案](https://www.emqx.com/zh/blog/mqtt-sparkplug-in-action-a-step-by-step-tutorial) ([Edit](https://github.com/emqx/blog/blob/main/zh/202308/mqtt-sparkplug-in-action-a-step-by-step-tutorial.md))
 - [Neuron 2.5.1 发布：使用基于南向设备的模版简化 IIoT 平台管理](https://www.emqx.com/zh/blog/neuron-v-2-5-1-release-notes) ([Edit](https://github.com/emqx/blog/blob/main/zh/202307/neuron-v-2-5-1-release-notes.md))

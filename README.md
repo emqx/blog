@@ -157,6 +157,7 @@ Best practice of MQTT in various clients.
 ## [MQTT Integration (Eco & Integration)](https://www.emqx.com/en/blog/category/eco-and-integration)
 Explore more with & via EMQ.
 
+- [Home Assistant Modbus: 4 Things You Can Build](https://www.emqx.com/en/blog/home-assistant-modbus) ([Edit](https://github.com/emqx/blog/blob/main/en/202310/home-assistant-modbus.md))
 - [OpenTelemetry: The Basics & Benefits for MQTT and IoT Observability](https://www.emqx.com/en/blog/open-telemetry-the-basics-and-benefits-for-mqtt-and-iot-observability) ([Edit](https://github.com/emqx/blog/blob/main/en/202310/open-telemetry-the-basics-and-benefits-for-mqtt-and-iot-observability.md))
 - [Build an IoT Time-Series Data Application for Industrial Energy Monitoring with MQTT and Timescale](https://www.emqx.com/en/blog/build-an-iot-time-series-data-application-for-energy-storage-with-mqtt-and-timescale) ([Edit](https://github.com/emqx/blog/blob/main/en/202309/build-an-iot-time-series-data-application-for-energy-storage-with-mqtt-and-timescale.md))
 - [AWS MQTT: Managing IoT Communication in AWS (with Tutorial)](https://www.emqx.com/en/blog/aws-mqtt-managing-iot-communication-in-aws) ([Edit](https://github.com/emqx/blog/blob/main/en/202309/aws-mqtt-managing-iot-communication-in-aws.md))
