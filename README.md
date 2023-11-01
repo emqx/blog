@@ -26,7 +26,7 @@ Get to know the preferred protocol in IoT from beginner to master.
 - [MQTT Topics and Wildcards: A Beginner's Guide](https://www.emqx.com/en/blog/advanced-features-of-mqtt-topics) ([Edit](https://github.com/emqx/blog/blob/main/en/202306/advanced-features-of-mqtt-topics.md))
 - [MQTT Reason Code Introduction and Quick Reference](https://www.emqx.com/en/blog/mqtt5-new-features-reason-code-and-ack) ([Edit](https://github.com/emqx/blog/blob/main/en/202306/mqtt5-new-features-reason-code-and-ack.md))
 - [An Introduction to Subscription Options in MQTT](https://www.emqx.com/en/blog/an-introduction-to-subscription-options-in-mqtt) ([Edit](https://github.com/emqx/blog/blob/main/en/202306/an-introduction-to-subscription-options-in-mqtt.md))
-- [MQTT Protocol: How It Works & Core Concepts Explained](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) ([Edit](https://github.com/emqx/blog/blob/main/en/202305/the-easiest-guide-to-getting-started-with-mqtt.md))
+- [What Is the MQTT Protocol and How Does it Work?](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) ([Edit](https://github.com/emqx/blog/blob/main/en/202305/the-easiest-guide-to-getting-started-with-mqtt.md))
 - [Shaping the Future of IoT: 7 MQTT Technology Trends in 2023](https://www.emqx.com/en/blog/7-mqtt-trends-in-2023) ([Edit](https://github.com/emqx/blog/blob/main/en/202303/7-mqtt-trends-in-2023.md))
 - [Introduction to MQTT Publish-Subscribe Pattern](https://www.emqx.com/en/blog/mqtt-5-introduction-to-publish-subscribe-model) ([Edit](https://github.com/emqx/blog/blob/main/en/202303/mqtt-5-introduction-to-publish-subscribe-model.md))
 - [MQTT QoS 0, 1, 2 Explained: A Quickstart Guide](https://www.emqx.com/en/blog/introduction-to-mqtt-qos) ([Edit](https://github.com/emqx/blog/blob/main/en/202301/introduction-to-mqtt-qos.md))
@@ -111,7 +111,7 @@ Best practice of MQTT in various clients.
 - [Connecting to Serverless MQTT Broker with MQTTNet in C#](https://www.emqx.com/en/blog/connecting-to-serverless-mqtt-broker-with-mqttnet-in-csharp) ([Edit](https://github.com/emqx/blog/blob/main/en/202306/connecting-to-serverless-mqtt-broker-with-mqttnet-in-csharp.md))
 - [How to Use MQTT on Raspberry Pi with Paho Python Client](https://www.emqx.com/en/blog/use-mqtt-with-raspberry-pi) ([Edit](https://github.com/emqx/blog/blob/main/en/202306/use-mqtt-with-raspberry-pi.md))
 - [JavaScript MQTT Client: A Beginner's Guide to MQTT.js](https://www.emqx.com/en/blog/mqtt-js-tutorial) ([Edit](https://github.com/emqx/blog/blob/main/en/202305/mqtt-js-tutorial.md))
-- [How to Use MQTT in Node.js](https://www.emqx.com/en/blog/how-to-use-mqtt-in-nodejs) ([Edit](https://github.com/emqx/blog/blob/main/en/202305/how-to-use-mqtt-in-nodejs.md))
+- [MQTT with Node.js: A Beginner's Guide with Examples & FAQs](https://www.emqx.com/en/blog/how-to-use-mqtt-in-nodejs) ([Edit](https://github.com/emqx/blog/blob/main/en/202305/how-to-use-mqtt-in-nodejs.md))
 - [How to Use MQTT in Python with Paho Client](https://www.emqx.com/en/blog/how-to-use-mqtt-in-python) ([Edit](https://github.com/emqx/blog/blob/main/en/202305/how-to-use-mqtt-in-python.md))
 - [How to Use MQTT in Dart](https://www.emqx.com/en/blog/how-to-use-mqtt-in-dart) ([Edit](https://github.com/emqx/blog/blob/main/en/202211/how-to-use-mqtt-in-dart.md))
 - [How to Use MQTT in The Django Project](https://www.emqx.com/en/blog/how-to-use-mqtt-in-django) ([Edit](https://github.com/emqx/blog/blob/main/en/202210/how-to-use-mqtt-in-django.md))
@@ -157,6 +157,7 @@ Best practice of MQTT in various clients.
 ## [MQTT Integration (Eco & Integration)](https://www.emqx.com/en/blog/category/eco-and-integration)
 Explore more with & via EMQ.
 
+- [Home Assistant Modbus: 4 Things You Can Build](https://www.emqx.com/en/blog/home-assistant-modbus) ([Edit](https://github.com/emqx/blog/blob/main/en/202310/home-assistant-modbus.md))
 - [OpenTelemetry: The Basics & Benefits for MQTT and IoT Observability](https://www.emqx.com/en/blog/open-telemetry-the-basics-and-benefits-for-mqtt-and-iot-observability) ([Edit](https://github.com/emqx/blog/blob/main/en/202310/open-telemetry-the-basics-and-benefits-for-mqtt-and-iot-observability.md))
 - [Build an IoT Time-Series Data Application for Industrial Energy Monitoring with MQTT and Timescale](https://www.emqx.com/en/blog/build-an-iot-time-series-data-application-for-energy-storage-with-mqtt-and-timescale) ([Edit](https://github.com/emqx/blog/blob/main/en/202309/build-an-iot-time-series-data-application-for-energy-storage-with-mqtt-and-timescale.md))
 - [AWS MQTT: Managing IoT Communication in AWS (with Tutorial)](https://www.emqx.com/en/blog/aws-mqtt-managing-iot-communication-in-aws) ([Edit](https://github.com/emqx/blog/blob/main/en/202309/aws-mqtt-managing-iot-communication-in-aws.md))
@@ -427,6 +428,7 @@ Build a reliable, efficient and industry-specific Internet of Vehicles platform 
 
 ## [Industrial IoT | Unified Namespace | Sparkplug](https://www.emqx.com/en/blog/category/industrial-iot)
 
+- [TwinCAT Protocol: Evolution and Architecture](https://www.emqx.com/en/blog/twincat-protocol) ([Edit](https://github.com/emqx/blog/blob/main/en/202310/twincat-protocol.md))
 - [Consolidating the Foundation of Smart Manufacturing with EMQX and Neuron](https://www.emqx.com/en/blog/consolidating-the-foundation-of-smart-manufacturing-with-emqx-and-neuron) ([Edit](https://github.com/emqx/blog/blob/main/en/202310/consolidating-the-foundation-of-smart-manufacturing-with-emqx-and-neuron.md))
 - [18 Industrial IoT Applications and Why You Need Them](https://www.emqx.com/en/blog/industrial-iot-applications) ([Edit](https://github.com/emqx/blog/blob/main/en/202310/industrial-iot-applications.md))
 - [Omron FINS Protocol: The Basics & Its Benefits of Bridging to MQTT](https://www.emqx.com/en/blog/omron-fins-protocol) ([Edit](https://github.com/emqx/blog/blob/main/en/202310/omron-fins-protocol.md))

@@ -7,6 +7,7 @@
 ## [MQTT Tutorials](https://www.emqx.com/zh/blog/category/mqtt-protocol)
 Get to know the preferred protocol in IoT from beginner to master.
 
+- [MQTT 5：7 项新功能以及迁移注意事项](https://www.emqx.com/zh/blog/introduction-to-mqtt-5) ([Edit](https://github.com/emqx/blog/blob/main/zh/202310/introduction-to-mqtt-5.md))
 - [Clean Start 与 Session Expiry Interval 介绍与示例 | MQTT 5.0 特性详解](https://www.emqx.com/zh/blog/mqtt5-new-feature-clean-start-and-session-expiry-interval) ([Edit](https://github.com/emqx/blog/blob/main/zh/202310/mqtt5-new-feature-clean-start-and-session-expiry-interval.md))
 - [Payload Format Indicator 和 Content Type 介绍与示例 ｜ MQTT 5.0 特性详解](https://www.emqx.com/zh/blog/mqtt5-new-features-payload-format-indicator-and-content-type) ([Edit](https://github.com/emqx/blog/blob/main/zh/202309/mqtt5-new-features-payload-format-indicator-and-content-type.md))
 - [MQTT 5.0 报文解析 06：AUTH](https://www.emqx.com/zh/blog/mqtt-5-0-control-packets-06-auth) ([Edit](https://github.com/emqx/blog/blob/main/zh/202309/mqtt-5-0-control-packets-06-auth.md))
@@ -43,7 +44,6 @@ Get to know the preferred protocol in IoT from beginner to master.
 - [MQTT 5.0 连接属性](https://www.emqx.com/zh/blog/mqtt5-connect-properties) ([Edit](https://github.com/emqx/blog/blob/main/zh/202112/mqtt5-connect-properties.md))
 - [用户属性 - MQTT 5.0 新特性](https://www.emqx.com/zh/blog/mqtt5-user-properties) ([Edit](https://github.com/emqx/blog/blob/main/zh/202111/mqtt5-user-properties.md))
 - [请求响应 - MQTT 5.0 新特性](https://www.emqx.com/zh/blog/mqtt5-request-response) ([Edit](https://github.com/emqx/blog/blob/main/zh/202009/mqtt5-request-response.md))
-- [MQTT 5.0 介绍](https://www.emqx.com/zh/blog/introduction-to-mqtt-5) ([Edit](https://github.com/emqx/blog/blob/main/zh/202009/introduction-to-mqtt-5.md))
 - [增强认证 - MQTT 5.0 新特性](https://www.emqx.com/zh/blog/mqtt5-enhanced-authentication) ([Edit](https://github.com/emqx/blog/blob/main/zh/202008/mqtt5-enhanced-authentication.md))
 - [MQTT 协议 10 分钟快速入门](https://www.emqx.com/zh/blog/get-started-with-mqtt-in-ten-mins) ([Edit](https://github.com/emqx/blog/blob/main/zh/202008/get-started-with-mqtt-in-ten-mins.md))
 - [流量控制 - MQTT 5.0 新特性](https://www.emqx.com/zh/blog/mqtt5-flow-control) ([Edit](https://github.com/emqx/blog/blob/main/zh/202008/mqtt5-flow-control.md))
@@ -524,6 +524,7 @@ MQTTX is a Fully Open-source MQTT 5.0 cross-platform Desktop Client, makes it ea
 ## [Neuron - IIoT Connectivity Server](https://www.emqx.com/zh/blog/category/neuron)
 IoT edge industrial protocol gateway software, which supports one-stop access to dozens of industrial protocols and converts them into MQTT protocol to access the cloud industrial IoT platform. It just requires ultra-low resource consumption, and supports three major architectures of X86, ARM, and MIPS.
 
+- [Neuron 2.6.0 发布：新增 SECS GEM HSMS 和 KUKA Ethernet KRL TCP 驱动以及格物平台对接](https://www.emqx.com/zh/blog/neuron-v-2-6-0-release-notes) ([Edit](https://github.com/emqx/blog/blob/main/zh/202310/neuron-v-2-6-0-release-notes.md))
 - [工业物联网数据桥接教程：FINS 桥接到 MQTT](https://www.emqx.com/zh/blog/bridging-fins-data-to-mqtt) ([Edit](https://github.com/emqx/blog/blob/main/zh/202308/bridging-fins-data-to-mqtt.md))
 - [MQTT Sparkplug 实战：使用 EMQX 与 Neuron 构建 MQTT Sparkplug 方案](https://www.emqx.com/zh/blog/mqtt-sparkplug-in-action-a-step-by-step-tutorial) ([Edit](https://github.com/emqx/blog/blob/main/zh/202308/mqtt-sparkplug-in-action-a-step-by-step-tutorial.md))
 - [Neuron 2.5.1 发布：使用基于南向设备的模版简化 IIoT 平台管理](https://www.emqx.com/zh/blog/neuron-v-2-5-1-release-notes) ([Edit](https://github.com/emqx/blog/blob/main/zh/202307/neuron-v-2-5-1-release-notes.md))
