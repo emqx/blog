@@ -1,40 +1,4 @@
-## TwinCAT and ADS
-
-### What is TwinCAT
-
-TwinCAT (The Windows Control and Automation Technology) is a software platform for automation technology developed by Beckhoff Automation. It is used to program and control various types of industrial automation equipment, such as programmable logic controllers (PLCs), motion control systems, human-machine interfaces (HMIs), and more.
-
-TwinCAT is designed to be a modular and scalable platform, allowing it to be used in a wide range of applications and industries. It supports a variety of programming languages, including Structured Text (ST), Ladder Diagram (LD), Function Block Diagram (FBD), Sequential Function Chart (SFC), and C/C++.
-
-### ADS Protocol
-
-The ADS (Automation Device Specification) protocol is a transport layer within the TwinCAT system. It was developed for data exchange between the different components of an automation system, such as PLCs, HMIs, and other devices. 
-
-![Structure of the ADS communication](https://assets.emqx.com/images/ea38c6c7f07e962d84709f28d104784c.png)
-
-<center>Structure of the ADS communication</center>
-
-<br>
-
-The ADS protocol runs on top of the TCP/IP or UDP/IP protocols. The TCP port number for the ADS protocol is 48898.
-
-ADS uses a client-server model for communication, where one device (the client) sends requests to another device (the server) and receives responses. The requests and responses include data, commands, or status information.
-
-![ADS packet structure](https://assets.emqx.com/images/39e9bf8f3f9b1e22976e4a56f7d8dcfd.png)
-
-<center>ADS packet structure</center>
-
-<br>
-
-The ADS protocol provides a set of [commands](https://infosys.beckhoff.com/english.php?content=../content/1033/tcadscommon/12440300683.html&id=) for communication between the server and the client, among which the most important are the [ADS Read](https://infosys.beckhoff.com/english.php?content=../content/1033/tcadscommon/12440300683.html&id=) and the [ADS Write](https://infosys.beckhoff.com/content/1033/tcadscommon/12440291467.html) commands.
-
-## Why Bridge TwinCAT to MQTT
-
-With the advent of Industry 4.0, there is an increasing demand for intelligence, automation and digitization in manufacturing. In this context, the MQTT protocol has obvious advantages over the ADS protocol.
-
-[MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) is a messaging protocol designed for IoT devices and applications operating on a publish/subscribe model. It's lightweight, efficient, reliable, and allows for real-time communication. MQTT is well-suited for environments with limited resources, where efficient use of power and bandwidth is necessary. Currently, it has been widely applied in areas such as the Internet of Things (IoT), mobile Internet, smart hardware, connected cars, smart cities, remote healthcare services, oil and energy.
-
-Furthermore, MQTT is an open standard protocol and has many open-source implementations that can run on different platforms compared to the ADS protocol.
+This blog will provide a comprehensive guide on bridging TwinCAT data to MQTT. We will use Neuron to collect data from TwinCAT, upload the collected data to EMQX, and view it using MQTTX.
 
 ## The Architecture of TwinCAT to MQTT Bridging
 
@@ -60,9 +24,7 @@ EMQX has a rich and powerful feature set, such as the SQL-based [rules engine](h
 
 ## Bridging TwinCAT to MQTT via Neuron
 
-This section will introduce how to use Neuron to collect data from TwinCAT, upload the collected data to EMQX, and view it using [MQTTX](https://mqttx.app/).
-
-We use two PCs connected to a local area network. One is a Linux machine for installing EMQX, MQTTX, and Neuron; the other is a Windows machine with TwinCAT 3 installed. 
+We use two PCs connected to a local area network. One is a Linux machine for installing EMQX, MQTTX, and Neuron; the other is a Windows machine with TwinCAT 3 installed.
 
 |                  | PC 1                | PC 2              |
 | :--------------- | :------------------ | :---------------- |
