@@ -46,7 +46,7 @@
 |                                                              |              | 发布带有 Packetld 和 Reason Code 的 PUBREC 报文 |
 |                                                              | <---         |                                                 |
 | 丢弃存储的消息，存储接收到的带有相同 packet ID 的 PUBREC 报文 |              |                                                 |
-| 发送 PUBREC 报文                                             | —>           | 丢弃 Packetld                                   |
+| 发送 PUBREL 报文                                             | —>           | 丢弃 Packetld                                   |
 |                                                              |              | 发送带有 Packetld 的 PUBCOMP 报文               |
 |                                                              | <---         |                                                 |
 | 丢弃存储的状态                                               |              |                                                 |
