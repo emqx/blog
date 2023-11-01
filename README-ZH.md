@@ -431,6 +431,7 @@ Build a reliable, efficient and industry-specific Internet of Vehicles platform 
 
 ## [Industrial IoT | Unified Namespace | Sparkplug](https://www.emqx.com/zh/blog/category/industrial-iot)
 
+- [统一命名空间在现代制造业中的关键作用](https://www.emqx.com/zh/blog/the-power-of-unified-namespace-in-modern-manufacturing) ([Edit](https://github.com/emqx/blog/blob/main/zh/202311/the-power-of-unified-namespace-in-modern-manufacturing.md))
 - [深入探索工业制造领域中的 ISA95 标准](https://www.emqx.com/zh/blog/exploring-isa95-standards-in-manufacturing) ([Edit](https://github.com/emqx/blog/blob/main/zh/202310/exploring-isa95-standards-in-manufacturing.md))
 - [精益制造中的 OEE：目标、评估方法和六大损失](https://www.emqx.com/zh/blog/oee-in-lean-manufacturing) ([Edit](https://github.com/emqx/blog/blob/main/zh/202310/oee-in-lean-manufacturing.md))
 - [衡量智能制造绩效的 10 个关键 KPI](https://www.emqx.com/zh/blog/ten-important-kpis-for-measuring-smart-manufacturing-performace) ([Edit](https://github.com/emqx/blog/blob/main/zh/202310/ten-important-kpis-for-measuring-smart-manufacturing-performace.md))

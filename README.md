@@ -179,6 +179,7 @@ Explore more with & via EMQ.
 ## [EMQX Open Source | Broker](https://www.emqx.com/en/blog/category/emqx)
 EMQX is the world's most scalable open-source MQTT broker with a high performance that connects 100M+ IoT devices in 1 cluster, while maintaining 1M message per second throughput and sub-millisecond latency.
 
+- [Data Bridge of MQTT and AI: 5 Core Aspects of EMQX for AI Advancements](https://www.emqx.com/en/blog/emqx-mqtt-and-ai) ([Edit](https://github.com/emqx/blog/blob/main/en/202311/emqx-mqtt-and-ai.md))
 - [Explore the Next-Gen IoT Protocol with EMQ, Intel, and Students from Global Universities](https://www.emqx.com/en/blog/emq-intel-and-sjtu-explore-mqtt-over-quic-together) ([Edit](https://github.com/emqx/blog/blob/main/en/202310/emq-intel-and-sjtu-explore-mqtt-over-quic-together.md))
 - [Exploring the Extensibility of EMQX: A Deep Dive into its Plugin Mechanism in Version 5](https://www.emqx.com/en/blog/exploring-the-extensibility-of-emqx) ([Edit](https://github.com/emqx/blog/blob/main/en/202310/exploring-the-extensibility-of-emqx.md))
 - [Home Assistant and MQTT: 4 Things You Could Build](https://www.emqx.com/en/blog/home-assistant-and-mqtt-4-things-you-could-build) ([Edit](https://github.com/emqx/blog/blob/main/en/202309/home-assistant-and-mqtt-4-things-you-could-build.md))
@@ -354,6 +355,7 @@ The easiest way to start MQTT service. Connect your IoT devices to any cloud wit
 ## [EMQX Enterprise](https://www.emqx.com/en/blog/category/enterprise)
 The world's most scalable and reliable MQTT messaging platform to connect, move and process your data in business-critical scenarios for the IoT era.
 
+- [Data Bridge of MQTT and AI: 5 Core Aspects of EMQX for AI Advancements](https://www.emqx.com/en/blog/emqx-mqtt-and-ai) ([Edit](https://github.com/emqx/blog/blob/main/en/202311/emqx-mqtt-and-ai.md))
 - [Building an IoT Time-Series Data Application for Energy Storage with MQTT and InfluxDB](https://www.emqx.com/en/blog/building-an-iot-time-series-data-application-with-mqtt-and-influxdb) ([Edit](https://github.com/emqx/blog/blob/main/en/202310/building-an-iot-time-series-data-application-with-mqtt-and-influxdb.md))
 - [Smart Ship: Sailing into a New Era with MQTT and EMQX](https://www.emqx.com/en/blog/smart-ship-sailing-into-a-new-era-with-mqtt-and-emqx) ([Edit](https://github.com/emqx/blog/blob/main/en/202310/smart-ship-sailing-into-a-new-era-with-mqtt-and-emqx.md))
 - [EMQX Enterprise 5.3 Released: Audit Logs, Dashboard RBAC, and SSO One-Stop Login](https://www.emqx.com/en/blog/emqx-enterprise-5-3-release-notes) ([Edit](https://github.com/emqx/blog/blob/main/en/202310/emqx-enterprise-5-3-release-notes.md))
