@@ -182,6 +182,7 @@ Explore more with & via EMQ.
 ## [EMQX Open Source | Broker](https://www.emqx.com/zh/blog/category/emqx)
 EMQX is the world's most scalable open-source MQTT broker with a high performance that connects 100M+ IoT devices in 1 cluster, while maintaining 1M message per second throughput and sub-millisecond latency.
 
+- [EMQX 性能调优：最大连接与文件描述符](https://www.emqx.com/zh/blog/emqx-performance-tuning-maximum-connections-and-file-descriptors) ([Edit](https://github.com/emqx/blog/blob/main/zh/202311/emqx-performance-tuning-maximum-connections-and-file-descriptors.md))
 - [MQTT 性能测试入门指南：快速构建可靠测试平台](https://www.emqx.com/zh/blog/a-beginner-guide-to-mqtt-performance-testing) ([Edit](https://github.com/emqx/blog/blob/main/zh/202310/a-beginner-guide-to-mqtt-performance-testing.md))
 - [EMQX 与 MQTT: AI 大模型时代的分布式数据中枢](https://www.emqx.com/zh/blog/emqx-mqtt-and-ai) ([Edit](https://github.com/emqx/blog/blob/main/zh/202310/emqx-mqtt-and-ai.md))
 - [利用 MQTT over QUIC 解决地址变化问题](https://www.emqx.com/zh/blog/overcoming-address-change-with-mqtt-over-quic) ([Edit](https://github.com/emqx/blog/blob/main/zh/202307/overcoming-address-change-with-mqtt-over-quic.md))
@@ -371,6 +372,7 @@ The easiest way to start MQTT service. Connect your IoT devices to any cloud wit
 ## [EMQX Enterprise](https://www.emqx.com/zh/blog/category/enterprise)
 The world's most scalable and reliable MQTT messaging platform to connect, move and process your data in business-critical scenarios for the IoT era.
 
+- [EMQX 性能调优：最大连接与文件描述符](https://www.emqx.com/zh/blog/emqx-performance-tuning-maximum-connections-and-file-descriptors) ([Edit](https://github.com/emqx/blog/blob/main/zh/202311/emqx-performance-tuning-maximum-connections-and-file-descriptors.md))
 - [EMQX 与 MQTT: AI 大模型时代的分布式数据中枢](https://www.emqx.com/zh/blog/emqx-mqtt-and-ai) ([Edit](https://github.com/emqx/blog/blob/main/zh/202310/emqx-mqtt-and-ai.md))
 - [EMQX Enterprise 4.4.21 发布：支持 Confluent 集成](https://www.emqx.com/zh/blog/emqx-enterprise-4-4-21-release-notes) ([Edit](https://github.com/emqx/blog/blob/main/zh/202310/emqx-enterprise-4-4-21-release-notes.md))
 - [EMQX Enterprise 5.3 发布：审计日志、Dashboard 访问权限控制与 SSO 一站登录](https://www.emqx.com/zh/blog/emqx-enterprise-5-3-release-notes) ([Edit](https://github.com/emqx/blog/blob/main/zh/202310/emqx-enterprise-5-3-release-notes.md))
