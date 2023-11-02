@@ -430,6 +430,7 @@ Build a reliable, efficient and industry-specific Internet of Vehicles platform 
 
 ## [Industrial IoT | Unified Namespace | Sparkplug](https://www.emqx.com/en/blog/category/industrial-iot)
 
+- [Practical Data Management for Smart Manufacturing](https://www.emqx.com/en/blog/practical-data-management-for-smart-manufacturing) ([Edit](https://github.com/emqx/blog/blob/main/en/202311/practical-data-management-for-smart-manufacturing.md))
 - [TwinCAT Protocol: Evolution and Architecture](https://www.emqx.com/en/blog/twincat-protocol) ([Edit](https://github.com/emqx/blog/blob/main/en/202310/twincat-protocol.md))
 - [Consolidating the Foundation of Smart Manufacturing with EMQX and Neuron](https://www.emqx.com/en/blog/consolidating-the-foundation-of-smart-manufacturing-with-emqx-and-neuron) ([Edit](https://github.com/emqx/blog/blob/main/en/202310/consolidating-the-foundation-of-smart-manufacturing-with-emqx-and-neuron.md))
 - [18 Industrial IoT Applications and Why You Need Them](https://www.emqx.com/en/blog/industrial-iot-applications) ([Edit](https://github.com/emqx/blog/blob/main/en/202310/industrial-iot-applications.md))
