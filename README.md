@@ -411,6 +411,7 @@ The world's most scalable and reliable MQTT messaging platform to connect, move 
 ## [Internet of Vehicles | Connected Cars](https://www.emqx.com/en/blog/category/internet-of-vehicles)
 Build a reliable, efficient and industry-specific Internet of Vehicles platform based on EMQ's practical experience, from theoretical knowledge such as protocol selection to practical operations like platform architecture design.
 
+- [Revolutionizing TSP Platforms: How EMQX Powers Automotive Connectivity](https://www.emqx.com/en/blog/revolutionizing-tsp-platforms) ([Edit](https://github.com/emqx/blog/blob/main/en/202311/revolutionizing-tsp-platforms.md))
 - [Data Stream Processing for Software-Defined Vehicle](https://www.emqx.com/en/blog/data-stream-processing-for-software-defined-vehicle) ([Edit](https://github.com/emqx/blog/blob/main/en/202306/data-stream-processing-for-software-defined-vehicle.md))
 - [What Is V2X and The Future of Vehicle to Everything Connectivity](https://www.emqx.com/en/blog/what-is-v2x-and-the-future-of-vehicle-to-everything-connectivity) ([Edit](https://github.com/emqx/blog/blob/main/en/202306/what-is-v2x-and-the-future-of-vehicle-to-everything-connectivity.md))
 - [Bridging Demanded Signals From CAN Bus to MQTT by eKuiper](https://www.emqx.com/en/blog/bridging-demanded-signals-from-can-bus-to-mqtt-by-ekuiper) ([Edit](https://github.com/emqx/blog/blob/main/en/202306/bridging-demanded-signals-from-can-bus-to-mqtt-by-ekuiper.md))
@@ -632,4 +633,5 @@ Guarantee the availability and reliability of the IoT platform.
 
 ## [Use Cases](https://www.emqx.com/en/blog/category/use-cases)
 
+- [Revolutionizing TSP Platforms: How EMQX Powers Automotive Connectivity](https://www.emqx.com/en/blog/revolutionizing-tsp-platforms) ([Edit](https://github.com/emqx/blog/blob/main/en/202311/revolutionizing-tsp-platforms.md))
 - [Unlocking Efficiency: How EMQX Revolutionizes Logistics Fleet Management](https://www.emqx.com/en/blog/how-emqx-revolutionizes-logistics-fleet-management) ([Edit](https://github.com/emqx/blog/blob/main/en/202307/how-emqx-revolutionizes-logistics-fleet-management.md))

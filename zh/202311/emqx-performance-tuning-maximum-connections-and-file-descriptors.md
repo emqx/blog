@@ -247,7 +247,7 @@ systemctl restart emqx
 
    运行 `systemctl daemon-reload` 使改动生效。
 
-4. 启动 EMQX，`emqx start` 或 `sudo systemctl emqx start` 均可，启动成功后使用 `ps aux | grep emqx` 命令获取 EMQX 进程的 PID，然后通过以下命令即可查看当前进程生效的资源限制：
+4. 启动 EMQX，`emqx start` 或 `sudo systemctl start emqx` 均可，启动成功后使用 `ps aux | grep emqx` 命令获取 EMQX 进程的 PID，然后通过以下命令即可查看当前进程生效的资源限制：
 
    ```
    $ cat /proc/<PID>/limits
