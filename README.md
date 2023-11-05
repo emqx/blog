@@ -271,6 +271,7 @@ EMQX is the world's most scalable open-source MQTT broker with a high performanc
 ## [EMQX Cloud](https://www.emqx.com/en/blog/category/cloud)
 The easiest way to start MQTT service. Connect your IoT devices to any cloud without the burden of maintaining infrastructure.
 
+- [Supercharging IIoT with MQTT, Edge Intelligence, and InfluxDB](https://www.emqx.com/en/blog/supercharging-iiot-with-mqtt-edge-intelligence-and-influxdb) ([Edit](https://github.com/emqx/blog/blob/main/en/202311/supercharging-iiot-with-mqtt-edge-intelligence-and-influxdb.md))
 - [Mastering IoT Solution with EMQX Cloud Serverless’s Addition: API & Batch Import Users Credentials](https://www.emqx.com/en/blog/mastering-iot-solution-with-emqx-cloud-serverless-addition) ([Edit](https://github.com/emqx/blog/blob/main/en/202310/mastering-iot-solution-with-emqx-cloud-serverless-addition.md))
 - [One Key for All: Streamline Access Management with EMQX Cloud's SSO Integrations](https://www.emqx.com/en/blog/streamline-access-management-with-emqx-cloud-sso-integrations) ([Edit](https://github.com/emqx/blog/blob/main/en/202310/streamline-access-management-with-emqx-cloud-sso-integrations.md))
 - [Connecting to a Serverless MQTT Broker using Postman](https://www.emqx.com/en/blog/connecting-to-a-serverless-mqtt-broker-using-postman) ([Edit](https://github.com/emqx/blog/blob/main/en/202309/connecting-to-a-serverless-mqtt-broker-using-postman.md))
@@ -411,6 +412,7 @@ The world's most scalable and reliable MQTT messaging platform to connect, move 
 ## [Internet of Vehicles | Connected Cars](https://www.emqx.com/en/blog/category/internet-of-vehicles)
 Build a reliable, efficient and industry-specific Internet of Vehicles platform based on EMQ's practical experience, from theoretical knowledge such as protocol selection to practical operations like platform architecture design.
 
+- [Revolutionizing TSP Platforms: How EMQX Powers Automotive Connectivity](https://www.emqx.com/en/blog/revolutionizing-tsp-platforms) ([Edit](https://github.com/emqx/blog/blob/main/en/202311/revolutionizing-tsp-platforms.md))
 - [Data Stream Processing for Software-Defined Vehicle](https://www.emqx.com/en/blog/data-stream-processing-for-software-defined-vehicle) ([Edit](https://github.com/emqx/blog/blob/main/en/202306/data-stream-processing-for-software-defined-vehicle.md))
 - [What Is V2X and The Future of Vehicle to Everything Connectivity](https://www.emqx.com/en/blog/what-is-v2x-and-the-future-of-vehicle-to-everything-connectivity) ([Edit](https://github.com/emqx/blog/blob/main/en/202306/what-is-v2x-and-the-future-of-vehicle-to-everything-connectivity.md))
 - [Bridging Demanded Signals From CAN Bus to MQTT by eKuiper](https://www.emqx.com/en/blog/bridging-demanded-signals-from-can-bus-to-mqtt-by-ekuiper) ([Edit](https://github.com/emqx/blog/blob/main/en/202306/bridging-demanded-signals-from-can-bus-to-mqtt-by-ekuiper.md))
@@ -430,6 +432,7 @@ Build a reliable, efficient and industry-specific Internet of Vehicles platform 
 
 ## [Industrial IoT | Unified Namespace | Sparkplug](https://www.emqx.com/en/blog/category/industrial-iot)
 
+- [Supercharging IIoT with MQTT, Edge Intelligence, and InfluxDB](https://www.emqx.com/en/blog/supercharging-iiot-with-mqtt-edge-intelligence-and-influxdb) ([Edit](https://github.com/emqx/blog/blob/main/en/202311/supercharging-iiot-with-mqtt-edge-intelligence-and-influxdb.md))
 - [Practical Data Management for Smart Manufacturing](https://www.emqx.com/en/blog/practical-data-management-for-smart-manufacturing) ([Edit](https://github.com/emqx/blog/blob/main/en/202311/practical-data-management-for-smart-manufacturing.md))
 - [TwinCAT Protocol: Evolution and Architecture](https://www.emqx.com/en/blog/twincat-protocol) ([Edit](https://github.com/emqx/blog/blob/main/en/202310/twincat-protocol.md))
 - [Consolidating the Foundation of Smart Manufacturing with EMQX and Neuron](https://www.emqx.com/en/blog/consolidating-the-foundation-of-smart-manufacturing-with-emqx-and-neuron) ([Edit](https://github.com/emqx/blog/blob/main/en/202310/consolidating-the-foundation-of-smart-manufacturing-with-emqx-and-neuron.md))
@@ -532,6 +535,7 @@ IoT edge industrial protocol gateway software, which supports one-stop access to
 ## [NanoMQ - Lightweight MQTT broker for IoT Edge](https://www.emqx.com/en/blog/category/nanomq)
 NanoMQ is an MQTT messaging broker + multi-protocol message bus for edge computing. It supports the MQTT protocol and other commonly-used edge bus protocols such as ZeroMQ and Nanomsg, and integrates broker and brokerless message modes to facilitate the creation of one-stop edge data bus applications.
 
+- [Supercharging IIoT with MQTT, Edge Intelligence, and InfluxDB](https://www.emqx.com/en/blog/supercharging-iiot-with-mqtt-edge-intelligence-and-influxdb) ([Edit](https://github.com/emqx/blog/blob/main/en/202311/supercharging-iiot-with-mqtt-edge-intelligence-and-influxdb.md))
 - [How to Install a Scalable MQTT Broker on OpenWRT](https://www.emqx.com/en/blog/how-to-install-a-scalable-mqtt-broker-on-openwrt) ([Edit](https://github.com/emqx/blog/blob/main/en/202310/how-to-install-a-scalable-mqtt-broker-on-openwrt.md))
 - [The Best Mosquitto Alternative: An In-Depth Look at NanoMQ for IoT Edge](https://www.emqx.com/en/blog/nanomq-the-multi-threaded-alternative-to-mosquitto-for-iot-edge) ([Edit](https://github.com/emqx/blog/blob/main/en/202306/nanomq-the-multi-threaded-alternative-to-mosquitto-for-iot-edge.md))
 - [EMQX ECP Empowers IoT Edge Computing with NanoMQ Integration](https://www.emqx.com/en/blog/emqx-ecp-empowers-iot-edge-computing-with-nanomq-integration) ([Edit](https://github.com/emqx/blog/blob/main/en/202305/emqx-ecp-empowers-iot-edge-computing-with-nanomq-integration.md))
@@ -632,4 +636,5 @@ Guarantee the availability and reliability of the IoT platform.
 
 ## [Use Cases](https://www.emqx.com/en/blog/category/use-cases)
 
+- [Revolutionizing TSP Platforms: How EMQX Powers Automotive Connectivity](https://www.emqx.com/en/blog/revolutionizing-tsp-platforms) ([Edit](https://github.com/emqx/blog/blob/main/en/202311/revolutionizing-tsp-platforms.md))
 - [Unlocking Efficiency: How EMQX Revolutionizes Logistics Fleet Management](https://www.emqx.com/en/blog/how-emqx-revolutionizes-logistics-fleet-management) ([Edit](https://github.com/emqx/blog/blob/main/en/202307/how-emqx-revolutionizes-logistics-fleet-management.md))

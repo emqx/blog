@@ -733,7 +733,7 @@ Guarantee the availability and reliability of the IoT platform.
 
 ## [应用案例](https://www.emqx.com/zh/blog/category/use-cases)
 
-- [让快餐更快：如何用更聪明的方式管理快餐连锁](https://www.emqx.com/zh/blog/how-to-manage-fast-food-chains-in-a-smarter-way) ([Edit](https://github.com/emqx/blog/blob/main/zh/202310/how-to-manage-fast-food-chains-in-a-smarter-way.md))
+- [连锁快餐的数字化未来：MQTT 统一连接、实时消息驱动智慧经营](https://www.emqx.com/zh/blog/how-to-manage-fast-food-chains-in-a-smarter-way) ([Edit](https://github.com/emqx/blog/blob/main/zh/202310/how-to-manage-fast-food-chains-in-a-smarter-way.md))
 - [促进油气生产降本增效：EMQ 云边协同方案加速油气生产企业数字化转型](https://www.emqx.com/zh/blog/promoting-cost-reduction-and-efficiency-in-oil-and-gas-production) ([Edit](https://github.com/emqx/blog/blob/main/zh/202310/promoting-cost-reduction-and-efficiency-in-oil-and-gas-production.md))
 - [构建智慧工厂数据底座：云边协同方案助力工业数据实时处理](https://www.emqx.com/zh/blog/data-infrastructure-for-smart-factory) ([Edit](https://github.com/emqx/blog/blob/main/zh/202310/data-infrastructure-for-smart-factory.md))
 - [智能物流车队管理：EMQX 物联网解决方案的创新驱动](https://www.emqx.com/zh/blog/how-emqx-revolutionizes-logistics-fleet-management) ([Edit](https://github.com/emqx/blog/blob/main/zh/202307/how-emqx-revolutionizes-logistics-fleet-management.md))

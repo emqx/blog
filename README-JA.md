@@ -45,6 +45,7 @@ Best practice of MQTT in various clients.
 
 ## [MQTT Security](https://www.emqx.com/ja/blog/category/security)
 
+- [MQTTにおける認可機能: ACLでMQTTメッセージングへのアクセスを制御](https://www.emqx.com/ja/blog/authorization-in-mqtt-using-acls-to-control-access-to-mqtt-messaging) ([Edit](https://github.com/emqx/blog/blob/main/ja/202311/authorization-in-mqtt-using-acls-to-control-access-to-mqtt-messaging.md))
 - [MQTT におけるTokenベースの認証と OAuth 2.0 の詳細](https://www.emqx.com/ja/blog/a-deep-dive-into-token-based-authentication-and-oauth-2-0-in-mqtt) ([Edit](https://github.com/emqx/blog/blob/main/ja/202310/a-deep-dive-into-token-based-authentication-and-oauth-2-0-in-mqtt.md))
 - [MQTT セキュリティに強化認証を活用](https://www.emqx.com/ja/blog/leveraging-enhanced-authentication-for-mqtt-security) ([Edit](https://github.com/emqx/blog/blob/main/ja/202310/leveraging-enhanced-authentication-for-mqtt-security.md))
 - [ユーザー名とパスワード認証によるセキュリティ保証のMQTT](https://www.emqx.com/ja/blog/securing-mqtt-with-username-and-password-authentication) ([Edit](https://github.com/emqx/blog/blob/main/ja/202310/securing-mqtt-with-username-and-password-authentication.md))
