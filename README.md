@@ -179,6 +179,7 @@ Explore more with & via EMQ.
 ## [EMQX Open Source | Broker](https://www.emqx.com/en/blog/category/emqx)
 EMQX is the world's most scalable open-source MQTT broker with a high performance that connects 100M+ IoT devices in 1 cluster, while maintaining 1M message per second throughput and sub-millisecond latency.
 
+- [A Beginner's Guide to MQTT Performance Testing](https://www.emqx.com/en/blog/a-beginner-guide-to-mqtt-performance-testing) ([Edit](https://github.com/emqx/blog/blob/main/en/202311/a-beginner-guide-to-mqtt-performance-testing.md))
 - [Data Bridge of MQTT and AI: 5 Core Aspects of EMQX for AI Advancements](https://www.emqx.com/en/blog/emqx-mqtt-and-ai) ([Edit](https://github.com/emqx/blog/blob/main/en/202311/emqx-mqtt-and-ai.md))
 - [Explore the Next-Gen IoT Protocol with EMQ, Intel, and Students from Global Universities](https://www.emqx.com/en/blog/emq-intel-and-sjtu-explore-mqtt-over-quic-together) ([Edit](https://github.com/emqx/blog/blob/main/en/202310/emq-intel-and-sjtu-explore-mqtt-over-quic-together.md))
 - [Exploring the Extensibility of EMQX: A Deep Dive into its Plugin Mechanism in Version 5](https://www.emqx.com/en/blog/exploring-the-extensibility-of-emqx) ([Edit](https://github.com/emqx/blog/blob/main/en/202310/exploring-the-extensibility-of-emqx.md))
@@ -356,6 +357,7 @@ The easiest way to start MQTT service. Connect your IoT devices to any cloud wit
 ## [EMQX Enterprise](https://www.emqx.com/en/blog/category/enterprise)
 The world's most scalable and reliable MQTT messaging platform to connect, move and process your data in business-critical scenarios for the IoT era.
 
+- [A Beginner's Guide to MQTT Performance Testing](https://www.emqx.com/en/blog/a-beginner-guide-to-mqtt-performance-testing) ([Edit](https://github.com/emqx/blog/blob/main/en/202311/a-beginner-guide-to-mqtt-performance-testing.md))
 - [Data Bridge of MQTT and AI: 5 Core Aspects of EMQX for AI Advancements](https://www.emqx.com/en/blog/emqx-mqtt-and-ai) ([Edit](https://github.com/emqx/blog/blob/main/en/202311/emqx-mqtt-and-ai.md))
 - [Building an IoT Time-Series Data Application for Energy Storage with MQTT and InfluxDB](https://www.emqx.com/en/blog/building-an-iot-time-series-data-application-with-mqtt-and-influxdb) ([Edit](https://github.com/emqx/blog/blob/main/en/202310/building-an-iot-time-series-data-application-with-mqtt-and-influxdb.md))
 - [Smart Ship: Sailing into a New Era with MQTT and EMQX](https://www.emqx.com/en/blog/smart-ship-sailing-into-a-new-era-with-mqtt-and-emqx) ([Edit](https://github.com/emqx/blog/blob/main/en/202310/smart-ship-sailing-into-a-new-era-with-mqtt-and-emqx.md))
@@ -412,13 +414,14 @@ The world's most scalable and reliable MQTT messaging platform to connect, move 
 ## [Internet of Vehicles | Connected Cars](https://www.emqx.com/en/blog/category/internet-of-vehicles)
 Build a reliable, efficient and industry-specific Internet of Vehicles platform based on EMQ's practical experience, from theoretical knowledge such as protocol selection to practical operations like platform architecture design.
 
+- [The Road to Smart Mobility: Opportunities and Challenges](https://www.emqx.com/en/blog/the-road-to-smart-mobility) ([Edit](https://github.com/emqx/blog/blob/main/en/202311/the-road-to-smart-mobility.md))
 - [Revolutionizing TSP Platforms: How EMQX Powers Automotive Connectivity](https://www.emqx.com/en/blog/revolutionizing-tsp-platforms) ([Edit](https://github.com/emqx/blog/blob/main/en/202311/revolutionizing-tsp-platforms.md))
 - [Data Stream Processing for Software-Defined Vehicle](https://www.emqx.com/en/blog/data-stream-processing-for-software-defined-vehicle) ([Edit](https://github.com/emqx/blog/blob/main/en/202306/data-stream-processing-for-software-defined-vehicle.md))
 - [What Is V2X and The Future of Vehicle to Everything Connectivity](https://www.emqx.com/en/blog/what-is-v2x-and-the-future-of-vehicle-to-everything-connectivity) ([Edit](https://github.com/emqx/blog/blob/main/en/202306/what-is-v2x-and-the-future-of-vehicle-to-everything-connectivity.md))
 - [Bridging Demanded Signals From CAN Bus to MQTT by eKuiper](https://www.emqx.com/en/blog/bridging-demanded-signals-from-can-bus-to-mqtt-by-ekuiper) ([Edit](https://github.com/emqx/blog/blob/main/en/202306/bridging-demanded-signals-from-can-bus-to-mqtt-by-ekuiper.md))
 - [What Is Can Bus and How It Works?](https://www.emqx.com/en/blog/can-bus-how-it-works-pros-and-cons) ([Edit](https://github.com/emqx/blog/blob/main/en/202305/can-bus-how-it-works-pros-and-cons.md))
 - [What Is the QUIC Protocol?](https://www.emqx.com/en/blog/quic-protocol-the-features-use-cases-and-impact-for-iot-iov) ([Edit](https://github.com/emqx/blog/blob/main/en/202304/quic-protocol-the-features-use-cases-and-impact-for-iot-iov.md))
-- [What is a Connected Car? All You Need to Know](https://www.emqx.com/en/blog/connected-cars-and-automotive-connectivity-all-you-need-to-know) ([Edit](https://github.com/emqx/blog/blob/main/en/202304/connected-cars-and-automotive-connectivity-all-you-need-to-know.md))
+- [Why Connected Cars are Transforming the Auto Industry?](https://www.emqx.com/en/blog/connected-cars-and-automotive-connectivity-all-you-need-to-know) ([Edit](https://github.com/emqx/blog/blob/main/en/202304/connected-cars-and-automotive-connectivity-all-you-need-to-know.md))
 - [How to Achieve Flexible Data Collection for Internet of Vehicles](https://www.emqx.com/en/blog/how-to-achieve-flexible-data-collection-for-internet-of-vehicles) ([Edit](https://github.com/emqx/blog/blob/main/en/202212/how-to-achieve-flexible-data-collection-for-internet-of-vehicles.md))
 - [MQTT Communication Optimization Practices for Internet of Vehicles Mobile Scenarios](https://www.emqx.com/en/blog/mqtt-communication-optimization-practices-for-iov) ([Edit](https://github.com/emqx/blog/blob/main/en/202212/mqtt-communication-optimization-practices-for-iov.md))
 - [Design of Million-Level Message Throughput Architecture for an IoV Platform](https://www.emqx.com/en/blog/million-level-message-throughput-architecture-design-for-internet-of-vehicles) ([Edit](https://github.com/emqx/blog/blob/main/en/202205/million-level-message-throughput-architecture-design-for-internet-of-vehicles.md))
@@ -589,6 +592,7 @@ eKuiper is an edge lightweight IoT data analytics / streaming software implement
 ## [XMeter](https://www.emqx.com/en/blog/category/xmeter)
 XMeter support millions of simulated users, concurrent device connections, and message throughput performance testing. XMeter support the testing of many IoT protocols such as MQTT, LwM2M/CoAP, and can extend richer test scenarios and protocol support for IoT applications.
 
+- [A Beginner's Guide to MQTT Performance Testing](https://www.emqx.com/en/blog/a-beginner-guide-to-mqtt-performance-testing) ([Edit](https://github.com/emqx/blog/blob/main/en/202311/a-beginner-guide-to-mqtt-performance-testing.md))
 - [XMeter 3.3.1 Release: Accelerating MQTT Performance Testing with Automated AWS Terraform Deployment](https://www.emqx.com/en/blog/xmeter-v-3-3-1-release-notes) ([Edit](https://github.com/emqx/blog/blob/main/en/202307/xmeter-v-3-3-1-release-notes.md))
 - [Coming Soon: Custom Scenario Testing in Professional Edition | XMeter Newsletter 202302](https://www.emqx.com/en/blog/xmeter-newsletter-202302) ([Edit](https://github.com/emqx/blog/blob/main/en/202303/xmeter-newsletter-202302.md))
 - [XMeter Cloud Professional Edition Release Highlights Preview ｜XMeter Newsletter 202211](https://www.emqx.com/en/blog/xmeter-newsletter-202211) ([Edit](https://github.com/emqx/blog/blob/main/en/202212/xmeter-newsletter-202211.md))
@@ -622,6 +626,7 @@ Accelerate digital transformation of industries based on EMQ data infrastructure
 ## [IoT Testing](https://www.emqx.com/en/blog/category/iot-testing)
 Guarantee the availability and reliability of the IoT platform.
 
+- [A Beginner's Guide to MQTT Performance Testing](https://www.emqx.com/en/blog/a-beginner-guide-to-mqtt-performance-testing) ([Edit](https://github.com/emqx/blog/blob/main/en/202311/a-beginner-guide-to-mqtt-performance-testing.md))
 - [Getting Started with MQTT Performance Testing: A Primer on Scenarios and Metrics](https://www.emqx.com/en/blog/getting-started-with-mqtt-performance-testing-a-primer-on-scenarios-and-metrics) ([Edit](https://github.com/emqx/blog/blob/main/en/202305/getting-started-with-mqtt-performance-testing-a-primer-on-scenarios-and-metrics.md))
 - [Building Reliable IoT Systems: An Introduction to MQTT Performance Testing](https://www.emqx.com/en/blog/building-reliable-iot-systems-an-introduction-to-mqtt-performance-testing) ([Edit](https://github.com/emqx/blog/blob/main/en/202305/building-reliable-iot-systems-an-introduction-to-mqtt-performance-testing.md))
 - [Open MQTT Benchmarking Comparison: MQTT Brokers in 2023](https://www.emqx.com/en/blog/open-mqtt-benchmarking-comparison-mqtt-brokers-in-2023) ([Edit](https://github.com/emqx/blog/blob/main/en/202305/open-mqtt-benchmarking-comparison-mqtt-brokers-in-2023.md))
