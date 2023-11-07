@@ -435,6 +435,7 @@ Build a reliable, efficient and industry-specific Internet of Vehicles platform 
 
 ## [Industrial IoT | Unified Namespace | Sparkplug](https://www.emqx.com/en/blog/category/industrial-iot)
 
+- [Leveraging the Hybrid Computing for Data Management and Analysis](https://www.emqx.com/en/blog/leveraging-the-hybrid-computing-for-data-management-and-analysis) ([Edit](https://github.com/emqx/blog/blob/main/en/202311/leveraging-the-hybrid-computing-for-data-management-and-analysis.md))
 - [Supercharging IIoT with MQTT, Edge Intelligence, and InfluxDB](https://www.emqx.com/en/blog/supercharging-iiot-with-mqtt-edge-intelligence-and-influxdb) ([Edit](https://github.com/emqx/blog/blob/main/en/202311/supercharging-iiot-with-mqtt-edge-intelligence-and-influxdb.md))
 - [Practical Data Management for Smart Manufacturing](https://www.emqx.com/en/blog/practical-data-management-for-smart-manufacturing) ([Edit](https://github.com/emqx/blog/blob/main/en/202311/practical-data-management-for-smart-manufacturing.md))
 - [TwinCAT Protocol: Evolution and Architecture](https://www.emqx.com/en/blog/twincat-protocol) ([Edit](https://github.com/emqx/blog/blob/main/en/202310/twincat-protocol.md))
