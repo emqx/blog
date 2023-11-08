@@ -272,6 +272,7 @@ EMQX is the world's most scalable open-source MQTT broker with a high performanc
 ## [EMQX Cloud](https://www.emqx.com/en/blog/category/cloud)
 The easiest way to start MQTT service. Connect your IoT devices to any cloud without the burden of maintaining infrastructure.
 
+- [EMQX Cloud Serverless is Now Available on Google Cloud in Asia-Pacific Region](https://www.emqx.com/en/blog/emqx-cloud-serverless-on-google-cloud-asia-pacific) ([Edit](https://github.com/emqx/blog/blob/main/en/202311/emqx-cloud-serverless-on-google-cloud-asia-pacific.md))
 - [Supercharging IIoT with MQTT, Edge Intelligence, and InfluxDB](https://www.emqx.com/en/blog/supercharging-iiot-with-mqtt-edge-intelligence-and-influxdb) ([Edit](https://github.com/emqx/blog/blob/main/en/202311/supercharging-iiot-with-mqtt-edge-intelligence-and-influxdb.md))
 - [Mastering IoT Solution with EMQX Cloud Serverless’s Addition: API & Batch Import Users Credentials](https://www.emqx.com/en/blog/mastering-iot-solution-with-emqx-cloud-serverless-addition) ([Edit](https://github.com/emqx/blog/blob/main/en/202310/mastering-iot-solution-with-emqx-cloud-serverless-addition.md))
 - [One Key for All: Streamline Access Management with EMQX Cloud's SSO Integrations](https://www.emqx.com/en/blog/streamline-access-management-with-emqx-cloud-sso-integrations) ([Edit](https://github.com/emqx/blog/blob/main/en/202310/streamline-access-management-with-emqx-cloud-sso-integrations.md))
