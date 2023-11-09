@@ -4,7 +4,7 @@
 
 Python is widely used in IoT for its versatility, ease of use and vast libraries. It's ideal for smart home automation, environmental monitoring and industrial control due to its ability to handle large amounts of data. Python is also compatible with microcontrollers, making it a valuable tool for developing IoT devices.
 
-This article mainly introduces how to use the **paho-mqtt** client and implement connection, subscribe, messaging, and other functions between the [MQTT client](https://www.emqx.com/en/blog/mqtt-client-tools) and [MQTT broker](https://www.emqx.io/), in the Python project.
+This article mainly introduces how to use the **paho-mqtt** client and implement connection, subscribe, messaging, and other functions between the [MQTT client](https://www.emqx.com/en/blog/mqtt-client-tools) and [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison), in the Python project.
 
 
 
@@ -48,61 +48,30 @@ pip3 install paho-mqtt
 
 ## Prepare an MQTT Broker
 
-Before proceeding, please ensure you have an MQTT broker to communicate and test with. There are several options for obtaining an MQTT broker:
+Before proceeding, please ensure you have an MQTT broker to communicate and test with. We recommend you use EMQX Cloud.
 
-- **Private deployment**
+[EMQX Cloud](https://www.emqx.com/en/cloud) is a fully managed cloud-native MQTT service that can connect to a large number of IoT devices and integrate various databases and business systems. With EMQX Cloud, you can get started in just a few minutes and run your MQTT service in 20+ regions across AWS, Google Cloud, and Microsoft Azure, ensuring global availability and fast connectivity.
 
-  [EMQX](https://www.emqx.io/) is the most scalable open-source MQTT broker for IoT, [IIoT](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges), and connected vehicles. You can run the following Docker command to install EMQX.
-
-  ```apache
-  docker run -d --name emqx -p 1883:1883 -p 8083:8083 -p 8084:8084 -p 8883:8883 -p 18083:18083 emqx/emqx
-  ```
-
-- **Fully managed cloud service**
-
-  The fully managed cloud service is the easiest way to start an MQTT service. With [EMQX Cloud](https://www.emqx.com/en/cloud), you can get started in just a few minutes and run your MQTT service in 20+ regions across AWS, Google Cloud, and Microsoft Azure, ensuring global availability and fast connectivity.
-
-  The latest edition, [EMQX Cloud Serverless](https://www.emqx.com/en/cloud/serverless-mqtt), provides a forever free 1M session minutes/month complimentary offering for developers to easily start their MQTT deployment within seconds.
-
-- **Free public MQTT broker**
-
-  The Free public MQTT broker is exclusively available for those who wish to learn and test the MQTT protocol. It is important to avoid using it in production environments as it may pose security risks and downtime concerns.
-
-For this blog post, we will use the free public MQTT broker at `broker.emqx.io`.
-
-> **MQTT Broker Info**
->
-> Server: `broker.emqx.io`
->
-> TCP Port: `1883`
->
-> WebSocket Port: `8083`
->
-> SSL/TLS Port: `8883`
->
-> Secure WebSocket Port: `8084`
-
-For more information, please check out: [Free Public MQTT Broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker).
-
-<section
-  class="is-hidden-touch my-32 is-flex is-align-items-center"
-  style="border-radius: 16px; background: linear-gradient(102deg, #edf6ff 1.81%, #eff2ff 97.99%); padding: 32px 48px;"
->
-  <div class="mr-40" style="flex-shrink: 0;">
-    <img loading="lazy" src="https://assets.emqx.com/images/b4cff1e553053873a87c4fa8713b99bc.png" alt="Open Manufacturing Hub" width="160" height="226">
-  </div>
-  <div>
-    <div class="mb-4 is-size-3 is-text-black has-text-weight-semibold" style="
-    line-height: 1.2;
-">
-      A Practical Guide to MQTT Broker Selection
+<section class="promotion">
+    <div>
+        Try EMQX Cloud Serverless
+        <div class="is-size-14 is-text-normal has-text-weight-normal">Forever free under 1M session minutes/month.</div>
     </div>
-    <div class="mb-32">
-      Download this practical guide and learn what to consider when choosing an MQTT broker.
-    </div>
-    <a href="https://www.emqx.com/en/resources/a-practical-guide-to-mqtt-broker-selection?utm_campaign=embedded-a-practical-guide-to-mqtt-broker-selection&from=blog-how-to-use-mqtt-in-python" class="button is-gradient">Get the eBook →</a>
-  </div>
+    <a href="https://accounts.emqx.com/signup?continue=https://cloud-intl.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">Get Started →</a>
 </section>
+
+This article will use the [free public MQTT broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker) to simplify the process:
+
+- Server: `broker.emqx.io`
+
+- TCP Port: `1883`
+
+- WebSocket Port: `8083`
+
+- SSL/TLS Port: `8883`
+
+- Secure WebSocket Port: `8084`
+
 
 ## Paho MQTT Python Client Usage
 
@@ -417,17 +386,16 @@ So far, we have explained how to use the **paho-mqtt** client to connect to the 
 
 Next, you can check out the [MQTT Guide: Beginner to Advanced](https://www.emqx.com/en/mqtt-guide) series provided by EMQ to learn about MQTT protocol features, explore more advanced applications of MQTT, and get started with MQTT application and service development.
 
-
-<section class="promotion">
-    <div>
-        Try EMQX Cloud for Free
-        <div class="is-size-14 is-text-normal has-text-weight-normal">A fully managed MQTT service for IoT</div>
-    </div>
-    <a href="https://accounts.emqx.com/signup?continue=https://cloud-intl.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">Get Started →</a>
-</section>
-
-
 **Related resources:**
 
 - [A Quickstart Guide to Using MQTT over WebSocket](https://www.emqx.com/en/blog/connect-to-mqtt-broker-with-websocket)
 - [MQTT on ESP32: A Beginner's Guide](https://www.emqx.com/en/blog/esp32-connects-to-the-free-public-mqtt-broker)
+
+
+
+<section class="promotion">
+    <div>
+        Talk to an Expert
+    </div>
+    <a href="https://www.emqx.com/en/contact?product=solutions" class="button is-gradient px-5">Contact Us →</a>
+</section>

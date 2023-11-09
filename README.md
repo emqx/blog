@@ -643,5 +643,6 @@ Guarantee the availability and reliability of the IoT platform.
 
 ## [Use Cases](https://www.emqx.com/en/blog/category/use-cases)
 
+- [Boosting Agility in Fast Food Chains with EMQX: A Smart Restaurant Solution](https://www.emqx.com/en/blog/boosting-agility-in-fast-food-chains-with-emqx) ([Edit](https://github.com/emqx/blog/blob/main/en/202311/boosting-agility-in-fast-food-chains-with-emqx.md))
 - [Revolutionizing TSP Platforms: How EMQX Powers Automotive Connectivity](https://www.emqx.com/en/blog/revolutionizing-tsp-platforms) ([Edit](https://github.com/emqx/blog/blob/main/en/202311/revolutionizing-tsp-platforms.md))
 - [Unlocking Efficiency: How EMQX Revolutionizes Logistics Fleet Management](https://www.emqx.com/en/blog/how-emqx-revolutionizes-logistics-fleet-management) ([Edit](https://github.com/emqx/blog/blob/main/en/202307/how-emqx-revolutionizes-logistics-fleet-management.md))
