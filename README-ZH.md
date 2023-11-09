@@ -409,6 +409,7 @@ The world's most scalable and reliable MQTT messaging platform to connect, move 
 ## [Internet of Vehicles | Connected Cars](https://www.emqx.com/zh/blog/category/internet-of-vehicles)
 Build a reliable, efficient and industry-specific Internet of Vehicles platform based on EMQ's practical experience, from theoretical knowledge such as protocol selection to practical operations like platform architecture design.
 
+- [构建新一代车联网 TSP 平台: 实现高效车云互联](https://www.emqx.com/zh/blog/revolutionizing-tsp-platforms) ([Edit](https://github.com/emqx/blog/blob/main/zh/202311/revolutionizing-tsp-platforms.md))
 - [V2X：MQTT 统一通信驱动车联网未来发展](https://www.emqx.com/zh/blog/what-is-v2x-and-the-future-of-vehicle-to-everything-connectivity) ([Edit](https://github.com/emqx/blog/blob/main/zh/202309/what-is-v2x-and-the-future-of-vehicle-to-everything-connectivity.md))
 - [软件定义汽车场景中的数据流处理](https://www.emqx.com/zh/blog/data-stream-processing-for-software-defined-vehicle) ([Edit](https://github.com/emqx/blog/blob/main/zh/202306/data-stream-processing-for-software-defined-vehicle.md))
 - [使用 eKuiper 按需桥接 CAN Bus 数据至 MQTT](https://www.emqx.com/zh/blog/bridging-demanded-signals-from-can-bus-to-mqtt-by-ekuiper) ([Edit](https://github.com/emqx/blog/blob/main/zh/202306/bridging-demanded-signals-from-can-bus-to-mqtt-by-ekuiper.md))
