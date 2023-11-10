@@ -1,74 +1,129 @@
-[MQTT](https://mqtt.org/) is a lightweight and flexible IoT message exchange and data transmission protocol, which is dedicated to achieving the balance between flexibility and hardware/network resources for IoT developers.
+## Introduction
 
-[ESP32](https://www.espressif.com/en/products/socs/esp32) is an upgraded version of ESP8266. In addition to the Wi-Fi module, this module also includes a Bluetooth 4.0 module. The dual-core CPU operates at a frequency of 80 to 240 MHz. It contains two Wi-Fi and Bluetooth modules and various input and output pins. ESP32 is an ideal choice for IoT projects.
+[MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) is a lightweight messaging protocol for IoT in [publish/subscribe model](https://www.emqx.com/en/blog/mqtt-5-introduction-to-publish-subscribe-model), offering reliable real-time communication with minimal code and bandwidth overhead. It is especially beneficial for devices with limited resources and low-bandwidth networks, making it widely adopted in IoT, mobile internet, IoV, and power industries.
 
-In this project, we will connect ESP32 to the [free public MQTT broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker) operated and maintained by EMQX [MQTT Cloud](https://www.emqx.com/en/cloud), and use the Arduino IDE to program the ESP32. EMQX Cloud is a secure MQTT IoT cloud service platform launched by [EMQ](https://www.emqx.com/en). It provides [MQTT 5.0 ](https://www.emqx.com/en/blog/introduction-to-mqtt-5) access service with one-stop operation and maintenance management and a unique isolation environment.
+[ESP32](https://www.espressif.com/en/products/socs/esp32), an upgraded version of [ESP8266](https://www.emqx.com/en/blog/esp8266-connects-to-the-public-mqtt-broker), is a low-cost, low-power system on a chip microcontroller. In addition to the Wi-Fi module, the ESP32 also includes a Bluetooth 4.0 module. The dual-core CPU operates at a frequency of 80 to 240 MHz. It contains two Wi-Fi and Bluetooth modules and various input and output pins. ESP32 is an ideal choice for IoT projects.
 
+Using MQTT on ESP32 offers several advantages:
 
+- First, MQTT is a lightweight messaging protocol optimized for constrained devices and networks like ESP32 and Wi-Fi, so it has minimal impact on power and bandwidth. 
+- Second, MQTT supports different levels of reliability and quality of service to match the capabilities of ESP32. This flexibility makes it suitable for use even when networks are unstable.
+- Third, ESP32 and MQTT are widely used in IoT applications, allowing them to be well integrated into IoT solutions. The MQTT protocol is also designed to simplify integration with cloud platforms to enable device control and data monitoring across networks.
 
-## Required IoT Components
-
-* ESP32
-* Arduino IDE
-* [MQTT 5.0 client tool - MQTTX](https://mqttx.app)
-* A [free public MQTT broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker) deployed on [EMQX Cloud](https://www.emqx.com/en/cloud)
-  - Broker: **broker.emqx.io**
-  - TCP Port: **1883**
-  - Websocket Port: **8083**
+Overall, the combination of ESP32 and MQTT is ideal for IoT applications that require wireless connectivity and efficient messaging between many devices. This blog will show you the process of publishing MQTT messages and topic subscription on ESP32 using Arduino IDE through a simple demo.
 
 
-## Arduino Configuration
 
-### Install ESP32 development board
+## Prepare an MQTT Broker
 
-Click Tools -> Development Board -> Development Board Management -> Search ESP32 -> Install
+Before proceeding, please ensure you have an MQTT broker to communicate and test with. There are several options for obtaining an MQTT broker:
+
+- **Private deployment**
+
+  [EMQX](https://www.emqx.io/) is the most scalable open-source MQTT broker for IoT, [IIoT](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges), and connected vehicles. You can run the following Docker command to install EMQX.
+
+  ```apache
+  docker run -d --name emqx -p 1883:1883 -p 8083:8083 -p 8084:8084 -p 8883:8883 -p 18083:18083 emqx/emqx
+  ```
+
+- **Fully managed cloud service**
+
+  The fully managed cloud service is the easiest way to start an MQTT service. With [EMQX Cloud](https://www.emqx.com/en/cloud), you can get started in just a few minutes and run your MQTT service in 20+ regions across AWS, Google Cloud, and Microsoft Azure, ensuring global availability and fast connectivity.
+
+  The latest edition, [EMQX Cloud Serverless](https://www.emqx.com/en/cloud/serverless-mqtt), provides a forever free 1M session minutes/month complimentary offering for developers to easily start their MQTT deployment within seconds.
+
+- **Free public MQTT broker**
+
+  The Free public MQTT broker is exclusively available for those who wish to learn and test the MQTT protocol. It is important to avoid using it in production environments as it may pose security risks and downtime concerns.
+
+For this blog post, we will use the free public MQTT broker at `broker.emqx.io`.
+
+> **MQTT Broker Info**
+>
+> Server: `broker.emqx.io`
+>
+> TCP Port: `1883`
+>
+> WebSocket Port: `8083`
+>
+> SSL/TLS Port: `8883`
+>
+> Secure WebSocket Port: `8084`
+
+For more information, please check out: [Free Public MQTT Broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker).
+
+
+
+## Getting Started with MQTT on ESP32
+
+### Arduino Configuration
+
+Arduino is an open-source electronics platform based on easy-to-use hardware and software. It is intended for anyone making interactive projects. Arduino boards can read inputs - a light on a sensor, a finger on a button, or a Twitter message - and turn them into an output - activating a motor, turning on an LED, or publishing something online.
+
+In this project, we will use an Arduino board to connect the ESP32 module to our computer. The Arduino will handle uploading code to the ESP32 and provide a serial connection between the ESP32 and our laptop.
+
+Please refer to the [official Arduino documentation](https://docs.arduino.cc/software/ide-v2/tutorials/getting-started/ide-v2-downloading-and-installing) for detailed instructions on installing Arduino.
+
+#### Install ESP32 Development Board
+
+The ESP32 development board is crucial in working with MQTT on the ESP32 platform. It provides hardware and software support for developing and deploying MQTT-based projects on the ESP32. With its integrated Wi-Fi and Bluetooth capabilities, GPIO pins for interfacing with external components, and compatibility with the Arduino IDE, the ESP32 development board enables seamless connectivity, prototyping, and testing of MQTT-based IoT applications.
+
+These steps will guide you through installing the ESP32 development board in the Arduino IDE:
+
+1. Click on "Tools" in the Arduino IDE menu.
+2. Select "Development Board" and then choose "Development Board Management".
+3. In the Boards Manager, search for "ESP32".
+4. Once found, click on it and then click the "Install" button.
 
 ![Install ESP32 development board](https://assets.emqx.com/images/99c502b39ef7d21dc75632e42aa89708.png)
 
-### Install PubSub client
+#### Install PubSubClient
 
-Project -> Load library -> Library manager... -> Search PubSubClient -> Install PubSubClient by Nick O’Leary
+Next, we will proceed to install the MQTT client library [PubSubClient](https://github.com/knolleary/pubsubclient). Developed by Nick O'Leary, PubSubClient is a lightweight [MQTT client library](https://www.emqx.com/en/mqtt-client-sdk) designed for Arduino-based projects. It provides a client for simple publish/subscribe messaging with a server supporting MQTT. This library simplifies MQTT communication and enables efficient data exchange in Arduino-based IoT applications.
+
+To install the PubSubClient library, please follow these steps:
+
+1. Open the Arduino IDE, then go to "Project" in the menu bar.
+2. Select "Load library" and then choose "Library manager".
+3. In the Library Manager, type "PubSubClient" into the search bar.
+4. Locate the "PubSubClient" library by Nick O'Leary and click the "Install" button.
 
 ![Install PubSub client](https://assets.emqx.com/images/cb7b0228aa91bf300eec5a725da159d3.png)
 
+By following these steps, you will successfully install the PubSubClient library into your Arduino IDE.
 
+### Create an MQTT Connection
 
-## ESP32 Pub/Sub Diagram 
+#### TCP Connection
 
-![ESP32 Pub/Sub diagram](https://assets.emqx.com/images/f806ce3df585c26ca01fd1aa3711be46.jpg)
+1. First, we need to import the **WiFi** and **PubSubClient** libraries. The **WiFi** library allows ESP32 to establish connections with Wi-Fi networks, while the **PubSubClient** library enables ESP32 to connect to an MQTT broker for publishing messages and subscribing to topics.
 
-## Programming ESP32 Board with Arduino IDE
-
-### Connect to MQTT step by step
-
-1. First, we will import the **WiFi** and **PubSubClient** libraries. The ESP8266WiFi library can connect ESP32 to Wi-Fi networks, and the PubSubClient library can connect ESP32 to the MQTT server to publish messages and subscribe to topics.
-
-   ```c
+   ```arduino
    #include <WiFi.h>
    #include <PubSubClient.h>
    ```
 
-2. Set the Wi-Fi name and password, as well as the MQTT server connection address and port, and set the topic to "esp32/test".
+2. Please configure the following parameters: Wi-Fi network name and password, MQTT broker address and port, and the topic to `emqx/esp32`.
 
-   ```c
+   ```arduino
    // WiFi
-   const char *ssid = "mousse"; // Enter your WiFi name
-   const char *password = "qweqweqwe";  // Enter WiFi password
+   const char *ssid = "xxxxx"; // Enter your WiFi name
+   const char *password = "xxxxx";  // Enter WiFi password
    
    // MQTT Broker
    const char *mqtt_broker = "broker.emqx.io";
-   const char *topic = "esp32/test";
+   const char *topic = "emqx/esp32";
    const char *mqtt_username = "emqx";
    const char *mqtt_password = "public";
    const int mqtt_port = 1883;
    ```
 
-3. Open a serial connection to output the results of the program and connect to the Wi-Fi network.
+3. Open a serial connection to display program results and establish a connection to the Wi-Fi network.
 
-   ```c
+   ```reasonml
    // Set software serial baud to 115200;
    Serial.begin(115200);
-   // connecting to a WiFi network
+   // Connecting to a Wi-Fi network
    WiFi.begin(ssid, password);
    while (WiFi.status() != WL_CONNECTED) {
        delay(500);
@@ -76,17 +131,17 @@ Project -> Load library -> Library manager... -> Search PubSubClient -> Install 
    }
    ```
 
-4. Use PubSubClient to connect to the [public MQTT broker](https://www.emqx.com/en/blog/popular-online-public-mqtt-brokers).
+4. Utilize PubSubClient to establish a connection with the MQTT broker.
 
-   ```c
+   ```arduino
    client.setServer(mqtt_broker, mqtt_port);
    client.setCallback(callback);
    while (!client.connected()) {
        String client_id = "esp32-client-";
        client_id += String(WiFi.macAddress());
-       Serial.printf("The client %s connects to the public mqtt broker\n", client_id.c_str());
+       Serial.printf("The client %s connects to the public MQTT broker\n", client_id.c_str());
        if (client.connect(client_id.c_str(), mqtt_username, mqtt_password)) {
-           Serial.println("Public emqx mqtt broker connected");
+           Serial.println("Public EMQX MQTT broker connected");
        } else {
            Serial.print("failed with state ");
            Serial.print(client.state());
@@ -95,42 +150,89 @@ Project -> Load library -> Library manager... -> Search PubSubClient -> Install 
    }
    ```
 
-5. After the MQTT server is successfully connected, ESP32 will publish messages to the MQTT server of `esp/test` and subscribe to the topic messages of `esp/test`.
+#### TLS/SSL
 
-   ```c
-   // publish and subscribe
-   client.publish(topic, "Hi EMQX I'm ESP32 ^^");
-   client.subscribe(topic);
-   ```
+Using TLS in MQTT can ensure the confidentiality and integrity of information, preventing information leakage and tampering. 
 
-6. Set the callback function to print the topic name to the serial port and print the message received from the `esp32/test` topic.
+This ESP32 code establishes a secure Wi-Fi connection using a server root CA certificate. The ca_cert variable contains the root CA certificate in PEM format. The espClient object is configured with the server root CA certificate using the `setCACert()` function. This setup enables the ESP32 client to verify the server's identity during the TLS handshake, establishing a secure Wi-Fi connection and ensuring the transmitted data's confidentiality and integrity.
 
-   ```c
-   void callback(char *topic, byte *payload, unsigned int length) {
-       Serial.print("Message arrived in topic: ");
-       Serial.println(topic);
-       Serial.print("Message:");
-       for (int i = 0; i < length; i++) {
-           Serial.print((char) payload[i]);
-       }
-       Serial.println();
-       Serial.println("-----------------------");
-   }
-   ```
+```
+#include <WiFiClientSecure.h>
+
+const char* ca_cert= \
+"-----BEGIN CERTIFICATE-----\n" \
+"MIIDrzCCApegAwIBAgIQCDvgVpBCRrGhdWrJWZHHSjANBgkqhkiG9w0BAQUFADBh\n" \
+"MQswCQYDVQQGEwJVUzEVMBMGA1UEChMMRGlnaUNlcnQgSW5jMRkwFwYDVQQLExB3\n" \
+"d3cuZGlnaWNlcnQuY29tMSAwHgYDVQQDExdEaWdpQ2VydCBHbG9iYWwgUm9vdCBD\n" \
+"QTAeFw0wNjExMTAwMDAwMDBaFw0zMTExMTAwMDAwMDBaMGExCzAJBgNVBAYTAlVT\n" \
+"MRUwEwYDVQQKEwxEaWdpQ2VydCBJbmMxGTAXBgNVBAsTEHd3dy5kaWdpY2VydC5j\n" \
+"b20xIDAeBgNVBAMTF0RpZ2lDZXJ0IEdsb2JhbCBSb290IENBMIIBIjANBgkqhkiG\n" \
+"9w0BAQEFAAOCAQ8AMIIBCgKCAQEA4jvhEXLeqKTTo1eqUKKPC3eQyaKl7hLOllsB\n" \
+"CSDMAZOnTjC3U/dDxGkAV53ijSLdhwZAAIEJzs4bg7/fzTtxRuLWZscFs3YnFo97\n" \
+"nh6Vfe63SKMI2tavegw5BmV/Sl0fvBf4q77uKNd0f3p4mVmFaG5cIzJLv07A6Fpt\n" \
+"43C/dxC//AH2hdmoRBBYMql1GNXRor5H4idq9Joz+EkIYIvUX7Q6hL+hqkpMfT7P\n" \
+"T19sdl6gSzeRntwi5m3OFBqOasv+zbMUZBfHWymeMr/y7vrTC0LUq7dBMtoM1O/4\n" \
+"gdW7jVg/tRvoSSiicNoxBN33shbyTApOB6jtSj1etX+jkMOvJwIDAQABo2MwYTAO\n" \
+"BgNVHQ8BAf8EBAMCAYYwDwYDVR0TAQH/BAUwAwEB/zAdBgNVHQ4EFgQUA95QNVbR\n" \
+"TLtm8KPiGxvDl7I90VUwHwYDVR0jBBgwFoAUA95QNVbRTLtm8KPiGxvDl7I90VUw\n" \
+"DQYJKoZIhvcNAQEFBQADggEBAMucN6pIExIK+t1EnE9SsPTfrgT1eXkIoyQY/Esr\n" \
+"hMAtudXH/vTBH1jLuG2cenTnmCmrEbXjcKChzUyImZOMkXDiqw8cvpOp/2PV5Adg\n" \
+"06O/nVsJ8dWO41P0jmP6P6fbtGbfYmbW0W5BjfIttep3Sp+dWOIrWcBAI+0tKIJF\n" \
+"PnlUkiaY4IBIqDfv8NZ5YBberOgOzW6sRBc4L0na4UU+Krk2U886UAb3LujEV0ls\n" \
+"YSEY1QSteDwsOoBrp+uvFRTp2InBuThs4pFsiv9kuXclVzDAGySj4dzp30d8tbQk\n" \
+"CAUw7C29C79Fv1C5qfPrmAESrciIxpg0X40KPMbp1ZWVbd4=" \
+"-----END CERTIFICATE-----\n";
+
+// init wifi secure client
+WiFiClientSecure espClient;
+
+espClient.setCACert(ca_cert);
+```
+
+The full TLS connection code is available on [GitHub](https://github.com/emqx/MQTT-Client-Examples/blob/master/mqtt-client-ESP32/esp32_connect_mqtt_via_tls.ino).
+
+### Publish Messages & Subscribe
+
+Once the connection to the MQTT broker is established successfully, the ESP32 will publish messages to the topic `emqx/esp32` and then subscribe to the topic `emqx/esp32`.
+
+```axapta
+// publish and subscribe
+client.publish(topic, "Hi, I'm ESP32 ^^");
+client.subscribe(topic);
+```
+
+### Receive MQTT Messages
+
+Set the callback function to print the topic name to the serial port and print the message received from the `emqx/esp32` topic.
+
+```arduino
+void callback(char *topic, byte *payload, unsigned int length) {
+    Serial.print("Message arrived in topic: ");
+    Serial.println(topic);
+    Serial.print("Message:");
+    for (int i = 0; i < length; i++) {
+        Serial.print((char) payload[i]);
+    }
+    Serial.println();
+    Serial.println("-----------------------");
+}
+```
 
 ### Full Code
 
-```c
+The full code is as follows:
+
+```arduino
 #include <WiFi.h>
 #include <PubSubClient.h>
 
 // WiFi
-const char *ssid = "mousse"; // Enter your WiFi name
-const char *password = "qweqweqwe";  // Enter WiFi password
+const char *ssid = "xxxxx"; // Enter your Wi-Fi name
+const char *password = "xxxxx";  // Enter Wi-Fi password
 
 // MQTT Broker
 const char *mqtt_broker = "broker.emqx.io";
-const char *topic = "esp32/test";
+const char *topic = "emqx/esp32";
 const char *mqtt_username = "emqx";
 const char *mqtt_password = "public";
 const int mqtt_port = 1883;
@@ -139,76 +241,101 @@ WiFiClient espClient;
 PubSubClient client(espClient);
 
 void setup() {
- // Set software serial baud to 115200;
- Serial.begin(115200);
- // connecting to a WiFi network
- WiFi.begin(ssid, password);
- while (WiFi.status() != WL_CONNECTED) {
-     delay(500);
-     Serial.println("Connecting to WiFi..");
- }
- Serial.println("Connected to the WiFi network");
- //connecting to a mqtt broker
- client.setServer(mqtt_broker, mqtt_port);
- client.setCallback(callback);
- while (!client.connected()) {
-     String client_id = "esp32-client-";
-     client_id += String(WiFi.macAddress());
-     Serial.printf("The client %s connects to the public mqtt broker\n", client_id.c_str());
-     if (client.connect(client_id.c_str(), mqtt_username, mqtt_password)) {
-         Serial.println("Public emqx mqtt broker connected");
-     } else {
-         Serial.print("failed with state ");
-         Serial.print(client.state());
-         delay(2000);
-     }
- }
- // publish and subscribe
- client.publish(topic, "Hi EMQX I'm ESP32 ^^");
- client.subscribe(topic);
+    // Set software serial baud to 115200;
+    Serial.begin(115200);
+    // Connecting to a WiFi network
+    WiFi.begin(ssid, password);
+    while (WiFi.status() != WL_CONNECTED) {
+        delay(500);
+        Serial.println("Connecting to WiFi..");
+    }
+    Serial.println("Connected to the Wi-Fi network");
+    //connecting to a mqtt broker
+    client.setServer(mqtt_broker, mqtt_port);
+    client.setCallback(callback);
+    while (!client.connected()) {
+        String client_id = "esp32-client-";
+        client_id += String(WiFi.macAddress());
+        Serial.printf("The client %s connects to the public MQTT broker\n", client_id.c_str());
+        if (client.connect(client_id.c_str(), mqtt_username, mqtt_password)) {
+            Serial.println("Public EMQX MQTT broker connected");
+        } else {
+            Serial.print("failed with state ");
+            Serial.print(client.state());
+            delay(2000);
+        }
+    }
+    // Publish and subscribe
+    client.publish(topic, "Hi, I'm ESP32 ^^");
+    client.subscribe(topic);
 }
 
 void callback(char *topic, byte *payload, unsigned int length) {
- Serial.print("Message arrived in topic: ");
- Serial.println(topic);
- Serial.print("Message:");
- for (int i = 0; i < length; i++) {
-     Serial.print((char) payload[i]);
- }
- Serial.println();
- Serial.println("-----------------------");
+    Serial.print("Message arrived in topic: ");
+    Serial.println(topic);
+    Serial.print("Message:");
+    for (int i = 0; i < length; i++) {
+        Serial.print((char) payload[i]);
+    }
+    Serial.println();
+    Serial.println("-----------------------");
 }
 
 void loop() {
- client.loop();
+    client.loop();
 }
 ```
 
-
 ## Running and Testing
 
-1. Use Arduino to upload the complete code and power on the esp32.
+1. Please follow these steps to upload the complete code using Arduino and power on the ESP32:
 
-2. Open the serial monitor, select 115200 baud rate, and check the ESP32 connection status.
+   1. Connect the ESP32 to your computer using a USB cable.
+   2. Open the Arduino IDE and select the appropriate board and port from the "Tools" menu.
+   3. Copy and paste the complete code into the Arduino IDE.
+   4. Click the "Upload" button (or use the shortcut Ctrl+U) to compile and upload the code to the ESP32.
+   5. Wait for the upload process to finish, ensuring there are no errors.
+   6. Once the code is uploaded, disconnect the ESP32 from the computer.
+   7. Power on the ESP32 by connecting it to a suitable power source.
 
-   ![check the ESP32 connection status](https://assets.emqx.com/images/08d1cf506e708f40861f4d2ea4776c1f.png)
+2. Open the serial monitor and set the baud rate to 115200. Then, check the connection status of the ESP32 by monitoring the output in the serial monitor.
 
-3. Use the MQTTX client to connect to the public MQTT server and publish messages to ESP32.
+   ![ESP32 serial monitor](https://assets.emqx.com/images/b3092b5bc576e59e3d964020cd73598f.png)
 
-   ![MQTTX client](https://assets.emqx.com/images/2dc50309dbba7bdc8a65ec9b4b082b8c.png)
+3. Use the MQTTX client to establish a connection with the MQTT broker and publish messages such as `Hi, I'm MQTTX` to the ESP32.
+
+   > [MQTTX](https://mqttx.app/) is an elegant cross-platform MQTT 5.0 desktop client that runs on macOS, Linux, and Windows. Its user-friendly chat-style interface enables users to easily create multiple MQTT/MQTTS connections and subscribe/publish MQTT messages.
+
+   ![MQTTX Client](https://assets.emqx.com/images/d6af5f33eb8f550cf22705859ed9d59b.png)
+
+4. You will see the messages published by MQTTX.
+
+   ![Messages published by MQTTX](https://assets.emqx.com/images/d192ba700151d83f7adc5376d5b4d374.png)
 
 
-## Summary 
 
-So far, we have successfully connected ESP32 to the public MQTT server provided by [EMQX Cloud](https://www.emqx.com/en/cloud). In this project, we simply connect ESP32 to the MQTT server. This is just one of ESP32's basic capabilities. ESP32 can actually connect to various IoT sensors and report sensor data to the MQTT server.
+## Summary
 
-Next, you can check out [The Easy-to-understand Guide to MQTT Protocol](https://www.emqx.com/en/mqtt-guide) series of articles provided by EMQ to learn about MQTT protocol features, explore more advanced applications of MQTT, and get started with MQTT application and service development.
+In this beginner's guide, we covered the basics of MQTT implementation on the ESP32. We installed the necessary tools, including the ESP32 development board and the PubSubClient library. Readers can establish a secure Wi-Fi connection, connect to an MQTT broker, publish messages, and subscribe to topics through step-by-step instructions. By leveraging MQTT on the ESP32, users can create reliable and efficient IoT applications.
+
+Next, you can check out the [MQTT Guide: Beginner to Advanced](https://www.emqx.com/en/mqtt-guide) series provided by EMQ to learn about MQTT protocol features, explore more advanced applications of MQTT, and get started with MQTT application and service development.
+
+
+## Resources
+
+- [How to Use MQTT on Raspberry Pi with Paho Python Client](https://www.emqx.com/en/blog/use-mqtt-with-raspberry-pi)
+- [MicroPython MQTT Tutorial Based on Raspberry Pi](https://www.emqx.com/en/blog/micro-python-mqtt-tutorial-based-on-raspberry-pi)
+- [Remote control LED with ESP8266 and MQTT](https://www.emqx.com/en/blog/esp8266_mqtt_led)
+- [ESP8266 Connects to MQTT Broker with Arduino](https://www.emqx.com/en/blog/esp8266-connects-to-the-public-mqtt-broker)
+- [Upload Sensor Data to MQTT Cloud Service via NodeMCU (ESP8266)](https://www.emqx.com/en/blog/upload-sensor-data-to-mqtt-cloud-service-via-nodemcu-esp8266)
+
+
 
 
 <section class="promotion">
     <div>
         Try EMQX Cloud for Free
-        <div class="is-size-14 is-text-normal has-text-weight-normal">No credit card required</div>
+        <div class="is-size-14 is-text-normal has-text-weight-normal">A fully managed MQTT service for IoT</div>
     </div>
     <a href="https://accounts.emqx.com/signup?continue=https://cloud-intl.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">Get Started →</a>
 </section>
