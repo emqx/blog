@@ -43,7 +43,6 @@ Get to know the preferred protocol in IoT from beginner to master.
 - [Enhanced authentication - MQTT 5.0 new features](https://www.emqx.com/en/blog/mqtt5-enhanced-authentication) ([Edit](https://github.com/emqx/blog/blob/main/en/202009/mqtt5-enhanced-authentication.md))
 - [Request Response - MQTT 5.0 new features](https://www.emqx.com/en/blog/mqtt5-request-response) ([Edit](https://github.com/emqx/blog/blob/main/en/202009/mqtt5-request-response.md))
 - [Flow control - MQTT 5.0 new features](https://www.emqx.com/en/blog/mqtt5-flow-control) ([Edit](https://github.com/emqx/blog/blob/main/en/202008/mqtt5-flow-control.md))
-- [The process of publishing MQTT 5.0 message](https://www.emqx.com/en/blog/mqtt5-message-publishing-process) ([Edit](https://github.com/emqx/blog/blob/main/en/202004/mqtt5-message-publishing-process.md))
 - [MQTT 5.0 Features of Inflight Window & Message Queue](https://www.emqx.com/en/blog/mqtt5-feature-inflight-window-message-queue) ([Edit](https://github.com/emqx/blog/blob/main/en/202003/mqtt5-feature-inflight-window-message-queue.md))
 - [Use of MQTT Will Message](https://www.emqx.com/en/blog/use-of-mqtt-will-message) ([Edit](https://github.com/emqx/blog/blob/main/en/201912/use-of-mqtt-will-message.md))
 - [Shared subscription - MQTT 5.0 new features](https://www.emqx.com/en/blog/introduction-to-mqtt5-protocol-shared-subscription) ([Edit](https://github.com/emqx/blog/blob/main/en/201912/introduction-to-mqtt5-protocol-shared-subscription.md))
@@ -149,9 +148,6 @@ Best practice of MQTT in various clients.
 - [Understanding MQTT Security: A Comprehensive Overview](https://www.emqx.com/en/blog/understanding-mqtt-security-a-comprehensive-overview) ([Edit](https://github.com/emqx/blog/blob/main/en/202303/understanding-mqtt-security-a-comprehensive-overview.md))
 - [Android MQTT TLS/SSL authentication](https://www.emqx.com/en/blog/android-mqtt-ssl-tls-authentication) ([Edit](https://github.com/emqx/blog/blob/main/en/202104/android-mqtt-ssl-tls-authentication.md))
 - [Enable SSL/TLS for EMQX MQTT broker](https://www.emqx.com/en/blog/emqx-server-ssl-tls-secure-connection-configuration-guide) ([Edit](https://github.com/emqx/blog/blob/main/en/202007/emqx-server-ssl-tls-secure-connection-configuration-guide.md))
-- [EMQX Authentication (2)-Core Concepts and Configuration Points of MQTT Connection Authentication](https://www.emqx.com/en/blog/core-concepts-and-configurationpoints-of-mqtt-connection-authentication) ([Edit](https://github.com/emqx/blog/blob/main/en/202004/core-concepts-and-configurationpoints-of-mqtt-connection-authentication.md))
-- [EMQX MQTT broker HTTP authentication plugin tutorial](https://www.emqx.com/en/blog/emqx-mqtt-broker-http-authentication-plugin-tutorial) ([Edit](https://github.com/emqx/blog/blob/main/en/202004/emqx-mqtt-broker-http-authentication-plugin-tutorial.md))
-- [EMQX authentication (1)-MQTT connection authentication based on MySQL](https://www.emqx.com/en/blog/emqx-authentication-1-mqtt-connection-authentication-based-on-mysql) ([Edit](https://github.com/emqx/blog/blob/main/en/202003/emqx-authentication-1-mqtt-connection-authentication-based-on-mysql.md))
 
 
 ## [MQTT Integration (Eco & Integration)](https://www.emqx.com/en/blog/category/eco-and-integration)
@@ -245,28 +241,10 @@ EMQX is the world's most scalable open-source MQTT broker with a high performanc
 - [Using Python to develop EMQX  plugins](https://www.emqx.com/en/blog/develop-emqx-plugin-using-python) ([Edit](https://github.com/emqx/blog/blob/main/en/202007/develop-emqx-plugin-using-python.md))
 - [Using Java to develop EMQX plugins](https://www.emqx.com/en/blog/develop-emqx-plugin-using-java) ([Edit](https://github.com/emqx/blog/blob/main/en/202007/develop-emqx-plugin-using-java.md))
 - [Building K8S cluster of EMQX starting from scratch](https://www.emqx.com/en/blog/emqx-mqtt-broker-k8s-cluster) ([Edit](https://github.com/emqx/blog/blob/main/en/202006/emqx-mqtt-broker-k8s-cluster.md))
-- [Persisting MQTT sessions and messages to Redis](https://www.emqx.com/en/blog/emqx-plug-in-persistence-series-3-emqx-redis-data-persistence) ([Edit](https://github.com/emqx/blog/blob/main/en/202005/emqx-plug-in-persistence-series-3-emqx-redis-data-persistence.md))
 - [IoT private TCP protocol service migration](https://www.emqx.com/en/blog/iot-private-tcp-protocol-service-migration) ([Edit](https://github.com/emqx/blog/blob/main/en/202005/iot-private-tcp-protocol-service-migration.md))
-- [Store MQTT messages to the OpenTSDB](https://www.emqx.com/en/blog/store-mqtt-messages-to-the-opentsdb) ([Edit](https://github.com/emqx/blog/blob/main/en/202004/store-mqtt-messages-to-the-opentsdb.md))
 - [EMQX MQTT 5.0 Topic Rewrite](https://www.emqx.com/en/blog/rewriting-emqx-mqtt5-topic) ([Edit](https://github.com/emqx/blog/blob/main/en/202004/rewriting-emqx-mqtt5-topic.md))
-- [EMQX plugin persistence series (5) - MySQL MQTT data storage](https://www.emqx.com/en/blog/emqx-plugin-persistence-series-5-mysql-mqtt-data-storage) ([Edit](https://github.com/emqx/blog/blob/main/en/202004/emqx-plugin-persistence-series-5-mysql-mqtt-data-storage.md))
 - [Retained message and message expiration interval of EMQX MQTT 5.0 broker](https://www.emqx.com/en/blog/message-retention-and-message-expiration-interval-of-emqx-mqtt5-broker) ([Edit](https://github.com/emqx/blog/blob/main/en/202004/message-retention-and-message-expiration-interval-of-emqx-mqtt5-broker.md))
-- [EMQX MQTT broker plugin persistence series (4) PostgreSQL data persistence](https://www.emqx.com/en/blog/emqx-plug-in-persistence-series-4-postgresql-data-persistence) ([Edit](https://github.com/emqx/blog/blob/main/en/202003/emqx-plug-in-persistence-series-4-postgresql-data-persistence.md))
-- [EMQX Rule Engine Series (14)-Bridge Messages to Pulsar](https://www.emqx.com/en/blog/emqx-rule-engine-series-14-bridge-messages-to-pulsar) ([Edit](https://github.com/emqx/blog/blob/main/en/202003/emqx-rule-engine-series-14-bridge-messages-to-pulsar.md))
-- [EMQX Rule Engine Series (12) Store Messages to Redis](https://www.emqx.com/en/blog/emqx-rule-engine-series-12-store-messages-to-redis) ([Edit](https://github.com/emqx/blog/blob/main/en/202001/emqx-rule-engine-series-12-store-messages-to-redis.md))
-- [EMQX Rule Engine Series - Store messages to PostgreSQL database](https://www.emqx.com/en/blog/emqx-rule-engine-series-11-store-messages-to-postgresql-database) ([Edit](https://github.com/emqx/blog/blob/main/en/201912/emqx-rule-engine-series-11-store-messages-to-postgresql-database.md))
-- [EMQX Rule Engine Series - Storing messages to the OpenTSDB database](https://www.emqx.com/en/blog/emqx-rule-engine-series-10-store-messages-to-the-opentsdb-database) ([Edit](https://github.com/emqx/blog/blob/main/en/201912/emqx-rule-engine-series-10-store-messages-to-the-opentsdb-database.md))
-- [Writing Messages to TDengine | EMQX Rule Engine Series](https://www.emqx.com/en/blog/emqx-rule-engine-series-writing-messages-to-tdengine) ([Edit](https://github.com/emqx/blog/blob/main/en/201912/emqx-rule-engine-series-writing-messages-to-tdengine.md))
-- [Storing Messages to InfluxDB Time Series Database | EMQX Rule Engine Series](https://www.emqx.com/en/blog/emqx-rule-engine-series-store-messages-to-influxdb-time-series-database) ([Edit](https://github.com/emqx/blog/blob/main/en/201911/emqx-rule-engine-series-store-messages-to-influxdb-time-series-database.md))
-- [Storing Messages to MySQL Database | EMQX Rule Engine Series](https://www.emqx.com/en/blog/emqx-rule-engine-series-store-messages-to-mysql-database) ([Edit](https://github.com/emqx/blog/blob/main/en/201911/emqx-rule-engine-series-store-messages-to-mysql-database.md))
-- [Bridging MQTT Data to Kafka | EMQX Rule Engine Series](https://www.emqx.com/en/blog/emqx-rule-engine-series-bridge-data-to-message-queue-kafka) ([Edit](https://github.com/emqx/blog/blob/main/en/201911/emqx-rule-engine-series-bridge-data-to-message-queue-kafka.md))
-- [Bridging Messages to MQTT Broker | EMQX Rule Engine Series](https://www.emqx.com/en/blog/emqx-rule-engine-series-bridging-messages-to-mqtt-broker) ([Edit](https://github.com/emqx/blog/blob/main/en/201911/emqx-rule-engine-series-bridging-messages-to-mqtt-broker.md))
-- [Storing Messages to MongoDB Database | EMQX Rule Engine Series](https://www.emqx.com/en/blog/emqx-rule-engine-series-store-messages-to-the-mongodb-database) ([Edit](https://github.com/emqx/blog/blob/main/en/201910/emqx-rule-engine-series-store-messages-to-the-mongodb-database.md))
 - [Deploying EMQX 4.0 cluster on Kubernetes via Helm3](https://www.emqx.com/en/blog/rapidly-deploy-emqx-clusters-on-kubernetes-via-helm) ([Edit](https://github.com/emqx/blog/blob/main/en/201910/rapidly-deploy-emqx-clusters-on-kubernetes-via-helm.md))
-- [Schema Registry Tutorial](https://www.emqx.com/en/blog/schema-registry-tutorial) ([Edit](https://github.com/emqx/blog/blob/main/en/201910/schema-registry-tutorial.md))
-- [Storing Messages to DynamoDB | EMQX Rule Engine Series](https://www.emqx.com/en/blog/emqx-rule-engine-series-store-messages-to-dynamodb-database) ([Edit](https://github.com/emqx/blog/blob/main/en/201910/emqx-rule-engine-series-store-messages-to-dynamodb-database.md))
-- [Storing Messages to Cassandra Database | EMQX Rule Engine Series](https://www.emqx.com/en/blog/emqx-rule-engine-series-storing-messages-to-cassandra-database) ([Edit](https://github.com/emqx/blog/blob/main/en/201909/emqx-rule-engine-series-storing-messages-to-cassandra-database.md))
-- [EMQX Persistence Plug-in Series (II) - InfluxDB Data Storage](https://www.emqx.com/en/blog/emqx-persistence-plug-in-series-influxdb-data-storage) ([Edit](https://github.com/emqx/blog/blob/main/en/201908/emqx-persistence-plug-in-series-influxdb-data-storage.md))
 
 
 ## [EMQX Cloud](https://www.emqx.com/en/blog/category/cloud)
@@ -408,7 +386,6 @@ The world's most scalable and reliable MQTT messaging platform to connect, move 
 - [EMQX Enterprise 4.3.0 is now available!](https://www.emqx.com/en/blog/emqx-enterprise-4-3-0-release-notes) ([Edit](https://github.com/emqx/blog/blob/main/en/202105/emqx-enterprise-4-3-0-release-notes.md))
 - [EMQX Enterprise now supports the IoV GB/T32960 protocol](https://www.emqx.com/en/blog/release-notes-emq-x-enterprise-4-2-3) ([Edit](https://github.com/emqx/blog/blob/main/en/202102/release-notes-emq-x-enterprise-4-2-3.md))
 - [EMQX Enterprise 4.2.2 is now available!](https://www.emqx.com/en/blog/release-notes-emq-x-enterprise-4-2-2) ([Edit](https://github.com/emqx/blog/blob/main/en/202012/release-notes-emq-x-enterprise-4-2-2.md))
-- [EMQX Enterprise + Apache Kafka Build a high-performance IoT message processing backend](https://www.emqx.com/en/blog/emqx-enterprise-mqtt-broker-apache-kafka-build-high-performance-iot-message-processing-backend) ([Edit](https://github.com/emqx/blog/blob/main/en/201912/emqx-enterprise-mqtt-broker-apache-kafka-build-high-performance-iot-message-processing-backend.md))
 - [EMQX Enterprise 3.4.0 Overview](https://www.emqx.com/en/blog/emq-new-version-in-september-emqx-enterprise-3-4-0-function-overview) ([Edit](https://github.com/emqx/blog/blob/main/en/201909/emq-new-version-in-september-emqx-enterprise-3-4-0-function-overview.md))
 
 
@@ -431,7 +408,6 @@ Build a reliable, efficient and industry-specific Internet of Vehicles platform 
 - [Architecture Design of MQTT Message Platform for Ten-million-level IoV](https://www.emqx.com/en/blog/mqtt-messaging-platform-for-internet-of-vehicles) ([Edit](https://github.com/emqx/blog/blob/main/en/202203/mqtt-messaging-platform-for-internet-of-vehicles.md))
 - [MQTT in an IoV scenario](https://www.emqx.com/en/blog/mqtt-for-internet-of-vehicles) ([Edit](https://github.com/emqx/blog/blob/main/en/202203/mqtt-for-internet-of-vehicles.md))
 - [EMQX Enterprise now supports the IoV GB/T32960 protocol](https://www.emqx.com/en/blog/release-notes-emq-x-enterprise-4-2-3) ([Edit](https://github.com/emqx/blog/blob/main/en/202102/release-notes-emq-x-enterprise-4-2-3.md))
-- [EMQ helps SAIC Volkswagen building IoV platform](https://www.emqx.com/en/blog/emqx-in-volkswagen-iov) ([Edit](https://github.com/emqx/blog/blob/main/en/202012/emqx-in-volkswagen-iov.md))
 
 
 ## [Industrial IoT | Unified Namespace | Sparkplug](https://www.emqx.com/en/blog/category/industrial-iot)
@@ -585,10 +561,6 @@ eKuiper is an edge lightweight IoT data analytics / streaming software implement
 - [Release Notes — Kuiper v0.2.1](https://www.emqx.com/en/blog/release-notes-kuiper-0-2-1) ([Edit](https://github.com/emqx/blog/blob/main/en/202003/release-notes-kuiper-0-2-1.md))
 - [Release Notes — Kuiper 0.2.0](https://www.emqx.com/en/blog/release-notes-kuiper-0.2.0) ([Edit](https://github.com/emqx/blog/blob/main/en/202002/release-notes-kuiper-0.2.0.md))
 - [Release Notes - Kuiper 0.1](https://www.emqx.com/en/blog/release-notes-kuiper-0-1) ([Edit](https://github.com/emqx/blog/blob/main/en/202001/release-notes-kuiper-0-1.md))
-- [Release Notes - Kuiper 0.0.4](https://www.emqx.com/en/blog/release-notes-kuiper-0-0-4) ([Edit](https://github.com/emqx/blog/blob/main/en/201912/release-notes-kuiper-0-0-4.md))
-- [Lightweight edge computing EMQX Kuiper and Azure IoT Hub integration solution](https://www.emqx.com/en/blog/lightweight-edge-computing-emqx-kuiper-and-azure-iot-hub-integration-solution) ([Edit](https://github.com/emqx/blog/blob/main/en/201911/lightweight-edge-computing-emqx-kuiper-and-azure-iot-hub-integration-solution.md))
-- [Release Notes - Kuiper 0.0.3](https://www.emqx.com/en/blog/release-notes-kuiper-0-0-3) ([Edit](https://github.com/emqx/blog/blob/main/en/201911/release-notes-kuiper-0-0-3.md))
-- [EMQ IoT Edge Streaming Data Processing Software Kuiper Was Open-sourced](https://www.emqx.com/en/blog/emq-iot-edge-streaming-data-processing-software-kuiper-was-open-sourced) ([Edit](https://github.com/emqx/blog/blob/main/en/201910/emq-iot-edge-streaming-data-processing-software-kuiper-was-open-sourced.md))
 
 
 ## [XMeter](https://www.emqx.com/en/blog/category/xmeter)
@@ -604,8 +576,6 @@ XMeter support millions of simulated users, concurrent device connections, and m
 Accelerate digital transformation of industries based on EMQ data infrastructure for IoT.
 
 - [Application of MQTT protocol in oil & gas industry](https://www.emqx.com/en/blog/application-of-mqtt-protocol-in-oil-and-gas-industry) ([Edit](https://github.com/emqx/blog/blob/main/en/202107/application-of-mqtt-protocol-in-oil-and-gas-industry.md))
-- [2019 Smart China Expo - EMQ & Intel MEC IoT Edge Solution](https://www.emqx.com/en/blog/2019-smart-china-expo-emq-intel-mec-iot-edge-solution) ([Edit](https://github.com/emqx/blog/blob/main/en/201909/2019-smart-china-expo-emq-intel-mec-iot-edge-solution.md))
-- [EMQX Helps Carriers Build Large-Scale NB-IoT Platform](https://www.emqx.com/en/blog/emqx-helps-operators-build-large-scale-nb-iot-platform) ([Edit](https://github.com/emqx/blog/blob/main/en/201908/emqx-helps-operators-build-large-scale-nb-iot-platform.md))
 
 
 ## [Engineering](https://www.emqx.com/en/blog/category/engineering)
