@@ -1,63 +1,68 @@
-MQTT v5 brings many new features, we will show these features in an easy-to-understand way and discuss the impact of these features on the developer. So far, we have discussed these [new features of MQTT v5](https://www.emqx.com/en/blog/introduction-to-mqtt-5). Today, we will continue discussing: **subscription identifier** and **subscription options**.
+## Why do we need Subscription Identifiers?
+
+Most implementations of [MQTT clients](https://www.emqx.com/en/mqtt-client-sdk) use a callback mechanism to handle incoming messages.
+
+Within the callback function, we only have access to the topic name of the message. If it is a non-wildcard subscription, the topic filter used during the subscription will be identical to the topic name in the message. Therefore, we can directly establish a mapping between the subscribed topics and callback functions. Then, upon message arrival, we can look up the corresponding callback based on the topic name in the message and execute it.
+
+However, if it’s a wildcard subscription, the topic name in the message will be different from the original topic filter used during the subscription. In this case, we need to match the topic name in the message with the original subscription one by one to determine which callback function should be executed. This obviously affects the processing efficiency of the client.
+
+![MQTT Subscription](https://assets.emqx.com/images/5b3b24a4406e4d342355138f90dd438b.png)
+
+In addition, [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) allows a client to establish multiple subscriptions, so a single message can match multiple client subscriptions when using the wildcard subscription.
+
+In such cases, MQTT allows the server to send a separate message for each overlapping subscription or only one message for all the overlapping subscriptions. The former option means that the client will receive multiple duplicate messages.
+
+Regardless of whether it's the former or latter option, the client cannot determine which subscription(s) the message originated from. For example, even if the client finds that a message matches two of its subscriptions, it cannot guarantee that both subscriptions have been successfully created when the server forwards the message to itself. Therefore, the client cannot trigger the correct callback for the message.
+
+![MQTT Subscription](https://assets.emqx.com/images/3a86d62e52c9bfcef85ba590d14c4a19.png)
 
 
+## How does the Subscription Identifier work?
 
-## Subscription identifier
+To address this issue, MQTT 5.0 introduced Subscription Identifiers. Its usage is very simple: clients can specify a Subscription Identifier when subscribing, and the server needs to store the mapping relationship between the subscription and the Subscription Identifier. When a PUBLISH packet matches a subscription and needs to be forwarded to the client, the server will return the subscription identifier associated with the subscription to the client together with the PUBLISH packet.
 
-The client can specify a subscription identifier when subscribing. The broker will establish and store the mapping relationship between this subscription and subscription identifier when successfully create or modify subscription. The broker will return the subscription identifier associated with this PUBLISH packet and the PUBLISH packet to the client when need to forward PUBLISH packets matching this subscription to this client.
+![Subscription Identifier](https://assets.emqx.com/images/f9f1cf19de90a4e03647dbe52d69f7e7.png)
 
-Therefore, the client can establish the mapping between the subscription identifier and message processing program for directly orientating messages to the corresponding message processing program through the subscription identifier when receiving a PUBLISH packet. It is much faster than finding the message processing program through topic matching.
+If the server chooses to send separate messages for overlapping subscriptions, each PUBLISH packet should include the Subscription Identifier that matches the subscription. If the server chooses to send only one message for overlapping subscriptions, the PUBLISH packet will contain multiple Subscription Identifiers.
 
-![image20200723152010505.png](https://assets.emqx.com/images/14752d1986cadf5bd7b6c96a3f4229f7.png)
+The client only needs to establish a mapping between Subscription Identifiers and callback functions. By using the Subscription Identifier in the message, the client can determine which subscription the message originated from and which callback function should be executed.
 
-Because the SUBSCRIBE packet supports containing many subscriptions, multiple subscriptions may associate with one subscription identifier. Even if subscribing separately, this situation may happen. Users need to realize the result might cause when using it in this way, although this situation is allowed to happen. According to the actual subscription situation of the client, the PUBLISH packet that the client finally received may contain multiple subscription identifiers, and these subscription identifiers may be completely different or the same. The following are several common situations:
+![MQTT Subscription](https://assets.emqx.com/images/7ba966d802c9ee39683870366f5fd7c7.png)
 
-1. The client subscribes to the topic `a` and specifies the subscription identifier as 1, subscribes to the topic `b` and specifies the subscription identifier as 2. Because of using different subscription identifiers, the messages of the topic `a` and `b` will be directed to different message processing programs.
-2. The client subscribes to the topic `a` and specifies the subscription identifier as 1, subscribes to the topic `b` and specifies the subscription identifier as 1. Because of using the same subscription identifier, the messages of the topic `a` and `b` will be directed to the same message processing program.
-3. The client subscribes to the topic `a/+` and specifies the subscription identifier as 1, subscribes to the topic `a/b` and specifies the subscription identifier as 1. The PUBLISH packet of topic `a/b` will carry two identical subscription identifiers, the corresponding message processing program will be triggered twice.
-4. The client subscribes to the topic `a/+` and specifies the subscription identifier as 1, subscribes to the topic `a/b` and specifies the subscription identifier as 2. The PUBLISH packet of topic `a/b` will carry two different subscription identifiers, a message will trigger two different message processing program.
+In the client, the Subscription Identifier is not part of the session state, and its association with any content is entirely determined by the client. Therefore, besides callback functions, we can also establish mappings between Subscription Identifiers and subscribed topics, or between Subscription Identifiers and the Client ID. The latter is particularly useful in gateway scenarios where the gateway receives messages from the server and needs to forward them to the appropriate client. With the Subscription Identifier, the gateway can quickly determine which client should receive the message without re-matching and routing the topics.
 
-![image20200723152040226.png](https://assets.emqx.com/images/fd6fb5f61d116aa66d837711e337a30f.png)
+A SUBSCRIBE packet can only contain one Subscription Identifier. If a SUBSCRIBE packet includes multiple subscriptions, the same Subscription Identifier will be associated with all those subscriptions. So, please ensure that associating multiple subscriptions with the same callback function is intentional.
 
-The situation that PUBLISH packet carries multiple subscription identifiers is ok when the message rate is low, but it may cause some performance issues when the message rate is high. Therefore, we suggested that you try to ensure that this happens intentionally.
+## Demo
 
+1. Access [MQTTX Web](http://www.emqx.io/online-mqtt-client) on a Web browser.
 
+2.  Create an [MQTT over WebSocket](https://www.emqx.com/en/blog/connect-to-mqtt-broker-with-websocket) connection and connect to the [Free Public MQTT Server](https://www.emqx.com/en/mqtt/public-mqtt5-broker):
 
-## Subscription options
+   ![MQTT over WebSocket](https://assets.emqx.com/images/e1c10cbd018d0742f21f3b371ec89c6a.png)
 
-In the MQTT v5, you can use more subscription options to change the server behavior.
+3. After a successful connection, we subscribe to the topic `mqttx_4299c767/home/+` and specify the Subscription Identifier as 1. Then, we subscribe to the topic `mqttx_4299c767/home/PM2_5` and specify the Subscription Identifier as 2. Since the public server can be used by many people simultaneously, to avoid topic conflicts, we use the Client ID as the topic prefix:
 
-![image20200723161859058.png](https://assets.emqx.com/images/0a255be6657118484a6ca663c9755c6b.png)
+   ![New Subscription 1](https://assets.emqx.com/images/f3c0aed851e02f20aae69cf100b167d6.png)
 
-### QoS
+   ![New Subscription 2](https://assets.emqx.com/images/212728b6ae71b5baf73a860f75d4545a.png)
 
-Please refer to [MQTT Quality of Service](https://www.emqx.com/en/blog/introduction-to-mqtt-qos).
+4. After a successful subscription, we publish a message to the topic `mqttx_4299c767/home/PM2_5`. We will observe that the current client receives two messages, and the Subscription Identifier in the messages is 1 and 2, respectively. This is because EMQX's implementation sends separate messages for overlapping subscriptions:
 
-### No Local
+   ![Receive MQTT Messages](https://assets.emqx.com/images/fd38994dea83422bb31a85b5c14711b1.png)
 
-In the MQTT v3.1.1, if you subscribe to the topic published by yourself, you will receive all messages that you published.
+5. And if we publish a message to the topic `mqttx_4299c767/home/temperature`, we will see that the Subscription Identifier in the received message is 1:
 
-However, in the MQTT v5, if you set this option as 1 when subscribing, the server will not forward the message you published to you.
+   ![image.png](https://assets.emqx.com/images/f0a2dba909a1efa8fab0b07ea961a959.png)
 
+So far, we have demonstrated how to set a Subscription Identifier for subscription through [MQTTX](https://mqttx.app/). If you are still curious about how to trigger different callbacks based on Subscription Identifier, you can get the Python sample code for Subscription Identifier [here](https://github.com/emqx/MQTT-Feature-Examples).
 
-### Retain As Publish
-
-This option is used to specify whether the server retains the RETAIN mark when forwarding messages to the client, and this option does not affect the RETAIN mark in the retained message. Therefore, when the option Retain As Publish is set to 0, the client will directly distinguish whether this is a normal forwarded message or a retained message according to the RETAIN mark in the message, instead of judging whether this message is the first received after subscribing(the forwarded message may be sent before the retained message, which depends on the specific implementation of different brokers).
-
-
-### Retain Handling
-
-This option is used to specify whether the server forwards the retained message to the client when establishing a subscription.
-
-- **Retain Handling is equal to 0**, as long as the client successfully subscribes, the server will send the retained message. 
-- **Retain Handling is equal to 1**, if the client successfully subscribes and this subscription does not exist previously, the server sends the retained message. After all, sometimes the client re-initiate the subscription just to change the QoS, but it does not mean that it wants to receive the reserved messages again. 
-- **Retain Handling is equal to 2**, even if the client successfully subscribes, the server does not send the retained message.
 
 
 <section class="promotion">
     <div>
         Try EMQX Cloud for Free
-        <div class="is-size-14 is-text-normal has-text-weight-normal">A fully managed, cloud-native MQTT 5.0 service</div>
+        <div class="is-size-14 is-text-normal has-text-weight-normal">A fully managed MQTT service for IoT</div>
     </div>
-    <a href="https://accounts.emqx.com/signup?continue=https://cloud-intl.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">Get Started →</a >
+    <a href="https://accounts.emqx.com/signup?continue=https://cloud-intl.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">Get Started →</a>
 </section>
