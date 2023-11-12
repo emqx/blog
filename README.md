@@ -175,6 +175,7 @@ Explore more with & via EMQ.
 ## [EMQX Open Source | Broker](https://www.emqx.com/en/blog/category/emqx)
 EMQX is the world's most scalable open-source MQTT broker with a high performance that connects 100M+ IoT devices in 1 cluster, while maintaining 1M message per second throughput and sub-millisecond latency.
 
+- [EMQX Performance Tuning: Max Connections and File Descriptors](https://www.emqx.com/en/blog/emqx-performance-tuning-maximum-connections-and-file-descriptors) ([Edit](https://github.com/emqx/blog/blob/main/en/202311/emqx-performance-tuning-maximum-connections-and-file-descriptors.md))
 - [A Beginner's Guide to MQTT Performance Testing](https://www.emqx.com/en/blog/a-beginner-guide-to-mqtt-performance-testing) ([Edit](https://github.com/emqx/blog/blob/main/en/202311/a-beginner-guide-to-mqtt-performance-testing.md))
 - [Data Bridge of MQTT and AI: 5 Core Aspects of EMQX for AI Advancements](https://www.emqx.com/en/blog/emqx-mqtt-and-ai) ([Edit](https://github.com/emqx/blog/blob/main/en/202311/emqx-mqtt-and-ai.md))
 - [Explore the Next-Gen IoT Protocol with EMQ, Intel, and Students from Global Universities](https://www.emqx.com/en/blog/emq-intel-and-sjtu-explore-mqtt-over-quic-together) ([Edit](https://github.com/emqx/blog/blob/main/en/202310/emq-intel-and-sjtu-explore-mqtt-over-quic-together.md))
@@ -336,6 +337,7 @@ The easiest way to start MQTT service. Connect your IoT devices to any cloud wit
 ## [EMQX Enterprise](https://www.emqx.com/en/blog/category/enterprise)
 The world's most scalable and reliable MQTT messaging platform to connect, move and process your data in business-critical scenarios for the IoT era.
 
+- [EMQX Performance Tuning: Max Connections and File Descriptors](https://www.emqx.com/en/blog/emqx-performance-tuning-maximum-connections-and-file-descriptors) ([Edit](https://github.com/emqx/blog/blob/main/en/202311/emqx-performance-tuning-maximum-connections-and-file-descriptors.md))
 - [A Beginner's Guide to MQTT Performance Testing](https://www.emqx.com/en/blog/a-beginner-guide-to-mqtt-performance-testing) ([Edit](https://github.com/emqx/blog/blob/main/en/202311/a-beginner-guide-to-mqtt-performance-testing.md))
 - [Data Bridge of MQTT and AI: 5 Core Aspects of EMQX for AI Advancements](https://www.emqx.com/en/blog/emqx-mqtt-and-ai) ([Edit](https://github.com/emqx/blog/blob/main/en/202311/emqx-mqtt-and-ai.md))
 - [Building an IoT Time-Series Data Application for Energy Storage with MQTT and InfluxDB](https://www.emqx.com/en/blog/building-an-iot-time-series-data-application-with-mqtt-and-influxdb) ([Edit](https://github.com/emqx/blog/blob/main/en/202310/building-an-iot-time-series-data-application-with-mqtt-and-influxdb.md))
@@ -412,6 +414,7 @@ Build a reliable, efficient and industry-specific Internet of Vehicles platform 
 
 ## [Industrial IoT | Unified Namespace | Sparkplug](https://www.emqx.com/en/blog/category/industrial-iot)
 
+- [KNX Protocol: The Basics and Its Possibilities with IoT](https://www.emqx.com/en/blog/knx-protocol) ([Edit](https://github.com/emqx/blog/blob/main/en/202311/knx-protocol.md))
 - [Leveraging the Hybrid Computing for Data Management and Analysis](https://www.emqx.com/en/blog/leveraging-the-hybrid-computing-for-data-management-and-analysis) ([Edit](https://github.com/emqx/blog/blob/main/en/202311/leveraging-the-hybrid-computing-for-data-management-and-analysis.md))
 - [Supercharging IIoT with MQTT, Edge Intelligence, and InfluxDB](https://www.emqx.com/en/blog/supercharging-iiot-with-mqtt-edge-intelligence-and-influxdb) ([Edit](https://github.com/emqx/blog/blob/main/en/202311/supercharging-iiot-with-mqtt-edge-intelligence-and-influxdb.md))
 - [Practical Data Management for Smart Manufacturing](https://www.emqx.com/en/blog/practical-data-management-for-smart-manufacturing) ([Edit](https://github.com/emqx/blog/blob/main/en/202311/practical-data-management-for-smart-manufacturing.md))
