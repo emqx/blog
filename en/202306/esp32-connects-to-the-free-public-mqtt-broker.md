@@ -16,42 +16,29 @@ Overall, the combination of ESP32 and MQTT is ideal for IoT applications that re
 
 ## Prepare an MQTT Broker
 
-Before proceeding, please ensure you have an MQTT broker to communicate and test with. There are several options for obtaining an MQTT broker:
+Before proceeding, please ensure you have an MQTT broker to communicate and test with. We recommend you use EMQX Cloud.
 
-- **Private deployment**
+[EMQX Cloud](https://www.emqx.com/en/cloud) is a fully managed cloud-native MQTT service that can connect to a large number of IoT devices and integrate various databases and business systems. With EMQX Cloud, you can get started in just a few minutes and run your MQTT service in 20+ regions across AWS, Google Cloud, and Microsoft Azure, ensuring global availability and fast connectivity.
 
-  [EMQX](https://www.emqx.io/) is the most scalable open-source MQTT broker for IoT, [IIoT](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges), and connected vehicles. You can run the following Docker command to install EMQX.
+<section class="promotion">
+    <div>
+        Try EMQX Cloud Serverless for Free
+        <div class="is-size-14 is-text-normal has-text-weight-normal">Forever free under 1M session minutes/month.</div>
+    </div>
+    <a href="https://accounts.emqx.com/signup?continue=https://cloud-intl.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">Get Started →</a>
+</section>
 
-  ```apache
-  docker run -d --name emqx -p 1883:1883 -p 8083:8083 -p 8084:8084 -p 8883:8883 -p 18083:18083 emqx/emqx
-  ```
+This article will use the [free public MQTT broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker) to simplify the process:
 
-- **Fully managed cloud service**
+- Server: `broker.emqx.io`
 
-  The fully managed cloud service is the easiest way to start an MQTT service. With [EMQX Cloud](https://www.emqx.com/en/cloud), you can get started in just a few minutes and run your MQTT service in 20+ regions across AWS, Google Cloud, and Microsoft Azure, ensuring global availability and fast connectivity.
+- TCP Port: `1883`
 
-  The latest edition, [EMQX Cloud Serverless](https://www.emqx.com/en/cloud/serverless-mqtt), provides a forever free 1M session minutes/month complimentary offering for developers to easily start their MQTT deployment within seconds.
+- WebSocket Port: `8083`
 
-- **Free public MQTT broker**
+- SSL/TLS Port: `8883`
 
-  The Free public MQTT broker is exclusively available for those who wish to learn and test the MQTT protocol. It is important to avoid using it in production environments as it may pose security risks and downtime concerns.
-
-For this blog post, we will use the free public MQTT broker at `broker.emqx.io`.
-
-> **MQTT Broker Info**
->
-> Server: `broker.emqx.io`
->
-> TCP Port: `1883`
->
-> WebSocket Port: `8083`
->
-> SSL/TLS Port: `8883`
->
-> Secure WebSocket Port: `8084`
-
-For more information, please check out: [Free Public MQTT Broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker).
-
+- Secure WebSocket Port: `8084`
 
 
 ## Getting Started with MQTT on ESP32
@@ -334,8 +321,7 @@ Next, you can check out the [MQTT Guide: Beginner to Advanced](https://www.emqx.
 
 <section class="promotion">
     <div>
-        Try EMQX Cloud for Free
-        <div class="is-size-14 is-text-normal has-text-weight-normal">A fully managed MQTT service for IoT</div>
+        Talk to an Expert
     </div>
-    <a href="https://accounts.emqx.com/signup?continue=https://cloud-intl.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">Get Started →</a>
+    <a href="https://www.emqx.com/en/contact?product=solutions" class="button is-gradient px-5">Contact Us →</a>
 </section>
