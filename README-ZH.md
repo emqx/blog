@@ -7,6 +7,7 @@
 ## [MQTT Tutorials](https://www.emqx.com/zh/blog/category/mqtt-protocol)
 Get to know the preferred protocol in IoT from beginner to master.
 
+- [共享订阅介绍与示例 | MQTT 5.0 特性详解](https://www.emqx.com/zh/blog/introduction-to-mqtt5-protocol-shared-subscription) ([Edit](https://github.com/emqx/blog/blob/main/zh/202311/introduction-to-mqtt5-protocol-shared-subscription.md))
 - [MQTT 5：7 项新功能以及迁移注意事项](https://www.emqx.com/zh/blog/introduction-to-mqtt-5) ([Edit](https://github.com/emqx/blog/blob/main/zh/202310/introduction-to-mqtt-5.md))
 - [Clean Start 与 Session Expiry Interval 介绍与示例 | MQTT 5.0 特性详解](https://www.emqx.com/zh/blog/mqtt5-new-feature-clean-start-and-session-expiry-interval) ([Edit](https://github.com/emqx/blog/blob/main/zh/202310/mqtt5-new-feature-clean-start-and-session-expiry-interval.md))
 - [Payload Format Indicator 和 Content Type 介绍与示例 ｜ MQTT 5.0 特性详解](https://www.emqx.com/zh/blog/mqtt5-new-features-payload-format-indicator-and-content-type) ([Edit](https://github.com/emqx/blog/blob/main/zh/202309/mqtt5-new-features-payload-format-indicator-and-content-type.md))
@@ -49,7 +50,6 @@ Get to know the preferred protocol in IoT from beginner to master.
 - [流量控制 - MQTT 5.0 新特性](https://www.emqx.com/zh/blog/mqtt5-flow-control) ([Edit](https://github.com/emqx/blog/blob/main/zh/202008/mqtt5-flow-control.md))
 - [EMQX  MQTT 5.0 服务器的保留消息与消息过期间隔](https://www.emqx.com/zh/blog/message-retention-and-message-expiration-interval-of-emqx-mqtt5-broker) ([Edit](https://github.com/emqx/blog/blob/main/zh/202003/message-retention-and-message-expiration-interval-of-emqx-mqtt5-broker.md))
 - [MQTT 5.0 特性 Inflight Window & Message Queue](https://www.emqx.com/zh/blog/mqtt5-feature-inflight-window-message-queue) ([Edit](https://github.com/emqx/blog/blob/main/zh/202002/mqtt5-feature-inflight-window-message-queue.md))
-- [共享订阅 - MQTT 5.0 新特性](https://www.emqx.com/zh/blog/introduction-to-mqtt5-protocol-shared-subscription) ([Edit](https://github.com/emqx/blog/blob/main/zh/201911/introduction-to-mqtt5-protocol-shared-subscription.md))
 - [MQTT 5.0 新特性 |（一） 属性与载荷](https://www.emqx.com/zh/blog/mqtt5-new-features-properties-and-loads) ([Edit](https://github.com/emqx/blog/blob/main/zh/201903/mqtt5-new-features-properties-and-loads.md))
 - [MQTT 遗嘱消息（Will Message）的使用](https://www.emqx.com/zh/blog/use-of-mqtt-will-message) ([Edit](https://github.com/emqx/blog/blob/main/zh/201812/use-of-mqtt-will-message.md))
 
@@ -370,6 +370,7 @@ The world's most scalable and reliable MQTT messaging platform to connect, move 
 ## [Internet of Vehicles | Connected Cars](https://www.emqx.com/zh/blog/category/internet-of-vehicles)
 Build a reliable, efficient and industry-specific Internet of Vehicles platform based on EMQ's practical experience, from theoretical knowledge such as protocol selection to practical operations like platform architecture design.
 
+- [车路协同：连接智慧的车与路，赋能智慧交通](https://www.emqx.com/zh/blog/enhancing-v2x-connectivity-with-emq) ([Edit](https://github.com/emqx/blog/blob/main/zh/202311/enhancing-v2x-connectivity-with-emq.md))
 - [构建新一代车联网 TSP 平台: 实现高效车云互联](https://www.emqx.com/zh/blog/revolutionizing-tsp-platforms) ([Edit](https://github.com/emqx/blog/blob/main/zh/202311/revolutionizing-tsp-platforms.md))
 - [V2X：MQTT 统一通信驱动车联网未来发展](https://www.emqx.com/zh/blog/what-is-v2x-and-the-future-of-vehicle-to-everything-connectivity) ([Edit](https://github.com/emqx/blog/blob/main/zh/202309/what-is-v2x-and-the-future-of-vehicle-to-everything-connectivity.md))
 - [软件定义汽车场景中的数据流处理](https://www.emqx.com/zh/blog/data-stream-processing-for-software-defined-vehicle) ([Edit](https://github.com/emqx/blog/blob/main/zh/202306/data-stream-processing-for-software-defined-vehicle.md))
@@ -393,6 +394,7 @@ Build a reliable, efficient and industry-specific Internet of Vehicles platform 
 
 ## [Industrial IoT | Unified Namespace | Sparkplug](https://www.emqx.com/zh/blog/category/industrial-iot)
 
+- [统一命名空间架构（UNS）与 ISA-95 结合的最佳实践](https://www.emqx.com/zh/blog/incorporating-the-unified-namespace-with-isa-95-best-practices) ([Edit](https://github.com/emqx/blog/blob/main/zh/202311/incorporating-the-unified-namespace-with-isa-95-best-practices.md))
 - [使用 EMQX 和 Neuron 实现统一命名空间架构](https://www.emqx.com/zh/blog/implementing-unified-namespace-using-emqx-and-neuron) ([Edit](https://github.com/emqx/blog/blob/main/zh/202311/implementing-unified-namespace-using-emqx-and-neuron.md))
 - [利用 Open Manufacturing Hub 解决方案实现工业物联网 KPI 自动化](https://www.emqx.com/zh/blog/automated-kpis-implementation-for-iiot-with-the-open-manufacturing-hub) ([Edit](https://github.com/emqx/blog/blob/main/zh/202311/automated-kpis-implementation-for-iiot-with-the-open-manufacturing-hub.md))
 - [统一命名空间在现代制造业中的关键作用](https://www.emqx.com/zh/blog/the-power-of-unified-namespace-in-modern-manufacturing) ([Edit](https://github.com/emqx/blog/blob/main/zh/202311/the-power-of-unified-namespace-in-modern-manufacturing.md))
@@ -689,6 +691,7 @@ Guarantee the availability and reliability of the IoT platform.
 
 ## [应用案例](https://www.emqx.com/zh/blog/category/use-cases)
 
+- [车路协同：连接智慧的车与路，赋能智慧交通](https://www.emqx.com/zh/blog/enhancing-v2x-connectivity-with-emq) ([Edit](https://github.com/emqx/blog/blob/main/zh/202311/enhancing-v2x-connectivity-with-emq.md))
 - [构建新一代车联网 TSP 平台: 实现高效车云互联](https://www.emqx.com/zh/blog/revolutionizing-tsp-platforms) ([Edit](https://github.com/emqx/blog/blob/main/zh/202311/revolutionizing-tsp-platforms.md))
 - [连锁快餐的数字化未来：MQTT 统一连接、实时消息驱动智慧经营](https://www.emqx.com/zh/blog/how-to-manage-fast-food-chains-in-a-smarter-way) ([Edit](https://github.com/emqx/blog/blob/main/zh/202310/how-to-manage-fast-food-chains-in-a-smarter-way.md))
 - [促进油气生产降本增效：EMQ 云边协同方案加速油气生产企业数字化转型](https://www.emqx.com/zh/blog/promoting-cost-reduction-and-efficiency-in-oil-and-gas-production) ([Edit](https://github.com/emqx/blog/blob/main/zh/202310/promoting-cost-reduction-and-efficiency-in-oil-and-gas-production.md))
