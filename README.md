@@ -7,6 +7,7 @@
 ## [MQTT Tutorials](https://www.emqx.com/en/blog/category/mqtt-protocol)
 Get to know the preferred protocol in IoT from beginner to master.
 
+- [Introduction to Shared Subscriptions | Exploring MQTT 5.0 Features](https://www.emqx.com/en/blog/introduction-to-mqtt5-protocol-shared-subscription) ([Edit](https://github.com/emqx/blog/blob/main/en/202311/introduction-to-mqtt5-protocol-shared-subscription.md))
 - [Introduction to Clean Start and Session Expiry Interval | Exploring MQTT 5.0 Features](https://www.emqx.com/en/blog/mqtt5-new-feature-clean-start-and-session-expiry-interval) ([Edit](https://github.com/emqx/blog/blob/main/en/202310/mqtt5-new-feature-clean-start-and-session-expiry-interval.md))
 - [Introduction to Payload Format Indicator and Content Type | Exploring MQTT 5.0 Features](https://www.emqx.com/en/blog/mqtt5-new-features-payload-format-indicator-and-content-type) ([Edit](https://github.com/emqx/blog/blob/main/en/202310/mqtt5-new-features-payload-format-indicator-and-content-type.md))
 - [MQTT 5: 7 New Features and a Migration Checklist](https://www.emqx.com/en/blog/introduction-to-mqtt-5) ([Edit](https://github.com/emqx/blog/blob/main/en/202310/introduction-to-mqtt-5.md))
@@ -43,9 +44,7 @@ Get to know the preferred protocol in IoT from beginner to master.
 - [Enhanced authentication - MQTT 5.0 new features](https://www.emqx.com/en/blog/mqtt5-enhanced-authentication) ([Edit](https://github.com/emqx/blog/blob/main/en/202009/mqtt5-enhanced-authentication.md))
 - [Request Response - MQTT 5.0 new features](https://www.emqx.com/en/blog/mqtt5-request-response) ([Edit](https://github.com/emqx/blog/blob/main/en/202009/mqtt5-request-response.md))
 - [Flow control - MQTT 5.0 new features](https://www.emqx.com/en/blog/mqtt5-flow-control) ([Edit](https://github.com/emqx/blog/blob/main/en/202008/mqtt5-flow-control.md))
-- [MQTT 5.0 Features of Inflight Window & Message Queue](https://www.emqx.com/en/blog/mqtt5-feature-inflight-window-message-queue) ([Edit](https://github.com/emqx/blog/blob/main/en/202003/mqtt5-feature-inflight-window-message-queue.md))
 - [Use of MQTT Will Message](https://www.emqx.com/en/blog/use-of-mqtt-will-message) ([Edit](https://github.com/emqx/blog/blob/main/en/201912/use-of-mqtt-will-message.md))
-- [Shared subscription - MQTT 5.0 new features](https://www.emqx.com/en/blog/introduction-to-mqtt5-protocol-shared-subscription) ([Edit](https://github.com/emqx/blog/blob/main/en/201912/introduction-to-mqtt5-protocol-shared-subscription.md))
 - [Properties and Loads | MQTT 5.0 New Features](https://www.emqx.com/en/blog/mqtt5-new-features-properties-and-loads) ([Edit](https://github.com/emqx/blog/blob/main/en/201908/mqtt5-new-features-properties-and-loads.md))
 
 
@@ -618,6 +617,7 @@ Guarantee the availability and reliability of the IoT platform.
 
 ## [Use Cases](https://www.emqx.com/en/blog/category/use-cases)
 
+- [Powering Cooperative Vehicle-Infrastructure System: Enhancing V2X Connectivity with EMQ](https://www.emqx.com/en/blog/enhancing-v2x-connectivity-with-emq) ([Edit](https://github.com/emqx/blog/blob/main/en/202311/enhancing-v2x-connectivity-with-emq.md))
 - [Boosting Agility in Fast Food Chains with EMQX: A Smart Restaurant Solution](https://www.emqx.com/en/blog/boosting-agility-in-fast-food-chains-with-emqx) ([Edit](https://github.com/emqx/blog/blob/main/en/202311/boosting-agility-in-fast-food-chains-with-emqx.md))
 - [Revolutionizing TSP Platforms: How EMQX Powers Automotive Connectivity](https://www.emqx.com/en/blog/revolutionizing-tsp-platforms) ([Edit](https://github.com/emqx/blog/blob/main/en/202311/revolutionizing-tsp-platforms.md))
 - [Unlocking Efficiency: How EMQX Revolutionizes Logistics Fleet Management](https://www.emqx.com/en/blog/how-emqx-revolutionizes-logistics-fleet-management) ([Edit](https://github.com/emqx/blog/blob/main/en/202307/how-emqx-revolutionizes-logistics-fleet-management.md))
