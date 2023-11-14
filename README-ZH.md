@@ -370,6 +370,7 @@ The world's most scalable and reliable MQTT messaging platform to connect, move 
 ## [Internet of Vehicles | Connected Cars](https://www.emqx.com/zh/blog/category/internet-of-vehicles)
 Build a reliable, efficient and industry-specific Internet of Vehicles platform based on EMQ's practical experience, from theoretical knowledge such as protocol selection to practical operations like platform architecture design.
 
+- [车路协同：连接智慧的车与路，赋能智慧交通](https://www.emqx.com/zh/blog/enhancing-v2x-connectivity-with-emq) ([Edit](https://github.com/emqx/blog/blob/main/zh/202311/enhancing-v2x-connectivity-with-emq.md))
 - [构建新一代车联网 TSP 平台: 实现高效车云互联](https://www.emqx.com/zh/blog/revolutionizing-tsp-platforms) ([Edit](https://github.com/emqx/blog/blob/main/zh/202311/revolutionizing-tsp-platforms.md))
 - [V2X：MQTT 统一通信驱动车联网未来发展](https://www.emqx.com/zh/blog/what-is-v2x-and-the-future-of-vehicle-to-everything-connectivity) ([Edit](https://github.com/emqx/blog/blob/main/zh/202309/what-is-v2x-and-the-future-of-vehicle-to-everything-connectivity.md))
 - [软件定义汽车场景中的数据流处理](https://www.emqx.com/zh/blog/data-stream-processing-for-software-defined-vehicle) ([Edit](https://github.com/emqx/blog/blob/main/zh/202306/data-stream-processing-for-software-defined-vehicle.md))
@@ -690,6 +691,7 @@ Guarantee the availability and reliability of the IoT platform.
 
 ## [应用案例](https://www.emqx.com/zh/blog/category/use-cases)
 
+- [车路协同：连接智慧的车与路，赋能智慧交通](https://www.emqx.com/zh/blog/enhancing-v2x-connectivity-with-emq) ([Edit](https://github.com/emqx/blog/blob/main/zh/202311/enhancing-v2x-connectivity-with-emq.md))
 - [构建新一代车联网 TSP 平台: 实现高效车云互联](https://www.emqx.com/zh/blog/revolutionizing-tsp-platforms) ([Edit](https://github.com/emqx/blog/blob/main/zh/202311/revolutionizing-tsp-platforms.md))
 - [连锁快餐的数字化未来：MQTT 统一连接、实时消息驱动智慧经营](https://www.emqx.com/zh/blog/how-to-manage-fast-food-chains-in-a-smarter-way) ([Edit](https://github.com/emqx/blog/blob/main/zh/202310/how-to-manage-fast-food-chains-in-a-smarter-way.md))
 - [促进油气生产降本增效：EMQ 云边协同方案加速油气生产企业数字化转型](https://www.emqx.com/zh/blog/promoting-cost-reduction-and-efficiency-in-oil-and-gas-production) ([Edit](https://github.com/emqx/blog/blob/main/zh/202310/promoting-cost-reduction-and-efficiency-in-oil-and-gas-production.md))
