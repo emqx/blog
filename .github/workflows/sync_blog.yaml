@@ -17,7 +17,7 @@ jobs:
           git config --global user.email "ci@emqx.io"
 
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@main
         with:
           fetch-depth: 0
 
@@ -26,19 +26,19 @@ jobs:
         run: |
           set -x
           branch=$(date +%Y-%m-%d-%H-%M-%S)
-          echo "::set-output name=branch::$branch"
+          echo "branch=$branch" >> $GITHUB_OUTPUT
           git checkout -b $branch
           python3 .ci/sync_blog.py $(pwd)
           python3 .ci/generate_readme.py $(pwd)
           git status
           if [ -z "$(git status --short)" ]; then
             echo "No changes to push"
-            echo "::set-output name=changed::0"
+            echo "changed=0" >> $GITHUB_OUTPUT
           else
             git add .
             git commit -m "sync blog"
             git push origin $branch
-            echo "::set-output name=changed::1"
+            echo "changed=1" >> $GITHUB_OUTPUT
           fi
 
       - name: Pull request
@@ -48,5 +48,5 @@ jobs:
           source_branch: ${{ steps.sync_blog.outputs.branch }}
           destination_branch: main
           github_token: ${{ secrets.CI_GIT_TOKEN }}
-          pr_title: "sync blogs"
-          pr_reviewer: "CrazyWisdom"
+          pr_title: "sync blogs ${{ steps.sync_blog.outputs.branch }}"
+          pr_reviewer: "CrazyWisdom,Red-Asuka,Swilder-M"
