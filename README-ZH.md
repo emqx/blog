@@ -49,7 +49,6 @@ Get to know the preferred protocol in IoT from beginner to master.
 - [MQTT 协议 10 分钟快速入门](https://www.emqx.com/zh/blog/get-started-with-mqtt-in-ten-mins) ([Edit](https://github.com/emqx/blog/blob/main/zh/202008/get-started-with-mqtt-in-ten-mins.md))
 - [流量控制 - MQTT 5.0 新特性](https://www.emqx.com/zh/blog/mqtt5-flow-control) ([Edit](https://github.com/emqx/blog/blob/main/zh/202008/mqtt5-flow-control.md))
 - [EMQX  MQTT 5.0 服务器的保留消息与消息过期间隔](https://www.emqx.com/zh/blog/message-retention-and-message-expiration-interval-of-emqx-mqtt5-broker) ([Edit](https://github.com/emqx/blog/blob/main/zh/202003/message-retention-and-message-expiration-interval-of-emqx-mqtt5-broker.md))
-- [MQTT 5.0 特性 Inflight Window & Message Queue](https://www.emqx.com/zh/blog/mqtt5-feature-inflight-window-message-queue) ([Edit](https://github.com/emqx/blog/blob/main/zh/202002/mqtt5-feature-inflight-window-message-queue.md))
 - [MQTT 5.0 新特性 |（一） 属性与载荷](https://www.emqx.com/zh/blog/mqtt5-new-features-properties-and-loads) ([Edit](https://github.com/emqx/blog/blob/main/zh/201903/mqtt5-new-features-properties-and-loads.md))
 - [MQTT 遗嘱消息（Will Message）的使用](https://www.emqx.com/zh/blog/use-of-mqtt-will-message) ([Edit](https://github.com/emqx/blog/blob/main/zh/201812/use-of-mqtt-will-message.md))
 
@@ -144,6 +143,7 @@ Best practice of MQTT in various clients.
 ## [MQTT Integration (Eco & Integration)](https://www.emqx.com/zh/blog/category/eco-and-integration)
 Explore more with & via EMQ.
 
+- [OpenTelemetry 入门：MQTT 和物联网可观测性](https://www.emqx.com/zh/blog/open-telemetry-the-basics-and-benefits-for-mqtt-and-iot-observability) ([Edit](https://github.com/emqx/blog/blob/main/zh/202311/open-telemetry-the-basics-and-benefits-for-mqtt-and-iot-observability.md))
 - [MQTT over lwIP 实践：物联网协议的结合](https://www.emqx.com/zh/blog/mqtt-over-lwip) ([Edit](https://github.com/emqx/blog/blob/main/zh/202310/mqtt-over-lwip.md))
 - [使用 MQTT 和 Timescale 为工业能耗监控构建物联网时序数据应用](https://www.emqx.com/zh/blog/build-an-iot-time-series-data-application-for-energy-storage-with-mqtt-and-timescale) ([Edit](https://github.com/emqx/blog/blob/main/zh/202309/build-an-iot-time-series-data-application-for-energy-storage-with-mqtt-and-timescale.md))
 - [使用 MQTT 和 Kafka 三分钟构建车联网流数据管道](https://www.emqx.com/zh/blog/building-connected-vehicle-streaming-data-pipelines-with-mqtt-and-kafka) ([Edit](https://github.com/emqx/blog/blob/main/zh/202309/building-connected-vehicle-streaming-data-pipelines-with-mqtt-and-kafka.md))

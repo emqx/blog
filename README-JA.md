@@ -45,6 +45,7 @@ Best practice of MQTT in various clients.
 
 ## [MQTT Security](https://www.emqx.com/ja/blog/category/security)
 
+- [2023年MQTT セキュリティ について知っておくべき 7 つ](https://www.emqx.com/ja/blog/essential-things-to-know-about-mqtt-security) ([Edit](https://github.com/emqx/blog/blob/main/ja/202311/essential-things-to-know-about-mqtt-security.md))
 - [レート制限による MQTT ブローカーの信頼性とセキュリティの向上](https://www.emqx.com/ja/blog/improve-the-reliability-and-security-of-mqtt-broker-with-rate-limit) ([Edit](https://github.com/emqx/blog/blob/main/ja/202311/improve-the-reliability-and-security-of-mqtt-broker-with-rate-limit.md))
 - [SSL/TLSによるMQTT通信のセキュリティ強化](https://www.emqx.com/ja/blog/fortifying-mqtt-communication-security-with-ssl-tls) ([Edit](https://github.com/emqx/blog/blob/main/ja/202311/fortifying-mqtt-communication-security-with-ssl-tls.md))
 - [MQTTにおける認可機能: ACLでMQTTメッセージングへのアクセスを制御](https://www.emqx.com/ja/blog/authorization-in-mqtt-using-acls-to-control-access-to-mqtt-messaging) ([Edit](https://github.com/emqx/blog/blob/main/ja/202311/authorization-in-mqtt-using-acls-to-control-access-to-mqtt-messaging.md))
