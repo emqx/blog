@@ -7,6 +7,7 @@
 ## [MQTT Tutorials](https://www.emqx.com/zh/blog/category/mqtt-protocol)
 Get to know the preferred protocol in IoT from beginner to master.
 
+- [遗嘱消息（Will Message）介绍与示例 | MQTT 5.0 特性详解](https://www.emqx.com/zh/blog/use-of-mqtt-will-message) ([Edit](https://github.com/emqx/blog/blob/main/zh/202311/use-of-mqtt-will-message.md))
 - [共享订阅介绍与示例 | MQTT 5.0 特性详解](https://www.emqx.com/zh/blog/introduction-to-mqtt5-protocol-shared-subscription) ([Edit](https://github.com/emqx/blog/blob/main/zh/202311/introduction-to-mqtt5-protocol-shared-subscription.md))
 - [MQTT 5：7 项新功能以及迁移注意事项](https://www.emqx.com/zh/blog/introduction-to-mqtt-5) ([Edit](https://github.com/emqx/blog/blob/main/zh/202310/introduction-to-mqtt-5.md))
 - [Clean Start 与 Session Expiry Interval 介绍与示例 | MQTT 5.0 特性详解](https://www.emqx.com/zh/blog/mqtt5-new-feature-clean-start-and-session-expiry-interval) ([Edit](https://github.com/emqx/blog/blob/main/zh/202310/mqtt5-new-feature-clean-start-and-session-expiry-interval.md))
@@ -50,7 +51,6 @@ Get to know the preferred protocol in IoT from beginner to master.
 - [流量控制 - MQTT 5.0 新特性](https://www.emqx.com/zh/blog/mqtt5-flow-control) ([Edit](https://github.com/emqx/blog/blob/main/zh/202008/mqtt5-flow-control.md))
 - [EMQX  MQTT 5.0 服务器的保留消息与消息过期间隔](https://www.emqx.com/zh/blog/message-retention-and-message-expiration-interval-of-emqx-mqtt5-broker) ([Edit](https://github.com/emqx/blog/blob/main/zh/202003/message-retention-and-message-expiration-interval-of-emqx-mqtt5-broker.md))
 - [MQTT 5.0 新特性 |（一） 属性与载荷](https://www.emqx.com/zh/blog/mqtt5-new-features-properties-and-loads) ([Edit](https://github.com/emqx/blog/blob/main/zh/201903/mqtt5-new-features-properties-and-loads.md))
-- [MQTT 遗嘱消息（Will Message）的使用](https://www.emqx.com/zh/blog/use-of-mqtt-will-message) ([Edit](https://github.com/emqx/blog/blob/main/zh/201812/use-of-mqtt-will-message.md))
 
 
 ## [MQTT Broker](https://www.emqx.com/zh/blog/category/mqtt-broker)
@@ -334,6 +334,7 @@ The easiest way to start MQTT service. Connect your IoT devices to any cloud wit
 ## [EMQX Enterprise](https://www.emqx.com/zh/blog/category/enterprise)
 The world's most scalable and reliable MQTT messaging platform to connect, move and process your data in business-critical scenarios for the IoT era.
 
+- [EMQX Enterprise 4.4.22 发布：预设 MQTT 消息过期时间，审计日志，以及 Dashboard RBAC 权限控制](https://www.emqx.com/zh/blog/emqx-enterprise-4-4-22-release-notes) ([Edit](https://github.com/emqx/blog/blob/main/zh/202311/emqx-enterprise-4-4-22-release-notes.md))
 - [EMQX 性能调优：最大连接与文件描述符](https://www.emqx.com/zh/blog/emqx-performance-tuning-maximum-connections-and-file-descriptors) ([Edit](https://github.com/emqx/blog/blob/main/zh/202311/emqx-performance-tuning-maximum-connections-and-file-descriptors.md))
 - [EMQX 与 MQTT: AI 大模型时代的分布式数据中枢](https://www.emqx.com/zh/blog/emqx-mqtt-and-ai) ([Edit](https://github.com/emqx/blog/blob/main/zh/202310/emqx-mqtt-and-ai.md))
 - [EMQX Enterprise 4.4.21 发布：支持 Confluent 集成](https://www.emqx.com/zh/blog/emqx-enterprise-4-4-21-release-notes) ([Edit](https://github.com/emqx/blog/blob/main/zh/202310/emqx-enterprise-4-4-21-release-notes.md))
