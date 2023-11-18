@@ -334,6 +334,7 @@ The easiest way to start MQTT service. Connect your IoT devices to any cloud wit
 ## [EMQX Enterprise](https://www.emqx.com/zh/blog/category/enterprise)
 The world's most scalable and reliable MQTT messaging platform to connect, move and process your data in business-critical scenarios for the IoT era.
 
+- [利用 NGINX Plus 在 EMQX 中实现基于 Client ID 的会话保持](https://www.emqx.com/zh/blog/harnessing-sticky-sessions-for-mqtt-load-balancing-with-nginx-plus) ([Edit](https://github.com/emqx/blog/blob/main/zh/202311/harnessing-sticky-sessions-for-mqtt-load-balancing-with-nginx-plus.md))
 - [利用 NGINX Plus 的 Client ID 替换功能和 EMQX Enterprise 保障 MQTT 应用安全](https://www.emqx.com/zh/blog/securing-your-mqtt-based-applications-with-nginx-plus-client-id-substitution-and-emqx-enterprise) ([Edit](https://github.com/emqx/blog/blob/main/zh/202311/securing-your-mqtt-based-applications-with-nginx-plus-client-id-substitution-and-emqx-enterprise.md))
 - [EMQX Enterprise 4.4.22 发布：预设 MQTT 消息过期时间，审计日志，以及 Dashboard RBAC 权限控制](https://www.emqx.com/zh/blog/emqx-enterprise-4-4-22-release-notes) ([Edit](https://github.com/emqx/blog/blob/main/zh/202311/emqx-enterprise-4-4-22-release-notes.md))
 - [EMQX 性能调优：最大连接与文件描述符](https://www.emqx.com/zh/blog/emqx-performance-tuning-maximum-connections-and-file-descriptors) ([Edit](https://github.com/emqx/blog/blob/main/zh/202311/emqx-performance-tuning-maximum-connections-and-file-descriptors.md))
