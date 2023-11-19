@@ -7,6 +7,7 @@
 ## [MQTT Tutorials](https://www.emqx.com/en/blog/category/mqtt-protocol)
 Get to know the preferred protocol in IoT from beginner to master.
 
+- [Will Message (Last Will & Testament) Explained and Example | MQTT 5 Features](https://www.emqx.com/en/blog/use-of-mqtt-will-message) ([Edit](https://github.com/emqx/blog/blob/main/en/202311/use-of-mqtt-will-message.md))
 - [Introduction to Shared Subscriptions | Exploring MQTT 5.0 Features](https://www.emqx.com/en/blog/introduction-to-mqtt5-protocol-shared-subscription) ([Edit](https://github.com/emqx/blog/blob/main/en/202311/introduction-to-mqtt5-protocol-shared-subscription.md))
 - [Introduction to Clean Start and Session Expiry Interval | Exploring MQTT 5.0 Features](https://www.emqx.com/en/blog/mqtt5-new-feature-clean-start-and-session-expiry-interval) ([Edit](https://github.com/emqx/blog/blob/main/en/202310/mqtt5-new-feature-clean-start-and-session-expiry-interval.md))
 - [Introduction to Payload Format Indicator and Content Type | Exploring MQTT 5.0 Features](https://www.emqx.com/en/blog/mqtt5-new-features-payload-format-indicator-and-content-type) ([Edit](https://github.com/emqx/blog/blob/main/en/202310/mqtt5-new-features-payload-format-indicator-and-content-type.md))
@@ -44,7 +45,6 @@ Get to know the preferred protocol in IoT from beginner to master.
 - [Enhanced authentication - MQTT 5.0 new features](https://www.emqx.com/en/blog/mqtt5-enhanced-authentication) ([Edit](https://github.com/emqx/blog/blob/main/en/202009/mqtt5-enhanced-authentication.md))
 - [Request Response - MQTT 5.0 new features](https://www.emqx.com/en/blog/mqtt5-request-response) ([Edit](https://github.com/emqx/blog/blob/main/en/202009/mqtt5-request-response.md))
 - [Flow control - MQTT 5.0 new features](https://www.emqx.com/en/blog/mqtt5-flow-control) ([Edit](https://github.com/emqx/blog/blob/main/en/202008/mqtt5-flow-control.md))
-- [Use of MQTT Will Message](https://www.emqx.com/en/blog/use-of-mqtt-will-message) ([Edit](https://github.com/emqx/blog/blob/main/en/201912/use-of-mqtt-will-message.md))
 - [Properties and Loads | MQTT 5.0 New Features](https://www.emqx.com/en/blog/mqtt5-new-features-properties-and-loads) ([Edit](https://github.com/emqx/blog/blob/main/en/201908/mqtt5-new-features-properties-and-loads.md))
 
 
@@ -337,6 +337,7 @@ The easiest way to start MQTT service. Connect your IoT devices to any cloud wit
 ## [EMQX Enterprise](https://www.emqx.com/en/blog/category/enterprise)
 The world's most scalable and reliable MQTT messaging platform to connect, move and process your data in business-critical scenarios for the IoT era.
 
+- [A Data-Driven Solution for Logistics Asset Tracking and Maintenance](https://www.emqx.com/en/blog/a-data-driven-solution-for-logistics-asset-tracking-and-maintenance) ([Edit](https://github.com/emqx/blog/blob/main/en/202311/a-data-driven-solution-for-logistics-asset-tracking-and-maintenance.md))
 - [EMQX Performance Tuning: Max Connections and File Descriptors](https://www.emqx.com/en/blog/emqx-performance-tuning-maximum-connections-and-file-descriptors) ([Edit](https://github.com/emqx/blog/blob/main/en/202311/emqx-performance-tuning-maximum-connections-and-file-descriptors.md))
 - [A Beginner's Guide to MQTT Performance Testing](https://www.emqx.com/en/blog/a-beginner-guide-to-mqtt-performance-testing) ([Edit](https://github.com/emqx/blog/blob/main/en/202311/a-beginner-guide-to-mqtt-performance-testing.md))
 - [Data Bridge of MQTT and AI: 5 Core Aspects of EMQX for AI Advancements](https://www.emqx.com/en/blog/emqx-mqtt-and-ai) ([Edit](https://github.com/emqx/blog/blob/main/en/202311/emqx-mqtt-and-ai.md))
@@ -498,6 +499,7 @@ MQTTX is a Fully Open-source MQTT 5.0 cross-platform Desktop Client, makes it ea
 ## [Neuron - IIoT Connectivity Server](https://www.emqx.com/en/blog/category/neuron)
 IoT edge industrial protocol gateway software, which supports one-stop access to dozens of industrial protocols and converts them into MQTT protocol to access the cloud industrial IoT platform. It just requires ultra-low resource consumption, and supports three major architectures of X86, ARM, and MIPS.
 
+- [A Data-Driven Solution for Logistics Asset Tracking and Maintenance](https://www.emqx.com/en/blog/a-data-driven-solution-for-logistics-asset-tracking-and-maintenance) ([Edit](https://github.com/emqx/blog/blob/main/en/202311/a-data-driven-solution-for-logistics-asset-tracking-and-maintenance.md))
 - [Bridging KNX Data to MQTT: Introduction and Hands-on Tutorial](https://www.emqx.com/en/blog/bridging-knx-data-to-mqtt-introduction-and-hands-on-tutorial) ([Edit](https://github.com/emqx/blog/blob/main/en/202309/bridging-knx-data-to-mqtt-introduction-and-hands-on-tutorial.md))
 - [Neuron 2.5.1: Streamlined IIoT Platform Management with Device-Based Templates](https://www.emqx.com/en/blog/neuron-v-2-5-1-release-notes) ([Edit](https://github.com/emqx/blog/blob/main/en/202307/neuron-v-2-5-1-release-notes.md))
 - [Bridging Modbus Data to MQTT for IIoT:  A Step-by-Step Tutorial](https://www.emqx.com/en/blog/bridging-modbus-data-to-mqtt-for-iiot) ([Edit](https://github.com/emqx/blog/blob/main/en/202306/bridging-modbus-data-to-mqtt-for-iiot.md))
@@ -618,6 +620,7 @@ Guarantee the availability and reliability of the IoT platform.
 
 ## [Use Cases](https://www.emqx.com/en/blog/category/use-cases)
 
+- [A Data-Driven Solution for Logistics Asset Tracking and Maintenance](https://www.emqx.com/en/blog/a-data-driven-solution-for-logistics-asset-tracking-and-maintenance) ([Edit](https://github.com/emqx/blog/blob/main/en/202311/a-data-driven-solution-for-logistics-asset-tracking-and-maintenance.md))
 - [From Data to Intelligence: One-Stop MQTT Platform for Smart Factory Advancements](https://www.emqx.com/en/blog/data-infrastructure-for-smart-factory) ([Edit](https://github.com/emqx/blog/blob/main/en/202311/data-infrastructure-for-smart-factory.md))
 - [Powering Cooperative Vehicle-Infrastructure System: Enhancing V2X Connectivity with EMQ](https://www.emqx.com/en/blog/enhancing-v2x-connectivity-with-emq) ([Edit](https://github.com/emqx/blog/blob/main/en/202311/enhancing-v2x-connectivity-with-emq.md))
 - [Boosting Agility in Fast Food Chains with EMQX: A Smart Restaurant Solution](https://www.emqx.com/en/blog/boosting-agility-in-fast-food-chains-with-emqx) ([Edit](https://github.com/emqx/blog/blob/main/en/202311/boosting-agility-in-fast-food-chains-with-emqx.md))
