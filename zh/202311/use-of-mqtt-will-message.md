@@ -2,7 +2,7 @@
 
 在本文中，我们将深入探讨 MQTT 遗嘱消息，包括它是什么以及它如何工作。鉴于本文中的部分内容将涉及到会话和保留消息，如果你需要的话，可以先阅读以下两篇博客：
 
-1. [Clean Start 与 Session Expiry Interval 介绍与示例 | MQTT 5.0 特性详解](https://www.emqx.com/zh/blog/mqtt5-new-feature-clean-start-and-session-expiry-interval)
+1. [Clean Start 与 Session Expiry Interval 介绍与示例](https://www.emqx.com/zh/blog/mqtt5-new-feature-clean-start-and-session-expiry-interval)
 2. [MQTT 保留消息是什么？如何使用？](https://www.emqx.com/zh/blog/mqtt5-features-retain-message)
 
 ## 什么是 MQTT 遗嘱消息？
