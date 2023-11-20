@@ -143,6 +143,7 @@ Best practice of MQTT in various clients.
 ## [MQTT Integration (Eco & Integration)](https://www.emqx.com/zh/blog/category/eco-and-integration)
 Explore more with & via EMQ.
 
+- [MQTT + InfluxDB：构建面向储能领域的物联网时序数据应用](https://www.emqx.com/zh/blog/building-an-iot-time-series-data-application-with-mqtt-and-influxdb) ([Edit](https://github.com/emqx/blog/blob/main/zh/202311/building-an-iot-time-series-data-application-with-mqtt-and-influxdb.md))
 - [OpenTelemetry 入门：MQTT 和物联网可观测性](https://www.emqx.com/zh/blog/open-telemetry-the-basics-and-benefits-for-mqtt-and-iot-observability) ([Edit](https://github.com/emqx/blog/blob/main/zh/202311/open-telemetry-the-basics-and-benefits-for-mqtt-and-iot-observability.md))
 - [MQTT over lwIP 实践：物联网协议的结合](https://www.emqx.com/zh/blog/mqtt-over-lwip) ([Edit](https://github.com/emqx/blog/blob/main/zh/202310/mqtt-over-lwip.md))
 - [使用 MQTT 和 Timescale 为工业能耗监控构建物联网时序数据应用](https://www.emqx.com/zh/blog/build-an-iot-time-series-data-application-for-energy-storage-with-mqtt-and-timescale) ([Edit](https://github.com/emqx/blog/blob/main/zh/202309/build-an-iot-time-series-data-application-for-energy-storage-with-mqtt-and-timescale.md))
@@ -334,6 +335,7 @@ The easiest way to start MQTT service. Connect your IoT devices to any cloud wit
 ## [EMQX Enterprise](https://www.emqx.com/zh/blog/category/enterprise)
 The world's most scalable and reliable MQTT messaging platform to connect, move and process your data in business-critical scenarios for the IoT era.
 
+- [MQTT + InfluxDB：构建面向储能领域的物联网时序数据应用](https://www.emqx.com/zh/blog/building-an-iot-time-series-data-application-with-mqtt-and-influxdb) ([Edit](https://github.com/emqx/blog/blob/main/zh/202311/building-an-iot-time-series-data-application-with-mqtt-and-influxdb.md))
 - [利用 NGINX Plus 在 EMQX 中实现基于 Client ID 的会话保持](https://www.emqx.com/zh/blog/harnessing-sticky-sessions-for-mqtt-load-balancing-with-nginx-plus) ([Edit](https://github.com/emqx/blog/blob/main/zh/202311/harnessing-sticky-sessions-for-mqtt-load-balancing-with-nginx-plus.md))
 - [利用 NGINX Plus 的 Client ID 替换功能和 EMQX Enterprise 保障 MQTT 应用安全](https://www.emqx.com/zh/blog/securing-your-mqtt-based-applications-with-nginx-plus-client-id-substitution-and-emqx-enterprise) ([Edit](https://github.com/emqx/blog/blob/main/zh/202311/securing-your-mqtt-based-applications-with-nginx-plus-client-id-substitution-and-emqx-enterprise.md))
 - [EMQX Enterprise 4.4.22 发布：预设 MQTT 消息过期时间，审计日志，以及 Dashboard RBAC 权限控制](https://www.emqx.com/zh/blog/emqx-enterprise-4-4-22-release-notes) ([Edit](https://github.com/emqx/blog/blob/main/zh/202311/emqx-enterprise-4-4-22-release-notes.md))

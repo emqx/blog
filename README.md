@@ -174,6 +174,7 @@ Explore more with & via EMQ.
 ## [EMQX Open Source | Broker](https://www.emqx.com/en/blog/category/emqx)
 EMQX is the world's most scalable open-source MQTT broker with a high performance that connects 100M+ IoT devices in 1 cluster, while maintaining 1M message per second throughput and sub-millisecond latency.
 
+- [Running MQTT on Kubernetes: A Practical Guide](https://www.emqx.com/en/blog/running-mqtt-on-kubernetes) ([Edit](https://github.com/emqx/blog/blob/main/en/202311/running-mqtt-on-kubernetes.md))
 - [EMQX Performance Tuning: Max Connections and File Descriptors](https://www.emqx.com/en/blog/emqx-performance-tuning-maximum-connections-and-file-descriptors) ([Edit](https://github.com/emqx/blog/blob/main/en/202311/emqx-performance-tuning-maximum-connections-and-file-descriptors.md))
 - [A Beginner's Guide to MQTT Performance Testing](https://www.emqx.com/en/blog/a-beginner-guide-to-mqtt-performance-testing) ([Edit](https://github.com/emqx/blog/blob/main/en/202311/a-beginner-guide-to-mqtt-performance-testing.md))
 - [Data Bridge of MQTT and AI: 5 Core Aspects of EMQX for AI Advancements](https://www.emqx.com/en/blog/emqx-mqtt-and-ai) ([Edit](https://github.com/emqx/blog/blob/main/en/202311/emqx-mqtt-and-ai.md))
@@ -337,6 +338,7 @@ The easiest way to start MQTT service. Connect your IoT devices to any cloud wit
 ## [EMQX Enterprise](https://www.emqx.com/en/blog/category/enterprise)
 The world's most scalable and reliable MQTT messaging platform to connect, move and process your data in business-critical scenarios for the IoT era.
 
+- [Running MQTT on Kubernetes: A Practical Guide](https://www.emqx.com/en/blog/running-mqtt-on-kubernetes) ([Edit](https://github.com/emqx/blog/blob/main/en/202311/running-mqtt-on-kubernetes.md))
 - [A Data-Driven Solution for Logistics Asset Tracking and Maintenance](https://www.emqx.com/en/blog/a-data-driven-solution-for-logistics-asset-tracking-and-maintenance) ([Edit](https://github.com/emqx/blog/blob/main/en/202311/a-data-driven-solution-for-logistics-asset-tracking-and-maintenance.md))
 - [EMQX Performance Tuning: Max Connections and File Descriptors](https://www.emqx.com/en/blog/emqx-performance-tuning-maximum-connections-and-file-descriptors) ([Edit](https://github.com/emqx/blog/blob/main/en/202311/emqx-performance-tuning-maximum-connections-and-file-descriptors.md))
 - [A Beginner's Guide to MQTT Performance Testing](https://www.emqx.com/en/blog/a-beginner-guide-to-mqtt-performance-testing) ([Edit](https://github.com/emqx/blog/blob/main/en/202311/a-beginner-guide-to-mqtt-performance-testing.md))
