@@ -1,18 +1,26 @@
-## What is OPC UA
+## What is OPC UA Protocol
 
 OPC UA (OPC Unified Architecture) is a platform-independent, service-oriented, open, and secure communication architecture. It is designed to enable interoperability of industrial automation devices, systems, and software applications from different vendors. The OPC UA information model defines the codes and formats for exchanging data using various transport protocols.
 
 OPC UA and its predecessor, Open Platform Communications (OPC), were developed by the same foundation but significantly different. The foundation continues to develop OPC UA in order to create an architecture that is more desirable than the original OPC communications and more in line with the needs of evolving industrial automation.
 
-The first version of the OPC UA specification was released in 2006, and as of today, the latest version of OPC UA is 1.05. In addition to the Client-Server (Subscriptions) model, OPC UA includes a Pub-Sub mechanism, which allows pushing JSON specifications (also using the standard-defined binary specification - UADP) over the UDP protocol, [MQTT protocol](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt), or [AMQP protocol](https://www.emqx.com/en/blog/mqtt-vs-amqp-for-iot-communications).
-
-Through the fast, secure and reliable transport channel provided by the MQTT protocol, OPC UA can directly use the Internet for data transfer while retaining the key benefits of OPC UA's end-to-end security and standardized data modeling.
+## The History of OPC UA Protocol
 
 ![OPC UA](https://assets.emqx.com/images/f4582b4676a6867f6beefa40c055fae2.png)
 
-## Features of OPC UA
+Prior to the release of the OPC UA specification, industry vendors, end-users, and software developers had worked together to develop a set of specifications for defining industrial process data, alarms, and historical data. This set of specifications is known as OPC Classic and was first released in 1995, based on the COM/DCOM technology stack for Microsoft Windows. It includes the following three parts:
 
-- Functional equivalence - All OPC Classic specifications map to the UA, and the OPC UA includes the DA, A&E and HDA functionality found in OPC Classic:
+1. OPC Data Access is best known as OPC DA. The OPC DA specification defines the exchange of data, including value, time and quality information.
+2. OPC Alarms & Events, or OPC A&E, the OPC A&E specification defines the exchange of alarm and event type message information, as well as variable status and state management.
+3. OPC Historical Data Access i.e. OPC HAD, the OPC HDA specification defines methods that can be applied to querying and analyzing historical and temporal data.
+
+OPC Classic is known for its excellent performance in process control. However, due to the advancements in technology and changes in external factors, it is no longer able to fully meet the needs of people. To address this issue, the OPC Foundation introduced OPC UA in 2006. This new technology provides cross-platform data transfer, improved data security, and better handling of large data volumes. OPC UA integrates all of the functionality of the existing OPC Classic specification while addressing the problems that existed with OPC Classic.
+
+As of today, the latest version of OPC UA is 1.05. In addition to the Client-Server (Subscriptions) model, OPC UA includes a Pub-Sub mechanism, which allows pushing JSON specifications (also using the standard-defined binary specification - UADP) over the UDP protocol, [MQTT protocol](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt), or [AMQP protocol](https://www.emqx.com/en/blog/mqtt-vs-amqp-for-iot-communications).
+
+## Features of OPC UA Protocol
+
+**Functional equivalence:** All OPC Classic specifications map to the UA, and the OPC UA includes the DA, A&E and HDA functionality found in OPC Classic:
 
 | **Functionality** | **Descriptions**                                             |
 | :---------------- | :----------------------------------------------------------- |
@@ -23,7 +31,9 @@ Through the fast, secure and reliable transport channel provided by the MQTT pro
 | Event             | Client-based settings notify important information           |
 | Method            | Clients can execute programs based on methods defined on the server, etc. |
 
-- Security - Message encryption, authentication and auditing, one of the most important considerations for an organization when choosing a technology standard is security. OPC UA addresses security by providing a set of controls when passing through firewalls:
+**Platform Independence:** From embedded microcontrollers to cloud-based infrastructure, OPC UA is not dependent on the Windows platform and can be deployed for use on any platform.
+
+**Security:** Message encryption, authentication and auditing, one of the most important considerations for an organization when choosing a technology standard is security. OPC UA addresses security by providing a set of controls when passing through firewalls:
 
 | **Functionality**        | **Descriptions**                                             |
 | :----------------------- | :----------------------------------------------------------- |
@@ -35,11 +45,42 @@ Through the fast, secure and reliable transport channel provided by the MQTT pro
 | User control             | Applications can require user authentication (login credentials, certificates, etc.) and can further restrict or enhance user access to permissions and address space "views". |
 | Audits                   | Logging of user and/or system activity to provide an access audit trail |
 
-- Comprehensive Information Modelling: Used to define complex information, the OPC UA Information Modelling Framework converts data into information, allowing even the most complex multi-level structures to be modeled and extended through fully object-oriented functionality, with data types and structures that can be defined in configuration files.
+**Extensibility:** OPC UA's multi-tier architecture allows for the incorporation of innovative technologies and approaches, such as new transport protocols, security algorithms, coding standards, and application services, without affecting existing applications. This ability to add new functionalities makes OPC UA a "future-proof" framework. In the meantime, OPC UA maintains compatibility with existing products. This means that today's UA products can interoperate with future UA products.
+
+**Comprehensive Information Modelling:** Used to define complex information, the OPC UA Information Modelling Framework converts data into information, allowing even the most complex multi-level structures to be modeled and extended through fully object-oriented functionality, with data types and structures that can be defined in configuration files.
 
 ![OPC UA Information Modelling Framework](https://assets.emqx.com/images/1161f4a8f02d771efa813f234c8515a9.png)
 
-## Information Model for OPC UA
+## Uses of OPC UA Protocol
+
+OPC UA has a wide range of applications in industrial automation and IoT, bringing many benefits to different industries, including data collection, device integration, remote monitoring, historical data access, and more. 
+
+### Manufacturing
+
+- Data collection and monitoring: Equipment and production lines in the manufacturing industry can easily collect data through OPC UA to monitor the production process in real time and optimize productivity.
+- Device Integration and Interoperability: Devices produced by different manufacturers can be seamlessly integrated, from sensors to robots, enabling data exchange between devices.
+
+### Building Automation
+
+- Intelligent Building Management: OPC UA is used to connect building automation systems, including lighting, air conditioning, and security systems, to achieve intelligent energy management and equipment control.
+- Equipment Monitoring and Maintenance: Condition monitoring and maintenance of building equipment can be realized through OPC UA to improve equipment reliability and efficiency.
+
+### Oil and Gas
+
+- Remote Monitoring and Control: Equipment in oilfields, pipelines and refineries can be remotely monitored and controlled via OPC UA, reducing manual intervention.
+- Data History: OPC UA's historical data access feature is used to record equipment operating data for easy analysis and optimization.
+
+### Renewable Energy
+
+- Wind and Solar Farms: OPC UA is used to monitor the operating status of wind and solar farms for remote control and troubleshooting.
+- Grid Management: Renewable energy access and grid management require real-time data exchange, and OPC UA provides a reliable communication mechanism.
+
+### Utilities
+
+- Water Treatment and Water Supply System: OPC UA is used to monitor water treatment equipment, pumping stations and water supply systems to ensure stable water quality and supply.
+- Power systems: Monitoring, fault detection and remote operation of power equipment can be realized with OPC UA.
+
+## Information Model for OPC UA Protocol
 
 The OPC UA information model is a network of nodes, or structured graph, consisting of nodes and references, which is called the OPC UA address space. The address space represents objects in a standard form - model elements in the address space are called nodes, and objects and their components are represented in the address space as a collection of nodes, which are described by attributes and connected by references. OPC UA modeling is all about creating nodes and references between nodes.
 
@@ -73,7 +114,56 @@ The most important node categories in OPC UA are objects, variables and methods.
 - Variable node: Variable node represents a value. The data type of the value depends on the variable. The client can read, write and subscribe to the value.
 - Method node: The method node represents a method in the server that is called by the client and returns the result. The input parameters and the output result are in the form of variables as part of the method node. The client specifies the input parameters and gets the output result after the call.
 
-## Why Bridge OPC UA to MQTT?
+## How the OPC UA Protocol Works
+
+Hardware providers support OPC UA in two ways: by embedding an OPC UA server in the device or offering software on a PC that obtains data through a private protocol and exposes it to other platforms via OPC UA. In some mid-range and high-end PLCs, there are OPC UA server integrations such as Siemens S71200/1500, while Siemens also provides software like WINCC to indirectly provide data from other devices to third parties through OPC/OPC UA.
+
+After the data is exposed through the OPC UA Server, it can be accessed using the two access modes specified by the OPC UA protocol: the Request/Response mode and the Publish/Subscribe mode. To begin, the client must establish a connection to the server, which will create a session channel between the client and server.
+
+In request/response mode, the client application can request some standard services from the server through the session channel, such as: reading raw data from the node, writing data to the node, invoking remote methods, and so on.
+
+In publish/subscribe mode, each client can create any number of server subscriptions, and when the server's node data changes, notification messages are instantly pushed to the client.
+
+Generally, end users don't have to worry about the processes mentioned above. Their main concerns are the OPC UA server address, user login policy, communication security policy, and the address where they can access the data.
+
+### OPC UA Server Endpoint
+
+| **Protocol**      | **Url**                                |
+| :---------------- | :------------------------------------- |
+| OPC UA TCP        | `opc.tcp://localhost:4840/UADiscovery` |
+| OPC UA Websockets | `opc.wss://localhost:443/UADiscovery`  |
+| OPC UA HTTPS      | `https://localhost:443/UADiscovery`    |
+
+### User Authentication Method
+
+1. Anonymous
+2. Username & Password
+3. Certificate
+
+### Security Modes
+
+1. None
+2. Sign
+3. Sign & Encrypt
+
+### Security Policies
+
+1. Basic128Rsa15
+2. Basic256
+3. Basic256Sha256
+4. Aes128Sha256RsaOaep
+5. Aes256Sha256RsaPass
+
+### Node Address
+
+| **Address type** | **Address**          |
+| :--------------- | :------------------- |
+| Byte string      | ns=x;b=<byte string> |
+| GUID             | ns=x;g=<GUID>        |
+| Int              | ns=x;i=x             |
+| String           | ns=x;s=<string>      |
+
+## Leveraging OPC UA Protocol with MQTT
 
 MQTT (Message Queuing Telemetry Transport) is a messaging protocol designed for IoT devices and applications that uses a publish-and-subscribe model and has the advantages of being lightweight, efficient, reliable, and supporting real-time communication. MQTT is well suited for resource-constrained environments, especially scenarios requiring efficient power and bandwidth use.
 
@@ -94,16 +184,21 @@ The Pub-Sub model proposed by the OPC Foundation in the latest specification of 
 
 Pub-Sub security is a bit more complex than that in client/server, and the specification is not as detailed. In an MQTT network, security is based on SSL/TLS, and the broker can define application-level authentication in addition to enabling SSL/TLS for transport. In principle, these security models are either all or nothing for every subscriber and publisher that can join the network. The new OPC UA standardization is still a work in progress, and it is not yet clear how the rich OPC UA information model can best be mapped to MQTT.
 
-## Summary
+## Bridging OPC UA Protocol to MQTT with EMQX and Neuron
 
-This article provides essential knowledge about the OPC UA protocol. Additionally, it has been noted that bridging OPC UA data to MQTT can bring more benefits to industrial scenarios and make them more efficient. In our next post "[Bridging OPC UA Data to MQTT for IIoT: A Step-by-Step Tutorial](https://www.emqx.com/en/blog/bridging-opc-ua-data-to-mqtt-for-iiot)", we will provide a detailed guide on how to bridge the two.
+[Neuron](https://neugates.io/) is a modern industrial IoT connectivity server that can connect to a wide range of industrial devices using standard or device-proprietary protocols, enabling the interconnection of industrial IoT platforms with massive devices. As a lightweight industrial protocol gateway software, Neuron is designed to operate on various IoT edge hardware devices with limited resources. Its primary goal is to address the challenge of accessing data from data-centric automation equipment in a unified manner, thus offering essential support for smart manufacturing.
+
+[EMQX](https://www.emqx.io/) is a distributed [open-source MQTT broker](https://www.emqx.com/en/blog/a-comprehensive-comparison-of-open-source-mqtt-brokers-in-2023). As the world's most scalable MQTT messaging server, EMQX provides efficient and reliable connectivity to a massive number of IoT devices, enabling high-performance, real-time movement and processing of messages and event streams, helping users rapidly build business-critical IoT platforms and applications.
+
+OPC UA data sources can be captured and aggregated by Neuron's southbound OPC UA driver, converted to the MQTT protocol, and transmitted to the EMQX MQTT Broker. The latter then distributes them to various distributed applications.
+
+Learn more about OPC UA to MQTT bridging through this step-by-step guide: [Bridging OPC UA Data to MQTT for IIoT: A Step-by-Step Tutorial](https://www.emqx.com/en/blog/bridging-opc-ua-data-to-mqtt-for-iiot)
 
 
 
 <section class="promotion">
     <div>
-        Try Neuron for Free
-             <div class="is-size-14 is-text-normal has-text-weight-normal">The Industrial IoT connectivity server</div>
+        Talk to an Expert
     </div>
-    <a href="https://www.emqx.com/en/try?product=neuron" class="button is-gradient px-5">Get Started →</a>
+    <a href="https://www.emqx.com/en/contact?product=solutions" class="button is-gradient px-5">Contact Us →</a>
 </section>

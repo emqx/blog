@@ -6,7 +6,7 @@ EMQ 的方案能够帮助商家统一管理分散在多方渠道的订单，实�
 
 ## **连锁快餐行业如何使用 EMQ 来优化客户体验**
 
-![方案架构图](https://assets.emqx.com/images/701ece7ecd5b62836c3916a7aa845790.png)
+![方案架构图](https://assets.emqx.com/images/1d58da8004729f7742476db81a34a774.png)
 
 EMQ 的企业级物联网平台 [EMQX Enterprise](https://www.emqx.com/zh/products/emqx) (以下简称 EMQX) 具有高度可扩展性，快餐连锁店可以轻松在后台数据中心和数以万计的餐厅边缘服务器上部署 EMQX。 同时，EMQX 也非常适合 CPU，内存，网络等资源有限的系统环境。
 
