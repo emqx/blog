@@ -20,7 +20,7 @@ By using IoT sensors, restaurants can now monitor equipment in real time. Howeve
 
 ## EMQX: Empowering Smart Restaurant with MQTT
 
-![Smart Restaurant with MQTT](https://assets.emqx.com/images/c78133925b8f74da24f083f111aa5b3f.png)
+![Smart Restaurant with MQTT](https://assets.emqx.com/images/88ed4d3b9f4fb19d80568df86532c6c3.png)
 
 Thanks to EMQX's high scalability, you can easily deploy the EMQX MQTT broker in the back-office data center and on tens of thousands of restaurant edge servers. EMQX is adaptive for resources-constraint system environments.
 
