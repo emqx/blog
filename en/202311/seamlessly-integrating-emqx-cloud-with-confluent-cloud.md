@@ -38,6 +38,14 @@ Your Confluent Cloud cluster is now set up and ready for data ingestion.
 
 [Register for an EMQX account](https://accounts.emqx.com/signup?continue=https://cloud-intl.emqx.com/console/deployments/0?oper=new) to access a 14-day free trial of a Dedicated deployment. No credit card is required. 
 
+<section class="promotion">
+    <div>
+        Try EMQX Cloud for Free
+        <div class="is-size-14 is-text-normal has-text-weight-normal">No credit card required</div>
+    </div>
+    <a href="https://accounts.emqx.com/signup?continue=https://cloud-intl.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">Get Started →</a>
+</section>
+
 #### 1. Create a Dedicated Deployment
 
 Log in to the Cloud Console and click the ‘New Deployment’ button to begin creating a new deployment. Select the ‘Dedicated’ plan to deploy a ‘Professional’ deployment.
