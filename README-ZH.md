@@ -399,6 +399,7 @@ Build a reliable, efficient and industry-specific Internet of Vehicles platform 
 
 ## [Industrial IoT | Unified Namespace | Sparkplug](https://www.emqx.com/zh/blog/category/industrial-iot)
 
+- [EMQX ECP 2.0 产品发布会回顾：工业互联数据平台助力工业数字化转型](https://www.emqx.com/zh/blog/emqx-ecp-2-0-product-launch-review) ([Edit](https://github.com/emqx/blog/blob/main/zh/202311/emqx-ecp-2-0-product-launch-review.md))
 - [统一命名空间架构（UNS）与 ISA-95 结合的最佳实践](https://www.emqx.com/zh/blog/incorporating-the-unified-namespace-with-isa-95-best-practices) ([Edit](https://github.com/emqx/blog/blob/main/zh/202311/incorporating-the-unified-namespace-with-isa-95-best-practices.md))
 - [使用 EMQX 和 Neuron 实现统一命名空间架构](https://www.emqx.com/zh/blog/implementing-unified-namespace-using-emqx-and-neuron) ([Edit](https://github.com/emqx/blog/blob/main/zh/202311/implementing-unified-namespace-using-emqx-and-neuron.md))
 - [利用 Open Manufacturing Hub 解决方案实现工业物联网 KPI 自动化](https://www.emqx.com/zh/blog/automated-kpis-implementation-for-iiot-with-the-open-manufacturing-hub) ([Edit](https://github.com/emqx/blog/blob/main/zh/202311/automated-kpis-implementation-for-iiot-with-the-open-manufacturing-hub.md))
