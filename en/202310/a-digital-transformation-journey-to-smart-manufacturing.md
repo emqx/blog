@@ -21,17 +21,18 @@ Ultimately, the strategic alignment of digital transformation with business goal
 
 The emergence of smart manufacturing is reshaping the production landscape through several foundational factors. First and foremost is the critical task of identifying data sources. These include a range of sensors, IoT devices, production equipment and business systems. Sensors provide real-time data on environmental conditions, while IoT devices provide insight into equipment performance. Business systems contribute valuable data about orders, inventory, and sales. Mastering the art of data source identification is the first step in creating a data-centric smart manufacturing environment. 
 
-> Read our blog to learn the data source identification and IT/OT connectivity solutions using EMQX and Neuron together.(coming soon)
+> Read [our blog](https://www.emqx.com/en/blog/first-step-to-a-smart-factory
+) to learn the data source identification and IT/OT connectivity solutions using EMQX and Neuron together.
 
 The second factor, integration architecture, is critical to knitting together the fabric of smart manufacturing. This factor underscores the need for robust communication pathways that facilitate the flow of data between devices, machines, and systems. The [Industrial Internet of Things (IIoT) platform](https://www.emqx.com/en/blog/iiot-platform-key-components-and-5-notable-solutions) and edge computing are key technology enablers here, ensuring seamless data collection, transmission, and integration across the production spectrum. The [OMH (Open Manufacturing Hub) solution](https://www.emqx.com/en/blog/open-manufacturing-hub-a-reference-architecture-for-industrial-iot) is an architecture powered by real-time monitoring and control, cybersecurity measures, and scalability. It is revolutionizing manufacturing by creating agile, efficient, and secure data-driven ecosystems.
 
-> Learn the event-driven architecture that demonstrates how EMQX and Neuron are essential components of our OMH solution. (coming soon)
+> Learn the event-driven architecture that demonstrates [how EMQX and Neuron are essential components of our OMH solution](https://www.emqx.com/en/blog/consolidating-the-foundation-of-smart-manufacturing-with-emqx-and-neuron).
 
 ## The Importance of Unified Data Structure
 
 The success of a manufacturing company depends on a robust data infrastructure. It supports critical decisions about product selection, materials, operations, equipment, and quality parameters. This infrastructure, including accurate material and quality models, promotes repeatability and consistency. Linking machine categories to performance specifications and compliance factors ensures precise control. A well-structured data model simplifies operations and streamlines tool development and reporting. 
 
-> This blog provides a set of data models for the OMH solution to facilitate interoperability of communication between disparate systems. (coming soon)
+> [This blog](https://www.emqx.com/en/blog/practical-data-management-for-smart-manufacturing) provides a set of data models for the OMH solution to facilitate interoperability of communication between disparate systems.
 
 Smart manufacturing revolves around the seamless transfer of data between producers and consumers, facilitating performance analysis and corrective action. The success of smart manufacturing depends on the efficient integration of data from different enterprise components, vendors, and domains. An open, flexible, and scalable data exchange architecture is essential. Well-designed data management strategies that prioritize data exchange capabilities provide a strong foundation for continued growth and component interchangeability. 
 
