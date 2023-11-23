@@ -121,6 +121,7 @@ Best practice of MQTT in various clients.
 
 ## [MQTT Security](https://www.emqx.com/zh/blog/category/security)
 
+- [利用 EMQX 和 NGINX Plus 的客户端证书认证功能提升 MQTT 安全性](https://www.emqx.com/zh/blog/elevating-mqtt-security-with-client-certificate-authentication) ([Edit](https://github.com/emqx/blog/blob/main/zh/202311/elevating-mqtt-security-with-client-certificate-authentication.md))
 - [JWT 认证原理与 JWKS Endpoint 构建指南](https://www.emqx.com/zh/blog/jwt-authentication-and-jwks-endpoint-in-mqtt) ([Edit](https://github.com/emqx/blog/blob/main/zh/202308/jwt-authentication-and-jwks-endpoint-in-mqtt.md))
 - [加强物联网基础设施安全性的 5 个策略](https://www.emqx.com/zh/blog/five-strategies-for-strengthening-mqtt-infrastructure-security) ([Edit](https://github.com/emqx/blog/blob/main/zh/202308/five-strategies-for-strengthening-mqtt-infrastructure-security.md))
 - [MQTT 中的授权：使用 ACL 管理对 MQTT 消息的访问](https://www.emqx.com/zh/blog/authorization-in-mqtt-using-acls-to-control-access-to-mqtt-messaging) ([Edit](https://github.com/emqx/blog/blob/main/zh/202308/authorization-in-mqtt-using-acls-to-control-access-to-mqtt-messaging.md))
@@ -335,6 +336,7 @@ The easiest way to start MQTT service. Connect your IoT devices to any cloud wit
 ## [EMQX Enterprise](https://www.emqx.com/zh/blog/category/enterprise)
 The world's most scalable and reliable MQTT messaging platform to connect, move and process your data in business-critical scenarios for the IoT era.
 
+- [利用 EMQX 和 NGINX Plus 的客户端证书认证功能提升 MQTT 安全性](https://www.emqx.com/zh/blog/elevating-mqtt-security-with-client-certificate-authentication) ([Edit](https://github.com/emqx/blog/blob/main/zh/202311/elevating-mqtt-security-with-client-certificate-authentication.md))
 - [MQTT + InfluxDB：构建面向储能领域的物联网时序数据应用](https://www.emqx.com/zh/blog/building-an-iot-time-series-data-application-with-mqtt-and-influxdb) ([Edit](https://github.com/emqx/blog/blob/main/zh/202311/building-an-iot-time-series-data-application-with-mqtt-and-influxdb.md))
 - [利用 NGINX Plus 在 EMQX 中实现基于 Client ID 的会话保持](https://www.emqx.com/zh/blog/harnessing-sticky-sessions-for-mqtt-load-balancing-with-nginx-plus) ([Edit](https://github.com/emqx/blog/blob/main/zh/202311/harnessing-sticky-sessions-for-mqtt-load-balancing-with-nginx-plus.md))
 - [利用 NGINX Plus 的 Client ID 替换功能和 EMQX Enterprise 保障 MQTT 应用安全](https://www.emqx.com/zh/blog/securing-your-mqtt-based-applications-with-nginx-plus-client-id-substitution-and-emqx-enterprise) ([Edit](https://github.com/emqx/blog/blob/main/zh/202311/securing-your-mqtt-based-applications-with-nginx-plus-client-id-substitution-and-emqx-enterprise.md))

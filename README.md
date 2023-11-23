@@ -623,6 +623,7 @@ Guarantee the availability and reliability of the IoT platform.
 
 ## [Use Cases](https://www.emqx.com/en/blog/category/use-cases)
 
+- [A Cloud-Edge Collaborative Solution for Intelligent Oil & Gas Production and Operation](https://www.emqx.com/en/blog/promoting-cost-reduction-and-efficiency-in-oil-and-gas-production) ([Edit](https://github.com/emqx/blog/blob/main/en/202311/promoting-cost-reduction-and-efficiency-in-oil-and-gas-production.md))
 - [A Data-Driven Solution for Logistics Asset Tracking and Maintenance](https://www.emqx.com/en/blog/a-data-driven-solution-for-logistics-asset-tracking-and-maintenance) ([Edit](https://github.com/emqx/blog/blob/main/en/202311/a-data-driven-solution-for-logistics-asset-tracking-and-maintenance.md))
 - [From Data to Intelligence: One-Stop MQTT Platform for Smart Factory Advancements](https://www.emqx.com/en/blog/data-infrastructure-for-smart-factory) ([Edit](https://github.com/emqx/blog/blob/main/en/202311/data-infrastructure-for-smart-factory.md))
 - [Powering Cooperative Vehicle-Infrastructure System: Enhancing V2X Connectivity with EMQ](https://www.emqx.com/en/blog/enhancing-v2x-connectivity-with-emq) ([Edit](https://github.com/emqx/blog/blob/main/en/202311/enhancing-v2x-connectivity-with-emq.md))
