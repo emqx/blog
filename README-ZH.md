@@ -7,6 +7,7 @@
 ## [MQTT Tutorials](https://www.emqx.com/zh/blog/category/mqtt-protocol)
 Get to know the preferred protocol in IoT from beginner to master.
 
+- [请求 / 响应 (Request / Response) 介绍与示例 | MQTT 5.0 特性详解](https://www.emqx.com/zh/blog/mqtt5-request-response) ([Edit](https://github.com/emqx/blog/blob/main/zh/202311/mqtt5-request-response.md))
 - [遗嘱消息（Will Message）介绍与示例 | MQTT 5.0 特性详解](https://www.emqx.com/zh/blog/use-of-mqtt-will-message) ([Edit](https://github.com/emqx/blog/blob/main/zh/202311/use-of-mqtt-will-message.md))
 - [共享订阅介绍与示例 | MQTT 5.0 特性详解](https://www.emqx.com/zh/blog/introduction-to-mqtt5-protocol-shared-subscription) ([Edit](https://github.com/emqx/blog/blob/main/zh/202311/introduction-to-mqtt5-protocol-shared-subscription.md))
 - [MQTT 5：7 项新功能以及迁移注意事项](https://www.emqx.com/zh/blog/introduction-to-mqtt-5) ([Edit](https://github.com/emqx/blog/blob/main/zh/202310/introduction-to-mqtt-5.md))
@@ -45,7 +46,6 @@ Get to know the preferred protocol in IoT from beginner to master.
 - [主题别名 - MQTT 5.0 新特性](https://www.emqx.com/zh/blog/mqtt5-topic-alias) ([Edit](https://github.com/emqx/blog/blob/main/zh/202112/mqtt5-topic-alias.md))
 - [MQTT 5.0 连接属性](https://www.emqx.com/zh/blog/mqtt5-connect-properties) ([Edit](https://github.com/emqx/blog/blob/main/zh/202112/mqtt5-connect-properties.md))
 - [用户属性 - MQTT 5.0 新特性](https://www.emqx.com/zh/blog/mqtt5-user-properties) ([Edit](https://github.com/emqx/blog/blob/main/zh/202111/mqtt5-user-properties.md))
-- [请求响应 - MQTT 5.0 新特性](https://www.emqx.com/zh/blog/mqtt5-request-response) ([Edit](https://github.com/emqx/blog/blob/main/zh/202009/mqtt5-request-response.md))
 - [增强认证 - MQTT 5.0 新特性](https://www.emqx.com/zh/blog/mqtt5-enhanced-authentication) ([Edit](https://github.com/emqx/blog/blob/main/zh/202008/mqtt5-enhanced-authentication.md))
 - [MQTT 协议 10 分钟快速入门](https://www.emqx.com/zh/blog/get-started-with-mqtt-in-ten-mins) ([Edit](https://github.com/emqx/blog/blob/main/zh/202008/get-started-with-mqtt-in-ten-mins.md))
 - [流量控制 - MQTT 5.0 新特性](https://www.emqx.com/zh/blog/mqtt5-flow-control) ([Edit](https://github.com/emqx/blog/blob/main/zh/202008/mqtt5-flow-control.md))
@@ -699,6 +699,7 @@ Guarantee the availability and reliability of the IoT platform.
 
 ## [应用案例](https://www.emqx.com/zh/blog/category/use-cases)
 
+- [EMQX 在自助洗车项目中实践应用](https://www.emqx.com/zh/blog/application-of-emqx-in-the-self-service-car-wash-project) ([Edit](https://github.com/emqx/blog/blob/main/zh/202311/application-of-emqx-in-the-self-service-car-wash-project.md))
 - [车路协同：连接智慧的车与路，赋能智慧交通](https://www.emqx.com/zh/blog/enhancing-v2x-connectivity-with-emq) ([Edit](https://github.com/emqx/blog/blob/main/zh/202311/enhancing-v2x-connectivity-with-emq.md))
 - [构建新一代车联网 TSP 平台: 实现高效车云互联](https://www.emqx.com/zh/blog/revolutionizing-tsp-platforms) ([Edit](https://github.com/emqx/blog/blob/main/zh/202311/revolutionizing-tsp-platforms.md))
 - [连锁快餐的数字化未来：MQTT 统一连接、实时消息驱动智慧经营](https://www.emqx.com/zh/blog/how-to-manage-fast-food-chains-in-a-smarter-way) ([Edit](https://github.com/emqx/blog/blob/main/zh/202310/how-to-manage-fast-food-chains-in-a-smarter-way.md))
