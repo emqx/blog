@@ -418,6 +418,7 @@ Build a reliable, efficient and industry-specific Internet of Vehicles platform 
 
 ## [Industrial IoT | Unified Namespace | Sparkplug](https://www.emqx.com/en/blog/category/industrial-iot)
 
+- [Data Storage Techniques and Strategies for Smart Manufacturing](https://www.emqx.com/en/blog/data-storage-techniques-and-strategies-for-smart-manufacturing) ([Edit](https://github.com/emqx/blog/blob/main/en/202311/data-storage-techniques-and-strategies-for-smart-manufacturing.md))
 - [From Data to Intelligence: One-Stop MQTT Platform for Smart Factory Advancements](https://www.emqx.com/en/blog/data-infrastructure-for-smart-factory) ([Edit](https://github.com/emqx/blog/blob/main/en/202311/data-infrastructure-for-smart-factory.md))
 - [Demystifying Modbus Protocols: RTU, TCP, ASCII, and Plus](https://www.emqx.com/en/blog/modbus-protocol-the-grandfather-of-iot-communication) ([Edit](https://github.com/emqx/blog/blob/main/en/202311/modbus-protocol-the-grandfather-of-iot-communication.md))
 - [Elevating IIoT: Unleashing the Power of MQTT, Edge Intelligence, and Timescale](https://www.emqx.com/en/blog/unleashing-the-power-of-mqtt-edge-intelligence-and-timescale) ([Edit](https://github.com/emqx/blog/blob/main/en/202311/unleashing-the-power-of-mqtt-edge-intelligence-and-timescale.md))
