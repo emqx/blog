@@ -152,6 +152,7 @@ Best practice of MQTT in various clients.
 ## [MQTT Integration (Eco & Integration)](https://www.emqx.com/en/blog/category/eco-and-integration)
 Explore more with & via EMQ.
 
+- [MQTT and MongoDB: Crafting Seamless Synergy for IoT Data Mangement](https://www.emqx.com/en/blog/mqtt-and-mongodb-crafting-seamless-synergy-for-iot-data-mangement) ([Edit](https://github.com/emqx/blog/blob/main/en/202311/mqtt-and-mongodb-crafting-seamless-synergy-for-iot-data-mangement.md))
 - [Home Assistant Modbus: 4 Things You Can Build](https://www.emqx.com/en/blog/home-assistant-modbus) ([Edit](https://github.com/emqx/blog/blob/main/en/202310/home-assistant-modbus.md))
 - [OpenTelemetry: The Basics & Benefits for MQTT and IoT Observability](https://www.emqx.com/en/blog/open-telemetry-the-basics-and-benefits-for-mqtt-and-iot-observability) ([Edit](https://github.com/emqx/blog/blob/main/en/202310/open-telemetry-the-basics-and-benefits-for-mqtt-and-iot-observability.md))
 - [Build an IoT Time-Series Data Application for Industrial Energy Monitoring with MQTT and Timescale](https://www.emqx.com/en/blog/build-an-iot-time-series-data-application-for-energy-storage-with-mqtt-and-timescale) ([Edit](https://github.com/emqx/blog/blob/main/en/202309/build-an-iot-time-series-data-application-for-energy-storage-with-mqtt-and-timescale.md))
@@ -339,6 +340,7 @@ The easiest way to start MQTT service. Connect your IoT devices to any cloud wit
 ## [EMQX Enterprise](https://www.emqx.com/en/blog/category/enterprise)
 The world's most scalable and reliable MQTT messaging platform to connect, move and process your data in business-critical scenarios for the IoT era.
 
+- [MQTT and MongoDB: Crafting Seamless Synergy for IoT Data Mangement](https://www.emqx.com/en/blog/mqtt-and-mongodb-crafting-seamless-synergy-for-iot-data-mangement) ([Edit](https://github.com/emqx/blog/blob/main/en/202311/mqtt-and-mongodb-crafting-seamless-synergy-for-iot-data-mangement.md))
 - [Running MQTT on Kubernetes: A Practical Guide](https://www.emqx.com/en/blog/running-mqtt-on-kubernetes) ([Edit](https://github.com/emqx/blog/blob/main/en/202311/running-mqtt-on-kubernetes.md))
 - [A Data-Driven Solution for Logistics Asset Tracking and Maintenance](https://www.emqx.com/en/blog/a-data-driven-solution-for-logistics-asset-tracking-and-maintenance) ([Edit](https://github.com/emqx/blog/blob/main/en/202311/a-data-driven-solution-for-logistics-asset-tracking-and-maintenance.md))
 - [EMQX Performance Tuning: Max Connections and File Descriptors](https://www.emqx.com/en/blog/emqx-performance-tuning-maximum-connections-and-file-descriptors) ([Edit](https://github.com/emqx/blog/blob/main/en/202311/emqx-performance-tuning-maximum-connections-and-file-descriptors.md))
