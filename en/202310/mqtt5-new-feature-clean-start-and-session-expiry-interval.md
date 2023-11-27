@@ -23,7 +23,7 @@ MQTT defines the session state that needs to be stored for the server level and 
 3. QoS 1 and QoS 2 messages which have been sent to the client but have not been completely acknowledged.
 4. QoS 1 and QoS 2 messages pending transmission to the client, and optionally QoS 0 messages pending transmission to the client.
 5. QoS 2 messages which have been received from the client but have not been completely acknowledged.
-6. The Will Message and the Will Delay Interval.
+6. The [Will Message](https://www.emqx.com/en/blog/use-of-mqtt-will-message) and the Will Delay Interval.
 7. If the session is currently not connected, the time at which the session will end and the session state will be discarded.
 
 For the **client**, it needs to store the following:

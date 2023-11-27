@@ -30,7 +30,7 @@ The rules engine of version 4.2.2 has added the following new features:
 
   Oracle and MS SQL Server are prominent representatives of the commercial relational database camp with a high market share, and this update fills in the gaps in the integrity of the technology stack and covers a broader customer base.
 
-  [DolphinDB](https://www.dolphindb.com/) is a high-performance distributed time-series database developed by Zhejiang Zhiyu Technology Co. It integrates the programming language with powerful features and a high-capacity and high-speed analysis system of streaming data. Also, it provides a one-stop solution for the rapid storage, retrieval, analysis and calculation of large amounts of structured data, suitable for quantitative finance and industrial IoT. EMQX uses DolphinDB to offer more data processing options for the financial and industrial network of IoT. 
+  [DolphinDB](https://www.dolphindb.com/) is a high-performance distributed time-series database developed by Zhejiang Zhiyu Technology Co. It integrates the programming language with powerful features and a high-capacity and high-speed analysis system of streaming data. Also, it provides a one-stop solution for the rapid storage, retrieval, analysis and calculation of large amounts of structured data, suitable for quantitative finance and [industrial IoT](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges). EMQX uses DolphinDB to offer more data processing options for the financial and industrial network of IoT. 
 
 - **Both synchronous/asynchronous data processing methods can be configured for the action**
 

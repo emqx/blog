@@ -116,7 +116,7 @@ In the meantime, if a message is generated on `topic1`, libcoap will receive it.
 
 At this point, we have completed the whole process of using the CoAP protocol gateway to access EMQX Cloud.
 
-Currently, IoT protocols are diversified, different protocols apply to different industries and scenarios, and there are multiple protocols available in the same scenario. The CoAP protocol gateway provides a new possibility to solve the data connectivity problem of IoT devices. EMQX Cloud supports multi-protocol access and connects hundreds of millions of IoT devices reliably to EMQX Cloud through open standard IoT protocols MQTT, [MQTT over WebSocket](https://www.emqx.com/en/blog/connect-to-mqtt-broker-with-websocket), CoAP/LwM2M, so that IoT data can be more valuable.
+Currently, [IoT protocols](https://www.emqx.com/en/blog/iot-protocols-mqtt-coap-lwm2m) are diversified, different protocols apply to different industries and scenarios, and there are multiple protocols available in the same scenario. The CoAP protocol gateway provides a new possibility to solve the data connectivity problem of IoT devices. EMQX Cloud supports multi-protocol access and connects hundreds of millions of IoT devices reliably to EMQX Cloud through open standard IoT protocols MQTT, [MQTT over WebSocket](https://www.emqx.com/en/blog/connect-to-mqtt-broker-with-websocket), CoAP/LwM2M, so that IoT data can be more valuable.
 
 
 <section class="promotion">

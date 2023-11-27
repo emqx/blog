@@ -19,7 +19,7 @@ We hope our expertise, technologies, and customer-focused services will help you
 
 EMQ passionately pursues innovative technology and an open development model to provide value to our users and the world. Since 2017 we have been developing future-proof IoT data infrastructure to deliver innovative and reliable IoT solutions, within a wide range of applications and industries. We work closely with our clients and industry partners to develop edge-to-cloud IoT data solutions that minimize costs and build time so they can focus on delivering business results that matter.
 
-So far, we've connected over 100M IoT devices around the globe. Our edge-to-cloud IoT data solutions are trusted by hundreds of customers in the world’s most essential industries, including Industrial IoT, connected vehicles, oil & gas, power generation, and smart cities.
+So far, we've connected over 100M IoT devices around the globe. Our edge-to-cloud IoT data solutions are trusted by hundreds of customers in the world’s most essential industries, including [Industrial IoT](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges), connected vehicles, oil & gas, power generation, and smart cities.
 
 
 

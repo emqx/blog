@@ -99,7 +99,7 @@ With the advent of Industry 4.0, there is an increasing demand for intelligence,
 
 ### Neuron for Converting KNX into MQTT
 
-[Neuron](https://neugates.io/) is an industry IoT gateway software that enables industrial devices with essential IoT connectivity capabilities. With minimal resource utilization, Neuron can communicate with diverse industrial devices through standard or dedicated protocols, realizing the multiple device connections to the Industrial IoT platform. From the very beginning, Neuron has supported MQTT as one of its communication protocols. The Neuron [MQTT plugin](https://neugates.io/docs/en/latest/configuration/north-apps/mqtt/overview.html) allows users to quickly build IoT applications that use MQTT communication between devices and the cloud.
+[Neuron](https://neugates.io/) is an industry IoT gateway software that enables industrial devices with essential IoT connectivity capabilities. With minimal resource utilization, Neuron can communicate with diverse industrial devices through standard or dedicated protocols, realizing the multiple device connections to the [Industrial IoT](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges) platform. From the very beginning, Neuron has supported MQTT as one of its communication protocols. The Neuron [MQTT plugin](https://neugates.io/docs/en/latest/configuration/north-apps/mqtt/overview.html) allows users to quickly build IoT applications that use MQTT communication between devices and the cloud.
 
 Since version 2.1.0, Neuron provides the [KNX plugin](https://neugates.io/docs/en/latest/configuration/south-devices/knxnet-ip/knxnet-ip.html) which supports communication with KNX IP couplers using the KNXnet/IP protocol over UDP.
 

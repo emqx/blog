@@ -49,7 +49,7 @@ Besides, when designing message throughput scenarios, do not forget QoS, message
 
 ### Other Scenarios
 
-For other MQTT functionalities, such as Shared Subscription, messages dumping to databases or MQ, a large number of topic subscriptions, and extreme situations like numerous [MQTT clients](https://www.emqx.com/en/blog/mqtt-client-tools) connecting/disconnecting simultaneously, these can be planned and incorporated into the testing scenarios based on actual requirements.
+For other MQTT functionalities, such as [Shared Subscription](https://www.emqx.com/en/blog/introduction-to-mqtt5-protocol-shared-subscription), messages dumping to databases or MQ, a large number of topic subscriptions, and extreme situations like numerous [MQTT clients](https://www.emqx.com/en/blog/mqtt-client-tools) connecting/disconnecting simultaneously, these can be planned and incorporated into the testing scenarios based on actual requirements.
 
 ## Performance Metrics
 

@@ -6,7 +6,7 @@ This blog will provide a comprehensive guide on bridging TwinCAT data to MQTT. W
 
 ### Neuron for Converting TwinCAT into MQTT
 
-[Neuron](https://neugates.io/) is an industry IoT gateway software that enables industrial devices with essential IoT connectivity capabilities. With minimal resource utilization, Neuron can communicate with diverse industrial devices through standard or dedicated protocols, realizing the multiple device connections to the Industrial IoT platform.
+[Neuron](https://neugates.io/) is an industry IoT gateway software that enables industrial devices with essential IoT connectivity capabilities. With minimal resource utilization, Neuron can communicate with diverse industrial devices through standard or dedicated protocols, realizing the multiple device connections to the [Industrial IoT](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges) platform.
 
 From the very beginning, Neuron has supported MQTT as one of its communication protocols. The Neuron [MQTT plugin](https://neugates.io/docs/en/latest/configuration/north-apps/mqtt/overview.html) allows users to quickly build IoT applications that use MQTT communication between devices and the cloud. 
 
@@ -144,7 +144,7 @@ In this blog, we introduced the overall process of bridging TwinCAT data to MQTT
 
 As a widely used platform for industrial automation, TwinCAT is adopted in a variety of industries, including automotive, aerospace, food and beverage, and more. Neuron, with its powerful connectivity for Industrial IoT, facilitates the data collection from TwinCAT PLCs and seamless transmission of the acquired data to the cloud for convenient remote control and monitoring whenever necessary. 
 
-Neuron also supports other industrial protocols like [Modbus](https://www.emqx.com/en/blog/modbus-protocol-the-grandfather-of-iot-communication), OPC UA, SIEMENS, and more. For more bridging tutorials, read our post: [Bridging Modbus Data to MQTT for IIoT:  A Step-by-Step Tutorial](https://www.emqx.com/en/blog/bridging-modbus-data-to-mqtt-for-iiot#the-architecture-of-modbus-to-mqtt-bridging).
+Neuron also supports other industrial protocols like [Modbus](https://www.emqx.com/en/blog/modbus-protocol-the-grandfather-of-iot-communication), [OPC UA](https://www.emqx.com/en/blog/opc-ua-protocol), SIEMENS, and more. For more bridging tutorials, read our post: [Bridging Modbus Data to MQTT for IIoT:  A Step-by-Step Tutorial](https://www.emqx.com/en/blog/bridging-modbus-data-to-mqtt-for-iiot#the-architecture-of-modbus-to-mqtt-bridging).
 
 
 

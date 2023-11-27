@@ -1,6 +1,6 @@
 The convergence of Information Technology (IT) and Operational Technology (OT) involves integrating traditionally separate enterprise networks and computing systems with industrial control systems and devices to create a unified and interconnected ecosystem. Selecting the best protocol for IT and OT convergence depends on various factors, including the specific industry, existing infrastructure, security considerations, and scalability requirements.
 
-OPC UA and [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) are the protocols that are commonly used in this scenario. As these two technologies continue to evolve, a new protocol has emerged which is a powerful combination of both, providing even greater benefits for the industry. It is called OPC UA over MQTT. In this article, we will dive into OPC UA over MQTT and explore its potential to empower the convergence of IT and OT.
+[OPC UA](https://www.emqx.com/en/blog/opc-ua-protocol) and [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) are the protocols that are commonly used in this scenario. As these two technologies continue to evolve, a new protocol has emerged which is a powerful combination of both, providing even greater benefits for the industry. It is called OPC UA over MQTT. In this article, we will dive into OPC UA over MQTT and explore its potential to empower the convergence of IT and OT.
 
 ## How Does OPC UA over MQTT Come?
 
@@ -106,7 +106,7 @@ While an OPC UA Application can be pre-configured to operate as a Publisher, oft
 
 ## Proven Protocol for IT and OT Organization
 
-OPC UA over MQTT is indeed a proven protocol that has gained widespread adoption and recognition in various industries. It's used in supervisory control and data acquisition (SCADA) systems, manufacturing execution systems (MES), industrial IoT solutions, and more. Many industrial automation vendors such as Siemens, Beckhoff, and KUKA provide OPC UA over MQTT support in their products, ranging from PLCs and sensors to software platforms. This wide support signifies the maturity of the protocol.
+OPC UA over MQTT is indeed a proven protocol that has gained widespread adoption and recognition in various industries. It's used in supervisory control and data acquisition (SCADA) systems, manufacturing execution systems (MES), [industrial IoT](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges) solutions, and more. Many industrial automation vendors such as Siemens, Beckhoff, and KUKA provide OPC UA over MQTT support in their products, ranging from PLCs and sensors to software platforms. This wide support signifies the maturity of the protocol.
 
 OPC UA over MQTT's suitability for IoT deployments extends to cloud-based applications. Many cloud providers such as AWS, Azure and GCP offer the protocol support, allowing seamless integration of IoT data into cloud services for storage, analysis, and visualization. By running OPC UA over MQTT, OPC UA's capabilities can be extended from cloud to edge devices and enable seamless integration into industrial IoT ecosystems.
 

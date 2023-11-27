@@ -209,7 +209,7 @@ Here are some commonly-used attribute values in the Options object:
 
   - `will`
 
-    : Will message, a configurable object value. When the client disconnects abnormally, the broker will publish a message to the will topic in the format below:
+    : [Will message](https://www.emqx.com/en/blog/use-of-mqtt-will-message), a configurable object value. When the client disconnects abnormally, the broker will publish a message to the will topic in the format below:
 
     - `topic`: Topic sent by the will
     - `payload`: the message published by the will

@@ -1,6 +1,6 @@
 ## Introduction
 
-Sparkplug is an industrial IoT communication protocol designed for use in SCADA systems. It provides a standard communication format for industrial devices and applications, making devices from different manufacturers interoperable. The Sparkplug specification was developed by Cirrus Link Solutions and Eclipse Foundation. It is openly available and not proprietary to a single company. So, it has the following benefits for the Sparkplug community:
+Sparkplug is an [industrial IoT](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges) communication protocol designed for use in SCADA systems. It provides a standard communication format for industrial devices and applications, making devices from different manufacturers interoperable. The Sparkplug specification was developed by Cirrus Link Solutions and Eclipse Foundation. It is openly available and not proprietary to a single company. So, it has the following benefits for the Sparkplug community:
 
 - Allowing different systems and technologies to work together seamlessly, improving efficiency, reducing costs, and providing more options to consumers.
 - Ensuring that products from different vendors can work together without any compatibility issues, and increasing consumer choice, and fostering healthy competition among vendors.

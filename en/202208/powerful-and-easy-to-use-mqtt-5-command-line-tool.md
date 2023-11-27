@@ -141,7 +141,7 @@ Finally, we test and verify the functionality of the MQTTX CLI by using the MQTT
 
 ## Summary
 
-This concludes our testing and verification of the MQTT message publish-subscribe feature using the MQTTX CLI. In addition to the common features mentioned above, the MQTTX CLI also supports setting up last will messages, using SSL/TLS to test mqtts connections, and more. MQTT 5.0 connectivity will also be supported in the future.
+This concludes our testing and verification of the MQTT message publish-subscribe feature using the MQTTX CLI. In addition to the common features mentioned above, the MQTTX CLI also supports setting up last [will messages](https://www.emqx.com/en/blog/use-of-mqtt-will-message), using SSL/TLS to test mqtts connections, and more. MQTT 5.0 connectivity will also be supported in the future.
 
 The release of the MQTTX CLI provides a new option for IoT developers to test MQTT connections. With complete support for command line calls, desktop client downloads, and online browsers, MQTTX 1.8.0 helps users with different use cases to complete the development and debugging of MQTT services or applications, improving their own business capabilities and stability. The easy-to-use test client tool, MQTTX, combined with the efficient, [reliable MQTT broker](https://www.emqx.io/), EMQX, will help IoT developers build competitive IoT platforms and applications.
 

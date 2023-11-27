@@ -38,7 +38,7 @@ Automated Approach offers efficiency, accuracy, and improved decision-making. Th
 
 ## Implementing an Automated KPI Approach with OMH
 
-The Open Manufacturing Hub (OMH) presented by EMQ is a reference architecture for building powerful and scalable Industrial IoT applications that keep your KPIs in control.
+The Open Manufacturing Hub (OMH) presented by EMQ is a reference architecture for building powerful and scalable [Industrial IoT](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges) applications that keep your KPIs in control.
 
 Automating KPIs processes by using OMH is a strategic move for boosting efficiency and informed decision-making. This technology-driven approach optimizes operations and cultivates competitiveness in modern business environments.
 

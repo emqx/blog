@@ -28,6 +28,9 @@ jobs:
           branch=$(date +%Y-%m-%d-%H-%M-%S)
           echo "branch=$branch" >> $GITHUB_OUTPUT
           git checkout -b $branch
+          rm -rf en/*
+          rm -rf zh/*
+          rm -rf ja/*
           python3 .ci/sync_blog.py $(pwd)
           python3 .ci/generate_readme.py $(pwd)
           git status

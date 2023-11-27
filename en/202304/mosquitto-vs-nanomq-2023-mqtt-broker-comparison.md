@@ -4,7 +4,7 @@
 
 Although Mosquitto and NanoMQ are both lightweight and have a low CPU/memory footprint, they adopt very different architectural designs. Mosquitto is single-threaded, and NanoMQ is built on NNG's asynchronous I/O with a multi-threading model.
 
-Both are suitable for industrial IoT and embedded devices with constrained resources. This blog post will compare the features, performance, tech details, and use cases of two brokers in 2023.
+Both are suitable for [industrial IoT](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges) and embedded devices with constrained resources. This blog post will compare the features, performance, tech details, and use cases of two brokers in 2023.
 
 ## Mosquitto Overview
 
@@ -73,7 +73,7 @@ Both open-source projects are hosted on GitHub. The following community metrics 
 
 ## Features and Capabilities
 
-Mosquitto and NanoMQ fully implement MQTT 3.1/3.1.1/5.0 protocol versions, supporting the protocol specification for will messages, retained messages, shared subscriptions, and other capabilities.
+Mosquitto and NanoMQ fully implement MQTT 3.1/3.1.1/5.0 protocol versions, supporting the protocol specification for [will messages](https://www.emqx.com/en/blog/use-of-mqtt-will-message), retained messages, [shared subscriptions](https://www.emqx.com/en/blog/introduction-to-mqtt5-protocol-shared-subscription), and other capabilities.
 
 Regarding the transports, both support MQTT over TCP, TLS/SSL, and WebSocket. NanoMQ as the broker designed in 2020, introduces [MQTT over QUIC](https://www.emqx.com/en/blog/mqtt-over-quic) with multiplexing and faster connection establishment and migration support.
 

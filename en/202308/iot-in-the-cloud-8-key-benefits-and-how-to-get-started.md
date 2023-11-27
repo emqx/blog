@@ -67,7 +67,7 @@ AWS IoT is a comprehensive suite of services that make it easy to build IoT appl
 
 ### Microsoft Azure IoT Suite
 
-The Microsoft Azure IoT Suite is a set of preconfigured solutions that enable businesses to quickly and easily build scalable IoT applications. It enables connectivity between devices and the Azure cloud, and supports a wide range of IoT protocols. Additionally, it integrates with other Azure services, such as Azure Machine Learning and Azure Stream Analytics, allowing you to analyze and gain insights from your IoT data.
+The Microsoft Azure IoT Suite is a set of preconfigured solutions that enable businesses to quickly and easily build scalable IoT applications. It enables connectivity between devices and the Azure cloud, and supports a wide range of [IoT protocols](https://www.emqx.com/en/blog/iot-protocols-mqtt-coap-lwm2m). Additionally, it integrates with other Azure services, such as Azure Machine Learning and Azure Stream Analytics, allowing you to analyze and gain insights from your IoT data.
 
 **Learn more in our detailed guides to:**
 

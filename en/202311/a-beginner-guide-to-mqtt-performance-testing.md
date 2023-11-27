@@ -82,7 +82,7 @@ MQTT's publish-subscribe mechanism allows us to easily adjust the publish and su
 
 However, the performance of the MQTT Broker in different publish-subscribe scenarios is often slightly different, as we will see in the following tests.
 
-In the fan-in scenario, we set up 2,000 publishers and 100 subscribers, and every 100 publisher’s messages are consumed by 5 subscribers in a shared subscription.
+In the fan-in scenario, we set up 2,000 publishers and 100 subscribers, and every 100 publisher’s messages are consumed by 5 subscribers in a [shared subscription](https://www.emqx.com/en/blog/introduction-to-mqtt5-protocol-shared-subscription).
 
 ![06fanin.png](https://assets.emqx.com/images/1d63c623208fa125a58b33baad1546d7.png)
 

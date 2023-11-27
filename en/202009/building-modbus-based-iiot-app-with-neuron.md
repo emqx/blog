@@ -198,7 +198,7 @@ Open the connected MQTTX, connect to the EMQX Broker, subscribe to the above top
 
 ## Summary
 
-The above is a complete simulation test of industrial access using EMQX Neuron, EMQX Broker, MQTTX and other tools to form a clearer and more intuitive understanding of industrial equipment on the cloud. Of course, you can also use the powerful protocol support of EMQX Neuron and the powerful access/forward ability of EMQX Broker to develop your own application demonstration system and build a complete IIoT platform.
+The above is a complete simulation test of industrial access using EMQX Neuron, EMQX Broker, MQTTX and other tools to form a clearer and more intuitive understanding of industrial equipment on the cloud. Of course, you can also use the powerful protocol support of EMQX Neuron and the powerful access/forward ability of EMQX Broker to develop your own application demonstration system and build a complete [IIoT platform](https://www.emqx.com/en/blog/iiot-platform-key-components-and-5-notable-solutions).
 
 By the end of September 2020, we will implement a complete edge solution for industrial protocol parsing, data aggregation and streaming processing at the edge end through integrating [Neuron](https://www.emqx.com/en/products/neuron), [Edge](https://www.emqx.com/en/products/emqx), [Kuiper](https://github.com/lf-edge/ekuiper) and other software. This solution can implement a complete industrial solution from end to end, and edge to cloud though integrating the cloud series product EMQX Broker / Enterprise.
 

@@ -6,7 +6,7 @@ OASIS Open is one of the most respected, nonprofit international open source and
 
 ## Pioneering Participant in MQTT and the IoT Messaging
 
-EMQ has been working on [EMQX](https://www.emqx.io/), the open source distributed MQTT broker which is fully compatible with MQTT 3.1 and 3.1.1 specifications since 2013. Then when MQTT became an OASIS open standard in 2016, we actively engaged in the development and discussion of the MQTT 5.0 specification. It’s EMQX that innovatively introduced the shared subscription features back when the specification was still in draft form.
+EMQ has been working on [EMQX](https://www.emqx.io/), the open source distributed MQTT broker which is fully compatible with MQTT 3.1 and 3.1.1 specifications since 2013. Then when MQTT became an OASIS open standard in 2016, we actively engaged in the development and discussion of the MQTT 5.0 specification. It’s EMQX that innovatively introduced the [shared subscription](https://www.emqx.com/en/blog/introduction-to-mqtt5-protocol-shared-subscription) features back when the specification was still in draft form.
 
 One of the most game-changing releases so far came in 2020 when EMQ introduced EMQX 4.0, the world's first cloud-native MQTT 5.0 Server with the full latest specification support. Now EMQX has become the world's most popular cloud-native distributed MQTT broker with a high-performance real-time message processing engine, connecting more than 100 million IoT devices worldwide for IoT data movement, processing and analytics.
 
@@ -44,7 +44,7 @@ In 2022, EMQ will continue to drive forward in MQTT server development, includin
 - Keeping working on the most highly scalable MQTT-based IoT messaging platform EMQX. It has now reached stunning 100 million unique subscribers in a 22-nodes EMQX cluster, and we’ll go further beyond
 - Supporting highly available persistent sessions
 - Delivering advanced NanoMQ, it will provide more abundant messaging patterns and other powerful features such as message persistence and rule-engine, and will facilitate MQTT application at the edge
-- Making the industrial IoT gateway software Neuron open source.
+- Making the [industrial IoT](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges) gateway software Neuron open source.
 
  
 

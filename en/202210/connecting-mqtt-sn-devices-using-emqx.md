@@ -4,7 +4,7 @@ The large-scale distributed IoT [MQTT message broker EMQX](https://www.emqx.io) 
 
 ## **What are the advantages of MQTT-SN?**
 
-- **Compatible with MQTT protocol:** MQTT-SN communication model completely corresponds to MQTT, such as Publish, Subscribe, Hold a session, Will Message, etc. The unified model helps reduce the end-to-end design complexity.
+- **Compatible with MQTT protocol:** MQTT-SN communication model completely corresponds to MQTT, such as Publish, Subscribe, Hold a session, [Will Message](https://www.emqx.com/en/blog/use-of-mqtt-will-message), etc. The unified model helps reduce the end-to-end design complexity.
 - **Lightweight:** The protocol design is very lean in order to address the limited transmission bandwidth in the WSN networks. For example, the topic name in the PUBLISH message is replaced with a short, 2-byte Topic ID.
 - **Support for sleep:** MQTT-SN protocol adds sleep logic for low power consumption scenarios. For example, after a device enters Sleep mode, all messages sent to it will be cached in the server and delivered to it after its wake-up.
 
