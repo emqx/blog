@@ -2,7 +2,7 @@
 
 In the rapidly evolving landscape of the [Industrial Internet of Things (IIoT)](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges), the demand for seamless connectivity, real-time data processing, and efficient system management has never been greater. As industries continue to embrace the transformative potential of interconnected devices, the need for a robust and flexible technology stack becomes paramount.
 
-Enter the OMH(Open Manufacturing Hub) — an open-source blueprint for industrial IoT presented by EMQ, harnessing the true potential of industrial connectivity and real-time data. In this article, we embark on a journey through the OMH solution, uncovering how to implement this innovative solution and reshape the way we approach industrial system development.
+Enter the OMH(Open Manufacturing Hub) — an open-source blueprint for [industrial IoT](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges) presented by EMQ, harnessing the true potential of industrial connectivity and real-time data. In this article, we embark on a journey through the OMH solution, uncovering how to implement this innovative solution and reshape the way we approach industrial system development.
 
 <section
   class="is-hidden-touch my-32 is-flex is-align-items-center"
@@ -18,7 +18,7 @@ Enter the OMH(Open Manufacturing Hub) — an open-source blueprint for industria
       A Reference Architecture for Modern Manufacturing
     </div>
     <div class="mb-32">
-      An open-source blueprint for Industry 4.0 to help you build an efficient and scalable IIoT platform.
+      An open-source blueprint for Industry 4.0 to help you build an efficient and scalable [IIoT platform](https://www.emqx.com/en/blog/iiot-platform-key-components-and-5-notable-solutions).
     </div>
     <a href="https://www.emqx.com/en/resources/open-manufacturing-hub-a-reference-architecture-for-industrial-iot?utm_campaign=embedded-open-manufacturing-hub&from=blog-open-manufacturing-hub-a-reference-architecture" class="button is-gradient">Get the Whitepaper →</a>
   </div>
@@ -432,7 +432,7 @@ EMQX broker offers a wide range of data bridges, facilitating seamless integrati
 
 ### Diverse OT Connectivity
 
-Neuron serves as a protocol gateway, providing a comprehensive set of industrial connectivity options essential for successful IIoT deployments. With support for over 30 industrial protocols such as [Modbus](https://www.emqx.com/en/blog/modbus-protocol-the-grandfather-of-iot-communication), Ethernet/IP, Profinet I/O, OPC-UA, IEC104, BACnet, and more, Neuron enables seamless communication with various devices and systems across the operational technology (OT) landscape. Whether it's PLCs, building automation systems, CNC machines, or robotics, Neuron offers a powerful range of drivers to ensure reliable OT connectivity and data acquisition.
+Neuron serves as a protocol gateway, providing a comprehensive set of industrial connectivity options essential for successful IIoT deployments. With support for over 30 industrial protocols such as [Modbus](https://www.emqx.com/en/blog/modbus-protocol-the-grandfather-of-iot-communication), Ethernet/IP, Profinet I/O, OPC-UA, IEC104, [BACnet](https://www.emqx.com/en/blog/bacnet-protocol-basic-concepts-structure-obejct-model-explained), and more, Neuron enables seamless communication with various devices and systems across the operational technology (OT) landscape. Whether it's PLCs, building automation systems, CNC machines, or robotics, Neuron offers a powerful range of drivers to ensure reliable OT connectivity and data acquisition.
 
 <section class="promotion">
     <div>

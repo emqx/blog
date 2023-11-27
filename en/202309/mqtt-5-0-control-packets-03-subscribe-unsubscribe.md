@@ -103,7 +103,7 @@ The table below lists all available Reason Codes for the SUBACK packet:
 | 0x8F      | Topic Filter invalid                   | The Topic Filter is in the correct format, but is not accepted by the server. For example, the level of Topic Filters exceeds the maximum number allowed by the server. |
 | 0x91      | Packet Identifier in use               | The Packet ID in the received packet is in use.              |
 | 0x97      | Quota exceeded                         | Indicates that the quota limit has been exceeded. The server may limit the subscription quota of the subscriber. For example, a client can establish up to 10 subscriptions. |
-| 0x9E      | Shared Subscriptions not supported     | The server does not support shared subscriptions.            |
+| 0x9E      | [Shared Subscriptions](https://www.emqx.com/en/blog/introduction-to-mqtt5-protocol-shared-subscription) not supported     | The server does not support shared subscriptions.            |
 | 0xA1      | Subscription Identifiers not supported | The server does not support subscription identifiers.       |
 | 0xA2      | Wildcard Subscriptions not supported   | The server does not support wildcard subscriptions.          |
 

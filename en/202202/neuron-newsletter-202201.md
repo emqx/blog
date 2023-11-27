@@ -12,7 +12,7 @@ Through the import and export functions of node configuration, subscription rela
 
 ### OPC UA Drives data subscription
 
-This new function greatly reduces the data bandwidth consumption caused by the data change of OPC UA device.
+This new function greatly reduces the data bandwidth consumption caused by the data change of [OPC UA](https://www.emqx.com/en/blog/opc-ua-protocol) device.
 
 ### MQTT interface form modification
 

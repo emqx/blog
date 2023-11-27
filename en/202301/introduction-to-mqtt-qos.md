@@ -140,7 +140,7 @@ QoS 0 and QoS 1 typically have similar throughput when using EMQX with the same 
 
 ## Conclusion
 
-By now, you should have a thorough understanding of MQTT QoS. To continue learning about MQTT, you can check out EMQ's [MQTT Getting Started and Advanced](https://www.emqx.com/en/mqtt-guide) series, which cover topics such as wildcards, retained messages, and will messages. These resources will help you delve deeper into MQTT and develop advanced MQTT applications and services.
+By now, you should have a thorough understanding of MQTT QoS. To continue learning about MQTT, you can check out EMQ's [MQTT Getting Started and Advanced](https://www.emqx.com/en/mqtt-guide) series, which cover topics such as wildcards, retained messages, and [will messages](https://www.emqx.com/en/blog/use-of-mqtt-will-message). These resources will help you delve deeper into MQTT and develop advanced MQTT applications and services.
 
 
 

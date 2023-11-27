@@ -81,7 +81,7 @@ EMQX also supports rich system topics such as client online/offline events, stat
 
 ### Shared Subscriptions
 
-Shared subscriptions are a feature of MQTT 5.0, a subscription method that achieves load balancing among multiple subscribers. The topic of a shared subscription starts with $share.
+[Shared subscriptions](https://www.emqx.com/en/blog/introduction-to-mqtt5-protocol-shared-subscription) are a feature of MQTT 5.0, a subscription method that achieves load balancing among multiple subscribers. The topic of a shared subscription starts with $share.
 
 > Although the MQTT protocol added shared subscriptions in 5.0, EMQX has supported shared subscriptions since MQTT 3.1.1.
 

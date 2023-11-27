@@ -34,7 +34,7 @@ The session state in the server includes:
 - Client subscription messages
 - QoS 1 and QoS 2 messages that have been sent to the client but have not been fully acknowledged
 - Waiting for QoS 0 (optional), QoS 1, and QoS 2 messages to be transmitted to the client
-- QoS 2 messages, Will Message and Will Delay Interval that have been received from the client but not yet fully acknowledged
+- QoS 2 messages, [Will Message](https://www.emqx.com/en/blog/use-of-mqtt-will-message) and Will Delay Interval that have been received from the client but not yet fully acknowledged
 
 ### Session life cycle and session storage
 

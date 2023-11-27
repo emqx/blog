@@ -2,7 +2,7 @@ In this blog, we use [Neuron](https://www.emqx.com/en/products/neuron) and [EMQX
 
 ## The Architecture of FINS to MQTT Bridging
 
-Neuron is a modern industrial IoT connectivity server that can connect various industrial devices that use standard protocols or device-specific protocols, achieving interconnection between industrial IoT platforms and various devices. As a lightweight industrial software, Neuron can run on various IoT edge hardware devices with limited resources. It aims to solve the problem of unified access to data-centric automation devices and provide basic support for intelligent manufacturing.
+Neuron is a modern [industrial IoT](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges) connectivity server that can connect various industrial devices that use standard protocols or device-specific protocols, achieving interconnection between industrial IoT platforms and various devices. As a lightweight industrial software, Neuron can run on various IoT edge hardware devices with limited resources. It aims to solve the problem of unified access to data-centric automation devices and provide basic support for intelligent manufacturing.
 
 > Learn more about Neuron: [Neuron: Industrial IoT Connectivity Server](https://www.emqx.com/en/products/neuron)
 
@@ -197,7 +197,7 @@ After a successful subscription, you can see that MQTTX continues to receive dat
 
 ## Summary
 
-With the growing trend towards cloud-edge collaboration in the industrial 4.0 wave, FINS bridging is becoming an increasingly popular choice for a common IoT protocol. By utilizing the solution mentioned in this blog, users can safely and conveniently implement the IIoT platform on demand with enhanced connectivity, resulting in significant improvements in production efficiency, cost savings, and product quality.
+With the growing trend towards cloud-edge collaboration in the industrial 4.0 wave, FINS bridging is becoming an increasingly popular choice for a common IoT protocol. By utilizing the solution mentioned in this blog, users can safely and conveniently implement the [IIoT platform](https://www.emqx.com/en/blog/iiot-platform-key-components-and-5-notable-solutions) on demand with enhanced connectivity, resulting in significant improvements in production efficiency, cost savings, and product quality.
 
 
 

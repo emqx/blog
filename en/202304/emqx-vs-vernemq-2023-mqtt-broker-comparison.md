@@ -16,7 +16,7 @@ See: [Reaching 100M MQTT connections with EMQX 5.0](https://www.emqx.com/en/blog
 
 ![MQTT Cluster](https://assets.emqx.com/images/c0ef403f8b9207ebffa1bf228bc7f3a7.png)
 
-EMQX offers rich enterprise features, data integration, cloud hosting services, and commercial support from [EMQ Technologies Inc.](https://www.emqx.com/en/about) Over the years, EMQX has gained popularity among enterprises, startups, and individuals due to its performance, reliability, and scalability. EMQX is widely used in various industries, such as IoT, industrial IoT, connected cars, and telecommunications.
+EMQX offers rich enterprise features, data integration, cloud hosting services, and commercial support from [EMQ Technologies Inc.](https://www.emqx.com/en/about) Over the years, EMQX has gained popularity among enterprises, startups, and individuals due to its performance, reliability, and scalability. EMQX is widely used in various industries, such as IoT, [industrial IoT](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges), connected cars, and telecommunications.
 
 **Pros:**
 

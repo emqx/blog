@@ -10,13 +10,13 @@ The client first specifies the maximum allowed packet length that the server can
 
 Once the connection is established, both parties must adhere to this agreement when sending packets. Neither party is allowed to send packets that exceed the agreed length limit. Otherwise, the receiver will return a DISCONNECT packet with a Reason Code of 0x95 and close the network connection.
 
-It is important to note that if the client sets a Will message in the CONNECT packet, it may unknowingly cause the CONNECT packet to exceed the maximum packet length allowed by the server. In such cases, the server will respond with a CONNACK packet with a Reason Code of 0x95 and close the network connection.
+It is important to note that if the client sets a [Will message](https://www.emqx.com/en/blog/use-of-mqtt-will-message) in the CONNECT packet, it may unknowingly cause the CONNECT packet to exceed the maximum packet length allowed by the server. In such cases, the server will respond with a CONNACK packet with a Reason Code of 0x95 and close the network connection.
 
 ## How Does the Sender Work Within the Limit?
 
 For the client, whether it is publishing or subscribing, as the active sender, it can split a packet into multiple parts to be sent in order to avoid exceeding the length limit.
 
-But for the server, it is only responsible for forwarding the message, and cannot determine the size of the message. So if it finds that the size of the message to be forwarded exceeds the maximum value that the client can receive, then it will drop this message. If it is a shared subscription, besides dropping, the server can also choose to send the message to other clients in the group that can receive the message.
+But for the server, it is only responsible for forwarding the message, and cannot determine the size of the message. So if it finds that the size of the message to be forwarded exceeds the maximum value that the client can receive, then it will drop this message. If it is a [shared subscription](https://www.emqx.com/en/blog/introduction-to-mqtt5-protocol-shared-subscription), besides dropping, the server can also choose to send the message to other clients in the group that can receive the message.
 
 In addition to the two strategies mentioned above, whether it is the client or the server, they can trim the packet's content to reduce the length. We know that the responder can include two properties, User Property and Reason String, in response packets such as CONNACK and PUBACK, to convey additional information to the peer.
 

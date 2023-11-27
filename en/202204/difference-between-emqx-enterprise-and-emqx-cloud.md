@@ -6,7 +6,7 @@ This article will make a detailed comparison and interpretation of EMQX Enterpri
 
 ## Products Overview
 
-EMQX Enterprise is an open-source cloud-native IoT MQTT message broker based on the Erlang/OTP platform, with integrated distributed MQTT message service and powerful IoT rule engine. It supports multiple standard IoT protocols and Industry-specific protocols. It provides high-reliability connection and low latency message routing of massive IoT devices.
+EMQX Enterprise is an open-source cloud-native IoT MQTT message broker based on the Erlang/OTP platform, with integrated distributed MQTT message service and powerful IoT rule engine. It supports multiple standard [IoT protocols](https://www.emqx.com/en/blog/iot-protocols-mqtt-coap-lwm2m) and Industry-specific protocols. It provides high-reliability connection and low latency message routing of massive IoT devices.
 
 EMQX Cloud is the world's first fully managed MQTT 5.0 public cloud service launched by EMQ, providing MQTT message service with a one-stop operation and maintenance host and a unique isolated environment for MQTT services. EMQX Cloud can help you quickly build industry applications and easily realize the collection, transmission, computation, and persistence of IoT data.
 

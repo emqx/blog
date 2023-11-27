@@ -40,7 +40,7 @@ These are the steps that the client and MQTT Broker take when messaging:
 4. Message routing: When the Broker receives a message, it checks the list of subscribers and routes the message to all clients that have subscribed to the topic.
 5. Disconnect: The client initiates a request to disconnect. The MQTT Broker can also disconnect from the client after a network exception or heartbeat expiration.
 
-Most MQTT Brokers implement the fundamental features specified in the MQTT protocol to support basic messaging functionality, such as QoS levels, client authentication, retained messages, shared subscriptions, and more. These features facilitate the rapid implementation of specific use cases.
+Most MQTT Brokers implement the fundamental features specified in the MQTT protocol to support basic messaging functionality, such as QoS levels, client authentication, retained messages, [shared subscriptions](https://www.emqx.com/en/blog/introduction-to-mqtt5-protocol-shared-subscription), and more. These features facilitate the rapid implementation of specific use cases.
 
 However, there is more to it than that. If the MQTT Broker is like a port, message delivery is only the transportation of goods. In fact, to ensure the transportation of goods, a complete logistics system and storage facilities are required to provide essential support. To send goods from various places to different destinations, it is necessary to unpack and repack the goods and use different logistics methods to deliver them. In the off-season and peak season of logistics, it is necessary to adjust the scale of port facilities and personnel dynamically and flexibly to meet demand while maximizing efficiency.
 

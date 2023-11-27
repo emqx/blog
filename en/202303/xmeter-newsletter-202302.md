@@ -1,10 +1,10 @@
-XMeter Cloud professional edition, launched in late 2022, has attracted numerous users who are putting its MQTT concurrent connection and message throughput scenarios to the test at scales ranging from thousands to tens of thousands. We have been delighted to receive their feedback, which has prompted us to expand our support for other IoT protocols in the near future.
+XMeter Cloud professional edition, launched in late 2022, has attracted numerous users who are putting its MQTT concurrent connection and message throughput scenarios to the test at scales ranging from thousands to tens of thousands. We have been delighted to receive their feedback, which has prompted us to expand our support for other [IoT protocols](https://www.emqx.com/en/blog/iot-protocols-mqtt-coap-lwm2m) in the near future.
 
 As we kick off the new year, the XMeter team is putting all our efforts towards developing the latest version of XMeter Cloud. This upcoming release, set to launch in March, introduces a vital new feature that allows users to customize test scenarios, enabling them to test a much broader range of protocols, such as TCP, WebSocket, HTTP, and many others. Along with these additions, the new version of XMeter Cloud promises to further enhance the user experience with improved functionality and performance optimization.
 
 ## Supports for Custom Scenario Testing
 
-Both the Standard and Professional editions of XMeter Cloud have a diverse array of built-in MQTT testing scenarios, including connection, submitting, 1-to-1, broadcasting, and shared subscriptions, making it simple and efficient for users to conduct MQTT testing by selecting and setting key parameters with ease.
+Both the Standard and Professional editions of XMeter Cloud have a diverse array of built-in MQTT testing scenarios, including connection, submitting, 1-to-1, broadcasting, and [shared subscriptions](https://www.emqx.com/en/blog/introduction-to-mqtt5-protocol-shared-subscription), making it simple and efficient for users to conduct MQTT testing by selecting and setting key parameters with ease.
 
 The upcoming Professional Edition will offer a fully customizable test scenario function to meet the diverse and ever-evolving requirements of modern testing. This feature empowers users to self-define test scenarios and test a broad range of protocols beyond MQTT.
 

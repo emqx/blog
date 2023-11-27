@@ -1,4 +1,4 @@
-This article will introduce how to build an industrial IoT platform that integrates the capabilities of industrial data collection, aggregation, cleaning, storage and analysis, and visualization and display based on open source and commercial software in the community. Based on this solution, readers can adjust this solution design according to their own needs for building the industrial internet platform that meets actual business needs and accelerate the realization of industrial intelligence transformation.
+This article will introduce how to build an [industrial IoT](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges) platform that integrates the capabilities of industrial data collection, aggregation, cleaning, storage and analysis, and visualization and display based on open source and commercial software in the community. Based on this solution, readers can adjust this solution design according to their own needs for building the industrial internet platform that meets actual business needs and accelerate the realization of industrial intelligence transformation.
 
 
 
@@ -43,7 +43,7 @@ This solution will use these software products in the following list.
 **The description of basic functions of product**
 
 1. Neuron: Industrial IoT data collection
-   - Supports [Modbus](https://www.emqx.com/en/blog/modbus-protocol-the-grandfather-of-iot-communication)，OPCUA，IEC61850，IEC104, BACnet and other protocols and devices.
+   - Supports [Modbus](https://www.emqx.com/en/blog/modbus-protocol-the-grandfather-of-iot-communication)，OPCUA，IEC61850，IEC104, [BACnet](https://www.emqx.com/en/blog/bacnet-protocol-basic-concepts-structure-obejct-model-explained) and other protocols and devices.
    - A management console. It allows users to visually configure and access data across industrial equipment in a browser.
    - Northbound standard MQTT data delivery, which sends data to a designated MQTT message server based on a user-specified configuration.
    - Southbound control interface for rule-based device control in conjunction with the rule engine features provided by Kuiper.

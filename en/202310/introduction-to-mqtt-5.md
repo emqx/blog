@@ -1,6 +1,6 @@
 [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt), which stands for Message Queuing Telemetry Transport, is a lightweight messaging protocol designed for constrained devices and low-bandwidth, high-latency networks. It is particularly useful for remote connections where a small code footprint is required or network bandwidth is limited.
 
-MQTT 5 is the latest version of the protocol, offering many improvements over its predecessors. New features include reason codes, session expiry intervals, topic aliases, user properties, subscription options, request/response feature, and shared subscriptions. We’ll explore these new features, explain how popular brokers and client SDKs are supporting MQTT 5, and some key considerations when migrating from MQTT 3.1.1 to MQTT 5.
+MQTT 5 is the latest version of the protocol, offering many improvements over its predecessors. New features include reason codes, session expiry intervals, topic aliases, user properties, subscription options, request/response feature, and [shared subscriptions](https://www.emqx.com/en/blog/introduction-to-mqtt5-protocol-shared-subscription). We’ll explore these new features, explain how popular brokers and client SDKs are supporting MQTT 5, and some key considerations when migrating from MQTT 3.1.1 to MQTT 5.
 
 ## Brief History and Evolution of MQTT 5
 

@@ -43,7 +43,7 @@ In addition to the requirements of a Sparkplug Compliant MQTT Server, a Sparkplu
 
 The Sparkplug Aware MQTT server extends the state management approach of Sparkplug. In essence, the birth and death certificates are now stored as retained messages and can be accessed using the newly introduced topic structure `$sparkplug/certificates/#`.
 
-The ability to update the timestamp of the NDEATH message is a notable feature in this version. Due to the Last Will feature, these timestamps are stored in the broker. The Last Will message is included in the [MQTT connection](https://www.emqx.com/en/blog/how-to-set-parameters-when-establishing-an-mqtt-connection) attempt and contains an invalid timestamp since the actual time of an unconditional client disconnection is unknown. Updating this timestamp through the publication of the LWT message addresses this issue.
+The ability to update the timestamp of the NDEATH message is a notable feature in this version. Due to the Last Will feature, these timestamps are stored in the broker. The Last [Will message](https://www.emqx.com/en/blog/use-of-mqtt-will-message) is included in the [MQTT connection](https://www.emqx.com/en/blog/how-to-set-parameters-when-establishing-an-mqtt-connection) attempt and contains an invalid timestamp since the actual time of an unconditional client disconnection is unknown. Updating this timestamp through the publication of the LWT message addresses this issue.
 
 ## **Benefits of Sparkplug 3.0 for IIoT Applications**
 

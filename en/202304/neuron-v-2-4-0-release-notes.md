@@ -1,4 +1,4 @@
-[Neuron](https://neugates.io/), the modern industrial IoT connectivity server, has just released its latest version, Neuron 2.4.0. This release introduces several new features, including newly-added drivers, a new application, and improvements to existing functionality.
+[Neuron](https://neugates.io/), the modern [industrial IoT](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges) connectivity server, has just released its latest version, Neuron 2.4.0. This release introduces several new features, including newly-added drivers, a new application, and improvements to existing functionality.
 
 ## 5 Additional Drivers for Different Scenarios
 

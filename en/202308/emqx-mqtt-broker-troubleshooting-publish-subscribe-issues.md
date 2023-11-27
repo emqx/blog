@@ -20,7 +20,7 @@ Firstly, let's walk through several essential concepts involved in EMQX in this 
 
 - **Message Queue**: When the number of messages simultaneously present in the network link exceeds the limit, that is, when the Inflight Window reaches the length limit, EMQX will no longer send subsequent messages but store these messages in the message queue. Once a message in the Inflight Window is confirmed, the messages in the message queue will be sent in a first-in, first-out order and stored in the Inflight Window simultaneously.
 
-- **Shared Subscription**: In an ordinary subscription, all subscribers will receive all messages of the subscribed topic. Clients subscribing to the same topic in shared subscriptions will receive messages under this topic. The same message will not be sent to multiple subscribers, thus achieving load balancing among multiple nodes on the subscriber side.
+- **Shared Subscription**: In an ordinary subscription, all subscribers will receive all messages of the subscribed topic. Clients subscribing to the same topic in [shared subscriptions](https://www.emqx.com/en/blog/introduction-to-mqtt5-protocol-shared-subscription) will receive messages under this topic. The same message will not be sent to multiple subscribers, thus achieving load balancing among multiple nodes on the subscriber side.
 
 - **Retained Message**: Retained messages reside on the message server and can still be received by later subscribers when subscribing to the topic.
 

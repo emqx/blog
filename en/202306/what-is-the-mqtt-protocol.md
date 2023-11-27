@@ -1,6 +1,6 @@
 According to the research report “Status of the IoT Spring 2022” from IoT Analytics, the IoT market is expected to grow 18% and reach 14.4 billion active connections by 2022.
 
-With such large-scale IoT demand, massive device access and device management pose huge challenges to network bandwidth, communication protocols, and platform service architecture. IoT protocols must address several key issues in IoT device communication: complex and unreliable network environment, small memory and flash memory capacity, and limited processing capacity.
+With such large-scale IoT demand, massive device access and device management pose huge challenges to network bandwidth, communication protocols, and platform service architecture. [IoT protocols](https://www.emqx.com/en/blog/iot-protocols-mqtt-coap-lwm2m) must address several key issues in IoT device communication: complex and unreliable network environment, small memory and flash memory capacity, and limited processing capacity.
 
 The [MQTT protocol](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) was created to address these issues. After many years of development, it has become the preferred protocol for the IoT industry with its advantages of lightweight, efficiency, reliable messaging, massive connection support, and secure bidirectional communication.
 
@@ -148,7 +148,7 @@ For example, a fitness tracker might publish your heart rate data while you’re
 
 Four years after MQTT 3.1.1 was released and became an OASIS standard, MQTT 5.0 was released. This is a major improvement and upgrade. It is designed to not only meet the current industry needs, but also to prepare for future development of the industry.
 
-MQTT 5.0 adds several key features including session/message delay, reason codes, topic aliases, user properties, shared subscriptions and so on, which better meet the needs of modern IoT applications. It improves the performance, stability, and scalability of large systems. Currently, MQTT 5.0 has become the preferred protocol for most IoT enterprises, and we recommend that developers who are new to MQTT use this version directly.
+MQTT 5.0 adds several key features including session/message delay, reason codes, topic aliases, user properties, [shared subscriptions](https://www.emqx.com/en/blog/introduction-to-mqtt5-protocol-shared-subscription) and so on, which better meet the needs of modern IoT applications. It improves the performance, stability, and scalability of large systems. Currently, MQTT 5.0 has become the preferred protocol for most IoT enterprises, and we recommend that developers who are new to MQTT use this version directly.
 
 If you want to learn more about MQTT 5.0, you can try reading our [MQTT 5.0 Explore](https://www.emqx.com/en/blog/introduction-to-mqtt-5) series of articles, which will introduce you to the important features of MQTT 5.0 in an easy-to-understand way.
 

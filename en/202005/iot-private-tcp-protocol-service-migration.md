@@ -2,7 +2,7 @@
 
 **MQTT** is an application layer protocol based on the TCP protocol and work in TCP/IP protocol cluster, and designed and developed by IBM in 1998. MQTT uses a lightweight publish/subscribe pattern for message transmission. It is designed to provide reliable network services for IoT devices in low-bandwidth and unstable network environments. Devices need to connect to the **MQTT broker** for messaging communication.
 
-Among many **IoT protocols**, MQTT is accepted by more and more enterprises due to its openness, lightweight, energy-saving, universality, etc. It has become the fact standard of IoT communication protocols. However, due to the particularity of the industry or other reasons, there are a large number of communication protocols that are based on TCP/IP in the IoT industry: the scaled standard industry protocol(such as power, road traffic, industrial control), and the private protocol developed by companies, projects, and even individuals. Both new and old projects may encounter the dilemma of not being able to use the **MQTT protocol**.
+Among many [IoT protocols](https://www.emqx.com/en/blog/iot-protocols-mqtt-coap-lwm2m), MQTT is accepted by more and more enterprises due to its openness, lightweight, energy-saving, universality, etc. It has become the fact standard of IoT communication protocols. However, due to the particularity of the industry or other reasons, there are a large number of communication protocols that are based on TCP/IP in the IoT industry: the scaled standard industry protocol(such as power, road traffic, industrial control), and the private protocol developed by companies, projects, and even individuals. Both new and old projects may encounter the dilemma of not being able to use the **MQTT protocol**.
 
 
 

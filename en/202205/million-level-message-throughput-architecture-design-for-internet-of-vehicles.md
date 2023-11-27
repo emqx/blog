@@ -28,7 +28,7 @@ When considering million-level message throughput scenarios, we also need to des
 
 When the message packet is large, the encapsulation of the message body should be considered. Simple JSON encapsulation is not efficient in message parsing, so we should consider using Avro, protobuf and other encoding formats for Payload format encapsulation.
 
-For million-level message throughput scenarios, traditional architectures based on shared subscription messages with MQTT clients or writing to relational databases in real-time via rule engines are obviously unsatisfactory. At present, there are two mainstream architectures: one is message access product/service plus message queue (Kafka, Pulsar, RabbitMQ, RocketMQ, etc.), and the other is message access product/service plus time sequence database (InfluxDB, TDengine, Lindorm, etc.).
+For million-level message throughput scenarios, traditional architectures based on [shared subscription](https://www.emqx.com/en/blog/introduction-to-mqtt5-protocol-shared-subscription) messages with MQTT clients or writing to relational databases in real-time via rule engines are obviously unsatisfactory. At present, there are two mainstream architectures: one is message access product/service plus message queue (Kafka, Pulsar, RabbitMQ, RocketMQ, etc.), and the other is message access product/service plus time sequence database (InfluxDB, TDengine, Lindorm, etc.).
 
 We will present the implementation of each of these two architectures, using the cloud-native distributed IoT message broker [EMQX](https://www.emqx.com/en/products/emqx) as the messaging access layer, based on the above correlation factors and best practices from customer cases.
 

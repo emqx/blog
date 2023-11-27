@@ -113,9 +113,9 @@ Launch MQTTX, and add a new connection to the EMQX broker set up earlier, then a
 
 In this blog, we introduced the KNX protocol and demonstrated the overall process of bridging KNX data to MQTT using Neuron.
 
-KNX provides a robust and flexible platform for home and building automation. Neuron, with its powerful connectivity for Industrial IoT, facilitates the data collection from KNX devices and seamless transmission of the acquired data to the cloud for convenient remote control and monitoring whenever necessary. 
+KNX provides a robust and flexible platform for home and building automation. Neuron, with its powerful connectivity for [Industrial IoT](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges), facilitates the data collection from KNX devices and seamless transmission of the acquired data to the cloud for convenient remote control and monitoring whenever necessary. 
 
-Neuron also supports other industrial protocols like [Modbus](https://www.emqx.com/en/blog/modbus-protocol-the-grandfather-of-iot-communication), OPC UA, SIEMENS, and more. For more bridging tutorials, read our post: 
+Neuron also supports other industrial protocols like [Modbus](https://www.emqx.com/en/blog/modbus-protocol-the-grandfather-of-iot-communication), [OPC UA](https://www.emqx.com/en/blog/opc-ua-protocol), SIEMENS, and more. For more bridging tutorials, read our post: 
 
 - [Bridging Modbus Data to MQTT for IIoT:  A Step-by-Step Tutorial](https://www.emqx.com/en/blog/bridging-modbus-data-to-mqtt-for-iiot#the-architecture-of-modbus-to-mqtt-bridging) 
 - [Bridging OPC UA Data to MQTT for IIoT: A Step-by-Step Tutorial](https://www.emqx.com/en/blog/bridging-opc-ua-data-to-mqtt-for-iiot) 

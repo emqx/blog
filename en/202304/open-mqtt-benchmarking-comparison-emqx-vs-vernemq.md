@@ -26,7 +26,7 @@ All the tests are executed on a single node.
   - QoS 1, payload 16B
 - **Fan-in:** sharedsub-1K-5-1K-1K
   - 1k publishers, 1k pub topics
-  - 5 subscribers consume all messages in a shared subscription way
+  - 5 subscribers consume all messages in a [shared subscription](https://www.emqx.com/en/blog/introduction-to-mqtt5-protocol-shared-subscription) way
   - Publish rate: 1k/s (each publisher pubs a message per second)
   - Shared subscription’s topic: $share/perf/test/#
   - Publish topics: test/$clientid

@@ -4,7 +4,7 @@
 
 [lwIP](https://savannah.nongnu.org/projects/lwip/), a small independent TCP/IP protocol stack, also holds a place in the IoT domain for it can reduce resource usage, particularly memory, while still having a full-scale TCP. This makes it ideal for small embedded systems.
 
-So, what kind of chemistry can we expect when we combine these two widely used IoT protocols, MQTT over lwIP? In this blog, we will implement a simple [MQTT client](https://www.emqx.com/en/blog/mqtt-client-tools) using lwIP's MQTT library, providing a reference for those who want to develop MQTT services and applications based on lwIP.
+So, what kind of chemistry can we expect when we combine these two widely used [IoT protocols](https://www.emqx.com/en/blog/iot-protocols-mqtt-coap-lwm2m), MQTT over lwIP? In this blog, we will implement a simple [MQTT client](https://www.emqx.com/en/blog/mqtt-client-tools) using lwIP's MQTT library, providing a reference for those who want to develop MQTT services and applications based on lwIP.
 
 ## Introduction to lwIP
 

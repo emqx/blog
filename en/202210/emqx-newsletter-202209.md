@@ -6,7 +6,7 @@ In terms of cloud services, EMQX Cloud has added a professional deployment versi
 
 ### EMQX 5.0 is being optimized continuously
 
-In the two versions released this month, we have improved the distribution method of shared subscription messages between nodes, changing from RPC using Erlang distribution to independent RPC implementation, which will effectively reduce the execution pressure of Mnesia cluster transactions when the shared subscription load is high. We have added support for batch operations for sending traffic from ExProto to gRPC Server, which has improved throughput performance to a certain extent. In addition, we have improved the experience of using TLS by simplifying the configuration of TLS cipher suite and unifying the configuration method of TLS on the Dashboard.
+In the two versions released this month, we have improved the distribution method of [shared subscription](https://www.emqx.com/en/blog/introduction-to-mqtt5-protocol-shared-subscription) messages between nodes, changing from RPC using Erlang distribution to independent RPC implementation, which will effectively reduce the execution pressure of Mnesia cluster transactions when the shared subscription load is high. We have added support for batch operations for sending traffic from ExProto to gRPC Server, which has improved throughput performance to a certain extent. In addition, we have improved the experience of using TLS by simplifying the configuration of TLS cipher suite and unifying the configuration method of TLS on the Dashboard.
 
 For more descriptions of function changes and problem fixes, see: [https://github.com/emqx/emqx/releases](https://github.com/emqx/emqx/releases) .
 

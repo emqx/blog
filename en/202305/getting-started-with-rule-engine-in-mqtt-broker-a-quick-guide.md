@@ -13,7 +13,7 @@ Rule Engine for MQTT is a software component that allows users to define and exe
 The rule engine has a wide range of applications in [MQTT brokers](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) and can be used to automate tasks, monitor systems, and improve overall efficiency and safety. Let’s take some examples:
 
 - In smart home automation, the rule engine can be used to automate tasks such as turning on lights when someone enters a room or adjusting the thermostat based on the time of day. This can improve energy efficiency and make daily life more convenient for homeowners.
-- In industrial IoT applications, it can be used to monitor and control complex systems, such as manufacturing processes or power grids. The rule engine can help prevent equipment failures and improve overall system performance by setting up rules to detect and respond to anomalies.
+- In [industrial IoT](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges) applications, it can be used to monitor and control complex systems, such as manufacturing processes or power grids. The rule engine can help prevent equipment failures and improve overall system performance by setting up rules to detect and respond to anomalies.
 - In the healthcare industry, it can be used to monitor patient health and alert medical professionals to potential issues. 
 
 ## EMQX’s Built-in, Out-of-Box Rule Engine

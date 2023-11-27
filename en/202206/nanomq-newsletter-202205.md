@@ -117,7 +117,7 @@ NanoMQ 0.8.0 provides the following updates and optimization as well:
 3. Files have been added for the ZeroMQ proxy message gateway.
 4. The lock contention problem caused by the frequent closing of bridge connection by the broker has been fixed.
 5. The problem of data competition caused by sudden port of Sub client-side when a large quantity of messages are published by the client, resulting in backlog, has been solved.
-6. UTF-8 check is no longer required by default on the content of the last will message unless the client requests YES.
+6. UTF-8 check is no longer required by default on the content of the last [will message](https://www.emqx.com/en/blog/use-of-mqtt-will-message) unless the client requests YES.
 7. A failure that may cause a crash if the message property is empty when using Retain As Published messages have been fixed.
 
 ## Coming Soon

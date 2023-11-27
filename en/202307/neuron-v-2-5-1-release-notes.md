@@ -1,4 +1,4 @@
-The industrial IoT connectivity server, Neuron 2.5.1, has been officially released!
+The [industrial IoT](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges) connectivity server, Neuron 2.5.1, has been officially released!
 
 The latest version brings several new features, including device-based templates for southbound integration, UDP transport support for [Modbus](https://www.emqx.com/en/blog/modbus-protocol-the-grandfather-of-iot-communication), read retry support for Modbus, and high availability Master-Slave mode for IEC104. Furthermore, five new southbound drivers have been introduced: Profinet IO, Mitsubishi FX, Omron FINS UDP, Panasonic Mewtocol, and DLT645-1997.
 

@@ -26,7 +26,7 @@ All the tests are executed on a single node.
   - QoS 1, payload 16B
 - **Fan-in:** sharedsub-1K-5-1K-1K
   - 1k publishers, 1k pub topics
-  - 5 subscribers consume all messages in a shared subscription way
+  - 5 subscribers consume all messages in a [shared subscription](https://www.emqx.com/en/blog/introduction-to-mqtt5-protocol-shared-subscription) way
   - Publish rate: 1k/s (each publisher pubs a message per second)
   - Shared subscription’s topic: $share/perf/test/#
   - Publish topics: test/$clientid
@@ -252,7 +252,7 @@ XMeter provides a private deployment version (on-premise) and a public cloud Saa
 
 ## Conclusion
 
-The benchmarking results above show that on a single node with the same configuration, EMQX has a smaller latency while NanoMQ uses less Memory and CPU . As mentioned in the  [blog post](https://www.emqx.com/en/blog/emqx-vs-nanomq-2023-mqtt-broker-comparison), due to the high scalability, reliability and rich features, EMQX is more suitable for deployment in the cloud, providing mission-critical MQTT services for large-scale applications in IoT.  NanoMQ,  with the nature of lightweight and efficient, is perfect for industrial IoT and IoT applications at the edge.
+The benchmarking results above show that on a single node with the same configuration, EMQX has a smaller latency while NanoMQ uses less Memory and CPU . As mentioned in the  [blog post](https://www.emqx.com/en/blog/emqx-vs-nanomq-2023-mqtt-broker-comparison), due to the high scalability, reliability and rich features, EMQX is more suitable for deployment in the cloud, providing mission-critical MQTT services for large-scale applications in IoT.  NanoMQ,  with the nature of lightweight and efficient, is perfect for [industrial IoT](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges) and IoT applications at the edge.
 
 
 

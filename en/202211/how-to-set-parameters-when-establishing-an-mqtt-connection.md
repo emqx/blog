@@ -91,7 +91,7 @@ Check out [the blog](https://www.emqx.com/en/blog/mqtt-session) for more details
 
 ### Last Will
 
-When an MQTT client that has set a Will Message goes offline abnormally, the MQTT broker publishes the Will Message set by that client.
+When an MQTT client that has set a [Will Message](https://www.emqx.com/en/blog/use-of-mqtt-will-message) goes offline abnormally, the MQTT broker publishes the Will Message set by that client.
 
 > **Unexpected offline includes**: the connection is closed by the server due to network failure; the device is suddenly powered off; the device attempts to perform an unallowable operation and the connection is closed by the server, etc.
 

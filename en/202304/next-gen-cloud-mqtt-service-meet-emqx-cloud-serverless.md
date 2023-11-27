@@ -10,7 +10,7 @@ Serverless architecture is a cloud computing model that allows developers to foc
 
 The advantages of serverless MQTT are numerous. Serverless MQTT services can automatically scale with the number of connected devices, reducing the need for manual intervention and configuration. Additionally, the pay-as-you-go pricing model enables cost savings, as you only pay for the resources you use.
 
-Real-life applications of serverless MQTT include smart home applications, industrial IoT systems, and smart car solutions. These use cases highlight the versatility and efficiency of serverless MQTT in handling diverse workloads and managing large volumes of data.
+Real-life applications of serverless MQTT include smart home applications, [industrial IoT](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges) systems, and smart car solutions. These use cases highlight the versatility and efficiency of serverless MQTT in handling diverse workloads and managing large volumes of data.
 
 ## EMQX Cloud Serverless: Essential Features
 

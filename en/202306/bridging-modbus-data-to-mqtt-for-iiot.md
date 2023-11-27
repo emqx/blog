@@ -69,7 +69,7 @@ The Modbus to MQTT bridging architecture consists of two main components: the Mo
 
 In this article, we use [Neuron](https://neugates.io/) and [EMQX](https://www.emqx.io/) to implement the bridging process.
 
-[Neuron](https://neugates.io/) is a modern industrial IoT connectivity server that can connect various industrial devices using standard or proprietary protocols, achieving interconnectivity between industrial IoT platforms and devices. As a lightweight industrial software, Neuron can run on various IoT edge hardware devices with limited resources. It aims to solve the problem of difficult unified access to automation equipment data centered around data and provide basic support for intelligent manufacturing.
+[Neuron](https://neugates.io/) is a modern [industrial IoT](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges) connectivity server that can connect various industrial devices using standard or proprietary protocols, achieving interconnectivity between industrial IoT platforms and devices. As a lightweight industrial software, Neuron can run on various IoT edge hardware devices with limited resources. It aims to solve the problem of difficult unified access to automation equipment data centered around data and provide basic support for intelligent manufacturing.
 
 [EMQX](https://www.emqx.io/) is the world’s leading open-source distributed IoT MQTT broker with high performance and scalability. EMQX provides efficient and reliable connections for massive IoT devices, enabling high-performance real-time movement and processing of the message and event flow data, helping users quickly build IoT platforms and applications for critical business.
 

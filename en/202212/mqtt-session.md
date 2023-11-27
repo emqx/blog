@@ -23,7 +23,7 @@ Session data stored in the server:
 - Whether the session exists, even if the rest of the session status is empty.
 - QoS 1 and QoS 2 messages that have been sent to the client but have not yet completed acknowledgment.
 - QoS 0 messages (optional), QoS 1 and QoS 2 messages that are waiting to be transmitted to the client.
-- QoS 2 messages that are received from the client but have not yet completed acknowledgment, Will Messages, and Will Delay Intervals.
+- QoS 2 messages that are received from the client but have not yet completed acknowledgment, [Will Messages](https://www.emqx.com/en/blog/use-of-mqtt-will-message), and Will Delay Intervals.
 
 ## Using MQTT Clean Session
 

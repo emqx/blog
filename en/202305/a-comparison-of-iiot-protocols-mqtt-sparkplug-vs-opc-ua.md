@@ -1,6 +1,6 @@
 ## Introduction
 
-Industrial systems rely heavily on efficient and secure communication protocols to exchange data seamlessly. Two prominent contenders in this space are [MQTT Sparkplug](https://www.emqx.com/en/blog/mqtt-sparkplug-bridging-it-and-ot-in-industry-4-0) and OPC UA. In this blog, we will comprehensively compare MQTT Sparkplug and OPC UA, and their successors, offering a clearer understanding of which protocol aligns best with your specific requirements.
+Industrial systems rely heavily on efficient and secure communication protocols to exchange data seamlessly. Two prominent contenders in this space are [MQTT Sparkplug](https://www.emqx.com/en/blog/mqtt-sparkplug-bridging-it-and-ot-in-industry-4-0) and [OPC UA](https://www.emqx.com/en/blog/opc-ua-protocol). In this blog, we will comprehensively compare MQTT Sparkplug and OPC UA, and their successors, offering a clearer understanding of which protocol aligns best with your specific requirements.
 
 ## OPC Classic and OPC UA
 
@@ -78,7 +78,7 @@ MQTT and OPC UA are the two main popular protocols used in industrial automation
 
 ## Comparing MQTT Sparkplug and OPC UA
 
-Both MQTT Sparkplug and OPC UA are popular protocols for Industrial IoT, and they have different strengths and weaknesses that may make one more suitable than the other depending on the specific use case. Here are some key differences between the two protocols and their variants:
+Both MQTT Sparkplug and OPC UA are popular protocols for [Industrial IoT](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges), and they have different strengths and weaknesses that may make one more suitable than the other depending on the specific use case. Here are some key differences between the two protocols and their variants:
 
 | **Criteria**            | **MQTT**                                                     | **MQTT Sparkplug**                                           | **OPC UA**                                                   | **OPC UA over MQTT**                                         |
 | ----------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |

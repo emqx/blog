@@ -8,7 +8,7 @@ To enable users to verify their [IIoT](https://www.emqx.com/en/blog/iiot-explain
 
 Neuron is an open-source project that embraces collaboration and community contribution. The core framework, dashboard, and a selection of driver modules, including widely-used Modbus-TCP and MQTT, are available as open source under the LGPLv3 license. 
 
-For those who demand more dedicated protocol connectivity, Neuron provides a range of commercial drivers catering to various industrial and common PLC protocols. These drivers include BACnet, KNXnet/IP, IEC-104, IEC-61850, Mitsubishi 1E and 3E, Siemens S7 and Fetch-write, Omron Fins TCP, Beckhoff ADS, and more. With these drivers, Neuron ensures seamless integration of various industrial devices and facilitates data communication and management. 
+For those who demand more dedicated protocol connectivity, Neuron provides a range of commercial drivers catering to various industrial and common PLC protocols. These drivers include [BACnet](https://www.emqx.com/en/blog/bacnet-protocol-basic-concepts-structure-obejct-model-explained), KNXnet/IP, IEC-104, IEC-61850, Mitsubishi 1E and 3E, Siemens S7 and Fetch-write, Omron Fins TCP, Beckhoff ADS, and more. With these drivers, Neuron ensures seamless integration of various industrial devices and facilitates data communication and management. 
 
 ## Try Any Drivers For As Long As You Want
 

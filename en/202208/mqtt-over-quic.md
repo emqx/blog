@@ -50,7 +50,7 @@ QUIC has many advantages over existing TLS over TCP implementation:
 
 ## Prospects for QUIC in MQTT communication scenarios
 
-MQTT is a connection-based IoT communication protocol with a compact message structure that enables stable transmission over severely constrained hardware devices and low-bandwidth, high-latency networks. The keep alive mechanism, will message, QoS, and many other features can cope with various IoT scenarios.
+MQTT is a connection-based IoT communication protocol with a compact message structure that enables stable transmission over severely constrained hardware devices and low-bandwidth, high-latency networks. The keep alive mechanism, [will message](https://www.emqx.com/en/blog/use-of-mqtt-will-message), QoS, and many other features can cope with various IoT scenarios.
 
 Nevertheless, the MQTT protocol has inherent drawbacks in certain complex network environments due to underlying TCP transport protocol limitations.
 

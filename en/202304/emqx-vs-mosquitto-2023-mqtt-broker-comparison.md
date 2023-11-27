@@ -99,7 +99,7 @@ See: [EMQX vs Mosquitto Performance Benchmark Report](https://www.emqx.com/en/bl
 
 ## MQTT and Connectivity
 
-Mosiquitto implements the MQTT protocol versions 3.1/3.1.1/5.0, supporting the protocol specification for will messages, retained messages, shared subscriptions, and other capabilities and supporting MQTT over WebSocket.
+Mosiquitto implements the MQTT protocol versions 3.1/3.1.1/5.0, supporting the protocol specification for [will messages](https://www.emqx.com/en/blog/use-of-mqtt-will-message), retained messages, [shared subscriptions](https://www.emqx.com/en/blog/introduction-to-mqtt5-protocol-shared-subscription), and other capabilities and supporting MQTT over WebSocket.
 
 EMQX fully supports MQTT 3.1/3.1.1/5.0 and [MQTT over Websocket](https://www.emqx.com/en/blog/connect-to-mqtt-broker-with-websocket) protocols. EMQX 5.0 also introduces groundbreaking support for [MQTT Over QUIC](https://www.emqx.com/en/blog/mqtt-over-quic). With multiplexing and faster connection establishment and migration, it has the potential to become the next generation of the MQTT standard.
 

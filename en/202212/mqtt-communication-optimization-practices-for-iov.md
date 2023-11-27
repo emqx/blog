@@ -117,7 +117,7 @@ this.client.connect();
 
 Based on this frequent disconnection and reconnection of network connections, MQTT 5.0 also optimized the protocol response in order to avoid the application layer receiving frequent online and offline events that affect business.
 
-Will Delay Interval: We often use will messages to track and inform clients about their offline. Will messages will be received frequently in this case. So, an important use of the Will Delay Interval is to avoid posting will messages when frequent network connections are temporarily disconnected, since the clients will often quickly reconnect to the network and continue the previous session.
+Will Delay Interval: We often use [will messages](https://www.emqx.com/en/blog/use-of-mqtt-will-message) to track and inform clients about their offline. Will messages will be received frequently in this case. So, an important use of the Will Delay Interval is to avoid posting will messages when frequent network connections are temporarily disconnected, since the clients will often quickly reconnect to the network and continue the previous session.
 
 Session Expiry Interval: MQTT 3.1.1 does not explicitly specify session hold time. If a large number of clients using the session hold feature frequently go online and offline, it can cause an increase in Broker memory usage and eventually affect the high availability of the service. So, MQTT 5.0 also designed session expiration time for this case. Clients can use this feature to set their own session hold time when connecting.
 

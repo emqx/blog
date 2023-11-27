@@ -32,7 +32,7 @@ The architecture boasts remarkable scalability and flexibility. It can seamlessl
 
 ### Heterogeneous Data Acquisition
 
-In the industrial domain, a multitude of devices operate using various industrial protocols. Neuron industrial protocol gateway software offers support for common industrial protocols such as [Modbus](https://www.emqx.com/en/blog/modbus-protocol-the-grandfather-of-iot-communication), OPC UA, IEC 61850, and IEC 104. This versatile capability allows for the collection of device data from diverse protocols, consolidating it into a unified data platform. 
+In the industrial domain, a multitude of devices operate using various industrial protocols. Neuron industrial protocol gateway software offers support for common industrial protocols such as [Modbus](https://www.emqx.com/en/blog/modbus-protocol-the-grandfather-of-iot-communication), [OPC UA](https://www.emqx.com/en/blog/opc-ua-protocol), IEC 61850, and IEC 104. This versatile capability allows for the collection of device data from diverse protocols, consolidating it into a unified data platform. 
 
 Furthermore, the solution seamlessly integrates this aggregated data into various other factory systems, encompassing traditional systems like PLC, SCADA, and DCS, as well as production management software like MES, WMS, and ERP. It extends its reach to enterprise service bus (ESB), various databases, and third-party software. Notably, it's also adept at handling unstructured data such as videos and documents, providing comprehensive data integration for enhanced operational insights.
 

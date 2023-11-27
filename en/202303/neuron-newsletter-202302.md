@@ -27,7 +27,7 @@ The currently released NeuronEX features a data stream processing UI that is com
 This month, we have addressed several issues, including:
 
 - The [Modbus](https://www.emqx.com/en/blog/modbus-protocol-the-grandfather-of-iot-communication) RTU configuration page not switching correctly according to the schema.
-- A connection exception being caused by an SSL certificate when multiple OPC UA nodes are configured.
+- A connection exception being caused by an SSL certificate when multiple [OPC UA](https://www.emqx.com/en/blog/opc-ua-protocol) nodes are configured.
 - The multi-threaded data competition problem in the ADS plugin.
 - Abnormal exits of the S7Comm plugin in some cases.
 - An exception occurred when configuring VOLUME in Docker images.

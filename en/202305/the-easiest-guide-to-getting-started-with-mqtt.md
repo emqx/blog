@@ -10,7 +10,7 @@ MQTT (Message Queuing Telemetry Transport) is a lightweight, publish-subscribe b
 
 ## Why Is MQTT the Best Protocol for IoT?
 
-MQTT has emerged as one of the best IoT protocols due to its unique features and capabilities tailored to the specific needs of IoT systems. Some of the key reasons include:
+MQTT has emerged as one of the best [IoT protocols](https://www.emqx.com/en/blog/iot-protocols-mqtt-coap-lwm2m) due to its unique features and capabilities tailored to the specific needs of IoT systems. Some of the key reasons include:
 
 - **Lightweight:** IoT devices are often constrained in terms of processing power, memory, and energy consumption. MQTT's minimal overhead and small packet size make it ideal for these devices, as it consumes fewer resources, enabling efficient communication even with limited capabilities.
 - **Reliable:** IoT networks can experience high latency or unstable connections. MQTT's support for different QoS levels, session awareness, and persistent connections ensures reliable message delivery even in challenging conditions, making it well-suited for IoT applications.
@@ -254,7 +254,7 @@ For more details on Clean Session, please check the blog [MQTT Persistent Sessio
 
 #### Last Will
 
-When the MQTT client makes a CONNECT request to the server, it can set whether to send the flag of Will Message, as well as the Topic and [Payload](https://www.emqx.com/en/blog/mqtt5-new-features-payload-format-indicator-and-content-type).
+When the MQTT client makes a CONNECT request to the server, it can set whether to send the flag of [Will Message](https://www.emqx.com/en/blog/use-of-mqtt-will-message), as well as the Topic and [Payload](https://www.emqx.com/en/blog/mqtt5-new-features-payload-format-indicator-and-content-type).
 
 When the MQTT client is abnormally offline (the DISCONNECT message is not sent to the server before the client disconnects), the MQTT server will publish a will message.
 

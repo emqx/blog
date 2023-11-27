@@ -84,7 +84,7 @@ MQTT Sparkplug 3.0 is the latest version of the [MQTT Sparkplug](https://www.emq
 
 MQTT Sparkplug 3.0 was released in November 2022 with some key new features and improvements:
 
-1. MQTT 5 Support: MQTT Sparkplug 3.0 adds support for the MQTT 5 protocol, which includes several new features such as shared subscriptions, message expiry, and flow control.
+1. MQTT 5 Support: MQTT Sparkplug 3.0 adds support for the MQTT 5 protocol, which includes several new features such as [shared subscriptions](https://www.emqx.com/en/blog/introduction-to-mqtt5-protocol-shared-subscription), message expiry, and flow control.
 2. Optimized Data Transmission: MQTT Sparkplug 3.0 includes several optimizations for data transmission, including the use of more compact data encoding and compression algorithms. 
 3. Expanded Data Model: MQTT Sparkplug 3.0 introduces an expanded data model, which allows for more detailed device information to be communicated, as well as additional information such as configuration data and device metadata.
 4. Improved Security: MQTT Sparkplug 3.0 includes several improvements to security, including support for mutual TLS authentication and improved access control mechanisms.

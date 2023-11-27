@@ -48,7 +48,7 @@ Ease-of-use improvements will be the most obvious change to users of EMQX 5.0. T
 
 **More than an MQTT broker**
 
-EMQX not only fully supports MQTT 3.1, 3.1.1, and 5.0 protocols, but also [CoAP/LwM2M](https://www.emqx.com/en/blog/iot-protocols-mqtt-coap-lwm2m), STOMP, MQTT-SN, and other mainstream IoT protocols. Version 5.0 uses a new gateway architecture to provide independent management interfaces and security authentication capabilities for protocols with different client attributes and life cycles. This improvement enables users to manage multi-protocol IoT networks more easily through a single, native interface.
+EMQX not only fully supports MQTT 3.1, 3.1.1, and 5.0 protocols, but also [CoAP/LwM2M](https://www.emqx.com/en/blog/iot-protocols-mqtt-coap-lwm2m), STOMP, MQTT-SN, and other mainstream [IoT protocols](https://www.emqx.com/en/blog/iot-protocols-mqtt-coap-lwm2m). Version 5.0 uses a new gateway architecture to provide independent management interfaces and security authentication capabilities for protocols with different client attributes and life cycles. This improvement enables users to manage multi-protocol IoT networks more easily through a single, native interface.
 
 In addition, version 5.0 allows developers to manage extension plug-ins more easily—compile, distribute, and install them as standalone plugin packages, which can be uploaded via the Dashboard, without needing to reboot the EMQX cluster. The redesigned ExHook also provides a more flexible way for users to extend and customize EMQX in other languages.
 

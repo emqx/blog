@@ -367,7 +367,7 @@ In the second terminal window, the requester receives the response message:
 
 ## Feature 7：Shared Subscriptions
 
-MQTT 5.0 adds support for shared subscriptions, enabling subscribers to consume messages in a load-balanced manner.
+MQTT 5.0 adds support for [shared subscriptions](https://www.emqx.com/en/blog/introduction-to-mqtt5-protocol-shared-subscription), enabling subscribers to consume messages in a load-balanced manner.
 
 It allows us to divide subscribing clients into multiple subscribing groups, and messages will still be forwarded to all subscribing groups, but clients in a subscribing group will alternately receive messages with strategies such as random and round-robin. These policies are completely implemented by the server, and the client does not need to make any modifications. The only thing that needs to be done is to initiate a shared subscription through $share/{ShareGroup}/{Topic}.
 
@@ -820,7 +820,7 @@ mqttx pub --topic t14 --message '' --retain
 
 ## Feature 15: Will Delay
 
-In MQTT 5.0, the client can set a delay interval for the will message instead of letting it be published immediately when the network connection is closed. If the client connection can be restored in time before the Will Delay Interval expires, the will message will not be published. This effectively prevents will messages from being published just because of a brief interruption of the client's connection.
+In MQTT 5.0, the client can set a delay interval for the [will message](https://www.emqx.com/en/blog/use-of-mqtt-will-message) instead of letting it be published immediately when the network connection is closed. If the client connection can be restored in time before the Will Delay Interval expires, the will message will not be published. This effectively prevents will messages from being published just because of a brief interruption of the client's connection.
 
 If the Will Delay Interval is greater than the Session Expiry Interval, then the will message will be sent immediately when the session expires, so we can also use the will message for session expiration notification.
 

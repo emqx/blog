@@ -14,7 +14,7 @@ In the latest version, Neuron provided a 30-tag trial license that allows users 
 
 ## BACnet/IP Driver Enhancement
 
-BACnet is a communication protocol widely used in the field of building automation and control:
+[BACnet](https://www.emqx.com/en/blog/bacnet-protocol-basic-concepts-structure-obejct-model-explained) is a communication protocol widely used in the field of building automation and control:
 
 - In HVAC (Heating, Ventilation, Air-conditioning and Cooling) system: Detect and control devices such as air handlers, fans, chillers, humidifiers, and exhaust fans. 
 - In lighting systems: Control the lighting system in the building, such as light switches, dimmers, and timers. 

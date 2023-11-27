@@ -59,7 +59,7 @@ MQTT plays a crucial role in time-series data, and is especially designed for Io
 
 ## Use Cases of MQTT in Industrial IoT Data Collection and Storage
 
-Many use cases demonstrate the versatility and power of integrating MQTT with TSDB for Industrial IoT applications:
+Many use cases demonstrate the versatility and power of integrating MQTT with TSDB for [Industrial IoT](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges) applications:
 
 - **Industrial production monitoring:** Collecting and storing real-time sensor data from manufacturing equipment, machinery, and processes to monitor performance, detect anomalies, and optimize operations
 - **Energy management:** Integrating MQTT with TSDB to track and analyze energy consumption patterns in industrial facilities, enabling better energy management strategies and identifying opportunities for energy savings.
