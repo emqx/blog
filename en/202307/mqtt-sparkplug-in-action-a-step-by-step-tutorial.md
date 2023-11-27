@@ -6,7 +6,7 @@ This blog will give a practical example of implementing an [MQTT Sparkplug](http
 
 ## Essential Components: EMQX and Neuron
 
-[EMQX](https://www.emqx.io/) is a popular [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) that supports the Sparkplug protocol, while Neuron is an industrial IoT platform that can be used to collect data from industrial devices and generate Sparkplug messages for applications.
+[EMQX](https://www.emqx.io/) is a popular [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) that supports the Sparkplug protocol, while Neuron is an [industrial IoT platform](https://www.emqx.com/en/blog/iiot-platform-key-components-and-5-notable-solutions) that can be used to collect data from industrial devices and generate Sparkplug messages for applications.
 
 [Neuron](https://neugates.io/) can collect the data from the devices and publish Sparkplug messages to the EMQX broker based on the data by reporting changes. EMQX will forward the messages to the application that subscribes to the relevant Sparkplug topic. However, EMQX is able to decode the Sparkplug messages through the rules engine. The messages are then used for data platforms, persistent storage for historical, and so on.
 

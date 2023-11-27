@@ -6,7 +6,7 @@ This blog will provide a comprehensive guide on bridging TwinCAT data to MQTT. W
 
 ### Neuron for Converting TwinCAT into MQTT
 
-[Neuron](https://neugates.io/) is an industry IoT gateway software that enables industrial devices with essential IoT connectivity capabilities. With minimal resource utilization, Neuron can communicate with diverse industrial devices through standard or dedicated protocols, realizing the multiple device connections to the [Industrial IoT](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges) platform.
+[Neuron](https://neugates.io/) is an industry IoT gateway software that enables industrial devices with essential IoT connectivity capabilities. With minimal resource utilization, Neuron can communicate with diverse industrial devices through standard or dedicated protocols, realizing the multiple device connections to the [Industrial IoT platform](https://www.emqx.com/en/blog/iiot-platform-key-components-and-5-notable-solutions).
 
 From the very beginning, Neuron has supported MQTT as one of its communication protocols. The Neuron [MQTT plugin](https://neugates.io/docs/en/latest/configuration/north-apps/mqtt/overview.html) allows users to quickly build IoT applications that use MQTT communication between devices and the cloud. 
 

@@ -35,7 +35,7 @@ The user interface has also been updated, with the node and tag list now support
 
 ## Conclusion
 
-Neuron 2.4.0 release represents a major step forward for industrial IoT connectivity. With its new features and updates, Neuron continues to provide users with a powerful and flexible tool for managing their industrial IoT environment while ensuring they can stay on top of any issues. Whether managing a small industrial network or a large-scale operation, Neuron 2.4.0 is a must-have tool to take your industrial IoT platform to the next level.
+Neuron 2.4.0 release represents a major step forward for industrial IoT connectivity. With its new features and updates, Neuron continues to provide users with a powerful and flexible tool for managing their industrial IoT environment while ensuring they can stay on top of any issues. Whether managing a small industrial network or a large-scale operation, Neuron 2.4.0 is a must-have tool to take your [industrial IoT platform](https://www.emqx.com/en/blog/iiot-platform-key-components-and-5-notable-solutions) to the next level.
 
 
 <section class="promotion">
