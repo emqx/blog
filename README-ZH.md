@@ -336,6 +336,7 @@ The easiest way to start MQTT service. Connect your IoT devices to any cloud wit
 ## [EMQX Enterprise](https://www.emqx.com/zh/blog/category/enterprise)
 The world's most scalable and reliable MQTT messaging platform to connect, move and process your data in business-critical scenarios for the IoT era.
 
+- [工业智能：英特尔与 EMQ 推出联合工业解决方案](https://www.emqx.com/zh/blog/intel-and-emq-launch-joint-industrial-solution) ([Edit](https://github.com/emqx/blog/blob/main/zh/202311/intel-and-emq-launch-joint-industrial-solution.md))
 - [风电场远程监控与运维：EMQ 新能源风场互联解决方案](https://www.emqx.com/zh/blog/iot-solution-for-wind-farm-remote-monitoring-and-maintenance) ([Edit](https://github.com/emqx/blog/blob/main/zh/202311/iot-solution-for-wind-farm-remote-monitoring-and-maintenance.md))
 - [利用 EMQX 和 NGINX Plus 的客户端证书认证功能提升 MQTT 安全性](https://www.emqx.com/zh/blog/elevating-mqtt-security-with-client-certificate-authentication) ([Edit](https://github.com/emqx/blog/blob/main/zh/202311/elevating-mqtt-security-with-client-certificate-authentication.md))
 - [MQTT + InfluxDB：构建面向储能领域的物联网时序数据应用](https://www.emqx.com/zh/blog/building-an-iot-time-series-data-application-with-mqtt-and-influxdb) ([Edit](https://github.com/emqx/blog/blob/main/zh/202311/building-an-iot-time-series-data-application-with-mqtt-and-influxdb.md))
@@ -500,6 +501,7 @@ MQTTX is a Fully Open-source MQTT 5.0 cross-platform Desktop Client, makes it ea
 ## [Neuron - IIoT Connectivity Server](https://www.emqx.com/zh/blog/category/neuron)
 IoT edge industrial protocol gateway software, which supports one-stop access to dozens of industrial protocols and converts them into MQTT protocol to access the cloud industrial IoT platform. It just requires ultra-low resource consumption, and supports three major architectures of X86, ARM, and MIPS.
 
+- [工业智能：英特尔与 EMQ 推出联合工业解决方案](https://www.emqx.com/zh/blog/intel-and-emq-launch-joint-industrial-solution) ([Edit](https://github.com/emqx/blog/blob/main/zh/202311/intel-and-emq-launch-joint-industrial-solution.md))
 - [风电场远程监控与运维：EMQ 新能源风场互联解决方案](https://www.emqx.com/zh/blog/iot-solution-for-wind-farm-remote-monitoring-and-maintenance) ([Edit](https://github.com/emqx/blog/blob/main/zh/202311/iot-solution-for-wind-farm-remote-monitoring-and-maintenance.md))
 - [Neuron 2.6.0 发布：新增 SECS GEM HSMS 和 KUKA Ethernet KRL TCP 驱动以及格物平台对接](https://www.emqx.com/zh/blog/neuron-v-2-6-0-release-notes) ([Edit](https://github.com/emqx/blog/blob/main/zh/202310/neuron-v-2-6-0-release-notes.md))
 - [工业物联网数据桥接教程：FINS 桥接到 MQTT](https://www.emqx.com/zh/blog/bridging-fins-data-to-mqtt) ([Edit](https://github.com/emqx/blog/blob/main/zh/202308/bridging-fins-data-to-mqtt.md))
@@ -701,6 +703,7 @@ Guarantee the availability and reliability of the IoT platform.
 
 ## [应用案例](https://www.emqx.com/zh/blog/category/use-cases)
 
+- [工业智能：英特尔与 EMQ 推出联合工业解决方案](https://www.emqx.com/zh/blog/intel-and-emq-launch-joint-industrial-solution) ([Edit](https://github.com/emqx/blog/blob/main/zh/202311/intel-and-emq-launch-joint-industrial-solution.md))
 - [风电场远程监控与运维：EMQ 新能源风场互联解决方案](https://www.emqx.com/zh/blog/iot-solution-for-wind-farm-remote-monitoring-and-maintenance) ([Edit](https://github.com/emqx/blog/blob/main/zh/202311/iot-solution-for-wind-farm-remote-monitoring-and-maintenance.md))
 - [EMQX 在自助洗车项目中实践应用](https://www.emqx.com/zh/blog/application-of-emqx-in-the-self-service-car-wash-project) ([Edit](https://github.com/emqx/blog/blob/main/zh/202311/application-of-emqx-in-the-self-service-car-wash-project.md))
 - [车路协同：连接智慧的车与路，赋能智慧交通](https://www.emqx.com/zh/blog/enhancing-v2x-connectivity-with-emq) ([Edit](https://github.com/emqx/blog/blob/main/zh/202311/enhancing-v2x-connectivity-with-emq.md))
