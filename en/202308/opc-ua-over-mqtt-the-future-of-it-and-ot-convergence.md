@@ -140,7 +140,7 @@ OPC UA over MQTT offers comprehensive security mechanisms, including authenticat
 
 In conclusion, OPC UA over MQTT brings together the best of both worlds by combining the strengths of OPC UA and MQTT protocols. This integration offers efficient communication, standardized data modeling, and interoperability, making it an appealing choice for industrial and IoT applications. By leveraging MQTT's lightweight nature and publish-subscribe architecture while retaining OPC UA's robust data representation and standardized services, OPC UA over MQTT provides a positive and versatile solution for modern communication needs.
 
-[EMQX](https://www.emqx.com/en/products/emqx) MQTT broker and [Neuron](https://www.emqx.com/en/products/neuron) gateway can perfectly enable OPC UA over MQTT. EMQX's proven track record as an MQTT broker ensures reliable message delivery and efficient data distribution, while Neuron's specialization in bridging OPC UA to MQTT allows you to leverage the strengths of both protocols.
+[EMQX](https://www.emqx.com/en/products/emqx) MQTT broker and [Neuron](https://www.emqx.com/en/products/neuronex) gateway can perfectly enable OPC UA over MQTT. EMQX's proven track record as an MQTT broker ensures reliable message delivery and efficient data distribution, while Neuron's specialization in bridging OPC UA to MQTT allows you to leverage the strengths of both protocols.
 
 
 

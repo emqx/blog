@@ -121,7 +121,7 @@ OPC UA over MQTT 提供了全面的安全机制，涵盖认证、授权、加密
 
 总之，OPC UA over MQTT 协议将 OPC UA 和 MQTT 协议的优势融合在一起，实现了高效的通信、标准化的数据建模和互操作性，是工业和物联网应用的理想选择。通过利用 MQTT 的轻量级特性和发布-订阅架构，同时保留 OPC UA 强大的数据表示和标准化服务，OPC UA over MQTT 协议为现代通信需求提供了一个灵活和多功能的解决方案。
 
-[EMQX](https://www.emqx.com/zh/products/emqx) MQTT Broker 和 [Neuron](https://www.emqx.com/zh/products/neuron) 网关可以完美地支持 OPC UA over MQTT 协议。EMQX 作为一个 MQTT Broker，在消息传输方面表现出色，并具备高效的数据分发能力。而 Neuron 专注于将 OPC UA 与 MQTT 桥接，让您能够充分利用这两种协议的优势。
+[EMQX](https://www.emqx.com/zh/products/emqx) MQTT Broker 和 [Neuron](https://www.emqx.com/zh/products/neuronex) 网关可以完美地支持 OPC UA over MQTT 协议。EMQX 作为一个 MQTT Broker，在消息传输方面表现出色，并具备高效的数据分发能力。而 Neuron 专注于将 OPC UA 与 MQTT 桥接，让您能够充分利用这两种协议的优势。
 
 
 

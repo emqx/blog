@@ -120,7 +120,7 @@
 
 ## 通过 EMQX 实现智能制造工业互联网互联
 
-EMQ 提供的工业协议网关软件 [Neuron](https://www.emqx.com/zh/products/neuron) 专为工业数据运营和数据驱动的自动化而设计，能够与业界领先的 [EMQX MQTT Broker](https://www.emqx.io/zh) 紧密集成。Neuron 为智能制造带来了多方面的优势，它可以简化连接，加强数据集成，并支持实时通信和分析。
+EMQ 提供的工业协议网关软件 [Neuron](https://www.emqx.com/zh/products/neuronex) 专为工业数据运营和数据驱动的自动化而设计，能够与业界领先的 [EMQX MQTT Broker](https://www.emqx.io/zh) 紧密集成。Neuron 为智能制造带来了多方面的优势，它可以简化连接，加强数据集成，并支持实时通信和分析。
 
 如果您是智能制造商，EMQX 和 Neuron 可以在以下方面提供帮助：
 

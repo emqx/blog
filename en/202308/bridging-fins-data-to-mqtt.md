@@ -1,10 +1,10 @@
-In this blog, we use [Neuron](https://www.emqx.com/en/products/neuron) and [EMQX](https://www.emqx.com/en/products/emqx) from EMQ to achieve FINS to MQTT bridging. Neuron can convert the FINS protocol to MQTT, while EMQX acts as an [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison), handling massive connections and data.
+In this blog, we use [Neuron](https://www.emqx.com/en/products/neuronex) and [EMQX](https://www.emqx.com/en/products/emqx) from EMQ to achieve FINS to MQTT bridging. Neuron can convert the FINS protocol to MQTT, while EMQX acts as an [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison), handling massive connections and data.
 
 ## The Architecture of FINS to MQTT Bridging
 
 Neuron is a modern [industrial IoT](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges) connectivity server that can connect various industrial devices that use standard protocols or device-specific protocols, achieving interconnection between industrial IoT platforms and various devices. As a lightweight industrial software, Neuron can run on various IoT edge hardware devices with limited resources. It aims to solve the problem of unified access to data-centric automation devices and provide basic support for intelligent manufacturing.
 
-> Learn more about Neuron: [Neuron: Industrial IoT Connectivity Server](https://www.emqx.com/en/products/neuron)
+> Learn more about Neuron: [Neuron: Industrial IoT Connectivity Server](https://www.emqx.com/en/products/neuronex)
 
 EMQX is a large-scale and elastic cloud-native distributed IoT MQTT message server. As the most scalable MQTT message server worldwide, EMQX provides efficient and reliable mass connection of IoT devices, capable of high-performance real-time processing of message and event flow data, helping users quickly build critical IoT platforms and applications.
 

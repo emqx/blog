@@ -8,7 +8,7 @@ Decoupling in EDA refers to the separation of components or services within a sy
 
 ![Event-driven Architecture (EDA)](https://assets.emqx.com/images/eea574537bc7223b4bf815a8f0609e31.png)
 
-[EMQX](https://www.emqx.com/en/products/emqx) and [Neuron](https://www.emqx.com/en/products/neuron) offer significant advantages in EDA. They provide real-time responsiveness for quick reactions to critical events, scalable infrastructure to accommodate growing event volumes, and reliable event processing. Their flexibility allows EDA systems to adapt to changing requirements, while their efficiency reduces latency and resource usage, enhancing overall system performance.
+[EMQX](https://www.emqx.com/en/products/emqx) and [Neuron](https://www.emqx.com/en/products/neuronex) offer significant advantages in EDA. They provide real-time responsiveness for quick reactions to critical events, scalable infrastructure to accommodate growing event volumes, and reliable event processing. Their flexibility allows EDA systems to adapt to changing requirements, while their efficiency reduces latency and resource usage, enhancing overall system performance.
 
 ### The Role of EMQX in EDA
 
@@ -24,7 +24,7 @@ With EMQX, organizations can establish publish-subscribe mechanisms, where event
 
 ### The Role of Neuron in EDA
 
-[Neuron](https://www.emqx.com/en/products/neuron) supports various industrial protocols, including [MQTT Sparkplug](https://www.emqx.com/en/blog/mqtt-sparkplug-bridging-it-and-ot-in-industry-4-0), [OPC UA over MQTT](https://www.emqx.com/en/blog/opc-ua-over-mqtt-the-future-of-it-and-ot-convergence), and more. It acts as the bridge between the physical world of sensors, machines, and devices and the digital realm of event processing. Neuron not only ensures data collection but also adds value through data transformation, filtering, and aggregation, aligning the data with the specific needs of consumers.
+[Neuron](https://www.emqx.com/en/products/neuronex) supports various industrial protocols, including [MQTT Sparkplug](https://www.emqx.com/en/blog/mqtt-sparkplug-bridging-it-and-ot-in-industry-4-0), [OPC UA over MQTT](https://www.emqx.com/en/blog/opc-ua-over-mqtt-the-future-of-it-and-ot-convergence), and more. It acts as the bridge between the physical world of sensors, machines, and devices and the digital realm of event processing. Neuron not only ensures data collection but also adds value through data transformation, filtering, and aggregation, aligning the data with the specific needs of consumers.
 
 <section class="promotion">
     <div>

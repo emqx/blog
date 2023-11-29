@@ -41,7 +41,7 @@ Each row represents an object mapped to the device tag address. The object’s n
 
 # Object Data Modeling
 
-Data modeling is like creating a blueprint before building a house. It involves defining the structure and relationships within your data. A well-designed data model not only ensures data consistency but also improves data understanding and usability. In this series, we provide a step-by-step guide to organizing this data within the [Unified Namespace](https://www.emqx.com/en/blog/unified-namespace-next-generation-data-fabric-for-iiot) using [EMQX](https://www.emqx.com/en/products/emqx) and [Neuron](https://www.emqx.com/en/products/neuron) as foundational components.
+Data modeling is like creating a blueprint before building a house. It involves defining the structure and relationships within your data. A well-designed data model not only ensures data consistency but also improves data understanding and usability. In this series, we provide a step-by-step guide to organizing this data within the [Unified Namespace](https://www.emqx.com/en/blog/unified-namespace-next-generation-data-fabric-for-iiot) using [EMQX](https://www.emqx.com/en/products/emqx) and [Neuron](https://www.emqx.com/en/products/neuronex) as foundational components.
 
 <section class="promotion">
     <div>
@@ -129,7 +129,7 @@ In our example, temperature high and low limitations should be added to the cont
 
 # Conclusion
 
-In the realm of predictive analysis, encompassing Unified Namespace concepts is not a mere prerequisite. It's the key to success. Effective data collection, integration, quality assurance, governance, and accessibility, along with data modeling, normalization, and contextualization, with [Neuron](https://www.emqx.com/en/products/neuron) and [EMQX](https://www.emqx.com/en/products/emqx), are the building blocks upon which accurate predictive models are constructed. As the data-driven revolution continues to unfold, focusing on Unified Namespace concepts and object data modeling remains the compass that guides organizations toward actionable insights and sustainable growth. 
+In the realm of predictive analysis, encompassing Unified Namespace concepts is not a mere prerequisite. It's the key to success. Effective data collection, integration, quality assurance, governance, and accessibility, along with data modeling, normalization, and contextualization, with [Neuron](https://www.emqx.com/en/products/neuronex) and [EMQX](https://www.emqx.com/en/products/emqx), are the building blocks upon which accurate predictive models are constructed. As the data-driven revolution continues to unfold, focusing on Unified Namespace concepts and object data modeling remains the compass that guides organizations toward actionable insights and sustainable growth. 
 
 
 

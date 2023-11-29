@@ -36,7 +36,7 @@
 
 | 编号 | 名称                                                       | 提供商       | 开源              |
 | ---- | ---------------------------------------------------------- | ------------ | ----------------- |
-| 1    | [EMQX Neuron](https://www.emqx.com/zh/products/neuron)     | EMQ          | 否 - `1`          |
+| 1    | [EMQX Neuron](https://www.emqx.com/zh/products/neuronex)     | EMQ          | 否 - `1`          |
 | 2    | [EMQX Edge](https://www.emqx.com/zh/products/emqx)         | EMQ          | 是, Apache 2.0    |
 | 3    | [EMQX Kuiper](https://github.com/lf-edge/ekuiper)     | EMQ          | 是, Apache 2.0    |
 | 4    | [Edge manager](https://hub.docker.com/r/emqx/edge-manager) | EMQ          | 否 - `2`          |
@@ -83,7 +83,7 @@
 
 | 编号 | 名称                                                       | x86*32 | x86*64 | ARM 7 | ARM 64 | PPC64 | Mac  | Docker |
 | ---- | ---------------------------------------------------------- | ------ | ------ | ----- | ------ | ----- | ---- | ------ |
-| 1    | [EMQX Neuron](https://www.emqx.com/zh/products/neuron)     |        | ☑      | ☑     | ☑      | ☑     |      | ☑      |
+| 1    | [EMQX Neuron](https://www.emqx.com/zh/products/neuronex)     |        | ☑      | ☑     | ☑      | ☑     |      | ☑      |
 | 2    | [EMQX Edge](https://www.emqx.com/zh/products/emqx)         | ☑      | ☑      | ☑     | ☑      | ☑     | ☑    | ☑      |
 | 3    | [EMQX Kuiper](https://github.com/lf-edge/ekuiper)     | ☑      | ☑      | ☑     | ☑      | ☑     | ☑    | ☑      |
 | 4    | [Edge manager](https://hub.docker.com/r/emqx/edge-manager) | ☑      | ☑      | ☑     | ☑      | ☑     | ☑    | ☑      |

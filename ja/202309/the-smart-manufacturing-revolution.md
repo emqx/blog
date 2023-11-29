@@ -120,7 +120,7 @@ IIoT は、通信して意思決定を行うことができるインテリジェ
 
 ## EMQX を使用した IIoT のソリューション
 
-EMQは、業界トップクラスの[MQTTブローカー](https://www.emqx.io/ja)との深い統合を特徴とする、産業データオペレーションとデータ中心の自動化のための軽量なコネクティビティサーバー[Neuron](https://www.emqx.com/ja/products/neuron)を提供しています。Neuronは、スマートな製造業にいくつかの大きなメリットをもたらし、IIoTコネクティビティを簡素化し、データ統合を強化し、リアルタイム通信と分析を可能にします。 
+EMQは、業界トップクラスの[MQTTブローカー](https://www.emqx.io/ja)との深い統合を特徴とする、産業データオペレーションとデータ中心の自動化のための軽量なコネクティビティサーバー[Neuron](https://www.emqx.com/ja/products/neuronex)を提供しています。Neuronは、スマートな製造業にいくつかの大きなメリットをもたらし、IIoTコネクティビティを簡素化し、データ統合を強化し、リアルタイム通信と分析を可能にします。 
 
 賢いメーカーであれば、[EMQX](https://www.emqx.com/ja/products/emqx)と Neuron が次の点で役立ちます。
 
@@ -136,7 +136,7 @@ EMQは、業界トップクラスの[MQTTブローカー](https://www.emqx.io/ja
 
 MQTT ブローカーとしての EMQX と産業用接続ゲートウェイとしての Neuron の強みを組み合わせることで、スマート マニュファクチャリングは、合理化された接続、強化されたデータ管理、およびリアルタイムの洞察を体験できます。これらの利点は、スマート製造プロセスにおける効率の向上、ダウンタイムの削減、製品品質の向上、および全体的なコストの削減に貢献します。
 
-[**Neuron の詳細: 産業用 IoT 接続サーバー**](https://www.emqx.com/ja/products/neuron)
+[**Neuron の詳細: 産業用 IoT 接続サーバー**](https://www.emqx.com/ja/products/neuronex)
 
 <section class="promotion">
     <div>

@@ -43,7 +43,7 @@ Take the EMQ cloud-edge data collection solution as an example:
 
 ### Convert various industrial protocols to MQTT to achieve unified access
 
-On the field-station side, by using [Industrial Data Collection Gateway - Neuron](https://www.emqx.com/en/products/neuron), the on-site meter data using Modbus-RTU and Modbus-TCP protocols is converted into highly reliable and lightweight MQTT protocol, and then the real-time data is pushed to the data access platform EMQX in the plant central computer room through the private network.
+On the field-station side, by using [Industrial Data Collection Gateway - Neuron](https://www.emqx.com/en/products/neuronex), the on-site meter data using Modbus-RTU and Modbus-TCP protocols is converted into highly reliable and lightweight MQTT protocol, and then the real-time data is pushed to the data access platform EMQX in the plant central computer room through the private network.
 
 ### Filter and push the data
 

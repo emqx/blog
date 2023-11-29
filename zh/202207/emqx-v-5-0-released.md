@@ -14,7 +14,7 @@ EMQ 创始人兼 CEO 李枫表示：“EMQX 5.0 是 MQTT 领域的一个里程�
 
 EMQX 自 2013 年在 GitHub 发布开源版本以来，获得了来自 50 多个国家和地区的 20000 余家企业用户的广泛认可，累计连接物联网关键设备超过 1 亿台。
 
-作为全球下载量超 2000 万的开源云原生分布式 MQTT 消息服务器，EMQX 多年来历经 200 多个版本迭代升级，凭借着支持亿级连接和千万级消息吞吐的超高性能，为超大规模的物联网项目及应用提供高效、可靠、安全的物联网数据基础设施解决方案；同时与开源[工业协议网关软件 Neuron](https://www.emqx.com/zh/products/neuron)、[轻量级 MQTT 消息服务器 NanoMQ](https://www.emqx.com/zh/products/nanomq)、[流数据库 HStreamDB](https://hstream.io/zh) 等 EMQ 旗下产品组合探索物联网云边协同应用场景，打造云-边-端物联网海量数据的接入、存储、实时处理与分析的一站式管理。
+作为全球下载量超 2000 万的开源云原生分布式 MQTT 消息服务器，EMQX 多年来历经 200 多个版本迭代升级，凭借着支持亿级连接和千万级消息吞吐的超高性能，为超大规模的物联网项目及应用提供高效、可靠、安全的物联网数据基础设施解决方案；同时与开源[工业协议网关软件 Neuron](https://www.emqx.com/zh/products/neuronex)、[轻量级 MQTT 消息服务器 NanoMQ](https://www.emqx.com/zh/products/nanomq)、[流数据库 HStreamDB](https://hstream.io/zh) 等 EMQ 旗下产品组合探索物联网云边协同应用场景，打造云-边-端物联网海量数据的接入、存储、实时处理与分析的一站式管理。
 
 
 

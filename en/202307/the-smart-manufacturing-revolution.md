@@ -140,7 +140,7 @@ Manufacturers should also stay abreast of the latest advancements in smart manuf
 
 ## IIoT Connectivity for Smart Manufacturing with EMQX
 
-EMQ provides [Neuron](https://www.emqx.com/en/products/neuron), a lightweight connectivity server for industrial dataops and data-centric automation, tightly integrated with our industry-leading [MQTT broker](https://www.emqx.io/). Neuron provides several significant benefits for smart manufacturing, simplifying IIoT connectivity, enhancing data integration, and enabling real-time communication and analytics.
+EMQ provides [Neuron](https://www.emqx.com/en/products/neuronex), a lightweight connectivity server for industrial dataops and data-centric automation, tightly integrated with our industry-leading [MQTT broker](https://www.emqx.io/). Neuron provides several significant benefits for smart manufacturing, simplifying IIoT connectivity, enhancing data integration, and enabling real-time communication and analytics.
 
 If you are a smart manufacturer, [EMQX](https://www.emqx.com/en/products/emqx) and Neuron can help with:
 
@@ -157,7 +157,7 @@ If you are a smart manufacturer, [EMQX](https://www.emqx.com/en/products/emqx) a
 
 By combining the strengths of EMQX as an MQTT broker and Neuron as an industrial connectivity gateway, Smart Manufacturing can experience streamlined connectivity, enhanced data management, and real-time insights. These benefits contribute to increased efficiency, reduced downtime, improved product quality, and overall cost savings in smart manufacturing processes.
 
-**[Learn more about Neuron: The Industrial IoT Connectivity Server](https://www.emqx.com/en/products/neuron)**
+**[Learn more about Neuron: The Industrial IoT Connectivity Server](https://www.emqx.com/en/products/neuronex)**
 
 
 

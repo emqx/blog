@@ -32,7 +32,7 @@ EMQ 云边协同工业互联网解决方案，通过云原生技术以及云边�
 
 | **组件**         | **名称**                                   |
 | :--------------- | :----------------------------------------- |
-| 边缘数采软件     | [Neuron](https://www.emqx.com/zh/products/neuron) - 工业协议网关软件                  |
+| 边缘数采软件     | [Neuron](https://www.emqx.com/zh/products/neuronex) - 工业协议网关软件                  |
 | 边缘 Broker      | [NanoMQ](https://www.emqx.com/zh/products/nanomq) - 超轻量级边缘 MQTT 消息服务器      |
 | 边缘计算软件     | [eKuiper](https://ekuiper.org/zh) - 超轻量物联网边缘数据流式分析引擎 |
 | 边缘服务管理平台 | EMQX Antares  - 云原生边缘服务管理平台     |
@@ -41,7 +41,7 @@ EMQ 云边协同工业互联网解决方案，通过云原生技术以及云边�
 
 ### 多源数据集成
 
-[数据流式分析引擎 eKuiper](https://ekuiper.org/zh) 可以提供工业现场各类数据的灵活对接能力，实现工厂 MES、ERP、数据库以及各类第三方应用的数据拉取集成，通过流式计算能力对数据进行清洗处理，流表结合的能力实现工业现场人机料法环之间的交互与协同。[工业协议网关软件 Neuron](https://www.emqx.com/zh/products/neuron) 将工厂内 PLC、非标自动化设备、SCADA 以及各类仪器仪表通过现场总线方式进行实时数据采集。同时 Neuron 通过 MQTT 和 Restful API 等方式可以对工厂设备进行反向控制，结合控制优化算法，可以实现数据的低延迟处理分析及生产过程优化。
+[数据流式分析引擎 eKuiper](https://ekuiper.org/zh) 可以提供工业现场各类数据的灵活对接能力，实现工厂 MES、ERP、数据库以及各类第三方应用的数据拉取集成，通过流式计算能力对数据进行清洗处理，流表结合的能力实现工业现场人机料法环之间的交互与协同。[工业协议网关软件 Neuron](https://www.emqx.com/zh/products/neuronex) 将工厂内 PLC、非标自动化设备、SCADA 以及各类仪器仪表通过现场总线方式进行实时数据采集。同时 Neuron 通过 MQTT 和 Restful API 等方式可以对工厂设备进行反向控制，结合控制优化算法，可以实现数据的低延迟处理分析及生产过程优化。
 
 通过 Neuron+eKuiper 对多维度数据的高效采集，可以将工厂内机器设备的实时数据、生产经营相关业务数据、产品设计工艺数据以及工厂各类生产管理软件中数据进行汇聚分析，实现生产过程优化，降低生产损耗、提高生产产出。
 

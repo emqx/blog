@@ -352,7 +352,7 @@ client.loop_forever()
 3. Raspberry PiがMQTTブローカーにアクセスし、様々なセンサーやESPモジュールを使用することで、数多くの興味深いIoTアプリケーションを作成することができる。
 
 
-次に、MQTTガイドをチェックすることができます：EMQが提供する「[Beginner to Advanced](https://www.emqx.com/ja/mqtt-guide)」シリーズで、MQTTプロトコルの機能を学び、MQTTのより高度なアプリケーションを探求し、MQTTアプリケーションとサービス開発を始めましょう。
+次に、MQTTガイドをチェックすることができます：EMQが提供する「[Beginner to Advanced](https://www.emqx.com/en/mqtt-guide)」シリーズで、MQTTプロトコルの機能を学び、MQTTのより高度なアプリケーションを探求し、MQTTアプリケーションとサービス開発を始めましょう。
 
 ## リソース
 

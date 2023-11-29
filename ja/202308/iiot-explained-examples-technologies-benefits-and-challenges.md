@@ -138,7 +138,7 @@ IIoT技術の急速な進化により、業界ではスキルのギャップが�
 
 ## EMQXとNeuronによるIIoT接続性の簡略化
 
-EMQは、業界をリードするMQTTブローカーEMQXとの緊密な連携のもと、産業データオペレーションとデータ中心の自動化のための軽量コネクティビティサーバー[Neuron](https://www.emqx.com/ja/products/neuron)を提供しています。Neuronは、IIoTにおいて、接続性の簡素化、データ統合の強化、リアルタイム通信と分析を可能にする重要なメリットを提供します。
+EMQは、業界をリードするMQTTブローカーEMQXとの緊密な連携のもと、産業データオペレーションとデータ中心の自動化のための軽量コネクティビティサーバー[Neuron](https://www.emqx.com/ja/products/neuronex)を提供しています。Neuronは、IIoTにおいて、接続性の簡素化、データ統合の強化、リアルタイム通信と分析を可能にする重要なメリットを提供します。
 
 IIoTの管理に従事している場合、[EMQX](https://www.emqx.io/ja)とNeuronは以下を支援できます。
 

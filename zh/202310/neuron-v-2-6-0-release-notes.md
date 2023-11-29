@@ -1,4 +1,4 @@
-近日，EMQ 旗下的工业协议网关软件 [Neuron](https://www.emqx.com/zh/products/neuron) 发布了最新的 2.6.0 版本。
+近日，EMQ 旗下的工业协议网关软件 [Neuron](https://www.emqx.com/zh/products/neuronex) 发布了最新的 2.6.0 版本。
 
 该版本新增了 **SECS GEM HSMS** 和 **KUKA Ethernet KRL TCP** 两个南向驱动和对接**格物平台**的一个北向应用，增加了部分软件功能，同时对现有的插件功能和 UI 进行了优化。
 
