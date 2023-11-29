@@ -159,9 +159,9 @@ To address this challenge, businesses need to invest in training and development
 
 ## Simplifying IIoT Connectivity with EMQX and Neuron
 
-EMQ provides [Neuron](https://www.emqx.com/en/products/neuron), a lightweight connectivity server for industrial dataops and data-centric automation, tightly integrated with our industry-leading MQTT broker. Neuron provides several significant benefits for IIoT, simplifying connectivity, enhancing data integration, and enabling real-time communication and analytics.
+EMQ provides [Neuron](https://www.emqx.com/en/products/neuronex), a lightweight connectivity server for industrial dataops and data-centric automation, tightly integrated with our industry-leading MQTT broker. Neuron provides several significant benefits for IIoT, simplifying connectivity, enhancing data integration, and enabling real-time communication and analytics.
 
-If you are a managing an IIoT deployment, [EMQX](https://www.emqx.io/) and [Neuron](https://www.emqx.com/en/products/neuron) can help with:
+If you are a managing an IIoT deployment, [EMQX](https://www.emqx.io/) and [Neuron](https://www.emqx.com/en/products/neuronex) can help with:
 
 1. **IT Connectivity:** EMQX broker offers a wide range of data bridges, facilitating seamless integration with over 40 cloud services and enterprise systems. This enables instant access to data across diverse applications, reducing the cost and complexity of custom bridge development. EMQX supports integration with popular databases like MySQL, PostgreSQL, MongoDB, and more, as well as technologies like Redis, Oracle, SAP, and Kafka. This rich set of connectors ensures efficient IT connectivity and data exchange within the IIoT ecosystem.
 2. **OT Connectivity:** Neuron serves as a protocol gateway, providing a comprehensive set of industrial connectivity options essential for successful IIoT deployments. With support for over 30 industrial protocols such as [Modbus](https://www.emqx.com/en/blog/modbus-protocol-the-grandfather-of-iot-communication), Ethernet/IP, Profinet I/O, OPC-UA, IEC104, [BACnet](https://www.emqx.com/en/blog/bacnet-protocol-basic-concepts-structure-obejct-model-explained), and more, Neuron enables seamless communication with various devices and systems across the operational technology (OT) landscape. Whether it's PLCs, building automation systems, CNC machines, or robotics, Neuron offers a powerful range of drivers to ensure reliable OT connectivity and data acquisition.
@@ -176,7 +176,7 @@ If you are a managing an IIoT deployment, [EMQX](https://www.emqx.io/) and [Neur
 
 By combining the capabilities of EMQX as an MQTT broker with Neuron's industrial connectivity gateway, IIoT connectivity is streamlined, enabling seamless communication between industrial devices and backend systems. The integration of these components simplifies data exchange, enhances data processing, and optimizes IIoT deployments for improved efficiency, reliability, and real-time decision-making in industrial applications.
 
-**[Learn more about Neuron: The Industrial IoT Connectivity Server](https://www.emqx.com/en/products/neuron)**
+**[Learn more about Neuron: The Industrial IoT Connectivity Server](https://www.emqx.com/en/products/neuronex)**
 
 
 <section class="promotion">

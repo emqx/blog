@@ -44,7 +44,7 @@ EMQ 面向运营商的云边一体化解决方案
 
 ### 使用 MQTT 协议统一接入海量边缘设备
 
-针对工业制造、智慧矿山、能源电力等场景中涉及到 [Modbus](https://www.emqx.com/zh/blog/modbus-protocol-the-grandfather-of-iot-communication)、OPC-UA、IEC 等各类不同的 PLC 工业协议，可以先通过 [EMQ](https://www.emqx.com/zh) 提供的[物联网边缘工业协议网关软件 Neuron](https://www.emqx.com/zh/products/neuron) 统一转换成 MQTT 协议，再通过 EMQX 高可用、分布式集群架构构建物联网管理平台，实现设备数据的连接、移动及后续的处理与分析，解决海量设备管理问题。
+针对工业制造、智慧矿山、能源电力等场景中涉及到 [Modbus](https://www.emqx.com/zh/blog/modbus-protocol-the-grandfather-of-iot-communication)、OPC-UA、IEC 等各类不同的 PLC 工业协议，可以先通过 [EMQ](https://www.emqx.com/zh) 提供的[物联网边缘工业协议网关软件 Neuron](https://www.emqx.com/zh/products/neuronex) 统一转换成 MQTT 协议，再通过 EMQX 高可用、分布式集群架构构建物联网管理平台，实现设备数据的连接、移动及后续的处理与分析，解决海量设备管理问题。
 
 ### MQTT 发布订阅模式解决设备管理问题
 

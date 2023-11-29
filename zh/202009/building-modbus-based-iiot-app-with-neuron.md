@@ -8,13 +8,13 @@ IIoT 即 Industrial Internet of Things 的简称，是指数以亿计的工业�
 
 随着 [工业 4.0](https://baike.baidu.com/item/%E5%B7%A5%E4%B8%9A4.0/2120694) 概念的普及与行业实践的深入，传统的集中式控制模式向分散式增强型控制模式转变。同时，5G 时代的到来，也加速了传统工业改造和工业物联网化的进程。为了实现个性化、数字化的产品与服务的灵活生产，在工业设备智能化、网络化的过程中，需要将新旧工业设备连接到互联网中，实现对工业设备的数据采集、远程控制、配置更新等业务。EMQX 系列产品可提供从工业网关到平台的整体解决方案，支持在厂区和工业现场等边缘端实现工业设备的数据汇聚并发送到云端。同时，其对边缘计算流数据的处理能力，可在平台端为工业物联网应用提供云端工业设备数据接入、数据存储以及与云端组态和应用的对接，方便工业互联网应用的快速开发。
 
-以下，我们将通过 [Neuron](https://www.emqx.com/zh/products/neuron)、[EMQX](https://www.emqx.com/zh/products/emqx) 构建基于 [Modbus](https://www.emqx.com/en/blog/modbus-protocol-the-grandfather-of-iot-communication) 的简易 IIoT 应用，并使用 [MQTTX](https://mqttx.app/zh) 订阅/展示数据。
+以下，我们将通过 [Neuron](https://www.emqx.com/zh/products/neuronex)、[EMQX](https://www.emqx.com/zh/products/emqx) 构建基于 [Modbus](https://www.emqx.com/en/blog/modbus-protocol-the-grandfather-of-iot-communication) 的简易 IIoT 应用，并使用 [MQTTX](https://mqttx.app/zh) 订阅/展示数据。
 
 
 
 ## EMQX Neuron简介
 
-EMQ 于近日发布了布署在边缘网关上的 [工业协议接入软件 Neuron](https://www.emqx.com/zh/products/neuron)。作为人与机器之间的桥梁，它可以把 TCP/IP 协议的 0/1 数据，转化重组成通俗易懂的 JSON 格式，并使用 [MQTT 协议](https://www.emqx.com/zh/mqtt-guide) 输出到云端，更好地处理人与物之间的交互。
+EMQ 于近日发布了布署在边缘网关上的 [工业协议接入软件 Neuron](https://www.emqx.com/zh/products/neuronex)。作为人与机器之间的桥梁，它可以把 TCP/IP 协议的 0/1 数据，转化重组成通俗易懂的 JSON 格式，并使用 [MQTT 协议](https://www.emqx.com/zh/mqtt-guide) 输出到云端，更好地处理人与物之间的交互。
 
 EMQX Neuron 支持包括 Modbus、OPC 等在内的各类工业协议，可以基本满足大部分工业接入的需求，详细协议列表见下图。
 
@@ -199,7 +199,7 @@ MQPASSWORD=neuron123
 
 以上我们使用 EMQX Neuron、EMQX Broker、MQTTX 等工具完整进行全流程的工业接入模拟测试，对于工业设备上云形成更加清晰与直观的认知。当然，您也可以结合 EMQX Neuron 强大协议支持与 EMQX Broker 强大的接入/转发能力，自己开发一套应用展示系统，构建一整套 IIoT 平台。
 
-**2020 年 9 月**底，我们将通过集成 [Neuron](https://www.emqx.com/zh/products/neuron)，[Edge](https://www.emqx.com/zh/products/emqx) 和 [Kuiper](https://github.com/lf-edge/ekuiper) 等软件，实现在边缘端的工业协议解析、数据汇聚和流式处理的一整套边缘解决方案；该方案通过与云端的 EMQX Broker / Enterprise 等系列产品集成，则可以实现一个端到端的、从边缘到云端的完整工业解决方案。
+**2020 年 9 月**底，我们将通过集成 [Neuron](https://www.emqx.com/zh/products/neuronex)，[Edge](https://www.emqx.com/zh/products/emqx) 和 [Kuiper](https://github.com/lf-edge/ekuiper) 等软件，实现在边缘端的工业协议解析、数据汇聚和流式处理的一整套边缘解决方案；该方案通过与云端的 EMQX Broker / Enterprise 等系列产品集成，则可以实现一个端到端的、从边缘到云端的完整工业解决方案。
 
 ![Artboard Copy 9备份 4.png](https://assets.emqx.com/images/17040dd8943482858425cfb3fe197e82.png)
 

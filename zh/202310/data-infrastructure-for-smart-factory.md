@@ -14,7 +14,7 @@
 
 #### 多源数据采集、接入
 
-在工业领域，存在着使用各种工业协议的设备，[Neuron](https://www.emqx.com/zh/products/neuron) 工业协议网关软件支持 [Modbus](https://www.emqx.com/zh/blog/modbus-protocol-the-grandfather-of-iot-communication)、OPC UA、IEC 61850 和 IEC 104 等常用工业协议，让使用不同协议的设备数据能够被采集到统一的数据平台。
+在工业领域，存在着使用各种工业协议的设备，[Neuron](https://www.emqx.com/zh/products/neuronex) 工业协议网关软件支持 [Modbus](https://www.emqx.com/zh/blog/modbus-protocol-the-grandfather-of-iot-communication)、OPC UA、IEC 61850 和 IEC 104 等常用工业协议，让使用不同协议的设备数据能够被采集到统一的数据平台。
 
 同时，EMQ 智慧工厂解决方案还可以将采集到的数据接入工厂内各类其他的系统进行集成。比如传统的 PLC、SCADA、DCS 等系统， MES、WMS、ERP 等生产管理软件，以及企业服务总线 ESB、各种数据库、以及第三方软件，此外还支持集成非结构化数据，如视频、文档等。
 
@@ -72,7 +72,7 @@ EMQX 企业级物联网接入平台具备对海量数据进行统一存储的能
 
 ### NeuronEX
 
-[NeuronEX](https://www.emqx.com/zh/products/neuron) 是一款面向工业领域的设备数据采集和边缘智能分析的软件，主要部署在工业现场，实现工业设备通信及工业总线协议采集、工业系统数据集成、边端数据过滤分析及AI算法集成，以及工业互联网平台对接集成等。
+[NeuronEX](https://www.emqx.com/zh/products/neuronex) 是一款面向工业领域的设备数据采集和边缘智能分析的软件，主要部署在工业现场，实现工业设备通信及工业总线协议采集、工业系统数据集成、边端数据过滤分析及AI算法集成，以及工业互联网平台对接集成等。
 
 ### EMQX ECP
 

@@ -30,7 +30,7 @@ EMQ 产品质量溯源解决方案，通过云原生技术以及云边协同架�
 
 | **组件**       | **名称**                                                     |
 | -------------- | ------------------------------------------------------------ |
-| 边缘数采软件   | [Neuron - 工业协议网关软件](https://www.emqx.com/zh/products/neuron) |
+| 边缘数采软件   | [Neuron - 工业协议网关软件](https://www.emqx.com/zh/products/neuronex) |
 | 边缘 Broker    | [NanoMQ - 超轻量级边缘 MQTT 消息服务器](https://nanomq.io/zh) |
 | 边缘计算软件   | [eKuiper - 超轻量物联网边缘数据流式分析引擎](https://ekuiper.org/zh) |
 | 物联网接入平台 | [EMQX BC - 云原生分布式物联网接入平台](https://www.emqx.com/zh/products/emqx) |

@@ -21,7 +21,7 @@ EMQ 和明道云联合打造的 IIoT 零代码平台，旨在简化工业互联�
 EMQ 提供的 IIoT 数据集成平台主要由以下产品组成：
 
 - [**EMQX**](https://www.emqx.com/zh/products/emqx) 是一款大规模分布式物联网消息接入平台，为高可靠、高性能的物联网实时数据移动、处理和集成提供动力。支持包括 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt)、MQTT-SN、CoAP、LwM2M 等在内的多种协议。在[工业物联网](https://www.emqx.com/zh/blog/iiot-explained-examples-technologies-benefits-and-challenges)场景中，EMQX 可以实现设备与设备、设备与平台之间的高效通信，确保数据实时传输。
-- [**Neuron**](https://www.emqx.com/zh/products/neuron) 是一款工业协议网关软件，可将 [Modbus](https://www.emqx.com/zh/blog/modbus-protocol-the-grandfather-of-iot-communication)、OPC UA、IEC 60870-5-104 等各类不同协议数据统一为标准化的数据格式，方便设备与云平台之间的数据交互。通过与 EMQX 的结合，Neuron 可以实现边缘设备的数据采集和传输。
+- [**Neuron**](https://www.emqx.com/zh/products/neuronex) 是一款工业协议网关软件，可将 [Modbus](https://www.emqx.com/zh/blog/modbus-protocol-the-grandfather-of-iot-communication)、OPC UA、IEC 60870-5-104 等各类不同协议数据统一为标准化的数据格式，方便设备与云平台之间的数据交互。通过与 EMQX 的结合，Neuron 可以实现边缘设备的数据采集和传输。
 - [**eKuiper**](https://ekuiper.org/zh) 是一款轻量级的边缘计算框架，可对边缘设备的数据进行实时处理和过滤。通过与 Neuron 的结合，eKuiper 可以实现对采集到的数据进行实时分析，提高数据处理效率，降低数据传输量，减轻云端的计算压力。
 
 ![IIoT 数据集成平台](https://assets.emqx.com/images/6706631f0d51326c0fbe00ec67c66409.png)

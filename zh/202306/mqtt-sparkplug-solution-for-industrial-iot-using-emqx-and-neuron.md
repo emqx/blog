@@ -14,7 +14,7 @@ Sparkplug 是基于 MQTT 的一种专门为工业自动化和物联网应用而�
 
 [Neuron](https://neugates.io/zh) 用于将边缘设备连接到 EMQX Broker 上的 Sparkplug 命名空间。它充当网关的角色，负责从本地传感器和控制器收集数据，并使用 Sparkplug 有效载荷格式将其发布到 EMQX。同时，Neuron 还会订阅 Sparkplug 命名空间中的消息，并根据需要将其转发到本地设备。
 
-> 了解更多关于 Neuron 的信息：[https://www.emqx.com/zh/products/neuron](https://www.emqx.com/zh/products/neuron)
+> 了解更多关于 Neuron 的信息：[https://www.emqx.com/zh/products/neuron](https://www.emqx.com/zh/products/neuronex)
 
 ## EMQX 和 Neuron 共同扮演的新角色
 

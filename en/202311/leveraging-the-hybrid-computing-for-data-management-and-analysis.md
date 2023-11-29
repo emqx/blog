@@ -2,7 +2,7 @@ In our [previous blog](https://www.emqx.com/en/blog/practical-data-management-fo
 
 In the dynamic landscape of data management, the divide between Edge Computing and Cloud Computing has been a defining characteristic. Edge computing brings real-time processing closer to the data source, while Cloud computing, with its immense computational power, facilitates advanced data analysis. Now, imagine a world where you don't have to choose between these two powerhouses but instead harness their collective strength. Welcome to the realm of Hybrid Computing.
 
-This article delves into the transformative potential of a hybrid computing model, one that skillfully marries the capabilities of Edge and Cloud computing, offering a comprehensive approach to data management and analysis. We'll journey through a practical example featuring [EMQX](https://www.emqx.com/en/products/emqx), [Neuron](https://www.emqx.com/en/products/neuron), and [eKuiper](https://ekuiper.org/), to demonstrate how this synergy optimizes data utilization in the context of Edge and Cloud computing.
+This article delves into the transformative potential of a hybrid computing model, one that skillfully marries the capabilities of Edge and Cloud computing, offering a comprehensive approach to data management and analysis. We'll journey through a practical example featuring [EMQX](https://www.emqx.com/en/products/emqx), [Neuron](https://www.emqx.com/en/products/neuronex), and [eKuiper](https://ekuiper.org/), to demonstrate how this synergy optimizes data utilization in the context of Edge and Cloud computing.
 
 ## The Hybrid Model for ETL
 
@@ -10,7 +10,7 @@ To illustrate the power of this hybrid model, let's continue our example with EM
 
 ![The Hybrid Model for ETL](https://assets.emqx.com/images/1ef593d2826de97868e707086d0053a6.png)
 
-As described in the last blog, [Neuron](https://www.emqx.com/en/products/neuron) is a master device that connects to these slave devices, including 3 power meters and a temperature reader. Each slave device has a device ID to identify the data source. Neuron would poll these slave devices one by one to get the current readings. Neuron is the first place to perform the data mappings between the [Modbus](https://www.emqx.com/en/blog/modbus-protocol-the-grandfather-of-iot-communication) slave device readings and our favorite real-world model objects, chemical tanks. Neuron extracts the data from various data sources.
+As described in the last blog, [Neuron](https://www.emqx.com/en/products/neuronex) is a master device that connects to these slave devices, including 3 power meters and a temperature reader. Each slave device has a device ID to identify the data source. Neuron would poll these slave devices one by one to get the current readings. Neuron is the first place to perform the data mappings between the [Modbus](https://www.emqx.com/en/blog/modbus-protocol-the-grandfather-of-iot-communication) slave device readings and our favorite real-world model objects, chemical tanks. Neuron extracts the data from various data sources.
 
 The chemical object data is then sent to [eKuiper](https://ekuiper.org/) for data cleansing and transformation. eKuiper can manage different data sources and access the production data from MES and ERP through the APIs or some other communication protocols. eKuiper performs the normalization on the chemical tank object data from Neuron and adds context data to the chemical tanks. This is the data transformation process.
 

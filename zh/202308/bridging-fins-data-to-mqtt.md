@@ -60,11 +60,11 @@ FINS/UDP 只包含两部分: FINS 命令代码段和 FINS 命令参数段。
 
 ## FINS 桥接到 MQTT 的架构
 
-本文我们使用 EMQ 提供的 [Neuron](https://www.emqx.com/zh/products/neuron) 和 [EMQX](https://www.emqx.com/zh/products/emqx) 来实现 FINS 到 MQTT 的桥接。Neuron 可以将 FINS 协议转换为 MQTT，而 EMQX 充当 [MQTT Broker](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison)，处理大量连接和数据。
+本文我们使用 EMQ 提供的 [Neuron](https://www.emqx.com/zh/products/neuronex) 和 [EMQX](https://www.emqx.com/zh/products/emqx) 来实现 FINS 到 MQTT 的桥接。Neuron 可以将 FINS 协议转换为 MQTT，而 EMQX 充当 [MQTT Broker](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison)，处理大量连接和数据。
 
 Neuron 是运行在各类物联网边缘网关硬件上的工业协议网关软件，旨在解决工业 4.0 背景下设备数据统一接入难的问题。通过将来自繁杂多样工业设备的不同协议类型数据转换为统一标准的物联网 MQTT 消息，实现设备与[工业物联网](https://www.emqx.com/zh/blog/iiot-explained-examples-technologies-benefits-and-challenges)系统之间、设备彼此之间的互联互通，进行远程的直接控制和信息获取，为智能生产制造提供数据支撑。
 
-> 了解更多 Neuron: [Neuron: 工业协议网关软件](https://www.emqx.com/zh/products/neuron)
+> 了解更多 Neuron: [Neuron: 工业协议网关软件](https://www.emqx.com/zh/products/neuronex)
 
 EMQX 是一个大规模且弹性的云原生分布式物联网 MQTT 消息服务器。作为全球最具可扩展性的 MQTT 消息服务器，EMQX 提供了高效可靠的物联网设备大规模连接，能够高性能实时处理消息和事件流数据，帮助用户快速构建关键的物联网平台和应用。
 

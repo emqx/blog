@@ -3,7 +3,7 @@ As described in [Part 1](https://www.emqx.com/en/blog/a-digital-transformation-j
 1. Bridging the gaps between IT and OT to enable data flow.
 2. Identifying the Data Sources from various systems.
 
-In this blog, we explore the key role of [EMQX](https://www.emqx.com/en/products/emqx), a robust MQTT broker, and [Neuron](https://www.emqx.com/en/products/neuron), a powerful industrial connectivity gateway, in seamlessly accessing and integrating data from OT and IT sources.
+In this blog, we explore the key role of [EMQX](https://www.emqx.com/en/products/emqx), a robust MQTT broker, and [Neuron](https://www.emqx.com/en/products/neuronex), a powerful industrial connectivity gateway, in seamlessly accessing and integrating data from OT and IT sources.
 
 ## Addressing the OT-IT Convergence Challenge
 

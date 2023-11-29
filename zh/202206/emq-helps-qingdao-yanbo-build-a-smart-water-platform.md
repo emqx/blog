@@ -56,7 +56,7 @@
 
 ### 厂站数据采集
 
-厂站通过部署支持标准 Linux 的工业网关硬件配合安装 EMQ 边缘工业协议网关软件 [Neuron](https://www.emqx.com/zh/products/neuron) ，将网关接入厂站的生产网络中，然后通过配置 Neuron 以及现场 PLC 和 SCADA 系统通信获取数据。
+厂站通过部署支持标准 Linux 的工业网关硬件配合安装 EMQ 边缘工业协议网关软件 [Neuron](https://www.emqx.com/zh/products/neuronex) ，将网关接入厂站的生产网络中，然后通过配置 Neuron 以及现场 PLC 和 SCADA 系统通信获取数据。
 
 为了符合水务运营部门对厂站数据上报格式的统一化要求，在边缘侧的工业网关中安装 EMQ 提供的轻量级流数据处理引擎 [eKuiper](https://ekuiper.org/zh)，在厂站本地将数据格式转换为标准的上行报文格式。
 

@@ -67,7 +67,7 @@
 
 | **组件**         | **名称**                                                     |
 | ---------------- | ------------------------------------------------------------ |
-| 边缘网关         | [Neuron-边缘工业协议网关软件](https://www.emqx.com/zh/products/neuron) |
+| 边缘网关         | [Neuron-边缘工业协议网关软件](https://www.emqx.com/zh/products/neuronex) |
 | 边缘 Broker      | [NanoMQ-超轻量级边缘 MQTT消息服务器](https://www.emqx.com/zh/products/nanomq) |
 | 边缘计算单元     | eKuiper-轻量级物联网边缘分析/流式处理软件                    |
 | 中心 Broker/集群 | [EMQX Enterprise-云原生分布式物联网接入平台](https://www.emqx.com/zh/products/emqx) |

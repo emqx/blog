@@ -173,7 +173,7 @@ If you are a managing an IIoT deployment, [EMQX](https://www.emqx.io/) and [Neur
 
 By combining the capabilities of EMQX as an MQTT broker with Neuron's industrial connectivity gateway, IIoT connectivity is streamlined, enabling seamless communication between industrial devices and backend systems. The integration of these components simplifies data exchange, enhances data processing, and optimizes IIoT deployments for improved efficiency, reliability, and real-time decision-making in industrial applications.
 
-**[Learn more about Neuron: The Industrial IoT Connectivity Server](https://www.emqx.com/en/products/neuron)**
+**[Learn more about Neuron: The Industrial IoT Connectivity Server](https://www.emqx.com/en/products/neuronex)**
 
 
 

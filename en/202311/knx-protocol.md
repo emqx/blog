@@ -109,7 +109,7 @@ Since version 2.1.0, Neuron provides the [KNX plugin](https://neugates.io/docs/e
 
 EMQX is the broker component in the bridging architecture, while Neuron collects data from KNX devices and transmits the data in MQTT messages to the broker. After receiving the MQTT messages from Neuron, EMQX will then forward the data or perform further processing.
 
-EMQX has a rich and powerful feature set, such as the SQL-based [rules engine](https://www.emqx.com/en/solutions/iot-rule-engine) to extract, filter, enrich, and transform IoT data in real-time, and data integration to connect EMQX to external data systems like databases.
+EMQX has a rich and powerful feature set, such as the SQL-based [rules engine](https://www.emqx.com/en/solutions/mqtt-data-processing) to extract, filter, enrich, and transform IoT data in real-time, and data integration to connect EMQX to external data systems like databases.
 
 Learn more about integrating KNX protocol with IoT through this step-by-step tutorial: [Bridging KNX Data to MQTT: Introduction and Hands-on Tutorial](https://www.emqx.com/en/blog/bridging-knx-data-to-mqtt-introduction-and-hands-on-tutorial) 
 

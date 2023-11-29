@@ -16,7 +16,7 @@ Open Manufacturing Hub 的主要组件包括：
 
 - Python Modbus 模拟器：模拟 Modbus 设备的 Python 应用，能够持续产生 Modbus 数据。
 
-- [Neuron 工业连接服务器](https://www.emqx.com/en/products/neuron)：充当工业连接的设备枢纽，能够实现多种工业协议和工业物联网系统之间的无缝集成。
+- [Neuron 工业连接服务器](https://www.emqx.com/en/products/neuronex)：充当工业连接的设备枢纽，能够实现多种工业协议和工业物联网系统之间的无缝集成。
 
 - [EMQX MQTT Broker](https://www.emqx.com/en/products/emqx)：工业物联网基础设施的核心，为工业应用提供了可靠和可扩展的消息传输系统。
 

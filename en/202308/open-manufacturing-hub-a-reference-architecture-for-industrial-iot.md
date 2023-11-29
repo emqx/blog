@@ -36,7 +36,7 @@ The major components of the OMH are:
 
 - Python Modbus Simulator: A Python application acts as a Modbus simulator, continuously generating Modbus data.
 
-- [Neuron Industrial Connectivity Server](https://www.emqx.com/en/products/neuron): Neuron acts as a device hub for industrial connectivity, facilitating seamless integration between diverse industrial protocols and IIoT system.
+- [Neuron Industrial Connectivity Server](https://www.emqx.com/en/products/neuronex): Neuron acts as a device hub for industrial connectivity, facilitating seamless integration between diverse industrial protocols and IIoT system.
 
 - [EMQX MQTT Broker](https://www.emqx.com/en/products/emqx): The EMQX broker serves as the heart of the IIoT infrastructure, providing a reliable and scalable messaging system for applications.
 

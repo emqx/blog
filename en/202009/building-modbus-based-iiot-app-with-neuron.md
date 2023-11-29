@@ -8,13 +8,13 @@ IIoT is the acronyms of the Industrial Internet of Things, which is the Industri
 
 With the popularization of [industry 4.0](https://en.wikipedia.org/wiki/Fourth_Industrial_Revolution) concept and the deepening of industrial practice, the traditional centralized control model has transformed into a distributed enhanced control model. At the same time, the advent of the 5G era has accelerated the process of traditional industrial transformation and industrial IoT. To implement the flexible production of personalized and digital products and services, in the process of industrial devices intelligent and networked, the new and old industrial equipment needs to be connected to the internet to implement the business of data collection, remote control and configuration update of industrial equipment. EMQX series products can provide the entire solution from the industrial gateway to the platform and implement data aggregation of the industrial device and sending these data to the cloud, at the edge end of the plant and industrial site. At the same time, its processing ability for edge computing streaming data can provide cloud industrial device data access, data storage and interfacing with cloud-based configuration and applications for the industrial IoT at the platform end. Also, it can facilitate the rapid development of industrial Internet applications.
 
-We will build a simple IIoT application based on [Modbus](https://www.emqx.com/en/blog/modbus-protocol-the-grandfather-of-iot-communication) through [Neuron](https://www.emqx.com/en/products/neuron) and [EMQX](https://www.emqx.com/en/products/emqx), and use [MQTTX](https://mqttx.app/) to subscribe/display data.
+We will build a simple IIoT application based on [Modbus](https://www.emqx.com/en/blog/modbus-protocol-the-grandfather-of-iot-communication) through [Neuron](https://www.emqx.com/en/products/neuronex) and [EMQX](https://www.emqx.com/en/products/emqx), and use [MQTTX](https://mqttx.app/) to subscribe/display data.
 
 
 
 ## Introduction to EMQX Neuron
 
-EMQ has recently published [an industrial protocol access software Neuron](https://www.emqx.com/en/products/neuron) deployed on the edge gateway. As a bridge between humans and machines, it can convert and reorganize the 0/1 data of TCP/IP protocol to an easy-to-understand JSON format, and use [MQTT protocol](https://www.emqx.com/en/mqtt-guide) to export the data to the cloud. Therefore, it can better handle the interaction between humans and objects.
+EMQ has recently published [an industrial protocol access software Neuron](https://www.emqx.com/en/products/neuronex) deployed on the edge gateway. As a bridge between humans and machines, it can convert and reorganize the 0/1 data of TCP/IP protocol to an easy-to-understand JSON format, and use [MQTT protocol](https://www.emqx.com/en/mqtt-guide) to export the data to the cloud. Therefore, it can better handle the interaction between humans and objects.
 
 EMQX Neuron supports various kinds of industrial protocol, including Modbus, OPC, etc. It can meet most of the industrial access requirements. The detailed protocol list is as follows:
 
@@ -200,7 +200,7 @@ Open the connected MQTTX, connect to the EMQX Broker, subscribe to the above top
 
 The above is a complete simulation test of industrial access using EMQX Neuron, EMQX Broker, MQTTX and other tools to form a clearer and more intuitive understanding of industrial equipment on the cloud. Of course, you can also use the powerful protocol support of EMQX Neuron and the powerful access/forward ability of EMQX Broker to develop your own application demonstration system and build a complete [IIoT platform](https://www.emqx.com/en/blog/iiot-platform-key-components-and-5-notable-solutions).
 
-By the end of September 2020, we will implement a complete edge solution for industrial protocol parsing, data aggregation and streaming processing at the edge end through integrating [Neuron](https://www.emqx.com/en/products/neuron), [Edge](https://www.emqx.com/en/products/emqx), [Kuiper](https://github.com/lf-edge/ekuiper) and other software. This solution can implement a complete industrial solution from end to end, and edge to cloud though integrating the cloud series product EMQX Broker / Enterprise.
+By the end of September 2020, we will implement a complete edge solution for industrial protocol parsing, data aggregation and streaming processing at the edge end through integrating [Neuron](https://www.emqx.com/en/products/neuronex), [Edge](https://www.emqx.com/en/products/emqx), [Kuiper](https://github.com/lf-edge/ekuiper) and other software. This solution can implement a complete industrial solution from end to end, and edge to cloud though integrating the cloud series product EMQX Broker / Enterprise.
 
 ![Artboard Copy 9备份 4.png](https://assets.emqx.com/images/8c7059339b470666df505bb4e33519f4.png)
 

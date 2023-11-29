@@ -1,6 +1,6 @@
 ## はじめに
 
-[MQTT](https://www.emqx.com/ja/mqtt-guide)は、デバイス間の通信を可能にするためにIoT（モノのインターネット）アプリケーションで一般的に使用されている軽量メッセージングプロトコルです。オープンソースのMQTTブローカーとして人気の[EMQX](https://www.emqx.io/)は、MQTTメッセージングに高いスケーラビリティ、信頼性、セキュリティを提供します。
+[MQTT](https://www.emqx.com/en/mqtt-guide)は、デバイス間の通信を可能にするためにIoT（モノのインターネット）アプリケーションで一般的に使用されている軽量メッセージングプロトコルです。オープンソースのMQTTブローカーとして人気の[EMQX](https://www.emqx.io/)は、MQTTメッセージングに高いスケーラビリティ、信頼性、セキュリティを提供します。
 
 Infrastructure as Code（IaC）ツールとして普及しているTerraformを使用することで、AWS上のEMQX MQTT Brokerのデプロイを自動化し、MQTTインフラのセットアップと管理を容易にすることができます。
 

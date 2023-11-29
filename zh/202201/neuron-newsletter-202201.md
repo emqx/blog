@@ -1,4 +1,4 @@
-一月，我们主要专注于月底发布的 Neuron2.0-alpha.2。这个版本主要增加了 [Neuron](https://www.emqx.com/en/products/neuron) 的持久化功能，支持网页端的导入和导出，增加了压力测试的流程，支持分离的商业化模块，并解决了 alpha.1 中发现的问题。
+一月，我们主要专注于月底发布的 Neuron2.0-alpha.2。这个版本主要增加了 [Neuron](https://www.emqx.com/en/products/neuronex) 的持久化功能，支持网页端的导入和导出，增加了压力测试的流程，支持分离的商业化模块，并解决了 alpha.1 中发现的问题。
 
 ## Neuron 2.0-alpha.2 主要更新
 

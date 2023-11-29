@@ -56,7 +56,7 @@
 
 <center>EMQ 工业生产数字孪生架构图</center>
 
-1. [边缘端工业协议网关软件 Neuron](https://www.emqx.com/zh/products/neuron) 用于各类工业设备的接入，支持将数十种工业协议一站式转换为 [MQTT 协议](https://www.emqx.com/zh/mqtt-guide)，实现在工业生产弱网环境下的各类数据实时感知与稳定传输。
+1. [边缘端工业协议网关软件 Neuron](https://www.emqx.com/zh/products/neuronex) 用于各类工业设备的接入，支持将数十种工业协议一站式转换为 [MQTT 协议](https://www.emqx.com/zh/mqtt-guide)，实现在工业生产弱网环境下的各类数据实时感知与稳定传输。
 
 2. [边缘超轻量级 MQTT 消息服务器 NanoMQ](https://www.emqx.com/zh/products/nanomq) 用于数据的汇聚和缓存，可以打通处于不同网络中的设备、不同系统间的数据壁垒，消除信息孤岛。NanoMQ 可以在边缘端实现数据断点续传， 保障业务数据的完整性，保证数字孪生平台算法的高效与精准。
 

@@ -29,7 +29,7 @@ This solution will use these software products in the following list.
 
 | No.  | Name                                                       | Provider     | Open source        |
 | :--- | :--------------------------------------------------------- | :----------- | :----------------- |
-| 1    | [EMQX Neuron](https://www.emqx.com/en/products/neuron)        | EMQ          | No - `1`           |
+| 1    | [EMQX Neuron](https://www.emqx.com/en/products/neuronex)        | EMQ          | No - `1`           |
 | 2    | [EMQX Edge](https://www.emqx.com/en/products/emqx)            | EMQ          | Yes, Apache 2.0    |
 | 3    | [EMQX Kuiper](https://github.com/lf-edge/ekuiper)        | EMQ          | Yes, Apache 2.0    |
 | 4    | [Edge manager](https://hub.docker.com/r/emqx/edge-manager) | EMQ          | No - `2`           |
@@ -76,7 +76,7 @@ This solution will use these software products in the following list.
 
 | No.  | Name                                                       | x86*32 | x86*64 | ARM 7 | ARM 64 | PPC64 | Mac  | Docker |
 | :--- | :--------------------------------------------------------- | :----- | :----- | :---- | :----- | :---- | :--- | :----- |
-| 1    | [EMQX Neuron](https://www.emqx.com/en/products/neuron)        |        | ☑      | ☑     | ☑      | ☑     |      | ☑      |
+| 1    | [EMQX Neuron](https://www.emqx.com/en/products/neuronex)        |        | ☑      | ☑     | ☑      | ☑     |      | ☑      |
 | 2    | [EMQX Edge](https://www.emqx.com/en/products/emqx)            | ☑      | ☑      | ☑     | ☑      | ☑     | ☑    | ☑      |
 | 3    | [EMQX Kuiper](https://github.com/lf-edge/ekuiper)        | ☑      | ☑      | ☑     | ☑      | ☑     | ☑    | ☑      |
 | 4    | [Edge manager](https://hub.docker.com/r/emqx/edge-manager) | ☑      | ☑      | ☑     | ☑      | ☑     | ☑    | ☑      |

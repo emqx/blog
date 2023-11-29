@@ -312,7 +312,7 @@ void loop() {
 
 この初心者向けガイドでは、ESP32でのMQTT実装の基本を説明した。ESP32開発ボードやPubSubClientライブラリなど、必要なツールをインストールした。読者は、安全なWi-Fi接続の確立、MQTTブローカーへの接続、メッセージの発行、トピックの購読をステップバイステップの手順で行うことができる。ESP32でMQTTを活用することで、ユーザーは信頼性が高く効率的なIoTアプリケーションを作成できる。
 
-次に、MQTTガイドをチェックすることができます：EMQが提供する「[Beginner to Advanced](https://www.emqx.com/ja/mqtt-guide)」シリーズで、MQTTプロトコルの機能を学び、MQTTのより高度なアプリケーションを探求し、MQTTアプリケーションとサービス開発を始めましょう。
+次に、MQTTガイドをチェックすることができます：EMQが提供する「[Beginner to Advanced](https://www.emqx.com/en/mqtt-guide)」シリーズで、MQTTプロトコルの機能を学び、MQTTのより高度なアプリケーションを探求し、MQTTアプリケーションとサービス開発を始めましょう。
 
 ## リソース
 

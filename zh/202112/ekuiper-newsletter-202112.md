@@ -28,4 +28,4 @@ eKuiper v1.4.1 版本将致力于提高产品稳定性及性能。目前，该�
 
 本月，eKuiper 团队完成了 2022 路线图规划，并公布在官方 Github：[https://github.com/lf-edge/ekuiper/projects/18](https://github.com/lf-edge/ekuiper/projects/18)。
 
-未来我们将开发包括分布式集群模式、与 [Neuron](https://www.emqx.com/zh/products/neuron) 整合互通、动态更新表等新功能。我们也欢迎大家在 GitHub 上与我们交流互动，提出需求，与我们共同打造更加强大的 eKuiper。
+未来我们将开发包括分布式集群模式、与 [Neuron](https://www.emqx.com/zh/products/neuronex) 整合互通、动态更新表等新功能。我们也欢迎大家在 GitHub 上与我们交流互动，提出需求，与我们共同打造更加强大的 eKuiper。

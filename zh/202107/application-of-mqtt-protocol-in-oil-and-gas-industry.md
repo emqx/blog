@@ -49,7 +49,7 @@ MQTT 是用于物联网的标准消息传递协议。它被设计为一种非常
 
 ### 各类工业协议转换为 MQTT 实现统一接入
 
-在场站端，通过[工业数据采集网关软件 Neuron](https://www.emqx.com/zh/products/neuron) 将现场采用 Modbus-RTU、Modbus-TCP 协议的仪表数据转换成高可靠轻量化的 MQTT 协议，再将实时数据通过专网将 MQTT 协议推送到厂区中心机房的数据接入平台 [EMQX](https://www.emqx.com/zh/products/emqx)。
+在场站端，通过[工业数据采集网关软件 Neuron](https://www.emqx.com/zh/products/neuronex) 将现场采用 Modbus-RTU、Modbus-TCP 协议的仪表数据转换成高可靠轻量化的 MQTT 协议，再将实时数据通过专网将 MQTT 协议推送到厂区中心机房的数据接入平台 [EMQX](https://www.emqx.com/zh/products/emqx)。
 
 ### 对数据进行过滤处理并推送
 
