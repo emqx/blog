@@ -281,6 +281,7 @@ EMQX is the world's most scalable open-source MQTT broker with a high performanc
 ## [EMQX Cloud](https://www.emqx.com/zh/blog/category/cloud)
 The easiest way to start MQTT service. Connect your IoT devices to any cloud without the burden of maintaining infrastructure.
 
+- [EMQX Cloud 和工业物联网：从边端数据到 InfluxDB 3.0 的工业数据集成](https://www.emqx.com/zh/blog/supercharging-iiot-with-mqtt-edge-intelligence-and-influxdb) ([Edit](https://github.com/emqx/blog/blob/main/zh/202311/supercharging-iiot-with-mqtt-edge-intelligence-and-influxdb.md))
 - [EMQX Cloud 和工业物联网：从边端数据到 TimescaleDB 的工业数据集成](https://www.emqx.com/zh/blog/unleashing-the-power-of-mqtt-edge-intelligence-and-timescale) ([Edit](https://github.com/emqx/blog/blob/main/zh/202311/unleashing-the-power-of-mqtt-edge-intelligence-and-timescale.md))
 - [EMQX Cloud Serverless 支持 API、批量上传认证和鉴权数据](https://www.emqx.com/zh/blog/mastering-iot-solution-with-emqx-cloud-serverless-addition) ([Edit](https://github.com/emqx/blog/blob/main/zh/202310/mastering-iot-solution-with-emqx-cloud-serverless-addition.md))
 - [EMQX Cloud 支持 SSO 登录：企业账号一键登录](https://www.emqx.com/zh/blog/streamline-access-management-with-emqx-cloud-sso-integrations) ([Edit](https://github.com/emqx/blog/blob/main/zh/202310/streamline-access-management-with-emqx-cloud-sso-integrations.md))
@@ -404,6 +405,7 @@ Build a reliable, efficient and industry-specific Internet of Vehicles platform 
 
 ## [Industrial IoT | Unified Namespace | Sparkplug](https://www.emqx.com/zh/blog/category/industrial-iot)
 
+- [EMQX Cloud 和工业物联网：从边端数据到 InfluxDB 3.0 的工业数据集成](https://www.emqx.com/zh/blog/supercharging-iiot-with-mqtt-edge-intelligence-and-influxdb) ([Edit](https://github.com/emqx/blog/blob/main/zh/202311/supercharging-iiot-with-mqtt-edge-intelligence-and-influxdb.md))
 - [EMQX Cloud 和工业物联网：从边端数据到 TimescaleDB 的工业数据集成](https://www.emqx.com/zh/blog/unleashing-the-power-of-mqtt-edge-intelligence-and-timescale) ([Edit](https://github.com/emqx/blog/blob/main/zh/202311/unleashing-the-power-of-mqtt-edge-intelligence-and-timescale.md))
 - [EMQX ECP 2.0 产品发布会回顾：工业互联数据平台助力工业数字化转型](https://www.emqx.com/zh/blog/emqx-ecp-2-0-product-launch-review) ([Edit](https://github.com/emqx/blog/blob/main/zh/202311/emqx-ecp-2-0-product-launch-review.md))
 - [统一命名空间架构（UNS）与 ISA-95 结合的最佳实践](https://www.emqx.com/zh/blog/incorporating-the-unified-namespace-with-isa-95-best-practices) ([Edit](https://github.com/emqx/blog/blob/main/zh/202311/incorporating-the-unified-namespace-with-isa-95-best-practices.md))
