@@ -111,9 +111,19 @@ See customer stories: [SAIC Volkswagen and EMQ create a new generation of intell
 
 
 
-<section class="promotion">
-    <div>
-        Talk to an Expert
+<section
+  class="is-hidden-touch my-32 is-flex is-align-items-center"
+  style="border-radius: 16px; background: linear-gradient(102deg, #edf6ff 1.81%, #eff2ff 97.99%); padding: 32px 48px;"
+>
+  <div>
+    <div class="mb-4 is-size-3 is-text-black has-text-weight-semibold" style="
+    line-height: 1.2;
+">
+      Ready to Get Started?
     </div>
-    <a href="https://www.emqx.com/en/contact?product=solutions" class="button is-gradient px-5">Contact Us →</a>
+    <div class="mb-32">
+      Talk to our technical sales team to answer your questions.
+    </div>
+    <a href="https://www.emqx.com/en/contact?product=solutions" class="button is-gradient">Contact Us →</a>
+  </div>
 </section>
