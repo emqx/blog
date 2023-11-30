@@ -18,7 +18,7 @@ Enter the OMH(Open Manufacturing Hub) — an open-source blueprint for [industri
       A Reference Architecture for Modern Manufacturing
     </div>
     <div class="mb-32">
-      An open-source blueprint for Industry 4.0 to help you build an efficient and scalable [IIoT platform](https://www.emqx.com/en/blog/iiot-platform-key-components-and-5-notable-solutions).
+      An open-source blueprint for Industry 4.0 to help you build an efficient and scalable IIoT platform.
     </div>
     <a href="https://www.emqx.com/en/resources/open-manufacturing-hub-a-reference-architecture-for-industrial-iot?utm_campaign=embedded-open-manufacturing-hub&from=blog-open-manufacturing-hub-a-reference-architecture" class="button is-gradient">Get the Whitepaper →</a>
   </div>
