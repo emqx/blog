@@ -405,6 +405,7 @@ Build a reliable, efficient and industry-specific Internet of Vehicles platform 
 
 ## [Industrial IoT | Unified Namespace | Sparkplug](https://www.emqx.com/zh/blog/category/industrial-iot)
 
+- [智能制造：工业数字化转型的关键因素与成功策略](https://www.emqx.com/zh/blog/a-digital-transformation-journey-to-smart-manufacturing) ([Edit](https://github.com/emqx/blog/blob/main/zh/202312/a-digital-transformation-journey-to-smart-manufacturing.md))
 - [EMQX Cloud 和工业物联网：从边端数据到 InfluxDB 3.0 的工业数据集成](https://www.emqx.com/zh/blog/supercharging-iiot-with-mqtt-edge-intelligence-and-influxdb) ([Edit](https://github.com/emqx/blog/blob/main/zh/202311/supercharging-iiot-with-mqtt-edge-intelligence-and-influxdb.md))
 - [EMQX Cloud 和工业物联网：从边端数据到 TimescaleDB 的工业数据集成](https://www.emqx.com/zh/blog/unleashing-the-power-of-mqtt-edge-intelligence-and-timescale) ([Edit](https://github.com/emqx/blog/blob/main/zh/202311/unleashing-the-power-of-mqtt-edge-intelligence-and-timescale.md))
 - [EMQX ECP 2.0 产品发布会回顾：工业互联数据平台助力工业数字化转型](https://www.emqx.com/zh/blog/emqx-ecp-2-0-product-launch-review) ([Edit](https://github.com/emqx/blog/blob/main/zh/202311/emqx-ecp-2-0-product-launch-review.md))
