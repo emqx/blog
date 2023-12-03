@@ -627,6 +627,7 @@ Guarantee the availability and reliability of the IoT platform.
 
 ## [Use Cases](https://www.emqx.com/en/blog/category/use-cases)
 
+- [Intelligent Operation for Gas Gate Stations through AI & Edge Computing with EMQ](https://www.emqx.com/en/blog/intelligent-operation-for-gas-gate-stations-through-ai-and-edge-computing-with-emq) ([Edit](https://github.com/emqx/blog/blob/main/en/202312/intelligent-operation-for-gas-gate-stations-through-ai-and-edge-computing-with-emq.md))
 - [A Cloud-Edge Collaborative Solution for Intelligent Oil & Gas Production and Operation](https://www.emqx.com/en/blog/promoting-cost-reduction-and-efficiency-in-oil-and-gas-production) ([Edit](https://github.com/emqx/blog/blob/main/en/202311/promoting-cost-reduction-and-efficiency-in-oil-and-gas-production.md))
 - [A Data-Driven Solution for Logistics Asset Tracking and Maintenance](https://www.emqx.com/en/blog/a-data-driven-solution-for-logistics-asset-tracking-and-maintenance) ([Edit](https://github.com/emqx/blog/blob/main/en/202311/a-data-driven-solution-for-logistics-asset-tracking-and-maintenance.md))
 - [From Data to Intelligence: One-Stop MQTT Platform for Smart Factory Advancements](https://www.emqx.com/en/blog/data-infrastructure-for-smart-factory) ([Edit](https://github.com/emqx/blog/blob/main/en/202311/data-infrastructure-for-smart-factory.md))
