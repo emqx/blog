@@ -81,6 +81,7 @@ Get to know the preferred protocol in IoT from beginner to master.
 
 ## [MQTT Client](https://www.emqx.com/en/blog/category/mqtt-client)
 
+- [MQTT Explorer Guide: Features, Demos, and Using Tips](https://www.emqx.com/en/blog/connecting-to-emqx-cloud-with-mqtt-explorer) ([Edit](https://github.com/emqx/blog/blob/main/en/202312/connecting-to-emqx-cloud-with-mqtt-explorer.md))
 - [MQTT over lwIP Practice: A Step-by-Step Tutorial](https://www.emqx.com/en/blog/mqtt-over-lwip) ([Edit](https://github.com/emqx/blog/blob/main/en/202310/mqtt-over-lwip.md))
 - [MQTTX: All-In-One Testing and Debugging for IoT Apps](https://www.emqx.com/en/blog/mqttx-all-in-one-testing-and-debugging-for-iot-apps) ([Edit](https://github.com/emqx/blog/blob/main/en/202307/mqttx-all-in-one-testing-and-debugging-for-iot-apps.md))
 - [7 Best MQTT Client Tools Worth Trying in 2023](https://www.emqx.com/en/blog/mqtt-client-tools) ([Edit](https://github.com/emqx/blog/blob/main/en/202305/mqtt-client-tools.md))
@@ -92,7 +93,6 @@ Get to know the preferred protocol in IoT from beginner to master.
 - [Using MQTTLens to connect to EMQX Cloud](https://www.emqx.com/en/blog/connecting-to-emqx-cloud-with-mqttlens) ([Edit](https://github.com/emqx/blog/blob/main/en/202108/connecting-to-emqx-cloud-with-mqttlens.md))
 - [Using MQTTBox to connect to EMQX Cloud](https://www.emqx.com/en/blog/connecting-to-emqx-cloud-with-mqttbox) ([Edit](https://github.com/emqx/blog/blob/main/en/202108/connecting-to-emqx-cloud-with-mqttbox.md))
 - [Using MQTT.fx to connect to EMQX Cloud](https://www.emqx.com/en/blog/connecting-to-emqx-cloud-with-mqttfx) ([Edit](https://github.com/emqx/blog/blob/main/en/202108/connecting-to-emqx-cloud-with-mqttfx.md))
-- [Using MQTT Explorer to connect to EMQX Cloud](https://www.emqx.com/en/blog/connecting-to-emqx-cloud-with-mqtt-explorer) ([Edit](https://github.com/emqx/blog/blob/main/en/202108/connecting-to-emqx-cloud-with-mqtt-explorer.md))
 - [Comparison of Python MQTT Clients](https://www.emqx.com/en/blog/comparision-of-python-mqtt-client) ([Edit](https://github.com/emqx/blog/blob/main/en/202010/comparision-of-python-mqtt-client.md))
 - [Introduction to the Commonly Used MQTT Client Library](https://www.emqx.com/en/blog/introduction-to-the-commonly-used-mqtt-client-library) ([Edit](https://github.com/emqx/blog/blob/main/en/201911/introduction-to-the-commonly-used-mqtt-client-library.md))
 
