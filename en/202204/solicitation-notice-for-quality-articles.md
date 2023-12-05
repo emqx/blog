@@ -14,7 +14,7 @@ Content that pertains to the following will be more likely to be accepted:
 
 - User cases for EMQ products in production environments: the application of EMQ products by users in actual production, including business background, specific solution architecture, the application of EMQ products and specific achievements, etc.
 
-  References: [EMQ helps SAIC Volkswagen building IoV platform](https://www.emqx.com/en/blog/emqx-in-volkswagen-iov)  
+  References: [SAIC Volkswagen and EMQ create a new generation of intelligent Internet of Vehicles systems](https://www.emqx.com/en/customers/saic-volkswagen)  
 
 - Innovative use of EMQ products: the integrated application of EMQ products with new technologies, new concepts and new products, or innovative projects enabled using EMQ products. The content should include a detailed introduction of the overall solution and the specific use of EMQ products. 
 

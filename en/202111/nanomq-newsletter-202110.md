@@ -23,7 +23,7 @@ It is the maximum number of parallel logical threads in the system. It is approp
 msq_len=64
 ```
 
-This is the initial length of the built-in [message queue](https://www.emqx.com/en/blog/mqtt5-feature-inflight-window-message-queue) buffer of each client. NanoMQ supports automatic scaling of the message queue. It is recommended to set it to a power of 2 according to the system memory size. For devices with less than 128Mb memory, it is recommended to fix it to 1024.
+This is the initial length of the built-in message queue buffer of each client. NanoMQ supports automatic scaling of the message queue. It is recommended to set it to a power of 2 according to the system memory size. For devices with less than 128Mb memory, it is recommended to fix it to 1024.
 
 ```
 qos_duration=60

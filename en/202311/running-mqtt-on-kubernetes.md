@@ -143,7 +143,7 @@ Its key features include:
 
 - [Massive Scale](https://www.emqx.com/en/blog/how-emqx-5-0-achieves-100-million-mqtt-connections): Scale horizontally to 20+ nodes in a single cluster for 100M MQTT connections.
 - [Business-Critical Reliability](https://www.emqx.com/en/blog/mqtt-persistence-based-on-rocksdb): Ensure no data loss with built-in RocksDB data persistence.
-- [Data Security](https://www.emqx.com/en/use-cases/mqtt-security): End-to-end data encryption and fine-grained access control to protect your data.
+- [Data Security](https://www.emqx.com/en/solutions/mqtt-security): End-to-end data encryption and fine-grained access control to protect your data.
 - [Multiple protocols support](https://www.emqx.com/en/blog/iot-protocols-mqtt-coap-lwm2m): MQTT, QUIC, CoAP, Stomp, LwM2M, and more
 - [High Performance](https://www.emqx.com/en/blog/mqtt-performance-benchmark-testing-emqx-single-node-supports-2m-message-throughput): Ingest and process millions of MQTT messages efficiently per second per node.
 - [Low Latency](https://www.emqx.com/en/blog/mqtt-performance-benchmark-testing-emqx-single-node-message-latency-response-time): Guarantee sub-millisecond latency in message delivery with the soft real-time runtime.
