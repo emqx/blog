@@ -62,7 +62,7 @@ MQTT 5 让客户端可以指定如何接收每个订阅主题的消息。比如�
 
 ## 现有 Broker 和客户端 SDK 对 MQTT 5.0 协议的支持情况
 
-MQTT 5.0 协议得到了物联网社区的广泛欢迎，许多 [MQTT Broker](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison) 和客户端软件开发工具包（SDK）都实现了对其的支持。[EMQX](https://www.emqx.io/)、[Mosquitto](https://www.emqx.com/zh/blog/mosquitto-mqtt-broker-pros-cons-tutorial-and-modern-alternatives) 和 [NanoMQ](https://nanomq.io/) 等主流 MQTT Broker 已经在其平台上集成了 MQTT 5.0 的功能，让用户可以充分利用新协议的优势。
+MQTT 5.0 协议得到了物联网社区的广泛欢迎，许多 [MQTT Broker](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison) 和客户端软件开发工具包（SDK）都实现了对其的支持。[EMQX](https://www.emqx.io/)、[Mosquitto](https://www.emqx.com/en/blog/mosquitto-mqtt-broker-pros-cons-tutorial-and-modern-alternatives) 和 [NanoMQ](https://nanomq.io/) 等主流 MQTT Broker 已经在其平台上集成了 MQTT 5.0 的功能，让用户可以充分利用新协议的优势。
 
 在客户端 SDK 方面，像 Paho 这样有众多用户的库也支持 MQTT 5.0。这意味着开发者现在可以在他们的物联网应用中使用 MQTT 5.0 的新功能。其他支持 MQTT 5.0 的客户端 SDK 还有 [MQTT.js](https://www.emqx.com/zh/blog/mqtt-js-tutorial) 和 [MQTTnet](https://www.emqx.com/en/blog/connecting-to-serverless-mqtt-broker-with-mqttnet-in-csharp)。
 
@@ -102,7 +102,7 @@ MQTT 5.0 在带来多项改进的同时，也引入了一些新的安全风险�
 
 ## 和 EMQX 一起拥抱 MQTT 5
 
-EMQX 是世界上最具扩展性的[开源 MQTT Broker](https://www.emqx.com/zh/blog/a-comprehensive-comparison-of-open-source-mqtt-brokers-in-2023)，它完全兼容 MQTT 5.0 的所有功能。任何 MQTT 协议版本的设备都可以直接连接到 EMQX 并进行通信。
+EMQX 是世界上最具扩展性的开源 MQTT Broker，它完全兼容 MQTT 5.0 的所有功能。任何 MQTT 协议版本的设备都可以直接连接到 EMQX 并进行通信。
 
 EMQX 具有完善的认证和授权机制，以及对 SSL/TLS 的全面支持，能够保障通信的安全。基于 SQL 的规则引擎具有数据桥接功能，无需编写代码即可实现一站式物联网数据提取、过滤、转换、存储和处理。
 

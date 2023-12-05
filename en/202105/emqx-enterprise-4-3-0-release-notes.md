@@ -57,7 +57,7 @@ We have added HTTPS support for InfluxDB and support batch writing of InfluxDB.
 
 ## Kafka distribution improvement: easier to use Kafka message distribution
 
-EMQX's module -> Kafka consumer group function can use external Kafka as a [message queue](https://www.emqx.com/en/blog/mqtt5-feature-inflight-window-message-queue) to consume messages from a specified Kafka topic, convert them into MQTT messages and send them to specific MQTT topics. The data flow is shown in the following figure:
+EMQX's module -> Kafka consumer group function can use external Kafka as a message queue to consume messages from a specified Kafka topic, convert them into MQTT messages and send them to specific MQTT topics. The data flow is shown in the following figure:
 
 ![Kafka distribution improvement](https://assets.emqx.com/images/9fe7501172ea1e95ec7052c733c1c8ec.png)
 
