@@ -22,11 +22,11 @@ Get to know the preferred protocol in IoT from beginner to master.
 - [消息过期间隔介绍与示例 | MQTT 5.0 特性详解](https://www.emqx.com/zh/blog/mqtt-message-expiry-interval) ([Edit](https://github.com/emqx/blog/blob/main/zh/202308/mqtt-message-expiry-interval.md))
 - [MQTT 与 AMQP：物联网通信协议对比](https://www.emqx.com/zh/blog/mqtt-vs-amqp-for-iot-communications) ([Edit](https://github.com/emqx/blog/blob/main/zh/202308/mqtt-vs-amqp-for-iot-communications.md))
 - [MQTT 5.0 报文（Packets）入门指南](https://www.emqx.com/zh/blog/introduction-to-mqtt-control-packets) ([Edit](https://github.com/emqx/blog/blob/main/zh/202307/introduction-to-mqtt-control-packets.md))
-- [MQTT Maximum Packet Size 最佳实践](https://www.emqx.com/zh/blog/best-practices-of-maximum-packet-size-in-mqtt) ([Edit](https://github.com/emqx/blog/blob/main/zh/202307/best-practices-of-maximum-packet-size-in-mqtt.md))
+- [MQTT Maximum Packet Size 最佳实践 | MQTT 5.0 特性详解](https://www.emqx.com/zh/blog/best-practices-of-maximum-packet-size-in-mqtt) ([Edit](https://github.com/emqx/blog/blob/main/zh/202307/best-practices-of-maximum-packet-size-in-mqtt.md))
 - [MQTT 5.0 Reason Code 介绍与使用速查表](https://www.emqx.com/zh/blog/mqtt5-new-features-reason-code-and-ack) ([Edit](https://github.com/emqx/blog/blob/main/zh/202307/mqtt5-new-features-reason-code-and-ack.md))
 - [MQTT 与 Kafka｜物联网消息与流数据集成实践](https://www.emqx.com/zh/blog/mqtt-and-kafka) ([Edit](https://github.com/emqx/blog/blob/main/zh/202306/mqtt-and-kafka.md))
-- [MQTT 订阅选项的使用](https://www.emqx.com/zh/blog/an-introduction-to-subscription-options-in-mqtt) ([Edit](https://github.com/emqx/blog/blob/main/zh/202306/an-introduction-to-subscription-options-in-mqtt.md))
-- [MQTT 订阅标识符详解](https://www.emqx.com/zh/blog/subscription-identifier-and-subscription-options) ([Edit](https://github.com/emqx/blog/blob/main/zh/202306/subscription-identifier-and-subscription-options.md))
+- [MQTT 订阅选项介绍与示例 | MQTT 5.0 特性详解](https://www.emqx.com/zh/blog/an-introduction-to-subscription-options-in-mqtt) ([Edit](https://github.com/emqx/blog/blob/main/zh/202306/an-introduction-to-subscription-options-in-mqtt.md))
+- [MQTT 订阅标识符介绍与实例 | MQTT 5.0 特性详解](https://www.emqx.com/zh/blog/subscription-identifier-and-subscription-options) ([Edit](https://github.com/emqx/blog/blob/main/zh/202306/subscription-identifier-and-subscription-options.md))
 - [QUIC 协议：特性、应用场景及其对物联网/车联网的影响](https://www.emqx.com/zh/blog/quic-protocol-the-features-use-cases-and-impact-for-iot-iov) ([Edit](https://github.com/emqx/blog/blob/main/zh/202305/quic-protocol-the-features-use-cases-and-impact-for-iot-iov.md))
 - [2023 年 MQTT 协议的 7 个技术趋势｜描绘物联网的未来](https://www.emqx.com/zh/blog/7-mqtt-trends-in-2023) ([Edit](https://github.com/emqx/blog/blob/main/zh/202304/7-mqtt-trends-in-2023.md))
 - [MQTT QoS 0, 1, 2 介绍](https://www.emqx.com/zh/blog/introduction-to-mqtt-qos) ([Edit](https://github.com/emqx/blog/blob/main/zh/202212/introduction-to-mqtt-qos.md))
@@ -338,6 +338,7 @@ The easiest way to start MQTT service. Connect your IoT devices to any cloud wit
 ## [EMQX Enterprise](https://www.emqx.com/zh/blog/category/enterprise)
 The world's most scalable and reliable MQTT messaging platform to connect, move and process your data in business-critical scenarios for the IoT era.
 
+- [利用 EMQX 和 Neuron 为智能制造构建坚实数据基础](https://www.emqx.com/zh/blog/consolidating-the-foundation-of-smart-manufacturing-with-emqx-and-neuron) ([Edit](https://github.com/emqx/blog/blob/main/zh/202312/consolidating-the-foundation-of-smart-manufacturing-with-emqx-and-neuron.md))
 - [利用 EMQX 和 Neuron 融合 OT 和 IT 数据源](https://www.emqx.com/zh/blog/first-step-to-a-smart-factory) ([Edit](https://github.com/emqx/blog/blob/main/zh/202312/first-step-to-a-smart-factory.md))
 - [工业智能：英特尔与 EMQ 推出联合工业解决方案](https://www.emqx.com/zh/blog/intel-and-emq-launch-joint-industrial-solution) ([Edit](https://github.com/emqx/blog/blob/main/zh/202311/intel-and-emq-launch-joint-industrial-solution.md))
 - [风电场远程监控与运维：EMQ 新能源风场互联解决方案](https://www.emqx.com/zh/blog/iot-solution-for-wind-farm-remote-monitoring-and-maintenance) ([Edit](https://github.com/emqx/blog/blob/main/zh/202311/iot-solution-for-wind-farm-remote-monitoring-and-maintenance.md))
@@ -406,6 +407,7 @@ Build a reliable, efficient and industry-specific Internet of Vehicles platform 
 
 ## [Industrial IoT | Unified Namespace | Sparkplug](https://www.emqx.com/zh/blog/category/industrial-iot)
 
+- [利用 EMQX 和 Neuron 为智能制造构建坚实数据基础](https://www.emqx.com/zh/blog/consolidating-the-foundation-of-smart-manufacturing-with-emqx-and-neuron) ([Edit](https://github.com/emqx/blog/blob/main/zh/202312/consolidating-the-foundation-of-smart-manufacturing-with-emqx-and-neuron.md))
 - [利用 EMQX 和 Neuron 融合 OT 和 IT 数据源](https://www.emqx.com/zh/blog/first-step-to-a-smart-factory) ([Edit](https://github.com/emqx/blog/blob/main/zh/202312/first-step-to-a-smart-factory.md))
 - [智能制造：工业数字化转型的关键因素与成功策略](https://www.emqx.com/zh/blog/a-digital-transformation-journey-to-smart-manufacturing) ([Edit](https://github.com/emqx/blog/blob/main/zh/202312/a-digital-transformation-journey-to-smart-manufacturing.md))
 - [EMQX Cloud 和工业物联网：从边端数据到 InfluxDB 3.0 的工业数据集成](https://www.emqx.com/zh/blog/supercharging-iiot-with-mqtt-edge-intelligence-and-influxdb) ([Edit](https://github.com/emqx/blog/blob/main/zh/202311/supercharging-iiot-with-mqtt-edge-intelligence-and-influxdb.md))
@@ -508,6 +510,7 @@ MQTTX is a Fully Open-source MQTT 5.0 cross-platform Desktop Client, makes it ea
 ## [Neuron - IIoT Connectivity Server](https://www.emqx.com/zh/blog/category/neuron)
 IoT edge industrial protocol gateway software, which supports one-stop access to dozens of industrial protocols and converts them into MQTT protocol to access the cloud industrial IoT platform. It just requires ultra-low resource consumption, and supports three major architectures of X86, ARM, and MIPS.
 
+- [利用 EMQX 和 Neuron 为智能制造构建坚实数据基础](https://www.emqx.com/zh/blog/consolidating-the-foundation-of-smart-manufacturing-with-emqx-and-neuron) ([Edit](https://github.com/emqx/blog/blob/main/zh/202312/consolidating-the-foundation-of-smart-manufacturing-with-emqx-and-neuron.md))
 - [利用 EMQX 和 Neuron 融合 OT 和 IT 数据源](https://www.emqx.com/zh/blog/first-step-to-a-smart-factory) ([Edit](https://github.com/emqx/blog/blob/main/zh/202312/first-step-to-a-smart-factory.md))
 - [工业智能：英特尔与 EMQ 推出联合工业解决方案](https://www.emqx.com/zh/blog/intel-and-emq-launch-joint-industrial-solution) ([Edit](https://github.com/emqx/blog/blob/main/zh/202311/intel-and-emq-launch-joint-industrial-solution.md))
 - [风电场远程监控与运维：EMQ 新能源风场互联解决方案](https://www.emqx.com/zh/blog/iot-solution-for-wind-farm-remote-monitoring-and-maintenance) ([Edit](https://github.com/emqx/blog/blob/main/zh/202311/iot-solution-for-wind-farm-remote-monitoring-and-maintenance.md))

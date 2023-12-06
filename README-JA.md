@@ -24,6 +24,7 @@ Get to know the preferred protocol in IoT from beginner to master.
 
 ## [MQTT Broker](https://www.emqx.com/ja/blog/category/mqtt-broker)
 
+- [Mosquitto MQTT Broker: 長所 / 短所、チュートリアル、および最新の代替案](https://www.emqx.com/ja/blog/mosquitto-mqtt-broker-pros-cons-tutorial-and-modern-alternatives) ([Edit](https://github.com/emqx/blog/blob/main/ja/202312/mosquitto-mqtt-broker-pros-cons-tutorial-and-modern-alternatives.md))
 - [MQTT Broker：原理、人気のオプション、クイックスタート](https://www.emqx.com/ja/blog/the-ultimate-guide-to-mqtt-broker-comparison) ([Edit](https://github.com/emqx/blog/blob/main/ja/202307/the-ultimate-guide-to-mqtt-broker-comparison.md))
 - [EMQX vs Mosquitto｜2023年MQTTブローカーの比較](https://www.emqx.com/ja/blog/emqx-vs-mosquitto-2023-mqtt-broker-comparison) ([Edit](https://github.com/emqx/blog/blob/main/ja/202306/emqx-vs-mosquitto-2023-mqtt-broker-comparison.md))
 - [2023年の産業用IoT向けオープンソースMQTTブローカートップ3](https://www.emqx.com/ja/blog/top-3-open-source-mqtt-brokers-for-industrial-iot-in-2023) ([Edit](https://github.com/emqx/blog/blob/main/ja/202305/top-3-open-source-mqtt-brokers-for-industrial-iot-in-2023.md))

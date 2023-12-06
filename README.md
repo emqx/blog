@@ -340,6 +340,7 @@ The easiest way to start MQTT service. Connect your IoT devices to any cloud wit
 ## [EMQX Enterprise](https://www.emqx.com/en/blog/category/enterprise)
 The world's most scalable and reliable MQTT messaging platform to connect, move and process your data in business-critical scenarios for the IoT era.
 
+- [Unleashing the Renewable Energy: MQTT Platform for Wind Farm Remote Monitoring and Maintenance](https://www.emqx.com/en/blog/mqtt-platform-for-wind-farm-remote-monitoring-and-maintenance) ([Edit](https://github.com/emqx/blog/blob/main/en/202312/mqtt-platform-for-wind-farm-remote-monitoring-and-maintenance.md))
 - [MQTT and MongoDB: Crafting Seamless Synergy for IoT Data Mangement](https://www.emqx.com/en/blog/mqtt-and-mongodb-crafting-seamless-synergy-for-iot-data-mangement) ([Edit](https://github.com/emqx/blog/blob/main/en/202311/mqtt-and-mongodb-crafting-seamless-synergy-for-iot-data-mangement.md))
 - [Running MQTT on Kubernetes: A Practical Guide](https://www.emqx.com/en/blog/running-mqtt-on-kubernetes) ([Edit](https://github.com/emqx/blog/blob/main/en/202311/running-mqtt-on-kubernetes.md))
 - [A Data-Driven Solution for Logistics Asset Tracking and Maintenance](https://www.emqx.com/en/blog/a-data-driven-solution-for-logistics-asset-tracking-and-maintenance) ([Edit](https://github.com/emqx/blog/blob/main/en/202311/a-data-driven-solution-for-logistics-asset-tracking-and-maintenance.md))
@@ -505,6 +506,7 @@ MQTTX is a Fully Open-source MQTT 5.0 cross-platform Desktop Client, makes it ea
 ## [Neuron - IIoT Connectivity Server](https://www.emqx.com/en/blog/category/neuron)
 IoT edge industrial protocol gateway software, which supports one-stop access to dozens of industrial protocols and converts them into MQTT protocol to access the cloud industrial IoT platform. It just requires ultra-low resource consumption, and supports three major architectures of X86, ARM, and MIPS.
 
+- [Unleashing the Renewable Energy: MQTT Platform for Wind Farm Remote Monitoring and Maintenance](https://www.emqx.com/en/blog/mqtt-platform-for-wind-farm-remote-monitoring-and-maintenance) ([Edit](https://github.com/emqx/blog/blob/main/en/202312/mqtt-platform-for-wind-farm-remote-monitoring-and-maintenance.md))
 - [A Practical Guide to Bridging IEC 61850 Data to MQTT](https://www.emqx.com/en/blog/a-guide-on-bridging-iec-61850-data-to-mqtt) ([Edit](https://github.com/emqx/blog/blob/main/en/202312/a-guide-on-bridging-iec-61850-data-to-mqtt.md))
 - [IEC 61850 Protocol: Features, Information Model, and Combination with MQTT](https://www.emqx.com/en/blog/iec-61850-protocol) ([Edit](https://github.com/emqx/blog/blob/main/en/202311/iec-61850-protocol.md))
 - [A Data-Driven Solution for Logistics Asset Tracking and Maintenance](https://www.emqx.com/en/blog/a-data-driven-solution-for-logistics-asset-tracking-and-maintenance) ([Edit](https://github.com/emqx/blog/blob/main/en/202311/a-data-driven-solution-for-logistics-asset-tracking-and-maintenance.md))
@@ -628,6 +630,7 @@ Guarantee the availability and reliability of the IoT platform.
 
 ## [Use Cases](https://www.emqx.com/en/blog/category/use-cases)
 
+- [Unleashing the Renewable Energy: MQTT Platform for Wind Farm Remote Monitoring and Maintenance](https://www.emqx.com/en/blog/mqtt-platform-for-wind-farm-remote-monitoring-and-maintenance) ([Edit](https://github.com/emqx/blog/blob/main/en/202312/mqtt-platform-for-wind-farm-remote-monitoring-and-maintenance.md))
 - [Intelligent Operation for Gas Gate Stations through AI & Edge Computing with EMQ](https://www.emqx.com/en/blog/intelligent-operation-for-gas-gate-stations-through-ai-and-edge-computing-with-emq) ([Edit](https://github.com/emqx/blog/blob/main/en/202312/intelligent-operation-for-gas-gate-stations-through-ai-and-edge-computing-with-emq.md))
 - [A Cloud-Edge Collaborative Solution for Intelligent Oil & Gas Production and Operation](https://www.emqx.com/en/blog/promoting-cost-reduction-and-efficiency-in-oil-and-gas-production) ([Edit](https://github.com/emqx/blog/blob/main/en/202311/promoting-cost-reduction-and-efficiency-in-oil-and-gas-production.md))
 - [A Data-Driven Solution for Logistics Asset Tracking and Maintenance](https://www.emqx.com/en/blog/a-data-driven-solution-for-logistics-asset-tracking-and-maintenance) ([Edit](https://github.com/emqx/blog/blob/main/en/202311/a-data-driven-solution-for-logistics-asset-tracking-and-maintenance.md))

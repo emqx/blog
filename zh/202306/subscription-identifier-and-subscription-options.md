@@ -6,27 +6,27 @@
 
 但如果是通配符订阅，消息中的主题名和订阅时的主题过滤器将是两个不同的字符串，我们只有将消息中的主题名与原始的订阅挨个进行主题匹配，才能确定应该执行哪个回调函数。这显然极大地影响了客户端的处理效率。
 
-![MQTT Subscription](https://assets.emqx.com/images/5b3b24a4406e4d342355138f90dd438b.png)
+![mqtt subscription identifier 01](https://assets.emqx.com/images/27648a4465bf3948af3a61e533fd8aad.png)
 
 另外，因为 MQTT 允许一个客户端建立多个订阅，那么当客户端使用通配符订阅时，一条消息可能同时与一个客户端的多个订阅匹配。
 
-对于这种情况，MQTT 允许服务端为这些重叠的订阅分别发送一次消息，也允许服务端为这些重叠的订阅只发送一条消息，前者意味着客户端将收到多条重复的消息。
+MQTT 允许服务端为这些重叠的订阅分别发送一次消息，也允许服务端只为这些重叠的订阅发送一条消息。
 
-而不管是前者还是后者，客户端都不能确定消息来自于哪个或者哪些订阅。因为即使客户端发现某条消息同时与自己的两个订阅相匹配，也不能保证在服务端向自己转发这条消息时，这两个订阅是否都已经成功创建了。所以，客户端无法为消息触发正确的回调。
+当服务端采用前一种实现时，客户端必须额外对这些消息进行去重才能保证回调不会被重复执行：
 
-![MQTT Subscription](https://assets.emqx.com/images/3a86d62e52c9bfcef85ba590d14c4a19.png)
+![mqtt subscription identifierm 02](https://assets.emqx.com/images/88ef650cac1ae4196fc008cda7d73279.png)
 
 ## 订阅标识符的工作原理
 
 为了解决这个问题，MQTT 5.0 引入了订阅标识符。它的用法非常简单，客户端可以在订阅时指定一个订阅标识符，服务端则需要存储该订阅与订阅标识符的映射关系。当有匹配该订阅的 PUBLISH 报文要转发给此客户端时，服务端会将与该订阅关联的订阅标识符随 PUBLISH 报文一并返回给客户端。
 
-![Subscription Identifier](https://assets.emqx.com/images/f9f1cf19de90a4e03647dbe52d69f7e7.png)
+![mqtt subscription identifierm 03](https://assets.emqx.com/images/e31a72810ff815d622b68f501094a44a.png)
 
 如果服务端选择为重叠的订阅分别发送一次消息，那么每个 PUBLISH 报文都应该包含与订阅相匹配的订阅标识符，而如果服务端选择为重叠的订阅只发送一条消息，那么 PUBLISH 报文将包含多个订阅标识符。
 
 客户端只需要建立订阅标识符与回调函数的映射，就可以通过消息中的订阅标识符得知这个消息来自哪个订阅，以及应该执行哪个回调函数。
 
-![MQTT Subscription](https://assets.emqx.com/images/7ba966d802c9ee39683870366f5fd7c7.png)
+![mqtt subscription identifierm 04](https://assets.emqx.com/images/3ddfab45720fc724434c2edaf47662f6.png)
 
 在客户端中，订阅标识符并不属于会话状态的一部分，将订阅标识符和什么内容进行关联，完全由客户端决定。所以除了回调函数，我们也可以建立订阅标识符与订阅主题的映射，或者建立与 Client ID 的映射。后者在转发服务端消息给客户端的网关中非常有用。当消息从服务端到达网关，网关只要根据订阅标识符就能够知道应该将消息转发给哪个客户端，而不需要重新做一次主题的匹配和路由。
 
