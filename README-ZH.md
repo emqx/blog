@@ -174,6 +174,7 @@ Explore more with & via EMQ.
 ## [EMQX Open Source | Broker](https://www.emqx.com/zh/blog/category/emqx)
 EMQX is the world's most scalable open-source MQTT broker with a high performance that connects 100M+ IoT devices in 1 cluster, while maintaining 1M message per second throughput and sub-millisecond latency.
 
+- [EMQX 性能调优：TCP SYN 队列与 Accept 队列](https://www.emqx.com/zh/blog/emqx-performance-tuning-tcp-syn-queue-and-accept-queue) ([Edit](https://github.com/emqx/blog/blob/main/zh/202312/emqx-performance-tuning-tcp-syn-queue-and-accept-queue.md))
 - [EMQX 性能调优：最大连接与文件描述符](https://www.emqx.com/zh/blog/emqx-performance-tuning-maximum-connections-and-file-descriptors) ([Edit](https://github.com/emqx/blog/blob/main/zh/202311/emqx-performance-tuning-maximum-connections-and-file-descriptors.md))
 - [MQTT 性能测试入门指南：快速构建可靠测试平台](https://www.emqx.com/zh/blog/a-beginner-guide-to-mqtt-performance-testing) ([Edit](https://github.com/emqx/blog/blob/main/zh/202310/a-beginner-guide-to-mqtt-performance-testing.md))
 - [EMQX 与 MQTT: AI 大模型时代的分布式数据中枢](https://www.emqx.com/zh/blog/emqx-mqtt-and-ai) ([Edit](https://github.com/emqx/blog/blob/main/zh/202310/emqx-mqtt-and-ai.md))
@@ -338,6 +339,7 @@ The easiest way to start MQTT service. Connect your IoT devices to any cloud wit
 ## [EMQX Enterprise](https://www.emqx.com/zh/blog/category/enterprise)
 The world's most scalable and reliable MQTT messaging platform to connect, move and process your data in business-critical scenarios for the IoT era.
 
+- [EMQX 性能调优：TCP SYN 队列与 Accept 队列](https://www.emqx.com/zh/blog/emqx-performance-tuning-tcp-syn-queue-and-accept-queue) ([Edit](https://github.com/emqx/blog/blob/main/zh/202312/emqx-performance-tuning-tcp-syn-queue-and-accept-queue.md))
 - [利用 EMQX 和 Neuron 为智能制造构建坚实数据基础](https://www.emqx.com/zh/blog/consolidating-the-foundation-of-smart-manufacturing-with-emqx-and-neuron) ([Edit](https://github.com/emqx/blog/blob/main/zh/202312/consolidating-the-foundation-of-smart-manufacturing-with-emqx-and-neuron.md))
 - [利用 EMQX 和 Neuron 融合 OT 和 IT 数据源](https://www.emqx.com/zh/blog/first-step-to-a-smart-factory) ([Edit](https://github.com/emqx/blog/blob/main/zh/202312/first-step-to-a-smart-factory.md))
 - [工业智能：英特尔与 EMQ 推出联合工业解决方案](https://www.emqx.com/zh/blog/intel-and-emq-launch-joint-industrial-solution) ([Edit](https://github.com/emqx/blog/blob/main/zh/202311/intel-and-emq-launch-joint-industrial-solution.md))
@@ -407,6 +409,7 @@ Build a reliable, efficient and industry-specific Internet of Vehicles platform 
 
 ## [Industrial IoT | Unified Namespace | Sparkplug](https://www.emqx.com/zh/blog/category/industrial-iot)
 
+- [基于 Neuron 和 EMQX 的智能制造数据管理实践](https://www.emqx.com/zh/blog/practical-data-management-for-smart-manufacturing) ([Edit](https://github.com/emqx/blog/blob/main/zh/202312/practical-data-management-for-smart-manufacturing.md))
 - [利用 EMQX 和 Neuron 为智能制造构建坚实数据基础](https://www.emqx.com/zh/blog/consolidating-the-foundation-of-smart-manufacturing-with-emqx-and-neuron) ([Edit](https://github.com/emqx/blog/blob/main/zh/202312/consolidating-the-foundation-of-smart-manufacturing-with-emqx-and-neuron.md))
 - [利用 EMQX 和 Neuron 融合 OT 和 IT 数据源](https://www.emqx.com/zh/blog/first-step-to-a-smart-factory) ([Edit](https://github.com/emqx/blog/blob/main/zh/202312/first-step-to-a-smart-factory.md))
 - [智能制造：工业数字化转型的关键因素与成功策略](https://www.emqx.com/zh/blog/a-digital-transformation-journey-to-smart-manufacturing) ([Edit](https://github.com/emqx/blog/blob/main/zh/202312/a-digital-transformation-journey-to-smart-manufacturing.md))
