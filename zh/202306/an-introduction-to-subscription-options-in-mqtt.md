@@ -16,7 +16,7 @@ QoS 是最常用的一个订阅选项，它表示服务端在向订阅端发送�
 
 客户端可能会在订阅时指定一个小于 2 的 QoS，因为它的实现不支持 QoS 1 或者 QoS 2。而如果服务端支持的最大 QoS 小于客户端订阅时请求的最大 QoS，那么显然服务端将无法满足客户端的要求，这时服务端就会通过订阅的响应报文（SUBACK）告知订阅端最终授予的最大 QoS 等级，订阅端可以自行评估是否接受并继续通信。
 
-![image.png](https://assets.emqx.com/images/fa5915cb9df598965881cc08585c1fe7.png)
+![qos down grade when subscribe](https://assets.emqx.com/images/b1cc97bc6d3fd75d7a36d896dd96eeb4.png)
 
 一个简单的计算公式：
 
@@ -26,7 +26,7 @@ QoS 是最常用的一个订阅选项，它表示服务端在向订阅端发送�
 
 但是，我们在订阅时请求的最大 QoS，并不能限制发布端发布消息时使用的 QoS。当我们订阅时请求的最大 QoS，小于消息发布时的 QoS 时，为了尽可能地投递消息，服务端不会忽略这些消息，而是会在转发时对这些消息的 QoS 进行降级处理。
 
-![image.png](https://assets.emqx.com/images/b0f2a8b2c655ec59cf5c6338eb1217cc.png)
+![qos down grade when publish](https://assets.emqx.com/images/37dda6930ee7cabbf0867a59de3a415e.png)
 
 同样，我们也有一个简单的计算公式：
 
@@ -40,7 +40,7 @@ No Local 只有 0 和 1 两个可取值，为 1 表示服务端不能将消息�
 
 这个选项通常被用在桥接场景中。桥接本质上是两个 MQTT Server 建立了一个 MQTT 连接，然后相互订阅一些主题，Server 将客户端的消息转发给另一个 Server，而另一个 Server 则可以将消息继续转发给它的客户端。
 
-![image.png](https://assets.emqx.com/images/84ceaaf5c2e513e6d775d6d3929e672b.png)
+![no local](https://assets.emqx.com/images/dbeae9e7cd1106d4bcf82bf56fb990e6.png)
 
 那么最简单的一个例子，我们假设两个 MQTT Server 分别是 Server A 和 Server B，它们分别向对方订阅了 `#` 主题。现在，Server A 将一些来自客户端的消息转发给了 Server B，而当 Server B 查找匹配的订阅时，Server A 也会位于其中。如果 Server B 将消息转发给了 Server A，那么同样 Server A 在收到消息后又会把它们再次转发给 Server B，这样就陷入了无休止的转发风暴。
 
@@ -56,7 +56,7 @@ Retain As Published 与 No Local 一样，同样也是主要适用于桥接场�
 
 那么在 MQTT 5.0 中，我们可以让桥接的服务端在订阅时将 Retain As Published 选项设置为 1，来解决这个问题。
 
-![image.png](https://assets.emqx.com/images/ef5ed6d09cc7f52e5e4ea7ae123218e2.png)
+![retainas published](https://assets.emqx.com/images/57787f3d84987f4c7270e13a6a3e00af.png)
 
 ### Retain Handling
 
