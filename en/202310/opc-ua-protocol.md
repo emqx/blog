@@ -118,11 +118,17 @@ The most important node categories in OPC UA are objects, variables and methods.
 
 Hardware providers support OPC UA in two ways: by embedding an OPC UA server in the device or offering software on a PC that obtains data through a private protocol and exposes it to other platforms via OPC UA. In some mid-range and high-end PLCs, there are OPC UA server integrations such as Siemens S71200/1500, while Siemens also provides software like WINCC to indirectly provide data from other devices to third parties through OPC/OPC UA.
 
+![opc ua client and server](https://assets.emqx.com/images/e9398279706d0e493388a5c60fede41f.png)
+
 After the data is exposed through the OPC UA Server, it can be accessed using the two access modes specified by the OPC UA protocol: the Request/Response mode and the Publish/Subscribe mode. To begin, the client must establish a connection to the server, which will create a session channel between the client and server.
 
 In request/response mode, the client application can request some standard services from the server through the session channel, such as: reading raw data from the node, writing data to the node, invoking remote methods, and so on.
 
+![request/response mode](https://assets.emqx.com/images/f7c47ebeb1f5da8bc6290b6b014b106e.png)
+
 In publish/subscribe mode, each client can create any number of server subscriptions, and when the server's node data changes, notification messages are instantly pushed to the client.
+
+![publish/subscribe mode](https://assets.emqx.com/images/16eedf2be88eb090746d9a7de6ad40e5.png)
 
 Generally, end users don't have to worry about the processes mentioned above. Their main concerns are the OPC UA server address, user login policy, communication security policy, and the address where they can access the data.
 
