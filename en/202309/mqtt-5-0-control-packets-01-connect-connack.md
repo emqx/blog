@@ -135,14 +135,14 @@ The Variable Header of the CONNACK packet contains the following fields in order
 | 0x21           | [Receive Maximum](https://www.emqx.com/en/blog/mqtt5-flow-control) | Two Byte Integer     |
 | 0x24           | Maximum QoS                                                  | Byte                 |
 | 0x25           | Retain Available                                             | Bytes                |
-| 0x27           | Maximum Packet Size                                          | Four Byte Integer    |
+| 0x27           | [Maximum Packet Size](https://www.emqx.com/en/blog/best-practices-of-maximum-packet-size-in-mqtt)                                          | Four Byte Integer    |
 | 0x12           | Assigned Client Identifier                                   | UTF-8 Encoded String |
 | 0x22           | [Topic Alias Maximum](https://www.emqx.com/en/blog/mqtt5-topic-alias) | Two Byte Integer     |
 | 0x1F           | Reason String                                                | UTF-8 Encoded String |
 | 0x26           | [User Property](https://www.emqx.com/en/blog/mqtt5-user-properties) | UTF-8 String Pair    |
 | 0x28           | Wildcard Subscription Available                              | Byte                 |
-| 0x29           | Subscription Identifier Available                            | Bytes                |
-| 0x2A           | Shared Subscription Available                                | Byte                 |
+| 0x29           | [Subscription Identifier](https://www.emqx.com/en/blog/subscription-identifier-and-subscription-options) Available                            | Bytes                |
+| 0x2A           | [Shared Subscription](https://www.emqx.com/en/blog/introduction-to-mqtt5-protocol-shared-subscription) Available                                | Byte                 |
 | 0x13           | Server Keep Alive                                            | Two Byte Integer     |
 | 0x1A           | Response Information                                         | UTF-8 Encoded String |
 | 0x1C           | Server Reference                                             | UTF-8 Encoded String |

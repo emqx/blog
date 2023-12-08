@@ -57,7 +57,7 @@ We continue to focus on improving the user experience of our desktop client in v
 4. Fixed compatibility issues with user property data: We resolved issues related to the inability to delete user properties and the need to click twice to update property configurations, thereby improving stability and compatibility when configuring properties.
 5. Fixed compatibility issues with username and password for MQTT 3.1.1 and 5.0 versions: We fixed the issue where the default username was not passed when an anonymous connection was made and added support for validating the need to fill in the username when using passwords in MQTT 3.1.1 connections, enhancing compatibility across different MQTT versions.
 6. Fixed the order of selected connections: We ensured that when leaving a page and returning to the previously selected connection, users can quickly return to the last operated connection after switching between different pages, improving work efficiency.
-7. Added default values for subscription options when using MQTT 5.0 connections, simplifying MQTT 5.0 subscription operations and enhancing user experience.
+7. Added default values for [subscription options](https://www.emqx.com/en/blog/an-introduction-to-subscription-options-in-mqtt) when using MQTT 5.0 connections, simplifying MQTT 5.0 subscription operations and enhancing user experience.
 8. Optimized the display title of the history topic: We fixed the display issue of topic messages in the selection box when the message was too long.
 9. Fixed the display issue of message line breaks, improving message readability.
 10. Optimized the translation of various prompt messages, improving the accuracy of multilingual support.

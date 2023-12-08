@@ -35,13 +35,13 @@ When publishing a message, you can configure the Content-Type, specify the Paylo
 
 It supports the property configuration of Topic Alias, effectively saving bandwidth and computing resources.
 
-It supports request responses in MQTT 5.0 and provides Response Topic and Correlation Data to control the response message to be routed back to the publisher of the request.
+It supports [request responses in MQTT 5.0](https://www.emqx.com/en/blog/mqtt5-request-response) and provides Response Topic and Correlation Data to control the response message to be routed back to the publisher of the request.
 
 ### Support MQTT 5.0 subscription option
 
 Subscription options are supported in this release. The settings of No Local flag, Retain as Published flag, and Retain Handling are also supported. During the test, you can use these subscription options to change the behavior of the server.
 
-In subsequent versions, we will continue to support new features in MQTT 5.0, such as a Subscription identifier.
+In subsequent versions, we will continue to support new features in MQTT 5.0, such as a [Subscription identifier](https://www.emqx.com/en/blog/subscription-identifier-and-subscription-options).
 
  
 

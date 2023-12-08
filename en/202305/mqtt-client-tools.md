@@ -245,7 +245,7 @@ GitHub Project: [https://github.com/eclipse/mosquitto](https://github.com/eclips
 - Support for MQTT v3.1.1 and v5.0 protocols
 - Extensive command-line parameters
 - Support for SSL/TLS encryption/authentication
-- MQTT v5.0 request/response functionality
+- [MQTT v5.0 request/response](https://www.emqx.com/en/blog/mqtt5-request-response) functionality
 
 #### Installation
 

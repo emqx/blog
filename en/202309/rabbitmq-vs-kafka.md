@@ -34,7 +34,7 @@ On the other hand, AMQP's biggest drawback is its complexity. It has a rich set 
 
 Kafka, on the other hand, uses its own protocol known as the Kafka Wire Protocol. It's a simple, high-performance protocol that enables the communication between Kafka brokers and Kafka clients.
 
-Kafka Wire Protocol is TCP-based and designed to be light and fast. It is a binary protocol that uses a request-response pattern. Each request and response pair is identified with a unique API key.
+Kafka Wire Protocol is TCP-based and designed to be light and fast. It is a binary protocol that uses a [request-response pattern](https://www.emqx.com/en/blog/mqtt5-request-response). Each request and response pair is identified with a unique API key.
 
 The Kafka Wire Protocol is intentionally kept simple to ensure high-throughput and low-latency communication. It supports multiple types of requests, like produce, fetch, delete, and more. This gives developers a lot of control and flexibility.
 

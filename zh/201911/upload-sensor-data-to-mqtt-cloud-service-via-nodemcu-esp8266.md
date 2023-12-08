@@ -172,8 +172,7 @@
        // dht11 begin
        dht.begin();
    }
-   
-   
+    
    void loop() {
        client.loop();
        unsigned long currentMillis = millis();
@@ -217,7 +216,6 @@
    
    from paho.mqtt import client as mqtt_client
    
-   
    BROKER = 'broker.emqx.io'
    PORT = 1883
    TOPIC = "temp_hum/emqx"
@@ -226,7 +224,6 @@
    USERNAME = 'emqx'
    PASSWORD = 'public'
    
-   
    def on_connect(client, userdata, flags, rc):
        if rc == 0:
            print("Connected to MQTT Broker!")
@@ -234,11 +231,9 @@
        else:
            print("Failed to connect, return code {rc}".format(rc=rc), )
    
-   
    def on_message(client, userdata, msg):
        print("Received `{payload}` from `{topic}` topic".format(
            payload=msg.payload.decode(), topic=msg.topic))
-   
    
    def connect_mqtt():
        client = mqtt_client.Client(CLIENT_ID)
@@ -248,11 +243,9 @@
        client.connect(BROKER, PORT)
        return client
    
-   
    def run():
        client = connect_mqtt()
        client.loop_forever()
-   
    
    if __name__ == '__main__':
        run()
