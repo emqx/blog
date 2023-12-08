@@ -271,7 +271,7 @@ The first terminal window will print the content of the received message, we can
 
 ## Feature 6: Request-Response
 
-MQTT 5.0 greatly improves support for the request-response pattern. The requester can specify a response topic (Response Topic) in the request message, and the responder needs to publish a response message to the response topic.
+MQTT 5.0 greatly improves support for the [request-response pattern](https://www.emqx.com/en/blog/mqtt5-request-response). The requester can specify a response topic (Response Topic) in the request message, and the responder needs to publish a response message to the response topic.
 
 This is very useful when there are multiple requesters at the same time, and the responder needs to correctly reply the response to one of the requesters. Different requesters only need to specify different response topics. A simple way to do this is to include your own Client ID in the response subject.
 

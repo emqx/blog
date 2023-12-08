@@ -27,7 +27,7 @@ In addition, except for the fan-in scenario where XMeter Cloud used 20 test clie
 
 ### Test 1: Performance of EMQX with Different QoS
 
-The higher the QoS level, the more complex the corresponding MQTT packet interaction process, so the system resources consumed to deliver the QoS message will be more. The performance overhead of different QoS is one of the hottest frequently asked questions.
+The higher the QoS level, the more complex the corresponding [MQTT packet](https://www.emqx.com/en/blog/introduction-to-mqtt-control-packets) interaction process, so the system resources consumed to deliver the QoS message will be more. The performance overhead of different QoS is one of the hottest frequently asked questions.
 
 In this scenario, 1,000 publishers and 1,000 subscribers used messages with a Payload size of 128 bytes for one-to-one communication. There were a total of 1,000 topics, and each topic had one publisher and one subscriber.
 

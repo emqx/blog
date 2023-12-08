@@ -231,8 +231,8 @@ EMQX and NanoMQ have committed to advancing the MQTT standard. They are pioneers
 | MQTT Bridging          | Yes      | Yes           | Yes        | Yes         |
 | Shared Subscription    | Yes      | Yes           | Yes        | Yes         |
 | Retained Message       | Yes      | Yes           | Yes        | Yes         |
-| Will Message           | Yes      | Yes           | Yes        | Yes         |
-| MQTT Request/Response  | Yes      | Yes           | Yes        | Yes         |
+| [Will Message](https://www.emqx.com/en/blog/use-of-mqtt-will-message)           | Yes      | Yes           | Yes        | Yes         |
+| [MQTT Request/Response](https://www.emqx.com/en/blog/mqtt5-request-response)  | Yes      | Yes           | Yes        | Yes         |
 | LB (Proxy Protocol)    | Yes      | No            | No         | Yes         |
 | Multi-protocol Gateway | Yes      | No            | No         | No          |
 | CoAP                   | Yes      | No            | No         | No          |

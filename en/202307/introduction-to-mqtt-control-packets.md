@@ -88,7 +88,7 @@ Lastly, we have the Payload. The Variable Header of the packet can be seen as it
 
 For example, in the **PUBLISH** packet, the Payload is used to carry the actual application message, which is the primary function of the **PUBLISH** packet. The QoS, Retain, and other fields in the Variable Header of the **PUBLISH** packet provide additional capabilities related to the application message.
 
-The **SUBSCRIBE** packet follows a similar pattern. The Payload contains the topics to subscribe to and their corresponding subscription options, which is the primary task of the **SUBSCRIBE** packet.
+The **SUBSCRIBE** packet follows a similar pattern. The Payload contains the topics to subscribe to and their corresponding [subscription options](https://www.emqx.com/en/blog/an-introduction-to-subscription-options-in-mqtt), which is the primary task of the **SUBSCRIBE** packet.
 
  
 

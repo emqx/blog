@@ -145,7 +145,7 @@ CoAP refers to many design ideas of HTTP, and it also improves many design detai
 
 - It is based on message model
 - Based on UDP Protocol, transport layer supports restricted devices
-- It uses request/response model similar to HTTP request, and HTTP is text format, while CoAP is binary format, which is more compact than HTTP
+- It uses [request/response](https://www.emqx.com/en/blog/mqtt5-request-response) model similar to HTTP request, and HTTP is text format, while CoAP is binary format, which is more compact than HTTP
 - It supports two-way communication
 - It has the characteristics of light-weight and low power consumption
 - It supports reliable transmission, data re-transmission, and block transmission to ensure reliable arrival of data

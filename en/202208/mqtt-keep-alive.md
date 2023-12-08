@@ -6,7 +6,7 @@ The MQTT protocol is hosted on top of the TCP protocol, which is connection-orie
 
 ### At Connection
 
-When an [MQTT client](https://www.emqx.com/en/blog/mqtt-client-tools) creates a connection to the [MQTT broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker), the Keep Alive mechanism can be enabled between the communicating parties by setting the Keep Alive variable header field in the connection request protocol packet to a non-zero value. Keep Alive is an integer from 0 to 65535, representing the maximum time in seconds allowed to elapse between MQTT protocol packets sent by the client.
+When an [MQTT client](https://www.emqx.com/en/blog/mqtt-client-tools) creates a connection to the [MQTT broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker), the Keep Alive mechanism can be enabled between the communicating parties by setting the Keep Alive variable header field in the connection request protocol packet to a non-zero value. Keep Alive is an integer from 0 to 65535, representing the maximum time in seconds allowed to elapse between [MQTT packets](https://www.emqx.com/en/blog/introduction-to-mqtt-control-packets) sent by the client.
 
 When the broker receives a connection request from a client, it checks the value of the Keep Alive field in the variable header. When there is a value, the broker will enable the Keep Alive mechanism.
 
