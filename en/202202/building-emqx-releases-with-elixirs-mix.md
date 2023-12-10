@@ -12,7 +12,7 @@ In this post, we describe some of the challenges we encountered while adapting a
 
 At the time of writing, for those who want to try it now, just clone the `master` branch of [EMQX](https://github.com/emqx/emqx/), run `make emqx-elixir` and have fun!
 
-## Umbrella?
+## Unified umbrella project for both rebar and mix
 
 The first question we faced was: how to handle the multiple applications that already exist in EMQX?
 
