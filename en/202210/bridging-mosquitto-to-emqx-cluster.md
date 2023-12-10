@@ -1,13 +1,21 @@
-As a small and lightweight open-source MQTT broker, [Mosquitto](https://www.emqx.com/en/blog/mosquitto-mqtt-broker-pros-cons-tutorial-and-modern-alternatives) is written in C/C++ with a single-core and single-thread architecture, can be deployed on embedded devices with limited resources to access a small number of MQTT device terminals and implements [MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5) and 3.1.1 protocols. Mosquitto fully supports the MQTT protocol features but is weak in clustering, which makes it difficult for the official and third-party cluster solutions to support the performance requirements of IoT for large-scale mass connectivity.
+## The Limitation of Mosquitto MQTT Broker
 
-Therefore, Mosquitto is not suitable for MQTT servers for large-scale services. However, it can run on any low-power microcontroller (including embedded sensors, mobile phone devices, and embedded microprocessors) thanks to its lightweight and simplicity. It is one of the good technology options for IoT edge message access. Combined with its bridging function, Mosquitto can realize local processing and cloud-based passthrough of messages.
+As a small and lightweight open-source MQTT broker, [Mosquitto]((https://www.emqx.com/en/blog/mosquitto-mqtt-broker-pros-cons-tutorial-and-modern-alternatives)) is written in C/C++ with a single-core and single-thread architecture, can be deployed on embedded devices with limited resources to access a small number of MQTT device terminals and implements [MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5) and 3.1.1 protocols. 
 
-As a large-scale distributed MQTT message broker for IoT, EMQX can efficiently and reliably connect to massive IoT devices, and process and distribute messages and event flow data in real-time. EMQX nodes can be bridged by other types of MQTT servers and [MQTT cloud services ](https://www.emqx.com/en/cloud)for cross-platform message subscription & sending. This document will use a configuration example to demonstrate how to bridge Mosquitto MQTT messages to [EMQX](https://www.emqx.com/en/products/emqx).
+However, Mosquitto is weak in clustering, which makes it difficult for the official and third-party cluster solutions to support the performance requirements of IoT for large-scale mass connectivity. 
+
+## Bridging Mosquitto to EMQX for Large-scale Scenarios
+
+Mosquitto can run on any low-power microcontroller (including embedded sensors, mobile phone devices, and embedded microprocessors) thanks to its lightweight and simplicity. It is one of the good technology options for IoT edge message access. Combined with its bridging function, Mosquitto can realize local processing and cloud-based passthrough of messages.
+
+As a large-scale distributed MQTT broker for IoT, [EMQX](https://www.emqx.com/en/products/emqx) can efficiently and reliably connect to massive IoT devices, and process and distribute messages and event flow data in real-time. EMQX nodes can be bridged by other types of MQTT servers or cloud services for cross-platform message subscription & sending. This document will use a configuration example to demonstrate how to bridge Mosquitto MQTT messages to EMQX.
+
+
 
 ![Brige Mosquitto MQTT messages](https://assets.emqx.com/images/2caae752676b2cde77bb5d532c250636.jpg)
 
 
-## Scenario description
+## Scenario Description
 
 Suppose there is an EMQX server cluster `emqx1` and a Mosquitto server. We need to create a bridge on Mosquitto to forward all sensor topic `sensor/#` messages to the `emqx1` cluster and subscribe to all control topics `control/#` from EMQX.
 
@@ -28,7 +36,7 @@ We used Mosquitto 2.0.14 in this article. See [Mosquitto Download](https://mosqu
 | 127.0.0.1   | 1883               |
 
 
-## A simple example of Mosquitto MQTT bridge
+## A Simple Example of Mosquitto MQTT Bridge
 
 To configure the Mosquitto bridge, you need to modify the `mosquitto.conf` file after installation. For each bridge, the basic items to be configured are:
 
@@ -116,7 +124,7 @@ Upon completion of the configuration, Mosquitto shall be restarted to make the M
 
 No parameters need to be configured when the public server is used. In practical applications, in order to successfully bridge Mosquitto MQTT messages, it is necessary to decide whether to configure the corresponding client [authentication](https://www.emqx.io/docs/en/v5.0/security/authn/authn.html) and [authorization](https://www.emqx.io/docs/en/v5.0/security/authz/authz.html) information depending on the security configuration of users’ EMQX.
 
-## Test configuration
+## Test Configuration
 
 We can use the [MQTT client tool](https://www.emqx.com/en/blog/mqtt-client-tools) to test whether the configuration of the MQTT bridge is successful. Here [MQTTX CLI](https://mqttx.app/cli) is used, which is a powerful and easy-to-use MQTT 5.0 command line tool developed by EMQ.
 
