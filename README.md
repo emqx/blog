@@ -81,6 +81,7 @@ Get to know the preferred protocol in IoT from beginner to master.
 
 ## [MQTT Client](https://www.emqx.com/en/blog/category/mqtt-client)
 
+- [MQTTBox Guide: Features, Demos, and Using Tips](https://www.emqx.com/en/blog/connecting-to-emqx-cloud-with-mqttbox) ([Edit](https://github.com/emqx/blog/blob/main/en/202312/connecting-to-emqx-cloud-with-mqttbox.md))
 - [MQTT Explorer Guide: Features, Demos, and Using Tips](https://www.emqx.com/en/blog/connecting-to-emqx-cloud-with-mqtt-explorer) ([Edit](https://github.com/emqx/blog/blob/main/en/202312/connecting-to-emqx-cloud-with-mqtt-explorer.md))
 - [MQTT over lwIP Practice: A Step-by-Step Tutorial](https://www.emqx.com/en/blog/mqtt-over-lwip) ([Edit](https://github.com/emqx/blog/blob/main/en/202310/mqtt-over-lwip.md))
 - [MQTTX: All-In-One Testing and Debugging for IoT Apps](https://www.emqx.com/en/blog/mqttx-all-in-one-testing-and-debugging-for-iot-apps) ([Edit](https://github.com/emqx/blog/blob/main/en/202307/mqttx-all-in-one-testing-and-debugging-for-iot-apps.md))
@@ -91,7 +92,6 @@ Get to know the preferred protocol in IoT from beginner to master.
 - [MQTTX CLI: A Powerful and Easy-to-Use MQTT CLI](https://www.emqx.com/en/blog/powerful-and-easy-to-use-mqtt-5-command-line-tool) ([Edit](https://github.com/emqx/blog/blob/main/en/202208/powerful-and-easy-to-use-mqtt-5-command-line-tool.md))
 - [CocoaMQTT v2.0: The first iOS MQTT 5.0 client](https://www.emqx.com/en/blog/ios-mqtt5-client) ([Edit](https://github.com/emqx/blog/blob/main/en/202111/ios-mqtt5-client.md))
 - [Using MQTTLens to connect to EMQX Cloud](https://www.emqx.com/en/blog/connecting-to-emqx-cloud-with-mqttlens) ([Edit](https://github.com/emqx/blog/blob/main/en/202108/connecting-to-emqx-cloud-with-mqttlens.md))
-- [Using MQTTBox to connect to EMQX Cloud](https://www.emqx.com/en/blog/connecting-to-emqx-cloud-with-mqttbox) ([Edit](https://github.com/emqx/blog/blob/main/en/202108/connecting-to-emqx-cloud-with-mqttbox.md))
 - [Using MQTT.fx to connect to EMQX Cloud](https://www.emqx.com/en/blog/connecting-to-emqx-cloud-with-mqttfx) ([Edit](https://github.com/emqx/blog/blob/main/en/202108/connecting-to-emqx-cloud-with-mqttfx.md))
 - [Comparison of Python MQTT Clients](https://www.emqx.com/en/blog/comparision-of-python-mqtt-client) ([Edit](https://github.com/emqx/blog/blob/main/en/202010/comparision-of-python-mqtt-client.md))
 - [Introduction to the Commonly Used MQTT Client Library](https://www.emqx.com/en/blog/introduction-to-the-commonly-used-mqtt-client-library) ([Edit](https://github.com/emqx/blog/blob/main/en/201911/introduction-to-the-commonly-used-mqtt-client-library.md))

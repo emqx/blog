@@ -6,6 +6,12 @@ Recently, [EMQX Cloud](https://www.emqx.com/en/cloud), a fully managed MQTT clou
 
 In this tutorial, we'll show you step-by-step how to integrate Confluent Cloud with EMQX Cloud in four detailed steps.
 
+<p>
+<lite-youtube
+  videoid="vJFqhi1AqFc"
+/>
+</p>
+
 ## Step 1: Set up a Confluent Cloud Cluster
 
 To begin using Confluent Cloud, visit [confluent.io/get-started/](http://confluent.io/get-started/) and create an account. Upon signing up, you will receive a $400 credit to use within the first 30 days.
