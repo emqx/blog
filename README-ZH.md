@@ -717,6 +717,7 @@ Guarantee the availability and reliability of the IoT platform.
 
 ## [应用案例](https://www.emqx.com/zh/blog/category/use-cases)
 
+- [EMQX 在智能垃圾分类与监测项目中的实践应用](https://www.emqx.com/zh/blog/application-of-emqx-in-smart-waste-sorting-and-monitoring) ([Edit](https://github.com/emqx/blog/blob/main/zh/202312/application-of-emqx-in-smart-waste-sorting-and-monitoring.md))
 - [实时数采、云边协同：EMQ 助力大型新能源储能系统智能运营](https://www.emqx.com/zh/blog/empowers-intelligent-operation-of-large-scale-new-energy-storage-systems) ([Edit](https://github.com/emqx/blog/blob/main/zh/202312/empowers-intelligent-operation-of-large-scale-new-energy-storage-systems.md))
 - [工业智能：英特尔与 EMQ 推出联合工业解决方案](https://www.emqx.com/zh/blog/intel-and-emq-launch-joint-industrial-solution) ([Edit](https://github.com/emqx/blog/blob/main/zh/202311/intel-and-emq-launch-joint-industrial-solution.md))
 - [风电场远程监控与运维：EMQ 新能源风场互联解决方案](https://www.emqx.com/zh/blog/iot-solution-for-wind-farm-remote-monitoring-and-maintenance) ([Edit](https://github.com/emqx/blog/blob/main/zh/202311/iot-solution-for-wind-farm-remote-monitoring-and-maintenance.md))
