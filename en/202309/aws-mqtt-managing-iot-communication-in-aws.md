@@ -170,13 +170,12 @@ The table below compares AWS IoT Core with EMQX Cloud in various aspects:
 
 | **AWS IoT Core**                                             | **EMQX Cloud**                                               |
 | :----------------------------------------------------------- | :----------------------------------------------------------- |
-| Limited-feature support for MQTT v3.1.1.                     | Full support for MQTT v5.0 and v3.1.1.                       |
-| Vendor lock-in proprietary client SDK                        | [30+ open-source MQTT client ](https://www.emqx.com/en/mqtt-client-sdk)SDKs. |
-| Integration only with AWS services.                          | Bridge data to 40+ cloud services or self-hosted resources.  |
-| Pricing is based on consumption, an error may result in extremely high usage consumption. | Fixed pricing modes, never **overspent**.                    |
-| Maximum concurrent client connections per account - **500, 000**. | Up to **unlimited** connections.                             |
+| Differences from MQTT specifications<br>[[Differences](https://docs.aws.amazon.com/iot/latest/developerguide/mqtt.html#mqtt-differences)] | Full support for MQTT v5.0 and v3.1.1.                       |
+| QoS (Quality of Service ) 0,1                                | QoS (Quality of Service ) 0,1, 2                             |
+| AWS Client SDK                                               | [30+ open-source MQTT client ](https://www.emqx.com/en/mqtt-client-sdk)SDKs. |
+| Integrations with AWS services.                              | 40+ out-of-the-box integrations with cloud services or self-hosted resources. |
+| Additional charges apply for using other key services like Lambda or CloudWatch | Fixed pricing modes, never **overspent**.                    |
 | Troubleshooting with docs or paid experts                    | Exclusive expert team assist you with any issues **7 x 24**. |
-
 
 
 
