@@ -7,6 +7,7 @@
 ## [MQTT Tutorials](https://www.emqx.com/ja/blog/category/mqtt-protocol)
 Get to know the preferred protocol in IoT from beginner to master.
 
+- [MQTT のサブスクリプション オプションの解説](https://www.emqx.com/ja/blog/an-introduction-to-subscription-options-in-mqtt) ([Edit](https://github.com/emqx/blog/blob/main/ja/202312/an-introduction-to-subscription-options-in-mqtt.md))
 - [Will Message の説明と使用例 ( Last Will 機能 & テスト) | MQTT 5 の仕様](https://www.emqx.com/ja/blog/use-of-mqtt-will-message) ([Edit](https://github.com/emqx/blog/blob/main/ja/202311/use-of-mqtt-will-message.md))
 - [MQTT Reason Code の紹介と参考資料](https://www.emqx.com/ja/blog/mqtt5-new-features-reason-code-and-ack) ([Edit](https://github.com/emqx/blog/blob/main/ja/202311/mqtt5-new-features-reason-code-and-ack.md))
 - [MQTT Keep Alive パラメータの全面解説](https://www.emqx.com/ja/blog/mqtt-keep-alive) ([Edit](https://github.com/emqx/blog/blob/main/ja/202310/mqtt-keep-alive.md))
