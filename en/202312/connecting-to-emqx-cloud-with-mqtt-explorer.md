@@ -142,8 +142,8 @@ These features make the Topic Tree an essential tool for effective MQTT topic ma
 **Q: Why are** `#` and `$SYS/#` the default subscriptions?  
 **A**: `#` is used as a wildcard to match all topics, and `$SYS/#` is for system status information from the MQTT broker. This setup provides immediate, broad topic coverage upon connection.
 
+## MQTTX: The Best MQTT Explorer Alternative You Should Try In 2024
 
-## MQTTX: Alternative to MQTT Explorer
 Unfortunately, MQTT Explorer is no longer actively maintained. We recommend using MQTTX, accessed at [mqttx.app](https://mqttx.app/), as an alternative. MQTTX is an All-in-One MQTT client toolbox compatible with macOS, Windows, Linux, and Docker. It offers versions for desktop, CLI, and web. MQTTX fully adheres to MQTT standards 5.0, 3.1.1, and 3.1, enhancing the development and testing of MQTT applications with advanced features such as Scripts, Benchmarks, and IoT Data Simulation.
 
 ![MQTTX](https://assets.emqx.com/images/3240de906bd11d729f68863cbf5768aa.png)

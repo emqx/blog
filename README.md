@@ -252,6 +252,7 @@ EMQX is the world's most scalable open-source MQTT broker with a high performanc
 ## [EMQX Cloud](https://www.emqx.com/en/blog/category/cloud)
 The easiest way to start MQTT service. Connect your IoT devices to any cloud without the burden of maintaining infrastructure.
 
+- [Seamlessly Integrating EMQX Cloud with Upstash for Kafka: A Step-by-Step Tutorial](https://www.emqx.com/en/blog/seamlessly-integrating-emqx-cloud-with-upstash-for-kafka) ([Edit](https://github.com/emqx/blog/blob/main/en/202312/seamlessly-integrating-emqx-cloud-with-upstash-for-kafka.md))
 - [Seamlessly Integrating EMQX Cloud with Confluent Cloud: A Step-by-Step Tutorial](https://www.emqx.com/en/blog/seamlessly-integrating-emqx-cloud-with-confluent-cloud) ([Edit](https://github.com/emqx/blog/blob/main/en/202311/seamlessly-integrating-emqx-cloud-with-confluent-cloud.md))
 - [Elevating IIoT: Unleashing the Power of MQTT, Edge Intelligence, and Timescale](https://www.emqx.com/en/blog/unleashing-the-power-of-mqtt-edge-intelligence-and-timescale) ([Edit](https://github.com/emqx/blog/blob/main/en/202311/unleashing-the-power-of-mqtt-edge-intelligence-and-timescale.md))
 - [EMQX Cloud Serverless is Now Available on Google Cloud in Asia-Pacific Region](https://www.emqx.com/en/blog/emqx-cloud-serverless-on-google-cloud-asia-pacific) ([Edit](https://github.com/emqx/blog/blob/main/en/202311/emqx-cloud-serverless-on-google-cloud-asia-pacific.md))
