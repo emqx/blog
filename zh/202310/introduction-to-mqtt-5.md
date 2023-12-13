@@ -24,7 +24,7 @@ MQTT 5 与之前的版本不同，它能够为每个确认报文提供一个原�
 
 这个功能允许客户端指定服务器在客户端断开连接后应将会话保持多长时间。在之前的 MQTT 版本中，会话要么在断开连接后立即结束，要么无限期地保持下去。使用 MQTT 5，您可以指定一个具体的时间段，在断开连接后，会话仍然有效。这样可以更灵活地管理会话的生命周期，并节省服务器的资源。
 
-> 详细教程请参考：[Clean Start 与 Session Expiry Interval 介绍与示例 | MQTT 5.0 特性详解](https://www.emqx.com/zh/blog/mqtt5-new-feature-clean-start-and-session-expiry-interval)
+> 详细教程请参考：[Clean Start 与 Session Expiry Interval 介绍与示例](https://www.emqx.com/zh/blog/mqtt5-new-feature-clean-start-and-session-expiry-interval)
 
 ### 3. 主题别名：减少消息头部的开销
 
@@ -44,7 +44,7 @@ MQTT 5 引入了主题别名，以减少消息头部的开销。在之前的版�
 
 MQTT 5 让客户端可以指定如何接收每个订阅主题的消息。比如，客户端可以指定他们是否接收某个订阅的保留消息，或者是否接收和订阅具有相同 QoS（服务质量）级别的消息。
 
-> 详细教程请参考：[MQTT 订阅选项的使用](https://www.emqx.com/zh/blog/an-introduction-to-subscription-options-in-mqtt)
+> 详细教程请参考：[MQTT 订阅选项介绍与示例](https://www.emqx.com/zh/blog/an-introduction-to-subscription-options-in-mqtt)
 
 ### 6. 请求/响应：允许客户端回复指定主题
 
@@ -52,13 +52,15 @@ MQTT 5 让客户端可以指定如何接收每个订阅主题的消息。比如�
 
 在早期的 MQTT 版本中，如果客户端想要回复一条消息，它必须把回复发布到一个主题，而原始发送者必须订阅那个主题才能收到回复。使用 MQTT 5 的请求/响应功能，客户端和服务器之间的通信变得更高效和简洁。
 
-> 详细教程请参考：[请求响应 - MQTT 5.0 新特性](https://www.emqx.com/zh/blog/mqtt5-request-response)
+> 详细教程请参考：[请求 / 响应介绍与示例](https://www.emqx.com/zh/blog/mqtt5-request-response)
 
 ### 7. 共享订阅：订阅者负载均衡功能
 
 这个功能让多个客户端可以共享一个订阅。当一条消息发布到一个共享主题时，服务器会把消息分发给共享订阅中的某个客户端，从而实现消息的负载均衡。
 
 这个功能在有多个服务实例运行，并且想要平均分配工作量的场景中非常有用。
+
+>详细教程请参考：[共享订阅介绍与示例](https://www.emqx.com/zh/blog/introduction-to-mqtt5-protocol-shared-subscription)
 
 ## 现有 Broker 和客户端 SDK 对 MQTT 5.0 协议的支持情况
 
@@ -83,6 +85,7 @@ MQTT 5.0 协议得到了物联网社区的广泛欢迎，许多 [MQTT Broker](ht
     </div>
     <a href="https://accounts-zh.emqx.com/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a>
 </section>
+
 
 ### 2. 更新客户端库
 

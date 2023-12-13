@@ -60,6 +60,8 @@ This feature allows multiple clients to share a subscription. When a message is 
 
 This feature is particularly useful in scenarios where you have multiple instances of a service running, and you want to distribute the workload evenly among them.
 
+> Learn more in our detailed guide to [MQTT Shared Subscription](https://www.emqx.com/en/blog/introduction-to-mqtt5-protocol-shared-subscription).
+
 ## Current Support of Broker and Client SDKs in MQTT 5.0
 
 The MQTT 5.0 protocol has been well received by the IoT community, and numerous [MQTT brokers](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) and client Software Development Kits (SDKs) have added support for it. Major MQTT brokers, like [EMQX](https://www.emqx.io/), [Mosquitto](https://www.emqx.com/en/blog/mosquitto-mqtt-broker-pros-cons-tutorial-and-modern-alternatives) and [NanoMQ](https://nanomq.io/), have already implemented MQTT 5.0 features in their platforms, allowing users to leverage the new protocol's benefits.
