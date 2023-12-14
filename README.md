@@ -508,6 +508,7 @@ MQTTX is a Fully Open-source MQTT 5.0 cross-platform Desktop Client, makes it ea
 ## [Neuron - IIoT Connectivity Server](https://www.emqx.com/en/blog/category/neuron)
 IoT edge industrial protocol gateway software, which supports one-stop access to dozens of industrial protocols and converts them into MQTT protocol to access the cloud industrial IoT platform. It just requires ultra-low resource consumption, and supports three major architectures of X86, ARM, and MIPS.
 
+- [Introducing NeuronEX: A Market-Driven Evolution for Industrial Data Landscape](https://www.emqx.com/en/blog/introducing-neuronex-a-market-driven-evolution-for-industrial-data-landscape) ([Edit](https://github.com/emqx/blog/blob/main/en/202312/introducing-neuronex-a-market-driven-evolution-for-industrial-data-landscape.md))
 - [Unleashing the Renewable Energy: MQTT Platform for Wind Farm Remote Monitoring and Maintenance](https://www.emqx.com/en/blog/mqtt-platform-for-wind-farm-remote-monitoring-and-maintenance) ([Edit](https://github.com/emqx/blog/blob/main/en/202312/mqtt-platform-for-wind-farm-remote-monitoring-and-maintenance.md))
 - [A Practical Guide to Bridging IEC 61850 Data to MQTT](https://www.emqx.com/en/blog/a-guide-on-bridging-iec-61850-data-to-mqtt) ([Edit](https://github.com/emqx/blog/blob/main/en/202312/a-guide-on-bridging-iec-61850-data-to-mqtt.md))
 - [IEC 61850 Protocol: Features, Information Model, and Combination with MQTT](https://www.emqx.com/en/blog/iec-61850-protocol) ([Edit](https://github.com/emqx/blog/blob/main/en/202311/iec-61850-protocol.md))
