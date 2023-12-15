@@ -2,7 +2,7 @@
 
 但你可能会发现，在某些情况下，即便当前服务端的 MQTT 连接总数并未达到文件描述符限制，客户端的连接请求仍然失败。当你运行以下命令，你将看到以下 Overflowed 和 SYN Dropped 计数在不断增加：
 
-```
+```bash
 $ watch -d 'netstat -s | grep -i "listen"'
     2091 times the listen queue of a socket overflowed
     3418 SYNs to LISTEN sockets dropped
@@ -55,13 +55,13 @@ SYN Cookie 机制被设计用于解决这一问题。简单来说，当启用这
 
 不同类型和版本的操作系统中，`net.ipv4.tcp_syncookies` 的默认值可能不同，你可以运行以下命令查看当前值：
 
-```
+```bash
 sysctl -n net.ipv4.tcp_syncookies
 ```
 
 考虑到 SYN Cookie 可能带来的副作用，通常我们建议仅在 SYN 队列满时才启用 SYN Cookie（将 `net.ipv4.tcp_syncookies` 设置为 1），优先尽可能地增加 SYN 队列最大长度。运行以下命令以修改此选项：
 
-```
+```bash
 sysctl -w net.ipv4.tcp_syncookies=1
 ```
 
@@ -75,7 +75,7 @@ RTT 越长，那么连接请求将越容易占满 SYN 队列。假设 RTT 为 20
 
 Linux 没有提供相应的内核参数供我们直接查看当前 SYN 队列大小，但通过前文我们可以知道 SYN 队列中的连接都处于 SYN-RECEIVED 状态，因此我们可以借助 netstat 命令统计 SYN-RECEIVED 状态的连接数量来间接获得当前 SYN 队列的大小：
 
-```
+```bash
 sudo netstat -antp | grep SYN_RECV | wc -l
 ```
 
@@ -83,7 +83,7 @@ sudo netstat -antp | grep SYN_RECV | wc -l
 
 当 SYN 报文因为 SYN 队列满而被丢弃时，服务端中的以下计数会相应增加：
 
-```
+```bash
 $ netstat -s | grep "LISTEN"
     <Number> SYNs to LISTEN sockets dropped
 ```
@@ -125,7 +125,7 @@ $ netstat -s | grep "LISTEN"
 
 我们可以使用 `ss` 命令来查看当前 Accept 队列的情况。对于监听状态的套接字，`ss` 命令获得的第二列 Recv-Q 表示当前 Accept 队列的大小，第二列 Send-Q 则表示 Accept 队列的最大长度：
 
-```
+```bash
 $ ss -lnt
 LISTEN   0    1024   *:1883         *:*
 ```
@@ -134,7 +134,7 @@ LISTEN   0    1024   *:1883         *:*
 
 每当服务端因为 Accept 队列溢出而丢弃报文时，不管是第一次握手的 SYN 报文，还是第三次握手的 ACK 报文，又或者是 PSH 报文，服务端中的以下计数都会相应加 1：
 
-```
+```bash
 $ netstat -s | grep "overflowed"
     <Number> times the listen queue of a socket overflowed
 ```
