@@ -175,6 +175,7 @@ Explore more with & via EMQ.
 ## [EMQX Open Source | Broker](https://www.emqx.com/en/blog/category/emqx)
 EMQX is the world's most scalable open-source MQTT broker with a high performance that connects 100M+ IoT devices in 1 cluster, while maintaining 1M message per second throughput and sub-millisecond latency.
 
+- [EMQX Performance Tuning: TCP SYN Queue and Accept Queue](https://www.emqx.com/en/blog/emqx-performance-tuning-tcp-syn-queue-and-accept-queue) ([Edit](https://github.com/emqx/blog/blob/main/en/202312/emqx-performance-tuning-tcp-syn-queue-and-accept-queue.md))
 - [CoAP Protocol: Key Features, Use Cases, and Pros/Cons](https://www.emqx.com/en/blog/coap-protocol) ([Edit](https://github.com/emqx/blog/blob/main/en/202312/coap-protocol.md))
 - [Running MQTT on Kubernetes: A Practical Guide](https://www.emqx.com/en/blog/running-mqtt-on-kubernetes) ([Edit](https://github.com/emqx/blog/blob/main/en/202311/running-mqtt-on-kubernetes.md))
 - [EMQX Performance Tuning: Max Connections and File Descriptors](https://www.emqx.com/en/blog/emqx-performance-tuning-maximum-connections-and-file-descriptors) ([Edit](https://github.com/emqx/blog/blob/main/en/202311/emqx-performance-tuning-maximum-connections-and-file-descriptors.md))
@@ -342,6 +343,7 @@ The easiest way to start MQTT service. Connect your IoT devices to any cloud wit
 ## [EMQX Enterprise](https://www.emqx.com/en/blog/category/enterprise)
 The world's most scalable and reliable MQTT messaging platform to connect, move and process your data in business-critical scenarios for the IoT era.
 
+- [EMQX Performance Tuning: TCP SYN Queue and Accept Queue](https://www.emqx.com/en/blog/emqx-performance-tuning-tcp-syn-queue-and-accept-queue) ([Edit](https://github.com/emqx/blog/blob/main/en/202312/emqx-performance-tuning-tcp-syn-queue-and-accept-queue.md))
 - [Unleashing the Renewable Energy: MQTT Platform for Wind Farm Remote Monitoring and Maintenance](https://www.emqx.com/en/blog/mqtt-platform-for-wind-farm-remote-monitoring-and-maintenance) ([Edit](https://github.com/emqx/blog/blob/main/en/202312/mqtt-platform-for-wind-farm-remote-monitoring-and-maintenance.md))
 - [MQTT and MongoDB: Crafting Seamless Synergy for IoT Data Mangement](https://www.emqx.com/en/blog/mqtt-and-mongodb-crafting-seamless-synergy-for-iot-data-mangement) ([Edit](https://github.com/emqx/blog/blob/main/en/202311/mqtt-and-mongodb-crafting-seamless-synergy-for-iot-data-mangement.md))
 - [Running MQTT on Kubernetes: A Practical Guide](https://www.emqx.com/en/blog/running-mqtt-on-kubernetes) ([Edit](https://github.com/emqx/blog/blob/main/en/202311/running-mqtt-on-kubernetes.md))
