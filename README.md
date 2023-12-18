@@ -481,6 +481,7 @@ Build a reliable, efficient and industry-specific Internet of Vehicles platform 
 ## [MQTTX](https://www.emqx.com/en/blog/category/mqttx)
 MQTTX is a Fully Open-source MQTT 5.0 cross-platform Desktop Client, makes it easy and quick to create multiple simultaneous online MQTT client connections, test the connection, publish, and subscribe functions of MQTT/TCP, MQTT/TLS, MQTT/WebSocket as well as other MQTT protocol features.
 
+- [MQTTX 1.9.7: Introducing Copilot - Your AI-Powered MQTT Assistant](https://www.emqx.com/en/blog/mqttx-1-9-7-release-notes) ([Edit](https://github.com/emqx/blog/blob/main/en/202312/mqttx-1-9-7-release-notes.md))
 - [MQTTX 1.9.6 Released: ALPN Protocol Support, Optimized Publish Options Interface](https://www.emqx.com/en/blog/mqttx-v-1-9-6-release-notes) ([Edit](https://github.com/emqx/blog/blob/main/en/202309/mqttx-v-1-9-6-release-notes.md))
 - [Explore New Features of MQTT 5.0: Usage Examples Based on MQTTX CLI](https://www.emqx.com/en/blog/demonstrate-mqtt-5-0-features-using-mqttx-cli) ([Edit](https://github.com/emqx/blog/blob/main/en/202309/demonstrate-mqtt-5-0-features-using-mqttx-cli.md))
 - [Simulating the Future: Crafting IoT Scenarios with ChatGPT and MQTTX](https://www.emqx.com/en/blog/simulating-the-future-crafting-iot-scenarios-with-chatgpt-and-mqttx) ([Edit](https://github.com/emqx/blog/blob/main/en/202308/simulating-the-future-crafting-iot-scenarios-with-chatgpt-and-mqttx.md))
