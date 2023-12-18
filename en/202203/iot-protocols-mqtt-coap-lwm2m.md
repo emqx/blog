@@ -137,7 +137,7 @@ As one of the most popular MQTT brokers in the world, [EMQX](https://www.emqx.co
 
 CoAP is an HTTP-like Protocol in the IoT world, used on resource-constrained IoT devices. Its detailed specification is defined in RFC 7252.
 
-Most IoT devices are resource-constrained, such as CPU, RAM, Flash, network broadband, etc. For this kind of device, it is unrealistic to realize the information exchange directly by using TCP and HTTP of the existing network. CoAP Protocol emerges as the times require, in order to make this part of devices connect to the network smoothly.
+Most IoT devices are resource-constrained, such as CPU, RAM, Flash, network broadband, etc. For this kind of device, it is unrealistic to realize the information exchange directly by using TCP and HTTP of the existing network. [CoAP Protocol](https://www.emqx.com/en/blog/coap-protocol) emerges as the times require, in order to make this part of devices connect to the network smoothly.
 
 ### Characteristics of the Protocol
 

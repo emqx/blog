@@ -2,7 +2,7 @@
 
 CoAP is designed for restricted hardware and environments, and works well in restricted networks, but does not work well when the restricted network needs to communicate with external networks. In addition, CoAP lacks support for resource processing centers because it was designed with the M2M network model in mind (the CoAP-based LwM2M protocol introduces concepts such as resource registration and resource services).
 
-This problem can be solved using the [EMQX](https://www.emqx.com/en/products/emqx) message broker. This article describes how to use EMQX to access the CoAP protocol and enable the communication of CoAP devices with external networks.
+This problem can be solved using the [EMQX](https://www.emqx.com/en/products/emqx) message broker. This article describes how to use EMQX to access the [CoAP protocol](https://www.emqx.com/en/blog/coap-protocol) and enable the communication of CoAP devices with external networks.
 
 ## CoAP protocol access methods in EMQX
 
