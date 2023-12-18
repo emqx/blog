@@ -2,7 +2,7 @@ With the development and popularity of IoT technology, more and more smart devic
 
 Most of the devices in IoT scenarios are resource-constrained, such as CPU, RAM, Flash, and network broadband. In particular, battery-powered devices are sensitive to power consumption and transmission protocol bandwidth. Also, the direct use of TCP and HTTP protocols for data exchange between devices and platforms cannot meet the requirements of devices for low power consumption.
 
-To enable these devices to access the network smoothly, the [CoAP protocol](https://www.emqx.com/en/blog/iot-protocols-mqtt-coap-lwm2m) was born. As a fully managed MQTT messaging service dedicated to providing data connectivity for various IoT scenarios, [EMQX Cloud](https://www.emqx.com/en/cloud) also supports CoAP protocol access to devices, allowing them to publish, subscribe, and receive messages to EMQX Cloud in a defined CoAP message format.
+To enable these devices to access the network smoothly, the [CoAP protocol](https://www.emqx.com/en/blog/coap-protocol) was born. As a fully managed MQTT messaging service dedicated to providing data connectivity for various IoT scenarios, [EMQX Cloud](https://www.emqx.com/en/cloud) also supports CoAP protocol access to devices, allowing them to publish, subscribe, and receive messages to EMQX Cloud in a defined CoAP message format.
 
 >**EMQX Cloud Introduction**
 >

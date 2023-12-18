@@ -21,7 +21,7 @@ Open Dashboard, click on Plugin on the left, search for CoAP on the right, and c
 
 In the `PUB/SUB` model of MQTT, a `topic` is used as a bridge between devices to achieve end-to-end communication. We use the two `topics` `coap_to_mqtt` and `mqtt_to_coap`, as the message `topic` from CoAP to MQTT, and the message `topic` from MQTT to CoAP, respectively.
 
-Both MQTT and CoAP support a publish/subscribe mechanism, with MQTT relying on the Topic field in the message, and the CoAP protocol class is based on a REST design. In the EMQX Broker:
+Both MQTT and CoAP support a publish/subscribe mechanism, with MQTT relying on the Topic field in the message, and the [CoAP protocol](https://www.emqx.com/en/blog/coap-protocol) class is based on a REST design. In the EMQX Broker:
 
 `PUT`  and `GET`: as `Publish` and ` Subscribe`.
 
