@@ -55,6 +55,7 @@ Get to know the preferred protocol in IoT from beginner to master.
 
 ## [MQTT Broker](https://www.emqx.com/zh/blog/category/mqtt-broker)
 
+- [2024 最全面的开源 MQTT Broker 对比](https://www.emqx.com/zh/blog/a-comprehensive-comparison-of-open-source-mqtt-brokers-in-2023) ([Edit](https://github.com/emqx/blog/blob/main/zh/202312/a-comprehensive-comparison-of-open-source-mqtt-brokers-in-2023.md))
 - [Mosquitto MQTT Broker：优缺点、教程和替代方案](https://www.emqx.com/zh/blog/mosquitto-mqtt-broker-pros-cons-tutorial-and-modern-alternatives) ([Edit](https://github.com/emqx/blog/blob/main/zh/202312/mosquitto-mqtt-broker-pros-cons-tutorial-and-modern-alternatives.md))
 - [MQTT Broker：工作原理、相关产品与快速入门指南](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison) ([Edit](https://github.com/emqx/blog/blob/main/zh/202306/the-ultimate-guide-to-mqtt-broker-comparison.md))
 - [MQTT Broker 集群解析：基础概念与高级实现](https://www.emqx.com/zh/blog/mqtt-broker-clustering) ([Edit](https://github.com/emqx/blog/blob/main/zh/202306/mqtt-broker-clustering.md))
