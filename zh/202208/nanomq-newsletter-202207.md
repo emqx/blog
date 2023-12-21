@@ -1,4 +1,4 @@
-7 月，NanoMQ 继续保持稳步更新。v0.10.0 于 8 月初正式发布（[https://github.com/emqx/nanomq/releases/tag/0.10.1](https://github.com/emqx/nanomq/releases/tag/0.10.1)）。此版本主要增强了桥接功能，新增了发布消息的 HTTP API。同时还为 NanoSDK 增加了 MQTT 5.0 支持。各项性能优化和缺陷修复也在持续进行中。
+7 月，NanoMQ 继续保持稳步更新。v0.10.0 于 8 月初正式发布（[https://github.com/nanomq/nanomq/releases/tag/0.10.1](https://github.com/nanomq/nanomq/releases/tag/0.10.1)）。此版本主要增强了桥接功能，新增了发布消息的 HTTP API。同时还为 NanoSDK 增加了 MQTT 5.0 支持。各项性能优化和缺陷修复也在持续进行中。
 
 ## 桥接功能更新
 

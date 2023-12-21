@@ -166,11 +166,11 @@ mosquitto_pub -t 'rep-topic' -m 'response message' -h 'broker.emqx.io'
 
 ## #3: NanoMQ CLI
 
-[NanoMQ](https://github.com/emqx/nanomq) is the latest open-source MQTT broker written in pure C for the IoT edge, initially developed by EMQ in 2020. It is fast and lightweight with multi-threading and asynchronous I/O architecture.
+[NanoMQ](https://github.com/nanomq/nanomq) is the latest open-source MQTT broker written in pure C for the IoT edge, initially developed by EMQ in 2020. It is fast and lightweight with multi-threading and asynchronous I/O architecture.
 
 NanoMQ also provides an MQTT client SDK and a command line tool for MQTT benchmarking and debugging, specifically for [MQTT over QUIC](https://www.emqx.com/en/blog/mqtt-over-quic), the next generation of the MQTT protocol standard.
 
-**GitHub:** [https://github.com/emqx/nanomq](https://github.com/emqx/nanomq)
+**GitHub:** [https://github.com/nanomq/nanomq](https://github.com/nanomq/nanomq)
 
 ### Features
 
@@ -192,7 +192,7 @@ docker pull emqx/nanomq
 #### Download
 
 - [https://nanomq.io/downloads?os=Linux](https://nanomq.io/downloads?os=Linux) 
-- [https://github.com/emqx/nanomq/releases](https://github.com/emqx/nanomq/releases) 
+- [https://github.com/nanomq/nanomq/releases](https://github.com/nanomq/nanomq/releases) 
 
 ### Usage Example
 

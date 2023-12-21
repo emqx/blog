@@ -85,7 +85,7 @@ nanomq_cli vsomeip_gateway --conf /etc/nanomq_vsomeip_gateway.conf // 启动SOME
 通过cmake参数`IDL_FILE_PATH`指定`idl`文件路径 (不指定则默认为 工程路径下的 `etc/idl/dds_type.idl`)
 
 ```
-$ git clone https://github.com/emqx/nanomq.git
+$ git clone https://github.com/nanomq/nanomq.git
 $ cd nanomq
 $ mkdir build && cd build
 $ cmake -G Ninja -DIDL_FILE_PATH={IDL_PATH} -DCMAKE_PREFIX_PATH={DDS_LIBRARY_PATH} -DBUILD_DDS_PROXY=ON ..

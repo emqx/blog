@@ -1,4 +1,4 @@
-NanoMQ continued to update steadily in September, and the latest [v0.12.1](https://github.com/emqx/nanomq/releases/tag/0.12.1) has been officially released recently. This version still brings rich updates: the bridging feature adds the ability to monitor online/offline events and connection status; the original log system is reconstructed and upgraded; configuration files are simplified to consolidate into a unified single file.
+NanoMQ continued to update steadily in September, and the latest [v0.12.1](https://github.com/nanomq/nanomq/releases/tag/0.12.1) has been officially released recently. This version still brings rich updates: the bridging feature adds the ability to monitor online/offline events and connection status; the original log system is reconstructed and upgraded; configuration files are simplified to consolidate into a unified single file.
 
 ## **Bridge connection status event messages**
 

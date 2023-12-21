@@ -158,7 +158,7 @@ quic_client sub/pub mqtt-quic://54.75.171.11:14567 topic msg
 
 ## 即将到来
 
-NanoMQ 将于下个月正式发布 0.10 stable release 版本，并支持 MQTT 多路桥接功能。目前此功能处于 Demo 阶段，在最新的主分支已可以使用。用户可以自行编译安装使用，欢迎尝鲜：[https://github.com/emqx/nanomq/](https://github.com/emqx/nanomq/) 。
+NanoMQ 将于下个月正式发布 0.10 stable release 版本，并支持 MQTT 多路桥接功能。目前此功能处于 Demo 阶段，在最新的主分支已可以使用。用户可以自行编译安装使用，欢迎尝鲜：[https://github.com/nanomq/nanomq/](https://github.com/nanomq/nanomq/) 。
 
 
 

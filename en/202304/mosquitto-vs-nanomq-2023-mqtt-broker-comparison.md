@@ -32,7 +32,7 @@ Although simple, this architectural design restricts Mosquitto from using multi-
 
 ## NanoMQ Overview
 
-The [NanoMQ](https://github.com/emqx/nanomq) project was initially developed by [EMQ Technologies Inc.](https://www.emqx.com/en/about) in 2020 to provide a lightweight and fast MQTT broker with multi-threading support for the IoT edge. The project is under the MIT license and will be donated to the LF Edge Foundation before Q3 in 2023.
+The [NanoMQ](https://github.com/nanomq/nanomq) project was initially developed by [EMQ Technologies Inc.](https://www.emqx.com/en/about) in 2020 to provide a lightweight and fast MQTT broker with multi-threading support for the IoT edge. The project is under the MIT license and will be donated to the LF Edge Foundation before Q3 in 2023.
 
 Unlike Mosquitto's single-threaded design, NanoMQ built on NNG's asynchronous I/O with a built-in Actor multi-threading model. Thanks to the excellent NNG library, NanoMQ takes full advantage of multiple cores in modern SMP systems. 
 
@@ -59,7 +59,7 @@ Both open-source projects are hosted on GitHub. The following community metrics 
 
 |                                     | **Mosquitto**                                            | **NanoMQ**                                      |
 | :---------------------------------- | :------------------------------------------------------- | :---------------------------------------------- |
-| **GitHub Project**                  | [Mosquitto GitHub](https://github.com/eclipse/mosquitto) | [NanoMQ GitHub](https://github.com/emqx/nanomq) |
+| **GitHub Project**                  | [Mosquitto GitHub](https://github.com/eclipse/mosquitto) | [NanoMQ GitHub](https://github.com/nanomq/nanomq) |
 | **Project Created**                 | 2009                                                     | 2020                                            |
 | **License**                         | EPL/EDL License                                          | MIT License                                     |
 | **Programming Language**            | C/C++                                                    | C                                               |
@@ -158,7 +158,7 @@ In conclusion, Mosquitto and NanoMQ are excellent lightweight [MQTT brokers](htt
 2. [Mosquitto Documentation](https://mosquitto.org/documentation/) 
 3. [NanoMQ: An Ultra-lightweight MQTT Broker for IoT Edge](https://nanomq.io/) 
 4. [NanoMQ Documentation](https://nanomq.io/docs/en/latest/) 
-5. [NanoMQ GitHub](https://github.com/emqx/nanomq) 
+5. [NanoMQ GitHub](https://github.com/nanomq/nanomq) 
 6. [Mosquitto GitHub](https://github.com/eclipse/mosquitto)
 7. [Mosquitto vs EMQX | 2023 MQTT Broker Comparison](https://www.emqx.com/en/blog/emqx-vs-mosquitto-2023-mqtt-broker-comparison)
 

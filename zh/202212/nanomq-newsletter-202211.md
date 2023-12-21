@@ -1,4 +1,4 @@
-11 月，NanoMQ 继续保持稳步更新，最新的 [0.14 版本](https://github.com/emqx/nanomq/releases/tag/0.14.1)已于本月初发布。此版本推出了用户期待许久的 ACL 鉴权（Access Control List）服务，并引入了全新的 HOCON 格式的配置文件。此外还缩减了发布版本时生成的 Docker 镜像的大小，并新增了带有 QUIC 支持的完整功能版镜像。
+11 月，NanoMQ 继续保持稳步更新，最新的 [0.14 版本](https://github.com/nanomq/nanomq/releases/tag/0.14.1)已于本月初发布。此版本推出了用户期待许久的 ACL 鉴权（Access Control List）服务，并引入了全新的 HOCON 格式的配置文件。此外还缩减了发布版本时生成的 Docker 镜像的大小，并新增了带有 QUIC 支持的完整功能版镜像。
 
 
 ## ACL 鉴权
@@ -51,7 +51,7 @@ ACL 功能可以在编译阶段关闭来提高性能和剪裁大小：
 
 
 
-未来会根据用户需求和反馈，提供更强大的 ACL 功能，如正则匹配、客户端 IP 匹配、关联数据库鉴权和 HTTP 鉴权等，欢迎大家在 [https://github.com/emqx/nanomq](https://github.com/emqx/nanomq) 提交功能申请和反馈。
+未来会根据用户需求和反馈，提供更强大的 ACL 功能，如正则匹配、客户端 IP 匹配、关联数据库鉴权和 HTTP 鉴权等，欢迎大家在 [https://github.com/nanomq/nanomq](https://github.com/nanomq/nanomq) 提交功能申请和反馈。
 
 ## 全新 HOCON 配置文件
 
@@ -138,7 +138,7 @@ bridges.mqtt {
 
 NanoMQ 本身运行占用资源极小，但自 0.11 版本起由于引入了 QUIC 功能，使得镜像大小大大增加。为了帮助习惯采用 Docker 部署方式的用户节省部署空间，从 0.14 版本开始，Dockerfile 改为采用交叉编译方式发布具有完整功能的 Release 镜像。这一操作使得完整版镜像的大小缩小了数十倍。默认拉取的 NanoMQ 的镜像地址改为以 Alpine-Linux 为 base image 的版本，大小仅为 3MB。
 
-MQTT over QUIC 桥接功能一经推出便得到了广泛的试用和热烈反响，但之前此功能必须通过源码编译开启，对于新手使用较为不便。自 0.14 版本起，NanoMQ 会自动一起发布开启 QUIC 支持的 Docker 镜像和二进制安装包。用户只需下载带有 [-msquic](https://github.com/emqx/nanomq/releases/download/0.13.5/nanomq-0.13.5-linux-arm64-msquic.rpm) 后缀的安装包或拉取带有 -full 后缀的 Docker 即可：
+MQTT over QUIC 桥接功能一经推出便得到了广泛的试用和热烈反响，但之前此功能必须通过源码编译开启，对于新手使用较为不便。自 0.14 版本起，NanoMQ 会自动一起发布开启 QUIC 支持的 Docker 镜像和二进制安装包。用户只需下载带有 [-msquic](https://github.com/nanomq/nanomq/releases/download/0.13.5/nanomq-0.13.5-linux-arm64-msquic.rpm) 后缀的安装包或拉取带有 -full 后缀的 Docker 即可：
 
 ```
 ## 内置开启QUIC桥接功能的二进制安装包

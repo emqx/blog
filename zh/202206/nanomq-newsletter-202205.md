@@ -2,9 +2,9 @@ NanoMQ 是面向边缘计算的 MQTT 消息引擎+多协议消息总线。支持
 
 社区站地址：[https://nanomq.io/zh](https://nanomq.io/zh)
 
-GitHub 仓库：[https://github.com/emqx/nanomq](https://github.com/emqx/nanomq)
+GitHub 仓库：[https://github.com/nanomq/nanomq](https://github.com/nanomq/nanomq)
 
-NanoMQ 项目一直保持着每月一个小版本+一个重要新功能的稳步迭代速度，v0.8.0 已于五月底正式发布（下载地址：[https://github.com/emqx/nanomq/releases/tag/0.8.0](https://github.com/emqx/nanomq/releases/tag/0.8.0)）。此次我们为大家带来了 2 个重要的功能更新：Event WebHook 以及可以与第三方 HTTP API 集成的连接认证接口。同时还新增了查看主题树结构的 HTTP API，各项性能优化和缺陷修复也在持续更新中。
+NanoMQ 项目一直保持着每月一个小版本+一个重要新功能的稳步迭代速度，v0.8.0 已于五月底正式发布（下载地址：[https://github.com/nanomq/nanomq/releases/tag/0.8.0](https://github.com/nanomq/nanomq/releases/tag/0.8.0)）。此次我们为大家带来了 2 个重要的功能更新：Event WebHook 以及可以与第三方 HTTP API 集成的连接认证接口。同时还新增了查看主题树结构的 HTTP API，各项性能优化和缺陷修复也在持续更新中。
 
 ## 高效易用的边缘 WebHook 系统
 
@@ -79,7 +79,7 @@ Disconnect（客户端连接断开事件）:
 | client.disconnected | MQTT 客户端连接断开 | 客户端连接层在准备关闭时     |
 | message.publish     | MQTT 消息发布       | 服务端在发布（路由）消息前   |
 
-如需要更多的消息事件请在 NanoMQ 项目的 [Github 页面](https://github.com/emqx/nanomq)提交功能申请 Issue，我们会第一时间安排增加。
+如需要更多的消息事件请在 NanoMQ 项目的 [Github 页面](https://github.com/nanomq/nanomq)提交功能申请 Issue，我们会第一时间安排增加。
 
 需要强调的是，NanoMQ 的 WebHook 功能是全异步操作，所有的匹配到的事件消息都会通过高效的内部 IPC 通道进入独立的专有线程进行处理，与 Broker 功能隔离，不会阻塞原有服务器里正常的消息流转，非常高效可靠。
 
@@ -131,7 +131,7 @@ auth.http.auth_req.params = clientid=%c,username=%u,password=%P
 
 ## 即将到来
 
-NanoMQ 将于下个月正式发布规则引擎，以及纳入新的数据库作为边缘数据全量持久化选项。目前此功能处于 Demo 阶段，在最新的主分支已可以使用。用户可以自行编译安装使用，欢迎尝鲜：[https://github.com/emqx/nanomq/](https://github.com/emqx/nanomq/) 。
+NanoMQ 将于下个月正式发布规则引擎，以及纳入新的数据库作为边缘数据全量持久化选项。目前此功能处于 Demo 阶段，在最新的主分支已可以使用。用户可以自行编译安装使用，欢迎尝鲜：[https://github.com/nanomq/nanomq/](https://github.com/nanomq/nanomq/) 。
 
 NanoSDK 将于下个月发布 MQTT over QUIC 的 RC 版本，这是业界首个基于 C 语言的完整支持 MQTT 3.1.1 和 QUIC 功能的 MQTT SDK，敬请期待。
 

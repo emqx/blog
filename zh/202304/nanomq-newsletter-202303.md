@@ -143,7 +143,7 @@ $ ./idl-serial-code-gen  dds_structs.idl  idl_convert
 2. 通过 cmake 参数 `IDL_FILE_PATH` 指定 `idl` 文件路径 (不指定则默认为工程路径下的 `etc/idl/dds_type.idl`)
 
 ```
-$ git clone https://github.com/emqx/nanomq.git
+$ git clone https://github.com/nanomq/nanomq.git
 $ cd nanomq
 ## 拷贝以上生成的文件到 nanomq_cli/dds2mqtt/路径下
 $ cp {YOUR_PATH}/idl_convert.* nanomq_cli/dds2mqtt
@@ -171,7 +171,7 @@ NanoMQ 0.17 版本还有一些小功能更新：
 1. 修复桥接连接中拒绝接受带有 Subscription Identifier 消息的问题。
 2. 修复桥接连接接收到 Retain 消息时会造成数据类型不兼容而导致的协议错误断开。
 3. 修正了 HTTP API `api/v4/clients` 中获取到的错误的会话保持状态。
-4. 修改了 Broker 的行为：当客户端使用会话保持功能并断开连接时， 之前 Broker 希望能够复用此 Socket 等待客户端自动重连，而不会主动关闭。如今已修改为普通关闭操作。此功能的讨论：（[https://github.com/emqx/nanomq/discussions/1108](https://github.com/emqx/nanomq/discussions/1108)）
+4. 修改了 Broker 的行为：当客户端使用会话保持功能并断开连接时， 之前 Broker 希望能够复用此 Socket 等待客户端自动重连，而不会主动关闭。如今已修改为普通关闭操作。此功能的讨论：（[https://github.com/nanomq/nanomq/discussions/1108](https://github.com/nanomq/nanomq/discussions/1108)）
 5. 在 NanoNNG 模块中更新了新的 `nng_mqtt_quic_open_conf` API 用于开启 QUIC 连接。
 6. 优化 CMakeList 修复 OpenSSL 和 MbedTLS 库在编译阶段造成的不兼容问题。
 

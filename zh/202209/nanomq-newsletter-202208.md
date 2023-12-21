@@ -1,4 +1,4 @@
-8 月，NanoMQ 继续保持稳步更新。最新的 0.11.0 版本已于 8月底正式发布（[https://github.com/emqx/nanomq/releases/tag/0.11.0](https://github.com/emqx/nanomq/releases/tag/0.11.0)）。此版本继续增强了桥接功能，增加了 MQTT 5.0 + MQTT over QUIC 桥接模式，新增和修复了对已连接客户端状态进行监控和查询的 HTTP API。此外各项性能优化和缺陷修复也在持续进行中。
+8 月，NanoMQ 继续保持稳步更新。最新的 0.11.0 版本已于 8月底正式发布（[https://github.com/nanomq/nanomq/releases/tag/0.11.0](https://github.com/nanomq/nanomq/releases/tag/0.11.0)）。此版本继续增强了桥接功能，增加了 MQTT 5.0 + MQTT over QUIC 桥接模式，新增和修复了对已连接客户端状态进行监控和查询的 HTTP API。此外各项性能优化和缺陷修复也在持续进行中。
 
 ## 桥接功能更新
 
@@ -19,7 +19,7 @@
 目前 NanoMQ 的 QUIC 模组处于默认关闭状态，用户如需使用需通过编译选项打开后安装使用，完整的下载和编译安装命令可以参考：
 
 ```
-git clone https://github.com/emqx/nanomq.git
+git clone https://github.com/nanomq/nanomq.git
 cd nanomq ; git submodule update --init --recursive (同步submodule时可能耗时较久)
 
 mkdir build && cd build
