@@ -32,7 +32,7 @@ Mosquitto 虽然易于实现，但也存在一些局限性。由于它采用了�
 
 ## NanoMQ 简介
 
-[NanoMQ](https://github.com/emqx/nanomq) 是 EMQ 于 2020 年发布的一个开源项目（MIT 许可证），旨在为物联网边缘场景提供轻量级、快速、支持多线程的 MQTT Broker。该项目计划在 2023 年 Q3 之前捐赠给 LF Edge 基金会。
+[NanoMQ](https://github.com/nanomq/nanomq) 是 EMQ 于 2020 年发布的一个开源项目（MIT 许可证），旨在为物联网边缘场景提供轻量级、快速、支持多线程的 MQTT Broker。该项目计划在 2023 年 Q3 之前捐赠给 LF Edge 基金会。
 
 与 Mosquitto 的单线程设计不同，NanoMQ 基于 NNG 的异步 I/O 构建，内置 Actor 多线程模型。这使得 NanoMQ 能够充分发挥现代 SMP 系统的多核优势。
 
@@ -59,7 +59,7 @@ NanoMQ 作为一个 2020 年才启动的项目，虽然还处于早期阶段，�
 
 |                                     | **Mosquitto**                                            | **NanoMQ**                                      |
 | :---------------------------------- | :------------------------------------------------------- | :---------------------------------------------- |
-| **GitHub Project**                  | [Mosquitto GitHub](https://github.com/eclipse/mosquitto) | [NanoMQ GitHub](https://github.com/emqx/nanomq) |
+| **GitHub Project**                  | [Mosquitto GitHub](https://github.com/eclipse/mosquitto) | [NanoMQ GitHub](https://github.com/nanomq/nanomq) |
 | **Project Created**                 | 2009                                                     | 2020                                            |
 | **License**                         | EPL/EDL License                                          | MIT License                                     |
 | **Programming Language**            | C/C++                                                    | C                                               |

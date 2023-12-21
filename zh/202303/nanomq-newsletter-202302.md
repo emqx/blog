@@ -114,14 +114,14 @@ $ sudo ninja install
 
 DDS 相较于 MQTT 对于 payload 的定义方式不同，MQTT 协议并不关心消息的 Payload 内容， 而 DDS 通过用户编写的 IDL 文件来定义 DDS 消息的数据格式和类型。IDL（Interface Description Language）是一种通用的描述语言，用于在不同的编程语言之间定义数据类型，以保证不同节点之间以正确的格式通信。
 
-CycloneDDS 库中通过 CMake 工具来自动根据用户内置的 IDL 文件来生成消息解析代码，其函数名和变量名会根据 IDL 中的定义改变。NanoMQ 保留了这一流程，每次编译时会根据 nanomq_cli/dds2mqtt/dds_type.idl 这一 IDL 文件来生成消息序列化和反序列化的代码。目前还需要用户自行将生成的代码 `dds_type.h` 和 `dds_type.c` 替换  [dds_mqtt_type_conversion.h](https://github.com/emqx/nanomq/blob/0.16.0/nanomq_cli/dds2mqtt/dds_mqtt_type_conversion.h)/[dds_mqtt_type_conversion.c](https://github.com/emqx/nanomq/blob/0.16.0/nanomq_cli/dds2mqtt/dds_mqtt_type_conversion.c)/[dds_client.c](https://github.com/emqx/nanomq/blob/0.16.0/nanomq_cli/dds2mqtt/dds_client.c) 文件中的函数名和引用。
+CycloneDDS 库中通过 CMake 工具来自动根据用户内置的 IDL 文件来生成消息解析代码，其函数名和变量名会根据 IDL 中的定义改变。NanoMQ 保留了这一流程，每次编译时会根据 nanomq_cli/dds2mqtt/dds_type.idl 这一 IDL 文件来生成消息序列化和反序列化的代码。目前还需要用户自行将生成的代码 `dds_type.h` 和 `dds_type.c` 替换  [dds_mqtt_type_conversion.h](https://github.com/nanomq/nanomq/blob/0.16.0/nanomq_cli/dds2mqtt/dds_mqtt_type_conversion.h)/[dds_mqtt_type_conversion.c](https://github.com/nanomq/nanomq/blob/0.16.0/nanomq_cli/dds2mqtt/dds_mqtt_type_conversion.c)/[dds_client.c](https://github.com/nanomq/nanomq/blob/0.16.0/nanomq_cli/dds2mqtt/dds_client.c) 文件中的函数名和引用。
 
 在后续的 NanoMQ 版本规划中，将提供一个自动化的代码生成工具，能够根据 IDL 来自动替换源文件完成这部分工作，不再需要用户手动修改源码适配 DDS 结构体定义。
 
 ### 编译安装 NanoMQ + DDS Proxy
 
 ```
-$ git clone https://github.com/emqx/nanomq.git
+$ git clone https://github.com/nanomq/nanomq.git
 $ cd nanomq
 $ mkdir build && cd build
 $ cmake -G Ninja -DCMAKE_PREFIX_PATH={USER_LIBRARY_PATH} -DBUILD_DDS_PROXY=ON ..
@@ -183,7 +183,7 @@ mqtt {
 
 ```
 
-启用 iceoryx 传输可参考文档[https://github.com/emqx/nanomq/blob/0.16.0/nanomq_cli/dds2mqtt/doc/Shared_memory.md](https://github.com/emqx/nanomq/blob/0.16.0/nanomq_cli/dds2mqtt/doc/Shared_memory.md)
+启用 iceoryx 传输可参考文档[https://github.com/nanomq/nanomq/blob/0.16.0/nanomq_cli/dds2mqtt/doc/Shared_memory.md](https://github.com/nanomq/nanomq/blob/0.16.0/nanomq_cli/dds2mqtt/doc/Shared_memory.md)
 
 ### 启动和测试
 

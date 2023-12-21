@@ -129,7 +129,7 @@ NanoSDK 也提供 Java 和 Python 的 binding，例程可以分别参考 [https:
 下载安装 NanoMQ：
 
 ```
-git clone https://github.com/emqx/nanomq.git
+git clone https://github.com/nanomq/nanomq.git
 cd nanomq ; git submodule update --init --recursive
 
 mkdir build && cd build

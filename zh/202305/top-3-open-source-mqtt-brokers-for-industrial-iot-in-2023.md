@@ -20,7 +20,7 @@
 |                                     | **EMQX**                                    | **Mosquitto**                                            | **NanoMQ**                                      |
 | :---------------------------------- | :------------------------------------------ | :------------------------------------------------------- | :---------------------------------------------- |
 | **Official Website**                | [EMQX](https://www.emqx.io/)                | [Eclipse Mosquitto](https://mosquitto.org/)              | [NanoMQ](https://nanomq.io/)                    |
-| **GitHub Project**                  | [EMQX GitHub](https://github.com/emqx/emqx) | [Mosquitto GitHub](https://github.com/eclipse/mosquitto) | [NanoMQ GitHub](https://github.com/emqx/nanomq) |
+| **GitHub Project**                  | [EMQX GitHub](https://github.com/emqx/emqx) | [Mosquitto GitHub](https://github.com/eclipse/mosquitto) | [NanoMQ GitHub](https://github.com/nanomq/nanomq) |
 | **Project Created**                 | 2012                                        | 2009                                                     | 2020                                            |
 | **License**                         | Apache License 2.0                          | EPL/EDL License                                          | MIT License                                     |
 | **Programming Language**            | Erlang                                      | C/C++                                                    | C                                               |

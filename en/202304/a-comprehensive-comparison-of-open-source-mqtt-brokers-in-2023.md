@@ -27,7 +27,7 @@ Here is a summary of the four projects hosted on GitHub:
 
 |                                     | **EMQX**                                    | **Mosquitto**                                            | **NanoMQ**                                      | **VerneMQ**                                          |
 | :---------------------------------- | :------------------------------------------ | :------------------------------------------------------- | :---------------------------------------------- | :--------------------------------------------------- |
-| **GitHub Project**                  | [EMQX GitHub](https://github.com/emqx/emqx) | [Mosquitto GitHub](https://github.com/eclipse/mosquitto) | [NanoMQ GitHub](https://github.com/emqx/nanomq) | [VerneMQ GitHub](https://github.com/vernemq/vernemq) |
+| **GitHub Project**                  | [EMQX GitHub](https://github.com/emqx/emqx) | [Mosquitto GitHub](https://github.com/eclipse/mosquitto) | [NanoMQ GitHub](https://github.com/nanomq/nanomq) | [VerneMQ GitHub](https://github.com/vernemq/vernemq) |
 | **Project Created**                 | 2012                                        | 2009                                                     | 2020                                            | 2014                                                 |
 | **License**                         | Apache Version 2.0                          | EPL/EDL License                                          | MIT License                                     | Apache Version 2.0                                   |
 | **Programming Language**            | Erlang                                      | C/C++                                                    | C                                               | Erlang                                               |
@@ -122,7 +122,7 @@ NanoMQ is lightweight and high-performance, making it suitable for various edge 
 
 Official website: [https://nanomq.io/](https://nanomq.io/)
 
-GitHub: [https://github.com/emqx/nanomq](https://github.com/emqx/nanomq)
+GitHub: [https://github.com/nanomq/nanomq](https://github.com/nanomq/nanomq)
 
 **Pros**
 

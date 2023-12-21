@@ -67,7 +67,7 @@ EMQX 和 NanoMQ 两个开源项目都托管在 GitHub 上。EMQX 自 2012 年推
 
 |                                     | **EMQX**                                    | **NanoMQ**                                      |
 | :---------------------------------- | :------------------------------------------ | :---------------------------------------------- |
-| **GitHub Project**                  | [EMQX GitHub](https://github.com/emqx/emqx) | [NanoMQ GitHub](https://github.com/emqx/nanomq) |
+| **GitHub Project**                  | [EMQX GitHub](https://github.com/emqx/emqx) | [NanoMQ GitHub](https://github.com/nanomq/nanomq) |
 | **Project Created**                 | 2012                                        | 2020                                            |
 | **License**                         | Apache Version 2.0                          | The MIT License                                 |
 | **Latest Release**                  | v5.0.21 (March 2023)                        | v0.17.0 (March 2023)                            |

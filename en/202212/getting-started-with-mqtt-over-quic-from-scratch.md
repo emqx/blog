@@ -156,7 +156,7 @@ It is worth mentioning that NanoMQ can switch automatically to standard MQTT ove
 Download and install NanoMQ:
 
 ```
-git clone https://github.com/emqx/nanomq.git
+git clone https://github.com/nanomq/nanomq.git
 cd nanomq ; git submodule update --init --recursive
 
 mkdir build && cd build

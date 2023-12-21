@@ -105,7 +105,7 @@ Reason String 是 MQTT 5.0 对 Reason Code 的一个补充，它是一个为诊�
 
 ## 加入 EMQ 社区
 
-EMQ 致力于用软件改造数字世界。十多年来，EMQ 一直致力于开源项目的研发（包括 [EMQX](https://github.com/emqx/emqx)、[MQTTX](https://github.com/emqx/mqttx)、[Neuron](https://github.com/emqx/neuron)、[NanoMQ](https://github.com/emqx/nanomq) 等项目）。我们真诚地邀请您加入 EMQ 开发者社区。让我们用开源软件创造一个美好的数字未来。您可以在 [GitHub](https://github.com/emqx)、[论坛](https://askemq.com/)上找到我们。
+EMQ 致力于用软件改造数字世界。十多年来，EMQ 一直致力于开源项目的研发（包括 [EMQX](https://github.com/emqx/emqx)、[MQTTX](https://github.com/emqx/mqttx)、[Neuron](https://github.com/emqx/neuron)、[NanoMQ](https://github.com/nanomq/nanomq) 等项目）。我们真诚地邀请您加入 EMQ 开发者社区。让我们用开源软件创造一个美好的数字未来。您可以在 [GitHub](https://github.com/emqx)、[论坛](https://askemq.com/)上找到我们。
 
 
 

@@ -4,7 +4,7 @@ For decades, OpenWRT has remained the most popular Linux operating system target
 
 ## What is NanoMQ?
 
-[NanoMQ](https://nanomq.io/) ([github.com/emqx/nanomq](https://github.com/emqx/nanomq)) is a lightweight and high-performance MQTT broker and messaging bus for edge computing, which unifies data in motion and data at rest. With its elegant and powerful design, users could achieve a high level of time and space efficiency while enjoying portability and scalability when accessing the data on edge.
+[NanoMQ](https://nanomq.io/) ([github.com/nanomq/nanomq](https://github.com/nanomq/nanomq)) is a lightweight and high-performance MQTT broker and messaging bus for edge computing, which unifies data in motion and data at rest. With its elegant and powerful design, users could achieve a high level of time and space efficiency while enjoying portability and scalability when accessing the data on edge.
 
 For more information about NanoMQ, please check [https://nanomq.io/](https://nanomq.io/).
 
@@ -20,10 +20,10 @@ OpenWRT build system only supports Makefile. However, the NanoMQ project is buil
 
 ## Download the Source Code of NanoMQ
 
-Download the source of NanoMQ from [https://github.com/emqx/nanomq](https://github.com/emqx/nanomq). Compared to Mosquitto, NanoMQ also provides more awesome features other than MQTT server, such as HTTP REST API, ZeroMQ & nanomsg proxy, event webhook, and Offline data cache in SQLite3. Please adjust the build settings according to your requirements. But be aware that TLS/SSL encryption and SQLite3 will bring in new dependencies, which are not included in this tutorial.
+Download the source of NanoMQ from [https://github.com/nanomq/nanomq](https://github.com/nanomq/nanomq). Compared to Mosquitto, NanoMQ also provides more awesome features other than MQTT server, such as HTTP REST API, ZeroMQ & nanomsg proxy, event webhook, and Offline data cache in SQLite3. Please adjust the build settings according to your requirements. But be aware that TLS/SSL encryption and SQLite3 will bring in new dependencies, which are not included in this tutorial.
 
 ```
-git clone https://github.com/emqx/nanomq.git ; cd nanomq
+git clone https://github.com/nanomq/nanomq.git ; cd nanomq
 git submodule update --init --recursive
 ```
 
@@ -96,7 +96,7 @@ define Package/nanomq
   SECTION:=net
   CATEGORY:=emqx
   TITLE:=NanoMQ Broker
-  URL:=https://github.com/emqx/nanomq
+  URL:=https://github.com/nanomq/nanomq
   DEPENDS:=+libpthread +librt
   MAINTAINER:=NanoMQ-Team<contact@emqx.io>
 endef
@@ -170,7 +170,7 @@ $ /usr/bin/nanomq broker start
 
 #### Notes:
 
-In this tutorial, we take NanoMQ 0.6.6 as an example. Please find the the most updated version of NanoMQ at [Releases · emqx/nanomq](https://github.com/emqx/nanomq/releases/). As for the newly released features such as DDS proxy and [MQTT over QUIC](https://www.emqx.com/en/blog/mqtt-over-quic) bridging is not included, only basic MQTT broker functionality is tested on OpenWRT, extra migration work is required for other parts. 
+In this tutorial, we take NanoMQ 0.6.6 as an example. Please find the the most updated version of NanoMQ at [Releases · emqx/nanomq](https://github.com/nanomq/nanomq/releases/). As for the newly released features such as DDS proxy and [MQTT over QUIC](https://www.emqx.com/en/blog/mqtt-over-quic) bridging is not included, only basic MQTT broker functionality is tested on OpenWRT, extra migration work is required for other parts. 
 
 When building NanoMQ on OpenWRT, some libs can not be found.
 

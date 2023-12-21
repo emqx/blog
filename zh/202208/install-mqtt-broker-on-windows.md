@@ -6,7 +6,7 @@ MQTT 已经是物联网事实上的标准通信协议。在目前市面上提供
 
 ## NanoMQ 简介
 
-[NanoMQ](https://nanomq.io/zh) 是 EMQ 推出的面向物联网边缘计算场景的超轻量级高性能 **MQTT** 消息服务器+消息总线（Github 地址: [https://github.com/emqx/nanomq](https://github.com/emqx/nanomq)），具有超轻量、高吞吐、低延迟、兼容性高和可移植等优点，能够在各类操作系统和 CPU 架构上部署。
+[NanoMQ](https://nanomq.io/zh) 是 EMQ 推出的面向物联网边缘计算场景的超轻量级高性能 **MQTT** 消息服务器+消息总线（Github 地址: [https://github.com/nanomq/nanomq](https://github.com/nanomq/nanomq)），具有超轻量、高吞吐、低延迟、兼容性高和可移植等优点，能够在各类操作系统和 CPU 架构上部署。
 
 ![NanoMQ 架构图](https://assets.emqx.com/images/bae685d3d50deac2f584b84c77d23595.png)
                                                        
@@ -110,9 +110,9 @@ msq_len=256
 
 首先需要从 NanoMQ 源代码仓库下载源代码，注意 NanoMQ 内部包含一个子模块 NNG。
 
-**NanoMQ** 源码仓库: [https://github.com/emqx/nanomq](https://github.com/emqx/nanomq)  
+**NanoMQ** 源码仓库: [https://github.com/nanomq/nanomq](https://github.com/nanomq/nanomq)  
 
-下载链接：[https://github.com/emqx/nanomq/archive/refs/heads/master.zip](https://github.com/emqx/nanomq/archive/refs/heads/master.zip)
+下载链接：[https://github.com/nanomq/nanomq/archive/refs/heads/master.zip](https://github.com/nanomq/nanomq/archive/refs/heads/master.zip)
 
 NanoNNG 源码仓库：[https://github.com/nanomq/NanoNNG/tree/main](https://github.com/nanomq/NanoNNG/tree/main)  
 
@@ -128,7 +128,7 @@ NNG 的源代码需要放置在 nanomq 的 nng 目录下，准备好源代码后
 
 ```
 # 1. clone 源码 （已通过ZIP下载源代码则不需要这一步）
-PS: D:\Project> git clone https://github.com/emqx/nanomq.git
+PS: D:\Project> git clone https://github.com/nanomq/nanomq.git
 PS: D:\Project> cd nanomq
 
 # 2. 更新和初始化 git 子模块

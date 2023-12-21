@@ -70,7 +70,7 @@ EMQX and NanoMQ open-source projects are hosted on GitHub. Launched in 2012, EMQ
 
 |                                     | **EMQX**                                    | **NanoMQ**                                      |
 | :---------------------------------- | :------------------------------------------ | :---------------------------------------------- |
-| **GitHub Project**                  | [EMQX GitHub](https://github.com/emqx/emqx) | [NanoMQ GitHub](https://github.com/emqx/nanomq) |
+| **GitHub Project**                  | [EMQX GitHub](https://github.com/emqx/emqx) | [NanoMQ GitHub](https://github.com/nanomq/nanomq) |
 | **Project Created**                 | 2012                                        | 2020                                            |
 | **License**                         | Apache License 2.0                          | The MIT License                                 |
 | **Latest Release**                  | v5.0.21 (March 2023)                        | v0.17.0 (March 2023)                            |

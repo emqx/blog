@@ -1,4 +1,4 @@
-The NanoMQ project keeps a steady pace in updating new versions each month. At the end of May, the v0.8.0 was officially released (download here: [Release NanoMQ 0.8.0 · emqx/nanomq](https://github.com/emqx/nanomq/releases/tag/0.8.0)). We have brought you 2 important feature updates: event WebHook, and the authentication HTTP plugins. We have also added the new HTTP API for viewing the data model of the MQTT namespace. Needless to say, bugs are fixed, and better performance is achieved.
+The NanoMQ project keeps a steady pace in updating new versions each month. At the end of May, the v0.8.0 was officially released (download here: [Release NanoMQ 0.8.0 · emqx/nanomq](https://github.com/nanomq/nanomq/releases/tag/0.8.0)). We have brought you 2 important feature updates: event WebHook, and the authentication HTTP plugins. We have also added the new HTTP API for viewing the data model of the MQTT namespace. Needless to say, bugs are fixed, and better performance is achieved.
 
 ## **Asynchronous and Easy-to-Use WebHook System**
 

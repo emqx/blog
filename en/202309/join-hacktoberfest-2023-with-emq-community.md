@@ -17,7 +17,7 @@ Hacktoberfest is a month-long celebration of open-source hosted by DigitalOcean.
   - Before making contributions, check out the [eKuiper Contribution guide](https://github.com/lf-edge/ekuiper/blob/master/CONTRIBUTING.md).
   - Choose [an issue labeled "Hacktoberfest"](https://github.com/lf-edge/ekuiper/issues?q=is%3Aopen+is%3Aissue+label%3Ahacktoberfest) in eKuiper or any other issues that interest you from the [issue tracker](https://github.com/lf-edge/ekuiper/issues).
 - Start contributing to NanoMQ:
-  - Choose [an issue labeled "Hacktoberfest"](https://github.com/emqx/nanomq/issues?q=is%3Aissue+is%3Aopen+label%3AHacktoberfest) in NanoMQ or any other issues that interest you from the [issue tracker](https://github.com/emqx/nanomq/issues).
+  - Choose [an issue labeled "Hacktoberfest"](https://github.com/nanomq/nanomq/issues?q=is%3Aissue+is%3Aopen+label%3AHacktoberfest) in NanoMQ or any other issues that interest you from the [issue tracker](https://github.com/nanomq/nanomq/issues).
 - Wait for your pull/merge requests to be merged by the project maintainers to count toward your total.
 
 ## Rewards

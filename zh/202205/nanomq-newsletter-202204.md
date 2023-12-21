@@ -2,11 +2,11 @@
 >
 >社区站地址：[https://nanomq.io/zh](https://nanomq.io/zh) 
 >
->GitHub 仓库：[https://github.com/emqx/nanomq](https://github.com/emqx/nanomq) 
+>GitHub 仓库：[https://github.com/nanomq/nanomq](https://github.com/nanomq/nanomq) 
 >
 
 
-NanoMQ v0.7.0 和 NanoSDK v0.4.0 于本月底正式发布（下载地址： [https://github.com/emqx/nanomq/releases/tag/0.7.0](https://github.com/emqx/nanomq/releases/tag/0.7.0) ），带来了 2 个重要的功能更新：SQLite 本地数据持久化和 nanomsg/ZeroMQ 消息桥接。同时，我们继续完善了 MQTT 5.0 的各项功能支持。
+NanoMQ v0.7.0 和 NanoSDK v0.4.0 于本月底正式发布（下载地址： [https://github.com/nanomq/nanomq/releases/tag/0.7.0](https://github.com/nanomq/nanomq/releases/tag/0.7.0) ），带来了 2 个重要的功能更新：SQLite 本地数据持久化和 nanomsg/ZeroMQ 消息桥接。同时，我们继续完善了 MQTT 5.0 的各项功能支持。
 
 ## 数据持久化+断网续传：SQLite3
 
@@ -62,7 +62,7 @@ Retain Handling 用来指定订阅建立时服务端是否向客户端发送保�
 
 ## 即将到来
 
-应社区要求，NanoMQ 将于下个月正式发布 WebHook 拓展支持。目前此功能处于 Demo 阶段，在最新的主分支已可以使用。用户可以自行编译安装使用，欢迎尝鲜：[https://github.com/emqx/nanomq/](https://github.com/emqx/nanomq/) 。
+应社区要求，NanoMQ 将于下个月正式发布 WebHook 拓展支持。目前此功能处于 Demo 阶段，在最新的主分支已可以使用。用户可以自行编译安装使用，欢迎尝鲜：[https://github.com/nanomq/nanomq/](https://github.com/nanomq/nanomq/) 。
 
 
 
