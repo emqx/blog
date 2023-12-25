@@ -1,20 +1,20 @@
 [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt), which stands for Message Queuing Telemetry Transport, is a lightweight messaging protocol designed for constrained devices and low-bandwidth, high-latency networks. It is particularly useful for remote connections where a small code footprint is required or network bandwidth is limited.
 
-MQTT 5 is the latest version of the protocol, offering many improvements over its predecessors. New features include reason codes, session expiry intervals, topic aliases, user properties, subscription options, request/response feature, and [shared subscriptions](https://www.emqx.com/en/blog/introduction-to-mqtt5-protocol-shared-subscription). We’ll explore these new features, explain how popular brokers and client SDKs are supporting MQTT 5, and some key considerations when migrating from MQTT 3.1.1 to MQTT 5.
+MQTT 5.0 is the latest version of the protocol, offering many improvements over its predecessors. New features include reason codes, session expiry intervals, topic aliases, user properties, subscription options, request/response feature, and [shared subscriptions](https://www.emqx.com/en/blog/introduction-to-mqtt5-protocol-shared-subscription). We’ll explore these new features, explain how popular brokers and client SDKs are supporting MQTT 5.0, and some key considerations when migrating from MQTT 3.1.1 to MQTT 5.0.
 
-## Brief History and Evolution of MQTT 5
+## Brief History and Evolution of MQTT 5.0
 
 MQTT was first developed in the late 1990s by Dr. Andy Stanford-Clark of IBM and Arlen Nipper of Arcom (now Eurotech), to monitor oil pipelines over satellite networks. The initial version, MQTT v3.1, was designed to be lightweight and easy to implement, making it suitable for many IoT devices.
 
 MQTT 3.1.1, an OASIS standard, was released in 2014, which included minor changes to the protocol to improve its clarity and interoperability. Its simplicity and efficiency in delivering messages over networks with limited resources led to its widespread adoption in IoT applications.
 
-However, as the IoT industry evolved, so did the needs of its applications. This led to the development of MQTT 5, released in 2019, which introduced new features to address these changing needs. With its enhanced features, MQTT 5 is better equipped to handle the complex requirements of modern IoT applications.
+However, as the IoT industry evolved, so did the needs of its applications. This led to the development of MQTT 5.0, released in 2019, which introduced new features to address these changing needs. With its enhanced features, MQTT 5.0 is better equipped to handle the complex requirements of modern IoT applications.
 
 ## 7 New Features in MQTT v5
 
 ### 1. Reason Codes: Understanding Disconnections or Failures
 
-Unlike its predecessors, MQTT 5 can provide a reason code for every acknowledgement packet, giving us a better understanding of why a disconnection or failure occurred.
+Unlike its predecessors, MQTT 5.0 can provide a reason code for every acknowledgement packet, giving us a better understanding of why a disconnection or failure occurred.
 
 This improvement aids in troubleshooting and allows for more precise error handling. For instance, if a client fails to connect to the server, the server will return a reason code explaining why the connection was unsuccessful. This could be due to a range of issues, from incorrect login credentials to a server being unavailable.
 
@@ -22,13 +22,13 @@ This improvement aids in troubleshooting and allows for more precise error handl
 
 ### 2. Session Expiry Intervals: Managing Session Lifetimes
 
-This feature allows the client to specify how long the server should maintain its session after the client disconnects. In previous MQTT versions, a session either ended immediately upon disconnection or continued indefinitely. With MQTT 5, you can define a specific time period for which the session should be kept alive after disconnection. This provides greater flexibility in managing session lifetimes and conserves resources on the server.
+This feature allows the client to specify how long the server should maintain its session after the client disconnects. In previous MQTT versions, a session either ended immediately upon disconnection or continued indefinitely. With MQTT 5.0, you can define a specific time period for which the session should be kept alive after disconnection. This provides greater flexibility in managing session lifetimes and conserves resources on the server.
 
 > Learn more in our detailed guide to [MQTT Session Expiry Intervals](https://www.emqx.com/en/blog/mqtt5-new-feature-clean-start-and-session-expiry-interval).
 
 ### 3. Topic Aliases: Reducing Overhead in Message Headers
 
-MQTT 5 introduces topic aliases to reduce the overhead in message headers. In previous versions, the topic name needed to be included in every message, leading to larger packet sizes.
+MQTT 5.0 introduces topic aliases to reduce the overhead in message headers. In previous versions, the topic name needed to be included in every message, leading to larger packet sizes.
 
 With topic aliases, a short numeric alias can be assigned to a topic. This alias can be used in place of the full topic name in subsequent messages, significantly reducing the size of the MQTT header and conserving network bandwidth.
 
@@ -42,7 +42,7 @@ This feature allows users to include custom metadata in the headers of MQTT pack
 
 ### 5. Subscription Options: Granular Subscription Controls
 
-MQTT 5 allows clients to specify how they want to receive messages for each subscribed topic. For instance, clients can now specify whether they want to receive retained messages for a particular subscription, or whether they want to receive messages even if they have the same QoS (Quality of Service) level as the subscription.
+MQTT 5.0 allows clients to specify how they want to receive messages for each subscribed topic. For instance, clients can now specify whether they want to receive retained messages for a particular subscription, or whether they want to receive messages even if they have the same QoS (Quality of Service) level as the subscription.
 
 > Learn more in our detailed guide to [MQTT Subscription Options](https://www.emqx.com/en/blog/an-introduction-to-subscription-options-in-mqtt).
 
@@ -50,7 +50,7 @@ MQTT 5 allows clients to specify how they want to receive messages for each subs
 
 The request/response feature allows a client to specify a topic that the server can use to send a direct reply.
 
-In earlier versions of MQTT, if a client wanted to send a response to a message, it had to publish the response to a topic, and the original sender had to be subscribed to that topic to receive the response. With MQTT 5's request/response feature, communication between clients and servers becomes much more efficient and straightforward.
+In earlier versions of MQTT, if a client wanted to send a response to a message, it had to publish the response to a topic, and the original sender had to be subscribed to that topic to receive the response. With MQTT 5.0's request/response feature, communication between clients and servers becomes much more efficient and straightforward.
 
 > Learn more in our detailed guide to [MQTT Request/Response](https://www.emqx.com/en/blog/mqtt5-request-response).
 
@@ -68,9 +68,9 @@ The MQTT 5.0 protocol has been well received by the IoT community, and numerous 
 
 On the client SDK front, libraries like Paho, which have a broad user base, have added support for MQTT 5.0. This means developers can now utilize MQTT 5.0 features in their IoT applications. Other examples of client SDKs that support MQTT 5.0 are [MQTT.js](https://www.emqx.com/en/blog/mqtt-js-tutorial) and [MQTTnet](https://www.emqx.com/en/blog/connecting-to-serverless-mqtt-broker-with-mqttnet-in-csharp).
 
-## Checklist for Migrating from MQTT 3.1.1 to MQTT 5
+## Checklist for Migrating from MQTT 3.1.1 to MQTT 5.0
 
-If you are currently using MQTT 3.1.1, it’s probably time to upgrade to MQTT 5. Here are some of the main things you should consider when making the move.
+If you are currently using MQTT 3.1.1, it’s probably time to upgrade to MQTT 5.0. Here are some of the main things you should consider when making the move.
 
 ### 1. Update MQTT Brokers
 
@@ -102,7 +102,7 @@ Some of the steps you can take to address security include using the new enhance
 
 Finally, after you've migrated to MQTT 5.0 and implemented its features, it's important to continuously monitor your system. Monitoring should not just be limited to technical aspects like message delivery or client connections. You should also monitor the usage of the new MQTT 5.0 features in your applications. This will give you insights into how these features are enhancing your applications and where further improvements can be made.
 
-## Embracing MQTT 5 with EMQX
+## Embracing MQTT 5.0 with EMQX
 
 As the world's most scalable [open source MQTT Broker](https://www.emqx.com/en/blog/a-comprehensive-comparison-of-open-source-mqtt-brokers-in-2023), [EMQX](https://www.emqx.io) fully supports all features of MQTT 5.0. Devices with any MQTT protocol version can directly access EMQX and communicate with each other.
 

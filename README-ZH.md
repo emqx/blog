@@ -10,7 +10,7 @@ Get to know the preferred protocol in IoT from beginner to master.
 - [请求 / 响应 (Request / Response) 介绍与示例 | MQTT 5.0 特性详解](https://www.emqx.com/zh/blog/mqtt5-request-response) ([Edit](https://github.com/emqx/blog/blob/main/zh/202311/mqtt5-request-response.md))
 - [遗嘱消息（Will Message）介绍与示例 | MQTT 5.0 特性详解](https://www.emqx.com/zh/blog/use-of-mqtt-will-message) ([Edit](https://github.com/emqx/blog/blob/main/zh/202311/use-of-mqtt-will-message.md))
 - [共享订阅介绍与示例 | MQTT 5.0 特性详解](https://www.emqx.com/zh/blog/introduction-to-mqtt5-protocol-shared-subscription) ([Edit](https://github.com/emqx/blog/blob/main/zh/202311/introduction-to-mqtt5-protocol-shared-subscription.md))
-- [MQTT 5：7 项新功能以及迁移注意事项](https://www.emqx.com/zh/blog/introduction-to-mqtt-5) ([Edit](https://github.com/emqx/blog/blob/main/zh/202310/introduction-to-mqtt-5.md))
+- [MQTT 5.0：7 项新功能以及迁移注意事项](https://www.emqx.com/zh/blog/introduction-to-mqtt-5) ([Edit](https://github.com/emqx/blog/blob/main/zh/202310/introduction-to-mqtt-5.md))
 - [Clean Start 与 Session Expiry Interval 介绍与示例 | MQTT 5.0 特性详解](https://www.emqx.com/zh/blog/mqtt5-new-feature-clean-start-and-session-expiry-interval) ([Edit](https://github.com/emqx/blog/blob/main/zh/202310/mqtt5-new-feature-clean-start-and-session-expiry-interval.md))
 - [Payload Format Indicator 和 Content Type 介绍与示例 ｜ MQTT 5.0 特性详解](https://www.emqx.com/zh/blog/mqtt5-new-features-payload-format-indicator-and-content-type) ([Edit](https://github.com/emqx/blog/blob/main/zh/202309/mqtt5-new-features-payload-format-indicator-and-content-type.md))
 - [MQTT 5.0 报文解析 06：AUTH](https://www.emqx.com/zh/blog/mqtt-5-0-control-packets-06-auth) ([Edit](https://github.com/emqx/blog/blob/main/zh/202309/mqtt-5-0-control-packets-06-auth.md))
