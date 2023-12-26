@@ -176,6 +176,7 @@ Explore more with & via EMQ.
 ## [EMQX Open Source | Broker](https://www.emqx.com/en/blog/category/emqx)
 EMQX is the world's most scalable open-source MQTT broker with a high performance that connects 100M+ IoT devices in 1 cluster, while maintaining 1M message per second throughput and sub-millisecond latency.
 
+- [Running EMQX MQTT Broker on Docker (Bonus: Clustering and Persistence)](https://www.emqx.com/en/blog/running-mqtt-broker-on-docker) ([Edit](https://github.com/emqx/blog/blob/main/en/202312/running-mqtt-broker-on-docker.md))
 - [EMQX Performance Tuning: TCP SYN Queue and Accept Queue](https://www.emqx.com/en/blog/emqx-performance-tuning-tcp-syn-queue-and-accept-queue) ([Edit](https://github.com/emqx/blog/blob/main/en/202312/emqx-performance-tuning-tcp-syn-queue-and-accept-queue.md))
 - [CoAP Protocol: Key Features, Use Cases, and Pros/Cons](https://www.emqx.com/en/blog/coap-protocol) ([Edit](https://github.com/emqx/blog/blob/main/en/202312/coap-protocol.md))
 - [Running MQTT on Kubernetes: A Practical Guide](https://www.emqx.com/en/blog/running-mqtt-on-kubernetes) ([Edit](https://github.com/emqx/blog/blob/main/en/202311/running-mqtt-on-kubernetes.md))
