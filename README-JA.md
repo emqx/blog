@@ -7,6 +7,7 @@
 ## [MQTT Tutorials](https://www.emqx.com/ja/blog/category/mqtt-protocol)
 Get to know the preferred protocol in IoT from beginner to master.
 
+- [User Properties - MQTT 5.0 の新機能](https://www.emqx.com/ja/blog/mqtt5-user-properties) ([Edit](https://github.com/emqx/blog/blob/main/ja/202312/mqtt5-user-properties.md))
 - [MQTT Subscription Identifier の説明](https://www.emqx.com/ja/blog/subscription-identifier-and-subscription-options) ([Edit](https://github.com/emqx/blog/blob/main/ja/202312/subscription-identifier-and-subscription-options.md))
 - [MQTT 最大パケットサイズの使用例](https://www.emqx.com/ja/blog/best-practices-of-maximum-packet-size-in-mqtt) ([Edit](https://github.com/emqx/blog/blob/main/ja/202312/best-practices-of-maximum-packet-size-in-mqtt.md))
 - [MQTT のサブスクリプション オプションの解説](https://www.emqx.com/ja/blog/an-introduction-to-subscription-options-in-mqtt) ([Edit](https://github.com/emqx/blog/blob/main/ja/202312/an-introduction-to-subscription-options-in-mqtt.md))
@@ -42,6 +43,7 @@ Get to know the preferred protocol in IoT from beginner to master.
 ## [MQTT Programming](https://www.emqx.com/ja/blog/category/mqtt-programming)
 Best practice of MQTT in various clients.
 
+- [PHPでのMQTT使用法](https://www.emqx.com/ja/blog/how-to-use-mqtt-in-php) ([Edit](https://github.com/emqx/blog/blob/main/ja/202312/how-to-use-mqtt-in-php.md))
 - [Raspberry PiでPaho Pythonクライアントを活用したMQTTの使用ガイド](https://www.emqx.com/ja/blog/use-mqtt-with-raspberry-pi) ([Edit](https://github.com/emqx/blog/blob/main/ja/202308/use-mqtt-with-raspberry-pi.md))
 - [MQTT over WebSocket のクイックガイド](https://www.emqx.com/ja/blog/connect-to-mqtt-broker-with-websocket) ([Edit](https://github.com/emqx/blog/blob/main/ja/202307/connect-to-mqtt-broker-with-websocket.md))
 - [ESP32におけるMQTT活用入門ガイド](https://www.emqx.com/ja/blog/esp32-connects-to-the-free-public-mqtt-broker) ([Edit](https://github.com/emqx/blog/blob/main/ja/202306/esp32-connects-to-the-free-public-mqtt-broker.md))
