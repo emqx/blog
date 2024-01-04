@@ -82,6 +82,7 @@ Get to know the preferred protocol in IoT from beginner to master.
 
 ## [MQTT Client](https://www.emqx.com/en/blog/category/mqtt-client)
 
+- [MQTT.fx Guide: Features, Demos, and Using Tips](https://www.emqx.com/en/blog/connecting-to-emqx-cloud-with-mqttfx) ([Edit](https://github.com/emqx/blog/blob/main/en/202312/connecting-to-emqx-cloud-with-mqttfx.md))
 - [MQTTBox Guide: Features, Demos, and Using Tips](https://www.emqx.com/en/blog/connecting-to-emqx-cloud-with-mqttbox) ([Edit](https://github.com/emqx/blog/blob/main/en/202312/connecting-to-emqx-cloud-with-mqttbox.md))
 - [MQTT Explorer Guide: Features, Demos, and Using Tips](https://www.emqx.com/en/blog/connecting-to-emqx-cloud-with-mqtt-explorer) ([Edit](https://github.com/emqx/blog/blob/main/en/202312/connecting-to-emqx-cloud-with-mqtt-explorer.md))
 - [MQTT over lwIP Practice: A Step-by-Step Tutorial](https://www.emqx.com/en/blog/mqtt-over-lwip) ([Edit](https://github.com/emqx/blog/blob/main/en/202310/mqtt-over-lwip.md))
@@ -93,7 +94,6 @@ Get to know the preferred protocol in IoT from beginner to master.
 - [MQTTX CLI: A Powerful and Easy-to-Use MQTT CLI](https://www.emqx.com/en/blog/powerful-and-easy-to-use-mqtt-5-command-line-tool) ([Edit](https://github.com/emqx/blog/blob/main/en/202208/powerful-and-easy-to-use-mqtt-5-command-line-tool.md))
 - [CocoaMQTT v2.0: The first iOS MQTT 5.0 client](https://www.emqx.com/en/blog/ios-mqtt5-client) ([Edit](https://github.com/emqx/blog/blob/main/en/202111/ios-mqtt5-client.md))
 - [Using MQTTLens to connect to EMQX Cloud](https://www.emqx.com/en/blog/connecting-to-emqx-cloud-with-mqttlens) ([Edit](https://github.com/emqx/blog/blob/main/en/202108/connecting-to-emqx-cloud-with-mqttlens.md))
-- [Using MQTT.fx to connect to EMQX Cloud](https://www.emqx.com/en/blog/connecting-to-emqx-cloud-with-mqttfx) ([Edit](https://github.com/emqx/blog/blob/main/en/202108/connecting-to-emqx-cloud-with-mqttfx.md))
 - [Comparison of Python MQTT Clients](https://www.emqx.com/en/blog/comparision-of-python-mqtt-client) ([Edit](https://github.com/emqx/blog/blob/main/en/202010/comparision-of-python-mqtt-client.md))
 - [Introduction to the Commonly Used MQTT Client Library](https://www.emqx.com/en/blog/introduction-to-the-commonly-used-mqtt-client-library) ([Edit](https://github.com/emqx/blog/blob/main/en/201911/introduction-to-the-commonly-used-mqtt-client-library.md))
 
@@ -176,6 +176,7 @@ Explore more with & via EMQ.
 ## [EMQX Open Source | Broker](https://www.emqx.com/en/blog/category/emqx)
 EMQX is the world's most scalable open-source MQTT broker with a high performance that connects 100M+ IoT devices in 1 cluster, while maintaining 1M message per second throughput and sub-millisecond latency.
 
+- [MQTT with Zigbee: A Practical Guide](https://www.emqx.com/en/blog/mqtt-with-zigbee-a-practical-guide) ([Edit](https://github.com/emqx/blog/blob/main/en/202401/mqtt-with-zigbee-a-practical-guide.md))
 - [Running EMQX MQTT Broker on Docker (Bonus: Clustering and Persistence)](https://www.emqx.com/en/blog/running-mqtt-broker-on-docker) ([Edit](https://github.com/emqx/blog/blob/main/en/202312/running-mqtt-broker-on-docker.md))
 - [EMQX Performance Tuning: TCP SYN Queue and Accept Queue](https://www.emqx.com/en/blog/emqx-performance-tuning-tcp-syn-queue-and-accept-queue) ([Edit](https://github.com/emqx/blog/blob/main/en/202312/emqx-performance-tuning-tcp-syn-queue-and-accept-queue.md))
 - [CoAP Protocol: Key Features, Use Cases, and Pros/Cons](https://www.emqx.com/en/blog/coap-protocol) ([Edit](https://github.com/emqx/blog/blob/main/en/202312/coap-protocol.md))
