@@ -413,6 +413,7 @@ Build a reliable, efficient and industry-specific Internet of Vehicles platform 
 
 ## [Industrial IoT | Unified Namespace | Sparkplug](https://www.emqx.com/zh/blog/category/industrial-iot)
 
+- [TwinCAT 协议：发展历程与架构](https://www.emqx.com/zh/blog/twincat-protocol) ([Edit](https://github.com/emqx/blog/blob/main/zh/202401/twincat-protocol.md))
 - [智能制造领域的数据存储技术和策略](https://www.emqx.com/zh/blog/data-storage-techniques-and-strategies-for-smart-manufacturing) ([Edit](https://github.com/emqx/blog/blob/main/zh/202312/data-storage-techniques-and-strategies-for-smart-manufacturing.md))
 - [云边混合计算：实现智能制造领域的高效数据管理与分析](https://www.emqx.com/zh/blog/leveraging-the-hybrid-computing-for-data-management-and-analysis) ([Edit](https://github.com/emqx/blog/blob/main/zh/202312/leveraging-the-hybrid-computing-for-data-management-and-analysis.md))
 - [基于 Neuron 和 EMQX 的智能制造数据管理实践](https://www.emqx.com/zh/blog/practical-data-management-for-smart-manufacturing) ([Edit](https://github.com/emqx/blog/blob/main/zh/202312/practical-data-management-for-smart-manufacturing.md))
