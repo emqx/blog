@@ -1,40 +1,4 @@
-## TwinCAT 及 ADS 协议
-
-### 什么是 TwinCAT
-
-TwinCAT（The Windows Control and Automation Technology）是由德国倍福自动化有限公司（Beckhoff Automation）开发的用于自动化技术的软件平台。它被用于编程和控制各种类型的工业自动化设备，例如可编程逻辑控制器（PLC）、运动控制系统、人机界面（HMI）等。
-
-TwinCAT 具有模块化和可扩展的特点，使其可用于广泛的应用和行业。它支持多种编程语言，包括结构化文本（ST）、梯形图（LD）、功能块图（FBD）、顺序功能图（SFC）和 C/C ++。
-
-### ADS 协议
-
-ADS (Automation Device Specification) 协议是 TwinCAT 系统中的传输层。它是为了在自动化系统中不同组件之间进行数据交换而开发的，例如 PLC、HMI 和其他设备。ADS 协议提供了高效的数据传输方式，支持实时、异步和通知式数据传输模式，使得 TwinCAT 系统中的各个组件可以彼此通信并协同工作。
-
-![ADS 通信结构](https://assets.emqx.com/images/ea38c6c7f07e962d84709f28d104784c.png)
-
-<center>ADS 通信结构</center>
-
-<br>
-
-ADS 协议在运行于 TCP/IP 或 UDP/IP 协议之上，其 TCP 端口号为 48898 。
-
-ADS 使用客户端-服务器模型进行通信，其中一个设备（客户端）向另一个设备（服务器）发送请求并接收响应。请求和响应可以包括数据、命令或状态信息。这种通信模型可用于在 TwinCAT 系统中的不同组件之间进行通信，包括 PLC、HMI 和其他设备。
-
-![ADS 报文结构](https://assets.emqx.com/images/39e9bf8f3f9b1e22976e4a56f7d8dcfd.png)
-
-<center>ADS 报文结构</center>
-
-<br>
-
-ADS 协议提供了一组[命令](https://infosys.beckhoff.com/english.php?content=../content/1033/tcadscommon/12440300683.html&id=)，用于服务器和客户端之间的通信，其中最重要的是 [ADS Read](https://infosys.beckhoff.com/english.php?content=../content/1033/tcadscommon/12440300683.html&id=) 和[ADS Write](https://infosys.beckhoff.com/content/1033/tcadscommon/12440291467.html) 命令。
-
-## 为什么将 TwinCAT 桥接到 MQTT
-
-随着工业 4.0 的到来，制造业中的智能化、自动化和数据化需求越来越高。在这种背景下，MQTT 协议相较 ADS 协议有许多优势。
-
-[MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 是一种为物联网设备和应用程序设计的消息协议，采用发布与订阅模型，具有轻量、高效、可靠的，支持实时通讯等优点。 MQTT 非常适合资源受限的环境，特别是需要高效使用电力和带宽的场景。目前已经广泛应用于物联网、移动互联网、智能硬件、车联网、智慧城市、远程医疗、电力、石油与能源等领域。
-
-此外，MQTT 是一种开放标准协议，有许多开源实现，相比于 ADS 协议可以运行在更多不同的平台上。
+本文将介绍如何将 TwinCAT 数据桥接到 MQTT。我们将使用 Neuron 采集 Twincat PLC 的数据，将采集到的数据上传到 EMQX MQTT Broker，并使用 MQTTX 查看。
 
 ## TwinCAT 桥接到 MQTT 的架构
 
@@ -59,8 +23,6 @@ EMQX 在桥接架构中的作为 MQTT broker，而 Neuron 则收集来自 TwinCA
 EMQX 具有丰富而强大的功能集，例如基于 SQL 的规则引擎，可实时提取、过滤、丰富和转换物联网数据，以及数据集成功能，可将 EMQX 连接到外部数据系统，如数据库。
 
 ## 通过 Neuron 将 TwinCAT 桥接到 MQTT
-
-接下来我们将介绍如何使用 Neuron 采集 Twincat PLC 的数据，将采集到的数据上传到 MQTT Broker（EMQX），并使用 [MQTTX](https://mqttx.app/zh) 查看。
 
 本教程使用了在同一个局域网下的 2 台机器，机器 1 为 Linux 系统，安装了 EMQX、MQTTX 和 Neuron 软件；机器 2 为 Windows 系统，安装了倍福 TwinCAT 3 软件。 
 
