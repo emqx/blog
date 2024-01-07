@@ -34,7 +34,7 @@ The TwinCAT Functions provide a wide range of extension options to the basic sys
 
 The ADS (Automation Device Specification) protocol is a transport layer within the TwinCAT system. It was developed for data exchange between the different components of an automation system, such as PLCs, HMIs, and other devices.
 
-![Structure of the ADS communication](https://assets.emqx.com/images/7faa58eb3295d9504850cfc3e8ecdf16.png)
+![Structure of the ADS communication](https://assets.emqx.com/images/b023b174a2a9afe7586945306742dc6d.png)
 
 <center>Structure of the ADS communication</center>
 
