@@ -341,6 +341,7 @@ The easiest way to start MQTT service. Connect your IoT devices to any cloud wit
 ## [EMQX Enterprise](https://www.emqx.com/zh/blog/category/enterprise)
 The world's most scalable and reliable MQTT messaging platform to connect, move and process your data in business-critical scenarios for the IoT era.
 
+- [EMQX Enterprise 5.4 发布：OpenTelemetry 分布式追踪、开放充电协议 OCPP 网关、Confluent 集成支持](https://www.emqx.com/zh/blog/emqx-enterprise-5-4-release-notes) ([Edit](https://github.com/emqx/blog/blob/main/zh/202401/emqx-enterprise-5-4-release-notes.md))
 - [EMQX Enterprise 5.3.2 发布：异步 MQTT 文件传输](https://www.emqx.com/zh/blog/emqx-enterprise-5-3-2-release-notes) ([Edit](https://github.com/emqx/blog/blob/main/zh/202312/emqx-enterprise-5-3-2-release-notes.md))
 - [EMQX Enterprise 4.4.23 发布：认证授权与数据集成支持 Upstash Redis](https://www.emqx.com/zh/blog/emqx-enterprise-4-4-23-release-notes) ([Edit](https://github.com/emqx/blog/blob/main/zh/202312/emqx-enterprise-4-4-23-release-notes.md))
 - [EMQX 性能调优：TCP SYN 队列与 Accept 队列](https://www.emqx.com/zh/blog/emqx-performance-tuning-tcp-syn-queue-and-accept-queue) ([Edit](https://github.com/emqx/blog/blob/main/zh/202312/emqx-performance-tuning-tcp-syn-queue-and-accept-queue.md))
