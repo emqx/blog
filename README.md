@@ -348,6 +348,7 @@ The easiest way to start MQTT service. Connect your IoT devices to any cloud wit
 ## [EMQX Enterprise](https://www.emqx.com/en/blog/category/enterprise)
 The world's most scalable and reliable MQTT messaging platform to connect, move and process your data in business-critical scenarios for the IoT era.
 
+- [Building a Data Aggregation Platform with MQTT and MongoDB for Logistics and Transportation](https://www.emqx.com/en/blog/building-a-data-aggregation-platform-with-mqtt-and-mongodb) ([Edit](https://github.com/emqx/blog/blob/main/en/202401/building-a-data-aggregation-platform-with-mqtt-and-mongodb.md))
 - [EMQX Enterprise 5.4 Released: OpenTelemetry Tracing, OCPP Gateway, and Confluent Integration](https://www.emqx.com/en/blog/emqx-enterprise-5-4-release-notes) ([Edit](https://github.com/emqx/blog/blob/main/en/202312/emqx-enterprise-5-4-release-notes.md))
 - [EMQX Performance Tuning: TCP SYN Queue and Accept Queue](https://www.emqx.com/en/blog/emqx-performance-tuning-tcp-syn-queue-and-accept-queue) ([Edit](https://github.com/emqx/blog/blob/main/en/202312/emqx-performance-tuning-tcp-syn-queue-and-accept-queue.md))
 - [Unleashing the Renewable Energy: MQTT Platform for Wind Farm Remote Monitoring and Maintenance](https://www.emqx.com/en/blog/mqtt-platform-for-wind-farm-remote-monitoring-and-maintenance) ([Edit](https://github.com/emqx/blog/blob/main/en/202312/mqtt-platform-for-wind-farm-remote-monitoring-and-maintenance.md))

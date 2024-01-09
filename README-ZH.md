@@ -341,6 +341,7 @@ The easiest way to start MQTT service. Connect your IoT devices to any cloud wit
 ## [EMQX Enterprise](https://www.emqx.com/zh/blog/category/enterprise)
 The world's most scalable and reliable MQTT messaging platform to connect, move and process your data in business-critical scenarios for the IoT era.
 
+- [EMQX Enterprise 5.4 发布：OpenTelemetry 分布式追踪、开放充电协议 OCPP 网关、Confluent 集成支持](https://www.emqx.com/zh/blog/emqx-enterprise-5-4-release-notes) ([Edit](https://github.com/emqx/blog/blob/main/zh/202401/emqx-enterprise-5-4-release-notes.md))
 - [EMQX Enterprise 5.3.2 发布：异步 MQTT 文件传输](https://www.emqx.com/zh/blog/emqx-enterprise-5-3-2-release-notes) ([Edit](https://github.com/emqx/blog/blob/main/zh/202312/emqx-enterprise-5-3-2-release-notes.md))
 - [EMQX Enterprise 4.4.23 发布：认证授权与数据集成支持 Upstash Redis](https://www.emqx.com/zh/blog/emqx-enterprise-4-4-23-release-notes) ([Edit](https://github.com/emqx/blog/blob/main/zh/202312/emqx-enterprise-4-4-23-release-notes.md))
 - [EMQX 性能调优：TCP SYN 队列与 Accept 队列](https://www.emqx.com/zh/blog/emqx-performance-tuning-tcp-syn-queue-and-accept-queue) ([Edit](https://github.com/emqx/blog/blob/main/zh/202312/emqx-performance-tuning-tcp-syn-queue-and-accept-queue.md))
@@ -413,6 +414,7 @@ Build a reliable, efficient and industry-specific Internet of Vehicles platform 
 
 ## [Industrial IoT | Unified Namespace | Sparkplug](https://www.emqx.com/zh/blog/category/industrial-iot)
 
+- [Omron FINS 协议：基础知识及其与 MQTT 桥接的优势](https://www.emqx.com/zh/blog/omron-fins-protocol) ([Edit](https://github.com/emqx/blog/blob/main/zh/202401/omron-fins-protocol.md))
 - [TwinCAT 协议：发展历程与架构](https://www.emqx.com/zh/blog/twincat-protocol) ([Edit](https://github.com/emqx/blog/blob/main/zh/202401/twincat-protocol.md))
 - [智能制造领域的数据存储技术和策略](https://www.emqx.com/zh/blog/data-storage-techniques-and-strategies-for-smart-manufacturing) ([Edit](https://github.com/emqx/blog/blob/main/zh/202312/data-storage-techniques-and-strategies-for-smart-manufacturing.md))
 - [云边混合计算：实现智能制造领域的高效数据管理与分析](https://www.emqx.com/zh/blog/leveraging-the-hybrid-computing-for-data-management-and-analysis) ([Edit](https://github.com/emqx/blog/blob/main/zh/202312/leveraging-the-hybrid-computing-for-data-management-and-analysis.md))
