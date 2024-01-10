@@ -8,7 +8,7 @@ NanoMQ 的正式问世填补了国产基础软件在此领域的空白，将与�
 **[NNG](https://nng.nanomsg.org/)** 作为 **[Nanomsg](https://nanomsg.org/index.html)** 项目的衣钵传承者，是一个强大的消息总线库，支持 SP 协议和 HTTP/WebSocket 等拓展。在其优秀的多线程模型和网络层 API 基础上，NNG 提供了各种丰富的消息模式支持，在物联网、工业控制、游戏、金融交易等领域都有广泛应用。
 EMQ 在项目早期就开始了对其的持续关注，发掘并优化了 NNG 的高效多线程模型。而后，EMQ 与 NNG 达成长期技术合作，将 NNG 作为底层消息总线打造了 NanoMQ。未来，EMQ 将依靠自己在 5G&IoT 领域深厚的开发经验和产品实施落地能力，帮助 NNG 集成更多泛用的物联网协议，拓宽其应用面。在 NanoMQ 项目合作的同时，也将通过开源社区技术反哺 NNG 项目，为其提供 MQTT 协议支持，使其可以作为一个性能优秀的 [MQTT SDK](https://www.emqx.com/zh/mqtt-client-sdk) 使用。 
 
-![logo.png](https://assets.emqx.com/images/52ed45dd2467e5ee1db6c4279c8f3261.png)
+![NNG & NanoMQ 合作](https://assets.emqx.com/images/77f10384282d6f9c3c94aa07d182c03e.png)
 
 ## NanoMQ 项目概述
 

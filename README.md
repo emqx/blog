@@ -257,6 +257,7 @@ EMQX is the world's most scalable open-source MQTT broker with a high performanc
 ## [EMQX Cloud](https://www.emqx.com/en/blog/category/cloud)
 The easiest way to start MQTT service. Connect your IoT devices to any cloud without the burden of maintaining infrastructure.
 
+- [A Developer's Journey with ESP32 and MQTT Broker](https://www.emqx.com/en/blog/a-developer-s-journey-with-esp32-and-mqtt-broker) ([Edit](https://github.com/emqx/blog/blob/main/en/202401/a-developer-s-journey-with-esp32-and-mqtt-broker.md))
 - [EMQX Cloud and IIoT: Industrial Data Ingestion and Insight from Edge to ClickHouse](https://www.emqx.com/en/blog/industrial-data-ingestion-and-insight-from-edge-to-clickHouse) ([Edit](https://github.com/emqx/blog/blob/main/en/202312/industrial-data-ingestion-and-insight-from-edge-to-clickHouse.md))
 - [Seamlessly Integrating EMQX Cloud with Upstash for Redis: A Step-by-Step Tutorial](https://www.emqx.com/en/blog/seamlessly-integrating-emqx-cloud-with-upstash-for-redis) ([Edit](https://github.com/emqx/blog/blob/main/en/202312/seamlessly-integrating-emqx-cloud-with-upstash-for-redis.md))
 - [Seamlessly Integrating EMQX Cloud with Upstash for Kafka: A Step-by-Step Tutorial](https://www.emqx.com/en/blog/seamlessly-integrating-emqx-cloud-with-upstash-for-kafka) ([Edit](https://github.com/emqx/blog/blob/main/en/202312/seamlessly-integrating-emqx-cloud-with-upstash-for-kafka.md))
