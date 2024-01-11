@@ -596,6 +596,7 @@ NanoMQ is an MQTT messaging broker + multi-protocol message bus for edge computi
 ## [eKuiper](https://www.emqx.com/zh/blog/category/kuiper)
 eKuiper is an edge lightweight IoT data analytics / streaming software implemented by Golang, and it can be run at all kinds of resource constrained edge devices.
 
+- [eKuiper 1.12 发布：更灵活的数据源适配，更方便的配置管理](https://www.emqx.com/zh/blog/ekuiper-v-1-12-release-notes) ([Edit](https://github.com/emqx/blog/blob/main/zh/202401/ekuiper-v-1-12-release-notes.md))
 - [通过预定义 Schema 提高 eKuiper 数据处理吞吐](https://www.emqx.com/zh/blog/improve-data-throughput-processing-for-ekuiper-through-predefined-schema) ([Edit](https://github.com/emqx/blog/blob/main/zh/202308/improve-data-throughput-processing-for-ekuiper-through-predefined-schema.md))
 - [eKuiper 1.11.0 发布：新增 50+ 函数，大幅提升数据转换和分析能力](https://www.emqx.com/zh/blog/ekuiper-v-1-11-0-release-notes) ([Edit](https://github.com/emqx/blog/blob/main/zh/202308/ekuiper-v-1-11-0-release-notes.md))
 - [边缘流式计算引擎 eKuiper 在公共数据分析中的应用](https://www.emqx.com/zh/blog/application-of-eKuiper-in-public-data-analysis) ([Edit](https://github.com/emqx/blog/blob/main/zh/202308/application-of-eKuiper-in-public-data-analysis.md))
