@@ -728,6 +728,7 @@ Guarantee the availability and reliability of the IoT platform.
 
 ## [应用案例](https://www.emqx.com/zh/blog/category/use-cases)
 
+- [基于 EMQ 云边协同方案，构建城市级智慧水务运营平台](https://www.emqx.com/zh/blog/building-a-smart-water-platform) ([Edit](https://github.com/emqx/blog/blob/main/zh/202401/building-a-smart-water-platform.md))
 - [EMQ & 智擎信息：基于边缘计算与 AI 图像识别技术的机场能源监控方案](https://www.emqx.com/zh/blog/airport-energy-monitoring-solution) ([Edit](https://github.com/emqx/blog/blob/main/zh/202401/airport-energy-monitoring-solution.md))
 - [EMQX 在物联网设备监控和控制的应用实践](https://www.emqx.com/zh/blog/application-of-emqx-in-iot-device-monitoring-and-control) ([Edit](https://github.com/emqx/blog/blob/main/zh/202312/application-of-emqx-in-iot-device-monitoring-and-control.md))
 - [EMQX 在智能垃圾分类与监测项目中的实践应用](https://www.emqx.com/zh/blog/application-of-emqx-in-smart-waste-sorting-and-monitoring) ([Edit](https://github.com/emqx/blog/blob/main/zh/202312/application-of-emqx-in-smart-waste-sorting-and-monitoring.md))

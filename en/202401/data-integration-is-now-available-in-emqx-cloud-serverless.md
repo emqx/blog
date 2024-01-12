@@ -2,9 +2,9 @@ We are excited to announce that the fully managed MQTT cloud service [EMQX Cloud
 
 ## Architecture
 
-![Architecture](https://assets.emqx.com/images/81d8b4414fc9b5380a127aa93c725723.png)
+![Architecture](https://assets.emqx.com/images/65d39600215e954965205551adfcd0b8.png)
 
-As devices or applications establish connections with the deployment, the [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) takes charge of routing messages. The introduction of data integration adds a layer of versatility, offering a suite of components for data processing driven by SQL statements—commonly known as the 'Rule Engine'. Users have the flexibility to define processing rules and subsequently dispatch the refined data to various cloud services. 
+As devices or applications establish connections with the Serverless deployment, the [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) takes charge of routing messages. The data will enter the Rule Engine for processing, a component that handles data using SQL statements. The processed data will be forwarded to the target service by an Action. Actions are divided into Sink (sending data to a service) and Source (receiving data from a service). Currently, Data Integration of Serverless supports Sink mode to integrate data into cloud services.
 
 The data integration of [EMQX Cloud Serverless](https://www.emqx.com/en/cloud/serverless-mqtt), equipped with a straightforward interface configuration, now supports a seamless connection with Kafka and HTTP services. This enables users to easily integrate their deployment with other critical business systems. 
 
@@ -27,7 +27,7 @@ Completing a data integration workflow is straightforward, requiring four simple
 
 ## Use Cases
 
-### HAVC Management
+### HVAC Management
 
 Managing a home's heating, ventilation, and air conditioning (HVAC) system is an area where EMQX Cloud Serverless can shine. With data integration, it can seamlessly collect data from temperature sensors, apply processing through the rule engine, and then transmit the data to the Kafka service, enabling intelligent automation of the HVAC system.
 
