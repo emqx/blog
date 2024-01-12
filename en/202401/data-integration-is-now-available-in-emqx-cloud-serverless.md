@@ -27,7 +27,7 @@ Completing a data integration workflow is straightforward, requiring four simple
 
 ## Use Cases
 
-### HAVC Management
+### HVAC Management
 
 Managing a home's heating, ventilation, and air conditioning (HVAC) system is an area where EMQX Cloud Serverless can shine. With data integration, it can seamlessly collect data from temperature sensors, apply processing through the rule engine, and then transmit the data to the Kafka service, enabling intelligent automation of the HVAC system.
 
