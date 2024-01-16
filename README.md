@@ -491,6 +491,7 @@ Build a reliable, efficient and industry-specific Internet of Vehicles platform 
 ## [MQTTX](https://www.emqx.com/en/blog/category/mqttx)
 MQTTX is a Fully Open-source MQTT 5.0 cross-platform Desktop Client, makes it easy and quick to create multiple simultaneous online MQTT client connections, test the connection, publish, and subscribe functions of MQTT/TCP, MQTT/TLS, MQTT/WebSocket as well as other MQTT protocol features.
 
+- [MQTTX 1.9.8 Released: CLI Debug Mode and Copilot Enhancements](https://www.emqx.com/en/blog/mqttx-1-9-8-release-notes) ([Edit](https://github.com/emqx/blog/blob/main/en/202401/mqttx-1-9-8-release-notes.md))
 - [MQTTX 1.9.7: Introducing Copilot - Your AI-Powered MQTT Assistant](https://www.emqx.com/en/blog/mqttx-1-9-7-release-notes) ([Edit](https://github.com/emqx/blog/blob/main/en/202312/mqttx-1-9-7-release-notes.md))
 - [MQTTX 1.9.6 Released: ALPN Protocol Support, Optimized Publish Options Interface](https://www.emqx.com/en/blog/mqttx-v-1-9-6-release-notes) ([Edit](https://github.com/emqx/blog/blob/main/en/202309/mqttx-v-1-9-6-release-notes.md))
 - [Explore New Features of MQTT 5.0: Usage Examples Based on MQTTX CLI](https://www.emqx.com/en/blog/demonstrate-mqtt-5-0-features-using-mqttx-cli) ([Edit](https://github.com/emqx/blog/blob/main/en/202309/demonstrate-mqtt-5-0-features-using-mqttx-cli.md))
@@ -521,6 +522,7 @@ MQTTX is a Fully Open-source MQTT 5.0 cross-platform Desktop Client, makes it ea
 ## [Neuron - IIoT Connectivity Server](https://www.emqx.com/en/blog/category/neuron)
 IoT edge industrial protocol gateway software, which supports one-stop access to dozens of industrial protocols and converts them into MQTT protocol to access the cloud industrial IoT platform. It just requires ultra-low resource consumption, and supports three major architectures of X86, ARM, and MIPS.
 
+- [Unveiling SECS/GEM: Enhancing Communication in Semiconductor Manufacturing](https://www.emqx.com/en/blog/unveiling-secs-gem) ([Edit](https://github.com/emqx/blog/blob/main/en/202401/unveiling-secs-gem.md))
 - [Empowering the Steel Manufacturing with NeuronEX: A Real-World Example Analysis](https://www.emqx.com/en/blog/empowering-the-steel-manufacturing-with-neuronex) ([Edit](https://github.com/emqx/blog/blob/main/en/202401/empowering-the-steel-manufacturing-with-neuronex.md))
 - [Introducing NeuronEX: A Market-Driven Evolution for Industrial Data Landscape](https://www.emqx.com/en/blog/introducing-neuronex-a-market-driven-evolution-for-industrial-data-landscape) ([Edit](https://github.com/emqx/blog/blob/main/en/202312/introducing-neuronex-a-market-driven-evolution-for-industrial-data-landscape.md))
 - [Unleashing the Renewable Energy: MQTT Platform for Wind Farm Remote Monitoring and Maintenance](https://www.emqx.com/en/blog/mqtt-platform-for-wind-farm-remote-monitoring-and-maintenance) ([Edit](https://github.com/emqx/blog/blob/main/en/202312/mqtt-platform-for-wind-farm-remote-monitoring-and-maintenance.md))
