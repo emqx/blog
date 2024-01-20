@@ -250,7 +250,6 @@ EMQX is the world's most scalable open-source MQTT broker with a high performanc
 - [Using Java to develop EMQX plugins](https://www.emqx.com/en/blog/develop-emqx-plugin-using-java) ([Edit](https://github.com/emqx/blog/blob/main/en/202007/develop-emqx-plugin-using-java.md))
 - [Building K8S cluster of EMQX starting from scratch](https://www.emqx.com/en/blog/emqx-mqtt-broker-k8s-cluster) ([Edit](https://github.com/emqx/blog/blob/main/en/202006/emqx-mqtt-broker-k8s-cluster.md))
 - [IoT private TCP protocol service migration](https://www.emqx.com/en/blog/iot-private-tcp-protocol-service-migration) ([Edit](https://github.com/emqx/blog/blob/main/en/202005/iot-private-tcp-protocol-service-migration.md))
-- [EMQX MQTT 5.0 Topic Rewrite](https://www.emqx.com/en/blog/rewriting-emqx-mqtt5-topic) ([Edit](https://github.com/emqx/blog/blob/main/en/202004/rewriting-emqx-mqtt5-topic.md))
 - [Retained message and message expiration interval of EMQX MQTT 5.0 broker](https://www.emqx.com/en/blog/message-retention-and-message-expiration-interval-of-emqx-mqtt5-broker) ([Edit](https://github.com/emqx/blog/blob/main/en/202004/message-retention-and-message-expiration-interval-of-emqx-mqtt5-broker.md))
 - [Deploying EMQX 4.0 cluster on Kubernetes via Helm3](https://www.emqx.com/en/blog/rapidly-deploy-emqx-clusters-on-kubernetes-via-helm) ([Edit](https://github.com/emqx/blog/blob/main/en/201910/rapidly-deploy-emqx-clusters-on-kubernetes-via-helm.md))
 
@@ -258,6 +257,7 @@ EMQX is the world's most scalable open-source MQTT broker with a high performanc
 ## [EMQX Cloud](https://www.emqx.com/en/blog/category/cloud)
 The easiest way to start MQTT service. Connect your IoT devices to any cloud without the burden of maintaining infrastructure.
 
+- [Getting Started with EMQX Cloud Serverless Data Integration(Beta): A Quick Guide](https://www.emqx.com/en/blog/getting-started-with-emqx-cloud-serverless-data-integration) ([Edit](https://github.com/emqx/blog/blob/main/en/202401/getting-started-with-emqx-cloud-serverless-data-integration.md))
 - [Data Integration is Now Available in EMQX Cloud Serverless](https://www.emqx.com/en/blog/data-integration-is-now-available-in-emqx-cloud-serverless) ([Edit](https://github.com/emqx/blog/blob/main/en/202401/data-integration-is-now-available-in-emqx-cloud-serverless.md))
 - [A Developer's Journey with ESP32 and MQTT Broker](https://www.emqx.com/en/blog/a-developer-s-journey-with-esp32-and-mqtt-broker) ([Edit](https://github.com/emqx/blog/blob/main/en/202401/a-developer-s-journey-with-esp32-and-mqtt-broker.md))
 - [EMQX Cloud and IIoT: Industrial Data Ingestion and Insight from Edge to ClickHouse](https://www.emqx.com/en/blog/industrial-data-ingestion-and-insight-from-edge-to-clickHouse) ([Edit](https://github.com/emqx/blog/blob/main/en/202312/industrial-data-ingestion-and-insight-from-edge-to-clickHouse.md))
