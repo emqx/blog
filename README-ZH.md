@@ -146,6 +146,7 @@ Best practice of MQTT in various clients.
 ## [MQTT Integration (Eco & Integration)](https://www.emqx.com/zh/blog/category/eco-and-integration)
 Explore more with & via EMQ.
 
+- [MQTT+MongoDB 实现高效物联网数据管理](https://www.emqx.com/zh/blog/mqtt-and-mongodb-crafting-seamless-synergy-for-iot-data-mangement) ([Edit](https://github.com/emqx/blog/blob/main/zh/202401/mqtt-and-mongodb-crafting-seamless-synergy-for-iot-data-mangement.md))
 - [MQTT + InfluxDB：构建面向储能领域的物联网时序数据应用](https://www.emqx.com/zh/blog/building-an-iot-time-series-data-application-with-mqtt-and-influxdb) ([Edit](https://github.com/emqx/blog/blob/main/zh/202311/building-an-iot-time-series-data-application-with-mqtt-and-influxdb.md))
 - [OpenTelemetry 入门：MQTT 和物联网可观测性](https://www.emqx.com/zh/blog/open-telemetry-the-basics-and-benefits-for-mqtt-and-iot-observability) ([Edit](https://github.com/emqx/blog/blob/main/zh/202311/open-telemetry-the-basics-and-benefits-for-mqtt-and-iot-observability.md))
 - [MQTT over lwIP 实践：物联网协议的结合](https://www.emqx.com/zh/blog/mqtt-over-lwip) ([Edit](https://github.com/emqx/blog/blob/main/zh/202310/mqtt-over-lwip.md))
