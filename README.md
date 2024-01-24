@@ -257,6 +257,7 @@ EMQX is the world's most scalable open-source MQTT broker with a high performanc
 ## [EMQX Cloud](https://www.emqx.com/en/blog/category/cloud)
 The easiest way to start MQTT service. Connect your IoT devices to any cloud without the burden of maintaining infrastructure.
 
+- [MQTT Platform: Essential Features & Use Cases](https://www.emqx.com/en/blog/mqtt-platform-essential-features-and-use-cases) ([Edit](https://github.com/emqx/blog/blob/main/en/202401/mqtt-platform-essential-features-and-use-cases.md))
 - [Getting Started with EMQX Cloud Serverless Data Integration(Beta): A Quick Guide](https://www.emqx.com/en/blog/getting-started-with-emqx-cloud-serverless-data-integration) ([Edit](https://github.com/emqx/blog/blob/main/en/202401/getting-started-with-emqx-cloud-serverless-data-integration.md))
 - [Data Integration is Now Available in EMQX Cloud Serverless](https://www.emqx.com/en/blog/data-integration-is-now-available-in-emqx-cloud-serverless) ([Edit](https://github.com/emqx/blog/blob/main/en/202401/data-integration-is-now-available-in-emqx-cloud-serverless.md))
 - [A Developer's Journey with ESP32 and MQTT Broker](https://www.emqx.com/en/blog/a-developer-s-journey-with-esp32-and-mqtt-broker) ([Edit](https://github.com/emqx/blog/blob/main/en/202401/a-developer-s-journey-with-esp32-and-mqtt-broker.md))
@@ -351,6 +352,7 @@ The easiest way to start MQTT service. Connect your IoT devices to any cloud wit
 ## [EMQX Enterprise](https://www.emqx.com/en/blog/category/enterprise)
 The world's most scalable and reliable MQTT messaging platform to connect, move and process your data in business-critical scenarios for the IoT era.
 
+- [MQTT Platform: Essential Features & Use Cases](https://www.emqx.com/en/blog/mqtt-platform-essential-features-and-use-cases) ([Edit](https://github.com/emqx/blog/blob/main/en/202401/mqtt-platform-essential-features-and-use-cases.md))
 - [EMQX Performance Tuning: Linux Conntrack and MQTT Connections](https://www.emqx.com/en/blog/emqx-performance-tuning-linux-conntrack-and-mqtt-connections) ([Edit](https://github.com/emqx/blog/blob/main/en/202401/emqx-performance-tuning-linux-conntrack-and-mqtt-connections.md))
 - [Building a Data Aggregation Platform with MQTT and MongoDB for Logistics and Transportation](https://www.emqx.com/en/blog/building-a-data-aggregation-platform-with-mqtt-and-mongodb) ([Edit](https://github.com/emqx/blog/blob/main/en/202401/building-a-data-aggregation-platform-with-mqtt-and-mongodb.md))
 - [EMQX Enterprise 5.4 Released: OpenTelemetry Tracing, OCPP Gateway, and Confluent Integration](https://www.emqx.com/en/blog/emqx-enterprise-5-4-release-notes) ([Edit](https://github.com/emqx/blog/blob/main/en/202312/emqx-enterprise-5-4-release-notes.md))
