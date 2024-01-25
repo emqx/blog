@@ -4,7 +4,7 @@ In a traditional wind farm, devices such as wind turbines and control stations u
 
 Advancements in IoT have revolutionized wind farm operations. Data collected from production areas is transmitted to management zones and centralized in the cloud, forming a multi-tiered intelligent operation and management system.
 
-EMQ provides a unified MQTT platform that addresses key issues such as data collection, transmission, secure network gateway communication, and data storage and analysis. This ensures the stable and efficient operation of wind power systems. 
+EMQ provides a unified [MQTT platform](https://www.emqx.com/en/blog/mqtt-platform-essential-features-and-use-cases) that addresses key issues such as data collection, transmission, secure network gateway communication, and data storage and analysis. This ensures the stable and efficient operation of wind power systems. 
 
 ## Challenges in Wind Farm Management
 

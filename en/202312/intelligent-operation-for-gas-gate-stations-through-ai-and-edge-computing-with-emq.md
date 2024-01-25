@@ -33,7 +33,7 @@ The EMQX MQTT platform enables users to achieve centralized management. Users ca
 
 ### EMQX Enterprise
 
-[EMQX Enterprise](https://www.emqx.com/en/products/emqx) is a powerful enterprise MQTT platform designed for large-scale deployments and high reliability in IoT applications. The following capabilities of EMQX Enterprise can benefit the industry:
+[EMQX Enterprise](https://www.emqx.com/en/products/emqx) is a powerful enterprise [MQTT platform](https://www.emqx.com/en/blog/mqtt-platform-essential-features-and-use-cases) designed for large-scale deployments and high reliability in IoT applications. The following capabilities of EMQX Enterprise can benefit the industry:
 
 - **High Reliability and Scalability:** EMQX Enterprise adopts a distributed architecture with high availability and scalability to handle large-scale concurrent message transmission. It supports horizontal scaling to accommodate the growing number of IoT devices and data traffic, ensuring system stability.
 - **Rich Protocol Support:** EMQX Enterprise supports multiple messaging protocols besides the MQTT protocol. It allows developers to extend to support all kinds of private protocols for their application needs.
