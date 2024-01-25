@@ -42,7 +42,7 @@ Furthermore, the solution seamlessly integrates this aggregated data into variou
 
 In contrast to the conventional ISA95 architecture commonly employed in manufacturing, EMQX harnesses the [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) protocol's publish/subscribe model, effectively decoupling data producers and consumers. This approach offers increased ease and flexibility for applications to access real-time factory data. 
 
-The innovative factory data architecture established by the EMQX enterprise-level MQTT platform offers several notable advantages:
+The innovative factory data architecture established by the EMQX enterprise-level [MQTT platform](https://www.emqx.com/en/blog/mqtt-platform-essential-features-and-use-cases) offers several notable advantages:
 
 - It provides a unified data access platform, simplifying application development and integration compared to the traditional point-to-point communication in ISA95 setups. 
 - It enhances data timeliness with low-latency data transmission, enabling intelligent applications such as alarms, instructions, and autonomous equipment operation. 

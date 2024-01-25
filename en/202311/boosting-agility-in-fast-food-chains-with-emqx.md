@@ -36,7 +36,7 @@ EMQX also supports connection encryption and authentication, ensuring you can sw
 
 ## The Tech Advantages of Adopting EMQX
 
-[EMQX](https://www.emqx.com/en/products/emqx) is a powerful enterprise MQTT platform designed for high reliability in large-scale deployments and IoT applications. It can benefit users through the following capabilities:
+[EMQX](https://www.emqx.com/en/products/emqx) is a powerful enterprise [MQTT platform](https://www.emqx.com/en/blog/mqtt-platform-essential-features-and-use-cases) designed for high reliability in large-scale deployments and IoT applications. It can benefit users through the following capabilities:
 
 - **High Reliability and Scalability:** EMQX utilizes a distributed architecture with high availability and scalability to handle large-scale concurrent messaging. It supports horizontal scaling to accommodate growing IoT devices and data traffic, ensuring system stability.
 - **Rich Protocol Support**: EMQX supports multiple messaging protocols in addition to MQTT. It allows developers to extend to support a variety of industrial protocols to meet their application needs.

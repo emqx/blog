@@ -1,6 +1,6 @@
 ## Introduction
 
-Intelligent logistics, powered by the Internet of Things (IoT), is transforming the logistics sector. EMQX and MongoDB offer a smart solution for data collection in this industry. EMQX is an enterprise MQTT platform that collects data from various sensors on vehicles and aggregates it across different processes. MongoDB is a database that aggregates and analyzes the data. The cooperation of both enables the monitoring of vehicle and cargo conditions, the optimization of distribution routes, and the management of cargo loading and dispatching.
+Intelligent logistics, powered by the Internet of Things (IoT), is transforming the logistics sector. EMQX and MongoDB offer a smart solution for data collection in this industry. EMQX is an enterprise [MQTT platform](https://www.emqx.com/en/blog/mqtt-platform-essential-features-and-use-cases) that collects data from various sensors on vehicles and aggregates it across different processes. MongoDB is a database that aggregates and analyzes the data. The cooperation of both enables the monitoring of vehicle and cargo conditions, the optimization of distribution routes, and the management of cargo loading and dispatching.
 
 This solution provides logistics enterprises with a solid basis for decision-making. It helps them improve transportation efficiency, lower transportation costs, and increase service quality and customer satisfaction.
 

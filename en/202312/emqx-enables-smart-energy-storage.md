@@ -2,7 +2,7 @@
 
 While the societal trend leans towards substituting traditional energy sources with more renewable options, challenges arise from the intermittent and variable nature of outputs from sources like solar and wind energy. The unpredictable highs and lows of renewable energy make it challenging to maintain a stable and consistent power supply on the electrical grid. Consequently, many power suppliers are considering constructing large-scale energy storage systems to optimize the management and utilization of these smart energy sources.
 
-EMQ offers a unified MQTT platform for power suppliers by facilitating intelligent smart energy battery storage systems. It addresses critical issues such as data collection, analysis, transmission, and storage, ensuring the stable and efficient operation of energy systems.
+EMQ offers a unified [MQTT platform](https://www.emqx.com/en/blog/mqtt-platform-essential-features-and-use-cases) for power suppliers by facilitating intelligent smart energy battery storage systems. It addresses critical issues such as data collection, analysis, transmission, and storage, ensuring the stable and efficient operation of energy systems.
 
 ## Challenges of Building an Smart Energy Storage System
 
