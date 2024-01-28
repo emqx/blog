@@ -419,6 +419,7 @@ Build a reliable, efficient and industry-specific Internet of Vehicles platform 
 
 ## [Industrial IoT | Unified Namespace | Sparkplug](https://www.emqx.com/zh/blog/category/industrial-iot)
 
+- [EMQX ECP 2.1.0 发布：优化安装部署、增强集成与告警功能](https://www.emqx.com/zh/blog/emqx-ecp-2-1-0-release-notes) ([Edit](https://github.com/emqx/blog/blob/main/zh/202401/emqx-ecp-2-1-0-release-notes.md))
 - [工业物联网数据桥接教程：KNX 桥接到 MQTT](https://www.emqx.com/zh/blog/bridging-knx-data-to-mqtt-introduction-and-hands-on-tutorial) ([Edit](https://github.com/emqx/blog/blob/main/zh/202401/bridging-knx-data-to-mqtt-introduction-and-hands-on-tutorial.md))
 - [KNX 协议：基础知识及其在 IoT 领域的应用](https://www.emqx.com/zh/blog/knx-protocol) ([Edit](https://github.com/emqx/blog/blob/main/zh/202401/knx-protocol.md))
 - [Omron FINS 协议：基础知识及其与 MQTT 桥接的优势](https://www.emqx.com/zh/blog/omron-fins-protocol) ([Edit](https://github.com/emqx/blog/blob/main/zh/202401/omron-fins-protocol.md))
