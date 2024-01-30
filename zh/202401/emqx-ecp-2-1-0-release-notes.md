@@ -4,11 +4,43 @@ EMQX ECP 工业互联数据平台 2.1.0 版本现已正式发布。新版本优�
 
 ECP 2.1.0 优化了安装包及安装过程，降低了部署 ECP 的复杂性。让用户可以更轻松地完成安装，并更快速地投入使用。
 
-![新版 Docker Compose 安装步骤](https://assets.emqx.com/images/a5c201dc9dec6a0615b8bfe8dffbd83b.png)
+新版 ECP 安装步骤：
 
-<center>新版 Docker Compose 安装步骤</center>
+1. 下载 [emqx-ecp-docker-compose-installer-2.1.0.tar.gz](https://www.emqx.com/zh/downloads/emqx-ecp/2.1.0/emqx-ecp-docker-compose-installer-2.1.0.tar.gz)
 
-<br>
+   ```
+   tar -xzvf emqx-ecp-docker-compose-installer-2.1.0.tar.gz && cd docker-compose
+   ```
+
+2. 依赖检查
+
+   ```
+   ./emqx_ecp_ctl precheck
+   ```
+
+3. 配置环境
+
+   ```
+   ./emqx_ecp_ctl configure
+   ```
+
+4. 启动服务
+
+   ```
+   ./emqx_ecp_ctl start
+   ```
+
+5. 创建用户
+
+   ```
+   ./emqx_ecp_ctl create-user
+   ```
+
+6. 浏览器访问
+
+   ```
+   http://<ip>:8082
+   ```
 
 新版本 ECP 安装包下载地址如下，欢迎下载试用：[https://www.emqx.com/zh/try?product=emqx-ecp](https://www.emqx.com/zh/try?product=emqx-ecp)。
 
