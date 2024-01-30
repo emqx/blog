@@ -101,6 +101,7 @@ Get to know the preferred protocol in IoT from beginner to master.
 ## [MQTT Programming](https://www.emqx.com/en/blog/category/mqtt-programming)
 Best practice of MQTT in various clients.
 
+- [MQTT with Java: A Beginner's Guide with Examples & FAQs](https://www.emqx.com/en/blog/how-to-use-mqtt-in-java) ([Edit](https://github.com/emqx/blog/blob/main/en/202401/how-to-use-mqtt-in-java.md))
 - [Connecting to a Serverless MQTT Broker in React](https://www.emqx.com/en/blog/connecting-to-a-serverless-mqtt-broker-in-react) ([Edit](https://github.com/emqx/blog/blob/main/en/202309/connecting-to-a-serverless-mqtt-broker-in-react.md))
 - [Using MQTT in Unity with M2MqttUnity Library: A Step-by-Step Guide](https://www.emqx.com/en/blog/using-mqtt-in-unity-with-m2mqttunity-library-a-step-by-step-guide) ([Edit](https://github.com/emqx/blog/blob/main/en/202308/using-mqtt-in-unity-with-m2mqttunity-library-a-step-by-step-guide.md))
 - [How to Create an MQTT Application in Qt6](https://www.emqx.com/en/blog/how-to-create-an-mqtt-application-in-qt6) ([Edit](https://github.com/emqx/blog/blob/main/en/202308/how-to-create-an-mqtt-application-in-qt6.md))
@@ -116,7 +117,6 @@ Best practice of MQTT in various clients.
 - [How to Use MQTT in The Django Project](https://www.emqx.com/en/blog/how-to-use-mqtt-in-django) ([Edit](https://github.com/emqx/blog/blob/main/en/202210/how-to-use-mqtt-in-django.md))
 - [How to Use MQTT in The Angular Project](https://www.emqx.com/en/blog/how-to-use-mqtt-in-angular) ([Edit](https://github.com/emqx/blog/blob/main/en/202210/how-to-use-mqtt-in-angular.md))
 - [MicroPython MQTT Tutorial Based on Raspberry Pi](https://www.emqx.com/en/blog/micro-python-mqtt-tutorial-based-on-raspberry-pi) ([Edit](https://github.com/emqx/blog/blob/main/en/202209/micro-python-mqtt-tutorial-based-on-raspberry-pi.md))
-- [How to Use MQTT in Java](https://www.emqx.com/en/blog/how-to-use-mqtt-in-java) ([Edit](https://github.com/emqx/blog/blob/main/en/202208/how-to-use-mqtt-in-java.md))
 - [How to Use MQTT in The React Native Project](https://www.emqx.com/en/blog/how-to-use-mqtt-in-react-native) ([Edit](https://github.com/emqx/blog/blob/main/en/202206/how-to-use-mqtt-in-react-native.md))
 - [How to use MQTT in Flask](https://www.emqx.com/en/blog/how-to-use-mqtt-in-flask) ([Edit](https://github.com/emqx/blog/blob/main/en/202205/how-to-use-mqtt-in-flask.md))
 - [How to use MQTT in PHP](https://www.emqx.com/en/blog/how-to-use-mqtt-in-php) ([Edit](https://github.com/emqx/blog/blob/main/en/202108/how-to-use-mqtt-in-php.md))
