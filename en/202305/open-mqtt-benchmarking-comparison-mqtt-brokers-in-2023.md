@@ -192,7 +192,7 @@ XMeter provides a private deployment version (on-premise) and a public cloud Saa
 | :------------ | ----------------------- | ------------------------------- | ------------------- | ------------------- | --------------- | --------------- |
 | **Mosquitto** | pub: 50k<br>sub: 40k    | 12,723.07                       | 7%                  | 7%                  | 485M            | 456M            |
 | **NanoMQ**    | pub: 50k<br>sub: 50k    | 2.76                            | 34%                 | 34%                 | 795M            | 783M            |
-| **EMQ**       | pub: 50k<br>sub: 50k    | 1.47                            | 94%                 | 93%                 | 8.19G           | 6.67G           |
+| **EMQX**       | pub: 50k<br>sub: 50k    | 1.47                            | 94%                 | 93%                 | 8.19G           | 6.67G           |
 | **VerneMQ**   | pub: 7.6k<br> sub: 3.5k | 116,888.61                      | 83%                 | 74%                 | 12.16G          | 8.38G           |
 
 ##### pub-to-sub latency percentiles
@@ -215,7 +215,7 @@ XMeter provides a private deployment version (on-premise) and a public cloud Saa
 | :------------ | --------------------- | ------------------- | ------------------- | --------------- | --------------------- |
 | **Mosquitto** | 5.74                  | 2%                  | 2%                  | 1G              | 1G                    |
 | **NanoMQ**    | 3.16                  | 5%                  | 4%                  | 6.9G            | 6.9G                  |
-| **EMQ**       | 2.4                   | 35%                 | 22%                 | 10.77G          | 8.68G                 |
+| **EMQX**       | 2.4                   | 35%                 | 22%                 | 10.77G          | 8.68G                 |
 | **VerneMQ**   | 2.47                  | 44%                 | 25%                 | 22.4G           | not stable            |
 
 > During a 30-minute’s test of VerneMQ, the memory used keeps increasing. It rose from 18GB when 1 million connections were completed to 22.4GB at the end of the test.
