@@ -418,6 +418,7 @@ The world's most scalable and reliable MQTT messaging platform to connect, move 
 ## [Internet of Vehicles | Connected Cars](https://www.emqx.com/en/blog/category/internet-of-vehicles)
 Build a reliable, efficient and industry-specific Internet of Vehicles platform based on EMQ's practical experience, from theoretical knowledge such as protocol selection to practical operations like platform architecture design.
 
+- [Connecting Millions of Cars using EMQX MQTT and Upstash Kafka](https://www.emqx.com/en/blog/connecting-millions-of-cars-using-emqx-mqtt-and-upstash-kafka) ([Edit](https://github.com/emqx/blog/blob/main/en/202401/connecting-millions-of-cars-using-emqx-mqtt-and-upstash-kafka.md))
 - [The Road to Smart Mobility: Opportunities and Challenges](https://www.emqx.com/en/blog/the-road-to-smart-mobility) ([Edit](https://github.com/emqx/blog/blob/main/en/202311/the-road-to-smart-mobility.md))
 - [Revolutionizing TSP Platforms: How EMQX Powers Automotive Connectivity](https://www.emqx.com/en/blog/revolutionizing-tsp-platforms) ([Edit](https://github.com/emqx/blog/blob/main/en/202311/revolutionizing-tsp-platforms.md))
 - [Data Stream Processing for Software-Defined Vehicle](https://www.emqx.com/en/blog/data-stream-processing-for-software-defined-vehicle) ([Edit](https://github.com/emqx/blog/blob/main/en/202306/data-stream-processing-for-software-defined-vehicle.md))
@@ -621,7 +622,7 @@ Accelerate digital transformation of industries based on EMQ data infrastructure
 
 ## [Engineering](https://www.emqx.com/en/blog/category/engineering)
 
-- [Chaos engineering, model checking and more: advanced testing of Erlang and Elixir applications](https://www.emqx.com/en/blog/advanced-testing-of-erlang-and-elixir-applications) ([Edit](https://github.com/emqx/blog/blob/main/en/202202/advanced-testing-of-erlang-and-elixir-applications.md))
+- [Chaos Engineering, Model Checking and More: Advanced Testing of Erlang and Elixir Applications](https://www.emqx.com/en/blog/advanced-testing-of-erlang-and-elixir-applications) ([Edit](https://github.com/emqx/blog/blob/main/en/202202/advanced-testing-of-erlang-and-elixir-applications.md))
 - [Erlang application stop order](https://www.emqx.com/en/blog/erlang-application-stop-order) ([Edit](https://github.com/emqx/blog/blob/main/en/202108/erlang-application-stop-order.md))
 - [Hamler 0.2 - OTP Behaviours with Type Classes](https://www.emqx.com/en/blog/hamler-0-2-otp-behaviours-with-type-classes) ([Edit](https://github.com/emqx/blog/blob/main/en/202008/hamler-0-2-otp-behaviours-with-type-classes.md))
 - [Erlang vs Scala](https://www.emqx.com/en/blog/erlang-vs-scala) ([Edit](https://github.com/emqx/blog/blob/main/en/201809/erlang-vs-scala.md))
