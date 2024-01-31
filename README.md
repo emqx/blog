@@ -621,7 +621,7 @@ Accelerate digital transformation of industries based on EMQ data infrastructure
 
 ## [Engineering](https://www.emqx.com/en/blog/category/engineering)
 
-- [Chaos engineering, model checking and more: advanced testing of Erlang and Elixir applications](https://www.emqx.com/en/blog/advanced-testing-of-erlang-and-elixir-applications) ([Edit](https://github.com/emqx/blog/blob/main/en/202202/advanced-testing-of-erlang-and-elixir-applications.md))
+- [Chaos Engineering, Model Checking and More: Advanced Testing of Erlang and Elixir Applications](https://www.emqx.com/en/blog/advanced-testing-of-erlang-and-elixir-applications) ([Edit](https://github.com/emqx/blog/blob/main/en/202202/advanced-testing-of-erlang-and-elixir-applications.md))
 - [Erlang application stop order](https://www.emqx.com/en/blog/erlang-application-stop-order) ([Edit](https://github.com/emqx/blog/blob/main/en/202108/erlang-application-stop-order.md))
 - [Hamler 0.2 - OTP Behaviours with Type Classes](https://www.emqx.com/en/blog/hamler-0-2-otp-behaviours-with-type-classes) ([Edit](https://github.com/emqx/blog/blob/main/en/202008/hamler-0-2-otp-behaviours-with-type-classes.md))
 - [Erlang vs Scala](https://www.emqx.com/en/blog/erlang-vs-scala) ([Edit](https://github.com/emqx/blog/blob/main/en/201809/erlang-vs-scala.md))
