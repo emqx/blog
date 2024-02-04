@@ -345,6 +345,7 @@ The easiest way to start MQTT service. Connect your IoT devices to any cloud wit
 ## [EMQX Enterprise](https://www.emqx.com/zh/blog/category/enterprise)
 The world's most scalable and reliable MQTT messaging platform to connect, move and process your data in business-critical scenarios for the IoT era.
 
+- [EMQX Enterprise 5.5 发布：新增 Elasticsearch 数据集成](https://www.emqx.com/zh/blog/emqx-enterprise-5-5-release-notes) ([Edit](https://github.com/emqx/blog/blob/main/zh/202402/emqx-enterprise-5-5-release-notes.md))
 - [使用 MQTT 和 MongoDB 构建物流与运输数据汇聚平台](https://www.emqx.com/zh/blog/building-a-data-aggregation-platform-with-mqtt-and-mongodb) ([Edit](https://github.com/emqx/blog/blob/main/zh/202402/building-a-data-aggregation-platform-with-mqtt-and-mongodb.md))
 - [顺丰科技：打造智慧物流数据管理平台](https://www.emqx.com/zh/blog/building-an-intelligent-logistics-data-management-platform) ([Edit](https://github.com/emqx/blog/blob/main/zh/202401/building-an-intelligent-logistics-data-management-platform.md))
 - [EMQX 性能调优：Linux 连接跟踪与 MQTT 连接](https://www.emqx.com/zh/blog/emqx-performance-tuning-linux-conntrack-and-mqtt-connections) ([Edit](https://github.com/emqx/blog/blob/main/zh/202401/emqx-performance-tuning-linux-conntrack-and-mqtt-connections.md))
@@ -421,6 +422,7 @@ Build a reliable, efficient and industry-specific Internet of Vehicles platform 
 
 ## [Industrial IoT | Unified Namespace | Sparkplug](https://www.emqx.com/zh/blog/category/industrial-iot)
 
+- [获奖名单: EMQ 和 Intel 评选工业物联网领域最佳案例与应用](https://www.emqx.com/zh/blog/industrial-iot-best-cases-and-applications) ([Edit](https://github.com/emqx/blog/blob/main/zh/202402/industrial-iot-best-cases-and-applications.md))
 - [EMQX ECP 2.1.0 发布：优化安装部署、增强集成与告警功能](https://www.emqx.com/zh/blog/emqx-ecp-2-1-0-release-notes) ([Edit](https://github.com/emqx/blog/blob/main/zh/202401/emqx-ecp-2-1-0-release-notes.md))
 - [工业物联网数据桥接教程：KNX 桥接到 MQTT](https://www.emqx.com/zh/blog/bridging-knx-data-to-mqtt-introduction-and-hands-on-tutorial) ([Edit](https://github.com/emqx/blog/blob/main/zh/202401/bridging-knx-data-to-mqtt-introduction-and-hands-on-tutorial.md))
 - [KNX 协议：基础知识及其在 IoT 领域的应用](https://www.emqx.com/zh/blog/knx-protocol) ([Edit](https://github.com/emqx/blog/blob/main/zh/202401/knx-protocol.md))
