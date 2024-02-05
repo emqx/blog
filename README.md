@@ -352,6 +352,7 @@ The easiest way to start MQTT service. Connect your IoT devices to any cloud wit
 ## [EMQX Enterprise](https://www.emqx.com/en/blog/category/enterprise)
 The world's most scalable and reliable MQTT messaging platform to connect, move and process your data in business-critical scenarios for the IoT era.
 
+- [EMQX Enterprise 5.5 Released: New Elasticsearch Integration and Enhanced Observability](https://www.emqx.com/en/blog/emqx-enterprise-5-5-release-notes) ([Edit](https://github.com/emqx/blog/blob/main/en/202402/emqx-enterprise-5-5-release-notes.md))
 - [MQTT Platform: Essential Features & Use Cases](https://www.emqx.com/en/blog/mqtt-platform-essential-features-and-use-cases) ([Edit](https://github.com/emqx/blog/blob/main/en/202401/mqtt-platform-essential-features-and-use-cases.md))
 - [EMQX Performance Tuning: Linux Conntrack and MQTT Connections](https://www.emqx.com/en/blog/emqx-performance-tuning-linux-conntrack-and-mqtt-connections) ([Edit](https://github.com/emqx/blog/blob/main/en/202401/emqx-performance-tuning-linux-conntrack-and-mqtt-connections.md))
 - [Building a Data Aggregation Platform with MQTT and MongoDB for Logistics and Transportation](https://www.emqx.com/en/blog/building-a-data-aggregation-platform-with-mqtt-and-mongodb) ([Edit](https://github.com/emqx/blog/blob/main/en/202401/building-a-data-aggregation-platform-with-mqtt-and-mongodb.md))
