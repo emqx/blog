@@ -289,6 +289,7 @@ EMQX is the world's most scalable open-source MQTT broker with a high performanc
 ## [EMQX Cloud](https://www.emqx.com/zh/blog/category/cloud)
 The easiest way to start MQTT service. Connect your IoT devices to any cloud without the burden of maintaining infrastructure.
 
+- [MQTT 平台解读：构建现代物联网应用的必备组件](https://www.emqx.com/zh/blog/mqtt-platform-essential-features-and-use-cases) ([Edit](https://github.com/emqx/blog/blob/main/zh/202402/mqtt-platform-essential-features-and-use-cases.md))
 - [EMQX Cloud 和工业物联网：从边端数据到 InfluxDB 3.0 的工业数据集成](https://www.emqx.com/zh/blog/supercharging-iiot-with-mqtt-edge-intelligence-and-influxdb) ([Edit](https://github.com/emqx/blog/blob/main/zh/202311/supercharging-iiot-with-mqtt-edge-intelligence-and-influxdb.md))
 - [EMQX Cloud 和工业物联网：从边端数据到 TimescaleDB 的工业数据集成](https://www.emqx.com/zh/blog/unleashing-the-power-of-mqtt-edge-intelligence-and-timescale) ([Edit](https://github.com/emqx/blog/blob/main/zh/202311/unleashing-the-power-of-mqtt-edge-intelligence-and-timescale.md))
 - [EMQX Cloud Serverless 支持 API、批量上传认证和鉴权数据](https://www.emqx.com/zh/blog/mastering-iot-solution-with-emqx-cloud-serverless-addition) ([Edit](https://github.com/emqx/blog/blob/main/zh/202310/mastering-iot-solution-with-emqx-cloud-serverless-addition.md))
@@ -744,6 +745,7 @@ Guarantee the availability and reliability of the IoT platform.
 
 ## [应用案例](https://www.emqx.com/zh/blog/category/use-cases)
 
+- [「数据要素 ×」的时代，实时数据底座驱动行业数字化转型](https://www.emqx.com/zh/blog/real-time-data-drives-digital-transformation) ([Edit](https://github.com/emqx/blog/blob/main/zh/202402/real-time-data-drives-digital-transformation.md))
 - [智慧水务: EMQ 助力实现数字孪生智慧水厂的实时、高精度数据基座](https://www.emqx.com/zh/blog/smart-water-use-case) ([Edit](https://github.com/emqx/blog/blob/main/zh/202401/smart-water-use-case.md))
 - [基于 EMQ 云边协同方案，构建城市级智慧水务运营平台](https://www.emqx.com/zh/blog/building-a-smart-water-platform) ([Edit](https://github.com/emqx/blog/blob/main/zh/202401/building-a-smart-water-platform.md))
 - [EMQ & 智擎信息：基于边缘计算与 AI 图像识别技术的机场能源监控方案](https://www.emqx.com/zh/blog/airport-energy-monitoring-solution) ([Edit](https://github.com/emqx/blog/blob/main/zh/202401/airport-energy-monitoring-solution.md))
