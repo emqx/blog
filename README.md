@@ -658,6 +658,7 @@ Guarantee the availability and reliability of the IoT platform.
 
 ## [Use Cases](https://www.emqx.com/en/blog/category/use-cases)
 
+- [Smart Water Operation and Management with EMQX MQTT Platform](https://www.emqx.com/en/blog/building-a-smart-water-platform) ([Edit](https://github.com/emqx/blog/blob/main/en/202402/building-a-smart-water-platform.md))
 - [Building a Smart Water Plant with EMQX MQTT Platform and Digital Twin Technology](https://www.emqx.com/en/blog/smart-water-use-case) ([Edit](https://github.com/emqx/blog/blob/main/en/202401/smart-water-use-case.md))
 - [EMQX Enables Smart Energy Storage with Real-Time Data Collection and Cloud-Edge Collaboration](https://www.emqx.com/en/blog/emqx-enables-smart-energy-storage) ([Edit](https://github.com/emqx/blog/blob/main/en/202312/emqx-enables-smart-energy-storage.md))
 - [Unleashing the Renewable Energy: MQTT Platform for Wind Farm Remote Monitoring and Maintenance](https://www.emqx.com/en/blog/mqtt-platform-for-wind-farm-remote-monitoring-and-maintenance) ([Edit](https://github.com/emqx/blog/blob/main/en/202312/mqtt-platform-for-wind-farm-remote-monitoring-and-maintenance.md))
