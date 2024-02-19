@@ -39,7 +39,7 @@ Python 3.6.7
 Install the paho-mqtt library using Pip.
 
 ```cmake
-pip3 install paho-mqtt<2.0.0
+pip3 install "paho-mqtt<2.0.0"
 ```
 
 (Version 2.0.0 of the library was released in Feburary 2024; the new version contains breaking changes so the above installs v1, which is compatible with this tutorial).
