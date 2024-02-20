@@ -93,6 +93,7 @@ Get to know the preferred protocol in IoT from beginner to master.
 ## [MQTT Programming](https://www.emqx.com/zh/blog/category/mqtt-programming)
 Best practice of MQTT in various clients.
 
+- [开发指南：使用 MQTTNet 库构建 .Net 物联网 MQTT 应用程序](https://www.emqx.com/zh/blog/connecting-to-serverless-mqtt-broker-with-mqttnet-in-csharp) ([Edit](https://github.com/emqx/blog/blob/main/zh/202402/connecting-to-serverless-mqtt-broker-with-mqttnet-in-csharp.md))
 - [如何在 Django 项目中使用 MQTT](https://www.emqx.com/zh/blog/how-to-use-mqtt-in-django) ([Edit](https://github.com/emqx/blog/blob/main/zh/202210/how-to-use-mqtt-in-django.md))
 - [如何在 Angular 项目中使用 MQTT](https://www.emqx.com/zh/blog/how-to-use-mqtt-in-angular) ([Edit](https://github.com/emqx/blog/blob/main/zh/202209/how-to-use-mqtt-in-angular.md))
 - [在树莓派中使用 MicroPython 接入 MQTT](https://www.emqx.com/zh/blog/micro-python-mqtt-tutorial-based-on-raspberry-pi) ([Edit](https://github.com/emqx/blog/blob/main/zh/202209/micro-python-mqtt-tutorial-based-on-raspberry-pi.md))
