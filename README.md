@@ -51,6 +51,7 @@ Get to know the preferred protocol in IoT from beginner to master.
 
 ## [MQTT Broker](https://www.emqx.com/en/blog/category/mqtt-broker)
 
+- [MQTT Broker: How It Works, Popular Options, and Quickstart](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) ([Edit](https://github.com/emqx/blog/blob/main/en/202402/the-ultimate-guide-to-mqtt-broker-comparison.md))
 - [How to Install a Scalable MQTT Broker on OpenWRT](https://www.emqx.com/en/blog/how-to-install-a-scalable-mqtt-broker-on-openwrt) ([Edit](https://github.com/emqx/blog/blob/main/en/202310/how-to-install-a-scalable-mqtt-broker-on-openwrt.md))
 - [RabbitMQ vs Kafka: 5 Key Differences & Leading Use Cases](https://www.emqx.com/en/blog/rabbitmq-vs-kafka) ([Edit](https://github.com/emqx/blog/blob/main/en/202309/rabbitmq-vs-kafka.md))
 - [Mosquitto MQTT Broker: Pros/Cons, Tutorial, and a Modern Alternative](https://www.emqx.com/en/blog/mosquitto-mqtt-broker-pros-cons-tutorial-and-modern-alternatives) ([Edit](https://github.com/emqx/blog/blob/main/en/202308/mosquitto-mqtt-broker-pros-cons-tutorial-and-modern-alternatives.md))
@@ -67,7 +68,6 @@ Get to know the preferred protocol in IoT from beginner to master.
 - [Open MQTT Benchmarking Comparison: EMQX vs VerneMQ](https://www.emqx.com/en/blog/open-mqtt-benchmarking-comparison-emqx-vs-vernemq) ([Edit](https://github.com/emqx/blog/blob/main/en/202304/open-mqtt-benchmarking-comparison-emqx-vs-vernemq.md))
 - [Open MQTT Benchmarking Comparison: EMQX vs NanoMQ](https://www.emqx.com/en/blog/open-mqtt-benchmarking-comparison-emqx-vs-nanomq) ([Edit](https://github.com/emqx/blog/blob/main/en/202304/open-mqtt-benchmarking-comparison-emqx-vs-nanomq.md))
 - [Open MQTT Benchmarking Comparison: EMQX vs Mosquitto](https://www.emqx.com/en/blog/open-mqtt-benchmarking-comparison-emqx-vs-mosquitto) ([Edit](https://github.com/emqx/blog/blob/main/en/202304/open-mqtt-benchmarking-comparison-emqx-vs-mosquitto.md))
-- [MQTT Broker: How It Works, Popular Options, and Quickstart](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) ([Edit](https://github.com/emqx/blog/blob/main/en/202304/the-ultimate-guide-to-mqtt-broker-comparison.md))
 - [Open MQTT Benchmarking Comparison: Mosquitto vs NanoMQ](https://www.emqx.com/en/blog/open-mqtt-benchmarking-comparison-mosquitto-vs-nanomq) ([Edit](https://github.com/emqx/blog/blob/main/en/202304/open-mqtt-benchmarking-comparison-mosquitto-vs-nanomq.md))
 - [5 Key Concepts for MQTT Broker in Sparkplug Specification](https://www.emqx.com/en/blog/5-key-concepts-for-mqtt-broker-in-sparkplug-specification) ([Edit](https://github.com/emqx/blog/blob/main/en/202304/5-key-concepts-for-mqtt-broker-in-sparkplug-specification.md))
 - [EMQX vs VerneMQ | 2023 MQTT Broker Comparison](https://www.emqx.com/en/blog/emqx-vs-vernemq-2023-mqtt-broker-comparison) ([Edit](https://github.com/emqx/blog/blob/main/en/202304/emqx-vs-vernemq-2023-mqtt-broker-comparison.md))
@@ -82,12 +82,12 @@ Get to know the preferred protocol in IoT from beginner to master.
 
 ## [MQTT Client](https://www.emqx.com/en/blog/category/mqtt-client)
 
+- [7 Best MQTT Client Tools Worth Trying in 2024](https://www.emqx.com/en/blog/mqtt-client-tools) ([Edit](https://github.com/emqx/blog/blob/main/en/202401/mqtt-client-tools.md))
 - [MQTT.fx Guide: Features, Demos, and Using Tips](https://www.emqx.com/en/blog/connecting-to-emqx-cloud-with-mqttfx) ([Edit](https://github.com/emqx/blog/blob/main/en/202312/connecting-to-emqx-cloud-with-mqttfx.md))
 - [MQTTBox Guide: Features, Demos, and Using Tips](https://www.emqx.com/en/blog/connecting-to-emqx-cloud-with-mqttbox) ([Edit](https://github.com/emqx/blog/blob/main/en/202312/connecting-to-emqx-cloud-with-mqttbox.md))
 - [MQTT Explorer Guide: Features, Demos, and Using Tips](https://www.emqx.com/en/blog/connecting-to-emqx-cloud-with-mqtt-explorer) ([Edit](https://github.com/emqx/blog/blob/main/en/202312/connecting-to-emqx-cloud-with-mqtt-explorer.md))
 - [MQTT over lwIP Practice: A Step-by-Step Tutorial](https://www.emqx.com/en/blog/mqtt-over-lwip) ([Edit](https://github.com/emqx/blog/blob/main/en/202310/mqtt-over-lwip.md))
 - [MQTTX: All-In-One Testing and Debugging for IoT Apps](https://www.emqx.com/en/blog/mqttx-all-in-one-testing-and-debugging-for-iot-apps) ([Edit](https://github.com/emqx/blog/blob/main/en/202307/mqttx-all-in-one-testing-and-debugging-for-iot-apps.md))
-- [7 Best MQTT Client Tools Worth Trying in 2023](https://www.emqx.com/en/blog/mqtt-client-tools) ([Edit](https://github.com/emqx/blog/blob/main/en/202305/mqtt-client-tools.md))
 - [Top 3 MQTT WebSocket Clients in 2023](https://www.emqx.com/en/blog/top-3-mqtt-websocket-clients-in-2023) ([Edit](https://github.com/emqx/blog/blob/main/en/202305/top-3-mqtt-websocket-clients-in-2023.md))
 - [Top 3 MQTT Desktop Client Tools in 2023](https://www.emqx.com/en/blog/top-3-mqtt-desktop-client-tools-in-2023) ([Edit](https://github.com/emqx/blog/blob/main/en/202305/top-3-mqtt-desktop-client-tools-in-2023.md))
 - [Top 5 MQTT CLI Tools for IoT Developers in 2023](https://www.emqx.com/en/blog/top-5-mqtt-cli-tools-for-iot-developers-in-2023) ([Edit](https://github.com/emqx/blog/blob/main/en/202304/top-5-mqtt-cli-tools-for-iot-developers-in-2023.md))
@@ -153,6 +153,7 @@ Best practice of MQTT in various clients.
 ## [MQTT Integration (Eco & Integration)](https://www.emqx.com/en/blog/category/eco-and-integration)
 Explore more with & via EMQ.
 
+- [MQTT and Redis: Creating a Real-Time Data Statistics Application for IoT](https://www.emqx.com/en/blog/mqtt-and-redis) ([Edit](https://github.com/emqx/blog/blob/main/en/202402/mqtt-and-redis.md))
 - [MQTT to MySQL: Building a Real-Time Data Monitoring Application for Oil Extraction](https://www.emqx.com/en/blog/mqtt-to-mysql) ([Edit](https://github.com/emqx/blog/blob/main/en/202402/mqtt-to-mysql.md))
 - [MQTT and MongoDB: Crafting Seamless Synergy for IoT Data Mangement](https://www.emqx.com/en/blog/mqtt-and-mongodb-crafting-seamless-synergy-for-iot-data-mangement) ([Edit](https://github.com/emqx/blog/blob/main/en/202311/mqtt-and-mongodb-crafting-seamless-synergy-for-iot-data-mangement.md))
 - [Home Assistant Modbus: 4 Things You Can Build](https://www.emqx.com/en/blog/home-assistant-modbus) ([Edit](https://github.com/emqx/blog/blob/main/en/202310/home-assistant-modbus.md))
@@ -353,6 +354,7 @@ The easiest way to start MQTT service. Connect your IoT devices to any cloud wit
 ## [EMQX Enterprise](https://www.emqx.com/en/blog/category/enterprise)
 The world's most scalable and reliable MQTT messaging platform to connect, move and process your data in business-critical scenarios for the IoT era.
 
+- [MQTT and Redis: Creating a Real-Time Data Statistics Application for IoT](https://www.emqx.com/en/blog/mqtt-and-redis) ([Edit](https://github.com/emqx/blog/blob/main/en/202402/mqtt-and-redis.md))
 - [MQTT to MySQL: Building a Real-Time Data Monitoring Application for Oil Extraction](https://www.emqx.com/en/blog/mqtt-to-mysql) ([Edit](https://github.com/emqx/blog/blob/main/en/202402/mqtt-to-mysql.md))
 - [EMQX Enterprise 5.5 Released: New Elasticsearch Integration and Enhanced Observability](https://www.emqx.com/en/blog/emqx-enterprise-5-5-release-notes) ([Edit](https://github.com/emqx/blog/blob/main/en/202402/emqx-enterprise-5-5-release-notes.md))
 - [MQTT Platform: Essential Features & Use Cases](https://www.emqx.com/en/blog/mqtt-platform-essential-features-and-use-cases) ([Edit](https://github.com/emqx/blog/blob/main/en/202401/mqtt-platform-essential-features-and-use-cases.md))

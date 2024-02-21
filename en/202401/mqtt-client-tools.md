@@ -1,10 +1,10 @@
 ## Introduction
 
-With the rapid development of the Internet of Things (IoT), the [MQTT protocol](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) is being widely used by many companies and developers. MQTT client tools are used to connect to [MQTT brokers](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) for publishing, subscribing, sending and receiving messages. 
+In the era of rapid Internet of Things (IoT) advancement, the [MQTT protocol](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) has become an integral component for numerous companies and developers. The utilization of MQTT client tools has become commonplace, facilitating seamless connections to [MQTT brokers](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) for various functions such as publishing, subscribing, and exchanging messages.
 
-The right tool can help developers explore MQTT features and debug IoT applications, shortening the development cycle. Given the variety of MQTT client tools available with different functional focuses, choosing a suitable MQTT client tool is challenging for beginners and MQTT experts alike.
+Selecting the right tool is paramount for developers seeking to delve into MQTT features and streamline the debugging process of IoT applications, ultimately reducing the development cycle. The plethora of available MQTT client tools, each with distinct functional focuses, presents a challenge for developers when deciding on the most suitable option.
 
-We have selected seven of the most useful MQTT client tools in 2023 and listed them by Desktop, Browser, Command Line, and Mobile categories. We hope this article will help you quickly find a suitable tool for your MQTT development.
+This blog curates a list of seven of the most valuable MQTT client tools for the year 2024. Organized into Desktop, Browser, Command Line, and Mobile categories, this selection aims to assist you in swiftly identifying the ideal tool for your MQTT development endeavors.
 
 ## How to Choose an MQTT Client?
 
@@ -18,7 +18,7 @@ A good MQTT client tool should possess the following key features.
 - Support MQTT over WebSocket.
 - Advanced features: Customized script, logging, payload format conversion, etc.
 
-## Free Public MQTT Broker
+## Prerequisite: Prepare an MQTT Broker
 
 Before diving into the MQTT desktop tools, we need an [MQTT broker](https://www.emqx.io/) to communicate and test. We choose the free public MQTT broker available on `broker.emqx.io`.
 
@@ -52,6 +52,7 @@ For more information, please check out: [Free Public MQTT Broker](https://www.em
   </div>
 </section>
 
+
 ## MQTT Desktop Client Tools
 
 ### MQTTX
@@ -70,13 +71,14 @@ GitHub Project: https://github.com/emqx/mqttx
 
 - User-friendly and easy-to-use UX design
 - Chatbox for sending/receiving MQTT messages
-- Fully support for MQTT versions 5.0 and 3.1.1
+- Fully support for MQTT versions 5.0, 3.1.1 and 3.1
 - Support MQTT over TLS, and [MQTT over WebSocket](https://www.emqx.com/en/blog/connect-to-mqtt-broker-with-websocket)
 - Support for one-way and two-way SSL authentication
 - Hex, Base64, JSON, and Plaintext payload codec
 - Customized colors for different MQTT subscriptions
 - Customized script for MQTT Pub/Sub scenario simulation
 - Cross-platform, running on Windows, macOS, and Linux
+- AI-powered MQTTX Copilot: Simplifying MQTT testing and development
 
 #### Installation
 
@@ -141,7 +143,7 @@ docker pull emqx/mqttx-web
 docker run -d --name mqttx-web -p 80:80 emqx/mqttx-web
 ```
 
-![MQTTX Web](https://mqttx-static.emqx.net/img/banner.268d1fa.png)
+![MQTTX Web](https://assets.emqx.com/images/2c99b9ae65c524993e522621cad154d2.png)
 
 ### MQTT.Cool Test Client
 
@@ -166,11 +168,13 @@ GitHub Project: [https://github.com/emqx/MQTTX/tree/main/cli](https://github.com
 
 #### Features
 
-- Full support for both MQTT v3.1.1 and MQTT v5.0
+- Fully support for MQTT versions 5.0, 3.1.1 and 3.1
 - Cross-platform compatibility with Windows, MacOS, and Linux
 - Dependency-free setup allowing for quick installation without prerequisites
+- Easy to integrate, can be quickly integrated into automated test scripts
 - Supports CA, self-signed certificates, and one-way and two-way SSL authentication
-- Performance testing capabilities for quickly evaluating MQTT service performance.
+- Performance testing capabilities for quickly evaluating MQTT service performance
+- Scenario-based MQTT message simulation with custom and built-in options
 
 #### Installation
 
@@ -309,9 +313,7 @@ EasyMQTT is an MQTT client for iPhone, iPad, and macOS, allowing you to interact
 
 ## Conclusion
 
-In conclusion, we have provided a detailed introduction to MQTT client tools in different categories. 
-
-Among these, the MQTTX open-source project stands out as a fast-growing client tool that offers a modern chat-style interface, full MQTT 5.0 support, and a rich set of features providing a great user experience. With three versions available - Desktop, Command Line, and Browser - MQTTX can fulfill your MQTT testing requirements in diverse scenarios. Undoubtedly, [MQTTX](https://mqttx.app/) is among the top MQTT client tools of 2023.
+This blog presents an extensive overview of MQTT client tools across various categories. Notably, MQTTX emerges as a rapidly evolving client tool distinguished by its modern chat-style interface, comprehensive MQTT 5.0 support, and extensive features that contribute to an exceptional user experience. Available in three versions - Desktop, Command Line, and Browser - MQTTX excels in meeting MQTT testing needs across diverse scenarios. Without a doubt, [MQTTX](https://mqttx.app/) secures its position as one of the premier MQTT client tools in 2024.
 
 
 
