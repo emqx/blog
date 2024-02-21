@@ -444,6 +444,7 @@ Build a reliable, efficient and industry-specific Internet of Vehicles platform 
 
 ## [Industrial IoT | Unified Namespace | Sparkplug](https://www.emqx.com/en/blog/category/industrial-iot)
 
+- [MQTT Sparkplug: Bridging IT and OT for IIoT in Industry 4.0](https://www.emqx.com/en/blog/mqtt-sparkplug-bridging-it-and-ot-in-industry-4-0) ([Edit](https://github.com/emqx/blog/blob/main/en/202402/mqtt-sparkplug-bridging-it-and-ot-in-industry-4-0.md))
 - [EMQX Cloud and IIoT: Industrial Data Ingestion and Insight from Edge to ClickHouse](https://www.emqx.com/en/blog/industrial-data-ingestion-and-insight-from-edge-to-clickHouse) ([Edit](https://github.com/emqx/blog/blob/main/en/202312/industrial-data-ingestion-and-insight-from-edge-to-clickHouse.md))
 - [Data Storage Techniques and Strategies for Smart Manufacturing](https://www.emqx.com/en/blog/data-storage-techniques-and-strategies-for-smart-manufacturing) ([Edit](https://github.com/emqx/blog/blob/main/en/202311/data-storage-techniques-and-strategies-for-smart-manufacturing.md))
 - [From Data to Intelligence: One-Stop MQTT Platform for Smart Factory Advancements](https://www.emqx.com/en/blog/data-infrastructure-for-smart-factory) ([Edit](https://github.com/emqx/blog/blob/main/en/202311/data-infrastructure-for-smart-factory.md))
@@ -484,7 +485,6 @@ Build a reliable, efficient and industry-specific Internet of Vehicles platform 
 - [The Smart Manufacturing Revolution: Examples, Tech & Tips](https://www.emqx.com/en/blog/the-smart-manufacturing-revolution) ([Edit](https://github.com/emqx/blog/blob/main/en/202307/the-smart-manufacturing-revolution.md))
 - [Bridging TwinCAT Data to MQTT: Introduction and Hands-on Tutorial](https://www.emqx.com/en/blog/bridging-twincat-data-to-mqtt) ([Edit](https://github.com/emqx/blog/blob/main/en/202307/bridging-twincat-data-to-mqtt.md))
 - [MQTT Sparkplug in Action: A Step-by-Step Tutorial](https://www.emqx.com/en/blog/mqtt-sparkplug-in-action-a-step-by-step-tutorial) ([Edit](https://github.com/emqx/blog/blob/main/en/202307/mqtt-sparkplug-in-action-a-step-by-step-tutorial.md))
-- [MQTT Sparkplug: Bridging IT and OT in Industry 4.0](https://www.emqx.com/en/blog/mqtt-sparkplug-bridging-it-and-ot-in-industry-4-0) ([Edit](https://github.com/emqx/blog/blob/main/en/202307/mqtt-sparkplug-bridging-it-and-ot-in-industry-4-0.md))
 - [Unified Namespace (UNS): Next-Generation Data Fabric for IIoT](https://www.emqx.com/en/blog/unified-namespace-next-generation-data-fabric-for-iiot) ([Edit](https://github.com/emqx/blog/blob/main/en/202307/unified-namespace-next-generation-data-fabric-for-iiot.md))
 - [Efficiency Comparison: OPC-UA, Modbus, MQTT, Sparkplug, HTTP](https://www.emqx.com/en/blog/efficiency-comparison-opc-ua-modbus-mqtt-sparkplug-http) ([Edit](https://github.com/emqx/blog/blob/main/en/202306/efficiency-comparison-opc-ua-modbus-mqtt-sparkplug-http.md))
 - [Bridging Modbus Data to MQTT for IIoT:  A Step-by-Step Tutorial](https://www.emqx.com/en/blog/bridging-modbus-data-to-mqtt-for-iiot) ([Edit](https://github.com/emqx/blog/blob/main/en/202306/bridging-modbus-data-to-mqtt-for-iiot.md))
