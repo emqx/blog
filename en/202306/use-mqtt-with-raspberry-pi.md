@@ -20,14 +20,14 @@ We will use Python as the development language for MQTT on the Raspberry Pi. Wit
 
 This project is developed using Python 3.6. Typically, Raspberry Pi already comes with Python 3 pre-installed. However, if you are unsure whether Python 3 is installed, you can verify it by using the following command:
 
-```vim
+```shell
 $ python3 --version             
 Python 3.6.7
 ```
 
 If the command line returns "Python 3.x.x" (where "x" indicates the version number), it means that Python 3 is already installed on your Raspberry Pi. In case it is not installed, you can use the "apt" command to install it, or you can follow the [Python3 installation guidelines](https://wiki.python.org/moin/BeginnersGuide/Download).
 
-```cmake
+```shell
 sudo apt install python3
 ```
 
@@ -37,16 +37,16 @@ We will use the [Paho Python Client](https://github.com/eclipse/paho.mqtt.python
 
 **Use the source code to install**
 
-```vim
-git clone https://github.com/eclipse/paho.mqtt.python 
+```shell
+git clone --depth 1 -b v1.6.1 https://github.com/eclipse/paho.mqtt.python 
 cd paho.mqtt.python 
 python3 setup.py install
 ```
 
 **Use pip3 to install**
 
-```cmake
-pip3 install paho-mqtt
+```shell
+pip3 install paho-mqtt==1.6.1
 ```
 
 ## Prepare an MQTT Broker
@@ -57,7 +57,7 @@ Before proceeding, please ensure you have an MQTT broker to communicate and test
 
   [EMQX](https://www.emqx.io/) is the most scalable open-source MQTT broker for IoT, [IIoT](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges), and connected vehicles. You can run the following Docker command to install EMQX.
 
-  ```apache
+  ```shell
   docker run -d --name emqx -p 1883:1883 -p 8083:8083 -p 8084:8084 -p 8883:8883 -p 18083:18083 emqx/emqx
   ```
 
@@ -107,6 +107,7 @@ For more information, please check out: [Free Public MQTT Broker](https://www.em
   </div>
 </section>
 
+
 ## Quick Usage of MQTT
 
 ### Create an MQTT Connection
@@ -137,7 +138,7 @@ client.loop_forever()
 
 You can save the code above as a file named "test_connect.py". To run the file, open a terminal on your Raspberry Pi and navigate to the directory where the file is located. Then enter the command below to execute the script. This will start the MQTT client and connect to the MQTT broker.
 
-```vim
+```shell
 python3 test_connect.py
 ```
 
@@ -228,7 +229,7 @@ For conducting the following tests, we will use MQTTX. [MQTTX](https://mqttx.app
 
 1. Running the MQTT subscription script `subscriber.py`, we will see the client successfully connected and started waiting for the publisher to publish messages.
 
-   ```vim
+   ```shell
    python3 subscriber.py
    ```
 
