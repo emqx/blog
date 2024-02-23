@@ -66,6 +66,7 @@ By introducing a Sparkplug broker and a data ops gateway together as a central d
   </div>
 </section>
 
+
 ## Unified Namespace: Feature of Sparkplug to Simplify IIoT Management
 
 One of the key features of Sparkplug is the use of a [unified namespace](https://www.emqx.com/en/blog/unified-namespace-next-generation-data-fabric-for-iiot). A namespace is a naming system used to identify and organize objects in a system. In the context of Industry 4.0, there are typically multiple devices, sensors, and systems that need to communicate with each other. Each device or system may have its own unique naming system or identifier, making it difficult to integrate and manage them in a cohesive manner.
@@ -100,7 +101,53 @@ MQTT Sparkplug and [OPC UA](https://www.emqx.com/en/blog/opc-ua-protocol) are bo
 
 MQTT Sparkplug is based on the MQTT protocol, which is a lightweight publish/subscribe messaging protocol. In contrast, OPC UA is a more comprehensive and complex protocol that encompasses both communication and information modeling aspects. The scalable and efficient design of Sparkplug makes it suitable for resource-constrained devices and networks with limited bandwidth. OPC UA is more resource-intensive and is often utilized in systems where higher data throughput or complex interactions are required. 
 
-A more comprehensive comparison between these two protocols can be found at: [A Comparison of IIoT Protocols: MQTT Sparkplug vs. OPC-UA](https://www.emqx.com/en/blog/a-comparison-of-iiot-protocols-mqtt-sparkplug-vs-opc-ua)
+A more comprehensive comparison between these two protocols can be found at: [A Comparison of IIoT Protocols: MQTT Sparkplug vs. OPC-UA](https://www.emqx.com/en/blog/a-comparison-of-iiot-protocols-mqtt-sparkplug-vs-opc-ua).
+
+## EMQX and NeuronEX:  An Out-of-Box MQTT Sparkplug Architecture for IIoT
+
+Combing EMQX and NeuronEX to implement the out-of-box MQTT Sparkplug architecture. EMQX serves as the central component, managing MQTT message traffic. NeuronEX acts as an edge node, collecting data from devices through different industrial protocols and converting it into Sparkplug messages published to EMQX.
+
+![MQTT Sparkplug Architecture](https://assets.emqx.com/images/e87623a34971bbf68fa41b4a9f652dd7.png)
+
+### Data Routing and Transmission
+
+EMQX efficiently routes MQTT Sparkplug messages between devices, applications, and edge nodes. It ensures reliable data delivery across the IIoT network, providing a robust communication infrastructure.
+
+<section class="promotion">
+    <div>
+        Try EMQX Enterprise for Free
+      <div class="is-size-14 is-text-normal has-text-weight-normal">Connect any device, at any scale, anywhere.</div>
+    </div>
+    <a href="https://www.emqx.com/en/try?product=enterprise" class="button is-gradient px-5">Get Started →</a>
+</section>
+
+### Protocol Conversion
+
+NeuronEX, acting as an edge node gateway, collects data from legacy industrial devices that use proprietary protocols. It converts this data into MQTT Sparkplug-compliant messages before sending them to the EMQX broker.
+
+<section class="promotion">
+    <div>
+        Try NeuronEX for Free
+             <div class="is-size-14 is-text-normal has-text-weight-normal">The Industrial edge data hub.</div>
+    </div>
+    <a href="https://www.emqx.com/en/try?product=neuronex" class="button is-gradient px-5">Get Started →</a>
+</section>
+
+### Standardized Data Format
+
+MQTT Sparkplug defines a standardized data format, ensuring consistent and structured data exchange. EMQX and NeuronEX ensure that all data exchanged within the network adheres to this format, promoting interoperability among diverse industrial devices and systems.
+
+### Real-time Communication
+
+EMQX enables real-time communication through its publish-subscribe model, allowing devices and applications to subscribe to relevant MQTT topics and receive updates as events occur. NeuronEX ensures that data from legacy devices is efficiently transformed and transmitted in real time.
+
+### Scalability and Integration
+
+EMQX's scalability allows it to handle a large number of MQTT Sparkplug messages in a distributed IIoT environment. NeuronEX's ability to convert data from various protocols enables seamless integration of a wide range of industrial devices into the MQTT Sparkplug ecosystem.
+
+### Integration Testing
+
+[MQTTX](https://mqttx.app/), a robust MQTT GUI debugging tool, offers powerful MQTT Sparkplug features and capabilities to streamline Sparkplug integration testing with industrial information systems such as ERP and MES.
 
 ## Conclusion
 
@@ -108,7 +155,15 @@ In conclusion, MQTT Sparkplug is a powerful and efficient protocol that brings n
 
 As the IIoT continues to grow and evolve, MQTT Sparkplug will undoubtedly play a crucial role in shaping the future of industrial connectivity, enabling smarter, more connected, and more efficient industrial systems. 
 
- 
+
+**Related resources**
+
+- [Sparkplug 3.0: Advancements & Formalization in MQTT for IIoT](https://www.emqx.com/en/blog/sparkplug-3-0-advancements-and-formalization-in-mqtt-for-iiot)
+- [MQTT Sparkplug Solution for Industrial IoT Using EMQX & Neuron](https://www.emqx.com/en/blog/mqtt-sparkplug-solution-for-industrial-iot-using-emqx-and-neuron)
+- [MQTT Sparkplug in Action: A Step-by-Step Tutorial](https://www.emqx.com/en/blog/mqtt-sparkplug-in-action-a-step-by-step-tutorial)
+- [A Comparison of IIoT Protocols: MQTT Sparkplug vs OPC-UA](https://www.emqx.com/en/blog/a-comparison-of-iiot-protocols-mqtt-sparkplug-vs-opc-ua)
+- [5 Key Concepts for MQTT Broker in Sparkplug Specification](https://www.emqx.com/en/blog/5-key-concepts-for-mqtt-broker-in-sparkplug-specification) 
+
 
 <section class="promotion">
     <div>
