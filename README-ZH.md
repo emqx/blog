@@ -147,6 +147,7 @@ Best practice of MQTT in various clients.
 ## [MQTT Integration (Eco & Integration)](https://www.emqx.com/zh/blog/category/eco-and-integration)
 Explore more with & via EMQ.
 
+- [利用 MQTT 和 MySQL 构建石油开采实时数据监控应用](https://www.emqx.com/zh/blog/mqtt-to-mysql) ([Edit](https://github.com/emqx/blog/blob/main/zh/202402/mqtt-to-mysql.md))
 - [使用 MQTT 和 MongoDB 构建物流与运输数据汇聚平台](https://www.emqx.com/zh/blog/building-a-data-aggregation-platform-with-mqtt-and-mongodb) ([Edit](https://github.com/emqx/blog/blob/main/zh/202402/building-a-data-aggregation-platform-with-mqtt-and-mongodb.md))
 - [MQTT+MongoDB 实现高效物联网数据管理](https://www.emqx.com/zh/blog/mqtt-and-mongodb-crafting-seamless-synergy-for-iot-data-mangement) ([Edit](https://github.com/emqx/blog/blob/main/zh/202401/mqtt-and-mongodb-crafting-seamless-synergy-for-iot-data-mangement.md))
 - [MQTT + InfluxDB：构建面向储能领域的物联网时序数据应用](https://www.emqx.com/zh/blog/building-an-iot-time-series-data-application-with-mqtt-and-influxdb) ([Edit](https://github.com/emqx/blog/blob/main/zh/202311/building-an-iot-time-series-data-application-with-mqtt-and-influxdb.md))
@@ -349,6 +350,7 @@ The easiest way to start MQTT service. Connect your IoT devices to any cloud wit
 ## [EMQX Enterprise](https://www.emqx.com/zh/blog/category/enterprise)
 The world's most scalable and reliable MQTT messaging platform to connect, move and process your data in business-critical scenarios for the IoT era.
 
+- [利用 MQTT 和 MySQL 构建石油开采实时数据监控应用](https://www.emqx.com/zh/blog/mqtt-to-mysql) ([Edit](https://github.com/emqx/blog/blob/main/zh/202402/mqtt-to-mysql.md))
 - [探索 EMQX 的可扩展性：EMQX 5.x 的插件机制解析](https://www.emqx.com/zh/blog/exploring-the-extensibility-of-emqx) ([Edit](https://github.com/emqx/blog/blob/main/zh/202402/exploring-the-extensibility-of-emqx.md))
 - [EMQX Enterprise 5.5 发布：新增 Elasticsearch 数据集成](https://www.emqx.com/zh/blog/emqx-enterprise-5-5-release-notes) ([Edit](https://github.com/emqx/blog/blob/main/zh/202402/emqx-enterprise-5-5-release-notes.md))
 - [使用 MQTT 和 MongoDB 构建物流与运输数据汇聚平台](https://www.emqx.com/zh/blog/building-a-data-aggregation-platform-with-mqtt-and-mongodb) ([Edit](https://github.com/emqx/blog/blob/main/zh/202402/building-a-data-aggregation-platform-with-mqtt-and-mongodb.md))
