@@ -750,6 +750,7 @@ Guarantee the availability and reliability of the IoT platform.
 
 ## [应用案例](https://www.emqx.com/zh/blog/category/use-cases)
 
+- [EMQX ECP & NeuronEX 助力中国制造业高质量发展](https://www.emqx.com/zh/blog/emqx-ecp-and-neuronex) ([Edit](https://github.com/emqx/blog/blob/main/zh/202402/emqx-ecp-and-neuronex.md))
 - [新能源车充电桩管理：EMQX 助力云边一体的智能充电运营](https://www.emqx.com/zh/blog/electric-vehicle-charging-stations-management) ([Edit](https://github.com/emqx/blog/blob/main/zh/202402/electric-vehicle-charging-stations-management.md))
 - [「数据要素 ×」的时代，实时数据底座驱动行业数字化转型](https://www.emqx.com/zh/blog/real-time-data-drives-digital-transformation) ([Edit](https://github.com/emqx/blog/blob/main/zh/202402/real-time-data-drives-digital-transformation.md))
 - [智慧水务: EMQ 助力实现数字孪生智慧水厂的实时、高精度数据基座](https://www.emqx.com/zh/blog/smart-water-use-case) ([Edit](https://github.com/emqx/blog/blob/main/zh/202401/smart-water-use-case.md))
