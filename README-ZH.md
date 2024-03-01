@@ -429,6 +429,7 @@ Build a reliable, efficient and industry-specific Internet of Vehicles platform 
 
 ## [Industrial IoT | Unified Namespace | Sparkplug](https://www.emqx.com/zh/blog/category/industrial-iot)
 
+- [工业互联数据平台：NeuronEX 与 EMQX ECP 携手推动云边一体](https://www.emqx.com/zh/blog/industrial-connectivity-data-platform) ([Edit](https://github.com/emqx/blog/blob/main/zh/202403/industrial-connectivity-data-platform.md))
 - [获奖名单: EMQ 和 Intel 评选工业物联网领域最佳案例与应用](https://www.emqx.com/zh/blog/industrial-iot-best-cases-and-applications) ([Edit](https://github.com/emqx/blog/blob/main/zh/202402/industrial-iot-best-cases-and-applications.md))
 - [EMQX ECP 2.1.0 发布：优化安装部署、增强集成与告警功能](https://www.emqx.com/zh/blog/emqx-ecp-2-1-0-release-notes) ([Edit](https://github.com/emqx/blog/blob/main/zh/202401/emqx-ecp-2-1-0-release-notes.md))
 - [工业物联网数据桥接教程：KNX 桥接到 MQTT](https://www.emqx.com/zh/blog/bridging-knx-data-to-mqtt-introduction-and-hands-on-tutorial) ([Edit](https://github.com/emqx/blog/blob/main/zh/202401/bridging-knx-data-to-mqtt-introduction-and-hands-on-tutorial.md))
