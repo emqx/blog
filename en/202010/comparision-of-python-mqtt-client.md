@@ -19,14 +19,14 @@ It can get so much attention because of its stable code and ease of use. The int
 ### Install
 
 ```
-pip3 install paho-mqtt
+pip3 install paho-mqtt==1.6.1
 ```
 
 Or
 
 ```
-git clone https://github.com/eclipse/paho.mqtt.python
-cd paho.mqtt.python
+git clone --depth 1 -b v1.6.1 https://github.com/eclipse/paho.mqtt.python 
+cd paho.mqtt.python 
 python3 setup.py install
 ```
 
@@ -56,11 +56,8 @@ client.loop_forever()
 ```python
 import paho.mqtt.client as mqtt
 import time
-def on_connect(client, userdata, flags, rc):
-    print(f"Connected with result code {rc}")
-    
+
 client = mqtt.Client()
-client.on_connect = on_connect
 client.connect("broker.emqx.io", 1883, 60)
 for i in range(3):
     client.publish('a/b', payload=i, qos=0, retain=False)
