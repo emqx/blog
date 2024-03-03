@@ -259,6 +259,7 @@ EMQX is the world's most scalable open-source MQTT broker with a high performanc
 ## [EMQX Cloud](https://www.emqx.com/en/blog/category/cloud)
 The easiest way to start MQTT service. Connect your IoT devices to any cloud without the burden of maintaining infrastructure.
 
+- [Smart Spending: How to Avoid Unexpected Costs with EMQX Serverless](https://www.emqx.com/en/blog/smart-spending-how-to-avoid-unexpected-costs-with-emqx-serverless) ([Edit](https://github.com/emqx/blog/blob/main/en/202403/smart-spending-how-to-avoid-unexpected-costs-with-emqx-serverless.md))
 - [EMQX Expands Global Reach with Cloud Serverless Service Launch in EMEA Region](https://www.emqx.com/en/blog/emqx-expands-global-reach-with-cloud-serverless-service-launch-in-emea-region) ([Edit](https://github.com/emqx/blog/blob/main/en/202402/emqx-expands-global-reach-with-cloud-serverless-service-launch-in-emea-region.md))
 - [MQTT Platform: Essential Features & Use Cases](https://www.emqx.com/en/blog/mqtt-platform-essential-features-and-use-cases) ([Edit](https://github.com/emqx/blog/blob/main/en/202401/mqtt-platform-essential-features-and-use-cases.md))
 - [Getting Started with EMQX Cloud Serverless Data Integration(Beta): A Quick Guide](https://www.emqx.com/en/blog/getting-started-with-emqx-cloud-serverless-data-integration) ([Edit](https://github.com/emqx/blog/blob/main/en/202401/getting-started-with-emqx-cloud-serverless-data-integration.md))
