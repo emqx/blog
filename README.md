@@ -101,13 +101,13 @@ Get to know the preferred protocol in IoT from beginner to master.
 ## [MQTT Programming](https://www.emqx.com/en/blog/category/mqtt-programming)
 Best practice of MQTT in various clients.
 
+- [MQTT with Qt6: A Beginner's Guide with Examples](https://www.emqx.com/en/blog/how-to-create-an-mqtt-application-in-qt6) ([Edit](https://github.com/emqx/blog/blob/main/en/202403/how-to-create-an-mqtt-application-in-qt6.md))
 - [How to Use MQTT in Golang with Paho Client](https://www.emqx.com/en/blog/how-to-use-mqtt-in-golang) ([Edit](https://github.com/emqx/blog/blob/main/en/202402/how-to-use-mqtt-in-golang.md))
 - [How to Use MQTT in The React Project](https://www.emqx.com/en/blog/how-to-use-mqtt-in-react) ([Edit](https://github.com/emqx/blog/blob/main/en/202402/how-to-use-mqtt-in-react.md))
 - [MicroPython MQTT Tutorial Based on Raspberry Pi](https://www.emqx.com/en/blog/micro-python-mqtt-tutorial-based-on-raspberry-pi) ([Edit](https://github.com/emqx/blog/blob/main/en/202402/micro-python-mqtt-tutorial-based-on-raspberry-pi.md))
 - [MQTT with Java: A Beginner's Guide with Examples & FAQs](https://www.emqx.com/en/blog/how-to-use-mqtt-in-java) ([Edit](https://github.com/emqx/blog/blob/main/en/202401/how-to-use-mqtt-in-java.md))
 - [Connecting to a Serverless MQTT Broker in React](https://www.emqx.com/en/blog/connecting-to-a-serverless-mqtt-broker-in-react) ([Edit](https://github.com/emqx/blog/blob/main/en/202309/connecting-to-a-serverless-mqtt-broker-in-react.md))
 - [Using MQTT in Unity with M2MqttUnity Library: A Step-by-Step Guide](https://www.emqx.com/en/blog/using-mqtt-in-unity-with-m2mqttunity-library-a-step-by-step-guide) ([Edit](https://github.com/emqx/blog/blob/main/en/202308/using-mqtt-in-unity-with-m2mqttunity-library-a-step-by-step-guide.md))
-- [How to Create an MQTT Application in Qt6](https://www.emqx.com/en/blog/how-to-create-an-mqtt-application-in-qt6) ([Edit](https://github.com/emqx/blog/blob/main/en/202308/how-to-create-an-mqtt-application-in-qt6.md))
 - [Connecting to Serverless MQTT Broker in PHP](https://www.emqx.com/en/blog/connecting-to-serverless-mqtt-broker-in-php) ([Edit](https://github.com/emqx/blog/blob/main/en/202307/connecting-to-serverless-mqtt-broker-in-php.md))
 - [A Quickstart Guide to Using MQTT over WebSocket](https://www.emqx.com/en/blog/connect-to-mqtt-broker-with-websocket) ([Edit](https://github.com/emqx/blog/blob/main/en/202306/connect-to-mqtt-broker-with-websocket.md))
 - [MQTT on ESP32: A Beginner's Guide](https://www.emqx.com/en/blog/esp32-connects-to-the-free-public-mqtt-broker) ([Edit](https://github.com/emqx/blog/blob/main/en/202306/esp32-connects-to-the-free-public-mqtt-broker.md))
@@ -456,7 +456,7 @@ Build a reliable, efficient and industry-specific Internet of Vehicles platform 
 - [Leveraging the Hybrid Computing for Data Management and Analysis](https://www.emqx.com/en/blog/leveraging-the-hybrid-computing-for-data-management-and-analysis) ([Edit](https://github.com/emqx/blog/blob/main/en/202311/leveraging-the-hybrid-computing-for-data-management-and-analysis.md))
 - [Supercharging IIoT with MQTT, Edge Intelligence, and InfluxDB](https://www.emqx.com/en/blog/supercharging-iiot-with-mqtt-edge-intelligence-and-influxdb) ([Edit](https://github.com/emqx/blog/blob/main/en/202311/supercharging-iiot-with-mqtt-edge-intelligence-and-influxdb.md))
 - [Practical Data Management for Smart Manufacturing](https://www.emqx.com/en/blog/practical-data-management-for-smart-manufacturing) ([Edit](https://github.com/emqx/blog/blob/main/en/202311/practical-data-management-for-smart-manufacturing.md))
-- [TwinCAT Protocol: Evolution and Architecture](https://www.emqx.com/en/blog/twincat-protocol) ([Edit](https://github.com/emqx/blog/blob/main/en/202310/twincat-protocol.md))
+- [TwinCAT: Evolution, Architecture, and Its Synergy with MQTT](https://www.emqx.com/en/blog/twincat-protocol) ([Edit](https://github.com/emqx/blog/blob/main/en/202310/twincat-protocol.md))
 - [Consolidating the Foundation of Smart Manufacturing with EMQX and Neuron](https://www.emqx.com/en/blog/consolidating-the-foundation-of-smart-manufacturing-with-emqx-and-neuron) ([Edit](https://github.com/emqx/blog/blob/main/en/202310/consolidating-the-foundation-of-smart-manufacturing-with-emqx-and-neuron.md))
 - [18 Industrial IoT Applications and Why You Need Them](https://www.emqx.com/en/blog/industrial-iot-applications) ([Edit](https://github.com/emqx/blog/blob/main/en/202310/industrial-iot-applications.md))
 - [Omron FINS Protocol: The Basics & Its Benefits of Bridging to MQTT](https://www.emqx.com/en/blog/omron-fins-protocol) ([Edit](https://github.com/emqx/blog/blob/main/en/202310/omron-fins-protocol.md))
