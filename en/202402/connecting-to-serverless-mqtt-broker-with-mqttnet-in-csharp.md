@@ -1,7 +1,3 @@
-Serverless architecture in cloud computing allows developers to focus on code development and deployment without the hassle of infrastructure management. Serverless MQTT, in particular, provides an MQTT messaging service that scales automatically based on demand, reducing the need for manual intervention.
-
-To learn more about serverless MQTT, read our blog post [Next-Gen Cloud MQTT Service: Meet EMQX Cloud Serverless](https://www.emqx.com/en/blog/next-gen-cloud-mqtt-service-meet-emqx-cloud-serverless). In this blog series, we'll guide you through using various client libraries to set up MQTT connections, subscriptions, messaging, and more with a serverless MQTT broker for your specific project.
-
 ## Introduction
 
 With the rise of IoT, the .Net framework has become increasingly popular in building IoT applications. Microsoft's .Net Core and .Net Framework provide developers with a set of tools and libraries to build IoT applications that can run on Raspberry Pi, HummingBoard, BeagleBoard, Pine A64, and more.
@@ -10,15 +6,15 @@ MQTTnet is a high-performance .Net library that implements the [MQTT protocol](h
 
 This blog post demonstrates how to use the MQTTnet library to connect to a serverless MQTT broker. The whole project can be downloaded at [MQTT Client Examples](https://github.com/emqx/MQTT-Client-Examples/tree/master/mqtt-client-Csharp-MqttNet).
 
-## Free Serverless MQTT Broker
+## Prepare an MQTT Broker
 
-[EMQX Cloud Serverless](https://www.emqx.com/en/cloud/serverless-mqtt) is the latest [MQTT broker](https://www.emqx.io/) offering on the public cloud with all the serverless advantages. You can start the Serverless deployment in seconds with just a few clicks. Additionally, users can get 1 million free session minutes every month, sufficient for 23 devices to be online for a whole month, making it perfect for tiny IoT test scenarios.
+[EMQX Serverless](https://www.emqx.com/en/cloud/serverless-mqtt) is an [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) offering on the public cloud with all the serverless advantages. You can start the Serverless deployment in seconds with just a few clicks. Additionally, users can get 1 million free session minutes every month, sufficient for 23 devices to be online for a whole month, making it perfect for tiny IoT test scenarios.
 
-If you have not tried serverless deployment yet, please follow [the guide in this blog](https://www.emqx.com/en/blog/a-comprehensive-guide-to-serverless-mqtt-service) to create one for free. Once you have completed the registration process with the online guide, you will get a running instance with the following similar information from the “Overview” in your deployment. We will use the connection information and CA certificate later.
+You can follow [the guide in this blog](https://www.emqx.com/en/blog/a-comprehensive-guide-to-serverless-mqtt-service) to create a serverless deployment for free. Once you have completed the registration process with the online guide, you will get a running instance with the following similar information from the “Overview” in your deployment. We will use the connection information and CA certificate later.
 
 ![EMQX MQTT Cloud](https://assets.emqx.com/images/b7f54f0922422779d30df5ede63e66fb.png)
 
-## Connection Code Demo
+## MQTT C# Demo
 
 ### 1. Install .Net and Visual Studio
 
@@ -30,11 +26,11 @@ Visual Studio is a comprehensive IDE for .NET developers that provides a feature
 
 MQTTnet is delivered via NuGet package manager. To install it, create a Console Application and use NuGet to install the MQTTnet package. For detailed instructions on using NuGet in Visual Studio, refer to the [official documentation](https://learn.microsoft.com/en-us/nuget/consume-packages/install-use-packages-visual-studio). If you're using Visual Studio for Mac, refer to [install and manage NuGet packages in Visual Studio for Mac](https://learn.microsoft.com/en-us/visualstudio/mac/nuget-walkthrough?toc=/nuget/toc.json).
 
-### 3. Set up the connection
+### 3. Set up the MQTT connection
 
-To connect to the EMQX Cloud Serverless broker, you need to create an instance of the `MqttClientOptionsBuilder` class and set the necessary options like broker address, port, username, and password. The code snippet below demonstrates how to create an instance of the `MqttClientOptionsBuilder`:
+To connect to the EMQX Serverless broker, you need to create an instance of the `MqttClientOptionsBuilder` class and set the necessary options like broker address, port, username, and password. The code snippet below demonstrates how to create an instance of the `MqttClientOptionsBuilder`:
 
-```
+```c#
         string broker = "******.emqxsl.com";
         int port = 8883;
         string clientId = Guid.NewGuid().ToString();
@@ -72,7 +68,7 @@ When connecting to EMQX Serverless, it is important to note that it relies on a 
 
 To add TLS and set the certificate file to the `MqttClientOptionsBuilder` instance, you can use `WithTls()`. The following code snippet shows how to create a TLS instance of `MqttClientOptionsBuilder`:
 
-```
+```c#
         string broker = "******.emqxsl.com";
         int port = 8883;
         string clientId = Guid.NewGuid().ToString();
@@ -110,11 +106,11 @@ To add TLS and set the certificate file to the `MqttClientOptionsBuilder` instan
             .Build();
 ```
 
-### 5. Connect to the broker
+### 5. Connect to the MQTT broker
 
 Now that you have created the [MQTT client](https://www.emqx.com/en/blog/mqtt-client-tools) and set up the connection options, you are ready to connect to the broker. Simply use the `PublishAsync` method of the MQTT client to establish a connection and start sending and receiving messages. 
 
-```
+```c#
 var connectResult = await mqttClient.ConnectAsync(options);
 ```
 
@@ -124,7 +120,7 @@ Here we use asynchronous programming, which allows message publishing while subs
 
 Once connected to the broker, you can verify the success of the connection by checking the value of `ResultCode`. If the connection is successful, you can subscribe to [MQTT topics](https://www.emqx.com/en/blog/advanced-features-of-mqtt-topics) to receive messages.
 
-```
+```c#
 if (connectResult.ResultCode == MqttClientConnectResultCode.Success)
         {
             Console.WriteLine("Connected to MQTT broker successfully.");
@@ -146,7 +142,7 @@ Within this function, you can also print the the corresponding received messages
 
 To send messages to the broker, use the `PublishAsync` method of the MQTT client. Here is an example for sending messages to the broker in a loop, with one message sent every second:
 
-```
+```c#
 for (int i = 0; i < 10; i++)
             {
                 var message = new MqttApplicationMessageBuilder()
@@ -165,7 +161,7 @@ for (int i = 0; i < 10; i++)
 
 To unsubscribe, call:
 
-```
+```c#
 await mqttClient.UnsubscribeAsync(topic);
 ```
 
@@ -173,7 +169,7 @@ await mqttClient.UnsubscribeAsync(topic);
 
 To disconnect, call:
 
-```
+```c#
 await mqttClient.DisconnectAsync();
 ```
 
@@ -181,7 +177,7 @@ await mqttClient.DisconnectAsync();
 
 The following code shows how to connect to the server, subscribe to topics, and publish and receive messages. For a complete demonstration of all functions, see the project's [GitHub repository](https://github.com/emqx/MQTT-Client-Examples/tree/master/mqtt-client-Csharp-MqttNet).
 
-```
+```c#
 using System.Security.Authentication;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
@@ -295,10 +291,6 @@ When you publish a message to the topic, the server will receive the message and
 ## Summary
 
 This blog provides a step-by-step guide on connecting to a serverless MQTT deployment via the MQTTnet library. By following these instructions, you have successfully created a .Net application capable of publishing and subscribing to Serverless MQTT. 
-
-## Join the EMQ Community
-
-To dive deeper into this topic, explore our[ GitHub repository](https://github.com/emqx/emqx) for the source code, join our [Discord](https://discord.com/invite/xYGf3fQnES) for discussions, and watch our [YouTube tutorials](https://www.youtube.com/@emqx) for hands-on learning. We value your feedback and contributions, so feel free to get involved and be a part of our thriving community. Stay connected and keep learning!
 
 
 
