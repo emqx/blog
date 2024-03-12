@@ -133,6 +133,14 @@ Go back to the InfluxDB console and go to the Data Explorer page. Select the buc
 So far, we have used EMQX Cloud data integration based on the GCP platform to save the entire process of data to the InfluxDB cloud over the public network.
 
 
+## Related resources
+
+- [Integrating MQTT Data into InfluxDB for a Time-Series IoT Application](https://www.emqx.com/en/blog/building-an-iot-time-series-data-application-with-mqtt-and-influxdb)
+- [MQTT Performance Benchmark Testing: EMQX-InfluxDB Integration](https://www.emqx.com/en/blog/mqtt-performance-benchmark-testing-emqx-influxdb-integration)
+- [Getting Data from EMQX Cloud with InfluxDB Native Collector](https://www.emqx.com/en/blog/getting-data-from-emqx-cloud-with-influxdb-native-collector)
+- [Supercharging IIoT with MQTT, Edge Intelligence, and InfluxDB](https://www.emqx.com/en/blog/supercharging-iiot-with-mqtt-edge-intelligence-and-influxdb)
+
+
 <section class="promotion">
     <div>
         Try EMQX Cloud for Free

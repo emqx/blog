@@ -319,6 +319,13 @@ Well, without a single line of code, now you can use EMQX Cloud to fetch data fr
 In less than 10 minutes, you can leverage services from EMQX Cloud and InfluxDB Cloud with the new Native MQTT collector for a complete data flow from ingestion to persistence.
 
 
+## Related resources
+
+- [Integrating MQTT Data into InfluxDB for a Time-Series IoT Application](https://www.emqx.com/en/blog/building-an-iot-time-series-data-application-with-mqtt-and-influxdb)
+- [MQTT Performance Benchmark Testing: EMQX-InfluxDB Integration](https://www.emqx.com/en/blog/mqtt-performance-benchmark-testing-emqx-influxdb-integration)
+- [Supercharging IIoT with MQTT, Edge Intelligence, and InfluxDB](https://www.emqx.com/en/blog/supercharging-iiot-with-mqtt-edge-intelligence-and-influxdb)
+- [Save MQTT Data from EMQX Cloud on GCP to InfluxDB Cloud through the public network](https://www.emqx.com/en/blog/save-mqtt-data-from-emqx-cloud-on-gcp-to-influxdb-cloud-through-the-public-network)
+
 
 <section class="promotion">
     <div>

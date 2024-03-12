@@ -335,6 +335,15 @@ As IIoT continues to evolve, a platform is needed that can handle complex data s
 
 
 
+
+## Related resources
+
+- [Integrating MQTT Data into InfluxDB for a Time-Series IoT Application](https://www.emqx.com/en/blog/building-an-iot-time-series-data-application-with-mqtt-and-influxdb)
+- [MQTT Performance Benchmark Testing: EMQX-InfluxDB Integration](https://www.emqx.com/en/blog/mqtt-performance-benchmark-testing-emqx-influxdb-integration)
+- [Getting Data from EMQX Cloud with InfluxDB Native Collector](https://www.emqx.com/en/blog/getting-data-from-emqx-cloud-with-influxdb-native-collector)
+- [Save MQTT Data from EMQX Cloud on GCP to InfluxDB Cloud through the public network](https://www.emqx.com/en/blog/save-mqtt-data-from-emqx-cloud-on-gcp-to-influxdb-cloud-through-the-public-network)
+
+
 <section class="promotion">
     <div>
         Talk to an Expert

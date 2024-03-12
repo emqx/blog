@@ -10,13 +10,15 @@ You can read this blog to learn more about how EMQX enables easy integration of 
 
 InfluxDB is a time series database designed specifically for time series data. It can efficiently store and query massive amounts of time series data. InfluxDB supports high write throughput and provides rich data retention policies, allowing high-speed writes of massive IoT data with low-cost storage optimization. At the same time, InfluxDB provides SQL-like query language that makes it easy to query and aggregate time series data, enabling fast analysis and monitoring of IoT data. It is highly suitable for IoT scenarios. EMQX now supports connection to mainstream versions of InfluxDB Cloud, InfluxDB OSS, or InfluxDB Enterprise.
 
-## Prerequisites
+## MQTT to InfluxDB Integration Project Preparation
+
+### Prerequisites
 
 - Git
 - Docker Engine: v20.10+
 - Docker Compose: v2.20+
 
-## How it Works
+### How it Works
 
 ![MQTT to InfluxDB](https://assets.emqx.com/images/2aabbc7e8a0a861e03881f9e4ec85002.png)
 
@@ -40,7 +42,7 @@ In addition to the basic components, EMQX provides comprehensive observability c
 
 Clone the [emqx/mqtt-to-influxdb](https://github.com/emqx/mqtt-to-influxdb) repository locally, and initialize the submodule to enable the EMQX Exporter (optional):
 
-```
+```shell
 git clone https://github.com/emqx/mqtt-to-influxdb
 cd mqtt-to-influxdb
 
@@ -60,7 +62,7 @@ The codebase consists of four parts:
 
 Please make sure you have installed the [Docker](https://www.docker.com/), and then run Docker Compose in the background to start the demo:
 
-```
+```shell
 docker-compose up -d
 ```
 
@@ -70,7 +72,7 @@ The simulator accurately replicates real-world situations. It begins functioning
 
 This is an example of data published to EMQX for a specific energy storage device:
 
-```
+```json
 {
     "id": "87780204-890a-4b9a-b271-b0cf719ca62f",
     "name": "Energy_Storage_0",
@@ -117,7 +119,7 @@ This is an example of data published to EMQX for a specific energy storage devic
 
 EMQX will create a rule to ingest messages from the energy storage device. You can also modify this rule later to add custom processing using EMQX's[ built-in SQL functions](https://docs.emqx.com/en/enterprise/v5.1/data-integration/rule-sql-builtin-functions.html):
 
-```
+```sql
 SELECT
   payload
 FROM
@@ -130,7 +132,7 @@ After the rules process the data, EMQX will insert the energy data from the mess
 
 Docker Compose has included a subscriber to print all energy data. You can view the data with this command:
 
-```
+```shell
 $ docker logs -f mqttx
 [9/24/2023] [10:15:57 AM] › topic: mqttx/simulate/Energy-Storage/mqttx_6d014c26
 payload: {"id":"87780204-890a-4b9a-b271-b0cf719ca62f","name":"Energy_Storage_0","type":"FX48-B2800","inputPower":2.41,"outputPower":539.24,"percentage":94.68,"remainingCapacity":2649.52,"timestamp"...
@@ -138,11 +140,11 @@ payload: {"id":"87780204-890a-4b9a-b271-b0cf719ca62f","name":"Energy_Storage_0",
 
 To subscribe and receive the data with any [MQTT client](https://www.emqx.com/en/blog/mqtt-client-tools):
 
-```
+```shell
 mqttx sub -t mqttx/simulate/IEM/+
 ```
 
-## View Enengy Data in Grafana
+## View MQTT Data in Grafana
 
 To view energy data in the Grafana dashboard, open `http://localhost:3000` in your browser and log in with username `admin` and password `public`.
 
