@@ -92,6 +92,14 @@ InfluxDB is a database for storing and analyzing time series data. This benchmar
 Combining EMQX's outstanding scalability and performance with InfluxDB's powerful data throughput capability and stable performance, the out-of-the-box integration solution is highly suitable for the field of IoT.
 
 
+## Related resources
+
+- [Integrating MQTT Data into InfluxDB for a Time-Series IoT Application](https://www.emqx.com/en/blog/building-an-iot-time-series-data-application-with-mqtt-and-influxdb)
+- [Getting Data from EMQX Cloud with InfluxDB Native Collector](https://www.emqx.com/en/blog/getting-data-from-emqx-cloud-with-influxdb-native-collector)
+- [Supercharging IIoT with MQTT, Edge Intelligence, and InfluxDB](https://www.emqx.com/en/blog/supercharging-iiot-with-mqtt-edge-intelligence-and-influxdb)
+- [Save MQTT Data from EMQX Cloud on GCP to InfluxDB Cloud through the public network](https://www.emqx.com/en/blog/save-mqtt-data-from-emqx-cloud-on-gcp-to-influxdb-cloud-through-the-public-network)
+
+
 
 <section class="promotion">
     <div>
