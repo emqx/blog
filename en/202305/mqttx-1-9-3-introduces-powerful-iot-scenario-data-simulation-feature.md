@@ -156,7 +156,7 @@ We have optimized the application's logo, changing MQTT X to MQTTX, making it mo
 5. Enable configuration to ignore storing messages with QoS 0 to reduce storage space consumption.
 6. MQTT Debug feature.
 7. Automatic chart plotting for received messages.
-8. Plugin functionality for protocol extensions such as CoAP, MQTT-SN, etc.
+8. Plugin functionality for protocol extensions such as CoAP, [MQTT-SN](https://www.emqx.com/en/blog/connecting-mqtt-sn-devices-using-emqx), etc.
 9. Automation of script testing (Flow).
 
 MQTTX has always been committed to providing the best user experience and serving as the ultimate client tool for MQTT services and application developers worldwide.

@@ -107,7 +107,7 @@ Serving as the data center and core of the entire V2X system, the V2X Cloud plat
 The EMQX V2X solution, rooted in the MQTT message collection and transmission framework, addresses the challenges of V2X data collection, aggregation, transmission, computation, storage, and management. The solution enables:
 
 - **High-performance, high-reliability real-time data collection**, processing, and integration, thanks to its cloud-native distributed IoT access platform based on the MQTT protocol standard.
-- **Multi-protocol device access capability**, supporting MQTT 3.1/3.1.1/5.0, LwM2M, CoAP, MQTT-SN, or TCP/UDP private protocols.
+- **Multi-protocol device access capability**, supporting MQTT 3.1/3.1.1/5.0, LwM2M, CoAP, [MQTT-SN](https://www.emqx.com/en/blog/connecting-mqtt-sn-devices-using-emqx), or TCP/UDP private protocols.
 - **Support for millions of concurrent connections**, millions of data throughput, and millisecond-level real-time message routing, enabled by a highly available, distributed cluster architecture.
 - **A powerful rule engine** for data preprocessing and normalization, allowing for real-time data encoding/decoding, filtering, aggregation, and template normalization.
 - **Flexible data integration** offers unparalleled flexibility in architecture design with over 40 out-of-the-box data bridges.

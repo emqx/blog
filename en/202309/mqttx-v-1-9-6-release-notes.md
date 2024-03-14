@@ -74,7 +74,7 @@ We carried out a series of fixes and improvements on MQTTX in this version. They
 - **QoS 0 Message Storage Optimization:** Reduce storage space usage through configurable options.
 - **MQTT Debug Functionality:** Introduce features to assist users in debugging MQTT communications.
 - **Automatic Chart Drawing:** Automatically transform received messages into charts for more straightforward analysis.
-- **Plugin Functionality:** Launch a plugin system that supports protocol extensions such as CoAP and MQTT-SN.
+- **Plugin Functionality:** Launch a plugin system that supports protocol extensions such as CoAP and [MQTT-SN](https://www.emqx.com/en/blog/connecting-mqtt-sn-devices-using-emqx).
 - **Avro Message Format Support:** Introduce encoding and decoding functionalities for Avro message format.
 - **Script Test Automation (Flow):** Simplify the creation and management of automated testing workflows.
 

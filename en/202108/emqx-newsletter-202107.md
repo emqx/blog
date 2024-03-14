@@ -26,7 +26,7 @@ Most configuration entries of EMQX will take effect at runtime after modificatio
 
 ## The New Gateways
 
-We introduced the concept of “Protocol Gateway“, and put all the  [IoT protocols](https://www.emqx.com/en/blog/iot-protocols-mqtt-coap-lwm2m) like LwM2M, CoAP, STOMP, MQTT-SN and ExProto into it. This facilitates the integration of the IoT protocols to EMQX broker.
+We introduced the concept of “Protocol Gateway“, and put all the  [IoT protocols](https://www.emqx.com/en/blog/iot-protocols-mqtt-coap-lwm2m) like LwM2M, CoAP, STOMP, [MQTT-SN](https://www.emqx.com/en/blog/connecting-mqtt-sn-devices-using-emqx) and ExProto into it. This facilitates the integration of the IoT protocols to EMQX broker.
 
 The new architecture of EMQX gateway supports creating multiple instances for one protocol. And the configuration format of these protocols will be unified. In terms of the code structure, we’ve added a common transport layer for gateways to increase the code reusability, we’ve refactored some code of MQTT-SN gateway so that it is not coupled with the EMQX core anymore. More similar work was done for other gateways, stay tuned for more updates.
 

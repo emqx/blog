@@ -75,7 +75,7 @@ MQTTX is still continuously improving and enhancing, aiming to bring more practi
 - Switching options for QoS 0 message storage 
 - MQTT Debug function
 - Automatic chart drawing of received messages
-- Plugin function (protocol extension CoAP, MQTT-SN, etc.)
+- Plugin function (protocol extension CoAP, [MQTT-SN](https://www.emqx.com/en/blog/connecting-mqtt-sn-devices-using-emqx), etc.)
 - Script testing automation (Flow)
 
 

@@ -17,7 +17,7 @@ We are looking forward to seeing more contributors around the world join our com
     - A brand new configuration management and yet maximized backward compatibility.
     - Async Mnesia transaction replication PoC, aiming to solve large cluster’s brain-split.
 - Community updates
-  - In January, four new members from EMQ joined oasis-open MQTT-TC. We are looking forward to being more active in the MQTT & MQTT-SN standardization processes.
+  - In January, four new members from EMQ joined oasis-open MQTT-TC. We are looking forward to being more active in the MQTT & [MQTT-SN](https://www.emqx.com/en/blog/connecting-mqtt-sn-devices-using-emqx) standardization processes.
 
 
 <section class="promotion">

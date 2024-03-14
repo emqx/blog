@@ -34,7 +34,7 @@ Here is a summary of the 3 projects hosted on GitHub:
 
 ## 1. EMQX
 
-[EMQX](https://www.emqx.io/) is a highly scalable, distributed MQTT broker for enterprise IIoT deployments. It offers extensive support for MQTT 5.0, MQTT-SN, SSL/TLS encryption, and [MQTT over QUIC](https://www.emqx.com/en/blog/mqtt-over-quic). It further enables masterless clustering to achieve high availability and horizontal scalability.
+[EMQX](https://www.emqx.io/) is a highly scalable, distributed MQTT broker for enterprise IIoT deployments. It offers extensive support for MQTT 5.0, [MQTT-SN](https://www.emqx.com/en/blog/connecting-mqtt-sn-devices-using-emqx), SSL/TLS encryption, and [MQTT over QUIC](https://www.emqx.com/en/blog/mqtt-over-quic). It further enables masterless clustering to achieve high availability and horizontal scalability.
 
 With an impressive 11.5k stars on GitHub, EMQX has established itself as one of the most [popular MQTT brokers](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) available. The EMQX project was launched in 2012 and is licensed under Apache version 2.0. EMQX is written in Erlang/OTP, a programming language for building massively scalable soft real-time systems.
 

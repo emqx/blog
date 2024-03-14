@@ -46,7 +46,7 @@ Here is a summary of the four projects hosted on GitHub:
 
 [EMQX](https://www.emqx.io/) is one of the most popular MQTT brokers and has 11.5k stars on GitHub. The EMQX project was launched in 2012 and is licensed under Apache version 2.0. EMQX is written in Erlang/OTP, a programming language for building massively scalable soft real-time systems.
 
-EMQX is the world's most scalable MQTT broker that supports advanced features such as MQTT 5.0, MQTT-SN, and MQTT over QUIC. It supports masterless clustering for high availability and horizontal scalability. EMQX 5.0, the latest version, scales to establish 100 million concurrent MQTT connections with a single cluster of 23 nodes.
+EMQX is the world's most scalable MQTT broker that supports advanced features such as MQTT 5.0, [MQTT-SN](https://www.emqx.com/en/blog/connecting-mqtt-sn-devices-using-emqx), and MQTT over QUIC. It supports masterless clustering for high availability and horizontal scalability. EMQX 5.0, the latest version, scales to establish 100 million concurrent MQTT connections with a single cluster of 23 nodes.
 
 See: [Reaching 100M MQTT connections with EMQX 5.0](https://www.emqx.com/en/blog/reaching-100m-mqtt-connections-with-emqx-5-0)
 
