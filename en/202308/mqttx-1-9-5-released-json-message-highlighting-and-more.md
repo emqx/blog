@@ -65,7 +65,7 @@ The following is some of our plan for future versions:
 
 - Automatic chart plotting for received messages.
 
-- Plugin function (protocol extensions CoAP, MQTT-SN, etc.).
+- Plugin function (protocol extensions CoAP, [MQTT-SN](https://www.emqx.com/en/blog/connecting-mqtt-sn-devices-using-emqx), etc.).
 
 - Script testing automation (Flow).
 

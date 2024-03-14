@@ -21,7 +21,7 @@ Comparing to version beta.3, the rc.1 release mainly included below changes:
 - More MQTT message sending and receiving rate statistics for metrics systems.
 - Simplified rate limiting design.
 - Add search support for AuthN and AuthZ based on built-in database
-- Add sleep mode support for MQTT-SN devices
+- Add sleep mode support for [MQTT-SN](https://www.emqx.com/en/blog/connecting-mqtt-sn-devices-using-emqx) devices
 
 ### Upgrade of maintenance version
 

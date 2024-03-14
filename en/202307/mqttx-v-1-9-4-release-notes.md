@@ -110,7 +110,7 @@ We have an exciting roadmap ahead as we continue to innovate and improve MQTTX. 
 - Configurable storage ignoring of QoS 0 messages to reduce storage space usage;
 - MQTT Debug functionality;
 - Automatic chart plotting of received messages;
-- Plugin functionality (protocol extensions for CoAP, MQTT-SN, etc.);
+- Plugin functionality (protocol extensions for CoAP, [MQTT-SN](https://www.emqx.com/en/blog/connecting-mqtt-sn-devices-using-emqx), etc.);
 - Script testing automation (Flow).
 
 

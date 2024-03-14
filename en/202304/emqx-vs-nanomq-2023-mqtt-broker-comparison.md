@@ -86,7 +86,7 @@ EMQX and NanoMQ open-source projects are hosted on GitHub. Launched in 2012, EMQ
 
 EMQX and NanoMQ fully implement the MQTT 3.1.1 and 5.0 specifications, support [MQTT over WebSocket](https://www.emqx.com/en/blog/connect-to-mqtt-broker-with-websocket) and SSL/TLS encryption, and pioneer [MQTT Over QUIC](https://www.emqx.com/en/blog/mqtt-over-quic), the next generation of the MQTT standard.
 
-EMQX is a highly scalable MQTT Broker with multiple protocol gateways, including LwM2M/CoAP, MQTT-SN, and Stomp. In contrast, NanoMQ is a lightweight broker which supports brokerless mode and can work with DDS, ZeroMQ, and Nanomsg.
+EMQX is a highly scalable MQTT Broker with multiple protocol gateways, including LwM2M/CoAP, [MQTT-SN](https://www.emqx.com/en/blog/connecting-mqtt-sn-devices-using-emqx), and Stomp. In contrast, NanoMQ is a lightweight broker which supports brokerless mode and can work with DDS, ZeroMQ, and Nanomsg.
 
 Both brokers offer various authentication mechanisms, including username-password, JWT, OAuth 2.0 authentication, and IP white-/blacklisting.
 

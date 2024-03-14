@@ -81,7 +81,7 @@ In the next development phase following MQTTX 1.9.8, we will focus on boosting v
 - **Sparkplug B Support**: Extend MQTTX functionalities to include support for Sparkplug B.
 - **QoS 0 Message Storage Optimization**: Configurable options to reduce storage space usage.
 - **MQTT GUI Debug Functionality**: New features to aid in debugging MQTT communications.
-- **Plugin Functionality**: Introduction of a plugin system supporting protocol extensions like CoAP and MQTT-SN.
+- **Plugin Functionality**: Introduction of a plugin system supporting protocol extensions like CoAP and [MQTT-SN](https://www.emqx.com/en/blog/connecting-mqtt-sn-devices-using-emqx).
 - **Avro Message Format Support**: Encoding and decoding capabilities for Avro message format.
 - **Script Test Automation (Flow)**: Simplify the creation and management of automated testing workflows.
 

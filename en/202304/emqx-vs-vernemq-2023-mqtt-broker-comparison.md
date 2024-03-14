@@ -88,7 +88,7 @@ Both the EMQX and VerneMQ projects are hosted on GitHub. EMQX was launched in 20
 
 EMQX and VerneMQ fully implement the MQTT 3.1.1 and 5.0 specifications and support [MQTT over WebSocket](https://www.emqx.com/en/blog/connect-to-mqtt-broker-with-websocket) and SSL/TLS encryption. Both brokers offer various authentication mechanisms, including username-password, JWT, LDAP, and OAuth 2.0 authentication.
 
-EMQX has multiple protocol gateways, including LwM2M/CoAP, MQTT-SN, and Stomp. EMQX 5.0 pioneers MQTT over QUIC, which has the potential to be the next-generation MQTT standard, with multiplexing and faster connection establishment and migration support.
+EMQX has multiple protocol gateways, including LwM2M/CoAP, [MQTT-SN](https://www.emqx.com/en/blog/connecting-mqtt-sn-devices-using-emqx), and Stomp. EMQX 5.0 pioneers MQTT over QUIC, which has the potential to be the next-generation MQTT standard, with multiplexing and faster connection establishment and migration support.
 
 In addition, EMQX provides rich enterprise features for management and integration, such as HTTP API, WebHook, and Rule Engine, which can integrate with Kafka, SQL, NoSQL databases, and cloud services via out-of-box data bridges.
 

@@ -54,7 +54,7 @@ EMQ's CVIS solution is centered on MQTT-based data collection and transmission. 
 
 **Multi-Protocol Access**
 
-EMQX supports various protocols, including MQTT 3.1/3.1.1/5.0, LwM2M, CoAP, MQTT-SN, and private TCP/UDP protocol.
+EMQX supports various protocols, including MQTT 3.1/3.1.1/5.0, LwM2M, CoAP, [MQTT-SN](https://www.emqx.com/en/blog/connecting-mqtt-sn-devices-using-emqx), and private TCP/UDP protocol.
 
 **10M-Level Connections, Million-Level Throughput, Millisecond Message Routing**
 
