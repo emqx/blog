@@ -43,6 +43,8 @@ Get to know the preferred protocol in IoT from beginner to master.
 ## [MQTT Programming](https://www.emqx.com/ja/blog/category/mqtt-programming)
 Best practice of MQTT in various clients.
 
+- [MicroPythonとRaspberry PiでMQTT](https://www.emqx.com/ja/blog/micro-python-mqtt-tutorial-based-on-raspberry-pi) ([Edit](https://github.com/emqx/blog/blob/main/ja/202403/micro-python-mqtt-tutorial-based-on-raspberry-pi.md))
+- [Arduinoを使用したESP8266のMQTTブローカーへの接続](https://www.emqx.com/ja/blog/esp8266-connects-to-the-public-mqtt-broker) ([Edit](https://github.com/emqx/blog/blob/main/ja/202403/esp8266-connects-to-the-public-mqtt-broker.md))
 - [JavaでのMQTT使用法](https://www.emqx.com/ja/blog/how-to-use-mqtt-in-java) ([Edit](https://github.com/emqx/blog/blob/main/ja/202312/how-to-use-mqtt-in-java.md))
 - [PHPでのMQTT使用法](https://www.emqx.com/ja/blog/how-to-use-mqtt-in-php) ([Edit](https://github.com/emqx/blog/blob/main/ja/202312/how-to-use-mqtt-in-php.md))
 - [Raspberry PiでPaho Pythonクライアントを活用したMQTTの使用ガイド](https://www.emqx.com/ja/blog/use-mqtt-with-raspberry-pi) ([Edit](https://github.com/emqx/blog/blob/main/ja/202308/use-mqtt-with-raspberry-pi.md))
