@@ -74,7 +74,7 @@ HStream Platform is a unified streaming data platform that provides the easiest 
 - **Instantaneous Data Replay and Consumption**: Experience real-time data consumption as rapidly as that facilitated by Kafka. By subscribing to topics within HStream, you can consume data streams in real-time. Furthermore, permanently storing data streams enables playback and consumption at any moment.
 - **Stream Processing with Familiar SQL**: Process data streams rooted in event-time leveraging the same SQL syntax familiar to querying data within a relational database. Employ SQL for filtering, transforming, aggregating, and even combining multiple data streams.
 - **Real-Time Analytics Enhanced by Materialized Views**: Through materialized views derived from persistently updated data streams, HStream empowers you to achieve real-time data insights through uncomplicated query operations employing standard SQL statements.
-- **Seamless Integration with Multiple External Systems**: Built-in source and sink connectors for many popular systems, such as Kafka, MySQL, PostgreSQL, MongoDB, etc.
+- **Seamless Integration with Multiple External Systems**: Built-in source and sink connectors for many popular systems, such as [Kafka](https://www.emqx.com/en/blog/mqtt-and-kafka), [MySQL](https://www.emqx.com/en/blog/mqtt-to-mysql), [PostgreSQL](https://www.emqx.com/en/blog/build-an-iot-time-series-data-application-for-energy-storage-with-mqtt-and-timescale), [MongoDB](https://www.emqx.com/en/blog/mqtt-and-mongodb-crafting-seamless-synergy-for-iot-data-mangement), etc.
 
 
 

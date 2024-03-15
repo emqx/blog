@@ -4,7 +4,7 @@
 >
 >This blog series presents the benchmark test results of the integrations against a single node EMQX server.
 
-In this post, we provide the benchmarking result of MongoDB integration - a single node EMQX processes and inserts 80,000 QoS1 messages per second to MongoDB.
+In this post, we provide the benchmarking result of [MongoDB integration](https://www.emqx.com/en/blog/mqtt-and-mongodb-crafting-seamless-synergy-for-iot-data-mangement) - a single node EMQX processes and inserts 80,000 QoS1 messages per second to MongoDB.
 
 ## Test Scenario
 

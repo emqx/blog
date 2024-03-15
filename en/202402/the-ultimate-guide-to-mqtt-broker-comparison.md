@@ -194,6 +194,22 @@ The fully managed cloud service is the easiest way to start an MQTT service. Wit
 
 ### MQTT Broker Integration
 
+- [**MQTT with Kafka: Supercharging IoT Data Integration**](https://www.emqx.com/en/blog/mqtt-and-kafka)
+
+  In this blog post, we will explore the seamless integration of MQTT data with Kafka for the IoT Application.
+
+- [**MQTT to MongoDB: A Beginner's Guide for IoT Data Integration**](https://www.emqx.com/en/blog/building-a-data-aggregation-platform-with-mqtt-and-mongodb)
+
+  This post will elaborate on the benefits and key use cases of MongoDB with MQTT in IoT scenarios. We will also provide a demonstration of integrating MQTT data into a MongoDB database to give readers a better understanding of how to implement this process.
+
+- [**Integrating MQTT Data into InfluxDB for a Time-Series IoT Application**](https://www.emqx.com/en/blog/building-an-iot-time-series-data-application-with-mqtt-and-influxdb)
+
+  This article provides a detailed guide on how to connect energy storage devices with EMQX and integrate it with InfluxDB to ensure reliable data storage and enable real-time analytics.
+
+- [**MQTT and Redis: Creating a Real-Time Data Statistics Application for IoT**](https://www.emqx.com/en/blog/mqtt-and-redis)
+
+  In this blog, we will show you how to use the EMQX MQTT broker to collect data from diverse sensors and device events. We will then integrate this data with the Redis database to achieve real-time statistics and analysis.
+
 - **[Monitoring MQTT broker with Prometheus and Grafana](https://www.emqx.com/en/blog/emqx-prometheus-grafana)**
 
   In this article, we will introduce how to integrate the monitoring data of EMQX 5.0 into Prometheus, use Grafana to display the monitoring data of EMQX, and finally build a simple MQTT broker monitoring system.
@@ -210,13 +226,6 @@ The fully managed cloud service is the easiest way to start an MQTT service. Wit
 
   This article introduced the operation process for accessing the MQTT broker by using Node-RED and processing the MQTT data before sending it to the broker.
 
-- [**Building a Data Aggregation Platform with MQTT and MongoDB for Logistics and Transportation**](https://www.emqx.com/en/blog/building-a-data-aggregation-platform-with-mqtt-and-mongodb)
-
-  This blog will demonstrate how EMQX collects sensor data from vehicles and integrates with MongoDB for real-time data storage and analysis.
-
-- [**Building an IoT Time-Series Data Application for Energy Storage with MQTT and InfluxDB**](https://www.emqx.com/en/blog/building-an-iot-time-series-data-application-with-mqtt-and-influxdb)
-
-  This article provides a detailed guide on how to connect energy storage devices with EMQX and integrate it with InfluxDB to ensure reliable data storage and enable real-time analytics.
 
 ## Uses of MQTT Brokers Across Various Industries
 
