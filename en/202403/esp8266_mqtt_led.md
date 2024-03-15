@@ -1,6 +1,6 @@
 ## Introduction
 
-This tutorial explores how to leverage the ESP8266 Wi-Fi module and [MQTT protocol](https://mqtt.org/) for remote control of an LED light.
+This tutorial explores how to leverage the ESP8266 Wi-Fi module and [MQTT protocol](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) for remote control of an LED light.
 
 The ESP8266 is a cost-effective Wi-Fi module that offers a highly integrated Wi-Fi SoC solution, suitable for low-power applications, compact design, and high stability to meet user needs. It boasts complete and self-contained Wi-Fi networking capabilities, functioning independently or as a slave to another host MCU.
 
