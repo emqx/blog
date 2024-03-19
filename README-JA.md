@@ -127,6 +127,7 @@ Build a reliable, efficient and industry-specific Internet of Vehicles platform 
 
 ## [Industrial IoT | Unified Namespace | Sparkplug](https://www.emqx.com/ja/blog/category/industrial-iot)
 
+- [OPC UAプロトコル：特徴、動作原理、およびMQTTとのシナジー](https://www.emqx.com/ja/blog/opc-ua-protocol) ([Edit](https://github.com/emqx/blog/blob/main/ja/202403/opc-ua-protocol.md))
 - [スマート製造の革新: 事例、使用技術、役立つヒント](https://www.emqx.com/ja/blog/the-smart-manufacturing-revolution) ([Edit](https://github.com/emqx/blog/blob/main/ja/202309/the-smart-manufacturing-revolution.md))
 - [Modbusプロトコル: IoT通信の先駆者](https://www.emqx.com/ja/blog/modbus-protocol-the-grandfather-of-iot-communication) ([Edit](https://github.com/emqx/blog/blob/main/ja/202309/modbus-protocol-the-grandfather-of-iot-communication.md))
 - [IIoT(産業インターネット)の説明: 例、技術、メリット、課題](https://www.emqx.com/ja/blog/iiot-explained-examples-technologies-benefits-and-challenges) ([Edit](https://github.com/emqx/blog/blob/main/ja/202308/iiot-explained-examples-technologies-benefits-and-challenges.md))
