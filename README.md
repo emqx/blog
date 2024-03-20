@@ -82,6 +82,7 @@ Get to know the preferred protocol in IoT from beginner to master.
 
 ## [MQTT Client](https://www.emqx.com/en/blog/category/mqtt-client)
 
+- [Mosquitto_pub/sub: Key Features, Limitations & Its Alternative](https://www.emqx.com/en/blog/mosquitto-pub-and-mosquitto-sub) ([Edit](https://github.com/emqx/blog/blob/main/en/202403/mosquitto-pub-and-mosquitto-sub.md))
 - [7 Best MQTT Client Tools Worth Trying in 2024](https://www.emqx.com/en/blog/mqtt-client-tools) ([Edit](https://github.com/emqx/blog/blob/main/en/202401/mqtt-client-tools.md))
 - [MQTT.fx Guide: Features, Demos, and Using Tips](https://www.emqx.com/en/blog/connecting-to-emqx-cloud-with-mqttfx) ([Edit](https://github.com/emqx/blog/blob/main/en/202312/connecting-to-emqx-cloud-with-mqttfx.md))
 - [MQTTBox Guide: Features, Demos, and Using Tips](https://www.emqx.com/en/blog/connecting-to-emqx-cloud-with-mqttbox) ([Edit](https://github.com/emqx/blog/blob/main/en/202312/connecting-to-emqx-cloud-with-mqttbox.md))
@@ -153,13 +154,13 @@ Best practice of MQTT in various clients.
 ## [MQTT Integration (Eco & Integration)](https://www.emqx.com/en/blog/category/eco-and-integration)
 Explore more with & via EMQ.
 
+- [MQTT with Timescale: An Efficient Solution for IoT Time-Series Data Management](https://www.emqx.com/en/blog/build-an-iot-time-series-data-application-for-energy-storage-with-mqtt-and-timescale) ([Edit](https://github.com/emqx/blog/blob/main/en/202403/build-an-iot-time-series-data-application-for-energy-storage-with-mqtt-and-timescale.md))
 - [MQTT to MongoDB: A Beginner's Guide for IoT Data Integration](https://www.emqx.com/en/blog/mqtt-and-mongodb-crafting-seamless-synergy-for-iot-data-mangement) ([Edit](https://github.com/emqx/blog/blob/main/en/202403/mqtt-and-mongodb-crafting-seamless-synergy-for-iot-data-mangement.md))
 - [MQTT and Redis: Creating a Real-Time Data Statistics Application for IoT](https://www.emqx.com/en/blog/mqtt-and-redis) ([Edit](https://github.com/emqx/blog/blob/main/en/202402/mqtt-and-redis.md))
 - [MQTT to MySQL: Building a Real-Time Data Monitoring Application for Oil Extraction](https://www.emqx.com/en/blog/mqtt-to-mysql) ([Edit](https://github.com/emqx/blog/blob/main/en/202402/mqtt-to-mysql.md))
 - [Integrating MQTT Data into InfluxDB for a Time-Series IoT Application](https://www.emqx.com/en/blog/building-an-iot-time-series-data-application-with-mqtt-and-influxdb) ([Edit](https://github.com/emqx/blog/blob/main/en/202401/building-an-iot-time-series-data-application-with-mqtt-and-influxdb.md))
 - [Home Assistant Modbus: 4 Things You Can Build](https://www.emqx.com/en/blog/home-assistant-modbus) ([Edit](https://github.com/emqx/blog/blob/main/en/202310/home-assistant-modbus.md))
 - [OpenTelemetry: The Basics & Benefits for MQTT and IoT Observability](https://www.emqx.com/en/blog/open-telemetry-the-basics-and-benefits-for-mqtt-and-iot-observability) ([Edit](https://github.com/emqx/blog/blob/main/en/202310/open-telemetry-the-basics-and-benefits-for-mqtt-and-iot-observability.md))
-- [Build an IoT Time-Series Data Application for Industrial Energy Monitoring with MQTT and Timescale](https://www.emqx.com/en/blog/build-an-iot-time-series-data-application-for-energy-storage-with-mqtt-and-timescale) ([Edit](https://github.com/emqx/blog/blob/main/en/202309/build-an-iot-time-series-data-application-for-energy-storage-with-mqtt-and-timescale.md))
 - [AWS MQTT: Managing IoT Communication in AWS (with Tutorial)](https://www.emqx.com/en/blog/aws-mqtt-managing-iot-communication-in-aws) ([Edit](https://github.com/emqx/blog/blob/main/en/202309/aws-mqtt-managing-iot-communication-in-aws.md))
 - [MQTT to ClickHouse Integration: Fueling Real-Time IoT Data Analytics](https://www.emqx.com/en/blog/mqtt-to-clickhouse-integration) ([Edit](https://github.com/emqx/blog/blob/main/en/202307/mqtt-to-clickhouse-integration.md))
 - [MQTT Performance Benchmark Testing: EMQX-HStreamDB Integration](https://www.emqx.com/en/blog/mqtt-performance-benchmark-testing-emqx-hstreamdb-integration) ([Edit](https://github.com/emqx/blog/blob/main/en/202307/mqtt-performance-benchmark-testing-emqx-hstreamdb-integration.md))
