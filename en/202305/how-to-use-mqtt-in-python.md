@@ -10,7 +10,7 @@ This article mainly introduces how to use the **paho-mqtt** client and implement
 
 ## Why Choose Paho MQTT Python Client?
 
-The [Paho Python Client](https://github.com/eclipse/paho.mqtt.python) provides a client class with support for MQTT v5.0, MQTT v3.1.1, and v3.1 on Python 2.7 or 3.x. It also provides some helper functions to make publishing one off messages to an MQTT server very straightforward.
+The [Paho Python Client](https://github.com/eclipse/paho.mqtt.python) provides a client class with support for [MQTT v5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5), MQTT v3.1.1, and v3.1 on Python 2.7 or 3.x. It also provides some helper functions to make publishing one off messages to an MQTT server very straightforward.
 
 As the most popular MQTT client library in the Python community, Paho MQTT Python Client has the following advantages:
 
@@ -27,26 +27,32 @@ Want to explore more Python MQTT client libraries? Check out this [comparison bl
 
 ### Python Version
 
-This project has been developed and tested using Python 3.6. To confirm that you have the correct Python version installed, you can use the following command.
+This project has been developed and tested using Python 3.11. To confirm that you have the correct Python version installed, you can use the following command.
 
-```vim
+```shell
 $ python3 --version             
-Python 3.6.7
+Python 3.11.8
 ```
 
 ### Install The Paho MQTT Client
 
-Install the paho-mqtt library using Pip.
+`paho-mqtt` released version 2.0.0 in February 2024, which includes some significant updates compared to version 1.X. This article will primarily demonstrate code for version 1.X, but will also provide corresponding code for version 2.0.0, allowing readers to choose the appropriate version of `paho-mqtt`.
 
-```cmake
+> For detailed changes in version 2.0.0, please refer to the documentation: [https://eclipse.dev/paho/files/paho.mqtt.python/html/migrations.html](https://eclipse.dev/paho/files/paho.mqtt.python/html/migrations.html)
+
+Install the `paho-mqtt` 1.X using Pip.
+
+```shell
 pip3 install "paho-mqtt<2.0.0"
 ```
 
-(Version 2.0.0 of the library was released in Feburary 2024; the new version contains breaking changes so the above installs v1, which is compatible with this tutorial).
+Install the `paho-mqtt` 2.X using Pip.
+
+```shell
+pip3 install paho-mqtt
+```
 
 >If you need help installing Pip, please refer to the official documentation at [https://pip.pypa.io/en/stable/installation/](https://pip.pypa.io/en/stable/installation/). This resource provides detailed instructions for installing Pip on different operating systems and environments.
-
-
 
 ## Prepare an MQTT Broker
 
@@ -61,6 +67,7 @@ Before proceeding, please ensure you have an MQTT broker to communicate and test
     </div>
     <a href="https://accounts.emqx.com/signup?continue=https://cloud-intl.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">Get Started →</a>
 </section>
+
 
 This article will use the [free public MQTT broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker) to simplify the process:
 
@@ -79,7 +86,7 @@ This article will use the [free public MQTT broker](https://www.emqx.com/en/mqtt
 
 ### Import the Paho MQTT client
 
-```axapta
+```python
 from paho.mqtt import client as mqtt_client
 ```
 
@@ -89,7 +96,7 @@ from paho.mqtt import client as mqtt_client
 
 We need to specify the broker address, port, and topic for the MQTT connection. Additionally, we can generate a random client id for the connection using the Python random.randint function.
 
-```ini
+```python
 broker = 'broker.emqx.io'
 port = 1883
 topic = "python/mqtt"
@@ -102,15 +109,21 @@ client_id = f'python-mqtt-{random.randint(0, 1000)}'
 
 Next, we need to write the `on_connect` callback function for connecting the broker. This function is called after the client has successfully connected, and we can check the connection status using the `rc` parameter. Typically, we'll also create a client object that connects to `broker.emqx.io` at the same time.
 
-```reasonml
+```python
 def connect_mqtt():
     def on_connect(client, userdata, flags, rc):
+    # For paho-mqtt 2.0.0, you need to add the properties parameter.
+    # def on_connect(client, userdata, flags, rc, properties):
         if rc == 0:
             print("Connected to MQTT Broker!")
         else:
             print("Failed to connect, return code %d\n", rc)
     # Set Connecting Client ID
     client = mqtt_client.Client(client_id)
+    
+    # For paho-mqtt 2.0.0, you need to set callback_api_version.
+    # client = mqtt_client.Client(client_id=client_id, callback_api_version=mqtt_client.CallbackAPIVersion.VERSION2)
+    
     # client.username_pw_set(username, password)
     client.on_connect = on_connect
     client.connect(broker, port)
@@ -123,7 +136,7 @@ Automatic reconnection in [MQTT client libraries](https://www.emqx.com/en/mqtt-c
 
 The auto reconnect code for the Paho MQTT client is as follows:
 
-```
+```python
 FIRST_RECONNECT_DELAY = 1
 RECONNECT_RATE = 2
 MAX_RECONNECT_COUNT = 12
@@ -151,7 +164,7 @@ def on_disconnect(client, userdata, rc):
 
 Then, set it as the `on_disconnect` of the client object.
 
-```
+```python
 client.on_disconnect = on_disconnect
 ```
 
@@ -165,7 +178,7 @@ Using TLS in MQTT can ensure the confidentiality and integrity of information, p
 
 The one-way authentication code for the Paho MQTT client is as follows:
 
-```
+```python
 def connect_mqtt():
     client = mqtt_client.Client(CLIENT_ID)
     client.tls_set(ca_certs='./broker.emqx.io-ca.crt')
@@ -175,7 +188,7 @@ def connect_mqtt():
 
 The two-way authentication code for the Paho MQTT client is as follows:
 
-```
+```python
 def connect_mqtt():
     client = mqtt_client.Client(CLIENT_ID)
     client.tls_set(
@@ -220,14 +233,12 @@ def subscribe(client: mqtt_client):
     client.on_message = on_message
 ```
 
-
-
 ## Full Python MQTT Code Example
 
 ### The Code for Publishing MQTT Messages
 
 ```python
-# python 3.6
+# python 3.11
 
 import random
 import time
@@ -287,8 +298,8 @@ if __name__ == '__main__':
 
 ### The Code for MQTT Subscription
 
-```routeros
-# python3.6
+```shell
+# python 3.11
 
 import random
 
@@ -342,7 +353,7 @@ if __name__ == '__main__':
 
 Running the MQTT subscription script `sub.py`, we will see the client successfully connected and started waiting for the publisher to publish messages.
 
-```vim
+```shell
 python3 sub.py
 ```
 
@@ -352,13 +363,11 @@ python3 sub.py
 
 Running the MQTT message publishing script `pub.py`, we will see the client successfully connected and publish five messages. At the same time, sub.py will also successfully receive five messages.
 
-```vim
+```shell
 python3 pub.py
 ```
 
 ![Publish MQTT Messages](https://assets.emqx.com/images/cff08d70fe77b9a2391672f3816ba260.png)
-
-#### 
 
 ## Q&A About Paho MQTT Python Client
 
@@ -392,6 +401,8 @@ Next, you can check out the [MQTT Guide: Beginner to Advanced](https://www.emqx.
 
 - [A Quickstart Guide to Using MQTT over WebSocket](https://www.emqx.com/en/blog/connect-to-mqtt-broker-with-websocket)
 - [MQTT on ESP32: A Beginner's Guide](https://www.emqx.com/en/blog/esp32-connects-to-the-free-public-mqtt-broker)
+- [7 Essential Things to Know about MQTT Security](https://www.emqx.com/en/blog/essential-things-to-know-about-mqtt-security)
+- [MQTT Platform: Essential Features & Use Cases](https://www.emqx.com/en/blog/mqtt-platform-essential-features-and-use-cases)
 
 
 
