@@ -7,6 +7,7 @@
 ## [MQTT Tutorials](https://www.emqx.com/en/blog/category/mqtt-protocol)
 Get to know the preferred protocol in IoT from beginner to master.
 
+- [8 IoT Protocols and Standards Worth Exploring in 2024](https://www.emqx.com/en/blog/iot-protocols-mqtt-coap-lwm2m) ([Edit](https://github.com/emqx/blog/blob/main/en/202403/iot-protocols-mqtt-coap-lwm2m.md))
 - [MQTT Ports: Common Ports and How to Configure and Secure Them](https://www.emqx.com/en/blog/mqtt-ports) ([Edit](https://github.com/emqx/blog/blob/main/en/202312/mqtt-ports.md))
 - [MQTT Request / Response Explained and Example | MQTT 5 Features](https://www.emqx.com/en/blog/mqtt5-request-response) ([Edit](https://github.com/emqx/blog/blob/main/en/202311/mqtt5-request-response.md))
 - [MQTT Will Message (Last Will & Testament) Explained and Example | MQTT 5 Features](https://www.emqx.com/en/blog/use-of-mqtt-will-message) ([Edit](https://github.com/emqx/blog/blob/main/en/202311/use-of-mqtt-will-message.md))
@@ -40,7 +41,6 @@ Get to know the preferred protocol in IoT from beginner to master.
 - [What is the MQTT Keep Alive parameter for?](https://www.emqx.com/en/blog/mqtt-keep-alive) ([Edit](https://github.com/emqx/blog/blob/main/en/202208/mqtt-keep-alive.md))
 - [MQTT QoS design: Quality assurance for the IoV platform messaging](https://www.emqx.com/en/blog/mqtt-qos-design-for-internet-of-vehicles) ([Edit](https://github.com/emqx/blog/blob/main/en/202204/mqtt-qos-design-for-internet-of-vehicles.md))
 - [MQTT topic design in TSP platform scenario](https://www.emqx.com/en/blog/mqtt-topic-design-for-internet-of-vehicles) ([Edit](https://github.com/emqx/blog/blob/main/en/202204/mqtt-topic-design-for-internet-of-vehicles.md))
-- [7 IoT Protocols and Standards Worth Exploring in 2023](https://www.emqx.com/en/blog/iot-protocols-mqtt-coap-lwm2m) ([Edit](https://github.com/emqx/blog/blob/main/en/202203/iot-protocols-mqtt-coap-lwm2m.md))
 - [Topic Alias - MQTT 5.0 new features](https://www.emqx.com/en/blog/mqtt5-topic-alias) ([Edit](https://github.com/emqx/blog/blob/main/en/202202/mqtt5-topic-alias.md))
 - [MQTT for Elixir](https://www.emqx.com/en/blog/mqtt-for-elixir) ([Edit](https://github.com/emqx/blog/blob/main/en/202201/mqtt-for-elixir.md))
 - [User Properties - MQTT 5.0 new features](https://www.emqx.com/en/blog/mqtt5-user-properties) ([Edit](https://github.com/emqx/blog/blob/main/en/202111/mqtt5-user-properties.md))
@@ -104,6 +104,7 @@ Best practice of MQTT in various clients.
 
 - [Remotely Control an LED with ESP8266 and MQTT](https://www.emqx.com/en/blog/esp8266_mqtt_led) ([Edit](https://github.com/emqx/blog/blob/main/en/202403/esp8266_mqtt_led.md))
 - [MQTT with Qt6: A Beginner's Guide with Examples](https://www.emqx.com/en/blog/how-to-create-an-mqtt-application-in-qt6) ([Edit](https://github.com/emqx/blog/blob/main/en/202403/how-to-create-an-mqtt-application-in-qt6.md))
+- [How to Use MQTT in Python with Paho Client](https://www.emqx.com/en/blog/how-to-use-mqtt-in-python) ([Edit](https://github.com/emqx/blog/blob/main/en/202403/how-to-use-mqtt-in-python.md))
 - [How to Use MQTT in Golang with Paho Client](https://www.emqx.com/en/blog/how-to-use-mqtt-in-golang) ([Edit](https://github.com/emqx/blog/blob/main/en/202402/how-to-use-mqtt-in-golang.md))
 - [How to Use MQTT in The React Project](https://www.emqx.com/en/blog/how-to-use-mqtt-in-react) ([Edit](https://github.com/emqx/blog/blob/main/en/202402/how-to-use-mqtt-in-react.md))
 - [MicroPython MQTT Tutorial Based on Raspberry Pi](https://www.emqx.com/en/blog/micro-python-mqtt-tutorial-based-on-raspberry-pi) ([Edit](https://github.com/emqx/blog/blob/main/en/202402/micro-python-mqtt-tutorial-based-on-raspberry-pi.md))
@@ -117,7 +118,6 @@ Best practice of MQTT in various clients.
 - [How to Use MQTT on Raspberry Pi with Paho Python Client](https://www.emqx.com/en/blog/use-mqtt-with-raspberry-pi) ([Edit](https://github.com/emqx/blog/blob/main/en/202306/use-mqtt-with-raspberry-pi.md))
 - [JavaScript MQTT Client: A Beginner's Guide to MQTT.js](https://www.emqx.com/en/blog/mqtt-js-tutorial) ([Edit](https://github.com/emqx/blog/blob/main/en/202305/mqtt-js-tutorial.md))
 - [MQTT with Node.js: A Beginner's Guide with Examples & FAQs](https://www.emqx.com/en/blog/how-to-use-mqtt-in-nodejs) ([Edit](https://github.com/emqx/blog/blob/main/en/202305/how-to-use-mqtt-in-nodejs.md))
-- [How to Use MQTT in Python with Paho Client](https://www.emqx.com/en/blog/how-to-use-mqtt-in-python) ([Edit](https://github.com/emqx/blog/blob/main/en/202305/how-to-use-mqtt-in-python.md))
 - [How to Use MQTT in Dart](https://www.emqx.com/en/blog/how-to-use-mqtt-in-dart) ([Edit](https://github.com/emqx/blog/blob/main/en/202211/how-to-use-mqtt-in-dart.md))
 - [How to Use MQTT in The Django Project](https://www.emqx.com/en/blog/how-to-use-mqtt-in-django) ([Edit](https://github.com/emqx/blog/blob/main/en/202210/how-to-use-mqtt-in-django.md))
 - [How to Use MQTT in The Angular Project](https://www.emqx.com/en/blog/how-to-use-mqtt-in-angular) ([Edit](https://github.com/emqx/blog/blob/main/en/202210/how-to-use-mqtt-in-angular.md))
