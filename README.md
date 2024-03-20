@@ -104,6 +104,7 @@ Best practice of MQTT in various clients.
 
 - [Remotely Control an LED with ESP8266 and MQTT](https://www.emqx.com/en/blog/esp8266_mqtt_led) ([Edit](https://github.com/emqx/blog/blob/main/en/202403/esp8266_mqtt_led.md))
 - [MQTT with Qt6: A Beginner's Guide with Examples](https://www.emqx.com/en/blog/how-to-create-an-mqtt-application-in-qt6) ([Edit](https://github.com/emqx/blog/blob/main/en/202403/how-to-create-an-mqtt-application-in-qt6.md))
+- [How to Use MQTT in Python with Paho Client](https://www.emqx.com/en/blog/how-to-use-mqtt-in-python) ([Edit](https://github.com/emqx/blog/blob/main/en/202403/how-to-use-mqtt-in-python.md))
 - [How to Use MQTT in Golang with Paho Client](https://www.emqx.com/en/blog/how-to-use-mqtt-in-golang) ([Edit](https://github.com/emqx/blog/blob/main/en/202402/how-to-use-mqtt-in-golang.md))
 - [How to Use MQTT in The React Project](https://www.emqx.com/en/blog/how-to-use-mqtt-in-react) ([Edit](https://github.com/emqx/blog/blob/main/en/202402/how-to-use-mqtt-in-react.md))
 - [MicroPython MQTT Tutorial Based on Raspberry Pi](https://www.emqx.com/en/blog/micro-python-mqtt-tutorial-based-on-raspberry-pi) ([Edit](https://github.com/emqx/blog/blob/main/en/202402/micro-python-mqtt-tutorial-based-on-raspberry-pi.md))
@@ -117,7 +118,6 @@ Best practice of MQTT in various clients.
 - [How to Use MQTT on Raspberry Pi with Paho Python Client](https://www.emqx.com/en/blog/use-mqtt-with-raspberry-pi) ([Edit](https://github.com/emqx/blog/blob/main/en/202306/use-mqtt-with-raspberry-pi.md))
 - [JavaScript MQTT Client: A Beginner's Guide to MQTT.js](https://www.emqx.com/en/blog/mqtt-js-tutorial) ([Edit](https://github.com/emqx/blog/blob/main/en/202305/mqtt-js-tutorial.md))
 - [MQTT with Node.js: A Beginner's Guide with Examples & FAQs](https://www.emqx.com/en/blog/how-to-use-mqtt-in-nodejs) ([Edit](https://github.com/emqx/blog/blob/main/en/202305/how-to-use-mqtt-in-nodejs.md))
-- [How to Use MQTT in Python with Paho Client](https://www.emqx.com/en/blog/how-to-use-mqtt-in-python) ([Edit](https://github.com/emqx/blog/blob/main/en/202305/how-to-use-mqtt-in-python.md))
 - [How to Use MQTT in Dart](https://www.emqx.com/en/blog/how-to-use-mqtt-in-dart) ([Edit](https://github.com/emqx/blog/blob/main/en/202211/how-to-use-mqtt-in-dart.md))
 - [How to Use MQTT in The Django Project](https://www.emqx.com/en/blog/how-to-use-mqtt-in-django) ([Edit](https://github.com/emqx/blog/blob/main/en/202210/how-to-use-mqtt-in-django.md))
 - [How to Use MQTT in The Angular Project](https://www.emqx.com/en/blog/how-to-use-mqtt-in-angular) ([Edit](https://github.com/emqx/blog/blob/main/en/202210/how-to-use-mqtt-in-angular.md))
