@@ -127,6 +127,8 @@ Build a reliable, efficient and industry-specific Internet of Vehicles platform 
 
 ## [Industrial IoT | Unified Namespace | Sparkplug](https://www.emqx.com/ja/blog/category/industrial-iot)
 
+- [IIoTのためのOPC UAデータをMQTTにブリッジングする：ステップバイステップチュートリアル](https://www.emqx.com/ja/blog/bridging-opc-ua-data-to-mqtt-for-iiot) ([Edit](https://github.com/emqx/blog/blob/main/ja/202403/bridging-opc-ua-data-to-mqtt-for-iiot.md))
+- [OPC UA over MQTT：ITとOT融合の未来](https://www.emqx.com/ja/blog/opc-ua-over-mqtt-the-future-of-it-and-ot-converge) ([Edit](https://github.com/emqx/blog/blob/main/ja/202403/opc-ua-over-mqtt-the-future-of-it-and-ot-converge.md))
 - [OPC UAプロトコル：特徴、動作原理、およびMQTTとのシナジー](https://www.emqx.com/ja/blog/opc-ua-protocol) ([Edit](https://github.com/emqx/blog/blob/main/ja/202403/opc-ua-protocol.md))
 - [スマート製造の革新: 事例、使用技術、役立つヒント](https://www.emqx.com/ja/blog/the-smart-manufacturing-revolution) ([Edit](https://github.com/emqx/blog/blob/main/ja/202309/the-smart-manufacturing-revolution.md))
 - [Modbusプロトコル: IoT通信の先駆者](https://www.emqx.com/ja/blog/modbus-protocol-the-grandfather-of-iot-communication) ([Edit](https://github.com/emqx/blog/blob/main/ja/202309/modbus-protocol-the-grandfather-of-iot-communication.md))
@@ -152,6 +154,8 @@ MQTTX is a Fully Open-source MQTT 5.0 cross-platform Desktop Client, makes it ea
 ## [Neuron - IIoT Connectivity Server](https://www.emqx.com/ja/blog/category/neuron)
 IoT edge industrial protocol gateway software, which supports one-stop access to dozens of industrial protocols and converts them into MQTT protocol to access the cloud industrial IoT platform. It just requires ultra-low resource consumption, and supports three major architectures of X86, ARM, and MIPS.
 
+- [IIoTのためのOPC UAデータをMQTTにブリッジングする：ステップバイステップチュートリアル](https://www.emqx.com/ja/blog/bridging-opc-ua-data-to-mqtt-for-iiot) ([Edit](https://github.com/emqx/blog/blob/main/ja/202403/bridging-opc-ua-data-to-mqtt-for-iiot.md))
+- [OPC UA over MQTT：ITとOT融合の未来](https://www.emqx.com/ja/blog/opc-ua-over-mqtt-the-future-of-it-and-ot-converge) ([Edit](https://github.com/emqx/blog/blob/main/ja/202403/opc-ua-over-mqtt-the-future-of-it-and-ot-converge.md))
 - [デバイスベースのテンプレートによるIIoT一元管理の効率化](https://www.emqx.com/ja/blog/neuron-v-2-5-1-release-notes) ([Edit](https://github.com/emqx/blog/blob/main/ja/202308/neuron-v-2-5-1-release-notes.md))
 - [MQTT Sparkplugのステップ・バイ・ステップ・チュートリアル](https://www.emqx.com/ja/blog/mqtt-sparkplug-in-action-a-step-by-step-tutorial) ([Edit](https://github.com/emqx/blog/blob/main/ja/202308/mqtt-sparkplug-in-action-a-step-by-step-tutorial.md))
 - [Neuron v1.3.0が正式リリースされ、一括で産業データにアクセスできます！](https://www.emqx.com/ja/blog/neuron-1-3-0-release-notes) ([Edit](https://github.com/emqx/blog/blob/main/ja/202305/neuron-1-3-0-release-notes.md))

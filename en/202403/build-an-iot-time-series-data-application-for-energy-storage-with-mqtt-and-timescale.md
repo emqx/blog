@@ -1,22 +1,22 @@
-## What is Timescale?
+## What is TimescaleDB?
 
-Timescale is a robust and versatile database solution tailored specifically for managing time-series data, offering scalability, performance, and advanced analytical capabilities to meet the demands of modern data-intensive applications.
+TimescaleDB is a robust and versatile database solution tailored specifically for managing time-series data, offering scalability, performance, and advanced analytical capabilities to meet the demands of modern data-intensive applications.
 
-Developed as an extension of PostgreSQL, Timescale combines the reliability and familiarity of PostgreSQL with enhanced capabilities for managing time-stamped data. It excels in managing data that is timestamped or sequenced in chronological order, making it ideal for applications such as IoT (Internet of Things) devices, financial data analysis, monitoring systems, and more. Its architecture is optimized for time-series workloads, offering features like automatic data partitioning based on time intervals, native time-based indexing, and advanced compression techniques to reduce storage requirements.
+Developed as an extension of PostgreSQL, TimescaleDB combines the reliability and familiarity of PostgreSQL with enhanced capabilities for managing time-stamped data. It excels in managing data that is timestamped or sequenced in chronological order, making it ideal for applications such as IoT (Internet of Things) devices, financial data analysis, monitoring systems, and more. Its architecture is optimized for time-series workloads, offering features like automatic data partitioning based on time intervals, native time-based indexing, and advanced compression techniques to reduce storage requirements.
 
-## The Power of MQTT with Timescale in IoT
+## The Power of MQTT with TimescaleDB in IoT
 
-Combining the power of [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) with Timescale in IoT environments unleashes a formidable synergy that revolutionizes data handling and analytics. 
+Combining the power of [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) with TimescaleDB in IoT environments unleashes a formidable synergy that revolutionizes data handling and analytics. 
 
-As a lightweight messaging protocol ideal for IoT devices due to its low bandwidth and resource requirements, MQTT facilitates seamless communication between sensors, actuators, and backend systems. By integrating MQTT with Timescale, IoT applications gain the ability to efficiently store, manage, and analyze massive volumes of time-stamped data. Timescale's partitioning capabilities based on time intervals ensure optimal data organization, while its advanced compression techniques minimize storage overhead. This combination not only enhances data scalability and reliability but also empowers IoT systems with real-time analytics, trend analysis, predictive maintenance, and actionable insights, driving innovation and efficiency in IoT deployments across industries.
+As a lightweight messaging protocol ideal for IoT devices due to its low bandwidth and resource requirements, MQTT facilitates seamless communication between sensors, actuators, and backend systems. By integrating MQTT with TimescaleDB, IoT applications gain the ability to efficiently store, manage, and analyze massive volumes of time-stamped data. TimescaleDB's partitioning capabilities based on time intervals ensure optimal data organization, while its advanced compression techniques minimize storage overhead. This combination not only enhances data scalability and reliability but also empowers IoT systems with real-time analytics, trend analysis, predictive maintenance, and actionable insights, driving innovation and efficiency in IoT deployments across industries.
 
-Here are some use cases where integrating MQTT with Timescale can be highly beneficial:
+Here are some use cases where integrating MQTT with TimescaleDB can be highly beneficial:
 
-- **Smart Agriculture Monitoring**: MQTT facilitates real-time communication between soil sensors, weather stations, and irrigation systems in agriculture. Timescale can store and analyze this data, enabling farmers to make data-driven decisions regarding watering schedules, fertilizer usage, and crop health monitoring.
-- **IIoT Predictive Maintenance**: Combining MQTT messages from industrial equipment (such as pumps, motors, and turbines) with Timescale allows for the creation of predictive maintenance models. By analyzing historical data trends, anomalies, and sensor readings, maintenance teams can preemptively identify and address potential equipment failures, reducing downtime and operational costs.
-- **Energy Management and Monitoring**: MQTT can collect data from smart meters, solar panels, and energy storage systems in real time. Integrating this data with Timescale enables energy providers and consumers to monitor energy consumption patterns, optimize energy usage, and forecast demand more accurately, leading to improved efficiency and cost savings.
+- **Smart Agriculture Monitoring**: MQTT facilitates real-time communication between soil sensors, weather stations, and irrigation systems in agriculture. TimescaleDB can store and analyze this data, enabling farmers to make data-driven decisions regarding watering schedules, fertilizer usage, and crop health monitoring.
+- **IIoT Predictive Maintenance**: Combining MQTT messages from industrial equipment (such as pumps, motors, and turbines) with TimescaleDB allows for the creation of predictive maintenance models. By analyzing historical data trends, anomalies, and sensor readings, maintenance teams can preemptively identify and address potential equipment failures, reducing downtime and operational costs.
+- **Energy Management and Monitoring**: MQTT can collect data from smart meters, solar panels, and energy storage systems in real time. Integrating this data with TimescaleDB enables energy providers and consumers to monitor energy consumption patterns, optimize energy usage, and forecast demand more accurately, leading to improved efficiency and cost savings.
 
-## A Quick Demo: An IoT Time-Series Data Application with MQTT and Timescale
+## A Quick Demo: An IoT Time-Series Data Application with MQTT and TimescaleDB
 
 ### Prerequisites
 
@@ -33,8 +33,8 @@ This is a simple and effective architecture that avoids complex components. It u
 | Component Name                                           | Version      | Description                                                  |
 | :------------------------------------------------------- | :----------- | :----------------------------------------------------------- |
 | [MQTTX CLI](https://mqttx.app/cli)                       | 1.9.3+       | A command line tool is leveraged to generate factory energy consumption data. |
-| [EMQX Enterprise](https://www.emqx.com/en/products/emqx) | 5.0.4+       | MQTT broker used for message exchange between factory and the Timescale. |
-| [Timescale](https://www.timescale.com/)                  | latest-pg12+ | Used for IIoT data storage and management, as well as providing time aggregation and analysis capabilities for Grafana. |
+| [EMQX Enterprise](https://www.emqx.com/en/products/emqx) | 5.0.4+       | MQTT broker used for message exchange between factory and the TimescaleDB. |
+| [TimescaleDB](https://www.timescale.com/)                  | latest-pg12+ | Used for IIoT data storage and management, as well as providing time aggregation and analysis capabilities for Grafana. |
 | [Grafana](https://grafana.com/)                          | 9.5.1+       | Visualization platform utilized to display and analyze the collected data. |
 
 In addition to the basic components, EMQX provides comprehensive observability capabilities. You can use the following components to monitor EMQX metrics and load when the system is running:
@@ -61,10 +61,10 @@ The codebase consists of four parts:
 
 - The `emqx` folder contains EMQX-TimescaleDB integration configurations to automatically create rules and data bridges when launching EMQX.
 - The `emqx-exporter`, `prometheus` and `grafana-provisioning` folders include observability and energy consumption data visualization configurations for EMQX.
-- The `create-table.sql` file defines the database table schema, which will create the tables in Timescale during initialization.
+- The `create-table.sql` file defines the database table schema, which will create the tables in TimescaleDB during initialization.
 - The `docker-compose.yml` orchestrates all components to launch the project with one click.
 
-### Start MQTTX CLI, EMQX, and Timescale
+### Start MQTTX CLI, EMQX, and TimescaleDB
 
 Please make sure you have installed the [Docker](https://www.docker.com/), and then run Docker Compose in the background to start the demo:
 
@@ -120,7 +120,7 @@ FROM
   "mqttx/simulate/#"
 ```
 
-After the rules process the data, EMQX will insert the energy consumption data from the message payload into the specified table in Timescale through data bridges. Configuring INSERT SQL on the data bridges allows flexibly accomplishing this operation.
+After the rules process the data, EMQX will insert the energy consumption data from the message payload into the specified table in TimescaleDB through data bridges. Configuring INSERT SQL on the data bridges allows flexibly accomplishing this operation.
 
 ![Configuring INSERT SQL](https://assets.emqx.com/images/4fa61dcfe7fbc0f8774268d70b53b21a.png)
 
@@ -150,7 +150,7 @@ After successful login, go to “Home → Dashboards” page and select “Energ
 
 ## Conclusion
 
-MQTT with Timescale integration is a powerful combination that can help you build efficient and scalable IoT applications. With MQTT, you can easily connect and manage your IoT devices, while Timescale provides a robust and scalable platform for processing and analyzing the data generated by these devices. By leveraging EMQX as a real-time [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) and utilizing its SQL data integration to ingest data into Timescale, you can create a seamless data pipeline that allows you to collect, process, and analyze data from your IoT devices in real-time. This can help you gain valuable insights into your device performance, optimize your operations, and make data-driven decisions.
+MQTT with TimescaleDB integration is a powerful combination that can help you build efficient and scalable IoT applications. With MQTT, you can easily connect and manage your IoT devices, while TimescaleDB provides a robust and scalable platform for processing and analyzing the data generated by these devices. By leveraging EMQX as a real-time [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) and utilizing its SQL data integration to ingest data into TimescaleDB, you can create a seamless data pipeline that allows you to collect, process, and analyze data from your IoT devices in real-time. This can help you gain valuable insights into your device performance, optimize your operations, and make data-driven decisions.
 
 
 

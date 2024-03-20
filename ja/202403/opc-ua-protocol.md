@@ -200,7 +200,7 @@ Pub-Subのセキュリティはクライアント/サーバーよりも少し複
 
 Neuronの南向きOPC UAドライバーによって収集および集約されたOPC UAデータソースは、MQTTプロトコルに変換され、EMQX MQTTブローカーに伝送されます。後者はそれらをさまざまな分散アプリケーションに配布します。
 
-OPC UAからMQTTへのブリッジングについては、次のステップバイステップガイドを参照してください：[IIoTのためのOPC UAデータをMQTTにブリッジングする：ステップバイステップチュートリアル](https://www.emqx.com/en/blog/bridging-opc-ua-data-to-mqtt-for-iiot)。
+OPC UAからMQTTへのブリッジングについては、次のステップバイステップガイドを参照してください：[IIoTのためのOPC UAデータをMQTTにブリッジングする：ステップバイステップチュートリアル](https://www.emqx.com/ja/blog/bridging-opc-ua-data-to-mqtt-for-iiot)。
 
 
 
