@@ -345,3 +345,7 @@ The type of this attribute is ACnetNotifyType, which indicates whether the notif
 ## Summary
 
 This article only analyzed one standard object; other standard objects are similar and only have different attributes. In our next blog, we will offer more detailed tutorials on how to bridge BACnet data to [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) for enhanced IIoT connectivity.
+
+> **Learn more:**
+>
+> [Bridging BACnet Data to MQTT: A Solution to Better Implementing Intelligent Building](https://www.emqx.com/en/blog/bridging-bacnet-data-to-mqtt)
