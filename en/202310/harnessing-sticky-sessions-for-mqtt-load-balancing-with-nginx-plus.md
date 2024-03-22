@@ -29,7 +29,7 @@ While there are several [MQTT brokers](https://www.emqx.com/en/blog/the-ultimate
 
 The architectural blueprint for integrating EMQX with NGINX Plus, emphasizing sticky sessions using 'Client ID', is illustrated below:
 
-![The architectural blueprint for integrating EMQX with NGINX Plus](https://assets.emqx.com/images/0da1203e7cbeba3a54e6dc63dae4cb29.png)
+![The architectural blueprint for integrating EMQX with NGINX Plus](https://assets.emqx.com/images/9c30c94f05ec34467a5a2df27affd975.png)
 
 In this setup, the client forwards a connection request to NGINX Plus, which subsequently proxies the request to an appropriate EMQX server, determined by the client's 'Client ID'. This ensures that subsequent client connection requests are consistently routed to the same server, fortifying session persistence.
 
