@@ -64,9 +64,12 @@ Overall, the MQTT broker architecture provides a flexible and efficient messagin
 </section>
 
 
+
 ### Mosquitto
 
 [Eclipse Mosquitto](https://github.com/eclipse/mosquitto) is an open-source MQTT broker for MQTT protocol versions 5.0, 3.1.1, and 3.1. Mosquitto is lightweight and can be installed on low-power, single-board computers or enterprise servers. The broker is written in C programming language and can be implemented on MQTT clients with a C library. It can be downloaded for Windows, Mac, Linux, and Raspberry Pi. Ready-to-install binary files are available for all operating systems. The latest version includes an authentication and authorization plugin “mosquitto-go-auth,” a web user interface for managing Mosquitto instances. It also offers a PHP wrapper “Mosquitto-PHP” for creating MQTT clients in PHP.
+
+> Learn more: [Mosquitto MQTT Broker: Pros/Cons, Tutorial, and a Modern Alternative](https://www.emqx.com/en/blog/mosquitto-mqtt-broker-pros-cons-tutorial-and-modern-alternatives).
 
 ### NanoMQ
 
@@ -78,6 +81,7 @@ Overall, the MQTT broker architecture provides a flexible and efficient messagin
     </div>
     <a href="https://www.emqx.com/en/try?product=nanomq" class="button is-gradient px-5">Get Started →</a>
 </section>
+
 
 
 ### VerneMQ
@@ -176,6 +180,7 @@ The fully managed cloud service is the easiest way to start an MQTT service. Wit
     <a href="https://accounts.emqx.com/signup?continue=https://cloud-intl.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">Get Started →</a>
 </section>
 
+
 - **[How to Install an MQTT Broker on Ubuntu](https://www.emqx.com/en/blog/how-to-install-emqx-mqtt-broker-on-ubuntu)**
 
   This article will take EMQX as an example to introduce how to build a single-node MQTT broker on Ubuntu.
@@ -206,17 +211,21 @@ The fully managed cloud service is the easiest way to start an MQTT service. Wit
 
   This article provides a detailed guide on how to connect energy storage devices with EMQX and integrate it with InfluxDB to ensure reliable data storage and enable real-time analytics.
 
+- [**MQTT with TimescaleDB: An Efficient Solution for IoT Time-Series Data Management**](https://www.emqx.com/en/blog/build-an-iot-time-series-data-application-for-energy-storage-with-mqtt-and-timescale)
+
+  Combining the power of MQTT with TimescaleDB in IoT environments unleashes a formidable synergy that revolutionizes data handling and analytics.
+
 - [**MQTT and Redis: Creating a Real-Time Data Statistics Application for IoT**](https://www.emqx.com/en/blog/mqtt-and-redis)
 
   In this blog, we will show you how to use the EMQX MQTT broker to collect data from diverse sensors and device events. We will then integrate this data with the Redis database to achieve real-time statistics and analysis.
 
+- [**MQTT to ClickHouse Integration: Fueling Real-Time IoT Data Analytics**](https://www.emqx.com/en/blog/mqtt-to-clickhouse-integration)
+
+  In this blog post, we will explore how MQTT integration with ClickHouse can unleash the power of data analysis and drive enhanced performance across these diverse industries.
+
 - **[Monitoring MQTT broker with Prometheus and Grafana](https://www.emqx.com/en/blog/emqx-prometheus-grafana)**
 
   In this article, we will introduce how to integrate the monitoring data of EMQX 5.0 into Prometheus, use Grafana to display the monitoring data of EMQX, and finally build a simple MQTT broker monitoring system.
-
-- **[EMQX + ClickHouse implements IoT data collection and analysis](https://www.emqx.com/en/blog/emqx-and-clickhouse-for-iot-data-access-and-analysis)**
-
-  IoT data collection involves mass equipment and data, EMQX + ClickHouse is fully capable of IoT data access, storage, analysis, and processing.
 
 - **[How to access MQTT data with ThingsBoard](https://www.emqx.com/en/blog/how-to-use-thingsboard-to-access-mqtt-data)**
 
@@ -249,8 +258,7 @@ Product page: [https://www.emqx.com/en/products/emqx](https://www.emqx.com/en/pr
 
 <section class="promotion">
     <div>
-        Try EMQX Enterprise for Free
-      <div class="is-size-14 is-text-normal has-text-weight-normal">Connect any device, at any scale, anywhere.</div>
+        Talk to an Expert
     </div>
-    <a href="https://www.emqx.com/en/try?product=enterprise" class="button is-gradient px-5">Get Started →</a>
+    <a href="https://www.emqx.com/en/contact?product=solutions" class="button is-gradient px-5">Contact Us →</a>
 </section>

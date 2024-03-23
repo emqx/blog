@@ -8,6 +8,7 @@
 Get to know the preferred protocol in IoT from beginner to master.
 
 - [8 IoT Protocols and Standards Worth Exploring in 2024](https://www.emqx.com/en/blog/iot-protocols-mqtt-coap-lwm2m) ([Edit](https://github.com/emqx/blog/blob/main/en/202403/iot-protocols-mqtt-coap-lwm2m.md))
+- [What Is the MQTT Protocol: A Beginner's Guide](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) ([Edit](https://github.com/emqx/blog/blob/main/en/202403/the-easiest-guide-to-getting-started-with-mqtt.md))
 - [MQTT Ports: Common Ports and How to Configure and Secure Them](https://www.emqx.com/en/blog/mqtt-ports) ([Edit](https://github.com/emqx/blog/blob/main/en/202312/mqtt-ports.md))
 - [MQTT Request / Response Explained and Example | MQTT 5 Features](https://www.emqx.com/en/blog/mqtt5-request-response) ([Edit](https://github.com/emqx/blog/blob/main/en/202311/mqtt5-request-response.md))
 - [MQTT Will Message (Last Will & Testament) Explained and Example | MQTT 5 Features](https://www.emqx.com/en/blog/use-of-mqtt-will-message) ([Edit](https://github.com/emqx/blog/blob/main/en/202311/use-of-mqtt-will-message.md))
@@ -31,7 +32,6 @@ Get to know the preferred protocol in IoT from beginner to master.
 - [MQTT Topics and Wildcards: A Beginner's Guide](https://www.emqx.com/en/blog/advanced-features-of-mqtt-topics) ([Edit](https://github.com/emqx/blog/blob/main/en/202306/advanced-features-of-mqtt-topics.md))
 - [MQTT Reason Code Introduction and Quick Reference](https://www.emqx.com/en/blog/mqtt5-new-features-reason-code-and-ack) ([Edit](https://github.com/emqx/blog/blob/main/en/202306/mqtt5-new-features-reason-code-and-ack.md))
 - [MQTT  Subscription Options Explained and Example  | MQTT 5 Features](https://www.emqx.com/en/blog/an-introduction-to-subscription-options-in-mqtt) ([Edit](https://github.com/emqx/blog/blob/main/en/202306/an-introduction-to-subscription-options-in-mqtt.md))
-- [What Is the MQTT Protocol: A Beginner's Guide](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) ([Edit](https://github.com/emqx/blog/blob/main/en/202305/the-easiest-guide-to-getting-started-with-mqtt.md))
 - [Shaping the Future of IoT: 7 MQTT Technology Trends in 2023](https://www.emqx.com/en/blog/7-mqtt-trends-in-2023) ([Edit](https://github.com/emqx/blog/blob/main/en/202303/7-mqtt-trends-in-2023.md))
 - [Introduction to MQTT Publish-Subscribe Pattern](https://www.emqx.com/en/blog/mqtt-5-introduction-to-publish-subscribe-model) ([Edit](https://github.com/emqx/blog/blob/main/en/202303/mqtt-5-introduction-to-publish-subscribe-model.md))
 - [MQTT QoS 0, 1, 2 Explained: A Quickstart Guide](https://www.emqx.com/en/blog/introduction-to-mqtt-qos) ([Edit](https://github.com/emqx/blog/blob/main/en/202301/introduction-to-mqtt-qos.md))
@@ -154,6 +154,7 @@ Best practice of MQTT in various clients.
 ## [MQTT Integration (Eco & Integration)](https://www.emqx.com/en/blog/category/eco-and-integration)
 Explore more with & via EMQ.
 
+- [MQTT to ClickHouse Integration: Fueling Real-Time IoT Data Analytics](https://www.emqx.com/en/blog/mqtt-to-clickhouse-integration) ([Edit](https://github.com/emqx/blog/blob/main/en/202403/mqtt-to-clickhouse-integration.md))
 - [MQTT with TimescaleDB: An Efficient Solution for IoT Time-Series Data Management](https://www.emqx.com/en/blog/build-an-iot-time-series-data-application-for-energy-storage-with-mqtt-and-timescale) ([Edit](https://github.com/emqx/blog/blob/main/en/202403/build-an-iot-time-series-data-application-for-energy-storage-with-mqtt-and-timescale.md))
 - [MQTT to MongoDB: A Beginner's Guide for IoT Data Integration](https://www.emqx.com/en/blog/mqtt-and-mongodb-crafting-seamless-synergy-for-iot-data-mangement) ([Edit](https://github.com/emqx/blog/blob/main/en/202403/mqtt-and-mongodb-crafting-seamless-synergy-for-iot-data-mangement.md))
 - [MQTT and Redis: Creating a Real-Time Data Statistics Application for IoT](https://www.emqx.com/en/blog/mqtt-and-redis) ([Edit](https://github.com/emqx/blog/blob/main/en/202402/mqtt-and-redis.md))
@@ -162,7 +163,6 @@ Explore more with & via EMQ.
 - [Home Assistant Modbus: 4 Things You Can Build](https://www.emqx.com/en/blog/home-assistant-modbus) ([Edit](https://github.com/emqx/blog/blob/main/en/202310/home-assistant-modbus.md))
 - [OpenTelemetry: The Basics & Benefits for MQTT and IoT Observability](https://www.emqx.com/en/blog/open-telemetry-the-basics-and-benefits-for-mqtt-and-iot-observability) ([Edit](https://github.com/emqx/blog/blob/main/en/202310/open-telemetry-the-basics-and-benefits-for-mqtt-and-iot-observability.md))
 - [AWS MQTT: Managing IoT Communication in AWS (with Tutorial)](https://www.emqx.com/en/blog/aws-mqtt-managing-iot-communication-in-aws) ([Edit](https://github.com/emqx/blog/blob/main/en/202309/aws-mqtt-managing-iot-communication-in-aws.md))
-- [MQTT to ClickHouse Integration: Fueling Real-Time IoT Data Analytics](https://www.emqx.com/en/blog/mqtt-to-clickhouse-integration) ([Edit](https://github.com/emqx/blog/blob/main/en/202307/mqtt-to-clickhouse-integration.md))
 - [MQTT Performance Benchmark Testing: EMQX-HStreamDB Integration](https://www.emqx.com/en/blog/mqtt-performance-benchmark-testing-emqx-hstreamdb-integration) ([Edit](https://github.com/emqx/blog/blob/main/en/202307/mqtt-performance-benchmark-testing-emqx-hstreamdb-integration.md))
 - [Time-Series Database (TSDB) for IoT: The Missing Piece](https://www.emqx.com/en/blog/time-series-database-for-iot-the-missing-piece) ([Edit](https://github.com/emqx/blog/blob/main/en/202307/time-series-database-for-iot-the-missing-piece.md))
 - [MQTT with Kafka: Supercharging IoT Data Integration](https://www.emqx.com/en/blog/mqtt-and-kafka) ([Edit](https://github.com/emqx/blog/blob/main/en/202306/mqtt-and-kafka.md))
