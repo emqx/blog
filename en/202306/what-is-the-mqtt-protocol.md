@@ -170,7 +170,7 @@ You can also create fully hosted MQTT services directly on EMQX Cloud. [Free tri
 
 ### MQTT Client
 
-MQTT applications usually need to implement MQTT communication based on MQTT client libraries. At present, basically all programming languages have matured open-source MQTT client libraries. So, you can refer to the [Comprehensive list of MQTT client libraries](https://www.emqx.com/en/mqtt-client-sdk) collated by EMQ to choose a suitable client library to build an MQTT client that meets their business needs. You can also visit the [MQTT Programming](https://www.emqx.com/en/blog/tag/mqtt-client-programming) blog series provided by EMQ to learn how to use MQTT in Java, Python, PHP, Node.js and other programming languages.
+MQTT applications usually need to implement MQTT communication based on MQTT client libraries. At present, basically all programming languages have matured open-source MQTT client libraries. So, you can refer to the [Comprehensive list of MQTT client libraries](https://www.emqx.com/en/mqtt-client-sdk) collated by EMQ to choose a suitable client library to build an MQTT client that meets their business needs. You can also visit the [MQTT Programming](https://www.emqx.com/en/blog/category/mqtt-programming) blog series provided by EMQ to learn how to use MQTT in Java, Python, PHP, Node.js and other programming languages.
 
 MQTT application development is also inseparable from the support of the MQTT testing tool. An easy-to-use and powerful MQTT testing tool can help developers shorten the development cycle and create a stable IoT application.
 

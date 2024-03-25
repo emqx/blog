@@ -1,6 +1,6 @@
 ## The Limitation of Mosquitto MQTT Broker
 
-As a small and lightweight open-source MQTT broker, [Mosquitto]((https://www.emqx.com/en/blog/mosquitto-mqtt-broker-pros-cons-tutorial-and-modern-alternatives)) is written in C/C++ with a single-core and single-thread architecture, can be deployed on embedded devices with limited resources to access a small number of MQTT device terminals and implements [MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5) and 3.1.1 protocols. 
+As a small and lightweight open-source MQTT broker, [Mosquitto](https://www.emqx.com/en/blog/mosquitto-mqtt-broker-pros-cons-tutorial-and-modern-alternatives) is written in C/C++ with a single-core and single-thread architecture, can be deployed on embedded devices with limited resources to access a small number of MQTT device terminals and implements [MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5) and 3.1.1 protocols. 
 
 However, Mosquitto is weak in clustering, which makes it difficult for the official and third-party cluster solutions to support the performance requirements of IoT for large-scale mass connectivity. 
 
