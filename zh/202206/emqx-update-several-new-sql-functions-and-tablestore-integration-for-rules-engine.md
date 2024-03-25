@@ -1,6 +1,6 @@
 [EMQX](https://www.emqx.com/zh/products/emqx) 是一款云原生分布式物联网接入平台，通过一体化的分布式 MQTT 消息服务和强大的 IoT 规则引擎，为高可靠、高性能的物联网实时数据移动、处理和集成提供动力，「随处运行，无限连接，任意集成」，助力企业快速构建关键业务的 IoT 平台与应用。
 
-官网地址：[http://www.emqx.com/zh/products/emqx](https://www.emqx.com/zh/products/emqx)
+官网地址：[https://www.emqx.com/zh/products/emqx](https://www.emqx.com/zh/products/emqx)
 
 EMQX 团队近日宣布：EMQX 开源版 v4.3.15、开源版 v4.4.4 与企业版 v4.3.10、企业版 v4.4.4 四个维护版本现已正式发布！
 

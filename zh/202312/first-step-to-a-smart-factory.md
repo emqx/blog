@@ -21,7 +21,7 @@ EMQX 是 OT-IT 融合的核心，它是一个高度灵活的 [MQTT Broker](https
 
 ### Neuron：工业连接网关
 
-EMQX 能够通过 Neuron 进一步增强其功能，Neuron 是一个强大的工业互联网连接网关，作为 OT 和 IT 世界之间的桥梁，实现了数据协议和格式的无缝转换，确保了兼容性。Neuron 支持包括 [Modbus](https://www.emqx.com/zh/blog/modbus-protocol-the-grandfather-of-iot-communication)、[OPC UA](https://www.emqx.com/zh/blog/opc-ua-protocol) 和 Ethernet/IP 等在内的多种工业通信协议，能够将它们转换为基于 MQTT 的协议，例如 [MQTT Sparkplug](https://www.emqx.com/zh/blog/mqtt-sparkplug-bridging-it-and-ot-in-industry-4-0) 和 [OPC UA over MQTT](https://www.emqx.com/zh/blog/opc-ua-over-mqtt-the-future-of-it-and-ot-convergence)。这使得 Neuron 能够适配各种 OT 设备，如 PLC、传感器和执行器等，并与 IT 系统进行连接。
+EMQX 能够通过 Neuron 进一步增强其功能，Neuron 是一个强大的工业互联网连接网关，作为 OT 和 IT 世界之间的桥梁，实现了数据协议和格式的无缝转换，确保了兼容性。Neuron 支持包括 [Modbus](https://www.emqx.com/zh/blog/modbus-protocol-the-grandfather-of-iot-communication)、[OPC UA](https://www.emqx.com/zh/blog/opc-ua-over-mqtt-the-future-of-it-and-ot-convergence) 和 Ethernet/IP 等在内的多种工业通信协议，能够将它们转换为基于 MQTT 的协议，例如 [MQTT Sparkplug](https://www.emqx.com/zh/blog/mqtt-sparkplug-bridging-it-and-ot-in-industry-4-0) 和 [OPC UA over MQTT](https://www.emqx.com/zh/blog/opc-ua-over-mqtt-the-future-of-it-and-ot-convergence)。这使得 Neuron 能够适配各种 OT 设备，如 PLC、传感器和执行器等，并与 IT 系统进行连接。
 
 ![Neuron: The Industrial Connectivity Gateway](https://assets.emqx.com/images/b57fde2a3772cf0354962f7ee66403be.png)
 
@@ -41,7 +41,7 @@ EMQX 和 Neuron 的协同效应体现在它们能够从 OT 源获取、转换数
 
 ![Identifying the Data Sources in a Smart Factory](https://assets.emqx.com/images/e87900711e70ea2a3d47ccf0fe36dd3e.png)
 
-下面，我们来看看在[智能工厂](https://www.emqx.com/zh/blog/what-is-a-smart-factory-key-components-4-levels-of-evolution)中如何识别数据源，以及在哪里获取这些有价值的信息。
+下面，我们来看看在智能工厂中如何识别数据源，以及在哪里获取这些有价值的信息。
 
 ### 1. 传感器和物联网设备：数字神经系统
 

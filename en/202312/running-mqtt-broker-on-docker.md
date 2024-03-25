@@ -186,7 +186,7 @@ For those looking to set up MQTT on Docker with clustering and persistence, EMQX
 Read these blog posts to see how to massively scale up MQTT with EMQX:
 
 - [Reaching 100M MQTT connections with EMQX 5.0](https://www.emqx.com/en/blog/reaching-100m-mqtt-connections-with-emqx-5-0)
-- [How EMQX with the Mria + RLOG architecture achieves 100M MQTT connections](https://www.emqx.com/en/blog/how-emqx-5-0-achieves-100-million-mqtt-connectio)
+- [How EMQX with the Mria + RLOG architecture achieves 100M MQTT connections](https://www.emqx.com/en/blog/how-emqx-5-0-achieves-100-million-mqtt-connections)
 
 
 
