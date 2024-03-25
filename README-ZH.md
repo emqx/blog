@@ -429,6 +429,7 @@ Build a reliable, efficient and industry-specific Internet of Vehicles platform 
 
 ## [Industrial IoT | Unified Namespace | Sparkplug](https://www.emqx.com/zh/blog/category/industrial-iot)
 
+- [工业互联数据平台，推动工业互联网标识解析体系的应用](https://www.emqx.com/zh/blog/industrial-connectivity-data-platform-use-case) ([Edit](https://github.com/emqx/blog/blob/main/zh/202403/industrial-connectivity-data-platform-use-case.md))
 - [工业互联数据平台：NeuronEX 与 EMQX ECP 携手推动云边一体](https://www.emqx.com/zh/blog/industrial-connectivity-data-platform) ([Edit](https://github.com/emqx/blog/blob/main/zh/202403/industrial-connectivity-data-platform.md))
 - [获奖名单: EMQ 和 Intel 评选工业物联网领域最佳案例与应用](https://www.emqx.com/zh/blog/industrial-iot-best-cases-and-applications) ([Edit](https://github.com/emqx/blog/blob/main/zh/202402/industrial-iot-best-cases-and-applications.md))
 - [EMQX ECP 2.1.0 发布：优化安装部署、增强集成与告警功能](https://www.emqx.com/zh/blog/emqx-ecp-2-1-0-release-notes) ([Edit](https://github.com/emqx/blog/blob/main/zh/202401/emqx-ecp-2-1-0-release-notes.md))
@@ -751,6 +752,7 @@ Guarantee the availability and reliability of the IoT platform.
 
 ## [应用案例](https://www.emqx.com/zh/blog/category/use-cases)
 
+- [工业互联数据平台，推动工业互联网标识解析体系的应用](https://www.emqx.com/zh/blog/industrial-connectivity-data-platform-use-case) ([Edit](https://github.com/emqx/blog/blob/main/zh/202403/industrial-connectivity-data-platform-use-case.md))
 - [统一 MQTT 消息平台提升互动游戏实时通信](https://www.emqx.com/zh/blog/mqtt-messaging-platform-enhances-real-time-game-communication) ([Edit](https://github.com/emqx/blog/blob/main/zh/202403/mqtt-messaging-platform-enhances-real-time-game-communication.md))
 - [EMQX ECP & NeuronEX 助力中国制造业高质量发展](https://www.emqx.com/zh/blog/emqx-ecp-and-neuronex) ([Edit](https://github.com/emqx/blog/blob/main/zh/202402/emqx-ecp-and-neuronex.md))
 - [新能源车充电桩管理：EMQX 助力云边一体的智能充电运营](https://www.emqx.com/zh/blog/electric-vehicle-charging-stations-management) ([Edit](https://github.com/emqx/blog/blob/main/zh/202402/electric-vehicle-charging-stations-management.md))
