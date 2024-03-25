@@ -119,7 +119,7 @@ In this guide, we will utilize the [free public MQTT broker](https://www.emqx.co
 
 In this post, we will use the MQTT client tool provided by [MQTTX](https://mqttx.app/) that supports browser access: [http://www.emqx.io/online-mqtt-client](http://www.emqx.io/online-mqtt-client). MQTT X also provides a [desktop client](https://mqttx.app/) and a [command line tool](https://mqttx.app/cli).
 
-[MQTTX](https://mqttx.app/) is an elegant cross-platform MQTT 5.0 desktop client that runs on macOS, Linux, and Windows. Its user-friendly chat-style interface enables users to easily create multiple MQTT/MQTTS connections and subscribe/publish MQTT messages.
+[MQTTX](https://mqttx.app/) is an elegant cross-platform [MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5) desktop client that runs on macOS, Linux, and Windows. Its user-friendly chat-style interface enables users to easily create multiple MQTT/MQTTS connections and subscribe/publish MQTT messages.
 
 ![MQTTX](https://assets.emqx.com/images/ada10fb84b685af3cadcae6c95197c4f.gif)
 
