@@ -83,6 +83,7 @@ Explore more with & via EMQ.
 ## [EMQX Open Source | Broker](https://www.emqx.com/ja/blog/category/emqx)
 EMQX is the world's most scalable open-source MQTT broker with a high performance that connects 100M+ IoT devices in 1 cluster, while maintaining 1M message per second throughput and sub-millisecond latency.
 
+- [CoAPプロトコル：主な特徴、使用例、長所と短所](https://www.emqx.com/ja/blog/coap-protocol) ([Edit](https://github.com/emqx/blog/blob/main/ja/202403/coap-protocol.md))
 - [MQTTパフォーマンス・ベンチマーク: EMQX シングルノード メッセージ レイテンシ と リスポンス時間](https://www.emqx.com/ja/blog/mqtt-performance-benchmark-testing-emqx-single-node-message-latency-response-time) ([Edit](https://github.com/emqx/blog/blob/main/ja/202309/mqtt-performance-benchmark-testing-emqx-single-node-message-latency-response-time.md))
 - [MQTTパフォーマンス・ベンチマーク: EMQXシングルノードが2Mメッセージスループットをサポート](https://www.emqx.com/ja/blog/mqtt-performance-benchmark-testing-emqx-single-node-supports-2m-message-throughput) ([Edit](https://github.com/emqx/blog/blob/main/ja/202309/mqtt-performance-benchmark-testing-emqx-single-node-supports-2m-message-throughput.md))
 - [MQTTパフォーマンス・ベンチマーク: EMQXとTimescaleDBの統合](https://www.emqx.com/ja/blog/mqtt-performance-benchmark-series-emqx-timescaledb-integration) ([Edit](https://github.com/emqx/blog/blob/main/ja/202308/mqtt-performance-benchmark-series-emqx-timescaledb-integration.md))
