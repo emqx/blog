@@ -83,20 +83,143 @@ Here are the primary use cases for this architecture:
 - **Energy efficiency and environmental impact:** MQTT + Kafka architecture enables the integration of connected cars with smart grid systems and energy management platforms with Bi-direction data transmission. This use case involves real-time energy consumption monitoring, demand response mechanisms, and electric vehicle charging optimization.
 - **Predictive maintenance:** MQTT + Kafka architecture enables continuous monitoring of vehicle health and performance data. This use case involves high throughput real-time telemetry data collection, anomaly detection, and predictive maintenance algorithms. Car owners can proactively identify potential issues and schedule maintenance tasks.
 
+## A 3-Minute Guide on Building Connected Vehicle Streaming Data Pipelines with MQTT and Kafka
+
+In this section, we will simulate vehicle devices and their dynamic Telematics data, connect them to an [MQTT Broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison), and then send the data to Apache Kafka. We have selected [EMQX](https://www.emqx.com/en/products/emqx) as the MQTT Broker because it comes with a built-in Kafka data integration that simplifies the process.
+
+### Prerequisites
+
+- Git
+- Docker Engine: v20.10+
+- Docker Compose: v2.20+
+
+### How It Works
+
+![MQTT to Kafka Architecture](https://assets.emqx.com/images/414774fb7f5b20256d52eaf70196798a.jpg)
+
+<center>MQTT to Kafka Architecture</center>
+
+ <br>
+
+This is a simple and effective architecture that avoids complex components. It utilizes the following 3 key components:
+
+| Component Name                                           | Version | Description                                                  |
+| :------------------------------------------------------- | :------ | :----------------------------------------------------------- |
+| [MQTTX CLI](https://mqttx.app/cli)                       | 1.9.3+  | A command line tool to generate simulated vehicle and test data. |
+| [EMQX Enterprise](https://www.emqx.com/en/products/emqx) | 5.0.4+  | MQTT broker used for message exchange between vehicles and the Kafka system. |
+| [Kafka](https://kafka.apache.org/)                       | 2.8.0+  | Apache Kafka serves as a distributed streaming platform for ingesting, storing, and processing vehicle data. |
+
+In addition to the basic components, EMQX provides comprehensive observability capabilities. You can use the following components to monitor EMQX metrics and load when the system is running:
+
+| Component Name                                         | Version | Description                                                  |
+| :----------------------------------------------------- | :------ | :----------------------------------------------------------- |
+| [EMQX Exporter](https://github.com/emqx/emqx-exporter) | 0.1     | Prometheus exporter for EMQX                                 |
+| [Prometheus](https://prometheus.io/)                   | v2.44.0 | Open-source systems monitoring and alerting toolkit.         |
+| [Grafana](https://grafana.com/)                        | 9.5.1+  | Visualization platform utilized to display and analyze the collected data. |
+
+Now that you have understood the basic architecture of this project, let's get the vehicle started!
+
+### Clone the Project Locally
+
+Clone the [emqx/mqtt-to-kafka](https://github.com/emqx/mqtt-to-kafka) repository locally, and initialize the submodule to enable the EMQX Exporter (optional):
+
+```shell
+git clone https://github.com/emqx/mqtt-to-kafka
+cd mqtt-to-kafka
+
+# Optional
+git submodule init
+git submodule update
+```
+
+The codebase consists of 3 parts:
+
+- The `emqx` folder contains EMQX-Kafka integration configurations to create rules and data bridges when launching EMQX automatically.
+- The `emqx-exporter`, `prometheus` and `grafana-provisioning` folders include observability configurations for EMQX.
+- The `docker-compose.yml` orchestrates multiple components to launch the project with one click.
+
+### Start MQTTX CLI, EMQX, and Kafka
+
+Please make sure you have installed the [Docker](https://www.docker.com/), and then run Docker Compose in the background to start the demo:
+
+```shell
+docker-compose up -d 
+```
+
+Now, 10 Tesla vehicles simulated by MQTTX CLI will connect to EMQX and report their status to the topic `mqttx/simulate/tesla/{clientid}` at a frequency of once per second.
+
+In fact, EMQX will create a rule to ingest messages from Tesla. You can also modify this rule later to add custom processing using EMQX's [built-in SQL functions](https://docs.emqx.com/en/enterprise/v5.1/data-integration/rule-sql-builtin-functions.html):
+
+```shell
+SELECT
+  payload
+FROM
+  "mqttx/simulate/#"
+```
+
+EMQX also creates a data bridge to produce vehicle data to Kafka with the following key configurations:
+
+- Publish messages to the `my-vehicles` topic in Kafka
+- Use each vehicle's client ID as the message key
+- Use the message publish time as the message timestamp
+
+![Kafka Config](https://assets.emqx.com/images/ad15e9decf2e5be01d712ec0b3aa2090.png)
+
+### Subscribe to Vehicle Data From EMQX
+
+> *This step has no special meaning for the demo, just to check if the MQTTX CLI and EMQX are working.*
+
+Docker Compose has included a subscriber to print all vehicle data. You can view the data with this command:
+
+```shell
+$ docker logs -f mqttx
+[8/4/2023] [8:56:41 AM] › topic: mqttx/simulate/tesla/mqttx_063105a2
+payload: {"car_id":"WLHK53W2GSL511787","display_name":"Roslyn's Tesla","model":"S...
+```
+
+To subscribe and receive the data with any MQTT client:
+
+```shell
+mqttx sub -t mqttx/simulate/tesla/+ 
+```
+
+### Subscribe to Vehicle Data From Kafka
+
+Assuming everything is functioning properly, EMQX is streaming data from the vehicle into the `my-vehicles` topic of Kafka in real-time. You can consume data from Kafka with the following command:
+
+```shell
+docker exec -it kafka \
+  kafka-console-consumer.sh \
+  --topic my-vehicles \
+  --from-beginning \
+  --bootstrap-server localhost:9092
+```
+
+You will receive JSON data similar to this:
+
+```json
+{"vin":"EDF226K7LZTZ51222","speed":39,"odometer":68234,"soc":87,"elevation":4737,"heading":33,"accuracy":24,"power":97,"shift_state":"D","range":64,"est_battery_range":307,"gps_as_of":1681704127537,"location":{"latitude":"83.3494","longitude":"141.9851"},"timestamp":1681704127537} 
+```
+
+The data is inspired by [TeslaMate](https://github.com/adriankumpf/teslamate), a powerful self-hosted Tesla data logger, and you can check the MQTTX CLI [script](https://github.com/emqx/MQTTX/blob/main/scripts-example/IoT-data-scenarios/tesla.js) to see how the data is generated.
+
+### View EMQX Metrics (Optional)
+
+If you have enabled EMQX Exporter in step 1, it will faithfully collect all EMQX metrics including client connections, message rate, rule executions, etc. It provides valuable insights into the system.
+
+To view EMQX metrics in the Grafana dashboard, open `http://localhost:3000` in your browser, log in with username `admin` and password `public`.
+
 ## Conclusion
 
-The MQTT + Kafka architecture is well-suited for use cases that require real-time data collecting, scalability, reliability, and integration capabilities in IoT. It enables a seamless flow of data, efficient communication, and innovative use cases such as applications and services for the connected vehicle ecosystem. Hence, the combination of MQTT and Kafka is an ideal solution for seamless end-to-end integration of IoT architectures, spanning from the IoT device to the cloud and ensuring bi-directional communication.
+By leveraging EMQX as an MQTT broker and utilizing EMQX Data Integration to stream data to Kafka, we have created an end-to-end solution for accumulating and processing streaming data. Next, you can directly integrate applications into Kafka to consume vehicle data and decouple them. You can also leverage Kafka Streams to perform real-time stream processing on automotive data, conduct statistical analysis and anomaly detection. The results can be output to other systems via Kafka Connect.
 
-**Next steps:**
-
-- Discover Best Practices for Streamlining MQTT Data Integration with Kafka [Learn more about EMQX Kafka data integration](https://www.emqx.com/en/solutions/technology/mqtt-to-kafka)
+The MQTT + Kafka architecture is well-suited for use cases that require real-time data collecting, scalability, reliability, and integration capabilities in IoT. It enables a seamless flow of data, efficient communication, and innovative use cases such as applications and services for the connected vehicle ecosystem. 
 
 
 
 <section class="promotion">
     <div>
-        Try EMQX Enterprise for Free
-      <div class="is-size-14 is-text-normal has-text-weight-normal">Connect any device, at any scale, anywhere.</div>
+        Talk to an Expert
     </div>
-    <a href="https://www.emqx.com/en/try?product=enterprise" class="button is-gradient px-5">Get Started →</a>
+    <a href="https://www.emqx.com/en/contact?product=solutions" class="button is-gradient px-5">Contact Us →</a>
 </section>
