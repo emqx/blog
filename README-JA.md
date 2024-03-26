@@ -128,6 +128,8 @@ Build a reliable, efficient and industry-specific Internet of Vehicles platform 
 
 ## [Industrial IoT | Unified Namespace | Sparkplug](https://www.emqx.com/ja/blog/category/industrial-iot)
 
+- [TwinCATデータをMQTTにブリッジング：概要と実践チュートリアル](https://www.emqx.com/ja/blog/bridging-twincat-data-to-mqtt) ([Edit](https://github.com/emqx/blog/blob/main/ja/202403/bridging-twincat-data-to-mqtt.md))
+- [TwinCAT：進化とアーキテクチャ](https://www.emqx.com/ja/blog/twincat-protocol) ([Edit](https://github.com/emqx/blog/blob/main/ja/202403/twincat-protocol.md))
 - [BACnetデータをMQTTにブリッジング：インテリジェントビルの実装を向上させるソリューション](https://www.emqx.com/ja/blog/bridging-bacnet-data-to-mqtt) ([Edit](https://github.com/emqx/blog/blob/main/ja/202403/bridging-bacnet-data-to-mqtt.md))
 - [BACnetプロトコル：基本概念、構造、およびオブジェクトモデルについて](https://www.emqx.com/ja/blog/bacnet-protocol-basic-concepts-structure-obejct-model-explained) ([Edit](https://github.com/emqx/blog/blob/main/ja/202403/bacnet-protocol-basic-concepts-structure-obejct-model-explained.md))
 - [IIoTのためのOPC UAデータをMQTTにブリッジングする：ステップバイステップチュートリアル](https://www.emqx.com/ja/blog/bridging-opc-ua-data-to-mqtt-for-iiot) ([Edit](https://github.com/emqx/blog/blob/main/ja/202403/bridging-opc-ua-data-to-mqtt-for-iiot.md))
