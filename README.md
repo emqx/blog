@@ -154,12 +154,14 @@ Best practice of MQTT in various clients.
 ## [MQTT Integration (Eco & Integration)](https://www.emqx.com/en/blog/category/eco-and-integration)
 Explore more with & via EMQ.
 
+- [MQTT with openHAB: A Step-by-Step Tutorial](https://www.emqx.com/en/blog/set-up-emqx-cloud-mqtt-broker-with-openhab) ([Edit](https://github.com/emqx/blog/blob/main/en/202403/set-up-emqx-cloud-mqtt-broker-with-openhab.md))
 - [MQTT to Kafka: Benefits, Use Case & A Quick Guide](https://www.emqx.com/en/blog/mqtt-and-kafka) ([Edit](https://github.com/emqx/blog/blob/main/en/202403/mqtt-and-kafka.md))
 - [MQTT to ClickHouse Integration: Fueling Real-Time IoT Data Analytics](https://www.emqx.com/en/blog/mqtt-to-clickhouse-integration) ([Edit](https://github.com/emqx/blog/blob/main/en/202403/mqtt-to-clickhouse-integration.md))
 - [MQTT with TimescaleDB: An Efficient Solution for IoT Time-Series Data Management](https://www.emqx.com/en/blog/build-an-iot-time-series-data-application-for-energy-storage-with-mqtt-and-timescale) ([Edit](https://github.com/emqx/blog/blob/main/en/202403/build-an-iot-time-series-data-application-for-energy-storage-with-mqtt-and-timescale.md))
 - [MQTT to MongoDB: A Beginner's Guide for IoT Data Integration](https://www.emqx.com/en/blog/mqtt-and-mongodb-crafting-seamless-synergy-for-iot-data-mangement) ([Edit](https://github.com/emqx/blog/blob/main/en/202403/mqtt-and-mongodb-crafting-seamless-synergy-for-iot-data-mangement.md))
 - [MQTT and Redis: Creating a Real-Time Data Statistics Application for IoT](https://www.emqx.com/en/blog/mqtt-and-redis) ([Edit](https://github.com/emqx/blog/blob/main/en/202402/mqtt-and-redis.md))
-- [MQTT to MySQL: Building a Real-Time Data Monitoring Application for Oil Extraction](https://www.emqx.com/en/blog/mqtt-to-mysql) ([Edit](https://github.com/emqx/blog/blob/main/en/202402/mqtt-to-mysql.md))
+- [MQTT to MySQL: Powering Real-time Monitoring and Smart Decision-Making](https://www.emqx.com/en/blog/mqtt-to-mysql) ([Edit](https://github.com/emqx/blog/blob/main/en/202402/mqtt-to-mysql.md))
+- [MQTT with Zigbee: A Practical Guide](https://www.emqx.com/en/blog/mqtt-with-zigbee-a-practical-guide) ([Edit](https://github.com/emqx/blog/blob/main/en/202401/mqtt-with-zigbee-a-practical-guide.md))
 - [Integrating MQTT Data into InfluxDB for a Time-Series IoT Application](https://www.emqx.com/en/blog/building-an-iot-time-series-data-application-with-mqtt-and-influxdb) ([Edit](https://github.com/emqx/blog/blob/main/en/202401/building-an-iot-time-series-data-application-with-mqtt-and-influxdb.md))
 - [Home Assistant Modbus: 4 Things You Can Build](https://www.emqx.com/en/blog/home-assistant-modbus) ([Edit](https://github.com/emqx/blog/blob/main/en/202310/home-assistant-modbus.md))
 - [OpenTelemetry: The Basics & Benefits for MQTT and IoT Observability](https://www.emqx.com/en/blog/open-telemetry-the-basics-and-benefits-for-mqtt-and-iot-observability) ([Edit](https://github.com/emqx/blog/blob/main/en/202310/open-telemetry-the-basics-and-benefits-for-mqtt-and-iot-observability.md))
@@ -182,7 +184,6 @@ EMQX is the world's most scalable open-source MQTT broker with a high performanc
 
 - [Exploring MQTT-SN: A Comprehensive Guide](https://www.emqx.com/en/blog/connecting-mqtt-sn-devices-using-emqx) ([Edit](https://github.com/emqx/blog/blob/main/en/202403/connecting-mqtt-sn-devices-using-emqx.md))
 - [EMQX Performance Tuning: Linux Conntrack and MQTT Connections](https://www.emqx.com/en/blog/emqx-performance-tuning-linux-conntrack-and-mqtt-connections) ([Edit](https://github.com/emqx/blog/blob/main/en/202401/emqx-performance-tuning-linux-conntrack-and-mqtt-connections.md))
-- [MQTT with Zigbee: A Practical Guide](https://www.emqx.com/en/blog/mqtt-with-zigbee-a-practical-guide) ([Edit](https://github.com/emqx/blog/blob/main/en/202401/mqtt-with-zigbee-a-practical-guide.md))
 - [Running EMQX MQTT Broker on Docker (Bonus: Clustering and Persistence)](https://www.emqx.com/en/blog/running-mqtt-broker-on-docker) ([Edit](https://github.com/emqx/blog/blob/main/en/202312/running-mqtt-broker-on-docker.md))
 - [EMQX Performance Tuning: TCP SYN Queue and Accept Queue](https://www.emqx.com/en/blog/emqx-performance-tuning-tcp-syn-queue-and-accept-queue) ([Edit](https://github.com/emqx/blog/blob/main/en/202312/emqx-performance-tuning-tcp-syn-queue-and-accept-queue.md))
 - [CoAP Protocol: Key Features, Use Cases, and Pros/Cons](https://www.emqx.com/en/blog/coap-protocol) ([Edit](https://github.com/emqx/blog/blob/main/en/202312/coap-protocol.md))
@@ -350,7 +351,6 @@ The easiest way to start MQTT service. Connect your IoT devices to any cloud wit
 - [EMQX Cloud now officially supports deployment on Google Cloud Platform](https://www.emqx.com/en/blog/introducing-emqx-cloud-on-google-cloud-platform) ([Edit](https://github.com/emqx/blog/blob/main/en/202109/introducing-emqx-cloud-on-google-cloud-platform.md))
 - [Introducing EMQX Cloud on Microsoft Azure](https://www.emqx.com/en/blog/introducing-emqx-cloud-on-microsoft-azure) ([Edit](https://github.com/emqx/blog/blob/main/en/202107/introducing-emqx-cloud-on-microsoft-azure.md))
 - [Quick Start of EMQX MQTT Cloud Service](https://www.emqx.com/en/blog/quick-start-of-emqx-mqtt-cloud-service) ([Edit](https://github.com/emqx/blog/blob/main/en/202107/quick-start-of-emqx-mqtt-cloud-service.md))
-- [Set up EMQX Cloud MQTT Broker with openHAB](https://www.emqx.com/en/blog/set-up-emqx-cloud-mqtt-broker-with-openhab) ([Edit](https://github.com/emqx/blog/blob/main/en/202105/set-up-emqx-cloud-mqtt-broker-with-openhab.md))
 - [Integrate EMQX MQTT Cloud with Home Assistant](https://www.emqx.com/en/blog/integrate-emqx-mqtt-cloud-with-home-assistant) ([Edit](https://github.com/emqx/blog/blob/main/en/202105/integrate-emqx-mqtt-cloud-with-home-assistant.md))
 - [Upload Sensor Data to MQTT Cloud Service via NodeMCU (ESP8266)](https://www.emqx.com/en/blog/upload-sensor-data-to-mqtt-cloud-service-via-nodemcu-esp8266) ([Edit](https://github.com/emqx/blog/blob/main/en/201912/upload-sensor-data-to-mqtt-cloud-service-via-nodemcu-esp8266.md))
 
@@ -360,7 +360,6 @@ The world's most scalable and reliable MQTT messaging platform to connect, move 
 
 - [MQTT to MongoDB: A Beginner's Guide for IoT Data Integration](https://www.emqx.com/en/blog/mqtt-and-mongodb-crafting-seamless-synergy-for-iot-data-mangement) ([Edit](https://github.com/emqx/blog/blob/main/en/202403/mqtt-and-mongodb-crafting-seamless-synergy-for-iot-data-mangement.md))
 - [MQTT and Redis: Creating a Real-Time Data Statistics Application for IoT](https://www.emqx.com/en/blog/mqtt-and-redis) ([Edit](https://github.com/emqx/blog/blob/main/en/202402/mqtt-and-redis.md))
-- [MQTT to MySQL: Building a Real-Time Data Monitoring Application for Oil Extraction](https://www.emqx.com/en/blog/mqtt-to-mysql) ([Edit](https://github.com/emqx/blog/blob/main/en/202402/mqtt-to-mysql.md))
 - [EMQX Enterprise 5.5 Released: New Elasticsearch Integration and Enhanced Observability](https://www.emqx.com/en/blog/emqx-enterprise-5-5-release-notes) ([Edit](https://github.com/emqx/blog/blob/main/en/202402/emqx-enterprise-5-5-release-notes.md))
 - [MQTT Platform: Essential Features & Use Cases](https://www.emqx.com/en/blog/mqtt-platform-essential-features-and-use-cases) ([Edit](https://github.com/emqx/blog/blob/main/en/202401/mqtt-platform-essential-features-and-use-cases.md))
 - [EMQX Performance Tuning: Linux Conntrack and MQTT Connections](https://www.emqx.com/en/blog/emqx-performance-tuning-linux-conntrack-and-mqtt-connections) ([Edit](https://github.com/emqx/blog/blob/main/en/202401/emqx-performance-tuning-linux-conntrack-and-mqtt-connections.md))

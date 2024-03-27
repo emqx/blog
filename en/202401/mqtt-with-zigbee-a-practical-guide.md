@@ -116,6 +116,12 @@ Zigbee has a wide range of applications in fields such as smart home and industr
 These features make EMQX an ideal choice for the Zigbee2MQTT project. Visit our [official website](https://www.emqx.com/en) to learn more.
 
 
+**Related Resources**
+
+- [Home Assistant and MQTT: 4 Things You Could Build](https://www.emqx.com/en/blog/home-assistant-and-mqtt-4-things-you-could-build)
+- [MQTT with openHAB: A Step-by-Step Tutorial](https://www.emqx.com/en/blog/set-up-emqx-cloud-mqtt-broker-with-openhab)
+- [A Developer's Journey with ESP32 and MQTT Broker](https://www.emqx.com/en/blog/a-developer-s-journey-with-esp32-and-mqtt-broker)
+
 
 <section class="promotion">
     <div>
