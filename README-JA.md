@@ -159,6 +159,8 @@ MQTTX is a Fully Open-source MQTT 5.0 cross-platform Desktop Client, makes it ea
 ## [Neuron - IIoT Connectivity Server](https://www.emqx.com/ja/blog/category/neuron)
 IoT edge industrial protocol gateway software, which supports one-stop access to dozens of industrial protocols and converts them into MQTT protocol to access the cloud industrial IoT platform. It just requires ultra-low resource consumption, and supports three major architectures of X86, ARM, and MIPS.
 
+- [KNXデータをMQTTにブリッジする：イントロダクションと実践チュートリアル](https://www.emqx.com/ja/blog/bridging-knx-data-to-mqtt-introduction-and-hands-on-tutorial) ([Edit](https://github.com/emqx/blog/blob/main/ja/202403/bridging-knx-data-to-mqtt-introduction-and-hands-on-tutorial.md))
+- [KNXプロトコル：基礎とIoTの適応シナリオ](https://www.emqx.com/ja/blog/knx-protocol) ([Edit](https://github.com/emqx/blog/blob/main/ja/202403/knx-protocol.md))
 - [IIoTのためのOPC UAデータをMQTTにブリッジングする：ステップバイステップチュートリアル](https://www.emqx.com/ja/blog/bridging-opc-ua-data-to-mqtt-for-iiot) ([Edit](https://github.com/emqx/blog/blob/main/ja/202403/bridging-opc-ua-data-to-mqtt-for-iiot.md))
 - [OPC UA over MQTT：ITとOT融合の未来](https://www.emqx.com/ja/blog/opc-ua-over-mqtt-the-future-of-it-and-ot-converge) ([Edit](https://github.com/emqx/blog/blob/main/ja/202403/opc-ua-over-mqtt-the-future-of-it-and-ot-converge.md))
 - [デバイスベースのテンプレートによるIIoT一元管理の効率化](https://www.emqx.com/ja/blog/neuron-v-2-5-1-release-notes) ([Edit](https://github.com/emqx/blog/blob/main/ja/202308/neuron-v-2-5-1-release-notes.md))
