@@ -154,6 +154,7 @@ Best practice of MQTT in various clients.
 ## [MQTT Integration (Eco & Integration)](https://www.emqx.com/en/blog/category/eco-and-integration)
 Explore more with & via EMQ.
 
+- [MQTT to Webhook: Extending IoT Applications](https://www.emqx.com/en/blog/mqtt-to-webhook) ([Edit](https://github.com/emqx/blog/blob/main/en/202403/mqtt-to-webhook.md))
 - [MQTT with openHAB: A Step-by-Step Tutorial](https://www.emqx.com/en/blog/set-up-emqx-cloud-mqtt-broker-with-openhab) ([Edit](https://github.com/emqx/blog/blob/main/en/202403/set-up-emqx-cloud-mqtt-broker-with-openhab.md))
 - [MQTT to Kafka: Benefits, Use Case & A Quick Guide](https://www.emqx.com/en/blog/mqtt-and-kafka) ([Edit](https://github.com/emqx/blog/blob/main/en/202403/mqtt-and-kafka.md))
 - [MQTT to ClickHouse Integration: Fueling Real-Time IoT Data Analytics](https://www.emqx.com/en/blog/mqtt-to-clickhouse-integration) ([Edit](https://github.com/emqx/blog/blob/main/en/202403/mqtt-to-clickhouse-integration.md))
