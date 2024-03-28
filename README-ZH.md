@@ -546,6 +546,7 @@ MQTTX is a Fully Open-source MQTT 5.0 cross-platform Desktop Client, makes it ea
 ## [Neuron - IIoT Connectivity Server](https://www.emqx.com/zh/blog/category/neuron)
 IoT edge industrial protocol gateway software, which supports one-stop access to dozens of industrial protocols and converts them into MQTT protocol to access the cloud industrial IoT platform. It just requires ultra-low resource consumption, and supports three major architectures of X86, ARM, and MIPS.
 
+- [NeuronEX 3.2.0 发布：增强数据采集、分析计算和管理功能](https://www.emqx.com/zh/blog/neuronex-v-3-2-0-release-notes) ([Edit](https://github.com/emqx/blog/blob/main/zh/202403/neuronex-v-3-2-0-release-notes.md))
 - [NeuronEX 3.1.0 发布：新增南向驱动、增强数据接入与数据处理功能](https://www.emqx.com/zh/blog/neuron-v-3-1-0-release-notes) ([Edit](https://github.com/emqx/blog/blob/main/zh/202401/neuron-v-3-1-0-release-notes.md))
 - [利用 EMQX 和 Neuron 为智能制造构建坚实数据基础](https://www.emqx.com/zh/blog/consolidating-the-foundation-of-smart-manufacturing-with-emqx-and-neuron) ([Edit](https://github.com/emqx/blog/blob/main/zh/202312/consolidating-the-foundation-of-smart-manufacturing-with-emqx-and-neuron.md))
 - [利用 EMQX 和 Neuron 融合 OT 和 IT 数据源](https://www.emqx.com/zh/blog/first-step-to-a-smart-factory) ([Edit](https://github.com/emqx/blog/blob/main/zh/202312/first-step-to-a-smart-factory.md))
