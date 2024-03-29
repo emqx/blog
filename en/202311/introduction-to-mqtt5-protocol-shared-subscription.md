@@ -1,5 +1,10 @@
 The Shared Subscriptions feature is introduced in [MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5) and widely used in production. Although this is a new feature of MQTT 5.0, MQTT 3.1.1 clients can use it as well. In this article, we will focus on shared subscriptions and dive into their mechanisms and use cases.
 
+>New to MQTT 5.0? Please check out our
+>
+>[MQTT 5.0: 7 New Features and a Migration Checklist](https://www.emqx.com/en/blog/introduction-to-mqtt-5)
+
+
 ## What are Shared Subscriptions
 
 In normal subscriptions, every time we publish a message, all matching subscribers will receive a copy. When a subscriber's consumption speed can't keep up with the message production speed, we cannot divert some of the messages to other subscribers to share the pressure. The performance issue of a single subscriber client could easily impact the entire messaging system.

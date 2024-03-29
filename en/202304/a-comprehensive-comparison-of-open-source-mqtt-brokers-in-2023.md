@@ -215,7 +215,7 @@ Below is a brief analysis of the four MQTT brokers:
 
 ## MQTT Protocol and Connectivity
 
-All the presented brokers fully implement MQTT versions 3.1.1 and 5.0 and support [MQTT over WebSocket](https://www.emqx.com/en/blog/connect-to-mqtt-broker-with-websocket) and SSL/TLS encryption. Additionally, EMQX supports MQTT-SN, CoAP, and LwM2M protocol gateways. NanoMQ supports brokerless mode and can work with DDS, ZeroMQ, and Nanomsg.
+All the presented brokers fully implement MQTT versions 3.1.1 and 5.0 and support [MQTT over WebSocket](https://www.emqx.com/en/blog/connect-to-mqtt-broker-with-websocket) and SSL/TLS encryption. Additionally, EMQX supports MQTT-SN, [CoAP](https://www.emqx.com/en/blog/coap-protocol), and LwM2M protocol gateways. NanoMQ supports brokerless mode and can work with DDS, ZeroMQ, and Nanomsg.
 
 EMQX and NanoMQ have committed to advancing the MQTT standard. They are pioneers in implementing MQTT over QUIC, the next generation of MQTT protocol that aims to optimize further IoT communication.
 

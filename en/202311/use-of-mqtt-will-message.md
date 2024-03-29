@@ -5,6 +5,11 @@ This article will dive into the MQTT Will Message, including what it is and how 
 1. [Introduction to Clean Start and Session Expiry Interval](https://www.emqx.com/en/blog/mqtt5-new-feature-clean-start-and-session-expiry-interval)
 2. [The Beginner's Guide to MQTT Retained Messages](https://www.emqx.com/en/blog/mqtt5-features-retain-message)
 
+>New to MQTT 5.0? Please check out our
+>
+>[MQTT 5.0: 7 New Features and a Migration Checklist](https://www.emqx.com/en/blog/introduction-to-mqtt-5)
+
+
 ## What is MQTT Will Message?
 
 In the real world, a person can draw up a will, stating how his assets should be distributed and what actions should be taken after death. When he passes away, the executor of the will makes the will public and carries out the instructions in the will.

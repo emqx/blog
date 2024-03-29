@@ -2,6 +2,10 @@ In [Introduction to MQTT Publish-subscribe Pattern](https://www.emqx.com/en/blog
 
 In this article, we will focus on exploring the available subscription options in [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) and their usage.
 
+>New to MQTT protocol? Please check out our
+>
+>[What Is the MQTT Protocol: A Beginner's Guide](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt)
+
 ## Subscription Options
 
 A subscription in MQTT consists of a topic filter and corresponding subscription options. So, we can set different subscription options for each subscription.

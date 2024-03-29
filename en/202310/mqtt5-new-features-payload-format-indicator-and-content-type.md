@@ -1,5 +1,9 @@
 In this article, we will focus on the Payload Format Indicator and Content Type properties of [MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5), exploring how they make the parsing of messages more transparent and efficient.
 
+>New to MQTT 5.0? Please check out our
+>
+>[MQTT 5.0: 7 New Features and a Migration Checklist](https://www.emqx.com/en/blog/introduction-to-mqtt-5)
+
 ## What is Payload Format Indicator?
 
 The Payload Format Indicator is a new property introduced in MQTT 5.0 to indicate the format of the payload in [MQTT packets](https://www.emqx.com/en/blog/introduction-to-mqtt-control-packets). However, the format of the payload in CONNECT, SUBSCRIBE, and UNSUBSCRIBE packets is fixed, so in practice, only PUBLISH and CONNECT packets need to declare the payload format.

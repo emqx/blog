@@ -1,5 +1,10 @@
 In this article, we will introduce the session mechanism of [MQTT protocol](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt), as well as **Clean Start** and **Session Expiry Interval**, two connection parameters used to manage the session lifecycle.
 
+>New to MQTT 5.0? Please check out our
+>
+>[MQTT 5.0: 7 New Features and a Migration Checklist](https://www.emqx.com/en/blog/introduction-to-mqtt-5)
+
+
 ## Why does MQTT support the session mechanism?
 
 In IoT scenarios, devices may frequently disconnect due to network or power issues. If the client and server always establish connections in a new context, it will bring the following problems:

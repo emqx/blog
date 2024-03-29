@@ -1,5 +1,10 @@
 This article will delve into how to implement the **Request / Response** pattern under the asynchronous message delivery framework of [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt), with the new features of [MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5).
 
+>*New to MQTT 5.0? Please check out our*
+>
+>[MQTT 5.0: 7 New Features and a Migration Checklist](https://www.emqx.com/en/blog/introduction-to-mqtt-5)
+
+
 ## Request / Response Before MQTT 5.0
 
 The publisher-subscriber mechanism of MQTT completely decouples the sender and receiver of messages, allowing messages to be delivered asynchronously. However, this also brings a problem: even with QoS 1 and 2 messages, the publisher can only ensure that the message reaches the server, but cannot know whether the subscriber has ultimately received the message. When executing some requests or commands, the publisher may want to know the execution result of the other end.
