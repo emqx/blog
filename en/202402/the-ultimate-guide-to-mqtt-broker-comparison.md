@@ -215,6 +215,10 @@ The fully managed cloud service is the easiest way to start an MQTT service. Wit
 
   Combining the power of MQTT with TimescaleDB in IoT environments unleashes a formidable synergy that revolutionizes data handling and analytics.
 
+- [**MQTT to MySQL: Powering Real-time Monitoring and Smart Decision-Making**](https://www.emqx.com/en/blog/mqtt-to-mysql)
+
+  Integrate MQTT and MySQL to construct a comprehensive real time data monitoring application.
+
 - [**MQTT and Redis: Creating a Real-Time Data Statistics Application for IoT**](https://www.emqx.com/en/blog/mqtt-and-redis)
 
   In this blog, we will show you how to use the EMQX MQTT broker to collect data from diverse sensors and device events. We will then integrate this data with the Redis database to achieve real-time statistics and analysis.
@@ -222,6 +226,10 @@ The fully managed cloud service is the easiest way to start an MQTT service. Wit
 - [**MQTT to ClickHouse Integration: Fueling Real-Time IoT Data Analytics**](https://www.emqx.com/en/blog/mqtt-to-clickhouse-integration)
 
   In this blog post, we will explore how MQTT integration with ClickHouse can unleash the power of data analysis and drive enhanced performance across these diverse industries.
+
+- [**MQTT to Webhook: Extending IoT Applications**](https://www.emqx.com/en/blog/mqtt-to-webhook)
+
+  In this blog, we'll delve into the process of harnessing MQTT to gather various types of device data and seamlessly integrate it with Webhook.
 
 - **[Monitoring MQTT broker with Prometheus and Grafana](https://www.emqx.com/en/blog/emqx-prometheus-grafana)**
 
