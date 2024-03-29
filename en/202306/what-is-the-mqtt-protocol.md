@@ -52,7 +52,7 @@ XMPP and MQTT both use a centralized server (broker), and both support the publi
 
 ### MQTT vs. CoAP
 
-Constrained Application Protocol (CoAP) is another protocol designed for IoT applications. CoAP, like MQTT, is designed for constrained devices and networks, but they differ in several ways.
+Constrained Application Protocol (CoAP) is another protocol designed for IoT applications. [CoAP](https://www.emqx.com/en/blog/coap-protocol), like MQTT, is designed for constrained devices and networks, but they differ in several ways.
 
 Firstly, MQTT uses a publish-subscribe model, while CoAP uses a client-server model. This makes MQTT more suited to applications where data needs to be distributed to multiple clients, while CoAP is more suitable for one-to-one communication. Secondly, MQTT requires a persistent TCP connection, while CoAP uses UDP, which is more lightweight and suitable for constrained devices.
 
@@ -62,6 +62,8 @@ Firstly, MQTT uses a publish-subscribe model, while CoAP uses a client-server mo
 - CoAP is primarily designed for one-to-one communications, whereas MQTT's publish-subscribe model is ideal for one-to-many or many-to-many situations.
 - CoAP includes built-in discovery of services and resources while MQTT relies on a predefined topic namespace.
 - CoAP supports multicast, proxying and caching, features which are not available in MQTT.
+
+> Learn more: [CoAP Protocol: Key Features, Use Cases, and Pros/Cons](https://www.emqx.com/en/blog/coap-protocol)
 
 ### MQTT vs. AMQP
 
@@ -76,6 +78,8 @@ AMQP provides a lot of features out of the box, like message orientation, queuin
 - MQTT is a more lightweight protocol and has less features compared to AMQP, but this means it is simpler to deploy and provides higher performance for many IoT applications.
 - AMQP has peer-to-peer capability, while MQTT is strictly a broker-centric publish-subscribe protocol.
 - MQTT does not have built-in message acknowledgement and requires an explicit PUBACK, whereas AMQP has an inbuilt message acknowledgement feature.
+
+>Learn more: [MQTT vs AMQP for IoT Communications: Head to Head](https://www.emqx.com/en/blog/mqtt-vs-amqp-for-iot-communications)
 
 ## Unique Capabilities of MQTT for IoT
 

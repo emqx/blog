@@ -103,7 +103,7 @@ Mosiquitto implements the MQTT protocol versions 3.1/3.1.1/5.0, supporting the p
 
 EMQX fully supports MQTT 3.1/3.1.1/5.0 and [MQTT over Websocket](https://www.emqx.com/en/blog/connect-to-mqtt-broker-with-websocket) protocols. EMQX 5.0 also introduces groundbreaking support for [MQTT Over QUIC](https://www.emqx.com/en/blog/mqtt-over-quic). With multiplexing and faster connection establishment and migration, it has the potential to become the next generation of the MQTT standard.
 
-In addition, EMQX can be extended to support multiple protocol gateways, such as MQTT-SN, CoAP, LwM2M, and STOMP.
+In addition, EMQX can be extended to support multiple protocol gateways, such as MQTT-SN, [CoAP](https://www.emqx.com/en/blog/coap-protocol), LwM2M, and STOMP.
 
 |                              | **EMQX**                                                     | **Mosquitto** | **Notes and Links**                                          |
 | :--------------------------- | :----------------------------------------------------------- | :------------ | :----------------------------------------------------------- |

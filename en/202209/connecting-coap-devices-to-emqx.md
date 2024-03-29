@@ -1,8 +1,8 @@
-[CoAP](https://www.emqx.com/en/blog/iot-protocols-mqtt-coap-lwm2m) is an IoT protocol that supports communication between low-consumption, low-power devices, which often run on constrained networks. For these reasons, CoAP is designed to be very concise and uses the UDP protocol for data transmission, allowing it to be well-adapted to constrained network environments. CoAP operates on abstracted resources in an M2M network, similar to HTTP operations, which enables synchronous and asynchronous information exchange between constrained devices in a very simple and efficient way.
+[CoAP]((https://www.emqx.com/en/blog/coap-protocol) is an IoT protocol that supports communication between low-consumption, low-power devices, which often run on constrained networks. For these reasons, CoAP is designed to be very concise and uses the UDP protocol for data transmission, allowing it to be well-adapted to constrained network environments. CoAP operates on abstracted resources in an M2M network, similar to HTTP operations, which enables synchronous and asynchronous information exchange between constrained devices in a very simple and efficient way.
 
 CoAP is designed for restricted hardware and environments, and works well in restricted networks, but does not work well when the restricted network needs to communicate with external networks. In addition, CoAP lacks support for resource processing centers because it was designed with the M2M network model in mind (the CoAP-based LwM2M protocol introduces concepts such as resource registration and resource services).
 
-This problem can be solved using the [EMQX](https://www.emqx.com/en/products/emqx) message broker. This article describes how to use EMQX to access the [CoAP protocol](https://www.emqx.com/en/blog/coap-protocol) and enable the communication of CoAP devices with external networks.
+This problem can be solved using the [EMQX](https://www.emqx.com/en/products/emqx) message broker. This article describes how to use EMQX to access the CoAP protocol and enable the communication of CoAP devices with external networks.
 
 ## CoAP protocol access methods in EMQX
 

@@ -242,7 +242,6 @@ EMQX is the world's most scalable open-source MQTT broker with a high performanc
 - [Seeing a light at the end of the EMQX v5.0 tunnel - EMQX Newsletter 202106](https://www.emqx.com/en/blog/emqx-newsletter-202106) ([Edit](https://github.com/emqx/blog/blob/main/en/202107/emqx-newsletter-202106.md))
 - [An exciting start of the cloud-native journey - EMQX Newsletter 202105](https://www.emqx.com/en/blog/emqx-newsletter-202105) ([Edit](https://github.com/emqx/blog/blob/main/en/202106/emqx-newsletter-202105.md))
 - [EMQX Newsletter 202104](https://www.emqx.com/en/blog/emqx-project-newsletter-202104) ([Edit](https://github.com/emqx/blog/blob/main/en/202105/emqx-project-newsletter-202104.md))
-- [A「date」between MQTT and CoAP in the EMQX world](https://www.emqx.com/en/blog/url-mqtt-and-coap) ([Edit](https://github.com/emqx/blog/blob/main/en/202104/url-mqtt-and-coap.md))
 - [EMQX Newsletter 202103](https://www.emqx.com/en/blog/emqx-project-newsletter-202103) ([Edit](https://github.com/emqx/blog/blob/main/en/202104/emqx-project-newsletter-202103.md))
 - [The EMQX open source project officially adopts the RFC](https://www.emqx.com/en/blog/emqx-rfc) ([Edit](https://github.com/emqx/blog/blob/main/en/202103/emqx-rfc.md))
 - [We’re gearing for community - EMQX project newsletter 202102](https://www.emqx.com/en/blog/emqx-project-newsletter-202102) ([Edit](https://github.com/emqx/blog/blob/main/en/202103/emqx-project-newsletter-202102.md))
