@@ -125,7 +125,7 @@ Modbusプロトコルは多くの利点を持っていますが、一方でい�
 
 [EMQX](https://www.emqx.com/ja/products/emqx)は業界をリードする MQTT ブローカーであり、IIoT 通信に効率的なメッセージングを提供します。Neuron と EMQX は、IIoT インフラストラクチャをサポートするための強力な組み合わせを形成します。Neuron はエッジ産業プロトコル ゲートウェイとして機能し、OT デバイスとの接続を促進し、安全なデータ交換を可能にし、EMQX は高速で信頼性の高いメッセージングを提供します。これらを組み合わせることで、シームレスな統合、信頼性の高いデータ通信が保証され、IIoT 環境での高度な分析と制御が可能になります。
 
-Modbus 環境の EMQX と Neuron の詳細については、[「IIoT 向け Modbus データを MQTT にブリッジする: ステップバイステップのチュートリアル」](https://www.emqx.com/en/blog/bridging-modbus-data-to-mqtt-for-iiot)を参照してください。
+Modbus 環境の EMQX と Neuron の詳細については、[「IIoT 向け Modbus データを MQTT にブリッジする: ステップバイステップのチュートリアル」](https://www.emqx.com/ja/blog/bridging-modbus-data-to-mqtt-for-iiot)を参照してください。
 
 
 

@@ -1,46 +1,32 @@
-## Introduction
+## Introduction to MQTT Sparkplug
 
 [Sparkplug](https://www.emqx.com/en/blog/sparkplug-3-0-advancements-and-formalization-in-mqtt-for-iiot) is an Industrial IoT protocol that provides a standardized way to communicate with industrial devices and applications. An efficient, comprehensive Sparkplug solution can facilitate communication between devices and applications and empower the decision-making of [IIoT](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges) adopters through insights from data.
 
-This blog will give a practical example of implementing an [MQTT Sparkplug](https://www.emqx.com/en/blog/mqtt-sparkplug-bridging-it-and-ot-in-industry-4-0) solution using EMQX and Neuron.
+MQTT Sparkplug is a messaging protocol built on top of [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt), a widely used messaging protocol for IoT. It already has all advantages of MQTT protocol. MQTT Sparkplug is designed specifically for the IIoT and includes additional features that make it suitable for industrial applications. It is an open-source protocol that is widely adopted in the industry
 
-## Essential Components: EMQX and Neuron
+This blog will give a practical example of implementing an MQTT Sparkplug solution.
 
-[EMQX](https://www.emqx.io/) is a popular [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) that supports the Sparkplug protocol, while Neuron is an [industrial IoT platform](https://www.emqx.com/en/blog/iiot-platform-key-components-and-5-notable-solutions) that can be used to collect data from industrial devices and generate Sparkplug messages for applications.
+## Essential Components of MQTT Sparkplug Solution
+
+To implement an MQTT Sparkplug solution, we need two components: an MQTT Broker and an edge node.
+
+An [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) is used as the central broker for handling the communication between devices and applications in an IIoT environment. The MQTT broker is responsible for receiving messages from devices, forwarding them to the appropriate subscribers, and storing messages for later retrieval if necessary.
+
+An edge node is a device or gateway that acts as an intermediary between devices and the [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison). It can handle local data processing and aggregation, as well as buffering and forwarding data to the MQTT broker. Edge nodes are typically used in IIoT environments where numerous devices generate large amounts of data and where network bandwidth is limited.
+
+In the context of MQTT Sparkplug, edge nodes are responsible for implementing the Sparkplug specification, which includes handling the registration of devices, encoding and decoding data using the Sparkplug payload format, and organizing data using the Sparkplug topic namespace format. The edge node communicates with the MQTT broker using the MQTT protocol, and it may also run additional software to perform local analytics or processing on the data.
+
+In this blog, we will demonstrate how to get started with MQTT Sparkplug using EMQX and Neuron.
+
+[EMQX](https://www.emqx.io/) is a popular MQTT broker that supports the Sparkplug protocol, while Neuron is an [industrial IoT platform](https://www.emqx.com/en/blog/iiot-platform-key-components-and-5-notable-solutions) that can be used to collect data from industrial devices and generate Sparkplug messages for applications.
 
 [Neuron](https://neugates.io/) can collect the data from the devices and publish Sparkplug messages to the EMQX broker based on the data by reporting changes. EMQX will forward the messages to the application that subscribes to the relevant Sparkplug topic. However, EMQX is able to decode the Sparkplug messages through the rules engine. The messages are then used for data platforms, persistent storage for historical, and so on.
 
-> Read our post to learn more about the architecture of Sparkplug solution: [MQTT Sparkplug Solution for Industrial IoT Using EMQX & Neuron](https://www.emqx.com/en/blog/mqtt-sparkplug-solution-for-industrial-iot-using-emqx-and-neuron) 
+## Install and Configure an MQTT Broker
 
-![MQTT Sparkplug solution](https://assets.emqx.com/images/eca65d9a9ab24cb2bc02ce929162d1b5.png)
+### Install EMQX
 
-In this blog, we will demonstrate how to get started with MQTT Sparkplug using EMQX and Neuron following these steps:
-
-1. Install EMQX
-2. Configure EMQX
-3. Install Neuron
-4. Configure devices in Neuron
-5. Connect Neuron to EMQX
-6. Check the result in MQTT X
-
-Let’s start!
-
-## Install EMQX
-
-Download and install the EMQX MQTT broker on your server or machine. EMQX provides a community edition that can be downloaded for free from their website. Visit the website [http://www.emqx.io/](http://www.emqx.io/) and follow the documentation.
-
-<section class="promotion">
-    <div>
-        Try EMQX Enterprise for Free
-      <div class="is-size-14 is-text-normal has-text-weight-normal">Connect any device, at any scale, anywhere.</div>
-    </div>
-    <a href="https://www.emqx.com/en/try?product=enterprise" class="button is-gradient px-5">Get Started →</a>
-</section>
-
-
-## Configure EMQX
-
-Once EMQX is installed, you need to configure it to support the Sparkplug protocol.
+Download and install the EMQX MQTT broker on your server or machine. EMQX provides a community edition that can be downloaded for free from their website. Visit the website [http://www.emqx.io/](https://www.emqx.io/docs/en/latest/deploy/install.html) and follow the documentation.
 
 ### Create Schema Registry in EMQX
 
@@ -80,11 +66,11 @@ This action sends the decoded "Payload" to the SparkPlugB/test topic in JSON for
 
 ![Edit action](https://assets.emqx.com/images/a11c438376914cc10bda248d9dbace96.png)
 
-## Install Neuron
+## Install and Configure an Edge Node
 
-Neuron is an industrial IoT platform that can be used to collect, store, and analyze data from industrial devices. You can download and install Neuron from their website. Visit the website [https://www.neugates.io/](https://www.neugates.io/)  and follow the documentation.
+Neuron is an industrial IoT platform that can be used to collect, store, and analyze data from industrial devices. You can download and install Neuron from their website. Visit the website [https://www.neugates.io/](https://neugates.io/docs/en/latest/installation/installation.html)  and follow the documentation.
 
-## Configure Devices in Neuron
+### Configure Devices in Neuron
 
 Sparkplug devices are configured with a set of data points that define their capabilities and properties. You can configure Sparkplug devices using the Neuron platform by defining the data points and assigning them to specific devices.
 
@@ -106,7 +92,7 @@ Add Tags to the Group and set up an address for each Tag.
 
 ![Add tags](https://assets.emqx.com/images/fb215e69ffcbe4e8ec6d52ac23351935.png)
 
-## Connect Neuron to EMQX
+### Connect Neuron to EMQX for MQTT Sparkplug
 
 Once Neuron is installed, you need to connect it to the EMQX broker. You can do this by configuring the MQTT connection settings in Neuron to point to the EMQX broker.
 
