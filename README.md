@@ -262,6 +262,8 @@ EMQX is the world's most scalable open-source MQTT broker with a high performanc
 ## [EMQX Cloud](https://www.emqx.com/en/blog/category/cloud)
 The easiest way to start MQTT service. Connect your IoT devices to any cloud without the burden of maintaining infrastructure.
 
+- [Your Next Move: A Strategy for Upgrading from EMQX Standard](https://www.emqx.com/en/blog/your-next-move-a-strategy-for-upgrading-from-emqx-standard) ([Edit](https://github.com/emqx/blog/blob/main/en/202404/your-next-move-a-strategy-for-upgrading-from-emqx-standard.md))
+- [Strategic Update: Refocusing EMQX Platform Service Offerings](https://www.emqx.com/en/blog/strategic-update-refocusing-emqx-platform-service-offerings) ([Edit](https://github.com/emqx/blog/blob/main/en/202404/strategic-update-refocusing-emqx-platform-service-offerings.md))
 - [Smart Spending: How to Avoid Unexpected Costs with EMQX Serverless](https://www.emqx.com/en/blog/smart-spending-how-to-avoid-unexpected-costs-with-emqx-serverless) ([Edit](https://github.com/emqx/blog/blob/main/en/202403/smart-spending-how-to-avoid-unexpected-costs-with-emqx-serverless.md))
 - [EMQX Expands Global Reach with Cloud Serverless Service Launch in EMEA Region](https://www.emqx.com/en/blog/emqx-expands-global-reach-with-cloud-serverless-service-launch-in-emea-region) ([Edit](https://github.com/emqx/blog/blob/main/en/202402/emqx-expands-global-reach-with-cloud-serverless-service-launch-in-emea-region.md))
 - [MQTT Platform: Essential Features & Use Cases](https://www.emqx.com/en/blog/mqtt-platform-essential-features-and-use-cases) ([Edit](https://github.com/emqx/blog/blob/main/en/202401/mqtt-platform-essential-features-and-use-cases.md))
@@ -444,6 +446,7 @@ Build a reliable, efficient and industry-specific Internet of Vehicles platform 
 
 ## [Industrial IoT | Unified Namespace | Sparkplug](https://www.emqx.com/en/blog/category/industrial-iot)
 
+- [MQTT Sparkplug in Action: A Step-by-Step Tutorial](https://www.emqx.com/en/blog/mqtt-sparkplug-in-action-a-step-by-step-tutorial) ([Edit](https://github.com/emqx/blog/blob/main/en/202402/mqtt-sparkplug-in-action-a-step-by-step-tutorial.md))
 - [MQTT Sparkplug: Bridging IT and OT for IIoT in Industry 4.0](https://www.emqx.com/en/blog/mqtt-sparkplug-bridging-it-and-ot-in-industry-4-0) ([Edit](https://github.com/emqx/blog/blob/main/en/202402/mqtt-sparkplug-bridging-it-and-ot-in-industry-4-0.md))
 - [EMQX Cloud and IIoT: Industrial Data Ingestion and Insight from Edge to ClickHouse](https://www.emqx.com/en/blog/industrial-data-ingestion-and-insight-from-edge-to-clickHouse) ([Edit](https://github.com/emqx/blog/blob/main/en/202312/industrial-data-ingestion-and-insight-from-edge-to-clickHouse.md))
 - [Data Storage Techniques and Strategies for Smart Manufacturing](https://www.emqx.com/en/blog/data-storage-techniques-and-strategies-for-smart-manufacturing) ([Edit](https://github.com/emqx/blog/blob/main/en/202311/data-storage-techniques-and-strategies-for-smart-manufacturing.md))
@@ -484,7 +487,6 @@ Build a reliable, efficient and industry-specific Internet of Vehicles platform 
 - [IIoT Explained: Examples, Technologies, Benefits and Challenges](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges) ([Edit](https://github.com/emqx/blog/blob/main/en/202308/iiot-explained-examples-technologies-benefits-and-challenges.md))
 - [The Smart Manufacturing Revolution: Examples, Tech & Tips](https://www.emqx.com/en/blog/the-smart-manufacturing-revolution) ([Edit](https://github.com/emqx/blog/blob/main/en/202307/the-smart-manufacturing-revolution.md))
 - [Bridging TwinCAT Data to MQTT: Introduction and Hands-on Tutorial](https://www.emqx.com/en/blog/bridging-twincat-data-to-mqtt) ([Edit](https://github.com/emqx/blog/blob/main/en/202307/bridging-twincat-data-to-mqtt.md))
-- [MQTT Sparkplug in Action: A Step-by-Step Tutorial](https://www.emqx.com/en/blog/mqtt-sparkplug-in-action-a-step-by-step-tutorial) ([Edit](https://github.com/emqx/blog/blob/main/en/202307/mqtt-sparkplug-in-action-a-step-by-step-tutorial.md))
 - [Unified Namespace (UNS): Next-Generation Data Fabric for IIoT](https://www.emqx.com/en/blog/unified-namespace-next-generation-data-fabric-for-iiot) ([Edit](https://github.com/emqx/blog/blob/main/en/202307/unified-namespace-next-generation-data-fabric-for-iiot.md))
 - [Efficiency Comparison: OPC-UA, Modbus, MQTT, Sparkplug, HTTP](https://www.emqx.com/en/blog/efficiency-comparison-opc-ua-modbus-mqtt-sparkplug-http) ([Edit](https://github.com/emqx/blog/blob/main/en/202306/efficiency-comparison-opc-ua-modbus-mqtt-sparkplug-http.md))
 - [Bridging Modbus Data to MQTT for IIoT:  A Step-by-Step Tutorial](https://www.emqx.com/en/blog/bridging-modbus-data-to-mqtt-for-iiot) ([Edit](https://github.com/emqx/blog/blob/main/en/202306/bridging-modbus-data-to-mqtt-for-iiot.md))
