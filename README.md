@@ -664,6 +664,7 @@ Guarantee the availability and reliability of the IoT platform.
 
 ## [Use Cases](https://www.emqx.com/en/blog/category/use-cases)
 
+- [IoT in Healthcare: Connecting Medical Lab Devices with MQTT](https://www.emqx.com/en/blog/iot-in-healthcare-connecting-medical-lab-devices-with-mqtt) ([Edit](https://github.com/emqx/blog/blob/main/en/202404/iot-in-healthcare-connecting-medical-lab-devices-with-mqtt.md))
 - [Smart Water Operation and Management with EMQX MQTT Platform](https://www.emqx.com/en/blog/building-a-smart-water-platform) ([Edit](https://github.com/emqx/blog/blob/main/en/202402/building-a-smart-water-platform.md))
 - [Building a Smart Water Plant with EMQX MQTT Platform and Digital Twin Technology](https://www.emqx.com/en/blog/smart-water-use-case) ([Edit](https://github.com/emqx/blog/blob/main/en/202401/smart-water-use-case.md))
 - [EMQX Enables Smart Energy Storage with Real-Time Data Collection and Cloud-Edge Collaboration](https://www.emqx.com/en/blog/emqx-enables-smart-energy-storage) ([Edit](https://github.com/emqx/blog/blob/main/en/202312/emqx-enables-smart-energy-storage.md))
