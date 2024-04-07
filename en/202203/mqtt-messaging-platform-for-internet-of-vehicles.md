@@ -87,24 +87,24 @@ The client connects to load balancing ELB through TLS encryption, then ends the 
 
 ### Test Scenarios
 
-| S/N  | Name of Scenarios                                            | Description                                                  | Expected Result                                              |
-| ---- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| 1    | Tens of millions of connections + message throughput         | Ten million MQTT TCP concurrent connection with heartbeat interval of 200s. Among them, seven million are background connections (only connecting without sending messages), three million active users, each user reports a QOS0 message every 15s, and the payload is 100B. The message is bridged to Kafka by the rule engine. Test for one hour first, then conduct a 24-hour stability test. | The success rate of intranet test was 100%, and there was no message backlog. During the test, the performance of CPU and internal memory was smooth without significant vibrate. |
-| 2    | Message broadcasting                                         | Ten million MQTT TCP concurrent connections, all connections subscribe to the same OTA broadcast theme (QoS0, payload 100B). Simulate an MQTT client to broadcast a message to the topic every 10 minutes, test for 30 minutes. | The success rate of intranet test was 100%, and all subscription clients successfully consumed three messages. |
-| 3    | Three million concurrent instant connection                  | Three million MQTT clients simultaneously initiate a connection, and test the time required for the completion of all connections. | With three million clients connected successfully, the cluster would not avalanche. |
-| 4    | Exploration of maximum message throughput with ten million connections | Maximum message throughput achievable with existing configuration and ten million connections and bridging kafka (QoS0, payload 100B/1kB). | Test two hours after the maximum message throughput is reached, the success rate of intranet test was 100%, there was no message backlog. During the test, the performance of CPU and internal memory was smooth without significant vibrate. |
+| S/N | Name of Scenarios                                                      | Description                                                                                                                                                                                                                                                                                                                                                                                       | Expected Result                                                                                                                                                                                                                               |
+| --- | ---------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1   | Tens of millions of connections + message throughput                   | Ten million MQTT TCP concurrent connection with heartbeat interval of 200s. Among them, seven million are background connections (only connecting without sending messages), three million active users, each user reports a QOS0 message every 15s, and the payload is 100B. The message is bridged to Kafka by the rule engine. Test for one hour first, then conduct a 24-hour stability test. | The success rate of intranet test was 100%, and there was no message backlog. During the test, the performance of CPU and internal memory was smooth without significant vibrate.                                                             |
+| 2   | Message broadcasting                                                   | Ten million MQTT TCP concurrent connections, all connections subscribe to the same OTA broadcast theme (QoS0, payload 100B). Simulate an MQTT client to broadcast a message to the topic every 10 minutes, test for 30 minutes.                                                                                                                                                                   | The success rate of intranet test was 100%, and all subscription clients successfully consumed three messages.                                                                                                                                |
+| 3   | Three million concurrent instant connection                            | Three million MQTT clients simultaneously initiate a connection, and test the time required for the completion of all connections.                                                                                                                                                                                                                                                                | With three million clients connected successfully, the cluster would not avalanche.                                                                                                                                                           |
+| 4   | Exploration of maximum message throughput with ten million connections | Maximum message throughput achievable with existing configuration and ten million connections and bridging kafka (QoS0, payload 100B/1kB).                                                                                                                                                                                                                                                        | Test two hours after the maximum message throughput is reached, the success rate of intranet test was 100%, there was no message backlog. During the test, the performance of CPU and internal memory was smooth without significant vibrate. |
 
 ### Test Results
 
 The following are the results of this test:
 
-| **S/N** | **Scenarios**                                                | **Average Response Time**             | **EMQX Node CPU Utilization** | **EMQX Node CPU IDLE** | **EMQX Node Internal Memory Usage (G)** | **LB Required Bandwidth (MB)** |
-| ------- | ------------------------------------------------------------ | ------------------------------------- | ----------------------------- | ---------------------- | --------------------------------------- | ------------------------------ |
-| 1       | Ten million connections+200 thousand message throughput, QoS0, payload 100B | 1.5ms                                 | 31%-48% Average: 47%          | 37%-54% Average: 47%   | Used: 27.7~42 Free: 78.2~92.5           | 45                             |
-| 2       | Message broadcasting under ten million connections           | 100ms                                 | Max 21%                       | Min 69%                | Used: Max. 32.3Free:Min. 87.9           | 200                            |
-| 3       | Three million client instant connection                      | Connection completed in three minutes | Max 25%                       | Min 63%                | Used: Max 14.7Free: Min 108.2           | 400                            |
+| **S/N** | **Scenarios**                                                                                     | **Average Response Time**             | **EMQX Node CPU Utilization** | **EMQX Node CPU IDLE** | **EMQX Node Internal Memory Usage (G)** | **LB Required Bandwidth (MB)** |
+| ------- | ------------------------------------------------------------------------------------------------- | ------------------------------------- | ----------------------------- | ---------------------- | --------------------------------------- | ------------------------------ |
+| 1       | Ten million connections+200 thousand message throughput, QoS0, payload 100B                       | 1.5ms                                 | 31%-48% Average: 47%          | 37%-54% Average: 47%   | Used: 27.7~42 Free: 78.2~92.5           | 45                             |
+| 2       | Message broadcasting under ten million connections                                                | 100ms                                 | Max 21%                       | Min 69%                | Used: Max. 32.3Free:Min. 87.9           | 200                            |
+| 3       | Three million client instant connection                                                           | Connection completed in three minutes | Max 25%                       | Min 63%                | Used: Max 14.7Free: Min 108.2           | 400                            |
 | 4       | Explore max throughput: Ten million connections+1.2 million message throughput, QoS0, payload 1kB | 164.3ms                               | 23%-64% Average: 46%          | 20%-64% Average: 43%   | Used: 33~38 Free: 81.3~87.1             | 1350                           |
-| 5       | Ten million connection+QoS2 200 thousand message throughput, payload 100B | 51.4ms                                | 3%-51% Average: 41%           | 31%-53% Average: 43%   | Used: 22.2~29 Free: 91~98               | 95                             |
+| 5       | Ten million connection+QoS2 200 thousand message throughput, payload 100B                         | 51.4ms                                | 3%-51% Average: 41%           | 31%-53% Average: 43%   | Used: 22.2~29 Free: 91~98               | 95                             |
 
 ### Summary
 
@@ -127,19 +127,19 @@ In this article, we introduce the architecture design of the ten-million level o
 As the world's leading provider of IoT data infrastructure software, EMQ is committed to building products with high performance, low latency, high availability and high reliability thereby providing a total solution for information acquisition, movement, processing and analysis for the new generation of IoV systems. This provides infrastructure service guarantee for automatic driving and intelligent networked automobile business of vehicle manufacturers, T1 suppliers, post-market service providers, travel service companies and government management organizations, and realizes intelligent connection among humans, vehicles, roads and clouds.
 
 <section
-  class="is-hidden-touch my-32 is-flex is-align-items-center"
+  class="promotion-pdf"
   style="border-radius: 16px; background: linear-gradient(102deg, #edf6ff 1.81%, #eff2ff 97.99%); padding: 32px 48px;"
 >
-  <div class="mr-40" style="flex-shrink: 0;">
+  <div style="flex-shrink: 0;">
     <img loading="lazy" src="https://assets.emqx.com/images/a4b8936bb3d27fbccd734eccbe3f821b.png" alt="Open Manufacturing Hub" width="160" height="226">
   </div>
   <div>
-    <div class="mb-4 is-size-3 is-text-black has-text-weight-semibold" style="
+    <div class="promotion-pdf__title" style="
     line-height: 1.2;
 ">
       Rev Up Your Connected Vehicles Future with MQTT
     </div>
-    <div class="mb-32">
+    <div class="promotion-pdf__desc">
       The key to building a scalable, secure system for your connected-vehicles business.
     </div>
     <a href="https://www.emqx.com/en/resources/driving-the-future-of-connected-cars-with-mqtt?utm_campaign=embedded-driving-the-future-of-connected-cars-with-mqtt&from=blog-mqtt-messaging-platform-for-internet-of-vehicles" class="button is-gradient">Get the Whitepaper →</a>

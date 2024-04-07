@@ -52,19 +52,19 @@ The synergy between EMQX and Neuron is evident in their combined ability to acce
 With EMQX and Neuron, accessing and leveraging data from both OT and IT sources is no longer a luxury, but a necessity for companies looking to stay competitive and thrive in the ever-evolving industrial landscape. EMQX and Neuron are essential tools for realizing the full potential of smart manufacturing. By seamlessly accessing and integrating OT and IT data sources, companies can implement predictive maintenance strategies, optimize production processes and improve overall operational efficiency. This not only reduces downtime and maintenance costs, but also improves product quality, supply chain management and, ultimately, the bottom line.
 
 <section
-  class="is-hidden-touch my-32 is-flex is-align-items-center"
+  class="promotion-pdf"
   style="border-radius: 16px; background: linear-gradient(102deg, #edf6ff 1.81%, #eff2ff 97.99%); padding: 32px 48px;"
 >
-  <div class="mr-40" style="flex-shrink: 0;">
+  <div style="flex-shrink: 0;">
     <img loading="lazy" src="https://assets.emqx.com/images/0b88fa3cf1c98545e501e3b8073fdccc.png" alt="Open Manufacturing Hub" width="160" height="226">
   </div>
   <div>
-    <div class="mb-4 is-size-3 is-text-black has-text-weight-semibold" style="
+    <div class="promotion-pdf__title" style="
     line-height: 1.2;
 ">
       A Reference Architecture for Industrial IoT (IIoT)
     </div>
-    <div class="mb-32">
+    <div class="promotion-pdf__desc">
       Building an efficient and scalable IIoT infrastructure.
     </div>
     <a href="https://www.emqx.com/en/resources/open-manufacturing-hub-a-reference-architecture-for-industrial-iot?utm_campaign=embedded-open-manufacturing-hub&from=blog-first-step-to-a-smart-factory" class="button is-gradient">Get the Whitepaper →</a>

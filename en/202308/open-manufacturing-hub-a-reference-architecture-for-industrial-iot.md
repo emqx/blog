@@ -5,19 +5,19 @@ In the rapidly evolving landscape of the [Industrial Internet of Things (IIoT)](
 Enter the OMH(Open Manufacturing Hub) — an open-source blueprint for [industrial IoT](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges) presented by EMQ, harnessing the true potential of industrial connectivity and real-time data. In this article, we embark on a journey through the OMH solution, uncovering how to implement this innovative solution and reshape the way we approach industrial system development.
 
 <section
-  class="is-hidden-touch my-32 is-flex is-align-items-center"
+  class="promotion-pdf"
   style="border-radius: 16px; background: linear-gradient(102deg, #edf6ff 1.81%, #eff2ff 97.99%); padding: 32px 48px;"
 >
-  <div class="mr-40" style="flex-shrink: 0;">
+  <div style="flex-shrink: 0;">
     <img loading="lazy" src="https://assets.emqx.com/images/0b88fa3cf1c98545e501e3b8073fdccc.png" alt="Open Manufacturing Hub" width="160" height="226">
   </div>
   <div>
-    <div class="mb-4 is-size-3 is-text-black has-text-weight-semibold" style="
+    <div class="promotion-pdf__title" style="
     line-height: 1.2;
 ">
       A Reference Architecture for Modern Manufacturing
     </div>
-    <div class="mb-32">
+    <div class="promotion-pdf__desc">
       An open-source blueprint for Industry 4.0 to help you build an efficient and scalable IIoT platform.
     </div>
     <a href="https://www.emqx.com/en/resources/open-manufacturing-hub-a-reference-architecture-for-industrial-iot?utm_campaign=embedded-open-manufacturing-hub&from=blog-open-manufacturing-hub-a-reference-architecture" class="button is-gradient">Get the Whitepaper →</a>

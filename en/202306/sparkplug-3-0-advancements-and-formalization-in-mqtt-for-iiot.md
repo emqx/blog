@@ -60,19 +60,19 @@ The extended state management capabilities of MQTT Sparkplug 3.0 ensure efficien
 The subset requirements for MQTT servers ensure that existing MQTT v3.1.1 servers can be leveraged, reducing the need for extensive infrastructure changes during the adoption of Sparkplug 3.0.
 
 <section
-  class="is-hidden-touch my-32 is-flex is-align-items-center"
+  class="promotion-pdf"
   style="border-radius: 16px; background: linear-gradient(102deg, #edf6ff 1.81%, #eff2ff 97.99%); padding: 32px 48px;"
 >
-  <div class="mr-40" style="flex-shrink: 0;">
+  <div style="flex-shrink: 0;">
     <img loading="lazy" src="https://assets.emqx.com/images/0b88fa3cf1c98545e501e3b8073fdccc.png" alt="Open Manufacturing Hub" width="160" height="226">
   </div>
   <div>
-    <div class="mb-4 is-size-3 is-text-black has-text-weight-semibold" style="
+    <div class="promotion-pdf__title" style="
     line-height: 1.2;
 ">
       A Reference Architecture for Modern Manufacturing
     </div>
-    <div class="mb-32">
+    <div class="promotion-pdf__desc">
       Amplify the power of MQTT Sparkplug.
     </div>
     <a href="https://www.emqx.com/en/resources/open-manufacturing-hub-a-reference-architecture-for-industrial-iot?utm_campaign=embedded-open-manufacturing-hub&from=blog-sparkplug-3-0-advancements" class="button is-gradient">Get the Whitepaper →</a>

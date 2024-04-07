@@ -33,19 +33,19 @@ Vehicle data can be transmitted in various ways, including:
 > **Read our blog: [How to Achieve Flexible Data Collection for Internet of Vehicles](https://www.emqx.com/en/blog/how-to-achieve-flexible-data-collection-for-internet-of-vehicles)**
 
 <section
-  class="is-hidden-touch my-32 is-flex is-align-items-center"
+  class="promotion-pdf"
   style="border-radius: 16px; background: linear-gradient(102deg, #edf6ff 1.81%, #eff2ff 97.99%); padding: 32px 48px;"
 >
-  <div class="mr-40" style="flex-shrink: 0;">
+  <div style="flex-shrink: 0;">
     <img loading="lazy" src="https://assets.emqx.com/images/129d83b2aebdc64d6c1385236677b310.png" alt="MQTT over QUIC" width="160" height="226">
   </div>
   <div>
-    <div class="mb-4 is-size-3 is-text-black has-text-weight-semibold" style="
+    <div class="promotion-pdf__title" style="
     line-height: 1.2;
 ">
       Next-Gen Standard Protocol for IoV
     </div>
-    <div class="mb-32">
+    <div class="promotion-pdf__desc">
       Revolutionizing IoV messaging with MQTT over QUIC.
     </div>
     <a href="https://www.emqx.com/en/resources/mqtt-over-quic-revolutionizing-iov-messaging-with-the-next-gen-standard-protocol?utm_campaign=embedded-mqtt-over-quic&from=blog-connected-cars-and-automotive-connectivity-all-you-need-to-know" class="button is-gradient">Get the Whitepaper →</a>
@@ -88,19 +88,19 @@ Here are some potential use cases for MQTT in connected cars:
 - **Infotainment systems**: [MQTT's publish-subscribe model](https://www.emqx.com/en/blog/mqtt-5-introduction-to-publish-subscribe-model) can be employed to deliver real-time information, such as news, weather updates, and traffic conditions, to the vehicle's infotainment system. This can enhance the user experience and help drivers make informed decisions on the go.
 
 <section
-  class="is-hidden-touch my-32 is-flex is-align-items-center"
+  class="promotion-pdf"
   style="border-radius: 16px; background: linear-gradient(102deg, #edf6ff 1.81%, #eff2ff 97.99%); padding: 32px 48px;"
 >
-  <div class="mr-40" style="flex-shrink: 0;">
+  <div style="flex-shrink: 0;">
     <img loading="lazy" src="https://assets.emqx.com/images/a4b8936bb3d27fbccd734eccbe3f821b.png" alt="Open Manufacturing Hub" width="160" height="226">
   </div>
   <div>
-    <div class="mb-4 is-size-3 is-text-black has-text-weight-semibold" style="
+    <div class="promotion-pdf__title" style="
     line-height: 1.2;
 ">
       Rev Up Your Connected Vehicles Future with MQTT
     </div>
-    <div class="mb-32">
+    <div class="promotion-pdf__desc">
       The key to building a scalable, secure system for your connected-vehicles business.
     </div>
     <a href="https://www.emqx.com/en/resources/driving-the-future-of-connected-cars-with-mqtt?utm_campaign=embedded-driving-the-future-of-connected-cars-with-mqtt&from=blog-connected-cars-and-automotive-connectivity" class="button is-gradient">Get the Whitepaper →</a>

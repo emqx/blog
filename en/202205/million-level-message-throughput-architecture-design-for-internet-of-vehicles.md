@@ -84,19 +84,19 @@ From the EMQX rule engine, we can see that the processing speed of each node is 
 We can see write speeds of 1 million per second in Kafka and these nodes keep storing.
 
 <section
-  class="is-hidden-touch my-32 is-flex is-align-items-center"
+  class="promotion-pdf"
   style="border-radius: 16px; background: linear-gradient(102deg, #edf6ff 1.81%, #eff2ff 97.99%); padding: 32px 48px;"
 >
-  <div class="mr-40" style="flex-shrink: 0;">
+  <div style="flex-shrink: 0;">
     <img loading="lazy" src="https://assets.emqx.com/images/f933a2361fd2b01d36a7f3667711b2bd.png" alt="Open Manufacturing Hub" width="160" height="226">
   </div>
   <div>
-    <div class="mb-4 is-size-3 is-text-black has-text-weight-semibold" style="
+    <div class="promotion-pdf__title" style="
     line-height: 1.2;
 ">
       A 5-Step Demo to Setup MQTT to Kafka
     </div>
-    <div class="mb-32">
+    <div class="promotion-pdf__desc">
       Unlock the potential of streaming data with MQTT and Kafka and build a data-driven IoT infrastructure.
     </div>
     <a href="https://www.emqx.com/en/resources/leveraging-streaming-data-with-mqtt-and-kafka?utm_campaign=embedded-leveraging-streaming-data-with-mqtt-and-kafka&from=blog-million-level-message-throughput-architecture-design" class="button is-gradient">Get the Whitepaper →</a>

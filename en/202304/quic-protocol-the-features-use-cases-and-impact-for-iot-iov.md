@@ -96,19 +96,19 @@ Some use cases for MQTT over QUIC in the Internet of Vehicles include:
 - **Emergency response**: In emergency situations, reliable and fast communication is critical. MQTT over QUIC can ensure timely and secure exchange of information between emergency vehicles, response teams, and control centers.
 
 <section
-  class="is-hidden-touch my-32 is-flex is-align-items-center"
+  class="promotion-pdf"
   style="border-radius: 16px; background: linear-gradient(102deg, #edf6ff 1.81%, #eff2ff 97.99%); padding: 32px 48px;"
 >
-  <div class="mr-40" style="flex-shrink: 0;">
+  <div style="flex-shrink: 0;">
     <img loading="lazy" src="https://assets.emqx.com/images/129d83b2aebdc64d6c1385236677b310.png" alt="MQTT over QUIC" width="160" height="226">
   </div>
   <div>
-    <div class="mb-4 is-size-3 is-text-black has-text-weight-semibold" style="
+    <div class="promotion-pdf__title" style="
     line-height: 1.2;
 ">
       Next-Gen Standard Protocol for IoV
     </div>
-    <div class="mb-32">
+    <div class="promotion-pdf__desc">
       Revolutionizing IoV messaging with MQTT over QUIC.
     </div>
     <a href="https://www.emqx.com/en/resources/mqtt-over-quic-revolutionizing-iov-messaging-with-the-next-gen-standard-protocol?utm_campaign=embedded-mqtt-over-quic&from=blog-quic-protocol-the-features" class="button is-gradient">Get the Whitepaper →</a>
