@@ -22,7 +22,7 @@ GCP 的 Virtual Machine Instances 允许用户轻松部署和管理应用程序�
 
    选择合适的 Region 与 Zone 并确定 Machine configuration。此处使用 E2 系列的服务器，Machine type 选择 Custom，分配 2 核 vCPU、4GB 内存。
 
-   在此规格下，单个 EMQX 节点能够承载 10,000 MQTT 连接以及 5,000 TPS 的并发消息。您可以使用[服务器估算计算器](https://www.emqx.com/zh/server-estimate)来计算各种最大连接和信息吞吐量下的推荐硬件规格。
+   在此规格下，单个 EMQX 节点能够承载 10,000 MQTT 连接以及 5,000 TPS 的并发消息。
 
    ![机器配置 1](https://assets.emqx.com/images/445054ca2fce0f3eccf26bdba75dfa37.png)
 
