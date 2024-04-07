@@ -431,6 +431,7 @@ Build a reliable, efficient and industry-specific Internet of Vehicles platform 
 
 ## [Industrial IoT | Unified Namespace | Sparkplug](https://www.emqx.com/zh/blog/category/industrial-iot)
 
+- [OPC UA 协议：特性、工作原理及其与 MQTT 的结合](https://www.emqx.com/zh/blog/opc-ua-protocol) ([Edit](https://github.com/emqx/blog/blob/main/zh/202404/opc-ua-protocol.md))
 - [工业互联数据平台，推动工业互联网标识解析体系的应用](https://www.emqx.com/zh/blog/industrial-connectivity-data-platform-use-case) ([Edit](https://github.com/emqx/blog/blob/main/zh/202403/industrial-connectivity-data-platform-use-case.md))
 - [工业互联数据平台：NeuronEX 与 EMQX ECP 携手推动云边一体](https://www.emqx.com/zh/blog/industrial-connectivity-data-platform) ([Edit](https://github.com/emqx/blog/blob/main/zh/202403/industrial-connectivity-data-platform.md))
 - [获奖名单: EMQ 和 Intel 评选工业物联网领域最佳案例与应用](https://www.emqx.com/zh/blog/industrial-iot-best-cases-and-applications) ([Edit](https://github.com/emqx/blog/blob/main/zh/202402/industrial-iot-best-cases-and-applications.md))
