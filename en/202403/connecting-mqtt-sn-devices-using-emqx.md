@@ -23,7 +23,7 @@ MQTT-SN is a Publish/Subscribe message transfer protocol designed for WSN (Wirel
 
 ## **Common Deployment Architecture of MQTT-SN**
 
-![MQTT-SN Architecture](https://assets.emqx.com/images/b65bb745702ab0c90fe34bb522a50a00.png)
+![MQTT-SN Architecture](https://assets.emqx.com/images/d9615f76aa0d90157285634651fc0914.png)
 
 <center>MQTT-SN Architecture</center>
 
