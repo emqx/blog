@@ -34,8 +34,6 @@ Here are the steps for creating a VM instance on GCP. You can also refer to the 
 
    Choose an appropriate region and zone and machine configuration. In **Machine configuration**, select `E2` for **Series** and `Custom` for **Machine type**, and allocate 2 vCPUs and 4GB of memory. With this specification, a single EMQX node can handle up to 10,000 MQTT connections and a maximum of 5,000 TPS of concurrent messages.
 
-   You can use the [EMQX Server Estimate](https://www.emqx.com/en/server-estimate) calculator to calculate the recommended hardware specification under various maximum connections and message throughputs.
-
    ![Machine Configuration](https://assets.emqx.com/images/2e7988af28f289968483bebba0293107.png)
 
    In the **Boot disk** configuration, select the **Ubuntu 20.04 LTS** operating system and change the disk size to **30GB**.
