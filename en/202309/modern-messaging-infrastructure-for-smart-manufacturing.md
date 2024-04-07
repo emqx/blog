@@ -60,19 +60,19 @@ In the OMH architecture, data can flow bi-directionally between different levels
 The OMH provides standardized methods for data access via the EMQX broker. It allows authorized users and applications to subscribe to data from any information system in the automation pyramid using consistent and well-defined MQTT interfaces. The OMH also provides standardized methods for device data acquisition through the Neuron gateway. It allows different devices with different data formats to communicate with any other system or device.
 
 <section
-  class="is-hidden-touch my-32 is-flex is-align-items-center"
+  class="promotion-pdf"
   style="border-radius: 16px; background: linear-gradient(102deg, #edf6ff 1.81%, #eff2ff 97.99%); padding: 32px 48px;"
 >
-  <div class="mr-40" style="flex-shrink: 0;">
+  <div style="flex-shrink: 0;">
     <img loading="lazy" src="https://assets.emqx.com/images/0b88fa3cf1c98545e501e3b8073fdccc.png" alt="Open Manufacturing Hub" width="160" height="226">
   </div>
   <div>
-    <div class="mb-4 is-size-3 is-text-black has-text-weight-semibold" style="
+    <div class="promotion-pdf__title" style="
     line-height: 1.2;
 ">
       A Reference Architecture for Industrial IoT
     </div>
-    <div class="mb-32">
+    <div class="promotion-pdf__desc">
       Enabling seamless connectivity, real-time data processing, and efficient system management.
     </div>
     <a href="https://www.emqx.com/en/resources/open-manufacturing-hub-a-reference-architecture-for-industrial-iot?utm_campaign=embedded-open-manufacturing-hub&from=blog-modern-messaging-infrastructure-for-smart-manufacturing" class="button is-gradient">Get the Whitepaper →</a>

@@ -179,19 +179,19 @@ When using EMQX as MQTT Broker for TSP platform of IoV, we need to pay attention
 With the popularization of MQTT protocol in IoV business, the topic design of MQTT messages of TSP platform of IoV will be the subject that each OEM and TSP platform scheme supplier must face. This article is the summary of MQTT topic design based on years of experience in the TSP platform.  The goal is to provide some help and inspiration to peers in the early stage of platform design and business expansion.
 
 <section
-  class="is-hidden-touch my-32 is-flex is-align-items-center"
+  class="promotion-pdf"
   style="border-radius: 16px; background: linear-gradient(102deg, #edf6ff 1.81%, #eff2ff 97.99%); padding: 32px 48px;"
 >
-  <div class="mr-40" style="flex-shrink: 0;">
+  <div style="flex-shrink: 0;">
     <img loading="lazy" src="https://assets.emqx.com/images/a4b8936bb3d27fbccd734eccbe3f821b.png" alt="Open Manufacturing Hub" width="160" height="226">
   </div>
   <div>
-    <div class="mb-4 is-size-3 is-text-black has-text-weight-semibold" style="
+    <div class="promotion-pdf__title" style="
     line-height: 1.2;
 ">
       Rev Up Your Connected Vehicles Future with MQTT
     </div>
-    <div class="mb-32">
+    <div class="promotion-pdf__desc">
       The key to building a scalable, secure system for your connected-vehicles business.
     </div>
     <a href="https://www.emqx.com/en/resources/driving-the-future-of-connected-cars-with-mqtt?utm_campaign=embedded-driving-the-future-of-connected-cars-with-mqtt&from=blog-mqtt-topic-design-for-internet-of-vehicles" class="button is-gradient">Get the Whitepaper →</a>

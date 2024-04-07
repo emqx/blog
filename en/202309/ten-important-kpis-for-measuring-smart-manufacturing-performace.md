@@ -75,19 +75,19 @@ The OMH solution allows customizing the KPIs based on unique situations. Should 
 All in all, OMH's comprehensive offering includes both preset and customizable KPIs, along with a powerful business intelligence module. This combination enables the organization to harness the power of data analysis to make informed decisions and continuously refine the manufacturing processes based on real-time insights.
 
 <section
-  class="is-hidden-touch my-32 is-flex is-align-items-center"
+  class="promotion-pdf"
   style="border-radius: 16px; background: linear-gradient(102deg, #edf6ff 1.81%, #eff2ff 97.99%); padding: 32px 48px;"
 >
-  <div class="mr-40" style="flex-shrink: 0;">
+  <div style="flex-shrink: 0;">
     <img loading="lazy" src="https://assets.emqx.com/images/0b88fa3cf1c98545e501e3b8073fdccc.png" alt="Open Manufacturing Hub" width="160" height="226">
   </div>
   <div>
-    <div class="mb-4 is-size-3 is-text-black has-text-weight-semibold" style="
+    <div class="promotion-pdf__title" style="
     line-height: 1.2;
 ">
       State-of-the-Art Smart Manufacturing Tech Stack
     </div>
-    <div class="mb-32">
+    <div class="promotion-pdf__desc">
       Enabling seamless connectivity, real-time data processing, and efficient system management.
     </div>
     <a href="https://www.emqx.com/en/resources/open-manufacturing-hub-a-reference-architecture-for-industrial-iot?utm_campaign=embedded-open-manufacturing-hub&from=blog-ten-important-kpis-for-measuring-smart-manufacturing" class="button is-gradient">Get the Whitepaper →</a>

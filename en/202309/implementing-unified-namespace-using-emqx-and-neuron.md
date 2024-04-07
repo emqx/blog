@@ -7,19 +7,19 @@ The [Unified Namespace (UNS)](https://www.emqx.com/en/blog/unified-namespace-nex
 EMQX plays a pivotal role as the central messaging broker, strategically positioned at its core. Neuron supports the EMQX to access OT sensors and devices with various industrial protocols. As the key components for data communication and message routing, EMQX and Neuron together act as the primary conduit connecting data sources, such as devices, sensors, and machines to data consumers, which includes ERP and MES applications, databases, and analytics platforms. This intermediary role enables seamless data exchange within the manufacturing ecosystem, facilitating the flow of information critical to real-time monitoring, control, and analysis.
 
 <section
-  class="is-hidden-touch my-32 is-flex is-align-items-center"
+  class="promotion-pdf"
   style="border-radius: 16px; background: linear-gradient(102deg, #edf6ff 1.81%, #eff2ff 97.99%); padding: 32px 48px;"
 >
-  <div class="mr-40" style="flex-shrink: 0;">
+  <div style="flex-shrink: 0;">
     <img loading="lazy" src="https://assets.emqx.com/images/0b88fa3cf1c98545e501e3b8073fdccc.png" alt="Open Manufacturing Hub" width="160" height="226">
   </div>
   <div>
-    <div class="mb-4 is-size-3 is-text-black has-text-weight-semibold" style="
+    <div class="promotion-pdf__title" style="
     line-height: 1.2;
 ">
       A Reference Architecture for IIoT Based on UNS
     </div>
-    <div class="mb-32">
+    <div class="promotion-pdf__desc">
       To build an efficient and scalable IIoT infrastructure.
     </div>
     <a href="https://www.emqx.com/en/resources/open-manufacturing-hub-a-reference-architecture-for-industrial-iot?utm_campaign=embedded-open-manufacturing-hub&from=blog-implementing-unified-namespace-using-emqx-and-neuron" class="button is-gradient">Get the Whitepaper →</a>

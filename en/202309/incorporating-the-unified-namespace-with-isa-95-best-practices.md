@@ -9,19 +9,19 @@ The traditional ISA-95 standard uses layer models to categorize different levels
 This approach seeks to break down silos and enhance interoperability by treating all components, whether IT or OT, as part of a unified system. Neuron's ability to bridge different industrial protocols and standards ensures that diverse devices and sensors can communicate seamlessly through EMQX's MQTT-based approach. Replacing ISA-95 Layer Models with a Unified Namespace through the integration of EMQX and Neuron offers a modernized way of managing industrial operations. 
 
 <section
-  class="is-hidden-touch my-32 is-flex is-align-items-center"
+  class="promotion-pdf"
   style="border-radius: 16px; background: linear-gradient(102deg, #edf6ff 1.81%, #eff2ff 97.99%); padding: 32px 48px;"
 >
-  <div class="mr-40" style="flex-shrink: 0;">
+  <div style="flex-shrink: 0;">
     <img loading="lazy" src="https://assets.emqx.com/images/0b88fa3cf1c98545e501e3b8073fdccc.png" alt="Open Manufacturing Hub" width="160" height="226">
   </div>
   <div>
-    <div class="mb-4 is-size-3 is-text-black has-text-weight-semibold" style="
+    <div class="promotion-pdf__title" style="
     line-height: 1.2;
 ">
       A Reference Architecture for IIoT Based on UNS
     </div>
-    <div class="mb-32">
+    <div class="promotion-pdf__desc">
       To build an efficient and scalable IIoT infrastructure.
     </div>
     <a href="https://www.emqx.com/en/resources/open-manufacturing-hub-a-reference-architecture-for-industrial-iot?utm_campaign=embedded-open-manufacturing-hub&from=blog-incorporating-the-unified-namespace-with-isa-95-best-practices" class="button is-gradient">Get the Whitepaper →</a>
