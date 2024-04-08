@@ -183,6 +183,7 @@ Explore more with & via EMQ.
 ## [EMQX Open Source | Broker](https://www.emqx.com/en/blog/category/emqx)
 EMQX is the world's most scalable open-source MQTT broker with a high performance that connects 100M+ IoT devices in 1 cluster, while maintaining 1M message per second throughput and sub-millisecond latency.
 
+- [EMQX: Your Next Step in IoT Evolution Post-CloudMQTT ](https://www.emqx.com/en/blog/emqx-your-next-step-in-iot-evolution-post-cloudmqtt) ([Edit](https://github.com/emqx/blog/blob/main/en/202404/emqx-your-next-step-in-iot-evolution-post-cloudmqtt.md))
 - [Exploring MQTT-SN: A Comprehensive Guide](https://www.emqx.com/en/blog/connecting-mqtt-sn-devices-using-emqx) ([Edit](https://github.com/emqx/blog/blob/main/en/202403/connecting-mqtt-sn-devices-using-emqx.md))
 - [EMQX Performance Tuning: Linux Conntrack and MQTT Connections](https://www.emqx.com/en/blog/emqx-performance-tuning-linux-conntrack-and-mqtt-connections) ([Edit](https://github.com/emqx/blog/blob/main/en/202401/emqx-performance-tuning-linux-conntrack-and-mqtt-connections.md))
 - [Running EMQX MQTT Broker on Docker (Bonus: Clustering and Persistence)](https://www.emqx.com/en/blog/running-mqtt-broker-on-docker) ([Edit](https://github.com/emqx/blog/blob/main/en/202312/running-mqtt-broker-on-docker.md))
