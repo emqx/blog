@@ -1,6 +1,6 @@
 Dear Customers,
 
-We wish to inform you that effective **March 30th, 2024**, the **EMQX Dedicated - Standard Plan** is no longer be available. Rest assured, any deployments established before this date will **NOT** be affected, and will continue to receive our full support and maintenance. 
+We wish to inform you that effective **March 30th, 2024**, the **EMQX Dedicated - Standard Plan** is no longer available. Rest assured, any deployments established before this date will **NOT** be affected, and will continue to receive our full support and maintenance. 
 
 In May 2021, we introduced the Dedicated - Standard plan, offering fully managed MQTT services for single-node infrastructures. Since then, EMQX has broadened its product suite to include Serverless and BYOC plans. To refine our product development focus and enhance the quality of maintenance services, we have decided to cease the creation of Dedicated - Standard deployments after March 30, 2024.
 
