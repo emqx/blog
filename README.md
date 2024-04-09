@@ -183,6 +183,8 @@ Explore more with & via EMQ.
 ## [EMQX Open Source | Broker](https://www.emqx.com/en/blog/category/emqx)
 EMQX is the world's most scalable open-source MQTT broker with a high performance that connects 100M+ IoT devices in 1 cluster, while maintaining 1M message per second throughput and sub-millisecond latency.
 
+- [Next-Level IoT Performance: What's New in EMQX Dedicated v5](https://www.emqx.com/en/blog/next-level-iot-performance-what-s-new-in-emqx-dedicated-v-5) ([Edit](https://github.com/emqx/blog/blob/main/en/202404/next-level-iot-performance-what-s-new-in-emqx-dedicated-v-5.md))
+- [Manage Your IoT System with Deeper Insights: Apply for EMQX Dedicated's Event History](https://www.emqx.com/en/blog/apply-for-emqx-dedicated-event-history) ([Edit](https://github.com/emqx/blog/blob/main/en/202404/apply-for-emqx-dedicated-event-history.md))
 - [EMQX: Your Next Step in IoT Evolution Post-CloudMQTT ](https://www.emqx.com/en/blog/emqx-your-next-step-in-iot-evolution-post-cloudmqtt) ([Edit](https://github.com/emqx/blog/blob/main/en/202404/emqx-your-next-step-in-iot-evolution-post-cloudmqtt.md))
 - [Exploring MQTT-SN: A Comprehensive Guide](https://www.emqx.com/en/blog/connecting-mqtt-sn-devices-using-emqx) ([Edit](https://github.com/emqx/blog/blob/main/en/202403/connecting-mqtt-sn-devices-using-emqx.md))
 - [EMQX Performance Tuning: Linux Conntrack and MQTT Connections](https://www.emqx.com/en/blog/emqx-performance-tuning-linux-conntrack-and-mqtt-connections) ([Edit](https://github.com/emqx/blog/blob/main/en/202401/emqx-performance-tuning-linux-conntrack-and-mqtt-connections.md))
