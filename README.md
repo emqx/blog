@@ -51,6 +51,7 @@ Get to know the preferred protocol in IoT from beginner to master.
 
 ## [MQTT Broker](https://www.emqx.com/en/blog/category/mqtt-broker)
 
+- [Free MQTT Broker: Exploring Options and Choosing the Right Solution](https://www.emqx.com/en/blog/free-mqtt-broker) ([Edit](https://github.com/emqx/blog/blob/main/en/202404/free-mqtt-broker.md))
 - [MQTT Broker: How It Works, Popular Options, and Quickstart](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) ([Edit](https://github.com/emqx/blog/blob/main/en/202402/the-ultimate-guide-to-mqtt-broker-comparison.md))
 - [How to Install a Scalable MQTT Broker on OpenWRT](https://www.emqx.com/en/blog/how-to-install-a-scalable-mqtt-broker-on-openwrt) ([Edit](https://github.com/emqx/blog/blob/main/en/202310/how-to-install-a-scalable-mqtt-broker-on-openwrt.md))
 - [RabbitMQ vs Kafka: 5 Key Differences & Leading Use Cases](https://www.emqx.com/en/blog/rabbitmq-vs-kafka) ([Edit](https://github.com/emqx/blog/blob/main/en/202309/rabbitmq-vs-kafka.md))
@@ -154,6 +155,7 @@ Best practice of MQTT in various clients.
 ## [MQTT Integration (Eco & Integration)](https://www.emqx.com/en/blog/category/eco-and-integration)
 Explore more with & via EMQ.
 
+- [MQTT & FreeRTOS: Build Your Real-Time Remote Control Application](https://www.emqx.com/en/blog/mqtt-and-freertos) ([Edit](https://github.com/emqx/blog/blob/main/en/202404/mqtt-and-freertos.md))
 - [MQTT to Webhook: Extending IoT Applications](https://www.emqx.com/en/blog/mqtt-to-webhook) ([Edit](https://github.com/emqx/blog/blob/main/en/202403/mqtt-to-webhook.md))
 - [MQTT with openHAB: A Step-by-Step Tutorial](https://www.emqx.com/en/blog/set-up-emqx-cloud-mqtt-broker-with-openhab) ([Edit](https://github.com/emqx/blog/blob/main/en/202403/set-up-emqx-cloud-mqtt-broker-with-openhab.md))
 - [MQTT to Kafka: Benefits, Use Case & A Quick Guide](https://www.emqx.com/en/blog/mqtt-and-kafka) ([Edit](https://github.com/emqx/blog/blob/main/en/202403/mqtt-and-kafka.md))
