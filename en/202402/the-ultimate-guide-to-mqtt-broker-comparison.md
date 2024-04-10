@@ -263,6 +263,13 @@ EMQX offers rich enterprise features, data integration, cloud hosting services, 
 Product page: [https://www.emqx.com/en/products/emqx](https://www.emqx.com/en/products/emqx)
 
 
+**Related Resources**
+
+- [Free MQTT Broker: Exploring Options and Choosing the Right Solution](https://www.emqx.com/en/blog/free-mqtt-broker)
+- [MQTT Platform: Essential Features & Use Cases](https://www.emqx.com/en/blog/mqtt-platform-essential-features-and-use-cases)
+- [MQTT Client Tools 101: A Beginner's Guide](https://www.emqx.com/en/resources/mqtt-client-tools-101)
+- [Mastering MQTT: Your Ultimate Tutorial for MQTT](https://www.emqx.com/en/resources/your-ultimate-tutorial-for-mqtt)
+
 
 <section class="promotion">
     <div>

@@ -316,13 +316,13 @@ EasyMQTT is an MQTT client for iPhone, iPad, and macOS, allowing you to interact
 This blog presents an extensive overview of MQTT client tools across various categories. Notably, MQTTX emerges as a rapidly evolving client tool distinguished by its modern chat-style interface, comprehensive MQTT 5.0 support, and extensive features that contribute to an exceptional user experience. Available in three versions - Desktop, Command Line, and Browser - MQTTX excels in meeting MQTT testing needs across diverse scenarios. Without a doubt, [MQTTX](https://mqttx.app/) secures its position as one of the premier MQTT client tools in 2024.
 
 
+**Related Resources**
 
-## References
-
-- [Top 3 MQTT Desktop Client Tools in 2023](https://www.emqx.com/en/blog/top-3-mqtt-desktop-client-tools-in-2023)
-- [Top 5 MQTT CLI Tools for IoT Developers in 2023](https://www.emqx.com/en/blog/top-5-mqtt-cli-tools-for-iot-developers-in-2023)
-- [Top 3 MQTT WebSocket Clients in 2023](https://www.emqx.com/en/blog/top-3-mqtt-websocket-clients-in-2023)
-
+- [MQTT Broker: How It Works, Popular Options, and Quickstart](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison)
+- [Free MQTT Broker: Exploring Options and Choosing the Right Solution](https://www.emqx.com/en/blog/free-mqtt-broker)
+- [MQTT Platform: Essential Features & Use Cases](https://www.emqx.com/en/blog/mqtt-platform-essential-features-and-use-cases)
+- [MQTT Client Tools 101: A Beginner's Guide](https://www.emqx.com/en/resources/mqtt-client-tools-101)
+- [Mastering MQTT: Your Ultimate Tutorial for MQTT](https://www.emqx.com/en/resources/your-ultimate-tutorial-for-mqtt)
 
 
 <section class="promotion">

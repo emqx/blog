@@ -402,7 +402,11 @@ Next, you can check out the [MQTT Guide: Beginner to Advanced](https://www.emqx.
 - [A Quickstart Guide to Using MQTT over WebSocket](https://www.emqx.com/en/blog/connect-to-mqtt-broker-with-websocket)
 - [MQTT on ESP32: A Beginner's Guide](https://www.emqx.com/en/blog/esp32-connects-to-the-free-public-mqtt-broker)
 - [7 Essential Things to Know about MQTT Security](https://www.emqx.com/en/blog/essential-things-to-know-about-mqtt-security)
+- [MQTT Broker: How It Works, Popular Options, and Quickstart](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison)
+- [Free MQTT Broker: Exploring Options and Choosing the Right Solution](https://www.emqx.com/en/blog/free-mqtt-broker)
 - [MQTT Platform: Essential Features & Use Cases](https://www.emqx.com/en/blog/mqtt-platform-essential-features-and-use-cases)
+- [MQTT Client Tools 101: A Beginner's Guide](https://www.emqx.com/en/resources/mqtt-client-tools-101)
+- [Mastering MQTT: Your Ultimate Tutorial for MQTT](https://www.emqx.com/en/resources/your-ultimate-tutorial-for-mqtt)
 
 
 

@@ -320,6 +320,16 @@ MQTT Streams is an anticipated extension of the MQTT protocol designed to manage
 We have now completed our journey to the fundamental concepts of MQTT and its usage process. You can now put your knowledge to start using the MQTT protocol. For more information on MQTT topics, wildcards, retained messages, last will, and other features, you can check out the "[MQTT Guide 2024: Beginner to Advanced](https://www.emqx.com/en/mqtt-guide)" article series provided by EMQ. This series will take you through the advanced applications of MQTT and help you get started with MQTT application and service development.
 
 
+**Related Resources**
+
+- [MQTT Broker: How It Works, Popular Options, and Quickstart](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison)
+- [Free MQTT Broker: Exploring Options and Choosing the Right Solution](https://www.emqx.com/en/blog/free-mqtt-broker)
+- [MQTT Platform: Essential Features & Use Cases](https://www.emqx.com/en/blog/mqtt-platform-essential-features-and-use-cases)
+- [MQTT Client Tools 101: A Beginner's Guide](https://www.emqx.com/en/resources/mqtt-client-tools-101)
+- [Mastering MQTT: Your Ultimate Tutorial for MQTT](https://www.emqx.com/en/resources/your-ultimate-tutorial-for-mqtt)
+
+
+
 
 <section class="promotion">
     <div>
