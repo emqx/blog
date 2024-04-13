@@ -6,7 +6,7 @@ QUIC uses a combination of encryption and multiplexing to provide improved secur
 
 The Internet Engineering Task Force (IETF) is standardizing QUIC, and major web browsers and servers are adopting it. QUIC has been shown to improve web page loading times and reduce the occurrence of disconnections compared to TCP, especially in high-latency and spotty networks such as mobile networks.
 
-## What Are the Basic QUIC Protocol Features? 
+## Basic QUIC Protocol Features
 
 Here is an overview of QUIC’s main features.
 
@@ -30,7 +30,7 @@ QUIC provides reliable transmission capabilities based on UDP, and like TCP, it 
 
 QUIC addresses the issue of head-of-line blocking by allowing for multiple data streams. This enables messages from different applications to be delivered independently, avoiding the potential delay of messages waiting for a blocked application to be processed.
 
-## What Are the 5 Common Use Cases of the QUIC Protocol?
+## 5 Common Use Cases of the QUIC Protocol
 
 As HTTP/3 and QUIC gain more popularity and are increasingly adopted, a variety of use cases are expected to emerge. These use cases encompass live and video streaming, video on demand, downloads, and web acceleration. Among the most encouraging application scenarios for these technologies are:
 
@@ -40,7 +40,7 @@ As HTTP/3 and QUIC gain more popularity and are increasingly adopted, a variety 
 4. **Cloud computing:** This involves the delivery of computing resources over the Internet. With QUIC, cloud applications can benefit from low latency and end-to-end encryption, which can improve the user experience and security.
 5. **Payments and eCommerce applications:** These apps require secure and reliable data transmission. QUIC's use of Transport Layer Security (TLS) encryption and reliable HTTP3 streams make it a good choice for these applications, as it helps to ensure data is transmitted securely and without an interception. From the end-user perspective, the QUIC protocol also improves the user experience by ensuring faster, seamless transactions.
 
-## What Is MQTT and What are the Benefits of Running it Over QUIC?
+## Benefits of Running MQTT Over QUIC
 
 MQTT is a lightweight messaging protocol specifically designed for situations where low bandwidth, high latency, or unreliable networks are common. It operates at the application layer and is primarily used for machine-to-machine (M2M) communications and Internet of Things (IoT) scenarios. MQTT uses a publish-subscribe model, which allows devices to send messages (publish) to a central broker, and other devices to receive those messages (subscribe) based on specified topics.
 
@@ -116,7 +116,7 @@ Some use cases for MQTT over QUIC in the Internet of Vehicles include:
 </section>
 
 
-## EMQX: Leading the Way as the First MQTT Broker to Implement MQTT Over QUIC
+## EMQX: The First MQTT Broker to Implement MQTT Over QUIC
 
 [EMQX](https://www.emqx.io/) is a world leading [open-source MQTT broker](https://www.emqx.com/en/blog/a-comprehensive-comparison-of-open-source-mqtt-brokers-in-2023) with a high-performance real-time message processing engine, powering event streaming for IoT devices at massive scale. Starting from version 5.0, EMQX became the first MQTT broker to support MQTT over QUIC, providing a more efficient and secure way of transmitting MQTT messages over modern complex networks, and improving MQTT's performance in certain scenarios.
 
