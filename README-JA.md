@@ -177,3 +177,8 @@ NanoMQ is an MQTT messaging broker + multi-protocol message bus for edge computi
 
 - [NanoMQ: IoTエッジ向けMosquittoよりマルチスレッドのエッジブローカー](https://www.emqx.com/ja/blog/nanomq-the-multi-threaded-alternative-to-mosquitto-for-iot-edge) ([Edit](https://github.com/emqx/blog/blob/main/ja/202307/nanomq-the-multi-threaded-alternative-to-mosquitto-for-iot-edge.md))
 - [NanoMQを利用して、ブリッジ接続状態監視機能追加、ログシステム再構築](https://www.emqx.com/ja/blog/nanomq-newsletter-202209) ([Edit](https://github.com/emqx/blog/blob/main/ja/202305/nanomq-newsletter-202209.md))
+
+
+## [適用シナリオ](https://www.emqx.com/ja/blog/category/use-cases)
+
+- [ヘルスケアにおけるIoT: MQTTで医療ラボ機器を接続](https://www.emqx.com/ja/blog/iot-in-healthcare-connecting-medical-lab-devices-with-mqtt) ([Edit](https://github.com/emqx/blog/blob/main/ja/202404/iot-in-healthcare-connecting-medical-lab-devices-with-mqtt.md))
