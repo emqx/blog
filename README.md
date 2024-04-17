@@ -185,6 +185,7 @@ Explore more with & via EMQ.
 ## [EMQX Open Source | Broker](https://www.emqx.com/en/blog/category/emqx)
 EMQX is the world's most scalable open-source MQTT broker with a high performance that connects 100M+ IoT devices in 1 cluster, while maintaining 1M message per second throughput and sub-millisecond latency.
 
+- [Bridging MQTT Messages to the Cloud with Mosquitto Bridge](https://www.emqx.com/en/blog/bridging-mosquitto-to-emqx-cluster) ([Edit](https://github.com/emqx/blog/blob/main/en/202404/bridging-mosquitto-to-emqx-cluster.md))
 - [Next-Level IoT Performance: What's New in EMQX Dedicated v5](https://www.emqx.com/en/blog/next-level-iot-performance-what-s-new-in-emqx-dedicated-v-5) ([Edit](https://github.com/emqx/blog/blob/main/en/202404/next-level-iot-performance-what-s-new-in-emqx-dedicated-v-5.md))
 - [Manage Your IoT System with Deeper Insights: Apply for EMQX Dedicated's Event History](https://www.emqx.com/en/blog/apply-for-emqx-dedicated-event-history) ([Edit](https://github.com/emqx/blog/blob/main/en/202404/apply-for-emqx-dedicated-event-history.md))
 - [EMQX: Your Next Step in IoT Evolution Post-CloudMQTT ](https://www.emqx.com/en/blog/emqx-your-next-step-in-iot-evolution-post-cloudmqtt) ([Edit](https://github.com/emqx/blog/blob/main/en/202404/emqx-your-next-step-in-iot-evolution-post-cloudmqtt.md))
@@ -221,7 +222,6 @@ EMQX is the world's most scalable open-source MQTT broker with a high performanc
 - [EMQX Is Released in Several Versions  | EMQX Newsletter 202211](https://www.emqx.com/en/blog/emqx-newsletter-202211) ([Edit](https://github.com/emqx/blog/blob/main/en/202212/emqx-newsletter-202211.md))
 - [Get Started with MQTT over QUIC: A Quick Guide for The Next-generation IoT Standard Protocol](https://www.emqx.com/en/blog/getting-started-with-mqtt-over-quic-from-scratch) ([Edit](https://github.com/emqx/blog/blob/main/en/202212/getting-started-with-mqtt-over-quic-from-scratch.md))
 - [Optimization of EMQX 5.0: The Throughput Performance of ExProto Improves | Newsletter 202209](https://www.emqx.com/en/blog/emqx-newsletter-202209) ([Edit](https://github.com/emqx/blog/blob/main/en/202210/emqx-newsletter-202209.md))
-- [Bridging Mosquitto MQTT Messages to EMQX](https://www.emqx.com/en/blog/bridging-mosquitto-to-emqx-cluster) ([Edit](https://github.com/emqx/blog/blob/main/en/202210/bridging-mosquitto-to-emqx-cluster.md))
 - [How to Install an MQTT Broker on Ubuntu](https://www.emqx.com/en/blog/how-to-install-emqx-mqtt-broker-on-ubuntu) ([Edit](https://github.com/emqx/blog/blob/main/en/202210/how-to-install-emqx-mqtt-broker-on-ubuntu.md))
 - [New IoT Data Integration: Flow Editor & Bidirectional Data Bridging](https://www.emqx.com/en/blog/iot-data-integration) ([Edit](https://github.com/emqx/blog/blob/main/en/202209/iot-data-integration.md))
 - [Connecting CoAP Devices to EMQX](https://www.emqx.com/en/blog/connecting-coap-devices-to-emqx) ([Edit](https://github.com/emqx/blog/blob/main/en/202209/connecting-coap-devices-to-emqx.md))
