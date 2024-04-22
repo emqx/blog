@@ -182,4 +182,5 @@ NanoMQ is an MQTT messaging broker + multi-protocol message bus for edge computi
 
 ## [適用シナリオ](https://www.emqx.com/ja/blog/category/use-cases)
 
+- [TSPプラットフォームの革新：EMQXで自動車のコネクティビティを実現](https://www.emqx.com/ja/blog/revolutionizing-tsp-platforms) ([Edit](https://github.com/emqx/blog/blob/main/ja/202404/revolutionizing-tsp-platforms.md))
 - [ヘルスケアにおけるIoT: MQTTで医療ラボ機器を接続](https://www.emqx.com/ja/blog/iot-in-healthcare-connecting-medical-lab-devices-with-mqtt) ([Edit](https://github.com/emqx/blog/blob/main/ja/202404/iot-in-healthcare-connecting-medical-lab-devices-with-mqtt.md))
