@@ -7,6 +7,7 @@
 ## [MQTT Tutorials](https://www.emqx.com/en/blog/category/mqtt-protocol)
 Get to know the preferred protocol in IoT from beginner to master.
 
+- [Exploring MQTT vs CoAP: Comparing Protocols for IoT Connectivity](https://www.emqx.com/en/blog/mqtt-vs-coap) ([Edit](https://github.com/emqx/blog/blob/main/en/202404/mqtt-vs-coap.md))
 - [8 IoT Protocols and Standards Worth Exploring in 2024](https://www.emqx.com/en/blog/iot-protocols-mqtt-coap-lwm2m) ([Edit](https://github.com/emqx/blog/blob/main/en/202403/iot-protocols-mqtt-coap-lwm2m.md))
 - [What Is the MQTT Protocol: A Beginner's Guide](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) ([Edit](https://github.com/emqx/blog/blob/main/en/202403/the-easiest-guide-to-getting-started-with-mqtt.md))
 - [MQTT Ports: Common Ports and How to Configure and Secure Them](https://www.emqx.com/en/blog/mqtt-ports) ([Edit](https://github.com/emqx/blog/blob/main/en/202312/mqtt-ports.md))
@@ -104,6 +105,7 @@ Get to know the preferred protocol in IoT from beginner to master.
 ## [MQTT Programming](https://www.emqx.com/en/blog/category/mqtt-programming)
 Best practice of MQTT in various clients.
 
+- [How to Use MQTT in Rust with Rumqttc Client](https://www.emqx.com/en/blog/how-to-use-mqtt-in-rust) ([Edit](https://github.com/emqx/blog/blob/main/en/202404/how-to-use-mqtt-in-rust.md))
 - [Remotely Control an LED with ESP8266 and MQTT](https://www.emqx.com/en/blog/esp8266_mqtt_led) ([Edit](https://github.com/emqx/blog/blob/main/en/202403/esp8266_mqtt_led.md))
 - [MQTT with Qt6: A Beginner's Guide with Examples](https://www.emqx.com/en/blog/how-to-create-an-mqtt-application-in-qt6) ([Edit](https://github.com/emqx/blog/blob/main/en/202403/how-to-create-an-mqtt-application-in-qt6.md))
 - [How to Use MQTT in Python with Paho Client](https://www.emqx.com/en/blog/how-to-use-mqtt-in-python) ([Edit](https://github.com/emqx/blog/blob/main/en/202403/how-to-use-mqtt-in-python.md))
@@ -127,7 +129,6 @@ Best practice of MQTT in various clients.
 - [How to use MQTT in Flask](https://www.emqx.com/en/blog/how-to-use-mqtt-in-flask) ([Edit](https://github.com/emqx/blog/blob/main/en/202205/how-to-use-mqtt-in-flask.md))
 - [How to use MQTT in PHP](https://www.emqx.com/en/blog/how-to-use-mqtt-in-php) ([Edit](https://github.com/emqx/blog/blob/main/en/202108/how-to-use-mqtt-in-php.md))
 - [Python MQTT Asynchronous Framework - HBMQTT](https://www.emqx.com/en/blog/python-async-mqtt-client-hbmqtt) ([Edit](https://github.com/emqx/blog/blob/main/en/202104/python-async-mqtt-client-hbmqtt.md))
-- [How to use MQTT in Rust](https://www.emqx.com/en/blog/how-to-use-mqtt-in-rust) ([Edit](https://github.com/emqx/blog/blob/main/en/202011/how-to-use-mqtt-in-rust.md))
 - [How to use MQTT in the Electron project](https://www.emqx.com/en/blog/how-to-use-mqtt-in-electron) ([Edit](https://github.com/emqx/blog/blob/main/en/202010/how-to-use-mqtt-in-electron.md))
 - [How to use MQTT in the Vue project](https://www.emqx.com/en/blog/how-to-use-mqtt-in-vue) ([Edit](https://github.com/emqx/blog/blob/main/en/202010/how-to-use-mqtt-in-vue.md))
 - [Comparison of Python MQTT Clients](https://www.emqx.com/en/blog/comparision-of-python-mqtt-client) ([Edit](https://github.com/emqx/blog/blob/main/en/202010/comparision-of-python-mqtt-client.md))
@@ -453,6 +454,7 @@ Build a reliable, efficient and industry-specific Internet of Vehicles platform 
 
 ## [Industrial IoT | Unified Namespace | Sparkplug](https://www.emqx.com/en/blog/category/industrial-iot)
 
+- [Unified Namespace (UNS): Introduction and Its Applications in IIoT](https://www.emqx.com/en/blog/unified-namespace-next-generation-data-fabric-for-iiot) ([Edit](https://github.com/emqx/blog/blob/main/en/202404/unified-namespace-next-generation-data-fabric-for-iiot.md))
 - [OPC UA vs. OPC DA: Differences and Which to Choose](https://www.emqx.com/en/blog/opc-ua-vs-opc-da) ([Edit](https://github.com/emqx/blog/blob/main/en/202404/opc-ua-vs-opc-da.md))
 - [MQTT Sparkplug in Action: A Step-by-Step Tutorial](https://www.emqx.com/en/blog/mqtt-sparkplug-in-action-a-step-by-step-tutorial) ([Edit](https://github.com/emqx/blog/blob/main/en/202402/mqtt-sparkplug-in-action-a-step-by-step-tutorial.md))
 - [MQTT Sparkplug: Bridging IT and OT for IIoT in Industry 4.0](https://www.emqx.com/en/blog/mqtt-sparkplug-bridging-it-and-ot-in-industry-4-0) ([Edit](https://github.com/emqx/blog/blob/main/en/202402/mqtt-sparkplug-bridging-it-and-ot-in-industry-4-0.md))
@@ -495,7 +497,6 @@ Build a reliable, efficient and industry-specific Internet of Vehicles platform 
 - [IIoT Explained: Examples, Technologies, Benefits and Challenges](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges) ([Edit](https://github.com/emqx/blog/blob/main/en/202308/iiot-explained-examples-technologies-benefits-and-challenges.md))
 - [The Smart Manufacturing Revolution: Examples, Tech & Tips](https://www.emqx.com/en/blog/the-smart-manufacturing-revolution) ([Edit](https://github.com/emqx/blog/blob/main/en/202307/the-smart-manufacturing-revolution.md))
 - [Bridging TwinCAT Data to MQTT: Introduction and Hands-on Tutorial](https://www.emqx.com/en/blog/bridging-twincat-data-to-mqtt) ([Edit](https://github.com/emqx/blog/blob/main/en/202307/bridging-twincat-data-to-mqtt.md))
-- [Unified Namespace (UNS): Next-Generation Data Fabric for IIoT](https://www.emqx.com/en/blog/unified-namespace-next-generation-data-fabric-for-iiot) ([Edit](https://github.com/emqx/blog/blob/main/en/202307/unified-namespace-next-generation-data-fabric-for-iiot.md))
 - [Efficiency Comparison: OPC-UA, Modbus, MQTT, Sparkplug, HTTP](https://www.emqx.com/en/blog/efficiency-comparison-opc-ua-modbus-mqtt-sparkplug-http) ([Edit](https://github.com/emqx/blog/blob/main/en/202306/efficiency-comparison-opc-ua-modbus-mqtt-sparkplug-http.md))
 - [Bridging Modbus Data to MQTT for IIoT:  A Step-by-Step Tutorial](https://www.emqx.com/en/blog/bridging-modbus-data-to-mqtt-for-iiot) ([Edit](https://github.com/emqx/blog/blob/main/en/202306/bridging-modbus-data-to-mqtt-for-iiot.md))
 - [Sparkplug 3.0: Advancements & Formalization in MQTT for IIoT](https://www.emqx.com/en/blog/sparkplug-3-0-advancements-and-formalization-in-mqtt-for-iiot) ([Edit](https://github.com/emqx/blog/blob/main/en/202306/sparkplug-3-0-advancements-and-formalization-in-mqtt-for-iiot.md))

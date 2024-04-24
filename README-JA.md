@@ -157,6 +157,7 @@ Build a reliable, efficient and industry-specific Internet of Vehicles platform 
 ## [MQTTX](https://www.emqx.com/ja/blog/category/mqttx)
 MQTTX is a Fully Open-source MQTT 5.0 cross-platform Desktop Client, makes it easy and quick to create multiple simultaneous online MQTT client connections, test the connection, publish, and subscribe functions of MQTT/TCP, MQTT/TLS, MQTT/WebSocket as well as other MQTT protocol features.
 
+- [Mosquitto_pub/subの主な機能、制限事項、代替案](https://www.emqx.com/ja/blog/mosquitto-pub-and-mosquitto-sub) ([Edit](https://github.com/emqx/blog/blob/main/ja/202404/mosquitto-pub-and-mosquitto-sub.md))
 - [MQTT 5.0 新機能を実践して体験: MQTTX CLI ベースの使用例](https://www.emqx.com/ja/blog/demonstrate-mqtt-5-0-features-using-mqttx-cli) ([Edit](https://github.com/emqx/blog/blob/main/ja/202309/demonstrate-mqtt-5-0-features-using-mqttx-cli.md))
 - [シミュレーション自動化ソリューション:ChatGPTとMQTTXを使ったIoTシナリオの作成](https://www.emqx.com/ja/blog/simulating-the-future-crafting-iot-scenarios-with-chatgpt-and-mqttx) ([Edit](https://github.com/emqx/blog/blob/main/ja/202309/simulating-the-future-crafting-iot-scenarios-with-chatgpt-and-mqttx.md))
 

@@ -116,6 +116,15 @@ An ad hoc namespace, on the other hand, is a temporary or informal way of organi
 
 For example, if a manufacturing plant experiences a sudden equipment failure, an ad hoc namespace might be created to group together all the devices and data points related to that equipment in order to quickly diagnose and fix the problem.
 
+## Unified Namespace Solution with EMQX and NeuronEX
+
+The Unified Namespace (UNS) concept redefines data access, allowing all network participants to interact with information, irrespective of its physical location. EMQX MQTT Platform and NeuronEX industrial gateway are popular choices for implementing UNS due to their efficiency and scalability.
+
+EMQX plays a pivotal role as the central messaging broker, strategically positioned at its core. NeuronEX supports the EMQX to access OT sensors and devices with various industrial protocols. As the key components for data communication and message routing, EMQX and NeuronEX together act as the primary conduit connecting data sources, such as devices, sensors, and machines to data consumers, which includes ERP and MES applications, databases, and analytics platforms. This intermediary role enables seamless data exchange within the manufacturing ecosystem, facilitating the flow of information critical to real-time monitoring, control, and analysis.
+
+Learn more: [Implementing Unified Namespace Using EMQX and Neuron](https://www.emqx.com/en/blog/implementing-unified-namespace-using-emqx-and-neuron).
+
+
 ## Conclusion
 
 The UNS simplifies device communication and data management, as devices and data points only need to know the topic that the device or data they want to communicate with is publishing or subscribing to, rather than the exact location or network of the device or data.
