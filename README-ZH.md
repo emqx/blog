@@ -501,6 +501,7 @@ Build a reliable, efficient and industry-specific Internet of Vehicles platform 
 ## [MQTTX](https://www.emqx.com/zh/blog/category/mqttx)
 MQTTX is a Fully Open-source MQTT 5.0 cross-platform Desktop Client, makes it easy and quick to create multiple simultaneous online MQTT client connections, test the connection, publish, and subscribe functions of MQTT/TCP, MQTT/TLS, MQTT/WebSocket as well as other MQTT protocol features.
 
+- [MQTTX 1.9.10 发布：升级 Faker.js、增强连接与订阅诊断、优化 UI ](https://www.emqx.com/zh/blog/mqttx-1-9-10-release-notes) ([Edit](https://github.com/emqx/blog/blob/main/zh/202404/mqttx-1-9-10-release-notes.md))
 - [如何在 MQTT 中发布和接收 Protobuf 消息？](https://www.emqx.com/zh/blog/how-to-publish-and-receive-protobuf-messages-within-mqtt) ([Edit](https://github.com/emqx/blog/blob/main/zh/202404/how-to-publish-and-receive-protobuf-messages-within-mqtt.md))
 - [MQTTX 1.9.9 发布：新增日志级别自定义功能、UI 增强](https://www.emqx.com/zh/blog/mqttx-1-9-9-release-notes) ([Edit](https://github.com/emqx/blog/blob/main/zh/202402/mqttx-1-9-9-release-notes.md))
 - [MQTTX 1.9.8 发布：CLI 支持调试模式、AI Copilot 增强](https://www.emqx.com/zh/blog/mqttx-1-9-8-release-notes) ([Edit](https://github.com/emqx/blog/blob/main/zh/202401/mqttx-1-9-8-release-notes.md))
