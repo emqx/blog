@@ -187,6 +187,7 @@ Explore more with & via EMQ.
 ## [EMQX Open Source | Broker](https://www.emqx.com/en/blog/category/emqx)
 EMQX is the world's most scalable open-source MQTT broker with a high performance that connects 100M+ IoT devices in 1 cluster, while maintaining 1M message per second throughput and sub-millisecond latency.
 
+- [A Comprehensive Guide to Migrating from CloudMQTT to EMQX](https://www.emqx.com/en/blog/a-comprehensive-guide-to-migrating-from-cloudmqtt-to-emqx) ([Edit](https://github.com/emqx/blog/blob/main/en/202404/a-comprehensive-guide-to-migrating-from-cloudmqtt-to-emqx.md))
 - [From Basics to Brilliance: Exploring EMQX Open Source vs. Enterprise Edition](https://www.emqx.com/en/blog/emqx-open-source-vs-enterprise) ([Edit](https://github.com/emqx/blog/blob/main/en/202404/emqx-open-source-vs-enterprise.md))
 - [Bridging MQTT Messages to the Cloud with Mosquitto Bridge](https://www.emqx.com/en/blog/bridging-mosquitto-to-emqx-cluster) ([Edit](https://github.com/emqx/blog/blob/main/en/202404/bridging-mosquitto-to-emqx-cluster.md))
 - [Next-Level IoT Performance: What's New in EMQX Dedicated v5](https://www.emqx.com/en/blog/next-level-iot-performance-what-s-new-in-emqx-dedicated-v-5) ([Edit](https://github.com/emqx/blog/blob/main/en/202404/next-level-iot-performance-what-s-new-in-emqx-dedicated-v-5.md))
