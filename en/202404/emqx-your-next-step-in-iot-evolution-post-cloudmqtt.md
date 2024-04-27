@@ -30,7 +30,7 @@ With EMQX, you gain more than a platform; you gain a partnership in securing and
 
 ## **Looking Forward** 
 
-This announcement marks the beginning of our **two-part** blog series. While today we introduce EMQX as a robust alternative for CloudMQTT users, our upcoming post will provide a detailed, step-by-step migration guide to help you transition smoothly and leverage EMQX’s advanced features for your IoT deployments. 
+This announcement marks the beginning of our **two-part** blog series. While today we introduce EMQX as a robust alternative for CloudMQTT users, our upcoming post will provide a detailed, [step-by-step migration guide](https://www.emqx.com/en/blog/a-comprehensive-guide-to-migrating-from-cloudmqtt-to-emqx) to help you transition smoothly and leverage EMQX’s advanced features for your IoT deployments. 
 
 Stay tuned, and rest assured, your IoT deployments are in capable hands with EMQX. 
 
