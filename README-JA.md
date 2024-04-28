@@ -108,6 +108,7 @@ The easiest way to start MQTT service. Connect your IoT devices to any cloud wit
 ## [EMQX Enterprise](https://www.emqx.com/ja/blog/category/enterprise)
 The world's most scalable and reliable MQTT messaging platform to connect, move and process your data in business-critical scenarios for the IoT era.
 
+- [MQTTからKafkaへ：メリット、ユースケース、クイックガイド](https://www.emqx.com/ja/blog/mqtt-and-kafka) ([Edit](https://github.com/emqx/blog/blob/main/ja/202404/mqtt-and-kafka.md))
 - [MQTTでファイル転送:ワン・プロトコルで簡単に大容量ペイロードを送信](https://www.emqx.com/ja/blog/file-transfer-over-mqtt) ([Edit](https://github.com/emqx/blog/blob/main/ja/202308/file-transfer-over-mqtt.md))
 - [MQTT Sparkplugのステップ・バイ・ステップ・チュートリアル](https://www.emqx.com/ja/blog/mqtt-sparkplug-in-action-a-step-by-step-tutorial) ([Edit](https://github.com/emqx/blog/blob/main/ja/202308/mqtt-sparkplug-in-action-a-step-by-step-tutorial.md))
 - [Terraformを使用したEMQX MQTT ブローカーのAWSへのワンクリックデプロイメントガイド](https://www.emqx.com/ja/blog/one-click-deploying-emqx-mqtt-broker-on-aws-using-terraform) ([Edit](https://github.com/emqx/blog/blob/main/ja/202307/one-click-deploying-emqx-mqtt-broker-on-aws-using-terraform.md))
