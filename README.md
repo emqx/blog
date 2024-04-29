@@ -677,6 +677,7 @@ Guarantee the availability and reliability of the IoT platform.
 
 ## [Use Cases](https://www.emqx.com/en/blog/category/use-cases)
 
+- [Game On! The One MQTT Platform for Seamless Real-Time Communication in Gaming](https://www.emqx.com/en/blog/mqtt-messaging-platform-enhances-real-time-game-communication) ([Edit](https://github.com/emqx/blog/blob/main/en/202404/mqtt-messaging-platform-enhances-real-time-game-communication.md))
 - [IoT in Healthcare: Connecting Medical Lab Devices with MQTT](https://www.emqx.com/en/blog/iot-in-healthcare-connecting-medical-lab-devices-with-mqtt) ([Edit](https://github.com/emqx/blog/blob/main/en/202404/iot-in-healthcare-connecting-medical-lab-devices-with-mqtt.md))
 - [Smart Water Operation and Management with EMQX MQTT Platform](https://www.emqx.com/en/blog/building-a-smart-water-platform) ([Edit](https://github.com/emqx/blog/blob/main/en/202402/building-a-smart-water-platform.md))
 - [Building a Smart Water Plant with EMQX MQTT Platform and Digital Twin Technology](https://www.emqx.com/en/blog/smart-water-use-case) ([Edit](https://github.com/emqx/blog/blob/main/en/202401/smart-water-use-case.md))
