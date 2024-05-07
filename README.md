@@ -105,6 +105,7 @@ Get to know the preferred protocol in IoT from beginner to master.
 ## [MQTT Programming](https://www.emqx.com/en/blog/category/mqtt-programming)
 Best practice of MQTT in various clients.
 
+- [How to Use MQTT in the Flutter Project](https://www.emqx.com/en/blog/using-mqtt-in-flutter) ([Edit](https://github.com/emqx/blog/blob/main/en/202405/using-mqtt-in-flutter.md))
 - [How to Use MQTT in Rust with Rumqttc Client](https://www.emqx.com/en/blog/how-to-use-mqtt-in-rust) ([Edit](https://github.com/emqx/blog/blob/main/en/202404/how-to-use-mqtt-in-rust.md))
 - [Remotely Control an LED with ESP8266 and MQTT](https://www.emqx.com/en/blog/esp8266_mqtt_led) ([Edit](https://github.com/emqx/blog/blob/main/en/202403/esp8266_mqtt_led.md))
 - [MQTT with Qt6: A Beginner's Guide with Examples](https://www.emqx.com/en/blog/how-to-create-an-mqtt-application-in-qt6) ([Edit](https://github.com/emqx/blog/blob/main/en/202403/how-to-create-an-mqtt-application-in-qt6.md))
@@ -132,7 +133,6 @@ Best practice of MQTT in various clients.
 - [How to use MQTT in the Electron project](https://www.emqx.com/en/blog/how-to-use-mqtt-in-electron) ([Edit](https://github.com/emqx/blog/blob/main/en/202010/how-to-use-mqtt-in-electron.md))
 - [How to use MQTT in the Vue project](https://www.emqx.com/en/blog/how-to-use-mqtt-in-vue) ([Edit](https://github.com/emqx/blog/blob/main/en/202010/how-to-use-mqtt-in-vue.md))
 - [Comparison of Python MQTT Clients](https://www.emqx.com/en/blog/comparision-of-python-mqtt-client) ([Edit](https://github.com/emqx/blog/blob/main/en/202010/comparision-of-python-mqtt-client.md))
-- [Using MQTT in The Flutter Project](https://www.emqx.com/en/blog/using-mqtt-in-flutter) ([Edit](https://github.com/emqx/blog/blob/main/en/202007/using-mqtt-in-flutter.md))
 - [Android and MQTT: Step by Step Guide](https://www.emqx.com/en/blog/android-connects-mqtt-using-kotlin) ([Edit](https://github.com/emqx/blog/blob/main/en/202006/android-connects-mqtt-using-kotlin.md))
 - [ESP8266 Connects to MQTT Broker with Arduino](https://www.emqx.com/en/blog/esp8266-connects-to-the-public-mqtt-broker) ([Edit](https://github.com/emqx/blog/blob/main/en/202005/esp8266-connects-to-the-public-mqtt-broker.md))
 - [Upload Sensor Data to MQTT Cloud Service via NodeMCU (ESP8266)](https://www.emqx.com/en/blog/upload-sensor-data-to-mqtt-cloud-service-via-nodemcu-esp8266) ([Edit](https://github.com/emqx/blog/blob/main/en/201912/upload-sensor-data-to-mqtt-cloud-service-via-nodemcu-esp8266.md))
