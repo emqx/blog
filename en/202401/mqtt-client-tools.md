@@ -98,7 +98,7 @@ MQTT Explorer is an open-source MQTT client tool that provides an easy-to-use gr
 
 MQTT Explorer supports MQTT 5.0 and 3.1.1 protocols and allows developers to simultaneously create one MQTT/MQTTS connection.
 
-MQTT Explorer is written in Typescript and developed by [Thomas Nordquist](https://github.com/thomasnordquist). It’s cross-platform and can run on Windows, macOS, and Linux. It’s a pity that the project has been out of development since the last release of version 0.4.0-beta1 on April 28, 2020.
+MQTT Explorer is written in Typescript and developed by [Thomas Nordquist](https://github.com/thomasnordquist). It’s cross-platform and can run on Windows, macOS, and Linux.
 
 GitHub: https://github.com/thomasnordquist/MQTT-Explorer
 
