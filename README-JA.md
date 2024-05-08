@@ -76,6 +76,7 @@ Best practice of MQTT in various clients.
 ## [MQTT Integration (Eco & Integration)](https://www.emqx.com/ja/blog/category/eco-and-integration)
 Explore more with & via EMQ.
 
+- [MQTTとClickHouseの統合: IoTデータのリアルタイム分析を促進](https://www.emqx.com/ja/blog/mqtt-to-clickhouse-integration) ([Edit](https://github.com/emqx/blog/blob/main/ja/202405/mqtt-to-clickhouse-integration.md))
 - [MQTT から Webhook への連携: IoT アプリケーションの拡張](https://www.emqx.com/ja/blog/mqtt-to-webhook) ([Edit](https://github.com/emqx/blog/blob/main/ja/202404/mqtt-to-webhook.md))
 - [EMQX CloudのMQTTデータをAWS DynamoDBに保存可能です](https://www.emqx.com/ja/blog/save-mqtt-data-from-emqx-cloud-to-aws-dynamodb-through-the-public-network) ([Edit](https://github.com/emqx/blog/blob/main/ja/202305/save-mqtt-data-from-emqx-cloud-to-aws-dynamodb-through-the-public-network.md))
 - [EMQX Enterprise + Apache Kafka 高性能なIoTメッセージ処理バックエンドの構築](https://www.emqx.com/ja/blog/emqx-enterprise-mqtt-broker-apache-kafka-build-high-performance-iot-message-processing-backend) ([Edit](https://github.com/emqx/blog/blob/main/ja/202305/emqx-enterprise-mqtt-broker-apache-kafka-build-high-performance-iot-message-processing-backend.md))
