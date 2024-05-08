@@ -50,6 +50,6 @@ jobs:
         with:
           source_branch: ${{ steps.sync_blog.outputs.branch }}
           destination_branch: main
-          github_token: ${{ secrets.CI_GIT_TOKEN }}
+          github_token: ${{ secrets.GROWTH_CI_TOKEN }}
           pr_title: "sync blogs ${{ steps.sync_blog.outputs.branch }}"
           pr_reviewer: "CrazyWisdom,Red-Asuka,Swilder-M"
