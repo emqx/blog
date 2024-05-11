@@ -8,7 +8,7 @@ In the fourth blog of the “[2023 MQTT Broker Comparison](https://www.emqx.com/
 
 ## EMQX Overview
 
-The EMQX project was launched on GitHub in 2012 and is licensed under Apache version 2.0. The idea for EMQX originated from the need for a massively scalable MQTT broker that could handle millions of concurrent connections.
+The EMQX project was launched on GitHub in 2012 and is licensed under Apache version 2.0 for the open-source edition, while the enterprise edition is licensed under the Business Source License 1.1. The following content refers to the EMQX open-source edition unless specified otherwise. The idea for EMQX originated from the need for a massively scalable MQTT broker that could handle millions of concurrent connections.
 
 EMQX is now the world's most scalable MQTT messaging server with a distributed architecture based on [Mria + RLOG](https://www.emqx.com/en/blog/how-emqx-5-0-achieves-100-million-mqtt-connections). EMQX 5.0, the latest version, scales to establish 100 million concurrent MQTT connections with a single cluster of 23 nodes.
 
