@@ -441,7 +441,7 @@ Build a reliable, efficient and industry-specific Internet of Vehicles platform 
 - [工业物联网数据桥接教程：KNX 桥接到 MQTT](https://www.emqx.com/zh/blog/bridging-knx-data-to-mqtt-introduction-and-hands-on-tutorial) ([Edit](https://github.com/emqx/blog/blob/main/zh/202401/bridging-knx-data-to-mqtt-introduction-and-hands-on-tutorial.md))
 - [KNX 协议：基础知识及其在 IoT 领域的应用](https://www.emqx.com/zh/blog/knx-protocol) ([Edit](https://github.com/emqx/blog/blob/main/zh/202401/knx-protocol.md))
 - [Omron FINS 协议：基础知识及其与 MQTT 桥接的优势](https://www.emqx.com/zh/blog/omron-fins-protocol) ([Edit](https://github.com/emqx/blog/blob/main/zh/202401/omron-fins-protocol.md))
-- [TwinCAT 协议：发展历程与架构](https://www.emqx.com/zh/blog/twincat-protocol) ([Edit](https://github.com/emqx/blog/blob/main/zh/202401/twincat-protocol.md))
+- [TwinCAT：发展历程与架构](https://www.emqx.com/zh/blog/twincat-protocol) ([Edit](https://github.com/emqx/blog/blob/main/zh/202401/twincat-protocol.md))
 - [智能制造领域的数据存储技术和策略](https://www.emqx.com/zh/blog/data-storage-techniques-and-strategies-for-smart-manufacturing) ([Edit](https://github.com/emqx/blog/blob/main/zh/202312/data-storage-techniques-and-strategies-for-smart-manufacturing.md))
 - [云边混合计算：实现智能制造领域的高效数据管理与分析](https://www.emqx.com/zh/blog/leveraging-the-hybrid-computing-for-data-management-and-analysis) ([Edit](https://github.com/emqx/blog/blob/main/zh/202312/leveraging-the-hybrid-computing-for-data-management-and-analysis.md))
 - [基于 Neuron 和 EMQX 的智能制造数据管理实践](https://www.emqx.com/zh/blog/practical-data-management-for-smart-manufacturing) ([Edit](https://github.com/emqx/blog/blob/main/zh/202312/practical-data-management-for-smart-manufacturing.md))
