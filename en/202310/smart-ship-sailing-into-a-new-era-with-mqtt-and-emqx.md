@@ -86,7 +86,9 @@ EMQ is the world's leading software provider of open-source IoT data infrastruct
 
 Our core product EMQX, the world's most scalable and reliable open-source MQTT messaging platform, supports 100M concurrent IoT device connections per cluster while maintaining 1M message per second throughput and sub-millisecond latency.
 
+By utilizing EMQX, ship owners and operators can build a scalable, highly reliable, and secure IoT data communication infrastructure, making the vision of smart ships a reality. The journey of digital transformation in the maritime industry has just begun, but MQTT and EMQX will serve as powerful drivers in navigating these vast waters.
 
+Consider adopting MQTT and EMQX to smarten your ships and enhance efficiency, safety, and sustainability. We at EMQ look forward to supporting the realization of your smart ship projects.
 
 <section class="promotion">
     <div>
