@@ -183,6 +183,7 @@ Explore more with & via EMQ.
 ## [EMQX Open Source | Broker](https://www.emqx.com/zh/blog/category/emqx)
 EMQX is the world's most scalable open-source MQTT broker with a high performance that connects 100M+ IoT devices in 1 cluster, while maintaining 1M message per second throughput and sub-millisecond latency.
 
+- [数据驱动制造：EMQX ECP 指标监测功能增强生产透明度](https://www.emqx.com/zh/blog/emqx-ecp-metrics-monitoring) ([Edit](https://github.com/emqx/blog/blob/main/zh/202405/emqx-ecp-metrics-monitoring.md))
 - [探索 EMQX 的可扩展性：EMQX 5.x 的插件机制解析](https://www.emqx.com/zh/blog/exploring-the-extensibility-of-emqx) ([Edit](https://github.com/emqx/blog/blob/main/zh/202402/exploring-the-extensibility-of-emqx.md))
 - [顺丰科技：打造智慧物流数据管理平台](https://www.emqx.com/zh/blog/building-an-intelligent-logistics-data-management-platform) ([Edit](https://github.com/emqx/blog/blob/main/zh/202401/building-an-intelligent-logistics-data-management-platform.md))
 - [EMQX 性能调优：Linux 连接跟踪与 MQTT 连接](https://www.emqx.com/zh/blog/emqx-performance-tuning-linux-conntrack-and-mqtt-connections) ([Edit](https://github.com/emqx/blog/blob/main/zh/202401/emqx-performance-tuning-linux-conntrack-and-mqtt-connections.md))
