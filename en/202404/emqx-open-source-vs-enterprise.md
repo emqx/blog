@@ -53,6 +53,8 @@ Key features that distinguish EMQX as an exemplary MQTT broker for IoT data mess
 
 EMQX Enterprise is not merely an extension of the Open Source edition; it significantly surpasses it by incorporating advanced capabilities, heightened security measures, and dedicated support services.
 
+![EMQX Enterprise](https://assets.emqx.com/images/4aac7967eddb7af05763a95e8e2995d0.jpg)
+
 The choice between EMQX Open Source and EMQX Enterprise hinges on various critical factors that could greatly influence the success of your business. Here are the reasons why EMQX Enterprise is the superior choice:
 
 - **More** **Data Integrations** 
