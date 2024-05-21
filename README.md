@@ -158,6 +158,7 @@ Best practice of MQTT in various clients.
 ## [MQTT Integration (Eco & Integration)](https://www.emqx.com/en/blog/category/eco-and-integration)
 Explore more with & via EMQ.
 
+- [MQTT to PostgreSQL: Integration Tutorial for Efficient Data Management](https://www.emqx.com/en/blog/mqtt-to-postgresql) ([Edit](https://github.com/emqx/blog/blob/main/en/202405/mqtt-to-postgresql.md))
 - [Seamlessly Integrating EMQX with Datadog for Efficient Monitoring](https://www.emqx.com/en/blog/seamlessly-integrating-emqx-with-datadog-for-efficient-monitoring) ([Edit](https://github.com/emqx/blog/blob/main/en/202405/seamlessly-integrating-emqx-with-datadog-for-efficient-monitoring.md))
 - [MQTT & FreeRTOS: Build Your Real-Time Remote Control Application](https://www.emqx.com/en/blog/mqtt-and-freertos) ([Edit](https://github.com/emqx/blog/blob/main/en/202404/mqtt-and-freertos.md))
 - [MQTT to Webhook: Extending IoT Applications](https://www.emqx.com/en/blog/mqtt-to-webhook) ([Edit](https://github.com/emqx/blog/blob/main/en/202403/mqtt-to-webhook.md))
