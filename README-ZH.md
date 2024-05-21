@@ -147,6 +147,7 @@ Best practice of MQTT in various clients.
 ## [MQTT Integration (Eco & Integration)](https://www.emqx.com/zh/blog/category/eco-and-integration)
 Explore more with & via EMQ.
 
+- [高效监控 EMQX：将 EMQX 与 Datadog 无缝集成](https://www.emqx.com/zh/blog/seamlessly-integrating-emqx-with-datadog-for-efficient-monitoring) ([Edit](https://github.com/emqx/blog/blob/main/zh/202405/seamlessly-integrating-emqx-with-datadog-for-efficient-monitoring.md))
 - [利用 Webhook 扩展 MQTT 物联网应用](https://www.emqx.com/zh/blog/mqtt-to-webhook) ([Edit](https://github.com/emqx/blog/blob/main/zh/202404/mqtt-to-webhook.md))
 - [使用 MQTT 和 Redis 构建物联网实时数据统计应用](https://www.emqx.com/zh/blog/mqtt-and-redis) ([Edit](https://github.com/emqx/blog/blob/main/zh/202404/mqtt-and-redis.md))
 - [MQTT & FreeRTOS：打造你的远程控制实时应用](https://www.emqx.com/zh/blog/mqtt-and-freertos) ([Edit](https://github.com/emqx/blog/blob/main/zh/202404/mqtt-and-freertos.md))
