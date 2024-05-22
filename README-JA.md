@@ -86,6 +86,7 @@ Explore more with & via EMQ.
 ## [EMQX Open Source | Broker](https://www.emqx.com/ja/blog/category/emqx)
 EMQX is the world's most scalable open-source MQTT broker with a high performance that connects 100M+ IoT devices in 1 cluster, while maintaining 1M message per second throughput and sub-millisecond latency.
 
+- [基礎から上級：EMQXオープンソース版とエンタープライズ版の比較](https://www.emqx.com/ja/blog/emqx-open-source-vs-enterprise) ([Edit](https://github.com/emqx/blog/blob/main/ja/202405/emqx-open-source-vs-enterprise.md))
 - [スマートシップ：MQTTとEMQXで航海IoTの新時代](https://www.emqx.com/ja/blog/smart-ship-sailing-into-a-new-era-with-mqtt-and-emqx) ([Edit](https://github.com/emqx/blog/blob/main/ja/202405/smart-ship-sailing-into-a-new-era-with-mqtt-and-emqx.md))
 - [CoAPプロトコル：主な特徴、使用例、長所と短所](https://www.emqx.com/ja/blog/coap-protocol) ([Edit](https://github.com/emqx/blog/blob/main/ja/202403/coap-protocol.md))
 - [MQTTパフォーマンス・ベンチマーク: EMQX シングルノード メッセージ レイテンシ と リスポンス時間](https://www.emqx.com/ja/blog/mqtt-performance-benchmark-testing-emqx-single-node-message-latency-response-time) ([Edit](https://github.com/emqx/blog/blob/main/ja/202309/mqtt-performance-benchmark-testing-emqx-single-node-message-latency-response-time.md))
