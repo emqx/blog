@@ -7,6 +7,7 @@
 ## [MQTT Tutorials](https://www.emqx.com/en/blog/category/mqtt-protocol)
 Get to know the preferred protocol in IoT from beginner to master.
 
+- [How to Process JSON, Hex, and Binary Data in MQTT](https://www.emqx.com/en/blog/how-to-process-json-hex-and-binary-data-in-mqtt) ([Edit](https://github.com/emqx/blog/blob/main/en/202405/how-to-process-json-hex-and-binary-data-in-mqtt.md))
 - [Mastering MQTT Analysis with Wireshark: A Beginner's Guide](https://www.emqx.com/en/blog/mastering-mqtt-analysis-with-wireshark) ([Edit](https://github.com/emqx/blog/blob/main/en/202405/mastering-mqtt-analysis-with-wireshark.md))
 - [Exploring MQTT vs CoAP: Comparing Protocols for IoT Connectivity](https://www.emqx.com/en/blog/mqtt-vs-coap) ([Edit](https://github.com/emqx/blog/blob/main/en/202404/mqtt-vs-coap.md))
 - [8 IoT Protocols and Standards Worth Exploring in 2024](https://www.emqx.com/en/blog/iot-protocols-mqtt-coap-lwm2m) ([Edit](https://github.com/emqx/blog/blob/main/en/202403/iot-protocols-mqtt-coap-lwm2m.md))
