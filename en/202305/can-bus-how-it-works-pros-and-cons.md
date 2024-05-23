@@ -242,3 +242,11 @@ In this blog, we have introduced how to collect, process and transfer CAN bus da
 **Related resources**
 - [Unlocking Efficiency: How EMQX Revolutionizes Logistics Fleet Management](https://www.emqx.com/en/blog/how-emqx-revolutionizes-logistics-fleet-management)
 - [What Is V2X and The Future of Vehicle to Everything Connectivity](https://www.emqx.com/en/blog/what-is-v2x-and-the-future-of-vehicle-to-everything-connectivity)
+
+
+<section class="promotion">
+    <div>
+        Talk to an Expert
+    </div>
+    <a href="https://www.emqx.com/en/contact?product=solutions" class="button is-gradient">Contact Us →</a>
+</section>

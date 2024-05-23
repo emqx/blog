@@ -159,6 +159,7 @@ Best practice of MQTT in various clients.
 ## [MQTT Integration (Eco & Integration)](https://www.emqx.com/en/blog/category/eco-and-integration)
 Explore more with & via EMQ.
 
+- [MQTT with Node-RED: A Beginner's Guide with Examples](https://www.emqx.com/en/blog/using-node-red-to-process-mqtt-data) ([Edit](https://github.com/emqx/blog/blob/main/en/202405/using-node-red-to-process-mqtt-data.md))
 - [MQTT to PostgreSQL: Integration Tutorial for Efficient Data Management](https://www.emqx.com/en/blog/mqtt-to-postgresql) ([Edit](https://github.com/emqx/blog/blob/main/en/202405/mqtt-to-postgresql.md))
 - [Seamlessly Integrating EMQX with Datadog for Efficient Monitoring](https://www.emqx.com/en/blog/seamlessly-integrating-emqx-with-datadog-for-efficient-monitoring) ([Edit](https://github.com/emqx/blog/blob/main/en/202405/seamlessly-integrating-emqx-with-datadog-for-efficient-monitoring.md))
 - [MQTT & FreeRTOS: Build Your Real-Time Remote Control Application](https://www.emqx.com/en/blog/mqtt-and-freertos) ([Edit](https://github.com/emqx/blog/blob/main/en/202404/mqtt-and-freertos.md))
@@ -182,7 +183,6 @@ Explore more with & via EMQ.
 - [Monitoring MQTT broker with Prometheus and Grafana](https://www.emqx.com/en/blog/emqx-prometheus-grafana) ([Edit](https://github.com/emqx/blog/blob/main/en/202212/emqx-prometheus-grafana.md))
 - [Getting Data from EMQX Cloud with InfluxDB Native Collector](https://www.emqx.com/en/blog/getting-data-from-emqx-cloud-with-influxdb-native-collector) ([Edit](https://github.com/emqx/blog/blob/main/en/202208/getting-data-from-emqx-cloud-with-influxdb-native-collector.md))
 - [How to access MQTT data with ThingsBoard](https://www.emqx.com/en/blog/how-to-use-thingsboard-to-access-mqtt-data) ([Edit](https://github.com/emqx/blog/blob/main/en/202207/how-to-use-thingsboard-to-access-mqtt-data.md))
-- [Process MQTT data with Node-RED](https://www.emqx.com/en/blog/using-node-red-to-process-mqtt-data) ([Edit](https://github.com/emqx/blog/blob/main/en/202205/using-node-red-to-process-mqtt-data.md))
 - [EMQX + ClickHouse Implements IoT Data Collection and Analysis](https://www.emqx.com/en/blog/emqx-and-clickhouse-for-iot-data-access-and-analysis) ([Edit](https://github.com/emqx/blog/blob/main/en/202011/emqx-and-clickhouse-for-iot-data-access-and-analysis.md))
 - [Build EMQX + InfluxDB + Grafana IoT data visualization solution in one hour](https://www.emqx.com/en/blog/build-emqx-influxdb-grafana-iot-data-visualization-solution-in-one-hour) ([Edit](https://github.com/emqx/blog/blob/main/en/202001/build-emqx-influxdb-grafana-iot-data-visualization-solution-in-one-hour.md))
 - [Upload Sensor Data to MQTT Cloud Service via NodeMCU (ESP8266)](https://www.emqx.com/en/blog/upload-sensor-data-to-mqtt-cloud-service-via-nodemcu-esp8266) ([Edit](https://github.com/emqx/blog/blob/main/en/201912/upload-sensor-data-to-mqtt-cloud-service-via-nodemcu-esp8266.md))

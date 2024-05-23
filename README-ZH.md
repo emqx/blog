@@ -184,6 +184,7 @@ Explore more with & via EMQ.
 ## [EMQX Open Source | Broker](https://www.emqx.com/zh/blog/category/emqx)
 EMQX is the world's most scalable open-source MQTT broker with a high performance that connects 100M+ IoT devices in 1 cluster, while maintaining 1M message per second throughput and sub-millisecond latency.
 
+- [使用 Mosquitto Bridge 将 MQTT 消息桥接到云](https://www.emqx.com/zh/blog/bridging-mosquitto-to-emqx-cluster) ([Edit](https://github.com/emqx/blog/blob/main/zh/202405/bridging-mosquitto-to-emqx-cluster.md))
 - [MQTT-SN 协议详解及使用](https://www.emqx.com/zh/blog/connecting-mqtt-sn-devices-using-emqx) ([Edit](https://github.com/emqx/blog/blob/main/zh/202405/connecting-mqtt-sn-devices-using-emqx.md))
 - [数据驱动制造：EMQX ECP 指标监测功能增强生产透明度](https://www.emqx.com/zh/blog/emqx-ecp-metrics-monitoring) ([Edit](https://github.com/emqx/blog/blob/main/zh/202405/emqx-ecp-metrics-monitoring.md))
 - [探索 EMQX 的可扩展性：EMQX 5.x 的插件机制解析](https://www.emqx.com/zh/blog/exploring-the-extensibility-of-emqx) ([Edit](https://github.com/emqx/blog/blob/main/zh/202402/exploring-the-extensibility-of-emqx.md))
@@ -223,7 +224,6 @@ EMQX is the world's most scalable open-source MQTT broker with a high performanc
 - [EMQX 5.0 全新网关框架：轻松实现多物联网协议接入](https://www.emqx.com/zh/blog/emqx-connects-multiple-iot-protocols) ([Edit](https://github.com/emqx/blog/blob/main/zh/202209/emqx-connects-multiple-iot-protocols.md))
 - [EMQX Newsletter 2022-08｜企业版 5.0 开发进行中、EMQX Kubernetes Operator 2.0 即将发布](https://www.emqx.com/zh/blog/emqx-newsletter-202208) ([Edit](https://github.com/emqx/blog/blob/main/zh/202209/emqx-newsletter-202208.md))
 - [EMQX Operator 如何快速创建弹性伸缩的 MQTT 集群](https://www.emqx.com/zh/blog/create-a-scalable-mqtt-cluster-with-emqx-operator) ([Edit](https://github.com/emqx/blog/blob/main/zh/202208/create-a-scalable-mqtt-cluster-with-emqx-operator.md))
-- [桥接 Mosquitto MQTT  消息至 EMQX](https://www.emqx.com/zh/blog/bridging-mosquitto-to-emqx-cluster) ([Edit](https://github.com/emqx/blog/blob/main/zh/202208/bridging-mosquitto-to-emqx-cluster.md))
 - [如何在 Ubuntu 上安装 EMQX MQTT 服务器](https://www.emqx.com/zh/blog/how-to-install-emqx-mqtt-broker-on-ubuntu) ([Edit](https://github.com/emqx/blog/blob/main/zh/202208/how-to-install-emqx-mqtt-broker-on-ubuntu.md))
 - [易操作、可观测的 MQTT Dashboard，集群数据尽在掌握](https://www.emqx.com/zh/blog/an-easy-to-use-and-observable-mqtt-dashboard) ([Edit](https://github.com/emqx/blog/blob/main/zh/202208/an-easy-to-use-and-observable-mqtt-dashboard.md))
 - [灵活多样认证授权，零开发投入保障 IoT 安全](https://www.emqx.com/zh/blog/securing-the-iot) ([Edit](https://github.com/emqx/blog/blob/main/zh/202208/securing-the-iot.md))
