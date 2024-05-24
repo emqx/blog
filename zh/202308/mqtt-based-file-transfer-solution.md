@@ -47,7 +47,7 @@
 
 在文件传输领域，已经有一些成熟的技术，例如 FTP 和 HTTP。用户可以将 MQTT 与这些技术结合使用：通过 HTTP/FTP 传输文件内容，并利用 MQTT 传输事件和文件位置信息。
 
-![image.png](https://assets.emqx.com/images/2bfb5f981179fafdbaf014e33ab7f48c.png)
+![EMQX 启用文件传输](https://assets.emqx.com/images/2bfb5f981179fafdbaf014e33ab7f48c.png)
 
 <center>结合 HTTP 与 MQTT 的文件传输方案</center>
 
