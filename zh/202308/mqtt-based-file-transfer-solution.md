@@ -80,26 +80,11 @@
 
 MQTT 文件传输在 EMQX 企业版 5.1.0 版本中提供，您可以通过以下步骤快速体验这一流程：
 
-1. 下载 EMQX 企业版 5.1.0 及以上版本：[点此下载](https://www.emqx.com/zh/try?product=enterprise)
+1. 下载并启动 EMQX 企业版最新版本：[点此下载](https://www.emqx.com/zh/try?product=enterprise)
 
-2. 修改 `etc/emqx.conf` 配置文件，启用文件传输功能并设置导出目录：
+2. 登录 Dashboard，打开**管理** -> **文件传输**页面，选择启用文件传输并保存修改：
 
-   ```
-   file_transfer {
-     enable = true
-     storage {
-       local {
-         enable = true
-         exporter {
-           local {
-             enable = true
-             root = "./data/file_exported"
-           }
-         }
-       }
-     }
-   }
-   ```
+   ![image.png](https://assets.emqx.com/images/39a631ba98f806d8f2b470d66876ef83.png)
 
 3. 访问 [MQTT 文件传输客户端开发](https://docs.emqx.com/zh/enterprise/v5.1/file-transfer/client.html) 按照协议流程开发自己的客户端，或根据 [MQTT 文件传输客户端示例](https://docs.emqx.com/zh/enterprise/v5.1/file-transfer/client.html#客户端代码示例) 快速体验 MQTT 文件传输功能。以 Node.js 为例，示例执行过程如下：
 
