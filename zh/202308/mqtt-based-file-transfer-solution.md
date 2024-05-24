@@ -47,7 +47,7 @@
 
 在文件传输领域，已经有一些成熟的技术，例如 FTP 和 HTTP。用户可以将 MQTT 与这些技术结合使用：通过 HTTP/FTP 传输文件内容，并利用 MQTT 传输事件和文件位置信息。
 
-![EMQX 启用文件传输](https://assets.emqx.com/images/2bfb5f981179fafdbaf014e33ab7f48c.png)
+![EMQX MQTT 文件传输应用](https://assets.emqx.com/images/2bfb5f981179fafdbaf014e33ab7f48c.png)
 
 <center>结合 HTTP 与 MQTT 的文件传输方案</center>
 
@@ -84,7 +84,7 @@ MQTT 文件传输在 EMQX 企业版 5.1.0 版本中提供，您可以通过以�
 
 2. 登录 Dashboard，打开**管理** -> **文件传输**页面，选择启用文件传输并保存修改：
 
-   ![image.png](https://assets.emqx.com/images/39a631ba98f806d8f2b470d66876ef83.png)
+   ![EMQX 启用 MQTT 文件传输](https://assets.emqx.com/images/39a631ba98f806d8f2b470d66876ef83.png)
 
 3. 访问 [MQTT 文件传输客户端开发](https://docs.emqx.com/zh/enterprise/v5.1/file-transfer/client.html) 按照协议流程开发自己的客户端，或根据 [MQTT 文件传输客户端示例](https://docs.emqx.com/zh/enterprise/v5.1/file-transfer/client.html#客户端代码示例) 快速体验 MQTT 文件传输功能。以 Node.js 为例，示例执行过程如下：
 
