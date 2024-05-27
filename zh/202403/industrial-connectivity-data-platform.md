@@ -109,7 +109,7 @@ EMQX ECP 一款面向工业 4.0 的工业互联数据平台，旨在满足工业
 
 - **ECP 部署**
 
-  1. 下载最新的 ECP Docker compose [安装包](https://www.emqx.com/zh/downloads-and-install?product=emqx-ecp&version=2.1.1&os=Docker&oslabel=Docker)，然后解压
+  1. 下载最新的 ECP Docker compose [安装包](https://www.emqx.com/zh/downloads-and-install/emqx-ecp)，然后解压
 
      ```shell
      $ tar -xzvf emqx-ecp-docker-compose-installer-2.1.1.tar.gz && cd docker-compose

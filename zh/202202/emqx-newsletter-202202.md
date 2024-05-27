@@ -26,7 +26,7 @@
 
 > 更多版本信息请参阅 [4.4.0 更新日志](https://www.emqx.com/zh/changelogs/broker/4.4.0)。
 >
-> 下载试用传送门：[EMQX 4.4.0](https://www.emqx.io/zh/downloads-and-install?version=4.4.0&os=Docker&oslabel=Docker)。
+> 下载试用传送门：[EMQX 4.4.0](https://www.emqx.com/zh/downloads-and-install/broker)。
 
 ### 维护版本升级
 

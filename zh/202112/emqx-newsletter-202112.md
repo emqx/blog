@@ -22,7 +22,7 @@
 
 此外，新版本还支持动态修改 MQTT Keep Alive，允许用户服务通过 HTTP API 随时更新客户端的 Keep Alive，这一功能将为车联网行业 T-BOX 等设备在不同工况下的能耗策略切换场景提供便利。
 
-4.4.0 版本适配了 Erlang/OTP 24，目前 EMQX 官网也默认提供基于 OTP 24 的安装包下载。我们也保留了基于 OTP 23 的版本，用户可以点击[EMQX Enterprise下载页面](https://www.emqx.com/zh/downloads-and-install?product=enterprise&version=4.4.0&os=Docker&oslabel=Docker)右侧的 `历史版本` 来访问所有版本。我们也在安装包的包名中包含了 OTP 版本以帮助大家分辨。
+4.4.0 版本适配了 Erlang/OTP 24，目前 EMQX 官网也默认提供基于 OTP 24 的安装包下载。
 
 对于正在使用 EMQX Enterprise 4.3.x 的用户，现在我们可以更方便地将 EMQX 从 4.3 版本滚动升级到 4.4 版本。EMQX 4.4 的节点现在能够和 EMQX 4.3 的节点运行在同一个集群下，当然前提是并未启用 4.4.x 中的全新功能（这可能导致集群调用出错）。基于这一点，我们可以依次将集群中的 4.3 节点替换为 4.4 节点，最终在不停止集群服务的情况下，完成版本升级。
 
