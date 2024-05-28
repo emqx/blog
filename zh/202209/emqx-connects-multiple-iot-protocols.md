@@ -76,7 +76,6 @@ EMQX 4.x 中每种类型设备都和 MQTT 使用相同的认证链，这种耦�
 
 在 EMQX 5.0，网关框架允许为每种类型的网关都配置专属于自己的认证器：
 
-> 这个图改一下：只需要 MQTT 与 LwM2M 对比一下就行了，去掉 MQTT-SN 跟其他，将之前的认证器上下排布改为左右排布。
 
 ![EMQX 5.0:独立的客户端认证](https://assets.emqx.com/images/a20d49d9feafe7fa64de03b9e8fdd2dc.png)
 
