@@ -355,6 +355,7 @@ The easiest way to start MQTT service. Connect your IoT devices to any cloud wit
 ## [EMQX Enterprise](https://www.emqx.com/zh/blog/category/enterprise)
 The world's most scalable and reliable MQTT messaging platform to connect, move and process your data in business-critical scenarios for the IoT era.
 
+- [EMQX Enterprise 5.7 发布：新增会话持久化、消息 Schema 验证、规则引擎调试与追踪功能](https://www.emqx.com/zh/blog/emqx-enterprise-5-7-release-notes) ([Edit](https://github.com/emqx/blog/blob/main/zh/202405/emqx-enterprise-5-7-release-notes.md))
 - [EMQX Enterprise 5.6 发布：新增 Amazon S3 数据集成、JSON Schema 验证函数](https://www.emqx.com/zh/blog/emqx-enterprise-5-6-release-notes) ([Edit](https://github.com/emqx/blog/blob/main/zh/202404/emqx-enterprise-5-6-release-notes.md))
 - [利用 MQTT 和 MySQL 构建石油开采实时数据监控应用](https://www.emqx.com/zh/blog/mqtt-to-mysql) ([Edit](https://github.com/emqx/blog/blob/main/zh/202402/mqtt-to-mysql.md))
 - [探索 EMQX 的可扩展性：EMQX 5.x 的插件机制解析](https://www.emqx.com/zh/blog/exploring-the-extensibility-of-emqx) ([Edit](https://github.com/emqx/blog/blob/main/zh/202402/exploring-the-extensibility-of-emqx.md))
