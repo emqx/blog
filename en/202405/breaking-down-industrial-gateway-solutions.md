@@ -2,11 +2,11 @@
 
 In industrial automation, the seamless exchange of data between disparate systems is paramount. Industrial gateway solutions are the key to this exchange, facilitating communication between different devices, protocols, and applications within industrial environments. By translating data formats and protocols, they enable seamless interoperability, thereby enhancing operational efficiency, productivity, and decision-making.
 
-Among the myriad options available, PLC4X, Kepware, and Monkot Server stand out as key players in the field. In this blog, we delve into these industrial gateway solutions to help you make informed decisions for your automation needs.
+Among the myriad options available, Apache PLC4X, Kepware, and Monkot Server stand out as key players in the field. In this blog, we delve into these industrial gateway solutions to help you make informed decisions for your automation needs.
 
-## PLC4X
+## Apache PLC4X
 
-PLC4X is a suite of libraries designed to communicate with industrial programmable logic controllers (PLCs) using a variety of protocols, all accessed through a common API. To use PLC4X, you need to integrate it into your application. Its main feature is that it provides a common API that allows applications to easily connect to different devices through consistent interfaces. However, it's important to note that PLC4X functions primarily as a library module for applications and does not include built-in data filtering and processing capabilities for your application's specific requirements.
+Apache PLC4X is a suite of libraries designed to communicate with industrial programmable logic controllers (PLCs) using a variety of protocols, all accessed through a common API. To use Apache PLC4X, you need to integrate it into your application. Its main feature is that it provides a common API that allows applications to easily connect to different devices through consistent interfaces. However, it's important to note that Apache PLC4X functions primarily as a library module for applications and does not include built-in data filtering and processing capabilities for your application's specific requirements.
 
 ## Kepware
 
@@ -24,7 +24,7 @@ Monokot Server, a newcomer in the industrial gateway landscape, distinguishes it
 
 ### Why NeuronEX Stands out
 
-First of all, NeuronEX goes beyond the limitations of mere protocol conversion. Unlike PLC4X, which serves primarily as a library module for integration into applications, and Kepware and Monokot Server, which act as OPC servers to facilitate protocol conversion, NeuronEX stands out as a robust streaming processing engine at the edge at scale. Its sophisticated suite of edge streaming features provides users with unparalleled capabilities for data filtering, cleansing, standardization, data normalization, analytical inspection and real-time alerting using modern streaming SQL techniques, just like Flink or Spark applications with protocol conversion capabilities running at the edge.
+First of all, NeuronEX goes beyond the limitations of mere protocol conversion. Unlike Apache PLC4X, which serves primarily as a library module for integration into applications, and Kepware and Monokot Server, which act as OPC servers to facilitate protocol conversion, NeuronEX stands out as a robust streaming processing engine at the edge at scale. Its sophisticated suite of edge streaming features provides users with unparalleled capabilities for data filtering, cleansing, standardization, data normalization, analytical inspection and real-time alerting using modern streaming SQL techniques, just like Flink or Spark applications with protocol conversion capabilities running at the edge.
 
 ![A Superior Solution for Your Industrial Automation Needs](https://assets.emqx.com/images/9719882a707599b9b9d0e95a59f2b03d.png)
 
