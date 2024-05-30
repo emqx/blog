@@ -7,6 +7,7 @@
 ## [MQTT Tutorials](https://www.emqx.com/en/blog/category/mqtt-protocol)
 Get to know the preferred protocol in IoT from beginner to master.
 
+- [MQTT vs WebSocket: Key Differences & Applications](https://www.emqx.com/en/blog/mqtt-vs-websocket) ([Edit](https://github.com/emqx/blog/blob/main/en/202405/mqtt-vs-websocket.md))
 - [How to Process JSON, Hex, and Binary Data in MQTT](https://www.emqx.com/en/blog/how-to-process-json-hex-and-binary-data-in-mqtt) ([Edit](https://github.com/emqx/blog/blob/main/en/202405/how-to-process-json-hex-and-binary-data-in-mqtt.md))
 - [Mastering MQTT Analysis with Wireshark: A Beginner's Guide](https://www.emqx.com/en/blog/mastering-mqtt-analysis-with-wireshark) ([Edit](https://github.com/emqx/blog/blob/main/en/202405/mastering-mqtt-analysis-with-wireshark.md))
 - [Exploring MQTT vs CoAP: Comparing Protocols for IoT Connectivity](https://www.emqx.com/en/blog/mqtt-vs-coap) ([Edit](https://github.com/emqx/blog/blob/main/en/202404/mqtt-vs-coap.md))
@@ -374,6 +375,7 @@ The easiest way to start MQTT service. Connect your IoT devices to any cloud wit
 ## [EMQX Enterprise](https://www.emqx.com/en/blog/category/enterprise)
 The world's most scalable and reliable MQTT messaging platform to connect, move and process your data in business-critical scenarios for the IoT era.
 
+- [EMQX Enterprise 5.7 Released: Durable Sessions, Message Schema Validation, and Advanced Rule Engine Capabilities](https://www.emqx.com/en/blog/emqx-enterprise-5-7-release-notes) ([Edit](https://github.com/emqx/blog/blob/main/en/202405/emqx-enterprise-5-7-release-notes.md))
 - [EMQX Enterprise 5.6 Released: Introducing Amazon S3 Data Integration and JSON Schema SQL Validation Function](https://www.emqx.com/en/blog/emqx-enterprise-5-6-release-notes) ([Edit](https://github.com/emqx/blog/blob/main/en/202404/emqx-enterprise-5-6-release-notes.md))
 - [MQTT to MongoDB: A Beginner's Guide for IoT Data Integration](https://www.emqx.com/en/blog/mqtt-and-mongodb-crafting-seamless-synergy-for-iot-data-mangement) ([Edit](https://github.com/emqx/blog/blob/main/en/202403/mqtt-and-mongodb-crafting-seamless-synergy-for-iot-data-mangement.md))
 - [MQTT and Redis: Creating a Real-Time Data Statistics Application for IoT](https://www.emqx.com/en/blog/mqtt-and-redis) ([Edit](https://github.com/emqx/blog/blob/main/en/202402/mqtt-and-redis.md))
