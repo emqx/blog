@@ -43,6 +43,7 @@ Get to know the preferred protocol in IoT from beginner to master.
 ## [MQTT Programming](https://www.emqx.com/ja/blog/category/mqtt-programming)
 Best practice of MQTT in various clients.
 
+- [Rust(rumqttc)でMQTT](https://www.emqx.com/ja/blog/how-to-use-mqtt-in-rust) ([Edit](https://github.com/emqx/blog/blob/main/ja/202405/how-to-use-mqtt-in-rust.md))
 - [Golang(paho.mqtt.golang)でMQTT](https://www.emqx.com/ja/blog/how-to-use-mqtt-in-golang) ([Edit](https://github.com/emqx/blog/blob/main/ja/202405/how-to-use-mqtt-in-golang.md))
 - [ReactプロジェクトでMQTTを使用する方法](https://www.emqx.com/ja/blog/how-to-use-mqtt-in-react) ([Edit](https://github.com/emqx/blog/blob/main/ja/202403/how-to-use-mqtt-in-react.md))
 - [FlutterプロジェクトでMQTT](https://www.emqx.com/ja/blog/using-mqtt-in-flutter) ([Edit](https://github.com/emqx/blog/blob/main/ja/202403/using-mqtt-in-flutter.md))
