@@ -55,6 +55,7 @@ Get to know the preferred protocol in IoT from beginner to master.
 
 ## [MQTT Broker](https://www.emqx.com/en/blog/category/mqtt-broker)
 
+- [Comparison of Open Source MQTT Brokers 2024](https://www.emqx.com/en/blog/a-comprehensive-comparison-of-open-source-mqtt-brokers-in-2023) ([Edit](https://github.com/emqx/blog/blob/main/en/202405/a-comprehensive-comparison-of-open-source-mqtt-brokers-in-2023.md))
 - [Free MQTT Broker: Exploring Options and Choosing the Right Solution](https://www.emqx.com/en/blog/free-mqtt-broker) ([Edit](https://github.com/emqx/blog/blob/main/en/202404/free-mqtt-broker.md))
 - [MQTT Broker: How It Works, Popular Options, and Quickstart](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) ([Edit](https://github.com/emqx/blog/blob/main/en/202402/the-ultimate-guide-to-mqtt-broker-comparison.md))
 - [How to Install a Scalable MQTT Broker on OpenWRT](https://www.emqx.com/en/blog/how-to-install-a-scalable-mqtt-broker-on-openwrt) ([Edit](https://github.com/emqx/blog/blob/main/en/202310/how-to-install-a-scalable-mqtt-broker-on-openwrt.md))
@@ -69,7 +70,6 @@ Get to know the preferred protocol in IoT from beginner to master.
 - [Open MQTT Benchmarking Comparison: MQTT Brokers in 2023](https://www.emqx.com/en/blog/open-mqtt-benchmarking-comparison-mqtt-brokers-in-2023) ([Edit](https://github.com/emqx/blog/blob/main/en/202305/open-mqtt-benchmarking-comparison-mqtt-brokers-in-2023.md))
 - [Serverless or Hosting? Choose a Suitable MQTT Service for Your Project](https://www.emqx.com/en/blog/serverless-or-hosting-choose-a-suitable-mqtt-service-for-your-project) ([Edit](https://github.com/emqx/blog/blob/main/en/202304/serverless-or-hosting-choose-a-suitable-mqtt-service-for-your-project.md))
 - [What Is the QUIC Protocol?](https://www.emqx.com/en/blog/quic-protocol-the-features-use-cases-and-impact-for-iot-iov) ([Edit](https://github.com/emqx/blog/blob/main/en/202304/quic-protocol-the-features-use-cases-and-impact-for-iot-iov.md))
-- [Comparison of Open Source MQTT Brokers 2023](https://www.emqx.com/en/blog/a-comprehensive-comparison-of-open-source-mqtt-brokers-in-2023) ([Edit](https://github.com/emqx/blog/blob/main/en/202304/a-comprehensive-comparison-of-open-source-mqtt-brokers-in-2023.md))
 - [Open MQTT Benchmarking Comparison: EMQX vs VerneMQ](https://www.emqx.com/en/blog/open-mqtt-benchmarking-comparison-emqx-vs-vernemq) ([Edit](https://github.com/emqx/blog/blob/main/en/202304/open-mqtt-benchmarking-comparison-emqx-vs-vernemq.md))
 - [Open MQTT Benchmarking Comparison: EMQX vs NanoMQ](https://www.emqx.com/en/blog/open-mqtt-benchmarking-comparison-emqx-vs-nanomq) ([Edit](https://github.com/emqx/blog/blob/main/en/202304/open-mqtt-benchmarking-comparison-emqx-vs-nanomq.md))
 - [Open MQTT Benchmarking Comparison: EMQX vs Mosquitto](https://www.emqx.com/en/blog/open-mqtt-benchmarking-comparison-emqx-vs-mosquitto) ([Edit](https://github.com/emqx/blog/blob/main/en/202304/open-mqtt-benchmarking-comparison-emqx-vs-mosquitto.md))
