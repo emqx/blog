@@ -6,11 +6,11 @@
 
 As [a16z](https://a16z.com/) said over a decade ago, ["Software is eating the world."](https://a16z.com/2011/08/20/why-software-is-eating-the-world/) Open source is eating up software. More than 20 open-source MQTT broker implementations are available today, making the selection process challenging for software architects and developers.
 
-In this post series, we’ll explore the top open-source MQTT brokers in 2023 and compare them in-depth to help you choose the best one for your needs.
+In this post series, we’ll explore the top open-source MQTT brokers in 2024 and compare them in-depth to help you choose the best one for your needs.
 
 ## Evaluation Criteria:  Community and Popularity
 
-To thoroughly compare open-source MQTT brokers in 2023, it is essential to consider the following evaluation criteria:
+To thoroughly compare open-source MQTT brokers in 2024, it is essential to consider the following evaluation criteria:
 
 - **Community**: evaluated by the number of GitHub stars, contributors, and issues.
 - **Popularity**: evaluated by examining the user base, downloads, and docker pulls.
@@ -18,33 +18,33 @@ To thoroughly compare open-source MQTT brokers in 2023, it is essential to consi
 
 Based on the criteria, we choose to focus on four popular open-source MQTT brokers that have the most influence in the open-source community:
 
-- **EMQX**: This is the most starred MQTT broker on GitHub, with 11.4k stars.
+- **EMQX**: This is the most starred MQTT broker on GitHub, with 13.4k stars.
 - **Mosquitto**: This is the second-most-starred but the most prevalent among MQTT brokers.
 - **NanoMQ**: This is the latest and one of the most active MQTT brokers available.
 - **VerneMQ**: Although not actively developing on Github, this MQTT broker has the third-highest number of stars.
 
 Here is a summary of the four projects hosted on GitHub:
 
-|                                     | **EMQX**                                    | **Mosquitto**                                            | **NanoMQ**                                      | **VerneMQ**                                          |
-| :---------------------------------- | :------------------------------------------ | :------------------------------------------------------- | :---------------------------------------------- | :--------------------------------------------------- |
+|                                     | **EMQX**                                    | **Mosquitto**                                            | **NanoMQ**                                        | **VerneMQ**                                          |
+| :---------------------------------- | :------------------------------------------ | :------------------------------------------------------- | :------------------------------------------------ | :--------------------------------------------------- |
 | **GitHub Project**                  | [EMQX GitHub](https://github.com/emqx/emqx) | [Mosquitto GitHub](https://github.com/eclipse/mosquitto) | [NanoMQ GitHub](https://github.com/nanomq/nanomq) | [VerneMQ GitHub](https://github.com/vernemq/vernemq) |
-| **Project Created**                 | 2012                                        | 2009                                                     | 2020                                            | 2014                                                 |
-| **License**                         | Apache Version 2.0                          | EPL/EDL License                                          | MIT License                                     | Apache Version 2.0                                   |
-| **Programming Language**            | Erlang                                      | C/C++                                                    | C                                               | Erlang                                               |
-| **Latest Release**                  | v5.0.23 (April 2023)                        | 2.0.15 (Aug 2022)                                        | v0.17.0 (March 2023)                            | v1.12.6.2 (Nov. 2022)                                |
-| **GitHub Stars**                    | **11.5k**                                   | **7.2k**                                                 | **800+**                                        | **3k**                                               |
-| **GitHub Commits**                  | 14k+                                        | 2800+                                                    | 2000+                                           | 2400+                                                |
-| **GitHub Commits (Last 12 Months)** | **3000+**                                   | **500+**                                                 | **1200+**                                       | **50+**                                              |
-| **GitHub Issues**                   | 3500+                                       | 2200+                                                    | 120+                                            | 1300+                                                |
-| **GitHub Releases**                 | 260+                                        | 60+                                                      | 75+                                             | 40                                                   |
-| **GitHub PRs**                      | 6000+                                       | 600                                                      | 780+                                            | 600                                                  |
-| **GitHub Contributors**             | 100+                                        | 110+                                                     | 20+                                             | 50                                                   |
+| **Project Created**                 | 2012                                        | 2009                                                     | 2020                                              | 2014                                                 |
+| **License**                         | Apache Version 2.0                          | EPL/EDL License                                          | MIT License                                       | Apache Version 2.0                                   |
+| **Programming Language**            | Erlang                                      | C/C++                                                    | C                                                 | Erlang                                               |
+| **Latest Release**                  | v5.7.0 (May 2024)                           | 2.0.18 (September 2023)                                  | v0.21.10 (May 2024)                               | v2.0.0 (April 2024)                                  |
+| **GitHub Stars**                    | **13.4k**                                   | **8.5k**                                                 | **1.4k**                                          | **3.2k**                                             |
+| **GitHub Commits**                  | 21k+                                        | 2900+                                                    | 3400+                                             | 2500+                                                |
+| **GitHub Commits (Last 12 Months)** | **5800+**                                   | **50+**                                                  | **1200+**                                         | **50+**                                              |
+| **GitHub Issues**                   | 3800+                                       | 2400+                                                    | 400+                                              | 1400+                                                |
+| **GitHub Releases**                 | 350+                                        | 60+                                                      | 90+                                               | 40+                                                  |
+| **GitHub PRs**                      | 8500+                                       | 630+                                                     | 1200+                                             | 700+                                                 |
+| **GitHub Contributors**             | 120+                                        | 130+                                                     | 20+                                               | 50+                                                  |
 
 ## Overview of Top Open Source MQTT Brokers
 
 ### EMQX
 
-[EMQX](https://www.emqx.io/) is one of the most popular MQTT brokers and has 11.5k stars on GitHub. The EMQX project was launched in 2012 and is licensed under Apache version 2.0. EMQX is written in Erlang/OTP, a programming language for building massively scalable soft real-time systems.
+[EMQX](https://www.emqx.io/) is one of the most popular MQTT brokers and has 13.4k stars on GitHub. The EMQX project was launched in 2012 and is licensed under Apache version 2.0. EMQX is written in Erlang/OTP, a programming language for building massively scalable soft real-time systems.
 
 EMQX is the world's most scalable MQTT broker that supports advanced features such as MQTT 5.0, [MQTT-SN](https://www.emqx.com/en/blog/connecting-mqtt-sn-devices-using-emqx), and MQTT over QUIC. It supports masterless clustering for high availability and horizontal scalability. EMQX 5.0, the latest version, scales to establish 100 million concurrent MQTT connections with a single cluster of 23 nodes.
 
@@ -81,9 +81,10 @@ GitHub: [https://github.com/emqx/emqx](https://github.com/emqx/emqx)
     <a href="https://www.emqx.com/en/try?product=broker" class="button is-gradient px-5">Download →</a>
 </section>
 
+
 ### Mosquitto 
 
-The Mosquitto project was initially developed by Roger Light in 2009 and later donated to the Eclipse Foundation, licensed under the Eclipse Public License (EPL/EDL license). As of March 2023, it is the most widely deployed open-source MQTT broker with a large community and over 7k GitHub stars.
+The Mosquitto project was initially developed by Roger Light in 2009 and later donated to the Eclipse Foundation, licensed under the Eclipse Public License (EPL/EDL license). As of May 2024, it is the most widely deployed open-source MQTT broker with a large community and over 8k GitHub stars.
 
 Mosquitto is written in C/C++ and uses a single-threaded architecture. Mosquitto implements MQTT protocol versions 5.0, 3.1.1, and 3.1, and supports SSL/TLS and WebSocket. Its lightweight design makes Mosquitto suitable for deployment on embedded devices or servers with limited resources.
 
@@ -146,6 +147,7 @@ GitHub: [https://github.com/nanomq/nanomq](https://github.com/nanomq/nanomq)
     </div>
     <a href="https://www.emqx.com/en/try?product=nanomq" class="button is-gradient px-5">Get Started →</a>
 </section>
+
 
 ### VerneMQ
 
@@ -219,27 +221,27 @@ All the presented brokers fully implement MQTT versions 3.1.1 and 5.0 and suppor
 
 EMQX and NanoMQ have committed to advancing the MQTT standard. They are pioneers in implementing MQTT over QUIC, the next generation of MQTT protocol that aims to optimize further IoT communication.
 
-|                        | **EMQX** | **Mosquitto** | **NanoMQ** | **VerneMQ** |
-| :--------------------- | :------- | :------------ | :--------- | :---------- |
-| MQTT 3.1/3.1.1         | Yes      | Yes           | Yes        | Yes         |
-| MQTT 5.0               | Yes      | Yes           | Yes        | Yes         |
-| MQTT-SN 1.2            | Yes      | No            | No         | No          |
-| MQTT over TCP          | Yes      | Yes           | Yes        | Yes         |
-| MQTT over SSL/TLS      | Yes      | Yes           | Yes        | Yes         |
-| MQTT over WebSocket    | Yes      | Yes           | Yes        | Yes         |
-| **MQTT over QUIC**     | Yes      | No            | Yes        | No          |
-| MQTT Bridging          | Yes      | Yes           | Yes        | Yes         |
-| Shared Subscription    | Yes      | Yes           | Yes        | Yes         |
-| Retained Message       | Yes      | Yes           | Yes        | Yes         |
-| [Will Message](https://www.emqx.com/en/blog/use-of-mqtt-will-message)           | Yes      | Yes           | Yes        | Yes         |
-| [MQTT Request/Response](https://www.emqx.com/en/blog/mqtt5-request-response)  | Yes      | Yes           | Yes        | Yes         |
-| LB (Proxy Protocol)    | Yes      | No            | No         | Yes         |
-| Multi-protocol Gateway | Yes      | No            | No         | No          |
-| CoAP                   | Yes      | No            | No         | No          |
-| LwM2M                  | Yes      | No            | No         | No          |
-| DDS Gateway            | No       | No            | Yes        | No          |
-| ZeroMQ Gateway         | No       | No            | Yes        | No          |
-| Nanomsg/NNG            | No       | No            | Yes        | No          |
+|                                                              | **EMQX** | **Mosquitto** | **NanoMQ** | **VerneMQ** |
+| :----------------------------------------------------------- | :------- | :------------ | :--------- | :---------- |
+| MQTT 3.1/3.1.1                                               | Yes      | Yes           | Yes        | Yes         |
+| MQTT 5.0                                                     | Yes      | Yes           | Yes        | Yes         |
+| MQTT-SN 1.2                                                  | Yes      | No            | No         | No          |
+| MQTT over TCP                                                | Yes      | Yes           | Yes        | Yes         |
+| MQTT over SSL/TLS                                            | Yes      | Yes           | Yes        | Yes         |
+| MQTT over WebSocket                                          | Yes      | Yes           | Yes        | Yes         |
+| **MQTT over QUIC**                                           | Yes      | No            | Yes        | No          |
+| MQTT Bridging                                                | Yes      | Yes           | Yes        | Yes         |
+| Shared Subscription                                          | Yes      | Yes           | Yes        | Yes         |
+| Retained Message                                             | Yes      | Yes           | Yes        | Yes         |
+| [Will Message](https://www.emqx.com/en/blog/use-of-mqtt-will-message) | Yes      | Yes           | Yes        | Yes         |
+| [MQTT Request/Response](https://www.emqx.com/en/blog/mqtt5-request-response) | Yes      | Yes           | Yes        | Yes         |
+| LB (Proxy Protocol)                                          | Yes      | No            | No         | Yes         |
+| Multi-protocol Gateway                                       | Yes      | No            | No         | No          |
+| CoAP                                                         | Yes      | No            | No         | No          |
+| LwM2M                                                        | Yes      | No            | No         | No          |
+| DDS Gateway                                                  | No       | No            | Yes        | No          |
+| ZeroMQ Gateway                                               | No       | No            | Yes        | No          |
+| Nanomsg/NNG                                                  | No       | No            | Yes        | No          |
 
 ## Security, Authentication & Authorization
 
@@ -297,6 +299,7 @@ EMQX implements a built-in SQL-based rule engine to help extract, filter, enrich
     <a href="https://www.emqx.com/en/try?product=enterprise" class="button is-gradient px-5">Get Started →</a>
 </section>
 
+
 ## Operability, Observability, and Compatibility
 
 Each broker is user-friendly and equipped with essential logging and debugging features to monitor their status and troubleshoot issues effectively. They can run on various operating systems and public cloud platforms. Besides, EMQX has excellent support for Kubernetes Operator and Terraform.
@@ -324,28 +327,40 @@ See: [Monitoring MQTT broker with Prometheus and Grafana](https://www.emqx.com/e
 
 Finally, we summarize an overall evaluation of the top open-source MQTT brokers in the following chart.
 
-|                               | **EMQX**  | **Mosquitto** | **NanoMQ** | **VerneMQ** |
-| :---------------------------- | :-------- | :------------ | :--------- | :---------- |
-| Scalability                   | Excellent | Moderate      | Good       | Good        |
-| Availability                  | Excellent | Moderate      | Moderate   | Good        |
-| Performance                   | Excellent | Excellent     | Excellent  | Good        |
-| Latency                       | Excellent | Good          | Excellent  | Good        |
-| Reliability                   | Good      | Good          | Good       | Moderate    |
-| Security                      | Excellent | Excellent     | Good       | Good        |
-| Authenticaton & Authorization | Excellent | Good          | Moderate   | Good        |
-| Connectivity                  | Excellent | Good          | Good       | Good        |
-| Integration                   | Excellent | Moderate      | Moderate   | Moderate    |
-| Operability                   | Good      | Excellent     | Good       | Moderate    |
-| Observability                 | Excellent | Moderate      | Moderate   | Good        |
-| Compatibility                 | Good      | Excellent     | Excellent  | Good        |
-| Ease of Use                   | Good      | Excellent     | Good       | Good        |
-| Community Support             | Excellent | Excellent     | Good       | Moderate    |
+|                                | **EMQX**  | **Mosquitto** | **NanoMQ** | **VerneMQ** |
+| :----------------------------- | :-------- | :------------ | :--------- | :---------- |
+| Scalability                    | Excellent | Moderate      | Good       | Good        |
+| Availability                   | Excellent | Moderate      | Moderate   | Good        |
+| Performance                    | Excellent | Excellent     | Excellent  | Good        |
+| Latency                        | Excellent | Good          | Excellent  | Good        |
+| Reliability                    | Good      | Good          | Good       | Moderate    |
+| Security                       | Excellent | Excellent     | Good       | Good        |
+| Authentication & Authorization | Excellent | Good          | Moderate   | Good        |
+| Connectivity                   | Excellent | Good          | Good       | Good        |
+| Integration                    | Excellent | Moderate      | Moderate   | Moderate    |
+| Operability                    | Good      | Excellent     | Good       | Moderate    |
+| Observability                  | Excellent | Moderate      | Moderate   | Good        |
+| Compatibility                  | Good      | Excellent     | Excellent  | Good        |
+| Ease of Use                    | Good      | Excellent     | Good       | Good        |
+| Community Support              | Excellent | Excellent     | Good       | Moderate    |
 
 ## Final Thoughts on the Comparison
 
 Over the past decade, open-source MQTT brokers have led the way in innovating MQTT technology.  These brokers have played a significant role in advancing the functionality, scalability, and interoperability of the MQTT messaging protocol. Without these contributions, MQTT may not have become as widely adopted and versatile as it is today.
 
-Choosing an MQTT broker depends on various factors, such as the number of connected devices, message throughput, and integration requirements. From the comparison, we can conclude that [EMQX](https://www.emqx.io/) is a highly scalable and enterprise-grade broker for large-scale, mission-critical deployments in the cloud. While Mosquitto and [NanoMQ](https://nanomq.io/) are fast and lightweight, making them suitable for deployment on resource-constrained embedded hardware, industrial gateways, and IoT edge servers.
+Choosing an MQTT broker depends on various factors, such as the number of connected devices, message throughput, and integration requirements. From the comparison, we can conclude that [EMQX](https://github.com/emqx/emqx) is a highly scalable and enterprise-grade broker for large-scale, mission-critical deployments in the cloud. While Mosquitto and [NanoMQ](https://nanomq.io/) are fast and lightweight, making them suitable for deployment on resource-constrained embedded hardware, industrial gateways, and IoT edge servers.
+
+While the Open Source version lays a solid foundation for IoT connectivity, EMQX provides an Enterprise version to elevate this with comprehensive support, advanced features, and a focus on security and reliability. For businesses aiming to scale their IoT solutions and ensure the highest levels of reliability and performance, EMQX Enterprise represents the logical choice.
+
+<section class="promotion">
+    <div>
+        Try EMQX Enterprise for Free
+      <div>Connect any device, at any scale, anywhere.</div>
+    </div>
+    <a href="https://www.emqx.com/en/try?product=enterprise" class="button is-gradient">Get Started →</a>
+</section>
+
+To learn more about the differences between EMQX Open Source and Enterprise version, please refer to [this blog](https://www.emqx.com/en/blog/emqx-open-source-vs-enterprise#strong-conclusion-strong) to make an informed choice.
 
 ## Future Developments
 
@@ -366,7 +381,7 @@ Several exciting technological advancements are in the pipeline, including MQTT 
 
 [4] [Open MQTT benchmark suite blog series](https://www.emqx.com/en/blog/tag/mqtt-benchmark)
 
-[5] [2023 MQTT broker comparison blog series](https://www.emqx.com/en/blog/tag/2023-mqtt-broker-comparison)
+[5] [2023 MQTT broker comparison blog series](https://www.emqx.com/en/blog/tag/mqtt-broker-comparison)
 
 
 
