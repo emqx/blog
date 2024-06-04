@@ -673,6 +673,7 @@ Accelerate digital transformation of industries based on EMQ data infrastructure
 ## [IoT Testing](https://www.emqx.com/en/blog/category/iot-testing)
 Guarantee the availability and reliability of the IoT platform.
 
+- [MQTT Testing: Basics, Best Practices & Quick Start](https://www.emqx.com/en/blog/mqtt-testing) ([Edit](https://github.com/emqx/blog/blob/main/en/202406/mqtt-testing.md))
 - [A Beginner's Guide to MQTT Performance Testing](https://www.emqx.com/en/blog/a-beginner-guide-to-mqtt-performance-testing) ([Edit](https://github.com/emqx/blog/blob/main/en/202311/a-beginner-guide-to-mqtt-performance-testing.md))
 - [Getting Started with MQTT Performance Testing: A Primer on Scenarios and Metrics](https://www.emqx.com/en/blog/getting-started-with-mqtt-performance-testing-a-primer-on-scenarios-and-metrics) ([Edit](https://github.com/emqx/blog/blob/main/en/202305/getting-started-with-mqtt-performance-testing-a-primer-on-scenarios-and-metrics.md))
 - [Building Reliable IoT Systems: An Introduction to MQTT Performance Testing](https://www.emqx.com/en/blog/building-reliable-iot-systems-an-introduction-to-mqtt-performance-testing) ([Edit](https://github.com/emqx/blog/blob/main/en/202305/building-reliable-iot-systems-an-introduction-to-mqtt-performance-testing.md))
