@@ -104,7 +104,7 @@ Finally, after you've migrated to MQTT 5.0 and implemented its features, it's im
 
 ## Embracing MQTT 5.0 with EMQX
 
-As the world's most scalable [open source MQTT Broker](https://www.emqx.com/en/blog/a-comprehensive-comparison-of-open-source-mqtt-brokers-in-2023), [EMQX](https://www.emqx.io) fully supports all features of MQTT 5.0. Devices with any MQTT protocol version can directly access EMQX and communicate with each other.
+As the world's most scalable [open source MQTT Broker](https://www.emqx.com/en/blog/a-comprehensive-comparison-of-open-source-mqtt-brokers-in-2023), [EMQX](https://github.com/emqx/emqx) fully supports all features of MQTT 5.0. Devices with any MQTT protocol version can directly access EMQX and communicate with each other.
 
 EMQX has a complete authentication and authorization mechanism and full support for SSL/TLS, which provides secure communication. The SQL-based rule engine with data bridging enables one-stop IoT data extraction, filtering, transformation, storage and processing without writing code.
 

@@ -1,6 +1,6 @@
 ## Introduction
 
-[Mosquitto](https://mosquitto.org/) and [NanoMQ](https://nanomq.io/) are fast, lightweight open-source message brokers written in C/C++, fully implementing MQTT version 3.1.1 and 5.0.
+[Mosquitto](https://mosquitto.org/) and [NanoMQ](https://nanomq.io/) are fast, lightweight [open-source MQTT brokers](https://www.emqx.com/en/blog/a-comprehensive-comparison-of-open-source-mqtt-brokers-in-2023) written in C/C++, fully implementing MQTT version 3.1.1 and 5.0.
 
 Although Mosquitto and NanoMQ are both lightweight and have a low CPU/memory footprint, they adopt very different architectural designs. Mosquitto is single-threaded, and NanoMQ is built on NNG's asynchronous I/O with a multi-threading model.
 

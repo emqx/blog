@@ -197,7 +197,7 @@ To facilitate this, the MQTT Broker must provide an appropriate extension mechan
 
 Cost is a multifaceted consideration that must be evaluated in relation to your budget.
 
-Depending on your needs, you may opt for enterprise services or an open-source MQTT Broker. There are many open-source MQTT Brokers available, which can typically be deployed without incurring any licensing fees if the open-source license allows it. However, installation, maintenance, and extension development may require additional resources.
+Depending on your needs, you may opt for enterprise services or an open-source MQTT Broker. There are many [open-source MQTT Brokers](https://www.emqx.com/en/blog/a-comprehensive-comparison-of-open-source-mqtt-brokers-in-2023) available, which can typically be deployed without incurring any licensing fees if the open-source license allows it. However, installation, maintenance, and extension development may require additional resources.
 
 When deploying MQTT Brokers for large-scale applications, it's essential to assess their performance and consider the costs associated with them. High-performance MQTT Brokers can significantly reduce the overheads associated with hardware, network, and maintenance, resulting in lower overall costs.
 

@@ -1,6 +1,6 @@
 ## Introduction
 
-[EMQX](https://www.emqx.io/) and [NanoMQ](https://nanomq.io/) are both open-source MQTT Brokers, initially developed by [EMQ Technologies Inc](https://www.emqx.com/en/about), a leading open-source IoT data infrastructure software provider. 
+[EMQX](https://www.emqx.io/) and [NanoMQ](https://nanomq.io/) are both [open-source MQTT Brokers](https://www.emqx.com/en/blog/a-comprehensive-comparison-of-open-source-mqtt-brokers-in-2023), initially developed by [EMQ Technologies Inc](https://www.emqx.com/en/about), a leading open-source IoT data infrastructure software provider. 
 
 EMQX is a highly scalable, distributed MQTT Broker for connecting millions of IoT devices to the cloud, while NanoMQ is a fast and lightweight broker designed for IoT edge.
 
