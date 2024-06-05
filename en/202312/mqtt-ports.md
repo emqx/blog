@@ -151,7 +151,7 @@ The MQTT broker is the server that handles the communication between devices. By
 
 ## Improving MQTT Security with EMQX
 
-Understanding and properly configuring MQTT ports are crucial steps in ensuring the security and functionality of your MQTT communications. As the world's most scalable open source MQTT Broker, EMQX opens standard ports such as TCP (1883) and SSL/TLS (8883) by default. You can also access the default port 14567 to establish an MQTT over QUIC connection. EMQX also provides complete listener management capabilities, allowing you to modify and close ports in the configuration file or Dashboard as needed, as well as adjust other behaviors of the listener.
+Understanding and properly configuring MQTT ports are crucial steps in ensuring the security and functionality of your MQTT communications. As the world's most scalable [open source MQTT Broker](https://www.emqx.com/en/blog/a-comprehensive-comparison-of-open-source-mqtt-brokers-in-2023), EMQX opens standard ports such as TCP (1883) and SSL/TLS (8883) by default. You can also access the default port 14567 to establish an MQTT over QUIC connection. EMQX also provides complete listener management capabilities, allowing you to modify and close ports in the configuration file or Dashboard as needed, as well as adjust other behaviors of the listener.
 
 Considering the possible risks caused by exposing the MQTT port to the Internet, such as unauthorized access and device compromise, EMQX protects you through rich authentication and authorization mechanisms and comprehensive SSL/TLS support. You can complete all the previously mentioned best practices in EMQX to enhance the security of MQTT communications and ensure reliable operation of the MQTT infrastructure.
 

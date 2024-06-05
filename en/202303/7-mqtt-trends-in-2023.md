@@ -18,7 +18,7 @@ The MQTT 5.0 protocol specification defines three types of transport: TCP, TLS, 
 
 **MQTT over QUIC**, with 1 RTT connection establishment and 0 RTT reconnection latency, is indeed faster and has lower latency compared to MQTT over TLS. The QUIC stack can be customized for various use cases, such as keeping connections alive in poor networking conditions and for scenarios where there is a need for low client-to-server latency. It will benefit connected cars with unreliable cellular networks and low-latency industrial IoT applications. The adoption of MQTT over QUIC is expected to play a vital role in the future of IoT, Industrial IoT ([IIoT](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges)), and Internet of Vehicles (IoV).
 
-[EMQX](https://github.com/emqx/emqx), the popular open-source MQTT broker, has introduced [MQTT over QUIC support ](https://www.emqx.com/en/blog/mqtt-over-quic)in its latest version, 5.0. And like HTTP/3, the next version of the MQTT protocol, MQTT 5.1 or 6.0, will use QUIC as its primary transport layer in the near future.
+[EMQX](https://github.com/emqx/emqx), the popular [open-source MQTT broker](https://www.emqx.com/en/blog/a-comprehensive-comparison-of-open-source-mqtt-brokers-in-2023), has introduced [MQTT over QUIC support ](https://www.emqx.com/en/blog/mqtt-over-quic)in its latest version, 5.0. And like HTTP/3, the next version of the MQTT protocol, MQTT 5.1 or 6.0, will use QUIC as its primary transport layer in the near future.
 
 ![MQTT over QUIC](https://assets.emqx.com/images/a172e1693e8b7c86ec51e5d69936a802.png)
 

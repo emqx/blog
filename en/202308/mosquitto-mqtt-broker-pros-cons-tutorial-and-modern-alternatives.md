@@ -1,6 +1,6 @@
 ## What is the Eclipse Mosquitto MQTT Broker
 
-Eclipse Mosquitto is an open-source message broker that uses the MQTT (Message Queuing Telemetry Transport) protocol. MQTT is a lightweight protocol designed for constrained devices with low-bandwidth, making it perfect for machine-to-machine (M2M) or internet of things (IoT) applications where network bandwidth is at a premium.
+Eclipse Mosquitto is an [open-source MQTT broker](https://www.emqx.com/en/blog/a-comprehensive-comparison-of-open-source-mqtt-brokers-in-2023) that uses the MQTT (Message Queuing Telemetry Transport) protocol. MQTT is a lightweight protocol designed for constrained devices with low-bandwidth, making it perfect for machine-to-machine (M2M) or internet of things (IoT) applications where network bandwidth is at a premium.
 
 The Mosquitto MQTT broker was initially developed by Roger Light in 2009 and later donated to the Eclipse Foundation. It was probably the first open source MQTT project. The broker receives all messages from the clients, filters the messages, determines who is subscribed to each message, and then sends the message to these subscribed clients.
 

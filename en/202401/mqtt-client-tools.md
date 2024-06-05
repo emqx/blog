@@ -237,7 +237,7 @@ MQTTX CLI is compatible with Windows, macOS, and Linux. For additional installat
 
 ### Mosquitto CLI
 
-Mosquitto is a widely used open-source MQTT broker with the popular `mosquitto_pub` and `mosquitto_sub` command line clients. This CLI tool offers a wide range of options to connect, subscribe to, and publish messages to an MQTT broker.
+Mosquitto is a widely used [open-source MQTT broker](https://www.emqx.com/en/blog/a-comprehensive-comparison-of-open-source-mqtt-brokers-in-2023) with the popular `mosquitto_pub` and `mosquitto_sub` command line clients. This CLI tool offers a wide range of options to connect, subscribe to, and publish messages to an MQTT broker.
 
 The Mosquitto project is written in C/C++ and maintained by the Eclipse Foundation. Mosquitto is highly portable and can be deployed on various platforms, including Linux, Mac, Windows, and Raspberry Pi.
 
