@@ -706,7 +706,7 @@ MQTT 5.0 在 QoS 的基础上又提供了三个新的订阅选项，分别为：
 
 ### 示例 1 - No Local
 
-客户端 sub14 和 pub14 分别发布一条消息到主题 t14，这里我们借助了 EMQX 的 [延迟发布](https://www.emqx.io/docs/zh/v5.1/messaging/mqtt-delayed-publish.html#%E5%BB%B6%E8%BF%9F%E5%8F%91%E5%B8%83) 功能，让消息延迟 10 秒发布：
+客户端 sub14 和 pub14 分别发布一条消息到主题 t14，这里我们借助了 EMQX 的 [延迟发布](https://docs.emqx.com/zh/emqx/v5.1/messaging/mqtt-delayed-publish.html#%E5%BB%B6%E8%BF%9F%E5%8F%91%E5%B8%83) 功能，让消息延迟 10 秒发布：
 
 ```
 mqttx pub --client-id sub14 --topic '$delayed/10/t14' --message "You will not receive this message"

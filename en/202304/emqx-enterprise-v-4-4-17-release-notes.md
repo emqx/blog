@@ -56,7 +56,7 @@ The following are important bug fixes, for all bug fixes please refer to [EMQX E
 
 - Fixed the issue where `Erlang distribution` could not use TLS [#9981](https://github.com/emqx/emqx/pull/9981).
 
-  For more information on `Erlang distribution`, see [here](https://www.emqx.io/docs/en/v4.4/advanced/cluster.html).
+  For more information on `Erlang distribution`, see [here](https://docs.emqx.com/en/emqx/v4.4/advanced/cluster.html).
 
 - Fixed the issue where MQTT bridging could not verify TLS certificates with wildcard domains on the peer side [#10094](https://github.com/emqx/emqx/pull/10094).
 

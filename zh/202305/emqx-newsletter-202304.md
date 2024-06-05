@@ -34,7 +34,7 @@ EMQX 供了精细的配置项以满足不同场景下功能的灵活使用和性
 ### 其他更新
 
 - MQTT over QUIC 支持受密码保护的证书。
-- 改进 [REST API 文档](https://www.emqx.io/docs/zh/v5.0/admin/api-docs.html)，提供了更清晰的 API 名称，并将常用的 API 置于前面方便查找。
+- 改进 [REST API 文档](https://docs.emqx.com/zh/emqx/v5.0/admin/api-docs.html)，提供了更清晰的 API 名称，并将常用的 API 置于前面方便查找。
 - 改进文件描述符耗尽时的错误日志，方便快速定位问题。
 - 规则引擎新增 `date_to_unix_ts` 时间戳转换函数。
 - 废弃 `*-override.conf` 配置文件。

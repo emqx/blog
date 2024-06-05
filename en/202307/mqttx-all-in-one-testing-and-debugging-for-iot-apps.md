@@ -67,7 +67,7 @@ Use this info when configuring the MQTT broker:
 There are three options for running MQTT Client Toolbox:
 
 - **MQTTX Desktop:** An elegant MQTT 5.0 desktop client running on macOS, Windows, and Linux. [Download MQTTX Desktop here](https://mqttx.app/downloads).
-- **MQTTX Web:** A browser-based MQTT 5.0 WebSocket client tool you can use with web browsers. [Access MQTTX Web here](http://www.emqx.io/online-mqtt-client#/recent_connections).
+- **MQTTX Web:** A browser-based MQTT 5.0 WebSocket client tool you can use with web browsers. [Access MQTTX Web here](http://mqtt-client.emqx.com/#/recent_connections).
 - **MQTTX CLI:** A powerful and easy-to-use MQTT 5.0 command line tool. [Learn more and download the MQTTX CLI here](https://mqttx.app/cli).
 
 ![MQTTX CLI Preview](https://assets.emqx.com/images/18b0ed14636325f036ddf26a719e487c.png)

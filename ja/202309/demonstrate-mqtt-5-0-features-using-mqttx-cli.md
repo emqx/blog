@@ -677,7 +677,7 @@ MQTT 5.0は、QoSに加えて、No Local、Retain As Published、Retain Handling
 
 ### サンプル1 - No Local:
 
-クライアントsub14とpub14がそれぞれトピックt14にメッセージをパブリッシュします。EMQXの[遅延パブリッシュ](https://www.emqx.io/docs/zh/v5.1/messaging/mqtt-delayed-publish.html#延迟发布)機能を利用して、メッセージを10秒遅延させます。
+クライアントsub14とpub14がそれぞれトピックt14にメッセージをパブリッシュします。EMQXの[遅延パブリッシュ](https://docs.emqx.com/zh/emqx/v5.1/messaging/mqtt-delayed-publish.html#延迟发布)機能を利用して、メッセージを10秒遅延させます。
 
 ```
 mqttx pub --client-id sub14 --topic '$delayed/10/t14' --message "You will not receive this message"

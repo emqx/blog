@@ -25,7 +25,7 @@ Neuron 和 eKuiper 部署在靠近设备的边缘端网关或者工控机上。N
 
 开始动手操作之前，需要准备以下环境：
 
-- MQTT 服务器：可以使用 EMQ 提供的[公共 MQTT 服务器](https://www.emqx.com/zh/mqtt/public-mqtt5-broker)，或参考 [EMQX 文档](https://www.emqx.io/docs/zh/v4.4/getting-started/getting-started.html#快速开始)快速部署一个本地 MQTT broker。假设 MQTT broker 地址为 `tcp://broker.emqx.io:1883`，以下教程将以此地址为例。
+- MQTT 服务器：可以使用 EMQ 提供的[公共 MQTT 服务器](https://www.emqx.com/zh/mqtt/public-mqtt5-broker)，或参考 [EMQX 文档](https://docs.emqx.com/zh/emqx/v4.4/getting-started/getting-started.html#快速开始)快速部署一个本地 MQTT broker。假设 MQTT broker 地址为 `tcp://broker.emqx.io:1883`，以下教程将以此地址为例。
 - 为了方便观察运行结果，我们需要安装一个 MQTT 客户端，例如 [MQTTX](https://mqttx.app/zh)。
 
 ## 快速部署

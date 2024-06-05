@@ -77,7 +77,7 @@ For example, the [EMQX](https://www.emqx.io/) supports getting cluster status th
 | `$SYS/brokers/${node}/datetime` | EMQX Broker time         |
 | `$SYS/brokers/${node}/sysdescr` | EMQX Broker description  |
 
-EMQX also supports rich system topics such as client online/offline events, statistics, system monitoring and alarms. For more details, please see the [EMQX System Topics](https://www.emqx.io/docs/en/v5.0/advanced/system-topic.html) documentation.
+EMQX also supports rich system topics such as client online/offline events, statistics, system monitoring and alarms. For more details, please see the [EMQX System Topics](https://docs.emqx.com/en/emqx/v5.0/advanced/system-topic.html) documentation.
 
 ### Shared Subscriptions
 
@@ -91,7 +91,7 @@ In the following diagram, three subscribers subscribe to the same topic `$share/
 
 In addition, EMQX also supports the use of the shared subscription prefix `$queue` in MQTT 3.1.1. It is a special case of a shared subscription, which is equivalent to having all subscribers in one group.
 
-For more details about shared subscriptions, please refer to [EMQX Shared Subscriptions](https://www.emqx.io/docs/en/v5.0/advanced/shared-subscriptions.html) documentation.
+For more details about shared subscriptions, please refer to [EMQX Shared Subscriptions](https://docs.emqx.com/en/emqx/v5.0/advanced/shared-subscriptions.html) documentation.
 
 ## Topics in Different Scenarios
 

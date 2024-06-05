@@ -26,7 +26,7 @@ In this blog, we will demonstrate how to get started with MQTT Sparkplug using E
 
 ### Install EMQX
 
-Download and install the EMQX MQTT broker on your server or machine. EMQX provides a community edition that can be downloaded for free from their website. Visit the website [http://www.emqx.io/](https://www.emqx.io/docs/en/latest/deploy/install.html) and follow the documentation.
+Download and install the EMQX MQTT broker on your server or machine. EMQX provides a community edition that can be downloaded for free from their website. Visit the website [http://www.emqx.io/](https://docs.emqx.com/en/emqx/latest/deploy/install.html) and follow the documentation.
 
 ### Create Schema Registry in EMQX
 

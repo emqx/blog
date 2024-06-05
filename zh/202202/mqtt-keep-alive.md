@@ -78,7 +78,7 @@ Keepalive * backoff * 2
 
 *backoff* 默认值为0.75，因此在用户不修改该配置的情况下，EMQX 的行为完全符合 MQTT 标准。
 
-更多相关内容请参见 [EMQX 配置文档](https://www.emqx.io/docs/zh/v4.3/configuration/configuration.html)。
+更多相关内容请参见 [EMQX 配置文档](https://docs.emqx.com/zh/emqx/v4.3/configuration/configuration.html)。
 
 **WebSocket 连接时设置 Keep Alive**
 

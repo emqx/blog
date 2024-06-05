@@ -77,7 +77,7 @@ Here, the -d flag runs the container in detached mode. Ports 18083 and 1883 are 
 
 ### Set MQTT Configuration
 
-You can set configurations via environment variables when running your Docker container. All EMQX settings in etc/emqx.conf can be configured this way (to learn about EMQX configuration options, refer to the [official documentation](https://www.emqx.io/docs/en/v5.0/configuration/configuration-manual.html)).
+You can set configurations via environment variables when running your Docker container. All EMQX settings in etc/emqx.conf can be configured this way (to learn about EMQX configuration options, refer to the [official documentation](https://docs.emqx.com/en/emqx/v5.0/configuration/configuration-manual.html)).
 
 Environment variables with the prefix EMQX_ map to key-value pairs in the configuration files. For example, here's how to set the MQTT TCP port to 1883:
 

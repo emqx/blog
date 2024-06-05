@@ -26,7 +26,7 @@ Following is the way to quickly install and start EMQX 5.0 by using Docker:
 docker run -d --name emqx -p 1883:1883 -p 8083:8083 -p 8883:8883 -p 8084:8084 -p 18083:18083 emqx/emqx:latest
 ```
 
-In addition to using Docker to install EMQX, we can also use RPM or DEB packages to install it. For specific installation methods, please refer to [EMQX 5.0 Installation Guide](https://www.emqx.io/docs/en/v5.0/deploy/install.html#install).
+In addition to using Docker to install EMQX, we can also use RPM or DEB packages to install it. For specific installation methods, please refer to [EMQX 5.0 Installation Guide](https://docs.emqx.com/en/emqx/v5.0/deploy/install.html#install).
 
 After the installation, we can open `http://localhost:18083` to access the EMQX Dashboard to view the running status. If you can access it, usually, EMQX has been installed successfully.
 
@@ -161,7 +161,7 @@ docker run -d --name pushgateway -p 9091:9091 prom/pushgateway
 
 For more about installing and using Pushgateway, please refer to [Pushgateway Installation Document](https://github.com/prometheus/pushgateway#run-it). At this point, we can access the Pushgateway Dashboard by `http://localhost:9091`.
 
-EMQX Provides an [API](https://www.emqx.io/docs/en/v5.0/observability/prometheus.html#configure-pushgateway-via-dashboard) for configuring the Pushgateway service, which can report the data metrics of EMQX through the configuration to the service address of Pushgateway and finally be pulled by Prometheus from Pushgateway. At the same time, you can also configure the service address of Pushgateway directly in the EMQX Dashboard, enter the completion, and click Update.
+EMQX Provides an [API](https://docs.emqx.com/en/emqx/v5.0/observability/prometheus.html#configure-pushgateway-via-dashboard) for configuring the Pushgateway service, which can report the data metrics of EMQX through the configuration to the service address of Pushgateway and finally be pulled by Prometheus from Pushgateway. At the same time, you can also configure the service address of Pushgateway directly in the EMQX Dashboard, enter the completion, and click Update.
 
 ![Pushgateway service](https://assets.emqx.com/images/feb199f240ccdbc2de63cffe43d97054.png)
 
@@ -245,13 +245,13 @@ Such as the endpoint of EMQX, the API for obtaining metric data, etc. Click the 
 
 In the same way, the help can be divided into two configuration modes: default and using Pushgateway. In the configuration mode using Pushgateway, you can open the switch on the page, enter the address of Pushgateway and the time to report the data, and click Save to complete the configuration after saving.
 
-For more about configuring the integration of Prometheus in Dashboard, you can refer to the [EMQX Dashboard Configuration Monitoring Integration](https://www.emqx.io/docs/en/v5.0/dashboard/configuration.html#monitoring) document.
+For more about configuring the integration of Prometheus in Dashboard, you can refer to the [EMQX Dashboard Configuration Monitoring Integration](https://docs.emqx.com/en/emqx/v5.0/dashboard/configuration.html#monitoring) document.
 
 ## Conclusion
 
 This article briefly introduces how to use Prometheus to collect the data metrics of EMQX and then use Grafana to visualize the monitoring of EMQX's data metrics. After EMQX 5.0.11, you can also get more monitoring integration operation information by clicking the "Help" button on the `Integration` page in the EMQX Dashboard.
 
-Reading our [Metrics and Stats](https://www.emqx.io/docs/en/v5.0/observability/metrics-and-stats.html#metrics-stats) document, you can learn more about the data metrics you can query.
+Reading our [Metrics and Stats](https://docs.emqx.com/en/emqx/v5.0/observability/metrics-and-stats.html#metrics-stats) document, you can learn more about the data metrics you can query.
 
 For the tutorial articles on using the rules and configuration alerts in the monitoring system, we will introduce them in the following articles, so stay tuned.
 

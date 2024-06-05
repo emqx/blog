@@ -45,7 +45,7 @@ MQTT 发布/订阅模式有 4 个主要组成部分：发布者、订阅者、�
 
   订阅者定义其感兴趣的消息的条件，只有当消息的属性或内容满足订阅者定义的条件时，消息才会被投递到该订阅者。
 
-MQTT 协议是基于主题进行消息路由的，在这个基础上，EMQX 从 3.1 版本开始通过基于 SQL 的规则引擎提供了额外的按消息内容进行路由的能力。关于规则引擎的详细信息，请查看 [EMQX 文档](https://www.emqx.io/docs/zh/v5.0/data-integration/rules.html)。
+MQTT 协议是基于主题进行消息路由的，在这个基础上，EMQX 从 3.1 版本开始通过基于 SQL 的规则引擎提供了额外的按消息内容进行路由的能力。关于规则引擎的详细信息，请查看 [EMQX 文档](https://docs.emqx.com/zh/emqx/v5.0/data-integration/rules.html)。
 
 
 ## MQTT 与 HTTP 请求响应

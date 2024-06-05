@@ -19,13 +19,13 @@
 
 EMQX 方案上线的初期也遇到了一些问题。因为之前使用了 Websocket 方式，服务端在发送入场开门命令的时候如果 try catch 到错误，会默认为门店电路或网络出现问题，就不会生成订单。而改用 MQTT 后，开门指令是发送给 EMQX 服务端，只能检测到在发送这一层不出现问题，而如果客户端没有订阅服务端主题的情况下，并不能接收开门指令，可能会造成的现象就是：订单生成了，门却没开。最终使用 WebHook 解决了这个问题。
 
-> WebHook 是由 [emqx_web_hook](https://github.com/emqx/emqx-web-hook) 插件提供的将 EMQX 中的钩子事件通知到某个 Web 服务的功能。WebHook 的内部实现是基于[钩子](https://www.emqx.io/docs/zh/v4.4/advanced/hooks.html)，但它更靠近顶层一些。它通过在钩子上的挂载回调函数，获取到 EMQX 中的各种事件，并转发至 emqx_web_hook 中配置的 Web 服务器。WebHook 对于事件的处理是单向的，它仅支持将 EMQX 中的事件推送给 Web 服务，并不关心 Web 服务的返回。 借助 Webhook 可以完成设备在线、上下线记录，订阅与消息存储、消息送达确认等诸多业务。
+> WebHook 是由 [emqx_web_hook](https://github.com/emqx/emqx-web-hook) 插件提供的将 EMQX 中的钩子事件通知到某个 Web 服务的功能。WebHook 的内部实现是基于[钩子](https://docs.emqx.com/zh/emqx/v4.4/advanced/hooks.html)，但它更靠近顶层一些。它通过在钩子上的挂载回调函数，获取到 EMQX 中的各种事件，并转发至 emqx_web_hook 中配置的 Web 服务器。WebHook 对于事件的处理是单向的，它仅支持将 EMQX 中的事件推送给 Web 服务，并不关心 Web 服务的返回。 借助 Webhook 可以完成设备在线、上下线记录，订阅与消息存储、消息送达确认等诸多业务。
 
 总结一下就是，当客户端上线后，给指定的 Web 地址发送一条信息。
 
 ### 如何使用 WebHook
 
-1. Webhook 的配置文件位于 etc/plugins/emqx_web_hook.conf，详细说明可以查看[配置项](https://www.emqx.io/docs/zh/v4.4/configuration/configuration.html)。这个配置非常简单，打开指定文件后，官方已经写好这些了，只需要修改 web.hook.url，和在你需要的钩子事件前的 # 号去掉即可。
+1. Webhook 的配置文件位于 etc/plugins/emqx_web_hook.conf，详细说明可以查看[配置项](https://docs.emqx.com/zh/emqx/v4.4/configuration/configuration.html)。这个配置非常简单，打开指定文件后，官方已经写好这些了，只需要修改 web.hook.url，和在你需要的钩子事件前的 # 号去掉即可。
 
    ```
    web.hook.url = http://127.0.0.1:8080/webhook

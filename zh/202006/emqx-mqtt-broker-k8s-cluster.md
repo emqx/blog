@@ -229,7 +229,7 @@ Cluster status: #{running_nodes =>
 
 ### 修改 EMQX Broker 的配置
 
-查看 EMQX Broker 文档中关于[自动集群](https://www.emqx.io/docs/zh/latest/deploy/cluster/introduction.html)的内容，可以看到需要修改 EMQX Broker 的配置：
+查看 EMQX Broker 文档中关于[自动集群](https://docs.emqx.com/zh/emqx/latest/deploy/cluster/introduction.html)的内容，可以看到需要修改 EMQX Broker 的配置：
 
 ```
 cluster.discovery = kubernetes

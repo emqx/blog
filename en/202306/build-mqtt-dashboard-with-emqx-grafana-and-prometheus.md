@@ -40,7 +40,7 @@ You can quickly install and start EMQX 5.0 by using Docker:
 docker run -d --name emqx -p 1883:1883 -p 8083:8083 -p 8883:8883 -p 8084:8084 -p 18083:18083 emqx/emqx:5.0.2
 ```
 
-In addition to Docker, you can also use RPM or DEB packages to install EMQX. For specific installation methods, please refer to [EMQX 5.0 Installation Guide](https://www.emqx.io/docs/en/v5.0/deploy/install.html#install).
+In addition to Docker, you can also use RPM or DEB packages to install EMQX. For specific installation methods, please refer to [EMQX 5.0 Installation Guide](https://docs.emqx.com/en/emqx/v5.0/deploy/install.html#install).
 
 After the installation, you can open `<http://localhost:18083>` to access the EMQX Dashboard to view the running status. If you can access it, usually, EMQX has been installed successfully.
 
@@ -52,7 +52,7 @@ The default username and password is `admin/public`.
 
 Install EMQX Exporter is **required**. It collects partial metrics of EMQX cluster and other info, such as license, rule engines, authentication, ACL, etc.
 
-EMQX Exporter requires access to the EMQX dashboard API with basic auth, so we need to sign in to the Dashboard to create an [API Key](https://www.emqx.io/docs/en/v5.0/dashboard/system.html#api-keys), then pass the API key and secret to the startup argument as username and password.
+EMQX Exporter requires access to the EMQX dashboard API with basic auth, so we need to sign in to the Dashboard to create an [API Key](https://docs.emqx.com/en/emqx/v5.0/dashboard/system.html#api-keys), then pass the API key and secret to the startup argument as username and password.
 
 ```
 docker run -d \

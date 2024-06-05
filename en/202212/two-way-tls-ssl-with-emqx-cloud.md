@@ -202,7 +202,7 @@ Continue exploring what EMQX Cloud has to offer:
 - Persist data and connect to other services with [Data Integrations](https://docs.emqx.com/en/cloud/latest/rule_engine/introduction.html).
 - [Access EMQX functions via REST API](https://docs.emqx.com/en/cloud/latest/api/api_overview.html).
 
-For more about EMQX Cloud, please check our [documentation](https://docs.emqx.com/en/cloud/latest/), [GitHub](https://www.github.com/emqx/emqx/issues), [Slack channel](https://slack-invite.emqx.io/), and [forum](https://www.emqx.io/forum/)! For questions, comments, or suggestions, please contact us at [cloud-support@emqx.io](mailto:cloud-support@emqx.io).
+For more about EMQX Cloud, please check our [documentation](https://docs.emqx.com/en/cloud/latest/), [GitHub](https://www.github.com/emqx/emqx/issues), [Slack channel](https://slack-invite.emqx.io/), and [forum](https://forum.emqx.io/)! For questions, comments, or suggestions, please contact us at [cloud-support@emqx.io](mailto:cloud-support@emqx.io).
 
 
 

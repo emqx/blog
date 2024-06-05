@@ -139,7 +139,7 @@ Neuron 的南向 OPC UA 驱动程序可采集和汇总 OPC UA 数据源，将其
 
 ### 启动 EMQX
 
-执行以下命令安装并运行 EMQX 容器。有关如何安装 EMQX 容器的更多信息，请访问[安装指南](https://www.emqx.io/docs/zh/v5.0/deploy/install.html)。
+执行以下命令安装并运行 EMQX 容器。有关如何安装 EMQX 容器的更多信息，请访问[安装指南](https://docs.emqx.com/zh/emqx/v5.0/deploy/install.html)。
 
 ```
 docker pull emqx/emqx:5.1.0

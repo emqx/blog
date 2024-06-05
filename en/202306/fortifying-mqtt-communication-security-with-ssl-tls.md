@@ -91,7 +91,7 @@ TLS provides a secure way to communicate over the Internet. Using a dedicated se
 - [Enabling two-way authentication for EMQX Enterprise](https://www.emqx.com/en/blog/enable-two-way-ssl-for-emqx)
 - [Enabling two-way authentication for EMQX Cloud with a custom domain and third-party certificate](https://www.emqx.com/en/blog/two-way-tls-ssl-with-emqx-cloud)
 
-For more about EMQX, please check our [documentation](https://www.emqx.io/docs/en/v5.0/), [GitHub](https://github.com/emqx/emqx), [Slack channel](https://slack-invite.emqx.io/), and [forum](https://www.emqx.io/forum/)! 
+For more about EMQX, please check our [documentation](https://docs.emqx.com/en/emqx/v5.0/), [GitHub](https://github.com/emqx/emqx), [Slack channel](https://slack-invite.emqx.io/), and [forum](https://forum.emqx.io/)! 
 
 
 

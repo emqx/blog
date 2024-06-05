@@ -78,7 +78,7 @@ EMQX 支持在 Dashboard 上传 SSL 证书，方便管理相关资源的 SSL 证
 
 目前 EMQX 仅支持 Patch 版本（Patch 版本是版本号的第三位）的热升级。 即，目前支持 4.2.0 -> 4.2.1，4.2.0 -> 4.2.2 等的热升级，但 4.2.x 暂时无法热升级到 4.3.0 或者 5.0。
 
-热升级步骤说明详见文档 [EMQX 版本热升级](https://www.emqx.io/docs/zh/v4.3/advanced/relup.html)。
+热升级步骤说明详见文档 [EMQX 版本热升级](https://docs.emqx.com/zh/emqx/v4.3/advanced/relup.html)。
 
 
 

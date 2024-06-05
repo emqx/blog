@@ -207,4 +207,4 @@ EMQX Cloudが提供するものを探求し続けます：
 - [データ統合](https://docs.emqx.com/en/cloud/latest/rule_engine/introduction.html)でデータを永続化し、他のサービスに接続する .
 - [EMQX の関数に REST API でアクセスする](https://docs.emqx.com/en/cloud/latest/api/api_overview.html) .
 
-EMQX Cloudの詳細については、[ドキュメント](https://docs.emqx.com/en/cloud/latest/)、[GitHub](https://www.github.com/emqx/emqx/issues)、[Slackチャンネル](https://slack-invite.emqx.io/)、および[フォーラム](https://www.emqx.io/forum/)をご確認ください！質問、コメント、提案については、[cloud-support@emqx.io](mailto:cloud-support@emqx.io) までご連絡ください。
+EMQX Cloudの詳細については、[ドキュメント](https://docs.emqx.com/en/cloud/latest/)、[GitHub](https://www.github.com/emqx/emqx/issues)、[Slackチャンネル](https://slack-invite.emqx.io/)、および[フォーラム](https://forum.emqx.io/)をご確認ください！質問、コメント、提案については、[cloud-support@emqx.io](mailto:cloud-support@emqx.io) までご連絡ください。

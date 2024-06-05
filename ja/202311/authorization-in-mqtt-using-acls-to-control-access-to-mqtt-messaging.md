@@ -87,10 +87,10 @@ MQTT ACL を適切に構成することは、セキュリティを維持し、MQ
 
 EMQX が IoT インフラストラクチャのセキュリティ保護にどのように役立つかを引き続き調査してください。
 
-- [EMQX アクセス制御の概要](https://www.emqx.io/docs/en/v5.0/access-control/overview.html)
+- [EMQX アクセス制御の概要](https://docs.emqx.com/en/emqx/v5.0/access-control/overview.html)
 - [EMQX Cloud を使用した Redis および JWT 認証および ACL メソッド](https://www.emqx.com/en/blog/emqx-cloud-redis-and-jwt-authentication-authorization)
 
-EMQX の詳細については、[ドキュメント](https://www.emqx.io/docs/en/v5.0/)、[GitHub](https://github.com/emqx/emqx)、[Slack チャネル](https://slack-invite.emqx.io/)、および[フォーラム](https://www.emqx.io/forum/)を確認してください。
+EMQX の詳細については、[ドキュメント](https://docs.emqx.com/en/emqx/v5.0/)、[GitHub](https://github.com/emqx/emqx)、[Slack チャネル](https://slack-invite.emqx.io/)、および[フォーラム](https://forum.emqx.io/)を確認してください。
 
 
 

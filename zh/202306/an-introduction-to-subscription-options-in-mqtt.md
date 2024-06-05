@@ -80,7 +80,7 @@ Retain Handling 这个订阅选项被用来向服务端指示当订阅建立时�
 
 ### 订阅选项 QoS 的演示
 
-1. 在 Web 浏览器上访问 [MQTTX Web](http://www.emqx.io/online-mqtt-client)。
+1. 在 Web 浏览器上访问 [MQTTX Web](http://mqtt-client.emqx.com/)。
 
 2. 创建一个使用 WebSocket 的 MQTT 连接，并且连接免费的 [公共 MQTT 服务器](http://broker.emqx.io/)：
 
@@ -96,7 +96,7 @@ Retain Handling 这个订阅选项被用来向服务端指示当订阅建立时�
 
 ### 订阅选项 No Local 的演示
 
-1. 在 Web 浏览器上访问 [MQTTX Web](http://www.emqx.io/online-mqtt-client)。
+1. 在 Web 浏览器上访问 [MQTTX Web](http://mqtt-client.emqx.com/)。
 
 2. 创建一个使用 WebSocket 的 MQTT 连接，并且连接免费的 [公共 MQTT 服务器](http://broker.emqx.io/)。
 
@@ -110,7 +110,7 @@ Retain Handling 这个订阅选项被用来向服务端指示当订阅建立时�
 
 ### 订阅选项 Retain As Published 的演示
 
-1. 在 Web 浏览器上访问 [MQTTX Web](http://www.emqx.io/online-mqtt-client)。
+1. 在 Web 浏览器上访问 [MQTTX Web](http://mqtt-client.emqx.com/)。
 
 2. 创建一个使用 WebSocket 的 MQTT 连接，并且连接免费的 [公共 MQTT 服务器](http://broker.emqx.io/)。
 
@@ -126,7 +126,7 @@ Retain Handling 这个订阅选项被用来向服务端指示当订阅建立时�
 
 ### 订阅选项 Retain Handling 的演示
 
-1. 在 Web 浏览器上访问 [MQTTX Web](http://www.emqx.io/online-mqtt-client)。
+1. 在 Web 浏览器上访问 [MQTTX Web](http://mqtt-client.emqx.com/)。
 
 2. 创建一个使用 WebSocket 的 MQTT 连接，并且连接免费的 [公共 MQTT 服务器](http://broker.emqx.io/)。
 

@@ -166,7 +166,7 @@ $ mosquitto -c mosquitto.conf
 
 ### 配置 EMQX 服务器
 
-使用公共服务器时不需要配置任何参数。实际应用中，为了使 Mosquitto MQTT 消息桥接成功，需要视用户 EMQX 的安全配置情况决定是否配置相应的客户端[认证](https://www.emqx.io/docs/zh/v5.0/security/authn/authn.html)和[授权](https://www.emqx.io/docs/zh/v5.0/security/authz/authz.html)信息。
+使用公共服务器时不需要配置任何参数。实际应用中，为了使 Mosquitto MQTT 消息桥接成功，需要视用户 EMQX 的安全配置情况决定是否配置相应的客户端[认证](https://docs.emqx.com/zh/emqx/v5.0/security/authn/authn.html)和[授权](https://docs.emqx.com/zh/emqx/v5.0/security/authz/authz.html)信息。
 
 ### 测试配置
 

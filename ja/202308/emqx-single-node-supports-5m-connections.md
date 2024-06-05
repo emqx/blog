@@ -34,7 +34,7 @@ XMeterにはプライベートデプロイメントバージョン(オンプレ�
 
 ## システムチューニング
 
-Linuxカーネルチューニングについては、[EMQXドキュメント](https://www.emqx.io/docs/en/v5.0/performance/tune.html)を参照してください。
+Linuxカーネルチューニングについては、[EMQXドキュメント](https://docs.emqx.com/en/emqx/v5.0/performance/tune.html)を参照してください。
 
 ## ベンチマーク結果
 

@@ -116,9 +116,9 @@ EMQX 已有超过 30000 个集群在生产环境中部署，具有经过验证�
 | **Performance**                              | 4 million QoS0 MQTT msgs/sec per node<br>800k QoS1 msgs/sec<br>200k QoS2 msgs/sec | **?**                         |                                                              |
 | **Latency**                                  | Single-digit millisecond latency in most scenarios                                              | Up to seconds latency in some scenarios                         |                                                              |
 | **Reliability**                              | Message Persistence in RocksDB and external Database         | Message Persistence in LevelDB | [Highly Reliable MQTT Data Persistence Based on RocksDB](https://www.emqx.com/zh/blog/mqtt-persistence-based-on-rocksdb)<br>[VerneMQ Storage](https://docs.vernemq.com/configuring-vernemq/storage) |
-| **Clustering**                               | 20+ nodes of cluster                                         | **?**                         | [EMQX Cluster Scalability](https://www.emqx.io/docs/en/v5.0/deploy/cluster/db.html#node-roles)<br>[Vernemq - Cluster](https://docs.vernemq.com/vernemq-clustering/introduction) |
+| **Clustering**                               | 20+ nodes of cluster                                         | **?**                         | [EMQX Cluster Scalability](https://docs.emqx.com/en/emqx/v5.0/deploy/cluster/db.html#node-roles)<br>[Vernemq - Cluster](https://docs.vernemq.com/vernemq-clustering/introduction) |
 | **Elastic and Resilient scaling at runtime** | ✅                                                            | **?**                         |                                                              |
-| **Auto Clustering**                          | ✅                                                            | **?**                         | [EMQX Node Discovery and Autocluster](https://www.emqx.io/docs/en/v5.0/deploy/cluster/intro.html#emqx-node-discovery-and-autocluster) |
+| **Auto Clustering**                          | ✅                                                            | **?**                         | [EMQX Node Discovery and Autocluster](https://docs.emqx.com/en/emqx/v5.0/deploy/cluster/intro.html#emqx-node-discovery-and-autocluster) |
 | **Zero Downtime/Hot Upgrade**                | ✅                                                            |                               | [EMQX Release Upgrade](https://docs.emqx.com/en/enterprise/v4.4/advanced/relup.html#release-upgrade) |
 
 > **?** 代表对于表中对比的相关条目，我们未能找到任何公开的文档或资料。
@@ -133,9 +133,9 @@ EMQX 企业版可以利用规则引擎和内置的数据桥接功能与 Kafka、
 
 | **Data Integrations** | **EMQX** | **VerneMQ** | **Notes and Links**                                          |
 | :-------------------- | :------- | :---------- | :----------------------------------------------------------- |
-| **Rule Engine**       | ✅        | ❌           | [Introduction to Data Integration](https://www.emqx.io/docs/en/v5.0/data-integration/introduction.html) |
+| **Rule Engine**       | ✅        | ❌           | [Introduction to Data Integration](https://docs.emqx.com/en/emqx/v5.0/data-integration/introduction.html) |
 | **Message Codec**     | ✅        | ❌           | [Introduction to Schema Registry](https://docs.emqx.com/en/enterprise/v4.4/rule/schema-registry.html) |
-| **Data Bridge**       | ✅        | ❌           | [Data Bridges](https://www.emqx.io/docs/en/v5.0/data-integration/data-bridges.html) |
+| **Data Bridge**       | ✅        | ❌           | [Data Bridges](https://docs.emqx.com/en/emqx/v5.0/data-integration/data-bridges.html) |
 | **MQTT Bridging**       | ✅        | ✅           | [Bridge Data into MQTT Broker](https://docs.emqx.com/en/enterprise/v5.0/data-integration/data-bridge-mqtt.html)<br>[MQTT Bridge](https://docs.vernemq.com/configuring-vernemq/bridge) |
 | **Webhook**           | ✅        | ✅           | [Ingest Data into Webhook](https://docs.emqx.com/en/enterprise/v5.0/data-integration/data-bridge-webhook.html)<br>[Webhooks](https://docs.vernemq.com/plugin-development/webhookplugins) |
 | **Kafka/Confluent**   | ✅        | **?**       | [Bridge data to Kafka](https://docs.emqx.com/en/enterprise/v4.4/rule/bridge_kafka.html)<br>[GitHub - crisrise/vmq_kafka: A VerneMQ plugin that sends all published messages to Apache Kafka](https://github.com/crisrise/vmq_kafka) |
@@ -175,8 +175,8 @@ EMQX 和 VerneMQ 都支持使用钩子和插件实现灵活的扩展。此外，
 | **Hooks**              | ✅        | ✅           | [Hooks](https://docs.emqx.com/en/enterprise/v4.4/advanced/hooks.html#definition) |
 | **Plugins**            | ✅        | ✅           | [Plugins](https://docs.emqx.com/en/enterprise/v4.4/advanced/plugins.html#list-of-plugins)<br>[Plugin Development](https://docs.vernemq.com/plugin-development/introduction) |
 | **Plugin Hot-loading** | ✅        | ✅           |                                                              |
-| **Gateways**           | ✅        | ❌           | [Gateway Introduction](https://www.emqx.io/docs/en/v5.0/gateway/gateway.html) |
-| **ExHooks/gRPC**       | ✅        | ❌           | [gRPC Hook Extension](https://www.emqx.io/docs/en/v5.0/advanced/lang-exhook.html) |
+| **Gateways**           | ✅        | ❌           | [Gateway Introduction](https://docs.emqx.com/en/emqx/v5.0/gateway/gateway.html) |
+| **ExHooks/gRPC**       | ✅        | ❌           | [gRPC Hook Extension](https://docs.emqx.com/en/emqx/v5.0/advanced/lang-exhook.html) |
 
 ## 可操作性和可观测性
 
@@ -184,17 +184,17 @@ EMQX 拥有易用的 Dashboard 和丰富的 HTTP API，支持通过 Prometheus �
 
 |                                  | **EMQX**     | **VerneMQ**     | **Notes and Links**                                          |
 | :------------------------------- | :----------- | :-------------- | :----------------------------------------------------------- |
-| **Dashboard**                    | ✅            | ❌               | [Dashboard](https://www.emqx.io/docs/en/v5.0/getting-started/dashboard.html) |
+| **Dashboard**                    | ✅            | ❌               | [Dashboard](https://docs.emqx.com/en/emqx/v5.0/getting-started/dashboard.html) |
 | **Configuration**                | HOCON Format | Key-Value Fomat |                                                              |
-| **HTTP API**                     | ✅            | ✅               | [REST API](https://www.emqx.io/docs/en/v5.0/admin/api.html)  |
-| **CLI**                          | ✅            | ✅               | [Command Line Interface](https://www.emqx.io/docs/en/v5.0/admin/cli.html) |
-| **Config Hot update**            | ✅            | ❌               | [Configuration Files](https://www.emqx.io/docs/en/v5.0/admin/cfg.html) |
-| **Metrics**                      | ✅            | ✅               | Node metrics:<br>[Metrics](https://www.emqx.io/docs/en/v5.0/observability/metrics-and-stats.html)<br>[$SYSTree](https://docs.vernemq.com/monitoring/systree)<br>[Monitor - Metrics CLI](https://docs.vernemq.com/monitoring/introduction) |
+| **HTTP API**                     | ✅            | ✅               | [REST API](https://docs.emqx.com/en/emqx/v5.0/admin/api.html)  |
+| **CLI**                          | ✅            | ✅               | [Command Line Interface](https://docs.emqx.com/en/emqx/v5.0/admin/cli.html) |
+| **Config Hot update**            | ✅            | ❌               | [Configuration Files](https://docs.emqx.com/en/emqx/v5.0/admin/cfg.html) |
+| **Metrics**                      | ✅            | ✅               | Node metrics:<br>[Metrics](https://docs.emqx.com/en/emqx/v5.0/observability/metrics-and-stats.html)<br>[$SYSTree](https://docs.vernemq.com/monitoring/systree)<br>[Monitor - Metrics CLI](https://docs.vernemq.com/monitoring/introduction) |
 | **Grafana**                      | ✅            | ✅               | [EMQX \| Grafana Labs](https://grafana.com/grafana/dashboards/17446-emqx/)<br>[VerneMQ Node Metrics \| Grafana Labs](https://grafana.com/grafana/dashboards/16479-vernemq-node-metrics/) |
-| **Cluster Metrics**              | ✅            | ✅               | [Metrics](https://www.emqx.io/docs/en/v5.0/observability/metrics-and-stats.html)<br>[Monitor - Metrics CLI](https://docs.vernemq.com/monitoring/introduction) |
-| **Alarm Alerts**                 | ✅            | ❌               | [System Topic](https://www.emqx.io/docs/en/v5.0/advanced/system-topic.html#alarms-system-alarms) |
-| **Slow Subscription Monitoring** | ✅            | ❌               | [Slow subscribers statistics](https://www.emqx.io/docs/en/v5.0/observability/slow_subscribers_statistics.html) |
-| **Prometheus**                   | ✅            | ✅               | [Integrate with Prometheus](https://www.emqx.io/docs/en/v5.0/observability/prometheus.html#dashboard-update)<br>[Prometheus](https://docs.vernemq.com/monitoring/prometheus) |
+| **Cluster Metrics**              | ✅            | ✅               | [Metrics](https://docs.emqx.com/en/emqx/v5.0/observability/metrics-and-stats.html)<br>[Monitor - Metrics CLI](https://docs.vernemq.com/monitoring/introduction) |
+| **Alarm Alerts**                 | ✅            | ❌               | [System Topic](https://docs.emqx.com/en/emqx/v5.0/advanced/system-topic.html#alarms-system-alarms) |
+| **Slow Subscription Monitoring** | ✅            | ❌               | [Slow subscribers statistics](https://docs.emqx.com/en/emqx/v5.0/observability/slow_subscribers_statistics.html) |
+| **Prometheus**                   | ✅            | ✅               | [Integrate with Prometheus](https://docs.emqx.com/en/emqx/v5.0/observability/prometheus.html#dashboard-update)<br>[Prometheus](https://docs.vernemq.com/monitoring/prometheus) |
 
 ## 结语
 

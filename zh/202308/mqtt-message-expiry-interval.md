@@ -25,7 +25,7 @@
 
 ## 演示
 
-1. 在 Web 浏览器上访问 [MQTTX Web](http://www.emqx.io/online-mqtt-client)。
+1. 在 Web 浏览器上访问 [MQTTX Web](http://mqtt-client.emqx.com/)。
 
 2. 创建一个名为 `pub` 的客户端连接用于发布消息，并且连接到免费的 [公共 MQTT 服务器](https://www.emqx.com/zh/mqtt/public-mqtt5-broker)：
 

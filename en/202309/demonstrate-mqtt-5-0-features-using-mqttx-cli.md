@@ -706,7 +706,7 @@ You can read more about subscription options in [An Introduction to Subscription
 
 ### Example 1 - No Local
 
-Clients sub14 and pub14 publish a message to topic t14 respectively. Here we use EMQX's [Delayed Publish](https://www.emqx.io/docs/en/v5.1/messaging/mqtt-delayed-publish.html) feature to delay publishing messages by 10 seconds:
+Clients sub14 and pub14 publish a message to topic t14 respectively. Here we use EMQX's [Delayed Publish](https://docs.emqx.com/en/emqx/v5.1/messaging/mqtt-delayed-publish.html) feature to delay publishing messages by 10 seconds:
 
 ```
 mqttx pub --client-id sub14 --topic '$delayed/10/t14' --message "You will not receive this message"

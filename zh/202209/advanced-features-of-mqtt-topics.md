@@ -87,7 +87,7 @@ sensor/1/temperature
 | $SYS/brokers/emqx@127.0.0.1/datetime | EMQX 系统时间     |
 | $SYS/brokers/emqx@127.0.0.1/sysdescr | EMQX 系统信息     |
 
-EMQX 还支持客户端上下线事件、收发流量、消息收发、系统监控等丰富的系统主题，用户可通过订阅 `$SYS/#` 主题获取所有系统主题消息。详细请见：[EMQX 系统主题文档](https://www.emqx.io/docs/zh/v5.0/observability/mqtt-system-topics.html#%E5%AE%A2%E6%88%B7%E7%AB%AF%E4%B8%8A%E4%B8%8B%E7%BA%BF%E4%BA%8B%E4%BB%B6)。
+EMQX 还支持客户端上下线事件、收发流量、消息收发、系统监控等丰富的系统主题，用户可通过订阅 `$SYS/#` 主题获取所有系统主题消息。详细请见：[EMQX 系统主题文档](https://docs.emqx.com/zh/emqx/v5.0/observability/mqtt-system-topics.html#%E5%AE%A2%E6%88%B7%E7%AB%AF%E4%B8%8A%E4%B8%8B%E7%BA%BF%E4%BA%8B%E4%BB%B6)。
 
 ### 共享订阅
 
@@ -99,7 +99,7 @@ EMQX 还支持客户端上下线事件、收发流量、消息收发、系统监
 
 ![MQTT 共享订阅](https://assets.emqx.com/images/c248e9334ff6d32cbec0ed71cde98b1f.png)
 
-另外，对于 MQTT 5.0 以下的版本，EMQX 还支持不带群组的共享订阅前缀 `$queue`，关于共享订阅的更多详情请查看 [EMQX 共享订阅](https://www.emqx.io/docs/zh/v5.0/mqtt/mqtt-shared-subscription.html)文档。
+另外，对于 MQTT 5.0 以下的版本，EMQX 还支持不带群组的共享订阅前缀 `$queue`，关于共享订阅的更多详情请查看 [EMQX 共享订阅](https://docs.emqx.com/zh/emqx/v5.0/mqtt/mqtt-shared-subscription.html)文档。
 
 
 ## 不同场景中的主题设计

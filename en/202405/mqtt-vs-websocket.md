@@ -189,7 +189,7 @@ Deploy EMQX using Docker to handle both MQTT and WebSocket communications seamle
 docker run -d --name emqx -p 1883:1883 -p 8083:8083 -p 8084:8084 -p 8883:8883 -p 18083:18083 emqx/emqx:5.6.1
 ```
 
-This command sets up EMQX with WebSocket enabled and is ready for immediate use. For detailed instructions on configuring WebSocket listeners in EMQX, visit the [EMQX documentation: Configure WebSocket Listener](https://www.emqx.io/docs/en/latest/configuration/listener.html#configure-websocket-listener).
+This command sets up EMQX with WebSocket enabled and is ready for immediate use. For detailed instructions on configuring WebSocket listeners in EMQX, visit the [EMQX documentation: Configure WebSocket Listener](https://docs.emqx.com/en/emqx/latest/configuration/listener.html#configure-websocket-listener).
 
 **2. Set Up MQTT.js:**
 Install the MQTT.js library to interact with the MQTT broker over WebSocket:

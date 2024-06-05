@@ -229,7 +229,7 @@ You can see that the number of EMQX Broker Pod is expanded to three, but each po
 
 ### Modify EMQX Broker configuration
 
-View the content related to [automatically cluster](https://www.emqx.io/docs/en/v5.0/deploy/cluster/introduction.html) in the EMQX Broker documentation, you can see that we need to modify the configuration of EMQX Broker.
+View the content related to [automatically cluster](https://docs.emqx.com/en/emqx/v5.0/deploy/cluster/introduction.html) in the EMQX Broker documentation, you can see that we need to modify the configuration of EMQX Broker.
 
 ```
 cluster.discovery = kubernetes

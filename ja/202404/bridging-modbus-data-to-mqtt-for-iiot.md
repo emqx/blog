@@ -83,7 +83,7 @@ ModbusからMQTTへのブリッジアーキテクチャは、主に2つのコン
 
 ### EMQXクイックスタート
 
-EMQXは複数のインストール方法を提供しており、ユーザーは[ドキュメント](https://www.emqx.io/docs/en/v5.0/deploy/install.html)で詳細なインストール方法を確認できます。本例ではコンテナデプロイを使用し、EMQXをすぐに体験できるようにします。
+EMQXは複数のインストール方法を提供しており、ユーザーは[ドキュメント](https://docs.emqx.com/en/emqx/v5.0/deploy/install.html)で詳細なインストール方法を確認できます。本例ではコンテナデプロイを使用し、EMQXをすぐに体験できるようにします。
 
 次のコマンドを実行してDockerイメージを取得します。
 
@@ -97,7 +97,7 @@ docker pull emqx/emqx:5.1.0
 docker run -d --name emqx -p 1883:1883 -p 8081:8081 -p 8083:8083 -p 8084:8084 -p 8883:8883 -p 18083:18083 emqx/emqx:5.1.0
 ```
 
-Webブラウザで `http://localhost:18083/`（「localhost」を実際のIPアドレスに置き換えてください）にアクセスすると、EMQX Dashboardにアクセスできます。これにより、デバイスの接続を管理し、関連するメトリクスを監視できます。このチュートリアルではDockerコンテナを実行したままにしておいてください。興味がある方は、[ドキュメント](https://www.emqx.io/docs/en/v5.0/)を参照して、Dashboardでより多くの機能を体験してみてください。
+Webブラウザで `http://localhost:18083/`（「localhost」を実際のIPアドレスに置き換えてください）にアクセスすると、EMQX Dashboardにアクセスできます。これにより、デバイスの接続を管理し、関連するメトリクスを監視できます。このチュートリアルではDockerコンテナを実行したままにしておいてください。興味がある方は、[ドキュメント](https://docs.emqx.com/en/emqx/v5.0/)を参照して、Dashboardでより多くの機能を体験してみてください。
 
 初期ユーザー名：`admin`、初期パスワード：`public`
 

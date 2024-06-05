@@ -38,7 +38,7 @@ XMeter provides a private deployment version (on-premise) and a public cloud Saa
 
 ## System Tuning
 
-Please refer to [EMQX Doc](https://www.emqx.io/docs/en/v5.0/performance/tune.html) for the Linux Kernel tuning.
+Please refer to [EMQX Doc](https://docs.emqx.com/en/emqx/v5.0/performance/tune.html) for the Linux Kernel tuning.
 
 ## Benchmark Results
 

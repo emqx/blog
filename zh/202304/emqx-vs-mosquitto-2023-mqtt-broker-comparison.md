@@ -76,9 +76,9 @@ EMQX 作为可集群部署的大规模消息服务器，单节点可以支持百
 | **Scalability**                              | - 4M MQTT connections per node<br>- 100M MQTT connections per cluster | <100K MQTT connections per node                              | [Reaching 100M MQTT connections with EMQX 5.0](https://www.emqx.com/en/blog/reaching-100m-mqtt-connections-with-emqx-5-0) |
 | **Performance**                              | - 2 million QoS0 MQTT msgs/sec per node<br>- 800k QoS1 msgs/sec<br>- 200k QoS2 msgs/sec | - Up to 120k QoS0 MQTT msgs/sec per node<br>- 80k QoS1 msgs/sec<br> - 60k QoS2 msgs/sec |                                                              |
 | **Latency**                                  | Single-digit millisecond latency at scale                                              | Up to seconds latency in some scenarios                                          |                                                              |
-| **Clustering**                               | 20+ nodes of cluster                                         | ❌                                                            | [Cluster Scalability](https://www.emqx.io/docs/en/v5.0/deploy/cluster/db.html#node-roles) |
+| **Clustering**                               | 20+ nodes of cluster                                         | ❌                                                            | [Cluster Scalability](https://docs.emqx.com/en/emqx/v5.0/deploy/cluster/db.html#node-roles) |
 | **Elastic and Resilient scaling at runtime** | ✅                                                            | ❌                                                            |                                                              |
-| **Auto Clustering**                          | ✅                                                            | ❌                                                            | [EMQX Node Discovery and Autocluster](https://www.emqx.io/docs/en/v5.0/deploy/cluster/intro.html#emqx-node-discovery-and-autocluster) |
+| **Auto Clustering**                          | ✅                                                            | ❌                                                            | [EMQX Node Discovery and Autocluster](https://docs.emqx.com/en/emqx/v5.0/deploy/cluster/intro.html#emqx-node-discovery-and-autocluster) |
 | **Zero Downtime/Hot Upgrade**                | ✅                                                            | ❌                                                            | [Release Upgrade](https://docs.emqx.com/en/enterprise/v4.4/advanced/relup.html#release-upgrade) |
 
 <section class="promotion">
@@ -99,18 +99,18 @@ EMQX 同样完整支持 MQTT 3.1/3.1.1/5.0 以及 MQTT over Websocket 协议。�
 | **MQTT 3.1/3.1.1**           | ✅                                                            | ✅             | [The Easy-to-understand Guide to MQTT Protocol](https://www.emqx.com/en/mqtt-guide) |
 | **MQTT 5.0**                 | ✅                                                            | ✅             | [MQTT 5 Explore](https://www.emqx.com/en/blog/introduction-to-mqtt-5)         |
 | **MQTT Shared Subscription** | ✅                                                            | ✅             |                                                              |
-| **MQTT Add-ons**             | - [Exclusive subscription](https://www.emqx.io/docs/en/v5.0/mqtt/mqtt-exclusive-subscription.html#exclusive-subscription)<br>- [Delayed Publish](https://www.emqx.io/docs/en/v5.0/advanced/delayed-publish.html)<br>- [Auto-subscription](https://www.emqx.io/docs/en/v5.0/advanced/auto-subscriptions.html)<br>- [Topic rewrite](https://www.emqx.io/docs/en/v5.0/advanced/topic-rewrite.html) | ❌             |                                                              |
-| **MQTT over TCP**            | ✅                                                            | ✅             | [EMQX Getting Started](https://www.emqx.io/docs/en/v5.0/getting-started/getting-started.html#quick-verification-using-an-mqtt-client) |
+| **MQTT Add-ons**             | - [Exclusive subscription](https://docs.emqx.com/en/emqx/v5.0/mqtt/mqtt-exclusive-subscription.html#exclusive-subscription)<br>- [Delayed Publish](https://docs.emqx.com/en/emqx/v5.0/advanced/delayed-publish.html)<br>- [Auto-subscription](https://docs.emqx.com/en/emqx/v5.0/advanced/auto-subscriptions.html)<br>- [Topic rewrite](https://docs.emqx.com/en/emqx/v5.0/advanced/topic-rewrite.html) | ❌             |                                                              |
+| **MQTT over TCP**            | ✅                                                            | ✅             | [EMQX Getting Started](https://docs.emqx.com/en/emqx/v5.0/getting-started/getting-started.html#quick-verification-using-an-mqtt-client) |
 | **MQTT over TLS**            | ✅                                                            | ✅             | [Enable SSL/TLS for EMQX MQTT broker](https://www.emqx.com/en/blog/emqx-server-ssl-tls-secure-connection-configuration-guide) |
 | **MQTT over WebSocket**      | ✅                                                            | ✅             | [Connect to MQTT broker with Websocket](https://www.emqx.com/en/blog/connect-to-mqtt-broker-with-websocket) |
 | **MQTT over QUIC**           | ✅                                                            | ❌             | EMQX is now the only MQTT broker in the world that supports QUIC transport. ([MQTT over QUIC](https://www.emqx.com/en/blog/mqtt-over-quic)) |
-| **LB (Proxy Protocol)**      | ✅                                                            | ✅             | Proxy Protocol v1, v2 ([Cluster load balancing](https://www.emqx.io/docs/en/v5.0/deploy/cluster/lb.html)) |
+| **LB (Proxy Protocol)**      | ✅                                                            | ✅             | Proxy Protocol v1, v2 ([Cluster load balancing](https://docs.emqx.com/en/emqx/v5.0/deploy/cluster/lb.html)) |
 | **IPv6 Support**             | ✅                                                            | ✅             |                                                              |
-| **Multi-protocol Gateway**   | ✅                                                            | ❌             | [Extended protocol gateway](https://www.emqx.io/docs/en/v5.0/gateway/gateway.html#design) |
-| **MQTT-SN**                  | ✅                                                            | ❌             | [MQTT-SN Gateway](https://www.emqx.io/docs/en/v5.0/gateway/mqttsn.html) |
-| **CoAP**                     | ✅                                                            | ❌             | [CoAP Protocol Gateway](https://www.emqx.io/docs/en/v5.0/configuration/configuration-manual.html#coap) |
-| **LwM2M**                    | ✅                                                            | ❌             | [LwM2M Protocol Gateway](https://www.emqx.io/docs/en/v5.0/configuration/configuration-manual.html#lwm2m) |
-| **STOMP**                    | ✅                                                            | ❌             | [Stomp Gateway](https://www.emqx.io/docs/en/v5.0/gateway/stomp.html) |
+| **Multi-protocol Gateway**   | ✅                                                            | ❌             | [Extended protocol gateway](https://docs.emqx.com/en/emqx/v5.0/gateway/gateway.html#design) |
+| **MQTT-SN**                  | ✅                                                            | ❌             | [MQTT-SN Gateway](https://docs.emqx.com/en/emqx/v5.0/gateway/mqttsn.html) |
+| **CoAP**                     | ✅                                                            | ❌             | [CoAP Protocol Gateway](https://docs.emqx.com/en/emqx/v5.0/configuration/configuration-manual.html#coap) |
+| **LwM2M**                    | ✅                                                            | ❌             | [LwM2M Protocol Gateway](https://docs.emqx.com/en/emqx/v5.0/configuration/configuration-manual.html#lwm2m) |
+| **STOMP**                    | ✅                                                            | ❌             | [Stomp Gateway](https://docs.emqx.com/en/emqx/v5.0/gateway/stomp.html) |
 
 ## 安全性
 
@@ -133,15 +133,15 @@ EMQX 支持多种认证机制，如用户名密码认证、JWT 认证以及基�
 
 |                                      | **EMQX** | **Mosquitto** | **Notes & Links**                                            |
 | :----------------------------------- | :------- | :------------ | :----------------------------------------------------------- |
-| **Username/Password**                | ✅        | ✅             | [EMQX: AuthN Introduction](https://www.emqx.io/docs/en/v5.0/security/authn/authn.html)<br>[Mosquitto: Authentication methods](https://mosquitto.org/documentation/authentication-methods/#:~:text=In%20Mosquitto%202.0%20and%20up%2C%20you%20must%20choose,authentication%3A%20password%20files%2C%20authentication%20plugins%2C%20and%20unauthorised%2Fanonymous%20access.) |
-| **JWT**                              | ✅        | ✅             | EMQX：[JWT Authenticaton](https://www.emqx.io/docs/en/v5.0/security/authn/jwt.html)<br>Mosquitto: [Auth plugin for mosquitto](https://github.com/iegomez/mosquitto-go-auth) |
-| **MQTT 5.0 Enhanced Authentication** | ✅        | ❌             | [SCRAM Authentication](https://www.emqx.io/docs/en/v5.0/security/authn/scram.html) |
-| **PSK**                              | ✅        | ✅             | [SSL/TLS](https://www.emqx.io/docs/en/v5.0/security/ssl.html#psk-authentication) |
+| **Username/Password**                | ✅        | ✅             | [EMQX: AuthN Introduction](https://docs.emqx.com/en/emqx/v5.0/security/authn/authn.html)<br>[Mosquitto: Authentication methods](https://mosquitto.org/documentation/authentication-methods/#:~:text=In%20Mosquitto%202.0%20and%20up%2C%20you%20must%20choose,authentication%3A%20password%20files%2C%20authentication%20plugins%2C%20and%20unauthorised%2Fanonymous%20access.) |
+| **JWT**                              | ✅        | ✅             | EMQX：[JWT Authenticaton](https://docs.emqx.com/en/emqx/v5.0/security/authn/jwt.html)<br>Mosquitto: [Auth plugin for mosquitto](https://github.com/iegomez/mosquitto-go-auth) |
+| **MQTT 5.0 Enhanced Authentication** | ✅        | ❌             | [SCRAM Authentication](https://docs.emqx.com/en/emqx/v5.0/security/authn/scram.html) |
+| **PSK**                              | ✅        | ✅             | [SSL/TLS](https://docs.emqx.com/en/emqx/v5.0/security/ssl.html#psk-authentication) |
 | **X.509 Certificates**               | ✅        | ✅             |                                                              |
 | **LDAP**                             | ✅        | ✅             | [LDAP Authentication/ACL](https://docs.emqx.com/en/enterprise/v4.4/modules/ldap_authentication.html) |
-| **Fine-grained Access Control**      | ✅        | ✅             | [EMQX Authorization](https://www.emqx.io/docs/en/v5.0/security/authz/authz.html) |
-| **Authentication  Backends**         | ✅        | ✅             | [Authentication Introduction](https://www.emqx.io/docs/en/v5.0/security/authn/authn.html) |
-| **ACL Database Backends**            | ✅        | ✅             | EMQX：Files, MySQL, PostgreSQL, MongoDB, Built-in Database, HTTP<br>[EMQX Authorization Introduction](https://www.emqx.io/docs/en/v5.0/security/authz/authz.html) |
+| **Fine-grained Access Control**      | ✅        | ✅             | [EMQX Authorization](https://docs.emqx.com/en/emqx/v5.0/security/authz/authz.html) |
+| **Authentication  Backends**         | ✅        | ✅             | [Authentication Introduction](https://docs.emqx.com/en/emqx/v5.0/security/authn/authn.html) |
+| **ACL Database Backends**            | ✅        | ✅             | EMQX：Files, MySQL, PostgreSQL, MongoDB, Built-in Database, HTTP<br>[EMQX Authorization Introduction](https://docs.emqx.com/en/emqx/v5.0/security/authz/authz.html) |
 | **Flapping Detect**                  | ✅        | ❌             |                                                              |
 | **Block List**                       | ✅        | ❌             |                                                              |
 
@@ -153,10 +153,10 @@ EMQX 在数据集成方面提供了 WebHook 方式将客户端消息和事件推
 
 |                     | **EMQX**               | **Mosquitto** | **Notes and Links**                                          |
 | :------------------ | :--------------------- | :------------ | :----------------------------------------------------------- |
-| **Webhook**         | ✅                      | ✅             | [Webhook](https://www.emqx.io/docs/en/v5.0/data-integration/data-bridge-webhook.html#example-setup-webhook-using-config-files) |
-| **Rule Engine**     | ✅                      | ❌             | [Rule Engine](https://www.emqx.io/docs/en/v5.0/data-integration/rules.html) |
+| **Webhook**         | ✅                      | ✅             | [Webhook](https://docs.emqx.com/en/emqx/v5.0/data-integration/data-bridge-webhook.html#example-setup-webhook-using-config-files) |
+| **Rule Engine**     | ✅                      | ❌             | [Rule Engine](https://docs.emqx.com/en/emqx/v5.0/data-integration/rules.html) |
 | **Message Codec**     | ✅                    | ❌             |  |
-| **Data Bridge**     | ✅                      | ❌             | [Data bridges](https://www.emqx.io/docs/en/v5.0/data-integration/data-bridges.html) |
+| **Data Bridge**     | ✅                      | ❌             | [Data bridges](https://docs.emqx.com/en/emqx/v5.0/data-integration/data-bridges.html) |
 | **Confluent/Kafka** | ✅ (Enterprise Edition) | ❌             | [Stream Data into Kafka](https://docs.emqx.com/en/enterprise/v4.4/rule/bridge_kafka.html) |
 | **SAP Event Mesh**  | ✅(Enterprise Edition)  | ❌             | [Ingest Data into SAP Event Mesh](https://docs.emqx.com/en/enterprise/v4.4/rule/bridge_sap_event_mesh.html#bridge-data-to-sap-event-mesh) |
 | **Apache Pulsar**   | ✅(Enterprise Edition)  | ❌             | [Ingest Data into Pulsar](https://docs.emqx.com/en/enterprise/v4.4/rule/bridge_pulsar.html) |
@@ -186,10 +186,10 @@ EMQX 在数据集成方面提供了 WebHook 方式将客户端消息和事件推
 
 |                        | **EMQX**               | **Mosquitto** | **Notes and Links**                                          |
 | :--------------------- | :--------------------- | :------------ | :----------------------------------------------------------- |
-| **Rule Engine**        | ✅                      | ❌             | [Rule Engine](https://www.emqx.io/docs/en/v5.0/data-integration/rules.html) |
-| **Built-in Functions** | ✅                      | ❌             | [Built-in SQL Functions](https://www.emqx.io/docs/en/v5.0/data-integration/rule-sql-builtin-functions.html#built-in-sql-functions) |
-| **JQ Functions**       | ✅                      | ❌             | [JQ functions](https://www.emqx.io/docs/en/v5.0/data-integration/rule-sql-jq.html#jq-functions) |
-| **Event Trigger**      | ✅                      | ❌             | [Rule Engine](https://www.emqx.io/docs/en/v5.0/data-integration/rules.html#rule-engine) |
+| **Rule Engine**        | ✅                      | ❌             | [Rule Engine](https://docs.emqx.com/en/emqx/v5.0/data-integration/rules.html) |
+| **Built-in Functions** | ✅                      | ❌             | [Built-in SQL Functions](https://docs.emqx.com/en/emqx/v5.0/data-integration/rule-sql-builtin-functions.html#built-in-sql-functions) |
+| **JQ Functions**       | ✅                      | ❌             | [JQ functions](https://docs.emqx.com/en/emqx/v5.0/data-integration/rule-sql-jq.html#jq-functions) |
+| **Event Trigger**      | ✅                      | ❌             | [Rule Engine](https://docs.emqx.com/en/emqx/v5.0/data-integration/rules.html#rule-engine) |
 | **JSON Codec**         | ✅                      | ❌             |                                                              |
 | **Avro Codec**         | ✅(Enterprise Edition)  | ❌             | [Custom codec example - Avro](https://docs.emqx.com/en/enterprise/v4.4/rule/schema-registry-examp-avro.html) |
 | **ProtoBuf Codec**     | ✅(Enterprise Edition)  | ❌             | [Custom codec example - Protobuf](https://docs.emqx.com/en/enterprise/v4.4/rule/schema-registry-examp-protobuf.html) |
@@ -203,17 +203,17 @@ EMQX 通过 HTTP API 和 Dashboard 提供丰富和可视化的监控功能，使
 
 |                                  | **EMQX**     | **Mosquitto**   | **Notes and Links**                                          |
 | :------------------------------- | :----------- | :-------------- | :----------------------------------------------------------- |
-| **Dashboard**                    | ✅            | ❌               | [EMQX Dashboard](https://www.emqx.io/docs/en/v5.0/getting-started/dashboard.html) |
+| **Dashboard**                    | ✅            | ❌               | [EMQX Dashboard](https://docs.emqx.com/en/emqx/v5.0/getting-started/dashboard.html) |
 | **Configuration**                | HOCON Format | Key-Value Fomat |                                                              |
-| **HTTP API**                     | ✅            | ❌               | [EMQX REST API](https://www.emqx.io/docs/en/v5.0/admin/api.html) |
-| **CLI**                          | ✅            | ✅               | [Command Line Interface](https://www.emqx.io/docs/en/v5.0/admin/cli.html) |
-| **Config Hot update**            | ✅            | ❌               | [Configuration Files](https://www.emqx.io/docs/en/v5.0/admin/cfg.html) |
-| **Metrics**                      | ✅            | ✅               | Node metrics:<br> [Metrics](https://www.emqx.io/docs/en/v5.0/observability/metrics-and-stats.html) <br> Mosquitto - $SYS topic |
-| **Grafana**                      | ✅            | ✅               | [Integrate with Prometheus](https://www.emqx.io/docs/en/v5.0/observability/prometheus.html) |
-| **Cluster Metrics**              | ✅            | ❌               | [Metrics](https://www.emqx.io/docs/en/v5.0/observability/metrics-and-stats.html) |
-| **Alarm Alerts**                 | ✅            | ❌               | [System Topic](https://www.emqx.io/docs/en/v5.0/advanced/system-topic.html#alarms-system-alarms) |
-| **Slow Subscription Monitoring** | ✅            | ❌               | [Slow subscribers statistics](https://www.emqx.io/docs/en/v5.0/observability/slow_subscribers_statistics.html) |
-| **Prometheus**                   | ✅            | ✅               | [Integrate with Prometheus](https://www.emqx.io/docs/en/v5.0/observability/prometheus.html#dashboard-update) |
+| **HTTP API**                     | ✅            | ❌               | [EMQX REST API](https://docs.emqx.com/en/emqx/v5.0/admin/api.html) |
+| **CLI**                          | ✅            | ✅               | [Command Line Interface](https://docs.emqx.com/en/emqx/v5.0/admin/cli.html) |
+| **Config Hot update**            | ✅            | ❌               | [Configuration Files](https://docs.emqx.com/en/emqx/v5.0/admin/cfg.html) |
+| **Metrics**                      | ✅            | ✅               | Node metrics:<br> [Metrics](https://docs.emqx.com/en/emqx/v5.0/observability/metrics-and-stats.html) <br> Mosquitto - $SYS topic |
+| **Grafana**                      | ✅            | ✅               | [Integrate with Prometheus](https://docs.emqx.com/en/emqx/v5.0/observability/prometheus.html) |
+| **Cluster Metrics**              | ✅            | ❌               | [Metrics](https://docs.emqx.com/en/emqx/v5.0/observability/metrics-and-stats.html) |
+| **Alarm Alerts**                 | ✅            | ❌               | [System Topic](https://docs.emqx.com/en/emqx/v5.0/advanced/system-topic.html#alarms-system-alarms) |
+| **Slow Subscription Monitoring** | ✅            | ❌               | [Slow subscribers statistics](https://docs.emqx.com/en/emqx/v5.0/observability/slow_subscribers_statistics.html) |
+| **Prometheus**                   | ✅            | ✅               | [Integrate with Prometheus](https://docs.emqx.com/en/emqx/v5.0/observability/prometheus.html#dashboard-update) |
 
 ## 云原生部署与 K8s 支持
 

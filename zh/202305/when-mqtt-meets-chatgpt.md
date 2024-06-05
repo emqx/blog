@@ -61,7 +61,7 @@
   docker run -d --name emqx -p 1883:1883 -p 8083:8083 -p 8883:8883 -p 8084:8084 -p 18083:18083 emqx/emqx:latest
   ````
 
-  除 Docker 安装外，EMQX 还支持使用 RPM 或 DEB 包安装，具体安装方法请参考 [EMQX 5.0 安装指南](https://www.emqx.io/docs/zh/v5.0/deploy/install.html)。
+  除 Docker 安装外，EMQX 还支持使用 RPM 或 DEB 包安装，具体安装方法请参考 [EMQX 5.0 安装指南](https://docs.emqx.com/zh/emqx/v5.0/deploy/install.html)。
 
 - 安装 MQTTX 桌面端应用：
 

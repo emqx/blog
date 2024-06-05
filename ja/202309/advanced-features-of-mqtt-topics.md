@@ -77,7 +77,7 @@ sensor/bedroom/1/temperature
 | `$SYS/brokers/${node}/datetime` | EMQX ブローカー時間         |
 | `$SYS/brokers/${node}/sysdescr` | EMQX ブローカーの説明       |
 
-EMQX は、クライアントのオンライン/オフライン イベント、統計、システム監視、アラームなどの豊富なシステム トピックもサポートしています。詳細については、[EMQX システム トピックの](https://www.emqx.io/docs/en/v5.0/advanced/system-topic.html)ドキュメントを参照してください。
+EMQX は、クライアントのオンライン/オフライン イベント、統計、システム監視、アラームなどの豊富なシステム トピックもサポートしています。詳細については、[EMQX システム トピックの](https://docs.emqx.com/en/emqx/v5.0/advanced/system-topic.html)ドキュメントを参照してください。
 
 ### 共有サブスクリプション
 
@@ -91,7 +91,7 @@ EMQX は、クライアントのオンライン/オフライン イベント、�
 
 さらに、EMQX は、`$queue`MQTT 3.1.1 での共有サブスクリプション プレフィックスの使用もサポートしています。これは共有サブスクリプションの特殊なケースであり、すべてのサブスクライバが 1 つのグループに含まれるのと同じです。
 
-共有サブスクリプションの詳細については、[EMQX 共有サブスクリプションの](https://www.emqx.io/docs/en/v5.0/advanced/shared-subscriptions.html)ドキュメントを参照してください。
+共有サブスクリプションの詳細については、[EMQX 共有サブスクリプションの](https://docs.emqx.com/en/emqx/v5.0/advanced/shared-subscriptions.html)ドキュメントを参照してください。
 
 ## さまざまなシナリオのトピック
 

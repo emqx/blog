@@ -37,7 +37,7 @@ EMQX 是全球领先的开源分布式 [MQTT 消息服务器](https://www.emqx.c
 docker run -d --name emqx -p 1883:1883 -p 8083:8083 -p 8883:8883 -p 8084:8084 -p 18083:18083 emqx/emqx:5.0.2
 ```
 
-除了使用 Docker 安装 EMQX 外，我们还可以使用 RPM 或 DEB 软件包进行安装。具体安装方法请参阅 [EMQX 5.0 Installation Guide](https://www.emqx.io/docs/en/v5.0/deploy/install.html#install)。
+除了使用 Docker 安装 EMQX 外，我们还可以使用 RPM 或 DEB 软件包进行安装。具体安装方法请参阅 [EMQX 5.0 Installation Guide](https://docs.emqx.com/en/emqx/v5.0/deploy/install.html#install)。
 
 安装完成后，我们可以打开`<http://localhost:18083>`访问 EMQX Dashboard 以查看运行状态。
 
@@ -49,7 +49,7 @@ docker run -d --name emqx -p 1883:1883 -p 8083:8083 -p 8883:8883 -p 8084:8084 -p
 
 需要安装 EMQX Exporter。该组件用于收集部分未通过 EMQX 的 Prometheus API 接口暴露的运行状态和指标，比如 License、规则引擎、认证、授权等。
 
-EMQX Exporter 使用 basic auth 的方式访问 EMQX Dashboard API，因此我们需要提前登录 Dashboard 并创建一个专门用于指标采集的 [API key](https://www.emqx.io/docs/en/v5.0/dashboard/system.html#api-keys)，然后将 API key 和 secret 作为 EMQX Exporter 的启动参数。
+EMQX Exporter 使用 basic auth 的方式访问 EMQX Dashboard API，因此我们需要提前登录 Dashboard 并创建一个专门用于指标采集的 [API key](https://docs.emqx.com/en/emqx/v5.0/dashboard/system.html#api-keys)，然后将 API key 和 secret 作为 EMQX Exporter 的启动参数。
 
 ```
 docker run -d \

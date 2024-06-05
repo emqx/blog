@@ -76,7 +76,7 @@ Keepalive * backoff * 2
 
 バックオフのデフォルト値は 0.75 です。したがって、ユーザーがこの構成を変更しない場合、EMQX の動作は MQTT 標準に完全に準拠します。
 
-詳細については、[EMQX configuration documentation](https://www.emqx.io/docs/en/v4.3/configuration/configuration.html) を参照してください。
+詳細については、[EMQX configuration documentation](https://docs.emqx.com/en/emqx/v4.3/configuration/configuration.html) を参照してください。
 
 > ***注: WebSocket 接続の Keep Alive の設定***
 >

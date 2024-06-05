@@ -51,13 +51,13 @@ The AUTH packet has no Payload.
 
 ## Conclusion
 
-The AUTH packet is central to implementing any number of authentication data exchanges, and it also enables MQTT's Enhanced Authentication to support various different authentication mechanisms. Mechanisms like SCRAM authentication, and Kerberos authentication, can provide higher security protection than simple password authentication. Currently, EMQX has already supported [SCRAM authentication](https://www.emqx.io/docs/en/v5.1/access-control/authn/scram.html).
+The AUTH packet is central to implementing any number of authentication data exchanges, and it also enables MQTT's Enhanced Authentication to support various different authentication mechanisms. Mechanisms like SCRAM authentication, and Kerberos authentication, can provide higher security protection than simple password authentication. Currently, EMQX has already supported [SCRAM authentication](https://docs.emqx.com/en/emqx/v5.1/access-control/authn/scram.html).
 
 Now, we have introduced all types of control packets in MQTT. As a binary protocol, MQTT allows us to transmit application messages in any format. However, correspondingly, we need to strictly encode and parse MQTT packets according to the protocol specifications, otherwise, it may lead to protocol errors.
 
 When we encounter problems, we can first check the Reason Code in the response packet returned by the other party, which can indicate most of the error causes. When some embedded device end-side SDK implementations are poor and cannot directly provide a Reason Code, we can try packet sniffing to view the Reason Code in the packet. At this time, we can use Wireshark to avoid manual parsing.
 
-[EMQX](https://www.emqx.io/), as a widely used, highly scalable MQTT Broker, also provides a [Log Trace](https://www.emqx.io/docs/en/v5.1/observability/tracer.html) feature that is convenient for users to troubleshoot problems. It can record all relevant logs of specified Client ID, topic, and IP, including packet receiving and sending logs. So we can use it to analyze whether the behavior of the client is abnormal, such as whether it correctly responded to PUBACK, whether it repeatedly sent CONNACK packets, etc.
+[EMQX](https://www.emqx.io/), as a widely used, highly scalable MQTT Broker, also provides a [Log Trace](https://docs.emqx.com/en/emqx/v5.1/observability/tracer.html) feature that is convenient for users to troubleshoot problems. It can record all relevant logs of specified Client ID, topic, and IP, including packet receiving and sending logs. So we can use it to analyze whether the behavior of the client is abnormal, such as whether it correctly responded to PUBACK, whether it repeatedly sent CONNACK packets, etc.
 
 <section class="promotion">
     <div>

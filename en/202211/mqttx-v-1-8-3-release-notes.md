@@ -30,7 +30,7 @@ Online MQTT 5.0 Client Tool MQTTX Web has been updated as follows:
 - Support setting subscription identifiers and subscription options
 - Support setting the reconnect period
 
-Online use address: [http://www.emqx.io/online-mqtt-client](http://www.emqx.io/online-mqtt-client) 
+Online use address: [http://mqtt-client.emqx.com/](http://mqtt-client.emqx.com/) 
 
 ## MQTTX CLI
 

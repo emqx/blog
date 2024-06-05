@@ -18,7 +18,7 @@ EMQX 是一个高性能、可扩展的 MQTT 平台，适用于物联网、工业
   docker run -d --name emqx-enterprise -p 1883:1883 -p 8083:8083 -p 8084:8084 -p 8883:8883 -p 18083:18083 emqx/emqx-enterprise:5.5.1
   ```
 
-- 对于非 Docker 用户，EMQX 提供 RPM 或 DEB 包。[EMQX 5.5 安装指南](https://www.emqx.io/docs/zh/v5.5/deploy/install.html)提供了详细的安装说明。
+- 对于非 Docker 用户，EMQX 提供 RPM 或 DEB 包。[EMQX 5.5 安装指南](https://docs.emqx.com/zh/emqx/v5.5/deploy/install.html)提供了详细的安装说明。
 
 ### 安装 MQTTX 客户端
 

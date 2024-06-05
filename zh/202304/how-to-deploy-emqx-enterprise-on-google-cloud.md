@@ -134,7 +134,7 @@ GCP 的 Virtual Machine Instances 允许用户轻松部署和管理应用程序�
 >
 > [MQTTX Web](https://mqttx.app/zh/web) 是 MQTTX 的浏览器版本，可以免除下载与安装，打开浏览器即可通过 WebSocket 快速连接至 MQTT 服务器。
 
-1. 访问 [MQTTX Web](http://www.emqx.io/online-mqtt-client#/recent_connections) 页面，点击 **New Connection** 或菜单栏 **+** 图标创建连接。
+1. 访问 [MQTTX Web](http://mqtt-client.emqx.com/#/recent_connections) 页面，点击 **New Connection** 或菜单栏 **+** 图标创建连接。
 
    ![New Connection](https://assets.emqx.com/images/f761642f67fe59fb0b36cd7196635b1a.png)
 
