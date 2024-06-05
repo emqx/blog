@@ -91,7 +91,7 @@ TLS は、インターネット上で安全に通信する方法を提供しま�
 - [EMQX Enterprise の双方向認証](https://www.emqx.com/en/blog/enable-two-way-ssl-for-emqx)
 - [カスタム ドメインとサードパーティ証明書を使用した EMQX クラウドの双方向認証の有効化](https://www.emqx.com/en/blog/two-way-tls-ssl-with-emqx-cloud)
 
-EMQX の詳細については、[ドキュメント](https://www.emqx.io/docs/en/v5.0/)、[GitHub](https://github.com/emqx/emqx)、[Slack チャネル](https://slack-invite.emqx.io/)、および[フォーラム](https://www.emqx.io/forum/)を確認してください。
+EMQX の詳細については、[ドキュメント](https://docs.emqx.com/en/emqx/v5.0/)、[GitHub](https://github.com/emqx/emqx)、[Slack チャネル](https://slack-invite.emqx.io/)、および[フォーラム](https://forum.emqx.io/)を確認してください。
 
 
 

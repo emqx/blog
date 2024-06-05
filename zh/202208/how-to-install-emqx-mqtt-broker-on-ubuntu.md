@@ -51,7 +51,7 @@ APT 是 Ubuntu 自带的包管理器，建议优先使用 APT 安装 EMQX。同�
 
 #### 下载安装包
 
-访问 EMQX 下载地址 [https://www.emqx.io/zh/downloads?os=Ubuntu](https://www.emqx.io/zh/downloads?os=Ubuntu)。选中 `Package` 标签，安装包类型选择 `Ubuntu20.04 amd64/tag.gz`，然后点击右边的复制图标（这将会复制整行 wget 下载命令）。
+访问 EMQX 下载地址 [https://www.emqx.com/en/downloads-and-install/broker?os=Ubuntu](https://www.emqx.com/en/downloads-and-install/broker?os=Ubuntu)。选中 `Package` 标签，安装包类型选择 `Ubuntu20.04 amd64/tag.gz`，然后点击右边的复制图标（这将会复制整行 wget 下载命令）。
 
 ![下载 EMQX](https://assets.emqx.com/images/cfab87178de1fa6481e283f78d07d647.png)
 
@@ -145,7 +145,7 @@ Dashboard 的默认用户名为 `admin`，密码为 `public`，第一次登录�
 
 > EMQX 也提供了与多种后端数据库的认证集成支持，包括 MySQL、PostgreSQL、MongoDB 和 Redis。
 >
-> 查看文档了解更多认证方式：[https://www.emqx.io/docs/zh/v5.0/security/authn/authn.html](https://www.emqx.io/docs/zh/v5.0/security/authn/authn.html)
+> 查看文档了解更多认证方式：[https://docs.emqx.com/zh/emqx/v5.0/security/authn/authn.html](https://docs.emqx.com/zh/emqx/v5.0/security/authn/authn.html)
 
 ### 创建认证
 
@@ -195,7 +195,7 @@ EMQX 从 5.0 开始支持在 Dashbaord 配置认证，以方便用户能更加�
 
 ![MQTT 连接失败](https://assets.emqx.com/images/d5aa032f50c8a6d20708e0bbb8e94ebf.png)
 
-至此，我们已完成了 EMQX  的认证配置，搭建了一台可用于生产环境的单节点 MQTT 服务器。若要保证 MQTT  服务器的高可用，还需要创建多个节点的 EMQX 集群，创建集群的具体细节本文不再详述，读者可参考 [EMQX 集群文档](https://www.emqx.io/docs/zh/v5.0/deploy/cluster/intro.html) 进行配置。
+至此，我们已完成了 EMQX  的认证配置，搭建了一台可用于生产环境的单节点 MQTT 服务器。若要保证 MQTT  服务器的高可用，还需要创建多个节点的 EMQX 集群，创建集群的具体细节本文不再详述，读者可参考 [EMQX 集群文档](https://docs.emqx.com/zh/emqx/v5.0/deploy/cluster/intro.html) 进行配置。
 
 
 

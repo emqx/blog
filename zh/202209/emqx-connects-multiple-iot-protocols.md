@@ -141,7 +141,7 @@ gateway.lwm2m {
 
 ### 发布订阅授权
 
-网关中无独立的主题授权管理，他们都集中于在 AuthZ 中。参考：[授权](https://www.emqx.io/docs/zh/v5.0/security/authz/authz.html#授权数据源) 
+网关中无独立的主题授权管理，他们都集中于在 AuthZ 中。参考：[授权](https://docs.emqx.com/zh/emqx/v5.0/security/authz/authz.html#授权数据源) 
 
 > 注：使用 PUB/SUB 模型转换 的网关无需对其设置的主题配置权限，因为这类客户端的主题规则是强制性的。
 
@@ -209,7 +209,7 @@ fun authenticate(ClientInfo, LastAuthResult)  // 入参为：客户端信息、�
 
 <center>EMQX 5.0 网关 HTTP API 接口示例</center>
 
-本文中仅提供一些简单示例，详情可参考官网文档： [网关配置](https://www.emqx.io/docs/zh/v5.0/admin/cfg.html#gateway)、[网关 HTTP API ](https://www.emqx.io/docs/zh/v5.0/admin/api.html#/gateway) 
+本文中仅提供一些简单示例，详情可参考官网文档： [网关配置](https://docs.emqx.com/zh/emqx/v5.0/admin/cfg.html#gateway)、[网关 HTTP API ](https://docs.emqx.com/zh/emqx/v5.0/admin/api.html#/gateway) 
 
 例1，通过配置文件启用一个 STOMP 网关：
 

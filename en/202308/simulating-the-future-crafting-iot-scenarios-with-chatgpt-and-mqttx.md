@@ -46,7 +46,7 @@ To ensure smooth communication with IoT devices, start by installing EMQX:
 docker run -d --name emqx -p 1883:1883 -p 8083:8083 -p 8883:8883 -p 8084:8084 -p 18083:18083 emqx/emqx:latest
 ```
 
-In addition to Docker installation, EMQX supports installation using RPM or DEB packages. For more installation methods, refer to the [<u>EMQX 5.0 Installation Guide</u>](https://www.emqx.io/docs/en/v5.1/deploy/install.html). For those wanting to quickly verify without local installation, using the online [public MQTT broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker): `broker.emqx.io` is recommended.
+In addition to Docker installation, EMQX supports installation using RPM or DEB packages. For more installation methods, refer to the [<u>EMQX 5.0 Installation Guide</u>](https://docs.emqx.com/en/emqx/v5.1/deploy/install.html). For those wanting to quickly verify without local installation, using the online [public MQTT broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker): `broker.emqx.io` is recommended.
 
 ### Installing MQTTX
 

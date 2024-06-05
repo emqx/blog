@@ -98,7 +98,7 @@ IoTDB>
 
 ### 下载和启动 EMQX
 
-我们直接使用命令行下载 macOS 版本的 EMQX 开源版，更多安装包请访问 [EMQX 开源版下载页面](https://www.emqx.io/zh/downloads)。
+我们直接使用命令行下载 macOS 版本的 EMQX 开源版，更多安装包请访问 [EMQX 开源版下载页面](https://www.emqx.com/en/downloads-and-install/broker)。
 
 ```shell
 % wget https://www.emqx.com/en/downloads/broker/4.3.11/emqx-macos-4.3.11-amd64.zip

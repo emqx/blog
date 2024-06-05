@@ -32,7 +32,7 @@ MQTTX 作为一款 MQTT 5.0 客户端工具，目前默认使用 MQTT 5.0 连接
 - 支持设置订阅标识符和订阅选项
 - 支持设置重连周期
 
-在线使用地址：[http://www.emqx.io/online-mqtt-client](http://www.emqx.io/online-mqtt-client) 
+在线使用地址：[http://mqtt-client.emqx.com/](http://mqtt-client.emqx.com/) 
 
 ## MQTTX CLI
 

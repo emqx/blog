@@ -71,7 +71,7 @@ sensor/data
 
 ### 安装 EMQX
 
-> 如果您是 EMQX 新手用户，推荐通过 [EMQX 文档](https://www.emqx.io/docs/zh/latest/) 快速上手
+> 如果您是 EMQX 新手用户，推荐通过 [EMQX 文档](https://docs.emqx.com/zh/emqx/latest/) 快速上手
 
 访问 [EMQX 下载](https://www.emqx.com/zh/try) 页面下载适合您操作系统的安装包，本文截稿时 EMQX 开源版最新版本为 v4.1.1，下载 zip 包的启动步骤如下 ：
 

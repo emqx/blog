@@ -348,7 +348,7 @@ Click `Import` button to complete the import, we will see the following four mon
 
 ### 5. System Tuning
 
-Depending on the actual scale of the test, we may also need to adjust Linux kernel parameters and EMQX parameters. For example, when the number of our MQTT client connections exceeds 65535, we usually need to adjust parameters such as `fs.file-max` to increase the maximum number of file descriptors that EMQX can open. When the message throughput is large, we may need to adjust the size settings of the send and receive buffers to get better performance. You can refer to the [EMQX system tuning documentation](https://www.emqx.io/docs/en/latest/performance/tune.html).
+Depending on the actual scale of the test, we may also need to adjust Linux kernel parameters and EMQX parameters. For example, when the number of our MQTT client connections exceeds 65535, we usually need to adjust parameters such as `fs.file-max` to increase the maximum number of file descriptors that EMQX can open. When the message throughput is large, we may need to adjust the size settings of the send and receive buffers to get better performance. You can refer to the [EMQX system tuning documentation](https://docs.emqx.com/en/emqx/latest/performance/tune.html).
 
 However, all the test cases in this article do not require any additional tuning of Linux kernel parameters, neither for the number of client connections nor for the message throughput. So all the tests in the following article are done with the following default parameters:
 

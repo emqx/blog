@@ -78,7 +78,7 @@ RocksDB is an embedded, persistent key-value storage engine. It optimizes fast a
 
 ### Selection basis
 
-In the [EMQX session layer design](https://www.emqx.io/docs/en/v5.0/design/design.html#session-layer-design), sessions are stored in local nodes, and we prefer to store data inside EMQX rather than using EMQX as a front-end to an external database. So, the selection is limited to embedded databases. In addition to RocksDB, we looked primarily at the following databases.
+In the [EMQX session layer design](https://docs.emqx.com/en/emqx/v5.0/design/design.html#session-layer-design), sessions are stored in local nodes, and we prefer to store data inside EMQX rather than using EMQX as a front-end to an external database. So, the selection is limited to embedded databases. In addition to RocksDB, we looked primarily at the following databases.
 
 - **Mnesia:** Mnesia is a distributed real-time database system built in Erlang/OTP. All the nodes of the Mnesia cluster are equal. Each of these nodes can store a copy of the data and can also start a transaction or perform a read or write operation. Mnesia can support extremely high read due to its replication feature, but this also limits its write throughput as it means MQTT messages are largely broadcast within the cluster and the broadcast cannot scale out.
 - **LevelDB:** RocksDB is an improved branch of LevelDB, and they are mostly functionally equivalent, but LevelDB lacks an actively maintained driver in Erlang (Erlang NIF). So, it has not been adopted.

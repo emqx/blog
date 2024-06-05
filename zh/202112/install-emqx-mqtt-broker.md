@@ -16,7 +16,7 @@
 - 缺失 MSVCRxxx.dll 文件：Windows 系统特有，需要安装对应的依赖库
 - 安装包与操作系统不符：EMQX 需要对应操作系统和版本下载，否则无法启动并报 `cannot execute binary file` 错误
 
-更多的问题和解决方法详见：[EMQX - 常见错误](https://www.emqx.io/docs/zh/v4.3/faq/error.html)
+更多的问题和解决方法详见：[EMQX - 常见错误](https://docs.emqx.com/zh/emqx/v4.3/faq/error.html)
 
 ### 检查端口占用
 
@@ -202,7 +202,7 @@ sudo yum install emqx
 
 ### 其他包管理工具和操作系统安装
 
-访问 [EMQX 安装文档](https://www.emqx.io/docs/zh/v4.3/getting-started/install.html) 查看更多安装教程。
+访问 [EMQX 安装文档](https://docs.emqx.com/zh/emqx/v4.3/getting-started/install.html) 查看更多安装教程。
 
 ## 部署说明
 

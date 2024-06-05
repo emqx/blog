@@ -172,7 +172,7 @@ Follow these steps to edit the code to suit your own Wi-Fi and MQTT settings
 
 - MQTT client receives messages
 
-  In this post, we will use the MQTT client tool provided by [MQTTX](https://mqttx.app/) that supports browser access: http://www.emqx.io/online-mqtt-client. MQTT X also provides a [desktop client](https://mqttx.app/) and a [command line tool](https://mqttx.app/cli).
+  In this post, we will use the MQTT client tool provided by [MQTTX](https://mqttx.app/) that supports browser access: http://mqtt-client.emqx.com/. MQTT X also provides a [desktop client](https://mqttx.app/) and a [command line tool](https://mqttx.app/cli).
 
   1. Create an MQTT connection
      ![Create an MQTT connection](https://assets.emqx.com/images/6b70ac640041ab7aadb211553bc729e8.png)

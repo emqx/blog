@@ -60,7 +60,7 @@ Please follow the steps below to get ready with the necessary tools and resource
   docker run -d --name emqx -p 1883:1883 -p 8083:8083 -p 8883:8883 -p 8084:8084 -p 18083:18083 emqx/emqx:latest
   ```
 
-  You can also install EMQX using RPM or DEB packages besides Docker. Please see [EMQX 5.0 Installation Guide](https://www.emqx.io/docs/en/v5.0/deploy/install.html) for more details.
+  You can also install EMQX using RPM or DEB packages besides Docker. Please see [EMQX 5.0 Installation Guide](https://docs.emqx.com/en/emqx/v5.0/deploy/install.html) for more details.
 
 - Install the MQTTX desktop application:
 

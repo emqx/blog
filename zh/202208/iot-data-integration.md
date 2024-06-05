@@ -16,9 +16,9 @@ EMQX 数据集成即 4.x 版本中的[规则引擎](https://www.emqx.com/zh/solu
 
 EMQX 实时、简洁、高效的数据集成方案主要通过**规则**与**数据桥接**两个功能实现。
 
-规则用于消息和事件数据的处理，通过 SQL 语法结合内置或用户扩展的自定义函数，实现诸如数据格式转换、消息编解码、业务逻辑处理等操作。关于规则的详细信息，请参见[规则](https://www.emqx.io/docs/zh/v5.0/data-integration/rules.html)。
+规则用于消息和事件数据的处理，通过 SQL 语法结合内置或用户扩展的自定义函数，实现诸如数据格式转换、消息编解码、业务逻辑处理等操作。关于规则的详细信息，请参见[规则](https://docs.emqx.com/zh/emqx/v5.0/data-integration/rules.html)。
 
-数据桥接用于对接数据系统，在 EMQX 和外部系统之间实现双向、高性能的数据数据移动。通过数据桥接，用户可以实时地将消息从 EMQX 发送到外部数据系统，或者从外部数据系统拉取数据并发送到 EMQX 的某个主题。关于数据桥接的详细信息，请参见[数据桥接](https://www.emqx.io/docs/zh/v5.0/data-integration/data-bridges.html)。
+数据桥接用于对接数据系统，在 EMQX 和外部系统之间实现双向、高性能的数据数据移动。通过数据桥接，用户可以实时地将消息从 EMQX 发送到外部数据系统，或者从外部数据系统拉取数据并发送到 EMQX 的某个主题。关于数据桥接的详细信息，请参见[数据桥接](https://docs.emqx.com/zh/emqx/v5.0/data-integration/data-bridges.html)。
 
 ![数据集成](https://assets.emqx.com/images/b5e1995b58ec519061ad3283baa866d0.png)
 

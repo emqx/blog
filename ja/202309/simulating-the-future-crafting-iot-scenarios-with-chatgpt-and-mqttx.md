@@ -39,7 +39,7 @@ IoTデバイスとのスムーズな通信を確保するには、まずEMQXを�
 docker run -d --name emqx -p 1883:1883 -p 8083:8083 -p 8883:8883 -p 8084:8084 -p 18083:18083 emqx/emqx:latest
 ```
 
-Dockerインストールに加え、EMQXはRPMまたはDEBパッケージを使用したインストールをサポートしています。 その他のインストール方法については、[EMQX 5.0インストールガイド](https://www.emqx.io/docs/en/v5.1/deploy/install.html)を参照してください。 ローカルインストールなしで簡単に検証したい場合は、オンラインのパブリックMQTTブローカー `broker.emqx.io`  の使用をお勧めします。
+Dockerインストールに加え、EMQXはRPMまたはDEBパッケージを使用したインストールをサポートしています。 その他のインストール方法については、[EMQX 5.0インストールガイド](https://docs.emqx.com/en/emqx/v5.1/deploy/install.html)を参照してください。 ローカルインストールなしで簡単に検証したい場合は、オンラインのパブリックMQTTブローカー `broker.emqx.io`  の使用をお勧めします。
 
 ### MQTTXのインストール
 

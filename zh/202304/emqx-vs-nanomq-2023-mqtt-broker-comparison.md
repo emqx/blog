@@ -119,7 +119,7 @@ NanoMQ 基于 NNG 的异步 I/O 和多线程模型，具有优秀的轻量级设
 
 |                                              | **EMQX**                                                     | **NanoMQ**                                                   | **Notes and Links**                                          |
 | :------------------------------------------- | :----------------------------------------------------------- | :----------------------------------------------------------- | :----------------------------------------------------------- |
-| **Clustering**                               | ✅ 20+ nodes of cluster                                       | ❌                                                            | [EMQX Cluster](https://www.emqx.io/docs/en/v5.0/deploy/cluster/introduction.html) |
+| **Clustering**                               | ✅ 20+ nodes of cluster                                       | ❌                                                            | [EMQX Cluster](https://docs.emqx.com/en/emqx/v5.0/deploy/cluster/introduction.html) |
 | **Scalability**                              | 4M MQTT connections per node<br>100M MQTT connections per cluster | 200k MQTT connections per node                               | [Reaching 100M MQTT connections with EMQX 5.0](https://www.emqx.com/en/blog/reaching-100m-mqtt-connections-with-emqx-5-0) |
 | **Performance**                              | 2 million QoS0 MQTT msgs/sec per node<br>800k QoS1 msgs/sec<br>200k QoS2 msgs/sec | Up to 1 million+ QoS0 MQTT msgs/sec per node<br>500k QoS1 msgs/sec<br>180k QoS2 msgs/sec |                                                              |
 | **Latency**                                  | Single-digit millisecond latency in most scenarios                                              | Less than 10 milliseconds in most scenarios                                             |                                                              |
@@ -137,12 +137,12 @@ EMQX 拥有用户友好的 Dashboard 和丰富的 HTTP API，支持通过 StatsD
 |                         | **EMQX**     | **NanoMQ**   | **Notes and Links**                                          |
 | :---------------------- | :----------- | :----------- | :----------------------------------------------------------- |
 | **Configuration**       | HOCON Format | HOCON Format |                                                              |
-| **HTTP API**            | ✅            | ✅            | [REST API](https://www.emqx.io/docs/en/v5.0/admin/api.html)  |
-| **CLI**                 | ✅            | ✅            | [Command Line Interface](https://www.emqx.io/docs/en/v5.0/admin/cli.html) |
-| **Dashboard**           | ✅            | ❌            | [EMQX Dashboard](https://www.emqx.io/docs/en/v5.0/getting-started/dashboard.html) |
-| **Grafana**             | ✅            | ❌            | [Integrate with Prometheus](https://www.emqx.io/docs/en/v5.0/observability/prometheus.html) |
-| **Prometheus**          | ✅            | ❌            | [Integrate with Prometheus](https://www.emqx.io/docs/en/v5.0/observability/prometheus.html) |
-| **StatsD**              | ✅            | ❌            | [Integrate with StatsD](https://www.emqx.io/docs/en/v5.0/observability/statsd.html#statsd) |
+| **HTTP API**            | ✅            | ✅            | [REST API](https://docs.emqx.com/en/emqx/v5.0/admin/api.html)  |
+| **CLI**                 | ✅            | ✅            | [Command Line Interface](https://docs.emqx.com/en/emqx/v5.0/admin/cli.html) |
+| **Dashboard**           | ✅            | ❌            | [EMQX Dashboard](https://docs.emqx.com/en/emqx/v5.0/getting-started/dashboard.html) |
+| **Grafana**             | ✅            | ❌            | [Integrate with Prometheus](https://docs.emqx.com/en/emqx/v5.0/observability/prometheus.html) |
+| **Prometheus**          | ✅            | ❌            | [Integrate with Prometheus](https://docs.emqx.com/en/emqx/v5.0/observability/prometheus.html) |
+| **StatsD**              | ✅            | ❌            | [Integrate with StatsD](https://docs.emqx.com/en/emqx/v5.0/observability/statsd.html#statsd) |
 | **Cross Platform**      | ✅            | ✅            |                                                              |
 | **Docker**              | ✅            | ✅            | [EMQX Docker](https://hub.docker.com/r/emqx/emqx) - [NanoMQ Docker](https://hub.docker.com/r/emqx/nanomq) |
 | **Kubernetes Operator** | ✅            | ❌            | [EMQX Kubernetes Operator](https://www.emqx.com/en/emqx-kubernetes-operator) |
@@ -154,9 +154,9 @@ NanoMQ 作为一个轻量级 Broker，没有提供数据集成功能。而 EMQX 
 
 |                     | **EMQX**               | **NanoMQ** | **Notes and Links**                                          |
 | :------------------ | :--------------------- | :--------- | :----------------------------------------------------------- |
-| **Rule Engine**     | ✅                      | ✅Limited   | [EMQX Rule Engine](https://www.emqx.io/docs/en/v5.0/data-integration/rules.html) |
+| **Rule Engine**     | ✅                      | ✅Limited   | [EMQX Rule Engine](https://docs.emqx.com/en/emqx/v5.0/data-integration/rules.html) |
 | **Message Codec**     | ✅                    | ✅Limited   |  |
-| **Data Bridge**     | ✅                      | ❌          | [Data bridges](https://www.emqx.io/docs/en/v5.0/data-integration/data-bridges.html) |
+| **Data Bridge**     | ✅                      | ❌          | [Data bridges](https://docs.emqx.com/en/emqx/v5.0/data-integration/data-bridges.html) |
 | **Confluent/Kafka** | ✅ (Enterprise Edition) | ❌          | [Stream Data into Kafka](https://docs.emqx.com/en/enterprise/v4.4/rule/bridge_kafka.html) |
 | **SAP Event Mesh**  | ✅(Enterprise Edition)  | ❌          | [Ingest Data into SAP Event Mesh](https://docs.emqx.com/en/enterprise/v4.4/rule/bridge_sap_event_mesh.html#bridge-data-to-sap-event-mesh) |
 | **Apache Pulsar**   | ✅(Enterprise Edition)  | ❌          | [Ingest Data into Pulsar](https://docs.emqx.com/en/enterprise/v4.4/rule/bridge_pulsar.html) |

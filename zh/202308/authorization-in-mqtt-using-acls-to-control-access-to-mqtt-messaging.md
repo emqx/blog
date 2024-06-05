@@ -87,10 +87,10 @@ MQTT Broker 利用 ACL 来保障安全性并根据规则限制对特定主题的
 
 正确配置 MQTT ACL 对于保障安全性和确保 MQTT 通信的安全有序非常关键。您可以阅读以下内容继续探索 EMQX 如何保护您的物联网基础设施：
 
-- [EMQX 访问控制概述](https://www.emqx.io/docs/zh/v5.0/access-control/overview.html)
+- [EMQX 访问控制概述](https://docs.emqx.com/zh/emqx/v5.0/access-control/overview.html)
 - [在 EMQX Cloud 上使用 Redis 和 JWT Auth & ACL](https://www.emqx.com/zh/blog/emqx-cloud-redis-and-jwt-authentication-authorization)
 
-要了解更多关于 EMQX 的信息，欢迎访问我们的[文档](https://www.emqx.io/docs/zh/v5.0/)、[GitHub](https://github.com/emqx/emqx)、[Slack ](https://slack-invite.emqx.io/)和[论坛](https://www.emqx.io/forum/)！
+要了解更多关于 EMQX 的信息，欢迎访问我们的[文档](https://docs.emqx.com/zh/emqx/v5.0/)、[GitHub](https://github.com/emqx/emqx)、[Slack ](https://slack-invite.emqx.io/)和[论坛](https://forum.emqx.io/)！
 
 
 

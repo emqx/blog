@@ -11,7 +11,7 @@ EMQ 正以世界知名开源和开放标准机构 OASIS 的 [Foundational Sponso
 
 ## 启用 MQTT over QUIC
 
-MQTT over QUIC 特性随 EMQX 5.0 发布，请前往以下地址下载安装最新版本的 EMQX：[https://www.emqx.io/zh/downloads](https://www.emqx.io/zh/downloads)。
+MQTT over QUIC 特性随 EMQX 5.0 发布，请前往以下地址下载安装最新版本的 EMQX：<https://www.emqx.com/en/downloads-and-install/broker>。
 
 由于是实验性功能，在 CentOS 6、macOS 以及 Windows 系统下并未包含 QUIC 编译，请自行从源码编译并在编译前指定环境变量 `BUILD_WITH_QUIC=1` ，其他操作系统和平台则可以正常使用。
 

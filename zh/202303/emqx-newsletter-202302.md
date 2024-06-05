@@ -1,6 +1,6 @@
 过去的 2 月份，EMQX 开源版发布了 v5.0.16、v5.0.17 以及 v5.0.18 三个版本，提供了 MQTT over QUIC 多流（multistream）支持。企业版 v4.3.19 以及 v4.4.15 开发完成，即将发布，数据集成将新增对 HStreamDB 最新版本的适配，并允许设置 RocketMQ 消息生产者投递策略，将相同属性的消息转发到同一 RocketMQ 队列（Queue）中。
 
-正在开发中的功能还有基于 MQTT 的大文件传输，目前已经完成主体开发并在团队内部进行了 PoC Demo。同时，我们对[开源版 5.0 文档](https://www.emqx.io/docs/zh/v5.0)进行了大量重构和内容调整，以帮助用户更快上手使用 EMQX。
+正在开发中的功能还有基于 MQTT 的大文件传输，目前已经完成主体开发并在团队内部进行了 PoC Demo。同时，我们对[开源版 5.0 文档](https://docs.emqx.com/zh/emqx/v5.0)进行了大量重构和内容调整，以帮助用户更快上手使用 EMQX。
 
 ## MQTT over QUIC 多流支持
 

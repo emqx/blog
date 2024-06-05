@@ -36,7 +36,7 @@ We use two PCs connected to a local area network. One is a Linux machine for ins
 
 ### EMQX Quick Start
 
-EMQX provides multiple installation methods, and users can check the detailed installation methods in the [documentation](https://www.emqx.io/docs/en/v5.0/deploy/install.html). This example uses container deployment to quickly experience EMQX.
+EMQX provides multiple installation methods, and users can check the detailed installation methods in the [documentation](https://docs.emqx.com/en/emqx/v5.0/deploy/install.html). This example uses container deployment to quickly experience EMQX.
 
 Run the following command to obtain the Docker image:
 
@@ -50,7 +50,7 @@ Run the following command to start the Docker container:
 docker run -d --name emqx -p 1883:1883 -p 8081:8081 -p 8083:8083 -p 8084:8084 -p 8883:8883 -p 18083:18083 emqx/emqx:5.1.0
 ```
 
-Access the EMQX Dashboard by visiting `http://localhost:18083/` (replace “localhost” with your actual IP address) through a web browser. This allows you to manage device connections and monitor related metrics. Keep the Docker container running for this tutorial. You can refer to the [documentation](https://www.emqx.io/docs/en/v5.0/) to experience more features in the Dashboard.
+Access the EMQX Dashboard by visiting `http://localhost:18083/` (replace “localhost” with your actual IP address) through a web browser. This allows you to manage device connections and monitor related metrics. Keep the Docker container running for this tutorial. You can refer to the [documentation](https://docs.emqx.com/en/emqx/v5.0/) to experience more features in the Dashboard.
 
 Initial username: `admin`, initial password: `public`
 

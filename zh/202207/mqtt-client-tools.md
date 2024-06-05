@@ -107,7 +107,7 @@ MQTT.fx 使用 JavaFX 技术开发，可以保存多个连接配置，支持多�
 
 ![](https://mqttx-static.emqx.net/img/banner.268d1fa.png)
 
-立即体验：[http://www.emqx.io/online-mqtt-client](http://www.emqx.io/online-mqtt-client)
+立即体验：[http://mqtt-client.emqx.com/](http://mqtt-client.emqx.com/)
 
 更多详情，请查看 GitHub 仓库：[https://github.com/emqx/MQTTX/tree/main/web](https://github.com/emqx/MQTTX/tree/main/web)
 

@@ -44,7 +44,7 @@ There are generally two common approaches for filtering and routing messages in 
 
   Subscribers can specify the conditions that a message must meet to be delivered to them. If the attributes or content of a message matches the conditions defined by the subscriber, the message will be delivered to that subscriber. If the message does not meet the subscriber's conditions, it will not be delivered.
 
-In addition to routing messages based on topics, EMQX provides advanced message routing capabilities through its SQL-based Rule Engine starting with version 3.1. This feature allows for the routing of messages based on the content of the message. For more information about the Rule Engine and how it works, you can refer to the [EMQX documentation](https://www.emqx.io/docs/en/v5.0/data-integration/rules.html).
+In addition to routing messages based on topics, EMQX provides advanced message routing capabilities through its SQL-based Rule Engine starting with version 3.1. This feature allows for the routing of messages based on the content of the message. For more information about the Rule Engine and how it works, you can refer to the [EMQX documentation](https://docs.emqx.com/en/emqx/v5.0/data-integration/rules.html).
 
 ## MQTT vs HTTP Request and Response
 

@@ -90,9 +90,9 @@ EMQXは、拡張性の高い分散型MQTTメッセージングブローカーと
 | **スケーラビリティ**                      | 1ノードあたり4M MQTTコネクション<br>1クラスタあたり100M MQTTコネクション | <1ノードあたり160K MQTT接続数                                | [EMQX 5.0による100M MQTT接続の達成](https://www.emqx.com/en/blog/reaching-100m-mqtt-connections-with-emqx-5-0) |
 | **パフォーマンス**                        | ノードあたり200万QoS0 MQTT msgs/sec<br>800k QoS1 msg/秒<br>200k QoS2 msg/秒 | ノードあたり最大120k QoS0 MQTT msg/秒<br>80k QoS1 msg/秒<br>60k QoS2 msg/秒 |                                                              |
 | **レイテンシー**                          | 1桁ミリ秒のレイテンシーをスケールアップで実現                | シナリオによっては最大数秒のレイテンシーが発生します。       |                                                              |
-| **クラスター化**                          | 20ノード以上のクラスタ                                       | ❌                                                            | [クラスターのスケーラビリティ](https://www.emqx.io/docs/en/v5.0/deploy/cluster/db.html#node-roles) |
+| **クラスター化**                          | 20ノード以上のクラスタ                                       | ❌                                                            | [クラスターのスケーラビリティ](https://docs.emqx.com/en/emqx/v5.0/deploy/cluster/db.html#node-roles) |
 | **スケーリング**                          | ✅                                                            | ❌                                                            |                                                              |
-| **オートクラスタリング**                  | ✅                                                            | ❌                                                            | [EMQX ノードの発見とオートクラスター](https://www.emqx.io/docs/en/v5.0/deploy/cluster/intro.html#emqx-node-discovery-and-autocluster) |
+| **オートクラスタリング**                  | ✅                                                            | ❌                                                            | [EMQX ノードの発見とオートクラスター](https://docs.emqx.com/en/emqx/v5.0/deploy/cluster/intro.html#emqx-node-discovery-and-autocluster) |
 | **ダウンタイムゼロ/ホットアップグレード** | ✅                                                            | ❌                                                            | [リリースアップグレード](https://docs.emqx.com/en/enterprise/v4.4/advanced/relup.html#release-upgrade) |
 
 ##  MQTTとコネクティビティ
@@ -109,17 +109,17 @@ EMQXは、MQTT 3.1/3.1/5.0と[MQTT over Websocket](https://www.emqx.com/en/blog/
 | **MQTT 5.0**                 | ✅                                                            | ✅             | [MQTT 5 エクスプロア](https://www.emqx.com/en/blog/introduction-to-mqtt-5)    |
 | **MQTT Shared Subscription** | ✅                                                            | ✅             |                                                              |
 | **MQTT Add-ons**             | 独占配信<br>ディレイパブリッシュ<br>オートサブスクリプション<br>トピックのリライト | ❌             |                                                              |
-| **MQTT over TCP**            | ✅                                                            | ✅             | [EMQX入門編](https://www.emqx.io/docs/en/v5.0/getting-started/getting-started.html#quick-verification-using-an-mqtt-client) |
+| **MQTT over TCP**            | ✅                                                            | ✅             | [EMQX入門編](https://docs.emqx.com/en/emqx/v5.0/getting-started/getting-started.html#quick-verification-using-an-mqtt-client) |
 | **MQTT over TLS**            | ✅                                                            | ✅             | [EMQX MQTTブローカーのSSL/TLSを有効化する。](https://www.emqx.com/en/blog/emqx-server-ssl-tls-secure-connection-configuration-guide) |
 | **MQTT over WebSocket**      | ✅                                                            | ✅             | [WebsocketでMQTTブローカーに接続する。](https://www.emqx.com/en/blog/connect-to-mqtt-broker-with-websocket) |
 | **MQTT over QUIC**           | ✅                                                            | ❌             | EMQXは現在、世界で唯一、QUICトランスポートをサポートするMQTTブローカーです。( [MQTT over QUIC](https://www.emqx.com/en/blog/mqtt-over-quic)) |
-| **LB (Proxy Protocol)**      | ✅                                                            | ✅             | Proxy Protocol v1、v2（[クラスターロードバランサー](https://www.emqx.io/docs/en/v5.0/deploy/cluster/lb.html)） |
+| **LB (Proxy Protocol)**      | ✅                                                            | ✅             | Proxy Protocol v1、v2（[クラスターロードバランサー](https://docs.emqx.com/en/emqx/v5.0/deploy/cluster/lb.html)） |
 | **IPv6 Support**             | ✅                                                            | ✅             |                                                              |
-| **Multi-protocol Gateway**   | ✅                                                            | ❌             | [Extended protocol gateway](https://www.emqx.io/docs/en/v5.0/gateway/gateway.html#design) |
-| **MQTT-SN**                  | ✅                                                            | ❌             | [MQTT-SN gateway](https://www.emqx.io/docs/en/v5.0/gateway/mqttsn.html) |
-| **CoAP**                     | ✅                                                            | ❌             | [CoAP protocol gateway](https://www.emqx.io/docs/en/v5.0/configuration/configuration-manual.html#coap) |
-| **LwM2M**                    | ✅                                                            | ❌             | [LwM2M protocol gateway](https://www.emqx.io/docs/en/v5.0/configuration/configuration-manual.html#lwm2m) |
-| **STOMP**                    | ✅                                                            | ❌             | [STOMP Gateway](https://www.emqx.io/docs/en/v5.0/gateway/stomp.html) |
+| **Multi-protocol Gateway**   | ✅                                                            | ❌             | [Extended protocol gateway](https://docs.emqx.com/en/emqx/v5.0/gateway/gateway.html#design) |
+| **MQTT-SN**                  | ✅                                                            | ❌             | [MQTT-SN gateway](https://docs.emqx.com/en/emqx/v5.0/gateway/mqttsn.html) |
+| **CoAP**                     | ✅                                                            | ❌             | [CoAP protocol gateway](https://docs.emqx.com/en/emqx/v5.0/configuration/configuration-manual.html#coap) |
+| **LwM2M**                    | ✅                                                            | ❌             | [LwM2M protocol gateway](https://docs.emqx.com/en/emqx/v5.0/configuration/configuration-manual.html#lwm2m) |
+| **STOMP**                    | ✅                                                            | ❌             | [STOMP Gateway](https://docs.emqx.com/en/emqx/v5.0/gateway/stomp.html) |
 
 ## セキュリティ
 
@@ -142,15 +142,15 @@ EMQXには、[ユーザー名-パスワード認証](https://www.emqx.com/en/blo
 
 |                                    | **EMQX** | **Mosquitto** | **参考リンク**                                               |
 | :--------------------------------- | :------- | :------------ | :----------------------------------------------------------- |
-| **ユーザー名/パスワード**          | ✅        | ✅             | [EMQX：AuthN の紹介](https://www.emqx.io/docs/en/v5.0/security/authn/authn.html)<br>[Mosquitto：認証方法について](https://mosquitto.org/documentation/authentication-methods/#:~:text=In Mosquitto 2.0 and up%2C you must choose,authentication%3A password files%2C authentication plugins%2C and unauthorised%2Fanonymous access.) |
-| **JWT**                            | ✅        | ✅             | EMQX： [JWT認証システム](https://www.emqx.io/docs/en/v5.0/security/authn/jwt.html)<br>Mosquitto: [mosquittoのAuthプラグイン](https://github.com/iegomez/mosquitto-go-auth)。 |
-| **MQTT 5.0 認証の強化**            | ✅        | ❌             | [SCRAM認証](https://www.emqx.io/docs/en/v5.0/security/authn/scram.html) |
-| **PSK**                            | ✅        | ✅             | [SSL/TLS](https://www.emqx.io/docs/en/v5.0/security/ssl.html#psk-authentication) |
+| **ユーザー名/パスワード**          | ✅        | ✅             | [EMQX：AuthN の紹介](https://docs.emqx.com/en/emqx/v5.0/security/authn/authn.html)<br>[Mosquitto：認証方法について](https://mosquitto.org/documentation/authentication-methods/#:~:text=In Mosquitto 2.0 and up%2C you must choose,authentication%3A password files%2C authentication plugins%2C and unauthorised%2Fanonymous access.) |
+| **JWT**                            | ✅        | ✅             | EMQX： [JWT認証システム](https://docs.emqx.com/en/emqx/v5.0/security/authn/jwt.html)<br>Mosquitto: [mosquittoのAuthプラグイン](https://github.com/iegomez/mosquitto-go-auth)。 |
+| **MQTT 5.0 認証の強化**            | ✅        | ❌             | [SCRAM認証](https://docs.emqx.com/en/emqx/v5.0/security/authn/scram.html) |
+| **PSK**                            | ✅        | ✅             | [SSL/TLS](https://docs.emqx.com/en/emqx/v5.0/security/ssl.html#psk-authentication) |
 | **X.509証明書**                    | ✅        | ✅             |                                                              |
 | **LDAP**                           | ✅        | ✅             | [LDAP認証/ACL](https://docs.emqx.com/en/enterprise/v4.4/modules/ldap_authentication.html) |
-| **きめ細かなアクセスコントロール** | ✅        | ✅             | [EMQXのオーソライズ](https://www.emqx.io/docs/en/v5.0/security/authz/authz.html) |
-| **認証用バックエンド**             | ✅        | ✅             | [認証の紹介](https://www.emqx.io/docs/en/v5.0/security/authn/authn.html) |
-| **ACLデータベースバックエンド**    | ✅        | ✅             | EMQX：ファイル、MySQL、PostgreSQL、MongoDB、組込みデータベース、HTTP [EMQX認証の紹介](https://www.emqx.io/docs/en/v5.0/security/authz/authz.html) |
+| **きめ細かなアクセスコントロール** | ✅        | ✅             | [EMQXのオーソライズ](https://docs.emqx.com/en/emqx/v5.0/security/authz/authz.html) |
+| **認証用バックエンド**             | ✅        | ✅             | [認証の紹介](https://docs.emqx.com/en/emqx/v5.0/security/authn/authn.html) |
+| **ACLデータベースバックエンド**    | ✅        | ✅             | EMQX：ファイル、MySQL、PostgreSQL、MongoDB、組込みデータベース、HTTP [EMQX認証の紹介](https://docs.emqx.com/en/emqx/v5.0/security/authz/authz.html) |
 | **フラッピングディテクト**         | ✅        | ❌             |                                                              |
 | **ブロックリスト**                 | ✅        | ❌             |                                                              |
 
@@ -164,10 +164,10 @@ EMQXのEnterprise Editionは、ルールエンジンとすぐに使えるデー�
 
 |                     | **EMQX**               | **Mosquitto** | **参考リンク**                                               |
 | :------------------ | :--------------------- | :------------ | :----------------------------------------------------------- |
-| **Webhook**         | ✅                      | ✅             | [Webhook](https://www.emqx.io/docs/en/v5.0/data-integration/data-bridge-webhook.html#example-setup-webhook-using-config-files) |
-| **Rule Engine**     | ✅                      | ❌             | [Rule Engine](https://www.emqx.io/docs/en/v5.0/data-integration/rules.html) |
+| **Webhook**         | ✅                      | ✅             | [Webhook](https://docs.emqx.com/en/emqx/v5.0/data-integration/data-bridge-webhook.html#example-setup-webhook-using-config-files) |
+| **Rule Engine**     | ✅                      | ❌             | [Rule Engine](https://docs.emqx.com/en/emqx/v5.0/data-integration/rules.html) |
 | **Message Codec**   | ✅                      | ❌             |                                                              |
-| **Data Bridge**     | ✅                      | ❌             | [Data bridges](https://www.emqx.io/docs/en/v5.0/data-integration/data-bridges.html) |
+| **Data Bridge**     | ✅                      | ❌             | [Data bridges](https://docs.emqx.com/en/emqx/v5.0/data-integration/data-bridges.html) |
 | **Confluent/Kafka** | ✅ (Enterprise Edition) | ❌             | [Stream Data into Kafka](https://docs.emqx.com/en/enterprise/v4.4/rule/bridge_kafka.html) |
 | **SAP Event Mesh**  | ✅(Enterprise Edition)  | ❌             | [Ingest Data into SAP Event Mesh](https://docs.emqx.com/en/enterprise/v4.4/rule/bridge_sap_event_mesh.html#bridge-data-to-sap-event-mesh) |
 | **Apache Pulsar**   | ✅(Enterprise Edition)  | ❌             | [Ingest Data into Pulsar](https://docs.emqx.com/en/enterprise/v4.4/rule/bridge_pulsar.html) |
@@ -194,17 +194,17 @@ EMQXは、HTTP APIとDashboardを通じて、リッチでビジュアルな監�
 
 |                                    | **EMQX**          | **Mosquitto**   | **参考リンク**                                               |
 | :--------------------------------- | :---------------- | :-------------- | :----------------------------------------------------------- |
-| **Dashboard**                      | ✅                 | ❌               | [EMQXダッシュボード](https://www.emqx.io/docs/en/v5.0/getting-started/dashboard.html) |
+| **Dashboard**                      | ✅                 | ❌               | [EMQXダッシュボード](https://docs.emqx.com/en/emqx/v5.0/getting-started/dashboard.html) |
 | **Configuration**                  | HOCONフォーマット | Key-Value Fomat |                                                              |
-| **HTTP API**                       | ✅                 | ❌               | [EMQX REST API](https://www.emqx.io/docs/en/v5.0/admin/api.html) |
-| **CLI**                            | ✅                 | ✅               | [コマンドラインインターフェイス](https://www.emqx.io/docs/en/v5.0/admin/cli.html) |
-| **Config Hot update**              | ✅                 | ❌               | [コンフィギュレーションファイル](https://www.emqx.io/docs/en/v5.0/admin/cfg.html) |
-| **Metrics**                        | ✅                 | ✅               | ノードのメトリクス： [Metrics](https://www.emqx.io/docs/en/v5.0/observability/metrics-and-stats.html)<br>Mosquitto - $SYS topic |
-| **Grafana**                        | ✅                 | ✅               | [Prometheusとの連携](https://www.emqx.io/docs/en/v5.0/observability/prometheus.html) |
-| **Cluster Metrics**                | ✅                 | ❌               | [メトリックス](https://www.emqx.io/docs/en/v5.0/observability/metrics-and-stats.html) |
-| **アラームアラート**               | ✅                 | ❌               | [システムトピック](https://www.emqx.io/docs/en/v5.0/advanced/system-topic.html#alarms-system-alarms) |
-| **サブスクリプションの監視が遅い** | ✅                 | ❌               | [加入者数の統計が遅い](https://www.emqx.io/docs/en/v5.0/observability/slow_subscribers_statistics.html) |
-| **Prometheus**                     | ✅                 | ✅               | [Prometheusとの連携](https://www.emqx.io/docs/en/v5.0/observability/prometheus.html#dashboard-update) |
+| **HTTP API**                       | ✅                 | ❌               | [EMQX REST API](https://docs.emqx.com/en/emqx/v5.0/admin/api.html) |
+| **CLI**                            | ✅                 | ✅               | [コマンドラインインターフェイス](https://docs.emqx.com/en/emqx/v5.0/admin/cli.html) |
+| **Config Hot update**              | ✅                 | ❌               | [コンフィギュレーションファイル](https://docs.emqx.com/en/emqx/v5.0/admin/cfg.html) |
+| **Metrics**                        | ✅                 | ✅               | ノードのメトリクス： [Metrics](https://docs.emqx.com/en/emqx/v5.0/observability/metrics-and-stats.html)<br>Mosquitto - $SYS topic |
+| **Grafana**                        | ✅                 | ✅               | [Prometheusとの連携](https://docs.emqx.com/en/emqx/v5.0/observability/prometheus.html) |
+| **Cluster Metrics**                | ✅                 | ❌               | [メトリックス](https://docs.emqx.com/en/emqx/v5.0/observability/metrics-and-stats.html) |
+| **アラームアラート**               | ✅                 | ❌               | [システムトピック](https://docs.emqx.com/en/emqx/v5.0/advanced/system-topic.html#alarms-system-alarms) |
+| **サブスクリプションの監視が遅い** | ✅                 | ❌               | [加入者数の統計が遅い](https://docs.emqx.com/en/emqx/v5.0/observability/slow_subscribers_statistics.html) |
+| **Prometheus**                     | ✅                 | ✅               | [Prometheusとの連携](https://docs.emqx.com/en/emqx/v5.0/observability/prometheus.html#dashboard-update) |
 
 ## クラウドネイティブとKubernetes
 
@@ -248,7 +248,7 @@ EMQXは、高可用性と水平方向のスケーラビリティをサポート�
 - [Eclipse Mosquitto](https://mosquitto.org/)
 - [Eclipse Mosquitto Documentation](https://mosquitto.org/documentation/)
 - [EMQX: The World's #1 Open Source Distributed MQTT Broker](https://www.emqx.io/)
-- [EMQX 5.0 Documentation](https://www.emqx.io/docs/en/v5.0/)
+- [EMQX 5.0 Documentation](https://docs.emqx.com/en/emqx/v5.0/)
 - [EMQX Enterprise Documentation](https://docs.emqx.com/en/enterprise/v5.0/)
 - [EMQX Operator Documentation](https://docs.emqx.com/en/emqx-operator/latest/)
 - [MQTT over QUIC: Next-Generation IoT Standard Protocol](https://www.emqx.com/en/blog/mqtt-over-quic)

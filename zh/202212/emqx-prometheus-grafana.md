@@ -30,7 +30,7 @@
 docker run -d --name emqx -p 1883:1883 -p 8083:8083 -p 8883:8883 -p 8084:8084 -p 18083:18083 emqx/emqx:latest
 ```
 
-除 Docker 安装外，EMQX 还支持使用 RPM 或 DEB 包安装，具体安装方法请参考 [EMQX 5.0 安装指南](https://www.emqx.io/docs/zh/v5.0/deploy/install.html)。
+除 Docker 安装外，EMQX 还支持使用 RPM 或 DEB 包安装，具体安装方法请参考 [EMQX 5.0 安装指南](https://docs.emqx.com/zh/emqx/v5.0/deploy/install.html)。
 
 安装完成后，我们可以打开 `http://localhost:18083` 来访问 EMQX 的 Dashboard，查看 EMQX 的运行状态。如果能够正常访问到 EMQX 的 Dashboard，此时说明 EMQX 已经安装成功。
 
@@ -164,7 +164,7 @@ docker run -d --name pushgateway -p 9091:9091 prom/pushgateway
 
 更多关于安装和使用 Pushgateway 的信息，请参考 [Pushgateway 安装文档](https://github.com/prometheus/pushgateway#run-it)。此时，我们可以通过 `http://localhost:9091` 来访问 Pushgateway 的 Dashboard。
 
-EMQX 提供了一个配置 Pushgateway 服务的 [API](https://www.emqx.io/docs/zh/v5.0/observability/prometheus.html#通过-dashboard-配置)，可以将 EMQX 的数据指标通过配置上报到 Pushgateway 的服务地址中，并最终由 Prometheus 从 Pushgateway 中拉取数据指标。同时也可以直接在 EMQX Dashboard 中配置 Pushgateway 的服务地址，输入完成后，点击更新即可。
+EMQX 提供了一个配置 Pushgateway 服务的 [API](https://docs.emqx.com/zh/emqx/v5.0/observability/prometheus.html#通过-dashboard-配置)，可以将 EMQX 的数据指标通过配置上报到 Pushgateway 的服务地址中，并最终由 Prometheus 从 Pushgateway 中拉取数据指标。同时也可以直接在 EMQX Dashboard 中配置 Pushgateway 的服务地址，输入完成后，点击更新即可。
 
 ![Pushgateway](https://assets.emqx.com/images/e12eda633b664acfeb6cec8998640def.png)
 
@@ -246,13 +246,13 @@ EMQX 提供了一个配置 Pushgateway 服务的 [API](https://www.emqx.io/docs/
 
 同样在帮助页面中，可以分为默认和使用 Pushgateway 两种配置方式。使用 Pushgateway 的配置方式，可以在页面中打开启动开关，输入 Pushgateway 的地址和上报数据时间，点击保存后，即可完成配置。
 
-更多关于如何在 Dashboard 中配置集成 Prometheus 的信息，可以参考 [EMQX Dashboard 配置监控集成](https://www.emqx.io/docs/zh/v5.0/dashboard/configuration.html#监控)的文档。
+更多关于如何在 Dashboard 中配置集成 Prometheus 的信息，可以参考 [EMQX Dashboard 配置监控集成](https://docs.emqx.com/zh/emqx/v5.0/dashboard/configuration.html#监控)的文档。
 
 ## 总结
 
 本文介绍了如何使用 Prometheus 采集 EMQX 的数据指标，并使用 Grafana 对其进行可视化监控。
 
-阅读我们的[指标监控](https://www.emqx.io/docs/zh/v5.0/observability/metrics-and-stats.html#metrics-stats)文档，了解更多关于您可以查询到的数据指标。
+阅读我们的[指标监控](https://docs.emqx.com/zh/emqx/v5.0/observability/metrics-and-stats.html#metrics-stats)文档，了解更多关于您可以查询到的数据指标。
 
 有关使用该监控系统中的规则和配置告警的更多详细教程文章，敬请关注后续推送。
 

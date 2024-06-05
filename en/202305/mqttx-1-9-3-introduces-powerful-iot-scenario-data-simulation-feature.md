@@ -119,7 +119,7 @@ This data showcases the status of an innovative home environment, including temp
 
 ## Deployment Enhancement: Optimized Docker Image
 
-In MQTTX 1.9.3, we significantly optimized the Docker images of MQTTX CLI and [MQTTX Web Client](http://www.emqx.io/online-mqtt-client). We adopted the multi-stage builds technique and switched to a Node.js environment based on Alpine Linux (node:16-alpine). These changes have significantly reduced the Docker image size by approximately 81.3%. Specifically, the MQTTX CLI Docker image size has been reduced from the original 1.07GB to 200.52MB, and the MQTTX Web Client Docker image size has shrunk from the original 886.75MB to 146.4MB.
+In MQTTX 1.9.3, we significantly optimized the Docker images of MQTTX CLI and [MQTTX Web Client](http://mqtt-client.emqx.com/). We adopted the multi-stage builds technique and switched to a Node.js environment based on Alpine Linux (node:16-alpine). These changes have significantly reduced the Docker image size by approximately 81.3%. Specifically, the MQTTX CLI Docker image size has been reduced from the original 1.07GB to 200.52MB, and the MQTTX Web Client Docker image size has shrunk from the original 886.75MB to 146.4MB.
 
 These optimizations drastically reduce user storage usage and speed up the image download time, lowering the usage cost. The optimized images maintain full functionality while also improving their running efficiency. Moreover, these improvements alleviate network transmission pressure, making the private deployment of the MQTTX Web Client in a Docker environment more convenient and efficient.
 

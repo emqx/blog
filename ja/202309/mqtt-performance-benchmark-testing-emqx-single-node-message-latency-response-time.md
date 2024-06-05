@@ -31,7 +31,7 @@ XMeterにはオンプレミス版とパブリッククラウドSaaS版があり�
 
 ## **システムチューニング**
 
-Linuxカーネルのチューニングについては、[**EMQXドキュメント**](https://www.emqx.io/docs/en/v5.0/performance/tune.html)を参照してください。
+Linuxカーネルのチューニングについては、[**EMQXドキュメント**](https://docs.emqx.com/en/emqx/v5.0/performance/tune.html)を参照してください。
 
 ## **ベンチマーク結果**
 

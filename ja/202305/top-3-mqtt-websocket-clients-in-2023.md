@@ -80,7 +80,7 @@ client.on('message', function (topic, message) {
 [MQTTX Web](https://mqttx.app/web)は、MQTTアプリケーションをオンラインでデバッグ、開発、テストするための、ユーザーフレンドリーなブラウザベースのツールです。WebSocketクライアントを介してMQTTブローカーに接続し、直感的なインターフェイスを提供します。
 EMQX チームによって開発された MQTTX Web は、MQTT 3.1.1 および MQTT 5.0 プロトコルと WebSocket トランスポートをサポートするオープンソースのツールです。Apache Version 2.0の下でライセンスされています。
 
-フリーオンラインMQTTXのWeb： [http://www.emqx.io/online-mqtt-client](http://www.emqx.io/online-mqtt-client#/recent_connections)
+フリーオンラインMQTTXのWeb： [http://mqtt-client.emqx.com/](http://mqtt-client.emqx.com/#/recent_connections)
 
 公式サイトです： [https://mqttx.app/web](https://mqttx.app/web) 
 
@@ -99,7 +99,7 @@ GitHubプロジェクトです： [https://github.com/emqx/MQTTX/tree/main/web](
 
 ### 使用例
 
-1. Web ブラウザで [MQTTX Web](http://www.emqx.io/online-mqtt-client) を開きます。
+1. Web ブラウザで [MQTTX Web](http://mqtt-client.emqx.com/) を開きます。
 
 2. WebSocketを使用して[MQTT接続](https://www.emqx.com/en/blog/how-to-set-parameters-when-establishing-an-mqtt-connection)を作成します：
 

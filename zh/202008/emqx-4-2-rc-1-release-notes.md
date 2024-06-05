@@ -10,7 +10,7 @@ EMQX Broker 4.2-rc.1 正式发布，欢迎大家下载试用，下载地址：ht
 
 - 【新增】支持使用第三方语言编写扩展插件接入其他非 MQTT 协议，目前已支持 Java 和 Python 两种编程语言。访问 https://github.com/emqx/emqx-exproto/blob/master/README.md 获取更多相关信息
 - 【新增】支持修订版本间的热更新
-- 【新增】新增遥测功能，收集有关 EMQX Broker 使用情况的信息以帮助我们改进产品，此功能默认开启，支持手动关闭。访问 <https://www.emqx.io/docs/zh/latest/telemetry/telemetry.html> 获取更多遥测相关信息。
+- 【新增】新增遥测功能，收集有关 EMQX Broker 使用情况的信息以帮助我们改进产品，此功能默认开启，支持手动关闭。访问 <https://docs.emqx.com/zh/emqx/latest/telemetry/telemetry.html> 获取更多遥测相关信息。
 - 【新增】规则引擎支持为 MQTT 桥接创建订阅
 - 【新增】规则引擎支持功能更加强大的 SQL 语法
 - 【新增】MySQL、PostgreSQL 等插件全面支持 IPv6、SSL/TLS

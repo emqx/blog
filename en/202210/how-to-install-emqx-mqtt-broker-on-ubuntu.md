@@ -50,7 +50,7 @@ When the server has no public network access or needs to quickly deploy and veri
 
 #### Download the installation package
 
-Visit the [EMQX download address](https://www.emqx.io/downloads?os=Ubuntu). Select the `Package` tag, select `Ubuntu20.04 amd64/tag.gz` for the installation package type, and then click the “copy” icon on the right (this will copy the whole line of wget download command).
+Visit the [EMQX download address](https://www.emqx.com/en/downloads-and-install/broker?os=Ubuntu). Select the `Package` tag, select `Ubuntu20.04 amd64/tag.gz` for the installation package type, and then click the “copy” icon on the right (this will copy the whole line of wget download command).
 
 Paste the download command to the ubuntu terminal and perform the download operation.
 
@@ -139,7 +139,7 @@ By default, EMQX will allow any client connection until the user creates an auth
 
 > EMQX also provides authentication integration support with a variety of back-end databases, including MySQL, PostgreSQL, MongoDB, and Redis.
 >
-> Check the documentation for more authentication methods: [https://www.emqx.io/docs/en/v5.0/security/authn/authn.html](https://www.emqx.io/docs/en/v5.0/security/authn/authn.html) 
+> Check the documentation for more authentication methods: [https://docs.emqx.com/en/emqx/v5.0/security/authn/authn.html](https://docs.emqx.com/en/emqx/v5.0/security/authn/authn.html) 
 
 ### Create authentication
 
@@ -185,7 +185,7 @@ Next, use the user name `test1` that has not been created. Click Connect, and yo
 
 ![MQTT Authentication test](https://assets.emqx.com/images/a6664b3595bbfd31b86303e34c8d88da.png)
 
-So far, we have completed the authentication configuration for EMQX and set up a single-node MQTT broker available in the production environment. To ensure the high availability of the MQTT broker, you need to create a multi-node EMQX cluster. The cluster creation will not be detailed in this document. You may refer to the [EMQX Cluster documentation](https://www.emqx.io/docs/en/v5.0/deploy/cluster/intro.html) for configuration.
+So far, we have completed the authentication configuration for EMQX and set up a single-node MQTT broker available in the production environment. To ensure the high availability of the MQTT broker, you need to create a multi-node EMQX cluster. The cluster creation will not be detailed in this document. You may refer to the [EMQX Cluster documentation](https://docs.emqx.com/en/emqx/v5.0/deploy/cluster/intro.html) for configuration.
 
 
 

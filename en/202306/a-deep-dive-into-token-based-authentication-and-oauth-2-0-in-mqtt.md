@@ -80,7 +80,7 @@ OAuth 2.0 and OpenID Connect can be used as a mechanism for the clients to retri
 
 ## Summary
 
-As the world’s leading MQTT broker, [EMQX](https://www.emqx.io/) supports multiple authentication methods including [JWT authentication](https://www.emqx.io/docs/en/v5.0/access-control/authn/jwt.html). You can choose HMAC as your signature scheme, or the more secure RSA, or directly configure a JWKS endpoint for EMQX to enable JWT authentication.
+As the world’s leading MQTT broker, [EMQX](https://www.emqx.io/) supports multiple authentication methods including [JWT authentication](https://docs.emqx.com/en/emqx/v5.0/access-control/authn/jwt.html). You can choose HMAC as your signature scheme, or the more secure RSA, or directly configure a JWKS endpoint for EMQX to enable JWT authentication.
 
 By adopting these additional authentication approaches, you can strengthen your overall system's defenses against unauthorized access and potential security breaches. As technology continues to evolve, it becomes increasingly vital to stay up-to-date with the latest authentication techniques.
 

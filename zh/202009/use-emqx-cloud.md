@@ -84,7 +84,7 @@ EMQX Cloud 采用 MQTT 用户名、密码认证方式，客户端需携带正确
 
 ### 4. 接入设备进行消息收发
 
-EMQ 提供一个在线 MQTT 测试工具，访问 <http://www.emqx.io/online-mqtt-client/>，使用部署提供的连接信息和 3 步骤中初始化的客户端信息进行连接。
+EMQ 提供一个在线 MQTT 测试工具，访问 <http://mqtt-client.emqx.com/>，使用部署提供的连接信息和 3 步骤中初始化的客户端信息进行连接。
 
 ![img](https://assets.emqx.com/images/fd6ed545c76bf0a4decf91b82ba97779.png)            
 

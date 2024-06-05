@@ -117,7 +117,7 @@ MQTT 提供了三种服务质量（QoS），在不同网络环境下保证消息
 
 ### 准备 MQTT 客户端
 
-在本文中，我们将使用 [MQTTX](https://mqttx.app/zh) 提供的支持浏览器访问的 MQTT 客户端工具，访问地址为 [http://www.emqx.io/online-mqtt-client](http://www.emqx.io/online-mqtt-client) 。 MQTTX 还提供了[桌面客户端](https://mqttx.app/zh)和[命令行工具](https://mqttx.app/zh/cli)。
+在本文中，我们将使用 [MQTTX](https://mqttx.app/zh) 提供的支持浏览器访问的 MQTT 客户端工具，访问地址为 [http://mqtt-client.emqx.com/](http://mqtt-client.emqx.com/) 。 MQTTX 还提供了[桌面客户端](https://mqttx.app/zh)和[命令行工具](https://mqttx.app/zh/cli)。
 
 [MQTTX](https://mqttx.app/zh) 是一款跨平台的 MQTT 5.0 桌面客户端，可在 macOS、Linux、Windows 操作系统上运行。其用户友好的聊天式界面使用户能够轻松创建多个 MQTT/MQTTS 连接，并进行 MQTT 消息的订阅和发布。
 
@@ -131,7 +131,7 @@ MQTT 提供了三种服务质量（QoS），在不同网络环境下保证消息
 
 在使用 MQTT 协议进行通信之前，客户端需要创建一个 MQTT 连接来连接到 Broker。
 
-在浏览器中打开 [http://www.emqx.io/online-mqtt-client](http://www.emqx.io/online-mqtt-client) , 点击页面中间的 `New Connection` 按钮，将看到如下页面。
+在浏览器中打开 [http://mqtt-client.emqx.com/](http://mqtt-client.emqx.com/) , 点击页面中间的 `New Connection` 按钮，将看到如下页面。
 
 ![创建 MQTT 连接](https://assets.emqx.com/images/5e110d181ce8489c275d5674910fa16d.png)
 

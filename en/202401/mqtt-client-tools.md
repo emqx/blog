@@ -134,7 +134,7 @@ Developed by the [EMQX team](https://github.com/emqx), MQTTX Web is an open-sour
 
 GitHub Project: https://github.com/emqx/MQTTX/tree/main/web
 
-Try Now: [http://www.emqx.io/online-mqtt-client](http://www.emqx.io/online-mqtt-client#/recent_connections)
+Try Now: [http://mqtt-client.emqx.com/](http://mqtt-client.emqx.com/#/recent_connections)
 
 Additionally, MQTTX Web supports private deployment using Docker, which is beneficial when only a browser is available, or for testing in restricted intranet environments. Deploy from Docker Image:
 

@@ -89,10 +89,10 @@ Properly configuring MQTT ACLs is crucial to maintaining security and ensuring t
 
 Continue exploring how EMQX can help secure your IoT Infrastructure:
 
-- [EMQX access control overview](https://www.emqx.io/docs/en/v5.0/access-control/overview.html)
+- [EMQX access control overview](https://docs.emqx.com/en/emqx/v5.0/access-control/overview.html)
 - [Redis and JWT Auth & ACL methods with EMQX Cloud](https://www.emqx.com/en/blog/emqx-cloud-redis-and-jwt-authentication-authorization)
 
-For more about EMQX, please check our [documentation](https://www.emqx.io/docs/en/v5.0/), [GitHub](https://github.com/emqx/emqx), [Slack channel](https://slack-invite.emqx.io/), and [forum](https://www.emqx.io/forum/)! 
+For more about EMQX, please check our [documentation](https://docs.emqx.com/en/emqx/v5.0/), [GitHub](https://github.com/emqx/emqx), [Slack channel](https://slack-invite.emqx.io/), and [forum](https://forum.emqx.io/)! 
 
 
 

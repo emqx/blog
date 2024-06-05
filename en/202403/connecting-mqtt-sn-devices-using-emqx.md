@@ -161,7 +161,7 @@ For example, the content of a Connected event message will be:
 }
 ```
 
-Of course, you may also use the `$event/client_connected` and `$event/client_disconnected` in the rule engine to get the Connected/ Disconnected events of the MQTT-SN gateway. For details, refer to: [Event topic available for FROM clause](https://www.emqx.io/docs/en/v5.0/data-integration/rule-sql-events-and-fields.html#mqtt-events)
+Of course, you may also use the `$event/client_connected` and `$event/client_disconnected` in the rule engine to get the Connected/ Disconnected events of the MQTT-SN gateway. For details, refer to: [Event topic available for FROM clause](https://docs.emqx.com/en/emqx/v5.0/data-integration/rule-sql-events-and-fields.html#mqtt-events)
 
 ## Summary
 

@@ -35,7 +35,7 @@ A SUBSCRIBE packet can only contain one Subscription Identifier. If a SUBSCRIBE 
 
 ## Demo
 
-1. Access [MQTTX Web](http://www.emqx.io/online-mqtt-client) on a Web browser.
+1. Access [MQTTX Web](http://mqtt-client.emqx.com/) on a Web browser.
 
 2.  Create an [MQTT over WebSocket](https://www.emqx.com/en/blog/connect-to-mqtt-broker-with-websocket) connection and connect to the [Free Public MQTT Server](https://www.emqx.com/en/mqtt/public-mqtt5-broker):
 

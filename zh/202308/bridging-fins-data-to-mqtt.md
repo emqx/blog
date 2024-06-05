@@ -34,7 +34,7 @@ docker pull emqx/emqx-enterprise:5.1.0
 docker run -d --name emqx-enterprise -p 1883:1883 -p 8083:8083 -p 8084:8084 -p 8883:8883 -p 18083:18083 emqx/emqx-enterprise:5.1.0
 ```
 
-通过网页浏览器访问 `http://localhost:18083` （将 “localhost” 替换为实际 IP 地址），进入 EMQX 控制面板。这样，您可以管理设备连接并监控相关指标。请保持 Docker 容器在运行状态以完成本教程。如有兴趣，请参阅[文档](https://www.emqx.io/docs/en/v5.0/)，了解控制面板中的更多功能。
+通过网页浏览器访问 `http://localhost:18083` （将 “localhost” 替换为实际 IP 地址），进入 EMQX 控制面板。这样，您可以管理设备连接并监控相关指标。请保持 Docker 容器在运行状态以完成本教程。如有兴趣，请参阅[文档](https://docs.emqx.com/en/emqx/v5.0/)，了解控制面板中的更多功能。
 
 初始用户名：admin，初始密码：public
 

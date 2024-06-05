@@ -64,7 +64,7 @@ Therefore, the server needs to identify and respond to these potential security 
 
 Rate limit can prevent attackers from maliciously consuming server resources and affecting service reliability by restricting and balancing traffic. It can also handle traffic fluctuations caused by normal business changes. However, some attacks do not require the attacker to send valid requests, which may bypass the rate limit. Therefore, the server side also needs to identify these potential security threats.
 
-[EMQX](https://www.emqx.io/) is a widely used [MQTT Broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) offering high scalability and availability while prioritizing user security. In EMQX, you can easily set different rate limits for each listener and add the specified Client ID or IP to the backlist. For more information, please visit the [Rate Limit](https://www.emqx.io/docs/zh/v5.0/rate-limit/rate-limit.html) and [Blacklist](https://www.emqx.io/docs/zh/v5.0/access-control/blacklist.html) feature documentation of EMQX.
+[EMQX](https://www.emqx.io/) is a widely used [MQTT Broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) offering high scalability and availability while prioritizing user security. In EMQX, you can easily set different rate limits for each listener and add the specified Client ID or IP to the backlist. For more information, please visit the [Rate Limit](https://docs.emqx.com/zh/emqx/v5.0/rate-limit/rate-limit.html) and [Blacklist](https://docs.emqx.com/zh/emqx/v5.0/access-control/blacklist.html) feature documentation of EMQX.
 
 
 

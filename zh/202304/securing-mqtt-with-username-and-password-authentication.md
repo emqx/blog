@@ -68,7 +68,7 @@ sha256 hash: 8f0e2f76e22b43e2855189877e7dc1e1e7d98c226c95db247cd1d547928334a9
 
 ## 结语
 
-总而言之，基于密码的认证在保护 [MQTT 连接](https://www.emqx.com/zh/blog/how-to-set-parameters-when-establishing-an-mqtt-connection)和物联网系统的完整性方面起着关键作用。通过遵循密码选择、存储和传输的最佳实践，同时注意暴力攻击等常见问题，物联网开发者可以有效实现 MQTT 系统的安全保障。作为一个广泛使用的可扩展、高可用的 MQTT Broker，[EMQX](https://www.emqx.io/zh) 也提供了包括[基于密码](https://www.emqx.io/docs/zh/v5.0/access-control/authn/authn.html)认证在内的一系列安全措施，以保证用户的物联网系统的安全。
+总而言之，基于密码的认证在保护 [MQTT 连接](https://www.emqx.com/zh/blog/how-to-set-parameters-when-establishing-an-mqtt-connection)和物联网系统的完整性方面起着关键作用。通过遵循密码选择、存储和传输的最佳实践，同时注意暴力攻击等常见问题，物联网开发者可以有效实现 MQTT 系统的安全保障。作为一个广泛使用的可扩展、高可用的 MQTT Broker，[EMQX](https://www.emqx.io/zh) 也提供了包括[基于密码](https://docs.emqx.com/zh/emqx/v5.0/access-control/authn/authn.html)认证在内的一系列安全措施，以保证用户的物联网系统的安全。
 
 基于密码认证只是 MQTT 众多认证方式中的一种，且并不一定适合每个使用场景。数字证书或 OAuth 2.0 等更高级的方法可能会在某些情况下提供更强的安全性。物联网开发者需要了解和掌握各类常用的认证方式并选择最适合的一种或多种。
 

@@ -38,7 +38,7 @@ $ ./examples/server_example_control/Release/server_example_control.exe 49333
 
 ## EMQX Quick Start
 
-Execute the following commands to install and run the EMQX container. For more information on how to install the EMQX container, please visit the [Installation Guide](https://www.emqx.io/docs/en/v5.0/deploy/install.html).
+Execute the following commands to install and run the EMQX container. For more information on how to install the EMQX container, please visit the [Installation Guide](https://docs.emqx.com/en/emqx/v5.0/deploy/install.html).
 
 ```
 docker pull emqx/emqx:5.1.0

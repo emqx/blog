@@ -89,7 +89,7 @@ EMQX Cloud offers a 6-month free trial to newly registered users. After register
 
 #### Method 2: private deployment installation
 
-> If you are new to EMQX, we recommend [EMQX documentation](https://www.emqx.io/docs/en/latest/) to get started quickly.
+> If you are new to EMQX, we recommend [EMQX documentation](https://docs.emqx.com/en/emqx/latest/) to get started quickly.
 
 Access the [EMQ download](https://www.emqx.com/en/try?product=enterprise) page to download the appropriate package for your operating system. At the time of this writing, the Enterprise version of EMQX is v4.1.2. The steps to download the zip package are as follows:
 

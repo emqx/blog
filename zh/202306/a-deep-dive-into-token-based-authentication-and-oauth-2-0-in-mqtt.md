@@ -80,7 +80,7 @@ OAuth 2.0 是一个框架，它让用户可以用他们在一个独立的认证�
 
 ## 结语
 
-作为全球领先的 MQTT Broker，[EMQX](https://www.emqx.io/zh) 提供了多种认证方式，其中包括 [JWT 认证](https://www.emqx.io/docs/zh/v5.0/access-control/authn/jwt.html)。您可以选择 HMAC 作为签名方案，也可以选择更安全的 RSA，或者直接为 EMQX 配置一个 JWKS 端点来启用 JWT 认证。
+作为全球领先的 MQTT Broker，[EMQX](https://www.emqx.io/zh) 提供了多种认证方式，其中包括 [JWT 认证](https://docs.emqx.com/zh/emqx/v5.0/access-control/authn/jwt.html)。您可以选择 HMAC 作为签名方案，也可以选择更安全的 RSA，或者直接为 EMQX 配置一个 JWKS 端点来启用 JWT 认证。
 
 通过使用这些额外的认证方式，您可以增强整个系统对未授权访问和潜在安全威胁的防护。随着技术的不断进步，与最新的认证技术保持同步将变得更加重要。
 

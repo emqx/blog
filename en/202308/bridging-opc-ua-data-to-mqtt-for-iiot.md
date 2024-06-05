@@ -27,7 +27,7 @@ Click **Objects->Objects::FolderType->Simulation::FolderType** to view the data 
 
 ## EMQX Startup
 
-Execute the following commands to install and run the EMQX container. For more information on how to install the EMQX container, you can visit the [Installation Guide](https://www.emqx.io/docs/zh/v5.0/deploy/install.html).
+Execute the following commands to install and run the EMQX container. For more information on how to install the EMQX container, you can visit the [Installation Guide](https://docs.emqx.com/zh/emqx/v5.0/deploy/install.html).
 
 ```
 docker pull emqx/emqx:5.1.0

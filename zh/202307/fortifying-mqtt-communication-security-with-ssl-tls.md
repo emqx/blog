@@ -89,7 +89,7 @@ EMQX 支持 X509 证书的单向/双向身份认证，你可以为 EMQX 支持�
 - [为 EMQX Enterprise 启用双向认证](https://www.emqx.com/zh/blog/enable-two-way-ssl-for-emqx)
 - [为使用自定义域名和第三方证书的 EMQX Cloud 启用双向认证](https://docs.emqx.com/zh/cloud/latest/deployments/tls_ssl.html#%E5%88%9B%E5%BB%BA%E5%8F%8C%E5%90%91%E8%AE%A4%E8%AF%81)
 
-更多关于 EMQX 的信息，请查看我们的[文档](https://www.emqx.io/docs/zh/v5.0/)、[GitHub](https://github.com/emqx/emqx)、[Slack](https://slack-invite.emqx.io/) 和[论坛](https://askemq.com/)。
+更多关于 EMQX 的信息，请查看我们的[文档](https://docs.emqx.com/zh/emqx/v5.0/)、[GitHub](https://github.com/emqx/emqx)、[Slack](https://slack-invite.emqx.io/) 和[论坛](https://askemq.com/)。
 
 
 

@@ -36,7 +36,7 @@ EMQX 具有丰富而强大的功能集，例如基于 SQL 的规则引擎，可�
 
 ### EMQX 快速使用
 
-EMQX 提供多种安装方式，用户可在[安装指南](https://www.emqx.io/docs/zh/v5.0/deploy/install.html)在中查看详细的安装方式。本实例采用容器化部署的方式，以便于最快开始体验 EMQX。
+EMQX 提供多种安装方式，用户可在[安装指南](https://docs.emqx.com/zh/emqx/v5.0/deploy/install.html)在中查看详细的安装方式。本实例采用容器化部署的方式，以便于最快开始体验 EMQX。
 
 运行以下命令获取 Docker 镜像：
 
@@ -50,7 +50,7 @@ docker pull emqx/emqx:5.1.0
 docker run -d --name emqx -p 1883:1883 -p 8081:8081 -p 8083:8083 -p 8084:8084 -p 8883:8883 -p 18083:18083 emqx/emqx:5.1.0
 ```
 
-通过浏览器访问 `http://localhost:1883` （localhost 可替换为您的实际 IP 地址）以访问 EMQX Dashboard 管理控制台，进行设备连接与相关指标监控管理。本教程保持 docker 启动即可，如有兴趣可以参考[文档](https://www.emqx.io/docs/zh/v5.0/)在控制台体验更多功能。
+通过浏览器访问 `http://localhost:1883` （localhost 可替换为您的实际 IP 地址）以访问 EMQX Dashboard 管理控制台，进行设备连接与相关指标监控管理。本教程保持 docker 启动即可，如有兴趣可以参考[文档](https://docs.emqx.com/zh/emqx/v5.0/)在控制台体验更多功能。
 
 初始用户名： `admin` ，初始密码：`public`
 

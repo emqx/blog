@@ -109,7 +109,7 @@ MQTTの基本的な構成要素を理解したところで、一般的なワー�
 
 ### MQTTクライアントを用意する
 
-今回は、[MQTTX](https://mqttx.app/)が提供するブラウザアクセスをサポートするMQTTクライアントツール「[http://www.emqx.io/online-mqtt-client」](http://www.emqx.io/online-mqtt-client)を使用します。MQTTXでは、デスクトップクライアントとコマンドラインツールも提供されています。
+今回は、[MQTTX](https://mqttx.app/)が提供するブラウザアクセスをサポートするMQTTクライアントツール「[http://mqtt-client.emqx.com/」](http://mqtt-client.emqx.com/)を使用します。MQTTXでは、デスクトップクライアントとコマンドラインツールも提供されています。
 
 MQTTXは、macOS、Linux、Windows上で動作するエレガントなクロスプラットフォームMQTT 5.0デスクトップクライアントです。そのユーザーフレンドリーなチャットスタイルのインターフェースにより、ユーザーは簡単に複数のMQTT/MQTTS接続を作成し、MQTTメッセージをサブスクライブ/パブリッシュすることができます。
 
@@ -125,7 +125,7 @@ MQTTXは、macOS、Linux、Windows上で動作するエレガントなクロス�
 
 MQTTプロトコルを使用して通信する前に、クライアントはブローカーに接続するためのMQTT接続を作成する必要があります。
 
-ブラウザで [http://www.emqx.io/online-mqtt-client](http://www.emqx.io/online-mqtt-client)  にアクセスし、ページ中央の `New Connection` ボタンをクリックすると、以下のページが表示されます。
+ブラウザで [http://mqtt-client.emqx.com/](http://mqtt-client.emqx.com/)  にアクセスし、ページ中央の `New Connection` ボタンをクリックすると、以下のページが表示されます。
 
 ![Create an MQTT connection](https://assets.emqx.com/images/5e110d181ce8489c275d5674910fa16d.png)
 

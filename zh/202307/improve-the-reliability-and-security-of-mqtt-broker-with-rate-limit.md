@@ -59,7 +59,7 @@ listeners.tcp.default {
 }
 ```
 
-您可以在访问 EMQX 的 [速率限制](https://www.emqx.io/docs/zh/v5.0/rate-limit/rate-limit.html) 和 [黑名单](https://www.emqx.io/docs/zh/v5.0/access-control/blacklist.html) 功能文档以了解更多。
+您可以在访问 EMQX 的 [速率限制](https://docs.emqx.com/zh/emqx/v5.0/rate-limit/rate-limit.html) 和 [黑名单](https://docs.emqx.com/zh/emqx/v5.0/access-control/blacklist.html) 功能文档以了解更多。
 
  
 

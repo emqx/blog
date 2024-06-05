@@ -84,7 +84,7 @@ Retain Handling を使用すると、次の 3 つの異なる動作から選択�
 
 ### QoSサブスクリプションオプションのデモ
 
-1. Web ブラウザで[MQTTX Web](http://www.emqx.io/online-mqtt-client)にアクセスします。
+1. Web ブラウザで[MQTTX Web](http://mqtt-client.emqx.com/)にアクセスします。
 
 2. WebSocket を使用して MQTT 接続を作成し、[無料のパブリック MQTT サーバー](https://www.emqx.com/ja/mqtt/public-mqtt5-broker)に接続します。
 
@@ -100,7 +100,7 @@ Retain Handling を使用すると、次の 3 つの異なる動作から選択�
 
 ### No Localサブスクリプションなしオプションのデモ
 
-1. Web ブラウザで[MQTTX Web](http://www.emqx.io/online-mqtt-client)にアクセスします。
+1. Web ブラウザで[MQTTX Web](http://mqtt-client.emqx.com/)にアクセスします。
 
 2. WebSocket を使用して MQTT 接続を作成し、[無料のパブリック MQTT サーバー](https://www.emqx.com/ja/mqtt/public-mqtt5-broker)に接続します。
 
@@ -114,7 +114,7 @@ Retain Handling を使用すると、次の 3 つの異なる動作から選択�
 
 ### Retain as Published サブスクリプション オプションのデモ
 
-1. Web ブラウザで[MQTTX Web](http://www.emqx.io/online-mqtt-client)にアクセスします。
+1. Web ブラウザで[MQTTX Web](http://mqtt-client.emqx.com/)にアクセスします。
 
 2. WebSocket を使用して MQTT 接続を作成し、[無料のパブリック MQTT サーバー](https://www.emqx.com/ja/mqtt/public-mqtt5-broker)に接続します。
 
@@ -130,7 +130,7 @@ Retain Handling を使用すると、次の 3 つの異なる動作から選択�
 
 ### Retain Handlingサブスクリプション オプションのデモ
 
-1. Web ブラウザで[MQTTX Web](http://www.emqx.io/online-mqtt-client)にアクセスします。
+1. Web ブラウザで[MQTTX Web](http://mqtt-client.emqx.com/)にアクセスします。
 
 2. WebSocket を使用して MQTT 接続を作成し、[無料のパブリック MQTT サーバー](https://www.emqx.com/ja/mqtt/public-mqtt5-broker)に接続します。
 

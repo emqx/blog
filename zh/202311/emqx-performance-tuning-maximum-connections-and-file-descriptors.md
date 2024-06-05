@@ -265,7 +265,7 @@ systemctl restart emqx
 
 所以我们建议启用 EMQX 的最大连接数限制，由 EMQX 主动限制连接数量，确保打开的文件描述符不会超过系统的资源限制。此限制机制默认关闭，我们需要自行开启。
 
-以 EMQX 5.3.0 为例，我们可以访问 [Dashboard](https://www.emqx.io/docs/zh/latest/dashboard/introduction.html) 的监听器页面，然后点击监听器名字进入相应的配置页面，将 Max Connections 修改为一个小于当前系统限制的值：
+以 EMQX 5.3.0 为例，我们可以访问 [Dashboard](https://docs.emqx.com/zh/emqx/latest/dashboard/introduction.html) 的监听器页面，然后点击监听器名字进入相应的配置页面，将 Max Connections 修改为一个小于当前系统限制的值：
 
 ![EMQX Dasshboard 监听器](https://assets.emqx.com/images/8c0ae7961df6e41497fe6a92bc9e38c3.png)
 

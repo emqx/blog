@@ -4,7 +4,7 @@
 
 同时，如果大家在使用 EMQX 的过程中遇到问题，欢迎通过以下方式进行解决：
 
-- 查阅 EMQX 产品文档与博客文章：[https://www.emqx.io/docs/zh/v5.0/](https://www.emqx.io/docs/zh/v5.0/)，[https://www.emqx.com/zh/blog/category/emqx](https://www.emqx.com/zh/blog/category/emqx)。
+- 查阅 EMQX 产品文档与博客文章：[https://docs.emqx.com/zh/emqx/v5.0/](https://docs.emqx.com/zh/emqx/v5.0/)，[https://www.emqx.com/zh/blog/category/emqx](https://www.emqx.com/zh/blog/category/emqx)。
 - 如果在现有资料中未能查询到问题的解决办法，可以在问答社区中留言提问，我们会尽快解答您的问题：[https://askemq.com/](https://askemq.com/)  
 
 ### Q：向 MQTT Broker 发布多条消息，MQTT Broker 向订阅者转发这些消息的时候能否保证原始顺序？
@@ -17,7 +17,7 @@ MQTT Broker 一定会保证来自同一客户端的相同主题的消息按照�
 
 A：其实 EMQX 的 Debug 日志基本已经记录了所有的行为和现象，通过阅读 Debug 日志我们能够知道客户端何时发起了连接，连接时指定了哪些字段，连接是否通过，被拒绝连接的原因是什么等等。但是由于 Debug 日志记录的信息过多，会带来额外的资源消耗，并且不利于我们针对单个客户端或主题进行分析。
 
-所以 EMQX 提供了[日志追踪](https://www.emqx.io/docs/zh/v5.0/observability/tracer.html)功能，我们可以指定想要追踪的客户端或主题，EMQX 会将所有与该客户端或主题相关的 Debug 日志都输出到指定日志文件中。这样不管是自己分析调试，还是寻求社区帮助，都会方便许多。
+所以 EMQX 提供了[日志追踪](https://docs.emqx.com/zh/emqx/v5.0/observability/tracer.html)功能，我们可以指定想要追踪的客户端或主题，EMQX 会将所有与该客户端或主题相关的 Debug 日志都输出到指定日志文件中。这样不管是自己分析调试，还是寻求社区帮助，都会方便许多。
 
 需要注意的是，如果客户端是因为网络原因而无法连接到 EMQX 的话，日志追踪功能也是无法提供帮助的，因为此时 EMQX 尚未收到任何报文。这种情况很多时候是因为防火墙、安全组等网络配置原因导致服务器端口没有开放，这在使用云主机部署 EMQX 时尤为常见。所以除了日志追踪，我们可以通过检查端口占用、监听情况，检查网络配置等手段来排除网络方面的原因。
 

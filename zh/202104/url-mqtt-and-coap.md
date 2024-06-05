@@ -15,7 +15,7 @@ EMQX Broker 作为物联网消息中间件，则肩负着促成这些设备提�
 
 #### Step 1：启动 EMQX Broker，打开 CoAP 插件，并确保插件的运行状态。
 
-关于如何安装和启动 EMQX Broker，你可以在[这里](https://www.emqx.io/docs/zh/latest/getting-started/install.html)找到帮助。
+关于如何安装和启动 EMQX Broker，你可以在[这里](https://docs.emqx.com/zh/emqx/latest/getting-started/install.html)找到帮助。
 
 打开 Dashboard，点击左侧插件，右侧搜索 CoAP ，点击启动，运行 `CoAP 插件`（ 默认端口 5683 ）。
 ![image20210412152259272.png](https://assets.emqx.com/images/66a3ec26f6ef7baedb9fb7e22b0cdf5d.png)

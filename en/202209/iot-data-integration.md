@@ -16,9 +16,9 @@ EMQX data integration is a combination of the [rules engine](https://www.emqx.co
 
 EMQX's simple, efficient, real-time data integration solution is achieved through two main features: **Rules** and **Data Bridges**.
 
-Rules are used for message and event data processing, enabling operations such as data format conversion, message coding and decoding, and business logic processing through SQL-like syntax combined with built-in or user-extended custom functions. For more information about rules, see [Rules](https://www.emqx.io/docs/en/v5.0/data-integration/rules.html) in the EMQX docs.
+Rules are used for message and event data processing, enabling operations such as data format conversion, message coding and decoding, and business logic processing through SQL-like syntax combined with built-in or user-extended custom functions. For more information about rules, see [Rules](https://docs.emqx.com/en/emqx/v5.0/data-integration/rules.html) in the EMQX docs.
 
-Data Bridges are used to interface with data systems to enable high-performance, bidirectional data movement between EMQX and external systems. Data bridges allows users to push messages from EMQX to an external data system in real-time or to pull data from an external data system and push it to a topic in EMQX. For more information on data bridges, see [Data Bridges](https://www.emqx.io/docs/en/v5.0/data-integration/data-bridges.html).
+Data Bridges are used to interface with data systems to enable high-performance, bidirectional data movement between EMQX and external systems. Data bridges allows users to push messages from EMQX to an external data system in real-time or to pull data from an external data system and push it to a topic in EMQX. For more information on data bridges, see [Data Bridges](https://docs.emqx.com/en/emqx/v5.0/data-integration/data-bridges.html).
 
 ![EMQX data integration](https://assets.emqx.com/images/8ea87178108fd15755534ac746118d3f.png)
 
