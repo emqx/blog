@@ -51,13 +51,13 @@ AUTH 报文不包含有效载荷。
 
 ## 总结
 
-AUTH 报文是实现任意次数认证数据交换的核心，也使得 MQTT 的增强认证能够支持各种不同的认证机制。像 SCRAM 认证、Kerberos 认证，都能提供比简单密码认证更高的安全保障，目前 EMQX 已经支持了其中的 [SCRAM 认证](https://docs.emqx.com/zh/emqx/v5.1/access-control/authn/scram.html)。
+AUTH 报文是实现任意次数认证数据交换的核心，也使得 MQTT 的增强认证能够支持各种不同的认证机制。像 SCRAM 认证、Kerberos 认证，都能提供比简单密码认证更高的安全保障，目前 EMQX 已经支持了其中的 [SCRAM 认证](https://www.emqx.io/docs/zh/v5.1/access-control/authn/scram.html)。
 
 现在，我们已经介绍了 MQTT 中的所有控制报文类型，MQTT 作为一个二进制协议，允许我们传输任意格式的应用消息。但相应地，我们也需要严格地按照协议规范来编码和解析 MQTT 报文，否则就可能造成协议错误。
 
 当我们遇到问题时，可以优先查看对端返回的响应报文中的 Reason Code，它可以指明大部分的错误原因。而当一些嵌入式设备上的端侧 SDK 实现不佳无法直接给出 Reason Code 时，我们可以尝试网络抓包来查看报文中的 Reason Code，此时我们可以借助 Wireshark，避免自己人工解析。
 
-[EMQX](https://www.emqx.io/zh) 作为被广泛使用的可扩展、高可用的 MQTT Broker，也提供了一个方便用户排查问题的 [日志追踪](https://docs.emqx.com/zh/emqx/v5.1/observability/tracer.html#日志追踪介绍) 功能，它可以记录下指定 Client ID、主题、IP 的所有相关日志，包括报文收发日志。所以我们可以用它来分析客户端的行为是否异常，例如是否正确地响应了 PUBACK，是否重复发送了连接报文等等。
+[EMQX](https://www.emqx.io/zh) 作为被广泛使用的可扩展、高可用的 MQTT Broker，也提供了一个方便用户排查问题的 [日志追踪](https://www.emqx.io/docs/zh/v5.1/observability/tracer.html#日志追踪介绍) 功能，它可以记录下指定 Client ID、主题、IP 的所有相关日志，包括报文收发日志。所以我们可以用它来分析客户端的行为是否异常，例如是否正确地响应了 PUBACK，是否重复发送了连接报文等等。
 
 <section class="promotion">
     <div>

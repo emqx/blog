@@ -159,7 +159,7 @@ MQTT-SN 网关会将所有设备的上下线事件发布到两个专用的主题
 }
 ```
 
-当然，也可以通过规则引擎中的 `$event/client_connected` 和 `$event/client_disconnected` 事件来获取 MQTT-SN 网关的上下线事件，具体可以参考：[Event topic available for FROM clause](https://docs.emqx.com/en/emqx/v5.0/data-integration/rule-sql-events-and-fields.html#mqtt-events)
+当然，也可以通过规则引擎中的 `$event/client_connected` 和 `$event/client_disconnected` 事件来获取 MQTT-SN 网关的上下线事件，具体可以参考：[Event topic available for FROM clause](https://www.emqx.io/docs/en/v5.0/data-integration/rule-sql-events-and-fields.html#mqtt-events)
 
 ## 结语
 

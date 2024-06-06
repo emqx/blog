@@ -6,7 +6,7 @@
 
 ## 基本组件：EMQX 和 Neuron
 
-[EMQX](https://github.com/emqx/emqx) 是一款支持 Sparkplug 协议的热门 [MQTT Broker](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison "https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison")，Neuron 是一款工业物联网平台，能够从工业设备获取数据，并将数据转换为 Sparkplug 消息发送给应用。
+[EMQX](https://www.emqx.io/ "https://www.emqx.io/") 是一款支持 Sparkplug 协议的热门 [MQTT Broker](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison "https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison")，Neuron 是一款工业物联网平台，能够从工业设备获取数据，并将数据转换为 Sparkplug 消息发送给应用。
 
 [Neuron](https://neugates.io/ "https://neugates.io/") 可以从设备获取数据，并根据数据变化情况将 Sparkplug 消息发布到 EMQX Broker。EMQX 会把消息转发给订阅了相应 Sparkplug 主题的应用。此外，EMQX 还可以通过规则引擎对 Sparkplug 消息进行解码。这些消息可以用于数据平台、历史数据持久化存储等场景。
 
