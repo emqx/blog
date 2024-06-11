@@ -137,6 +137,7 @@ Build a reliable, efficient and industry-specific Internet of Vehicles platform 
 
 ## [Industrial IoT | Unified Namespace | Sparkplug](https://www.emqx.com/ja/blog/category/industrial-iot)
 
+- [BACnetとModbus の比較](https://www.emqx.com/ja/blog/bacnet-vs-modbus) ([Edit](https://github.com/emqx/blog/blob/main/ja/202406/bacnet-vs-modbus.md))
 - [FINSデータをMQTTにブリッジング：プロトコルの説明と実践チュートリアル](https://www.emqx.com/ja/blog/bridging-fins-data-to-mqtt) ([Edit](https://github.com/emqx/blog/blob/main/ja/202404/bridging-fins-data-to-mqtt.md))
 - [Omron FINSプロトコル：基本とMQTTへのブリッジングのメリット](https://www.emqx.com/ja/blog/omron-fins-protocol) ([Edit](https://github.com/emqx/blog/blob/main/ja/202404/omron-fins-protocol.md))
 - [Modbus データを MQTT にブリッジしてIIoTを実現：ステップバイステップチュートリアル](https://www.emqx.com/ja/blog/bridging-modbus-data-to-mqtt-for-iiot) ([Edit](https://github.com/emqx/blog/blob/main/ja/202404/bridging-modbus-data-to-mqtt-for-iiot.md))

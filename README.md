@@ -192,6 +192,7 @@ Explore more with & via EMQ.
 ## [EMQX Open Source | Broker](https://www.emqx.com/en/blog/category/emqx)
 EMQX is the world's most scalable open-source MQTT broker with a high performance that connects 100M+ IoT devices in 1 cluster, while maintaining 1M message per second throughput and sub-millisecond latency.
 
+- [EMQX Multi-Protocol Gateway: Streamlining IoT Communication](https://www.emqx.com/en/blog/emqx-multi-protocol-gateway) ([Edit](https://github.com/emqx/blog/blob/main/en/202406/emqx-multi-protocol-gateway.md))
 - [Seamlessly Consuming Kafka Messages with EMQX Dedicated v5: A Step-by-Step Tutorial](https://www.emqx.com/en/blog/seamlessly-consuming-kafka-messages-with-emqx-dedicated) ([Edit](https://github.com/emqx/blog/blob/main/en/202405/seamlessly-consuming-kafka-messages-with-emqx-dedicated.md))
 - [Navigating Change: A Comprehensive Guide to Migrating from CloudMQTT to EMQX](https://www.emqx.com/en/blog/a-comprehensive-guide-to-migrating-from-cloudmqtt-to-emqx) ([Edit](https://github.com/emqx/blog/blob/main/en/202404/a-comprehensive-guide-to-migrating-from-cloudmqtt-to-emqx.md))
 - [From Basics to Brilliance: Exploring EMQX Open Source vs. Enterprise Edition](https://www.emqx.com/en/blog/emqx-open-source-vs-enterprise) ([Edit](https://github.com/emqx/blog/blob/main/en/202404/emqx-open-source-vs-enterprise.md))
