@@ -1,4 +1,4 @@
-本文素材来源于 RabbitMQ Summit 2019 会议上 Erlang Solutions 工程师 Grigory Starinkin  的发言内容。原内容主要对 [MQTT 消息服务器 EMQX](https://www.emqx.io/zh) 与 [RabbitMQ](https://www.rabbitmq.com) 进行了介绍及压力测试对比。在此基础上，我们对其进行了补充，深入分析了 EMQX 以及 RabbitMQ  的在核心架构上的侧重，并据此分析了它们为 [MQTT 集群](https://www.emqx.com/zh/blog/tag/mqtt-broker-集群)模式表现带来的不同影响。
+本文素材来源于 RabbitMQ Summit 2019 会议上 Erlang Solutions 工程师 Grigory Starinkin  的发言内容。原内容主要对 [MQTT 消息服务器 EMQX](https://www.emqx.com/zh/products/emqx) 与 [RabbitMQ](https://www.rabbitmq.com) 进行了介绍及压力测试对比。在此基础上，我们对其进行了补充，深入分析了 EMQX 以及 RabbitMQ  的在核心架构上的侧重，并据此分析了它们为 [MQTT 集群](https://www.emqx.com/zh/blog/tag/mqtt-broker-集群)模式表现带来的不同影响。
 
 ## MQTT 协议 - 订阅和发布
 
@@ -8,7 +8,7 @@
 
 ![MQTT协议运作.png](https://assets.emqx.com/images/0a32545afd5d82cd0988372700ab6bba.png)
 
-目前市场上有很多 MQTT 客户端 SDK，也有很多 [MQTT Broker](https://www.emqx.io/zh)。EMQX 和 RabbitMQ 是 Erlang 家族中具有代表性的两大开源消息服务器，我们接下来将针对 MQTT 场景对其进行深入对比。
+目前市场上有很多 MQTT 客户端 SDK，也有很多 MQTT Broker。EMQX 和 RabbitMQ 是 Erlang 家族中具有代表性的两大开源消息服务器，我们接下来将针对 MQTT 场景对其进行深入对比。
 
 
 
@@ -24,7 +24,7 @@ RabbitMQ 是实现了高级消息队列协议（AMQP）的开源消息代理软�
 
 ## 压力测试
 
-[MQTT 服务器](https://www.emqx.io/zh)在实际使用中的性能通常被用户作为判断一个服务器好坏的标准，因此本次评测也将重点关注这两个服务器在压力测试下的性能测试结果。
+MQTT 服务器在实际使用中的性能通常被用户作为判断一个服务器好坏的标准，因此本次评测也将重点关注这两个服务器在压力测试下的性能测试结果。
 
 ### 测试工具
 

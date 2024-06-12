@@ -7,7 +7,7 @@ The Neuron team strives to empower users with flexible and customizable solution
 ## How Does Custom Write Topic Support Benefit You?
 
 1. **Enterprise Topic Standard Compliance**: Neuron 2.4.5 enables you to align the MQTT downlink topic with your organization's specific topic standards. By customizing the write topic, you can effortlessly integrate Neuron with your existing enterprise infrastructure and adhere to internal naming conventions.
-2. **ACL Configuration Flexibility**: With the ability to define a custom write topic, you gain fine-grained control over the access permissions and security policies set up in your existing [MQTT broker](https://www.emqx.io/). Neuron's MQTT plugin now seamlessly integrates with your current ACL settings, allowing you to tailor access rights to specific topics within Neuron.
+2. **ACL Configuration Flexibility**: With the ability to define a custom write topic, you gain fine-grained control over the access permissions and security policies set up in your existing MQTT Broker. Neuron's MQTT plugin now seamlessly integrates with your current ACL settings, allowing you to tailor access rights to specific topics within Neuron.
 3. **Seamless Integration with Third-Party Systems**: The custom write topic support opens up possibilities for integrating Neuron with a wide range of existing third-party systems and services. Whether you're using enterprise middleware, cloud platforms, or custom-built solutions, Neuron 2.4.5 ensures a smooth and efficient data flow.
 
 ## How to Leverage the Custom Write Topic Feature

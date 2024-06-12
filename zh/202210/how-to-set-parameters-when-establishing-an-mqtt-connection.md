@@ -46,7 +46,7 @@ MQTT 的连接地址通常包含 ：服务器 IP 或者域名、服务器端口�
 
 `wss` 是基于 WebSocket 的安全连接，端口一般为 8084。
 
-当使用 WebSocket 连接时，连接地址还需要包含 Path，[EMQX](http://www.emqx.io/) 默认配置的 Path 是 `/mqtt`。比如 `ws://broker.emqx.io:8083/mqtt` 是一个基于 WebSocket 的 MQTT 连接地址。
+当使用 WebSocket 连接时，连接地址还需要包含 Path， EMQX 默认配置的 Path 是 `/mqtt`。比如 `ws://broker.emqx.io:8083/mqtt` 是一个基于 WebSocket 的 MQTT 连接地址。
 
 ### 客户端 ID（Client ID）
 

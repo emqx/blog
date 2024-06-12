@@ -34,7 +34,7 @@ mqttx conn -h 'broker.emqx.io' -p 1883 -u 'admin' -P 'public'
 
 MQTTX Web 在线试用地址已修改为：[http://mqtt-client.emqx.com/](http://mqtt-client.emqx.com/)
 
-只需要访问上述地址，即可快速使用这款在线的 MQTT 5.0 客户端工具，通过 MQTT over WebSocket 连接到 [MQTT Broker](https://www.emqx.io/zh) 并在浏览器中测试消息发布和接收，快速开发和调试您的 MQTT 服务与应用。
+只需要访问上述地址，即可快速使用这款在线的 MQTT 5.0 客户端工具，通过 MQTT over WebSocket 连接到 MQTT Broker 并在浏览器中测试消息发布和接收，快速开发和调试您的 MQTT 服务与应用。
 
 在 1.8.1 版本中，我们还将继续优化页面样式，完善测试功能等。
 

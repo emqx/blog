@@ -1,4 +1,4 @@
-[EMQX](https://www.emqx.io/) 是一个开源的 [MQTT Broker](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison)，它允许客户端通过 [MQTT 协议](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt)进行数据的发布和订阅。EMQX 的消息路由主要是将消息存储在内存中，以实现低延迟和高吞吐量。然而，这种存储方式也存在一些限制，例如当 Broker 节点掉线时，内存中的消息将会丢失，可能导致客户端无法接收到消息。
+[EMQX](https://github.com/emqx/emqx) 是一个开源的 [MQTT Broker](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison)，它允许客户端通过 [MQTT 协议](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt)进行数据的发布和订阅。EMQX 的消息路由主要是将消息存储在内存中，以实现低延迟和高吞吐量。然而，这种存储方式也存在一些限制，例如当 Broker 节点掉线时，内存中的消息将会丢失，可能导致客户端无法接收到消息。
 
 为了解决这一问题并提高可靠性，EMQX 团队正在采用嵌入式数据库 RocksDB 来实现消息的持久化。通过这个功能，在 Broker 节点失去连接时，消息仍然会被保存下来，从而确保消息的可靠传递。
 

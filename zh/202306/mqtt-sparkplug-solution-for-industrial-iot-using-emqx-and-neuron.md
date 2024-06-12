@@ -2,11 +2,11 @@
 
 Sparkplug 是基于 MQTT 的一种专门为工业自动化和物联网应用而设计的通信协议。要搭建 Sparkplug 解决方案，需要两个核心组件：一个是 [MQTT Broker](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison)，负责消息的分发和管理；另一个是边缘节点，负责将本地设备接入 Broker，以实现实时数据的处理和分析。
 
-在本文中，我们将使用开源分布式 MQTT Broker [EMQX](https://www.emqx.io/zh)，以及边缘工业协议网关软件 [Neuron](https://neugates.io/zh)，来构建一个可扩展和稳健的平台，用于实现 Sparkplug 解决方案。我们将详细探讨 Sparkplug 解决方案的架构，并深入了解 EMQX 和 Neuron 在其中所扮演的角色。
+在本文中，我们将使用开源分布式 MQTT Broker [EMQX](https://github.com/emqx/emqx)，以及边缘工业协议网关软件 [Neuron](https://neugates.io/zh)，来构建一个可扩展和稳健的平台，用于实现 Sparkplug 解决方案。我们将详细探讨 Sparkplug 解决方案的架构，并深入了解 EMQX 和 Neuron 在其中所扮演的角色。
 
 ## EMQX 在 Sparkplug 中的角色
 
-[EMQX](https://www.emqx.io/zh) 用于创建符合 Sparkplug 规范的 [MQTT 主题](https://www.emqx.com/zh/blog/advanced-features-of-mqtt-topics)命名空间。Sparkplug 命名空间定义了设备发布和订阅的 MQTT 消息的结构和内容。通过 EMQX，我们可以确保所有发送到和接收自 Sparkplug 命名空间的消息都被正确格式化并符合 Sparkplug 规范。
+[EMQX](https://github.com/emqx/emqx) 用于创建符合 Sparkplug 规范的 [MQTT 主题](https://www.emqx.com/zh/blog/advanced-features-of-mqtt-topics)命名空间。Sparkplug 命名空间定义了设备发布和订阅的 MQTT 消息的结构和内容。通过 EMQX，我们可以确保所有发送到和接收自 Sparkplug 命名空间的消息都被正确格式化并符合 Sparkplug 规范。
 
 > 了解更多关于 EMQX 的信息： [https://www.emqx.com/zh/products/emqx](https://www.emqx.com/zh/products/emqx)
 

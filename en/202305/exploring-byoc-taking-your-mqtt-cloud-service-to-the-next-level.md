@@ -54,7 +54,7 @@ Here are what you can benefit from EMQX Cloud BYOC:
 
 EMQX Cloud BYOC edition has been adopted by businesses across a range of industries, including Internet of Vehicles (IoV), healthcare, and smart cities.
 
-In IoV scenarios, sensitive data such as vehicle location and driving behavior needs to be transmitted from the vehicle side to the [MQTT broker](https://www.emqx.io/) via either public or private networks, and then saved into the company's centralized data platform.
+In IoV scenarios, sensitive data such as vehicle location and driving behavior needs to be transmitted from the vehicle side to the MQTT Broker via either public or private networks, and then saved into the company's centralized data platform.
 
 EMQX Cloud BYOC can ensure that the entire data chain is within the customer's own cloud account to prevent unauthorized access and data breaches. This addresses the risks of data leakage from the source, reduces the involvement of intermediaries, and simplifies data management complexity.
 

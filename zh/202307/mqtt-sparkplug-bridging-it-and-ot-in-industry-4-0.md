@@ -64,7 +64,7 @@ Sparkplug 的一个核心特点是使用[统一命名空间](https://www.emqx.co
 
 要实施 MQTT Sparkplug 解决方案，我们需要两个组件：MQTT 服务器和边缘节点。
 
-[MQTT 服务器](https://www.emqx.io/zh)作为中央 Broker，负责处理工业物联网环境中设备和应用之间的通信。它接收来自设备的消息，并将其转发给适当的订阅者，同时在需要时保存消息以供后续获取。
+MQTT 服务器作为中央 Broker，负责处理工业物联网环境中设备和应用之间的通信。它接收来自设备的消息，并将其转发给适当的订阅者，同时在需要时保存消息以供后续获取。
 
 边缘节点是一个设备或网关，它充当设备和 [MQTT Broker](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison) 之间的中介。它可以进行本地数据处理和汇总，以及缓存和转发数据到 MQTT Broker。边缘节点常用于有众多设备产生海量的数据且网络带宽受限的工业物联网环境中。
 

@@ -105,7 +105,7 @@ KNX Virtual 包括 10 多种不同类型的虚拟 KNX 设备，这些设备连�
 
 ### 使用 EMQX 处理 MQTT 消息
 
-[EMQX](https://www.emqx.io/zh) 是一款大规模可弹性伸缩的云原生分布式物联网 MQTT 消息服务器。作为全球最具扩展性的 MQTT 消息服务器，EMQX 提供了高效可靠海量物联网设备连接，能够高性能实时移动与处理消息和事件流数据，帮助用户快速构建关键业务的物联网平台与应用。
+[EMQX](https://www.emqx.com/zh/products/emqx) 是一款大规模可弹性伸缩的云原生分布式物联网 MQTT 消息服务器。作为全球最具扩展性的 MQTT 消息服务器，EMQX 提供了高效可靠海量物联网设备连接，能够高性能实时移动与处理消息和事件流数据，帮助用户快速构建关键业务的物联网平台与应用。
 
 <section class="promotion">
     <div>

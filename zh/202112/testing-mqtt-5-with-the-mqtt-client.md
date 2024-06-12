@@ -6,7 +6,7 @@
 
 ## 准备 MQTT 消息服务器
 
-在使用 MQTTX v1.7.0 对 MQTT 5.0 的特性进行测试之前，我们首先需要准备支持 MQTT 5.0 的 [MQTT Broker](https://www.emqx.io/zh)。
+在使用 MQTTX v1.7.0 对 MQTT 5.0 的特性进行测试之前，我们首先需要准备支持 MQTT 5.0 的 MQTT Broker。
 
 本文将使用由 [EMQX Cloud](https://www.emqx.com/zh/cloud) 提供的免费在线 MQTT 5.0 服务器配合 MQTTX 客户端进行测试。作为一款全托管的云原生 MQTT 5.0 消息服务，EMQX Cloud 可以在数分钟内快速创建一个 MQTT 服务，并且完整支持 MQTT 5.0 协议，也是全球首个全托管的 MQTT 5.0 公有云服务。
 

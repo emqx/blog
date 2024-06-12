@@ -93,7 +93,7 @@ MQTT over QUIC 相比 MQTT over TCP/TLS 具有明显的优势：
 
 ## EMQX：首个实现 MQTT over QUIC 的 MQTT Broker
 
-[EMQX](https://www.emqx.io/) 是全球领先的开源 MQTT Broker，拥有高性能的实时消息处理引擎，为海量的物联网设备事件流处理提供动力。EMQX 从 5.0 版本开始支持 MQTT over QUIC，成为首个支持 MQTT over QUIC 的 MQTT Broker。不仅为现代复杂网络的 MQTT 消息传输提供了一种更高效安全的新方式，同时可以在某些场景下显著提高 MQTT 性能。
+[EMQX](https://github.com/emqx/emqx) 是全球领先的开源 MQTT Broker，拥有高性能的实时消息处理引擎，为海量的物联网设备事件流处理提供动力。EMQX 从 5.0 版本开始支持 MQTT over QUIC，成为首个支持 MQTT over QUIC 的 MQTT Broker。不仅为现代复杂网络的 MQTT 消息传输提供了一种更高效安全的新方式，同时可以在某些场景下显著提高 MQTT 性能。
 
 EMQX 支持将传输层替换为 QUIC 流，客户端可发起连接并创建双向流，从而实现更加高效可靠的通信。EMQX 支持两种操作模式：
 

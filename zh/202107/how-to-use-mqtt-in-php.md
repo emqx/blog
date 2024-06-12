@@ -2,7 +2,7 @@
 
 [MQTT](https://mqtt.org/) 是一种基于发布/订阅模式的轻量级物联网消息传输协议，可以用极少的代码和带宽为联网设备提供实时可靠的消息服务，它广泛应用于物联网、移动互联网、智能硬件、[车联网](https://www.emqx.com/zh/blog/category/internet-of-vehicles)、电力能源等行业。
 
-本文主要介绍如何在 PHP 项目中使用 `php-mqtt/client` 客户端库 ，实现 [MQTT 客户端](https://www.emqx.com/zh/blog/introduction-to-the-commonly-used-mqtt-client-library)与 [MQTT 服务器](https://www.emqx.io/zh)的连接、订阅、取消订阅、收发消息等功能。
+本文主要介绍如何在 PHP 项目中使用 `php-mqtt/client` 客户端库 ，实现 [MQTT 客户端](https://www.emqx.com/zh/blog/introduction-to-the-commonly-used-mqtt-client-library)与 MQTT 服务器的连接、订阅、取消订阅、收发消息等功能。
 
 
 ## MQTT 客户端库选择
@@ -46,7 +46,7 @@ composer require php-mqtt/client
 
 - **私有部署**
 
-  [EMQX](https://www.emqx.io/) 是应用于物联网、[工业物联网](https://www.emqx.com/zh/blog/iiot-explained-examples-technologies-benefits-and-challenges)和车联网的最具可扩展性的开源 MQTT Broker。您可以通过以下 Docker 命令来安装 EMQX：
+  [EMQX](https://github.com/emqx/emqx) 是应用于物联网、[工业物联网](https://www.emqx.com/zh/blog/iiot-explained-examples-technologies-benefits-and-challenges)和车联网的最具可扩展性的开源 MQTT Broker。您可以通过以下 Docker 命令来安装 EMQX：
 
   ```bash
   docker run -d --name emqx -p 1883:1883 -p 8083:8083 -p 8084:8084 -p 8883:8883 -p 18083:18083 emqx/emqx

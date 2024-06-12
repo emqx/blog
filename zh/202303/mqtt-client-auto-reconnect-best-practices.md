@@ -151,7 +151,7 @@ int main(int argc, char* argv[])
 
 ## 更多选择：NanoSDK 内置重连策略
 
-[NanoSDK](https://github.com/emqx/NanoSDK) 是除了 Paho 以外的又一 MQTT SDK 选择。NanoSDK 基于 [NNG-NanoMSG](https://github.com/nanomsg/nng) 项目开发，使用 MIT License，对开源和商业都很友好。相较于 Paho 其最大的不同在于内置的全异步 I/O 和 支持 Actor 编程模型，当使用 QoS 1/2 消息时可以获得更高的消息吞吐速率。而且 NanoSDK 支持 MQTT over QUIC 协议，与大规模物联网 [MQTT 消息服务器 EMQX 5.0](https://www.emqx.io/zh) 结合可解决弱网下的数据传输难题。这些优势使得它已经在车联网和工业场景中得到了广泛的使用。
+[NanoSDK](https://github.com/emqx/NanoSDK) 是除了 Paho 以外的又一 MQTT SDK 选择。NanoSDK 基于 [NNG-NanoMSG](https://github.com/nanomsg/nng) 项目开发，使用 MIT License，对开源和商业都很友好。相较于 Paho 其最大的不同在于内置的全异步 I/O 和 支持 Actor 编程模型，当使用 QoS 1/2 消息时可以获得更高的消息吞吐速率。而且 NanoSDK 支持 MQTT over QUIC 协议，与大规模物联网 [MQTT 消息服务器 EMQX 5.0](https://www.emqx.com/zh/products/emqx) 结合可解决弱网下的数据传输难题。这些优势使得它已经在车联网和工业场景中得到了广泛的使用。
 
 在 NanoSDK 中，重连策略已经完全内置，无需用户手动实现。
 

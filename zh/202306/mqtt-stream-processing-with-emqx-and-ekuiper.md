@@ -2,7 +2,7 @@
 
 [MQTT 协议](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt)是一种专为物联网应用而设计的轻量级消息传输协议。它具有简单、开放、易于实现的特点，是物联网应用的理想选择。MQTT 数据以连续实时的方式进行传输，非常适合由流处理引擎进行处理。
 
-[EMQX](https://www.emqx.io/zh) 是一款大规模分布式物联网 [MQTT Broker](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison)，能够高效、可靠地连接海量的物联网设备，并实时处理和分发消息和事件流数据。[eKuiper](https://ekuiper.org/zh) 是一个开源的流处理引擎，可以对流数据进行过滤、转换和聚合等操作。
+[EMQX](https://www.emqx.com/zh/products/emqx) 是一款大规模分布式物联网 [MQTT Broker](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison)，能够高效、可靠地连接海量的物联网设备，并实时处理和分发消息和事件流数据。[eKuiper](https://ekuiper.org/zh) 是一个开源的流处理引擎，可以对流数据进行过滤、转换和聚合等操作。
 
 本文将向您展示如何使用 eKuiper 实时流处理引擎来处理来自 EMQX 的 MQTT 数据。
 

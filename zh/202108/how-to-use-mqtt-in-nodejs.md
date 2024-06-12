@@ -178,7 +178,7 @@ npm start
 
 ![NodeJS MQTT 启动](https://assets.emqx.com/images/9897e6cd56163dfe7139cf6d84361e63.png)
 
-我们看到了客户端已经成功连接到 [MQTT 服务器](https://www.emqx.io/zh)并且订阅主题、接收和发布消息成功。此时我们再使用 [MQTT 5.0 客户端工具 - MQTTX](https://mqttx.app/zh) 作为另一个客户端进行消息收发测试。
+我们看到了客户端已经成功连接到 MQTT 服务器并且订阅主题、接收和发布消息成功。此时我们再使用 [MQTT 5.0 客户端工具 - MQTTX](https://mqttx.app/zh) 作为另一个客户端进行消息收发测试。
 
 ![MQTT 5.0 客户端工具 - MQTTX](https://assets.emqx.com/images/5c841598f78eed0b186572165832f861.png)
 

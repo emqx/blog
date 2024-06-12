@@ -83,7 +83,7 @@ In practice, the SSOT is often implemented as part of the CDR, which is responsi
 
 ## Conclusion
 
-In the Sparkplug specification, an [MQTT broker](https://www.emqx.io/) is an indispensable component to incorporate the above 5 conceptual capabilities. 
+In the Sparkplug specification, an MQTT Broker is an indispensable component to incorporate the above 5 conceptual capabilities. 
 
 First, the MQTT broker offers a pub-sub decoupling messaging architecture for various Sparkplug host systems and devices to operate independently. 
 

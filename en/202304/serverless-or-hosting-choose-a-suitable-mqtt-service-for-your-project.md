@@ -1,6 +1,6 @@
 ## Introduction
 
-Suppose you are involved in planning, developing, or managing an IoT application that uses MQTT protocol on the public cloud. In that case, you need to consider the best option for your specific use case and requirements. Serverless and Hosting MQTT services are two typical cloud-based MQTT services. Both provide a managed [MQTT broker](https://www.emqx.io/) but differ in their architecture, scalability, security, pricing models, data integration, and so on.
+Suppose you are involved in planning, developing, or managing an IoT application that uses MQTT protocol on the public cloud. In that case, you need to consider the best option for your specific use case and requirements. Serverless and Hosting MQTT services are two typical cloud-based MQTT services. Both provide a managed MQTT Broker but differ in their architecture, scalability, security, pricing models, data integration, and so on.
 
 In this article, we will compare these two services based on the above aspects to help you determine which service best fits your project.
 

@@ -20,7 +20,7 @@
 
 >要想对 MQTT 5.0 的特性进行使用和测试，需要 MQTTX v1.7.0 与支持 MQTT 5.0 的 MQTT Broker 配合使用。
 >
->[云原生分布式 MQTT 消息服务器 EMQX](https://www.emqx.io/zh) 从 3.0 版本开始支持 MQTT 5.0 协议，是开源社区中第一个支持该协议规范的消息服务器，并且完全兼容 MQTT 3.1 和 3.1.1 协议。使用 MQTTX 连接到 EMQX，就可以快速使用和测试 MQTT 5.0 的功能特性。
+>[云原生分布式 MQTT 消息服务器 EMQX](https://www.emqx.com/zh/products/emqx) 从 3.0 版本开始支持 MQTT 5.0 协议，是开源社区中第一个支持该协议规范的消息服务器，并且完全兼容 MQTT 3.1 和 3.1.1 协议。使用 MQTTX 连接到 EMQX，就可以快速使用和测试 MQTT 5.0 的功能特性。
 
 ### 支持 MQTT 5.0 用户属性配置
 

@@ -1,4 +1,4 @@
-The [MQTT Broker](https://www.emqx.io/) plays a crucial role in facilitating messaging between IoT devices, making it a key component in IoT applications. As such, selecting the appropriate MQTT Broker serves as the initial and most critical step in building IoT applications. This article outlines general selection considerations and potential concerns based on typical IoT project requirements and scenarios. By delving into these factors, readers will understand how to choose an MQTT Broker that aligns with their unique needs and requirements.
+The MQTT Broker plays a crucial role in facilitating messaging between IoT devices, making it a key component in IoT applications. As such, selecting the appropriate MQTT Broker serves as the initial and most critical step in building IoT applications. This article outlines general selection considerations and potential concerns based on typical IoT project requirements and scenarios. By delving into these factors, readers will understand how to choose an MQTT Broker that aligns with their unique needs and requirements.
 
 ## Identify the Requirements of Your Project
 

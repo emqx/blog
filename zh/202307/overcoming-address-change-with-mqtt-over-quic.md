@@ -180,7 +180,7 @@ MQTT over QUIC 作为一种强大的解决方案，成功地克服了这些挑�
 
 通过逐步演示，我们展示了 MQTT over QUIC 在处理客户端地址迁移方面的高效性。通过使用 MQTT over QUIC，开发者和组织能够显著提升基于 MQTT 的系统的可靠性、可扩展性和整体性能。
 
-随着物联网应用在动态网络环境中不断发展，MQTT over QUIC 凭借其无缝处理地址迁移的能力，成为一种极具价值的协议选择。作为首个支持 MQTT over QUIC 的 MQTT Broker，[EMQX](https://www.emqx.io/) 将致力于 QUIC 协议的标准化与普及。我们将有望利用 QUIC 协议解决更多网络相关问题，并在不断扩展的物联网世界中实现无缝通信。
+随着物联网应用在动态网络环境中不断发展，MQTT over QUIC 凭借其无缝处理地址迁移的能力，成为一种极具价值的协议选择。作为首个支持 MQTT over QUIC 的 MQTT Broker，[EMQX](https://www.emqx.com/zh/products/emqx) 将致力于 QUIC 协议的标准化与普及。我们将有望利用 QUIC 协议解决更多网络相关问题，并在不断扩展的物联网世界中实现无缝通信。
 
 
 

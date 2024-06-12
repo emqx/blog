@@ -34,7 +34,7 @@ Clean Session 是用来控制会话状态生命周期的标志位，为 `true` �
 
 > **注意：** 持久会话能被恢复的前提是客户端使用固定的 Client ID 再次连接，如果 Client ID 是动态的，那么连接成功后将会创建一个新的持久会话。
 
-如下为[开源 MQTT 服务器 EMQX](https://www.emqx.io/zh) 的 Dashboard，可以看到图中的连接虽然是断开状态，但是因为它是持久会话，所以仍然能被查看到，并且可以在 Dashboard 中手动清除该会话。
+如下为[开源 MQTT 服务器 EMQX](https://github.com/emqx/emqx) 的 Dashboard，可以看到图中的连接虽然是断开状态，但是因为它是持久会话，所以仍然能被查看到，并且可以在 Dashboard 中手动清除该会话。
 
 ![MQTT 持久会话](https://assets.emqx.com/images/f5d591b3a7884526efcf595cae23bdbd.png)
 

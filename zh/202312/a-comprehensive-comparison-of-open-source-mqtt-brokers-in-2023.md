@@ -42,15 +42,13 @@
 
 ### EMQX
 
-[EMQX](https://www.emqx.io/) 是业界领先的 MQTT Broker，深受开发者喜爱，目前在 GitHub 上已获得超过 12k 个 Star。EMQX 项目始于 2012 年，遵循 Apache 2.0 开源协议。它基于 Erlang/OTP 开发，这是一种能够构建大规模可扩展软实时系统的编程语言。
+[EMQX](https://github.com/emqx/emqx) 是业界领先的 MQTT Broker，深受开发者喜爱，目前在 GitHub 上已获得超过 12k 个 Star。EMQX 项目始于 2012 年，遵循 Apache 2.0 开源协议。它基于 Erlang/OTP 开发，这是一种能够构建大规模可扩展软实时系统的编程语言。
 
 EMQX 是全球最具扩展性的 MQTT Broker，支持 MQTT 5.0、MQTT-SN 和 MQTT over QUIC 等协议和其他先进功能。它采用无主集群架构，实现了高可用性和水平扩展性。自 5.0 版本开始，EMQX 能够在一个由 23 个节点组成的集群中创建高达 1 亿个并发 MQTT 连接。
 
 ![MQTT Cluster](https://assets.emqx.com/images/9abfe5ee5df4f1c544915f5e4605b253.png)
 
 EMQX 是 MQTT Broker 的领导者，提供了丰富的企业级功能、数据集成、云托管服务，以及来自[ ](https://www.emqx.com/en)EMQ 团队的专业支持。多年来，EMQX 凭借其卓越的性能、可靠性和可扩展性，赢得了众多大型企业、创业公司和个人开发者的青睐。EMQX 被广泛应用于各个行业的重要业务领域，如物联网、工业物联网、网联汽车、制造业和电信行业等。
-
-官网：[https://www.emqx.io/](https://www.emqx.io/) 
 
 GitHub：[https://github.com/emqx/emqx](https://github.com/emqx/emqx)
 

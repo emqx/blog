@@ -35,7 +35,7 @@ Kafka 作为一个可靠的流数据处理平台，能够有效地促进企业�
 
 ### EMQX Kafka 数据集成
 
-[EMQX](https://www.emqx.io/zh) 是一款流行的 [MQTT Broker](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison)，通过其内置的 Kafka 数据集成功能，能够实现与 Kafka 的无缝集成。作为 MQTT 和 Kafka 之间的桥梁，EMQX 实现了这两者之间的流畅通信。
+[EMQX](https://www.emqx.com/zh/products/emqx) 是一款流行的 [MQTT Broker](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison)，通过其内置的 Kafka 数据集成功能，能够实现与 Kafka 的无缝集成。作为 MQTT 和 Kafka 之间的桥梁，EMQX 实现了这两者之间的流畅通信。
 
 这种集成使得可以以生产者（向 Kafka 发送消息）和消费者（从 Kafka 接收消息）两种角色创建数据桥接。EMQX 允许用户以这两种角色中的任意一种建立数据桥接。EMQX 具有双向数据传输能力，为架构设计提供了很大的灵活性。此外，它还具有低延迟和高吞吐量的特点，保证了数据桥接操作的高效性和可靠性。
 

@@ -69,7 +69,7 @@ MQTT 专为物联网场景而设计，在时间序列数据中扮演着关键角
 
 ## EMQX 如何实现时序数据库与 MQTT 的轻松集成
 
-[EMQX](https://www.emqx.io/) 是一款全球领先的[ MQTT Broker](https://www.emqx.com/zh/mqtt/public-mqtt5-broker)，它能够与 Timescale、InfluxDB、Apache IoTDB 等多种时序数据库无缝集成，实现与各种物联网框架和工具的兼容。这种集成极大地促进了工业物联网设备与时序数据库之间的顺畅数据流动，优化了数据处理流程，简化了工业物联网数据管理架构。
+[EMQX](https://www.emqx.com/zh/products/emqx) 是一款全球领先的[ MQTT Broker](https://www.emqx.com/zh/mqtt/public-mqtt5-broker)，它能够与 Timescale、InfluxDB、Apache IoTDB 等多种时序数据库无缝集成，实现与各种物联网框架和工具的兼容。这种集成极大地促进了工业物联网设备与时序数据库之间的顺畅数据流动，优化了数据处理流程，简化了工业物联网数据管理架构。
 
 ![时序数据库与 MQTT 的方便集成](https://assets.emqx.com/images/5b34d4ed43c44eb0c9c379a13c1a9686.png)
 

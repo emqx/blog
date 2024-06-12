@@ -1,4 +1,4 @@
-4 月，[EMQX 开源版](https://www.emqx.io/zh)发布了 v5.0.22、v5.0.23、v5.0.24 三个版本，简化了多个配置项，新增 CRL、OCSP Stapling 支持。[EMQX 企业版](https://www.emqx.com/zh/products/emqx)发布了 v4.4.17 和 v4.4.18，提升了规则数量较多时规则引擎的性能。除此之外，还修复了多个已知错误。
+4 月，[EMQX 开源版](https://github.com/emqx/emqx)发布了 v5.0.22、v5.0.23、v5.0.24 三个版本，简化了多个配置项，新增 CRL、OCSP Stapling 支持。[EMQX 企业版](https://www.emqx.com/zh/products/emqx)发布了 v4.4.17 和 v4.4.18，提升了规则数量较多时规则引擎的性能。除此之外，还修复了多个已知错误。
 
 [EMQX Cloud](https://www.emqx.com/zh/cloud) 本月发布了 [BYOC 版本](https://www.emqx.com/zh/cloud/byoc)，为用户提供更加强大的数据合规与安全保障。云原生团队则发布了一个可将 EMQX 集群数据导出为 Prometheus 采集格式的工具：EMQX Exporter。
 

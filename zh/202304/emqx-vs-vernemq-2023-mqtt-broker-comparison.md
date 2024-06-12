@@ -1,6 +1,6 @@
 ## 引言
 
-[EMQX](https://www.emqx.io/zh) 和 [VerneMQ](https://vernemq.com/) 都是用 Erlang/OTP 开发的高性能、分布式开源 MQTT Broker，以其稳定性、容错性和扩展性著称。
+[EMQX](https://github.com/emqx/emqx) 和 [VerneMQ](https://vernemq.com/) 都是用 Erlang/OTP 开发的高性能、分布式开源 MQTT Broker，以其稳定性、容错性和扩展性著称。
 
 EMQX 是目前全球最受欢迎的 MQTT Broker 之一，而 VerneMQ 项目近年来却没有积极地开发和维护。
 

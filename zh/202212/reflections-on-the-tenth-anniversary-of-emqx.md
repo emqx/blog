@@ -1,4 +1,4 @@
-十年前，在 2012 年 12 月 17 日，源于个人对 Erlang、MQTT 和开源的热爱，[EMQX](https://www.emqx.io/zh) 诞生于一家咖啡馆并作为开源项目在 GitHub 上发布了初次提交。十年后的今天，EMQX 已成长为 Erlang 生态中最具影响力的物联网开源基础软件项目，作为全球最具扩展性的 [MQTT 消息服务器](https://www.emqx.com/zh/mqtt/public-mqtt5-broker)在物联网、工业互联网、车联网等行业的关键业务场景中发挥着重要作用。目前，来自全球 50 多个国家的 20000 余家企业用户，通过 EMQX 连接着超过 1 亿台物联网设备，为自己的物联网平台与应用提供数据支撑。
+十年前，在 2012 年 12 月 17 日，源于个人对 Erlang、MQTT 和开源的热爱，[EMQX](https://github.com/emqx/emqx) 诞生于一家咖啡馆并作为开源项目在 GitHub 上发布了初次提交。十年后的今天，EMQX 已成长为 Erlang 生态中最具影响力的物联网开源基础软件项目，作为全球最具扩展性的 [MQTT 消息服务器](https://www.emqx.com/zh/mqtt/public-mqtt5-broker)在物联网、工业互联网、车联网等行业的关键业务场景中发挥着重要作用。目前，来自全球 50 多个国家的 20000 余家企业用户，通过 EMQX 连接着超过 1 亿台物联网设备，为自己的物联网平台与应用提供数据支撑。
 
 ![EMQX 诞生的咖啡馆](https://assets.emqx.com/images/3c179bf5303b62b1c71005d327977b67.png)
 

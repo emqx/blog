@@ -4,7 +4,7 @@
 
 **发布场景**
 
-使用 MQTT Connect 请求模拟设备与 [MQTT 服务器](https://www.emqx.io/zh)（本文以 EMQX 为例）建立连接，随后使用MQTT Pub Sampler 请求模拟设备发布消息到 MQTT Broker，在 MQTT Pub Sampler 后添加固定定时器模拟定时发布消息。
+使用 MQTT Connect 请求模拟设备与 MQTT 服务器（本文以 EMQX 为例）建立连接，随后使用MQTT Pub Sampler 请求模拟设备发布消息到 MQTT Broker，在 MQTT Pub Sampler 后添加固定定时器模拟定时发布消息。
 
 **订阅发布场景**
 

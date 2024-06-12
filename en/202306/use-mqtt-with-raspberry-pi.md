@@ -2,7 +2,7 @@
 
 [Raspberry Pi](https://www.raspberrypi.org/) is a small single-board computer based on ARM and developed by the Raspberry Pi Foundation in the United Kingdom. This board provides USB interfaces and Ethernet interfaces can connect the keyboard, mouse, and networking cable. This board has the basic functions of PC and Raspberry Pi integrates Wi-Fi, Bluetooth, and a large number of GPIO, and is widely used in teaching, family entertainment, IoT, etc.
 
-In this project, we will use Python to write a simple [MQTT client](https://www.emqx.com/en/blog/mqtt-client-tools) on Raspberry Pi and implement connection, subscription, messaging, and other functions between this client and [MQTT broker](https://www.emqx.io/).
+In this project, we will use Python to write a simple [MQTT client](https://www.emqx.com/en/blog/mqtt-client-tools) on Raspberry Pi and implement connection, subscription, messaging, and other functions between this client and MQTT Broker.
 
 ## Raspberry Pi MQTT Project Preparation
 

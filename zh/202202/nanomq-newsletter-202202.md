@@ -139,7 +139,7 @@ nanomq conn start --url "mqtt-tcp://broker.emqx.io:1883" -C 10000 -i 10 -k 60
 
 ## 共享订阅
 
-共享订阅是 [MQTT 5.0](https://www.emqx.com/zh/blog/introduction-to-mqtt-5) 协议引入的新特性，但 [EMQX](https://www.emqx.io/zh) 在 [MQTT](https://www.emqx.com/zh/mqtt-guide) 3.1.1 中也已经实现。这相当于是订阅端的[负载均衡](https://www.emqx.com/zh/blog/mqtt-broker-clustering-part-2-sticky-session-load-balancing)功能，主要目的是解决当消费能力不足时直接增加订阅节点，从而导致产生大量重复消息的问题。NanoMQ 也在 MQTT 3.1.1 中支持了共享订阅，但目前只支持 Round-robin 和 Random 的分发均衡方式。
+共享订阅是 [MQTT 5.0](https://www.emqx.com/zh/blog/introduction-to-mqtt-5) 协议引入的新特性，但 [EMQX](https://www.emqx.com/zh/products/emqx) 在 [MQTT](https://www.emqx.com/zh/mqtt-guide) 3.1.1 中也已经实现。这相当于是订阅端的[负载均衡](https://www.emqx.com/zh/blog/mqtt-broker-clustering-part-2-sticky-session-load-balancing)功能，主要目的是解决当消费能力不足时直接增加订阅节点，从而导致产生大量重复消息的问题。NanoMQ 也在 MQTT 3.1.1 中支持了共享订阅，但目前只支持 Round-robin 和 Random 的分发均衡方式。
 
 ## 移除 C++ 模块
 

@@ -2,7 +2,7 @@
 
 [MQTT](https://mqtt.org/) is a lightweight Internet of Things (IoT) message transmission protocol based on publish/subscribe mode. It can provide a real-time and reliable message service for networked devices with very less code and smaller bandwidth. It is widely used in IoT, mobile Internet, intelligent hardware, IoV, power and energy industries, etc.
 
-This article mainly introduces how to use MQTT in the Flask project, and implement the connection, subscription, messaging, unsubscribing and other functions between the  [MQTT client](https://www.emqx.com/en/blog/introduction-to-the-commonly-used-mqtt-client-library) and [MQTT broker](https://www.emqx.io/).
+This article mainly introduces how to use MQTT in the Flask project, and implement the connection, subscription, messaging, unsubscribing and other functions between the  [MQTT client](https://www.emqx.com/en/blog/introduction-to-the-commonly-used-mqtt-client-library) and MQTT Broker.
 
 We will use the [Flask-MQTT](https://flask-mqtt.readthedocs.io/en/latest/index.html) client library, which is a Flask extension and can be regarded as a decorator of [paho-mqtt](https://www.eclipse.org/paho/clients/python/) to simplify the MQTT integration in Flask applications.
 

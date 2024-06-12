@@ -30,7 +30,7 @@ MongoDB 具有一些独特的优势：
 
 ## 利用 EMQX 实现 MongoDB 与 MQTT 的轻松集成
 
-[EMQX](https://www.emqx.io/) 是一款全球领先的[ MQTT Broker](https://www.emqx.com/zh/mqtt/public-mqtt5-broker)，它提供开箱即用的功能与 MongoDB 进行无缝集成，各类设备事件与消息数据的更新和存储，允许用户快速的实现各类业务的开发。
+[EMQX](https://www.emqx.com/zh/products/emqx) 是一款全球领先的[ MQTT Broker](https://www.emqx.com/zh/mqtt/public-mqtt5-broker)，它提供开箱即用的功能与 MongoDB 进行无缝集成，各类设备事件与消息数据的更新和存储，允许用户快速的实现各类业务的开发。
 
 <section class="promotion">
     <div>

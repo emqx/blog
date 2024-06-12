@@ -24,11 +24,11 @@
 
 > 了解更多关于 MQTT 的信息：[物联网首选协议，关于 MQTT 你需要了解这些](https://www.emqx.com/zh/blog/what-is-the-mqtt-protocol)。
 
-使用 MQTT 协议连接海量物联网设备需要 MQTT 服务器这一关键组件。下文的方案设计中我们将采用大规模分布式物联网 [MQTT 消息服务器 EMQX](https://www.emqx.io/zh)，实现海量物联网设备的高效可靠连接以及消息与事件流数据的实时处理分发。
+使用 MQTT 协议连接海量物联网设备需要 MQTT 服务器这一关键组件。下文的方案设计中我们将采用大规模分布式物联网 [MQTT 消息服务器 EMQX](https://www.emqx.com/zh/products/emqx)，实现海量物联网设备的高效可靠连接以及消息与事件流数据的实时处理分发。
 
 > 全球最具可扩展性的大规模分布式物联网 MQTT 消息服务器
 >
-> 点击了解：[EMQX](https://www.emqx.io/zh) 
+> 点击了解：[EMQX](https://www.emqx.com/zh/products/emqx) 
 
 之后，我们就可以使用 MQTT 客户端来连接 MQTT 服务器，实现与物联网设备的通信。本文中采用的是开源的跨平台 MQTT 客户端 [MQTTX](https://mqttx.app/zh)，它包含桌面、命令行和 Web 端的应用，可以轻松实现与 MQTT 服务器的连接测试，帮助开发者快速开发和调试 MQTT 服务及应用。
 

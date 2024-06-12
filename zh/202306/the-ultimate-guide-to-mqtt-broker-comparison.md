@@ -42,7 +42,7 @@ MQTT Broker 架构可以是集中式的，也可以是分布式的。在集中�
 
 ### EMQX
 
-[EMQX](https://www.emqx.io/zh) 是目前物联网应用中最具扩展性的 MQTT Broker。它能够以亚毫秒级的延迟在一秒钟内处理百万级的 MQTT 消息，并支持在一个集群内连接高达 1 亿个客户端进行消息传输。EMQX 兼容 MQTT 5.0 和 3.x 版本。它是分布式物联网网络的理想选择，可以在 Microsoft Azure、Amazon Web Services 和 Google Cloud 等云上运行。EMQX 支持 MQTT over TLS/SSL，并支持多种认证机制，如 PSK、JWT 和 X.5093。与 Mosquitto 不同，EMQX 支持通过 CLI、HTTP API 和 Dashboard 进行集群管理。
+[EMQX](https://github.com/emqx/emqx) 是目前物联网应用中最具扩展性的 MQTT Broker。它能够以亚毫秒级的延迟在一秒钟内处理百万级的 MQTT 消息，并支持在一个集群内连接高达 1 亿个客户端进行消息传输。EMQX 兼容 MQTT 5.0 和 3.x 版本。它是分布式物联网网络的理想选择，可以在 Microsoft Azure、Amazon Web Services 和 Google Cloud 等云上运行。EMQX 支持 MQTT over TLS/SSL，并支持多种认证机制，如 PSK、JWT 和 X.5093。与 Mosquitto 不同，EMQX 支持通过 CLI、HTTP API 和 Dashboard 进行集群管理。
 
 ### Mosquitto
 
@@ -162,7 +162,7 @@ MQTT Broker 架构可以是集中式的，也可以是分布式的。在集中�
 
 ## EMQX：全球最具扩展性的 MQTT Broker
 
-[EMQX](https://www.emqx.io/zh) 是全球最受欢迎的 MQTT Broker 之一，在 [GitHub](https://github.com/emqx/emqx) 上拥有 11.5k Stars。EMQX 项目于 2012 年启动，采用 Apache 2.0 协议开源。EMQX 是用 Erlang/OTP 编写的，这是一种专为构建大规模可扩展软实时系统而设计的编程语言。
+[EMQX](https://github.com/emqx/emqx) 是全球最受欢迎的 MQTT Broker 之一，在 [GitHub](https://github.com/emqx/emqx) 上拥有 11.5k Stars。EMQX 项目于 2012 年启动，采用 Apache 2.0 协议开源。EMQX 是用 Erlang/OTP 编写的，这是一种专为构建大规模可扩展软实时系统而设计的编程语言。
 
 EMQX 是全球最具扩展性的 MQTT Broker，支持 MQTT 5.0、MQTT-SN 和 [MQTT over QUIC](https://www.emqx.com/zh/blog/mqtt-over-quic) 等先进的功能。它支持无主集群架构，保证了高可用性和水平扩展性。EMQX 5.0 是最新的版本，能够在由 23 个节点组成的单一集群上，支持高达 1 亿的 MQTT 并发连接。
 
