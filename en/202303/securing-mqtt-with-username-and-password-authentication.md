@@ -8,7 +8,7 @@ In this article, we explain how authentication works in MQTT, what security risk
 
 Authentication in MQTT refers to the process of verifying the identity of a client or a broker before allowing them to establish a connection or interact with the MQTT network. It is only about the right to connect to the broker and is separate from *authorization*, which determines which topics a client is allowed to publish and subscribe to. Authorization will be discussed in a separate article in this series.  
 
-The [MQTT broker](https://www.emqx.io/) can authenticate clients mainly in following ways:
+The MQTT Broker can authenticate clients mainly in following ways:
 
 - **Password-based authentication**: The broker verifies that the client has the correct connecting credentials: username, client ID, and password. The broker can verify either the username or client ID against the password. 
 - **Enhanced authentication (SCRAM)**: This authenticates the clients using a back-and-forth challenge based mechanism known as **S**alted **C**hallenge **R**esponse **A**uthentication **M**echanism.

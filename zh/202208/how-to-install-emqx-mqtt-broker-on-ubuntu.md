@@ -1,4 +1,4 @@
-[EMQX](https://www.emqx.com/zh/products/emqx) 是一款全球下载量超千万的大规模分布式物联网 [MQTT 服务器](https://www.emqx.io/zh)，自 2013 年在 GitHub 发布开源版本以来，获得了来自 50 多个国家和地区的 20000 余家企业用户的广泛认可，累计连接物联网关键设备超过 1 亿台。
+[EMQX](https://www.emqx.com/zh/products/emqx) 是一款全球下载量超千万的大规模分布式物联网 MQTT 服务器，自 2013 年在 GitHub 发布开源版本以来，获得了来自 50 多个国家和地区的 20000 余家企业用户的广泛认可，累计连接物联网关键设备超过 1 亿台。
 
 不久前，[EMQX 发布了 5.0 版本](https://www.emqx.com/zh/blog/emqx-v-5-0-released)，该版本在消息传输的可靠性、产品体验的易用性等方面也进行了大幅优化升级，是 MQTT 领域的一个里程碑式的成果。在发布前性能测试中，EMQX 团队通过一个 23 节点的集群达成了 [1 亿 MQTT 连接](https://www.emqx.com/zh/blog/how-emqx-5-0-achieves-100-million-mqtt-connections)+每秒 100 万消息吞吐，这使得 EMQX 5.0 成为目前为止全球最具扩展性的 MQTT 服务器。
 

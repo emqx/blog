@@ -16,7 +16,7 @@ Neuron 2.2.0 版本中发布了 [Beckhoff ADS 插件](https://neugates.io/docs/e
 
 ### 使用 EMQX 处理 MQTT 消息
 
-[EMQX](https://www.emqx.io/zh) 是一款大规模可弹性伸缩的云原生分布式物联网 [MQTT 消息服务器](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison)。作为全球最具扩展性的 MQTT 消息服务器，EMQX 提供了高效可靠海量物联网设备连接，能够高性能实时移动与处理消息和事件流数据，帮助用户快速构建关键业务的物联网平台与应用。
+[EMQX](https://www.emqx.com/zh/products/emqx) 是一款大规模可弹性伸缩的云原生分布式物联网 [MQTT 消息服务器](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison)。作为全球最具扩展性的 MQTT 消息服务器，EMQX 提供了高效可靠海量物联网设备连接，能够高性能实时移动与处理消息和事件流数据，帮助用户快速构建关键业务的物联网平台与应用。
 
 EMQX 在桥接架构中的作为 MQTT broker，而 Neuron 则收集来自 TwinCAT PLC 的数据并通过 MQTT 消息将数据传输到代理。在从 Neuron 接收 MQTT 消息后，EMQX 将转发数据或执行进一步的处理。
 

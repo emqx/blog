@@ -20,7 +20,7 @@ A good MQTT client tool should possess the following key features.
 
 ## Prerequisite: Prepare an MQTT Broker
 
-Before diving into the MQTT desktop tools, we need an [MQTT broker](https://www.emqx.io/) to communicate and test. We choose the free public MQTT broker available on `broker.emqx.io`.
+Before diving into the MQTT desktop tools, we need an MQTT Broker to communicate and test. We choose the free public MQTT broker available on `broker.emqx.io`.
 
 > **MQTT Broker Info**
 >

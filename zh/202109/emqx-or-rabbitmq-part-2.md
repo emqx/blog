@@ -1,4 +1,4 @@
-在[上篇文章](https://www.emqx.com/zh/blog/emqx-or-rabbitmq-part-1)中，我们采用相同的硬件资源分别对 [MQTT 消息服务器 EMQX](https://www.emqx.io/zh) 和 [RabbitMQ](https://www.rabbitmq.com) 进行了压力测试。结果表明：在「多对一」 场景中，EMQX 和 RabbitMQ 相比并没有太大差别；而在「一对多」场景中，RabbitMQ 则较 EMQX 产生了较为明显的差距。
+在[上篇文章](https://www.emqx.com/zh/blog/emqx-or-rabbitmq-part-1)中，我们采用相同的硬件资源分别对 [MQTT 消息服务器 EMQX](https://www.emqx.com/zh/products/emqx) 和 [RabbitMQ](https://www.rabbitmq.com) 进行了压力测试。结果表明：在「多对一」 场景中，EMQX 和 RabbitMQ 相比并没有太大差别；而在「一对多」场景中，RabbitMQ 则较 EMQX 产生了较为明显的差距。
 
 本期文章中我们将对这一结果进行进一步的解析。
 

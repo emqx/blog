@@ -71,7 +71,7 @@ MQTT 主要有以下优势：
 
 Modbus 数据源将数据发送到 [MQTT Broker](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison)，MQTT Broker 接收并转发。实现此过程需要两个组件：一是边缘端将 Modbus 协议转换为 MQTT 并发送到 MQTT Broker；二是需要一个处理 MQTT 消息的 MQTT Broker。
 
-EMQ 旗下的 [Neuron](https://neugates.io/zh) 可以将 Modbus 协议转换为 MQTT；[EMQX](https://www.emqx.io/zh) 则可以作为 MQTT Broker 处理海量连接。
+EMQ 旗下的 [Neuron](https://neugates.io/zh) 可以将 Modbus 协议转换为 MQTT；[EMQX](https://www.emqx.com/zh/products/emqx) 则可以作为 MQTT Broker 处理海量连接。
 
 Neuron 是一款现代的[工业物联网](https://www.emqx.com/zh/blog/iiot-explained-examples-technologies-benefits-and-challenges)连接服务器，可以连接多种使用标准协议或者设备专有协议的工业设备，实现了工业物联网平台与各种设备的互联互通。作为一款轻量级的工业协议网关软件，Neuron 可以运行在各种有限资源的物联网边缘硬件设备上，旨在解决以数据为中心的自动化设备数据难以统一访问的问题，为智能制造提供基础支撑。
 
@@ -267,7 +267,7 @@ $ docker run -d --name neuron -p 7000:7000 --privileged=true --restart=always em
 
 ![石油生产数据采集](https://assets.emqx.com/images/5c5a23f0474e9305c1f4d0026176f01b.png)
 
-结合 [Neuron](https://neugates.io/zh) 和 [EMQX](https://www.emqx.io/zh)、[eKuiper](https://ekuiper.org/zh)、[EMQX-ECP](https://www.emqx.com/zh/products/emqx-ecp) 等其他 EMQ 产品的整体解决方案可以为石油行业带来以下好处：
+结合 [Neuron](https://neugates.io/zh) 和 [EMQX](https://www.emqx.com/zh/products/emqx)、[eKuiper](https://ekuiper.org/zh)、[EMQX-ECP](https://www.emqx.com/zh/products/emqx-ecp) 等其他 EMQ 产品的整体解决方案可以为石油行业带来以下好处：
 
 - 轻前端、重后端的系统架构，降低现场设备与系统运维成本。
 - 基于物联网协议作为数据采集与传输的主要方式，实现了生产数据低时延实时上报，提高业务响应能力。

@@ -1,6 +1,6 @@
 ## 引言
 
-作为全球领先的开源分布式 [MQTT Broker，EMQX](https://www.emqx.io/zh) 在 5.0 版本中引入了 [MQTT over QUIC](https://www.emqx.com/zh/blog/getting-started-with-mqtt-over-quic-from-scratch)，将 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 协议的优势与 [QUIC](https://www.emqx.com/zh/blog/quic-protocol-the-features-use-cases-and-impact-for-iot-iov) 的特性相结合。通过充分利用 QUIC 协议低连接开销和多路复用的特点，MQTT over QUIC 为弱网络环境和不规则网络中的用户提供了一种非常有前景的解决方案。它能够应对诸如在山区或隧道等恶劣环境中运行的网联车辆等物联网场景中的连接中断和连接建立缓慢等问题。云原生技术的发展，让越来越多的用户选择在 Kubernetes 上部署 EMQX 集群，享受快速创建和便捷管理的优势。本文将介绍如何在 Kubernetes 上部署 EMQX 集群并开启 MQTT over QUIC 功能。
+作为全球领先的开源分布式 [MQTT Broker，EMQX](https://github.com/emqx/emqx) 在 5.0 版本中引入了 [MQTT over QUIC](https://www.emqx.com/zh/blog/getting-started-with-mqtt-over-quic-from-scratch)，将 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 协议的优势与 [QUIC](https://www.emqx.com/zh/blog/quic-protocol-the-features-use-cases-and-impact-for-iot-iov) 的特性相结合。通过充分利用 QUIC 协议低连接开销和多路复用的特点，MQTT over QUIC 为弱网络环境和不规则网络中的用户提供了一种非常有前景的解决方案。它能够应对诸如在山区或隧道等恶劣环境中运行的网联车辆等物联网场景中的连接中断和连接建立缓慢等问题。云原生技术的发展，让越来越多的用户选择在 Kubernetes 上部署 EMQX 集群，享受快速创建和便捷管理的优势。本文将介绍如何在 Kubernetes 上部署 EMQX 集群并开启 MQTT over QUIC 功能。
 
 ## 暴露 EMQX 服务
 

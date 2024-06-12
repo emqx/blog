@@ -1,6 +1,6 @@
 ## 前言
 
-作为一款全球下载量超千万的[大规模分布式物联网 MQTT 服务器](https://www.emqx.io/zh)，最新发布的 EMQX 5.0 不仅全球首个达成单集群 1 亿 MQTT 连接支持，也是首个将 QUIC 引入 MQTT 的开创性产品。如今，EMQX 在各个行业为高可靠、高性能的物联网实时数据移动、处理和集成提供着动力，助力企业构建关键业务的 IoT 应用。
+作为一款全球下载量超千万的[大规模分布式物联网 MQTT 服务器](https://github.com/emqx/emqx)，最新发布的 EMQX 5.0 不仅全球首个达成单集群 1 亿 MQTT 连接支持，也是首个将 QUIC 引入 MQTT 的开创性产品。如今，EMQX 在各个行业为高可靠、高性能的物联网实时数据移动、处理和集成提供着动力，助力企业构建关键业务的 IoT 应用。
 
 > EMQX GitHub: [https://github.com/emqx/emqx](https://github.com/emqx/emqx) 
 

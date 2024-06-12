@@ -8,7 +8,7 @@ This blog post will explore the top 3 MQTT WebSocket client tools highly recomme
 
 ## Free Public MQTT Broker
 
-Before diving into the MQTT WebSocket tools, we need an [MQTT broker](https://www.emqx.io/) supporting WebSocket to communicate and test. We choose the free public MQTT broker available on `broker.emqx.io`.
+Before diving into the MQTT WebSocket tools, we need an MQTT Broker supporting WebSocket to communicate and test. We choose the free public MQTT broker available on `broker.emqx.io`.
 
 >**MQTT Broker Info**
 >

@@ -1,6 +1,6 @@
 ## 引言
 
-[EMQX](https://www.emqx.io/zh) 和 [NanoMQ](https://nanomq.io/zh) 都是由全球领先的开源物联网数据基础设施软件供应商 EMQ 开发的开源 MQTT Broker。
+[EMQX](https://github.com/emqx/emqx) 和 [NanoMQ](https://nanomq.io/zh) 都是由全球领先的开源物联网数据基础设施软件供应商 EMQ 开发的开源 MQTT Broker。
 
 EMQX 是一个高度可扩展的大规模分布式 MQTT Broker，能够将百万级的物联网设备连接到云端。NanoMQ 则是专为物联网边缘场景设计的轻量级 Broker。
 

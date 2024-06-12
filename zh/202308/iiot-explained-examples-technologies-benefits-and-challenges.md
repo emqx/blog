@@ -138,7 +138,7 @@
 
 EMQ 提供的轻量级工业协议网关软件 [Neuron](https://www.emqx.com/zh/products/neuronex)，专为工业数据运营和数据驱动的自动化而设计，同时能够与业界领先的 EMQX MQTT Broker 无缝集成。Neuron 为工业物联网带来了多方面的优势，它可以简化连接，增强数据集成，并支持实时通信和分析。
 
-如果您正在管理工业物联网，[EMQX](https://www.emqx.io/) 和 [Neuron](https://www.emqx.com/zh/products/neuronex) 可以在以下方面提供帮助：
+如果您正在管理工业物联网，[EMQX](https://www.emqx.com/zh/products/emqx) 和 [Neuron](https://www.emqx.com/zh/products/neuronex) 可以在以下方面提供帮助：
 
 1. **IT 连接性**：EMQX Broker 拥有强大的数据桥接能力，可以轻松地与超过 40 种云服务和企业系统集成。您可以在不同的应用之间实现数据的即时访问，无需花费时间和精力开发定制的桥接方案。EMQX 支持与 MySQL、PostgreSQL、MongoDB 等主流数据库，以及 Redis、Oracle、SAP、Kafka 等流行技术的无缝对接。这些丰富的连接器为您提供了高效的 IT 连接性和数据交换能力，助力您构建工业物联网生态系统。
 

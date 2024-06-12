@@ -1,6 +1,6 @@
 ## 引言
 
-[MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 是一种轻量级的消息传递协议，适用于物联网应用实现设备间通信。 作为一款主流的[开源 MQTT Broker，EMQX](https://www.emqx.io/zh) 能够提供高扩展性、可靠性和安全性的 MQTT 消息传递服务。
+[MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 是一种轻量级的消息传递协议，适用于物联网应用实现设备间通信。 作为一款主流的[开源 MQTT Broker，EMQX](https://github.com/emqx/emqx) 能够提供高扩展性、可靠性和安全性的 MQTT 消息传递服务。
 
 借助广泛应用的基础设施即代码（IaC）工具 Terraform，您可以轻松在 GCP 上自动部署 EMQX MQTT Broker，从而简化和规范 MQTT 基础设施的设置和管理。
 

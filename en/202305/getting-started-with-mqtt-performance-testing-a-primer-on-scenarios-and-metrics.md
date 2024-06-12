@@ -25,7 +25,7 @@ Test scenarios can be subdivided into the two basic dimensions of connection and
 
 ### Concurrent Connection Testing
 
-MQTT connections are long (keep-alive) TCP connections. The client initiates a TCP connection with the [MQTT broker](https://www.emqx.io/), sends an MQTT login request, and then uses heartbeat packets to sustain the connection. In high-concurrency scenarios, establishing and maintaining long MQTT connections consumes significant resources for the broker. Through performance testing, we can measure how many concurrent connections the MQTT broker can support under limited resources.
+MQTT connections are long (keep-alive) TCP connections. The client initiates a TCP connection with the MQTT Broker, sends an MQTT login request, and then uses heartbeat packets to sustain the connection. In high-concurrency scenarios, establishing and maintaining long MQTT connections consumes significant resources for the broker. Through performance testing, we can measure how many concurrent connections the MQTT broker can support under limited resources.
 
 On the other hand, the higher the connection rate (i.e., the new established connections per second), the greater the computing resources required at the same time. It's important to consider this factor during testing, especially in scenarios where numerous devices may come online simultaneously. This value is crucial for evaluating system capacity and planning accordingly.
 

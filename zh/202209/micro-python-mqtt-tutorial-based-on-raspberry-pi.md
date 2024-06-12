@@ -4,7 +4,7 @@
 
 [MQTT](https://www.emqx.com/zh/mqtt-guide) 是一种基于发布/订阅模式的轻量级物联网消息传输协议 ，可以用极少的代码和带宽为联网设备提供实时可靠的消息服务，它适用于硬件资源有限的设备及带宽有限的网络环境。因此，MQTT 协议广泛应用于物联网、移动互联网、智能硬件、车联网、电力能源等行业。
 
-本文将介绍如何在树莓派上使用 MicroPython 编写简单的 [MQTT 客户端](https://www.emqx.com/zh/mqtt-client-sdk)，并实现该客户端与 [MQTT 服务器](https://www.emqx.io/zh)的连接、订阅、发布等功能。
+本文将介绍如何在树莓派上使用 MicroPython 编写简单的 [MQTT 客户端](https://www.emqx.com/zh/mqtt-client-sdk)，并实现该客户端与 MQTT 服务器的连接、订阅、发布等功能。
 
 
 

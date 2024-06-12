@@ -137,7 +137,7 @@ Mosquitto 的配置文件采用键值格式，使得配置过程很直观。它�
 
 ## 桥接到 EMQX Cloud
 
-[EMQX Cloud](https://www.emqx.com/zh/cloud) 是基于开源分布式 MQTT Broker [EMQX ](https://www.emqx.io/zh)构建的高度可扩展的 MQTT 消息服务。我们可以轻松地将物联网边缘的 Mosquitto 或 NanoMQ 桥接至 EMQX Cloud 服务。
+[EMQX Cloud](https://www.emqx.com/zh/cloud) 是基于开源分布式 MQTT Broker [EMQX ](https://github.com/emqx/emqx)构建的高度可扩展的 MQTT 消息服务。我们可以轻松地将物联网边缘的 Mosquitto 或 NanoMQ 桥接至 EMQX Cloud 服务。
 
 ![将 Mosquitto 和 NanoMQ 桥接到 EMQX Cloud](https://assets.emqx.com/images/05b6602329f65d45aa2c87d115e2f51e.png)
 

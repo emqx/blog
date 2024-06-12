@@ -20,7 +20,7 @@
 
 PolarDB-X 是由阿里巴巴自主研发的云原生分布式数据库，是一款基于云架构理念，并同时支持在线事务处理与在线分析处理 (Hybrid Transactional and Analytical Processing, HTAP）的融合型分布式数据库。其具备金融级数据高可用、分布式水平扩展、混合负载、低成本存储和极致弹性等能力，专注解决海量数据存储、超高并发吞吐、大表瓶颈以及复杂计算效率等数据库瓶颈难题。
 
-本文将介绍[开源版 EMQX](https://www.emqx.io/zh) 与 PolarDB-X 打造的集成方案，可以实现关键物联网数据的一站式采集、传输、存储。
+本文将介绍[开源版 EMQX](https://github.com/emqx/emqx) 与 PolarDB-X 打造的集成方案，可以实现关键物联网数据的一站式采集、传输、存储。
 
 ## EMQX+PolarDB-X 集成方案详情
 

@@ -63,7 +63,7 @@ CDR 负责接收来自不同设备和应用的 MQTT 消息，解析和验证数�
 
 ## Sparkplug 规范中的 MQTT Broker
 
-在 Sparkplug 规范中，[MQTT Broker](https://www.emqx.io/zh) 是实现上述 5 个概念不可或缺的组件。
+在 Sparkplug 规范中，MQTT Broker 是实现上述 5 个概念不可或缺的组件。
 
 首先，MQTT Broker 提供了一个发布/订阅解耦的消息传递架构，用于让各种 Sparkplug 主机系统和设备独立运行。
 

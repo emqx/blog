@@ -1,6 +1,6 @@
 在上一篇文章《[MQTT Broker 集群详解（一）：负载均衡](https://www.emqx.com/zh/blog/mqtt-broker-clustering-part-1-load-balancing)》中，我们简单介绍了 MQTT 负载均衡：负载均衡既可以应用于传输层，也可以用于应用层。在本文中，我们将详细介绍应用层负载均衡，其中最有趣的部分：粘性会话（sticky-session）。
 
-本文由两部分组成，第一部分将介绍 MQTT 会话，以及在分布式 [MQTT Broker](https://www.emqx.io/zh) 集群中处理会话面临的挑战；第二部分是通过在 [EMQX 4.3](https://www.emqx.com/zh/products/emqx) 集群前面配置 [HAProxy 2.4](https://www.haproxy.org/) 负载均衡器，带读者亲自体验如何充分利用粘性会话实现负载均衡。
+本文由两部分组成，第一部分将介绍 MQTT 会话，以及在分布式 MQTT Broker 集群中处理会话面临的挑战；第二部分是通过在 [EMQX 4.3](https://www.emqx.com/zh/products/emqx) 集群前面配置 [HAProxy 2.4](https://www.haproxy.org/) 负载均衡器，带读者亲自体验如何充分利用粘性会话实现负载均衡。
 
 
 

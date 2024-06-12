@@ -56,7 +56,7 @@ MQTT 设计了 3 个 QoS 等级：
 
 **特别提醒**
 
-需要注意的是 [MQTT 发布与订阅](https://www.emqx.com/zh/blog/mqtt-5-introduction-to-publish-subscribe-model)操作中的 QoS 代表了不同的含义，发布时的 QoS 表示消息发送到 [MQTT 服务器](https://www.emqx.io/zh) 使用的 QoS 等级，订阅时的 QoS 表示 MQTT Broker 向自己转发消息时可以使用的最大  QoS 等级。需要保障发送与订阅的 QoS 一致，才能确保最终收到的消息是固定的 QoS 等级，否则会出现消费降级的情况。例如：A 发送的消息 QoS 为 2，B 订阅的消息 QoS 为1，则最终接收到消息的 QoS 为 1。 
+需要注意的是 [MQTT 发布与订阅](https://www.emqx.com/zh/blog/mqtt-5-introduction-to-publish-subscribe-model)操作中的 QoS 代表了不同的含义，发布时的 QoS 表示消息发送到 MQTT 服务器 使用的 QoS 等级，订阅时的 QoS 表示 MQTT Broker 向自己转发消息时可以使用的最大  QoS 等级。需要保障发送与订阅的 QoS 一致，才能确保最终收到的消息是固定的 QoS 等级，否则会出现消费降级的情况。例如：A 发送的消息 QoS 为 2，B 订阅的消息 QoS 为1，则最终接收到消息的 QoS 为 1。 
 
 ## EMQX 基于 QoS 等级的消息传输保障
 

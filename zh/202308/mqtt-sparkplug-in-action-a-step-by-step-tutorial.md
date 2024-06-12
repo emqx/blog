@@ -34,7 +34,7 @@
 
 ## 安装 EMQX
 
-请在您的服务器或机器上下载并安装 EMQX MQTT Broker。EMQX 提供开源版，可从官网免费下载。请访问 [https://www.emqx.io/](https://www.emqx.io/) 并按照文档指引进行操作。
+请在您的服务器或机器上下载并安装 EMQX MQTT Broker。EMQX 提供开源版，可从官网免费下载。请访问 [https://www.emqx.com/zh/downloads-and-install/broker](https://www.emqx.com/zh/downloads-and-install/broker) 并按照文档指引进行操作。
 
 ## 配置 EMQX
 

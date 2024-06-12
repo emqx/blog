@@ -39,7 +39,7 @@ PLC 即可编程逻辑控制器，是工业自动化领域的核心设备，广�
 以几个主流厂商为例：
 
 - 西门子已经将 MQTT 客户端功能封装成 PLC 的库文件，通过西门子 S7-1200、S7-1500 可以实现基于 MQTT 3.1.1 协议的数据上报，完成 PLC 与 MQTT 消息服务器的轻松连接。
-- 德国倍福推出了 TF6701 IOT 通讯库，通过 MQTT 协议可以将 PLC 数据直接发往各大公有云 [IoT 平台](https://www.emqx.com/zh/cloud)以及 [MQTT 消息服务器](https://www.emqx.io/zh)；TF6701 同时支持将 PLC 中数据封装成 json 格式，完成数据上报，实现 OT 和 IT 领域的数据格式统一化。
+- 德国倍福推出了 TF6701 IOT 通讯库，通过 MQTT 协议可以将 PLC 数据直接发往各大公有云 [IoT 平台](https://www.emqx.com/zh/cloud)以及 [MQTT 消息服务器](https://www.emqx.com/zh/products/emqx)；TF6701 同时支持将 PLC 中数据封装成 json 格式，完成数据上报，实现 OT 和 IT 领域的数据格式统一化。
 
 ![PLC 集成 MQTT 协议.png](https://assets.emqx.com/images/1b5bb1ab1b62682f468f8e7c6c477095.png)
 
@@ -63,7 +63,7 @@ PLC 即可编程逻辑控制器，是工业自动化领域的核心设备，广�
 
 ### 数据点灵活配置，上报格式更统一
 
-传统的边缘网关数据采集方式，网关设备通过现场总线驱动读取 PLC 寄存器数据，需要根据 PLC 点位数据类型配置数据点参数，然后数据以固定的 json 格式上报 [MQTT 服务器](https://www.emqx.io/zh)。MQTT 与 PLC 融合，可支持在 PLC 中灵活配置数据点，并通过 json 格式数据上报，实现 OT 和 IT 领域的数据格式统一化。
+传统的边缘网关数据采集方式，网关设备通过现场总线驱动读取 PLC 寄存器数据，需要根据 PLC 点位数据类型配置数据点参数，然后数据以固定的 json 格式上报 MQTT 服务器。MQTT 与 PLC 融合，可支持在 PLC 中灵活配置数据点，并通过 json 格式数据上报，实现 OT 和 IT 领域的数据格式统一化。
 
 基于以上优势，使用 MQTT 进行数据采集与数据上云的 PLC 逐渐被广泛应用到各个工业场景中。
 

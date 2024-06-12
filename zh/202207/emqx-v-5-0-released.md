@@ -1,4 +1,4 @@
-近日，全球领先的开源物联网数据基础设施软件供应商 EMQ 映云科技宣布，旗下核心产品开源分布式物联网 [MQTT 消息服务器 EMQX 5.0](https://www.emqx.io/zh) 版本正式发布！
+近日，全球领先的开源物联网数据基础设施软件供应商 EMQ 映云科技宣布，旗下核心产品开源分布式物联网 [MQTT 消息服务器 EMQX 5.0](https://github.com/emqx/emqx) 版本正式发布！
 
 > **EMQX GitHub：**
 > [https://github.com/emqx/emqx](https://github.com/emqx/emqx)

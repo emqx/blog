@@ -25,7 +25,7 @@
 
 1. ChatGPT：用于生成数据模拟脚本。凭借其强大的自然语言处理能力，ChatGPT 可以为 MQTTX 创建精确逼真的模拟脚本。
 2. [MQTTX](https://mqttx.app/zh)：作为一款功能全面的 MQTT 客户端工具，MQTTX 拥有自定义脚本功能，可对设备进行信息发送和接收模拟。
-3. [EMQX](https://www.emqx.io/zh)：大规模分布式物联网 MQTT 消息服务器，可确保模拟数据的稳定传输。
+3. [EMQX](https://github.com/emqx/emqx)：大规模分布式物联网 MQTT 消息服务器，可确保模拟数据的稳定传输。
 
 接下来，我们将指导您进行数据模拟测试。
 

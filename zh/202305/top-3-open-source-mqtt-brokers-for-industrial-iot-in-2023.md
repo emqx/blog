@@ -19,7 +19,7 @@
 
 |                                     | **EMQX**                                    | **Mosquitto**                                            | **NanoMQ**                                      |
 | :---------------------------------- | :------------------------------------------ | :------------------------------------------------------- | :---------------------------------------------- |
-| **Official Website**                | [EMQX](https://www.emqx.io/)                | [Eclipse Mosquitto](https://mosquitto.org/)              | [NanoMQ](https://nanomq.io/)                    |
+| **Official Website**                | [EMQX](https://www.emqx.com/zh)                | [Eclipse Mosquitto](https://mosquitto.org/)              | [NanoMQ](https://nanomq.io/)                    |
 | **GitHub Project**                  | [EMQX GitHub](https://github.com/emqx/emqx) | [Mosquitto GitHub](https://github.com/eclipse/mosquitto) | [NanoMQ GitHub](https://github.com/nanomq/nanomq) |
 | **Project Created**                 | 2012                                        | 2009                                                     | 2020                                            |
 | **License**                         | Apache License 2.0                          | EPL/EDL License                                          | MIT License                                     |
@@ -34,7 +34,7 @@
 
 ## 1. EMQX
 
-[EMQX](https://www.emqx.io/zh) 是一款高度可扩展的分布式 MQTT Broker，适用于企业级的工业物联网部署。它支持 MQTT 5.0、MQTT-SN、SSL/TLS、[MQTT over QUIC](https://www.emqx.com/zh/blog/mqtt-over-quic) 等多种协议。它通过 masterless 集群方式实现了高可用性和水平扩展性。
+[EMQX](https://github.com/emqx/emqx) 是一款高度可扩展的分布式 MQTT Broker，适用于企业级的工业物联网部署。它支持 MQTT 5.0、MQTT-SN、SSL/TLS、[MQTT over QUIC](https://www.emqx.com/zh/blog/mqtt-over-quic) 等多种协议。它通过 masterless 集群方式实现了高可用性和水平扩展性。
 
 凭借在 GitHub 上的 11.5k 个 Star，EMQX 已经成为市场上[最受欢迎的 MQTT Broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) 之一。EMQX 项目于 2012 年启动，采用 Apache 2.0 许可证进行开源。EMQX 由 Erlang/OTP 编写，这是一种能够构建高度可扩展的软实时系统的编程语言。
 
@@ -159,7 +159,7 @@ NanoMQ 具有高度的兼容性和可移植性，只依赖于原生的 POSIX API
 
 ## 结语
 
-通过前文的介绍和对比，我们可以看到，每个 MQTT Broker 都有其独特的优点，适合不同的部署场景。[EMQX](https://www.emqx.io/zh) 具有高扩展性和企业级功能，适合在云端部署。[Mosquitto](https://mosquitto.org/) 和 [NanoMQ](https://nanomq.io/zh) 快速、轻便，适合在工业网关上部署。
+通过前文的介绍和对比，我们可以看到，每个 MQTT Broker 都有其独特的优点，适合不同的部署场景。[EMQX](https://github.com/emqx/emqx) 具有高扩展性和企业级功能，适合在云端部署。[Mosquitto](https://mosquitto.org/) 和 [NanoMQ](https://nanomq.io/zh) 快速、轻便，适合在工业网关上部署。
 
 这三款 MQTT Broker 在工业物联网应用中都扮演着非常重要的角色，它们推动了 UNS 架构的实施，促进了 IT 和 OT 的融合。在具体的工业物联网项目中，您可以根据自己的需求对这些 Broker 进行自由搭配。您可以建立一个高度协同的系统，让这些 MQTT Broker 共同合作，充分发挥它们各自的优势。
 

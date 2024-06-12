@@ -88,7 +88,7 @@ MQTT 提供了三种服务质量（QoS），在不同网络环境下保证消息
 
 - **私有部署**
 
-  [EMQX](https://www.emqx.io/zh) 是最具扩展性的开源 MQTT Broker，适用于物联网、[工业物联网](https://www.emqx.com/zh/blog/iiot-explained-examples-technologies-benefits-and-challenges)和车联网。您可以运行以下 Docker 命令来安装 EMQX。
+  [EMQX](https://github.com/emqx/emqx) 是最具扩展性的开源 MQTT Broker，适用于物联网、[工业物联网](https://www.emqx.com/zh/blog/iiot-explained-examples-technologies-benefits-and-challenges)和车联网。您可以运行以下 Docker 命令来安装 EMQX。
 
   ```
   docker run -d --name emqx -p 1883:1883 -p 8083:8083 -p 8084:8084 -p 8883:8883 -p 18083:18083 emqx/emqx

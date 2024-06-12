@@ -6,7 +6,7 @@ CAN Bus 最初由博世公司在 20 世纪 80 年代为汽车应用而设计。�
 
 CAN Bus 数据能够反映连接设备的性能和状态。然而，由于数据量大、带宽有限以及网络不稳定等因素，收集和处理 CAN Bus 数据可能面临一些挑战。
 
-为了应对这些挑战，可以利用 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 协议，确保在网络状况不佳的情况下及时将车辆数据传输到云端。[EMQX 是一款开源的 MQTT Broker](https://www.emqx.io/zh)，能够搭建可靠且可扩展的 MQTT 基础设施，用来收集 CAN Bus 数据。
+为了应对这些挑战，可以利用 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 协议，确保在网络状况不佳的情况下及时将车辆数据传输到云端。[EMQX 是一款开源的 MQTT Broker](https://github.com/emqx/emqx)，能够搭建可靠且可扩展的 MQTT 基础设施，用来收集 CAN Bus 数据。
 
 ![Collecting CAN bus data](https://assets.emqx.com/images/e8c8c72601898e841855a8efa306d63e.png)
 
@@ -180,7 +180,7 @@ SELECT signal1, signal2 FROM canStream WHERE signal1 > 100
 
 ## 利用 MQTT 采集 CAN Bus 数据
 
-使用 [EMQX](https://www.emqx.io/zh) 这类 MQTT Broker 收集 CAN Bus 数据有以下几个优势：
+使用 [EMQX](https://www.emqx.com/zh/products/emqx) 这类 MQTT Broker 收集 CAN Bus 数据有以下几个优势：
 
 - 降低网络开销：MQTT 采用二进制格式和极简的头部对消息进行编码，可以节省网络带宽，提升数据传输效率。
 - 提升扩展性：单个 MQTT Broker 能够支持上千个并发连接和每秒上百万条消息。这使得可以从多个 CAN Bus 设备进行大规模数据收集，而不会影响性能或可靠性。

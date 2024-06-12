@@ -33,6 +33,6 @@ EMQX Kubernetes Operator 可以帮助用户在 Kubernetes 的环境上快速创�
 EMQX Kubernetes Operator 会采集 EMQX 集群运行的关键指标，对集群运行状态进行实时监控。同时支持与 Prometheus 的无缝对接，可将指标数据导出到 Prometheus 中，与您自己的监控系统集成。EMQX 集群运行状态尽在掌握。
 
  
-作为一款[云原生的分布式 MQTT 消息服务器](https://www.emqx.io/zh)，EMQX 产品的部署和运维体验是 EMQ 团队持续关注和优化的重点之一。EMQX Kubernetes Operator 的正式发布，标志着 EMQX 的产品设计又向云原生理念进一步深入，帮助用户充分享受云计算带来的优势。
+作为一款[云原生的分布式 MQTT 消息服务器](https://www.emqx.com/zh/products/emqx)，EMQX 产品的部署和运维体验是 EMQ 团队持续关注和优化的重点之一。EMQX Kubernetes Operator 的正式发布，标志着 EMQX 的产品设计又向云原生理念进一步深入，帮助用户充分享受云计算带来的优势。
 
 点击项目地址：[https://github.com/emqx/emqx-operator](https://github.com/emqx/emqx-operator) ，访问 GitHub 主页下载试用 EMQX Kubernetes Operator。如果您有任何建议、疑问或反馈，欢迎在 GitHub 上提交 issue。我们期待您与我们一起，成就一个更好的开源产品。

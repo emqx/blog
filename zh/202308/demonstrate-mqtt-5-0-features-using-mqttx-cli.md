@@ -1,6 +1,6 @@
 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 作为目前物联网领域最为流行的通信协议，它的最新版本早已在 2019 年就已经来到了 5.0。与之前的版本相比，5.0 增加了会话过期、原因码、共享订阅、请求响应等更符合现代物联网应用需求的特性，这也让它成为了目前绝大多数物联网企业的首选版本。
 
-为了让大家更全面地了解 MQTT 5.0，本文将依次介绍 5.0 引入的各个新特性，并使用 [MQTTX CLI](https://mqttx.app/zh) 工具演示我们应该如何在 [EMQX](https://www.emqx.io/zh) 中使用这些特性，你可以通过复制和粘贴命令轻松地运行本文中的示例。
+为了让大家更全面地了解 MQTT 5.0，本文将依次介绍 5.0 引入的各个新特性，并使用 [MQTTX CLI](https://mqttx.app/zh) 工具演示我们应该如何在 [EMQX](https://github.com/emqx/emqx) 中使用这些特性，你可以通过复制和粘贴命令轻松地运行本文中的示例。
 
 在正式开始前，我们需要完成以下准备工作：
 

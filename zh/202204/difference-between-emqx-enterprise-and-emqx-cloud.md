@@ -1,4 +1,4 @@
-作为一家开源物联网数据基础设施软件供应商，EMQ 通过全球领先的开源云原生 [MQTT 消息服务器 EMQX](https://www.emqx.io/zh)，为来自全球 50 余个国家的 20000+ 企业用户提供了云边端海量物联网数据高可靠、高性能的实时连接、移动与处理。
+作为一家开源物联网数据基础设施软件供应商，EMQ 通过全球领先的开源云原生 [MQTT 消息服务器 EMQX](https://www.emqx.com/zh/products/emqx)，为来自全球 50 余个国家的 20000+ 企业用户提供了云边端海量物联网数据高可靠、高性能的实时连接、移动与处理。
 
 始于开源项目，EMQX 现已陆续发展出了私有部署版 [EMQX Enterprise](https://www.emqx.com/zh/products/emqx) 和 SaaS 云服务版 [EMQX Cloud](https://www.emqx.com/zh/cloud)，以满足不同类型和规模的企业业务需求，服务企业数字化、实时化、智能化转型。
 

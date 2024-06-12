@@ -1,6 +1,6 @@
 在这篇文章中，我们将介绍 MQTT Broker 集群在可扩展性方面的一些改进。 我们将主要关注 EMQX 内部使用的数据库引擎，以及它在 EMQX 5.0 版本中是如何改进的。
 
-在开始本文之前，我们需要了解 EMQX 集群中是数据是如何复制的：[EMQX broker](https://www.emqx.io/zh) 将主题和客户端的运行时信息存储在 [Mnesia](http://erlang.org/doc/man/mnesia.html) 数据库中，有助于跨集群复制数据。
+在开始本文之前，我们需要了解 EMQX 集群中是数据是如何复制的：[EMQX broker](https://github.com/emqx/emqx) 将主题和客户端的运行时信息存储在 [Mnesia](http://erlang.org/doc/man/mnesia.html) 数据库中，有助于跨集群复制数据。
 
 ## Mnesia 简介
 

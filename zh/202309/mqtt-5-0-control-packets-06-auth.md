@@ -57,7 +57,7 @@ AUTH 报文是实现任意次数认证数据交换的核心，也使得 MQTT 的
 
 当我们遇到问题时，可以优先查看对端返回的响应报文中的 Reason Code，它可以指明大部分的错误原因。而当一些嵌入式设备上的端侧 SDK 实现不佳无法直接给出 Reason Code 时，我们可以尝试网络抓包来查看报文中的 Reason Code，此时我们可以借助 Wireshark，避免自己人工解析。
 
-[EMQX](https://www.emqx.io/zh) 作为被广泛使用的可扩展、高可用的 MQTT Broker，也提供了一个方便用户排查问题的 [日志追踪](https://docs.emqx.com/zh/emqx/v5.1/observability/tracer.html#日志追踪介绍) 功能，它可以记录下指定 Client ID、主题、IP 的所有相关日志，包括报文收发日志。所以我们可以用它来分析客户端的行为是否异常，例如是否正确地响应了 PUBACK，是否重复发送了连接报文等等。
+[EMQX](https://github.com/emqx/emqx) 作为被广泛使用的可扩展、高可用的 MQTT Broker，也提供了一个方便用户排查问题的 [日志追踪](https://docs.emqx.com/zh/emqx/v5.1/observability/tracer.html#日志追踪介绍) 功能，它可以记录下指定 Client ID、主题、IP 的所有相关日志，包括报文收发日志。所以我们可以用它来分析客户端的行为是否异常，例如是否正确地响应了 PUBACK，是否重复发送了连接报文等等。
 
 <section class="promotion">
     <div>

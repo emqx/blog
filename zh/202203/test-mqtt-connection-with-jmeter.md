@@ -2,7 +2,7 @@
 
 ### 连接场景分析
 
-插件中 MQTT Connect 请求主要模拟设备与 [MQTT 服务器](https://www.emqx.io/zh)（本文以 EMQX 为例）建立连接，并按指定间隔发送 [MQTT keep alive](https://www.emqx.com/zh/blog/mqtt-keep-alive) 报文，在物联网实际场景中经常需要海量设备连接并保持在线，大量设备同时上线及下线；本文脚本将模拟 400 个设备同时与 EMQX 建立连接，并保持连接 30 分钟后同时下线。
+插件中 MQTT Connect 请求主要模拟设备与 MQTT 服务器（本文以 EMQX 为例）建立连接，并按指定间隔发送 [MQTT keep alive](https://www.emqx.com/zh/blog/mqtt-keep-alive) 报文，在物联网实际场景中经常需要海量设备连接并保持在线，大量设备同时上线及下线；本文脚本将模拟 400 个设备同时与 EMQX 建立连接，并保持连接 30 分钟后同时下线。
 
 ### 如何使用 MQTT 插件编写测试脚本
 

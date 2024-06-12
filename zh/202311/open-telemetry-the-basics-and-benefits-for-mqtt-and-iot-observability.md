@@ -94,7 +94,7 @@ Broker 指标可以反映 [MQTT Broker](https://www.emqx.com/zh/blog/the-ultimat
 
 ## EMQX：支持 OpenTelemetry 集成的 MQTT 消息平台
 
-作为全球领先的 MQTT Broker，[EMQX](https://www.emqx.io/zh) 目前已集成了 OpenTelemetry 的强大功能。EMQX 5.2 版本使用 gRPC OTEL 协议提供了向 OpenTelemetry 收集器发送指标的直接通道。这种集成不仅提升了数据传输效率，还确保了遥测数据能够有效地传送、处理，并与多种后端平台兼容，包括开源平台（如 Jaeger 和 Prometheus）以及专业商业解决方案。
+作为全球领先的 MQTT Broker，[EMQX](https://www.emqx.com/zh/products/emqx) 目前已集成了 OpenTelemetry 的强大功能。EMQX 5.2 版本使用 gRPC OTEL 协议提供了向 OpenTelemetry 收集器发送指标的直接通道。这种集成不仅提升了数据传输效率，还确保了遥测数据能够有效地传送、处理，并与多种后端平台兼容，包括开源平台（如 Jaeger 和 Prometheus）以及专业商业解决方案。
 
 EMQX 和 OpenTelemetry 集成主要有以下优势：
 

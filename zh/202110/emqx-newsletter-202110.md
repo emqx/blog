@@ -1,4 +1,4 @@
-作为一款面向全球、用户众多的 [MQTT 消息服务器](https://www.emqx.io/zh)，从个性化需求的私有部署 EMQX Broker/Enterprise，到便捷高效的一键全托管 SaaS 服务 [EMQX Cloud](https://www.emqx.com/zh/cloud)，EMQX 系列产品可以满足不同场景和规模下的用户需求，提供可靠、实时的物联网数据移动、处理和集成。本月，EMQX 各研发团队也都有令人兴奋的进展。
+作为一款面向全球、用户众多的 MQTT 消息服务器，从个性化需求的私有部署 EMQX Broker/Enterprise，到便捷高效的一键全托管 SaaS 服务 [EMQX Cloud](https://www.emqx.com/zh/cloud)，EMQX 系列产品可以满足不同场景和规模下的用户需求，提供可靠、实时的物联网数据移动、处理和集成。本月，EMQX 各研发团队也都有令人兴奋的进展。
 
 
 ## EMQX ：v5.0-beta.2 开发进展顺利

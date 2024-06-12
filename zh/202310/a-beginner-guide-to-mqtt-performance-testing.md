@@ -1,4 +1,4 @@
-[EMQX](https://www.emqx.io/) 是一款开源的大规模分布式 MQTT 消息服务器。由于其功能丰富，运行稳定，EMQX 尤其受泛物联网开发者和实时通信应用开发者的青睐。EMQX 5.0 单集群支持高达 1 亿的 MQTT 并发连接数，单服务器的传输与处理吞吐量可达每秒百万级 MQTT 消息，并保证延迟在毫秒级。
+[EMQX](https://github.com/emqx/emqx) 是一款开源的大规模分布式 MQTT 消息服务器。由于其功能丰富，运行稳定，EMQX 尤其受泛物联网开发者和实时通信应用开发者的青睐。EMQX 5.0 单集群支持高达 1 亿的 MQTT 并发连接数，单服务器的传输与处理吞吐量可达每秒百万级 MQTT 消息，并保证延迟在毫秒级。
 
 ## 评估 MQTT 消息服务性能的重要性
 
@@ -136,7 +136,7 @@ MQTT 桥接可以将一个 MQTT 服务器中的消息桥接至另一个服务器
 
 在本文的测试中，我们用到了以下软件或工具：
 
-1. [EMQX](https://www.emqx.io/)，一款开源的大规模分布式 MQTT 消息服务器，专为物联网和实时通信应用而设计。
+1. [EMQX](https://github.com/emqx/emqx)，一款开源的大规模分布式 MQTT 消息服务器，专为物联网和实时通信应用而设计。
 2. [XMeter Cloud](https://www.emqx.com/en/products/xmeter)，全托管的 MQTT 负载测试云服务，基于 Apache 开源项目 JMeter 构建，可以快速运行各种 MQTT 负载和场景测试。
 3. [collectd](https://github.com/collectd/collectd)，一个运行在系统上的守护进程，它可以收集CPU、内存、磁盘使用情况、网络数据等信息，并将这些数据发送到指定的数据存储中。
 4. [InfluxDB](https://www.influxdata.com/)，一个用于存储和分析时间序列数据的开源时序数据库。

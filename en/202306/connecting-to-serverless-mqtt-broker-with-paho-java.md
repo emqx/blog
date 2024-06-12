@@ -10,7 +10,7 @@ One useful library is the Paho Java Client, an [MQTT client library](https://www
 
 ## Free Serverless MQTT Broker
 
-[EMQX Cloud Serverless](https://www.emqx.com/en/cloud/serverless-mqtt) is the latest [MQTT broker](https://www.emqx.io/) offering on the public cloud with all the serverless advantages. You can start the Serverless deployment in seconds with just a few clicks. Additionally, users can get 1 million free session minutes every month, sufficient for 23 devices to be online for a whole month, making it perfect for tiny IoT test scenarios.
+[EMQX Cloud Serverless](https://www.emqx.com/en/cloud/serverless-mqtt) is the latest MQTT Broker offering on the public cloud with all the serverless advantages. You can start the Serverless deployment in seconds with just a few clicks. Additionally, users can get 1 million free session minutes every month, sufficient for 23 devices to be online for a whole month, making it perfect for tiny IoT test scenarios.
 
 If you have not tried serverless deployment yet, please follow [the guide in this blog](https://www.emqx.com/en/blog/a-comprehensive-guide-to-serverless-mqtt-service) to create one for free. Once you have completed the registration process with the online guide, you will get a running instance with the following similar information from the “Overview” in your deployment. We will use the connection information and CA certificate later.
 

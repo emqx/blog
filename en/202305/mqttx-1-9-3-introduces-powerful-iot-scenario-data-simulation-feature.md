@@ -131,7 +131,7 @@ These optimizations drastically reduce user storage usage and speed up the image
 
 ### Auto Reconnect Feature
 
-The connection has auto-reconnect enabled by default. If the MQTTX desktop client loses connection to the [MQTT broker](https://www.emqx.io/) due to network issues or other reasons, the client will attempt to reconnect automatically.
+The connection has auto-reconnect enabled by default. If the MQTTX desktop client loses connection to the MQTT Broker due to network issues or other reasons, the client will attempt to reconnect automatically.
 
 ### Editing Disabled in Connection State
 
