@@ -438,6 +438,7 @@ Build a reliable, efficient and industry-specific Internet of Vehicles platform 
 
 ## [Industrial IoT | Unified Namespace | Sparkplug](https://www.emqx.com/zh/blog/category/industrial-iot)
 
+- [BACnet 与 Modbus 协议对比指南](https://www.emqx.com/zh/blog/bacnet-vs-modbus) ([Edit](https://github.com/emqx/blog/blob/main/zh/202406/bacnet-vs-modbus.md))
 - [OPC UA 协议：特性、工作原理及其与 MQTT 的结合](https://www.emqx.com/zh/blog/opc-ua-protocol) ([Edit](https://github.com/emqx/blog/blob/main/zh/202404/opc-ua-protocol.md))
 - [工业互联数据平台，推动工业互联网标识解析体系的应用](https://www.emqx.com/zh/blog/industrial-connectivity-data-platform-use-case) ([Edit](https://github.com/emqx/blog/blob/main/zh/202403/industrial-connectivity-data-platform-use-case.md))
 - [工业互联数据平台：NeuronEX 与 EMQX ECP 携手推动云边一体](https://www.emqx.com/zh/blog/industrial-connectivity-data-platform) ([Edit](https://github.com/emqx/blog/blob/main/zh/202403/industrial-connectivity-data-platform.md))
