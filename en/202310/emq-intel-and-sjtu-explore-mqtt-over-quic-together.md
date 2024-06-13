@@ -70,7 +70,7 @@ In the MQTT over QUIC bridging technology topic, Fengping Sun from Shanghai Jiao
 
 ### EMQ
 
-EMQ is the world's leading software provider of open-source IoT data infrastructure. The core product portfolio used in this course consists of [EMQX](https://www.emqx.io/), the world’s most scalable and reliable open-source MQTT messaging platform, available in both open-source and commercial versions, and [NanoMQ](https://nanomq.io), an ultra-lightweight MQTT middleware that can run at the edge. They offer a one-stop, cloud-native solution that can connect, move, process, and integrate real-time IoT data from edge to cloud to multi-cloud.
+EMQ is the world's leading software provider of open-source IoT data infrastructure. The core product portfolio used in this course consists of [EMQX](https://github.com/emqx/emqx), the world’s most scalable and reliable open-source MQTT messaging platform, available in both open-source and commercial versions, and [NanoMQ](https://nanomq.io), an ultra-lightweight MQTT middleware that can run at the edge. They offer a one-stop, cloud-native solution that can connect, move, process, and integrate real-time IoT data from edge to cloud to multi-cloud.
 
 Founded in 2017, EMQ has rapidly grown. Its flagship product, EMQX, has served over 500 enterprise users in more than 50 countries, connecting to a staggering 250 million IoT devices globally.
 

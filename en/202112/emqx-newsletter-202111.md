@@ -88,7 +88,7 @@ The condition of a large number of offline devices may be caused by some externa
 
 Forwarding data to non-relational databases is supported by EMQX Cloud. At present, the resource configuration of the rule engine has added support for Alibaba Cloud MongoDB. The rule engine can be used to persist data to MongoDB of Alibaba Cloud. It provides more choices for business developers to achieve data persistence, which makes business landing more easily.
 
-EMQX team is always committed to bringing a better [MQTT broker](https://www.emqx.io) for the IoT era. Please stay tuned on EMQX.
+EMQX team is always committed to bringing a better MQTT broker for the IoT era. Please stay tuned on EMQX.
 
 
 <section class="promotion">

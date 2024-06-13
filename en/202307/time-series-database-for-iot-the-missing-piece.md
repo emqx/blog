@@ -69,7 +69,7 @@ Many use cases demonstrate the versatility and power of integrating MQTT with TS
 
 ## How EMQX Enables Easy Integration of Time-Series Databases with MQTT
 
-[EMQX](https://www.emqx.io/), provider of a [popular MQTT broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker), can seamlessly integrate with various TSDBs, such as Timescale, InfluxDB, and Apache IoTDB, making them compatible with various IoT frameworks and tools. This integration facilitates smooth data flow from Industry IoT devices to TSDB, streamlines data processing pipelines, and simplifies Industry IoT data management architecture.
+[EMQX](https://github.com/emqx/emqx), provider of a [popular MQTT broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker), can seamlessly integrate with various TSDBs, such as Timescale, InfluxDB, and Apache IoTDB, making them compatible with various IoT frameworks and tools. This integration facilitates smooth data flow from Industry IoT devices to TSDB, streamlines data processing pipelines, and simplifies Industry IoT data management architecture.
 
 ![Easy Integration of Time-Series Databases with MQTT](https://assets.emqx.com/images/5b34d4ed43c44eb0c9c379a13c1a9686.png)
 

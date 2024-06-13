@@ -6,7 +6,7 @@
 
 ## EMQXとNeuron：不可欠なコンポーネント
 
-[EMQX](https://www.emqx.io/)はSparkplugプロトコルをサポートする人気的な[MQTTブローカー](https://www.emqx.com/ja/blog/the-ultimate-guide-to-mqtt-broker-comparison)であり、Neuronは産業用デバイスからデータを収集し、アプリケーション用にSparkplugメッセージを生成するために使用できる産業用IoTプラットフォームである。
+[EMQX](https://github.com/emqx/emqx)はSparkplugプロトコルをサポートする人気的な[MQTTブローカー](https://www.emqx.com/ja/blog/the-ultimate-guide-to-mqtt-broker-comparison)であり、Neuronは産業用デバイスからデータを収集し、アプリケーション用にSparkplugメッセージを生成するために使用できる産業用IoTプラットフォームである。
 
 [Neuron](https://neugates.io/)はデバイスからデータを収集し、そのデータに基づいてEMQXブローカにSparkplugメッセージを発行して変更を報告します。EMQXは、関連するSparkplugトピックをサブスクライブしているアプリケーションにメッセージを転送します。しかし、EMQXはルールエンジンを通してSparkplugメッセージをデコードすることができる。メッセージはその後、データプラットフォームや履歴の永続ストレージなどに使用される。
 
@@ -27,7 +27,7 @@
 
 ## EMQXのインストール
 
-EMQX MQTTブローカーをダウンロードし、サーバーまたはマシンにインストールする。EMQXはコミュニティ版を提供しており、ウェブサイトから無料でダウンロードできる。ウェブサイト[https://www.emqx.io/](https://www.emqx.io/)、ドキュメントに従ってください。
+EMQX MQTTブローカーをダウンロードし、サーバーまたはマシンにインストールする。EMQXはコミュニティ版を提供しており、ウェブサイトから無料でダウンロードできる。ウェブサイト[https://github.com/emqx/emqx](https://github.com/emqx/emqx)、ドキュメントに従ってください。
 
 <section class="promotion">
     <div>

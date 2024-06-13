@@ -20,7 +20,7 @@ GitHubでホストされている3つのプロジェクトの概要は以下の�
 
 |                                     | **EMQX**                                    | **Mosquitto**                                            | **NanoMQ**                                      |
 | :---------------------------------- | :------------------------------------------ | :------------------------------------------------------- | :---------------------------------------------- |
-| **Official Website**                | [EMQX](https://www.emqx.io/)                | [Eclipse Mosquitto](https://mosquitto.org/)              | [NanoMQ](https://nanomq.io/)                    |
+| **Official Website**                | [EMQX](https://github.com/emqx/emqx)                | [Eclipse Mosquitto](https://mosquitto.org/)              | [NanoMQ](https://nanomq.io/)                    |
 | **GitHub Project**                  | [EMQX GitHub](https://github.com/emqx/emqx) | [Mosquitto GitHub](https://github.com/eclipse/mosquitto) | [NanoMQ GitHub](https://github.com/nanomq/nanomq) |
 | **Project Created**                 | 2012                                        | 2009                                                     | 2020                                            |
 | **License**                         | Apache License 2.0                          | EPL/EDL License                                          | MIT License                                     |
@@ -35,7 +35,7 @@ GitHubでホストされている3つのプロジェクトの概要は以下の�
 
 ## 1. EMQX
 
-[EMQX](https://www.emqx.io/)は、企業のIIoT展開のための高度にスケーラブルな分散型MQTTブローカーです。MQTT 5.0、MQTT-SN、SSL/TLS暗号化、[MQTT over QUIC](https://www.emqx.com/en/blog/mqtt-over-quic)を幅広くサポートしています。さらに、マスターレスクラスタリングにより、高可用性と水平スケーラビリティを実現します。
+[EMQX](https://github.com/emqx/emqx)は、企業のIIoT展開のための高度にスケーラブルな分散型MQTTブローカーです。MQTT 5.0、MQTT-SN、SSL/TLS暗号化、[MQTT over QUIC](https://www.emqx.com/en/blog/mqtt-over-quic)を幅広くサポートしています。さらに、マスターレスクラスタリングにより、高可用性と水平スケーラビリティを実現します。
 
 EMQXはGitHubで11.5kのスターを獲得しており、[最も人気のあるMQTTブローカー](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison)の1つとしての地位を確立しています。EMQXプロジェクトは2012年に開始され、Apacheバージョン2.0の下でライセンスされています。EMQXは、大規模なスケーラブルソフトリアルタイムシステムを構築するためのプログラミング言語であるErlang/OTPで書かれています。
 
@@ -147,7 +147,7 @@ Unified Namespace（UNS）は、産業用IoTおよびインダストリー4.0向
 
 ## 結論
 
-これまでの紹介と比較から、各MQTTブローカーは異なる展開シナリオに対して明確な強みを提供することができます。  [EMQX](https://www.emqx.io/) は、エンタープライズ向けの機能で拡張性が高く、クラウド展開に適しています。 [Mosquitto](https://mosquitto.org/)と[NanoMQ](https://nanomq.io/)は、高速かつ軽量で、産業用ゲートウェイに最適です。
+これまでの紹介と比較から、各MQTTブローカーは異なる展開シナリオに対して明確な強みを提供することができます。  [EMQX](https://github.com/emqx/emqx) は、エンタープライズ向けの機能で拡張性が高く、クラウド展開に適しています。 [Mosquitto](https://mosquitto.org/)と[NanoMQ](https://nanomq.io/)は、高速かつ軽量で、産業用ゲートウェイに最適です。
 
 
 これら3つのMQTTブローカーは、産業用IoTアプリケーションにおいて重要な役割を果たし、UNSアーキテクチャの実装を先導し、ITとOTドメインの融合を促進する。具体的なIIoTプロジェクトを検討する際には、要件に応じてこれらのMQTTブローカーのうち1つまたは2つを選択することができます。それぞれの強みを生かすことで、MQTTブローカーが連携し、それぞれの能力を相乗的に発揮する、まとまったシステムを構築することができます。

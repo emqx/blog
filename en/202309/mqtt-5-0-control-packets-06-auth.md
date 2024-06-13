@@ -57,7 +57,7 @@ Now, we have introduced all types of control packets in MQTT. As a binary protoc
 
 When we encounter problems, we can first check the Reason Code in the response packet returned by the other party, which can indicate most of the error causes. When some embedded device end-side SDK implementations are poor and cannot directly provide a Reason Code, we can try packet sniffing to view the Reason Code in the packet. At this time, we can use Wireshark to avoid manual parsing.
 
-[EMQX](https://www.emqx.io/), as a widely used, highly scalable MQTT Broker, also provides a [Log Trace](https://docs.emqx.com/en/emqx/v5.1/observability/tracer.html) feature that is convenient for users to troubleshoot problems. It can record all relevant logs of specified Client ID, topic, and IP, including packet receiving and sending logs. So we can use it to analyze whether the behavior of the client is abnormal, such as whether it correctly responded to PUBACK, whether it repeatedly sent CONNACK packets, etc.
+[EMQX](https://github.com/emqx/emqx), as a widely used, highly scalable MQTT Broker, also provides a [Log Trace](https://docs.emqx.com/en/emqx/v5.1/observability/tracer.html) feature that is convenient for users to troubleshoot problems. It can record all relevant logs of specified Client ID, topic, and IP, including packet receiving and sending logs. So we can use it to analyze whether the behavior of the client is abnormal, such as whether it correctly responded to PUBACK, whether it repeatedly sent CONNACK packets, etc.
 
 <section class="promotion">
     <div>

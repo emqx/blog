@@ -85,7 +85,7 @@ Implementing TLS requires careful planning and execution to ensure communication
 
 TLS provides a secure way to communicate over the Internet. Using a dedicated secret per device and choosing the correct authentication method can enhance the security of TLS. By following the implementation best practices provided in this blog, you can leverage the full power of TLS to build a more secure IoT platform.
 
-[EMQX](https://www.emqx.io/) has built-in support for TLS/SSL, including one-way/two-ways authentication, the X.509 certificate, load balance SSL and many other security certifications. You can enable SSL/TLS for all protocols supported by EMQX and configure the HTTP API provided by EMQX to use TLS. For more guidance, continue exploring what EMQX has to offer:
+[EMQX](https://github.com/emqx/emqx) has built-in support for TLS/SSL, including one-way/two-ways authentication, the X.509 certificate, load balance SSL and many other security certifications. You can enable SSL/TLS for all protocols supported by EMQX and configure the HTTP API provided by EMQX to use TLS. For more guidance, continue exploring what EMQX has to offer:
 
 - [Enabling one-way authentication for EMQX Enterprise](https://www.emqx.com/en/blog/emqx-server-ssl-tls-secure-connection-configuration-guide)
 - [Enabling two-way authentication for EMQX Enterprise](https://www.emqx.com/en/blog/enable-two-way-ssl-for-emqx)

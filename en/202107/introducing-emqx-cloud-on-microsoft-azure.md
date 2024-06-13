@@ -1,6 +1,6 @@
 EMQ, the leader of open-source and cloud-native distributed MQTT broker for IoT, is pleased to announce that EMQX Cloud is now available on Microsoft Azure.
 
-[EMQX Cloud](https://www.emqx.com/en/cloud) is a fully managed MQTT service built on the worldwide used [open-source MQTT broker - EMQX](https://www.emqx.io), which has more than 10 million downloads and hundreds of thousands of deployments around the globe.
+[EMQX Cloud](https://www.emqx.com/en/cloud) is a fully managed MQTT service built on the worldwide used [open-source MQTT broker - EMQX](https://github.com/emqx/emqx), which has more than 10 million downloads and hundreds of thousands of deployments around the globe.
 
 EMQX Cloud helps our users carry out their IoT projects with [MQTT](https://www.emqx.com/en/mqtt-guide) in a simple way, without the burden of deploying and managing the self-managed MQTT service in multiple regions of the cloud.
 

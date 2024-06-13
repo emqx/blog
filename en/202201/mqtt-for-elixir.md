@@ -22,7 +22,7 @@ We will demonstrate some of MQTT's advantages in our setup.
 
 An essential thing about MQTT is that it simplifies the client's logic, which is critical for embedded devices. This is achieved with the pubsub model: in MQTT, there is no concept of a "server". Instead, all participating entities are clients connecting to a so-called *broker*. Clients *subscribe* to *topics*, *publish* messages to them, and the broker does the routing (and many other things).
 
-A good production-ready broker, like [EMQX](https://www.emqx.io) generally provides not only MQTT routing capabilities but many other interesting features, like
+A good production-ready broker, like [EMQX](https://www.emqx.com/en/products/emqx) generally provides not only MQTT routing capabilities but many other interesting features, like
 
 - other kinds of connection methods, like WebSockets;
 - different models of authentication and authorization;

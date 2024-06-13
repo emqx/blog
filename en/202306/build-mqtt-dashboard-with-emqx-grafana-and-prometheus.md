@@ -2,7 +2,7 @@ EMQX is the world’s leading open-source distributed [MQTT broker](https://www.
 
 > EMQX GitHub: [https://github.com/emqx/emqx](https://github.com/emqx/emqx)   
 
-In this article, we will introduce how to build an MQTT Dashboard to monitor [EMQX 5.0](https://www.emqx.io/) with Prometheus and use Grafana to visualize its data metrics. In addition, we will introduce [EMQX Exporter](https://github.com/emqx/emqx-exporter) to expose metrics that are not included in the Prometheus API. It is compatible with EMQX 4.4 and EMQX 5, both open-source and enterprise.
+In this article, we will introduce how to build an MQTT Dashboard to monitor [EMQX 5.0](https://github.com/emqx/emqx) with Prometheus and use Grafana to visualize its data metrics. In addition, we will introduce [EMQX Exporter](https://github.com/emqx/emqx-exporter) to expose metrics that are not included in the Prometheus API. It is compatible with EMQX 4.4 and EMQX 5, both open-source and enterprise.
 
 ## Build a Powerful MQTT Dashboard
 

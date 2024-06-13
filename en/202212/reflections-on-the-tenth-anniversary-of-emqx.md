@@ -1,4 +1,4 @@
-This year marks a significant milestone for EMQ. Ten years back, on December 17, 2012, [EMQX](https://www.emqx.io/) was released as an open-source project on GitHub with [this first commit](https://github.com/emqx/emqx/commit/11db16725e76c3072f7b50cd62abc4a0aa6a43ba). 
+This year marks a significant milestone for EMQ. Ten years back, on December 17, 2012, [EMQX](https://github.com/emqx/emqx) was released as an open-source project on GitHub with [this first commit](https://github.com/emqx/emqx/commit/11db16725e76c3072f7b50cd62abc4a0aa6a43ba). 
 
 ![First EMQX Commit to GitHub](https://assets.emqx.com/images/9745b032b378bdb1171e342667dc537e.png)
 

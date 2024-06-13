@@ -85,7 +85,7 @@ The use of a unified namespace in Sparkplug simplifies the process of managing a
 
 To implement an MQTT Sparkplug solution, we need two components: an MQTT server and an edge node.
 
-An [MQTT server](https://www.emqx.io/) is used as the central broker for handling the communication between devices and applications in an IIoT environment. The MQTT server is responsible for receiving messages from devices, forwarding them to the appropriate subscribers, and storing messages for later retrieval if necessary.
+An [MQTT server](https://github.com/emqx/emqx) is used as the central broker for handling the communication between devices and applications in an IIoT environment. The MQTT server is responsible for receiving messages from devices, forwarding them to the appropriate subscribers, and storing messages for later retrieval if necessary.
 
 An edge node is a device or gateway that acts as an intermediary between devices and the [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison). It can handle local data processing and aggregation, as well as buffering and forwarding data to the MQTT broker. Edge nodes are typically used in IIoT environments where numerous devices generate large amounts of data and where network bandwidth is limited.
 

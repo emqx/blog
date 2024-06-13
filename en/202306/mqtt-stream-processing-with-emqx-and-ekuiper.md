@@ -2,7 +2,7 @@
 
 [MQTT protocol](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) is a lightweight messaging protocol that is ideal for IoT applications. It is designed to be simple, open, and easy to implement, making it a popular choice for IoT applications. MQTT data are ingested continuously and in real-time and thus are suitable to be processed by stream processing engines.
 
-As a large-scale distributed [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) for IoT, [EMQX](https://www.emqx.io/) can efficiently and reliably connect to massive IoT devices, and process and distribute messages and event flow data in real-time. [eKuiper](https://ekuiper.org/) is an open-source stream processing engine that can filter, transform, and aggregate streaming data.
+As a large-scale distributed [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) for IoT, [EMQX](https://github.com/emqx/emqx) can efficiently and reliably connect to massive IoT devices, and process and distribute messages and event flow data in real-time. [eKuiper](https://ekuiper.org/) is an open-source stream processing engine that can filter, transform, and aggregate streaming data.
 
 This article will demonstrate using eKuiper to stream process MQTT data from EMQX in real-time.
 

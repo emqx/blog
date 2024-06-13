@@ -138,7 +138,7 @@ In contrast, NanoMQ may pose a challenge for beginners due to its more advanced 
 
 ## Bridging to EMQX Cloud
 
-[EMQX Cloud](https://www.emqx.com/en/cloud) is a highly scalable MQTT messaging service built on the open-source distributed [EMQX broker](https://www.emqx.io/). We can easily bridge Mosquitto or NanoMQ at the IoT edge to the EMQX Cloud service.
+[EMQX Cloud](https://www.emqx.com/en/cloud) is a highly scalable MQTT messaging service built on the open-source distributed [EMQX broker](https://github.com/emqx/emqx). We can easily bridge Mosquitto or NanoMQ at the IoT edge to the EMQX Cloud service.
 
 ![Bridge Mosquitto to EMQX Cloud](https://assets.emqx.com/images/05b6602329f65d45aa2c87d115e2f51e.png)
 

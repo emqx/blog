@@ -105,7 +105,7 @@ Since version 2.1.0, Neuron provides the [KNX plugin](https://neugates.io/docs/e
 
 ### EMQX for Handling MQTT Messages
 
-[EMQX](https://www.emqx.io/) is the world’s leading open-source distributed MQTT broker with high performance and scalability. It provides efficient and reliable connections for massive IoT devices, enabling high-performance real-time movement and processing of the message and event flow data, helping users quickly build IoT platforms and applications for critical business.
+[EMQX](https://github.com/emqx/emqx) is the world’s leading open-source distributed MQTT broker with high performance and scalability. It provides efficient and reliable connections for massive IoT devices, enabling high-performance real-time movement and processing of the message and event flow data, helping users quickly build IoT platforms and applications for critical business.
 
 EMQX is the broker component in the bridging architecture, while Neuron collects data from KNX devices and transmits the data in MQTT messages to the broker. After receiving the MQTT messages from Neuron, EMQX will then forward the data or perform further processing.
 

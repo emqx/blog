@@ -4,7 +4,7 @@
 
 Pythonは、その汎用性、使いやすさ、膨大なライブラリから、IoTで広く利用されています。大量のデータを扱うことができるため、スマートホームオートメーション、環境モニタリング、産業制御などに最適です。また、Pythonはマイクロコントローラと互換性があるため、IoTデバイスの開発にも有効なツールとなっています。
 
-本記事では、主にPythonプロジェクトにおいて、paho-mqttクライアントを使用し、[MQTTクライアント](https://www.emqx.com/ja/blog/mqtt-client-tools)と[MQTTブローカー](https://www.emqx.io/)間の接続、購読、メッセージングなどの機能を実装する方法について紹介します。
+本記事では、主にPythonプロジェクトにおいて、paho-mqttクライアントを使用し、[MQTTクライアント](https://www.emqx.com/ja/blog/mqtt-client-tools)と[MQTTブローカー](https://github.com/emqx/emqx)間の接続、購読、メッセージングなどの機能を実装する方法について紹介します。
 
 ## Paho MQTT Python Clientを選択する理由は？
 
@@ -46,7 +46,7 @@ pip3 install paho-mqtt
 
 -  **プライベート展開**
 
-  [EMQX](https://www.emqx.io/)は、IoT、IIoT、コネクテッドカー向けの最もスケーラブルなオープンソースのMQTTブローカーです。以下のDockerコマンドを実行することでEMQXをインストールすることができます。
+  [EMQX](https://github.com/emqx/emqx)は、IoT、IIoT、コネクテッドカー向けの最もスケーラブルなオープンソースのMQTTブローカーです。以下のDockerコマンドを実行することでEMQXをインストールすることができます。
 
   ```
   docker run -d --name emqx -p 1883:1883 -p 8083:8083 -p 8084:8084 -p 8883:8883 -p 18083:18083 emqx/emqx

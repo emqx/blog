@@ -67,11 +67,11 @@ MQTTの主な利点は以下の通りです。
 
 ModbusからMQTTへのブリッジアーキテクチャは、主に2つのコンポーネントで構成されています。Modbusデータソースと[MQTTブローカー](https://www.emqx.com/ja/blog/the-ultimate-guide-to-mqtt-broker-comparison)です。データソースはModbusデータをMQTTブローカーに送信し、MQTTブローカーはそのデータを受信して転送します。このプロセスを実現するには、2つの重要な要素が必要です。1つはModbusプロトコルをMQTTに変換し、データをMQTTブローカーに送信するエッジデバイスであり、もう1つはMQTTメッセージを処理するMQTTブローカーです。
 
-本記事では、[Neuron](https://neugates.io/)と[EMQX](https://www.emqx.io/ja)を使用してブリッジプロセスを実装します。
+本記事では、[Neuron](https://neugates.io/)と[EMQX](https://github.com/emqx/emqx)を使用してブリッジプロセスを実装します。
 
 [Neuron](https://neugates.io/)は、標準またはプロプライエタリなプロトコルを使用してさまざまな産業用デバイスを接続できる、現代的な[産業用IoT](https://www.emqx.com/ja/blog/iiot-explained-examples-technologies-benefits-and-challenges)接続サーバーです。産業用IoTプラットフォームとデバイス間の相互接続を実現します。軽量な産業用ソフトウェアであるNeuronは、リソースが限られたさまざまなIoTエッジハードウェアデバイス上で実行できます。データを中心とした自動化機器データの統一的なアクセスの難しさを解決し、スマートマニュファクチャリングのための基盤を提供することを目的としています。
 
-[EMQX](https://www.emqx.io/ja)は、高性能でスケーラブルな、世界をリードするオープンソースの分散型IoT MQTT ブローカーです。EMQXは、大量のIoTデバイスに効率的で信頼性の高い接続を提供し、メッセージとイベントフローデータのリアルタイムな移動と処理を高性能でサポートすることで、ユーザーが重要なビジネス向けのIoTプラットフォームとアプリケーションを迅速に構築できるようにします。
+[EMQX](https://github.com/emqx/emqx)は、高性能でスケーラブルな、世界をリードするオープンソースの分散型IoT MQTT ブローカーです。EMQXは、大量のIoTデバイスに効率的で信頼性の高い接続を提供し、メッセージとイベントフローデータのリアルタイムな移動と処理を高性能でサポートすることで、ユーザーが重要なビジネス向けのIoTプラットフォームとアプリケーションを迅速に構築できるようにします。
 
 以下の図は、Neuronがエッジからデータをどのように収集し、それをMQTTに変換してEMQXにアップロードするかを示しています。
 
@@ -266,7 +266,7 @@ MQTTXを起動したら、メインページの**+新しい接続**をクリッ�
 
 ![Oil Production Data Acquisition](https://assets.emqx.com/images/5c5a23f0474e9305c1f4d0026176f01b.png)
 
-Neuron と [EMQX](https://www.emqx.io/ja)、[eKuiper](https://ekuiper.org/)、[EMQX ECP](https://www.emqx.com/en/products/emqx-ecp) などの他の EMQ 製品を組み合わせた全体的なソリューションは、石油業界に以下のようなメリットをもたらします。
+Neuron と [EMQX](https://github.com/emqx/emqx)、[eKuiper](https://ekuiper.org/)、[EMQX ECP](https://www.emqx.com/en/products/emqx-ecp) などの他の EMQ 製品を組み合わせた全体的なソリューションは、石油業界に以下のようなメリットをもたらします。
 
 - フロントエンドを軽量化し、バックエンドを重視するシステムアーキテクチャにより、現場の機器とシステムの運用・保守コストを削減できます。
 - MQTTのIoTプロトコルを主なデータ収集・伝送方式として利用することで、生産データをリアルタイムに報告し、業務システムの応答性を向上させます。

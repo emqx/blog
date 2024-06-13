@@ -54,7 +54,7 @@ npm install mqtt -g
 
 -  **プライベート展開**
 
-  [EMQX](https://www.emqx.io/)は、IoT、IIoT、コネクテッドビークルのための最もスケーラブルなオープンソースのMQTTブローカーです。EMQXをインストールするには、以下のDockerコマンドを実行します：
+  [EMQX](https://github.com/emqx/emqx)は、IoT、IIoT、コネクテッドビークルのための最もスケーラブルなオープンソースのMQTTブローカーです。EMQXをインストールするには、以下のDockerコマンドを実行します：
 
   ```
   docker run -d --name emqx -p 1883:1883 -p 8083:8083 -p 8084:8084 -p 8883:8883 -p 18083:18083 emqx/emqx

@@ -1,6 +1,6 @@
 ## Introduction
 
-[MQTT](https://www.emqx.com/en/mqtt-guide) is a lightweight messaging protocol commonly used in IoT (Internet of Things) applications to enable communication between devices. As a [popular open-source MQTT broker, EMQX](https://www.emqx.io/) provides high scalability, reliability, and security for MQTT messaging.
+[MQTT](https://www.emqx.com/en/mqtt-guide) is a lightweight messaging protocol commonly used in IoT (Internet of Things) applications to enable communication between devices. As a [popular open-source MQTT broker, EMQX](https://github.com/emqx/emqx) provides high scalability, reliability, and security for MQTT messaging.
 
 By using Terraform, a widespread Infrastructure as Code (IaC) tool, you can automate the deployment of EMQX MQTT Broker on AWS, making it easy to set up and manage your MQTT infrastructure.
 

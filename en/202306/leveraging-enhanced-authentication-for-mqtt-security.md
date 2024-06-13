@@ -71,7 +71,7 @@ If the server's identity is successfully verified, the client can proceed to sub
 
 Enhanced authentication provides users with the possibility to introduce more identity verification methods. You can choose authentication methods suitable for your specific needs and further enhance the security of your system. 
 
-[EMQX](https://www.emqx.io/), as a widely-used MQTT broker known for its high scalability and availability, has always prioritized ensuring user security. In addition to [password-based authentication](https://docs.emqx.com/en/emqx/v5.0/access-control/authn/pwoverview.html), EMQX also supports Enhanced Authentication. Users can enable SCRAM authentication with EMQX to improve the security level of their MQTT infrastructure. For more information, please refer to: [MQTT 5.0 Enhanced Authentication](https://docs.emqx.com/en/emqx/v5.0/access-control/authn/scram.html#configure-with-dashboard).
+[EMQX](https://github.com/emqx/emqx), as a widely-used MQTT broker known for its high scalability and availability, has always prioritized ensuring user security. In addition to [password-based authentication](https://docs.emqx.com/en/emqx/v5.0/access-control/authn/pwoverview.html), EMQX also supports Enhanced Authentication. Users can enable SCRAM authentication with EMQX to improve the security level of their MQTT infrastructure. For more information, please refer to: [MQTT 5.0 Enhanced Authentication](https://docs.emqx.com/en/emqx/v5.0/access-control/authn/scram.html#configure-with-dashboard).
 
 
 

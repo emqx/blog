@@ -74,7 +74,7 @@ You should have a regular patch management process in place, ensuring that all y
 
 ### Installing an MQTT Broker: EMQX
 
-The first step in integrating MQTT with Home Assistant is to install an MQTT Broker. We’ll use [EMQX](https://www.emqx.io/), an open-source, scalable, and highly performant MQTT Broker designed for IoT applications.
+The first step in integrating MQTT with Home Assistant is to install an MQTT Broker. We’ll use [EMQX](https://github.com/emqx/emqx), an open-source, scalable, and highly performant MQTT Broker designed for IoT applications.
 
 To install EMQX, first, [download the latest version](https://www.emqx.com/en/try?product=broker) and follow the installation instructions. The installation process varies depending on the operating system you are using. For instance, if you are using a Debian-based Linux distribution like Ubuntu, you can install EMQX by executing `sudo apt-get install emqx` in the terminal.
 

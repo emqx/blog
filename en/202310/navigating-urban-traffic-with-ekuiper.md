@@ -2,7 +2,7 @@ Real-time data is becoming a cornerstone in urban planning and traffic managemen
 
 ## **eKuiper: Real-Time Data Analysis at the Edge**
 
-Our journey of personal traffic analysis starts with an open-source tool: [eKuiper](https://ekuiper.org/). Initiated by [EMQX](https://www.emqx.io/), this open-source marvel is not just lightweight and scalable but also boasts powerful edge computing capabilities. Its SQL-like syntax ensures that even those with a rudimentary understanding of data querying can harness its power. For traffic enthusiasts, eKuiper's real-time data processing provides a granular understanding of road conditions.
+Our journey of personal traffic analysis starts with an open-source tool: [eKuiper](https://ekuiper.org/). Initiated by [EMQX](https://github.com/emqx/emqx), this open-source marvel is not just lightweight and scalable but also boasts powerful edge computing capabilities. Its SQL-like syntax ensures that even those with a rudimentary understanding of data querying can harness its power. For traffic enthusiasts, eKuiper's real-time data processing provides a granular understanding of road conditions.
 
 ## **Getting Started with eKuiper**
 

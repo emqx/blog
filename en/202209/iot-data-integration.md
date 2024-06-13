@@ -90,7 +90,7 @@ The following is a comparison of the functional changes from EMQX open-source ve
 
 ## Epilogue
 
-In building IoT platforms and applications, it is an essential challenge to process massive amounts of data accurately and in real time according to demand and to interface with upper-level business systems. As an [MQTT-based IoT messaging server](https://www.emqx.io/) that can "connect any device, at any scale, anywhere," EMQX provides powerful, easy-to-use, and constantly improving data integration capabilities to help users tackle these data processing challenges and achieve business innovations.
+In building IoT platforms and applications, it is an essential challenge to process massive amounts of data accurately and in real time according to demand and to interface with upper-level business systems. As an [MQTT-based IoT messaging server](https://www.emqx.com/en/products/emqx) that can "connect any device, at any scale, anywhere," EMQX provides powerful, easy-to-use, and constantly improving data integration capabilities to help users tackle these data processing challenges and achieve business innovations.
 
 
 <section class="promotion">

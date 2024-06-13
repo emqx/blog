@@ -8,7 +8,7 @@ EMQX is a scalable, distributed MQTT messaging platform that supports unlimited 
 - [EMQX Dedicated](https://www.emqx.com/en/cloud/dedicated): A single-tenant MQTT service with capacity-based pricing, offering advanced settings and expert support.
 - [EMQX BYOC](https://www.emqx.com/en/cloud/byoc): Allows hosting EMQX clusters on your own cloud, fully managed by the EMQ team with advanced options.
 - [EMQX Enterprise](https://www.emqx.com/en/products/emqx): A self-managed EMQX Cluster, deployable anywhere to handle enterprise-grade workloads.
-- [EMQX Open Source](https://www.emqx.io/): A community-supported open-source MQTT broker.
+- [EMQX Open Source](https://github.com/emqx/emqx): A community-supported open-source MQTT broker.
 
 This blog explores the distinctions between EMQX Enterprise and Open Source editions, highlighting their respective capabilities and offerings to help you identify the most suitable option for your IoT business.
 

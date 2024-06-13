@@ -162,7 +162,7 @@ If you want to learn more about MQTT 5.0, you can try reading our [MQTT 5.0 Expl
 
 The MQTT broker is responsible for receiving client-initiated connections and forwarding messages sent by the client to some other eligible clients. A mature MQTT broker can support massive connections and millions of messages throughput, helping IoT business providers focus on business functionality and quickly create a reliable MQTT application.
 
-[EMQX](https://www.emqx.io/) is a widely-used large-scale distributed MQTT broker for IoT. Since its open-source release on GitHub in 2013, it has been downloaded by more than 10 million times worldwide and the cumulative number of connected IoT key devices exceeds 100 million.
+[EMQX](https://github.com/emqx/emqx) is a widely-used large-scale distributed MQTT broker for IoT. Since its open-source release on GitHub in 2013, it has been downloaded by more than 10 million times worldwide and the cumulative number of connected IoT key devices exceeds 100 million.
 
 You can install EMQX 5.0 open-source version with the following Docker command to experience it.
 

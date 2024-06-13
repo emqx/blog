@@ -81,7 +81,7 @@ Sparkplug Compatibility Programは、ソフトウェアおよびハードウェ�
 
 Sparkplug 3.0は、IIoTアプリケーション向けのMQTT Sparkplugプロトコルに大幅な進化と正式化をもたらします。改善された明快さ、明確な仕様、MQTT 5.0との整合性により、Sparkplug 3.0は、相互運用性の強化、効率的なデータ同期、産業環境への合理的な導入を実現します。IIoTエコシステムが進化し続ける中、Sparkplug 3.0はIIoTネットワーク内で信頼性が高くスケーラブルな通信を行うための堅牢で標準化されたソリューションを提供します。
 
-世界有数の[オープンソースMQTTブローカー](https://www.emqx.io/)であるEMQXは、すべてのSparkplug 3.0メッセージトラフィックを管理するインフラの主要コンポーネントです。IIoTコネクティビティ・サーバーである[Neuronは、エッジ・ノード](https://neugates.io/)として機能し、OTデバイスのスマート化を支援し、非同期でSparkplug 3.0メッセージを報告することができます。
+世界有数の[オープンソースMQTTブローカー](https://github.com/emqx/emqx)であるEMQXは、すべてのSparkplug 3.0メッセージトラフィックを管理するインフラの主要コンポーネントです。IIoTコネクティビティ・サーバーである[Neuronは、エッジ・ノード](https://neugates.io/)として機能し、OTデバイスのスマート化を支援し、非同期でSparkplug 3.0メッセージを報告することができます。
 
 
 

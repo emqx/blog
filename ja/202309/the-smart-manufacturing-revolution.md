@@ -120,7 +120,7 @@ IIoT は、通信して意思決定を行うことができるインテリジェ
 
 ## EMQX を使用した IIoT のソリューション
 
-EMQは、業界トップクラスの[MQTTブローカー](https://www.emqx.io/ja)との深い統合を特徴とする、産業データオペレーションとデータ中心の自動化のための軽量なコネクティビティサーバー[Neuron](https://www.emqx.com/ja/products/neuronex)を提供しています。Neuronは、スマートな製造業にいくつかの大きなメリットをもたらし、IIoTコネクティビティを簡素化し、データ統合を強化し、リアルタイム通信と分析を可能にします。 
+EMQは、業界トップクラスの[MQTTブローカー](https://github.com/emqx/emqx)との深い統合を特徴とする、産業データオペレーションとデータ中心の自動化のための軽量なコネクティビティサーバー[Neuron](https://www.emqx.com/ja/products/neuronex)を提供しています。Neuronは、スマートな製造業にいくつかの大きなメリットをもたらし、IIoTコネクティビティを簡素化し、データ統合を強化し、リアルタイム通信と分析を可能にします。 
 
 賢いメーカーであれば、[EMQX](https://www.emqx.com/ja/products/emqx)と Neuron が次の点で役立ちます。
 

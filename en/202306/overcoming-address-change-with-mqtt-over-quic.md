@@ -200,7 +200,7 @@ MQTT over QUIC emerged as a powerful solution to address these challenges. By le
 
 Through the step-by-step demonstration, we showcased the effectiveness of MQTT over QUIC in handling client address migration. By adopting MQTT over QUIC, developers and organizations can enhance the reliability, scalability, and overall performance of their MQTT-based systems. 
 
-As IoT applications continue to evolve in dynamic network environments, MQTT over QUIC proves to be a valuable protocol choice with its ability to handle address migration seamlessly. With the effort of [EMQX](https://www.emqx.io/) as the first MQTT broker that supports MQTT over QUIC, we can expect further advancements in addressing network related challenges and enabling seamless communication in the ever-expanding world of IoT.
+As IoT applications continue to evolve in dynamic network environments, MQTT over QUIC proves to be a valuable protocol choice with its ability to handle address migration seamlessly. With the effort of [EMQX](https://github.com/emqx/emqx) as the first MQTT broker that supports MQTT over QUIC, we can expect further advancements in addressing network related challenges and enabling seamless communication in the ever-expanding world of IoT.
 
 
 

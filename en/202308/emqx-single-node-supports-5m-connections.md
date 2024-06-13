@@ -18,7 +18,7 @@ Machine Details:
 
 | Service                      | Deployment  | Version | OS       | CPU  | Memory | Cloud Host model |
 | :--------------------------- | :---------- | :------ | :------- | :--- | :----- | :--------------- |
-| [EMQX](https://www.emqx.io/) | single node | 5.0.21  | RHEL 8.5 | 64C  | 128G   | hfc6.16xlarge    |
+| [EMQX](https://github.com/emqx/emqx) | single node | 5.0.21  | RHEL 8.5 | 64C  | 128G   | hfc6.16xlarge    |
 
 ## Test Tool
 

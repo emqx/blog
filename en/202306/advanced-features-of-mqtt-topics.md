@@ -67,7 +67,7 @@ sensor/bedroom/1/temperature
 
 The topics starting with `$SYS/` are system topics mainly used to get metadata about the MQTT broker's running status, statistics, client online/offline events, etc. `$SYS/` topic is not defined in the MQTT specification. However, most [MQTT brokers](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) follow this [recommendation](https://github.com/mqtt/mqtt.org/wiki/SYS-Topics).
 
-For example, the [EMQX](https://www.emqx.io/) supports getting cluster status through the following topics.
+For example, the [EMQX](https://github.com/emqx/emqx) supports getting cluster status through the following topics.
 
 | Topic                           | Description              |
 | ------------------------------- | ------------------------ |

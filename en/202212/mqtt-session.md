@@ -31,7 +31,7 @@ Clean Session is a flag bit used to control the life cycle of the session state.
 
 > **Note:** A Persistent Session can be resumed only if the client connects again using a fixed Client ID. If the Client ID is dynamic, a new Persistent Session will be created after a successful connection.
 
-The following is the Dashboard of the [open-source MQTT broker EMQX](https://www.emqx.io/). You can see that the connection in the diagram is disconnected, but because it is a Persistent Session, it can still be viewed in the Dashboard.
+The following is the Dashboard of the [open-source MQTT broker EMQX](https://github.com/emqx/emqx). You can see that the connection in the diagram is disconnected, but because it is a Persistent Session, it can still be viewed in the Dashboard.
 
 ![MQTT Connections](https://assets.emqx.com/images/f66ac8daa11ef2ff5df6b466cd81b510.png)
 

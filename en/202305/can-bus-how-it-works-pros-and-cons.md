@@ -6,7 +6,7 @@ CAN bus was originally designed for automotive applications by Bosch in the 1980
 
 CAN bus data can provide valuable insights into the performance and status of the connected devices. However, collecting and processing CAN bus data can be challenging due to the high data rate, low bandwidth, and variable network conditions.
 
-One possible solution to overcome these challenges is to use [MQTT](https://www.emqx.com/en/mqtt-guide), enabling timely data transmission from cars to cloud even with weak network conditions. [EMQX is an open-source MQTT broker](https://www.emqx.io/) that can help you build a reliable and scalable MQTT infrastructure for collecting CAN bus data.
+One possible solution to overcome these challenges is to use [MQTT](https://www.emqx.com/en/mqtt-guide), enabling timely data transmission from cars to cloud even with weak network conditions. [EMQX is an open-source MQTT broker](https://github.com/emqx/emqx) that can help you build a reliable and scalable MQTT infrastructure for collecting CAN bus data.
 
 ![Collecting CAN bus data](https://assets.emqx.com/images/e8c8c72601898e841855a8efa306d63e.png)
 
@@ -188,7 +188,7 @@ The most mature usage is to achieve flexible data collection. Besides that, eKui
 
 ## Using MQTT to Collect CAN Bus Data
 
-Using an MQTT broker like [EMQX](https://www.emqx.io/) for collecting CAN bus data can offer several benefits, such as:
+Using an MQTT broker like [EMQX](https://github.com/emqx/emqx) for collecting CAN bus data can offer several benefits, such as:
 
 - Reduced network overhead: MQTT uses a binary format and a minimal header to encode messages, which reduces the network bandwidth consumption and improves the data transmission efficiency.
 - Increased scalability: MQTT can support thousands of concurrent connections and millions of messages per second with a single broker. This can enable large-scale data collection from multiple CAN bus devices without compromising performance or reliability.

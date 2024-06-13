@@ -85,7 +85,7 @@ TLS を実装するには、通信のセキュリティを確保するために�
 
 TLS は、インターネット上で安全に通信する方法を提供します。デバイスごとに専用のシークレットを使用し、正しい認証方法を選択すると、TLS のセキュリティを強化できます。このブログで提供されている実装のベスト プラクティスに従うことで、TLS の能力を最大限に活用して、より安全な IoT プラットフォームを構築できます。
 
-[EMQX に](https://www.emqx.io/ja)は、一方向/双方向認証、X.509 証明書、ロード バランス SSL、その他多くのセキュリティ証明書を含む TLS/SSL のサポートが組み込まれています。EMQX でサポートされるすべてのプロトコルに対して SSL/TLS を有効にし、TLS を使用するように EMQX が提供する HTTP API を構成できます。さらに詳しいガイダンスが必要な場合は、EMQX が提供するものを引き続き調べてください。
+[EMQX に](https://github.com/emqx/emqx)は、一方向/双方向認証、X.509 証明書、ロード バランス SSL、その他多くのセキュリティ証明書を含む TLS/SSL のサポートが組み込まれています。EMQX でサポートされるすべてのプロトコルに対して SSL/TLS を有効にし、TLS を使用するように EMQX が提供する HTTP API を構成できます。さらに詳しいガイダンスが必要な場合は、EMQX が提供するものを引き続き調べてください。
 
 - [EMQX Enterprise の一方向認証](https://www.emqx.com/en/blog/emqx-server-ssl-tls-secure-connection-configuration-guide)
 - [EMQX Enterprise の双方向認証](https://www.emqx.com/en/blog/enable-two-way-ssl-for-emqx)

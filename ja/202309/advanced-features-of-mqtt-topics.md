@@ -67,7 +67,7 @@ sensor/bedroom/1/temperature
 
 で始まるトピックは、`$SYS/`主に MQTT ブローカーの実行ステータス、統計、クライアントのオンライン/オフライン イベントなどに関するメタデータを取得するために使用されるシステム トピックです。`$SYS/`トピックは MQTT 仕様では定義されていません。ただし、ほとんどの[MQTT ブローカーは](https://www.emqx.com/ja/blog/the-ultimate-guide-to-mqtt-broker-comparison)この[推奨事項](https://github.com/mqtt/mqtt.org/wiki/SYS-Topics)に従っています。
 
-たとえば、[EMQX は](https://www.emqx.io/ja)、次のトピックを通じてクラスターのステータスの取得をサポートしています。
+たとえば、[EMQX は](https://github.com/emqx/emqx)、次のトピックを通じてクラスターのステータスの取得をサポートしています。
 
 | トピック                        | 説明                        |
 | :------------------------------ | :-------------------------- |

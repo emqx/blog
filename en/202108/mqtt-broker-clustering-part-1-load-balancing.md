@@ -11,7 +11,7 @@ Here is the quote from [https://mqtt.org/](https://mqtt.org/)
 
 [MQTT clients](https://www.emqx.com/en/blog/introduction-to-the-commonly-used-mqtt-client-library) are also similar to HTTP clients: they establish TCP connections to a server and send and receive data. The difference is that HTTP uses a request/response model, while MQTT uses a publish/subscribe model.
 
-A real life example: a temperature sensor in the living room periodically publishes its readings to an [MQTT broker](https://www.emqx.io), a smart-home application may subscribe to the temperature readings and make smart-home decisions for you. For example: turn on the AC when it’s above 32 celsius degrees.
+A real life example: a temperature sensor in the living room periodically publishes its readings to an MQTT broker, a smart-home application may subscribe to the temperature readings and make smart-home decisions for you. For example: turn on the AC when it’s above 32 celsius degrees.
 
 
 

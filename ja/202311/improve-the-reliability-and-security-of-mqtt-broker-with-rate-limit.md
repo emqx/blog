@@ -64,7 +64,7 @@ listeners.tcp.default {
 
 レート制限は、トラフィックを制限してバランスをとることにより、攻撃者が悪意を持ってサーバー リソースを消費し、サービスの信頼性に影響を与えることを防ぎます。また、通常のビジネス変更によるトラフィックの変動にも対応できます。ただし、一部の攻撃では攻撃者が有効なリクエストを送信する必要がなく、レート制限を回避する可能性があります。したがって、サーバー側でもこれらの潜在的なセキュリティ脅威を特定する必要があります。
 
-[EMQX は](https://www.emqx.io/ja)、ユーザーのセキュリティを優先しながら、高い拡張性と可用性を提供する、広く使用されている[MQTT ブローカー](https://www.emqx.com/ja/blog/the-ultimate-guide-to-mqtt-broker-comparison)です。EMQX では、リスナーごとに異なるレート制限を簡単に設定し、指定したクライアント ID または IP をバックリストに追加できます。詳細については、EMQX の[レート制限](https://docs.emqx.com/zh/emqx/v5.0/rate-limit/rate-limit.html)と[ブラックリスト機能のドキュメントを参照してください。](https://docs.emqx.com/zh/emqx/v5.0/access-control/blacklist.html)
+[EMQX は](https://github.com/emqx/emqx)、ユーザーのセキュリティを優先しながら、高い拡張性と可用性を提供する、広く使用されている[MQTT ブローカー](https://www.emqx.com/ja/blog/the-ultimate-guide-to-mqtt-broker-comparison)です。EMQX では、リスナーごとに異なるレート制限を簡単に設定し、指定したクライアント ID または IP をバックリストに追加できます。詳細については、EMQX の[レート制限](https://docs.emqx.com/zh/emqx/v5.0/rate-limit/rate-limit.html)と[ブラックリスト機能のドキュメントを参照してください。](https://docs.emqx.com/zh/emqx/v5.0/access-control/blacklist.html)
 
 
 

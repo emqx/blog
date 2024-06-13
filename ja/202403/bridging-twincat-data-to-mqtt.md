@@ -16,7 +16,7 @@ Beckhoff ADSプラグインを使用すると、ユーザーはTwinCAT PLCから
 
 ### MQTTメッセージの処理にはEMQXを使用します
 
-[EMQX](https://www.emqx.io/ja)は、高性能でスケーラブルな世界最先端のオープンソース分散型IoT [MQTTブローカー](https://www.emqx.com/ja/blog/the-ultimate-guide-to-mqtt-broker-comparison)です。EMQXは、大量のIoTデバイスに効率的で信頼性の高い接続を提供し、メッセージとイベントフローデータの高性能なリアルタイム移動と処理を可能にし、ユーザーが迅速に重要なビジネス向けのIoTプラットフォームとアプリケーションを構築できるよう支援します。
+[EMQX](https://github.com/emqx/emqx)は、高性能でスケーラブルな世界最先端のオープンソース分散型IoT [MQTTブローカー](https://www.emqx.com/ja/blog/the-ultimate-guide-to-mqtt-broker-comparison)です。EMQXは、大量のIoTデバイスに効率的で信頼性の高い接続を提供し、メッセージとイベントフローデータの高性能なリアルタイム移動と処理を可能にし、ユーザーが迅速に重要なビジネス向けのIoTプラットフォームとアプリケーションを構築できるよう支援します。
 
 EMQXはブリッジングアーキテクチャのブローカーコンポーネントであり、NeuronEXはTwinCAT PLCからデータを収集し、データをMQTTメッセージとしてブローカーに転送します。NeuronEXからMQTTメッセージを受信した後、EMQXはデータを転送したり、さらなる処理を行ったりします。
 

@@ -36,7 +36,7 @@ IoTプラットフォームでMQTTとKafkaを統合する際には、いくつ�
 
 ### EMQX Kafkaデータ統合
 
-[EMQX](https://www.emqx.io)は、Kafkaデータ統合機能を通じてKafkaとのシームレスな統合を提供する人気の[MQTTブローカー](https://www.emqx.com/ja/blog/the-ultimate-guide-to-mqtt-broker-comparison)です。MQTTとKafkaの間のブリッジとして、EMQXは2つのプロトコル間のスムーズな通信を可能にします。
+[EMQX](https://github.com/emqx/emqx)は、Kafkaデータ統合機能を通じてKafkaとのシームレスな統合を提供する人気の[MQTTブローカー](https://www.emqx.com/ja/blog/the-ultimate-guide-to-mqtt-broker-comparison)です。MQTTとKafkaの間のブリッジとして、EMQXは2つのプロトコル間のスムーズな通信を可能にします。
 
 この統合により、プロデューサー（Kafkaへのメッセージ送信）とコンシューマー（Kafkaからのメッセージ受信）の2つの役割でKafkaへのデータブリッジを作成できます。EMQXでは、これらの役割のいずれかでデータブリッジを確立できます。双方向のデータ伝送機能により、EMQXはアーキテクチャ設計の柔軟性を提供します。さらに、低遅延と高スループットを提供し、効率的で信頼性の高いデータブリッジ操作を保証します。
 

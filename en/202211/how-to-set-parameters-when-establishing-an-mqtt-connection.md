@@ -47,7 +47,7 @@ For example, `mqtt://broker.emqx.io:1883` is a TCP-based MQTT connection address
 
 **WebSocket-based connection**
 
-The connection address also needs to contain the Path when using a WebSocket connection. The default Path configured for [EMQX](http://www.emqx.io/) is `/mqtt`.
+The connection address also needs to contain the Path when using a WebSocket connection. The default Path configured for [EMQX](https://github.com/emqx/emqx) is `/mqtt`.
 
 For example, `ws://broker.emqx.io:8083/mqtt` is a WebSocket-based MQTT connection address, and `wss://broker.emqx.io:8083/mqtt` is a WebSocket-based MQTT secure connection address.
 

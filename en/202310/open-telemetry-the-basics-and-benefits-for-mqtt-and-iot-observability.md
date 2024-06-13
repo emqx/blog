@@ -100,7 +100,7 @@ Error and fault metrics are essential for understanding the reliability of your 
 
 ## EMQX MQTT Platform: Supporting OpenTelemetry Integration
 
-[EMQX](https://www.emqx.io/), a leader in the field of MQTT brokers, has integrated the robust capabilities of OpenTelemetry. EMQX 5.2 provides a direct channel to send metrics to the OpenTelemetry Collector, using the gRPC OTEL protocol.
+[EMQX](https://github.com/emqx/emqx), a leader in the field of MQTT brokers, has integrated the robust capabilities of OpenTelemetry. EMQX 5.2 provides a direct channel to send metrics to the OpenTelemetry Collector, using the gRPC OTEL protocol.
 
 This integration not only optimizes data transmission but also ensures telemetry data can be effectively directed, processed, and adapted to diverse backends, from open-source platforms like Jaeger and Prometheus to specialized commercial solutions.
 

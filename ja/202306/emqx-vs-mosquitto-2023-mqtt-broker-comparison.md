@@ -2,7 +2,7 @@
 
 MQTT（Message Queuing Telemetry Transport）は、IoT（Internet of Things）のデファクトスタンダードなメッセージングプロトコルである。IoTの発展に伴い、[MQTTブローカー](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison)はIoT機器の接続や、接続された機器とクラウドサービス間のデータ移動に不可欠になっています。
 
-[EMQX](https://www.emqx.io/)と[Mosquitto](https://mosquitto.org/)は、最も人気のあるオープンソースのMQTTブローカーの2つです。EMQXは、拡張性の高い分散型MQTTブローカーで、クラスタリングをサポートしています。Mosquittoは、フットプリントが小さく、シングルスレッド・アーキテクチャの軽量なMQTTブローカーです。
+[EMQX](https://github.com/emqx/emqx)と[Mosquitto](https://mosquitto.org/)は、最も人気のあるオープンソースのMQTTブローカーの2つです。EMQXは、拡張性の高い分散型MQTTブローカーで、クラスタリングをサポートしています。Mosquittoは、フットプリントが小さく、シングルスレッド・アーキテクチャの軽量なMQTTブローカーです。
 
 このブログ記事では、2023年の2つのブローカーを詳細に比較します。
 
@@ -247,7 +247,7 @@ EMQXは、高可用性と水平方向のスケーラビリティをサポート�
 
 - [Eclipse Mosquitto](https://mosquitto.org/)
 - [Eclipse Mosquitto Documentation](https://mosquitto.org/documentation/)
-- [EMQX: The World's #1 Open Source Distributed MQTT Broker](https://www.emqx.io/)
+- [EMQX: The World's #1 Open Source Distributed MQTT Broker](https://github.com/emqx/emqx)
 - [EMQX 5.0 Documentation](https://docs.emqx.com/en/emqx/v5.0/)
 - [EMQX Enterprise Documentation](https://docs.emqx.com/en/enterprise/v5.0/)
 - [EMQX Operator Documentation](https://docs.emqx.com/en/emqx-operator/latest/)

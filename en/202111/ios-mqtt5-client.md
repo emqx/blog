@@ -175,7 +175,7 @@ If you use the APIs related to `beginBackgroundTaskWithName` and `endBackgroundT
 
 ## Summary
 
-So far, we have connected the CocoaMQTT client to the public MQTT Broker and realized the connection, message publishing, and subscription between the client and the [MQTT Broker](https://www.emqx.io).
+So far, we have connected the CocoaMQTT client to the public MQTT Broker and realized the connection, message publishing, and subscription between the client and the MQTT broker.
 
 > Get the code from [https://github.com/emqx/CocoaMQTT/tree/master/Example](https://github.com/emqx/CocoaMQTT/tree/master/Example). 
 

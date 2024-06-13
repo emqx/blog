@@ -64,7 +64,7 @@ This feature is particularly useful in scenarios where you have multiple instanc
 
 ## Current Support of Broker and Client SDKs in MQTT 5.0
 
-The MQTT 5.0 protocol has been well received by the IoT community, and numerous [MQTT brokers](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) and client Software Development Kits (SDKs) have added support for it. Major MQTT brokers, like [EMQX](https://www.emqx.io/), [Mosquitto](https://www.emqx.com/en/blog/mosquitto-mqtt-broker-pros-cons-tutorial-and-modern-alternatives) and [NanoMQ](https://nanomq.io/), have already implemented MQTT 5.0 features in their platforms, allowing users to leverage the new protocol's benefits.
+The MQTT 5.0 protocol has been well received by the IoT community, and numerous [MQTT brokers](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) and client Software Development Kits (SDKs) have added support for it. Major MQTT brokers, like [EMQX](https://github.com/emqx/emqx), [Mosquitto](https://www.emqx.com/en/blog/mosquitto-mqtt-broker-pros-cons-tutorial-and-modern-alternatives) and [NanoMQ](https://nanomq.io/), have already implemented MQTT 5.0 features in their platforms, allowing users to leverage the new protocol's benefits.
 
 On the client SDK front, libraries like Paho, which have a broad user base, have added support for MQTT 5.0. This means developers can now utilize MQTT 5.0 features in their IoT applications. Other examples of client SDKs that support MQTT 5.0 are [MQTT.js](https://www.emqx.com/en/blog/mqtt-js-tutorial) and [MQTTnet](https://www.emqx.com/en/blog/connecting-to-serverless-mqtt-broker-with-mqttnet-in-csharp).
 

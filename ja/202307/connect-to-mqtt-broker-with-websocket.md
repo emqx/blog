@@ -32,7 +32,7 @@ MQTT over WebSocketは、IoTデバイスへのアクセスを民主化し、ウ�
 
 -  **プライベート展開**
 
-  [EMQX](https://www.emqx.io/)は、IoT、IIoT、コネクテッドカー向けの最もスケーラブルなオープンソースのMQTTブローカーです。以下のDockerコマンドを実行することでEMQXをインストールすることができます。
+  [EMQX](https://github.com/emqx/emqx)は、IoT、IIoT、コネクテッドカー向けの最もスケーラブルなオープンソースのMQTTブローカーです。以下のDockerコマンドを実行することでEMQXをインストールすることができます。
 
   ```
   docker run -d --name emqx -p 1883:1883 -p 8083:8083 -p 8084:8084 -p 8883:888 -p 18083:18083 emqx/emqx
@@ -275,7 +275,7 @@ WebSocketは、単一のTCPコネクション上で持続的な全二重通信�
 
 ### EMQXに接続する際にパスを入力する必要があるのはなぜですか？
 
-WebSocket を使用して EMQX に接続する場合は、パスを入力する必要があります。これは、[EMQX](https://www.emqx.io/) が MQTT-WebSocket の統一パス仕様に従っているためです。この仕様では、MQTT over WebSocket トラフィックを識別および区別するために、WebSocket 接続で特定のパスを指定する必要があります。このパスは、MQTT over WebSocket トラフィックを MQTT Broker にルーティングして処理します。
+WebSocket を使用して EMQX に接続する場合は、パスを入力する必要があります。これは、[EMQX](https://github.com/emqx/emqx) が MQTT-WebSocket の統一パス仕様に従っているためです。この仕様では、MQTT over WebSocket トラフィックを識別および区別するために、WebSocket 接続で特定のパスを指定する必要があります。このパスは、MQTT over WebSocket トラフィックを MQTT Broker にルーティングして処理します。
 
 EMQX では、MQTT over WebSocket のデフォルト・パスは `/mqtt` です。これは仕様に従って設定されています。したがって、EMQX に接続する場合は、接続が MQTT ブローカーに正しくルーティングされるように、このパスを WebSocket アドレスに含める必要があります。
 
