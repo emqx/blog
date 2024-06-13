@@ -1,6 +1,6 @@
 We are happy to announce that now [EMQX](https://github.com/emqx/emqx/) can be built using Elixir!
 
-What does that mean?  EMQX is the most popular open source [MQTT broker](https://www.emqx.io), written in Erlang, which makes it highly scalable and with high-performance real-time message processing.  The Erlang EMQX releases will remain as always, and added to that there will be some packages that are built using Elixir's Mix build tool.  These work just as the Erlang ones, with the difference that the shell you have available when using EMQX's console is [IEx](https://hexdocs.pm/iex/1.13/IEx.html).
+What does that mean?  EMQX is the most popular open source MQTT broker, written in Erlang, which makes it highly scalable and with high-performance real-time message processing.  The Erlang EMQX releases will remain as always, and added to that there will be some packages that are built using Elixir's Mix build tool.  These work just as the Erlang ones, with the difference that the shell you have available when using EMQX's console is [IEx](https://hexdocs.pm/iex/1.13/IEx.html).
 
 Here are a few benefits of building with Elixir:
 

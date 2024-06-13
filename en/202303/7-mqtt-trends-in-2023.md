@@ -104,7 +104,7 @@ In traditional IIoT systems, OT and IT systems have generally been separate and 
 
 ![MQTT Unified Namespace](https://assets.emqx.com/images/4bd773c5f0197e690c0c819f75940d95.png)
 
-In 2023, with [EMQX](https://www.emqx.io/) or [NanoMQ](https://nanomq.io/) MQTT broker empowered by [Neuron](https://neugates.io/) Gateway, the latest open source IIoT connectivity server, building a UNS architecture empowered by the most advanced technology from the IT world is just within grasp.
+In 2023, with [EMQX](https://github.com/emqx/emqx) or [NanoMQ](https://nanomq.io/) MQTT broker empowered by [Neuron](https://neugates.io/) Gateway, the latest open source IIoT connectivity server, building a UNS architecture empowered by the most advanced technology from the IT world is just within grasp.
 
 >Learn more: [Unified Namespace (UNS): Next-Generation Data Fabric for IIoT](https://www.emqx.com/en/blog/unified-namespace-next-generation-data-fabric-for-iiot)
 

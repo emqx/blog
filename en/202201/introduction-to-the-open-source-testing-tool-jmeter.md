@@ -4,7 +4,7 @@ The IoT industry is developing explosively. As the scale of endpoints continues 
 
 On the one hand, performance test provides a basis for evaluating IoT systems, which can be verified from multiple dimensions of design indicators, scalability and reliability. On the other hand, performance test also helps to optimize IoT systems and find system performance bottlenecks as soon as possible, so as to provide optimization suggestions. In addition, performance test can also assist the formulation of capacity plans and provide a reference for future capacity expansion plan.
 
-The IoT system has the features of large amount of access devices, diverse protocols, complex integration architecture, and frequent cross-departmental development collaboration, which also makes the IoT performance test face many challenges. **This series of articles will take the IoT platform based on [EMQX](https://www.emqx.io) as an example to introduce how to use performance test tools to verify and test platform-related quality indicators.**
+The IoT system has the features of large amount of access devices, diverse protocols, complex integration architecture, and frequent cross-departmental development collaboration, which also makes the IoT performance test face many challenges. **This series of articles will take the IoT platform based on [EMQX](https://www.emqx.com/en/products/emqx) as an example to introduce how to use performance test tools to verify and test platform-related quality indicators.**
 
 ## Selection of the test tool -- Introduction to JMeter
 

@@ -38,7 +38,7 @@ import 'package:mqtt_client/mqtt_client.dart';
 
 ### MQTTブローカーへの接続
 
-この記事では、[EMQX Cloud](https://www.emqx.com/ja/cloud)によって運用・管理されている[MQTTブローカー](https://www.emqx.io/ja/mqtt/public-mqtt5-broker)を使用します。 EMQX Cloudは、EMQによってリリースされた[MQTT IoTクラウド](https://www.emqx.com/ja/cloud)サービスプラットフォームで、オールインワンの運用・保守とユニークな分離環境での**MQTT 5.0**へのアクセスサービスを提供します。
+この記事では、[EMQX Cloud](https://www.emqx.com/ja/cloud)によって運用・管理されている[MQTTブローカー](https://www.emqx.com/ja/mqtt/public-mqtt5-broker)を使用します。 EMQX Cloudは、EMQによってリリースされた[MQTT IoTクラウド](https://www.emqx.com/ja/cloud)サービスプラットフォームで、オールインワンの運用・保守とユニークな分離環境での**MQTT 5.0**へのアクセスサービスを提供します。
 
 - ブローカー: `broker.emqx.io`
 - TCPポート: **1883**

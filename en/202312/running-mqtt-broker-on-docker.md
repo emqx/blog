@@ -4,7 +4,7 @@
 
 This combination provides a scalable and reliable solution to handle data streams in real-time, particularly in IoT applications. The MQTT broker receives messages from publishers (devices or applications that produce data) and dispatches them to subscribers (devices or applications that consume data). By running the broker on Docker, you can make it easier to deploy and scale your MQTT broker.
 
-We’ll show how to deploy MQTT on Docker with [EMQX](https://www.emqx.io/), a popular, open source MQTT broker. EMQX provides powerful capabilities not available in other open source brokers, such as clustering, persistence, and support for very large scale deployments.
+We’ll show how to deploy MQTT on Docker with [EMQX](https://github.com/emqx/emqx), a popular, open source MQTT broker. EMQX provides powerful capabilities not available in other open source brokers, such as clustering, persistence, and support for very large scale deployments.
 
 ## Why Should You Run an MQTT Broker on Docker?
 

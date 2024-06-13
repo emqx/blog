@@ -1,6 +1,6 @@
 [PHP](https://www.php.net) is a widely-used open source multi-purpose scripting language, which can be embedded in HTML and is especially suitable for Web development.
 
-This article mainly introduces how to use the `php-mqtt/client` client library in PHP projects to implement the functions of connection, subscription, unsubscribing, message receiving and sending between [MQTT client](https://www.emqx.com/en/blog/mqtt-client-tools) and [MQTT broker](https://www.emqx.io).
+This article mainly introduces how to use the `php-mqtt/client` client library in PHP projects to implement the functions of connection, subscription, unsubscribing, message receiving and sending between [MQTT client](https://www.emqx.com/en/blog/mqtt-client-tools) and [MQTT broker](https://github.com/emqx/emqx).
 
 
 

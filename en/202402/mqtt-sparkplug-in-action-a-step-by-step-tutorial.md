@@ -18,7 +18,7 @@ In the context of MQTT Sparkplug, edge nodes are responsible for implementing th
 
 In this blog, we will demonstrate how to get started with MQTT Sparkplug using EMQX and Neuron.
 
-[EMQX](https://www.emqx.io/) is a popular MQTT broker that supports the Sparkplug protocol, while Neuron is an [industrial IoT platform](https://www.emqx.com/en/blog/iiot-platform-key-components-and-5-notable-solutions) that can be used to collect data from industrial devices and generate Sparkplug messages for applications.
+[EMQX](https://github.com/emqx/emqx) is a popular MQTT broker that supports the Sparkplug protocol, while Neuron is an [industrial IoT platform](https://www.emqx.com/en/blog/iiot-platform-key-components-and-5-notable-solutions) that can be used to collect data from industrial devices and generate Sparkplug messages for applications.
 
 [Neuron](https://neugates.io/) can collect the data from the devices and publish Sparkplug messages to the EMQX broker based on the data by reporting changes. EMQX will forward the messages to the application that subscribes to the relevant Sparkplug topic. However, EMQX is able to decode the Sparkplug messages through the rules engine. The messages are then used for data platforms, persistent storage for historical, and so on.
 
@@ -26,7 +26,7 @@ In this blog, we will demonstrate how to get started with MQTT Sparkplug using E
 
 ### Install EMQX
 
-Download and install the EMQX MQTT broker on your server or machine. EMQX provides a community edition that can be downloaded for free from their website. Visit the website [http://www.emqx.io/](https://docs.emqx.com/en/emqx/latest/deploy/install.html) and follow the documentation.
+Download and install the EMQX MQTT broker on your server or machine. EMQX provides a community edition that can be downloaded for free from their website. Visit the website [https://docs.emqx.com/en/emqx/latest/deploy/install.html](https://docs.emqx.com/en/emqx/latest/deploy/install.html) and follow the documentation.
 
 ### Create Schema Registry in EMQX
 

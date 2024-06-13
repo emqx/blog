@@ -42,7 +42,7 @@ MQTT ブローカー・アーキテクチャには、集中型と分散型があ
 
 ### EMQX
 
-[EMQX](https://www.emqx.io/)は現在、IoTアプリケーション向けの最もスケーラブルなMQTTブローカーである。ミリ秒以下のレイテンシーで1秒間に数百万のMQTTメッセージを処理し、単一のクラスタ内で1億以上のクライアント間のメッセージングを可能にする。EMQXはMQTT 5.0および3.xに準拠しており、分散IoTネットワークに最適で、クラウド、Microsoft Azure、Amazon Web Services、Google Cloud上で実行できる。このブローカーはTLS/SSL上でMQTTを実装でき、PSK、JWT、X.509などの認証メカニズムをサポートしている。Mosquittoとは異なり、EMQXはCLI、HTTP API、ダッシュボードによるクラスタリングをサポートしている。
+[EMQX](https://github.com/emqx/emqx)は現在、IoTアプリケーション向けの最もスケーラブルなMQTTブローカーである。ミリ秒以下のレイテンシーで1秒間に数百万のMQTTメッセージを処理し、単一のクラスタ内で1億以上のクライアント間のメッセージングを可能にする。EMQXはMQTT 5.0および3.xに準拠しており、分散IoTネットワークに最適で、クラウド、Microsoft Azure、Amazon Web Services、Google Cloud上で実行できる。このブローカーはTLS/SSL上でMQTTを実装でき、PSK、JWT、X.509などの認証メカニズムをサポートしている。Mosquittoとは異なり、EMQXはCLI、HTTP API、ダッシュボードによるクラスタリングをサポートしている。
 
 <section class="promotion">
     <div>
@@ -175,7 +175,7 @@ MQTTブローカーを選ぶ際のポイントや評価プロセスを支援す�
 
 ## EMQX: 世界で最もスケーラブルなMQTTブローカー
 
-[EMQX](https://www.emqx.io/) は1.15万のスターを獲得している人気のMQTTブローカーの一つで、GitHub上にあるEMQXプロジェクトは2012年に立ち上げられ、Apache version 2.0のライセンス下にある。EMQXは大規模にスケーラブルなソフトリアルタイムシステムを構築するためのErlang/OTPプログラミング言語で書かれている。
+[EMQX](https://github.com/emqx/emqx) は1.15万のスターを獲得している人気のMQTTブローカーの一つで、GitHub上にあるEMQXプロジェクトは2012年に立ち上げられ、Apache version 2.0のライセンス下にある。EMQXは大規模にスケーラブルなソフトリアルタイムシステムを構築するためのErlang/OTPプログラミング言語で書かれている。
 
 EMQXはMQTT 5.0、MQTT-SN、[MQTT over QUIC](https://www.emqx.com/ja/blog/mqtt-over-quic)のような高度な機能をサポートする世界で最もスケーラブルなMQTTブローカーです。ハイアベイラビリティと水平方向スケーラビリティのためにマスタレスクラスタリングをサポートしています。最新版のEMQX 5.0は、23ノードのシングルクラスタで100万の同時MQTT接続を確立することができます
 

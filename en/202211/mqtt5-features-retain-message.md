@@ -84,7 +84,7 @@ Retained messages are not part of session states, meaning retained messages are 
 
 ## MQTT Retained Messages in EMQX
 
-[EMQX](https://www.emqx.io/) is the most popular MQTT Broker, with over 10 million downloads worldwide. Recently, [EMQX released version 5.0](https://www.emqx.com/en/blog/emqx-v-5-0-released), which achieved [100 million MQTT connections + 1 million message throughput](https://www.emqx.com/en/blog/how-emqx-5-0-achieves-100-million-mqtt-connections) per second through a 23-node cluster, making EMQX 5.0 the most scalable MQTT Broker worldwide so far.
+[EMQX](https://github.com/emqx/emqx) is the most popular MQTT Broker, with over 10 million downloads worldwide. Recently, [EMQX released version 5.0](https://www.emqx.com/en/blog/emqx-v-5-0-released), which achieved [100 million MQTT connections + 1 million message throughput](https://www.emqx.com/en/blog/how-emqx-5-0-achieves-100-million-mqtt-connections) per second through a 23-node cluster, making EMQX 5.0 the most scalable MQTT Broker worldwide so far.
 
 EMQX 5.0 supports viewing and setting retained messages in the built-in Dashboard. You may use the following command to install EMQX 5.0 open-source version for trial.
 

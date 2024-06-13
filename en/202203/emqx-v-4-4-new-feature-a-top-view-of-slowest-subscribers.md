@@ -1,6 +1,6 @@
 ## Background
 
-As a [MQTT broker](https://www.emqx.io) admin, you may often want to know which clients are the slowest. We have a nice ‘top’ view for you. One option is perhaps to instrument the subscriber code with latency measurements. However given in MQTT world, the subscribers might be devices out in the wild which are hard to upgrade or collect metrics from.
+As a MQTT broker admin, you may often want to know which clients are the slowest. We have a nice ‘top’ view for you. One option is perhaps to instrument the subscriber code with latency measurements. However given in MQTT world, the subscribers might be devices out in the wild which are hard to upgrade or collect metrics from.
 
 EMQX v4.4 has a nice feature to overcome this challenge.
 

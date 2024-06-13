@@ -4,7 +4,7 @@
 
 [Neuron](https://neugates.io/)は、標準プロトコルまたはデバイス固有のプロトコルを使用して幅広い産業デバイスに接続できる最新の[産業用IoT](https://www.emqx.com/ja/blog/iiot-explained-examples-technologies-benefits-and-challenges)接続サーバーです。Neuronは、リソースが限られたさまざまなIoTエッジハードウェアデバイスで動作するように設計された軽量の産業プロトコルゲートウェイソフトウェアであり、データ中心の自動化装置からのデータアクセスに関する課題を解決することを主な目的としています。
 
-[EMQX](https://www.emqx.io/ja) は、分散型オープンソースの[MQTTブローカー](https://www.emqx.com/ja/blog/the-ultimate-guide-to-mqtt-broker-comparison)です。世界で最もスケーラブルなMQTTメッセージングサーバーとして、EMQXは大量のIoTデバイスへの効率的で信頼性の高い接続を提供し、メッセージとイベントストリームの高性能でリアルタイムな移動と処理を可能にし、ビジネスクリティカルなIoTプラットフォームやアプリケーションの迅速な構築をユーザーに支援します。
+[EMQX](https://github.com/emqx/emqx) は、分散型オープンソースの[MQTTブローカー](https://www.emqx.com/ja/blog/the-ultimate-guide-to-mqtt-broker-comparison)です。世界で最もスケーラブルなMQTTメッセージングサーバーとして、EMQXは大量のIoTデバイスへの効率的で信頼性の高い接続を提供し、メッセージとイベントストリームの高性能でリアルタイムな移動と処理を可能にし、ビジネスクリティカルなIoTプラットフォームやアプリケーションの迅速な構築をユーザーに支援します。
 
 Neuronの南向きOPC UAドライバーによって収集および集約されたOPC UAデータソースは、MQTTプロトコルに変換され、EMQX MQTTブローカーに伝送されます。後者はそれらをさまざまざまな分散アプリケーションに配布します。
 

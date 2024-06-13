@@ -6,7 +6,7 @@ CAN Busは、1980年代にBosch社によって自動車用に設計されたも�
 
 CAN Busデータは、接続されたデバイスのパフォーマンスとステータスに関する貴重な洞察を提供することができます。しかし、CAN Busデータの収集と処理は、高いデータレート、低い帯域幅、および変化するネットワーク条件のために困難である可能性があります。
 
-これらの課題を克服するための一つの解決策として、[MQTT](https://www.emqx.com/ja/blog/the-easiest-guide-to-getting-started-with-mqtt)を使用することが考えられ、弱いネットワーク条件でも自動車からクラウドへのタイムリーなデータ伝送を可能にします。EMQXは[オープンソースのMQTTブローカー](https://www.emqx.io/)で、CAN Busデータを収集するための信頼性と拡張性の高いMQTTインフラストラクチャを構築するのに役立ちます。
+これらの課題を克服するための一つの解決策として、[MQTT](https://www.emqx.com/ja/blog/the-easiest-guide-to-getting-started-with-mqtt)を使用することが考えられ、弱いネットワーク条件でも自動車からクラウドへのタイムリーなデータ伝送を可能にします。EMQXは[オープンソースのMQTTブローカー](https://github.com/emqx/emqx)で、CAN Busデータを収集するための信頼性と拡張性の高いMQTTインフラストラクチャを構築するのに役立ちます。
 
 ![CAN Bus](https://assets.emqx.com/images/e8c8c72601898e841855a8efa306d63e.png)
 
@@ -184,7 +184,7 @@ SELECT signal1, signal2 FROM canStream WHERE signal1 > 100
 
 ## MQTTを使ったCAN Busのデータ収集
 
-CAN Busのデータ収集に[EMQX](https://www.emqx.io/)のようなMQTTブローカーを使用すると、以下のようなメリットがあります：
+CAN Busのデータ収集に[EMQX](https://github.com/emqx/emqx)のようなMQTTブローカーを使用すると、以下のようなメリットがあります：
 
 - ネットワークのオーバーヘッドを削減：MQTTは、バイナリフォーマットと最小限のヘッダーを使用してメッセージをエンコードするため、ネットワーク帯域幅の消費を抑え、データ伝送効率を向上させることができます。
 - スケーラビリティの向上：MQTTは、1つのブローカーで数千の同時接続と数百万メッセージ/秒をサポートすることができます。これにより、性能や信頼性を損なうことなく、複数のCAN Busデバイスから大規模なデータ収集を行うことができます。

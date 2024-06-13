@@ -6,7 +6,7 @@ OASIS Open is one of the most respected, nonprofit international open source and
 
 ## Pioneering Participant in MQTT and the IoT Messaging
 
-EMQ has been working on [EMQX](https://www.emqx.io/), the open source distributed MQTT broker which is fully compatible with MQTT 3.1 and 3.1.1 specifications since 2013. Then when MQTT became an OASIS open standard in 2016, we actively engaged in the development and discussion of the MQTT 5.0 specification. It’s EMQX that innovatively introduced the [shared subscription](https://www.emqx.com/en/blog/introduction-to-mqtt5-protocol-shared-subscription) features back when the specification was still in draft form.
+EMQ has been working on [EMQX](https://github.com/emqx/emqx), the open source distributed MQTT broker which is fully compatible with MQTT 3.1 and 3.1.1 specifications since 2013. Then when MQTT became an OASIS open standard in 2016, we actively engaged in the development and discussion of the MQTT 5.0 specification. It’s EMQX that innovatively introduced the [shared subscription](https://www.emqx.com/en/blog/introduction-to-mqtt5-protocol-shared-subscription) features back when the specification was still in draft form.
 
 One of the most game-changing releases so far came in 2020 when EMQ introduced EMQX 4.0, the world's first cloud-native MQTT 5.0 Server with the full latest specification support. Now EMQX has become the world's most popular cloud-native distributed MQTT broker with a high-performance real-time message processing engine, connecting more than 100 million IoT devices worldwide for IoT data movement, processing and analytics.
 

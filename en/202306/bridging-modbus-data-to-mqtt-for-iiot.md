@@ -67,11 +67,11 @@ Therefore, in the field of IoT, MQTT is more suitable for message transmission i
 
 The Modbus to MQTT bridging architecture consists of two main components: the Modbus data source and the [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison). The data source sends Modbus data to the MQTT broker, which then receives and forwards it. To achieve this process, two essential elements are required: an edge device responsible for converting the Modbus protocol into MQTT and transmitting the data to the MQTT broker, and an MQTT broker that handles MQTT messages.
 
-In this article, we use [Neuron](https://neugates.io/) and [EMQX](https://www.emqx.io/) to implement the bridging process.
+In this article, we use [Neuron](https://neugates.io/) and [EMQX](https://github.com/emqx/emqx) to implement the bridging process.
 
 [Neuron](https://neugates.io/) is a modern [industrial IoT](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges) connectivity server that can connect various industrial devices using standard or proprietary protocols, achieving interconnectivity between industrial IoT platforms and devices. As a lightweight industrial software, Neuron can run on various IoT edge hardware devices with limited resources. It aims to solve the problem of difficult unified access to automation equipment data centered around data and provide basic support for intelligent manufacturing.
 
-[EMQX](https://www.emqx.io/) is the world’s leading open-source distributed IoT MQTT broker with high performance and scalability. EMQX provides efficient and reliable connections for massive IoT devices, enabling high-performance real-time movement and processing of the message and event flow data, helping users quickly build IoT platforms and applications for critical business.
+[EMQX](https://github.com/emqx/emqx) is the world’s leading open-source distributed IoT MQTT broker with high performance and scalability. EMQX provides efficient and reliable connections for massive IoT devices, enabling high-performance real-time movement and processing of the message and event flow data, helping users quickly build IoT platforms and applications for critical business.
 
 The following diagram shows how Neuron collects data from the edge and converts it into MQTT for uploading to EMQX.
 
@@ -266,7 +266,7 @@ By building an open equipment data network, an oil production plant data center 
 
 ![Oil Production Data Acquisition](https://assets.emqx.com/images/5c5a23f0474e9305c1f4d0026176f01b.png)
 
-An overall solution combining Neuron and other EMQ products like [EMQX](https://www.emqx.io/), [eKuiper](https://ekuiper.org/) and [EMQX ECP](https://www.emqx.com/en/products/emqx-ecp) can bring the following benefits to oil industry:
+An overall solution combining Neuron and other EMQ products like [EMQX](https://github.com/emqx/emqx), [eKuiper](https://ekuiper.org/) and [EMQX ECP](https://www.emqx.com/en/products/emqx-ecp) can bring the following benefits to oil industry:
 
 - A system architecture that is light on the frontend and heavy on the backend, reducing field equipment and system operation and maintenance costs.
 - Improved business system responsiveness through real-time reporting of production data by using the MQTT IoT protocol as the main method of data collection and transmission.

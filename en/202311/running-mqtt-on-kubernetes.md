@@ -133,7 +133,7 @@ To deploy EMQX Open Source via the EMQX Operator. To learn more about the EQMX C
 
 ## EMQX: A Kubernetes-Ready MQTT Broker
 
-[EMQX](https://www.emqx.io/) is one of the most popular MQTT brokers. It stands out as a remarkably well-suited MQTT broker for deployment within Kubernetes environments. This type of deployment offers seamless integration of EMQX’s robust messaging capabilities with Kubernetes' ability to handle rapidly changing workloads and efficiently manage containers.
+[EMQX](https://github.com/emqx/emqx) is one of the most popular MQTT brokers. It stands out as a remarkably well-suited MQTT broker for deployment within Kubernetes environments. This type of deployment offers seamless integration of EMQX’s robust messaging capabilities with Kubernetes' ability to handle rapidly changing workloads and efficiently manage containers.
 
 ![MQTT Broker Cluster](https://assets.emqx.com/images/b39739558e71f83c6ecf70c0df22d918.png)
 

@@ -6,7 +6,7 @@ If you're involved in the IoT (Internet of Things) space or have embarked on any
 
 Today, we are going to introduce the key aspect of MQTT, one that's crucial for large-scale IoT deployments - MQTT broker clustering.
 
-This series is not merely a discourse on [EMQX](https://www.emqx.io/); instead, it's an attempt to comprehensively explore current MQTT technologies. We aim to provide insights, stimulate discussion, and hopefully, ignite a spark of innovation in your journey with MQTT and IoT. So, stay tuned as we navigate the fascinating landscape of MQTT broker clustering.
+This series is not merely a discourse on [EMQX](https://github.com/emqx/emqx); instead, it's an attempt to comprehensively explore current MQTT technologies. We aim to provide insights, stimulate discussion, and hopefully, ignite a spark of innovation in your journey with MQTT and IoT. So, stay tuned as we navigate the fascinating landscape of MQTT broker clustering.
 
 ## What is MQTT Broker, and Cluster?
 

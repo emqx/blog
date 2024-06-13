@@ -2,7 +2,7 @@
 
 [ラズベリー・パイ](https://www.raspberrypi.org/)は、イギリスのラズベリー・パイ財団によって開発されたARMベースの小型シングルボードコンピュータである。このボードはUSBインターフェースとイーサネットインターフェースを備えており、キーボード、マウス、ネットワークケーブルを接続することができる。このボードはPCの基本機能を持ち、ラズベリーパイはWi-Fi、Bluetooth、多数のGPIOを統合しており、教育、ファミリー・エンターテインメント、IoTなどで広く使用されている。
 
-このプロジェクトでは、Pythonを使ってRaspberry Pi上にシンプルな[MQTTクライアント](https://www.emqx.com/ja/blog/mqtt-client-tools)を書き、このクライアントと[MQTTブローカー](https://www.emqx.io/ja)間の接続、サブスクリプション、メッセージング、その他の機能を実装する。
+このプロジェクトでは、Pythonを使ってRaspberry Pi上にシンプルな[MQTTクライアント](https://www.emqx.com/ja/blog/mqtt-client-tools)を書き、このクライアントと[MQTTブローカー](https://github.com/emqx/emqx)間の接続、サブスクリプション、メッセージング、その他の機能を実装する。
 
 ## Raspberry Pi MQTTプロジェクトの準備
 

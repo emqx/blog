@@ -87,7 +87,7 @@ MQTTの基本的な構成要素を理解したところで、一般的なワー�
 
 -  **プライベート展開**
 
-  [EMQX](https://www.emqx.io/)は、IoT、IIoT、コネクテッドカー向けの最もスケーラブルなオープンソースのMQTTブローカーです。以下のDockerコマンドを実行することでEMQXをインストールすることができます。
+  [EMQX](https://github.com/emqx/emqx)は、IoT、IIoT、コネクテッドカー向けの最もスケーラブルなオープンソースのMQTTブローカーです。以下のDockerコマンドを実行することでEMQXをインストールすることができます。
 
   ```
   docker run -d --name emqx -p 1883:1883 -p 8083:8083 -p 8084:8084 -p 8883:8883 -p 18083:18083 emqx/emqx

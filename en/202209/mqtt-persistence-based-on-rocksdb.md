@@ -1,6 +1,6 @@
 ## Introduction: Native MQTT session persistence support
 
-The MQTT protocol standard states that the broker must store messages from offline clients. In previous versions, [the open-source version of EMQX ](https://www.emqx.io/)used memory-based session storage, while the enterprise version further provides an external database storage solution for data persistence.
+The MQTT protocol standard states that the broker must store messages from offline clients. In previous versions, [the open-source version of EMQX ](https://github.com/emqx/emqx)used memory-based session storage, while the enterprise version further provides an external database storage solution for data persistence.
 
 This memory-based, non-persistent session storage is the optimal solution based on a trade-off between throughput and latency, but it still imposes limitations on users in certain scenarios.
 

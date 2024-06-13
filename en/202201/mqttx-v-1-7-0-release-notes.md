@@ -19,7 +19,7 @@ In 1.7.0, MQTTX adds a lot of support for the property configuration of MQTT 5.0
 
 To use and test the features of MQTT 5.0, MQTTX v1.7.0 needs to be used with MQTT Broker that supports MQTT 5.0.
 
-Cloud-native distributed [MQTT broker - EMQX](https://www.emqx.io) supports the MQTT 5.0 protocol since version 3.0. It is the first broker in the open-source community to support this protocol specification and is fully compatible with MQTT 3.1 and 3.1.1 protocols. Connecting to EMQX by Using MQTTX, you can quickly use and test the features of MQTT 5.0.
+Cloud-native distributed [MQTT broker - EMQX](https://github.com/emqx/emqx) supports the MQTT 5.0 protocol since version 3.0. It is the first broker in the open-source community to support this protocol specification and is fully compatible with MQTT 3.1 and 3.1.1 protocols. Connecting to EMQX by Using MQTTX, you can quickly use and test the features of MQTT 5.0.
 
 ### Support MQTT 5.0 User Properties
 

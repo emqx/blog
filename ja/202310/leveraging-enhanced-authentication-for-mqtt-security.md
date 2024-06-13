@@ -71,7 +71,7 @@ SCRAM 認証を開始するには、クライアントは、認証方法属性�
 
 強化された認証により、ユーザーはさらに多くの ID 検証方法を導入できるようになります。特定のニーズに適した認証方法を選択し、システムのセキュリティをさらに強化できます。
 
-[EMQX](https://www.emqx.io/ja)は、高いスケーラビリティと可用性で知られる広く使用されている MQTT ブローカーとして、ユーザーのセキュリティの確保を常に優先してきました。[パスワードベースの認証](https://docs.emqx.com/en/emqx/v5.0/access-control/authn/pwoverview.html)に加えて、EMQX は強化認証もサポートしています。ユーザーは、EMQX による SCRAM 認証を有効にして、MQTT インフラストラクチャのセキュリティ レベルを向上させることができます。詳細については、「[MQTT 5.0 強化認証」](https://docs.emqx.com/en/emqx/v5.0/access-control/authn/scram.html#configure-with-dashboard)を参照してください。
+[EMQX](https://github.com/emqx/emqx)は、高いスケーラビリティと可用性で知られる広く使用されている MQTT ブローカーとして、ユーザーのセキュリティの確保を常に優先してきました。[パスワードベースの認証](https://docs.emqx.com/en/emqx/v5.0/access-control/authn/pwoverview.html)に加えて、EMQX は強化認証もサポートしています。ユーザーは、EMQX による SCRAM 認証を有効にして、MQTT インフラストラクチャのセキュリティ レベルを向上させることができます。詳細については、「[MQTT 5.0 強化認証」](https://docs.emqx.com/en/emqx/v5.0/access-control/authn/scram.html#configure-with-dashboard)を参照してください。
 
 
 

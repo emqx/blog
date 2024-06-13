@@ -71,7 +71,7 @@ MQTT protocol has the characteristics of lightweight and high reliable QoS. It c
 
 ### Reduce the cost of hardware and software
 
-The lightweight design of MQTT greatly reduces the hardware requirements from the client to the server. In the EMQ cloud-side data collection solution, the highly available [MQTT broker - EMQX](https://www.emqx.io) in the central computer room of the plant and the lightweight edge industrial gateway Neuron used in production and business replace the expensive SCADA system and data collection and storage server on the field-station side, which reduces the overall hardware and software costs by more than 50%.
+The lightweight design of MQTT greatly reduces the hardware requirements from the client to the server. In the EMQ cloud-side data collection solution, the highly available [MQTT broker - EMQX](https://github.com/emqx/emqx) in the central computer room of the plant and the lightweight edge industrial gateway Neuron used in production and business replace the expensive SCADA system and data collection and storage server on the field-station side, which reduces the overall hardware and software costs by more than 50%.
 
 ### Save labor cost
 

@@ -36,7 +36,7 @@ When integrating MQTT and Kafka in an IoT platform, several viable solutions are
 
 ### EMQX Kafka Data Integration
 
-[EMQX](https://www.emqx.io/) is a popular [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) that offers seamless integration with Kafka through its Kafka Data Integration feature. As a bridge between MQTT and Kafka, EMQX enables smooth communication between the two protocols.
+[EMQX](https://github.com/emqx/emqx) is a popular [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) that offers seamless integration with Kafka through its Kafka Data Integration feature. As a bridge between MQTT and Kafka, EMQX enables smooth communication between the two protocols.
 
 This integration allows the creation of data bridges to Kafka in two roles: producer (sending messages to Kafka) and consumer (receiving messages from Kafka). EMQX allows users to establish data bridges in either of these roles. With its bi-directional data transmission capability, EMQX provides flexibility in architecture design. Additionally, it offers low latency and high throughput, ensuring efficient and reliable data-bridging operations.
 

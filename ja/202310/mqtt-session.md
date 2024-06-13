@@ -30,7 +30,7 @@ Clean Session は、セッション状態のライフサイクルを制御する
 
 > ***注:** Persistent Session は、クライアントが固定クライアント ID を使用して再度接続した場合にのみ再開できます。クライアント ID が動的である場合、接続が成功した後に新しい Persistent Session が作成されます。*
 
-以下は、[オープンソースの MQTT ブローカー EMQX ](https://www.emqx.io/)のダッシュボードです。図の接続は切断されていることがわかりますが、 Persistent Session であるため、ダッシュボードには引き続き表示できます。
+以下は、[オープンソースの MQTT ブローカー EMQX ](https://github.com/emqx/emqx)のダッシュボードです。図の接続は切断されていることがわかりますが、 Persistent Session であるため、ダッシュボードには引き続き表示できます。
 
 ![MQTT Connections](https://assets.emqx.com/images/f66ac8daa11ef2ff5df6b466cd81b510.png)
 

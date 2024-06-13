@@ -44,7 +44,7 @@ IoT メッセージング シナリオに非常に適した QUIC の利点に基
 
 **MQTT over WebSocketの接続**
 
-WebSocket 接続を使用する場合は、接続アドレスにパスも含める必要があります。[EMQX](http://www.emqx.io/ja)に構成されたデフォルトのパスは です`/mqtt`。
+WebSocket 接続を使用する場合は、接続アドレスにパスも含める必要があります。[EMQX](https://github.com/emqx/emqx)に構成されたデフォルトのパスは です`/mqtt`。
 
 たとえば、`ws://broker.emqx.io:8083/mqtt`は WebSocket ベースの MQTT 接続アドレス、 は`wss://broker.emqx.io:8083/mqtt`WebSocket ベースの MQTT セキュア接続アドレスです。
 

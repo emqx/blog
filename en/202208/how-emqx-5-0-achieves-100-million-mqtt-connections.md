@@ -1,6 +1,6 @@
 ## Introduction:  Reaching 100M MQTT connections with a single cluster
 
-Not long ago, the scalable distributed IoT [MQTT broker EMQX](https://www.emqx.io/) released version 5.0. This latest milestone version adopts the new back-end storage architecture, Mria database, and refactors the data replication logic. This makes the horizontal scalability of EMQX 5.0 exponentially improved, and it can more reliably carry larger-scale IoT device connections.
+Not long ago, the scalable distributed IoT [MQTT broker EMQX](https://github.com/emqx/emqx) released version 5.0. This latest milestone version adopts the new back-end storage architecture, Mria database, and refactors the data replication logic. This makes the horizontal scalability of EMQX 5.0 exponentially improved, and it can more reliably carry larger-scale IoT device connections.
 
 In the performance test before the official release of EMQX 5.0, we achieved 100 million MQTT connections + 1 million message throughput per second through a 23-node EMQX cluster for the first time in the world, which also makes EMQX 5.0 the most scalable [MQTT Broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) worldwide so far. 
 

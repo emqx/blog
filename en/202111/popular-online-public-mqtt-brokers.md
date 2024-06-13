@@ -19,7 +19,7 @@ This article selects the following commonly used public MQTT brokers:
 
 ### EMQX
 
-It is a free online [MQTT 5 broker](https://www.emqx.io/) provided by [EMQX Cloud](https://www.emqx.com/en/cloud). There are two access points provided, Global and CN, of which EMQX (Global) is deployed in AWS, Oregon, USA, and EMQX (CN) is deployed in Tencent Cloud, Shanghai.
+It is a free online [MQTT 5 broker](https://www.emqx.com/en/products/emqx) provided by [EMQX Cloud](https://www.emqx.com/en/cloud). There are two access points provided, Global and CN, of which EMQX (Global) is deployed in AWS, Oregon, USA, and EMQX (CN) is deployed in Tencent Cloud, Shanghai.
 
 Both access points are EMQX clusters composed of 2 nodes. Later, more nodes can be automatically added according to the actual access volume and load. According to the background display, the server is based on [EMQX Enterprise](https://www.emqx.com/en/products/emqx) 4.2.6, and the current running time is 128 days.
 

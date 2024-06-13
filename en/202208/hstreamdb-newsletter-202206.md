@@ -26,6 +26,6 @@ The installation instructions can be found at [https://pypi.org/project/hstreamd
 
 ## Integration with EMQX
 
-[EMQX](https://www.emqx.io/) is the world's leading open-source MQTT broker developed by EMQ, which is widely used in the field of IoT. This month, in collaboration with the EMQX R&D team, we have completed an efficient integration of EMQX with HStreamDB. The integration will enable users to utilize and achieve one-stop connection, data access, persistent storage and real-time analytics for IoT devices.
+[EMQX](https://github.com/emqx/emqx) is the world's leading open-source MQTT broker developed by EMQ, which is widely used in the field of IoT. This month, in collaboration with the EMQX R&D team, we have completed an efficient integration of EMQX with HStreamDB. The integration will enable users to utilize and achieve one-stop connection, data access, persistent storage and real-time analytics for IoT devices.
 
 [^1]: Das, A., Gupta, I. and Motivala, A., 2002, June. Swim: Scalable weakly-consistent infection-style process group membership protocol. In *Proceedings International Conference on Dependable Systems and Networks* (pp. 303-312). IEEE.

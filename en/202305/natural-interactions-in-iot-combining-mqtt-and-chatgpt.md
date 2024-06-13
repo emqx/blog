@@ -24,11 +24,11 @@ As mentioned earlier, the MQTT protocol is a lightweight messaging protocol that
 
 > To learn more about MQTT please refer to [MQTT Protocol Explained: The Basics and a Quick Tutorial](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt)
 
-The [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) is the key component for connecting many IoT devices using the MQTT protocol. We will use [EMQX](https://www.emqx.io/), a highly scalable MQTT broker, in our solution to ensure efficient and reliable connection of massive IoT devices and real-time handling and delivery of message and event stream data.
+The [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) is the key component for connecting many IoT devices using the MQTT protocol. We will use [EMQX](https://github.com/emqx/emqx), a highly scalable MQTT broker, in our solution to ensure efficient and reliable connection of massive IoT devices and real-time handling and delivery of message and event stream data.
 
 > The world's most scalable MQTT Broker for IoT
 >
-> For more information please refer to [EMQX](https://www.emqx.io/)
+> For more information please refer to [EMQX](https://github.com/emqx/emqx)
 
 We can use an [MQTT client](https://www.emqx.com/en/blog/mqtt-client-tools) to connect to the MQTT broker and communicate with IoT devices. In this blog, we use [MQTTX](https://mqttx.app), a cross-platform open-source MQTT client that provides desktop, command line, and web-based applications. It can test the connection with MQTT brokers and help developers quickly develop and debug MQTT services and applications.
 
@@ -223,7 +223,7 @@ In the future, we can imagine ChatGPT or smarter AGI tools having more of a role
 
 ## Conclusion
 
-This blog delves deep into the integration of MQTT and ChatGPT, revealing the exciting possibilities they offer in various applications. By utilizing [EMQX](https://www.emqx.io/), [MQTTX](https://mqttx.app/), and the OpenAI API, we explore implementing an AI application similar to ChatGPT. Through seamless data reception and forwarding via MQTT, we successfully demonstrate the integration of MQTT and ChatGPT.
+This blog delves deep into the integration of MQTT and ChatGPT, revealing the exciting possibilities they offer in various applications. By utilizing [EMQX](https://github.com/emqx/emqx), [MQTTX](https://mqttx.app/), and the OpenAI API, we explore implementing an AI application similar to ChatGPT. Through seamless data reception and forwarding via MQTT, we successfully demonstrate the integration of MQTT and ChatGPT.
 
 As AI technology becomes more integrated into products (such as New Bing using GPT models for search engines and GitHub's Copilot), we think that the future trends of AI and IoT technologies will also involve enhancing natural language interactions, making device control smarter, and creating more novel use cases. These technologies are not yet part of the production environment but are on the horizon.
 

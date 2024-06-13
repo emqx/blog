@@ -1,6 +1,6 @@
 [PHP](https://www.php.net/)は、広く使われているオープンソースの多目的スクリプト言語で、HTMLに埋め込むことができ、特にWeb開発に適しています。
 
-この記事では、PHPプロジェクトで`php-mqtt/client`クライアントライブラリを使って、[MQTTクライアント](https://www.emqx.com/ja/blog/mqtt-client-tools)と[MQTTブローカー](https://www.emqx.io/)間の接続、サブスクライブ、サブスクライブ解除、メッセージの受信と送信の機能を実装する方法について主に紹介します。
+この記事では、PHPプロジェクトで`php-mqtt/client`クライアントライブラリを使って、[MQTTクライアント](https://www.emqx.com/ja/blog/mqtt-client-tools)と[MQTTブローカー](https://github.com/emqx/emqx)間の接続、サブスクライブ、サブスクライブ解除、メッセージの受信と送信の機能を実装する方法について主に紹介します。
 
 ## MQTTクライアントライブラリの選択
 

@@ -135,7 +135,7 @@ The following table summarizes the detailed comparison of the two protocols:
 
 CoAP supports communication between low-consumption, low-power devices on constrained networks. While CoAP works well in restricted networks, it falls short when devices need to communicate with external networks. In addition, CoAP lacks support for resource processing centers because it was designed with the M2M network model in mind (the CoAP-based LwM2M protocol introduces concepts such as resource registration and resource services).
 
-This problem can be solved using [EMQX](https://www.emqx.io/), the leading open source MQTT message broker. For CoAP devices that need to communicate with external networks, using EMQX as a broker makes it easy to:
+This problem can be solved using [EMQX](https://github.com/emqx/emqx), the leading open source MQTT message broker. For CoAP devices that need to communicate with external networks, using EMQX as a broker makes it easy to:
 
 - Authenticate devices and reject data from untrustworthy devices.
 - Manage resource permissions, including specifying different resource read/write permissions for different devices.

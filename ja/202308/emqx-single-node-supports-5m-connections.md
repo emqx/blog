@@ -22,7 +22,7 @@
 
 | ブローカー                        | デプロイメント | バージョン  | OS       | CPU | メモリ  | クラウドホストモデル                                                                                                                        |
 | ---------------------------- | ------- | ------ | -------- | --- | ---- | --------------------------------------------------------------------------------------------------------------------------------- |
-| [EMQX](https://www.emqx.io/) | 単一ノード   | 5.0.21 | RHEL 8.5 | 64C | 128G | [hfc6.16xlarge](https://www.alibabacloud.com/help/ja/ecs/user-guide/cpu-options-of-instance-families-with-high-clock-speeds#hfc6) |
+| [EMQX](https://github.com/emqx/emqx) | 単一ノード   | 5.0.21 | RHEL 8.5 | 64C | 128G | [hfc6.16xlarge](https://www.alibabacloud.com/help/ja/ecs/user-guide/cpu-options-of-instance-families-with-high-clock-speeds#hfc6) |
 
 ## テストツール
 

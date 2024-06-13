@@ -295,7 +295,7 @@ Yes, you can use MQTT over WebSocket in non-browser environments. Different prog
 
 ### Why do I need to fill in a path when connecting to EMQX?
 
-A path must be filled in when using WebSocket to connect to [EMQX](https://www.emqx.io/). This is because EMQX follows the unified path specification of MQTT-WebSocket. This specification requires a specific path to be specified in WebSocket connections to identify and distinguish MQTT over WebSocket traffic. This path routes MQTT over WebSocket traffic to the MQTT Broker for processing.
+A path must be filled in when using WebSocket to connect to [EMQX](https://github.com/emqx/emqx). This is because EMQX follows the unified path specification of MQTT-WebSocket. This specification requires a specific path to be specified in WebSocket connections to identify and distinguish MQTT over WebSocket traffic. This path routes MQTT over WebSocket traffic to the MQTT Broker for processing.
 
 In EMQX, the default path for MQTT over WebSocket is `/mqtt`. This is set according to the specification. Therefore, when connecting to EMQX, this path must be included in the WebSocket address to ensure the connection is correctly routed to the MQTT broker.
 

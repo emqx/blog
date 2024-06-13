@@ -51,7 +51,7 @@ Choosing the right platform for IoT in the Cloud can significantly simplify the 
 
 ### EMQX
 
-[EMQX](https://www.emqx.io/) is an open-source IoT platform designed for high-performance and large-scale IoT applications. Its broker is fully compatible with MQTT, a lightweight messaging protocol designed for IoT, ensuring efficient communication between devices and the cloud. Additionally, it provides robust security features, including SSL/TLS encryption and secure device authentication, ensuring data security and privacy.
+[EMQX](https://github.com/emqx/emqx) is an open-source IoT platform designed for high-performance and large-scale IoT applications. Its broker is fully compatible with MQTT, a lightweight messaging protocol designed for IoT, ensuring efficient communication between devices and the cloud. Additionally, it provides robust security features, including SSL/TLS encryption and secure device authentication, ensuring data security and privacy.
 
 EMQX is available as a fully managed service in the cloud: **[Learn more about EMQX Cloud](https://www.emqx.com/en/cloud)**
 

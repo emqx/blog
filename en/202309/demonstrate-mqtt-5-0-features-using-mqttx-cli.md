@@ -1,6 +1,6 @@
 As the most popular communication protocol in the Internet of Things (IoT) field, the latest version of MQTT has already reached 5.0 in 2019. Compared with previous versions, 5.0 has added features more in line with modern IoT application requirements, such as session expiry, reason codes, shared subscriptions, request-response, etc., making it the preferred version for the majority of IoT companies.
 
-To give you a more comprehensive understanding of MQTT 5.0, this article will introduce each new feature introduced in 5.0 in turn, and use the [MQTTX CLI](https://mqttx.app/) tool to demonstrate how we can use these features in [EMQX](https://www.emqx.io/). You can easily run the examples in this article by copying and pasting commands.
+To give you a more comprehensive understanding of MQTT 5.0, this article will introduce each new feature introduced in 5.0 in turn, and use the [MQTTX CLI](https://mqttx.app/) tool to demonstrate how we can use these features in [EMQX](https://github.com/emqx/emqx). You can easily run the examples in this article by copying and pasting commands.
 
 Before we start, we need to complete the following preparations:
 

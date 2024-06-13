@@ -19,7 +19,7 @@ Here is a summary of the 3 projects hosted on GitHub:
 
 |                                     | **EMQX**                                    | **Mosquitto**                                            | **NanoMQ**                                      |
 | :---------------------------------- | :------------------------------------------ | :------------------------------------------------------- | :---------------------------------------------- |
-| **Official Website**                | [EMQX](https://www.emqx.io/)                | [Eclipse Mosquitto](https://mosquitto.org/)              | [NanoMQ](https://nanomq.io/)                    |
+| **Official Website**                | [EMQX](https://github.com/emqx/emqx)                | [Eclipse Mosquitto](https://mosquitto.org/)              | [NanoMQ](https://nanomq.io/)                    |
 | **GitHub Project**                  | [EMQX GitHub](https://github.com/emqx/emqx) | [Mosquitto GitHub](https://github.com/eclipse/mosquitto) | [NanoMQ GitHub](https://github.com/nanomq/nanomq) |
 | **Project Created**                 | 2012                                        | 2009                                                     | 2020                                            |
 | **License**                         | Apache License 2.0                          | EPL/EDL License                                          | MIT License                                     |
@@ -34,7 +34,7 @@ Here is a summary of the 3 projects hosted on GitHub:
 
 ## 1. EMQX
 
-[EMQX](https://www.emqx.io/) is a highly scalable, distributed MQTT broker for enterprise IIoT deployments. It offers extensive support for MQTT 5.0, [MQTT-SN](https://www.emqx.com/en/blog/connecting-mqtt-sn-devices-using-emqx), SSL/TLS encryption, and [MQTT over QUIC](https://www.emqx.com/en/blog/mqtt-over-quic). It further enables masterless clustering to achieve high availability and horizontal scalability.
+[EMQX](https://github.com/emqx/emqx) is a highly scalable, distributed MQTT broker for enterprise IIoT deployments. It offers extensive support for MQTT 5.0, [MQTT-SN](https://www.emqx.com/en/blog/connecting-mqtt-sn-devices-using-emqx), SSL/TLS encryption, and [MQTT over QUIC](https://www.emqx.com/en/blog/mqtt-over-quic). It further enables masterless clustering to achieve high availability and horizontal scalability.
 
 With an impressive 11.5k stars on GitHub, EMQX has established itself as one of the most [popular MQTT brokers](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) available. The EMQX project was launched in 2012 and is licensed under Apache version 2.0. EMQX is written in Erlang/OTP, a programming language for building massively scalable soft real-time systems.
 
@@ -159,7 +159,7 @@ The 3 MQTT brokers can work together to build the UNS architecture. A cohesive s
 
 ## Conclusion
 
-Based on the earlier introduction and comparison, each MQTT broker offers distinct strengths for different deployment scenarios. [EMQX](https://www.emqx.io/) is highly scalable with enterprise features, suitable for cloud deployment. [Mosquitto](https://mosquitto.org/) and [NanoMQ](https://nanomq.io/) are fast and lightweight, ideal for industrial gateways.
+Based on the earlier introduction and comparison, each MQTT broker offers distinct strengths for different deployment scenarios. [EMQX](https://github.com/emqx/emqx) is highly scalable with enterprise features, suitable for cloud deployment. [Mosquitto](https://mosquitto.org/) and [NanoMQ](https://nanomq.io/) are fast and lightweight, ideal for industrial gateways.
 
 These three MQTT brokers play a significant role in industrial IoT applications, leading the way in implementing the UNS architecture and facilitating the convergence of IT and OT domains. When considering your specific IIoT projects, you can choose one or two of these MQTT brokers based on your requirements. By leveraging their strengths, you can create a cohesive system where the MQTT brokers work together, synergizing their capabilities.
 

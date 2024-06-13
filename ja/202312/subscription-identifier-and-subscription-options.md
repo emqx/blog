@@ -34,7 +34,7 @@ SUBSCRIBE パケットには、 Subscription Identifier を 1 つだけ含める
 
 ## デモ
 
-1. Web ブラウザで[MQTTX Web](http://www.emqx.io/ja)にアクセスします。
+1. Web ブラウザで[MQTTX Web](https://mqttx.app/ja)にアクセスします。
 
 2. [MQTT over WebSocket](https://www.emqx.com/ja/blog/connect-to-mqtt-broker-with-websocket)接続を作成し、[無料のパブリック MQTT サーバー](https://www.emqx.com/ja/mqtt/public-mqtt5-broker)に接続します。
 

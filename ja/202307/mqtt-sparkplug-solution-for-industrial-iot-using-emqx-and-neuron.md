@@ -2,11 +2,11 @@
 
 Sparkplugは、産業オートメーションとIoTアプリケーションに特化したMQTTベースの通信プロトコルです。Sparkplugソリューションを実装するためには、[MQTTブローカー](https://www.emqx.com/ja/blog/the-ultimate-guide-to-mqtt-broker-comparison)とエッジノードという2つの重要な要素が必要です。
 
-この記事では、オープンソースの分散MQTTブローカーである[EMQX](https://www.emqx.io/)と、エッジIIoT接続サーバーである[Neuron](https://neugates.io/)を使用して、Sparkplugソリューションを構築するためのスケーラブルで堅牢なプラットフォームを提供します。Sparkplugソリューションのアーキテクチャと、EMQXとNeuronが果たす役割について詳しく掘り下げます。
+この記事では、オープンソースの分散MQTTブローカーである[EMQX](https://github.com/emqx/emqx)と、エッジIIoT接続サーバーである[Neuron](https://neugates.io/)を使用して、Sparkplugソリューションを構築するためのスケーラブルで堅牢なプラットフォームを提供します。Sparkplugソリューションのアーキテクチャと、EMQXとNeuronが果たす役割について詳しく掘り下げます。
 
 ## EMQXの役割
 
-[EMQX](https://www.emqx.io/) を使用して、Sparkplug 仕様に準拠した [MQTT トピック](https://www.emqx.com/en/blog/advanced-features-of-mqtt-topics)名前空間を作成します。Sparkplug ネームスペースは、デバイスがパブリッシュおよびサブスクライブする MQTT メッセージの構造とコンテンツを定義します。EMQX は、Sparkplug ネームスペースに送受信されるすべてのメッセージが適切にフォーマットされ、Sparkplug 仕様に準拠していることを保証します。
+[EMQX](https://github.com/emqx/emqx) を使用して、Sparkplug 仕様に準拠した [MQTT トピック](https://www.emqx.com/en/blog/advanced-features-of-mqtt-topics)名前空間を作成します。Sparkplug ネームスペースは、デバイスがパブリッシュおよびサブスクライブする MQTT メッセージの構造とコンテンツを定義します。EMQX は、Sparkplug ネームスペースに送受信されるすべてのメッセージが適切にフォーマットされ、Sparkplug 仕様に準拠していることを保証します。
 
 > *EMQXの詳細：* [*EMQX Enterprise：エンタープライズMQTTプラットフォーム*](https://www.emqx.com/ja/products/emqx)
 

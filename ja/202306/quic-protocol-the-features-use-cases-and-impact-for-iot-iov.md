@@ -95,7 +95,7 @@ MQTT over QUICのInternet of Vehiclesにおける使用例として、以下の�
 
 ## EMQX: MQTTブローカーとして初めてMQTT Over QUICを実装し、技術を革新します
 
-[EMQX](https://www.emqx.io/)は、高性能なリアルタイムメッセージ処理エンジンを搭載した、先進な[オープンソースのMQTTブローカー](https://www.emqx.com/en/blog/a-comprehensive-comparison-of-open-source-mqtt-brokers-in-2023)で、大規模なIoTデバイス向けのイベントストリーミングを強力にサポートします。バージョン5.0以降、EMQXはMQTTブローカーとして初めてMQTT over QUICをサポートし、現代の複雑なネットワーク上でMQTTメッセージをより効率的かつ安全に伝送する方法を提供し、特定のシナリオでMQTTのパフォーマンスを向上させました。
+[EMQX](https://github.com/emqx/emqx)は、高性能なリアルタイムメッセージ処理エンジンを搭載した、先進な[オープンソースのMQTTブローカー](https://www.emqx.com/en/blog/a-comprehensive-comparison-of-open-source-mqtt-brokers-in-2023)で、大規模なIoTデバイス向けのイベントストリーミングを強力にサポートします。バージョン5.0以降、EMQXはMQTTブローカーとして初めてMQTT over QUICをサポートし、現代の複雑なネットワーク上でMQTTメッセージをより効率的かつ安全に伝送する方法を提供し、特定のシナリオでMQTTのパフォーマンスを向上させました。
 
 現在のEMQXサポートの実装では、トランスポート層をQUICストリームに置き換え、クライアントが接続を開始し双方向のストリームを作成します。EMQXは2つの動作モードをサポートしています：
 

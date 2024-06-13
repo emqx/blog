@@ -1,4 +1,4 @@
-Besides making EMQX stronger and faster as an [MQTT messaging broker](https://www.emqx.io), we also try hard to make it ops-friendly. From configuration to management API, dashboard UI to live code upgrade, single node docker run to massive scale clustering.
+Besides making EMQX stronger and faster as an [MQTT messaging broker](https://www.emqx.com/en/products/emqx), we also try hard to make it ops-friendly. From configuration to management API, dashboard UI to live code upgrade, single node docker run to massive scale clustering.
 
 In October, EMQX development teams have been mostly focusing on HTTP management API, the readiness of which will be checkpoint for the beta.2 release.
 

@@ -1,6 +1,6 @@
 ## Introduction
 
-A rule engine is a software system that utilizes predefined rules to make decisions or take actions based on input data. In this blog post, we will introduce the Rule Engine in [EMQX MQTT Broker](https://www.emqx.io/) and explains why it is essential for MQTT message transformation and data integration. We will also provide a quick guide with examples to help you get started with Rule Engine for MQTT.
+A rule engine is a software system that utilizes predefined rules to make decisions or take actions based on input data. In this blog post, we will introduce the Rule Engine in [EMQX MQTT Broker](https://github.com/emqx/emqx) and explains why it is essential for MQTT message transformation and data integration. We will also provide a quick guide with examples to help you get started with Rule Engine for MQTT.
 
 ## What is Rule Engine for MQTT?
 
@@ -18,7 +18,7 @@ The rule engine has a wide range of applications in [MQTT brokers](https://www.e
 
 ## EMQX’s Built-in, Out-of-Box Rule Engine
 
-[EMQX](https://www.emqx.io/) is an open-source, highly scalable MQTT broker integrated with an embedded rule engine component. It allows users to quickly implement business logic on data processing with low code, simplifying their software architecture's complexity.
+[EMQX](https://github.com/emqx/emqx) is an open-source, highly scalable MQTT broker integrated with an embedded rule engine component. It allows users to quickly implement business logic on data processing with low code, simplifying their software architecture's complexity.
 
 There are two reasons for embedding a rule engine feature instead of relying on a separate rule engine outside of the broker: 
 
