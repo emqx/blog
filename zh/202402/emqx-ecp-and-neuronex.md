@@ -6,7 +6,7 @@
 
 ## **工业互联网平台**塑造高质量制造新生态
 
-EMQ 的[工业互联数据平台 EMQX ECP](https://www.emqx.com/zh/products/emqx-ecp) 与[工业边缘网关软件 NeuronEX](https://www.emqx.com/zh/products/neuronex) 可帮助中国制造企业解决数字化转型中的各种数据痛点，实现从边缘到云端的协同工作，打通工厂的数据流，让数据驱动中国制造业的转型升级。具体来说，ECP 和 NeuronEX 主要提供以下几种能力：
+EMQ 的[工业互联数据平台 EMQX ECP](https://www.emqx.cn/products/emqx-ecp) 与[工业边缘网关软件 NeuronEX](https://www.emqx.com/zh/products/neuronex) 可帮助中国制造企业解决数字化转型中的各种数据痛点，实现从边缘到云端的协同工作，打通工厂的数据流，让数据驱动中国制造业的转型升级。具体来说，ECP 和 NeuronEX 主要提供以下几种能力：
 
 ### **数字化转型提高生产质量**
 

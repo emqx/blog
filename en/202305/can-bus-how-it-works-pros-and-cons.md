@@ -84,7 +84,6 @@ We'll need at least two components to build such a solution:
 
 > Learn more:
 > - [https://ekuiper.org/](https://ekuiper.org/)
-> - [https://www.emqx.com/en/products/emqx-ecp](https://www.emqx.com/en/products/emqx-ecp)
 
 Next, we will illustrate the overall solution combining EMQX and eKuiper.
 

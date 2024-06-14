@@ -1,4 +1,4 @@
-> [EMQX Edge Cloud Platform (ECP)](https://www.emqx.com/en/products/emqx-ecp) is a one-stop management platform for the EMQX product suite. It provides enterprise-level users with solutions for multi-tenant management, multi-project management, multi-cluster management, cloud-edge collaboration, authentication security, and auditing requirements.
+> EMQX Edge Cloud Platform (ECP) is a one-stop management platform for the EMQX product suite. It provides enterprise-level users with solutions for multi-tenant management, multi-project management, multi-cluster management, cloud-edge collaboration, authentication security, and auditing requirements.
 >
 > EMQX ECP offers full lifecycle management for [EMQX Enterprise](https://www.emqx.com/en/products/emqx), including automatic deployment, deletion, upgrade, elastic scaling, monitoring, and alarm functions. It also provides batch access and batch configuration management for EMQ edge services such as Neuron, eKuiper, and NanoMQ.
 
@@ -33,13 +33,3 @@ EMQX ECP complements NanoMQ by providing robust remote management and monitoring
 ## Conclusion
 
 NanoMQ's lightweight MQTT broker capabilities and EMQX ECP's remote management and monitoring features form a powerful solution for all kinds of IoT edge-to-cloud data bridging. They enable seamless and secure communication between edge devices and the Cloud using MQTT, empowering many industries with advanced functionalities and efficient data exchange. 
-
-
-
-<section class="promotion">
-    <div>
-        EMQX ECP
-      <div class="is-size-14 is-text-normal has-text-weight-normal">The best way to manage your MQTT from edge to cloud.</div>
-    </div>
-    <a href="https://www.emqx.com/en/products/emqx-ecp" class="button is-gradient px-5">Learn More →</a>
-</section>

@@ -29,7 +29,7 @@
 
 **中心应用**
 
-云端 Broker EMQX Enterprise 从边缘端接收消息，经过规则引擎处理后提供给上层应用。云边一体化平台 [EMQX ECP](https://www.emqx.com/zh/products/emqx-ecp)，负责云端 EMQX Enterprise 的全生命周期管理，通过与云边协同代理 ECP Edge Agent 通信进行边缘服务指令下发、远程配置，可以将 Neuron、eKuiper 的配置抽象成模版，批量下发到有类似配置需求的其他边缘端。
+云端 Broker EMQX Enterprise 从边缘端接收消息，经过规则引擎处理后提供给上层应用。云边一体化平台 [EMQX ECP](https://www.emqx.cn/products/emqx-ecp)，负责云端 EMQX Enterprise 的全生命周期管理，通过与云边协同代理 ECP Edge Agent 通信进行边缘服务指令下发、远程配置，可以将 Neuron、eKuiper 的配置抽象成模版，批量下发到有类似配置需求的其他边缘端。
 
 **平台底座**
 

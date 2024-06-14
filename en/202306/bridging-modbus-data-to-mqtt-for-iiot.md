@@ -266,7 +266,7 @@ By building an open equipment data network, an oil production plant data center 
 
 ![Oil Production Data Acquisition](https://assets.emqx.com/images/5c5a23f0474e9305c1f4d0026176f01b.png)
 
-An overall solution combining Neuron and other EMQ products like [EMQX](https://github.com/emqx/emqx), [eKuiper](https://ekuiper.org/) and [EMQX ECP](https://www.emqx.com/en/products/emqx-ecp) can bring the following benefits to oil industry:
+An overall solution combining Neuron and other EMQ products like [EMQX](https://github.com/emqx/emqx), [eKuiper](https://ekuiper.org/) and EMQX ECP can bring the following benefits to oil industry:
 
 - A system architecture that is light on the frontend and heavy on the backend, reducing field equipment and system operation and maintenance costs.
 - Improved business system responsiveness through real-time reporting of production data by using the MQTT IoT protocol as the main method of data collection and transmission.
