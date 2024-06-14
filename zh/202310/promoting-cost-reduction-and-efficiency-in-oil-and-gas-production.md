@@ -26,7 +26,7 @@
 
 - **云边协同管理**
 
-  [EMQX ECP](https://www.emqx.com/zh/products/emqx-ecp) 提供项目管理能力，可为 EMQX 集群实例提供基于项目的分类与管理监控；EMQX ECP 提供了统一云边模块的 WEB 管控界面，实现边缘软件 NeuronEX 的远程配置、实时监控及日志分析等功能，降低了现场运维的成本。
+  [EMQX ECP](https://www.emqx.cn/products/emqx-ecp) 提供项目管理能力，可为 EMQX 集群实例提供基于项目的分类与管理监控；EMQX ECP 提供了统一云边模块的 WEB 管控界面，实现边缘软件 NeuronEX 的远程配置、实时监控及日志分析等功能，降低了现场运维的成本。
 
 ## 方案价值
 
@@ -67,7 +67,7 @@
 
 ### EMQX ECP
 
-[EMQX ECP（EMQX Edge Cloud Platform）](https://www.emqx.com/zh/products/emqx-ecp)是专为边缘与云端协作而设计的先进 MQTT 平台。它为您提供对 EMQX 云和边缘服务的高效和有效控制，弥合了边缘设备与云基础设施之间的差距。EMQX ECP 为企业级用户提供了多租户管理、多项目管理、多集群管理、云边协作、身份验证安全和审计需求的解决方案，主要功能包括：
+[EMQX ECP（EMQX Edge Cloud Platform）](https://www.emqx.cn/products/emqx-ecp)是专为边缘与云端协作而设计的先进 MQTT 平台。它为您提供对 EMQX 云和边缘服务的高效和有效控制，弥合了边缘设备与云基础设施之间的差距。EMQX ECP 为企业级用户提供了多租户管理、多项目管理、多集群管理、云边协作、身份验证安全和审计需求的解决方案，主要功能包括：
 
 - 边缘与云端协作：EMQX ECP 边缘服务管理实现了对边缘软件 NeuronEX 等边缘服务部署、管理、配置下发、批量操作、监控和优化。通过提供统一的管理平台，实现双向数据传输与运管边能力；
 - 多集群管理：在分租户分项目的基础上实现多集群管理，可以创建新集群或纳管已有集群，并对管理的集群进行修复、水平和垂直扩展、修改网络类 型、修改连接数、升降级、集群转让和删除等操作；同时集成 EMQX Dashboard，方便用户直接在 ECP 平台操作和配置 EMQX 集群；

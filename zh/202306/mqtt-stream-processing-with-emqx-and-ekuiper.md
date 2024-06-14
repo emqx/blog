@@ -40,7 +40,7 @@ docker run -p 9081:9081 -d --name kuiper -e MQTT_SOURCE__DEFAULT__SERVER=tcp://b
 
 如果您想使用其他方法安装 eKuiper，请查看[安装指南](https://ekuiper.org/docs/en/latest/installation.html)。
 
-> [EMQX ECP](https://www.emqx.com/zh/products/emqx-ecp) (EMQX Edge-to-Cloud Platform) 是专为云边协同而打造的高级 MQTT 平台。它提供了专业的 Web UI 让您可以方便地管理 eKuiper。在本教程中，您也可以使用 ECP 来管理 eKuiper。更多细节，请参考 [ECP 文档](https://www.emqx.com/en/products/emqx-ecp)。
+> [EMQX ECP](https://www.emqx.cn/products/emqx-ecp) (EMQX Edge-to-Cloud Platform) 是专为云边协同而打造的高级 MQTT 平台。它提供了专业的 Web UI 让您可以方便地管理 eKuiper。在本教程中，您也可以使用 ECP 来管理 eKuiper。更多细节，请参考 [ECP 文档](https://docs.emqx.com/zh/emqx-ecp/latest/)。
 
 ## 配置 eKuiper 订阅 MQTT 数据流
 

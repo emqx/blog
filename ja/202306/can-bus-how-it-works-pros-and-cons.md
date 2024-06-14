@@ -83,8 +83,6 @@ CAN Busデータは車両の性能、状態、動作に関する貴重な情報�
 >  *詳しくはこちらをご覧ください：*
 >
 > [https://ekuiper.org/](https://ekuiper.org/)
->
-> [https://www.emqx.com/ja/products/emqx-ecp](https://www.emqx.com/ja/products/emqx-ecp) 
 
 次に、EMQXとeKuiperを組み合わせたソリューションのを全面的に説明します。
 

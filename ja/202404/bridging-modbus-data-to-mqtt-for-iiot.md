@@ -266,7 +266,7 @@ MQTTXを起動したら、メインページの**+新しい接続**をクリッ�
 
 ![Oil Production Data Acquisition](https://assets.emqx.com/images/5c5a23f0474e9305c1f4d0026176f01b.png)
 
-Neuron と [EMQX](https://github.com/emqx/emqx)、[eKuiper](https://ekuiper.org/)、[EMQX ECP](https://www.emqx.com/en/products/emqx-ecp) などの他の EMQ 製品を組み合わせた全体的なソリューションは、石油業界に以下のようなメリットをもたらします。
+Neuron と [EMQX](https://github.com/emqx/emqx)、[eKuiper](https://ekuiper.org/)、EMQX ECP などの他の EMQ 製品を組み合わせた全体的なソリューションは、石油業界に以下のようなメリットをもたらします。
 
 - フロントエンドを軽量化し、バックエンドを重視するシステムアーキテクチャにより、現場の機器とシステムの運用・保守コストを削減できます。
 - MQTTのIoTプロトコルを主なデータ収集・伝送方式として利用することで、生産データをリアルタイムに報告し、業務システムの応答性を向上させます。

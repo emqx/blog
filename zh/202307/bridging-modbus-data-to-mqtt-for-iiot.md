@@ -267,7 +267,7 @@ $ docker run -d --name neuron -p 7000:7000 --privileged=true --restart=always em
 
 ![石油生产数据采集](https://assets.emqx.com/images/5c5a23f0474e9305c1f4d0026176f01b.png)
 
-结合 [Neuron](https://neugates.io/zh) 和 [EMQX](https://www.emqx.com/zh/products/emqx)、[eKuiper](https://ekuiper.org/zh)、[EMQX-ECP](https://www.emqx.com/zh/products/emqx-ecp) 等其他 EMQ 产品的整体解决方案可以为石油行业带来以下好处：
+结合 [Neuron](https://neugates.io/zh) 和 [EMQX](https://www.emqx.com/zh/products/emqx)、[eKuiper](https://ekuiper.org/zh)、[EMQX-ECP](https://www.emqx.cn/products/emqx-ecp) 等其他 EMQ 产品的整体解决方案可以为石油行业带来以下好处：
 
 - 轻前端、重后端的系统架构，降低现场设备与系统运维成本。
 - 基于物联网协议作为数据采集与传输的主要方式，实现了生产数据低时延实时上报，提高业务响应能力。

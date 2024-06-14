@@ -34,8 +34,6 @@ By this command, we can pull eKuiper 1.10.0 version docker image and start runni
 
 For other installation methods, please check the [installation guide](https://ekuiper.org/docs/en/latest/installation.html) to install eKuiper.
 
-> [EMQX ECP](https://www.emqx.com/en/products/emqx-ecp) (EMQX Edge-to-Cloud Platform) is an advanced MQTT platform designed for edge-cloud collaboration. It provides professional web UI to manage eKuiper. You can also use ECP to manage eKuiper in this tutorial. Please check the [ECP documentation](https://www.emqx.com/en/products/emqx-ecp) for more details.
-
 ## Configure eKuiper to Subscribe to MQTT Data Stream
 
 The MQTT data are usually unbounded and continuous streaming data. In eKuiper, there is a concept called stream, which is a model for such kind of data. Before processing the MQTT data, we need to create a stream to describe the data.

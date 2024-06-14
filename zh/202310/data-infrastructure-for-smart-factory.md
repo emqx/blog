@@ -76,7 +76,7 @@ EMQX 企业级物联网接入平台具备对海量数据进行统一存储的能
 
 ### EMQX ECP
 
-[EMQX ECP](https://www.emqx.com/zh/products/emqx-ecp)（EMQX Edge Cloud Platform）是 EMQX 产品套件的一站式管理平台。EMQX ECP 为包括 EMQX Enterprise，NeuronEX，NanoMQ 在内的云边产品组合提供了基于多租户的自动部署、弹性伸缩、统一监控、批量配置以及安全审计等企业级功能。EMQX ECP 为企业级用户提供了多租户管理、多项目管理、多集群管理、云边协作、身份验证安全和审计需求的解决方案。
+[EMQX ECP](https://www.emqx.cn/products/emqx-ecp)（EMQX Edge Cloud Platform）是 EMQX 产品套件的一站式管理平台。EMQX ECP 为包括 EMQX Enterprise，NeuronEX，NanoMQ 在内的云边产品组合提供了基于多租户的自动部署、弹性伸缩、统一监控、批量配置以及安全审计等企业级功能。EMQX ECP 为企业级用户提供了多租户管理、多项目管理、多集群管理、云边协作、身份验证安全和审计需求的解决方案。
 
 ### EMQX Enterprise
 
