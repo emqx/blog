@@ -32,4 +32,4 @@ EMQX ECP complements NanoMQ by providing robust remote management and monitoring
 
 ## Conclusion
 
-NanoMQ's lightweight MQTT broker capabilities and EMQX ECP's remote management and monitoring features form a powerful solution for all kinds of IoT edge-to-cloud data bridging. They enable seamless and secure communication between edge devices and the Cloud using MQTT, empowering many industries with advanced functionalities and efficient data exchange. 
+NanoMQ's lightweight MQTT broker capabilities and EMQX ECP's remote management and monitoring features form a powerful solution for all kinds of IoT edge-to-cloud data bridging. They enable seamless and secure communication between edge devices and the Cloud using MQTT, empowering many industries with advanced functionalities and efficient data exchange.
