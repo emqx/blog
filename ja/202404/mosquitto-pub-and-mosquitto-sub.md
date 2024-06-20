@@ -21,7 +21,7 @@ MQTTブローカーとクライアントツールを含むMosquittoパッケー�
 
 - **オープンソースでコミュニティサポートあり**：[GitHub](https://github.com/eclipse/mosquitto)でホストされており、オープンソースプロジェクトに特有の活発なコミュニティサポートの恩恵を受けています。
 
-- **MQTT 5.0完全対応**：最新の機能を含む[MQTT 5.0](https://www.emqx.com/ja/blog/introduction-to-mqtt-5)プロトコルに対応しています。
+- **MQTT 5.0完全対応**：最新の機能を含む[MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5)プロトコルに対応しています。
 
 - **デバッグモード**：デバッグモードをサポートし、開発者が問題を効率的に診断・解決できるようにします。
 
