@@ -319,7 +319,7 @@ This part of the example demonstrates subscribing to and publishing MQTT message
 
 ## Summary
 
-The above examples based on rumqtt demonstrate simple subscription and publishing code. rumqtt also supports [MQTT v5](https://www.emqx.com/en/blog/introduction-to-mqtt-5https://www.emqx.com/en/blog/introduction-to-mqtt-5) and properties, among other MQTT features. For more information, refer to the [rumqtt examples](https://github.com/bytebeamio/rumqtt/tree/main/rumqttc/examples).
+The above examples based on rumqtt demonstrate simple subscription and publishing code. rumqtt also supports [MQTT v5](https://www.emqx.com/en/blog/introduction-to-mqtt-5) and properties, among other MQTT features. For more information, refer to the [rumqtt examples](https://github.com/bytebeamio/rumqtt/tree/main/rumqttc/examples).
 
 
 
