@@ -662,7 +662,7 @@ mqttx pub --topic t13 --message "This is a retained message" --retain
 
 このサンプル後は、EMQXの保留メッセージ機能を再び有効にしてください。
 
-## 特性 14：订阅选项機能14: サブスクリプションオプション
+## 機能14: サブスクリプションオプション
 
 MQTT 5.0は、QoSに加えて、No Local、Retain As Published、Retain Handlingの3つの新しいサブスクリプションオプションを提供します。
 
