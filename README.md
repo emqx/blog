@@ -526,6 +526,7 @@ Build a reliable, efficient and industry-specific Internet of Vehicles platform 
 ## [MQTTX](https://www.emqx.com/en/blog/category/mqttx)
 MQTTX is a Fully Open-source MQTT 5.0 cross-platform Desktop Client, makes it easy and quick to create multiple simultaneous online MQTT client connections, test the connection, publish, and subscribe functions of MQTT/TCP, MQTT/TLS, MQTT/WebSocket as well as other MQTT protocol features.
 
+- [MQTTX Web Online Site Migration Announcement](https://www.emqx.com/en/blog/mqttx-web-migration-announcement) ([Edit](https://github.com/emqx/blog/blob/main/en/202406/mqttx-web-migration-announcement.md))
 - [MQTTX 1.10.0 Released: Advanced File Management and Configuration in CLI](https://www.emqx.com/en/blog/mqttx-1-10-0-release-notes) ([Edit](https://github.com/emqx/blog/blob/main/en/202406/mqttx-1-10-0-release-notes.md))
 - [MQTTX 1.9.10 Released: Enhanced Diagnostic Insights](https://www.emqx.com/en/blog/mqttx-1-9-10-release-notes) ([Edit](https://github.com/emqx/blog/blob/main/en/202404/mqttx-1-9-10-release-notes.md))
 - [How to Publish and Receive Protobuf Messages within MQTT?](https://www.emqx.com/en/blog/how-to-publish-and-receive-protobuf-messages-within-mqtt) ([Edit](https://github.com/emqx/blog/blob/main/en/202403/how-to-publish-and-receive-protobuf-messages-within-mqtt.md))
