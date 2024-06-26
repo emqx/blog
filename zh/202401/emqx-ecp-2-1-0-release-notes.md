@@ -42,7 +42,7 @@ ECP 2.1.0 优化了安装包及安装过程，降低了部署 ECP 的复杂性�
    http://<ip>:8082
    ```
 
-新版本 ECP 安装包下载地址如下，欢迎下载试用：[https://www.emqx.com/zh/try?product=emqx-ecp](https://www.emqx.com/zh/try?product=emqx-ecp)。
+新版本 ECP 安装包下载地址如下，欢迎下载试用：[https://www.emqx.cn/downloads-and-install/emqx-ecp](https://www.emqx.cn/downloads-and-install/emqx-ecp)。
 
 ## 强化与 NeuronEX 的集成
 
@@ -74,5 +74,5 @@ ECP 2.1.0 版本针对”托管 - Docker 直连“类型的边缘服务进行了
     <div>
         免费试用 EMQX ECP
     </div>
-    <a href="https://www.emqx.com/zh/try?product=emqx-ecp" class="button is-gradient px-5">开始试用 →</a>
+    <a href="https://www.emqx.cn/downloads-and-install/emqx-ecp" class="button is-gradient px-5">开始试用 →</a>
 </section>

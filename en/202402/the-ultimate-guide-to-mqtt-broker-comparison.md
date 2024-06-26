@@ -203,7 +203,7 @@ The fully managed cloud service is the easiest way to start an MQTT service. Wit
 
   In this blog post, we will explore the seamless integration of MQTT data with Kafka for the IoT Application.
 
-- [**MQTT to MongoDB: A Beginner's Guide for IoT Data Integration**](https://www.emqx.com/en/blog/building-a-data-aggregation-platform-with-mqtt-and-mongodb)
+- [**MQTT to MongoDB: A Beginner's Guide for IoT Data Integration**](https://www.emqx.com/en/blog/mqtt-and-mongodb-crafting-seamless-synergy-for-iot-data-mangement)
 
   This post will elaborate on the benefits and key use cases of MongoDB with MQTT in IoT scenarios. We will also provide a demonstration of integrating MQTT data into a MongoDB database to give readers a better understanding of how to implement this process.
 

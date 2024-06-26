@@ -37,7 +37,7 @@ ECP 支持实时流式数据处理和转发，在边缘执行原始数据的预�
     <div>
         免费试用 EMQX ECP
     </div>
-    <a href="https://www.emqx.com/zh/try?product=emqx-ecp" class="button is-gradient px-5">开始试用 →</a>
+    <a href="https://www.emqx.cn/downloads-and-install/emqx-ecp" class="button is-gradient px-5">开始试用 →</a>
 </section>
 
 ### **无缝集成，提升系统灵活性**

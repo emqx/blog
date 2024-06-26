@@ -53,7 +53,7 @@ The development board I use comes with an RGB LED driven by WS2812B. If your boa
 For the development and execution of this demo, we need the following software:
 
 1. [ESP-IDF](https://docs.espressif.com/projects/esp-idf/en/stable/esp32/get-started/index.html) v5.2.1, the official development framework from Espressif for application development on the ESP32 series chip. It is recommended to install ESP-IDF within an IDE. I’m using VS Code.
-2. [EMQX](https://www.emqx.com/en), an enterprise-grade MQTT platform. We used the [EMQX Cloud Serverless](https://www.emqx.com/cloud/serverless-mqtt) in this demo, thus eliminating the need for manual server deployment.
+2. [EMQX](https://www.emqx.com/en), an enterprise-grade MQTT platform. We used the [EMQX Cloud Serverless](https://www.emqx.com/en/cloud/serverless-mqtt) in this demo, thus eliminating the need for manual server deployment.
 3. [MQTTX](https://mqttx.app/), MQTT client tool for sending LED commands to ESP32 and receiving returned LED status.
 
 The deployment of EMQX Cloud Serverless and MQTTX is straightforward and will not be repeated here. ESP-IDF recommends installing them as a VSCode extension. The general installation steps are:

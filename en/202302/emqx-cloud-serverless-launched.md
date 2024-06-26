@@ -8,7 +8,7 @@ EMQX Cloud Serverless features seamless and automatic scaling to meet business d
 
 EMQX Cloud, as a fully managed MQTT service for IoT that is trusted by over 300 customers worldwide, eliminates the need for in-house infrastructure management and maintenance, allowing users from various industries to effortlessly utilize fully managed MQTT cloud services. The launch of EMQX Cloud Serverless streamlines the utilization of MQTT messaging services, catering to the demands of small and medium-sized businesses and independent developers. As a result, users can now drive IoT business innovation with greater ease and speed.
 
-EMQX Cloud Serverless Beta-testing version is now **open for** [**free trials**](https://www.emqx.com/en/cloud/pricing) **on the EMQX Cloud website, starting today until March 31, 2023.**
+EMQX Cloud Serverless Beta-testing version is now **open for** [**free trials**](https://www.emqx.com/en/pricing) **on the EMQX Cloud website, starting today until March 31, 2023.**
 
 ## Serverless MQTT Service Based on a Multi-Tenant Architecture
 
@@ -34,7 +34,7 @@ In addition, EMQX Cloud Serverless offers enhanced user-friendliness with its ab
 
 For a typical scenario with 20-30 devices and normal message frequency and size, the cost is negligible, saving users from the expenses of infrastructure software. As the business grows and the number of devices increases, the service can effortlessly scale, eliminating the need for infrastructure migration and reducing overall costs.
 
->  For more prices of business scenarios, please go to [https://www.emqx.com/en/cloud/pricing](https://www.emqx.com/en/cloud/pricing) 
+>  For more prices of business scenarios, please go to [https://www.emqx.com/en/pricing](https://www.emqx.com/en/pricing) 
 
 Now experience the power and ease of EMQX Cloud Serverless with our limited-time beta-testing free trial! **From now until March 31, 2023, you can test our fully-functional service**, with a limit of 100 devices. 
 
@@ -58,7 +58,7 @@ The Deployment Overview page displays real-time information on the current numbe
 
 Please refer to the product documentation for a complete list of features and instructions: [EMQX Cloud Help Center](https://docs.emqx.com/zh/cloud/latest/).
 
-For an in-depth comparison of the features offered by the Serverless Editon and the Dedicated Edition, please refer to: [https://www.emqx.com/en/cloud/pricing](https://www.emqx.com/en/cloud/pricing).
+For an in-depth comparison of the features offered by the Serverless Editon and the Dedicated Edition, please refer to: [https://www.emqx.com/en/pricing](https://www.emqx.com/en/pricing).
 
 ## Conclusion
 

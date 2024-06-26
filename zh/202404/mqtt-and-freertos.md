@@ -45,7 +45,7 @@ LED 任务可以被替换为其他任何实际应用，例如相机云台控制�
 想要开发和运行这个 Demo，我们需要用到以下软件：
 
 1. [ESP-IDF](https://docs.espressif.com/projects/esp-idf/en/stable/esp32/get-started/index.html) v5.2.1，乐鑫官方推出的用于 ESP32 系列芯片应用开发的开发框架。推荐在 IDE 中安装 ESP-IDF，我使用的是 VS Code。
-2. [EMQX](https://www.emqx.com/)，一个企业级 MQTT 平台，推荐使用 [EMQX Cloud Serverless](https://www.emqx.com/zh/cloud/serverless-mqtt)，免去自行部署服务器的步骤。
+2. [EMQX](https://www.emqx.com/zh)，一个企业级 MQTT 平台，推荐使用 [EMQX Cloud Serverless](https://www.emqx.com/zh/cloud/serverless-mqtt)，免去自行部署服务器的步骤。
 3. [MQTTX](https://mqttx.app/zh)，MQTT 客户端工具，用于向 ESP32 发送 LED 指令和接收 LED 状态。
 
 EMQX Cloud Serverless 和 MQTTX 的部署非常简单，这里不再赘述，ESP-IDF 推荐以 IDE 扩展的方式安装，大致的安装步骤为：

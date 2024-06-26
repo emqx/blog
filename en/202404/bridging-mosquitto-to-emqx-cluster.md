@@ -1,6 +1,6 @@
 ## Introduction to Mosquitto
 
-[Mosquitto](https://www.emqx.com/en/blog/mosquitto-mqtt-broker-pros-cons-tutorial-and-modern-alternatives), an open-source MQTT server, is designed to be lightweight and compact, coded in C/C++, featuring a single-core, single-threaded architecture. It caters to deployment in resource-constrained embedded devices and connects to a limited number of MQTT devices. It fully embraces both [MQTT 5.0](https://www.emqx.com/en/mqtt/mqtt5) and version 3.1.1 protocols.
+[Mosquitto](https://www.emqx.com/en/blog/mosquitto-mqtt-broker-pros-cons-tutorial-and-modern-alternatives), an open-source MQTT server, is designed to be lightweight and compact, coded in C/C++, featuring a single-core, single-threaded architecture. It caters to deployment in resource-constrained embedded devices and connects to a limited number of MQTT devices. It fully embraces both [MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5) and version 3.1.1 protocols.
 
 Despite its strengths, Mosquitto lacks robust clustering capabilities. Neither official nor third-party clustering solutions meet the demands of large-scale IoT connectivity. Consequently, it faces limitations:
 

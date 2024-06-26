@@ -42,7 +42,7 @@ EMQX Cloud is more suitable for enterprises whose business system has been or is
 
 Both EMQX Enterprise and EMQX Cloud are provided by the global support team with technical support of different specifications and forms such as 5x8/7x24 and online/offline, as well as commercializing services such as customized development, architecture consultation, and project integration.
 
-In terms of price, EMQX Cloud has very flexible and transparent quotations for different plans, and there are two types, pay as you go and annual prepayment, with different degree of discount. You can choose the plan and specification here to make a price estimate: [https://www.emqx.com/en/cloud/pricing](https://www.emqx.com/en/cloud/pricing) 
+In terms of price, EMQX Cloud has very flexible and transparent quotations for different plans, and there are two types, pay as you go and annual prepayment, with different degree of discount. You can choose the plan and specification here to make a price estimate: [https://www.emqx.com/en/pricing](https://www.emqx.com/en/pricing) 
 
 The scheme of the price of EMQX Enterprise will provide different modes of the price in conformity with the maximum number of connections, usage time, and enterprise usage scenario. For a detailed quotation, you can click the link:[https://www.emqx.com/en/contact](https://www.emqx.com/en/contact) 
 
