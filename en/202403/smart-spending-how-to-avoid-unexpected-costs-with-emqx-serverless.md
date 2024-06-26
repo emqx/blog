@@ -12,7 +12,7 @@ EMQX Serverless employs a pay-as-you-go billing model, based on three key compon
 - Traffic (Bandwidth): Encompasses both inbound and outbound messages processed by the deployment.
 - Rule Actions: Pertains to the total number of actions performed within Data Integration.
 
-For comprehensive details on EMQX Serverless Pricing, please visit our [pricing page](https://www.emqx.com/en/cloud/pricing).
+For comprehensive details on EMQX Serverless Pricing, please visit our [pricing page](https://www.emqx.com/en/pricing).
 
 ## Spend Limit Feature: Maintain Control Over Your Costs
 

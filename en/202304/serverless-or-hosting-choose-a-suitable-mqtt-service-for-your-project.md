@@ -61,13 +61,13 @@ MQTT Hosting generally **suits consistent traffic with predictable pricing, whil
 
 > See an example here to better understand the pricing of both services.
 >
-> [EMQX Cloud – Plans & Pricing](https://www.emqx.com/en/cloud/pricing)
+> [EMQX Cloud – Plans & Pricing](https://www.emqx.com/en/pricing)
 
 ## Conclusion
 
 Serverless is a more cost-effective and scalable option for smaller-scale IoT projects. Hosting provides more granular security control and more flexibility in data integration, which is a better option for larger-scale projects that require more control over the infrastructure and configuration. Choosing between the two editions will ultimately depend on your specific needs and budget.
 
-As a fully-managed MQTT cloud service trusted by hundreds of customers worldwide, [EMQX Cloud](https://www.emqx.com/en/cloud) offers both Serverless and Hosting MQTT services to meet the specific needs of various users. Learn more [here ](https://www.emqx.com/en/cloud/pricing)or [consult our experts](https://www.emqx.com/en/contact?product=cloud) to find the best solution for your project.
+As a fully-managed MQTT cloud service trusted by hundreds of customers worldwide, [EMQX Cloud](https://www.emqx.com/en/cloud) offers both Serverless and Hosting MQTT services to meet the specific needs of various users. Learn more [here ](https://www.emqx.com/en/pricing)or [consult our experts](https://www.emqx.com/en/contact?product=cloud) to find the best solution for your project.
 
 > See [a comprehensive comparison of EMQX Cloud Serverless, Dedicated, and BYOC Plans](https://www.emqx.com/en/blog/a-comprehensive-guide-to-emqx-cloud-serverless-dedicated-and-byoc-plans).
 

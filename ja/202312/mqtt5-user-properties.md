@@ -1,4 +1,4 @@
-MQTT v5 には多くの新機能があります。これらの機能をわかりやすい方法で示し、これらの機能が開発者に与える影響について説明します。これまで、[MQTT V5 ](https://www.emqx.com/en/mqtt/mqtt5)の新機能について説明してきました。本文は引き続き、「**User Properties」**について説明します。
+MQTT v5 には多くの新機能があります。これらの機能をわかりやすい方法で示し、これらの機能が開発者に与える影響について説明します。これまで、[MQTT V5 ](https://www.emqx.com/en/blog/introduction-to-mqtt-5)の新機能について説明してきました。本文は引き続き、「**User Properties」**について説明します。
 
 ## User Properties とは何ですか?
 
@@ -28,7 +28,7 @@ User Properties は、MQTT 3 のスケーラビリティの低さを解決する
 
 ### ファイル転送
 
-[MQTT V5](https://www.emqx.com/en/mqtt/mqtt5) のUser Properties は、メッセージ本文のペイロードにデータを入れて、以前の MQTT 3 のUser Properties にキーと値のペアを使用する代わりに、ファイル転送用に拡張できます。これは、ファイルをバイナリとして保持できることも意味します。ファイルのメタデータはUser Properties にあります。例えば：
+[MQTT V5](https://www.emqx.com/en/blog/introduction-to-mqtt-5) のUser Properties は、メッセージ本文のペイロードにデータを入れて、以前の MQTT 3 のUser Properties にキーと値のペアを使用する代わりに、ファイル転送用に拡張できます。これは、ファイルをバイナリとして保持できることも意味します。ファイルのメタデータはUser Properties にあります。例えば：
 
 ```
 {

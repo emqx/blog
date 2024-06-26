@@ -1,6 +1,6 @@
 ## Mosquitto 简介
 
-[Mosquitto](https://www.emqx.com/zh/blog/mosquitto-mqtt-broker-pros-cons-tutorial-and-modern-alternatives) 是一个小型轻量的[开源 MQTT 服务器](https://www.emqx.com/zh/blog/a-comprehensive-comparison-of-open-source-mqtt-brokers-in-2023)，由 C/C++ 语言编写，采用单核心单线程架构，支持部署在资源有限的嵌入式设备，接入少量 MQTT 设备终端。同时，Mosquitto 完整支持 [MQTT 5.0](https://www.emqx.com/zh/mqtt/mqtt5) 和 3.1.1 版本协议特性。
+[Mosquitto](https://www.emqx.com/zh/blog/mosquitto-mqtt-broker-pros-cons-tutorial-and-modern-alternatives) 是一个小型轻量的[开源 MQTT 服务器](https://www.emqx.com/zh/blog/a-comprehensive-comparison-of-open-source-mqtt-brokers-in-2023)，由 C/C++ 语言编写，采用单核心单线程架构，支持部署在资源有限的嵌入式设备，接入少量 MQTT 设备终端。同时，Mosquitto 完整支持 [MQTT 5.0](https://www.emqx.com/zh/blog/introduction-to-mqtt-5) 和 3.1.1 版本协议特性。
 
 然而，Mosquitto 集群功能羸弱，官方和第三方实现的集群方案均难以支撑物联网大规模海量连接的性能需求。这导致其具有以下局限性：
 

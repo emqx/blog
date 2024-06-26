@@ -49,7 +49,7 @@ EMQX Cloud 则更加适用于公司业务系统已经或计划部署在公有云
 
 EMQX Enterprise 和 EMQX Cloud 均由全球支持团队提供 5x8/7x24、线上/线下等不同规格、不同形式的技术支持，同时提供定制开发、架构咨询、项目集成等商业化的服务。 
 
-在价格方面，EMQX Cloud 针对不同版本规格有非常灵活透明的报价，更有按量付费、包年预付两种形式，有不同程度的优惠力度。您可以在这里选择版本规格，进行价格预估：[https://www.emqx.com/zh/cloud/pricing](https://www.emqx.com/zh/cloud/pricing) 
+在价格方面，EMQX Cloud 针对不同版本规格有非常灵活透明的报价，更有按量付费、包年预付两种形式，有不同程度的优惠力度。您可以在这里选择版本规格，进行价格预估：[https://www.emqx.com/zh/pricing](https://www.emqx.com/zh/pricing) 
 
 EMQX Enterprise 的价格方案会根据最大连接数上限、使用时长、企业使用场景给出不同的价格模式，详细报价可以点击链接获取：[https://www.emqx.com/zh/contact](https://www.emqx.com/zh/contact) 
 
