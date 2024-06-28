@@ -7,6 +7,7 @@
 ## [MQTT Tutorials](https://www.emqx.com/en/blog/category/mqtt-protocol)
 Get to know the preferred protocol in IoT from beginner to master.
 
+- [MQTT vs HTTP: Which is Better Suited for the Internet of Things (IoT)?](https://www.emqx.com/en/blog/mqtt-vs-http) ([Edit](https://github.com/emqx/blog/blob/main/en/202406/mqtt-vs-http.md))
 - [MQTT vs WebSocket: Key Differences & Applications](https://www.emqx.com/en/blog/mqtt-vs-websocket) ([Edit](https://github.com/emqx/blog/blob/main/en/202405/mqtt-vs-websocket.md))
 - [How to Process JSON, Hex, and Binary Data in MQTT](https://www.emqx.com/en/blog/how-to-process-json-hex-and-binary-data-in-mqtt) ([Edit](https://github.com/emqx/blog/blob/main/en/202405/how-to-process-json-hex-and-binary-data-in-mqtt.md))
 - [Mastering MQTT Analysis with Wireshark: A Beginner's Guide](https://www.emqx.com/en/blog/mastering-mqtt-analysis-with-wireshark) ([Edit](https://github.com/emqx/blog/blob/main/en/202405/mastering-mqtt-analysis-with-wireshark.md))
