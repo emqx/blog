@@ -8,7 +8,7 @@ This blog aims to provide an in-depth examination of MQTT and HTTP within the Io
 
 ## What is MQTT?
 
-[MQTT](https://mqtt.org/) is a lightweight messaging protocol that operates on a publish/subscribe model, specifically designed to address the intricate and unreliable network conditions of IoT devices, as well as their constrained memory, storage, and processing power. It enables networked devices to receive real-time, reliable messaging services with minimal coding requirements.
+[MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) is a lightweight messaging protocol that operates on a publish/subscribe model, specifically designed to address the intricate and unreliable network conditions of IoT devices, as well as their constrained memory, storage, and processing power. It enables networked devices to receive real-time, reliable messaging services with minimal coding requirements.
 
 In a standard MQTT setup, all clients needing to communicate (typically hardware devices and application services) maintain a continuous TCP connection with a single MQTT server (MQTT Broker). There’s no need for a direct link between the message-sending client (publisher) and the message-receiving client (subscriber); the MQTT server handles the message routing and dissemination.
 
@@ -108,19 +108,19 @@ MQTT offers three QoS levels:
 
 Clients can choose the appropriate QoS level to match their specific needs for reliable message delivery.
 
-**Shared Subscriptions**
+**[Shared Subscriptions](https://www.emqx.com/en/blog/introduction-to-mqtt5-protocol-shared-subscription)**
 
 Multiple clients can subscribe to the same topic, receiving identical messages, which is ideal for scenarios where data sharing or event subscription is needed across multiple devices.
 
-**Retained Messages**
+**[Retained Messages](https://www.emqx.com/en/blog/mqtt5-features-retain-message)**
 
 Servers can retain the latest message for a given topic and dispatch it immediately to new subscribers, ensuring they receive the most current information.
 
-**Last Will Message**
+**[Last Will Message](https://www.emqx.com/en/blog/use-of-mqtt-will-message)**
 
 Clients can set a "last will" message to be published by the server if they disconnect unexpectedly, alerting other subscribers of the disconnection.
 
-**Message Expiry Interval**
+**[Message Expiry Interval](https://www.emqx.com/en/blog/mqtt-message-expiry-interval)**
 
 Messages can be assigned an expiry interval, ensuring they are consumed within a specified timeframe and preventing outdated messages from burdening the system.
 
@@ -175,13 +175,13 @@ curl -X POST 'http://localhost:18083/api/v5/publish' \
 
 When a device sends an MQTT message to EMQX, the Webhook feature can forward this message to an HTTP server, instantly transmitting device data to the application system. 
 
-![](https://assets.emqx.com/images/6cd9b05a099b1a6063efc2e29ab3886d.png)
+![MQTT → HTTP](https://assets.emqx.com/images/6cd9b05a099b1a6063efc2e29ab3886d.png)
 
 
 
 The configuration interface is as follows:
 
-![](https://assets.emqx.com/images/d2b7002a90294a511e0931d034c2f7a4.png)
+![Create webhook](https://assets.emqx.com/images/d2b7002a90294a511e0931d034c2f7a4.png)
 
 
 
@@ -190,3 +190,10 @@ Future versions of EMQX will further enhance this process by saving real-time MQ
 ## Conclusion
 
 Ultimately, choosing between MQTT and HTTP depends on your specific application needs and scenario characteristics. For real-time, bidirectional communication with low resource consumption, MQTT is ideal. For simple request/response interactions, such as client data collection and submission, actively pulling data from the server, or leveraging existing web infrastructure, HTTP is more appropriate.
+
+<section class="promotion">
+    <div>
+        Talk to an Expert
+    </div>
+    <a href="https://www.emqx.com/en/contact?product=solutions" class="button is-gradient">Contact Us →</a>
+</section>

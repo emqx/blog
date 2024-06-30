@@ -467,6 +467,7 @@ Build a reliable, efficient and industry-specific Internet of Vehicles platform 
 
 ## [Industrial IoT | Unified Namespace | Sparkplug](https://www.emqx.com/en/blog/category/industrial-iot)
 
+- [Comparing NeuronEX and Kepware: Choosing the Right Industrial IoT Solutions](https://www.emqx.com/en/blog/comparing-neuronex-and-kepware) ([Edit](https://github.com/emqx/blog/blob/main/en/202406/comparing-neuronex-and-kepware.md))
 - [Breaking Down Industrial Gateway Solutions: NeuronEX vs. Apache PLC4X, Kepware, and Monkot Server](https://www.emqx.com/en/blog/breaking-down-industrial-gateway-solutions) ([Edit](https://github.com/emqx/blog/blob/main/en/202405/breaking-down-industrial-gateway-solutions.md))
 - [BACnet vs Modbus: A Comprehensive Comparison](https://www.emqx.com/en/blog/bacnet-vs-modbus) ([Edit](https://github.com/emqx/blog/blob/main/en/202405/bacnet-vs-modbus.md))
 - [Unified Namespace (UNS): Introduction and Its Applications in IIoT](https://www.emqx.com/en/blog/unified-namespace-next-generation-data-fabric-for-iiot) ([Edit](https://github.com/emqx/blog/blob/main/en/202404/unified-namespace-next-generation-data-fabric-for-iiot.md))
