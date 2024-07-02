@@ -34,7 +34,7 @@ Nevertheless, let us first deploy a cluster in a more traditional fashion, so we
 | Hong Kong (ap-east-1)    | `emqx@ape1.emqx.dev` |
 | Cape Town (af-south-1)   | `emqx@afs1.emqx.dev` |
 
-![EMQX Geo-Distribution](https://assets.emqx.com/images/460cdbd66a7e51e84f988f1574874025.png)
+![EMQX Geo-Distribution 1](https://assets.emqx.com/images/3f0d2c80af41b939f5e2b82050ba9f2d.png)
 
 One more “traditional” thing about our cluster that will help us understand the problem space better and illustrate the improvements we've made is this small configuration snippet:
 
@@ -145,6 +145,8 @@ However, we're still far from the theoretical limit of 600 milliseconds, give or
 ## Replicants to the Rescue
 
 Obviously, we could optimize our workloads to better fit them into our deployment model, but the price of latency would still need to be paid anyway. Instead, let us throw away our “traditional” deployment and deploy EMQX in a cluster comprised of 3 co-located core nodes and 3 replicants, geographically distributed over the same 3 continents.
+
+![EMQX Geo-Distribution 2](https://assets.emqx.com/images/460cdbd66a7e51e84f988f1574874025.png)
 
 This way, all the costly state changes will be carried only by the core nodes, where the latency is low, and the replicants will only need to keep up with the state changes. As before, clients will connect to the closest node, no matter if it's a core node or a replicant.
 
