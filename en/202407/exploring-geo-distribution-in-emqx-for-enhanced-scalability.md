@@ -198,7 +198,7 @@ broker.routing.batch_sync.enable_on = replicant
 
 This snippet enables batch synchronization only on replicants. Setting it to `all` would enable it on all nodes, and in general will likely be beneficial for a wide variety of workloads, mostly thanks to the broker pool being freed up from doing extra synchronization work. In our case, the effects would not be as pronounced and harder to illustrate.
 
-The default is `none`, and the reason for that is safety. We want to provide smooth rolling upgrade experience, and enabling it *before* rolling out EMQX 5.7.0 over, let's say, 5.4.1 could lead to some temporary unavailability. If you find yourself upgrading from EMQX 5.5.0 or later however, you should not worry about enabling it right away.
+The default is `none`, and the reason for that is safety. We want to provide a smooth rolling upgrade experience, and enabling it *before* rolling out EMQX 5.7.0 over, let's say, 5.4.1 could lead to some temporary unavailability. If you find yourself upgrading from EMQX 5.5.0 or later, you should not worry about enabling it right away.
 
 Ok then, let's see how it goes now.
 
