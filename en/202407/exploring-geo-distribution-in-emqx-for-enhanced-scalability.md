@@ -127,7 +127,7 @@ We were lucky here: if there were any connectivity troubles, they were mild enou
 
 ## Avoiding the Conflicts
 
-Luckily, this *v1* schema we've manually enabled for our cluster is no longer the default, and the new [*v2*](https://github.com/emqx/emqx/pull/11524) schema was considered pretty robust and performant enough to take its place as the default starting from [EMQX 5.4.0](https://github.com/emqx/emqx/releases/tag/v5.4.0). The main difference that radically improves the situation is that it's *conflict-free*: no matter how messy and complex are topic filters your clients are using, there's zero chance managing them will involve write conflicts. You don't need to worry about potential clashes in subscription patterns anymore.
+Luckily, this *v1* schema we've manually enabled for our cluster is no longer the default, and the new [*v2*](https://github.com/emqx/emqx/pull/11524) schema was considered pretty robust and performant enough to take its place as the default starting from [EMQX 5.4.0](https://github.com/emqx/emqx/releases/tag/v5.4.0). The main difference that radically improves the situation is that it's *conflict-free*: no matter how messy and complex topic filters your clients are using, there's zero chance managing them will involve write conflicts. You don't need to worry about potential clashes in subscription patterns anymore.
 
 Let's throw away this piece of configuration we've been using and see how *v2* fares against the “traditional” one.
 
