@@ -188,7 +188,7 @@ $ mqttx bench sub -h ape1.emqx.dev --count 1000 --interval 0 --topic t/mqttx/+/%
 [11:42:43 PM] › ℹ  Created 1000 connections in 4.329s
 ```
 
-With 10 times more network traffic it's likely that the misbehaving network is mostly to blame, but the total time is still 4 times worse. Can we do better? Thankfully, there's another improvement we had been working on and that landed in [EMQX 5.5.0](https://github.com/emqx/emqx/releases/tag/v5.5.0) release: [batch synchronization](https://github.com/emqx/emqx/pull/12329) of routing table updates. It is designed to better utilize the available network throughput when the communication is reliable, without increasing latency of operations when it's already too high.
+With 10 times more network traffic it's likely that the misbehaving network is mostly to blame, but the total time is still 4 times worse. Can we do better? Thankfully, there's another improvement we have been working on and that landed in the [EMQX 5.5.0](https://github.com/emqx/emqx/releases/tag/v5.5.0) release: [batch synchronization](https://github.com/emqx/emqx/pull/12329) of routing table updates. It is designed to better utilize the available network throughput when the communication is reliable, without increasing latency of operations when it's already too high.
 
 This feature is not yet enabled by default, but it's pretty easy to turn on.
 
