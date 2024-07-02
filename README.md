@@ -194,6 +194,7 @@ Explore more with & via EMQ.
 ## [EMQX Open Source | Broker](https://www.emqx.com/en/blog/category/emqx)
 EMQX is the world's most scalable open-source MQTT broker with a high performance that connects 100M+ IoT devices in 1 cluster, while maintaining 1M message per second throughput and sub-millisecond latency.
 
+- [Beyond Boundaries: Exploring Geo-Distribution in EMQX for Enhanced Scalability](https://www.emqx.com/en/blog/exploring-geo-distribution-in-emqx-for-enhanced-scalability) ([Edit](https://github.com/emqx/blog/blob/main/en/202407/exploring-geo-distribution-in-emqx-for-enhanced-scalability.md))
 - [A Guide on Accessing CoAP Devices with EMQX](https://www.emqx.com/en/blog/connecting-coap-devices-to-emqx) ([Edit](https://github.com/emqx/blog/blob/main/en/202406/connecting-coap-devices-to-emqx.md))
 - [Encoding and Decoding Messages Using Schema Registry in EMQX Dedicated](https://www.emqx.com/en/blog/encoding-and-decoding-messages-using-schema-registry-in-emqx) ([Edit](https://github.com/emqx/blog/blob/main/en/202406/encoding-and-decoding-messages-using-schema-registry-in-emqx.md))
 - [EMQX Multi-Protocol Gateway: Streamlining IoT Communication](https://www.emqx.com/en/blog/emqx-multi-protocol-gateway) ([Edit](https://github.com/emqx/blog/blob/main/en/202406/emqx-multi-protocol-gateway.md))
