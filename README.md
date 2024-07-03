@@ -56,6 +56,7 @@ Get to know the preferred protocol in IoT from beginner to master.
 
 ## [MQTT Broker](https://www.emqx.com/en/blog/category/mqtt-broker)
 
+- [Building MQTT Services on Windows](https://www.emqx.com/en/blog/install-mqtt-broker-on-windows) ([Edit](https://github.com/emqx/blog/blob/main/en/202407/install-mqtt-broker-on-windows.md))
 - [Comparison of Open Source MQTT Brokers 2024](https://www.emqx.com/en/blog/a-comprehensive-comparison-of-open-source-mqtt-brokers-in-2023) ([Edit](https://github.com/emqx/blog/blob/main/en/202405/a-comprehensive-comparison-of-open-source-mqtt-brokers-in-2023.md))
 - [Free MQTT Broker: Exploring Options and Choosing the Right Solution](https://www.emqx.com/en/blog/free-mqtt-broker) ([Edit](https://github.com/emqx/blog/blob/main/en/202404/free-mqtt-broker.md))
 - [MQTT Broker: How It Works, Popular Options, and Quickstart](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) ([Edit](https://github.com/emqx/blog/blob/main/en/202402/the-ultimate-guide-to-mqtt-broker-comparison.md))
@@ -597,6 +598,7 @@ IoT edge industrial protocol gateway software, which supports one-stop access to
 ## [NanoMQ - Lightweight MQTT broker for IoT Edge](https://www.emqx.com/en/blog/category/nanomq)
 NanoMQ is an MQTT messaging broker + multi-protocol message bus for edge computing. It supports the MQTT protocol and other commonly-used edge bus protocols such as ZeroMQ and Nanomsg, and integrates broker and brokerless message modes to facilitate the creation of one-stop edge data bus applications.
 
+- [Building MQTT Services on Windows](https://www.emqx.com/en/blog/install-mqtt-broker-on-windows) ([Edit](https://github.com/emqx/blog/blob/main/en/202407/install-mqtt-broker-on-windows.md))
 - [How to Deploy an MQTT Broker on Raspberry Pi](https://www.emqx.com/en/blog/how-to-deploy-an-mqtt-broker-on-raspberry-pi) ([Edit](https://github.com/emqx/blog/blob/main/en/202405/how-to-deploy-an-mqtt-broker-on-raspberry-pi.md))
 - [Supercharging IIoT with MQTT, Edge Intelligence, and InfluxDB](https://www.emqx.com/en/blog/supercharging-iiot-with-mqtt-edge-intelligence-and-influxdb) ([Edit](https://github.com/emqx/blog/blob/main/en/202311/supercharging-iiot-with-mqtt-edge-intelligence-and-influxdb.md))
 - [How to Install a Scalable MQTT Broker on OpenWRT](https://www.emqx.com/en/blog/how-to-install-a-scalable-mqtt-broker-on-openwrt) ([Edit](https://github.com/emqx/blog/blob/main/en/202310/how-to-install-a-scalable-mqtt-broker-on-openwrt.md))

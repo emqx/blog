@@ -57,6 +57,7 @@ Get to know the preferred protocol in IoT from beginner to master.
 
 ## [MQTT Broker](https://www.emqx.com/zh/blog/category/mqtt-broker)
 
+- [在 Windows 平台搭建 MQTT 服务](https://www.emqx.com/zh/blog/install-mqtt-broker-on-windows) ([Edit](https://github.com/emqx/blog/blob/main/zh/202407/install-mqtt-broker-on-windows.md))
 - [2024 最全面的开源 MQTT Broker 对比](https://www.emqx.com/zh/blog/a-comprehensive-comparison-of-open-source-mqtt-brokers-in-2023) ([Edit](https://github.com/emqx/blog/blob/main/zh/202312/a-comprehensive-comparison-of-open-source-mqtt-brokers-in-2023.md))
 - [Mosquitto MQTT Broker：优缺点、教程和替代方案](https://www.emqx.com/zh/blog/mosquitto-mqtt-broker-pros-cons-tutorial-and-modern-alternatives) ([Edit](https://github.com/emqx/blog/blob/main/zh/202312/mosquitto-mqtt-broker-pros-cons-tutorial-and-modern-alternatives.md))
 - [MQTT Broker：工作原理、相关产品与快速入门指南](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison) ([Edit](https://github.com/emqx/blog/blob/main/zh/202306/the-ultimate-guide-to-mqtt-broker-comparison.md))
@@ -616,6 +617,7 @@ IoT edge industrial protocol gateway software, which supports one-stop access to
 ## [NanoMQ - Lightweight MQTT broker for IoT Edge](https://www.emqx.com/zh/blog/category/nanomq)
 NanoMQ is an MQTT messaging broker + multi-protocol message bus for edge computing. It supports the MQTT protocol and other commonly-used edge bus protocols such as ZeroMQ and Nanomsg, and integrates broker and brokerless message modes to facilitate the creation of one-stop edge data bus applications.
 
+- [在 Windows 平台搭建 MQTT 服务](https://www.emqx.com/zh/blog/install-mqtt-broker-on-windows) ([Edit](https://github.com/emqx/blog/blob/main/zh/202407/install-mqtt-broker-on-windows.md))
 - [QUIC 桥接支持 MQTT 5.0｜NanoMQ Newsletter 202305](https://www.emqx.com/zh/blog/nanomq-newsletter-202305) ([Edit](https://github.com/emqx/blog/blob/main/zh/202306/nanomq-newsletter-202305.md))
 - [SOME/IP 代理，重连新增自动退避｜NanoMQ Newsletter 202304](https://www.emqx.com/zh/blog/nanomq-newsletter-202304) ([Edit](https://github.com/emqx/blog/blob/main/zh/202305/nanomq-newsletter-202304.md))
 - [QUIC 双向认证、DDS 代理功能升级](https://www.emqx.com/zh/blog/nanomq-newsletter-202303) ([Edit](https://github.com/emqx/blog/blob/main/zh/202304/nanomq-newsletter-202303.md))
@@ -625,7 +627,6 @@ NanoMQ is an MQTT messaging broker + multi-protocol message bus for edge computi
 - [更强大的 MQTT over QUIC 桥接 & Azure 桥接](https://www.emqx.com/zh/blog/nanomq-newsletter-202210) ([Edit](https://github.com/emqx/blog/blob/main/zh/202211/nanomq-newsletter-202210.md))
 - [新增桥接连接状态监控、重构日志系统](https://www.emqx.com/zh/blog/nanomq-newsletter-202209) ([Edit](https://github.com/emqx/blog/blob/main/zh/202210/nanomq-newsletter-202209.md))
 - [NanoMQ Newsletter 2022-08｜v0.11：MQTT 5.0 + MQTT over QUIC 桥接，新增 HTTP API 监控客户端状态](https://www.emqx.com/zh/blog/nanomq-newsletter-202208) ([Edit](https://github.com/emqx/blog/blob/main/zh/202209/nanomq-newsletter-202208.md))
-- [在 Windows 上搭建 MQTT 消息服务器](https://www.emqx.com/zh/blog/install-mqtt-broker-on-windows) ([Edit](https://github.com/emqx/blog/blob/main/zh/202208/install-mqtt-broker-on-windows.md))
 - [NanoMQ Newsletter 2022-07｜v0.10：多路桥接、HTTP 发布 MQTT 消息 API、NanoSDK 支持 MQTT 5.0](https://www.emqx.com/zh/blog/nanomq-newsletter-202207) ([Edit](https://github.com/emqx/blog/blob/main/zh/202208/nanomq-newsletter-202207.md))
 - [NanoMQ Newsletter 2022-06｜规则引擎正式发布 & NanoSDK 支持 MQTT over QUIC](https://www.emqx.com/zh/blog/nanomq-newsletter-202206) ([Edit](https://github.com/emqx/blog/blob/main/zh/202207/nanomq-newsletter-202206.md))
 - [NanoMQ Newsletter 2022-05｜v0.8.0 发布，新增 WebHook 拓展接口和连接认证 API](https://www.emqx.com/zh/blog/nanomq-newsletter-202205) ([Edit](https://github.com/emqx/blog/blob/main/zh/202206/nanomq-newsletter-202205.md))
