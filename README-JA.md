@@ -78,6 +78,7 @@ Best practice of MQTT in various clients.
 ## [MQTT Integration (Eco & Integration)](https://www.emqx.com/ja/blog/category/eco-and-integration)
 Explore more with & via EMQ.
 
+- [EMQX と Datadog の統合による効率的な監視の実現](https://www.emqx.com/ja/blog/seamlessly-integrating-emqx-with-datadog-for-efficient-monitoring) ([Edit](https://github.com/emqx/blog/blob/main/ja/202407/seamlessly-integrating-emqx-with-datadog-for-efficient-monitoring.md))
 - [Node-REDでMQTT使用ガイド](https://www.emqx.com/ja/blog/using-node-red-to-process-mqtt-data) ([Edit](https://github.com/emqx/blog/blob/main/ja/202406/using-node-red-to-process-mqtt-data.md))
 - [MQTTとClickHouseの統合: IoTデータのリアルタイム分析を促進](https://www.emqx.com/ja/blog/mqtt-to-clickhouse-integration) ([Edit](https://github.com/emqx/blog/blob/main/ja/202405/mqtt-to-clickhouse-integration.md))
 - [MQTT から Webhook への連携: IoT アプリケーションの拡張](https://www.emqx.com/ja/blog/mqtt-to-webhook) ([Edit](https://github.com/emqx/blog/blob/main/ja/202404/mqtt-to-webhook.md))
