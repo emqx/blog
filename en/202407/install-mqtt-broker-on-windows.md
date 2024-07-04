@@ -34,11 +34,15 @@ After unzipping, you can access NanoMQ via the Windows command line from the bin
 
 Launch NanoMQ with `nanomq start --conf C:\nanomq\config\nanomq.conf`. The path C:\nanomq\config\nanomq.conf specifies the NanoMQ configuration file location, with sample configurations available in the config directory of the unzipped folder. For comprehensive configuration details, consult the official documentation.
 
+![nanomq start](https://assets.emqx.com/images/9bdac520e172e32cc866891a0626cfe8.png)
+
 Next, explore NanoMQ’s functionality using the MQTT client tool nanomq_cli, which is located in the bin directory.
 
-![image.png](https://assets.emqx.com/images/ff30f04d2dd96558d9dde7870daf52eb.png)
+![nanomq_cli sub](https://assets.emqx.com/images/9ab0902bfbb7f7e12ddd5cd344533a60.png)
 
 As illustrated, nanomq_cli subscribes to the topic `nmqtest`with the `sub` command and receives the HelloWorld message published by nanomq_cli using the `pub` command.
+
+![nanomq_cli pub](https://assets.emqx.com/images/01d1736ff24d5a0a0effb1f4a2f36c66.png)
 
 ## Source Code Compilation and Execution
 
@@ -73,7 +77,7 @@ Beyond NanoMQ’s proprietary client tool, the open-source [MQTT client MQTTX](h
 
 The figure also demonstrates that the client subscribed to the nmqtest topic receives the hello message sent by another client via NanoMQ.
 
-![MQTTX](https://assets.emqx.com/images/9151df62b218245b893ac35335328943.png)
+![MQTTX](https://assets.emqx.com/images/8b5bafa268324b89e68fec72f74fb21d.png)
 
 ## Conclusion
 
