@@ -162,6 +162,7 @@ Best practice of MQTT in various clients.
 ## [MQTT Integration (Eco & Integration)](https://www.emqx.com/en/blog/category/eco-and-integration)
 Explore more with & via EMQ.
 
+- [MQTT & micro-ROS: Building Efficient Robotics Applications](https://www.emqx.com/en/blog/mqtt-and-micro-ros) ([Edit](https://github.com/emqx/blog/blob/main/en/202407/mqtt-and-micro-ros.md))
 - [Getting the Client's Real IP When Using the NGINX Reverse Proxy for EMQX](https://www.emqx.com/en/blog/getting-the-clients-real-ip-when-using-the-nginx-reverse-proxy-emqx) ([Edit](https://github.com/emqx/blog/blob/main/en/202407/getting-the-clients-real-ip-when-using-the-nginx-reverse-proxy-emqx.md))
 - [MQTT to Apache Pulsar: A Comprehensive Integration Tutorial](https://www.emqx.com/en/blog/mqtt-to-apache-pulsar) ([Edit](https://github.com/emqx/blog/blob/main/en/202406/mqtt-to-apache-pulsar.md))
 - [MQTT with Node-RED: A Beginner's Guide with Examples](https://www.emqx.com/en/blog/using-node-red-to-process-mqtt-data) ([Edit](https://github.com/emqx/blog/blob/main/en/202405/using-node-red-to-process-mqtt-data.md))
