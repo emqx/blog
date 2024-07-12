@@ -8,7 +8,7 @@ Here are some of the key functions of cloud-based IoT platforms:
 - **Scalability and flexibility:** As the number of IoT devices increases, so does the need for storage and processing power. Cloud computing provides a scalable, flexible solution that can easily adapt to these changing needs.
 - **Real-time processing and analytics:** IoT devices often need to process and analyze data in real-time to provide valuable insights and make informed decisions. Cloud computing provides the necessary infrastructure and processing power to carry out these real-time operations.
 
-Cloud-based IoT platforms are transforming industries all over the world. From smart homes that can be controlled remotely through a smartphone, to intelligent manufacturing systems that can monitor and improve production efficiency, IoT in the cloud is changing the way we live and work.
+Cloud-based IoT platforms are transforming industries all over the world. From smart homes that can be controlled remotely through a smartphone, to intelligent manufacturing systems that can monitor and improve production efficiency, IoT in the cloud is changing the way we live and work. For additional resources, see [IaaS (Infrastructure as a Service): The Ultimate Guide](https://bluexp.netapp.com/iaas).
 
 ## 8 Benefits of Cloud-Based IoT Platforms
 

@@ -118,7 +118,7 @@ Some use cases for MQTT over QUIC in the Internet of Vehicles include:
 
 ## EMQX: The First MQTT Broker to Implement MQTT Over QUIC
 
-[EMQX](https://github.com/emqx/emqx) is a world leading [open-source MQTT broker](https://www.emqx.com/en/blog/a-comprehensive-comparison-of-open-source-mqtt-brokers-in-2023) with a high-performance real-time message processing engine, powering event streaming for IoT devices at massive scale. Starting from version 5.0, EMQX became the first MQTT broker to support MQTT over QUIC, providing a more efficient and secure way of transmitting MQTT messages over modern complex networks, and improving MQTT's performance in certain scenarios.
+[EMQX](https://github.com/emqx/emqx) is a world leading [open source](https://www.acorn.io/resources/blog/open-source) [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) with a high-performance real-time message processing engine, powering event streaming for IoT devices at massive scale. Starting from version 5.0, EMQX became the first MQTT broker to support MQTT over QUIC, providing a more efficient and secure way of transmitting MQTT messages over modern complex networks, and improving MQTT's performance in certain scenarios.
 
 The current implementation of EMQX support replaces the transport layer with a QUIC stream where the client initiates the connection and creates a bidirectional stream. EMQX supports two operating modes:
 
