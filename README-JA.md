@@ -195,6 +195,12 @@ NanoMQ is an MQTT messaging broker + multi-protocol message bus for edge computi
 - [NanoMQを利用して、ブリッジ接続状態監視機能追加、ログシステム再構築](https://www.emqx.com/ja/blog/nanomq-newsletter-202209) ([Edit](https://github.com/emqx/blog/blob/main/ja/202305/nanomq-newsletter-202209.md))
 
 
+## [IoT Testing](https://www.emqx.com/ja/blog/category/iot-testing)
+Guarantee the availability and reliability of the IoT platform.
+
+- [MQTT テスト: 基本、ベストプラクティス、クイックスタート](https://www.emqx.com/ja/blog/mqtt-testing) ([Edit](https://github.com/emqx/blog/blob/main/ja/202407/mqtt-testing.md))
+
+
 ## [適用シナリオ](https://www.emqx.com/ja/blog/category/use-cases)
 
 - [ゲームオン! ゲームにおけるシームレスなリアルタイム通信に最適なMQTTプラットフォーム](https://www.emqx.com/ja/blog/mqtt-messaging-platform-enhances-real-time-game-communication) ([Edit](https://github.com/emqx/blog/blob/main/ja/202406/mqtt-messaging-platform-enhances-real-time-game-communication.md))
