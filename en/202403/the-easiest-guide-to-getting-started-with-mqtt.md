@@ -127,7 +127,7 @@ In this post, we will use the MQTT client tool provided by [MQTTX](https://mqttx
 
 <br>
 
-Currently, there are mature open-source MQTT client libraries for all programming languages. We have selected [popular MQTT client libraries & SDKs](https://www.emqx.com/en/mqtt-client-sdk) in various programming languages and provided code examples to help you quickly understand the use of MQTT clients.
+Currently, there are mature [open source](https://www.acorn.io/resources/blog/open-source) MQTT client libraries for all programming languages. We have selected [popular MQTT client libraries & SDKs](https://www.emqx.com/en/mqtt-client-sdk) in various programming languages and provided code examples to help you quickly understand the use of MQTT clients.
 
 ### Create an MQTT Connection
 

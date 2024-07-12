@@ -254,7 +254,7 @@ The fully managed cloud service is the easiest way to start an MQTT service. Wit
 
 ## EMQX: World’s Most Scalable MQTT Broker
 
-EMQX is one of the most popular MQTT brokers and has 12.9k stars on [GitHub](https://github.com/emqx/emqx). The EMQX project was launched in 2012 and is licensed under Apache version 2.0. EMQX is written in Erlang/OTP, a programming language for building massively scalable soft real-time systems.
+EMQX is one of the most popular [open source](https://www.acorn.io/resources/blog/open-source) MQTT brokers and has 12.9k stars on [GitHub](https://github.com/emqx/emqx). The EMQX project was launched in 2012 and is licensed under Apache version 2.0. EMQX is written in Erlang/OTP, a programming language for building massively scalable soft real-time systems.
 
 EMQX is the world's most scalable MQTT broker that supports advanced features such as [MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5), [MQTT-SN](https://www.emqx.com/en/blog/connecting-mqtt-sn-devices-using-emqx), and [MQTT over QUIC](https://www.emqx.com/en/blog/mqtt-over-quic). It supports masterless clustering for high availability and horizontal scalability. EMQX 5.0, the latest version, scales to establish 100 million concurrent MQTT connections with a single cluster of 23 nodes.
 
