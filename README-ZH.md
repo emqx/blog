@@ -188,6 +188,7 @@ Explore more with & via EMQ.
 ## [EMQX Open Source | Broker](https://www.emqx.com/zh/blog/category/emqx)
 EMQX is the world's most scalable open-source MQTT broker with a high performance that connects 100M+ IoT devices in 1 cluster, while maintaining 1M message per second throughput and sub-millisecond latency.
 
+- [EMQX 跨域集群：增强可扩展性，打破地域限制](https://www.emqx.com/zh/blog/exploring-geo-distribution-in-emqx-for-enhanced-scalability) ([Edit](https://github.com/emqx/blog/blob/main/zh/202407/exploring-geo-distribution-in-emqx-for-enhanced-scalability.md))
 - [使用 NGINX 反向代理 EMQX 时获取客户端真实 IP](https://www.emqx.com/zh/blog/getting-the-clients-real-ip-when-using-the-nginx-reverse-proxy-emqx) ([Edit](https://github.com/emqx/blog/blob/main/zh/202407/getting-the-clients-real-ip-when-using-the-nginx-reverse-proxy-emqx.md))
 - [使用 Mosquitto Bridge 将 MQTT 消息桥接到云](https://www.emqx.com/zh/blog/bridging-mosquitto-to-emqx-cluster) ([Edit](https://github.com/emqx/blog/blob/main/zh/202405/bridging-mosquitto-to-emqx-cluster.md))
 - [MQTT-SN 协议详解及使用](https://www.emqx.com/zh/blog/connecting-mqtt-sn-devices-using-emqx) ([Edit](https://github.com/emqx/blog/blob/main/zh/202405/connecting-mqtt-sn-devices-using-emqx.md))
