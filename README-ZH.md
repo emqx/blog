@@ -777,6 +777,7 @@ Guarantee the availability and reliability of the IoT platform.
 
 ## [应用案例](https://www.emqx.com/zh/blog/category/use-cases)
 
+- [连接农场牧业与数字世界：EMQX 在全球智慧农业中的应用](https://www.emqx.com/zh/blog/application-of-emqx-in-smart-agriculture) ([Edit](https://github.com/emqx/blog/blob/main/zh/202407/application-of-emqx-in-smart-agriculture.md))
 - [下一代智慧燃气平台，EMQ 助力城市级燃气物联网建设](https://www.emqx.com/zh/blog/next-generation-smart-gas-platform) ([Edit](https://github.com/emqx/blog/blob/main/zh/202407/next-generation-smart-gas-platform.md))
 - [从人工抄表到边缘智能：EMQ 云边协同助力燃气门站智能化管理](https://www.emqx.com/zh/blog/intelligent-management-of-gas-gate-stations) ([Edit](https://github.com/emqx/blog/blob/main/zh/202405/intelligent-management-of-gas-gate-stations.md))
 - [EMQX 在 Web 3.0 领域的应用：MPC 钱包安全交易方案](https://www.emqx.com/zh/blog/mqtt-platform-in-web-3-0) ([Edit](https://github.com/emqx/blog/blob/main/zh/202405/mqtt-platform-in-web-3-0.md))
