@@ -43,7 +43,7 @@ The MQTTX desktop client offers users a more efficient and personalized experien
    Here’s a commonly used proto format in the IoT:
 
    ```protobuf
-   syntax = “proto3”;
+   syntax = "proto3";
    
    package IoT;
    
