@@ -567,7 +567,7 @@ MQTTX is a Fully Open-source MQTT 5.0 cross-platform Desktop Client, makes it ea
 ## [Neuron - IIoT Connectivity Server](https://www.emqx.com/zh/blog/category/neuron)
 IoT edge industrial protocol gateway software, which supports one-stop access to dozens of industrial protocols and converts them into MQTT protocol to access the cloud industrial IoT platform. It just requires ultra-low resource consumption, and supports three major architectures of X86, ARM, and MIPS.
 
-- [灵活数据流处理：NeuronEX 自定义函数高效利用](https://www.emqx.com/zh/blog/neuronex-custom-function) ([Edit](https://github.com/emqx/blog/blob/main/zh/202407/neuronex-custom-function.md))
+- [灵活数据流处理：NeuronEX 支持 JavaScript 自定义函数](https://www.emqx.com/zh/blog/neuronex-custom-function) ([Edit](https://github.com/emqx/blog/blob/main/zh/202407/neuronex-custom-function.md))
 - [NeuronEX 3.3.0 发布：工业数据采集、分析和管理多项升级](https://www.emqx.com/zh/blog/neuronex-v-3-3-0-release-notes) ([Edit](https://github.com/emqx/blog/blob/main/zh/202406/neuronex-v-3-3-0-release-notes.md))
 - [工业边缘网关软件 NeuronEX 中的反向代理和进程管理](https://www.emqx.com/zh/blog/proxy-and-process-management-in-neuronex) ([Edit](https://github.com/emqx/blog/blob/main/zh/202405/proxy-and-process-management-in-neuronex.md))
 - [解锁工业数据流：NeuronEX 规则调试功能实操指南 ](https://www.emqx.com/zh/blog/neuronex-rules-debugging-guide) ([Edit](https://github.com/emqx/blog/blob/main/zh/202405/neuronex-rules-debugging-guide.md))
