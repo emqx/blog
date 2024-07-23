@@ -418,6 +418,7 @@ The world's most scalable and reliable MQTT messaging platform to connect, move 
 ## [Internet of Vehicles | Connected Cars](https://www.emqx.com/zh/blog/category/internet-of-vehicles)
 Build a reliable, efficient and industry-specific Internet of Vehicles platform based on EMQ's practical experience, from theoretical knowledge such as protocol selection to practical operations like platform architecture design.
 
+- [Vehicle + UNS : 为 SDV 提供全生命周期的数据可互操作性](https://www.emqx.com/zh/blog/vehicle-and-uns) ([Edit](https://github.com/emqx/blog/blob/main/zh/202407/vehicle-and-uns.md))
 - [车路协同：连接智慧的车与路，赋能智慧交通](https://www.emqx.com/zh/blog/enhancing-v2x-connectivity-with-emq) ([Edit](https://github.com/emqx/blog/blob/main/zh/202311/enhancing-v2x-connectivity-with-emq.md))
 - [构建新一代车联网 TSP 平台: 实现高效车云互联](https://www.emqx.com/zh/blog/revolutionizing-tsp-platforms) ([Edit](https://github.com/emqx/blog/blob/main/zh/202311/revolutionizing-tsp-platforms.md))
 - [V2X：MQTT 统一通信驱动车联网未来发展](https://www.emqx.com/zh/blog/what-is-v2x-and-the-future-of-vehicle-to-everything-connectivity) ([Edit](https://github.com/emqx/blog/blob/main/zh/202309/what-is-v2x-and-the-future-of-vehicle-to-everything-connectivity.md))
