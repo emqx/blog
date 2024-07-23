@@ -198,6 +198,7 @@ Explore more with & via EMQ.
 ## [EMQX Open Source | Broker](https://www.emqx.com/en/blog/category/emqx)
 EMQX is the world's most scalable open-source MQTT broker with a high performance that connects 100M+ IoT devices in 1 cluster, while maintaining 1M message per second throughput and sub-millisecond latency.
 
+- [Port Management in EMQX Dedicated: Boosting Security and Efficiency](https://www.emqx.com/en/blog/port-management-in-emqx-dedicated) ([Edit](https://github.com/emqx/blog/blob/main/en/202407/port-management-in-emqx-dedicated.md))
 - [Integrating OCPP Devices with EMQX for a Seamless EV Charging Network](https://www.emqx.com/en/blog/integrating-ocpp-devices-with-emqx-for-a-seamless-ev-charging-network) ([Edit](https://github.com/emqx/blog/blob/main/en/202407/integrating-ocpp-devices-with-emqx-for-a-seamless-ev-charging-network.md))
 - [Beyond Boundaries: Exploring Geo-Distribution in EMQX for Enhanced Scalability](https://www.emqx.com/en/blog/exploring-geo-distribution-in-emqx-for-enhanced-scalability) ([Edit](https://github.com/emqx/blog/blob/main/en/202407/exploring-geo-distribution-in-emqx-for-enhanced-scalability.md))
 - [A Guide on Accessing CoAP Devices with EMQX](https://www.emqx.com/en/blog/connecting-coap-devices-to-emqx) ([Edit](https://github.com/emqx/blog/blob/main/en/202406/connecting-coap-devices-to-emqx.md))
