@@ -452,6 +452,7 @@ The world's most scalable and reliable MQTT messaging platform to connect, move 
 ## [Internet of Vehicles | Connected Cars](https://www.emqx.com/en/blog/category/internet-of-vehicles)
 Build a reliable, efficient and industry-specific Internet of Vehicles platform based on EMQ's practical experience, from theoretical knowledge such as protocol selection to practical operations like platform architecture design.
 
+- [Vehicle + UNS: Enabling Comprehensive Data Interoperability Throughout the SDV Lifecycle](https://www.emqx.com/en/blog/vehicle-and-uns) ([Edit](https://github.com/emqx/blog/blob/main/en/202407/vehicle-and-uns.md))
 - [Connecting Millions of Cars using EMQX MQTT and Upstash Kafka](https://www.emqx.com/en/blog/connecting-millions-of-cars-using-emqx-mqtt-and-upstash-kafka) ([Edit](https://github.com/emqx/blog/blob/main/en/202401/connecting-millions-of-cars-using-emqx-mqtt-and-upstash-kafka.md))
 - [The Road to Smart Mobility: Opportunities and Challenges](https://www.emqx.com/en/blog/the-road-to-smart-mobility) ([Edit](https://github.com/emqx/blog/blob/main/en/202311/the-road-to-smart-mobility.md))
 - [Revolutionizing TSP Platforms: How EMQX Powers Automotive Connectivity](https://www.emqx.com/en/blog/revolutionizing-tsp-platforms) ([Edit](https://github.com/emqx/blog/blob/main/en/202311/revolutionizing-tsp-platforms.md))
