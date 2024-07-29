@@ -130,43 +130,56 @@ openssl x509 -req -days 3650 -in client.csr -CA ca.pem -CAkey ca.key -CAcreatese
 
 ## SSL/TLS 双向连接的启用及验证
 
-**在 EMQX 中 `mqtt:ssl` 的默认监听端口为 8883。**
+### EMQX v5 配置
 
-### EMQX 配置
+```shell
+listeners.ssl.default {
+  bind = "0.0.0.0:8883"
+  ssl_options {
+    # PEM 格式的文件，用于保存一个或多个用于签发客户端证书的根证书。TLS 握手阶段 EMQX 会使用这些证书来验证客户端证书。
+    # 如果不想要对客户端证书进行验证 （即：单向认证），则该文件内容可以为空。
+    cacertfile = "etc/certs/ca.pem"
+    # PEM 格式的服务端证书链文件。
+    # 如果证书链中包含中间 CA 证书，需要将中间 CA 证书附加到服务端证书后以形成证书链。
+    certfile = "etc/certs/emqx.pem"
+    # PEM 格式的服务端私钥文件。
+    keyfile = "etc/certs/emqx.key"
+    # 设置 `verify_peer` 以验证客户端证书。
+    # 设置 `verify_none` 允许任何客户端连接，无论客户端证书如何。
+    verify = verify_peer
+    # 如果设置为 `true`，则客户端未发送证书时，连接将失败，双向认证必选。
+    # 如果设置为 `false`，则仅在客户端发送无效证书时失败（空证书被视为有效），即：单向认证。
+    fail_if_no_peer_cert = true
+  }
+}
+
+
+### EMQX v4 配置
+
+**在 EMQX 中 `mqtt:ssl` 的默认监听端口为 8883。**
 
 将前文中通过 OpenSSL 工具生成的 `emqx.pem`、`emqx.key` 及 `ca.pem` 文件拷贝到 EMQX 的 `etc/certs/` 目录下，并参考如下配置修改 `emqx.conf`：
 
 ```shell
-## listener.ssl.$name is the IP address and port that the MQTT/SSL
-## Value: IP:Port | Port
 listener.ssl.external = 8883
 
-## Path to the file containing the user's private PEM-encoded key.
-## Value: File
+# PEM 格式的服务端私钥文件。
 listener.ssl.external.keyfile = etc/certs/emqx.key
 
-## 注意：如果 emqx.pem 是证书链，请确保第一个证书是服务器的证书，而不是 CA 证书。
-## Path to a file containing the user certificate.
-## Value: File
+# PEM 格式的服务端证书链文件。
+# 如果证书链中包含中间 CA 证书，需要将中间 CA 证书附加到服务端证书后以形成证书链。
 listener.ssl.external.certfile = etc/certs/emqx.pem
 
-## 注意：ca.pem 用于保存服务器的中间 CA 证书和根 CA 证书。可以附加其他受信任的 CA，用来进行客户端证书验证。
-## Path to the file containing PEM-encoded CA certificates. The CA certificates
-## Value: File
+# PEM 格式的文件，用于保存一个或多个用于签发客户端证书的根证书。TLS 握手阶段 EMQX 会使用这些证书来验证客户端证书。
+# 如果不想要对客户端证书进行验证 （即：单向认证），则该文件内容可以为空。
 listener.ssl.external.cacertfile = etc/certs/ca.pem
 
-## A server only does x509-path validation in mode verify_peer,
-## as it then sends a certificate request to the client (this
-## message is not sent if the verify option is verify_none).
-##
-## Value: verify_peer | verify_none
+# 设置 `verify_peer` 以验证客户端证书。
+# 设置 `verify_none` 允许任何客户端连接，无论客户端证书如何。
 listener.ssl.external.verify = verify_peer
 
-## Used together with {verify, verify_peer} by an SSL server. If set to true,
-## the server fails if the client does not have a certificate to send, that is,
-## sends an empty certificate.
-##
-## Value: true | false
+# 如果设置为 `true`，则客户端未发送证书时，连接将失败，双向认证必选。
+# 如果设置为 `false`，则仅在客户端发送无效证书时失败（空证书被视为有效），即：单向认证。
 listener.ssl.external.fail_if_no_peer_cert = true
 ```
 
