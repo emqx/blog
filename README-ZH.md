@@ -752,6 +752,7 @@ Accelerate digital transformation of industries based on EMQ data infrastructure
 
 ## [Community](https://www.emqx.com/zh/blog/category/community)
 
+- [加速工业物联网部署： 使用 EMQX ECP 对 NeuronEX 边缘服务进行配置管理与下发](https://www.emqx.com/zh/blog/emqex-ecp-config-neuron-edge-services) ([Edit](https://github.com/emqx/blog/blob/main/zh/202407/emqex-ecp-config-neuron-edge-services.md))
 - [EMQ 携手 Intel、上海交大共同探索下一代物联网协议 MQTT over QUIC](https://www.emqx.com/zh/blog/emq-intel-and-sjtu-explore-mqtt-over-quic-together) ([Edit](https://github.com/emqx/blog/blob/main/zh/202310/emq-intel-and-sjtu-explore-mqtt-over-quic-together.md))
 - [开源集结令！参与开源之夏 EMQ 项目开发，赢最高 12000 元奖金](https://www.emqx.com/zh/blog/summer-ospp-2022) ([Edit](https://github.com/emqx/blog/blob/main/zh/202205/summer-ospp-2022.md))
 - [EMQ 征稿启事](https://www.emqx.com/zh/blog/solicitation-notice-for-quality-articles) ([Edit](https://github.com/emqx/blog/blob/main/zh/202204/solicitation-notice-for-quality-articles.md))
