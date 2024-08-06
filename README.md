@@ -387,6 +387,7 @@ The easiest way to start MQTT service. Connect your IoT devices to any cloud wit
 ## [EMQX Enterprise](https://www.emqx.com/en/blog/category/enterprise)
 The world's most scalable and reliable MQTT messaging platform to connect, move and process your data in business-critical scenarios for the IoT era.
 
+- [Enhancing Data Integration Stability: A Guide on EMQX Platform E2E Rule Testing](https://www.emqx.com/en/blog/emqx-platform-e2e-rule-testing-guide) ([Edit](https://github.com/emqx/blog/blob/main/en/202408/emqx-platform-e2e-rule-testing-guide.md))
 - [EMQX Enterprise 5.7 Released: Durable Sessions, Message Schema Validation, and Advanced Rule Engine Capabilities](https://www.emqx.com/en/blog/emqx-enterprise-5-7-release-notes) ([Edit](https://github.com/emqx/blog/blob/main/en/202405/emqx-enterprise-5-7-release-notes.md))
 - [EMQX Enterprise 5.6 Released: Introducing Amazon S3 Data Integration and JSON Schema SQL Validation Function](https://www.emqx.com/en/blog/emqx-enterprise-5-6-release-notes) ([Edit](https://github.com/emqx/blog/blob/main/en/202404/emqx-enterprise-5-6-release-notes.md))
 - [MQTT to MongoDB: A Beginner's Guide for IoT Data Integration](https://www.emqx.com/en/blog/mqtt-and-mongodb-crafting-seamless-synergy-for-iot-data-mangement) ([Edit](https://github.com/emqx/blog/blob/main/en/202403/mqtt-and-mongodb-crafting-seamless-synergy-for-iot-data-mangement.md))
