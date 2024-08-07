@@ -150,6 +150,7 @@ Best practice of MQTT in various clients.
 ## [MQTT Integration (Eco & Integration)](https://www.emqx.com/zh/blog/category/eco-and-integration)
 Explore more with & via EMQ.
 
+- [利用 MQTT 和 Snowflake 构建可再生分布式能源新未来](https://www.emqx.com/zh/blog/mqtt-and-snowflake-distributed-renewable-energy) ([Edit](https://github.com/emqx/blog/blob/main/zh/202408/mqtt-and-snowflake-distributed-renewable-energy.md))
 - [MQTT & micro-ROS：构建高效的机器人应用](https://www.emqx.com/zh/blog/mqtt-and-micro-ros) ([Edit](https://github.com/emqx/blog/blob/main/zh/202407/mqtt-and-micro-ros.md))
 - [高效监控 EMQX：将 EMQX 与 Datadog 无缝集成](https://www.emqx.com/zh/blog/seamlessly-integrating-emqx-with-datadog-for-efficient-monitoring) ([Edit](https://github.com/emqx/blog/blob/main/zh/202405/seamlessly-integrating-emqx-with-datadog-for-efficient-monitoring.md))
 - [利用 Webhook 扩展 MQTT 物联网应用](https://www.emqx.com/zh/blog/mqtt-to-webhook) ([Edit](https://github.com/emqx/blog/blob/main/zh/202404/mqtt-to-webhook.md))
@@ -570,6 +571,7 @@ MQTTX is a Fully Open-source MQTT 5.0 cross-platform Desktop Client, makes it ea
 ## [Neuron - IIoT Connectivity Server](https://www.emqx.com/zh/blog/category/neuron)
 IoT edge industrial protocol gateway software, which supports one-stop access to dozens of industrial protocols and converts them into MQTT protocol to access the cloud industrial IoT platform. It just requires ultra-low resource consumption, and supports three major architectures of X86, ARM, and MIPS.
 
+- [工业边缘网关软件 NeuronEX 中基于角色的访问控制功能](https://www.emqx.com/zh/blog/neuronex-role-based-access-control) ([Edit](https://github.com/emqx/blog/blob/main/zh/202408/neuronex-role-based-access-control.md))
 - [灵活数据流处理：NeuronEX 支持 JavaScript 自定义函数](https://www.emqx.com/zh/blog/neuronex-custom-function) ([Edit](https://github.com/emqx/blog/blob/main/zh/202407/neuronex-custom-function.md))
 - [NeuronEX 3.3.0 发布：工业数据采集、分析和管理多项升级](https://www.emqx.com/zh/blog/neuronex-v-3-3-0-release-notes) ([Edit](https://github.com/emqx/blog/blob/main/zh/202406/neuronex-v-3-3-0-release-notes.md))
 - [工业边缘网关软件 NeuronEX 中的反向代理和进程管理](https://www.emqx.com/zh/blog/proxy-and-process-management-in-neuronex) ([Edit](https://github.com/emqx/blog/blob/main/zh/202405/proxy-and-process-management-in-neuronex.md))
