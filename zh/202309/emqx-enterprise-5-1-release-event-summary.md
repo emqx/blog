@@ -10,8 +10,6 @@ EMQ 在 8 月 31 日举办的 [EMQX Enterprise 5.1 线上发布会](https://www.
 
 - **[全新 Dashboard ，一站式集群管理与数据集成](https://www.emqx.com/zh/blog/significant-enhancements-in-emqx-5-1-mqtt-dashboard)：** EMQX Enterprise 的产品经理李国伟，介绍了全新 Dashboard  的设计、针对不同用户角色重新优化的菜单结构。在提升视觉体验的同时，新 Dashboard 有着更方便的数据集成能力和更友好的可视化用户体验。将集群状态实时可观测性、安全功能配置、参数热配置，以及规则引擎和数据集成的可视化配置有机地结合在一起。帮助用户快速上手使用 EMQX，轻松应对不同的场景下的各类物联网业务开发。
 
-  ![[object Object]](https://www.emqx.com/_nuxt/dashboard-1.0c2a19a7.png)
-
 - **创新 Mria 集群架构，有效提升可靠性和可扩展性：** EMQ 瑞典软件工程师 Dmitrii Fedoseev 展示了创新自研的 Mria 集群架构。EMQX Enterprise 5.1 版本集群规模得到了跨越式的提升，单个集群最多可支持 23 个节点，承载超过 1 亿 MQTT 连接，相比当前版本实现了 10 倍的接入能力提升。Mria 架构还大幅提高了集群的可靠性和伸缩性。通过核心-复制 (Core-Replicant) 节点设计，企业用户可以根据业务需求实时调整集群规模，以弹性扩展业务规模，或根据需求优化运行成本。
 
 - **MQTT over QUIC，下一代物联网传输协议：**EMQ 瑞典软件工程师 William Yang 介绍了将 [QUIC 协议](https://www.emqx.com/zh/blog/quic-protocol-the-features-use-cases-and-impact-for-iot-iov) 融入 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 传输层的开创性设计，该创新有效解决了弱网环境下的数据传输难题，如在移动的汽车中也能保证高质量、稳定的消息通信。作为 OASIS 标准组织的重要成员，EMQ 同时积极推动 MQTT over QUIC 标准化，以提供物联网和通信领域更加安全、高效的数据传输解决方案。
