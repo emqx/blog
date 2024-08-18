@@ -92,6 +92,7 @@ Explore more with & via EMQ.
 ## [EMQX Open Source | Broker](https://www.emqx.com/ja/blog/category/emqx)
 EMQX is the world's most scalable open-source MQTT broker with a high performance that connects 100M+ IoT devices in 1 cluster, while maintaining 1M message per second throughput and sub-millisecond latency.
 
+- [MQTTによるエッジコンピューティングの革新：利点、課題、将来動向](https://www.emqx.com/ja/blog/revolutionizing-edge-computing-with-mqtt) ([Edit](https://github.com/emqx/blog/blob/main/ja/202408/revolutionizing-edge-computing-with-mqtt.md))
 - [NGINX リバースプロキシを使用する場合のEMQXでクライアントの実際のIPを取得](https://www.emqx.com/ja/blog/getting-the-clients-real-ip-when-using-the-nginx-reverse-proxy-emqx) ([Edit](https://github.com/emqx/blog/blob/main/ja/202407/getting-the-clients-real-ip-when-using-the-nginx-reverse-proxy-emqx.md))
 - [距離を乗り越え：EMQXの「Geo-Distribution」によるスケーラビリティの向上を達成](https://www.emqx.com/ja/blog/exploring-geo-distribution-in-emqx-for-enhanced-scalability) ([Edit](https://github.com/emqx/blog/blob/main/ja/202407/exploring-geo-distribution-in-emqx-for-enhanced-scalability.md))
 - [EMQX Enterprise 5.7リリース: 永続セッション、メッセージスキーマ検証、高度なルールエンジン機能](https://www.emqx.com/ja/blog/emqx-enterprise-5-7-release-notes) ([Edit](https://github.com/emqx/blog/blob/main/ja/202406/emqx-enterprise-5-7-release-notes.md))
