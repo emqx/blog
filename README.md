@@ -712,6 +712,7 @@ Guarantee the availability and reliability of the IoT platform.
 
 ## [Use Cases](https://www.emqx.com/en/blog/category/use-cases)
 
+- [How EMQX Boosts Social Media with Scalable and Low-Latency Networking](https://www.emqx.com/en/blog/how-emqx-boosts-social-media-with-scalable-and-low-latency-networking) ([Edit](https://github.com/emqx/blog/blob/main/en/202408/how-emqx-boosts-social-media-with-scalable-and-low-latency-networking.md))
 - [Transforming Urban Gas Management with Next-Gen Smart Gas Platform Based on EMQX](https://www.emqx.com/en/blog/smart-gas-management-emqx) ([Edit](https://github.com/emqx/blog/blob/main/en/202408/smart-gas-management-emqx.md))
 - [Empowering EV Infrastructure Management: EMQX MQTT Platform for Smart Charging](https://www.emqx.com/en/blog/electric-vehicle-charging-stations-management) ([Edit](https://github.com/emqx/blog/blob/main/en/202405/electric-vehicle-charging-stations-management.md))
 - [MQTT Platform in Web 3.0: A Secure Transaction Solution for MPC Wallets Based on EMQX](https://www.emqx.com/en/blog/mqtt-platform-in-web-3-0) ([Edit](https://github.com/emqx/blog/blob/main/en/202405/mqtt-platform-in-web-3-0.md))
