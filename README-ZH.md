@@ -7,6 +7,7 @@
 ## [MQTT Tutorials](https://www.emqx.com/zh/blog/category/mqtt-protocol)
 Get to know the preferred protocol in IoT from beginner to master.
 
+- [如何在 MQTT 中处理 JSON、十六进制和二进制数据](https://www.emqx.com/zh/blog/how-to-process-json-hex-and-binary-data-in-mqtt) ([Edit](https://github.com/emqx/blog/blob/main/zh/202408/how-to-process-json-hex-and-binary-data-in-mqtt.md))
 - [MQTT 与 WebSocket：关键差异与应用场景](https://www.emqx.com/zh/blog/mqtt-vs-websocket) ([Edit](https://github.com/emqx/blog/blob/main/zh/202406/mqtt-vs-websocket.md))
 - [MQTT 与 CoAP：物联网常见连接协议的对比分析](https://www.emqx.com/zh/blog/mqtt-vs-coap) ([Edit](https://github.com/emqx/blog/blob/main/zh/202405/mqtt-vs-coap.md))
 - [请求 / 响应 (Request / Response) 介绍与示例 | MQTT 5.0 特性详解](https://www.emqx.com/zh/blog/mqtt5-request-response) ([Edit](https://github.com/emqx/blog/blob/main/zh/202311/mqtt5-request-response.md))
