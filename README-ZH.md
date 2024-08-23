@@ -7,6 +7,7 @@
 ## [MQTT Tutorials](https://www.emqx.com/zh/blog/category/mqtt-protocol)
 Get to know the preferred protocol in IoT from beginner to master.
 
+- [如何在 MQTT 中处理 JSON、十六进制和二进制数据](https://www.emqx.com/zh/blog/how-to-process-json-hex-and-binary-data-in-mqtt) ([Edit](https://github.com/emqx/blog/blob/main/zh/202408/how-to-process-json-hex-and-binary-data-in-mqtt.md))
 - [MQTT 与 WebSocket：关键差异与应用场景](https://www.emqx.com/zh/blog/mqtt-vs-websocket) ([Edit](https://github.com/emqx/blog/blob/main/zh/202406/mqtt-vs-websocket.md))
 - [MQTT 与 CoAP：物联网常见连接协议的对比分析](https://www.emqx.com/zh/blog/mqtt-vs-coap) ([Edit](https://github.com/emqx/blog/blob/main/zh/202405/mqtt-vs-coap.md))
 - [请求 / 响应 (Request / Response) 介绍与示例 | MQTT 5.0 特性详解](https://www.emqx.com/zh/blog/mqtt5-request-response) ([Edit](https://github.com/emqx/blog/blob/main/zh/202311/mqtt5-request-response.md))
@@ -150,6 +151,7 @@ Best practice of MQTT in various clients.
 ## [MQTT Integration (Eco & Integration)](https://www.emqx.com/zh/blog/category/eco-and-integration)
 Explore more with & via EMQ.
 
+- [MQTT + PostgreSQL 集成指南：实现车辆实时位置监控](https://www.emqx.com/zh/blog/mqtt-to-postgresql) ([Edit](https://github.com/emqx/blog/blob/main/zh/202408/mqtt-to-postgresql.md))
 - [EMQX Platform & Snowflake：构建可再生分布式能源的智慧未来](https://www.emqx.com/zh/blog/mqtt-and-snowflake-distributed-renewable-energy) ([Edit](https://github.com/emqx/blog/blob/main/zh/202408/mqtt-and-snowflake-distributed-renewable-energy.md))
 - [MQTT & micro-ROS：构建高效的机器人应用](https://www.emqx.com/zh/blog/mqtt-and-micro-ros) ([Edit](https://github.com/emqx/blog/blob/main/zh/202407/mqtt-and-micro-ros.md))
 - [高效监控 EMQX：将 EMQX 与 Datadog 无缝集成](https://www.emqx.com/zh/blog/seamlessly-integrating-emqx-with-datadog-for-efficient-monitoring) ([Edit](https://github.com/emqx/blog/blob/main/zh/202405/seamlessly-integrating-emqx-with-datadog-for-efficient-monitoring.md))
