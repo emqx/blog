@@ -191,6 +191,7 @@ Explore more with & via EMQ.
 ## [EMQX Open Source | Broker](https://www.emqx.com/zh/blog/category/emqx)
 EMQX is the world's most scalable open-source MQTT broker with a high performance that connects 100M+ IoT devices in 1 cluster, while maintaining 1M message per second throughput and sub-millisecond latency.
 
+- [如何使用 EMQX 接入 CoAP 协议设备](https://www.emqx.com/zh/blog/connecting-coap-devices-to-emqx) ([Edit](https://github.com/emqx/blog/blob/main/zh/202408/connecting-coap-devices-to-emqx.md))
 - [使用 EMQX 接入 OCPP 设备：构建新能源车充电网络](https://www.emqx.com/zh/blog/emq-occp-new-energy-charging) ([Edit](https://github.com/emqx/blog/blob/main/zh/202408/emq-occp-new-energy-charging.md))
 - [EMQX 跨域集群：增强可扩展性，打破地域限制](https://www.emqx.com/zh/blog/exploring-geo-distribution-in-emqx-for-enhanced-scalability) ([Edit](https://github.com/emqx/blog/blob/main/zh/202407/exploring-geo-distribution-in-emqx-for-enhanced-scalability.md))
 - [使用 NGINX 反向代理 EMQX 时获取客户端真实 IP](https://www.emqx.com/zh/blog/getting-the-clients-real-ip-when-using-the-nginx-reverse-proxy-emqx) ([Edit](https://github.com/emqx/blog/blob/main/zh/202407/getting-the-clients-real-ip-when-using-the-nginx-reverse-proxy-emqx.md))
@@ -256,7 +257,6 @@ EMQX is the world's most scalable open-source MQTT broker with a high performanc
 - [EMQX Newsletter 2022-04｜v5.0 交互优化、云服务新增 5 项功能更新…](https://www.emqx.com/zh/blog/emqx-newsletter-202204) ([Edit](https://github.com/emqx/blog/blob/main/zh/202205/emqx-newsletter-202204.md))
 - [EMQX 多版本发布：规则引擎支持重置运行数据、新增连接确认与鉴权完成事件](https://www.emqx.com/zh/blog/emqx-multi-release-rules-engine-supports-reset-run-data) ([Edit](https://github.com/emqx/blog/blob/main/zh/202204/emqx-multi-release-rules-engine-supports-reset-run-data.md))
 - [EMQX Newsletter 2022-03｜v5.0 功能基本完备、更方便的数据集成、安全轻松部署 EMQX 集群…](https://www.emqx.com/zh/blog/emqx-newsletter-202203) ([Edit](https://github.com/emqx/blog/blob/main/zh/202204/emqx-newsletter-202203.md))
-- [一文解决 CoAP 协议设备与外部网络沟通难题](https://www.emqx.com/zh/blog/connecting-coap-devices-to-emqx) ([Edit](https://github.com/emqx/blog/blob/main/zh/202203/connecting-coap-devices-to-emqx.md))
 - [EMQX Newsletter 2022-02｜开源版 v4.4.0 发布、云服务上线增值功能](https://www.emqx.com/zh/blog/emqx-newsletter-202202) ([Edit](https://github.com/emqx/blog/blob/main/zh/202202/emqx-newsletter-202202.md))
 - [EMQX Newsletter 2022-01｜v5.0 全新 Dashboard、云服务认证与告警模式增加](https://www.emqx.com/zh/blog/emqx-newsletter-202201) ([Edit](https://github.com/emqx/blog/blob/main/zh/202201/emqx-newsletter-202201.md))
 - [EMQX + IoTDB：存储 MQTT 消息到时序数据库](https://www.emqx.com/zh/blog/store-mqtt-messages-to-time-series-database-iotdb) ([Edit](https://github.com/emqx/blog/blob/main/zh/202201/store-mqtt-messages-to-time-series-database-iotdb.md))

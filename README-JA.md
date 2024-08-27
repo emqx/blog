@@ -133,6 +133,7 @@ The world's most scalable and reliable MQTT messaging platform to connect, move 
 ## [Internet of Vehicles | Connected Cars](https://www.emqx.com/ja/blog/category/internet-of-vehicles)
 Build a reliable, efficient and industry-specific Internet of Vehicles platform based on EMQ's practical experience, from theoretical knowledge such as protocol selection to practical operations like platform architecture design.
 
+- [DDS：基本、限界、およびMQTT連携について](https://www.emqx.com/ja/blog/navigating-dds-basics-limitations-and-integration-with-mqtt) ([Edit](https://github.com/emqx/blog/blob/main/ja/202408/navigating-dds-basics-limitations-and-integration-with-mqtt.md))
 - [車両通信 + UNS：SDVライフサイクル全体のデータ相互運用の実現](https://www.emqx.com/ja/blog/vehicle-and-uns) ([Edit](https://github.com/emqx/blog/blob/main/ja/202408/vehicle-and-uns.md))
 - [スマートモビリティの発展：機会と課題](https://www.emqx.com/ja/blog/the-road-to-smart-mobility) ([Edit](https://github.com/emqx/blog/blob/main/ja/202404/the-road-to-smart-mobility.md))
 - [V2Xとは？未来に車両とエブリの接続です](https://www.emqx.com/ja/blog/what-is-v2x-and-the-future-of-vehicle-to-everything-connectivity) ([Edit](https://github.com/emqx/blog/blob/main/ja/202310/what-is-v2x-and-the-future-of-vehicle-to-everything-connectivity.md))
