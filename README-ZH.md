@@ -191,6 +191,7 @@ Explore more with & via EMQ.
 ## [EMQX Open Source | Broker](https://www.emqx.com/zh/blog/category/emqx)
 EMQX is the world's most scalable open-source MQTT broker with a high performance that connects 100M+ IoT devices in 1 cluster, while maintaining 1M message per second throughput and sub-millisecond latency.
 
+- [EMQX Serverless 助力智能车机系统开放性发展](https://www.emqx.com/zh/blog/emqx-boosts-the-development-of-intelligent-vehicle-systems) ([Edit](https://github.com/emqx/blog/blob/main/zh/202408/emqx-boosts-the-development-of-intelligent-vehicle-systems.md))
 - [ 提高数据集成稳定性：EMQX Platform 端到端规则调试指南](https://www.emqx.com/zh/blog/emqx-platform-rule-testing-guide) ([Edit](https://github.com/emqx/blog/blob/main/zh/202408/emqx-platform-rule-testing-guide.md))
 - [如何使用 EMQX 接入 CoAP 协议设备](https://www.emqx.com/zh/blog/connecting-coap-devices-to-emqx) ([Edit](https://github.com/emqx/blog/blob/main/zh/202408/connecting-coap-devices-to-emqx.md))
 - [使用 EMQX 接入 OCPP 设备：构建新能源车充电网络](https://www.emqx.com/zh/blog/emq-occp-new-energy-charging) ([Edit](https://github.com/emqx/blog/blob/main/zh/202408/emq-occp-new-energy-charging.md))
@@ -423,6 +424,7 @@ The world's most scalable and reliable MQTT messaging platform to connect, move 
 ## [Internet of Vehicles | Connected Cars](https://www.emqx.com/zh/blog/category/internet-of-vehicles)
 Build a reliable, efficient and industry-specific Internet of Vehicles platform based on EMQ's practical experience, from theoretical knowledge such as protocol selection to practical operations like platform architecture design.
 
+- [EMQX Serverless 助力智能车机系统开放性发展](https://www.emqx.com/zh/blog/emqx-boosts-the-development-of-intelligent-vehicle-systems) ([Edit](https://github.com/emqx/blog/blob/main/zh/202408/emqx-boosts-the-development-of-intelligent-vehicle-systems.md))
 - [Vehicle + UNS : 为 SDV 提供全生命周期的数据可互操作性](https://www.emqx.com/zh/blog/vehicle-and-uns) ([Edit](https://github.com/emqx/blog/blob/main/zh/202407/vehicle-and-uns.md))
 - [车路协同：连接智慧的车与路，赋能智慧交通](https://www.emqx.com/zh/blog/enhancing-v2x-connectivity-with-emq) ([Edit](https://github.com/emqx/blog/blob/main/zh/202311/enhancing-v2x-connectivity-with-emq.md))
 - [构建新一代车联网 TSP 平台: 实现高效车云互联](https://www.emqx.com/zh/blog/revolutionizing-tsp-platforms) ([Edit](https://github.com/emqx/blog/blob/main/zh/202311/revolutionizing-tsp-platforms.md))
