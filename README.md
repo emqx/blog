@@ -7,6 +7,7 @@
 ## [MQTT Tutorials](https://www.emqx.com/en/blog/category/mqtt-protocol)
 Get to know the preferred protocol in IoT from beginner to master.
 
+- [MQTT Protocol Explained: Ultimate Guide for IoT Beginners](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) ([Edit](https://github.com/emqx/blog/blob/main/en/202408/the-easiest-guide-to-getting-started-with-mqtt.md))
 - [Connecting MQTT and REST API: A Comprehensive Tutorial](https://www.emqx.com/en/blog/connecting-mqtt-and-rest-api) ([Edit](https://github.com/emqx/blog/blob/main/en/202407/connecting-mqtt-and-rest-api.md))
 - [MQTT vs HTTP: Which is Better Suited for the Internet of Things (IoT)?](https://www.emqx.com/en/blog/mqtt-vs-http) ([Edit](https://github.com/emqx/blog/blob/main/en/202406/mqtt-vs-http.md))
 - [MQTT vs WebSocket: Key Differences & Applications](https://www.emqx.com/en/blog/mqtt-vs-websocket) ([Edit](https://github.com/emqx/blog/blob/main/en/202405/mqtt-vs-websocket.md))
@@ -14,7 +15,6 @@ Get to know the preferred protocol in IoT from beginner to master.
 - [Mastering MQTT Analysis with Wireshark: A Beginner's Guide](https://www.emqx.com/en/blog/mastering-mqtt-analysis-with-wireshark) ([Edit](https://github.com/emqx/blog/blob/main/en/202405/mastering-mqtt-analysis-with-wireshark.md))
 - [Exploring MQTT vs CoAP: Comparing Protocols for IoT Connectivity](https://www.emqx.com/en/blog/mqtt-vs-coap) ([Edit](https://github.com/emqx/blog/blob/main/en/202404/mqtt-vs-coap.md))
 - [8 IoT Protocols and Standards Worth Exploring in 2024](https://www.emqx.com/en/blog/iot-protocols-mqtt-coap-lwm2m) ([Edit](https://github.com/emqx/blog/blob/main/en/202403/iot-protocols-mqtt-coap-lwm2m.md))
-- [What Is the MQTT Protocol: A Beginner's Guide](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) ([Edit](https://github.com/emqx/blog/blob/main/en/202403/the-easiest-guide-to-getting-started-with-mqtt.md))
 - [MQTT Ports: Common Ports and How to Configure and Secure Them](https://www.emqx.com/en/blog/mqtt-ports) ([Edit](https://github.com/emqx/blog/blob/main/en/202312/mqtt-ports.md))
 - [MQTT Request / Response Explained and Example | MQTT 5 Features](https://www.emqx.com/en/blog/mqtt5-request-response) ([Edit](https://github.com/emqx/blog/blob/main/en/202311/mqtt5-request-response.md))
 - [MQTT Will Message (Last Will & Testament) Explained and Example | MQTT 5 Features](https://www.emqx.com/en/blog/use-of-mqtt-will-message) ([Edit](https://github.com/emqx/blog/blob/main/en/202311/use-of-mqtt-will-message.md))
@@ -391,6 +391,7 @@ The easiest way to start MQTT service. Connect your IoT devices to any cloud wit
 ## [EMQX Enterprise](https://www.emqx.com/en/blog/category/enterprise)
 The world's most scalable and reliable MQTT messaging platform to connect, move and process your data in business-critical scenarios for the IoT era.
 
+- [EMQX Enterprise 5.8.0 Released: Empowering Global, Cross-Regional Connectivity with Cluster Linking](https://www.emqx.com/en/blog/emqx-enterprise-5-8-0-release-notes) ([Edit](https://github.com/emqx/blog/blob/main/en/202409/emqx-enterprise-5-8-0-release-notes.md))
 - [Enhancing Data Integration Stability: A Guide on EMQX Platform E2E Rule Testing](https://www.emqx.com/en/blog/emqx-platform-e2e-rule-testing-guide) ([Edit](https://github.com/emqx/blog/blob/main/en/202408/emqx-platform-e2e-rule-testing-guide.md))
 - [EMQX Enterprise 5.7 Released: Durable Sessions, Message Schema Validation, and Advanced Rule Engine Capabilities](https://www.emqx.com/en/blog/emqx-enterprise-5-7-release-notes) ([Edit](https://github.com/emqx/blog/blob/main/en/202405/emqx-enterprise-5-7-release-notes.md))
 - [EMQX Enterprise 5.6 Released: Introducing Amazon S3 Data Integration and JSON Schema SQL Validation Function](https://www.emqx.com/en/blog/emqx-enterprise-5-6-release-notes) ([Edit](https://github.com/emqx/blog/blob/main/en/202404/emqx-enterprise-5-6-release-notes.md))

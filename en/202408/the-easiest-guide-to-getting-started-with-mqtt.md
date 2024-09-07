@@ -117,7 +117,7 @@ In this guide, we will utilize the [free public MQTT broker](https://www.emqx.co
 
 ### Prepare an MQTT Client
 
-In this post, we will use the MQTT client tool provided by [MQTTX](https://mqttx.app/) that supports browser access: [http://mqtt-client.emqx.com/](http://mqtt-client.emqx.com/). MQTT X also provides a [desktop client](https://mqttx.app/) and a [command line tool](https://mqttx.app/cli).
+In this post, we will use the MQTT client tool provided by [MQTTX](https://mqttx.app/) that supports browser access: [https://mqttx.app/web-client](https://mqttx.app/web-client). MQTT X also provides a [desktop client](https://mqttx.app/) and a [command line tool](https://mqttx.app/cli).
 
 [MQTTX](https://mqttx.app/) is an elegant cross-platform [MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5) desktop client that runs on macOS, Linux, and Windows. Its user-friendly chat-style interface enables users to easily create multiple MQTT/MQTTS connections and subscribe/publish MQTT messages.
 
@@ -127,13 +127,13 @@ In this post, we will use the MQTT client tool provided by [MQTTX](https://mqttx
 
 <br>
 
-Currently, there are mature [open source](https://www.acorn.io/resources/blog/open-source) MQTT client libraries for all programming languages. We have selected [popular MQTT client libraries & SDKs](https://www.emqx.com/en/mqtt-client-sdk) in various programming languages and provided code examples to help you quickly understand the use of MQTT clients.
+Currently, there are mature open source MQTT client libraries for all programming languages. We have selected [popular MQTT client libraries & SDKs](https://www.emqx.com/en/mqtt-client-sdk) in various programming languages and provided code examples to help you quickly understand the use of MQTT clients.
 
 ### Create an MQTT Connection
 
 Before using the MQTT protocol to communicate, the client needs to create an MQTT connection to connect to the broker.
 
-Go to [http://mqtt-client.emqx.com/](http://mqtt-client.emqx.com/) with your browser and click on the `New Connection` button in the middle of the page and you will see the following page.
+Go to [https://mqttx.app/web-client](https://mqttx.app/web-client) with your browser and click on the `New Connection` button in the middle of the page and you will see the following page.
 
 ![Create an MQTT connection](https://assets.emqx.com/images/5e110d181ce8489c275d5674910fa16d.png)
 
@@ -268,6 +268,18 @@ Then start the Simple Demo connection, and subscribe to the `last_will` topic. Y
 ![MQTT Last Will](https://assets.emqx.com/images/a216808a1ba964bbddc75708bc55c072.png)
 
 For more details on MQTT Will Message, please check the blog [Use of MQTT Will Message](https://www.emqx.com/en/blog/use-of-mqtt-will-message).
+
+## Comparing MQTT with Other Protocols
+
+In addition to MQTT, protocols like HTTP, WebSocket, and CoAP are also commonly used in the IoT space. Compared to these, MQTT offers key advantages such as lower bandwidth consumption and a lightweight publish-subscribe model, making it more suitable for resource-constrained environments and large-scale device networks. 
+
+For a detailed comparison of MQTT with these protocols, refer to these blog posts: 
+
+- [MQTT vs HTTP](https://www.emqx.com/en/blog/mqtt-vs-http)
+- [MQTT vs WebSocket](https://www.emqx.com/en/blog/mqtt-vs-websocket)
+- [MQTT vs CoAP](https://www.emqx.com/en/blog/mqtt-vs-coap)
+- [MQTT vs AMQP](https://www.emqx.com/en/blog/mqtt-vs-amqp-for-iot-communications)
+
 
 ## 7 MQTT Technology Trends to Keep an Eye on in 2024
 
