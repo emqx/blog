@@ -152,6 +152,7 @@ Best practice of MQTT in various clients.
 ## [MQTT Integration (Eco & Integration)](https://www.emqx.com/zh/blog/category/eco-and-integration)
 Explore more with & via EMQ.
 
+- [使用 Node-RED 处理 MQTT 数据](https://www.emqx.com/zh/blog/using-node-red-to-process-mqtt-data) ([Edit](https://github.com/emqx/blog/blob/main/zh/202409/using-node-red-to-process-mqtt-data.md))
 - [MQTT + PostgreSQL 集成指南：实现车辆实时位置监控](https://www.emqx.com/zh/blog/mqtt-to-postgresql) ([Edit](https://github.com/emqx/blog/blob/main/zh/202408/mqtt-to-postgresql.md))
 - [EMQX Platform & Snowflake：构建可再生分布式能源的智慧未来](https://www.emqx.com/zh/blog/mqtt-and-snowflake-distributed-renewable-energy) ([Edit](https://github.com/emqx/blog/blob/main/zh/202408/mqtt-and-snowflake-distributed-renewable-energy.md))
 - [MQTT & micro-ROS：构建高效的机器人应用](https://www.emqx.com/zh/blog/mqtt-and-micro-ros) ([Edit](https://github.com/emqx/blog/blob/main/zh/202407/mqtt-and-micro-ros.md))
@@ -178,7 +179,6 @@ Explore more with & via EMQ.
 - [Neuron+eKuiper 实现工业物联网数据采集、清理与反控](https://www.emqx.com/zh/blog/industrial-iot-data-collection-cleaning-and-control) ([Edit](https://github.com/emqx/blog/blob/main/zh/202206/industrial-iot-data-collection-cleaning-and-control.md))
 - [在微信小程序中打造 MQTT 连接测试工具](https://www.emqx.com/zh/blog/how-to-use-mqtt-in-wechat-miniprogram) ([Edit](https://github.com/emqx/blog/blob/main/zh/202206/how-to-use-mqtt-in-wechat-miniprogram.md))
 - [如何使用 ThingsBoard 接入 MQTT 数据](https://www.emqx.com/zh/blog/how-to-use-thingsboard-to-access-mqtt-data) ([Edit](https://github.com/emqx/blog/blob/main/zh/202206/how-to-use-thingsboard-to-access-mqtt-data.md))
-- [使用 Node-RED 处理 MQTT 数据](https://www.emqx.com/zh/blog/using-node-red-to-process-mqtt-data) ([Edit](https://github.com/emqx/blog/blob/main/zh/202205/using-node-red-to-process-mqtt-data.md))
 - [EMQX + 阿里云 Tablestore 多场景一站式 IoT 数据解决方案](https://www.emqx.com/zh/blog/emqx-and-tablestore-multi-scenario-one-stop-iot-data-solution) ([Edit](https://github.com/emqx/blog/blob/main/zh/202205/emqx-and-tablestore-multi-scenario-one-stop-iot-data-solution.md))
 - [EMQX + IoTDB：存储 MQTT 消息到时序数据库](https://www.emqx.com/zh/blog/store-mqtt-messages-to-time-series-database-iotdb) ([Edit](https://github.com/emqx/blog/blob/main/zh/202201/store-mqtt-messages-to-time-series-database-iotdb.md))
 - [EMQX + MatrixDB 一站式方案助力搭建企业数字资产平台](https://www.emqx.com/zh/blog/emqx-and-matrixdb) ([Edit](https://github.com/emqx/blog/blob/main/zh/202110/emqx-and-matrixdb.md))

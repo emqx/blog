@@ -13,7 +13,7 @@ Cluster Linking offers enhanced efficiency, ease of use, and scalability compare
 - A unified namespace across connected clusters, allowing seamless communication between clients on different clusters, unlike Cluster Bridging, where clusters remain logically independent with separate topic naming and other configurations.
 - Intelligent message routing based on actual subscription needs and client distribution, reducing unnecessary message replication. In contrast, Cluster Bridging often requires full data replication between clusters for a given topic.
 
-![MQTT Cluster](https://assets.emqx.com/images/a8c2ab079103d3f362424f93e6f6f5b7.png)
+![WechatIMG120.jpg](https://assets.emqx.com/images/d87c4b48543e6b329e851253415b46e7.jpg)
 
 ## Message Transformation
 
