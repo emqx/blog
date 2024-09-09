@@ -1,4 +1,4 @@
-本月，[Neuron](https://neugates.io/zh) 将 Modbus RTU/TCP 插件进行了完全开源，替换之前的 Modbus TCP 开源插件，现在开源的 Modbus RTU/TCP 插件有更好的兼容性，支持 Client/Server 模式，能适配接入更多的设备，后续也将逐步开放更多的驱动。此外，为了方便用户测试使用，在最新的 2.4.3 版本中，无需导入 License 也可试用所用的插件。
+本月，[Neuron](https://github.com/emqx/neuron) 将 Modbus RTU/TCP 插件进行了完全开源，替换之前的 Modbus TCP 开源插件，现在开源的 Modbus RTU/TCP 插件有更好的兼容性，支持 Client/Server 模式，能适配接入更多的设备，后续也将逐步开放更多的驱动。此外，为了方便用户测试使用，在最新的 2.4.3 版本中，无需导入 License 也可试用所用的插件。
 
 ## Modbus RTU/TCP 开源
 

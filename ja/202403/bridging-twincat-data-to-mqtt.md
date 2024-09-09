@@ -6,11 +6,11 @@
 
 ### TwinCATをMQTTに変換するためのNeuronEX
 
-[NeuronEX](https://neugates.io/)は、産業用IoTゲートウェイソフトウェアであり、産業用デバイスに重要なIoT接続機能を提供します。NeuronEXはリソースの最小限の利用で、標準または専用のプロトコルを介してさまざまな産業用デバイスと通信し、[工業用IoTプラットフォーム](https://www.emqx.com/en/blog/iiot-platform-key-components-and-5-notable-solutions)に複数のデバイス接続を実現します。
+[NeuronEX](https://github.com/emqx/neuron)は、産業用IoTゲートウェイソフトウェアであり、産業用デバイスに重要なIoT接続機能を提供します。NeuronEXはリソースの最小限の利用で、標準または専用のプロトコルを介してさまざまな産業用デバイスと通信し、[工業用IoTプラットフォーム](https://www.emqx.com/en/blog/iiot-platform-key-components-and-5-notable-solutions)に複数のデバイス接続を実現します。
 
-NeuronEXは、最初からMQTTをその通信プロトコルの1つとしてサポートしています。NeuronEX [MQTTプラグイン](https://neugates.io/docs/en/latest/configuration/north-apps/mqtt/overview.html)を使用すると、デバイスとクラウド間のMQTT通信を素早く構築できます。
+NeuronEXは、最初からMQTTをその通信プロトコルの1つとしてサポートしています。NeuronEX [MQTTプラグイン](https://docs.emqx.com/en/neuron/latest/configuration/north-apps/mqtt/overview.html)を使用すると、デバイスとクラウド間のMQTT通信を素早く構築できます。
 
-NeuronEXは、バージョン2.2.0から[Beckhoff ADSプラグイン](https://neugates.io/docs/en/latest/configuration/south-devices/ads/ads.html)を提供しています。NeuronEX Beckhoff ADSプラグインは、TCP上でADSプロトコルを実装しています。これにより、[Beckhoff TwinCAT](https://www.beckhoff.com/en-us/products/automation/twincat/#stage-special-item-s320986-2_t0) PLCとの通信をサポートし、NeuronEXの接続能力をさらに豊かにし、ユーザーのニーズを解決します。
+NeuronEXは、バージョン2.2.0から[Beckhoff ADSプラグイン](https://docs.emqx.com/en/neuron/latest/configuration/south-devices/ads/ads.html)を提供しています。NeuronEX Beckhoff ADSプラグインは、TCP上でADSプロトコルを実装しています。これにより、[Beckhoff TwinCAT](https://www.beckhoff.com/en-us/products/automation/twincat/#stage-special-item-s320986-2_t0) PLCとの通信をサポートし、NeuronEXの接続能力をさらに豊かにし、ユーザーのニーズを解決します。
 
 Beckhoff ADSプラグインを使用すると、ユーザーはTwinCAT PLCから簡単にデータを収集できます。MQTTプラグインと組み合わせることで、収集したデータを[EMQXプラットフォーム](https://www.emqx.com/ja/products/emqx)などの産業用IoTプラットフォームにプッシュしたり、TwinCAT PLCにメッセージを公開してライト、モーター、およびその他の機器のオン/オフなどのデバイスアクションをトリガーすることができます。
 
@@ -72,7 +72,7 @@ TwinCATプロジェクトディレクトリ内のTPYファイルを開きます�
 
 ### NeuronEXクイックスタート
 
-NeuronEXのインストール方法については、[インストール手順](https://neugates.io/docs/en/latest/installation/installation.html)を参照してください。NeuronEXがインストールされたら、ブラウザを使用して`http://localhost:7000`にアクセスしてダッシュボードにアクセスできます。
+NeuronEXのインストール方法については、[インストール手順](https://docs.emqx.com/en/neuron/latest/installation/installation.html)を参照してください。NeuronEXがインストールされたら、ブラウザを使用して`http://localhost:7000`にアクセスしてダッシュボードにアクセスできます。
 
 #### ステップ1. ログイン
 

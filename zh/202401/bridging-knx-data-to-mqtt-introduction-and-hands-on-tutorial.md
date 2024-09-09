@@ -38,7 +38,7 @@ To keep things simple, we will simulate a KLiX (D0), a dimming actuator (D0), a 
 
 ## Neuron 快速开始
 
-Neuron 提供多种安装方式，查阅[安装指南](https://neugates.io/docs/zh/latest/configuration/quick-start/installation.html)以获取详细的 Neuron 安装说明。
+Neuron 提供多种安装方式，查阅[安装指南](https://docs.emqx.com/zh/neuron/latest/configuration/quick-start/installation.html)以获取详细的 Neuron 安装说明。
 
 打开 Web 浏览器，输入运行 Neuron 的网关地址和端口号，即可进入到管理控制台页面，默认端口号为 7000。通过浏览器访问 `http://localhost:7000` （localhost 可替换为您的实际 IP 地址）。
 

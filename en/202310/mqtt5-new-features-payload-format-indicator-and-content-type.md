@@ -40,7 +40,7 @@ For the server, however, doesn't know the meaning of the Content Type value, so 
 
 ## Demo
 
-1. Access [MQTTX Web](http://mqtt-client.emqx.com/) on a Web browser.
+1. Access [MQTTX Web](https://mqttx.app/web-client/) on a Web browser.
 
 2. Create an MQTT connection named `pub` for publishing messages, and connect it to the [Free Public MQTT Server](https://www.emqx.com/en/mqtt/public-mqtt5-broker):
 

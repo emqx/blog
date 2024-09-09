@@ -102,7 +102,7 @@ OPC-UA 提供了内置的数据压缩支持，但其压缩率并不高，对于�
 
 从上面的对比可以看出，Sparkplug 协议是最适合工业场景的高效协议。它原生支持"变化时传送"机制，非常适合高效地传输数据更新。由于它是采用持久连接模型的轻量级协议，所以它的连接开销很低，保证了持续的通信和高效的消息传递。
 
-[EMQX](https://www.emqx.com/zh/products/emqx) 和 [Neuron](https://neugates.io/zh) 都支持 Sparkplug 协议。EMQX 提供了负载均衡、集群和消息持久化等高级功能，保障了使用 Sparkplug 协议进行数据传输的效率和可靠性，而 Neuron 提供了数据聚合和设备管理等功能，便于大规模工业物联网设备的部署。
+[EMQX](https://www.emqx.com/zh/products/emqx) 和 [Neuron](https://github.com/emqx/neuron) 都支持 Sparkplug 协议。EMQX 提供了负载均衡、集群和消息持久化等高级功能，保障了使用 Sparkplug 协议进行数据传输的效率和可靠性，而 Neuron 提供了数据聚合和设备管理等功能，便于大规模工业物联网设备的部署。
 
 
 

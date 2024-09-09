@@ -1,6 +1,6 @@
 [ISA-95](https://www.emqx.com/en/blog/exploring-isa95-standards-in-manufacturing), also known as the "Enterprise-Control System Integration" standard, provides a framework for integrating enterprise and control systems in manufacturing and production environments. Incorporating a [Unified Namespace](https://www.emqx.com/en/blog/unified-namespace-next-generation-data-fabric-for-iiot) with the ISA-95 standard involves adhering to best practices that are consistent with the principles and guidelines of ISA-95. 
 
-This blog will guide you on incorporating a Unified Namespace with ISA-95 with some best practices. We will use [EMQX](https://www.emqx.com/en/products/emqx) as an [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) and [Neuron](https://neugates.io/) as an Industrial Connectivity Gateway.
+This blog will guide you on incorporating a Unified Namespace with ISA-95 with some best practices. We will use [EMQX](https://www.emqx.com/en/products/emqx) as an [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) and [Neuron](https://github.com/emqx/neuron) as an Industrial Connectivity Gateway.
 
 ## Replacing ISA-95 Layer Models with Unified Namespace Architecture
 

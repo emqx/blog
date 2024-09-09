@@ -2,7 +2,7 @@
 
 このブログでは、NeuronとEMQXを使用して[OPC UA](https://www.emqx.com/ja/blog/opc-ua-protocol)からMQTTへのブリッジングソリューションを提供します。
 
-[Neuron](https://neugates.io/)は、標準プロトコルまたはデバイス固有のプロトコルを使用して幅広い産業デバイスに接続できる最新の[産業用IoT](https://www.emqx.com/ja/blog/iiot-explained-examples-technologies-benefits-and-challenges)接続サーバーです。Neuronは、リソースが限られたさまざまなIoTエッジハードウェアデバイスで動作するように設計された軽量の産業プロトコルゲートウェイソフトウェアであり、データ中心の自動化装置からのデータアクセスに関する課題を解決することを主な目的としています。
+[Neuron](https://github.com/emqx/neuron)は、標準プロトコルまたはデバイス固有のプロトコルを使用して幅広い産業デバイスに接続できる最新の[産業用IoT](https://www.emqx.com/ja/blog/iiot-explained-examples-technologies-benefits-and-challenges)接続サーバーです。Neuronは、リソースが限られたさまざまなIoTエッジハードウェアデバイスで動作するように設計された軽量の産業プロトコルゲートウェイソフトウェアであり、データ中心の自動化装置からのデータアクセスに関する課題を解決することを主な目的としています。
 
 [EMQX](https://github.com/emqx/emqx) は、分散型オープンソースの[MQTTブローカー](https://www.emqx.com/ja/blog/the-ultimate-guide-to-mqtt-broker-comparison)です。世界で最もスケーラブルなMQTTメッセージングサーバーとして、EMQXは大量のIoTデバイスへの効率的で信頼性の高い接続を提供し、メッセージとイベントストリームの高性能でリアルタイムな移動と処理を可能にし、ビジネスクリティカルなIoTプラットフォームやアプリケーションの迅速な構築をユーザーに支援します。
 
@@ -36,7 +36,7 @@ docker run -d --name emqx -p 1883:1883 -p 8081:8081 -p 8083:8083 -p 8084:8084 -p
 
 ## Neuronの設定
 
-Neuronにはさまざまなインストール方法があります。詳細は[インストール](https://neugates.io/docs/en/latest/installation/installation.html)で確認できます。この例では、コンテナ化されたデプロイメントを使用し、できるだけ早くNeuronを体験できるようにします。以下のコマンドを実行して、Neuronコンテナをインストールおよび実行します。
+Neuronにはさまざまなインストール方法があります。詳細は[インストール](https://docs.emqx.com/en/neuron/latest/installation/installation.html)で確認できます。この例では、コンテナ化されたデプロイメントを使用し、できるだけ早くNeuronを体験できるようにします。以下のコマンドを実行して、Neuronコンテナをインストールおよび実行します。
 
 ```shell
 $ docker pull emqx/neuron:latest

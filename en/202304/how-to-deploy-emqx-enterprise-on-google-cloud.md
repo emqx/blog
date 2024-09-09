@@ -145,7 +145,7 @@ We will use [MQTTX](https://mqttx.app/) to simulate the access of IoT MQTT devic
 >
 > [MQTTX Web](https://mqttx.app/web) is the browser version of MQTTX, which eliminates the need for downloading and installation. You can quickly connect to the MQTT server via WebSocket by simply opening the browser.
 
-1. Access the [MQTTX Web](http://mqtt-client.emqx.com/#/recent_connections) page and click **New Connection** or the **+** icon on the menu bar to create a connection.
+1. Access the [MQTTX Web](https://mqttx.app/web-client/#/recent_connections) page and click **New Connection** or the **+** icon on the menu bar to create a connection.
 
    ![New Connection](https://assets.emqx.com/images/99bdfb1838f377b7f080472bbc6f8287.png)
 

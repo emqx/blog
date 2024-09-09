@@ -41,7 +41,7 @@
 
 # 对象数据建模
 
-数据建模可以类比于在建造房屋之前制定蓝图，其涵盖了定义数据结构和数据间相互关系的过程。一个经过精心设计的数据模型不仅确保了数据的一致性，还增强了对数据的理解和使用效率。在本系列文章中，我们将逐步引导您学习利用 [EMQX](https://www.emqx.com/zh/products/emqx) 和 [Neuron](https://neugates.io/zh) 这两个基础组件，在[统一命名空间](https://www.emqx.com/zh/blog/unified-namespace-next-generation-data-fabric-for-iiot)中组织和管理数据。
+数据建模可以类比于在建造房屋之前制定蓝图，其涵盖了定义数据结构和数据间相互关系的过程。一个经过精心设计的数据模型不仅确保了数据的一致性，还增强了对数据的理解和使用效率。在本系列文章中，我们将逐步引导您学习利用 [EMQX](https://www.emqx.com/zh/products/emqx) 和 [Neuron](https://github.com/emqx/neuron) 这两个基础组件，在[统一命名空间](https://www.emqx.com/zh/blog/unified-namespace-next-generation-data-fabric-for-iiot)中组织和管理数据。
 
 让我们通过另一个例子来深入说明：假设我们负责管理三个化学反应罐，这些反应罐需要进行精确的温度控制，以实现金属表面处理过程中的最小能量消耗。在这个情境中，我们需要关注两个主要数据点：每个反应罐的温度和加热器的能源消耗情况。
 
@@ -101,7 +101,7 @@
 
 # 结语
 
-在预测分析领域，熟知统一命名空间理念不仅仅是一个简单的先决条件，而是成功的关键。利用 [Neuron](https://neugates.io/zh) 和 [EMQX](https://www.emqx.com/zh/products/emqx) 实现数据的有效收集、整合、质量保证、治理和访问，以及数据建模、规范化和情景化，是构建准确预测模型的基石。随着数据驱动革命的不断发展，关注统一命名空间理念和对象数据建模仍然是指引企业获得可操作洞察和可持续增长的指南针。
+在预测分析领域，熟知统一命名空间理念不仅仅是一个简单的先决条件，而是成功的关键。利用 [Neuron](https://github.com/emqx/neuron) 和 [EMQX](https://www.emqx.com/zh/products/emqx) 实现数据的有效收集、整合、质量保证、治理和访问，以及数据建模、规范化和情景化，是构建准确预测模型的基石。随着数据驱动革命的不断发展，关注统一命名空间理念和对象数据建模仍然是指引企业获得可操作洞察和可持续增长的指南针。
 
 
 

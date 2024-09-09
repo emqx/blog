@@ -2,7 +2,7 @@
 
 Sparkplugは、産業オートメーションとIoTアプリケーションに特化したMQTTベースの通信プロトコルです。Sparkplugソリューションを実装するためには、[MQTTブローカー](https://www.emqx.com/ja/blog/the-ultimate-guide-to-mqtt-broker-comparison)とエッジノードという2つの重要な要素が必要です。
 
-この記事では、オープンソースの分散MQTTブローカーである[EMQX](https://github.com/emqx/emqx)と、エッジIIoT接続サーバーである[Neuron](https://neugates.io/)を使用して、Sparkplugソリューションを構築するためのスケーラブルで堅牢なプラットフォームを提供します。Sparkplugソリューションのアーキテクチャと、EMQXとNeuronが果たす役割について詳しく掘り下げます。
+この記事では、オープンソースの分散MQTTブローカーである[EMQX](https://github.com/emqx/emqx)と、エッジIIoT接続サーバーである[Neuron](https://github.com/emqx/neuron)を使用して、Sparkplugソリューションを構築するためのスケーラブルで堅牢なプラットフォームを提供します。Sparkplugソリューションのアーキテクチャと、EMQXとNeuronが果たす役割について詳しく掘り下げます。
 
 ## EMQXの役割
 

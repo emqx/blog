@@ -36,7 +36,7 @@ KNX Virtualでは、KLiX（D0）、調光アクチュエータ（D0）、ブラ�
 
 ## Neuronクイックスタート
 
-Neuronのインストール手順は[こちら](https://neugates.io/docs/en/latest/installation/installation.html)です。インストール後、ブラウザで`http://localhost:7000`（"localhost"を実際のIPアドレスに置き換える）からダッシュボードにアクセスできます。
+Neuronのインストール手順は[こちら](https://docs.emqx.com/en/neuron/latest/installation/installation.html)です。インストール後、ブラウザで`http://localhost:7000`（"localhost"を実際のIPアドレスに置き換える）からダッシュボードにアクセスできます。
 
 ### ステップ1: ログイン
 

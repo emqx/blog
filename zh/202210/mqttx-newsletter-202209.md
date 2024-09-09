@@ -28,7 +28,7 @@
 - 支持设置订阅标识符和订阅选项
 - 支持设置重连周期
 
-在线使用地址：[http://mqtt-client.emqx.com/](http://mqtt-client.emqx.com/) 
+在线使用地址：[https://mqttx.app/web-client/](https://mqttx.app/web-client/) 
 
 ## MQTTX CLI
 

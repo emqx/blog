@@ -1,6 +1,6 @@
 > Neuron 为工业物联网的「连接」而生，支持同时为多个不同通讯协议设备、**数十种工业协议**进行一站式接入及 MQTT 协议转换，仅**占用超低资源**，可以原生或容器的方式部署在 X86、ARM 等架构的各类边缘硬件中，助力构建工业物联网应用。
 >
-> 社区站网址：[Neuron: 开源工业协议网关软件](https://neugates.io/zh)
+> 社区站网址：[Neuron: 开源工业协议网关软件](https://github.com/emqx/neuron)
 >
 > Github 仓库：[Open source industrial IoT connectivity server](https://github.com/emqx/neuron)
 

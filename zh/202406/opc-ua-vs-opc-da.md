@@ -123,7 +123,7 @@ OPC UA 凭借其卓越的性能和灵活性，已在工业物联网（IIoT）、
 
 NeuronEX 的 OPC UA 插件可作为客户端访问 KEPServerEX、工业网关 OPC 服务器、Prosys 模拟服务器和 Ignition 等 OPC UA 服务器。它也可以直接访问硬件设备的内置 OPC UA 服务器，例如西门子 S7-1200 PLC、欧姆龙 NJ 系列 PLC 等的内置服务器。更多信息，您可以查看 [OPC UA | NeuronEX 文档](https://docs.emqx.com/zh/neuronex/latest/configuration/south-devices/opc-ua/overview.html)以及[在工业物联网中将 OPC UA 数据桥接到 MQTT：详细教程](https://www.emqx.com/zh/blog/bridging-opc-ua-data-to-mqtt-for-iiot)。
 
-NeuronEX 不直接支持 OPC DA 数据的直接采集。但是，可以使用 NeuOPC 将 OPC DA 转换为 OPC UA，然后利用 NeuronEX 的 OPC UA 插件进行数据采集。更多信息，您可以查看 [OPC DA | Neuron 文档（neugates.io）](https://neugates.io/docs/zh/latest/configuration/south-devices/opc-da/overview.html)。
+NeuronEX 不直接支持 OPC DA 数据的直接采集。但是，可以使用 NeuOPC 将 OPC DA 转换为 OPC UA，然后利用 NeuronEX 的 OPC UA 插件进行数据采集。更多信息，您可以查看 [OPC DA | Neuron 文档](https://docs.emqx.com/zh/neuron/latest/configuration/south-devices/opc-da/overview.html)。
 
 ## **结语**
 

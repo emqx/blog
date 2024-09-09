@@ -20,7 +20,7 @@ MQTTには、IoTアプリケーションで人気があるいくつかの利点�
 
 ## BACnetからMQTTへのブリッジングのアーキテクチャ
 
-このブログでは、EMQからの[Neuron](https://neugates.io/)と[EMQX](https://www.emqx.com/ja/products/emqx)を使用して、BACnetからMQTTへのブリッジングを実現します。NeuronはBACnetプロトコルをMQTTに変換でき、EMQXは[MQTTブローカー](https://www.emqx.com/ja/blog/the-ultimate-guide-to-mqtt-broker-comparison)として機能し、大量の接続とデータを処理します。
+このブログでは、EMQからの[Neuron](https://github.com/emqx/neuron)と[EMQX](https://www.emqx.com/ja/products/emqx)を使用して、BACnetからMQTTへのブリッジングを実現します。NeuronはBACnetプロトコルをMQTTに変換でき、EMQXは[MQTTブローカー](https://www.emqx.com/ja/blog/the-ultimate-guide-to-mqtt-broker-comparison)として機能し、大量の接続とデータを処理します。
 
 Neuronは、標準プロトコルまたはデバイス固有のプロトコルを使用するさまざまな工業デバイスを接続できる、最新の[工業用IoT](https://www.emqx.com/ja/blog/iiot-explained-examples-technologies-benefits-and-challenges)接続サーバーです。Neuronは、リソースが限られたさまざまなIoTエッジハードウェアデバイスで実行できる軽量の工業ソフトウェアとして、データ中心の自動化デバイスへの統一アクセスを実現し、インテリジェント製造の基本サポートを提供することを目指しています。
 
@@ -54,7 +54,7 @@ docker run -d --name emqx-enterprise -p 1883:1883 -p 8083:8083 -p 8084:8084 -p 8
 
 ### Neuronのクイックスタート
 
-Neuronはさまざまなインストール方法を提供しています。詳細なインストール方法は[ドキュメント](https://neugates.io/docs/en/latest/installation/installation.html)で確認できます。この例では、コンテナ化されたデプロイメントを使用します。
+Neuronはさまざまなインストール方法を提供しています。詳細なインストール方法は[ドキュメント](https://docs.emqx.com/en/neuron/latest/installation/installation.html)で確認できます。この例では、コンテナ化されたデプロイメントを使用します。
 
 Dockerイメージを取得します：
 

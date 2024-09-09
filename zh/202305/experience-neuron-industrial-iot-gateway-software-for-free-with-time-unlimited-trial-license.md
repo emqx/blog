@@ -1,4 +1,4 @@
-[Neuron](https://neugates.io/zh) 是一款强大的工业协议网关软件，可以为实时工业数据采集提供必要的物联网连接能力。Neuron 十分轻量，可以运行在各种资源受限的物联网边缘硬件设备中，并通过标准协议或其自有的专用协议与各种各样的工业设备进行通信，将其连接到[工业物联网](https://www.emqx.com/zh/blog/iiot-explained-examples-technologies-benefits-and-challenges)平台。
+[Neuron](https://github.com/emqx/neuron) 是一款强大的工业协议网关软件，可以为实时工业数据采集提供必要的物联网连接能力。Neuron 十分轻量，可以运行在各种资源受限的物联网边缘硬件设备中，并通过标准协议或其自有的专用协议与各种各样的工业设备进行通信，将其连接到[工业物联网](https://www.emqx.com/zh/blog/iiot-explained-examples-technologies-benefits-and-challenges)平台。
 
 为了方便用户更加轻松地利用 Neuron 进行工业物联网系统的搭建和验证，最新发布的 Neuron 2.4.4 版本提供了无时间限制的小规模免费试用许可证。从这一版本起，用户将可以免费完整体验 Neuron 强大的工业连接能力。
 

@@ -2,7 +2,7 @@
 
 ## 基于 EMQX 和 Neuron 的统一命名空间解决方案
 
-[统一命名空间（UNS）](https://www.emqx.com/zh/blog/unified-namespace-next-generation-data-fabric-for-iiot)概念彻底改变了数据访问方式，使得所有网络参与者能够自由互动，而不受物理位置的制约。[EMQX Broker](https://www.emqx.com/zh/products/emqx) 和 [Neuron 工业网关](https://neugates.io/zh)以其高效性和可扩展性而受到广泛青睐，成为实现统一命名空间的最佳选择。
+[统一命名空间（UNS）](https://www.emqx.com/zh/blog/unified-namespace-next-generation-data-fabric-for-iiot)概念彻底改变了数据访问方式，使得所有网络参与者能够自由互动，而不受物理位置的制约。[EMQX Broker](https://www.emqx.com/zh/products/emqx) 和 [Neuron 工业网关](https://github.com/emqx/neuron)以其高效性和可扩展性而受到广泛青睐，成为实现统一命名空间的最佳选择。
 
 EMQX 作为中央消息传输 Broker，在数据通信的战略核心地位发挥着至关重要的角色。而 Neuron 为 EMQX 提供了通过各种工业协议访问 OT 传感器和设备的能力。作为数据通信和消息路由的核心组成部分，EMQX 和 Neuron 共同构建了连接数据源（包括设备、传感器和机器）与数据消费者（如 ERP 和 MES 应用、数据库和分析平台）之间的关键通道。这种中介角色实现了制造生态系统内的无缝数据交流，促进了信息流的顺畅流通，为实时监测、控制和分析提供了支持。
 

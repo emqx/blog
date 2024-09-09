@@ -1,4 +1,4 @@
-In September, we released [Neuron](https://neugates.io/) 2.2. A series of new drivers and features have been added for this version: Beckhoff ADS, OPC DA, and NONA11 drivers have been added to unify the ports exposed by HTTP services. In addition, we focused on data statistics and the establishment of event alert system in the month. We plan to make the key data and events in the system visualized through Prometheus in Neuron 2.3, so as to improve the monitoring and management of Neuron and its connected devices during its use.
+In September, we released [Neuron](https://github.com/emqx/neuron) 2.2. A series of new drivers and features have been added for this version: Beckhoff ADS, OPC DA, and NONA11 drivers have been added to unify the ports exposed by HTTP services. In addition, we focused on data statistics and the establishment of event alert system in the month. We plan to make the key data and events in the system visualized through Prometheus in Neuron 2.3, so as to improve the monitoring and management of Neuron and its connected devices during its use.
 
 ## Data upgrade
 

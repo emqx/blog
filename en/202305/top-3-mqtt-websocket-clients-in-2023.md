@@ -85,7 +85,7 @@ client.on('message', function (topic, message) {
 
 Developed by the [EMQX team](https://github.com/emqx), MQTTX Web is an open-source tool that supports MQTT 3.1.1 and MQTT 5.0 protocols and WebSocket transports. It is licensed under Apache Version 2.0.
 
-**Free Online MQTTX Web:** [http://mqtt-client.emqx.com/](http://mqtt-client.emqx.com/#/recent_connections)
+**Free Online MQTTX Web:** [https://mqttx.app/web-client/](https://mqttx.app/web-client/#/recent_connections)
 
 **Official Website:** [https://mqttx.app/web](https://mqttx.app/web) 
 
@@ -104,7 +104,7 @@ Developed by the [EMQX team](https://github.com/emqx), MQTTX Web is an open-sour
 
 ### Usage Example
 
-1. Open [MQTTX Web](http://mqtt-client.emqx.com/) using your web browser.
+1. Open [MQTTX Web](https://mqttx.app/web-client/) using your web browser.
 
 2. Create an [MQTT connection](https://www.emqx.com/en/blog/how-to-set-parameters-when-establishing-an-mqtt-connection) using WebSocket:
 

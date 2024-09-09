@@ -67,9 +67,9 @@ MQTTの主な利点は以下の通りです。
 
 ModbusからMQTTへのブリッジアーキテクチャは、主に2つのコンポーネントで構成されています。Modbusデータソースと[MQTTブローカー](https://www.emqx.com/ja/blog/the-ultimate-guide-to-mqtt-broker-comparison)です。データソースはModbusデータをMQTTブローカーに送信し、MQTTブローカーはそのデータを受信して転送します。このプロセスを実現するには、2つの重要な要素が必要です。1つはModbusプロトコルをMQTTに変換し、データをMQTTブローカーに送信するエッジデバイスであり、もう1つはMQTTメッセージを処理するMQTTブローカーです。
 
-本記事では、[Neuron](https://neugates.io/)と[EMQX](https://github.com/emqx/emqx)を使用してブリッジプロセスを実装します。
+本記事では、[Neuron](https://github.com/emqx/neuron)と[EMQX](https://github.com/emqx/emqx)を使用してブリッジプロセスを実装します。
 
-[Neuron](https://neugates.io/)は、標準またはプロプライエタリなプロトコルを使用してさまざまな産業用デバイスを接続できる、現代的な[産業用IoT](https://www.emqx.com/ja/blog/iiot-explained-examples-technologies-benefits-and-challenges)接続サーバーです。産業用IoTプラットフォームとデバイス間の相互接続を実現します。軽量な産業用ソフトウェアであるNeuronは、リソースが限られたさまざまなIoTエッジハードウェアデバイス上で実行できます。データを中心とした自動化機器データの統一的なアクセスの難しさを解決し、スマートマニュファクチャリングのための基盤を提供することを目的としています。
+[Neuron](https://github.com/emqx/neuron)は、標準またはプロプライエタリなプロトコルを使用してさまざまな産業用デバイスを接続できる、現代的な[産業用IoT](https://www.emqx.com/ja/blog/iiot-explained-examples-technologies-benefits-and-challenges)接続サーバーです。産業用IoTプラットフォームとデバイス間の相互接続を実現します。軽量な産業用ソフトウェアであるNeuronは、リソースが限られたさまざまなIoTエッジハードウェアデバイス上で実行できます。データを中心とした自動化機器データの統一的なアクセスの難しさを解決し、スマートマニュファクチャリングのための基盤を提供することを目的としています。
 
 [EMQX](https://github.com/emqx/emqx)は、高性能でスケーラブルな、世界をリードするオープンソースの分散型IoT MQTT ブローカーです。EMQXは、大量のIoTデバイスに効率的で信頼性の高い接続を提供し、メッセージとイベントフローデータのリアルタイムな移動と処理を高性能でサポートすることで、ユーザーが重要なビジネス向けのIoTプラットフォームとアプリケーションを迅速に構築できるようにします。
 
@@ -119,7 +119,7 @@ PeakHMI Slave Simulatorsをインストールします。インストールパ�
 
 ### Neuronクイックスタート
 
-Neuronは様々なインストール方法を提供しており、ユーザーは[ドキュメント](https://neugates.io/docs/en/latest/installation/installation.html)で詳細なインストール方法を確認できます。本例ではコンテナ化されたデプロイを使用します。
+Neuronは様々なインストール方法を提供しており、ユーザーは[ドキュメント](https://docs.emqx.com/en/neuron/latest/installation/installation.html)で詳細なインストール方法を確認できます。本例ではコンテナ化されたデプロイを使用します。
 
 Dockerイメージの取得:
 

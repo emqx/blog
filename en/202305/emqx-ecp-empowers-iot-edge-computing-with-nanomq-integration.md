@@ -4,7 +4,7 @@
 
 ## Introduction
 
-In the rapidly evolving landscape of IoT edge computing, efficient and reliable management of edge services is crucial. In the previous release, EMQX Edge to Cloud Platform (EMQX ECP) provides remote management and monitoring capabilities to [Neuron](https://neugates.io/) and [eKuiper](https://ekuiper.org/). With the release of v1.10, the EMQX ECP  takes a significant stride forward by integrating [NanoMQ](https://nanomq.io/) - a lightweight, high-performance MQTT broker designed for efficient message routing in IoT edge computing scenarios. This integration unlocks the capabilities of remote management and monitoring of NanoMQ deployments. 
+In the rapidly evolving landscape of IoT edge computing, efficient and reliable management of edge services is crucial. In the previous release, EMQX Edge to Cloud Platform (EMQX ECP) provides remote management and monitoring capabilities to [Neuron](https://github.com/emqx/neuron) and [eKuiper](https://ekuiper.org/). With the release of v1.10, the EMQX ECP  takes a significant stride forward by integrating [NanoMQ](https://nanomq.io/) - a lightweight, high-performance MQTT broker designed for efficient message routing in IoT edge computing scenarios. This integration unlocks the capabilities of remote management and monitoring of NanoMQ deployments. 
 
 ## NanoMQ Management in EMQX ECP
 

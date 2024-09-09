@@ -8,7 +8,7 @@ eKuiper 1.9.0 将在本月底发布。除此之外，eKuiper 也在 3 月份发�
 
 ## 多 Neuron 对接
 
-[Neuron](https://neugates.io/zh) 是运行在各类物联网边缘网关硬件上的工业协议网关软件，可以采集来自繁杂多样工业设备的不同协议类型数据，采集的数据经由 eKuiper 做流式的实时处理，获取更大的价值。eKuiper 一直在持续优化和 Neruon 的对接和整合。
+[Neuron](https://github.com/emqx/neuron) 是运行在各类物联网边缘网关硬件上的工业协议网关软件，可以采集来自繁杂多样工业设备的不同协议类型数据，采集的数据经由 eKuiper 做流式的实时处理，获取更大的价值。eKuiper 一直在持续优化和 Neruon 的对接和整合。
 
 eKuiper 1.5.0 版本加入了基于 NNG ipc 通信方式的 Neuron source 和 sink，使得用户无需配置即可在 eKuiper 中接入 Neuron 中采集到的数据进行计算；也可以方便地从 eKuiper 中通过 Neuron 控制设备 。NeuronEX 版本中集成了 Neuron + eKuiper ，使得用户无需任何额外部署和配置工作，即可处理采集到的工业数据。集成的方式满足了一部分用户的使用场景，但是在另一类场景中，用户需要单独部署 Neuron 和 eKuiper，而且可能需要两者分别根据数据量等情况进行部署伸缩。这种情况下，我们就需要 eKuiper 可以对接多个 Neuron 实例。
 

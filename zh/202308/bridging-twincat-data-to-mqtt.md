@@ -6,11 +6,11 @@
 
 ### 使用 Neuron 转换 TwinCAT 到 MQTT
 
-[Neuron](https://neugates.io/zh) 是一款强大的工业协议网关软件，可以为实时工业数据采集提供必要的物联网连接能力。Neuron 十分轻量，可以运行在各种资源受限的物联网边缘硬件设备中，并通过标准协议或其自有的专用协议与各种各样的工业设备进行通信，将其连接到工业物联网平台。
+[Neuron](https://github.com/emqx/neuron) 是一款强大的工业协议网关软件，可以为实时工业数据采集提供必要的物联网连接能力。Neuron 十分轻量，可以运行在各种资源受限的物联网边缘硬件设备中，并通过标准协议或其自有的专用协议与各种各样的工业设备进行通信，将其连接到工业物联网平台。
 
-从发布之初，Neuron 就支持 MQTT 作为其通信协议之一。Neuron [MQTT 插件](https://neugates.io/docs/en/latest/configuration/north-apps/mqtt/overview.html)允许用户快速构建使用 MQTT 协议的物联网应用程序，实现设备与云之间的通信。
+从发布之初，Neuron 就支持 MQTT 作为其通信协议之一。Neuron [MQTT 插件](https://docs.emqx.com/en/neuron/latest/configuration/north-apps/mqtt/overview.html)允许用户快速构建使用 MQTT 协议的物联网应用程序，实现设备与云之间的通信。
 
-Neuron 2.2.0 版本中发布了 [Beckhoff ADS 插件](https://neugates.io/docs/en/latest/configuration/south-devices/ads/ads.html)。Neuron Beckhoff ADS 插件实现了基于 TCP 的 ADS 协议。该插件支持与 [Beckhoff TwinCAT](https://www.beckhoff.com/en-us/products/automation/twincat/#stage-special-item-s320986-2_t0) PLC 进行通信，进一步丰富了 Neuron 的连接能力，增强了用户体验，满足更多用户需求。
+Neuron 2.2.0 版本中发布了 [Beckhoff ADS 插件](https://docs.emqx.com/en/neuron/latest/configuration/south-devices/ads/ads.html)。Neuron Beckhoff ADS 插件实现了基于 TCP 的 ADS 协议。该插件支持与 [Beckhoff TwinCAT](https://www.beckhoff.com/en-us/products/automation/twincat/#stage-special-item-s320986-2_t0) PLC 进行通信，进一步丰富了 Neuron 的连接能力，增强了用户体验，满足更多用户需求。
 
 通过 Beckhoff ADS 插件，用户可以轻松地从 TwinCAT PLC 采集数据。与 MQTT 插件一起使用，用户可以将采集的数据推送到[工业物联网](https://www.emqx.com/zh/blog/iiot-explained-examples-technologies-benefits-and-challenges)平台，如 [EMQX](https://www.emqx.com/zh/products/emqx)，或将消息发布回 TwinCAT PLC，触发设备操作，例如打开或关闭灯光、电机和其他设备。
 
@@ -72,7 +72,7 @@ docker run -d --name emqx -p 1883:1883 -p 8081:8081 -p 8083:8083 -p 8084:8084 -p
 
 ### Neuron 快速开始
 
-Neuron 提供多种安装方式，查阅[安装指南](https://neugates.io/docs/zh/latest/configuration/quick-start/installation.html)以获取详细的 Neuron 安装说明。
+Neuron 提供多种安装方式，查阅[安装指南](https://docs.emqx.com/zh/neuron/latest/configuration/quick-start/installation.html)以获取详细的 Neuron 安装说明。
 
 打开 Web 浏览器，输入运行 Neuron 的网关地址和端口号，即可进入到管理控制台页面，默认端口号为 7000。通过浏览器访问 `http://localhost:7000` （localhost 可替换为您的实际 IP 地址）。
 

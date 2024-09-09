@@ -1,4 +1,4 @@
-[Neuron](https://neugates.io/zh) 是一款开源的轻量级工业协议网关软件，支持数十种工业协议的一站式设备连接、数据接入、MQTT 协议转换，为工业设备赋予工业 4.0 时代关键的物联网连接能力。
+[Neuron](https://github.com/emqx/neuron) 是一款开源的轻量级工业协议网关软件，支持数十种工业协议的一站式设备连接、数据接入、MQTT 协议转换，为工业设备赋予工业 4.0 时代关键的物联网连接能力。
 
 开源社区用户有时会有使用 Neuron 源码在当前编译平台下编译能够运行在体系结构不同的另一种目标平台上，即进行交叉编译的需求。在这一过程中可能会遇到由于没有安装好依赖库等原因导致的编译错误。
 
@@ -291,7 +291,7 @@ CMAKE_TOOLCHAIN_FILE 参数用于指定 .cmake 文件的路径。
 
 至此，我们就完成了使用 Neuron 源码进行交叉编译的全部操作。用户可以根据本文，自行编译出所需架构的可执行文件，从而更好地将 Neuron 运行在不同架构平台上，实现相应的业务目标。
 
-有关 Neuron 开源版使用中的任何建议或问题，欢迎在 GitHub 仓库提交 PR 和 Issues：[https://github.com/emqx/neuron](https://github.com/emqx/neuron )
+有关 Neuron 开源版使用中的任何建议或问题，欢迎在 GitHub 仓库提交 PR 和 Issues：[https://github.com/emqx/neuron](https://github.com/emqx/neuron)
 
 
 

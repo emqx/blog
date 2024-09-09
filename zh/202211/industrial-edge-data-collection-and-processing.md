@@ -76,7 +76,7 @@ $ docker run -d                \
 
 Neuron 启动之后，我们需要为 Neuron 添加一个 Modbus 南向设备，然后启动模拟器进行模拟数据采集。
 
-南向设备和模拟器配置，请参考 [Neuron 快速教程](https://neugates.io/docs/zh/v2.1/getting-started/quick_start.html#资源准备) ，完成到《运行和使用》中的“第九步，管理组的数据标签”之后，便可获得本例使用的两个点位配置，如下图所示：
+南向设备和模拟器配置，请参考 [Neuron 快速教程](https://docs.emqx.com/zh/neuron/v2.1/getting-started/quick_start.html#资源准备) ，完成到《运行和使用》中的“第九步，管理组的数据标签”之后，便可获得本例使用的两个点位配置，如下图所示：
 
 ![添加南向节点](https://assets.emqx.com/images/a71997407b435a6a82206aac3084688f.png)
 

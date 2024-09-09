@@ -20,7 +20,7 @@
 
 ## MQTTX Web
 
-在线使用地址：[http://mqtt-client.emqx.com/](http://mqtt-client.emqx.com/) 
+在线使用地址：[https://mqttx.app/web-client/](https://mqttx.app/web-client/) 
 
 ### 支持更多 MQTT 5.0 属性
 

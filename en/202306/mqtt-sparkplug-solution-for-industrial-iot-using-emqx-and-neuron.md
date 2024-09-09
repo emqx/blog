@@ -2,7 +2,7 @@
 
 Sparkplug is an MQTT-base communication protocol designed specifically for industrial automation and IoT applications. To implement a Sparkplug solution, two essential components must be in place. One is an [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) for message distribution and management; the other is an edge node to connect local devices to the broker to enable real-time data processing and analysis.
 
-In this article, we will use [EMQX](https://github.com/emqx/emqx), an open-source distributed MQTT broker, and [Neuron](https://neugates.io/), an edge [IIoT](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges) connectivity server, to provide a scalable and robust platform for building Sparkplug solutions. We will delve into the architecture of Sparkplug solution and the roles that EMQX and Neuron play. 
+In this article, we will use [EMQX](https://github.com/emqx/emqx), an open-source distributed MQTT broker, and [Neuron](https://github.com/emqx/neuron), an edge [IIoT](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges) connectivity server, to provide a scalable and robust platform for building Sparkplug solutions. We will delve into the architecture of Sparkplug solution and the roles that EMQX and Neuron play. 
 
 ## The Role of EMQX
 
@@ -20,7 +20,7 @@ In this article, we will use [EMQX](https://github.com/emqx/emqx), an open-sourc
 
 ## The Role of Neuron
 
-[Neuron](https://neugates.io/) is used to connect edge devices to the Sparkplug namespace on the EMQX broker. Neuron acts as a gateway, collecting data from local sensors and controllers and publishing it to EMQX using the Sparkplug payload format. Neuron also subscribes to messages in the Sparkplug namespace and forwards them to local devices as needed.
+[Neuron](https://github.com/emqx/neuron) is used to connect edge devices to the Sparkplug namespace on the EMQX broker. Neuron acts as a gateway, collecting data from local sensors and controllers and publishing it to EMQX using the Sparkplug payload format. Neuron also subscribes to messages in the Sparkplug namespace and forwards them to local devices as needed.
 
 > Learn more about Neuron: [Neuron: Industrial IoT Connectivity Server](https://www.emqx.com/en/products/neuronex) 
 

@@ -39,7 +39,7 @@ Initial username: admin, initial password: public
 
 ### Neuron Quick Start
 
-Neuron provides various installation methods, and users can view detailed installation methods in the [documentation](https://neugates.io/docs/en/latest/installation/installation.html). This example uses containerized deployment.
+Neuron provides various installation methods, and users can view detailed installation methods in the [documentation](https://docs.emqx.com/en/neuron/latest/installation/installation.html). This example uses containerized deployment.
 
 Obtaining Docker images:
 

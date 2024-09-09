@@ -114,7 +114,7 @@ GitHub: [https://github.com/thomasnordquist/MQTT-Explorer](https://github.com/th
 
 GitHubプロジェクト：[https://github.com/emqx/MQTTX/tree/main/web](https://github.com/emqx/MQTTX/tree/main/web)
 
-今すぐお試しください： [http://mqtt-client.emqx.com/](http://mqtt-client.emqx.com/) 
+今すぐお試しください： [https://mqttx.app/web-client/](https://mqttx.app/web-client/) 
 
 また、MQTTX WebはDockerを使ったプライベートデプロイをサポートしており、ブラウザしか利用できない場合や、制限のあるイントラネット環境でのテストに有効です。Dockerイメージからデプロイします：
 

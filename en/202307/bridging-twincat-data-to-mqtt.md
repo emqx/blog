@@ -6,11 +6,11 @@ This blog will provide a comprehensive guide on bridging TwinCAT data to MQTT. W
 
 ### Neuron for Converting TwinCAT into MQTT
 
-[Neuron](https://neugates.io/) is an industry IoT gateway software that enables industrial devices with essential IoT connectivity capabilities. With minimal resource utilization, Neuron can communicate with diverse industrial devices through standard or dedicated protocols, realizing the multiple device connections to the [Industrial IoT platform](https://www.emqx.com/en/blog/iiot-platform-key-components-and-5-notable-solutions).
+[Neuron](https://github.com/emqx/neuron) is an industry IoT gateway software that enables industrial devices with essential IoT connectivity capabilities. With minimal resource utilization, Neuron can communicate with diverse industrial devices through standard or dedicated protocols, realizing the multiple device connections to the [Industrial IoT platform](https://www.emqx.com/en/blog/iiot-platform-key-components-and-5-notable-solutions).
 
-From the very beginning, Neuron has supported MQTT as one of its communication protocols. The Neuron [MQTT plugin](https://neugates.io/docs/en/latest/configuration/north-apps/mqtt/overview.html) allows users to quickly build IoT applications that use MQTT communication between devices and the cloud. 
+From the very beginning, Neuron has supported MQTT as one of its communication protocols. The Neuron [MQTT plugin](https://docs.emqx.com/en/neuron/latest/configuration/north-apps/mqtt/overview.html) allows users to quickly build IoT applications that use MQTT communication between devices and the cloud. 
 
-Neuron provides a [Beckhoff ADS plugin](https://neugates.io/docs/en/latest/configuration/south-devices/ads/ads.html) from version 2.2.0. The Neuron Beckhoff ADS plugin implements the ADS protocol over TCP. It supports communication with [Beckhoff TwinCAT](https://www.beckhoff.com/en-us/products/automation/twincat/#stage-special-item-s320986-2_t0) PLCs, further enriching Neuron’s connectivity capabilities and resolving user needs. 
+Neuron provides a [Beckhoff ADS plugin](https://docs.emqx.com/en/neuron/latest/configuration/south-devices/ads/ads.html) from version 2.2.0. The Neuron Beckhoff ADS plugin implements the ADS protocol over TCP. It supports communication with [Beckhoff TwinCAT](https://www.beckhoff.com/en-us/products/automation/twincat/#stage-special-item-s320986-2_t0) PLCs, further enriching Neuron’s connectivity capabilities and resolving user needs. 
 
 With the Beckhoff ADS plugin, users can collect data from TwinCAT PLCs easily. Together with the MQTT plugin, users can push collected data to industrial IoT platforms such as the [EMQX platform](https://www.emqx.com/en/products/emqx), or publish messages back to TwinCAT PLCs, triggering device actions such as turning on or off lights, motors, and other equipment. 
 
@@ -72,7 +72,7 @@ Open the TPY file in the TwinCAT project directory. It contains the index group 
 
 ### Neuron Quick Start
 
-Consult the [installation instruction](https://neugates.io/docs/en/latest/installation/installation.html) on how to install Neuron. After Neuron is installed, you can access the dashboard through your browser at `http://localhost:7000` (replace "localhost" with your actual IP address).
+Consult the [installation instruction](https://docs.emqx.com/en/neuron/latest/installation/installation.html) on how to install Neuron. After Neuron is installed, you can access the dashboard through your browser at `http://localhost:7000` (replace "localhost" with your actual IP address).
 
 #### Step 1. Login
 

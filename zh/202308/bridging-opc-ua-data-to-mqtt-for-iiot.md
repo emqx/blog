@@ -148,7 +148,7 @@ docker run -d --name emqx -p 1883:1883 -p 8081:8081 -p 8083:8083 -p 8084:8084 -p
 
 ### 设置 Neuron
 
-Neuron 提供多种安装方法，您可以在[安装指南](https://neugates.io/docs/zh/latest/installation/installation.html)中详细查看。本示例使用容器化部署，以便尽快开始体验 Neuron。执行以下命令安装并运行 Neuron 容器。
+Neuron 提供多种安装方法，您可以在[安装指南](https://docs.emqx.com/zh/neuron/latest/installation/installation.html)中详细查看。本示例使用容器化部署，以便尽快开始体验 Neuron。执行以下命令安装并运行 Neuron 容器。
 
 ```
 $ docker pull emqx/neuron:latest

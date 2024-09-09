@@ -38,7 +38,7 @@ Here is a summary of the 3 projects hosted on GitHub:
 
 With an impressive 11.5k stars on GitHub, EMQX has established itself as one of the most [popular MQTT brokers](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) available. The EMQX project was launched in 2012 and is licensed under Apache version 2.0. EMQX is written in Erlang/OTP, a programming language for building massively scalable soft real-time systems.
 
-EMQX is suitable for deployment in the cloud and on the edge. At the edge, it can integrate with various industrial gateways such as [N3uron](https://n3uron.com/), [Neuron](https://neugates.io/), and [Kepware](https://www.ptc.com/en/products/kepware). In cloud environments, EMQX offers seamless integration with a range of technologies, including Kafka, databases, and cloud services, on leading public cloud platforms like AWS, GCP, and Azure.
+EMQX is suitable for deployment in the cloud and on the edge. At the edge, it can integrate with various industrial gateways such as [N3uron](https://n3uron.com/), [Neuron](https://github.com/emqx/neuron), and [Kepware](https://www.ptc.com/en/products/kepware). In cloud environments, EMQX offers seamless integration with a range of technologies, including Kafka, databases, and cloud services, on leading public cloud platforms like AWS, GCP, and Azure.
 
 With comprehensive enterprise-grade features, data integration capabilities, cloud hosting services, and commercial support from [EMQ Technologies Inc](https://www.emqx.com/en), EMQX is widely used for mission-critical applications in the IIoT domain. See more in Use Cases.
 

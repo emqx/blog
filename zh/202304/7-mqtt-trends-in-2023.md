@@ -79,7 +79,7 @@ MQTT Sparkplug 旨在简化不同工业设备间的连接和通信，实现高�
 
 ![MQTT 统一命名空间](https://assets.emqx.com/images/4bd773c5f0197e690c0c819f75940d95.png)
 
-如今，通过 EMQ 提供的[开源 MQTT 消息服务器 EMQX](https://github.com/emqx/emqx) 或 [NanoMQ](https://nanomq.io/zh)，结合[工业协议网关软件 Neuron](https://neugates.io/zh)，用户将可以构建一个由 IT 界最先进技术支持的统一命名空间架构。
+如今，通过 EMQ 提供的[开源 MQTT 消息服务器 EMQX](https://github.com/emqx/emqx) 或 [NanoMQ](https://nanomq.io/zh)，结合[工业协议网关软件 Neuron](https://github.com/emqx/neuron)，用户将可以构建一个由 IT 界最先进技术支持的统一命名空间架构。
 
 > 了解更多：[统一命名空间（UNS）：面向工业物联网的下一代数据架构](https://www.emqx.com/zh/blog/unified-namespace-next-generation-data-fabric-for-iiot)
 

@@ -1,6 +1,6 @@
 [ISA-95](https://www.emqx.com/zh/blog/exploring-isa95-standards-in-manufacturing) 也被称为“企业-控制系统集成”标准，它提供了在制造和生产环境中整合企业和控制系统的框架。要将[统一命名空间](https://www.emqx.com/zh/blog/unified-namespace-next-generation-data-fabric-for-iiot)与 ISA-95 标准结合使用，需要遵循一些符合 ISA-95 原则和指导方针的最佳实践。
 
-本文将介绍如何将统一命名空间与 ISA-95 标准相结合，并提供了一些最佳实践的建议。我们将采用 [EMQX](https://www.emqx.com/zh/products/emqx) 作为 [MQTT Broker](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison)，同时使用 [Neuron](https://neugates.io/zh) 作为工业连接网关。
+本文将介绍如何将统一命名空间与 ISA-95 标准相结合，并提供了一些最佳实践的建议。我们将采用 [EMQX](https://www.emqx.com/zh/products/emqx) 作为 [MQTT Broker](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison)，同时使用 [Neuron](https://github.com/emqx/neuron) 作为工业连接网关。
 
 ## 使用统一命名空间架构取代 ISA-95 层次模型
 

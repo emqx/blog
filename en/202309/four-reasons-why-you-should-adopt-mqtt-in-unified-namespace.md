@@ -36,7 +36,7 @@ Because there is no such technology and products that fit all cases, you cannot 
 
 ![Adopt MQTT in UNS](https://assets.emqx.com/images/ae8ba11ca3abe2ddbc134ab220585b55.png)
 
-Many data convention tools and protocol proxy software exist in the open-source world, such as [Neuron](https://neugates.io/), ignition and PLC4X. You can connect [OPC UA to MQTT](https://www.emqx.com/en/blog/bridging-opc-ua-data-to-mqtt-for-iiot), the same story with [Modbus](https://www.emqx.com/en/blog/modbus-protocol-the-grandfather-of-iot-communication) and Ethercat.
+Many data convention tools and protocol proxy software exist in the open-source world, such as [Neuron](https://github.com/emqx/neuron), ignition and PLC4X. You can connect [OPC UA to MQTT](https://www.emqx.com/en/blog/bridging-opc-ua-data-to-mqtt-for-iiot), the same story with [Modbus](https://www.emqx.com/en/blog/modbus-protocol-the-grandfather-of-iot-communication) and Ethercat.
 
 <section class="promotion">
     <div>

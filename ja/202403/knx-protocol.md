@@ -99,9 +99,9 @@ KNX Virtualには、シミュレートされたKNXバスに接続された10種�
 
 ### KNXをMQTTに変換するNeuron
 
-[Neuron](https://neugates.io/)は、業界のIoTゲートウェイソフトウェアで、産業デバイスに基本的なIoT接続機能を提供します。最小限のリソース利用で、Neuronは標準または専用プロトコルを通じて多様な産業デバイスと通信し、[産業IoTプラットフォーム](https://www.emqx.com/en/blog/iiot-platform-key-components-and-5-notable-solutions)への多数のデバイス接続を実現します。Neuronは初期からMQTTを通信プロトコルの一つとしてサポートしており、[NeuronのMQTTプラグイン](https://neugates.io/docs/en/latest/configuration/north-apps/mqtt/overview.html)を使用すると、デバイスとクラウド間でMQTT通信を使用するIoTアプリケーションを迅速に構築できます。
+[Neuron](https://github.com/emqx/neuron)は、業界のIoTゲートウェイソフトウェアで、産業デバイスに基本的なIoT接続機能を提供します。最小限のリソース利用で、Neuronは標準または専用プロトコルを通じて多様な産業デバイスと通信し、[産業IoTプラットフォーム](https://www.emqx.com/en/blog/iiot-platform-key-components-and-5-notable-solutions)への多数のデバイス接続を実現します。Neuronは初期からMQTTを通信プロトコルの一つとしてサポートしており、[NeuronのMQTTプラグイン](https://docs.emqx.com/en/neuron/latest/configuration/north-apps/mqtt/overview.html)を使用すると、デバイスとクラウド間でMQTT通信を使用するIoTアプリケーションを迅速に構築できます。
 
-バージョン2.1.0から、NeuronはUDP経由でKNXnet/IPプロトコルを使用してKNX IPカプラーと通信する[KNXプラグイン](https://neugates.io/docs/en/latest/configuration/south-devices/knxnet-ip/knxnet-ip.html)を提供しています。
+バージョン2.1.0から、NeuronはUDP経由でKNXnet/IPプロトコルを使用してKNX IPカプラーと通信する[KNXプラグイン](https://docs.emqx.com/en/neuron/latest/configuration/south-devices/knxnet-ip/knxnet-ip.html)を提供しています。
 
 ### MQTTメッセージを処理するEMQX
 

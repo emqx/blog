@@ -33,7 +33,7 @@ There are also several bug fixes included in Neuron 2.4.5 release:
 
 ## Summary
 
-We're constantly working to improve [Neuron](https://neugates.io/) and provide our users with the most comprehensive set of features. Custom write topic support in the MQTT plugin is one of the many ways we aim to enhance your experience and meet your evolving needs. Upgrade to Neuron 2.4.5 today and we welcome your feedback and suggestions as we continue to shape the future of [IIoT](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges) with Neuron. 
+We're constantly working to improve [Neuron](https://github.com/emqx/neuron) and provide our users with the most comprehensive set of features. Custom write topic support in the MQTT plugin is one of the many ways we aim to enhance your experience and meet your evolving needs. Upgrade to Neuron 2.4.5 today and we welcome your feedback and suggestions as we continue to shape the future of [IIoT](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges) with Neuron. 
 
 
 

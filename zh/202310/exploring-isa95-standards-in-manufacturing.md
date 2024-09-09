@@ -84,7 +84,7 @@ ISA88 的目的是为流程控制行业中批量控制系统的设计和规范�
 
 ## 结语
 
-总之，ISA-95 标准在加强制造领域的沟通和集成方面发挥了重要作用，但要使其适应现代工业管理还有许多挑战。制造领域不断增长的复杂性，加上工业 4.0 等技术的快速发展，需要可能超出标准结构化框架能力的更高灵活性。作为现代工业管理中的两个关键组件，[EMQX](https://www.emqx.com/zh/products/emqx) 和 [Neuron](https://neugates.io/zh) 提供了一种理想的解决方案。通过将它们分别用作 [MQTT Broker](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison) 和工业网关，企业可以提升在动态生产环境中的连接性、适应性和数据处理能力，两者结合可无缝融入到当今的工业环境中。
+总之，ISA-95 标准在加强制造领域的沟通和集成方面发挥了重要作用，但要使其适应现代工业管理还有许多挑战。制造领域不断增长的复杂性，加上工业 4.0 等技术的快速发展，需要可能超出标准结构化框架能力的更高灵活性。作为现代工业管理中的两个关键组件，[EMQX](https://www.emqx.com/zh/products/emqx) 和 [Neuron](https://github.com/emqx/neuron) 提供了一种理想的解决方案。通过将它们分别用作 [MQTT Broker](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison) 和工业网关，企业可以提升在动态生产环境中的连接性、适应性和数据处理能力，两者结合可无缝融入到当今的工业环境中。
 
 
 

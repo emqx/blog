@@ -72,7 +72,7 @@ Finally, the Unified Namespace embodies scalability, flexibility, and adaptabili
 
 While the traditional Automation Pyramid remains valuable for conceptualizing industrial control systems, the Unified Namespace surpasses it by aligning with the demands of Industry 4.0 and digital transformation. As industries evolve, embracing the Unified Namespace enables companies to harness the full potential of data, streamline operations, and drive innovation, ultimately leading them to a more efficient and competitive future.
 
-Achieving the Unified Namespace architecture becomes remarkably easy when you integrate [EMQX](https://www.emqx.com/en/products/emqx) and [Neuron](https://neugates.io/) into your existing infrastructure. In our next blog, we will delve into the integration, explaining why EMQX and Neuron are the ideal combination for building a Unified Namespace within your organization. Together, these components lay the foundation for a Unified Namespace that seamlessly connects the various facets of your industrial ecosystem, facilitating streamlined data management.
+Achieving the Unified Namespace architecture becomes remarkably easy when you integrate [EMQX](https://www.emqx.com/en/products/emqx) and [Neuron](https://github.com/emqx/neuron) into your existing infrastructure. In our next blog, we will delve into the integration, explaining why EMQX and Neuron are the ideal combination for building a Unified Namespace within your organization. Together, these components lay the foundation for a Unified Namespace that seamlessly connects the various facets of your industrial ecosystem, facilitating streamlined data management.
 
 
 

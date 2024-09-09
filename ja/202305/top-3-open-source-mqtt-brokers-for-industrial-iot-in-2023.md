@@ -39,7 +39,7 @@ GitHubでホストされている3つのプロジェクトの概要は以下の�
 
 EMQXはGitHubで11.5kのスターを獲得しており、[最も人気のあるMQTTブローカー](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison)の1つとしての地位を確立しています。EMQXプロジェクトは2012年に開始され、Apacheバージョン2.0の下でライセンスされています。EMQXは、大規模なスケーラブルソフトリアルタイムシステムを構築するためのプログラミング言語であるErlang/OTPで書かれています。
 
-EMQXは、クラウドとエッジでの展開に適しています。エッジでは、[N3uron](https://n3uron.com/)、[Neuron](https://neugates.io/)、[Kepware](https://www.ptc.com/en/products/kepware)など、さまざまな産業用ゲートウェイと統合することができます。クラウド環境では、EMQXはAWS、GCP、Azureなどの主要なパブリッククラウドプラットフォーム上でKafka、データベース、クラウドサービスなど、さまざまなテクノロジーとシームレスに統合することが可能です。
+EMQXは、クラウドとエッジでの展開に適しています。エッジでは、[N3uron](https://n3uron.com/)、[Neuron](https://github.com/emqx/neuron)、[Kepware](https://www.ptc.com/en/products/kepware)など、さまざまな産業用ゲートウェイと統合することができます。クラウド環境では、EMQXはAWS、GCP、Azureなどの主要なパブリッククラウドプラットフォーム上でKafka、データベース、クラウドサービスなど、さまざまなテクノロジーとシームレスに統合することが可能です。
 
 エンタープライズグレードの包括的な機能、データ統合機能、クラウドホスティングサービス、[EMQ Technologies Inc](https://www.emqx.com/en)の商用サポートにより、EMQXはIIoT領域のミッションクリティカルアプリケーションに広く利用されています。ユースケースで詳しく見る
 

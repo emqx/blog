@@ -119,7 +119,7 @@ Even though the OPC UA protocol can be complex, there are now many mature develo
 
 The NeuronEX OPC UA plugin can be used as a client to access OPC UA servers such as KEPServerEX, Industrial Gateway OPC Server, Prosys Simulation Server, and Ignition. It can also directly access the built-in OPC UA server of hardware devices, such as the built-in server of Siemens S7-1200 PLC, Omron NJ series PLC, etc. For more information, you can check [OPC UA | NeuronEX Docs (emqx.com)](https://docs.emqx.com/en/neuronex/latest/configuration/south-devices/opc-ua/overview.html) and [Bridging OPC UA Data to MQTT for IIoT: A Step-by-Step Tutorial | EMQ (emqx.com)](https://www.emqx.com/en/blog/bridging-opc-ua-data-to-mqtt-for-iiot).
 
-NeuronEX does not directly support the direct acquisition of OPC DA data. However, it is possible to use NeuOPC to convert OPC DA to OPC UA and then use NeuronEX's OPC UA Plugin for data acquisition. For more information, you can check [OPC DA | Neuron Documentation (neugates.io)](https://neugates.io/docs/en/latest/configuration/south-devices/opc-da/overview.html).
+NeuronEX does not directly support the direct acquisition of OPC DA data. However, it is possible to use NeuOPC to convert OPC DA to OPC UA and then use NeuronEX's OPC UA Plugin for data acquisition. For more information, you can check [OPC DA | Neuron Documentation](https://docs.emqx.com/en/neuron/latest/configuration/south-devices/opc-da/overview.html).
 
 ## **Conclusion**
 

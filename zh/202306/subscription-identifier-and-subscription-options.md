@@ -34,7 +34,7 @@ MQTT 允许服务端为这些重叠的订阅分别发送一次消息，也允许
 
 ## 如何使用订阅标识符
 
-1. 在 Web 浏览器上访问 [MQTTX Web](http://mqtt-client.emqx.com/)。
+1. 在 Web 浏览器上访问 [MQTTX Web](https://mqttx.app/web-client/)。
 
 2. 创建一个使用 WebSocket 的 MQTT 连接，并且连接免费的 [公共 MQTT 服务器](https://www.emqx.com/zh/mqtt/public-mqtt5-broker)：
 

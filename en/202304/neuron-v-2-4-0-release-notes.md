@@ -1,16 +1,16 @@
-[Neuron](https://neugates.io/), the modern [industrial IoT](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges) connectivity server, has just released its latest version, Neuron 2.4.0. This release introduces several new features, including newly-added drivers, a new application, and improvements to existing functionality.
+[Neuron](https://github.com/emqx/neuron), the modern [industrial IoT](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges) connectivity server, has just released its latest version, Neuron 2.4.0. This release introduces several new features, including newly-added drivers, a new application, and improvements to existing functionality.
 
 ## 5 Additional Drivers for Different Scenarios
 
-### [IEC61850 MMS](https://neugates.io/docs/en/latest/configuration/south-devices/iec61850/overview.html) and Allen-Bradley DF1
+### [IEC61850 MMS](https://docs.emqx.com/en/neuron/latest/configuration/south-devices/iec61850/overview.html) and Allen-Bradley DF1
 
 One of the most significant additions to Neuron 2.4.0 is the support for IEC61850 MMS. This widely used protocol for communication in electrical substations has been integrated into the Neuron, allowing for more streamlined communication with industrial devices that use this protocol. Additionally, the Allen-Bradley DF1 driver has been added, providing users with another option for connecting to Allen-Bradley PLCs.
 
-### [HJ212-2007](https://neugates.io/docs/en/latest/configuration/south-devices/hj212-2017/hj212-2017.html) and [ABB COMLI](https://neugates.io/docs/en/latest/configuration/south-devices/comli/comli.html)
+### [HJ212-2007](https://docs.emqx.com/en/neuron/latest/configuration/south-devices/hj212-2017/hj212-2017.html) and [ABB COMLI](https://docs.emqx.com/en/neuron/latest/configuration/south-devices/comli/comli.html)
 
 Other newly added drivers include HJ212-2007 and ABB COMLI. HJ212-2007 is a Chinese national standard for ambient air quality monitoring. ABB COMLI is a protocol used for communication between devices in industrial automation systems such as robotics, power, and automation. These drivers expand Neuron's capabilities even further, allowing it to communicate with even more diverse industrial devices through their own dedicated protocols.
 
-### [WebSocket Application](https://neugates.io/docs/en/latest/configuration/north-apps/websocket/websocket.html)
+### [WebSocket Application](https://docs.emqx.com/en/neuron/latest/configuration/north-apps/websocket/websocket.html)
 
 Neuron 2.4.0 also introduces a new WebSocket application driver for real-time communication between devices and Neuron, providing faster response times in critical infrastructure monitoring and control. 
 
