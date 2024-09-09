@@ -2,7 +2,7 @@ Modbus 是一种通用的工业标准，不同厂商生产的控制设备可以�
 
 Modbus TCP 与 Modbus RTU 是 Modbus 两种常用的传输方式， Modbus RTU 是串口通信，Modbus TCP 是 TCP 通信，两者在协议上非常相似，但是由于 TCP 协议的可靠性，Modbus TCP 协议中不需要校验，并且比 Modbus RTU 协议多一个应用报文头。
 
-作为一款支持数十种工业协议转换的物联网边缘工业协议网关软件，[Neuron](https://neugates.io/zh) 也已经实现了基于 Modbus RTU 协议 TCP 传输的功能。同时，在 Modbus 协议里，Neuron 根据配置的点位进行了策略优化，可实现自动批量采集设备数据的功能。
+作为一款支持数十种工业协议转换的物联网边缘工业协议网关软件，[Neuron](https://github.com/emqx/neuron) 也已经实现了基于 Modbus RTU 协议 TCP 传输的功能。同时，在 Modbus 协议里，Neuron 根据配置的点位进行了策略优化，可实现自动批量采集设备数据的功能。
 
 本文将在 Ubuntu 20.04.3、X86_64 的环境下，介绍如何使用 Neuron 接入 Modbus TCP 及 Modbus RTU。
 
@@ -14,7 +14,7 @@ Neuron 支持同时为多个不同通讯协议设备、数十种工业协议进�
 
 ## 配置环境说明
 
-- 请在官网 [https://neugates.io/zh/downloads](https://neugates.io/zh/downloads)  下载 Neuron 软件并执行以下指令安装 Neuron 软件。
+- 请在官网 [https://www.emqx.com/zh/downloads-and-install/neuron](https://www.emqx.com/zh/downloads-and-install/neuron)  下载 Neuron 软件并执行以下指令安装 Neuron 软件。
 
    ```
    sudo apt install ./neuron-2.0.1-linux-amd64.deb
@@ -28,7 +28,7 @@ Neuron 支持同时为多个不同通讯协议设备、数十种工业协议进�
 
 - 请在 [PeakHMI 官网](https://hmisys.com/) 中下载 Modbus 模拟器并进行安装，之后打开 Modbus TCP slave Ex。
 
-Neuron 使用入门请参照：[Neuron 快速教程](https://neugates.io/docs/zh/latest/quick-start/hardware-specifications.html#环境搭建)。
+Neuron 使用入门请参照：[Neuron 快速教程](https://docs.emqx.com/zh/neuron/latest/quick-start/hardware-specifications.html#环境搭建)。
 
 
 ## 操作流程

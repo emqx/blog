@@ -88,7 +88,7 @@ We can choose among these three different behaviors using Retain Handling:
 
 ### Demo of the QoS Subscription Option
 
-1. Access [MQTTX Web](http://mqtt-client.emqx.com/) on a Web browser.
+1. Access [MQTTX Web](https://mqttx.app/web-client/) on a Web browser.
 
 2. Create an MQTT connection using WebSocket and connect to the [Free Public MQTT Server](https://www.emqx.com/en/mqtt/public-mqtt5-broker):
 
@@ -104,7 +104,7 @@ We can choose among these three different behaviors using Retain Handling:
 
 ### Demo of the No Local Subscription Option
 
-1. Access [MQTTX Web](http://mqtt-client.emqx.com/) on a Web browser.
+1. Access [MQTTX Web](https://mqttx.app/web-client/) on a Web browser.
 
 2. Create an MQTT connection using WebSocket and connect to the [Free Public MQTT Server](http://broker.emqx.io/).
 
@@ -118,7 +118,7 @@ We can choose among these three different behaviors using Retain Handling:
 
 ### Demo of the Retain As Published Subscription Option
 
-1. Access [MQTTX Web](http://mqtt-client.emqx.com/) on a Web browser.
+1. Access [MQTTX Web](https://mqttx.app/web-client/) on a Web browser.
 
 2. Create an MQTT connection using WebSocket and connect to the [Free Public MQTT Server](http://broker.emqx.io/).
 
@@ -134,7 +134,7 @@ We can choose among these three different behaviors using Retain Handling:
 
 ### Demo of the Retain Handling Subscription Option
 
-1. Access [MQTTX Web](http://mqtt-client.emqx.com/) on a Web browser.
+1. Access [MQTTX Web](https://mqttx.app/web-client/) on a Web browser.
 
 2. Create an MQTT connection using WebSocket and connect to the [Free Public MQTT Server](http://broker.emqx.io/).
 

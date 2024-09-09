@@ -22,7 +22,7 @@ The Message Expiry Interval is very suitable for use in the following scenarios:
 
 ## Demo
 
-1. Access [MQTTX Web](http://mqtt-client.emqx.com/) on a Web browser.
+1. Access [MQTTX Web](https://mqttx.app/web-client/) on a Web browser.
 
 2. Create an MQTT connection named `pub` for publishing messages, and connect it to the [Free Public MQTT Server](http://broker.emqx.io/):
 

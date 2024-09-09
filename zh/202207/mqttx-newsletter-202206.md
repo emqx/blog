@@ -60,7 +60,7 @@ MQTTX Web 是一款开源的 MQTT 5.0 浏览器客户端，也是一个在线 MQ
 
 了解详情可查看 MQTTX Web GitHub 仓库：[https://github.com/emqx/MQTTX/tree/main/web](https://github.com/emqx/MQTTX/tree/main/web) 
 
-快速使用和体验课访问 MQTTX Web 在线地址：[http://mqtt-client.emqx.com/](http://mqtt-client.emqx.com/) 
+快速使用和体验课访问 MQTTX Web 在线地址：[https://mqttx.app/web-client/](https://mqttx.app/web-client/) 
 
 > 注意：在浏览器端只支持使用 WebSocket 连接到 MQTT 服务，请注意配置连接 MQTT 的协议和端口号，目前仅支持使用部分 MQTTX 的功能，我们将在后续继续同步与更新，将尽快统一 MQTTX 本地与在线工具的使用体验。
 

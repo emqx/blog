@@ -10,13 +10,13 @@ SECS/GEM (SEMI Equipment Communications Standard/Generic Equipment Model) HSMS (
 
 Neuron 的 SECS GEM HSMS 驱动通过 TCP/IP 协议访问支持 SEMI E37 HSMS 标准的设备，目前支持设备 PASSIVE 模式，驱动作为 Host 主动连接。
 
-[SECS GEM HSMS 驱动使用说明文档](https://neugates.io/docs/zh/latest/configuration/south-devices/secs-gem/secs-gem.html)
+[SECS GEM HSMS 驱动使用说明文档](https://docs.emqx.com/zh/neuron/latest/configuration/south-devices/secs-gem/secs-gem.html)
 
 #### KUKA Ethernet KRL TCP 驱动
 
 Neuron KUKA Ethernet KRL TCP 插件通过 TCP 协议访问安装有 KUKA Ethernet KRL 模块的 KUKA 机器人设备，目前支持机器人设备 Client和 Server 模式。
 
-[KUKA Ethernet KRL TCP 驱动使用说明文档](https://neugates.io/docs/zh/latest/configuration/south-devices/kuka/kuka.html)
+[KUKA Ethernet KRL TCP 驱动使用说明文档](https://docs.emqx.com/zh/neuron/latest/configuration/south-devices/kuka/kuka.html)
 
 #### GEWU DMP-V1应用
 

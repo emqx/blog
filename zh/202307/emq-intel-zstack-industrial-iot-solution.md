@@ -21,7 +21,7 @@
 
 **边缘应用**
 
-[边缘数采软件 Neuron](https://neugates.io/zh) 通过配置南向设备和点位信息连接到设备端进行数据采集，并配置北向驱动把采集到的数据上传到边缘流式计算引擎 eKuiper；
+[边缘数采软件 Neuron](https://github.com/emqx/neuron) 通过配置南向设备和点位信息连接到设备端进行数据采集，并配置北向驱动把采集到的数据上传到边缘流式计算引擎 eKuiper；
 
 [eKuiper](https://ekuiper.org/zh) 配置 Neuron 为数据源，并以 Neuron 源设计计算规则，计算结果以 MQTT 形式发送到同边缘网络的 [NanoMQ](https://nanomq.io/zh)；
 

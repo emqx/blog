@@ -2,7 +2,7 @@ In our previous blogs, we discussed the concepts of [ISA95](https://www.emqx.com
 
 ## Unified Namespace Solution with EMQX and Neuron
 
-The [Unified Namespace (UNS)](https://www.emqx.com/en/blog/unified-namespace-next-generation-data-fabric-for-iiot) concept redefines data access, allowing all network participants to interact with information, irrespective of its physical location. [EMQX broker](https://www.emqx.com/en/products/emqx) and [Neuron industrial gateway](https://neugates.io/) is a popular choice for implementing UNS due to its efficiency and scalability.
+The [Unified Namespace (UNS)](https://www.emqx.com/en/blog/unified-namespace-next-generation-data-fabric-for-iiot) concept redefines data access, allowing all network participants to interact with information, irrespective of its physical location. [EMQX broker](https://www.emqx.com/en/products/emqx) and [Neuron industrial gateway](https://github.com/emqx/neuron) is a popular choice for implementing UNS due to its efficiency and scalability.
 
 EMQX plays a pivotal role as the central messaging broker, strategically positioned at its core. Neuron supports the EMQX to access OT sensors and devices with various industrial protocols. As the key components for data communication and message routing, EMQX and Neuron together act as the primary conduit connecting data sources, such as devices, sensors, and machines to data consumers, which includes ERP and MES applications, databases, and analytics platforms. This intermediary role enables seamless data exchange within the manufacturing ecosystem, facilitating the flow of information critical to real-time monitoring, control, and analysis.
 

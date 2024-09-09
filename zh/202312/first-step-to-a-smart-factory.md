@@ -3,7 +3,7 @@
 1. 打通 IT 和 OT 之间的隔阂，实现数据互通。
 2. 识别来自不同系统的数据源。
 
-在本文中，我们将探讨稳定可靠的 MQTT Broker [EMQX](https://www.emqx.com/zh/products/emqx) 和强大的工业协议网关 [Neuron](https://neugates.io/zh) 在无缝获取和集成 OT 和 IT 数据源方面的重要作用。
+在本文中，我们将探讨稳定可靠的 MQTT Broker [EMQX](https://www.emqx.com/zh/products/emqx) 和强大的工业协议网关 [Neuron](https://github.com/emqx/neuron) 在无缝获取和集成 OT 和 IT 数据源方面的重要作用。
 
 ## 应对 OT-IT 融合的挑战
 

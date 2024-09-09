@@ -1,6 +1,6 @@
 ## Introduction
 
-[Neuron](https://neugates.io/) is an industry IoT gateway software that enables industrial devices with essential IoT connectivity capabilities. With minimal resource utilization, Neuron can communicate with diverse industrial devices through the standard or its dedicated protocols, realizing the multiple device connections to the [Industrial IoT platform](https://www.emqx.com/en/blog/iiot-platform-key-components-and-5-notable-solutions). 
+[Neuron](https://github.com/emqx/neuron) is an industry IoT gateway software that enables industrial devices with essential IoT connectivity capabilities. With minimal resource utilization, Neuron can communicate with diverse industrial devices through the standard or its dedicated protocols, realizing the multiple device connections to the [Industrial IoT platform](https://www.emqx.com/en/blog/iiot-platform-key-components-and-5-notable-solutions). 
 
 To enable users to verify their [IIoT](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges) systems more easily, Neuron v2.4.4 provides a time-unlimited free trial license. Users can now experience the full connectivity capabilities of Neuron at no cost from this version.
 

@@ -1,6 +1,6 @@
 上个月，[EMQX 最新的里程碑版本 v5.0.0 正式发布](https://www.emqx.com/zh/blog/emqx-v-5-0-released)。这一版本带来了诸多开创性的更新与改进。目前，EMQX 团队正以每两周一个版本的速度进行后续版本的迭代，以快速修复已知问题和纳入更多功能。此外，本月 EMQX 团队在社区交流和多个新功能上也有比较大的进展。
 
-云服务方面，[EMQX Cloud](https://www.emqx.com/zh/cloud) 新增了两个外部集成数据库支持，用户在进行数据持久化时将有更多选择。[EMQX Kubernetes Operator](https://www.emqx.com/zh/emqx-kubernetes-operator) 发布了新版本，对 EMQX 5.0 也进行了同步适配支持，此外还实现了 [eKuiper](https://ekuiper.org/)、[Neuron](https://neugates.io/) 等边缘计算产品的部署支持。
+云服务方面，[EMQX Cloud](https://www.emqx.com/zh/cloud) 新增了两个外部集成数据库支持，用户在进行数据持久化时将有更多选择。[EMQX Kubernetes Operator](https://www.emqx.com/zh/emqx-kubernetes-operator) 发布了新版本，对 EMQX 5.0 也进行了同步适配支持，此外还实现了 [eKuiper](https://ekuiper.org/)、[Neuron](https://github.com/emqx/neuron) 等边缘计算产品的部署支持。
 
 ## EMQX
 

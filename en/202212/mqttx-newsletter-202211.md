@@ -89,7 +89,7 @@ In addition to the String format, you can specify the message format by simply a
 
 MQTTX Web makes some changes to the functions and page layouts in accordance with the MQTTX desktop application.
 
-You can have a quick experience here: [http://mqtt-client.emqx.com/](http://mqtt-client.emqx.com/) 
+You can have a quick experience here: [https://mqttx.app/web-client/](https://mqttx.app/web-client/) 
 
 ## Future plans
 

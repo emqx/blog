@@ -1,4 +1,4 @@
-11 月我们发布了 [Neuron](https://neugates.io/zh) 2.2.11 版本，主要优化修复了一系列在 2.2 版本中发现的问题，同时为 2.3 版本的发布做准备：增加 EtherNet/IP 驱动，完善 CNC FOOCAS 驱动，OPC DA 支持远程连接；MQTT 插件依赖库切换为 NanoSDK，极大提高数据收发性能。
+11 月我们发布了 [Neuron](https://github.com/emqx/neuron) 2.2.11 版本，主要优化修复了一系列在 2.2 版本中发现的问题，同时为 2.3 版本的发布做准备：增加 EtherNet/IP 驱动，完善 CNC FOOCAS 驱动，OPC DA 支持远程连接；MQTT 插件依赖库切换为 NanoSDK，极大提高数据收发性能。
 
 ## 新增 EtherNet/IP 驱动
 

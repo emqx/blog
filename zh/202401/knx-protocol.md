@@ -97,11 +97,11 @@ KNX Virtual 包括 10 多种不同类型的虚拟 KNX 设备，这些设备连�
 
 ### 使用 Neuron 转换 KNX 到 MQTT
 
-[Neuron](https://neugates.io/zh) 是一款强大的工业协议网关软件，可以为实时工业数据采集提供必要的物联网连接能力。Neuron 十分轻量，可以运行在各种资源受限的物联网边缘硬件设备中，并通过标准协议或其自有的专用协议与各种各样的工业设备进行通信，将其连接到工业物联网平台。
+[Neuron](https://github.com/emqx/neuron) 是一款强大的工业协议网关软件，可以为实时工业数据采集提供必要的物联网连接能力。Neuron 十分轻量，可以运行在各种资源受限的物联网边缘硬件设备中，并通过标准协议或其自有的专用协议与各种各样的工业设备进行通信，将其连接到工业物联网平台。
 
-从发布之初，Neuron 就支持 MQTT 作为其通信协议之一。Neuron [MQTT 插件](https://neugates.io/docs/en/latest/configuration/north-apps/mqtt/overview.html)允许用户快速构建使用 MQTT 协议的物联网应用程序，实现设备与云之间的通信。
+从发布之初，Neuron 就支持 MQTT 作为其通信协议之一。Neuron [MQTT 插件](https://docs.emqx.com/en/neuron/latest/configuration/north-apps/mqtt/overview.html)允许用户快速构建使用 MQTT 协议的物联网应用程序，实现设备与云之间的通信。
 
-自 Neuron 2.1.0 版本开始，Neuron 提供了 [KNX 插件](https://neugates.io/docs/en/latest/configuration/south-devices/knxnet-ip/knxnet-ip.html)，支持使用 KNXnet/IP 协议通过 UDP 与 KNX IP 耦合器进行通信。
+自 Neuron 2.1.0 版本开始，Neuron 提供了 [KNX 插件](https://docs.emqx.com/en/neuron/latest/configuration/south-devices/knxnet-ip/knxnet-ip.html)，支持使用 KNXnet/IP 协议通过 UDP 与 KNX IP 耦合器进行通信。
 
 ### 使用 EMQX 处理 MQTT 消息
 

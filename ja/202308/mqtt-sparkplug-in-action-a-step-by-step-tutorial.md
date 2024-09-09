@@ -8,7 +8,7 @@
 
 [EMQX](https://github.com/emqx/emqx)はSparkplugプロトコルをサポートする人気的な[MQTTブローカー](https://www.emqx.com/ja/blog/the-ultimate-guide-to-mqtt-broker-comparison)であり、Neuronは産業用デバイスからデータを収集し、アプリケーション用にSparkplugメッセージを生成するために使用できる産業用IoTプラットフォームである。
 
-[Neuron](https://neugates.io/)はデバイスからデータを収集し、そのデータに基づいてEMQXブローカにSparkplugメッセージを発行して変更を報告します。EMQXは、関連するSparkplugトピックをサブスクライブしているアプリケーションにメッセージを転送します。しかし、EMQXはルールエンジンを通してSparkplugメッセージをデコードすることができる。メッセージはその後、データプラットフォームや履歴の永続ストレージなどに使用される。
+[Neuron](https://github.com/emqx/neuron)はデバイスからデータを収集し、そのデータに基づいてEMQXブローカにSparkplugメッセージを発行して変更を報告します。EMQXは、関連するSparkplugトピックをサブスクライブしているアプリケーションにメッセージを転送します。しかし、EMQXはルールエンジンを通してSparkplugメッセージをデコードすることができる。メッセージはその後、データプラットフォームや履歴の永続ストレージなどに使用される。
 
 > *Sparkplugソリューションのアーキテクチャについては、こちらの記事をご覧ください：*[*EMQXとNeuronを使用した産業用IoT向けMQTT Sparkplugソリューション*](https://www.emqx.com/ja/blog/mqtt-sparkplug-solution-for-industrial-iot-using-emqx-and-neuron)
 
@@ -82,7 +82,7 @@ FROM
 
 ## ニューロンをインストールする
 
-Neuronは、産業用デバイスからデータを収集、保存、分析するために使用できる産業用IoTプラットフォームである。Neuronは同社のウェブサイトからダウンロードしてインストールできる。ウェブサイト[https://www.neugates.io/](https://www.neugates.io/)、ドキュメントに従ってください。
+Neuronは、産業用デバイスからデータを収集、保存、分析するために使用できる産業用IoTプラットフォームである。Neuronは同社のウェブサイトからダウンロードしてインストールできる。ウェブサイト[https://github.com/emqx/neuron](https://github.com/emqx/neuron)、ドキュメントに従ってください。
 
 ## Neuronでデバイスを設定する
 

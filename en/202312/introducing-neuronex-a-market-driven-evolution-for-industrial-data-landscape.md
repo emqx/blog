@@ -1,6 +1,6 @@
 ## From Neuron to NeuronEX
 
-As an industrial gateway, [Neuron](https://neugates.io/) can convert various industrial protocols to [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt). NeuronEX adds analytical features on top of Neuron, offering not only equipment data acquisition but also edge intelligent analysis, especially in the realm of AI/ML. In the ever-evolving field of industrial data management, the evolution from Neuron to NeuronEX is not just a technological leap, but a direct response to valuable customer feedback and real-world deployment and application experience.
+As an industrial gateway, [Neuron](https://github.com/emqx/neuron) can convert various industrial protocols to [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt). NeuronEX adds analytical features on top of Neuron, offering not only equipment data acquisition but also edge intelligent analysis, especially in the realm of AI/ML. In the ever-evolving field of industrial data management, the evolution from Neuron to NeuronEX is not just a technological leap, but a direct response to valuable customer feedback and real-world deployment and application experience.
 
 ## NeuronEX Edge Architecture
 

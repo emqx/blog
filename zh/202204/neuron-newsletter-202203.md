@@ -1,4 +1,4 @@
-三月， [Neuron](https://neugates.io/zh) 发布了 2.0-beta.2 版本，这个版本包含了 5 个常用的驱动协议以及 License 的验证，每一个驱动都通过连接真实设备进行了测试。Neuron 2.0-beta.2 版本发布后，后续来自的客户新 Driver 需求将在该版本中进行更新。同时，本月还发布了 1.4.2 版本。
+三月， [Neuron](https://github.com/emqx/neuron) 发布了 2.0-beta.2 版本，这个版本包含了 5 个常用的驱动协议以及 License 的验证，每一个驱动都通过连接真实设备进行了测试。Neuron 2.0-beta.2 版本发布后，后续来自的客户新 Driver 需求将在该版本中进行更新。同时，本月还发布了 1.4.2 版本。
 
 ## Neuron 2.0-beta.2 新功能概览
 

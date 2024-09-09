@@ -20,7 +20,7 @@ In this blog, we will demonstrate how to get started with MQTT Sparkplug using E
 
 [EMQX](https://github.com/emqx/emqx) is a popular MQTT broker that supports the Sparkplug protocol, while Neuron is an [industrial IoT platform](https://www.emqx.com/en/blog/iiot-platform-key-components-and-5-notable-solutions) that can be used to collect data from industrial devices and generate Sparkplug messages for applications.
 
-[Neuron](https://neugates.io/) can collect the data from the devices and publish Sparkplug messages to the EMQX broker based on the data by reporting changes. EMQX will forward the messages to the application that subscribes to the relevant Sparkplug topic. However, EMQX is able to decode the Sparkplug messages through the rules engine. The messages are then used for data platforms, persistent storage for historical, and so on.
+[Neuron](https://github.com/emqx/neuron) can collect the data from the devices and publish Sparkplug messages to the EMQX broker based on the data by reporting changes. EMQX will forward the messages to the application that subscribes to the relevant Sparkplug topic. However, EMQX is able to decode the Sparkplug messages through the rules engine. The messages are then used for data platforms, persistent storage for historical, and so on.
 
 ## Install and Configure an MQTT Broker
 
@@ -68,7 +68,7 @@ This action sends the decoded "Payload" to the SparkPlugB/test topic in JSON for
 
 ## Install and Configure an Edge Node
 
-Neuron is an industrial IoT platform that can be used to collect, store, and analyze data from industrial devices. You can download and install Neuron from their website. Visit the website [https://www.neugates.io/](https://neugates.io/docs/en/latest/installation/installation.html)  and follow the documentation.
+Neuron is an industrial IoT platform that can be used to collect, store, and analyze data from industrial devices. You can download and install Neuron from their website. Visit the website [https://docs.emqx.com/en/neuron/latest/installation/installation.html](https://docs.emqx.com/en/neuron/latest/installation/installation.html)  and follow the documentation.
 
 ### Configure Devices in Neuron
 

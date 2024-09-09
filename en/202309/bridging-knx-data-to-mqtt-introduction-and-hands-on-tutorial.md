@@ -38,7 +38,7 @@ To keep things simple, we will simulate a KLiX (D0), a dimming actuator (D0), a 
 
 ## Neuron Quick Start
 
-Consult the [installation instruction](https://neugates.io/docs/en/latest/installation/installation.html) on how to install Neuron. After Neuron is installed, you can access the dashboard through your browser at [http://localhost:7000](http://localhost:7000/) (replace "localhost" with your actual IP address).
+Consult the [installation instruction](https://docs.emqx.com/en/neuron/latest/installation/installation.html) on how to install Neuron. After Neuron is installed, you can access the dashboard through your browser at [http://localhost:7000](http://localhost:7000/) (replace "localhost" with your actual IP address).
 
 ### Step 1. Login
 

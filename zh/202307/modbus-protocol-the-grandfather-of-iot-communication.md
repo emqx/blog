@@ -113,7 +113,7 @@ Modbus 协议在促进传感器和执行器之间的通信方面起着关键作�
 
 随着[工业物联网](https://www.emqx.com/zh/blog/iiot-explained-examples-technologies-benefits-and-challenges)的发展，Modbus 协议在自动化、控制和数据分析方面与现代物联网设备的集成机会越来越多。通过工业物联网，Modbus 设备能够成为更大互联系统的一部分，通过收集、分析和利用这些设备的数据，来优化操作、提高安全性和降低成本。
 
-[Neuron](https://neugates.io/zh) 是一款开源的边缘工业协议网关，支持多种 Modbus 驱动程序，包括 Modbus TCP、Modbus RTU、Modbus UDP 和 Modbus RTU over TCP。这些驱动程序实现了 Modbus 设备与工业物联网应用之间的无缝集成。通过这些驱动程序，Neuron 能够使用不同的 Modbus 变体与各种工业设备进行通信，从而实现数据采集、控制，并与解决方案的其他组件进行互操作。
+[Neuron](https://github.com/emqx/neuron) 是一款开源的边缘工业协议网关，支持多种 Modbus 驱动程序，包括 Modbus TCP、Modbus RTU、Modbus UDP 和 Modbus RTU over TCP。这些驱动程序实现了 Modbus 设备与工业物联网应用之间的无缝集成。通过这些驱动程序，Neuron 能够使用不同的 Modbus 变体与各种工业设备进行通信，从而实现数据采集、控制，并与解决方案的其他组件进行互操作。
 
 以下是对每个 Modbus 驱动程序的说明：
 

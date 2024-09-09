@@ -4,7 +4,7 @@
 
 > Neuron 的前端代码现已开源，请参考： [https://github.com/emqx/neuron-dashboard](https://github.com/emqx/neuron-dashboard)
 >
-> Neuron 2.1.0 下载地址：[https://neugates.io/downloads](https://neugates.io/downloads) 
+> Neuron 2.1.0 下载地址：[https://www.emqx.com/zh/downloads-and-install/neuron](https://www.emqx.com/zh/downloads-and-install/neuron) 
 
 
 
@@ -24,7 +24,7 @@ Neuron 2.1.0 实现了与边缘流式处理引擎 eKuiper 的集成。
 
 **两个产品的界面也实现了一体化无缝集成。** Neuron 2.1.0 的安装包默认配置了与 eKuiper 1.5.1 的连接，用户只需在 Neuron 的 Dashboard 找到北向应用管理中默认的 data-stream-processing 应用节点卡片，订阅所需要的 Group，并在数据流处理模块添加需要 eKuiper 处理的规则，即可进行数据处理与清洗。**通过极简的使用流程为云端平台提供高质量的数据源，减轻云端数据处理压力。**
 
-> 具体使用方法可参考[官方文档快速开始](https://neugates.io/docs/zh/latest/quick-start/hardware-specifications.html#run-for-the-first-time)。
+> 具体使用方法可参考[官方文档快速开始](https://docs.emqx.com/zh/neuron/latest/quick-start/hardware-specifications.html#run-for-the-first-time)。
 
 ![Neuron 北向应用管理](https://assets.emqx.com/images/320870fb329cf08bc433d484af4c5eda.png)
 

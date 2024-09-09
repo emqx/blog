@@ -26,7 +26,7 @@ MQTTX Web is an open-source [MQTT 5.0](https://www.emqx.com/en/blog/introduction
 
 ![Online MQTT Client](https://assets.emqx.com/images/ad9b294ec512606318295a71e915ea3a.png)
 
-Get started with MQTTX Web by visiting: [http://mqtt-client.emqx.com/](http://mqtt-client.emqx.com/)
+Get started with MQTTX Web by visiting: [https://mqttx.app/web-client/](https://mqttx.app/web-client/)
 
 The source code is available on GitHub at: [https://github.com/emqx/MQTTX/tree/main/web](https://github.com/emqx/MQTTX/tree/main/web)
 
@@ -48,7 +48,7 @@ MQTTX Web offers flexibility: choose the access method that best suits your need
 
 ### Online Use
 
-Simply open the URL [http://mqtt-client.emqx.com/](http://mqtt-client.emqx.com/)  in any web browser to get started.
+Simply open the URL [https://mqttx.app/web-client/](https://mqttx.app/web-client/)  in any web browser to get started.
 
 ### Private Deployment
 

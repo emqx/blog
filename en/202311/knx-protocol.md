@@ -99,9 +99,9 @@ With the advent of Industry 4.0, there is an increasing demand for intelligence,
 
 ### Neuron for Converting KNX into MQTT
 
-[Neuron](https://neugates.io/) is an industry IoT gateway software that enables industrial devices with essential IoT connectivity capabilities. With minimal resource utilization, Neuron can communicate with diverse industrial devices through standard or dedicated protocols, realizing the multiple device connections to the [Industrial IoT platform](https://www.emqx.com/en/blog/iiot-platform-key-components-and-5-notable-solutions). From the very beginning, Neuron has supported MQTT as one of its communication protocols. The Neuron [MQTT plugin](https://neugates.io/docs/en/latest/configuration/north-apps/mqtt/overview.html) allows users to quickly build IoT applications that use MQTT communication between devices and the cloud.
+[Neuron](https://github.com/emqx/neuron) is an industry IoT gateway software that enables industrial devices with essential IoT connectivity capabilities. With minimal resource utilization, Neuron can communicate with diverse industrial devices through standard or dedicated protocols, realizing the multiple device connections to the [Industrial IoT platform](https://www.emqx.com/en/blog/iiot-platform-key-components-and-5-notable-solutions). From the very beginning, Neuron has supported MQTT as one of its communication protocols. The Neuron [MQTT plugin](https://docs.emqx.com/en/neuron/latest/configuration/north-apps/mqtt/overview.html) allows users to quickly build IoT applications that use MQTT communication between devices and the cloud.
 
-Since version 2.1.0, Neuron provides the [KNX plugin](https://neugates.io/docs/en/latest/configuration/south-devices/knxnet-ip/knxnet-ip.html) which supports communication with KNX IP couplers using the KNXnet/IP protocol over UDP.
+Since version 2.1.0, Neuron provides the [KNX plugin](https://docs.emqx.com/en/neuron/latest/configuration/south-devices/knxnet-ip/knxnet-ip.html) which supports communication with KNX IP couplers using the KNXnet/IP protocol over UDP.
 
 ### EMQX for Handling MQTT Messages
 

@@ -8,7 +8,7 @@
 
 [EMQX](https://github.com/emqx/emqx) 是一款支持 Sparkplug 协议的热门 [MQTT Broker](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison "https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison")，Neuron 是一款工业物联网平台，能够从工业设备获取数据，并将数据转换为 Sparkplug 消息发送给应用。
 
-[Neuron](https://neugates.io/ "https://neugates.io/") 可以从设备获取数据，并根据数据变化情况将 Sparkplug 消息发布到 EMQX Broker。EMQX 会把消息转发给订阅了相应 Sparkplug 主题的应用。此外，EMQX 还可以通过规则引擎对 Sparkplug 消息进行解码。这些消息可以用于数据平台、历史数据持久化存储等场景。
+[Neuron](https://github.com/emqx/neuron) 可以从设备获取数据，并根据数据变化情况将 Sparkplug 消息发布到 EMQX Broker。EMQX 会把消息转发给订阅了相应 Sparkplug 主题的应用。此外，EMQX 还可以通过规则引擎对 Sparkplug 消息进行解码。这些消息可以用于数据平台、历史数据持久化存储等场景。
 
 > 了解 Sparkplug 解决方案架构详情：[基于 EMQX 和 Neuron 的工业物联网 MQTT Sparkplug 解决方案](https://www.emqx.com/zh/blog/mqtt-sparkplug-solution-for-industrial-iot-using-emqx-and-neuron "https://www.emqx.com/zh/blog/mqtt-sparkplug-solution-for-industrial-iot-using-emqx-and-neuron")
 
@@ -83,7 +83,7 @@ FROM
 
 ## 安装 Neuron
 
-Neuron 是一个工业物联网平台，可用于收集、存储和分析来自工业设备的数据。您可以从官网下载并安装 Neuron。请访问 [https://www.neugates.io/](https://www.neugates.io/) 并按照文档指引进行操作。
+Neuron 是一个工业物联网平台，可用于收集、存储和分析来自工业设备的数据。您可以从官网下载并安装 Neuron。请访问 [https://www.emqx.com/zh/downloads-and-install/neuron](https://www.emqx.com/zh/downloads-and-install/neuron) 并按照文档指引进行操作。
 
 ## 在 Neuron 中配置设备
 

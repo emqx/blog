@@ -38,7 +38,7 @@
 
 凭借在 GitHub 上的 11.5k 个 Star，EMQX 已经成为市场上[最受欢迎的 MQTT Broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) 之一。EMQX 项目于 2012 年启动，采用 Apache 2.0 许可证进行开源。EMQX 由 Erlang/OTP 编写，这是一种能够构建高度可扩展的软实时系统的编程语言。
 
-EMQX 既可以在云端部署，也可以在边缘部署。在边缘，它可以与各种工业网关集成，例如 [N3uron](https://n3uron.com/)、[Neuron](https://neugates.io/zh)、[Kepware](https://www.ptc.com/en/products/kepware)。在云环境中，EMQX 能够在 AWS、GCP、Azure 等主流的公共云平台上与包括 Kafka、数据库和云服务在内的多种技术无缝集成。
+EMQX 既可以在云端部署，也可以在边缘部署。在边缘，它可以与各种工业网关集成，例如 [N3uron](https://n3uron.com/)、[Neuron](https://github.com/emqx/neuron)、[Kepware](https://www.ptc.com/en/products/kepware)。在云环境中，EMQX 能够在 AWS、GCP、Azure 等主流的公共云平台上与包括 Kafka、数据库和云服务在内的多种技术无缝集成。
 
 借助全面的企业级功能、数据集成能力、云托管服务和 EMQ 团队提供的商业支持，EMQX 广泛应用于工业物联网领域的多种重要场景。
 

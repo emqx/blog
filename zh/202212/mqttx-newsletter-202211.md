@@ -87,7 +87,7 @@ MQTTX CLI 命令行客户端在之前的版本中，每次连接都需要手动�
 
 MQTTX Web 客户端同步了 MQTTX 桌面端应用的相关功能修改与页面调整。
 
-在线体验地址为：[http://mqtt-client.emqx.com/](http://mqtt-client.emqx.com/) 
+在线体验地址为：[https://mqttx.app/web-client/](https://mqttx.app/web-client/) 
 
 ## 未来规划
 

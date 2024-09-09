@@ -101,7 +101,7 @@ The program offers benefits to both vendors and customers:
 
 Sparkplug 3.0 brings significant advancements and formalization to the MQTT Sparkplug protocol for IIoT applications. With improved clarity, explicit specifications, and alignment with MQTT 5.0, Sparkplug 3.0 offers enhanced interoperability, efficient data synchronization, and streamlined deployment in industrial environments. As the IIoT ecosystem continues to evolve, Sparkplug 3.0 provides a robust and standardized solution for reliable and scalable communication within IIoT networks. 
 
-As the world’s leading [open-source MQTT broker, EMQX](https://github.com/emqx/emqx) is the main component of infrastructure to manage all Sparkplug 3.0 message traffic. [Neuron, an IIoT connectivity server](https://neugates.io/), can act as an edge node and assist OT devices to be smarter and to report Sparkplug 3.0 messages in an asynchronous way.
+As the world’s leading [open-source MQTT broker, EMQX](https://github.com/emqx/emqx) is the main component of infrastructure to manage all Sparkplug 3.0 message traffic. [Neuron, an IIoT connectivity server](https://github.com/emqx/neuron), can act as an edge node and assist OT devices to be smarter and to report Sparkplug 3.0 messages in an asynchronous way.
 
 
 

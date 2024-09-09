@@ -1,4 +1,4 @@
-最近、[MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5)用のクロスプラットフォームデスクトップクライアントである[MQTTX](https://mqttx.app/)がバージョン1.8.0でリリースされました。MQTTXは、[EMQX](https://www.emqx.com/ja/products/emqx)などのMQTTブローカーに接続するために設計されています。複数の同時[オンラインMQTTクライアント](http://mqtt-client.emqx.com/)接続を簡単かつ迅速に作成し、MQTT/TCP、MQTT/TLS、MQTT/WebSocketの接続、パブリッシュ、サブスクリプション機能、およびその他のMQTTプロトコル機能をテストできます。
+最近、[MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5)用のクロスプラットフォームデスクトップクライアントである[MQTTX](https://mqttx.app/)がバージョン1.8.0でリリースされました。MQTTXは、[EMQX](https://www.emqx.com/ja/products/emqx)などのMQTTブローカーに接続するために設計されています。複数の同時[オンラインMQTTクライアント](https://mqttx.app/web-client/)接続を簡単かつ迅速に作成し、MQTT/TCP、MQTT/TLS、MQTT/WebSocketの接続、パブリッシュ、サブスクリプション機能、およびその他のMQTTプロトコル機能をテストできます。
 
 v1.8.0の最新リリースでは、クイック接続複製機能によるエクスペリエンスの最適化だけでなく、CLI（コマンドライン）とブラウザーという2つの新しいインタラクション方法を追加することで、新しいユースケースをサポートしています。これにより、MQTTX 1.8.0は、サポートされているシナリオの点で最も完全なMQTTテストクライアントになります。ニーズに応じて、デスクトップクライアントをダウンロードするか、ターミナルコマンドラインを使用するか、Webブラウザで簡単にMQTT接続をテストすることを選択できます。
 

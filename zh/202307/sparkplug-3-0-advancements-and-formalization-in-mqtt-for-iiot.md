@@ -81,7 +81,7 @@ Sparkplug Compatible logo 为厂商产品的兼容性提供了背书。经过认
 
 Sparkplug 3.0 为 MQTT Sparkplug 协议带来了重大改进和规范化，使其更加清晰、明确，并增加了对 MQTT 5.0 的支持。Sparkplug 3.0 提供了更强的互操作性、更高效的数据同步和更便捷的工业环境部署。随着工业物联网生态系统的不断发展，Sparkplug 3.0 为在工业物联网网络中实现可靠和可扩展的通信提供了一个强大且标准化的解决方案。
 
-作为全球领先的[开源 MQTT Broker，EMQX](https://github.com/emqx/emqx) 是处理 Sparkplug 3.0 消息流的基础设施的核心部分。[工业物联网连接服务器 Neuron](https://neugates.io/zh) 则可以作为边缘节点，让 OT 设备更加智能，并以异步方式发送 Sparkplug 3.0 消息。
+作为全球领先的[开源 MQTT Broker，EMQX](https://github.com/emqx/emqx) 是处理 Sparkplug 3.0 消息流的基础设施的核心部分。[工业物联网连接服务器 Neuron](https://github.com/emqx/neuron) 则可以作为边缘节点，让 OT 设备更加智能，并以异步方式发送 Sparkplug 3.0 消息。
 
 
 

@@ -65,7 +65,7 @@ Neuron 2.2 已支持北向应用 MQTT 的离线缓存，可将数据存储在内
 ### 其他更新
 
 - 2.3.0 版本新增支持修改用户密码，保护用户使用 Neuron 采集设备数据的安全。
-- Neuron 官方文档中新增加关于 DTU 连接示例的文档，感兴趣的用户可参考：[官方文档](https://neugates.io/docs/zh/latest/)。
+- Neuron 官方文档中新增加关于 DTU 连接示例的文档，感兴趣的用户可参考：[官方文档](https://docs.emqx.com/zh/neuron/latest/)。
 
 ## 新驱动增强接入能力
 

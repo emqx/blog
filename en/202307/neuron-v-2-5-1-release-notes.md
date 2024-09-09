@@ -28,7 +28,7 @@ This feature is introduced for scenarios where a large number of devices with si
 
 <br>
 
-> Templates also support import/export functionality. Please refer to the [template usage documentation](https://neugates.io/docs/en/latest/configuration/templates/templates.html) for more details.
+> Templates also support import/export functionality. Please refer to the [template usage documentation](https://docs.emqx.com/en/neuron/latest/configuration/templates/templates.html) for more details.
 
 ### Modbus UDP Transport Support 
 
@@ -60,7 +60,7 @@ Profinet IO (Industrial Ethernet Input/Output) is a real-time Ethernet communica
 
 
 
-> [Profinet IO Driver User Manual](https://neugates.io/docs/en/latest/configuration/south-devices/profinet/profinet.html)
+> [Profinet IO Driver User Manual](https://docs.emqx.com/en/neuron/latest/configuration/south-devices/profinet/profinet.html)
 
 ### Mitsubishi FX
 
@@ -70,7 +70,7 @@ The Mitsubishi FX plugin in Neuron allows access to Mitsubishi's FX0, FX2, FX3, 
 
 ![Mitsubishi FX](https://assets.emqx.com/images/af0daafca5c6d872b1f6e873331bdc0b.png)
 
-> [Mitsubishi FX Driver User Manual](https://neugates.io/docs/en/latest/configuration/south-devices/mitsubishi-fx/overview.html#parameter-configuration)
+> [Mitsubishi FX Driver User Manual](https://docs.emqx.com/en/neuron/latest/configuration/south-devices/mitsubishi-fx/overview.html#parameter-configuration)
 
 ### Omron FINS UDP 
 
@@ -82,7 +82,7 @@ The FINS UDP driver in Neuron 2.5.1 enables fast and real-time data exchange bet
 
 ![Omron FINS UDP](https://assets.emqx.com/images/d9ffce2539d9929ad67128b4d474b7b8.png)
 
-> [Omron FINS UDP Driver User Manual](https://neugates.io/docs/en/latest/configuration/south-devices/omron-fins/omron-fins-udp.html)
+> [Omron FINS UDP Driver User Manual](https://docs.emqx.com/en/neuron/latest/configuration/south-devices/omron-fins/omron-fins-udp.html)
 
 ### Panasonic Mewtocol 
 
@@ -92,7 +92,7 @@ The Panasonic Mewtocol plugin in Neuron enables access to Panasonic's FP-XH and 
 
 ![Panasonic Mewtocol ](https://assets.emqx.com/images/ae5b3e0fde0b98ec26bf59a4760beaa1.png)
 
-> [Panasonic Mewtocol Driver User Manual](https://neugates.io/docs/en/latest/configuration/south-devices/panasonic-mewtocol/overview.html)
+> [Panasonic Mewtocol Driver User Manual](https://docs.emqx.com/en/neuron/latest/configuration/south-devices/panasonic-mewtocol/overview.html)
 
 ### DLT645-1997
 
@@ -106,7 +106,7 @@ The DL/T645-1997 plugin supports both serial port connection and transparent TCP
 
 ![image.png](https://assets.emqx.com/images/d8b746a9604695910dbbba729bf4dbb8.png)
 
-> [DLT645-1997 Driver User Manual](https://neugates.io/docs/en/latest/configuration/south-devices/dlt645-1997/dlt645-1997.html#module-description)
+> [DLT645-1997 Driver User Manual](https://docs.emqx.com/en/neuron/latest/configuration/south-devices/dlt645-1997/dlt645-1997.html#module-description)
 
 ## Future Plans
 

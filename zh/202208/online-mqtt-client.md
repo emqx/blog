@@ -15,7 +15,7 @@ MQTTX Web 是一款在线 MQTT 5.0 客户端工具，即运行在浏览器上的
 
 > MQTTX Web 网站：[https://mqttx.app/zh/web](https://mqttx.app/zh/web) 
 >
-> MQTTX Web 在线使用地址：[http://mqtt-client.emqx.com/](http://mqtt-client.emqx.com/) 
+> MQTTX Web 在线使用地址：[https://mqttx.app/web-client/](https://mqttx.app/web-client/) 
 >
 > MQTTX Web GitHub 仓库：[https://github.com/emqx/MQTTX/tree/main/web](https://github.com/emqx/MQTTX/tree/main/web) 
 
@@ -39,7 +39,7 @@ MQTTX Web 代码与 [MQTTX 桌面应用](https://github.com/emqx/MQTTX)和 [MQTT
 
 MQTTX Web 同样使用了图形化页面，采用聊天界面形式来帮助您快速测试 MQTT 服务，使用方式与 MQTTX 桌面应用基本一致。
 
-打开浏览器后输入 [http://mqtt-client.emqx.com/](http://mqtt-client.emqx.com/) 就可以访问到 MQTTX Web。
+打开浏览器后输入 [https://mqttx.app/web-client/](https://mqttx.app/web-client/) 就可以访问到 MQTTX Web。
 
 > 更多详细的使用介绍可以参考 MQTTX 的使用文档：[https://mqttx.app/zh/docs/get-started](https://mqttx.app/zh/docs/get-started)。
 

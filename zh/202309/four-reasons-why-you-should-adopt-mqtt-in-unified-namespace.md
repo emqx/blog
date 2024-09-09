@@ -38,7 +38,7 @@ MQTT 或许是工业物联网领域的新秀，但它已经赢得了广泛的关
 
 ![Adopt MQTT in UNS](https://assets.emqx.com/images/ae8ba11ca3abe2ddbc134ab220585b55.png)
 
-在开源世界中，有许多数据转换工具和协议代理软件，例如 [Neuron](https://neugates.io/)、ignition 和 PLC4X。您既可以把 [OPC UA 和 MQTT](https://www.emqx.com/zh/blog/bridging-opc-ua-data-to-mqtt-for-iiot) 连接在一起，也可以把 Modbus 和 Ethercat 连接在一起。
+在开源世界中，有许多数据转换工具和协议代理软件，例如 [Neuron](https://github.com/emqx/neuron)、ignition 和 PLC4X。您既可以把 [OPC UA 和 MQTT](https://www.emqx.com/zh/blog/bridging-opc-ua-data-to-mqtt-for-iiot) 连接在一起，也可以把 Modbus 和 Ethercat 连接在一起。
 
 <section class="promotion">
     <div>

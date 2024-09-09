@@ -20,7 +20,7 @@ We can bridge BCAnet to MQTT to complement each other and solve the issues we ha
 
 ## The Architecture of BACnet to MQTT Bridging
 
-This blog uses [Neuron](https://neugates.io/) and [EMQX](https://www.emqx.com/en/products/emqx) from EMQ to achieve BACnet to MQTT bridging. Neuron can convert the BACnet protocol to MQTT, while EMQX acts as an [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison), handling massive connections and data.
+This blog uses [Neuron](https://github.com/emqx/neuron) and [EMQX](https://www.emqx.com/en/products/emqx) from EMQ to achieve BACnet to MQTT bridging. Neuron can convert the BACnet protocol to MQTT, while EMQX acts as an [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison), handling massive connections and data.
 
 Neuron is a modern [industrial IoT](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges) connectivity server that can connect various industrial devices that use standard protocols or device-specific protocols, achieving interconnection between industrial IoT platforms and various devices. As a lightweight industrial software, Neuron can run on various IoT edge hardware devices with limited resources. It aims to solve the problem of unified access to data-centric automation devices and provide basic support for intelligent manufacturing.
 
@@ -56,7 +56,7 @@ Initial username: `admin`, initial password: `public`
 
 ### Neuron Quick Start
 
-Neuron provides various installation methods; users can view detailed installation methods in the [documentation](https://neugates.io/docs/en/latest/installation/installation.html). This example uses containerized deployment.
+Neuron provides various installation methods; users can view detailed installation methods in the [documentation](https://docs.emqx.com/en/neuron/latest/installation/installation.html). This example uses containerized deployment.
 
 Obtaining Docker images:
 

@@ -67,9 +67,9 @@ Therefore, in the field of IoT, MQTT is more suitable for message transmission i
 
 The Modbus to MQTT bridging architecture consists of two main components: the Modbus data source and the [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison). The data source sends Modbus data to the MQTT broker, which then receives and forwards it. To achieve this process, two essential elements are required: an edge device responsible for converting the Modbus protocol into MQTT and transmitting the data to the MQTT broker, and an MQTT broker that handles MQTT messages.
 
-In this article, we use [Neuron](https://neugates.io/) and [EMQX](https://github.com/emqx/emqx) to implement the bridging process.
+In this article, we use [Neuron](https://github.com/emqx/neuron) and [EMQX](https://github.com/emqx/emqx) to implement the bridging process.
 
-[Neuron](https://neugates.io/) is a modern [industrial IoT](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges) connectivity server that can connect various industrial devices using standard or proprietary protocols, achieving interconnectivity between industrial IoT platforms and devices. As a lightweight industrial software, Neuron can run on various IoT edge hardware devices with limited resources. It aims to solve the problem of difficult unified access to automation equipment data centered around data and provide basic support for intelligent manufacturing.
+[Neuron](https://github.com/emqx/neuron) is a modern [industrial IoT](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges) connectivity server that can connect various industrial devices using standard or proprietary protocols, achieving interconnectivity between industrial IoT platforms and devices. As a lightweight industrial software, Neuron can run on various IoT edge hardware devices with limited resources. It aims to solve the problem of difficult unified access to automation equipment data centered around data and provide basic support for intelligent manufacturing.
 
 [EMQX](https://github.com/emqx/emqx) is the world’s leading open-source distributed IoT MQTT broker with high performance and scalability. EMQX provides efficient and reliable connections for massive IoT devices, enabling high-performance real-time movement and processing of the message and event flow data, helping users quickly build IoT platforms and applications for critical business.
 
@@ -119,7 +119,7 @@ Select **Holding Registers**. You have successfully launched the simulator, keep
 
 ### Neuron Quick Start
 
-Neuron provides various installation methods, and users can view detailed installation methods in the [documentation](https://neugates.io/docs/en/latest/installation/installation.html). This example uses containerized deployment.
+Neuron provides various installation methods, and users can view detailed installation methods in the [documentation](https://docs.emqx.com/en/neuron/latest/installation/installation.html). This example uses containerized deployment.
 
 Obtaining Docker images:
 

@@ -40,7 +40,7 @@ Webブラウザを通じて`http://localhost:18083`にアクセスし（「local
 
 ### Neuronクイックスタート
 
-Neuronはさまざまなインストール方法を提供しており、詳細なインストール方法は[ドキュメント](https://neugates.io/docs/en/latest/installation/installation.html)で確認できます。この例では、コンテナ化されたデプロイメントを使用しています。
+Neuronはさまざまなインストール方法を提供しており、詳細なインストール方法は[ドキュメント](https://docs.emqx.com/en/neuron/latest/installation/installation.html)で確認できます。この例では、コンテナ化されたデプロイメントを使用しています。
 
 Dockerイメージを取得するには：
 

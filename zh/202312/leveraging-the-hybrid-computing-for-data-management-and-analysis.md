@@ -2,13 +2,13 @@
 
 在复杂的数据管理环境中，边缘计算和云计算有着巨大的差异，是两种完全不同的计算模式。边缘计算使得实时处理更加贴近数据源，而云计算则为高级数据分析提供了强有力的支持。现在让我们设想一个新世界，在这里无需在这两种计算能力之间做出艰难选择，而是可以充分发挥它们的综合优势——这就是混合计算的，一个将边缘计算和云计算相融合的引人注目的领域，为您带来更全面、灵活的计算体验。
 
-本文将深入探讨混合计算模型的变革潜力，这种模型巧妙地融合了边缘计算和云计算的强大能力，为用户提供了全方位的数据管理和分析解决方案。我们将通过一个实际案例展示 [EMQX](https://www.emqx.com/zh/products/emqx)、[Neuron](https://neugates.io/zh) 和 [eKuiper](https://ekuiper.org/zh) 如何协同合作，以优化边缘和云计算环境中的数据利用，从而为用户提供更高效的计算体验。
+本文将深入探讨混合计算模型的变革潜力，这种模型巧妙地融合了边缘计算和云计算的强大能力，为用户提供了全方位的数据管理和分析解决方案。我们将通过一个实际案例展示 [EMQX](https://www.emqx.com/zh/products/emqx)、[Neuron](https://github.com/emqx/neuron) 和 [eKuiper](https://ekuiper.org/zh) 如何协同合作，以优化边缘和云计算环境中的数据利用，从而为用户提供更高效的计算体验。
 
 ## 通过混合模型实现数据 ETL
 
 为了说明混合模型的强大威力，让我们继续之前 EMQX 和 Neuron 的示例。这一次，我们还引入了边缘流处理引擎 eKuiper，以提供边缘处理能力。在云端，所有清洗后的数据都被发布到 EMQX Broker，形成一个统一命名空间。各种应用（如 Kafka）可以订阅相关的主题以进行流处理。这些组件共同呈现了边缘计算和云计算之间的协调互动。从实时数据采集到基于云的分析，该真实示例生动展示了我们解决方案的潜力。
 
-就像前一篇文章中所介绍的那样，[Neuron](https://neugates.io/zh) 是一个主设备，连接多个从设备，包括 3 个电力表和 1 个温度读取器。每个从设备都有一个设备 ID 用于标识数据源。Neuron 通过轮询这些从设备，逐一获取当前的读数。Neuron 成为第一个执行数据映射的环节，将 [Modbus](https://www.emqx.com/zh/blog/modbus-protocol-the-grandfather-of-iot-communication) 从设备读取的数据与我们所关注的真实世界模型对象——化学罐进行映射。Neuron 能够从各种数据源中提取数据，这是数据提取过程。
+就像前一篇文章中所介绍的那样，[Neuron](https://github.com/emqx/neuron) 是一个主设备，连接多个从设备，包括 3 个电力表和 1 个温度读取器。每个从设备都有一个设备 ID 用于标识数据源。Neuron 通过轮询这些从设备，逐一获取当前的读数。Neuron 成为第一个执行数据映射的环节，将 [Modbus](https://www.emqx.com/zh/blog/modbus-protocol-the-grandfather-of-iot-communication) 从设备读取的数据与我们所关注的真实世界模型对象——化学罐进行映射。Neuron 能够从各种数据源中提取数据，这是数据提取过程。
 
 化学罐的数据随后被发送至 [eKuiper](https://ekuiper.org/zh) 进行数据清洗和转换。eKuiper 具备管理多种数据源的能力，可以通过 API 或其他通信协议访问 MES 和 ERP 的生产数据。eKuiper 对来自 Neuron 的化学罐对象数据进行标准化，并向化学罐添加情景数据。这是数据转换过程。
 

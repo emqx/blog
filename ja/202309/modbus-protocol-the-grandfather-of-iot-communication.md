@@ -114,7 +114,7 @@ Modbusプロトコルは多くの利点を持っていますが、一方でい�
 
 [産業用モノのインターネット ( IIoT )](https://www.emqx.com/ja/blog/iiot-explained-examples-technologies-benefits-and-challenges) の成長に伴い、自動化、制御、データ分析のために Modbus プロトコルと最新の IoT デバイスを統合する機会が数多くあります。IIoT を使用すると、Modbus デバイスをより大規模な相互接続システムの一部にすることができ、これらのデバイスからのデータを収集、分析、利用して、運用の最適化、安全性の向上、コストの削減を行うことができます。
 
-[Neuron](https://neugates.io/)は、オープンソースのエッジ産業プロトコル ゲートウェイであり、Modbus TCP、Modbus RTU、Modbus UDP、Modbus RTU over TCP などのさまざまな Modbus ドライバーのサポートを提供します。これらの Modbus ドライバーにより、Modbus 対応デバイスと産業用モノのインターネット アプリケーションとのシームレスな統合が可能になります。これらにより、Neuron はさまざまな Modbus バリアントおよびプロトコルを使用して幅広い産業用デバイスと通信できるようになり、データの取得、制御、およびソリューションの他のコンポーネントとの相互運用性が可能になります。
+[Neuron](https://github.com/emqx/neuron)は、オープンソースのエッジ産業プロトコル ゲートウェイであり、Modbus TCP、Modbus RTU、Modbus UDP、Modbus RTU over TCP などのさまざまな Modbus ドライバーのサポートを提供します。これらの Modbus ドライバーにより、Modbus 対応デバイスと産業用モノのインターネット アプリケーションとのシームレスな統合が可能になります。これらにより、Neuron はさまざまな Modbus バリアントおよびプロトコルを使用して幅広い産業用デバイスと通信できるようになり、データの取得、制御、およびソリューションの他のコンポーネントとの相互運用性が可能になります。
 
 各 Modbus ドライバーの説明は次のとおりです。
 
