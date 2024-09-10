@@ -98,6 +98,7 @@ Get to know the preferred protocol in IoT from beginner to master.
 ## [MQTT Programming](https://www.emqx.com/zh/blog/category/mqtt-programming)
 Best practice of MQTT in various clients.
 
+- [如何在 Rust 中通过 Rumqttc 实现 MQTT 通信](https://www.emqx.com/zh/blog/how-to-use-mqtt-in-rust) ([Edit](https://github.com/emqx/blog/blob/main/zh/202409/how-to-use-mqtt-in-rust.md))
 - [在 Flutter 项目中使用 MQTT](https://www.emqx.com/zh/blog/using-mqtt-in-flutter) ([Edit](https://github.com/emqx/blog/blob/main/zh/202409/using-mqtt-in-flutter.md))
 - [开发指南：使用 MQTTNet 库构建 .Net 物联网 MQTT 应用程序](https://www.emqx.com/zh/blog/connecting-to-serverless-mqtt-broker-with-mqttnet-in-csharp) ([Edit](https://github.com/emqx/blog/blob/main/zh/202402/connecting-to-serverless-mqtt-broker-with-mqttnet-in-csharp.md))
 - [如何在 Django 项目中使用 MQTT](https://www.emqx.com/zh/blog/how-to-use-mqtt-in-django) ([Edit](https://github.com/emqx/blog/blob/main/zh/202210/how-to-use-mqtt-in-django.md))
@@ -114,7 +115,6 @@ Best practice of MQTT in various clients.
 - [Python MQTT 异步框架 —— HBMQTT](https://www.emqx.com/zh/blog/python-async-mqtt-client-hbmqtt) ([Edit](https://github.com/emqx/blog/blob/main/zh/202103/python-async-mqtt-client-hbmqtt.md))
 - [ESP8266 + MQTT ：如何实现 LED 灯的远程控制](https://www.emqx.com/zh/blog/esp8266_mqtt_led) ([Edit](https://github.com/emqx/blog/blob/main/zh/202101/esp8266_mqtt_led.md))
 - [如何在 React 项目中使用 MQTT](https://www.emqx.com/zh/blog/how-to-use-mqtt-in-react) ([Edit](https://github.com/emqx/blog/blob/main/zh/202010/how-to-use-mqtt-in-react.md))
-- [如何在 Rust 中使用 MQTT](https://www.emqx.com/zh/blog/how-to-use-mqtt-in-rust) ([Edit](https://github.com/emqx/blog/blob/main/zh/202010/how-to-use-mqtt-in-rust.md))
 - [如何在 Electron 项目中使用 MQTT](https://www.emqx.com/zh/blog/how-to-use-mqtt-in-electron) ([Edit](https://github.com/emqx/blog/blob/main/zh/202009/how-to-use-mqtt-in-electron.md))
 - [使用 WebSocket 连接 MQTT 服务器](https://www.emqx.com/zh/blog/connect-to-mqtt-broker-with-websocket) ([Edit](https://github.com/emqx/blog/blob/main/zh/202009/connect-to-mqtt-broker-with-websocket.md))
 - [Python MQTT 客户端对比](https://www.emqx.com/zh/blog/comparision-of-python-mqtt-client) ([Edit](https://github.com/emqx/blog/blob/main/zh/202009/comparision-of-python-mqtt-client.md))
