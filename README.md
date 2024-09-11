@@ -112,12 +112,12 @@ Get to know the preferred protocol in IoT from beginner to master.
 Best practice of MQTT in various clients.
 
 - [A Guide on Collecting and Reporting Soil Moisture with ESP32 and Sensor through MQTT](https://www.emqx.com/en/blog/hands-on-guide-on-esp32) ([Edit](https://github.com/emqx/blog/blob/main/en/202408/hands-on-guide-on-esp32.md))
+- [MQTT in Python with Paho Client: Beginner's Guide 2024](https://www.emqx.com/en/blog/how-to-use-mqtt-in-python) ([Edit](https://github.com/emqx/blog/blob/main/en/202408/how-to-use-mqtt-in-python.md))
 - [Using MQTT on ESP8266: A Quick Start Guide](https://www.emqx.com/en/blog/esp8266-connects-to-the-public-mqtt-broker) ([Edit](https://github.com/emqx/blog/blob/main/en/202405/esp8266-connects-to-the-public-mqtt-broker.md))
 - [How to Use MQTT in the Flutter Project](https://www.emqx.com/en/blog/using-mqtt-in-flutter) ([Edit](https://github.com/emqx/blog/blob/main/en/202405/using-mqtt-in-flutter.md))
 - [How to Use MQTT in Rust with Rumqttc Client](https://www.emqx.com/en/blog/how-to-use-mqtt-in-rust) ([Edit](https://github.com/emqx/blog/blob/main/en/202404/how-to-use-mqtt-in-rust.md))
 - [Remotely Control an LED with ESP8266 and MQTT](https://www.emqx.com/en/blog/esp8266_mqtt_led) ([Edit](https://github.com/emqx/blog/blob/main/en/202403/esp8266_mqtt_led.md))
 - [MQTT with Qt6: A Beginner's Guide with Examples](https://www.emqx.com/en/blog/how-to-create-an-mqtt-application-in-qt6) ([Edit](https://github.com/emqx/blog/blob/main/en/202403/how-to-create-an-mqtt-application-in-qt6.md))
-- [How to Use MQTT in Python with Paho Client](https://www.emqx.com/en/blog/how-to-use-mqtt-in-python) ([Edit](https://github.com/emqx/blog/blob/main/en/202403/how-to-use-mqtt-in-python.md))
 - [How to Use MQTT in Golang with Paho Client](https://www.emqx.com/en/blog/how-to-use-mqtt-in-golang) ([Edit](https://github.com/emqx/blog/blob/main/en/202402/how-to-use-mqtt-in-golang.md))
 - [How to Use MQTT in The React Project](https://www.emqx.com/en/blog/how-to-use-mqtt-in-react) ([Edit](https://github.com/emqx/blog/blob/main/en/202402/how-to-use-mqtt-in-react.md))
 - [MicroPython MQTT Tutorial Based on Raspberry Pi](https://www.emqx.com/en/blog/micro-python-mqtt-tutorial-based-on-raspberry-pi) ([Edit](https://github.com/emqx/blog/blob/main/en/202402/micro-python-mqtt-tutorial-based-on-raspberry-pi.md))
