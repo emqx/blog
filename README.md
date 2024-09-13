@@ -90,6 +90,7 @@ Get to know the preferred protocol in IoT from beginner to master.
 
 ## [MQTT Client](https://www.emqx.com/en/blog/category/mqtt-client)
 
+- [Ensuring Reliable IoT Device Connectivity: Best Practices for MQTT Client Auto-Reconnection](https://www.emqx.com/en/blog/mqtt-client-auto-reconnect-best-practices) ([Edit](https://github.com/emqx/blog/blob/main/en/202409/mqtt-client-auto-reconnect-best-practices.md))
 - [Online MQTT Client: Benefits and A Beginner's Guide](https://www.emqx.com/en/blog/online-mqtt-client) ([Edit](https://github.com/emqx/blog/blob/main/en/202404/online-mqtt-client.md))
 - [Mosquitto_pub/sub: Key Features, Limitations & Its Alternative](https://www.emqx.com/en/blog/mosquitto-pub-and-mosquitto-sub) ([Edit](https://github.com/emqx/blog/blob/main/en/202403/mosquitto-pub-and-mosquitto-sub.md))
 - [7 Best MQTT Client Tools Worth Trying in 2024](https://www.emqx.com/en/blog/mqtt-client-tools) ([Edit](https://github.com/emqx/blog/blob/main/en/202401/mqtt-client-tools.md))
