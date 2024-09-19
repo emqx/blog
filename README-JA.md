@@ -123,6 +123,7 @@ The easiest way to start MQTT service. Connect your IoT devices to any cloud wit
 ## [EMQX Enterprise](https://www.emqx.com/ja/blog/category/enterprise)
 The world's most scalable and reliable MQTT messaging platform to connect, move and process your data in business-critical scenarios for the IoT era.
 
+- [EMQX Enterprise 5.8.0リリース：クラスタリンクによるグローバル・クロスリージョン接続の強化](https://www.emqx.com/ja/blog/emqx-enterprise-5-8-0-release-notes) ([Edit](https://github.com/emqx/blog/blob/main/ja/202409/emqx-enterprise-5-8-0-release-notes.md))
 - [MQTTからKafkaへ：メリット、ユースケース、クイックガイド](https://www.emqx.com/ja/blog/mqtt-and-kafka) ([Edit](https://github.com/emqx/blog/blob/main/ja/202404/mqtt-and-kafka.md))
 - [MQTTでファイル転送:ワン・プロトコルで簡単に大容量ペイロードを送信](https://www.emqx.com/ja/blog/file-transfer-over-mqtt) ([Edit](https://github.com/emqx/blog/blob/main/ja/202308/file-transfer-over-mqtt.md))
 - [MQTT Sparkplugのステップ・バイ・ステップ・チュートリアル](https://www.emqx.com/ja/blog/mqtt-sparkplug-in-action-a-step-by-step-tutorial) ([Edit](https://github.com/emqx/blog/blob/main/ja/202308/mqtt-sparkplug-in-action-a-step-by-step-tutorial.md))
