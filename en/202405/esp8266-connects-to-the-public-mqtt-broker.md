@@ -239,6 +239,15 @@ In this tutorial, we explored how to connect an MQTT broker with the ESP8266 Wi-
 Using the MQTT protocol, the ESP8266 can serve as a powerful node in an IoT network, handling data transmission and reception. This not only enhances device interoperability but also provides a broad platform for developing various IoT applications. You can use this foundation to expand more functions, such as integrating sensors, executing more complex commands, or interacting with other services.
 
 
+## Resources
+
+- [MQTT on ESP32: A Beginner's Guide](https://www.emqx.com/en/blog/esp32-connects-to-the-free-public-mqtt-broker)
+- [A Developer's Journey with ESP32 and MQTT Broker](https://www.emqx.com/en/blog/a-developer-s-journey-with-esp32-and-mqtt-broker)
+- [A Guide on Collecting and Reporting Soil Moisture with ESP32 and Sensor through MQTT](https://www.emqx.com/en/blog/hands-on-guide-on-esp32)
+- [Remote control LED with ESP8266 and MQTT](https://www.emqx.com/en/blog/esp8266_mqtt_led)
+- [How to Use MQTT on Raspberry Pi with Paho Python Client](https://www.emqx.com/en/blog/use-mqtt-with-raspberry-pi)
+- [MicroPython MQTT Tutorial Based on Raspberry Pi](https://www.emqx.com/en/blog/micro-python-mqtt-tutorial-based-on-raspberry-pi)
+- [How to Deploy an MQTT Broker on Raspberry Pi](https://www.emqx.com/en/blog/how-to-deploy-an-mqtt-broker-on-raspberry-pi)
 
 <section class="promotion">
     <div>
