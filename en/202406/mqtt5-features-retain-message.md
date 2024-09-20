@@ -111,6 +111,17 @@ This article has provided a comprehensive overview of MQTT Retained Messages, de
 While Retained Messages are a powerful feature, it's important to remember that MQTT offers a wealth of other valuable capabilities. To deepen your understanding and explore more advanced MQTT applications, we encourage you to check out EMQ's [MQTT Guide](https://www.emqx.com/en/mqtt-guide) series. These resources will provide you with the knowledge and tools needed to develop sophisticated MQTT applications and services.
 
 
+## Related Resources
+
+- [Introduction to MQTT Publish-Subscribe Pattern](https://www.emqx.com/en/blog/mqtt-5-introduction-to-publish-subscribe-model)
+- [How to Set Parameters When Establishing an MQTT Connection?](https://www.emqx.com/en/blog/how-to-set-parameters-when-establishing-an-mqtt-connection)
+- [MQTT Topics and Wildcards: A Beginner's Guide](https://www.emqx.com/en/blog/advanced-features-of-mqtt-topics)
+- [MQTT Persistent Session and Clean Session Explained](https://www.emqx.com/en/blog/mqtt-session)
+- [MQTT QoS 0, 1, 2 Explained: A Quickstart Guide](https://www.emqx.com/en/blog/introduction-to-mqtt-qos)
+- [MQTT Will Message (Last Will & Testament) Explained and Example](https://www.emqx.com/en/blog/use-of-mqtt-will-message)
+- [What is the MQTT Keep Alive parameter for?](https://www.emqx.com/en/blog/mqtt-keep-alive)
+
+
 
 <section class="promotion">
     <div>

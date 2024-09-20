@@ -1,4 +1,4 @@
-Establishing an MQTT connection is the first step in communicating using the MQTT protocol. The MQTT protocol provides rich connection parameters to enable developers to create IoT applications that meet different business needs.
+Establishing an MQTT connection is the first step in communicating using the [MQTT protocol](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt). The MQTT protocol provides rich connection parameters to enable developers to create IoT applications that meet different business needs.
 
 This article introduces the role of each connection parameter in MQTT and helps developers take their first steps in using MQTT.
 
@@ -6,7 +6,7 @@ This article introduces the role of each connection parameter in MQTT and helps 
 
 ## Introduction to MQTT Connection
 
-MQTT connections are initiated from the client to the broker. Any application or device running the MQTT client library is an [MQTT client](http://mqttx.app/). The [MQTT Broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker) handles client connection, disconnection, subscribe (or unsubscribe) requests, and routes messages up on receiving publish requests.
+MQTT connections are initiated from the client to the broker. Any application or device running the [MQTT client library](https://www.emqx.com/en/mqtt-client-sdk) is an [MQTT client](http://mqttx.app/). The [MQTT Broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) handles client connection, disconnection, subscribe (or unsubscribe) requests, and routes messages up on receiving publish requests.
 
 After establishing a network connection with the broker, the very first message the client must send is a `CONNECT` packet. The broker must reply with a `CONNACK` to the client as a response, and the MQTT connection is established successfully after the client receives the `CONNACK` packet. If the client does not receive a `CONNACK` packet from the broker in time (usually a configurable timeout from the client side), it may actively close the network connection.
 
@@ -150,7 +150,21 @@ Two-way authentication means that both the server and the client must provide ce
 
 At this point, you should have a good understanding of how MQTT connections are established and the role of each connection parameter.
 
-Next, you can check out [The Easy-to-understand Guide to MQTT Protocol](https://www.emqx.com/en/mqtt-guide) series of articles provided by EMQ to learn about MQTT Topics, Wildcards, Retained Messages, Last-Will, and other features. Explore more advanced applications of MQTT and get started with MQTT application and service development.
+Next, you can check out [MQTT Guide](https://www.emqx.com/en/mqtt-guide) series of articles provided by EMQ to learn about MQTT Topics, Wildcards, Retained Messages, Last-Will, and other features. Explore more advanced applications of MQTT and get started with MQTT application and service development.
+
+
+
+## Related Resources
+
+- [Introduction to MQTT Publish-Subscribe Pattern](https://www.emqx.com/en/blog/mqtt-5-introduction-to-publish-subscribe-model)
+- [MQTT Persistent Session and Clean Session Explained](https://www.emqx.com/en/blog/mqtt-session)
+- [MQTT QoS 0, 1, 2 Explained: A Quickstart Guide](https://www.emqx.com/en/blog/introduction-to-mqtt-qos)
+- [MQTT Topics and Wildcards: A Beginner's Guide](https://www.emqx.com/en/blog/advanced-features-of-mqtt-topics)
+- [MQTT Retained Messages: Beginner's Guide with Example](https://www.emqx.com/en/blog/mqtt5-features-retain-message)
+- [MQTT Will Message (Last Will & Testament) Explained and Example](https://www.emqx.com/en/blog/use-of-mqtt-will-message)
+- [What is the MQTT Keep Alive parameter for?](https://www.emqx.com/en/blog/mqtt-keep-alive)
+
+
 
 
 <section class="promotion">

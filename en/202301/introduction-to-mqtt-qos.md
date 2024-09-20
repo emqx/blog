@@ -1,6 +1,6 @@
 ## What is QoS
 
-In unstable network environments, MQTT devices may struggle to ensure reliable communication using only the TCP transport protocol. To address this issue, MQTT includes a Quality of Service (QoS) mechanism that offers various message interaction options to provide different levels of service, catering to the user's specific requirements for reliable message delivery in different scenarios.
+In unstable network environments, MQTT devices may struggle to ensure reliable communication using only the TCP transport protocol. To address this issue, [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) includes a Quality of Service (QoS) mechanism that offers various message interaction options to provide different levels of service, catering to the user's specific requirements for reliable message delivery in different scenarios.
 
 There are 3 QoS levels in MQTT:
 
@@ -141,6 +141,18 @@ QoS 0 and QoS 1 typically have similar throughput when using EMQX with the same 
 ## Conclusion
 
 By now, you should have a thorough understanding of MQTT QoS. To continue learning about MQTT, you can check out EMQ's [MQTT Getting Started and Advanced](https://www.emqx.com/en/mqtt-guide) series, which cover topics such as wildcards, retained messages, and [will messages](https://www.emqx.com/en/blog/use-of-mqtt-will-message). These resources will help you delve deeper into MQTT and develop advanced MQTT applications and services.
+
+
+
+## Related Resources
+
+- [Introduction to MQTT Publish-Subscribe Pattern](https://www.emqx.com/en/blog/mqtt-5-introduction-to-publish-subscribe-model)
+- [How to Set Parameters When Establishing an MQTT Connection?](https://www.emqx.com/en/blog/how-to-set-parameters-when-establishing-an-mqtt-connection)
+- [MQTT Topics and Wildcards: A Beginner's Guide](https://www.emqx.com/en/blog/advanced-features-of-mqtt-topics)
+- [MQTT Persistent Session and Clean Session Explained](https://www.emqx.com/en/blog/mqtt-session)
+- [MQTT Retained Messages: Beginner's Guide with Example](https://www.emqx.com/en/blog/mqtt5-features-retain-message)
+- [MQTT Will Message (Last Will & Testament) Explained and Example](https://www.emqx.com/en/blog/use-of-mqtt-will-message)
+- [What is the MQTT Keep Alive parameter for?](https://www.emqx.com/en/blog/mqtt-keep-alive)
 
 
 

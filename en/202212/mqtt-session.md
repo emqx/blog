@@ -1,6 +1,6 @@
 ## MQTT Persistent Session
 
-Unstable networks and limited hardware resources are the two major problems that IoT applications need to face. The connection between MQTT clients and brokers can be abnormally disconnected at any time due to network fluctuations and resource constraints. To address the impact of network disconnection on communication, the MQTT protocol provides Persistent Session.
+Unstable networks and limited hardware resources are the two major problems that IoT applications need to face. The connection between MQTT clients and brokers can be abnormally disconnected at any time due to network fluctuations and resource constraints. To address the impact of network disconnection on communication, the [MQTT protocol](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) provides Persistent Session.
 
 [MQTT client](https://www.emqx.com/en/blog/mqtt-client-tools) can set whether to use a Persistent Session when initiating a connection to the server. A Persistent Session will hold some important data to allow the session to continue over multiple network connections. Persistent Session has three main functions as follows:
 
@@ -70,7 +70,7 @@ Then, select the MQTT_V3 connection and click `Connect` button to connect to the
 
 ## Session Improvements in MQTT 5.0
 
-In MQTT 5.0, Clean Session is split into Clean Start and Session Expiry Interval. Clean Start specifies whether to create a new session or try to reuse an existing session when connecting. Session Expiry Interval is used to specify how long the session will expire after the network connection is disconnected.
+In [MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5), Clean Session is split into Clean Start and Session Expiry Interval. Clean Start specifies whether to create a new session or try to reuse an existing session when connecting. Session Expiry Interval is used to specify how long the session will expire after the network connection is disconnected.
 
 Clean Start of `true` means that any existing session must be discarded, and a completely new session is created; `false` indicates that the session associated with the Client ID must be used to resume communication with the client (unless the session does not exist).
 
@@ -99,9 +99,18 @@ The MQTT protocol has designed a Session Present field for CONNACK message since
 
 At this point, we have completed our introduction to MQTT Persistent Session and demonstrated the use of Clean Session through the desktop client. You can refer to this article to receive offline messages and reduce subscription overhead by using MQTT Persistent Session.
 
-Next, you can check out [The Easy-to-understand Guide to MQTT Protocol](https://www.emqx.com/en/mqtt-guide) series of articles provided by EMQ to learn about MQTT Topics, Wildcards, Retained Messages, Will Messages, and other features. Explore more advanced applications of MQTT and get started with MQTT application and service development.
+Next, you can check out [MQTT Guide](https://www.emqx.com/en/mqtt-guide) series of articles provided by EMQ to learn about MQTT Topics, Wildcards, Retained Messages, Will Messages, and other features. Explore more advanced applications of MQTT and get started with MQTT application and service development.
 
 
+## Related Resources
+
+- [Introduction to MQTT Publish-Subscribe Pattern](https://www.emqx.com/en/blog/mqtt-5-introduction-to-publish-subscribe-model)
+- [How to Set Parameters When Establishing an MQTT Connection?](https://www.emqx.com/en/blog/how-to-set-parameters-when-establishing-an-mqtt-connection)
+- [MQTT Topics and Wildcards: A Beginner's Guide](https://www.emqx.com/en/blog/advanced-features-of-mqtt-topics)
+- [MQTT QoS 0, 1, 2 Explained: A Quickstart Guide](https://www.emqx.com/en/blog/introduction-to-mqtt-qos)
+- [MQTT Retained Messages: Beginner's Guide with Example](https://www.emqx.com/en/blog/mqtt5-features-retain-message)
+- [MQTT Will Message (Last Will & Testament) Explained and Example](https://www.emqx.com/en/blog/use-of-mqtt-will-message)
+- [What is the MQTT Keep Alive parameter for?](https://www.emqx.com/en/blog/mqtt-keep-alive)
 
 
 <section class="promotion">

@@ -1,12 +1,12 @@
-## Why we need Keep Alive
+## Why We Need Keep Alive
 
-The MQTT protocol is hosted on top of the TCP protocol, which is connection-oriented, and provides a stable and orderly flow of bytes between two connected parties. However, in some cases, TCP can have half-connection problems. A half-connection is a connection that has been disconnected or not established on one side, while the connection on the other side is still maintained. In this case, the half-connected party may continuously send data, which obviously never reaches the other side. To avoid black holes in communication caused by half-connections, the MQTT protocol provides a Keep Alive mechanism that allows the client and MQTT server to determine whether there is a half-connection problem, and close the corresponding connection.
+The [MQTT protocol](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) is hosted on top of the TCP protocol, which is connection-oriented, and provides a stable and orderly flow of bytes between two connected parties. However, in some cases, TCP can have half-connection problems. A half-connection is a connection that has been disconnected or not established on one side, while the connection on the other side is still maintained. In this case, the half-connected party may continuously send data, which obviously never reaches the other side. To avoid black holes in communication caused by half-connections, the MQTT protocol provides a Keep Alive mechanism that allows the client and MQTT server to determine whether there is a half-connection problem, and close the corresponding connection.
 
-## Mechanism and use of MQTT Keep Alive
+## Mechanism and Use of MQTT Keep Alive
 
 ### At Connection
 
-When an [MQTT client](https://www.emqx.com/en/blog/mqtt-client-tools) creates a connection to the [MQTT broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker), the Keep Alive mechanism can be enabled between the communicating parties by setting the Keep Alive variable header field in the connection request protocol packet to a non-zero value. Keep Alive is an integer from 0 to 65535, representing the maximum time in seconds allowed to elapse between [MQTT packets](https://www.emqx.com/en/blog/introduction-to-mqtt-control-packets) sent by the client.
+When an [MQTT client](https://www.emqx.com/en/blog/mqtt-client-tools) creates a connection to the [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison), the Keep Alive mechanism can be enabled between the communicating parties by setting the Keep Alive variable header field in the connection request protocol packet to a non-zero value. Keep Alive is an integer from 0 to 65535, representing the maximum time in seconds allowed to elapse between [MQTT packets](https://www.emqx.com/en/blog/introduction-to-mqtt-control-packets) sent by the client.
 
 When the broker receives a connection request from a client, it checks the value of the Keep Alive field in the variable header. When there is a value, the broker will enable the Keep Alive mechanism.
 
@@ -44,7 +44,7 @@ As shown in the figure, when this client connects, Keep Alive is set to 5 second
 
 For more details on MQTT Will Message, please check the blog [Use of MQTT Will Message](https://www.emqx.com/en/blog/use-of-mqtt-will-message).
 
-## How to use Keep Alive in EMQX
+## How to Use Keep Alive in EMQX
 
 In [EMQX](https://www.emqx.com/en/products/emqx), you can customize the behavior of the Server Keep Alive mechanism through the configuration file. The relevant field is as follows:
 
@@ -89,7 +89,27 @@ Refer to the [EMQX configuration documentation](https://docs.emqx.com/en/emqx/v4
 
 This article introduces the Keep Alive mechanism in the MQTT protocol and how to use it in EMQX. You can use this feature to ensure the stability of [MQTT connections](https://www.emqx.com/en/blog/reaching-100m-mqtt-connections-with-emqx-5-0) and build more robust IoT applications.
 
-Next, you can check out [The Easy-to-understand Guide to MQTT Protocol](https://www.emqx.com/en/mqtt-guide) series of articles provided by EMQ to learn about MQTT protocol features, explore more advanced applications of MQTT, and get started with MQTT application and service development.
+Next, you can check out [MQTT Guide](https://www.emqx.com/en/mqtt-guide) series of articles provided by EMQ to learn about MQTT protocol features, explore more advanced applications of MQTT, and get started with MQTT application and service development.
+
+
+
+## Related Resources
+
+- [Introduction to MQTT Publish-Subscribe Pattern](https://www.emqx.com/en/blog/mqtt-5-introduction-to-publish-subscribe-model)
+
+- [How to Set Parameters When Establishing an MQTT Connection?](https://www.emqx.com/en/blog/how-to-set-parameters-when-establishing-an-mqtt-connection)
+
+- [MQTT Topics and Wildcards: A Beginner's Guide](https://www.emqx.com/en/blog/advanced-features-of-mqtt-topics)
+
+- [MQTT Persistent Session and Clean Session Explained](https://www.emqx.com/en/blog/mqtt-session)
+
+- [MQTT QoS 0, 1, 2 Explained: A Quickstart Guide](https://www.emqx.com/en/blog/introduction-to-mqtt-qos)
+
+- [MQTT Retained Messages: Beginner's Guide with Example](https://www.emqx.com/en/blog/mqtt5-features-retain-message)
+
+- [MQTT Will Message (Last Will & Testament) Explained and Example](https://www.emqx.com/en/blog/use-of-mqtt-will-message)
+
+  
 
 
 <section class="promotion">
