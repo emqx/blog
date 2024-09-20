@@ -8,8 +8,10 @@
 Get to know the preferred protocol in IoT from beginner to master.
 
 - [MQTT Protocol Explained: Ultimate Guide for IoT Beginners](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) ([Edit](https://github.com/emqx/blog/blob/main/en/202408/the-easiest-guide-to-getting-started-with-mqtt.md))
+- [MQTT Topics and Wildcards: A Beginner's Guide](https://www.emqx.com/en/blog/advanced-features-of-mqtt-topics) ([Edit](https://github.com/emqx/blog/blob/main/en/202407/advanced-features-of-mqtt-topics.md))
 - [Connecting MQTT and REST API: A Comprehensive Tutorial](https://www.emqx.com/en/blog/connecting-mqtt-and-rest-api) ([Edit](https://github.com/emqx/blog/blob/main/en/202407/connecting-mqtt-and-rest-api.md))
 - [MQTT vs HTTP: Which is Better Suited for the Internet of Things (IoT)?](https://www.emqx.com/en/blog/mqtt-vs-http) ([Edit](https://github.com/emqx/blog/blob/main/en/202406/mqtt-vs-http.md))
+- [MQTT Retained Messages: Beginner's Guide with Example](https://www.emqx.com/en/blog/mqtt5-features-retain-message) ([Edit](https://github.com/emqx/blog/blob/main/en/202406/mqtt5-features-retain-message.md))
 - [MQTT vs WebSocket: Key Differences & Applications](https://www.emqx.com/en/blog/mqtt-vs-websocket) ([Edit](https://github.com/emqx/blog/blob/main/en/202405/mqtt-vs-websocket.md))
 - [How to Process JSON, Hex, and Binary Data in MQTT](https://www.emqx.com/en/blog/how-to-process-json-hex-and-binary-data-in-mqtt) ([Edit](https://github.com/emqx/blog/blob/main/en/202405/how-to-process-json-hex-and-binary-data-in-mqtt.md))
 - [Mastering MQTT Analysis with Wireshark: A Beginner's Guide](https://www.emqx.com/en/blog/mastering-mqtt-analysis-with-wireshark) ([Edit](https://github.com/emqx/blog/blob/main/en/202405/mastering-mqtt-analysis-with-wireshark.md))
@@ -35,7 +37,6 @@ Get to know the preferred protocol in IoT from beginner to master.
 - [MQTT Maximum Packet Size Explained and Example | MQTT 5 Features](https://www.emqx.com/en/blog/best-practices-of-maximum-packet-size-in-mqtt) ([Edit](https://github.com/emqx/blog/blob/main/en/202307/best-practices-of-maximum-packet-size-in-mqtt.md))
 - [MQTT Subscription Identifier Explained and Example | MQTT 5 Features](https://www.emqx.com/en/blog/subscription-identifier-and-subscription-options) ([Edit](https://github.com/emqx/blog/blob/main/en/202306/subscription-identifier-and-subscription-options.md))
 - [What Is MQTT and Why Is It the Best Protocol for IoT?](https://www.emqx.com/en/blog/what-is-the-mqtt-protocol) ([Edit](https://github.com/emqx/blog/blob/main/en/202306/what-is-the-mqtt-protocol.md))
-- [MQTT Topics and Wildcards: A Beginner's Guide](https://www.emqx.com/en/blog/advanced-features-of-mqtt-topics) ([Edit](https://github.com/emqx/blog/blob/main/en/202306/advanced-features-of-mqtt-topics.md))
 - [MQTT Reason Code Introduction and Quick Reference](https://www.emqx.com/en/blog/mqtt5-new-features-reason-code-and-ack) ([Edit](https://github.com/emqx/blog/blob/main/en/202306/mqtt5-new-features-reason-code-and-ack.md))
 - [MQTT  Subscription Options Explained and Example  | MQTT 5 Features](https://www.emqx.com/en/blog/an-introduction-to-subscription-options-in-mqtt) ([Edit](https://github.com/emqx/blog/blob/main/en/202306/an-introduction-to-subscription-options-in-mqtt.md))
 - [Shaping the Future of IoT: 7 MQTT Technology Trends in 2023](https://www.emqx.com/en/blog/7-mqtt-trends-in-2023) ([Edit](https://github.com/emqx/blog/blob/main/en/202303/7-mqtt-trends-in-2023.md))
@@ -43,7 +44,6 @@ Get to know the preferred protocol in IoT from beginner to master.
 - [MQTT QoS 0, 1, 2 Explained: A Quickstart Guide](https://www.emqx.com/en/blog/introduction-to-mqtt-qos) ([Edit](https://github.com/emqx/blog/blob/main/en/202301/introduction-to-mqtt-qos.md))
 - [MQTT Persistent Session and Clean Session Explained](https://www.emqx.com/en/blog/mqtt-session) ([Edit](https://github.com/emqx/blog/blob/main/en/202212/mqtt-session.md))
 - [How to Set Parameters When Establishing an MQTT Connection?](https://www.emqx.com/en/blog/how-to-set-parameters-when-establishing-an-mqtt-connection) ([Edit](https://github.com/emqx/blog/blob/main/en/202211/how-to-set-parameters-when-establishing-an-mqtt-connection.md))
-- [The Beginner's Guide to MQTT Retained Messages](https://www.emqx.com/en/blog/mqtt5-features-retain-message) ([Edit](https://github.com/emqx/blog/blob/main/en/202211/mqtt5-features-retain-message.md))
 - [What is the MQTT Keep Alive parameter for?](https://www.emqx.com/en/blog/mqtt-keep-alive) ([Edit](https://github.com/emqx/blog/blob/main/en/202208/mqtt-keep-alive.md))
 - [MQTT QoS design: Quality assurance for the IoV platform messaging](https://www.emqx.com/en/blog/mqtt-qos-design-for-internet-of-vehicles) ([Edit](https://github.com/emqx/blog/blob/main/en/202204/mqtt-qos-design-for-internet-of-vehicles.md))
 - [MQTT topic design in TSP platform scenario](https://www.emqx.com/en/blog/mqtt-topic-design-for-internet-of-vehicles) ([Edit](https://github.com/emqx/blog/blob/main/en/202204/mqtt-topic-design-for-internet-of-vehicles.md))
@@ -113,7 +113,9 @@ Get to know the preferred protocol in IoT from beginner to master.
 Best practice of MQTT in various clients.
 
 - [A Guide on Collecting and Reporting Soil Moisture with ESP32 and Sensor through MQTT](https://www.emqx.com/en/blog/hands-on-guide-on-esp32) ([Edit](https://github.com/emqx/blog/blob/main/en/202408/hands-on-guide-on-esp32.md))
+- [MQTT on ESP32: A Beginner's Guide](https://www.emqx.com/en/blog/esp32-connects-to-the-free-public-mqtt-broker) ([Edit](https://github.com/emqx/blog/blob/main/en/202408/esp32-connects-to-the-free-public-mqtt-broker.md))
 - [MQTT in Python with Paho Client: Beginner's Guide 2024](https://www.emqx.com/en/blog/how-to-use-mqtt-in-python) ([Edit](https://github.com/emqx/blog/blob/main/en/202408/how-to-use-mqtt-in-python.md))
+- [JavaScript MQTT Client: A Beginner's Guide to MQTT.js](https://www.emqx.com/en/blog/mqtt-js-tutorial) ([Edit](https://github.com/emqx/blog/blob/main/en/202406/mqtt-js-tutorial.md))
 - [Using MQTT on ESP8266: A Quick Start Guide](https://www.emqx.com/en/blog/esp8266-connects-to-the-public-mqtt-broker) ([Edit](https://github.com/emqx/blog/blob/main/en/202405/esp8266-connects-to-the-public-mqtt-broker.md))
 - [How to Use MQTT in the Flutter Project](https://www.emqx.com/en/blog/using-mqtt-in-flutter) ([Edit](https://github.com/emqx/blog/blob/main/en/202405/using-mqtt-in-flutter.md))
 - [How to Use MQTT in Rust with Rumqttc Client](https://www.emqx.com/en/blog/how-to-use-mqtt-in-rust) ([Edit](https://github.com/emqx/blog/blob/main/en/202404/how-to-use-mqtt-in-rust.md))
@@ -128,9 +130,7 @@ Best practice of MQTT in various clients.
 - [Using MQTT in Unity with M2MqttUnity Library: A Step-by-Step Guide](https://www.emqx.com/en/blog/using-mqtt-in-unity-with-m2mqttunity-library-a-step-by-step-guide) ([Edit](https://github.com/emqx/blog/blob/main/en/202308/using-mqtt-in-unity-with-m2mqttunity-library-a-step-by-step-guide.md))
 - [Connecting to Serverless MQTT Broker in PHP](https://www.emqx.com/en/blog/connecting-to-serverless-mqtt-broker-in-php) ([Edit](https://github.com/emqx/blog/blob/main/en/202307/connecting-to-serverless-mqtt-broker-in-php.md))
 - [A Quickstart Guide to Using MQTT over WebSocket](https://www.emqx.com/en/blog/connect-to-mqtt-broker-with-websocket) ([Edit](https://github.com/emqx/blog/blob/main/en/202306/connect-to-mqtt-broker-with-websocket.md))
-- [MQTT on ESP32: A Beginner's Guide](https://www.emqx.com/en/blog/esp32-connects-to-the-free-public-mqtt-broker) ([Edit](https://github.com/emqx/blog/blob/main/en/202306/esp32-connects-to-the-free-public-mqtt-broker.md))
 - [How to Use MQTT on Raspberry Pi with Paho Python Client](https://www.emqx.com/en/blog/use-mqtt-with-raspberry-pi) ([Edit](https://github.com/emqx/blog/blob/main/en/202306/use-mqtt-with-raspberry-pi.md))
-- [JavaScript MQTT Client: A Beginner's Guide to MQTT.js](https://www.emqx.com/en/blog/mqtt-js-tutorial) ([Edit](https://github.com/emqx/blog/blob/main/en/202305/mqtt-js-tutorial.md))
 - [MQTT with Node.js: A Beginner's Guide with Examples & FAQs](https://www.emqx.com/en/blog/how-to-use-mqtt-in-nodejs) ([Edit](https://github.com/emqx/blog/blob/main/en/202305/how-to-use-mqtt-in-nodejs.md))
 - [How to Use MQTT in Dart](https://www.emqx.com/en/blog/how-to-use-mqtt-in-dart) ([Edit](https://github.com/emqx/blog/blob/main/en/202211/how-to-use-mqtt-in-dart.md))
 - [How to Use MQTT in The Django Project](https://www.emqx.com/en/blog/how-to-use-mqtt-in-django) ([Edit](https://github.com/emqx/blog/blob/main/en/202210/how-to-use-mqtt-in-django.md))

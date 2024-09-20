@@ -1,8 +1,8 @@
 ## What is Retained Messages?
 
-If you know MQTT even for just a little bit, you may already know that for each MQTT message, there is a topic name, and there is the payload. If you dig a little deeper, you’ll find that there are also message properties and flags. One of the flags is called `Retain`, which is what this post is about.
+If you know [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) even for just a little bit, you may already know that for each MQTT message, there is a topic name, and there is the payload. If you dig a little deeper, you’ll find that there are also message properties and flags. One of the flags is called `Retain`, which is what this post is about.
 
-Upon receiving a message with the `Retain` flag set, the MQTT broker must store the message for the topic to which the message was published, and it must store only the latest message. So the subscribers which are interested in this topic can go offline, and reconnect at any time to receive the latest message instead of having to wait for the next message from the publisher after the subscription.
+Upon receiving a message with the `Retain` flag set, the [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) must store the message for the topic to which the message was published, and it must store only the latest message. So the subscribers which are interested in this topic can go offline, and reconnect at any time to receive the latest message instead of having to wait for the next message from the publisher after the subscription.
 
 As illustrated below, when a client subscribes to a topic, if there is a retained message for this topic, the message is sent to the client immediately.
 
@@ -24,16 +24,15 @@ New subscribers can get the latest data immediately without waiting for unpredic
 
 For MQTT client SDKs, there are typically APIs or parameters to set the `Retain` flag. For example the [paho MQTT Java client library](https://github.com/eclipse/paho.mqtt.java/blob/6f35dcb785597a6fd49091efe2dba47513939420/org.eclipse.paho.mqttv5.client/src/main/java/org/eclipse/paho/mqttv5/common/MqttMessage.java#L88), and the the Erlang MQTT client [emqtt](https://github.com/emqx/emqtt/blob/d5c630bf5c6e0d530be95e7255a089fefa0fe385/src/emqtt.erl#L428-L433).
 
-For MQTT client applications, either with a command line or graphic interface, you should be able to find where to set the `Retain` flag.
+For [MQTT client tools](https://www.emqx.com/en/blog/mqtt-client-tools), either with a command line or graphic interface, you should be able to find where to set the `Retain` flag.
 
-In this post, we are not going to dig into the programming SDKs.
-We will try to demonstrate MQTT retained messages using the [open-source cross-platform MQTT 5.0 desktop client - MQTTX](https://mqttx.app/).
+In this post, we are not going to dig into the programming SDKs. We will try to demonstrate MQTT retained messages using the [open-source cross-platform MQTT 5.0 desktop client - MQTTX](https://mqttx.app/).
 
 If you start the MQTTX application for the first time, you will see the main window below. Click the `New Connection` button to create an MQTT connection.
 
 ![Create an MQTT connection](https://assets.emqx.com/images/c3c89247952538c127839de49a398aec.png)
 
-We only need to fill in a connection `Name` and leave the other parameters as default. The `Host` will default to the [public MQTT Broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker) provided by [EMQX Cloud](https://www.emqx.com/en/cloud). Finally, click the `Connect` button in the upper right corner to create an MQTT connection.
+We only need to fill in a connection `Name` and leave the other parameters as default. The `Host` will default to the [public MQTT Broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker) provided by EMQ. Finally, click the `Connect` button in the upper right corner to create an MQTT connection.
 
 ![Create an MQTT connection](https://assets.emqx.com/images/199e08891e0a7ca0ad78efa8f986dc21.png)
 
@@ -62,7 +61,7 @@ Finally, we will see that the subscription successfully receives the second reta
 
 ## Q & A about MQTT Retained Messages
 
-### How do I know a message is a retained message?
+### How do I know an MQTT message is a retained message?
 
 When a message is originated from the `Retain` storage in the broker, the `Retain` flag is set, so the subscriber knows that this is not a new message after its subscription.
 
@@ -80,19 +79,19 @@ Retained messages are not part of session states, meaning retained messages are 
 
 - When a client publishes a retained message with an empty payload to a topic, the broker deletes the retained message under that topic.
 - Delete on the MQTT Broker, e.g., the EMQX MQTT Broker provides the ability to delete retained messages from management API or from the Dashboard.
-- MQTT 5.0 protocol added Message Expiry Interval property, which can be used to set the expiration time of the message when publishing. The message will be automatically deleted after the expiration time, regardless of whether it is a retained message.
+- MQTT 5.0 protocol added [Message Expiry Interval](https://www.emqx.com/en/blog/mqtt-message-expiry-interval) property, which can be used to set the expiration time of the message when publishing. The message will be automatically deleted after the expiration time, regardless of whether it is a retained message.
 
 ## MQTT Retained Messages in EMQX
 
-[EMQX](https://github.com/emqx/emqx) is the most popular MQTT Broker, with over 10 million downloads worldwide. Recently, [EMQX released version 5.0](https://www.emqx.com/en/blog/emqx-v-5-0-released), which achieved [100 million MQTT connections + 1 million message throughput](https://www.emqx.com/en/blog/how-emqx-5-0-achieves-100-million-mqtt-connections) per second through a 23-node cluster, making EMQX 5.0 the most scalable MQTT Broker worldwide so far.
+EMQX is the world's most scalable [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) that supports advanced features such as [MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5), [MQTT-SN](https://www.emqx.com/en/blog/connecting-mqtt-sn-devices-using-emqx), and [MQTT over QUIC](https://www.emqx.com/en/blog/mqtt-over-quic). It supports masterless clustering for high availability and horizontal scalability.
 
-EMQX 5.0 supports viewing and setting retained messages in the built-in Dashboard. You may use the following command to install EMQX 5.0 open-source version for trial.
+EMQX supports viewing and setting retained messages in the built-in Dashboard. You may use the following command to install EMQX open-source version for trial.
 
 ```
 docker run -d --name emqx -p 1883:1883 -p 8083:8083 -p 8084:8084 -p 8883:8883 -p 18083:18083 emqx/emqx:latest
 ```
 
-After successful installation, use your browser to visit `http://127.0.0.1:18083/` to experience the new EMQX 5.0 Dashboard.
+After successful installation, use your browser to visit `http://127.0.0.1:18083/` to experience the new EMQX Dashboard.
 
 > The default Username is admin, and the Password is public.
 
@@ -103,10 +102,19 @@ After successful login, you can click the `Configuration->MQTT` menu to view the
 Click on the `Settings` menu under `Retainer`, and you will see that EMQX supports setting the Storage (memory or disk), the Max Retained Messages, the Expire, and other parameters in the Dashboard.
 
 ![MQTT Retained Messages Setting](https://assets.emqx.com/images/6b916b14536358e43a58eaac02a816cd.png)
- 
+
 
 ## Summary
 
-This article introduces and demonstrates the use of MQTT Retained Messages. Referring to this article, readers can use MQTT Retained Messages to get data immediately after subscription.
+This article has provided a comprehensive overview of MQTT Retained Messages, demonstrating their practical applications and benefits. By leveraging Retained Messages, users can significantly enhance their MQTT communication, enabling immediate data retrieval upon subscription.
 
-In addition, the MQTT protocol has many more valuable features. Check out EMQ's [MQTT Getting Started and Advanced](https://www.emqx.com/en/mqtt-guide) series of articles for a deeper understanding, to explore more advanced applications of MQTT, and to start developing MQTT applications and services.
+While Retained Messages are a powerful feature, it's important to remember that MQTT offers a wealth of other valuable capabilities. To deepen your understanding and explore more advanced MQTT applications, we encourage you to check out EMQ's [MQTT Guide](https://www.emqx.com/en/mqtt-guide) series. These resources will provide you with the knowledge and tools needed to develop sophisticated MQTT applications and services.
+
+
+
+<section class="promotion">
+    <div>
+        Talk to an Expert
+    </div>
+    <a href="https://www.emqx.com/en/contact?product=solutions" class="button is-gradient">Contact Us →</a>
+</section>

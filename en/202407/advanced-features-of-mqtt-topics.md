@@ -1,3 +1,15 @@
+## Introduction
+
+At the heart of MQTT's flexibility and efficiency lie two key concepts: Topics and Wildcards. These features form the backbone of MQTT's publish-subscribe model, enabling seamless and targeted communication in complex IoT ecosystems.
+
+MQTT Topics serve as the addressing mechanism for messages, allowing devices and applications to organize and filter the flow of information. They provide a hierarchical structure that can represent various aspects of your IoT system, from device locations to sensor types and data categories. Understanding how to effectively design and utilize Topics is crucial for creating scalable and manageable IoT solutions.
+
+Complementing Topics are MQTT Wildcards, powerful tools that enhance the protocol's versatility. Wildcards allow subscribers to receive messages from multiple topics simultaneously, simplifying client-side logic and reducing network overhead. By mastering Wildcards, developers can create more dynamic and responsive IoT applications, capable of adapting to changing data needs without constant reconfiguration.
+
+In this comprehensive guide, we'll delve into the intricacies of MQTT Topics and Wildcards, exploring their structure, best practices, and advanced features. We'll examine special cases like topics beginning with '$', discuss how to apply these concepts in various real-world scenarios, and address frequently asked questions to deepen your understanding of these essential MQTT components.
+
+## MQTT Topics
+
 MQTT topic is a string used in the [MQTT protocol](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) to identify and route messages. It is a key element in communication between MQTT publishers and subscribers. In the [MQTT publish/subscribe model](https://www.emqx.com/en/blog/mqtt-5-introduction-to-publish-subscribe-model), publishers send messages to specific topics, while subscribers can subscribe to those topics to receive the messages.
 
 In comparison to topics in other messaging systems, for example Kafka and Pulsar, MQTT topics are not to be created in advance. **The client will create the topic automatically when subscribing or publishing, and does not need to delete the topic.**
@@ -5,8 +17,6 @@ In comparison to topics in other messaging systems, for example Kafka and Pulsar
 The following is a simple MQTT publish and subscribe flow. If APP 1 subscribes to the `sensor/2/temperature` topic, it will receive messages from Sensor 2 publishing to this topic.
 
 ![MQTT Publish Subscribe](https://assets.emqx.com/images/0c35bfdb730f1d29b7f1b7a249c62f8b.png?imageMogr2/thumbnail/1520x)
-
-## Topics
 
 A topic is a UTF-8 encoded string that is the basis for message routing in the MQTT protocol. A topic is typically leveled and separated with a slash `/` between the levels. This is similar to URL paths, for example:
 
@@ -61,7 +71,7 @@ sensor/bedroom/1/temperature
 "sensor/#/temperature" is invalid (# must be the last level)
 ```
 
-## Topics Beginning with $
+## MQTT Topics Beginning with $
 
 ### System Topics
 
@@ -93,7 +103,7 @@ In addition, EMQX also supports the use of the shared subscription prefix `$queu
 
 For more details about shared subscriptions, please refer to [EMQX Shared Subscriptions](https://docs.emqx.com/en/emqx/v5.0/advanced/shared-subscriptions.html) documentation.
 
-## Topics in Different Scenarios
+## MQTT Topics in Different Scenarios
 
 ### Smart Home
 

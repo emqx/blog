@@ -1,15 +1,28 @@
 ## Introduction
 
-[MQTT.js](https://github.com/mqttjs/MQTT.js) is a client library for the [MQTT protocol](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt), written in JavaScript for both Node.js and the browser. It is currently the most widely used [MQTT client library](https://www.emqx.com/en/mqtt-client-sdk) in the JavaScript ecosystem.
+In the rapidly evolving world of Internet of Things (IoT) and real-time communication, MQTT (Message Queuing Telemetry Transport) has emerged as a crucial protocol. For JavaScript developers looking to harness the power of MQTT in their applications, [**MQTT.js**](https://github.com/mqttjs/MQTT.js) stands out as an essential tool.
 
-> MQTT is a lightweight IoT messaging protocol based on the publish/subscribe model. It can provide real-time and reliable messaging services for networked devices with very little code and bandwidth. It is widely used in industries such as IoT, mobile Internet, smart hardware, Internet of Vehicles, and power energy.
+**MQTT.js** is a robust client library for the [**MQTT protocol**](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt), meticulously crafted in JavaScript to cater to both Node.js and browser environments. Its versatility and efficiency have made it the most widely adopted [**MQTT client library**](https://www.emqx.com/en/mqtt-client-sdk) within the JavaScript ecosystem, empowering developers to create sophisticated IoT and messaging applications with ease.
 
-Due to the single-thread feature of JavaScript, MQTT.js is a fully asynchronous MQTT client. It supports MQTT/TCP, MQTT/TLS, and MQTT/WebSocket. The degree of support in different operating environments is as follows:
+Key features of MQTT.js include:
 
-- Browser: [MQTT over WebSocket](https://www.emqx.com/en/blog/connect-to-mqtt-broker-with-websocket)
-- Node.js: MQTT and MQTT over WebSocket
+- Asynchronous Operation: Leveraging JavaScript's single-threaded nature, MQTT.js operates as a fully asynchronous MQTT client, ensuring optimal performance and responsiveness in your applications.
 
-> Note: Other APIs are the same in different environments except for a few different connection parameters. For MQTT.js v3.0.0 and later versions, MQTT 5.0 is fully supported.
+- Broad Protocol Support: The library seamlessly supports MQTT/TCP, MQTT/TLS, and MQTT/WebSocket, providing flexibility for various network configurations and security requirements.
+
+- Cross-Platform Compatibility: MQTT.js offers tailored support for different operating environments:
+
+  - Browser: Enables [**MQTT over WebSocket**](https://www.emqx.com/en/blog/connect-to-mqtt-broker-with-websocket), allowing real-time communication in web applications.
+
+  - Node.js: Supports both MQTT and MQTT over WebSocket, catering to server-side applications and IoT devices.
+
+This guide aims to introduce beginners to the world of MQTT.js, exploring its setup, basic usage, and practical applications. We'll cover topics such as:
+
+- Setting up MQTT.js in your project
+- Connecting to an MQTT broker
+- Publishing and subscribing to topics
+- Handling messages and events
+- Best practices for error handling and security
 
 ## Installation
 
@@ -63,9 +76,7 @@ Before proceeding, ensure that you have an [MQTT broker](https://www.emqx.com/en
 
 - **Fully managed cloud service**
 
-  The fully managed cloud service is the easiest way to start an MQTT service. With [EMQX Cloud](https://www.emqx.com/en/cloud), you can get started in just a few minutes and run your MQTT service in 20+ regions across AWS, Google Cloud, and Microsoft Azure, ensuring global availability and fast connectivity.
-
-  The latest edition, [EMQX Cloud Serverless](https://www.emqx.com/en/cloud/serverless-mqtt), provides a complimentary offering of 1M session minutes/month for developers to easily start their MQTT deployment within seconds.
+  The fully managed cloud service is the easiest way to start an MQTT service. With [EMQX Serverless](https://www.emqx.com/en/cloud/serverless-mqtt), you can get started in just a few minutes and run your MQTT service in 20+ regions across AWS, Google Cloud, and Microsoft Azure, ensuring global availability and fast connectivity. It provides a complimentary offering of 1M session minutes/month for developers to easily start their MQTT deployment within seconds.
 
 - **Free public MQTT broker**
 
@@ -107,6 +118,7 @@ For more information, please check out: [Free Public MQTT Broker](https://www.em
     <a href="https://www.emqx.com/en/resources/a-practical-guide-to-mqtt-broker-selection?utm_campaign=embedded-a-practical-guide-to-mqtt-broker-selection&from=blog-mqtt-js-tutorial" class="button is-gradient">Get the eBook →</a>
   </div>
 </section>
+
 
 ## Simple MQTT.js Example
 
@@ -510,7 +522,7 @@ nonSYSMessage$.pipe(bufferTime(500)).subscribe((messages: MessageModel[]) => {
 
 ## Summary
 
-This article has briefly introduced the usage functions of some common APIs of MQTT.js. To learn about MQTT topics, wildcards, retained messages, last-will, and other features, check out the [MQTT Guide 2023: Beginner to Advanced](https://www.emqx.com/en/mqtt-guide) series of articles provided by EMQ. Explore more advanced applications of MQTT and get started with MQTT application and service development.
+This article has briefly introduced the usage functions of some common APIs of MQTT.js. To learn about [MQTT topics](https://www.emqx.com/en/blog/advanced-features-of-mqtt-topics), wildcards, retained messages, last-will, and other features, check out the [MQTT Guide 2024: Beginner to Advanced](https://www.emqx.com/en/mqtt-guide) series of articles provided by EMQ. Explore more advanced applications of MQTT and get started with MQTT application and service development.
 
 For specific use in actual projects, please refer to the following links.
 
@@ -520,13 +532,14 @@ For specific use in actual projects, please refer to the following links.
 - [How to Use MQTT in Electron](https://www.emqx.com/en/blog/how-to-use-mqtt-in-electron)
 - [How to Use MQTT in Node.js](https://www.emqx.com/en/blog/how-to-use-mqtt-in-nodejs)
 - [A Quickstart Guide to Using MQTT over WebSocket](https://www.emqx.com/en/blog/connect-to-mqtt-broker-with-websocket)
+- [MQTT vs WebSocket: Key Differences & Applications](https://www.emqx.com/en/blog/mqtt-vs-websocket)
 
 
 
 <section class="promotion">
     <div>
-        Try EMQX Cloud for Free
-        <div class="is-size-14 is-text-normal has-text-weight-normal">A fully managed MQTT service for IoT</div>
+        Try EMQX Serverless for Free
+        <div class="is-size-14 is-text-normal has-text-weight-normal">Forever free under 1M session minutes/month</div>
     </div>
     <a href="https://accounts.emqx.com/signup?continue=https://cloud-intl.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">Get Started →</a>
 </section>
