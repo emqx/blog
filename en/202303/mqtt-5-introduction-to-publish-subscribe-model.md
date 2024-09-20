@@ -4,7 +4,7 @@ The Publish-subscribe pattern is a messaging pattern that decouples the clients 
 
 The essence of MQTT's Publish-Subscribe pattern is that a middleman role called a Broker is responsible for routing and distributing all messages. Publishers send messages with topics to the Broker, and subscribers subscribe to topics from the Broker to receive messages of interest.
 
-In MQTT, topics and subscriptions cannot be pre-registered or created. As a result, the broker cannot predict how many subscribers will be interested in a particular topic. When a publisher sends a message, the broker will only forward it to the subscribers that are currently subscribed to the topic. **If there are no current subscribers for the topic, the message will be discarded.**
+In [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt), topics and subscriptions cannot be pre-registered or created. As a result, the broker cannot predict how many subscribers will be interested in a particular topic. When a publisher sends a message, the broker will only forward it to the subscribers that are currently subscribed to the topic. **If there are no current subscribers for the topic, the message will be discarded.**
 
 The MQTT Publish-Subscribe pattern has four main components: Publisher, Subscriber, Broker, and Topic.
 
@@ -68,7 +68,17 @@ The MQTT publish/subscribe mechanism can easily meet our communication needs of 
 
 So far, you should have a good understanding of the MQTT publish-subscribe pattern. Next, you can check [the blog](https://www.emqx.com/en/blog/how-to-set-parameters-when-establishing-an-mqtt-connection) to learn how to create an MQTT connection.
 
-You can also visit the [MQTT Getting Started and Advanced](https://www.emqx.com/en/mqtt-guide) series of articles provided by EMQ to learn about MQTT topics and related concepts such as wildcards, retained messages, and [will messages](https://www.emqx.com/en/blog/use-of-mqtt-will-message), and to explore more advanced applications of MQTT. These resources will help you get started with MQTT applications and services development.
+You can also visit the [MQTT Guide](https://www.emqx.com/en/mqtt-guide) series of articles provided by EMQ to learn about MQTT topics and related concepts such as wildcards, retained messages, and [will messages](https://www.emqx.com/en/blog/use-of-mqtt-will-message), and to explore more advanced applications of MQTT. These resources will help you get started with MQTT applications and services development.
+
+## Related Resources
+
+- [How to Set Parameters When Establishing an MQTT Connection?](https://www.emqx.com/en/blog/how-to-set-parameters-when-establishing-an-mqtt-connection)
+- [MQTT Persistent Session and Clean Session Explained](https://www.emqx.com/en/blog/mqtt-session)
+- [MQTT QoS 0, 1, 2 Explained: A Quickstart Guide](https://www.emqx.com/en/blog/introduction-to-mqtt-qos)
+- [MQTT Topics and Wildcards: A Beginner's Guide](https://www.emqx.com/en/blog/advanced-features-of-mqtt-topics)
+- [MQTT Retained Messages: Beginner's Guide with Example](https://www.emqx.com/en/blog/mqtt5-features-retain-message)
+- [MQTT Will Message (Last Will & Testament) Explained and Example](https://www.emqx.com/en/blog/use-of-mqtt-will-message)
+- [What is the MQTT Keep Alive parameter for?](https://www.emqx.com/en/blog/mqtt-keep-alive)
 
 
 
