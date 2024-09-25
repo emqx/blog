@@ -1,15 +1,30 @@
 ## 简介
 
-[MQTT.js](https://github.com/mqttjs/MQTT.js) 是一个开源的 [MQTT 协议](https://www.emqx.com/zh/mqtt-guide)的客户端库，使用 JavaScript 编写，主要用于 Node.js 和 浏览器环境中。是目前 JavaScript 生态中使用最为广泛的 [MQTT 客户端库](https://www.emqx.com/zh/blog/introduction-to-the-commonly-used-mqtt-client-library)。
+在物联网（IoT）和实时通信领域快速发展中，MQTT 协议已成为一个至关重要的组成部分。对于那些希望在应用程序中充分利用 MQTT 功能的 JavaScript 开发者来说，[**MQTT.js**](https://github.com/mqttjs/MQTT.js) 无疑是一个不可或缺的利器。
 
-> MQTT 是一种基于发布/订阅模式的轻量级物联网消息传输协议，可以用极少的代码和带宽为联网设备提供实时可靠的消息服务，它广泛应用于物联网、移动互联网、智能硬件、[车联网](https://www.emqx.com/zh/blog/category/internet-of-vehicles)、电力能源等行业。
+**MQTT.js** 是一个为 [**MQTT 协议**](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 精心打造的 JavaScript 客户端库，同时适用于 Node.js 和浏览器环境。凭借其强大的功能和高效性，MQTT.js 已成为 JavaScript 生态系统中最受欢迎的 [**MQTT 客户端库**](https://www.emqx.com/zh/mqtt-client-sdk)之一，让开发者能够轻松构建复杂的物联网和消息应用。
 
-由于 JavaScript 单线程特性，MQTT.js 是全异步 MQTT 客户端，MQTT.js 支持 MQTT/TCP、MQTT/TLS、MQTT/WebSocket，在不同运行环境支持的度如下：
+MQTT.js 的主要特点如下：
 
-- 浏览器环境：MQTT over WebSocket（包括微信小程序、支付宝小程序等定制浏览器环境）
-- Node.js 环境：MQTT、MQTT over WebSocket
+- 异步操作：充分利用 JavaScript 的单线程特性，MQTT.js 作为一个完全异步的 MQTT 客户端，能够在应用程序中实现最佳性能和响应速度。
 
-> 注意：不同环境里除了少部分连接参数不同，其他 API 均是相同的。且在 MQTT.js v3.0.0 及以上版本后，已经完整支持到 MQTT 5.0。
+- 全面的协议支持：该库无缝支持 MQTT/TCP、MQTT/TLS 和 MQTT/WebSocket，为各种网络配置和安全需求提供了灵活的解决方案。
+
+- 跨平台兼容：MQTT.js 为不同的运行环境提供了专门的支持：
+
+  - 浏览器：支持 [**MQTT over WebSocket**](https://www.emqx.com/en/blog/connect-to-mqtt-broker-with-websocket)，实现 Web 应用程序中的实时通信。
+
+  - Node.js：支持 MQTT 和 MQTT over WebSocket，适用于服务器端应用和物联网设备。
+
+本指南将带您深入了解 MQTT.js 的世界，探讨其配置、基本用法和实际应用。我们将涵盖以下内容：
+
+- MQTT.js 的项目配置
+- 连接 MQTT 服务器
+- 主题的发布与订阅
+- 消息和事件处理
+- 错误处理和安全最佳实践
+
+> 注意：MQTT.js v5.0.0（2023年7月发布）引入了重大变更，包括使用 TypeScript 重写和支持 Node.js v18/v20，而 v4.0.0（2020年4月发布）支持 Node.js v12/v14。
 
 ## 安装
 
@@ -304,6 +319,260 @@ Client 除监听事件外，也内置一些方法，用来进行发布订阅的�
   ```javascript
   client.end()
   ```
+
+#### MQTT 5.0
+
+MQTT.js 全面支持 MQTT 5.0 协议，提供了多项新功能和改进。本节将介绍如何在 MQTT.js 中使用 MQTT 5.0 的主要特性。
+
+- 会话过期间隔：允许客户端指定会话的保持时间。
+
+    ```javascript
+    const client = mqtt.connect('mqtt://broker.emqx.io', {
+      protocolVersion: 5,
+      clean: true,
+      properties: {
+        sessionExpiryInterval: 300 // 300秒
+      }
+    })
+    ```
+
+- 主题别名：使用简短的整数别名替代长主题字符串，减少网络流量。
+
+    ```javascript
+    client.publish('long/topic/name', 'message', {
+      properties: {
+        topicAlias: 1
+      }
+    })
+
+    // 后续发布可直接使用别名
+    client.publish('', 'another message', {
+      properties: {
+        topicAlias: 1
+      }
+    })
+    ```
+
+- 用户属性：允许在消息中添加自定义键值对。
+
+    ```javascript
+    client.publish('topic', 'message', {
+      properties: {
+        userProperties: {
+          'custom-key': 'custom-value'
+        }
+      }
+    })
+    ```
+
+- 订阅标识符：用于识别特定的订阅。
+
+    ```javascript
+    client.subscribe('topic', {
+      properties: {
+        subscriptionIdentifier: 123
+      }
+    })
+
+    client.on('message', (topic, message, packet) => {
+      if (packet.properties.subscriptionIdentifier === 123) {
+        console.log('收到来自订阅 123 的消息')
+      }
+    })
+    ```
+
+- 请求响应：实现请求-响应模式。
+
+    ```javascript
+    client.publish('request/topic', 'request', {
+      properties: {
+        responseTopic: 'response/topic',
+        correlationData: Buffer.from('request-1')
+      }
+    })
+
+    client.subscribe('response/topic')
+    client.on('message', (topic, message, packet) => {
+      if (packet.properties.correlationData) {
+        console.log('收到响应，对应请求：', packet.properties.correlationData.toString())
+      }
+    })
+    ```
+
+- 消息过期间隔：为消息设置有效期。
+
+    ```javascript
+    client.publish('topic', 'message', {
+      properties: {
+        messageExpiryInterval: 60 // 60秒
+      }
+    })
+    ```
+
+- 遗嘱延迟间隔：延迟发送遗嘱消息。
+
+    ```javascript
+    const client = mqtt.connect('mqtt://broker.emqx.io', {
+      will: {
+        topic: 'will/topic',
+        payload: 'client gone offline',
+        properties: {
+          willDelayInterval: 30 // 30秒
+        }
+      }
+    })
+    ```
+
+- 接收最大值：控制未确认的 PUBLISH 报文的最大数量。
+
+    ```javascript
+    const client = mqtt.connect('mqtt://broker.emqx.io', {
+      properties: {
+        receiveMaximum: 100
+      }
+    })
+    ```
+
+- 最大报文大小：指定客户端能接受的最大报文大小。
+
+    ```javascript
+    const client = mqtt.connect('mqtt://broker.emqx.io', {
+      properties: {
+        maximumPacketSize: 100 * 1024 // 100 KB
+      }
+    })
+    ```
+
+这些示例展示了 MQTT.js 中一些重要的 MQTT 5.0 特性。使用这些特性可以提高应用程序的灵活性和效率。在使用这些特性时，请确保您的 MQTT 服务器支持 MQTT 5.0 协议。
+
+如需了解 MQTT.js 的完整 API 文档，包括所有 MQTT 5.0 属性，请参阅 [MQTT.js GitHub 仓库](https://github.com/mqttjs/MQTT.js)。
+
+## MQTT.js 常见问题
+
+### 浏览器中能实现双向认证连接吗？
+
+不可以，在浏览器环境中无法通过 JavaScript 代码指定客户端证书来建立连接，即使您的操作系统证书存储或智能卡中已设置了客户端证书。这意味着 MQTT.js 在浏览器中也无法实现双向认证。此外，您也不能指定证书颁发机构(CA)，因为这些都是由浏览器控制的。
+
+参考: [https://github.com/mqttjs/MQTT.js/issues/1515](https://github.com/mqttjs/MQTT.js/issues/1515)
+
+### MQTT.js 可以与 TypeScript 一起使用吗？
+
+可以。MQTT.js 库中已包含 TypeScript 的类型定义文件，可以直接在 TypeScript 项目中使用。
+
+类型定义文件位置: [https://github.com/mqttjs/MQTT.js/tree/main/types](https://github.com/mqttjs/MQTT.js/tree/main/types)
+
+以下是使用 TypeScript 的示例代码:
+
+```typescript
+import * as mqtt from "mqtt"
+const client: mqtt.MqttClient = mqtt.connect('mqtt://broker.emqx.io:1883')
+```
+
+### 一个 MQTT.js 客户端可以同时连接多个 Broker 吗？
+
+不可以，每个 MQTT.js 客户端实例只能同时连接到一个 Broker。如果您需要连接多个 Broker，就需要创建多个 MQTT.js 客户端实例。
+
+### MQTT.js 可以在 Vue、React 或 Angular 应用中使用吗？
+
+完全可以。MQTT.js 是一个通用的 JavaScript 库，可以集成到任何基于 JavaScript 的应用中，包括使用 Vue、React 或 Angular 框架的项目。
+
+### WebSocket 连接无法建立怎么办？
+
+使用 WebSocket 连接时，如果协议、端口和主机都正确，但仍然无法连接，请确保添加了正确的路径。WebSocket 连接通常需要指定一个特定的路径，例如 `/mqtt` 或 `/ws`。检查您的 Broker 配置，确保使用了正确的 WebSocket 路径。
+
+## MQTT.js 高级用法
+
+### 如何调试 MQTT.js 应用程序
+
+调试 MQTT.js 应用程序是开发过程中的一个重要部分。本指南解释了如何在 Node.js 和浏览器环境中启用 MQTT.js 调试日志，以及何时使用网络协议分析器（如 Wireshark）进行更深入的故障排除。
+
+**在 Node.js 中调试 MQTT.js**
+
+在 Node.js 环境中，您可以通过使用 `DEBUG` 环境变量来启用 MQTT.js 调试日志：
+
+```bash
+DEBUG=mqttjs* node your-app.js
+```
+
+您将看到调试信息打印出来，您可以将其与每个步骤进行比较，以查看 MQTT 消息在传输过程中发生了什么。
+
+```bash
+DEBUG=mqttjs* node index.js
+mqttjs connecting to an MQTT broker... +0ms
+mqttjs:client MqttClient :: options.protocol mqtt +0ms
+mqttjs:client MqttClient :: options.protocolVersion 4 +0ms
+mqttjs:client MqttClient :: options.username emqx_test +1ms
+mqttjs:client MqttClient :: options.keepalive 60 +0ms
+mqttjs:client MqttClient :: options.reconnectPeriod 1000 +0ms
+mqttjs:client MqttClient :: options.rejectUnauthorized undefined +0ms
+mqttjs:client MqttClient :: options.topicAliasMaximum undefined +0ms
+mqttjs:client MqttClient :: clientId emqx_nodejs_986165 +0ms
+mqttjs:client MqttClient :: setting up stream +0ms
+mqttjs:client _setupStream :: calling method to clear reconnect +1ms
+mqttjs:client _clearReconnect : clearing reconnect timer +0ms
+mqttjs:client _setupStream :: using streamBuilder provided to client to create stream +0ms
+mqttjs calling streambuilder for mqtt +3ms
+mqttjs:tcp port 1883 and host broker.emqx.io +0ms
+mqttjs:client _setupStream :: pipe stream to writable stream +3ms
+mqttjs:client _setupStream: sending packet `connect` +2ms
+mqttjs:client sendPacket :: packet: { cmd: 'connect' } +0ms
+mqttjs:client sendPacket :: emitting `packetsend` +1ms
+mqttjs:client sendPacket :: writing to stream +0ms
+mqttjs:client sendPacket :: writeToStream result true +11ms
+...
+```
+
+执行此命令将在控制台中生成调试日志，提供有关您的 [MQTT 客户端](https://www.emqx.com/zh/blog/mqtt-client-tools) 操作的详细信息，如连接、消息发布和订阅，以及潜在的错误。
+
+**在浏览器中调试 MQTT.js**
+
+在浏览器环境中调试时，需要在 JavaScript 代码中设置 localStorage 对象的特定值：
+
+```bash
+localStorage.debug = 'mqttjs*'
+```
+
+刷新浏览器后，MQTT.js 将开始将详细的调试信息记录到 **浏览器的 Console** 中，这对于调试 MQTT 通过 WebSocket 连接特别有用。
+
+如果您无法使用 MQTT.js 调试日志修复问题，请尝试使用网络协议分析器（如 Wireshark）。它可以捕获和解释您的 MQTT.js 应用程序和 MQTT Broker 之间的网络流量，显示 MQTT 通信的具体信息，IP 地址，端口号和 TCP 握手。通过从 MQTT.js 调试日志开始，并在需要时切换到 Wireshark，您可以全面排查您的 MQTT.js 应用程序。
+
+### 使用 RxJS 优化 MQTT.js 的消息处理
+
+> RxJS 是一个用于 JavaScript 的响应式编程库，它遵循观察者模式和函数式编程原则。它为开发者简化了异步数据流和事件流的处理，并提供了各种操作符，包括 map、filter 和 reduce，用于转换和组合这些流。
+
+在实际开发中，MQTT 服务器会向客户端发送各种类型的消息，这些消息需要被处理。例如，我们可能需要将消息保存到数据库或在处理后在 UI 上渲染它们。然而，使用 MQTT.js 时，我们必须依赖回调来处理这些消息，每收到一条消息就会触发回调函数。这可能会导致性能问题，特别是在处理高频消息时，频繁的回调调用可能会成为瓶颈。
+
+通过利用 RxJS 的强大功能，我们可以更方便、高效地处理 MQTT.js 的消息。RxJS 可以将 MQTT.js 的消息订阅转换为可观察对象，这使我们更容易处理异步数据流和事件流。此外，RxJS 提供了一系列操作符，允许我们转换和过滤消息，使我们能够更高效地处理它们。RxJS 还可以帮助我们实现高级功能，如合并或分割多个流。另外，RxJS 可以提供消息缓存和处理延迟功能，使复杂数据流的处理更加方便和灵活。
+
+下面，我们将通过一个简单的例子来演示如何使用 RxJS 优化 MQTT.js 的消息处理。
+
+```javascript
+import { fromEvent } from 'rxjs'
+import { bufferTime, map, takeUntil } from 'rxjs/operators'
+
+// 将连接关闭事件转换为 Observable
+const unsubscribe$ = fromEvent(client, 'close')
+
+// 将消息订阅转换为 Observable，继续接收和处理消息，直到连接关闭
+const message$ = fromEvent(client, 'message').pipe(takeUntil(unsubscribe$)).pipe(
+  map(([topic, payload, packet]: [string, Buffer, IPublishPacket]) => {
+    return processMessage(topic, payload, packet)
+  }),
+)
+
+// 使用 filter 过滤系统消息
+const nonSYSMessage$ = message$.pipe(filter((message: MessageModel) => !message.topic.includes('$SYS')))
+
+// 使用 bufferTime 缓存消息，并按每秒一次的频率将它们保存到数据库中
+nonSYSMessage$.pipe(bufferTime(1000)).subscribe((messages: MessageModel[]) => {
+  messages.length && saveMessage(id, messages)
+})
+
+// 使用 bufferTime 缓存消息，并按每秒两次的频率在 UI 上渲染它们
+nonSYSMessage$.pipe(bufferTime(500)).subscribe((messages: MessageModel[]) => {
+  messages.length && renderMessage(messages)
+})
+```
 
 ## 总结
 
