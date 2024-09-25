@@ -37,7 +37,7 @@ npm install mqtt --save
 yarn add mqtt
 ```
 
-> Note: As of v4.0.0 (released in 04/2020), MQTT.js no longer supports end-of-life node versions, and now supports node v12 and v14.
+> Note: MQTT.js v5.0.0 (07/2023) introduces major changes including TypeScript rewrite, Node.js v18/v20 support, while v4.0.0 (04/2020) supports Node.js v12/v14.
 
 ### Install MQTT.js Using CDN
 
@@ -119,7 +119,6 @@ For more information, please check out: [Free Public MQTT Broker](https://www.em
   </div>
 </section>
 
-
 ## Simple MQTT.js Example
 
 We will provide an example of how to connect to EMQX Cloud, subscribe to topics, and send and receive messages using MQTT.js.
@@ -130,17 +129,17 @@ We will provide an example of how to connect to EMQX Cloud, subscribe to topics,
 const mqtt = require('mqtt')
 
 /***
-	* Browser
-	* This document explains how to use MQTT over WebSocket with the ws and wss protocols.
-	* EMQX's default port for ws connection is 8083 and for wss connection is 8084.
-	* Note that you need to add a path after the connection address, such as /mqtt.
-	*/
+ * Browser
+ * This document explains how to use MQTT over WebSocket with the ws and wss protocols.
+ * EMQX's default port for ws connection is 8083 and for wss connection is 8084.
+ * Note that you need to add a path after the connection address, such as /mqtt.
+ */
 const url = 'ws://broker.emqx.io:8083/mqtt'
 /***
-	* Node.js
-	* This document explains how to use MQTT over TCP with both mqtt and mqtts protocols.
-	* EMQX's default port for mqtt connections is 1883, while for mqtts it is 8883.
-	*/
+ * Node.js
+ * This document explains how to use MQTT over TCP with both mqtt and mqtts protocols.
+ * EMQX's default port for mqtt connections is 1883, while for mqtts it is 8883.
+ */
 // const url = 'mqtt://broker.emqx.io:1883'
 
 // Create an MQTT client instance
@@ -292,7 +291,7 @@ Once the connection is successful, the returned Client object can listen to mult
   })
   ```
 
-- `error`
+- `error
 
   Triggered when the client cannot connect successfully or a parsing error occurs. The parameter error is the error message
 
@@ -393,6 +392,133 @@ In addition to listening to events, the Client also has some built-in functions 
 
 To view a complete example of using MQTT.js in JavaScript, please see: [https://github.com/emqx/MQTT-Client-Examples/tree/master/mqtt-client-JavaScript](https://github.com/emqx/MQTT-Client-Examples/tree/master/mqtt-client-JavaScript)
 
+### MQTT 5.0
+
+MQTT.js fully supports the MQTT 5.0 protocol, offering numerous new features and improvements. This section demonstrates how to use key MQTT 5.0 features in MQTT.js.
+
+- Session Expiry Interval: Allows clients to specify how long a session should be maintained.
+
+    ```javascript
+    const client = mqtt.connect('mqtt://broker.emqx.io', {
+      protocolVersion: 5,
+      clean: true,
+      properties: {
+        sessionExpiryInterval: 300 // 300 seconds
+      }
+    })
+    ```
+
+- Topic Alias: Reduces network traffic by using short integer aliases instead of long topic strings.
+
+    ```javascript
+    client.publish('long/topic/name', 'message', {
+      properties: {
+        topicAlias: 1
+      }
+    })
+
+    // Subsequent publishes can use just the alias
+    client.publish('', 'another message', {
+      properties: {
+        topicAlias: 1
+      }
+    })
+    ```
+
+- User Properties: Allows adding custom key-value pairs to messages.
+
+    ```javascript
+    client.publish('topic', 'message', {
+      properties: {
+        userProperties: {
+          'custom-key': 'custom-value'
+        }
+      }
+    })
+    ```
+
+- Subscription Identifier: Used to identify specific subscriptions.
+
+    ```javascript
+    client.subscribe('topic', {
+      properties: {
+        subscriptionIdentifier: 123
+      }
+    })
+
+    client.on('message', (topic, message, packet) => {
+      if (packet.properties.subscriptionIdentifier === 123) {
+        console.log('Message from subscription 123')
+      }
+    })
+    ```
+
+- Request Response Information: Implements a request-response pattern.
+
+    ```javascript
+    client.publish('request/topic', 'request', {
+      properties: {
+        responseTopic: 'response/topic',
+        correlationData: Buffer.from('request-1')
+      }
+    })
+
+    client.subscribe('response/topic')
+    client.on('message', (topic, message, packet) => {
+      if (packet.properties.correlationData) {
+        console.log('Response received for', packet.properties.correlationData.toString())
+      }
+    })
+    ```
+
+- Message Expiry Interval: Sets a lifetime for messages.
+
+    ```javascript
+    client.publish('topic', 'message', {
+      properties: {
+        messageExpiryInterval: 60 // 60 seconds
+      }
+    })
+    ```
+
+- Will Delay Interval: Delays sending the will message.
+
+    ```javascript
+    const client = mqtt.connect('mqtt://broker.emqx.io', {
+      will: {
+        topic: 'will/topic',
+        payload: 'client gone offline',
+        properties: {
+          willDelayInterval: 30 // 30 seconds
+        }
+      }
+    })
+    ```
+
+- Receive Maximum: Controls the maximum number of unacknowledged PUBLISH packets.
+
+    ```javascript
+    const client = mqtt.connect('mqtt://broker.emqx.io', {
+      properties: {
+        receiveMaximum: 100
+      }
+    })
+    ```
+
+- Maximum Packet Size: Specifies the maximum packet size the client is willing to accept.
+
+    ```javascript
+    const client = mqtt.connect('mqtt://broker.emqx.io', {
+      properties: {
+        maximumPacketSize: 100 * 1024 // 100 KB
+      }
+    })
+    ```
+
+These examples showcase some key MQTT 5.0 features in MQTT.js. Using these can enhance your application's flexibility and efficiency. Ensure your MQTT broker supports MQTT 5.0 when using these features.
+
+For full MQTT.js API documentation, including all MQTT 5.0 properties, see the [MQTT.js GitHub repository](https://github.com/mqttjs/MQTT.js).
+
 ## MQTT.js Q&A
 
 ### Can I implement two-way authentication connections in the browser?
@@ -492,7 +618,7 @@ By leveraging the powerful functionalities of RxJS, we can handle MQTT.js messag
 
 Here, we will demonstrate how to optimize message processing in MQTT.js using RxJS, through a simple example.
 
-```jsx
+```javascript
 import { fromEvent } from 'rxjs'
 import { bufferTime, map, takeUntil } from 'rxjs/operators'
 
@@ -533,8 +659,6 @@ For specific use in actual projects, please refer to the following links.
 - [How to Use MQTT in Node.js](https://www.emqx.com/en/blog/how-to-use-mqtt-in-nodejs)
 - [A Quickstart Guide to Using MQTT over WebSocket](https://www.emqx.com/en/blog/connect-to-mqtt-broker-with-websocket)
 - [MQTT vs WebSocket: Key Differences & Applications](https://www.emqx.com/en/blog/mqtt-vs-websocket)
-
-
 
 <section class="promotion">
     <div>
