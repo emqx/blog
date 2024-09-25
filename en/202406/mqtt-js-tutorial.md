@@ -291,7 +291,7 @@ Once the connection is successful, the returned Client object can listen to mult
   })
   ```
 
-- `error
+- `error`
 
   Triggered when the client cannot connect successfully or a parsing error occurs. The parameter error is the error message
 
