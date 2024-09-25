@@ -37,6 +37,7 @@ Get to know the preferred protocol in IoT from beginner to master.
 
 ## [MQTT Client](https://www.emqx.com/ja/blog/category/mqtt-client)
 
+- [信頼性の高いIoTデバイス接続を確保する：MQTTクライアントの自動再接続のベストプラクティス](https://www.emqx.com/ja/blog/mqtt-client-auto-reconnect-best-practices) ([Edit](https://github.com/emqx/blog/blob/main/ja/202409/mqtt-client-auto-reconnect-best-practices.md))
 - [2023年に試す価値がある最高の7つのMQTT Client Tools](https://www.emqx.com/ja/blog/mqtt-client-tools) ([Edit](https://github.com/emqx/blog/blob/main/ja/202306/mqtt-client-tools.md))
 - [2023年MQTT Websocketライアントのトップ3位](https://www.emqx.com/ja/blog/top-3-mqtt-websocket-clients-in-2023) ([Edit](https://github.com/emqx/blog/blob/main/ja/202305/top-3-mqtt-websocket-clients-in-2023.md))
 
