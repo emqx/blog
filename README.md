@@ -202,6 +202,7 @@ Explore more with & via EMQ.
 ## [EMQX Open Source | Broker](https://www.emqx.com/en/blog/category/emqx)
 EMQX is the world's most scalable open-source MQTT broker with a high performance that connects 100M+ IoT devices in 1 cluster, while maintaining 1M message per second throughput and sub-millisecond latency.
 
+- [Connect Locally, Communicate Globally: Cluster Linking is now available on EMQX Platform Premium](https://www.emqx.com/en/blog/cluster-linking-is-now-available-on-emqx-platform-premium) ([Edit](https://github.com/emqx/blog/blob/main/en/202409/cluster-linking-is-now-available-on-emqx-platform-premium.md))
 - [Introducing EMQX Premium: Advanced MQTT Messaging for Enterprise-Grade AI and IoT Applications](https://www.emqx.com/en/blog/introducing-emqx-premium) ([Edit](https://github.com/emqx/blog/blob/main/en/202409/introducing-emqx-premium.md))
 - [From Data to Insight: EMQX and GenAI in IoT](https://www.emqx.com/en/blog/emqx-platform-and-genai) ([Edit](https://github.com/emqx/blog/blob/main/en/202408/emqx-platform-and-genai.md))
 - [Revolutionizing Edge Computing with MQTT: Benefits, Challenges, and Future Trends](https://www.emqx.com/en/blog/revolutionizing-edge-computing-with-mqtt) ([Edit](https://github.com/emqx/blog/blob/main/en/202408/revolutionizing-edge-computing-with-mqtt.md))

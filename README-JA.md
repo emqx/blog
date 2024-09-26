@@ -7,6 +7,7 @@
 ## [MQTT Tutorials](https://www.emqx.com/ja/blog/category/mqtt-protocol)
 Get to know the preferred protocol in IoT from beginner to master.
 
+- [MQTT 5.0：7つの新機能と移行チェックリスト](https://www.emqx.com/ja/blog/introduction-to-mqtt-5) ([Edit](https://github.com/emqx/blog/blob/main/ja/202409/introduction-to-mqtt-5.md))
 - [MQTT vs HTTP: IoT向けどちらがより適していますか?](https://www.emqx.com/ja/blog/mqtt-vs-http) ([Edit](https://github.com/emqx/blog/blob/main/ja/202408/mqtt-vs-http.md))
 - [User Properties - MQTT 5.0 の新機能](https://www.emqx.com/ja/blog/mqtt5-user-properties) ([Edit](https://github.com/emqx/blog/blob/main/ja/202312/mqtt5-user-properties.md))
 - [MQTT Subscription Identifier の説明](https://www.emqx.com/ja/blog/subscription-identifier-and-subscription-options) ([Edit](https://github.com/emqx/blog/blob/main/ja/202312/subscription-identifier-and-subscription-options.md))
