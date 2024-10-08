@@ -165,6 +165,7 @@ Best practice of MQTT in various clients.
 ## [MQTT Integration (Eco & Integration)](https://www.emqx.com/en/blog/category/eco-and-integration)
 Explore more with & via EMQ.
 
+- [Integrating STOMP with EMQX: A Comprehensive Guide](https://www.emqx.com/en/blog/integrating-stomp-with-emqx) ([Edit](https://github.com/emqx/blog/blob/main/en/202410/integrating-stomp-with-emqx.md))
 - [Database for MQTT Data Storage: A Selection Guide](https://www.emqx.com/en/blog/database-for-mqtt-data-storage) ([Edit](https://github.com/emqx/blog/blob/main/en/202409/database-for-mqtt-data-storage.md))
 - [MQTT and Snowflake: Creating a New Future for Distributed Renewable Energy](https://www.emqx.com/en/blog/mqtt-and-snowflake-distributed-renewable-energy) ([Edit](https://github.com/emqx/blog/blob/main/en/202407/mqtt-and-snowflake-distributed-renewable-energy.md))
 - [MQTT & micro-ROS: Building Efficient Robotics Applications](https://www.emqx.com/en/blog/mqtt-and-micro-ros) ([Edit](https://github.com/emqx/blog/blob/main/en/202407/mqtt-and-micro-ros.md))
