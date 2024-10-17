@@ -7,6 +7,7 @@
 ## [MQTT Tutorials](https://www.emqx.com/ja/blog/category/mqtt-protocol)
 Get to know the preferred protocol in IoT from beginner to master.
 
+- [トピックエイリアス - MQTT 5.0の新機能](https://www.emqx.com/ja/blog/mqtt5-topic-alias) ([Edit](https://github.com/emqx/blog/blob/main/ja/202410/mqtt5-topic-alias.md))
 - [MQTT共有サブスクリプション：実践的なガイドラインとユースケース | MQTT 5機能](https://www.emqx.com/ja/blog/introduction-to-mqtt5-protocol-shared-subscription) ([Edit](https://github.com/emqx/blog/blob/main/ja/202410/introduction-to-mqtt5-protocol-shared-subscription.md))
 - [MQTTクリーンスタートとセッション有効期限間隔の紹介 | MQTT 5機能](https://www.emqx.com/ja/blog/mqtt5-new-feature-clean-start-and-session-expiry-interval) ([Edit](https://github.com/emqx/blog/blob/main/ja/202410/mqtt5-new-feature-clean-start-and-session-expiry-interval.md))
 - [MQTT 5.0：7つの新機能と移行チェックリスト](https://www.emqx.com/ja/blog/introduction-to-mqtt-5) ([Edit](https://github.com/emqx/blog/blob/main/ja/202409/introduction-to-mqtt-5.md))
