@@ -203,6 +203,7 @@ Explore more with & via EMQ.
 ## [EMQX Open Source | Broker](https://www.emqx.com/en/blog/category/emqx)
 EMQX is the world's most scalable open-source MQTT broker with a high performance that connects 100M+ IoT devices in 1 cluster, while maintaining 1M message per second throughput and sub-millisecond latency.
 
+- [From Data to Decisions: Building Effective IoT Data Stacks](https://www.emqx.com/en/blog/building-effective-iot-data-stacks) ([Edit](https://github.com/emqx/blog/blob/main/en/202410/building-effective-iot-data-stacks.md))
 - [Stay Connected with No Data Lost: Discover the Power of Durable Sessions in EMQX Platform](https://www.emqx.com/en/blog/emqx-platform-durable-session) ([Edit](https://github.com/emqx/blog/blob/main/en/202410/emqx-platform-durable-session.md))
 - [Connect Locally, Communicate Globally: Cluster Linking is now available on EMQX Platform Premium](https://www.emqx.com/en/blog/cluster-linking-is-now-available-on-emqx-platform-premium) ([Edit](https://github.com/emqx/blog/blob/main/en/202409/cluster-linking-is-now-available-on-emqx-platform-premium.md))
 - [Introducing EMQX Premium: Advanced MQTT Messaging for Enterprise-Grade AI and IoT Applications](https://www.emqx.com/en/blog/introducing-emqx-premium) ([Edit](https://github.com/emqx/blog/blob/main/en/202409/introducing-emqx-premium.md))
@@ -587,6 +588,7 @@ MQTTX is a Fully Open-source MQTT 5.0 cross-platform Desktop Client, makes it ea
 ## [Neuron - IIoT Connectivity Server](https://www.emqx.com/en/blog/category/neuron)
 IoT edge industrial protocol gateway software, which supports one-stop access to dozens of industrial protocols and converts them into MQTT protocol to access the cloud industrial IoT platform. It just requires ultra-low resource consumption, and supports three major architectures of X86, ARM, and MIPS.
 
+- [From Data to Decisions: Building Effective IoT Data Stacks](https://www.emqx.com/en/blog/building-effective-iot-data-stacks) ([Edit](https://github.com/emqx/blog/blob/main/en/202410/building-effective-iot-data-stacks.md))
 - [Role-Based Access Control in NeuronEX: Enhancing Data Security and Compliance](https://www.emqx.com/en/blog/neuronex-role-based-access-control) ([Edit](https://github.com/emqx/blog/blob/main/en/202408/neuronex-role-based-access-control.md))
 - [NeuronEX 3.3.0 Released: Enhanced Industrial Data Collection, Analysis, and Management](https://www.emqx.com/en/blog/neuronex-v-3-3-0-release-notes) ([Edit](https://github.com/emqx/blog/blob/main/en/202407/neuronex-v-3-3-0-release-notes.md))
 - [Unlocking Industrial Data Streams: A Practical Guide to Test Rules in NeuronEX](https://www.emqx.com/en/blog/neuronex-rules-debugging-guide) ([Edit](https://github.com/emqx/blog/blob/main/en/202405/neuronex-rules-debugging-guide.md))
