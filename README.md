@@ -8,6 +8,7 @@
 Get to know the preferred protocol in IoT from beginner to master.
 
 - [MQTT Protocol Explained: Ultimate Guide for IoT Beginners](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) ([Edit](https://github.com/emqx/blog/blob/main/en/202408/the-easiest-guide-to-getting-started-with-mqtt.md))
+- [MQTT QoS 0, 1, 2 Explained: A Quickstart Guide](https://www.emqx.com/en/blog/introduction-to-mqtt-qos) ([Edit](https://github.com/emqx/blog/blob/main/en/202408/introduction-to-mqtt-qos.md))
 - [MQTT Topics and Wildcards: A Beginner's Guide](https://www.emqx.com/en/blog/advanced-features-of-mqtt-topics) ([Edit](https://github.com/emqx/blog/blob/main/en/202407/advanced-features-of-mqtt-topics.md))
 - [Connecting MQTT and REST API: A Comprehensive Tutorial](https://www.emqx.com/en/blog/connecting-mqtt-and-rest-api) ([Edit](https://github.com/emqx/blog/blob/main/en/202407/connecting-mqtt-and-rest-api.md))
 - [MQTT vs HTTP: Ultimate IoT Protocol Comparison Guide](https://www.emqx.com/en/blog/mqtt-vs-http) ([Edit](https://github.com/emqx/blog/blob/main/en/202406/mqtt-vs-http.md))
@@ -41,7 +42,6 @@ Get to know the preferred protocol in IoT from beginner to master.
 - [MQTT  Subscription Options Explained and Example  | MQTT 5 Features](https://www.emqx.com/en/blog/an-introduction-to-subscription-options-in-mqtt) ([Edit](https://github.com/emqx/blog/blob/main/en/202306/an-introduction-to-subscription-options-in-mqtt.md))
 - [Shaping the Future of IoT: 7 MQTT Technology Trends in 2023](https://www.emqx.com/en/blog/7-mqtt-trends-in-2023) ([Edit](https://github.com/emqx/blog/blob/main/en/202303/7-mqtt-trends-in-2023.md))
 - [Introduction to MQTT Publish-Subscribe Pattern](https://www.emqx.com/en/blog/mqtt-5-introduction-to-publish-subscribe-model) ([Edit](https://github.com/emqx/blog/blob/main/en/202303/mqtt-5-introduction-to-publish-subscribe-model.md))
-- [MQTT QoS 0, 1, 2 Explained: A Quickstart Guide](https://www.emqx.com/en/blog/introduction-to-mqtt-qos) ([Edit](https://github.com/emqx/blog/blob/main/en/202301/introduction-to-mqtt-qos.md))
 - [MQTT Persistent Session and Clean Session Explained](https://www.emqx.com/en/blog/mqtt-session) ([Edit](https://github.com/emqx/blog/blob/main/en/202212/mqtt-session.md))
 - [How to Set Parameters When Establishing an MQTT Connection?](https://www.emqx.com/en/blog/how-to-set-parameters-when-establishing-an-mqtt-connection) ([Edit](https://github.com/emqx/blog/blob/main/en/202211/how-to-set-parameters-when-establishing-an-mqtt-connection.md))
 - [What is the MQTT Keep Alive parameter for?](https://www.emqx.com/en/blog/mqtt-keep-alive) ([Edit](https://github.com/emqx/blog/blob/main/en/202208/mqtt-keep-alive.md))

@@ -1,12 +1,14 @@
-## What is QoS
-
 In unstable network environments, MQTT devices may struggle to ensure reliable communication using only the TCP transport protocol. To address this issue, [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) includes a Quality of Service (QoS) mechanism that offers various message interaction options to provide different levels of service, catering to the user's specific requirements for reliable message delivery in different scenarios.
 
-There are 3 QoS levels in MQTT:
+In this quickstart guide, we’ll explore MQTT QoS levels 0, 1, and 2, compare their performance, and provide practical use cases to help you decide the best option for your IoT project.
 
-- QoS 0, at most once.
-- QoS 1, at least once.
-- QoS 2, exactly once.
+## What is QoS in MQTT?
+
+QoS in MQTT refers to the level of guarantee for message delivery between the publisher and the subscriber. It offers three levels of service:
+
+1. **QoS 0** – At most once.
+2. **QoS 1** – At least once.
+3. **QoS 2** – Exactly once.
 
 These levels correspond to increasing levels of reliability for message delivery. QoS 0 may lose messages, QoS 1 guarantees the message delivery but potentially exists duplicate messages, and QoS 2 ensures that messages are delivered exactly once without duplication. As the QoS level increases, the reliability of message delivery also increases, but so does the complexity of the transmission process.
 
@@ -16,19 +18,19 @@ For example, if a subscriber specifies that they only want to receive messages w
 
 ![MQTT QoS Downgrade](https://assets.emqx.com/images/6a5e702f5621af6974e0785b1bbbdb43.png)
 
-Let's see how QoS works.
+## MQTT QoS Levels Breakdown
 
-## QoS 0 - At Most Once
+### QoS 0 - At Most Once
 
 QoS 0 is the lowest level of service and is also known as "fire and forget". In this mode, the sender does not wait for acknowledgement or store and retransmit the message, so the receiver does not need to worry about receiving duplicate messages.
 
 ![MQTT QoS 0](https://assets.emqx.com/images/2c36da33012fac0e6943c7f6f8b5aa7f.png)
 
-### Why Are QoS 0 Messages Lost?
+**Why Are QoS 0 Messages Lost?**
 
 The reliability of QoS 0 message transmission depends on the stability of the TCP connection. If the connection is stable, TCP can ensure the successful delivery of messages. However, if the connection is closed or reset, there is a risk that messages in transit or messages in the operating system buffer may be lost, resulting in the unsuccessful delivery of QoS 0 messages.
 
-## QoS 1 - At Least Once
+### QoS 1 - At Least Once
 
 To ensure message delivery, QoS 1 introduces an acknowledgement and retransmission mechanism. When the sender receives a PUBACK packet from the receiver, it considers the message delivered successfully. Until then, the sender must store the PUBLISH packet for potential retransmission.
 
@@ -36,7 +38,7 @@ The sender uses the Packet ID in each packet to match the PUBLISH packet with th
 
 ![MQTT QoS 1](https://assets.emqx.com/images/5affbdf88707c5596e0fc5d16045b4ac.png)
 
-### Why Are QoS 1 Messages Duplicated?
+**Why Are QoS 1 Messages Duplicated?**
 
 There are two cases in which the sender will not receive a PUBACK packet.
 
@@ -69,7 +71,7 @@ For example, although the publisher only sends one message, the receiver may eve
 
 These are the drawbacks of using QoS 1.
 
-## QoS 2 - Exactly Once
+### QoS 2 - Exactly Once
 
 QoS 2 ensures that messages are not lost or duplicated, unlike in QoS 0 and 1. However, it also has the most complex interactions and the highest overhead, as it requires at least two request/response flows between the sender and receiver for each message delivery.
 
@@ -80,7 +82,7 @@ QoS 2 ensures that messages are not lost or duplicated, unlike in QoS 0 and 1. H
 3. When the receiver receives the PUBREL packet, it can confirm that no additional retransmitted PUBLISH packets will be received in this transmission flow. As a result, the receiver responds with a PUBCOMP packet to signal that it is prepared to reuse the current Packet ID for a new message.
 4. When the sender receives the PUBCOMP packet, the QoS 2 flow is complete. The sender can then send a new message with the current Packet ID, which the receiver will treat as a new message.
 
-### Why Are QoS 2 Messages Not Duplicated?
+**Why Are QoS 2 Messages Not Duplicated?**
 
 The mechanisms used to ensure that QoS 2 messages are not lost are the same as those used for QoS 1, so they will not be discussed again here.
 
@@ -102,7 +104,7 @@ In QoS 2, the sender is permitted to retransmit the PUBLISH packet before receiv
 
 As a result, the receiver can use the PUBREL packet as a boundary and consider any PUBLISH packet that arrives before it as a duplicate and any PUBLISH packet that arrives after it as new. This allows us to avoid message duplication at the protocol level when using QoS 2.
 
-## Scenarios and Considerations
+## Scenarios and Considerations of Each QoS Level
 
 ### QoS 0
 
@@ -140,7 +142,9 @@ QoS 0 and QoS 1 typically have similar throughput when using EMQX with the same 
 
 ## Conclusion
 
-By now, you should have a thorough understanding of MQTT QoS. To continue learning about MQTT, you can check out EMQ's [MQTT Getting Started and Advanced](https://www.emqx.com/en/mqtt-guide) series, which cover topics such as wildcards, retained messages, and [will messages](https://www.emqx.com/en/blog/use-of-mqtt-will-message). These resources will help you delve deeper into MQTT and develop advanced MQTT applications and services.
+By understanding and selecting the right **QoS level** for your MQTT setup, you can optimize your IoT network for both performance and reliability. Whether you're handling simple sensor data with QoS 0, managing critical operations with QoS 2, or striking a balance with QoS 1, MQTT's flexible QoS system has you covered.
+
+For more detailed insights into MQTT, explore [**EMQ's comprehensive MQTT guides**](https://www.emqx.com/en/mqtt-guide), which cover advanced topics like wildcards, retained messages, and more to help you build robust, scalable IoT systems.
 
 
 
