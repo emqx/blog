@@ -98,6 +98,7 @@ Get to know the preferred protocol in IoT from beginner to master.
 ## [MQTT Programming](https://www.emqx.com/zh/blog/category/mqtt-programming)
 Best practice of MQTT in various clients.
 
+- [如何在 Python3 中使用 MQTT 客户端库 Paho Client](https://www.emqx.com/zh/blog/how-to-use-mqtt-in-python) ([Edit](https://github.com/emqx/blog/blob/main/zh/202410/how-to-use-mqtt-in-python.md))
 - [如何在 Rust 中通过 Rumqttc 实现 MQTT 通信](https://www.emqx.com/zh/blog/how-to-use-mqtt-in-rust) ([Edit](https://github.com/emqx/blog/blob/main/zh/202409/how-to-use-mqtt-in-rust.md))
 - [在 Flutter 项目中使用 MQTT](https://www.emqx.com/zh/blog/using-mqtt-in-flutter) ([Edit](https://github.com/emqx/blog/blob/main/zh/202409/using-mqtt-in-flutter.md))
 - [开发指南：使用 MQTTNet 库构建 .Net 物联网 MQTT 应用程序](https://www.emqx.com/zh/blog/connecting-to-serverless-mqtt-broker-with-mqttnet-in-csharp) ([Edit](https://github.com/emqx/blog/blob/main/zh/202402/connecting-to-serverless-mqtt-broker-with-mqttnet-in-csharp.md))
@@ -120,7 +121,6 @@ Best practice of MQTT in various clients.
 - [Python MQTT 客户端对比](https://www.emqx.com/zh/blog/comparision-of-python-mqtt-client) ([Edit](https://github.com/emqx/blog/blob/main/zh/202009/comparision-of-python-mqtt-client.md))
 - [如何在 Vue 项目中使用 MQTT](https://www.emqx.com/zh/blog/how-to-use-mqtt-in-vue) ([Edit](https://github.com/emqx/blog/blob/main/zh/202009/how-to-use-mqtt-in-vue.md))
 - [如何在 Golang 中使用 MQTT](https://www.emqx.com/zh/blog/how-to-use-mqtt-in-golang) ([Edit](https://github.com/emqx/blog/blob/main/zh/202009/how-to-use-mqtt-in-golang.md))
-- [如何在 Python 中使用 MQTT](https://www.emqx.com/zh/blog/how-to-use-mqtt-in-python) ([Edit](https://github.com/emqx/blog/blob/main/zh/202008/how-to-use-mqtt-in-python.md))
 - [在树莓派上使用 MQTT](https://www.emqx.com/zh/blog/use-mqtt-with-raspberry-pi) ([Edit](https://github.com/emqx/blog/blob/main/zh/202008/use-mqtt-with-raspberry-pi.md))
 - [Android 使用 Kotlin 连接 MQTT](https://www.emqx.com/zh/blog/android-connects-mqtt-using-kotlin) ([Edit](https://github.com/emqx/blog/blob/main/zh/202006/android-connects-mqtt-using-kotlin.md))
 - [ESP8266 连接到免费的公共 MQTT 服务器](https://www.emqx.com/zh/blog/esp8266-connects-to-the-public-mqtt-broker) ([Edit](https://github.com/emqx/blog/blob/main/zh/202005/esp8266-connects-to-the-public-mqtt-broker.md))
