@@ -329,6 +329,8 @@ public class JavaDemoMQTTV5 {
 
 Our application initiates an MQTT client serving as both a message subscriber and publisher. Consider JavaDemoMQTTV5 as an example. Upon executing the program, you will observe connection details, message publishing, and message reception information printed on the console.
 
+![Testing](https://assets.emqx.com/images/9f347eb78c1f630ee67dfe5842d6e3e6.png)
+
 ## Q&A
 
 ### Does the MQTT Broker connection support authentication, auto-retry, and additional configuration options?
