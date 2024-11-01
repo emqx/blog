@@ -1,12 +1,16 @@
-## 什么是 QoS
+## 引言
 
-很多时候，使用 MQTT 协议的设备都运行在网络受限的环境下，而只依靠底层的 TCP 传输协议，并不能完全保证消息的可靠到达。因此，MQTT 提供了 QoS 机制，其核心是设计了多种消息交互机制来提供不同的服务质量，来满足用户在各种场景下对消息可靠性的要求。
+在不稳定的网络环境中，使用 TCP 传输协议的 MQTT 备可能会面临确保可靠通信的挑战。为了解决这个问题，MQTT 引入了一种 QoS 机制，提供多种消息交互选项，以满足用户在不同场景下对可靠消息传递的特定要求。
 
-MQTT 定义了三个 QoS 等级，分别为：
+在本文中，我们将探讨 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 的 QoS 等级 0、1 和 2，比较它们的性能，并提供实际用例，帮助您决定最适合您物联网项目的选项。
 
-- QoS 0，最多交付一次。
-- QoS 1，至少交付一次。
-- QoS 2，只交付一次。
+## MQTT QoS 简介
+
+MQTT 中的 QoS 指的是发布者与订阅者之间消息传递的保证级别。它提供三个服务级别：
+
+- **QoS 0 – 最多交付一次**
+- **QoS 1 – 至少交付一次**
+- **QoS 2 – 只交付一次**
 
 其中，使用 QoS 0 可能丢失消息，使用 QoS 1 可以保证收到消息，但消息可能重复，使用 QoS 2 可以保证消息既不丢失也不重复。QoS 等级从低到高，不仅意味着消息可靠性的提升，也意味着传输复杂程度的提升。
 
@@ -18,14 +22,15 @@ MQTT 定义了三个 QoS 等级，分别为：
 
 接下来，让我们来看看 MQTT 中每个 QoS 等级的具体原理。
 
+## MQTT QoS 等级详解
 
-## QoS 0 - 最多交付一次
+### QoS 0 - 最多交付一次
 
 QoS 0 是最低的 QoS 等级。QoS 0 消息即发即弃，不需要等待确认，不需要存储和重传，因此对于接收方来说，永远都不需要担心收到重复的消息。
 
 ![MQTT QoS 0](https://assets.emqx.com/images/8b641a22608772826781851ab63c197f.png)
 
-### 为什么 QoS 0 消息会丢失？
+**为什么 QoS 0 消息会丢失？**
 
 当我们使用 QoS 0 传递消息时，消息的可靠性完全依赖于底层的 TCP 协议。
 
@@ -33,7 +38,7 @@ QoS 0 是最低的 QoS 等级。QoS 0 消息即发即弃，不需要等待确认
 
  
 
-## QoS 1 - 至少交付一次
+### QoS 1 - 至少交付一次
 
 为了保证消息到达，QoS 1 加入了应答与重传机制，发送方只有在收到接收方的 PUBACK 报文以后，才能认为消息投递成功，在此之前，发送方需要存储该 PUBLISH 报文以便下次重传。
 
@@ -41,7 +46,7 @@ QoS 1 需要在 PUBLISH 报文中设置 Packet ID，而作为响应的 PUBACK �
 
 ![MQTT QoS 1](https://assets.emqx.com/images/b4f3ecaea5c047fa7352dc06753722c0.png)
 
-### 为什么 QoS 1 消息会重复？
+**为什么 QoS 1 消息会重复？**
 
 对于发送方来说，没收到 PUBACK 报文分为以下两种情况：
 
@@ -75,7 +80,7 @@ QoS 1 需要在 PUBLISH 报文中设置 Packet ID，而作为响应的 PUBACK �
 以上，就是 QoS 1 保证消息到达带来的副作用。
 
 
-## QoS 2 - 只交付一次
+### QoS 2 - 只交付一次
 
 QoS 2 解决了 QoS 0、1 消息可能丢失或者重复的问题，但相应地，它也带来了最复杂的交互流程和最高的开销。每一次的 QoS 2 消息投递，都要求发送方与接收方进行至少两次请求/响应流程。
 
@@ -86,7 +91,7 @@ QoS 2 解决了 QoS 0、1 消息可能丢失或者重复的问题，但相应地
 3. 当接收方收到 PUBREL 报文，也可以确认在这一次的传输流程中不会再有重传的 PUBLISH 报文到达，因此回复 PUBCOMP 报文表示自己也准备好将当前的 Packet ID 用于新的消息了。
 4. 当发送方收到 PUBCOMP 报文，这一次的 QoS 2 消息传输就算正式完成了。在这之后，发送方可以再次使用当前的 Packet ID 发送新的消息，而接收方再次收到使用这个 Packet ID 的 PUBLISH 报文时，也会将它视为一个全新的消息。
 
-### 为什么 QoS 2 消息不会重复？
+**为什么 QoS 2 消息不会重复？**
 
 QoS 2 消息保证不会丢失的逻辑与 QoS 1 相同，所以这里我们就不再重复了。
 
@@ -113,7 +118,7 @@ QoS 2 规定，发送方只有在收到 PUBREC 报文之前可以重传 PUBLISH 
 一旦有了这个前提，我们就能够在协议层面完成 QoS 2 消息的去重。
 
 
-## 不同 QoS 的适用场景和注意事项
+## 不同 MQTT QoS 的适用场景和注意事项
 
 #### QoS 0
 
@@ -158,13 +163,15 @@ QoS 2 既可以保证消息到达，也可以保证消息不会重复，但传�
 
 ## 结语
 
-至此，相信读者已对 MQTT QoS 有了深刻的理解。接下来，可访问 EMQ 提供的 [MQTT 入门与进阶](https://www.emqx.com/zh/mqtt-guide)系列文章学习 MQTT 主题及通配符、保留消息、遗嘱消息等相关概念，探索 MQTT 的更多高级应用，开启 MQTT 应用及服务开发。
+通过理解和选择适合您 MQTT 设置的 QoS 级别，您可以优化物联网网络的性能和可靠性。无论您是使用 QoS 0 处理简单传感器数据，还是使用 QoS 2 管理关键操作，或者在 QoS 1 中寻求平衡，MQTT 灵活的 QoS 系统都能满足您的需求。
+
+如需更详细的 MQTT 深入见解，请查看 EMQ 提供的 [MQTT 入门指南](https://www.emqx.com/zh/mqtt-guide)，涵盖诸如通配符、保留消息等高级主题，帮助您构建稳健、可扩展的物联网系统。
+
 
 
 <section class="promotion">
     <div>
-        免费试用 EMQX Cloud
-        <div class="is-size-14 is-text-normal has-text-weight-normal">全托管的 MQTT 消息云服务</div>
+        咨询 EMQ 技术专家
     </div>
-    <a href="https://accounts-zh.emqx.com/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a>
+    <a href="https://www.emqx.com/zh/contact" class="button is-gradient">联系我们 →</a>
 </section>

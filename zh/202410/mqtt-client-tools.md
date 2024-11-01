@@ -1,8 +1,8 @@
-随着物联网行业的飞速发展，MQTT 协议也被越来越多的公司及开发者所使用。在[学习和使用 MQTT](https://www.emqx.com/zh/mqtt-guide) 的过程中，一个得心应手的客户端工具可以极大的方便开发者进行 MQTT 特性的探索及物联网应用的调试，缩短开发周期。
+在快速发展的物联网 (IoT) 时代，[MQTT 协议](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt)已成为众多公司和开发者工作中不可或缺的组成部分。MQTT 客户端工具的使用已变得非常普遍，方便地实现了与 [MQTT 服务器](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison) 的无缝连接，执行诸如发布、订阅和消息交换等多种功能。
 
-目前 MQTT 客户端工具种类繁多，功能侧重点也不尽相同。对于初学者乃至 MQTT 专家来说，如何选择一个合适的 MQTT 客户端工具是一个难题。
+对于希望深入了解 MQTT 特性并简化物联网应用调试过程的开发人员而言，选择合适的工具至关重要，有助于缩短开发周期。然而市面上众多 MQTT 客户端工具各自有着不同的功能重点，这使得开发人员在决定最合适的选项时面临挑战。
 
-我们根据自身的使用经验，对目前市面上常见的客户端工具进行了筛选和整理，选择了截至 2023 年最新、最实用的 7 个 MQTT 客户端工具，并按桌面端、浏览器端、命令行分类列出。希望本文可以帮助 MQTT 开发者快速找到一个合适的客户端工具，开展 [MQTT 连接](https://www.emqx.com/zh/blog/how-to-set-parameters-when-establishing-an-mqtt-connection)测试。
+本文整理了 2024 年七款最有价值的 MQTT 客户端工具。该选型分为桌面端、浏览器端、命令行和移动端四个类别，旨在帮助您快速识别适合您 MQTT 开发工作的理想工具。
 
 
 ## 如何选择一个 MQTT 客户端？
@@ -17,7 +17,23 @@ MQTT 客户端工具常用于建立与 [MQTT 服务器](https://www.emqx.com/zh/
 - 支持 MQTT over WebSocket；
 - 进阶功能：支持自定义脚本、日志记录、 MQTT Payload 格式转换等。
 
+## **前提条件：准备一个 MQTT Broker**
 
+在深入了解 MQTT 工具之前，我们需要一个 MQTT Broker 来进行通信和测试。我们选择在 `broker.emqx.io`  上提供的免费公共 MQTT Broker。
+
+**MQTT Broker 信息**
+
+>服务器：`broker.emqx.io`
+>
+>TCP 端口：1883
+>
+>WebSocket 端口：8083
+>
+>SSL/TLS 端口：8883
+>
+>安全 WebSocket 端口：8084
+
+更多相关信息，请查看：[免费的公共 MQTT 服务器](https://www.emqx.com/zh/mqtt/public-mqtt5-broker) 
 
 ## MQTT 桌面客户端
 
@@ -34,7 +50,7 @@ MQTTX 致力于打造优雅、易用的全平台 MQTT 客户端，并在最近�
 #### 特性
 
 - 跨平台，支持 Windows，macOS 和 Linux
-- 支持 MQTT v3.1.1 以及 MQTT v5.0 协议
+- 支持 MQTT 3.1.1、3.1 以及 5.0 协议
 - 单/双向 SSL 认证：支持 CA、自签名证书，以及单、双向 SSL 认证
 - 支持 Light、Dark、Night 三种主题模式切换
 - 支持 WebSocket 连接至 MQTT 服务器
@@ -43,6 +59,7 @@ MQTTX 致力于打造优雅、易用的全平台 MQTT 客户端，并在最近�
 - 订阅 Topic 支持自定义颜色标记
 - 支持 $SYS 主题自动订阅，查看流量统计
 - 自定义编辑脚本测试和模拟收发数据
+- AI 驱动的 MQTTX Copilot：简化 MQTT 测试与开发
 - 完整的日志记录
 
 #### 下载
@@ -103,9 +120,9 @@ MQTT.fx 使用 JavaFX 技术开发，可以保存多个连接配置，支持多�
 
 ### MQTTX Web
 
-[MQTTX Web](https://mqttx.app/zh/web) 是一款开源的 MQTT 5.0 浏览器客户端，也是一个在线 MQTT WebSocket 客户端工具。开发者无需在本地下载和安装 MQTTX，即可使用 WebSocket 在浏览器中快速连接到 MQTT 服务器，更快地开发和调试 MQTT 服务和应用。
+[MQTTX Web](https://mqttx.app/zh/web) 是一款开源的 MQTT 5.0 浏览器客户端，也是一个在线 [MQTT WebSocket](https://www.emqx.com/zh/blog/connect-to-mqtt-broker-with-websocket) 客户端工具。开发者无需在本地下载和安装 MQTTX，即可使用 WebSocket 在浏览器中快速连接到 MQTT 服务器，更快地开发和调试 MQTT 服务和应用。
 
-![](https://mqttx-static.emqx.net/img/banner.268d1fa.png)
+![MQTTX Web](https://assets.emqx.com/images/2c99b9ae65c524993e522621cad154d2.png)
 
 立即体验：[https://mqttx.app/web-client/](https://mqttx.app/web-client/)
 
@@ -123,13 +140,15 @@ MQTT.fx 使用 JavaFX 技术开发，可以保存多个连接配置，支持多�
 
 #### 特性
 
+- **MQTT 协议支持：**完整支持 MQTT 3.1.1、3.1 以及 5.0
+- **跨平台兼容**：支持 Windows、MacOS 和 Linux
 - **无依赖限制**：基于命令行的安装和使用，无任何环境依赖要求
-
+- **易于集成：**可快速集成到自动化测试脚本中
 - **MQTT 基准测试**: 开箱即用的 MQTT 性能测试工具
-
 - **配置文件**: 支持为 `连接`、`发布` 和 `订阅` 保存为本地配置文件
-
 - **优雅的输出**: 输出对用户友好、易于理解的命令行内容，便于查看测试步骤及内容
+- **多种安全认证**：支持 CA、自签名证书及单向和双向 SSL 认证
+- **MQTT 消息模拟**：基于场景，支持自定义和内置选项
 
 #### 下载
 
@@ -242,14 +261,28 @@ mosquitto_sub -t 'test/topic' -v
 mosquitto_pub -t 'test/topic' -m 'hello world'
 ```
 
+## MQTT 移动客户端工具
 
+### EasyMQTT
+
+EasyMQTT 是一款适用于 iPhone、iPad 和 macOS 的 MQTT 客户端，让您可以与任何 MQTT Broker 进行交互。您可以使用它管理家庭中的设备设置，控制如 Zigbee2MQTT 的应用程序，或监控远程 Broker。该工具拥有简洁、用户友好的界面，并支持浅色和深色模式。
+
+![EasyMQTT](https://assets.emqx.com/images/f9118dd8e7c71a668b3667b1c629a1d0.png)
+
+#### 下载
+
+下载地址：[‎https://apps.apple.com/us/app/easymqtt/id1523099606?platform=iphone](https://apps.apple.com/us/app/easymqtt/id1523099606?platform=iphone) 
+
+## 结语
+
+本文全面介绍了不同类别的 MQTT 客户端工具。其中，MQTTX 作为一个快速发展的客户端工具脱颖而出，以其现代化的聊天式界面、全面的 MQTT 5.0 支持和丰富的功能带来了卓越的用户体验。MQTTX 提供桌面版、命令行版和浏览器版三个版本，能够满足各种场景下的 MQTT 测试需求。毋庸置疑，MQTTX 已成为 2024 年最优秀的 MQTT 客户端工具之一。
 
 
 
 <section class="promotion">
     <div>
         免费试用 EMQX Cloud
-        <div class="is-size-14 is-text-normal has-text-weight-normal">全托管的云原生 MQTT 消息服务</div>
+        <div>全托管的云原生 MQTT 消息服务</div>
     </div>
-    <a href="https://accounts-zh.emqx.com/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a>
+    <a href="https://accounts-zh.emqx.com/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient">开始试用 →</a>
 </section>

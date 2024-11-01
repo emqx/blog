@@ -7,6 +7,8 @@
 ## [MQTT Tutorials](https://www.emqx.com/zh/blog/category/mqtt-protocol)
 Get to know the preferred protocol in IoT from beginner to master.
 
+- [MQTT 协议快速入门：基础知识和实用教程](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) ([Edit](https://github.com/emqx/blog/blob/main/zh/202410/the-easiest-guide-to-getting-started-with-mqtt.md))
+- [MQTT QoS 0、1、2 解析：快速入门指南](https://www.emqx.com/zh/blog/introduction-to-mqtt-qos) ([Edit](https://github.com/emqx/blog/blob/main/zh/202410/introduction-to-mqtt-qos.md))
 - [MQTT vs HTTP：谁更适合物联网？](https://www.emqx.com/zh/blog/mqtt-vs-http) ([Edit](https://github.com/emqx/blog/blob/main/zh/202408/mqtt-vs-http.md))
 - [如何在 MQTT 中处理 JSON、十六进制和二进制数据](https://www.emqx.com/zh/blog/how-to-process-json-hex-and-binary-data-in-mqtt) ([Edit](https://github.com/emqx/blog/blob/main/zh/202408/how-to-process-json-hex-and-binary-data-in-mqtt.md))
 - [MQTT 与 WebSocket：关键差异与应用场景](https://www.emqx.com/zh/blog/mqtt-vs-websocket) ([Edit](https://github.com/emqx/blog/blob/main/zh/202406/mqtt-vs-websocket.md))
@@ -33,14 +35,12 @@ Get to know the preferred protocol in IoT from beginner to master.
 - [MQTT 订阅标识符介绍与实例 | MQTT 5.0 特性详解](https://www.emqx.com/zh/blog/subscription-identifier-and-subscription-options) ([Edit](https://github.com/emqx/blog/blob/main/zh/202306/subscription-identifier-and-subscription-options.md))
 - [QUIC 协议：特性、应用场景及其对物联网/车联网的影响](https://www.emqx.com/zh/blog/quic-protocol-the-features-use-cases-and-impact-for-iot-iov) ([Edit](https://github.com/emqx/blog/blob/main/zh/202305/quic-protocol-the-features-use-cases-and-impact-for-iot-iov.md))
 - [2023 年 MQTT 协议的 7 个技术趋势｜描绘物联网的未来](https://www.emqx.com/zh/blog/7-mqtt-trends-in-2023) ([Edit](https://github.com/emqx/blog/blob/main/zh/202304/7-mqtt-trends-in-2023.md))
-- [MQTT QoS 0, 1, 2 介绍](https://www.emqx.com/zh/blog/introduction-to-mqtt-qos) ([Edit](https://github.com/emqx/blog/blob/main/zh/202212/introduction-to-mqtt-qos.md))
 - [MQTT 发布/订阅模式介绍](https://www.emqx.com/zh/blog/mqtt-5-introduction-to-publish-subscribe-model) ([Edit](https://github.com/emqx/blog/blob/main/zh/202212/mqtt-5-introduction-to-publish-subscribe-model.md))
 - [MQTT 持久会话与 Clean Session 详解](https://www.emqx.com/zh/blog/mqtt-session) ([Edit](https://github.com/emqx/blog/blob/main/zh/202211/mqtt-session.md))
 - [创建 MQTT 连接时如何设置参数？](https://www.emqx.com/zh/blog/how-to-set-parameters-when-establishing-an-mqtt-connection) ([Edit](https://github.com/emqx/blog/blob/main/zh/202210/how-to-set-parameters-when-establishing-an-mqtt-connection.md))
 - [物联网首选协议，关于 MQTT 你需要了解这些](https://www.emqx.com/zh/blog/what-is-the-mqtt-protocol) ([Edit](https://github.com/emqx/blog/blob/main/zh/202210/what-is-the-mqtt-protocol.md))
 - [MQTT 保留消息是什么？如何使用？](https://www.emqx.com/zh/blog/mqtt5-features-retain-message) ([Edit](https://github.com/emqx/blog/blob/main/zh/202210/mqtt5-features-retain-message.md))
 - [通过案例理解 MQTT 主题与通配符](https://www.emqx.com/zh/blog/advanced-features-of-mqtt-topics) ([Edit](https://github.com/emqx/blog/blob/main/zh/202209/advanced-features-of-mqtt-topics.md))
-- [MQTT 协议入门：基础知识和快速教程](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) ([Edit](https://github.com/emqx/blog/blob/main/zh/202209/the-easiest-guide-to-getting-started-with-mqtt.md))
 - [MQTT QoS 设计：车联网平台消息传输质量保障](https://www.emqx.com/zh/blog/mqtt-qos-design-for-internet-of-vehicles) ([Edit](https://github.com/emqx/blog/blob/main/zh/202203/mqtt-qos-design-for-internet-of-vehicles.md))
 - [主流物联网协议选择：MQTT、CoAP 还是 LwM2M？](https://www.emqx.com/zh/blog/iot-protocols-mqtt-coap-lwm2m) ([Edit](https://github.com/emqx/blog/blob/main/zh/202202/iot-protocols-mqtt-coap-lwm2m.md))
 - [MQTT 协议 Keep Alive 详解](https://www.emqx.com/zh/blog/mqtt-keep-alive) ([Edit](https://github.com/emqx/blog/blob/main/zh/202202/mqtt-keep-alive.md))
@@ -82,9 +82,9 @@ Get to know the preferred protocol in IoT from beginner to master.
 
 ## [MQTT Client](https://www.emqx.com/zh/blog/category/mqtt-client)
 
+- [2024 年值得尝试的 7 个 MQTT 客户端（MQTT Client）工具](https://www.emqx.com/zh/blog/mqtt-client-tools) ([Edit](https://github.com/emqx/blog/blob/main/zh/202410/mqtt-client-tools.md))
 - [MQTT 客户端自动重连最佳实践｜构建可靠 IoT 设备连接](https://www.emqx.com/zh/blog/mqtt-client-auto-reconnect-best-practices) ([Edit](https://github.com/emqx/blog/blob/main/zh/202303/mqtt-client-auto-reconnect-best-practices.md))
 - [MQTTX Web：在线的 MQTT 5.0 客户端工具](https://www.emqx.com/zh/blog/online-mqtt-client) ([Edit](https://github.com/emqx/blog/blob/main/zh/202208/online-mqtt-client.md))
-- [2023 年值得尝试的 7 个 MQTT 客户端工具](https://www.emqx.com/zh/blog/mqtt-client-tools) ([Edit](https://github.com/emqx/blog/blob/main/zh/202207/mqtt-client-tools.md))
 - [MQTTX CLI 发布：强大易用的 MQTT 5.0 命令行工具](https://www.emqx.com/zh/blog/powerful-and-easy-to-use-mqtt-5-command-line-tool) ([Edit](https://github.com/emqx/blog/blob/main/zh/202207/powerful-and-easy-to-use-mqtt-5-command-line-tool.md))
 - [CocoaMQTT v2.0：首个支持 MQTT 5.0 的 iOS 客户端](https://www.emqx.com/zh/blog/ios-mqtt5-client) ([Edit](https://github.com/emqx/blog/blob/main/zh/202111/ios-mqtt5-client.md))
 - [使用 MQTT.fx 接入 EMQX Cloud](https://www.emqx.com/zh/blog/connecting-to-emqx-cloud-with-mqttfx) ([Edit](https://github.com/emqx/blog/blob/main/zh/202108/connecting-to-emqx-cloud-with-mqttfx.md))

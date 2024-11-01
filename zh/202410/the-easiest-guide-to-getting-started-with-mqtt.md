@@ -1,4 +1,4 @@
-本文是 MQTT 协议的入门指南，提供了实用的代码示例。物联网和 MQTT 的初学者可以通过本文掌握 MQTT 的基本概念，快速开启 MQTT 服务和应用的开发。
+在当今互联互通的世界中，各种设备通过网络无缝通信，实现自动化和数据交换。了解物联网和 MQTT 的相关知识变得愈加重要。本文是 MQTT 协议的入门指南，您可以通过本文了解 MQTT 的基本原理、核心概念及实际应用，快速开启 MQTT 服务和应用的开发。
 
 ## 什么是 MQTT？
 
@@ -28,7 +28,7 @@ MQTT 所具有的适用于物联网特定需求的特点和功能，使其成为
 
 MQTT Broker 是负责处理客户端请求的关键组件，包括建立连接、断开连接、订阅和取消订阅等操作，同时还负责消息的转发。一个高效强大的 MQTT Broker 能够轻松应对海量连接和百万级消息吞吐量，从而帮助物联网服务提供商专注于业务发展，快速构建可靠的 MQTT 应用。
 
-关于 MQTT Broker 的更多详情，请参阅文章 [2023 年最全面的 MQTT Broker 比较指南](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison)。
+关于 MQTT Broker 的更多详情，请参阅文章 [2024 年最全面的 MQTT Broker 比较指南](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison)。
 
 **发布-订阅模式**
 
@@ -86,24 +86,23 @@ MQTT 提供了三种服务质量（QoS），在不同网络环境下保证消息
 
 您可以选择私有部署或完全托管的云服务来建立自己的 MQTT Broker。或者您也可以使用免费的公共 Broker。
 
-- **私有部署**
-
-  [EMQX](https://github.com/emqx/emqx) 是最具扩展性的开源 MQTT Broker，适用于物联网、[工业物联网](https://www.emqx.com/zh/blog/iiot-explained-examples-technologies-benefits-and-challenges)和车联网。您可以运行以下 Docker 命令来安装 EMQX。
-
-  ```
-  docker run -d --name emqx -p 1883:1883 -p 8083:8083 -p 8084:8084 -p 8883:8883 -p 18083:18083 emqx/emqx
-  
-  ```
+EMQX 是一个可以「无限连接、任意集成、随处运行」的大规模分布式企业级 MQTT 物联网接入平台。它根据用户的不同需求提供了多个版本选择：
 
 - **全托管的云服务**
 
-  通过全托管的云服务启动 MQTT 服务是最便捷的方式。如下图所示，[EMQX Cloud](https://www.emqx.com/zh/cloud) 可以在几分钟内启动，并在 AWS、Google Cloud 和 Microsoft Azure 的 17 个区域提供运行支持。
+  通过全托管的云服务启动 MQTT 服务是最便捷的方式。如下图所示，EMQX Serverless 版本是基于多租户架构的 MQTT 云服务，具有按量付费和灵活扩容的特性，可以在几分钟内启动，并在 AWS、Google Cloud 和 Microsoft Azure 的 17 个区域提供运行支持。
 
-  ![EMQX MQTT Cloud](https://assets.emqx.com/images/d019e0dbc27f706eca6256e11720eb9b.png)
+  <section class="promotion">
+      <div>
+          免费试用 EMQX Serverless
+          <div>无须绑定信用卡</div>
+      </div>
+      <a href="https://accounts-zh.emqx.com/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient">开始试用 →</a>
+  </section>
 
 - **免费的公共 MQTT Broker**
 
-  在本文中，我们将使用 EMQ 提供的[免费公共 MQTT Broker](https://www.emqx.com/zh/mqtt/public-mqtt5-broker)，它基于完全托管的 [MQTT 云服务 - EMQX Cloud](https://www.emqx.com/zh/cloud) 创建。服务器信息如下：
+  在本文中，我们将使用 EMQ 提供的[免费公共 MQTT 服务器](https://www.emqx.com/zh/mqtt/public-mqtt5-broker)，它基于完全托管的 [MQTT 云服务 - EMQX Cloud](https://www.emqx.com/zh/cloud) 创建。服务器信息如下：
 
   >Server: `broker.emqx.io`
   >
@@ -275,6 +274,54 @@ MQTT 客户端在向服务器发起 CONNECT 请求时，可以选择是否发送
 
 关于 MQTT 遗嘱消息的更多内容，请阅读文章 [MQTT 遗嘱消息的使用](https://www.emqx.com/zh/blog/use-of-mqtt-will-message)。
 
+## 2024 年值得关注的 7 大 MQTT 协议技术趋势
+
+### **MQTT over QUIC**
+
+QUIC 是 Google 推出的一种基于 UDP 的新型传输协议，能够降低延迟、提高数据传输速率。将 QUIC 引入 MQTT 将为网络不稳定或低延迟要求的场景（如车联网和工业物联网）带来优势。EMQX 和未来的 MQTT 版本正逐步采用 MQTT over QUIC，将引领物联网连接标准的重要变革。
+
+更多详情，请查看博客：[MQTT over QUIC：物联网消息传输还有更多可能](https://www.emqx.com/zh/blog/mqtt-over-quic)
+
+### **MQTT Serverless**
+
+Serverless MQTT 作为前沿的架构创新，使 MQTT 服务的快速部署变得轻而易举。此外，其资源自动扩展和按需付费模式提供了极大的灵活性，有望推动 MQTT 更广泛的应用，降低运营成本，激发不同行业的创新协作。我们甚至可能看到每个物联网和工业物联网开发者都能拥有一个免费的 Serverless MQTT 消息服务器。
+
+<section class="promotion">
+    <div>
+        免费试用 EMQX Serverless
+        <div>无须绑定信用卡</div>
+    </div>
+    <a href="https://accounts-zh.emqx.com/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient">开始试用 →</a>
+</section>
+
+### **MQTT 多租户架构**
+
+多租户架构是实现 Serverless MQTT 服务的一个重要基础。不同用户或租户的物联网设备可以连接至同一大规模 MQTT 集群，同时保持各自的数据和业务逻辑独立。支持多租户的 MQTT 服务器将降低管理负担，提升复杂场景或大规模物联网应用的灵活性。
+
+更多详情，请查看博客：[MQTT 服务新趋势：了解 MQTT 多租户架构](https://www.emqx.com/zh/blog/multi-tenancy-architecture-in-mqtt)
+
+### **MQTT Sparkplug 3.0**
+
+MQTT Sparkplug 定义了如何通过 MQTT 连接传感器、执行器、PLC 和网关等工业设备，旨在简化工业设备的连接与通信，实现高效的数据采集、处理和分析。最新的 3.0 版本引入了更多高级功能，有望在工业物联网中得到更广泛的应用。
+
+更多详情，请查看博客：[MQTT Sparkplug：在工业 4.0 时代架起 IT 和 OT 的桥梁](https://www.emqx.com/zh/blog/mqtt-sparkplug-bridging-it-and-ot-in-industry-4-0)
+
+### **MQTT 统一命名空间**
+
+统一命名空间（Unified Namespace）是一个建立在面向工业物联网和工业 4.0 的 MQTT Broker 上的解决方案架构。它采用星型拓扑，通过中央 MQTT Broker 连接工业设备、传感器和应用（如 SCADA、MES 和 ERP）。采用统一命名空间可以更高效地实现 OT 和 IT 系统的数据交换，最终实现统一。
+
+更多详情，请查看博客：[统一命名空间（UNS）：面向工业物联网的下一代数据架构](https://www.emqx.com/zh/blog/unified-namespace-next-generation-data-fabric-for-iiot)
+
+### **MQTT 跨域集群**
+
+MQTT 跨域集群是一种创新架构，允许部署在不同区域或云端的 MQTT Broker 协同工作，形成一个统一的集群。它支持在多云环境中构建全球 MQTT 访问网络，使得本地接入的设备和应用无论物理位置如何都能相互通信。
+
+更多详情，请查看博客：[EMQX 跨域集群：增强可扩展性，打破地域限制](https://www.emqx.com/zh/blog/exploring-geo-distribution-in-emqx-for-enhanced-scalability)
+
+### **MQTT Streams**
+
+MQTT Streams 是 MQTT 协议备受期待的一项扩展能力，能够在 MQTT Broker 内实时处理海量、高频的数据流。这一创新功能支持历史消息重播，确保数据一致性、审计和合规。内置的流处理功能将简化物联网数据处理架构，成为基于 MQTT 的物联网应用中实时数据管理的宝贵工具。
+
 ## 深入学习 MQTT
 
 本文详细介绍了 MQTT 的基本概念和使用流程，您可以按照本文所学的内容尝试使用 MQTT 协议。
@@ -285,8 +332,7 @@ MQTT 客户端在向服务器发起 CONNECT 请求时，可以选择是否发送
 
 <section class="promotion">
     <div>
-        免费试用 EMQX Cloud
-        <div class="is-size-14 is-text-normal has-text-weight-normal">全托管的 MQTT 消息云服务</div>
+        咨询 EMQ 技术专家
     </div>
-    <a href="https://accounts-zh.emqx.com/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a>
+    <a href="https://www.emqx.com/zh/contact" class="button is-gradient">联系我们 →</a>
 </section>
