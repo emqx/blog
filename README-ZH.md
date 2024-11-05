@@ -9,6 +9,7 @@ Get to know the preferred protocol in IoT from beginner to master.
 
 - [MQTT 协议快速入门：基础知识和实用教程](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) ([Edit](https://github.com/emqx/blog/blob/main/zh/202410/the-easiest-guide-to-getting-started-with-mqtt.md))
 - [MQTT QoS 0、1、2 解析：快速入门指南](https://www.emqx.com/zh/blog/introduction-to-mqtt-qos) ([Edit](https://github.com/emqx/blog/blob/main/zh/202410/introduction-to-mqtt-qos.md))
+- [MQTT 主题与通配符（Topics & Wildcards）入门手册](https://www.emqx.com/zh/blog/advanced-features-of-mqtt-topics) ([Edit](https://github.com/emqx/blog/blob/main/zh/202410/advanced-features-of-mqtt-topics.md))
 - [MQTT vs HTTP：谁更适合物联网？](https://www.emqx.com/zh/blog/mqtt-vs-http) ([Edit](https://github.com/emqx/blog/blob/main/zh/202408/mqtt-vs-http.md))
 - [如何在 MQTT 中处理 JSON、十六进制和二进制数据](https://www.emqx.com/zh/blog/how-to-process-json-hex-and-binary-data-in-mqtt) ([Edit](https://github.com/emqx/blog/blob/main/zh/202408/how-to-process-json-hex-and-binary-data-in-mqtt.md))
 - [MQTT 与 WebSocket：关键差异与应用场景](https://www.emqx.com/zh/blog/mqtt-vs-websocket) ([Edit](https://github.com/emqx/blog/blob/main/zh/202406/mqtt-vs-websocket.md))
@@ -40,7 +41,6 @@ Get to know the preferred protocol in IoT from beginner to master.
 - [创建 MQTT 连接时如何设置参数？](https://www.emqx.com/zh/blog/how-to-set-parameters-when-establishing-an-mqtt-connection) ([Edit](https://github.com/emqx/blog/blob/main/zh/202210/how-to-set-parameters-when-establishing-an-mqtt-connection.md))
 - [物联网首选协议，关于 MQTT 你需要了解这些](https://www.emqx.com/zh/blog/what-is-the-mqtt-protocol) ([Edit](https://github.com/emqx/blog/blob/main/zh/202210/what-is-the-mqtt-protocol.md))
 - [MQTT 保留消息是什么？如何使用？](https://www.emqx.com/zh/blog/mqtt5-features-retain-message) ([Edit](https://github.com/emqx/blog/blob/main/zh/202210/mqtt5-features-retain-message.md))
-- [通过案例理解 MQTT 主题与通配符](https://www.emqx.com/zh/blog/advanced-features-of-mqtt-topics) ([Edit](https://github.com/emqx/blog/blob/main/zh/202209/advanced-features-of-mqtt-topics.md))
 - [MQTT QoS 设计：车联网平台消息传输质量保障](https://www.emqx.com/zh/blog/mqtt-qos-design-for-internet-of-vehicles) ([Edit](https://github.com/emqx/blog/blob/main/zh/202203/mqtt-qos-design-for-internet-of-vehicles.md))
 - [主流物联网协议选择：MQTT、CoAP 还是 LwM2M？](https://www.emqx.com/zh/blog/iot-protocols-mqtt-coap-lwm2m) ([Edit](https://github.com/emqx/blog/blob/main/zh/202202/iot-protocols-mqtt-coap-lwm2m.md))
 - [MQTT 协议 Keep Alive 详解](https://www.emqx.com/zh/blog/mqtt-keep-alive) ([Edit](https://github.com/emqx/blog/blob/main/zh/202202/mqtt-keep-alive.md))
@@ -59,10 +59,10 @@ Get to know the preferred protocol in IoT from beginner to master.
 
 ## [MQTT Broker](https://www.emqx.com/zh/blog/category/mqtt-broker)
 
+- [MQTT 服务器（MQTT Broker）：工作原理与快速入门指南](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison) ([Edit](https://github.com/emqx/blog/blob/main/zh/202410/the-ultimate-guide-to-mqtt-broker-comparison.md))
 - [在 Windows 平台搭建 MQTT 服务](https://www.emqx.com/zh/blog/install-mqtt-broker-on-windows) ([Edit](https://github.com/emqx/blog/blob/main/zh/202407/install-mqtt-broker-on-windows.md))
 - [2024 最全面的开源 MQTT Broker 对比](https://www.emqx.com/zh/blog/a-comprehensive-comparison-of-open-source-mqtt-brokers-in-2023) ([Edit](https://github.com/emqx/blog/blob/main/zh/202312/a-comprehensive-comparison-of-open-source-mqtt-brokers-in-2023.md))
 - [Mosquitto MQTT Broker：优缺点、教程和替代方案](https://www.emqx.com/zh/blog/mosquitto-mqtt-broker-pros-cons-tutorial-and-modern-alternatives) ([Edit](https://github.com/emqx/blog/blob/main/zh/202312/mosquitto-mqtt-broker-pros-cons-tutorial-and-modern-alternatives.md))
-- [MQTT Broker：工作原理、相关产品与快速入门指南](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison) ([Edit](https://github.com/emqx/blog/blob/main/zh/202306/the-ultimate-guide-to-mqtt-broker-comparison.md))
 - [MQTT Broker 集群解析：基础概念与高级实现](https://www.emqx.com/zh/blog/mqtt-broker-clustering) ([Edit](https://github.com/emqx/blog/blob/main/zh/202306/mqtt-broker-clustering.md))
 - [MQTT 服务新趋势：了解 MQTT 多租户架构](https://www.emqx.com/zh/blog/multi-tenancy-architecture-in-mqtt) ([Edit](https://github.com/emqx/blog/blob/main/zh/202306/multi-tenancy-architecture-in-mqtt.md))
 - [2023 年最适用于工业物联网领域的三款开源 MQTT Broker](https://www.emqx.com/zh/blog/top-3-open-source-mqtt-brokers-for-industrial-iot-in-2023) ([Edit](https://github.com/emqx/blog/blob/main/zh/202305/top-3-open-source-mqtt-brokers-for-industrial-iot-in-2023.md))
@@ -192,6 +192,7 @@ Explore more with & via EMQ.
 ## [EMQX Open Source | Broker](https://www.emqx.com/zh/blog/category/emqx)
 EMQX is the world's most scalable open-source MQTT broker with a high performance that connects 100M+ IoT devices in 1 cluster, while maintaining 1M message per second throughput and sub-millisecond latency.
 
+- [CoAP 协议介绍：特性、应用与优劣势](https://www.emqx.com/zh/blog/coap-protocol) ([Edit](https://github.com/emqx/blog/blob/main/zh/202411/coap-protocol.md))
 - [EMQX Platform 旗舰版：面向企业级 AI 和物联网应用的高级 MQTT 消息服务](https://www.emqx.com/zh/blog/introducing-emqx-premium) ([Edit](https://github.com/emqx/blog/blob/main/zh/202410/introducing-emqx-premium.md))
 - [EMQX Enterprise 5.8.0 发布：实现跨区域、全球分布的集群连接](https://www.emqx.com/zh/blog/emqx-enterprise-5-8-0-release-notes) ([Edit](https://github.com/emqx/blog/blob/main/zh/202409/emqx-enterprise-5-8-0-release-notes.md))
 - [EMQX Serverless 助力智能车机系统开放性发展](https://www.emqx.com/zh/blog/emqx-boosts-the-development-of-intelligent-vehicle-systems) ([Edit](https://github.com/emqx/blog/blob/main/zh/202408/emqx-boosts-the-development-of-intelligent-vehicle-systems.md))
