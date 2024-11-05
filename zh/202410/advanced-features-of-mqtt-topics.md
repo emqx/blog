@@ -1,4 +1,14 @@
-## 什么是 MQTT 主题？
+## 引言
+
+[MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 的灵活性和高效性核心在于两个关键概念：主题（Topics）和通配符（Wildcards）。它们构成了 [MQTT 发布-订阅模型](https://www.emqx.com/zh/blog/mqtt-5-introduction-to-publish-subscribe-model)的基础，使复杂的物联网生态系统中能够实现无缝且精准的通信。
+
+MQTT 主题是消息的寻址机制，使设备和应用能够组织和筛选信息流。主题提供了分层结构，可以代表 IoT 系统的不同方面，比如设备位置、传感器类型和数据类别。有效地设计和利用主题对于构建可扩展、易管理的 IoT 解决方案至关重要。
+
+与主题互补的是 MQTT 通配符，它们是增强协议灵活性的有力工具。通配符允许订阅者同时接收多个主题的消息，简化客户端逻辑并减少网络开销。掌握通配符的使用，开发者可以创建更加动态、响应快速的 IoT 应用程序，能够在不频繁重新配置的情况下适应变化的数据需求。
+
+在本文中，我们将深入探讨 MQTT 主题和通配符的结构、最佳实践和高级特性。我们将分析一些特殊情况，比如以 `$`开头的主题，探讨如何在各种实际场景中应用这些概念，并解答常见问题，帮助您更深入理解这些关键的 MQTT 组件。
+
+## 什么是 MQTT 主题（MQTT Topics）？
 
 MQTT 主题本质上是一个 UTF-8 编码的字符串，是 MQTT 协议进行消息路由的基础。MQTT 主题类似 URL 路径，使用斜杠 `/` 进行分层：
 
@@ -18,7 +28,7 @@ sensor/#
 ![MQTT 发布订阅](https://assets.emqx.com/images/0c35bfdb730f1d29b7f1b7a249c62f8b.png)
 
 
-## MQTT 主题通配符
+## MQTT 主题通配符（MQTT Wildcards）
 
 MQTT 主题通配符包含单层通配符 `+` 及多层通配符 `#`，主要用于客户端一次订阅多个主题。
 
@@ -75,7 +85,7 @@ sensor/1/temperature
 
 ### 系统主题
 
-以 `$SYS/` 开头的主题为系统主题，系统主题主要用于获取 [MQTT 服务器](https://www.emqx.com/zh/mqtt/public-mqtt5-broker)自身运行状态、消息统计、客户端上下线事件等数据。目前，MQTT 协议暂未明确规定 `$SYS/` 主题标准，但大多数 MQTT 服务器都遵循该[标准建议](https://github.com/mqtt/mqtt.org/wiki/SYS-Topics)。
+以 `$SYS/` 开头的主题为系统主题，系统主题主要用于获取 [MQTT 服务器](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison)自身运行状态、消息统计、客户端上下线事件等数据。目前，MQTT 协议暂未明确规定 `$SYS/` 主题标准，但大多数 MQTT 服务器都遵循该[标准建议](https://github.com/mqtt/mqtt.org/wiki/SYS-Topics)。
 
 例如，EMQX 服务器支持通过以下主题获取集群状态。
 
@@ -167,6 +177,7 @@ EMQX 还支持客户端上下线事件、收发流量、消息收发、系统监
   **用户在线状态**：用户可以订阅该主题获取好友的在线状态。
 
   
+
 ## MQTT 主题常见问题及解答
 
 ### 主题的层级及长度有什么限制吗？
@@ -206,12 +217,12 @@ MQTT 协议规定主题的长度为两个字节，因此主题最多可包含 **
 ## 结语
 
 至此，相信读者已对 MQTT 主题及通配符有了深刻的理解。接下来，可访问 EMQ 提供的 [MQTT 入门与进阶](https://www.emqx.com/zh/mqtt-guide)系列文章了解 MQTT 协议的其他特性，探索 MQTT 的更多高级应用，开启 MQTT 应用及服务开发。
-  
+
+
 
 <section class="promotion">
     <div>
-        免费试用 EMQX Cloud
-        <div class="is-size-14 is-text-normal has-text-weight-normal">全托管的云原生 MQTT 消息服务</div>
+        咨询 EMQ 技术专家
     </div>
-    <a href="https://accounts-zh.emqx.com/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a>
+    <a href="https://www.emqx.com/zh/contact?product=solutions" class="button is-gradient">联系我们 →</a>
 </section>
