@@ -98,6 +98,7 @@ Get to know the preferred protocol in IoT from beginner to master.
 ## [MQTT Programming](https://www.emqx.com/zh/blog/category/mqtt-programming)
 Best practice of MQTT in various clients.
 
+- [在 Qt6 中使用 MQTT：入门指南](https://www.emqx.com/zh/blog/how-to-create-an-mqtt-application-in-qt6) ([Edit](https://github.com/emqx/blog/blob/main/zh/202411/how-to-create-an-mqtt-application-in-qt6.md))
 - [如何在 Java 中使用 Paho MQTT 客户端](https://www.emqx.com/zh/blog/how-to-use-mqtt-in-java) ([Edit](https://github.com/emqx/blog/blob/main/zh/202410/how-to-use-mqtt-in-java.md))
 - [在 ESP32 上使用 MQTT：入门指南](https://www.emqx.com/zh/blog/esp32-connects-to-the-free-public-mqtt-broker) ([Edit](https://github.com/emqx/blog/blob/main/zh/202410/esp32-connects-to-the-free-public-mqtt-broker.md))
 - [如何在 Python3 中使用 MQTT 客户端库 Paho Client](https://www.emqx.com/zh/blog/how-to-use-mqtt-in-python) ([Edit](https://github.com/emqx/blog/blob/main/zh/202410/how-to-use-mqtt-in-python.md))
