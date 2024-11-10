@@ -153,6 +153,7 @@ Best practice of MQTT in various clients.
 ## [MQTT Integration (Eco & Integration)](https://www.emqx.com/zh/blog/category/eco-and-integration)
 Explore more with & via EMQ.
 
+- [打造透明、高效的分布式系统：通过 EMQX ECP 集成实现链路追踪功能](https://www.emqx.com/zh/blog/emqx-ecp-datalayers-and-open-telemetry-collector) ([Edit](https://github.com/emqx/blog/blob/main/zh/202411/emqx-ecp-datalayers-and-open-telemetry-collector.md))
 - [使用 Node-RED 处理 MQTT 数据](https://www.emqx.com/zh/blog/using-node-red-to-process-mqtt-data) ([Edit](https://github.com/emqx/blog/blob/main/zh/202409/using-node-red-to-process-mqtt-data.md))
 - [MQTT + PostgreSQL 集成指南：实现车辆实时位置监控](https://www.emqx.com/zh/blog/mqtt-to-postgresql) ([Edit](https://github.com/emqx/blog/blob/main/zh/202408/mqtt-to-postgresql.md))
 - [EMQX Platform & Snowflake：构建可再生分布式能源的智慧未来](https://www.emqx.com/zh/blog/mqtt-and-snowflake-distributed-renewable-energy) ([Edit](https://github.com/emqx/blog/blob/main/zh/202408/mqtt-and-snowflake-distributed-renewable-energy.md))
