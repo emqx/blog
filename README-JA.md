@@ -50,6 +50,7 @@ Get to know the preferred protocol in IoT from beginner to master.
 ## [MQTT Programming](https://www.emqx.com/ja/blog/category/mqtt-programming)
 Best practice of MQTT in various clients.
 
+- [M2MqttUnityライブラリを使用したUnityでのMQTT](https://www.emqx.com/ja/blog/using-mqtt-in-unity-with-m2mqttunity-library-a-step-by-step-guide) ([Edit](https://github.com/emqx/blog/blob/main/ja/202411/using-mqtt-in-unity-with-m2mqttunity-library-a-step-by-step-guide.md))
 - [Qt6でのMQTT：サンプル付き初心者ガイド](https://www.emqx.com/ja/blog/how-to-create-an-mqtt-application-in-qt6) ([Edit](https://github.com/emqx/blog/blob/main/ja/202411/how-to-create-an-mqtt-application-in-qt6.md))
 - [MQTTnetを使用してC#でMQTT](https://www.emqx.com/ja/blog/connecting-to-serverless-mqtt-broker-with-mqttnet-in-csharp) ([Edit](https://github.com/emqx/blog/blob/main/ja/202410/connecting-to-serverless-mqtt-broker-with-mqttnet-in-csharp.md))
 - [Rust(rumqttc)でMQTT](https://www.emqx.com/ja/blog/how-to-use-mqtt-in-rust) ([Edit](https://github.com/emqx/blog/blob/main/ja/202405/how-to-use-mqtt-in-rust.md))
