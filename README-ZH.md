@@ -798,6 +798,7 @@ Guarantee the availability and reliability of the IoT platform.
 
 ## [应用案例](https://www.emqx.com/zh/blog/category/use-cases)
 
+- [EMQ & F5：面向大型智能物联场景的数据安全接入方案](https://www.emqx.com/zh/blog/emq-and-f5) ([Edit](https://github.com/emqx/blog/blob/main/zh/202411/emq-and-f5.md))
 - [连接低碳与能源的数据桥梁：EMQX 在全球智慧能源行业的应用](https://www.emqx.com/zh/blog/emqx-in-the-smart-energy-industry) ([Edit](https://github.com/emqx/blog/blob/main/zh/202409/emqx-in-the-smart-energy-industry.md))
 - [风景与美食的数字交响曲：EMQX 在全球智慧旅游与餐饮业的应用](https://www.emqx.com/zh/blog/application-of-emqx-in-smart-tourism-and-catering-industry) ([Edit](https://github.com/emqx/blog/blob/main/zh/202408/application-of-emqx-in-smart-tourism-and-catering-industry.md))
 - [连接农场牧业与数字世界：EMQX 在全球智慧农业中的应用](https://www.emqx.com/zh/blog/application-of-emqx-in-smart-agriculture) ([Edit](https://github.com/emqx/blog/blob/main/zh/202407/application-of-emqx-in-smart-agriculture.md))
