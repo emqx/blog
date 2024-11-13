@@ -728,6 +728,7 @@ Guarantee the availability and reliability of the IoT platform.
 
 ## [Use Cases](https://www.emqx.com/en/blog/category/use-cases)
 
+- [EMQX-Driven Smart Hospitality&Tourism: Enhancing Efficiency and Personalization from Restaurants to Cruises](https://www.emqx.com/en/blog/emqx-driven-smart-hospitality-tourism) ([Edit](https://github.com/emqx/blog/blob/main/en/202411/emqx-driven-smart-hospitality-tourism.md))
 - [Building a Sustainable Future: How EMQX is Enabling Smart Energy Management](https://www.emqx.com/en/blog/emqx-in-the-smart-energy-industry) ([Edit](https://github.com/emqx/blog/blob/main/en/202410/emqx-in-the-smart-energy-industry.md))
 - [From Data to Harvest: How EMQX Powers Smart Agriculture](https://www.emqx.com/en/blog/how-emqx-powers-smart-agriculture) ([Edit](https://github.com/emqx/blog/blob/main/en/202409/how-emqx-powers-smart-agriculture.md))
 - [How EMQX Boosts Social Media with Scalable and Low-Latency Networking](https://www.emqx.com/en/blog/how-emqx-boosts-social-media-with-scalable-and-low-latency-networking) ([Edit](https://github.com/emqx/blog/blob/main/en/202408/how-emqx-boosts-social-media-with-scalable-and-low-latency-networking.md))
