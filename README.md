@@ -165,6 +165,7 @@ Best practice of MQTT in various clients.
 ## [MQTT Integration (Eco & Integration)](https://www.emqx.com/en/blog/category/eco-and-integration)
 Explore more with & via EMQ.
 
+- [Building an End-to-End IoT Data Pipeline with Node-RED, EMQX, QuestDB, DuckDB, Grafana and PowerBI](https://www.emqx.com/en/blog/building-an-end-to-end-iot-data-pipeline) ([Edit](https://github.com/emqx/blog/blob/main/en/202411/building-an-end-to-end-iot-data-pipeline.md))
 - [Real-Time Monitoring and Predictive Maintenance with EMQX, RisingWave, and Grafana](https://www.emqx.com/en/blog/real-time-monitoring-with-emqx-risingwave-and-grafana) ([Edit](https://github.com/emqx/blog/blob/main/en/202411/real-time-monitoring-with-emqx-risingwave-and-grafana.md))
 - [Integrating STOMP with EMQX: A Comprehensive Guide](https://www.emqx.com/en/blog/integrating-stomp-with-emqx) ([Edit](https://github.com/emqx/blog/blob/main/en/202410/integrating-stomp-with-emqx.md))
 - [Database for MQTT Data Storage: A Selection Guide](https://www.emqx.com/en/blog/database-for-mqtt-data-storage) ([Edit](https://github.com/emqx/blog/blob/main/en/202409/database-for-mqtt-data-storage.md))
