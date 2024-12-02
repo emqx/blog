@@ -221,6 +221,7 @@ Guarantee the availability and reliability of the IoT platform.
 
 ## [適用シナリオ](https://www.emqx.com/ja/blog/category/use-cases)
 
+- [EMQ & F5: スケール対応のセキュアなIoTデータアクセスソリューション](https://www.emqx.com/ja/blog/emq-and-f5) ([Edit](https://github.com/emqx/blog/blob/main/ja/202412/emq-and-f5.md))
 - [ゲームオン! ゲームにおけるシームレスなリアルタイム通信に最適なMQTTプラットフォーム](https://www.emqx.com/ja/blog/mqtt-messaging-platform-enhances-real-time-game-communication) ([Edit](https://github.com/emqx/blog/blob/main/ja/202406/mqtt-messaging-platform-enhances-real-time-game-communication.md))
 - [TSPプラットフォームの革新：EMQXで自動車のコネクティビティを実現](https://www.emqx.com/ja/blog/revolutionizing-tsp-platforms) ([Edit](https://github.com/emqx/blog/blob/main/ja/202404/revolutionizing-tsp-platforms.md))
 - [ヘルスケアにおけるIoT: MQTTで医療ラボ機器を接続](https://www.emqx.com/ja/blog/iot-in-healthcare-connecting-medical-lab-devices-with-mqtt) ([Edit](https://github.com/emqx/blog/blob/main/ja/202404/iot-in-healthcare-connecting-medical-lab-devices-with-mqtt.md))
