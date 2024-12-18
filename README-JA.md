@@ -103,6 +103,7 @@ Explore more with & via EMQ.
 ## [EMQX Open Source | Broker](https://www.emqx.com/ja/blog/category/emqx)
 EMQX is the world's most scalable open-source MQTT broker with a high performance that connects 100M+ IoT devices in 1 cluster, while maintaining 1M message per second throughput and sub-millisecond latency.
 
+- [LoRaWAN & MQTTを活用した効率的なIoT通信](https://www.emqx.com/ja/blog/lorawan-and-mqtt) ([Edit](https://github.com/emqx/blog/blob/main/ja/202412/lorawan-and-mqtt.md))
 - [データから知能アプリへ：IoTにおけるEMQXとGenAI](https://www.emqx.com/ja/blog/emqx-platform-and-genai) ([Edit](https://github.com/emqx/blog/blob/main/ja/202409/emqx-platform-and-genai.md))
 - [MQTTによるエッジコンピューティングの革新：利点、課題、将来動向](https://www.emqx.com/ja/blog/revolutionizing-edge-computing-with-mqtt) ([Edit](https://github.com/emqx/blog/blob/main/ja/202408/revolutionizing-edge-computing-with-mqtt.md))
 - [NGINX リバースプロキシを使用する場合のEMQXでクライアントの実際のIPを取得](https://www.emqx.com/ja/blog/getting-the-clients-real-ip-when-using-the-nginx-reverse-proxy-emqx) ([Edit](https://github.com/emqx/blog/blob/main/ja/202407/getting-the-clients-real-ip-when-using-the-nginx-reverse-proxy-emqx.md))
