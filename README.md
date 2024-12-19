@@ -554,6 +554,7 @@ Build a reliable, efficient and industry-specific Internet of Vehicles platform 
 ## [MQTTX](https://www.emqx.com/en/blog/category/mqttx)
 MQTTX is a Fully Open-source MQTT 5.0 cross-platform Desktop Client, makes it easy and quick to create multiple simultaneous online MQTT client connections, test the connection, publish, and subscribe functions of MQTT/TCP, MQTT/TLS, MQTT/WebSocket as well as other MQTT protocol features.
 
+- [MQTTX 1.11.1 Released: Enhanced Visualization](https://www.emqx.com/en/blog/mqttx-1-11-1-release-notes) ([Edit](https://github.com/emqx/blog/blob/main/en/202412/mqttx-1-11-1-release-notes.md))
 - [MQTTX 1.11.0 Released: Topic Tree and Avro Schema](https://www.emqx.com/en/blog/mqttx-1-11-0-release-notes) ([Edit](https://github.com/emqx/blog/blob/main/en/202410/mqttx-1-11-0-release-notes.md))
 - [MQTTX 1.10.1 Released: One-Click CLI Installation via Desktop](https://www.emqx.com/en/blog/mqttx-1-10-1-release-notes) ([Edit](https://github.com/emqx/blog/blob/main/en/202407/mqttx-1-10-1-release-notes.md))
 - [MQTTX Web Online Site Migration Announcement](https://www.emqx.com/en/blog/mqttx-web-migration-announcement) ([Edit](https://github.com/emqx/blog/blob/main/en/202406/mqttx-web-migration-announcement.md))
