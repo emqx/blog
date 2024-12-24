@@ -1,10 +1,10 @@
-In our previous blogs, we discussed the concepts of [ISA95](https://www.emqx.com/en/blog/exploring-isa95-standards-in-manufacturing) and [unified namespaces](https://www.emqx.com/en/blog/the-power-of-unified-namespace-in-modern-manufacturing). In this blog, we will explore the intricacies of implementing a unified namespace with EMQX and Neuron, highlighting the synergy between these platforms and the myriad benefits they bring. From data integration and transformation to multi-site data replication, we will show how this integration best addresses the challenges of data organization, scalability and collaboration in an industrial context. By converging EMQX's MQTT capabilities with Neuron's data transformation capabilities, organizations can realize in a new era of unified data access, streamlined processes, and data-driven decision making.
+In our previous blogs, we discussed the concepts of [ISA95](https://www.emqx.com/en/blog/exploring-isa95-standards-in-manufacturing) and [unified namespaces](https://www.emqx.com/en/blog/the-power-of-unified-namespace-in-modern-manufacturing). In this blog, we will explore the intricacies of implementing a unified namespace with EMQX and NeuronEX, highlighting the synergy between these platforms and the myriad benefits they bring. From data integration and transformation to multi-site data replication, we will show how this integration best addresses the challenges of data organization, scalability and collaboration in an industrial context. By converging EMQX's MQTT capabilities with NeuronEX's data transformation capabilities, organizations can realize in a new era of unified data access, streamlined processes, and data-driven decision making.
 
-## Unified Namespace Solution with EMQX and Neuron
+## Unified Namespace Solution with EMQX and NeuronEX
 
-The [Unified Namespace (UNS)](https://www.emqx.com/en/blog/unified-namespace-next-generation-data-fabric-for-iiot) concept redefines data access, allowing all network participants to interact with information, irrespective of its physical location. [EMQX broker](https://www.emqx.com/en/products/emqx) and [Neuron industrial gateway](https://github.com/emqx/neuron) is a popular choice for implementing UNS due to its efficiency and scalability.
+The [Unified Namespace (UNS)](https://www.emqx.com/en/blog/unified-namespace-next-generation-data-fabric-for-iiot) concept redefines data access, allowing all network participants to interact with information, irrespective of its physical location. [EMQX broker](https://www.emqx.com/en/products/emqx) and [NeuronEX](https://www.emqx.com/en/products/neuronex) is a popular choice for implementing UNS due to its efficiency and scalability.
 
-EMQX plays a pivotal role as the central messaging broker, strategically positioned at its core. Neuron supports the EMQX to access OT sensors and devices with various industrial protocols. As the key components for data communication and message routing, EMQX and Neuron together act as the primary conduit connecting data sources, such as devices, sensors, and machines to data consumers, which includes ERP and MES applications, databases, and analytics platforms. This intermediary role enables seamless data exchange within the manufacturing ecosystem, facilitating the flow of information critical to real-time monitoring, control, and analysis.
+EMQX plays a pivotal role as the central messaging broker, strategically positioned at its core. NeuronEX supports the EMQX to access OT sensors and devices with various industrial protocols. As the key components for data communication and message routing, EMQX and NeuronEX together act as the primary conduit connecting data sources, such as devices, sensors, and machines to data consumers, which includes ERP and MES applications, databases, and analytics platforms. This intermediary role enables seamless data exchange within the manufacturing ecosystem, facilitating the flow of information critical to real-time monitoring, control, and analysis.
 
 <section
   class="promotion-pdf"
@@ -36,9 +36,9 @@ Naming conventions are particularly important in programming, software developme
 
 ## Architecture for Implementing Unified Namespace
 
-The Unified Namespace solution emerges as a powerful mechanism to seamlessly integrate devices, applications, and data streams. By using EMQX and Neuron, this solution can be architected into a three-tier structure, ensuring efficient data exchange, organization, and consumption. In the diagram shown, all connected devices and applications are separated into two primary layers. The bottom is the automation layer, while the top is the application layer. The middle layer serves as a conduit through which EMQX and Neuron enable seamless data exchange between automation and application layers.
+The Unified Namespace solution emerges as a powerful mechanism to seamlessly integrate devices, applications, and data streams. By using EMQX and NeuronEX, this solution can be architected into a three-tier structure, ensuring efficient data exchange, organization, and consumption. In the diagram shown, all connected devices and applications are separated into two primary layers. The bottom is the automation layer, while the top is the application layer. The middle layer serves as a conduit through which EMQX and NeuronEX enable seamless data exchange between automation and application layers.
 
-![Architecture for Implementing Unified Namespace](https://assets.emqx.com/images/d3da26da070ac01ba7d632ef5e7f6f44.png)
+![Architecture for Implementing Unified Namespace](https://assets.emqx.com/images/2e5c8b9fdc41a73895239c93c811e2b9.png)
 
 ### Empowering Analytics and Decision-Making
 
@@ -66,21 +66,21 @@ The need for efficient data integration and consistent access across disparate i
 
 ### Single-Sites Deployment
 
-Within a single-site deployment, the architecture revolves around the careful orchestration of various components to create a unified namespace. On the left side of the diagram are the data sources from the production floor, which is the automation layer of the 3-tier architecture above. The right side is the central control room where all data analysis and storage takes place. In the middle is a unified namespace enabled by EMQX and Neuron.
+Within a single-site deployment, the architecture revolves around the careful orchestration of various components to create a unified namespace. On the left side of the diagram are the data sources from the production floor, which is the automation layer of the 3-tier architecture above. The right side is the central control room where all data analysis and storage takes place. In the middle is a unified namespace enabled by EMQX and NeuronEX.
 
-![Single-site deployment architecture](https://assets.emqx.com/images/fd6fc97dc40438f6c11922394afe171c.png)
+![Single-site deployment architecture](https://assets.emqx.com/images/9311d630c100434b8d75763f1110aabd.png)
 
 1. **EMQX Cluster Management:** The foundation is laid by deploying an EMQX broker cluster under the supervision of the EMQX Edge Cloud Platform (ECP). The inherent scalability of the EMQX ECP allows seamless scaling of EMQX instances to address escalating data demands.
-2. **Neuron Gateway Integration:** Neuron gateways, also governed by EMQX ECP, play a key role in bridging the gap between on-premises Operational Technology (OT) devices (e.g., PLCs, CNC machines) and Information Technology (IT) systems. Neuron's data format conversion and intercommunication capabilities are used to ensure seamless data flow.
-3. **Enabling eKuiper Rule Engine:** The deployment of eKuiper streaming engines, managed by EMQX ECP, is essential for processing streaming messages emanating from IT systems and Neuron gateways. Configuring eKuiper's data storage or command transmission capabilities enriches the processing cycle.
+2. **NeuronEX Gateway Integration:** NeuronEX gateways, also governed by EMQX ECP, play a key role in bridging the gap between on-premises Operational Technology (OT) devices (e.g., PLCs, CNC machines) and Information Technology (IT) systems. NeuronEX's data format conversion and intercommunication capabilities are used to ensure seamless data flow.
+3. **Enabling eKuiper Rule Engine:** The deployment of eKuiper streaming engines, managed by EMQX ECP, is essential for processing streaming messages emanating from IT systems and NeuronEX gateways. Configuring eKuiper's data storage or command transmission capabilities enriches the processing cycle.
 4. **NanoMQ Facilitation:** NanoMQ is strategically deployed as an agile bridge tailored for edge scenarios housing multiple applications. Its lightweight composition ensures optimal data exchange efficiency, particularly for hardware with constrained resources.
-5. **Unified Namespace Enrichment:** The synergy achieved through the collaboration of EMQX cluster, EMQX ECP, Neuron, eKuiper, and NanoMQ culminates in the establishment of a Unified Namespace. This expansive realm embraces data from diverse OT devices, IT systems, application platforms (e.g., Kafka, Redis, PostgreSQL), and cloud analytics systems (e.g., AI/ML).
+5. **Unified Namespace Enrichment:** The synergy achieved through the collaboration of EMQX cluster, EMQX ECP, NeuronEX, eKuiper, and NanoMQ culminates in the establishment of a Unified Namespace. This expansive realm embraces data from diverse OT devices, IT systems, application platforms (e.g., Kafka, Redis, PostgreSQL), and cloud analytics systems (e.g., AI/ML).
 
 ### Multi-Sites Deployment
 
 In a multi-site deployment, the architecture's scope broadens to encompass diverse production sites. The Unified Namespace spans the entire production process, whether vertical or horizontal, across multiple geographic locations. This includes the central control room where all production information, even down to the sensors, is processed by various applications and AI/ML for better decisions.
 
-![Multi-site deployment architecture](https://assets.emqx.com/images/8a62253d083aca31eab9c463791507ba.png)
+![Multi-site deployment architecture](https://assets.emqx.com/images/4bf8be6323e2e85df2816e060df60333.png)
 
 1. **Inter-Site Data Replication:** EMQX clusters, meticulously distributed across multiple production sites, enable the seamless replication of data messages. This empowers the realization of cross-site data sharing, fostering a unified data ecosystem.
 2. **Contextualized Data Organization:** The essence of the Unified Namespace emerges as all data messages find their place within a contextualized structure. The tenets of ISA-95 guide the structuring, capturing assets, processes, and the intricate tapestry of data relationships.
@@ -88,7 +88,7 @@ In a multi-site deployment, the architecture's scope broadens to encompass diver
 
 ## Conclusion
 
-The deployment of a Unified Namespace architecture, whether in a single-site or multi-site scenario, signifies a revolutionary step toward optimized industrial data integration. By leveraging the collaborative capabilities of EMQX and Neuron, organizations can break down data barriers, foster collaboration, and make data-driven decisions. This unified approach not only enhances operational efficiency but also propels industries toward a more connected and intelligent future, where data flows seamlessly to enable innovation and excellence.
+The deployment of a Unified Namespace architecture, whether in a single-site or multi-site scenario, signifies a revolutionary step toward optimized industrial data integration. By leveraging the collaborative capabilities of EMQX and NeuronEX, organizations can break down data barriers, foster collaboration, and make data-driven decisions. This unified approach not only enhances operational efficiency but also propels industries toward a more connected and intelligent future, where data flows seamlessly to enable innovation and excellence.
 
 
 
