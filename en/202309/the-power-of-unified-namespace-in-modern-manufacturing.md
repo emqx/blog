@@ -36,7 +36,7 @@ These challenges can impact the efficiency, scalability, and overall effectivene
 
 A Unified Namespace in the context of the industry refers to a standardized and consistent approach to data representation and organization across various systems, processes, and components within an industrial environment. It aims to harmonize the way data is named, accessed, and managed, irrespective of the underlying systems or technologies. The Unified Namespace offers a way to bridge the gap between diverse data sources, legacy systems, and modern technologies, creating a unified view of data that can be easily accessed, shared, and leveraged across the organization.
 
-![Unified Namespace](https://assets.emqx.com/images/fabbcf68bef153964108dfde023542d1.png)
+![Unified Namespace](https://assets.emqx.com/images/7ced7ddc775e5ff7eff678a81ade30fd.png)
 
 <section
   class="promotion-pdf"
@@ -72,7 +72,7 @@ Finally, the Unified Namespace embodies scalability, flexibility, and adaptabili
 
 While the traditional Automation Pyramid remains valuable for conceptualizing industrial control systems, the Unified Namespace surpasses it by aligning with the demands of Industry 4.0 and digital transformation. As industries evolve, embracing the Unified Namespace enables companies to harness the full potential of data, streamline operations, and drive innovation, ultimately leading them to a more efficient and competitive future.
 
-Achieving the Unified Namespace architecture becomes remarkably easy when you integrate [EMQX](https://www.emqx.com/en/products/emqx) and [Neuron](https://github.com/emqx/neuron) into your existing infrastructure. In our next blog, we will delve into the integration, explaining why EMQX and Neuron are the ideal combination for building a Unified Namespace within your organization. Together, these components lay the foundation for a Unified Namespace that seamlessly connects the various facets of your industrial ecosystem, facilitating streamlined data management.
+Achieving the Unified Namespace architecture becomes remarkably easy when you integrate [EMQX](https://www.emqx.com/en/products/emqx) and [NeuronEX](https://www.emqx.com/en/products/neuronex) into your existing infrastructure. In our next blog, we will delve into the integration, explaining why EMQX and NeuronEX are the ideal combination for building a Unified Namespace within your organization. Together, these components lay the foundation for a Unified Namespace that seamlessly connects the various facets of your industrial ecosystem, facilitating streamlined data management.
 
 
 
