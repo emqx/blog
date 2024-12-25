@@ -53,7 +53,7 @@ Choosing the right platform for IoT in the Cloud can significantly simplify the 
 
 [EMQX](https://github.com/emqx/emqx) is an open-source IoT platform designed for high-performance and large-scale IoT applications. Its broker is fully compatible with MQTT, a lightweight messaging protocol designed for IoT, ensuring efficient communication between devices and the cloud. Additionally, it provides robust security features, including SSL/TLS encryption and secure device authentication, ensuring data security and privacy.
 
-EMQX is available as a fully managed service in the cloud: **[Learn more about EMQX Cloud](https://www.emqx.com/en/cloud)**
+EMQX is available as a fully managed service in the cloud: **[Learn more about EMQX Dedicated](https://www.emqx.com/en/cloud/dedicated)**
 
 ### Amazon Web Services (AWS) IoT
 
@@ -61,7 +61,7 @@ AWS IoT is a comprehensive suite of services that make it easy to build IoT appl
 
 **Learn more in our detailed guides to:**
 
-- *AWS IoT core (coming soon)*
+- *[AWS IoT core](https://www.emqx.com/en/blog/understanding-aws-iot-core)*
 - *AWS IoT service (coming soon)*
 - *AWS IoT gateway (coming soon)*
 
@@ -71,7 +71,7 @@ The Microsoft Azure IoT Suite is a set of preconfigured solutions that enable bu
 
 **Learn more in our detailed guides to:**
 
-- *Azure IoT hub* *(coming soon)*
+- *[Azure IoT hub](https://www.emqx.com/en/blog/azure-iot-hub-4-key-features-use-cases-and-how-to-get-started)*
 - *Azure IoT devices* *(coming soon)*
 - *Azure IoT solutions (coming soon)*
 
@@ -85,27 +85,27 @@ The IBM Watson IoT Platform is a fully managed, cloud-hosted service that makes 
 
 **Learn more in our detailed guide to cloud IoT platform(coming soon)**
 
-## Connecting Your IoT Devices with EMQX Cloud
+## Connecting Your IoT Devices with EMQX Dedicated
 
-[EMQX Cloud](https://www.emqx.com/en/cloud) is a fully managed [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) service that allows you to easily connect and manage IoT devices.
+[EMQX Dedicated](https://www.emqx.com/en/cloud/dedicated) (EMQX deployed in the cloud) is a fully managed [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) service that allows you to easily connect and manage IoT devices.
 
-It only takes a few steps to connect an IoT device to the cloud using EMQX Cloud:
+It only takes a few steps to connect an IoT device to the cloud using EMQX Dedicated:
 
-1. **Sign up and create an account:** Go to the EMQX Cloud website and sign up for an account.
-2. **Create a new deployment:** Log in to the EMQX Cloud Console and create a new deployment, which will act as your MQTT broker, handling the communication between your IoT devices.
+1. **Sign up and create an account:** Go to the EMQX Dedicated website and sign up for an account.
+2. **Create a new deployment:** Log in to the EMQX Dedicated Console and create a new deployment, which will act as your MQTT broker, handling the communication between your IoT devices.
 3. **Obtain connection credentials:** After creating the deployment, you will receive connection credentials like a server URL, and setup username, and password. These credentials will be used by your IoT device to authenticate and establish a connection with the MQTT broker.
-4. **Configure your IoT device:** On your IoT device, you need an [MQTT client library](https://www.emqx.com/en/mqtt-client-sdk) or software to establish a connection to the EMQX Cloud broker. Depending on your device and programming language, you may find different MQTT client libraries available. Configure the MQTT client with the connection credentials you obtained in the previous step.
+4. **Configure your IoT device:** On your IoT device, you need an [MQTT client library](https://www.emqx.com/en/mqtt-client-sdk) or software to establish a connection to the EMQX Dedicated. Depending on your device and programming language, you may find different MQTT client libraries available. Configure the MQTT client with the connection credentials you obtained in the previous step.
 5. **Publish and subscribe:** Once the MQTT connection is established, your device can publish messages to specific topics or subscribe to topics to receive messages from other devices or applications.
-6. **Implement your application logic:** Depending on your use case, you'll need to implement the application logic on both the IoT device and the application that will interact with the device via EMQX Cloud.
-7. **Monitor and manage:** EMQX Cloud typically provides monitoring and management tools through its dashboard. You can use these tools to keep track of your device's activity, manage access control, and perform other administrative tasks.
+6. **Implement your application logic:** Depending on your use case, you'll need to implement the application logic on both the IoT device and the application that will interact with the device via EMQX Dedicated.
+7. **Monitor and manage:** EMQX Dedicated typically provides monitoring and management tools through its dashboard. You can use these tools to keep track of your device's activity, manage access control, and perform other administrative tasks.
 
-EMQX Cloud offers affordable, secure, and dependable cloud services for 5G and Internet of Things applications across numerous countries and regions worldwide, utilizing the infrastructure provided by cloud providers. Connect your device to EMQX Cloud and start your IoT journey with ease and convenience.
+EMQX Dedicated offers affordable, secure, and dependable cloud services for 5G and Internet of Things applications across numerous countries and regions worldwide, utilizing the infrastructure provided by cloud providers. Connect your device to EMQX Dedicated and start your IoT journey with ease and convenience.
 
 
 
 <section class="promotion">
     <div>
-        Try EMQX Cloud for Free
+        Try EMQX Dedicated for Free
         <div class="is-size-14 is-text-normal has-text-weight-normal">No credit card required</div>
     </div>
     <a href="https://accounts.emqx.com/signup?continue=https://cloud-intl.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">Get Started →</a>
