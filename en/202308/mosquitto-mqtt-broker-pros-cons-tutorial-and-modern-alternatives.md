@@ -48,7 +48,7 @@ Many organizations are transitioning to running MQTT infrastructure in the cloud
 
 ### Limited Security Features
 
-Another limitation of Mosquitto MQTT is its limited security features. While it does provide basic security features such as username/password authentication and SSL/TLS encryption, it lacks advanced security mechanisms. For instance, Mosquitto MQTT does not support role-based access control (RBAC), which allows for fine-grained control over who can publish or subscribe to specific topics. This can be a concern in scenarios where sensitive data is being transmitted, or where strict access controls are required.
+Another limitation of Mosquitto MQTT is its limited security features. While it does provide basic security features such as username/clientID based ACL, username/password authentication and SSL/TLS encryption, it lacks advanced security mechanisms. For instance, Mosquitto MQTT does not support role-based access control (RBAC), which allows for fine-grained control over who can publish or subscribe to specific topics. This can be a concern in scenarios where sensitive data is being transmitted, or where strict access controls are required.
 
 ### No Built-In Clustering or Redundancy Features
 
