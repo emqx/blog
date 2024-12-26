@@ -112,6 +112,8 @@ Get to know the preferred protocol in IoT from beginner to master.
 ## [MQTT Programming](https://www.emqx.com/en/blog/category/mqtt-programming)
 Best practice of MQTT in various clients.
 
+- [How to Integrate MQTT in Your Electron Project](https://www.emqx.com/en/blog/how-to-use-mqtt-in-electron) ([Edit](https://github.com/emqx/blog/blob/main/en/202411/how-to-use-mqtt-in-electron.md))
+- [How to Use MQTT in Vue Projects](https://www.emqx.com/en/blog/how-to-use-mqtt-in-vue) ([Edit](https://github.com/emqx/blog/blob/main/en/202411/how-to-use-mqtt-in-vue.md))
 - [How to Use MQTT with PHP: A Guide for Real-Time Messaging](https://www.emqx.com/en/blog/how-to-use-mqtt-in-php) ([Edit](https://github.com/emqx/blog/blob/main/en/202411/how-to-use-mqtt-in-php.md))
 - [A Guide on Collecting and Reporting Soil Moisture with ESP32 and Sensor through MQTT](https://www.emqx.com/en/blog/hands-on-guide-on-esp32) ([Edit](https://github.com/emqx/blog/blob/main/en/202408/hands-on-guide-on-esp32.md))
 - [MQTT on ESP32: A Beginner's Guide](https://www.emqx.com/en/blog/esp32-connects-to-the-free-public-mqtt-broker) ([Edit](https://github.com/emqx/blog/blob/main/en/202408/esp32-connects-to-the-free-public-mqtt-broker.md))
@@ -139,8 +141,6 @@ Best practice of MQTT in various clients.
 - [How to Use MQTT in The React Native Project](https://www.emqx.com/en/blog/how-to-use-mqtt-in-react-native) ([Edit](https://github.com/emqx/blog/blob/main/en/202206/how-to-use-mqtt-in-react-native.md))
 - [How to use MQTT in Flask](https://www.emqx.com/en/blog/how-to-use-mqtt-in-flask) ([Edit](https://github.com/emqx/blog/blob/main/en/202205/how-to-use-mqtt-in-flask.md))
 - [Python MQTT Asynchronous Framework - HBMQTT](https://www.emqx.com/en/blog/python-async-mqtt-client-hbmqtt) ([Edit](https://github.com/emqx/blog/blob/main/en/202104/python-async-mqtt-client-hbmqtt.md))
-- [How to use MQTT in the Electron project](https://www.emqx.com/en/blog/how-to-use-mqtt-in-electron) ([Edit](https://github.com/emqx/blog/blob/main/en/202010/how-to-use-mqtt-in-electron.md))
-- [How to use MQTT in the Vue project](https://www.emqx.com/en/blog/how-to-use-mqtt-in-vue) ([Edit](https://github.com/emqx/blog/blob/main/en/202010/how-to-use-mqtt-in-vue.md))
 - [Comparison of Python MQTT Clients](https://www.emqx.com/en/blog/comparision-of-python-mqtt-client) ([Edit](https://github.com/emqx/blog/blob/main/en/202010/comparision-of-python-mqtt-client.md))
 - [Android and MQTT: Step by Step Guide](https://www.emqx.com/en/blog/android-connects-mqtt-using-kotlin) ([Edit](https://github.com/emqx/blog/blob/main/en/202006/android-connects-mqtt-using-kotlin.md))
 - [Upload Sensor Data to MQTT Cloud Service via NodeMCU (ESP8266)](https://www.emqx.com/en/blog/upload-sensor-data-to-mqtt-cloud-service-via-nodemcu-esp8266) ([Edit](https://github.com/emqx/blog/blob/main/en/201912/upload-sensor-data-to-mqtt-cloud-service-via-nodemcu-esp8266.md))
