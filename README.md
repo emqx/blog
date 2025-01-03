@@ -112,6 +112,7 @@ Get to know the preferred protocol in IoT from beginner to master.
 ## [MQTT Programming](https://www.emqx.com/en/blog/category/mqtt-programming)
 Best practice of MQTT in various clients.
 
+- [How to Use MQTT in the Angular Projects](https://www.emqx.com/en/blog/how-to-use-mqtt-in-angular) ([Edit](https://github.com/emqx/blog/blob/main/en/202501/how-to-use-mqtt-in-angular.md))
 - [How to Integrate MQTT in Your Electron Project](https://www.emqx.com/en/blog/how-to-use-mqtt-in-electron) ([Edit](https://github.com/emqx/blog/blob/main/en/202411/how-to-use-mqtt-in-electron.md))
 - [How to Use MQTT in Vue Projects](https://www.emqx.com/en/blog/how-to-use-mqtt-in-vue) ([Edit](https://github.com/emqx/blog/blob/main/en/202411/how-to-use-mqtt-in-vue.md))
 - [How to Use MQTT with PHP: A Guide for Real-Time Messaging](https://www.emqx.com/en/blog/how-to-use-mqtt-in-php) ([Edit](https://github.com/emqx/blog/blob/main/en/202411/how-to-use-mqtt-in-php.md))
@@ -137,7 +138,6 @@ Best practice of MQTT in various clients.
 - [MQTT with Node.js: A Beginner's Guide with Examples & FAQs](https://www.emqx.com/en/blog/how-to-use-mqtt-in-nodejs) ([Edit](https://github.com/emqx/blog/blob/main/en/202305/how-to-use-mqtt-in-nodejs.md))
 - [How to Use MQTT in Dart](https://www.emqx.com/en/blog/how-to-use-mqtt-in-dart) ([Edit](https://github.com/emqx/blog/blob/main/en/202211/how-to-use-mqtt-in-dart.md))
 - [How to Use MQTT in The Django Project](https://www.emqx.com/en/blog/how-to-use-mqtt-in-django) ([Edit](https://github.com/emqx/blog/blob/main/en/202210/how-to-use-mqtt-in-django.md))
-- [How to Use MQTT in The Angular Project](https://www.emqx.com/en/blog/how-to-use-mqtt-in-angular) ([Edit](https://github.com/emqx/blog/blob/main/en/202210/how-to-use-mqtt-in-angular.md))
 - [How to Use MQTT in The React Native Project](https://www.emqx.com/en/blog/how-to-use-mqtt-in-react-native) ([Edit](https://github.com/emqx/blog/blob/main/en/202206/how-to-use-mqtt-in-react-native.md))
 - [How to use MQTT in Flask](https://www.emqx.com/en/blog/how-to-use-mqtt-in-flask) ([Edit](https://github.com/emqx/blog/blob/main/en/202205/how-to-use-mqtt-in-flask.md))
 - [Python MQTT Asynchronous Framework - HBMQTT](https://www.emqx.com/en/blog/python-async-mqtt-client-hbmqtt) ([Edit](https://github.com/emqx/blog/blob/main/en/202104/python-async-mqtt-client-hbmqtt.md))
@@ -165,6 +165,7 @@ Best practice of MQTT in various clients.
 ## [MQTT Integration (Eco & Integration)](https://www.emqx.com/en/blog/category/eco-and-integration)
 Explore more with & via EMQ.
 
+- [Integrating MQTT with ThingsBoard for IoT Data Visualization](https://www.emqx.com/en/blog/how-to-use-thingsboard-to-access-mqtt-data) ([Edit](https://github.com/emqx/blog/blob/main/en/202501/how-to-use-thingsboard-to-access-mqtt-data.md))
 - [Building an End-to-End IoT Data Pipeline with Node-RED, EMQX, QuestDB, DuckDB, Grafana and PowerBI](https://www.emqx.com/en/blog/building-an-end-to-end-iot-data-pipeline) ([Edit](https://github.com/emqx/blog/blob/main/en/202411/building-an-end-to-end-iot-data-pipeline.md))
 - [Real-Time Monitoring and Predictive Maintenance with EMQX, RisingWave, and Grafana](https://www.emqx.com/en/blog/real-time-monitoring-with-emqx-risingwave-and-grafana) ([Edit](https://github.com/emqx/blog/blob/main/en/202411/real-time-monitoring-with-emqx-risingwave-and-grafana.md))
 - [Integrating STOMP with EMQX: A Comprehensive Guide](https://www.emqx.com/en/blog/integrating-stomp-with-emqx) ([Edit](https://github.com/emqx/blog/blob/main/en/202410/integrating-stomp-with-emqx.md))
@@ -196,7 +197,6 @@ Explore more with & via EMQ.
 - [Natural Interactions in IoT: Combining MQTT and ChatGPT](https://www.emqx.com/en/blog/natural-interactions-in-iot-combining-mqtt-and-chatgpt) ([Edit](https://github.com/emqx/blog/blob/main/en/202305/natural-interactions-in-iot-combining-mqtt-and-chatgpt.md))
 - [Monitoring MQTT broker with Prometheus and Grafana](https://www.emqx.com/en/blog/emqx-prometheus-grafana) ([Edit](https://github.com/emqx/blog/blob/main/en/202212/emqx-prometheus-grafana.md))
 - [Getting Data from EMQX Cloud with InfluxDB Native Collector](https://www.emqx.com/en/blog/getting-data-from-emqx-cloud-with-influxdb-native-collector) ([Edit](https://github.com/emqx/blog/blob/main/en/202208/getting-data-from-emqx-cloud-with-influxdb-native-collector.md))
-- [How to access MQTT data with ThingsBoard](https://www.emqx.com/en/blog/how-to-use-thingsboard-to-access-mqtt-data) ([Edit](https://github.com/emqx/blog/blob/main/en/202207/how-to-use-thingsboard-to-access-mqtt-data.md))
 - [EMQX + ClickHouse Implements IoT Data Collection and Analysis](https://www.emqx.com/en/blog/emqx-and-clickhouse-for-iot-data-access-and-analysis) ([Edit](https://github.com/emqx/blog/blob/main/en/202011/emqx-and-clickhouse-for-iot-data-access-and-analysis.md))
 - [Build EMQX + InfluxDB + Grafana IoT data visualization solution in one hour](https://www.emqx.com/en/blog/build-emqx-influxdb-grafana-iot-data-visualization-solution-in-one-hour) ([Edit](https://github.com/emqx/blog/blob/main/en/202001/build-emqx-influxdb-grafana-iot-data-visualization-solution-in-one-hour.md))
 - [Upload Sensor Data to MQTT Cloud Service via NodeMCU (ESP8266)](https://www.emqx.com/en/blog/upload-sensor-data-to-mqtt-cloud-service-via-nodemcu-esp8266) ([Edit](https://github.com/emqx/blog/blob/main/en/201912/upload-sensor-data-to-mqtt-cloud-service-via-nodemcu-esp8266.md))
