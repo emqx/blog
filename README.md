@@ -205,6 +205,7 @@ Explore more with & via EMQ.
 ## [EMQX Open Source | Broker](https://www.emqx.com/en/blog/category/emqx)
 EMQX is the world's most scalable open-source MQTT broker with a high performance that connects 100M+ IoT devices in 1 cluster, while maintaining 1M message per second throughput and sub-millisecond latency.
 
+- [Quick Start of EMQX MQTT Cloud Service](https://www.emqx.com/en/blog/quick-start-of-emqx-mqtt-cloud-service) ([Edit](https://github.com/emqx/blog/blob/main/en/202501/quick-start-of-emqx-mqtt-cloud-service.md))
 - [Efficient IoT Communication with LoRaWAN & MQTT](https://www.emqx.com/en/blog/lorawan-and-mqtt) ([Edit](https://github.com/emqx/blog/blob/main/en/202411/lorawan-and-mqtt.md))
 - [From Data to Decisions: Building Effective IoT Data Stacks](https://www.emqx.com/en/blog/building-effective-iot-data-stacks) ([Edit](https://github.com/emqx/blog/blob/main/en/202410/building-effective-iot-data-stacks.md))
 - [Stay Connected with No Data Lost: Discover the Power of Durable Sessions in EMQX Platform](https://www.emqx.com/en/blog/emqx-platform-durable-session) ([Edit](https://github.com/emqx/blog/blob/main/en/202410/emqx-platform-durable-session.md))
@@ -392,7 +393,6 @@ The easiest way to start MQTT service. Connect your IoT devices to any cloud wit
 - [The new version of EMQX Cloud realizes multi-project deployment management](https://www.emqx.com/en/blog/emqx-cloud-realizes-multi-project-deployment-management) ([Edit](https://github.com/emqx/blog/blob/main/en/202110/emqx-cloud-realizes-multi-project-deployment-management.md))
 - [EMQX Cloud now officially supports deployment on Google Cloud Platform](https://www.emqx.com/en/blog/introducing-emqx-cloud-on-google-cloud-platform) ([Edit](https://github.com/emqx/blog/blob/main/en/202109/introducing-emqx-cloud-on-google-cloud-platform.md))
 - [Introducing EMQX Cloud on Microsoft Azure](https://www.emqx.com/en/blog/introducing-emqx-cloud-on-microsoft-azure) ([Edit](https://github.com/emqx/blog/blob/main/en/202107/introducing-emqx-cloud-on-microsoft-azure.md))
-- [Quick Start of EMQX MQTT Cloud Service](https://www.emqx.com/en/blog/quick-start-of-emqx-mqtt-cloud-service) ([Edit](https://github.com/emqx/blog/blob/main/en/202107/quick-start-of-emqx-mqtt-cloud-service.md))
 - [Integrate EMQX MQTT Cloud with Home Assistant](https://www.emqx.com/en/blog/integrate-emqx-mqtt-cloud-with-home-assistant) ([Edit](https://github.com/emqx/blog/blob/main/en/202105/integrate-emqx-mqtt-cloud-with-home-assistant.md))
 - [Upload Sensor Data to MQTT Cloud Service via NodeMCU (ESP8266)](https://www.emqx.com/en/blog/upload-sensor-data-to-mqtt-cloud-service-via-nodemcu-esp8266) ([Edit](https://github.com/emqx/blog/blob/main/en/201912/upload-sensor-data-to-mqtt-cloud-service-via-nodemcu-esp8266.md))
 
