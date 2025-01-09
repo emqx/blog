@@ -492,6 +492,7 @@ Build a reliable, efficient and industry-specific Internet of Vehicles platform 
 
 ## [Industrial IoT | Unified Namespace | Sparkplug](https://www.emqx.com/en/blog/category/industrial-iot)
 
+- [ Siemens PLC and MQTT Integration: A Step-by-Step Guide](https://www.emqx.com/en/blog/siemens-plc-and-mqtt-integration) ([Edit](https://github.com/emqx/blog/blob/main/en/202501/siemens-plc-and-mqtt-integration.md))
 - [Industrial IoT Systems: Benefits, Essential Capabilities, and Best Practices](https://www.emqx.com/en/blog/industrial-iot-systems) ([Edit](https://github.com/emqx/blog/blob/main/en/202407/industrial-iot-systems.md))
 - [Comparing NeuronEX and Kepware: Choosing the Right Industrial IoT Solutions](https://www.emqx.com/en/blog/comparing-neuronex-and-kepware) ([Edit](https://github.com/emqx/blog/blob/main/en/202406/comparing-neuronex-and-kepware.md))
 - [Breaking Down Industrial Gateway Solutions: NeuronEX vs. Apache PLC4X, Kepware, and Monkot Server](https://www.emqx.com/en/blog/breaking-down-industrial-gateway-solutions) ([Edit](https://github.com/emqx/blog/blob/main/en/202405/breaking-down-industrial-gateway-solutions.md))
