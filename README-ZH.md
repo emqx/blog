@@ -457,6 +457,7 @@ Build a reliable, efficient and industry-specific Internet of Vehicles platform 
 
 ## [Industrial IoT | Unified Namespace | Sparkplug](https://www.emqx.com/zh/blog/category/industrial-iot)
 
+- [如何在离线环境下部署 EMQX ECP](https://www.emqx.com/zh/blog/how-to-deploy-emqx-ecp-in-an-offline-environment) ([Edit](https://github.com/emqx/blog/blob/main/zh/202501/how-to-deploy-emqx-ecp-in-an-offline-environment.md))
 - [高效管理物联网边缘节点：利用 EMQX ECP 实现边缘服务配置的版本管理与参数化下发](https://www.emqx.com/zh/blog/efficient-management-of-iot-edge-nodes) ([Edit](https://github.com/emqx/blog/blob/main/zh/202410/efficient-management-of-iot-edge-nodes.md))
 - [OPC UA 与 OPC DA：选型指南](https://www.emqx.com/zh/blog/opc-ua-vs-opc-da) ([Edit](https://github.com/emqx/blog/blob/main/zh/202406/opc-ua-vs-opc-da.md))
 - [BACnet 与 Modbus 协议对比指南](https://www.emqx.com/zh/blog/bacnet-vs-modbus) ([Edit](https://github.com/emqx/blog/blob/main/zh/202406/bacnet-vs-modbus.md))
