@@ -165,6 +165,7 @@ Best practice of MQTT in various clients.
 ## [MQTT Integration (Eco & Integration)](https://www.emqx.com/en/blog/category/eco-and-integration)
 Explore more with & via EMQ.
 
+- [How to Store MQTT Data in SQLite: A Step-by-Step Guide](https://www.emqx.com/en/blog/mqtt-to-sqlite) ([Edit](https://github.com/emqx/blog/blob/main/en/202501/mqtt-to-sqlite.md))
 - [Integrating MQTT with ThingsBoard for IoT Data Visualization](https://www.emqx.com/en/blog/how-to-use-thingsboard-to-access-mqtt-data) ([Edit](https://github.com/emqx/blog/blob/main/en/202501/how-to-use-thingsboard-to-access-mqtt-data.md))
 - [Building an End-to-End IoT Data Pipeline with Node-RED, EMQX, QuestDB, DuckDB, Grafana and PowerBI](https://www.emqx.com/en/blog/building-an-end-to-end-iot-data-pipeline) ([Edit](https://github.com/emqx/blog/blob/main/en/202411/building-an-end-to-end-iot-data-pipeline.md))
 - [Real-Time Monitoring and Predictive Maintenance with EMQX, RisingWave, and Grafana](https://www.emqx.com/en/blog/real-time-monitoring-with-emqx-risingwave-and-grafana) ([Edit](https://github.com/emqx/blog/blob/main/en/202411/real-time-monitoring-with-emqx-risingwave-and-grafana.md))
