@@ -95,9 +95,7 @@ After you have successfully connected to the deployment, you can publish and sub
 
 Congratulations! You have completed the operations of deployment creation, access control, and sending and receiving messages so far!
 
-By following this guide, you have experienced the process of building an MQTT IoT platform from scratch. Of course, this is just the beginning. EMQX Platform offers advanced features for you to explore. For example, you can configure VPC peering connections so that your MQTT cluster can be integrated with other services deployed on the same public cloud platform in the same region. You can also use the powerful rule engine function to save the messages received by the MQTT c
-
-luster to different databases or forward them to other message queues according to the rules. These functions do not require you to write a line of code!
+By following this guide, you have experienced the process of building an MQTT IoT platform from scratch. Of course, this is just the beginning. EMQX Platform offers advanced features for you to explore. For example, you can configure VPC peering connections so that your MQTT cluster can be integrated with other services deployed on the same public cloud platform in the same region. You can also use the powerful rule engine function to save the messages received by the MQTT cluster to different databases or forward them to other message queues according to the rules. These functions do not require you to write a line of code!
 
 For any questions, comments, or suggestions, contact us at [cloud-support@emqx.io](mailto:cloud-support@emqx.io). Let the EMQX Platform help you develop your IoT business more smoothly!
 
