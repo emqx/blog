@@ -206,6 +206,7 @@ Explore more with & via EMQ.
 ## [EMQX Open Source | Broker](https://www.emqx.com/en/blog/category/emqx)
 EMQX is the world's most scalable open-source MQTT broker with a high performance that connects 100M+ IoT devices in 1 cluster, while maintaining 1M message per second throughput and sub-millisecond latency.
 
+- [Introducing EMQX Platform Smart Data Hub: A New Era of Intelligent MQTT Data Processing](https://www.emqx.com/en/blog/introducing-emqx-platform-smart-data-hub) ([Edit](https://github.com/emqx/blog/blob/main/en/202501/introducing-emqx-platform-smart-data-hub.md))
 - [Quick Start of EMQX MQTT Cloud Service](https://www.emqx.com/en/blog/quick-start-of-emqx-mqtt-cloud-service) ([Edit](https://github.com/emqx/blog/blob/main/en/202501/quick-start-of-emqx-mqtt-cloud-service.md))
 - [Efficient IoT Communication with LoRaWAN & MQTT](https://www.emqx.com/en/blog/lorawan-and-mqtt) ([Edit](https://github.com/emqx/blog/blob/main/en/202411/lorawan-and-mqtt.md))
 - [From Data to Decisions: Building Effective IoT Data Stacks](https://www.emqx.com/en/blog/building-effective-iot-data-stacks) ([Edit](https://github.com/emqx/blog/blob/main/en/202410/building-effective-iot-data-stacks.md))
