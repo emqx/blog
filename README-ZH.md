@@ -194,6 +194,7 @@ Explore more with & via EMQ.
 ## [EMQX Open Source | Broker](https://www.emqx.com/zh/blog/category/emqx)
 EMQX is the world's most scalable open-source MQTT broker with a high performance that connects 100M+ IoT devices in 1 cluster, while maintaining 1M message per second throughput and sub-millisecond latency.
 
+- [使用 EMQX 接入 LwM2M 协议设备](https://www.emqx.com/zh/blog/integrating-lwm2m-with-mqtt) ([Edit](https://github.com/emqx/blog/blob/main/zh/202502/integrating-lwm2m-with-mqtt.md))
 - [持续监控云端数据：利用 EMQX ECP 集中管理 EMQX 集群](https://www.emqx.com/zh/blog/managing-emqx-clusters-with-emqx-ecp) ([Edit](https://github.com/emqx/blog/blob/main/zh/202411/managing-emqx-clusters-with-emqx-ecp.md))
 - [CoAP 协议介绍：特性、应用与优劣势](https://www.emqx.com/zh/blog/coap-protocol) ([Edit](https://github.com/emqx/blog/blob/main/zh/202411/coap-protocol.md))
 - [EMQX Platform 旗舰版：面向企业级 AI 和物联网应用的高级 MQTT 消息服务](https://www.emqx.com/zh/blog/introducing-emqx-premium) ([Edit](https://github.com/emqx/blog/blob/main/zh/202410/introducing-emqx-premium.md))
