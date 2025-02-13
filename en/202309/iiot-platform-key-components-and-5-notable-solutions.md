@@ -91,21 +91,21 @@ The dashboard should also provide tools for managing the system. This includes t
 
 ## 5 Notable IIoT Platforms
 
-### 1. Neuron and EMQX
+### 1. NeuronEX and EMQX
 
-The combination of [Neuron](https://github.com/emqx/neuron) and [EMQX](https://www.emqx.com/en/products/emqx) forms a potent Industrial Internet of Things (IIoT) platform designed to excel in the challenging landscape of industrial environments. Neuron, serving as the Industrial Connectivity Gateway, boasts real-time, asynchronous data processing capabilities with response times as low as 100 milliseconds. It ensures the efficient collection, aggregation, and transformation of data from an extensive array of industrial devices and systems, supporting protocols like [Modbus](https://www.emqx.com/en/blog/modbus-protocol-the-grandfather-of-iot-communication), [OPC UA](https://www.emqx.com/en/blog/opc-ua-protocol), [BACnet](https://www.emqx.com/en/blog/bacnet-protocol-basic-concepts-structure-obejct-model-explained), and more. This curated data is then seamlessly communicated to EMQX, an MQTT broker known for its robust messaging infrastructure, ensuring rapid and reliable data exchange while maintaining low latency.
+The combination of [NeuronEX](https://www.emqx.com/en/products/neuronex) and [EMQX](https://www.emqx.com/en/products/emqx) forms a potent Industrial Internet of Things (IIoT) platform designed to excel in the challenging landscape of industrial environments. NeuronEX, serving as the Industrial Connectivity Gateway, boasts real-time, asynchronous data processing capabilities with response times as low as 100 milliseconds. It ensures the efficient collection, aggregation, and transformation of data from an extensive array of industrial devices and systems, supporting protocols like [Modbus](https://www.emqx.com/en/blog/modbus-protocol-the-grandfather-of-iot-communication), [OPC UA](https://www.emqx.com/en/blog/opc-ua-protocol), [BACnet](https://www.emqx.com/en/blog/bacnet-protocol-basic-concepts-structure-obejct-model-explained), and more. This curated data is then seamlessly communicated to EMQX, an MQTT broker known for its robust messaging infrastructure, ensuring rapid and reliable data exchange while maintaining low latency.
 
-![Neuron and EMQX](https://assets.emqx.com/images/be4f2094505c31fa434bf926ac0ace11.png)
+![NeuronEX and EMQX](https://assets.emqx.com/images/c9d4d6c5bdb71217e9ae8717f6a29513.png)
 
 <section class="promotion">
     <div>
-        Try Neuron for Free
-             <div class="is-size-14 is-text-normal has-text-weight-normal">The Industrial IoT connectivity server</div>
+        Try NeuronEX for Free
+             <div class="is-size-14 is-text-normal has-text-weight-normal">The Industrial edge data hub.</div>
     </div>
-    <a href="https://www.emqx.com/en/try?product=neuron" class="button is-gradient px-5">Get Started →</a>
+    <a href="https://www.emqx.com/en/try?tab=self-managed" class="button is-gradient px-5">Get Started →</a>
 </section>
 
-Together, this integrated platform establishes a Unified Namespace, organizing data from diverse sources under standardized MQTT topics, simplifying data access and management. Its scalability accommodates the growth of IIoT ecosystems, and it excels in real-time data analytics, enabling data-driven decision-making and process optimization. Neuron and EMQX prioritize security, supporting encryption (TLS) and authentication mechanisms, ensuring the safeguarding of sensitive industrial data. This platform seamlessly integrates with other IoT applications, big data analytics tools, and cloud platforms, making it a versatile solution for comprehensive data management, analysis, and reporting within industrial operations, ultimately enhancing efficiency and competitiveness.
+Together, this integrated platform establishes a Unified Namespace, organizing data from diverse sources under standardized MQTT topics, simplifying data access and management. Its scalability accommodates the growth of IIoT ecosystems, and it excels in real-time data analytics, enabling data-driven decision-making and process optimization. NeuronEX and EMQX prioritize security, supporting encryption (TLS) and authentication mechanisms, ensuring the safeguarding of sensitive industrial data. This platform seamlessly integrates with other IoT applications, big data analytics tools, and cloud platforms, making it a versatile solution for comprehensive data management, analysis, and reporting within industrial operations, ultimately enhancing efficiency and competitiveness.
 
 <section class="promotion">
     <div>
