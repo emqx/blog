@@ -2,11 +2,11 @@
 
 Modern IoT applications require real-time and efficient communication protocols to manage the constant data flow between devices. One such protocol, MQTT (Message Queuing Telemetry Transport), has gained significant popularity in the IoT landscape due to its lightweight, low bandwidth, and high-performance capabilities. 
 
-This blog post will discuss deploying your MQTT infrastructure using [EMQX - a highly scalable MQTT broker](https://github.com/emqx/emqx), and Terraform - an Infrastructure as Code (IaC) tool.
+This blog post will discuss deploying your MQTT infrastructure using EMQX Platform, and Terraform - an Infrastructure as Code (IaC) tool.
 
-## EMQX and Terraform
+## EMQX Platform and Terraform
 
-[EMQX](https://github.com/emqx/emqx) is an open-source distributed MQTT broker that provides robust and scalable messaging services. It can handle millions of concurrent [MQTT connections](https://www.emqx.com/en/blog/how-to-set-parameters-when-establishing-an-mqtt-connection) and is optimized for performance, making it a perfect choice for IoT deployments.
+EMQX Platform, a scalable MQTT broker that provides robust and scalable messaging services. It can handle millions of concurrent [MQTT connections](https://www.emqx.com/en/blog/how-to-set-parameters-when-establishing-an-mqtt-connection) and is optimized for performance, making it a perfect choice for IoT deployments.
 
 Terraform is an IaC tool that defines, provides, and manages cloud infrastructure using a declarative language. By adopting Terraform in your MQTT deployments, you can:
 

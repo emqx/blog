@@ -153,6 +153,7 @@ Best practice of MQTT in various clients.
 ## [MQTT Integration (Eco & Integration)](https://www.emqx.com/zh/blog/category/eco-and-integration)
 Explore more with & via EMQ.
 
+- [5 分钟快速入门：在阿里云 Marketplace 中部署 EMQX](https://www.emqx.com/zh/blog/deploy-emqx-in-alibaba-cloud-marketplace) ([Edit](https://github.com/emqx/blog/blob/main/zh/202502/deploy-emqx-in-alibaba-cloud-marketplace.md))
 - [打造透明、高效的分布式系统：通过 EMQX ECP 集成实现链路追踪功能](https://www.emqx.com/zh/blog/emqx-ecp-datalayers-and-open-telemetry-collector) ([Edit](https://github.com/emqx/blog/blob/main/zh/202411/emqx-ecp-datalayers-and-open-telemetry-collector.md))
 - [使用 Node-RED 处理 MQTT 数据](https://www.emqx.com/zh/blog/using-node-red-to-process-mqtt-data) ([Edit](https://github.com/emqx/blog/blob/main/zh/202409/using-node-red-to-process-mqtt-data.md))
 - [MQTT + PostgreSQL 集成指南：实现车辆实时位置监控](https://www.emqx.com/zh/blog/mqtt-to-postgresql) ([Edit](https://github.com/emqx/blog/blob/main/zh/202408/mqtt-to-postgresql.md))
@@ -194,6 +195,7 @@ Explore more with & via EMQ.
 ## [EMQX Open Source | Broker](https://www.emqx.com/zh/blog/category/emqx)
 EMQX is the world's most scalable open-source MQTT broker with a high performance that connects 100M+ IoT devices in 1 cluster, while maintaining 1M message per second throughput and sub-millisecond latency.
 
+- [5 分钟快速入门：在阿里云 Marketplace 中部署 EMQX](https://www.emqx.com/zh/blog/deploy-emqx-in-alibaba-cloud-marketplace) ([Edit](https://github.com/emqx/blog/blob/main/zh/202502/deploy-emqx-in-alibaba-cloud-marketplace.md))
 - [使用 EMQX 接入 LwM2M 协议设备](https://www.emqx.com/zh/blog/integrating-lwm2m-with-mqtt) ([Edit](https://github.com/emqx/blog/blob/main/zh/202502/integrating-lwm2m-with-mqtt.md))
 - [持续监控云端数据：利用 EMQX ECP 集中管理 EMQX 集群](https://www.emqx.com/zh/blog/managing-emqx-clusters-with-emqx-ecp) ([Edit](https://github.com/emqx/blog/blob/main/zh/202411/managing-emqx-clusters-with-emqx-ecp.md))
 - [CoAP 协议介绍：特性、应用与优劣势](https://www.emqx.com/zh/blog/coap-protocol) ([Edit](https://github.com/emqx/blog/blob/main/zh/202411/coap-protocol.md))
