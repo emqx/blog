@@ -38,9 +38,9 @@ At the same time, there are also some challenges to overcome:
 - **Effective management of resource competition.** Since multiple tenants share the same infrastructure, such as network bandwidth, CPU or memory on the same machine, resource competition among tenants is inevitable. The key is that the system must be able to limit a tenant's resource usage to avoid some resources being exhausted. Usually, we can set quota and rate limit policies for each tenant to regulate resource consumptions. For example, tenants can have maximum connection and subscription limits, as well as restrictions on message rates. Once the limit is reached, services can be declined to prevent excessive resource consumption by a tenant.
 
 
-## EMQX Cloud Serverless: MQTT Service Based on Multi-Tenancy Architecture
+## EMQX Serverless: MQTT Service Based on Multi-Tenancy Architecture
 
-EMQ has launched its serverless MQTT service based on innovative multi-tenant technology, the [EMQX Cloud Serverless](https://www.emqx.com/en/cloud/serverless-mqtt). EMQX Cloud Serverless provides users with the blazing-fast deployment of MQTT services in just 5 seconds **without concerns about server infrastructure management or resource allocation when service scales**. It also offers a **forever free 1M session minutes/month**, minimizing IoT costs with the pay-as-you-go model.
+EMQ has launched its serverless MQTT service based on innovative multi-tenant technology, the [EMQX Serverless](https://www.emqx.com/en/cloud/serverless-mqtt). EMQX Serverless provides users with the blazing-fast deployment of MQTT services in just 5 seconds **without concerns about server infrastructure management or resource allocation when service scales**. It also offers a **forever free 1M session minutes/month**, minimizing IoT costs with the pay-as-you-go model.
 
 
 ## Conclusion
@@ -51,7 +51,7 @@ With the continuous burst of IoT devices and application scenarios, MQTT multi-t
 
 <section class="promotion">
     <div>
-        Try EMQX Cloud Serverless
+        Try EMQX Serverless
         <div class="is-size-14 is-text-normal has-text-weight-normal">Forever free under 1M session minutes/month.</div>
     </div>
     <a href="https://accounts.emqx.com/signup?continue=https://cloud-intl.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">Get Started →</a>
