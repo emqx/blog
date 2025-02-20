@@ -25,8 +25,6 @@ The CID offers several advantages over the traditional 4-tuple approach:
 - **Persistence through Address Changes:** A critical benefit of the CID is its persistence. Unlike the source IP address in the 4-tuple, which can change due to Network Address Translation (NAT), the CID* remains constant throughout the lifetime of a QUIC connection. This persistence allows both the client and server to maintain a seamless connection even if the client's IP address changes. 
 
 > According to the QUIC protocol, even though the CID may be dynamically updated multiple times during the life cycle of the connection, the client and server still have a consensus on the CID currently in use. This consensus remains unchanged throughout the life cycle of the QUIC connection.
-
-- **Multiplexing Efficiency:** QUIC is designed for multiplexing, supporting multiple data streams within a single connection. The CID plays a crucial role in enabling the receiver (client or server) to efficiently identify and demultiplex incoming packets, directing them to the appropriate data stream within the connection.
 - **Improved Security:** The random nature of the CID makes it difficult for attackers to predict and forge packets belonging to a specific QUIC connection. This enhances the overall security of the communication.
 
 ### Classic Problem: The NAT Wall and QUIC Connection Disruption
