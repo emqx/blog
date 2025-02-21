@@ -37,7 +37,7 @@ Here's how the problem unfolds:
 
 2. **Stable Connection (as long as NAT binding persists):** As long as the 4-tuple remains the same (including the client's source port) and the NAT binding is maintained, subsequent traffic from the client continues to be directed to server1.
 
-   ![Initial Handshake](https://assets.emqx.com/images/cdd3bec31e12a01c3a7b6be2316ed114.png)
+  ![Initial Handshake](https://assets.emqx.com/images/e5bf3867080ea6f300e7def8eb13ad14.png)
 
 3. **NAT Binding Disruption:** However, the client's source port assignment by the NAT can change due to two reasons:
 
@@ -45,7 +45,7 @@ Here's how the problem unfolds:
 
    2. **Client Network Change:** If the client moves to a different network, it will be assigned a new public IP address, again affecting the 4-tuple.
 
-      ![Address Migration LB has no QUlC awareness](https://assets.emqx.com/images/7d978c5dba02af94d1d462392fc9b813.png)
+    ![Address Migration LB has no QUlC awareness](https://assets.emqx.com/images/cfff6405f0b5ba01915914a05ebe518d.png)
 
 4. **Load Balancer Misdirection:** Traditional load balancers, lacking QUIC awareness, might perceive the altered 4-tuple as a new connection and direct the client's subsequent traffic to a different real server (say, server2).
 
@@ -78,7 +78,7 @@ The XDP QUIC steering module intercepts every incoming UDP packet targeting the 
 
 Flow 1: forming request and return path during handshake.
 
-![Initial Handshake](https://assets.emqx.com/images/354821c0dd9460414afe4a31792ea1be.png)
+![Initial Handshake](https://assets.emqx.com/images/e5bf3867080ea6f300e7def8eb13ad14.png)
 
 Request and Return path:
 
@@ -98,7 +98,7 @@ Request and Return path:
 
 Flow 2: QUIC steering after address migration
 
-![QUIC Steering](https://assets.emqx.com/images/b309cc7d5e0a09c2e1d9cc4e109cd1bb.png)
+![QUIC Steering](https://assets.emqx.com/images/33742544aaf6d7ac36cbc7db677f11cf.png)
 
 Precondition: Client move to another network or NAT rebinding happens that means the public address of the client has been changed!
 
