@@ -195,6 +195,7 @@ Explore more with & via EMQ.
 ## [EMQX Open Source | Broker](https://www.emqx.com/zh/blog/category/emqx)
 EMQX is the world's most scalable open-source MQTT broker with a high performance that connects 100M+ IoT devices in 1 cluster, while maintaining 1M message per second throughput and sub-millisecond latency.
 
+- [EMQX + DeepSeek：使用 LLM 构建可观测性数据智能分析工具](https://www.emqx.com/zh/blog/emqx-and-deepseek) ([Edit](https://github.com/emqx/blog/blob/main/zh/202502/emqx-and-deepseek.md))
 - [5 分钟快速入门：在阿里云 Marketplace 中部署 EMQX](https://www.emqx.com/zh/blog/deploy-emqx-in-alibaba-cloud-marketplace) ([Edit](https://github.com/emqx/blog/blob/main/zh/202502/deploy-emqx-in-alibaba-cloud-marketplace.md))
 - [使用 EMQX 接入 LwM2M 协议设备](https://www.emqx.com/zh/blog/integrating-lwm2m-with-mqtt) ([Edit](https://github.com/emqx/blog/blob/main/zh/202502/integrating-lwm2m-with-mqtt.md))
 - [持续监控云端数据：利用 EMQX ECP 集中管理 EMQX 集群](https://www.emqx.com/zh/blog/managing-emqx-clusters-with-emqx-ecp) ([Edit](https://github.com/emqx/blog/blob/main/zh/202411/managing-emqx-clusters-with-emqx-ecp.md))
