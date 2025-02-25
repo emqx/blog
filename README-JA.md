@@ -103,6 +103,7 @@ Explore more with & via EMQ.
 ## [EMQX Open Source | Broker](https://www.emqx.com/ja/blog/category/emqx)
 EMQX is the world's most scalable open-source MQTT broker with a high performance that connects 100M+ IoT devices in 1 cluster, while maintaining 1M message per second throughput and sub-millisecond latency.
 
+- [XDPとIPVSでQUIC用のロードバランサー実装](https://www.emqx.com/ja/blog/a-quic-load-balancing-implementation-using-xdp-and-ipvs) ([Edit](https://github.com/emqx/blog/blob/main/ja/202502/a-quic-load-balancing-implementation-using-xdp-and-ipvs.md))
 - [データを失わずに常時接続を維持：EMQXプラットフォームの強力なDurable Sessions機能](https://www.emqx.com/ja/blog/emqx-platform-durable-session) ([Edit](https://github.com/emqx/blog/blob/main/ja/202412/emqx-platform-durable-session.md))
 - [LoRaWAN & MQTTを活用した効率的なIoT通信](https://www.emqx.com/ja/blog/lorawan-and-mqtt) ([Edit](https://github.com/emqx/blog/blob/main/ja/202412/lorawan-and-mqtt.md))
 - [データから知能アプリへ：IoTにおけるEMQXとGenAI](https://www.emqx.com/ja/blog/emqx-platform-and-genai) ([Edit](https://github.com/emqx/blog/blob/main/ja/202409/emqx-platform-and-genai.md))
