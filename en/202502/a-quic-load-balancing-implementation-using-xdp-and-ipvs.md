@@ -25,6 +25,7 @@ The CID offers several advantages over the traditional 4-tuple approach:
 - **Persistence through Address Changes:** A critical benefit of the CID is its persistence. Unlike the source IP address in the 4-tuple, which can change due to Network Address Translation (NAT), the CID* remains constant throughout the lifetime of a QUIC connection. This persistence allows both the client and server to maintain a seamless connection even if the client's IP address changes. 
 
 > According to the QUIC protocol, even though the CID may be dynamically updated multiple times during the life cycle of the connection, the client and server still have a consensus on the CID currently in use. This consensus remains unchanged throughout the life cycle of the QUIC connection.
+
 - **Improved Security:** The random nature of the CID makes it difficult for attackers to predict and forge packets belonging to a specific QUIC connection. This enhances the overall security of the communication.
 
 ### Classic Problem: The NAT Wall and QUIC Connection Disruption
@@ -84,15 +85,15 @@ Request and Return path:
 
 | **Step** | **Action**                        | **Src Addr**   | **Dst Addr**   | **notes**                                                    |
 | :------- | :-------------------------------- | :------------- | :------------- | :----------------------------------------------------------- |
-| 1.       | Client Send QUIC Initial (CRYPTO) | Client Private | VIP            |                                                              |
-| 2.       | NAT translation                   | NAT GW Public  | VIP            |                                                              |
-| 3.       | LB select RS                      | NAT GW Public  | VIP            | LB Hashing SRC addr                                          |
-| 4.       | Server reply QUIC Handshake       | VIP            | NAT GW Public  | Server Assign SCID (Source Connection ID) which contains server id for XDP steering.Server DR (direct route) to the Client. |
-| 5.       | NAT translation                   | VIP            | Client Private | The request path and return path are now formed.NAT GW remember this Mapping. |
-|          | Client Send QUIC Handshake (ACK)  | Client Private | VIP            | Reuse 1.                                                     |
-|          | NAT translation                   | NAT GW Public  | VIP            | Reuse 2. NAT GW find routing in mapping                      |
-|          | LB forward to RS1                 | NAT GW Public  | VIP            | reuse 3.                                                     |
-|          | Network path is formed            |                |                | Client and Server will continue communicate with the path: 1 → 2 → 3 → 4 → 5 |
+| 1        | Client Send QUIC Initial (CRYPTO) | Client Private | VIP            |                                                              |
+| 2        | NAT translation                   | NAT GW Public  | VIP            |                                                              |
+| 3        | LB select RS                      | NAT GW Public  | VIP            | LB Hashing SRC addr                                          |
+| 4        | Server reply QUIC Handshake       | VIP            | NAT GW Public  | Server Assign SCID (Source Connection ID) which contains server id for XDP steering.Server DR (direct route) to the Client. |
+| 5        | NAT translation                   | VIP            | Client Private | The request path and return path are now formed.NAT GW remember this Mapping. |
+| 6        | Client Send QUIC Handshake (ACK)  | Client Private | VIP            | Reuse 1.                                                     |
+| 7        | NAT translation                   | NAT GW Public  | VIP            | Reuse 2. NAT GW find routing in mapping                      |
+| 8        | LB forward to RS1                 | NAT GW Public  | VIP            | reuse 3.                                                     |
+| 9        | Network path is formed            |                |                | Client and Server will continue communicate with the path: 1 → 2 → 3 → 4 → 5 |
 
 
 
@@ -104,13 +105,13 @@ Precondition: Client move to another network or NAT rebinding happens that means
 
 | **Step** | **Action**                 | **Src Addr**    | **Dst Addr**    | **notes**                                                    |
 | :------- | :------------------------- | :-------------- | :-------------- | :----------------------------------------------------------- |
-|          | Client send QUIC packet    | Client Private  | VIP             | Client detect network change thus start to probe the new path.ORClient just send regular QUIC packet.Both scenarios will work.The packet contains DCID (Destination Connection ID)which is the SCID in step 4) in above handshake flow. |
-| 2.       | NAT translation            | NAT GW Public 2 | VIP             | To public, client has a new public address                   |
-| 3.       | LB select RS 2             | NAT GW Public 2 | VIP             | LB Hashing SRC addr and it select RS 2                       |
-| 4.       | XDP QUIC steering          | NAT GW Public2  | VIP             | This is where the XDP QUIC steering module kicks in.It finds the DCID is targeting another host (RS 1), thus it reroute the packet to RS1 while keep the SRC and DST Addr unchanged. |
-| 5.       | RS 1 start probe new path  | VIP             | NAT GW Public 2 | The XDP QUIC steering module on RS 1 detects the UDP packet is for RS1  thus no action on it.QUIC stack on RS 1 detects the client address is changed from “NAT GW Public” to “NAT GW Public2”, thus start to probe new path. |
-|          | NAT translation            | Client Private  | VIP             | NAT Gateway has the mapping thus does the translation and forward to Client Private |
-| 7.       | New network path is formed |                 |                 | Client and Server will continue communicate with the path: 1 → 2 → 3 → 4 → 5 → 6 |
+| 1        | Client send QUIC packet    | Client Private  | VIP             | Client detect network change thus start to probe the new path.ORClient just send regular QUIC packet.Both scenarios will work.The packet contains DCID (Destination Connection ID)which is the SCID in step 4) in above handshake flow. |
+| 2        | NAT translation            | NAT GW Public 2 | VIP             | To public, client has a new public address                   |
+| 3        | LB select RS 2             | NAT GW Public 2 | VIP             | LB Hashing SRC addr and it select RS 2                       |
+| 4        | XDP QUIC steering          | NAT GW Public2  | VIP             | This is where the XDP QUIC steering module kicks in.It finds the DCID is targeting another host (RS 1), thus it reroute the packet to RS1 while keep the SRC and DST Addr unchanged. |
+| 5        | RS 1 start probe new path  | VIP             | NAT GW Public 2 | The XDP QUIC steering module on RS 1 detects the UDP packet is for RS1  thus no action on it.QUIC stack on RS 1 detects the client address is changed from “NAT GW Public” to “NAT GW Public2”, thus start to probe new path. |
+| 6        | NAT translation            | Client Private  | VIP             | NAT Gateway has the mapping thus does the translation and forward to Client Private |
+| 7        | New network path is formed |                 |                 | Client and Server will continue communicate with the path: 1 → 2 → 3 → 4 → 5 → 6 |
 
 ## Benefits of XDP QUIC Steering with IPVS Direct Routing
 
