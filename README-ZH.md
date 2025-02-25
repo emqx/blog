@@ -195,6 +195,7 @@ Explore more with & via EMQ.
 ## [EMQX Open Source | Broker](https://www.emqx.com/zh/blog/category/emqx)
 EMQX is the world's most scalable open-source MQTT broker with a high performance that connects 100M+ IoT devices in 1 cluster, while maintaining 1M message per second throughput and sub-millisecond latency.
 
+- [使用 XDP 和 IPVS 实现 QUIC 负载均衡](https://www.emqx.com/zh/blog/a-quic-load-balancing-implementation-using-xdp-and-ipvs) ([Edit](https://github.com/emqx/blog/blob/main/zh/202502/a-quic-load-balancing-implementation-using-xdp-and-ipvs.md))
 - [EMQX + DeepSeek：使用 LLM 构建可观测性数据智能分析工具](https://www.emqx.com/zh/blog/emqx-and-deepseek) ([Edit](https://github.com/emqx/blog/blob/main/zh/202502/emqx-and-deepseek.md))
 - [5 分钟快速入门：在阿里云 Marketplace 中部署 EMQX](https://www.emqx.com/zh/blog/deploy-emqx-in-alibaba-cloud-marketplace) ([Edit](https://github.com/emqx/blog/blob/main/zh/202502/deploy-emqx-in-alibaba-cloud-marketplace.md))
 - [使用 EMQX 接入 LwM2M 协议设备](https://www.emqx.com/zh/blog/integrating-lwm2m-with-mqtt) ([Edit](https://github.com/emqx/blog/blob/main/zh/202502/integrating-lwm2m-with-mqtt.md))
@@ -590,6 +591,7 @@ MQTTX is a Fully Open-source MQTT 5.0 cross-platform Desktop Client, makes it ea
 ## [Neuron - IIoT Connectivity Server](https://www.emqx.com/zh/blog/category/neuron)
 IoT edge industrial protocol gateway software, which supports one-stop access to dozens of industrial protocols and converts them into MQTT protocol to access the cloud industrial IoT platform. It just requires ultra-low resource consumption, and supports three major architectures of X86, ARM, and MIPS.
 
+- [NeuronEX 3.5.0 发布：增强工业数据采集与处理能力，赋能智能制造](https://www.emqx.com/zh/blog/neuronex-v-3-5-0-release-notes) ([Edit](https://github.com/emqx/blog/blob/main/zh/202502/neuronex-v-3-5-0-release-notes.md))
 - [利用 KeepAlived 实现 NeuronEX 双节点高可用](https://www.emqx.com/zh/blog/achieve-high-availability-for-neuronex-using-keepalived) ([Edit](https://github.com/emqx/blog/blob/main/zh/202502/achieve-high-availability-for-neuronex-using-keepalived.md))
 - [NeuronEX 3.4.0 发布：工业数据采集与处理能力全面升级](https://www.emqx.com/zh/blog/neuronex-v-3-4-0-release-notes) ([Edit](https://github.com/emqx/blog/blob/main/zh/202410/neuronex-v-3-4-0-release-notes.md))
 - [云端集中管控边缘服务：利用 EMQX ECP 在 K8s 上快速部署 NeuronEX ](https://www.emqx.com/zh/blog/deploy-neuronex-on-k8s-using-emqx-ecp) ([Edit](https://github.com/emqx/blog/blob/main/zh/202408/deploy-neuronex-on-k8s-using-emqx-ecp.md))
