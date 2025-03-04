@@ -112,6 +112,7 @@ Get to know the preferred protocol in IoT from beginner to master.
 ## [MQTT Programming](https://www.emqx.com/en/blog/category/mqtt-programming)
 Best practice of MQTT in various clients.
 
+- [How to Use MQTT in The Django Project](https://www.emqx.com/en/blog/how-to-use-mqtt-in-django) ([Edit](https://github.com/emqx/blog/blob/main/en/202502/how-to-use-mqtt-in-django.md))
 - [How to Use MQTT in the Angular Projects](https://www.emqx.com/en/blog/how-to-use-mqtt-in-angular) ([Edit](https://github.com/emqx/blog/blob/main/en/202501/how-to-use-mqtt-in-angular.md))
 - [How to Integrate MQTT in Your Electron Project](https://www.emqx.com/en/blog/how-to-use-mqtt-in-electron) ([Edit](https://github.com/emqx/blog/blob/main/en/202411/how-to-use-mqtt-in-electron.md))
 - [How to Use MQTT in Vue Projects](https://www.emqx.com/en/blog/how-to-use-mqtt-in-vue) ([Edit](https://github.com/emqx/blog/blob/main/en/202411/how-to-use-mqtt-in-vue.md))
@@ -137,7 +138,6 @@ Best practice of MQTT in various clients.
 - [How to Use MQTT on Raspberry Pi with Paho Python Client](https://www.emqx.com/en/blog/use-mqtt-with-raspberry-pi) ([Edit](https://github.com/emqx/blog/blob/main/en/202306/use-mqtt-with-raspberry-pi.md))
 - [MQTT with Node.js: A Beginner's Guide with Examples & FAQs](https://www.emqx.com/en/blog/how-to-use-mqtt-in-nodejs) ([Edit](https://github.com/emqx/blog/blob/main/en/202305/how-to-use-mqtt-in-nodejs.md))
 - [How to Use MQTT in Dart](https://www.emqx.com/en/blog/how-to-use-mqtt-in-dart) ([Edit](https://github.com/emqx/blog/blob/main/en/202211/how-to-use-mqtt-in-dart.md))
-- [How to Use MQTT in The Django Project](https://www.emqx.com/en/blog/how-to-use-mqtt-in-django) ([Edit](https://github.com/emqx/blog/blob/main/en/202210/how-to-use-mqtt-in-django.md))
 - [How to Use MQTT in The React Native Project](https://www.emqx.com/en/blog/how-to-use-mqtt-in-react-native) ([Edit](https://github.com/emqx/blog/blob/main/en/202206/how-to-use-mqtt-in-react-native.md))
 - [How to use MQTT in Flask](https://www.emqx.com/en/blog/how-to-use-mqtt-in-flask) ([Edit](https://github.com/emqx/blog/blob/main/en/202205/how-to-use-mqtt-in-flask.md))
 - [Python MQTT Asynchronous Framework - HBMQTT](https://www.emqx.com/en/blog/python-async-mqtt-client-hbmqtt) ([Edit](https://github.com/emqx/blog/blob/main/en/202104/python-async-mqtt-client-hbmqtt.md))
@@ -599,6 +599,7 @@ MQTTX is a Fully Open-source MQTT 5.0 cross-platform Desktop Client, makes it ea
 ## [Neuron - IIoT Connectivity Server](https://www.emqx.com/en/blog/category/neuron)
 IoT edge industrial protocol gateway software, which supports one-stop access to dozens of industrial protocols and converts them into MQTT protocol to access the cloud industrial IoT platform. It just requires ultra-low resource consumption, and supports three major architectures of X86, ARM, and MIPS.
 
+- [NeuronEX+Keepalived for High Availability: Master-Backup Mode Best Practice](https://www.emqx.com/en/blog/achieve-high-availability-for-neuronex-using-keepalived) ([Edit](https://github.com/emqx/blog/blob/main/en/202503/achieve-high-availability-for-neuronex-using-keepalived.md))
 - [NeuronEX 3.5.0 Released: Enhanced Industrial Data Collection and Processing Capabilities](https://www.emqx.com/en/blog/neuronex-v-3-5-0-release-notes) ([Edit](https://github.com/emqx/blog/blob/main/en/202502/neuronex-v-3-5-0-release-notes.md))
 - [NeuronEX 3.4.0 Released: Comprehensive Upgrades to Industrial Data Collection and Processing](https://www.emqx.com/en/blog/neuronex-v-3-4-0-release-notes) ([Edit](https://github.com/emqx/blog/blob/main/en/202410/neuronex-v-3-4-0-release-notes.md))
 - [From Data to Decisions: Building Effective IoT Data Stacks](https://www.emqx.com/en/blog/building-effective-iot-data-stacks) ([Edit](https://github.com/emqx/blog/blob/main/en/202410/building-effective-iot-data-stacks.md))
