@@ -60,9 +60,9 @@ Before proceeding, please ensure you have an MQTT broker to communicate and test
 
 - **Fully managed cloud service**
 
-  The fully managed cloud service is the easiest way to start an MQTT service. With [EMQX Cloud](https://www.emqx.com/en/cloud), you can get started in just a few minutes and run your MQTT service in 20+ regions across AWS, Google Cloud, and Microsoft Azure, ensuring global availability and fast connectivity.
+  The fully managed cloud service is the easiest way to start an MQTT service. With [EMQX Dedicated](https://www.emqx.com/en/cloud/dedicated), you can get started in just a few minutes and run your MQTT service in 20+ regions across AWS, Google Cloud, and Microsoft Azure, ensuring global availability and fast connectivity.
 
-   The latest edition, [EMQX Cloud Serverless](https://www.emqx.com/en/cloud/serverless-mqtt), provides a forever free 1M session minutes/month complimentary offering for developers to easily start their MQTT deployment within seconds.
+   The latest edition, [EMQX Serverless](https://www.emqx.com/en/cloud/serverless-mqtt), provides a forever free 1M session minutes/month complimentary offering for developers to easily start their MQTT deployment within seconds.
 
 - **Free public MQTT broker**
 
