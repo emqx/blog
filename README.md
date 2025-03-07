@@ -7,7 +7,7 @@
 ## [MQTT Tutorials](https://www.emqx.com/en/blog/category/mqtt-protocol)
 Get to know the preferred protocol in IoT from beginner to master.
 
-- [MQTT Protocol Explained: Ultimate Guide for IoT Beginners](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) ([Edit](https://github.com/emqx/blog/blob/main/en/202408/the-easiest-guide-to-getting-started-with-mqtt.md))
+- [Mastering MQTT: The Ultimate Beginner's Guide for 2025](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) ([Edit](https://github.com/emqx/blog/blob/main/en/202502/the-easiest-guide-to-getting-started-with-mqtt.md))
 - [MQTT QoS 0, 1, 2 Explained: A Quickstart Guide](https://www.emqx.com/en/blog/introduction-to-mqtt-qos) ([Edit](https://github.com/emqx/blog/blob/main/en/202408/introduction-to-mqtt-qos.md))
 - [MQTT Topics and Wildcards: A Beginner's Guide](https://www.emqx.com/en/blog/advanced-features-of-mqtt-topics) ([Edit](https://github.com/emqx/blog/blob/main/en/202407/advanced-features-of-mqtt-topics.md))
 - [Connecting MQTT and REST API: A Comprehensive Tutorial](https://www.emqx.com/en/blog/connecting-mqtt-and-rest-api) ([Edit](https://github.com/emqx/blog/blob/main/en/202407/connecting-mqtt-and-rest-api.md))
@@ -165,6 +165,7 @@ Best practice of MQTT in various clients.
 ## [MQTT Integration (Eco & Integration)](https://www.emqx.com/en/blog/category/eco-and-integration)
 Explore more with & via EMQ.
 
+- [Integrating Claude with MQTT: An Introduction to EMQX MCP Server](https://www.emqx.com/en/blog/integrating-claude-with-mqtt) ([Edit](https://github.com/emqx/blog/blob/main/en/202503/integrating-claude-with-mqtt.md))
 - [How to Store MQTT Data in SQLite: A Step-by-Step Guide](https://www.emqx.com/en/blog/mqtt-to-sqlite) ([Edit](https://github.com/emqx/blog/blob/main/en/202501/mqtt-to-sqlite.md))
 - [Integrating MQTT with ThingsBoard for IoT Data Visualization](https://www.emqx.com/en/blog/how-to-use-thingsboard-to-access-mqtt-data) ([Edit](https://github.com/emqx/blog/blob/main/en/202501/how-to-use-thingsboard-to-access-mqtt-data.md))
 - [Building an End-to-End IoT Data Pipeline with Node-RED, EMQX, QuestDB, DuckDB, Grafana and PowerBI](https://www.emqx.com/en/blog/building-an-end-to-end-iot-data-pipeline) ([Edit](https://github.com/emqx/blog/blob/main/en/202411/building-an-end-to-end-iot-data-pipeline.md))
