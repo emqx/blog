@@ -153,6 +153,7 @@ Best practice of MQTT in various clients.
 ## [MQTT Integration (Eco & Integration)](https://www.emqx.com/zh/blog/category/eco-and-integration)
 Explore more with & via EMQ.
 
+- [EMQX MCP Server：实现 Claude 与 MQTT 交互新可能](https://www.emqx.com/zh/blog/integrating-claude-with-mqtt) ([Edit](https://github.com/emqx/blog/blob/main/zh/202503/integrating-claude-with-mqtt.md))
 - [5 分钟快速入门：在阿里云 Marketplace 中部署 EMQX](https://www.emqx.com/zh/blog/deploy-emqx-in-alibaba-cloud-marketplace) ([Edit](https://github.com/emqx/blog/blob/main/zh/202502/deploy-emqx-in-alibaba-cloud-marketplace.md))
 - [打造透明、高效的分布式系统：通过 EMQX ECP 集成实现链路追踪功能](https://www.emqx.com/zh/blog/emqx-ecp-datalayers-and-open-telemetry-collector) ([Edit](https://github.com/emqx/blog/blob/main/zh/202411/emqx-ecp-datalayers-and-open-telemetry-collector.md))
 - [使用 Node-RED 处理 MQTT 数据](https://www.emqx.com/zh/blog/using-node-red-to-process-mqtt-data) ([Edit](https://github.com/emqx/blog/blob/main/zh/202409/using-node-red-to-process-mqtt-data.md))

@@ -165,6 +165,7 @@ Best practice of MQTT in various clients.
 ## [MQTT Integration (Eco & Integration)](https://www.emqx.com/en/blog/category/eco-and-integration)
 Explore more with & via EMQ.
 
+- [Why and How MQTT is Used in AI/LLM Applications: Architecture and Use Cases](https://www.emqx.com/en/blog/why-and-how-mqtt-is-used-in-ai-llm-applications) ([Edit](https://github.com/emqx/blog/blob/main/en/202503/why-and-how-mqtt-is-used-in-ai-llm-applications.md))
 - [Integrating Claude with MQTT: An Introduction to EMQX MCP Server](https://www.emqx.com/en/blog/integrating-claude-with-mqtt) ([Edit](https://github.com/emqx/blog/blob/main/en/202503/integrating-claude-with-mqtt.md))
 - [How to Store MQTT Data in SQLite: A Step-by-Step Guide](https://www.emqx.com/en/blog/mqtt-to-sqlite) ([Edit](https://github.com/emqx/blog/blob/main/en/202501/mqtt-to-sqlite.md))
 - [Integrating MQTT with ThingsBoard for IoT Data Visualization](https://www.emqx.com/en/blog/how-to-use-thingsboard-to-access-mqtt-data) ([Edit](https://github.com/emqx/blog/blob/main/en/202501/how-to-use-thingsboard-to-access-mqtt-data.md))

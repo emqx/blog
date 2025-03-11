@@ -4,7 +4,7 @@ NeuronEX is software designed for the industrial sector, specializing in equipme
 
 To ensure high availability, NeuronEX supports a master-backup dual-node deployment scheme combined with Keepalived to achieve automatic failover. This solution effectively addresses scenarios such as software failures or server downtime. When the master node fails, the backup node can automatically take over the service, ensuring business continuity. Additionally, the system supports automatic failback after the master node recovers, ensuring the service always operates in the optimal state.
 
-This blog will introduce how to combine NueronEX’s master-backup deployment with Keepalived to achieve 24/7 uninterrupted service. Users can mitigate the risk of single points of failure while ensuring their data integrity and business sustainability.
+This blog will introduce how to combine NeuronEX’s master-backup deployment with Keepalived to achieve 24/7 uninterrupted service. Users can mitigate the risk of single points of failure while ensuring their data integrity and business sustainability.
 
 ## NeuronEX Installation & Configuration
 
