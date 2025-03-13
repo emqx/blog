@@ -165,6 +165,7 @@ Best practice of MQTT in various clients.
 ## [MQTT Integration (Eco & Integration)](https://www.emqx.com/en/blog/category/eco-and-integration)
 Explore more with & via EMQ.
 
+- [Integrating MQTT with AI and LLMs in IoT: Best Practices and Future Perspectives](https://www.emqx.com/en/blog/integrating-mqtt-with-ai-and-llms) ([Edit](https://github.com/emqx/blog/blob/main/en/202503/integrating-mqtt-with-ai-and-llms.md))
 - [Why and How MQTT is Used in AI/LLM Applications: Architecture and Use Cases](https://www.emqx.com/en/blog/why-and-how-mqtt-is-used-in-ai-llm-applications) ([Edit](https://github.com/emqx/blog/blob/main/en/202503/why-and-how-mqtt-is-used-in-ai-llm-applications.md))
 - [Integrating Claude with MQTT: An Introduction to EMQX MCP Server](https://www.emqx.com/en/blog/integrating-claude-with-mqtt) ([Edit](https://github.com/emqx/blog/blob/main/en/202503/integrating-claude-with-mqtt.md))
 - [How to Store MQTT Data in SQLite: A Step-by-Step Guide](https://www.emqx.com/en/blog/mqtt-to-sqlite) ([Edit](https://github.com/emqx/blog/blob/main/en/202501/mqtt-to-sqlite.md))
@@ -499,6 +500,7 @@ Build a reliable, efficient and industry-specific Internet of Vehicles platform 
 
 ## [Industrial IoT | Unified Namespace | Sparkplug](https://www.emqx.com/en/blog/category/industrial-iot)
 
+- [Modbus Protocol 2025: From Basics to IIoT Integration](https://www.emqx.com/en/blog/modbus-protocol-the-grandfather-of-iot-communication) ([Edit](https://github.com/emqx/blog/blob/main/en/202503/modbus-protocol-the-grandfather-of-iot-communication.md))
 - [ Siemens PLC and MQTT Integration: A Step-by-Step Guide](https://www.emqx.com/en/blog/siemens-plc-and-mqtt-integration) ([Edit](https://github.com/emqx/blog/blob/main/en/202501/siemens-plc-and-mqtt-integration.md))
 - [Industrial IoT Systems: Benefits, Essential Capabilities, and Best Practices](https://www.emqx.com/en/blog/industrial-iot-systems) ([Edit](https://github.com/emqx/blog/blob/main/en/202407/industrial-iot-systems.md))
 - [Comparing NeuronEX and Kepware: Choosing the Right Industrial IoT Solutions](https://www.emqx.com/en/blog/comparing-neuronex-and-kepware) ([Edit](https://github.com/emqx/blog/blob/main/en/202406/comparing-neuronex-and-kepware.md))
@@ -511,7 +513,6 @@ Build a reliable, efficient and industry-specific Internet of Vehicles platform 
 - [EMQX Cloud and IIoT: Industrial Data Ingestion and Insight from Edge to ClickHouse](https://www.emqx.com/en/blog/industrial-data-ingestion-and-insight-from-edge-to-clickHouse) ([Edit](https://github.com/emqx/blog/blob/main/en/202312/industrial-data-ingestion-and-insight-from-edge-to-clickHouse.md))
 - [Data Storage Techniques and Strategies for Smart Manufacturing](https://www.emqx.com/en/blog/data-storage-techniques-and-strategies-for-smart-manufacturing) ([Edit](https://github.com/emqx/blog/blob/main/en/202311/data-storage-techniques-and-strategies-for-smart-manufacturing.md))
 - [From Data to Intelligence: One-Stop MQTT Platform for Smart Factory Advancements](https://www.emqx.com/en/blog/data-infrastructure-for-smart-factory) ([Edit](https://github.com/emqx/blog/blob/main/en/202311/data-infrastructure-for-smart-factory.md))
-- [Demystifying Modbus Protocols: RTU, TCP, ASCII, and Plus](https://www.emqx.com/en/blog/modbus-protocol-the-grandfather-of-iot-communication) ([Edit](https://github.com/emqx/blog/blob/main/en/202311/modbus-protocol-the-grandfather-of-iot-communication.md))
 - [Elevating IIoT: Unleashing the Power of MQTT, Edge Intelligence, and Timescale](https://www.emqx.com/en/blog/unleashing-the-power-of-mqtt-edge-intelligence-and-timescale) ([Edit](https://github.com/emqx/blog/blob/main/en/202311/unleashing-the-power-of-mqtt-edge-intelligence-and-timescale.md))
 - [KNX Protocol: The Basics and Its Possibilities with IoT](https://www.emqx.com/en/blog/knx-protocol) ([Edit](https://github.com/emqx/blog/blob/main/en/202311/knx-protocol.md))
 - [Leveraging the Hybrid Computing for Data Management and Analysis](https://www.emqx.com/en/blog/leveraging-the-hybrid-computing-for-data-management-and-analysis) ([Edit](https://github.com/emqx/blog/blob/main/en/202311/leveraging-the-hybrid-computing-for-data-management-and-analysis.md))
