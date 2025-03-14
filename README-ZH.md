@@ -98,6 +98,7 @@ Get to know the preferred protocol in IoT from beginner to master.
 ## [MQTT Programming](https://www.emqx.com/zh/blog/category/mqtt-programming)
 Best practice of MQTT in various clients.
 
+- [如何在 PHP 项目中使用 MQTT：实时消息传递的完整指南](https://www.emqx.com/zh/blog/how-to-use-mqtt-in-php) ([Edit](https://github.com/emqx/blog/blob/main/zh/202503/how-to-use-mqtt-in-php.md))
 - [在 Qt6 中使用 MQTT：入门指南](https://www.emqx.com/zh/blog/how-to-create-an-mqtt-application-in-qt6) ([Edit](https://github.com/emqx/blog/blob/main/zh/202411/how-to-create-an-mqtt-application-in-qt6.md))
 - [如何在 Java 中使用 Paho MQTT 客户端](https://www.emqx.com/zh/blog/how-to-use-mqtt-in-java) ([Edit](https://github.com/emqx/blog/blob/main/zh/202410/how-to-use-mqtt-in-java.md))
 - [在 ESP32 上使用 MQTT：入门指南](https://www.emqx.com/zh/blog/esp32-connects-to-the-free-public-mqtt-broker) ([Edit](https://github.com/emqx/blog/blob/main/zh/202410/esp32-connects-to-the-free-public-mqtt-broker.md))
@@ -113,7 +114,6 @@ Best practice of MQTT in various clients.
 - [如何在 Dart 中使用 MQTT](https://www.emqx.com/zh/blog/how-to-use-mqtt-in-dart) ([Edit](https://github.com/emqx/blog/blob/main/zh/202112/how-to-use-mqtt-in-dart.md))
 - [MQTT.js 入门教程](https://www.emqx.com/zh/blog/mqtt-js-tutorial) ([Edit](https://github.com/emqx/blog/blob/main/zh/202109/mqtt-js-tutorial.md))
 - [如何在 Node.js 项目中使用 MQTT](https://www.emqx.com/zh/blog/how-to-use-mqtt-in-nodejs) ([Edit](https://github.com/emqx/blog/blob/main/zh/202108/how-to-use-mqtt-in-nodejs.md))
-- [如何在 PHP 项目中使用 MQTT](https://www.emqx.com/zh/blog/how-to-use-mqtt-in-php) ([Edit](https://github.com/emqx/blog/blob/main/zh/202107/how-to-use-mqtt-in-php.md))
 - [Python MQTT 异步框架 —— HBMQTT](https://www.emqx.com/zh/blog/python-async-mqtt-client-hbmqtt) ([Edit](https://github.com/emqx/blog/blob/main/zh/202103/python-async-mqtt-client-hbmqtt.md))
 - [ESP8266 + MQTT ：如何实现 LED 灯的远程控制](https://www.emqx.com/zh/blog/esp8266_mqtt_led) ([Edit](https://github.com/emqx/blog/blob/main/zh/202101/esp8266_mqtt_led.md))
 - [如何在 React 项目中使用 MQTT](https://www.emqx.com/zh/blog/how-to-use-mqtt-in-react) ([Edit](https://github.com/emqx/blog/blob/main/zh/202010/how-to-use-mqtt-in-react.md))
