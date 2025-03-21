@@ -764,7 +764,6 @@ Accelerate digital transformation of industries based on EMQ data infrastructure
 - [三峡集团物联网大规模储能平台数据接入方案](https://www.emqx.com/zh/blog/ctg-large-scale-iot-data-platform) ([Edit](https://github.com/emqx/blog/blob/main/zh/202201/ctg-large-scale-iot-data-platform.md))
 - [数据基础支撑电力人工智能：新能源集控智能管理](https://www.emqx.com/zh/blog/power-artificial-intelligence) ([Edit](https://github.com/emqx/blog/blob/main/zh/202111/power-artificial-intelligence.md))
 - [运营商基于 MQTT 构建千万级 IoT 设备管理平台](https://www.emqx.com/zh/blog/application-of-mqtt-protocol-in-carriers) ([Edit](https://github.com/emqx/blog/blob/main/zh/202108/application-of-mqtt-protocol-in-carriers.md))
-- [MQTT 协议在石油行业数据采集中的应用](https://www.emqx.com/zh/blog/application-of-mqtt-protocol-in-oil-and-gas-industry) ([Edit](https://github.com/emqx/blog/blob/main/zh/202107/application-of-mqtt-protocol-in-oil-and-gas-industry.md))
 - [收款语音播报背后的金融支付物联网](https://www.emqx.com/zh/blog/finance-and-payment-iot-solution) ([Edit](https://github.com/emqx/blog/blob/main/zh/202105/finance-and-payment-iot-solution.md))
 - [赋能社区充电场景的云边一体化充电桩运营方案（EMQ + 依威能源）](https://www.emqx.com/zh/blog/emq-and-evpower-solution) ([Edit](https://github.com/emqx/blog/blob/main/zh/202012/emq-and-evpower-solution.md))
 - [EMQX 在中国建设银行物联网平台中的应用](https://www.emqx.com/zh/blog/application-of-emqx-in-iot-platform-of-ccb) ([Edit](https://github.com/emqx/blog/blob/main/zh/202011/application-of-emqx-in-iot-platform-of-ccb.md))
@@ -809,6 +808,7 @@ Guarantee the availability and reliability of the IoT platform.
 
 ## [应用案例](https://www.emqx.com/zh/blog/category/use-cases)
 
+- [MQTT 协议赋能石油行业：实时可靠的生产数据采集](https://www.emqx.com/zh/blog/application-of-mqtt-protocol-in-oil-and-gas-industry) ([Edit](https://github.com/emqx/blog/blob/main/zh/202503/application-of-mqtt-protocol-in-oil-and-gas-industry.md))
 - [EMQ & F5：面向大型智能物联场景的数据安全接入方案](https://www.emqx.com/zh/blog/emq-and-f5) ([Edit](https://github.com/emqx/blog/blob/main/zh/202411/emq-and-f5.md))
 - [连接低碳与能源的数据桥梁：EMQX 在全球智慧能源行业的应用](https://www.emqx.com/zh/blog/emqx-in-the-smart-energy-industry) ([Edit](https://github.com/emqx/blog/blob/main/zh/202409/emqx-in-the-smart-energy-industry.md))
 - [风景与美食的数字交响曲：EMQX 在全球智慧旅游与餐饮业的应用](https://www.emqx.com/zh/blog/application-of-emqx-in-smart-tourism-and-catering-industry) ([Edit](https://github.com/emqx/blog/blob/main/zh/202408/application-of-emqx-in-smart-tourism-and-catering-industry.md))
