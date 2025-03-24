@@ -1,4 +1,4 @@
-在当今互联互通的世界中，各种设备通过网络无缝通信，实现自动化和数据交换。了解物联网和 MQTT 的相关知识变得愈加重要。本文是 MQTT 协议的入门指南，您可以通过本文了解 MQTT 的基本原理、核心概念及实际应用，快速开启 MQTT 服务和应用的开发。
+在快速发展的物联网领域，高效的设备通信至关重要。MQTT 正是实现这一目标的核心协议。本指南将带您深入解析 MQTT 这一专为低带宽、高延迟网络设计的轻量级发布-订阅协议。我们将系统讲解 MQTT 的基础原理、核心概念和实际应用场景，通过专业洞见与实操案例相结合，为您提供掌握 MQTT 协议、加速物联网项目的完整知识体系。
 
 ## 什么是 MQTT？
 
@@ -18,7 +18,7 @@ MQTT 所具有的适用于物联网特定需求的特点和功能，使其成为
 
 ## MQTT 的工作原理
 
-要了解 MQTT 的工作原理，首先需要掌握以下几个概念：MQTT 客户端、MQTT Broker、发布-订阅模式、主题、QoS。
+MQTT 是基于发布-订阅模式的通信协议，由 MQTT 客户端通过主题（Topic）发布或订阅消息，通过 MQTT Broker 集中管理消息路由，并依据预设的服务质量等级(QoS)确保端到端消息传递可靠性。
 
 **MQTT 客户端**
 
@@ -28,7 +28,7 @@ MQTT 所具有的适用于物联网特定需求的特点和功能，使其成为
 
 MQTT Broker 是负责处理客户端请求的关键组件，包括建立连接、断开连接、订阅和取消订阅等操作，同时还负责消息的转发。一个高效强大的 MQTT Broker 能够轻松应对海量连接和百万级消息吞吐量，从而帮助物联网服务提供商专注于业务发展，快速构建可靠的 MQTT 应用。
 
-关于 MQTT Broker 的更多详情，请参阅文章 [2024 年最全面的 MQTT Broker 比较指南](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison)。
+关于 MQTT Broker 的更多详情，请参阅文章 [2025 年最全面的 MQTT Broker 比较指南](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison)。
 
 **发布-订阅模式**
 
@@ -102,7 +102,7 @@ EMQX 是一个可以「无限连接、任意集成、随处运行」的大规模
 
 - **免费的公共 MQTT Broker**
 
-  在本文中，我们将使用 EMQ 提供的[免费公共 MQTT 服务器](https://www.emqx.com/zh/mqtt/public-mqtt5-broker)，它基于完全托管的 [MQTT 云服务 - EMQX Cloud](https://www.emqx.com/zh/cloud) 创建。服务器信息如下：
+  在本文中，我们将使用 EMQ 提供的[免费的公共 MQTT 服务器](https://www.emqx.com/zh/mqtt/public-mqtt5-broker)，它基于完全托管的 [MQTT 云服务 - EMQX Cloud](https://www.emqx.com/zh/cloud) 创建。服务器信息如下：
 
   >Server: `broker.emqx.io`
   >
@@ -274,7 +274,40 @@ MQTT 客户端在向服务器发起 CONNECT 请求时，可以选择是否发送
 
 关于 MQTT 遗嘱消息的更多内容，请阅读文章 [MQTT 遗嘱消息的使用](https://www.emqx.com/zh/blog/use-of-mqtt-will-message)。
 
-## 2024 年值得关注的 7 大 MQTT 协议技术趋势
+## 协议对比：MQTT 的核心优势 
+
+除 MQTT 外，HTTP、WebSocket 和 CoAP 等协议也常用于物联网领域。相较而言，MQTT 通过异步通信机制展现出独特优势：更低的带宽占用、轻量级发布-订阅模型，以及优化的报文头设计。这些使其特别适用于资源受限环境和大规模设备网络部署场景。
+
+MQTT 与其他协议的深度对比分析可参考以下专题文章：
+
+- [MQTT vs HTTP](https://www.emqx.com/zh/blog/mqtt-vs-http)
+- [MQTT vs WebSocket](https://www.emqx.com/zh/blog/mqtt-vs-websocket)
+- [MQTT vs CoAP](https://www.emqx.com/zh/blog/mqtt-vs-coap)
+- [MQTT vs AMQP](https://www.emqx.com/zh/blog/mqtt-vs-amqp-for-iot-communications)
+
+## MQTT 进阶
+
+### MQTT 安全最佳实践
+
+MQTT 安全性在物联网应用中至关重要——物联网设备通常处理敏感数据，若缺乏完善的安全防护，攻击者可能利用漏洞拦截消息、篡改数据或破坏关键系统，甚至造成严重损害。为确保 MQTT 的安全性，通常采用以下几种方法：
+
+- 认证
+  - **[用户名/密码认证](https://www.emqx.com/zh/blog/securing-mqtt-with-username-and-password-authentication)**
+  - **[SCRAM 增强认证](https://www.emqx.com/zh/blog/leveraging-enhanced-authentication-for-mqtt-security)**
+  - **[其他认证方法](https://www.emqx.com/zh/blog/a-deep-dive-into-token-based-authentication-and-oauth-2-0-in-mqtt)**
+- **[授权](https://www.emqx.com/zh/blog/authorization-in-mqtt-using-acls-to-control-access-to-mqtt-messaging)**
+- **[流量控制](https://www.emqx.com/zh/blog/improve-the-reliability-and-security-of-mqtt-broker-with-rate-limit)**
+- **[TLS/SSL](https://www.emqx.com/zh/blog/fortifying-mqtt-communication-security-with-ssl-tls)**
+
+通过采取这些防护措施，企业能够有效保障 MQTT 通信安全，维护物联网系统的完整性与机密性，构建可靠的安全防护体系。
+
+### MQTT 数据存储
+
+通过 MQTT 连接的数百万设备持续产生有价值的数据，当这些数据被存储和分析时，其价值将得到进一步释放。但根据 MQTT 协议规范，MQTT Broker 本身并不具备数据存储功能。因此，必须将其与适当的数据库解决方案集成，才能有效管理和利用这些数据。选择合适的数据库不仅能优化数据存储效率，还能提升物联网应用的扩展性。
+
+获取 MQTT 数据库选型指南：[Database for MQTT Data Storage: A Selection Guide](https://www.emqx.com/en/blog/database-for-mqtt-data-storage).
+
+## 2025 年 MQTT 的 8 大趋势
 
 ### **MQTT over QUIC**
 
@@ -293,6 +326,7 @@ Serverless MQTT 作为前沿的架构创新，使 MQTT 服务的快速部署变�
     </div>
     <a href="https://accounts-zh.emqx.com/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient">开始试用 →</a>
 </section>
+
 
 ### **MQTT 多租户架构**
 
@@ -321,6 +355,12 @@ MQTT 跨域集群是一种创新架构，允许部署在不同区域或云端的
 ### **MQTT Streams**
 
 MQTT Streams 是 MQTT 协议备受期待的一项扩展能力，能够在 MQTT Broker 内实时处理海量、高频的数据流。这一创新功能支持历史消息重播，确保数据一致性、审计和合规。内置的流处理功能将简化物联网数据处理架构，成为基于 MQTT 的物联网应用中实时数据管理的宝贵工具。
+
+### MQTT + AI
+
+物联网的快速发展和人工智能的兴起为智能互联系统开辟了新可能。MQTT 正在连接物理设备世界与人工智能数字智慧，为 AI 应用构建"神经系统"——可靠而迅捷地传输信号——使大语言模型（LLM）等 AI 系统能够在互联环境中感知、推理并采取行动。这场革新才刚刚开始，但 MQTT 经过验证的技术特性与持续演进，意味着它将继续在未来数年成为 AIoT 创新的核心基础设施。
+
+更多详情，请查看白皮书：[MQTT + AI 白皮书：数据赋能技术革命](https://www.emqx.com/zh/resources/mqtt-platform-for-ai)
 
 ## 深入学习 MQTT
 
