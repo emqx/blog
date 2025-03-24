@@ -112,6 +112,7 @@ Get to know the preferred protocol in IoT from beginner to master.
 ## [MQTT Programming](https://www.emqx.com/en/blog/category/mqtt-programming)
 Best practice of MQTT in various clients.
 
+- [MQTT in Python with Paho Client: Beginner's Guide 2025](https://www.emqx.com/en/blog/how-to-use-mqtt-in-python) ([Edit](https://github.com/emqx/blog/blob/main/en/202503/how-to-use-mqtt-in-python.md))
 - [How to Use MQTT in The Django Project](https://www.emqx.com/en/blog/how-to-use-mqtt-in-django) ([Edit](https://github.com/emqx/blog/blob/main/en/202502/how-to-use-mqtt-in-django.md))
 - [How to Use MQTT in the Angular Projects](https://www.emqx.com/en/blog/how-to-use-mqtt-in-angular) ([Edit](https://github.com/emqx/blog/blob/main/en/202501/how-to-use-mqtt-in-angular.md))
 - [How to Integrate MQTT in Your Electron Project](https://www.emqx.com/en/blog/how-to-use-mqtt-in-electron) ([Edit](https://github.com/emqx/blog/blob/main/en/202411/how-to-use-mqtt-in-electron.md))
@@ -119,7 +120,6 @@ Best practice of MQTT in various clients.
 - [How to Use MQTT with PHP: A Guide for Real-Time Messaging](https://www.emqx.com/en/blog/how-to-use-mqtt-in-php) ([Edit](https://github.com/emqx/blog/blob/main/en/202411/how-to-use-mqtt-in-php.md))
 - [A Guide on Collecting and Reporting Soil Moisture with ESP32 and Sensor through MQTT](https://www.emqx.com/en/blog/hands-on-guide-on-esp32) ([Edit](https://github.com/emqx/blog/blob/main/en/202408/hands-on-guide-on-esp32.md))
 - [MQTT on ESP32: A Beginner's Guide](https://www.emqx.com/en/blog/esp32-connects-to-the-free-public-mqtt-broker) ([Edit](https://github.com/emqx/blog/blob/main/en/202408/esp32-connects-to-the-free-public-mqtt-broker.md))
-- [MQTT in Python with Paho Client: Beginner's Guide 2024](https://www.emqx.com/en/blog/how-to-use-mqtt-in-python) ([Edit](https://github.com/emqx/blog/blob/main/en/202408/how-to-use-mqtt-in-python.md))
 - [JavaScript MQTT Client: A Beginner's Guide to MQTT.js](https://www.emqx.com/en/blog/mqtt-js-tutorial) ([Edit](https://github.com/emqx/blog/blob/main/en/202406/mqtt-js-tutorial.md))
 - [Using MQTT on ESP8266: A Quick Start Guide](https://www.emqx.com/en/blog/esp8266-connects-to-the-public-mqtt-broker) ([Edit](https://github.com/emqx/blog/blob/main/en/202405/esp8266-connects-to-the-public-mqtt-broker.md))
 - [How to Use MQTT in the Flutter Project](https://www.emqx.com/en/blog/using-mqtt-in-flutter) ([Edit](https://github.com/emqx/blog/blob/main/en/202405/using-mqtt-in-flutter.md))
@@ -477,6 +477,7 @@ The world's most scalable and reliable MQTT messaging platform to connect, move 
 ## [Internet of Vehicles | Connected Cars](https://www.emqx.com/en/blog/category/internet-of-vehicles)
 Build a reliable, efficient and industry-specific Internet of Vehicles platform based on EMQ's practical experience, from theoretical knowledge such as protocol selection to practical operations like platform architecture design.
 
+- [CAN Bus Uncovered: Basics and Applications in Vehicles](https://www.emqx.com/en/blog/can-bus-how-it-works-pros-and-cons) ([Edit](https://github.com/emqx/blog/blob/main/en/202503/can-bus-how-it-works-pros-and-cons.md))
 - [MQTT in Connected Cars: Key Benefits and Real-World Applications](https://www.emqx.com/en/blog/mqtt-for-internet-of-vehicles) ([Edit](https://github.com/emqx/blog/blob/main/en/202411/mqtt-for-internet-of-vehicles.md))
 - [DDS and MQTT: Basics, Challenges and Integration Benefits](https://www.emqx.com/en/blog/navigating-dds-basics-limitations-and-integration-with-mqtt) ([Edit](https://github.com/emqx/blog/blob/main/en/202408/navigating-dds-basics-limitations-and-integration-with-mqtt.md))
 - [Vehicle + UNS: Enabling Comprehensive Data Interoperability Throughout the SDV Lifecycle](https://www.emqx.com/en/blog/vehicle-and-uns) ([Edit](https://github.com/emqx/blog/blob/main/en/202407/vehicle-and-uns.md))
@@ -486,7 +487,6 @@ Build a reliable, efficient and industry-specific Internet of Vehicles platform 
 - [Data Stream Processing for Software-Defined Vehicle](https://www.emqx.com/en/blog/data-stream-processing-for-software-defined-vehicle) ([Edit](https://github.com/emqx/blog/blob/main/en/202306/data-stream-processing-for-software-defined-vehicle.md))
 - [What Is V2X and The Future of Vehicle to Everything Connectivity](https://www.emqx.com/en/blog/what-is-v2x-and-the-future-of-vehicle-to-everything-connectivity) ([Edit](https://github.com/emqx/blog/blob/main/en/202306/what-is-v2x-and-the-future-of-vehicle-to-everything-connectivity.md))
 - [Bridging Demanded Signals From CAN Bus to MQTT by eKuiper](https://www.emqx.com/en/blog/bridging-demanded-signals-from-can-bus-to-mqtt-by-ekuiper) ([Edit](https://github.com/emqx/blog/blob/main/en/202306/bridging-demanded-signals-from-can-bus-to-mqtt-by-ekuiper.md))
-- [CAN Bus: What Is It and How Does It Work?](https://www.emqx.com/en/blog/can-bus-how-it-works-pros-and-cons) ([Edit](https://github.com/emqx/blog/blob/main/en/202305/can-bus-how-it-works-pros-and-cons.md))
 - [What Is the QUIC Protocol?](https://www.emqx.com/en/blog/quic-protocol-the-features-use-cases-and-impact-for-iot-iov) ([Edit](https://github.com/emqx/blog/blob/main/en/202304/quic-protocol-the-features-use-cases-and-impact-for-iot-iov.md))
 - [Why Are Connected Cars Transforming the Auto Industry?](https://www.emqx.com/en/blog/connected-cars-and-automotive-connectivity-all-you-need-to-know) ([Edit](https://github.com/emqx/blog/blob/main/en/202304/connected-cars-and-automotive-connectivity-all-you-need-to-know.md))
 - [How to Achieve Flexible Data Collection for Internet of Vehicles](https://www.emqx.com/en/blog/how-to-achieve-flexible-data-collection-for-internet-of-vehicles) ([Edit](https://github.com/emqx/blog/blob/main/en/202212/how-to-achieve-flexible-data-collection-for-internet-of-vehicles.md))
