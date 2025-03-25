@@ -7,7 +7,7 @@
 ## [MQTT Tutorials](https://www.emqx.com/zh/blog/category/mqtt-protocol)
 Get to know the preferred protocol in IoT from beginner to master.
 
-- [MQTT 协议快速入门：基础知识和实用教程](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) ([Edit](https://github.com/emqx/blog/blob/main/zh/202410/the-easiest-guide-to-getting-started-with-mqtt.md))
+- [MQTT 协议快速入门 2025：基础知识和实用教程](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) ([Edit](https://github.com/emqx/blog/blob/main/zh/202503/the-easiest-guide-to-getting-started-with-mqtt.md))
 - [MQTT QoS 0、1、2 解析：快速入门指南](https://www.emqx.com/zh/blog/introduction-to-mqtt-qos) ([Edit](https://github.com/emqx/blog/blob/main/zh/202410/introduction-to-mqtt-qos.md))
 - [MQTT 主题与通配符（Topics & Wildcards）入门手册](https://www.emqx.com/zh/blog/advanced-features-of-mqtt-topics) ([Edit](https://github.com/emqx/blog/blob/main/zh/202410/advanced-features-of-mqtt-topics.md))
 - [MQTT vs HTTP：谁更适合物联网？](https://www.emqx.com/zh/blog/mqtt-vs-http) ([Edit](https://github.com/emqx/blog/blob/main/zh/202408/mqtt-vs-http.md))
