@@ -89,6 +89,7 @@ Best practice of MQTT in various clients.
 ## [MQTT Integration (Eco & Integration)](https://www.emqx.com/ja/blog/category/eco-and-integration)
 Explore more with & via EMQ.
 
+- [AI/LLMアプリケーションでMQTTが使用する理由と方法：アーキテクチャとユースケース](https://www.emqx.com/ja/blog/why-and-how-mqtt-is-used-in-ai-llm-applications) ([Edit](https://github.com/emqx/blog/blob/main/ja/202503/why-and-how-mqtt-is-used-in-ai-llm-applications.md))
 - [Node-RED、EMQX、QuestDB、DuckDB、Grafana、PowerBIを用いたエンドツーエンドのIoTデータパイプライン構築](https://www.emqx.com/ja/blog/building-an-end-to-end-iot-data-pipeline) ([Edit](https://github.com/emqx/blog/blob/main/ja/202412/building-an-end-to-end-iot-data-pipeline.md))
 - [MQTT & micro-ROS: 効率的なロボティクスアプリケーションの構築](https://www.emqx.com/ja/blog/mqtt-and-micro-ros) ([Edit](https://github.com/emqx/blog/blob/main/ja/202407/mqtt-and-micro-ros.md))
 - [EMQX と Datadog の統合による効率的な監視の実現](https://www.emqx.com/ja/blog/seamlessly-integrating-emqx-with-datadog-for-efficient-monitoring) ([Edit](https://github.com/emqx/blog/blob/main/ja/202407/seamlessly-integrating-emqx-with-datadog-for-efficient-monitoring.md))
