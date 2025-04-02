@@ -98,6 +98,7 @@ Get to know the preferred protocol in IoT from beginner to master.
 ## [MQTT Programming](https://www.emqx.com/zh/blog/category/mqtt-programming)
 Best practice of MQTT in various clients.
 
+- [如何在 Electron 项目中使用 MQTT](https://www.emqx.com/zh/blog/how-to-use-mqtt-in-electron) ([Edit](https://github.com/emqx/blog/blob/main/zh/202503/how-to-use-mqtt-in-electron.md))
 - [如何在 PHP 项目中使用 MQTT：实时消息传递的完整指南](https://www.emqx.com/zh/blog/how-to-use-mqtt-in-php) ([Edit](https://github.com/emqx/blog/blob/main/zh/202503/how-to-use-mqtt-in-php.md))
 - [在 Qt6 中使用 MQTT：入门指南](https://www.emqx.com/zh/blog/how-to-create-an-mqtt-application-in-qt6) ([Edit](https://github.com/emqx/blog/blob/main/zh/202411/how-to-create-an-mqtt-application-in-qt6.md))
 - [如何在 Java 中使用 Paho MQTT 客户端](https://www.emqx.com/zh/blog/how-to-use-mqtt-in-java) ([Edit](https://github.com/emqx/blog/blob/main/zh/202410/how-to-use-mqtt-in-java.md))
@@ -117,7 +118,6 @@ Best practice of MQTT in various clients.
 - [Python MQTT 异步框架 —— HBMQTT](https://www.emqx.com/zh/blog/python-async-mqtt-client-hbmqtt) ([Edit](https://github.com/emqx/blog/blob/main/zh/202103/python-async-mqtt-client-hbmqtt.md))
 - [ESP8266 + MQTT ：如何实现 LED 灯的远程控制](https://www.emqx.com/zh/blog/esp8266_mqtt_led) ([Edit](https://github.com/emqx/blog/blob/main/zh/202101/esp8266_mqtt_led.md))
 - [如何在 React 项目中使用 MQTT](https://www.emqx.com/zh/blog/how-to-use-mqtt-in-react) ([Edit](https://github.com/emqx/blog/blob/main/zh/202010/how-to-use-mqtt-in-react.md))
-- [如何在 Electron 项目中使用 MQTT](https://www.emqx.com/zh/blog/how-to-use-mqtt-in-electron) ([Edit](https://github.com/emqx/blog/blob/main/zh/202009/how-to-use-mqtt-in-electron.md))
 - [使用 WebSocket 连接 MQTT 服务器](https://www.emqx.com/zh/blog/connect-to-mqtt-broker-with-websocket) ([Edit](https://github.com/emqx/blog/blob/main/zh/202009/connect-to-mqtt-broker-with-websocket.md))
 - [Python MQTT 客户端对比](https://www.emqx.com/zh/blog/comparision-of-python-mqtt-client) ([Edit](https://github.com/emqx/blog/blob/main/zh/202009/comparision-of-python-mqtt-client.md))
 - [如何在 Vue 项目中使用 MQTT](https://www.emqx.com/zh/blog/how-to-use-mqtt-in-vue) ([Edit](https://github.com/emqx/blog/blob/main/zh/202009/how-to-use-mqtt-in-vue.md))
