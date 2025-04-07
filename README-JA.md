@@ -7,6 +7,7 @@
 ## [MQTT Tutorials](https://www.emqx.com/ja/blog/category/mqtt-protocol)
 Get to know the preferred protocol in IoT from beginner to master.
 
+- [MQTTマスターガイド：初心者向け解説2025年版](https://www.emqx.com/ja/blog/the-easiest-guide-to-getting-started-with-mqtt) ([Edit](https://github.com/emqx/blog/blob/main/ja/202504/the-easiest-guide-to-getting-started-with-mqtt.md))
 - [MQTTリクエスト／レスポンスの解説と例 | MQTT 5機能](https://www.emqx.com/ja/blog/mqtt5-request-response) ([Edit](https://github.com/emqx/blog/blob/main/ja/202410/mqtt5-request-response.md))
 - [トピックエイリアス - MQTT 5.0の新機能](https://www.emqx.com/ja/blog/mqtt5-topic-alias) ([Edit](https://github.com/emqx/blog/blob/main/ja/202410/mqtt5-topic-alias.md))
 - [MQTT共有サブスクリプション：実践的なガイドラインとユースケース | MQTT 5機能](https://www.emqx.com/ja/blog/introduction-to-mqtt5-protocol-shared-subscription) ([Edit](https://github.com/emqx/blog/blob/main/ja/202410/introduction-to-mqtt5-protocol-shared-subscription.md))
@@ -27,7 +28,6 @@ Get to know the preferred protocol in IoT from beginner to master.
 - [MQTT 5.0 新機能を実践して体験: MQTTX CLI ベースの使用例](https://www.emqx.com/ja/blog/demonstrate-mqtt-5-0-features-using-mqttx-cli) ([Edit](https://github.com/emqx/blog/blob/main/ja/202309/demonstrate-mqtt-5-0-features-using-mqttx-cli.md))
 - [MQTT Publish-Subscribe Pattern 概要](https://www.emqx.com/ja/blog/mqtt-5-introduction-to-publish-subscribe-model) ([Edit](https://github.com/emqx/blog/blob/main/ja/202309/mqtt-5-introduction-to-publish-subscribe-model.md))
 - [MQTTとは? MQTTがIoTに最適なプロトコルである理由は?](https://www.emqx.com/ja/blog/what-is-the-mqtt-protocol) ([Edit](https://github.com/emqx/blog/blob/main/ja/202309/what-is-the-mqtt-protocol.md))
-- [MQTTプロトコル解説：基礎知識とクイック・チュートリアル](https://www.emqx.com/ja/blog/the-easiest-guide-to-getting-started-with-mqtt) ([Edit](https://github.com/emqx/blog/blob/main/ja/202306/the-easiest-guide-to-getting-started-with-mqtt.md))
 - [Python言語の「Paho」MQTTクライアントの使用法](https://www.emqx.com/ja/blog/how-to-use-mqtt-in-python) ([Edit](https://github.com/emqx/blog/blob/main/ja/202306/how-to-use-mqtt-in-python.md))
 - [IoTの未来を開く：2023年のMQTT技術動向7選](https://www.emqx.com/ja/blog/7-mqtt-trends-in-2023) ([Edit](https://github.com/emqx/blog/blob/main/ja/202305/7-mqtt-trends-in-2023.md))
 
