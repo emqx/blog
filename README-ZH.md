@@ -809,6 +809,7 @@ Guarantee the availability and reliability of the IoT platform.
 
 ## [应用案例](https://www.emqx.com/zh/blog/category/use-cases)
 
+- [吉利汽车采用 EMQX 与 AutoMQ 联合方案构建公私有云一体化的车联网核心架构](https://www.emqx.com/zh/blog/emqx-and-automq) ([Edit](https://github.com/emqx/blog/blob/main/zh/202504/emqx-and-automq.md))
 - [MQTT 协议赋能石油行业：实时可靠的生产数据采集](https://www.emqx.com/zh/blog/application-of-mqtt-protocol-in-oil-and-gas-industry) ([Edit](https://github.com/emqx/blog/blob/main/zh/202503/application-of-mqtt-protocol-in-oil-and-gas-industry.md))
 - [EMQ & F5：面向大型智能物联场景的数据安全接入方案](https://www.emqx.com/zh/blog/emq-and-f5) ([Edit](https://github.com/emqx/blog/blob/main/zh/202411/emq-and-f5.md))
 - [连接低碳与能源的数据桥梁：EMQX 在全球智慧能源行业的应用](https://www.emqx.com/zh/blog/emqx-in-the-smart-energy-industry) ([Edit](https://github.com/emqx/blog/blob/main/zh/202409/emqx-in-the-smart-energy-industry.md))
