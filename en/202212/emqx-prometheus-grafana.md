@@ -126,7 +126,13 @@ Ultimately, we save the above configuration file content as `prometheus.yaml` an
 After completing the configuration of Prometheus, we can start the Prometheus service by using the file. If you have downloaded the Prometheus image using Docker, you can start Prometheus with the following command:
 
 ```
-docker run -d --name prometheus -p 9090:9090 -v /path/to/your/prometheus.yaml:/etc/prometheus.yaml prom/prometheus --config.file=/etc/prometheus/prometheus.yaml
+docker run -d --name prometheus -p 9090:9090 -v /path/to/your/prometheus.yaml:/etc/prometheus/prometheus.yaml prom/prometheus --config.file=/etc/prometheus/prometheus.yaml
+```
+
+Alternatively, you can use a more flexible directory mounting approach:
+
+```
+docker run -d --name prometheus -p 9090:9090 -v /path/to/prometheus:/etc/prometheus prom/prometheus --config.file=/etc/prometheus/prometheus.yaml
 ```
 
 If you install Prometheus by other methods, you can specify the configuration file path when running Prometheus, for example:
