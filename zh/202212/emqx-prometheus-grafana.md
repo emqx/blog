@@ -131,7 +131,13 @@ scrape_configs:
 在完成了 Prometheus 的配置后，我们就可以通过使用配置文件来启动 Prometheus 服务了。如果您是使用 Docker 安装的 Prometheus，可以通过以下命令启动 Prometheus：
 
 ```
-docker run -d --name prometheus -p 9090:9090 -v /path/to/your/prometheus.yaml:/etc/prometheus.yaml prom/prometheus --config.file=/etc/prometheus/prometheus.yaml
+docker run -d --name prometheus -p 9090:9090 -v /path/to/your/prometheus.yaml:/etc/prometheus/prometheus.yaml prom/prometheus --config.file=/etc/prometheus/prometheus.yaml
+```
+
+或者采用更灵活的目录挂载方式：
+
+```
+docker run -d --name prometheus -p 9090:9090 -v /path/to/prometheus:/etc/prometheus prom/prometheus --config.file=/etc/prometheus/prometheus.yaml
 ```
 
 如果是通过其它方式下载和安装的，可以在运行 Prometheus 时指定配置文件路径，例如：
