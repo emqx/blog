@@ -4,7 +4,7 @@
 
 Before entering the world of UNS, it is important to have a basic knowledge of MQTT.
 
-MQTT (Message Queuing Telemetry Transport) is a lightweight, publish-subscribe-based messaging protocol. It was created in 1991 by Andy Stanford-Clark (IBM) and Arlen Nipper (Eurotech) to connect oil pipelines over unreliable satellite networks. Thus, since day 1, MQTT has been designed to provide efficient connectivity for resource-constrained devices and low-bandwidth, high-latency, or unreliable networks. Now it has become the de-facto standard of the IoT industry.
+MQTT (Message Queuing Telemetry Transport) is a lightweight, publish-subscribe-based messaging protocol. It was created in 1999 by Andy Stanford-Clark (IBM) and Arlen Nipper (Eurotech) to connect oil pipelines over unreliable satellite networks. Thus, since day 1, MQTT has been designed to provide efficient connectivity for resource-constrained devices and low-bandwidth, high-latency, or unreliable networks. Now it has become the de-facto standard of the IoT industry.
 
 For more details on MQTT, please refer to [MQTT Protocol: How It Works & Core Concepts Explained](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt).
 
