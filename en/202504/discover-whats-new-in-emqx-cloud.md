@@ -1,6 +1,6 @@
 We are thrilled to announce the new release of **EMQX Cloud**! This version introduces powerful new capabilities and significant enhancements designed to improve cross-region connectivity, scalability, offer greater billing flexibility, and streamline your development workflow.
 
-## **Seamless Multi-Cluster Architectures with Cluster Linking (Dedicated Plan)**
+## Cluster Linking for Dedicated Plan
 
 Unlock advanced multi-cluster communication and scaling capabilities with the introduction of **Cluster Linking**, now available for **Dedicated** deployments. This powerful feature enables you to bridge EMQX clusters, even across different geographical regions, facilitating robust distributed MQTT architectures and enhancing overall system resilience and scalability.
 
@@ -16,7 +16,7 @@ The cross-region linking capability ensures global coverage while maintaining op
 
 **Learn more about Cluster Linking:** [https://docs.emqx.com/en/cloud/latest/cluster_linking/cluster_linking.html](https://www.google.com/url?sa=E&q=https%3A%2F%2Fdocs.emqx.com%2Fen%2Fcloud%2Flatest%2Fcluster_linking%2Fcluster_linking.html)
 
-## Expanded Payment Options with Cloud Marketplace Integration
+## Cloud Marketplace Integration
 
 We're expanding your payment options! You can now utilize major cloud marketplaces for billing and payments with EMQX Cloud. 
 
@@ -34,7 +34,7 @@ This integration offers several advantages:
 - Utilization of existing cloud credits for EMQX Cloud services
 - Simplified procurement processes
 
-## **Streamlined Development with Improved Online Debugging Tool**
+## Online Debugging Tool
 
 We've significantly enhanced the built-in MQTT online testing tool within the EMQX Cloud console. Debugging your client connections and message flows is now simpler and more efficient:
 
