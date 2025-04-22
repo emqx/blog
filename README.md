@@ -609,6 +609,7 @@ MQTTX is a Fully Open-source MQTT 5.0 cross-platform Desktop Client, makes it ea
 ## [Neuron - IIoT Connectivity Server](https://www.emqx.com/en/blog/category/neuron)
 IoT edge industrial protocol gateway software, which supports one-stop access to dozens of industrial protocols and converts them into MQTT protocol to access the cloud industrial IoT platform. It just requires ultra-low resource consumption, and supports three major architectures of X86, ARM, and MIPS.
 
+- [Best Practices of NeuronEX Device Control Capabilities for IIoT Automation](https://www.emqx.com/en/blog/neuronex-device-control) ([Edit](https://github.com/emqx/blog/blob/main/en/202504/neuronex-device-control.md))
 - [Effectively Managing OPC UA Server Tags with NeuronEX's Tag Browser Feature](https://www.emqx.com/en/blog/managing-opc-ua-server-tags-with-neuronex-tag-browser) ([Edit](https://github.com/emqx/blog/blob/main/en/202503/managing-opc-ua-server-tags-with-neuronex-tag-browser.md))
 - [NeuronEX + DeepSeek: Enhancing Complex IIoT Data Stream Processing with LLM](https://www.emqx.com/en/blog/neuronex-and-deepseek) ([Edit](https://github.com/emqx/blog/blob/main/en/202503/neuronex-and-deepseek.md))
 - [NeuronEX+Keepalived for High Availability: Master-Backup Mode Best Practice](https://www.emqx.com/en/blog/achieve-high-availability-for-neuronex-using-keepalived) ([Edit](https://github.com/emqx/blog/blob/main/en/202503/achieve-high-availability-for-neuronex-using-keepalived.md))
