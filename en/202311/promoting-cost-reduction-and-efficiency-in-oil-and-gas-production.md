@@ -8,7 +8,7 @@ Based on historical cases, EMQ’s solution can help oil and gas companies save 
 
 EMQ provides a comprehensive cloud-edge collaborative architecture encompassing industrial data acquisition, edge computing, data integration, and remote operational management. This solution can be used by oil and gas companies for real-time monitoring, equipment management, HSE(Health, Safety, Environment) management, smart production, and intelligent applications. With EMQ, enterprises can achieve greater efficiency and better control over their operations.
 
-![Architecture diagram](https://assets.emqx.com/images/a3788c3a294a9582e46a5f4d710218bf.png)
+![Architecture diagram](https://assets.emqx.com/images/4f04feeebb8a54db2d55e43cffb1df36.png)
 
 ### Real-time Industrial Data Acquisition
 
