@@ -89,6 +89,7 @@ Best practice of MQTT in various clients.
 ## [MQTT Integration (Eco & Integration)](https://www.emqx.com/ja/blog/category/eco-and-integration)
 Explore more with & via EMQ.
 
+- [MCP over MQTT：EMQXでAI駆動インテリジェンスを実現するエージェンティック IoT](https://www.emqx.com/ja/blog/mcp-over-mqtt) ([Edit](https://github.com/emqx/blog/blob/main/ja/202505/mcp-over-mqtt.md))
 - [MQTTとAI・LLMのIoT統合：ベストプラクティスと今後の展望](https://www.emqx.com/ja/blog/integrating-mqtt-with-ai-and-llms) ([Edit](https://github.com/emqx/blog/blob/main/ja/202503/integrating-mqtt-with-ai-and-llms.md))
 - [AI/LLMアプリケーションでMQTTが使用する理由と方法：アーキテクチャとユースケース](https://www.emqx.com/ja/blog/why-and-how-mqtt-is-used-in-ai-llm-applications) ([Edit](https://github.com/emqx/blog/blob/main/ja/202503/why-and-how-mqtt-is-used-in-ai-llm-applications.md))
 - [Node-RED、EMQX、QuestDB、DuckDB、Grafana、PowerBIを用いたエンドツーエンドのIoTデータパイプライン構築](https://www.emqx.com/ja/blog/building-an-end-to-end-iot-data-pipeline) ([Edit](https://github.com/emqx/blog/blob/main/ja/202412/building-an-end-to-end-iot-data-pipeline.md))
@@ -105,6 +106,7 @@ Explore more with & via EMQ.
 ## [EMQX Open Source | Broker](https://www.emqx.com/ja/blog/category/emqx)
 EMQX is the world's most scalable open-source MQTT broker with a high performance that connects 100M+ IoT devices in 1 cluster, while maintaining 1M message per second throughput and sub-millisecond latency.
 
+- [DeepSeek+EMQX：LLMでインテリジェントな可観測データ分析ツールを構築](https://www.emqx.com/ja/blog/emqx-and-deepseek) ([Edit](https://github.com/emqx/blog/blob/main/ja/202505/emqx-and-deepseek.md))
 - [XDPとIPVSでQUIC用のロードバランサー実装](https://www.emqx.com/ja/blog/a-quic-load-balancing-implementation-using-xdp-and-ipvs) ([Edit](https://github.com/emqx/blog/blob/main/ja/202502/a-quic-load-balancing-implementation-using-xdp-and-ipvs.md))
 - [データを失わずに常時接続を維持：EMQXプラットフォームの強力なDurable Sessions機能](https://www.emqx.com/ja/blog/emqx-platform-durable-session) ([Edit](https://github.com/emqx/blog/blob/main/ja/202412/emqx-platform-durable-session.md))
 - [LoRaWAN & MQTTを活用した効率的なIoT通信](https://www.emqx.com/ja/blog/lorawan-and-mqtt) ([Edit](https://github.com/emqx/blog/blob/main/ja/202412/lorawan-and-mqtt.md))
