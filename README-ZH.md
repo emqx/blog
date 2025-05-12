@@ -198,6 +198,7 @@ Explore more with & via EMQ.
 ## [EMQX Open Source | Broker](https://www.emqx.com/zh/blog/category/emqx)
 EMQX is the world's most scalable open-source MQTT broker with a high performance that connects 100M+ IoT devices in 1 cluster, while maintaining 1M message per second throughput and sub-millisecond latency.
 
+- [开启 EMQX 新篇章：采用商业源码许可证，加速 MQTT + AI 创新](https://www.emqx.com/zh/blog/adopting-business-source-license-to-accelerate-mqtt-and-ai-innovation) ([Edit](https://github.com/emqx/blog/blob/main/zh/202505/adopting-business-source-license-to-accelerate-mqtt-and-ai-innovation.md))
 - [使用 XDP 和 IPVS 实现 QUIC 负载均衡](https://www.emqx.com/zh/blog/a-quic-load-balancing-implementation-using-xdp-and-ipvs) ([Edit](https://github.com/emqx/blog/blob/main/zh/202502/a-quic-load-balancing-implementation-using-xdp-and-ipvs.md))
 - [EMQX + DeepSeek：使用 LLM 构建可观测性数据智能分析工具](https://www.emqx.com/zh/blog/emqx-and-deepseek) ([Edit](https://github.com/emqx/blog/blob/main/zh/202502/emqx-and-deepseek.md))
 - [5 分钟快速入门：在阿里云 Marketplace 中部署 EMQX](https://www.emqx.com/zh/blog/deploy-emqx-in-alibaba-cloud-marketplace) ([Edit](https://github.com/emqx/blog/blob/main/zh/202502/deploy-emqx-in-alibaba-cloud-marketplace.md))
@@ -827,7 +828,6 @@ Guarantee the availability and reliability of the IoT platform.
 - [「数据要素 ×」的时代，实时数据底座驱动行业数字化转型](https://www.emqx.com/zh/blog/real-time-data-drives-digital-transformation) ([Edit](https://github.com/emqx/blog/blob/main/zh/202402/real-time-data-drives-digital-transformation.md))
 - [智慧水务: EMQ 助力实现数字孪生智慧水厂的实时、高精度数据基座](https://www.emqx.com/zh/blog/smart-water-use-case) ([Edit](https://github.com/emqx/blog/blob/main/zh/202401/smart-water-use-case.md))
 - [基于 EMQ 云边协同方案，构建城市级智慧水务运营平台](https://www.emqx.com/zh/blog/building-a-smart-water-platform) ([Edit](https://github.com/emqx/blog/blob/main/zh/202401/building-a-smart-water-platform.md))
-- [EMQ & 智擎信息：基于边缘计算与 AI 图像识别技术的机场能源监控方案](https://www.emqx.com/zh/blog/airport-energy-monitoring-solution) ([Edit](https://github.com/emqx/blog/blob/main/zh/202401/airport-energy-monitoring-solution.md))
 - [EMQX 在物联网设备监控和控制的应用实践](https://www.emqx.com/zh/blog/application-of-emqx-in-iot-device-monitoring-and-control) ([Edit](https://github.com/emqx/blog/blob/main/zh/202312/application-of-emqx-in-iot-device-monitoring-and-control.md))
 - [EMQX 在智能垃圾分类与监测项目中的实践应用](https://www.emqx.com/zh/blog/application-of-emqx-in-smart-waste-sorting-and-monitoring) ([Edit](https://github.com/emqx/blog/blob/main/zh/202312/application-of-emqx-in-smart-waste-sorting-and-monitoring.md))
 - [实时数采、云边协同：EMQ 助力大型新能源储能系统智能运营](https://www.emqx.com/zh/blog/empowers-intelligent-operation-of-large-scale-new-energy-storage-systems) ([Edit](https://github.com/emqx/blog/blob/main/zh/202312/empowers-intelligent-operation-of-large-scale-new-energy-storage-systems.md))
