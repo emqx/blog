@@ -153,6 +153,7 @@ Best practice of MQTT in various clients.
 ## [MQTT Integration (Eco & Integration)](https://www.emqx.com/zh/blog/category/eco-and-integration)
 Explore more with & via EMQ.
 
+- [EMQX Cloud、TDengine Cloud 实现数据互通！联手打造端到端云上大数据解决方案](https://www.emqx.com/zh/blog/emqx-cloud-and-tdengine-cloud) ([Edit](https://github.com/emqx/blog/blob/main/zh/202505/emqx-cloud-and-tdengine-cloud.md))
 - [MCP over MQTT：EMQX 开启物联网 Agentic 时代](https://www.emqx.com/zh/blog/mcp-over-mqtt) ([Edit](https://github.com/emqx/blog/blob/main/zh/202503/mcp-over-mqtt.md))
 - [EMQX + AI：重塑消费电子产品智能化创新路径](https://www.emqx.com/zh/blog/emqx-and-ai) ([Edit](https://github.com/emqx/blog/blob/main/zh/202503/emqx-and-ai.md))
 - [EMQX MCP Server：实现 Claude 与 MQTT 交互新可能](https://www.emqx.com/zh/blog/integrating-claude-with-mqtt) ([Edit](https://github.com/emqx/blog/blob/main/zh/202503/integrating-claude-with-mqtt.md))
