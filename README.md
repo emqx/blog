@@ -754,6 +754,7 @@ Guarantee the availability and reliability of the IoT platform.
 
 ## [Use Cases](https://www.emqx.com/en/blog/category/use-cases)
 
+- [Smart Water Plant: IoT and AI-Driven Efficiency for Modern Utilities](https://www.emqx.com/en/blog/smart-water-use-case) ([Edit](https://github.com/emqx/blog/blob/main/en/202505/smart-water-use-case.md))
 - [EMQ & F5: A Robust Solution for Secure IoT Data Access at Scale](https://www.emqx.com/en/blog/emq-and-f5) ([Edit](https://github.com/emqx/blog/blob/main/en/202411/emq-and-f5.md))
 - [EMQX-Driven Smart Hospitality&Tourism: Enhancing Efficiency and Personalization from Restaurants to Cruises](https://www.emqx.com/en/blog/emqx-driven-smart-hospitality-tourism) ([Edit](https://github.com/emqx/blog/blob/main/en/202411/emqx-driven-smart-hospitality-tourism.md))
 - [Building a Sustainable Future: How EMQX is Enabling Smart Energy Management](https://www.emqx.com/en/blog/emqx-in-the-smart-energy-industry) ([Edit](https://github.com/emqx/blog/blob/main/en/202410/emqx-in-the-smart-energy-industry.md))
@@ -765,7 +766,6 @@ Guarantee the availability and reliability of the IoT platform.
 - [Game On! The One MQTT Platform for Seamless Real-Time Communication in Gaming](https://www.emqx.com/en/blog/mqtt-messaging-platform-enhances-real-time-game-communication) ([Edit](https://github.com/emqx/blog/blob/main/en/202404/mqtt-messaging-platform-enhances-real-time-game-communication.md))
 - [IoT in Healthcare: Connecting Medical Lab Devices with MQTT](https://www.emqx.com/en/blog/iot-in-healthcare-connecting-medical-lab-devices-with-mqtt) ([Edit](https://github.com/emqx/blog/blob/main/en/202404/iot-in-healthcare-connecting-medical-lab-devices-with-mqtt.md))
 - [Smart Water Operation and Management with EMQX MQTT Platform](https://www.emqx.com/en/blog/building-a-smart-water-platform) ([Edit](https://github.com/emqx/blog/blob/main/en/202402/building-a-smart-water-platform.md))
-- [Building a Smart Water Plant with EMQX MQTT Platform and Digital Twin Technology](https://www.emqx.com/en/blog/smart-water-use-case) ([Edit](https://github.com/emqx/blog/blob/main/en/202401/smart-water-use-case.md))
 - [EMQX Enables Smart Energy Storage with Real-Time Data Collection and Cloud-Edge Collaboration](https://www.emqx.com/en/blog/emqx-enables-smart-energy-storage) ([Edit](https://github.com/emqx/blog/blob/main/en/202312/emqx-enables-smart-energy-storage.md))
 - [Unleashing the Renewable Energy: MQTT Platform for Wind Farm Remote Monitoring and Maintenance](https://www.emqx.com/en/blog/mqtt-platform-for-wind-farm-remote-monitoring-and-maintenance) ([Edit](https://github.com/emqx/blog/blob/main/en/202312/mqtt-platform-for-wind-farm-remote-monitoring-and-maintenance.md))
 - [Intelligent Operation for Gas Gate Stations through AI & Edge Computing with EMQX](https://www.emqx.com/en/blog/intelligent-operation-for-gas-gate-stations-through-ai-and-edge-computing-with-emq) ([Edit](https://github.com/emqx/blog/blob/main/en/202312/intelligent-operation-for-gas-gate-stations-through-ai-and-edge-computing-with-emq.md))
