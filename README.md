@@ -754,6 +754,7 @@ Guarantee the availability and reliability of the IoT platform.
 
 ## [Use Cases](https://www.emqx.com/en/blog/category/use-cases)
 
+- [EMQX + AutoMQ: The Hybrid Cloud Engine Behind Geely’s Connected Vehicle Innovation](https://www.emqx.com/en/blog/emqx-and-automq) ([Edit](https://github.com/emqx/blog/blob/main/en/202505/emqx-and-automq.md))
 - [Smart Water Plant: IoT and AI-Driven Efficiency for Modern Utilities](https://www.emqx.com/en/blog/smart-water-use-case) ([Edit](https://github.com/emqx/blog/blob/main/en/202505/smart-water-use-case.md))
 - [EMQ & F5: A Robust Solution for Secure IoT Data Access at Scale](https://www.emqx.com/en/blog/emq-and-f5) ([Edit](https://github.com/emqx/blog/blob/main/en/202411/emq-and-f5.md))
 - [EMQX-Driven Smart Hospitality&Tourism: Enhancing Efficiency and Personalization from Restaurants to Cruises](https://www.emqx.com/en/blog/emqx-driven-smart-hospitality-tourism) ([Edit](https://github.com/emqx/blog/blob/main/en/202411/emqx-driven-smart-hospitality-tourism.md))
