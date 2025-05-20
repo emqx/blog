@@ -210,6 +210,7 @@ Explore more with & via EMQ.
 ## [EMQX Open Source | Broker](https://www.emqx.com/en/blog/category/emqx)
 EMQX is the world's most scalable open-source MQTT broker with a high performance that connects 100M+ IoT devices in 1 cluster, while maintaining 1M message per second throughput and sub-millisecond latency.
 
+- [Why EMQX v4 Users Should Upgrade to v5: A New Era of Performance and Features](https://www.emqx.com/en/blog/why-emqx-v4-users-should-upgrade-to-v5) ([Edit](https://github.com/emqx/blog/blob/main/en/202505/why-emqx-v4-users-should-upgrade-to-v5.md))
 - [EMQX Enterprise 5.9.0: Advancing MQTT Platform with New Licensing, Namespace, and More](https://www.emqx.com/en/blog/emqx-enterprise-5-9-0-release-notes) ([Edit](https://github.com/emqx/blog/blob/main/en/202505/emqx-enterprise-5-9-0-release-notes.md))
 - [EMQX's Next Chapter: Adopting Business Source License to Accelerate "MQTT + AI" Innovation](https://www.emqx.com/en/blog/adopting-business-source-license-to-accelerate-mqtt-and-ai-innovation) ([Edit](https://github.com/emqx/blog/blob/main/en/202505/adopting-business-source-license-to-accelerate-mqtt-and-ai-innovation.md))
 - [Cluster Linking Deep Dive: Unlock Global Scale & Resilience on EMQX Cloud](https://www.emqx.com/en/blog/cluster-linking-deep-dive) ([Edit](https://github.com/emqx/blog/blob/main/en/202504/cluster-linking-deep-dive.md))
@@ -754,6 +755,7 @@ Guarantee the availability and reliability of the IoT platform.
 
 ## [Use Cases](https://www.emqx.com/en/blog/category/use-cases)
 
+- [EMQX + AutoMQ: The Hybrid Cloud Engine Behind Geely’s Connected Vehicle Innovation](https://www.emqx.com/en/blog/emqx-and-automq) ([Edit](https://github.com/emqx/blog/blob/main/en/202505/emqx-and-automq.md))
 - [Smart Water Plant: IoT and AI-Driven Efficiency for Modern Utilities](https://www.emqx.com/en/blog/smart-water-use-case) ([Edit](https://github.com/emqx/blog/blob/main/en/202505/smart-water-use-case.md))
 - [EMQ & F5: A Robust Solution for Secure IoT Data Access at Scale](https://www.emqx.com/en/blog/emq-and-f5) ([Edit](https://github.com/emqx/blog/blob/main/en/202411/emq-and-f5.md))
 - [EMQX-Driven Smart Hospitality&Tourism: Enhancing Efficiency and Personalization from Restaurants to Cruises](https://www.emqx.com/en/blog/emqx-driven-smart-hospitality-tourism) ([Edit](https://github.com/emqx/blog/blob/main/en/202411/emqx-driven-smart-hospitality-tourism.md))
