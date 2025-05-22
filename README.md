@@ -486,6 +486,7 @@ The world's most scalable and reliable MQTT messaging platform to connect, move 
 ## [Internet of Vehicles | Connected Cars](https://www.emqx.com/en/blog/category/internet-of-vehicles)
 Build a reliable, efficient and industry-specific Internet of Vehicles platform based on EMQ's practical experience, from theoretical knowledge such as protocol selection to practical operations like platform architecture design.
 
+- [Smarter Driving Starts at the Edge: MCP over MQTT for Intelligent Vehicle Data Insights](https://www.emqx.com/en/blog/mcp-over-mqtt-for-intelligent-vehicle-data-insights) ([Edit](https://github.com/emqx/blog/blob/main/en/202505/mcp-over-mqtt-for-intelligent-vehicle-data-insights.md))
 - [CAN Bus Uncovered: Basics and Applications in Vehicles](https://www.emqx.com/en/blog/can-bus-how-it-works-pros-and-cons) ([Edit](https://github.com/emqx/blog/blob/main/en/202503/can-bus-how-it-works-pros-and-cons.md))
 - [MQTT in Connected Cars: Key Benefits and Real-World Applications](https://www.emqx.com/en/blog/mqtt-for-internet-of-vehicles) ([Edit](https://github.com/emqx/blog/blob/main/en/202411/mqtt-for-internet-of-vehicles.md))
 - [DDS and MQTT: Basics, Challenges and Integration Benefits](https://www.emqx.com/en/blog/navigating-dds-basics-limitations-and-integration-with-mqtt) ([Edit](https://github.com/emqx/blog/blob/main/en/202408/navigating-dds-basics-limitations-and-integration-with-mqtt.md))
