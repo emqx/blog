@@ -51,7 +51,6 @@ Get to know the preferred protocol in IoT from beginner to master.
 - [MQTT 5.0 连接属性](https://www.emqx.com/zh/blog/mqtt5-connect-properties) ([Edit](https://github.com/emqx/blog/blob/main/zh/202112/mqtt5-connect-properties.md))
 - [用户属性 - MQTT 5.0 新特性](https://www.emqx.com/zh/blog/mqtt5-user-properties) ([Edit](https://github.com/emqx/blog/blob/main/zh/202111/mqtt5-user-properties.md))
 - [增强认证 - MQTT 5.0 新特性](https://www.emqx.com/zh/blog/mqtt5-enhanced-authentication) ([Edit](https://github.com/emqx/blog/blob/main/zh/202008/mqtt5-enhanced-authentication.md))
-- [MQTT 协议 10 分钟快速入门](https://www.emqx.com/zh/blog/get-started-with-mqtt-in-ten-mins) ([Edit](https://github.com/emqx/blog/blob/main/zh/202008/get-started-with-mqtt-in-ten-mins.md))
 - [流量控制 - MQTT 5.0 新特性](https://www.emqx.com/zh/blog/mqtt5-flow-control) ([Edit](https://github.com/emqx/blog/blob/main/zh/202008/mqtt5-flow-control.md))
 - [EMQX  MQTT 5.0 服务器的保留消息与消息过期间隔](https://www.emqx.com/zh/blog/message-retention-and-message-expiration-interval-of-emqx-mqtt5-broker) ([Edit](https://github.com/emqx/blog/blob/main/zh/202003/message-retention-and-message-expiration-interval-of-emqx-mqtt5-broker.md))
 - [MQTT 5.0 新特性 |（一） 属性与载荷](https://www.emqx.com/zh/blog/mqtt5-new-features-properties-and-loads) ([Edit](https://github.com/emqx/blog/blob/main/zh/201903/mqtt5-new-features-properties-and-loads.md))
