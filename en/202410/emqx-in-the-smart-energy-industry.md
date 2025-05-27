@@ -12,7 +12,7 @@ In the world of smart energy, EMQX is widely used for real-time monitoring and m
 
 Currently, EMQ provides technical support and services to numerous companies, including clean energy firms, microgrid solution providers, and natural gas producers, assisting them in achieving interconnected devices, data transmission, and intelligent management.
 
-![Smart Energy Architecture Aiagram](https://assets.emqx.com/images/bf918dd8e02b531ac4a9884d20ca1cd2.png)
+![Smart Energy Architecture Aiagram](https://assets.emqx.com/images/15fd19ae911208a7d14b10eeaaa37287.png)
 
 ## EMQX in Building Clean Energy Management
 
