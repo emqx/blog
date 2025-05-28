@@ -7,6 +7,7 @@
 ## [MQTT Tutorials](https://www.emqx.com/ja/blog/category/mqtt-protocol)
 Get to know the preferred protocol in IoT from beginner to master.
 
+- [MQTT パケットについての全面紹介](https://www.emqx.com/ja/blog/introduction-to-mqtt-control-packets) ([Edit](https://github.com/emqx/blog/blob/main/ja/202505/introduction-to-mqtt-control-packets.md))
 - [MQTTマスターガイド：初心者向け解説2025年版](https://www.emqx.com/ja/blog/the-easiest-guide-to-getting-started-with-mqtt) ([Edit](https://github.com/emqx/blog/blob/main/ja/202504/the-easiest-guide-to-getting-started-with-mqtt.md))
 - [MQTTリクエスト／レスポンスの解説と例 | MQTT 5機能](https://www.emqx.com/ja/blog/mqtt5-request-response) ([Edit](https://github.com/emqx/blog/blob/main/ja/202410/mqtt5-request-response.md))
 - [トピックエイリアス - MQTT 5.0の新機能](https://www.emqx.com/ja/blog/mqtt5-topic-alias) ([Edit](https://github.com/emqx/blog/blob/main/ja/202410/mqtt5-topic-alias.md))
@@ -153,6 +154,7 @@ The world's most scalable and reliable MQTT messaging platform to connect, move 
 ## [Internet of Vehicles | Connected Cars](https://www.emqx.com/ja/blog/category/internet-of-vehicles)
 Build a reliable, efficient and industry-specific Internet of Vehicles platform based on EMQ's practical experience, from theoretical knowledge such as protocol selection to practical operations like platform architecture design.
 
+- [QUICは次世代IoVプロトコルとなりますか](https://www.emqx.com/ja/blog/will-quic-become-the-next-generation-iov-protocol) ([Edit](https://github.com/emqx/blog/blob/main/ja/202505/will-quic-become-the-next-generation-iov-protocol.md))
 - [DDS：基本、限界、およびMQTT連携について](https://www.emqx.com/ja/blog/navigating-dds-basics-limitations-and-integration-with-mqtt) ([Edit](https://github.com/emqx/blog/blob/main/ja/202408/navigating-dds-basics-limitations-and-integration-with-mqtt.md))
 - [車両通信 + UNS：SDVライフサイクル全体のデータ相互運用の実現](https://www.emqx.com/ja/blog/vehicle-and-uns) ([Edit](https://github.com/emqx/blog/blob/main/ja/202408/vehicle-and-uns.md))
 - [スマートモビリティの発展：機会と課題](https://www.emqx.com/ja/blog/the-road-to-smart-mobility) ([Edit](https://github.com/emqx/blog/blob/main/ja/202404/the-road-to-smart-mobility.md))

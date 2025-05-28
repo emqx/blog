@@ -165,6 +165,7 @@ Best practice of MQTT in various clients.
 ## [MQTT Integration (Eco & Integration)](https://www.emqx.com/en/blog/category/eco-and-integration)
 Explore more with & via EMQ.
 
+- [EMQX Cloud & TDengine Cloud Integration: A Tutorial for End-to-End Big Data Solutions](https://www.emqx.com/en/blog/emqx-cloud-and-tdengine-cloud) ([Edit](https://github.com/emqx/blog/blob/main/en/202505/emqx-cloud-and-tdengine-cloud.md))
 - [MCP over MQTT: Empowering Agentic IoT with EMQX for AI-Driven Intelligence](https://www.emqx.com/en/blog/mcp-over-mqtt) ([Edit](https://github.com/emqx/blog/blob/main/en/202504/mcp-over-mqtt.md))
 - [Integrating MQTT with AI and LLMs in IoT: Best Practices and Future Perspectives](https://www.emqx.com/en/blog/integrating-mqtt-with-ai-and-llms) ([Edit](https://github.com/emqx/blog/blob/main/en/202503/integrating-mqtt-with-ai-and-llms.md))
 - [Why and How MQTT is Used in AI/LLM Applications: Architecture and Use Cases](https://www.emqx.com/en/blog/why-and-how-mqtt-is-used-in-ai-llm-applications) ([Edit](https://github.com/emqx/blog/blob/main/en/202503/why-and-how-mqtt-is-used-in-ai-llm-applications.md))
