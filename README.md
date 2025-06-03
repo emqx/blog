@@ -322,6 +322,7 @@ EMQX is the world's most scalable open-source MQTT broker with a high performanc
 ## [EMQX Cloud](https://www.emqx.com/en/blog/category/cloud)
 The easiest way to start MQTT service. Connect your IoT devices to any cloud without the burden of maintaining infrastructure.
 
+- [[Scheduled Maintenance Notice] EMQX Cloud Serverless Deployment Upgrades: June 2025](https://www.emqx.com/en/blog/emqx-cloud-serverless-deployment-upgrades-june-2025) ([Edit](https://github.com/emqx/blog/blob/main/en/202506/emqx-cloud-serverless-deployment-upgrades-june-2025.md))
 - [Your Next Move: A Strategy for Upgrading from EMQX Standard](https://www.emqx.com/en/blog/your-next-move-a-strategy-for-upgrading-from-emqx-standard) ([Edit](https://github.com/emqx/blog/blob/main/en/202404/your-next-move-a-strategy-for-upgrading-from-emqx-standard.md))
 - [Strategic Update: Refocusing EMQX Platform Service Offerings](https://www.emqx.com/en/blog/strategic-update-refocusing-emqx-platform-service-offerings) ([Edit](https://github.com/emqx/blog/blob/main/en/202404/strategic-update-refocusing-emqx-platform-service-offerings.md))
 - [Smart Spending: How to Avoid Unexpected Costs with EMQX Serverless](https://www.emqx.com/en/blog/smart-spending-how-to-avoid-unexpected-costs-with-emqx-serverless) ([Edit](https://github.com/emqx/blog/blob/main/en/202403/smart-spending-how-to-avoid-unexpected-costs-with-emqx-serverless.md))
@@ -511,6 +512,7 @@ Build a reliable, efficient and industry-specific Internet of Vehicles platform 
 
 ## [Industrial IoT | Unified Namespace | Sparkplug](https://www.emqx.com/en/blog/category/industrial-iot)
 
+- [Natural Language Meets Industrial Data: Pioneering AI-Driven IIoT Data Exploration](https://www.emqx.com/en/blog/pioneering-ai-driven-iiot-data-exploration) ([Edit](https://github.com/emqx/blog/blob/main/en/202506/pioneering-ai-driven-iiot-data-exploration.md))
 - [Modbus Protocol 2025: From Basics to IIoT Integration](https://www.emqx.com/en/blog/modbus-protocol-the-grandfather-of-iot-communication) ([Edit](https://github.com/emqx/blog/blob/main/en/202503/modbus-protocol-the-grandfather-of-iot-communication.md))
 - [ Siemens PLC and MQTT Integration: A Step-by-Step Guide](https://www.emqx.com/en/blog/siemens-plc-and-mqtt-integration) ([Edit](https://github.com/emqx/blog/blob/main/en/202501/siemens-plc-and-mqtt-integration.md))
 - [Industrial IoT Systems: Benefits, Essential Capabilities, and Best Practices](https://www.emqx.com/en/blog/industrial-iot-systems) ([Edit](https://github.com/emqx/blog/blob/main/en/202407/industrial-iot-systems.md))
