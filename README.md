@@ -322,6 +322,7 @@ EMQX is the world's most scalable open-source MQTT broker with a high performanc
 ## [EMQX Cloud](https://www.emqx.com/en/blog/category/cloud)
 The easiest way to start MQTT service. Connect your IoT devices to any cloud without the burden of maintaining infrastructure.
 
+- [[Scheduled Maintenance Notice] EMQX Cloud Serverless Deployment Upgrades: June 2025](https://www.emqx.com/en/blog/emqx-cloud-serverless-deployment-upgrades-june-2025) ([Edit](https://github.com/emqx/blog/blob/main/en/202506/emqx-cloud-serverless-deployment-upgrades-june-2025.md))
 - [Your Next Move: A Strategy for Upgrading from EMQX Standard](https://www.emqx.com/en/blog/your-next-move-a-strategy-for-upgrading-from-emqx-standard) ([Edit](https://github.com/emqx/blog/blob/main/en/202404/your-next-move-a-strategy-for-upgrading-from-emqx-standard.md))
 - [Strategic Update: Refocusing EMQX Platform Service Offerings](https://www.emqx.com/en/blog/strategic-update-refocusing-emqx-platform-service-offerings) ([Edit](https://github.com/emqx/blog/blob/main/en/202404/strategic-update-refocusing-emqx-platform-service-offerings.md))
 - [Smart Spending: How to Avoid Unexpected Costs with EMQX Serverless](https://www.emqx.com/en/blog/smart-spending-how-to-avoid-unexpected-costs-with-emqx-serverless) ([Edit](https://github.com/emqx/blog/blob/main/en/202403/smart-spending-how-to-avoid-unexpected-costs-with-emqx-serverless.md))

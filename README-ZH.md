@@ -325,6 +325,7 @@ EMQX is the world's most scalable open-source MQTT broker with a high performanc
 ## [EMQX Cloud](https://www.emqx.com/zh/blog/category/cloud)
 The easiest way to start MQTT service. Connect your IoT devices to any cloud without the burden of maintaining infrastructure.
 
+- [[计划内维护通知] EMQX Cloud Serverless 平台 6 月 3 日升级通知](https://www.emqx.com/zh/blog/emqx-cloud-serverless-deployment-upgrades-june-2025) ([Edit](https://github.com/emqx/blog/blob/main/zh/202506/emqx-cloud-serverless-deployment-upgrades-june-2025.md))
 - [开发者分享：利用 EMQX Cloud 与 ESP32 微控制器实现智能液冷散热系统](https://www.emqx.com/zh/blog/a-developer-s-journey-with-esp32-and-mqtt-broker) ([Edit](https://github.com/emqx/blog/blob/main/zh/202402/a-developer-s-journey-with-esp32-and-mqtt-broker.md))
 - [MQTT 平台解读：构建现代物联网应用的必备组件](https://www.emqx.com/zh/blog/mqtt-platform-essential-features-and-use-cases) ([Edit](https://github.com/emqx/blog/blob/main/zh/202402/mqtt-platform-essential-features-and-use-cases.md))
 - [EMQX Cloud 和工业物联网：从边端数据到 InfluxDB 3.0 的工业数据集成](https://www.emqx.com/zh/blog/supercharging-iiot-with-mqtt-edge-intelligence-and-influxdb) ([Edit](https://github.com/emqx/blog/blob/main/zh/202311/supercharging-iiot-with-mqtt-edge-intelligence-and-influxdb.md))
