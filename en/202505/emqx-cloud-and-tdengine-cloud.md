@@ -35,7 +35,7 @@ In the next section, we’ll walk you through how to use this connector to strea
 
 ### Step 1: TDengine Cloud Preparations 
 
-1. Log in to the TDengine Cloud console: [https://cloud.taosdata.com](https://cloud.taosdata.xn--com-9o0a./)
+1. Log in to the TDengine Cloud console: [https://cloud.tdengine.com](https://cloud.tdengine.com)
 
 2. Create and deploy a TDengine Cloud service instance. 
 
