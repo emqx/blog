@@ -7,6 +7,7 @@
 ## [MQTT Tutorials](https://www.emqx.com/zh/blog/category/mqtt-protocol)
 Get to know the preferred protocol in IoT from beginner to master.
 
+- [2025 年 MQTT 技术趋势：驱动 AI 与物联网未来发展的关键动力](https://www.emqx.com/zh/blog/mqtt-trends-for-2025-and-beyond) ([Edit](https://github.com/emqx/blog/blob/main/zh/202506/mqtt-trends-for-2025-and-beyond.md))
 - [MQTT 协议快速入门 2025：基础知识和实用教程](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) ([Edit](https://github.com/emqx/blog/blob/main/zh/202503/the-easiest-guide-to-getting-started-with-mqtt.md))
 - [MQTT QoS 0、1、2 解析：快速入门指南](https://www.emqx.com/zh/blog/introduction-to-mqtt-qos) ([Edit](https://github.com/emqx/blog/blob/main/zh/202410/introduction-to-mqtt-qos.md))
 - [MQTT 主题与通配符（Topics & Wildcards）入门手册](https://www.emqx.com/zh/blog/advanced-features-of-mqtt-topics) ([Edit](https://github.com/emqx/blog/blob/main/zh/202410/advanced-features-of-mqtt-topics.md))

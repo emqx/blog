@@ -513,6 +513,7 @@ Build a reliable, efficient and industry-specific Internet of Vehicles platform 
 
 ## [Industrial IoT | Unified Namespace | Sparkplug](https://www.emqx.com/en/blog/category/industrial-iot)
 
+- [AI-Ready Unified Namespace: Building the Industrial Data Hub with EMQX and NeuronEX](https://www.emqx.com/en/blog/building-the-industrial-data-hub-with-emqx-and-neuronex) ([Edit](https://github.com/emqx/blog/blob/main/en/202506/building-the-industrial-data-hub-with-emqx-and-neuronex.md))
 - [Natural Language Meets Industrial Data: Pioneering AI-Driven IIoT Data Exploration](https://www.emqx.com/en/blog/pioneering-ai-driven-iiot-data-exploration) ([Edit](https://github.com/emqx/blog/blob/main/en/202506/pioneering-ai-driven-iiot-data-exploration.md))
 - [Modbus Protocol 2025: From Basics to IIoT Integration](https://www.emqx.com/en/blog/modbus-protocol-the-grandfather-of-iot-communication) ([Edit](https://github.com/emqx/blog/blob/main/en/202503/modbus-protocol-the-grandfather-of-iot-communication.md))
 - [ Siemens PLC and MQTT Integration: A Step-by-Step Guide](https://www.emqx.com/en/blog/siemens-plc-and-mqtt-integration) ([Edit](https://github.com/emqx/blog/blob/main/en/202501/siemens-plc-and-mqtt-integration.md))

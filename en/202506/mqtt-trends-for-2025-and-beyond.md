@@ -56,11 +56,11 @@ Here’s a look at how MQTT is changing and what trends to watch in 2025.
 
 - **Serverless MQTT for Agile Deployments**
 
-  Platforms like [EMQX Cloud Serverless](https://www.emqx.com/en/cloud/serverless-mqtt) make it easy to spin up MQTT services without managing infrastructure. This model is ideal for fast-moving projects, pilot programs, and small teams that need to prototype quickly and scale as needed.
+  Platforms like [EMQX Serverless](https://www.emqx.com/en/cloud/serverless-mqtt) make it easy to spin up MQTT services without managing infrastructure. This model is ideal for fast-moving projects, pilot programs, and small teams that need to prototype quickly and scale as needed.
 
   <section class="promotion">
       <div>
-          Try EMQX Cloud Serverless for Free
+          Try EMQX Serverless for Free
           <div>No credit card required</div>
       </div>
       <a href="https://accounts.emqx.com/signup?continue=https://cloud-intl.emqx.com/console/deployments/0?oper=new" class="button is-gradient">Get Started →</a>
