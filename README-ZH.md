@@ -602,6 +602,7 @@ MQTTX is a Fully Open-source MQTT 5.0 cross-platform Desktop Client, makes it ea
 ## [Neuron - IIoT Connectivity Server](https://www.emqx.com/zh/blog/category/neuron)
 IoT edge industrial protocol gateway software, which supports one-stop access to dozens of industrial protocols and converts them into MQTT protocol to access the cloud industrial IoT platform. It just requires ultra-low resource consumption, and supports three major architectures of X86, ARM, and MIPS.
 
+- [NeuronEX 3.6.0 发布：从统一数据采集到智能数据洞察](https://www.emqx.com/zh/blog/neuronex-v-3-6-0-release-notes) ([Edit](https://github.com/emqx/blog/blob/main/zh/202506/neuronex-v-3-6-0-release-notes.md))
 - [NeuronEX 设备反控功能实践指南](https://www.emqx.com/zh/blog/neuronex-device-control) ([Edit](https://github.com/emqx/blog/blob/main/zh/202504/neuronex-device-control.md))
 - [NeuronEX + DeepSeek：使用 LLM 增强复杂 IIoT 数据流计算处理能力](https://www.emqx.com/zh/blog/neuronex-and-deepseek) ([Edit](https://github.com/emqx/blog/blob/main/zh/202503/neuronex-and-deepseek.md))
 - [NeuronEX 3.5.0 发布：增强工业数据采集与处理能力，赋能智能制造](https://www.emqx.com/zh/blog/neuronex-v-3-5-0-release-notes) ([Edit](https://github.com/emqx/blog/blob/main/zh/202502/neuronex-v-3-5-0-release-notes.md))
