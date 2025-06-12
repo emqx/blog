@@ -1,12 +1,12 @@
-## What Is MQTT on Docker?
+## Introducing MQTT on Docker
 
-[MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) (Message Queuing Telemetry Transport) is a lightweight messaging protocol designed for low-bandwidth, high-latency networks. Docker is an open-source platform that allows you to automate the deployment, scaling, and management of applications within containers. So, when you run MQTT on Docker, you are deploying the [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) within a Docker container.
+[MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) (Message Queuing Telemetry Transport) is a lightweight, efficient messaging protocol optimized for low-bandwidth, high-latency networks, making it ideal for IoT applications. Docker, an open-source platform, enables automated deployment, scaling, and management of applications in containers. 
 
-This combination provides a scalable and reliable solution to handle data streams in real-time, particularly in IoT applications. The MQTT broker receives messages from publishers (devices or applications that produce data) and dispatches them to subscribers (devices or applications that consume data). By running the broker on Docker, you can make it easier to deploy and scale your MQTT broker.
+Running MQTT on Docker combines the protocol’s efficiency with Docker’s portability and scalability. The [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) receives messages from publishers (devices or applications that generate data) and forwards them to subscribers (devices or applications that consume the data). This offers a robust solution for real-time data streaming
 
-We’ll show how to deploy MQTT on Docker with [EMQX](https://github.com/emqx/emqx), a popular, open source MQTT broker. EMQX provides powerful capabilities not available in other open source brokers, such as clustering, persistence, and support for very large scale deployments.
+This guide explains how to deploy an MQTT broker in a Docker container using EMQX, a leading MQTT broker. We’ll cover setup, clustering, persistence, and the benefits of using MQTT with Docker for scalable IoT deployments.
 
-## Why Should You Run an MQTT Broker on Docker?
+## Why Run an MQTT Broker on Docker?
 
 Running an MQTT broker on Docker provides several advantages.
 
@@ -17,9 +17,11 @@ Running an MQTT broker on Docker provides several advantages.
 
 ## Setting Up an MQTT Broker in Docker with Clustering and Persistence 
 
-EMQX is the leading open source MQTT broker. It provides a Docker Official Image which is [available on Docker Hub](https://hub.docker.com/_/emqx).
+EMQX is the leading MQTT broker with high performance and scalability. It provides a Docker Official Image which is [available on Docker Hub](https://hub.docker.com/_/emqx).
 
-A major advantage of EMQX is that it **supports clustering** for large scale MQTT deployments. Most other articles on this topic show how to set up the [Mosquitto MQTT broker](https://www.emqx.com/en/blog/mosquitto-mqtt-broker-pros-cons-tutorial-and-modern-alternatives) with Docker - but Mosquitto does not support clustering. Additional EMQX features include:
+A major advantage of EMQX is that it **supports clustering** for large scale MQTT deployments. Most other articles on this topic show how to set up the [Mosquitto MQTT broker](https://www.emqx.com/en/blog/mosquitto-mqtt-broker-pros-cons-tutorial-and-modern-alternatives) with Docker - but Mosquitto does not support clustering. 
+
+Additional EMQX features include:
 
 - Ability to scale up to 100M+ IoT devices in 1 cluster, while maintaining 1M message per second throughput and sub-millisecond latency.
 - 100% compliant with MQTT 5.0 and 3.x, support for multiple open standard protocols like HTTP, [QUIC](https://www.emqx.com/en/blog/quic-protocol-the-features-use-cases-and-impact-for-iot-iov), and WebSocket.
@@ -27,6 +29,8 @@ A major advantage of EMQX is that it **supports clustering** for large scale MQT
 - Uses powerful SQL-based rules engine to extract, filter, enrich and transform IoT data in real-time.
 - Ensures high availability and horizontal scalability with a masterless distributed architecture.
 - More than 20K+ enterprise users across 50+ countries and regions, connecting 100M+ IoT devices worldwide. Trusted by over 400 customers in mission-critical scenarios including over 70 Fortune 500 companies.
+
+## Getting Started with MQTT on Docker Using EMQX
 
 Here is how to use the EMQX Docker image to quickly get up and running with MQTT.
 
@@ -177,13 +181,18 @@ The output should look something like:
 
 To ensure the same state when the container restarts, make sure to specify the `EMQX_NAME` and `EMQX_HOST` variables as previously defined.
 
-## Large-Scale MQTT Deployment with EMQX
+## Best Practices for MQTT on Docker
 
-Running MQTT on Docker offers several compelling advantages, including rapid deployment, isolation, scalability, and portability. Leveraging Docker containers for MQTT deployment allows for efficient resource utilization and ease of management.
+- **Monitor Performance**: Use EMQX’s dashboard (accessible at `http://localhost:18083`) to monitor connections and throughput.
+- **Secure Your Broker**: Enable TLS/SSL and authentication to protect IoT data.
+- **Optimize Resources**: Adjust container resource limits (CPU, memory) based on your workload.
+- **Backup Data**: Regularly back up persistent volumes to prevent data loss.
 
-For those looking to set up MQTT on Docker with clustering and persistence, EMQX proves to be a powerful choice. EMQX's support for clustering, compliance with MQTT standards, and advanced features make it suitable for large-scale MQTT deployments.
+## Conclusion
 
-Read these blog posts to see how to massively scale up MQTT with EMQX:
+Deploying MQTT on Docker provides a scalable, portable, and efficient solution for IoT and real-time applications. For those looking to set up MQTT on Docker with clustering and persistence, EMQX proves to be a powerful choice. EMQX's support for clustering, compliance with MQTT standards, and advanced features make it suitable for large-scale MQTT deployments. 
+
+Follow these guides to set up your MQTT Docker environment and explore clustering and persistence for large-scale use cases.
 
 - [Reaching 100M MQTT connections with EMQX 5.0](https://www.emqx.com/en/blog/reaching-100m-mqtt-connections-with-emqx-5-0)
 - [How EMQX with the Mria + RLOG architecture achieves 100M MQTT connections](https://www.emqx.com/en/blog/how-emqx-5-0-achieves-100-million-mqtt-connections)
