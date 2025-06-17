@@ -213,6 +213,7 @@ Explore more with & via EMQ.
 ## [EMQX Open Source | Broker](https://www.emqx.com/en/blog/category/emqx)
 EMQX is the world's most scalable open-source MQTT broker with a high performance that connects 100M+ IoT devices in 1 cluster, while maintaining 1M message per second throughput and sub-millisecond latency.
 
+- [How EMQ is Powering Innovation with AI/LLMs Across Product and Development](https://www.emqx.com/en/blog/how-emq-is-powering-innovation-with-ai-llms-across-product-and-development) ([Edit](https://github.com/emqx/blog/blob/main/en/202506/how-emq-is-powering-innovation-with-ai-llms-across-product-and-development.md))
 - [How to Deploy MQTT on Docker: A Complete Guide](https://www.emqx.com/en/blog/running-mqtt-broker-on-docker) ([Edit](https://github.com/emqx/blog/blob/main/en/202506/running-mqtt-broker-on-docker.md))
 - [CoAP Protocol: Features, Use Cases, Pros & Cons for IoT](https://www.emqx.com/en/blog/coap-protocol) ([Edit](https://github.com/emqx/blog/blob/main/en/202506/coap-protocol.md))
 - [Why EMQX v4 Users Should Upgrade to v5: A New Era of Performance and Features](https://www.emqx.com/en/blog/why-emqx-v4-users-should-upgrade-to-v5) ([Edit](https://github.com/emqx/blog/blob/main/en/202505/why-emqx-v4-users-should-upgrade-to-v5.md))
