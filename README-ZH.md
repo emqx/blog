@@ -199,6 +199,7 @@ Explore more with & via EMQ.
 ## [EMQX Open Source | Broker](https://www.emqx.com/zh/blog/category/emqx)
 EMQX is the world's most scalable open-source MQTT broker with a high performance that connects 100M+ IoT devices in 1 cluster, while maintaining 1M message per second throughput and sub-millisecond latency.
 
+- [映云科技如何利用 AI 技术推动产品研发创新](https://www.emqx.com/zh/blog/how-emq-is-powering-innovation-with-ai-llms-across-product-and-development) ([Edit](https://github.com/emqx/blog/blob/main/zh/202506/how-emq-is-powering-innovation-with-ai-llms-across-product-and-development.md))
 - [EMQX Enterprise 5.9.0 发布：全新许可模式与创新功能，推动 MQTT + AI 平台迈向新高度](https://www.emqx.com/zh/blog/emqx-enterprise-5-9-0-release-notes) ([Edit](https://github.com/emqx/blog/blob/main/zh/202505/emqx-enterprise-5-9-0-release-notes.md))
 - [开启 EMQX 新篇章：采用商业源码许可证，加速 MQTT + AI 创新](https://www.emqx.com/zh/blog/adopting-business-source-license-to-accelerate-mqtt-and-ai-innovation) ([Edit](https://github.com/emqx/blog/blob/main/zh/202505/adopting-business-source-license-to-accelerate-mqtt-and-ai-innovation.md))
 - [使用 XDP 和 IPVS 实现 QUIC 负载均衡](https://www.emqx.com/zh/blog/a-quic-load-balancing-implementation-using-xdp-and-ipvs) ([Edit](https://github.com/emqx/blog/blob/main/zh/202502/a-quic-load-balancing-implementation-using-xdp-and-ipvs.md))
