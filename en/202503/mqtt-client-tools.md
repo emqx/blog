@@ -79,7 +79,6 @@ GitHub Project: https://github.com/emqx/mqttx
 - Customized colors for different MQTT subscriptions
 - Customized script for MQTT Pub/Sub scenario simulation
 - Cross-platform, running on Windows, macOS, and Linux
-- AI-powered MQTTX Copilot: Simplifying MQTT testing and development
 - AI-powered MQTTX Copilot: Boosts MQTT productivity with LLMs; enables smart workflows via MCP
 
 #### Installation

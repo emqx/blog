@@ -1,42 +1,46 @@
-## Introduction to MQTT.fx
+## What is MQTT.fx?
 
-The major version of MQTT.fx 1.0 was developed by Jens Deters using [JavaFX](https://en.wikipedia.org/wiki/JavaFX) technology. It was a Java virtual machine application. Unfortunately, MQTT.fx is no longer maintained. However, Softblade company has sponsored the development of a commercial version of MQTT.fx® 5.0, which is available under a fee-based license. This article will refer to MQTT.fx version 1.0 unless stated otherwise.
+MQTT.fx is a popular [MQTT client tool](https://www.emqx.com/en/blog/mqtt-client-tools) originally developed by Jens Deters using JavaFX technology, designed to run on the Java Virtual Machine (JVM). While version 1.0 is no longer maintained, Softblade has released MQTT.fx 5.0, a commercial version available under a fee-based license with enhanced features. This guide focuses on MQTT.fx 1.0 unless otherwise specified, covering its features, setup, and limitations, while introducing MQTTX as a modern alternative for 2025.
 
-It contains mainstream MQTT client functions:
+**Key Features of MQTT.fx 1.0**:
 
-- Basic subscribe/publish/connect function.
-- User Authentication.
-- SSL/TLS connection support.
-- Easy-to-use message editing bar.
-- Support agent.
+- **Core MQTT Functions**: Supports subscribe, publish, and connect operations.
+- **User Authentication**: Secure login with username and password.
+- **SSL/TLS Support**: Ensures encrypted connections for secure communication.
+- **Message Editing**: User-friendly interface for composing and sending messages.
+- **Cross-Platform**: Runs on Windows, macOS, and Linux.
+- **$SYS Topic Support**: Manages MQTT Broker subscriptions effectively.
+- **Log Console**: Detailed logs for debugging and monitoring.
+- **JavaScript Integration**: Processes messages using custom scripts.
+- **Predefined Templates**: Simplifies repetitive tasks.
 
-In addition, MQTT.fx also has other excellent features:
+**Limitations**:
 
-- Support cross-platform.
-- Support $SYS topic subscription management MQTT Broker.
-- Complete log console.
-- Support JavaScript to process messages.
-- Support predefined templates.
+- Lacks support for [MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5) protocol (available in version 5.0).
+- Supports only one connection at a time, limiting multi-connection debugging.
+- No WebSocket protocol support, restricting MQTT over WebSocket testing.
 
-But there are also some defects:
+## How to Install MQTT.fx
 
-- [MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5) protocol is not supported.
-- Only one connection can be established at a time, which is inconvenient for multi-connection debugging.
-- The WebSocket protocol is not supported, and the situation of MQTT over Webscoket cannot be debugged.
+To get started with MQTT.fx:
 
-## MQTT.fx Installation
-
-To install MQTT.fx, visit [Softblade's download page](https://softblade.de/en/download-2/) to access the latest version of MQTT.fx. Choose the appropriate version for your operating system from this page.
+1. Visit [Softblade's download page](https://www.softblade.de/download/) to access the latest version.
+2. Select the appropriate installer for your operating system (Windows, macOS, or Linux).
+3. Follow the installation prompts to set up MQTT.fx on your device.
 
 ## MQTT Basic Features Showcasing with MQTT.fx
 
 ### Prepare an MQTT Broker
 
-Before proceeding, please ensure you have an MQTT broker to communicate and test with. 
+Before proceeding, please ensure you have an MQTT broker to communicate and test with.
 
-[**EMQX Cloud Serverless**](https://www.emqx.com/en/cloud/serverless-mqtt) is a fully managed [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) in the cloud that is quick to set up and ideal for small-scale IoT tests. It offers 1 million free monthly session minutes, perfect for maintaining a modest number of devices.
+[**EMQX Serverless**](https://www.emqx.com/en/cloud/serverless-mqtt) is a fully managed [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) in the cloud that is quick to set up and ideal for small-scale IoT tests. It offers 1 million free monthly session minutes, perfect for maintaining a modest number of devices.
 
-Please follow our guide for newcomers. After registering, you'll receive an instance complete with connection info and a CA certificate, mirroring your deployment's overview.
+### **Steps to Set Up EMQX Serverless**:
+
+1. Register at EMQX Serverless to create a serverless instance.
+2. Receive connection details, including the broker address, port, and CA certificate.
+3. Use these credentials to configure MQTT.fx for testing.
 
 ![EMQX Cloud](https://assets.emqx.com/images/f2bffa3e65bc97ee7511942890987d1a.png)
 
@@ -132,33 +136,44 @@ Using a proxy is to route your MQTT traffic through a specified server. This is 
 
 ![MQTT.fx proxy](https://assets.emqx.com/images/dbf1bb5a1478076ae924ed88cb3a634e.png)
 
-## FAQs about MQTT.fx
+## FAQs About MQTT.fx
 
-**Q: Can I establish multiple connections simultaneously in MQTT.fx?**  
-**A**: Despite its advanced features, MQTT.fx only allows one MQTT connection at a time, which may limit its use in multi-connection debugging scenarios.
+**Q: Can MQTT.fx handle multiple simultaneous connections?**
 
-**Q: Is it possible to debug MQTT over WebSocket using MQTT.fx?**  
-**A**: MQTT.fx does not support the WebSocket protocol, making it unsuitable for MQTT over WebSocket testing scenarios.
+A: No, MQTT.fx 1.0 supports only one connection at a time, which may limit multi-connection testing. MQTTX is a better alternative for this.
 
-**Q: From which version does MQTT.fx support the MQTT 5.0 protocol?**  
-**A**: MQTT.fx started supporting the MQTT 5.0 protocol from version 5.0 onwards. This update brought the software in line with the latest MQTT standards, adding new capabilities and enhancing user experience.
+**Q: Does MQTT.fx support MQTT over WebSocket?**
 
-**Q: Is MQTT.fx free to use?**
-**A**: MQTT.fx 5.0 offers a 3-month trial license for free. After the trial period, there are various paid licensing options, including a private user license for 49,90 EUR, a single license for 220,00 EUR/year, a team license for 650,00 EUR/year, and an enterprise license for 1.900,00 EUR/year, all prices including VAT for commercial use.
+A: No, version 1.0 does not support WebSocket. You can use MQTTX for WebSocket testing.
 
-## MQTTX: The Best MQTT.fx Alternative You Should Try In 2024
+**Q: When was MQTT 5.0 support introduced?**
 
-We recommend using MQTTX, accessed at [mqttx.app](https://mqttx.app/), as an alternative. MQTTX is an All-in-One MQTT client toolbox compatible with macOS, Windows, Linux, and Docker. It offers versions for desktop, CLI, and web. MQTTX fully adheres to MQTT standards 5.0, 3.1.1, and 3.1, enhancing the development and testing of MQTT applications with advanced features such as Scripts, Benchmarks, and IoT Data Simulation.
+A: MQTT 5.0 support is available in MQTT.fx 5.0, aligning with modern MQTT standards.
+
+**Q: Is MQTT.fx free?**
+
+A: MQTT.fx 5.0 offers a 3-month free trial. Post-trial, licenses range from €49.90 (private) to €1,900 (enterprise) annually. Visit Softblade's pricing page for details.
+
+## MQTTX: The Best MQTT.fx Alternative You Should Try In 2025
+
+For a more versatile and modern MQTT client, try **MQTTX,** an all-in-one MQTT client toolbox. 
+
+MQTTX supports:
+
+- **Full MQTT Protocol Support**: Compatible with MQTT 5.0, 3.1.1, and 3.1.
+- **Multi-Platform**: Available on macOS, Windows, Linux, Docker, and as a web app.
+- **Advanced Features**: Includes scripting, benchmarking, and IoT data simulation.
+- **WebSocket Support**: Ideal for testing MQTT over WebSocket.
+- **Multiple Connections**: Supports simultaneous connections for complex testing.
+- **AI-powered MQTTX Copilot**: Boosts MQTT productivity with LLMs; enables smart workflows via MCP
+
+Download MQTTX at [mqttx.app](https://mqttx.app/) to streamline your MQTT development and testing in 2025.
 
 ![MQTTX](https://assets.emqx.com/images/3240de906bd11d729f68863cbf5768aa.png)
-
-
-
-
 
 <section class="promotion">
     <div>
         Talk to an Expert
     </div>
-    <a href="https://www.emqx.com/en/contact?product=solutions" class="button is-gradient px-5">Contact Us →</a>
+    <a href="https://www.emqx.com/en/contact?product=solutions" class="button is-gradient">Contact Us →</a>
 </section>

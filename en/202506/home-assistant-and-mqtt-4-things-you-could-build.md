@@ -14,8 +14,6 @@ The [MQTT protocol](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-st
 
 The MQTT protocol is not only effective but also straightforward to use. It provides various quality of service levels, ensuring that messages are delivered reliably and in the correct order. These features make MQTT a powerful tool when integrated with Home Assistant, as we will see in the following sections.
 
-> **Learn more in our detailed guide to** **[MQTT protocol in IoT](https://www.emqx.com/en/blog/what-is-the-mqtt-protocol)** 
-
 ## 4 Things You Can Build with MQTT and Home Assistant
 
 Here are only a few examples of home automation systems you can build by integrating MQTT with Home Assistant.
@@ -76,7 +74,7 @@ You should have a regular patch management process in place, ensuring that all y
 
 The first step in integrating MQTT with Home Assistant is to install an MQTT Broker. We’ll use [EMQX](https://github.com/emqx/emqx), an open-source, scalable, and highly performant MQTT Broker designed for IoT applications.
 
-To install EMQX, first, [download the latest version](https://www.emqx.com/en/try?product=broker) and follow the installation instructions. The installation process varies depending on the operating system you are using. For instance, if you are using a Debian-based Linux distribution like Ubuntu, you can install EMQX by executing `sudo apt-get install emqx` in the terminal.
+To install EMQX, first, [download the latest version](https://www.emqx.com/en/try?tab=self-managed) and follow the installation instructions. The installation process varies depending on the operating system you are using. For instance, if you are using a Debian-based Linux distribution like Ubuntu, you can install EMQX by executing `sudo apt-get install emqx` in the terminal.
 
 After successfully installing EMQX:
 
@@ -125,13 +123,16 @@ You can also test the integration by manually publishing a message to an MQTT to
 
 If the message is successfully received by Home Assistant, it means that the integration is working correctly.
 
-## Home Assistant MQTT with EMQX
+## Home Assistant + EMQX MQTT Platform for Multi-Scenario Smart Home Applications 
 
 Choosing EMQX as your MQTT server for Home Assistant can provide users with a superior smart home experience:
 
-- EMQX has massive IoT device connection capabilities to support large-scale home scenarios. Its distributed cluster architecture ensures high availability and seamless horizontal scalability as the user base grows.
-- EMQX’s highly secure authentication and access control mechanisms protect user data and privacy.
-- EMQX offers flexible bridging and data integration capabilities to help developers realize more diverse use cases.
+- **Massive Connectivity**: Single cluster supports 100 M+ device connections with <100ms onboarding time, reducing bandwidth usage by 50% vs traditional HTTP solutions.
+- **Cross-Datacenter Clustering**: Core-Replica Clustering architecture enables multi-region deployment with proximity access and cross-region mesh data forwarding.
+- **Stable Weak-Network Performance**: QoS-based MQTT and MQTT over QUIC protocols maintain connectivity in poor networks with <200ms end-to-end control latency.
+- **Open Integration**: Built-in rules engine with 100+ database and message queue connectors enables rapid integration between device data and AI/voice services.
+- **Security & Compliance**: End-to-end encryption + dynamic ACL access control, certified with SOC2, Cybersecurity Level-3, and ISO 27001.
+- **Edge Intelligence**: Combines EMQ's edge computing capabilities with LLM integration to create context-aware smart home agents that process data locally.
 
 With EMQX, Home Assistant can fully unleash its strength as the brain of smart homes, delivering users exceptionally stable, smooth and reliable intelligent living experiences.
 
@@ -139,8 +140,7 @@ With EMQX, Home Assistant can fully unleash its strength as the brain of smart h
 
 <section class="promotion">
     <div>
-        Try EMQX Enterprise for Free
-      <div class="is-size-14 is-text-normal has-text-weight-normal">Connect any device, at any scale, anywhere.</div>
+        Talk to an Expert
     </div>
-    <a href="https://www.emqx.com/en/try?product=enterprise" class="button is-gradient px-5">Get Started →</a>
+    <a href="https://www.emqx.com/en/contact?product=solutions" class="button is-gradient">Contact Us →</a>
 </section>
