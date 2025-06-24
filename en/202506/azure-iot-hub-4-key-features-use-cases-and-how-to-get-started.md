@@ -34,7 +34,6 @@ In addition, Azure IoT Hub enables reliable, secure bidirectional communications
 
    These features offer several advantages. For one, they allow for easy management and control of devices. Additionally, they enable the development of sophisticated IoT applications that can adapt to changes in device conditions.
 
-> **Learn more in our detailed guide to Azure IoT devices (coming soon)**
 
 ## Main Use Cases of Azure IoT Hub
 
@@ -96,43 +95,23 @@ Here are the general steps for starting to use Azure IoT Hub.
 
    Sending a message from Azure IoT Hub to a device involves using the [Service SDK](https://www.google.com/url?q=https://learn.microsoft.com/en-us/azure/iot-hub/iot-hub-devguide-sdks%23azure-iot-hub-service-sdks&sa=D&source=editors&ust=1692005524663569&usg=AOvVaw09O2XA8Qk-t69_k_JkM2or) provided by Azure. Similar to sending a message from a device, you need to create a message, set its properties, and call the send method. However, in this case, you will also need to specify the device to which the message should be sent.
 
-## Amplify the Power of Azure IoT Hub with EMQX Cloud
+## **EMQX on Azure: A Powerful Enhancement to Azure IoT Hub**
 
-Azure IoT Hub is a powerful solution, but it has several limitations, particularly in its ability to manage large-scale MQTT communications. [EMQX Cloud](https://www.emqx.com/en/cloud) offers a comprehensive MQTT service that is fully managed, has a flexible pricing model, and provides the ability to customize connection specifications and integrate with cloud resources on any cloud provider.
+Azure loT Hub is a powerful solution, but it has several limitations, particularly in its ability to manage large-scale MQTT communications.
 
-Together with the Azure IoT Hub, EMQX Cloud, can provide a complete solution to match the Azure IoT ecosystem.
+EMQX is a high-performance MQTT platform that facilitates efficient messaging and data communication between IoT devices. Built to handle millions of concurrent connections, it’s one of the most scalable and reliable MQTT brokers on the market today.
 
-### EMQX Cloud Products
+When integrated with Azure, EMQX significantly strengthens the platform’s ability to support IoT communication at scale, with added benefits such as:
 
-- **[BYOC (Bring Your Own Cloud)](https://www.emqx.com/en/cloud/byoc)**: Seamlessly integrates the EMQX MQTT server with Azure or any existing cloud systems. Keep your data secure in your own cloud and manage it with EMQ's expertise.
+- **Azure IoT Hub Integration:** Azure IoT Hub is the bridge between your devices and the cloud, while EMQX facilitates messaging between devices and Azure. This integration provides a secure, reliable method for managing device-to-cloud communication.
+- **Interoperability with Other Azure Services**: EMQX makes it easy to move MQTT messages into Azure Event Hubs. With the simple SQL-based rule engine, you can effortlessly filter, extract, enrich, and transform the messages before they are ingested into various Azure services, such as AI/ML, Cosmos DB, Data Lake, Analytics, and more.
+- **Real-time Data Processing:** With EMQX handling MQTT message distribution, and Azure Event Hub and Stream Analytics processing the data, you can create real-time IoT applications that provide immediate insights and drive actionable outcomes.
+- **Global Connectivity:** Leveraging Azure’s vast global infrastructure combined with EMQX’s scalability, organizations can deploy IoT systems across regions while maintaining low-latency, high-performance connections.
+- **Comprehensive Security:** By combining EMQX’s native security features with Azure’s identity management and authentication services, you can ensure that every device and data stream is fully secured.
 
-- **[Serverless](https://www.emqx.com/en/cloud/serverless-mqtt)**: Provides MQTT services on a secure and scalable cluster with usage-based pricing. The service is completely free within the free quota and supports up to 1000 concurrent connections.
+EMQX Platform is now available on Azure Marketplace. Users can easily subscribe to EMQX services through the Azure marketplace and leverage Azure for seamless billing management and efficient resource control.
 
-- **[Dedicated Plan](https://www.emqx.com/en/cloud/dedicated)**: Provides MQTT services on a dedicated EMQX cluster with high performance, reliability, and data integration, without managing your own cluster. Perfect for businesses of all sizes.
-
-### Tight Integration with Azure Cloud
-
-EMQX Cloud is tightly integrated with Azure offerings:
-
-- EMQX Cloud Dedicated cluster can be deployed in 5 regions in Azure, seamlessly integrated with the existing resources in Azure.
-
-- EMQX Cloud provides data integration with 40+ services (connectors), including databases, message queues, and more services in Azure.
-
-- You can subscribe to EMQX Cloud via the Azure marketplace, and manage all service bills in Azure billing accounts.
-
-### Benefits of Using EMQX Cloud
-
-- Hassle-Free Management: EMQX Cloud completely handles setup, maintenance, and updates.
-
-- Cost-Effective: EMQX Cloud offers a variety of pricing models, such as by consumption or by time, which reduce the total cost of ownership.
-
-- 100% MQTT: 100% compliant with MQTT 3.1, 3.1.1, and 5.0 standards with all 3 QoS level. Seamless integration with all [MQTT clients](https://www.emqx.com/en/blog/mqtt-client-tools).
-
-- Seamless Scalability: Scale up or down on demand without any worries about server capacity or performance.
-
-- Up to 99.99% SLA: EMQX Cloud ensures maximum uptime and availability with our highly available, fault-tolerant architecture.
-
-- 24 x 7 Technical Support: A dedicated team of experts is always available to assist you with any issues at any time.
+For more information, please refer to: [Building Smarter IoT Systems with EMQX on Azure: Scalable, Secure, and Future-Ready Solutions](https://www.emqx.com/en/resources/building-smarter-iot-systems-with-emqx-on-azure).
 
 
 

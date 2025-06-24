@@ -1,12 +1,12 @@
 ## What Is Smart Manufacturing?
 
-Smart manufacturing is a broad term that encompasses the use of advanced digital technologies to improve manufacturing processes. It's a game-changer in the industry, promising to revolutionize the way products are designed, fabricated, and distributed. Smart manufacturing is about harnessing data and automation to drive efficiency, flexibility, and speed.
+Smart manufacturing refers to the integration of advanced digital technologies—such as IoT, AI, big data analytics, and cloud computing—into every layer of the manufacturing process. It transforms traditional factories into intelligent systems that can monitor, analyze, and optimize production in real time.
 
 Smart manufacturing combines industrial automation and information technology. It integrates physical machinery with networked sensors and software, used to predict, control and improve performance. The aim is to create a self-regulating system that optimizes productivity, reduces waste, and increases overall operational effectiveness.
 
 At its core, smart manufacturing is about connectivity and intelligence. It brings together all aspects of the manufacturing process, from supply chain management to production to customer service, under a single digital umbrella. This holistic approach offers a cohesive view of the entire operation, facilitating more informed decision-making and fostering innovation.
 
-## Smart Manufacturing Examples and Use Cases
+## Smart Manufacturing Use Cases
 
 ### Predictive Maintenance
 
@@ -50,7 +50,7 @@ Smart manufacturing also enables personalization and customization on a scale th
 
 Take for example, a furniture manufacturer using smart manufacturing techniques. Leveraging 3D printing technology, the manufacturer can create unique, custom-designed furniture pieces based on customer specifications. Customers can personalize their designs, choosing the dimensions, materials, and finishes, and the system then produces the pieces to exact specifications. This enables manufacturers to offer personalized products without sacrificing efficiency or increasing costs.
 
-## Key Technologies Driving Smart Manufacturing
+## Core Technologies Behind Smart Manufacturing
 
 ### Internet of Things (IoT)
 
@@ -138,33 +138,51 @@ Manufacturers should also stay abreast of the latest advancements in smart manuf
   </div>
 </section>
 
-## IIoT Connectivity for Smart Manufacturing with EMQX
+## IIoT Connectivity for Smart Manufacturing with EMQX and NeuronEX
 
-EMQ provides [Neuron](https://www.emqx.com/en/products/neuronex), a lightweight connectivity server for industrial dataops and data-centric automation, tightly integrated with our industry-leading MQTT Broker. Neuron provides several significant benefits for smart manufacturing, simplifying IIoT connectivity, enhancing data integration, and enabling real-time communication and analytics.
+As smart manufacturing evolves, data-driven intelligence is no longer optional—it’s essential. EMQ provides a future-ready platform that combines high-performance MQTT messaging and industrial connectivity with AI-first architecture. This enables manufacturers to move from simple automation to intelligent decision-making at both the edge and the cloud.
 
-If you are a smart manufacturer, [EMQX](https://www.emqx.com/en/products/emqx) and Neuron can help with:
+![image.png](https://assets.emqx.com/images/fe8aa8b16125cbf7da3b8451cb14efcc.png)
 
-1. **Simplified Connectivity:** EMQX as an MQTT broker and Neuron as an industrial connectivity gateway provide a seamless bridge between various industrial protocols and [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt). This integration simplifies the connection of diverse industrial devices, sensors, and machines, enabling them to communicate with each other and with central systems in a standardized way.
-2. **Protocol Translation:** Neuron's ability to convert various industrial protocols to MQTT ensures interoperability among different types of devices used in the manufacturing process. This allows legacy equipment and modern IoT devices to communicate effortlessly, regardless of their native communication protocols.
-3. **Real-time Data Exchange:** EMQX coupled with Neuron's edge computing capabilities, enables real-time data exchange and analysis at the edge of the network. This capability is crucial in smart manufacturing, where immediate data insights are necessary for process optimization, predictive maintenance, and rapid decision-making.
-4. **Data Contextualization:** The integration of EMQX and Neuron in smart manufacturing facilitates data contextualization, which is the process of enriching raw data with additional information to provide meaningful insights and context for decision-making.
-5. **Scalability and Reliability:** EMQX is designed to handle massive numbers of connected devices simultaneously, ensuring the scalability and reliability required for large-scale smart manufacturing deployments. This means the solution can accommodate thousands of sensors and devices, providing continuous data streams without compromising performance.
-6. **Edge Computing and Analytics:** Neuron, as an industrial connectivity gateway, can perform data preprocessing, filtering, and analytics at the edge of the network. This reduces latency, conserves bandwidth, and offloads computational tasks from central servers, allowing for faster response times and improved overall system efficiency.
-7. **Remote Monitoring and Control:** EMQX and Neuron facilitate bidirectional communication, enabling remote monitoring and control of industrial processes. Smart Manufacturing environments can leverage this capability for remote configuration, troubleshooting, and optimization, reducing downtime and enhancing operational efficiency.
-8. **Integration with Cloud Platforms:** EMQX can seamlessly integrate with cloud platforms, allowing Smart Manufacturing data to be sent to cloud-based analytics and storage systems. This integration opens up opportunities for advanced data analytics, machine learning, and predictive maintenance, empowering manufacturers with valuable insights.
-   Learn more in our detailed guide to [iiot platforms](https://www.emqx.com/en/blog/iiot-platform-key-components-and-5-notable-solutions).
-9. **Support for CNC and Robot Control:** With the integration of EMQX and Neuron, smart manufacturing environments can benefit from seamless communication and control of CNC machines and industrial robots. CNC machines are widely used in manufacturing processes for precise and automated control of machine tools. Industrial robots play a crucial role in automating repetitive tasks, improving production efficiency, and ensuring consistent quality.
+### EMQX: MQTT+AI Platform for Real-Time Data Streaming
 
-By combining the strengths of EMQX as an MQTT broker and Neuron as an industrial connectivity gateway, Smart Manufacturing can experience streamlined connectivity, enhanced data management, and real-time insights. These benefits contribute to increased efficiency, reduced downtime, improved product quality, and overall cost savings in smart manufacturing processes.
+EMQX is a leading MQTT platform built for high-throughput, low-latency communication. It enables reliable messaging between industrial devices, control systems, and cloud platforms—forming the communication backbone of IIoT.
 
-**[Learn more about Neuron: The Industrial IoT Connectivity Server](https://www.emqx.com/en/products/neuronex)**
+- **Real-time Data Exchange**: EMQX handles millions of concurrent connections, making it ideal for large-scale smart manufacturing environments.
+- **Cloud Integration**: EMQX supports integration with AWS, Azure, and Google Cloud, enabling centralized analytics and predictive maintenance workflows.
+- **Security and Reliability**: EMQX offers TLS encryption, authentication, and access control to safeguard sensitive industrial data.
+- **AI/ML Integration**: Analyze data in motion, identify trends, automate processes, gain real-time insights, and make data-driven decisions with stream processing and AI/ML on the factory floor.
+
+### NeuronEX: Industrial Gateway for Unified Connectivity and Edge Intelligence
+
+NeuronEX connects industrial devices running on legacy protocols (Modbus, OPC UA, EtherNet/IP, etc.) to modern data platforms using [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt). It bridges the gap between traditional OT equipment and modern IoT systems.
+
+- **Protocol Translation**: Seamlessly converts industrial protocols into MQTT for real-time communication with cloud or edge platforms.
+- **Edge Processing and AI Inference**: Executes rule logic and AI models at the edge, enabling low-latency responses and localized decision-making.
+- **Scalable Architecture**: Easily expands from pilot projects to full-scale deployments with thousands of connected devices.
+
+Together, **EMQX + NeuronEX** enable manufacturers to:
+
+- Achieve real-time visibility across machines, processes, and systems
+- Integrate CNCs, PLCs, and industrial robots into smart workflows
+- Streamline predictive maintenance and production analytics
+- Build secure, flexible IIoT infrastructure with cloud and edge support
+
+Whether you're building a smart production hub or upgrading legacy equipment, EMQ's solution offers the performance, flexibility, and interoperability needed to accelerate your smart manufacturing journey.
+
+Learn more:
+
+- [Smart Manufacturing Solution](https://www.emqx.com/en/solutions/smart-manufacturing) 
+- [Software-Defined, AI-First: A Smart Manufacturing Revolution](https://www.emqx.com/en/resources/software-defined-ai-first-a-smart-manufacturing-revolution) 
+- [Open Manufacturing Hub: A Reference Architecture for Industrial IoT (IIoT)](https://www.emqx.com/en/resources/open-manufacturing-hub-a-reference-architecture-for-industrial-iot) 
+
+
 
 
 
 <section class="promotion">
     <div>
-        Try Neuron for Free
-       <div class="is-size-14 is-text-normal has-text-weight-normal">The Industrial IoT connectivity server</div>
+        Talk to an Expert
     </div>
-    <a href="https://www.emqx.com/en/try?product=neuron" class="button is-gradient px-5">Get Started →</a>
+    <a href="https://www.emqx.com/en/contact?product=solutions" class="button is-gradient">Contact Us →</a>
 </section>

@@ -213,6 +213,7 @@ Explore more with & via EMQ.
 ## [EMQX Open Source | Broker](https://www.emqx.com/en/blog/category/emqx)
 EMQX is the world's most scalable open-source MQTT broker with a high performance that connects 100M+ IoT devices in 1 cluster, while maintaining 1M message per second throughput and sub-millisecond latency.
 
+- [Real-Time AI for IoT: Introducing LLM Integration in EMQX 5.10](https://www.emqx.com/en/blog/introducing-llm-integration-in-emqx-5-10) ([Edit](https://github.com/emqx/blog/blob/main/en/202506/introducing-llm-integration-in-emqx-5-10.md))
 - [What's New in EMQX Enterprise 5.10.0: AI-Powered Flows, NATS Gateway, and S3 Tables Integration](https://www.emqx.com/en/blog/emqx-enterprise-5-10-0-release-notes) ([Edit](https://github.com/emqx/blog/blob/main/en/202506/emqx-enterprise-5-10-0-release-notes.md))
 - [How EMQ is Powering Innovation with AI/LLMs Across Product and Development](https://www.emqx.com/en/blog/how-emq-is-powering-innovation-with-ai-llms-across-product-and-development) ([Edit](https://github.com/emqx/blog/blob/main/en/202506/how-emq-is-powering-innovation-with-ai-llms-across-product-and-development.md))
 - [Home Assistant and MQTT: 4 Things You Could Build](https://www.emqx.com/en/blog/home-assistant-and-mqtt-4-things-you-could-build) ([Edit](https://github.com/emqx/blog/blob/main/en/202506/home-assistant-and-mqtt-4-things-you-could-build.md))
@@ -326,6 +327,7 @@ EMQX is the world's most scalable open-source MQTT broker with a high performanc
 ## [EMQX Cloud](https://www.emqx.com/en/blog/category/cloud)
 The easiest way to start MQTT service. Connect your IoT devices to any cloud without the burden of maintaining infrastructure.
 
+- [Azure IoT Hub: Key Features, Use Cases, Quick Start & Alternative](https://www.emqx.com/en/blog/azure-iot-hub-4-key-features-use-cases-and-how-to-get-started) ([Edit](https://github.com/emqx/blog/blob/main/en/202506/azure-iot-hub-4-key-features-use-cases-and-how-to-get-started.md))
 - [[Scheduled Maintenance Notice] EMQX Cloud Serverless Deployment Upgrades: June 2025](https://www.emqx.com/en/blog/emqx-cloud-serverless-deployment-upgrades-june-2025) ([Edit](https://github.com/emqx/blog/blob/main/en/202506/emqx-cloud-serverless-deployment-upgrades-june-2025.md))
 - [Your Next Move: A Strategy for Upgrading from EMQX Standard](https://www.emqx.com/en/blog/your-next-move-a-strategy-for-upgrading-from-emqx-standard) ([Edit](https://github.com/emqx/blog/blob/main/en/202404/your-next-move-a-strategy-for-upgrading-from-emqx-standard.md))
 - [Strategic Update: Refocusing EMQX Platform Service Offerings](https://www.emqx.com/en/blog/strategic-update-refocusing-emqx-platform-service-offerings) ([Edit](https://github.com/emqx/blog/blob/main/en/202404/strategic-update-refocusing-emqx-platform-service-offerings.md))
@@ -348,7 +350,6 @@ The easiest way to start MQTT service. Connect your IoT devices to any cloud wit
 - [Connecting to a Serverless MQTT Broker in React](https://www.emqx.com/en/blog/connecting-to-a-serverless-mqtt-broker-in-react) ([Edit](https://github.com/emqx/blog/blob/main/en/202309/connecting-to-a-serverless-mqtt-broker-in-react.md))
 - [Serverless MQTT: Your Key to Efficient IoT Prototyping](https://www.emqx.com/en/blog/serverless-mqtt-your-key-to-efficient-iot-prototyping) ([Edit](https://github.com/emqx/blog/blob/main/en/202309/serverless-mqtt-your-key-to-efficient-iot-prototyping.md))
 - [EMQX Cloud Now Available in AWS Sydney: Deploy Your EMQX Cluster Today](https://www.emqx.com/en/blog/emqx-cloud-now-available-in-aws-sydney) ([Edit](https://github.com/emqx/blog/blob/main/en/202308/emqx-cloud-now-available-in-aws-sydney.md))
-- [Azure IoT Hub: 4 Key Features, Use Cases, and How to Get Started](https://www.emqx.com/en/blog/azure-iot-hub-4-key-features-use-cases-and-how-to-get-started) ([Edit](https://github.com/emqx/blog/blob/main/en/202308/azure-iot-hub-4-key-features-use-cases-and-how-to-get-started.md))
 - [Understanding AWS IoT Core: Features, Use Cases & Quick Tutorial](https://www.emqx.com/en/blog/understanding-aws-iot-core) ([Edit](https://github.com/emqx/blog/blob/main/en/202308/understanding-aws-iot-core.md))
 - [EMQX Cloud BYOC Now Available on AWS: Seamlessly Extend Your MQTT Infrastructure](https://www.emqx.com/en/blog/emqx-cloud-byoc-is-now-available-on-aws) ([Edit](https://github.com/emqx/blog/blob/main/en/202308/emqx-cloud-byoc-is-now-available-on-aws.md))
 - [Get Started with EMQX Platform on Azure Marketplace](https://www.emqx.com/en/blog/get-started-with-emqx-cloud-on-azure-marketplace) ([Edit](https://github.com/emqx/blog/blob/main/en/202308/get-started-with-emqx-cloud-on-azure-marketplace.md))
@@ -515,6 +516,7 @@ Build a reliable, efficient and industry-specific Internet of Vehicles platform 
 
 ## [Industrial IoT | Unified Namespace | Sparkplug](https://www.emqx.com/en/blog/category/industrial-iot)
 
+- [Smart Manufacturing Explained: Basics, Use Cases & Best Practices](https://www.emqx.com/en/blog/the-smart-manufacturing-revolution) ([Edit](https://github.com/emqx/blog/blob/main/en/202506/the-smart-manufacturing-revolution.md))
 - [AI-Ready Unified Namespace: Building the Industrial Data Hub with EMQX and NeuronEX](https://www.emqx.com/en/blog/building-the-industrial-data-hub-with-emqx-and-neuronex) ([Edit](https://github.com/emqx/blog/blob/main/en/202506/building-the-industrial-data-hub-with-emqx-and-neuronex.md))
 - [Natural Language Meets Industrial Data: Pioneering AI-Driven IIoT Data Exploration](https://www.emqx.com/en/blog/pioneering-ai-driven-iiot-data-exploration) ([Edit](https://github.com/emqx/blog/blob/main/en/202506/pioneering-ai-driven-iiot-data-exploration.md))
 - [Modbus Protocol 2025: From Basics to IIoT Integration](https://www.emqx.com/en/blog/modbus-protocol-the-grandfather-of-iot-communication) ([Edit](https://github.com/emqx/blog/blob/main/en/202503/modbus-protocol-the-grandfather-of-iot-communication.md))
@@ -563,7 +565,6 @@ Build a reliable, efficient and industry-specific Internet of Vehicles platform 
 - [Bridging FINS Data to MQTT: Protocol Explained and Hands-on Tutorial](https://www.emqx.com/en/blog/bridging-fins-data-to-mqtt) ([Edit](https://github.com/emqx/blog/blob/main/en/202308/bridging-fins-data-to-mqtt.md))
 - [Bridging OPC UA to MQTT: A Step-by-Step Tutorial](https://www.emqx.com/en/blog/bridging-opc-ua-data-to-mqtt-for-iiot) ([Edit](https://github.com/emqx/blog/blob/main/en/202308/bridging-opc-ua-data-to-mqtt-for-iiot.md))
 - [IIoT Explained: Examples, Technologies, Benefits and Challenges](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges) ([Edit](https://github.com/emqx/blog/blob/main/en/202308/iiot-explained-examples-technologies-benefits-and-challenges.md))
-- [The Smart Manufacturing Revolution: Examples, Tech & Tips](https://www.emqx.com/en/blog/the-smart-manufacturing-revolution) ([Edit](https://github.com/emqx/blog/blob/main/en/202307/the-smart-manufacturing-revolution.md))
 - [Bridging TwinCAT Data to MQTT: Introduction and Hands-on Tutorial](https://www.emqx.com/en/blog/bridging-twincat-data-to-mqtt) ([Edit](https://github.com/emqx/blog/blob/main/en/202307/bridging-twincat-data-to-mqtt.md))
 - [Efficiency Comparison: OPC-UA, Modbus, MQTT, Sparkplug, HTTP](https://www.emqx.com/en/blog/efficiency-comparison-opc-ua-modbus-mqtt-sparkplug-http) ([Edit](https://github.com/emqx/blog/blob/main/en/202306/efficiency-comparison-opc-ua-modbus-mqtt-sparkplug-http.md))
 - [Bridging Modbus Data to MQTT for IIoT:  A Step-by-Step Tutorial](https://www.emqx.com/en/blog/bridging-modbus-data-to-mqtt-for-iiot) ([Edit](https://github.com/emqx/blog/blob/main/en/202306/bridging-modbus-data-to-mqtt-for-iiot.md))
