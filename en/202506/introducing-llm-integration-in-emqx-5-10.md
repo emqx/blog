@@ -12,7 +12,7 @@ Traditionally, applying AI to IoT data required complex and costly engineering. 
 
 EMQX now bridges this gap. By embedding AI processing directly into the data flow, you can build intelligent workflows that analyze, enrich, and transform MQTT messages on the fly. This enables a new class of applications that can perceive, reason, and act on live data instantly. The initial release includes seamless integration with models from OpenAI and Anthropic.
 
-![image.png](https://assets.emqx.com/images/81d2d733ddaa09390cac364bf813b705.png)
+![image.png](https://assets.emqx.com/images/2ec7a9bf1682dc77098fb4335b6ced5d.png)
 
 <center>Embedding AI processing into the MQTT data flow</center>
 
