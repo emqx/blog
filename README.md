@@ -7,6 +7,7 @@
 ## [MQTT Tutorials](https://www.emqx.com/en/blog/category/mqtt-protocol)
 Get to know the preferred protocol in IoT from beginner to master.
 
+- [MQTT 5.0: 7 New Features and a Migration Checklist](https://www.emqx.com/en/blog/introduction-to-mqtt-5) ([Edit](https://github.com/emqx/blog/blob/main/en/202506/introduction-to-mqtt-5.md))
 - [MQTT Trends for 2025 and Beyond: Powering the Future of AI and IoT](https://www.emqx.com/en/blog/mqtt-trends-for-2025-and-beyond) ([Edit](https://github.com/emqx/blog/blob/main/en/202506/mqtt-trends-for-2025-and-beyond.md))
 - [Mastering MQTT: The Ultimate Beginner's Guide for 2025](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) ([Edit](https://github.com/emqx/blog/blob/main/en/202502/the-easiest-guide-to-getting-started-with-mqtt.md))
 - [MQTT QoS 0, 1, 2 Explained: A Quickstart Guide](https://www.emqx.com/en/blog/introduction-to-mqtt-qos) ([Edit](https://github.com/emqx/blog/blob/main/en/202408/introduction-to-mqtt-qos.md))
@@ -25,7 +26,6 @@ Get to know the preferred protocol in IoT from beginner to master.
 - [MQTT Shared Subscriptions: Practical Guidelines and Use Cases | MQTT 5 Features](https://www.emqx.com/en/blog/introduction-to-mqtt5-protocol-shared-subscription) ([Edit](https://github.com/emqx/blog/blob/main/en/202311/introduction-to-mqtt5-protocol-shared-subscription.md))
 - [Introduction to MQTT Clean Start and Session Expiry Interval | MQTT 5 Features](https://www.emqx.com/en/blog/mqtt5-new-feature-clean-start-and-session-expiry-interval) ([Edit](https://github.com/emqx/blog/blob/main/en/202310/mqtt5-new-feature-clean-start-and-session-expiry-interval.md))
 - [Introduction to MQTT Payload Format Indicator and Content Type | MQTT 5 Features](https://www.emqx.com/en/blog/mqtt5-new-features-payload-format-indicator-and-content-type) ([Edit](https://github.com/emqx/blog/blob/main/en/202310/mqtt5-new-features-payload-format-indicator-and-content-type.md))
-- [MQTT 5.0: 7 New Features and a Migration Checklist](https://www.emqx.com/en/blog/introduction-to-mqtt-5) ([Edit](https://github.com/emqx/blog/blob/main/en/202310/introduction-to-mqtt-5.md))
 - [Introduction to MQTT Message Expiry Interval | MQTT 5 Features](https://www.emqx.com/en/blog/mqtt-message-expiry-interval) ([Edit](https://github.com/emqx/blog/blob/main/en/202309/mqtt-message-expiry-interval.md))
 - [MQTT 5.0 Packet Explained 06: AUTH](https://www.emqx.com/en/blog/mqtt-5-0-control-packets-06-auth) ([Edit](https://github.com/emqx/blog/blob/main/en/202309/mqtt-5-0-control-packets-06-auth.md))
 - [MQTT 5.0 Packet Explained 05: DISCONNECT](https://www.emqx.com/en/blog/mqtt-5-0-control-packets-05-disconnect) ([Edit](https://github.com/emqx/blog/blob/main/en/202309/mqtt-5-0-control-packets-05-disconnect.md))
