@@ -167,6 +167,7 @@ Best practice of MQTT in various clients.
 Explore more with & via EMQ.
 
 - [EMQ and Ecosteer: Empowering Data Control and Compliance in Europe](https://www.emqx.com/en/blog/emq-and-ecosteer) ([Edit](https://github.com/emqx/blog/blob/main/en/202506/emq-and-ecosteer.md))
+- [Home Assistant and Modbus: Smart Home Automation Guide](https://www.emqx.com/en/blog/home-assistant-modbus) ([Edit](https://github.com/emqx/blog/blob/main/en/202506/home-assistant-modbus.md))
 - [EMQX Cloud & TDengine Cloud Integration: A Tutorial for End-to-End Big Data Solutions](https://www.emqx.com/en/blog/emqx-cloud-and-tdengine-cloud) ([Edit](https://github.com/emqx/blog/blob/main/en/202505/emqx-cloud-and-tdengine-cloud.md))
 - [MCP over MQTT: Empowering Agentic IoT with EMQX for AI-Driven Intelligence](https://www.emqx.com/en/blog/mcp-over-mqtt) ([Edit](https://github.com/emqx/blog/blob/main/en/202504/mcp-over-mqtt.md))
 - [Integrating MQTT with AI and LLMs in IoT: Best Practices and Future Perspectives](https://www.emqx.com/en/blog/integrating-mqtt-with-ai-and-llms) ([Edit](https://github.com/emqx/blog/blob/main/en/202503/integrating-mqtt-with-ai-and-llms.md))
@@ -196,7 +197,6 @@ Explore more with & via EMQ.
 - [MQTT to MySQL: Powering Real-time Monitoring and Smart Decision-Making](https://www.emqx.com/en/blog/mqtt-to-mysql) ([Edit](https://github.com/emqx/blog/blob/main/en/202402/mqtt-to-mysql.md))
 - [MQTT with Zigbee: A Practical Guide](https://www.emqx.com/en/blog/mqtt-with-zigbee-a-practical-guide) ([Edit](https://github.com/emqx/blog/blob/main/en/202401/mqtt-with-zigbee-a-practical-guide.md))
 - [Integrating MQTT Data into InfluxDB for a Time-Series IoT Application](https://www.emqx.com/en/blog/building-an-iot-time-series-data-application-with-mqtt-and-influxdb) ([Edit](https://github.com/emqx/blog/blob/main/en/202401/building-an-iot-time-series-data-application-with-mqtt-and-influxdb.md))
-- [Home Assistant Modbus: 4 Things You Can Build](https://www.emqx.com/en/blog/home-assistant-modbus) ([Edit](https://github.com/emqx/blog/blob/main/en/202310/home-assistant-modbus.md))
 - [OpenTelemetry: The Basics & Benefits for MQTT and IoT Observability](https://www.emqx.com/en/blog/open-telemetry-the-basics-and-benefits-for-mqtt-and-iot-observability) ([Edit](https://github.com/emqx/blog/blob/main/en/202310/open-telemetry-the-basics-and-benefits-for-mqtt-and-iot-observability.md))
 - [AWS MQTT: Managing IoT Communication in AWS (with Tutorial)](https://www.emqx.com/en/blog/aws-mqtt-managing-iot-communication-in-aws) ([Edit](https://github.com/emqx/blog/blob/main/en/202309/aws-mqtt-managing-iot-communication-in-aws.md))
 - [MQTT Performance Benchmark Testing: EMQX-HStreamDB Integration](https://www.emqx.com/en/blog/mqtt-performance-benchmark-testing-emqx-hstreamdb-integration) ([Edit](https://github.com/emqx/blog/blob/main/en/202307/mqtt-performance-benchmark-testing-emqx-hstreamdb-integration.md))
