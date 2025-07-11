@@ -6,25 +6,28 @@ Node.js is widely used in IoT due to its event-driven architecture and real-time
 
 This article provides a comprehensive guide on using MQTT in a Node.js project for seamless communication between the client and an [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison). You will learn how to establish a connection, subscribe and unsubscribe to topics, publish messages, and receive messages in real-time. This guide will equip you with the skills to leverage MQTT to build scalable and efficient IoT applications.
 
+## Why Use Node.js with MQTT?
 
+- **Lightweight Protocol**: MQTT minimizes bandwidth usage, perfect for IoT devices.
+- **Event-Driven Architecture**: Node.js handles asynchronous operations, ideal for real-time MQTT communication.
+- **Scalability**: Build robust IoT systems with **Node.js MQTT** for industries like smart homes, automotive, and energy.
+- **MQTT.js Library**: A widely-used, asynchronous JavaScript library for **Node.js MQTT** integration.
 
 ## Node.js MQTT Project Preparation
 
 ### Confirm Node.js Version
 
-This project uses Node.js **v16.20.0** for development and testing. To confirm that the correct version of Node.js is installed, readers can use the following command: 
+This project utilizes Node.js v22.12.0 for development and testing. To confirm that the correct version of Node.js is installed, readers can use the following command:
 
 ```crmsh
 node --version
 
-v16.20.0
+v22.12.0
 ```
 
 ### Install the MQTT.js
 
-MQTT.js is a client library for the MQTT protocol, written in JavaScript for node.js and the browser. Due to the single-thread feature of JavaScript, MQTT.js is a fully asynchronous [MQTT client](https://www.emqx.com/en/blog/mqtt-client-tools). It is currently the most widely used [MQTT client library](https://www.emqx.com/en/mqtt-client-sdk) in the JavaScript ecosystem.
-
-We can use NPM or Yarn to install MQTT.js.
+MQTT.js is the go-to library for Node.js MQTT applications, supporting both Node.js and browser environments. Install it via npm or Yarn:
 
 - **NPM**
 
@@ -60,9 +63,7 @@ Before proceeding, please ensure you have an MQTT broker to communicate and test
 
 - **Fully managed cloud service**
 
-  The fully managed cloud service is the easiest way to start an MQTT service. With [EMQX Dedicated](https://www.emqx.com/en/cloud/dedicated), you can get started in just a few minutes and run your MQTT service in 20+ regions across AWS, Google Cloud, and Microsoft Azure, ensuring global availability and fast connectivity.
-
-   The latest edition, [EMQX Serverless](https://www.emqx.com/en/cloud/serverless-mqtt), provides a forever free 1M session minutes/month complimentary offering for developers to easily start their MQTT deployment within seconds.
+  The fully managed cloud service is the easiest way to start an MQTT service. [EMQX Serverless](https://www.emqx.com/en/cloud/serverless-mqtt) is a free, cloud-based MQTT service with 1M session minutes/month. Ideal for quick Node.js MQTT testing.
 
 - **Free public MQTT broker**
 
@@ -103,6 +104,7 @@ For more information, please check out: [Free Public MQTT Broker](https://www.em
     <a href="https://www.emqx.com/en/resources/a-practical-guide-to-mqtt-broker-selection?utm_campaign=embedded-a-practical-guide-to-mqtt-broker-selection&from=blog-how-to-use-mqtt-in-nodejs" class="button is-gradient">Get the eBook →</a>
   </div>
 </section>
+
 
 ## Node.js MQTT Usage
 
@@ -376,9 +378,9 @@ For the complete code of this project, please check it on [GitHub](https://githu
 
 
 
-## Test
+## Testing Your Node.js MQTT Application
 
-We add a line of startup script to the script field in the package.json file.
+Add a startup script to package.json:
 
 ```json
 "scripts": {
@@ -386,7 +388,7 @@ We add a line of startup script to the script field in the package.json file.
 }
 ```
 
-We can simply use `npm start` to run the project.
+Use `npm start` to run the project.
 
 ```coffeescript
 npm start
@@ -406,7 +408,7 @@ We can see that the message sent by MQTTX is printed in the console.
 
 
 
-## Q&A
+## FAQs for Node.js MQTT
 
 ### **What format do MQTT messages come in?**
 
@@ -438,17 +440,15 @@ If the MQTT message is not JSON, you can still convert it to a string using the 
 
 ### **How can I debug issues in my Node.js MQTT application?**
 
-- Listen for 'error' events on your MQTT client. This often provides helpful information about any problems.
+- Listen for 'error' events on your [MQTT client](https://www.emqx.com/en/blog/mqtt-client-tools). This often provides helpful information about any problems.
 - Use console.log statements in your code to check the flow and see the content of variables.
 - If you have problems with MQTT messages, try subscribing to the '#' topic. This is a wildcard topic that matches all messages, so you can see everything that's being published.
 - If you're having connectivity issues, please check your broker's logs to see if there are any clues there.
 - Consider using a tool like [MQTTX](https://mqttx.app/) to manually connect to your broker and publish/subscribe to topics. This can help determine whether the problem is with your Node.js code or the broker.
 
+## Advanced Node.js MQTT Use Cases
 
-
-## Node.js MQTT Advanced
-
-### **How to use MQTT in Web frameworks such as Express.js**
+### **Using MQTT in Web frameworks such as Express.js**
 
 > Express.js is an open-source web application framework that uses Node.js to build web applications and APIs. It is currently one of the most popular Node.js web frameworks and is highly flexible and scalable when creating web applications.
 
@@ -506,7 +506,7 @@ The above code creates an Express.js application and defines the `req.mqttPublis
 
 This is just a simple example implementation, and real-world applications might require more complex processing, such as handling multiple topics and validating request parameters.
 
-### **How to build Command-line tools in Node.js**
+### **Building Command-line tools in Node.js**
 
 Node.js boasts a robust open-source ecosystem, enabling developers to quickly create MQTT client tools that meet specific business requirements by leveraging various open-source libraries. Moreover, Node.js offers effortless packaging of projects into executable files using the `pkg` tool, enabling cross-platform deployment. For instance, one can build a customized command-line tool and integrate it into the business environment, by utilizing the Commander.js command-line tool library in Node.js.
 
@@ -578,9 +578,9 @@ node mqtt-cli.js pub -t test -m 'Hello MQTT!'
 
 ## Summary
 
-So far, we have used Node.js as an [MQTT client](https://www.emqx.com/en/blog/mqtt-client-tools) to connect to the [public MQTT broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker), and realize the connection, message publishing and subscription between the test client and MQTT server.
+This guide demonstrated how to use **Node.js MQTT** to build scalable IoT applications. By leveraging **MQTT.js** and brokers like EMQX, you can create robust systems for real-time device communication.
 
-Next, you can check out the [MQTT Guide: Beginner to Advanced](https://www.emqx.com/en/mqtt-guide) series provided by EMQ to learn about MQTT protocol features, explore more advanced applications of MQTT, and get started with MQTT application and service development.
+Explore advanced topics in the [MQTT Guide: Beginner to Advanced](https://www.emqx.com/en/mqtt-guide) to deepen your understanding.
 
 
 ## Resources
@@ -593,11 +593,10 @@ Next, you can check out the [MQTT Guide: Beginner to Advanced](https://www.emqx.
 
 
 
-
 <section class="promotion">
     <div>
         Try EMQX Cloud for Free
-        <div class="is-size-14 is-text-normal has-text-weight-normal">No credit card required</div>
+        <div>No credit card required</div>
     </div>
-    <a href="https://accounts.emqx.com/signup?continue=https://cloud-intl.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">Get Started →</a>
+    <a href="https://accounts.emqx.com/signup?continue=https://cloud-intl.emqx.com/console/deployments/0?oper=new" class="button is-gradient">Get Started →</a>
 </section>

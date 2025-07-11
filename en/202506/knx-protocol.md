@@ -91,27 +91,27 @@ ETS provides a user-friendly interface that allows system integrators, installer
 
 KNX Virtual includes over 10 different types of virtual KNX devices that are connected to a simulated KNX bus. These devices represent various building loads such as lamps, dimmable lamps, blinds, heating and cooling valves. Users can also experiment with more advanced building features like weather modules, alarms, scenes, and logic operations.
 
-## Integrating KNX Protocol with MQTT for IoT: Neuron and EMQX
+## Integrating KNX Protocol with MQTT for IoT: NeuronEX and EMQX
 
 [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) is a messaging protocol designed for IoT devices and applications operating on a publish/subscribe model. It's lightweight, efficient, reliable, and allows for real-time communication. MQTT is well-suited for environments with limited resources, where efficient use of power and bandwidth is necessary. Currently, it has been widely applied in areas such as the Internet of Things (IoT), mobile Internet, smart hardware, connected cars, smart cities, remote healthcare services, oil and energy.
 
-With the advent of Industry 4.0, there is an increasing demand for intelligence, automation and digitization in manufacturing. In this context, MQTT protocol has a wide range of device and platform support, with numerous IoT devices and systems readily available in the market. In comparison, the device ecosystem for KNX may be more limited, especially when it comes to specialized IoT devices or accessories. Combining KNX with MQTT can open up more opportunities for IoT scenarios like smart home and building automation.
+Industry 4.0 is driving a surge in demand for intelligent, automated, and digitized manufacturing solutions. The MQTT protocol offers extensive compatibility with a wide range of IoT devices and platforms, supported by a robust ecosystem of readily available products. In contrast, the KNX ecosystem is more constrained, particularly for specialized IoT devices and accessories. Integrating KNX with MQTT can unlock new possibilities for IoT applications, such as smart home and building automation, by leveraging their complementary strengths.
 
-### Neuron for Converting KNX into MQTT
+### NeuronEX for Converting KNX into MQTT
 
-[Neuron](https://github.com/emqx/neuron) is an industry IoT gateway software that enables industrial devices with essential IoT connectivity capabilities. With minimal resource utilization, Neuron can communicate with diverse industrial devices through standard or dedicated protocols, realizing the multiple device connections to the [Industrial IoT platform](https://www.emqx.com/en/blog/iiot-platform-key-components-and-5-notable-solutions). From the very beginning, Neuron has supported MQTT as one of its communication protocols. The Neuron [MQTT plugin](https://docs.emqx.com/en/neuron/latest/configuration/north-apps/mqtt/overview.html) allows users to quickly build IoT applications that use MQTT communication between devices and the cloud.
+NeuronEX is an Industrial Edge Data Hub that focuses on real-time industrial data access and intelligent analysis, enabling you to swiftly gain business insights and enhance operational efficiency and sustainability. With minimal resource utilization, NeuronEX can communicate with diverse industrial devices through standard or dedicated protocols, realizing multiple device connections to the [Industrial IoT platform](https://www.emqx.com/en/blog/iiot-platform-key-components-and-5-notable-solutions). From the very beginning, NeuronEX has supported MQTT as one of its communication protocols. The NeuronEX [MQTT plugin](https://docs.emqx.com/en/neuron/latest/configuration/north-apps/mqtt/overview.html) allows users to quickly build IoT applications that use MQTT communication between devices and the cloud.
 
-Since version 2.1.0, Neuron provides the [KNX plugin](https://docs.emqx.com/en/neuron/latest/configuration/south-devices/knxnet-ip/knxnet-ip.html) which supports communication with KNX IP couplers using the KNXnet/IP protocol over UDP.
+Since version 2.1.0, NeuronEX provides the [KNX plugin](https://docs.emqx.com/en/neuron/latest/configuration/south-devices/knxnet-ip/knxnet-ip.html), which supports communication with KNX IP couplers using the KNXnet/IP protocol over UDP.
 
 ### EMQX for Handling MQTT Messages
 
-[EMQX](https://github.com/emqx/emqx) is the world’s leading open-source distributed MQTT broker with high performance and scalability. It provides efficient and reliable connections for massive IoT devices, enabling high-performance real-time movement and processing of the message and event flow data, helping users quickly build IoT platforms and applications for critical business.
+[EMQX](https://github.com/emqx/emqx) is the world’s leading distributed MQTT platform with high performance and scalability. It provides efficient and reliable connections for massive IoT devices, enabling high-performance real-time movement and processing of the message and event flow data, helping users quickly build IoT platforms and applications for critical business.
 
-EMQX is the broker component in the bridging architecture, while Neuron collects data from KNX devices and transmits the data in MQTT messages to the broker. After receiving the MQTT messages from Neuron, EMQX will then forward the data or perform further processing.
+EMQX is the broker component in the bridging architecture, while NeuronEX collects data from KNX devices and transmits the data in MQTT messages to the broker. After receiving the MQTT messages from NeuronEX, EMQX will then forward the data or perform further processing.
 
 EMQX has a rich and powerful feature set, such as the SQL-based [rules engine](https://www.emqx.com/en/solutions/mqtt-data-processing) to extract, filter, enrich, and transform IoT data in real-time, and data integration to connect EMQX to external data systems like databases.
 
-Learn more about integrating KNX protocol with IoT through this step-by-step tutorial: [Bridging KNX Data to MQTT: Introduction and Hands-on Tutorial](https://www.emqx.com/en/blog/bridging-knx-data-to-mqtt-introduction-and-hands-on-tutorial) 
+Learn more about integrating KNX protocol with IoT through this step-by-step tutorial: [Bridging KNX Data to MQTT: Introduction and Hands-on Tutorial](https://www.emqx.com/en/blog/bridging-knx-data-to-mqtt-introduction-and-hands-on-tutorial)
 
 
 
