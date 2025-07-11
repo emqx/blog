@@ -113,6 +113,7 @@ Get to know the preferred protocol in IoT from beginner to master.
 ## [MQTT Programming](https://www.emqx.com/en/blog/category/mqtt-programming)
 Best practice of MQTT in various clients.
 
+- [MQTT with Node.js: A Beginner's Guide with Examples & FAQs](https://www.emqx.com/en/blog/how-to-use-mqtt-in-nodejs) ([Edit](https://github.com/emqx/blog/blob/main/en/202506/how-to-use-mqtt-in-nodejs.md))
 - [MQTT in Python with Paho Client: Beginner's Guide 2025](https://www.emqx.com/en/blog/how-to-use-mqtt-in-python) ([Edit](https://github.com/emqx/blog/blob/main/en/202503/how-to-use-mqtt-in-python.md))
 - [How to Use MQTT in The Django Project](https://www.emqx.com/en/blog/how-to-use-mqtt-in-django) ([Edit](https://github.com/emqx/blog/blob/main/en/202502/how-to-use-mqtt-in-django.md))
 - [How to Use MQTT in the Angular Projects](https://www.emqx.com/en/blog/how-to-use-mqtt-in-angular) ([Edit](https://github.com/emqx/blog/blob/main/en/202501/how-to-use-mqtt-in-angular.md))
@@ -137,7 +138,6 @@ Best practice of MQTT in various clients.
 - [Connecting to Serverless MQTT Broker in PHP](https://www.emqx.com/en/blog/connecting-to-serverless-mqtt-broker-in-php) ([Edit](https://github.com/emqx/blog/blob/main/en/202307/connecting-to-serverless-mqtt-broker-in-php.md))
 - [A Quickstart Guide to Using MQTT over WebSocket](https://www.emqx.com/en/blog/connect-to-mqtt-broker-with-websocket) ([Edit](https://github.com/emqx/blog/blob/main/en/202306/connect-to-mqtt-broker-with-websocket.md))
 - [How to Use MQTT on Raspberry Pi with Paho Python Client](https://www.emqx.com/en/blog/use-mqtt-with-raspberry-pi) ([Edit](https://github.com/emqx/blog/blob/main/en/202306/use-mqtt-with-raspberry-pi.md))
-- [MQTT with Node.js: A Beginner's Guide with Examples & FAQs](https://www.emqx.com/en/blog/how-to-use-mqtt-in-nodejs) ([Edit](https://github.com/emqx/blog/blob/main/en/202305/how-to-use-mqtt-in-nodejs.md))
 - [How to Use MQTT in Dart](https://www.emqx.com/en/blog/how-to-use-mqtt-in-dart) ([Edit](https://github.com/emqx/blog/blob/main/en/202211/how-to-use-mqtt-in-dart.md))
 - [How to Use MQTT in The React Native Project](https://www.emqx.com/en/blog/how-to-use-mqtt-in-react-native) ([Edit](https://github.com/emqx/blog/blob/main/en/202206/how-to-use-mqtt-in-react-native.md))
 - [How to use MQTT in Flask](https://www.emqx.com/en/blog/how-to-use-mqtt-in-flask) ([Edit](https://github.com/emqx/blog/blob/main/en/202205/how-to-use-mqtt-in-flask.md))
@@ -517,6 +517,7 @@ Build a reliable, efficient and industry-specific Internet of Vehicles platform 
 
 ## [Industrial IoT | Unified Namespace | Sparkplug](https://www.emqx.com/en/blog/category/industrial-iot)
 
+- [KNX Protocol: The Basics and Its Possibilities with IoT](https://www.emqx.com/en/blog/knx-protocol) ([Edit](https://github.com/emqx/blog/blob/main/en/202506/knx-protocol.md))
 - [Smart Manufacturing Explained: Basics, Use Cases & Best Practices](https://www.emqx.com/en/blog/the-smart-manufacturing-revolution) ([Edit](https://github.com/emqx/blog/blob/main/en/202506/the-smart-manufacturing-revolution.md))
 - [AI-Ready Unified Namespace: Building the Industrial Data Hub with EMQX and NeuronEX](https://www.emqx.com/en/blog/building-the-industrial-data-hub-with-emqx-and-neuronex) ([Edit](https://github.com/emqx/blog/blob/main/en/202506/building-the-industrial-data-hub-with-emqx-and-neuronex.md))
 - [Natural Language Meets Industrial Data: Pioneering AI-Driven IIoT Data Exploration](https://www.emqx.com/en/blog/pioneering-ai-driven-iiot-data-exploration) ([Edit](https://github.com/emqx/blog/blob/main/en/202506/pioneering-ai-driven-iiot-data-exploration.md))
@@ -534,7 +535,6 @@ Build a reliable, efficient and industry-specific Internet of Vehicles platform 
 - [Data Storage Techniques and Strategies for Smart Manufacturing](https://www.emqx.com/en/blog/data-storage-techniques-and-strategies-for-smart-manufacturing) ([Edit](https://github.com/emqx/blog/blob/main/en/202311/data-storage-techniques-and-strategies-for-smart-manufacturing.md))
 - [From Data to Intelligence: One-Stop MQTT Platform for Smart Factory Advancements](https://www.emqx.com/en/blog/data-infrastructure-for-smart-factory) ([Edit](https://github.com/emqx/blog/blob/main/en/202311/data-infrastructure-for-smart-factory.md))
 - [Elevating IIoT: Unleashing the Power of MQTT, Edge Intelligence, and Timescale](https://www.emqx.com/en/blog/unleashing-the-power-of-mqtt-edge-intelligence-and-timescale) ([Edit](https://github.com/emqx/blog/blob/main/en/202311/unleashing-the-power-of-mqtt-edge-intelligence-and-timescale.md))
-- [KNX Protocol: The Basics and Its Possibilities with IoT](https://www.emqx.com/en/blog/knx-protocol) ([Edit](https://github.com/emqx/blog/blob/main/en/202311/knx-protocol.md))
 - [Leveraging the Hybrid Computing for Data Management and Analysis](https://www.emqx.com/en/blog/leveraging-the-hybrid-computing-for-data-management-and-analysis) ([Edit](https://github.com/emqx/blog/blob/main/en/202311/leveraging-the-hybrid-computing-for-data-management-and-analysis.md))
 - [Supercharging IIoT with MQTT, Edge Intelligence, and InfluxDB](https://www.emqx.com/en/blog/supercharging-iiot-with-mqtt-edge-intelligence-and-influxdb) ([Edit](https://github.com/emqx/blog/blob/main/en/202311/supercharging-iiot-with-mqtt-edge-intelligence-and-influxdb.md))
 - [Practical Data Management for Smart Manufacturing](https://www.emqx.com/en/blog/practical-data-management-for-smart-manufacturing) ([Edit](https://github.com/emqx/blog/blob/main/en/202311/practical-data-management-for-smart-manufacturing.md))
