@@ -199,6 +199,7 @@ Explore more with & via EMQ.
 ## [EMQX Open Source | Broker](https://www.emqx.com/zh/blog/category/emqx)
 EMQX is the world's most scalable open-source MQTT broker with a high performance that connects 100M+ IoT devices in 1 cluster, while maintaining 1M message per second throughput and sub-millisecond latency.
 
+- [突破连接边界：EMQX 实现 MQTT 和 NATS 协议双向互通](https://www.emqx.com/zh/blog/emqx-nats-gateway) ([Edit](https://github.com/emqx/blog/blob/main/zh/202507/emqx-nats-gateway.md))
 - [EMQX + Amazon S3 Tables：从实时物联网数据到数据湖仓](https://www.emqx.com/zh/blog/from-real-time-iot-data-to-big-data-analytics) ([Edit](https://github.com/emqx/blog/blob/main/zh/202507/from-real-time-iot-data-to-big-data-analytics.md))
 - [智能网联 + AI：EMQX 5.10.0 大模型集成功能介绍](https://www.emqx.com/zh/blog/introducing-llm-integration-in-emqx-5-10) ([Edit](https://github.com/emqx/blog/blob/main/zh/202507/introducing-llm-integration-in-emqx-5-10.md))
 - [EMQX 5.10.0 发布：AI 驱动数据流处理、Doris/S3 Tables 集成、NATS 协议网关](https://www.emqx.com/zh/blog/emqx-enterprise-5-10-0-release-notes) ([Edit](https://github.com/emqx/blog/blob/main/zh/202506/emqx-enterprise-5-10-0-release-notes.md))
