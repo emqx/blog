@@ -113,6 +113,7 @@ Get to know the preferred protocol in IoT from beginner to master.
 ## [MQTT Programming](https://www.emqx.com/en/blog/category/mqtt-programming)
 Best practice of MQTT in various clients.
 
+- [Using MQTT with C++: A Comprehensive Guide for IoT Developers](https://www.emqx.com/en/blog/using-mqtt-with-cpp) ([Edit](https://github.com/emqx/blog/blob/main/en/202507/using-mqtt-with-cpp.md))
 - [MQTT with Node.js: A Beginner's Guide with Examples & FAQs](https://www.emqx.com/en/blog/how-to-use-mqtt-in-nodejs) ([Edit](https://github.com/emqx/blog/blob/main/en/202506/how-to-use-mqtt-in-nodejs.md))
 - [MQTT in Python with Paho Client: Beginner's Guide 2025](https://www.emqx.com/en/blog/how-to-use-mqtt-in-python) ([Edit](https://github.com/emqx/blog/blob/main/en/202503/how-to-use-mqtt-in-python.md))
 - [How to Use MQTT in The Django Project](https://www.emqx.com/en/blog/how-to-use-mqtt-in-django) ([Edit](https://github.com/emqx/blog/blob/main/en/202502/how-to-use-mqtt-in-django.md))
