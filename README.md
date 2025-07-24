@@ -216,6 +216,7 @@ EMQX is the world's most scalable open-source MQTT broker with a high performanc
 
 - [Robot to Cloud: Unlocking the Future of Robotics with Seamless Connectivity](https://www.emqx.com/en/blog/robot-to-cloud) ([Edit](https://github.com/emqx/blog/blob/main/en/202507/robot-to-cloud.md))
 - [Scaling to 2 Million: A Deep Dive into EMQX's WebSocket Performance](https://www.emqx.com/en/blog/a-deep-dive-into-emqx-s-websocket-performance) ([Edit](https://github.com/emqx/blog/blob/main/en/202507/a-deep-dive-into-emqx-s-websocket-performance.md))
+- [How to Install an MQTT Broker on Ubuntu](https://www.emqx.com/en/blog/how-to-install-emqx-mqtt-broker-on-ubuntu) ([Edit](https://github.com/emqx/blog/blob/main/en/202507/how-to-install-emqx-mqtt-broker-on-ubuntu.md))
 - [EMQX NATS Gateway: Enabling MQTT-NATS Bidirectional Interoperability](https://www.emqx.com/en/blog/emqx-nats-gateway) ([Edit](https://github.com/emqx/blog/blob/main/en/202507/emqx-nats-gateway.md))
 - [From Real-Time IoT Data to Big Data Analytics with Amazon S3 Tables and EMQX](https://www.emqx.com/en/blog/from-real-time-iot-data-to-big-data-analytics) ([Edit](https://github.com/emqx/blog/blob/main/en/202507/from-real-time-iot-data-to-big-data-analytics.md))
 - [Real-Time AI for IoT: Introducing LLM Integration in EMQX 5.10](https://www.emqx.com/en/blog/introducing-llm-integration-in-emqx-5-10) ([Edit](https://github.com/emqx/blog/blob/main/en/202506/introducing-llm-integration-in-emqx-5-10.md))
@@ -288,7 +289,6 @@ EMQX is the world's most scalable open-source MQTT broker with a high performanc
 - [EMQX Is Released in Several Versions  | EMQX Newsletter 202211](https://www.emqx.com/en/blog/emqx-newsletter-202211) ([Edit](https://github.com/emqx/blog/blob/main/en/202212/emqx-newsletter-202211.md))
 - [Get Started with MQTT over QUIC: A Quick Guide for The Next-generation IoT Standard Protocol](https://www.emqx.com/en/blog/getting-started-with-mqtt-over-quic-from-scratch) ([Edit](https://github.com/emqx/blog/blob/main/en/202212/getting-started-with-mqtt-over-quic-from-scratch.md))
 - [Optimization of EMQX 5.0: The Throughput Performance of ExProto Improves | Newsletter 202209](https://www.emqx.com/en/blog/emqx-newsletter-202209) ([Edit](https://github.com/emqx/blog/blob/main/en/202210/emqx-newsletter-202209.md))
-- [How to Install an MQTT Broker on Ubuntu](https://www.emqx.com/en/blog/how-to-install-emqx-mqtt-broker-on-ubuntu) ([Edit](https://github.com/emqx/blog/blob/main/en/202210/how-to-install-emqx-mqtt-broker-on-ubuntu.md))
 - [New IoT Data Integration: Flow Editor & Bidirectional Data Bridging](https://www.emqx.com/en/blog/iot-data-integration) ([Edit](https://github.com/emqx/blog/blob/main/en/202209/iot-data-integration.md))
 - [Highly Reliable MQTT Data Persistence Based on RocksDB](https://www.emqx.com/en/blog/mqtt-persistence-based-on-rocksdb) ([Edit](https://github.com/emqx/blog/blob/main/en/202209/mqtt-persistence-based-on-rocksdb.md))
 - [MQTT over QUIC: Next-Generation IoT Standard Protocol](https://www.emqx.com/en/blog/mqtt-over-quic) ([Edit](https://github.com/emqx/blog/blob/main/en/202208/mqtt-over-quic.md))
@@ -627,6 +627,7 @@ MQTTX is a Fully Open-source MQTT 5.0 cross-platform Desktop Client, makes it ea
 ## [Neuron - IIoT Connectivity Server](https://www.emqx.com/en/blog/category/neuron)
 IoT edge industrial protocol gateway software, which supports one-stop access to dozens of industrial protocols and converts them into MQTT protocol to access the cloud industrial IoT platform. It just requires ultra-low resource consumption, and supports three major architectures of X86, ARM, and MIPS.
 
+- [Visualizing Your Industrial Data: A Guide to NeuronEX Dashboard](https://www.emqx.com/en/blog/visualizing-your-industrial-data) ([Edit](https://github.com/emqx/blog/blob/main/en/202507/visualizing-your-industrial-data.md))
 - [NeuronEX 3.6.0 Released: From Unified Data Collection to Intelligent Data Insights](https://www.emqx.com/en/blog/neuronex-v-3-6-0-release-notes) ([Edit](https://github.com/emqx/blog/blob/main/en/202506/neuronex-v-3-6-0-release-notes.md))
 - [Best Practices of NeuronEX Device Control Capabilities for IIoT Automation](https://www.emqx.com/en/blog/neuronex-device-control) ([Edit](https://github.com/emqx/blog/blob/main/en/202504/neuronex-device-control.md))
 - [Effectively Managing OPC UA Server Tags with NeuronEX's Tag Browser Feature](https://www.emqx.com/en/blog/managing-opc-ua-server-tags-with-neuronex-tag-browser) ([Edit](https://github.com/emqx/blog/blob/main/en/202503/managing-opc-ua-server-tags-with-neuronex-tag-browser.md))
