@@ -476,6 +476,7 @@ Build a reliable, efficient and industry-specific Internet of Vehicles platform 
 
 ## [Industrial IoT | Unified Namespace | Sparkplug](https://www.emqx.com/zh/blog/category/industrial-iot)
 
+- [NeuronEX vs Kepware：云 + AI 时代工业边缘网关的进化与革新](https://www.emqx.com/zh/blog/neuronex-vs-kepware) ([Edit](https://github.com/emqx/blog/blob/main/zh/202507/neuronex-vs-kepware.md))
 - [EMQX + NeuronEX：构建基于 UNS 架构的工业 AI 数据中枢](https://www.emqx.com/zh/blog/building-the-industrial-data-hub-with-emqx-and-neuronex) ([Edit](https://github.com/emqx/blog/blob/main/zh/202506/building-the-industrial-data-hub-with-emqx-and-neuronex.md))
 - [自然语言 + 工业数据：AI agent 驱动的 IIoT 数据探索实践](https://www.emqx.com/zh/blog/the-practice-of-ai-agent-driven-iiot-data-exploration) ([Edit](https://github.com/emqx/blog/blob/main/zh/202505/the-practice-of-ai-agent-driven-iiot-data-exploration.md))
 - [先进制造企业为何选择 EMQ 助力数字化升级](https://www.emqx.com/zh/blog/why-manufacturing-enterprises-choose-emq) ([Edit](https://github.com/emqx/blog/blob/main/zh/202502/why-manufacturing-enterprises-choose-emq.md))
