@@ -167,6 +167,7 @@ Best practice of MQTT in various clients.
 ## [MQTT Integration (Eco & Integration)](https://www.emqx.com/en/blog/category/eco-and-integration)
 Explore more with & via EMQ.
 
+- [Building Your AI Companion with ESP32 & MCP over MQTT from Scratch 1: Getting Online](https://www.emqx.com/en/blog/esp32-and-mcp-over-mqtt) ([Edit](https://github.com/emqx/blog/blob/main/en/202507/esp32-and-mcp-over-mqtt.md))
 - [Building Slice’s Chatbot: An Engineering Journey](https://www.emqx.com/en/blog/building-slice-s-chatbot) ([Edit](https://github.com/emqx/blog/blob/main/en/202507/building-slice-s-chatbot.md))
 - [EMQ and Ecosteer: Empowering Data Control and Compliance in Europe](https://www.emqx.com/en/blog/emq-and-ecosteer) ([Edit](https://github.com/emqx/blog/blob/main/en/202506/emq-and-ecosteer.md))
 - [Home Assistant and Modbus: Smart Home Automation Guide](https://www.emqx.com/en/blog/home-assistant-modbus) ([Edit](https://github.com/emqx/blog/blob/main/en/202506/home-assistant-modbus.md))
