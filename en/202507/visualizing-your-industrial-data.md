@@ -134,7 +134,9 @@ As the core visualization tool of the NeuronEX Data Insights module, the Dashboa
 
 Whether it's monitoring the pulse of a production line, accurately tracking core KPIs, deeply analyzing quality fluctuations, or quickly responding to critical alarm events, the Dashboard feature provides a centralized, clear, and real-time data presentation, serving as a powerful assistant to drive decisions, optimize operations, and improve efficiency.
 
-
+<video src="https://assets.emqx.com/data/video/NeuronEX Dashboard Usage Guide.mp4" controls style="max-width: 100%;">
+  Your browser does not support the video tag.
+</video>
 
 <section class="promotion">
     <div>

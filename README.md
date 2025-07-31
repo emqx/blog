@@ -91,6 +91,7 @@ Get to know the preferred protocol in IoT from beginner to master.
 
 ## [MQTT Client](https://www.emqx.com/en/blog/category/mqtt-client)
 
+- [Python MQTT Clients: A 2025 Selection Guide](https://www.emqx.com/en/blog/comparision-of-python-mqtt-client) ([Edit](https://github.com/emqx/blog/blob/main/en/202507/comparision-of-python-mqtt-client.md))
 - [MQTT.fx Guide: Features, Demos, and Using Tips](https://www.emqx.com/en/blog/connecting-to-emqx-cloud-with-mqttfx) ([Edit](https://github.com/emqx/blog/blob/main/en/202506/connecting-to-emqx-cloud-with-mqttfx.md))
 - [Top 7 MQTT Client Tools for Developers in 2025](https://www.emqx.com/en/blog/mqtt-client-tools) ([Edit](https://github.com/emqx/blog/blob/main/en/202503/mqtt-client-tools.md))
 - [Ensuring Reliable IoT Device Connectivity: Best Practices for MQTT Client Auto-Reconnection](https://www.emqx.com/en/blog/mqtt-client-auto-reconnect-best-practices) ([Edit](https://github.com/emqx/blog/blob/main/en/202409/mqtt-client-auto-reconnect-best-practices.md))
@@ -106,16 +107,15 @@ Get to know the preferred protocol in IoT from beginner to master.
 - [MQTTX CLI: A Powerful and Easy-to-Use MQTT CLI](https://www.emqx.com/en/blog/powerful-and-easy-to-use-mqtt-5-command-line-tool) ([Edit](https://github.com/emqx/blog/blob/main/en/202208/powerful-and-easy-to-use-mqtt-5-command-line-tool.md))
 - [CocoaMQTT v2.0: The first iOS MQTT 5.0 client](https://www.emqx.com/en/blog/ios-mqtt5-client) ([Edit](https://github.com/emqx/blog/blob/main/en/202111/ios-mqtt5-client.md))
 - [Using MQTTLens to connect to EMQX Cloud](https://www.emqx.com/en/blog/connecting-to-emqx-cloud-with-mqttlens) ([Edit](https://github.com/emqx/blog/blob/main/en/202108/connecting-to-emqx-cloud-with-mqttlens.md))
-- [Comparison of Python MQTT Clients](https://www.emqx.com/en/blog/comparision-of-python-mqtt-client) ([Edit](https://github.com/emqx/blog/blob/main/en/202010/comparision-of-python-mqtt-client.md))
 - [Introduction to the Commonly Used MQTT Client Library](https://www.emqx.com/en/blog/introduction-to-the-commonly-used-mqtt-client-library) ([Edit](https://github.com/emqx/blog/blob/main/en/201911/introduction-to-the-commonly-used-mqtt-client-library.md))
 
 
 ## [MQTT Programming](https://www.emqx.com/en/blog/category/mqtt-programming)
 Best practice of MQTT in various clients.
 
+- [MQTT in Python with Paho Client: Beginner's Guide 2025](https://www.emqx.com/en/blog/how-to-use-mqtt-in-python) ([Edit](https://github.com/emqx/blog/blob/main/en/202507/how-to-use-mqtt-in-python.md))
 - [Using MQTT with C++: A Comprehensive Guide for IoT Developers](https://www.emqx.com/en/blog/using-mqtt-with-cpp) ([Edit](https://github.com/emqx/blog/blob/main/en/202507/using-mqtt-with-cpp.md))
 - [MQTT with Node.js: A Beginner's Guide with Examples & FAQs](https://www.emqx.com/en/blog/how-to-use-mqtt-in-nodejs) ([Edit](https://github.com/emqx/blog/blob/main/en/202506/how-to-use-mqtt-in-nodejs.md))
-- [MQTT in Python with Paho Client: Beginner's Guide 2025](https://www.emqx.com/en/blog/how-to-use-mqtt-in-python) ([Edit](https://github.com/emqx/blog/blob/main/en/202503/how-to-use-mqtt-in-python.md))
 - [How to Use MQTT in The Django Project](https://www.emqx.com/en/blog/how-to-use-mqtt-in-django) ([Edit](https://github.com/emqx/blog/blob/main/en/202502/how-to-use-mqtt-in-django.md))
 - [How to Use MQTT in the Angular Projects](https://www.emqx.com/en/blog/how-to-use-mqtt-in-angular) ([Edit](https://github.com/emqx/blog/blob/main/en/202501/how-to-use-mqtt-in-angular.md))
 - [How to Integrate MQTT in Your Electron Project](https://www.emqx.com/en/blog/how-to-use-mqtt-in-electron) ([Edit](https://github.com/emqx/blog/blob/main/en/202411/how-to-use-mqtt-in-electron.md))
@@ -143,7 +143,6 @@ Best practice of MQTT in various clients.
 - [How to Use MQTT in The React Native Project](https://www.emqx.com/en/blog/how-to-use-mqtt-in-react-native) ([Edit](https://github.com/emqx/blog/blob/main/en/202206/how-to-use-mqtt-in-react-native.md))
 - [How to use MQTT in Flask](https://www.emqx.com/en/blog/how-to-use-mqtt-in-flask) ([Edit](https://github.com/emqx/blog/blob/main/en/202205/how-to-use-mqtt-in-flask.md))
 - [Python MQTT Asynchronous Framework - HBMQTT](https://www.emqx.com/en/blog/python-async-mqtt-client-hbmqtt) ([Edit](https://github.com/emqx/blog/blob/main/en/202104/python-async-mqtt-client-hbmqtt.md))
-- [Comparison of Python MQTT Clients](https://www.emqx.com/en/blog/comparision-of-python-mqtt-client) ([Edit](https://github.com/emqx/blog/blob/main/en/202010/comparision-of-python-mqtt-client.md))
 - [Android and MQTT: Step by Step Guide](https://www.emqx.com/en/blog/android-connects-mqtt-using-kotlin) ([Edit](https://github.com/emqx/blog/blob/main/en/202006/android-connects-mqtt-using-kotlin.md))
 - [Upload Sensor Data to MQTT Cloud Service via NodeMCU (ESP8266)](https://www.emqx.com/en/blog/upload-sensor-data-to-mqtt-cloud-service-via-nodemcu-esp8266) ([Edit](https://github.com/emqx/blog/blob/main/en/201912/upload-sensor-data-to-mqtt-cloud-service-via-nodemcu-esp8266.md))
 
@@ -216,6 +215,7 @@ Explore more with & via EMQ.
 ## [EMQX Open Source | Broker](https://www.emqx.com/en/blog/category/emqx)
 EMQX is the world's most scalable open-source MQTT broker with a high performance that connects 100M+ IoT devices in 1 cluster, while maintaining 1M message per second throughput and sub-millisecond latency.
 
+- [Multi-Cloud Clusters & Cross-Cloud Migration: Breaking Free from Cloud Vendor Lock-In with Cluster Linking](https://www.emqx.com/en/blog/multi-cloud-clusters-and-cross-cloud-migration) ([Edit](https://github.com/emqx/blog/blob/main/en/202507/multi-cloud-clusters-and-cross-cloud-migration.md))
 - [Robot to Cloud: Unlocking the Future of Robotics with Seamless Connectivity](https://www.emqx.com/en/blog/robot-to-cloud) ([Edit](https://github.com/emqx/blog/blob/main/en/202507/robot-to-cloud.md))
 - [Scaling to 2 Million: A Deep Dive into EMQX's WebSocket Performance](https://www.emqx.com/en/blog/a-deep-dive-into-emqx-s-websocket-performance) ([Edit](https://github.com/emqx/blog/blob/main/en/202507/a-deep-dive-into-emqx-s-websocket-performance.md))
 - [How to Install an MQTT Broker on Ubuntu](https://www.emqx.com/en/blog/how-to-install-emqx-mqtt-broker-on-ubuntu) ([Edit](https://github.com/emqx/blog/blob/main/en/202507/how-to-install-emqx-mqtt-broker-on-ubuntu.md))
