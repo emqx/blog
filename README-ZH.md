@@ -153,6 +153,7 @@ Best practice of MQTT in various clients.
 ## [MQTT Integration (Eco & Integration)](https://www.emqx.com/zh/blog/category/eco-and-integration)
 Explore more with & via EMQ.
 
+- [ESP32 + MCP over MQTT：从 0 到 1 打造情感陪伴智能体之「硬件设备能力封装」](https://www.emqx.com/zh/blog/esp32-and-mcp-over-mqtt-2) ([Edit](https://github.com/emqx/blog/blob/main/zh/202508/esp32-and-mcp-over-mqtt-2.md))
 - [ESP32 + MCP over MQTT：从 0 到 1 打造情感陪伴智能体](https://www.emqx.com/zh/blog/esp32-and-mcp-over-mqtt) ([Edit](https://github.com/emqx/blog/blob/main/zh/202507/esp32-and-mcp-over-mqtt.md))
 - [EMQX Cloud、TDengine Cloud 实现数据互通！联手打造端到端云上大数据解决方案](https://www.emqx.com/zh/blog/emqx-cloud-and-tdengine-cloud) ([Edit](https://github.com/emqx/blog/blob/main/zh/202505/emqx-cloud-and-tdengine-cloud.md))
 - [MCP over MQTT：EMQX 开启物联网 Agentic 时代](https://www.emqx.com/zh/blog/mcp-over-mqtt) ([Edit](https://github.com/emqx/blog/blob/main/zh/202503/mcp-over-mqtt.md))
@@ -611,6 +612,7 @@ MQTTX is a Fully Open-source MQTT 5.0 cross-platform Desktop Client, makes it ea
 ## [Neuron - IIoT Connectivity Server](https://www.emqx.com/zh/blog/category/neuron)
 IoT edge industrial protocol gateway software, which supports one-stop access to dozens of industrial protocols and converts them into MQTT protocol to access the cloud industrial IoT platform. It just requires ultra-low resource consumption, and supports three major architectures of X86, ARM, and MIPS.
 
+- [NeuronEX 最佳实践：实现 MySQL 与 IIoT 平台的高效数据同步](https://www.emqx.com/zh/blog/neuronex-best-bractices) ([Edit](https://github.com/emqx/blog/blob/main/zh/202508/neuronex-best-bractices.md))
 - [NeuronEX 3.6.0 发布：从统一数据采集到智能数据洞察](https://www.emqx.com/zh/blog/neuronex-v-3-6-0-release-notes) ([Edit](https://github.com/emqx/blog/blob/main/zh/202506/neuronex-v-3-6-0-release-notes.md))
 - [NeuronEX 设备反控功能实践指南](https://www.emqx.com/zh/blog/neuronex-device-control) ([Edit](https://github.com/emqx/blog/blob/main/zh/202504/neuronex-device-control.md))
 - [NeuronEX + DeepSeek：使用 LLM 增强复杂 IIoT 数据流计算处理能力](https://www.emqx.com/zh/blog/neuronex-and-deepseek) ([Edit](https://github.com/emqx/blog/blob/main/zh/202503/neuronex-and-deepseek.md))
