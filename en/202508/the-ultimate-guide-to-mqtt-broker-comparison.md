@@ -18,7 +18,7 @@ Here are some of the main reasons MQTT brokers are important:
 
 - **Scalability**: MQTT brokers can handle a large number of simultaneous connections, which is essential for IoT and M2M communication scenarios, where there may be thousands or even millions of connected devices. The broker's ability to manage these connections and messages enables the MQTT protocol to scale effectively.
 
-- **Security**: MQTT brokers can provide security measures like authentication and encryption to ensure that the data transmitted between IoT devices and applications is secure. Learn more: [7 Essential Things to Know about MQTT Security 2024](https://www.emqx.com/en/blog/essential-things-to-know-about-mqtt-security).
+- **Security**: MQTT brokers can provide security measures like authentication and encryption to ensure that the data transmitted between IoT devices and applications is secure. Learn more: [7 Essential Things to Know about MQTT Security 2025](https://www.emqx.com/en/blog/essential-things-to-know-about-mqtt-security).
 
 - **Integration**: MQTT brokers can integrate with other communication protocols and cloud platforms to provide a complete IoT solution. For example, MQTT brokers can integrate with AWS IoT, Google Cloud IoT, or Microsoft Azure IoT Hub to provide a seamless IoT ecosystem.
 
@@ -47,13 +47,11 @@ The MQTT broker architecture can be either centralized or distributed. In a cent
 
 Overall, the MQTT broker architecture provides a flexible and efficient messaging infrastructure that enables devices and applications to communicate securely, efficiently, and at scale.
 
-
-
 ## Popular Open Source MQTT Brokers
 
 ### EMQX
 
-[EMQX](https://github.com/emqx/emqx) is currently the most scalable MQTT broker for IoT applications. It processes millions of MQTT messages in a second with sub-millisecond latency and allows messaging among more than 100 million clients within a single cluster. EMQX is compliant with MQTT 5.0 and 3.x. It’s ideal for distributed IoT networks and can run on the cloud, Microsoft Azure, Amazon Web Services, and Google Cloud. The broker can implement MQTT over TLS/SSL and supports several authentication mechanisms like PSK, JWT, and X.509. Unlike Mosquitto, EMQX supports clustering via CLI, HTTP API, and a Dashboard. 
+[EMQX](https://github.com/emqx/emqx) is currently the most scalable MQTT broker for IoT applications. It processes millions of MQTT messages in a second with sub-millisecond latency and allows messaging among more than 100 million clients within a single cluster. EMQX is compliant with MQTT 5.0 and 3.x. It’s ideal for distributed IoT networks and can run on the cloud, Microsoft Azure, Amazon Web Services, and Google Cloud. The broker can implement [MQTT over TLS/SSL](https://www.emqx.com/en/blog/fortifying-mqtt-communication-security-with-ssl-tls) and supports several authentication mechanisms like PSK, JWT, and X.509. Unlike Mosquitto, EMQX supports clustering via CLI, HTTP API, and a Dashboard. 
 
 <section class="promotion">
     <div>
@@ -62,7 +60,6 @@ Overall, the MQTT broker architecture provides a flexible and efficient messagin
     </div>
     <a href="https://www.emqx.com/en/try?product=enterprise" class="button is-gradient px-5">Get Started →</a>
 </section>
-
 
 
 ### Mosquitto
@@ -83,12 +80,9 @@ Overall, the MQTT broker architecture provides a flexible and efficient messagin
 </section>
 
 
-
 ### VerneMQ
 
 The [VerneMQ](https://github.com/vernemq/vernemq) project was launched in [2014](https://github.com/vernemq/vernemq/tree/3c7703f0d62e758ba22a34ceb756f2ac2a4da44a) and initially developed by [Erlio GmbH](https://vernemq.com/company.html). As the second broker wrote in Erlang/OTP, the project is licensed under Apache Version 2.0 and borrowed [some code](https://github.com/vernemq/vernemq/blob/ff75cc33d8e1a4ccb75de7f268d3ea934c9b23fb/apps/vmq_commons/src/vmq_topic.erl) from the EMQX project. Regarding architectural design, VerneMQ supports MQTT message persistence in LevelDB and uses a clustering architecture based on the [Plumtree](https://github.com/lasp-lang/plumtree) library, which implements [the Epidemic Broadcast Trees](https://asc.di.fct.unl.pt/~jleitao/pdf/srds07-leitao.pdf) algorithm.
-
-
 
 ## How to Choose an MQTT Broker? Resources to Help Your Evaluation Process
 
@@ -96,35 +90,35 @@ The following articles will help you evaluate and select the best MQTT broker fo
 
 ### Evaluation Criteria
 
-- **[7 Factors to Consider When Choosing MQTT Broker 2024](https://www.emqx.com/en/blog/7-factors-to-consider-when-choosing-mqtt-broker-2023)**
+- **[7 Factors to Consider When Choosing MQTT Broker 2025](https://www.emqx.com/en/blog/7-factors-to-consider-when-choosing-mqtt-broker-2023)**
 
-  Looking for the perfect MQTT broker in 2024? Consider these 7 essential factors before making your choice. Read our guide for more.
+  Looking for the perfect MQTT broker in 2025? Consider these 7 essential factors before making your choice. Read our guide for more.
 
 ### MQTT Broker Comparison
 
-- **[A Comprehensive Comparison of Open Source MQTT Brokers in 2024](https://www.emqx.com/en/blog/a-comprehensive-comparison-of-open-source-mqtt-brokers-in-2023)**
+- **[A Comprehensive Comparison of Open Source MQTT Brokers in 2025](https://www.emqx.com/en/blog/a-comprehensive-comparison-of-open-source-mqtt-brokers-in-2023)**
 
-  In this post, we’ll explore the top open-source MQTT brokers in 2024 and compare them in-depth to help you choose the best one for your needs.
+  In this post, we’ll explore the top open-source MQTT brokers in 2025 and compare them in-depth to help you choose the best one for your needs.
 
-- **[Top 3 Open Source MQTT Brokers for Industrial IoT in 2024](https://www.emqx.com/en/blog/top-3-open-source-mqtt-brokers-for-industrial-iot-in-2023)**
+- **[Top 3 Open Source MQTT Brokers for Industrial IoT in 2025](https://www.emqx.com/en/blog/top-3-open-source-mqtt-brokers-for-industrial-iot-in-2023)**
 
-  This article compares the top 3 MQTT brokers for [IIoT](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges) in 2024, including each broker's advantages, disadvantages, and use cases.
+  This article compares the top 3 MQTT brokers for [IIoT](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges) in 2025, including each broker's advantages, disadvantages, and use cases.
 
-- **[EMQX vs Mosquitto | 2024 MQTT Broker Comparison](https://www.emqx.com/en/blog/emqx-vs-mosquitto-2023-mqtt-broker-comparison)**
+- **[EMQX vs Mosquitto | 2025 MQTT Broker Comparison](https://www.emqx.com/en/blog/emqx-vs-mosquitto-2023-mqtt-broker-comparison)**
 
-  Discover the differences between EMQX and Mosquitto as popular open-source MQTT brokers in 2024 - read our in-depth comparison!
+  Discover the differences between EMQX and Mosquitto as popular open-source MQTT brokers in 2025 - read our in-depth comparison!
 
-- **[EMQX vs NanoMQ | 2024 MQTT Broker Comparison](https://www.emqx.com/en/blog/emqx-vs-nanomq-2023-mqtt-broker-comparison)**
+- **[EMQX vs NanoMQ | 2025 MQTT Broker Comparison](https://www.emqx.com/en/blog/emqx-vs-nanomq-2023-mqtt-broker-comparison)**
 
-  Compare EMQX and NanoMQ MQTT brokers in 2024 to choose the best fit for your IoT project. Explore their scalability, security, and reliability in our guide.
+  Compare EMQX and NanoMQ MQTT brokers in 2025 to choose the best fit for your IoT project. Explore their scalability, security, and reliability in our guide.
 
-- **[EMQX vs VerneMQ | 2024 MQTT Broker Comparison](https://www.emqx.com/en/blog/emqx-vs-vernemq-2023-mqtt-broker-comparison)**
+- **[EMQX vs VerneMQ | 2025 MQTT Broker Comparison](https://www.emqx.com/en/blog/emqx-vs-vernemq-2023-mqtt-broker-comparison)**
 
   Read our comprehensive analysis of EMQX and VerneMQ MQTT brokers to make an informed choice for your IoT project.
 
-- **[Mosquitto vs NanoMQ | 2024 MQTT Broker Comparison](https://www.emqx.com/en/blog/mosquitto-vs-nanomq-2023-mqtt-broker-comparison)**
+- **[Mosquitto vs NanoMQ | 2025 MQTT Broker Comparison](https://www.emqx.com/en/blog/mosquitto-vs-nanomq-2023-mqtt-broker-comparison)**
 
-  This blog post will compare Mosquitto and NanoMQ as MQTT brokers and help readers determine which is better suited for different use cases in 2024.
+  This blog post will compare Mosquitto and NanoMQ as MQTT brokers and help readers determine which is better suited for different use cases in 2025.
 
 - **[Evaluation for popular online public MQTT broker](https://www.emqx.com/en/blog/popular-online-public-mqtt-brokers)**
 
@@ -136,9 +130,9 @@ The following articles will help you evaluate and select the best MQTT broker fo
 
   Discover the Open MQTT Benchmark Suite for the unbiased evaluation of MQTT brokers' scalability and performance.
 
-- **[Open MQTT Benchmarking Comparison: MQTT Brokers in 2024](https://www.emqx.com/en/blog/open-mqtt-benchmarking-comparison-mqtt-brokers-in-2023)**
+- **[Open MQTT Benchmarking Comparison: MQTT Brokers in 2025](https://www.emqx.com/en/blog/open-mqtt-benchmarking-comparison-mqtt-brokers-in-2023)**
 
-  Find your ideal MQTT broker for IoT in 2024 with our open comparison analysis. Get comprehensive benchmarking insights now.
+  Find your ideal MQTT broker for IoT in 2025 with our open comparison analysis. Get comprehensive benchmarking insights now.
 
 - **[Open MQTT Benchmarking Comparison: Mosquitto vs NanoMQ](https://www.emqx.com/en/blog/open-mqtt-benchmarking-comparison-mosquitto-vs-nanomq)**
 
@@ -160,8 +154,6 @@ The following articles will help you evaluate and select the best MQTT broker fo
 
   To stress-test the scalability of the MQTT broker EMQX, we established 100M MQTT connections to the clusters of 23 EMQX nodes to see how EMQX performs.
 
-
-
 ## Get Started with MQTT Brokers
 
 ### Getting Started
@@ -180,7 +172,6 @@ The fully managed cloud service is the easiest way to start an MQTT service. Wit
     <a href="https://accounts.emqx.com/signup?continue=https://cloud-intl.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">Get Started →</a>
 </section>
 
-
 - **[How to Install an MQTT Broker on Ubuntu](https://www.emqx.com/en/blog/how-to-install-emqx-mqtt-broker-on-ubuntu)**
 
   This article will take EMQX as an example to introduce how to build a single-node MQTT broker on Ubuntu.
@@ -198,6 +189,10 @@ The fully managed cloud service is the easiest way to start an MQTT service. Wit
   This article will show you how to deploy MQTT on Docker with EMQX, a popular, open source MQTT broker.
 
 ### MQTT Broker Integration
+
+- **[Database for MQTT Data Storage: A Selection Guide](https://www.emqx.com/en/blog/database-for-mqtt-data-storage)**
+
+  This blog will explore the challenges of MQTT data storage and compare popular database solutions across various use cases, offering readers a comprehensive guide for selecting the right database for IoT applications.
 
 - [**MQTT with Kafka: Supercharging IoT Data Integration**](https://www.emqx.com/en/blog/mqtt-and-kafka)
 
@@ -254,21 +249,29 @@ The fully managed cloud service is the easiest way to start an MQTT service. Wit
 
 ## EMQX: World’s Most Scalable MQTT Broker
 
-EMQX is one of the most popular [open source](https://www.acorn.io/resources/blog/open-source) MQTT brokers and has 12.9k stars on [GitHub](https://github.com/emqx/emqx). The EMQX project was launched in 2012 and is licensed under Apache version 2.0. EMQX is written in Erlang/OTP, a programming language for building massively scalable soft real-time systems.
+EMQX is one of the most popular [open source MQTT brokers](https://www.emqx.com/en/blog/a-comprehensive-comparison-of-open-source-mqtt-brokers-in-2023) and has 14.9k stars on [GitHub](https://github.com/emqx/emqx). It supports [MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5), 3.1.1, and 3.1, as well as other protocols like [MQTT-SN](https://www.emqx.com/en/blog/connecting-mqtt-sn-devices-using-emqx), [CoAP](https://www.emqx.com/en/blog/coap-protocol), [LwM2M](https://www.emqx.com/en/blog/integrating-lwm2m-with-mqtt), and [MQTT over QUIC](https://www.emqx.com/en/blog/mqtt-over-quic). EMQX enables you to connect millions of IoT devices, process and route messages in real time, and integrate with a wide range of backend data systems. It's ideal for applications in AI, IoT, Industrial IoT (IIoT), connected vehicles, smart cities, and beyond.
 
-EMQX is the world's most scalable MQTT broker that supports advanced features such as [MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5), [MQTT-SN](https://www.emqx.com/en/blog/connecting-mqtt-sn-devices-using-emqx), and [MQTT over QUIC](https://www.emqx.com/en/blog/mqtt-over-quic). It supports masterless clustering for high availability and horizontal scalability. EMQX 5.0, the latest version, scales to establish 100 million concurrent MQTT connections with a single cluster of 23 nodes.
+EMQX is the world's most scalable MQTT broker that supports masterless clustering for high availability and horizontal scalability. It can scale to establish 100 million concurrent MQTT connections with a single cluster of 23 nodes.
 
-EMQX offers rich enterprise features, data integration, cloud hosting services, and commercial support from [EMQ Technologies Inc.](https://www.emqx.com/en) Over the years, EMQX has gained popularity among enterprises, startups, and individuals due to its performance, reliability, and scalability. EMQX is widely used for business-critical applications in various industries, such as IoT, [industrial IoT](https://www.emqx.com/en/use-cases/industrial-iot), [connected cars](https://www.emqx.com/en/blog/connected-cars-and-automotive-connectivity-all-you-need-to-know), [manufacturing](https://www.emqx.com/en/solutions/industries/manufacturing), and telecommunications.
+Starting from v5.9.0, EMQX has unified all features from the previous Open Source and Enterprise editions into a single, powerful offering with the Business Source License (BSL) 1.1.
+
+Its key features include: 
+
+- [Powerful Rule Engine & Data Integration](https://www.emqx.com/en/solutions/mqtt-data-integration)
+- [Flow Designer](https://docs.emqx.com/en/emqx/latest/flow-designer/introduction.html)
+- [Smart Data Hub](https://docs.emqx.com/en/cloud/latest/data_hub/smart_data_hub.html)
+- [AI Processing & Integration](https://www.emqx.com/en/solutions/artificial-intelligence)
+- [Robust Security](https://www.emqx.com/en/solutions/mqtt-security)
+- [Advanced Observability & Management](https://docs.emqx.com/en/emqx/latest/observability/overview.html)
 
 Product page: [https://www.emqx.com/en/products/emqx](https://www.emqx.com/en/products/emqx)
-
 
 **Related Resources**
 
 - [Free MQTT Broker: Exploring Options and Choosing the Right Solution](https://www.emqx.com/en/blog/free-mqtt-broker)
-- [MQTT Platform: Essential Features & Use Cases](https://www.emqx.com/en/blog/mqtt-platform-essential-features-and-use-cases)
-- [MQTT Client Tools 101: A Beginner's Guide](https://www.emqx.com/en/resources/mqtt-client-tools-101)
-- [Mastering MQTT: Your Ultimate Tutorial for MQTT](https://www.emqx.com/en/resources/your-ultimate-tutorial-for-mqtt)
+- [Mastering MQTT: The Ultimate Beginner's Guide for 2025](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt)
+- [MQTT Client Tools 101: A Beginner's Guide](https://www.emqx.com/en/blog/mqtt-client-tools)
+- [MQTT in Python with Paho Client: Beginner's Guide 2025](https://www.emqx.com/en/blog/how-to-use-mqtt-in-python)
 
 
 <section class="promotion">

@@ -58,10 +58,10 @@ Get to know the preferred protocol in IoT from beginner to master.
 
 ## [MQTT Broker](https://www.emqx.com/en/blog/category/mqtt-broker)
 
+- [MQTT Broker: How It Works, Popular Options, and Quickstart](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) ([Edit](https://github.com/emqx/blog/blob/main/en/202508/the-ultimate-guide-to-mqtt-broker-comparison.md))
 - [Building MQTT Services on Windows](https://www.emqx.com/en/blog/install-mqtt-broker-on-windows) ([Edit](https://github.com/emqx/blog/blob/main/en/202407/install-mqtt-broker-on-windows.md))
 - [Comparison of Open Source MQTT Brokers 2024](https://www.emqx.com/en/blog/a-comprehensive-comparison-of-open-source-mqtt-brokers-in-2023) ([Edit](https://github.com/emqx/blog/blob/main/en/202405/a-comprehensive-comparison-of-open-source-mqtt-brokers-in-2023.md))
 - [Free MQTT Broker: Exploring Options and Choosing the Right Solution](https://www.emqx.com/en/blog/free-mqtt-broker) ([Edit](https://github.com/emqx/blog/blob/main/en/202404/free-mqtt-broker.md))
-- [MQTT Broker: How It Works, Popular Options, and Quickstart](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) ([Edit](https://github.com/emqx/blog/blob/main/en/202402/the-ultimate-guide-to-mqtt-broker-comparison.md))
 - [How to Install a Scalable MQTT Broker on OpenWRT](https://www.emqx.com/en/blog/how-to-install-a-scalable-mqtt-broker-on-openwrt) ([Edit](https://github.com/emqx/blog/blob/main/en/202310/how-to-install-a-scalable-mqtt-broker-on-openwrt.md))
 - [RabbitMQ vs Kafka: 5 Key Differences & Leading Use Cases](https://www.emqx.com/en/blog/rabbitmq-vs-kafka) ([Edit](https://github.com/emqx/blog/blob/main/en/202309/rabbitmq-vs-kafka.md))
 - [Mosquitto MQTT Broker: Pros/Cons, Tutorial, and Alternative](https://www.emqx.com/en/blog/mosquitto-mqtt-broker-pros-cons-tutorial-and-modern-alternatives) ([Edit](https://github.com/emqx/blog/blob/main/en/202308/mosquitto-mqtt-broker-pros-cons-tutorial-and-modern-alternatives.md))
