@@ -58,10 +58,11 @@ Get to know the preferred protocol in IoT from beginner to master.
 
 ## [MQTT Broker](https://www.emqx.com/en/blog/category/mqtt-broker)
 
+- [Top 3 Open Source MQTT Brokers for Industrial IoT in 2025](https://www.emqx.com/en/blog/top-3-open-source-mqtt-brokers-for-industrial-iot-in-2023) ([Edit](https://github.com/emqx/blog/blob/main/en/202508/top-3-open-source-mqtt-brokers-for-industrial-iot-in-2023.md))
+- [MQTT Broker: How It Works, Popular Options, and Quickstart](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) ([Edit](https://github.com/emqx/blog/blob/main/en/202508/the-ultimate-guide-to-mqtt-broker-comparison.md))
+- [Free MQTT Broker: Exploring Options and Choosing the Right Solution](https://www.emqx.com/en/blog/free-mqtt-broker) ([Edit](https://github.com/emqx/blog/blob/main/en/202507/free-mqtt-broker.md))
 - [Building MQTT Services on Windows](https://www.emqx.com/en/blog/install-mqtt-broker-on-windows) ([Edit](https://github.com/emqx/blog/blob/main/en/202407/install-mqtt-broker-on-windows.md))
 - [Comparison of Open Source MQTT Brokers 2024](https://www.emqx.com/en/blog/a-comprehensive-comparison-of-open-source-mqtt-brokers-in-2023) ([Edit](https://github.com/emqx/blog/blob/main/en/202405/a-comprehensive-comparison-of-open-source-mqtt-brokers-in-2023.md))
-- [Free MQTT Broker: Exploring Options and Choosing the Right Solution](https://www.emqx.com/en/blog/free-mqtt-broker) ([Edit](https://github.com/emqx/blog/blob/main/en/202404/free-mqtt-broker.md))
-- [MQTT Broker: How It Works, Popular Options, and Quickstart](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) ([Edit](https://github.com/emqx/blog/blob/main/en/202402/the-ultimate-guide-to-mqtt-broker-comparison.md))
 - [How to Install a Scalable MQTT Broker on OpenWRT](https://www.emqx.com/en/blog/how-to-install-a-scalable-mqtt-broker-on-openwrt) ([Edit](https://github.com/emqx/blog/blob/main/en/202310/how-to-install-a-scalable-mqtt-broker-on-openwrt.md))
 - [RabbitMQ vs Kafka: 5 Key Differences & Leading Use Cases](https://www.emqx.com/en/blog/rabbitmq-vs-kafka) ([Edit](https://github.com/emqx/blog/blob/main/en/202309/rabbitmq-vs-kafka.md))
 - [Mosquitto MQTT Broker: Pros/Cons, Tutorial, and Alternative](https://www.emqx.com/en/blog/mosquitto-mqtt-broker-pros-cons-tutorial-and-modern-alternatives) ([Edit](https://github.com/emqx/blog/blob/main/en/202308/mosquitto-mqtt-broker-pros-cons-tutorial-and-modern-alternatives.md))
@@ -70,7 +71,6 @@ Get to know the preferred protocol in IoT from beginner to master.
 - [EMQX MQTT Broker Troubleshooting: Connection Issues](https://www.emqx.com/en/blog/emqx-mqtt-broker-connection-troubleshooting) ([Edit](https://github.com/emqx/blog/blob/main/en/202305/emqx-mqtt-broker-connection-troubleshooting.md))
 - [Exploring the Basics of EMQX MQTT Broker Clustering: An Introduction](https://www.emqx.com/en/blog/mqtt-broker-clustering) ([Edit](https://github.com/emqx/blog/blob/main/en/202305/mqtt-broker-clustering.md))
 - [Multi-Tenancy Architecture in MQTT: Key Points, Benefits, and Challenges](https://www.emqx.com/en/blog/multi-tenancy-architecture-in-mqtt) ([Edit](https://github.com/emqx/blog/blob/main/en/202305/multi-tenancy-architecture-in-mqtt.md))
-- [Top 3 Open Source MQTT Brokers for Industrial IoT in 2023](https://www.emqx.com/en/blog/top-3-open-source-mqtt-brokers-for-industrial-iot-in-2023) ([Edit](https://github.com/emqx/blog/blob/main/en/202305/top-3-open-source-mqtt-brokers-for-industrial-iot-in-2023.md))
 - [Open MQTT Benchmarking Comparison: MQTT Brokers in 2023](https://www.emqx.com/en/blog/open-mqtt-benchmarking-comparison-mqtt-brokers-in-2023) ([Edit](https://github.com/emqx/blog/blob/main/en/202305/open-mqtt-benchmarking-comparison-mqtt-brokers-in-2023.md))
 - [Serverless or Hosting? Choose a Suitable MQTT Service for Your Project](https://www.emqx.com/en/blog/serverless-or-hosting-choose-a-suitable-mqtt-service-for-your-project) ([Edit](https://github.com/emqx/blog/blob/main/en/202304/serverless-or-hosting-choose-a-suitable-mqtt-service-for-your-project.md))
 - [What Is the QUIC Protocol?](https://www.emqx.com/en/blog/quic-protocol-the-features-use-cases-and-impact-for-iot-iov) ([Edit](https://github.com/emqx/blog/blob/main/en/202304/quic-protocol-the-features-use-cases-and-impact-for-iot-iov.md))
@@ -522,6 +522,7 @@ Build a reliable, efficient and industry-specific Internet of Vehicles platform 
 
 ## [Industrial IoT | Unified Namespace | Sparkplug](https://www.emqx.com/en/blog/category/industrial-iot)
 
+- [Top 3 Open Source MQTT Brokers for Industrial IoT in 2025](https://www.emqx.com/en/blog/top-3-open-source-mqtt-brokers-for-industrial-iot-in-2023) ([Edit](https://github.com/emqx/blog/blob/main/en/202508/top-3-open-source-mqtt-brokers-for-industrial-iot-in-2023.md))
 - [KNX Protocol: The Basics and Its Possibilities with IoT](https://www.emqx.com/en/blog/knx-protocol) ([Edit](https://github.com/emqx/blog/blob/main/en/202506/knx-protocol.md))
 - [Smart Manufacturing Explained: Basics, Use Cases & Best Practices](https://www.emqx.com/en/blog/the-smart-manufacturing-revolution) ([Edit](https://github.com/emqx/blog/blob/main/en/202506/the-smart-manufacturing-revolution.md))
 - [AI-Ready Unified Namespace: Building the Industrial Data Hub with EMQX and NeuronEX](https://www.emqx.com/en/blog/building-the-industrial-data-hub-with-emqx-and-neuronex) ([Edit](https://github.com/emqx/blog/blob/main/en/202506/building-the-industrial-data-hub-with-emqx-and-neuronex.md))
@@ -577,7 +578,6 @@ Build a reliable, efficient and industry-specific Internet of Vehicles platform 
 - [Sparkplug 3.0: Advancements & Formalization in MQTT for IIoT](https://www.emqx.com/en/blog/sparkplug-3-0-advancements-and-formalization-in-mqtt-for-iiot) ([Edit](https://github.com/emqx/blog/blob/main/en/202306/sparkplug-3-0-advancements-and-formalization-in-mqtt-for-iiot.md))
 - [MQTT Sparkplug Solution for Industrial IoT Using EMQX & Neuron](https://www.emqx.com/en/blog/mqtt-sparkplug-solution-for-industrial-iot-using-emqx-and-neuron) ([Edit](https://github.com/emqx/blog/blob/main/en/202306/mqtt-sparkplug-solution-for-industrial-iot-using-emqx-and-neuron.md))
 - [A Comparison of IIoT Protocols: MQTT Sparkplug vs OPC-UA](https://www.emqx.com/en/blog/a-comparison-of-iiot-protocols-mqtt-sparkplug-vs-opc-ua) ([Edit](https://github.com/emqx/blog/blob/main/en/202305/a-comparison-of-iiot-protocols-mqtt-sparkplug-vs-opc-ua.md))
-- [Top 3 Open Source MQTT Brokers for Industrial IoT in 2023](https://www.emqx.com/en/blog/top-3-open-source-mqtt-brokers-for-industrial-iot-in-2023) ([Edit](https://github.com/emqx/blog/blob/main/en/202305/top-3-open-source-mqtt-brokers-for-industrial-iot-in-2023.md))
 - [5 Key Concepts for MQTT Broker in Sparkplug Specification](https://www.emqx.com/en/blog/5-key-concepts-for-mqtt-broker-in-sparkplug-specification) ([Edit](https://github.com/emqx/blog/blob/main/en/202304/5-key-concepts-for-mqtt-broker-in-sparkplug-specification.md))
 - [Neuron v1.3.0 is officially released with one-stop access to industrial data](https://www.emqx.com/en/blog/neuron-1-3-0-release-notes) ([Edit](https://github.com/emqx/blog/blob/main/en/202108/neuron-1-3-0-release-notes.md))
 - [EMQ officially launched the solution for IIoT](https://www.emqx.com/en/blog/emq-industrial-internet-cloud-edge-integrated-solution) ([Edit](https://github.com/emqx/blog/blob/main/en/202011/emq-industrial-internet-cloud-edge-integrated-solution.md))
