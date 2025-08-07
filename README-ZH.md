@@ -82,7 +82,7 @@ Get to know the preferred protocol in IoT from beginner to master.
 
 ## [MQTT Client](https://www.emqx.com/zh/blog/category/mqtt-client)
 
-- [2024 年值得尝试的 7 个 MQTT 客户端（MQTT Client）工具](https://www.emqx.com/zh/blog/mqtt-client-tools) ([Edit](https://github.com/emqx/blog/blob/main/zh/202410/mqtt-client-tools.md))
+- [2025 年值得尝试的 7 个 MQTT 客户端（MQTT Client）工具](https://www.emqx.com/zh/blog/mqtt-client-tools) ([Edit](https://github.com/emqx/blog/blob/main/zh/202508/mqtt-client-tools.md))
 - [MQTT 客户端自动重连最佳实践｜构建可靠 IoT 设备连接](https://www.emqx.com/zh/blog/mqtt-client-auto-reconnect-best-practices) ([Edit](https://github.com/emqx/blog/blob/main/zh/202303/mqtt-client-auto-reconnect-best-practices.md))
 - [MQTTX Web：在线的 MQTT 5.0 客户端工具](https://www.emqx.com/zh/blog/online-mqtt-client) ([Edit](https://github.com/emqx/blog/blob/main/zh/202208/online-mqtt-client.md))
 - [MQTTX CLI 发布：强大易用的 MQTT 5.0 命令行工具](https://www.emqx.com/zh/blog/powerful-and-easy-to-use-mqtt-5-command-line-tool) ([Edit](https://github.com/emqx/blog/blob/main/zh/202207/powerful-and-easy-to-use-mqtt-5-command-line-tool.md))
@@ -98,6 +98,7 @@ Get to know the preferred protocol in IoT from beginner to master.
 ## [MQTT Programming](https://www.emqx.com/zh/blog/category/mqtt-programming)
 Best practice of MQTT in various clients.
 
+- [在 C++ 项目中使用 MQTT：物联网开发综合指南](https://www.emqx.com/zh/blog/using-mqtt-with-cpp) ([Edit](https://github.com/emqx/blog/blob/main/zh/202508/using-mqtt-with-cpp.md))
 - [如何在 Electron 项目中使用 MQTT](https://www.emqx.com/zh/blog/how-to-use-mqtt-in-electron) ([Edit](https://github.com/emqx/blog/blob/main/zh/202503/how-to-use-mqtt-in-electron.md))
 - [如何在 PHP 项目中使用 MQTT：实时消息传递的完整指南](https://www.emqx.com/zh/blog/how-to-use-mqtt-in-php) ([Edit](https://github.com/emqx/blog/blob/main/zh/202503/how-to-use-mqtt-in-php.md))
 - [在 Qt6 中使用 MQTT：入门指南](https://www.emqx.com/zh/blog/how-to-create-an-mqtt-application-in-qt6) ([Edit](https://github.com/emqx/blog/blob/main/zh/202411/how-to-create-an-mqtt-application-in-qt6.md))
