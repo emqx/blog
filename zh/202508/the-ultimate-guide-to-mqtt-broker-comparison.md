@@ -1,6 +1,6 @@
 ## 什么是 MQTT 服务器（MQTT Broker）？
 
-[MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 是一种适用于物联网的轻量级协议，MQTT Broker 是其核心组件
+[MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 是一种适用于物联网的轻量级协议，MQTT Broker 是其核心组件。
 
 MQTT Broker 是一种中介实体，帮助 MQTT 客户端进行通信。作为中央枢纽，MQTT Broker 能够高效管理设备与应用之间的信息流。具体来说，MQTT Broker 接收客户端发布的消息，根据主题对消息进行过滤，并分发给订阅者。
 
@@ -14,7 +14,7 @@ MQTT Broker 是 MQTT 架构的核心，因为它负责协调 MQTT 客户端（�
 
 - **消息路由：**MQTT Broker 接收发布者发送的消息，并根据主题将其转发给相应的订阅者。这保证了消息能够有效和准确地传送，而无需客户端之间建立直接连接。
 - **扩展性：**MQTT Broker 能够处理大量并发连接，这对于物联网和 M2M 通信场景非常重要，在这些场景中，可能有成千上万甚至数百万个设备连接。Broker 处理这些连接和消息的能力使 MQTT 协议能够高效地扩展。
-- **安全性：**MQTT Broker 可以提供身份验证和加密等安全机制，以保证物联网设备和应用之间数据传输的安全性。要了解更多信息请阅读：[MQTT 安全指南：2024 年你需要了解的 7 个要点](https://www.emqx.com/zh/blog/essential-things-to-know-about-mqtt-security)。
+- **安全性：**MQTT Broker 可以提供身份验证和加密等安全机制，以保证物联网设备和应用之间数据传输的安全性。要了解更多信息请阅读：[MQTT 安全指南：2025 年你需要了解的 7 个要点](https://www.emqx.com/zh/blog/essential-things-to-know-about-mqtt-security)。
 - **集成性：**MQTT Broker 可以与其他通信协议和云平台集成，以构建完整的物联网解决方案。例如，MQTT Broker 可以与 AWS IoT、Google Cloud IoT 或 Microsoft Azure IoT Hub 集成，以实现一个无缝的物联网生态系统。
 - **会话管理：**MQTT Broker 负责管理客户端会话，包括维护客户端订阅信息，以及处理保留消息以便在客户端上线时发送给客户端。会话管理功能可以确保在客户端断开连接并在稍后重新连接到 Broker 时不会丢失消息。要了解更多信息请阅读：[MQTT Persistent Session 与 Clean Session 详解](https://www.emqx.com/zh/blog/mqtt-session)。
 
@@ -28,7 +28,7 @@ MQTT Broker 架构基于[发布-订阅消息传输模式](https://www.emqx.com/z
 
 - **MQTT 客户端**
 
-  MQTT 客户端可以是发布者，也可以是订阅者，或者两者都是。发布者向 MQTT Broker 发送消息，而订阅者从 Broker 接收消息。客户端可以是任何能够使用 MQTT 协议与 MQTT Broker 建立连接的设备或应用，如物联网设备、移动应用或其他服务器。
+  [MQTT 客户端](https://www.emqx.com/zh/blog/mqtt-client-tools)可以是发布者，也可以是订阅者，或者两者都是。发布者向 MQTT Broker 发送消息，而订阅者从 Broker 接收消息。客户端可以是任何能够使用 MQTT 协议与 MQTT Broker 建立连接的设备或应用，如物联网设备、移动应用或其他服务器。
 
 - **主题**
 
@@ -42,11 +42,13 @@ MQTT Broker 架构可以是集中式的，也可以是分布式的。在集中�
 
 ### EMQX
 
-[EMQX](https://github.com/emqx/emqx) 是目前物联网应用中最具扩展性的 MQTT Broker。它能够以亚毫秒级的延迟在一秒钟内处理百万级的 MQTT 消息，并支持在一个集群内连接高达 1 亿个客户端进行消息传输。EMQX 兼容 MQTT 5.0 和 3.x 版本。它是分布式物联网网络的理想选择，可以在 Microsoft Azure、Amazon Web Services 和 Google Cloud 等云上运行。EMQX 支持 MQTT over TLS/SSL，并支持多种认证机制，如 PSK、JWT 和 X.5093。与 Mosquitto 不同，EMQX 支持通过 CLI、HTTP API 和 Dashboard 进行集群管理。
+[EMQX](https://github.com/emqx/emqx) 是目前物联网应用中最具扩展性的 MQTT Broker。它能够以亚毫秒级的延迟在一秒钟内处理百万级的 MQTT 消息，并支持在一个集群内连接高达 1 亿个客户端进行消息传输。EMQX 兼容 MQTT 5.0 和 3.x 版本。它是分布式物联网网络的理想选择，可以在 Microsoft Azure、Amazon Web Services 和 Google Cloud 等云上运行。EMQX 支持 [MQTT over TLS/SSL](https://www.emqx.com/zh/blog/fortifying-mqtt-communication-security-with-ssl-tls)，并支持多种认证机制，如 PSK、JWT 和 X.5093。与 Mosquitto 不同，EMQX 支持通过 CLI、HTTP API 和 Dashboard 进行集群管理。
 
 ### Mosquitto
 
 [Eclipse Mosquitto](https://github.com/eclipse/mosquitto) 也是一款开源的 MQTT Broker，兼容 MQTT 协议的 5.0、3.1.1 和 3.1 版本。Mosquitto 体积小巧，既可以运行在低功耗的单板计算机上，也可以部署在企业级服务器上。它采用 C 语言编写，可以用 C 库实现 MQTT 客户端。它支持 Windows、Mac、Linux 和 Raspberry Pi 等多种平台，为每个平台提供了方便安装的二进制文件。最新版本还增加了一个认证和授权插件 “mosquitto-go-auth”，以及一个用于管理 Mosquitto 实例的 Web 用户界面。此外，它还提供了一个 PHP 包装器 “Mosquitto-PHP”，可以方便地在 PHP 中开发 MQTT 客户端。
+
+>了解更多：[Mosquitto MQTT Broker：优缺点、教程和替代方案](https://www.emqx.com/zh/blog/mosquitto-mqtt-broker-pros-cons-tutorial-and-modern-alternatives)
 
 ### NanoMQ
 
@@ -64,21 +66,21 @@ MQTT Broker 架构可以是集中式的，也可以是分布式的。在集中�
 
 - [**选择 MQTT Broker 时要考虑的 7 个因素**](https://www.emqx.com/zh/blog/7-factors-to-consider-when-choosing-mqtt-broker-2023)
 
-  正在寻找 2024 年最适合您的 MQTT Broker？在做出决策之前，请考虑这七个基本要素。请阅读我们的指南以获取更多信息。
+  正在寻找 2025 年最适合您的 MQTT Broker？在做出决策之前，请考虑这七个基本要素。请阅读我们的指南以获取更多信息。
 
 ### MQTT Broker 对比
 
 - [**开源 MQTT Broker 综合比较**](https://www.emqx.com/en/blog/a-comprehensive-comparison-of-open-source-mqtt-brokers-in-2023)
 
-  这篇文章对 2024 年最受欢迎的开源 MQTT Broker 进行了详细比较，以便您根据自己的需求做出明智的选择。
+  这篇文章对 2025 年最受欢迎的开源 MQTT Broker 进行了详细比较，以便您根据自己的需求做出明智的选择。
 
 - [**最适用于工业物联网领域的三款开源 MQTT Broker**](https://www.emqx.com/zh/blog/top-3-open-source-mqtt-brokers-for-industrial-iot-in-2023)
 
-  这篇文章对 2024 年[工业物联网](https://www.emqx.com/zh/blog/iiot-explained-examples-technologies-benefits-and-challenges)领域最优秀的 3 款 MQTT Broker 进行了对比分析，介绍了它们各自的优缺点和适用场景。
+  这篇文章对 2025 年[工业物联网](https://www.emqx.com/zh/blog/iiot-explained-examples-technologies-benefits-and-challenges)领域最优秀的 3 款 MQTT Broker 进行了对比分析，介绍了它们各自的优缺点和适用场景。
 
 - [**EMQX vs Mosquitto | MQTT Broker 对比**](https://www.emqx.com/zh/blog/emqx-vs-mosquitto-2023-mqtt-broker-comparison)
 
-  要了解 EMQX 和 Mosquitto 这两款 2024 年备受关注的开源 MQTT Broker 的异同，请阅读我们的详细对比。
+  要了解 EMQX 和 Mosquitto 这两款 2025 年备受关注的开源 MQTT Broker 的异同，请阅读我们的详细对比。
 
 - [**EMQX vs NanoMQ | MQTT Broker 对比**](https://www.emqx.com/zh/blog/emqx-vs-nanomq-2023-mqtt-broker-comparison)
 
@@ -90,7 +92,7 @@ MQTT Broker 架构可以是集中式的，也可以是分布式的。在集中�
 
 - [**Mosquitto vs NanoMQ | MQTT Broker 对比**](https://www.emqx.com/zh/blog/mosquitto-vs-nanomq-2023-mqtt-broker-comparison)
 
-  这篇文章对 Mosquitto 和 NanoMQ 这两款 MQTT Broker 进行了对比分析，并为读者提供了 2024 年它们各自适用的应用场景。
+  这篇文章对 Mosquitto 和 NanoMQ 这两款 MQTT Broker 进行了对比分析，并为读者提供了 2025 年它们各自适用的应用场景。
 
 - [**热门在线公共 MQTT Broker 评估**](https://www.emqx.com/zh/blog/popular-online-public-mqtt-brokers)
 
@@ -102,9 +104,9 @@ MQTT Broker 架构可以是集中式的，也可以是分布式的。在集中�
 
   这篇文章介绍了 Open MQTT Benchmark Suite 的原理和功能，以及如何利用它对 MQTT Broker 的扩展性和性能进行客观公正的评估。
 
-- [**MQTT 开放基准测试对比: 2024 年的 MQTT Broker**](https://www.emqx.com/en/blog/open-mqtt-benchmarking-comparison-mqtt-brokers-in-2023)
+- [**MQTT 开放基准测试对比: 2025 年的 MQTT Broker**](https://www.emqx.com/en/blog/open-mqtt-benchmarking-comparison-mqtt-brokers-in-2023)
 
-  这篇文章为您提供了 2024 年物联网领域最流行的 MQTT Broker 的对比分析，帮助您找到最适合您的 MQTT Broker。立即获取详尽的基准报告，了解各个 MQTT Broker 的优势和劣势。
+  这篇文章为您提供了 2025 年物联网领域最流行的 MQTT Broker 的对比分析，帮助您找到最适合您的 MQTT Broker。立即获取详尽的基准报告，了解各个 MQTT Broker 的优势和劣势。
 
 - [**MQTT 开放基准测试对比: Mosquitto vs NanoMQ**](https://www.emqx.com/en/blog/open-mqtt-benchmarking-comparison-mosquitto-vs-nanomq)
 
@@ -141,6 +143,7 @@ EMQ 提供了一个[免费的公共 MQTT 服务器](https://www.emqx.com/zh/mqtt
     </div>
     <a href="https://accounts-zh.emqx.com/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient">开始试用 →</a>
 </section>
+
 
 ### 快速上手
 
@@ -188,11 +191,29 @@ EMQ 提供了一个[免费的公共 MQTT 服务器](https://www.emqx.com/zh/mqtt
 
 ## EMQX：全球最具扩展性的 MQTT Broker
 
-[EMQX](https://github.com/emqx/emqx) 是全球最受欢迎的 MQTT Broker 之一，在 [GitHub](https://github.com/emqx/emqx) 上拥有 14k Stars。EMQX 项目于 2012 年启动，采用 Apache 2.0 协议开源。EMQX 是用 Erlang/OTP 编写的，这是一种专为构建大规模可扩展软实时系统而设计的编程语言。
+EMQX 是全球最受欢迎的开源 MQTT Broker 之一，在 [GitHub](https://github.com/emqx/emqx) 上拥有 15.1k Stars。它全面支持 [MQTT 5.0](https://www.emqx.com/zh/blog/introduction-to-mqtt-5)、3.1.1 和 3.1 协议，同时兼容 [MQTT-SN](https://www.emqx.com/zh/blog/connecting-mqtt-sn-devices-using-emqx)、[CoAP](https://www.emqx.com/zh/blog/coap-protocol)、[LwM2M](https://www.emqx.com/zh/blog/iot-protocols-mqtt-coap-lwm2m) 以及基于 QUIC 的 MQTT 等多种协议。借助 EMQX，您可以轻松连接数百万物联网设备，实现消息的实时处理与路由，并无缝集成各类后端数据系统。它特别适用于人工智能（AI）、物联网（IoT）、工业物联网（IIoT）、车联网、智慧城市等多种应用场景。
 
-EMQX 是全球最具扩展性的 MQTT Broker，支持 [MQTT 5.0](https://www.emqx.com/zh/blog/introduction-to-mqtt-5)、[MQTT-SN](https://www.emqx.com/zh/blog/connecting-mqtt-sn-devices-using-emqx) 和 [MQTT over QUIC](https://www.emqx.com/zh/blog/mqtt-over-quic) 等先进的功能。它支持无主集群架构，保证了高可用性和水平扩展性。自 5.0 版本起，EMQX 能够在由 23 个节点组成的单一集群上，支持高达 1 亿的 MQTT 并发连接。
+EMQX 是全球扩展能力最强的 MQTT 消息服务器，支持无主集群架构（masterless clustering），实现高可用和横向扩展。单个由 23 个节点组成的集群可支持高达 1 亿条 MQTT 并发连接。
 
-EMQX 不仅提供了丰富的企业功能、数据集成、云主机服务，还有来自 EMQ 的商业支持。EMQX 以其卓越的性能、可靠性和可扩展性，赢得了企业、初创公司和个人开发者的广泛认可。EMQX 被应用于各个行业的关键业务场景，如物联网、[工业物联网](https://www.emqx.com/zh/use-cases/industrial-iot)、[网联汽车](https://www.emqx.com/zh/blog/connected-cars-and-automotive-connectivity-all-you-need-to-know)、[制造业](https://www.emqx.com/zh/solutions/industries/manufacturing)和电信。
+自 v5.9.0 起，EMQX 将原有的开源版与企业版功能全面整合，统一为一个强大的版本，并采用 Business Source License（BSL）1.1 授权协议。
+
+核心功能包括：
+
+- **[强大的规则引擎与数据集成](https://www.emqx.com/zh/solutions/mqtt-data-integration)**
+- **[可视化流程设计器（Flow Designer）](https://docs.emqx.com/zh/emqx/latest/flow-designer/introduction.html)**
+- **[智能数据枢纽（Smart Data Hub）](https://docs.emqx.com/zh/cloud/latest/data_hub/smart_data_hub.html)**
+- **[AI 数据处理与集成能力](https://www.emqx.com/zh/solutions/artificial-intelligence)**
+- **[完善的安全机制](https://www.emqx.com/zh/solutions/mqtt-security)**
+- **[高级可观测性与运维管理能力](https://docs.emqx.com/zh/emqx/latest/observability/overview.html)**
+
+产品页面：[https://www.emqx.com/zh/products/emqx](https://www.emqx.com/zh/products/emqx)
+
+**相关资源**
+
+- [MQTT 协议快速入门 2025：基础知识和实用教程](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt)
+- [2025 年值得尝试的 7 个 MQTT 客户端（MQTT Client）工具](https://www.emqx.com/zh/blog/mqtt-client-tools)
+- [如何在 Python3 中使用 MQTT 客户端库 Paho Client](https://www.emqx.com/zh/blog/how-to-use-mqtt-in-python)
+- [如何在 Java 中使用 Paho MQTT 客户端](https://www.emqx.com/zh/blog/how-to-use-mqtt-in-java)
 
 
 
