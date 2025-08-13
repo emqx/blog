@@ -154,6 +154,7 @@ Best practice of MQTT in various clients.
 ## [MQTT Integration (Eco & Integration)](https://www.emqx.com/zh/blog/category/eco-and-integration)
 Explore more with & via EMQ.
 
+- [ESP32 + MCP over MQTT：通过大模型控制智能硬件设备](https://www.emqx.com/zh/blog/esp32-and-mcp-over-mqtt-3) ([Edit](https://github.com/emqx/blog/blob/main/zh/202508/esp32-and-mcp-over-mqtt-3.md))
 - [ESP32 + MCP over MQTT：从 0 到 1 打造情感陪伴智能体之「硬件设备能力封装」](https://www.emqx.com/zh/blog/esp32-and-mcp-over-mqtt-2) ([Edit](https://github.com/emqx/blog/blob/main/zh/202508/esp32-and-mcp-over-mqtt-2.md))
 - [ESP32 + MCP over MQTT：从 0 到 1 打造情感陪伴智能体](https://www.emqx.com/zh/blog/esp32-and-mcp-over-mqtt) ([Edit](https://github.com/emqx/blog/blob/main/zh/202507/esp32-and-mcp-over-mqtt.md))
 - [EMQX Cloud、TDengine Cloud 实现数据互通！联手打造端到端云上大数据解决方案](https://www.emqx.com/zh/blog/emqx-cloud-and-tdengine-cloud) ([Edit](https://github.com/emqx/blog/blob/main/zh/202505/emqx-cloud-and-tdengine-cloud.md))
@@ -202,6 +203,7 @@ Explore more with & via EMQ.
 ## [EMQX Open Source | Broker](https://www.emqx.com/zh/blog/category/emqx)
 EMQX is the world's most scalable open-source MQTT broker with a high performance that connects 100M+ IoT devices in 1 cluster, while maintaining 1M message per second throughput and sub-millisecond latency.
 
+- [多云集群与跨云迁移：通过集群连接摆脱云供应商锁定](https://www.emqx.com/zh/blog/multi-cloud-clusters-and-cross-cloud-migration) ([Edit](https://github.com/emqx/blog/blob/main/zh/202508/multi-cloud-clusters-and-cross-cloud-migration.md))
 - [200 万 WebSocket 连接测试：EMQX 并发性能深度解析](https://www.emqx.com/zh/blog/a-deep-dive-into-emqx-s-websocket-performance) ([Edit](https://github.com/emqx/blog/blob/main/zh/202507/a-deep-dive-into-emqx-s-websocket-performance.md))
 - [突破连接边界：EMQX 实现 MQTT 和 NATS 协议双向互通](https://www.emqx.com/zh/blog/emqx-nats-gateway) ([Edit](https://github.com/emqx/blog/blob/main/zh/202507/emqx-nats-gateway.md))
 - [EMQX + Amazon S3 Tables：从实时物联网数据到数据湖仓](https://www.emqx.com/zh/blog/from-real-time-iot-data-to-big-data-analytics) ([Edit](https://github.com/emqx/blog/blob/main/zh/202507/from-real-time-iot-data-to-big-data-analytics.md))
