@@ -59,7 +59,7 @@ Get to know the preferred protocol in IoT from beginner to master.
 
 ## [MQTT Broker](https://www.emqx.com/zh/blog/category/mqtt-broker)
 
-- [MQTT 服务器（MQTT Broker）：工作原理与快速入门指南](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison) ([Edit](https://github.com/emqx/blog/blob/main/zh/202410/the-ultimate-guide-to-mqtt-broker-comparison.md))
+- [MQTT服务器（MQTT Broker）：工作原理与快速入门指南](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison) ([Edit](https://github.com/emqx/blog/blob/main/zh/202508/the-ultimate-guide-to-mqtt-broker-comparison.md))
 - [在 Windows 平台搭建 MQTT 服务](https://www.emqx.com/zh/blog/install-mqtt-broker-on-windows) ([Edit](https://github.com/emqx/blog/blob/main/zh/202407/install-mqtt-broker-on-windows.md))
 - [2024 最全面的开源 MQTT Broker 对比](https://www.emqx.com/zh/blog/a-comprehensive-comparison-of-open-source-mqtt-brokers-in-2023) ([Edit](https://github.com/emqx/blog/blob/main/zh/202312/a-comprehensive-comparison-of-open-source-mqtt-brokers-in-2023.md))
 - [Mosquitto MQTT Broker：优缺点、教程和替代方案](https://www.emqx.com/zh/blog/mosquitto-mqtt-broker-pros-cons-tutorial-and-modern-alternatives) ([Edit](https://github.com/emqx/blog/blob/main/zh/202312/mosquitto-mqtt-broker-pros-cons-tutorial-and-modern-alternatives.md))
@@ -82,7 +82,7 @@ Get to know the preferred protocol in IoT from beginner to master.
 
 ## [MQTT Client](https://www.emqx.com/zh/blog/category/mqtt-client)
 
-- [2025 年值得尝试的 7 个 MQTT 客户端（MQTT Client）工具](https://www.emqx.com/zh/blog/mqtt-client-tools) ([Edit](https://github.com/emqx/blog/blob/main/zh/202508/mqtt-client-tools.md))
+- [2025年值得尝试的7个MQTT客户端(MQTT Client)工具](https://www.emqx.com/zh/blog/mqtt-client-tools) ([Edit](https://github.com/emqx/blog/blob/main/zh/202508/mqtt-client-tools.md))
 - [MQTT 客户端自动重连最佳实践｜构建可靠 IoT 设备连接](https://www.emqx.com/zh/blog/mqtt-client-auto-reconnect-best-practices) ([Edit](https://github.com/emqx/blog/blob/main/zh/202303/mqtt-client-auto-reconnect-best-practices.md))
 - [MQTTX Web：在线的 MQTT 5.0 客户端工具](https://www.emqx.com/zh/blog/online-mqtt-client) ([Edit](https://github.com/emqx/blog/blob/main/zh/202208/online-mqtt-client.md))
 - [MQTTX CLI 发布：强大易用的 MQTT 5.0 命令行工具](https://www.emqx.com/zh/blog/powerful-and-easy-to-use-mqtt-5-command-line-tool) ([Edit](https://github.com/emqx/blog/blob/main/zh/202207/powerful-and-easy-to-use-mqtt-5-command-line-tool.md))
