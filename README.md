@@ -7,6 +7,7 @@
 ## [MQTT Tutorials](https://www.emqx.com/en/blog/category/mqtt-protocol)
 Get to know the preferred protocol in IoT from beginner to master.
 
+- [MQTT vs WebSocket: Key Differences & Applications](https://www.emqx.com/en/blog/mqtt-vs-websocket) ([Edit](https://github.com/emqx/blog/blob/main/en/202507/mqtt-vs-websocket.md))
 - [MQTT 5.0: 7 New Features and a Migration Checklist](https://www.emqx.com/en/blog/introduction-to-mqtt-5) ([Edit](https://github.com/emqx/blog/blob/main/en/202506/introduction-to-mqtt-5.md))
 - [MQTT Trends for 2025 and Beyond: Powering the Future of AI and IoT](https://www.emqx.com/en/blog/mqtt-trends-for-2025-and-beyond) ([Edit](https://github.com/emqx/blog/blob/main/en/202506/mqtt-trends-for-2025-and-beyond.md))
 - [Mastering MQTT: The Ultimate Beginner's Guide for 2025](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) ([Edit](https://github.com/emqx/blog/blob/main/en/202502/the-easiest-guide-to-getting-started-with-mqtt.md))
@@ -15,7 +16,6 @@ Get to know the preferred protocol in IoT from beginner to master.
 - [Connecting MQTT and REST API: A Comprehensive Tutorial](https://www.emqx.com/en/blog/connecting-mqtt-and-rest-api) ([Edit](https://github.com/emqx/blog/blob/main/en/202407/connecting-mqtt-and-rest-api.md))
 - [MQTT vs HTTP: Ultimate IoT Protocol Comparison Guide](https://www.emqx.com/en/blog/mqtt-vs-http) ([Edit](https://github.com/emqx/blog/blob/main/en/202406/mqtt-vs-http.md))
 - [MQTT Retained Messages: Beginner's Guide with Example](https://www.emqx.com/en/blog/mqtt5-features-retain-message) ([Edit](https://github.com/emqx/blog/blob/main/en/202406/mqtt5-features-retain-message.md))
-- [MQTT vs WebSocket: Key Differences & Applications](https://www.emqx.com/en/blog/mqtt-vs-websocket) ([Edit](https://github.com/emqx/blog/blob/main/en/202405/mqtt-vs-websocket.md))
 - [How to Process JSON, Hex, and Binary Data in MQTT](https://www.emqx.com/en/blog/how-to-process-json-hex-and-binary-data-in-mqtt) ([Edit](https://github.com/emqx/blog/blob/main/en/202405/how-to-process-json-hex-and-binary-data-in-mqtt.md))
 - [Mastering MQTT Analysis with Wireshark: A Beginner's Guide](https://www.emqx.com/en/blog/mastering-mqtt-analysis-with-wireshark) ([Edit](https://github.com/emqx/blog/blob/main/en/202405/mastering-mqtt-analysis-with-wireshark.md))
 - [MQTT vs CoAP: Comparing Protocols for IoT Connectivity](https://www.emqx.com/en/blog/mqtt-vs-coap) ([Edit](https://github.com/emqx/blog/blob/main/en/202404/mqtt-vs-coap.md))
@@ -92,6 +92,7 @@ Get to know the preferred protocol in IoT from beginner to master.
 ## [MQTT Client](https://www.emqx.com/en/blog/category/mqtt-client)
 
 - [Python MQTT Clients: A 2025 Selection Guide](https://www.emqx.com/en/blog/comparision-of-python-mqtt-client) ([Edit](https://github.com/emqx/blog/blob/main/en/202507/comparision-of-python-mqtt-client.md))
+- [Top 3 MQTT WebSocket Clients for Developers in 2025](https://www.emqx.com/en/blog/top-3-mqtt-websocket-clients-in-2023) ([Edit](https://github.com/emqx/blog/blob/main/en/202507/top-3-mqtt-websocket-clients-in-2023.md))
 - [MQTT.fx Guide: Features, Demos, and Using Tips](https://www.emqx.com/en/blog/connecting-to-emqx-cloud-with-mqttfx) ([Edit](https://github.com/emqx/blog/blob/main/en/202506/connecting-to-emqx-cloud-with-mqttfx.md))
 - [Top 7 MQTT Client Tools for Developers in 2025](https://www.emqx.com/en/blog/mqtt-client-tools) ([Edit](https://github.com/emqx/blog/blob/main/en/202503/mqtt-client-tools.md))
 - [Ensuring Reliable IoT Device Connectivity: Best Practices for MQTT Client Auto-Reconnection](https://www.emqx.com/en/blog/mqtt-client-auto-reconnect-best-practices) ([Edit](https://github.com/emqx/blog/blob/main/en/202409/mqtt-client-auto-reconnect-best-practices.md))
@@ -101,7 +102,6 @@ Get to know the preferred protocol in IoT from beginner to master.
 - [MQTT Explorer Guide: Features, Demos, and Using Tips](https://www.emqx.com/en/blog/connecting-to-emqx-cloud-with-mqtt-explorer) ([Edit](https://github.com/emqx/blog/blob/main/en/202312/connecting-to-emqx-cloud-with-mqtt-explorer.md))
 - [MQTT over lwIP Practice: A Step-by-Step Tutorial](https://www.emqx.com/en/blog/mqtt-over-lwip) ([Edit](https://github.com/emqx/blog/blob/main/en/202310/mqtt-over-lwip.md))
 - [MQTTX: All-In-One Testing and Debugging for IoT Apps](https://www.emqx.com/en/blog/mqttx-all-in-one-testing-and-debugging-for-iot-apps) ([Edit](https://github.com/emqx/blog/blob/main/en/202307/mqttx-all-in-one-testing-and-debugging-for-iot-apps.md))
-- [Top 3 MQTT WebSocket Clients in 2023](https://www.emqx.com/en/blog/top-3-mqtt-websocket-clients-in-2023) ([Edit](https://github.com/emqx/blog/blob/main/en/202305/top-3-mqtt-websocket-clients-in-2023.md))
 - [Top 3 MQTT Desktop Client Tools in 2023](https://www.emqx.com/en/blog/top-3-mqtt-desktop-client-tools-in-2023) ([Edit](https://github.com/emqx/blog/blob/main/en/202305/top-3-mqtt-desktop-client-tools-in-2023.md))
 - [Top 5 MQTT CLI Tools for IoT Developers in 2023](https://www.emqx.com/en/blog/top-5-mqtt-cli-tools-for-iot-developers-in-2023) ([Edit](https://github.com/emqx/blog/blob/main/en/202304/top-5-mqtt-cli-tools-for-iot-developers-in-2023.md))
 - [MQTTX CLI: A Powerful and Easy-to-Use MQTT CLI](https://www.emqx.com/en/blog/powerful-and-easy-to-use-mqtt-5-command-line-tool) ([Edit](https://github.com/emqx/blog/blob/main/en/202208/powerful-and-easy-to-use-mqtt-5-command-line-tool.md))
@@ -113,6 +113,7 @@ Get to know the preferred protocol in IoT from beginner to master.
 ## [MQTT Programming](https://www.emqx.com/en/blog/category/mqtt-programming)
 Best practice of MQTT in various clients.
 
+- [A Quickstart Guide to Using MQTT over WebSocket](https://www.emqx.com/en/blog/connect-to-mqtt-broker-with-websocket) ([Edit](https://github.com/emqx/blog/blob/main/en/202508/connect-to-mqtt-broker-with-websocket.md))
 - [MQTT in Python with Paho Client: Beginner's Guide 2025](https://www.emqx.com/en/blog/how-to-use-mqtt-in-python) ([Edit](https://github.com/emqx/blog/blob/main/en/202507/how-to-use-mqtt-in-python.md))
 - [Using MQTT with C++: A Comprehensive Guide for IoT Developers](https://www.emqx.com/en/blog/using-mqtt-with-cpp) ([Edit](https://github.com/emqx/blog/blob/main/en/202507/using-mqtt-with-cpp.md))
 - [MQTT with Node.js: A Beginner's Guide with Examples & FAQs](https://www.emqx.com/en/blog/how-to-use-mqtt-in-nodejs) ([Edit](https://github.com/emqx/blog/blob/main/en/202506/how-to-use-mqtt-in-nodejs.md))
@@ -137,7 +138,6 @@ Best practice of MQTT in various clients.
 - [Connecting to a Serverless MQTT Broker in React](https://www.emqx.com/en/blog/connecting-to-a-serverless-mqtt-broker-in-react) ([Edit](https://github.com/emqx/blog/blob/main/en/202309/connecting-to-a-serverless-mqtt-broker-in-react.md))
 - [Using MQTT in Unity with M2MqttUnity Library: A Step-by-Step Guide](https://www.emqx.com/en/blog/using-mqtt-in-unity-with-m2mqttunity-library-a-step-by-step-guide) ([Edit](https://github.com/emqx/blog/blob/main/en/202308/using-mqtt-in-unity-with-m2mqttunity-library-a-step-by-step-guide.md))
 - [Connecting to Serverless MQTT Broker in PHP](https://www.emqx.com/en/blog/connecting-to-serverless-mqtt-broker-in-php) ([Edit](https://github.com/emqx/blog/blob/main/en/202307/connecting-to-serverless-mqtt-broker-in-php.md))
-- [A Quickstart Guide to Using MQTT over WebSocket](https://www.emqx.com/en/blog/connect-to-mqtt-broker-with-websocket) ([Edit](https://github.com/emqx/blog/blob/main/en/202306/connect-to-mqtt-broker-with-websocket.md))
 - [How to Use MQTT on Raspberry Pi with Paho Python Client](https://www.emqx.com/en/blog/use-mqtt-with-raspberry-pi) ([Edit](https://github.com/emqx/blog/blob/main/en/202306/use-mqtt-with-raspberry-pi.md))
 - [How to Use MQTT in Dart](https://www.emqx.com/en/blog/how-to-use-mqtt-in-dart) ([Edit](https://github.com/emqx/blog/blob/main/en/202211/how-to-use-mqtt-in-dart.md))
 - [How to Use MQTT in The React Native Project](https://www.emqx.com/en/blog/how-to-use-mqtt-in-react-native) ([Edit](https://github.com/emqx/blog/blob/main/en/202206/how-to-use-mqtt-in-react-native.md))
@@ -630,6 +630,7 @@ MQTTX is a Fully Open-source MQTT 5.0 cross-platform Desktop Client, makes it ea
 ## [Neuron - IIoT Connectivity Server](https://www.emqx.com/en/blog/category/neuron)
 IoT edge industrial protocol gateway software, which supports one-stop access to dozens of industrial protocols and converts them into MQTT protocol to access the cloud industrial IoT platform. It just requires ultra-low resource consumption, and supports three major architectures of X86, ARM, and MIPS.
 
+- [NeuronEX Best Practice: Achieving Efficient Data Synchronization from MySQL to Your IIoT Platform](https://www.emqx.com/en/blog/neuronex-best-bractices) ([Edit](https://github.com/emqx/blog/blob/main/en/202508/neuronex-best-bractices.md))
 - [Beyond Kepware: 5 Ways NeuronEX Redefines Industrial Connectivity in Cloud + AI Agent Era](https://www.emqx.com/en/blog/neuronex-vs-kepware) ([Edit](https://github.com/emqx/blog/blob/main/en/202508/neuronex-vs-kepware.md))
 - [Visualizing Your Industrial Data: A Guide to NeuronEX Dashboard](https://www.emqx.com/en/blog/visualizing-your-industrial-data) ([Edit](https://github.com/emqx/blog/blob/main/en/202507/visualizing-your-industrial-data.md))
 - [NeuronEX 3.6.0 Released: From Unified Data Collection to Intelligent Data Insights](https://www.emqx.com/en/blog/neuronex-v-3-6-0-release-notes) ([Edit](https://github.com/emqx/blog/blob/main/en/202506/neuronex-v-3-6-0-release-notes.md))
