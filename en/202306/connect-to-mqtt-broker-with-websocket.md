@@ -1,20 +1,19 @@
-In recent years, the rapid development of Web front-end technologies has led to the emergence of new browser features. Through the browser rendering engine, more and more applications can now be implemented on the browser side. One such application is WebSocket, which is widely used as an instant communication method for Web applications.
+**MQTT over WebSocket** has become an indispensable technology for connecting web browsers to the world of the Internet of Things (IoT). By combining the lightweight efficiency of **[MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt)** with the real-time, bi-directional capabilities of **WebSockets**, it enables web applications to seamlessly communicate with IoT devices.
 
-WebSocket is a computer communications protocol that provides full-duplex communication channels over a single TCP connection. The IETF standardized the WebSocket protocol as RFC 6455 in 2011, and the WebSocket API in Web IDL is currently being standardized by the W3C.
+This guide provides a comprehensive overview of **MQTT over WebSocket**, explaining its core concepts, key benefits, and a step-by-step tutorial on how to get started.
 
-[Chapter 6 of the MQTT protocol](https://docs.oasis-open.org/mqtt/mqtt/v3.1.1/os/mqtt-v3.1.1-os.html#_Toc398718127) specifies the conditions to be met for [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) to be transferred over a WebSocket [RFC6455] connection. This topic is not discussed in detail here.
+## **Understanding MQTT and WebSocket: A Perfect Synergy**
 
-## What is WebSocket?
+Before diving into the practical steps, let's quickly review the two protocols at play:
 
-WebSocket is a network communication protocol that enables two-way communication channels over a single TCP connection. Unlike HTTP, WebSocket keeps an open connection between a client and a server, which enables them to exchange data immediately and interactively. This makes WebSocket ideal for real-time interactivity applications like online games, chat applications, and stock trading systems.
+- **MQTT (Message Queuing Telemetry Transport)**: A lightweight messaging protocol designed for low-bandwidth, high-latency networks. It uses a **publish/subscribe** model, making it highly efficient for communication between resource-constrained devices.
+- **WebSocket**: A communication protocol that provides a full-duplex, persistent connection over a single TCP connection. Unlike HTTP, it allows for real-time, two-way communication between a client and a server.
 
-The WebSocket protocol has two parts: handshake and data transfer. Handshake establishes a connection between client and server, while data transfer exchanges information over the open connection.
+The synergy of these two protocols is powerful. **MQTT over WebSocket** allows you to leverage the efficiency of MQTT's publish/subscribe model directly within any web browser, which natively supports WebSockets. This simplifies development and democratizes access to IoT data, as you can now build web dashboards and applications that interact with IoT devices in real time without a complex backend.
 
-## Why Use MQTT over WebSocket?
+## Key Benefits of Using MQTT over WebSocket
 
-MQTT over WebSockets is quickly becoming an essential conduit for IoT interactions, offering a more accessible, efficient, and enriched experience. By enabling direct MQTT data communication through any web browser, it brings the world of IoT closer to everyone.
-
-Here are some reasons to use MQTT over WebSocket:
+Choosing to implement **MQTT over WebSocket** offers several compelling advantages:
 
 1. **Simplified Interaction**: Interact directly with IoT devices via any web browser. No need to worry about different protocols – MQTT over WebSocket makes it straightforward.
 2. **Universal Accessibility**: With a web browser, anyone can connect to and interact with IoT devices. This opens up the world of IoT to everyone, not just those with technical expertise.
@@ -24,15 +23,13 @@ Here are some reasons to use MQTT over WebSocket:
 
 MQTT over WebSocket democratizes access to IoT devices, enabling anyone with a web browser to interact with these devices in real-time and easily.
 
-Next, we will provide a comprehensive guide to using MQTT over WebSocket.
-
-## Prepare an MQTT Broker
+## Prerequisite for MQTT over WebSocket: Prepare an MQTT Broker
 
 Before proceeding, please ensure you have an [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) to communicate and test with. There are several options available for obtaining an MQTT broker:
 
-- **Private deployment**
+- **Self-Hosted**
 
-  [EMQX](https://github.com/emqx/emqx) is the most scalable [open-source MQTT broker](https://www.emqx.com/en/blog/a-comprehensive-comparison-of-open-source-mqtt-brokers-in-2023) for IoT, [IIoT](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges), and connected vehicles. You can run the following Docker command to install EMQX.
+  You can deploy an open-source broker like **EMQX** using a simple Docker command. [EMQX](https://github.com/emqx/emqx) is the most scalable [open-source MQTT broker](https://www.emqx.com/en/blog/a-comprehensive-comparison-of-open-source-mqtt-brokers-in-2023) for IoT, [IIoT](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges), and connected vehicles.
 
   ```
   docker run -d --name emqx -p 1883:1883 -p 8083:8083 -p 8084:8084 -p 8883:8883 -p 18083:18083 emqx/emqx
@@ -40,9 +37,7 @@ Before proceeding, please ensure you have an [MQTT broker](https://www.emqx.com/
 
 - **Fully managed cloud service**
 
-  The fully managed cloud service is the easiest way to start an MQTT service. With [EMQX Cloud](https://www.emqx.com/en/cloud), you can get started in just a few minutes and run your MQTT service in 20+ regions across AWS, Google Cloud, and Microsoft Azure, ensuring global availability and fast connectivity.
-
-  The latest edition, [EMQX Cloud Serverless](https://www.emqx.com/en/cloud/serverless-mqtt), provides a forever free 1M session minutes/month complimentary offering for developers to easily start their MQTT deployment within seconds.
+  For a hassle-free experience, a managed cloud service like **[EMQX Cloud Serverless](https://www.emqx.com/en/cloud/serverless-mqtt)** offers a forever free tier, allowing you to get a deployment up and running in minutes and run your MQTT service in 20+ regions across AWS, Google Cloud, and Microsoft Azure.
 
 - **Free public MQTT broker**
 
@@ -86,6 +81,7 @@ For more information, please visit [Free Public MQTT Broker](https://www.emqx.co
   </div>
 </section>
 
+
 ## Get Started with MQTT over WebSocket
 
 ### Install MQTT WebSocket Client
@@ -98,7 +94,7 @@ To install MQTT.js, use the `npm` command if you have the Node.js runtime enviro
 
 **Installation for Node.js Project**
 
-```
+```shell
 # npm
 npm install mqtt --save
 
@@ -110,7 +106,7 @@ yarn add mqtt
 
 If you're working directly in the browser and prefer not to install the library, you can also use a CDN:
 
-```
+```shell
 <script src="<https://unpkg.com/mqtt/dist/mqtt.min.js>"></script>
 
 <script>
@@ -123,7 +119,7 @@ If you're working directly in the browser and prefer not to install the library,
 
 For simplicity, we will implement this directly in the browser by creating a basic HTML file. In this file, we'll set up both a publisher and a subscriber.
 
-```
+```javascript
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -136,13 +132,13 @@ For simplicity, we will implement this directly in the browser by creating a bas
   Use WebSocket client to connect to MQTT server
 </body>
 <script>
-	const clientId = 'mqttjs_' + Math.random().toString(16).substr(2, 8)
+	const clientId = 'mqttjs_' + Math.random().toString(16).substring(2, 10)
 	const host = 'ws://broker.emqx.io:8083/mqtt'
 	const options = {
 	  keepalive: 60,
 	  clientId: clientId,
 	  protocolId: 'MQTT',
-	  protocolVersion: 4,
+	  protocolVersion: 5,
 	  clean: true,
 	  reconnectPeriod: 1000,
 	  connectTimeout: 30 * 1000,
@@ -184,14 +180,14 @@ In the previous code snippet, `options` refer to the client connection options. 
 
 Subscriptions can only be made after a successful connection, and the subscribed topics must comply with MQTT subscription topic rules. JavaScript's asynchronous feature means a successful connection is only ensured after the 'connect' event or by using `client.connected`.
 
-```
+```javascript
 client.on('connect', () => {
   console.log(`Client connected: ${clientId}`)
   // Subscribe
   client.subscribe('testtopic', { qos: 0 })
 })
 // Unsubscribe
-client.unubscribe('testtopic', () => {
+client.unsubscribe('testtopic', () => {
   console.log('Unsubscribed');
 })
 ```
@@ -200,7 +196,7 @@ client.unubscribe('testtopic', () => {
 
 You can publish messages to specific topics, which must comply with the MQTT publish topic rules. You do not need to subscribe to the topic before publishing; the client must be connected.
 
-```
+```javascript
 // Publish
 client.publish('testtopic', 'ws connection demo...!', { qos: 0, retain: false })
 // Receive
@@ -219,7 +215,7 @@ To use WebSocket over TLS with MQTT.js, you need to change the protocol in the b
 
 Here's an example of how you might establish a secure connection:
 
-```
+```javascript
 const host = 'wss://broker.emqx.io:8084/mqtt'
 const options = {
   // other options as before
@@ -236,7 +232,7 @@ For more details and potential issues related to using WebSocket over TLS, pleas
 
 > Note: When using WebSocket connections in a browser, it is not possible to establish two-way authenticated connections. However, this feature is supported in most other programming language environments. For example, in Node.js:
 
-```
+```javascript
 const mqtt = require('mqtt')
 const fs = require('fs')
 const path = require('path')
@@ -315,11 +311,15 @@ If you want to learn more about the features of the MQTT protocol, explore advan
 
 To learn more about MQTT over WebSocket, here are some useful resources:
 
-- [MQTTX Web](https://mqttx.app/web)
+- [MQTT vs WebSocket: Key Differences & Applications](https://www.emqx.com/en/blog/mqtt-vs-websocket)
+
+  This guide provides a clear and concise comparison to help you understand their core differences, applications, and how they can even be used together to optimize your communication architecture.
+
+- [Online MQTT Client - MQTTX Web](https://mqttx.app/web-client)
 
   MQTTX Web is a user-friendly, browser-based tool for online debugging, developing, and testing MQTT applications. It connects to an MQTT broker via a WebSocket client and offers an intuitive interface.
 
-- [Top 3 MQTT WebSocket Clients in 2023](https://www.emqx.com/en/blog/top-3-mqtt-websocket-clients-in-2023)
+- [Top 3 MQTT WebSocket Clients in 2025](https://www.emqx.com/en/blog/top-3-mqtt-websocket-clients-in-2023)
 
   This blog will explore the top 3 MQTT WebSocket client tools highly recommended in 2023.
 
@@ -339,8 +339,7 @@ To learn more about MQTT over WebSocket, here are some useful resources:
 
 <section class="promotion">
     <div>
-        Try EMQX Cloud for Free
-        <div class="is-size-14 is-text-normal has-text-weight-normal">A fully managed MQTT service for IoT</div>
+        Talk to an Expert
     </div>
-    <a href="https://accounts.emqx.com/signup?continue=https://cloud-intl.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">Get Started →</a>
+    <a href="https://www.emqx.com/en/contact?product=solutions" class="button is-gradient">Contact Us →</a>
 </section>
