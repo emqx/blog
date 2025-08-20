@@ -1,11 +1,13 @@
 | **Chapter** | **Feature**                                                  | **Difficulty** |
 | ----------- | ------------------------------------------------------------ | -------------- |
-| 1           | Overview: Background + Environment Setup + Device Online     | ★              |
+| 1           | [Overview: Background + Environment Setup + Device Online](https://www.emqx.com/en/blog/esp32-and-mcp-over-mqtt) | ★              |
 | 2           | **From "Command-Based" to "Semantic Control": MCP over MQTT Encapsulation of Device Capabilities** | ★★             |
-| 3           | Integrating LLM for "Natural Language → Device Control"      | ★★             |
+| 3           | [Integrating LLM for "Natural Language → Device Control"](https://www.emqx.com/en/blog/esp32-and-mcp-over-mqtt-3) | ★★             |
 | 4           | Voice I/O: Microphone Data Upload + Speech Recognition + Speech Synthesis Playback | ★★★            |
 | 5           | Persona, Emotion, Memory: From "Controller" to "Companion"   | ★★★            |
 | 6           | Giving the AI "Eyes": Image Acquisition + Multimodal Understanding | ★★★            |
+
+
 
 *This is the second piece of our “Building Your AI Companion with ESP32 & MCP over MQTT” series.*
 
