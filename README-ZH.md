@@ -60,12 +60,12 @@ Get to know the preferred protocol in IoT from beginner to master.
 ## [MQTT Broker](https://www.emqx.com/zh/blog/category/mqtt-broker)
 
 - [MQTT服务器（MQTT Broker）：工作原理与快速入门指南](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison) ([Edit](https://github.com/emqx/blog/blob/main/zh/202508/the-ultimate-guide-to-mqtt-broker-comparison.md))
+- [2025最全面的开源MQTT服务器（MQTT Broker）对比](https://www.emqx.com/zh/blog/a-comprehensive-comparison-of-open-source-mqtt-brokers-in-2023) ([Edit](https://github.com/emqx/blog/blob/main/zh/202508/a-comprehensive-comparison-of-open-source-mqtt-brokers-in-2023.md))
+- [2025最适用于工业物联网领域的三款开源MQTT服务器（MQTT Broker）](https://www.emqx.com/zh/blog/top-3-open-source-mqtt-brokers-for-industrial-iot-in-2023) ([Edit](https://github.com/emqx/blog/blob/main/zh/202508/top-3-open-source-mqtt-brokers-for-industrial-iot-in-2023.md))
 - [在 Windows 平台搭建 MQTT 服务](https://www.emqx.com/zh/blog/install-mqtt-broker-on-windows) ([Edit](https://github.com/emqx/blog/blob/main/zh/202407/install-mqtt-broker-on-windows.md))
-- [2024 最全面的开源 MQTT Broker 对比](https://www.emqx.com/zh/blog/a-comprehensive-comparison-of-open-source-mqtt-brokers-in-2023) ([Edit](https://github.com/emqx/blog/blob/main/zh/202312/a-comprehensive-comparison-of-open-source-mqtt-brokers-in-2023.md))
 - [Mosquitto MQTT Broker：优缺点、教程和替代方案](https://www.emqx.com/zh/blog/mosquitto-mqtt-broker-pros-cons-tutorial-and-modern-alternatives) ([Edit](https://github.com/emqx/blog/blob/main/zh/202312/mosquitto-mqtt-broker-pros-cons-tutorial-and-modern-alternatives.md))
 - [MQTT Broker 集群解析：基础概念与高级实现](https://www.emqx.com/zh/blog/mqtt-broker-clustering) ([Edit](https://github.com/emqx/blog/blob/main/zh/202306/mqtt-broker-clustering.md))
 - [MQTT 服务新趋势：了解 MQTT 多租户架构](https://www.emqx.com/zh/blog/multi-tenancy-architecture-in-mqtt) ([Edit](https://github.com/emqx/blog/blob/main/zh/202306/multi-tenancy-architecture-in-mqtt.md))
-- [2023 年最适用于工业物联网领域的三款开源 MQTT Broker](https://www.emqx.com/zh/blog/top-3-open-source-mqtt-brokers-for-industrial-iot-in-2023) ([Edit](https://github.com/emqx/blog/blob/main/zh/202305/top-3-open-source-mqtt-brokers-for-industrial-iot-in-2023.md))
 - [Mosquitto vs NanoMQ | 2023 MQTT Broker 对比](https://www.emqx.com/zh/blog/mosquitto-vs-nanomq-2023-mqtt-broker-comparison) ([Edit](https://github.com/emqx/blog/blob/main/zh/202304/mosquitto-vs-nanomq-2023-mqtt-broker-comparison.md))
 - [EMQX vs VerneMQ | 2023 MQTT Broker 对比](https://www.emqx.com/zh/blog/emqx-vs-vernemq-2023-mqtt-broker-comparison) ([Edit](https://github.com/emqx/blog/blob/main/zh/202304/emqx-vs-vernemq-2023-mqtt-broker-comparison.md))
 - [EMQX vs NanoMQ | 2023 MQTT Broker 对比](https://www.emqx.com/zh/blog/emqx-vs-nanomq-2023-mqtt-broker-comparison) ([Edit](https://github.com/emqx/blog/blob/main/zh/202304/emqx-vs-nanomq-2023-mqtt-broker-comparison.md))
@@ -98,13 +98,13 @@ Get to know the preferred protocol in IoT from beginner to master.
 ## [MQTT Programming](https://www.emqx.com/zh/blog/category/mqtt-programming)
 Best practice of MQTT in various clients.
 
+- [如何在 Python3 中使用 MQTT 客户端库 Paho Client](https://www.emqx.com/zh/blog/how-to-use-mqtt-in-python) ([Edit](https://github.com/emqx/blog/blob/main/zh/202508/how-to-use-mqtt-in-python.md))
 - [在 C++ 项目中使用 MQTT：物联网开发综合指南](https://www.emqx.com/zh/blog/using-mqtt-with-cpp) ([Edit](https://github.com/emqx/blog/blob/main/zh/202508/using-mqtt-with-cpp.md))
 - [如何在 Electron 项目中使用 MQTT](https://www.emqx.com/zh/blog/how-to-use-mqtt-in-electron) ([Edit](https://github.com/emqx/blog/blob/main/zh/202503/how-to-use-mqtt-in-electron.md))
 - [如何在 PHP 项目中使用 MQTT：实时消息传递的完整指南](https://www.emqx.com/zh/blog/how-to-use-mqtt-in-php) ([Edit](https://github.com/emqx/blog/blob/main/zh/202503/how-to-use-mqtt-in-php.md))
 - [在 Qt6 中使用 MQTT：入门指南](https://www.emqx.com/zh/blog/how-to-create-an-mqtt-application-in-qt6) ([Edit](https://github.com/emqx/blog/blob/main/zh/202411/how-to-create-an-mqtt-application-in-qt6.md))
 - [如何在 Java 中使用 Paho MQTT 客户端](https://www.emqx.com/zh/blog/how-to-use-mqtt-in-java) ([Edit](https://github.com/emqx/blog/blob/main/zh/202410/how-to-use-mqtt-in-java.md))
 - [在 ESP32 上使用 MQTT：入门指南](https://www.emqx.com/zh/blog/esp32-connects-to-the-free-public-mqtt-broker) ([Edit](https://github.com/emqx/blog/blob/main/zh/202410/esp32-connects-to-the-free-public-mqtt-broker.md))
-- [如何在 Python3 中使用 MQTT 客户端库 Paho Client](https://www.emqx.com/zh/blog/how-to-use-mqtt-in-python) ([Edit](https://github.com/emqx/blog/blob/main/zh/202410/how-to-use-mqtt-in-python.md))
 - [如何在 Rust 中通过 Rumqttc 实现 MQTT 通信](https://www.emqx.com/zh/blog/how-to-use-mqtt-in-rust) ([Edit](https://github.com/emqx/blog/blob/main/zh/202409/how-to-use-mqtt-in-rust.md))
 - [在 Flutter 项目中使用 MQTT](https://www.emqx.com/zh/blog/using-mqtt-in-flutter) ([Edit](https://github.com/emqx/blog/blob/main/zh/202409/using-mqtt-in-flutter.md))
 - [开发指南：使用 MQTTNet 库构建 .Net 物联网 MQTT 应用程序](https://www.emqx.com/zh/blog/connecting-to-serverless-mqtt-broker-with-mqttnet-in-csharp) ([Edit](https://github.com/emqx/blog/blob/main/zh/202402/connecting-to-serverless-mqtt-broker-with-mqttnet-in-csharp.md))
@@ -154,6 +154,8 @@ Best practice of MQTT in various clients.
 ## [MQTT Integration (Eco & Integration)](https://www.emqx.com/zh/blog/category/eco-and-integration)
 Explore more with & via EMQ.
 
+- [ESP32 + MCP over MQTT：基于大模型打造人格化情感智能体](https://www.emqx.com/zh/blog/esp32-and-mcp-over-mqtt-5) ([Edit](https://github.com/emqx/blog/blob/main/zh/202508/esp32-and-mcp-over-mqtt-5.md))
+- [ESP32 + MCP over MQTT：实现智能设备语音交互](https://www.emqx.com/zh/blog/esp32-and-mcp-over-mqtt-4) ([Edit](https://github.com/emqx/blog/blob/main/zh/202508/esp32-and-mcp-over-mqtt-4.md))
 - [ESP32 + MCP over MQTT：通过大模型控制智能硬件设备](https://www.emqx.com/zh/blog/esp32-and-mcp-over-mqtt-3) ([Edit](https://github.com/emqx/blog/blob/main/zh/202508/esp32-and-mcp-over-mqtt-3.md))
 - [ESP32 + MCP over MQTT：从 0 到 1 打造情感陪伴智能体之「硬件设备能力封装」](https://www.emqx.com/zh/blog/esp32-and-mcp-over-mqtt-2) ([Edit](https://github.com/emqx/blog/blob/main/zh/202508/esp32-and-mcp-over-mqtt-2.md))
 - [ESP32 + MCP over MQTT：从 0 到 1 打造情感陪伴智能体](https://www.emqx.com/zh/blog/esp32-and-mcp-over-mqtt) ([Edit](https://github.com/emqx/blog/blob/main/zh/202507/esp32-and-mcp-over-mqtt.md))
@@ -480,6 +482,7 @@ Build a reliable, efficient and industry-specific Internet of Vehicles platform 
 
 ## [Industrial IoT | Unified Namespace | Sparkplug](https://www.emqx.com/zh/blog/category/industrial-iot)
 
+- [2025最适用于工业物联网领域的三款开源MQTT服务器（MQTT Broker）](https://www.emqx.com/zh/blog/top-3-open-source-mqtt-brokers-for-industrial-iot-in-2023) ([Edit](https://github.com/emqx/blog/blob/main/zh/202508/top-3-open-source-mqtt-brokers-for-industrial-iot-in-2023.md))
 - [NeuronEX vs Kepware：云 + AI 时代工业边缘网关的进化与革新](https://www.emqx.com/zh/blog/neuronex-vs-kepware) ([Edit](https://github.com/emqx/blog/blob/main/zh/202507/neuronex-vs-kepware.md))
 - [EMQX + NeuronEX：构建基于 UNS 架构的工业 AI 数据中枢](https://www.emqx.com/zh/blog/building-the-industrial-data-hub-with-emqx-and-neuronex) ([Edit](https://github.com/emqx/blog/blob/main/zh/202506/building-the-industrial-data-hub-with-emqx-and-neuronex.md))
 - [自然语言 + 工业数据：AI agent 驱动的 IIoT 数据探索实践](https://www.emqx.com/zh/blog/the-practice-of-ai-agent-driven-iiot-data-exploration) ([Edit](https://github.com/emqx/blog/blob/main/zh/202505/the-practice-of-ai-agent-driven-iiot-data-exploration.md))
@@ -536,7 +539,6 @@ Build a reliable, efficient and industry-specific Internet of Vehicles platform 
 - [基于 EMQX 和 Neuron 的工业物联网 MQTT Sparkplug 解决方案](https://www.emqx.com/zh/blog/mqtt-sparkplug-solution-for-industrial-iot-using-emqx-and-neuron) ([Edit](https://github.com/emqx/blog/blob/main/zh/202306/mqtt-sparkplug-solution-for-industrial-iot-using-emqx-and-neuron.md))
 - [工业物联网协议对比：MQTT Sparkplug vs OPC-UA](https://www.emqx.com/zh/blog/a-comparison-of-iiot-protocols-mqtt-sparkplug-vs-opc-ua) ([Edit](https://github.com/emqx/blog/blob/main/zh/202306/a-comparison-of-iiot-protocols-mqtt-sparkplug-vs-opc-ua.md))
 - [EMQ & 明道云：零代码高效构建工业物联网设备管理平台](https://www.emqx.com/zh/blog/build-an-industrial-iot-device-management-platform-with-zero-code) ([Edit](https://github.com/emqx/blog/blob/main/zh/202305/build-an-industrial-iot-device-management-platform-with-zero-code.md))
-- [2023 年最适用于工业物联网领域的三款开源 MQTT Broker](https://www.emqx.com/zh/blog/top-3-open-source-mqtt-brokers-for-industrial-iot-in-2023) ([Edit](https://github.com/emqx/blog/blob/main/zh/202305/top-3-open-source-mqtt-brokers-for-industrial-iot-in-2023.md))
 - [Sparkplug 规范中涉及 MQTT Broker 的 5 个关键概念](https://www.emqx.com/zh/blog/5-key-concepts-for-mqtt-broker-in-sparkplug-specification) ([Edit](https://github.com/emqx/blog/blob/main/zh/202305/5-key-concepts-for-mqtt-broker-in-sparkplug-specification.md))
 - [EMQ & 南洋万邦云边一体化方案：激活数据潜力，打造智慧工业园区](https://www.emqx.com/zh/blog/emq-and-nanyang-wanbang-cloud-edge-integration-solution) ([Edit](https://github.com/emqx/blog/blob/main/zh/202303/emq-and-nanyang-wanbang-cloud-edge-integration-solution.md))
 - [激活海量数据价值，实现生产过程优化](https://www.emqx.com/zh/blog/activate-the-value-of-massive-data) ([Edit](https://github.com/emqx/blog/blob/main/zh/202212/activate-the-value-of-massive-data.md))

@@ -6,7 +6,7 @@
 
 正如十多年前 [a16z](https://a16z.com/) 所说：["Software is eating the world"](https://a16z.com/2011/08/20/why-software-is-eating-the-world/) 。开源软件正在吞噬软件。当前，市面上超过 20 个开源 MQTT Broker 项目，这使得软件架构师和开发人员的选择过程充满挑战。
 
-本文将探讨 2024 年最热门的开源 MQTT Broker，并对它们进行深入比较，帮助您选择最适合自己需求的一款。
+本文将探讨 2025 年最热门的开源 [MQTT Broker](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison)，并对它们进行深入比较，帮助您选择最适合自己需求的一款。
 
 ## 评价标准：社区和受欢迎度
 
@@ -14,37 +14,36 @@
 
 - 社区规模：通过 GitHub Star 数、贡献者和 issue 的数量进行评估。
 - 受欢迎程度：通过研究用户群、下载量和 Docker 拉取数来评估。
-- 项目活跃度：通过 GitHub 提交、PR 和发布的频率进行评估，尤其是过去 12 个月内的相关数据。
+- 项目活跃度：通过 GitHub 提交、PR 和发布的频率进行评估。
 
 根据上述标准，我们选择了在开源社区中影响力最大的四个开源 MQTT Broker：
 
-- EMQX：GitHub 上 Star 数最高的 MQTT Broker，有 12.6k 个 Star。
+- EMQX：GitHub 上 Star 数最高的 MQTT Broker，有 15k 个 Star。
 - Mosquitto：Star 数排名第二，但使用最为广泛。
 - NanoMQ：目前最新、最活跃的 MQTT Broker 之一。
 - VerneMQ：虽然在 Github 上的开发并不活跃，但 Star 数排名第三。
 
-|                                     | **EMQX**                                    | **Mosquitto**                                            | **NanoMQ**                                      | **VerneMQ**                                          |
-| :---------------------------------- | :------------------------------------------ | :------------------------------------------------------- | :---------------------------------------------- | :--------------------------------------------------- |
-| **GitHub Project**                  | [EMQX GitHub](https://github.com/emqx/emqx) | [Mosquitto GitHub](https://github.com/eclipse/mosquitto) | [NanoMQ GitHub](https://github.com/nanomq/nanomq) | [VerneMQ GitHub](https://github.com/vernemq/vernemq) |
-| **Project Created**                 | 2012                                        | 2009                                                     | 2020                                            | 2014                                                 |
-| **License**                         | Apache Version 2.0                          | EPL/EDL License                                          | MIT License                                     | Apache Version 2.0                                   |
-| **Programming Language**            | Erlang                                      | C/C++                                                    | C                                               | Erlang                                               |
-| **Latest Release**                  | v5.3.2 (Dec. 2023)                          | 2.0.18 (Sep 2023)                                        | v0.20.8 (Nov 2023)                              | v1.13.0 (Jun 2023)                                   |
-| **GitHub Stars**                    | **12.6k**                                   | **8k**                                                   | **1.2k**                                        | **3.1k**                                             |
-| **GitHub Commits**                  | 19k+                                        | 2900+                                                    | 3000+                                           | 2400+                                                |
-| **GitHub Commits (Last 12 Months)** | **6500+**                                   | **70+**                                                  | **1300+**                                       | **80+**                                              |
-| **GitHub Issues**                   | 3700+                                       | 2300+                                                    | 400+                                            | 1400+                                                |
-| **GitHub Releases**                 | 330+                                        | 60+                                                      | 80+                                             | 40+                                                  |
-| **GitHub PRs**                      | 7700+                                       | 600+                                                     | 1000+                                           | 700+                                                 |
-| **GitHub Contributors**             | 110+                                        | 130+                                                     | 20+                                             | 50+                                                  |
+|                          | EMQX                                        | **Mosquitto**                                            | NanoMQ                                            | VerneMQ                                              |
+| :----------------------- | :------------------------------------------ | :------------------------------------------------------- | :------------------------------------------------ | ---------------------------------------------------- |
+| **GitHub Project**       | [EMQX GitHub](https://github.com/emqx/emqx) | [Mosquitto GitHub](https://github.com/eclipse/mosquitto) | [NanoMQ GitHub](https://github.com/nanomq/nanomq) | [VerneMQ GitHub](https://github.com/vernemq/vernemq) |
+| **Project Created**      | 2012                                        | 2009                                                     | 2020                                              | 2014                                                 |
+| **License**              | Apache License 2.0(≤ v5.8) BSL 1.1(≥v5.9)   | EPL/EDL License                                          | MIT License                                       | Apache Version 2.0                                   |
+| **Programming Language** | Erlang                                      | C/C++                                                    | C                                                 | Erlang                                               |
+| **Latest Release**       | v5.10.0 (Jun 2025)                          | 2.0.22 (Jul 2025)                                        | v0.23.10 (Jun 2025)                               | v2.1.1 (Jul 2025)                                    |
+| **GitHub Stars**         | **15.1k**                                   | **10k**                                                  | **2k**                                            | **3.4k**                                             |
+| **GitHub Commits**       | 28k+                                        | 3100+                                                    | 3700+                                             | 2500+                                                |
+| **GitHub Issues**        | 4100+                                       | 2600+                                                    | 600+                                              | 1500+                                                |
+| **GitHub Releases**      | 370+                                        | 70+                                                      | 120+                                              | 40+                                                  |
+| **GitHub PRs**           | 10k+                                        | 700+                                                     | 1300+                                             | 800+                                                 |
+| **GitHub Contributors**  | 120+                                        | 140+                                                     | 30+                                               | 60+                                                  |
 
 ## 主流开源 MQTT Broker 概览
 
 ### EMQX
 
-[EMQX](https://github.com/emqx/emqx) 是业界领先的 MQTT Broker，深受开发者喜爱，目前在 GitHub 上已获得超过 12k 个 Star。EMQX 项目始于 2012 年，遵循 Apache 2.0 开源协议。它基于 Erlang/OTP 开发，这是一种能够构建大规模可扩展软实时系统的编程语言。
+[EMQX](https://github.com/emqx/emqx) 是业界领先的 MQTT Broker，深受开发者喜爱，目前在 GitHub 上已获得超过 15k 个 Star。EMQX 项目始于 2012 年，遵循 Apache 2.0 开源协议（EMQX 5.8 及更早版本）。它基于 Erlang/OTP 开发，这是一种能够构建大规模可扩展软实时系统的编程语言。
 
-EMQX 是全球最具扩展性的 MQTT Broker，支持 MQTT 5.0、MQTT-SN 和 MQTT over QUIC 等协议和其他先进功能。它采用无主集群架构，实现了高可用性和水平扩展性。自 5.0 版本开始，EMQX 能够在一个由 23 个节点组成的集群中创建高达 1 亿个并发 MQTT 连接。
+EMQX 是全球最具扩展性的 MQTT Broker，支持 MQTT 5.0、MQTT-SN 和 MQTT over QUIC 等协议和其他先进功能。**EMQX 具备业界领先的可扩展能力，单个 23 节点集群即可稳定支撑 1 亿级并发连接。其无主架构设计不仅保证了高可用性，更为大规模物联网应用提供了坚实可靠的基础。**
 
 ![MQTT Cluster](https://assets.emqx.com/images/9abfe5ee5df4f1c544915f5e4605b253.png)
 
@@ -64,20 +63,19 @@ GitHub：[https://github.com/emqx/emqx](https://github.com/emqx/emqx)
 **缺点：**
 
 - 配置较为复杂
-- 插件生态有限，难以开发扩展
 - 理解日志具有一定难度
 
 <section class="promotion">
     <div>
         免费试用 EMQX Cloud
-        <div class="is-size-14 is-text-normal has-text-weight-normal">全托管的 MQTT 消息云服务</div>
     </div>
     <a href="https://accounts-zh.emqx.com/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">开始试用 →</a>
 </section>
 
+
 ### Mosquitto
 
-[Mosquitto](https://www.emqx.com/zh/blog/mosquitto-mqtt-broker-pros-cons-tutorial-and-modern-alternatives) 项目由 Roger Light 于 2009 年创立，后来捐赠给 Eclipse 基金会，遵循 Eclipse公共许可证（EPL/EDL 许可证）协议。截至 2023 年 12 月，它是部署最广泛的开源 MQTT Broker，拥有庞大的社区，在 GitHub 获得了超过 8k 个 Star。
+[Mosquitto](https://www.emqx.com/zh/blog/mosquitto-mqtt-broker-pros-cons-tutorial-and-modern-alternatives) 项目由 Roger Light 于 2009 年创立，后来捐赠给 Eclipse 基金会，遵循 Eclipse公共许可证（EPL/EDL 许可证）协议。截至 2023 年 12 月，它是部署最广泛的开源 MQTT Broker，拥有庞大的社区，在 GitHub 获得了超过 10k 个 Star。
 
 Mosquitto 由 C/C++ 编写，采用单线程结构。它支持 MQTT 协议的 5.0、3.1.1 和 3.1 版本，并支持 SSL/TLS 和 WebSocket。由于其轻量级设计，Mosquitto 非常适合部署在嵌入式设备或资源受限的服务器上。
 
@@ -85,14 +83,12 @@ Mosquitto 因其仅占用约 200KB 的启动内存而广受赞誉。但是，它
 
 ![Mosquitto](https://assets.emqx.com/images/82027ea30acf44e5e1ba3e0a68f8bd4f.png)
 
-官网：[https://mosquitto.org/](https://mosquitto.org/)
-
 GitHub：[https://github.com/eclipse/mosquitto](https://github.com/eclipse/mosquitto )
 
 **优点：**
 
 - 安装和使用方便
-- 支持 MQTT 5.0 协议
+- 支持 [MQTT 5.0](https://www.emqx.com/zh/blog/introduction-to-mqtt-5) 协议
 - 轻量级，资源占用少
 - 拥有活跃的开源社区
 
@@ -113,8 +109,6 @@ NanoMQ 由纯 C 语言编写，基于 NNG 的异步 I/O 和多线程[ Actor 模�
 NanoMQ 具有轻量高效的特点，适合多种边缘计算平台。它具有高度的兼容性和可移植性，仅依赖于原生的 POSIX API。这意味着它可以在任何 POSIX 兼容的平台上轻松部署，并且可以在包括 x86_64、ARM、MIPS 和 RISC-V 在内的多种 CPU 架构上顺畅运行。
 
 ![NanoMQ](https://assets.emqx.com/images/44a45e8732eef0076a95f095f6551d2e.png)
-
-官网：[https://nanomq.io/](https://nanomq.io/)
 
 GitHub：[https://github.com/nanomq/nanomq](https://github.com/nanomq/nanomq)
 
@@ -141,6 +135,7 @@ GitHub：[https://github.com/nanomq/nanomq](https://github.com/nanomq/nanomq)
     <a href="https://www.emqx.com/zh/try?product=nanomq" class="button is-gradient px-5">开始试用 →</a>
 </section>
 
+
 ### VerneMQ
 
 VerneMQ 项目于[ 2014](https://github.com/vernemq/vernemq/tree/3c7703f0d62e758ba22a34ceb756f2ac2a4da44a) 年启动，最初由[ Erlio GmbH](https://vernemq.com/company.html) 开发。该项目采用 Apache Version 2.0 许可证。它支持 MQTT 协议的 3.1、3.1.1 和 5.0 版本。作为第二个用 Erlang/OTP 开发的 Broker，其[部分代码](https://github.com/vernemq/vernemq/blob/ff75cc33d8e1a4ccb75de7f268d3ea934c9b23fb/apps/vmq_commons/src/vmq_topic.erl)参考了 EMQX 项目。
@@ -150,8 +145,6 @@ VerneMQ 项目于[ 2014](https://github.com/vernemq/vernemq/tree/3c7703f0d62e758
 然而，尽管 Plumtree 集群架构从理论上看很完美，但其可行性尚未得到证明。VerneMQ 团队和社区花费了多年时间尝试解决系统存在的问题，如网络分裂、数据不一致和崩溃恢复等，但是取得的成果有限。
 
 目前，该项目已不再积极的开发和维护，在过去的一年中只有大约 50 次提交。
-
-官网：[https://www.vernemq.com/](https://www.vernemq.com/)
 
 GitHub：[https://github.com/vernemq/vernemq](https://github.com/vernemq/vernemq)
 
@@ -334,7 +327,7 @@ EMQX 提供内置的基于 SQL 的规则引擎，用户可以在 Broker 内实�
 
 随着物联网的快速发展，预计到 2030 年，全球连接设备的数量将超过 1000 亿。MQTT 作为物联网的神经系统也将因此变得更加不可或缺。EMQ 正致力于 MQTT over QUIC、MQTT Serverless、MQTT 统一命名空间等多项领先的 MQTT 技术革新。欢迎查看我们的博客了解更多信息：
 
-- [2023 年 MQTT 协议的 7 个技术趋势｜描绘物联网的未来](https://www.emqx.com/zh/blog/7-mqtt-trends-in-2023)
+- [2025 年 MQTT 技术趋势：驱动 AI 与物联网未来发展的关键动力](https://www.emqx.com/zh/blog/mqtt-trends-for-2025-and-beyond)
 - [MQTT over QUIC：物联网消息传输还有更多可能](https://www.emqx.com/zh/blog/mqtt-over-quic)
 
 
