@@ -71,7 +71,7 @@ GitHub: [https://github.com/emqx/emqx](https://github.com/emqx/emqx)
 
 ### Mosquitto 
 
-The Mosquitto project was initially developed by Roger Light in 2009 and later donated to the Eclipse Foundation, licensed under the Eclipse Public License (EPL/EDL license). As of July 2025, it is the most widely deployed open-source MQTT broker with a large community and over 8k GitHub stars.
+The Mosquitto project was initially developed by Roger Light in 2009 and later donated to the Eclipse Foundation, licensed under the Eclipse Public License (EPL/EDL license). As of July 2025, it is the most widely deployed open-source MQTT broker with a large community and over 10k GitHub stars.
 
 Mosquitto is written in C/C++ and uses a single-threaded architecture. Mosquitto implements MQTT protocol versions 5.0, 3.1.1, and 3.1, and supports SSL/TLS and WebSocket. Its lightweight design makes Mosquitto suitable for deployment on embedded devices or servers with limited resources.
 
