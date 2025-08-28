@@ -9,7 +9,7 @@
 | 3    | [接入 LLM，实现“自然语言 → 设备控制”](https://www.emqx.com/zh/blog/esp32-and-mcp-over-mqtt-3) | ★★   |
 | 4    | [语音 I/O：麦克风数据上传 + 语音识别 + 语音合成回放](https://www.emqx.com/zh/blog/esp32-and-mcp-over-mqtt-4) | ★★★  |
 | 5    | **人格、情感、记忆：从“控制器”到“陪伴体”**                   | ★★★  |
-| 6    | 给智能体增加“眼睛”：图像采集 + 多模态理解                    | ★★★  |
+| 6    | [给智能体增加“眼睛”：图像采集 + 多模态理解](https://www.emqx.com/zh/blog/esp32-and-mcp-over-mqtt-6)                    | ★★★  |
 
 ## **回顾：从文字到语音的智能控制链路**
 
