@@ -34,7 +34,7 @@ Users can quickly pinpoint the potential causes and effectively troubleshoot iss
 
 ## Be the First to Experience Event History
 
-We're currently in the testing phase and inviting interested customers to join our exclusive private beta test. Enter your email on the [Event History Private Beta](https://www.emqx.com/en/cloud/event-history-private-beta) Page and secure your spot on the waitlist. We'll keep you updated and notify you as soon as it's ready for you to explore. Don't miss this opportunity to be at the forefront of innovation!
+We're currently in the testing phase and inviting interested customers to join our exclusive private beta test. Enter your email on the Event History Private Beta Page and secure your spot on the waitlist. We'll keep you updated and notify you as soon as it's ready for you to explore. Don't miss this opportunity to be at the forefront of innovation!
 
 ![Event History Private Beta Page](https://assets.emqx.com/images/0bd19aac1ad51c8a3eb513bbf6d5a4f6.png)
 
