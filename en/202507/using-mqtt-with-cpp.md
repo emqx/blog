@@ -216,7 +216,7 @@ Message received: Hello, EMQX from C++!
 
 Using MQTT with C++ empowers developers to build efficient, scalable IoT applications. The Paho MQTT C++ library, combined with EMQX’s powerful broker capabilities, provides a solid foundation for real-time messaging. Whether you’re developing for smart homes, industrial IoT, or connected vehicles, this combination ensures reliability and performance. 
 
-For more resources, check out the [EMQX documentation](https://www.emqx.com/en/docs) and [Paho MQTT C++ GitHub repository](https://github.com/eclipse/paho.mqtt.cpp).
+For more resources, check out the [EMQX documentation](https://docs.emqx.com/en/emqx/latest/) and [Paho MQTT C++ GitHub repository](https://github.com/eclipse/paho.mqtt.cpp).
 
 
 

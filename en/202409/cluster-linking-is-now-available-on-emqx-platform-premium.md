@@ -1,4 +1,4 @@
-We are thrilled to announce that Cluster Linking, a game-changing feature we promised during the launch of [EMQX Platform Premium](https://www.emqx.com/en/cloud/premium), is now live and ready for our users to explore! This powerful capability enables seamless connectivity across global multi-region clusters, allowing devices to connect to the nearest access point while ensuring smooth cross-regional communication.
+We are thrilled to announce that Cluster Linking, a game-changing feature we promised during the launch of [EMQX Platform Premium](https://www.emqx.com/en/cloud), is now live and ready for our users to explore! This powerful capability enables seamless connectivity across global multi-region clusters, allowing devices to connect to the nearest access point while ensuring smooth cross-regional communication.
 
 ## **Revolutionizing IoT Connectivity**
 

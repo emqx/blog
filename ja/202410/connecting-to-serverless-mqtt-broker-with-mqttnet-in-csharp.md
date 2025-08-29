@@ -10,7 +10,7 @@ IoTの普及に伴い、.NETフレームワークはIoTアプリケーション�
 
 [EMQX Serverless](https://www.emqx.com/ja/cloud/serverless-mqtt)は、すべてのサーバーレスの利点を備えたパブリッククラウド上の[MQTTブローカー](https://www.emqx.com/ja/blog/the-ultimate-guide-to-mqtt-broker-comparison)サービスです。数回のクリックで数秒以内にサーバーレスデプロイメントを開始できます。さらに、ユーザーは毎月100万の無料セッション分を獲得でき、23台のデバイスが1か月間オンラインになるのに十分であり、小規模なIoTテストシナリオに最適です。
 
-[このブログのガイド](https://www.emqx.com/ja/blog/a-comprehensive-guide-to-serverless-mqtt-service)に従って、無料でサーバーレスデプロイメントを作成できます。オンラインガイドの登録プロセスを完了すると、デプロイメントの「概要」に次のようなインスタンス情報が表示されます。後ほど接続情報とCA証明書を使用します。
+[このブログのガイド](https://www.emqx.com/en/blog/a-comprehensive-guide-to-serverless-mqtt-service)に従って、無料でサーバーレスデプロイメントを作成できます。オンラインガイドの登録プロセスを完了すると、デプロイメントの「概要」に次のようなインスタンス情報が表示されます。後ほど接続情報とCA証明書を使用します。
 
 ![EMQX MQTT Cloud](https://assets.emqx.com/images/b7f54f0922422779d30df5ede63e66fb.png)
 

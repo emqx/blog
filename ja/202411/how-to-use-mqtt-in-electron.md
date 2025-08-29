@@ -403,7 +403,7 @@ MQTTXを使用してクライアントにメッセージを送信すると、メ
 
 - [VueでのMQTTの使用方法](https://www.emqx.com/ja/blog/how-to-use-mqtt-in-vue)
 - [ReactでのMQTTの使用方法](https://www.emqx.com/ja/blog/how-to-use-mqtt-in-react)
-- [AngularでのMQTTの使用方法](https://www.emqx.com/ja/blog/how-to-use-mqtt-in-angular)
+- [AngularでのMQTTの使用方法](https://www.emqx.com/en/blog/how-to-use-mqtt-in-angular)
 - [Node.jsでのMQTTの使用方法](https://www.emqx.com/ja/blog/how-to-use-mqtt-in-nodejs)
 - [WebSocketを使用したMQTTのクイックスタートガイド](https://www.emqx.com/ja/blog/connect-to-mqtt-broker-with-websocket)
 
