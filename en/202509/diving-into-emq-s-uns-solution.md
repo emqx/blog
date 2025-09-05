@@ -1,4 +1,4 @@
-A leading food and beverage manufacturer employs EMQ's UNS solution to boost production efficiency. As mentioned by the management, the entire food industry operates on tight margins, where every second of downtime and every defective product counts. However, with growing market demand, the challenge for them is clear: how to continuously boost production efficiency while ensuring every single product is perfect?
+A leading food and beverage manufacturer employs EMQX's UNS solution to boost production efficiency. As mentioned by the management, the entire food industry operates on tight margins, where every second of downtime and every defective product counts. However, with growing market demand, the challenge for them is clear: how to continuously boost production efficiency while ensuring every single product is perfect?
 
 This is why they have decided to implement an Overall Equipment Effectiveness (OEE) system. OEE is more than just a number; it is a strategic tool for achieving transparency on the production lines and for tightly integrating efficiency, quality, and food safety.
 
@@ -30,9 +30,9 @@ An effective OEE system for a modern company must be:
 
 These properties enabled by a UNS make calculating the OEE more accurate, adaptable, and beneficial for proactive decision-making.
 
-## EMQ’s UNS Solution: MQTT as the Backbone
+## EMQX's UNS Solution: MQTT as the Backbone
 
-EMQ’s UNS solution is built on **MQTT**, the global standard for IoT messaging. Its lightweight, publish-subscribe architecture is perfectly suited for industrial environments. There are two main software components in the UNS solution: **[EMQX](https://www.emqx.com/en/platform)** as an [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) and **[NeuronEX](https://www.emqx.com/en/products/neuronex)** as an Edge Gateway that translates various industrial protocols to MQTT.
+EMQX's UNS solution is built on **MQTT**, the global standard for IoT messaging. Its lightweight, publish-subscribe architecture is perfectly suited for industrial environments. There are two main software components in the UNS solution: **[EMQX](https://www.emqx.com/en/platform)** as an [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) and **[NeuronEX](https://www.emqx.com/en/products/neuronex)** as an Edge Gateway that translates various industrial protocols to MQTT.
 
 - **Availability:** By leveraging NeuronEX, we can capture machine state changes and downtime reasons from PLCs and sensors the moment they occur. This eliminates manual data entry delays and provides an instant, accurate picture of machine availability. NeuronEX has 70+ industrial protocols conversion modules, including OPC UA and Modbus, as required by the food company. This ensures we can connect to virtually any asset on the factory floor.
   Machine availability is accurately captured through direct signals from PLCs or sensors, with the NeuronEX edge gateway sending real-time Actual Uptime and downtime data to the EMQX broker. In parallel, EMQX's robust data connectors allow it to retrieve Scheduled Uptime and downtime from the food company's MES system, such as SAP. By seamlessly combining these two crucial data streams, the Availability metric is easily calculated. This process is a great example of benefiting from IT and OT convergence.
