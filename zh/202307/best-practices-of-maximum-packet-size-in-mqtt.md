@@ -32,7 +32,7 @@
 
    ![Create an MQTT connection](https://assets.emqx.com/images/784f1078a559f75b0c9ed10f30a5a218.png)
 
-3. 连接成功后我们可以通过 Wireshark 抓包工具看到，服务端返回的 CONNACK 报文中 Maximum Packet Size 属性的值为 1048576，也就是说客户端每次只能向公共 MQTT 服务器发送最多 1 KB 的报文：
+3. 连接成功后我们可以通过 Wireshark 抓包工具看到，服务端返回的 CONNACK 报文中 Maximum Packet Size 属性的值为 1048576，也就是说客户端每次只能向公共 MQTT 服务器发送最多 1 MB 的报文：
 
    ![Wireshark packet capture tool](https://assets.emqx.com/images/0d6c9d52f8dbb2c052119386f0bb10b3.png)
 
