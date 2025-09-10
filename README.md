@@ -166,6 +166,7 @@ Best practice of MQTT in various clients.
 ## [MQTT Integration (Eco & Integration)](https://www.emqx.com/en/blog/category/eco-and-integration)
 Explore more with & via EMQ.
 
+- [Can ESP32 Run MQTT over QUIC? We Had a Try...](https://www.emqx.com/en/blog/can-esp32-run-mqtt-over-quic) ([Edit](https://github.com/emqx/blog/blob/main/en/202509/can-esp32-run-mqtt-over-quic.md))
 - [Building Your AI Companion with ESP32 & MCP over MQTT – Part 4: Enabling Voice Interaction](https://www.emqx.com/en/blog/esp32-and-mcp-over-mqtt-4) ([Edit](https://github.com/emqx/blog/blob/main/en/202509/esp32-and-mcp-over-mqtt-4.md))
 - [Natural Language Control with LLMs: Your First AI Companion with ESP32 & MCP over MQTT Part 3](https://www.emqx.com/en/blog/esp32-and-mcp-over-mqtt-3) ([Edit](https://github.com/emqx/blog/blob/main/en/202508/esp32-and-mcp-over-mqtt-3.md))
 - [Encapsulating Device Capabilities with MCP over MQTT: Build Your AI Companion Series Part 2](https://www.emqx.com/en/blog/esp32-and-mcp-over-mqtt-2) ([Edit](https://github.com/emqx/blog/blob/main/en/202508/esp32-and-mcp-over-mqtt-2.md))
