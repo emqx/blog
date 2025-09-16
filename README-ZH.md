@@ -82,6 +82,7 @@ Get to know the preferred protocol in IoT from beginner to master.
 
 ## [MQTT Client](https://www.emqx.com/zh/blog/category/mqtt-client)
 
+- [Python MQTT 客户端：2025 年选型指南](https://www.emqx.com/zh/blog/comparision-of-python-mqtt-client) ([Edit](https://github.com/emqx/blog/blob/main/zh/202508/comparision-of-python-mqtt-client.md))
 - [2025年值得尝试的7个MQTT客户端(MQTT Client)工具](https://www.emqx.com/zh/blog/mqtt-client-tools) ([Edit](https://github.com/emqx/blog/blob/main/zh/202508/mqtt-client-tools.md))
 - [MQTT 客户端自动重连最佳实践｜构建可靠 IoT 设备连接](https://www.emqx.com/zh/blog/mqtt-client-auto-reconnect-best-practices) ([Edit](https://github.com/emqx/blog/blob/main/zh/202303/mqtt-client-auto-reconnect-best-practices.md))
 - [MQTTX Web：在线的 MQTT 5.0 客户端工具](https://www.emqx.com/zh/blog/online-mqtt-client) ([Edit](https://github.com/emqx/blog/blob/main/zh/202208/online-mqtt-client.md))
@@ -91,13 +92,13 @@ Get to know the preferred protocol in IoT from beginner to master.
 - [使用 MQTTBox 接入 EMQX Cloud](https://www.emqx.com/zh/blog/connecting-to-emqx-cloud-with-mqttbox) ([Edit](https://github.com/emqx/blog/blob/main/zh/202108/connecting-to-emqx-cloud-with-mqttbox.md))
 - [使用 MQTTLens 接入 EMQX Cloud](https://www.emqx.com/zh/blog/connecting-to-emqx-cloud-with-mqttlens) ([Edit](https://github.com/emqx/blog/blob/main/zh/202108/connecting-to-emqx-cloud-with-mqttlens.md))
 - [使用 MQTT Explorer 接入 EMQX Cloud](https://www.emqx.com/zh/blog/connecting-to-emqx-cloud-with-mqtt-explorer) ([Edit](https://github.com/emqx/blog/blob/main/zh/202107/connecting-to-emqx-cloud-with-mqtt-explorer.md))
-- [Python MQTT 客户端对比](https://www.emqx.com/zh/blog/comparision-of-python-mqtt-client) ([Edit](https://github.com/emqx/blog/blob/main/zh/202009/comparision-of-python-mqtt-client.md))
 - [常用 MQTT 客户端库简介](https://www.emqx.com/zh/blog/introduction-to-the-commonly-used-mqtt-client-library) ([Edit](https://github.com/emqx/blog/blob/main/zh/201911/introduction-to-the-commonly-used-mqtt-client-library.md))
 
 
 ## [MQTT Programming](https://www.emqx.com/zh/blog/category/mqtt-programming)
 Best practice of MQTT in various clients.
 
+- [Python MQTT 客户端：2025 年选型指南](https://www.emqx.com/zh/blog/comparision-of-python-mqtt-client) ([Edit](https://github.com/emqx/blog/blob/main/zh/202508/comparision-of-python-mqtt-client.md))
 - [如何在 Python3 中使用 MQTT 客户端库 Paho Client](https://www.emqx.com/zh/blog/how-to-use-mqtt-in-python) ([Edit](https://github.com/emqx/blog/blob/main/zh/202508/how-to-use-mqtt-in-python.md))
 - [在 C++ 项目中使用 MQTT：物联网开发综合指南](https://www.emqx.com/zh/blog/using-mqtt-with-cpp) ([Edit](https://github.com/emqx/blog/blob/main/zh/202508/using-mqtt-with-cpp.md))
 - [如何在 Electron 项目中使用 MQTT](https://www.emqx.com/zh/blog/how-to-use-mqtt-in-electron) ([Edit](https://github.com/emqx/blog/blob/main/zh/202503/how-to-use-mqtt-in-electron.md))
@@ -120,7 +121,6 @@ Best practice of MQTT in various clients.
 - [ESP8266 + MQTT ：如何实现 LED 灯的远程控制](https://www.emqx.com/zh/blog/esp8266_mqtt_led) ([Edit](https://github.com/emqx/blog/blob/main/zh/202101/esp8266_mqtt_led.md))
 - [如何在 React 项目中使用 MQTT](https://www.emqx.com/zh/blog/how-to-use-mqtt-in-react) ([Edit](https://github.com/emqx/blog/blob/main/zh/202010/how-to-use-mqtt-in-react.md))
 - [使用 WebSocket 连接 MQTT 服务器](https://www.emqx.com/zh/blog/connect-to-mqtt-broker-with-websocket) ([Edit](https://github.com/emqx/blog/blob/main/zh/202009/connect-to-mqtt-broker-with-websocket.md))
-- [Python MQTT 客户端对比](https://www.emqx.com/zh/blog/comparision-of-python-mqtt-client) ([Edit](https://github.com/emqx/blog/blob/main/zh/202009/comparision-of-python-mqtt-client.md))
 - [如何在 Vue 项目中使用 MQTT](https://www.emqx.com/zh/blog/how-to-use-mqtt-in-vue) ([Edit](https://github.com/emqx/blog/blob/main/zh/202009/how-to-use-mqtt-in-vue.md))
 - [如何在 Golang 中使用 MQTT](https://www.emqx.com/zh/blog/how-to-use-mqtt-in-golang) ([Edit](https://github.com/emqx/blog/blob/main/zh/202009/how-to-use-mqtt-in-golang.md))
 - [在树莓派上使用 MQTT](https://www.emqx.com/zh/blog/use-mqtt-with-raspberry-pi) ([Edit](https://github.com/emqx/blog/blob/main/zh/202008/use-mqtt-with-raspberry-pi.md))
@@ -206,6 +206,7 @@ Explore more with & via EMQ.
 ## [EMQX Open Source | Broker](https://www.emqx.com/zh/blog/category/emqx)
 EMQX is the world's most scalable open-source MQTT broker with a high performance that connects 100M+ IoT devices in 1 cluster, while maintaining 1M message per second throughput and sub-millisecond latency.
 
+- [客户端异常离线？EMQX 实时告警直达企业微信、钉钉和飞书](https://www.emqx.com/zh/blog/emqx-realtime-alerts-wechat-dingtalk-feishu) ([Edit](https://github.com/emqx/blog/blob/main/zh/202509/emqx-realtime-alerts-wechat-dingtalk-feishu.md))
 - [多云集群与跨云迁移：通过集群连接摆脱云供应商锁定](https://www.emqx.com/zh/blog/multi-cloud-clusters-and-cross-cloud-migration) ([Edit](https://github.com/emqx/blog/blob/main/zh/202508/multi-cloud-clusters-and-cross-cloud-migration.md))
 - [200 万 WebSocket 连接测试：EMQX 并发性能深度解析](https://www.emqx.com/zh/blog/a-deep-dive-into-emqx-s-websocket-performance) ([Edit](https://github.com/emqx/blog/blob/main/zh/202507/a-deep-dive-into-emqx-s-websocket-performance.md))
 - [突破连接边界：EMQX 实现 MQTT 和 NATS 协议双向互通](https://www.emqx.com/zh/blog/emqx-nats-gateway) ([Edit](https://github.com/emqx/blog/blob/main/zh/202507/emqx-nats-gateway.md))
@@ -618,6 +619,7 @@ MQTTX is a Fully Open-source MQTT 5.0 cross-platform Desktop Client, makes it ea
 ## [Neuron - IIoT Connectivity Server](https://www.emqx.com/zh/blog/category/neuron)
 IoT edge industrial protocol gateway software, which supports one-stop access to dozens of industrial protocols and converts them into MQTT protocol to access the cloud industrial IoT platform. It just requires ultra-low resource consumption, and supports three major architectures of X86, ARM, and MIPS.
 
+- [10 分钟快速入门：使用 NeuronEX 将西门子 S7-1200 PLC 数据接入 MQTT](https://www.emqx.com/zh/blog/connecting-siemens-s7-1200-plc-to-mqtt) ([Edit](https://github.com/emqx/blog/blob/main/zh/202509/connecting-siemens-s7-1200-plc-to-mqtt.md))
 - [NeuronEX 最佳实践：实现 MySQL 与 IIoT 平台的高效数据同步](https://www.emqx.com/zh/blog/neuronex-best-bractices) ([Edit](https://github.com/emqx/blog/blob/main/zh/202508/neuronex-best-bractices.md))
 - [NeuronEX 3.6.0 发布：从统一数据采集到智能数据洞察](https://www.emqx.com/zh/blog/neuronex-v-3-6-0-release-notes) ([Edit](https://github.com/emqx/blog/blob/main/zh/202506/neuronex-v-3-6-0-release-notes.md))
 - [NeuronEX 设备反控功能实践指南](https://www.emqx.com/zh/blog/neuronex-device-control) ([Edit](https://github.com/emqx/blog/blob/main/zh/202504/neuronex-device-control.md))
