@@ -59,9 +59,9 @@ Ultimately, you will achieve experiences like:
 | 1           | **Overview: Background + Environment Setup + Device Online** | ★              |
 | 2           | [From "Command-Based" to "Semantic Control": MCP over MQTT Encapsulation of Device Capabilities](https://www.emqx.com/en/blog/esp32-and-mcp-over-mqtt-2) | ★★             |
 | 3           | [Integrating LLM for "Natural Language → Device Control"](https://www.emqx.com/en/blog/esp32-and-mcp-over-mqtt-3) | ★★             |
-| 4           | Voice I/O: Microphone Data Upload + Speech Recognition + Speech Synthesis Playback | ★★★            |
-| 5           | Persona, Emotion, Memory: From "Controller" to "Companion"   | ★★★            |
-| 6           | Giving the AI "Eyes": Image Acquisition + Multimodal Understanding | ★★★            |
+| 4           | [Voice I/O: Microphone Data Upload + Speech Recognition + Speech Synthesis Playback](https://www.emqx.com/en/blog/esp32-and-mcp-over-mqtt-4) | ★★★            |
+| 5           | [Persona, Emotion, Memory: From "Controller" to "Companion"](https://www.emqx.com/en/blog/esp32-and-mcp-over-mqtt-5)   | ★★★            |
+| 6           | [Giving the AI "Eyes": Image Acquisition + Multimodal Understanding](https://www.emqx.com/en/blog/esp32-and-mcp-over-mqtt-6) | ★★★            |
 
 
 ## Tech Stack at a Glance
