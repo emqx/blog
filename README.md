@@ -221,6 +221,7 @@ Explore more with & via EMQ.
 ## [EMQX Open Source | Broker](https://www.emqx.com/en/blog/category/emqx)
 EMQX is the world's most scalable open-source MQTT broker with a high performance that connects 100M+ IoT devices in 1 cluster, while maintaining 1M message per second throughput and sub-millisecond latency.
 
+- [EMQX Edge 1.1.0 Released: Windows Support, Revamped HTTP Framework, and Enhanced Logging](https://www.emqx.com/en/blog/emqx-edge-1-1-0-released) ([Edit](https://github.com/emqx/blog/blob/main/en/202509/emqx-edge-1-1-0-released.md))
 - [The IoT Interoperability Challenge: How to Unify Your Device Data with EMQX](https://www.emqx.com/en/blog/the-iot-interoperability-challenge) ([Edit](https://github.com/emqx/blog/blob/main/en/202509/the-iot-interoperability-challenge.md))
 - [Real-Time IoT Data Visibility: Building Traffic Mirroring with EMQX Cluster Linking](https://www.emqx.com/en/blog/building-traffic-mirroring-with-emqx-cluster-linking) ([Edit](https://github.com/emqx/blog/blob/main/en/202509/building-traffic-mirroring-with-emqx-cluster-linking.md))
 - [Leveraging EMQX Cluster Linking for a Smooth Hybrid Cloud Migration](https://www.emqx.com/en/blog/leveraging-emqx-cluster-linking-for-a-smooth-hybrid-cloud-migration) ([Edit](https://github.com/emqx/blog/blob/main/en/202508/leveraging-emqx-cluster-linking-for-a-smooth-hybrid-cloud-migration.md))
