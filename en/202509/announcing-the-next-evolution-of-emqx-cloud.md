@@ -34,6 +34,9 @@ To support our expanded, multi-service platform, we have completely redesigned t
 - **Project-Centric Workflow:** The console is now organized around projects. Within a single project, you can create and manage multiple services, such as your EMQX Broker and the upcoming EMQX Tables.
 - **Seamless Service Integration:** Services created within the same project are designed to work together seamlessly, simplifying data flow and integration.
 
+![2f7c45c99afe14897aa739f95580f16d.jpg](https://assets.emqx.com/images/082661ff6719091e4f9d69c3879a532c.jpg)
+
+
 ## A New Chapter for EMQX Cloud
 
 This release represents more than feature updates. It's the beginning of EMQX Cloud's transformation from a managed MQTT broker to a comprehensive MQTT data platform. By combining flexible connectivity options, integrated data storage, and unified management, we're enabling organizations to focus on innovation rather than infrastructure.
