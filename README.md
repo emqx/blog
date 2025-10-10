@@ -643,6 +643,7 @@ MQTTX is a Fully Open-source MQTT 5.0 cross-platform Desktop Client, makes it ea
 ## [Neuron - IIoT Connectivity Server](https://www.emqx.com/en/blog/category/neuron)
 IoT edge industrial protocol gateway software, which supports one-stop access to dozens of industrial protocols and converts them into MQTT protocol to access the cloud industrial IoT platform. It just requires ultra-low resource consumption, and supports three major architectures of X86, ARM, and MIPS.
 
+- [Unlock Industrial Insights with NeuronEX's AI-Powered Data Analysis Feature: A User Guide](https://www.emqx.com/en/blog/unlock-industrial-insights-with-neuronex) ([Edit](https://github.com/emqx/blog/blob/main/en/202510/unlock-industrial-insights-with-neuronex.md))
 - [Connecting Siemens S7-1200 PLC to MQTT in 10 Minutes with NeuronEX](https://www.emqx.com/en/blog/connecting-siemens-s7-1200-plc-to-mqtt) ([Edit](https://github.com/emqx/blog/blob/main/en/202508/connecting-siemens-s7-1200-plc-to-mqtt.md))
 - [NeuronEX Best Practice: Achieving Efficient Data Synchronization from MySQL to Your IIoT Platform](https://www.emqx.com/en/blog/neuronex-best-bractices) ([Edit](https://github.com/emqx/blog/blob/main/en/202508/neuronex-best-bractices.md))
 - [Beyond Kepware: 5 Ways NeuronEX Redefines Industrial Connectivity in Cloud + AI Agent Era](https://www.emqx.com/en/blog/neuronex-vs-kepware) ([Edit](https://github.com/emqx/blog/blob/main/en/202508/neuronex-vs-kepware.md))
