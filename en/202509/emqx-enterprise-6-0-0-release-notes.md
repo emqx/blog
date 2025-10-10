@@ -13,13 +13,13 @@ Unlike traditional MQTT, which relies on subscriber availability, Message Queues
 ### **Key Benefits:**
 
 - **Unified MQTT and Queuing**: Combines MQTT’s lightweight pub/sub with enterprise-grade message queuing, eliminating the need for external systems like RabbitMQ or Kafka.
-- **Last Value Queues**: Optionally retains only the latest message per key (e.g., device ID), ideal for tracking fast-changing states like sensor readings or device configurations.
+- **Last-Value Semantics**: Optionally retains only the latest message per key (e.g., device ID), ideal for tracking fast-changing states like sensor readings or device configurations.
 - **Flexible Dispatch**: Offers configurable strategies (Random, Round Robin, or Least Inflight Subscriber) to optimize message distribution across multiple clients.
 - **Guaranteed Delivery**: Ensures no data loss during subscriber disconnections or network disruptions, perfect for unreliable networks in IoT deployments.
 
 ### **Example Use Case**:
 
-In a smart agriculture system, soil sensor data published to `farm/+/sensors` is stored in a Message Queue. A monitoring application subscribes to `$q/farm/+/sensors` to retrieve all readings, including those from offline periods. With Last Value Queues enabled, only the latest sensor data per device is retained, simplifying data processing for irrigation decisions.
+In a smart agriculture system, soil sensor data published to `farm/+/sensors` is stored in a Message Queue. A monitoring application subscribes to `$q/farm/+/sensors` to retrieve all readings, including those from offline periods. With Last-Value Semantics enabled, only the latest sensor data per device is retained, simplifying data processing for irrigation decisions.
 
 *Learn more about* [*Message Queue*](https://docs.emqx.com/en/emqx/latest/message-queue/message-queue-concept.html)*.* 
 
@@ -60,7 +60,7 @@ For example, in a smart grid, millions of meter readings are stored durably. The
 
 ## New and Enhanced Data Integrations
 
-In EMQX 6.0.0, the data integration expands with support for [AWS AlloyDB](https://docs.emqx.com/en/emqx/latest/data-integration/alloydb.html), [CockroachDB](https://docs.emqx.com/en/emqx/latest/data-integration/cockroachdb.html), [AWS Redshift](https://docs.emqx.com/en/emqx/latest/data-integration/redshift.html), and [BigQuery](https://docs.emqx.com/en/emqx/latest/data-integration/bigquery.html), alongside enhancements to existing connectors for Snowflake, RocketMQ, S3 Tables, and RabbitMQ.
+In EMQX 6.0.0, the data integration expands with support for [AWS AlloyDB](https://docs.emqx.com/en/emqx/latest/data-integration/alloydb.html), [CockroachDB](https://docs.emqx.com/en/emqx/latest/data-integration/cockroachdb.html), [AWS Redshift](https://docs.emqx.com/en/emqx/latest/data-integration/redshift.html), and [BigQuery](https://docs.emqx.com/en/emqx/latest/data-integration/bigquery.html), alongside enhancements to existing integrations for Snowflake, RocketMQ, S3 Tables, and RabbitMQ.
 
 ### New Supported Integrations
 
