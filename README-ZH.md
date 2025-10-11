@@ -206,6 +206,7 @@ Explore more with & via EMQ.
 ## [EMQX Open Source | Broker](https://www.emqx.com/zh/blog/category/emqx)
 EMQX is the world's most scalable open-source MQTT broker with a high performance that connects 100M+ IoT devices in 1 cluster, while maintaining 1M message per second throughput and sub-millisecond latency.
 
+- [EMQX 6.0.0 新特性：融合 MQTT 与消息队列，开启消息传输新纪元](https://www.emqx.com/zh/blog/emqx-enterprise-6-0-0-release-notes) ([Edit](https://github.com/emqx/blog/blob/main/zh/202510/emqx-enterprise-6-0-0-release-notes.md))
 - [客户端异常离线？EMQX 实时告警直达企业微信、钉钉和飞书](https://www.emqx.com/zh/blog/emqx-realtime-alerts-wechat-dingtalk-feishu) ([Edit](https://github.com/emqx/blog/blob/main/zh/202509/emqx-realtime-alerts-wechat-dingtalk-feishu.md))
 - [多云集群与跨云迁移：通过集群连接摆脱云供应商锁定](https://www.emqx.com/zh/blog/multi-cloud-clusters-and-cross-cloud-migration) ([Edit](https://github.com/emqx/blog/blob/main/zh/202508/multi-cloud-clusters-and-cross-cloud-migration.md))
 - [200 万 WebSocket 连接测试：EMQX 并发性能深度解析](https://www.emqx.com/zh/blog/a-deep-dive-into-emqx-s-websocket-performance) ([Edit](https://github.com/emqx/blog/blob/main/zh/202507/a-deep-dive-into-emqx-s-websocket-performance.md))
@@ -619,6 +620,7 @@ MQTTX is a Fully Open-source MQTT 5.0 cross-platform Desktop Client, makes it ea
 ## [Neuron - IIoT Connectivity Server](https://www.emqx.com/zh/blog/category/neuron)
 IoT edge industrial protocol gateway software, which supports one-stop access to dozens of industrial protocols and converts them into MQTT protocol to access the cloud industrial IoT platform. It just requires ultra-low resource consumption, and supports three major architectures of X86, ARM, and MIPS.
 
+- [NeuronEX 数据分析功能使用指南](https://www.emqx.com/zh/blog/unlock-industrial-insights-with-neuronex) ([Edit](https://github.com/emqx/blog/blob/main/zh/202510/unlock-industrial-insights-with-neuronex.md))
 - [10 分钟快速入门：使用 NeuronEX 将西门子 S7-1200 PLC 数据接入 MQTT](https://www.emqx.com/zh/blog/connecting-siemens-s7-1200-plc-to-mqtt) ([Edit](https://github.com/emqx/blog/blob/main/zh/202509/connecting-siemens-s7-1200-plc-to-mqtt.md))
 - [NeuronEX 最佳实践：实现 MySQL 与 IIoT 平台的高效数据同步](https://www.emqx.com/zh/blog/neuronex-best-bractices) ([Edit](https://github.com/emqx/blog/blob/main/zh/202508/neuronex-best-bractices.md))
 - [NeuronEX 3.6.0 发布：从统一数据采集到智能数据洞察](https://www.emqx.com/zh/blog/neuronex-v-3-6-0-release-notes) ([Edit](https://github.com/emqx/blog/blob/main/zh/202506/neuronex-v-3-6-0-release-notes.md))
