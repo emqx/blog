@@ -7,6 +7,7 @@
 ## [MQTT Tutorials](https://www.emqx.com/en/blog/category/mqtt-protocol)
 Get to know the preferred protocol in IoT from beginner to master.
 
+- [MQTT vs. MQ: A Guide to Choosing the Right Messaging Platform](https://www.emqx.com/en/blog/mqtt-vs-mq) ([Edit](https://github.com/emqx/blog/blob/main/en/202510/mqtt-vs-mq.md))
 - [MQTT QoS 0, 1, 2 Explained: A Quickstart Guide](https://www.emqx.com/en/blog/introduction-to-mqtt-qos) ([Edit](https://github.com/emqx/blog/blob/main/en/202508/introduction-to-mqtt-qos.md))
 - [MQTT vs WebSocket: Key Differences & Applications](https://www.emqx.com/en/blog/mqtt-vs-websocket) ([Edit](https://github.com/emqx/blog/blob/main/en/202507/mqtt-vs-websocket.md))
 - [MQTT 5.0: 7 New Features and a Migration Checklist](https://www.emqx.com/en/blog/introduction-to-mqtt-5) ([Edit](https://github.com/emqx/blog/blob/main/en/202506/introduction-to-mqtt-5.md))
