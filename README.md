@@ -793,6 +793,7 @@ Guarantee the availability and reliability of the IoT platform.
 
 ## [Use Cases](https://www.emqx.com/en/blog/category/use-cases)
 
+- [Revolutionizing ESG and Carbon Footprint Reporting with a Unified Namespace](https://www.emqx.com/en/blog/unified-namespace-esg-carbon-reporting) ([Edit](https://github.com/emqx/blog/blob/main/en/202510/unified-namespace-esg-carbon-reporting.md))
 - [Diving into EMQX's UNS Solution for calculating OEE in Food Manufacturing through a Case Study](https://www.emqx.com/en/blog/diving-into-emq-s-uns-solution) ([Edit](https://github.com/emqx/blog/blob/main/en/202509/diving-into-emq-s-uns-solution.md))
 - [EMQX + AutoMQ: The Hybrid Cloud Engine Behind Geely’s Connected Vehicle Innovation](https://www.emqx.com/en/blog/emqx-and-automq) ([Edit](https://github.com/emqx/blog/blob/main/en/202505/emqx-and-automq.md))
 - [Smart Water Plant: IoT and AI-Driven Efficiency for Modern Utilities](https://www.emqx.com/en/blog/smart-water-use-case) ([Edit](https://github.com/emqx/blog/blob/main/en/202505/smart-water-use-case.md))
