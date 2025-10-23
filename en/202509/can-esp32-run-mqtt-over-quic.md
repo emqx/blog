@@ -74,13 +74,13 @@ These figures show that the application operates efficiently within the ESP32C3â
 To try this project yourself, follow these steps to set up and run MQTT over QUIC on your ESP32C3 board:
 
 1. **Verify Requirements**: Ensure you have an ESP32C3 board with at least 2MB flash, a USB cable, ESP-IDF installed, and Git for cloning the repository.
-2. **Set Up Environment**: Follow the ESP-IDF Getting Started Guide to install ESP-IDF and set environment variables (e.g., export IDF_PATH=/path/to/esp-idf).
-3. **Clone Repository**: Run git clone [GitHub - emqx/ESP32-QUIC: PoC for ESP32 running QUIC client](https://github.com/emqx/ESP32-QUIC) and, if submodules are present, git submodule update --init --recursive.
-4. **Apply Patches**: Navigate to components/ngtcp2 and apply patches, e.g., git apply ../../patches/ngtcp2.patch.
-5. **Configure Project**: Edit sdkconfig to set WiFi SSID, password, and EMQX server address. Use idf.py menuconfig for additional settings.
-6. **Build Project**: Run idf.py build in the project directory to compile the code.
-7. **Flash Firmware**: Connect the ESP32C3 via USB, identify the serial port (e.g., /dev/ttyUSB0), and flash with idf.py -p PORT flash.
-8. **Monitor Application**: Use idf.py -p PORT monitor to view logs, checking for successful WiFi, QUIC, and MQTT operations.
+2. **Set Up Environment**: Follow the ESP-IDF Getting Started Guide to install ESP-IDF and set environment variables (e.g., `export IDF_PATH=/path/to/esp-idf`).
+3. **Clone Repository**: Run `git clone https://github.com/emqx/ESP32-QUIC` and, if submodules are present, `git submodule update --init --recursive`.
+4. **Apply Patches**: Navigate to components/ngtcp2 and apply patches, e.g., `git apply ../../patches/ngtcp2.patch`.
+5. **Configure Project**: Edit sdkconfig to set WiFi SSID, password, and EMQX server address. Use `idf.py menuconfig` for additional settings.
+6. **Build Project**: Run `idf.py build` in the project directory to compile the code.
+7. **Flash Firmware**: Connect the ESP32C3 via USB, identify the serial port (e.g., `/dev/ttyUSB0`), and flash with `idf.py -p PORT flash`.
+8. **Monitor Application**: Use `idf.py -p PORT monitor` to view logs, checking for successful WiFi, QUIC, and MQTT operations.
 9. **Troubleshoot**: Verify WiFi credentials, ensure EMQX is accessible, and check logs for memory issues if connections fail.
 
 For detailed instructions, visit our repository at: [GitHub - emqx/ESP32-QUIC: PoC for ESP32 running QUIC client](https://github.com/emqx/ESP32-QUIC).
