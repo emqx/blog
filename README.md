@@ -222,6 +222,7 @@ Explore more with & via EMQ.
 ## [EMQX Open Source | Broker](https://www.emqx.com/en/blog/category/emqx)
 EMQX is the world's most scalable open-source MQTT broker with a high performance that connects 100M+ IoT devices in 1 cluster, while maintaining 1M message per second throughput and sub-millisecond latency.
 
+- [How EMQX Cloud Weathered the AWS us-east-1 Storm: Lessons in Building Resilient IoT Infrastructure](https://www.emqx.com/en/blog/how-emqx-cloud-weathered-the-aws-us-east-1-storm) ([Edit](https://github.com/emqx/blog/blob/main/en/202510/how-emqx-cloud-weathered-the-aws-us-east-1-storm.md))
 - [Understanding IoT Connectivity: How EMQX Connects Millions of Devices](https://www.emqx.com/en/blog/understanding-iot-connectivity) ([Edit](https://github.com/emqx/blog/blob/main/en/202510/understanding-iot-connectivity.md))
 - [Transforming Smart Hardware with EMQX: Perception, Understanding, Interaction, and Action](https://www.emqx.com/en/blog/transforming-smart-hardware-with-emqx) ([Edit](https://github.com/emqx/blog/blob/main/en/202510/transforming-smart-hardware-with-emqx.md))
 - [What's New in EMQX 6.0.0: Unifying MQTT and Message Queuing for a New Era of Messaging](https://www.emqx.com/en/blog/emqx-enterprise-6-0-0-release-notes) ([Edit](https://github.com/emqx/blog/blob/main/en/202509/emqx-enterprise-6-0-0-release-notes.md))
