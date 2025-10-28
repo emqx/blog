@@ -104,13 +104,13 @@ MCP over MQTT 方案将底层网络协议从 HTTP + SSE 转换为 MQTT，显著�
 
 ### 内置代理方案
 
-![内置代理方案](https://assets.emqx.com/images/e257a92fe82dadb4d633515a23fa605f.png)
+![020442bc15b48d16db678dac2ec06afc.png](https://assets.emqx.com/images/baebf264ddc7fabf4d79bf06c02830e1.png)
 
 代理方案相较于外置方案，核心改进在于将 MCP Server 直接集成到 EMQX 内部运行，并提供一些内置的工具和能力来提升系统性能（而非减少 EMQX 和 MCP Server 之间跨越的节点数）。同时，由于 MCP Server 作为 EMQX 的内置组件运行，显著降低了运维复杂度，使得 MCP Server 应用的开发和管理更加便捷高效。
 
 ### 原生（Native）方案
 
-![原生（Native）方案](https://assets.emqx.com/images/088576c772b114a49a782a60449dea8f.png)
+![e45d9bb0b71dbe2fc6248eaac9b81cbd.png](https://assets.emqx.com/images/e3c321a90f57a369f443a0368ba6ff88.png)
 
 原生方案面向具备高性能计算和存储能力的高附加值新型设备（如智能汽车、3D 打印机等），通过在设备端原生集成 MCP 服务，直接采用 MCP over MQTT 协议与 EMQX 建立通信连接。该方案中，MCP Client 通过标准化的 MCP over MQTT 协议直接与设备端的 MCP Server 进行交互，实现端到端的智能化控制。例如：
 
