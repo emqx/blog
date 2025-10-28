@@ -111,7 +111,7 @@ The main advantage of this solution is that **existing IoT devices require no mo
 
 ### **Internal Proxy Solution**
 
-![image.png](https://assets.emqx.com/images/21a0020e1593bbf03ab51d917d2644dc.png)
+![020442bc15b48d16db678dac2ec06afc.png](https://assets.emqx.com/images/599b6a9b455343d3e394c99ef1f9f1e6.png)
 
 The **Internal Proxy** solution improves upon the external proxy approach by directly integrating the **MCP Server** into **EMQX**. This integration provides several built-in tools and capabilities that enhance system performance, rather than simply reducing the number of nodes between **EMQX** and the **MCP Server**.
 
@@ -119,7 +119,8 @@ Additionally, since the **MCP Server** operates as an internal component of **EM
 
 ### Native Solution
 
-![image.png](https://assets.emqx.com/images/06f1c4318b66d1cd41e06e55e39ceccd.png)
+
+![e45d9bb0b71dbe2fc6248eaac9b81cbd.png](https://assets.emqx.com/images/23b6d739cf9724be3a9ba11e7cd7f165.png)
 
 The **Native Solution** is designed for high-performance, high-value devices (such as smart cars, 3D printers, etc.) with strong computing and storage capabilities. This approach integrates **MCP** services natively into the device, allowing direct communication with **EMQX** using the **MCP over MQTT** protocol. In this solution, the **MCP Client** interacts directly with the **MCP Server** on the device through the standardized **MCP over MQTT** protocol, enabling end-to-end intelligent control.
 
