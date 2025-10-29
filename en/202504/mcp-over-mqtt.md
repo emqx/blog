@@ -99,7 +99,7 @@ By replacing **HTTP + SSE** with **MQTT** at the transport layer, MCP over MQTT 
 
 ### **External Proxy Solution**
 
-![image.png](https://assets.emqx.com/images/229c17c2ab27546f059d9c1d6344188c.png)
+![cc4949a1e44298881b8dcfa2ec64d646.png](https://assets.emqx.com/images/1d0d594eebbc2f143319edc897da4527.png)
 
 - **MCP Server (Device Proxy)**
   - Devices upload data to **EMQX** using the **MQTT** protocol. The **MCP Server** subscribes to relevant topics to obtain device information, then exposes the uploaded data using **MCP resources** or **tools**.

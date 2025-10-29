@@ -460,6 +460,7 @@ The world's most scalable and reliable MQTT messaging platform to connect, move 
 ## [Internet of Vehicles | Connected Cars](https://www.emqx.com/zh/blog/category/internet-of-vehicles)
 Build a reliable, efficient and industry-specific Internet of Vehicles platform based on EMQ's practical experience, from theoretical knowledge such as protocol selection to practical operations like platform architecture design.
 
+- [应邀演讲：横跨日韩两大汽车软件盛会，实战解析软件定义汽车的开源安全与落地](https://www.emqx.com/zh/blog/oss-sdv-safety-and-deployment-in-japan-korea-summits) ([Edit](https://github.com/emqx/blog/blob/main/zh/202510/oss-sdv-safety-and-deployment-in-japan-korea-summits.md))
 - [驶向智能未来：车载 MCP 服务与边缘计算驱动的驾驶数据交互新体验](https://www.emqx.com/zh/blog/mcp-over-mqtt-for-intelligent-vehicle-data-insights) ([Edit](https://github.com/emqx/blog/blob/main/zh/202505/mcp-over-mqtt-for-intelligent-vehicle-data-insights.md))
 - [EMQX Serverless 助力智能车机系统开放性发展](https://www.emqx.com/zh/blog/emqx-boosts-the-development-of-intelligent-vehicle-systems) ([Edit](https://github.com/emqx/blog/blob/main/zh/202408/emqx-boosts-the-development-of-intelligent-vehicle-systems.md))
 - [Vehicle + UNS : 为 SDV 提供全生命周期的数据可互操作性](https://www.emqx.com/zh/blog/vehicle-and-uns) ([Edit](https://github.com/emqx/blog/blob/main/zh/202407/vehicle-and-uns.md))

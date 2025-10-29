@@ -222,6 +222,7 @@ Explore more with & via EMQ.
 ## [EMQX Open Source | Broker](https://www.emqx.com/en/blog/category/emqx)
 EMQX is the world's most scalable open-source MQTT broker with a high performance that connects 100M+ IoT devices in 1 cluster, while maintaining 1M message per second throughput and sub-millisecond latency.
 
+- [Solving Real-World IoT Messaging Challenges with EMQX Message Queues](https://www.emqx.com/en/blog/solving-real-world-iot-messaging-challenges-with-emqx) ([Edit](https://github.com/emqx/blog/blob/main/en/202510/solving-real-world-iot-messaging-challenges-with-emqx.md))
 - [One Broker, Two Paradigms: Real-Time MQTT Pub/Sub and Durable Queues, Natively in EMQX](https://www.emqx.com/en/blog/real-time-mqtt-pub-sub-and-durable-queues-natively-in-emqx) ([Edit](https://github.com/emqx/blog/blob/main/en/202510/real-time-mqtt-pub-sub-and-durable-queues-natively-in-emqx.md))
 - [How EMQX Cloud Weathered the AWS us-east-1 Storm: Lessons in Building Resilient IoT Infrastructure](https://www.emqx.com/en/blog/how-emqx-cloud-weathered-the-aws-us-east-1-storm) ([Edit](https://github.com/emqx/blog/blob/main/en/202510/how-emqx-cloud-weathered-the-aws-us-east-1-storm.md))
 - [Understanding IoT Connectivity: How EMQX Connects Millions of Devices](https://www.emqx.com/en/blog/understanding-iot-connectivity) ([Edit](https://github.com/emqx/blog/blob/main/en/202510/understanding-iot-connectivity.md))
@@ -796,6 +797,7 @@ Guarantee the availability and reliability of the IoT platform.
 
 ## [Use Cases](https://www.emqx.com/en/blog/category/use-cases)
 
+- [Connecting 3D Printers to Cloud with MQTT and EMQX for Personal Manufacturing](https://www.emqx.com/en/blog/connecting-3d-printers-to-cloud-with-mqtt-and-emqx) ([Edit](https://github.com/emqx/blog/blob/main/en/202510/connecting-3d-printers-to-cloud-with-mqtt-and-emqx.md))
 - [Revolutionizing ESG and Carbon Footprint Reporting with a Unified Namespace](https://www.emqx.com/en/blog/unified-namespace-esg-carbon-reporting) ([Edit](https://github.com/emqx/blog/blob/main/en/202510/unified-namespace-esg-carbon-reporting.md))
 - [Diving into EMQX's UNS Solution for calculating OEE in Food Manufacturing through a Case Study](https://www.emqx.com/en/blog/diving-into-emq-s-uns-solution) ([Edit](https://github.com/emqx/blog/blob/main/en/202509/diving-into-emq-s-uns-solution.md))
 - [EMQX + AutoMQ: The Hybrid Cloud Engine Behind Geely’s Connected Vehicle Innovation](https://www.emqx.com/en/blog/emqx-and-automq) ([Edit](https://github.com/emqx/blog/blob/main/en/202505/emqx-and-automq.md))
