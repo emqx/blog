@@ -91,7 +91,7 @@ MCP over MQTT 方案将底层网络协议从 HTTP + SSE 转换为 MQTT，显著�
 
 ### 外置代理方案
 
-![外置代理](https://assets.emqx.com/images/db9e69635141de88512370949e026576.png)
+![cc4949a1e44298881b8dcfa2ec64d646.png](https://assets.emqx.com/images/a3ef3e4f856b694611c871be8ec85cd5.png)
 
 - MCP Server（Device 代理）
   - 设备通过 MQTT 协议把数据上报给 EMQX，MCP Server 通过订阅相关主题获得设备信息，并利用 MCP 提供的资源（resources）或者工具（tools）将上传的数据暴露出来。
