@@ -107,13 +107,13 @@ openssl x509 -req -in ./emqx.csr -CA ca.pem -CAkey ca.key -CAcreateserial -out e
 
 查看 EMQX 实体证书（可选）：
 
-```bash
+```shell
 openssl x509 -in emqx.pem -noout -text
 ```
 
 验证 EMQX 实体证书，确定证书是否正确:
 
-```bash
+```shell
 $ openssl verify -CAfile ca.pem emqx.pem
 emqx.pem: OK
 ```

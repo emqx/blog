@@ -45,13 +45,13 @@ In out tutorial, we will use [Random Integer Device Service](https://github.com/
 
 Go to [EdgeX develop-scripts project](https://github.com/edgexfoundry/developer-scripts/tree/master/releases), and download related Docker compose file for Geneva release, then bring up EdgeX Docker instances.
 
-```bash
+```sh
 $ docker-compose -f ./docker-compose-nexus-redis-no-secty.yml up -d --build
 ```
 
 After all of the Docker instances are started, you can use `docker ps` command to verify all of services are running correctly.
 
-```bash
+```sh
 $ docker ps
 CONTAINER ID        IMAGE                                                                  COMMAND                  CREATED             STATUS              PORTS                                                                                              NAMES
 5618c93027a9        nexus3.edgexfoundry.org:10004/docker-device-virtual-go:master          "/device-virtual --p…"   37 minutes ago      Up 37 minutes       0.0.0.0:49990->49990/tcp                                                                           edgex-device-virtual
@@ -80,7 +80,7 @@ Notice: Rest API of Kuiper in EdgeX uses `48075` instead of default `9081`. So p
 
 The next step is to create a stream that can consume data from EdgeX message bus. Please change `$kuiper_docker` to Kuiper docker instance IP address.
 
-```bash
+```sh
 curl -X POST \
   http://$kuiper_docker:48075/streams \
   -H 'Content-Type: application/json' \
@@ -95,13 +95,13 @@ For other Rest APIs, please refer to [this doc](https://github.com/lf-edge/ekuip
 
 Run following command to enter the running Kuiper docker instance.
 
-```bash
+```sh
 docker exec -it edgex-kuiper /bin/sh
 ```
 
 Use following command to create a stream named `demo`.
 
-```bash
+```sh
 bin/cli create stream demo'() WITH (FORMAT="JSON", TYPE="edgex")'
 ```
 
@@ -135,7 +135,7 @@ So the below rule will get all of values from `event` topic. The sink result wil
 
 #### Option 1: Use Rest API
 
-```
+```sh
 curl -X POST \
   http://$kuiper_server:48075/rules \
   -H 'Content-Type: application/json' \
@@ -161,7 +161,7 @@ curl -X POST \
 
 You can create a rule file with any text editor, and copy following contents into it. Let's say the file name is `rule.txt`.
 
-```
+```json
 {
   "sql": "SELECT * from demo",
   "actions": [
@@ -212,7 +212,7 @@ time="2020-04-17T06:32:31Z" level=info msg="sink result for rule rule1: [{\"bool
 
 Since all of the analysis result are published to `tcp://broker.emqx.io:1883`, so you can just use below `mosquitto_sub` command to monitor the result. You can also use other [MQTT client tools](https://www.emqx.com/en/blog/mqtt-client-tools).
 
-```
+```sh
 $ mosquitto_sub -h broker.emqx.io -t result
 [{"bool":true}]
 [{"bool":false}]
