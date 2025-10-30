@@ -35,12 +35,12 @@ In previous versions, MQTTX CLI would automatically disconnect and exit if the M
 
 ![MQTT CLI](https://assets.emqx.com/images/5c65e7ea10826afdd4a424bdb2fd2134.png)
 
-The number of reconnection attempts is limited, and once this maximum is reached, MQTTX CLI will exit to prevent further attempts. The number of attempts is set to 10 by default, but this can be adjusted using the `-maximun-reconnect-times` option.
+The number of reconnection attempts is limited, and once this maximum is reached, MQTTX CLI will exit to prevent further attempts. The number of attempts is set to 10 by default, but this can be adjusted using the `--maximum-reconnect-times` option.
 
 ```sh
 # For example, change the number of attempts to 5
 
-mqttx conn -h 'broker.emqx.io' -p 1883 --maximun-reconnect-times 5
+mqttx conn -h 'broker.emqx.io' -p 1883 --maximum-reconnect-times 5
 ```
 
 In addition to the number of attempts, we also add a configuration setting for the reconnect interval. If the MQTT server experiences an exception, MQTTX CLI will attempt to reconnect according to the reconnection interval measured in milliseconds. The interval is set to 1000 milliseconds by default, but this can be customized using the `-reconnect-period` option.
