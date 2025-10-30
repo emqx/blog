@@ -14,7 +14,7 @@ Internal load balancer is a service that distributes traffic on-demand in the in
 
 The NAT gateway offers network address translation services, which can provide the ability to access public network resources without the need for VPC peer-to-peer connectivity.
 
-> Note: Two features are only avaliable in the professional version.
+> Note: Two features are only available in the professional version.
 
 ## How to subscribe
 

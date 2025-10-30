@@ -8,7 +8,7 @@ Download the latest version: [Docker Hub](https://hub.docker.com/r/hstreamdb/hst
 
 ## Quick overview of the new version
 
-### Cluster mode support, and imporvements in horizontal scalability of HServer
+### Cluster mode support, and improvements in horizontal scalability of HServer
 
 HStreamDB v0.6 supports cluster mode of HServer. The cluster mode allows quick horizontal expansion, supports node health detection and failure recovery, and improves the fault tolerance and scalability of HStreamDB. Another feature worth mentioning is that HServer supports load balancing. By monitoring the real-time load status of nodes in the cluster, the load balancer will fairly assign the computing tasks to different nodes to realize the efficient use of cluster resources.
 

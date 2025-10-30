@@ -2,7 +2,7 @@
 
 Serverless services offer developers a hassle-free cloud solution, featuring an elastic infrastructure and a pay-as-you-go pricing model. This approach means that users only pay for the resources they actually use. However, there have been instances that highlight a potential downside: unexpected events such as DDoS attacks or unusual client connections can result in users facing unexpectedly high bills.
 
-Choosing the EMQX Platform Severless edition alleviates this concern. Thanks to its flexible pricing and cutting-edge Serverless MQTT technology, EMQX Serverless allows you to enjoy a seamless, advanced, fully-managed MQTT cloud service without financial surprises.
+Choosing the EMQX Platform Serverless edition alleviates this concern. Thanks to its flexible pricing and cutting-edge Serverless MQTT technology, EMQX Serverless allows you to enjoy a seamless, advanced, fully-managed MQTT cloud service without financial surprises.
 
 ## Understanding the Billing Model of EMQX Serverless
 

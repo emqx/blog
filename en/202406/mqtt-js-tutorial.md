@@ -43,8 +43,8 @@ yarn add mqtt
 
 In the **browser**, you can also use a CDN to import MQTT.js. The bundle package of MQTT.js is managed by [http://unpkg.com](http://unpkg.com/), and you can directly add [unpkg.com/mqtt/dist/mqtt.min.js](https://unpkg.com/mqtt/dist/mqtt.min.js) to use it.
 
-```bash
-<script src="<https://unpkg.com/mqtt/dist/mqtt.min.js>"></script>
+```html
+<script src="https://unpkg.com/mqtt/dist/mqtt.min.js"></script>
 <script>
   // An mqtt variable will be initialized globally
   console.log(mqtt)

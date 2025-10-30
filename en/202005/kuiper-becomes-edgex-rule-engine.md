@@ -45,13 +45,13 @@ In out tutorial, we will use [Random Integer Device Service](https://github.com/
 
 Go to [EdgeX develop-scripts project](https://github.com/edgexfoundry/developer-scripts/tree/master/releases), and download related Docker compose file for Geneva release, then bring up EdgeX Docker instances.
 
-```
+```bash
 $ docker-compose -f ./docker-compose-nexus-redis-no-secty.yml up -d --build
 ```
 
 After all of the Docker instances are started, you can use `docker ps` command to verify all of services are running correctly.
 
-```
+```bash
 $ docker ps
 CONTAINER ID        IMAGE                                                                  COMMAND                  CREATED             STATUS              PORTS                                                                                              NAMES
 5618c93027a9        nexus3.edgexfoundry.org:10004/docker-device-virtual-go:master          "/device-virtual --p…"   37 minutes ago      Up 37 minutes       0.0.0.0:49990->49990/tcp                                                                           edgex-device-virtual
@@ -80,7 +80,7 @@ Notice: Rest API of Kuiper in EdgeX uses `48075` instead of default `9081`. So p
 
 The next step is to create a stream that can consume data from EdgeX message bus. Please change `$kuiper_docker` to Kuiper docker instance IP address.
 
-```
+```bash
 curl -X POST \
   http://$kuiper_docker:48075/streams \
   -H 'Content-Type: application/json' \
@@ -95,13 +95,13 @@ For other Rest APIs, please refer to [this doc](https://github.com/lf-edge/ekuip
 
 Run following command to enter the running Kuiper docker instance.
 
-```
+```bash
 docker exec -it edgex-kuiper /bin/sh
 ```
 
 Use following command to create a stream named `demo`.
 
-```
+```bash
 bin/cli create stream demo'() WITH (FORMAT="JSON", TYPE="edgex")'
 ```
 
@@ -273,7 +273,7 @@ Connecting to 127.0.0.1:20498...
 
 In this tutorial, we introduce a very simple use of EdgeX Kuiper rule engine. If having any issues regarding to use of Kuiper rule engine, you can open issues in EdgeX or Kuiper Github respository.
 
-## More Excecise
+## More Exercise
 
 Current rule does not filter any data that are sent to Kuiper, so how to filter data? Please [drop rule](https://github.com/lf-edge/ekuiper/blob/master/docs/en_US/cli/rules.md) and change the SQL in previous rule accordingly. After update the rule file, and then deploy the rule again. Please monitor the `result` topic of MQTT broker, and please verify see if the rule works or not.
 

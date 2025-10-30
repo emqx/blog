@@ -113,7 +113,7 @@ openssl x509 -in emqx.pem -noout -text
 
 验证 EMQX 实体证书，确定证书是否正确:
 
-```
+```bash
 $ openssl verify -CAfile ca.pem emqx.pem
 emqx.pem: OK
 ```

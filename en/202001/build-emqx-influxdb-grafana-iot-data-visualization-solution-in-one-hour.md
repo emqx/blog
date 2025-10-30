@@ -137,7 +137,7 @@ data/templates/emqx_backend_influxdb.tmpl
 
 Because MQTT Message cannot be written directly to InfluxDB, EMQX provides the emqx_backend_influxdb.tmpl template file to convert the MQTT Message into a DataPoint that can be written to InfluxDB:
 
-```bash
+```json
 {
   "devices/+/messages": {
     "measurement": "devices",
