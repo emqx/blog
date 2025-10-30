@@ -17,7 +17,7 @@ JavaScriptのシングルスレッド機能により、MQTT.jsは完全に非同
 
 NPMまたはYarnを使用してMQTT.jsをインストールするには、以下のコマンドを実行します：
 
-```
+```sh
 npm install mqtt --save
 
 # Alternatively, use yarn
@@ -30,8 +30,8 @@ yarn add mqtt
 
 ブラウザでは、CDNを利用してMQTT.jsをインポートすることもできます。MQTT.jsのバンドルパッケージは[http://unpkg.com](http://unpkg.com)、直接[unkg.com/mqtt/dist/mqtt.min.js](https://unpkg.com/mqtt/dist/mqtt.min.js)を追加して使用することができます。
 
-```
-<script src="<https://unpkg.com/mqtt/dist/mqtt.min.js>"></script>
+```html
+<script src="https://unpkg.com/mqtt/dist/mqtt.min.js"></script>
 <script>
   // An mqtt variable will be initialized globally
   console.log(mqtt)
@@ -44,7 +44,7 @@ yarn add mqtt
 
 NPMを使用してMQTT.jsをグローバルにインストールするには、以下のコマンドを実行します：
 
-```
+```sh
 npm install mqtt -g
 ```
 
@@ -56,7 +56,7 @@ npm install mqtt -g
 
   [EMQX](https://github.com/emqx/emqx)は、IoT、IIoT、コネクテッドビークルのための最もスケーラブルなオープンソースのMQTTブローカーです。EMQXをインストールするには、以下のDockerコマンドを実行します：
 
-  ```
+  ```sh
   docker run -d --name emqx -p 1883:1883 -p 8083:8083 -p 8084:8084 -p 8883:8883 -p 18083:18083 emqx/emqx
   ```
 
@@ -92,7 +92,7 @@ MQTT.jsを使用して、EMQX Cloudへの接続、トピックの購読、メッ
 
 > *注意：WebSocket接続は、ブラウザでのみサポートされています。そのため、ブラウザとNode.jsの環境で異なる接続パラメータを使用することになります。しかし、接続URL以外のパラメータはすべて同じです。読者は、自分のニーズに最も適したパラメータを使用することができます。*
 
-```
+```js
 const mqtt = require('mqtt')
 
 /***
@@ -211,7 +211,7 @@ Optionsオブジェクトでよく使われる属性値を紹介します：
 
   接続に成功し、パラメータがconnackのときにトリガーされます。
 
-  ````
+  ````js
   client.on('connect', function (connack) {
     console.log('Connected')
   })
@@ -221,7 +221,7 @@ Optionsオブジェクトでよく使われる属性値を紹介します：
 
   ブローカーが切断されたとき、再接続間隔をおいて自動的に再接続されたときにトリガーされる
 
-  ```
+  ```js
   client.on('reconnect', function () {
     console.log('Reconnecting...')
   })
@@ -231,7 +231,7 @@ Optionsオブジェクトでよく使われる属性値を紹介します：
 
   切断後、トリガーされる
 
-  ```
+  ```js
   client.on('close', function () {
     console.log('Disconnected')
   })
@@ -241,7 +241,7 @@ Optionsオブジェクトでよく使われる属性値を紹介します：
 
   ブローカーが送信した切断パケットを受信したときにトリガーされ、パラメータパケットは切断時に受信したパケットである。MQTT 5.0の新機能である。
 
-  ```
+  ```js
   client.on('disconnect', function (packet) {
     console.log(packet)
   })
@@ -251,7 +251,7 @@ Optionsオブジェクトでよく使われる属性値を紹介します：
 
   クライアントがオフラインになったときにトリガーされる
 
-  ```
+  ```js
   client.on('offline', function () {
     console.log('offline')
   })
@@ -261,7 +261,7 @@ Optionsオブジェクトでよく使われる属性値を紹介します：
 
   クライアントが正常に接続できないか、パースエラーが発生した場合にトリガーされます。パラメータエラーは、エラーメッセージ
 
-  ```
+  ```js
   client.on('error', function (error) {
     console.log(error)
   })
@@ -273,7 +273,7 @@ Optionsオブジェクトでよく使われる属性値を紹介します：
 
   *注）受信したペイロードはBuffer型の値である。必要に応じて、JSON.parse、JSON.stringify、toString()メソッドを使用し、最終的なフォーマットを表示することができます。*
 
-  ```
+  ```js
   client.on('message', function (topic, payload, packet) {
     // Payload is Buffer
     console.log(`Topic: ${topic}, Message: ${payload.toString()}, QoS: ${packet.qos}`)
@@ -293,7 +293,7 @@ Optionsオブジェクトでよく使われる属性値を紹介します：
   - オプションを指定します：オプションの値。メッセージ公開時の設定情報を指し、主にメッセージ公開時のQoSやRetainの値を設定するために使用される。
   - callback: メッセージが公開された後のコールバック関数。パラメータはerrorです。このパラメータは、公開に失敗した場合のみ存在する
 
-  ```
+  ```js
   // Send a test message with QoS of 0 to the testtopic
   client.publish('testtopic', 'Hello, MQTT!', { qos: 0, retain: false }, function (error) {
     if (error) {
@@ -301,7 +301,7 @@ Optionsオブジェクトでよく使われる属性値を紹介します：
     } else {
       console.log('Published')
     }
-  }
+  })
   ```
 
 - `Client.subscribe(topic/topic array/topic object, [options], [callback])`
@@ -312,7 +312,7 @@ Optionsオブジェクトでよく使われる属性値を紹介します：
   - オプションを指定します：オプションの値。トピックを購読する際の設定情報です。主に購読するトピックのQoSレベルを記入するために使用される
   - callback: トピックを購読した後のコールバック関数。パラメータはerrorとgrassedです。errorパラメータは購読に失敗したときのみ存在します。grantedは{topic, QoS}の配列で、topicは購読したトピック、QoSはそのトピックに付与されたQoSレベルです。
 
-  ```
+  ```js
   // Subscribe to a topic named testtopic with QoS 0
   client.subscribe('testtopic', { qos: 0 }, function (error, granted) {
     if (error) {
@@ -331,7 +331,7 @@ Optionsオブジェクトでよく使われる属性値を紹介します：
   - オプションです：オプションの値です。配信停止時の設定情報を参照する。
   - Callback: 配信停止時のコールバック関数です。パラメータはerrorです。errorパラメータは、配信停止に失敗した場合のみ存在します。
 
-  ```
+  ```js
   // Unsubscribe to a topic named testtopic
   client.unsubscribe('testtopic', function (error) {
     if (error) {
@@ -351,7 +351,7 @@ Optionsオブジェクトでよく使われる属性値を紹介します：
   - オプション：オプションの値。クライアントが終了した際の設定情報を指す。主に切断時のreasonCodeを設定するために使用される。
   - callback: クライアントが終了したときのコールバック関数
 
-  ```
+  ```js
   client.end()
   ```
 
@@ -373,7 +373,7 @@ Reference: [https://github.com/emqx/MQTT-Client-Examples/tree/master/mqtt-client
 
 TypeScriptを使用した場合のコード例です：
 
-```
+```js
 import * as mqtt from "mqtt"
 const client: mqtt.MqttClient = mqtt.connect('mqtt://broker.emqx.io:1883')
 ```
@@ -400,7 +400,7 @@ MQTT.jsアプリケーションのデバッグは、開発プロセスにおい�
 
 Node.js環境では、 `DEBUG` 環境変数でMQTT.jsのデバッグログを有効にすることができます：
 
-```
+```sh
 DEBUG=mqttjs* node your-app.js
 ```
 
@@ -438,7 +438,7 @@ mqttjs:client sendPacket :: writeToStream result true +11ms
 
 ブラウザ環境でのデバッグのためには、JavaScriptのコードでlocalStorageオブジェクトに特定の値を設定する必要があります：
 
-```
+```js
 localStorage.debug = 'mqttjs*'
 ```
 
@@ -456,7 +456,7 @@ RxJSの強力な機能を活用することで、MQTT.jsのメッセージをよ
 
 ここでは、RxJSを使ってMQTT.jsのメッセージ処理を最適化する方法を、簡単な例を通して説明します。
 
-```
+```js
 import { fromEvent } from 'rxjs'
 import { bufferTime, map, takeUntil } from 'rxjs/operators'
 

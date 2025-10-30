@@ -105,10 +105,10 @@ A subnet is a range of IP addresses within a virtual network (VNet) that helps o
 In the following example,  the address space for the subnet is set to 10.0.1.0/24:
 
 ```
-resource "azurerm_subnet" "exmaple" {
+resource "azurerm_subnet" "example" {
   name                 = "example-subenet"
-  resource_group_name  = azurerm_resource_group.exmaple.name
-  virtual_network_name = azurerm_virtual_network.exmaple.name
+  resource_group_name  = azurerm_resource_group.example.name
+  virtual_network_name = azurerm_virtual_network.example.name
   address_prefixes     = ["10.0.1.0/24"]
 }
 ```
@@ -120,14 +120,14 @@ A network interface (NIC) is the interconnection between a virtual machine (VM) 
 We assigned the subnet_id to the one we created inside the azurerm_network_interface blocks.
 
 ```
-resource "azurerm_network_interface" "exmaple" {
-  name                = "exmaple-network-interface"
-  location            = azurerm_resource_group.exmaple.location
-  resource_group_name = azurerm_resource_group.exmaple.name
+resource "azurerm_network_interface" "example" {
+  name                = "example-network-interface"
+  location            = azurerm_resource_group.example.location
+  resource_group_name = azurerm_resource_group.example.name
 
   ip_configuration {
     name                          = "internal"
-    subnet_id                     = azurerm_subnet.exmaple.id
+    subnet_id                     = azurerm_subnet.example.id
     private_ip_address_allocation = "Dynamic"
   }
 }
@@ -142,13 +142,13 @@ The resource azurerm_linux_virtual_machine  simplifies provisioning a Linux VM i
 We assigned the resource_group_name and network_interface_ids with the ones we created inside the azurerm_linux_virtual_machine blocks.
 
 ```
-resource "azurerm_linux_virtual_machine" "exmaple" {
-  name                            = "exmaple-virtual-machine"
-  resource_group_name             = azurerm_resource_group.exmaple.name
-  location                        = azurerm_resource_group.exmaple.location
+resource "azurerm_linux_virtual_machine" "example" {
+  name                            = "example-virtual-machine"
+  resource_group_name             = azurerm_resource_group.example.name
+  location                        = azurerm_resource_group.example.location
   size                            = "<YOUR-VM-SIZE>"
   admin_username                  = "azureuser"
-  network_interface_ids           = [azurerm_network_interface.exmaple.id]
+  network_interface_ids           = [azurerm_network_interface.example.id]
 
   admin_ssh_key {
     ...
@@ -241,10 +241,10 @@ resource "azurerm_public_ip" "example" {
   allocation_method   = "Static"
 }
 
-resource "azurerm_lb" "exmaple" {
-  name                = "exmaple-lb"
-  location            = azurerm_resource_group.exmaple.location
-  resource_group_name = azurerm_resource_group.exmaple.name
+resource "azurerm_lb" "example" {
+  name                = "example-lb"
+  location            = azurerm_resource_group.example.location
+  resource_group_name = azurerm_resource_group.example.name
 
   frontend_ip_configuration {
     name                 = "example-frontend-ip"
@@ -252,29 +252,29 @@ resource "azurerm_lb" "exmaple" {
   }
 }
 
-resource "azurerm_lb_backend_address_pool" "exmaple" {
+resource "azurerm_lb_backend_address_pool" "example" {
   name                = "example-backend-address-pool"
-  loadbalancer_id     = azurerm_lb.exmaple.id
+  loadbalancer_id     = azurerm_lb.example.id
 }
 
-resource "azurerm_lb_probe" "exmaple" {
+resource "azurerm_lb_probe" "example" {
   name                = "example-health-probe"
-  loadbalancer_id     = azurerm_lb.exmaple.id
+  loadbalancer_id     = azurerm_lb.example.id
   port                = 1883
   protocol            = "Tcp"
   interval_in_seconds = 5
   number_of_probes    = 2
 }
 
-resource "azurerm_lb_rule" "exmaple" {
+resource "azurerm_lb_rule" "example" {
   name                           = "example-lb-rule"
-  loadbalancer_id                = azurerm_lb.exmaple.id
+  loadbalancer_id                = azurerm_lb.example.id
   protocol                       = "Tcp"
   frontend_port                  = 1883
   backend_port                   = 1883
   frontend_ip_configuration_name = "example-frontend-ip"
-  backend_address_pool_id        = azurerm_lb_backend_address_pool.exmaple.id
-  probe_id                       = azurerm_lb_probe.exmaple.id
+  backend_address_pool_id        = azurerm_lb_backend_address_pool.example.id
+  probe_id                       = azurerm_lb_probe.example.id
 }
 ```
 

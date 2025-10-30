@@ -57,7 +57,7 @@ yarn add mqtt
 CDNを介してReactとMQTT.jsを統合したい場合は、HTMLに以下のスクリプトタグを含めることができます。
 
 ```html
-<script src="<https://unpkg.com/mqtt/dist/mqtt.min.js>"></script>
+<script src="https://unpkg.com/mqtt/dist/mqtt.min.js"></script>
 ```
 
 ## MQTTブローカーの準備
