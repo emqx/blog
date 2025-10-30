@@ -13,11 +13,11 @@ The most direct way is to have the subscriber return a response of the request.
 
 In MQTT, this is not difficult to implement. It only requires the two communicating parties to negotiate the request topic and response topic in advance, and then the subscriber returns a response to the response topic after receiving the request. This is also the method generally adopted by clients before MQTT 5.0.
 
-In this scheme, the response topic must be determined in advance and cannot be flexibly changed. When there are multiple different requestors, since they can only subscribe to the same response topic, all requestors will receive the response, and **they cannot tell whether the response belongs to themselves**:
+In this scheme, the response topic must be determined in advance and cannot be flexibly changed. When there are multiple different requesters, since they can only subscribe to the same response topic, all requesters will receive the response, and **they cannot tell whether the response belongs to themselves**:
 
 ![request response before mqtt5](https://assets.emqx.com/images/d3f0f0f49cc4e5911f1b8f61580504a5.jpg)
 
-<center>Multiple requestors can easily cause response confusion</center><br>
+<center>Multiple requesters can easily cause response confusion</center><br>
 
 Although there are many ways to avoid this issue, it also leads to the possibility of completely different implementations among vendors, greatly increasing the difficulty and workload for users when integrating devices from different manufacturers.
 

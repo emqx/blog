@@ -58,11 +58,11 @@ The Deployment Overview page displays real-time information on the current numbe
 
 Please refer to the product documentation for a complete list of features and instructions: [EMQX Cloud Help Center](https://docs.emqx.com/zh/cloud/latest/).
 
-For an in-depth comparison of the features offered by the Serverless Editon and the Dedicated Edition, please refer to: [https://www.emqx.com/en/pricing](https://www.emqx.com/en/pricing).
+For an in-depth comparison of the features offered by the Serverless Edition and the Dedicated Edition, please refer to: [https://www.emqx.com/en/pricing](https://www.emqx.com/en/pricing).
 
 ## Conclusion
 
-EMQX Cloud is committed to offering convenient IoT MQTT cloud services to users across diverse industries and sizes. With the release of the Serverless Editon, an even wider range of users can experience the convenience that EMQX Cloud provides. Whether you're a large enterprise or a start-up, you can rely on the stable and dependable data infrastructure services provided by EMQX Cloud to power your IoT business innovation.
+EMQX Cloud is committed to offering convenient IoT MQTT cloud services to users across diverse industries and sizes. With the release of the Serverless Edition, an even wider range of users can experience the convenience that EMQX Cloud provides. Whether you're a large enterprise or a start-up, you can rely on the stable and dependable data infrastructure services provided by EMQX Cloud to power your IoT business innovation.
 
 
 <section class="promotion">

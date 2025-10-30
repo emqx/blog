@@ -1,6 +1,6 @@
 ## Overview
 
-This document describes how to use [Kuiper](https://github.com/lf-edge/ekuiper) rule engine to control devices with anlysis result. To make the tutorial simple, the doc uses [device-virtual](https://github.com/edgexfoundry/device-virtual-go) sample, it analyzes the data sent from device-virtual services, and then control the device according to the analysis result produced by Kuiper rule engine.
+This document describes how to use [Kuiper](https://github.com/lf-edge/ekuiper) rule engine to control devices with analysis result. To make the tutorial simple, the doc uses [device-virtual](https://github.com/edgexfoundry/device-virtual-go) sample, it analyzes the data sent from device-virtual services, and then control the device according to the analysis result produced by Kuiper rule engine.
 
 ### Scenarios
 
@@ -27,7 +27,7 @@ Make sure you have followed document [EdgeX Kuiper Rule Engine Tutorial](https:/
 
 You should create a stream that can consume streaming data from EdgeX application service before creating rule. This step is not required if you already finished [EdgeX Kuiper Rule Engine Tutorial](https://github.com/lf-edge/ekuiper/blob/master/docs/en_US/edgex/edgex_rule_engine_tutorial.md).
 
-```
+```sh
 curl -X POST \
   http://$kuiper_docker:48075/streams \
   -H 'Content-Type: application/json' \
@@ -40,7 +40,7 @@ Since both of rules will send control command to device `Random-UnsignedInteger-
 
 `curl http://localhost:48082/api/v1/device/name/Random-Boolean-Device | jq`, and it prints similar outputs as below.
 
-```
+```json
 {
   "id": "9b051411-ca20-4556-bd3e-7f52475764ff",
   "name": "Random-Boolean-Device",
@@ -100,7 +100,7 @@ From the output, you can know that there are two commands, and the 2nd command i
 
 So a sample control command would be similar as following.
 
-```
+```sh
 curl -X PUT \
   http://edgex-core-command:48082/api/v1/device/c1459444-79bd-46c8-8b37-d6e1418f2a3a/command/fe202437-236d-41c5-845e-3e6013b928cd \
   -H 'Content-Type: application/json' \
@@ -115,7 +115,7 @@ The 1st is a rule that monitoring `Random-UnsignedInteger-Device` device, and if
 
 - The action will be triggered when uint8 value is larger than 20. Since the uint8 value is not used for sending control command to `Random-Boolean-Device`, the `uint8` value is not used in the `dataTemplate` property of `rest` action.
 
-```
+```sh
 curl -X POST \
   http://$kuiper_server:48075/rules \
   -H 'Content-Type: application/json' \
@@ -142,9 +142,9 @@ curl -X POST \
 
 The 2nd rule is monitoring `Random-Integer-Device` device, and if the average value for `int8` with every 20 seconds is larger than 0, then send a command to `Random-Boolean-Device` device service to turn off random generation of bool value.
 
-- The average value for uint8 is caculated every 20 seconds, and if the average value is larger than 0, then send a control command to `Random-Boolean-Device` service.
+- The average value for uint8 is calculated every 20 seconds, and if the average value is larger than 0, then send a control command to `Random-Boolean-Device` service.
 
-```
+```sh
 curl -X POST \
   http://$kuiper_server:48075/rules \
   -H 'Content-Type: application/json' \
@@ -169,7 +169,7 @@ curl -X POST \
 
 Now both of rules are created, and you can take a look at logs of edgex-kuiper for the rule execution result.
 
-```
+```sh
 # docker logs edgex-kuiper
 ```
 
@@ -177,19 +177,19 @@ Now both of rules are created, and you can take a look at logs of edgex-kuiper f
 
 It is probably that the analysis result need to be sent to command rest service as well, how to extract the data from analysis result? For example, below SQL is used for filtering data.
 
-```
+```sql
 SELECT int8, "true" AS randomization FROM demo WHERE uint8 > 20
 ```
 
 The output of the SQL is probably similar as below,
 
-```
+```json
 [{"int8":-75, "randomization":"true"}]
 ```
 
 Let's suppose a service need following data format, while `value` field is read from field `int8`, and `EnableRandomization_Bool` is read from field `randomization`.
 
-```
+```sh
 curl -X PUT \
   http://edgex-core-command:48082/api/v1/device/${deviceId}/command/xyz \
   -H 'Content-Type: application/json' \
@@ -198,7 +198,7 @@ curl -X PUT \
 
 Kuiper uses [Go template](https://golang.org/pkg/text/template/) to extract data from analysis result, and the `dataTemplate` should be similar as following.
 
-```
+```json
 "dataTemplate": "{\"value\": {{.int8}}, \"EnableRandomization_Bool\": \"{{.randomization}}\"}"
 ```
 

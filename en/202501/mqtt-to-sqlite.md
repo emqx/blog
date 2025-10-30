@@ -126,8 +126,8 @@ def message_published():
         # topic format: sensor/<sensor_id>/data
         return Response(status=200)
 
-    paylaod = json.loads(data["payload"])
-    temperature = paylaod["temperature"]
+    payload = json.loads(data["payload"])
+    temperature = payload["temperature"]
     created_at = data["publish_received_at"] // 1000
 
     conn = sqlite3.connect(db_file)
@@ -231,7 +231,7 @@ We run the setup with the following command:
 docker compose -f docker-compose-simple.yml up
 ```
 
-We should see someting like this:
+We should see something like this:
 
 ```shell
 ...

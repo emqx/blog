@@ -107,7 +107,7 @@ yarn add mqtt
 If you're working directly in the browser and prefer not to install the library, you can also use a CDN:
 
 ```shell
-<script src="<https://unpkg.com/mqtt/dist/mqtt.min.js>"></script>
+<script src="https://unpkg.com/mqtt/dist/mqtt.min.js"></script>
 
 <script>
    // Globally initializes an mqtt variable
@@ -119,14 +119,14 @@ If you're working directly in the browser and prefer not to install the library,
 
 For simplicity, we will implement this directly in the browser by creating a basic HTML file. In this file, we'll set up both a publisher and a subscriber.
 
-```javascript
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Weboscoket MQTT</title>
-  <script src="<https://unpkg.com/mqtt/dist/mqtt.min.js>"></script>
+  <script src="https://unpkg.com/mqtt/dist/mqtt.min.js"></script>
 </head>
 <body>
   Use WebSocket client to connect to MQTT server

@@ -19,7 +19,7 @@
 
 `bench` 命令如下：
 
-```
+```sh
 mqttx bench pub -c 100 -t mqttx/bench -m hello
 ```
 
@@ -58,16 +58,16 @@ MQTTX CLI 在 1.9.1-beta.1 的测试版中，主要是添加了以下两个较�
 
 命令行工具同样也支持了自动重连功能，当连接断开时将自动重连，无需手动重连。支持设置重连周期以及最大重连次数。
 
-```
+```sh
 # 以连接命令时的自动重连次数配置为例，修改为 5 次，重连周期为 5000 毫秒
-mqttx conn -h 'broker.emqx.io' -p 1883 --maximun-reconnect-times 5 --reconnect-period 5000
+mqttx conn -h 'broker.emqx.io' -p 1883 --maximum-reconnect-times 5 --reconnect-period 5000
 ```
 
 ### 支持配置文件
 
 支持将连接、订阅和发布时的参数保存到配置文件中，减少用户在使用时的参数配置次数，快速复用配置文件中的参数来连接、订阅和发布消息。保存和加载配置文件的路径也可以由用户自行定义。
 
-```
+```sh
 # 以连接命令时的配置文件为例，保存配置文件到当前目录下的 mqttx.json 文件中
 mqttx conn -h 'broker.emqx.io' -p 1883 --save mqttx.json
 # 加载当前目录下的 mqttx.json 文件中的连接配置

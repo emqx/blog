@@ -28,14 +28,14 @@ By using [ISA95 standard](https://www.emqx.com/en/blog/exploring-isa95-standards
 
 | **Site**   | **Area**  | **Cell** | **Unit**     | **Module**  | **Tag Address** |
 | :--------- | :-------- | :------- | :----------- | :---------- | :-------------- |
-| Headquater | 1st Floor | Room A   | Right Corner | temperature | 1!100           |
-| Headquater | 1st Floor | Room A   | Right Corner | humidity    | 1!101           |
-| Headquater | 1st Floor | Room A   | Left Corner  | temperature | 2!100           |
-| Headquater | 1st Floor | Room A   | Left Corner  | humidity    | 2!101           |
-| Headquater | 1st Floor | Room B   | Right Corner | temperature | 3!100           |
-| Headquater | 1st Floor | Room B   | Right Corner | humidity    | 3!101           |
-| Headquater | 1st Floor | Room B   | Left Corner  | temperature | 4!100           |
-| Headquater | 1st Floor | Room B   | Left Corner  | humidity    | 4!101           |
+| Headquarter | 1st Floor | Room A   | Right Corner | temperature | 1!100           |
+| Headquarter | 1st Floor | Room A   | Right Corner | humidity    | 1!101           |
+| Headquarter | 1st Floor | Room A   | Left Corner  | temperature | 2!100           |
+| Headquarter | 1st Floor | Room A   | Left Corner  | humidity    | 2!101           |
+| Headquarter | 1st Floor | Room B   | Right Corner | temperature | 3!100           |
+| Headquarter | 1st Floor | Room B   | Right Corner | humidity    | 3!101           |
+| Headquarter | 1st Floor | Room B   | Left Corner  | temperature | 4!100           |
+| Headquarter | 1st Floor | Room B   | Left Corner  | humidity    | 4!101           |
 
 Each row represents an object mapped to the device tag address. The object’s name is the composition of the first 5 columns with ‘/' as a separator. For example, the object’s name on the first row is something like HQ/1F/A/Right/temp. This name will be a unique topic for Unified Namespace.
 

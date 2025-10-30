@@ -57,7 +57,7 @@ This method allows for flexibility in integrating MQTT into your React project, 
 For projects that prefer to integrate React and MQTT.js via CDN, the following script tags can be included in your HTML:
 
 ```html
-<script src="<https://unpkg.com/mqtt/dist/mqtt.min.js>"></script>
+<script src="https://unpkg.com/mqtt/dist/mqtt.min.js"></script>
 ```
 
 ## Prepare an MQTT Broker

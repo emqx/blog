@@ -99,7 +99,7 @@ Using an MQTT broker like [EMQX](https://www.emqx.com/en/products/emqx) for coll
 - Enhanced security: MQTT supports various security mechanisms, such as TLS/SSL encryption, username/password authentication, and access control lists (ACLs), to protect the data from unauthorized access or tampering.
 - Improved interoperability: MQTT is based on open standards and widely supported by various platforms and languages. This can facilitate the integration of CAN bus data with other systems or applications.
 
-## Tutorial: Transfering Processed CAN Bus Data to the Cloud with EMQX
+## Tutorial: Transferring Processed CAN Bus Data to the Cloud with EMQX
 
 In this section, we will offer a simple demonstration of transferring processed CAN bus data to the cloud for further insights using EMQX.
 

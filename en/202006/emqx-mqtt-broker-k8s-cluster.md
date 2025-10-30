@@ -203,7 +203,7 @@ So far, the deployment of a single EMQX Broker node is done. Manage EMQX Broker 
 
 ## Automatically cluster EMQX MQTT broker through Kubernetes
 
-The article above introduced how to deploy single EMQX Broker Pod through Deployment. It is extremely convenient to expand the number of Pod through Deployment, execute the command `kubectl scale deployment ${deployment_name} --replicas ${numer}` can expand the number of Pod. Expanding EMQX Broker Pod to three is as follows:
+The article above introduced how to deploy single EMQX Broker Pod through Deployment. It is extremely convenient to expand the number of Pod through Deployment, execute the command `kubectl scale deployment ${deployment_name} --replicas ${number}` can expand the number of Pod. Expanding EMQX Broker Pod to three is as follows:
 
 ```
 $ kubectl scale deployment emqx-deployment --replicas 3

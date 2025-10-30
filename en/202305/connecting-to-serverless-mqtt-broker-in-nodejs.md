@@ -193,7 +193,7 @@ The client appears to have successfully connected to the MQTT broker, subscribed
 
 We can see that the message sent by MQTTX is printed in the console.
 
-![Receive messeges in the console](https://assets.emqx.com/images/37a333952c92044a62dc4145b4c4c337.png)
+![Receive messages in the console](https://assets.emqx.com/images/37a333952c92044a62dc4145b4c4c337.png)
 
 ## Summary and complete code example
 

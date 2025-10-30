@@ -27,7 +27,7 @@ Dashboard control is the most intuitive human-machine interaction method, suitab
 
 MQTT control allows any client program that supports the MQTT protocol to send command data to the corresponding topic on an [MQTT Broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison). The NeuronEX northbound MQTT plugin subscribes to this topic to receive data and sends control commands to the southbound driver node to implement device control. 
 
-This method is especially effective when using EMQX to build a UNS(Unifed Name Space) in industrial scenarios.
+This method is especially effective when using EMQX to build a UNS(Unified Name Space) in industrial scenarios.
 
 ![image.png](https://assets.emqx.com/images/f3129f258abc1f116c511c8f910f040c.png)
 

@@ -34,12 +34,12 @@
 
 ![支持自动重连](https://assets.emqx.com/images/543f9f68d014fe3d30816dac773681f6.png)
 
-每次重连有一个最大重连次数，当达到最大重连次数后，MQTTX CLI 命令行客户端会退出，以防止客户端在无法连接的情况下一直重连。自动重连的最大重连次数默认为 10 次，可以使用 `--maximun-reconnect-times` 参数进行配置。
+每次重连有一个最大重连次数，当达到最大重连次数后，MQTTX CLI 命令行客户端会退出，以防止客户端在无法连接的情况下一直重连。自动重连的最大重连次数默认为 10 次，可以使用 `--maximum-reconnect-times` 参数进行配置。
 
 ```
 # 以连接命令时的自动重连次数配置为例，修改为 5 次
 
-mqttx conn -h 'broker.emqx.io' -p 1883 --maximun-reconnect-times 5
+mqttx conn -h 'broker.emqx.io' -p 1883 --maximum-reconnect-times 5
 ```
 
 除重连次数外，我们还新增了重连间隔的配置项，当 MQTT 服务器出现异常后，MQTTX CLI 命令行客户端会在重连间隔时间内进行重连，重连间隔的单位为毫秒，默认为 1000 毫秒，可以使用 `--reconnect-period` 参数进行配置，

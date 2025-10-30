@@ -78,7 +78,7 @@ MQTT.jsをインストールするには、マシンにNode.jsの実行環境が
 
 **Node.jsプロジェクトのインストール**
 
-```
+```sh
 # npm
 npm install mqtt --save
 
@@ -90,8 +90,8 @@ yarn add mqtt
 
 ブラウザで直接作業していて、ライブラリをインストールしたくない場合は、CDNを使うこともできる：
 
-```
-<script src="<https://unpkg.com/mqtt/dist/mqtt.min.js>"></script>
+```html
+<script src="https://unpkg.com/mqtt/dist/mqtt.min.js"></script>
 
 <script>
    // Globally initializes an mqtt variable
@@ -103,14 +103,14 @@ yarn add mqtt
 
 簡単にするために、基本的な HTML ファイルを作成することで、 ブラウザに直接実装することにします。このファイルでは、パブリッシュ者とサブスクライブ者の両方を設定します。
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Weboscoket MQTT</title>
-  <script src="<https://unpkg.com/mqtt/dist/mqtt.min.js>"></script>
+  <script src="https://unpkg.com/mqtt/dist/mqtt.min.js"></script>
 </head>
 <body>
   Use WebSocket client to connect to MQTT server
@@ -164,7 +164,7 @@ yarn add mqtt
 
 サブスクリプションは接続が成功した後にのみ行うことができ、サブスクライブされたトピックは MQTT サブスクリプショントピックルールに従わなければならない。JavaScriptの非同期機能は、'connect'イベントの後、または `client.connected` を使用することによってのみ、成功した接続が保証されることを意味します。
 
-```
+```js
 client.on('connect', () => {
   console.log(`Client connected: ${clientId}`)
   // Subscribe
@@ -180,7 +180,7 @@ client.unubscribe('testtopic', () => {
 
 特定のトピックにメッセージをパブリッシュすることができ、そのトピックは MQTT パブリッシュ・トピック・ルールに準拠している必要があります。パブリッシュする前にトピックをサブスクライブする必要はありません。
 
-```
+```js
 // Publish
 client.publish('testtopic', 'ws connection demo...!', { qos: 0, retain: false })
 // Receive
@@ -199,7 +199,7 @@ MQTT.js で WebSocket over TLS を使用するには、ブローカーアドレ�
 
 以下は、安全な接続を確立する方法の例である：
 
-```
+```js
 const host = 'wss://broker.emqx.io:8084/mqtt'
 const options = {
   // other options as before
@@ -216,7 +216,7 @@ WebSocket over TLSの使用に関する詳細や潜在的な問題について�
 
 > *注：ブラウザでWebSocket接続を使用する場合、双方向認証接続を確立することはできません。しかし、この機能は他のほとんどのプログラミング言語環境でサポートされています。例えば、Node.jsの場合です：*
 
-```
+```js
 const mqtt = require('mqtt')
 const fs = require('fs')
 const path = require('path')
