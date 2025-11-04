@@ -222,6 +222,7 @@ Explore more with & via EMQ.
 ## [EMQX Open Source | Broker](https://www.emqx.com/en/blog/category/emqx)
 EMQX is the world's most scalable open-source MQTT broker with a high performance that connects 100M+ IoT devices in 1 cluster, while maintaining 1M message per second throughput and sub-millisecond latency.
 
+- [Announcing EMQX Tables: A Native Time-Series Database for IoT Data (Preview starts today)](https://www.emqx.com/en/blog/announcing-emqx-tables) ([Edit](https://github.com/emqx/blog/blob/main/en/202511/announcing-emqx-tables.md))
 - [Unifying MQTT Pub/Sub and Message Queuing: The Architecture Behind EMQX 6.0](https://www.emqx.com/en/blog/unifying-mqtt-pub-sub-and-message-queuing) ([Edit](https://github.com/emqx/blog/blob/main/en/202510/unifying-mqtt-pub-sub-and-message-queuing.md))
 - [Solving Real-World IoT Messaging Challenges with EMQX Message Queues](https://www.emqx.com/en/blog/solving-real-world-iot-messaging-challenges-with-emqx) ([Edit](https://github.com/emqx/blog/blob/main/en/202510/solving-real-world-iot-messaging-challenges-with-emqx.md))
 - [One Broker, Two Paradigms: Real-Time MQTT Pub/Sub and Durable Queues, Natively in EMQX](https://www.emqx.com/en/blog/real-time-mqtt-pub-sub-and-durable-queues-natively-in-emqx) ([Edit](https://github.com/emqx/blog/blob/main/en/202510/real-time-mqtt-pub-sub-and-durable-queues-natively-in-emqx.md))
