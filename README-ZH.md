@@ -624,6 +624,7 @@ MQTTX is a Fully Open-source MQTT 5.0 cross-platform Desktop Client, makes it ea
 ## [Neuron - IIoT Connectivity Server](https://www.emqx.com/zh/blog/category/neuron)
 IoT edge industrial protocol gateway software, which supports one-stop access to dozens of industrial protocols and converts them into MQTT protocol to access the cloud industrial IoT platform. It just requires ultra-low resource consumption, and supports three major architectures of X86, ARM, and MIPS.
 
+- [NeuronEX 3.7.0 发布：新增 OPC UA Server，赋能工业连接与可视化升级](https://www.emqx.com/zh/blog/neuronex-v-3-7-0-release-notes) ([Edit](https://github.com/emqx/blog/blob/main/zh/202511/neuronex-v-3-7-0-release-notes.md))
 - [NeuronEX 数据分析功能使用指南](https://www.emqx.com/zh/blog/unlock-industrial-insights-with-neuronex) ([Edit](https://github.com/emqx/blog/blob/main/zh/202510/unlock-industrial-insights-with-neuronex.md))
 - [10 分钟快速入门：使用 NeuronEX 将西门子 S7-1200 PLC 数据接入 MQTT](https://www.emqx.com/zh/blog/connecting-siemens-s7-1200-plc-to-mqtt) ([Edit](https://github.com/emqx/blog/blob/main/zh/202509/connecting-siemens-s7-1200-plc-to-mqtt.md))
 - [NeuronEX 最佳实践：实现 MySQL 与 IIoT 平台的高效数据同步](https://www.emqx.com/zh/blog/neuronex-best-bractices) ([Edit](https://github.com/emqx/blog/blob/main/zh/202508/neuronex-best-bractices.md))

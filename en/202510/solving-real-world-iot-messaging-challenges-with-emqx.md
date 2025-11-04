@@ -20,7 +20,7 @@ EMQX Message Queue bridges the gap between real-time MQTT pub/sub and durable me
 
 **Scenario:** Imagine an AI-powered pipeline where IoT cameras publish images to the topic `images/process`. A pool of worker applications needs to subscribe, grab an image, and perform OCR (Optical Character Recognition).
 
-**The Problem:** With a standard MQTT pub/sub model, you face two issues. First, if no workers are online, the messages are simply dropped. Second, if you use a shared subscription to distribute the load, there’s still no durability. If a worker crashes after receiving a message but before processing it, the job is lost forever.
+**The Problem:** With a standard MQTT pub/sub model, you face two issues. First, if no subscribers are online, the messages are simply dropped. Second, if you use a shared subscription to distribute the load, there’s still no durability. If a worker crashes after receiving a message but before processing it, the job is lost forever.
 
 **The Solution:** We can map the topic to a durable queue.
 
@@ -63,7 +63,7 @@ Here is a quick breakdown:
 | **Scope**          | One message per topic                    | One message per key (many keys per queue)                    |
 | **Durability**     | Stored in broker memory/DB               | Stored durably as part of a queue                            |
 | **Consumption**    | Delivered once to every new subscriber   | Durable, offset-based consumption for a consumer group       |
-| **Multi-consumer** | All subscribers get the same message     | Load balanced across the consumer groupLoad balanced across the consumer group |
+| **Multi-consumer** | All subscribers get the same message     | Load balanced across the consumer group |
 | **Use Case**       | Broadcasting the "last known good value" | Guaranteed state synchronization for a specific consumer     |
 
 ## **A Unified Platform, A Simpler Architecture**
