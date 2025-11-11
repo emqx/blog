@@ -167,6 +167,7 @@ Best practice of MQTT in various clients.
 ## [MQTT Integration (Eco & Integration)](https://www.emqx.com/en/blog/category/eco-and-integration)
 Explore more with & via EMQ.
 
+- [Streaming IoT Data to Snowflake with EMQX 6.0 Connector](https://www.emqx.com/en/blog/stream-iot-data--to-snowflake-with-emqx-6-0) ([Edit](https://github.com/emqx/blog/blob/main/en/202511/stream-iot-data--to-snowflake-with-emqx-6-0.md))
 - [From Voice to Vision: The Final Step in Building Your AI Agent with ESP32 and MCP over MQTT](https://www.emqx.com/en/blog/esp32-and-mcp-over-mqtt-6) ([Edit](https://github.com/emqx/blog/blob/main/en/202509/esp32-and-mcp-over-mqtt-6.md))
 - [Giving the Agent Memory and Persona: Building an AI Companion with ESP32 & MCP over MQTT Part 5](https://www.emqx.com/en/blog/esp32-and-mcp-over-mqtt-5) ([Edit](https://github.com/emqx/blog/blob/main/en/202509/esp32-and-mcp-over-mqtt-5.md))
 - [Can ESP32 Run MQTT over QUIC? We Had a Try...](https://www.emqx.com/en/blog/can-esp32-run-mqtt-over-quic) ([Edit](https://github.com/emqx/blog/blob/main/en/202509/can-esp32-run-mqtt-over-quic.md))
