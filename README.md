@@ -803,6 +803,7 @@ Guarantee the availability and reliability of the IoT platform.
 
 ## [Use Cases](https://www.emqx.com/en/blog/category/use-cases)
 
+- [How EMQX Unified Namespace Powers AI Transformation in Automotive Manufacturing](https://www.emqx.com/en/blog/how-emqx-unified-namespace-powers-ai-transformation-in-automotive-manufacturing) ([Edit](https://github.com/emqx/blog/blob/main/en/202511/how-emqx-unified-namespace-powers-ai-transformation-in-automotive-manufacturing.md))
 - [Connecting 3D Printers to Cloud with MQTT and EMQX for Personal Manufacturing](https://www.emqx.com/en/blog/connecting-3d-printers-to-cloud-with-mqtt-and-emqx) ([Edit](https://github.com/emqx/blog/blob/main/en/202510/connecting-3d-printers-to-cloud-with-mqtt-and-emqx.md))
 - [Revolutionizing ESG and Carbon Footprint Reporting with a Unified Namespace](https://www.emqx.com/en/blog/unified-namespace-esg-carbon-reporting) ([Edit](https://github.com/emqx/blog/blob/main/en/202510/unified-namespace-esg-carbon-reporting.md))
 - [Diving into EMQX's UNS Solution for calculating OEE in Food Manufacturing through a Case Study](https://www.emqx.com/en/blog/diving-into-emq-s-uns-solution) ([Edit](https://github.com/emqx/blog/blob/main/en/202509/diving-into-emq-s-uns-solution.md))
