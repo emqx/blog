@@ -10,7 +10,7 @@ MQTT v3.1およびv3.1.1と比較して、MQTT v5はさらに多くの新機能�
 
 MQTT v3プロトコルでは、クライアントが同じトピックに大量のメッセージを（同じMQTT接続上で）発行する必要がある場合、トピック名がすべての`PUBLISH`パケットで繰り返し使用されるため、帯域幅資源の無駄遣いが発生します。同時に、同じトピック名のUTF-8文字列を毎回解析することは、サーバーの計算資源の無駄遣いとなります。
 
-例えば、センサーが場所`A`から固定頻度で温度と湿度を報告するとします。温度メッセージごとにトピック`/location/A/temperature`（23バイト）に、湿度メッセージごとにトピック`/location/A/humidity`（20バイト）に発行します。トピックエイリアスを使用しない場合、最初に発行されたメッセージ以降、各`PUBLISH`パケットはトピック名（合計53バイト）を接続を通じて何度も送信する必要があります。また、ブローカーは場所トピックを繰り返し解析する必要があります。
+例えば、センサーが場所`A`から固定頻度で温度と湿度を報告するとします。温度メッセージごとにトピック`position/A/temperature`（23バイト）に、湿度メッセージごとにトピック`position/A/humidity`（20バイト）に発行します。トピックエイリアスを使用しない場合、最初に発行されたメッセージ以降、各`PUBLISH`パケットはトピック名（合計53バイト）を接続を通じて何度も送信する必要があります。また、ブローカーは場所トピックを繰り返し解析する必要があります。
 
 このように、MQTT v5.0でトピックエイリアス機能を導入する主な目的は、ネットワークリソースとCPUリソースの両方でリソース消費を削減することです。
 
@@ -24,7 +24,7 @@ MQTT v3プロトコルでは、クライアントが同じトピックに大量�
 
 MQTTクライアントやサーバーがトピックエイリアスを使用し始める前に、現在の接続で許可されるトピックエイリアスの最大数について合意する必要があります。この情報の交換は`CONNECT`パケットと`CONNACK`パケットで行われます。`Topic Alias Maximum`は`CONNECT`および`CONNACK`パケットのバリアブルヘッダー内のメッセージ属性としてエンコードされます。
 
-![Set MQTT Topic Alias Maximum mutually](https://assets.emqx.com/images/9b49a3437044bc206b400d5b81c39204.png)
+![Set MQTT Topic Alias Maximum mutually](https://assets.emqx.com/images/597d085d996527a5a2881abd929b4546.png)
 
 <center>トピックエイリアス最大値を相互に設定</center>
 
@@ -42,7 +42,7 @@ MQTTクライアントやサーバーがトピックエイリアスを使用し�
 
 このようなマッピングはそれぞれのエンドで独立して管理されるため（すなわち、必ずしも同一である必要はありません）、クライアントとサーバーは同じエイリアス番号を使用して異なるトピックに発行することができます。
 
-![MQTT client and broker manage their aliases respectively](https://assets.emqx.com/images/bcb4fa762372b2e96d6a9d26864242f4.png)
+![MQTT client and broker manage their aliases respectively](https://assets.emqx.com/images/803a33484a299bad1e88478ffaa4b57c.png)
 
 <center>MQTTクライアントとブローカーはそれぞれエイリアスを独自に管理</center>
 
@@ -50,7 +50,7 @@ MQTTクライアントやサーバーがトピックエイリアスを使用し�
 
 `PUBLISH`パケット内で使用されているトピックエイリアスが以前に作成されていない、つまり受信側が現在のトピックエイリアスとトピック名とのマッピング関係を構築していない場合、かつこのメッセージのバリアブルヘッダー内のトピック名フィールドが空の場合、受信側は`REASON_CODE`が`0x82`の`DISCONNECT`パケットを送信して接続を閉じる必要があります。
 
-![Unknown topic alias](https://assets.emqx.com/images/e80be18ba1fe38b628e436a32782c88c.png)
+![Unknown topic alias](https://assets.emqx.com/images/a46be89d2018c94637915fed37adf9a7.png)
 
 <center>未知のトピックエイリアス</center>
 
@@ -60,7 +60,7 @@ MQTTクライアントやサーバーがトピックエイリアスを使用し�
 
 以下の図の例では、以前に温度トピックに使用されていたトピックエイリアス`123`が、湿度トピックを表すように更新されています。
 
-![MQTT client and broker recreate topic aliases](https://assets.emqx.com/images/fdab5dab7d1fa257d80a6a4a9085abac.png)
+![MQTT client and broker recreate topic aliases](https://assets.emqx.com/images/b791a984151d75281d5c6729b666c6be.png)
 
 <center>MQTTクライアントとブローカーはトピックエイリアスを再作成</center>
 

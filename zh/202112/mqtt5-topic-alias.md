@@ -12,8 +12,8 @@ MQTT v5 相较于 MQTT v3.1 和 v3.1.1 提供了许多新特性。我们会尽�
 
 设想这样的场景，在位置 `A` 以固定频率报告温度湿度的传感器：
 
-- 使用 `/position/A/temperature` 作为该位置温度消息的主题（长度23字节）；
-- 使用 `/position/A/humidity` 作为该位置湿度消息的主题（长度20字节）。
+- 使用 `position/A/temperature` 作为该位置温度消息的主题（长度23字节）；
+- 使用 `position/A/humidity` 作为该位置湿度消息的主题（长度20字节）。
 
 除去第一次发布消息外，之后的每个`PUBLISH`报文，都需要将“主题名”这个已经传递过的信息再次通过网络传输。即便抛开客户端和服务端之间额外的带宽消耗不言，对服务端来说，面对成千上万的传感器发布的大量消息，对每个客户端的每条消息，都要将同样的主题名字符串进行解析，这将造成了计算资源的浪费。
 
@@ -31,7 +31,7 @@ MQTT v5 相较于 MQTT v3.1 和 v3.1.1 提供了许多新特性。我们会尽�
 客户端的`CONNECT`报文中"主题别名最大值"指示了本客户端在此次连接中服务端可以使用的最大主题别名数量；同样地，服务端发送的`CONNACK`报文中，也通过此值表明了当前连接中对端（客户端）可以使用的最大主题别名数量。
 
 
-![MQTT 主题别名最大值](https://assets.emqx.com/images/8e5825731ef375d0cf50b7fa8b45e348.png)
+![MQTT 主题别名最大值](https://assets.emqx.com/images/597d085d996527a5a2881abd929b4546.png)
 
 <center>双端各自设置对端可以使用的最大主题别名数量</center>
 
@@ -45,7 +45,7 @@ MQTT v5 相较于 MQTT v3.1 和 v3.1.1 提供了许多新特性。我们会尽�
 对端接收到带有主题别名值和非空主题名的`PUBLISH`报文后，将建立主题别名和主题名的映射关系，在此之后发送的`PUBLISH`报文中，便可以仅用长度2字节的主题别名发布消息，对端将使用通过之前建立的`主题别名<=>主题名`映射关系来处理消息中的主题。并且由于这一映射关系由双端各自维护，所以客户端与服务端可以使用值相同的主题别名互相发布消息。
 
 
-![设置与使用 MQTT 主题别名](https://assets.emqx.com/images/90b455343adc89bade35746b3bf71a88.png)
+![设置与使用 MQTT 主题别名](https://assets.emqx.com/images/803a33484a299bad1e88478ffaa4b57c.png)
 
 <center> MQTT Client 与 MQTT Broker 分别设置 topic_alias</center>
 
@@ -54,7 +54,7 @@ MQTT v5 相较于 MQTT v3.1 和 v3.1.1 提供了许多新特性。我们会尽�
 
 `PUBLISH`报文中使用的主题别名值如果在此前的报文中未进行设置，即对端并未建立当前主题别名到某个主题名的映射关系，而此条报文的可变报头中主题名字段为空，对端将使用包含原因码（REASON_CODE）为`0x82`的`DISCONNECT`报文断开网络连接。
 
-![使用未设置的 MQTT 主题别名](https://assets.emqx.com/images/a405b27fb7440c605450b87c44ede080.png)
+![使用未设置的 MQTT 主题别名](https://assets.emqx.com/images/a46be89d2018c94637915fed37adf9a7.png)
 
 <center>使用未建立映射关系的主题别名</center>
 
@@ -63,7 +63,7 @@ MQTT v5 相较于 MQTT v3.1 和 v3.1.1 提供了许多新特性。我们会尽�
 
 当对端已经根据本次连接中某个`PUBLISH`报文创建了一个`主题别名<=>主题名`的映射关系时，可以在下一次发送`PUBLISH`报文时使用同样的主题别名值和非空的主题名来更新这个主题别名值到主题名的映射关系。
 
-![重置 MQTT 主题别名](https://assets.emqx.com/images/264442ebc239f5a1cfbbf2f7ee990c1e.png)
+![重置 MQTT 主题别名](https://assets.emqx.com/images/b791a984151d75281d5c6729b666c6be.png)
 
 <center>MQTT Client 与 MQTT Broker 分别更新主题别名所对应的主题名</center>
 
