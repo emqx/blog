@@ -223,6 +223,7 @@ Explore more with & via EMQ.
 ## [EMQX Open Source | Broker](https://www.emqx.com/en/blog/category/emqx)
 EMQX is the world's most scalable open-source MQTT broker with a high performance that connects 100M+ IoT devices in 1 cluster, while maintaining 1M message per second throughput and sub-millisecond latency.
 
+- [Ingesting MQTT Data into Google BigQuery for Real-Time Analytics](https://www.emqx.com/en/blog/ingesting-mqtt-data-into-google-bigquery-for-real-time-analytics) ([Edit](https://github.com/emqx/blog/blob/main/en/202511/ingesting-mqtt-data-into-google-bigquery-for-real-time-analytics.md))
 - [Connecting to the Modern Data Lakehouse: Streaming IoT Data to Snowflake, BigQuery, and S3 Tables](https://www.emqx.com/en/blog/connecting-to-the-modern-data-lakehouse) ([Edit](https://github.com/emqx/blog/blob/main/en/202511/connecting-to-the-modern-data-lakehouse.md))
 - [Getting Started with EMQX Message Queue in 10 Minutes](https://www.emqx.com/en/blog/getting-started-with-emqx-message-queue-in-10-minutes) ([Edit](https://github.com/emqx/blog/blob/main/en/202511/getting-started-with-emqx-message-queue-in-10-minutes.md))
 - [Announcing EMQX Tables: A Native Time-Series Database for IoT Data (Preview starts today)](https://www.emqx.com/en/blog/announcing-emqx-tables) ([Edit](https://github.com/emqx/blog/blob/main/en/202511/announcing-emqx-tables.md))
