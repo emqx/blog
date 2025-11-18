@@ -15,7 +15,7 @@ The clear solution is a **decoupled, event-driven architecture** that can ingest
 
 EMQX 6.0 has transformed from an [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) into a unified platform for all IoT data movement. The enhanced Data Integration framework features an integrated, SQL-driven engine to seamlessly process and route high-volume edge data directly into the modern data lakehouse. This makes real-time insight an out-of-the-box feature.
 
-![image.png](https://assets.emqx.com/images/c8044995d44f075c7abb46e2a5dcefa7.png)
+![ef990254c75b3b0232efc9cedc061817.png](https://assets.emqx.com/images/fba7799621471188e1dbc5b9e6053d6e.png)
 
 **Modern Data Lakehouse Destinations in EMQX 6.0**：
 

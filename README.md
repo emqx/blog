@@ -167,6 +167,7 @@ Best practice of MQTT in various clients.
 ## [MQTT Integration (Eco & Integration)](https://www.emqx.com/en/blog/category/eco-and-integration)
 Explore more with & via EMQ.
 
+- [From MQTT to Data Lakehouse: Building Time-Series Pipelines with S3 Tables](https://www.emqx.com/en/blog/from-mqtt-to-data-lakehouse) ([Edit](https://github.com/emqx/blog/blob/main/en/202511/from-mqtt-to-data-lakehouse.md))
 - [Streaming IoT Data to Snowflake with EMQX 6.0 Connector](https://www.emqx.com/en/blog/stream-iot-data--to-snowflake-with-emqx-6-0) ([Edit](https://github.com/emqx/blog/blob/main/en/202511/stream-iot-data--to-snowflake-with-emqx-6-0.md))
 - [From Voice to Vision: The Final Step in Building Your AI Agent with ESP32 and MCP over MQTT](https://www.emqx.com/en/blog/esp32-and-mcp-over-mqtt-6) ([Edit](https://github.com/emqx/blog/blob/main/en/202509/esp32-and-mcp-over-mqtt-6.md))
 - [Giving the Agent Memory and Persona: Building an AI Companion with ESP32 & MCP over MQTT Part 5](https://www.emqx.com/en/blog/esp32-and-mcp-over-mqtt-5) ([Edit](https://github.com/emqx/blog/blob/main/en/202509/esp32-and-mcp-over-mqtt-5.md))
