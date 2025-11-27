@@ -207,6 +207,7 @@ Explore more with & via EMQ.
 ## [EMQX Open Source | Broker](https://www.emqx.com/zh/blog/category/emqx)
 EMQX is the world's most scalable open-source MQTT broker with a high performance that connects 100M+ IoT devices in 1 cluster, while maintaining 1M message per second throughput and sub-millisecond latency.
 
+- [利用 EMQX 消息队列解决关键物联网消息传递挑战](https://www.emqx.com/zh/blog/solving-real-world-iot-messaging-challenges-with-emqx) ([Edit](https://github.com/emqx/blog/blob/main/zh/202511/solving-real-world-iot-messaging-challenges-with-emqx.md))
 - [一个 broker，两种模式：EMQX 原生支持实时 MQTT 发布/订阅和持久化消息队列](https://www.emqx.com/zh/blog/real-time-mqtt-pub-sub-and-durable-queues-natively-in-emqx) ([Edit](https://github.com/emqx/blog/blob/main/zh/202511/real-time-mqtt-pub-sub-and-durable-queues-natively-in-emqx.md))
 - [连接现代数据湖仓：物联网数据实时接入 Snowflake、BigQuery 与 S3 Tables](https://www.emqx.com/zh/blog/connecting-to-the-modern-data-lakehouse) ([Edit](https://github.com/emqx/blog/blob/main/zh/202511/connecting-to-the-modern-data-lakehouse.md))
 - [硬件故障，服务不停：EMQX 创造 1770 天不间断运行纪录](https://www.emqx.com/zh/blog/emqx-1770-days-uninterrupted-operation) ([Edit](https://github.com/emqx/blog/blob/main/zh/202511/emqx-1770-days-uninterrupted-operation.md))
