@@ -2,19 +2,25 @@ In the fast-evolving world of IoT, efficient device communication is critical—
 
 ## What Is MQTT?
 
-MQTT (Message Queuing Telemetry Transport) is a lightweight, publish-subscribe based messaging protocol designed for resource-constrained devices and low-bandwidth, high-latency, or unreliable networks. It is widely used in Internet of Things (IoT) applications, providing efficient communication between sensors, actuators, and other devices.
+MQTT (Message Queuing Telemetry Transport) is a lightweight, publish-subscribe based messaging protocol designed for resource-constrained devices and low-bandwidth, high-latency, or unreliable networks. 
+
+>**According to the [OASIS Standard](https://www.oasis-open.org/standard/mqtt-v5-0-os/):** "MQTT is a Client Server publish/subscribe messaging transport protocol. It is light weight, open, simple, and designed so as to be easy to implement."
+
+It is widely used in Internet of Things (IoT) applications, providing efficient communication between sensors, actuators, and other devices.
 
 ## Why Is MQTT the Best Protocol for IoT?
 
 MQTT has emerged as one of the best [IoT protocols](https://www.emqx.com/en/blog/iot-protocols-mqtt-coap-lwm2m) due to its unique features and capabilities tailored to the specific needs of IoT systems. Some of the key reasons include:
 
-- **Lightweight:** IoT devices are often constrained in terms of processing power, memory, and energy consumption. MQTT's minimal overhead and small packet size make it ideal for these devices, as it consumes fewer resources, enabling efficient communication even with limited capabilities.
+- **Lightweight:** IoT devices are often constrained in terms of processing power, memory, and energy consumption. MQTT's minimal overhead and small packet size make it ideal for these devices, as it consumes fewer resources, enabling efficient communication even with limited capabilities. **Studies show that MQTT requires up to 80% less network bandwidth than HTTP for transmitting the same amount of data.**
 - **Reliable:** IoT networks can experience high latency or unstable connections. MQTT's support for different QoS levels, session awareness, and persistent connections ensures reliable message delivery even in challenging conditions, making it well-suited for IoT applications.
 - **Secure communications:** Security is crucial in IoT networks as they often transmit sensitive data. MQTT supports Transport Layer Security (TLS) and Secure Sockets Layer (SSL) encryption, ensuring data confidentiality during transmission. Additionally, it provides [authentication](https://www.emqx.com/en/blog/securing-mqtt-with-username-and-password-authentication) and [authorization](https://www.emqx.com/en/blog/authorization-in-mqtt-using-acls-to-control-access-to-mqtt-messaging) mechanisms through username/password credentials or client certificates, safeguarding access to the network and its resources.
 - **Bi-directionality:** [MQTT's publish-subscribe model](https://www.emqx.com/en/blog/mqtt-5-introduction-to-publish-subscribe-model) allows for seamless bi-directional communication between devices. Clients can both publish messages to topics and subscribe to receive messages on specific topics, enabling effective data exchange in diverse IoT ecosystems without direct coupling between devices. This model also simplifies the integration of new devices, ensuring easy scalability.
 - **Continuous, stateful sessions:** MQTT allows clients to maintain stateful sessions with the broker, enabling the system to remember subscriptions and undelivered messages even after disconnection. Clients can also specify a keep-alive interval during connection, which prompts the broker to periodically check the connection status. If the connection is lost, the broker stores undelivered messages (depending on the QoS level) and attempts to deliver them when the client reconnects. This feature ensures reliable communication and reduces the risk of data loss due to intermittent connectivity.
 - **Large-scale IoT device support:** IoT systems often involve a large number of devices, requiring a protocol that can handle massive-scale deployments. MQTT's lightweight nature, low bandwidth consumption, and efficient use of resources make it well-suited for large-scale IoT applications. The publish-subscribe pattern allows MQTT to scale effectively, as it decouples sender and receiver, reducing network traffic and resource usage. Furthermore, the protocol's support for different QoS levels allows customization of message delivery based on the application's requirements, ensuring optimal performance in various scenarios.
-- **Language support:** IoT systems often include devices and applications developed using various programming languages. MQTT's broad language support enables easy integration with multiple platforms and technologies, fostering seamless communication and interoperability in diverse IoT ecosystems. You can visit our [MQTT Client Programming](https://www.emqx.com/en/blog/category/mqtt-programming) blog series to learn how to use MQTT in PHP, Node.js, Python, Golang, Node.js, and other programming languages.
+- **Language support:** IoT systems often include devices and applications developed using various programming languages. MQTT's broad language support enables easy integration with multiple platforms and technologies, fostering seamless communication and interoperability in diverse IoT ecosystems. You can visit our [MQTT Client Programming](https://www.emqx.com/en/blog/category/mqtt-programming) blog series to learn how to use MQTT in PHP, Node.js, Python, Golang, and other programming languages.
+
+> According to the [Eclipse Foundation's 2024 IoT & Embedded Developer Survey](https://newsroom.eclipse.org/news/announcements/eclipse-foundation-unveils-2024-iot-embedded-developer-survey-results): MQTT leads as the preferred IIoT communication protocol with 56% adoption, a 7% increase from 2023.
 
 ## How Does MQTT Work?
 
@@ -36,7 +42,7 @@ The publish-subscribe pattern differs from the client-server pattern in that it 
 
 The following diagram shows the MQTT publish/subscribe process. The temperature sensor connects to the MQTT server as a client and publishes temperature data to a topic (e.g., `Temperature`), and the server receives the message and forwards it to the client subscribed to the `Temperature` topic.
 
-![Publish–subscribe pattern](https://assets.emqx.com/images/a6baf485733448bc9730f47bf1f41135.png)
+![Diagram showing MQTT architecture: A temperature sensor publishing data to an MQTT Broker, which forwards it to a subscriber](https://assets.emqx.com/images/a6baf485733448bc9730f47bf1f41135.png)
 
 ### **MQTT Topic**
 
@@ -94,6 +100,7 @@ The fully managed cloud service is the easiest way to start an MQTT service. EMQ
       </div>
       <a href="https://accounts.emqx.com/signup?continue=https://cloud-intl.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">Get Started →</a>
 </section>
+
 
 **Free Public MQTT Broker**
 
@@ -261,6 +268,14 @@ For more details on MQTT Will Message, please check the blog [Use of MQTT Will M
 
 In addition to MQTT, protocols like HTTP, WebSocket, and CoAP are also commonly used in the IoT space. Compared to these, MQTT offers key advantages such as lower bandwidth consumption and a lightweight publish-subscribe model, making it more suitable for resource-constrained environments and large-scale device networks.
 
+| **Feature**      | **MQTT**                                | **HTTP**                    | **WebSocket**      |
+| ---------------- | --------------------------------------- | --------------------------- | ------------------ |
+| **Design Model** | Publish/Subscribe                       | Request/Response            | Full-duplex        |
+| **Header Size**  | Min **2 Bytes** (Extremely Lightweight) | Hundreds of Bytes           | Medium overhead    |
+| **Power Usage**  | **Low** (Ideal for battery devices)     | High                        | Medium/High        |
+| **Latency**      | Low                                     | High                        | Low                |
+| **Best For**     | IoT Devices, Unreliable Networks        | Web APIs, Document Transfer | Real-time Web Apps |
+
 For a detailed comparison of MQTT with these protocols, refer to these blog posts:
 
 - [MQTT vs HTTP](https://www.emqx.com/en/blog/mqtt-vs-http)
@@ -312,6 +327,7 @@ Serverless MQTT broker emerges as a cutting-edge architectural innovation, enabl
       <a href="https://accounts.emqx.com/signup?continue=https://cloud-intl.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">Get Started →</a>
 </section>
 
+
 ### **MQTT Multi-Tenancy**
 
 Multi-tenancy architecture is the vital aspect of serverless MQTT broker. IoT devices from different users or tenants can connect to the same large-scale MQTT cluster while keeping their data and business logic isolated from other tenants. MQTT broker with multi-tenancy support will reduce management overhead and allow greater flexibility for complex scenarios or large-scale IoT applications.
@@ -321,6 +337,8 @@ For more details, please check out the blog: [Multi-Tenancy Architecture in MQTT
 ### **MQTT Sparkplug 3.0**
 
 [MQTT Sparkplug](https://www.emqx.com/en/blog/mqtt-sparkplug-bridging-it-and-ot-in-industry-4-0) defines how to connect industrial devices, including sensors, actuators, PLCs, and gateways using MQTT. It aimed to simplify connecting and communicating with disparate industrial devices and achieve efficient industrial data acquisition, processing, and analysis. The latest 3.0 version with more advanced features has the potential to be more widely adopted in the Industrial IoT.
+
+>As defined by the **[Eclipse Sparkplug Working Group](https://sparkplug.eclipse.org/)**: "Sparkplug provides an open and freely available specification for how Edge of Network (EoN) gateways or native MQTT-enabled end devices communicate within an MQTT Infrastructure".
 
 For more details, please check out the blog: [MQTT Sparkplug: Bridging IT and OT for IIoT in Industry 4.0](https://www.emqx.com/en/blog/mqtt-sparkplug-bridging-it-and-ot-in-industry-4-0).
 
@@ -346,6 +364,57 @@ The rapid growth of IoT and the advent of AI have opened new possibilities for i
 
 For more details, please check out the white paper: [MQTT Platform for AI: Empowering AI with Real-Time Data](https://www.emqx.com/en/resources/mqtt-platform-for-ai).
 
+## FAQ
+
+### 1. Is MQTT TCP or UDP?
+
+MQTT runs over **TCP/IP**. However, advanced implementations like MQTT-SN can run over UDP, and MQTT over QUIC (supported by EMQX) utilizes UDP for lower latency.
+
+### 2. What is the default port for MQTT?
+
+The standard ports are **1883** for non-encrypted MQTT and **8883** for specific encrypted MQTT (over TLS/SSL).
+
+### 3. Is MQTT secure?
+
+Yes. While the base protocol is simple, security is enforced via **TLS/SSL encryption** for data in transit and **username/password** or **client certificates (X.509)** for authentication.
+
+### 4. What is the maximum message size in MQTT?
+
+**The maximum packet size in the MQTT protocol is 256 MB.** However, most brokers default to a lower limit (e.g., 1 MB or 64 KB) to protect network stability. For large file transfers (like firmware updates or images), it is recommended to split the file into chunks or send a URL link instead of the raw file payload.
+
+### 5. Does MQTT guarantee message delivery?
+
+MQTT provides three Quality of Service (QoS) levels:
+
+- QoS 0: At most once (fire-and-forget, no guarantee)
+- QoS 1: At least once (guaranteed delivery, possible duplicates)
+- QoS 2: Exactly once (guaranteed delivery without duplicates) Therefore, delivery is guaranteed only when using QoS 1 or QoS 2.
+
+### 6. When should you NOT use MQTT?
+
+**You should avoid MQTT for real-time video streaming or high-frequency raw audio data.** MQTT is optimized for control messages and sensor data (discrete packets). For continuous high-bandwidth data streams, protocols like **RTSP**, **WebRTC**, or raw **UDP** are better choices.
+
+### 7. How many concurrent connections can an MQTT broker handle?
+
+**A modern, scalable MQTT broker like EMQX can handle over 100 million concurrent connections per cluster.** While traditional brokers might struggle with 10k-100k connections, distributed brokers are designed to scale horizontally to support massive IoT deployments like smart cities or connected vehicles.
+
+### 8. What is the difference between MQTT 3.1.1 and MQTT 5.0?
+
+**MQTT 5.0 is a major upgrade that adds flexibility and error handling.** Key improvements in MQTT 5.0 include:
+
+- **Reason Codes:** Better feedback on why a connection or publish failed.
+- **User Properties:** Custom key-value headers (similar to HTTP headers).
+- **Shared Subscriptions:** Load balancing messages across multiple subscribers.
+- **Message Expiry:** Automatically deleting old messages.
+
+### 9. What is the Keep Alive interval in MQTT?
+
+**The Keep Alive interval is a heartbeat mechanism typically set between 60 to 120 seconds.** It ensures the connection is still open even when no data is being exchanged. If the broker does not receive a PINGREQ from the client within 1.5 times the Keep Alive interval, it will close the connection and send the "Last Will and Testament" (LWT) message if configured.
+
+### 10. Can MQTT be used with a Web Browser?
+
+**Yes, but browsers cannot use raw TCP; they must use MQTT over WebSocket.** Standard MQTT runs on TCP (port 1883), which browsers do not support directly. By wrapping MQTT packets in WebSockets (usually on port 8083 or 8084), web apps (like React or Vue dashboards) can communicate directly with IoT devices.
+
 ## Learn More About MQTT
 
 We have now completed our journey to the fundamental concepts of MQTT and its usage process. You can now put your knowledge to start using the MQTT protocol. For more information on MQTT topics, wildcards, retained messages, last will, and other features, you can check out the "[MQTT Guide 2025: Beginner to Advanced](https://www.emqx.com/en/mqtt-guide)" article series provided by EMQ. This series will take you through the advanced applications of MQTT and help you get started with MQTT application and service development.
@@ -353,7 +422,6 @@ We have now completed our journey to the fundamental concepts of MQTT and its us
 **Related Resources**
 
 - [MQTT Broker: How It Works, Popular Options, and Quickstart](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison)
-- [Free MQTT Broker: Exploring Options and Choosing the Right Solution](https://www.emqx.com/en/blog/free-mqtt-broker)
 - [Comparison of Open Source MQTT Brokers 2025](https://www.emqx.com/en/blog/a-comprehensive-comparison-of-open-source-mqtt-brokers-in-2023)
 - [MQTT Client Tools 101: A Beginner's Guide](https://www.emqx.com/en/blog/mqtt-client-tools)
 - [MQTT in Python with Paho Client: Beginner's Guide 2025](https://www.emqx.com/en/blog/how-to-use-mqtt-in-python)
