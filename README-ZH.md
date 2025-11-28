@@ -849,6 +849,7 @@ Guarantee the availability and reliability of the IoT platform.
 
 ## [应用案例](https://www.emqx.com/zh/blog/category/use-cases)
 
+- [案例研究：汽车制造如何利用 EMQ UNS 方案实现生产革新](https://www.emqx.com/zh/blog/how-emqx-unified-namespace-powers-ai-transformation-in-automotive-manufacturing) ([Edit](https://github.com/emqx/blog/blob/main/zh/202511/how-emqx-unified-namespace-powers-ai-transformation-in-automotive-manufacturing.md))
 - [EMQ UNS 解决方案如何助力食品制造业 OEE 计算](https://www.emqx.com/zh/blog/diving-into-emq-s-uns-solution) ([Edit](https://github.com/emqx/blog/blob/main/zh/202510/diving-into-emq-s-uns-solution.md))
 - [吉利汽车采用 EMQX 与 AutoMQ 联合方案构建公私有云一体化的车联网核心架构](https://www.emqx.com/zh/blog/emqx-and-automq) ([Edit](https://github.com/emqx/blog/blob/main/zh/202504/emqx-and-automq.md))
 - [MQTT 协议赋能石油行业：实时可靠的生产数据采集](https://www.emqx.com/zh/blog/application-of-mqtt-protocol-in-oil-and-gas-industry) ([Edit](https://github.com/emqx/blog/blob/main/zh/202503/application-of-mqtt-protocol-in-oil-and-gas-industry.md))

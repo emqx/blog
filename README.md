@@ -7,12 +7,12 @@
 ## [MQTT Tutorials](https://www.emqx.com/en/blog/category/mqtt-protocol)
 Get to know the preferred protocol in IoT from beginner to master.
 
+- [Mastering MQTT: The Ultimate Beginner's Guide for 2025](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) ([Edit](https://github.com/emqx/blog/blob/main/en/202510/the-easiest-guide-to-getting-started-with-mqtt.md))
 - [MQTT vs. MQ: A Guide to Choosing the Right Messaging Platform](https://www.emqx.com/en/blog/mqtt-vs-mq) ([Edit](https://github.com/emqx/blog/blob/main/en/202510/mqtt-vs-mq.md))
 - [MQTT QoS 0, 1, 2 Explained: A Quickstart Guide](https://www.emqx.com/en/blog/introduction-to-mqtt-qos) ([Edit](https://github.com/emqx/blog/blob/main/en/202508/introduction-to-mqtt-qos.md))
 - [MQTT vs WebSocket: Key Differences & Applications](https://www.emqx.com/en/blog/mqtt-vs-websocket) ([Edit](https://github.com/emqx/blog/blob/main/en/202507/mqtt-vs-websocket.md))
 - [MQTT 5.0: 7 New Features and a Migration Checklist](https://www.emqx.com/en/blog/introduction-to-mqtt-5) ([Edit](https://github.com/emqx/blog/blob/main/en/202506/introduction-to-mqtt-5.md))
 - [MQTT Trends for 2025 and Beyond: Powering the Future of AI and IoT](https://www.emqx.com/en/blog/mqtt-trends-for-2025-and-beyond) ([Edit](https://github.com/emqx/blog/blob/main/en/202506/mqtt-trends-for-2025-and-beyond.md))
-- [Mastering MQTT: The Ultimate Beginner's Guide for 2025](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) ([Edit](https://github.com/emqx/blog/blob/main/en/202502/the-easiest-guide-to-getting-started-with-mqtt.md))
 - [MQTT Topics and Wildcards: A Beginner's Guide](https://www.emqx.com/en/blog/advanced-features-of-mqtt-topics) ([Edit](https://github.com/emqx/blog/blob/main/en/202407/advanced-features-of-mqtt-topics.md))
 - [Connecting MQTT and REST API: A Comprehensive Tutorial](https://www.emqx.com/en/blog/connecting-mqtt-and-rest-api) ([Edit](https://github.com/emqx/blog/blob/main/en/202407/connecting-mqtt-and-rest-api.md))
 - [MQTT vs HTTP: Ultimate IoT Protocol Comparison Guide](https://www.emqx.com/en/blog/mqtt-vs-http) ([Edit](https://github.com/emqx/blog/blob/main/en/202406/mqtt-vs-http.md))
