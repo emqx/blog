@@ -114,6 +114,7 @@ Get to know the preferred protocol in IoT from beginner to master.
 ## [MQTT Programming](https://www.emqx.com/en/blog/category/mqtt-programming)
 Best practice of MQTT in various clients.
 
+- [How to Use MQTT in C# with MQTTnet](https://www.emqx.com/en/blog/connecting-to-serverless-mqtt-broker-with-mqttnet-in-csharp) ([Edit](https://github.com/emqx/blog/blob/main/en/202511/connecting-to-serverless-mqtt-broker-with-mqttnet-in-csharp.md))
 - [A Quickstart Guide to Using MQTT over WebSocket](https://www.emqx.com/en/blog/connect-to-mqtt-broker-with-websocket) ([Edit](https://github.com/emqx/blog/blob/main/en/202508/connect-to-mqtt-broker-with-websocket.md))
 - [MQTT in Python with Paho Client: Beginner's Guide 2025](https://www.emqx.com/en/blog/how-to-use-mqtt-in-python) ([Edit](https://github.com/emqx/blog/blob/main/en/202507/how-to-use-mqtt-in-python.md))
 - [Using MQTT with C++: A Comprehensive Guide for IoT Developers](https://www.emqx.com/en/blog/using-mqtt-with-cpp) ([Edit](https://github.com/emqx/blog/blob/main/en/202507/using-mqtt-with-cpp.md))
@@ -134,7 +135,6 @@ Best practice of MQTT in various clients.
 - [How to Use MQTT in Golang with Paho Client](https://www.emqx.com/en/blog/how-to-use-mqtt-in-golang) ([Edit](https://github.com/emqx/blog/blob/main/en/202402/how-to-use-mqtt-in-golang.md))
 - [How to Use MQTT in The React Project](https://www.emqx.com/en/blog/how-to-use-mqtt-in-react) ([Edit](https://github.com/emqx/blog/blob/main/en/202402/how-to-use-mqtt-in-react.md))
 - [MicroPython MQTT Tutorial Based on Raspberry Pi](https://www.emqx.com/en/blog/micro-python-mqtt-tutorial-based-on-raspberry-pi) ([Edit](https://github.com/emqx/blog/blob/main/en/202402/micro-python-mqtt-tutorial-based-on-raspberry-pi.md))
-- [How to Use MQTT in C# with MQTTnet](https://www.emqx.com/en/blog/connecting-to-serverless-mqtt-broker-with-mqttnet-in-csharp) ([Edit](https://github.com/emqx/blog/blob/main/en/202402/connecting-to-serverless-mqtt-broker-with-mqttnet-in-csharp.md))
 - [MQTT with Java: A Beginner's Guide with Examples & FAQs](https://www.emqx.com/en/blog/how-to-use-mqtt-in-java) ([Edit](https://github.com/emqx/blog/blob/main/en/202401/how-to-use-mqtt-in-java.md))
 - [Connecting to a Serverless MQTT Broker in React](https://www.emqx.com/en/blog/connecting-to-a-serverless-mqtt-broker-in-react) ([Edit](https://github.com/emqx/blog/blob/main/en/202309/connecting-to-a-serverless-mqtt-broker-in-react.md))
 - [Using MQTT in Unity with M2MqttUnity Library: A Step-by-Step Guide](https://www.emqx.com/en/blog/using-mqtt-in-unity-with-m2mqttunity-library-a-step-by-step-guide) ([Edit](https://github.com/emqx/blog/blob/main/en/202308/using-mqtt-in-unity-with-m2mqttunity-library-a-step-by-step-guide.md))
@@ -362,6 +362,7 @@ EMQX is the world's most scalable open-source MQTT broker with a high performanc
 ## [EMQX Cloud](https://www.emqx.com/en/blog/category/cloud)
 The easiest way to start MQTT service. Connect your IoT devices to any cloud without the burden of maintaining infrastructure.
 
+- [EMQX Tables GA: From MQTT Data Stream to Time-Series Insight in One Platform](https://www.emqx.com/en/blog/emqx-tables-ga) ([Edit](https://github.com/emqx/blog/blob/main/en/202512/emqx-tables-ga.md))
 - [Announcing EMQX Tables: A Native Time-Series Database for IoT Data (Preview starts today)](https://www.emqx.com/en/blog/announcing-emqx-tables) ([Edit](https://github.com/emqx/blog/blob/main/en/202511/announcing-emqx-tables.md))
 - [Azure IoT Hub: Key Features, Use Cases, Quick Start & Alternative](https://www.emqx.com/en/blog/azure-iot-hub-4-key-features-use-cases-and-how-to-get-started) ([Edit](https://github.com/emqx/blog/blob/main/en/202506/azure-iot-hub-4-key-features-use-cases-and-how-to-get-started.md))
 - [Your Next Move: A Strategy for Upgrading from EMQX Standard](https://www.emqx.com/en/blog/your-next-move-a-strategy-for-upgrading-from-emqx-standard) ([Edit](https://github.com/emqx/blog/blob/main/en/202404/your-next-move-a-strategy-for-upgrading-from-emqx-standard.md))
