@@ -362,6 +362,7 @@ EMQX is the world's most scalable open-source MQTT broker with a high performanc
 ## [EMQX Cloud](https://www.emqx.com/en/blog/category/cloud)
 The easiest way to start MQTT service. Connect your IoT devices to any cloud without the burden of maintaining infrastructure.
 
+- [Enabling Intelligent UAV Connectivity with EMQX Cloud](https://www.emqx.com/en/blog/building-uav-unified-access-platform-with-emqx-cloud) ([Edit](https://github.com/emqx/blog/blob/main/en/202512/building-uav-unified-access-platform-with-emqx-cloud.md))
 - [EMQX Tables GA: From MQTT Data Stream to Time-Series Insight in One Platform](https://www.emqx.com/en/blog/emqx-tables-ga) ([Edit](https://github.com/emqx/blog/blob/main/en/202512/emqx-tables-ga.md))
 - [Announcing EMQX Tables: A Native Time-Series Database for IoT Data (Preview starts today)](https://www.emqx.com/en/blog/announcing-emqx-tables) ([Edit](https://github.com/emqx/blog/blob/main/en/202511/announcing-emqx-tables.md))
 - [Azure IoT Hub: Key Features, Use Cases, Quick Start & Alternative](https://www.emqx.com/en/blog/azure-iot-hub-4-key-features-use-cases-and-how-to-get-started) ([Edit](https://github.com/emqx/blog/blob/main/en/202506/azure-iot-hub-4-key-features-use-cases-and-how-to-get-started.md))
@@ -809,6 +810,7 @@ Guarantee the availability and reliability of the IoT platform.
 
 ## [Use Cases](https://www.emqx.com/en/blog/category/use-cases)
 
+- [Enabling Intelligent UAV Connectivity with EMQX Cloud](https://www.emqx.com/en/blog/building-uav-unified-access-platform-with-emqx-cloud) ([Edit](https://github.com/emqx/blog/blob/main/en/202512/building-uav-unified-access-platform-with-emqx-cloud.md))
 - [How EMQX Unified Namespace Powers AI Transformation in Automotive Manufacturing](https://www.emqx.com/en/blog/how-emqx-unified-namespace-powers-ai-transformation-in-automotive-manufacturing) ([Edit](https://github.com/emqx/blog/blob/main/en/202511/how-emqx-unified-namespace-powers-ai-transformation-in-automotive-manufacturing.md))
 - [Connecting 3D Printers to Cloud with MQTT and EMQX for Personal Manufacturing](https://www.emqx.com/en/blog/connecting-3d-printers-to-cloud-with-mqtt-and-emqx) ([Edit](https://github.com/emqx/blog/blob/main/en/202510/connecting-3d-printers-to-cloud-with-mqtt-and-emqx.md))
 - [Revolutionizing ESG and Carbon Footprint Reporting with a Unified Namespace](https://www.emqx.com/en/blog/unified-namespace-esg-carbon-reporting) ([Edit](https://github.com/emqx/blog/blob/main/en/202510/unified-namespace-esg-carbon-reporting.md))
