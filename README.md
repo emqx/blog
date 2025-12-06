@@ -224,6 +224,7 @@ Explore more with & via EMQ.
 ## [EMQX Open Source | Broker](https://www.emqx.com/en/blog/category/emqx)
 EMQX is the world's most scalable open-source MQTT broker with a high performance that connects 100M+ IoT devices in 1 cluster, while maintaining 1M message per second throughput and sub-millisecond latency.
 
+- [Why AWS IoT Core Gets Expensive at Scale and How EMQX Cuts Spending by Up to 80%](https://www.emqx.com/en/blog/how-emqx-cuts-spending-by-up-to-80-percent) ([Edit](https://github.com/emqx/blog/blob/main/en/202512/how-emqx-cuts-spending-by-up-to-80-percent.md))
 - [Unlock Petabyte-Scale Analytics: A Guide to EMQX 6.0's Amazon Redshift Integration](https://www.emqx.com/en/blog/emqx-6-amazon-redshift-integration-guide) ([Edit](https://github.com/emqx/blog/blob/main/en/202511/emqx-6-amazon-redshift-integration-guide.md))
 - [1770 Days, Zero Downtime: EMQX's Resilient Architecture Defies Hardware Failure](https://www.emqx.com/en/blog/1770-days-zero-downtime) ([Edit](https://github.com/emqx/blog/blob/main/en/202511/1770-days-zero-downtime.md))
 - [EMQX Durable Storage: Building High-Reliability MQTT with RocksDB](https://www.emqx.com/en/blog/emqx-durable-storage) ([Edit](https://github.com/emqx/blog/blob/main/en/202511/emqx-durable-storage.md))
