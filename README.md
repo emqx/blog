@@ -554,6 +554,7 @@ Build a reliable, efficient and industry-specific Internet of Vehicles platform 
 
 ## [Industrial IoT | Unified Namespace | Sparkplug](https://www.emqx.com/en/blog/category/industrial-iot)
 
+- [EMQX UNS Powers a Digital Twin for Predictive, Efficient Production](https://www.emqx.com/en/blog/emqx-uns-powers-a-digital-twin-for-predictive-efficient-production) ([Edit](https://github.com/emqx/blog/blob/main/en/202512/emqx-uns-powers-a-digital-twin-for-predictive-efficient-production.md))
 - [Top 3 Open Source MQTT Brokers for Industrial IoT in 2025](https://www.emqx.com/en/blog/top-3-open-source-mqtt-brokers-for-industrial-iot-in-2023) ([Edit](https://github.com/emqx/blog/blob/main/en/202508/top-3-open-source-mqtt-brokers-for-industrial-iot-in-2023.md))
 - [KNX Protocol: The Basics and Its Possibilities with IoT](https://www.emqx.com/en/blog/knx-protocol) ([Edit](https://github.com/emqx/blog/blob/main/en/202506/knx-protocol.md))
 - [Smart Manufacturing Explained: Basics, Use Cases & Best Practices](https://www.emqx.com/en/blog/the-smart-manufacturing-revolution) ([Edit](https://github.com/emqx/blog/blob/main/en/202506/the-smart-manufacturing-revolution.md))
