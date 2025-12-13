@@ -225,6 +225,7 @@ Explore more with & via EMQ.
 EMQX is the world's most scalable open-source MQTT broker with a high performance that connects 100M+ IoT devices in 1 cluster, while maintaining 1M message per second throughput and sub-millisecond latency.
 
 - [EMQX Edge 1.2.0 Released: Docker Support and New Dashboard](https://www.emqx.com/en/blog/emqx-edge-1-2-0-released) ([Edit](https://github.com/emqx/blog/blob/main/en/202512/emqx-edge-1-2-0-released.md))
+- [AWS IoT Core vs. EMQX: In-Depth Comparison of MQTT Features and Platform Limitations](https://www.emqx.com/en/blog/aws-iot-core-vs-emqx-in-depth-comparison-of-mqtt-features) ([Edit](https://github.com/emqx/blog/blob/main/en/202512/aws-iot-core-vs-emqx-in-depth-comparison-of-mqtt-features.md))
 - [Why AWS IoT Core Gets Expensive at Scale and How EMQX Cuts Spending by Up to 80%](https://www.emqx.com/en/blog/how-emqx-cuts-spending-by-up-to-80-percent) ([Edit](https://github.com/emqx/blog/blob/main/en/202512/how-emqx-cuts-spending-by-up-to-80-percent.md))
 - [Unlock Petabyte-Scale Analytics: A Guide to EMQX 6.0's Amazon Redshift Integration](https://www.emqx.com/en/blog/emqx-6-amazon-redshift-integration-guide) ([Edit](https://github.com/emqx/blog/blob/main/en/202511/emqx-6-amazon-redshift-integration-guide.md))
 - [1770 Days, Zero Downtime: EMQX's Resilient Architecture Defies Hardware Failure](https://www.emqx.com/en/blog/1770-days-zero-downtime) ([Edit](https://github.com/emqx/blog/blob/main/en/202511/1770-days-zero-downtime.md))
