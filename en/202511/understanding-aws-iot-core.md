@@ -162,34 +162,33 @@ After you subscribe to the test topic, run ./start.sh on your device. Immediatel
 
  Click **Continue** to finish the tutorial and see a summary of the activity.
 
-## AWS + EMQX Cloud: A Better Choice for IoT Communication
+## AWS IoT Core Alternative: Save Up to 80% with EMQX Cloud
 
-Working with AWS IoT Core can raise some challenges related to management of large-scale MQTT communications. [EMQX Cloud](https://www.emqx.com/en/cloud) can help, with a comprehensive MQTT service that is fully managed and customizable to the needs of users. This includes flexible pricing models, customizable connection specifications, and the freedom to select a cloud provider and integrate with other cloud resources.
+[EMQX Cloud](https://www.emqx.com/en/cloud) is a fully managed MQTT data platform that allows you to connect devices, process IoT data in real time, store time-series information, and perform analytics, all within a unified managed service.
 
-Compared to the AWS IoT, EMQX Cloud, can provide a complete solution to match the AWS IoT ecosystem.
+As the world’s first fully managed MQTT 5.0 cloud service, EMQX Cloud extends beyond a traditional broker to provide a complete IoT data backbone. It supports large-scale device connectivity, real-time data streaming and processing, high-performance time-series storage, and instant analytics across a secure, globally distributed platform. With EMQX Cloud, you can build end-to-end IoT data pipelines in minutes, from device communication to visualization and analysis.
 
-### EMQX Cloud Products
+### Why Switch from AWS IoT Core to EMQX?
 
-- **[BYOC (Bring Your Own Cloud)](https://www.emqx.com/en/cloud/byoc):** Seamlessly integrates the EMQX MQTT server with Amazon Web Services or other existing cloud services. Keep your data secure in your own cloud and manage it with EMQ's expertise.
-- **[Serverless](https://www.emqx.com/en/cloud/serverless-mqtt):** Provides MQTT services on a secure and scalable cluster with usage-based pricing. The service is completely free within the free quota and supports up to 1000 concurrent connections.
-- **[Dedicated Plan](https://www.emqx.com/en/cloud/dedicated):** Provides MQTT services on a dedicated EMQX cluster with high performance, reliability, and data integration, without managing your own cluster. Perfect for businesses of all sizes.
+- **Save Up to 80%**: Drastically reduce Total Cost of Ownership (TCO) compared to AWS's complex, pay-per-message model. Get predictable, transparent billing at scale.
+- **Full MQTT 5.0 Compliance:** Full compliance with the latest MQTT standard ensures future-proof connectivity and superior features like shared subscriptions and request/response patterns.
+- **No Service Limits/Quotas:** Unlike AWS, EMQX's dedicated clusters eliminate artificial throttling, device limits, or enforced quotas, providing true horizontal scaling capacity.
+- **Multi-Cloud Freedom:** Avoid being locked into a proprietary ecosystem. Deploy flexibly across AWS, Azure, GCP, or on-premise using our open, source-available core.
 
-### Tight Integration with AWS Services
+### AWS IoT Core vs. EMQX Cloud
 
-EMQX integrates smoothly with Amazon Web Services:
+| **Comparison**                | **AWS IoT Core**                                             | **EMQX Cloud**                                        |
+| :---------------------------- | :----------------------------------------------------------- | :---------------------------------------------------- |
+| Pricing Model                 | Complex, Metered per Message/Connection/Rule.                | Simple & Transparent (PAYG or flat-rate Dedicated).   |
+| Cost Predictability           | **Low**<br>Prone to "bill shock".                            | **High**<br/>Fixed-rate plans offer budget certainty. |
+| Vendor Lock-In                | **High**<br>Deeply integrated with proprietary AWS services. | **None**<br>Open standards and source-available core. |
+| Multi-Cloud Support           | AWS only.                                                    | Multi-cloud (AWS, Azure, GCP), Hybrid, On-premise.    |
+| Scalability (Max Connections) | Limited, often requires sharding/manual scaling.             | Millions of concurrent connections per cluster.       |
+| Latency                       | Variable, higher at peak loads.                              | Guaranteed Sub-millisecond latency (Erlang core).     |
+| Integration                   | Rules Engine (Additional Cost/Metered).                      | Built-in SQL Rule Engine (Free, 50+ integrations).    |
+| Support                       | Docs and paid support; Free Tier for 12 months.              | 24/7 expert team; vibrant community for open-source.  |
 
-- EMQX Cloud Dedicated cluster can be deployed in 10 regions in AWS, seamlessly integrating with existing resources in AWS.
-- EMQX Cloud provides data integration with 40+ services (connectors), including databases, message queues, and AWS services like DynamoDB.
-- You can subscribe to EMQX Cloud from the AWS marketplace, and manage all service bills in AWS Billing.
-
-### Benefits of Using EMQX Cloud
-
-- **Hassle-Free Management:** EMQX Cloud fully manages setup, maintenance, and updates.
-- **Cost-Effective:** EMQX Cloud offers a variety of pricing models, such as by consumption or by time, which reduce the total cost of ownership.
-- **100% MQTT:** 100% compliant with MQTT 3.1, 3.1.1, and 5.0 standards with all 3 QoS level. Seamless integration with all MQTT clients.
-- **Seamless Scalability:** Scale up or down on demand without any worries about server capacity or performance.
-- **Up to 99.99% SLA:** EMQX Cloud Ensure maximum uptime and availability with our highly available, fault-tolerant architecture.
-- **24 x 7 Technical Support:** A dedicated team of experts is always available to assist you with any issues at any time.
+Learn more: [Switch from AWS IoT Core to EMQX | Save Up to 80% on Costs](https://www.emqx.com/en/switch-from-aws)
 
 
 
