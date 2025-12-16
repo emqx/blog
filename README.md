@@ -786,15 +786,6 @@ Accelerate digital transformation of industries based on EMQ data infrastructure
 - [Erlang vs Scala](https://www.emqx.com/en/blog/erlang-vs-scala) ([Edit](https://github.com/emqx/blog/blob/main/en/201809/erlang-vs-scala.md))
 
 
-## [Community](https://www.emqx.com/en/blog/category/community)
-
-- [Join Hacktoberfest 2023 with EMQ Community!](https://www.emqx.com/en/blog/join-hacktoberfest-2023-with-emq-community) ([Edit](https://github.com/emqx/blog/blob/main/en/202309/join-hacktoberfest-2023-with-emq-community.md))
-- [Connecting to a Serverless MQTT Broker in React](https://www.emqx.com/en/blog/connecting-to-a-serverless-mqtt-broker-in-react) ([Edit](https://github.com/emqx/blog/blob/main/en/202309/connecting-to-a-serverless-mqtt-broker-in-react.md))
-- [We'd Appreciate Your Feedback](https://www.emqx.com/en/blog/we-d-appreciate-your-feedback) ([Edit](https://github.com/emqx/blog/blob/main/en/202212/we-d-appreciate-your-feedback.md))
-- [Solicitation notice for quality articles](https://www.emqx.com/en/blog/solicitation-notice-for-quality-articles) ([Edit](https://github.com/emqx/blog/blob/main/en/202204/solicitation-notice-for-quality-articles.md))
-- [EMQ is now the foundational sponsor of OASIS to drive MQTT specification forward together](https://www.emqx.com/en/blog/emq-is-now-the-foundational-member-of-oasis) ([Edit](https://github.com/emqx/blog/blob/main/en/202202/emq-is-now-the-foundational-member-of-oasis.md))
-
-
 ## [IoT Testing](https://www.emqx.com/en/blog/category/iot-testing)
 Guarantee the availability and reliability of the IoT platform.
 
@@ -808,8 +799,6 @@ Guarantee the availability and reliability of the IoT platform.
 - [Open MQTT Benchmarking Comparison: EMQX vs Mosquitto](https://www.emqx.com/en/blog/open-mqtt-benchmarking-comparison-emqx-vs-mosquitto) ([Edit](https://github.com/emqx/blog/blob/main/en/202304/open-mqtt-benchmarking-comparison-emqx-vs-mosquitto.md))
 - [Open MQTT Benchmark Suite: The Ultimate Guide to MQTT Performance Testing](https://www.emqx.com/en/blog/open-mqtt-benchmark-suite-the-ultimate-guide-to-mqtt-performance-testing) ([Edit](https://github.com/emqx/blog/blob/main/en/202304/open-mqtt-benchmark-suite-the-ultimate-guide-to-mqtt-performance-testing.md))
 - [How to Use the MQTT Plug-in in JMeter](https://www.emqx.com/en/blog/how-to-use-the-mqtt-plugin-in-jmeter) ([Edit](https://github.com/emqx/blog/blob/main/en/202211/how-to-use-the-mqtt-plugin-in-jmeter.md))
-- [Introduction to JMeter test components](https://www.emqx.com/en/blog/introduction-to-jmeter-test-components) ([Edit](https://github.com/emqx/blog/blob/main/en/202202/introduction-to-jmeter-test-components.md))
-- [Introduction to open-source test tool - JMeter](https://www.emqx.com/en/blog/introduction-to-the-open-source-testing-tool-jmeter) ([Edit](https://github.com/emqx/blog/blob/main/en/202201/introduction-to-the-open-source-testing-tool-jmeter.md))
 
 
 ## [Use Cases](https://www.emqx.com/en/blog/category/use-cases)
