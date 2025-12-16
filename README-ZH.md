@@ -845,7 +845,6 @@ Guarantee the availability and reliability of the IoT platform.
 - [JMeter MQTT 在连接测试场景中的使用](https://www.emqx.com/zh/blog/test-mqtt-connection-with-jmeter) ([Edit](https://github.com/emqx/blog/blob/main/zh/202203/test-mqtt-connection-with-jmeter.md))
 - [如何在 JMeter 中使用 MQTT 插件](https://www.emqx.com/zh/blog/how-to-use-the-mqtt-plugin-in-jmeter) ([Edit](https://github.com/emqx/blog/blob/main/zh/202201/how-to-use-the-mqtt-plugin-in-jmeter.md))
 - [MQTT 服务器安全性测试](https://www.emqx.com/zh/blog/mqtt-broker-security-fuzz-testing) ([Edit](https://github.com/emqx/blog/blob/main/zh/202201/mqtt-broker-security-fuzz-testing.md))
-- [JMeter 测试组件介绍](https://www.emqx.com/zh/blog/introduction-to-jmeter-test-components) ([Edit](https://github.com/emqx/blog/blob/main/zh/202112/introduction-to-jmeter-test-components.md))
 - [开源测试工具 JMeter 介绍](https://www.emqx.com/zh/blog/introduction-to-the-open-source-testing-tool-jmeter) ([Edit](https://github.com/emqx/blog/blob/main/zh/202111/introduction-to-the-open-source-testing-tool-jmeter.md))
 
 
