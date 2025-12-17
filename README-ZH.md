@@ -207,6 +207,7 @@ Explore more with & via EMQ.
 ## [EMQX Open Source | Broker](https://www.emqx.com/zh/blog/category/emqx)
 EMQX is the world's most scalable open-source MQTT broker with a high performance that connects 100M+ IoT devices in 1 cluster, while maintaining 1M message per second throughput and sub-millisecond latency.
 
+- [EMQ Tech Day 2026 启动招募，邀您共赴杭州！​​](https://www.emqx.com/zh/blog/emq-tech-day-2026) ([Edit](https://github.com/emqx/blog/blob/main/zh/202512/emq-tech-day-2026.md))
 - [统一 MQTT 发布/订阅与消息队列：EMQX 6.0 背后的架构](https://www.emqx.com/zh/blog/unifying-mqtt-pub-sub-and-message-queuing) ([Edit](https://github.com/emqx/blog/blob/main/zh/202512/unifying-mqtt-pub-sub-and-message-queuing.md))
 - [大规模使用 AWS IoT Core 的成本困境：EMQX 如何削减 80% 开支](https://www.emqx.com/zh/blog/how-emqx-cuts-spending-by-up-to-80-percent) ([Edit](https://github.com/emqx/blog/blob/main/zh/202512/how-emqx-cuts-spending-by-up-to-80-percent.md))
 - [利用 EMQX 消息队列解决关键物联网消息传递挑战](https://www.emqx.com/zh/blog/solving-real-world-iot-messaging-challenges-with-emqx) ([Edit](https://github.com/emqx/blog/blob/main/zh/202511/solving-real-world-iot-messaging-challenges-with-emqx.md))
