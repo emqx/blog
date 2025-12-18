@@ -365,6 +365,7 @@ EMQX is the world's most scalable open-source MQTT broker with a high performanc
 ## [EMQX Cloud](https://www.emqx.com/en/blog/category/cloud)
 The easiest way to start MQTT service. Connect your IoT devices to any cloud without the burden of maintaining infrastructure.
 
+- [EMQX Cloud Expands to Oracle Cloud Infrastructure for Greater Deployment Choice and Global Coverage](https://www.emqx.com/en/blog/emqx-cloud-expands-to-oracle-cloud-infrastructure) ([Edit](https://github.com/emqx/blog/blob/main/en/202512/emqx-cloud-expands-to-oracle-cloud-infrastructure.md))
 - [Enabling Intelligent UAV Connectivity with EMQX Cloud](https://www.emqx.com/en/blog/building-uav-unified-access-platform-with-emqx-cloud) ([Edit](https://github.com/emqx/blog/blob/main/en/202512/building-uav-unified-access-platform-with-emqx-cloud.md))
 - [EMQX Tables GA: From MQTT Data Stream to Time-Series Insight in One Platform](https://www.emqx.com/en/blog/emqx-tables-ga) ([Edit](https://github.com/emqx/blog/blob/main/en/202512/emqx-tables-ga.md))
 - [Announcing EMQX Tables: A Native Time-Series Database for IoT Data (Preview starts today)](https://www.emqx.com/en/blog/announcing-emqx-tables) ([Edit](https://github.com/emqx/blog/blob/main/en/202511/announcing-emqx-tables.md))
