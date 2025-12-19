@@ -224,6 +224,7 @@ Explore more with & via EMQ.
 ## [EMQX Open Source | Broker](https://www.emqx.com/en/blog/category/emqx)
 EMQX is the world's most scalable open-source MQTT broker with a high performance that connects 100M+ IoT devices in 1 cluster, while maintaining 1M message per second throughput and sub-millisecond latency.
 
+- [Azure IoT Hub vs EMQX: A Detailed Comparison of Features, Limits, and Architectural Tradeoffs](https://www.emqx.com/en/blog/azure-iot-hub-vs-emqx) ([Edit](https://github.com/emqx/blog/blob/main/en/202512/azure-iot-hub-vs-emqx.md))
 - [EMQX Edge 1.2.0 Released: Docker Support and New Dashboard](https://www.emqx.com/en/blog/emqx-edge-1-2-0-released) ([Edit](https://github.com/emqx/blog/blob/main/en/202512/emqx-edge-1-2-0-released.md))
 - [AWS IoT Core vs. EMQX: In-Depth Comparison of MQTT Features and Platform Limitations](https://www.emqx.com/en/blog/aws-iot-core-vs-emqx-in-depth-comparison-of-mqtt-features) ([Edit](https://github.com/emqx/blog/blob/main/en/202512/aws-iot-core-vs-emqx-in-depth-comparison-of-mqtt-features.md))
 - [Why AWS IoT Core Gets Expensive at Scale and How EMQX Cuts Spending by Up to 80%](https://www.emqx.com/en/blog/how-emqx-cuts-spending-by-up-to-80-percent) ([Edit](https://github.com/emqx/blog/blob/main/en/202512/how-emqx-cuts-spending-by-up-to-80-percent.md))
