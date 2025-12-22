@@ -56,7 +56,7 @@ if __name__ == '__main__':
             blog_date = '' .join(blog_record['createAt'].split('-')[:2]).replace('-', '')
             blog_title_url = blog_record['titleUrl']
             blog_url = f'https://www.emqx.com/{lang}/blog/{blog_title_url}'
-            file_path = f'https://github.com/emqx/blog/blob/main/{lang}/{blog_date}/{blog_title_url}.md'
+            file_path = f'https://github.com/emqx/blog/edit/main/{lang}/{blog_date}/{blog_title_url}.md'
             for c in blog_categories:
                 if 'blogs' not in category_sort[c]:
                     category_sort[c]['blogs'] = []
