@@ -9,26 +9,17 @@ base_path = sys.argv[1]
 if __name__ == '__main__':
     langs = ['en', 'ja', 'zh']
     category_dict = {
-        'mqtt protocol': {'label': 'MQTT Tutorials', 'description': 'Get to know the preferred protocol in IoT from beginner to master.'},
-        'mqtt broker': {'label': 'MQTT Broker', 'description': ''},
-        'mqtt client': {'label': 'MQTT Client', 'description': ''},
-        'mqtt programming': {'label': 'MQTT Programming', 'description': 'Best practice of MQTT in various clients.'},
-        'security': {'label': 'MQTT Security', 'description': ''},
-        'eco and integration': {'label': 'MQTT Integration (Eco & Integration)', 'description': 'Explore more with & via EMQ.'},
-        'emqx': {'label': 'EMQX Open Source | Broker', 'description': 'EMQX is the world\'s most scalable open-source MQTT broker with a high performance that connects 100M+ IoT devices in 1 cluster, while maintaining 1M message per second throughput and sub-millisecond latency.'},
-        'cloud': {'label': 'EMQX Cloud', 'description': 'The easiest way to start MQTT service. Connect your IoT devices to any cloud without the burden of maintaining infrastructure.'},
-        'enterprise': {'label': 'EMQX Enterprise', 'description': 'The world\'s most scalable and reliable MQTT messaging platform to connect, move and process your data in business-critical scenarios for the IoT era.'},
-        'internet of vehicles': {'label': 'Internet of Vehicles | Connected Cars', 'description': 'Build a reliable, efficient and industry-specific Internet of Vehicles platform based on EMQ\'s practical experience, from theoretical knowledge such as protocol selection to practical operations like platform architecture design.'},
-        'industrial iot': {'label': 'Industrial IoT | Unified Namespace | Sparkplug', 'description': ''},
-        'mqttx': {'label': 'MQTTX', 'description': 'MQTTX is a Fully Open-source MQTT 5.0 cross-platform Desktop Client, makes it easy and quick to create multiple simultaneous online MQTT client connections, test the connection, publish, and subscribe functions of MQTT/TCP, MQTT/TLS, MQTT/WebSocket as well as other MQTT protocol features.'},
-        'neuron': {'label': 'Neuron - IIoT Connectivity Server', 'description': 'IoT edge industrial protocol gateway software, which supports one-stop access to dozens of industrial protocols and converts them into MQTT protocol to access the cloud industrial IoT platform. It just requires ultra-low resource consumption, and supports three major architectures of X86, ARM, and MIPS.'},
-        'nanomq': {'label': 'NanoMQ - Lightweight MQTT broker for IoT Edge', 'description': 'NanoMQ is an MQTT messaging broker + multi-protocol message bus for edge computing. It supports the MQTT protocol and other commonly-used edge bus protocols such as ZeroMQ and Nanomsg, and integrates broker and brokerless message modes to facilitate the creation of one-stop edge data bus applications.'},
-        'kuiper': {'label': 'eKuiper', 'description': 'eKuiper is an edge lightweight IoT data analytics / streaming software implemented by Golang, and it can be run at all kinds of resource constrained edge devices.'},
-        'xmeter': {'label': 'XMeter', 'description': 'XMeter support millions of simulated users, concurrent device connections, and message throughput performance testing. XMeter support the testing of many IoT protocols such as MQTT, LwM2M/CoAP, and can extend richer test scenarios and protocol support for IoT applications.'},
-        'solutions': {'label': 'Solutions', 'description': 'Accelerate digital transformation of industries based on EMQ data infrastructure for IoT.'},
-        'engineering': {'label': 'Engineering', 'description': ''},
-        'community': {'label': 'Community', 'description': ''},
-        'iot testing': {'label': 'IoT Testing', 'description': 'Guarantee the availability and reliability of the IoT platform.'},
+        # Main categories
+        'product': {'label': 'Product', 'description': 'EMQ products including EMQX, EMQX Cloud, Neuron, NanoMQ, MQTTX and more.', 'sub': ['emqx', 'cloud', 'enterprise', 'neuron', 'nanomq', 'mqttx', 'kuiper', 'xmeter', 'releases', 'newsletter']},
+        'mqtt': {'label': 'MQTT', 'description': 'Learn MQTT protocol from beginner to advanced, including tutorials, clients, programming and security.', 'sub': ['mqtt client', 'mqtt protocol', 'mqtt programming', 'mqtt broker', 'security', 'iot testing']},
+        'integration': {'label': 'Integration', 'description': 'Integrate MQTT with databases, message queues, cloud services and more.', 'sub': ['eco and integration']},
+        'use cases': {'label': 'Use Cases', 'description': 'Real-world IoT solutions and industry applications powered by EMQ.', 'sub': ['use cases', 'solutions']},
+        'ai': {'label': 'AI', 'description': 'Empower IoT with AI and LLM capabilities.', 'sub': ['ai']},
+        'iov': {'label': 'Internet of Vehicles', 'description': 'Build reliable and efficient connected vehicle platforms with EMQ.', 'sub': ['internet of vehicles']},
+        'iiot': {'label': 'Industrial IoT', 'description': 'Industrial IoT solutions with Unified Namespace and Sparkplug.', 'sub': ['industrial iot']},
+        # Standalone categories
+        'engineering': {'label': 'Engineering', 'description': 'Technical deep dives and engineering insights.'},
+        'community': {'label': 'Community', 'description': 'Community news, events and contributions.'},
     }
 
     for lang in langs:
@@ -41,7 +32,7 @@ if __name__ == '__main__':
         else:
             readme_path = os.path.join(base_path, f'README-{lang.upper()}.md')
 
-        api = f'https://www.emqx.com/api/v1/blog?_sort=createAt&_limit=1000&site=com'
+        api = f'https://www.emqx.com/api/v1/blog?_sort=createAt&_limit=1000'
         blog_records = requests.get(url=api, headers={'Content-Language': lang}).json()
         if not blog_records['success']:
             print(f'Failed to get blog records: {blog_records}')
