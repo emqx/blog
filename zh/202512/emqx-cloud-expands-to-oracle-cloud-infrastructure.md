@@ -36,7 +36,7 @@ OCI 在制造业、能源、电信及企业 IT 等行业中应用广泛，这些
 
 针对 Google Cloud 平台，新增多伦多 northamerica-northeast2 部署选项。
 
-![image-20251216-225602.png](https://media-cdn.atlassian.com/file/6bc37828-8d0c-450e-ab52-7d1a978aa8cb/image/cdn?allowAnimated=true&client=a2d18c31-8c5a-47a0-8849-dafba793fb31&collection=contentId-2256928857&height=125&max-age=2592000&mode=full-fit&source=mediaCard&token=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJhMmQxOGMzMS04YzVhLTQ3YTAtODg0OS1kYWZiYTc5M2ZiMzEiLCJhY2Nlc3MiOnsidXJuOmZpbGVzdG9yZTpjb2xsZWN0aW9uOmNvbnRlbnRJZC0yMjU2OTI4ODU3IjpbInJlYWQiXX0sImV4cCI6MTc2NjQ2MzEwMiwibmJmIjoxNzY2NDYwMjIyLCJhYUlkIjoiNzAxMjE6OTMzMjljYjYtZWMyMC00NThhLTlkMzktZmYwYTI5MDNjMzBmIiwiaHR0cHM6Ly9pZC5hdGxhc3NpYW4uY29tL2FwcEFjY3JlZGl0ZWQiOmZhbHNlfQ.xq10TAncGW2qPWJMEfNIzF6kDvvlv7DUvYBxZnsErgo&width=760)
+![image.png](https://assets.emqx.com/images/65eb928be5d74067917a55fa292852d6.png)
 
 ### **专为数据驻留与合规性设计**
 
