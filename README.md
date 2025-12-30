@@ -436,6 +436,7 @@ EMQ products including EMQX, EMQX Cloud, Neuron, NanoMQ, MQTTX and more.
 ## [MQTT](https://www.emqx.com/en/blog/category/mqtt)
 Learn MQTT protocol from beginner to advanced, including tutorials, clients, programming and security.
 
+- [Mastering MQTT in C: A Step-by-Step Tutorial Using the Paho C Client](https://www.emqx.com/en/blog/mastering-mqtt-in-c) ([Edit](https://github.com/emqx/blog/edit/main/en/202512/mastering-mqtt-in-c.md))
 - [How to Use MQTT in C# with MQTTnet](https://www.emqx.com/en/blog/connecting-to-serverless-mqtt-broker-with-mqttnet-in-csharp) ([Edit](https://github.com/emqx/blog/edit/main/en/202511/connecting-to-serverless-mqtt-broker-with-mqttnet-in-csharp.md))
 - [Mastering MQTT: The Ultimate Beginner's Guide for 2025](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) ([Edit](https://github.com/emqx/blog/edit/main/en/202510/the-easiest-guide-to-getting-started-with-mqtt.md))
 - [MQTT vs. MQ: A Guide to Choosing the Right Messaging Platform](https://www.emqx.com/en/blog/mqtt-vs-mq) ([Edit](https://github.com/emqx/blog/edit/main/en/202510/mqtt-vs-mq.md))
