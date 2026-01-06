@@ -8,7 +8,7 @@
 EMQ products including EMQX, EMQX Cloud, Neuron, NanoMQ, MQTTX and more.
 
 - [Deconstructing Azure IoT Hub Pricing at Scale](https://www.emqx.com/en/blog/deconstructing-azure-iot-hub-pricing-at-scale) ([Edit](https://github.com/emqx/blog/edit/main/en/202512/deconstructing-azure-iot-hub-pricing-at-scale.md))
-- [Why EMQX Tables Chose GreptimeDB: Rethinking Time-Series Databases for the IoT Era](https://www.emqx.com/en/blog/why-emqx-tables-chose-greptimedb) ([Edit](https://github.com/emqx/blog/edit/main/en/202512/why-emqx-tables-chose-greptimedb.md))
+- [Why EMQX Tables Chose GreptimeDB: Rethinking Time-Series Databases for the IoT](https://www.emqx.com/en/blog/why-emqx-tables-chose-greptimedb) ([Edit](https://github.com/emqx/blog/edit/main/en/202512/why-emqx-tables-chose-greptimedb.md))
 - [EMQX Cloud Expands to Oracle Cloud Infrastructure for Greater Deployment Choice and Global Coverage](https://www.emqx.com/en/blog/emqx-cloud-expands-to-oracle-cloud-infrastructure) ([Edit](https://github.com/emqx/blog/edit/main/en/202512/emqx-cloud-expands-to-oracle-cloud-infrastructure.md))
 - [Azure IoT Hub vs EMQX: A Detailed Comparison of Features, Limits, and Architectural Tradeoffs](https://www.emqx.com/en/blog/azure-iot-hub-vs-emqx) ([Edit](https://github.com/emqx/blog/edit/main/en/202512/azure-iot-hub-vs-emqx.md))
 - [EMQX Edge 1.2.0 Released: Docker Support and New Dashboard](https://www.emqx.com/en/blog/emqx-edge-1-2-0-released) ([Edit](https://github.com/emqx/blog/edit/main/en/202512/emqx-edge-1-2-0-released.md))
