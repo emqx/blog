@@ -158,6 +158,7 @@ This is Part 1 of the "How GreptimeDB Powers EMQX Tables" series. Upcoming artic
 
 Looking for an IoT time-series solution? Try [EMQX Tables](https://www.emqx.com/en/cloud/emqx-tables) for a quick experience, or [contact our expert](https://www.emqx.com/en/contact?product=cloud) for a customized solution.
 
+Watch the video to learn more about EMQX Tables: [https://www.emqx.com/en/events/introducing-emqx-tables](https://www.emqx.com/en/events/introducing-emqx-tables)
 
 
 <section class="promotion">

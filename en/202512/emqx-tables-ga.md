@@ -69,6 +69,8 @@ Ready to try EMQX Tables? Here's how to get started:
 
 Thank you for being part of this journey. We can't wait to see what you build.
 
+Watch the video to learn more about EMQX Tables: [https://www.emqx.com/en/events/introducing-emqx-tables](https://www.emqx.com/en/events/introducing-emqx-tables)
+
 
 
 <section class="promotion">
