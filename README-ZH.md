@@ -7,6 +7,7 @@
 ## [Product](https://www.emqx.com/zh/blog/category/product)
 EMQ products including EMQX, EMQX Cloud, Neuron, NanoMQ, MQTTX and more.
 
+- [EMQX 6.1.0 新特性：可回放的 MQTT 消息流、增强的多租户能力与更多数据集成](https://www.emqx.com/zh/blog/emqx-6-1-0-release-notes) ([Edit](https://github.com/emqx/blog/edit/main/zh/202601/emqx-6-1-0-release-notes.md))
 - [EMQX Cloud 全面支持 Oracle Cloud Infrastructure：拓展全球部署灵活性与多云版图](https://www.emqx.com/zh/blog/emqx-cloud-expands-to-oracle-cloud-infrastructure) ([Edit](https://github.com/emqx/blog/edit/main/zh/202512/emqx-cloud-expands-to-oracle-cloud-infrastructure.md))
 - [EMQ Tech Day 2026 启动招募，邀您共赴杭州！​​](https://www.emqx.com/zh/blog/emq-tech-day-2026) ([Edit](https://github.com/emqx/blog/edit/main/zh/202512/emq-tech-day-2026.md))
 - [智慧农业：基于 EMQX Cloud 构建智能灌溉平台](https://www.emqx.com/zh/blog/smart-agriculture-intelligent-irrigation-emqx-cloud) ([Edit](https://github.com/emqx/blog/edit/main/zh/202512/smart-agriculture-intelligent-irrigation-emqx-cloud.md))
