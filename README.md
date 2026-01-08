@@ -713,6 +713,7 @@ Empower IoT with AI and LLM capabilities.
 ## [Internet of Vehicles](https://www.emqx.com/en/blog/category/iov)
 Build reliable and efficient connected vehicle platforms with EMQ.
 
+- [5 Ways MQTT over QUIC Will Revolutionize Connected Cars in 2026](https://www.emqx.com/en/blog/5-ways-mqtt-over-quic-revolutionizes-connected-cars) ([Edit](https://github.com/emqx/blog/edit/main/en/202601/5-ways-mqtt-over-quic-revolutionizes-connected-cars.md))
 - [Smarter Driving Starts at the Edge: MCP over MQTT for Intelligent Vehicle Data Insights](https://www.emqx.com/en/blog/mcp-over-mqtt-for-intelligent-vehicle-data-insights) ([Edit](https://github.com/emqx/blog/edit/main/en/202505/mcp-over-mqtt-for-intelligent-vehicle-data-insights.md))
 - [CAN Bus Uncovered: Basics and Applications in Vehicles](https://www.emqx.com/en/blog/can-bus-how-it-works-pros-and-cons) ([Edit](https://github.com/emqx/blog/edit/main/en/202503/can-bus-how-it-works-pros-and-cons.md))
 - [MQTT in Connected Cars: Key Benefits and Real-World Applications](https://www.emqx.com/en/blog/mqtt-for-internet-of-vehicles) ([Edit](https://github.com/emqx/blog/edit/main/en/202411/mqtt-for-internet-of-vehicles.md))
