@@ -739,6 +739,7 @@ Empower IoT with AI and LLM capabilities.
 ## [Internet of Vehicles](https://www.emqx.com/zh/blog/category/iov)
 Build reliable and efficient connected vehicle platforms with EMQ.
 
+- [2026 年 MQTT over QUIC 如何从 5 个关键维度重塑车联网通信](https://www.emqx.com/zh/blog/5-ways-mqtt-over-quic-revolutionizes-connected-cars) ([Edit](https://github.com/emqx/blog/edit/main/zh/202601/5-ways-mqtt-over-quic-revolutionizes-connected-cars.md))
 - [应邀演讲：横跨日韩两大汽车软件盛会，实战解析软件定义汽车的开源安全与落地](https://www.emqx.com/zh/blog/oss-sdv-safety-and-deployment-in-japan-korea-summits) ([Edit](https://github.com/emqx/blog/edit/main/zh/202510/oss-sdv-safety-and-deployment-in-japan-korea-summits.md))
 - [驶向智能未来：车载 MCP 服务与边缘计算驱动的驾驶数据交互新体验](https://www.emqx.com/zh/blog/mcp-over-mqtt-for-intelligent-vehicle-data-insights) ([Edit](https://github.com/emqx/blog/edit/main/zh/202505/mcp-over-mqtt-for-intelligent-vehicle-data-insights.md))
 - [EMQX Serverless 助力智能车机系统开放性发展](https://www.emqx.com/zh/blog/emqx-boosts-the-development-of-intelligent-vehicle-systems) ([Edit](https://github.com/emqx/blog/edit/main/zh/202408/emqx-boosts-the-development-of-intelligent-vehicle-systems.md))
