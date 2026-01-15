@@ -7,6 +7,7 @@
 ## [Product](https://www.emqx.com/en/blog/category/product)
 EMQ products including EMQX, EMQX Cloud, Neuron, NanoMQ, MQTTX and more.
 
+- [A Guide to Ingesting MQTT Data to EMQX Tables for Real-Time Monitoring](https://www.emqx.com/en/blog/ingesting-mqtt-data-to-emqx-tables) ([Edit](https://github.com/emqx/blog/edit/main/en/202601/ingesting-mqtt-data-to-emqx-tables.md))
 - [EMQX 6.1.0 Released: Replayable MQTT Streams, Advanced Multi-Tenancy, and Expanded Integrations](https://www.emqx.com/en/blog/emqx-6-1-0-release-notes) ([Edit](https://github.com/emqx/blog/edit/main/en/202601/emqx-6-1-0-release-notes.md))
 - [Deconstructing Azure IoT Hub Pricing at Scale](https://www.emqx.com/en/blog/deconstructing-azure-iot-hub-pricing-at-scale) ([Edit](https://github.com/emqx/blog/edit/main/en/202512/deconstructing-azure-iot-hub-pricing-at-scale.md))
 - [Why EMQX Tables Chose GreptimeDB: Rethinking Time-Series Databases for the IoT](https://www.emqx.com/en/blog/why-emqx-tables-chose-greptimedb) ([Edit](https://github.com/emqx/blog/edit/main/en/202512/why-emqx-tables-chose-greptimedb.md))
