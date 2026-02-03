@@ -7,6 +7,7 @@
 ## [Product](https://www.emqx.com/en/blog/category/product)
 EMQ products including EMQX, EMQX Cloud, Neuron, NanoMQ, MQTTX and more.
 
+- [Using curl for MQTT: Connect, Publish, and Subscribe with Secure IoT Communication](https://www.emqx.com/en/blog/using-curl-for-mqtt) ([Edit](https://github.com/emqx/blog/edit/main/en/202601/using-curl-for-mqtt.md))
 - [A Guide to Ingesting MQTT Data to EMQX Tables for Real-Time Monitoring](https://www.emqx.com/en/blog/ingesting-mqtt-data-to-emqx-tables) ([Edit](https://github.com/emqx/blog/edit/main/en/202601/ingesting-mqtt-data-to-emqx-tables.md))
 - [EMQX 6.1.0 Released: Replayable MQTT Streams, Advanced Multi-Tenancy, and Expanded Integrations](https://www.emqx.com/en/blog/emqx-6-1-0-release-notes) ([Edit](https://github.com/emqx/blog/edit/main/en/202601/emqx-6-1-0-release-notes.md))
 - [Deconstructing Azure IoT Hub Pricing at Scale](https://www.emqx.com/en/blog/deconstructing-azure-iot-hub-pricing-at-scale) ([Edit](https://github.com/emqx/blog/edit/main/en/202512/deconstructing-azure-iot-hub-pricing-at-scale.md))
@@ -684,6 +685,7 @@ Real-world IoT solutions and industry applications powered by EMQ.
 ## [AI](https://www.emqx.com/en/blog/category/ai)
 Empower IoT with AI and LLM capabilities.
 
+- [Building the Nervous System for Physical AI: Key Takeaways from CES 2026](https://www.emqx.com/en/blog/physical-ai-and-the-new-data-fabric) ([Edit](https://github.com/emqx/blog/edit/main/en/202601/physical-ai-and-the-new-data-fabric.md))
 - [How EMQX Unified Namespace Powers AI Transformation in Automotive Manufacturing](https://www.emqx.com/en/blog/how-emqx-unified-namespace-powers-ai-transformation-in-automotive-manufacturing) ([Edit](https://github.com/emqx/blog/edit/main/en/202511/how-emqx-unified-namespace-powers-ai-transformation-in-automotive-manufacturing.md))
 - [From Voice to Vision: The Final Step in Building Your AI Agent with ESP32 and MCP over MQTT](https://www.emqx.com/en/blog/esp32-and-mcp-over-mqtt-6) ([Edit](https://github.com/emqx/blog/edit/main/en/202509/esp32-and-mcp-over-mqtt-6.md))
 - [Giving the Agent Memory and Persona: Building an AI Companion with ESP32 & MCP over MQTT Part 5](https://www.emqx.com/en/blog/esp32-and-mcp-over-mqtt-5) ([Edit](https://github.com/emqx/blog/edit/main/en/202509/esp32-and-mcp-over-mqtt-5.md))
