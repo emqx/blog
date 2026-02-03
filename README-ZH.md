@@ -7,6 +7,7 @@
 ## [Product](https://www.emqx.com/zh/blog/category/product)
 EMQ products including EMQX, EMQX Cloud, Neuron, NanoMQ, MQTTX and more.
 
+- [MQTTX 1.13.0 发布：消息体查看器与 UI 优化](https://www.emqx.com/zh/blog/mqttx-1-13-0-released) ([Edit](https://github.com/emqx/blog/edit/main/zh/202602/mqttx-1-13-0-released.md))
 - [Azure IoT Hub 定价策略解析：从成本视角看，何时该考虑迁移至 EMQX？](https://www.emqx.com/zh/blog/deconstructing-azure-iot-hub-pricing-at-scale) ([Edit](https://github.com/emqx/blog/edit/main/zh/202602/deconstructing-azure-iot-hub-pricing-at-scale.md))
 - [从工具到伙伴：EMQX 如何驱动智能硬件的实时互联与协同](https://www.emqx.com/zh/blog/emqx-real-time-connectivity-for-smart-devices) ([Edit](https://github.com/emqx/blog/edit/main/zh/202601/emqx-real-time-connectivity-for-smart-devices.md))
 - [EMQX vs. Azure IoT Hub：功能、限制与架构深度对比](https://www.emqx.com/zh/blog/azure-iot-hub-vs-emqx) ([Edit](https://github.com/emqx/blog/edit/main/zh/202601/azure-iot-hub-vs-emqx.md))
