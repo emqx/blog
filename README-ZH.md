@@ -7,6 +7,9 @@
 ## [Product](https://www.emqx.com/zh/blog/category/product)
 EMQ products including EMQX, EMQX Cloud, Neuron, NanoMQ, MQTTX and more.
 
+- [Azure IoT Hub 定价策略解析：从成本视角看，何时该考虑迁移至 EMQX？](https://www.emqx.com/zh/blog/deconstructing-azure-iot-hub-pricing-at-scale) ([Edit](https://github.com/emqx/blog/edit/main/zh/202602/deconstructing-azure-iot-hub-pricing-at-scale.md))
+- [从工具到伙伴：EMQX 如何驱动智能硬件的实时互联与协同](https://www.emqx.com/zh/blog/emqx-real-time-connectivity-for-smart-devices) ([Edit](https://github.com/emqx/blog/edit/main/zh/202601/emqx-real-time-connectivity-for-smart-devices.md))
+- [EMQX vs. Azure IoT Hub：功能、限制与架构深度对比](https://www.emqx.com/zh/blog/azure-iot-hub-vs-emqx) ([Edit](https://github.com/emqx/blog/edit/main/zh/202601/azure-iot-hub-vs-emqx.md))
 - [EMQX 6.1.0 新特性：可回放的 MQTT 消息流、增强的多租户能力与更多数据集成](https://www.emqx.com/zh/blog/emqx-6-1-0-release-notes) ([Edit](https://github.com/emqx/blog/edit/main/zh/202601/emqx-6-1-0-release-notes.md))
 - [EMQX Cloud 全面支持 Oracle Cloud Infrastructure：拓展全球部署灵活性与多云版图](https://www.emqx.com/zh/blog/emqx-cloud-expands-to-oracle-cloud-infrastructure) ([Edit](https://github.com/emqx/blog/edit/main/zh/202512/emqx-cloud-expands-to-oracle-cloud-infrastructure.md))
 - [EMQ Tech Day 2026 启动招募，邀您共赴杭州！​​](https://www.emqx.com/zh/blog/emq-tech-day-2026) ([Edit](https://github.com/emqx/blog/edit/main/zh/202512/emq-tech-day-2026.md))
@@ -713,6 +716,7 @@ Real-world IoT solutions and industry applications powered by EMQ.
 ## [AI](https://www.emqx.com/zh/blog/category/ai)
 Empower IoT with AI and LLM capabilities.
 
+- [Physical AI 时代的数据基础设施：EMQX 如何赋能 AIoT 场景](https://www.emqx.com/zh/blog/physical-ai-and-the-new-data-fabric) ([Edit](https://github.com/emqx/blog/edit/main/zh/202601/physical-ai-and-the-new-data-fabric.md))
 - [ESP32 + MCP over MQTT：图像采集 + 多模态理解，为智能体装上「眼睛」](https://www.emqx.com/zh/blog/esp32-and-mcp-over-mqtt-6) ([Edit](https://github.com/emqx/blog/edit/main/zh/202508/esp32-and-mcp-over-mqtt-6.md))
 - [ESP32 + MCP over MQTT：基于大模型打造人格化情感智能体](https://www.emqx.com/zh/blog/esp32-and-mcp-over-mqtt-5) ([Edit](https://github.com/emqx/blog/edit/main/zh/202508/esp32-and-mcp-over-mqtt-5.md))
 - [ESP32 + MCP over MQTT：实现智能设备语音交互](https://www.emqx.com/zh/blog/esp32-and-mcp-over-mqtt-4) ([Edit](https://github.com/emqx/blog/edit/main/zh/202508/esp32-and-mcp-over-mqtt-4.md))
