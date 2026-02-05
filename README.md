@@ -7,6 +7,7 @@
 ## [Product](https://www.emqx.com/en/blog/category/product)
 EMQ products including EMQX, EMQX Cloud, Neuron, NanoMQ, MQTTX and more.
 
+- [From PLC to MQTT in 10 Minutes: A Zero‑Code Path to Industrial Connectivity](https://www.emqx.com/en/blog/from-plc-to-mqtt) ([Edit](https://github.com/emqx/blog/edit/main/en/202602/from-plc-to-mqtt.md))
 - [EMQX Edge 1.3.0 Released: MQTT over QUIC Bridge and Updated License Policy](https://www.emqx.com/en/blog/emqx-edge-1-3-0-released) ([Edit](https://github.com/emqx/blog/edit/main/en/202602/emqx-edge-1-3-0-released.md))
 - [MQTTX 1.13.0 Released: Payload Inspector & UI Improvements](https://www.emqx.com/en/blog/mqttx-1-13-0-released) ([Edit](https://github.com/emqx/blog/edit/main/en/202602/mqttx-1-13-0-released.md))
 - [Using curl for MQTT: Connect, Publish, and Subscribe with Secure IoT Communication](https://www.emqx.com/en/blog/using-curl-for-mqtt) ([Edit](https://github.com/emqx/blog/edit/main/en/202601/using-curl-for-mqtt.md))

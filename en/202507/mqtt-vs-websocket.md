@@ -12,7 +12,7 @@ This guide provides a clear and concise comparison to help you understand their 
 
 A central broker is required to use MQTT. [EMQX](https://www.emqx.com/en/products/emqx), for example, is a broker that can be considered for its capabilities in ensuring reliable message delivery and scaling the system efficiently.
 
-![image.png](https://assets.emqx.com/images/2a584a13dba6db647f402774f97adaf9.png)
+![a19deed5f2843587104581b2e71c0ccd.png](https://assets.emqx.com/images/2ee9a57b88101cc5e8f38252e6b047a2.png)
 
 ### What is WebSocket?
 
