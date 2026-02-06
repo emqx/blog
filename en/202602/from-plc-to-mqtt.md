@@ -44,7 +44,7 @@ EMQX Neuron supports over 100 industrial protocols, from Modbus and OPC UA to Si
 
 > Complete protocol list: [Data collection plugin list | EMQX Neuron Docs](https://docs.emqx.com/en/neuronex/latest/introduction/plugin-list/plugin-list.html) 
 
-![image.png](https://assets.emqx.com/images/d2508b000bf046c22a1329eeb25ce0cd.png)
+![image.png](https://assets.emqx.com/images/d2508b000bf046c22a1329eeb25ce0cd.png){.mx-auto .block}
 
 ### **Extreme Ease of Use: Zero-Code & Automated Configuration**
 
@@ -69,7 +69,7 @@ We’ll walk through the entire process with a complete hands-on example to show
 
 ### Architecture Overview
 
-![92db0d776008d4e8444220079c37127e.png](https://assets.emqx.com/images/9081724dd8ba070fbb76c8ceb78144b6.png)
+![67998479ecea7fdc4fee36d72747892f.png](https://assets.emqx.com/images/a3ddd15167ecb663119b43bf3068752f.png)
 
 ### Prerequisites
 

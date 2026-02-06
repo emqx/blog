@@ -443,6 +443,7 @@ EMQ products including EMQX, EMQX Cloud, Neuron, NanoMQ, MQTTX and more.
 ## [MQTT](https://www.emqx.com/en/blog/category/mqtt)
 Learn MQTT protocol from beginner to advanced, including tutorials, clients, programming and security.
 
+- [MQTT vs WebSocket: Key Differences & Applications](https://www.emqx.com/en/blog/mqtt-vs-websocket) ([Edit](https://github.com/emqx/blog/edit/main/en/202602/mqtt-vs-websocket.md))
 - [Mastering MQTT in C: A Step-by-Step Tutorial Using the Paho C Client](https://www.emqx.com/en/blog/mastering-mqtt-in-c) ([Edit](https://github.com/emqx/blog/edit/main/en/202512/mastering-mqtt-in-c.md))
 - [How to Use MQTT in C# with MQTTnet](https://www.emqx.com/en/blog/connecting-to-serverless-mqtt-broker-with-mqttnet-in-csharp) ([Edit](https://github.com/emqx/blog/edit/main/en/202511/connecting-to-serverless-mqtt-broker-with-mqttnet-in-csharp.md))
 - [Mastering MQTT: The Ultimate Beginner's Guide for 2025](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) ([Edit](https://github.com/emqx/blog/edit/main/en/202510/the-easiest-guide-to-getting-started-with-mqtt.md))
@@ -456,7 +457,6 @@ Learn MQTT protocol from beginner to advanced, including tutorials, clients, pro
 - [Top 3 MQTT WebSocket Clients for Developers in 2025](https://www.emqx.com/en/blog/top-3-mqtt-websocket-clients-in-2023) ([Edit](https://github.com/emqx/blog/edit/main/en/202507/top-3-mqtt-websocket-clients-in-2023.md))
 - [Comparison of Open Source MQTT Brokers 2025](https://www.emqx.com/en/blog/a-comprehensive-comparison-of-open-source-mqtt-brokers-in-2023) ([Edit](https://github.com/emqx/blog/edit/main/en/202507/a-comprehensive-comparison-of-open-source-mqtt-brokers-in-2023.md))
 - [Free MQTT Broker: Exploring Options and Choosing the Right Solution](https://www.emqx.com/en/blog/free-mqtt-broker) ([Edit](https://github.com/emqx/blog/edit/main/en/202507/free-mqtt-broker.md))
-- [MQTT vs WebSocket: Key Differences & Applications](https://www.emqx.com/en/blog/mqtt-vs-websocket) ([Edit](https://github.com/emqx/blog/edit/main/en/202507/mqtt-vs-websocket.md))
 - [Using MQTT with C++: A Comprehensive Guide for IoT Developers](https://www.emqx.com/en/blog/using-mqtt-with-cpp) ([Edit](https://github.com/emqx/blog/edit/main/en/202507/using-mqtt-with-cpp.md))
 - [MQTT with Node.js: A Beginner's Guide with Examples & FAQs](https://www.emqx.com/en/blog/how-to-use-mqtt-in-nodejs) ([Edit](https://github.com/emqx/blog/edit/main/en/202506/how-to-use-mqtt-in-nodejs.md))
 - [MQTT 5.0: 7 New Features and a Migration Checklist](https://www.emqx.com/en/blog/introduction-to-mqtt-5) ([Edit](https://github.com/emqx/blog/edit/main/en/202506/introduction-to-mqtt-5.md))
