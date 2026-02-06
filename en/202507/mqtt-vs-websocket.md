@@ -8,7 +8,7 @@ This guide provides a clear and concise comparison to help you understand their 
 
 ### What is MQTT?
 
-[MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) (Message Queuing Telemetry Transport) is a lightweight, publish-subscribe-based messaging protocol originally designed for resource-constrained devices and low-bandwidth, high-latency, or unreliable networks. Beyond IoT telemetry, MQTT is now also widely adopted in cloud-native event pipelines, microservice integration, AI data streaming, digital twins, and software-defined vehicle (SDV) architectures.
+[MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) (Message Queuing Telemetry Transport) is a lightweight publish-subscribe messaging protocol originally designed for resource-constrained devices and low-bandwidth, high-latency, or unreliable networks. Today, it is used well beyond IoT telemetry, powering cloud-native event pipelines, microservice integration, AI data streaming, digital twins, and software-defined vehicle (SDV) architectures.
 
 A central broker is required to use MQTT. [EMQX](https://www.emqx.com/en/products/emqx), for example, is a broker that can be considered for its capabilities in ensuring reliable message delivery and scaling the system efficiently.
 
@@ -16,25 +16,21 @@ A central broker is required to use MQTT. [EMQX](https://www.emqx.com/en/product
 
 ### What is WebSocket?
 
-WebSocket is a network protocol enabling two-way communication channels over a single, persistent TCP connection. It diverges from HTTP by maintaining an open connection after the initial handshake, allowing for real-time and interactive data exchange. This is particularly useful for applications such as online games, chat systems, and real-time stock trading platforms.
-
-WebSocket is also increasingly used in backend-to-backend streaming and real-time APIs, not only browser-based apps.
+WebSocket is a protocol that enables full-duplex communication over a single TCP connection. It starts with an HTTP handshake that upgrades the connection to WebSocket and then keeps it open for continuous two-way data flow without repeatedly re-establishing connections. It is now widely used in both browser-facing applications and backend real-time systems, including streaming gateways, real-time API streaming, and AI inference streaming pipelines.
 
 The WebSocket protocol involves the handshake phase for establishing the connection and the data transfer phase for exchanging information.
 
-#### Standards Progress (Important Timeline)
+#### Standards Progress
 
 - **MQTT 5.0** became an **OASIS Standard** on **2019-03-07**.
 - **WebSocket over HTTP/2** was standardized in **RFC 8441 (2018-09)**.
 - **WebSocket over HTTP/3** was standardized in **RFC 9220 (2022-06)**.
 
-This means WebSocket is no longer accurately described as "HTTP/1.1 upgrade only" in modern deployments.
-
 ![WebSocket handshake](https://assets.emqx.com/images/269d797a452ad5d491c78f2f4dd573b7.png)
 
 ## Diving into MQTT and WebSocket: Application Scenarios
 
-### MQTT: From IoT Efficiency to Real-Time Data Backbone
+### MQTT: Tailored for IoT Efficiency and Real-Time Data Backbone
 
 MQTT is a lightweight, publish-subscribe messaging protocol designed for constrained environments, such as low power, low bandwidth, or unreliable networks. At the same time, its minimal packet size, topic-based routing, and multiple QoS levels also make it a strong event backbone for modern distributed systems that require decoupled, real-time data movement.
 
@@ -60,8 +56,6 @@ These features make MQTT useful in both device-centric and cloud-native systems.
 - **Cloud-Native Event Streaming**: Connects edge gateways, platform services, and analytics systems with low-overhead pub/sub pipelines.
 - **Microservices and Async Integration**: Decouples producers and consumers across service boundaries for resilient real-time workflows.
 - **AI and Digital Twins**: Streams telemetry and state updates into AI inference loops and digital twin synchronization pipelines.
-
-Together, these scenarios show MQTT's role beyond traditional IoT, from edge connectivity to real-time cloud and AI data architectures.
 
 #### MQTT Example: Smart Home
 
@@ -167,7 +161,7 @@ This concise example sets up a WebSocket connection and includes functions to se
 | **Message Format**                        | Binary                                                       | Binary (Frame-based)                                         |
 | **Message Size**                          | Up to 256 MB                                                 | Up to 2^63 bytes per frame                                   |
 | **Message Overhead**                      | Minimal, starting from 2 bytes                               | Minimum 2 bytes, 6 bytes for masked frames                   |
-| **Message Distribution**                  | Broker can queue messages for disconnected subscribers(Set Clean Session=false) | No native queuing; relies on additional software. Reliability, persistence, and message replay must be implemented at the application layer when using WebSocket. |
+| **Message Distribution**                  | Broker can queue messages for disconnected subscribers(Set Clean Session=false) | No native queuing; relies on additional software. With WebSocket, reliability, persistence, and replay are handled at the application layer. |
 | **Messaging QoS**                         | 0 (at most once), 1 (at least once), 2 (exactly once)        | No built-in QoS; relies on TCP                               |
 | **Message Queuing**                       | Supported by the broker                                      | Not supported natively                                       |
 | **Standards and Protocols Compliance**    | MQTT 5.0 became OASIS Standard on 2019-03-07                | RFC 6455; extended with RFC 8441 (HTTP/2, 2018-09) and RFC 9220 (HTTP/3, 2022-06) |
@@ -277,8 +271,7 @@ For MQTT over WebSocket, **MQTT.js** is an excellent choice. It is a client libr
 
 Throughout this exploration, we've delved into the unique characteristics and use cases of MQTT and WebSocket, highlighting how each protocol serves specific needs within IoT and web applications.
 
-MQTT excels in environments requiring robust, efficient communication across devices, while WebSocket shines in real-time, interactive web contexts. By integrating MQTT over WebSocket, developers can harness the strengths of both protocols, ensuring seamless and secure communication in diverse environments. This combination enhances IoT functionalities within web applications and broadens accessibility, making real-time data interaction feasible across any platform.
-As real-time AI systems, edge computing, and digital twins become mainstream, MQTT and WebSocket increasingly work together as complementary layers in modern real-time architectures.
+MQTT excels in environments that require reliable, low-overhead communication across large numbers of devices, while WebSocket is ideal for low-latency and interactive real-time experiences; when combined through MQTT over WebSocket, they form a practical and secure foundation for continuous data exchange across IoT systems, browser and backend services, and increasingly mainstream AI, edge computing, and digital twin architectures.
 
 
 
