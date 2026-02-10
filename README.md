@@ -7,6 +7,7 @@
 ## [Product](https://www.emqx.com/en/blog/category/product)
 EMQ products including EMQX, EMQX Cloud, Neuron, NanoMQ, MQTTX and more.
 
+- [Security Hardening of EMQX in Production: A Site Reliability Engineering Perspective (Part 1)](https://www.emqx.com/en/blog/security-hardening-emqx-iot-messaging-systems-part-1) ([Edit](https://github.com/emqx/blog/edit/main/en/202602/security-hardening-emqx-iot-messaging-systems-part-1.md))
 - [From PLC to MQTT in 10 Minutes: A Zero‑Code Path to Industrial Connectivity](https://www.emqx.com/en/blog/from-plc-to-mqtt) ([Edit](https://github.com/emqx/blog/edit/main/en/202602/from-plc-to-mqtt.md))
 - [EMQX Edge 1.3.0 Released: MQTT over QUIC Bridge and Updated License Policy](https://www.emqx.com/en/blog/emqx-edge-1-3-0-released) ([Edit](https://github.com/emqx/blog/edit/main/en/202602/emqx-edge-1-3-0-released.md))
 - [MQTTX 1.13.0 Released: Payload Inspector & UI Improvements](https://www.emqx.com/en/blog/mqttx-1-13-0-released) ([Edit](https://github.com/emqx/blog/edit/main/en/202602/mqttx-1-13-0-released.md))
@@ -443,6 +444,7 @@ EMQ products including EMQX, EMQX Cloud, Neuron, NanoMQ, MQTTX and more.
 ## [MQTT](https://www.emqx.com/en/blog/category/mqtt)
 Learn MQTT protocol from beginner to advanced, including tutorials, clients, programming and security.
 
+- [Security Hardening of EMQX in Production: A Site Reliability Engineering Perspective (Part 1)](https://www.emqx.com/en/blog/security-hardening-emqx-iot-messaging-systems-part-1) ([Edit](https://github.com/emqx/blog/edit/main/en/202602/security-hardening-emqx-iot-messaging-systems-part-1.md))
 - [MQTT vs WebSocket: Key Differences & Applications](https://www.emqx.com/en/blog/mqtt-vs-websocket) ([Edit](https://github.com/emqx/blog/edit/main/en/202602/mqtt-vs-websocket.md))
 - [Mastering MQTT in C: A Step-by-Step Tutorial Using the Paho C Client](https://www.emqx.com/en/blog/mastering-mqtt-in-c) ([Edit](https://github.com/emqx/blog/edit/main/en/202512/mastering-mqtt-in-c.md))
 - [How to Use MQTT in C# with MQTTnet](https://www.emqx.com/en/blog/connecting-to-serverless-mqtt-broker-with-mqttnet-in-csharp) ([Edit](https://github.com/emqx/blog/edit/main/en/202511/connecting-to-serverless-mqtt-broker-with-mqttnet-in-csharp.md))
