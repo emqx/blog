@@ -7,6 +7,7 @@
 ## [Product](https://www.emqx.com/en/blog/category/product)
 EMQ products including EMQX, EMQX Cloud, Neuron, NanoMQ, MQTTX and more.
 
+- [EMQX Neuron 3.8.0 Released: New SNMP & GE Historian Drivers and AI-Powered Rule Creation](https://www.emqx.com/en/blog/neuron-v-3-8-0-release-notes) ([Edit](https://github.com/emqx/blog/edit/main/en/202602/neuron-v-3-8-0-release-notes.md))
 - [Security Hardening of EMQX in Production: A Site Reliability Engineering Perspective (Part 1)](https://www.emqx.com/en/blog/security-hardening-emqx-iot-messaging-systems-part-1) ([Edit](https://github.com/emqx/blog/edit/main/en/202602/security-hardening-emqx-iot-messaging-systems-part-1.md))
 - [From PLC to MQTT in 10 Minutes: A Zero‑Code Path to Industrial Connectivity](https://www.emqx.com/en/blog/from-plc-to-mqtt) ([Edit](https://github.com/emqx/blog/edit/main/en/202602/from-plc-to-mqtt.md))
 - [EMQX Edge 1.3.0 Released: MQTT over QUIC Bridge and Updated License Policy](https://www.emqx.com/en/blog/emqx-edge-1-3-0-released) ([Edit](https://github.com/emqx/blog/edit/main/en/202602/emqx-edge-1-3-0-released.md))
