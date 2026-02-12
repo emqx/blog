@@ -7,6 +7,7 @@
 ## [Product](https://www.emqx.com/zh/blog/category/product)
 EMQ products including EMQX, EMQX Cloud, Neuron, NanoMQ, MQTTX and more.
 
+- [NeuronEX 3.8.0 发布：新增 SNMP 与 GE Historian 驱动，支持 AI 辅助的规则创建](https://www.emqx.com/zh/blog/neuron-v-3-8-0-release-notes) ([Edit](https://github.com/emqx/blog/edit/main/zh/202602/neuron-v-3-8-0-release-notes.md))
 - [使用 curl 实现 MQTT 通信：通过 MQTT/TLS 进行安全连接、发布与订阅](https://www.emqx.com/zh/blog/using-curl-for-mqtt) ([Edit](https://github.com/emqx/blog/edit/main/zh/202602/using-curl-for-mqtt.md))
 - [MQTTX 1.13.0 发布：消息体查看器与 UI 优化](https://www.emqx.com/zh/blog/mqttx-1-13-0-released) ([Edit](https://github.com/emqx/blog/edit/main/zh/202602/mqttx-1-13-0-released.md))
 - [Azure IoT Hub 定价策略解析：从成本视角看，何时该考虑迁移至 EMQX？](https://www.emqx.com/zh/blog/deconstructing-azure-iot-hub-pricing-at-scale) ([Edit](https://github.com/emqx/blog/edit/main/zh/202602/deconstructing-azure-iot-hub-pricing-at-scale.md))
