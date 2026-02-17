@@ -7,6 +7,7 @@
 ## [Product](https://www.emqx.com/en/blog/category/product)
 EMQ products including EMQX, EMQX Cloud, Neuron, NanoMQ, MQTTX and more.
 
+- [Cloud-Native Storage Engine: How GreptimeDB Cuts IoT Storage Costs by 10x](https://www.emqx.com/en/blog/cloud-native-storage-engine-how-greptimedb-cuts-iot-storage-costs-by-10x) ([Edit](https://github.com/emqx/blog/edit/main/en/202602/cloud-native-storage-engine-how-greptimedb-cuts-iot-storage-costs-by-10x.md))
 - [EMQX Cloud Update: Expanded Regions for EMQX Tables, Native Datadog Integration, and SSE Gateway](https://www.emqx.com/en/blog/emqx-cloud-update-emqx-tables-datadog-integration-sse-gateway) ([Edit](https://github.com/emqx/blog/edit/main/en/202602/emqx-cloud-update-emqx-tables-datadog-integration-sse-gateway.md))
 - [EMQX Neuron 3.8.0 Released: New SNMP & GE Historian Drivers and AI-Powered Rule Creation](https://www.emqx.com/en/blog/neuron-v-3-8-0-release-notes) ([Edit](https://github.com/emqx/blog/edit/main/en/202602/neuron-v-3-8-0-release-notes.md))
 - [Security Hardening of EMQX in Production: A Site Reliability Engineering Perspective (Part 1)](https://www.emqx.com/en/blog/security-hardening-emqx-iot-messaging-systems-part-1) ([Edit](https://github.com/emqx/blog/edit/main/en/202602/security-hardening-emqx-iot-messaging-systems-part-1.md))
