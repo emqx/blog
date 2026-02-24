@@ -7,6 +7,7 @@
 ## [Product](https://www.emqx.com/en/blog/category/product)
 EMQ products including EMQX, EMQX Cloud, Neuron, NanoMQ, MQTTX and more.
 
+- [Security Hardening of EMQX in Production (Part 3): TLS, MQTT Layer, and Operations](https://www.emqx.com/en/blog/security-hardening-emqx-iot-messaging-systems-part-3) ([Edit](https://github.com/emqx/blog/edit/main/en/202602/security-hardening-emqx-iot-messaging-systems-part-3.md))
 - [Security Hardening of EMQX in Production (Part 2): Infrastructure and Erlang VM](https://www.emqx.com/en/blog/security-hardening-emqx-iot-messaging-systems-part-2) ([Edit](https://github.com/emqx/blog/edit/main/en/202602/security-hardening-emqx-iot-messaging-systems-part-2.md))
 - [Cloud-Native Storage Engine: How GreptimeDB Cuts IoT Storage Costs by 10x](https://www.emqx.com/en/blog/cloud-native-storage-engine-how-greptimedb-cuts-iot-storage-costs-by-10x) ([Edit](https://github.com/emqx/blog/edit/main/en/202602/cloud-native-storage-engine-how-greptimedb-cuts-iot-storage-costs-by-10x.md))
 - [EMQX Cloud Update: Expanded Regions for EMQX Tables, Native Datadog Integration, and SSE Gateway](https://www.emqx.com/en/blog/emqx-cloud-update-emqx-tables-datadog-integration-sse-gateway) ([Edit](https://github.com/emqx/blog/edit/main/en/202602/emqx-cloud-update-emqx-tables-datadog-integration-sse-gateway.md))
@@ -448,6 +449,7 @@ EMQ products including EMQX, EMQX Cloud, Neuron, NanoMQ, MQTTX and more.
 ## [MQTT](https://www.emqx.com/en/blog/category/mqtt)
 Learn MQTT protocol from beginner to advanced, including tutorials, clients, programming and security.
 
+- [Security Hardening of EMQX in Production (Part 3): TLS, MQTT Layer, and Operations](https://www.emqx.com/en/blog/security-hardening-emqx-iot-messaging-systems-part-3) ([Edit](https://github.com/emqx/blog/edit/main/en/202602/security-hardening-emqx-iot-messaging-systems-part-3.md))
 - [Security Hardening of EMQX in Production (Part 2): Infrastructure and Erlang VM](https://www.emqx.com/en/blog/security-hardening-emqx-iot-messaging-systems-part-2) ([Edit](https://github.com/emqx/blog/edit/main/en/202602/security-hardening-emqx-iot-messaging-systems-part-2.md))
 - [Security Hardening of EMQX in Production: A Site Reliability Engineering Perspective (Part 1)](https://www.emqx.com/en/blog/security-hardening-emqx-iot-messaging-systems-part-1) ([Edit](https://github.com/emqx/blog/edit/main/en/202602/security-hardening-emqx-iot-messaging-systems-part-1.md))
 - [MQTT vs WebSocket: Key Differences & Applications](https://www.emqx.com/en/blog/mqtt-vs-websocket) ([Edit](https://github.com/emqx/blog/edit/main/en/202602/mqtt-vs-websocket.md))
