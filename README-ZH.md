@@ -7,6 +7,8 @@
 ## [Product](https://www.emqx.com/zh/blog/category/product)
 EMQ products including EMQX, EMQX Cloud, Neuron, NanoMQ, MQTTX and more.
 
+- [NeuronEX 仪表盘功能使用指南](https://www.emqx.com/zh/blog/neuronex-dashboard-user-guide) ([Edit](https://github.com/emqx/blog/edit/main/zh/202602/neuronex-dashboard-user-guide.md))
+- [10 分钟将任意 PLC 连接到 MQTT：工业连接的零代码路径](https://www.emqx.com/zh/blog/from-plc-to-mqtt) ([Edit](https://github.com/emqx/blog/edit/main/zh/202602/from-plc-to-mqtt.md))
 - [使用自然语言编写工业数据处理规则：NeuronEX 基于大语言模型的 SQL 生成](https://www.emqx.com/zh/blog/natural-language-to-sql-for-industrial-data-neuronex) ([Edit](https://github.com/emqx/blog/edit/main/zh/202602/natural-language-to-sql-for-industrial-data-neuronex.md))
 - [EMQX Cloud 更新：新增 Flashduty 告警集成与 SSE 网关](https://www.emqx.com/zh/blog/emqx-cloud-update-flashduty-sse) ([Edit](https://github.com/emqx/blog/edit/main/zh/202602/emqx-cloud-update-flashduty-sse.md))
 - [NeuronEX 3.8.0 发布：新增 SNMP 与 GE Historian 驱动，支持 AI 辅助的规则创建](https://www.emqx.com/zh/blog/neuron-v-3-8-0-release-notes) ([Edit](https://github.com/emqx/blog/edit/main/zh/202602/neuron-v-3-8-0-release-notes.md))
