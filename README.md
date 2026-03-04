@@ -754,6 +754,7 @@ Build reliable and efficient connected vehicle platforms with EMQ.
 ## [Industrial IoT](https://www.emqx.com/en/blog/category/iiot)
 Industrial IoT solutions with Unified Namespace and Sparkplug.
 
+- [The Intelligent AI Edge vs. Legacy Edge: How EMQX Neuron  Modernizes IIoT Data Pipeline](https://www.emqx.com/en/blog/the-intelligent-ai-edge-vs-legacy-edge) ([Edit](https://github.com/emqx/blog/edit/main/en/202603/the-intelligent-ai-edge-vs-legacy-edge.md))
 - [EMQX UNS Powers a Digital Twin for Predictive, Efficient Production](https://www.emqx.com/en/blog/emqx-uns-powers-a-digital-twin-for-predictive-efficient-production) ([Edit](https://github.com/emqx/blog/edit/main/en/202512/emqx-uns-powers-a-digital-twin-for-predictive-efficient-production.md))
 - [Top 3 Open Source MQTT Brokers for Industrial IoT in 2025](https://www.emqx.com/en/blog/top-3-open-source-mqtt-brokers-for-industrial-iot-in-2023) ([Edit](https://github.com/emqx/blog/edit/main/en/202508/top-3-open-source-mqtt-brokers-for-industrial-iot-in-2023.md))
 - [KNX Protocol: The Basics and Its Possibilities with IoT](https://www.emqx.com/en/blog/knx-protocol) ([Edit](https://github.com/emqx/blog/edit/main/en/202506/knx-protocol.md))
