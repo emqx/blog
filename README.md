@@ -7,6 +7,7 @@
 ## [Product](https://www.emqx.com/en/blog/category/product)
 EMQ products including EMQX, EMQX Cloud, Neuron, NanoMQ, MQTTX and more.
 
+- [From MQTT to Parquet: Analyzing IoT Data on Amazon S3 with EMQX and DuckDB](https://www.emqx.com/en/blog/from-mqtt-to-parquet) ([Edit](https://github.com/emqx/blog/edit/main/en/202603/from-mqtt-to-parquet.md))
 - [Security Hardening of EMQX in Production (Part 3): TLS, MQTT Layer, and Operations](https://www.emqx.com/en/blog/security-hardening-emqx-iot-messaging-systems-part-3) ([Edit](https://github.com/emqx/blog/edit/main/en/202602/security-hardening-emqx-iot-messaging-systems-part-3.md))
 - [Security Hardening of EMQX in Production (Part 2): Infrastructure and Erlang VM](https://www.emqx.com/en/blog/security-hardening-emqx-iot-messaging-systems-part-2) ([Edit](https://github.com/emqx/blog/edit/main/en/202602/security-hardening-emqx-iot-messaging-systems-part-2.md))
 - [Cloud-Native Storage Engine: How GreptimeDB Cuts IoT Storage Costs by 10x](https://www.emqx.com/en/blog/cloud-native-storage-engine-how-greptimedb-cuts-iot-storage-costs-by-10x) ([Edit](https://github.com/emqx/blog/edit/main/en/202602/cloud-native-storage-engine-how-greptimedb-cuts-iot-storage-costs-by-10x.md))
