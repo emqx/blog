@@ -452,6 +452,7 @@ Learn MQTT protocol from beginner to advanced, including tutorials, clients, pro
 
 - [Security Hardening of EMQX in Production (Part 3): TLS, MQTT Layer, and Operations](https://www.emqx.com/en/blog/security-hardening-emqx-iot-messaging-systems-part-3) ([Edit](https://github.com/emqx/blog/edit/main/en/202602/security-hardening-emqx-iot-messaging-systems-part-3.md))
 - [Security Hardening of EMQX in Production (Part 2): Infrastructure and Erlang VM](https://www.emqx.com/en/blog/security-hardening-emqx-iot-messaging-systems-part-2) ([Edit](https://github.com/emqx/blog/edit/main/en/202602/security-hardening-emqx-iot-messaging-systems-part-2.md))
+- [The Ultimate Guide to iOS MQTT: Implementing MQTT 5.0 with Swift and CocoaMQTT](https://www.emqx.com/en/blog/ios-mqtt5-client) ([Edit](https://github.com/emqx/blog/edit/main/en/202602/ios-mqtt5-client.md))
 - [Security Hardening of EMQX in Production: A Site Reliability Engineering Perspective (Part 1)](https://www.emqx.com/en/blog/security-hardening-emqx-iot-messaging-systems-part-1) ([Edit](https://github.com/emqx/blog/edit/main/en/202602/security-hardening-emqx-iot-messaging-systems-part-1.md))
 - [MQTT vs WebSocket: Key Differences & Applications](https://www.emqx.com/en/blog/mqtt-vs-websocket) ([Edit](https://github.com/emqx/blog/edit/main/en/202602/mqtt-vs-websocket.md))
 - [Mastering MQTT in C: A Step-by-Step Tutorial Using the Paho C Client](https://www.emqx.com/en/blog/mastering-mqtt-in-c) ([Edit](https://github.com/emqx/blog/edit/main/en/202512/mastering-mqtt-in-c.md))
@@ -588,7 +589,6 @@ Learn MQTT protocol from beginner to advanced, including tutorials, clients, pro
 - [Topic Alias - MQTT 5.0 new features](https://www.emqx.com/en/blog/mqtt5-topic-alias) ([Edit](https://github.com/emqx/blog/edit/main/en/202202/mqtt5-topic-alias.md))
 - [MQTT for Elixir](https://www.emqx.com/en/blog/mqtt-for-elixir) ([Edit](https://github.com/emqx/blog/edit/main/en/202201/mqtt-for-elixir.md))
 - [Evaluation for popular online public MQTT broker](https://www.emqx.com/en/blog/popular-online-public-mqtt-brokers) ([Edit](https://github.com/emqx/blog/edit/main/en/202111/popular-online-public-mqtt-brokers.md))
-- [CocoaMQTT v2.0: The first iOS MQTT 5.0 client](https://www.emqx.com/en/blog/ios-mqtt5-client) ([Edit](https://github.com/emqx/blog/edit/main/en/202111/ios-mqtt5-client.md))
 - [User Properties - MQTT 5.0 new features](https://www.emqx.com/en/blog/mqtt5-user-properties) ([Edit](https://github.com/emqx/blog/edit/main/en/202111/mqtt5-user-properties.md))
 - [Using MQTTLens to connect to EMQX Cloud](https://www.emqx.com/en/blog/connecting-to-emqx-cloud-with-mqttlens) ([Edit](https://github.com/emqx/blog/edit/main/en/202108/connecting-to-emqx-cloud-with-mqttlens.md))
 - [Sticky session load balancing - MQTT broker clustering part 2](https://www.emqx.com/en/blog/mqtt-broker-clustering-part-2-sticky-session-load-balancing) ([Edit](https://github.com/emqx/blog/edit/main/en/202108/mqtt-broker-clustering-part-2-sticky-session-load-balancing.md))
