@@ -4,11 +4,7 @@
 
 在普通的订阅中，我们每发布一条消息，所有匹配的订阅端都会收到该消息的副本。当某个订阅端的消费速度无法跟上消息的生产速度时，我们没有办法将其中一部分消息分流到其他订阅端中来分担压力。这使订阅端容易成为整个消息系统的性能瓶颈。
 
-<p>
-<object data="https://assets.emqx.com/images/svg/01-shared-subscriptions.svg" type="image/svg+xml">
-</object>
-</p>
-
+![image.png](https://assets.emqx.com/images/0787176cbe7d71f5731b5d1fcc44560f.png)
 
 所以 MQTT 5.0 引入了共享订阅特性，它使得 MQTT 服务端可以在使用特定订阅的客户端之间均衡地分配消息负载。这表示，当我们有两个客户端共享一个订阅时，那么每个匹配该订阅的消息都只会有一个副本投递给其中一个客户端。
 

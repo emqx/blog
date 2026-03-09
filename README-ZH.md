@@ -7,6 +7,7 @@
 ## [Product](https://www.emqx.com/zh/blog/category/product)
 EMQ products including EMQX, EMQX Cloud, Neuron, NanoMQ, MQTTX and more.
 
+- [消息平台演进之路：为什么融合是必然趋势](https://www.emqx.com/zh/blog/emq-tech-day-2026-2) ([Edit](https://github.com/emqx/blog/edit/main/zh/202603/emq-tech-day-2026-2.md))
 - [NeuronEX 仪表盘功能使用指南](https://www.emqx.com/zh/blog/neuronex-dashboard-user-guide) ([Edit](https://github.com/emqx/blog/edit/main/zh/202602/neuronex-dashboard-user-guide.md))
 - [10 分钟将任意 PLC 连接到 MQTT：工业连接的零代码路径](https://www.emqx.com/zh/blog/from-plc-to-mqtt) ([Edit](https://github.com/emqx/blog/edit/main/zh/202602/from-plc-to-mqtt.md))
 - [使用自然语言编写工业数据处理规则：NeuronEX 基于大语言模型的 SQL 生成](https://www.emqx.com/zh/blog/natural-language-to-sql-for-industrial-data-neuronex) ([Edit](https://github.com/emqx/blog/edit/main/zh/202602/natural-language-to-sql-for-industrial-data-neuronex.md))
