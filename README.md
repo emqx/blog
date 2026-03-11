@@ -450,6 +450,7 @@ EMQ products including EMQX, EMQX Cloud, Neuron, NanoMQ, MQTTX and more.
 ## [MQTT](https://www.emqx.com/en/blog/category/mqtt)
 Learn MQTT protocol from beginner to advanced, including tutorials, clients, programming and security.
 
+- [Why MQTT Is the Missing Infrastructure Layer for Agentic AI](https://www.emqx.com/en/blog/why-mqtt-is-the-missing-infrastructure-layer-for-agentic-ai) ([Edit](https://github.com/emqx/blog/edit/main/en/202603/why-mqtt-is-the-missing-infrastructure-layer-for-agentic-ai.md))
 - [Security Hardening of EMQX in Production (Part 3): TLS, MQTT Layer, and Operations](https://www.emqx.com/en/blog/security-hardening-emqx-iot-messaging-systems-part-3) ([Edit](https://github.com/emqx/blog/edit/main/en/202602/security-hardening-emqx-iot-messaging-systems-part-3.md))
 - [Security Hardening of EMQX in Production (Part 2): Infrastructure and Erlang VM](https://www.emqx.com/en/blog/security-hardening-emqx-iot-messaging-systems-part-2) ([Edit](https://github.com/emqx/blog/edit/main/en/202602/security-hardening-emqx-iot-messaging-systems-part-2.md))
 - [The Ultimate Guide to iOS MQTT: Implementing MQTT 5.0 with Swift and CocoaMQTT](https://www.emqx.com/en/blog/ios-mqtt5-client) ([Edit](https://github.com/emqx/blog/edit/main/en/202602/ios-mqtt5-client.md))
