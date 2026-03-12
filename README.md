@@ -699,6 +699,7 @@ Real-world IoT solutions and industry applications powered by EMQ.
 ## [AI](https://www.emqx.com/en/blog/category/ai)
 Empower IoT with AI and LLM capabilities.
 
+- [The Economics of the Intelligent AI Edge: Cost Savings in Cloud Ingress](https://www.emqx.com/en/blog/the-economics-of-the-intelligent-ai-edge) ([Edit](https://github.com/emqx/blog/edit/main/en/202603/the-economics-of-the-intelligent-ai-edge.md))
 - [Building the Nervous System for Physical AI: Key Takeaways from CES 2026](https://www.emqx.com/en/blog/physical-ai-and-the-new-data-fabric) ([Edit](https://github.com/emqx/blog/edit/main/en/202601/physical-ai-and-the-new-data-fabric.md))
 - [How EMQX Unified Namespace Powers AI Transformation in Automotive Manufacturing](https://www.emqx.com/en/blog/how-emqx-unified-namespace-powers-ai-transformation-in-automotive-manufacturing) ([Edit](https://github.com/emqx/blog/edit/main/en/202511/how-emqx-unified-namespace-powers-ai-transformation-in-automotive-manufacturing.md))
 - [From Voice to Vision: The Final Step in Building Your AI Agent with ESP32 and MCP over MQTT](https://www.emqx.com/en/blog/esp32-and-mcp-over-mqtt-6) ([Edit](https://github.com/emqx/blog/edit/main/en/202509/esp32-and-mcp-over-mqtt-6.md))
@@ -756,6 +757,7 @@ Build reliable and efficient connected vehicle platforms with EMQ.
 ## [Industrial IoT](https://www.emqx.com/en/blog/category/iiot)
 Industrial IoT solutions with Unified Namespace and Sparkplug.
 
+- [The Economics of the Intelligent AI Edge: Cost Savings in Cloud Ingress](https://www.emqx.com/en/blog/the-economics-of-the-intelligent-ai-edge) ([Edit](https://github.com/emqx/blog/edit/main/en/202603/the-economics-of-the-intelligent-ai-edge.md))
 - [The Intelligent AI Edge vs. Legacy Edge: How EMQX Neuron  Modernizes IIoT Data Pipeline](https://www.emqx.com/en/blog/the-intelligent-ai-edge-vs-legacy-edge) ([Edit](https://github.com/emqx/blog/edit/main/en/202603/the-intelligent-ai-edge-vs-legacy-edge.md))
 - [EMQX UNS Powers a Digital Twin for Predictive, Efficient Production](https://www.emqx.com/en/blog/emqx-uns-powers-a-digital-twin-for-predictive-efficient-production) ([Edit](https://github.com/emqx/blog/edit/main/en/202512/emqx-uns-powers-a-digital-twin-for-predictive-efficient-production.md))
 - [Top 3 Open Source MQTT Brokers for Industrial IoT in 2025](https://www.emqx.com/en/blog/top-3-open-source-mqtt-brokers-for-industrial-iot-in-2023) ([Edit](https://github.com/emqx/blog/edit/main/en/202508/top-3-open-source-mqtt-brokers-for-industrial-iot-in-2023.md))
