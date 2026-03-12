@@ -7,6 +7,7 @@
 ## [Product](https://www.emqx.com/zh/blog/category/product)
 EMQ products including EMQX, EMQX Cloud, Neuron, NanoMQ, MQTTX and more.
 
+- [使用 EMQX 构建 Physical AI 智能体网络：规模化解决 A2A 协议挑战](https://www.emqx.com/zh/blog/physical-ai-agent-network-a2a-protocol) ([Edit](https://github.com/emqx/blog/edit/main/zh/202603/physical-ai-agent-network-a2a-protocol.md))
 - [消息平台演进之路：为什么融合是必然趋势](https://www.emqx.com/zh/blog/emq-tech-day-2026-2) ([Edit](https://github.com/emqx/blog/edit/main/zh/202603/emq-tech-day-2026-2.md))
 - [NeuronEX 仪表盘功能使用指南](https://www.emqx.com/zh/blog/neuronex-dashboard-user-guide) ([Edit](https://github.com/emqx/blog/edit/main/zh/202602/neuronex-dashboard-user-guide.md))
 - [10 分钟将任意 PLC 连接到 MQTT：工业连接的零代码路径](https://www.emqx.com/zh/blog/from-plc-to-mqtt) ([Edit](https://github.com/emqx/blog/edit/main/zh/202602/from-plc-to-mqtt.md))
@@ -724,6 +725,8 @@ Real-world IoT solutions and industry applications powered by EMQ.
 ## [AI](https://www.emqx.com/zh/blog/category/ai)
 Empower IoT with AI and LLM capabilities.
 
+- [S3 正在吞噬一切：AI 时代的基础软件架构革命](https://www.emqx.com/zh/blog/s3-ai-era-infrastructure-revolution) ([Edit](https://github.com/emqx/blog/edit/main/zh/202603/s3-ai-era-infrastructure-revolution.md))
+- [使用 EMQX 构建 Physical AI 智能体网络：规模化解决 A2A 协议挑战](https://www.emqx.com/zh/blog/physical-ai-agent-network-a2a-protocol) ([Edit](https://github.com/emqx/blog/edit/main/zh/202603/physical-ai-agent-network-a2a-protocol.md))
 - [Physical AI 时代的数据基础设施：EMQX 如何赋能 AIoT 场景](https://www.emqx.com/zh/blog/physical-ai-and-the-new-data-fabric) ([Edit](https://github.com/emqx/blog/edit/main/zh/202601/physical-ai-and-the-new-data-fabric.md))
 - [ESP32 + MCP over MQTT：图像采集 + 多模态理解，为智能体装上「眼睛」](https://www.emqx.com/zh/blog/esp32-and-mcp-over-mqtt-6) ([Edit](https://github.com/emqx/blog/edit/main/zh/202508/esp32-and-mcp-over-mqtt-6.md))
 - [ESP32 + MCP over MQTT：基于大模型打造人格化情感智能体](https://www.emqx.com/zh/blog/esp32-and-mcp-over-mqtt-5) ([Edit](https://github.com/emqx/blog/edit/main/zh/202508/esp32-and-mcp-over-mqtt-5.md))
