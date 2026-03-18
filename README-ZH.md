@@ -7,6 +7,7 @@
 ## [Product](https://www.emqx.com/zh/blog/category/product)
 EMQ products including EMQX, EMQX Cloud, Neuron, NanoMQ, MQTTX and more.
 
+- [AWS 中东可用区遇袭：EMQX Cloud 如何保障 IoT 消息服务连续性](https://www.emqx.com/zh/blog/aws-middle-east-outage-emqx-cloud-iot-continuity) ([Edit](https://github.com/emqx/blog/edit/main/zh/202603/aws-middle-east-outage-emqx-cloud-iot-continuity.md))
 - [使用 EMQX 构建 Physical AI 智能体网络：规模化解决 A2A 协议挑战](https://www.emqx.com/zh/blog/physical-ai-agent-network-a2a-protocol) ([Edit](https://github.com/emqx/blog/edit/main/zh/202603/physical-ai-agent-network-a2a-protocol.md))
 - [消息平台演进之路：为什么融合是必然趋势](https://www.emqx.com/zh/blog/emq-tech-day-2026-2) ([Edit](https://github.com/emqx/blog/edit/main/zh/202603/emq-tech-day-2026-2.md))
 - [NeuronEX 仪表盘功能使用指南](https://www.emqx.com/zh/blog/neuronex-dashboard-user-guide) ([Edit](https://github.com/emqx/blog/edit/main/zh/202602/neuronex-dashboard-user-guide.md))

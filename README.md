@@ -757,6 +757,7 @@ Build reliable and efficient connected vehicle platforms with EMQ.
 ## [Industrial IoT](https://www.emqx.com/en/blog/category/iiot)
 Industrial IoT solutions with Unified Namespace and Sparkplug.
 
+- [Industrial Edge AI in Action: From Feature Engineering to Real-Time Inference](https://www.emqx.com/en/blog/industrial-edge-ai-in-action) ([Edit](https://github.com/emqx/blog/edit/main/en/202603/industrial-edge-ai-in-action.md))
 - [The Economics of the Intelligent AI Edge: Cost Savings in Cloud Ingress](https://www.emqx.com/en/blog/the-economics-of-the-intelligent-ai-edge) ([Edit](https://github.com/emqx/blog/edit/main/en/202603/the-economics-of-the-intelligent-ai-edge.md))
 - [The Intelligent AI Edge vs. Legacy Edge: How EMQX Neuron  Modernizes IIoT Data Pipeline](https://www.emqx.com/en/blog/the-intelligent-ai-edge-vs-legacy-edge) ([Edit](https://github.com/emqx/blog/edit/main/en/202603/the-intelligent-ai-edge-vs-legacy-edge.md))
 - [EMQX UNS Powers a Digital Twin for Predictive, Efficient Production](https://www.emqx.com/en/blog/emqx-uns-powers-a-digital-twin-for-predictive-efficient-production) ([Edit](https://github.com/emqx/blog/edit/main/en/202512/emqx-uns-powers-a-digital-twin-for-predictive-efficient-production.md))

@@ -4,14 +4,12 @@
 
 在普通的订阅中，我们每发布一条消息，所有匹配的订阅端都会收到该消息的副本。当某个订阅端的消费速度无法跟上消息的生产速度时，我们没有办法将其中一部分消息分流到其他订阅端中来分担压力。这使订阅端容易成为整个消息系统的性能瓶颈。
 
-![image.png](https://assets.emqx.com/images/0787176cbe7d71f5731b5d1fcc44560f.png)
+![D 1.gif](https://assets.emqx.com/images/c4f105ad0a99e05e7b5c437e49e0133d.gif)
 
 所以 MQTT 5.0 引入了共享订阅特性，它使得 MQTT 服务端可以在使用特定订阅的客户端之间均衡地分配消息负载。这表示，当我们有两个客户端共享一个订阅时，那么每个匹配该订阅的消息都只会有一个副本投递给其中一个客户端。
 
-<p>
-<object data="https://assets.emqx.com/images/svg/02-shared-subscriptions.svg" type="image/svg+xml">
-</object>
-</p>
+
+![D 2.gif](https://assets.emqx.com/images/d52178960339f9e5fe3d7399642ea5b7.gif)
 
 
 共享订阅不仅为消费端带来了极佳的水平扩展能力，使我们可以应对更高的吞吐量，还为其带来了高可用性，即使共享订阅组中的一个客户端断开连接或发生故障，其他客户端仍然可以继续处理消息，在必要时还可以接管原先流向该客户端的消息流。
@@ -30,11 +28,7 @@ $share/{Share Name}/{Topic Filter}
 
 需要共享同一个订阅的一组订阅会话，必须使用相同的共享名。所以 `$share/consumer1/sport/#` 和 `$share/consumer2/sport/#` 属于不同的共享订阅组。当一个消息同时与多个共享订阅组使用的过滤器匹配时，服务端会在每个匹配的共享订阅组中选择一个会话发送该消息的副本。这在某个主题的消息有多个不同类型的消费者时非常有用。
 
-<p>
-<object data="https://assets.emqx.com/images/svg/03-shared-subscriptions.svg" type="image/svg+xml">
-</object>
-</p>
-
+![D 3.gif](https://assets.emqx.com/images/93163021d480d6e0c25233f9fad8d847.gif)
 
 但是，两个订阅的共享名 `{Share Name}` 相同，并不表示它们一定是相同的共享订阅。只有 `{Share Name}/{Topic Filter}` 才能唯一地标识一个共享订阅组，下面这些订阅主题均属于不同的共享订阅组：
 
@@ -45,10 +39,8 @@ $share/{Share Name}/{Topic Filter}
 
 共享订阅和普通订阅互不影响，当某个消息同时与共享订阅和普通订阅匹配时，服务端会向每个匹配的普通订阅的客户端发送该消息的副本，同时向每个匹配的共享订阅组中的其中一个会话发送该消息的副本。如果这些订阅来自同一个客户端，那么这个客户端可能会收到该消息的多个副本。
 
-<p>
-<object data="https://assets.emqx.com/images/svg/04-shared-subscriptions.svg" type="image/svg+xml">
-</object>
-</p>
+
+![D 4.gif](https://assets.emqx.com/images/4ee2bc69eba839f68af366c1a7f1bad1.gif)
 
 
 ## 共享订阅的负载均衡策略
