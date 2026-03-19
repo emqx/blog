@@ -699,6 +699,7 @@ Real-world IoT solutions and industry applications powered by EMQ.
 ## [AI](https://www.emqx.com/en/blog/category/ai)
 Empower IoT with AI and LLM capabilities.
 
+- [Building Physical AI Agent Networks with EMQX: Solving A2A Protocol Challenges at Scale](https://www.emqx.com/en/blog/building-physical-ai-agent-networks-with-emqx) ([Edit](https://github.com/emqx/blog/edit/main/en/202603/building-physical-ai-agent-networks-with-emqx.md))
 - [The Economics of the Intelligent AI Edge: Cost Savings in Cloud Ingress](https://www.emqx.com/en/blog/the-economics-of-the-intelligent-ai-edge) ([Edit](https://github.com/emqx/blog/edit/main/en/202603/the-economics-of-the-intelligent-ai-edge.md))
 - [Building the Nervous System for Physical AI: Key Takeaways from CES 2026](https://www.emqx.com/en/blog/physical-ai-and-the-new-data-fabric) ([Edit](https://github.com/emqx/blog/edit/main/en/202601/physical-ai-and-the-new-data-fabric.md))
 - [How EMQX Unified Namespace Powers AI Transformation in Automotive Manufacturing](https://www.emqx.com/en/blog/how-emqx-unified-namespace-powers-ai-transformation-in-automotive-manufacturing) ([Edit](https://github.com/emqx/blog/edit/main/en/202511/how-emqx-unified-namespace-powers-ai-transformation-in-automotive-manufacturing.md))
