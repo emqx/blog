@@ -7,6 +7,7 @@
 ## [Product](https://www.emqx.com/zh/blog/category/product)
 EMQ products including EMQX, EMQX Cloud, Neuron, NanoMQ, MQTTX and more.
 
+- [Everything Will Flow：面向 AI 的新一代融合消息流平台 FlowMQ 正式发布](https://www.emqx.com/zh/blog/flowmq-ai-unified-messaging-platform-release) ([Edit](https://github.com/emqx/blog/edit/main/zh/202603/flowmq-ai-unified-messaging-platform-release.md))
 - [AWS 中东可用区遇袭：EMQX Cloud 如何保障 IoT 消息服务连续性](https://www.emqx.com/zh/blog/aws-middle-east-outage-emqx-cloud-iot-continuity) ([Edit](https://github.com/emqx/blog/edit/main/zh/202603/aws-middle-east-outage-emqx-cloud-iot-continuity.md))
 - [使用 EMQX 构建 Physical AI 智能体网络：规模化解决 A2A 协议挑战](https://www.emqx.com/zh/blog/physical-ai-agent-network-a2a-protocol) ([Edit](https://github.com/emqx/blog/edit/main/zh/202603/physical-ai-agent-network-a2a-protocol.md))
 - [消息平台演进之路：为什么融合是必然趋势](https://www.emqx.com/zh/blog/emq-tech-day-2026-2) ([Edit](https://github.com/emqx/blog/edit/main/zh/202603/emq-tech-day-2026-2.md))
