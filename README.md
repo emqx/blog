@@ -7,6 +7,7 @@
 ## [Product](https://www.emqx.com/en/blog/category/product)
 EMQ products including EMQX, EMQX Cloud, Neuron, NanoMQ, MQTTX and more.
 
+- [Beyond Connectivity: How to Build an Efficient Industrial Data Processing and Cleaning Engine at the Edge](https://www.emqx.com/en/blog/industrial-data-processing-cleaning-edge) ([Edit](https://github.com/emqx/blog/edit/main/en/202604/industrial-data-processing-cleaning-edge.md))
 - [EMQX Cloud Update: NATS Gateway, Google Cloud for EMQX Tables, London Region, and More](https://www.emqx.com/en/blog/emqx-cloud-update-nats-gateway-google-cloud-tables-london-region) ([Edit](https://github.com/emqx/blog/edit/main/en/202603/emqx-cloud-update-nats-gateway-google-cloud-tables-london-region.md))
 - [Bridging the Gap Between OT and IT: 15-Minute Integration of EMQX Neuron and Azure Fabric](https://www.emqx.com/en/blog/15-minute-integration-of-emqx-neuron-and-azure-fabric) ([Edit](https://github.com/emqx/blog/edit/main/en/202603/15-minute-integration-of-emqx-neuron-and-azure-fabric.md))
 - [From MQTT to Parquet: Analyzing IoT Data on Amazon S3 with EMQX and DuckDB](https://www.emqx.com/en/blog/from-mqtt-to-parquet) ([Edit](https://github.com/emqx/blog/edit/main/en/202603/from-mqtt-to-parquet.md))
