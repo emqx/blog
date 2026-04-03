@@ -674,6 +674,8 @@ Integrate MQTT with databases, message queues, cloud services and more.
 ## [Use Cases](https://www.emqx.com/zh/blog/category/use-cases)
 Real-world IoT solutions and industry applications powered by EMQ.
 
+- [吉利汽车：基于 EMQX 打造承载全球 300 万 + 车辆的智能网联数据中枢](https://www.emqx.com/zh/blog/emqx-intelligent-connected-data-hub-3-million-vehicles) ([Edit](https://github.com/emqx/blog/edit/main/zh/202604/emqx-intelligent-connected-data-hub-3-million-vehicles.md))
+- [商米：使用 EMQX 连接全球数百万实体商业终端](https://www.emqx.com/zh/blog/emqx-connecting-millions-of-commercial-terminals) ([Edit](https://github.com/emqx/blog/edit/main/zh/202604/emqx-connecting-millions-of-commercial-terminals.md))
 - [基于 EMQX Cloud 构建无人机统一接入平台](https://www.emqx.com/zh/blog/building-uav-unified-access-platform-with-emqx-cloud) ([Edit](https://github.com/emqx/blog/edit/main/zh/202512/building-uav-unified-access-platform-with-emqx-cloud.md))
 - [基于统一命名空间方案重构 ESG 与碳足迹报告体系](https://www.emqx.com/zh/blog/unified-namespace-esg-carbon-reporting) ([Edit](https://github.com/emqx/blog/edit/main/zh/202512/unified-namespace-esg-carbon-reporting.md))
 - [案例研究：汽车制造如何利用 EMQ UNS 方案实现生产革新](https://www.emqx.com/zh/blog/how-emqx-unified-namespace-powers-ai-transformation-in-automotive-manufacturing) ([Edit](https://github.com/emqx/blog/edit/main/zh/202511/how-emqx-unified-namespace-powers-ai-transformation-in-automotive-manufacturing.md))
