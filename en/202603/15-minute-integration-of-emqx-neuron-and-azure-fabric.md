@@ -165,6 +165,10 @@ After data enters Fabric, you can leverage its full-stack capabilities to build 
 - **Synapse Data Science**: Train predictive maintenance models using MLflow; write results back to OneLake.
 - **Power BI Direct Lake**: Real-time visualization with sub-second interactive analysis directly on OneLake.
 
+![image.png](https://assets.emqx.com/images/6b061bafd82bf544258a8c49409eec27.png){.mx-auto .block}
+
+<center>Build IIoT analytics dashboards quickly with Fabric.</center>
+
 > To fully understand the functions of Fabric, please read the official Fabric documentation: [Microsoft Fabric documentation - Microsoft Fabric](https://learn.microsoft.com/en-us/fabric/) 
 
 ## EMQX Neuron’s Enhanced Capabilities for Industrial Intelligence
