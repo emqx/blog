@@ -40,7 +40,7 @@ To quantify the financial impact, let us examine a specific, calculated scenario
 In the "Before" scenario, the gateway acts as a dumb pipe, strictly forwarding every 1Hz signal to the cloud.
 
 - **Volume Calculation:**
-  - 60 sec×60 min×24 hours×30 days=2,592,000 messages per device.
+  - 1 msg/sec×60 sec×60 min×24 hours×30 days=2,592,000 messages per device.
   - **Fleet Total:** 2,592,000×1,000 devices=2.59 Billion messages/month.
 - **The Bill:**
   - Calculation: 2,592 million×$1.00.
@@ -48,18 +48,18 @@ In the "Before" scenario, the gateway acts as a dumb pipe, strictly forwarding e
 
 **The "After" Math: The EMQX Neuron Effect**
 
-In the "After" scenario, EMQX Neuron is deployed to perform **Time-Aggregation**. Instead of transmitting every second, EMQX Neuron buffers the data locally, calculates statistical aggregates (min, max, average), and sends one consolidated packet every minute.
+In the "After" scenario, EMQX Neuron is deployed to perform **Time-Aggregation**. Instead of transmitting every second, EMQX Neuron buffers the data locally, calculates statistical aggregates (min, max, average), and sends one consolidated packet every 3 seconds.
 
 - **Volume Calculation:**
-  - 1 msg/min×60 min×24 hours×30 days=43,200 messages per device.
-  - **Fleet Total:** 43,200×1,000 devices=43.2 Million messages/month.
+  - 20 msg/min×60 min×24 hours×30 days=864,000 messages per device.
+  - **Fleet Total:** 864,000×1,000 devices=864 Million messages/month.
 - **The Bill:**
-  - Calculation: 43.2 million×$1.00.
-  - **Total:** **$43.20/month**.
+  - Calculation: 864 million×$1.00.
+  - **Total:** **$864/month**.
 
 **The Takeaway:** 
 
-This represents a **~98% reduction** in ingress fees. The annual savings exceed **$26,000**, meaning the EMQX Neuron software license typically pays for itself within the first few weeks of deployment.
+This represents a **~67% reduction** in ingress fees. The annual savings exceed **($2592-$864) x 12 months = $20,736**, meaning the EMQX Neuron software license typically pays for itself within the first few weeks of deployment.
 
 ## **EMQX Neuron Capability 1: Drastic Data Reduction**
 
@@ -97,16 +97,17 @@ In a traditional cloud-first approach, you stream every 100ms polling result to 
 EMQX Neuron polls the PLC at 100ms locally. It uses a stream processing rule to buffer the data *only* when the machine status is "Holding." It calculates the slope `(Pressure_Start - Pressure_End) / Time` locally.
 
 - **Strategy:**
-  1. EMQX Neuron buffers the 50 data points (5 seconds @ 100ms) in memory.
+  1. EMQX Neuron buffers the 5 data points (1 second @ 100ms) in memory.
   2. It calculates the decay rate.
-  3. It sends **1 single message** per cycle summarizing the result: `{"status": "Cycle_Complete", "decay_rate": 0.02, "result": "PASS"}`.
-- **New Message Rate:** Assuming 4 cycles/minute, that is ~172,000 messages/month per press.
-- **Total Fleet Volume:** ~8.6 Million messages/month.
-- **The Bill:** Ingress drops to **$8.60**. Cloud compute drops to nearly **$0** because the analysis is already done.
+  3. It sends 1 single message per cycle summarizing the result: `{"status": "Cycle_Complete", "decay_rate": 0.02, "result": "PASS"}`.
+- **New Message Rate:** Assuming 120 cycles/min, that is 120 cycles/min x 60 min x 24hrs x 30 days = 5,184,000 messages/month per press.
+- **Total Fleet Volume:** 5,184,000 x 50 = 259,200,000 messages/month.
+- **Billing Metric:** Pricing is modeled at approximately **$1.00 per 1 million messages**.
+- **The Bill:** Ingress drops to **$260**. Cloud computing drops to nearly **20%** because the analysis is already done.
 
 **The Takeaway:** 
 
-By moving the 100ms polling logic to the edge, you reduce message volume by **99.3%** and eliminate the need for high-frequency cloud compute triggers.
+By moving the 100ms polling logic to the edge, you reduce message volume by **80%** and eliminate the need for high-frequency cloud compute triggers.
 
 ### **Case Study 3: The "Cellular Overage" Shock**
 
@@ -130,8 +131,9 @@ Legacy SCADA systems often "poll" devices every few seconds just to check connec
 
 EMQX Neuron utilizes **Deadbands**. It monitors the data stream millisecond-by-millisecond but only transmits a packet if the value changes by a configurable percentage (e.g., >5% deviation) or if an alarm state is triggered.
 
-- **Usage:** Drops to 10 GB/month.
-- **Bill:** **$50/month**.
+- **Usage:** Drops to 100 GB/month.
+- **Bill:** **$500/month**.
+- **The Bill**: Ingress drops to **$500,** which drops to **77%** by utilizing the Deadbands
 
 ## **EMQX Neuron Capability 2: Data Hygiene as an Asset**
 
@@ -218,9 +220,9 @@ The transition to an Intelligent Edge is not just a technical optimization; it i
 
 We have demonstrated an "Economic Trifecta" of savings:
 
-1. **Ingress Fees:** Slashed by **98%** via time-aggregation.
-2. **Compute/Storage:** Reduced by **99%** via edge processing.
-3. **Connectivity:** Optimized by **98%** via report-by-exception.
+1. **Ingress Fees:** Slashed by **67%** via time-aggregation.
+2. **Compute/Storage:** Reduced by **80%** via edge processing.
+3. **Connectivity:** Optimized by **77%** via report-by-exception.
 
 A linear cost model acts as a cap on innovation. EMQX Neuron removes this cap, allowing you to scale from ten assets to ten thousand without a corresponding explosion in OpEx. Don't just feed your AI data; feed it *intelligence*. Stop paying the Cloud Ingress Tax and start your trial of EMQX Neuron today.
 
