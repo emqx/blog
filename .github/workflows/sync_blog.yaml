@@ -52,4 +52,4 @@ jobs:
           destination_branch: main
           github_token: ${{ secrets.GROWTH_CI_TOKEN }}
           pr_title: "sync blogs ${{ steps.sync_blog.outputs.branch }}"
-          pr_reviewer: "CrazyWisdom,Red-Asuka,Swilder-M"
+          pr_reviewer: "CrazyWisdom,Red-Asuka"
