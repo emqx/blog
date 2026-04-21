@@ -7,6 +7,7 @@
 ## [Product](https://www.emqx.com/en/blog/category/product)
 EMQ products including EMQX, EMQX Cloud, Neuron, NanoMQ, MQTTX and more.
 
+- [How EMQX Enhances MQTT Security with JWT Authentication and Authorization](https://www.emqx.com/en/blog/emqx-mqtt-security-jwt-authentication-authorization) ([Edit](https://github.com/emqx/blog/edit/main/en/202604/emqx-mqtt-security-jwt-authentication-authorization.md))
 - [Writing Industrial Data Processing Rules in Natural Language: EMQX Neuron's LLM-Driven SQL Generation](https://www.emqx.com/en/blog/emqx-neuron-s-llm-driven-sql-generation) ([Edit](https://github.com/emqx/blog/edit/main/en/202604/emqx-neuron-s-llm-driven-sql-generation.md))
 - [Elastic at Every Scale: How EMQX Tables Leverages GreptimeDB's Distributed Architecture for IoT](https://www.emqx.com/en/blog/elastic-at-every-scale) ([Edit](https://github.com/emqx/blog/edit/main/en/202604/elastic-at-every-scale.md))
 - [EMQX Enterprise 6.2: Native Agent Discovery and Coordination for IoT and AI](https://www.emqx.com/en/blog/emqx-6-2-0-release-notes) ([Edit](https://github.com/emqx/blog/edit/main/en/202604/emqx-6-2-0-release-notes.md))
