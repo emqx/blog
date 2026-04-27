@@ -59,6 +59,8 @@ Clients can adjust their own keepalive by publishing to `$SETOPTS/mqtt/keepalive
 
 An electric vehicle manufacturer managing over 100,000 connected vehicles can adjust connectivity behavior across the entire fleet without interrupting active sessions. When vehicles enter a low-power parked state, their keepalive intervals are extended via `$SETOPTS/mqtt/keepalive-bulk`, reducing idle network traffic and battery consumption. When the ignition turns back on, the original interval is restored with no reconnection, no session disruption, and no impact to in-flight messages.
 
+> Learn more about [Dynamic Keep Alive Adjustment](https://docs.emqx.com/en/emqx/latest/configuration/mqtt.html#dynamic-keep-alive-adjustment).
+
 ## New and Enhanced Data Integrations
 
 EMQX 6.2 adds two new integration targets and strengthens existing GCP connector security.
