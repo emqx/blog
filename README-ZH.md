@@ -7,6 +7,7 @@
 ## [Product](https://www.emqx.com/zh/blog/category/product)
 EMQ products including EMQX, EMQX Cloud, Neuron, NanoMQ, MQTTX and more.
 
+- [EMQX 6.2 新特性：A2A over MQTT 智能体发现与协作](https://www.emqx.com/zh/blog/emqx-6-2-0-release-notes) ([Edit](https://github.com/emqx/blog/edit/main/zh/202604/emqx-6-2-0-release-notes.md))
 - [智能 AI 边缘与传统边缘：NeuronEX 如何实现 IIoT 数据管道现代化](https://www.emqx.com/zh/blog/neuronex-iiot-data-pipeline-modernization) ([Edit](https://github.com/emqx/blog/edit/main/zh/202604/neuronex-iiot-data-pipeline-modernization.md))
 - [跨越 OT 与 IT 的鸿沟：15 分钟实现 NeuronEX 与 Azure Fabric 联动](https://www.emqx.com/zh/blog/bridge-ot-it-neuronex-azure-fabric-integration) ([Edit](https://github.com/emqx/blog/edit/main/zh/202604/bridge-ot-it-neuronex-azure-fabric-integration.md))
 - [Everything Will Flow：面向 AI 的新一代融合消息流平台 FlowMQ 正式发布](https://www.emqx.com/zh/blog/flowmq-ai-unified-messaging-platform-release) ([Edit](https://github.com/emqx/blog/edit/main/zh/202603/flowmq-ai-unified-messaging-platform-release.md))
