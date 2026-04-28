@@ -2,7 +2,7 @@ EMQX Enterprise 6.2 is now available!
 
 This release takes MQTT a step further by adding native support for the A2A protocol over MQTT, enabling AI agents to register, discover, and collaborate directly through the broker without additional infrastructure. 
 
-Alongside this, EMQX 6.2 introduces broker-level Unified Namespace governance to enforce topic structure and data contracts at the source, dynamic keepalive management for large device fleets, two new data integrations with Azure Event Grid and QuasarDB, and strengthened GCP connector security through Workload Identity Federation.
+Alongside this, EMQX 6.2 enhances the MQTT 5.0 publish/subscribe model with message filtering at the subscription level, and introduces dynamic keepalive management for large device fleets, two new data integrations with Azure Event Grid and QuasarDB, and strengthened GCP connector security through Workload Identity Federation.
 
 Whether you are building distributed AI systems, operating large-scale IoT fleets, or standardizing data quality across industrial pipelines, EMQX 6.2 delivers the coordination, governance, and operational control to run at enterprise scale.
 
