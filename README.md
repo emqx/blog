@@ -673,6 +673,7 @@ Integrate MQTT with databases, message queues, cloud services and more.
 ## [Use Cases](https://www.emqx.com/en/blog/category/use-cases)
 Real-world IoT solutions and industry applications powered by EMQ.
 
+- [Cross-Region MQTT Cluster Linking for Global Physical Access Control Systems](https://www.emqx.com/en/blog/cross-region-mqtt-cluster-linking-for-global-physical-access-control-systems) ([Edit](https://github.com/emqx/blog/edit/main/en/202604/cross-region-mqtt-cluster-linking-for-global-physical-access-control-systems.md))
 - [Scaling Connected Device Management to 10 Million Concurrent Connections with EMQX](https://www.emqx.com/en/blog/scaling-connected-device-management-to-10-million-concurrent-connections-with-emqx) ([Edit](https://github.com/emqx/blog/edit/main/en/202604/scaling-connected-device-management-to-10-million-concurrent-connections-with-emqx.md))
 - [Enabling Intelligent UAV Connectivity with EMQX Cloud](https://www.emqx.com/en/blog/building-uav-unified-access-platform-with-emqx-cloud) ([Edit](https://github.com/emqx/blog/edit/main/en/202512/building-uav-unified-access-platform-with-emqx-cloud.md))
 - [How EMQX Unified Namespace Powers AI Transformation in Automotive Manufacturing](https://www.emqx.com/en/blog/how-emqx-unified-namespace-powers-ai-transformation-in-automotive-manufacturing) ([Edit](https://github.com/emqx/blog/edit/main/en/202511/how-emqx-unified-namespace-powers-ai-transformation-in-automotive-manufacturing.md))
