@@ -7,6 +7,7 @@
 ## [Product](https://www.emqx.com/en/blog/category/product)
 EMQ products including EMQX, EMQX Cloud, Neuron, NanoMQ, MQTTX and more.
 
+- [Mastering the Pressure Curve: How a Manufacturing Giant Solved Hydraulic Seal Integrity with EMQX Neuron](https://www.emqx.com/en/blog/manufacturing-giant-hydraulic-seal-integrity-emqx-neuron) ([Edit](https://github.com/emqx/blog/edit/main/en/202604/manufacturing-giant-hydraulic-seal-integrity-emqx-neuron.md))
 - [EMQX Cloud Update: Custom Domain, EMQX Tables on Azure, and Tables Network Association](https://www.emqx.com/en/blog/emqx-cloud-update-custom-domain-emqx-tables-on-azure) ([Edit](https://github.com/emqx/blog/edit/main/en/202604/emqx-cloud-update-custom-domain-emqx-tables-on-azure.md))
 - [How EMQX Enhances MQTT Security with JWT Authentication and Authorization](https://www.emqx.com/en/blog/emqx-mqtt-security-jwt-authentication-authorization) ([Edit](https://github.com/emqx/blog/edit/main/en/202604/emqx-mqtt-security-jwt-authentication-authorization.md))
 - [Writing Industrial Data Processing Rules in Natural Language: EMQX Neuron's LLM-Driven SQL Generation](https://www.emqx.com/en/blog/emqx-neuron-s-llm-driven-sql-generation) ([Edit](https://github.com/emqx/blog/edit/main/en/202604/emqx-neuron-s-llm-driven-sql-generation.md))
