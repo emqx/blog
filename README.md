@@ -711,6 +711,7 @@ Real-world IoT solutions and industry applications powered by EMQ.
 ## [AI](https://www.emqx.com/en/blog/category/ai)
 Empower IoT with AI and LLM capabilities.
 
+- [A2A over MQTT: How AI Agents Find Each Other at Scale](https://www.emqx.com/en/blog/a2a-over-mqtt) ([Edit](https://github.com/emqx/blog/edit/main/en/202605/a2a-over-mqtt.md))
 - [One AI Agent per Device: How MQTT Turns IoT Fleets into Self-Coordinating Systems](https://www.emqx.com/en/blog/how-mqtt-turns-iot-fleets-into-selfcoordinating-systems) ([Edit](https://github.com/emqx/blog/edit/main/en/202604/how-mqtt-turns-iot-fleets-into-selfcoordinating-systems.md))
 - [Building Physical AI Agent Networks with EMQX: Solving A2A Protocol Challenges at Scale](https://www.emqx.com/en/blog/building-physical-ai-agent-networks-with-emqx) ([Edit](https://github.com/emqx/blog/edit/main/en/202603/building-physical-ai-agent-networks-with-emqx.md))
 - [The Economics of the Intelligent AI Edge: Cost Savings in Cloud Ingress](https://www.emqx.com/en/blog/the-economics-of-the-intelligent-ai-edge) ([Edit](https://github.com/emqx/blog/edit/main/en/202603/the-economics-of-the-intelligent-ai-edge.md))
