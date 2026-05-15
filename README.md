@@ -475,7 +475,7 @@ Learn MQTT protocol from beginner to advanced, including tutorials, clients, pro
 - [A Quickstart Guide to Using MQTT over WebSocket](https://www.emqx.com/en/blog/connect-to-mqtt-broker-with-websocket) ([Edit](https://github.com/emqx/blog/edit/main/en/202508/connect-to-mqtt-broker-with-websocket.md))
 - [MQTT Broker: How It Works, Popular Options, and Quickstart](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) ([Edit](https://github.com/emqx/blog/edit/main/en/202508/the-ultimate-guide-to-mqtt-broker-comparison.md))
 - [Python MQTT Clients: A 2025 Selection Guide](https://www.emqx.com/en/blog/comparision-of-python-mqtt-client) ([Edit](https://github.com/emqx/blog/edit/main/en/202507/comparision-of-python-mqtt-client.md))
-- [MQTT in Python with Paho Client: Beginner's Guide 2025](https://www.emqx.com/en/blog/how-to-use-mqtt-in-python) ([Edit](https://github.com/emqx/blog/edit/main/en/202507/how-to-use-mqtt-in-python.md))
+- [MQTT in Python with Paho Client: Beginner's Guide 2026](https://www.emqx.com/en/blog/how-to-use-mqtt-in-python) ([Edit](https://github.com/emqx/blog/edit/main/en/202507/how-to-use-mqtt-in-python.md))
 - [Top 3 MQTT WebSocket Clients for Developers in 2025](https://www.emqx.com/en/blog/top-3-mqtt-websocket-clients-in-2023) ([Edit](https://github.com/emqx/blog/edit/main/en/202507/top-3-mqtt-websocket-clients-in-2023.md))
 - [Comparison of Open Source MQTT Brokers 2025](https://www.emqx.com/en/blog/a-comprehensive-comparison-of-open-source-mqtt-brokers-in-2023) ([Edit](https://github.com/emqx/blog/edit/main/en/202507/a-comprehensive-comparison-of-open-source-mqtt-brokers-in-2023.md))
 - [Free MQTT Broker: Exploring Options and Choosing the Right Solution](https://www.emqx.com/en/blog/free-mqtt-broker) ([Edit](https://github.com/emqx/blog/edit/main/en/202507/free-mqtt-broker.md))
@@ -675,6 +675,7 @@ Integrate MQTT with databases, message queues, cloud services and more.
 ## [Use Cases](https://www.emqx.com/en/blog/category/use-cases)
 Real-world IoT solutions and industry applications powered by EMQ.
 
+- [Enterprise MQTT Infrastructure for Connected Medical Device Fleets in Clinical Environments](https://www.emqx.com/en/blog/mqtt-medical-device-fleets) ([Edit](https://github.com/emqx/blog/edit/main/en/202605/mqtt-medical-device-fleets.md))
 - [Cross-Region MQTT Cluster Linking for Global Physical Access Control Systems](https://www.emqx.com/en/blog/cross-region-mqtt-cluster-linking-for-global-physical-access-control-systems) ([Edit](https://github.com/emqx/blog/edit/main/en/202604/cross-region-mqtt-cluster-linking-for-global-physical-access-control-systems.md))
 - [Scaling Connected Device Management to 10 Million Concurrent Connections with EMQX](https://www.emqx.com/en/blog/scaling-connected-device-management-to-10-million-concurrent-connections-with-emqx) ([Edit](https://github.com/emqx/blog/edit/main/en/202604/scaling-connected-device-management-to-10-million-concurrent-connections-with-emqx.md))
 - [Enabling Intelligent UAV Connectivity with EMQX Cloud](https://www.emqx.com/en/blog/building-uav-unified-access-platform-with-emqx-cloud) ([Edit](https://github.com/emqx/blog/edit/main/en/202512/building-uav-unified-access-platform-with-emqx-cloud.md))
