@@ -460,6 +460,7 @@ EMQ products including EMQX, EMQX Cloud, Neuron, NanoMQ, MQTTX and more.
 ## [MQTT](https://www.emqx.com/en/blog/category/mqtt)
 Learn MQTT protocol from beginner to advanced, including tutorials, clients, programming and security.
 
+- [MQTT in Python with Paho Client: Beginner's Guide 2026](https://www.emqx.com/en/blog/how-to-use-mqtt-in-python) ([Edit](https://github.com/emqx/blog/edit/main/en/202605/how-to-use-mqtt-in-python.md))
 - [Why MQTT Is the Missing Infrastructure Layer for Agentic AI](https://www.emqx.com/en/blog/why-mqtt-is-the-missing-infrastructure-layer-for-agentic-ai) ([Edit](https://github.com/emqx/blog/edit/main/en/202603/why-mqtt-is-the-missing-infrastructure-layer-for-agentic-ai.md))
 - [Security Hardening of EMQX in Production (Part 3): TLS, MQTT Layer, and Operations](https://www.emqx.com/en/blog/security-hardening-emqx-iot-messaging-systems-part-3) ([Edit](https://github.com/emqx/blog/edit/main/en/202602/security-hardening-emqx-iot-messaging-systems-part-3.md))
 - [Security Hardening of EMQX in Production (Part 2): Infrastructure and Erlang VM](https://www.emqx.com/en/blog/security-hardening-emqx-iot-messaging-systems-part-2) ([Edit](https://github.com/emqx/blog/edit/main/en/202602/security-hardening-emqx-iot-messaging-systems-part-2.md))
@@ -475,7 +476,6 @@ Learn MQTT protocol from beginner to advanced, including tutorials, clients, pro
 - [A Quickstart Guide to Using MQTT over WebSocket](https://www.emqx.com/en/blog/connect-to-mqtt-broker-with-websocket) ([Edit](https://github.com/emqx/blog/edit/main/en/202508/connect-to-mqtt-broker-with-websocket.md))
 - [MQTT Broker: How It Works, Popular Options, and Quickstart](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) ([Edit](https://github.com/emqx/blog/edit/main/en/202508/the-ultimate-guide-to-mqtt-broker-comparison.md))
 - [Python MQTT Clients: A 2025 Selection Guide](https://www.emqx.com/en/blog/comparision-of-python-mqtt-client) ([Edit](https://github.com/emqx/blog/edit/main/en/202507/comparision-of-python-mqtt-client.md))
-- [MQTT in Python with Paho Client: Beginner's Guide 2026](https://www.emqx.com/en/blog/how-to-use-mqtt-in-python) ([Edit](https://github.com/emqx/blog/edit/main/en/202507/how-to-use-mqtt-in-python.md))
 - [Top 3 MQTT WebSocket Clients for Developers in 2025](https://www.emqx.com/en/blog/top-3-mqtt-websocket-clients-in-2023) ([Edit](https://github.com/emqx/blog/edit/main/en/202507/top-3-mqtt-websocket-clients-in-2023.md))
 - [Comparison of Open Source MQTT Brokers 2025](https://www.emqx.com/en/blog/a-comprehensive-comparison-of-open-source-mqtt-brokers-in-2023) ([Edit](https://github.com/emqx/blog/edit/main/en/202507/a-comprehensive-comparison-of-open-source-mqtt-brokers-in-2023.md))
 - [Free MQTT Broker: Exploring Options and Choosing the Right Solution](https://www.emqx.com/en/blog/free-mqtt-broker) ([Edit](https://github.com/emqx/blog/edit/main/en/202507/free-mqtt-broker.md))
