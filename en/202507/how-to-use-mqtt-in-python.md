@@ -4,11 +4,11 @@
 
 Python, a versatile and easy-to-use programming language, is a top choice for IoT development thanks to its extensive libraries and ability to process large datasets. From smart home automation to environmental monitoring and industrial control, Python shines in IoT projects. Its compatibility with microcontrollers further enhances its value for building IoT solutions.
 
-In this guide, we’ll explore how to use the **Paho MQTT Python client** to connect an [MQTT client](https://www.emqx.com/en/blog/mqtt-client-tools) to an [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison), subscribe to topics, publish messages, and more in a Python project. Whether you're new to **Python MQTT** or looking to refine your skills, this tutorial has you covered.
+In this guide, we’ll explore how to use the **Paho MQTT Python Client** to connect an [MQTT client](https://www.emqx.com/en/blog/mqtt-client-tools) to an [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison), subscribe to topics, publish messages, and more in a Python project. Whether you're new to **using MQTT in Python** or looking to refine your skills, this tutorial has you covered.
 
 ## Why Choose Paho MQTT Python Client?
 
-The Paho MQTT Python Client supports [MQTT versions 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5), 3.1.1, and 3.1, running on Python 2.7 or 3.x. It offers a simple client class and helper functions to easily publish one-off messages to an MQTT server.
+The Paho MQTT Python Client supports [MQTT versions 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5), 3.1.1, and 3.1, and requires Python 3.7 or later (paho-mqtt 2.x). It offers a simple client class and helper functions to easily publish one-off messages to an MQTT server.
 
 Here’s why it’s the top [MQTT client library](https://www.emqx.com/en/mqtt-client-sdk) for Python users:  
 
@@ -17,9 +17,9 @@ Here’s why it’s the top [MQTT client library](https://www.emqx.com/en/mqtt-c
 - Supports multiple security options.  
 - Regularly updated to keep pace with IoT advancements.
 
-> Interested in other Python MQTT libraries? Check out our [Python MQTT Clients: A 2025 Selection Guide](https://www.emqx.com/en/blog/comparision-of-python-mqtt-client) for more details.
+> Interested in other Python MQTT libraries? Check out our [Python MQTT Clients: A 2026 Selection Guide](https://www.emqx.com/en/blog/comparision-of-python-mqtt-client) for more details.
 
-## Real-World Python MQTT Examples
+## Real-World Use Cases for MQTT in Python
 
 Python MQTT powers many IoT solutions. For instance, you can use it to:  
 
@@ -33,30 +33,30 @@ These examples show how lightweight and versatile MQTT can be with Python.
 
 ### Python Version
 
-This project uses Python 3.11 and was tested with version 3.11.8. To check your Python version, run this command:  
+This project uses Python 3.12. To check your Python version, run this command:
 
 ```shell
-$ python3 --version             
-Python 3.11.8
+$ python3 --version
+Python 3.12.x
 ```
 
 ### Install The Paho MQTT Client
 
-`paho-mqtt` released version 2.0.0 in February 2024, which includes some significant updates compared to version 1.X. This article will primarily demonstrate code for version 1.X, but will also provide corresponding code for version 2.0.0, allowing readers to choose the appropriate version of `paho-mqtt`.
+`paho-mqtt` released version 2.0.0 in February 2024, which introduced a new callback API. **This article uses paho-mqtt 2.x by default**, since 1.x is no longer actively maintained and its `CallbackAPIVersion.VERSION1` callbacks are scheduled to be removed in paho-mqtt 3.0.
 
-> For detailed changes in version 2.0.0, please refer to the documentation: [https://eclipse.dev/paho/files/paho.mqtt.python/html/migrations.html](https://eclipse.dev/paho/files/paho.mqtt.python/html/migrations.html)
+Install the latest `paho-mqtt` (2.x) using Pip:
 
-Install the `paho-mqtt` 1.X using Pip.
+```shell
+pip3 install paho-mqtt
+```
+
+If you have to stay on 1.x for legacy reasons, pin the version explicitly:
 
 ```shell
 pip3 install "paho-mqtt<2.0.0"
 ```
 
-Install the `paho-mqtt` 2.X using Pip.
-
-```shell
-pip3 install paho-mqtt
-```
+> For the full list of breaking changes in 2.0.0, see the migration guide: [https://eclipse.dev/paho/files/paho.mqtt.python/html/migrations.html](https://eclipse.dev/paho/files/paho.mqtt.python/html/migrations.html). Throughout this article, any callback or constructor that differs between 1.x and 2.x is annotated inline so 1.x users can follow along.
 
 >If you need help installing Pip, please refer to the official documentation at [https://pip.pypa.io/en/stable/installation/](https://pip.pypa.io/en/stable/installation/). This resource provides detailed instructions for installing Pip on different operating systems and environments.
 
@@ -71,6 +71,7 @@ You'll need an MQTT broker to communicate and test your code. We suggest EMQX Se
     </div>
     <a href="https://accounts.emqx.com/signup?continue=https://cloud-intl.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">Get Started →</a>
 </section>
+
 
 
 For simplicity, this guide uses a [free public MQTT broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker):  
@@ -88,7 +89,7 @@ For simplicity, this guide uses a [free public MQTT broker](https://www.emqx.com
 
 ## Paho MQTT Python Client Usage
 
-### Import the Paho MQTT client
+### Import the Paho MQTT Client
 
 ```python
 from paho.mqtt import client as mqtt_client
@@ -111,68 +112,57 @@ client_id = f'python-mqtt-{random.randint(0, 1000)}'
 
 > To learn more, please check out the blog [How to Set Parameters When Establishing an MQTT Connection](https://www.emqx.com/en/blog/how-to-set-parameters-when-establishing-an-mqtt-connection).
 
-Next, we need to write the `on_connect` callback function for connecting the broker. This function is called after the client has successfully connected, and we can check the connection status using the `rc` parameter. Typically, we'll also create a client object that connects to `broker.emqx.io` at the same time.
+Next, we need to write the `on_connect` callback function for connecting the broker. This function is called after the client has successfully connected, and we can check the connection status using the `reason_code` parameter. Typically, we'll also create a client object that connects to `broker.emqx.io` at the same time.
 
 ```python
 def connect_mqtt():
-    def on_connect(client, userdata, flags, rc):
-    # For paho-mqtt 2.0.0, you need to add the properties parameter.
-    # def on_connect(client, userdata, flags, rc, properties):
-        if rc == 0:
+    def on_connect(client, userdata, flags, reason_code, properties):
+        # For paho-mqtt 1.x, the signature is: on_connect(client, userdata, flags, rc)
+        if reason_code == 0:
             print("Connected to MQTT Broker!")
         else:
-            print("Failed to connect, return code %d\n", rc)
-    # Set Connecting Client ID
-    client = mqtt_client.Client(client_id)
-    
-    # For paho-mqtt 2.0.0, you need to set callback_api_version.
-    # client = mqtt_client.Client(client_id=client_id, callback_api_version=mqtt_client.CallbackAPIVersion.VERSION2)
-    
+            print(f"Failed to connect, return code {reason_code}")
+
+    client = mqtt_client.Client(
+        client_id=client_id,
+        callback_api_version=mqtt_client.CallbackAPIVersion.VERSION2,
+    )
+    # For paho-mqtt 1.x, instantiate without callback_api_version:
+    # client = mqtt_client.Client(client_id)
+
     # client.username_pw_set(username, password)
     client.on_connect = on_connect
     client.connect(broker, port)
     return client
 ```
 
+> **Migrating from 1.x?** In paho-mqtt 2.x, the first positional argument of `Client()` is `callback_api_version`, not `client_id`. The old 1.x idiom `Client(client_id)` will therefore raise `ValueError: Unsupported callback API version` because the string gets bound to the wrong parameter. Either pass `client_id` as a keyword argument (as shown above) or set `callback_api_version` explicitly. The default value is `CallbackAPIVersion.VERSION1`, which still works but emits a `DeprecationWarning` and will be removed in paho-mqtt 3.0.
+
 #### Auto Reconnect
 
 Automatic reconnection in [MQTT client libraries](https://www.emqx.com/en/mqtt-client-sdk) ensures reliable communication between devices and brokers in unstable network conditions without human intervention. It allows clients to resume publishing or subscribing to topics when the network connection is interrupted, or the broker is temporarily unavailable, making it crucial for high-reliability applications such as automotive systems and medical equipment.
 
-The auto reconnect code for the Paho MQTT client is as follows:
+The good news is that Paho already handles this for you. With `reconnect_on_failure=True` (the default since 1.x), both `loop_forever()` and `loop_start()` will automatically reconnect using an exponential back-off whenever the connection drops unexpectedly. You only need to tune the back-off if the defaults don't fit your scenario:
 
 ```python
-FIRST_RECONNECT_DELAY = 1
-RECONNECT_RATE = 2
-MAX_RECONNECT_COUNT = 12
-MAX_RECONNECT_DELAY = 60
+# Tune the reconnect back-off (defaults are min=1s, max=120s).
+client.reconnect_delay_set(min_delay=1, max_delay=60)
 
-def on_disconnect(client, userdata, rc):
-    logging.info("Disconnected with result code: %s", rc)
-    reconnect_count, reconnect_delay = 0, FIRST_RECONNECT_DELAY
-    while reconnect_count < MAX_RECONNECT_COUNT:
-        logging.info("Reconnecting in %d seconds...", reconnect_delay)
-        time.sleep(reconnect_delay)
+# Keep on_disconnect for observability only — do NOT call time.sleep()
+# or client.reconnect() here. Callbacks run on the network thread, and
+# blocking it would stall the very loop that performs the reconnect.
+def on_disconnect(client, userdata, disconnect_flags, reason_code, properties):
+    # For paho-mqtt 1.x, the signature is: on_disconnect(client, userdata, rc)
+    logging.info("Disconnected with reason code: %s", reason_code)
 
-        try:
-            client.reconnect()
-            logging.info("Reconnected successfully!")
-            return
-        except Exception as err:
-            logging.error("%s. Reconnect failed. Retrying...", err)
-
-        reconnect_delay *= RECONNECT_RATE
-        reconnect_delay = min(reconnect_delay, MAX_RECONNECT_DELAY)
-        reconnect_count += 1
-    logging.info("Reconnect failed after %s attempts. Exiting...", reconnect_count)
-```
-
-Then, set it as the `on_disconnect` of the client object.
-
-```python
 client.on_disconnect = on_disconnect
+
+# loop_forever() (foreground) or loop_start() (background thread) will
+# drive both the I/O loop and the reconnect logic.
+client.loop_forever()
 ```
 
-The full code for client auto reconnect can be found at [GitHub](https://github.com/emqx/MQTT-Client-Examples/blob/master/mqtt-client-Python3/pub_sub_tcp.py).
+If you really need fully custom reconnect logic (for example, escalating to an alert system after N failures), schedule it from a separate thread or async task rather than blocking inside `on_disconnect`. A reference implementation is available at [GitHub](https://github.com/emqx/MQTT-Client-Examples/blob/master/mqtt-client-Python3/pub_sub_tcp.py).
 
 #### TLS/SSL
 
@@ -184,7 +174,10 @@ The one-way authentication code for the Paho MQTT client is as follows:
 
 ```python
 def connect_mqtt():
-    client = mqtt_client.Client(CLIENT_ID)
+    client = mqtt_client.Client(
+        client_id=client_id,
+        callback_api_version=mqtt_client.CallbackAPIVersion.VERSION2,
+    )
     client.tls_set(ca_certs='./broker.emqx.io-ca.crt')
 ```
 
@@ -194,7 +187,10 @@ The two-way authentication code for the Paho MQTT client is as follows:
 
 ```python
 def connect_mqtt():
-    client = mqtt_client.Client(CLIENT_ID)
+    client = mqtt_client.Client(
+        client_id=client_id,
+        callback_api_version=mqtt_client.CallbackAPIVersion.VERSION2,
+    )
     client.tls_set(
         ca_certs='./server-ca.crt',
         certfile='./client.crt',
@@ -207,21 +203,21 @@ def connect_mqtt():
 Create a while loop that sends a message every second to the topic `/python/mqtt`, and exits the loop after sending five messages.
 
 ```python
- def publish(client):
-     msg_count = 1
-     while True:
-         time.sleep(1)
-         msg = f"messages: {msg_count}"
-         result = client.publish(topic, msg)
-         # result: [0, 1]
-         status = result[0]
-         if status == 0:
-             print(f"Send `{msg}` to topic `{topic}`")
-         else:
-             print(f"Failed to send message to topic {topic}")
-         msg_count += 1
-         if msg_count > 5:
-             break   
+def publish(client):
+    msg_count = 1
+    while True:
+        time.sleep(1)
+        msg = f"messages: {msg_count}"
+        result = client.publish(topic, msg)
+        # result: [0, 1]
+        status = result[0]
+        if status == 0:
+            print(f"Sent `{msg}` to topic `{topic}`")
+        else:
+            print(f"Failed to send message to topic {topic}")
+        msg_count += 1
+        if msg_count > 5:
+            break
 ```
 
 ### Subscribe
@@ -229,7 +225,7 @@ Create a while loop that sends a message every second to the topic `/python/mqtt
 Create the message callback function `on_message`, triggered once the client receives messages from the MQTT Broker. We will print the subscribed topic's name and the received messages within this function.
 
 ```python
-def subscribe(client: mqtt_client):
+def subscribe(client: mqtt_client.Client):
     def on_message(client, userdata, msg):
         print(f"Received `{msg.payload.decode()}` from `{msg.topic}` topic")
 
@@ -242,7 +238,7 @@ def subscribe(client: mqtt_client):
 ### Publishing MQTT Messages
 
 ```python
-# python 3.11
+# python 3.12
 
 import random
 import time
@@ -259,13 +255,16 @@ client_id = f'publish-{random.randint(0, 1000)}'
 # password = 'public'
 
 def connect_mqtt():
-    def on_connect(client, userdata, flags, rc):
-        if rc == 0:
+    def on_connect(client, userdata, flags, reason_code, properties):
+        if reason_code == 0:
             print("Connected to MQTT Broker!")
         else:
-            print("Failed to connect, return code %d\n", rc)
+            print(f"Failed to connect, return code {reason_code}")
 
-    client = mqtt_client.Client(client_id)
+    client = mqtt_client.Client(
+        client_id=client_id,
+        callback_api_version=mqtt_client.CallbackAPIVersion.VERSION2,
+    )
     # client.username_pw_set(username, password)
     client.on_connect = on_connect
     client.connect(broker, port)
@@ -281,7 +280,7 @@ def publish(client):
         # result: [0, 1]
         status = result[0]
         if status == 0:
-            print(f"Send `{msg}` to topic `{topic}`")
+            print(f"Sent `{msg}` to topic `{topic}`")
         else:
             print(f"Failed to send message to topic {topic}")
         msg_count += 1
@@ -294,6 +293,7 @@ def run():
     client.loop_start()
     publish(client)
     client.loop_stop()
+    client.disconnect()
 
 
 if __name__ == '__main__':
@@ -303,7 +303,7 @@ if __name__ == '__main__':
 ### MQTT Subscription
 
 ```python
-# python 3.11
+# python 3.12
 
 import random
 
@@ -320,13 +320,16 @@ client_id = f'subscribe-{random.randint(0, 100)}'
 
 
 def connect_mqtt() -> mqtt_client:
-    def on_connect(client, userdata, flags, rc):
-        if rc == 0:
+    def on_connect(client, userdata, flags, reason_code, properties):
+        if reason_code == 0:
             print("Connected to MQTT Broker!")
         else:
-            print("Failed to connect, return code %d\n", rc)
+            print(f"Failed to connect, return code {reason_code}")
 
-    client = mqtt_client.Client(client_id)
+    client = mqtt_client.Client(
+        client_id=client_id,
+        callback_api_version=mqtt_client.CallbackAPIVersion.VERSION2,
+    )
     # client.username_pw_set(username, password)
     client.on_connect = on_connect
     client.connect(broker, port)
@@ -353,7 +356,7 @@ if __name__ == '__main__':
 
 ## Testing Your Python MQTT Demo
 
-#### Subscribe
+### Subscribe
 
 Running the MQTT subscription script `sub.py`, we will see the client successfully connected and started waiting for the publisher to publish messages.
 
@@ -363,7 +366,7 @@ python3 sub.py
 
 ![Subscribe to MQTT Topic](https://assets.emqx.com/images/f6fa795ecafac8e476b12018345ecf60.png)
 
-#### Publish Messages
+### Publish Messages
 
 Running the MQTT message publishing script `pub.py`, we will see the client successfully connected and publish five messages. At the same time, sub.py will also successfully receive five messages.
 
@@ -385,7 +388,7 @@ Therefore, it is crucial to properly use the loop_stop() method to ensure the MQ
 
 ### What is connect_async() used for?
 
-`connect_async()` is helpful in scenarios where an MQTT client application requires long-term MQTT connections or needs to keep the MQTT connection alive in the background without blocking the main thread. Its primary use cases are:
+While we used `connect()` in our basic examples, you might notice `connect_async()` in the Paho documentation. What is it used for? `connect_async()` is helpful in scenarios where an MQTT client application requires long-term MQTT connections or needs to keep the MQTT connection alive in the background without blocking the main thread. Its primary use cases are:
 
 1. **Long-term MQTT connections**: `connect_async()` helps prevent stalling or unresponsiveness of an MQTT client application that requires long-term MQTT connections, such as in industrial applications.
 
@@ -397,7 +400,7 @@ Therefore, it is crucial to properly use the loop_stop() method to ensure the MQ
 
 ## Best Practices for Python MQTT Applications
 
-To build robust, efficient, and secure **Python MQTT** applications, it's crucial to go beyond the basic functionalities and adhere to several best practices. These recommendations will help you avoid common pitfalls and ensure your IoT solutions remain stable and reliable.
+To build robust, efficient, and secure IoT applications using Python and MQTT, it's crucial to go beyond the basic functionalities and adhere to several best practices. These recommendations will help you avoid common pitfalls and ensure your IoT solutions remain stable and reliable.
 
 ### 1. Unique Client IDs Are Crucial
 
@@ -426,8 +429,6 @@ When your **Python MQTT** client no longer needs an active connection, it's vita
 
 - **Use** `client.loop_stop()`**:** If you're running the message loop in a background thread (e.g., using `client.loop_start()`), make sure to call `client.loop_stop()` before your program exits. This stops the thread, preventing your program from hanging or resources from being unreleased.
 
-  `Python`
-
   ```python
   def run():
       client = connect_mqtt()
@@ -446,15 +447,15 @@ When your **Python MQTT** client no longer needs an active connection, it's vita
 
 In any production-ready application, **error handling** and **logging** are indispensable. They help you trace application behavior, diagnose issues, and monitor system health.
 
-- **Handle** `on_connect` **return codes:** The `rc` parameter in the `on_connect` callback indicates the connection result. Always check this value to understand why a connection might have failed.
+- **Handle** `on_connect` **return codes:** The `reason_code` parameter in the `on_connect` callback indicates the connection result. Always check this value to understand why a connection might have failed.
 
   ```python
-  def on_connect(client, userdata, flags, rc):
-      if rc == 0:
+  def on_connect(client, userdata, flags, reason_code, properties):
+      if reason_code == 0:
           print("Connected to MQTT Broker!")
           # Potentially subscribe to topics here after successful connection
       else:
-          print(f"Failed to connect, return code {rc}. Please check connection parameters and network.")
+          print(f"Failed to connect, return code {reason_code}. Please check connection parameters and network.")
           # Implement retry logic or exit if critical
   ```
 
@@ -478,11 +479,11 @@ In any production-ready application, **error handling** and **logging** are indi
   logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
   
   # In your on_connect function:
-  def on_connect(client, userdata, flags, rc):
-      if rc == 0:
+  def on_connect(client, userdata, flags, reason_code, properties):
+      if reason_code == 0:
           logging.info("Connected to MQTT Broker!")
       else:
-          logging.error(f"Failed to connect, return code {rc}")
+          logging.error(f"Failed to connect, return code {reason_code}")
   
   # In your publish function:
   def publish(client):
@@ -587,14 +588,14 @@ By integrating these best practices into your **Python MQTT** projects, you'll b
 
 This guide walked you through using the Paho MQTT client to connect to a free public MQTT broker. You’ve set up a connection, sent messages with `publish()`, and received them with `subscribe()`.  
 
-You can check out the [MQTT Guide: Beginner to Advanced](https://www.emqx.com/en/mqtt-guide) series provided by EMQ to learn about MQTT protocol features, explore more advanced applications of MQTT, and get started with MQTT application and service development.
+To dive deeper into MQTT protocol features and advanced application development, be sure to check out the [MQTT Guide: Beginner to Advanced](https://www.emqx.com/en/mqtt-guide) series provided by EMQ.
 
 **Related resources:**
 
-- [Mastering MQTT: The Ultimate Beginner's Guide for 2025](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt)
+- [Mastering MQTT: The Ultimate Beginner's Guide for 2026](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt)
 - [MQTT Broker: How It Works, Popular Options, and Quickstart](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison)
 - [Free MQTT Broker: Exploring Options and Choosing the Right Solution](https://www.emqx.com/en/blog/free-mqtt-broker)
-- [Python MQTT Clients: A 2025 Selection Guide](https://www.emqx.com/en/blog/comparision-of-python-mqtt-client)
+- [Python MQTT Clients: A 2026 Selection Guide](https://www.emqx.com/en/blog/comparision-of-python-mqtt-client)
 - [How to Use MQTT in The Django Project](https://www.emqx.com/en/blog/how-to-use-mqtt-in-django)
 - [How to use MQTT in Flask](https://www.emqx.com/en/blog/how-to-use-mqtt-in-flask)
 - [How to Use MQTT on Raspberry Pi with Paho Python Client](https://www.emqx.com/en/blog/use-mqtt-with-raspberry-pi)
