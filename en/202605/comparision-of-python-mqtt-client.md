@@ -6,7 +6,7 @@ As IoT applications have grown in complexity, **Python has emerged as a powerhou
 
 Choosing the right [MQTT client](https://www.emqx.com/en/blog/mqtt-client-tools) is crucial when developing a Python-based IoT application. The Python ecosystem offers a diverse range of options, from time-tested synchronous libraries to a new wave of modern, high-performance asynchronous clients. Navigating this landscape can be challenging. Which client is the most stable? Which offers the best performance for a high-traffic application? Which integrates best with web frameworks like FastAPI?
 
-This guide is here to answer those questions. We will provide a comprehensive comparison of five popular Python MQTT clients for 2025: **paho-mqtt**, **gmqtt**, **aiomqtt**, **amqtt** and **fastapi-mqtt**. By the end of this article, you'll have a clear understanding of their strengths and weaknesses, enabling you to confidently choose the right one for your next project.
+This guide is here to answer those questions. We will provide a comprehensive comparison of five popular Python MQTT clients for 2026: **paho-mqtt**, **gmqtt**, **aiomqtt**, **amqtt** and **fastapi-mqtt**. By the end of this article, you'll have a clear understanding of their strengths and weaknesses, enabling you to confidently choose the right one for your next project.
 
 ## Key Comparison Criteria
 
@@ -93,16 +93,16 @@ import paho.mqtt.client as mqtt
 
 # The callback for when the client receives a CONNACK response from the server.
 def on_connect(client, userdata, flags, reason_code, properties):
-    if not reason_code.is_failure:
-        # Subscribing in on_connect() means that if we lose the
-        # connection and reconnect then subscriptions will be renewed.
-        client.subscribe("paho/test")
-    else:
-        print(f"Failed to connect: {reason_code}. loop_forever() will retry connection")
+    if not reason_code.is_failure:
+        # Subscribing in on_connect() means that if we lose the
+        # connection and reconnect then subscriptions will be renewed.
+        client.subscribe("paho/test")
+    else:
+        print(f"Failed to connect: {reason_code}. loop_forever() will retry connection")
 
 # The callback for when a PUBLISH message is received from the server.
 def on_message(client, userdata, message):
-    print(f"{message.topic}: {message.payload.decode()}")
+    print(f"{message.topic}: {message.payload.decode()}")
 
 # For v2.0+, you must specify the callback API version
 # VERSION2 is recommended for new projects
@@ -125,8 +125,8 @@ This code connects to a broker and publishes a simple message every second.
 import paho.mqtt.client as mqtt
 
 def on_publish(client, userdata, mid, reason_code, properties):
-    # Called when message is published successfully
-    print(f"Message {mid} published successfully")
+    # Called when message is published successfully
+    print(f"Message {mid} published successfully")
 
 client = mqtt.Client(mqtt.CallbackAPIVersion.VERSION2)
 client.on_publish = on_publish
@@ -137,10 +137,10 @@ client.loop_start()
 
 # Publish messages
 for i in range(5):
-    payload = f"Hello from paho-mqtt - Message {i}"
-    msg_info = client.publish('paho/test', payload, qos=1)
-    msg_info.wait_for_publish()  # Wait for message to be published
-    print(f"Sent: {payload}")
+    payload = f"Hello from paho-mqtt - Message {i}"
+    msg_info = client.publish('paho/test', payload, qos=1)
+    msg_info.wait_for_publish()  # Wait for message to be published
+    print(f"Sent: {payload}")
 
 # Stop the background thread and disconnect
 client.loop_stop()
@@ -191,55 +191,50 @@ The example below demonstrates a common pattern in gmqtt: setting up a client th
 
 ```python
 import asyncio
-import signal
 import time
 from gmqtt import Client as MQTTClient
 
-STOP = asyncio.Event()
-
 def on_connect(client, flags, rc, properties):
-    print('Connected')
-    client.subscribe('gmqtt/test', qos=0)
+    print('Connected')
+    client.subscribe('gmqtt/test', qos=0)
 
 def on_message(client, topic, payload, qos, properties):
-    print('RECV MSG:', payload.decode(), 'on topic:', topic)
+    print('RECV MSG:', payload.decode(), 'on topic:', topic)
 
 def on_disconnect(client, packet, exc=None):
-    print('Disconnected')
+    print('Disconnected')
 
 def on_subscribe(client, mid, qos, properties):
-    print('SUBSCRIBED')
-
-def ask_exit(*args):
-    STOP.set()
+    print('SUBSCRIBED')
 
 async def main(broker_host):
-    client = MQTTClient("gmqtt-client")
+    client = MQTTClient('gmqtt-client')
 
-    client.on_connect = on_connect
-    client.on_message = on_message
-    client.on_disconnect = on_disconnect
-    client.on_subscribe = on_subscribe
+    client.on_connect = on_connect
+    client.on_message = on_message
+    client.on_disconnect = on_disconnect
+    client.on_subscribe = on_subscribe
 
-    await client.connect(broker_host)
+    await client.connect(broker_host)
 
-    # Publish a message with MQTT 5.0 properties
-    client.publish('gmqtt/test', str(time.time()), qos=1,
-                   content_type='utf-8', user_property=('timestamp', str(time.time())))
+    # Publish a message with MQTT 5.0 properties
+    client.publish('gmqtt/test', str(time.time()), qos=1,
+                   content_type='utf-8', user_property=('timestamp', str(time.time())))
 
-    # Wait for a stop signal (e.g., Ctrl+C)
-    await STOP.wait()
-    await client.disconnect()
+    try:
+        # Keep the event loop running forever until interrupted
+        await asyncio.Event().wait()
+    except asyncio.CancelledError:
+        pass
+    finally:
+        await client.disconnect()
 
 if __name__ == '__main__':
-    loop = asyncio.get_event_loop()
-    
-    # Add signal handlers for graceful shutdown
-    loop.add_signal_handler(signal.SIGINT, ask_exit)
-    loop.add_signal_handler(signal.SIGTERM, ask_exit)
-    
-    host = 'broker.emqx.io'
-    loop.run_until_complete(main(host))
+    host = 'broker.emqx.io'
+    try:
+        asyncio.run(main(host))
+    except KeyboardInterrupt:
+        print("Received exit signal, shutting down...")
 ```
 
 #### **Pros & Cons Summary**
@@ -259,7 +254,7 @@ if __name__ == '__main__':
 
 ### aiomqtt: The Pythonic Async Choice
 
-[aiomqtt](https://github.com/empicano/aiomqtt) is a community-maintained, asyncio-based MQTT client that stands out for its simplicity and clean, modern API. Originally created in April 2020 as asyncio-mqtt, it was renamed to aiomqtt in 2023 and has grown to **491 GitHub stars**. With its latest version **v2.4.0** released in May 2025, it has become the standard-bearer for a "Pythonic" approach to asynchronous MQTT, intentionally moving away from callbacks in favor of elegant async with statements and asynchronous iterators.
+[aiomqtt](https://github.com/empicano/aiomqtt) is a community-maintained, asyncio-based MQTT client that stands out for its simplicity and clean, modern API. Originally created in April 2020 as asyncio-mqtt, it was renamed to aiomqtt in 2023 and has grown to **559 GitHub stars**. With its latest version **v2.5.1** released in March 6, 2026, it has become the standard-bearer for a "Pythonic" approach to asynchronous MQTT, intentionally moving away from callbacks in favor of elegant async with statements and asynchronous iterators.
 
 The library’s philosophy is to provide a user-friendly and intuitive experience for developers working within the asyncio ecosystem. It cleverly uses the battle-tested message-parsing engine of paho-mqtt under the hood, combining Paho’s low-level stability with a high-level, modern async interface. This makes it an excellent choice for projects where code clarity, maintainability, and ease of use are top priorities.
 
@@ -288,27 +283,27 @@ import asyncio
 import aiomqtt
 
 async def main():
-    try:
-        # The async with statement handles connection and disconnection automatically
-        async with aiomqtt.Client("broker.emqx.io") as client:
-            # Subscribe to a topic
-            await client.subscribe("aiomqtt/test")
-            # Publish a message
-            await client.publish("aiomqtt/test", "Hello from aiomqtt!")
-            
-            # Process incoming messages from the subscribed topic
-            async for message in client.messages:
-                print(f"[{message.topic}] {message.payload.decode()}")
+    try:
+        # The async with statement handles connection and disconnection automatically
+        async with aiomqtt.Client("broker.emqx.io") as client:
+            # Subscribe to a topic
+            await client.subscribe("aiomqtt/test")
+            # Publish a message
+            await client.publish("aiomqtt/test", "Hello from aiomqtt!")
+            
+            # Process incoming messages from the subscribed topic
+            async for message in client.messages:
+                print(f"[{message.topic}] {message.payload.decode()}")
 
-    except aiomqtt.MqttError as e:
-        print(f"MQTT Error: {e}")
+    except aiomqtt.MqttError as e:
+        print(f"MQTT Error: {e}")
 
 if __name__ == "__main__":
-    # In a real application, you might want to handle Ctrl+C more gracefully
-    try:
-        asyncio.run(main())
-    except KeyboardInterrupt:
-        print("Exiting...")
+    # In a real application, you might want to handle Ctrl+C more gracefully
+    try:
+        asyncio.run(main())
+    except KeyboardInterrupt:
+        print("Exiting...")
 ```
 
 #### **Pros & Cons Summary**
@@ -327,7 +322,7 @@ if __name__ == "__main__":
 
 ### amqtt: The Versatile Client & Broker
 
-[amqtt](https://github.com/Yakifo/amqtt) stands out as a powerful and highly versatile toolkit for MQTT in the Python ecosystem. It is the actively maintained community fork of the well-known but now dormant HBMQTT project, created in February 2021 and currently maintained with **162 GitHub stars**. With its latest **v0.11.2** released in July 2025, its most significant feature is that it's not just a client library; it is also a complete, feature-rich MQTT broker, all in one package.
+[amqtt](https://github.com/Yakifo/amqtt) stands out as a powerful and highly versatile toolkit for MQTT in the Python ecosystem. It is the actively maintained community fork of the well-known but now dormant HBMQTT project, created in February 2021 and currently maintained with **204 GitHub stars**. With its latest **v0.11.3** released in Aug 2025, its most significant feature is that it's not just a client library; it is also a complete, feature-rich MQTT broker, all in one package.
 
 This dual capability makes amqtt an exceptional tool for developers who need an integrated solution for local development, testing, or building specialized IoT platforms where the client and broker logic are tightly coupled. It is built from the ground up on asyncio, ensuring high performance and scalability for both its client and broker components.
 
@@ -361,32 +356,32 @@ from amqtt.mqtt.constants import QOS_1
 # logging.basicConfig(level=logging.INFO)
 
 async def main():
-    client = MQTTClient()
-    try:
-        # Connect to the broker
-        await client.connect("mqtt://broker.emqx.io/")
-        
-        # Subscribe to a topic
-        await client.subscribe([("amqtt/test", QOS_1)])
-        
-        # Publish a message
-        await client.publish("amqtt/test", b"Hello from amqtt!")
-        print("Message published")
-        
-        # Receive messages
-        print("Waiting for messages...")
-        for i in range(5):  # Listen for a few messages
-            message = await client.deliver_message()
-            if message:
-                print(f"RECV MSG: '{message.data.decode()}' on topic '{message.topic}'")
-        
-    except Exception as e:
-        print(f"An error occurred: {e}")
-    finally:
-        await client.disconnect()
+    client = MQTTClient()
+    try:
+        # Connect to the broker
+        await client.connect("mqtt://broker.emqx.io/")
+        
+        # Subscribe to a topic
+        await client.subscribe([("amqtt/test", QOS_1)])
+        
+        # Publish a message
+        await client.publish("amqtt/test", b"Hello from amqtt!")
+        print("Message published")
+        
+        # Receive messages
+        print("Waiting for messages...")
+        for i in range(5):  # Listen for a few messages
+            message = await client.deliver_message()
+            if message:
+                print(f"RECV MSG: '{message.data.decode()}' on topic '{message.topic}'")
+        
+    except Exception as e:
+        print(f"An error occurred: {e}")
+    finally:
+        await client.disconnect()
 
 if __name__ == "__main__":
-    asyncio.run(main())
+    asyncio.run(main())
 ```
 
 #### **Pros & Cons Summary**
@@ -439,38 +434,38 @@ from fastapi_mqtt import FastMQTT, MQTTConfig
 
 # Configuration for the MQTT client
 mqtt_config = MQTTConfig(
-    host="broker.emqx.io",
-    port=1883,
-    keepalive=60
+    host="broker.emqx.io",
+    port=1883,
+    keepalive=60
 )
 
 fast_mqtt = FastMQTT(config=mqtt_config)
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    await fast_mqtt.mqtt_startup()
-    yield
-    await fast_mqtt.mqtt_shutdown()
+    await fast_mqtt.mqtt_startup()
+    yield
+    await fast_mqtt.mqtt_shutdown()
 
 app = FastAPI(lifespan=lifespan)
 
 # Decorator for handling the connect event
 @fast_mqtt.on_connect()
 def connect(client: MQTTClient, flags: int, rc: int, properties: Any):
-    # Subscribe to a topic upon connection
-    client.subscribe("fastapi-mqtt/test")
-    print("Connected: ", client, flags, rc, properties)
+    # Subscribe to a topic upon connection
+    client.subscribe("fastapi-mqtt/test")
+    print("Connected: ", client, flags, rc, properties)
 
 # Decorator for handling incoming messages
 @fast_mqtt.on_message()
 async def message(client: MQTTClient, topic: str, payload: bytes, qos: int, properties: Any):
-    print("Received message: ", topic, payload.decode(), qos, properties)
+    print("Received message: ", topic, payload.decode(), qos, properties)
 
 # A simple HTTP endpoint to publish a message
 @app.post("/publish")
 async def publish_message(topic: str, message: str):
-    fast_mqtt.publish(topic, message)
-    return {"result": "Message published", "topic": topic, "message": message}
+    fast_mqtt.publish(topic, message)
+    return {"result": "Message published", "topic": topic, "message": message}
 ```
 
 To run this, you would save it as a Python file (e.g., main.py) and run it with an ASGI server like Uvicorn: uvicorn main:app --reload.
@@ -493,7 +488,7 @@ To run this, you would save it as a Python file (e.g., main.py) and run it with 
 
 ## At-a-Glance Comparison Table
 
-To help you quickly assess the landscape, this table breaks down the key quantitative and qualitative metrics for each client. The data is based on information available as of July 2025.
+To help you quickly assess the landscape, this table breaks down the key quantitative and qualitative metrics for each client. The data is based on information available as of May 2026.
 
 | Comparison Criteria   | `paho-mqtt`                                                  | `gmqtt`                                         | `aiomqtt`                                               | `amqtt`                                         | `fastapi-mqtt`                                               |
 | :-------------------- | :----------------------------------------------------------- | :---------------------------------------------- | :------------------------------------------------------ | :---------------------------------------------- | :----------------------------------------------------------- |
@@ -504,10 +499,10 @@ To help you quickly assess the landscape, this table breaks down the key quantit
 | **License**           | EPL-2.0 & EPL-1.0                                            | MIT                                             | BSD-3-Clause                                            | MIT                                             | MIT                                                          |
 | **Python Support**    | >= 3.7 (dropped 2.7, 3.5, 3.6 support)                       | >= 3.7                                          | >= 3.8                                                  | >= 3.10 (v0.11.x)                               | >= 3.8                                                       |
 | **Key Dependencies**  | None                                                         | None                                            | `paho-mqtt`                                             | `websockets`, `passlib`                         | `gmqtt`, `pydantic`                                          |
-| **Latest Release**    | v2.1.0 (Apr 2024)                                            | v0.7.0 (Nov 2024)                               | v2.4.0 (May 2025)                                       | v0.11.2 (Jul 2025)                              | v2.2.0 (May 2024)                                            |
-| **GitHub Stars**      | 2.3k                                                         | 422                                             | 491                                                     | 162                                             | 286                                                          |
+| **Latest Release**    | v2.1.0 (Apr 2024)                                            | v0.7.0 (Nov 2024)                               | v2.5.1 (Mar 2026)                                       | v0.11.3 (Aug 2025)                              | v2.2.0 (May 2024)                                            |
+| **GitHub Stars**      | 2.4k                                                         | 443                                             | 559                                                     | 204                                             | 387                                                          |
 | **GitHub Releases**   | 10+ (including pre-releases)                                 | 20+                                             | 20+                                                     | 10+                                             | 20+                                                          |
-| **GitHub Commits**    | 880+                                                         | 150+                                            | 400+                                                    | 1300+                                           | 200+                                                         |
+| **GitHub Commits**    | 880+                                                         | 150+                                            | 480+                                                    | 1300+                                           | 200+                                                         |
 
 ## Which Python MQTT Client Should You Choose?
 
@@ -580,10 +575,10 @@ Armed with the insights from our deep-dive and the at-a-glance comparison, you a
 
 **Related resources:**
 
-- [Mastering MQTT: The Ultimate Beginner's Guide for 2025](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt)
+- [Mastering MQTT: The Ultimate Beginner's Guide for 2026](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt)
 - [MQTT Broker: How It Works, Popular Options, and Quickstart](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison)
 - [Free MQTT Broker: Exploring Options and Choosing the Right Solution](https://www.emqx.com/en/blog/free-mqtt-broker)
-- [MQTT in Python with Paho Client: Beginner's Guide 2025](https://www.emqx.com/en/blog/how-to-use-mqtt-in-python)
+- [MQTT in Python with Paho Client: Beginner's Guide 2026](https://www.emqx.com/en/blog/how-to-use-mqtt-in-python)
 - [How to Use MQTT in The Django Project](https://www.emqx.com/en/blog/how-to-use-mqtt-in-django)
 - [How to use MQTT in Flask](https://www.emqx.com/en/blog/how-to-use-mqtt-in-flask)
 - [How to Use MQTT on Raspberry Pi with Paho Python Client](https://www.emqx.com/en/blog/use-mqtt-with-raspberry-pi)
