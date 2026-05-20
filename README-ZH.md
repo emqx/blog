@@ -734,6 +734,7 @@ Real-world IoT solutions and industry applications powered by EMQ.
 ## [AI](https://www.emqx.com/zh/blog/category/ai)
 Empower IoT with AI and LLM capabilities.
 
+- [Device Agent：设备智能体工程分析与实践](https://www.emqx.com/zh/blog/device-agent-engineering-analysis-and-practice) ([Edit](https://github.com/emqx/blog/edit/main/zh/202605/device-agent-engineering-analysis-and-practice.md))
 - [S3 正在吞噬一切：AI 时代的基础软件架构革命](https://www.emqx.com/zh/blog/s3-ai-era-infrastructure-revolution) ([Edit](https://github.com/emqx/blog/edit/main/zh/202603/s3-ai-era-infrastructure-revolution.md))
 - [使用 EMQX 构建 Physical AI 智能体网络：规模化解决 A2A 协议挑战](https://www.emqx.com/zh/blog/physical-ai-agent-network-a2a-protocol) ([Edit](https://github.com/emqx/blog/edit/main/zh/202603/physical-ai-agent-network-a2a-protocol.md))
 - [Physical AI 时代的数据基础设施：EMQX 如何赋能 AIoT 场景](https://www.emqx.com/zh/blog/physical-ai-and-the-new-data-fabric) ([Edit](https://github.com/emqx/blog/edit/main/zh/202601/physical-ai-and-the-new-data-fabric.md))
