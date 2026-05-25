@@ -2,7 +2,7 @@
 
 [MQTT (Message Queue Telemetry Transport)](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt), originally designed as a lightweight publish/subscribe messaging transport, is now the de facto standard messaging protocol for the Internet of Things (IoT). An [MQTT Broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) is critical in connecting clients, such as IoT devices, and moving MQTT messages between them.
 
-![publish/subscribe](https://assets.emqx.com/images/b5d67261f50a597d5d37b97eebc1cdf5.png)
+![publish/subscribe](https://assets.emqx.com/images/e0361bf1fa08534eb2d1003aaf808d17.png)
 
 As [a16z](https://a16z.com/) said over a decade ago, ["Software is eating the world."](https://a16z.com/2011/08/20/why-software-is-eating-the-world/) Open source is eating up software. More than 20 open-source MQTT broker implementations are available today, making the selection process challenging for software architects and developers.
 
@@ -49,7 +49,7 @@ EMQX is the world's most scalable MQTT broker that supports advanced features su
 
 See: [Reaching 100M MQTT connections with EMQX 5.0](https://www.emqx.com/en/blog/reaching-100m-mqtt-connections-with-emqx-5-0)
 
-![MQTT Cluster](https://assets.emqx.com/images/9abfe5ee5df4f1c544915f5e4605b253.png)
+![MQTT Cluster](https://assets.emqx.com/images/6abccf6ede1d7ed017eb05ef25c8d5f7.png)
 
 EMQX offers rich enterprise features, data integration, cloud hosting services, and commercial support from [EMQ Technologies Inc.](https://www.emqx.com/en) Over the years, EMQX has gained popularity among enterprises, startups, and individuals due to its performance, reliability, and scalability. EMQX is widely used for business-critical applications in various industries, such as IoT, [industrial IoT](https://www.emqx.com/en/use-cases/industrial-iot), [connected cars](https://www.emqx.com/en/blog/connected-cars-and-automotive-connectivity-all-you-need-to-know), [manufacturing](https://www.emqx.com/en/solutions/smart-manufacturing), and telecommunications.
 
@@ -77,7 +77,7 @@ Mosquitto is written in C/C++ and uses a single-threaded architecture. Mosquitto
 
 Mosquitto is known for its small booting footprint of about 200k. However, it does not provide native support for multi-threading or clustering. Mosquitto is available for various platforms, including Linux, Windows, and macOS.
 
-![Mosquitto](https://assets.emqx.com/images/82027ea30acf44e5e1ba3e0a68f8bd4f.png)
+![Mosquitto](https://assets.emqx.com/images/701ddf6babb8eb4bebc0ddcf87abe35b.png)
 
 GitHub: [https://github.com/eclipse/mosquitto](https://github.com/eclipse/mosquitto)
 
@@ -104,7 +104,7 @@ NanoMQ is implemented in pure C, based on NNG's asynchronous I/O with a multi-th
 
 NanoMQ is lightweight and high-performance, making it suitable for various edge computing platforms. It is highly compatible and portable, relying solely on the native POSIX API. This makes it easy to deploy on any POSIX-compatible platform and runs smoothly on various CPU architectures, including x86_64, ARM, MIPS, and RISC-V.
 
-![NanoMQ](https://assets.emqx.com/images/44a45e8732eef0076a95f095f6551d2e.png)
+![NanoMQ](https://assets.emqx.com/images/b26de7ebf659978130aa150715dca4a3.png)
 
 GitHub: [https://github.com/nanomq/nanomq](https://github.com/nanomq/nanomq)
 
