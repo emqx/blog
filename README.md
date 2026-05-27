@@ -713,6 +713,7 @@ Real-world IoT solutions and industry applications powered by EMQ.
 ## [AI](https://www.emqx.com/en/blog/category/ai)
 Empower IoT with AI and LLM capabilities.
 
+- [Device Agent: Engineering Analysis and Practical Implementation](https://www.emqx.com/en/blog/device-agent-engineering-analysis-and-practice) ([Edit](https://github.com/emqx/blog/edit/main/en/202605/device-agent-engineering-analysis-and-practice.md))
 - [A2A over MQTT: How AI Agents Find Each Other at Scale](https://www.emqx.com/en/blog/a2a-over-mqtt) ([Edit](https://github.com/emqx/blog/edit/main/en/202605/a2a-over-mqtt.md))
 - [One AI Agent per Device: How MQTT Turns IoT Fleets into Self-Coordinating Systems](https://www.emqx.com/en/blog/how-mqtt-turns-iot-fleets-into-selfcoordinating-systems) ([Edit](https://github.com/emqx/blog/edit/main/en/202604/how-mqtt-turns-iot-fleets-into-selfcoordinating-systems.md))
 - [Building Physical AI Agent Networks with EMQX: Solving A2A Protocol Challenges at Scale](https://www.emqx.com/en/blog/building-physical-ai-agent-networks-with-emqx) ([Edit](https://github.com/emqx/blog/edit/main/en/202603/building-physical-ai-agent-networks-with-emqx.md))
