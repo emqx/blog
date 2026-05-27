@@ -676,6 +676,7 @@ Integrate MQTT with databases, message queues, cloud services and more.
 ## [Use Cases](https://www.emqx.com/en/blog/category/use-cases)
 Real-world IoT solutions and industry applications powered by EMQ.
 
+- [Powering Global Digital Signage Networks with Reliable MQTT Device Communication](https://www.emqx.com/en/blog/reliable-mqtt-device-communication-digital-signage-networks) ([Edit](https://github.com/emqx/blog/edit/main/en/202605/reliable-mqtt-device-communication-digital-signage-networks.md))
 - [Enterprise MQTT Infrastructure for Connected Medical Device Fleets in Clinical Environments](https://www.emqx.com/en/blog/mqtt-medical-device-fleets) ([Edit](https://github.com/emqx/blog/edit/main/en/202605/mqtt-medical-device-fleets.md))
 - [Cross-Region MQTT Cluster Linking for Global Physical Access Control Systems](https://www.emqx.com/en/blog/cross-region-mqtt-cluster-linking-for-global-physical-access-control-systems) ([Edit](https://github.com/emqx/blog/edit/main/en/202604/cross-region-mqtt-cluster-linking-for-global-physical-access-control-systems.md))
 - [Scaling Connected Device Management to 10 Million Concurrent Connections with EMQX](https://www.emqx.com/en/blog/scaling-connected-device-management-to-10-million-concurrent-connections-with-emqx) ([Edit](https://github.com/emqx/blog/edit/main/en/202604/scaling-connected-device-management-to-10-million-concurrent-connections-with-emqx.md))
@@ -713,6 +714,7 @@ Real-world IoT solutions and industry applications powered by EMQ.
 ## [AI](https://www.emqx.com/en/blog/category/ai)
 Empower IoT with AI and LLM capabilities.
 
+- [Device Agent: Engineering Analysis and Practical Implementation](https://www.emqx.com/en/blog/device-agent-engineering-analysis-and-practice) ([Edit](https://github.com/emqx/blog/edit/main/en/202605/device-agent-engineering-analysis-and-practice.md))
 - [A2A over MQTT: How AI Agents Find Each Other at Scale](https://www.emqx.com/en/blog/a2a-over-mqtt) ([Edit](https://github.com/emqx/blog/edit/main/en/202605/a2a-over-mqtt.md))
 - [One AI Agent per Device: How MQTT Turns IoT Fleets into Self-Coordinating Systems](https://www.emqx.com/en/blog/how-mqtt-turns-iot-fleets-into-selfcoordinating-systems) ([Edit](https://github.com/emqx/blog/edit/main/en/202604/how-mqtt-turns-iot-fleets-into-selfcoordinating-systems.md))
 - [Building Physical AI Agent Networks with EMQX: Solving A2A Protocol Challenges at Scale](https://www.emqx.com/en/blog/building-physical-ai-agent-networks-with-emqx) ([Edit](https://github.com/emqx/blog/edit/main/en/202603/building-physical-ai-agent-networks-with-emqx.md))
