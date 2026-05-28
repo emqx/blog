@@ -79,7 +79,7 @@ This pattern is common in vibration monitoring, equipment diagnostics, and high-
 - Egress over VPC peering is effectively free
 - **Total EMQX cost: about 6,015 dollars per month**
 
-# **Cost Comparison Table**
+### **Cost Comparison Table**
 
 | **Cost Component**         | **AWS IoT Core**   | **EMQX Dedicated Flex** |
 | :------------------------- | :----------------- | :---------------------- |
