@@ -56,38 +56,41 @@ To illustrate the difference between the two pricing models, consider a realisti
 
 - 1,000 industrial sensors
 - 10 messages per second per device
-- Total throughput of 10,000 messages per second
+- Total throughput of 10,000 messages per second (TPS)
 - Payload size roughly 0.5 KB per message
 
-This pattern is common in vibration monitoring, equipment diagnostics, and high-resolution telemetry.
+This pattern is common in vibration monitoring, equipment diagnostics, and high-resolution telemetry. Over a standard 730-hour operating month, this fleet generates approximately **26.28 billion messages**.
 
 ### **AWS IoT Core monthly cost**
 
-- Messaging: approximately 26.28 billion messages
-  Cost: about 26,280 dollars per month
-- Rules engine triggers and actions
-  Cost: about 7,884 dollars per month
-- Connectivity: included but minimal
-- **Total AWS IoT Core cost: about 34,167 dollars per month**
+- **Messaging:** 26.28 billion messages processed. After applying AWS’s high-volume tiered pricing discounts, the baseline telemetry ingress fee is **about 18,844 dollars per month**.
+
+- **Rules engine triggers and actions:** Assuming each message triggers one rule evaluation and one backend data-bridging action, this adds **about 7,884 dollars per month**.
+
+- **Connectivity:** Persistent 24/7 connectivity for 1,000 devices accumulates roughly 43.8 million connection minutes, adding a minimal baseline charge of **about 3.5 dollars**.
+
+- **Total AWS IoT Core cost:** **About 26,731.5 dollars per month**. 
+
+  *(Note: This assumes standard MQTT delivery. If the application uses Device Shadows even moderately, AWS costs will rapidly escalate past 34,000 dollars, pushing total costs up significantly).*
 
 ### **EMQX Dedicated Flex monthly cost**
 
-- Required capacity: 10,000 TPS
-- Rate for this tier: about 8.24 dollars per hour
-- Monthly base fee: about 6,015 dollars
+- **Required capacity**: 10,000 TPS
+- **Rate for this tier**: about 8.24 dollars per hour
+- **Monthly base fee**: 730 hours × 8.24 dollars/hour = about 6,015 dollars
 - Ingress is free
 - Egress over VPC peering is effectively free
 - **Total EMQX cost: about 6,015 dollars per month**
 
 ### **Cost Comparison Table**
 
-| **Cost Component**         | **AWS IoT Core**   | **EMQX Dedicated Flex** |
-| :------------------------- | :----------------- | :---------------------- |
-| Messaging (Ingress/Egress) | 18,844 dollars     | 0 dollars (Included)    |
-| Rules / Processing         | 7,776 dollars      | 0 dollars (Included)    |
-| Connectivity / Instance    | 35 dollars         | 5,933 dollars           |
-| **Total Monthly Cost**     | **26,655 dollars** | **5,933 dollars**       |
-| **Total Savings**          |                    | **~78%**         |
+| **Cost Component**         | **AWS IoT Core**     | **EMQX Dedicated Flex** |
+| :------------------------- | :------------------- | :---------------------- |
+| Messaging (Ingress/Egress) | 18,844 dollars       | 0 dollars (Included)    |
+| Rules / Processing         | 7,884 dollars        | 0 dollars (Included)    |
+| Connectivity / Instance    | 3.5 dollars          | 6,015 dollars           |
+| **Total Monthly Cost**     | **26,731.5 dollars** | **6,015 dollars**       |
+| **Total Savings**          |                      | **~78%** **reduction**  |
 
 **Note:** If the application uses Device Shadows even moderately, AWS costs increase significantly, often pushing EMQX savings past 80%.
 
