@@ -677,6 +677,7 @@ Integrate MQTT with databases, message queues, cloud services and more.
 ## [Use Cases](https://www.emqx.com/en/blog/category/use-cases)
 Real-world IoT solutions and industry applications powered by EMQ.
 
+- [Real-Time Heavy Equipment Fleet Monitoring Across Remote Mining Operations with EMQX](https://www.emqx.com/en/blog/mining-fleet-monitoring-emqx) ([Edit](https://github.com/emqx/blog/edit/main/en/202606/mining-fleet-monitoring-emqx.md))
 - [Powering Global Digital Signage Networks with Reliable MQTT Device Communication](https://www.emqx.com/en/blog/reliable-mqtt-device-communication-digital-signage-networks) ([Edit](https://github.com/emqx/blog/edit/main/en/202605/reliable-mqtt-device-communication-digital-signage-networks.md))
 - [Enterprise MQTT Infrastructure for Connected Medical Device Fleets in Clinical Environments](https://www.emqx.com/en/blog/mqtt-medical-device-fleets) ([Edit](https://github.com/emqx/blog/edit/main/en/202605/mqtt-medical-device-fleets.md))
 - [Cross-Region MQTT Cluster Linking for Global Physical Access Control Systems](https://www.emqx.com/en/blog/cross-region-mqtt-cluster-linking-for-global-physical-access-control-systems) ([Edit](https://github.com/emqx/blog/edit/main/en/202604/cross-region-mqtt-cluster-linking-for-global-physical-access-control-systems.md))
@@ -777,6 +778,7 @@ Build reliable and efficient connected vehicle platforms with EMQ.
 ## [Industrial IoT](https://www.emqx.com/en/blog/category/iiot)
 Industrial IoT solutions with Unified Namespace and Sparkplug.
 
+- [Maximizing Lifespan, Minimizing Loss: How a Unified Namespace Powers Predictive Maintenance for a Magnet Manufacturer](https://www.emqx.com/en/blog/unified-namespace-predictive-maintenance) ([Edit](https://github.com/emqx/blog/edit/main/en/202606/unified-namespace-predictive-maintenance.md))
 - [Why Your UNS Architecture Requires Native MQTT Governance and How EMQX Enforces It](https://www.emqx.com/en/blog/native-mqtt-governance-for-uns) ([Edit](https://github.com/emqx/blog/edit/main/en/202605/native-mqtt-governance-for-uns.md))
 - [Industrial Edge AI in Action: From Feature Engineering to Real-Time Inference](https://www.emqx.com/en/blog/industrial-edge-ai-in-action) ([Edit](https://github.com/emqx/blog/edit/main/en/202603/industrial-edge-ai-in-action.md))
 - [The Economics of the Intelligent AI Edge: Cost Savings in Cloud Ingress](https://www.emqx.com/en/blog/the-economics-of-the-intelligent-ai-edge) ([Edit](https://github.com/emqx/blog/edit/main/en/202603/the-economics-of-the-intelligent-ai-edge.md))
