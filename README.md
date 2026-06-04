@@ -716,6 +716,7 @@ Real-world IoT solutions and industry applications powered by EMQ.
 ## [AI](https://www.emqx.com/en/blog/category/ai)
 Empower IoT with AI and LLM capabilities.
 
+- [Millions of Agents at Risk: The BadHost Vulnerability and Its Architectural Implications](https://www.emqx.com/en/blog/millions-of-agents-at-risk) ([Edit](https://github.com/emqx/blog/edit/main/en/202606/millions-of-agents-at-risk.md))
 - [Device Agent: Engineering Analysis and Practical Implementation](https://www.emqx.com/en/blog/device-agent-engineering-analysis-and-practice) ([Edit](https://github.com/emqx/blog/edit/main/en/202605/device-agent-engineering-analysis-and-practice.md))
 - [A2A over MQTT: How AI Agents Find Each Other at Scale](https://www.emqx.com/en/blog/a2a-over-mqtt) ([Edit](https://github.com/emqx/blog/edit/main/en/202605/a2a-over-mqtt.md))
 - [One AI Agent per Device: How MQTT Turns IoT Fleets into Self-Coordinating Systems](https://www.emqx.com/en/blog/how-mqtt-turns-iot-fleets-into-selfcoordinating-systems) ([Edit](https://github.com/emqx/blog/edit/main/en/202604/how-mqtt-turns-iot-fleets-into-selfcoordinating-systems.md))
