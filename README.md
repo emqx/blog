@@ -677,6 +677,7 @@ Integrate MQTT with databases, message queues, cloud services and more.
 ## [Use Cases](https://www.emqx.com/en/blog/category/use-cases)
 Real-world IoT solutions and industry applications powered by EMQ.
 
+- [Distributed Edge MQTT Architecture for Intelligent Building Management Across Global Facilities](https://www.emqx.com/en/blog/global-edge-mqtt-building-management) ([Edit](https://github.com/emqx/blog/edit/main/en/202606/global-edge-mqtt-building-management.md))
 - [Real-Time Heavy Equipment Fleet Monitoring Across Remote Mining Operations with EMQX](https://www.emqx.com/en/blog/mining-fleet-monitoring-emqx) ([Edit](https://github.com/emqx/blog/edit/main/en/202606/mining-fleet-monitoring-emqx.md))
 - [Powering Global Digital Signage Networks with Reliable MQTT Device Communication](https://www.emqx.com/en/blog/reliable-mqtt-device-communication-digital-signage-networks) ([Edit](https://github.com/emqx/blog/edit/main/en/202605/reliable-mqtt-device-communication-digital-signage-networks.md))
 - [Enterprise MQTT Infrastructure for Connected Medical Device Fleets in Clinical Environments](https://www.emqx.com/en/blog/mqtt-medical-device-fleets) ([Edit](https://github.com/emqx/blog/edit/main/en/202605/mqtt-medical-device-fleets.md))
