@@ -780,6 +780,7 @@ Build reliable and efficient connected vehicle platforms with EMQ.
 ## [Industrial IoT](https://www.emqx.com/en/blog/category/iiot)
 Industrial IoT solutions with Unified Namespace and Sparkplug.
 
+- [Unified Namespace Reinvents Validation and Change Control for Compliance Reporting](https://www.emqx.com/en/blog/unified-namespace-compliance-reporting) ([Edit](https://github.com/emqx/blog/edit/main/en/202606/unified-namespace-compliance-reporting.md))
 - [Maximizing Lifespan, Minimizing Loss: How a Unified Namespace Powers Predictive Maintenance for a Magnet Manufacturer](https://www.emqx.com/en/blog/unified-namespace-predictive-maintenance) ([Edit](https://github.com/emqx/blog/edit/main/en/202606/unified-namespace-predictive-maintenance.md))
 - [Why Your UNS Architecture Requires Native MQTT Governance and How EMQX Enforces It](https://www.emqx.com/en/blog/native-mqtt-governance-for-uns) ([Edit](https://github.com/emqx/blog/edit/main/en/202605/native-mqtt-governance-for-uns.md))
 - [Industrial Edge AI in Action: From Feature Engineering to Real-Time Inference](https://www.emqx.com/en/blog/industrial-edge-ai-in-action) ([Edit](https://github.com/emqx/blog/edit/main/en/202603/industrial-edge-ai-in-action.md))
