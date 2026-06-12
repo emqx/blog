@@ -487,7 +487,7 @@ Learn MQTT protocol from beginner to advanced, including tutorials, clients, pro
 - [MQTT服务器（MQTT Broker）：工作原理与快速入门指南](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison) ([Edit](https://github.com/emqx/blog/edit/main/zh/202508/the-ultimate-guide-to-mqtt-broker-comparison.md))
 - [2025最全面的开源MQTT服务器（MQTT Broker）对比](https://www.emqx.com/zh/blog/a-comprehensive-comparison-of-open-source-mqtt-brokers-in-2023) ([Edit](https://github.com/emqx/blog/edit/main/zh/202508/a-comprehensive-comparison-of-open-source-mqtt-brokers-in-2023.md))
 - [在 C++ 项目中使用 MQTT：物联网开发综合指南](https://www.emqx.com/zh/blog/using-mqtt-with-cpp) ([Edit](https://github.com/emqx/blog/edit/main/zh/202508/using-mqtt-with-cpp.md))
-- [2025年值得尝试的7个MQTT客户端(MQTT Client)工具](https://www.emqx.com/zh/blog/mqtt-client-tools) ([Edit](https://github.com/emqx/blog/edit/main/zh/202508/mqtt-client-tools.md))
+- [2026年值得尝试的7个MQTT客户端(MQTT Client)工具](https://www.emqx.com/zh/blog/mqtt-client-tools) ([Edit](https://github.com/emqx/blog/edit/main/zh/202508/mqtt-client-tools.md))
 - [2025最适用于工业物联网领域的三款开源MQTT服务器（MQTT Broker）](https://www.emqx.com/zh/blog/top-3-open-source-mqtt-brokers-for-industrial-iot-in-2023) ([Edit](https://github.com/emqx/blog/edit/main/zh/202508/top-3-open-source-mqtt-brokers-for-industrial-iot-in-2023.md))
 - [2025 年 MQTT 技术趋势：驱动 AI 与物联网未来发展的关键动力](https://www.emqx.com/zh/blog/mqtt-trends-for-2025-and-beyond) ([Edit](https://github.com/emqx/blog/edit/main/zh/202506/mqtt-trends-for-2025-and-beyond.md))
 - [MQTT 协议快速入门 2025：基础知识和实用教程](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) ([Edit](https://github.com/emqx/blog/edit/main/zh/202503/the-easiest-guide-to-getting-started-with-mqtt.md))
