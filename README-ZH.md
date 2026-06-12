@@ -679,6 +679,7 @@ Integrate MQTT with databases, message queues, cloud services and more.
 ## [Use Cases](https://www.emqx.com/zh/blog/category/use-cases)
 Real-world IoT solutions and industry applications powered by EMQ.
 
+- [面向临床环境海量互联医疗设备的企业级 MQTT 基础设施](https://www.emqx.com/zh/blog/mqtt-medical-device-fleets) ([Edit](https://github.com/emqx/blog/edit/main/zh/202606/mqtt-medical-device-fleets.md))
 - [Tier0：EMQX + UNS 重构工业数据集成，让工业 AI 落地成本直降 60%](https://www.emqx.com/zh/blog/tier0-emqx-uns-industrial-data-integration-ai-cost-reduction-60) ([Edit](https://github.com/emqx/blog/edit/main/zh/202604/tier0-emqx-uns-industrial-data-integration-ai-cost-reduction-60.md))
 - [吉利汽车：基于 EMQX 打造承载全球 300 万 + 车辆的智能网联数据中枢](https://www.emqx.com/zh/blog/emqx-intelligent-connected-data-hub-3-million-vehicles) ([Edit](https://github.com/emqx/blog/edit/main/zh/202604/emqx-intelligent-connected-data-hub-3-million-vehicles.md))
 - [商米：使用 EMQX 连接全球数百万实体商业终端](https://www.emqx.com/zh/blog/emqx-connecting-millions-of-commercial-terminals) ([Edit](https://github.com/emqx/blog/edit/main/zh/202604/emqx-connecting-millions-of-commercial-terminals.md))
@@ -735,6 +736,7 @@ Real-world IoT solutions and industry applications powered by EMQ.
 ## [AI](https://www.emqx.com/zh/blog/category/ai)
 Empower IoT with AI and LLM capabilities.
 
+- [A2A over MQTT：依托 EMQX 构建生产级智能体协同网络](https://www.emqx.com/zh/blog/a2a-over-mqtt) ([Edit](https://github.com/emqx/blog/edit/main/zh/202606/a2a-over-mqtt.md))
 - [Device Agent：让每一台设备都拥有一个 AI 智能体](https://www.emqx.com/zh/blog/device-agent-ai) ([Edit](https://github.com/emqx/blog/edit/main/zh/202606/device-agent-ai.md))
 - [Device Agent：设备智能体工程分析与实践](https://www.emqx.com/zh/blog/device-agent-engineering-analysis-and-practice) ([Edit](https://github.com/emqx/blog/edit/main/zh/202605/device-agent-engineering-analysis-and-practice.md))
 - [S3 正在吞噬一切：AI 时代的基础软件架构革命](https://www.emqx.com/zh/blog/s3-ai-era-infrastructure-revolution) ([Edit](https://github.com/emqx/blog/edit/main/zh/202603/s3-ai-era-infrastructure-revolution.md))

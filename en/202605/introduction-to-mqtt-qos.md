@@ -16,7 +16,7 @@ As you move from QoS 0 to QoS 2, the reliability increases, but so does the comp
 
 ## MQTT QoS Levels Explained
 
-### QoS 0 - At Most Once
+### MQTT QoS 0 - At Most Once
 
 **How it works:** The sender publishes a message and immediately forgets about it. There's no acknowledgment from the receiver, and no retransmission. The reliability of QoS 0 depends entirely on the stability of the underlying TCP connection. If the connection drops, any message in transit or waiting in a buffer will be lost.
 
@@ -34,7 +34,7 @@ As you move from QoS 0 to QoS 2, the reliability increases, but so does the comp
 
 ![MQTT QoS 0](https://assets.emqx.com/images/2c36da33012fac0e6943c7f6f8b5aa7f.png)
 
-### QoS 1 - At Least Once
+### MQTT QoS 1 - At Least Once
 
 **How it works:** This level introduces a handshake to ensure delivery. The sender sends a `PUBLISH` message and stores a copy. It waits for a `PUBACK` packet from the receiver. If the sender doesn't receive the `PUBACK` within a set time, it retransmits the message with the `DUP` flag set. The receiver must acknowledge every message it gets.
 
@@ -52,7 +52,7 @@ As you move from QoS 0 to QoS 2, the reliability increases, but so does the comp
 
 ![MQTT QoS 1](https://assets.emqx.com/images/5affbdf88707c5596e0fc5d16045b4ac.png)
 
-**Why Are QoS 1 Messages Duplicated?**
+**Why Does MQTT QoS 1 Cause Duplicate Messages?**
 
 There are two cases in which the sender will not receive a PUBACK packet.
 
@@ -85,7 +85,7 @@ For example, although the publisher only sends one message, the receiver may eve
 
 These are the drawbacks of using QoS 1.
 
-### QoS 2 - Exactly Once
+### MQTT QoS 2 - Exactly Once
 
 **How it works:** This is a robust, four-step handshake process that guarantees a message is delivered exactly once. The sender and receiver work together to ensure they are on the same page, eliminating the duplication issue seen in QoS 1.
 
@@ -132,17 +132,37 @@ As a result, the receiver can use the PUBREL packet as a boundary and consider a
 
 ## FAQ & Performance Considerations
 
-### How do you deduplicate QoS 1 messages?
+### How do you deduplicate MQTT QoS 1 messages?
 
 As duplication is inherent at the protocol level for QoS 1, you must solve this at the application layer. One common method is to include a **timestamp** or a **monotonically increasing count** in the message payload. This allows your application to check if it has already processed a message with the same timestamp or count, effectively discarding any duplicates.
 
-### Is there a performance difference between QoS levels?
+### Is there a performance difference between MQTT QoS levels?
 
 Yes. **QoS 0** and **QoS 1** typically have similar throughput, but QoS 1 requires more CPU and can have slightly higher latency under high load due to the handshake process. On the other hand, **QoS 2** usually has about half the throughput of QoS 0 and 1 because of the additional packets required for each message. **Your choice of QoS is a trade-off between speed and reliability.**
 
-### Can a broker downgrade a message's QoS?
+### Can a MQTT broker downgrade a message's QoS?
 
 Yes. When a publisher sends a message with a specific QoS level, the broker typically forwards it to subscribers at that same level. However, a subscriber can specify a maximum QoS level they are willing to receive. If the publisher's QoS is higher than the subscriber's requested level, the broker will **downgrade** the message to match the subscriber's requirement. For example, a QoS 2 message would be downgraded to QoS 1 if the subscriber requested a maximum QoS of 1.
+
+### Is MQTT QoS end-to-end?
+
+Not exactly. MQTT QoS applies to each message delivery hop. A publisher sends a message to the broker with one QoS level, and the broker forwards the message to each subscriber based on the subscriber's requested QoS. This means the effective QoS received by a subscriber may be different from the QoS used by the publisher.
+
+### What is the default QoS in MQTT?
+
+In most MQTT clients and libraries, the default QoS is usually QoS 0 unless another level is explicitly specified. QoS 0 has the lowest overhead, but it does not provide delivery confirmation or retransmission.
+
+### Does MQTT QoS guarantee message ordering?
+
+MQTT QoS controls delivery reliability, not global ordering across all publishers and subscribers. Message ordering depends on factors such as client session, topic, broker behavior, inflight messages, and whether messages come from the same or different publishers. If strict ordering is required, applications should use sequence numbers and carefully design topic and client flows.
+
+### Can I use different QoS levels in the same MQTT application?
+
+Yes. In fact, many production IoT systems use different QoS levels for different message types. For example, a device may publish frequent sensor readings with QoS 0, important status changes with QoS 1, and critical control or billing-related events with QoS 2.
+
+### Is QoS 2 always better than QoS 1?
+
+No. QoS 2 provides a stronger delivery guarantee, but it also requires more packet exchanges and adds more latency. For most IoT applications, QoS 1 is often the better default choice because it ensures delivery while keeping protocol overhead lower than QoS 2.
 
 ## Conclusion
 
@@ -152,6 +172,6 @@ Understanding **MQTT QoS** is crucial for building a reliable and efficient IoT 
 - Choose **QoS 1** for important data that must be delivered, but where the occasional duplicate can be handled at the application level.
 - Select **QoS 2** for mission-critical data that cannot be lost or duplicated, and where you can accept the higher overhead.
 
-By carefully selecting the right QoS level, you can optimize your IoT network for both performance and reliability, ensuring your devices and applications communicate exactly as they should.
+Choosing the optimal **MQTT QoS level** is a fundamental architectural decision for any enterprise **IoT data infrastructure**. Balancing message delivery guarantees against network overhead ensures your applications remain responsive, scalable, and resilient even under degraded network conditions.
 
-For more detailed insights into MQTT, explore [**EMQ's comprehensive MQTT guides**](https://www.emqx.com/en/mqtt-guide), which cover advanced topics like wildcards, retained messages, and more to help you build robust, scalable IoT systems.
+For deeper technical deep-dives into broker implementation, explore the [**EMQ comprehensive MQTT protocol guides**](https://www.emqx.com/en/mqtt-guide), which cover core protocol mechanisms including [MQTT wildcards](https://www.emqx.com/en/blog/advanced-features-of-mqtt-topics#mqtt-topic-wildcards), [retained messages](https://www.emqx.com/en/blog/mqtt-retained-messages), and session persistence configurations to build enterprise-grade, scalable IoT data infrastructure.
