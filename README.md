@@ -462,6 +462,7 @@ EMQ products including EMQX, EMQX Cloud, Neuron, NanoMQ, MQTTX and more.
 ## [MQTT](https://www.emqx.com/en/blog/category/mqtt)
 Learn MQTT protocol from beginner to advanced, including tutorials, clients, programming and security.
 
+- [MQTT QoS 0, 1, 2 Explained: A Quickstart Guide](https://www.emqx.com/en/blog/introduction-to-mqtt-qos) ([Edit](https://github.com/emqx/blog/edit/main/en/202605/introduction-to-mqtt-qos.md))
 - [MQTT in Python with Paho Client: Beginner's Guide 2026](https://www.emqx.com/en/blog/how-to-use-mqtt-in-python) ([Edit](https://github.com/emqx/blog/edit/main/en/202605/how-to-use-mqtt-in-python.md))
 - [MQTT Broker: How It Works, Popular Options, and Quickstart](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) ([Edit](https://github.com/emqx/blog/edit/main/en/202605/the-ultimate-guide-to-mqtt-broker-comparison.md))
 - [Python MQTT Clients: A 2026 Selection Guide](https://www.emqx.com/en/blog/comparision-of-python-mqtt-client) ([Edit](https://github.com/emqx/blog/edit/main/en/202605/comparision-of-python-mqtt-client.md))
@@ -477,7 +478,6 @@ Learn MQTT protocol from beginner to advanced, including tutorials, clients, pro
 - [Mastering MQTT in C: A Step-by-Step Tutorial Using the Paho C Client](https://www.emqx.com/en/blog/mastering-mqtt-in-c) ([Edit](https://github.com/emqx/blog/edit/main/en/202512/mastering-mqtt-in-c.md))
 - [How to Use MQTT in C# with MQTTnet](https://www.emqx.com/en/blog/connecting-to-serverless-mqtt-broker-with-mqttnet-in-csharp) ([Edit](https://github.com/emqx/blog/edit/main/en/202511/connecting-to-serverless-mqtt-broker-with-mqttnet-in-csharp.md))
 - [MQTT vs. MQ: A Guide to Choosing the Right Messaging Platform](https://www.emqx.com/en/blog/mqtt-vs-mq) ([Edit](https://github.com/emqx/blog/edit/main/en/202510/mqtt-vs-mq.md))
-- [MQTT QoS 0, 1, 2 Explained: A Quickstart Guide](https://www.emqx.com/en/blog/introduction-to-mqtt-qos) ([Edit](https://github.com/emqx/blog/edit/main/en/202508/introduction-to-mqtt-qos.md))
 - [Top 3 Open Source MQTT Brokers for Industrial IoT in 2025](https://www.emqx.com/en/blog/top-3-open-source-mqtt-brokers-for-industrial-iot-in-2023) ([Edit](https://github.com/emqx/blog/edit/main/en/202508/top-3-open-source-mqtt-brokers-for-industrial-iot-in-2023.md))
 - [A Quickstart Guide to Using MQTT over WebSocket](https://www.emqx.com/en/blog/connect-to-mqtt-broker-with-websocket) ([Edit](https://github.com/emqx/blog/edit/main/en/202508/connect-to-mqtt-broker-with-websocket.md))
 - [Top 3 MQTT WebSocket Clients for Developers in 2025](https://www.emqx.com/en/blog/top-3-mqtt-websocket-clients-in-2023) ([Edit](https://github.com/emqx/blog/edit/main/en/202507/top-3-mqtt-websocket-clients-in-2023.md))
