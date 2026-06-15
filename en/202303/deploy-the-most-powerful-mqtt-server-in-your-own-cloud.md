@@ -42,7 +42,7 @@ Our mission remains steadfast as we continue to evolve: to empower all organizat
 
  
 
-To learn more about the EMQX Cloud BYOC edition and how it can benefit your organization, please visit our [landing page ](https://www.emqx.com/en/lp/cloud/byoc)or [contact us](https://www.emqx.com/en/contact?product=cloud&productEdition=BYOC) today.
+To learn more about the EMQX Cloud BYOC edition and how it can benefit your organization, please visit our [landing page ](https://www.emqx.com/en/cloud/byoc)or [contact us](https://www.emqx.com/en/contact?product=cloud&productEdition=BYOC) today.
 
 
 
