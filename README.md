@@ -462,6 +462,7 @@ EMQ products including EMQX, EMQX Cloud, Neuron, NanoMQ, MQTTX and more.
 ## [MQTT](https://www.emqx.com/en/blog/category/mqtt)
 Learn MQTT protocol from beginner to advanced, including tutorials, clients, programming and security.
 
+- [MQTT on ESP32: A Beginner's Guide](https://www.emqx.com/en/blog/esp32-connects-to-the-free-public-mqtt-broker) ([Edit](https://github.com/emqx/blog/edit/main/en/202605/esp32-connects-to-the-free-public-mqtt-broker.md))
 - [MQTT QoS 0, 1, 2 Explained: A Quickstart Guide](https://www.emqx.com/en/blog/introduction-to-mqtt-qos) ([Edit](https://github.com/emqx/blog/edit/main/en/202605/introduction-to-mqtt-qos.md))
 - [MQTT in Python with Paho Client: Beginner's Guide 2026](https://www.emqx.com/en/blog/how-to-use-mqtt-in-python) ([Edit](https://github.com/emqx/blog/edit/main/en/202605/how-to-use-mqtt-in-python.md))
 - [MQTT Broker: How It Works, Popular Options, and Quickstart](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) ([Edit](https://github.com/emqx/blog/edit/main/en/202605/the-ultimate-guide-to-mqtt-broker-comparison.md))
@@ -494,7 +495,6 @@ Learn MQTT protocol from beginner to advanced, including tutorials, clients, pro
 - [How to Use MQTT with PHP: A Guide for Real-Time Messaging](https://www.emqx.com/en/blog/how-to-use-mqtt-in-php) ([Edit](https://github.com/emqx/blog/edit/main/en/202411/how-to-use-mqtt-in-php.md))
 - [Ensuring Reliable IoT Device Connectivity: Best Practices for MQTT Client Auto-Reconnection](https://www.emqx.com/en/blog/mqtt-client-auto-reconnect-best-practices) ([Edit](https://github.com/emqx/blog/edit/main/en/202409/mqtt-client-auto-reconnect-best-practices.md))
 - [A Guide on Collecting and Reporting Soil Moisture with ESP32 and Sensor through MQTT](https://www.emqx.com/en/blog/hands-on-guide-on-esp32) ([Edit](https://github.com/emqx/blog/edit/main/en/202408/hands-on-guide-on-esp32.md))
-- [MQTT on ESP32: A Beginner's Guide](https://www.emqx.com/en/blog/esp32-connects-to-the-free-public-mqtt-broker) ([Edit](https://github.com/emqx/blog/edit/main/en/202408/esp32-connects-to-the-free-public-mqtt-broker.md))
 - [MQTT Topics and Wildcards: A Beginner's Guide](https://www.emqx.com/en/blog/advanced-features-of-mqtt-topics) ([Edit](https://github.com/emqx/blog/edit/main/en/202407/advanced-features-of-mqtt-topics.md))
 - [Connecting MQTT and REST API: A Comprehensive Tutorial](https://www.emqx.com/en/blog/connecting-mqtt-and-rest-api) ([Edit](https://github.com/emqx/blog/edit/main/en/202407/connecting-mqtt-and-rest-api.md))
 - [Building MQTT Services on Windows](https://www.emqx.com/en/blog/install-mqtt-broker-on-windows) ([Edit](https://github.com/emqx/blog/edit/main/en/202407/install-mqtt-broker-on-windows.md))

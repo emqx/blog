@@ -1,8 +1,21 @@
 ## Introduction
 
+If you are looking for a **beginner-friendly guide to connect ESP32 to MQTT**, this tutorial will walk you through a complete working example using Arduino IDE.
+
+You will learn how to:
+
+- Connect ESP32 to Wi-Fi
+- Set up MQTT client using PubSubClient
+- Publish and subscribe to MQTT topics
+- Test communication using MQTTX or a public broker
+
+## What is MQTT and Why Use it on ESP32?
+
 [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) is a lightweight messaging protocol for IoT in [publish/subscribe model](https://www.emqx.com/en/blog/mqtt-5-introduction-to-publish-subscribe-model), offering reliable real-time communication with minimal code and bandwidth overhead. It is especially beneficial for devices with limited resources and low-bandwidth networks, making it widely adopted in IoT, mobile internet, IoV, and power industries.
 
 [ESP32](https://www.espressif.com/en/products/socs/esp32), an upgraded version of [ESP8266](https://www.emqx.com/en/blog/esp8266-connects-to-the-public-mqtt-broker), is a low-cost, low-power system on a chip microcontroller. In addition to the Wi-Fi module, the ESP32 also includes a Bluetooth 4.0 module. The dual-core CPU operates at a frequency of 80 to 240 MHz. It contains two Wi-Fi and Bluetooth modules and various input and output pins. ESP32 is an ideal choice for IoT projects.
+
+### Why MQTT + ESP32 is a Popular IoT Stack
 
 Using MQTT on ESP32 offers several advantages:
 
@@ -12,13 +25,11 @@ Using MQTT on ESP32 offers several advantages:
 
 Overall, the combination of ESP32 and MQTT is ideal for IoT applications that require wireless connectivity and efficient messaging between many devices. This blog will show you the process of publishing MQTT messages and topic subscription on ESP32 using Arduino IDE through a simple demo.
 
-
-
 ## Prepare an MQTT Broker
 
 Before proceeding, please ensure you have an [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) to communicate and test with. We recommend you use EMQX Platform Serverless Plan.
 
-[EMQX Platform](https://www.emqx.com/en/cloud) is a comprehensive, fully-managed MQTT messaging cloud service that seamlessly connects your IoT devices to any cloud without the hassle of infrastructure maintenance. The Serverless Plan provides MQTT services on a secure, scalable cluster with pay-as-you-go pricing, making it a flexible and cost-effective solution for starting with MQTT.
+[EMQX Cloud](https://www.emqx.com/en/cloud) is a comprehensive, fully-managed MQTT messaging cloud service that seamlessly connects your IoT devices to any cloud without the hassle of infrastructure maintenance. The Serverless Plan provides MQTT services on a secure, scalable cluster with pay-as-you-go pricing, making it a flexible and cost-effective solution for starting with MQTT.
 
 <section class="promotion">
     <div>
@@ -27,6 +38,7 @@ Before proceeding, please ensure you have an [MQTT broker](https://www.emqx.com/
     </div>
     <a href="https://accounts.emqx.com/signup?continue=https://cloud-intl.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">Get Started →</a>
 </section>
+
 
 This article will use the [free public MQTT broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker) to simplify the process:
 
@@ -42,6 +54,25 @@ This article will use the [free public MQTT broker](https://www.emqx.com/en/mqtt
 
 
 ## Getting Started with MQTT on ESP32
+
+### MQTT on ESP32 in 5 Minutes (Quick Overview)
+
+If you just want to get MQTT working on ESP32 quickly, here is the minimal flow:
+
+1. Install **ESP32 board support** in Arduino IDE
+2. Install **PubSubClient library**
+3. Connect ESP32 to Wi-Fi
+4. Connect to MQTT broker (`broker.emqx.io`)
+5. Publish and subscribe to a test topic (`emqx/esp32`)
+6. Print messages via Serial Monitor
+
+That's it — once connected, ESP32 can:
+
+- Publish sensor data to MQTT broker
+- Receive commands from MQTT clients like MQTTX
+- Build full IoT communication pipelines
+
+The rest of this guide explains each step in detail.
 
 ### Arduino Configuration
 
@@ -62,7 +93,7 @@ These steps will guide you through installing the ESP32 development board in the
 3. In the Boards Manager, search for "ESP32".
 4. Once found, click on it and then click the "Install" button.
 
-![Install ESP32 development board](https://assets.emqx.com/images/99c502b39ef7d21dc75632e42aa89708.png)
+![Installing the ESP32 Development Board via Arduino IDE Boards Manager Menu](https://assets.emqx.com/images/99c502b39ef7d21dc75632e42aa89708.png)
 
 #### Install PubSubClient
 
@@ -85,14 +116,14 @@ By following these steps, you will successfully install the PubSubClient library
 
 1. First, we need to import the **WiFi** and **PubSubClient** libraries. The **WiFi** library allows ESP32 to establish connections with Wi-Fi networks, while the **PubSubClient** library enables ESP32 to connect to an MQTT broker for publishing messages and subscribing to topics.
 
-   ```arduino
+   ```c
    #include <WiFi.h>
    #include <PubSubClient.h>
    ```
 
 2. Please configure the following parameters: Wi-Fi network name and password, MQTT broker address and port, and the topic to `emqx/esp32`.
 
-   ```arduino
+   ```c
    // WiFi
    const char *ssid = "xxxxx"; // Enter your WiFi name
    const char *password = "xxxxx";  // Enter WiFi password
@@ -107,7 +138,7 @@ By following these steps, you will successfully install the PubSubClient library
 
 3. Open a serial connection to display program results and establish a connection to the Wi-Fi network.
 
-   ```reasonml
+   ```c
    // Set software serial baud to 115200;
    Serial.begin(115200);
    // Connecting to a Wi-Fi network
@@ -120,7 +151,7 @@ By following these steps, you will successfully install the PubSubClient library
 
 4. Utilize PubSubClient to establish a connection with the MQTT broker.
 
-   ```arduino
+   ```c
    client.setServer(mqtt_broker, mqtt_port);
    client.setCallback(callback);
    while (!client.connected()) {
@@ -139,11 +170,11 @@ By following these steps, you will successfully install the PubSubClient library
 
 #### TLS/SSL
 
-Using TLS in MQTT can ensure the confidentiality and integrity of information, preventing information leakage and tampering. 
+Implementing **MQTT TLS/SSL encryption** ensures end-to-end data confidentiality and prevents sniffing or tampering in untrusted public networks. 
 
 This ESP32 code establishes a secure Wi-Fi connection using a server root CA certificate. The ca_cert variable contains the root CA certificate in PEM format. The espClient object is configured with the server root CA certificate using the `setCACert()` function. This setup enables the ESP32 client to verify the server's identity during the TLS handshake, establishing a secure Wi-Fi connection and ensuring the transmitted data's confidentiality and integrity.
 
-```
+```c
 #include <WiFiClientSecure.h>
 
 const char* ca_cert= \
@@ -178,11 +209,13 @@ espClient.setCACert(ca_cert);
 
 The full TLS connection code is available on [GitHub](https://github.com/emqx/MQTT-Client-Examples/blob/master/mqtt-client-ESP32/esp32_connect_mqtt_via_tls.ino).
 
+>⚠️ Note: When using TLS on ESP32, memory usage increases significantly. If your application frequently reconnects, consider using a persistent connection strategy to avoid repeated certificate loading overhead.
+
 ### Publish Messages & Subscribe
 
 Once the connection to the MQTT broker is established successfully, the ESP32 will publish messages to the topic `emqx/esp32` and then subscribe to the topic `emqx/esp32`.
 
-```axapta
+```c
 // publish and subscribe
 client.publish(topic, "Hi, I'm ESP32 ^^");
 client.subscribe(topic);
@@ -192,7 +225,7 @@ client.subscribe(topic);
 
 Set the callback function to print the topic name to the serial port and print the message received from the `emqx/esp32` topic.
 
-```arduino
+```c
 void callback(char *topic, byte *payload, unsigned int length) {
     Serial.print("Message arrived in topic: ");
     Serial.println(topic);
@@ -209,7 +242,7 @@ void callback(char *topic, byte *payload, unsigned int length) {
 
 The full code is as follows:
 
-```arduino
+```c
 #include <WiFi.h>
 #include <PubSubClient.h>
 
@@ -273,6 +306,8 @@ void loop() {
 }
 ```
 
+> ⚠️ **Developer Note on `client.loop()`:** The `client.loop()` function inside the Arduino `void loop()` block is critical. It processes incoming message queues, handles subscription callbacks, and keeps the MQTT keep-alive ping handshake active. Avoid using blocking `delay()` functions inside your loop, as it will cause the ESP32 client to disconnect from the broker.
+
 ## Running and Testing
 
 1. Please follow these steps to upload the complete code using Arduino and power on the ESP32:
@@ -298,6 +333,178 @@ void loop() {
 4. You will see the messages published by MQTTX.
 
    ![Messages published by MQTTX](https://assets.emqx.com/images/d192ba700151d83f7adc5376d5b4d374.png)
+
+## Best Practices for MQTT on ESP32
+
+- Always keep `loop()` non-blocking
+- Avoid large dynamic memory allocations inside callback
+- Use QoS 0 for telemetry, QoS 1 for commands
+- Reconnect both Wi-Fi and MQTT independently
+- Keep payload size small (<1KB recommended)
+- Use unique client ID (`WiFi.macAddress()`)
+
+## FAQ
+
+### Why can't ESP32 connect to MQTT broker?
+
+This is usually caused by:
+
+- Incorrect Wi-Fi credentials
+- Broker hostname not reachable from network
+- Port mismatch (1883 vs 8883 TLS)
+- Firewall blocking MQTT traffic
+- Missing `client.loop()` in main loop
+
+**Debug steps:**
+
+1. Check Wi-Fi connection first
+2. Ping broker from network (if possible)
+3. Try public broker: `broker.emqx.io`
+4. Print `client.state()` for MQTT error code
+
+Most connection issues are network-related, not code-related.
+
+### How do I handle automatic MQTT reconnection on ESP32 if Wi-Fi drops?
+
+Network drops are inevitable in wireless environments. To prevent your ESP32 from remaining permanently offline, you should implement a non-blocking reconnection function inside your `loop()` that checks both the Wi-Fi and MQTT client states:
+
+```c
+void verifyConnections() {
+    if (WiFi.status() != WL_CONNECTED) {
+        Serial.println("WiFi lost. Reconnecting...");
+        WiFi.disconnect();
+        WiFi.begin(ssid, password);
+        return;
+    }
+    
+    if (!client.connected()) {
+        Serial.println("MQTT disconnected. Retrying...");
+        // Insert your standard non-blocking MQTT connection logic here
+    }
+}
+```
+
+### Why does PubSubClient disconnect when sending large payloads, and how do I fix it?
+
+By default, the `PubSubClient` library enforces a hard limit on message sizes, with a default **`MQTT_MAX_PACKET_SIZE` of 256 bytes** (including headers). If your ESP32 attempts to publish or receive a large payload (like a massive JSON string), the broker will abruptly drop the connection.
+
+To fix this, you must increase the buffer size by defining the macro at the very top of your sketch, **before** importing the library header:
+
+```c
+#define MQTT_MAX_PACKET_SIZE 2048 // Increase buffer to 2KB
+#include <PubSubClient.h>
+```
+
+In production systems, it is recommended to keep MQTT messages under 1KB whenever possible, even if the buffer is increased, to avoid memory fragmentation and unstable behavior on ESP32.
+
+### How can I efficiently publish JSON payloads from ESP32?
+
+The standard industry approach is to pair `PubSubClient` with the `ArduinoJson` library. It allows you to serialize sensor readings safely without risking memory fragmentation through raw string concatenation:
+
+```c
+#include <ArduinoJson.h>
+
+void publishSensorData() {
+    JsonDocument doc;
+    doc["temperature"] = 24.5;
+    doc["humidity"] = 60.2;
+    doc["rssi"] = WiFi.RSSI();
+
+    char buffer[256];
+    serializeJson(doc, buffer);
+    client.publish("emqx/esp32/telemetry", buffer);
+}
+```
+
+### Why does my ESP32 crash (Guru Meditation Error) inside the MQTT callback?
+
+The execution context of the `callback()` function is sensitive. If you execute long-running tasks, heavy string manipulations, or perform blocking operations (like `delay()` or heavy I/O flashing) within the callback, the ESP32 hardware Watchdog Timer (WDT) will trigger a system crash.
+
+**Best Practice:** Keep your callback restricted to copying the incoming payload data into a global buffer, then set a boolean flag to let your main `void loop()` handle the actual data processing safely.
+
+### Can I subscribe to multiple topics simultaneously using PubSubClient?
+
+Yes. You can invoke `client.subscribe()` consecutively for different explicit topics right after a connection is established. To route them cleanly, read the incoming `topic` character array parameters exposed inside your global callback function:
+
+```c
+void callback(char* topic, byte* payload, unsigned int length) {
+    if (strcmp(topic, "emqx/esp32/commands") == 0) {
+        // Handle incoming control signals
+    } else if (strcmp(topic, "emqx/esp32/config") == 0) {
+        // Handle runtime profile configurations
+    }
+}
+```
+
+### Why does ESP32 randomly disconnect from MQTT broker?
+
+This is one of the most common issues when using MQTT on ESP32.
+
+Random disconnections are usually caused by:
+
+- Weak or unstable Wi-Fi signal
+- Blocking code inside `loop()` (e.g. delay, heavy computation)
+- MQTT keep-alive timeout not being handled
+- Power instability when using USB or external sensors
+
+**Recommended fix:**
+
+Ensure your main loop is non-blocking:
+
+```c
+void loop() {
+    if (!client.connected()) {
+        reconnectMQTT();
+    }
+    client.loop();
+}
+```
+
+Avoid long `delay()` calls. If delays are required, keep them under 100–200ms or replace with millis() timing.
+
+In production systems, Wi-Fi reconnection and MQTT reconnection should always be handled separately.
+
+### What is the difference between PubSubClient and ESP-IDF MQTT client?
+
+PubSubClient is a lightweight MQTT library designed for Arduino-based projects, while ESP-IDF provides a native MQTT client for ESP32.
+
+**PubSubClient**:
+
+- Simple and easy to use
+- Good for beginners and prototypes
+- Limited memory control
+- Max packet size must be manually configured
+
+**ESP-IDF MQTT client:**
+
+- More stable and production-ready
+- Better memory and task management
+- Supports advanced features (QoS handling, reconnection logic)
+- Recommended for large-scale IoT deployments
+
+If you are building production IoT systems, ESP-IDF is generally preferred.
+
+### Why does ESP32 fail to reconnect to MQTT after deep sleep?
+
+After deep sleep, ESP32 behaves like a fresh reboot. This means:
+
+- Wi-Fi must be reinitialized
+- MQTT client must reconnect manually
+- Subscriptions must be re-subscribed
+
+**Common mistake:**
+
+Developers assume MQTT connection persists after deep sleep — it does not.
+
+**Correct approach:**
+
+Re-run full initialization in `setup()` after wake-up:
+
+- reconnect Wi-Fi
+- reconnect MQTT broker
+- resubscribe topics
+
+For battery-powered IoT devices, this is critical for reliability.
 
 
 
