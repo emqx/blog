@@ -2,7 +2,7 @@
 
 EMQX Cloud BYOC 为对数据隐私控制及定制化云服务有更高需求的企业提供了一种理想的解决方案，用户可以充分借助 EMQX 物联网 MQTT 消息服务器的强大能力，在自己的云环境中构建更加安全、高度可扩展的 MQTT 云部署，满足自身的物联网业务需求。
 
-了解详情：[https://www.emqx.com/zh/lp/cloud/byoc](https://www.emqx.com/zh/lp/cloud/byoc) 
+了解详情：[https://www.emqx.com/zh/cloud/byoc](https://www.emqx.com/zh/cloud/byoc)
 
 ## 全面保护数据隐私
 

@@ -217,7 +217,6 @@ In addition, EMQX offers [serverless](https://www.emqx.com/en/cloud/serverless-m
 | :---------------------- | :-------------------------------------------- | :------------ | :----------------------------------------------------------- |
 | **Docker**              | ✅                                             | ✅             | [EMQX Docker](https://hub.docker.com/r/emqx/emqx)            |
 | **Kubernetes Operator** | ✅                                             | ❌             | [EMQX Kubernetes Operator](https://www.emqx.com/en/emqx-kubernetes-operator) |
-| **Terraform**           | ✅                                             | ❌             | [EMQX Terraform](https://www.emqx.com/en/emqx-terraform)     |
 | **Cloud Service**       | - Serverless<br>- Hosting/Dedicated<br>- BYOC | Hosting       |                                                              |
 
 EMQX Kubernetes Operator: [https://github.com/emqx/emqx-operator](https://github.com/emqx/emqx-operator) 
