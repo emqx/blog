@@ -462,6 +462,7 @@ EMQ products including EMQX, EMQX Cloud, Neuron, NanoMQ, MQTTX and more.
 ## [MQTT](https://www.emqx.com/en/blog/category/mqtt)
 Learn MQTT protocol from beginner to advanced, including tutorials, clients, programming and security.
 
+- [What a PV Cooling Paper Reveals About Distributed IoT Control](https://www.emqx.com/en/blog/what-a-pv-cooling-paper-reveals-about-distributed-iot-control) ([Edit](https://github.com/emqx/blog/edit/main/en/202606/what-a-pv-cooling-paper-reveals-about-distributed-iot-control.md))
 - [MQTT on ESP32: A Beginner's Guide](https://www.emqx.com/en/blog/esp32-connects-to-the-free-public-mqtt-broker) ([Edit](https://github.com/emqx/blog/edit/main/en/202605/esp32-connects-to-the-free-public-mqtt-broker.md))
 - [MQTT QoS 0, 1, 2 Explained: A Quickstart Guide](https://www.emqx.com/en/blog/introduction-to-mqtt-qos) ([Edit](https://github.com/emqx/blog/edit/main/en/202605/introduction-to-mqtt-qos.md))
 - [MQTT in Python with Paho Client: Beginner's Guide 2026](https://www.emqx.com/en/blog/how-to-use-mqtt-in-python) ([Edit](https://github.com/emqx/blog/edit/main/en/202605/how-to-use-mqtt-in-python.md))
