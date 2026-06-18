@@ -679,6 +679,7 @@ Integrate MQTT with databases, message queues, cloud services and more.
 ## [Use Cases](https://www.emqx.com/zh/blog/category/use-cases)
 Real-world IoT solutions and industry applications powered by EMQ.
 
+- [以可靠的 MQTT 设备通信，驱动全球数字标牌网络](https://www.emqx.com/zh/blog/reliable-mqtt-device-communication-digital-signage-networks) ([Edit](https://github.com/emqx/blog/edit/main/zh/202606/reliable-mqtt-device-communication-digital-signage-networks.md))
 - [面向临床环境海量互联医疗设备的企业级 MQTT 基础设施](https://www.emqx.com/zh/blog/mqtt-medical-device-fleets) ([Edit](https://github.com/emqx/blog/edit/main/zh/202606/mqtt-medical-device-fleets.md))
 - [Tier0：EMQX + UNS 重构工业数据集成，让工业 AI 落地成本直降 60%](https://www.emqx.com/zh/blog/tier0-emqx-uns-industrial-data-integration-ai-cost-reduction-60) ([Edit](https://github.com/emqx/blog/edit/main/zh/202604/tier0-emqx-uns-industrial-data-integration-ai-cost-reduction-60.md))
 - [吉利汽车：基于 EMQX 打造承载全球 300 万 + 车辆的智能网联数据中枢](https://www.emqx.com/zh/blog/emqx-intelligent-connected-data-hub-3-million-vehicles) ([Edit](https://github.com/emqx/blog/edit/main/zh/202604/emqx-intelligent-connected-data-hub-3-million-vehicles.md))
@@ -798,6 +799,7 @@ Build reliable and efficient connected vehicle platforms with EMQ.
 ## [Industrial IoT](https://www.emqx.com/zh/blog/category/iiot)
 Industrial IoT solutions with Unified Namespace and Sparkplug.
 
+- [统一命名空间治理：EMQX 原生 MQTT 能力，守护你的数据质量](https://www.emqx.com/zh/blog/native-mqtt-governance-for-uns) ([Edit](https://github.com/emqx/blog/edit/main/zh/202606/native-mqtt-governance-for-uns.md))
 - [2025最适用于工业物联网领域的三款开源MQTT服务器（MQTT Broker）](https://www.emqx.com/zh/blog/top-3-open-source-mqtt-brokers-for-industrial-iot-in-2023) ([Edit](https://github.com/emqx/blog/edit/main/zh/202508/top-3-open-source-mqtt-brokers-for-industrial-iot-in-2023.md))
 - [NeuronEX vs Kepware：云 + AI 时代工业边缘网关的进化与革新](https://www.emqx.com/zh/blog/neuronex-vs-kepware) ([Edit](https://github.com/emqx/blog/edit/main/zh/202507/neuronex-vs-kepware.md))
 - [EMQX + NeuronEX：构建基于 UNS 架构的工业 AI 数据中枢](https://www.emqx.com/zh/blog/building-the-industrial-data-hub-with-emqx-and-neuronex) ([Edit](https://github.com/emqx/blog/edit/main/zh/202506/building-the-industrial-data-hub-with-emqx-and-neuronex.md))
