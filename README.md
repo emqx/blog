@@ -463,6 +463,7 @@ EMQ products including EMQX, EMQX Cloud, Neuron, NanoMQ, MQTTX and more.
 Learn MQTT protocol from beginner to advanced, including tutorials, clients, programming and security.
 
 - [What a PV Cooling Paper Reveals About Distributed IoT Control](https://www.emqx.com/en/blog/what-a-pv-cooling-paper-reveals-about-distributed-iot-control) ([Edit](https://github.com/emqx/blog/edit/main/en/202606/what-a-pv-cooling-paper-reveals-about-distributed-iot-control.md))
+- [Mosquitto vs EMQX: Features, Scalability, and Use Cases Compared](https://www.emqx.com/en/blog/emqx-vs-mosquitto-2023-mqtt-broker-comparison) ([Edit](https://github.com/emqx/blog/edit/main/en/202606/emqx-vs-mosquitto-2023-mqtt-broker-comparison.md))
 - [MQTT on ESP32: A Beginner's Guide](https://www.emqx.com/en/blog/esp32-connects-to-the-free-public-mqtt-broker) ([Edit](https://github.com/emqx/blog/edit/main/en/202605/esp32-connects-to-the-free-public-mqtt-broker.md))
 - [MQTT QoS 0, 1, 2 Explained: A Quickstart Guide](https://www.emqx.com/en/blog/introduction-to-mqtt-qos) ([Edit](https://github.com/emqx/blog/edit/main/en/202605/introduction-to-mqtt-qos.md))
 - [MQTT in Python with Paho Client: Beginner's Guide 2026](https://www.emqx.com/en/blog/how-to-use-mqtt-in-python) ([Edit](https://github.com/emqx/blog/edit/main/en/202605/how-to-use-mqtt-in-python.md))
@@ -584,7 +585,6 @@ Learn MQTT protocol from beginner to advanced, including tutorials, clients, pro
 - [Mosquitto vs NanoMQ | 2023 MQTT Broker Comparison](https://www.emqx.com/en/blog/mosquitto-vs-nanomq-2023-mqtt-broker-comparison) ([Edit](https://github.com/emqx/blog/edit/main/en/202304/mosquitto-vs-nanomq-2023-mqtt-broker-comparison.md))
 - [7 Factors to Consider When Choosing MQTT Broker 2023](https://www.emqx.com/en/blog/7-factors-to-consider-when-choosing-mqtt-broker-2023) ([Edit](https://github.com/emqx/blog/edit/main/en/202304/7-factors-to-consider-when-choosing-mqtt-broker-2023.md))
 - [EMQX vs NanoMQ | 2023 MQTT Broker Comparison](https://www.emqx.com/en/blog/emqx-vs-nanomq-2023-mqtt-broker-comparison) ([Edit](https://github.com/emqx/blog/edit/main/en/202304/emqx-vs-nanomq-2023-mqtt-broker-comparison.md))
-- [Mosquitto vs EMQX | 2023 MQTT Broker Comparison](https://www.emqx.com/en/blog/emqx-vs-mosquitto-2023-mqtt-broker-comparison) ([Edit](https://github.com/emqx/blog/edit/main/en/202304/emqx-vs-mosquitto-2023-mqtt-broker-comparison.md))
 - [7 Essential Things to Know about MQTT Security 2023](https://www.emqx.com/en/blog/essential-things-to-know-about-mqtt-security) ([Edit](https://github.com/emqx/blog/edit/main/en/202303/essential-things-to-know-about-mqtt-security.md))
 - [Securing MQTT with Username & Password Authentication](https://www.emqx.com/en/blog/securing-mqtt-with-username-and-password-authentication) ([Edit](https://github.com/emqx/blog/edit/main/en/202303/securing-mqtt-with-username-and-password-authentication.md))
 - [Shaping the Future of IoT: 7 MQTT Technology Trends in 2023](https://www.emqx.com/en/blog/7-mqtt-trends-in-2023) ([Edit](https://github.com/emqx/blog/edit/main/en/202303/7-mqtt-trends-in-2023.md))
