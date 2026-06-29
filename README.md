@@ -465,6 +465,7 @@ Learn MQTT protocol from beginner to advanced, including tutorials, clients, pro
 
 - [What a PV Cooling Paper Reveals About Distributed IoT Control](https://www.emqx.com/en/blog/what-a-pv-cooling-paper-reveals-about-distributed-iot-control) ([Edit](https://github.com/emqx/blog/edit/main/en/202606/what-a-pv-cooling-paper-reveals-about-distributed-iot-control.md))
 - [Mosquitto vs EMQX: Features, Scalability, and Use Cases Compared](https://www.emqx.com/en/blog/emqx-vs-mosquitto-2023-mqtt-broker-comparison) ([Edit](https://github.com/emqx/blog/edit/main/en/202606/emqx-vs-mosquitto-2023-mqtt-broker-comparison.md))
+- [Using MQTT on ESP8266: A Quick Start Guide](https://www.emqx.com/en/blog/esp8266-connects-to-the-public-mqtt-broker) ([Edit](https://github.com/emqx/blog/edit/main/en/202605/esp8266-connects-to-the-public-mqtt-broker.md))
 - [MQTT on ESP32: A Beginner's Guide](https://www.emqx.com/en/blog/esp32-connects-to-the-free-public-mqtt-broker) ([Edit](https://github.com/emqx/blog/edit/main/en/202605/esp32-connects-to-the-free-public-mqtt-broker.md))
 - [MQTT QoS 0, 1, 2 Explained: A Quickstart Guide](https://www.emqx.com/en/blog/introduction-to-mqtt-qos) ([Edit](https://github.com/emqx/blog/edit/main/en/202605/introduction-to-mqtt-qos.md))
 - [MQTT in Python with Paho Client: Beginner's Guide 2026](https://www.emqx.com/en/blog/how-to-use-mqtt-in-python) ([Edit](https://github.com/emqx/blog/edit/main/en/202605/how-to-use-mqtt-in-python.md))
@@ -506,7 +507,6 @@ Learn MQTT protocol from beginner to advanced, including tutorials, clients, pro
 - [MQTT Retained Messages: Beginner's Guide with Example](https://www.emqx.com/en/blog/mqtt5-features-retain-message) ([Edit](https://github.com/emqx/blog/edit/main/en/202406/mqtt5-features-retain-message.md))
 - [MQTT Testing: Basics, Best Practices & Quick Start](https://www.emqx.com/en/blog/mqtt-testing) ([Edit](https://github.com/emqx/blog/edit/main/en/202406/mqtt-testing.md))
 - [How to Process JSON, Hex, and Binary Data in MQTT](https://www.emqx.com/en/blog/how-to-process-json-hex-and-binary-data-in-mqtt) ([Edit](https://github.com/emqx/blog/edit/main/en/202405/how-to-process-json-hex-and-binary-data-in-mqtt.md))
-- [Using MQTT on ESP8266: A Quick Start Guide](https://www.emqx.com/en/blog/esp8266-connects-to-the-public-mqtt-broker) ([Edit](https://github.com/emqx/blog/edit/main/en/202405/esp8266-connects-to-the-public-mqtt-broker.md))
 - [Mastering MQTT Analysis with Wireshark: A Beginner's Guide](https://www.emqx.com/en/blog/mastering-mqtt-analysis-with-wireshark) ([Edit](https://github.com/emqx/blog/edit/main/en/202405/mastering-mqtt-analysis-with-wireshark.md))
 - [How to Use MQTT in the Flutter Project](https://www.emqx.com/en/blog/using-mqtt-in-flutter) ([Edit](https://github.com/emqx/blog/edit/main/en/202405/using-mqtt-in-flutter.md))
 - [MQTT vs CoAP: Comparing Protocols for IoT Connectivity](https://www.emqx.com/en/blog/mqtt-vs-coap) ([Edit](https://github.com/emqx/blog/edit/main/en/202404/mqtt-vs-coap.md))
@@ -785,6 +785,7 @@ Industrial IoT solutions with Unified Namespace and Sparkplug.
 
 - [Unified Namespace Reinvents Validation and Change Control for Compliance Reporting](https://www.emqx.com/en/blog/unified-namespace-compliance-reporting) ([Edit](https://github.com/emqx/blog/edit/main/en/202606/unified-namespace-compliance-reporting.md))
 - [Maximizing Lifespan, Minimizing Loss: How a Unified Namespace Powers Predictive Maintenance for a Magnet Manufacturer](https://www.emqx.com/en/blog/unified-namespace-predictive-maintenance) ([Edit](https://github.com/emqx/blog/edit/main/en/202606/unified-namespace-predictive-maintenance.md))
+- [BACnet vs Modbus: Technical Differences & Selection Guide](https://www.emqx.com/en/blog/bacnet-vs-modbus) ([Edit](https://github.com/emqx/blog/edit/main/en/202605/bacnet-vs-modbus.md))
 - [Why Your UNS Architecture Requires Native MQTT Governance and How EMQX Enforces It](https://www.emqx.com/en/blog/native-mqtt-governance-for-uns) ([Edit](https://github.com/emqx/blog/edit/main/en/202605/native-mqtt-governance-for-uns.md))
 - [Industrial Edge AI in Action: From Feature Engineering to Real-Time Inference](https://www.emqx.com/en/blog/industrial-edge-ai-in-action) ([Edit](https://github.com/emqx/blog/edit/main/en/202603/industrial-edge-ai-in-action.md))
 - [The Economics of the Intelligent AI Edge: Cost Savings in Cloud Ingress](https://www.emqx.com/en/blog/the-economics-of-the-intelligent-ai-edge) ([Edit](https://github.com/emqx/blog/edit/main/en/202603/the-economics-of-the-intelligent-ai-edge.md))
@@ -800,7 +801,6 @@ Industrial IoT solutions with Unified Namespace and Sparkplug.
 - [Industrial IoT Systems: Benefits, Essential Capabilities, and Best Practices](https://www.emqx.com/en/blog/industrial-iot-systems) ([Edit](https://github.com/emqx/blog/edit/main/en/202407/industrial-iot-systems.md))
 - [Comparing NeuronEX and Kepware: Choosing the Right Industrial IoT Solutions](https://www.emqx.com/en/blog/comparing-neuronex-and-kepware) ([Edit](https://github.com/emqx/blog/edit/main/en/202406/comparing-neuronex-and-kepware.md))
 - [Breaking Down Industrial Gateway Solutions: NeuronEX vs. Apache PLC4X, Kepware, and Monkot Server](https://www.emqx.com/en/blog/breaking-down-industrial-gateway-solutions) ([Edit](https://github.com/emqx/blog/edit/main/en/202405/breaking-down-industrial-gateway-solutions.md))
-- [BACnet vs Modbus: A Comprehensive Comparison](https://www.emqx.com/en/blog/bacnet-vs-modbus) ([Edit](https://github.com/emqx/blog/edit/main/en/202405/bacnet-vs-modbus.md))
 - [Unified Namespace (UNS): Architecture, Benefits & Solution](https://www.emqx.com/en/blog/unified-namespace-next-generation-data-fabric-for-iiot) ([Edit](https://github.com/emqx/blog/edit/main/en/202404/unified-namespace-next-generation-data-fabric-for-iiot.md))
 - [OPC UA vs. OPC DA: Differences and Which to Choose](https://www.emqx.com/en/blog/opc-ua-vs-opc-da) ([Edit](https://github.com/emqx/blog/edit/main/en/202404/opc-ua-vs-opc-da.md))
 - [MQTT Sparkplug in Action: A Step-by-Step Tutorial](https://www.emqx.com/en/blog/mqtt-sparkplug-in-action-a-step-by-step-tutorial) ([Edit](https://github.com/emqx/blog/edit/main/en/202402/mqtt-sparkplug-in-action-a-step-by-step-tutorial.md))
