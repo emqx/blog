@@ -679,6 +679,7 @@ Integrate MQTT with databases, message queues, cloud services and more.
 ## [Use Cases](https://www.emqx.com/zh/blog/category/use-cases)
 Real-world IoT solutions and industry applications powered by EMQ.
 
+- [基于 EMQX 实现偏远矿区重型设备车队的实时监控](https://www.emqx.com/zh/blog/emqx-real-time-monitoring-heavy-equipment-fleet-remote-mining) ([Edit](https://github.com/emqx/blog/edit/main/zh/202606/emqx-real-time-monitoring-heavy-equipment-fleet-remote-mining.md))
 - [社交新势力 Jagat 携手 EMQ 开启全球化新篇章](https://www.emqx.com/zh/blog/jagat-migrates-to-oci-with-emqx) ([Edit](https://github.com/emqx/blog/edit/main/zh/202606/jagat-migrates-to-oci-with-emqx.md))
 - [以可靠的 MQTT 设备通信，驱动全球数字标牌网络](https://www.emqx.com/zh/blog/reliable-mqtt-device-communication-digital-signage-networks) ([Edit](https://github.com/emqx/blog/edit/main/zh/202606/reliable-mqtt-device-communication-digital-signage-networks.md))
 - [面向临床环境海量互联医疗设备的企业级 MQTT 基础设施](https://www.emqx.com/zh/blog/mqtt-medical-device-fleets) ([Edit](https://github.com/emqx/blog/edit/main/zh/202606/mqtt-medical-device-fleets.md))
