@@ -7,6 +7,7 @@
 ## [Product](https://www.emqx.com/en/blog/category/product)
 EMQ products including EMQX, EMQX Cloud, Neuron, NanoMQ, MQTTX and more.
 
+- [Getting Started with MQTT on Zephyr RTOS: From TCP Quickstart to mTLS with EMQX](https://www.emqx.com/en/blog/getting-started-with-mqtt-on-zephyr-rtos) ([Edit](https://github.com/emqx/blog/edit/main/en/202606/getting-started-with-mqtt-on-zephyr-rtos.md))
 - [Comparing EMQX MQTT Streams and NATS JetStream for Durable Device Telemetry](https://www.emqx.com/en/blog/comparing-emqx-mqtt-streams-and-nats-jetstream) ([Edit](https://github.com/emqx/blog/edit/main/en/202606/comparing-emqx-mqtt-streams-and-nats-jetstream.md))
 - [EMQX Neuron 3.9.0 Released: Migration Tool, Microsoft Fabric Integration, and OPC UA Part 9 Alarms](https://www.emqx.com/en/blog/emqx-neuron-v-3-9-0-release-notes) ([Edit](https://github.com/emqx/blog/edit/main/en/202605/emqx-neuron-v-3-9-0-release-notes.md))
 - [Driver Configuration Migration: A Smooth Path from Kepware and Litmus Edge to EMQX Neuron](https://www.emqx.com/en/blog/driver-configuration-migration) ([Edit](https://github.com/emqx/blog/edit/main/en/202605/driver-configuration-migration.md))
