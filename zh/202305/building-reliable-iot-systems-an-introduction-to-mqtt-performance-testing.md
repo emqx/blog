@@ -64,4 +64,4 @@
 
 EMQ 推出了 [MQTT 开放基准测试规范](https://github.com/emqx/mqttbs)，为 MQTT 基准测试提供了一种有效的方法。它分析了性能评估的关键指标，并提供了基准测试的实际用例。开发人员可以获得不同 MQTT Broker 之间客观的比较参考，从而做出明智的选择。
 
-阅读我们的博客了解更多信息：[MQTT 开放基准测试规范：全面评估你的 MQTT Broker 性能](https://www.emqx.com/zh/blog/open-mqtt-benchmark-suite-the-ultimate-guide-to-mqtt-performance-testing) 
+阅读我们的博客了解更多信息：[MQTT 开放基准测试规范：全面评估你的 MQTT Broker 性能](https://www.emqx.com/zh/blog/open-mqtt-benchmark-suite-the-ultimate-guide-to-mqtt-performance-testing)
