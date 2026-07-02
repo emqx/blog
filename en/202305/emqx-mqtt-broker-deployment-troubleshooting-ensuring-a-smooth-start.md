@@ -301,7 +301,7 @@ To mitigate this issue, deploying [EMQX in Kubernetes](https://docs.emqx.com/en/
 
 ![EMQX in Kubernetes](https://assets.emqx.com/images/110f2bd760354c89a068232a2586887d.png)
 
-To demonstrate the deployment of an EMQX cluster using AWS Cloud EKS, the following code block shows the relevant configurations for EMQX custom resources. You can choose the appropriate APIVersion based on the EMQX version you want to deploy. Please consult the EMQX and [EMQX Operator](https://www.emqx.com/en/emqx-kubernetes-operator) compatibility list for specific compatibility information.
+To demonstrate the deployment of an EMQX cluster using AWS Cloud EKS, the following code block shows the relevant configurations for EMQX custom resources. You can choose the appropriate APIVersion based on the EMQX version you want to deploy. Please consult the EMQX and [EMQX Operator](https://www.emqx.com/en/solutions/mqtt-on-kubernetes) compatibility list for specific compatibility information.
 
 ```
 apiVersion: apps.emqx.io/v1beta4

@@ -84,7 +84,7 @@ Compared to other tools, the advantage of emqtt_bench is that it is easy to inst
 
 ### XMeter
 
-emqtt_bench is suitable for rapid performance verification in the development phase. When it comes to large-scale scenarios or formal testing, we recommend another more professional performance and load test tool - [XMeter](https://www.emqx.com/en/products/xmeter).
+emqtt_bench is suitable for rapid performance verification in the development phase. When it comes to large-scale scenarios or formal testing, we recommend another more professional performance and load test tool - XMeter.
 
 XMeter builds upon the foundation of JMeter, enhancing its scalability and expanding its capabilities. This enables XMeter to handle high volumes of data and perform high-frequency testing. It provides comprehensive and real-time test reports during the test, and the reports show the testers real-time MQTT metrics data such as throughput, response time, success rate and etc. And its built-in monitoring system is used to collect the resource usage of the MQTT broker server. 
 
@@ -139,8 +139,6 @@ XMeter offers two versions.
      ![JMeter test script for MQTT test](https://assets.emqx.com/images/7563e56063d748846bbb7adf580802e0.png)
 
      <center>Figure 6 JMeter test script for MQTT test</center>
-
-- [XMeter Cloud](https://xmeter-cloud.emqx.com/). It is ideal for organizations that want to quickly get started with load testing and performance monitoring without worrying about infrastructure setup and maintenance. To get start, you just need to sign up for a free trial on the [website](https://xmeter-cloud.emqx.com/), then refer to [the document](https://docs.emqx.com/en/xmeter-cloud/latest/) to start your first XMeter run.
 
 ## Wrapping up
 

@@ -182,7 +182,7 @@ We will use [MQTTX](https://mqttx.app/) to simulate the access of IoT MQTT devic
 
 Now we have learned how to deploy EMQX Enterprise on GCP. To use EMQX Enterprise in production, we suggest you continue to create an [EMQX cluster](https://docs.emqx.com/en/enterprise/v4.4/advanced/cluster.html) through the [VPC network](https://cloud.google.com/vpc/docs/vpc) for better scalability and availability.
 
-In addition to manual installation, you can also deploy EMQX Enterprise on GCP through [EMQX Kubernetes Operator](https://www.emqx.com/en/emqx-kubernetes-operator). We also highly recommend the fully managed MQTT message cloud service [EMQX Cloud](https://www.emqx.com/en/cloud).
+In addition to manual installation, you can also deploy EMQX Enterprise on GCP through [EMQX Kubernetes Operator](https://www.emqx.com/en/solutions/mqtt-on-kubernetes). We also highly recommend the fully managed MQTT message cloud service [EMQX Cloud](https://www.emqx.com/en/cloud).
 
 In the following blogs, we will introduce how to migrate devices from GCP IoT Core to EMQX Enterprise, and how to seamlessly migrate IoT Core services through the GCP Pub/Sub integration of EMQX Enterprise.
 

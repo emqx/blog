@@ -87,7 +87,7 @@ EMQX ensures secure communication and data integrity in IIoT deployments by usin
 
 ### Introduction to NeuronEX
 
-[NeuronEX](https://www.emqx.com/en/products/neuronex) is an edge computing platform designed to enhance IIoT systems with advanced capabilities such as:
+[NeuronEX](https://www.emqx.com/en/products/emqx-neuron) is an edge computing platform designed to enhance IIoT systems with advanced capabilities such as:
 
 - **Data Aggregation**: Collects and consolidates data from various sources, including sensors, machines, and other edge devices.
 - **Real-time Analytics**: Processes and analyzes data at the edge, providing immediate insights and reducing latency.

@@ -20,7 +20,7 @@ Beckhoff ADSプラグインを使用すると、ユーザーはTwinCAT PLCから
 
 EMQXはブリッジングアーキテクチャのブローカーコンポーネントであり、NeuronEXはTwinCAT PLCからデータを収集し、データをMQTTメッセージとしてブローカーに転送します。NeuronEXからMQTTメッセージを受信した後、EMQXはデータを転送したり、さらなる処理を行ったりします。
 
-EMQXには、SQLベースの[ルールエンジン](https://www.emqx.com/en/solutions/mqtt-data-processing)やデータ統合などの豊富でパワフルな機能セットがあり、リアルタイムでIoTデータを抽出し、フィルタリング、豊富にするためのもので、データ統合を使用してEMQXをデータベースなどの外部データシステムに接続することができます。
+EMQXには、SQLベースの[ルールエンジン](https://www.emqx.com/en/features/data-processing)やデータ統合などの豊富でパワフルな機能セットがあり、リアルタイムでIoTデータを抽出し、フィルタリング、豊富にするためのもので、データ統合を使用してEMQXをデータベースなどの外部データシステムに接続することができます。
 
 ## NeuronEXを使用したTwinCATからMQTTへのブリッジング
 

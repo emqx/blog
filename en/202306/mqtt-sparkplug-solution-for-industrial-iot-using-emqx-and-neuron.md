@@ -22,7 +22,7 @@ In this article, we will use [EMQX](https://github.com/emqx/emqx), an open-sourc
 
 [Neuron](https://github.com/emqx/neuron) is used to connect edge devices to the Sparkplug namespace on the EMQX broker. Neuron acts as a gateway, collecting data from local sensors and controllers and publishing it to EMQX using the Sparkplug payload format. Neuron also subscribes to messages in the Sparkplug namespace and forwards them to local devices as needed.
 
-> Learn more about Neuron: [Neuron: Industrial IoT Connectivity Server](https://www.emqx.com/en/products/neuronex) 
+> Learn more about Neuron: [Neuron: Industrial IoT Connectivity Server](https://www.emqx.com/en/products/emqx-neuron) 
 
 <section class="promotion">
     <div>

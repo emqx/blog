@@ -2,7 +2,7 @@
 
 The Industrial Internet of Things (IIoT) integrates IT and OT, leveraging stream processing and edge computing for real-time data monitoring and analysis. This leads to production optimization, predictive maintenance, reduced downtime, and improved yield rates, facilitating smart manufacturing and cost efficiency.
 
-EMQ’s [NeuronEX](https://www.emqx.com/en/products/neuronex) is a real-time data acquisition software that offers industrial protocol collection, system data integration, edge-side filtering, AI integration, and data forwarding. It enables low-latency data management, with most tasks manageable using simple SQL statements. However, complex processing requires custom plugins, adding to development complexity. This article discusses how DeepSeek’s Large Language Model (LLM) enhances NeuronEX’s capabilities, simplifying complex data processing, reducing costs, and allowing for quick adaptation to business needs.
+EMQ’s [NeuronEX](https://www.emqx.com/en/products/emqx-neuron) is a real-time data acquisition software that offers industrial protocol collection, system data integration, edge-side filtering, AI integration, and data forwarding. It enables low-latency data management, with most tasks manageable using simple SQL statements. However, complex processing requires custom plugins, adding to development complexity. This article discusses how DeepSeek’s Large Language Model (LLM) enhances NeuronEX’s capabilities, simplifying complex data processing, reducing costs, and allowing for quick adaptation to business needs.
 
 ## NeuronEX Streaming Data Processing: Simple SQL for Common Needs
 

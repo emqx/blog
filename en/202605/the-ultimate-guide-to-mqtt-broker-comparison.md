@@ -256,11 +256,11 @@ Starting from v5.9.0, EMQX has unified all features from the previous Open Sourc
 
 Its key features include: 
 
-- [Powerful Rule Engine & Data Integration](https://www.emqx.com/en/solutions/mqtt-data-integration)
+- [Powerful Rule Engine & Data Integration](https://www.emqx.com/en/features/data-processing)
 - [Flow Designer](https://docs.emqx.com/en/emqx/latest/flow-designer/introduction.html)
 - [Smart Data Hub](https://docs.emqx.com/en/cloud/latest/data_hub/smart_data_hub.html)
-- [AI Processing & Integration](https://www.emqx.com/en/solutions/artificial-intelligence)
-- [Robust Security](https://www.emqx.com/en/solutions/mqtt-security)
+- [AI Processing & Integration](https://www.emqx.com/en/solutions/realtime-ai)
+- [Robust Security](https://www.emqx.com/en/security-and-trust-center)
 - [Advanced Observability & Management](https://docs.emqx.com/en/emqx/latest/observability/overview.html)
 
 Product page: [https://www.emqx.com/en/products/emqx](https://www.emqx.com/en/products/emqx)

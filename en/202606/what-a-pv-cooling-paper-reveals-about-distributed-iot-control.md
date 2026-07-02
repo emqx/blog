@@ -109,7 +109,7 @@ None of this is MQTT-specific. The paper describes its communication layer as "W
 
 The paper's four-panel installation fits in a lab. A real deployment spans dozens to hundreds of branches, typically organized into zones with their own fog controllers. The paper's discussion section addresses this directly: "MQTT communication overhead scales approximately linearly with the number of clients and the publish/subscribe model avoids point-to-point connections," and the likely bottleneck sits at the fog layer rather than the broker.
 
-At that scale, the broker runs as a cluster rather than a single process, and the paper's fog-layer decision logic has a natural home inside it. [EMQX](https://www.emqx.com/) handles the broker concerns (topic hierarchy, ACLs, shared subscriptions) and evaluates the pump decisions in its rule engine, which collapses the separate fog-layer tier the paper needed in its lab setup.
+At that scale, the broker runs as a cluster rather than a single process, and the paper's fog-layer decision logic has a natural home inside it. [EMQX](https://www.emqx.com/en) handles the broker concerns (topic hierarchy, ACLs, shared subscriptions) and evaluates the pump decisions in its rule engine, which collapses the separate fog-layer tier the paper needed in its lab setup.
 
 ![ebf4185f920c566d36814e7b282fcf31.png](https://assets.emqx.com/images/8f1b70d981bac4b8b4fa601d93d2cdd6.png)
 

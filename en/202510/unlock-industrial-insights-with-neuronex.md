@@ -2,7 +2,7 @@
 
 In the rapidly evolving wave of the Industrial Internet of Things (IIoT), massive streams of device data converge like rivers. The challenge has always been how to harness this data and transform it into a powerful engine for intelligent decision-making. Previous versions of NeuronEX has solved the complex issue of real-time collection of massive, heterogeneous data and edge stream processing, building a robust pipeline for your data river.
 
-[NeuronEX](https://www.emqx.com/en/products/neuronex) 3.6.0 introduced the brand-new "Data Insights" feature, providing users with the capabilities to unlock full potential of industrial data. Through its built-in time-series database, AI-powered data analysis capabilities, and highly customizable visualization dashboards, the new "Data Insights" feature transforms raw industrial data into deep insights that drive decisions, truly closing the loop from data to value.
+[NeuronEX](https://www.emqx.com/en/products/emqx-neuron) 3.6.0 introduced the brand-new "Data Insights" feature, providing users with the capabilities to unlock full potential of industrial data. Through its built-in time-series database, AI-powered data analysis capabilities, and highly customizable visualization dashboards, the new "Data Insights" feature transforms raw industrial data into deep insights that drive decisions, truly closing the loop from data to value.
 
 ## **Overview of NeuronEX Data Insights**
 
@@ -119,7 +119,7 @@ To configure a model, navigate to **Administration -> System Configuration -> AI
 
 ## **Conclusion**
 
-With the solid foundation of a built-in time-series database, an intuitive and efficient data analysis interface, and the revolutionary AI Data Analysis Assistant, [NeuronEX](https://www.emqx.com/en/products/neuronex) breaks down the traditional barriers to industrial data querying and analysis. Users no longer need to be SQL experts; they can easily uncover trends, correlations, and anomalies in time-series data using natural language, bringing dormant data to life to truly serve production optimization, predictive maintenance, and intelligent decision-making.
+With the solid foundation of a built-in time-series database, an intuitive and efficient data analysis interface, and the revolutionary AI Data Analysis Assistant, [NeuronEX](https://www.emqx.com/en/products/emqx-neuron) breaks down the traditional barriers to industrial data querying and analysis. Users no longer need to be SQL experts; they can easily uncover trends, correlations, and anomalies in time-series data using natural language, bringing dormant data to life to truly serve production optimization, predictive maintenance, and intelligent decision-making.
 
 
 

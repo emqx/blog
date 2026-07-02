@@ -6,7 +6,7 @@ EMQX Operator 使 EMQX 的部署、调优和运维变成一种低成本、标准
 
 ![EMQX Operator 集群](https://assets.emqx.com/images/61cf8997f1d54aff1cb0d012fda4e34b.png)
 
-本文章将以 [EMQX 企业版](https://www.emqx.com/zh/products/emqx)为例，详细讲解如何使用 [EMQX Operator](https://www.emqx.com/zh/emqx-kubernetes-operator) 在华为云 CCE 公有云平台上创建部署 MQTT 服务集群，并实现自动化管理与监控。
+本文章将以 [EMQX 企业版](https://www.emqx.com/zh/products/emqx)为例，详细讲解如何使用 [EMQX Operator](https://www.emqx.com/zh/solutions/mqtt-on-kubernetes) 在华为云 CCE 公有云平台上创建部署 MQTT 服务集群，并实现自动化管理与监控。
 
 ## 云平台简介：华为云 CCE
 

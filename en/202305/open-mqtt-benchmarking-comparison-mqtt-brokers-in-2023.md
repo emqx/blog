@@ -74,7 +74,7 @@ The test environment is configured on AWS, and all virtual machines are within a
 
 ### Test Tool
 
-[XMeter](https://www.emqx.com/en/products/xmeter) is used in this benchmark test to simulate various business scenarios. XMeter is built on top of JMeter but with enhanced scalability and more capabilities. It provides comprehensive and real-time test reports during the test. Additionally, its built-in monitoring tools are used to track the resource usage of the EMQX/Mosquitto server, enabling a comparison with the information provided by the operating systems.
+XMeter is used in this benchmark test to simulate various business scenarios. XMeter is built on top of JMeter but with enhanced scalability and more capabilities. It provides comprehensive and real-time test reports during the test. Additionally, its built-in monitoring tools are used to track the resource usage of the EMQX/Mosquitto server, enabling a comparison with the information provided by the operating systems.
 
 XMeter provides a private deployment version (on-premise) and a public cloud SaaS version. A private XMeter is deployed in the same VPC as the MQTT broker server in this testing.
 

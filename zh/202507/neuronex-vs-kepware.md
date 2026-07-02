@@ -21,7 +21,7 @@ AI 智能体（Agent）的快速演进催生了全新的经济增长模式，推
 
 ## NeuronEX：为云 + AI 时代而生的工业边缘大脑
 
-[NeuronEX](https://www.emqx.com/zh/products/neuronex) 是一款面向工业领域的设备数据采集和边缘智能分析软件。它不仅仅是一个协议转换器，更是一个集**多源数据融合、边缘流式计算、AI 算法集成与云边协同**于一体的智能数据中枢。
+[NeuronEX](https://www.emqx.com/zh/products/emqx-neuron) 是一款面向工业领域的设备数据采集和边缘智能分析软件。它不仅仅是一个协议转换器，更是一个集**多源数据融合、边缘流式计算、AI 算法集成与云边协同**于一体的智能数据中枢。
 
 ![image.png](https://assets.emqx.com/images/3752b0c5055d15a0186faff8a3f7ec60.png)
 

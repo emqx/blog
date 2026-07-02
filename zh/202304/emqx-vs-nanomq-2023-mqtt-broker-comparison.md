@@ -145,7 +145,7 @@ EMQX 拥有用户友好的 Dashboard 和丰富的 HTTP API，支持通过 StatsD
 | **StatsD**              | ✅            | ❌            | [Integrate with StatsD](https://docs.emqx.com/en/emqx/v5.0/observability/statsd.html#statsd) |
 | **Cross Platform**      | ✅            | ✅            |                                                              |
 | **Docker**              | ✅            | ✅            | [EMQX Docker](https://hub.docker.com/r/emqx/emqx) - [NanoMQ Docker](https://hub.docker.com/r/emqx/nanomq) |
-| **Kubernetes Operator** | ✅            | ❌            | [EMQX Kubernetes Operator](https://www.emqx.com/en/emqx-kubernetes-operator) |
+| **Kubernetes Operator** | ✅            | ❌            | [EMQX Kubernetes Operator](https://www.emqx.com/en/solutions/mqtt-on-kubernetes) |
 | **Terraform**           | ✅            | ❌            |                                                              |
 
 ## 数据集成

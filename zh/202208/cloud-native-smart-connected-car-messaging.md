@@ -59,7 +59,7 @@ Operator 中主要有以下几种对象：
 
 ## EMQX 在车联网场景中的云原生实践
 
-基于 Operator 模式，我们提供了 [EMQX Operator](https://www.emqx.com/zh/emqx-kubernetes-operator) 来帮助客户在 Kubernetes 的环境上快速构建和管理 EMQX 集群。
+基于 Operator 模式，我们提供了 [EMQX Operator](https://www.emqx.com/zh/solutions/mqtt-on-kubernetes) 来帮助客户在 Kubernetes 的环境上快速构建和管理 EMQX 集群。
 
 EMQX Operator 是一个用来帮助用户在 Kubernetes 的环境上快速创建和管理 EMQX 集群的工具。 它可以大大简化部署和管理 EMQX 集群的流程，将其变成一种低成本的、标准化的、可重复性的能力。
 

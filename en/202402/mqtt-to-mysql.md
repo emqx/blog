@@ -182,7 +182,7 @@ In this blog, we delve into the integration of MQTT and MySQL to construct a com
 
 EMQ offers a complete solution that includes data acquisition, edge computing, cloud access, and AI technology for the oil and gas industry. It integrates data from wells, edge gateways, and cloud applications into a unified platform. This enables various scenarios such as production monitoring, maintenance, safety and environmental oversight, and asset tracking, further accelerating the digital transformation and advancement of the industry.
 
-For detailed information, please refer to [MQTT Platform for Oil & Gas Industry](https://www.emqx.com/en/solutions/industries/oil-gas).
+For detailed information, please refer to [MQTT Platform for Oil & Gas Industry](https://www.emqx.com/en/solutions/oil-gas).
 
 
 

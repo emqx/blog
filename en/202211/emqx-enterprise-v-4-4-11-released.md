@@ -41,7 +41,7 @@ The initialization of API keys is a new capability introduced by this release, a
 
 The preset keys can be used to run some tasks at the startup of EMQX: such as managing the cluster resources with scripts, importing authentication data into the built-in database, and initializing configuration.
 
-[EMQX Kubernetes Operator](https://www.emqx.com/en/emqx-kubernetes-operator) also uses this feature to configure and manage the cluster at startup.
+[EMQX Kubernetes Operator](https://www.emqx.com/en/solutions/mqtt-on-kubernetes) also uses this feature to configure and manage the cluster at startup.
 
 ```
 # Specify a bootstrap file

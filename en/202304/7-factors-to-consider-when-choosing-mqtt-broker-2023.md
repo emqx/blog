@@ -183,7 +183,7 @@ Additionally, Cloud-Native technology offers management capabilities such as con
 
 To achieve these goals, it is crucial for the scalability and management functionalities of the MQTT Broker to be tightly integrated with the underlying capabilities of the cloud infrastructure. However, in reality, the level of Cloud-Native implementation varies among different Brokers.
 
->Automate the creation, configuration, and management of your MQTT cluster with [EMQX Kubernetes Operator](https://www.emqx.com/en/emqx-kubernetes-operator).
+>Automate the creation, configuration, and management of your MQTT cluster with [EMQX Kubernetes Operator](https://www.emqx.com/en/solutions/mqtt-on-kubernetes).
 
 ## Support Extensions
 

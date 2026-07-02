@@ -108,7 +108,7 @@ EMQX 和 VerneMQ 都基于分布式架构，具有高性能、低延迟和可扩
 
 EMQX 已有超过 30000 个集群在生产环境中部署，具有经过验证的扩展性和可靠性。最新的 EMQX 5.0 在一个 23 个节点集群的基准测试中成功实现了 1 亿 MQTT 连接。
 
-虽然 VerneMQ 在理论和设计上应该能够很好地工作，但关于其扩展性和性能的基准测试报告很少。您可以使用 MQTT 负载测试工具（例如 [emqtt-bench](https://github.com/emqx/emqtt-bench)、[emqttb](https://github.com/emqx/emqttb) 或 [XMeter 云服务](https://www.emqx.com/zh/products/xmeter)）对其进行基准测试。
+虽然 VerneMQ 在理论和设计上应该能够很好地工作，但关于其扩展性和性能的基准测试报告很少。您可以使用 MQTT 负载测试工具（例如 [emqtt-bench](https://github.com/emqx/emqtt-bench)、[emqttb](https://github.com/emqx/emqttb) 或 XMeter 云服务）对其进行基准测试。
 
 |                                              | **EMQX**                                                     | **VerneMQ**                   | **Notes & Links**                                            |
 | :------------------------------------------- | :----------------------------------------------------------- | :---------------------------- | :----------------------------------------------------------- |

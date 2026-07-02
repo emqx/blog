@@ -186,7 +186,7 @@ EMQ 提供了一个[免费的公共 MQTT 服务器](https://www.emqx.com/zh/mqtt
 - [**实时监控与控制**](https://www.emqx.com/zh/solutions/internet-of-things)：MQTT Broker 是物联网架构的核心，使设备能够发布和订阅主题。这实现了制造业、智能家居和医疗保健等行业中设备的实时监控与控制。
 - [**工业传感器网络**](https://www.emqx.com/zh/blog/data-infrastructure-for-smart-factory)：在工业环境中，MQTT Broker 在收集和传播传感器数据方面发挥着关键作用，支持预测性维护和流程优化等应用。
 - [**交通中的遥测**](https://www.emqx.com/zh/blog/revolutionizing-tsp-platforms)：MQTT Broker 实现了连接车辆之间的通信，支持车辆跟踪、性能监测和交通管理等应用中的遥测数据交换。
-- [**能源管理**](https://www.emqx.com/zh/solutions/industries/energy-utilities)：MQTT Broker 协调智能电表、配电设备和能源管理系统之间的通信，提高能源系统的效率、可靠性和响应能力。
+- [**能源管理**](https://www.emqx.com/zh/solutions/smart-energy)：MQTT Broker 协调智能电表、配电设备和能源管理系统之间的通信，提高能源系统的效率、可靠性和响应能力。
 - [**物流与仓储**](https://www.emqx.com/zh/blog/how-emqx-revolutionizes-logistics-fleet-management)：MQTT Broker 支持供应链中的实时跟踪和可见性，使设备能够发布和订阅位置信息和状态更新，从而提高整体供应链效率。
 
 ## EMQX：全球最具扩展性的 MQTT Broker
@@ -199,11 +199,11 @@ EMQX 是全球扩展能力最强的 MQTT 消息服务器，支持无主集群架
 
 核心功能包括：
 
-- **[强大的规则引擎与数据集成](https://www.emqx.com/zh/solutions/mqtt-data-integration)**
+- **[强大的规则引擎与数据集成](https://www.emqx.com/zh/features/data-processing)**
 - **[可视化流程设计器（Flow Designer）](https://docs.emqx.com/zh/emqx/latest/flow-designer/introduction.html)**
 - **[智能数据枢纽（Smart Data Hub）](https://docs.emqx.com/zh/cloud/latest/data_hub/smart_data_hub.html)**
-- **[AI 数据处理与集成能力](https://www.emqx.com/zh/solutions/artificial-intelligence)**
-- **[完善的安全机制](https://www.emqx.com/zh/solutions/mqtt-security)**
+- **[AI 数据处理与集成能力](https://www.emqx.com/zh/solutions/realtime-ai)**
+- **[完善的安全机制](https://www.emqx.com/zh/security-and-trust-center)**
 - **[高级可观测性与运维管理能力](https://docs.emqx.com/zh/emqx/latest/observability/overview.html)**
 
 产品页面：[https://www.emqx.com/zh/products/emqx](https://www.emqx.com/zh/products/emqx)

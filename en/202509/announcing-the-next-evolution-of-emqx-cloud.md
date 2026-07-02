@@ -24,7 +24,7 @@ This marks a turning point for EMQX Cloud: transforming it from a single [MQTT b
 - Storage and querying
 - Real-time analytics
 
-You can now [**join the waiting list**](https://www.emqx.com/en/lp/emqx-tables) to gain early access to EMQX Tables Preview.
+You can now [**join the waiting list**](https://www.emqx.com/en/cloud/emqx-tables) to gain early access to EMQX Tables Preview.
 
 ## **A Reimagined User Experience: The All-New EMQX Cloud Console**
 
@@ -45,7 +45,7 @@ This release represents more than feature updates. It's the beginning of EMQX Cl
 
 - **Current Users**: Your existing deployments continue without interruption. Explore Dedicated Flex for new deployments to leverage enhanced flexibility and cost savings.
 - **New Users**: Start with Dedicated Flex to experience the most flexible and cost-effective MQTT infrastructure available.
-- **EMQX Tables Preview**: [Join the waiting list](https://www.emqx.com/en/lp/emqx-tables) to be notified when preview access becomes available in October.
+- **EMQX Tables Preview**: [Join the waiting list](https://www.emqx.com/en/cloud/emqx-tables) to be notified when preview access becomes available in October.
 
 Visit [EMQX Cloud](https://accounts.emqx.com/signin?continue=https://cloud-intl.emqx.com/console/) to explore the new console and create your first Dedicated Flex deployment today.
 

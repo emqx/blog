@@ -213,7 +213,7 @@ In addition, EMQX offers [serverless](https://www.emqx.com/en/cloud/serverless-m
 |                         | **EMQX**                                      | **Mosquitto** | **Notes and Links**                                          |
 | :---------------------- | :-------------------------------------------- | :------------ | :----------------------------------------------------------- |
 | **Docker**              | ✅                                             | ✅             | [EMQX Docker](https://hub.docker.com/r/emqx/emqx)            |
-| **Kubernetes Operator** | ✅                                             | ❌             | [EMQX Kubernetes Operator](https://www.emqx.com/en/emqx-kubernetes-operator) |
+| **Kubernetes Operator** | ✅                                             | ❌             | [EMQX Kubernetes Operator](https://www.emqx.com/en/solutions/mqtt-on-kubernetes) |
 | **Cloud Service**       | - Serverless<br>- Hosting/Dedicated<br>- BYOC | Hosting       |                                                              |
 
 EMQX Kubernetes Operator: [https://github.com/emqx/emqx-operator](https://github.com/emqx/emqx-operator) 

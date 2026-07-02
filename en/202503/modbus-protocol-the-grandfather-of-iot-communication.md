@@ -170,7 +170,7 @@ Learn more:
 
 With the growth of the Industrial Internet of Things ([IIoT](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges)), there are many opportunities for the integration of Modbus protocol with modern IoT devices for automation, control, and data analytics. With IIoT, Modbus devices can now be part of a much larger, interconnected system, where data from these devices can be collected, analyzed, and utilized to optimize operations, improve safety, and reduce costs.
 
-[NeuronEX](https://www.emqx.com/en/products/neuronex), an industrial edge data hub software, supports multiple Modbus Protocol variants—Modbus TCP, RTU, UDP, and RTU over TCP—connecting OT devices to IIoT systems seamlessly. NeuronEX can communicate with a wide range of industrial devices using different Modbus variants and protocols, enabling data acquisition, control, and interoperability with other components of the solution.
+[NeuronEX](https://www.emqx.com/en/products/emqx-neuron), an industrial edge data hub software, supports multiple Modbus Protocol variants—Modbus TCP, RTU, UDP, and RTU over TCP—connecting OT devices to IIoT systems seamlessly. NeuronEX can communicate with a wide range of industrial devices using different Modbus variants and protocols, enabling data acquisition, control, and interoperability with other components of the solution.
 
 Here's a description of each Modbus driver:
 

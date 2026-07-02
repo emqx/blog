@@ -24,7 +24,7 @@ Siemens PLCs connect to industrial networks to gather real-time data from field 
 
 ## **NeuronEX: A Powerful Data Hub for Siemens PLC Connection**
 
-[NeuronEX](https://www.emqx.com/en/products/neuronex) is industrial software designed for device data collection, edge analysis, and IIoT platform integration. It supports industrial protocol data collection, system integration, edge data filtering, AI algorithm deployment, and low-latency data management. NeuronEX helps users gain insights, improve efficiency, and drive sustainability in industrial operations.
+[NeuronEX](https://www.emqx.com/en/products/emqx-neuron) is industrial software designed for device data collection, edge analysis, and IIoT platform integration. It supports industrial protocol data collection, system integration, edge data filtering, AI algorithm deployment, and low-latency data management. NeuronEX helps users gain insights, improve efficiency, and drive sustainability in industrial operations.
 
 With built-in modules for protocols like Siemens, [Modbus](https://www.emqx.com/en/blog/modbus-protocol-the-grandfather-of-iot-communication), [OPC UA](https://www.emqx.com/en/blog/opc-ua-protocol), Ethernet/IP, and [BACnet](https://www.emqx.com/en/blog/bacnet-protocol-basic-concepts-structure-obejct-model-explained), NeuronEX enables real-time data access from PLCs, CNCs, robots, SCADA systems, and smart meters. It offers robust support for Siemens PLCs through a variety of dedicated plug-ins:
 

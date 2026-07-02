@@ -79,7 +79,7 @@ EMQX 在水务集团生产网与办公网之间通过集群桥接方式，穿越
 
 ### NeuronEX
 
-[NeuronEX](https://www.emqx.com/zh/products/neuronex) 是一款用于工业物联网连接和边缘计算的边缘服务，通过标准协议或专用协议与众多不同类型的工业设备进行通信，实现将多个设备连接至物流平台。其提供了以下特性：
+[NeuronEX](https://www.emqx.com/zh/products/emqx-neuron) 是一款用于工业物联网连接和边缘计算的边缘服务，通过标准协议或专用协议与众多不同类型的工业设备进行通信，实现将多个设备连接至物流平台。其提供了以下特性：
 
 - 多样的连接性：NeuronEX 提供多个可插拔模块，如 [Modbus](https://www.emqx.com/zh/blog/modbus-protocol-the-grandfather-of-iot-communication)、OPCUA、Ethernet/IP、BACnet、Siemens、Mitsubishi 等，有助于访问各类物流资产，确保数据连接。
 - 灵活部署：NeuronEX 具有极低的内存占用，在 x86、ARM、RISC-V 等低配置架构设备上运行表现出色。此外，它还支持类似 Docker 的容器化部署，能够与 K8s 环境中的其他容器共同运行。

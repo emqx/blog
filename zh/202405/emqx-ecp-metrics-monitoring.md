@@ -8,7 +8,7 @@
 
 ## 指标监控
 
-指标监控是确保工业互联数据平台稳定运行的关键环节。ECP 使用 Prometheus 及其 Pushgateway 组件，对[工业边缘网关软件 NeuronEX](https://www.emqx.com/zh/products/neuronex) 进行细致的指标数据收集。NeuronEX 是 EMQ 旗下部署在边缘端，专注在边端提供多源数据接入与集成、以及智能边缘流式计算，是 ECP 边缘侧的核心组件。
+指标监控是确保工业互联数据平台稳定运行的关键环节。ECP 使用 Prometheus 及其 Pushgateway 组件，对[工业边缘网关软件 NeuronEX](https://www.emqx.com/zh/products/emqx-neuron) 进行细致的指标数据收集。NeuronEX 是 EMQ 旗下部署在边缘端，专注在边端提供多源数据接入与集成、以及智能边缘流式计算，是 ECP 边缘侧的核心组件。
 
 当 ECP 对 NeuronEX 进行纳管或托管时，系统会自动下发所需的度量指标、设定指标数据的更新频率，以及提供 Pushgateway 的连接信息。随后，NeuronEX 会根据设定的时间间隔，将指标数据定时推送至 Pushgateway，最终由 Pushgateway 将这些数据推送至 Prometheus 服务器，完成整个数据收集流程。
 

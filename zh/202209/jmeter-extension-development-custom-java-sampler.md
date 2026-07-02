@@ -173,12 +173,3 @@ public Arguments getDefaultParameters() {
 ![Java 请求](https://assets.emqx.com/images/519e02198bac90615bb4af4d32cf7b3c.png)
 
 至此，我们完成了通过 JMeter 提供的扩展机制来支持新协议的测试。可以看到 JMeter 对新协议的定制扩展还是比较简单的。不过通过 Java Sampler 方式扩展的协议在界面友好性上与 JMeter 提供的标准协议相比还是较差，我们将在本系列专题的后续文章中介绍如何使用 JMeter 更强大的扩展方式，敬请期待。
-
-
-<section class="promotion">
-    <div>
-        免费试用 XMeter Cloud
-        <div class="is-size-14 is-text-normal has-text-weight-normal">全托管的 MQTT 负载测试云服务</div>
-    </div>
-    <a href="https://accounts-zh.emqx.com/signup?continue=https%3A%2F%2Fxmeter-cloud.emqx.com%2FcommercialPage.html" class="button is-gradient px-5">开始试用 →</a>
-</section>

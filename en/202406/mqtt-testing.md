@@ -82,7 +82,7 @@ Getting early feedback on code quality can increase the chances of reducing defe
 
 ### For Performance and Load Testing
 
-- [XMeter](https://xmeter-cloud.emqx.com/): A public cloud service built on JMeter, providing easy and fast way for large-scale MQTT load testing.
+- XMeter: A public cloud service built on JMeter, providing easy and fast way for large-scale MQTT load testing.
 - [emqtt_bench](https://github.com/emqx/emqtt-bench): A lightweight MQTT benchmark tool for concurrent connections and message throughput.
 
 ### Utilities and Frameworks for Custom Development

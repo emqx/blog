@@ -1,4 +1,4 @@
-In the fast-paced world of automotive manufacturing, the race is on to build smarter, more efficient factories. We recently spoke with a leading automotive manufacturer who is on the front lines of this transformation, leveraging a [Unified Namespace (UNS)](https://www.emqx.com/en/blog/unified-namespace-next-generation-data-fabric-for-iiot) built on **[EMQX Platform](https://www.emqx.com/en/platform) and [EMQX Neuron](https://www.emqx.com/en/products/neuronex)** to unlock the power of AI and drive production into the next era.
+In the fast-paced world of automotive manufacturing, the race is on to build smarter, more efficient factories. We recently spoke with a leading automotive manufacturer who is on the front lines of this transformation, leveraging a [Unified Namespace (UNS)](https://www.emqx.com/en/blog/unified-namespace-next-generation-data-fabric-for-iiot) built on **[EMQX Platform](https://www.emqx.com/en/platform) and [EMQX Neuron](https://www.emqx.com/en/products/emqx-neuron)** to unlock the power of AI and drive production into the next era.
 
 ## From Disconnected Past to Intelligent Future
 

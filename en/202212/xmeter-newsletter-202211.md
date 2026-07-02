@@ -1,4 +1,4 @@
-The XMeter team continues to focus on the development of XMeter Cloud Professional Edition in November. [XMeter Cloud](https://www.emqx.com/en/products/xmeter) Professional Edition will go live next month, and it will be able to provide more robust support for users who need to test MQTT on a large scale. please stay tuned.
+The XMeter team continues to focus on the development of XMeter Cloud Professional Edition in November. XMeter Cloud Professional Edition will go live next month, and it will be able to provide more robust support for users who need to test MQTT on a large scale. please stay tuned.
 
 ## Simulate more concurrent connections and higher message throughput
 

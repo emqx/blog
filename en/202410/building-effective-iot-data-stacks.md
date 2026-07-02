@@ -47,7 +47,7 @@ EMQ provides an effective edge gateway solution: **NeuronEX**. Its key features 
 - **Data Protocol Translation**: NeuronEX supports hundreds of field buses and can seamlessly translate data protocols, eliminating the need for developers to manage multiple SDKs for data ingestion.
 - **Rule-Based Edge Computing**: By performing data pre-processing at the edge, NeuronEX reduces network traffic and accelerates the overall data processing workflow. It features a user-friendly rule-based interface for setting up processing flows and can integrate with ML inference runtimes on the edge server.
 
-> Learn more about NeuronEX gateway: [NeuronEX: Industrial Edge Data Hub](https://www.emqx.com/en/products/neuronex)
+> Learn more about NeuronEX gateway: [NeuronEX: Industrial Edge Data Hub](https://www.emqx.com/en/products/emqx-neuron)
 
 ## The Message Broker: The Backbone of IoT Communication
 

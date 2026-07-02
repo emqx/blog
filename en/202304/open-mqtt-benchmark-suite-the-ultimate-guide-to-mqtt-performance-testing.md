@@ -42,7 +42,7 @@ To perform benchmarking, NanoMQ is deployed on a single node. The configuration 
 | :------------- | :------------ | :------------------- | :------ | :--------- | :------------------- |
 | single-node    | NanoMQ 0.17.0 | Ubuntu 22.04.1 amd64 | 16vCPUs | 32 GiB     | c5.4xlarge (AWS)     |
 
-[XMeter](https://www.emqx.com/en/products/xmeter) is used as the tool to perform benchmarking. It simulates all clients and messages throughput, analyzing data and rendering metrics reports. The highlighted metrics are:
+XMeter is used as the tool to perform benchmarking. It simulates all clients and messages throughput, analyzing data and rendering metrics reports. The highlighted metrics are:
 
 |        | Actual msg rate | Average pub-to-sub latency (ms) | Max CPU user+system | Avg CPU user+system | Max memory used | Avg memory used |
 | :----- | :-------------- | :------------------------------ | :------------------ | :------------------ | :-------------- | :-------------- |

@@ -96,18 +96,18 @@ Ultimately, the choice between EMQX Open Source and EMQX Enterprise hinges on yo
   - [Powering Cooperative Vehicle-Infrastructure System: Enhancing V2X Connectivity with EMQ](https://www.emqx.com/en/blog/enhancing-v2x-connectivity-with-emq) 
   - [Revolutionizing TSP Platforms: How EMQX Powers Automotive Connectivity](https://www.emqx.com/en/blog/revolutionizing-tsp-platforms) 
 
-- [**Manufacturing**](https://www.emqx.com/en/solutions/industries/manufacturing): EMQX Enterprise combined with NeuronEX empowers your Industry 4.0 transformation with seamless connectivity and real-time data transmission from the factory floor to the cloud. Built on the [Unified Namespace(UNS)](https://www.emqx.com/en/blog/unified-namespace-next-generation-data-fabric-for-iiot) architecture, it integrates IT and OT systems by providing a lightweight and secure messaging hub that allows real-time data from OT systems to be accessed by IT systems for analysis and decision-making. 
+- [**Manufacturing**](https://www.emqx.com/en/solutions/smart-manufacturing): EMQX Enterprise combined with NeuronEX empowers your Industry 4.0 transformation with seamless connectivity and real-time data transmission from the factory floor to the cloud. Built on the [Unified Namespace(UNS)](https://www.emqx.com/en/blog/unified-namespace-next-generation-data-fabric-for-iiot) architecture, it integrates IT and OT systems by providing a lightweight and secure messaging hub that allows real-time data from OT systems to be accessed by IT systems for analysis and decision-making. 
 
   See more use cases: [From Data to Intelligence: One-Stop MQTT Platform for Smart Factory Advancements](https://www.emqx.com/en/blog/data-infrastructure-for-smart-factory) 
 
-- [**Energy & Utilities**](https://www.emqx.com/en/solutions/industries/energy-utilities): EMQX Enterprise provides a unified MQTT platform that connects various sensors, devices, systems, and applications. It can seamlessly integrate with the existing energy management and SCADA systems, enabling real-time data extraction, enriching, and transforming for smart grid management with the SQL-based rule engine.
+- [**Energy & Utilities**](https://www.emqx.com/en/solutions/smart-energy): EMQX Enterprise provides a unified MQTT platform that connects various sensors, devices, systems, and applications. It can seamlessly integrate with the existing energy management and SCADA systems, enabling real-time data extraction, enriching, and transforming for smart grid management with the SQL-based rule engine.
 
   See more use cases: 
 
   - [EMQX Enables Smart Energy Storage with Real-Time Data Collection and Cloud-Edge Collaboration](https://www.emqx.com/en/blog/emqx-enables-smart-energy-storage) 
   - [Smart Water Operation and Management with EMQX MQTT Platform](https://www.emqx.com/en/blog/building-a-smart-water-platform) 
 
-- [**Oil & Gas**](https://www.emqx.com/en/solutions/industries/oil-gas): EMQX Enterprise consolidates data from oil wells, gateways, and cloud applications onto a single platform to eliminate data silos. Advanced features like real-time data exchange and on-the-fly data processing help enhance operational efficiency, minimize downtime, and boost safety through real-time remote monitoring, data-driven analytics, and proactive maintenance.
+- [**Oil & Gas**](https://www.emqx.com/en/solutions/oil-gas): EMQX Enterprise consolidates data from oil wells, gateways, and cloud applications onto a single platform to eliminate data silos. Advanced features like real-time data exchange and on-the-fly data processing help enhance operational efficiency, minimize downtime, and boost safety through real-time remote monitoring, data-driven analytics, and proactive maintenance.
 
   See more use cases: 
 

@@ -20,7 +20,7 @@ Monokot Server, a newcomer in the industrial gateway landscape, distinguishes it
 
 ### What is NeuronEX
 
-[NeuronEX](https://www.emqx.com/en/products/neuronex) is a specialized software for the industrial sector, focused on collecting device data and performing intelligent analysis at the edge. Designed specifically for industrial environments, it excels at collecting industrial protocol data, integrating system data, filtering and analyzing data at the edge, integrating AI algorithms, and connecting to [IIoT platforms](https://www.emqx.com/en/blog/iiot-platform-key-components-and-5-notable-solutions). With a focus on low-latency data access management and intelligent analytics services, NeuronEX enables rapid understanding of business trends, improves operational efficiency, and promotes sustainability in industrial environments.
+[NeuronEX](https://www.emqx.com/en/products/emqx-neuron) is a specialized software for the industrial sector, focused on collecting device data and performing intelligent analysis at the edge. Designed specifically for industrial environments, it excels at collecting industrial protocol data, integrating system data, filtering and analyzing data at the edge, integrating AI algorithms, and connecting to [IIoT platforms](https://www.emqx.com/en/blog/iiot-platform-key-components-and-5-notable-solutions). With a focus on low-latency data access management and intelligent analytics services, NeuronEX enables rapid understanding of business trends, improves operational efficiency, and promotes sustainability in industrial environments.
 
 ### Why NeuronEX Stands out
 

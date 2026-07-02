@@ -1,6 +1,6 @@
 ## はじめに
 
-[MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt)は、パブリッシュ／サブスクライブモデルに基づく軽量[のIoTメッセージング](https://www.emqx.com/en/solutions/reliable-mqtt-messaging)プロトコルです。非常に少ないコードと帯域幅で、ネットワークデバイスにリアルタイムかつ信頼性の高いメッセージングサービスを提供することができます。IoT、モバイルインターネット、スマートハードウェア、[Internet of Vehicles](https://www.emqx.com/en/use-cases/internet-of-vehicles)、電力エネルギーなどの産業で広く利用されている。
+[MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt)は、パブリッシュ／サブスクライブモデルに基づく軽量[のIoTメッセージング](https://www.emqx.com/en/features/connectivity)プロトコルです。非常に少ないコードと帯域幅で、ネットワークデバイスにリアルタイムかつ信頼性の高いメッセージングサービスを提供することができます。IoT、モバイルインターネット、スマートハードウェア、[Internet of Vehicles](https://www.emqx.com/en/solutions)、電力エネルギーなどの産業で広く利用されている。
 
 Node.jsは、イベント駆動型のアーキテクチャとリアルタイムのデータハンドリングにより、IoTで広く利用されています。デバイス、サーバ、APIを簡単に接続することができます。Node.jsとMQTTを組み合わせることで、開発者は、デバイスとリアルタイムで通信し、情報を交換し、複雑なデータ分析を行う、スケーラブルで安全なIoTアプリケーションを構築できます。
 

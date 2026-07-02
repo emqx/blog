@@ -1,4 +1,4 @@
-The [Industrial Internet of Things (IIoT)](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges) is transforming industries by enabling smarter, more efficient operations. Key to this transformation are the platforms that facilitate the integration of industrial equipment with data analytics and cloud services. The choice of right IIoT solution is extremely important. [NeuronEX](https://www.emqx.com/en/products/neuronex) and Kepware are the two most popular solution platforms for IIoT. This blog will compare NeuronEX and Kepware, highlighting their capabilities, strengths, and unique features to help you understand which solution might best meet your industrial needs.
+The [Industrial Internet of Things (IIoT)](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges) is transforming industries by enabling smarter, more efficient operations. Key to this transformation are the platforms that facilitate the integration of industrial equipment with data analytics and cloud services. The choice of right IIoT solution is extremely important. [NeuronEX](https://www.emqx.com/en/products/emqx-neuron) and Kepware are the two most popular solution platforms for IIoT. This blog will compare NeuronEX and Kepware, highlighting their capabilities, strengths, and unique features to help you understand which solution might best meet your industrial needs.
 
 ## Introduction to Kepware
 
@@ -11,7 +11,7 @@ Kepware, developed by PTC, is a robust industrial connectivity platform known fo
 
 ## Introduction to NeuronEX
 
-[NeuronEX](https://www.emqx.com/en/products/neuronex) is an advanced edge computing platform designed for IIoT applications. It excels in data aggregation, real-time analytics, and predictive insights. Here are some of its standout features:
+[NeuronEX](https://www.emqx.com/en/products/emqx-neuron) is an advanced edge computing platform designed for IIoT applications. It excels in data aggregation, real-time analytics, and predictive insights. Here are some of its standout features:
 
 - **Data Aggregation**: NeuronEX efficiently collects and consolidates data from various industrial sources, including sensors, machines, and edge devices.
 - **Real-time Analytics**: With powerful processing capabilities at the edge, NeuronEX provides immediate insights, reducing latency and enabling faster decision-making.

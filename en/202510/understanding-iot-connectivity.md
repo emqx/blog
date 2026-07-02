@@ -24,7 +24,7 @@ Here’s how EMQX helps you build a future-proof IoT solution:
 - **Handle Millions of Connections with Ease:** At its core, EMQX is built for scale. Its distributed architecture allows it to reliably **connect hundreds of millions of IoT devices** to the cloud, making it the go-to choice for enterprise-level deployments that require high performance and high availability.
 - **Ensure End-to-End Security:** Data security is non-negotiable. EMQX secures data in transit with **MQTT over TLS/SSL or QUIC** and provides robust authentication mechanisms, including **JWT, LDAP, and X.509 certificates**, ensuring that only authorized devices and users can access your network.
 
-> Learn more: [MQTT for IoT Device Connectivity](https://www.emqx.com/en/solutions/iot-device-connectivity) 
+> Learn more: [MQTT for IoT Device Connectivity](https://www.emqx.com/en/features/connectivity) 
 
 ## **Getting Started: A Simple Workflow with EMQX**
 

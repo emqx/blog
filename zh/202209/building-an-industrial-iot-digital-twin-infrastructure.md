@@ -56,9 +56,9 @@
 
 <center>EMQ 工业生产数字孪生架构图</center>
 
-1. [边缘端工业协议网关软件 Neuron](https://www.emqx.com/zh/products/neuronex) 用于各类工业设备的接入，支持将数十种工业协议一站式转换为 [MQTT 协议](https://www.emqx.com/zh/mqtt-guide)，实现在工业生产弱网环境下的各类数据实时感知与稳定传输。
+1. [边缘端工业协议网关软件 Neuron](https://www.emqx.com/zh/products/emqx-neuron) 用于各类工业设备的接入，支持将数十种工业协议一站式转换为 [MQTT 协议](https://www.emqx.com/zh/mqtt-guide)，实现在工业生产弱网环境下的各类数据实时感知与稳定传输。
 
-2. [边缘超轻量级 MQTT 消息服务器 NanoMQ](https://www.emqx.com/zh/products/nanomq) 用于数据的汇聚和缓存，可以打通处于不同网络中的设备、不同系统间的数据壁垒，消除信息孤岛。NanoMQ 可以在边缘端实现数据断点续传， 保障业务数据的完整性，保证数字孪生平台算法的高效与精准。
+2. [边缘超轻量级 MQTT 消息服务器 NanoMQ](https://www.emqx.com/zh/products/emqx-edge) 用于数据的汇聚和缓存，可以打通处于不同网络中的设备、不同系统间的数据壁垒，消除信息孤岛。NanoMQ 可以在边缘端实现数据断点续传， 保障业务数据的完整性，保证数字孪生平台算法的高效与精准。
 
 3. 工业生产感知的数据是海量且连续的，如果全部采用批量处理不对其进行分析，难以发掘数据的价值。由于数字孪生对数据量和延迟有很高要求，用传统的批处理方法处理流数据几乎是不可能的，因此流处理在边缘侧变得更加重要。超轻量[物联网边缘数据流式分析引擎 eKuiper](https://ekuiper.org/zh) 可用于流式计算、规则引擎、数据清洗、AI 扩展，为数字孪生平台提供数据清洗、数据预处理、事件逻辑处理等具体的能力。
 

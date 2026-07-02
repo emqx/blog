@@ -4,7 +4,7 @@ We would like to inform you that we will once again migrate the domain of the MQ
 
 ## Why Migrate？
 
-The current MQTTX Web site ([http://mqtt-client.emqx.com](http://mqtt-client.emqx.com/)) was recently migrated from <https://www.emqx.io/online-mqtt-client>. However, inherent critical security vulnerabilities arise due to its sole accessibility through HTTP. Besides, it shares the exact origin as the primary domain, [http://emqx.com](https://www.emqx.com/), posing a risk of cookie sharing. These could all potentially lead to information leaks and other security threats.
+The current MQTTX Web site ([http://mqtt-client.emqx.com](http://mqtt-client.emqx.com/)) was recently migrated from <https://www.emqx.io/online-mqtt-client>. However, inherent critical security vulnerabilities arise due to its sole accessibility through HTTP. Besides, it shares the exact origin as the primary domain, [https://www.emqx.com](https://www.emqx.com/en), posing a risk of cookie sharing. These could all potentially lead to information leaks and other security threats.
 
 Therefore, **we have migrated the site to  [https://mqttx.app/web-client](https://mqttx.app/web-client) ** to further enhance overall security and compliance. This will offer you the following benefits:
 
