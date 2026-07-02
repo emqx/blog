@@ -41,7 +41,7 @@ OCSP（Online Certificate Status Protocol，在线证书状态协议）是另外
 
 预设的密钥可以帮助用户在 EMQX 启动时做一些工作：如运维人员编写运维脚本管理集群状态，开发者导入认证数据到内置数据库中、初始化自定义的配置参数。
 
-[EMQX Kubernetes Operator ](https://www.emqx.com/zh/emqx-kubernetes-operator)也基于此特性来实现集群启动时的配置和管理操作。
+[EMQX Kubernetes Operator ](https://www.emqx.com/zh/solutions/mqtt-on-kubernetes)也基于此特性来实现集群启动时的配置和管理操作。
 
 ```
 # 指定 bootstrap 文件

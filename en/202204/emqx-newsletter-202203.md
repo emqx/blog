@@ -2,7 +2,7 @@ In March, the EMQX team brought to the community the long-expected EMQX v5.0.0-r
 
 [EMQX Cloud](https://www.emqx.com/en/cloud) team released a brand new and revised rule engine module this month. 
 
-EMQX Cloud team also released a new version of the cluster deployment management tool [EMQX Kubernetes Operator](https://www.emqx.com/en/emqx-kubernetes-operator).
+EMQX Cloud team also released a new version of the cluster deployment management tool [EMQX Kubernetes Operator](https://www.emqx.com/en/solutions/mqtt-on-kubernetes).
 
 ## EMQX
 

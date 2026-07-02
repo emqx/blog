@@ -1,10 +1,10 @@
-In this blog, we use [Neuron](https://www.emqx.com/en/products/neuronex) and [EMQX](https://www.emqx.com/en/products/emqx) from EMQ to achieve FINS to MQTT bridging. Neuron can convert the FINS protocol to MQTT, while EMQX acts as an [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison), handling massive connections and data.
+In this blog, we use [Neuron](https://www.emqx.com/en/products/emqx-neuron) and [EMQX](https://www.emqx.com/en/products/emqx) from EMQ to achieve FINS to MQTT bridging. Neuron can convert the FINS protocol to MQTT, while EMQX acts as an [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison), handling massive connections and data.
 
 ## The Architecture of FINS to MQTT Bridging
 
 Neuron is a modern [industrial IoT](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges) connectivity server that can connect various industrial devices that use standard protocols or device-specific protocols, achieving interconnection between industrial IoT platforms and various devices. As a lightweight industrial software, Neuron can run on various IoT edge hardware devices with limited resources. It aims to solve the problem of unified access to data-centric automation devices and provide basic support for intelligent manufacturing.
 
-> Learn more about Neuron: [Neuron: Industrial IoT Connectivity Server](https://www.emqx.com/en/products/neuronex)
+> Learn more about Neuron: [Neuron: Industrial IoT Connectivity Server](https://www.emqx.com/en/products/emqx-neuron)
 
 EMQX is a large-scale and elastic cloud-native distributed IoT MQTT message server. As the most scalable MQTT message server worldwide, EMQX provides efficient and reliable mass connection of IoT devices, capable of high-performance real-time processing of message and event flow data, helping users quickly build critical IoT platforms and applications.
 
@@ -175,7 +175,7 @@ Subscribe to the data group of southbound devices:
 
 #### Step 10: View data in the MQTT Client.
 
-After subscribing, you can use an [MQTT client](https://www.emqx.com/en/blog/mqtt-client-tools) to connect to EMQX and view the reported data. Here we use MQTTX, a powerful cross-platform MQTT client tool, which can be downloaded from the [official website](https://www.emqx.com/en/products/mqttx).
+After subscribing, you can use an [MQTT client](https://www.emqx.com/en/blog/mqtt-client-tools) to connect to EMQX and view the reported data. Here we use MQTTX, a powerful cross-platform MQTT client tool, which can be downloaded from the [official website](https://mqttx.app/).
 
 Once MQTTX is launched, click **+ New Connection** on the main page, fill in the configuration parameters, and click **Connect** in the upper right corner.
 

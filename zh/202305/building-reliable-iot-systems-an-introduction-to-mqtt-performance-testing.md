@@ -65,15 +65,3 @@
 EMQ 推出了 [MQTT 开放基准测试规范](https://github.com/emqx/mqttbs)，为 MQTT 基准测试提供了一种有效的方法。它分析了性能评估的关键指标，并提供了基准测试的实际用例。开发人员可以获得不同 MQTT Broker 之间客观的比较参考，从而做出明智的选择。
 
 阅读我们的博客了解更多信息：[MQTT 开放基准测试规范：全面评估你的 MQTT Broker 性能](https://www.emqx.com/zh/blog/open-mqtt-benchmark-suite-the-ultimate-guide-to-mqtt-performance-testing) 
-
-[XMeter](https://www.emqx.com/zh/products/xmeter) 是 EMQ 的另一款产品，它提供对 MQTT 协议以及其他物联网协议的负载测试服务。XMeter 可以水平扩展，能够模拟百万级 [MQTT 客户端](https://www.emqx.com/zh/blog/mqtt-client-tools)。它以流式方式收集和处理数据，并生成包含主要性能指标的报告。如需了解更多关于全托管 XMeter 云服务的信息，请参考 [XMeter：全托管 MQTT 负载测试服务](https://www.emqx.com/zh/products/xmeter)。
-
-
-
-<section class="promotion">
-    <div>
-        免费试用 XMeter Cloud
-        <div class="is-size-14 is-text-normal has-text-weight-normal">全托管的 MQTT 负载测试云服务</div>
-    </div>
-    <a href="https://accounts-zh.emqx.com/signup?continue=https%3A%2F%2Fxmeter-cloud.emqx.com%2FcommercialPage.html%23%2Fproducts" class="button is-gradient px-5">开始试用 →</a>
-</section>

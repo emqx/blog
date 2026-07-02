@@ -33,7 +33,7 @@
 
 ![EMQ 云边协同的事件异常处理解决方案](https://assets.emqx.com/images/8cbc1d92657d41ef567c11d95beaff02.png)
 
-边缘端[工业协议网关软件 Neuron](https://www.emqx.com/zh/products/neuronex) 实现各类工业设备的接入，可基于轻量级 MQTT 协议传输，实现在工业生产弱网环境下的各类数据实时感知与稳定传输。边缘端[轻量级消息总线 NanoMQ](https://www.emqx.com/zh/products/nanomq) 实用于现数据的汇聚和缓存，打通处于不同网络中设备、不同系统间的数据壁垒，去除信息孤岛。同时，NanoMQ 可以在边缘端实现数据断点续传， 保障业务数据的完整性，防止异常事件数据信息的丢失。
+边缘端[工业协议网关软件 Neuron](https://www.emqx.com/zh/products/emqx-neuron) 实现各类工业设备的接入，可基于轻量级 MQTT 协议传输，实现在工业生产弱网环境下的各类数据实时感知与稳定传输。边缘端[轻量级消息总线 NanoMQ](https://www.emqx.com/zh/products/emqx-edge) 实用于现数据的汇聚和缓存，打通处于不同网络中设备、不同系统间的数据壁垒，去除信息孤岛。同时，NanoMQ 可以在边缘端实现数据断点续传， 保障业务数据的完整性，防止异常事件数据信息的丢失。
 
 随着 5G 网路在工厂或园区内大量建设，基于 5G 的各类智能终端和应用也越来越多，这类终端和应用对数据汇聚和处理实时性都有很高的要求。传统工业总线和工厂「大脑」资源有限，如果所有的事件都到工厂「大脑」进行处理，实时性和可靠性较差。EMQ 提供的超轻量[物联网边缘数据流式分析引擎 eKuiper](https://ekuiper.org/zh) 能够在近设备端部署，高效、独立判断异常事件并通过各类智能终端和应用的联动来完成异常事件的告警、处理和安全隐患消除。
 
@@ -56,7 +56,7 @@
 
 基于 EMQ 云边协同架构， 实现部署在「边缘-工厂-云」的 EMQ 系列产品在云端的统一运维管理配置，轻松实现参数配置、日志查看、实时监控等功能。
 
-另外，通过 EMQ 提供的 [EMQX Kubernetes Operator](https://www.emqx.com/zh/emqx-kubernetes-operator)，用户可以在 Kubernetes 的环境上快速创建和管理 EMQX Enterprise 集群，大大简化部署和管理 EMQX 集群的流程，把部署和管理的工作变成一种低成本的、标注化的、可重复性的能力。
+另外，通过 EMQ 提供的 [EMQX Kubernetes Operator](https://www.emqx.com/zh/solutions/mqtt-on-kubernetes)，用户可以在 Kubernetes 的环境上快速创建和管理 EMQX Enterprise 集群，大大简化部署和管理 EMQX 集群的流程，把部署和管理的工作变成一种低成本的、标注化的、可重复性的能力。
 
 ## 结语
 

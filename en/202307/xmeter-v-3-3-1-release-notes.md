@@ -112,13 +112,3 @@ XMeter 3.3.1 is revolutionizing IoT performance testing, empowering IoT platform
 You can also explore the [Open MQTT Benchmark Suite](https://github.com/emqx/mqttbs) presented by EMQ to evaluate the scalability and performance of [MQTT brokers](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison). It is fully open to the community with typical and practical use cases, primary metrics for measuring broker performance, and a tool to simulate loads and collect benchmark results.
 
 Join the growing community of IoT platform providers who are harnessing XMeter to elevate the performance of their applications and drive unparalleled user experiences.
-
-
-
-<section class="promotion">
-    <div>
-        Try XMeter Cloud for Free
-        <div class="is-size-14 is-text-normal has-text-weight-normal">A fully managed MQTT load testing service</div>
-    </div>
-    <a href="https://accounts.emqx.com/signup?continue=https%3A%2F%2Fxmeter-cloud.emqx.com%2FcommercialPage.html%23%2Fproducts" class="button is-gradient px-5">Get Started →</a>
-</section>

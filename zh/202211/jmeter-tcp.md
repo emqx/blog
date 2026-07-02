@@ -247,13 +247,3 @@ public class TCPClientImpl extends AbstractTCPClient {
 ## 总结
 
 本文是 JMeter 扩展开发的一次应用，在对 JMeter 内置的 TCP 取样器本身有所了解的情况下，对它的功能进行了拓展。
-
-
-
-<section class="promotion">
-    <div>
-        免费试用 XMeter Cloud
-        <div class="is-size-14 is-text-normal has-text-weight-normal">全托管的 MQTT 负载测试云服务</div>
-    </div>
-    <a href="https://accounts-zh.emqx.com/signup?continue=https%3A%2F%2Fxmeter-cloud.emqx.com%2FcommercialPage.html" class="button is-gradient px-5">开始试用 →</a>
-</section>

@@ -389,7 +389,7 @@ EMQ offers a full suite of solutions including data collection, edge computing, 
 
 For more information:
 
-- [MQTT Platform for Energy & Utilities Industry](https://www.emqx.com/en/solutions/industries/energy-utilities) 
+- [MQTT Platform for Energy & Utilities Industry](https://www.emqx.com/en/solutions/smart-energy) 
 - [EMQX Enables Smart Energy Storage with Real-Time Data Collection and Cloud-Edge Collaboration](https://www.emqx.com/en/blog/emqx-enables-smart-energy-storage)
 
 <section class="promotion">

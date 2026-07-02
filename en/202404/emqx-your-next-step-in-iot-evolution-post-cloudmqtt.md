@@ -34,7 +34,7 @@ This announcement marks the beginning of our **two-part** blog series. While tod
 
 Stay tuned, and rest assured, your IoT deployments are in capable hands with EMQX. 
 
-For further information and to begin your transition to a more reliable, scalable, and compliant IoT messaging platform, [visit our website](https://www.emqx.com/en) or [contact our support team](https://www.emqx.com/en/support). 
+For further information and to begin your transition to a more reliable, scalable, and compliant IoT messaging platform, [visit our website](https://www.emqx.com/en) or [contact our support team](https://www.emqx.com/en/contact). 
 
 
 

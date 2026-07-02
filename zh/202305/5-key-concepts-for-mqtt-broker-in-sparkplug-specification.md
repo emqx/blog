@@ -8,7 +8,7 @@ Sparkplug 是一种为 SCADA 系统量身定制的[工业物联网](https://www.
 - 提高透明度、建立信任，降低厂商锁定或依赖单一供应商的风险。
 - 让产品和服务对各种用户开放，包括残障人士。
 
-Sparkplug 旨在提供一种标准化的方式，将 [MQTT 用于工业](https://www.emqx.com/zh/use-cases/industrial-iot)应用，并促进不同厂商的设备和系统之间的互操作性。因此，Sparkplug 规范受到了工业物联网社区的广泛认可，并得到了众多厂商和组织的支持。
+Sparkplug 旨在提供一种标准化的方式，将 [MQTT 用于工业](https://www.emqx.com/zh/solutions)应用，并促进不同厂商的设备和系统之间的互操作性。因此，Sparkplug 规范受到了工业物联网社区的广泛认可，并得到了众多厂商和组织的支持。
 
 ## 概念 1 - MQTT 消息传递架构
 

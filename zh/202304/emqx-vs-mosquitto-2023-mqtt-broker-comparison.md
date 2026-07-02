@@ -222,7 +222,7 @@ Mosquitto 支持基于 docker 的容器化部署。EMQX 在此基础上提供了
 |                         | **EMQX**                                      | **Mosquitto** | **Notes and Links**                                          |
 | :---------------------- | :-------------------------------------------- | :------------ | :----------------------------------------------------------- |
 | **Docker**              | ✅                                             | ✅             | [EMQX Docker](https://hub.docker.com/r/emqx/emqx)            |
-| **Kubernetes Operator** | ✅                                             | ❌             | [EMQX Kubernetes Operator](https://www.emqx.com/en/emqx-kubernetes-operator) |
+| **Kubernetes Operator** | ✅                                             | ❌             | [EMQX Kubernetes Operator](https://www.emqx.com/en/solutions/mqtt-on-kubernetes) |
 | **Cloud Service**       | - Serverless<br>- Hosting/Dedicated<br>- BYOC | Hosting       |                                                              |
 
 EMQX Kubernetes Operator: [https://github.com/emqx/emqx-operator](https://github.com/emqx/emqx-operator)

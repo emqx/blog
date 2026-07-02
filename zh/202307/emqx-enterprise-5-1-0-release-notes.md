@@ -22,7 +22,7 @@
 
 <br>
 
-[EMQX Cloud](https://www.emqx.com/zh/cloud) 在今年全新推出的 Severless 版本中已经率先使用了该集群架构为客户提供服务，稳定支撑全球 3000+ 用户使用。为了在 EMQX Enterprise 5.1 版本中更好地实现 EMQX 集群的自动化部署与弹性伸缩能力，自动化管理工具 [EMQX Kubernetes Operator](https://www.emqx.com/zh/emqx-kubernetes-operator) 也针对新架构进行了适配，企业用户可以充分体验 EMQX Enterprise 5.1 在性能、扩展能力、可靠性上的巨大提升带来的收益。
+[EMQX Cloud](https://www.emqx.com/zh/cloud) 在今年全新推出的 Severless 版本中已经率先使用了该集群架构为客户提供服务，稳定支撑全球 3000+ 用户使用。为了在 EMQX Enterprise 5.1 版本中更好地实现 EMQX 集群的自动化部署与弹性伸缩能力，自动化管理工具 [EMQX Kubernetes Operator](https://www.emqx.com/zh/solutions/mqtt-on-kubernetes) 也针对新架构进行了适配，企业用户可以充分体验 EMQX Enterprise 5.1 在性能、扩展能力、可靠性上的巨大提升带来的收益。
 
 关于全新架构的更多内容可查看：
 

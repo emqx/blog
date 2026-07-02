@@ -389,7 +389,7 @@ select count(*) from iot_data.public.renewableenergydata
 
 EMQ 为能源电力行业提供包括数据采集、边缘计算、云接入和 AI 技术在内的完整解决方案，基于统一 MQTT 平台和云边数据智能解决方案，助力构建智能、稳定的电力能源物联网，优化能源使用、提高效率和可持续性、减少碳排放，推进能源行业的革新。
 
-详细解决方案请参见：[智慧能源电力解决方案](https://www.emqx.com/zh/solutions/industries/energy-utilities)
+详细解决方案请参见：[智慧能源电力解决方案](https://www.emqx.com/zh/solutions/smart-energy)
 
 <section class="promotion">
     <div>

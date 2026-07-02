@@ -254,16 +254,6 @@ Dummy Sampler 可以通过 JMeter 插件管理器完成安装。
 
 ![JMeter 察看结果树](https://assets.emqx.com/images/f4f0a4e32fff2eb9165e2fb18f5e398a.png)
 
-
-<section class="promotion">
-    <div>
-        免费试用 XMeter Cloud
-        <div class="is-size-14 is-text-normal has-text-weight-normal">全托管的 MQTT 负载测试云服务</div>
-    </div>
-    <a href="https://accounts-zh.emqx.com/signup?continue=https%3A%2F%2Fxmeter-cloud.emqx.com%2FcommercialPage.html" class="button is-gradient px-5">开始试用 →</a>
-</section>
-
-
 ## 参考文献
 
 [http://www.javacodegeeks.com/2013/06/jmeter-custom-function-implementation.html](https://link.jianshu.com/?t=http://www.javacodegeeks.com/2013/06/jmeter-custom-function-implementation.html)

@@ -23,7 +23,7 @@ MQTT 作为有状态的长连接接入协议，在生产环境下 EMQX 集群运
 
 <center>节点疏散流程</center>
 
-集群负载重平衡与节点疏散能够确保所有节点以良好的负载工作，并大大降低 EMQX 维护工作对在线客户端以及客户业务的影响，详细的使用方式请参阅 [EMQX 文档](https://docs.emqx.com/zh/enterprise/v4.4/advanced/rebalancing.html)，目前这一功能已经被整合至 [EMQX Operator](https://www.emqx.com/zh/emqx-kubernetes-operator) 中以为 EMQX 的 K8s 自动化部署带来更好的使用体验。
+集群负载重平衡与节点疏散能够确保所有节点以良好的负载工作，并大大降低 EMQX 维护工作对在线客户端以及客户业务的影响，详细的使用方式请参阅 [EMQX 文档](https://docs.emqx.com/zh/enterprise/v4.4/advanced/rebalancing.html)，目前这一功能已经被整合至 [EMQX Operator](https://www.emqx.com/zh/solutions/mqtt-on-kubernetes) 中以为 EMQX 的 K8s 自动化部署带来更好的使用体验。
 
 
 ## TDengine 3.0 适配以及子表批量插入

@@ -13,7 +13,7 @@ Download the latest version here: [https://www.emqx.com/en/try?product=MQTTX](ht
 
 In v1.9.0, MQTTX CLI provides an out-of-the-box benchmark tool -- `mqttx bench`, which can help users quickly perform simple performance and pressure testing. After installing or updating MQTTX CLI, users can soon use the command without additional operations, which is convenient and easy to use.
 
-> For users who need large-scale scenarios and deep customization of testing services, we recommend using the fully hosted MQTT load testing cloud service [XMeter](https://www.emqx.com/en/products/xmeter)
+> For users who need large-scale scenarios and deep customization of testing services, we recommend using the fully hosted MQTT load testing cloud service XMeter
 
 Users can use the `bench` command to create a custom number of connections at a specified rate, subscribe to a custom number of topics, publish the custom number of messages to single or multiple topics, and test the connection performance and message throughput of a single or cluster MQTT broker through a single command. For example:
 

@@ -116,7 +116,7 @@ The EMQX V2X solution, rooted in the MQTT message collection and transmission fr
 - **A rich set of APIs** for upper-level application platform integration, enabling high-concurrency V2X message forwarding, data monitoring, and real-time device status tracking.
 
 
-[Learn more about the EMQX V2X solution](https://www.emqx.com/en/use-cases/v2x).
+[Learn more about the EMQX V2X solution](https://www.emqx.com/en/solutions).
 
 
 

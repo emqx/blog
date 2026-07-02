@@ -19,7 +19,7 @@
 
 为避免短时间内的大规模重连导致 EMQX 负载过高，EMQX 支持参数化地设置疏散速度，以确保这一过程平稳地进行。
 
-集群负载重平衡与节点疏散提供了灵活可控的运维实践，能够大大降低 EMQX 负载状态不均衡以及维护工作对业务的影响，详细的使用方式请参阅 [EMQX 文档](https://docs.emqx.com/zh/enterprise/v4.4/advanced/rebalancing.html)，目前这一功能已经被整合至 [EMQX Operator](https://www.emqx.com/zh/emqx-kubernetes-operator) 中以为 EMQX 的 K8s 自动化部署带来更好的使用体验。
+集群负载重平衡与节点疏散提供了灵活可控的运维实践，能够大大降低 EMQX 负载状态不均衡以及维护工作对业务的影响，详细的使用方式请参阅 [EMQX 文档](https://docs.emqx.com/zh/enterprise/v4.4/advanced/rebalancing.html)，目前这一功能已经被整合至 [EMQX Operator](https://www.emqx.com/zh/solutions/mqtt-on-kubernetes) 中以为 EMQX 的 K8s 自动化部署带来更好的使用体验。
 
 ### TDengine 3.0 适配以及子表批量插入
 

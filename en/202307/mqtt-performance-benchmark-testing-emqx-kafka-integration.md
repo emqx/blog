@@ -1,6 +1,6 @@
 >IoT scenarios often face challenges like a large number of devices, high data generation rates, and the huge accumulated data volumes. Therefore, how to access, store, and process these massive amounts of data has become a critical issue.
 >
->[EMQX](https://www.emqx.com/en/products/emqx), as a highly scalable, powerful and feature-rich MQTT broker for the IoT, can handle billions of concurrent connections and millions of messages per second in a single cluster. Furthermore, its built-in [Data Integration](https://www.emqx.com/en/solutions/mqtt-data-integration) functionality provides an out-of-the-box solution, which enables seamless integrating IoT data with more than 40 cloud services and enterprise systems, including Kafka, SQL, NoSQL, and time-series databases.
+>[EMQX](https://www.emqx.com/en/products/emqx), as a highly scalable, powerful and feature-rich MQTT broker for the IoT, can handle billions of concurrent connections and millions of messages per second in a single cluster. Furthermore, its built-in [Data Integration](https://www.emqx.com/en/features/data-processing) functionality provides an out-of-the-box solution, which enables seamless integrating IoT data with more than 40 cloud services and enterprise systems, including Kafka, SQL, NoSQL, and time-series databases.
 >
 >This blog series presents the benchmark test results of the integrations against a single node EMQX server.
 
@@ -33,7 +33,7 @@ The test environment is configured on Alibaba Cloud, and all virtual machines ar
 
 ### Test Tool
 
-[XMeter](https://www.emqx.com/en/products/xmeter) is used in this benchmark test to simulate [MQTT clients](https://www.emqx.com/en/blog/mqtt-client-tools). XMeter is built on top of [JMeter](https://www.emqx.com/en/blog/introduction-to-the-open-source-testing-tool-jmeter) but with enhanced scalability and more capabilities. It provides comprehensive and real-time test reports during the test. Additionally, its built-in monitoring tools are used to track the resource usage of the EMQX and Kafka machines.
+XMeter is used in this benchmark test to simulate [MQTT clients](https://www.emqx.com/en/blog/mqtt-client-tools). XMeter is built on top of [JMeter](https://www.emqx.com/en/blog/introduction-to-the-open-source-testing-tool-jmeter) but with enhanced scalability and more capabilities. It provides comprehensive and real-time test reports during the test. Additionally, its built-in monitoring tools are used to track the resource usage of the EMQX and Kafka machines.
 
 XMeter provides a private deployment version (on-premise) and a public cloud SaaS version. A private XMeter is deployed in the same VPC as the EMQX and Kafka in this testing.
 

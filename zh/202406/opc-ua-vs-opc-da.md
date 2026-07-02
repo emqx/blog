@@ -119,7 +119,7 @@ OPC UA 凭借其卓越的性能和灵活性，已在工业物联网（IIoT）、
 
 ## **NeuronEX：支持 OPC 协议的工业网关**
 
-[NeuronEX](https://www.emqx.com/zh/products/neuronex) 是专为工业领域设计的软件，专注于设备数据采集和边缘智能分析。它主要部署于工业环境，促进工业设备通信、工业总线协议采集、工业系统数据集成、边缘级数据过滤与分析、AI 算法集成，以及与 [工业物联网平台](https://www.emqx.com/zh/blog/iiot-platform-key-components-and-5-notable-solutions)集成。NeuronEX 提供多协议接入能力，支持同时接入如 [Modbus](https://www.emqx.com/zh/blog/modbus-protocol-the-grandfather-of-iot-communication)、[OPC UA](https://www.emqx.com/zh/blog/opc-ua-protocol), Ethernet/IP、Ethernet/IP、[BACnet](https://www.emqx.com/en/blog/bacnet-protocol-basic-concepts-structure-obejct-model-explained)、西门子、三菱等数十种工业协议。
+[NeuronEX](https://www.emqx.com/zh/products/emqx-neuron) 是专为工业领域设计的软件，专注于设备数据采集和边缘智能分析。它主要部署于工业环境，促进工业设备通信、工业总线协议采集、工业系统数据集成、边缘级数据过滤与分析、AI 算法集成，以及与 [工业物联网平台](https://www.emqx.com/zh/blog/iiot-platform-key-components-and-5-notable-solutions)集成。NeuronEX 提供多协议接入能力，支持同时接入如 [Modbus](https://www.emqx.com/zh/blog/modbus-protocol-the-grandfather-of-iot-communication)、[OPC UA](https://www.emqx.com/zh/blog/opc-ua-protocol), Ethernet/IP、Ethernet/IP、[BACnet](https://www.emqx.com/en/blog/bacnet-protocol-basic-concepts-structure-obejct-model-explained)、西门子、三菱等数十种工业协议。
 
 NeuronEX 的 OPC UA 插件可作为客户端访问 KEPServerEX、工业网关 OPC 服务器、Prosys 模拟服务器和 Ignition 等 OPC UA 服务器。它也可以直接访问硬件设备的内置 OPC UA 服务器，例如西门子 S7-1200 PLC、欧姆龙 NJ 系列 PLC 等的内置服务器。更多信息，您可以查看 [OPC UA | NeuronEX 文档](https://docs.emqx.com/zh/neuronex/latest/configuration/south-devices/opc-ua/overview.html)以及[在工业物联网中将 OPC UA 数据桥接到 MQTT：详细教程](https://www.emqx.com/zh/blog/bridging-opc-ua-data-to-mqtt-for-iiot)。
 

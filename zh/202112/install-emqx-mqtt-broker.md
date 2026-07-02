@@ -139,7 +139,7 @@ Cluster status: #{running_nodes => ['emqx@node1.emqx.io','emqx@node2.emqx.io'],
 
 ## 在 Kubernetes 上安装 EMQX
 
-[EMQX Kubernetes Operator](https://www.emqx.com/zh/emqx-kubernetes-operator) 是 EMQ 推出的一种封装、部署和管理 EMQX 的方法，也是一个特定的应用控制器，允许 DevOps 人员在 Kubernetes 上编排 EMQX 集群，管理他们的生命周期。
+[EMQX Kubernetes Operator](https://www.emqx.com/zh/solutions/mqtt-on-kubernetes) 是 EMQ 推出的一种封装、部署和管理 EMQX 的方法，也是一个特定的应用控制器，允许 DevOps 人员在 Kubernetes 上编排 EMQX 集群，管理他们的生命周期。
 
 EMQX Kubernetes Operator 可以帮助用户在 Kubernetes 的环境上快速创建和管理 EMQX 集群，不仅极大简化部署和管理流程，也降低了管理和配置的专业技能要求。
 

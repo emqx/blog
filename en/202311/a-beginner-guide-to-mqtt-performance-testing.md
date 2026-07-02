@@ -135,7 +135,7 @@ Next, we'll go into the detail of the test tools used and the test steps so that
 In all tests in this article, we used the following software or tools:
 
 1. [EMQX](https://emqx.io/), an open-source, highly scalable MQTT Broker, designed specifically for IoT and real-time communication applications.
-2. [XMeter Cloud](https://www.emqx.com/en/products/xmeter), a fully managed MQTT load testing cloud service, built on the Apache open source project JMeter, which can quickly run various MQTT load and scenario tests.
+2. XMeter Cloud, a fully managed MQTT load testing cloud service, built on the Apache open source project JMeter, which can quickly run various MQTT load and scenario tests.
 3. [collectd](https://github.com/collectd/collectd), a daemon running on the system that collects information such as CPU, memory, disk usage, and network traffic. We can send these collected data to the designated storage.
 4. [InfluxDB](https://www.influxdata.com/), an open-source time-series database for storing and analyzing time-series data.
 5. [Grafana](https://grafana.com/grafana/), an open-source data visualization and monitoring tool that converts data from a variety of data sources into aesthetically pleasing charts, graphs, and warnings.
@@ -368,7 +368,7 @@ net.ipv4.tcp_max_tw_buckets = 5000
 
 ### 6. Creating Tests in XMeter Cloud
 
-After registering and logging in to [XMeter Cloud](https://www.emqx.com/en/products/xmeter) and going to the home page, we first need to switch to the **Professional Edition**. Only in the Professional Edition can we create customized test scenarios and peering connections between EMQX and XMeter Cloud. XMeter Cloud only supports peering with HUAWEI Cloud Platform now, we can contact the technical team of XMeter Cloud to help us do this. We will rollout XMeter Cloud to more public cloud providers in the future.
+After registering and logging in to XMeter Cloud and going to the home page, we first need to switch to the **Professional Edition**. Only in the Professional Edition can we create customized test scenarios and peering connections between EMQX and XMeter Cloud. XMeter Cloud only supports peering with HUAWEI Cloud Platform now, we can contact the technical team of XMeter Cloud to help us do this. We will rollout XMeter Cloud to more public cloud providers in the future.
 
 After the peering connection is created, we can click `Create Scenario` to upload our JMeter script and start testing.
 

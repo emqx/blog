@@ -1,6 +1,6 @@
 本月，[EMQX](https://www.emqx.com/zh/products/emqx) 发布了 v5.0.5 和 v5.0.6 两个版本，引入配置文件检查支持，提供了能够减少 35% TLS 连接内存占用的配置选项，同时修复了目前已知 Bug。此外，企业版 5.0 的开发工作也在快速推进，将为数据集成带来质的变化，异步、批量、磁盘缓存，这些大家期待已久的功能都会随着企业版 5.0 的正式发布上线。
 
-云服务方面，[EMQX Cloud](https://www.emqx.com/zh/cloud) 本月对认证鉴权搜索及海外站账单页面进行了优化。[EMQX Kubernetes Operator](https://www.emqx.com/zh/emqx-kubernetes-operator) 也随着 EMQX 5.0 的发布一并进行了相关能力的更新升级，以更好地支持 EMQX 的云原生特性。
+云服务方面，[EMQX Cloud](https://www.emqx.com/zh/cloud) 本月对认证鉴权搜索及海外站账单页面进行了优化。[EMQX Kubernetes Operator](https://www.emqx.com/zh/solutions/mqtt-on-kubernetes) 也随着 EMQX 5.0 的发布一并进行了相关能力的更新升级，以更好地支持 EMQX 的云原生特性。
 
 ## EMQX 
 

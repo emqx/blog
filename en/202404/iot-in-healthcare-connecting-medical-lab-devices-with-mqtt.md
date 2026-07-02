@@ -74,7 +74,7 @@ Imagine a medical lab where remote diagnostic instruments seamlessly communicate
 
 In this example, data from on-site lab equipment using different messaging protocols are converted at the Edge to MQTT and delivered to Alibaba, AWS, Azure or Google Cloud Platforms. 
 
-[NeuronEX](https://www.emqx.com/en/products/neuronex) translates various machine-to-machine communication protocols, enabling real-time data collection and unified access for equipment data such as PLCs, CNC machines, robots, SCADA systems, and smart sensors. It ensures rapid and efficient data processing by leveraging the benefits of edge computing and low-latency network architectures. 
+[NeuronEX](https://www.emqx.com/en/products/emqx-neuron) translates various machine-to-machine communication protocols, enabling real-time data collection and unified access for equipment data such as PLCs, CNC machines, robots, SCADA systems, and smart sensors. It ensures rapid and efficient data processing by leveraging the benefits of edge computing and low-latency network architectures. 
 
 The [EMQX MQTT Platform](https://www.emqx.com/en/products/emqx) enables reliable movement of IoT data in real-time between IoT devices and cloud services, whether sensor data from lab devices to cloud, or command and control from cloud to devices. You can deploy EMQX in your own private cloud or any public cloud platform.
 

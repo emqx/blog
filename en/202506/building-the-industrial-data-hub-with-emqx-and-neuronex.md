@@ -27,7 +27,7 @@ As AI transforms industrial operations, traditional point-to-point integrations 
 
 ![image.png](https://assets.emqx.com/images/82c59674a4755b0fa957f9ebea04b098.png)
 
-EMQ offers an integrated cloud-edge solution ideal for building a scalable, AI-ready UNS. By combining the world-leading MQTT+AI platform—**[EMQX Platform](https://www.emqx.com/en/platform)**—with **[NeuronEX](https://www.emqx.com/en/products/neuronex)**, an industrial connectivity gateway equipped for edge AI processing, this solution enables seamless integration with LLMs and delivers the following key capabilities:
+EMQ offers an integrated cloud-edge solution ideal for building a scalable, AI-ready UNS. By combining the world-leading MQTT+AI platform—**[EMQX Platform](https://www.emqx.com/en/platform)**—with **[NeuronEX](https://www.emqx.com/en/products/emqx-neuron)**, an industrial connectivity gateway equipped for edge AI processing, this solution enables seamless integration with LLMs and delivers the following key capabilities:
 
 **NeuronEX: The Foundation of Industrial Connectivity and Edge Intelligence**
 
