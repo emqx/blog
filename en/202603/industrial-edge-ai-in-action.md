@@ -366,7 +366,7 @@ The future of industrial intelligence lies in the transition from "Cloud AI" to 
 
 EMQX Neuron serves as the definitive bridge for this transformation. Its ability to unify data acquisition, stream processing, and multi-method AI inference into a single 200MB-class tool allows OT teams to deploy production-ready intelligence in hours rather than months. Ultimately, Neuron doesn't just connect machines; it empowers them to think and act at the edge, turning raw data into immediate industrial value.
 
-Ready to bridge your AI deployment gap? [Download EMQX Neuron](https://www.emqx.com/en/products/neuronex) today and start building your first edge inference pipeline in minutes.
+Ready to bridge your AI deployment gap? [Download EMQX Neuron](https://www.emqx.com/en/products/emqx-neuron) today and start building your first edge inference pipeline in minutes.
 
 
 

@@ -167,13 +167,3 @@ summary = 10000 in 00:00:32 = 308.1/s Avg: 274 Min: 50 Max: 501 Err: 0 (0.00%)
 BeanShell 是 JMeter 内置的功能，但是由于它是脚本语言，动态加载执行的，因此效率不是很高，不太适用于频繁执行的场景，例如将 BeanShell 放在循环内部，不断被执行的场景。比较适合的应用场景是放在只执行一次、或者少数几次的地方，比如在循环外部读取配置文件内容等。
 
 而 Java 扩展 JMeter 的实现方式运行效率比较高，适合于放在经常执行的测试步骤中。但是由于它不是 JMeter 内置的功能，扩展起来有一定的工作量，而且部署的时候也有额外的开销（分布式运行的时候需要将自定义的 JAR 拷贝至所有的机器上）。大家可以根据自己的使用场景来选择适合的方式。
-
-
-
-<section class="promotion">
-    <div>
-        免费试用 XMeter Cloud
-        <div class="is-size-14 is-text-normal has-text-weight-normal">全托管的 MQTT 负载测试云服务</div>
-    </div>
-    <a href="https://accounts-zh.emqx.com/signup?continue=https%3A%2F%2Fxmeter-cloud.emqx.com%2FcommercialPage.html" class="button is-gradient px-5">开始试用 →</a>
-</section>

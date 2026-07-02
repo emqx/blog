@@ -127,7 +127,7 @@ MQTT 采用发布订阅模式通信，发布订阅模式区别于传统的客户
 
 MQTT 是 IoT 领域的最重要的标准协议之一，广泛用于物联网、车联网、工业物联网、智能家居、智慧城市、电力石油能源等行业。
 
-MQTT 是 AWS IoT Core、 Azure IoT Hub、阿里云物联网平台等顶级云厂商物联网平台标准通信协议，是[工业互联网](https://www.emqx.com/zh/use-cases/industrial-iot)、[车联网](https://www.emqx.com/zh/blog/category/internet-of-vehicles)、[智能家居](https://www.emqx.com/zh/blog/tag/%E6%99%BA%E8%83%BD%E5%AE%B6%E5%B1%85)等各个行业以及诸多网关协议上云的首选协议。
+MQTT 是 AWS IoT Core、 Azure IoT Hub、阿里云物联网平台等顶级云厂商物联网平台标准通信协议，是[工业互联网](https://www.emqx.com/zh/solutions)、[车联网](https://www.emqx.com/zh/blog/category/internet-of-vehicles)、[智能家居](https://www.emqx.com/zh/blog/tag/%E6%99%BA%E8%83%BD%E5%AE%B6%E5%B1%85)等各个行业以及诸多网关协议上云的首选协议。
 
 [EMQX](https://www.emqx.com/zh/products/emqx) 作为全球最热门、最成熟的 MQTT Broker 之一，提供了「随处运行，无限连接，任意集成」云原生分布式物联网接入平台，一体化的分布式 MQTT 消息服务和强大的 IoT 规则引擎，为高可靠、高性能的物联网实时数据移动、处理和集成提供动力，助力企业快速构建关键业务的 IoT 平台与应用。
 
@@ -219,7 +219,7 @@ XMPP 特点在于协议和扩展协议成熟，功能完善，专门为即时聊
 
 当前物联网协议呈现多元化发展，不同行业和场景适用不同的协议，在相同的场景下也能够有多个协议可供选择，没有任何协议能够在市场上占有统治地位，各种协议之间存在一定的互补效应。因此，要实现物联网设备和数据的互联互通，关键点并不在与协议的统一，而在于不同协议之间的互联互通、上层业务应用层协议的统一。
 
-EMQ 致力于解决物联网设备数据连接问题。核心产品 EMQX 物联网消息服务器可以通过开放标准的 MQTT、CoAP 和 LwM2M 协议连接任何设备，对于诸如工业场景中工业协议复杂多样的情况，也可通过边缘[工业协议网关软件 Neuron](https://www.emqx.com/zh/products/neuronex) 转换成统一的 MQTT 协议接入，满足绝大多数物联网场景下的数据采集需求，为企业的物联网业务提供高效可靠的数据接入层。
+EMQ 致力于解决物联网设备数据连接问题。核心产品 EMQX 物联网消息服务器可以通过开放标准的 MQTT、CoAP 和 LwM2M 协议连接任何设备，对于诸如工业场景中工业协议复杂多样的情况，也可通过边缘[工业协议网关软件 Neuron](https://www.emqx.com/zh/products/emqx-neuron) 转换成统一的 MQTT 协议接入，满足绝大多数物联网场景下的数据采集需求，为企业的物联网业务提供高效可靠的数据接入层。
 
 
 <section class="promotion">

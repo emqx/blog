@@ -167,7 +167,7 @@ MQTT接続の設定：
 
 #### ステップ10：MQTTクライアントでデータを表示
 
-サブスクライブした後、[MQTTクライアント](https://www.emqx.com/ja/blog/mqtt-client-tools)を使用してEMQXに接続し、報告されたデータを表示できます。ここでは、強力なクロスプラットフォームMQTTクライアントツールであるMQTTXを使用します。これは、[公式ウェブサイト](https://www.emqx.com/ja/products/mqttx)からダウンロードできます。
+サブスクライブした後、[MQTTクライアント](https://www.emqx.com/ja/blog/mqtt-client-tools)を使用してEMQXに接続し、報告されたデータを表示できます。ここでは、強力なクロスプラットフォームMQTTクライアントツールであるMQTTXを使用します。これは、[公式ウェブサイト](https://mqttx.app/ja)からダウンロードできます。
 
 MQTTXを起動したら、メインページの**+ 新しい接続**をクリックし、設定パラメータを入力し、右上隅の**接続**をクリックします。
 

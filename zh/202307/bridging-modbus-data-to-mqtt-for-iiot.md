@@ -240,7 +240,7 @@ $ docker run -d --name neuron -p 7000:7000 --privileged=true --restart=always em
 
 #### 第十步，在 MQTT 客户端查看数据
 
-订阅完成后，除了 neuron 自己的数据监控界面，用户可以使用 [MQTT 客户端](https://www.emqx.com/zh/blog/mqtt-client-tools) - MQTTX（可在[官网](https://www.emqx.com/zh/products/mqttx)中下载）连接到 EMQX 来查看上报的数据。
+订阅完成后，除了 neuron 自己的数据监控界面，用户可以使用 [MQTT 客户端](https://www.emqx.com/zh/blog/mqtt-client-tools) - MQTTX（可在[官网](https://mqttx.app/zh)中下载）连接到 EMQX 来查看上报的数据。
 
 启动 MQTTX 后在主页面点击 **+ New Connection**，填写配置参数后，点击右上角连接。
 

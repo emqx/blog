@@ -40,15 +40,3 @@ Listening for transport dt_socket at address: 12345
 ## 总结
 
 利用 Java 提供的远程调试的功能对 JMeter 扩展插件进行调试，可以比较方便地掌控 JMeter 插件在实际运行过程中的状况，更好地协助开发人员完成扩展的开发。不过也需要注意的是，这种方式有个缺点：每次开发中改了代码后再次调试，需要将更新后的 JMeter 扩展重新编译、打包、部署，并重启 JMeter。如果调试过程中频繁改动代码的话，这种调试方式稍显麻烦。读者可根据自己的实际情况选择更合适的调试方式。
-
-
-
-
-
-<section class="promotion">
-    <div>
-        免费试用 XMeter Cloud
-        <div class="is-size-14 is-text-normal has-text-weight-normal">全托管的 MQTT 负载测试云服务</div>
-    </div>
-    <a href="https://accounts-zh.emqx.com/signup?continue=https%3A%2F%2Fxmeter-cloud.emqx.com%2FcommercialPage.html" class="button is-gradient px-5">开始试用 →</a>
-</section>

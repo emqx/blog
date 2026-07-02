@@ -6,7 +6,7 @@
 
 > 详情请查看：[《Mria + RLOG 新架构下的 EMQX 5.0 如何实现 1 亿 MQTT 连接》](https://www.emqx.com/zh/blog/how-emqx-5-0-achieves-100-million-mqtt-connections)
 
-用户可以通过 EMQ 发布的管理工具 [EMQX Kubernetes Operator](https://www.emqx.com/zh/emqx-kubernetes-operator)，利用 EMQX 5.0 的 Replicant 节点特性，在 Kubernetes 上通过 Deployment 资源实现无状态节点的部署，快速创建并管理可以承载大规模 MQTT 连接和消息吞吐的 EMQX 集群。
+用户可以通过 EMQ 发布的管理工具 [EMQX Kubernetes Operator](https://www.emqx.com/zh/solutions/mqtt-on-kubernetes)，利用 EMQX 5.0 的 Replicant 节点特性，在 Kubernetes 上通过 Deployment 资源实现无状态节点的部署，快速创建并管理可以承载大规模 MQTT 连接和消息吞吐的 EMQX 集群。
 
 本文将通过对 EMQX Kubernetes Operator 核心特性及应用实操的详细讲解，帮助读者进一步掌握如何快速创建部署及自动化管理可弹性伸缩的 EMQX 集群，充分利用 EMQX 5.0 对云原生的支持特性，拥抱云原生。
 

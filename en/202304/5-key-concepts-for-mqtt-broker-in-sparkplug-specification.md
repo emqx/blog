@@ -8,7 +8,7 @@ Sparkplug is an [industrial IoT](https://www.emqx.com/en/blog/iiot-explained-exa
 - Promoting transparency, increasing trust, and reducing the risk of vendor lock-in or dependence on a single supplier.
 - Ensuring that products and services are accessible to a wide range of users, including those with disabilities.
 
-Sparkplug aims to provide a standardized way to use [MQTT for industrial](https://www.emqx.com/en/use-cases/industrial-iot) applications and promote interoperability between devices and systems from different vendors. As such, the Sparkplug specification has been widely adopted by the industrial IoT community and is supported by many different vendors and organizations.
+Sparkplug aims to provide a standardized way to use [MQTT for industrial](https://www.emqx.com/en/solutions) applications and promote interoperability between devices and systems from different vendors. As such, the Sparkplug specification has been widely adopted by the industrial IoT community and is supported by many different vendors and organizations.
 
 <section
   class="promotion-pdf"

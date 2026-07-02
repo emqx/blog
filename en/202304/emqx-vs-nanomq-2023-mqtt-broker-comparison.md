@@ -150,7 +150,7 @@ Both brokers are relatively easy to use, but NanoMQ's minimalist design makes it
 | **StatsD**              | ✅            | ❌            | [Integrate with StatsD](https://docs.emqx.com/en/emqx/v5.0/observability/statsd.html#statsd) |
 | **Cross Platform**      | ✅            | ✅            |                                                              |
 | **Docker**              | ✅            | ✅            | - [EMQX Docker](https://hub.docker.com/r/emqx/emqx)<br>- [NanoMQ Docker](https://hub.docker.com/r/emqx/nanomq) |
-| **Kubernetes Operator** | ✅            | ❌            | [EMQX Kubernetes Operator](https://www.emqx.com/en/emqx-kubernetes-operator) |
+| **Kubernetes Operator** | ✅            | ❌            | [EMQX Kubernetes Operator](https://www.emqx.com/en/solutions/mqtt-on-kubernetes) |
 | **Terraform**           | ✅            | ❌            |                                                              |
 
 ## Data Integration

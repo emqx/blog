@@ -1,10 +1,10 @@
-このブログでは、EMQから[Neuron](https://www.emqx.com/ja/products/neuronex)と[EMQX](https://www.emqx.com/ja/products/emqx)を使用してFINSからMQTTへのブリッジングを実現します。NeuronはFINSプロトコルをMQTTに変換でき、EMQXは[MQTTブローカー](https://www.emqx.com/ja/blog/the-ultimate-guide-to-mqtt-broker-comparison)として機能し、大量の接続とデータを処理します。
+このブログでは、EMQから[Neuron](https://www.emqx.com/ja/products/emqx-neuron)と[EMQX](https://www.emqx.com/ja/products/emqx)を使用してFINSからMQTTへのブリッジングを実現します。NeuronはFINSプロトコルをMQTTに変換でき、EMQXは[MQTTブローカー](https://www.emqx.com/ja/blog/the-ultimate-guide-to-mqtt-broker-comparison)として機能し、大量の接続とデータを処理します。
 
 ## FINSからMQTTへのブリッジングのアーキテクチャ
 
 Neuronは、標準プロトコルまたはデバイス固有のプロトコルを使用するさまざまな産業デバイスに接続できる、最新の[産業用IoT](https://www.emqx.com/ja/blog/iiot-explained-examples-technologies-benefits-and-challenges)接続サーバーです。軽量産業ソフトウェアとして、Neuronはリソースが限られたさまざまなIoTエッジハードウェアデバイス上で実行できます。データ中心の自動化デバイスへの統一アクセスの問題を解決し、インテリジェント製造のための基本的なサポートを提供することを目的としています。
 
-> Neuronについてもっと知る：[Neuron: 産業用IoT接続サーバー](https://www.emqx.com/ja/products/neuronex)
+> Neuronについてもっと知る：[Neuron: 産業用IoT接続サーバー](https://www.emqx.com/ja/products/emqx-neuron)
 
 EMQXは、大規模で弾性的なクラウドネイティブ分散IoT MQTTメッセージサーバーです。世界で最もスケーラブルなMQTTメッセージサーバーとして、EMQXはIoTデバイスの効率的かつ信頼性の高い大量接続を提供し、メッセージおよびイベントフローデータのリアルタイム処理を高性能で実現し、ユーザーが重要なIoTプラットフォームおよびアプリケーションを迅速に構築するのを支援します。
 
@@ -152,7 +152,7 @@ MQTT接続の設定：
 
 #### ステップ10：MQTTクライアントでデータを表示
 
-サブスクライブした後、[MQTTクライアント](https://www.emqx.com/ja/blog/mqtt-client-tools)を使用してEMQXに接続し、報告されたデータを表示できます。ここでは、[公式ウェブサイト](https://www.emqx.com/ja/products/mqttx)からダウンロードできる強力なクロスプラットフォームMQTTクライアントツールであるMQTTXを使用します。
+サブスクライブした後、[MQTTクライアント](https://www.emqx.com/ja/blog/mqtt-client-tools)を使用してEMQXに接続し、報告されたデータを表示できます。ここでは、[公式ウェブサイト](https://mqttx.app/ja)からダウンロードできる強力なクロスプラットフォームMQTTクライアントツールであるMQTTXを使用します。
 
 MQTTXを起動したら、メインページで**+ 新しい接続**をクリックし、設定パラメータを入力し、右上隅の**接続**をクリックします。
 

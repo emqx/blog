@@ -1,6 +1,6 @@
 本月，EMQX 团队为大家带来了期待已久的 5.0.0-rc.1 版本，它是 5.0 版本的一个阶段性成果，包含了 v5.0 开发至今我们致力于为大家带来的各项重大改进。同时，4.x 维护版本的迭代升级也在进行中。
 
-云服务方面，[EMQX Cloud](https://www.emqx.com/zh/cloud) 本月发布了全新改版的规则引擎模块，同时支持了阿里云新版云企业网。此外，Cloud Native 团队也发布了集群部署管理工具 [EMQX Kubernetes Operator](https://www.emqx.com/zh/emqx-kubernetes-operator) 的新版本。
+云服务方面，[EMQX Cloud](https://www.emqx.com/zh/cloud) 本月发布了全新改版的规则引擎模块，同时支持了阿里云新版云企业网。此外，Cloud Native 团队也发布了集群部署管理工具 [EMQX Kubernetes Operator](https://www.emqx.com/zh/solutions/mqtt-on-kubernetes) 的新版本。
 
 ## EMQX
 

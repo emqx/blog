@@ -101,7 +101,7 @@ Neuron 提供多种安装方式，查阅[安装指南](https://docs.emqx.com/zh/
 
 ## 使用 MQTTX 查看数据
 
-现在，您可以使用 [MQTT 客户端](https://www.emqx.com/zh/blog/mqtt-client-tools)连接到 EMQX 并查看报告的数据。本文我们使用 MQTTX，这是一个功能强大的跨平台 MQTT 客户端工具，可以从其[官方网站](https://www.emqx.com/en/products/mqttx)下载。
+现在，您可以使用 [MQTT 客户端](https://www.emqx.com/zh/blog/mqtt-client-tools)连接到 EMQX 并查看报告的数据。本文我们使用 MQTTX，这是一个功能强大的跨平台 MQTT 客户端工具，可以从其[官方网站](https://mqttx.app/)下载。
 
 启动 MQTTX，并添加一个到之前设置的 EMQX 服务器的新连接，然后订阅主题 `/neuron/mqtt/knx/grp` 。成功订阅后，您将看到 MQTTX 持续收到由 Neuron 采集的数据，如下图所示。
 

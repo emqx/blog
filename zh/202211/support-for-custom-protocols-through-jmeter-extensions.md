@@ -441,13 +441,3 @@ public class KafkaSampler extends AbstractSampler {
 ## 总结
 
 如本文所示，如果通过比较”标准”的方式来扩展 JMeter 对新协议的测试 Sampler，还是有一定的工作量，特别是需要比较丰富的界面功能的话，界面的实现会比较复杂。如果对界面的要求不高，并且通过传参的方式可以完成与 Sampler 的交互，那么使用前文 [JMeter 自定义协议扩展之 Java Sampler](https://www.emqx.com/zh/blog/jmeter-extension-development-custom-java-sampler) 介绍的方法扩展 Java Sampler 会是更简单的一种方式。
-
-
-
-<section class="promotion">
-    <div>
-        免费试用 XMeter Cloud
-        <div class="is-size-14 is-text-normal has-text-weight-normal">全托管的 MQTT 负载测试云服务</div>
-    </div>
-    <a href="https://accounts-zh.emqx.com/signup?continue=https%3A%2F%2Fxmeter-cloud.emqx.com%2FcommercialPage.html" class="button is-gradient px-5">开始试用 →</a>
-</section>

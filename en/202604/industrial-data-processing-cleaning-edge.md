@@ -218,6 +218,6 @@ Whether you're implementing simple protocol conversion or complex stream analyti
 
 **Ready to Transform Your Industrial Data?**
 
-[Learn more](https://www.emqx.com/en/products/neuronex) about how EMQX Neuron can power your AI-ready OT data infrastructure. 
+[Learn more](https://www.emqx.com/en/products/emqx-neuron) about how EMQX Neuron can power your AI-ready OT data infrastructure. 
 
 [Contact our team](https://www.emqx.com/en/contact) for a personalized consultation and demo.

@@ -1,6 +1,6 @@
 ## Introduction
 
-[MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) is a lightweight [IoT messaging](https://www.emqx.com/en/solutions/reliable-mqtt-messaging) protocol based on the publish/subscribe model. It can provide real-time and reliable messaging services for networked devices with very little code and bandwidth. It is widely used in the industries such as the IoT, mobile Internet, smart hardware, [Internet of Vehicles](https://www.emqx.com/en/use-cases/internet-of-vehicles), and power energy.
+[MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) is a lightweight [IoT messaging](https://www.emqx.com/en/features/connectivity) protocol based on the publish/subscribe model. It can provide real-time and reliable messaging services for networked devices with very little code and bandwidth. It is widely used in the industries such as the IoT, mobile Internet, smart hardware, [Internet of Vehicles](https://www.emqx.com/en/solutions), and power energy.
 
 Node.js is widely used in IoT due to its event-driven architecture and real-time data handling. It can easily connect devices, servers, and APIs. By combining Node.js with MQTT, developers can build scalable and secure IoT applications to communicate with devices in real-time, exchange information, and perform complex data analytics.
 

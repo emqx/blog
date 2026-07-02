@@ -90,7 +90,7 @@ Here’s a look at how MQTT is changing and what trends to watch in 2025.
 
   MQTT is increasingly connected to enterprise platforms like Apache Kafka and AMQP-based tools such as RabbitMQ. These integrations create flexible, end-to-end pipelines that support real-time data processing, event-driven workflows, and long-term analytics.
 
-  > Learn more: [EMQX Data Integration](https://www.emqx.com/en/solutions/mqtt-data-integration)
+  > Learn more: [EMQX Data Integration](https://www.emqx.com/en/features/data-processing)
 
 ## Powering the Edge: Real-Time Processing Where It Matters Most
 
@@ -108,7 +108,7 @@ Bidirectional communication is especially important in edge scenarios, allowing 
 - Experiment with MCP over MQTT for AI and natural language interfaces
 - Explore serverless and distributed options for agility and scale
 - Monitor protocol developments from the OASIS MQTT Technical Committee
-- Apply [multi-layered security](https://www.emqx.com/en/solutions/mqtt-security) practices across your MQTT ecosystem
+- Apply [multi-layered security](https://www.emqx.com/en/security-and-trust-center) practices across your MQTT ecosystem
 
 ## MQTT’s Role in the Next Generation of Connected Systems
 

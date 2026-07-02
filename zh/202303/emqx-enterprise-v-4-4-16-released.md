@@ -6,7 +6,7 @@
 
 [Apache IoTDB](https://iotdb.apache.org/zh/)（物联网数据库）是一体化收集、存储、 管理与分析物联网时序数据的软件系统，具有高吞吐量读写、高效树形元数据结构、丰富查询语义、低硬件成本、灵活部署以及与开源生态系统紧密集成等特点。
 
-EMQX Enterprise 4.4.15 提供了 Apache IoTDB 的支持，包括 0.13.x 以及 1.x 版本。借助 EMQ 提供的边缘工业协议网关软件 Neuron 与 EMQX 的组合，可以实现工业设备的接入，并通过规则引擎将采集到的海量、高频工业实时数据存储到 Apache IoTDB 中，进一步实现海量数据存储、高速数据读取和复杂数据分析需求。详细可参考 [EMQ 工业制造解决方案](https://www.emqx.com/zh/solutions/industries/manufacturing)。
+EMQX Enterprise 4.4.15 提供了 Apache IoTDB 的支持，包括 0.13.x 以及 1.x 版本。借助 EMQ 提供的边缘工业协议网关软件 Neuron 与 EMQX 的组合，可以实现工业设备的接入，并通过规则引擎将采集到的海量、高频工业实时数据存储到 Apache IoTDB 中，进一步实现海量数据存储、高速数据读取和复杂数据分析需求。详细可参考 [EMQ 工业制造解决方案](https://www.emqx.com/zh/solutions/smart-manufacturing)。
 
 ## HStreamDB 最新版适配
 

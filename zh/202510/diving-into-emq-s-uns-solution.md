@@ -42,7 +42,7 @@ UNS 解决方案包含两个主要软件组件：
 
 [EMQX](https://www.emqx.com/zh/products/emqx)：专为实时智能设计的 MQTT 与人工智能融合平台
 
-[NeuronEX](https://www.emqx.com/zh/products/neuronex)：工业边缘网关，将各类工业协议转换为 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt)
+[NeuronEX](https://www.emqx.com/zh/products/emqx-neuron)：工业边缘网关，将各类工业协议转换为 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt)
 
 ### **可用率**：
 

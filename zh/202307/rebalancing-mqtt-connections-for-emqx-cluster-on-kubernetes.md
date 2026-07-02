@@ -15,7 +15,7 @@ MQTT 连接重平衡主要有以下两个好处：
 
 ## MQTT 连接重平衡的工作流程
 
-[EMQX Operator](https://www.emqx.com/zh/emqx-kubernetes-operator) 提供了一种名为 `Rebalance` 的自定义资源类型，让用户可以方便地执行 MQTT 连接重平衡。要在 EMQX 集群中进行 MQTT 连接重平衡，只需部署一个新的 `Rebalance` 资源，EMQX Operator 会监听提交的资源，并根据情况启动 EMQX 的重平衡任务。
+[EMQX Operator](https://www.emqx.com/zh/solutions/mqtt-on-kubernetes) 提供了一种名为 `Rebalance` 的自定义资源类型，让用户可以方便地执行 MQTT 连接重平衡。要在 EMQX 集群中进行 MQTT 连接重平衡，只需部署一个新的 `Rebalance` 资源，EMQX Operator 会监听提交的资源，并根据情况启动 EMQX 的重平衡任务。
 
 EMQX 在开始重平衡任务之前，会把集群中的节点划分为源节点和目标节点。
 

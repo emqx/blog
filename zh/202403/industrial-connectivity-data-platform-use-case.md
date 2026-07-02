@@ -98,7 +98,7 @@ EMQX 具备对海量数据进行统一存储的能力。借助 EMQX 内置的规
 
 ### NeuronEX
 
-[NeuronEX](https://www.emqx.com/zh/products/neuronex) 是一款面向工业领域的设备数据采集和边缘智能分析的软件，主要部署在工业现场，实现工业设备通信及工业总线协议采集、工业系统数据集成、边端数据过滤分析及 AI 算法集成，以及工业互联网平台对接集成等。其提供了以下特性：
+[NeuronEX](https://www.emqx.com/zh/products/emqx-neuron) 是一款面向工业领域的设备数据采集和边缘智能分析的软件，主要部署在工业现场，实现工业设备通信及工业总线协议采集、工业系统数据集成、边端数据过滤分析及 AI 算法集成，以及工业互联网平台对接集成等。其提供了以下特性：
 
 - 多样的连接性：NeuronEX 提供多协议接入能力，支持如 Modbus、OPCUA、Ethernet/IP、BACnet、Siemens、Mitsubishi 等数十种工业协议的同时接入；提供企业内 MES、WMS 等各系统多数据源的集成对接；NeuronEX 同时支持数据流的双向打通，既可实现数采，也支持控制指令下发到设备。
 - 灵活部署：NeuronEX 具有极低的内存占用，在 x86、ARM、RISC-V 等低配置架构设备上运行表现出色。此外，它还支持类似 Docker 的容器化部署，能够与 K8s 环境中的其他容器共同运行。

@@ -15,7 +15,7 @@ In this blog, we will introduce how to enable the [MQTT connections](https://www
 
 ## The Workflow of MQTT Connections Rebalancing
 
-[EMQX Operator](https://www.emqx.com/en/emqx-kubernetes-operator) provides `Rebalance`, a custom resource type, to facilitate users to perform MQTT connections rebalancing. To rebalance the MQTT connections in an EMQX cluster, simply deploy a new `Rebalance` resource. EMQX Operator monitors the submitted resource and triggers the rebalance task in EMQX accordingly.
+[EMQX Operator](https://www.emqx.com/en/solutions/mqtt-on-kubernetes) provides `Rebalance`, a custom resource type, to facilitate users to perform MQTT connections rebalancing. To rebalance the MQTT connections in an EMQX cluster, simply deploy a new `Rebalance` resource. EMQX Operator monitors the submitted resource and triggers the rebalance task in EMQX accordingly.
 
 EMQX will divide the nodes in the cluster into source nodes and target nodes before performing the rebalancing task. 
 

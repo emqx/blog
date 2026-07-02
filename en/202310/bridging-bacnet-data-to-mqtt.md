@@ -169,7 +169,7 @@ Subscribe to the data group of southbound devices:
 
 #### Step 10: View data in the MQTT Client.
 
-After subscribing, you can use an [MQTT client](https://www.emqx.com/en/blog/mqtt-client-tools) to connect to EMQX and view the reported data. Here we use MQTTX, a powerful cross-platform MQTT client tool, which can be downloaded from the [official website](https://www.emqx.com/en/products/mqttx).
+After subscribing, you can use an [MQTT client](https://www.emqx.com/en/blog/mqtt-client-tools) to connect to EMQX and view the reported data. Here we use MQTTX, a powerful cross-platform MQTT client tool, which can be downloaded from the [official website](https://mqttx.app/).
 
 Once MQTTX is launched, click **+ New Connection** on the main page, fill in the configuration parameters, and click **Connect** in the upper right corner.
 

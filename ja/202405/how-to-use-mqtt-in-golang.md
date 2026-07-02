@@ -1,6 +1,6 @@
 ## はじめに
 
-[MQTT](https://www.emqx.com/ja/blog/the-easiest-guide-to-getting-started-with-mqtt)は、パブリッシュ/サブスクライブモデルに基づく軽量な[IoTメッセージング](https://www.emqx.com/ja/solutions/reliable-mqtt-messaging)プロトコルです。非常に少ないコードと帯域幅で、ネットワーク接続されたデバイスにリアルタイムかつ信頼性の高いメッセージングサービスを提供できます。IoT、モバイルインターネット、スマートハードウェア、[自動車のインターネット](https://www.emqx.com/ja/use-cases/internet-of-vehicles)、電力エネルギーなどの産業で広く使用されています。
+[MQTT](https://www.emqx.com/ja/blog/the-easiest-guide-to-getting-started-with-mqtt)は、パブリッシュ/サブスクライブモデルに基づく軽量な[IoTメッセージング](https://www.emqx.com/ja/features/connectivity)プロトコルです。非常に少ないコードと帯域幅で、ネットワーク接続されたデバイスにリアルタイムかつ信頼性の高いメッセージングサービスを提供できます。IoT、モバイルインターネット、スマートハードウェア、[自動車のインターネット](https://www.emqx.com/ja/solutions)、電力エネルギーなどの産業で広く使用されています。
 
 Goは、クロスプラットフォームのオープンソースプログラミング言語です。高性能のアプリケーションを作成するために使用できます。GolangとMQTTを組み合わせることで、開発者はスケーラブルで安全なIoTアプリケーションを構築し、リアルタイムでデバイスと通信し、情報を交換し、複雑なデータ分析を実行できます。
 

@@ -85,7 +85,7 @@ emqtt_bench 是 EMQX 研发团队基于 Erlang 编写的一款 MQTT 协议性能
 
 ### XMeter
 
-emqtt_bench 适用于开发阶段的快速性能验证。如果要进行大规模测试或正式测试，我们推荐另一款更专业的性能和负载测试工具 - [XMeter](https://www.emqx.com/zh/products/xmeter)。
+emqtt_bench 适用于开发阶段的快速性能验证。
 
 XMeter 是一款基于 JMeter 的性能测试工具，它对JMeter的架构进行了改造，达到了完全水平扩展的能力。能够轻松处理大量数据并执行高频测试。XMeter不仅继承了 JMeter 的强大功能，还增加了许多新的特性。在测试过程中，提供丰富而实时的测试报告，让测试人员能够随时查看 MQTT 的关键性能指标，如吞吐量、响应时间和成功率等。同时XMeter 内置了监控系统，可以实时监测 MQTT Broker 的资源消耗情况。
 
@@ -133,23 +133,6 @@ XMeter 有两个版本可供选择。
 
 <center>图 6 用于 MQTT 测试的 JMeter 测试脚本</center>
 
-- [XMeter Cloud](https://xmeter-cloud.emqx.com/)：全托管的MQTT负载测试云服务，简单易用：
-  - 一键发起 MQTT 性能测试，无需手动部署测试资源
-  - 仅需 3 步完成 MQTT 测试配置，免除编写场景脚本的负担
-  - 测试资源云上按需创建，测试环境高度自动化，节省大量时间和人力成本
-
-您只需在我们的[网站](https://xmeter-cloud.emqx.com/)上注册一个免费试用账号，然后按照[此文档](https://docs.emqx.com/en/xmeter-cloud/latest/)的指引，即可开启您的 XMeter 之旅。
-
 ## 总结
 
 在本文中，我们讨论了几种常见的测试场景和用来评估 MQTT Broker 性能的关键指标。通过理解和应用这些测试技术和指标，您可以优化 MQTT 系统性能和可靠性，提升物联网和消息传输基础设施的整体水平。
-
-
-
-<section class="promotion">
-    <div>
-        免费试用 XMeter Cloud
-        <div class="is-size-14 is-text-normal has-text-weight-normal">全托管的 MQTT 负载测试云服务</div>
-    </div>
-    <a href="https://accounts-zh.emqx.com/signup?continue=https%3A%2F%2Fxmeter-cloud.emqx.com%2FcommercialPage.html%23%2Fproducts" class="button is-gradient px-5">开始试用 →</a>
-</section>

@@ -83,7 +83,7 @@ Notably, each database type achieves an impressive 100,000 transactions per seco
 
 ### NeuronEX
 
-[NeuronEX](https://www.emqx.com/en/products/neuronex) is a specialized software designed for the collection of equipment data and edge intelligence analysis within the industrial sector. Its primary application is in industrial environments, where it facilitates communication between industrial equipment, collects data from industrial bus protocols, integrates industrial system data, filters and analyzes data at the edge, and seamlessly integrates AI algorithms. It also enables seamless integration with Industrial Internet platforms and facilitates various related functions.
+[NeuronEX](https://www.emqx.com/en/products/emqx-neuron) is a specialized software designed for the collection of equipment data and edge intelligence analysis within the industrial sector. Its primary application is in industrial environments, where it facilitates communication between industrial equipment, collects data from industrial bus protocols, integrates industrial system data, filters and analyzes data at the edge, and seamlessly integrates AI algorithms. It also enables seamless integration with Industrial Internet platforms and facilitates various related functions.
 
 NeuronEX, offered as a commercial software service, encompasses both Neuron and eKuiper.
 

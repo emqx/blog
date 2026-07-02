@@ -4,7 +4,7 @@
 
 ## 为什么要迁移？
 
-不久前，我们将 MQTTX Web 的在线站点由 <https://www.emqx.io/online-mqtt-client> 迁移到了目前的 [http://mqtt-client.emqx.com](http://mqtt-client.emqx.com/)。然而，由于其仅能通过 HTTP 访问，存在固有的关键安全漏洞。此外，它与主域名 [http://emqx.com](https://www.emqx.com/) 同源，存在 cookie 共享的风险。这些都可能导致信息泄露和其他安全威胁。
+不久前，我们将 MQTTX Web 的在线站点由 <https://www.emqx.io/online-mqtt-client> 迁移到了目前的 [http://mqtt-client.emqx.com](http://mqtt-client.emqx.com/)。然而，由于其仅能通过 HTTP 访问，存在固有的关键安全漏洞。此外，它与主域名 [https://www.emqx.com](https://www.emqx.com/zh) 同源，存在 cookie 共享的风险。这些都可能导致信息泄露和其他安全威胁。
 
 为了进一步增强整体安全性和合规性，我们决定将站点迁移至 <https://mqttx.app/web-client>。新站点将具有以下优势：
 

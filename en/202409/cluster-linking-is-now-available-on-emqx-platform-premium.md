@@ -18,7 +18,7 @@ Cluster Linking allows you to federate multiple EMQX clusters distributed across
 
 EMQX Platform Premium users can start leveraging the power of Cluster Linking today. Our comprehensive documentation provides step-by-step guidance on setting up and optimizing your multi-region clusters.
 
-To learn more about how Cluster Linking can transform your IoT infrastructure, visit our dedicated solution page: [EMQX Cluster Linking](https://www.emqx.com/en/solutions/cluster-linking)
+To learn more about how Cluster Linking can transform your IoT infrastructure, visit our dedicated solution page: [EMQX Cluster Linking](https://www.emqx.com/en/features)
 
 For detailed instructions and best practices, refer to our documentation: [Cluster Linking Documentation](https://docs.emqx.com/en/cloud/latest/cluster_linking/cluster_linking.html)
 
