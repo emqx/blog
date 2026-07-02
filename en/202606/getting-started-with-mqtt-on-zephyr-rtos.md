@@ -439,7 +439,7 @@ west build -d build-nsos -p always -b native_sim/native/64 . \
     -- -DOVERLAY_CONFIG=prj-nsos.conf
 ```
 
-![image.png](https://assets.emqx.com/images/1ac457a086f00400b3edbfc4e0ec7425.png)
+![image.png](https://assets.emqx.com/images/a9e22087d3c6dea0268c9eb7d74dba77.png)
 
 *Upon a successful build, the terminal will output:* `[211/211] Running utility command for native_runner_executable`.
 
@@ -480,7 +480,7 @@ Entered conn blocking maintenance mode. Press Ctrl+C to terminate simulation pro
 
 Verification Results:
 
-![image.png](https://assets.emqx.com/images/f079f583b890e12d86e283bd75190dfc.png)
+![image.png](https://assets.emqx.com/images/77fb243005a5c99383c108c19fbb5679.png)
 
 - The Zephyr shell prints `Connection successful!` upon completing the handshake.
 
@@ -534,7 +534,7 @@ The Zephyr shell will instantly display the received message:
 
 Verification Results:
 
-![image.png](https://assets.emqx.com/images/8d9829e848c20fe6974a3892e58df327.png)
+![image.png](https://assets.emqx.com/images/0bb476f5dc77792bb54bb0fc80d21fff.png)
 
 The terminal logs will show a side-by-side or sequential confirmation: the `mqtt_cli pub` command successfully dispatches the message on one side, while the Zephyr subscriber shell immediately prints the received payload log on the other.
 
@@ -716,7 +716,7 @@ Entered conn blocking maintenance mode. Press Ctrl+C to terminate simulation pro
 
 Verification results:
 
-![image.png](https://assets.emqx.com/images/e62fa2b89ff475667cde1617b19832e6.png)
+![image.png](https://assets.emqx.com/images/d02c1e01430a83f31456d3886f63e1f7.png)
 
 The Zephyr shell outputs the complete TLS connection sequence log, including explicit confirmations for `CA certificate loaded OK`, `peer_verify`, `hostname`, and ultimately `Connection successful!`.
 
@@ -784,7 +784,7 @@ Verification results:
 
 The terminal displays the complete confirmation flow, finalized by the `[Published 1/1]` log on the Zephyr TLS publisher side.
 
-![image.png](https://assets.emqx.com/images/18a5bf9dfe002196656251d363ea618c.png)
+![image.png](https://assets.emqx.com/images/d9a291055d3821c4610a590b549a6c8c.png)
 
 ## VI. Project Configuration and Execution Environment Comparison
 
