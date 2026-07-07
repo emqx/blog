@@ -1,8 +1,8 @@
 **MQTT over WebSocket** has become an indispensable technology for connecting web browsers to the world of the Internet of Things (IoT). By combining the lightweight efficiency of **[MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt)** with the real-time, bi-directional capabilities of **WebSockets**, it enables web applications to seamlessly communicate with IoT devices.
 
-This guide provides a comprehensive overview of **MQTT over WebSocket**, explaining its core concepts, key benefits, and a step-by-step tutorial on how to get started.
+In this guide, you will learn how to use **MQTT over WebSocket** in a browser using MQTT.js, connect to an MQTT broker via WebSocket, and implement publishing and subscribing in real time. We will also cover secure WebSocket connections (WSS) and common configuration mistakes.
 
-## **Understanding MQTT and WebSocket: A Perfect Synergy**
+## What is the Difference Between MQTT and WebSocket?
 
 Before diving into the practical steps, let's quickly review the two protocols at play:
 
@@ -11,7 +11,7 @@ Before diving into the practical steps, let's quickly review the two protocols a
 
 The synergy of these two protocols is powerful. **MQTT over WebSocket** allows you to leverage the efficiency of MQTT's publish/subscribe model directly within any web browser, which natively supports WebSockets. This simplifies development and democratizes access to IoT data, as you can now build web dashboards and applications that interact with IoT devices in real time without a complex backend.
 
-## Key Benefits of Using MQTT over WebSocket
+## Key Benefits of MQTT over WebSocket
 
 Choosing to implement **MQTT over WebSocket** offers several compelling advantages:
 
@@ -23,7 +23,7 @@ Choosing to implement **MQTT over WebSocket** offers several compelling advantag
 
 MQTT over WebSocket democratizes access to IoT devices, enabling anyone with a web browser to interact with these devices in real-time and easily.
 
-## Prerequisite for MQTT over WebSocket: Prepare an MQTT Broker
+## Prerequisites: MQTT Broker Setup
 
 Before proceeding, please ensure you have an [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) to communicate and test with. There are several options available for obtaining an MQTT broker:
 
@@ -82,7 +82,10 @@ For more information, please visit [Free Public MQTT Broker](https://www.emqx.co
 </section>
 
 
+
 ## Get Started with MQTT over WebSocket
+
+In this section, we will use MQTT.js to establish an MQTT over WebSocket connection to an MQTT broker using a WebSocket-enabled endpoint.
 
 ### Install MQTT WebSocket Client
 
@@ -125,7 +128,7 @@ For simplicity, we will implement this directly in the browser by creating a bas
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Weboscoket MQTT</title>
+  <title>WebSocket MQTT</title>
   <script src="https://unpkg.com/mqtt/dist/mqtt.min.js"></script>
 </head>
 <body>
@@ -271,6 +274,14 @@ Let's test our setup by opening the HTML file we created in a web browser. We ca
 
 ## Q&A
 
+### What is MQTT over WebSocket and how does MQTT.js use it?
+
+MQTT over WebSocket is a method of using the MQTT protocol over WebSocket connections. It allows MQTT.js running in browsers to connect to an MQTT broker WebSocket connection and enable real-time publish/subscribe messaging for IoT applications.
+
+### Can MQTT run in browser?
+
+Yes. MQTT can run in browsers using MQTT.js with WebSocket connections.
+
 ### What is the difference between MQTT and WebSocket?
 
 MQTT (Message Queuing Telemetry Transport) is a message transfer protocol based on the publish/subscribe pattern. It is typically used for communication between IoT devices. It is a lightweight protocol with low overhead and low bandwidth consumption, making it suitable for resource-constrained devices.
@@ -295,13 +306,38 @@ A path must be filled in when using WebSocket to connect to [EMQX](https://githu
 
 In EMQX, the default path for MQTT over WebSocket is `/mqtt`. This is set according to the specification. Therefore, when connecting to EMQX, this path must be included in the WebSocket address to ensure the connection is correctly routed to the MQTT broker.
 
+### Why does my MQTT connection drop when the browser tab goes to the background?
+
+Modern web browsers (like Chrome and Safari) severely throttle JavaScript execution and timers in background tabs to save battery and CPU. This throttling can delay the `keepalive` ping packets sent by MQTT.js, causing the MQTT broker to assume the client is offline and close the connection.
+
+To mitigate this background disconnection issue, you can:
+
+- Increase the `keepalive` interval in your connection options (e.g., setting it to 120 seconds or higher).
+- Implement an automatic reconnection strategy using `reconnectPeriod`.
+- Run your MQTT.js client logic inside a **Web Worker**, which runs in a separate thread and is less aggressively throttled by the browser.
+
+### What ports should I open on my firewall for MQTT over WebSocket?
+
+Unlike standard MQTT which uses TCP ports, MQTT over WebSocket operates over standard web protocols. You need to open the following ports based on your setup:
+
+- **`8083`**: The default port for unencrypted WebSocket (`ws://`) connections.
+- **`8084`**: The default port for secure, encrypted WebSocket (`wss://`) connections.
+
+*Note: These are completely separate from the standard MQTT TCP port (`1883`) and MQTT over TLS port (`8883`). Ensure your corporate firewall allows traffic through 8083/8084 if you are hosting your own broker.*
+
+### Does MQTT over WebSocket support MQTT 5.0 features?
+
+Yes, absolutely. MQTT over WebSocket is not a new version of the protocol; it simply wraps standard MQTT packets inside WebSocket frames. 
+
+As long as your client library (such as MQTT.js, where you specify `protocolVersion: 5`) and your MQTT broker (like EMQX) both support MQTT 5.0, you can fully utilize advanced features like **User Properties**, **Shared Subscriptions**, **Session Expiry**, and **Will Delay Interval** directly in the browser.
+
 ### When developing MQTT web applications, whether using Vue.js or React, can I only use WebSocket connections?
 
 If you are developing applications in a browser, you can only use WebSocket connections to establish MQTT over WebSocket connections.
 
 ## Summary
 
-This quickstart guide covers the basics of using MQTT over WebSocket to establish real-time communication between MQTT brokers and web browsers. We walk you through the essential steps, including establishing the WebSocket connection, initializing the [MQTT client](https://www.emqx.com/en/blog/mqtt-client-tools), subscribing and publishing messages, and testing the connection.
+This guide introduced how to use **MQTT over WebSocket** with **MQTT.js** to establish a **MQTT broker WebSocket connection** in the browser. By combining MQTT and WebSocket, developers can enable real-time publish/subscribe communication for IoT applications without requiring a backend bridge.
 
 You can find the complete code for the project at this GitHub link: [MQTT-Client-Examples/mqtt-client-WebSocket at master · emqx/MQTT-Client-Examples](https://github.com/emqx/MQTT-Client-Examples/tree/master/mqtt-client-WebSocket).
 
@@ -319,9 +355,9 @@ To learn more about MQTT over WebSocket, here are some useful resources:
 
   MQTTX Web is a user-friendly, browser-based tool for online debugging, developing, and testing MQTT applications. It connects to an MQTT broker via a WebSocket client and offers an intuitive interface.
 
-- [Top 3 MQTT WebSocket Clients in 2025](https://www.emqx.com/en/blog/top-3-mqtt-websocket-clients-in-2023)
+- [Top 3 MQTT WebSocket Clients in 2026](https://www.emqx.com/en/blog/top-3-mqtt-websocket-clients-in-2023)
 
-  This blog will explore the top 3 MQTT WebSocket client tools highly recommended in 2023.
+  This blog will explore the top 3 MQTT WebSocket client tools highly recommended in 2026.
 
 - [JavaScript MQTT Client: A Beginner's Guide to MQTT.js](https://www.emqx.com/en/blog/mqtt-js-tutorial)
 
