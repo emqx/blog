@@ -14,6 +14,8 @@ Zigbee2MQTT allows your Zigbee devices to communicate with your home automation 
 
 The key advantage of Zigbee2MQTT is that it eliminates the need for proprietary Zigbee bridges or gateways. You can use a cheap, generic Zigbee USB adapter to control all your Zigbee devices. This reduces cost and enhances the versatility of your home automation system.
 
+> Learn more: **[Zigbee2MQTT in 2026: Local Smart-Home Control over MQTT](https://www.emqx.com/en/blog/zigbee2mqtt-in-2026)**.
+
 ## Zigbee2MQTT Benefits
 
 Here are the key benefits of using Zigbee2MQTT instead of other, proprietary bridges:
