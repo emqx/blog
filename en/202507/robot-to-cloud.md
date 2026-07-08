@@ -54,13 +54,13 @@ Addressing these challenges requires a powerful and reliable connectivity soluti
 
 ### How EMQX Solves Robot-to-Cloud Challenges
 
-EMQX is specifically engineered to handle the unique demands of industrial IoT and robotics:
+EMQX is specifically engineered to handle the unique demands of [industrial IoT](https://www.emqx.com/en/blog/industrial-iot-systems) and robotics:
 
 - **Reliable & Scalable Messaging:** EMQX leverages [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt), the lightweight and efficient publish/subscribe protocol ideal for robot communication. Its Quality of Service (QoS) levels ensure message delivery even over unreliable networks. EMQX is proven to handle millions of concurrent connections and messages per second, providing the necessary scalability for large robot fleets.
 - **Low Latency & Real-time Data:** Designed for speed, EMQX ensures rapid data transfer, crucial for time-sensitive robot operations and responsive remote control.
 - **Security Features:** EMQX provides robust security mechanisms, including TLS/SSL encryption, authentication (e.g., username/password, client certificates), and authorization, safeguarding your sensitive robot data from end-to-end.
 - **Protocol Gateways & Interoperability:** Beyond MQTT, EMQX offers various protocol gateways and bridges that allow seamless integration with diverse robot ecosystems, breaking down interoperability barriers.
-- **Data Integration & Bridging:** EMQX effortlessly integrates with leading cloud platforms like AWS IoT, Azure IoT Hub, and Google Cloud IoT Core, as well as enterprise systems such as databases and Kafka, facilitating further data processing and analytics.
+- **Data Integration & Bridging:** EMQX effortlessly integrates with leading cloud platforms like AWS IoT, Azure IoT Hub, and Google Cloud [IoT Core](https://www.emqx.com/en/blog/understanding-aws-iot-core), as well as enterprise systems such as databases and Kafka, facilitating further data processing and analytics.
 - **Edge Deployment:** For latency-sensitive applications or environments with intermittent connectivity, **[EMQX Edge](https://www.emqx.com/en/products/emqx-edge)** can be deployed locally, enabling efficient edge computing and reducing reliance on continuous cloud connectivity.
 
 ### Use Cases with EMQX

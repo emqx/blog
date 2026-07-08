@@ -4,7 +4,7 @@
 
 事故造成数据中心物理损坏、电力中断及网络连接异常，导致多个可用区（Availability Zone）出现中断或性能下降，影响了 EC2、S3、DynamoDB 等多项核心服务。随着 AWS 故障持续扩散，ME-CENTRAL-1 区域内的多个可用区（AZ）相继停摆，引发了区域可用性的整体瘫痪。
 
-作为 IoT 消息基础设施平台，EMQX Cloud 在该区域部署的部分实例也受到影响。但凭借多 AZ 集群架构、快速故障转移以及跨 Region 灾备方案，EMQX Cloud 有效保障了客户设备连接和关键业务的持续运行。
+作为 IoT 消息基础设施平台，[EMQX Cloud](https://www.emqx.com/zh/cloud) 在该区域部署的部分实例也受到影响。但凭借多 AZ 集群架构、快速故障转移以及跨 Region 灾备方案，EMQX Cloud 有效保障了客户设备连接和关键业务的持续运行。
 
 **本文将复盘 EMQX Cloud 在本次事件中的应急响应过程，并深度拆解 EMQX 在云原生 IoT 消息服务中的高可用设计。**
 
@@ -22,10 +22,10 @@ EMQX Cloud 立即执行以下措施：
 - 节点迁移至 **AZ1 和 AZ3。**
 - 维持集群多 AZ 高可用状态。
 
-在多 AZ 架构下，MQTT 客户端可以自动连接到其他可用节点，因此：
+在多 AZ 架构下，[MQTT 客户端](https://www.emqx.com/zh/blog/mqtt-client-tools)可以自动连接到其他可用节点，因此：
 
 - 设备连接**未出现大规模中断。**
-- MQTT 消息服务持续提供。
+- [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 消息服务持续提供。
 
 ### AZ3 性能下降
 

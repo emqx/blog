@@ -2,13 +2,13 @@
 
 我们很高兴地宣布：由 EMQ 发起的面向全球的 [MQTT 开放基准测试规范](https://github.com/emqx/mqttbs)现已正式发布！
 
-该测试规范包含了实用的典型使用场景、一套衡量 Broker 性能的主要指标，以及一个模拟负载和收集测试结果的工具，可以帮助开发者评估 MQTT Broker 的可扩展性和性能，从而选择最需要和合适的产品。
+该测试规范包含了实用的典型使用场景、一套衡量 Broker 性能的主要指标，以及一个模拟负载和收集测试结果的工具，可以帮助开发者评估 [MQTT Broker](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison) 的可扩展性和性能，从而选择最需要和合适的产品。
 
 ![MQTT Broker 集群](https://assets.emqx.com/images/88392ce7081424a43dffcdecbfe2b61b.png)
 
 ## 客观实用的 MQTT 负载测试方法
 
-在[发布/订阅模式](https://www.emqx.com/zh/blog/mqtt-5-introduction-to-publish-subscribe-model)下，MQTT Broker 是连接设备和传输物联网数据的核心。随着物联网的普及，处理海量设备及其产生的高速数据流充满了挑战，MQTT Broker 的可扩展性和性能也因此成为物联网解决方案的关键。
+在[发布/订阅模式](https://www.emqx.com/zh/blog/mqtt-5-introduction-to-publish-subscribe-model)下，[MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) Broker 是连接设备和传输物联网数据的核心。随着物联网的普及，处理海量设备及其产生的高速数据流充满了挑战，MQTT Broker 的可扩展性和性能也因此成为物联网解决方案的关键。
 
 在这一背景下，EMQ 提出了这套 MQTT 开放基准测试规范，旨在提供一种客观且实用的 MQTT Broker 测试方法，它将通过以下主要优势简化 MQTT Broker 的负载测试：
 

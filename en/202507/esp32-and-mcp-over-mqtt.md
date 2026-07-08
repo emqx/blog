@@ -128,7 +128,7 @@ Here's the setup, as illustrated:
   - Install [**VS Code**](https://code.visualstudio.com/).
   - Install the **ESP-IDF extension** within **VS Code**.
   - Refer to the [development environment configuration guide](https://github.com/espressif/vscode-esp-idf-extension) for setup.
-- **MQTT Client Test Tool:** You can download **MQTTX** from [MQTTX: Your All-in-one MQTT Client Toolbox](https://mqttx.app/) .
+- **[MQTT Client](https://www.emqx.com/en/blog/mqtt-client-tools) Test Tool:** You can download **MQTTX** from [MQTTX: Your All-in-one MQTT Client Toolbox](https://mqttx.app/) .
 
 **Driver Notes**
 
@@ -137,7 +137,7 @@ Here's the setup, as illustrated:
 
 ### Register for EMQX Serverless
 
-MQTT will be the transport protocol for our intelligent agent and cloud-based large models. All subsequent features, including voice, vision, and AI control, rely on its real-time communication with the cloud. To simplify things and avoid complex local installation and configuration, we recommend using the **EMQX MQTT cloud service**.
+[MQTT will](https://www.emqx.com/en/blog/use-of-mqtt-will-message) be the transport protocol for our intelligent agent and cloud-based large models. All subsequent features, including voice, vision, and AI control, rely on its real-time communication with the cloud. To simplify things and avoid complex local installation and configuration, we recommend using the **EMQX MQTT cloud service**.
 
 To get started:
 
@@ -145,7 +145,7 @@ To get started:
 2. Follow the website's instructions to create an account, set up an MQTT service instance, and retrieve the following essential information:
    - **Broker Address**
    - **Username / Password**
-   - **Port Number** (port **8883** is recommended for MQTT over TLS)
+   - **Port Number** (port **8883** is recommended for [MQTT over TLS](https://www.emqx.com/en/blog/fortifying-mqtt-communication-security-with-ssl-tls))
 
 > **Note:** If you prefer, you can also deploy an **EMQX Broker** on your local machine or within your private network. This approach can help reduce network latency between your **ESP32** and the remote server. For deployment instructions, refer to: [Install EMQX Using Docker | EMQX Docs](https://docs.emqx.com/en/emqx/latest/deploy/install-docker.html)  
 

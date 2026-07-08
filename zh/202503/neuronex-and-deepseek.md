@@ -1,6 +1,6 @@
 ## 前言
 
-工业物联网（IIoT）通过整合 IT 和 OT 理念 ，利用现代流数据处理和边缘计算等先进技术，实现了实时数据监控与分析，能够支持生产流程优化及设备预测性维护、降低停机风险‌、精准定位质量偏差并显著提升良品率‌，推动了制造业的智能化转型与降本增效‌。
+[工业物联网](https://www.emqx.com/zh/blog/iiot-explained-examples-technologies-benefits-and-challenges)（IIoT）通过整合 IT 和 OT 理念 ，利用现代流数据处理和边缘计算等先进技术，实现了实时数据监控与分析，能够支持生产流程优化及设备预测性维护、降低停机风险‌、精准定位质量偏差并显著提升良品率‌，推动了制造业的智能化转型与降本增效‌。
 
 EMQ 推出的 NeuronEX 作为一款部署在工业边缘的实时数采和智能分析软件，具备工业设备协议采集、工业各系统数据集成、边端数据过滤分析、AI 算法集成，以及数据转发和平台对接等功能，能够为工业场景提供低延迟的数据接入管理与智能分析服务。
 
@@ -19,7 +19,7 @@ WHERE tag1="device_01"
 GROUP BY TumblingWindow(ss, 5)
 ```
 
-SQL 处理完成后，用户可以指定将数据写入不同的目标系统，比如发送到 EMQX MQTT Broker，调用远程的 HTTP 服务或 Kafka 以及各种数据库等。
+SQL 处理完成后，用户可以指定将数据写入不同的目标系统，比如发送到 EMQX [MQTT Broker](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison)，调用远程的 HTTP 服务或 Kafka 以及各种数据库等。
 
 大多数情况下，用户可以通过 SQL 高效地完成业务逻辑的处理。但在逻辑比较复杂的情况下，通过 SQL 方式处理难度很大甚至无法完成，例如以下的客户需求：
 

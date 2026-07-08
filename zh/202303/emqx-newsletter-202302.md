@@ -1,4 +1,4 @@
-过去的 2 月份，EMQX 开源版发布了 v5.0.16、v5.0.17 以及 v5.0.18 三个版本，提供了 MQTT over QUIC 多流（multistream）支持。企业版 v4.3.19 以及 v4.4.15 开发完成，即将发布，数据集成将新增对 HStreamDB 最新版本的适配，并允许设置 RocketMQ 消息生产者投递策略，将相同属性的消息转发到同一 RocketMQ 队列（Queue）中。
+过去的 2 月份，EMQX 开源版发布了 v5.0.16、v5.0.17 以及 v5.0.18 三个版本，提供了 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) over [QUIC](https://www.emqx.com/zh/blog/quic-protocol-the-features-use-cases-and-impact-for-iot-iov) 多流（multistream）支持。企业版 v4.3.19 以及 v4.4.15 开发完成，即将发布，数据集成将新增对 HStreamDB 最新版本的适配，并允许设置 RocketMQ 消息生产者投递策略，将相同属性的消息转发到同一 RocketMQ 队列（Queue）中。
 
 正在开发中的功能还有基于 MQTT 的大文件传输，目前已经完成主体开发并在团队内部进行了 PoC Demo。同时，我们对[开源版 5.0 文档](https://docs.emqx.com/zh/emqx/v5.0)进行了大量重构和内容调整，以帮助用户更快上手使用 EMQX。
 
@@ -16,7 +16,7 @@
 6. 提高客户端/服务器端处理的并行性；
 7. 更健壮的 MQTT 数据处理：应用程序导致的单流中止不会导致连接关闭；
 8. 更细粒度的收发端协同流量控制：可以对每一个流，同时对整个连接进行流控，实现更细粒度的流量控制；
-9. 减少应用层的延迟：客户端在发送订阅或发布数据包之前不需要等待 CONNACK。
+9. 减少应用层的延迟：客户端在发送订阅或发布数据包之前不需要等待 [CONNACK](https://www.emqx.com/zh/blog/mqtt5-new-features-reason-code-and-ack)。
 
 ## MQTT 文件传输完成 PoC Demo
 

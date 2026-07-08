@@ -38,7 +38,7 @@ As our chatbot evolved and grew more complex, we started running into major road
 
   Building and managing conversation flows with the vendor’s tools was messy. There was no version control, and scaling workflows or making changes safely was a constant challenge.
 
-> 💡 So we made the call — instead of fighting these limitations, we decided to build our own system. Going in-house gave us full control and let us move faster. We chose MQTT over EMQX as our messaging backbone because of its speed, flexibility, and real-time performance, which is exactly what our chat experience needed.
+> 💡 So we made the call — instead of fighting these limitations, we decided to build our own system. Going in-house gave us full control and let us move faster. We chose [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) over EMQX as our messaging backbone because of its speed, flexibility, and real-time performance, which is exactly what our chat experience needed.
 
 # Why MQTT Was the Right Protocol Choice
 
@@ -103,7 +103,7 @@ The above points are better summarized in the tabular form below in the protocol
 
 # Picking the Right MQTT Broker: Why EMQX Won Us Over
 
-When we set out to choose an MQTT broker to power our chatbot infrastructure, we evaluated a bunch of options. In the end, **EMQX** checked all the right boxes for us. Here’s why:
+When we set out to choose an [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) to power our chatbot infrastructure, we evaluated a bunch of options. In the end, **EMQX** checked all the right boxes for us. Here’s why:
 
 ## Built for Performance and Scale
 

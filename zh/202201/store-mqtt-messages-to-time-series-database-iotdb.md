@@ -3,7 +3,7 @@
 
 [EMQX](https://www.emqx.com/zh/products/emqx) 是一个大规模扩展、可弹性伸缩的开源云原生分布式物联网消息中间件，由开源物联网数据基础设施软件供应商 [EMQ 映云科技](https://www.emqx.com/zh/about) 发布。EMQX 可以高效可靠地处理海量物联网设备的并发连接，并且内置了强大的规则引擎功能，用以对事件和消息流数据进行高性能地实时处理。规则引擎通过 SQL 语句提供了灵活的 "配置式" 的业务集成方案，简化了业务开发流程，提升了易用性，降低了用户的业务逻辑与 EMQX 的耦合度。
 
-本文将介绍如何使用 EMQX 规则引擎的 MQTT 数据桥接功能，接收 [MQTT 客户端](https://www.emqx.com/zh/blog/mqtt-client-tools)发送的数据，并实时插入到时序数据库 IoTDB。
+本文将介绍如何使用 EMQX 规则引擎的 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 数据桥接功能，接收 [MQTT 客户端](https://www.emqx.com/zh/blog/mqtt-client-tools)发送的数据，并实时插入到时序数据库 IoTDB。
 
 ## 准备工作
 
@@ -143,7 +143,7 @@ FROM
     "t/#"
 ```
 
-然后我们在页面的底部，给规则加一个 "桥接数据到 MQTT Broker" 动作：
+然后我们在页面的底部，给规则加一个 "桥接数据到 [MQTT Broker](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison)" 动作：
 
 ![桥接数据到 MQTT Broker](https://assets.emqx.com/images/faa1282d60b525ec58a92659bc164c70.png)
 

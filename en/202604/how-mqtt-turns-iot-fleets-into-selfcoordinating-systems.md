@@ -1,6 +1,6 @@
 What if every device in your fleet had its own AI agent? One that could reason about the device's state, coordinate with neighboring agents, and escalate issues through a multi-step workflow without a central orchestrator bottleneck.
 
-A [previous post](https://www.emqx.com/en/blog/why-mqtt-is-the-missing-infrastructure-layer-for-agentic-ai) made the case that MQTT's pub/sub primitives (retained messages, Last Will and Testament, request-response correlation, shared subscriptions) map structurally to what AI agent coordination demands. This post takes that argument to its logical conclusion for IoT: an architecture where lightweight AI agents run alongside devices, discover each other through the broker, and compose into multi-step workflows that no central orchestrator needs to manage.
+A [previous post](https://www.emqx.com/en/blog/why-mqtt-is-the-missing-infrastructure-layer-for-agentic-ai) made the case that [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt)'s pub/sub primitives (retained messages, Last Will and Testament, request-response correlation, shared subscriptions) map structurally to what AI agent coordination demands. This post takes that argument to its logical conclusion for IoT: an architecture where lightweight AI agents run alongside devices, discover each other through the broker, and compose into multi-step workflows that no central orchestrator needs to manage.
 
 ## The Device Management Problem AI Agents Should Solve
 
@@ -24,7 +24,7 @@ And when a device agent crashes? The broker's Last Will and Testament mechanism 
 
 ## The Architecture: Broker as Coordination Fabric
 
-The core architectural insight is that the MQTT broker already provides the primitives that agent orchestration systems typically build from scratch. Instead of reimplementing routing, discovery, state persistence, and crash detection in application code, you push those concerns into the broker and keep the agents simple.
+The core architectural insight is that the [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) already provides the primitives that agent orchestration systems typically build from scratch. Instead of reimplementing routing, discovery, state persistence, and crash detection in application code, you push those concerns into the broker and keep the agents simple.
 
 The architecture has three layers:
 
@@ -65,7 +65,7 @@ The [A2A Agent Registry](https://github.com/emqx/eip/blob/0033-agent-reg/active/
 What this adds to the coordination fabric:
 
 - **Schema validation on registration.** Agent Cards are validated against a JSON schema before the broker accepts them. In a fleet of device agents that register autonomously, this is the difference between a reliable discovery namespace and one that degrades over time.
-- **Broker-managed status tracking.** EMQX tracks each agent's connection state and attaches liveness metadata via MQTT v5 User Properties. Other agents and dashboards can see not just what agents *exist* but which ones are currently *online*, without building a separate health-check system.
+- **Broker-managed status tracking.** EMQX tracks each agent's connection state and attaches liveness metadata via [MQTT v5](https://www.emqx.com/en/blog/introduction-to-mqtt-5) User Properties. Other agents and dashboards can see not just what agents *exist* but which ones are currently *online*, without building a separate health-check system.
 - **Administrative visibility.** The Registry exposes CLI commands and a Dashboard interface for listing, inspecting, and managing agent registrations. In a fleet of hundreds of device agents, being able to search by organization, unit, or capability, and see the full Agent Card with security metadata, is the difference between a manageable system and an opaque one.
 - **Scoped authorization.** ACL-protected registry topics and optional A2A authorization policies let you scope agent interactions by organization or business unit. A device agent in Building A can discover and communicate with agents in its own unit without seeing (or being able to reach) agents in Building B.
 

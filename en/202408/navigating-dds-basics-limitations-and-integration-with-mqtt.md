@@ -121,7 +121,7 @@ MQTT and DDS differ in several ways, including their communication models and de
 
 |      | Transport Layer | Communication Modes | Overhead of Parsing Protocols | Bandwidth Consumption | Intra-Domain Delay | Cross-Domain Delay |
 | :--- | :-------------- | :------------------ | :---------------------------- | :-------------------- | :----------------- | :----------------- |
-| MQTT | TCP, QUIC       | PUB-SUB             | Low                           | Low                   | Low                | Low                |
+| MQTT | TCP, [QUIC](https://www.emqx.com/en/blog/quic-protocol-the-features-use-cases-and-impact-for-iot-iov)       | PUB-SUB             | Low                           | Low                   | Low                | Low                |
 | DDS  | TCP, UDP        | PUB-SUB, REQ-REP    | High                          | High                  | Low                | High               |
 
 As shown in the table, DDS excels in intra-domain communication, while MQTT is advantageous for cross-domain communication due to its lightweight nature, resulting in lower bandwidth usage and latency.

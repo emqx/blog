@@ -1,6 +1,6 @@
 ## Introduction
 
-[**OPC UA (OPC Unified Architecture)**](https://www.emqx.com/en/blog/opc-ua-protocol) is a cross-platform, service-oriented communication protocol widely used in industrial automation and the Industrial Internet of Things (IIoT). It provides a standardized framework for interoperability between industrial devices and systems. As a core technology in industrial communication, OPC UA offers high security, flexibility, and scalability, making it particularly suitable for Industry 4.0 and IIoT applications. It is gradually becoming the universal standard for industrial device interoperability.
+[**OPC UA (OPC Unified Architecture)**](https://www.emqx.com/en/blog/opc-ua-protocol) is a cross-platform, service-oriented communication protocol widely used in industrial automation and the [Industrial Internet of Things](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges) (IIoT). It provides a standardized framework for interoperability between industrial devices and systems. As a core technology in industrial communication, OPC UA offers high security, flexibility, and scalability, making it particularly suitable for Industry 4.0 and IIoT applications. It is gradually becoming the universal standard for industrial device interoperability.
 
 This article will introduce how NeuronEX's tag browser feature can help users manage OPC UA device tags more efficiently.
 

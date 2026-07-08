@@ -2,13 +2,13 @@ NanoMQ continued to update steadily in September, and the latest [v0.12.1](https
 
 ## **Bridge connection status event messages**
 
-In IoT applications, network instability often occurs in weak network state, which requires a reliable way to detect the current device's network state and connectivity with the cloud. Therefore, NanoMQ provides the ability to use bridge connections to detect network connection status. When users use NanoMQ to bridge to the cloud at the edge, NanoMQ will create an MQTT connection to the specified cloud broker. Based on the long connection feature of MQTT, devices in the local network can use this connection to judge the network status.
+In IoT applications, network instability often occurs in weak network state, which requires a reliable way to detect the current device's network state and connectivity with the cloud. Therefore, NanoMQ provides the ability to use bridge connections to detect network connection status. When users use NanoMQ to bridge to the cloud at the edge, NanoMQ will create an [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) connection to the specified cloud broker. Based on the long connection feature of MQTT, devices in the local network can use this connection to judge the network status.
 
 When a bridge connection is broken due to a local network outage or other failures, NanoMQ will detect the disconnection of the bridge connection and convert it into a client online/offline event message to publish to the system topic. After the network is restored, the bridge connection is automatically reconnected, and an online event message is also published in the system topic. The local client and other services can perform corresponding emergency processing according to the received message, and can also configure multiple bridge targets as alternative services to avoid misjudgment caused by cloud service outages.
 
 ### **How to obtain bridge online/offline event messages**
 
-At present, NanoMQ's bridge status events support all bridge modes, including MQTT 3.1.1/5.0 and MQTT over QUIC. The system topics of online/offline event messages are $SYS/brokers/connected and $SYS/brokers/disconnected respectively. Event messages can also be obtained as a standard Publish message in the way of WebHook. Here we take an MQTT over QUIC bridge configuration as an example to demonstrate how to obtain the online/offline messages of bridge connection:
+At present, NanoMQ's bridge status events support all bridge modes, including MQTT 3.1.1/5.0 and [MQTT over QUIC](https://www.emqx.com/en/blog/mqtt-over-quic). The system topics of online/offline event messages are $SYS/brokers/connected and $SYS/brokers/disconnected respectively. Event messages can also be obtained as a standard Publish message in the way of WebHook. Here we take an MQTT over [QUIC](https://www.emqx.com/en/blog/quic-protocol-the-features-use-cases-and-impact-for-iot-iov) bridge configuration as an example to demonstrate how to obtain the online/offline messages of bridge connection:
 
 If the bridge is configured as (only relevant excerpts):
 
@@ -37,7 +37,7 @@ connect_cb: mqtt-tcp://localhost:1883 connect result: 0
 $SYS/brokers/disconnected: {"username":"quic_bridge","ts":1664277394014,"reason_code":"8b","client_id":"quic_client"}
 ```
 
-It can be seen that the client ID and user name/password in the online/offline event messages are consistent with those in the bridge configuration, which can be used to distinguish local clients from bridge clients. At present, bridge connection status shares the same system topic with ordinary MQTT clients. NanoMQ also considers setting up a separate system topic for the bridge network status and adding a standard network health monitoring feature as the cloud edge message bus. Users are welcome to submit relevant issues and function applications.
+It can be seen that the client ID and user name/password in the online/offline event messages are consistent with those in the bridge configuration, which can be used to distinguish local clients from bridge clients. At present, bridge connection status shares the same system topic with ordinary [MQTT clients](https://www.emqx.com/en/blog/mqtt-client-tools). NanoMQ also considers setting up a separate system topic for the bridge network status and adding a standard network health monitoring feature as the cloud edge message bus. Users are welcome to submit relevant issues and function applications.
 
 ### **New Keep Alive parameter configuration for QUIC transport layer**
 

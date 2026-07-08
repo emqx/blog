@@ -1,4 +1,4 @@
-NanoMQ 继续保持稳步更新，0.9.0 将于 7 月初正式发布。此版本为大家带来了 2 个重要的功能更新：规则引擎和支持 QUIC 的 NanoSDK。同时还增加了离线数据缓存配置，各项性能优化和缺陷修复也在持续进行中。
+NanoMQ 继续保持稳步更新，0.9.0 将于 7 月初正式发布。此版本为大家带来了 2 个重要的功能更新：规则引擎和支持 [QUIC](https://www.emqx.com/zh/blog/quic-protocol-the-features-use-cases-and-impact-for-iot-iov) 的 NanoSDK。同时还增加了离线数据缓存配置，各项性能优化和缺陷修复也在持续进行中。
 
 ## 轻便易用的嵌入式规则引擎
 
@@ -72,7 +72,7 @@ RowId|Qos|Id|Topic|Clientid|Username|Password|Timestamp|Payload
 
 可见只有符合规则的消息 msg1 被持久化到了数据库中。规则引擎目前支持标准 JSON 解析和常用的 SQL 语句和符号，具体详情请参阅文档。
 
-目前 NanoMQ 的规则引擎运行顺序是在处理完 MQTT 消息之后串行执行，如果规则耗时过多的话会影响 Broker 本身的性能和消息吞吐。如果有许多数据需要通过规则引擎进行持久化，建议将/etc/nanomq.conf中的 parallel=32 数量提高以增加逻辑线程数以支持更多规则和消息的并行处理。
+目前 NanoMQ 的规则引擎运行顺序是在处理完 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 消息之后串行执行，如果规则耗时过多的话会影响 Broker 本身的性能和消息吞吐。如果有许多数据需要通过规则引擎进行持久化，建议将/etc/nanomq.conf中的 parallel=32 数量提高以增加逻辑线程数以支持更多规则和消息的并行处理。
 
 ## 边缘数据缓存配置
 
@@ -129,7 +129,7 @@ NanoSDK 通过为 NNG 的传输层增加 QUIC 支持，使 MQTT、nanomsg 等协
 
 <center>QUIC： 0RTT 快速重连</center>
 
-API 方面保持了之前的使用习惯，一行代码即可基于 QUIC 创建 MQTT 客户端：
+API 方面保持了之前的使用习惯，一行代码即可基于 QUIC 创建 [MQTT 客户端](https://www.emqx.com/zh/blog/mqtt-client-tools)：
 
 ```
 ## Create MQTT over Quic client with NanoSDK

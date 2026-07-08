@@ -11,7 +11,7 @@ Its complete process can be summarized as the following four steps:
 1. The [MQTT client](https://www.emqx.com/en/blog/mqtt-client-tools) first initiates an authentication request to the authentication server with user credentials such as username and password.
 2. The authentication server verifies the user credentials held by the client, issues a **token,** and returns it to the client after passing the verification.
 3. The client uses the **token** granted by the authentication server to initiate a connection request to the [MQTT server](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison).
-4. The MQTT server will check the **token** held by the client to confirm whether the authentication server signs it and whether the content has been tampered with. After the check is passed, the client will be allowed to connect.
+4. The [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) server will check the **token** held by the client to confirm whether the authentication server signs it and whether the content has been tampered with. After the check is passed, the client will be allowed to connect.
 
 ![Token-Based Authentication](https://assets.emqx.com/images/24afb3bb3d6a8936f14c86da166b797d.png)
 

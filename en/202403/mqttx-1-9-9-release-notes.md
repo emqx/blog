@@ -95,12 +95,12 @@ In the next development phase following MQTTX 1.9.9, we will focus on boosting v
 - **Payload Chart Visualization Enhancement - MQTTX Viewer**:
   - **Topic Tree View**: Enhance organization and visualization of topics.
   - **Diff View**: Compare different messages or payloads easily.
-  - **Dashboard View:** Offer a customizable overview of MQTT activities for personalized insights.
+  - **Dashboard View:** Offer a customizable overview of [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) activities for personalized insights.
   - **JSON View**: Improve handling and display of JSON formatted data.
-  - **System Topic View**: Specialized view for system-related MQTT topics.
-- **Support for Configurable Disconnect Properties (MQTT 5.0)**: Enhance connection management with customizable disconnection settings.
+  - **System Topic View**: Specialized view for system-related [MQTT topics](https://www.emqx.com/en/blog/advanced-features-of-mqtt-topics).
+- **Support for Configurable Disconnect Properties ([MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5))**: Enhance connection management with customizable disconnection settings.
 - **IoT Scenario Data Simulation**: Bring this feature to the desktop client to ease IoT scenario testing.
-- **Sparkplug B Support**: Extend MQTTX functionalities to include support for Sparkplug B.
+- **[Sparkplug B](https://www.emqx.com/en/solutions/mqtt-sparkplug) Support**: Extend MQTTX functionalities to include support for Sparkplug B.
 - **QoS 0 Message Storage Optimization**: Configurable options to reduce storage space usage.
 - **MQTT GUI Debug Functionality**: New features to aid in debugging MQTT communications.
 - **Plugin Functionality**: Introduction of a plugin system supporting protocol extensions like CoAP and [MQTT-SN](https://www.emqx.com/en/blog/connecting-mqtt-sn-devices-using-emqx).

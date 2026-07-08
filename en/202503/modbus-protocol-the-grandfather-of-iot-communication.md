@@ -134,7 +134,7 @@ Despite these limitations, the Modbus protocol remains a popular choice for many
 
 ## Modbus vs Other Protocols
 
-The Modbus Protocol is a cornerstone of industrial communication, but how does it compare to other popular protocols like OPC-UA, MQTT, Sparkplug, HTTP, and BACnet? This section offers a quick guide to help you understand where the Modbus Protocol stands among its peers, building on its variants (RTU, TCP, ASCII) discussed earlier.
+The Modbus Protocol is a cornerstone of industrial communication, but how does it compare to other popular protocols like OPC-UA, [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt), Sparkplug, HTTP, and BACnet? This section offers a quick guide to help you understand where the Modbus Protocol stands among its peers, building on its variants (RTU, TCP, ASCII) discussed earlier.
 
 #### Modbus Protocol vs OPC-UA
 
@@ -144,7 +144,7 @@ The Modbus Protocol is a cornerstone of industrial communication, but how does i
 #### Modbus Protocol vs MQTT
 
 - **Connection**: MQTT maintains persistent connections via a broker, unlike the Modbus Protocol’s request-based model.
-- **Use Case**: MQTT suits IoT cloud integration, while the Modbus Protocol excels in serial industrial setups.
+- **Use Case**: MQTT suits [IoT cloud](https://www.emqx.com/en/blog/iot-in-the-cloud-8-key-benefits-and-how-to-get-started) integration, while the Modbus Protocol excels in serial industrial setups.
 
 #### Modbus Protocol vs Sparkplug
 
@@ -170,7 +170,7 @@ Learn more:
 
 With the growth of the Industrial Internet of Things ([IIoT](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges)), there are many opportunities for the integration of Modbus protocol with modern IoT devices for automation, control, and data analytics. With IIoT, Modbus devices can now be part of a much larger, interconnected system, where data from these devices can be collected, analyzed, and utilized to optimize operations, improve safety, and reduce costs.
 
-[NeuronEX](https://www.emqx.com/en/products/emqx-neuron), an industrial edge data hub software, supports multiple Modbus Protocol variants—Modbus TCP, RTU, UDP, and RTU over TCP—connecting OT devices to IIoT systems seamlessly. NeuronEX can communicate with a wide range of industrial devices using different Modbus variants and protocols, enabling data acquisition, control, and interoperability with other components of the solution.
+[NeuronEX](https://www.emqx.com/en/products/emqx-neuron), an industrial edge data hub software, supports multiple Modbus Protocol variants—Modbus TCP, RTU, UDP, and RTU over TCP—connecting OT devices to [IIoT systems](https://www.emqx.com/en/blog/industrial-iot-systems) seamlessly. NeuronEX can communicate with a wide range of industrial devices using different Modbus variants and protocols, enabling data acquisition, control, and interoperability with other components of the solution.
 
 Here's a description of each Modbus driver:
 

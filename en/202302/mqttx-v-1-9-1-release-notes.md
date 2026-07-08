@@ -1,4 +1,4 @@
-MQTTX 1.9.1, an MQTT 5.0 client tool, is now available after two beta iterations.
+MQTTX 1.9.1, an [MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5) client tool, is now available after two beta iterations.
 
 This version has seen significant improvements in stability through extensive performance optimization and resolution of known issues. In particular, when handling a large number of messages, version 1.9.1 has significantly reduced CPU and memory usage by 80% compared to the previous version, resulting in greatly optimized overall performance and reduced risk of system crashes. The improved stability offers users a more dependable environment for conducting IoT performance testing and building IoT applications.
 
@@ -17,7 +17,7 @@ A performance comparison was conducted between version 1.9.0 and version 1.9.1 o
 
 #### Test Scenario
 
-To perform a benchmark test, a new local MQTT Broker connection was created and subscribed to an mqttx/bench topic. The bench command was then utilized to publish 1000 messages per second, each with a payload of "hello" and a QoS of 0, to the topic for 1 minute. During this scenario, where 1000 messages were being received per second, the CPU usage and memory usage changes were monitored using the debugging tools available in the MQTTX development environment.
+To perform a benchmark test, a new local [MQTT Broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) connection was created and subscribed to an mqttx/bench topic. The bench command was then utilized to publish 1000 messages per second, each with a payload of "hello" and a QoS of 0, to the topic for 1 minute. During this scenario, where 1000 messages were being received per second, the CPU usage and memory usage changes were monitored using the debugging tools available in the MQTTX development environment.
 
 ![benchmark test](https://assets.emqx.com/images/cab9054e5e262ad6684d338988a361eb.png)
 
@@ -51,7 +51,7 @@ In addition to performance optimizations, this release also fixes and optimizes 
 - Fixes the issue of having to enter a username when using client ID + password authentication.
 - Fixes the issue that offline messages cannot be received after reconnection.
 - Fixes the issue where the order of messages in the message list was incorrect in some cases.
-- Fixes the issue of duplicate keys in user property configuration and ensures full compliance with the MQTT protocol.
+- Fixes the issue of duplicate keys in user property configuration and ensures full compliance with the [MQTT protocol](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt).
 - Fixes the issue that group icons disappear due to long group names, and supports the full display of long group names.
 - Fixes the issue that the right-click menu displays beyond the window in the grouping list.
 - Fixes the issue that other subscribed topics disappear after clicking traffic statistics and automatically subscribing to the system topic $SYS/#.
@@ -95,7 +95,7 @@ MQTTX is undergoing constant improvements to offer more practical and powerful c
 - Optimizes the output of system topics, allowing users to easily monitor and view data metrics of MQTT Broker using MQTTX
 - Charts automatically based on incoming messages
 - Adds Plugins
-- Supports Sparkplug B format
+- Supports [Sparkplug B](https://www.emqx.com/en/solutions/mqtt-sparkplug) format
 - Supports automated test script (Flow)
 - Adds more message formats
 

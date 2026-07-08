@@ -1,6 +1,6 @@
 Terraform 是由 HashiCorp 推出的一个基础设施即代码（IaC）工具，它包括了底层的组件如计算实例、存储和网络，以及高层的组件如 DNS、LBS 等。用户可以使用 Terraform 安全、高效地构建、改变和更新基础设施。
 
-在传统的私有云或公有云部署方式中，用户需要先部署好基础设施（虚拟机、网络和存储等），之后才能开始部署 MQTT 集群。而如果使用 Terraform，用户则可以同时完成这两项工作。此外，同一套工具可以在不同的平台上进行部署，通过模版可重复、可预测的方式定义和配置资源，可大大减少人为因素导致的错误。
+在传统的私有云或公有云部署方式中，用户需要先部署好基础设施（虚拟机、网络和存储等），之后才能开始部署 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 集群。而如果使用 Terraform，用户则可以同时完成这两项工作。此外，同一套工具可以在不同的平台上进行部署，通过模版可重复、可预测的方式定义和配置资源，可大大减少人为因素导致的错误。
 
 本文将以分布式物联网 [MQTT 消息服务器 EMQX](https://www.emqx.com/zh/products/emqx) 为例，采用 AWS 作为公有云平台，介绍如何使用 Terraform 快速部署一个高可用的 [MQTT 集群](https://www.emqx.com/zh/blog/tag/mqtt-broker-%E9%9B%86%E7%BE%A4)。
 

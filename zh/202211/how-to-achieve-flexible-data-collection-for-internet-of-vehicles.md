@@ -29,7 +29,7 @@
 - 弱网工况下，采集数据高效回传的能力。
 - 足够轻量高效，从而可以运行在多种车型，包括车机资源受限的车型上。
 
-基于大量的车联网用户案例和经验，EMQ 推出了基于 eKuiper 与 QUIC 协议的车云系统方案，实现了一套易部署可移植的车联网灵活数采方案。方案架构如下图所示。
+基于大量的车联网用户案例和经验，EMQ 推出了基于 eKuiper 与 [QUIC 协议](https://www.emqx.com/zh/blog/quic-protocol-the-features-use-cases-and-impact-for-iot-iov)的车云系统方案，实现了一套易部署可移植的车联网灵活数采方案。方案架构如下图所示。
 
 ![车联网架构图](https://assets.emqx.com/images/001485156a6c394c28a31482ebaceb5b.png)
 
@@ -42,7 +42,7 @@
 
 LF Edge eKuiper（简称 eKuiper）是开源的超轻量数据分析和流式计算引擎。eKuiper 兼容性强，可适配 X86 和 ARM 等多种 CPU 架构的车机终端。软件较轻量且可裁剪，核心包和初始运行内存在 10MB 级别，支持高吞吐低时延的各种数据处理和计算。在方案中，以部署于车机端的 eKuiper 为核心，可以实现近实时的灵活数据采集和处理转发等功能。
 
-如下图所示，eKuiper 具备了数据流的接入、处理和流转能力。南向部分，eKuiper 支持接入各种协议的数据流，例如 CAN 总线、MQTT 协议、Socket（TCP 或 UDP）和 DDS 等。接入的数据可以在引擎内部根据用户定义的规则，进行数据的采集、转换、过滤和分析等数据处理工作，之后再将采集或处理的结果发送到各种北向的目的地中，例如存到本地的文件、数据库中以便后续车载应用使用；或是通过 HTTP/MQTT 等协议发送到云端或 TSP 应用端进行处理。
+如下图所示，eKuiper 具备了数据流的接入、处理和流转能力。南向部分，eKuiper 支持接入各种协议的数据流，例如 CAN 总线、[MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 协议、Socket（TCP 或 UDP）和 DDS 等。接入的数据可以在引擎内部根据用户定义的规则，进行数据的采集、转换、过滤和分析等数据处理工作，之后再将采集或处理的结果发送到各种北向的目的地中，例如存到本地的文件、数据库中以便后续车载应用使用；或是通过 HTTP/MQTT 等协议发送到云端或 TSP 应用端进行处理。
 
 ![车联网数据采集](https://assets.emqx.com/images/34c83d0c3c403978dae9fb81313fa7ac.png)
 

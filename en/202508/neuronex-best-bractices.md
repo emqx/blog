@@ -8,7 +8,7 @@ Effectively correlating real-time OT data with IT business data enables a range 
 - **Refined Production Analysis**: Achieve accurate OEE (Overall Equipment Effectiveness) measurement by combining work order schedules with real-time equipment output data.
 - **Intelligent Maintenance Strategies**: Dynamically optimize predictive maintenance plans based on historical maintenance records from ERP systems and real-time operational conditions.
 
-However, there is a common challenge: how to build an efficient and reliable data bridge to synchronize IT data stored in a MySQL database with an Industrial IoT (IIoT) platform. Traditional methods involving periodic full-table polling (`SELECT * FROM ...`) impose unnecessary performance pressure on production databases and generate significant data redundancy. Therefore, a more elegant and efficient solution is essential.
+However, there is a common challenge: how to build an efficient and reliable data bridge to synchronize IT data stored in a MySQL database with an [Industrial IoT](https://www.emqx.com/en/blog/industrial-iot-systems) ([IIoT](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges)) platform. Traditional methods involving periodic full-table polling (`SELECT * FROM ...`) impose unnecessary performance pressure on production databases and generate significant data redundancy. Therefore, a more elegant and efficient solution is essential.
 
 This blog details how to leverage the industrial edge platform **NeuronEX**, utilizing its built-in **incremental query** and **stream processing** capabilities, to achieve efficient and reliable data synchronization from MySQL to MQTT.
 
@@ -19,14 +19,14 @@ This practice aims to construct a data pipeline with the following capabilities:
 1. **Automated Periodic Collection**: Automatically pull data from a MySQL database table.
 2. **Incremental Data Fetching**: Collect only newly generated data, avoiding repetition and redundancy.
 3. **Standardized Data Formatting**: Uniformly convert the collected data into JSON format.
-4. **Reliable Data Reporting**: Publish data to an IIoT platform via the MQTT protocol (using the public EMQX Broker as an example).
+4. **Reliable Data Reporting**: Publish data to an [IIoT platform](https://www.emqx.com/en/blog/iiot-platform-key-components-and-5-notable-solutions) via the [MQTT protocol](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) (using the public EMQX Broker as an example).
 5. **High Availability**: Ensure fault tolerance with the ability to resume synchronization from the last known point after a service interruption.
 
 To achieve this objective, the technical architecture consists of three core components:
 
 - **MySQL**: The source of business data.
 - **NeuronEX**: The core engine responsible for data collection, incremental state management, processing, transformation, and forwarding.
-- **EMQX (MQTT Broker)**: The data aggregation and distribution hub.
+- **EMQX ([MQTT Broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison))**: The data aggregation and distribution hub.
 
 ## **Implementation Steps**
 
@@ -44,7 +44,7 @@ docker run -d --name neuronex -p 8085:8085 --log-opt max-size=100m --privileged=
 docker run -d --name mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=123456  mysql:8.0
 ```
 
-Additionally, prepare an MQTT client (e.g., [MQTTX](https://mqttx.app/)) for subsequent data validation.
+Additionally, prepare an [MQTT client](https://www.emqx.com/en/blog/mqtt-client-tools) (e.g., [MQTTX](https://mqttx.app/)) for subsequent data validation.
 
 ### **Step 1: Initialize the Data Source (MySQL)**
 

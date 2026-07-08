@@ -1,4 +1,4 @@
-We're thrilled to announce that [EMQX Cloud](https://www.emqx.com/en/cloud), the fully managed MQTT cloud service, has been available in AWS Sydney since August 11, 2023.
+We're thrilled to announce that [EMQX Cloud](https://www.emqx.com/en/cloud), the fully managed [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) cloud service, has been available in AWS Sydney since August 11, 2023.
 
 The support for AWS Sydney is just the beginning of our efforts in Australia. This region is a great option for customers with IoT devices in the Asia Pacific area. Along with other AWS Asia Pacific areas we support - Singapore, Mumbai, Hong Kong, and Tokyo, we can now offer even more customers low latency and high throughput.
 

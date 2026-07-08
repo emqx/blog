@@ -4,7 +4,7 @@
 
 **设备状态的实时变化直接关系到系统的稳定性和用户体验。**
 
-[EMQX Platform](https://www.emqx.com/zh/platform) 作为企业级 MQTT 与 AI 一体化平台，借助强大的内置规则引擎，可实时捕获设备上下线等事件，并无缝对接钉钉、飞书、企业微信等即时通讯工具，实现自动化告警与通知。
+[EMQX Platform](https://www.emqx.com/zh/platform) 作为企业级 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 与 AI 一体化平台，借助强大的内置规则引擎，可实时捕获设备上下线等事件，并无缝对接钉钉、飞书、企业微信等即时通讯工具，实现自动化告警与通知。
 
 **本文将以客户端异常离线事件为例，详细介绍如何利用 EMQX 规则引擎，实时捕捉设备离线状态，并将相关信息自动推送到企业微信、钉钉或飞书等办公协作平台，确保团队能够及时感知并处理设备异常。**
 

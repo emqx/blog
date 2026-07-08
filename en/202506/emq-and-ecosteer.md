@@ -1,6 +1,6 @@
 Europe’s regulators are reshaping how companies handle data from connected devices. The upcoming EU Data Act, for example, will require all new connected devices to give users direct control over their data. This is a major shift, moving us away from closed, proprietary systems to open, user-centric data ecosystems where individuals, not companies, decide who can access their information.
 
-To help companies adapt, [EMQX and Ecosteer have partnered](https://www.emqx.com/en/news/emq-partners-with-ecosteer-to-advance-iot-data-compliance-across-europe) to turn these compliance requirements into a competitive advantage. By combining MQTT messaging technology with decentralized consent management, we deliver secure, scalable, and cost-effective data sharing under user control.
+To help companies adapt, [EMQX and Ecosteer have partnered](https://www.emqx.com/en/news/emq-partners-with-ecosteer-to-advance-iot-data-compliance-across-europe) to turn these compliance requirements into a competitive advantage. By combining [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) messaging technology with decentralized consent management, we deliver secure, scalable, and cost-effective data sharing under user control.
 
 ## **The Changing Landscape of Data Control**
 
@@ -10,7 +10,7 @@ The EU data economy could be worth over €829 billion by 2025. To make this gro
 
 The Data Act will take effect Sept. 12, 2025. Moreover, starting in September 2026, every new device or application sold in the EU must follow its principles by design. If you use a connected device, you should be able to access, use, and share your data without extra costs or unnecessary steps.
 
-These changes will affect everything from smart home devices and industrial IoT to car manufacturers and transit providers.
+These changes will affect everything from smart home devices and [industrial IoT](https://www.emqx.com/en/blog/industrial-iot-systems) to car manufacturers and transit providers.
 
 This shift also introduces new technical challenges. Many old methods for handling data requests aren’t secure. Scaling up for millions of users can get expensive fast. Centralized consent systems often struggle with complexity and regulatory demands.
 
@@ -50,7 +50,7 @@ How EMQX and Ecosteer combine to deliver secure, user-controlled data sharing an
 This approach scales well, cuts costs, and meets the EU’s latest data regulations.
 
 **If you’re curious about the technology behind the scenes, here’s how it works at a more technical level:**
-Ecosteer’s DVCO uses a patented multicast encryption method that integrates directly with MQTT publish/subscribe systems like EMQX. In most setups, anyone with access to the MQTT broker could view device data. DVCO changes this. Only recipients with permission from the data owner can decrypt and see the data, even if they have broker access. This design separates broker access from data visibility. It keeps the system secure and scalable and fits well with EU Data Act requirements.
+Ecosteer’s DVCO uses a patented multicast encryption method that integrates directly with [MQTT publish/subscribe](https://www.emqx.com/en/blog/mqtt-5-introduction-to-publish-subscribe-model) systems like EMQX. In most setups, anyone with access to the [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) could view device data. DVCO changes this. Only recipients with permission from the data owner can decrypt and see the data, even if they have broker access. This design separates broker access from data visibility. It keeps the system secure and scalable and fits well with EU Data Act requirements.
 
 ## **Real-World Examples**
 

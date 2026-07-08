@@ -29,7 +29,7 @@ This is the initial length of the built-in message queue buffer of each client. 
 qos_duration=60
 ```
 
-This is the granularity of the built-in global timer of the NanoMQ service. This option affects the minimum time difference for the connection of health detection. If there is a large number of concurrent clients, it will consume a little CPU. It is recommended to be consistent with the keepalive time of the MQTT connection.
+This is the granularity of the built-in global timer of the NanoMQ service. This option affects the minimum time difference for the connection of health detection. If there is a large number of concurrent clients, it will consume a little CPU. It is recommended to be consistent with the keepalive time of the [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) connection.
 
 ```
 allow_anonymous=yes   Whether to allow anonymous login

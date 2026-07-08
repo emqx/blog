@@ -4,7 +4,7 @@
 
 [MQTT](https://www.emqx.com/zh/mqtt-guide) 是一种基于发布/订阅模式的**轻量级物联网消息传输协议**。该协议提供了一对多的消息分发和应用程序的解耦，传输消耗小，可最大限度减少网络流量，同时具有三种不同消息服务质量等级，满足不同投递需求的优势。
 
-本文将介绍如何在 Angular 项目中使用 MQTT 协议，实现客户端与 MQTT 服务器的连接、订阅、收发消息、取消订阅等功能。
+本文将介绍如何在 Angular 项目中使用 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 协议，实现客户端与 [MQTT 服务器](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison)的连接、订阅、收发消息、取消订阅等功能。
 
 ## 项目初始化
 
@@ -20,7 +20,7 @@ ng new my-app
 
 ### 安装 MQTT 客户端库
 
-本次使用的是库为 [ngx-mqtt](https://sclausen.github.io/ngx-mqtt/)，这个库不仅仅是 MQTT.js 的包装器，用于 angular >= 2。它使用 observables 并负责订阅处理和消息路由， [ngx-mqtt](https://sclausen.github.io/ngx-mqtt/) 非常适合具有许多组件和许多订阅者的应用程序。
+本次使用的是库为 [ngx-mqtt](https://sclausen.github.io/ngx-mqtt/)，这个库不仅仅是 [MQTT.js](https://www.emqx.com/zh/blog/mqtt-js-tutorial) 的包装器，用于 angular >= 2。它使用 observables 并负责订阅处理和消息路由， [ngx-mqtt](https://sclausen.github.io/ngx-mqtt/) 非常适合具有许多组件和许多订阅者的应用程序。
 
 通过命令行安装 [ngx-mqtt](https://sclausen.github.io/ngx-mqtt/)，可以使用 npm 或 yarn 命令（二者选一）
 
@@ -162,7 +162,7 @@ doPublish() {
 
 ### 断开连接
 
-disconnect 断开与 MQTT 客户端的连接，传入参数 True 表示强制断开与 MQTT 客户端的连接。
+disconnect 断开与 [MQTT 客户端](https://www.emqx.com/zh/blog/mqtt-client-tools)的连接，传入参数 True 表示强制断开与 MQTT 客户端的连接。
 
 ```
 destroyConnection() {

@@ -1,6 +1,6 @@
 EMQX Broker 4.2-rc.1 正式发布，欢迎大家下载试用，下载地址：https://github.com/emqx/emqx/releases/tag/v4.2-rc.1。 如果您想要与我们分享反馈意见，或者遇到任何问题需要帮助，可以通过 https://github.com/emqx/emqx/issues 与我们交流。
 
-> EMQX Broker 是一款高并发低延迟，支持分布式集群架构的开源 MQTT 消息服务器，支持单机百万连接，更多信息请访问：https://www.emqx.com/zh/products/emqx
+> EMQX Broker 是一款高并发低延迟，支持分布式集群架构的开源 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 消息服务器，支持单机百万连接，更多信息请访问：https://www.emqx.com/zh/products/emqx
 
 
 
@@ -24,7 +24,7 @@ EMQX Broker 4.2-rc.1 正式发布，欢迎大家下载试用，下载地址：ht
 - 【调整】发布与订阅支持独立配置[主题重写](https://www.emqx.com/zh/blog/rewriting-emqx-mqtt5-topic)规则
 - 【调整】允许用户配置是否允许 WebSocket 消息包含多个 [MQTT 报文](https://www.emqx.com/zh/blog/introduction-to-mqtt-control-packets)，以兼容部分客户端
 - 【修复】修复主题指标中存在的问题
-- 【修复】修复 LwM2M 插件没有正确获取协议版本的问题
+- 【修复】修复 [LwM2M](https://www.emqx.com/zh/blog/iot-protocols-mqtt-coap-lwm2m) 插件没有正确获取协议版本的问题
 
 
 
@@ -32,7 +32,7 @@ EMQX Broker 4.2-rc.1 正式发布，欢迎大家下载试用，下载地址：ht
 
 EMQX 开源研发团队已正式进入 5.0 的开发阶段，5.0 版本将作为 5G 大基建超大规模多协议超融合接入平台，拥有更加健壮的全新架构、更加强大的性能以及更加流畅的使用体验，它将为您带来：
 
-- 支持更快的 QUIC 协议
+- 支持更快的 [QUIC 协议](https://www.emqx.com/zh/blog/quic-protocol-the-features-use-cases-and-impact-for-iot-iov)
 - 领先的 [NB-IoT](https://www.emqx.com/zh/blog/emqx-nb-iot-access-solution) 网络与 LwM2M 支持
 - 50+ 节点的大规模集群
 - K8S 下集群弹性伸缩

@@ -105,7 +105,7 @@
 
 ![影子模型 JSON](https://assets.emqx.com/images/3183c9b5096ce914d060cf99d08a5b4b.png)
  
-借助开箱即用的影子服务，各个行业不同业务场景下的数据缓存需求都可以得到满足。影子服务提供的 MQTT 设备接入与消息缓存一体化能力，将为加速物联网平台与应用开发提供动力。
+借助开箱即用的影子服务，各个行业不同业务场景下的数据缓存需求都可以得到满足。影子服务提供的 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 设备接入与消息缓存一体化能力，将为加速物联网平台与应用开发提供动力。
 
 
 <section class="promotion">

@@ -2,11 +2,11 @@ For IoT businesses that prioritize reliability, scalability, data privacy, and s
 
 > Learn more about [EMQX Cloud BYOC's privacy-first architecture](https://www.emqx.com/en/blog/exploring-the-data-privacy-first-architecture-of-emqx-cloud-byoc)  
 
-In this blog, we'll introduce how EMQX BYOC's O&M services can free your hands from MQTT server O&M works.
+In this blog, we'll introduce how EMQX BYOC's O&M services can free your hands from [MQTT server](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) O&M works.
 
 ## BYOC O&M Services offer to you
 
-EMQX Cloud BYOC provides a range of O&M services to help you optimize your MQTT server, including:
+[EMQX Cloud](https://www.emqx.com/en/cloud) BYOC provides a range of O&M services to help you optimize your [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) server, including:
 
 ### 24/7 Monitoring and Alerting
 

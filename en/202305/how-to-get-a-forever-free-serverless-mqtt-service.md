@@ -1,8 +1,8 @@
 ## Introduction
 
-Serverless MQTT offers IoT developers a managed MQTT service with an elastic infrastructure. With its pay-as-you-go pricing model, [EMQX Cloud Serverless](https://www.emqx.com/en/cloud/serverless-mqtt) enables users to reduce IoT expenses and swiftly initiate MQTT deployments.
+Serverless [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) offers IoT developers a managed MQTT service with an elastic infrastructure. With its pay-as-you-go pricing model, [EMQX Cloud Serverless](https://www.emqx.com/en/cloud/serverless-mqtt) enables users to reduce IoT expenses and swiftly initiate MQTT deployments.
 
-> Further information about EMQX Cloud Serverless: [Next-Gen Cloud MQTT Service: Meet EMQX Cloud Serverless](https://www.emqx.com/en/blog/next-gen-cloud-mqtt-service-meet-emqx-cloud-serverless)
+> Further information about [EMQX Cloud](https://www.emqx.com/en/cloud) Serverless: [Next-Gen Cloud MQTT Service: Meet EMQX Cloud Serverless](https://www.emqx.com/en/blog/next-gen-cloud-mqtt-service-meet-emqx-cloud-serverless)
 
 What’s more, EMQX Cloud Serverless even provides an opportunity to obtain a forever-free [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison). Let's explore how this remarkable offering is made possible in this blog.
 

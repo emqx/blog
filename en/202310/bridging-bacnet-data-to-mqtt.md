@@ -22,7 +22,7 @@ We can bridge BCAnet to MQTT to complement each other and solve the issues we ha
 
 This blog uses [Neuron](https://github.com/emqx/neuron) and [EMQX](https://www.emqx.com/en/products/emqx) from EMQ to achieve BACnet to MQTT bridging. Neuron can convert the BACnet protocol to MQTT, while EMQX acts as an [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison), handling massive connections and data.
 
-Neuron is a modern [industrial IoT](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges) connectivity server that can connect various industrial devices that use standard protocols or device-specific protocols, achieving interconnection between industrial IoT platforms and various devices. As a lightweight industrial software, Neuron can run on various IoT edge hardware devices with limited resources. It aims to solve the problem of unified access to data-centric automation devices and provide basic support for intelligent manufacturing.
+Neuron is a modern [industrial IoT](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges) connectivity server that can connect various industrial devices that use standard protocols or device-specific protocols, achieving interconnection between [industrial IoT](https://www.emqx.com/en/blog/industrial-iot-systems) platforms and various devices. As a lightweight industrial software, Neuron can run on various IoT edge hardware devices with limited resources. It aims to solve the problem of unified access to data-centric automation devices and provide basic support for intelligent manufacturing.
 
 EMQX is a large-scale and elastic cloud-native distributed IoT MQTT message server. As the most scalable MQTT message server worldwide, EMQX provides efficient and reliable mass connection of IoT devices, capable of high-performance real-time processing of message and event flow data, helping users quickly build critical IoT platforms and applications.
 
@@ -165,7 +165,7 @@ Subscribe to the data group of southbound devices:
 
 - South device: Select the created southbound device from the dropdown list, for example, bacnet-1;
 - Group: Select the group to be subscribed to from the dropdown list, for example, group-1；
-- Topic: The MQTT topic, which is default set as `/neuron/mqtt/bacnet-1/group-1` in this example. Next, subscribe to this topic and receive messages in MQTTX.
+- Topic: The [MQTT topic](https://www.emqx.com/en/blog/advanced-features-of-mqtt-topics), which is default set as `/neuron/mqtt/bacnet-1/group-1` in this example. Next, subscribe to this topic and receive messages in MQTTX.
 
 #### Step 10: View data in the MQTT Client.
 

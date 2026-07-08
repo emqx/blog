@@ -198,7 +198,7 @@ libgcc_s.so.1
 
 ## Conclusion
 
-NanoMQ, as a popular open-sourced, lightweight MQTT broker and edge messaging bus, is widely used in IoT/IIoT (Industrial Internet of Things) and SDV (software-defined vehicle) scenarios. By porting NanoMQ to the OpenWRT, making NanoMQ + OpenWRT a cost-effective combo solution for the community. It expands the boundary of both open-source projects, and users could get more options while building the solution.
+NanoMQ, as a popular open-sourced, lightweight MQTT broker and edge messaging bus, is widely used in IoT/IIoT ([Industrial Internet of Things](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges)) and SDV (software-defined vehicle) scenarios. By porting NanoMQ to the OpenWRT, making NanoMQ + OpenWRT a cost-effective combo solution for the community. It expands the boundary of both open-source projects, and users could get more options while building the solution.
 
 
 

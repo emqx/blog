@@ -1,6 +1,6 @@
 >IoT scenarios often face challenges like a large number of devices, high data generation rates, and the huge accumulated data volumes. Therefore, how to access, store, and process these massive amounts of data has become a critical issue.
 >
->[EMQX](https://www.emqx.com/en/products/emqx), as a highly scalable, powerful and feature-rich MQTT broker for the IoT, can handle billions of concurrent connections and millions of messages per second in a single cluster. Furthermore, its built-in [Data Integration](https://www.emqx.com/en/features/data-processing) functionality provides an out-of-the-box solution, which enables seamless integrating IoT data with more than 40 cloud services and enterprise systems, including Kafka, SQL, NoSQL, and time-series databases.
+>[EMQX](https://www.emqx.com/en/products/emqx), as a highly scalable, powerful and feature-rich [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) for the IoT, can handle billions of concurrent connections and millions of messages per second in a single cluster. Furthermore, its built-in [Data Integration](https://www.emqx.com/en/features/data-processing) functionality provides an out-of-the-box solution, which enables seamless integrating IoT data with more than 40 cloud services and enterprise systems, including Kafka, SQL, NoSQL, and time-series databases.
 >
 >This blog series presents the benchmark test results of the integrations against a single node EMQX server.
 
@@ -8,13 +8,13 @@ In this post, we provide the benchmarking result of [MongoDB integration](https:
 
 ## Test Scenario
 
-This benchmark testing simulates 80,000 MQTT clients connecting to EMQX, with a connection rate of 4,000 per second. After all connections are established, each client publishes one QoS 1 message with the payload of 100 bytes per second, and all messages, via the rule engine, are written into MongoDB. 
+This benchmark testing simulates 80,000 [MQTT clients](https://www.emqx.com/en/blog/mqtt-client-tools) connecting to EMQX, with a connection rate of 4,000 per second. After all connections are established, each client publishes one QoS 1 message with the payload of 100 bytes per second, and all messages, via the rule engine, are written into MongoDB. 
 
 - Concurrent connections: 80,000
 - Topics: 80,000
 - CPS (new established connections per sec.): 4000
 - QoS: 1
-- Keep alive: 300s
+- [Keep alive](https://www.emqx.com/en/blog/mqtt-keep-alive): 300s
 - Payload: 100 bytes
 - Message publish TPS: 80,000/second
 
@@ -31,7 +31,7 @@ The test environment is configured on Alibaba Cloud, and all virtual machines ar
 
 ### Test Tool
 
-XMeter is used in this benchmark test to simulate MQTT clients. XMeter is built on top of JMeter but with enhanced scalability and more capabilities. It provides comprehensive and real-time test reports during the test. Additionally, its built-in monitoring tools are used to track the resource usage of the EMQX and MongoDB machines.
+XMeter is used in this benchmark test to simulate [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) clients. XMeter is built on top of JMeter but with enhanced scalability and more capabilities. It provides comprehensive and real-time test reports during the test. Additionally, its built-in monitoring tools are used to track the resource usage of the EMQX and MongoDB machines.
 
 XMeter provides a private deployment version (on-premise) and a public cloud SaaS version. A private XMeter is deployed in the same VPC as the EMQX and MongoDB in this testing.
 

@@ -6,7 +6,7 @@ Postman is a popular and versatile API development and testing tool that simplif
 
 ## Free Serverless MQTT Broker
 
-EMQX Cloud Serverless is the latest [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) offering on the public cloud with all the serverless advantages. You can start the Serverless deployment in seconds with just a few clicks. **Additionally, users can get 1 million free session minutes every month**, sufficient for 23 devices to be online for a whole month, making it perfect for tiny IoT test scenarios.
+[EMQX Cloud](https://www.emqx.com/en/cloud) Serverless is the latest [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) offering on the public cloud with all the serverless advantages. You can start the Serverless deployment in seconds with just a few clicks. **Additionally, users can get 1 million free session minutes every month**, sufficient for 23 devices to be online for a whole month, making it perfect for tiny IoT test scenarios.
 
 <section class="promotion">
     <div>
@@ -26,7 +26,7 @@ Next, you need to configure the Authorization information in advance. The follow
 
 ## Creating a new MQTT request
 
-To create a new MQTT request, click on the **New** button in the sidebar. This will open the **Create new** dialog. From the list, select **MQTT** to open a blank MQTT request in a new tab.
+To create a new [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) request, click on the **New** button in the sidebar. This will open the **Create new** dialog. From the list, select **MQTT** to open a blank MQTT request in a new tab.
 
 ![Create a new MQTT request](https://assets.emqx.com/images/3c877775aabccd259cdfbfab617636b4.png)
 

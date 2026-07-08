@@ -34,7 +34,7 @@ EMQX acts as a bridge between the physical and AI worlds, transmitting user inte
 3. **Large AI Models in the Cloud**
    Cloud-based models leverage powerful computational resources to perform deep multimodal data processing and handle complex tasks. They enable devices to interpret human intent and execute sophisticated operations by integrating diverse data streams.
 
-In all these scenarios, EMQX ensures that data—whether raw or processed—is transmitted to the cloud using the MQTT protocol. This allows seamless integration between physical devices and AI, delivering fast and intelligent responses to complex user requests while enhancing overall system efficiency.
+In all these scenarios, EMQX ensures that data—whether raw or processed—is transmitted to the cloud using the [MQTT protocol](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt). This allows seamless integration between physical devices and AI, delivering fast and intelligent responses to complex user requests while enhancing overall system efficiency.
 
 ## AI-Driven Innovations in Consumer Electronics
 

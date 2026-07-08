@@ -231,7 +231,7 @@ The database performs query operations based on API requests to retrieve the lat
 
 ### How it Works
 
-In Flask applications, when a user accesses a specific address and calls the API of the EMQX MQTT broker to publish a message, it is necessary to first ensure that communication with EMQX can be carried out through the network. EMQX has provided a REST API to support message publishing.
+In Flask applications, when a user accesses a specific address and calls the API of the EMQX [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) to publish a message, it is necessary to first ensure that communication with EMQX can be carried out through the network. EMQX has provided a REST API to support message publishing.
 To demonstrate, we will assume that EMQX supports message publishing through HTTP in some way (possibly through a built-in REST API or a third-party service integrated with EMQX).
 
 ### REST API

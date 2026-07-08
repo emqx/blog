@@ -241,7 +241,7 @@ Following the "[Stream MQTT Data into Apache Kafka](https://docs.emqx.com/en/emq
 - **Kafka Topic Name**: Enter `vehicle_events`.
 - **Kafka Headers**: Enter metadata or context information related to Kafka messages (optional).
 - **Message Key**: Kafka message key. Enter `${clientid}` to use the client ID as the message key.
-- **Message Value**: Kafka message value. Enter `${payload}` to include the MQTT payload in the Kafka message payload.
+- **Message Value**: Kafka message value. Enter `${payload}` to include the [MQTT payload](https://www.emqx.com/en/blog/how-to-process-json-hex-and-binary-data-in-mqtt) in the Kafka message payload.
 
 After configuring, submit the action and add it to the rule.
 

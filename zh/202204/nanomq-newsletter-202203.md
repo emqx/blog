@@ -50,7 +50,7 @@ Usage: nanomq bench start { pub | sub | conn } [--help]
 | :---------------- | :----------- | :------------- | :------------- | :------------------------ |
 | --host            | -h           | -              | localhost      | 服务端地址                |
 | --port            | -p           | -              | 1883           | 服务端端口                |
-| --version         | -V           | 3 4 5          | 5              | MQTT 协议版本             |
+| --version         | -V           | 3 4 5          | 5              | [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 协议版本             |
 | --count           | -c           | -              | 200            | 客户端数量                |
 | --interval        | -i           | -              | 10             | 创建客户端的时间间隔 (ms) |
 | --interval_of_msg | -I           | -              | 1000           | 发布消息时间间隔          |

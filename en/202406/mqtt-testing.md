@@ -83,7 +83,7 @@ Getting early feedback on code quality can increase the chances of reducing defe
 ### For Performance and Load Testing
 
 - XMeter: A public cloud service built on JMeter, providing easy and fast way for large-scale MQTT load testing.
-- [emqtt_bench](https://github.com/emqx/emqtt-bench): A lightweight MQTT benchmark tool for concurrent connections and message throughput.
+- [emqtt_bench](https://github.com/emqx/emqtt-bench): A lightweight [MQTT benchmark](https://www.emqx.com/en/blog/open-mqtt-benchmarking-comparison-mqtt-brokers-in-2023) tool for concurrent connections and message throughput.
 
 ### Utilities and Frameworks for Custom Development
 
@@ -98,7 +98,7 @@ To provide readers with a quick overview of MQTT testing tools, we will use MQTT
 
 1. Configure and connect
 
-   Click the `+` button from the left menu bar and fill in the general connection information. More sophisticated configuration can be set in 'Advanced' form. Then click the `Connect` button in the upper right corner to connect to the desired MQTT Broker.
+   Click the `+` button from the left menu bar and fill in the general connection information. More sophisticated configuration can be set in 'Advanced' form. Then click the `Connect` button in the upper right corner to connect to the desired [MQTT Broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison).
 
    ![Configure and connect](https://assets.emqx.com/images/4071c5f48aa537b393cf5a6350af4bb7.png)
 

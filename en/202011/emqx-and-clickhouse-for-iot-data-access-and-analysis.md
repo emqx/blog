@@ -12,7 +12,7 @@ The above solution without code development, involving products can provide open
 
 ### Introduction to EMQX
 
-[EMQ  X ](https://www.emqx.com/en) is an open-source MQTT messaging broker developed on a highly concurrent Erlang/OTP language platform, supporting millions of connections and distributed cluster architecture, with a publish-subscribe model. EMQX has many out-of-the-box features built-in, and **EMQX Enterprise**, supports the storage of IoT message data to ClickHouse via a rules engine.
+[EMQX](https://www.emqx.com/en) is an open-source [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) messaging broker developed on a highly concurrent Erlang/OTP language platform, supporting millions of connections and distributed cluster architecture, with a publish-subscribe model. EMQX has many out-of-the-box features built-in, and **EMQX Enterprise**, supports the storage of IoT message data to ClickHouse via a rules engine.
 
 
 ### Introduction to ClickHouse
@@ -30,7 +30,7 @@ Grafana 4.6+ supports installing Clickhouse data sources via plugin format. It i
 
 ## Business scenarios
 
-In this article, we simulate a data collection scenario in an IoT environment, assuming that there are certain data collection points in the environment, and the data from all the collection points are transmitted to the collection platform via [MQTT protocol](https://www.emqx.com/en/mqtt-guide), the MQTT topic is designed as follows:
+In this article, we simulate a data collection scenario in an IoT environment, assuming that there are certain data collection points in the environment, and the data from all the collection points are transmitted to the collection platform via [MQTT protocol](https://www.emqx.com/en/mqtt-guide), the [MQTT topic](https://www.emqx.com/en/blog/advanced-features-of-mqtt-topics) is designed as follows:
 
 ```bash
 sensor/data

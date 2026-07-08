@@ -10,13 +10,13 @@ GB/T32960 is the guideline standard for communication between remote service pla
 
 ## Working principle
 
-EMQX Enterprise provides the GB/T 32960 protocol gateway module. The whole process of message exchange can be divided into three parts according to its functional logic and the relationship to the whole system: the terminal side, the platform side, and the other side.
+[EMQX Enterprise](https://www.emqx.com/en/products/emqx) provides the GB/T 32960 protocol gateway module. The whole process of message exchange can be divided into three parts according to its functional logic and the relationship to the whole system: the terminal side, the platform side, and the other side.
 
 ![画板2x.png](https://assets.emqx.com/images/1309966aded70c111bf9b8ed3b3a5ee4.png)
 
 1. The terminal side: Data is exchanged via the GB/T 32960 protocol, implementing different types of data to be reported or sending downstream messages to the terminal.
 2. The platform side: The EMQX GB/T 32960 gateway decodes the packets and converts them internally in EMQX to the [MQTT protocol](https://www.emqx.com/en/mqtt-guide) for upstreaming and downstreaming data operations.
-   - Data uplink: Publishing the uplink data packet as an MQTT PUBLISH to a specific topic.
+   - Data uplink: Publishing the uplink data packet as an [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) PUBLISH to a specific topic.
    - Data downlink: Publishing the downlink data to a specific topic, and the message is transformed into the GB/T 32960 protocol packet structure and sent down to the terminal.
 3. The other side: The rules engine of EMQX Enterprise allows the upstream data appearing in 2 to be stored/forwarded to enterprise databases, stream processing platforms (e.g. Kafka), and business systems; enterprise application platforms can issue control instructions to EMQX in a variety of ways, ultimately sending the data to the terminal side.
 

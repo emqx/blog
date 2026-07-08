@@ -2,7 +2,7 @@
 
 ## **Introduction**
 
-The rise of the Internet of Things (IoT) has drastically transformed the way we interact with and leverage data from physical devices. As industries embrace IoT for various applications, from smart factories to real-time health monitoring, a significant challenge arises: how to efficiently gather, store, analyze, and visualize this massive influx of data in real-time. This blog delves into a real-world implementation of an IoT project utilizing several cutting-edge technologies to build a full data pipeline that ingests data from industrial devices, processes it at the edge, stores it efficiently, and visualizes analytics.
+The rise of the Internet of Things (IoT) has drastically transformed the way we interact with and leverage data from physical devices. As industries embrace IoT for various applications, from [smart factories](https://www.emqx.com/en/blog/what-is-a-smart-factory-key-components-4-levels-of-evolution) to real-time health monitoring, a significant challenge arises: how to efficiently gather, store, analyze, and visualize this massive influx of data in real-time. This blog delves into a real-world implementation of an IoT project utilizing several cutting-edge technologies to build a full data pipeline that ingests data from industrial devices, processes it at the edge, stores it efficiently, and visualizes analytics.
 
 ## **Overview of the System Architecture** 
 
@@ -39,7 +39,7 @@ In this architecture, **EMQX** is the MQTT broker that handles communication bet
 
 ### **Python for Data Processing**
 
-The Python client subscribes to the MQTT topics and reads the data being streamed from the industrial devices. The main tasks of this Python program are:
+The Python client subscribes to the [MQTT topics](https://www.emqx.com/en/blog/advanced-features-of-mqtt-topics) and reads the data being streamed from the industrial devices. The main tasks of this Python program are:
 
 - Parsing the incoming messages.
 - Performing initial data processing, which can include data cleaning, normalization, or transformation.

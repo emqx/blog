@@ -1,4 +1,4 @@
-8 月 31 日，EMQ 举办了 [EMQX Enterprise 5.1 线上发布会](https://www.emqx.com/zh/events/mqtt-made-easy-introducing-emqx-5-1)，介绍了此次新版本的更新与改进，以及 EMQX Enterprise 在石油行业和车联网领域的实际应用。发布会期间，我们收到了许多提问，以下是我们整理的相关 EMQX Enterprise 5.1 发布会期间的问题和相关回答文档，希望对您有所帮助。
+8 月 31 日，EMQ 举办了 [EMQX Enterprise 5.1 线上发布会](https://www.emqx.com/zh/events/mqtt-made-easy-introducing-emqx-5-1)，介绍了此次新版本的更新与改进，以及 [EMQX Enterprise](https://www.emqx.com/zh/products/emqx) 在石油行业和车联网领域的实际应用。发布会期间，我们收到了许多提问，以下是我们整理的相关 EMQX Enterprise 5.1 发布会期间的问题和相关回答文档，希望对您有所帮助。
 
 
 ## 1. 运营商对 QUIC 的支持如何保证?
@@ -8,7 +8,7 @@ A: 目前运营商在公网上对 UDP 确实有一些限制，要解决这个问
 
 ## 2. 没有网络 QUIC 也不断连吗？
 
-A: 并不是不会断连，而是断连之后应用层能够快速感知状态变化，客户端和服务器之间可以在网络恢复后更快地重新建立连接。我们做了一些测试，参考 [QUIC vs TCP/TLS 测试对比](https://www.emqx.com/zh/blog/mqtt-over-quic#quic-vs-tcp-tls-测试对比) ，在网络不稳定、连接多变的物联网场景下，测试数据也表明，基于 QUIC 0 RTT/1 RTT 重连/新建能力，MQTT over QUIC 能够在弱网与不固定的网络通路中有效提升用户体验。
+A: 并不是不会断连，而是断连之后应用层能够快速感知状态变化，客户端和服务器之间可以在网络恢复后更快地重新建立连接。我们做了一些测试，参考 [QUIC vs TCP/TLS 测试对比](https://www.emqx.com/zh/blog/mqtt-over-quic#quic-vs-tcp-tls-测试对比) ，在网络不稳定、连接多变的物联网场景下，测试数据也表明，基于 QUIC 0 RTT/1 RTT 重连/新建能力，[MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) over QUIC 能够在弱网与不固定的网络通路中有效提升用户体验。
 
 
 ## 3. 怎么做数据重要性的划分呢? 数据重要与否的依据是什么?
@@ -32,7 +32,7 @@ A: MQTT over TCP 下，一个连接只有一个通道，进行文件传输时会
  
 ## 6. QUIC 内置的加密算法是支持多种不同的算法还是固定的某个算法呢?
 
-A: QUIC 协议内置了加密功能，并支持多种不同的加密算法。
+A: [QUIC 协议](https://www.emqx.com/zh/blog/quic-protocol-the-features-use-cases-and-impact-for-iot-iov)内置了加密功能，并支持多种不同的加密算法。
 
  
 ## 7. 怎么处理上下线不一致的问题？  

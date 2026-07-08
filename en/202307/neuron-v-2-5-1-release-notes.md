@@ -112,7 +112,7 @@ The DL/T645-1997 plugin supports both serial port connection and transparent TCP
 
 ### MQTT Functionality Upgrades 
 
-This includes adding frequency control for reporting offline cached data and supporting custom Topic definition for MQTT offline cached data reporting.
+This includes adding frequency control for reporting offline cached data and supporting custom Topic definition for [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) offline cached data reporting.
 
 ### Driver Upgrades 
 

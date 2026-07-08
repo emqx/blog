@@ -1,4 +1,4 @@
-[MQTT 5.0](https://www.emqx.com/zh/blog/introduction-to-mqtt-5) 协议相比 MQTT 3.1.1 增加了很多属性，这些属性分布于报文的可变头部 ( Variable Header ) 和有效载荷 ( Payload ) 中。
+[MQTT 5.0](https://www.emqx.com/zh/blog/introduction-to-mqtt-5) 协议相比 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 3.1.1 增加了很多属性，这些属性分布于报文的可变头部 ( Variable Header ) 和有效载荷 ( Payload ) 中。
 
 MQTT 5.0 协议中携带有效载荷的报文有 CONNECT 报文，PUBLISH 报文，SUBSCRIBE 报文，SUBACK 报文，UNSUBSCRIBE 报文和 UNSUBACK 报文。
 
@@ -22,7 +22,7 @@ PUBLISH 报文的有效载荷负责存储消息内容，与 MQTT 3.1.1 协议相
 
 ### CONNACK 报文
 
-**CONNACK 报文没有 Payload，在可变头部中包含的属性有：**
+**[CONNACK](https://www.emqx.com/zh/blog/mqtt5-new-features-reason-code-and-ack) 报文没有 Payload，在可变头部中包含的属性有：**
 
 ![3.png](https://assets.emqx.com/images/a1af2211b756e665c1b891ec78acba13.png)
 
@@ -74,7 +74,7 @@ UNSUBSCRIBE 报文的载荷相比 SUBSCRIBE 的载荷要简单很多，它仅仅
 
 ### DISCONNECT 报文(新增)
 
-**DISCONNECT 报文是 MQTT 5.0 新增的报文，它的引入意味着 mqtt broker 拥有了主动断开连接的能力。DISCONNECT 报文所具备的属性有：**
+**DISCONNECT 报文是 MQTT 5.0 新增的报文，它的引入意味着 [mqtt broker](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison) 拥有了主动断开连接的能力。DISCONNECT 报文所具备的属性有：**
 
 ![DISCONNECT 报文新增.png](https://assets.emqx.com/images/f6aa8921e06244d319c110a9cfdbdb90.png)
 

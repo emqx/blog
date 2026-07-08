@@ -162,7 +162,7 @@ listener.ssl.external.certfile = etc/certs/emqx.crt
 
   **注意**：在 `Certificate` 一栏只需选择 `CA signed server` 即可，使用购买证书在进行单向认证连接时不需要携带任何证书文件（CA 文件也不需要携带）。
 
-- 点击  `Connect`  按钮，连接成功后，如果能正常执行 MQTT 发布/订阅 操作，则购买证书的 SSL 单向认证配置成功。
+- 点击  `Connect`  按钮，连接成功后，如果能正常执行 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 发布/订阅 操作，则购买证书的 SSL 单向认证配置成功。
 
 ![mqttxconnectedserver.png](https://assets.emqx.com/images/05a4ec449fb19394ef11bf258310e05a.png)
 

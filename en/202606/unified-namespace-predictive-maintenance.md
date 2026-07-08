@@ -20,7 +20,7 @@ First, they installed high-precision vibration sensors on each cutting machine. 
 
 ### Building the Central Nervous System with EMQX Enterprise
 
-All of this data was then sent to **EMQX Enterprise**, which served as the central hub of their **Unified Namespace (UNS)**. This is where the magic truly happened. Within the UNS, every data point, from a vibration sensor reading to a machine's operational status, was given a unique, hierarchical address. The data was published as a real-time, event-driven stream, creating a single source of truth for their entire operation. This solved the problem of data silos, as any application, from their machine learning model to an operator's dashboard, could now access the same, clean, structured data in real-time.
+All of this data was then sent to **[EMQX Enterprise](https://www.emqx.com/en/products/emqx)**, which served as the central hub of their **Unified Namespace (UNS)**. This is where the magic truly happened. Within the UNS, every data point, from a vibration sensor reading to a machine's operational status, was given a unique, hierarchical address. The data was published as a real-time, event-driven stream, creating a single source of truth for their entire operation. This solved the problem of data silos, as any application, from their machine learning model to an operator's dashboard, could now access the same, clean, structured data in real-time.
 
 ### AI/ML Analysis and Action
 

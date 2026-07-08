@@ -2,7 +2,7 @@ The promise of IoT has always been to leverage device data for smarter operation
 
 The OT world runs on live, streaming data. The IT world of analytics and AI runs on structured, queryable datasets. Getting data from one side to the other has traditionally required complex, brittle, and expensive ETL (Extract, Transform, Load) pipelines.
 
-With the release of EMQX Enterprise 5.10, we are thrilled to introduce a feature designed to tear down this wall: **native data integration with Amazon S3 Tables.**
+With the release of [EMQX Enterprise](https://www.emqx.com/en/products/emqx) 5.10, we are thrilled to introduce a feature designed to tear down this wall: **native data integration with Amazon S3 Tables.**
 
 ![image.png](https://assets.emqx.com/images/56cca3be309b4cd9e8bc6c8c0e91d821.png)
 
@@ -10,7 +10,7 @@ With the release of EMQX Enterprise 5.10, we are thrilled to introduce a feature
 
 ## The Challenge: From Data Stream to Data Lakehouse
 
-Streaming raw MQTT data into a standard Amazon S3 bucket is a common first step for data collection. But this raw data isn't immediately usable for analytics. To make it valuable, you need to structure it, manage schemas, and optimize it for query engines like Amazon Athena, Spark, or Presto. This often involves batch processing jobs that add latency, cost, and complexity, delaying access to critical insights.
+Streaming raw [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) data into a standard Amazon S3 bucket is a common first step for data collection. But this raw data isn't immediately usable for analytics. To make it valuable, you need to structure it, manage schemas, and optimize it for query engines like Amazon Athena, Spark, or Presto. This often involves batch processing jobs that add latency, cost, and complexity, delaying access to critical insights.
 
 ## The Solution: Direct Integration with Analytics-Ready S3 Tables
 

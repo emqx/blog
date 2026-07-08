@@ -1,6 +1,6 @@
 ## 引言：更加轻松地使用 EMQX 
 
-最新发布的大规模分布式物联网 MQTT 消息服务器 [EMQX 5.0](https://www.emqx.com/zh/blog/emqx-v-5-0-released) 在[水平扩展性](https://www.emqx.com/zh/blog/how-emqx-5-0-achieves-100-million-mqtt-connections)、[消息传输稳定性](https://www.emqx.com/zh/blog/mqtt-over-quic)、[安全性](https://www.emqx.com/zh/blog/how-to-ensure-the-security-of-the-iot-platform)等方面实现了突破性的提升，为用户物联网关键业务提供了保障。在此基础上，EMQX 5.0 提供了更多便利的功能和设计以帮助用户更加轻松地使用、管理、扩展 EMQX。
+最新发布的大规模分布式物联网 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 消息服务器 [EMQX 5.0](https://www.emqx.com/zh/blog/emqx-v-5-0-released) 在[水平扩展性](https://www.emqx.com/zh/blog/how-emqx-5-0-achieves-100-million-mqtt-connections)、[消息传输稳定性](https://www.emqx.com/zh/blog/mqtt-over-quic)、[安全性](https://www.emqx.com/zh/blog/how-to-ensure-the-security-of-the-iot-platform)等方面实现了突破性的提升，为用户物联网关键业务提供了保障。在此基础上，EMQX 5.0 提供了更多便利的功能和设计以帮助用户更加轻松地使用、管理、扩展 EMQX。
 
 本文将从可操作性、可观测性、扩展性三个方面，与大家分享 EMQX 5.0 在运维监测、问题排查以及功能扩展中的功能优化，共同探索如何更快的利用这些优化搭建运维监控体系，为物联网业务带来更多助力。
 

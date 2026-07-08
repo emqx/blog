@@ -1,4 +1,4 @@
-[EMQX](https://github.com/emqx/emqx) is the most scalable and popular open-source MQTT broker with a high performance that connects 100M+ IoT devices in 1 cluster at 1ms latency. It can move and process millions of MQTT messages per second. The EMQX 5.0 has been verified in test scenarios to scale to 100 million concurrent device connections and is the first product to introduce QUIC to MQTT.
+[EMQX](https://github.com/emqx/emqx) is the most scalable and popular open-source [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) with a high performance that connects 100M+ IoT devices in 1 cluster at 1ms latency. It can move and process millions of [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) messages per second. The EMQX 5.0 has been verified in test scenarios to scale to 100 million concurrent device connections and is the first product to introduce [QUIC](https://www.emqx.com/en/blog/quic-protocol-the-features-use-cases-and-impact-for-iot-iov) to MQTT.
 
 > EMQX GitHub: [https://github.com/emqx/emqx](https://github.com/emqx/emqx) 
 

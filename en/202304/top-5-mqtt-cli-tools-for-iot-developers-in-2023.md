@@ -4,7 +4,7 @@ As MQTT continues to gain popularity as a lightweight messaging protocol for the
 
 ## Free Public MQTT Broker
 
-Before diving into the MQTT CLI tools, we need an MQTT broker to communicate and test. We choose the free public MQTT broker available on `broker.emqx.io`.
+Before diving into the MQTT CLI tools, we need an [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) to communicate and test. We choose the free public MQTT broker available on `broker.emqx.io`.
 
 >**MQTT Broker Info**
 >
@@ -26,7 +26,7 @@ For more information, please check out: [Free Public MQTT Broker for IoT Testing
 
 ## #1: MQTTX CLI
 
-[MQTTX CLI](https://mqttx.app/cli) is a lightweight and easy-to-use MQTT 5.0 command line tool. With various commands for MQTT publishing, subscribing, benchmarking, and IoT data simulation, it is one of the most powerful tools for MQTT development.
+[MQTTX CLI](https://mqttx.app/cli) is a lightweight and easy-to-use [MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5) command line tool. With various commands for MQTT publishing, subscribing, benchmarking, and IoT data simulation, it is one of the most powerful tools for MQTT development.
 
 MQTTX CLI is an open-source project written in Node.js and developed by [EMQ](https://www.emqx.com/en). It’s cross-platform and can work on Windows, macOS, and Linux. 
 
@@ -76,7 +76,7 @@ mqttx conn -h 'broker.emqx.io' -p 1883 -u 'test' -P 'test'
 
 #### Publish
 
-Publish a QoS1 message to an MQTT topic:
+Publish a QoS1 message to an [MQTT topic](https://www.emqx.com/en/blog/advanced-features-of-mqtt-topics):
 
 ```
 mqttx pub -t 'topic' -q 1 -h 'broker.emqx.io' -p 1883 -m 'Hello from MQTTX CLI'
@@ -168,7 +168,7 @@ mosquitto_pub -t 'rep-topic' -m 'response message' -h 'broker.emqx.io'
 
 [NanoMQ](https://github.com/nanomq/nanomq) is the latest open-source MQTT broker written in pure C for the IoT edge, initially developed by EMQ in 2020. It is fast and lightweight with multi-threading and asynchronous I/O architecture.
 
-NanoMQ also provides an MQTT client SDK and a command line tool for MQTT benchmarking and debugging, specifically for [MQTT over QUIC](https://www.emqx.com/en/blog/mqtt-over-quic), the next generation of the MQTT protocol standard.
+NanoMQ also provides an MQTT client SDK and a command line tool for MQTT benchmarking and debugging, specifically for [MQTT over QUIC](https://www.emqx.com/en/blog/mqtt-over-quic), the next generation of the [MQTT protocol](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) standard.
 
 **GitHub:** [https://github.com/nanomq/nanomq](https://github.com/nanomq/nanomq)
 
@@ -230,7 +230,7 @@ nanomq_cli bench pub -t topic -h broker.emqx.io -s 16 -q 0 -c 10 -I 10
 
 ## #4: MQTT.js CLI
 
-[MQTT.js](https://github.com/mqttjs/MQTT.js) is a popular MQTT client library, written in JavaScript for node.js and the browser. MQTT.js also provides a CLI tool that can be used for MQTT testing and debugging in the command line.
+[MQTT.js](https://github.com/mqttjs/MQTT.js) is a popular MQTT client library, written in JavaScript for node.js and the browser. [MQTT.js](https://www.emqx.com/en/blog/mqtt-js-tutorial) also provides a CLI tool that can be used for [MQTT testing](https://www.emqx.com/en/blog/mqtt-testing) and debugging in the command line.
 
 MQTT.js CLI depends on Node.js, and Node v12+ is required to run.
 
@@ -276,7 +276,7 @@ HiveMQ CLI is implemented with Java, and Java 8 is required to run.
 - All MQTT 3.1.1 and MQTT 5.0 features are supported
 - Interactive, direct, and verbose Modes for all MQTT Commands
 - Shell behavior with Syntax Highlighting, Command history
-- Ability to connect simultaneously various MQTT Clients to different Broker
+- Ability to connect simultaneously various [MQTT Clients](https://www.emqx.com/en/blog/mqtt-client-tools) to different Broker
 - Built on JVM and various distributions available
 
 ### Installation

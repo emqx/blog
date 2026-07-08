@@ -1,6 +1,6 @@
 EMQX 6.1.0 is now available!
 
-With the introduction of MQTT Streams, this version brings durable, replayable message streaming directly into the MQTT ecosystem. It also enhances multi-tenancy with improved namespace configuration, clearer isolation, and namespace-level observability, while expanding data integration capabilities for modern time-series and streaming workflows.
+With the introduction of [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) Streams, this version brings durable, replayable message streaming directly into the MQTT ecosystem. It also enhances multi-tenancy with improved namespace configuration, clearer isolation, and namespace-level observability, while expanding data integration capabilities for modern time-series and streaming workflows.
 
 Whether you’re building event-driven IoT systems, operating large-scale telemetry pipelines, or running systems with thousands of tenants, EMQX 6.1.0 delivers the replayability, visibility, and operational control needed to run MQTT at enterprise scale.
 
@@ -66,7 +66,7 @@ EMQX 6.1.0 expands data integration capabilities to better support modern time-s
 **New Integrations:**
 
 - [**AWS Timestream for InfluxDB**](https://docs.emqx.com/en/emqx/latest/data-integration/timestream-for-influxdb.html) integration allows EMQX to write MQTT data directly into AWS-managed InfluxDB-compatible time-series storage using InfluxDB Line Protocol, enabling scalable ingestion and real-time analytics without managing database infrastructure.
-- [**EMQX Tables**](https://docs.emqx.com/en/emqx/latest/data-integration/emqx-tables.html) integration allows EMQX Enterprise to write MQTT data into EMQX Tables in EMQX Cloud using InfluxDB Line Protocol for centralized time-series storage and analysis.
+- [**EMQX Tables**](https://docs.emqx.com/en/emqx/latest/data-integration/emqx-tables.html) integration allows [EMQX Enterprise](https://www.emqx.com/en/products/emqx) to write MQTT data into EMQX Tables in [EMQX Cloud](https://www.emqx.com/en/cloud) using InfluxDB Line Protocol for centralized time-series storage and analysis.
 
 **Integration Enhancements:**
 

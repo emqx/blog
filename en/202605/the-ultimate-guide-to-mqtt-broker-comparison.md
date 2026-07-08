@@ -194,7 +194,7 @@ The fully managed cloud service is the easiest way to start an MQTT service. Wit
 
 - [**MQTT to MongoDB: A Beginner's Guide for IoT Data Integration**](https://www.emqx.com/en/blog/mqtt-and-mongodb-crafting-seamless-synergy-for-iot-data-mangement)
 
-  This post will elaborate on the benefits and key use cases of MongoDB with MQTT in IoT scenarios. We will also provide a demonstration of integrating MQTT data into a MongoDB database to give readers a better understanding of how to implement this process.
+  This post will elaborate on the benefits and key use cases of MongoDB with [MQTT in IoT](https://www.emqx.com/en/blog/what-is-the-mqtt-protocol) scenarios. We will also provide a demonstration of integrating MQTT data into a MongoDB database to give readers a better understanding of how to implement this process.
 
 - [**Integrating MQTT Data into InfluxDB for a Time-Series IoT Application**](https://www.emqx.com/en/blog/building-an-iot-time-series-data-application-with-mqtt-and-influxdb)
 
@@ -248,7 +248,7 @@ The fully managed cloud service is the easiest way to start an MQTT service. Wit
 
 ## EMQX: World’s Most Scalable MQTT Broker
 
-EMQX is one of the most popular [open source MQTT brokers](https://www.emqx.com/en/blog/a-comprehensive-comparison-of-open-source-mqtt-brokers-in-2023) and has 16.3k stars on [GitHub](https://github.com/emqx/emqx). It supports [MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5), 3.1.1, and 3.1, as well as other protocols like [MQTT-SN](https://www.emqx.com/en/blog/connecting-mqtt-sn-devices-using-emqx), [CoAP](https://www.emqx.com/en/blog/coap-protocol), [LwM2M](https://www.emqx.com/en/blog/integrating-lwm2m-with-mqtt), and [MQTT over QUIC](https://www.emqx.com/en/blog/mqtt-over-quic). EMQX enables you to connect millions of IoT devices, process and route messages in real time, and integrate with a wide range of backend data systems. It's ideal for applications in AI, IoT, Industrial IoT (IIoT), connected vehicles, smart cities, and beyond.
+EMQX is one of the most popular [open source MQTT brokers](https://www.emqx.com/en/blog/a-comprehensive-comparison-of-open-source-mqtt-brokers-in-2023) and has 16.3k stars on [GitHub](https://github.com/emqx/emqx). It supports [MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5), 3.1.1, and 3.1, as well as other protocols like [MQTT-SN](https://www.emqx.com/en/blog/connecting-mqtt-sn-devices-using-emqx), [CoAP](https://www.emqx.com/en/blog/coap-protocol), [LwM2M](https://www.emqx.com/en/blog/integrating-lwm2m-with-mqtt), and [MQTT over QUIC](https://www.emqx.com/en/blog/mqtt-over-quic). EMQX enables you to connect millions of IoT devices, process and route messages in real time, and integrate with a wide range of backend data systems. It's ideal for applications in AI, IoT, [Industrial IoT](https://www.emqx.com/en/blog/industrial-iot-systems) (IIoT), connected vehicles, smart cities, and beyond.
 
 EMQX is the world's most scalable MQTT broker that supports masterless clustering for high availability and horizontal scalability. It can scale to establish 100 million concurrent MQTT connections with a single cluster of 23 nodes.
 

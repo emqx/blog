@@ -1,10 +1,10 @@
-春分时节，万物复苏，[NanoMQ](https://nanomq.io/zh) 项目又如期为大家献上了最新的 0.17 版本。这一版本主要对 2 个重要功能进行了升级：MQTT over QUIC 的双向认证和 DDS 协议转换代理的序列化代码自动生成。另外还新增了 QUIC 传输层的配置参数，增加了 Retain 消息的持久化，以及发布了 NanoSDK 0.9 版本等诸多更新。
+春分时节，万物复苏，[NanoMQ](https://nanomq.io/zh) 项目又如期为大家献上了最新的 0.17 版本。这一版本主要对 2 个重要功能进行了升级：[MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) over QUIC 的双向认证和 DDS 协议转换代理的序列化代码自动生成。另外还新增了 QUIC 传输层的配置参数，增加了 Retain 消息的持久化，以及发布了 NanoSDK 0.9 版本等诸多更新。
 
 ## QUIC 双向认证 & 新增配置参数 
 
 自从 1994 年提出了 SSL 协议的原始规范以来，TLS 协议也经过了多次版本的更新。最新推出的 TLS 1.3 有望成为有史以来最安全但也最复杂的 TLS 协议。相较于 TLS 1/1.1/1.2，1.3 版本具备更快的连接协商速度，新的密钥协商机制 PSK 和更安全的加密哈希算法。 
 
-QUIC 在功能层面等价于 TCP+TLS, 并且已采用最新的 TLS 1.3 代替其原有加密协议(QUIC Crypto)。QUIC 协议默认基于 TLS 1.3 完成数据加密连接，且依赖其实现了0-RTT（1-RTT）快速重连握手功能。
+QUIC 在功能层面等价于 TCP+TLS, 并且已采用最新的 TLS 1.3 代替其原有加密协议(QUIC Crypto)。[QUIC 协议](https://www.emqx.com/zh/blog/quic-protocol-the-features-use-cases-and-impact-for-iot-iov)默认基于 TLS 1.3 完成数据加密连接，且依赖其实现了0-RTT（1-RTT）快速重连握手功能。
 
 ![MQTT 3.1.1/5.0 over QUIC](https://assets.emqx.com/images/6a5e87cb25a61f8df11119b60f42403a.png)
 

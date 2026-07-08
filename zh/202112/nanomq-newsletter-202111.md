@@ -7,9 +7,9 @@
 
 ## NNG 现已支持 MQTT
 
-NanoMQ 是 EMQ 与 NNG 合作的开源项目。在 NanoMQ 的 GitHub 仓库内部有一个 NNG 的 sub-module，其为 NanoMQ 单独维护的 NNG 版本（[GitHub 项目地址](https://github.com/nanomq/nng/tree/master)）。目前其 master 分支是 NanoMQ 为 MQTT Broker 单独开发优化并独立维护的特殊版本，从中我们已经为 NNG 提交了若干有价值的 PR 和 Issue。但此分支与 nanomsg 的 SP 协议并不兼容。
+NanoMQ 是 EMQ 与 NNG 合作的开源项目。在 NanoMQ 的 GitHub 仓库内部有一个 NNG 的 sub-module，其为 NanoMQ 单独维护的 NNG 版本（[GitHub 项目地址](https://github.com/nanomq/nng/tree/master)）。目前其 master 分支是 NanoMQ 为 [MQTT Broker](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison) 单独开发优化并独立维护的特殊版本，从中我们已经为 NNG 提交了若干有价值的 PR 和 Issue。但此分支与 nanomsg 的 SP 协议并不兼容。
 
-本月我们主要致力于为 NNG 添加 MQTT 3.1.1 协议支持，从而使 NanoMQ 与 NNG 的 SP 协议兼容，以便两个项目未来能更好地共同使用。这也与 NanoMQ 之前制定的 RoadMap 方向一致。
+本月我们主要致力于为 NNG 添加 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 3.1.1 协议支持，从而使 NanoMQ 与 NNG 的 SP 协议兼容，以便两个项目未来能更好地共同使用。这也与 NanoMQ 之前制定的 RoadMap 方向一致。
 
 根据之前和 NNG 项目维护者 Garrett 在开源合作会议上共同制定的技术目标，NNG 未来会增加支持ZeroMQ 和MQTT 3.1.1/5.0。经过一个月的努力，我们已经完成了 MQTT 3.1.1 协议的开发支持，并将其命名为 NanoSDK。NanoSDK 内部设计保留了 NNG 框架的编程风格，兼容 NNG 原有的 SP 协议。同时不影响其 HTTP/Websocket/TLS 等功能的使用。
 

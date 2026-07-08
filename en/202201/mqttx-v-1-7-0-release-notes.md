@@ -1,4 +1,4 @@
-Recently, MQTTX v1.7.0 was officially released by EMQ. From this version, MQTTX will further support many new features of [MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5), which is the most complete desktop test client tool that supports MQTT 5.0 in the world so far.
+Recently, MQTTX v1.7.0 was officially released by EMQ. From this version, MQTTX will further support many new features of [MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5), which is the most complete desktop test client tool that supports [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) 5.0 in the world so far.
 
  
 MQTTX website: [https://mqttx.app/](https://mqttx.app/) 
@@ -89,12 +89,12 @@ MQTTX is still in the process of continuous enhancement and improvement, to brin
 Next, we will focus on the following aspects:
 
 - More complete support for MQTT 5.0
-- Plug-in system (for example, support SparkPlug B)
+- Plug-in system (for example, support [SparkPlug B](https://www.emqx.com/en/solutions/mqtt-sparkplug))
 - MQTT Debug function
 - Script function optimization
 
 ## Conclusion
 
-MQTTX is designed to connect to test MQTT Brokers such as EMQX. The one-click connection and a clean graphical interface make it easy to explore and debug MQTT features. MQTTX provides comprehensive testing capabilities for MQTT features. Fully open-source and community-driven makes it integrated with more rich, powerful, user-friendly features. With MQTTX and EMQX - the cloud-native distributed messaging broker, we believe that the test and development of IoT platforms will become easier.
+MQTTX is designed to connect to test [MQTT Brokers](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) such as EMQX. The one-click connection and a clean graphical interface make it easy to explore and debug MQTT features. MQTTX provides comprehensive testing capabilities for MQTT features. Fully open-source and community-driven makes it integrated with more rich, powerful, user-friendly features. With MQTTX and EMQX - the cloud-native distributed messaging broker, we believe that the test and development of IoT platforms will become easier.
 
 The MQTTX project is completely open-source. You can go to [GitHub](https://github.com/emqx/MQTTX/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc) to submit the problems encountered during use, or fork the MQTTX project to submit a revised PR to us. We will review and deal with it in time. We would also like to thank all users in the community for their contributions and feedback. The use and affirmation of each community user is the driving force for the advancement of our products.

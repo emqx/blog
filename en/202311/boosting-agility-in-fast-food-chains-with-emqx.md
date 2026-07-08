@@ -22,9 +22,9 @@ By using IoT sensors, restaurants can now monitor equipment in real time. Howeve
 
 ![Smart Restaurant with MQTT](https://assets.emqx.com/images/88ed4d3b9f4fb19d80568df86532c6c3.png)
 
-Thanks to EMQX's high scalability, you can easily deploy the EMQX MQTT broker in the back-office data center and on tens of thousands of restaurant edge servers. EMQX is adaptive for resources-constraint system environments.
+Thanks to EMQX's high scalability, you can easily deploy the EMQX [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) in the back-office data center and on tens of thousands of restaurant edge servers. EMQX is adaptive for resources-constraint system environments.
 
-The EMQX MQTT broker is an essential component for below key business systems across the edge servers and the data center:
+The EMQX [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) broker is an essential component for below key business systems across the edge servers and the data center:
 
 - **Order Management**: EMQX is responsible for processing user orders at self-service kiosks and sending them to the order management system at the data center. Meanwhile, EMQX will receive incoming orders from Mobile apps and 3rd-party channels and route them to the restaurants.
 - **Inventory Management**: EMQX processes inventory information updated by staff on handheld devices and synchronizes this information to the back office.

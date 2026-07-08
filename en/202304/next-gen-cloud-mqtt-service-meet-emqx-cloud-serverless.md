@@ -1,6 +1,6 @@
 ## Introduction
 
-In the ever-evolving world of cloud computing and the Internet of Things (IoT), businesses constantly seek ways to improve efficiency, scalability, and cost-effectiveness. [EMQX Cloud](https://www.emqx.com/en/cloud) has been a leader in providing fully managed MQTT services, enabling IoT devices and IoT apps to communicate with each other seamlessly. [EMQX Cloud Serverless](https://www.emqx.com/en/cloud/serverless-mqtt) is the latest offering from EMQ. This cutting-edge solution embraces the power of serverless computing to bring unparalleled benefits to our customers. 
+In the ever-evolving world of cloud computing and the Internet of Things (IoT), businesses constantly seek ways to improve efficiency, scalability, and cost-effectiveness. [EMQX Cloud](https://www.emqx.com/en/cloud) has been a leader in providing fully managed [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) services, enabling IoT devices and IoT apps to communicate with each other seamlessly. [EMQX Cloud Serverless](https://www.emqx.com/en/cloud/serverless-mqtt) is the latest offering from EMQ. This cutting-edge solution embraces the power of serverless computing to bring unparalleled benefits to our customers. 
 
 In this blog, we will explore the significance of serverless MQTT and how EMQX Cloud Serverless can revolutionize your cloud MQTT services.
 

@@ -4,7 +4,7 @@ This article will introduce how to use the [EMQX Cloud](https://www.emqx.com/en/
 
 ### What is AWS IoT?
 
-Amazon IoT Core is a hosted cloud platform that makes it easy for connected devices to securely interact with cloud applications and other devices. Amazon IoT can support billions of devices and trillions of messages and can process and securely route them to Amazon Cloud Technologies endpoint nodes and other devices. With Amazon IoT, your applications can track and communicate with all your devices at all times, even when they are not connected.
+Amazon [IoT Core](https://www.emqx.com/en/blog/understanding-aws-iot-core) is a hosted cloud platform that makes it easy for connected devices to securely interact with cloud applications and other devices. Amazon IoT can support billions of devices and trillions of messages and can process and securely route them to Amazon Cloud Technologies endpoint nodes and other devices. With Amazon IoT, your applications can track and communicate with all your devices at all times, even when they are not connected.
 
 ![AWS IoT](https://assets.emqx.com/images/6cab98865f1894be29485ef96af9ad6c.png)
 
@@ -20,9 +20,9 @@ Amazon IoT Core is a hosted cloud platform that makes it easy for connected devi
 
 ## Introduction to EMQX Cloud
 
-EMQX Cloud is a fully managed cloud-native MQTT service from EMQ that connects to massive numbers of IoT devices and integrates with various databases and business systems.
+EMQX Cloud is a fully managed cloud-native [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) service from EMQ that connects to massive numbers of IoT devices and integrates with various databases and business systems.
 
-As the world's first fully managed MQTT 5.0 public cloud service, EMQX Cloud provides a one-stop O&M colocation and a unique isolated environment for MQTT messaging services.
+As the world's first fully managed [MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5) public cloud service, EMQX Cloud provides a one-stop O&M colocation and a unique isolated environment for MQTT messaging services.
 
 In the era of the Internet of Everything, EMQX Cloud can help users quickly build industry applications for the IoT field and can help users quickly build industry applications for the IoT field, and easily realize the collection, transmission, calculation, and persistence of IoT data.
 
@@ -109,7 +109,7 @@ On the EMQX Cloud deployment details page, enable the value-added service, NAT G
 
 ### Configure EMQX Cloud data integration
 
-Go to the EMQX Cloud deployment page and click Data Integration - MQTT Bridge.
+Go to the EMQX Cloud deployment page and click Data Integration - [MQTT Bridge](https://www.emqx.com/en/blog/bridging-mosquitto-to-emqx-cluster).
 
 ![EMQX Cloud data integration](https://assets.emqx.com/images/7038319a8ada330c0ee533774b44d790.png)
 

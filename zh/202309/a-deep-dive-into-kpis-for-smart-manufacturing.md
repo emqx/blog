@@ -50,7 +50,7 @@ KPI 是跟踪关键指标的工具，有助于企业做出重要决策。这些 
 
 ## 用 OMH 轻松管理 KPI
 
-在制造企业扩张过程中，需要强大的工具来捕捉和跟踪 KPI。EMQ 提供的 [Open Manufacturing Hub（OMH）](https://www.emqx.com/zh/blog/open-manufacturing-hub-a-reference-architecture-for-industrial-iot)解决方案具备自动化和模块化的功能，可帮助您高效地运营。它提供了仪表板，能够显示实时的指标和 KPI，让您对业务有更深入的了解。先进的工业物联网解决方案还可以帮助您发现并利用提高生产力和收入的机会。
+在制造企业扩张过程中，需要强大的工具来捕捉和跟踪 KPI。EMQ 提供的 [Open Manufacturing Hub（OMH）](https://www.emqx.com/zh/blog/open-manufacturing-hub-a-reference-architecture-for-industrial-iot)解决方案具备自动化和模块化的功能，可帮助您高效地运营。它提供了仪表板，能够显示实时的指标和 KPI，让您对业务有更深入的了解。先进的[工业物联网](https://www.emqx.com/zh/blog/iiot-explained-examples-technologies-benefits-and-challenges)解决方案还可以帮助您发现并利用提高生产力和收入的机会。
 
 OMH 通过无缝整合信息技术（IT）和运营技术（OT），能够高效地收集制造环境中各种设备和系统的数据。这些设备可能包括专用机械、传感器、生产线以及其他对制造业 KPI 至关重要的组件。由于这些设备使用不同的通信协议，数据捕获非常复杂。OMH 通过其强大的连接能力克服了这一挑战。它可以与任何设备建立连接，无论它们使用何种底层技术或通信方式。这使得该解决方案能够整合以前难以获得和融合的数据源。
 

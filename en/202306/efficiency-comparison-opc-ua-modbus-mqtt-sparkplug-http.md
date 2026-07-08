@@ -42,7 +42,7 @@ Once a connection is established, some level of overhead is incurred to maintain
 
 **HTTP:** HTTP is a stateless protocol primarily used for web communication. Each HTTP request-response cycle is independent, and connections are not kept alive between requests by default.
 
-**MQTT:** MQTT employs a persistent connection model. Once a client establishes a connection with an MQTT broker, the connection remains open until explicitly closed by either the client or the broker. It also provides features like keep-alive mechanism and automatic reconnection to ensure connection reliability in case of network disruptions.
+**MQTT:** MQTT employs a persistent connection model. Once a client establishes a connection with an [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison), the connection remains open until explicitly closed by either the client or the broker. It also provides features like keep-alive mechanism and automatic reconnection to ensure connection reliability in case of network disruptions.
 
 **Sparkplug:** Sparkplug, built on MQTT, inherits the connection maintenance characteristics of MQTT. It utilizes the persistent connection model, enabling long-lived connections between clients and the MQTT broker. We assume that Sparkplug has similar results as MQTT.
 
@@ -82,7 +82,7 @@ Data compression in communication refers to the process of reducing the size of 
 
 **MQTT:** MQTT itself does not have built-in data compression as part of its core specification. However, MQTT can be used in conjunction with other compression techniques or libraries to compress the payload data before transmission.
 
-**Sparkplug:** Sparkplug is a messaging protocol specifically designed for industrial IoT applications, built on top of MQTT. Sparkplug has defined the Google Protobuf payload data format for the standard. Protobuf is somehow a compressed data format. Sparkplug can be considered the protocol with data compression.
+**Sparkplug:** Sparkplug is a messaging protocol specifically designed for [industrial IoT](https://www.emqx.com/en/blog/industrial-iot-systems) applications, built on top of MQTT. Sparkplug has defined the Google Protobuf payload data format for the standard. Protobuf is somehow a compressed data format. Sparkplug can be considered the protocol with data compression.
 
 ![Data Compression](https://assets.emqx.com/images/c56858826e93a396cd76204f2c5fea42.png)
 

@@ -8,7 +8,7 @@
 
 ### EMQX 开源项目 GitHub Star 数突破 9K
 
-我们非常高兴地看到 EMQX 项目（[https://github.com/emqx/emqx](https://github.com/emqx/emqx) ）的 GitHub Star 数在本月突破了 9K！这离不开广大社区用户和开发者对我们的支持。EMQX 团队将继续致力于为大家提供高性能、高可用的 MQTT 消息服务器，也欢迎大家通过 GitHub 与我们交流，提交项目 issue 或 PR。
+我们非常高兴地看到 EMQX 项目（[https://github.com/emqx/emqx](https://github.com/emqx/emqx) ）的 GitHub Star 数在本月突破了 9K！这离不开广大社区用户和开发者对我们的支持。EMQX 团队将继续致力于为大家提供高性能、高可用的 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 消息服务器，也欢迎大家通过 GitHub 与我们交流，提交项目 issue 或 PR。
 
 ![EMQX GitHub](https://assets.emqx.com/images/ceeea48431795ee2d40c81140d60474d.png)
 
@@ -24,7 +24,7 @@
 
 4.4.0 版本适配了 Erlang/OTP 24，目前 EMQX 官网也默认提供基于 OTP 24 的安装包下载。
 
-对于正在使用 EMQX Enterprise 4.3.x 的用户，现在我们可以更方便地将 EMQX 从 4.3 版本滚动升级到 4.4 版本。EMQX 4.4 的节点现在能够和 EMQX 4.3 的节点运行在同一个集群下，当然前提是并未启用 4.4.x 中的全新功能（这可能导致集群调用出错）。基于这一点，我们可以依次将集群中的 4.3 节点替换为 4.4 节点，最终在不停止集群服务的情况下，完成版本升级。
+对于正在使用 [EMQX Enterprise](https://www.emqx.com/zh/products/emqx) 4.3.x 的用户，现在我们可以更方便地将 EMQX 从 4.3 版本滚动升级到 4.4 版本。EMQX 4.4 的节点现在能够和 EMQX 4.3 的节点运行在同一个集群下，当然前提是并未启用 4.4.x 中的全新功能（这可能导致集群调用出错）。基于这一点，我们可以依次将集群中的 4.3 节点替换为 4.4 节点，最终在不停止集群服务的情况下，完成版本升级。
 
 ### 4.3 版本情况：企业版 v4.3.6 支持 Ali Lindorm 数据库
 

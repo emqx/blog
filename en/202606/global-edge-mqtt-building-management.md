@@ -1,6 +1,6 @@
 > ***Executive Summary***
 >
-> *A global building technology and industrial automation leader architected a distributed edge computing platform using EMQX Edge to aggregate sensor and equipment data from thousands of buildings worldwide. By deploying lightweight MQTT brokers at each facility, the organization created a scalable foundation for real-time building optimization, predictive maintenance, and AI-driven analytics.* 
+> *A global building technology and industrial automation leader architected a distributed edge computing platform using EMQX Edge to aggregate sensor and equipment data from thousands of buildings worldwide. By deploying lightweight [MQTT brokers](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) at each facility, the organization created a scalable foundation for real-time building optimization, predictive maintenance, and AI-driven analytics.* 
 
 ## Industry Context
 
@@ -21,7 +21,7 @@ The organization operates a geographically dispersed portfolio of buildings requ
 
 ## Why MQTT for Distributed Building Automation
 
-MQTT emerged as the standard for building automation and industrial IoT for several compelling reasons:
+[MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) emerged as the standard for building automation and [industrial IoT](https://www.emqx.com/en/blog/industrial-iot-systems) for several compelling reasons:
 
 - **Lightweight protocol**: Binary messaging and minimal overhead allow thousands of sensors to communicate efficiently over facility networks, including older building infrastructures with constrained bandwidth
 - **Publish-subscribe topology**: Natural fit for building automation's broadcast patterns (e.g., central HVAC controller publishes setpoint changes; thermostats and sensors subscribe to updates)
@@ -73,7 +73,7 @@ building/{facility-id}/energy/meter/{type}
 
 ## Key EMQX Capabilities Deployed
 
-- **EMQX Edge lightweight broker**: Minimal resource footprint suitable for containerized facility-level deployments, with full MQTT 5.0 compliance
+- **EMQX Edge lightweight broker**: Minimal resource footprint suitable for containerized facility-level deployments, with full [MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5) compliance
 - **High-throughput ingestion**: 800K–1M msg/sec per broker handles sensor bursts during peak facility operations (occupancy changes, emergency events)
 - **PostgreSQL data bridge**: Real-time persistence of facility data with built-in buffering for offline scenarios
 - **Containerized deployment**: Docker images with standardized configuration enable rapid provisioning across diverse facility IT environments

@@ -7,8 +7,8 @@ EMQ's commitment to AI is comprehensive, extending across various facets of its 
 - **Community Support**: Deployed an AI bot on the EMQX Discord channel to provide real-time community assistance.
 - **Product Enhancements**:
   - **EMQX Rule Engine**: Integrated the `ai_completion` call into the EMQX Rule Engine for intelligent message processing.
-  - [**MQTTX Copilot**](https://www.emqx.com/en/blog/mqttx-1-9-7-release-notes): Combines LLMs with MQTT operations to enable automation and streamline development.
-  - **NeuronEX IIoT Data Analysis**: Leverages LLMs and RAG for natural language data exploration and automated troubleshooting.
+  - [**MQTTX Copilot**](https://www.emqx.com/en/blog/mqttx-1-9-7-release-notes): Combines LLMs with [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) operations to enable automation and streamline development.
+  - **NeuronEX [IIoT](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges) Data Analysis**: Leverages LLMs and RAG for natural language data exploration and automated troubleshooting.
 - **Internal Optimization**:
   - Utilizes LLMs to automate knowledge aggregation from Jira and Slack into a RAG database, improving troubleshooting efficiency.
   - Developing an API to feed error logs into LLMs for customer self-service diagnostics.

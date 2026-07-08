@@ -108,7 +108,7 @@ If we only consider message delay, the performance of the three scenarios is act
 
 ### Test 4: Performance of EMQX with Bridging
 
-MQTT bridging can bridge messages from one MQTT server to another, common use cases include bridging messages aggregated by edge gateways to servers in the cloud and letting messages flow between two MQTT clusters.
+MQTT bridging can bridge messages from one [MQTT server](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) to another, common use cases include bridging messages aggregated by edge gateways to servers in the cloud and letting messages flow between two MQTT clusters.
 
 In this test scenario, messages published by 500 publishers connected to MQTT server 1 were bridged to MQTT server 2 and received by 500 subscribers connected to MQTT server 2. Meanwhile, messages published by another 500 publishers connected to MQTT server 2 were received by 500 subscribers connected to MQTT server 1.
 
@@ -382,7 +382,7 @@ Before submitting the test, XMeter Cloud will ask us to configure the following 
 
 - **Name**: By default, XMeter Cloud will concatenate the test scenario name with the current time as the test name. You can change it to any name you prefer, as long as it does not confuse you among multiple tests.
 - **Duration**: Set the duration of this test, here we set the duration to 5 minutes.
-- **Total VU Number**: Set the number of virtual users per thread group, which is the number of MQTT clients, the thread groups depend on the actual content of the script. In the `Symmetric.jmx` script, we have added a thread group Pub for publishing messages and a thread group Sub for receiving messages. Here we set the number of virtual users for both Pub and Sub thread groups to 1000, so the total number is 2000.
+- **Total VU Number**: Set the number of virtual users per thread group, which is the number of [MQTT clients](https://www.emqx.com/en/blog/mqtt-client-tools), the thread groups depend on the actual content of the script. In the `Symmetric.jmx` script, we have added a thread group Pub for publishing messages and a thread group Sub for receiving messages. Here we set the number of virtual users for both Pub and Sub thread groups to 1000, so the total number is 2000.
 - **Stress Region**: Set the VPC where the test machine will be created and the load will be initiated.
 - **Ramp-Up Period**: Set how much time it needs to reach the maximum number of virtual users we set when running the test script. Here we set it to 20 seconds, that is, the test will initiate connections at a rate of 100 connections per second during the run.
 - **Loop Mode**: Keep the default setting of `loop forever`. That is, the duration of the test run will be completely determined by the parameter `Duration`.
@@ -452,7 +452,7 @@ After we install collectd in Server 3 and also dump the data into InfluxDB, we n
 
 All the test scripts we use in this article can be run in JMeter, we only need to install two plugins in JMeter. They are:
 
-1. `mqtt-xmeter-2.0.2-jar-with-dependencies.jar,` this plugin provides JMeter with the ability to test the MQTT protocol. We can add samplers such as Connect Sampler, Pub Sampler and Sub Sampler to implement operations such as connecting, publishing, and subscribing in MQTT.
+1. `mqtt-xmeter-2.0.2-jar-with-dependencies.jar,` this plugin provides JMeter with the ability to test the [MQTT protocol](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt). We can add samplers such as Connect Sampler, Pub Sampler and Sub Sampler to implement operations such as connecting, publishing, and subscribing in MQTT.
 
 2. `xmeter-plugins-common-0.0.6-SNAPSHOT.jar`, this plugin provides a `__xmeterThroughput()` function, which we'll use in the Constant Throughput Timer. Its function is to convert our configured `target_throughput` into the target throughput per minute and then distribute it to each test machine according to the connection ratio. This is very useful when a single test machine cannot provide the target load.
 

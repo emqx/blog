@@ -33,7 +33,7 @@ To achieve this, we will add **ASR** and **TTS** components to our existing arch
 <center>New Architecture: Adding ASR and TTS Components</center>
 
 1. The ESP32 uses a microphone module to record user voice, generating a local audio file.
-2. The ESP32 uploads the audio data to the cloud via the MQTT protocol, where EMQX bridges the data to a WebHook, then processed by an App.
+2. The ESP32 uploads the audio data to the cloud via the [MQTT protocol](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt), where EMQX bridges the data to a WebHook, then processed by an App.
 3. The App sends the audio file to ASR and TTS services to generate a spoken reply.
 4. The recognized text is transmitted to the LLM.
 5. The LLM understands the contextual semantics and invokes tools deployed on the ESP32 via MCP over MQTT to control the device.
@@ -333,7 +333,7 @@ pip install fastapi uvicorn httpx lameenc numpy openai pydantic
 **ESP32 Library Dependencies:**
 
 - **WiFi**: Network connectivity
-- **PubSubClient**: MQTT client
+- **PubSubClient**: [MQTT client](https://www.emqx.com/en/blog/mqtt-client-tools)
 - **SPIFFS**: File system (for temporary audio storage)
 - **ESP32Audio**: Audio codec library
 

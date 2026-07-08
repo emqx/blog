@@ -1,4 +1,4 @@
-如果您一直在期待构建更智能、更灵活的 MQTT 数据管道，EMQX 5.10.0 将满足您的需求。
+如果您一直在期待构建更智能、更灵活的 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 数据管道，EMQX 5.10.0 将满足您的需求。
 
 本次更新引入了基于大模型的消息处理功能、自然语言 SQL 规则生成功能以及全新 NATS 协议网关。同时，新增对 Apache Doris 和 Amazon S3 Tables 的数据集成支持。
 
@@ -44,7 +44,7 @@ EMQX Dashboard 中新增 AI SQL 生成器，允许用户以通俗易懂的语言
 
 2. **相关主题：**指定主题示例，例如 `factory/machine-42/status`
 
-3. **输入示例（MQTT Payload）：**提供示例 MQTT 消息 Payload，以帮助 AI 理解您的数据结构。
+3. **输入示例（[MQTT Payload](https://www.emqx.com/zh/blog/how-to-process-json-hex-and-binary-data-in-mqtt)）：**提供示例 MQTT 消息 Payload，以帮助 AI 理解您的数据结构。
 
    ```sql
    {   

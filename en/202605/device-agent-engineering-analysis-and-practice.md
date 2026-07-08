@@ -35,7 +35,7 @@ The stages above are not a simple sequential pipeline; they form a tightly coupl
 - App interaction logic must match the device's actual response capabilities
 - Any change on one side can trigger cascading modifications across the others
 
-In practice, cross-team interface alignment consumes an enormous amount of time. A typical scenario: the embedded engineer defines a set of MQTT message formats; the backend engineer discovers missing fields during implementation; the app engineer finds that the interaction flow doesn't match expectations during integration testing. This "build and fix as you go" pattern is pervasive in the industry.
+In practice, cross-team interface alignment consumes an enormous amount of time. A typical scenario: the embedded engineer defines a set of [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) message formats; the backend engineer discovers missing fields during implementation; the app engineer finds that the interaction flow doesn't match expectations during integration testing. This "build and fix as you go" pattern is pervasive in the industry.
 
 ### II. Three Root Causes of Efficiency Bottlenecks
 

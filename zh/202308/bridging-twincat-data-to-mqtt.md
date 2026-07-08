@@ -1,4 +1,4 @@
-本文将介绍如何将 TwinCAT 数据桥接到 MQTT。我们将使用 Neuron 采集 Twincat PLC 的数据，将采集到的数据上传到 EMQX MQTT Broker，并使用 MQTTX 查看。
+本文将介绍如何将 TwinCAT 数据桥接到 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt)。我们将使用 Neuron 采集 Twincat PLC 的数据，将采集到的数据上传到 EMQX MQTT Broker，并使用 MQTTX 查看。
 
 ## TwinCAT 桥接到 MQTT 的架构
 
@@ -143,7 +143,7 @@ Neuron 提供多种安装方式，查阅[安装指南](https://docs.emqx.com/zh/
 
 作为一款工业自动化平台，TwinCAT 在包括汽车、航空航天、食品和饮料等各种行业中得到了广泛应用。具有强大工业物联网连接能力的 Neuron，可从 TwinCAT PLC 收集数据，并将获取的数据无缝传输到云端，以便在必要时进行方便的远程控制和监控。
 
-除此之外，Neuron 还支持 [Modbus](https://www.emqx.com/zh/blog/modbus-protocol-the-grandfather-of-iot-communication)、OPC UA、SIEMENS 等其他工业。有关更多桥接教程，请阅读我们的文章：[工业物联网数据桥接教程：Modbus 桥接到 MQTT](https://www.emqx.com/zh/blog/bridging-modbus-data-to-mqtt-for-iiot#the-architecture-of-modbus-to-mqtt-bridging)。
+除此之外，Neuron 还支持 [Modbus](https://www.emqx.com/zh/blog/modbus-protocol-the-grandfather-of-iot-communication)、[OPC UA](https://www.emqx.com/zh/blog/opc-ua-protocol)、SIEMENS 等其他工业。有关更多桥接教程，请阅读我们的文章：[工业物联网数据桥接教程：Modbus 桥接到 MQTT](https://www.emqx.com/zh/blog/bridging-modbus-data-to-mqtt-for-iiot#the-architecture-of-modbus-to-mqtt-bridging)。
 
 
 

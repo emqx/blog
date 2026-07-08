@@ -1,6 +1,6 @@
 [EMQX Enterprise](https://www.emqx.com/zh/products/emqx) 4.4.22 版本现已正式发布！
 
-新版本带来全局的预设 MQTT 消息过期时间功能，可以灵活设置消息在系统中的最大保留时间，避免消息堆积问题。同时新增了多个企业特性，包括审计日志，Dashboard RBAC 权限控制，进一步提升了企业部署的安全性和治理能力。此外，新版本还进行了多项改进以及 BUG 修复，进一步提升了整体性能和稳定性。
+新版本带来全局的预设 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 消息过期时间功能，可以灵活设置消息在系统中的最大保留时间，避免消息堆积问题。同时新增了多个企业特性，包括审计日志，Dashboard RBAC 权限控制，进一步提升了企业部署的安全性和治理能力。此外，新版本还进行了多项改进以及 BUG 修复，进一步提升了整体性能和稳定性。
 
 ## 全局预设 MQTT 消息过期时间
 
@@ -8,7 +8,7 @@
 
 消息过期时间与业务超时逻辑的统一这对于某些场景很重要，例如智能家居或车联网行业，由于网络波动导致消息延迟或失效需要及时丢弃过期消息，以避免用户发出的开锁指令被超时执行，带来额外的安全隐患。在金融支付业务中，这一特性可以确保数据在规定的时间内被处理，防止数据被滞留或被滥用，以提高消息的可靠性和安全性。
 
-[MQTT 5.0](https://www.emqx.com/zh/blog/introduction-to-mqtt-5) 提供了[消息过期间隔](https://www.emqx.com/zh/blog/message-retention-and-message-expiration-interval-of-emqx-mqtt5-broker)支持，允许客户端在发布消息时通过 Message-Expiry-Interval 属性指定该条消息的过期时间。在 MQTT 服务器后续的消息投递过程、以及保留消息列表中，过期的消息将被丢弃。然而，对于使用 MQTT v3.3.1 版本的用户来说，他们无法利用这一特性，这给应用的开发实践带来了一些限制。
+[MQTT 5.0](https://www.emqx.com/zh/blog/introduction-to-mqtt-5) 提供了[消息过期间隔](https://www.emqx.com/zh/blog/message-retention-and-message-expiration-interval-of-emqx-mqtt5-broker)支持，允许客户端在发布消息时通过 Message-Expiry-Interval 属性指定该条消息的过期时间。在 [MQTT 服务器](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison)后续的消息投递过程、以及保留消息列表中，过期的消息将被丢弃。然而，对于使用 MQTT v3.3.1 版本的用户来说，他们无法利用这一特性，这给应用的开发实践带来了一些限制。
 
 为此，自 v4.4.22 版本起 EMQX 提供了全局预设的 MQTT 消息过期时间，在不改动客户端的情况下，允许用户通过配置文件为所有消息设置统一的消息过期时间实现这一需求，配置示例如下如下：
 
@@ -126,7 +126,7 @@ is_not_null_var(mget('a', json_decode('{"a": null}'))) = false
 
 ## 其他更新
 
-- LwM2M 网关支持使用块传输协议（Block Wise Transfer）发送下行数据，有效地解决传输过程中的内存和网络带宽限制。
+- [LwM2M](https://www.emqx.com/zh/blog/iot-protocols-mqtt-coap-lwm2m) 网关支持使用块传输协议（Block Wise Transfer）发送下行数据，有效地解决传输过程中的内存和网络带宽限制。
 - 更新 Erlang/OTP 的版本到 OTP-24.3.4.2-4，修复了潜在问题并提升安全性。
 - OCSP Stapling 和 CRL 创建与更新 REST API 提供了增加更严格的 Schema 校验。
 - 为 MQTT 桥接动作增加 `QoS` 选项，用于指定桥接消息的 QoS 等级，实现更灵活的消息桥接。

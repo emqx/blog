@@ -1,4 +1,4 @@
-We're excited to announce that [EMQX Cloud](https://www.emqx.com/en/cloud), the fully managed MQTT cloud service, is available in AWS Ohio from March 31st, 2023. With this new supported region, users can easily deploy their EMQX Cloud Deployment in AWS Ohio, taking advantage of its location, infrastructure, and security standards.
+We're excited to announce that [EMQX Cloud](https://www.emqx.com/en/cloud), the fully managed [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) cloud service, is available in AWS Ohio from March 31st, 2023. With this new supported region, users can easily deploy their EMQX Cloud Deployment in AWS Ohio, taking advantage of its location, infrastructure, and security standards.
 
 ### Why AWS Ohio is a Great Region for EMQX Cluster Deployment
 

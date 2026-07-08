@@ -21,7 +21,7 @@ Kuiper 0.4.1 版本主要修复了一些从社区中反馈的问题。
 - 支持插件多实例的功能。之前的版本中，插件只支持单个实例，现在用户可以通过返回一个构造函数来支持插件多实例功能。
 - 修复[规则文档中](https://ekuiper.org/docs/en/latest/concepts/rules.html)关于 `dataTemplate` 使用方法的说明
 - 修复[ EdgeX 浮点数据](https://github.com/lf-edge/ekuiper/issues/272)在某些情况下不能处理的问题
-- 支持通过 Docker 环境变量来修改 EdgeX MQTT 消息总线的配置
+- 支持通过 Docker 环境变量来修改 EdgeX [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 消息总线的配置
 - 支持将汇聚函数的运算结果作为别名，然后在 WHERE 或者 HAVING 表达式中使用别名进行引用，这样可以避免多次运算，提高了运行效率
 - 删除不存在的流、规则时返回 404，而非之前的 400
 - 修复了删除规则后，[未成功发送的数据被无限重发的问题](https://github.com/lf-edge/ekuiper/issues/266)

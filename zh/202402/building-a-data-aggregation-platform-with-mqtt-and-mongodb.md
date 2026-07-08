@@ -2,7 +2,7 @@
 
 随着物流行业的快速发展，以物联网技术作为核心的智慧物流应用愈加广泛。
 
-EMQX 和 MongoDB 的集成为物流行业提供了一种便捷高效的数据采集方案。企业级 MQTT 物联网接入平台 EMQX 能够实现车辆上各种 IoT 传感器数据采集以及各个流程上的数据汇总，MongoDB 数据库则可提供汇聚和分析能力，满足车辆问题与货物状态监测、配送路线优化和货物装载调配等需求。
+EMQX 和 MongoDB 的集成为物流行业提供了一种便捷高效的数据采集方案。企业级 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 物联网接入平台 EMQX 能够实现车辆上各种 IoT 传感器数据采集以及各个流程上的数据汇总，MongoDB 数据库则可提供汇聚和分析能力，满足车辆问题与货物状态监测、配送路线优化和货物装载调配等需求。
 
 这一方案可为物流企业提供丰富的管理决策依据，从而优化运输过程优化、提升运输效率、降低运输成本，进一步提高服务质量与客户满意度。
 
@@ -136,7 +136,7 @@ $ docker logs -f mqttx
 payload: {"car_id":"XCRHFDSBFPL011940","display_name":"car_1","model":"J7","latitude":151.95961085265282,"longitude":128.29460259535088,"speed":114,"distance":31.666666666666668,"direction":26,"tyre_pressure":[441.1,577.9,510.1,466.4,496.1,556.1,469.2...
 ```
 
-您也可以使用任何 MQTT 客户端来订阅和接收已发布的数据，例如：
+您也可以使用任何 [MQTT 客户端](https://www.emqx.com/zh/blog/mqtt-client-tools)来订阅和接收已发布的数据，例如：
 
 ```
 mqttx sub -t mqttx/simulate/IEM/+

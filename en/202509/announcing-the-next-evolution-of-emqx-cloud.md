@@ -1,4 +1,4 @@
-We are excited to announce a landmark update to [EMQX Cloud](https://www.emqx.com/en/cloud), marking its evolution from a leading managed MQTT service to a comprehensive, unified MQTT data platform. This release introduces powerful new features and significant enhancements designed to provide greater flexibility, reduce costs, and streamline your entire IoT data journey.
+We are excited to announce a landmark update to [EMQX Cloud](https://www.emqx.com/en/cloud), marking its evolution from a leading managed [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) service to a comprehensive, unified MQTT data platform. This release introduces powerful new features and significant enhancements designed to provide greater flexibility, reduce costs, and streamline your entire IoT data journey.
 
 This is a pivotal moment for EMQX Cloud. Our vision has always been to simplify IoT data management. With these updates, we are empowering you to connect, process, store, and analyze your data seamlessly within a single, powerful platform.
 
@@ -8,7 +8,7 @@ We've upgraded our Dedicated Edition to **Dedicated Flex**, a new plan engineere
 
 - **Unbundled Sessions & TPS:** We recognize that a 1:1 ratio doesn't fit every use case. With Dedicated Flex, you can now choose the exact combination you need—for example, 1,000 sessions with just 100 TPS—reducing unnecessary costs and ensuring optimized resource usage.
 - **Lower Starting Price:** The entry price is reduced from **$0.36/hour to $0.32/hour**, a 12% decrease. Customers running the same number of sessions but with lower TPS can now achieve even greater savings.
-- **Fair, Usage-Based Scaling**: As TPS increases, the unit price scales proportionally, aligning costs with actual usage. Overall, EMQX Cloud remains **40%–80% more cost-effective than AWS IoT Core**, while maintaining enterprise-grade reliability.
+- **Fair, Usage-Based Scaling**: As TPS increases, the unit price scales proportionally, aligning costs with actual usage. Overall, EMQX Cloud remains **40%–80% more cost-effective than [AWS IoT Core](https://www.emqx.com/en/blog/understanding-aws-iot-core)**, while maintaining enterprise-grade reliability.
 - **More Value, All-Inclusive:** To further simplify your billing, NAT Gateway and Internal Endpoint features are now included in the Dedicated Flex plan at no additional charge.
 - **Future Integration:** Dedicated Flex will seamlessly integrate with the upcoming EMQX Tables service.
 - **No Impact for Existing Users:** Current Dedicated deployments remain unaffected. You can continue using them or create new Dedicated Flex deployments.

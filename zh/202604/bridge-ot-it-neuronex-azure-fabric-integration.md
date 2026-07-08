@@ -19,7 +19,7 @@
 
 **NeuronEX** 是一款面向工业领域的边缘数据采集与处理软件，核心优势包括：
 
-- **100+ 工业协议支持**：Modbus、OPC UA、西门子 S7、三菱、欧姆龙等。
+- **100+ 工业协议支持**：Modbus、[OPC UA](https://www.emqx.com/zh/blog/opc-ua-protocol)、西门子 S7、三菱、欧姆龙等。
 - **轻量化部署**：支持 X86/ARM 架构，Docker/Kubernetes 容器化部署。
 - **边缘流式计算**：内置 SQL 引擎，可在边缘侧进行数据过滤、聚合、转换。
 - **高性能低延迟**：轻松处理 10,000+ 数据点，毫秒级采集响应。
@@ -94,7 +94,7 @@ SELECT * FROM neuronStream
 
 #### 为什么在工业场景首选 Eventstream？
 
-Microsoft Fabric 提供了多种数据接入路径：**Data Factory** 擅长离线批处理，**Warehouse** 适合结构化分析。但在工业物联网场景下，我们面对的是秒级的设备采样，**Eventstream** 才是真正的「实时数据枢纽」。
+Microsoft Fabric 提供了多种数据接入路径：**Data Factory** 擅长离线批处理，**Warehouse** 适合结构化分析。但在[工业物联网](https://www.emqx.com/zh/blog/iiot-explained-examples-technologies-benefits-and-challenges)场景下，我们面对的是秒级的设备采样，**Eventstream** 才是真正的「实时数据枢纽」。
 
 **Eventstream 的四大优势**：
 

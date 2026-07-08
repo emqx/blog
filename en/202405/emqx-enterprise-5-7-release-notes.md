@@ -4,7 +4,7 @@ This release introduces several new features and improvements, including durable
 
 ## Durable Session
 
-The new Durable Session feature of EMQX provides robust persistence and high availability. It allows MQTT persistent sessions and their messages to be stored on disk, with session metadata and MQTT messages continuously replicated across multiple nodes in an EMQX cluster.
+The new Durable Session feature of EMQX provides robust persistence and high availability. It allows [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) persistent sessions and their messages to be stored on disk, with session metadata and MQTT messages continuously replicated across multiple nodes in an EMQX cluster.
 
 ![EMQX cluster](https://assets.emqx.com/images/2b18b36064c0b25e06d6d4dbfa835093.png)
 
@@ -66,7 +66,7 @@ Two new features have been added to log tracking:
 
 Client attributes in EMQX allow you to set additional attributes for a client using key-value pairs.
 
-Attribute values can be derived from MQTT client connection information (e.g., username, client ID, TLS certificate) or set based on data returned by successful authentication. For example, you can configure EMQX to split the client ID at the colon (:) on client connection and use the first segment as a VIN attribute:
+Attribute values can be derived from [MQTT client](https://www.emqx.com/en/blog/mqtt-client-tools) connection information (e.g., username, client ID, TLS certificate) or set based on data returned by successful authentication. For example, you can configure EMQX to split the client ID at the colon (:) on client connection and use the first segment as a VIN attribute:
 
 ```
 mqtt.client_attrs_init = [

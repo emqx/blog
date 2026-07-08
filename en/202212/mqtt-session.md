@@ -87,7 +87,7 @@ More details are available in the blog: [Clean Start and Session Expiry Interval
 
 ### How does the client know that the current session is the resumed session?
 
-The MQTT protocol has designed a Session Present field for CONNACK message since v3.1.1. When the server returns a value of 1 for this field, it means that the current connection will reuse the session saved by the server. The client can use this field value to decide whether to re-subscribe after a successful connection.
+The MQTT protocol has designed a Session Present field for [CONNACK](https://www.emqx.com/en/blog/mqtt5-new-features-reason-code-and-ack) message since v3.1.1. When the server returns a value of 1 for this field, it means that the current connection will reuse the session saved by the server. The client can use this field value to decide whether to re-subscribe after a successful connection.
 
 ### Best practices of using Persistent Session
 

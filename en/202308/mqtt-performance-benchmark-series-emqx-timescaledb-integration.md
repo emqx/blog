@@ -1,6 +1,6 @@
 > In IoT scenarios, there are often challenges such as a large number of devices, high data generation rates, and the huge accumulated data volumes. Therefore, how to access, store, and process these massive amounts of data has become a critical issue.
 > 
-> EMQX, as a highly scalable, powerful and feature-rich MQTT broker for the Internet of Things, can handle billions of concurrent connections and millions of messages per second in a single cluster. Furthermore, its built-in [Data Integration](https://www.emqx.com/en/features/data-processing) functionality provides an out-of-the-box solution, which enables seamless integrating IoT data with more than 40 cloud services and enterprise systems, including Kafka, SQL, NoSQL, and time-series databases.
+> EMQX, as a highly scalable, powerful and feature-rich [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) for the Internet of Things, can handle billions of concurrent connections and millions of messages per second in a single cluster. Furthermore, its built-in [Data Integration](https://www.emqx.com/en/features/data-processing) functionality provides an out-of-the-box solution, which enables seamless integrating IoT data with more than 40 cloud services and enterprise systems, including Kafka, SQL, NoSQL, and time-series databases.
 > 
 > This blog series presents the benchmark test results of the integrations against a single node EMQX server.
 > 
@@ -8,7 +8,7 @@
 
 ## Test Scenario
 
-This benchmark testing simulates 100,000 MQTT clients connecting to EMQX, with a connection rate of 5,000 per second. After all connections are established, each client publishes one QoS 1 message with the payload of 200 bytes per second, and all messages, via the rule engine, are written into TimeScaleDB.
+This benchmark testing simulates 100,000 [MQTT clients](https://www.emqx.com/en/blog/mqtt-client-tools) connecting to EMQX, with a connection rate of 5,000 per second. After all connections are established, each client publishes one QoS 1 message with the payload of 200 bytes per second, and all messages, via the rule engine, are written into TimeScaleDB.
 
 - Concurrent connections: 100,000
   
@@ -18,7 +18,7 @@ This benchmark testing simulates 100,000 MQTT clients connecting to EMQX, with a
   
 - QoS: 1
   
-- Keep alive: 300s
+- [Keep alive](https://www.emqx.com/en/blog/mqtt-keep-alive): 300s
   
 - Payload: 200 bytes
   
@@ -38,7 +38,7 @@ The test environment is configured on Alibaba Cloud, and all virtual machines ar
 
 ### Test Tool
 
-XMeter is used in this benchmark test to simulate MQTT clients. XMeter is built on top of JMeter but with enhanced scalability and more capabilities. It provides comprehensive and real-time test reports during the test. Additionally, its built-in monitoring tools are used to track the resource usage of the EMQX and TimescaleDB machines.
+XMeter is used in this benchmark test to simulate [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) clients. XMeter is built on top of JMeter but with enhanced scalability and more capabilities. It provides comprehensive and real-time test reports during the test. Additionally, its built-in monitoring tools are used to track the resource usage of the EMQX and TimescaleDB machines.
 
 XMeter provides a private deployment version (on-premise) and a public cloud SaaS version. A private XMeter is deployed in the same VPC as the EMQX and TimescaleDB in this testing.
 
@@ -103,7 +103,7 @@ Please refer to [EMQX Doc](https://docs.emqx.com/en/enterprise/v4.4/tutorial/tun
 
 TimescaleDB has been recognized for its easy use, fast query speed, and cost-efficiency in time-series database area. The integration between EMQX and TimescaleDB brings together the strengths of both, providing a comprehensive solution for for IoT applications.
 
-In addition, both EMQX and Timescale provide cloud service. Harnessing the capabilities of Cloud in one-stop operations and maintenance, horizontal scalability, and more, you can effortlessly deploy and integrate EMQX Cloud and Timescale Cloud services, and connect to your existing cloud-native infrastructure. Please refer to our [blog](https://www.emqx.com/en/blog/seamlessly-integrating-emqx-cloud-with-the-new-timescale-service) for more information.
+In addition, both EMQX and Timescale provide cloud service. Harnessing the capabilities of Cloud in one-stop operations and maintenance, horizontal scalability, and more, you can effortlessly deploy and integrate [EMQX Cloud](https://www.emqx.com/en/cloud) and Timescale Cloud services, and connect to your existing cloud-native infrastructure. Please refer to our [blog](https://www.emqx.com/en/blog/seamlessly-integrating-emqx-cloud-with-the-new-timescale-service) for more information.
 
 
 <section class="promotion">

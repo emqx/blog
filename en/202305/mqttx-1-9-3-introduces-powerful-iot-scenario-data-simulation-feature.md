@@ -1,4 +1,4 @@
-> MQTTX is a powerful cross-platform MQTT 5.0 desktop and CLI client that makes learning, exploring and developing MQTT easy and fast. It is a comprehensive MQTT toolbox, offering a user-friendly interface and a range of features for developers and users working with MQTT-based applications and services.
+> MQTTX is a powerful cross-platform [MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5) desktop and CLI client that makes learning, exploring and developing [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) easy and fast. It is a comprehensive MQTT toolbox, offering a user-friendly interface and a range of features for developers and users working with MQTT-based applications and services.
 >
 > Website：[https://mqttx.app/](https://mqttx.app/) 
 >
@@ -131,7 +131,7 @@ These optimizations drastically reduce user storage usage and speed up the image
 
 ### Auto Reconnect Feature
 
-The connection has auto-reconnect enabled by default. If the MQTTX desktop client loses connection to the MQTT Broker due to network issues or other reasons, the client will attempt to reconnect automatically.
+The connection has auto-reconnect enabled by default. If the MQTTX desktop client loses connection to the [MQTT Broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) due to network issues or other reasons, the client will attempt to reconnect automatically.
 
 ### Editing Disabled in Connection State
 
@@ -152,7 +152,7 @@ We have optimized the application's logo, changing MQTT X to MQTTX, making it mo
 1. Synchronize the IoT scenario data simulation feature to the desktop client.
 2. Enhance the highlighting of particular data formats, such as JSON, within the message display box.
 3. Support Protobuf message format.
-4. Support Sparkplug B.
+4. Support [Sparkplug B](https://www.emqx.com/en/solutions/mqtt-sparkplug).
 5. Enable configuration to ignore storing messages with QoS 0 to reduce storage space consumption.
 6. MQTT Debug feature.
 7. Automatic chart plotting for received messages.

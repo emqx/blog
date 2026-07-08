@@ -56,7 +56,7 @@ EMQX 官网下载：[https://www.emqx.com/zh/downloads/broker/v5.0.0-rc.2](https
 
 ## 规则引擎与数据桥接
 
-我们将之前分散在各处的 Webhook、桥接插件、MQTT 消费组整合到一起，使用统一的操作流程进行配置使用。
+我们将之前分散在各处的 Webhook、桥接插件、[MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 消费组整合到一起，使用统一的操作流程进行配置使用。
 
 ### 可视化规则配置
 
@@ -70,7 +70,7 @@ EMQX 官网下载：[https://www.emqx.com/zh/downloads/broker/v5.0.0-rc.2](https
 
 此前的规则引擎中，我们仅支持将消息从 EMQX 发送到外部集成（Sink），如果您想要将消息从外部集成发送到设备（Source）可以使用桥接插件如 MQTT Bridge，但这将无法使用规则引擎的筛选和处理能力。
 
-在 5.0 版本中，我们提供了双向数据流：您可以在远程 MQTT Broker 和 EMQX 之间自由的桥接消息，并使用规则 SQL 实时提取、过滤、丰富和转换数据。
+在 5.0 版本中，我们提供了双向数据流：您可以在远程 [MQTT Broker](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison) 和 EMQX 之间自由的桥接消息，并使用规则 SQL 实时提取、过滤、丰富和转换数据。
 
 ![EMQX 双向数据流](https://assets.emqx.com/images/b04f853471664f18379ee107d872d026.png)
 
@@ -107,7 +107,7 @@ EMQX 官网下载：[https://www.emqx.com/zh/downloads/broker/v5.0.0-rc.2](https
 
 以上是您可以通过 Dashboard 看到的 EMQX v5.0 部分新功能，上述功能在本次发布的 EMQX 5.0.0-rc.2 版本中已经全部可以抢先体验。
 
-除此之外，EMQX v5.0 还增加了 MQTT Over QUIC、Mria 数据库以及基于 RocksDB 的 session 持久化等重要特性，我们将在不久后的正式版中一并向大家介绍。敬请关注。
+除此之外，EMQX v5.0 还增加了 MQTT Over [QUIC](https://www.emqx.com/zh/blog/quic-protocol-the-features-use-cases-and-impact-for-iot-iov)、Mria 数据库以及基于 RocksDB 的 session 持久化等重要特性，我们将在不久后的正式版中一并向大家介绍。敬请关注。
 
 有关 5.0 版本的功能设计与 BUG 反馈，欢迎大家在公众号后台回复「**5.0**」参与讨论。
 

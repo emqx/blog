@@ -1,6 +1,6 @@
 为了满足用户在物联网平台架构搭建上的个性化需求，本月初，[EMQX Cloud 专业版推出了两项重要的增值服务：内网负载均衡服务以及 NAT 网关服务。](https://www.emqx.com/zh/blog/emqx-cloud-launched-value-added-services)
 
-作为一款全托管、云原生的 MQTT 消息服务，[EMQX Cloud](https://www.emqx.com/zh/cloud) 旨在通过标准易用的 SaaS 模式，为用户减轻物联网基础设施的搭建成本和运维负担。全新上线的增值服务模块更是为用户根据自身需求灵活开展业务提供了充分的选择空间，更加有效地控制成本。
+作为一款全托管、云原生的 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 消息服务，[EMQX Cloud](https://www.emqx.com/zh/cloud) 旨在通过标准易用的 SaaS 模式，为用户减轻物联网基础设施的搭建成本和运维负担。全新上线的增值服务模块更是为用户根据自身需求灵活开展业务提供了充分的选择空间，更加有效地控制成本。
 
 那么，**这两个增值服务分别更适用于哪些用户呢？**
 

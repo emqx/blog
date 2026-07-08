@@ -1,4 +1,4 @@
-In Internet of Things (IoT) systems, data immediacy and service availability are paramount to business success. Downtime in any software or server can lead to massive device disconnections, critical data loss, and halted operations. Consequently, a robust IoT infrastructure necessitates an industrial-grade reliable MQTT platform.
+In Internet of Things (IoT) systems, data immediacy and service availability are paramount to business success. Downtime in any software or server can lead to massive device disconnections, critical data loss, and halted operations. Consequently, a robust IoT infrastructure necessitates an industrial-grade reliable [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) platform.
 
 A recent case study highlights EMQX's exceptional resilience: An enterprise's dual-node EMQX cluster achieved an astonishing **1770 days of continuous operation** since 2020. The only cause of a final node shutdown was **physical hardware failure** (a motherboard fault), not a software defect.
 
@@ -56,7 +56,7 @@ The impressive **1770 days of continuous stable operation** perfectly validates 
 
 This case study demonstrates that for reliability-critical fields like IoT, a truly resilient system must incorporate **fault consideration and tolerance design at every layer**. Based on this principle, EMQX has built a reliable fault-tolerant system from the ground up. By collaborating effectively with external components, EMQX ensures business continuity even when facing extreme hardware failures, fully showcasing its exceptional reliability as an enterprise-grade IoT messaging platform.
 
-In crucial sectors such as **Industrial IoT, Internet of Vehicles (IoV), financial payments, and energy**, the [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) often carries core business data streams. Even a single minute of downtime can disconnect tens of thousands of devices or lead to severe safety incidents. Stability is, therefore, the lifeline.
+In crucial sectors such as **[Industrial IoT](https://www.emqx.com/en/blog/industrial-iot-systems), Internet of Vehicles (IoV), financial payments, and energy**, the [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) often carries core business data streams. Even a single minute of downtime can disconnect tens of thousands of devices or lead to severe safety incidents. Stability is, therefore, the lifeline.
 
 EMQX's achievement of 1770 days of uninterrupted operation confirms its architecture meets the high availability requirements of carrier-grade systems. It successfully delivers a **"24/7" sustained service capability** and provides customers with an SLA approaching 100%. This success is no accident; it is the inevitable result of a combination of advanced system architecture, high-quality code implementation, and a comprehensive operations and maintenance framework.
 

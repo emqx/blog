@@ -1,6 +1,6 @@
 The Internet of Things (IoT) is all about data. But as the volume of data from connected devices explodes, the challenge shifts from simply collecting it to understanding and acting on it in real-time. What if you could ask your data stream questions in plain English? What if you could automatically summarize complex sensor readings into simple, actionable alerts?
 
-The convergence of real-time data streaming and artificial intelligence has reached a new milestone. With the release of EMQX Enterprise 5.10.0, we're excited to introduce LLM integration capabilities directly within our Flow Designer, bringing the power of OpenAI GPT, Anthropic Claude, and any OpenAI-compatible LLM providers to your MQTT data streams.
+The convergence of real-time data streaming and artificial intelligence has reached a new milestone. With the release of [EMQX Enterprise](https://www.emqx.com/en/products/emqx) 5.10.0, we're excited to introduce LLM integration capabilities directly within our Flow Designer, bringing the power of OpenAI GPT, Anthropic Claude, and any OpenAI-compatible LLM providers to your [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) data streams.
 
 ![image.png](https://assets.emqx.com/images/74b33dc1243c013e4f5bdfb4e9f8192e.png)
 
@@ -8,7 +8,7 @@ The convergence of real-time data streaming and artificial intelligence has reac
 
 ## Why Combine IoT Data Streams and AI?
 
-Traditionally, applying AI to IoT data required complex and costly engineering. You’d have to move data from your MQTT broker to a separate platform for processing, introducing unacceptable latency for time-sensitive applications.
+Traditionally, applying AI to IoT data required complex and costly engineering. You’d have to move data from your [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) to a separate platform for processing, introducing unacceptable latency for time-sensitive applications.
 
 EMQX now bridges this gap. By embedding AI processing directly into the data flow, you can build intelligent workflows that analyze, enrich, and transform MQTT messages on the fly. This enables a new class of applications that can perceive, reason, and act on live data instantly. The initial release includes seamless integration with models from OpenAI and Anthropic.
 
@@ -33,7 +33,7 @@ Let's see how easy it is to build a flow that reads sensor data and uses OpenAI 
 
 **Step 1: Set Up Your Data Source**
 
-In the EMQX Flow Designer, drag a **Messages** node onto the canvas. Configure it to subscribe to the MQTT topic where your devices publish data, for example, `sensors/temp_humid`.
+In the EMQX Flow Designer, drag a **Messages** node onto the canvas. Configure it to subscribe to the [MQTT topic](https://www.emqx.com/en/blog/advanced-features-of-mqtt-topics) where your devices publish data, for example, `sensors/temp_humid`.
 
 ![image.png](https://assets.emqx.com/images/2ab172c30aa252392e603022092bd410.png)
 

@@ -1,4 +1,4 @@
-作为一款全托管的 MQTT 公有云服务，[EMQX Cloud](https://www.emqx.com/zh/cloud) 为用户提供了一站式运维代管、独有隔离环境的 MQTT 消息服务，帮助其构建物联网平台与应用。除了利用自身的技术和功能优势为用户免除基础设施维护与管理的后顾之忧，EMQX Cloud 也一直在交互流程上不断优化，以期为用户提供更好的使用体验。
+作为一款全托管的 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 公有云服务，[EMQX Cloud](https://www.emqx.com/zh/cloud) 为用户提供了一站式运维代管、独有隔离环境的 MQTT 消息服务，帮助其构建物联网平台与应用。除了利用自身的技术和功能优势为用户免除基础设施维护与管理的后顾之忧，EMQX Cloud 也一直在交互流程上不断优化，以期为用户提供更好的使用体验。
 
 近日，EMQX Cloud 发布了版本更新，为用户带来了更加方便的采购与财务管理流程。
 

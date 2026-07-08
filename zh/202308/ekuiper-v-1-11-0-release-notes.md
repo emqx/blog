@@ -83,7 +83,7 @@
 
 ### 进阶 Sink 缓存重发策略
 
-Sink 缓存重发策略使用户能够更高效地管理重发数据，具备不同的目标（MQTT 主题）和优先级。新的版本中：
+Sink 缓存重发策略使用户能够更高效地管理重发数据，具备不同的目标（[MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 主题）和优先级。新的版本中：
 
 - 重发数据和实时数据可以配置独立的通道，可并行发送。
 

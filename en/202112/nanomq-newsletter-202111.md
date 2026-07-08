@@ -1,4 +1,4 @@
-In November, the NanoMQ team focused on adding MQTT support to NNG, and also fixing issues for  NanoMQ.
+In November, the NanoMQ team focused on adding [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) support to NNG, and also fixing issues for  NanoMQ.
 
 ## NanoMQ updates
 

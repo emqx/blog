@@ -51,7 +51,7 @@ EMQX 和 Neuron 的协同效应体现在它们能够从 OT 源获取、转换数
 
 ### 2. PLC 和 SCADA 系统：制造业的“乐队指挥”
 
-可编程逻辑控制器（PLC）和数据采集与监视控制系统（SCADA）是负责着制造业的系统编排。PLC 控制工厂中的机器和设备，而 SCADA 系统监控和管理整个生产过程。Neuron 有大量的 PLC 驱动程序，可以访问 PLC 数据。Neuron 也可以使用 OPC UA、MQTT 和 API 等标准协议，来连接 SCADA 系统。
+可编程逻辑控制器（PLC）和数据采集与监视控制系统（SCADA）是负责着制造业的系统编排。PLC 控制工厂中的机器和设备，而 SCADA 系统监控和管理整个生产过程。Neuron 有大量的 PLC 驱动程序，可以访问 PLC 数据。Neuron 也可以使用 [OPC UA](https://www.emqx.com/zh/blog/opc-ua-protocol)、MQTT 和 API 等标准协议，来连接 SCADA 系统。
 
 PLC 和 SCADA 系统作为数据源，收集和传输设备性能、生产速率和过程参数的数据。它们能够提供制造业运营效率的宝贵洞察，反映制造业运营的效率，支持实时决策和过程优化。
 

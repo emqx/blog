@@ -61,7 +61,7 @@ Google BigQuery is a fully managed, serverless, petabyte-scale enterprise data w
 
 ### The Value of EMQX's Native BigQuery Connector
 
-- **Direct, Simplified Architecture**: EMQX now streams IoT data **directly into BigQuery**, eliminating the need for Pub/Sub and Dataflow. This streamlined pipeline, **Device → EMQX → BigQuery**, cuts latency, cost, and configuration overhead. It acts as the "easy button" that fills the gap left by the discontinuation of Google's own IoT Core.
+- **Direct, Simplified Architecture**: EMQX now streams IoT data **directly into BigQuery**, eliminating the need for Pub/Sub and Dataflow. This streamlined pipeline, **Device → EMQX → BigQuery**, cuts latency, cost, and configuration overhead. It acts as the "easy button" that fills the gap left by the discontinuation of Google's own [IoT Core](https://www.emqx.com/en/blog/understanding-aws-iot-core).
 - **Clean, Analytics-Ready Data:** Data is ingested directly into BigQuery's fully managed, petabyte-scale, serverless architecture. The EMQX rule engine supports real-time data transformation, filtering, and enrichment, ensuring that only clean, structured data reaches BigQuery.
 - **Access to the Google Cloud AI/ML Ecosystem**: Once ingested, data becomes instantly available across the Google Cloud AI/ML ecosystem—including Vertex AI, Looker, and Data Studio—empowering enterprises to easily build, train, and deploy AI models using fresh IoT data.
 

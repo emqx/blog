@@ -4,7 +4,7 @@
 
 ## MQTT 的规则引擎是什么？
 
-[MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 是一种高效可靠的消息传输协议，特别适用于低带宽、高延迟网络（在物联网领域十分常见）。在 [MQTT 的发布/订阅模型](https://www.emqx.com/zh/blog/mqtt-5-introduction-to-publish-subscribe-model)中，MQTT Broker 扮演着关键角色，负责接收发布者发送的消息并将其可靠高效地分发给订阅者，确保消息的顺利传递。
+[MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 是一种高效可靠的消息传输协议，特别适用于低带宽、高延迟网络（在物联网领域十分常见）。在 [MQTT 的发布/订阅模型](https://www.emqx.com/zh/blog/mqtt-5-introduction-to-publish-subscribe-model)中，[MQTT Broker](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison) 扮演着关键角色，负责接收发布者发送的消息并将其可靠高效地分发给订阅者，确保消息的顺利传递。
 
 MQTT 规则引擎是一种可以针对 MQTT 消息制定和执行规则的组件。该规则引擎具备提取、过滤、加工和转换 MQTT 消息的能力，并且可以在满足特定条件时触发相应的动作。通过规则引擎的应用，可以减少人工干预，提高数据集成和应用开发的效率。
 

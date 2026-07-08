@@ -1,6 +1,6 @@
 ## Introduction
 
-ThingsBoard is a powerful open-source IoT platform for data collection, processing, visualization, and device management. Supporting key IoT protocols like [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt), [CoAP](https://www.emqx.com/en/blog/coap-protocol), and HTTP, it offers both cloud and private deployment options to meet diverse needs.
+ThingsBoard is a powerful open-source IoT platform for data collection, processing, visualization, and device management. Supporting key [IoT protocols](https://www.emqx.com/en/blog/iot-protocols-mqtt-coap-lwm2m) like [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt), [CoAP](https://www.emqx.com/en/blog/coap-protocol), and HTTP, it offers both cloud and private deployment options to meet diverse needs.
 
 Integrating ThingsBoard with MQTT offers a robust solution for real-time IoT data visualization, essential for understanding and managing diverse sensor data within an IoT ecosystem. ThingsBoard is renowned for its rich features and scalability, capable of handling large-scale device data and supporting complex analytics and automation workflows. When paired with the lightweight MQTT protocol, this integration ensures efficient, low-latency communication across devices, allowing data to be captured, processed, and visualized in real-time.
 
@@ -16,7 +16,7 @@ Register at [ThingsBoard Cloud](https://thingsboard.cloud/signup). No installati
 
 We will use EMQX Platform to create a third-party MQTT broker. [Sign up for the EMQX Platform Console](https://accounts.emqx.com/signup?continue=https%3A%2F%2Fcloud-intl.emqx.com%2Fconsole%2F) and create a new deployment. As a new user, you will have a free 14-day trial for Dedicated plan.
 
-In this context, a deployment refers to an MQTT broker cluster. EMQX Dedicated plan offers VPC peer-to-peer connectivity and a REST API, along with robust and flexible data integration capabilities. This makes it easy for users to connect with their existing cloud service resources. By providing a comprehensive operations and monitoring service, it saves significant time and labor costs, allowing businesses to concentrate on delivering greater value.
+In this context, a deployment refers to an [MQTT broker cluster](https://www.emqx.com/en/blog/mqtt-broker-clustering). EMQX Dedicated plan offers VPC peer-to-peer connectivity and a REST API, along with robust and flexible data integration capabilities. This makes it easy for users to connect with their existing cloud service resources. By providing a comprehensive operations and monitoring service, it saves significant time and labor costs, allowing businesses to concentrate on delivering greater value.
 
 ## Integrating EMQX Platform with ThingsBoard
 

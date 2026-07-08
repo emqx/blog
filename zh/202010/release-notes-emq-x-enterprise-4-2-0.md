@@ -1,4 +1,4 @@
-EMQX Enterprise 企业级物联网 MQTT 消息平台，支持百万级物联网设备一站式接入、MQTT&CoAP 多协议处理、低时延实时消息通信。支持基于 SQL 的内置规则引擎，灵活处理/转发消息到后端服务，存储消息数据到各种数据库，或桥接 Kafka、RabbitMQ 等企业中间件。
+EMQX Enterprise 企业级物联网 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 消息平台，支持百万级物联网设备一站式接入、MQTT&[CoAP](https://www.emqx.com/zh/blog/coap-protocol) 多协议处理、低时延实时消息通信。支持基于 SQL 的内置规则引擎，灵活处理/转发消息到后端服务，存储消息数据到各种数据库，或桥接 Kafka、RabbitMQ 等企业中间件。
 
 EMQX Enterprise 适用于各种物联网应用场景，助企业快速构建物联网应用，并支持公有云、私有云、物理机、容器/K8S 任意部署。
 

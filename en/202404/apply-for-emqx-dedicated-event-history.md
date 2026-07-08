@@ -2,7 +2,7 @@
 
 Event History, also known as Lifecycle Events, is a crucial record system that tracks significant occurrences or events within the IoT system. These events encompass a wide range of data, including online/offline events, device statuses, message delivery events, etc.
 
-EMQX Dedicated v5 will soon introduce Event History as a new feature, offering an out-of-the-box method to observe and analyze device behavior over time. Users will gain in-depth data insights for their MQTT connections and manage them better through this advanced feature.
+EMQX Dedicated v5 will soon introduce Event History as a new feature, offering an out-of-the-box method to observe and analyze device behavior over time. Users will gain in-depth data insights for their [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) connections and manage them better through this advanced feature.
 
 ## Why Event History?
 

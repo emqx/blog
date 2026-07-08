@@ -1,6 +1,6 @@
 CES 2026 has marked a historic pivot in the evolution of artificial intelligence. The industry has moved decisively beyond digital-only models, ushering in the era of **Physical AI**. As showcased across the halls of Las Vegas, intelligence is no longer confined to screens; it is being embodied in humanoids, software-defined vehicles, and autonomous agents that interact dynamically with the physical world.
 
-For this transition to succeed, the industry is realizing that a sophisticated "brain" requires a resilient "nervous system." As Physical AI breaks out into production, **MQTT** has emerged as the definitive protocol for bridging the physical-digital divide, with **EMQX** serving as the central backbone of this burgeoning ecosystem.
+For this transition to succeed, the industry is realizing that a sophisticated "brain" requires a resilient "nervous system." As Physical AI breaks out into production, **[MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt)** has emerged as the definitive protocol for bridging the physical-digital divide, with **EMQX** serving as the central backbone of this burgeoning ecosystem.
 
 ## Physical AI: Why Event-Driven Messaging Matters
 
@@ -18,7 +18,7 @@ EMQX builds on these strengths, providing a production-grade unified MQTT platfo
 
 Not all intelligence can, or should, live in the cloud. AI workloads are increasingly distributed across devices, gateways, and cloud platforms to meet latency, cost, and reliability requirements. This hybrid reality requires a unified data fabric to prevent fragmentation. 
 
-EMQX addresses this through a seamless, scalable edge-to-cloud architecture that combines the industrial connectivity gateway (EMQX Neuron) and the high-performance edge MQTT broker (EMQX Edge). Organizations can deploy MQTT-native processing locally—filtering and routing critical data—while maintaining a high-speed uplink to the cloud. This enables true collaboration between localized physical actions and global AI insights.
+EMQX addresses this through a seamless, scalable edge-to-cloud architecture that combines the industrial connectivity gateway (EMQX Neuron) and the high-performance edge [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) (EMQX Edge). Organizations can deploy MQTT-native processing locally—filtering and routing critical data—while maintaining a high-speed uplink to the cloud. This enables true collaboration between localized physical actions and global AI insights.
 
 > Learn more: [The Unified MQTT Platform for Edge Computing](https://www.emqx.com/en/solutions/edge-computing) 
 

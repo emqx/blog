@@ -1,4 +1,4 @@
-Recently, EMQX Cloud has optimized the billing system in many ways, making it easy for users to quickly manage their bills and payment information while providing more payment options for flexible payment of bills.
+Recently, [EMQX Cloud](https://www.emqx.com/en/cloud) has optimized the billing system in many ways, making it easy for users to quickly manage their bills and payment information while providing more payment options for flexible payment of bills.
 
 
 ## Billing Overview Optimization

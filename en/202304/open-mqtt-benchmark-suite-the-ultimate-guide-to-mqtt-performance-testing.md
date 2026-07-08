@@ -1,6 +1,6 @@
 ## Introduction
 
-We are thrilled to announce that the [Open MQTT Benchmark Suite](https://github.com/emqx/mqttbs) presented by EMQ is now available! With typical and practical use cases, primary metrics for measuring broker performance, and a tool to simulate loads and collect benchmark results, our Open MQTT Benchmark Suite can help you evaluate the scalability and performance of MQTT brokers to make an informed selection.
+We are thrilled to announce that the [Open MQTT Benchmark Suite](https://github.com/emqx/mqttbs) presented by EMQ is now available! With typical and practical use cases, primary metrics for measuring broker performance, and a tool to simulate loads and collect benchmark results, our Open [MQTT Benchmark](https://www.emqx.com/en/blog/open-mqtt-benchmarking-comparison-mqtt-brokers-in-2023) Suite can help you evaluate the scalability and performance of [MQTT brokers](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) to make an informed selection.
 
 ![MQTT Performance Testing](https://assets.emqx.com/images/88392ce7081424a43dffcdecbfe2b61b.png)
 
@@ -20,7 +20,7 @@ We have analyzed and addressed a significant number of actual testing requiremen
 
 **Open to the community for a comprehensive benchmark**
 
-We are committed to building an open and collaborative community around our MQTT benchmark suite. By including diverse use cases contributed by the community, our suite will accurately reflect the needs and requirements of the industry. Join us in building a comprehensive benchmark suite for the MQTT protocol and help us empower users to be well-informed about their MQTT broker choices.
+We are committed to building an open and collaborative community around our MQTT benchmark suite. By including diverse use cases contributed by the community, our suite will accurately reflect the needs and requirements of the industry. Join us in building a comprehensive benchmark suite for the [MQTT protocol](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) and help us empower users to be well-informed about their MQTT broker choices.
 
 ## What’s Inside the Open MQTT Benchmark Suite
 

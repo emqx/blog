@@ -2,7 +2,7 @@
 
 With the rise of the Internet of Things (IoT), Microsoft's **.NET Core** has become increasingly popular in building robust IoT applications. **.NET Core** provides developers with a comprehensive set of tools and libraries for building powerful applications that can run on devices like Raspberry Pi, BeagleBoard, and more.
 
-**[MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt)** is the standard lightweight messaging protocol for IoT, and **MQTTnet** is the leading, high-performance **.NET/C# library** that implements the MQTT protocol. It is open source on [GitHub](https://github.com/dotnet/MQTTnet) and supports advanced features, including the latest **MQTT 5.0** protocol and mandatory **TLS/SSL** security.
+**[MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt)** is the standard lightweight messaging protocol for IoT, and **MQTTnet** is the leading, high-performance **.NET/C# library** that implements the MQTT protocol. It is open source on [GitHub](https://github.com/dotnet/MQTTnet) and supports advanced features, including the latest **[MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5)** protocol and mandatory **TLS/SSL** security.
 
 This guide provides a comprehensive **C# MQTT client tutorial** demonstrating how to use the **MQTTnet library** to establish a secure connection, subscribe, and publish messages to an **EMQX Serverless MQTT Broker**. The entire working project is available for download at [MQTT Client Examples](https://github.com/emqx/MQTT-Client-Examples/tree/master/mqtt-client-Csharp-MqttNet).
 
@@ -66,7 +66,7 @@ Please replace the connection parameters with your EMQX connection information a
 
 ### Step 4: Implementing Secure Connection with TLS/SSL in C# MQTTnet
 
-When connecting to a public or multi-tenant **MQTT Broker** like EMQX Serverless, **TLS/SSL** is required to ensure secure and reliable data transmission. If the broker uses a self-signed certificate, you must download the CA file and provide it during the connection setup. This section demonstrates the **C# MQTT TLS configuration**.
+When connecting to a public or multi-tenant **MQTT Broker** like EMQX Serverless, **TLS/SSL** is required to ensure secure and reliable data transmission. If the broker uses a self-signed certificate, you must download the CA file and provide it during the connection setup. This section demonstrates the **C# [MQTT TLS](https://www.emqx.com/en/blog/fortifying-mqtt-communication-security-with-ssl-tls) configuration**.
 
 To add TLS and set the certificate file to the `MqttClientOptionsBuilder` instance, you can use `WithTls()`. The following code snippet shows how to create a TLS instance of `MqttClientOptionsBuilder`:
 

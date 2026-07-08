@@ -2,7 +2,7 @@ Agentic AI isn't a research preview anymore; it's a shipping product category. O
 
 The agents are here. What's lagging behind is the infrastructure to coordinate them.
 
-The protocols we've built for the web era — HTTP request-response, REST APIs, server-sent events — were designed for a world where a human clicks a button and waits for a page to load. They were never meant to coordinate a swarm of autonomous agents that need to discover each other, negotiate tasks, stream partial results, and recover gracefully when something goes wrong. As these systems scale from single-agent demos to multi-agent production deployments, we need a messaging backbone purpose-built for this kind of work, and a strong candidate is a protocol that's been powering IoT infrastructure for over a decade: MQTT.
+The protocols we've built for the web era — HTTP request-response, REST APIs, server-sent events — were designed for a world where a human clicks a button and waits for a page to load. They were never meant to coordinate a swarm of autonomous agents that need to discover each other, negotiate tasks, stream partial results, and recover gracefully when something goes wrong. As these systems scale from single-agent demos to multi-agent production deployments, we need a messaging backbone purpose-built for this kind of work, and a strong candidate is a protocol that's been powering IoT infrastructure for over a decade: [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt).
 
 ## The Problem with HTTP-Shaped Agent Protocols
 
@@ -38,7 +38,7 @@ The properties that made MQTT dominant in IoT map well to what agentic AI needs:
 - **Retained messages.** New agents instantly pick up the latest state when they come online. No separate state-sync mechanism needed.
 - **Binary and compact.** Meaningfully less per-message overhead than HTTP+JSON for high-frequency inter-agent communication.
 
-MQTT 5.0 added features that are particularly relevant for agent coordination:
+[MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5) added features that are particularly relevant for agent coordination:
 
 - **Request-response correlation** — RPC-style calls over pub/sub, with correlation data for tracking.
 - **User properties** — arbitrary metadata on packets without payload pollution.
@@ -130,10 +130,10 @@ The peer-to-peer protocol flow between two agents:
 
  
 
-MQTT-RT peers discover each other over UDP using multicast or static peer lists, establish sessions with standard CONNECT/CONNACK handshakes, and then communicate directly using familiar MQTT publish/subscribe semantics. The key differences from standard MQTT:
+MQTT-RT peers discover each other over UDP using multicast or static peer lists, establish sessions with standard CONNECT/[CONNACK](https://www.emqx.com/en/blog/mqtt5-new-features-reason-code-and-ack) handshakes, and then communicate directly using familiar [MQTT publish/subscribe](https://www.emqx.com/en/blog/mqtt-5-introduction-to-publish-subscribe-model) semantics. The key differences from standard MQTT:
 
 - **No broker hop.** Messages travel directly between peers, eliminating the central broker as a latency bottleneck.
-- **Flexible transports.** UDP, TCP, TLS, QUIC, and even shared memory — agent systems choose the right latency-throughput tradeoff per interaction.
+- **Flexible transports.** UDP, TCP, TLS, [QUIC](https://www.emqx.com/en/blog/quic-protocol-the-features-use-cases-and-impact-for-iot-iov), and even shared memory — agent systems choose the right latency-throughput tradeoff per interaction.
 - **Familiar semantics.** Standard MQTT publish/subscribe API, so developers don't learn a new protocol.
 
 This is particularly compelling for "physical AI" scenarios — robot fleets in a warehouse, drones coordinating a search pattern, autonomous vehicles negotiating an intersection — where agents need to react in real time. MQTT-RT is still in the specification and SDK stage (with C/C++, Python, and Rust implementations), so production readiness remains to be proven, but the design addresses a real gap in the protocol family.
@@ -157,7 +157,7 @@ To be clear, this doesn't make MQTT a drop-in replacement for Kafka or RabbitMQ 
 
 No architecture is free:
 
-- **Operational complexity.** Running a highly available MQTT broker cluster requires attention to cluster consistency, topic namespace design, monitoring, and debugging at scale.
+- **Operational complexity.** Running a highly available [MQTT broker cluster](https://www.emqx.com/en/blog/mqtt-broker-clustering) requires attention to cluster consistency, topic namespace design, monitoring, and debugging at scale.
 - **Topic design matters.** MQTT's topic-based routing means you need to design your topic hierarchy carefully; a poorly designed namespace can become as painful as a poorly designed database schema.
 - **Tooling maturity.** While MQTT's binary protocol is efficient on the wire, the ecosystem of debugging and observability tools is less mature than what exists for HTTP-based systems.
 - **Community gap.** The AI agent ecosystem is building on HTTP because that's where the developers are. MQTT expertise is concentrated in IoT and embedded systems engineering — different communities with different toolchains and different instincts. Bridging that gap requires SDKs, tutorials, and reference architectures that speak the language of AI developers.
@@ -189,7 +189,7 @@ With MQTT, the broker becomes the unifying fabric:
 
 The convergence of IoT infrastructure and AI agent systems feels inevitable. As agents move beyond cloud-only deployments into edge devices, robots, vehicles, and industrial systems, they'll need a messaging backbone that's proven at scale in exactly those environments. MQTT has that pedigree, and EMQX is actively extending it with the specific primitives — agent registries, MCP transport, request-response patterns, queues, streams, and peer-to-peer real-time communication — that agentic AI demands.
 
-The barrier to trying this out is essentially zero. [EMQX Cloud Serverless](https://www.emqx.com/en/cloud/serverless-mqtt) offers a forever-free tier with 1 million session minutes per month — enough to keep a modest fleet of agents connected around the clock. It deploys in seconds, scales automatically, and requires no infrastructure management. If you're building a multi-agent system and want to see how pub/sub compares to the HTTP plumbing you've been wiring together, you can have a production-grade MQTT broker running before you finish reading this paragraph.
+The barrier to trying this out is essentially zero. [EMQX Cloud Serverless](https://www.emqx.com/en/cloud/serverless-mqtt) offers a forever-free tier with 1 million session minutes per month — enough to keep a modest fleet of agents connected around the clock. It deploys in seconds, scales automatically, and requires no infrastructure management. If you're building a multi-agent system and want to see how pub/sub compares to the HTTP plumbing you've been wiring together, you can have a production-grade [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) running before you finish reading this paragraph.
 
 Fifty years ago, the Actor Model taught us that the right unit of concurrency is a lightweight process with a mailbox. Twenty-five years ago, MQTT implemented that lesson at an infrastructure scale. Today, as AI agent engineers rediscover the same coordination problems — state isolation, reliable message delivery, supervision, load-balanced dispatch — the question isn't whether to adopt these patterns. It's whether to reinvent them on top of HTTP, or build on a protocol that's been solving them in production for over a decade.
 

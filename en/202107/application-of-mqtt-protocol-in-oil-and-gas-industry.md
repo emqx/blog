@@ -10,7 +10,7 @@ MQTT is a standard messaging protocol for the IoT business. It is designed as a 
 
 Today, MQTT is widely used in the industries such as automobiles, manufacturing, telecommunications, petroleum and natural gas.
 
-**This series of articles will explain in detail how MQTT protocol plays a role in practical application scenarios of various industries**.
+**This series of articles will explain in detail how [MQTT protocol](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) plays a role in practical application scenarios of various industries**.
 
 
 

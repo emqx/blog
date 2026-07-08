@@ -1,6 +1,6 @@
 ## 引言
 
-[EMQX Cloud](https://www.emqx.com/zh/cloud) 是基于 [EMQX Enterprise](https://www.emqx.com/zh/products/emqx) 构建的一款全托管云原生 MQTT 消息服务。为了满足不同客户的需求，EMQX Cloud 提供了三种版本供客户选择：[Serverless 版](https://www.emqx.com/zh/cloud/serverless-mqtt)、[专有版](https://www.emqx.com/zh/cloud/dedicated)和 [BYOC 版](https://www.emqx.com/zh/cloud/byoc)。
+[EMQX Cloud](https://www.emqx.com/zh/cloud) 是基于 [EMQX Enterprise](https://www.emqx.com/zh/products/emqx) 构建的一款全托管云原生 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 消息服务。为了满足不同客户的需求，EMQX Cloud 提供了三种版本供客户选择：[Serverless 版](https://www.emqx.com/zh/cloud/serverless-mqtt)、[专有版](https://www.emqx.com/zh/cloud/dedicated)和 [BYOC 版](https://www.emqx.com/zh/cloud/byoc)。
 
 本文将简要介绍这三个版本的核心区别，并通过三个用户故事，帮助您更轻松地了解不同版本的适用场景，并根据自己的需求找到最适合的方案。
 

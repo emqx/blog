@@ -1,4 +1,4 @@
-本文将使用 [RT-Thread](https://www.rt-thread.org/) 配合 [ART-Pi](https://github.com/RT-Thread-Studio/sdk-bsp-stm32h750-realthread-artpi) 搭建 MQTT 客户端，快速接入 [EMQX Cloud](https://www.emqx.com/zh/cloud) 。
+本文将使用 [RT-Thread](https://www.rt-thread.org/) 配合 [ART-Pi](https://github.com/RT-Thread-Studio/sdk-bsp-stm32h750-realthread-artpi) 搭建 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 客户端，快速接入 [EMQX Cloud](https://www.emqx.com/zh/cloud) 。
 
 ## EMQX Cloud 简介
 
@@ -329,7 +329,7 @@
    #define MQTT_QOS                1
    ```
 
-   main() 函数启动 MQTT client
+   main() 函数启动 [MQTT client](https://www.emqx.com/zh/blog/mqtt-client-tools)
 
    ```c
    mqtt_client_start()

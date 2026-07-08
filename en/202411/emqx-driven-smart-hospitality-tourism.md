@@ -10,7 +10,7 @@ To stand out in the highly competitive global tourism and hospitality markets, b
 
 **The EMQX Platform empowers businesses to build efficient data platforms.** With its robust rules engine and multi-protocol access capabilities, the tourism and hospitality industries can collect and process multi-source data streams from customers and various sensor devices in real-time. This allows for better management and analysis of user, restaurant, and equipment data, streamlining business processes and significantly improving the customer experience.
 
-As a cloud-native distributed MQTT platform, EMQX Platform supports multiple messaging protocols and offers high availability and scalability. It effortlessly handles large-scale, high-concurrency message transmissions while providing end-to-end data encryption and fine-grained access control. This ensures businesses can fully leverage the value of their data while meeting compliance requirements.
+As a cloud-native distributed [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) platform, EMQX Platform supports multiple messaging protocols and offers high availability and scalability. It effortlessly handles large-scale, high-concurrency message transmissions while providing end-to-end data encryption and fine-grained access control. This ensures businesses can fully leverage the value of their data while meeting compliance requirements.
 
 Currently, in the smart tourism and hospitality industries, EMQ is serving numerous companies, including cruise lines, food-tech firms, and hotel technology companies around the world.
 

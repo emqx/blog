@@ -2,13 +2,13 @@ Authentication is the process of identifying a user and verifying that they have
 
 Given the expansive nature of the IoT industry, it is crucial to verify the identity of those seeking access to its infrastructure. Unauthorized entry poses significant security threats and must be prevented. And that's why IoT developers should possess a comprehensive understanding of the various authentication methods.
 
-In this article, we explain how authentication works in MQTT, what security risks it solves, and introduce the first authentication method: password-based authentication.
+In this article, we explain how authentication works in [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt), what security risks it solves, and introduce the first authentication method: password-based authentication.
 
 ## What is authentication in MQTT?
 
 Authentication in MQTT refers to the process of verifying the identity of a client or a broker before allowing them to establish a connection or interact with the MQTT network. It is only about the right to connect to the broker and is separate from *authorization*, which determines which topics a client is allowed to publish and subscribe to. Authorization will be discussed in a separate article in this series.  
 
-The MQTT Broker can authenticate clients mainly in following ways:
+The [MQTT Broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) can authenticate clients mainly in following ways:
 
 - **Password-based authentication**: The broker verifies that the client has the correct connecting credentials: username, client ID, and password. The broker can verify either the username or client ID against the password. 
 - **Enhanced authentication (SCRAM)**: This authenticates the clients using a back-and-forth challenge based mechanism known as **S**alted **C**hallenge **R**esponse **A**uthentication **M**echanism.

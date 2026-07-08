@@ -1,10 +1,10 @@
 3 月 20 日的 EMQ Tech Day 2026 上，我们正式对外宣布了 EMQ 全新产品 FlowMQ 的发布。
 
-FlowMQ 是 EMQ 从零开始打造的新一代融合消息产品。它在一个系统内提供包括 Subscription（实时推送）、Stream（数据流）和 Queue（队列）在内的多种消息能力，同时原生支持 MQTT、Kafka 和 AMQP 等主流消息协议接入，以及不同协议之间的直接互通。
+FlowMQ 是 EMQ 从零开始打造的新一代融合消息产品。它在一个系统内提供包括 Subscription（实时推送）、Stream（数据流）和 Queue（队列）在内的多种消息能力，同时原生支持 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt)、Kafka 和 AMQP 等主流消息协议接入，以及不同协议之间的直接互通。
 
 ## 为什么做 FlowMQ
 
-EMQ 在消息系统领域已经深耕多年，打造了全球广受欢迎的 MQTT Broker——EMQX。但正是在服务大量企业客户的过程中，我们越来越清楚地看到一个结构性问题：**每种消息能力都被锁死在特定的协议和系统里。**
+EMQ 在消息系统领域已经深耕多年，打造了全球广受欢迎的 [MQTT Broker](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison)——EMQX。但正是在服务大量企业客户的过程中，我们越来越清楚地看到一个结构性问题：**每种消息能力都被锁死在特定的协议和系统里。**
 
 回顾消息系统的发展历程，每一次技术演进都在解决真实的问题，但也让整个生态变得越来越碎片化。早年 IBM MQ、TIBCO 统治企业消息，价格高昂且厂商锁定严重；JMS 统一了 Java API，却没有定义线协议（wire protocol），无法跨语言互通；AMQP 试图定义开放的消息标准，却因 0.9.1 与 1.0 的不兼容而自身走向分裂；MQTT 为 IoT 低带宽场景深度优化，成为设备连接的事实标准；Kafka 开辟了事件流这个全新品类，把消息从"投递即丢弃"变成了"持久化日志加回放"。
 

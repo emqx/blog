@@ -1,4 +1,4 @@
-近日，全球首个物联网 MQTT 负载测试云服务 XMeter Cloud 推出了自定义场景测试功能。
+近日，全球首个物联网 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 负载测试云服务 XMeter Cloud 推出了自定义场景测试功能。
 
 该功能将满足用户自主定义测试场景和测试更广泛协议的需求，实现对除 MQTT 以外的 TCP、WebSocket、HTTP 等其他网络协议的测试，帮助用户构建更复杂的测试场景，提高测试效率和测试覆盖率。
 

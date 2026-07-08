@@ -14,7 +14,7 @@
 
 ## MQTT 中的多租户架构：实现每个租户的数据隔离
 
-MQTT Broker 多租户架构的核心是数据隔离。这样可以确保每个租户都将自己视为整个集群的唯一用户，他们不能访问其他租户的客户端，更不能与其他租户的客户端互动。它包括以下五个主要方面：
+[MQTT Broker](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison) 多租户架构的核心是数据隔离。这样可以确保每个租户都将自己视为整个集群的唯一用户，他们不能访问其他租户的客户端，更不能与其他租户的客户端互动。它包括以下五个主要方面：
 
 - **无需对客户端限制。**客户端可以使用任意客户端 ID、用户名和密码，不受其他租户的影响。甚至不同的租户可以使用相同的客户端 ID 同时接入。
 - **认证/授权数据隔离。**每个租户都有自己独立的认证和授权数据，用于控制客户端登录和主题的发布/订阅权限。租户只能操作自己的数据，而且这些数据只对该租户的客户端生效。
@@ -36,7 +36,7 @@ MQTT 多租户架构为物联网解决方案提供商带来了双重优势：
 
 ## EMQX Cloud Serverless：基于多租户架构的 MQTT 服务
 
-EMQ 基于创新的多租户技术推出了一种 Serverless MQTT 服务 - [EMQX Cloud Serverless](https://www.emqx.com/zh/cloud/serverless-mqtt)。EMQX Cloud Serverless 可以让用户在几秒内快速部署 MQTT 服务，**无需担心服务器基础设施管理或服务扩展时的资源分配问题**。它还提供了**每月 100 万分钟的永久免费额度**，采用即用即付的收费模式，极大地降低了物联网成本。
+EMQ 基于创新的多租户技术推出了一种 Serverless MQTT 服务 - [EMQX Cloud Serverless](https://www.emqx.com/zh/cloud/serverless-mqtt)。[EMQX Cloud](https://www.emqx.com/zh/cloud) Serverless 可以让用户在几秒内快速部署 MQTT 服务，**无需担心服务器基础设施管理或服务扩展时的资源分配问题**。它还提供了**每月 100 万分钟的永久免费额度**，采用即用即付的收费模式，极大地降低了物联网成本。
 
 ## 结语
 

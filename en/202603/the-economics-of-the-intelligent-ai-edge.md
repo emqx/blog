@@ -10,9 +10,9 @@ To ensure economic viability, organizations must adopt an "Edge-First" strategy 
 
 
 
-In the architecture of modern Industrial IoT (IIoT), a critical misalignment often exists between data generation and data consumption. Operational Technology (OT) systems are architected to generate high-frequency telemetry for real-time control loops, often sampling at millisecond intervals. In contrast, cloud-based Information Technology (IT) systems are architected for aggregated analysis and long-term storage. When these two paradigms collide without an intermediary filtration layer, the result is a phenomenon known as the **"Cloud Ingress Tax."**
+In the architecture of modern [Industrial IoT](https://www.emqx.com/en/blog/industrial-iot-systems) ([IIoT](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges)), a critical misalignment often exists between data generation and data consumption. Operational Technology (OT) systems are architected to generate high-frequency telemetry for real-time control loops, often sampling at millisecond intervals. In contrast, cloud-based Information Technology (IT) systems are architected for aggregated analysis and long-term storage. When these two paradigms collide without an intermediary filtration layer, the result is a phenomenon known as the **"Cloud Ingress Tax."**
 
-This tax is not a formal government levy, but a structural inefficiency embedded in the billing models of major cloud hyperscalers (e.g., AWS IoT Core, Azure IoT Hub). These services typically bill based on the number of messages or 5KB "chunks" of data received. For enterprise architects and financial stakeholders, recognizing raw data as a potential liability, rather than an inherent asset, is the first step toward economic sustainability.
+This tax is not a formal government levy, but a structural inefficiency embedded in the billing models of major cloud hyperscalers (e.g., [AWS IoT Core](https://www.emqx.com/en/blog/understanding-aws-iot-core), Azure IoT Hub). These services typically bill based on the number of messages or 5KB "chunks" of data received. For enterprise architects and financial stakeholders, recognizing raw data as a potential liability, rather than an inherent asset, is the first step toward economic sustainability.
 
 ### **The Micro-Economics of "Streaming Everything"**
 
@@ -32,7 +32,7 @@ To quantify the financial impact, let us examine a specific, calculated scenario
 
 - **Asset Base:** A fleet of **1,000 assets** (e.g., delivery trucks or CNC machines).
 - **Telemetry Rate:** Each asset transmits a telemetry packet once per second (**1 Hz**).
-- **Cloud Destination:** A standard public cloud IoT broker.
+- **Cloud Destination:** A standard public cloud [IoT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison).
 - **Billing Metric:** Pricing is modeled at approximately **$1.00 per 1 million messages**.
 
 **The "Before" Math: Financial Suicide**
@@ -160,8 +160,8 @@ A fundamental translation error exists between the Operational Technology (OT) l
 Brownfield manufacturing environments are rarely homogenous. A single factory floor often functions as a technological archaeological site, containing layers of hardware from different decades (Siemens, Rockwell, Mitsubishi, Schneider).
 
 - **The Integration Headache:** In a traditional architecture, engineers write custom program to poll each device type. This is an Operational Expenditure (OpEx) nightmare. Custom program are brittle, lack error handling, and create technical debt.
-- **Native Fluency:** EMQX Neuron acts as a universal translator. It possesses native fluency in **100+ industrial protocols**, including complex standards like Ethernet/IP, IEC 61850, and OPC UA.
-- **The Result:** EMQX Neuron abstracts the physical connectivity layer. Regardless of whether the source is a serial Modbus connection or a TCP/IP stream, the output is a unified, standardized MQTT/JSON stream.
+- **Native Fluency:** EMQX Neuron acts as a universal translator. It possesses native fluency in **100+ industrial protocols**, including complex standards like Ethernet/IP, IEC 61850, and [OPC UA](https://www.emqx.com/en/blog/opc-ua-protocol).
+- **The Result:** EMQX Neuron abstracts the physical connectivity layer. Regardless of whether the source is a serial Modbus connection or a TCP/IP stream, the output is a unified, standardized [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt)/JSON stream.
 
 ## **EMQX Neuron Capability 3: Contextual Intelligence**
 
@@ -182,7 +182,7 @@ In traditional architectures, data points are often referenced by cryptic tag na
 
 
 
-EMQX Neuron supports the **Sparkplug B** specification, which enforces a standardized schema for industrial MQTT payloads. This creates a "self-describing" payload. When the AI application receives the packet, it understands immediately not just the value, but the full context of that value.
+EMQX Neuron supports the **[Sparkplug B](https://www.emqx.com/en/solutions/mqtt-sparkplug)** specification, which enforces a standardized schema for industrial MQTT payloads. This creates a "self-describing" payload. When the AI application receives the packet, it understands immediately not just the value, but the full context of that value.
 
 Furthermore, EMQX Neuron acts as the perfect edge node for a **Unified Namespace (UNS)** architecture. It decouples the device layer from the application layer. The PLC does not need to know the IP address of the AI application; it simply speaks to EMQX Neuron, which publishes the data to the correct topic structure (e.g., `Enterprise/Site/Line/Cell/Asset`). This allows new AI applications to be deployed instantly, simply by subscribing to the relevant topic, without re-engineering the critical control systems.
 

@@ -22,7 +22,7 @@ fd = open("example.txt", O_RDWR)
 
 EMQX 作为一个 [MQTT 服务器](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison)，每当有新的客户端接入，EMQX 都会创建一个新的套接字以和该客户端通信，相应地，这将占用一个文件描述符。
 
-为了避免进程或无意或恶意打开过多的文件描述符，Linux 系统通常都会限制每个用户、每个进程能够打开的文件描述符数量。但默认的大小限制，显然难以满足有大量设备连接的 MQTT 服务器的需要。所以，修改内核参数成了我们必然的选择。
+为了避免进程或无意或恶意打开过多的文件描述符，Linux 系统通常都会限制每个用户、每个进程能够打开的文件描述符数量。但默认的大小限制，显然难以满足有大量设备连接的 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 服务器的需要。所以，修改内核参数成了我们必然的选择。
 
 ## 如何修改文件描述符的最大数量限制
 

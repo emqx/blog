@@ -1,6 +1,6 @@
 对接繁杂多样的工业协议、对海量设备产生的生产数据进行采集和处理一直是工业领域智能化推进的难点。EMQ 通过提供边缘工业协议网关软件 Neuron 和边缘流式处理引擎 eKuiper，分别解决了边缘侧设备数据的采集与处理。
 
-之前，要想实现两个产品的协同工作，需要额外部署 MQTT broker 进行中转，对于用户来说步骤较为繁琐。自 eKuiper 1.5.0 和 Neuron 2.0 版本开始，两者实现了集成整合，用户可在 Neuron 中直接添加对应的北向应用节点与 eKuiper 进行通信。此前我们曾介绍过如何在 eKuiper 1.5.0 中借助 Neuron source 和 sink，在无需配置的情况下[接入 Neuron 采集到的数据并进行计算](https://www.emqx.com/zh/blog/industrial-iot-data-collection-cleaning-and-control)。
+之前，要想实现两个产品的协同工作，需要额外部署 [MQTT broker](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison) 进行中转，对于用户来说步骤较为繁琐。自 eKuiper 1.5.0 和 Neuron 2.0 版本开始，两者实现了集成整合，用户可在 Neuron 中直接添加对应的北向应用节点与 eKuiper 进行通信。此前我们曾介绍过如何在 eKuiper 1.5.0 中借助 Neuron source 和 sink，在无需配置的情况下[接入 Neuron 采集到的数据并进行计算](https://www.emqx.com/zh/blog/industrial-iot-data-collection-cleaning-and-control)。
 
 随着 Neuron 2.1 和 2.2 版本的相继发布，用户体验变得更加便捷：通过内置的 data-stream-processing 节点，用户甚至无需手动添加 eKuiper 节点，直接订阅 group 即可实现通信；通过代理 eKuiper 的 API，Docker 运行 Neuron 2.2 时不再需要映射 9081 端口。这些都将帮助大家更快速轻松地享受 Neuron+eKuiper 的工业协议接入与流式数据分析处理能力，实现生产数据的互联互通，挖掘边缘数据价值。
 

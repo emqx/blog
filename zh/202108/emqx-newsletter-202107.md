@@ -21,7 +21,7 @@
 
 ## 全新的网关
 
-**我们重构了网关功能。** 我们新增了 Protocol Gateway 概念，把 LwM2M，CoAP，STOMP，MQTT-SN，ExProto 等 IoT 协议网关统一放到了  Protocol Gateway 中进行管理，使得各协议更加方便地接入到 EMQX Broker 中来。
+**我们重构了网关功能。** 我们新增了 Protocol Gateway 概念，把 [LwM2M](https://www.emqx.com/zh/blog/iot-protocols-mqtt-coap-lwm2m)，[CoAP](https://www.emqx.com/zh/blog/coap-protocol)，STOMP，MQTT-SN，ExProto 等 IoT 协议网关统一放到了  Protocol Gateway 中进行管理，使得各协议更加方便地接入到 EMQX Broker 中来。
 
 新的网关架构支持对各个协议网关进行多实例化创建和管理，并统一了各个协议的配置文件格式。在代码层面上：我们新增了通用的网关连接层以增加代码复用性；重构了 MQTT-SN 网关的部分代码逻辑，使其不再跟 emqx 核心部分耦合；重构了 CoAP 网关，在实现上不再依赖于 gen_coap。
 

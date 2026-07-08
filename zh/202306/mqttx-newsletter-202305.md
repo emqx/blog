@@ -1,4 +1,4 @@
-> MQTTX 是一个功能强大的跨平台 MQTT 5.0 桌面和命令行客户端工具，帮助用户简单快速的学习、探索和开发 MQTT 应用。它作为一个全面的 MQTT 客户端工具箱，为开发人员和用户提供了友好的界面和一系列强大的功能。
+> MQTTX 是一个功能强大的跨平台 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 5.0 桌面和命令行客户端工具，帮助用户简单快速的学习、探索和开发 MQTT 应用。它作为一个全面的 [MQTT 客户端](https://www.emqx.com/zh/blog/mqtt-client-tools)工具箱，为开发人员和用户提供了友好的界面和一系列强大的功能。
 >
 > 社区：[https://mqttx.app/zh](https://mqttx.app/zh)
 >
@@ -96,7 +96,7 @@ mqttx simulate -sc smart_home -c 10 -h broker.emqx.io -t testtopic/smart_home
 
 ### 自动重连功能
 
-连接默认开启了自动重连的功能。如果由于网络问题或其他原因，MQTTX 桌面客户端与 MQTT 服务器的连接中断，那么客户端将会尝试自动重新连接。
+连接默认开启了自动重连的功能。如果由于网络问题或其他原因，MQTTX 桌面客户端与 [MQTT 服务器](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison)的连接中断，那么客户端将会尝试自动重新连接。
 
 ### 连接状态下禁止编辑
 
@@ -123,7 +123,7 @@ mqttx simulate -sc smart_home -c 10 -h broker.emqx.io -t testtopic/smart_home
 - 可配置忽略 QoS 0 的消息存储，以减少存储空间的占用
 - MQTT Debug 功能
 - 接收到的消息可以进行自动图表绘制
-- 插件功能（协议扩展 CoAP，MQTT-SN 等）
+- 插件功能（协议扩展 [CoAP](https://www.emqx.com/zh/blog/coap-protocol)，MQTT-SN 等）
 - 脚本测试自动化（Flow）
 
 

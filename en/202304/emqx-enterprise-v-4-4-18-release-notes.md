@@ -4,7 +4,7 @@
 
 OCPP-J (Open Charge Point Protocol - JSON) is a protocol for communication between Electric Vehicle Supply Equipment (EVSE) and Electric Vehicle Management Systems (EVMS). OCPP-J is based on JSON (JavaScript Object Notation) and is a lightweight and flexible protocol that is easy to implement and integrate with other systems.
 
-With the implementation of the emqx_ocpp plugin based on the OCPP 1.6-J standard, EMQX Enterprise offers seamless integration with Charge Point devices. This plugin handles formatting conversion, and forwarding of upstream and downstream messages, acting as an OCPP gateway for EMQX. It enables protocol transfer between OCPP and MQTT, allowing charging stations to connect easily to EMQX through OCPP over WebSocket. 
+With the implementation of the emqx_ocpp plugin based on the OCPP 1.6-J standard, EMQX Enterprise offers seamless integration with Charge Point devices. This plugin handles formatting conversion, and forwarding of upstream and downstream messages, acting as an OCPP gateway for EMQX. It enables protocol transfer between OCPP and [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt), allowing charging stations to connect easily to EMQX through OCPP over WebSocket. 
 
 ![Seamless integration with Charge Point devices](https://assets.emqx.com/images/903e5af0c4edba8ddeeef27666eabaaa.png)
 

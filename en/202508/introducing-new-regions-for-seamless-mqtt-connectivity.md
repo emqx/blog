@@ -1,4 +1,4 @@
-We are excited to announce the expansion of the EMQX Platform into three new regions: AWS UAE (Middle East), AWS Central (Mexico), and Azure Canada Central. By extending our Dedicated service to these strategic locations, we bring our robust MQTT messaging capabilities closer to businesses, ensuring compliance, performance, and reliability for diverse industries.
+We are excited to announce the expansion of the EMQX Platform into three new regions: AWS UAE (Middle East), AWS Central (Mexico), and Azure Canada Central. By extending our Dedicated service to these strategic locations, we bring our robust [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) messaging capabilities closer to businesses, ensuring compliance, performance, and reliability for diverse industries.
 
 ## Driving Global IoT Innovation with Expanded Coverage
 

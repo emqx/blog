@@ -8,7 +8,7 @@
 
 ![mqtt subscription identifier 01](https://assets.emqx.com/images/27648a4465bf3948af3a61e533fd8aad.png)
 
-另外，因为 MQTT 允许一个客户端建立多个订阅，那么当客户端使用通配符订阅时，一条消息可能同时与一个客户端的多个订阅匹配。
+另外，因为 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 允许一个客户端建立多个订阅，那么当客户端使用通配符订阅时，一条消息可能同时与一个客户端的多个订阅匹配。
 
 MQTT 允许服务端为这些重叠的订阅分别发送一次消息，也允许服务端只为这些重叠的订阅发送一条消息。
 

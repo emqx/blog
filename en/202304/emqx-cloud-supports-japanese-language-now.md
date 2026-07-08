@@ -1,4 +1,4 @@
-We are excited to announce that [EMQX Cloud](https://www.emqx.com/en/cloud) now supports the Japanese language in its user interface. Our Japanese-speaking customers can use EMQX Cloud's scalable and reliable MQTT messaging services in their native language, making it easier and more accessible to build their IoT applications in Japan.
+We are excited to announce that [EMQX Cloud](https://www.emqx.com/en/cloud) now supports the Japanese language in its user interface. Our Japanese-speaking customers can use EMQX Cloud's scalable and reliable [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) messaging services in their native language, making it easier and more accessible to build their IoT applications in Japan.
 
 ## The Growth of the Japanese Market in IoT
 

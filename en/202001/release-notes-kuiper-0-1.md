@@ -29,7 +29,7 @@ Github Repository: <https://github.com/emqx/kuiper>
   - ``buffer_length``, the used buffer length for all operators
   - ``last_invocation``, the last invocation timestamp for all operators
 - Tested in OpenWrt Linux (Chaos Calmer 15.05) with 1core CPU * 256M memory, and it works fine.
-- Support re-connect to MQTT broker if MQTT source or sink is disconnected.
+- Support re-connect to [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) if [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) source or sink is disconnected.
 
 ### Bug fixes
 

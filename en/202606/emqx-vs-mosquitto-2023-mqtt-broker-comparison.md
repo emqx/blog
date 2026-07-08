@@ -1,6 +1,6 @@
 ## Introduction
 
-MQTT (Message Queuing Telemetry Transport) is a de facto standard messaging protocol for the Internet of Things (IoT). With the growth of IoT, [MQTT brokers](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) are becoming vital in connecting IoT devices and moving data between connected devices and cloud services.
+[MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) (Message Queuing Telemetry Transport) is a de facto standard messaging protocol for the Internet of Things (IoT). With the growth of IoT, [MQTT brokers](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) are becoming vital in connecting IoT devices and moving data between connected devices and cloud services.
 
 [EMQX](https://github.com/emqx/emqx) and [Mosquitto](https://www.emqx.com/en/blog/mosquitto-mqtt-broker-pros-cons-tutorial-and-modern-alternatives) are two of the most popular open-source MQTT brokers. EMQX is a highly scalable, distributed MQTT broker with clustering support. Mosquitto is a lightweight MQTT broker with a small footprint and a single-threaded architecture.
 
@@ -29,7 +29,7 @@ Mosquitto is written in C, with client libraries available for C and C++. It imp
 
 ## EMQX Overview
 
-The EMQX project was launched on GitHub in 2012 and is licensed under Apache version 2.0 (EMQX 5.8 and earlier versions). EMQX is now the world's most scalable MQTT messaging server that supports advanced features such as MQTT 5.0, [MQTT-SN](https://www.emqx.com/en/blog/connecting-mqtt-sn-devices-using-emqx), and MQTT over QUIC. It is widely used in business-critical applications in IoT, Industrial IoT ([IIoT](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges)), and the Internet of Vehicles (IoV).
+The EMQX project was launched on GitHub in 2012 and is licensed under Apache version 2.0 (EMQX 5.8 and earlier versions). EMQX is now the world's most scalable MQTT messaging server that supports advanced features such as MQTT 5.0, [MQTT-SN](https://www.emqx.com/en/blog/connecting-mqtt-sn-devices-using-emqx), and MQTT over [QUIC](https://www.emqx.com/en/blog/quic-protocol-the-features-use-cases-and-impact-for-iot-iov). It is widely used in business-critical applications in IoT, [Industrial IoT](https://www.emqx.com/en/blog/industrial-iot-systems) ([IIoT](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges)), and the Internet of Vehicles (IoV).
 
 EMQX is written in Erlang/OTP, a programming language for building massively scalable soft real-time systems. Unlike Mosquitto, EMQX has adopted a masterless distributed architecture from its inception to achieve high availability and horizontal scalability. It can scale to establish 100 million concurrent MQTT connections with a single cluster of 23 nodes.
 
@@ -109,7 +109,7 @@ In addition, EMQX can be extended to support multiple protocol gateways, such as
 | **MQTT Shared Subscription** | ✅                                                            | ✅             |                                                              |
 | **MQTT Add-ons**             | - [Exclusive subscription](https://docs.emqx.com/en/emqx/v5.0/mqtt/mqtt-exclusive-subscription.html#exclusive-subscription)<br>- [Delayed Publish](https://docs.emqx.com/en/emqx/v5.0/advanced/delayed-publish.html)<br>- [Auto-subscription](https://docs.emqx.com/en/emqx/v5.0/advanced/auto-subscriptions.html)<br>- [Topic rewrite](https://docs.emqx.com/en/emqx/v5.0/advanced/topic-rewrite.html) | ❌             |                                                              |
 | **MQTT over TCP**            | ✅                                                            | ✅             | [EMQX Getting Started](https://docs.emqx.com/en/emqx/v5.0/getting-started/getting-started.html#quick-verification-using-an-mqtt-client) |
-| **MQTT over TLS**            | ✅                                                            | ✅             | [Enable SSL/TLS for EMQX MQTT broker](https://www.emqx.com/en/blog/emqx-server-ssl-tls-secure-connection-configuration-guide) |
+| **[MQTT over TLS](https://www.emqx.com/en/blog/fortifying-mqtt-communication-security-with-ssl-tls)**            | ✅                                                            | ✅             | [Enable SSL/TLS for EMQX MQTT broker](https://www.emqx.com/en/blog/emqx-server-ssl-tls-secure-connection-configuration-guide) |
 | **MQTT over WebSocket**      | ✅                                                            | ✅             | [Connect to MQTT broker with Websocket](https://www.emqx.com/en/blog/connect-to-mqtt-broker-with-websocket) |
 | **MQTT over QUIC**           | ✅                                                            | ❌             | EMQX provides native MQTT over QUIC support: [MQTT over QUIC](https://www.emqx.com/en/blog/mqtt-over-quic) |
 | **LB (Proxy Protocol)**      | ✅                                                            | ✅             | Proxy Protocol v1, v2 ([Cluster load balancing](https://docs.emqx.com/en/emqx/v5.0/deploy/cluster/lb.html)) |
@@ -133,7 +133,7 @@ Security is crucial for connecting IoT devices and data exchanged between connec
 
 ## Authentication and Authorization
 
-Regarding MQTT client authentication and access control, Mosquitto provides a dynamic security plug-in that flexibly handles username/password authentication and access control.
+Regarding [MQTT client](https://www.emqx.com/en/blog/mqtt-client-tools) authentication and access control, Mosquitto provides a dynamic security plug-in that flexibly handles username/password authentication and access control.
 
 EMQX has built-in support for multiple authentication mechanisms, such as [username-password authentication](https://www.emqx.com/en/blog/securing-mqtt-with-username-and-password-authentication), JWT authentication, and enhanced authentication based on the MQTT 5.0 protocol. Authentication in EMQX integrates with various data backends, including files, Redis, MySQL, PostgreSQL, MongoDB, etc.
 
@@ -237,7 +237,7 @@ The comparison above shows that EMQX and Mosquitto are popular MQTT brokers cate
 
 Mosquitto, as a single-threaded lightweight MQTT broker, is more suitable for deployment on embedded hardware, industrial gateways, and small servers for IoT edge.
 
-EMQX is a highly scalable, distributed MQTT server supporting high availability and horizontal scalability. It is more suitable for cloud deployment, large-scale IoT, IIoT, and connected car applications.
+EMQX is a highly scalable, distributed MQTT server supporting high availability and horizontal scalability. It is more suitable for cloud deployment, large-scale IoT, IIoT, and [connected car](https://www.emqx.com/en/blog/mqtt-for-internet-of-vehicles) applications.
 
 In short, you can choose Mosquitto for embedded hardware and IoT edge deployments and use EMQX as a massively scalable, highly available MQTT messaging service in the cloud.
 

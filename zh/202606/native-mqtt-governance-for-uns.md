@@ -6,7 +6,7 @@ EMQX 6.2 在 Broker 层面引入了统一命名空间（UNS）治理能力，从
 
 ## 缺乏治理的 UNS，正在悄悄吞噬你的成本
 
-统一命名空间（UNS）已成为现代工业物联网的事实标准架构。通过将所有运营数据组织成单一、分层的 MQTT 主题树（通常遵循 ISA-95 标准），制造企业得以构建统一的共享数据层，无需点对点集成即可连接 OT、IT 和云端系统。
+统一命名空间（UNS）已成为现代[工业物联网](https://www.emqx.com/zh/blog/iiot-explained-examples-technologies-benefits-and-challenges)的事实标准架构。通过将所有运营数据组织成单一、分层的 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 主题树（通常遵循 ISA-95 标准），制造企业得以构建统一的共享数据层，无需点对点集成即可连接 OT、IT 和云端系统。
 
 但在行业大会中，从来没人说破一个残酷现实：**主题蔓延**。
 

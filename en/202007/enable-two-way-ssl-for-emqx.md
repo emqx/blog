@@ -191,7 +191,7 @@ After finished configuring and restarted EMQX, we use [MQTT client tool - MQTTX]
 
 At this time, you need to select `Self signed` in the column `Certificate` and carry the file `ca.pem` generated in the self-signed certificate and the client certificate `client.pem` and the client key `client.key` file.
 
-- Click the button `Connect`, after the connection succeeds, if you can normally perform MQTT publish/subscribe operation, the configuration of SSL two-way connection authentication succeeds.
+- Click the button `Connect`, after the connection succeeds, if you can normally perform [MQTT publish/subscribe](https://www.emqx.com/en/blog/mqtt-5-introduction-to-publish-subscribe-model) operation, the configuration of SSL two-way connection authentication succeeds.
 
 ![mqttxconnected.png](https://assets.emqx.com/images/d453f16b1beb945af6d8dc99840e364d.png)
 

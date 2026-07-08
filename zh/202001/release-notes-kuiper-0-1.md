@@ -25,7 +25,7 @@ Github仓库： [https://github.com/emqx/kuiper](https://github.com/emqx/kuiper)
   - ``buffer_length``, 每个处理器中用掉的 buff 的长度
   - ``last_invocation``, 每个处理器中最后调用时间
 - 在 OpenWrt Linux (Chaos Calmer 15.05) 系统 (1核，256M 内存硬件)中完成测试，工作正常
-- 如果 MQTT 源或者目标被断开，支持自动重连
+- 如果 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 源或者目标被断开，支持自动重连
 
 ### 问题修复
 

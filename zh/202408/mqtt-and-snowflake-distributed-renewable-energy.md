@@ -8,7 +8,7 @@
 
 ## 场景介绍
 
-太阳能和风力发电量的预测依赖地理位置、历史的气候信息、运行信息系和发电量数据。本文我们使用 MQTT 客户端工具 MQTTX CLI 的 `simulate` 命令，配合模拟脚本生成多个太阳能和风力发电站 MQTT 状态数据采集上报与客户端（虚拟电站）。
+太阳能和风力发电量的预测依赖地理位置、历史的气候信息、运行信息系和发电量数据。本文我们使用 [MQTT 客户端](https://www.emqx.com/zh/blog/mqtt-client-tools)工具 MQTTX CLI 的 `simulate` 命令，配合模拟脚本生成多个太阳能和风力发电站 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 状态数据采集上报与客户端（虚拟电站）。
 
 - 虚拟电站将连接到 EMQX 上，周期性生成模拟数据，并向指定 MQTT 主题发布自身状态数据；
 - EMQX 在接收到消息后，使用内置的规则引擎和数据集成功能，将其存储到 Snowflake 中；

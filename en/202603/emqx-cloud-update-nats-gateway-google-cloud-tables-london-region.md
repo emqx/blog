@@ -1,17 +1,17 @@
-We're excited to introduce the latest version of EMQX Cloud, now available with several powerful new capabilities.
+We're excited to introduce the latest version of [EMQX Cloud](https://www.emqx.com/en/cloud), now available with several powerful new capabilities.
 
 This update brings multi-protocol support with the new NATS Gateway, a major expansion for EMQX Tables onto Google Cloud, a new Dedicated Flex region in London, simplified billing with annual subscriptions for value-added services, and a new Explain Query feature in the Tables Data Explorer to help you optimize your time-series queries.
 
 ## NATS Gateway: Connect NATS Clients to Your MQTT Ecosystem
 
-EMQX Cloud now supports a NATS Gateway, allowing NATS clients to communicate bidirectionally with MQTT clients, all through a single managed broker.
+EMQX Cloud now supports a NATS Gateway, allowing NATS clients to communicate bidirectionally with [MQTT clients](https://www.emqx.com/en/blog/mqtt-client-tools), all through a single managed broker.
 
-This is valuable for teams that run mixed protocol environments: for example, backend microservices communicating over NATS, while IoT devices connect over MQTT. Previously, bridging these two worlds required custom middleware. With the NATS Gateway, messages flow natively between both protocols with no glue code needed.
+This is valuable for teams that run mixed protocol environments: for example, backend microservices communicating over NATS, while IoT devices connect over [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt). Previously, bridging these two worlds required custom middleware. With the NATS Gateway, messages flow natively between both protocols with no glue code needed.
 
 **What the gateway supports:**
 
 - Full NATS message types: `INFO`, `CONNECT`, `PUB`, `SUB`, `UNSUB`, `PING`, `PONG`
-- Automatic wildcard conversion between NATS and MQTT topic formats (e.g., `*.b.>` → `+/b/#`)
+- Automatic wildcard conversion between NATS and [MQTT topic](https://www.emqx.com/en/blog/advanced-features-of-mqtt-topics) formats (e.g., `*.b.>` → `+/b/#`)
 - Queue Group shared subscriptions, mapped directly to MQTT shared subscriptions
 - Transport options: TCP, TLS, WebSocket (WS), and WebSocket over TLS (WSS)
 - Authentication via password-based auth, HTTP, JWT, MySQL, PostgreSQL, or Redis

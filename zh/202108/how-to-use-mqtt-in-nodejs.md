@@ -7,7 +7,7 @@
 
 ## MQTT 客户端库选择
 
-[MQTT.js](https://github.com/mqttjs/MQTT.js) 是一个 MQTT 协议的客户端库，使用 JavaScript 编写，用于 Node.js 和 浏览器环境中。是 JavaScript 生态中目前使用最为广泛的 [MQTT 客户端库](https://www.emqx.com/zh/blog/introduction-to-the-commonly-used-mqtt-client-library)。
+[MQTT.js](https://github.com/mqttjs/MQTT.js) 是一个 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 协议的客户端库，使用 JavaScript 编写，用于 Node.js 和 浏览器环境中。是 JavaScript 生态中目前使用最为广泛的 [MQTT 客户端库](https://www.emqx.com/zh/blog/introduction-to-the-commonly-used-mqtt-client-library)。
 
 ## 项目初始化
 
@@ -43,7 +43,7 @@ npm install mqtt --save
 - TCP Port: **1883**
 - SSL/TLS Port: **8883**
 
-引入 MQTT.js 客户端库
+引入 [MQTT.js](https://www.emqx.com/zh/blog/mqtt-js-tutorial) 客户端库
 
 > 注意：在 Node.js 环境中，导入依赖模块请使用 commonjs 规范
 
@@ -53,7 +53,7 @@ const mqtt = require('mqtt')
 
 ### 设置 MQTT Broker 的连接参数
 
-设置 MQTT Broker 连接地址，端口以及 topic，这里我们使用 JavaScript 中的生成随机数的函数来生成客户端 ID。
+设置 [MQTT Broker](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison) 连接地址，端口以及 topic，这里我们使用 JavaScript 中的生成随机数的函数来生成客户端 ID。
 
 ```javascript
 const host = 'broker.emqx.io'
@@ -189,7 +189,7 @@ npm start
 
 ## 总结
 
-至此，我们完成了使用 Node.js 来作为 MQTT 客户端连接到[公共 MQTT 服务器](https://www.emqx.com/zh/mqtt/public-mqtt5-broker)，并实现了测试客户端与 MQTT 服务器的连接、消息发布和订阅。
+至此，我们完成了使用 Node.js 来作为 [MQTT 客户端](https://www.emqx.com/zh/blog/mqtt-client-tools)连接到[公共 MQTT 服务器](https://www.emqx.com/zh/mqtt/public-mqtt5-broker)，并实现了测试客户端与 MQTT 服务器的连接、消息发布和订阅。
 
 接下来，读者可访问 EMQ 提供的 [MQTT 入门与进阶](https://www.emqx.com/zh/mqtt-guide)系列文章学习 MQTT 主题及通配符、保留消息、遗嘱消息等相关概念，探索 MQTT 的更多高级应用，开启 MQTT 应用及服务开发。
 

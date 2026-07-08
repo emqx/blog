@@ -8,7 +8,7 @@ Sparkplug is an [industrial IoT](https://www.emqx.com/en/blog/iiot-explained-exa
 - Promoting transparency, increasing trust, and reducing the risk of vendor lock-in or dependence on a single supplier.
 - Ensuring that products and services are accessible to a wide range of users, including those with disabilities.
 
-Sparkplug aims to provide a standardized way to use [MQTT for industrial](https://www.emqx.com/en/solutions) applications and promote interoperability between devices and systems from different vendors. As such, the Sparkplug specification has been widely adopted by the industrial IoT community and is supported by many different vendors and organizations.
+Sparkplug aims to provide a standardized way to use [MQTT for industrial](https://www.emqx.com/en/solutions) applications and promote interoperability between devices and systems from different vendors. As such, the Sparkplug specification has been widely adopted by the [industrial IoT](https://www.emqx.com/en/blog/industrial-iot-systems) community and is supported by many different vendors and organizations.
 
 <section
   class="promotion-pdf"
@@ -56,7 +56,7 @@ Session state awareness is a critical feature for mission-critical industrial Io
 
 The [unified namespace](https://www.emqx.com/en/blog/unified-namespace-next-generation-data-fabric-for-iiot) is a concept that refers to the ability of different devices and systems in an industrial setting to share data seamlessly, regardless of their manufacturer or communication protocol. It uses a standard naming convention and data model to ensure interoperability and facilitate data exchange.
 
-On the other hand, Sparkplug is a messaging specification to enable efficient and secure communication between IoT devices and applications. It is based on the MQTT protocol and incorporates the unified namespace concept to provide a standardized way of representing data and metadata across different devices and systems.
+On the other hand, Sparkplug is a messaging specification to enable efficient and secure communication between IoT devices and applications. It is based on the [MQTT protocol](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) and incorporates the unified namespace concept to provide a standardized way of representing data and metadata across different devices and systems.
 
 In other words, Sparkplug utilizes the unified namespace concept to provide a common language for data exchange between industrial devices and systems. This helps to simplify integration and improve interoperability, making it easier to build and maintain complex IoT applications in industrial environments.
 
@@ -83,7 +83,7 @@ In practice, the SSOT is often implemented as part of the CDR, which is responsi
 
 ## Conclusion
 
-In the Sparkplug specification, an MQTT Broker is an indispensable component to incorporate the above 5 conceptual capabilities. 
+In the Sparkplug specification, an [MQTT Broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) is an indispensable component to incorporate the above 5 conceptual capabilities. 
 
 First, the MQTT broker offers a pub-sub decoupling messaging architecture for various Sparkplug host systems and devices to operate independently. 
 

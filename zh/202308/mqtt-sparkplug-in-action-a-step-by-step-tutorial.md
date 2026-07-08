@@ -15,7 +15,7 @@
 
 ![MQTT Sparkplug solution](https://assets.emqx.com/images/ec53f4b3ec654a85a43d4745e630dd18.png)
 
-在本文中，我们将向您展示如何利用 EMQX 和 Neuron 来入门 MQTT Sparkplug，具体步骤如下：
+在本文中，我们将向您展示如何利用 EMQX 和 Neuron 来入门 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) Sparkplug，具体步骤如下：
 
 1. 安装 EMQX
 

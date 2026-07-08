@@ -6,7 +6,7 @@
 
 ## 其他新增功能概览
 
-- 新增 MQTT 周期上报心跳报文，包含 Neuron 下配置各个 Node 的状态信息等。
+- 新增 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 周期上报心跳报文，包含 Neuron 下配置各个 Node 的状态信息等。
 - 新增驱动插件测试模版，该模版利用自动测试框架 Robot Framework 的 Template 实现，新增南向驱动利用该测试模版可更加便捷地进行功能测试。
 - 引入 SQLite 存储 Neuron 各项配置。
 - 三菱驱动 QnA 3E 自动根据配置的点位信息进行批量数据采集，提升采集效率。
@@ -16,7 +16,7 @@
 ## 问题修复
 
 - 修复 MQTT 插件某些情况下 CPU 跑满的问题。
-- 修复 OPC UA 插件崩溃问题。
+- 修复 [OPC UA](https://www.emqx.com/zh/blog/opc-ua-protocol) 插件崩溃问题。
 - 修复 MODBUS 插件状态显示异常问题。
 - 修复 S7COMM 插件 License 校验异常问题。
 

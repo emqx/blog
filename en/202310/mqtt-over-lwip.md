@@ -176,7 +176,7 @@ You can find the complete code in the repository [mqtt client over lwIP](https:/
 
 ## Test
 
-In this blog, we use the MQTT 5.0 client tool - [MQTTX](https://mqttx.app/) for testing.
+In this blog, we use the [MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5) client tool - [MQTTX](https://mqttx.app/) for testing.
 
 ### Test Subscribed Messages
 

@@ -35,7 +35,7 @@
 
 | 组件名称                                                 | 版本   | 说明                                                         |
 | :------------------------------------------------------- | :----- | :----------------------------------------------------------- |
-| [EMQX Enterprise](https://www.emqx.com/en/products/emqx) | 5.5.0+ | 用于接入 MQTT 设备，并将设备事件与消息数据发送到 Webhook 服务的 MQTT Broker。 |
+| [EMQX Enterprise](https://www.emqx.com/en/products/emqx) | 5.5.0+ | 用于接入 MQTT 设备，并将设备事件与消息数据发送到 Webhook 服务的 [MQTT Broker](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison)。 |
 | [MQTTX CLI](https://mqttx.app/cli)                       | 1.9.3+ | 用于模拟设备连接到 EMQX 并发布消息的命令行工具。             |
 | [Node.js](https://nodejs.org/)                           | 18.17  | 用于运行 Webhook 服务以处理来自 EMQX 的数据请求的运行环境。  |
 

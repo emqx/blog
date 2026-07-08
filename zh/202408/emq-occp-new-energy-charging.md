@@ -38,7 +38,7 @@ OCPP-J 规范中的 `BootNotification.req` 消息格式如下：
 
 ## EMQX 5 中的 OCPP 网关
 
-EMQX 是一个可以无限连接、任意集成、随处运行的大规模分布式物联网 MQTT 接入平台。它提供了一个多协议网关，用于处理所有非 MQTT 协议的连接、身份验证和消息收发。
+EMQX 是一个可以无限连接、任意集成、随处运行的大规模分布式物联网 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 接入平台。它提供了一个多协议网关，用于处理所有非 MQTT 协议的连接、身份验证和消息收发。
 
 > 有关 EMQX 多协议网关的更多信息，请参阅：[EMQX 5.0 全新网关框架：轻松实现多物联网协议接入](https://www.emqx.com/zh/blog/emqx-connects-multiple-iot-protocols)
 
@@ -56,7 +56,7 @@ EMQX 5 中提供了一个支持 OCPP-J 1.6 协议的 OCPP 网关：
 
 ## 配置 OCPP 网关
 
-首先，我们要安装最新的 EMQX Enterprise。请参阅 [EMQX Enterprise 入门指南| EMQX Enterprise 文档](https://docs.emqx.com/zh/emqx/latest/getting-started/getting-started.html#%E5%AE%89%E8%A3%85-emqx)。
+首先，我们要安装最新的 [EMQX Enterprise](https://www.emqx.com/zh/products/emqx)。请参阅 [EMQX Enterprise 入门指南| EMQX Enterprise 文档](https://docs.emqx.com/zh/emqx/latest/getting-started/getting-started.html#%E5%AE%89%E8%A3%85-emqx)。
 
 或者，也可以直接使用以下命令，通过 Docker 启动最新版本的 EMQX 容器：
 
@@ -85,7 +85,7 @@ OCPP 网关启动后，可以使用 OCPP 客户端工具来测试连接，并验
 
 以 ocpp-go 为例，以下是如何在 EMQX 中将 [**ocpp-go**](https://github.com/lorenzodonini/ocpp-go) 客户端连接到 OCPP 网关的步骤。
 
-首先，准备一个 MQTT 客户端用于与 OCPP 网关交互。例如，使用 [**MQTTX**](https://mqttx.app/zh/downloads)，配置其连接到 EMQX 并订阅主题 `ocpp/#`。
+首先，准备一个 [MQTT 客户端](https://www.emqx.com/zh/blog/mqtt-client-tools)用于与 OCPP 网关交互。例如，使用 [**MQTTX**](https://mqttx.app/zh/downloads)，配置其连接到 EMQX 并订阅主题 `ocpp/#`。
 
 ![MQTTX](https://assets.emqx.com/images/d5aa77eb60827ead090b1bd9483728c6.png)
 

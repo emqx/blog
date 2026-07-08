@@ -1,6 +1,6 @@
 本月 [EMQX 开源版](https://github.com/emqx/emqx)和企业版对稳定性和部分功能进行了优化提升，同时提供了 TDengine 的新版本适配，帮助用户基于 EMQX 拓展更多可能。
 
-云服务方面，EMQX Cloud 数据集成新增支持 Google Pub/Sub，为使用 GCP 其他数据服务的用户提供了便利。此外，EMQX Operator 2.1 即将发布，通过 EMQX 节点疏散能力在 Kubernetes 上实现了可控、平滑的优雅升级。
+云服务方面，[EMQX Cloud](https://www.emqx.com/zh/cloud) 数据集成新增支持 Google Pub/Sub，为使用 GCP 其他数据服务的用户提供了便利。此外，EMQX Operator 2.1 即将发布，通过 EMQX 节点疏散能力在 Kubernetes 上实现了可控、平滑的优雅升级。
 
 
 ## EMQX
@@ -13,7 +13,7 @@
 
 集群负载重平衡与节点疏散包含在企业版 v4.4.12 中，它允许用户在集群负载不平衡时重新分配每个节点的连接，亦或是因维护关闭节点之前强制将连接和会话迁移到其他节点，以避免因此带来的会话数据丢失。
 
-启用节点疏散后，当前节点将停止接受 MQTT 新连接，并将所有连接及会话转移到指定节点，在此过程中客户端通过重连机制，经历短暂的断开后会迅速连接到新节点，绝大多数 MQTT 客户端库都实现了这一机制。
+启用节点疏散后，当前节点将停止接受 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 新连接，并将所有连接及会话转移到指定节点，在此过程中客户端通过重连机制，经历短暂的断开后会迅速连接到新节点，绝大多数 [MQTT 客户端](https://www.emqx.com/zh/blog/mqtt-client-tools)库都实现了这一机制。
 
 节点重平衡可以看做是不完全的节点疏散，它允许将部分连接从负载较高的节点迁移到负载较低的节点时间集群负载均衡。
 

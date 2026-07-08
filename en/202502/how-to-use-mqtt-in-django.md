@@ -6,7 +6,7 @@
 
 ## **Setting Up MQTT in Django**
 
-We will use the [paho-mqtt](https://www.eclipse.org/paho/index.php?page=clients/python/index.php) library, a widely used MQTT client library in Python that supports **MQTT 5.0, 3.1.1, and 3.1** on Python 2.7 and 3.x.
+We will use the [paho-mqtt](https://www.eclipse.org/paho/index.php?page=clients/python/index.php) library, a widely used MQTT client library in Python that supports **[MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5), 3.1.1, and 3.1** on Python 2.7 and 3.x.
 
 This project is tested on **Python 3.12**. You can verify your Python version with:
 

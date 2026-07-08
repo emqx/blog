@@ -1,4 +1,4 @@
-[MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 是一种基于发布/订阅模式的 **轻量级物联网消息传输协议**，可在严重受限的硬件设备和低带宽、高延迟的网络上实现稳定传输。它凭借简单易实现、支持 QoS、报文小等特点，占据了物联网协议的半壁江山。
+[MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 是一种基于发布/订阅模式的 **轻量级物联网消息传输协议**，可在严重受限的硬件设备和低带宽、高延迟的网络上实现稳定传输。它凭借简单易实现、支持 QoS、报文小等特点，占据了[物联网协议](https://www.emqx.com/zh/blog/iot-protocols-mqtt-coap-lwm2m)的半壁江山。
 
 本文主要介绍如何在 Java 项目中实现 [MQTT 客户端](https://www.emqx.com/zh/blog/mqtt-client-tools)与服务器的连接、订阅和收发消息等功能。
 

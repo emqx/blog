@@ -42,7 +42,7 @@ This section demonstrates how to deploy EMQX clusters across multiple cloud prov
 
      Depending on the cluster size and configuration, multiple MQTT client connections might be established to `deployment-gcp`, and each client must have a unique ClientID. You can control how these ClientIDs are allocated by setting the *Client ID Prefix* for these connections (e.g., `from-aws-1`, `from-aws-2`).
 
-   - **Topics**: List of MQTT topic filters that specify which messages the current deployment will receive from the remote deployment, for example, `from-cluster`. 
+   - **Topics**: List of [MQTT topic](https://www.emqx.com/en/blog/advanced-features-of-mqtt-topics) filters that specify which messages the current deployment will receive from the remote deployment, for example, `from-cluster`. 
 
    - **Advanced Settings**: Configure additional settings such as MQTT protocol parameters.
 
@@ -60,7 +60,7 @@ When Cluster Linking is established, EMQX uses the [MQTT protocol](https://www.e
 
 ### Verify Multi-Cloud Cluster Connectivity
 
-To confirm successful Cluster Linking, use MQTTX, a free MQTT client tool for testing connections (download at [MQTTX: Your All-in-one MQTT Client Toolbox](https://mqttx.app/) ):
+To confirm successful Cluster Linking, use MQTTX, a [free MQTT client](https://www.emqx.com/en/blog/mqtt-client-tools) tool for testing connections (download at [MQTTX: Your All-in-one MQTT Client Toolbox](https://mqttx.app/) ):
 
 1. Create a connection named `aws-client` in MQTTX, connecting to `deployment-aws` using its MQTT host and credentials.
 2. Create a second connection named `gcp-connection`, connecting to `deployment-gcp`.

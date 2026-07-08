@@ -49,7 +49,7 @@ EMQX's versatility extends to its database connectors, offering a variety of opt
 
 ## Unified Management for Seamless Operations
 
-Crucially, both NeuronEX and EMQX operate on the EMQ platform, a unified management platform that revolutionizes remote edge service management. From batch provisioning and upgrades to start-stop operations, EMQ platform simplifies on-site operations through remote management, fault diagnosis, and software and algorithm updates. The platform's ability to support batch creation and management of hundreds of edge service instances in environments such as Kubernetes and Docker, further accelerates the deployment and implementation of IIoT projects.
+Crucially, both NeuronEX and EMQX operate on the EMQ platform, a unified management platform that revolutionizes remote edge service management. From batch provisioning and upgrades to start-stop operations, EMQ platform simplifies on-site operations through remote management, fault diagnosis, and software and algorithm updates. The platform's ability to support batch creation and management of hundreds of edge service instances in environments such as Kubernetes and Docker, further accelerates the deployment and implementation of [IIoT](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges) projects.
 
 ## Conclusion
 

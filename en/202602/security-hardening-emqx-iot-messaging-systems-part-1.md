@@ -6,13 +6,13 @@ For a message broker like EMQX, the central nervous system of massive‑scale In
 
 Unlike stateless web applications, MQTT is a stateful protocol that maintains long‑lived TCP connections, persistent session state, and retained messages for millions of devices. This dramatically enlarges the attack surface: an attacker can occupy sockets for days or exploit weaknesses in the underlying Erlang Virtual Machine (BEAM). Any realistic security architecture must therefore account for connection duration, resource limits, and state persistence.
 
-Across this series, we examine four critical layers—Operating System and Network, Erlang VM, MQTT Protocol, and Administrative Interface—and tie them together with disaster recovery strategies. The goal is simple: ensure that when something goes wrong, your EMQX cluster degrades gracefully instead of failing catastrophically.
+Across this series, we examine four critical layers—Operating System and Network, Erlang VM, [MQTT Protocol](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt), and Administrative Interface—and tie them together with disaster recovery strategies. The goal is simple: ensure that when something goes wrong, your EMQX cluster degrades gracefully instead of failing catastrophically.
 
 ## **Establishing Defense in Depth: Comprehensive Security Checklist**
 
 
 
-Before diving into the granular configurations in the subsequent articles, it is essential to establish a holistic view of your security posture. Security for an MQTT broker is not a single toggle but a series of overlapping layers.
+Before diving into the granular configurations in the subsequent articles, it is essential to establish a holistic view of your security posture. Security for an [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) is not a single toggle but a series of overlapping layers.
 
 The following Comprehensive Security Checklist serves as both an immediate self-assessment tool and a roadmap for this series. We recommend using this checklist as a "health check" to identify gaps in your current EMQX production environment before proceeding to the technical deep dives.
 

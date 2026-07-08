@@ -42,7 +42,7 @@
 
 ### 方案设计
 
-蓝绿发布是一种同时运行两个版本应用的发布策略。EMQX Kubernetes Operator 近日在 [2.1.0](https://github.com/emqx/emqx-operator/releases/tag/2.1.0) 版本中实现了 EMQX Enterprise 的蓝绿发布，即从现有的 EMQX Enterprise 集群开始，创建一套新版本的 EMQX Enterprise 集群，在这一过程中不停止掉老版本，等新版本集群运行起来后，再将流量逐步平滑切换到新版本上。
+蓝绿发布是一种同时运行两个版本应用的发布策略。EMQX Kubernetes Operator 近日在 [2.1.0](https://github.com/emqx/emqx-operator/releases/tag/2.1.0) 版本中实现了 [EMQX Enterprise](https://www.emqx.com/zh/products/emqx) 的蓝绿发布，即从现有的 EMQX Enterprise 集群开始，创建一套新版本的 EMQX Enterprise 集群，在这一过程中不停止掉老版本，等新版本集群运行起来后，再将流量逐步平滑切换到新版本上。
 
 从 4.4.12 版本开始，EMQX 企业版本支持**节点疏散**功能。节点疏散功能允许用户在关闭节点之前强制将连接和会话以一定速率迁移到其他节点，以避免节点关闭带来的会话数据丢失。
 

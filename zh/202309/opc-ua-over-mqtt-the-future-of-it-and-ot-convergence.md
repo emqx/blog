@@ -1,6 +1,6 @@
 信息技术（IT）与运营技术（OT）的融合是指将原本独立的企业网络和计算系统与工业控制系统和设备相互连接，从而形成一个统一互联的生态系统。在选择 IT 与 OT 融合的协议时，需要综合考虑多种因素，包括具体的行业需求、现有的基础设施、安全性以及可扩展性等。
 
-OPC UA 和 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 是 IT 与 OT 融合场景中常用的协议。随着这两种技术的不断发展， OPC UA over MQTT 作为将两者有机结合的新协议，为行业带来了更多的优势。本文将详细介绍 OPC UA over MQTT，并探讨它在推动 IT 和 OT 融合方面的潜力。
+[OPC UA](https://www.emqx.com/zh/blog/opc-ua-protocol) 和 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 是 IT 与 OT 融合场景中常用的协议。随着这两种技术的不断发展， OPC UA over MQTT 作为将两者有机结合的新协议，为行业带来了更多的优势。本文将详细介绍 OPC UA over MQTT，并探讨它在推动 IT 和 OT 融合方面的潜力。
 
 ## OPC UA over MQTT 的起源
 
@@ -107,7 +107,7 @@ NetworkMessage 解码后得到的 DataSetMessage 会被定向到对应的 DataSe
 
 ## 适用于 IT 和 OT 组织的成熟协议
 
-OPC UA over MQTT 是一个成熟的协议，已经在各个领域得到了广泛的应用和认可。它常被应用于监控和数据采集系统（SCADA）、制造执行系统（MES）、工业物联网解决方案等。许多工业自动化供应商，如西门子、倍福和库卡，都在其产品（从可编程逻辑控制器、传感器到软件平台）中提供了对 OPC UA over MQTT 的支持。这种广泛的支持体现了该协议的成熟度。
+OPC UA over MQTT 是一个成熟的协议，已经在各个领域得到了广泛的应用和认可。它常被应用于监控和数据采集系统（SCADA）、制造执行系统（MES）、[工业物联网](https://www.emqx.com/zh/blog/iiot-explained-examples-technologies-benefits-and-challenges)解决方案等。许多工业自动化供应商，如西门子、倍福和库卡，都在其产品（从可编程逻辑控制器、传感器到软件平台）中提供了对 OPC UA over MQTT 的支持。这种广泛的支持体现了该协议的成熟度。
 
 OPC UA over MQTT 协议不仅适用于物联网部署，还适用于云端应用。许多云服务提供商（如 AWS、Azure 和 GCP）都支持该协议，使得物联网数据可以轻松地集成到云端服务中，进行存储、分析和可视化。通过 OPC UA over MQTT 协议，OPC UA 的能力可以从云端延伸到边缘设备，并实现与工业物联网生态系统的无缝对接。
 

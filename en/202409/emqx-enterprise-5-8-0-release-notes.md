@@ -1,4 +1,4 @@
-EMQX Enterprise 5.8.0 is now officially available!
+[EMQX Enterprise](https://www.emqx.com/en/products/emqx) 5.8.0 is now officially available!
 
 This update introduces a powerful cluster linking feature, enhancing disaster recovery capabilities to ensure seamless global business operation. Additionally, it includes new message transformation capabilities and support for multiple data integrations, offering users greater flexibility in building IoT applications with EMQX Enterprise. The release also comes with several security enhancements.
 
@@ -37,9 +37,9 @@ This release expands data integration with the following systems:
 
 - **Azure Blob Storage**: A data storage service from Microsoft Azure, similar to AWS S3, for storing large-scale structured and unstructured data.
 - **Couchbase**: A distributed document database with powerful search and analytics capabilities, supporting fast and efficient bi-directional data synchronization between edge and cloud environments.
-- **Datalayers**: An edge-cloud collaborative, multimodal distributed database optimized for industries such as Industrial IoT, IoV, and Energy. It supports time series storage, key-value storage, and provides comprehensive solutions for data storage, computation, and analysis.
+- **Datalayers**: An edge-cloud collaborative, multimodal distributed database optimized for industries such as [Industrial IoT](https://www.emqx.com/en/blog/industrial-iot-systems), IoV, and Energy. It supports time series storage, key-value storage, and provides comprehensive solutions for data storage, computation, and analysis.
 
-Additionally, version 5.8.0 adds support for using `client_attrs` (client attributes) within the rule engine. These attributes, set by developers based on specific application needs, can now be leveraged in various EMQX Enterprise features including authentication, authorization, MQTT extensions, and rule engine.
+Additionally, version 5.8.0 adds support for using `client_attrs` (client attributes) within the rule engine. These attributes, set by developers based on specific application needs, can now be leveraged in various EMQX Enterprise features including authentication, authorization, [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) extensions, and rule engine.
 
 ## Hot Upgrades
 

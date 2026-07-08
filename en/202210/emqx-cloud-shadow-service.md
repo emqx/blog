@@ -106,7 +106,7 @@ Click the ID in the shadow model list to enter the shadow model details page. On
 
 ![shadow model details page](https://assets.emqx.com/images/9dc1e5451df2defa17eaf0a49cdcae7b.png)
  
-With the out-of-the-box shadow services, data caching requirements of different business scenarios in various industries can be met. The integration capabilities of MQTT device access and message caching provided by the shadow service will provide impetus for accelerating the development of IoT platforms and applications.
+With the out-of-the-box shadow services, data caching requirements of different business scenarios in various industries can be met. The integration capabilities of [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) device access and message caching provided by the shadow service will provide impetus for accelerating the development of IoT platforms and applications.
 
 
 

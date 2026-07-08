@@ -57,7 +57,7 @@ SELECT lag(StatusDesc) as status, StartTime - lag(StartTime) OVER (WHEN had_chan
 
 ## 连接生态
 
-eKuiper 可以处理二进制图像数据，但是此前的测试中，图像都是经由 MQTT、HTTP 等偏向文本数据传输的协议来发送。新版本提供了视频流源，增加了一种新的二进制数据源。同时，我们也继续适配新版本的 EdgeX。
+eKuiper 可以处理二进制图像数据，但是此前的测试中，图像都是经由 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt)、HTTP 等偏向文本数据传输的协议来发送。新版本提供了视频流源，增加了一种新的二进制数据源。同时，我们也继续适配新版本的 EdgeX。
 
 ### 视频流源
 

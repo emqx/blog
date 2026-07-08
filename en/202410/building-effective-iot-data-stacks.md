@@ -8,7 +8,7 @@ As IoT continues to grow, so does the complexity of managing the data it generat
 
 - **Smart environments (factories, homes, buildings)**: These involve various types of devices in one location. The challenge is to merge data from different sources to create valuable insights.
 - **Distributed networks (electrical grids, solar farms, wind farms)**: Devices of the same type are spread over large areas, all monitoring specific conditions remotely.
-- **Autonomous devices (connected cars, drones, robots)**: These devices are designed to operate independently but still require oversight and sometimes remote control.
+- **Autonomous devices ([connected cars](https://www.emqx.com/en/blog/connected-cars-and-automotive-connectivity-all-you-need-to-know), drones, robots)**: These devices are designed to operate independently but still require oversight and sometimes remote control.
 
 ## The Must-Have Qualities of an Ideal IoT Data Stack
 
@@ -22,20 +22,20 @@ Now, let’s dive into the different layers that make up an IoT system.
 
 ## Data Connectivity: The Foundation of IoT Systems
 
-Data connectivity is the essential first step for IoT scenarios such as smart factories, homes, buildings, and distributed device networks. Before establishing this connection, it’s crucial to consider several key factors that will shape the technology and products you choose.
+Data connectivity is the essential first step for IoT scenarios such as [smart factories](https://www.emqx.com/en/blog/what-is-a-smart-factory-key-components-4-levels-of-evolution), homes, buildings, and distributed device networks. Before establishing this connection, it’s crucial to consider several key factors that will shape the technology and products you choose.
 
 **Network Capability**
 The first priority is ensuring that your endpoint devices and backend message servers can successfully establish communication. To do this, you’ll need to verify compatibility between the network protocols and ensure that encryption capabilities (like SSL support) are aligned between your devices and servers.
 
 **Messaging Protocol**
-How will messages be sent and received between endpoints and servers? While you could develop custom messaging behaviors, most businesses rely on established industrial standards. The most widely adopted messaging protocol in IoT is **MQTT** (Message Queuing Telemetry Transport), which operates using a publish/subscribe model. Its robust software ecosystem makes it a preferred choice, so selecting devices that support MQTT is highly recommended.
+How will messages be sent and received between endpoints and servers? While you could develop custom messaging behaviors, most businesses rely on established industrial standards. The most widely adopted messaging protocol in IoT is **[MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt)** (Message Queuing Telemetry Transport), which operates using a publish/subscribe model. Its robust software ecosystem makes it a preferred choice, so selecting devices that support MQTT is highly recommended.
 
 > Explore the world of MQTT through this comprehensive guide: [MQTT Guide 2024: Beginner to Advanced](https://www.emqx.com/en/mqtt-guide)
 
 **Data Protocol**
 In MQTT messages, you can transmit data in various formats. Although custom data protocols may be developed to minimize network traffic, they are typically harder to maintain and evolve over time. Using a widely accepted format like **JSON** ensures better flexibility and easier programming.
 
-If you’re working on an industrial IoT (IIoT) project, you might encounter **OPC UA** standards, which are gaining popularity among major vendors. However, you’ll still need to manage non-OPC UA devices, legacy equipment from different vendors, and even multimedia devices like cameras. In such cases, using an **edge gateway** becomes critical for integrating these diverse systems.
+If you’re working on an [industrial IoT](https://www.emqx.com/en/blog/industrial-iot-systems) ([IIoT](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges)) project, you might encounter **[OPC UA](https://www.emqx.com/en/blog/opc-ua-protocol)** standards, which are gaining popularity among major vendors. However, you’ll still need to manage non-OPC UA devices, legacy equipment from different vendors, and even multimedia devices like cameras. In such cases, using an **edge gateway** becomes critical for integrating these diverse systems.
 
 ## The Edge Gateway: A Key Component for IoT Integration
 

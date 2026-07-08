@@ -2,7 +2,7 @@
 
 The rapid evolution of IoT and the increasing complexity of data management require more efficient and reliable methods of managing data. MongoDB, a high-performing NoSQL database, is widely adopted in IoT applications due to its flexible data model and high scalability. Pairing it with the [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) (Message Queuing Telemetry Transport) protocol, which can handle numerous connections while ensuring low bandwidth and latency, is crucial to the optimization of IoT applications.
 
-This post will elaborate on the benefits and key use cases of MongoDB with MQTT in IoT scenarios. We will also provide a demonstration of integrating MQTT data into a MongoDB database to give readers a better understanding of how to implement this process.
+This post will elaborate on the benefits and key use cases of MongoDB with [MQTT in IoT](https://www.emqx.com/en/blog/what-is-the-mqtt-protocol) scenarios. We will also provide a demonstration of integrating MQTT data into a MongoDB database to give readers a better understanding of how to implement this process.
 
 ## What is MongoDB?
 

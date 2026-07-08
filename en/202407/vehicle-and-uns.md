@@ -16,7 +16,7 @@ The rise of the data-driven paradigm and connected vehicles has positioned softw
 
    ![Interoperability Standards](https://assets.emqx.com/images/0329e121e11fb9069859d635c56aea36.png)
 
-A similar paradigm shift is occurring in the industrial manufacturing sector, where the integration of Information Technology (IT) and Operational Technology (OT) has unified previously isolated systems, such as MES, ERP, and PLM, into a single dataspace. This unification promotes interoperability, scalability, and simplified data integration. The Unified Namespace (UNS) has emerged as a response to this trend, establishing a foundation for smart manufacturing.
+A similar paradigm shift is occurring in the industrial manufacturing sector, where the integration of Information Technology (IT) and Operational Technology (OT) has unified previously isolated systems, such as MES, ERP, and PLM, into a single dataspace. This unification promotes interoperability, scalability, and simplified data integration. The Unified Namespace (UNS) has emerged as a response to this trend, establishing a foundation for [smart manufacturing](https://www.emqx.com/en/blog/the-smart-manufacturing-revolution).
 
 > Learn more: [Unified Namespace (UNS): Introduction and Its Applications in IIoT](https://www.emqx.com/en/blog/unified-namespace-next-generation-data-fabric-for-iiot) 
 

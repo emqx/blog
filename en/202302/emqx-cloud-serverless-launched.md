@@ -1,4 +1,4 @@
-EMQ now officially launches its serverless MQTT service, the EMQX Cloud Serverless (Beta). Based on the innovative multi-tenant technology, EMQX Cloud Serverless provides users with the blazing-fast deployment of MQTT services in just 5 seconds **without concerns about server infrastructure management or resource allocation when service scales**.
+EMQ now officially launches its [serverless MQTT](https://www.emqx.com/en/cloud/serverless-mqtt) service, the [EMQX Cloud](https://www.emqx.com/en/cloud) Serverless (Beta). Based on the innovative multi-tenant technology, EMQX Cloud Serverless provides users with the blazing-fast deployment of [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) services in just 5 seconds **without concerns about server infrastructure management or resource allocation when service scales**.
 
 <video controls width="760px">
     <source src="https://cdn.emqx.com/video/emqx-cloud-serverless-launched-en.mp4" type="video/mp4">
@@ -50,7 +50,7 @@ The Serverless Beta version is completely free until March 31, 2023. After that,
 
 ![MQTT Serverless Pricing](https://assets.emqx.com/images/ad17a74ed8a96ac3166bf1d97f90c9b9.png)
 
-With just one click of the "Deploy" button, the Serverless version will be deployed in a matter of about 5 seconds, providing you with a fully functional MQTT server instantly.
+With just one click of the "Deploy" button, the Serverless version will be deployed in a matter of about 5 seconds, providing you with a fully functional [MQTT server](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) instantly.
 
 The Deployment Overview page displays real-time information on the current number of connections, upstream and downstream TPS, time and traffic usage, as well as the IP address and port number.
 

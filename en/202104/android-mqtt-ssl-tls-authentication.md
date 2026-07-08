@@ -1,6 +1,6 @@
 [MQTT](https://en.wikipedia.org/wiki/MQTT) is a lightweight, flexible IoT message exchange and data transfer protocol that aims to balance flexibility with hardware/network resources for IoT developers. In order to ensure secure communication, TLS/SSL is often used for communication encryption.
 
-This article mainly introduces how to perform TLS/SSL one-way and two-way authentication via Android and MQTT.
+This article mainly introduces how to perform TLS/SSL one-way and two-way authentication via Android and [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt).
 
 ### Preparation
 

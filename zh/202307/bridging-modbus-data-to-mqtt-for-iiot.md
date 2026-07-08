@@ -270,7 +270,7 @@ $ docker run -d --name neuron -p 7000:7000 --privileged=true --restart=always em
 结合 [Neuron](https://github.com/emqx/neuron) 和 [EMQX](https://www.emqx.com/zh/products/emqx)、[eKuiper](https://ekuiper.org/zh)、[EMQX-ECP](https://www.emqx.cn/products/emqx-ecp) 等其他 EMQ 产品的整体解决方案可以为石油行业带来以下好处：
 
 - 轻前端、重后端的系统架构，降低现场设备与系统运维成本。
-- 基于物联网协议作为数据采集与传输的主要方式，实现了生产数据低时延实时上报，提高业务响应能力。
+- 基于[物联网协议](https://www.emqx.com/zh/blog/iot-protocols-mqtt-coap-lwm2m)作为数据采集与传输的主要方式，实现了生产数据低时延实时上报，提高业务响应能力。
 - 解决海量异构设备与系统的实时数据统一汇聚，实现了各类型生产与监控设备数据统一汇聚存储，使数据资产有效整合。
 - 通过统一接入平台以及平台提供的丰富数据接口，实现数据采集与数据消费系统的解偶，使应用开发更加便捷高效。
 

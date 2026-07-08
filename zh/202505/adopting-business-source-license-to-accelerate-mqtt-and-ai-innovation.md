@@ -2,14 +2,14 @@ EMQX 迎来了发展历程中的重要转折点！
 
 我们很高兴地宣布：自 5.9 版本起，EMQX 社区版与企业版将统一为功能完整的 **EMQX Platform**，并采用商业源码许可证 (Business Source License，BSL) 1.1。
 
-这一战略调整源于我们对 MQTT 与 AI 融合创新的坚定承诺。我们相信，MQTT 将成为连接物理世界与人工智能的"神经系统"，而此次变革将助力 EMQX 引领这一未来。
+这一战略调整源于我们对 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 与 AI 融合创新的坚定承诺。我们相信，MQTT 将成为连接物理世界与人工智能的"神经系统"，而此次变革将助力 EMQX 引领这一未来。
 
 ## 回顾：双版本服务全球用户
 
 多年来，EMQX 一直采用双许可证模式，提供两个独立版本：
 
 - **EMQX 社区版（EMQX Community**）：采用 Apache 2.0 开源许可，是全球开发者广泛使用的开源 MQTT 消息服务器
-- **EMQX 企业版（EMQX Enterprise**）：在社区版基础上提供增强功能，包括高级数据处理、50+ 数据集成、企业级安全特性（单点登录 SSO、基于角色的访问控制 RBAC 等）、高级集群管理和专业技术支持。
+- **EMQX 企业版（[EMQX Enterprise](https://www.emqx.com/zh/products/emqx)**）：在社区版基础上提供增强功能，包括高级数据处理、50+ 数据集成、企业级安全特性（单点登录 SSO、基于角色的访问控制 RBAC 等）、高级集群管理和专业技术支持。
 
 ## 变革：加速创新与生态共赢
 

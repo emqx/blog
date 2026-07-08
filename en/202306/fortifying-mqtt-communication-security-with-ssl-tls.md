@@ -1,6 +1,6 @@
 ## Introduction
 
-In our [previous articles](https://www.emqx.com/en/blog/category/security), we explored authentication and access control mechanisms. Now, it's time to shine a light on the crucial role of Transport Layer Security (TLS) in fortifying MQTT communication. This blog post will focus specifically on TLS and its ability to ensure the integrity, confidentiality, and authenticity of MQTT communication.
+In our [previous articles](https://www.emqx.com/en/blog/category/security), we explored authentication and access control mechanisms. Now, it's time to shine a light on the crucial role of Transport Layer Security (TLS) in fortifying [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) communication. This blog post will focus specifically on TLS and its ability to ensure the integrity, confidentiality, and authenticity of MQTT communication.
 
 ## Concepts Explained
 

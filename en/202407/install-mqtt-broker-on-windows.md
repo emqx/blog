@@ -1,6 +1,6 @@
 ## Introduction
 
-[MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) is a lightweight messaging protocol that operates on a publish/subscribe model. It's designed to deliver messages reliably and efficiently for IoT devices with minimal code and bandwidth requirements. Over the years, MQTT has become extensively utilized across various sectors, including resource extraction, industrial production, mobile communications, and connected vehicles, establishing itself as the de facto standard for IoT communication protocols.
+[MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) is a lightweight messaging protocol that operates on a publish/subscribe model. It's designed to deliver messages reliably and efficiently for IoT devices with minimal code and bandwidth requirements. Over the years, MQTT has become extensively utilized across various sectors, including resource extraction, industrial production, mobile communications, and connected vehicles, establishing itself as the de facto standard for [IoT communication protocols](https://www.emqx.com/en/blog/iot-protocols-mqtt-coap-lwm2m).
 
 Many MQTT service implementations favor the Linux environment due to its stability, reliability, and cost-effectiveness, alongside a comprehensive open-source ecosystem. However, the availability of MQTT services on Windows is comparatively limited. [NanoMQ](https://nanomq.io/), an ultra-lightweight MQTT message broker tailored for IoT edge computing, offers exceptional performance and cost-effectiveness, suitable for a wide range of edge computing platforms. With robust cross-platform capabilities, NanoMQ is applicable to both Linux and Windows systems, providing a novel alternative for MQTT services on Windows.
 
@@ -36,7 +36,7 @@ Launch NanoMQ with `nanomq start --conf C:\nanomq\config\nanomq.conf`. The path 
 
 ![nanomq start](https://assets.emqx.com/images/9bdac520e172e32cc866891a0626cfe8.png)
 
-Next, explore NanoMQ’s functionality using the MQTT client tool nanomq_cli, which is located in the bin directory.
+Next, explore NanoMQ’s functionality using the [MQTT client](https://www.emqx.com/en/blog/mqtt-client-tools) tool nanomq_cli, which is located in the bin directory.
 
 ![nanomq_cli sub](https://assets.emqx.com/images/9ab0902bfbb7f7e12ddd5cd344533a60.png)
 

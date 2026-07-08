@@ -6,7 +6,7 @@ We are excited to announce that [EMQX Cloud BYOC](https://www.emqx.com/en/cloud/
 
 ## What is EMQX Cloud BYOC?
 
-EMQX Cloud BYOC empowers enterprises to deploy their EMQX MQTT clusters in their own AWS accounts while entrusting EMQX to handle the management. This means all your data will be securely stored in your AWS data center, catering to the growing demand for data privacy and compliance in modern business scenarios. With EMQX's in-depth knowledge and expertise in MQTT services, businesses can unlock the full potential of their EMQX MQTT servers, streamlining their IoT infrastructure for optimal performance.
+[EMQX Cloud](https://www.emqx.com/en/cloud) BYOC empowers enterprises to deploy their EMQX MQTT clusters in their own AWS accounts while entrusting EMQX to handle the management. This means all your data will be securely stored in your AWS data center, catering to the growing demand for data privacy and compliance in modern business scenarios. With EMQX's in-depth knowledge and expertise in MQTT services, businesses can unlock the full potential of their EMQX MQTT servers, streamlining their IoT infrastructure for optimal performance.
 
 ## Seamless Integration with AWS
 

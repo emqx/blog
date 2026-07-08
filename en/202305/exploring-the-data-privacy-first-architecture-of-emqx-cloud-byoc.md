@@ -1,10 +1,10 @@
 With the exponential growth of the Internet of Things (IoT), ensuring data privacy and security has become more crucial than ever. The need for a secure, scalable, and reliable IoT infrastructure has become paramount.
 
-EMQ recently launched [EMQX Cloud BYOC](https://www.emqx.com/en/cloud/byoc) edition with a privacy-first architecture, providing an ideal solution that addresses these concerns. Users can deploy MQTT clusters in their own cloud environment while completely controlling data privacy and security.
+EMQ recently launched [EMQX Cloud BYOC](https://www.emqx.com/en/cloud/byoc) edition with a privacy-first architecture, providing an ideal solution that addresses these concerns. Users can deploy [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) clusters in their own cloud environment while completely controlling data privacy and security.
 
 > Learn more about BYOC: [Exploring BYOC: Taking Your MQTT Cloud Service to the Next Level](https://www.emqx.com/en/blog/exploring-byoc-taking-your-mqtt-cloud-service-to-the-next-level) 
 
-In this blog, we will dive into the architecture of EMQX Cloud BYOC and explore how it can secure your IoT infrastructure.
+In this blog, we will dive into the architecture of [EMQX Cloud](https://www.emqx.com/en/cloud) BYOC and explore how it can secure your IoT infrastructure.
 
 ## EMQX Cloud BYOC Overall Architecture
 

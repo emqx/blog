@@ -1,6 +1,6 @@
 ## Introduction to the LwM2M Protocol
 
-Lightweight M2M (LwM2M) is a lightweight IoT device management protocol developed by the Open Mobile Alliance (OMA). It is based on the Constrained Application Protocol (CoAP) and designed specifically for resource-constrained IoT devices, such as sensors and smart meters. These devices are typically battery-powered and have limited CPU, memory, and network resources.
+Lightweight M2M (LwM2M) is a lightweight IoT device management protocol developed by the Open Mobile Alliance (OMA). It is based on the [Constrained Application Protocol](https://www.emqx.com/en/blog/coap-protocol) (CoAP) and designed specifically for resource-constrained IoT devices, such as sensors and smart meters. These devices are typically battery-powered and have limited CPU, memory, and network resources.
 
 ### Protocol Stack Structure
 
@@ -49,14 +49,14 @@ The LwM2M protocol supports various operations on objects and resources, includi
 
 - **Smart Cities:** Managing streetlights, traffic sensors, and environmental monitoring devices.
 - **Transportation:** Vehicle tracking, fleet management, and vehicle health monitoring.
-- **Industrial IoT:** Monitoring and managing factory machinery, sensors, and actuators.
+- **[Industrial IoT](https://www.emqx.com/en/blog/industrial-iot-systems):** Monitoring and managing factory machinery, sensors, and actuators.
 - **Smart Agriculture:** Remote management of soil sensors, weather stations, and irrigation systems.
-- **Smart Manufacturing:** Enhancing production line efficiency and predictive maintenance.
+- **[Smart Manufacturing](https://www.emqx.com/en/blog/the-smart-manufacturing-revolution):** Enhancing production line efficiency and predictive maintenance.
 - **Healthcare:** Managing wearable health monitors and medical devices.
 
 ## Integrating LwM2M Protocol with EMQX
 
-EMQX is a scalable and feature-rich MQTT message broker designed for IoT and real-time communication applications. In addition to full [MQTT protocol](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) support, EMQX manages non-MQTT protocols like STOMP, MQTT-SN, CoAP, and LwM2M via gateways.
+EMQX is a scalable and feature-rich MQTT message broker designed for IoT and real-time communication applications. In addition to full [MQTT protocol](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) support, EMQX manages non-MQTT protocols like STOMP, [MQTT-SN](https://www.emqx.com/en/blog/connecting-mqtt-sn-devices-using-emqx), CoAP, and LwM2M via gateways.
 
 EMQX features a powerful built-in LwM2M gateway that efficiently connects various LwM2M devices. It supports UDP and DTLS connections, ensuring secure and stable device communication. With the EMQX Dashboard, users can easily manage devices. The LwM2M gateway also excels in message conversion, enabling seamless translation between LwM2M messages and JSON-formatted MQTT messages. This facilitates structured data parsing and analysis while enabling flexible device control through JSON messages. The bidirectional conversion enhances EMQX's capabilities in IoT device management and data interaction, providing strong support for complex IoT applications.
 

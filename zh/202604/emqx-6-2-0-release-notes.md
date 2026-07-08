@@ -1,6 +1,6 @@
 EMQX 6.2 现已正式发布！
 
-新版本在 MQTT 之上原生支持 A2A 协议，让 AI 智能体无需任何额外基础设施，即可直接通过 Broker 完成注册、发现和协作。
+新版本在 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 之上原生支持 A2A 协议，让 AI 智能体无需任何额外基础设施，即可直接通过 Broker 完成注册、发现和协作。
 
 与此同时，EMQX 6.2 在 MQTT 5.0 发布/订阅模型的基础上，增加了订阅层面的消息过滤能力；新增动态 Keep Alive 管理能力，专为大规模设备集群设计；新增与 Azure Event Grid 和 QuasarDB 的数据集成；通过工作负载身份联合（Workload Identity Federation）进一步强化了 GCP 连接器的安全性。
 
@@ -8,7 +8,7 @@ EMQX 6.2 现已正式发布！
 
 ## 基于 MQTT 的 A2A 协议：实时智能体发现与协作
 
-本次版本的核心特性是 A2A 注册表（Registry），这是一套直接内置于 MQTT Broker 的标准化智能体发现系统。
+本次版本的核心特性是 A2A 注册表（Registry），这是一套直接内置于 [MQTT Broker](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison) 的标准化智能体发现系统。
 
 标准的 A2A 协议以 HTTP 作为传输层，在云端环境中运行良好，却难以适配资源受限的边缘设备，而这恰恰是 MQTT 的强项。EMQX 6.2 引入了 **A2A over MQTT**，一种 Broker 中立的传输扩展方案，无需额外基础设施，即可将符合 A2A 规范的智能体发现与协作能力延伸至边缘场景。
 
@@ -71,7 +71,7 @@ EMQX 6.2 新增两个集成目标，并增强了现有 GCP 连接器的安全性
 
 ### 新增集成
 
-[**Azure Event Grid**](https://docs.emqx.com/zh/emqx/latest/data-integration/azure-event-grid.html)：实现 EMQX 与 Azure 全托管事件路由服务之间的双向 MQTT 桥接。EMQX 以 MQTT 客户端身份接入，通过 TLS 和客户端证书认证建立连接，支持 Sink 与 Source 双向数据流。数据进入 Azure Event Grid 后，可自然流转至 Azure Functions、Event Hubs、Storage 等 Azure 服务。
+[**Azure Event Grid**](https://docs.emqx.com/zh/emqx/latest/data-integration/azure-event-grid.html)：实现 EMQX 与 Azure 全托管事件路由服务之间的双向 MQTT 桥接。EMQX 以 [MQTT 客户端](https://www.emqx.com/zh/blog/mqtt-client-tools)身份接入，通过 TLS 和客户端证书认证建立连接，支持 Sink 与 Source 双向数据流。数据进入 Azure Event Grid 后，可自然流转至 Azure Functions、Event Hubs、Storage 等 Azure 服务。
 
 [**QuasarDB**](https://docs.emqx.com/zh/emqx/latest/data-integration/quasardb.html)：将 MQTT 数据直接写入 QuasarDB——一款高性能列式时序数据库。消息经由规则引擎通过 ODBC 批量写入 QuasarDB，非常适合需要在大时间窗口上进行快速范围查询的高频工业遥测场景。
 

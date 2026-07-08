@@ -61,7 +61,7 @@ EMQX Neuron 支持包括 Modbus、OPC 等在内的各类工业协议，可以基
 | **Modbus RTU**                                               | RS485    | Avail      |
 | **Modbus RTU over TCP**                                      | Ethernet | Avail      |
 | **Modbus TCP**                                               | Ethernet | Avail      |
-| **OPC UA**                                                   | Ethernet | Avail      |
+| **[OPC UA](https://www.emqx.com/zh/blog/opc-ua-protocol)**                                                   | Ethernet | Avail      |
 | **BACnet/MSTP**                                              | RS485    | 2020       |
 | **BACnet/IP**                                                | Ethernet | 2020       |
 | **IEC 60870-5 (IEC104)**                                     | Ethernet | 2020       |
@@ -84,8 +84,8 @@ EMQX Neuron 支持包括 Modbus、OPC 等在内的各类工业协议，可以基
 | ----------------------- | ----- | -------------------- | ------------------- |
 | PeakHMI Slave Simulator | /     | Modbus 模拟器        | Windows Server 2019 |
 | EMQX Neuron            | 1.4.6 | 工业协议网关接入软件 | Ubuntu 16.04        |
-| EMQX Broker            | 4.0.7 | MQTT Broker          | Ubuntu 16.04        |
-| MQTTX                  | 1.3.2 | MQTT 客户端工具      | macOS 10.13.4       |
+| EMQX Broker            | 4.0.7 | [MQTT Broker](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison)          | Ubuntu 16.04        |
+| MQTTX                  | 1.3.2 | [MQTT 客户端](https://www.emqx.com/zh/blog/mqtt-client-tools)工具      | macOS 10.13.4       |
 
 
 

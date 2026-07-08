@@ -14,7 +14,7 @@
 
 **IEC 60870-5-103**：新增 IEC 60870-5-103 南向驱动，IEC 60870-5-103 是一套用于电力系统自动化的通讯协议的标准，定义了保护装置和控制装置间的数据交换标准。[IEC60870-5-103 | NeuronEX 文档](https://docs.emqx.com/zh/neuronex/latest/configuration/south-devices/iec-103/iec-103.html) 
 
-**AWS IoT** ：新增 AWS IoT Core 北向应用，为工业设备通过 MQTT 连接到 AWS 云提供了安全的双向数据通道。[AWS IoT Core | NeuronEX 文档](https://docs.emqx.com/zh/neuronex/latest/configuration/north-apps/aws-iot/overview.html) 
+**AWS IoT** ：新增 AWS IoT Core 北向应用，为工业设备通过 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 连接到 AWS 云提供了安全的双向数据通道。[AWS IoT Core | NeuronEX 文档](https://docs.emqx.com/zh/neuronex/latest/configuration/north-apps/aws-iot/overview.html) 
 
 **Azure IoT**：新增 Azure IoT Hub 北向应用，提供对 Azure IoT Hub 的便捷接入。[Azure IoT | NeuronEX 文档](https://docs.emqx.com/zh/neuronex/latest/configuration/north-apps/azure-iot/overview.html) 
 

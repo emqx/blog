@@ -31,6 +31,6 @@ eKuiper provides a rich set of sources and sinks to access and send results to e
 
 ## Upcoming features
 
-- sink dynamic parameter support, e.g., MQTT sink can set the topic to a field value in the result so that the data received can be sent to a dynamic topic
+- sink dynamic parameter support, e.g., [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) sink can set the topic to a field value in the result so that the data received can be sent to a dynamic topic
 - Authentication support: user-configurable JWT-based authentication for REST API
 - UI adaptation

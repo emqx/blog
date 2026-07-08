@@ -1,15 +1,15 @@
 ## Introduction
 
-[MQTT connections rebalancing](https://docs.emqx.com/en/enterprise/v4.4/advanced/rebalancing.html#motivation) is a feature of EMQX that migrates client connections and sessions from overloaded nodes to less loaded ones to achieve load balancing. It automatically calculates the necessary number of connections to be migrated and migrates them accordingly. This process is typically performed after a new node joins or restarts to ensure balance. EMQX will migrate MQTT client connections along with [MQTT sessions](https://www.emqx.com/en/blog/mqtt-session) to avoid session loss.
+[MQTT connections rebalancing](https://docs.emqx.com/en/enterprise/v4.4/advanced/rebalancing.html#motivation) is a feature of EMQX that migrates client connections and sessions from overloaded nodes to less loaded ones to achieve load balancing. It automatically calculates the necessary number of connections to be migrated and migrates them accordingly. This process is typically performed after a new node joins or restarts to ensure balance. EMQX will migrate [MQTT client](https://www.emqx.com/en/blog/mqtt-client-tools) connections along with [MQTT sessions](https://www.emqx.com/en/blog/mqtt-session) to avoid session loss.
 
-MQTT connections rebalancing mainly has the following two benefits:
+[MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) connections rebalancing mainly has the following two benefits:
 
 - **Improve system scalability**: In MQTT connections, when expanding a cluster, the TCP/IP-based connections from old nodes don't automatically migrate to new nodes. Rebalancing can help to distribute the load from the old nodes to the new ones and achieve a more balanced cluster. This improves the overall cluster performance in terms of throughput, response speed, and resource utilization, making the system scale better. 
 - **Reduce operation and maintenance costs**: Through rebalancing, the load of nodes can be automatically adjusted without additional operation and maintenance.
 
 > The cluster load rebalancing is only available after EMQX Enterprise  4.4.12.
 >
-> Learn more about the world’s most scalable MQTT broker: [EMQX Enterprise: Enterprise MQTT Platform At Scale](https://www.emqx.com/en/products/emqx) 
+> Learn more about the world’s most scalable [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison): [EMQX Enterprise: Enterprise MQTT Platform At Scale](https://www.emqx.com/en/products/emqx) 
 
 In this blog, we will introduce how to enable the [MQTT connections](https://www.emqx.com/en/blog/how-to-set-parameters-when-establishing-an-mqtt-connection) rebalancing feature of EMQX on Kubernetes.
 

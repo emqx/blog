@@ -14,9 +14,9 @@
 
 ## 破局思路：MQTT + UNS
 
-面对工业数据集成痛点，Tier0 提出方案：以 MQTT 协议为基础，摒弃传统点对点集成模式，升级为基于统一命名空间（UNS）的共享数据架构，从底层打通数据孤岛、打破集成壁垒。
+面对工业数据集成痛点，Tier0 提出方案：以 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 协议为基础，摒弃传统点对点集成模式，升级为基于统一命名空间（UNS）的共享数据架构，从底层打通数据孤岛、打破集成壁垒。
 
-MQTT 并非新兴协议，凭借轻量级发布 - 订阅模式，它广泛适用于资源受限的工业设备，以及低带宽、高延迟、网络不稳定的工业网络，是工业物联网场景的主流通信协议。
+MQTT 并非新兴协议，凭借轻量级发布 - 订阅模式，它广泛适用于资源受限的工业设备，以及低带宽、高延迟、网络不稳定的工业网络，是[工业物联网](https://www.emqx.com/zh/blog/iiot-explained-examples-technologies-benefits-and-challenges)场景的主流通信协议。
 
 UNS 也并非复杂技术，而是社区驱动的标准，是工业领域实践 MQTT 的核心方法论。它将工厂内设备运行数据、业务流转数据，以及与人、物理资产、软件相关的全量生产数据，统一纳入 MQTT 的 topic 树形结构，实现工厂全域数据的统一管理与交互。
 
@@ -46,7 +46,7 @@ UNS 也并非复杂技术，而是社区驱动的标准，是工业领域实践 
 
 - **面向未来架构，AI 就绪**
 
-  EMQX 将消息队列等功能加入 MQTT Broker，**为 AI Agent 打造实时消息基础设施**，无需进行多平台数据编排，大幅降低工业 AI 应用的开发复杂度，完美适配工业 AI、智能体的规模化落地需求。 
+  EMQX 将消息队列等功能加入 [MQTT Broker](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison)，**为 AI Agent 打造实时消息基础设施**，无需进行多平台数据编排，大幅降低工业 AI 应用的开发复杂度，完美适配工业 AI、智能体的规模化落地需求。 
 
 ### **EMQX + Tier0：工业数智化能力升级**
 

@@ -1,6 +1,6 @@
 ## 引言
 
-在物联网领域，存在大量资源受限的传感器和工业控制设备运行在低带宽且不稳定的网络环境中，这使得 MQTT 成为物联网场景下理想的消息传输协议。因此，MQTT Broker 必须保证优异的性能和高度的可靠性，以满足物联网应用的要求。
+在物联网领域，存在大量资源受限的传感器和工业控制设备运行在低带宽且不稳定的网络环境中，这使得 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 成为物联网场景下理想的消息传输协议。因此，[MQTT Broker](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison) 必须保证优异的性能和高度的可靠性，以满足物联网应用的要求。
 
 在进行系统测试之前，了解基本的测试场景和性能指标至关重要。在本文中，我们将根据 EMQX 团队的测试经验提供一份详尽的说明，它也同样适用于其他 MQTT Broker 测试。
 

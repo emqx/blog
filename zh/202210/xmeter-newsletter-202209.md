@@ -13,7 +13,7 @@
 
 专业版旨在向用户提供更优质的持续性能测试服务。目前正在开发与规划中的新特性包括：
 
-- 不限连接数与吞吐量的大规模 MQTT 测试支持
+- 不限连接数与吞吐量的大规模 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 测试支持
 - 基于不同规格资源包的灵活计费方式
 - 通过 VPC 私有网络发起 MQTT 测试，获取更小时延的同时节省公网流量
 - 更多协议测试场景的支持

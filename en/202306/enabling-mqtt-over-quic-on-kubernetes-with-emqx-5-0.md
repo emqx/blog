@@ -1,6 +1,6 @@
 ## Introduction
 
-[MQTT over QUIC](https://www.emqx.com/en/blog/getting-started-with-mqtt-over-quic-from-scratch), introduced by the world’s leading open-source distributed [MQTT broker, EMQX 5.0](https://github.com/emqx/emqx), combines the advantages of the [MQTT protocol](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) with the characteristics of [QUIC](https://www.emqx.com/en/blog/quic-protocol-the-features-use-cases-and-impact-for-iot-iov). By leveraging QUIC's low connection overhead and multi-path support, MQTT over QUIC offers a promising solution to improve user experience in weak networks and irregular network paths. It can address connection interruptions and slow establishment in IoT scenarios such as connected vehicles operating in challenging environments like mountainous areas or tunnels.
+[MQTT over QUIC](https://www.emqx.com/en/blog/getting-started-with-mqtt-over-quic-from-scratch), introduced by the world’s leading open-source distributed [MQTT broker, EMQX 5.0](https://github.com/emqx/emqx), combines the advantages of the [MQTT protocol](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) with the characteristics of [QUIC](https://www.emqx.com/en/blog/quic-protocol-the-features-use-cases-and-impact-for-iot-iov). By leveraging QUIC's low connection overhead and multi-path support, [MQTT over QUIC](https://www.emqx.com/en/blog/mqtt-over-quic) offers a promising solution to improve user experience in weak networks and irregular network paths. It can address connection interruptions and slow establishment in IoT scenarios such as connected vehicles operating in challenging environments like mountainous areas or tunnels.
 
 With the continuous development of cloud native, more and more users deploy EMQX clusters on Kubernetes to enjoy the rapid creation and convenient management. This article will introduce how to deploy EMQX clusters on Kubernetes and enable MQTT over QUIC.
 
@@ -62,7 +62,7 @@ Before deploying EMQX 5.0 on Kubernetes, make sure the following requirements ar
 
    Or you can follow the [cert-manager installation guide](https://cert-manager.io/docs/installation/) to install it.
 
-2. Install EMQX Operator by Helm.
+2. Install [EMQX Operator](https://www.emqx.com/en/solutions/mqtt-on-kubernetes) by Helm.
 
    ```
    $ helm repo add emqx https://repos.emqx.io/charts
@@ -138,7 +138,7 @@ You can see that the QUIC listener is enabled in the service.
 
 ## Test QUIC With eMQTT-Bench
 
-[eMQTT-Bench](https://github.com/emqx/emqtt-bench) is a lightweight MQTT 5.0 benchmark tool written in Erlang. You can download and install eMQTT-Bench that supports the [QUIC protocol](https://www.emqx.com/en/blog/quic-protocol-the-features-use-cases-and-impact-for-iot-iov) for your platform from [eMQTT-Bench release](https://github.com/emqx/emqtt-bench/releases).
+[eMQTT-Bench](https://github.com/emqx/emqtt-bench) is a lightweight [MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5) benchmark tool written in Erlang. You can download and install eMQTT-Bench that supports the [QUIC protocol](https://www.emqx.com/en/blog/quic-protocol-the-features-use-cases-and-impact-for-iot-iov) for your platform from [eMQTT-Bench release](https://github.com/emqx/emqtt-bench/releases).
 
 1. Use QUIC protocol to initiate a connection and subscribe by specifying `--quic` option. Here 10 clients are used to subscribe to `t/test` topic.
 

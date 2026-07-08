@@ -2,7 +2,7 @@
 
 [Flutter](https://flutter.dev/) is Google’s UI toolkit for building beautiful, natively compiled applications for mobile, web, and desktop from a single codebase. Flutter provides a rich set of components and interfaces, the developer can quickly add native expansion for Flutter. At the same time, Flutter also uses a Native engine to render view. There is no doubt that it can provide a good experience for users.
 
-[MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) is a **lightweight IoT communication protocol** based on the publish/subscribe model. It can enable stable transmission over severely restricted device hardware and high-latency / low-bandwidth network. Because it is simple and easy to implement, supports QoS, and small size packet, it occupies half market of the Internet of Things protocol.
+[MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) is a **lightweight [IoT communication protocol](https://www.emqx.com/en/blog/iot-protocols-mqtt-coap-lwm2m)** based on the publish/subscribe model. It can enable stable transmission over severely restricted device hardware and high-latency / low-bandwidth network. Because it is simple and easy to implement, supports QoS, and small size packet, it occupies half market of the Internet of Things protocol.
 
 This article mainly introduces how to use MQTT in the Flutter project to implement the connection between the client and [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison), subscribe, unsubscribe, send and receive messages, and other functions.
 

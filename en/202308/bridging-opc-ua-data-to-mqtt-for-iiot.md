@@ -2,11 +2,11 @@
 
 In this blog, we will offer a bridging solution from [OPC UA](https://www.emqx.com/en/blog/opc-ua-protocol) to MQTT with Neuron and EMQX.
 
-[Neuron](https://github.com/emqx/neuron) is a modern [industrial IoT](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges) connectivity server that can connect to a wide range of industrial devices using standard or device-proprietary protocols, enabling the interconnection of [industrial IoT platforms](https://www.emqx.com/en/blog/iiot-platform-key-components-and-5-notable-solutions) with massive devices. As a lightweight industrial protocol gateway software, Neuron is designed to operate on various IoT edge hardware devices with limited resources. Its primary goal is to address the challenge of accessing data from data-centric automation equipment in a unified manner, thus offering essential support for smart manufacturing.
+[Neuron](https://github.com/emqx/neuron) is a modern [industrial IoT](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges) connectivity server that can connect to a wide range of industrial devices using standard or device-proprietary protocols, enabling the interconnection of [industrial IoT platforms](https://www.emqx.com/en/blog/iiot-platform-key-components-and-5-notable-solutions) with massive devices. As a lightweight industrial protocol gateway software, Neuron is designed to operate on various IoT edge hardware devices with limited resources. Its primary goal is to address the challenge of accessing data from data-centric automation equipment in a unified manner, thus offering essential support for [smart manufacturing](https://www.emqx.com/en/blog/the-smart-manufacturing-revolution).
 
 [EMQX](https://github.com/emqx/emqx) is a distributed open-source [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison). As the world's most scalable MQTT messaging server, EMQX provides efficient and reliable connectivity to a massive number of IoT devices, enabling high-performance, real-time movement and processing of messages and event streams, helping users rapidly build business-critical IoT platforms and applications.
 
-OPC UA data sources can be captured and aggregated by Neuron's southbound OPC UA driver, converted to the MQTT protocol, and transmitted to the EMQX MQTT Broker. The latter then distributes them to various distributed applications.
+OPC UA data sources can be captured and aggregated by Neuron's southbound OPC UA driver, converted to the [MQTT protocol](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt), and transmitted to the EMQX MQTT Broker. The latter then distributes them to various distributed applications.
 
 We will demonstrate using Neuron to collect data from the Prosys OPC UA Simulation Server, upload the collected data to the locally-built EMQX MQTT Broker (`mqtt://192.168.10.174:1883`), and finally view the changes in the data using the MQTTX subscription topic.
 
@@ -121,7 +121,7 @@ Go to the list of subscription groups and click **Add Subscription**.
 
 - South Device: Drop-down box to select a created southbound device. For example, opcua-195-prosys;
 - Group: Drop-down box to select the group to subscribe to, e.g., group-1;
-- Topic: The MQTT topic, which in this case defaults to /neuron/MQTT/group-1. Next, subscribe to this topic in MQTTX and receive messages.
+- Topic: The [MQTT topic](https://www.emqx.com/en/blog/advanced-features-of-mqtt-topics), which in this case defaults to /neuron/MQTT/group-1. Next, subscribe to this topic in MQTTX and receive messages.
 
 ## View the Data Using MQTTX
 

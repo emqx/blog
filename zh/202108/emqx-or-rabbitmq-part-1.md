@@ -2,13 +2,13 @@
 
 ## MQTT 协议 - 订阅和发布
 
-[MQTT](https://www.emqx.com/zh/mqtt-guide) 是一个非常轻量级的订阅和发布协议，现在已经是物联网领域最具统治地位和使用最广泛的传输协议。MQTT 协议每个消息最少仅需 2 个字节 （其中报头仅需 1 个字节，其余字节可以全部作为消息载荷）就可以完成通信，专为那些资源和空间有限、功耗敏感的硬件所打造。其主要模式是 Pub/Sub（发布/订阅），客户端可以扮演两个角色，一个角色是发布者，其在连接到服务器之后将针对某个特定主题发送消息给服务器；另一个角色是订阅者，可以订阅感兴趣的主题来接收其中的消息。订阅者也可以使用通配符订阅主题，这样就可以一次订阅多个不同的主题，还可以使用共享订阅进行负载均衡分发。
+[MQTT](https://www.emqx.com/zh/mqtt-guide) 是一个非常轻量级的订阅和发布协议，现在已经是物联网领域最具统治地位和使用最广泛的传输协议。[MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 协议每个消息最少仅需 2 个字节 （其中报头仅需 1 个字节，其余字节可以全部作为消息载荷）就可以完成通信，专为那些资源和空间有限、功耗敏感的硬件所打造。其主要模式是 Pub/Sub（发布/订阅），客户端可以扮演两个角色，一个角色是发布者，其在连接到服务器之后将针对某个特定主题发送消息给服务器；另一个角色是订阅者，可以订阅感兴趣的主题来接收其中的消息。订阅者也可以使用通配符订阅主题，这样就可以一次订阅多个不同的主题，还可以使用共享订阅进行负载均衡分发。
 
 以下图片揭示了 MQTT 协议是如何运作的：
 
 ![MQTT协议运作.png](https://assets.emqx.com/images/0a32545afd5d82cd0988372700ab6bba.png)
 
-目前市场上有很多 MQTT 客户端 SDK，也有很多 MQTT Broker。EMQX 和 RabbitMQ 是 Erlang 家族中具有代表性的两大开源消息服务器，我们接下来将针对 MQTT 场景对其进行深入对比。
+目前市场上有很多 [MQTT 客户端](https://www.emqx.com/zh/blog/mqtt-client-tools) SDK，也有很多 [MQTT Broker](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison)。EMQX 和 RabbitMQ 是 Erlang 家族中具有代表性的两大开源消息服务器，我们接下来将针对 MQTT 场景对其进行深入对比。
 
 
 

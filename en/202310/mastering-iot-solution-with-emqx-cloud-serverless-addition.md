@@ -1,6 +1,6 @@
 [EMQX Cloud Serverless](https://www.emqx.com/en/cloud/serverless-mqtt) has gained significant popularity among IoT developers due to its simplicity and cost-effectiveness since its release in April 2023. It enables users to create a deployment effortlessly **in 5 seconds** and enjoy the service with minimal cost according to the actual consumption.
 
-EMQX Cloud Serverless recently rolled out a major update to the latest EMQX 5.3 with enhanced performance and features. This release introduces APIs for deployment management and monitoring and the batch import user credentials feature for simplified large-scale device authentication.
+[EMQX Cloud](https://www.emqx.com/en/cloud) Serverless recently rolled out a major update to the latest EMQX 5.3 with enhanced performance and features. This release introduces APIs for deployment management and monitoring and the batch import user credentials feature for simplified large-scale device authentication.
 
 ## Serverless API
 
@@ -50,7 +50,7 @@ The system supports importing up to 1000 pieces of information at a time and up 
 
 ## Summary
 
-EMQX Serverless provides the most convenient IoT cloud solution for developers and enterprises through innovative models of pay-as-you-go and automatic scaling. With the addition of API and bulk import user credentials, it can better meet the needs of users' production environments and provide a complete solution for IoT digital transformation based on a fully managed platform.
+EMQX Serverless provides the most convenient [IoT cloud solution](https://www.emqx.com/en/blog/iot-in-the-cloud-8-key-benefits-and-how-to-get-started) for developers and enterprises through innovative models of pay-as-you-go and automatic scaling. With the addition of API and bulk import user credentials, it can better meet the needs of users' production environments and provide a complete solution for IoT digital transformation based on a fully managed platform.
 
 
 

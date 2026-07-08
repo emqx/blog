@@ -66,7 +66,7 @@ In the logistics and supply chain industry, AWS IoT Core is used for asset track
 
 ## AWS IoT Core Pricing
 
-Here is a breakdown of IoT core pricing, within the AWS Free Tier and once you exceed the free limits.
+Here is a breakdown of [IoT core pricing](https://www.emqx.com/en/blog/how-emqx-cuts-spending-by-up-to-80-percent), within the AWS Free Tier and once you exceed the free limits.
 
 **Free Tier**
 
@@ -152,7 +152,7 @@ After you enter the command from Step 2 in the console, you should see an output
 
 From the **Test** page of the AWS IoT console, open the MQTT test client. If you chose Python SDK, then in the MQTT test client, in the **Topic** filter, enter a topic to subscribe to messages from the device. For example, you can use the topic sdk/test/python. The topic filters are case sensitive.
 
-After you subscribe to the test topic, run ./start.sh on your device. Immediately afterwards, messages should appear in the MQTT client, similar to this:
+After you subscribe to the test topic, run ./start.sh on your device. Immediately afterwards, messages should appear in the [MQTT client](https://www.emqx.com/en/blog/mqtt-client-tools), similar to this:
 
 ```
 {
@@ -166,7 +166,7 @@ After you subscribe to the test topic, run ./start.sh on your device. Immediatel
 
 [EMQX Cloud](https://www.emqx.com/en/cloud) is a fully managed MQTT data platform that allows you to connect devices, process IoT data in real time, store time-series information, and perform analytics, all within a unified managed service.
 
-As the world’s first fully managed MQTT 5.0 cloud service, EMQX Cloud extends beyond a traditional broker to provide a complete IoT data backbone. It supports large-scale device connectivity, real-time data streaming and processing, high-performance time-series storage, and instant analytics across a secure, globally distributed platform. With EMQX Cloud, you can build end-to-end IoT data pipelines in minutes, from device communication to visualization and analysis.
+As the world’s first fully managed [MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5) cloud service, EMQX Cloud extends beyond a traditional broker to provide a complete IoT data backbone. It supports large-scale device connectivity, real-time data streaming and processing, high-performance time-series storage, and instant analytics across a secure, globally distributed platform. With EMQX Cloud, you can build end-to-end IoT data pipelines in minutes, from device communication to visualization and analysis.
 
 ### Why Switch from AWS IoT Core to EMQX?
 

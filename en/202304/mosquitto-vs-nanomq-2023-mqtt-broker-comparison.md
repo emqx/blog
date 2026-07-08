@@ -12,14 +12,14 @@ The Mosquitto project was initially developed by Roger Light in 2009 and later d
 
 Mosquitto’s design is straightforward and clean. It runs as a single-threaded daemon process with epoll support. It receives incoming data from one socket and dispatches it to other sockets.
 
-Although simple, this architectural design restricts Mosquitto from using multi-core CPUs to connect more concurrent MQTT clients. At the same time, latency will increase as throughput increases.
+Although simple, this architectural design restricts Mosquitto from using multi-core CPUs to connect more concurrent [MQTT clients](https://www.emqx.com/en/blog/mqtt-client-tools). At the same time, latency will increase as throughput increases.
 
 ![Mosquitto](https://assets.emqx.com/images/82027ea30acf44e5e1ba3e0a68f8bd4f.png)
 
 **Pros:**
 
 - Easy to setup and use
-- MQTT 5.0 protocol support
+- [MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5) protocol support
 - Lightweight and fast
 - Active community support
 
@@ -36,7 +36,7 @@ The [NanoMQ](https://github.com/nanomq/nanomq) project was initially developed b
 
 Unlike Mosquitto's single-threaded design, NanoMQ built on NNG's asynchronous I/O with a built-in Actor multi-threading model. Thanks to the excellent NNG library, NanoMQ takes full advantage of multiple cores in modern SMP systems. 
 
-NanoMQ is also an edge messaging bus that converts protocols such as DDS, NNG, and ZeroMQ to MQTT, then bridges the MQTT messages between brokers or from the edge to multiple clouds via MQTT and QUIC.
+NanoMQ is also an edge messaging bus that converts protocols such as DDS, NNG, and ZeroMQ to MQTT, then bridges the MQTT messages between brokers or from the edge to multiple clouds via MQTT and [QUIC](https://www.emqx.com/en/blog/quic-protocol-the-features-use-cases-and-impact-for-iot-iov).
 
 In addition, NanoMQ is highly portable and can be deployed on any POSIX-compatible platform, and runs on different CPU architectures such as x86_64, ARM, MIPS, and RISC-V.
 
@@ -83,8 +83,8 @@ In addition, NanoMQ provides some features for management and integration, such 
 | :------------------------- | :--------------- | :----------- |
 | **MQTT 3.1.1**             | ✅                | ✅            |
 | **MQTT 5.0**               | ✅                | ✅            |
-| **MQTT over TLS/SSL**      | ✅                | ✅            |
-| **MQTT over WebSocket**    | ✅                | ✅            |
+| **[MQTT over TLS](https://www.emqx.com/en/blog/fortifying-mqtt-communication-security-with-ssl-tls)/SSL**      | ✅                | ✅            |
+| **[MQTT over WebSocket](https://www.emqx.com/en/blog/connect-to-mqtt-broker-with-websocket)**    | ✅                | ✅            |
 | **MQTT over QUIC**         | ❌                | ✅            |
 | **MQTT Bridging**          | ✅                | ✅            |
 | **AWS Bridging**           | ❌                | ✅            |
@@ -146,11 +146,11 @@ In contrast, NanoMQ may pose a challenge for beginners due to its more advanced 
 
 Mosquitto version 2.0 introduced epoll support to address the c10k connection scalability issue.
 
-NanoMQ is pioneering [MQTT over QUIC](https://www.emqx.com/en/blog/mqtt-over-quic), the most innovative advancement in the MQTT protocol since the first release of the MQTT 5.0 specification in 2017. With multiplexing and faster connection establishment and migration, MQTT over QUIC has the potential to become the next generation of the MQTT standard. NanoMQ commits minor innovations like QoS prioritization and stream-topic pairing based on QUIC to fasten the pace of QUIC adoption.
+NanoMQ is pioneering [MQTT over QUIC](https://www.emqx.com/en/blog/mqtt-over-quic), the most innovative advancement in the [MQTT protocol](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) since the first release of the MQTT 5.0 specification in 2017. With multiplexing and faster connection establishment and migration, MQTT over QUIC has the potential to become the next generation of the MQTT standard. NanoMQ commits minor innovations like QoS prioritization and stream-topic pairing based on QUIC to fasten the pace of QUIC adoption.
 
 ## Conclusion
 
-In conclusion, Mosquitto and NanoMQ are excellent lightweight [MQTT brokers](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) for messaging at the IoT edge. You can choose any for your deployments on low-power sensors, embedded hardware, and industrial IoT in 2023.
+In conclusion, Mosquitto and NanoMQ are excellent lightweight [MQTT brokers](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) for messaging at the IoT edge. You can choose any for your deployments on low-power sensors, embedded hardware, and [industrial IoT](https://www.emqx.com/en/blog/industrial-iot-systems) in 2023.
 
 ## References
 

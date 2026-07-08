@@ -1,4 +1,4 @@
-We are excited to announce the official release of MQTTX 1.9.4, a powerful MQTT 5.0 client tool. This update brings significant improvements to user experience, including more efficient support for Protobuf message transmission, optimized automatic update functionality, and a range of feature enhancements. 
+We are excited to announce the official release of MQTTX 1.9.4, a powerful [MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5) client tool. This update brings significant improvements to user experience, including more efficient support for Protobuf message transmission, optimized automatic update functionality, and a range of feature enhancements. 
 
 > Download the latest version here: [https://mqttx.app/downloads](https://mqttx.app/downloads) 
 
@@ -57,13 +57,13 @@ We have enhanced the following functionality of the command-line client in versi
 
 ### Support for MQTT over WebSocket Connections 
 
-The command-line client now supports MQTT over WebSocket connections, enabling more flexible testing scenarios. You can establish a WebSocket-based connection using the following command:
+The command-line client now supports [MQTT over WebSocket](https://www.emqx.com/en/blog/connect-to-mqtt-broker-with-websocket) connections, enabling more flexible testing scenarios. You can establish a WebSocket-based connection using the following command:
 
 ```
 mqttx conn -h broker.emqx.io -p 8083 -l ws
 ```
 
-Here, the `-l` parameter indicates the connection protocol, with available values including MQTT, MQTTs, Websocket, and WSS. The default value is MQTT.
+Here, the `-l` parameter indicates the connection protocol, with available values including [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt), MQTTs, Websocket, and WSS. The default value is MQTT.
 
 ### Support for Sending Messages in Multiple Formats 
 
@@ -106,7 +106,7 @@ We have an exciting roadmap ahead as we continue to innovate and improve MQTTX. 
 - Synchronizing IoT scenario data simulation functionality with the desktop client;
 - Enhancing the highlighting of particular data formats (such as JSON) in the message box;
 - Support for Avro message format in schema encoding/decoding;
-- Support for Sparkplug B;
+- Support for [Sparkplug B](https://www.emqx.com/en/solutions/mqtt-sparkplug);
 - Configurable storage ignoring of QoS 0 messages to reduce storage space usage;
 - MQTT Debug functionality;
 - Automatic chart plotting of received messages;

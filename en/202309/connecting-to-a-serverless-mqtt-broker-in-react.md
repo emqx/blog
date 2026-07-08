@@ -1,4 +1,4 @@
-Serverless architecture in cloud computing allows developers to focus on code development and deployment without the hassle of infrastructure management. Serverless MQTT, in particular, provides an MQTT messaging service that scales automatically based on demand, reducing the need for manual intervention.
+Serverless architecture in cloud computing allows developers to focus on code development and deployment without the hassle of infrastructure management. [Serverless MQTT](https://www.emqx.com/en/cloud/serverless-mqtt), in particular, provides an MQTT messaging service that scales automatically based on demand, reducing the need for manual intervention.
 
 To learn more about serverless MQTT, read our blog post [Next-Gen Cloud MQTT Service: Meet EMQX Cloud Serverless](https://www.emqx.com/en/blog/next-gen-cloud-mqtt-service-meet-emqx-cloud-serverless). In this blog series, we'll guide you through using various client libraries to set up MQTT connections, subscriptions, messaging, and more with a serverless [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) for your specific project.
 
@@ -6,7 +6,7 @@ To learn more about serverless MQTT, read our blog post [Next-Gen Cloud MQTT Ser
 
 As the Internet of Things (IoT) continues to grow, more and more developers are turning to React to build applications that can interact with IoT devices. React is a popular framework for building web applications, and it's increasingly being used in IoT projects. Some of the application scenarios for React in IoT include:
 
-- Building dashboards to monitor and control IoT devices
+- Building dashboards to monitor and [control IoT devices](https://www.emqx.com/en/customers/china-southern-power-grid)
 - Creating interfaces for IoT devices
 - Developing web-based tools for managing IoT devices
 
@@ -16,7 +16,7 @@ This blog will provide a step-by-step guide on how to connect a serverless MQTT 
 
 ### Free Serverless MQTT Broker
 
-EMQX Cloud Serverless is the latest MQTT broker offering on the public cloud with all the serverless advantages. You can start the Serverless deployment in seconds with just a few clicks. Additionally, users can get 1 million free session minutes every month, sufficient for 23 devices to be online for a whole month, making it perfect for tiny IoT test scenarios.
+[EMQX Cloud](https://www.emqx.com/en/cloud) Serverless is the latest MQTT broker offering on the public cloud with all the serverless advantages. You can start the Serverless deployment in seconds with just a few clicks. Additionally, users can get 1 million free session minutes every month, sufficient for 23 devices to be online for a whole month, making it perfect for tiny IoT test scenarios.
 
 If you have not tried serverless deployment yet, please follow [the guide in this blog](https://www.emqx.com/en/blog/a-comprehensive-guide-to-serverless-mqtt-service) to create one for free. Once you have completed the registration process with the online guide, you will get a running instance with the following similar information from the “Overview” in your deployment. We will use the connection information and CA certificate later.
 
@@ -26,7 +26,7 @@ If you have not tried serverless deployment yet, please follow [the guide in thi
 
 To develop React applications locally, you will need to install [Node.js](https://nodejs.org/en/). Official installers for all major platforms are available for download at [Download | Node.js](https://nodejs.org/en/download).
 
-React is a JavaScript library, so you can use [MQTT.js](https://www.emqx.com/en/blog/mqtt-js-tutorial) as the MQTT client library. MQTT.js is a client library for the MQTT protocol written in JavaScript and is currently the most widely used [MQTT client library](https://www.emqx.com/en/mqtt-client-sdk) in the JavaScript ecosystem. You can install MQTT.js using NPM.
+React is a JavaScript library, so you can use [MQTT.js](https://www.emqx.com/en/blog/mqtt-js-tutorial) as the [MQTT client](https://www.emqx.com/en/blog/mqtt-client-tools) library. MQTT.js is a client library for the [MQTT protocol](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) written in JavaScript and is currently the most widely used [MQTT client library](https://www.emqx.com/en/mqtt-client-sdk) in the JavaScript ecosystem. You can install MQTT.js using NPM.
 
 
 

@@ -2,7 +2,7 @@
 
 Confluent Cloud is a managed cloud service offered by Confluent, the company behind Apache Kafka.  This service enables easy deployment, operation, and scaling of Apache Kafka clusters in the cloud. With Confluent Cloud, you can focus on building event-driven applications without worrying about managing the underlying infrastructure. It boasts features such as automatic scaling, data replication, and seamless integration with other components of the Confluent Platform.
 
-Recently, [EMQX Cloud](https://www.emqx.com/en/cloud), a fully managed MQTT cloud service, has announced its integration support for  Confluent Cloud.  Organizations can now harness both EMQX Cloud for MQTT and Confluent Cloud for Kafka, enhancing MQTT communication and Kafka deployments for critical applications. This powerful combination allows for smooth integration between IoT devices that use MQTT and Kafka's stream processing capabilities, thus unlocking the full potential of IoT infrastructure for scalable and future-proof solutions.
+Recently, [EMQX Cloud](https://www.emqx.com/en/cloud), a fully managed [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) cloud service, has announced its integration support for  Confluent Cloud.  Organizations can now harness both EMQX Cloud for MQTT and Confluent Cloud for Kafka, enhancing MQTT communication and Kafka deployments for critical applications. This powerful combination allows for smooth integration between IoT devices that use MQTT and Kafka's stream processing capabilities, thus unlocking the full potential of IoT infrastructure for scalable and future-proof solutions.
 
 In this tutorial, we'll show you step-by-step how to integrate Confluent Cloud with EMQX Cloud in four detailed steps.
 

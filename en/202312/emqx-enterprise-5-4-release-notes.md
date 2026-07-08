@@ -32,7 +32,7 @@ EMQX 5.4.0 introduces a gateway based on the OCPP 1.6-J protocol. This gateway o
 2. Providing access authentication options such as username/password and JWT.
 3. Granting control over upstream and downstream message permissions.
 4. Offering client management capabilities through Dashboard and REST API.
-5. Supporting flexible and diversified application scenarios by seamlessly combining with the MQTT protocol.
+5. Supporting flexible and diversified application scenarios by seamlessly combining with the [MQTT protocol](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt).
 6. Enabling integration with third-party management systems (Central System) through rule engine, data integration, and REST API.
 
 These features enable users to establish a secure and reliable electric vehicle charging infrastructure, facilitating effective management and operation of charging businesses.

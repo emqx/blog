@@ -25,7 +25,7 @@ The Node.js installer carries the Node.js core file. Therefore, you don’t need
 
 ### 2. Install the MQTT.js
 
-MQTT.js is a client library for the [MQTT protocol](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt), written in JavaScript for node.js and the browser. It is currently the most widely used [MQTT client library](https://www.emqx.com/en/mqtt-client-sdk) in the JavaScript ecosystem. We can use NPM to install MQTT.js.
+[MQTT.js](https://www.emqx.com/en/blog/mqtt-js-tutorial) is a client library for the [MQTT protocol](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt), written in JavaScript for node.js and the browser. It is currently the most widely used [MQTT client library](https://www.emqx.com/en/mqtt-client-sdk) in the JavaScript ecosystem. We can use NPM to install MQTT.js.
 
 ```
 # create a new project
@@ -197,7 +197,7 @@ We can see that the message sent by MQTTX is printed in the console.
 
 ## Summary and complete code example
 
-This code demo explains how to connect to the Serverless deployment via the MQTT.js client library. If you've followed the process, you now have a Node.js application that can publish and subscribe. For more ways to connect to MQTT brokers in Node.js, please refer to the tutorial blog [How to use MQTT in Node.js](https://www.emqx.com/en/blog/how-to-use-mqtt-in-nodejs).
+This code demo explains how to connect to the Serverless deployment via the MQTT.js client library. If you've followed the process, you now have a Node.js application that can publish and subscribe. For more ways to connect to [MQTT brokers](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) in Node.js, please refer to the tutorial blog [How to use MQTT in Node.js](https://www.emqx.com/en/blog/how-to-use-mqtt-in-nodejs).
 
 ## Join the EMQX Community
 

@@ -1,6 +1,6 @@
-As IoT deployments expand, the messaging layer often becomes the defining constraint on system performance, reliability, and long-term flexibility. AWS IoT Core offers a convenient entry point for AWS-centric teams, with straightforward integrations into the broader AWS ecosystem. However, as systems grow, the platform’s protocol deviations, quota boundaries, and regional limitations can introduce friction.
+As IoT deployments expand, the messaging layer often becomes the defining constraint on system performance, reliability, and long-term flexibility. [AWS IoT Core](https://www.emqx.com/en/blog/understanding-aws-iot-core) offers a convenient entry point for AWS-centric teams, with straightforward integrations into the broader AWS ecosystem. However, as systems grow, the platform’s protocol deviations, quota boundaries, and regional limitations can introduce friction.
 
-EMQX approaches messaging from a different angle. It is a fully compliant, horizontally scalable MQTT platform designed for large, long-lived IoT, IIoT, and connected device workloads. Whether deployed as a managed cloud service, a dedicated VPC deployment, or self-hosted infrastructure, EMQX focuses on predictable performance and architectural freedom.
+EMQX approaches messaging from a different angle. It is a fully compliant, horizontally scalable MQTT platform designed for large, long-lived IoT, [IIoT](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges), and connected device workloads. Whether deployed as a managed cloud service, a dedicated VPC deployment, or self-hosted infrastructure, EMQX focuses on predictable performance and architectural freedom.
 
 This comparison highlights the technical differences that matter most when building IoT systems intended to scale: MQTT compliance, performance constraints, extensibility, and enterprise-level capabilities.
 
@@ -10,13 +10,13 @@ A foundational distinction between the two platforms is their approach to [MQTT]
 
 ### **MQTT Feature Comparison**
 
-| Feature                        | AWS IoT Core                                                 | EMQX Dedicated Flex            | EMQX Enterprise                      |
+| Feature                        | AWS IoT Core                                                 | EMQX Dedicated Flex            | [EMQX Enterprise](https://www.emqx.com/en/products/emqx)                      |
 | :----------------------------- | :----------------------------------------------------------- | :----------------------------- | :----------------------------------- |
 | MQTT Version Support           | MQTT 3.1.1, 5.0 (partial implementation)                     | Fully compliant MQTT 3.x & 5.0 | Fully compliant MQTT 3.x & 5.0       |
 | QoS 2                          | Not supported                                                | Supported                      | Supported                            |
-| Complete MQTT 5 Packet Support | Missing several packets (AUTH, PUBREC, PUBREL, PUBCOMP, DUP flag) | Full support                   | Full support                         |
-| MQTT over QUIC                 | No                                                           | No                             | Yes                                  |
-| Protocol Variety               | MQTT, MQTT over WSS, HTTPS publish, LoRaWAN                  | MQTT, CoAP, STOMP, LwM2M, HTTP | MQTT, QUIC, CoAP, STOMP, LwM2M, HTTP |
+| Complete [MQTT 5](https://www.emqx.com/en/blog/introduction-to-mqtt-5) Packet Support | Missing several packets (AUTH, PUBREC, PUBREL, PUBCOMP, DUP flag) | Full support                   | Full support                         |
+| [MQTT over QUIC](https://www.emqx.com/en/blog/mqtt-over-quic)                 | No                                                           | No                             | Yes                                  |
+| Protocol Variety               | MQTT, MQTT over WSS, HTTPS publish, LoRaWAN                  | MQTT, CoAP, STOMP, LwM2M, HTTP | MQTT, [QUIC](https://www.emqx.com/en/blog/quic-protocol-the-features-use-cases-and-impact-for-iot-iov), CoAP, STOMP, LwM2M, HTTP |
 
 AWS’s partial MQTT implementation often surprises teams when behavior differs from standard expectations, particularly for reliability and acknowledgement flows. EMQX maintains strict compliance, which is crucial for predictable behavior across millions of devices, diverse client libraries, and multi-vendor hardware environments.
 
@@ -120,7 +120,7 @@ EMQX offers multiple deployment models to meet different architectural, complian
 
 | Offering            | Deployment Model                        | Key Advantages                                              | Best Fit                                          |
 | :------------------ | :-------------------------------------- | :---------------------------------------------------------- | :------------------------------------------------ |
-| EMQX Enterprise     | Self-hosted (on-prem or customer cloud) | Unlimited scale, full customization, multi-protocol support | Industrial IoT, Telecom, and regulated industries |
+| EMQX Enterprise     | Self-hosted (on-prem or customer cloud) | Unlimited scale, full customization, multi-protocol support | [Industrial IoT](https://www.emqx.com/en/blog/industrial-iot-systems), Telecom, and regulated industries |
 | EMQX Dedicated Flex | Fully managed, isolated VPC             | Predictable performance, SLA-backed, enterprise support     | Mission-critical production workloads             |
 | EMQX Serverless     | Fully managed, multi-tenant             | Pay-as-you-go, quick startup                                | POCs, development workloads, small device fleets  |
 | BYOC                | Customer cloud with EMQ operations      | Full control and enterprise features                        | Data sovereignty and multi-cloud strategies       |

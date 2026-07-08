@@ -1,4 +1,4 @@
-[EMQX Enterprise](https://www.emqx.com/en/products/emqx) is an elastically scalable enterprise-level IoT MQTT messaging platform that supports one-stop access to millions of IoT devices, MQTT&CoAP multi-protocol processing, and low-latency real-time message communication. It provides a SQL-based built-in rule engine to flexibly process/forward messages to back-end services, store message data to various databases, or bridge message middleware such as Kafka, RabbitMQ. It can efficiently, reliably, and flexibly move data bi-directionally between various IoT devices and enterprise systems.
+[EMQX Enterprise](https://www.emqx.com/en/products/emqx) is an elastically scalable enterprise-level IoT [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) messaging platform that supports one-stop access to millions of IoT devices, MQTT&CoAP multi-protocol processing, and low-latency real-time message communication. It provides a SQL-based built-in rule engine to flexibly process/forward messages to back-end services, store message data to various databases, or bridge message middleware such as Kafka, RabbitMQ. It can efficiently, reliably, and flexibly move data bi-directionally between various IoT devices and enterprise systems.
 
 EMQX Enterprise is applicable to various IoT application scenarios, supports arbitrary deployment of public clouds, private clouds, physical machines, containers/K8s, and can help enterprises quickly build IoT platforms and applications.
 
@@ -57,7 +57,7 @@ We have added HTTPS support for InfluxDB and support batch writing of InfluxDB.
 
 ## Kafka distribution improvement: easier to use Kafka message distribution
 
-EMQX's module -> Kafka consumer group function can use external Kafka as a message queue to consume messages from a specified Kafka topic, convert them into MQTT messages and send them to specific MQTT topics. The data flow is shown in the following figure:
+EMQX's module -> Kafka consumer group function can use external Kafka as a message queue to consume messages from a specified Kafka topic, convert them into MQTT messages and send them to specific [MQTT topics](https://www.emqx.com/en/blog/advanced-features-of-mqtt-topics). The data flow is shown in the following figure:
 
 ![Kafka distribution improvement](https://assets.emqx.com/images/9fe7501172ea1e95ec7052c733c1c8ec.png)
 
@@ -79,7 +79,7 @@ In the current version, we provide Kafka-distributed data selection function. Th
 
 In the previous design, we only supported forwarding the `value` in the Kafka message to the specified MQTT Topic, and the user can no longer obtain other data. However, these data are also useful in some scenarios. For example, the user expects to use the only `key`  in the message as a part of distributed MQTT Topic.
 
-When configuring the mapping relationship of `Kakfa Topic`-`MQTT Topic`, we provide the content configuration item of MQTT Payload. For a certain mapping, the user can choose to forward the complete Kafka message or the `value` content of the message.
+When configuring the mapping relationship of `Kakfa Topic`-`MQTT Topic`, we provide the content configuration item of [MQTT Payload](https://www.emqx.com/en/blog/how-to-process-json-hex-and-binary-data-in-mqtt). For a certain mapping, the user can choose to forward the complete Kafka message or the `value` content of the message.
 
 ### Combination of Kafka distribution and rule engine
 

@@ -1,8 +1,8 @@
 ## Introduction
 
-MQTT is a lightweight messaging protocol commonly used in IoT (Internet of Things) applications to enable communication between devices. As a popular [open-source MQTT broker, EMQX](https://github.com/emqx/emqx) provides high scalability, reliability, and security for MQTT messaging.
+[MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) is a lightweight messaging protocol commonly used in IoT (Internet of Things) applications to enable communication between devices. As a popular [open-source MQTT broker, EMQX](https://github.com/emqx/emqx) provides high scalability, reliability, and security for MQTT messaging.
 
-By using Terraform, a widespread Infrastructure as Code (IaC) tool, you can automate the deployment of EMQX MQTT Broker on GCP, making it easy to set up and manage your MQTT infrastructure. 
+By using Terraform, a widespread Infrastructure as Code (IaC) tool, you can automate the deployment of EMQX [MQTT Broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) on GCP, making it easy to set up and manage your MQTT infrastructure. 
 
 This blog will provide a step-by-step guide on how to set up a GCP project, create a service account,  and write a Terraform configuration file to deploy EMQX MQTT Broker.
 

@@ -1,6 +1,6 @@
-EMQ, the leader of open-source and cloud-native distributed MQTT broker for IoT, is pleased to announce that EMQX Cloud is now available on Microsoft Azure.
+EMQ, the leader of open-source and cloud-native distributed [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) for IoT, is pleased to announce that EMQX Cloud is now available on Microsoft Azure.
 
-[EMQX Cloud](https://www.emqx.com/en/cloud) is a fully managed MQTT service built on the worldwide used [open-source MQTT broker - EMQX](https://github.com/emqx/emqx), which has more than 10 million downloads and hundreds of thousands of deployments around the globe.
+[EMQX Cloud](https://www.emqx.com/en/cloud) is a fully managed [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) service built on the worldwide used [open-source MQTT broker - EMQX](https://github.com/emqx/emqx), which has more than 10 million downloads and hundreds of thousands of deployments around the globe.
 
 EMQX Cloud helps our users carry out their IoT projects with [MQTT](https://www.emqx.com/en/mqtt-guide) in a simple way, without the burden of deploying and managing the self-managed MQTT service in multiple regions of the cloud.
 
@@ -9,7 +9,7 @@ EMQX Cloud helps our users carry out their IoT projects with [MQTT](https://www.
 ## A Fully Managed, Cloud-Native MQTT Service
 
 
-EMQX Cloud is a fully managed, cloud-native MQTT service based on the world’s leading open source distributed MQTT broker. EMQX Cloud deploys and manages the MQTT broker cluster for you. Scaling & upgrading your service can be achieved with just a single click.
+EMQX Cloud is a fully managed, cloud-native MQTT service based on the world’s leading open source distributed MQTT broker. EMQX Cloud deploys and manages the [MQTT broker cluster](https://www.emqx.com/en/blog/mqtt-broker-clustering) for you. Scaling & upgrading your service can be achieved with just a single click.
 
 ### Connect Any Device
 
@@ -17,7 +17,7 @@ EMQX Cloud is a fully managed, cloud-native MQTT service based on the world’s 
 
 ### Data Security & Privacy
 
-- Ensure data security with MQTT over TLS/SSL or QUIC
+- Ensure data security with [MQTT over TLS](https://www.emqx.com/en/blog/fortifying-mqtt-communication-security-with-ssl-tls)/SSL or [QUIC](https://www.emqx.com/en/blog/quic-protocol-the-features-use-cases-and-impact-for-iot-iov)
 - Authenticate with LDAP, JWT, PSK, and X.509 certificates.
 - Data privacy protection complies with EU GDPR.
 

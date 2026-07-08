@@ -4,7 +4,7 @@
 
 MQTT deployments are growing to support very large numbers of devices and connections—managing, testing, and debugging these deployments can be a complex task. MQTTX simplifies the process by providing a user-friendly, cross-platform client toolbox designed to streamline the development of MQTT-based applications.
 
-MQTTX is a powerful, all-in-one MQTT 5.0 client toolbox that simplifies MQTT development across all platforms. It is available in desktop, CLI, and web versions, and is equipped with rich developer features and a clean, intuitive interface. It fully complies with MQTT standards.
+MQTTX is a powerful, all-in-one [MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5) client toolbox that simplifies MQTT development across all platforms. It is available in desktop, CLI, and web versions, and is equipped with rich developer features and a clean, intuitive interface. It fully complies with MQTT standards.
 
 MQTTX is an open-source project developed with Javascript and [Electron](https://www.electronjs.org/) framework and maintained by the [EMQX team](https://github.com/emqx).
 
@@ -64,7 +64,7 @@ Use this info when configuring the MQTT broker:
 
 ### Step 2: Run MQTT Client Toolbox
 
-There are three options for running MQTT Client Toolbox:
+There are three options for running [MQTT Client](https://www.emqx.com/en/blog/mqtt-client-tools) Toolbox:
 
 - **MQTTX Desktop:** An elegant MQTT 5.0 desktop client running on macOS, Windows, and Linux. [Download MQTTX Desktop here](https://mqttx.app/downloads).
 - **MQTTX Web:** A browser-based MQTT 5.0 WebSocket client tool you can use with web browsers. [Access MQTTX Web here](https://mqttx.app/web-client/#/recent_connections).
@@ -92,7 +92,7 @@ Let's explore some of these GUI features in more detail.
 
 ### Manage Multiple MQTT Connections
 
-One of the standout features of MQTTX is its ability to manage multiple MQTT connections simultaneously. This is particularly useful when working on complex projects that involve multiple IoT devices or MQTT brokers.
+One of the standout features of MQTTX is its ability to manage multiple MQTT connections simultaneously. This is particularly useful when working on complex projects that involve multiple IoT devices or [MQTT brokers](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison).
 
 With MQTTX, you can easily switch between different MQTT connections, allowing you to monitor and debug multiple devices or applications at the same time. Each connection is displayed in a separate tab, making it easy to navigate between different connections.
 

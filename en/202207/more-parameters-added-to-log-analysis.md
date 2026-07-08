@@ -1,4 +1,4 @@
-Recently, [EMQX Cloud](https://www.emqx.com/en/cloud), a fully managed MQTT messaging cloud service, has released a feature update: the “Log” module has been optimized and several new analysis parameters have been added to help users conduct more effective system monitoring and operation and maintenance.
+Recently, [EMQX Cloud](https://www.emqx.com/en/cloud), a fully managed [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) messaging cloud service, has released a feature update: the “Log” module has been optimized and several new analysis parameters have been added to help users conduct more effective system monitoring and operation and maintenance.
 
 ## Feature overview
 

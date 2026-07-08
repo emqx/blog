@@ -134,7 +134,7 @@ However, for shared mobility to succeed, it is important to ensure affordability
 
 [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) is a lightweight messaging protocol that significantly enables smart mobility by facilitating efficient and reliable communication between various components of a smart mobility ecosystem. MQTT is well-suited for scenarios where devices or sensors need to exchange data in real-time, making it an ideal choice for many aspects of smart mobility solutions.
 
-EMQ is the world's leading software provider of open-source IoT data infrastructure. Here’s how we enable smart mobility with [EMQX](https://www.emqx.com/en/products/emqx), our powerful and scalable MQTT broker:
+EMQ is the world's leading software provider of open-source IoT data infrastructure. Here’s how we enable smart mobility with [EMQX](https://www.emqx.com/en/products/emqx), our powerful and scalable [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison):
 
 - **Real-Time Data Exchange:** EMQX provides real-time communication between different components of a smart mobility system, such as vehicles, traffic lights, sensors, and central control systems. This real-time data exchange enables instant updates on traffic conditions, road closures, and other relevant information.
 - **Efficient Data Transmission:** MQTT's lightweight nature and publish-subscribe model make it efficient for transmitting small data packets over constrained networks. This is crucial for smart mobility applications with limited bandwidth, such as IoT deployments.

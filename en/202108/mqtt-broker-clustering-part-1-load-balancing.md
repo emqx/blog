@@ -3,7 +3,7 @@ This post gives a quick introduction for MQTT message broking, the challenges of
 
 ## MQTT the protocol
 
-Maybe you are not that familiar with MQTT protocol, you probably know HTTP protocol very well. Like HTTP, MQTT works at the same network (transport) layer TCP/TLS (well, it can actually work on top of HTTP, but that’s a topic for another day).
+Maybe you are not that familiar with [MQTT protocol](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt), you probably know HTTP protocol very well. Like HTTP, MQTT works at the same network (transport) layer TCP/TLS (well, it can actually work on top of HTTP, but that’s a topic for another day).
 
 Here is the quote from [https://mqtt.org/](https://mqtt.org/) 
 
@@ -19,12 +19,12 @@ A real life example: a temperature sensor in the living room periodically publis
 
 A temperature sensor at home is only an example close enough to everybody. To serve smart home devices, a single MQTT broker, e.g. EMQX edge edition running on a Raspberry PI should be more than enough, not to mention that a single EMQX node can handle up to 2 million connections.
 
-Now imagine these examples: millions of cars all over the world; millions of street lights all over the country; and so on and so on, the amount of devices (MQTT clients) and data volume can be a very large scale, large enough to overwhelm any single MQTT broker can handle. 
+Now imagine these examples: millions of cars all over the world; millions of street lights all over the country; and so on and so on, the amount of devices ([MQTT clients](https://www.emqx.com/en/blog/mqtt-client-tools)) and data volume can be a very large scale, large enough to overwhelm any single MQTT broker can handle. 
 
-This is one of the reasons why we need to create a cluster of MQTT brokers. But it also creates more challenges such as:
+This is one of the reasons why we need to create a cluster of [MQTT brokers](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison). But it also creates more challenges such as:
 
 - MQTT broker discovery: how should clients know which broker endpoint to connect;
-- MQTT subscriber session takeover in case a client disconnect from one node and reconnect to another;
+- [MQTT subscriber](https://www.emqx.com/en/blog/mqtt-5-introduction-to-publish-subscribe-model) session takeover in case a client disconnect from one node and reconnect to another;
 - Global routing table has to be consistently shared across all nodes in the cluster
 
 The first two challenges can be well addressed by putting a load balancer in front of the cluster.
@@ -38,7 +38,7 @@ The first two challenges can be well addressed by putting a load balancer in fro
 <p align="center">MQTT load balancing</p>
 
 
-To meet the above challenges, a load balancer should be able to help clients to decide which broker to connect based on configured balancing strategies. The primary functions of a load balancer for MQTT broker cluster are:
+To meet the above challenges, a load balancer should be able to help clients to decide which broker to connect based on configured balancing strategies. The primary functions of a load balancer for [MQTT broker cluster](https://www.emqx.com/en/blog/mqtt-broker-clustering) are:
 
 - Broker endpoint discovery. The clients only need to care about the address of the load balancer, but not the individual brokers. This also creates flexibility for brokers to relocate, scale up or down.
 - TLS termination. Many MQTT broker users choose to terminate TLS in the LB, so the resources in brokers can be well dedicated for message processing.

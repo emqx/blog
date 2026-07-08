@@ -1,10 +1,10 @@
-近日，MQTTX 发布了最新的 [1.8.3](https://github.com/emqx/MQTTX/releases/tag/v1.8.3) 版本，主要对功能使用进行了优化，并修复了使用过程中所出现的各类问题。例如，优化了 MQTT 5.0 Clean Start 的使用方式，为会话过期间隔添加默认值；优化 MQTTX CLI 的默认输出显示，提供更加细致美观的内容展示等。
+近日，MQTTX 发布了最新的 [1.8.3](https://github.com/emqx/MQTTX/releases/tag/v1.8.3) 版本，主要对功能使用进行了优化，并修复了使用过程中所出现的各类问题。例如，优化了 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 5.0 Clean Start 的使用方式，为会话过期间隔添加默认值；优化 MQTTX CLI 的默认输出显示，提供更加细致美观的内容展示等。
 
 ## MQTTX 桌面端应用
 
 ### 优化 Clean Start 使用
 
-MQTTX 作为一款 MQTT 5.0 客户端工具，目前默认使用 MQTT 5.0 连接测试。在 MQTT 5.0 中，`Clean Session` 修改为了 `Clean Start`，并需要搭配会话过期间隔一起来使用。而在当前 1.8.2 版本中，当使用默认连接时，如果用户未设置会话过期间隔，断开连接时 MQTT Broker 将无法持久化其会话。对于很多不太了解 MQTT 5.0 新特性使用的用户来说，这带来了一些困扰。
+MQTTX 作为一款 MQTT 5.0 客户端工具，目前默认使用 MQTT 5.0 连接测试。在 MQTT 5.0 中，`Clean Session` 修改为了 `Clean Start`，并需要搭配会话过期间隔一起来使用。而在当前 1.8.2 版本中，当使用默认连接时，如果用户未设置会话过期间隔，断开连接时 [MQTT Broker](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison) 将无法持久化其会话。对于很多不太了解 MQTT 5.0 新特性使用的用户来说，这带来了一些困扰。
 
 目前开发的 1.8.3 版本优化了该问题，将 `Clean Session` 的显示修改为了 `Clean Start`，当关闭 `Clean Start` 时，会话过期间隔默认设置为 `永不过期`，当开启后，设置为 0 的默认值，表示用不保存会话。同时也继续支持用户手动修改该值，来满足当前测试需求。同时提示用户：当关闭 `Clean Start` 时，如果该值为空，还需设置会话过期间隔来保证其连接会话的正确使用。
 

@@ -20,7 +20,7 @@
 | :------------------------------------------------------- | :----------- | :----------------------------------------------------------- |
 | [MQTTX CLI](https://mqttx.app/cli)                       | 1.9.3+       | 用于模拟生成工厂能耗数据的命令行工具。                       |
 | [EMQX Enterprise](https://www.emqx.com/zh/products/emqx) | 5.0.4+       | 用于在工厂和 Timescale 之间进行消息传递的 MQTT Broker。      |
-| [Timescale](https://www.timescale.com/)                  | latest-pg12+ | 用于工业物联网数据的存储和管理，以及为 Grafana 提供时间维度的聚合和分析功能。 |
+| [Timescale](https://www.timescale.com/)                  | latest-pg12+ | 用于[工业物联网](https://www.emqx.com/zh/blog/iiot-explained-examples-technologies-benefits-and-challenges)数据的存储和管理，以及为 Grafana 提供时间维度的聚合和分析功能。 |
 | [Grafana](https://grafana.com/)                          | 9.5.1+       | 用于展示和分析采集数据的可视化平台。                         |
 
 除了上述基础组件外，EMQX 还提供了丰富的可观测能力。您可以使用以下组件来监测 EMQX 的运行状态和负载情况：

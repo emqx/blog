@@ -1,10 +1,10 @@
-MQTT v5 has many new features. We will try to show these features in an easy-to-understand way and discuss the impact of these features on developers. So far, we have discussed these [New Features of MQTT v5](https://www.emqx.com/en/blog/introduction-to-mqtt-5). Today we will continue to discuss: **User Properties**.
+[MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) v5 has many new features. We will try to show these features in an easy-to-understand way and discuss the impact of these features on developers. So far, we have discussed these [New Features of MQTT v5](https://www.emqx.com/en/blog/introduction-to-mqtt-5). Today we will continue to discuss: **User Properties**.
 
 ## What are User Properties？
 
 User Properties are the user-defined properties that allow users to add their metadata to MQTT messages and transmit additional user-defined information to expand more application scenarios.
 
-User Properties consist of a user-defined UTF-8 key/value pair array configured in the message property field. As long as the maximum message size is not exceeded, an unlimited number of user properties can be used to add metadata to the MQTT message and transfer information among publishers, MQTT Brokers, and subscribers.
+User Properties consist of a user-defined UTF-8 key/value pair array configured in the message property field. As long as the maximum message size is not exceeded, an unlimited number of user properties can be used to add metadata to the MQTT message and transfer information among publishers, [MQTT Brokers](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison), and subscribers.
 
 If you are familiar with HTTP protocol, this function is very similar to the concept of HTTP Header. User Properties allow users to extend the [MQTT protocol](https://www.emqx.com/en/mqtt-guide) effectively and can appear in all messages and responses. Because User Properties are defined by the user, they are only meaningful to the user's action.
 

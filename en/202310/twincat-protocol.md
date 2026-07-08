@@ -56,7 +56,7 @@ The ADS protocol provides a set of [commands](https://infosys.beckhoff.com/engli
 
 With the advent of Industry 4.0, there is an increasing demand for intelligence, automation and digitization in manufacturing. In this context, the MQTT protocol has obvious advantages over the ADS protocol.
 
-[MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) is a messaging protocol designed for IoT devices and applications operating on a publish/subscribe model. It's lightweight, efficient, reliable, and allows for real-time communication. MQTT is well-suited for environments with limited resources, where efficient use of power and bandwidth is necessary. Currently, it has been widely applied in areas such as the Internet of Things (IoT), mobile Internet, smart hardware, connected cars, smart cities, remote healthcare services, oil and energy.
+[MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) is a messaging protocol designed for IoT devices and applications operating on a publish/subscribe model. It's lightweight, efficient, reliable, and allows for real-time communication. MQTT is well-suited for environments with limited resources, where efficient use of power and bandwidth is necessary. Currently, it has been widely applied in areas such as the Internet of Things (IoT), mobile Internet, smart hardware, [connected cars](https://www.emqx.com/en/blog/connected-cars-and-automotive-connectivity-all-you-need-to-know), smart cities, remote healthcare services, oil and energy.
 
 Furthermore, MQTT is an open standard protocol and has many open-source implementations that can run on different platforms compared to the ADS protocol.
 

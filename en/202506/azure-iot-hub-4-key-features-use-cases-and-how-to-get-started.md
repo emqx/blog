@@ -1,6 +1,6 @@
 ## What Is Microsoft Azure IoT Hub?
 
-The internet of things (IoT) enables everyday physical objects to connect to the internet and intercommunicate, changing the way we live and work. Azure IoT Hub, a cloud service provided by Microsoft, is a fully managed service that enables organizations to manage, monitor, and control IoT devices.
+The internet of things (IoT) enables everyday physical objects to connect to the internet and intercommunicate, changing the way we live and work. Azure IoT Hub, a cloud service provided by Microsoft, is a fully managed service that enables organizations to manage, monitor, and [control IoT devices](https://www.emqx.com/en/customers/china-southern-power-grid).
 
 In addition, Azure IoT Hub enables reliable, secure bidirectional communications between IoT devices and its cloud-based services. It allows developers to receive messages from, and send messages to, IoT devices, acting as a central message hub for communication. It can also help organizations make use of data obtained from IoT devices, transforming IoT data into actionable insights.
 
@@ -97,9 +97,9 @@ Here are the general steps for starting to use Azure IoT Hub.
 
 ## **EMQX on Azure: A Powerful Enhancement to Azure IoT Hub**
 
-Azure loT Hub is a powerful solution, but it has several limitations, particularly in its ability to manage large-scale MQTT communications.
+Azure loT Hub is a powerful solution, but it has several limitations, particularly in its ability to manage large-scale [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) communications.
 
-EMQX is a high-performance MQTT platform that facilitates efficient messaging and data communication between IoT devices. Built to handle millions of concurrent connections, it’s one of the most scalable and reliable MQTT brokers on the market today.
+EMQX is a high-performance MQTT platform that facilitates efficient messaging and data communication between IoT devices. Built to handle millions of concurrent connections, it’s one of the most scalable and reliable [MQTT brokers](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) on the market today.
 
 When integrated with Azure, EMQX significantly strengthens the platform’s ability to support IoT communication at scale, with added benefits such as:
 

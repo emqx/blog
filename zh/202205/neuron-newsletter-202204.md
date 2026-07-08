@@ -1,4 +1,4 @@
->Neuron 为工业物联网的「连接」而生，支持同时为多个不同通讯协议设备、**数十种工业协议**进行一站式接入及 MQTT 协议转换，仅**占用超低资源**，可以原生或容器的方式部署在 X86、ARM 等架构的各类边缘硬件中，助力构建工业物联网平台与应用。
+>Neuron 为[工业物联网](https://www.emqx.com/zh/blog/iiot-explained-examples-technologies-benefits-and-challenges)的「连接」而生，支持同时为多个不同通讯协议设备、**数十种工业协议**进行一站式接入及 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 协议转换，仅**占用超低资源**，可以原生或容器的方式部署在 X86、ARM 等架构的各类边缘硬件中，助力构建工业物联网平台与应用。
 >
 >Github 仓库：[https://github.com/emqx/neuron](https://github.com/emqx/neuron) 
 
@@ -30,7 +30,7 @@
   新增数据格式更有利于使用 EMQX 以及 eKuiper 进行处理，另一种数据格式对于使用代码解析较为友好。
 
 - 修改 read/write tag API，使用 name 字段替换 id 字段，调用 API 参数更加友好。
-- OPC UA 以及 MQTT 使用 SSL 时，支持在 Dashboard 上选择证书以及公私钥，简化 SSL 连接时的操作。
+- [OPC UA](https://www.emqx.com/zh/blog/opc-ua-protocol) 以及 MQTT 使用 SSL 时，支持在 Dashboard 上选择证书以及公私钥，简化 SSL 连接时的操作。
 - 新增 Driver 类型 adapter，降低 Driver 开发难度
 - 支持以 Demo 的方式启动
 - 增加了 Docker 版本

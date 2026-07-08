@@ -2,7 +2,7 @@
 
 Upstash is a cloud-based, serverless data platform that empowers developers to seamlessly integrate Redis databases and Kafka into their applications without the hassle of managing infrastructure. Offering a serverless architecture, Upstash allows users to enjoy the benefits of Redis, a high-performance, in-memory data store, and Kafka, without dealing with the complexities of deployment, scaling, or maintenance.
 
-Recently, EMQX Cloud, a fully managed MQTT cloud service, has announced its integration support for  Upstash.  Organizations can now harness both EMQX Cloud for MQTT and Upstash for Kafka, enhancing MQTT communication and Kafka deployments for critical applications. This powerful combination allows for smooth integration between IoT devices that use MQTT and Kafka's stream processing capabilities, thus unlocking the full potential of IoT infrastructure for scalable and future-proof solutions.
+Recently, [EMQX Cloud](https://www.emqx.com/en/cloud), a fully managed [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) cloud service, has announced its integration support for  Upstash.  Organizations can now harness both EMQX Cloud for MQTT and Upstash for Kafka, enhancing MQTT communication and Kafka deployments for critical applications. This powerful combination allows for smooth integration between IoT devices that use MQTT and Kafka's stream processing capabilities, thus unlocking the full potential of IoT infrastructure for scalable and future-proof solutions.
 
 In this tutorial, we'll show you step-by-step how to integrate Upstash with EMQX Cloud in four detailed steps.
 

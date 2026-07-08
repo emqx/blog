@@ -2,7 +2,7 @@
 
 这需要面面俱到地针对协议中的繁杂标准和指定的行为规范进行较为完整的测试。同时，考虑到实际使用中可能存在的各种干扰和攻击，测试过程也需要覆盖各种非标准异常报文，以分析目标平台对异常情况的容错和处理能力。
 
-模糊测试是一个非常有效的测试手段。本文将以 EMQX 为例，介绍如何使用模糊测试工具来发现 MQTT 服务器/[MQTT 客户端](https://www.emqx.com/zh/blog/mqtt-client-tools)对协议实现上可能存在的缺陷和漏洞。
+模糊测试是一个非常有效的测试手段。本文将以 EMQX 为例，介绍如何使用模糊测试工具来发现 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 服务器/[MQTT 客户端](https://www.emqx.com/zh/blog/mqtt-client-tools)对协议实现上可能存在的缺陷和漏洞。
 
 ## 什么是模糊测试
 
@@ -68,7 +68,7 @@ Synopsys Defensics 使用 FlexNet 管理许可证书，需要在执行 Defensics
 
 ### 基础配置
 
-在基础配置中设置 MQTT Server 的 ip 地址和端口号，以及用于测试的 MQTT Client 配置。
+在基础配置中设置 [MQTT Server](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison) 的 ip 地址和端口号，以及用于测试的 MQTT Client 配置。
 
 > 其中 MQTT 默认为 1883 端口（在启用了 TLS/SSL 时为 8883 端口）。
 

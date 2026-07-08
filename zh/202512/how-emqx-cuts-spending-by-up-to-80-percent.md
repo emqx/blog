@@ -105,7 +105,7 @@ AWS IoT Core 仅能在 AWS 环境中运行，而 EMQX 可灵活部署于 AWS、A
 
 ### **2. 完整 MQTT 标准支持**
 
-据 EMQ 官方对比数据显示，AWS IoT Core 存在多项协议限制，包括不支持 QoS 2、无法保证消息传输顺序、QoS 1 消息的重试时间被限制在 1 小时。而 EMQX 全面兼容 MQTT 3.x 与 MQTT 5 协议标准，提供诸多复杂应用依赖的高级协议功能。
+据 EMQ 官方对比数据显示，AWS IoT Core 存在多项协议限制，包括不支持 QoS 2、无法保证消息传输顺序、QoS 1 消息的重试时间被限制在 1 小时。而 EMQX 全面兼容 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 3.x 与 MQTT 5 协议标准，提供诸多复杂应用依赖的高级协议功能。
 
 ### **3. 单租户专属架构**
 

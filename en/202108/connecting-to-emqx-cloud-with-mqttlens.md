@@ -21,7 +21,7 @@ MQTTLens fully supports the following functions:
 
 In the era of the IoT, EMQX Cloud can help users quickly build industry applications for the IoT area and easily realize the collection, transmission, calculation, and persistence of IoT data.
 
-This article will use [Free Public MQTT Broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker) provided by EMQX Cloud as the MQTT server address for this test. The server access information is as follows:
+This article will use [Free Public MQTT Broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker) provided by EMQX Cloud as the [MQTT server](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) address for this test. The server access information is as follows:
 
 - Broker: **broker.emqx.io**
 - TCP Port: **1883**

@@ -145,7 +145,7 @@ mqtt pub -t 'testtopic/hello' -h 'broker.emqx.io' -m 'from MQTT.js'
 
 #### mqtt.connect([url], options)
 
-连接到指定的 MQTT Broker 的函数，并始终返回一个 Client 对象。第一个参数传入一个 URL 值，URL 可以是以下协议：`mqtt`, `mqtts`, `tcp`, `tls`, `ws`, `wss`。URL 也可以是一个由 URL.parse() 返回的对象。然后再传入一个 Options 对象，用于配置 MQTT 连接时的选项。当使用 WebSocket 连接时需要注意地址后是否需要加上一个 path，例如 `/mqtt`。
+连接到指定的 [MQTT Broker](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison) 的函数，并始终返回一个 Client 对象。第一个参数传入一个 URL 值，URL 可以是以下协议：`mqtt`, `mqtts`, `tcp`, `tls`, `ws`, `wss`。URL 也可以是一个由 URL.parse() 返回的对象。然后再传入一个 Options 对象，用于配置 MQTT 连接时的选项。当使用 WebSocket 连接时需要注意地址后是否需要加上一个 path，例如 `/mqtt`。
 
 下面列举一些常用的 Options 对象中的属性值：
 
@@ -155,7 +155,7 @@ mqtt pub -t 'testtopic/hello' -h 'broker.emqx.io' -m 'from MQTT.js'
   - `protocolVersion`: MQTT 协议版本号，默认为 4（v3.1.1）可以修改为 3（v3.1）和 5（v5.0）
   - `clean`: 默认为 `true`，是否清除会话。当设置为 `true` 时，断开连接后将清除会话，订阅过的 Topics 也将失效。当设置为 `false` 时，离线状态下也能收到 QoS 为 1 和 2 的消息
   - `reconnectPeriod`: 重连间隔时间，单位为毫秒，默认为 1000 毫秒，**注意：**当设置为 0 以后将取消自动重连
-  - `connectTimeout`: 连接超时时长，收到 CONNACK 前的等待时间，单位为毫秒，默认 30000 毫秒
+  - `connectTimeout`: 连接超时时长，收到 [CONNACK](https://www.emqx.com/zh/blog/mqtt5-new-features-reason-code-and-ack) 前的等待时间，单位为毫秒，默认 30000 毫秒
   - `username`: 认证用户名，如果 Broker 要求用户名认证的话，请设置该值
   - `password`: 认证密码，如果 Broker 要求密码认证的话，请设置该值
   - `will`: 遗嘱消息，一个可配置的对象值，当客户端非正常断开连接时，Broker 就会向遗嘱 Topic 里面发布一条消息，格式为：

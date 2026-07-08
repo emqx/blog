@@ -1,8 +1,8 @@
-In this article, we will simulate temperature and humidity data and report it to the EMQX cloud on the GCP platform via the MQTT protocol, after which we will use the EMQX Cloud data integration to enable the NAT gateway and save the data to the InfluxDB Cloud over the public network.
+In this article, we will simulate temperature and humidity data and report it to the EMQX cloud on the GCP platform via the [MQTT protocol](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt), after which we will use the EMQX Cloud data integration to enable the NAT gateway and save the data to the InfluxDB Cloud over the public network.
 
 ## EMQX Cloud
 
-[EMQX Cloud](https://www.emqx.com/en/cloud) is the world's first fully managed MQTT 5.0 public cloud service for IoT from EMQ. It provides a one-stop O&M colocation and a unique isolated environment for MQTT services. In the era of Internet of Everything, EMQX Cloud can help you quickly build industry applications and easily realize the collection, transmission, computation, and persistence of IoT data.
+[EMQX Cloud](https://www.emqx.com/en/cloud) is the world's first fully managed [MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5) public cloud service for IoT from EMQ. It provides a one-stop O&M colocation and a unique isolated environment for MQTT services. In the era of Internet of Everything, EMQX Cloud can help you quickly build industry applications and easily realize the collection, transmission, computation, and persistence of IoT data.
 
 With the infrastructure provided by cloud providers, EMQX Cloud is available in dozens of countries and regions around the world, providing low-cost, secure, and reliable cloud services for 5G and Internet of Everything applications.
 

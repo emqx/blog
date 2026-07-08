@@ -319,7 +319,7 @@ However, it is recommended to keep payloads small on ESP8266 due to limited RAM 
 
 For development and testing, MQTT over TCP (port 1883) is recommended due to its simplicity and lower memory usage.
 
-For production deployments where security is important, MQTT over TLS (port 8883) should be used to encrypt communication and prevent data interception. However, TLS introduces additional memory and CPU overhead on ESP8266, so proper optimization such as certificate management and NTP time synchronization is required.
+For production deployments where security is important, [MQTT over TLS](https://www.emqx.com/en/blog/fortifying-mqtt-communication-security-with-ssl-tls) (port 8883) should be used to encrypt communication and prevent data interception. However, TLS introduces additional memory and CPU overhead on ESP8266, so proper optimization such as certificate management and NTP time synchronization is required.
 
 ## Conclusion
 

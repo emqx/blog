@@ -14,7 +14,7 @@
 
 #### 多源数据采集、接入
 
-在工业领域，存在着使用各种工业协议的设备，[Neuron](https://www.emqx.com/zh/products/emqx-neuron) 工业协议网关软件支持 [Modbus](https://www.emqx.com/zh/blog/modbus-protocol-the-grandfather-of-iot-communication)、OPC UA、IEC 61850 和 IEC 104 等常用工业协议，让使用不同协议的设备数据能够被采集到统一的数据平台。
+在工业领域，存在着使用各种工业协议的设备，[Neuron](https://www.emqx.com/zh/products/emqx-neuron) 工业协议网关软件支持 [Modbus](https://www.emqx.com/zh/blog/modbus-protocol-the-grandfather-of-iot-communication)、[OPC UA](https://www.emqx.com/zh/blog/opc-ua-protocol)、IEC 61850 和 IEC 104 等常用工业协议，让使用不同协议的设备数据能够被采集到统一的数据平台。
 
 同时，EMQ 智慧工厂解决方案还可以将采集到的数据接入工厂内各类其他的系统进行集成。比如传统的 PLC、SCADA、DCS 等系统， MES、WMS、ERP 等生产管理软件，以及企业服务总线 ESB、各种数据库、以及第三方软件，此外还支持集成非结构化数据，如视频、文档等。
 

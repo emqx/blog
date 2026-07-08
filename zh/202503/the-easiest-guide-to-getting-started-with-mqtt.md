@@ -276,7 +276,7 @@ MQTT 客户端在向服务器发起 CONNECT 请求时，可以选择是否发送
 
 ## 协议对比：MQTT 的核心优势 
 
-除 MQTT 外，HTTP、WebSocket 和 CoAP 等协议也常用于物联网领域。相较而言，MQTT 通过异步通信机制展现出独特优势：更低的带宽占用、轻量级发布-订阅模型，以及优化的报文头设计。这些使其特别适用于资源受限环境和大规模设备网络部署场景。
+除 MQTT 外，HTTP、WebSocket 和 [CoAP](https://www.emqx.com/zh/blog/coap-protocol) 等协议也常用于物联网领域。相较而言，MQTT 通过异步通信机制展现出独特优势：更低的带宽占用、轻量级发布-订阅模型，以及优化的报文头设计。这些使其特别适用于资源受限环境和大规模设备网络部署场景。
 
 MQTT 与其他协议的深度对比分析可参考以下专题文章：
 
@@ -311,13 +311,13 @@ MQTT 安全性在物联网应用中至关重要——物联网设备通常处理
 
 ### **MQTT over QUIC**
 
-QUIC 是 Google 推出的一种基于 UDP 的新型传输协议，能够降低延迟、提高数据传输速率。将 QUIC 引入 MQTT 将为网络不稳定或低延迟要求的场景（如车联网和工业物联网）带来优势。EMQX 和未来的 MQTT 版本正逐步采用 MQTT over QUIC，将引领物联网连接标准的重要变革。
+[QUIC](https://www.emqx.com/zh/blog/quic-protocol-the-features-use-cases-and-impact-for-iot-iov) 是 Google 推出的一种基于 UDP 的新型传输协议，能够降低延迟、提高数据传输速率。将 QUIC 引入 MQTT 将为网络不稳定或低延迟要求的场景（如车联网和[工业物联网](https://www.emqx.com/zh/blog/iiot-explained-examples-technologies-benefits-and-challenges)）带来优势。EMQX 和未来的 MQTT 版本正逐步采用 MQTT over QUIC，将引领物联网连接标准的重要变革。
 
 更多详情，请查看博客：[MQTT over QUIC：物联网消息传输还有更多可能](https://www.emqx.com/zh/blog/mqtt-over-quic)
 
 ### **MQTT Serverless**
 
-Serverless MQTT 作为前沿的架构创新，使 MQTT 服务的快速部署变得轻而易举。此外，其资源自动扩展和按需付费模式提供了极大的灵活性，有望推动 MQTT 更广泛的应用，降低运营成本，激发不同行业的创新协作。我们甚至可能看到每个物联网和工业物联网开发者都能拥有一个免费的 Serverless MQTT 消息服务器。
+[Serverless MQTT](https://www.emqx.com/zh/cloud/serverless-mqtt) 作为前沿的架构创新，使 MQTT 服务的快速部署变得轻而易举。此外，其资源自动扩展和按需付费模式提供了极大的灵活性，有望推动 MQTT 更广泛的应用，降低运营成本，激发不同行业的创新协作。我们甚至可能看到每个物联网和工业物联网开发者都能拥有一个免费的 Serverless MQTT 消息服务器。
 
 <section class="promotion">
     <div>

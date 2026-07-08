@@ -1,4 +1,4 @@
-[EMQX](https://www.emqx.com/en/products/emqx) provides users with a powerful built-in management console, the EMQX Dashboard. With its web-based interface, users can effortlessly monitor and manage EMQX clusters while configuring essential features. In the recently-released EMQX Enterprise 5.1, the Dashboard introduces a fresh and intuitive design, offering the most user-friendly MQTT broker management UI available.
+[EMQX](https://www.emqx.com/en/products/emqx) provides users with a powerful built-in management console, the EMQX Dashboard. With its web-based interface, users can effortlessly monitor and manage EMQX clusters while configuring essential features. In the recently-released EMQX Enterprise 5.1, the Dashboard introduces a fresh and intuitive design, offering the most user-friendly [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) broker management UI available.
 
 The revamped UI/UX of the EMQX Dashboard brings forth improved visual aesthetics and content organization, making key data and metrics easily accessible. It provides a comprehensive range of built-in features, such as advanced authentication and permission management for connections, subscriptions, and publishing. Additionally, it offers seamless data integration and transformation through data bridging and the rules engine.
 
@@ -18,7 +18,7 @@ A restructured menu categorizes tasks based on different roles and responsibilit
 The new menu structure includes the following sections:
 
 1. Monitoring: Provides daily operational personnel an overview of cluster performance and various categorized views, including clients, subscriptions, retained messages, and delayed publishes. It also offers alarm integration and monitoring capabilities.
-2. Access Control: Focuses on MQTT access security management, enabling administrators to manage and review MQTT client authentication and permissions. It also offers client blacklist management.
+2. Access Control: Focuses on MQTT access security management, enabling administrators to manage and review [MQTT client](https://www.emqx.com/en/blog/mqtt-client-tools) authentication and permissions. It also offers client blacklist management.
 3. Integration: Facilitates data integration with the introduction of the visual Flows page. Users can easily view data processing rules and integration with third-party data systems for each topic. This section also includes the rule engine and data bridging management.
 4. Management: Consolidates previously scattered configuration options, organizing them by topic categories. The configuration interface adopts a horizontal layout, allowing for a more spacious configuration view.
 5. Diagnose: Provides various self-diagnostic features to help users debug and troubleshoot errors and issues.

@@ -6,7 +6,7 @@ After careful consideration, I began to sift through the appropriate technology 
 
 - **ESP32:** ESP32 stands out for its integrated Wi-Fi and Bluetooth capabilities, along with its cost-effective nature. This chip provides robust performance support for IoT projects, representing an ideal choice for achieving cost control without sacrificing functionality.
 - **DS18B20 Temperature Sensor:** For temperature monitoring, the DS18B20 becomes my go-to due to its precise digital temperature readings and superior water-resistant performance. The sensor's collaborative operation with the ESP32 ensures the accuracy and stability of the water temperature monitoring system.
-- **EMQX Cloud Serverless MQTT Broker:** Among numerous messaging middleware, [EMQX Cloud](https://www.emqx.com/en/cloud) is favored for its high performance, reliability, and the excellence of its Serverless MQTT services in handling a substantial number of concurrent connections and message routing. This is crucial for ensuring the smooth communication between devices.
+- **EMQX Cloud Serverless [MQTT Broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison):** Among numerous messaging middleware, [EMQX Cloud](https://www.emqx.com/en/cloud) is favored for its high performance, reliability, and the excellence of its Serverless MQTT services in handling a substantial number of concurrent connections and message routing. This is crucial for ensuring the smooth communication between devices.
 - **Python and Flask:** Python was chosen for its expressive power and rich library functions, while Flask appeals with its lightweight and highly flexible characteristics, adapting to the needs of rapid development and deployment. This is crucial for the swift realization of project prototypes.
 - [**Fly.io**](https://fly.io/)**:** Its globally distributed edge hosting service offers a unique platform capable of rapidly transforming containers into micro-VMs. This not only accelerates the deployment of applications but also significantly reduces data transfer latency, offering users a near real-time experience.
 
@@ -47,7 +47,7 @@ In this project, our goal was to monitor water temperature using an ESP32 and a 
 
 1. **Wi-Fi Connection Setup:** Initially, the ESP32 was configured to connect to the internet via Wi-Fi. This involved setting the Wi-Fi SSID and password directly in the code.
 2. **Sensor Initialization:** We connected the DS18B20 water temperature sensor to the ESP32 using GPIO 25. The sensor was then initialized in the code, where we also set the resolution for temperature readings.
-3. **Secure MQTT Communication:** Data transmission was secured using the MQTT protocol, via the EMQX Cloud Serverless MQTT Broker. We input detailed MQTT broker information in the setup and employed SSL/TLS encryption to ensure the security of the data transmission.
+3. **Secure MQTT Communication:** Data transmission was secured using the [MQTT protocol](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt), via the EMQX Cloud Serverless MQTT Broker. We input detailed MQTT broker information in the setup and employed SSL/TLS encryption to ensure the security of the data transmission.
 4. **Temperature Data Reading and Transmission:** The system was programmed to read the water temperature every minute. The readings were formatted as JSON and published to the cloud using the MQTT protocol.
 
 ### Developing the Backend Service with Python and Flask

@@ -1,6 +1,6 @@
-In today's fast-paced IoT and messaging landscape, a reliable, low-latency, and scalable broker is essential. EMQX leads in MQTT solutions, and with EMQX Serverless Plan, you can deploy a robust MQTT service in seconds. But how do you connect large language models like Anthropic’s Claude to an EMQX broker? That’s where **EMQX MCP Server** comes in.
+In today's fast-paced IoT and messaging landscape, a reliable, low-latency, and scalable broker is essential. EMQX leads in [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) solutions, and with EMQX Serverless Plan, you can deploy a robust MQTT service in seconds. But how do you connect large language models like Anthropic’s Claude to an EMQX broker? That’s where **EMQX MCP Server** comes in.
 
-[EMQX MCP Server](https://github.com/Benniu/emqx-mcp-server) is a [Model Context Protocol (MCP)](https://www.anthropic.com/news/model-context-protocol) server implementation that enables Anthropic's Claude to interact with MQTT brokers. This blog post will walk you through this innovative solution, explain its significance, and provide a step-by-step tutorial on how to set it up using [EMQX Serverless](https://www.emqx.com/en/cloud/serverless-mqtt).
+[EMQX MCP Server](https://github.com/Benniu/emqx-mcp-server) is a [Model Context Protocol (MCP)](https://www.anthropic.com/news/model-context-protocol) server implementation that enables Anthropic's Claude to interact with [MQTT brokers](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison). This blog post will walk you through this innovative solution, explain its significance, and provide a step-by-step tutorial on how to set it up using [EMQX Serverless](https://www.emqx.com/en/cloud/serverless-mqtt).
 
 ![image.png](https://assets.emqx.com/images/7680094555c3f1e4c37003bdc51c5c84.png)
 
@@ -16,10 +16,10 @@ In today's fast-paced IoT and messaging landscape, a reliable, low-latency, and 
 
 EMQX MCP Server is an implementation of Anthropic's [Model Context Protocol (MCP)](https://www.anthropic.com/news/model-context-protocol) that allows Claude to interact with MQTT brokers. It acts as a bridge between Claude Desktop(an MCP client) or any other MCP clients (e.g., Cursor, Cline) and the EMQX MQTT infrastructure, giving Claude the ability to:
 
-1. List and manage MQTT clients
+1. List and manage [MQTT clients](https://www.emqx.com/en/blog/mqtt-client-tools)
 2. Retrieve detailed client information
 3. Disconnect clients when necessary
-4. Publish messages to any MQTT topic
+4. Publish messages to any [MQTT topic](https://www.emqx.com/en/blog/advanced-features-of-mqtt-topics)
 
 This integration leverages the power of Claude's natural language processing while extending its capabilities into IoT and messaging domains - opening up entirely new possibilities for AI-assisted device management and monitoring.
 
@@ -57,7 +57,7 @@ EMQX Serverless is the perfect starting point for this integration - it's free t
    - Click "Create" to generate a new API key and secret
    - Save these credentials securely - you'll need them later
 
-For detailed instructions on creating your EMQX Cloud Serverless deployment, refer to the [official documentation](https://docs.emqx.com/en/cloud/latest/create/serverless.html).
+For detailed instructions on creating your [EMQX Cloud](https://www.emqx.com/en/cloud) Serverless deployment, refer to the [official documentation](https://docs.emqx.com/en/cloud/latest/create/serverless.html).
 
 ### Step 2: Install Claude Desktop App
 
@@ -162,7 +162,7 @@ Connected Client:
 
 - Client ID: mqttx_2232bdb1
 - Username: test
-- Protocol: MQTT v5
+- Protocol: [MQTT v5](https://www.emqx.com/en/blog/introduction-to-mqtt-5)
 
 ...
 

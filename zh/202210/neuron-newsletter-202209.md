@@ -8,7 +8,7 @@
 
 ## 关键数据统计以及事件通知
 
-Neuron 将在 2.3 版本中提供基于 HTTP 与 MQTT 的数据统计插件，将 Neuron 中的一些关键数据及关键事件反馈出去。
+Neuron 将在 2.3 版本中提供基于 HTTP 与 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 的数据统计插件，将 Neuron 中的一些关键数据及关键事件反馈出去。
 
 统计信息主要为南北向 node 数据统计，包括 node 数量、运行中 node 数量、与设备断开连接的 node 数量、南向 node 中配置的点位数量、node 收发数据的字节数、指令数，以及 node 中更为细致的一些状态信息，如与设备之间的延迟等。
 

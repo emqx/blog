@@ -1,10 +1,10 @@
 ## Introduction
 
-Are you looking to take your IoT infrastructure to the next level? MQTT protocol has already become the most popular choice for IoT platform building due to its lightweight, [publish/subscribe model](https://www.emqx.com/en/blog/mqtt-5-introduction-to-publish-subscribe-model) and reliability. However, as the business grows, IoT solution providers may face increasing costs associated with maintaining their infrastructure and stricter data privacy requirements. 
+Are you looking to take your IoT infrastructure to the next level? [MQTT protocol](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) has already become the most popular choice for IoT platform building due to its lightweight, [publish/subscribe model](https://www.emqx.com/en/blog/mqtt-5-introduction-to-publish-subscribe-model) and reliability. However, as the business grows, IoT solution providers may face increasing costs associated with maintaining their infrastructure and stricter data privacy requirements. 
 
 EMQ, the leading provider of open-source MQTT messaging platforms, offers [EMQX Cloud BYOC edition](https://www.emqx.com/en/cloud/byoc) to enable you to deploy MQTT clusters in your cloud environment of choice while keeping complete control over your data privacy and security.
 
-In this blog, we'll explore the BYOC model and architecture of EMQX Cloud BYOC edition to help you understand how it can benefit your business.
+In this blog, we'll explore the BYOC model and architecture of [EMQX Cloud](https://www.emqx.com/en/cloud) BYOC edition to help you understand how it can benefit your business.
 
 ## What is BYOC?
 
@@ -54,7 +54,7 @@ Here are what you can benefit from EMQX Cloud BYOC:
 
 EMQX Cloud BYOC edition has been adopted by businesses across a range of industries, including Internet of Vehicles (IoV), healthcare, and smart cities.
 
-In IoV scenarios, sensitive data such as vehicle location and driving behavior needs to be transmitted from the vehicle side to the MQTT Broker via either public or private networks, and then saved into the company's centralized data platform.
+In IoV scenarios, sensitive data such as vehicle location and driving behavior needs to be transmitted from the vehicle side to the [MQTT Broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) via either public or private networks, and then saved into the company's centralized data platform.
 
 EMQX Cloud BYOC can ensure that the entire data chain is within the customer's own cloud account to prevent unauthorized access and data breaches. This addresses the risks of data leakage from the source, reduces the involvement of intermediaries, and simplifies data management complexity.
 

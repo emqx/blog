@@ -1,4 +1,4 @@
-本示例将演示如何通过 基于 ESP8266 的 NodeMCU，把通过 DHT11 传感器搜集到的温、湿度数据通过 MQTT 协议将其上报到云端的 MQTT 服务，并且展示应用端如何订阅到这些数据并对之进行处理的过程。本文使用 MQTT 协议的原因在于该协议比较轻量级，节约能耗，非常适合于物联网的相关使用场景；目前各大公有云云提供商基本上都开放了基于 MQTT 协议的 IoT Hub 服务。比如 AWS 的 IoT Core，以及 Azure 的 IoT Hub 等，通过 MQTT 协议可以非常方便的将这些数据直接接入这些公有云服务。
+本示例将演示如何通过 基于 ESP8266 的 NodeMCU，把通过 DHT11 传感器搜集到的温、湿度数据通过 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 协议将其上报到云端的 MQTT 服务，并且展示应用端如何订阅到这些数据并对之进行处理的过程。本文使用 MQTT 协议的原因在于该协议比较轻量级，节约能耗，非常适合于物联网的相关使用场景；目前各大公有云云提供商基本上都开放了基于 MQTT 协议的 IoT Hub 服务。比如 AWS 的 IoT Core，以及 Azure 的 IoT Hub 等，通过 MQTT 协议可以非常方便的将这些数据直接接入这些公有云服务。
 
 本示例的总体架构如下
 
@@ -71,7 +71,7 @@
    }
    ```
 
-4. 设置 MQTT Broker 信息
+4. 设置 [MQTT Broker](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison) 信息
 
    ```c
    //connecting to a mqtt broker

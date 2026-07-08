@@ -1,4 +1,4 @@
-A smart factory, in its simplest form, is a highly digitized and connected production facility that relies on smart manufacturing. It is the embodiment of the Fourth Industrial Revolution, often referred to as Industry 4.0. The essence of a smart factory is its ability to evolve, adapt, and self-optimize. It seamlessly integrates the physical and digital worlds, using technology to improve processes, reduce waste, and increase productivity.
+A smart factory, in its simplest form, is a highly digitized and connected production facility that relies on [smart manufacturing](https://www.emqx.com/en/blog/the-smart-manufacturing-revolution). It is the embodiment of the Fourth Industrial Revolution, often referred to as Industry 4.0. The essence of a smart factory is its ability to evolve, adapt, and self-optimize. It seamlessly integrates the physical and digital worlds, using technology to improve processes, reduce waste, and increase productivity.
 
 Imagine a factory where machines communicate with each other, diagnose their own maintenance needs, and automatically adjust production schedules and resources to meet changing demands. A smart factory is a facility where real-time data and predictive analytics drive decision-making, eliminating guesswork and improving efficiency.
 
@@ -8,7 +8,7 @@ By leveraging digital technologies such as [Industrial Internet of Things (IIoT)
 
 ### 1. Industrial IoT
 
-The Industrial IoT (IIoT) is the backbone of a smart factory. It involves the use of sensors, machines, and other devices interconnected through a network. These devices continuously collect and exchange data, enabling real-time monitoring and control of the manufacturing processes. This interconnectivity allows for unprecedented visibility into every aspect of the factory, from supply chain to production line, enabling more informed decision making.
+The [Industrial IoT](https://www.emqx.com/en/blog/industrial-iot-systems) (IIoT) is the backbone of a smart factory. It involves the use of sensors, machines, and other devices interconnected through a network. These devices continuously collect and exchange data, enabling real-time monitoring and control of the manufacturing processes. This interconnectivity allows for unprecedented visibility into every aspect of the factory, from supply chain to production line, enabling more informed decision making.
 
 Furthermore, IIoT devices can communicate with each other, allowing for machine-to-machine (M2M) interaction. This means machines can autonomously adjust to changing conditions, increasing efficiency and reducing downtime. By leveraging IIoT, smart factories can achieve a level of automation and self-management previously unimaginable.
 

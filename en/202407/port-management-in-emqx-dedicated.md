@@ -6,7 +6,7 @@ The EMQX Console offers comprehensive port management capabilities specifically 
 
 - **1883 Port: MQTT over TCP** 
 
-  MQTT over TCP uses the lightweight MQTT protocol over a TCP connection, designed for efficient communication in various network conditions.
+  MQTT over TCP uses the lightweight [MQTT protocol](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) over a TCP connection, designed for efficient communication in various network conditions.
 
 - **8883 Port: MQTT over TLS/SSL**
 

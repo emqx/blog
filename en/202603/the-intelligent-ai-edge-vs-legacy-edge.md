@@ -68,7 +68,7 @@ Legacy protocols like Modbus were designed for efficiency, not semantics. They p
 
 EMQX Neuron enforces **Normalization and Contextualization** at the edge. It acts as a semantic layer, decoupling the OT addressing scheme from the IT data structure.
 
-Before the data leaves the gateway, EMQX Neuron wraps the raw signal in a rich metadata envelope, typically using JSON or the Sparkplug B standard. It standardizes units (e.g., converting all temperature inputs to Celsius) and attaches asset tags.
+Before the data leaves the gateway, EMQX Neuron wraps the raw signal in a rich metadata envelope, typically using JSON or the [Sparkplug B](https://www.emqx.com/en/solutions/mqtt-sparkplug) standard. It standardizes units (e.g., converting all temperature inputs to Celsius) and attaches asset tags.
 
 **Comparison:**
 
@@ -105,7 +105,7 @@ EMQX Neuron serves as a universal translator, solving the challenge of **Interop
 - **Automation:** Siemens S7, Ethernet/IP (Allen-Bradley), Omron FINS, Mitsubishi MC.
 - **Energy:** IEC 61850, IEC 60870-5-104.
 
-EMQX Neuron normalizes these disparate languages into a single internal format. Whether the input is a serial bit from 1995 or an OPC UA tag from 2024, the output to the cloud is a unified, standard stream. This capability creates a "Unified Namespace" (UNS), ensuring that the AI architecture remains decoupled from the physical hardware complexity.
+EMQX Neuron normalizes these disparate languages into a single internal format. Whether the input is a serial bit from 1995 or an [OPC UA](https://www.emqx.com/en/blog/opc-ua-protocol) tag from 2024, the output to the cloud is a unified, standard stream. This capability creates a "Unified Namespace" (UNS), ensuring that the AI architecture remains decoupled from the physical hardware complexity.
 
 ## 5. Data Continuity: Resilience in Unstable Networks
 
@@ -113,7 +113,7 @@ For time-series forecasting models (e.g., predicting Remaining Useful Life), the
 
 ### 5.1 The Risk of Network Instability
 
-Factory networks are notoriously unstable. Wi-Fi dead zones, interference, and maintenance outages are common. Legacy gateways typically operate on a "fire-and-forget" basis using UDP or unmanaged MQTT. If the network drops for 60 seconds, that minute of production data is lost forever.
+Factory networks are notoriously unstable. Wi-Fi dead zones, interference, and maintenance outages are common. Legacy gateways typically operate on a "fire-and-forget" basis using UDP or unmanaged [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt). If the network drops for 60 seconds, that minute of production data is lost forever.
 
 ### 5.2 Disk-Based Buffering & Replay
 
@@ -148,7 +148,7 @@ To visualize the fundamental shift required for Industrial AI, the following mat
 
 The transition from a "Legacy Edge" to an "Intelligent AI Edge" is not merely an upgrade; it is a fundamental architectural requirement for the era of Industrial AI. The evidence is clear: relying on passive pipes guarantees a future of noise, unmanageable costs, and security vulnerabilities.
 
-EMQX Neuron addresses the core pillars of modern IIoT success:
+EMQX Neuron addresses the core pillars of modern [IIoT](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges) success:
 
 - It ensures **Interoperability** across fragmented hardware.
 - It respects **Resource Constraints** via optimized edge analytics like deadbanding.

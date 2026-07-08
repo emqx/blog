@@ -146,7 +146,7 @@ MCP over MQTT enhances the original MCP functionality by adding the following ca
 
 - **Service Discovery**: Using MQTT's retained messages and last-will messages, **MCP Clients** can automatically discover available **MCP Servers**.
 - **Linear Scalability of Servers**: Thanks to MQTT's shared subscription feature, **MCP Servers** can scale up or down linearly while maintaining stateful.
-- **Centralized Authentication**: By relying on an MQTT Broker as a centralized messaging middleware, mature authentication and authorization solutions are more readily available.
+- **Centralized Authentication**: By relying on an [MQTT Broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) as a centralized messaging middleware, mature authentication and authorization solutions are more readily available.
 
 In the future, integrating an **MCP Server** plugin into the MQTT Broker can further simplify **MCP Server** deployment and optimize data transmission efficiency.
 

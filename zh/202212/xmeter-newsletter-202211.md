@@ -1,4 +1,4 @@
-本月，XMeter 团队仍将工作重心放在 XMeter Cloud 专业版的开发上。目前，XMeter Cloud 专业版计划于下个月上线，将为有大规模 MQTT 测试需求的用户提供更有力的支持，敬请期待。
+本月，XMeter 团队仍将工作重心放在 XMeter Cloud 专业版的开发上。目前，XMeter Cloud 专业版计划于下个月上线，将为有大规模 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 测试需求的用户提供更有力的支持，敬请期待。
 
 ## 模拟更高并发连接和消息吞吐
 

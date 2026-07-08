@@ -2,10 +2,10 @@
 
 In [EdgeX](https://www.edgexfoundry.org/) Geneva, [EMQX Kuiper - an SQL based rule engine](https://github.com/lf-edge/ekuiper) is integrated with EdgeX. Before diving into this tutorial, let's spend a little time on learning basic knowledge of Kuiper. Kuiper is an edge lightweight IoT data analytics / streaming software implemented by Golang, and it can be run at all kinds of resource constrained edge devices. Kuiper rules are based on ``Source``, ``SQL`` and ``Sink``.
 
-- Source: The data source of streaming data, such as data from [MQTT broker](https://www.emqx.com/en/products/emqx). In EdgeX scenario, the data source is EdgeX message bus, which could be ZeroMQ or MQTT broker.
+- Source: The data source of streaming data, such as data from [MQTT broker](https://www.emqx.com/en/products/emqx). In EdgeX scenario, the data source is EdgeX message bus, which could be ZeroMQ or [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison).
 
 - SQL: SQL is where you specify the business logic of streaming data processing. Kuiper provides SQL-like statements to allow you to extract, filter & transform data.
-- Sink: Sink is used for sending analysis result to a specified target. For example, send analysis result to another MQTT broker, or an HTTP rest address.
+- Sink: Sink is used for sending analysis result to a specified target. For example, send analysis result to another [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) broker, or an HTTP rest address.
 
 ![arch.png](https://assets.emqx.com/images/8776dd655fb03ce8f7b3e045af39ae31.png)
 

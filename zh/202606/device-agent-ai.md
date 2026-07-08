@@ -4,7 +4,7 @@
 
 我们做了一个不同的选择。
 
-Device Agent 是一个 MQTT 驱动的 AI 设备智能体平台。你用自然语言描述设备的能力，平台在几分钟内生成完整的设备智能体——包含设备规格、端侧 SDK、在线模拟器，以及语音、视觉、IM 等多通道交互入口。
+Device Agent 是一个 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 驱动的 AI 设备智能体平台。你用自然语言描述设备的能力，平台在几分钟内生成完整的设备智能体——包含设备规格、端侧 SDK、在线模拟器，以及语音、视觉、IM 等多通道交互入口。
 
 它不是连接层之上的一个 AI 对话界面，而是一条从设备建模到多智能体协作的完整工具链。
 

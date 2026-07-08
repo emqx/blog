@@ -41,7 +41,7 @@ Physical AI 的实现依赖于以下四个环节：
 
 - 分布式集群架构可支持千万级设备并发接入，满足超大规模智能终端连接需求；
 - 内置企业级消息队列，保障高峰期海量传感数据与控制指令不丢失，实现数据流的平滑处理；
-- 支持 MQTT over QUIC 协议，确保自动驾驶车辆、机器人等弱网及移动场景下的通信连续性。
+- 支持 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) over [QUIC 协议](https://www.emqx.com/zh/blog/quic-protocol-the-features-use-cases-and-impact-for-iot-iov)，确保自动驾驶车辆、机器人等弱网及移动场景下的通信连续性。
 
 ### 云边协同与全球部署
 
@@ -52,7 +52,7 @@ Physical AI 的实现依赖于以下四个环节：
 
 - 支持 MCP over MQTT，通过多协议适配与中心化服务管理能力，帮助企业无缝融入 Physical AI 生态，快速构建跨系统智能应用；
 - 基于可回放的消息流，持久化记录所有数据流动轨迹，允许智能体回溯历史状态，用于事故分析、AI 模型训练或系统复盘。
-- 除 MQTT 外，全面兼容 CoAP、LwM2M 等 50 多种协议，无缝接入各类设备与系统，支撑全球化 AI 应用。
+- 除 MQTT 外，全面兼容 [CoAP](https://www.emqx.com/zh/blog/coap-protocol)、[LwM2M](https://www.emqx.com/zh/blog/iot-protocols-mqtt-coap-lwm2m) 等 50 多种协议，无缝接入各类设备与系统，支撑全球化 AI 应用。
 - 提供基于 TLS/SSL 的端到端加密、认证授权机制，并符合全球化数据合规要求，确保数据全生命周期的安全可靠。
 
 ## **EMQX 在 Physical AI 场景中的实践案例**
@@ -71,7 +71,7 @@ Physical AI 的实现依赖于以下四个环节：
 
 ### **无人机群远程运维**
 
-某领先科技企业利用 EMQX Cloud 全托管 MQTT 服务解决了多产品线在全球部署中的高并发接入难题。通过跨区域多实例隔离架构与 TLS 加密机制，EMQX 支撑了数十万台无人机与云端任务系统的毫秒级指令交互，降低了多集群运维复杂度，保障了低空飞行作业的实时性与安全性。
+某领先科技企业利用 [EMQX Cloud](https://www.emqx.com/zh/cloud) 全托管 MQTT 服务解决了多产品线在全球部署中的高并发接入难题。通过跨区域多实例隔离架构与 TLS 加密机制，EMQX 支撑了数十万台无人机与云端任务系统的毫秒级指令交互，降低了多集群运维复杂度，保障了低空飞行作业的实时性与安全性。
 
 ## **结语**  
 

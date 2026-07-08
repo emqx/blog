@@ -6,11 +6,11 @@
 
 ## 准备工作
 
-为确保顺利地与物联网设备交流，我们需要安装一个 EMQX MQTT Broker 和 MQTTX 客户端。EMQX 可以为物联网设备提供消息传输功能，MQTTX 则允许我们进行消息的发布和订阅。
+为确保顺利地与物联网设备交流，我们需要安装一个 EMQX [MQTT Broker](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison) 和 MQTTX 客户端。EMQX 可以为物联网设备提供消息传输功能，MQTTX 则允许我们进行消息的发布和订阅。
 
 ### 安装 EMQX
 
-EMQX 是一个高性能、可扩展的 MQTT 平台，适用于物联网、工业物联网和车载网络场景。我们选择了 5.5.1 版本的 EMQX 企业版，因为其规则引擎能够使用 Protobuf 进行编码和解码，便于处理和验证 Protobuf 数据。
+EMQX 是一个高性能、可扩展的 MQTT 平台，适用于物联网、[工业物联网](https://www.emqx.com/zh/blog/iiot-explained-examples-technologies-benefits-and-challenges)和车载网络场景。我们选择了 5.5.1 版本的 EMQX 企业版，因为其规则引擎能够使用 Protobuf 进行编码和解码，便于处理和验证 Protobuf 数据。
 
 - 使用 Docker 安装：
 

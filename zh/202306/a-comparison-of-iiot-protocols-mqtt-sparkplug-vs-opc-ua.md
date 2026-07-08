@@ -1,6 +1,6 @@
 ## 引言
 
-工业系统需要确保数据的无缝交换，因此对于高效、安全的通信协议具有极高的依赖性。MQTT Sparkplug 和 OPC UA 是两个经常被提到的工业协议。本文将全面比较 MQTT Sparkplug 和 OPC UA 以及它们的衍生版本，帮助您更清楚地了解哪种协议更适合您的需求。
+工业系统需要确保数据的无缝交换，因此对于高效、安全的通信协议具有极高的依赖性。MQTT Sparkplug 和 [OPC UA](https://www.emqx.com/zh/blog/opc-ua-protocol) 是两个经常被提到的工业协议。本文将全面比较 MQTT Sparkplug 和 OPC UA 以及它们的衍生版本，帮助您更清楚地了解哪种协议更适合您的需求。
 
 ## OPC Classic 和 OPC UA
 
@@ -34,7 +34,7 @@ MQTT 协议在物联网场景中取得了巨大的成功，但由于互操作性
 
 Sparkplug 的一个显著特点是它支持设备之间的双向通信。这种能力使得设备不仅可以发送命令，还可以接收来自网络中其他设备的反馈。
 
-这篇博客通过介绍 5 个关键概念，阐述了为何 MQTT Broker 是实现 Sparkplug 设计原则的理想选择：[Sparkplug 规范中关于 MQTT Broker 的 5 个关键概念](https://www.emqx.com/zh/blog/5-key-concepts-for-mqtt-broker-in-sparkplug-specification)。
+这篇博客通过介绍 5 个关键概念，阐述了为何 [MQTT Broker](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison) 是实现 Sparkplug 设计原则的理想选择：[Sparkplug 规范中关于 MQTT Broker 的 5 个关键概念](https://www.emqx.com/zh/blog/5-key-concepts-for-mqtt-broker-in-sparkplug-specification)。
 
 ## OSI 模型概述
 
@@ -70,7 +70,7 @@ MQTT Sparkplug 和 OPC UA 各有优劣，因此在不同的使用场景中，可
 | **服务质量**     | QoS 0（至多一次）、QoS 1（至少一次）和 QoS 2（仅一次） | QoS 0（至多一次）、QoS 1（至少一次）和 QoS 2（仅一次） | 提供可靠的传输层，确保消息传递有序且不丢失           | 提供可靠的传输层，确保消息传递有序且不丢失           |
 | **状态感知**     | 否                                                     | 是                                                     | 是                                                   | 是                                                   |
 | **自动发现**     | 否                                                     | 否                                                     | 是                                                   | 是                                                   |
-| **应用领域**     | 物联网、家庭自动化和 M2M 应用                          | 工业物联网和 M2M 应用                                  | 工业自动化                                           | 工业自动化                                           |
+| **应用领域**     | 物联网、家庭自动化和 M2M 应用                          | [工业物联网](https://www.emqx.com/zh/blog/iiot-explained-examples-technologies-benefits-and-challenges)和 M2M 应用                                  | 工业自动化                                           | 工业自动化                                           |
 | **实时性**       | 是                                                     | 是                                                     | 是                                                   | 是                                                   |
 | **安全性**       | 安全性不如 OPC-UA                                      | 安全性不如 OPC-UA                                      | 数字证书、数字签名、数据加密和安全认证               | 数字证书、数字签名、数据加密和安全认证               |
 | **信息模型**     | 不具备内置的信息建模支持                               | 支持复杂的信息建模，但不及 OPC UA 多                   | 支持复杂的信息建模系统，允许创建复杂的数据结构和模型 | 支持复杂的信息建模系统，允许创建复杂的数据结构和模型 |

@@ -133,7 +133,7 @@ Now, we use the [MQTT client - MQTTX](https://mqttx.app) to connect, subscribe, 
 
 ### Receive message
 
-1. Create a connection in MQTTX and connect to the MQTT server.
+1. Create a connection in MQTTX and connect to the [MQTT server](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison).
 
    ![MQTTX new connection](https://assets.emqx.com/images/0813905d4d732565476cdbf5275a65e2.png)
 
@@ -216,7 +216,7 @@ if __name__ == '__main__':
 
 So far, we have completed a simple MQTT client using Flask-MQTT and can subscribe and publish messages in the Flask application.
 
-Next, you can check out [The Easy-to-understand Guide to MQTT Protocol](https://www.emqx.com/en/mqtt-guide) series of articles provided by EMQ to learn about MQTT protocol features, explore more advanced applications of MQTT, and get started with MQTT application and service development.
+Next, you can check out [The Easy-to-understand Guide to MQTT Protocol](https://www.emqx.com/en/mqtt-guide) series of articles provided by EMQ to learn about [MQTT protocol](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) features, explore more advanced applications of MQTT, and get started with MQTT application and service development.
 
 
 ## Other Articles in This Series

@@ -8,7 +8,7 @@
 
 作为[云原生的全托管 MQTT 云服务](https://www.emqx.com/zh/cloud)，除了全自动化的环境创建、服务部署、按需伸缩、服务监控和告警通知，**对于出海企业来说，EMQX Cloud 还具有以下优势：**
 
-1. 支持 Azure 平台后，选择 Azure 作为海外云服务商的企业可以实现**轻松对接**，在 Azure 的基础设施上轻松部署和管理 MQTT 服务。
+1. 支持 Azure 平台后，选择 Azure 作为海外云服务商的企业可以实现**轻松对接**，在 Azure 的基础设施上轻松部署和管理 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 服务。
 
 2. 地区时差问题为企业出海业务的运维增加了困难度，出现问题不得不在国内凌晨时间解决的情况也时有发生。EMQX Cloud 提供最高 **7\*24 小时的专业技术支持服务**，一旦出现问题可以第一时间进行处理，免除您的后顾之忧。
 

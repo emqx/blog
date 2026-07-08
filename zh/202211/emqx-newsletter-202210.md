@@ -1,6 +1,6 @@
-十月，EMQX 在产品质量和用户体验方面进行了进一步提升，同时 QUIC 相关开发工作也在持续进行中。
+十月，EMQX 在产品质量和用户体验方面进行了进一步提升，同时 [QUIC](https://www.emqx.com/zh/blog/quic-protocol-the-features-use-cases-and-impact-for-iot-iov) 相关开发工作也在持续进行中。
 
-此外，EMQX Cloud 在订阅渠道、部署地区、操作体验等方面均有更新。
+此外，[EMQX Cloud](https://www.emqx.com/zh/cloud) 在订阅渠道、部署地区、操作体验等方面均有更新。
 
 
 ## EMQX

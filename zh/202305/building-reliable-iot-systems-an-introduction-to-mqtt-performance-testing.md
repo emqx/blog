@@ -32,7 +32,7 @@
 - 测试系统长期运行的性能表现。目的是验证系统如果持续运行一段时间是否保持稳定。
 - 测试系统在不稳定的网络环境下的性能表现。目的是验证系统是否能够应对弱网络（这对于物联网服务来说很常见）的情况。
 
-由于 MQTT 是物联网领域最广泛使用的协议，我们也根据实际客户需求列举了一些 MQTT 协议的常见测试场景：
+由于 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 是物联网领域最广泛使用的协议，我们也根据实际客户需求列举了一些 MQTT 协议的常见测试场景：
 
 - 连接（Connection）：客户端在一定时间内连接到 Broker，并与 Broker 维持连接一段时间。
 - 广播（Fan-out）：大量客户端作为订阅者，只有少数或单个发布者。
@@ -62,6 +62,6 @@
 
 性能测试对于物联网系统来说非常重要，它可以降低风险，提高健壮性，帮助企业在快速发展的物联网行业中达成业务目标。
 
-EMQ 推出了 [MQTT 开放基准测试规范](https://github.com/emqx/mqttbs)，为 MQTT 基准测试提供了一种有效的方法。它分析了性能评估的关键指标，并提供了基准测试的实际用例。开发人员可以获得不同 MQTT Broker 之间客观的比较参考，从而做出明智的选择。
+EMQ 推出了 [MQTT 开放基准测试规范](https://github.com/emqx/mqttbs)，为 MQTT 基准测试提供了一种有效的方法。它分析了性能评估的关键指标，并提供了基准测试的实际用例。开发人员可以获得不同 [MQTT Broker](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison) 之间客观的比较参考，从而做出明智的选择。
 
 阅读我们的博客了解更多信息：[MQTT 开放基准测试规范：全面评估你的 MQTT Broker 性能](https://www.emqx.com/zh/blog/open-mqtt-benchmark-suite-the-ultimate-guide-to-mqtt-performance-testing)

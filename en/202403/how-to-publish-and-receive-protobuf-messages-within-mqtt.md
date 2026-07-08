@@ -10,7 +10,7 @@ This tutorial requires some preliminary work to ensure smooth communication with
 
 ### Install EMQX
 
-EMQX is a high-performance, scalable [MQTT platform](https://www.emqx.com/en/blog/mqtt-platform-essential-features-and-use-cases) suitable for IoT, Industrial IoT, and Vehicular network scenarios. We have chosen the 5.5.1 version of [EMQX Enterprise](https://www.emqx.com/en/products/emqx) edition as its rule engine is capable of encoding and decoding with Protobuf, making it convenient for processing and validating Protobuf data.
+EMQX is a high-performance, scalable [MQTT platform](https://www.emqx.com/en/blog/mqtt-platform-essential-features-and-use-cases) suitable for IoT, [Industrial IoT](https://www.emqx.com/en/blog/industrial-iot-systems), and Vehicular network scenarios. We have chosen the 5.5.1 version of [EMQX Enterprise](https://www.emqx.com/en/products/emqx) edition as its rule engine is capable of encoding and decoding with Protobuf, making it convenient for processing and validating Protobuf data.
 
 - Installation using Docker:
 
@@ -151,7 +151,7 @@ When using the MQTTX CLI client to handle messages in the Protobuf format, you n
 
 2. **Subscribe to Messages Using Commands**
 
-   To receive messages in the Protobuf format, you can subscribe to a specific MQTT topic:
+   To receive messages in the Protobuf format, you can subscribe to a specific [MQTT topic](https://www.emqx.com/en/blog/advanced-features-of-mqtt-topics):
 
    ```shell
    mqttx sub -t 'testtopic/protobuf' -h 127.0.0.1 -Pp ./SensorData.proto -Pmn IoT.SensorData

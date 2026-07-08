@@ -1,6 +1,6 @@
 In previous blogs, we introduced the impact of [file descriptors](https://www.emqx.com/en/blog/emqx-performance-tuning-maximum-connections-and-file-descriptors) and [TCP's SYN and Accept queues](https://www.emqx.com/en/blog/emqx-performance-tuning-tcp-syn-queue-and-accept-queue) on TCP connections. Today, we will explore another factor that could limit the maximum number of connections.
 
-Taking an EMQX node with a hardware configuration of 8 cores and 4GB as an example, after establishing approximately 65,536 MQTT connections, we may find that even if the number of connections has not reached the file descriptor limit, and the TCP's SYN and Accept queues have not overflowed, we still can’t establish more MQTT connections. Moreover, the following logs then appear in the operating system:
+Taking an EMQX node with a hardware configuration of 8 cores and 4GB as an example, after establishing approximately 65,536 [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) connections, we may find that even if the number of connections has not reached the file descriptor limit, and the TCP's SYN and Accept queues have not overflowed, we still can’t establish more MQTT connections. Moreover, the following logs then appear in the operating system:
 
 ```plain
 nf_conntrack: table full, dropping packet

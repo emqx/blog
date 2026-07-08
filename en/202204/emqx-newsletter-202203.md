@@ -18,7 +18,7 @@ Comparing to version beta.3, the rc.1 release mainly included below changes:
 
 - Continued polishing the dashboard UI design for online config updates.
 - Continued polishing the plug-in uploading, installing and management from dashboard UI.
-- More MQTT message sending and receiving rate statistics for metrics systems.
+- More [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) message sending and receiving rate statistics for metrics systems.
 - Simplified rate limiting design.
 - Add search support for AuthN and AuthZ based on built-in database
 - Add sleep mode support for [MQTT-SN](https://www.emqx.com/en/blog/connecting-mqtt-sn-devices-using-emqx) devices

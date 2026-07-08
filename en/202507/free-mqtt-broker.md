@@ -16,7 +16,7 @@ When looking for a **free MQTT broker**, you'll typically encounter three main c
 
 **Popular Open Source MQTT Broker:**
 
-- [EMQX](https://github.com/emqx/emqx): A highly scalable, masterless clustering MQTT broker with a large community and extensive feature set. It’s widely used for mission-critical applications in sectors like Industrial IoT, connected vehicles, and telecommunications.
+- [EMQX](https://github.com/emqx/emqx): A highly scalable, masterless clustering MQTT broker with a large community and extensive feature set. It’s widely used for mission-critical applications in sectors like [Industrial IoT](https://www.emqx.com/en/blog/industrial-iot-systems), connected vehicles, and telecommunications.
 - [Mosquitto](https://www.emqx.com/en/blog/mosquitto-mqtt-broker-pros-cons-tutorial-and-modern-alternatives): An excellent option for resource-constrained environments, known for its lightweight footprint. It supports the [MQTT protocol](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) versions 3.1, 3.1.1, and 5.0, providing flexibility and compatibility with a wide range of [MQTT clients](https://www.emqx.com/en/blog/mqtt-client-tools) and devices. 
 - [NanoMQ](https://nanomq.io/): A lightweight and fast MQTT messaging broker designed for edge computing scenarios in IoT. It is lightweight and high-performance, making it suitable for various edge computing platforms.
 

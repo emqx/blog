@@ -56,7 +56,7 @@ $ docker run -d --name emqx -p 1883:1883 emqx/emqx-edge:4.2.4
 
 ### MQTTX
 
-[MQTTX](https://mqttx.app/) is a cross-platform [MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5) desktop test client that supports macOS, Linux, Windows. Users can quickly create multiple simultaneous online **MQTT client** for convenient testing the connect/publish/subscribe functions of MQTT/TCP, MQTT/TLS, MQTT/WebSocket and other **MQTT protocol** features. 
+[MQTTX](https://mqttx.app/) is a cross-platform [MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5) desktop test client that supports macOS, Linux, Windows. Users can quickly create multiple simultaneous online **[MQTT client](https://www.emqx.com/en/blog/mqtt-client-tools)** for convenient testing the connect/publish/subscribe functions of MQTT/TCP, MQTT/TLS, MQTT/WebSocket and other **[MQTT protocol](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt)** features. 
 
 > Version: v1.4.2
 
@@ -100,7 +100,7 @@ Once you are on the Kuiper instance page, you will go to the Tab page of streams
 
 5. Select `Configuration Group`, and the configuration group is the configuration information defined under the stream type, for example, the default MQTT configuration group `servers` information is `['tcp://127.0.0.1:1883']`. You can customize this configuration information by clicking on the `Source Configuration` button above to go to the page to configure, or you can go to the `etc` directory to modify the configuration file. Here we select the reconfigured `demo_conf` configuration group.
 
-   > Note: If the MQTT Broker used is the EMQX Edge initiated by Docker, the address of Servers needs to be changed to the IP address within the Docker container 
+   > Note: If the [MQTT Broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) used is the EMQX Edge initiated by Docker, the address of Servers needs to be changed to the IP address within the Docker container 
 
 6. Select `Stream Format`, which will be chosen as `json` finally.
 

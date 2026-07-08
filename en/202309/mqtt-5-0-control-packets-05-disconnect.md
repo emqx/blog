@@ -1,6 +1,6 @@
-Welcome to the fifth article in the [MQTT 5.0 Packet Series](https://www.emqx.com/en/blog/introduction-to-mqtt-control-packets). In the previous article, we introduced the [PINGREQ and PINGRESP packets](https://www.emqx.com/en/blog/mqtt-5-0-control-packets-04-pingreq-pingresp) in MQTT 5.0. Now, we will introduce the control packet used when disconnecting: DISCONNECT.
+Welcome to the fifth article in the [MQTT 5.0 Packet Series](https://www.emqx.com/en/blog/introduction-to-mqtt-control-packets). In the previous article, we introduced the [PINGREQ and PINGRESP packets](https://www.emqx.com/en/blog/mqtt-5-0-control-packets-04-pingreq-pingresp) in [MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5). Now, we will introduce the control packet used when disconnecting: DISCONNECT.
 
-In MQTT, both the client and the server can send a DISCONNECT packet to the other party before disconnecting the network connection, indicating the reason for the connection closure. The DISCONNECT packet sent by the client can also affect the behavior of the server after the connection is disconnected, such as whether to send a [will message](https://www.emqx.com/en/blog/use-of-mqtt-will-message), or whether to update the Session Expiry Interval.
+In [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt), both the client and the server can send a DISCONNECT packet to the other party before disconnecting the network connection, indicating the reason for the connection closure. The DISCONNECT packet sent by the client can also affect the behavior of the server after the connection is disconnected, such as whether to send a [will message](https://www.emqx.com/en/blog/use-of-mqtt-will-message), or whether to update the Session Expiry Interval.
 
 ## Sample DISCONNECT Packet
 
@@ -14,7 +14,7 @@ The following command will create a client connection with the Client ID `mqtt-8
 mqttx conn --hostname broker.emqx.io --mqtt-version 5 --client-id mqtt-892324 \ --reconnect-period 0
 ```
 
-After we initiate the second connection, Wireshark will capture the DISCONNECT packet returned by the Public MQTT Server to the first connection:
+After we initiate the second connection, Wireshark will capture the DISCONNECT packet returned by the Public [MQTT Server](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) to the first connection:
 
 ```
 e0 02 8e 00
@@ -48,7 +48,7 @@ The Variable Header of the DISCONNECT packet contains the following fields in or
 | 0x04      | Disconnect with Will Message | Client           | The connection was closed normally, but the client still expects the server to publish the will message. |
 | 0x81      | Malformed Packet             | Client or Server | The received packet cannot be correctly parsed according to the protocol specifications, in MQTT we refer to these types of packets as malformed packets. |
 | 0x82      | Protocol Error               | Client or Server | Protocol errors usually refer to errors that can be discovered only after the control packet is parsed according to the protocol specifications, including data that the protocol does not allow, behavior that does not conform to the protocol requirements, and so on. For example, the client sends two CONNECT packets within a single connection. |
-| 0x8D      | Keep Alive timeout           | Server           | The server closed the connection because it did not receive any packets within 1.5 times the Keep Alive time. |
+| 0x8D      | [Keep Alive](https://www.emqx.com/en/blog/mqtt-keep-alive) timeout           | Server           | The server closed the connection because it did not receive any packets within 1.5 times the Keep Alive time. |
 | 0x8E      | Session taken over           | Server           | Another more recent connection using the same Client ID was established, causing the server to close this connection. |
 | 0x93      | Receive Maximum exceeded     | Client or Server | The number of QoS > 0 PUBLISH messages sent simultaneously by the peer exceeds the maximum receive value set when connecting. |
 | 0x94      | Topic Alias invalid          | Client or Server | The Topic Alias is invalid. For example, the value of Topic Alias in the PUBLISH packet is 0 or greater than the maximum Topic Alias agreed upon at the time of connection. |

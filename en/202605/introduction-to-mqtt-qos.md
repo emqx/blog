@@ -150,7 +150,7 @@ Not exactly. MQTT QoS applies to each message delivery hop. A publisher sends a 
 
 ### What is the default QoS in MQTT?
 
-In most MQTT clients and libraries, the default QoS is usually QoS 0 unless another level is explicitly specified. QoS 0 has the lowest overhead, but it does not provide delivery confirmation or retransmission.
+In most [MQTT clients](https://www.emqx.com/en/blog/mqtt-client-tools) and libraries, the default QoS is usually QoS 0 unless another level is explicitly specified. QoS 0 has the lowest overhead, but it does not provide delivery confirmation or retransmission.
 
 ### Does MQTT QoS guarantee message ordering?
 

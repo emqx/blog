@@ -2,7 +2,7 @@
 
 In the wave of Industry 4.0, [Industrial Internet of Things (IIoT)](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges) is leading a revolution, redefining the way data is collected, analyzed, and utilized. In this vast network consisting of billions of devices, real-time data flow is crucial for achieving automation, efficiency, and predictive maintenance. 
 
-This article presents a solution for IIoT with [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt), edge intelligence, and InfluxDB. We will provide a detailed guide on how to integrate the fully managed MQTT cloud service platform, [EMQX Cloud](https://www.emqx.com/en/cloud), with edge computing intelligence and InfluxDB's analytical capabilities to bring about a transformative change in the Industrial IoT.
+This article presents a solution for IIoT with [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt), edge intelligence, and InfluxDB. We will provide a detailed guide on how to integrate the fully managed MQTT cloud service platform, [EMQX Cloud](https://www.emqx.com/en/cloud), with edge computing intelligence and InfluxDB's analytical capabilities to bring about a transformative change in the [Industrial IoT](https://www.emqx.com/en/blog/industrial-iot-systems).
 
 ## EMQX Cloud: Addressing Challenges in IIoT
 
@@ -47,7 +47,7 @@ When deploying edge computing solutions, choosing the right tools and components
 
 ### NanoMQ: A Perfect Choice as an Edge MQTT Broker
 
-NanoMQ is a lightweight, high-performance MQTT 5.0 broker designed for edge computing scenarios. Its advantages include:
+NanoMQ is a lightweight, high-performance [MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5) broker designed for edge computing scenarios. Its advantages include:
 
 - **Lightweight and Resource-Friendly**: NanoMQ is designed to run on resource-constrained edge devices with minimal impact on device performance.
 - **Support for MQTT 5.0**: It supports the MQTT 5.0 protocol, providing more features and better performance to handle complex communication requirements.
@@ -82,7 +82,7 @@ NanoMQ is a lightweight, high-performance MQTT 5.0 broker designed for edge comp
    - MQTT protocol version
    - Client identifier (automatically assigned by NanoMQ by default)
    - Clean start
-   - Keep Alive
+   - [Keep Alive](https://www.emqx.com/en/blog/mqtt-keep-alive)
    - Username
    - Password
    - Forwarded topics (multiple topics separated by commas)
@@ -166,7 +166,7 @@ To verify the installation and functionality of NanoMQ, you can perform the foll
 
    ![Publish and Subscribe Testing](https://assets.emqx.com/images/f6aefc6a7aa15444e66fc4e617091224.png)
 
-In summary, configuring the connection of edge devices to EMQX Cloud requires detailed setup, and testing the connection through publishing and subscribing to MQTT topics can help verify the feasibility of the connection. This process lays the foundation for achieving a seamless connection between EMQX Cloud and edge devices.
+In summary, configuring the connection of edge devices to EMQX Cloud requires detailed setup, and testing the connection through publishing and subscribing to [MQTT topics](https://www.emqx.com/en/blog/advanced-features-of-mqtt-topics) can help verify the feasibility of the connection. This process lays the foundation for achieving a seamless connection between EMQX Cloud and edge devices.
 
 ## Integrating InfluxDB: Configuration, Data Transformation, and Persistence
 

@@ -1,6 +1,6 @@
 In this article, we will focus on the Payload Format Indicator and Content Type properties of [MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5), exploring how they make the parsing of messages more transparent and efficient.
 
->New to MQTT 5.0? Please check out our
+>New to [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) 5.0? Please check out our
 >
 >[MQTT 5.0: 7 New Features and a Migration Checklist](https://www.emqx.com/en/blog/introduction-to-mqtt-5)
 

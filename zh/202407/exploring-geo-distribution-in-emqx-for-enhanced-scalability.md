@@ -75,7 +75,7 @@ v5.7.0(emqx@euc1.emqx.dev)> timer:tc(net_adm, ping, ['emqx@ape1.emqx.dev']).
 $ mqttx bench sub -h ape1.emqx.dev --count 1 --topic t/mqttx/%i [9:14:29 AM] › | Start the subscribe benchmarking, connections: 1, req interval: 10ms, topic: t/mqttx/%i ✔  success  [1/1] - Subscribed to t/mqttx/1 [9:14:30 AM] › | Created 1 connections in 0.89s
 ```
 
-几乎需要一秒的时间，这显然比 160 或 200 毫秒长。要找到原因，我们需要了解 MQTT 客户端和 Broker 如何进行连接和订阅：
+几乎需要一秒的时间，这显然比 160 或 200 毫秒长。要找到原因，我们需要了解 [MQTT 客户端](https://www.emqx.com/zh/blog/mqtt-client-tools)和 Broker 如何进行连接和订阅：
 
 1. 客户端与 EMQX 建立连接并发送 `CONNECT` 数据包。
 
@@ -238,7 +238,7 @@ $ mqttx bench sub -h ape1.emqx.dev --count 1000 --interval 0 --topic t/mqttx/+/%
 
 如果没有对已连接客户端及其订阅的全局视图，就不可能仅将一部分消息路由到特定区域。每个节点上的每个 MQTT 桥接器都必须将*整个*消息流传输到每个远程位置，从而导致出口带宽达到饱和。这也不可避免地带来信息丢失：桥接后的消息将不再包含原始客户端的信息。此外，要保证相同的桥接信息不会在各大洲之间来回传输，还需要做一些额外的工作。不过，[规则引擎](https://docs.emqx.com/zh/emqx/v5.7/data-integration/rule-sql-syntax.html)应该有足够的能力来处理这个问题。
 
-这些缺点促使我们最近研究了另一种更灵活的解决方案：[集群链接](https://github.com/emqx/emqx/pull/13126)(Cluster Linking)。我们的设计目标是将两者的优点结合起来：既具有与外部资源通信的可靠性和稳健性，又能够仅路由特定区域感兴趣的消息，从而避免不必要的带宽和计算资源浪费。此功能将在即将发布的 EMQX Enterprise 5.8.0 版本中亮相。
+这些缺点促使我们最近研究了另一种更灵活的解决方案：[集群链接](https://github.com/emqx/emqx/pull/13126)(Cluster Linking)。我们的设计目标是将两者的优点结合起来：既具有与外部资源通信的可靠性和稳健性，又能够仅路由特定区域感兴趣的消息，从而避免不必要的带宽和计算资源浪费。此功能将在即将发布的 [EMQX Enterprise](https://www.emqx.com/zh/products/emqx) 5.8.0 版本中亮相。
 
 ## 结语
 

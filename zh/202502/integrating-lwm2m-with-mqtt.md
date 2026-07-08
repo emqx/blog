@@ -1,6 +1,6 @@
 ## LwM2M 协议介绍
 
-LwM2M 是一种轻量级的物联网设备管理协议，由 OMA（Open Mobile Alliance）组织制定。它基于 CoAP （Constrained Application Protocol）协议，专门针对资源受限的物联网设备设计，例如传感器、智能表计等，它们通常由电池供电，并且 CPU、内存、网络链接资源有限。
+[LwM2M](https://www.emqx.com/zh/blog/iot-protocols-mqtt-coap-lwm2m) 是一种轻量级的物联网设备管理协议，由 OMA（Open Mobile Alliance）组织制定。它基于 [CoAP](https://www.emqx.com/zh/blog/coap-protocol) （Constrained Application Protocol）协议，专门针对资源受限的物联网设备设计，例如传感器、智能表计等，它们通常由电池供电，并且 CPU、内存、网络链接资源有限。
 
 ### 协议栈结构
 
@@ -61,7 +61,7 @@ LwM2M 协议支持在对象和资源上定义允许的操作，例如：
 
 - **智慧城市：**管理路灯、交通传感器和环境监测设备。
 - **交通运输：**跟踪和管理车队车辆，优化物流，监控车辆健康状况。
-- **工业物联网：**在工厂环境中监控和管理机器、传感器和执行器。
+- **[工业物联网](https://www.emqx.com/zh/blog/iiot-explained-examples-technologies-benefits-and-challenges)：**在工厂环境中监控和管理机器、传感器和执行器。
 - **智慧农业：**远程管理土壤传感器、气象站和灌溉系统。
 - **智能制造：**监控和管理机器、传感器和生产线，以提高效率和实现预测性维护。
 - **医疗保健：**管理可穿戴健康监测设备和医疗设备。

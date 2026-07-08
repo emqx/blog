@@ -68,7 +68,7 @@ In many IoT scenarios (e.g., connected vehicles or standalone sensors), end devi
 
 #### Factory/Industrial Edge Gateway
 
-In smart manufacturing environments, a large number of sensors, PLCs, and equipment typically communicate with a local edge gateway (e.g., EMQX Edge. The gateway aggregates, cleans, filters, and transforms the raw data before sending it onward. Typical examples include:
+In [smart manufacturing](https://www.emqx.com/en/blog/the-smart-manufacturing-revolution) environments, a large number of sensors, PLCs, and equipment typically communicate with a local edge gateway (e.g., EMQX Edge. The gateway aggregates, cleans, filters, and transforms the raw data before sending it onward. Typical examples include:
 
 - **Data Aggregation**: Combining multiple sensor readings into a higher-level metric (e.g., the average temperature of a production line).
 - **Filtering & Cleansing**: Removing erroneous or out-of-range readings so they do not pollute downstream analytics.
@@ -115,7 +115,7 @@ MQTT’s versatility has made it a preferred choice for integrating IoT data wit
 
 Modern vehicles are often referred to as “data centers on wheels” - due to the vast amounts of telemetry they generate - including engine performance, driver behavior, and sensor feeds from lidar and cameras. Increasingly, these vehicles also rely on cloud-based updates and commands to enhance functionality and safety. 
 
-MQTT is widely used in connected car platforms as a messaging layer between vehicles and cloud services. It enables bidirectional communication, allowing vehicles to publish telemetry data (e.g., GPS, diagnostics, infotainment usage) and subscribe to incoming messages (e.g., remote commands, software updates, or even AI model parameters). 
+MQTT is widely used in [connected car](https://www.emqx.com/en/blog/mqtt-for-internet-of-vehicles) platforms as a messaging layer between vehicles and cloud services. It enables bidirectional communication, allowing vehicles to publish telemetry data (e.g., GPS, diagnostics, infotainment usage) and subscribe to incoming messages (e.g., remote commands, software updates, or even AI model parameters). 
 
 As software-defined vehicles evolve, they require a unified connectivity backbone that allows them to: 
 
@@ -169,14 +169,14 @@ Beyond the above, MQTT+AI use cases span numerous fields.
 
 Major cloud providers integrate MQTT natively into AI and data processing services:
 
-- AWS IoT Core (MQTT-based) feeds into AWS AI services.
+- [AWS IoT Core](https://www.emqx.com/en/blog/understanding-aws-iot-core) (MQTT-based) feeds into AWS AI services.
 - Azure IoT Hub connects MQTT-enabled IoT devices to AI-driven analytics and decision-making models.
 
 By acting as the real-time data pipeline for AI systems, MQTT ensures scalable, event-driven intelligence across industries.
 
 ### Final Thoughts
 
-MQTT’s publish/subscribe model and IoT-centric design have made it a cornerstone in AI-driven automation. From smart factories to connected vehicles and smart homes, MQTT enables real-time AI decision-making by seamlessly feeding live IoT data to AI models and disseminating AI-generated insights back to devices and users.
+MQTT’s publish/subscribe model and IoT-centric design have made it a cornerstone in AI-driven automation. From [smart factories](https://www.emqx.com/en/blog/what-is-a-smart-factory-key-components-4-levels-of-evolution) to connected vehicles and smart homes, MQTT enables real-time AI decision-making by seamlessly feeding live IoT data to AI models and disseminating AI-generated insights back to devices and users.
 
 ## Stay Tuned for Next Piece
 

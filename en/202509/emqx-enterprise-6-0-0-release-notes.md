@@ -1,6 +1,6 @@
 EMQX 6.0.0 marks a monumental leap forward as the first major release following the extensive version 5 series, redefining IoT data streaming with unified MQTT and message queuing. This landmark version introduces transformative features like Message Queue for durable, asynchronous messaging, namespaced roles for secure multi-tenancy, and seamless integrations with databases like AWS AlloyDB and BigQuery. 
 
-Designed for dynamic environments, EMQX 6.0.0 empowers smart cities, industrial IoT, and connected vehicles, turning complex challenges into scalable, resilient solutions. Discover the innovations shaping the future of connected systems.
+Designed for dynamic environments, EMQX 6.0.0 empowers smart cities, [industrial IoT](https://www.emqx.com/en/blog/industrial-iot-systems), and connected vehicles, turning complex challenges into scalable, resilient solutions. Discover the innovations shaping the future of connected systems.
 
 ## Reliable MQTT Messaging with Message Queue
 
@@ -92,7 +92,7 @@ EMQX 6.0.0 includes numerous other improvements and bugfixes to enhance performa
 
 - **License TPS Limits**: Adds Transactions Per Second (TPS) limits for Enterprise Licenses, capping the total MQTT messages processed across the cluster. Exceeding the limit triggers an observability alarm, without blocking message flow. Alarms persist until a higher TPS license is applied or manually cleared via Dashboard/CLI.
 - **Enhanced Security**: Introduces client ID throttling during reconnects to prevent instability, client ID overriding via authentication results for flexible control, and ACL rules in LDAP authentication to reduce server queries. The default authorization flow action changes from `allow` to `deny`, bolstering security.
-- **Improved Deployment**: Adds EMQX Operator and Helm Charts documentation, supports Debian 13 packages (discontinuing Debian 10), and introduces automatic trace log rotation and a “force deactivate alarm” API for better operational control.
+- **Improved Deployment**: Adds [EMQX Operator](https://www.emqx.com/en/solutions/mqtt-on-kubernetes) and Helm Charts documentation, supports Debian 13 packages (discontinuing Debian 10), and introduces automatic trace log rotation and a “force deactivate alarm” API for better operational control.
 - **Performance Boost**: Optimizes fanout MQTT scenarios for faster processing and reduces memory usage in the authorization flow, enhancing efficiency for large-scale deployments.
 
 Stay tuned for the full changelog, which will detail additional features like enhanced observability, clustering improvements, and important bug fixes.
@@ -101,7 +101,7 @@ Stay tuned for the full changelog, which will detail additional features like en
 
 ## Ready to Experience EMQX 6.0.0?
 
-Download EMQX Enterprise 6.0.0 from the official website and unlock the power of durable messaging, AI-driven insights, and multi-tenant IoT solutions. Build smarter, more scalable, and secure data pipelines today.
+Download [EMQX Enterprise](https://www.emqx.com/en/products/emqx) 6.0.0 from the official website and unlock the power of durable messaging, AI-driven insights, and multi-tenant IoT solutions. Build smarter, more scalable, and secure data pipelines today.
 
 Need assistance or want to explore how EMQX 6.0.0 fits your IoT use case? Contact our team for a personalized consultation.
 

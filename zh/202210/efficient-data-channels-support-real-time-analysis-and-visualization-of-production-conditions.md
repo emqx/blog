@@ -10,7 +10,7 @@
 
   基于当前物联网、大数据、云计算、人工智能等新一代信息技术的发展，生产数据不再局限于产线的数据采集，而是扩展到整个工厂或园区包括产线、人员、环控、能源、安全、储存、运输、厂房等各个环节的[工业物联网](https://www.emqx.com/zh/blog/iiot-explained-examples-technologies-benefits-and-challenges)设备，关系到效率、产能、质量、安全、耗能、管理等工厂健康生产的核心指标。
 
-  各类工业或物联网设备种类繁多决定了通讯协议的多样性，涉及到的协议有 [Modbus](https://www.emqx.com/zh/blog/modbus-protocol-the-grandfather-of-iot-communication)、OPC、MQTT、HTTP 等。一个工厂的设备通讯协议往往从几种到十几种甚至更多，且不同厂家的设备信息存在不同的数据结构，导致业务层处理数据困难。
+  各类工业或物联网设备种类繁多决定了通讯协议的多样性，涉及到的协议有 [Modbus](https://www.emqx.com/zh/blog/modbus-protocol-the-grandfather-of-iot-communication)、OPC、[MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt)、HTTP 等。一个工厂的设备通讯协议往往从几种到十几种甚至更多，且不同厂家的设备信息存在不同的数据结构，导致业务层处理数据困难。
 
 - 流式数据的处理需求
 
@@ -38,7 +38,7 @@
 
 3. 超轻量物联网边缘数据流式分析引擎 eKuiper 实现流式计算、规则引擎、数据清洗、AI 扩展，为生产数据可视化提供数据清洗、数据预处理、事件逻辑处理等具体的能力。工业生产感知的数据是海量的、连续的，如果全部采用批量处理不对其进行分析，难以发掘数据的价值。由于生产数据可视化需要实时反应生产运行状态，所以对数据量和延迟有很高要求，因此通过 eKuiper 采用流处理的方式是更加合适的。
 
-4. 企业级 MQTT 物联网接入平台 EMQX Enterprise 布置在厂级信息中心或集团云，在专网或互联网上为生产数据提供高可用、高并发、低延时的数据传输、分析、对接能力。同时基于规则引擎强大的能力，向生产数据大数据分析的数据库提供高频、可靠、高价值的数据持久化能力。 通过简易、灵活的方式，即可构建起车间、厂级中心、集团云等各层级业务和应用数据消费架构。
+4. 企业级 MQTT 物联网接入平台 [EMQX Enterprise](https://www.emqx.com/zh/products/emqx) 布置在厂级信息中心或集团云，在专网或互联网上为生产数据提供高可用、高并发、低延时的数据传输、分析、对接能力。同时基于规则引擎强大的能力，向生产数据大数据分析的数据库提供高频、可靠、高价值的数据持久化能力。 通过简易、灵活的方式，即可构建起车间、厂级中心、集团云等各层级业务和应用数据消费架构。
 
    ![image.png](https://assets.emqx.com/images/bf2efb57f26faadb0de97fc074d370da.png)
 

@@ -2,7 +2,7 @@
 
 ## EMQX Cloud 功能升级，应对多样管理需求
 
-作为一个企业级的全托管 MQTT 消息服务，[EMQX Cloud](https://www.emqx.com/zh/cloud) 为不同规模的企业提供了方便、易用的运维代管服务。在服务客户的过程中，我们发现：企业内部通常存在着不同的组织和项目，一个技术设施服务的管理人员与服务的使用者也很可能不在同一个组织内，其管理需求和目的不尽相同。
+作为一个企业级的全托管 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 消息服务，[EMQX Cloud](https://www.emqx.com/zh/cloud) 为不同规模的企业提供了方便、易用的运维代管服务。在服务客户的过程中，我们发现：企业内部通常存在着不同的组织和项目，一个技术设施服务的管理人员与服务的使用者也很可能不在同一个组织内，其管理需求和目的不尽相同。
 
 在最近更新的 EMQX Cloud 中，我们引入了「Project」概念来解决这一问题。
 

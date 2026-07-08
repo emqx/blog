@@ -1,11 +1,11 @@
 Speaking of cloud service platform providers, AWS, Azure, and Google Cloud Platform (hereinafter referred to as GCP) are the three well-deserved giants. Although GCP's market share is slightly lower than AWS and Azure’s, it is deeply loved by many technology companies because of its image of the best cloud for machine learning and AI workload.
 
-So far, EMQX Cloud has successively supported deployment in more than a dozen regions of AWS and Azure. To achieve a completed support list of mainstream cloud platforms, we have recently added the deployment support for Google Cloud Platform with 6 different regional deployments to help users develop more AIoT applications on the GCP platform.
+So far, [EMQX Cloud](https://www.emqx.com/en/cloud) has successively supported deployment in more than a dozen regions of AWS and Azure. To achieve a completed support list of mainstream cloud platforms, we have recently added the deployment support for Google Cloud Platform with 6 different regional deployments to help users develop more AIoT applications on the GCP platform.
 
 
 ## Low latency, high reliability
 
-EMQX Cloud can support up to tens of millions of device connections, process millions of MQTT messages per second, and ensure that message delivery delay is as low as milliseconds through the soft real-time operating system. Google has an exclusive private global optical fiber and layered network, with 18 submarine cables, 27 cloud computing areas and 82 cloud computing available zones worldwide. This avoids the need for GCP to pass through other Pop nodes, saves time at each node, and improves speed and stability. The combination of EMQX Cloud and GCP will undoubtedly lead to an efficient real-time transmission of messages.
+EMQX Cloud can support up to tens of millions of device connections, process millions of [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) messages per second, and ensure that message delivery delay is as low as milliseconds through the soft real-time operating system. Google has an exclusive private global optical fiber and layered network, with 18 submarine cables, 27 cloud computing areas and 82 cloud computing available zones worldwide. This avoids the need for GCP to pass through other Pop nodes, saves time at each node, and improves speed and stability. The combination of EMQX Cloud and GCP will undoubtedly lead to an efficient real-time transmission of messages.
 
 ## High availability
 
@@ -17,7 +17,7 @@ According to Flexera's Cloud Status report in 2021, 92% of enterprises have a mu
 
 ## How to quickly deploy on Google Cloud Platform?
 
-After completing the registration on the website, you can deploy the fully managed MQTT 5.0 service on the Google Cloud Platform with a simple one-click operation.
+After completing the registration on the website, you can deploy the fully managed [MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5) service on the Google Cloud Platform with a simple one-click operation.
 
 
 1. Select the edition

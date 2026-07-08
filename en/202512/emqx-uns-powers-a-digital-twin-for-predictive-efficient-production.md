@@ -77,7 +77,7 @@ When the lab publishes a message to `Lab/Solution_Analysis/S-4589`, the **centra
 
 ## Model Creation for Simulating Reality
 
-Instead of individually connecting to every system, the digital twin retrieves all its data from the central **EMQX MQTT broker**, which acts as a unified central repository. The broker stores industrial data in a hierarchical structure, complete with contextual information. Once the digital twin has this organized data, it can easily build the virtual model.
+Instead of individually connecting to every system, the digital twin retrieves all its data from the central **EMQX [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison)**, which acts as a unified central repository. The broker stores industrial data in a hierarchical structure, complete with contextual information. Once the digital twin has this organized data, it can easily build the virtual model.
 
 - **3D Modeling:** Create a precise 3D model of the POP line, including the automated gantry system, multiple chemical baths, rinses, and drying stages. This provides a clear, visual representation.
 - **Physics-Based Models:** Develop mathematical models that simulate the complex chemical and electrochemical reactions occurring at each stage. This includes models for the etching process, catalyst deposition, and the final chrome plating, all of which are critical for proper adhesion and a uniform finish.

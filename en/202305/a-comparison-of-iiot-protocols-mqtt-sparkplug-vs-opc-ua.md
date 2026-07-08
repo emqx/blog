@@ -4,7 +4,7 @@ Industrial systems rely heavily on efficient and secure communication protocols 
 
 ## OPC Classic and OPC UA
 
-The precursor of OPC UA is OPC Classic (also known as OPC DA or OPC Data Access), a set of industrial automation standards developed by the OPC Foundation. First published in 1996, the OPC Classic specification defines a standardized method for exchanging data between software applications and industrial hardware devices such as sensors, controllers, and programmable logic controllers (PLCs).
+The precursor of OPC UA is OPC Classic (also known as [OPC DA](https://www.emqx.com/en/blog/opc-ua-vs-opc-da) or OPC Data Access), a set of industrial automation standards developed by the OPC Foundation. First published in 1996, the OPC Classic specification defines a standardized method for exchanging data between software applications and industrial hardware devices such as sensors, controllers, and programmable logic controllers (PLCs).
 
 However, one of its major drawbacks is that OPC Classic is tightly integrated with the Microsoft Windows operating system and its proprietary DCOM technology. This type of dependency severely compromises the protocol's usability, scalability, interoperability, security, and platform independence, which is a significant limitation for an open standard.
 
@@ -16,7 +16,7 @@ In the late 1990s, Andy Stanford-Clark and Arlen Nipper were working on a pipeli
 
 To address these challenges, [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) was developed as a publish/subscribe (Pub/Sub) messaging protocol. MQTT was designed with a small code footprint and minimal bandwidth requirements, making it suitable for deployment in low-power, low-bandwidth environments. Its primary purpose is to facilitate large-scale, real-time data exchange between devices and systems, enabling standardized data communication even when different formats and structures are involved. This characteristic makes MQTT particularly suitable for IoT and M2M (machine-to-machine) applications.
 
-In 2010, MQTT was released as an open standard by OASIS (Organization for the Advancement of Structured Information Standards), making it available to a wide range of organizations and industries. Then, in 2014, MQTT 3.1.1 was introduced, including several new features such as improved error handling and support for Quality of Service (QoS) levels. Then, in 2019, MQTT 5.0 was released with significant enhancements such as support for custom properties, persistent sessions, and improved error reporting.
+In 2010, MQTT was released as an open standard by OASIS (Organization for the Advancement of Structured Information Standards), making it available to a wide range of organizations and industries. Then, in 2014, MQTT 3.1.1 was introduced, including several new features such as improved error handling and support for Quality of Service (QoS) levels. Then, in 2019, [MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5) was released with significant enhancements such as support for custom properties, persistent sessions, and improved error reporting.
 
 ## Combining the Advantages: OPC UA over MQTT
 
@@ -54,7 +54,7 @@ The MQTT protocol has achieved great success in IoT scenarios. However, its appl
 
 One notable feature of Sparkplug is its support for bi-directional communication between devices. This capability enables devices to not only send commands but also receive responses from other devices within the network.
 
-5 key concepts to explain why MQTT Broker is perfect for implementing Sparkplug design principles: [5 Key Concepts for MQTT Broker in Sparkplug Specification](https://www.emqx.com/en/blog/5-key-concepts-for-mqtt-broker-in-sparkplug-specification).
+5 key concepts to explain why [MQTT Broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) is perfect for implementing Sparkplug design principles: [5 Key Concepts for MQTT Broker in Sparkplug Specification](https://www.emqx.com/en/blog/5-key-concepts-for-mqtt-broker-in-sparkplug-specification).
 
 ## OSI Model Overview
 

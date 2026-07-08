@@ -1,8 +1,8 @@
-本文将以 [MQTTBox](https://github.com/workswithweb/MQTTBox) 作为 [MQTT 客户端](https://www.emqx.com/zh/blog/introduction-to-the-commonly-used-mqtt-client-library)测试工具，接入 [MQTT 云服务 - EMQX Cloud](https://www.emqx.com/zh/cloud)。通过本文，你将能快速了解 MQTTBox 的基础用法以及 MQTT 协议的基本概念与使用。
+本文将以 [MQTTBox](https://github.com/workswithweb/MQTTBox) 作为 [MQTT 客户端](https://www.emqx.com/zh/blog/introduction-to-the-commonly-used-mqtt-client-library)测试工具，接入 [MQTT 云服务 - EMQX Cloud](https://www.emqx.com/zh/cloud)。通过本文，你将能快速了解 MQTTBox 的基础用法以及 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 协议的基本概念与使用。
 
 ## MQTTBox 简介
 
-[MQTTBox](https://github.com/workswithweb/MQTTBox) 是 Sathya Vikram 个人开发的 MQTT 客户端工具，最初仅在 Chrome 上作为拓展安装使用， 后经重写开源成为桌面端跨平台独立软件。界面简单直接，支持多个客户端同时在线，但客户端之间的切换、互发消息等交互还是有一些不便。MQTTBox 借助 Chrome 实现强大的跨平台特性，结合简单的负载测试功能，是一款值得尝试的 MQTT 客户端工具。
+[MQTTBox](https://github.com/workswithweb/MQTTBox) 是 Sathya Vikram 个人开发的 [MQTT 客户端](https://www.emqx.com/zh/blog/mqtt-client-tools)工具，最初仅在 Chrome 上作为拓展安装使用， 后经重写开源成为桌面端跨平台独立软件。界面简单直接，支持多个客户端同时在线，但客户端之间的切换、互发消息等交互还是有一些不便。MQTTBox 借助 Chrome 实现强大的跨平台特性，结合简单的负载测试功能，是一款值得尝试的 MQTT 客户端工具。
 
 MQTTBox 完整的支持了以下功能：
 
@@ -45,7 +45,7 @@ MQTTBox 完整的支持了以下功能：
 
 进入到创建 MQTT 客户端页面后，填写 Host、选择连接协议等 MQTT 相关配置信息后，点击底部的 `Save` 按钮即可立即创建一个连接客户端。
 
-> 注意：填写 Host 时，需填入完整的地址，包含连接的端口号。如果是 WebSocket 连接，还需加上 Path。如果 MQTT Broker 开启用户名/密码认证的，还需要在配置页面内输入 Username / Password
+> 注意：填写 Host 时，需填入完整的地址，包含连接的端口号。如果是 WebSocket 连接，还需加上 Path。如果 [MQTT Broker](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison) 开启用户名/密码认证的，还需要在配置页面内输入 Username / Password
 
 ![MQTTBox 创建连接](https://assets.emqx.com/images/a83d9f97fbfea900e3105ed2618744b0.png)
 

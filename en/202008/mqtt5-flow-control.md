@@ -1,4 +1,4 @@
-MQTT v5 brings a lot of new features, we will show these features in an easy-to-understand way and discuss the impact of these features on the developer. So far, we have discussed these [new features of MQTT v5](https://www.emqx.com/en/blog/introduction-to-mqtt-5). Now, we will continue discussing: **flow control**.
+[MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) v5 brings a lot of new features, we will show these features in an easy-to-understand way and discuss the impact of these features on the developer. So far, we have discussed these [new features of MQTT v5](https://www.emqx.com/en/blog/introduction-to-mqtt-5). Now, we will continue discussing: **flow control**.
 
 
 
@@ -24,7 +24,7 @@ This algorithm can use the resources more positively and fully because it does n
 
 ## Receive Maximum attribute
 
-MQTT v5 added a Receive Maximum attribute for supporting flow control. It exists in the CONNECT packet and CONNACK packet and indicates the largest number of PUBLISH packet with the QoS which is 1 and 2 that the client and server willing to process simultaneously, that is the maximum sending quota that the opposite can use.
+MQTT v5 added a Receive Maximum attribute for supporting flow control. It exists in the CONNECT packet and [CONNACK](https://www.emqx.com/en/blog/mqtt5-new-features-reason-code-and-ack) packet and indicates the largest number of PUBLISH packet with the QoS which is 1 and 2 that the client and server willing to process simultaneously, that is the maximum sending quota that the opposite can use.
 
 ![image20200730173320715.png](https://assets.emqx.com/images/7dc9e6680507322a743d721db1def117.png)
 

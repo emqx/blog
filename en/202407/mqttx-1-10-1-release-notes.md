@@ -55,7 +55,7 @@ Additionally, we have added a data collection policy. If you have any concerns a
 
 ## Specify the Default Protocol in Config Files
 
-MQTTX now allows users to set default protocols in the configuration files. Users can choose protocols like WebSocket (ws, wss) or MQTT over SSL (mqtts) as defaults, eliminating the need to specify them for each connection.
+MQTTX now allows users to set default protocols in the configuration files. Users can choose protocols like WebSocket (ws, wss) or [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) over SSL (mqtts) as defaults, eliminating the need to specify them for each connection.
 
 To configure, use the `mqttx init` command and select your preferred default protocol.
 
@@ -90,11 +90,11 @@ These updates focus on improving user experience, enhancing functionality, and f
   - **JSON View**: Improve handling and display of JSON formatted data.
   - **System Topic View**: Specialized view for system-related [MQTT topics](https://www.emqx.com/en/blog/advanced-features-of-mqtt-topics).
 
-- **Support for Configurable Disconnect Properties (MQTT 5.0)**: Enhance connection management with customizable disconnection settings.
+- **Support for Configurable Disconnect Properties ([MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5))**: Enhance connection management with customizable disconnection settings.
 
 - **IoT Scenario Data Simulation**: Bring this feature to the desktop client to ease IoT scenario testing.
 
-- **Sparkplug B Support**: Extend MQTTX functionalities to include support for Sparkplug B.
+- **[Sparkplug B](https://www.emqx.com/en/solutions/mqtt-sparkplug) Support**: Extend MQTTX functionalities to include support for Sparkplug B.
 
 - **QoS 0 Message Storage Optimization**: Configurable options to reduce storage space usage.
 

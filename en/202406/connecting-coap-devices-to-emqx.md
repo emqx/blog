@@ -1,6 +1,6 @@
 ## Introduction
 
-[CoAP](https://www.emqx.com/en/blog/coap-protocol) is an IoT protocol that facilitates communication among low-consumption, low-power devices typically found on constrained networks. Due to these factors, CoAP is designed to be concise and utilizes the UDP protocol for data transmission, making it well-suited for constrained network environments. CoAP works with abstracted resources in an M2M network, similar to HTTP operations, allowing for synchronous and asynchronous information exchange between constrained devices in a simple and efficient manner.
+[CoAP](https://www.emqx.com/en/blog/coap-protocol) is an [IoT protocol](https://www.emqx.com/en/blog/iot-protocols-mqtt-coap-lwm2m) that facilitates communication among low-consumption, low-power devices typically found on constrained networks. Due to these factors, CoAP is designed to be concise and utilizes the UDP protocol for data transmission, making it well-suited for constrained network environments. CoAP works with abstracted resources in an M2M network, similar to HTTP operations, allowing for synchronous and asynchronous information exchange between constrained devices in a simple and efficient manner.
 
 CoAP works well in constrained networks. However, it doesn't adapt well when these networks need to communicate with external networks. Additionally, since CoAP is mainly designed for M2M networks, it lacks support for resource management centers (addressed in the CoAP-based LwM2M protocol with concepts like resource registration and services).
 
@@ -220,7 +220,7 @@ If an incorrect Token is used, it will return 4.01 indicating that the operation
 
 ## Conclusion
 
-The process of integrating CoAP and MQTT protocol devices with EMQX has been successfully completed. EMQX, a robust open-source distributed cloud-native MQTT platform, offers comprehensive support for the CoAP and LwM2M protocols in addition to the MQTT protocol. This inclusive support facilitates seamless access to a diverse range of end devices, enhancing the system's versatility and accessibility.
+The process of integrating [CoAP and MQTT](https://www.emqx.com/en/blog/mqtt-vs-coap) protocol devices with EMQX has been successfully completed. EMQX, a robust open-source distributed cloud-native MQTT platform, offers comprehensive support for the CoAP and LwM2M protocols in addition to the MQTT protocol. This inclusive support facilitates seamless access to a diverse range of end devices, enhancing the system's versatility and accessibility.
 
 For more details on using EMQX, please refer to the [EMQX Enterprise documentation](https://docs.emqx.com/en/enterprise/latest/). 
 

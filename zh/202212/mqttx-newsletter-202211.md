@@ -1,4 +1,4 @@
-十一月初，MQTTX 团队发布了 1.9.0 版本：MQTTX CLI 命令行客户端实现支持 MQTT 的性能测试，桌面端应用新增了关于学习 MQTT 的帮助页面等，此外还进行了一些使用优化和问题修复。
+十一月初，MQTTX 团队发布了 1.9.0 版本：MQTTX CLI 命令行客户端实现支持 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 的性能测试，桌面端应用新增了关于学习 MQTT 的帮助页面等，此外还进行了一些使用优化和问题修复。
 
 目前，团队正专注于 1.9.1 版本的开发。新版本中 MQTTX CLI 命令行客户端将支持自动重连，支持读取和存储本地配置文件，还可对于接收到的消息进行格式转换；桌面端应用支持设置滚动频率，并修复了一些使用上的问题。
 
@@ -30,7 +30,7 @@
 
 ### 支持自动重连
 
-在之前的版本中，当 MQTT 服务器出现异常时，MQTTX CLI 命令行客户端会自动断开连接并退出，这样会导致用户无法在 MQTT 服务器恢复后继续使用 MQTTX CLI，需要重新手动连接。因此，我们在该版本中新增了自动重连的功能，当 MQTT 服务器出现异常后，MQTTX CLI 命令行客户端断开连接后会自动重连。
+在之前的版本中，当 [MQTT 服务器](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison)出现异常时，MQTTX CLI 命令行客户端会自动断开连接并退出，这样会导致用户无法在 MQTT 服务器恢复后继续使用 MQTTX CLI，需要重新手动连接。因此，我们在该版本中新增了自动重连的功能，当 MQTT 服务器出现异常后，MQTTX CLI 命令行客户端断开连接后会自动重连。
 
 ![支持自动重连](https://assets.emqx.com/images/543f9f68d014fe3d30816dac773681f6.png)
 

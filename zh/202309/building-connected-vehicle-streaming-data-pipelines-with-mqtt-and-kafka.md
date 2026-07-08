@@ -1,6 +1,6 @@
 ## 引言
 
-在当今的物联网领域，[MQTT 和 Kafka](https://www.emqx.com/zh/blog/mqtt-and-kafka) 的集成为各种应用场景提供了巨大的价值。无论是[网联汽车](https://www.emqx.com/zh/blog/connected-cars-and-automotive-connectivity-all-you-need-to-know)和车载信息通信系统、智慧城市基础设施，还是[工业物联网](https://www.emqx.com/zh/blog/iiot-explained-examples-technologies-benefits-and-challenges)监控、物流管理，MQTT 和 Kafka 的结合都能帮助这些场景实现无缝、高效和实时的数据处理。
+在当今的物联网领域，[MQTT 和 Kafka](https://www.emqx.com/zh/blog/mqtt-and-kafka) 的集成为各种应用场景提供了巨大的价值。无论是[网联汽车](https://www.emqx.com/zh/blog/connected-cars-and-automotive-connectivity-all-you-need-to-know)和车载信息通信系统、智慧城市基础设施，还是[工业物联网](https://www.emqx.com/zh/blog/iiot-explained-examples-technologies-benefits-and-challenges)监控、物流管理，[MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 和 Kafka 的结合都能帮助这些场景实现无缝、高效和实时的数据处理。
 
 本文将为您演示如何高效集成 MQTT 和 Kafka。我们将模拟车辆设备及其动态车联网数据，将它们连接到 [MQTT Broker](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison)，然后再将数据发送到 Apache Kafka。本文选择 [EMQX](https://www.emqx.com/zh/products/emqx) 作为 MQTT Broker，它内置了 Kafka 数据集成功能，可以简化演示流程。
 
@@ -93,7 +93,7 @@ $ docker logs -f mqttx
 payload: {"car_id":"WLHK53W2GSL511787","display_name":"Roslyn's Tesla","model":"S...
 ```
 
-使用任何 MQTT 客户端都可以订阅和接收数据：
+使用任何 [MQTT 客户端](https://www.emqx.com/zh/blog/mqtt-client-tools)都可以订阅和接收数据：
 
 ```
 mqttx sub -t mqttx/simulate/tesla/+

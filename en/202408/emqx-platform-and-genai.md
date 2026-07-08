@@ -2,7 +2,7 @@
 
 Artificial Intelligence has seen rapid advancements, particularly Large Language Models (LLMs) and Generative AI (GenAI). These technologies significantly benefit data analysis, decision-making, and automation, reducing operational costs and improving industry efficiency.
 
-[EMQX Platform](https://www.emqx.com/en), capable of transmitting massive amounts of IoT data, combines seamlessly with GenAI to unlock new possibilities. This powerful integration enables real-time data processing, intelligent anomaly detection, and predictive analytics, transforming raw IoT data into actionable insights. By leveraging EMQX with GenAI, businesses can enhance their IoT applications, optimize operations, and drive innovation in fields ranging from smart manufacturing to urban management.
+[EMQX Platform](https://www.emqx.com/en), capable of transmitting massive amounts of IoT data, combines seamlessly with GenAI to unlock new possibilities. This powerful integration enables real-time data processing, intelligent anomaly detection, and predictive analytics, transforming raw IoT data into actionable insights. By leveraging EMQX with GenAI, businesses can enhance their IoT applications, optimize operations, and drive innovation in fields ranging from [smart manufacturing](https://www.emqx.com/en/blog/the-smart-manufacturing-revolution) to urban management.
 
 This blog will explore how EMQX can be integrated with GenAI and showcase its potential with a practical demo.
 
@@ -54,7 +54,7 @@ The main components of this demo include:
 
 #### Step 1: Get a free EMQX Instance on EMQX Platform
 
-We'll first install EMQX Enterprise locally to begin our smart manufacturing demo. EMQX Enterprise is recommended for its rich data integration features, including support for Kafka, RabbitMQ, MySQL, PostgreSQL, InfluxDB, TimescaleDB, and other commonly used databases and stream processing middleware.
+We'll first install [EMQX Enterprise](https://www.emqx.com/en/products/emqx) locally to begin our smart manufacturing demo. EMQX Enterprise is recommended for its rich data integration features, including support for Kafka, RabbitMQ, MySQL, PostgreSQL, InfluxDB, TimescaleDB, and other commonly used databases and stream processing middleware.
 
 You can install EMQX Enterprise using Docker with the following command:
 
@@ -330,7 +330,7 @@ These responses demonstrate how our system uses the stored vector data in combin
 
 ### Further Expansions
 
-To further enhance the system, consider forwarding results to specific MQTT topics, developing a user-friendly web interface, and implementing periodic automatic queries. These improvements would create a more comprehensive IoT monitoring and prediction solution, maximizing the potential of EMQX and GenAI integration.
+To further enhance the system, consider forwarding results to specific [MQTT topics](https://www.emqx.com/en/blog/advanced-features-of-mqtt-topics), developing a user-friendly web interface, and implementing periodic automatic queries. These improvements would create a more comprehensive IoT monitoring and prediction solution, maximizing the potential of EMQX and GenAI integration.
 
 ## Challenges, Opportunities, and Future Potential
 

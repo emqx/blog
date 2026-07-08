@@ -1,6 +1,6 @@
 ## **Introduction**
 
-The observability of IoT data is a practice that involves monitoring and managing data from platforms like connected vehicles and industrial IoT to ensure high data quality, availability, and reliability across complex systems, processes, and pipelines. It provides users with a comprehensive understanding of data status, helps quickly identify and analyze issues, and enhances system stability and operational efficiency.
+The observability of IoT data is a practice that involves monitoring and managing data from platforms like connected vehicles and [industrial IoT](https://www.emqx.com/en/blog/industrial-iot-systems) to ensure high data quality, availability, and reliability across complex systems, processes, and pipelines. It provides users with a comprehensive understanding of data status, helps quickly identify and analyze issues, and enhances system stability and operational efficiency.
 
 This article will explore how to combine EMQX's observability data with DeepSeek's LLM (Large Language Model) services. By leveraging AI technologies such as vectorized knowledge bases, automated code generation, and natural language processing, users can rapidly resolve issues like data upload failures, device disconnections, increased connection latency, and slow data forwarding.
 

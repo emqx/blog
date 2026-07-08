@@ -1,4 +1,4 @@
-开源物联网 MQTT 服务器 [EMQX Broker](https://www.emqx.com/zh/products/emqx) 是基于高并发的 Erlang/OTP 语言平台开发，支持百万级连接和分布式集群架构。EMQX Broker 已经在全球物联网市场广泛应用，无论是产品原型设计、物联网创业公司、还是大规模的商业部署，都支持免费使用。
+开源物联网 [MQTT 服务器](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison) [EMQX Broker](https://www.emqx.com/zh/products/emqx) 是基于高并发的 Erlang/OTP 语言平台开发，支持百万级连接和分布式集群架构。EMQX Broker 已经在全球物联网市场广泛应用，无论是产品原型设计、物联网创业公司、还是大规模的商业部署，都支持免费使用。
 
 现在，EMQX Broker 已发布至 v4.1-beta.1 版本，此版本重点增加了对 Python 与 Java 的扩展支持。EMQX Broker 支持通过插件来扩展功能，但在此之前，仅支持由 Erlang 编写的插件，对开发者而言使用门槛较高。即使官方提供了 Lua 脚本扩展支持，但也仅支持简单场景。现在，开发者可以使用 Python 或者 Java 快速开发自己的插件，在官方功能的基础上进行扩展，满足自己的业务场景。
 
@@ -40,7 +40,7 @@ EMQX Broker 的多语言扩展通过 `emqx-extension-hook` 插件中的驱动（
 
   目前存在延迟发布、内置 ACL、上下线通知、[主题重写](https://www.emqx.com/zh/blog/rewriting-emqx-mqtt5-topic)、代理订阅与主题指标共六个内置模块，都支持通过 Dashboard 或 HTTP API 动态加载和卸载。
 
-- 支持 MQTT [增强认证](https://www.emqx.com/zh/blog/mqtt5-enhanced-authentication)，已支持的认证算法包括：SCRAM-SHA-1
+- 支持 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) [增强认证](https://www.emqx.com/zh/blog/mqtt5-enhanced-authentication)，已支持的认证算法包括：SCRAM-SHA-1
 
   现在可以使用 TLS/SSL 或增强认证来进行双向认证。
 
@@ -48,7 +48,7 @@ EMQX Broker 的多语言扩展通过 `emqx-extension-hook` 插件中的驱动（
 
   支持 Client ID 与 Username 认证（注意 `emqx-auth-clientid` 与 `emqx-auth-username` 插件即将废弃）
 
-- 为 CoAP、LwM2M 协议设备接入增加 IPv6 支持
+- 为 [CoAP](https://www.emqx.com/zh/blog/coap-protocol)、[LwM2M](https://www.emqx.com/zh/blog/iot-protocols-mqtt-coap-lwm2m) 协议设备接入增加 IPv6 支持
 
 
 

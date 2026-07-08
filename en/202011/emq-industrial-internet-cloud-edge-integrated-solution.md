@@ -42,10 +42,10 @@ This solution will use these software products in the following list.
 
 **The description of basic functions of product**
 
-1. Neuron: Industrial IoT data collection
-   - Supports [Modbus](https://www.emqx.com/en/blog/modbus-protocol-the-grandfather-of-iot-communication)，OPCUA，IEC61850，IEC104, [BACnet](https://www.emqx.com/en/blog/bacnet-protocol-basic-concepts-structure-obejct-model-explained) and other protocols and devices.
+1. Neuron: [Industrial IoT](https://www.emqx.com/en/blog/industrial-iot-systems) data collection
+   - Supports [Modbus](https://www.emqx.com/en/blog/modbus-protocol-the-grandfather-of-iot-communication)，[OPCUA](https://www.emqx.com/en/blog/opc-ua-protocol)，IEC61850，IEC104, [BACnet](https://www.emqx.com/en/blog/bacnet-protocol-basic-concepts-structure-obejct-model-explained) and other protocols and devices.
    - A management console. It allows users to visually configure and access data across industrial equipment in a browser.
-   - Northbound standard MQTT data delivery, which sends data to a designated MQTT message server based on a user-specified configuration.
+   - Northbound standard [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) data delivery, which sends data to a designated MQTT message server based on a user-specified configuration.
    - Southbound control interface for rule-based device control in conjunction with the rule engine features provided by Kuiper.
    - Local data storage for storing and viewing the raw data of the device.
 2. Edge: lightweight MQTT message broker

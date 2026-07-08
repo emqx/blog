@@ -10,7 +10,7 @@ Before you begin, make sure you have:
 
 - An active Google Cloud Platform (GCP) account with BigQuery API enabled.
 - EMQX 6.0 Enterprise Edition downloaded and running.
-- A test MQTT client (such as [MQTTX](https://mqttx.app/)) installed.
+- A test [MQTT client](https://www.emqx.com/en/blog/mqtt-client-tools) (such as [MQTTX](https://mqttx.app/)) installed.
 
 ## **Part 1: Prepare Your BigQuery Environment**
 

@@ -34,7 +34,7 @@ This feature allows CoAP to provide reliable communication in environments where
 
 ### Security with DTLS 
 
-CoAP uses Datagram Transport Layer Security (DTLS) to secure communications, protecting IoT devices from unauthorized access and data breaches. DTLS ensures encryption and authentication, making CoAP suitable for sensitive applications like healthcare and industrial IoT.
+CoAP uses Datagram Transport Layer Security (DTLS) to secure communications, protecting IoT devices from unauthorized access and data breaches. DTLS ensures encryption and authentication, making CoAP suitable for sensitive applications like healthcare and [industrial IoT](https://www.emqx.com/en/blog/industrial-iot-systems).
 
 ## Use Cases of CoAP
 

@@ -1,4 +1,4 @@
-Compared to MQTT v3.1 and v3.1.1, MQTT v5 provides more new features. We will try to present these features in easy-to-understand ways and discuss their impact on developments. We have already discussed some of the [new features in MQTT v5](https://www.emqx.com/en/blog/introduction-to-mqtt-5), and we will continue to discuss **Topic Alias** today.
+Compared to [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) v3.1 and v3.1.1, MQTT v5 provides more new features. We will try to present these features in easy-to-understand ways and discuss their impact on developments. We have already discussed some of the [new features in MQTT v5](https://www.emqx.com/en/blog/introduction-to-mqtt-5), and we will continue to discuss **Topic Alias** today.
 
 ## What is Topic Alias
 
@@ -25,7 +25,7 @@ Topic aliases are managed respectively by the client and server, and the life cy
 
 ### Topic Alias Maximum
 
-Before the MQTT client or server can start using topic aliases, they need to agree on the maximum number of topic aliases allowed in the current connection. This part of the information exchange is done in the `CONNECT` packet and the `CONNACK` packet. The `Topic Alias Maximum` is encoded in the variable headers of the `CONNECT` and `CONNACK` packets as a message attribute.
+Before the [MQTT client](https://www.emqx.com/en/blog/mqtt-client-tools) or server can start using topic aliases, they need to agree on the maximum number of topic aliases allowed in the current connection. This part of the information exchange is done in the `CONNECT` packet and the `CONNACK` packet. The `Topic Alias Maximum` is encoded in the variable headers of the `CONNECT` and `CONNACK` packets as a message attribute.
 
 ![Set MQTT Topic Alias Maximum mutually](https://assets.emqx.com/images/597d085d996527a5a2881abd929b4546.png)
 

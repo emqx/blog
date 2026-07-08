@@ -8,7 +8,7 @@
 
 ### 通过 MQTT over QUIC 实现更智能的传输 
 
-传统的 MQTT 基于 TCP 运行，但它在移动和不稳定网络环境中的局限性正日益凸显。MQTT over QUIC 通过使用 UDP 提供了更快、更灵活的替代方案，显著缩短了连接建立时间并降低了延迟，这一优势对车联网和远程工业部署等应用场景尤为重要。作为首个支持该技术的 MQTT Broker，EMQX 目前正与 OASIS MQTT 技术委员会紧密合作，共同推进 MQTT over QUIC 的标准化进程。
+传统的 MQTT 基于 TCP 运行，但它在移动和不稳定网络环境中的局限性正日益凸显。MQTT over [QUIC](https://www.emqx.com/zh/blog/quic-protocol-the-features-use-cases-and-impact-for-iot-iov) 通过使用 UDP 提供了更快、更灵活的替代方案，显著缩短了连接建立时间并降低了延迟，这一优势对车联网和远程工业部署等应用场景尤为重要。作为首个支持该技术的 [MQTT Broker](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison)，EMQX 目前正与 OASIS MQTT 技术委员会紧密合作，共同推进 MQTT over QUIC 的标准化进程。
 
 > 了解更多：[MQTT over QUIC：物联网消息传输还有更多可能](https://www.emqx.com/zh/blog/mqtt-over-quic)
 

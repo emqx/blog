@@ -167,7 +167,7 @@ EMQ 提供了一个[免费的公共 MQTT 服务器](https://www.emqx.com/zh/mqtt
 
 - [**如何使用 ThingsBoard 接入 MQTT 数据**](https://www.emqx.com/zh/blog/how-to-use-thingsboard-to-access-mqtt-data)
 
-  这篇文章以 ThingsBoard Cloud 和 EMQX Cloud 为例，介绍如何将第三方 MQTT Broker 集成到 ThingsBoard 平台，从而实现对 MQTT 数据的访问和管理。
+  这篇文章以 ThingsBoard Cloud 和 [EMQX Cloud](https://www.emqx.com/zh/cloud) 为例，介绍如何将第三方 MQTT Broker 集成到 ThingsBoard 平台，从而实现对 MQTT 数据的访问和管理。
 
 - [**使用 Node-RED 处理 MQTT 数据**](https://www.emqx.com/zh/blog/using-node-red-to-process-mqtt-data)
 
@@ -191,7 +191,7 @@ EMQ 提供了一个[免费的公共 MQTT 服务器](https://www.emqx.com/zh/mqtt
 
 ## EMQX：全球最具扩展性的 MQTT Broker
 
-EMQX 是全球最受欢迎的开源 MQTT Broker 之一，在 [GitHub](https://github.com/emqx/emqx) 上拥有 15.1k Stars。它全面支持 [MQTT 5.0](https://www.emqx.com/zh/blog/introduction-to-mqtt-5)、3.1.1 和 3.1 协议，同时兼容 [MQTT-SN](https://www.emqx.com/zh/blog/connecting-mqtt-sn-devices-using-emqx)、[CoAP](https://www.emqx.com/zh/blog/coap-protocol)、[LwM2M](https://www.emqx.com/zh/blog/iot-protocols-mqtt-coap-lwm2m) 以及基于 QUIC 的 MQTT 等多种协议。借助 EMQX，您可以轻松连接数百万物联网设备，实现消息的实时处理与路由，并无缝集成各类后端数据系统。它特别适用于人工智能（AI）、物联网（IoT）、工业物联网（IIoT）、车联网、智慧城市等多种应用场景。
+EMQX 是全球最受欢迎的开源 MQTT Broker 之一，在 [GitHub](https://github.com/emqx/emqx) 上拥有 15.1k Stars。它全面支持 [MQTT 5.0](https://www.emqx.com/zh/blog/introduction-to-mqtt-5)、3.1.1 和 3.1 协议，同时兼容 [MQTT-SN](https://www.emqx.com/zh/blog/connecting-mqtt-sn-devices-using-emqx)、[CoAP](https://www.emqx.com/zh/blog/coap-protocol)、[LwM2M](https://www.emqx.com/zh/blog/iot-protocols-mqtt-coap-lwm2m) 以及基于 [QUIC](https://www.emqx.com/zh/blog/quic-protocol-the-features-use-cases-and-impact-for-iot-iov) 的 MQTT 等多种协议。借助 EMQX，您可以轻松连接数百万物联网设备，实现消息的实时处理与路由，并无缝集成各类后端数据系统。它特别适用于人工智能（AI）、物联网（IoT）、工业物联网（IIoT）、车联网、智慧城市等多种应用场景。
 
 EMQX 是全球扩展能力最强的 MQTT 消息服务器，支持无主集群架构（masterless clustering），实现高可用和横向扩展。单个由 23 个节点组成的集群可支持高达 1 亿条 MQTT 并发连接。
 

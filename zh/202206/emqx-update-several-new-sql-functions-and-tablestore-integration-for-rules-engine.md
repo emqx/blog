@@ -1,4 +1,4 @@
-[EMQX](https://www.emqx.com/zh/products/emqx) 是一款云原生分布式物联网接入平台，通过一体化的分布式 MQTT 消息服务和强大的 IoT 规则引擎，为高可靠、高性能的物联网实时数据移动、处理和集成提供动力，「随处运行，无限连接，任意集成」，助力企业快速构建关键业务的 IoT 平台与应用。
+[EMQX](https://www.emqx.com/zh/products/emqx) 是一款云原生分布式物联网接入平台，通过一体化的分布式 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 消息服务和强大的 IoT 规则引擎，为高可靠、高性能的物联网实时数据移动、处理和集成提供动力，「随处运行，无限连接，任意集成」，助力企业快速构建关键业务的 IoT 平台与应用。
 
 官网地址：[https://www.emqx.com/zh/products/emqx](https://www.emqx.com/zh/products/emqx)
 

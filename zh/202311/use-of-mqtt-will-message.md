@@ -125,7 +125,7 @@
 
 ![MQTTX](https://assets.emqx.com/images/4db1f688f079ff7916b29fa4908aeff8.png)
 
-新建一个客户端连接，同样连接到公共 MQTT 服务器，然后订阅主题 `mqttx_c7f95fdf/status` 以接收遗嘱消息：
+新建一个客户端连接，同样连接到公共 [MQTT 服务器](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison)，然后订阅主题 `mqttx_c7f95fdf/status` 以接收遗嘱消息：
 
 ![新建一个客户端连接](https://assets.emqx.com/images/82410c0b7fae8b66fd1575d014aface7.png)
 

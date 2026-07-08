@@ -4,7 +4,7 @@
 
 [EMQX](https://www.emqx.com/zh/products/emqx) 和 InfluxDB 共同构建了一个可扩展的物联网平台，可以高效、实时地采集分布式储能设备的数据。通过对采集的数据进行集中管理和分析，可以支持电力调度和电力交易。本文将详细介绍如何使用 EMQX 将储能设备连接起来，并与 InfluxDB 集成，实现数据的可靠存储和实时分析。
 
-关于利用 EMQX 实现 MQTT 与 InfluxDB、Timesacle 等时序数据库集成的更多内容请查看：[如何将 MQTT 与时序数据库高效应用于物联网场景](https://www.emqx.com/zh/blog/time-series-database-for-iot-the-missing-piece) 
+关于利用 EMQX 实现 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 与 InfluxDB、Timesacle 等时序数据库集成的更多内容请查看：[如何将 MQTT 与时序数据库高效应用于物联网场景](https://www.emqx.com/zh/blog/time-series-database-for-iot-the-missing-piece) 
 
 ## InfluxDB 简介
 

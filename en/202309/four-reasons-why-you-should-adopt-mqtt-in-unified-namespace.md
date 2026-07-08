@@ -100,7 +100,7 @@ MQTT could help you define metadata that assures consistency and accuracy across
 
 ## OPC UA: Alternative to MQTT for Building UNS
 
-Precisely speaking, MQTT is the best partner for building UNS. However, it is not compulsory. Therefore, you could build the UNS with other protocols, such as OPC UA and HTTP, or even plain Modbus + TCP/UDP. Among many options, OPC UA remains a popular methodology for IIoT due to the strong commercial backup and the standard's longevity. 
+Precisely speaking, MQTT is the best partner for building UNS. However, it is not compulsory. Therefore, you could build the UNS with other protocols, such as [OPC UA](https://www.emqx.com/en/blog/opc-ua-protocol) and HTTP, or even plain Modbus + TCP/UDP. Among many options, OPC UA remains a popular methodology for IIoT due to the strong commercial backup and the standard's longevity. 
 
 > The detailed comparison between them can be found at:
 >

@@ -60,7 +60,7 @@ To address the challenge of specific industrial protocols (like OPCDA) that are 
 **Driver Enhancements:**
 
 - The BACnet/IP driver now supports tag scanning.
-- OPCUA, DNP3, and Siemens S7 drivers support link tracing for easier troubleshooting.
+- [OPCUA](https://www.emqx.com/en/blog/opc-ua-protocol), DNP3, and Siemens S7 drivers support link tracing for easier troubleshooting.
 - The SparkplugB application now supports static tag configuration.
 
 **Enhanced Data Processing Capabilities:**

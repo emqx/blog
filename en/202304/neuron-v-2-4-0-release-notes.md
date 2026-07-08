@@ -18,9 +18,9 @@ Neuron 2.4.0 also introduces a new WebSocket application driver for real-time co
 
 Updates have also been made to several existing features in Neuron. 
 
-- **Leveraging more power of existing protocol drivers.** IEC60850-5-104 now supports telemetry and clock synchronization, giving users greater device synchronization control. And MQTT offers configurable QoS and custom topic subscriptions for group subscriptions, further increasing protocol flexibility.
+- **Leveraging more power of existing protocol drivers.** IEC60850-5-104 now supports telemetry and clock synchronization, giving users greater device synchronization control. And [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) offers configurable QoS and custom topic subscriptions for group subscriptions, further increasing protocol flexibility.
 - **Introducing real-time configuration change event reporting in** **monitoring plug-in.** This new feature allows users to monitor changes to their configuration in real-time, providing greater visibility into their industrial devices and ensuring they can respond quickly and effectively.
-- **Connecting to eKuiper on different machines.** Users can now deploy Neuron and the streaming engine, eKuiper, on separate devices, allowing for a more customizable and efficient industrial IoT environment setup.  
+- **Connecting to eKuiper on different machines.** Users can now deploy Neuron and the streaming engine, eKuiper, on separate devices, allowing for a more customizable and efficient [industrial IoT](https://www.emqx.com/en/blog/industrial-iot-systems) environment setup.  
 - **Enhancing data flexibility with new read-write storage points.** The new storage points are readable and writable, providing even greater flexibility in how users can manipulate their data, making it easier to manage and customize their industrial IoT environment to meet their specific needs. 
 
 ## API and UI Improvements

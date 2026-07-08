@@ -1,10 +1,10 @@
-通过之前的文章，相信大家已经熟悉了 JMeter 及 MQTT 插件的使用等基础知识。本文我们将介绍 JMeter MQTT 插件在订阅与发布测试场景中的使用。
+通过之前的文章，相信大家已经熟悉了 JMeter 及 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 插件的使用等基础知识。本文我们将介绍 JMeter MQTT 插件在订阅与发布测试场景中的使用。
 
 ## 订阅、发布场景介绍
 
 **发布场景**
 
-使用 MQTT Connect 请求模拟设备与 MQTT 服务器（本文以 EMQX 为例）建立连接，随后使用MQTT Pub Sampler 请求模拟设备发布消息到 MQTT Broker，在 MQTT Pub Sampler 后添加固定定时器模拟定时发布消息。
+使用 MQTT Connect 请求模拟设备与 MQTT 服务器（本文以 EMQX 为例）建立连接，随后使用MQTT Pub Sampler 请求模拟设备发布消息到 [MQTT Broker](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison)，在 MQTT Pub Sampler 后添加固定定时器模拟定时发布消息。
 
 **订阅发布场景**
 

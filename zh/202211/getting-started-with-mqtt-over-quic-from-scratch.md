@@ -2,7 +2,7 @@
 
 QUIC([RFC9000](https://datatracker.ietf.org/doc/html/rfc9000)) 是下一代互联网协议 HTTP/3 的底层传输协议，与 TCP/TLS 协议相比，它**在减少连接开销与消息延迟的同时，为现代移动互联网提供了有效灵活的传输层。**
 
-EMQX 5.0 是首个将 QUIC 引入 MQTT 的开创性产品。在长期的客户服务和技术探索中，我们注意到 QUIC 的特性能够和一些物联网场景完美契合，于是尝试将 MQTT 的传输层替换成 QUIC，由此诞生了 MQTT over QUIC。
+EMQX 5.0 是首个将 QUIC 引入 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 的开创性产品。在长期的客户服务和技术探索中，我们注意到 QUIC 的特性能够和一些物联网场景完美契合，于是尝试将 MQTT 的传输层替换成 QUIC，由此诞生了 MQTT over QUIC。
 
 正如 [MQTT over QUIC：物联网消息传输还有更多可能](https://www.emqx.com/zh/blog/mqtt-over-quic) 一文所述，在网络不稳定、连接多变的物联网场景下，QUIC 低连接开销和多路径支持的特性就显示出了其领先的优势。测试数据也表明，基于 QUIC 0 RTT/1 RTT 重连/新建能力，MQTT over QUIC 能够在弱网与不固定的网络通路中有效提升用户体验。
 
@@ -71,7 +71,7 @@ emqx/emqx:5.0.10
 - [NanoSDK](https://github.com/nanomq/NanoSDK/)：由 EMQ 旗下 NanoMQ 团队发布的 C 语言的 MQTT SDK，除 MQTT over QUIC 外还支持 WebSocket、nanomsg/SP 等多协议 
 - [NanoSDK-Python](https://github.com/wanghaEMQ/pynng-mqtt)：NanoSDK 的 Python 语言 binding
 - [NanoSDK-Java](https://github.com/nanomq/nanosdk-java)：NanoSDK 的 Java JNA binding
-- [emqtt](https://github.com/emqx/emqtt)：Erlang 语言的 MQTT 客户端库，支持 QUIC
+- [emqtt](https://github.com/emqx/emqtt)：Erlang 语言的 [MQTT 客户端](https://www.emqx.com/zh/blog/mqtt-client-tools)库，支持 QUIC
 
 除了客户端库之外，EMQ 还在边缘计算产品 NanoMQ 中提供了 MQTT over QUIC 桥接支持，在特定的应用中您可以借助 NanoMQ 实现边缘数据通过 QUIC 桥接上云，无需过多开发集成即可应用 MQTT over QUIC 的特性。
 
@@ -110,7 +110,7 @@ NanoSDK 也提供 Java 和 Python 的 binding，例程可以分别参考 [https:
 
 ## 通过 NanoMQ 桥接完成 MQTT 3.1.1/5.0 与 MQTT over QUIC 的转换兼容
 
-[NanoMQ](https://nanomq.io/) 是一款超轻量、高性能且跨平台的边缘 MQTT 消息引擎，兼具多协议消息总线功能，支持 MQTT over QUIC 桥接功能。它能够将传统 MQTT 客户端的数据转换成 QUIC 数据包并发给云端的 EMQX，从而为无法集成或找到合适 MQTT over QUIC SDK 的端侧设备和难以修改固件的嵌入式设备提供在 IoT 场景利用 QUIC 协议优势的捷径，降低使用门槛。
+[NanoMQ](https://nanomq.io/) 是一款超轻量、高性能且跨平台的边缘 MQTT 消息引擎，兼具多协议消息总线功能，支持 MQTT over QUIC 桥接功能。它能够将传统 MQTT 客户端的数据转换成 QUIC 数据包并发给云端的 EMQX，从而为无法集成或找到合适 MQTT over QUIC SDK 的端侧设备和难以修改固件的嵌入式设备提供在 IoT 场景利用 [QUIC 协议](https://www.emqx.com/zh/blog/quic-protocol-the-features-use-cases-and-impact-for-iot-iov)优势的捷径，降低使用门槛。
 
 ![NanoMQ](https://assets.emqx.com/images/f1138a902ac66c799cdbea0ccd593cb0.png)
 

@@ -1,6 +1,6 @@
 本月，EMQX 5.0 保持稳定更新，目前最新版本已经来到了 5.0.8，在修复目前已知 Bug 的同时，我们也专注于加强性能和改进功能体验。企业版 4.3 & 4.4 发布了最新的维护版本，修复了多项已知问题，稳定性进一步提升。
 
-云服务方面，EMQX Cloud 新增了 1000 连接规格的专业版部署，方便更多用户享受专业版高级功能。
+云服务方面，[EMQX Cloud](https://www.emqx.com/zh/cloud) 新增了 1000 连接规格的专业版部署，方便更多用户享受专业版高级功能。
 
 ## EMQX
 
@@ -12,7 +12,7 @@
 
 ### 4.3 & 4.4 维护版本升级
 
-目前，EMQX 与 EMQX Enterprise 的最新稳定版本已经分别来到了 EMQX 4.3.20 & 4.4.9 以及 EMQX Enterprise 4.3.15 & 4.4.9，这是一次常规升级，以各项问题修复为主，完整修复列表见：[https://www.emqx.com/zh/changelogs/enterprise/4.4.9](https://www.emqx.com/zh/changelogs/enterprise/4.4.9) 。
+目前，EMQX 与 [EMQX Enterprise](https://www.emqx.com/zh/products/emqx) 的最新稳定版本已经分别来到了 EMQX 4.3.20 & 4.4.9 以及 EMQX Enterprise 4.3.15 & 4.4.9，这是一次常规升级，以各项问题修复为主，完整修复列表见：[https://www.emqx.com/zh/changelogs/enterprise/4.4.9](https://www.emqx.com/zh/changelogs/enterprise/4.4.9) 。
 
 ### 产品解读系列专题完结
 

@@ -1,18 +1,18 @@
 ## Where to go after Google IoT Core?
 
-Google's sudden announcement of shutting down its Cloud IoT Core service leaves customers very tight schedule to start exploring [alternative IoT technologies](https://www.emqx.com/en/blog/why-emqx-is-your-best-google-cloud-iot-core-alternative) and migrate their IoT applications and endpoints. Given that Google IoT Core is based on MQTT, the best alternative options for seamless migration undoubtedly are MQTT-based IoT messaging platforms or services.
+Google's sudden announcement of shutting down its Cloud [IoT Core](https://www.emqx.com/en/blog/understanding-aws-iot-core) service leaves customers very tight schedule to start exploring [alternative IoT technologies](https://www.emqx.com/en/blog/why-emqx-is-your-best-google-cloud-iot-core-alternative) and migrate their IoT applications and endpoints. Given that Google IoT Core is based on MQTT, the best alternative options for seamless migration undoubtedly are MQTT-based IoT messaging platforms or services.
 
 Say you're a Google IoT Core user and have your own resources on GCP, such as Kafka / Confluent, Cloud SQL, MongoDB, or InfluxDB. [EMQX Cloud](https://www.emqx.com/en/cloud), a fully-managed MQTT service available on the Google Cloud Platform, and most importantly, support VPC peering on GCP, will be your perfect option in this case.
 
 In this article, we will share how to bridge MQTT data from EMQX Cloud to Confluent Cloud on GCP. EMQX Cloud can connect to Google Cloud SQL and also supports connecting with Confluent Cloud based on GCP's instances. From EMQX Cloud to Confluent Cloud to user's applications, they can all communicate with each other by establishing a peer-to-peer connection. This communication is under the same network, making it more secure and reliable as it's a private network connection. This Cloud-to-Cloud native connection allows users to enjoy the benefits of GCP infrastructure while completely avoiding vendor lock-in. 
 
-To make it more vivid, we will simulate temperature and humidity data and report these data to EMQX Cloud via the MQTT protocol and then use the EMQX Cloud Data Integrations to bridge the data into Confluent Cloud based on the GCP platform.
+To make it more vivid, we will simulate temperature and humidity data and report these data to EMQX Cloud via the [MQTT protocol](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) and then use the EMQX Cloud Data Integrations to bridge the data into Confluent Cloud based on the GCP platform.
 
 ![EMQX Cloud](https://assets.emqx.com/images/5d1dcdc21bfef496c024f826afbc531e.png)
 
 ## EMQX Cloud
 
-[EMQX Cloud](https://www.emqx.com/en/cloud) is a fully managed MQTT service for IoT that enables users to connect IoT devices to any cloud without the burden of maintaining infrastructure. It’s the world's first fully managed MQTT 5.0 public cloud service, as well as the first and only one that supports all three major public cloud platforms, including GCP, AWS, and Azure.
+[EMQX Cloud](https://www.emqx.com/en/cloud) is a fully managed MQTT service for IoT that enables users to connect IoT devices to any cloud without the burden of maintaining infrastructure. It’s the world's first fully managed [MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5) public cloud service, as well as the first and only one that supports all three major public cloud platforms, including GCP, AWS, and Azure.
 
 EMQX Cloud provides a one-stop O&M colocation and a unique isolated environment for MQTT services. In the era of Internet of Everything, EMQX Cloud can help you quickly build industry applications and easily realize the connection, movement, processing, and analytics of IoT data.
 

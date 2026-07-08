@@ -1,8 +1,8 @@
 ## **Introduction: Bridging the Gap Between OT and IT**
 
-In the wave of Industry 4.0, seamlessly integrating real-time device data from the OT (Operational Technology) layer with cloud applications in the IT (Information Technology) layer is key to unlocking data potential and achieving smart manufacturing. The Siemens S7-1200 PLC, a cornerstone of industrial automation, contains a vast amount of production status and equipment parameter data. Efficiently and reliably transmitting this valuable OT data to an [MQTT Broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) for use by MES, SCADA, or cloud-based AI analytics platforms is a common challenge for many enterprises.
+In the wave of Industry 4.0, seamlessly integrating real-time device data from the OT (Operational Technology) layer with cloud applications in the IT (Information Technology) layer is key to unlocking data potential and achieving [smart manufacturing](https://www.emqx.com/en/blog/the-smart-manufacturing-revolution). The Siemens S7-1200 PLC, a cornerstone of industrial automation, contains a vast amount of production status and equipment parameter data. Efficiently and reliably transmitting this valuable OT data to an [MQTT Broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) for use by MES, SCADA, or cloud-based AI analytics platforms is a common challenge for many enterprises.
 
-Traditional solutions often involve complex programming and protocol conversion, which are both time-consuming and labor-intensive. Now, with the powerful industrial edge gateway software, NeuronEX, you can easily build a stable data bridge from a Siemens S7-1200 PLC to MQTT in under 10 minutes, all in a no-code fashion.
+Traditional solutions often involve complex programming and protocol conversion, which are both time-consuming and labor-intensive. Now, with the powerful industrial edge gateway software, NeuronEX, you can easily build a stable data bridge from a Siemens S7-1200 PLC to [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) in under 10 minutes, all in a no-code fashion.
 
 This article will provide a step-by-step guide to walk you through the entire configuration process, from PLC setup to successfully viewing data in an [MQTT client](https://www.emqx.com/en/blog/mqtt-client-tools).
 
@@ -119,7 +119,7 @@ Congratulations! You have successfully connected a Siemens S7-1200 PLC to MQTT w
 
 This demonstrates the powerful capabilities of NeuronEX as a modern industrial edge gateway: it can dive into the OT layer to finely handle device protocols and data tags, and seamlessly integrate with the IT world to easily deliver data to the cloud.
 
-Download NeuronEX now to kickstart your industrial IoT journey: [Download NeuronEX](https://www.emqx.com/en/try?tab=self-managed).
+Download NeuronEX now to kickstart your [industrial IoT](https://www.emqx.com/en/blog/industrial-iot-systems) journey: [Download NeuronEX](https://www.emqx.com/en/try?tab=self-managed).
 
 
 

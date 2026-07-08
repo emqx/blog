@@ -57,7 +57,7 @@
 
 ### 来源产品与版本要求
 
-- **Kepware（KEPServerEX）**：在 Kepware 侧通过「另存为」导出 **JSON**，在**驱动配置迁移工具**中选择来源 **KEPServerEX** 上传。覆盖 Modbus、OPC UA Client、西门子、三菱、欧姆龙、BACnet/IP、CODESYS、Allen-Bradley 等十余类常用驱动场景。
+- **Kepware（KEPServerEX）**：在 Kepware 侧通过「另存为」导出 **JSON**，在**驱动配置迁移工具**中选择来源 **KEPServerEX** 上传。覆盖 Modbus、[OPC UA](https://www.emqx.com/zh/blog/opc-ua-protocol) Client、西门子、三菱、欧姆龙、BACnet/IP、CODESYS、Allen-Bradley 等十余类常用驱动场景。
 - **Litmus Edge**：从 Device Management 导出 **Plain Text** 模板后，在**驱动配置迁移工具**中选择来源 **Litmus Edge** 上传。支持 Modbus 系列、OPC UA（Gen1 / Gen2）、DF1、欧姆龙 FINS / Hostlink、西门子 S7、BACnet/IP 等常见协议。
 
 ## 典型应用场景
@@ -68,7 +68,7 @@
 
 ## 结语
 
-工业边缘方案的取舍通常体现在协议纵深、部署弹性与上下游集成能力；实施阶段若大量工时消耗在南向配置重建上，将稀释架构选型带来的收益。驱动配置迁移工具将 **可规则化的配置映射** 交由托管服务完成，有利于项目组将精力集中于网络拓扑、安全边界与业务语义对齐；与 NeuronEX 在 MQTT 北向、轻量化部署及云边协同方面的能力相结合，可显著缩短从配置导入到稳定采样就绪的整体路径。
+工业边缘方案的取舍通常体现在协议纵深、部署弹性与上下游集成能力；实施阶段若大量工时消耗在南向配置重建上，将稀释架构选型带来的收益。驱动配置迁移工具将 **可规则化的配置映射** 交由托管服务完成，有利于项目组将精力集中于网络拓扑、安全边界与业务语义对齐；与 NeuronEX 在 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 北向、轻量化部署及云边协同方面的能力相结合，可显著缩短从配置导入到稳定采样就绪的整体路径。
 
 若正在评估自 Kepware 或 Litmus Edge 迁移至 NeuronEX，可先按文档执行小规模导出试转；完整协议清单与操作说明请参阅：
 

@@ -24,7 +24,7 @@ EMQX 的访问控制列表（ACL）为统一命名空间内的主题访问提供
 
 Neuron 支持多种主流的标准工业协议，例如 [MQTT Sparkplug](https://www.emqx.com/zh/blog/mqtt-sparkplug-bridging-it-and-ot-in-industry-4-0) 和 [OPC UA over MQTT](https://www.emqx.com/zh/blog/opc-ua-over-mqtt-the-future-of-it-and-ot-convergence)，在统一命名空间框架内，这些协议在保证数据一致性方面发挥着核心作用。这些协议使工业设备、Neuron 工业连接网关和 EMQX MQTT Broker 之间能够顺畅地通信和交换数据。这些协议的整合提高了整个工业生态系统内数据共享的准确性、可靠性和效率。
 
-AWS、Azure、西门子、贝克霍夫等主要技术公司均积极倡导在[工业物联网](https://www.emqx.com/zh/blog/iiot-explained-examples-technologies-benefits-and-challenges)和自动化领域广泛应用这些技术。在主要技术供应商提供的 MQTT Broker 服务的有力支持下，MQTT Sparkplug 简化了工业和物联网环境中的数据通信，实现了实时数据交换。同时，将 OPC UA 与 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 相结合，也就是 OPC UA over MQTT，确保了工业应用中数据传输的安全性和高效性，这得益于这些技术领军公司在实施方面提供的坚实支持。这种支持凸显了这些协议在工业过程现代化、推动数据驱动决策和激发创新方面的重要作用。
+AWS、Azure、西门子、贝克霍夫等主要技术公司均积极倡导在[工业物联网](https://www.emqx.com/zh/blog/iiot-explained-examples-technologies-benefits-and-challenges)和自动化领域广泛应用这些技术。在主要技术供应商提供的 MQTT Broker 服务的有力支持下，MQTT Sparkplug 简化了工业和物联网环境中的数据通信，实现了实时数据交换。同时，将 [OPC UA](https://www.emqx.com/zh/blog/opc-ua-protocol) 与 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 相结合，也就是 OPC UA over MQTT，确保了工业应用中数据传输的安全性和高效性，这得益于这些技术领军公司在实施方面提供的坚实支持。这种支持凸显了这些协议在工业过程现代化、推动数据驱动决策和激发创新方面的重要作用。
 
 ## 跨制造流程的多点同步
 

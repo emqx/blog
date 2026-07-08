@@ -23,7 +23,7 @@ A good MQTT client tool should possess the following key features.
 | Client Tool       | Best For                                      | Platforms                    | MQTT 5.0 |   License   | Key Edge                                  |
 | :---------------- | :-------------------------------------------- | :--------------------------- | :------: | :---------: | :---------------------------------------- |
 | **MQTTX**         | Full-stack advanced testing & CLI automation  | Win, macOS, Linux, Web       |   Yes    | Open Source | Chat-style UI, AI Copilot, MCP Support    |
-| **MQTT Explorer** | Visualizing complex, hierarchical topic trees | Win, macOS, Linux            |   Yes    | Open Source | Tree-view topology, historical diffs      |
+| **[MQTT Explorer](https://www.emqx.com/en/blog/connecting-to-emqx-cloud-with-mqtt-explorer)** | Visualizing complex, hierarchical topic trees | Win, macOS, Linux            |   Yes    | Open Source | Tree-view topology, historical diffs      |
 | **Mosquitto CLI** | Lightweight, headless automation scripts      | Cross-platform, Raspberry Pi |   Yes    | Open Source | Ultra-low footprint, native request-reply |
 | **EasyMQTT**      | Mobile monitoring and smart home testing      | iOS, iPadOS, macOS           |   Yes    | Proprietary | Modern Apple UI, perfect for Zigbee2MQTT  |
 
@@ -70,7 +70,7 @@ For more information, please check out: [Free Public MQTT Broker](https://www.em
 
 [MQTTX](https://mqttx.app/) is an elegant cross-platform MQTT 5.0 desktop client that runs on macOS, Linux, and Windows. Its user-friendly chat-style interface lets users easily create multiple MQTT/MQTTS connections and subscribe/publish MQTT messages.
 
-MQTTX fully supports MQTT versions 5.0 and 3.1.1, MQTT over TLS, MQTT over WebSocket, and one-way and two-way SSL authentication. In addition to these essential features, MQTTX offers advanced functionality, such as customizable scripts for [MQTT Pub/Sub](https://www.emqx.com/en/blog/mqtt-5-introduction-to-publish-subscribe-model) simulation, payload codec support (Hex, Base64, JSON), and an AI-powered Copilot that helps generate test data, MQTT client code in various languages, and message schemas based on your connection context and test data. With integrated Model Context Protocol (MCP) support, Copilot can connect to external databases and services, enabling intelligent, code-free MQTT testing and interaction.
+MQTTX fully supports MQTT versions 5.0 and 3.1.1, [MQTT over TLS](https://www.emqx.com/en/blog/fortifying-mqtt-communication-security-with-ssl-tls), MQTT over WebSocket, and one-way and two-way SSL authentication. In addition to these essential features, MQTTX offers advanced functionality, such as customizable scripts for [MQTT Pub/Sub](https://www.emqx.com/en/blog/mqtt-5-introduction-to-publish-subscribe-model) simulation, payload codec support (Hex, Base64, JSON), and an AI-powered Copilot that helps generate test data, MQTT client code in various languages, and message schemas based on your connection context and test data. With integrated Model Context Protocol (MCP) support, Copilot can connect to external databases and services, enabling intelligent, code-free [MQTT testing](https://www.emqx.com/en/blog/mqtt-testing) and interaction.
 
 MQTTX is an open-source project developed with [Electron](https://www.electronjs.org/) and maintained by the [EMQX team](https://github.com/emqx). The latest stable release is version 1.13.0 (Jan 2026). 
 

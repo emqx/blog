@@ -1,6 +1,6 @@
-As the most popular communication protocol in the Internet of Things (IoT) field, the latest version of MQTT has already reached 5.0 in 2019. Compared with previous versions, 5.0 has added features more in line with modern IoT application requirements, such as session expiry, reason codes, shared subscriptions, request-response, etc., making it the preferred version for the majority of IoT companies.
+As the most popular communication protocol in the Internet of Things (IoT) field, the latest version of [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) has already reached 5.0 in 2019. Compared with previous versions, 5.0 has added features more in line with modern IoT application requirements, such as session expiry, reason codes, shared subscriptions, request-response, etc., making it the preferred version for the majority of IoT companies.
 
-To give you a more comprehensive understanding of MQTT 5.0, this article will introduce each new feature introduced in 5.0 in turn, and use the [MQTTX CLI](https://mqttx.app/) tool to demonstrate how we can use these features in [EMQX](https://github.com/emqx/emqx). You can easily run the examples in this article by copying and pasting commands.
+To give you a more comprehensive understanding of [MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5), this article will introduce each new feature introduced in 5.0 in turn, and use the [MQTTX CLI](https://mqttx.app/) tool to demonstrate how we can use these features in [EMQX](https://github.com/emqx/emqx). You can easily run the examples in this article by copying and pasting commands.
 
 Before we start, we need to complete the following preparations:
 
@@ -500,7 +500,7 @@ The subscriber in the first terminal window will receive two messages. According
 }
 ```
 
-> When a message matches multiple subscriptions of the same client, the MQTT server can send a message to each of these overlapping subscriptions, or send only one message to these overlapping subscriptions. EMQX belongs to the former.
+> When a message matches multiple subscriptions of the same client, the [MQTT server](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) can send a message to each of these overlapping subscriptions, or send only one message to these overlapping subscriptions. EMQX belongs to the former.
 
  
 
@@ -899,7 +899,7 @@ retain: true
 
 ## Feature 16: Server Keep Alive
 
-The Keep Alive value determines the maximum idle time for the client to send two adjacent control packets, and the server can judge whether it is still active according to whether it receives the client's packet within the expected time.
+The [Keep Alive](https://www.emqx.com/en/blog/mqtt-keep-alive) value determines the maximum idle time for the client to send two adjacent control packets, and the server can judge whether it is still active according to whether it receives the client's packet within the expected time.
 
 In MQTT 5.0, the server can not accept the Keep Alive value specified by the client, and returns a Server Keep Alive in the CONNACK packet. The client must use this Keep Alive time to maintain communication.
 

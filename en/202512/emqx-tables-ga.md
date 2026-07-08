@@ -4,7 +4,7 @@ Today, we're excited to announce that EMQX Tables is officially generally availa
 
 Since we launched the public preview earlier this quarter, over one hundred developers and teams have tested EMQX Tables, built prototypes, and shared invaluable feedback. To everyone who participated: thank you. Your insights shaped the product we're releasing today.
 
-Starting today, EMQX Tables is open to all EMQX Cloud users, with more deployment flexibility, broader broker integration, and the reliability you need for production workloads.
+Starting today, EMQX Tables is open to all [EMQX Cloud](https://www.emqx.com/en/cloud) users, with more deployment flexibility, broader broker integration, and the reliability you need for production workloads.
 
 ![image.png](https://assets.emqx.com/images/06e0e02556954c38b877e68e64bbdcda.png)
 
@@ -29,13 +29,13 @@ We have hardened the underlying architecture, ensuring that EMQX Tables meets th
 
 ## One Platform, from Device to Insight
 
-If you've built IoT applications before, you know the drill: connect devices with an MQTT broker, spin up a separate time-series database, write integration code to bridge them, manage two consoles, two billing relationships, two security models. 
+If you've built IoT applications before, you know the drill: connect devices with an [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison), spin up a separate time-series database, write integration code to bridge them, manage two consoles, two billing relationships, two security models. 
 
 It works, but it's more complex than it needs to be.
 
-EMQX Tables changes that. With native time-series storage built directly into EMQX Cloud, your data flows from MQTT topics to queryable tables with just a few clicks. No external databases, no custom pipelines, no middleware.
+EMQX Tables changes that. With native time-series storage built directly into EMQX Cloud, your data flows from [MQTT topics](https://www.emqx.com/en/blog/advanced-features-of-mqtt-topics) to queryable tables with just a few clicks. No external databases, no custom pipelines, no middleware.
 
-Together, EMQX Broker and EMQX Tables form a unified MQTT data platform:
+Together, EMQX Broker and EMQX Tables form a unified [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) data platform:
 
 - **EMQX Broker**: Fully managed MQTT messaging for device connectivity
 - **EMQX Tables**: Fully managed time-series storage for IoT data

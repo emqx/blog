@@ -1,4 +1,4 @@
-EMQX 作为一个全球领先的 MQTT 物联网平台，支持集群扩展以实现高性能和高可用。而在集群部署中，我们通常还会用到 NGINX、HAProxy 等反向代理，实现负载均衡、SSL/TLS 终结、故障转移等目的。
+EMQX 作为一个全球领先的 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 物联网平台，支持集群扩展以实现高性能和高可用。而在集群部署中，我们通常还会用到 NGINX、HAProxy 等反向代理，实现负载均衡、SSL/TLS 终结、故障转移等目的。
 
 但使用代理时，由于客户端不再直接访问 EMQX，EMQX 将无法直接获取到客户端的真实 IP，这不利于我们实现安全审计、访问限制等基于 IP 的应用。
 
@@ -574,7 +574,7 @@ websocket.proxy_port_header = X-Forwarded-Port
 
 ##### 验证
 
-由于无法用 MQTTX CLI 伪造 `X-Forwarded-For`，为了验证效果，我们可以在运行 MQTT Client 的主机上额外部署一个 NGINX 代理，它的作用是帮助我们伪造一个值为 `127.0.0.1` 的 `X-Forwarded-For` 标头，其配置如下：
+由于无法用 MQTTX CLI 伪造 `X-Forwarded-For`，为了验证效果，我们可以在运行 [MQTT Client](https://www.emqx.com/zh/blog/mqtt-client-tools) 的主机上额外部署一个 NGINX 代理，它的作用是帮助我们伪造一个值为 `127.0.0.1` 的 `X-Forwarded-For` 标头，其配置如下：
 
 ```nginx
 http {

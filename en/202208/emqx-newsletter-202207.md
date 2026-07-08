@@ -1,6 +1,6 @@
 In July, EMQX 5.0.0 was released, bringing a number of groundbreaking updates and improvements. The EMQX team is currently iterating on subsequent releases at a rate of one release every two weeks to quickly fix known issues and incorporate additional features. In addition, this month the EMQX team has made significant progress on community communication and several new features.
 
-In terms of cloud services, EMQX Cloud has added support for two external integrated databases, giving users more options for data persistence. A new version of EMQX Kubernetes Operator has been released with simultaneous adaptation support for EMQX 5.0, and support for deployment of edge computing products such as eKuiper and Neuron has been implemented.
+In terms of cloud services, [EMQX Cloud](https://www.emqx.com/en/cloud) has added support for two external integrated databases, giving users more options for data persistence. A new version of EMQX Kubernetes Operator has been released with simultaneous adaptation support for EMQX 5.0, and support for deployment of edge computing products such as eKuiper and Neuron has been implemented.
 
 ## EMQX
 
@@ -20,7 +20,7 @@ We have added the ability to check configuration files for EMQX. When the config
 
 ### **v4.3 & v4.4 upgrade**
 
-EMQX Broker 4.3.16 & 4.4.5 and EMQX Enterprise 4.3.11 & 4.4.5 were released in early July, bringing several known bug fixes such as inaccurate memory calculations in EMQX on Linux systems, as well as HStreamDB integration, exclusive subscriptions, and many other improvements.
+EMQX Broker 4.3.16 & 4.4.5 and [EMQX Enterprise](https://www.emqx.com/en/products/emqx) 4.3.11 & 4.4.5 were released in early July, bringing several known bug fixes such as inaccurate memory calculations in EMQX on Linux systems, as well as HStreamDB integration, exclusive subscriptions, and many other improvements.
 
 For more information, please check the Release Notes of the corresponding versions: [EMQX v4.4.5](https://www.emqx.com/en/changelogs/broker/4.4.5)、[EMQX Enterprise v4.4.5](https://www.emqx.com/en/changelogs/enterprise/4.4.5).
 
@@ -28,7 +28,7 @@ Meanwhile, the development of the next maintenance releases of 4.3 & 4.4 is near
 
 ### **EMQX 5.0 product explanatory articles series and live streams**
 
-To help users understand the technical details and product value of EMQX 5.0, EMQX team has launched a series of explanatory articles on the 5.0 product. We have already published “How EMQX 5.0 Achieves 100 Million MQTT Connections with the New Mria + RLOG Architecture” and “MQTT over QUIC: The Next-Generation IoT Standard Protocol Gives New Impetus to Messaging Scenarios”, and will share more on the new developments of EMQX 5.0 in data integration, authentication and access control, plug-in extensions, etc. Please stay tuned for further updates.
+To help users understand the technical details and product value of EMQX 5.0, EMQX team has launched a series of explanatory articles on the 5.0 product. We have already published “How EMQX 5.0 Achieves 100 Million [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) Connections with the New Mria + RLOG Architecture” and “[MQTT over QUIC](https://www.emqx.com/en/blog/mqtt-over-quic): The Next-Generation IoT Standard Protocol Gives New Impetus to Messaging Scenarios”, and will share more on the new developments of EMQX 5.0 in data integration, authentication and access control, plug-in extensions, etc. Please stay tuned for further updates.
 
 ## EMQX Cloud
 
@@ -46,7 +46,7 @@ EMQX Cloud is the first to support the forwarding and storage of device-side dat
 
 ### **v1.2.3 Released**
 
-EMQX Operator 1.2.3 released in July provides the following new features.
+[EMQX Operator](https://www.emqx.com/en/solutions/mqtt-on-kubernetes) 1.2.3 released in July provides the following new features.
 
 - Port tuning pods do not restart, further improving service stability
 - Automatic update without changing K8s related configuration by adjusting listener in EMQX Dashboard

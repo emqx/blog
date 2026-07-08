@@ -6,7 +6,7 @@ Massive data will be generated in an IoV scenario, which can be used as the basi
 
 ## QoS Level of MQTT Protocol
 
-As the first choice of data communication protocol in the IoV industry, the MQTT protocol specifies Quality of Service (QoS) that guarantees the reliability of message transmission in different network environments. This serves as the primary implementation technology for message reliability transmission in IoV scenarios.
+As the first choice of data communication protocol in the IoV industry, the [MQTT protocol](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) specifies Quality of Service (QoS) that guarantees the reliability of message transmission in different network environments. This serves as the primary implementation technology for message reliability transmission in IoV scenarios.
 
 The MQTT has three QoS levels:
 
@@ -32,7 +32,7 @@ The MQTT has three QoS levels:
 
 At first, it needs to be understood that the higher the QoS level is, the more complex the message interaction will be, and the greater the system resource consumption will be. In other words, a higher QoS level is not necessarily the best for a given scenario. The application can select the appropriate QoS level according to the required network and service requirements.
 
-According to the attributes and characteristics of data in IoV, we can divide it into six categories: basic attribute data, vehicle industrial control data, environment perception data, vehicle control data, application service data and user personal information. How to choose the most appropriate MQTT QoS level in different IoV scenarios?
+According to the attributes and characteristics of data in IoV, we can divide it into six categories: basic attribute data, vehicle industrial control data, environment perception data, vehicle control data, application service data and user personal information. How to choose the most appropriate [MQTT QoS](https://www.emqx.com/en/blog/introduction-to-mqtt-qos) level in different IoV scenarios?
 
 - **QoS 0**
 
@@ -54,7 +54,7 @@ According to the attributes and characteristics of data in IoV, we can divide it
 
 **Special Reminders**
 
-It should be noted that the QoS in the MQTT publishing operation and the subscription operation represent different meanings. The QoS in publication represents the QoS level used for messages sent to the MQTT Broker, and the QoS in subscription represents the maximum QoS level that the MQTT Broker can use when forwarding the message to the subscriber. It is necessary to guarantee that the sending QoS is consistent with that of the subscription, so to ensure that the received message has the intended QoS level, otherwise consumption degradation will occur. For example, if the QoS of the message sent by A is 2 and that of the message subscribed by B is 1, the QoS of the received message will be 1.
+It should be noted that the QoS in the MQTT publishing operation and the subscription operation represent different meanings. The QoS in publication represents the QoS level used for messages sent to the [MQTT Broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison), and the QoS in subscription represents the maximum QoS level that the MQTT Broker can use when forwarding the message to the subscriber. It is necessary to guarantee that the sending QoS is consistent with that of the subscription, so to ensure that the received message has the intended QoS level, otherwise consumption degradation will occur. For example, if the QoS of the message sent by A is 2 and that of the message subscribed by B is 1, the QoS of the received message will be 1.
 
 ## EMQX Message Transmission Guarantee Based on QoS Level
 

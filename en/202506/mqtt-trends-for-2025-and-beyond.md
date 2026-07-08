@@ -6,7 +6,7 @@ Here’s a look at how MQTT is changing and what trends to watch in 2025.
 
 ## Laying the Foundation: Protocol and Transport Evolution
 
-- **Smarter Transport with MQTT over QUIC**
+- **Smarter Transport with MQTT over [QUIC](https://www.emqx.com/en/blog/quic-protocol-the-features-use-cases-and-impact-for-iot-iov)**
 
   While MQTT has traditionally run over TCP, its limitations in mobile and unstable networks are becoming more apparent. [MQTT over QUIC](https://mqtt.ai/docs/mqtt-quic/) offers a faster, more resilient alternative, using UDP to improve connection setup times and reduce latency. It’s particularly valuable for applications like connected vehicles or remote industrial deployments. EMQX is the first broker to support this transport method, with standardization efforts ongoing through the OASIS MQTT Technical Committee.
 

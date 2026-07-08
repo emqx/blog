@@ -1,4 +1,4 @@
-EMQ, a global leader in open-source MQTT messaging and developer of the EMQX Platform, is thrilled to announce the availability of its [EMQX Platform Serverless](https://www.emqx.com/en/cloud/serverless-mqtt) edition in the EMEA (Europe, Middle East, Africa) region. This new offering enables users within these areas to swiftly create deployments and access a fully managed MQTT service with low latency, thus significantly enhancing their IoT business operations.
+EMQ, a global leader in open-source [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) messaging and developer of the EMQX Platform, is thrilled to announce the availability of its [EMQX Platform Serverless](https://www.emqx.com/en/cloud/serverless-mqtt) edition in the EMEA (Europe, Middle East, Africa) region. This new offering enables users within these areas to swiftly create deployments and access a fully managed MQTT service with low latency, thus significantly enhancing their IoT business operations.
 
 ## Expanding Our Coverage for Global User Benefits
 

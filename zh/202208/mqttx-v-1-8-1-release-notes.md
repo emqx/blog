@@ -16,7 +16,7 @@
 
 ### 默认 MQTT 5.0 连接
 
-在之前的版本中，MQTTX 默认是 MQTT 3.1.1 连接。作为目前支持 MQTT 5.0 特性最为完整的 MQTT 客户端工具，我们在最新版本中将 MQTTX 默认连接时的 MQTT 版本修改为了 5.0，方便更多的用户快速使用和体验 MQTT 5.0 的新特性。
+在之前的版本中，MQTTX 默认是 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 3.1.1 连接。作为目前支持 MQTT 5.0 特性最为完整的 [MQTT 客户端](https://www.emqx.com/zh/blog/mqtt-client-tools)工具，我们在最新版本中将 MQTTX 默认连接时的 MQTT 版本修改为了 5.0，方便更多的用户快速使用和体验 MQTT 5.0 的新特性。
 
 ### 对 Topic 进行发布前的验证
 
@@ -46,7 +46,7 @@ mqttx conn -h 'broker.emqx.io' -p 1883 -u 'admin' -P 'public'
 
 MQTTX Web 目前在线地址已修改为：[https://mqttx.app/web-client/](https://mqttx.app/web-client/) 
 
-只需要访问上述地址，即可快速使用这款在线的 MQTT 5.0 客户端工具，通过 MQTT over WebSocket 连接到 MQTT Broker 并在浏览器中测试消息发布和接收，快速开发和调试您的 MQTT 服务与应用。
+只需要访问上述地址，即可快速使用这款在线的 MQTT 5.0 客户端工具，通过 MQTT over WebSocket 连接到 [MQTT Broker](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison) 并在浏览器中测试消息发布和接收，快速开发和调试您的 MQTT 服务与应用。
 
 在 1.8.1 版本中，优化了页面样式，完善测试功能等。后续还将继续完善 MQTT 5.0 的属性配置功能。
 

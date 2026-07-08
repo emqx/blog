@@ -16,7 +16,7 @@ The above Automation Pyramid illustrates how information flows upward from the f
 
 ## The Challenges of Data Management in Automation Pyramid 
 
-Modern technologies, such as IIoT devices, edge computing, and cloud integration, have added new dimensions to the interactions between layers of the Automation Pyramid. Edge devices can preprocess data locally and send only relevant information to higher layers, reducing latency. Cloud integration allows for remote monitoring and advanced analytics. Overall, the interactions between different layers have become more complex and dynamic as technology continues to evolve. This makes it difficult to adapt the automation pyramid model to modern technologies. 
+Modern technologies, such as [IIoT](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges) devices, edge computing, and cloud integration, have added new dimensions to the interactions between layers of the Automation Pyramid. Edge devices can preprocess data locally and send only relevant information to higher layers, reducing latency. Cloud integration allows for remote monitoring and advanced analytics. Overall, the interactions between different layers have become more complex and dynamic as technology continues to evolve. This makes it difficult to adapt the automation pyramid model to modern technologies. 
 
 Here are some of the key challenges:
 

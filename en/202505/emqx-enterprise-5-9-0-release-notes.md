@@ -1,4 +1,4 @@
-We're excited to unveil **EMQX Enterprise 5.9.0**, the latest milestone in our mission to deliver the world's most scalable and reliable MQTT messaging platform. This release introduces a new license model designed to support continued innovation and enhanced user support. 
+We're excited to unveil **[EMQX Enterprise](https://www.emqx.com/en/products/emqx) 5.9.0**, the latest milestone in our mission to deliver the world's most scalable and reliable [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) messaging platform. This release introduces a new license model designed to support continued innovation and enhanced user support. 
 
 > For detailed information about the new license model, refer to [this blog](https://www.emqx.com/en/blog/adopting-business-source-license-to-accelerate-mqtt-and-ai-innovation). 
 
@@ -80,7 +80,7 @@ Enhanced MQTT rate limiting now supports burst capacity, allowing temporary spik
 ### Additional Key Enhancements and Fixes
 
 - **Improved Performance of Durable Sessions (**[#14498](https://github.com/emqx/emqx/pull/14498)**)**: Optimized session handling so that idle durable sessions no longer consume CPU resources. Also fixed an issue with the QoS upgrade feature to ensure subscribers only receive messages at their subscribed QoS level, improving both efficiency and delivery accuracy.
-- **Cluster Linking Route Replication Fixes (**[#15067](https://github.com/emqx/emqx/pull/15067)**)**: Resolved several issues affecting route replication, including reconnect loops caused by misconfigurations, crashes when closing nonexistent MQTT client connections, and failures during replication bootstrapping with shared subscriptions.
+- **Cluster Linking Route Replication Fixes (**[#15067](https://github.com/emqx/emqx/pull/15067)**)**: Resolved several issues affecting route replication, including reconnect loops caused by misconfigurations, crashes when closing nonexistent [MQTT client](https://www.emqx.com/en/blog/mqtt-client-tools) connections, and failures during replication bootstrapping with shared subscriptions.
 
 These enhancements and fixes make EMQX Enterprise 5.9.0 more performant, reliable, and observable, ensuring a robust foundation for enterprise IoT deployments. For more information, refer to the [Release Notes](https://docs.emqx.com/en/emqx/latest/changes/changes-ee-v5.html#_5-9-0).
 

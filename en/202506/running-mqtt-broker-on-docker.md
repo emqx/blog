@@ -24,8 +24,8 @@ A major advantage of EMQX is that it **supports clustering** for large scale MQT
 Additional EMQX features include:
 
 - Ability to scale up to 100M+ IoT devices in 1 cluster, while maintaining 1M message per second throughput and sub-millisecond latency.
-- 100% compliant with MQTT 5.0 and 3.x, support for multiple open standard protocols like HTTP, [QUIC](https://www.emqx.com/en/blog/quic-protocol-the-features-use-cases-and-impact-for-iot-iov), and WebSocket.
-- Secures bi-directional communication with MQTT over TLS/SSL and various authentication mechanisms.
+- 100% compliant with [MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5) and 3.x, support for multiple open standard protocols like HTTP, [QUIC](https://www.emqx.com/en/blog/quic-protocol-the-features-use-cases-and-impact-for-iot-iov), and WebSocket.
+- Secures bi-directional communication with [MQTT over TLS](https://www.emqx.com/en/blog/fortifying-mqtt-communication-security-with-ssl-tls)/SSL and various authentication mechanisms.
 - Uses powerful SQL-based rules engine to extract, filter, enrich and transform IoT data in real-time.
 - Ensures high availability and horizontal scalability with a masterless distributed architecture.
 - More than 20K+ enterprise users across 50+ countries and regions, connecting 100M+ IoT devices worldwide. Trusted by over 400 customers in mission-critical scenarios including over 70 Fortune 500 companies.

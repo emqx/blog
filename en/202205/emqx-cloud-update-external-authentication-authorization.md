@@ -4,7 +4,7 @@ Previously, EMQX Cloud provided users with the ability to connect to self-built 
 
 ## Feature Introduction
 
-As a fully-managed cloud-native MQTT messaging service, EMQX Cloud allows users to authenticate their devices and control Topic access through the console's Authentication & ACL module. Authentication is performed in the form of username and password, and access control supports three granularities of client ID, username, and all users. Bulk import of CSV files is supported for both authentication and access control.
+As a fully-managed cloud-native [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) messaging service, EMQX Cloud allows users to authenticate their devices and control Topic access through the console's Authentication & ACL module. Authentication is performed in the form of username and password, and access control supports three granularities of client ID, username, and all users. Bulk import of CSV files is supported for both authentication and access control.
 
 In addition to storing authentication information in EMQX Cloud, users can also authenticate devices and realize more complex ACL verification logic by verifying user-side authentication information through external authentication authorization.
 

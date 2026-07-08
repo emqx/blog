@@ -54,7 +54,7 @@ Smart manufacturing relies on data analytics and AI for decision-making and proc
 
 ## A Data Storage Architecture Using OMH
 
-Open Manufacturing Hub (OMH) is a solution architectural pattern for smart manufacturing. It aims at providing the feasible solution based on EMQ technologies, including the EMQX broker and NeuronEX edge, to build a remarkable Industrial IoT solution for smart manufacturing.
+Open Manufacturing Hub (OMH) is a solution architectural pattern for smart manufacturing. It aims at providing the feasible solution based on EMQ technologies, including the EMQX broker and NeuronEX edge, to build a remarkable [Industrial IoT](https://www.emqx.com/en/blog/industrial-iot-systems) solution for smart manufacturing.
 
 <section
   class="promotion-pdf"

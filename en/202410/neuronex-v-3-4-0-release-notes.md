@@ -15,7 +15,7 @@ These new drivers enable NeuronEX to seamlessly integrate with a broader range o
 
 Several existing drivers have also been optimized:
 
-1. The MQTT driver supports reporting southbound driver status to MQTT topics, allowing users to monitor the driver status more conveniently.
+1. The [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) driver supports reporting southbound driver status to [MQTT topics](https://www.emqx.com/en/blog/advanced-features-of-mqtt-topics), allowing users to monitor the driver status more conveniently.
 
    ![MQTT driver](https://assets.emqx.com/images/62b4e6c1d96c8d9404be6d1d943dd866.png)
 

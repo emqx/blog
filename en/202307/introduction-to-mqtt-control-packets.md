@@ -8,7 +8,7 @@ Currently, MQTT defines 15 types of control packets. If we classify them based o
 
  Among them, the **CONNECT** packet is used by the client to initiate a connection to the server, and the **CONNACK** packet is sent as a response to indicate the result of the connection. If one wants to terminate the communication or encounters an error that requires terminating the connection, the client and server can send a **DISCONNECT** packet and then close the network connection.
 
-The **AUTH** packet is a new type of packet introduced in MQTT 5.0, and it is used solely for enhanced authentication, providing more secure authentication for clients and servers.
+The **AUTH** packet is a new type of packet introduced in [MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5), and it is used solely for enhanced authentication, providing more secure authentication for clients and servers.
 
 The **PINGREQ** and **PINGRESP** packets are used for connection keep-alive and probing. The client periodically sends a **PINGREQ** packet to the server to indicate that it is still active, then judges whether the server is active according to whether the **PINGRESP** packet is returned in time.
 
@@ -58,7 +58,7 @@ Therefore, MQTT introduces variable byte integers, which utilize the lower 7 bit
 
 ### Variable Header
 
-The contents of the Variable Header in MQTT depend on the specific packet type. For example, the Variable Header of the **CONNECT** packet includes the Protocol Name, Protocol Level, Connect Flags, Keep Alive, and Properties in that order. The Variable Header of a **PUBLISH** packet includes the Topic name, Packet Identifier (if QoS is not 0), and Properties in that order.
+The contents of the Variable Header in MQTT depend on the specific packet type. For example, the Variable Header of the **CONNECT** packet includes the Protocol Name, Protocol Level, Connect Flags, [Keep Alive](https://www.emqx.com/en/blog/mqtt-keep-alive), and Properties in that order. The Variable Header of a **PUBLISH** packet includes the Topic name, Packet Identifier (if QoS is not 0), and Properties in that order.
 
 ![MQTT Variable Header](https://assets.emqx.com/images/22e02825f2a09033f311218b4e9985b1.png)
 

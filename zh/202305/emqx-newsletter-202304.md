@@ -29,11 +29,11 @@ EMQX 供了精细的配置项以满足不同场景下功能的灵活使用和性
 ### 重要进展
 
 - 已完成 EMQX 上 GCP IoT Core 设备的连接认证开发，该功能可以实现 GCP IoT Core 到 EMQX 的迁移。
-- MQTT 文件上传功能已经完成开发以及内部 Demo，计划在 5.1.0 版本中发布。
+- [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 文件上传功能已经完成开发以及内部 Demo，计划在 5.1.0 版本中发布。
 
 ### 其他更新
 
-- MQTT over QUIC 支持受密码保护的证书。
+- MQTT over [QUIC](https://www.emqx.com/zh/blog/quic-protocol-the-features-use-cases-and-impact-for-iot-iov) 支持受密码保护的证书。
 - 改进 [REST API 文档](https://docs.emqx.com/zh/emqx/v5.0/admin/api-docs.html)，提供了更清晰的 API 名称，并将常用的 API 置于前面方便查找。
 - 改进文件描述符耗尽时的错误日志，方便快速定位问题。
 - 规则引擎新增 `date_to_unix_ts` 时间戳转换函数。

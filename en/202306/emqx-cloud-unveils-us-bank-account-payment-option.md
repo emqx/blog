@@ -1,6 +1,6 @@
 ## Introduction
 
-[EMQX Cloud](https://www.emqx.com/en/cloud) has always been dedicated to providing you with a seamless user experience. From our powerful MQTT service solutions to exceptional customer support, we continually seek ways to improve our services. One vital aspect we focus on is ensuring a flexible payment experience that aligns with your preferences and needs. Today, we are thrilled to introduce a new payment method, ACH Debit Payment, allowing users to use US Bank Account directly to pay for EMQX Cloud services.
+[EMQX Cloud](https://www.emqx.com/en/cloud) has always been dedicated to providing you with a seamless user experience. From our powerful [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) service solutions to exceptional customer support, we continually seek ways to improve our services. One vital aspect we focus on is ensuring a flexible payment experience that aligns with your preferences and needs. Today, we are thrilled to introduce a new payment method, ACH Debit Payment, allowing users to use US Bank Account directly to pay for EMQX Cloud services.
 
 ## What is ACH Debit Payment 
 

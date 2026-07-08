@@ -2,7 +2,7 @@
 
 [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt), a lightweight messaging protocol, is essential in IoT projects for device communication. 
 
-The Mosquitto features the `mosquitto_pub` and `mosquitto_sub` command-line utilities, designed to enhance MQTT testing and troubleshooting efforts. These tools allow efficient interaction with [MQTT topics](https://www.emqx.com/en/blog/advanced-features-of-mqtt-topics): `mosquitto_pub` for publishing messages and `mosquitto_sub` for subscribing to topics. This streamlined approach facilitates rapid development and debugging of MQTT-based applications.
+The Mosquitto features the `mosquitto_pub` and `mosquitto_sub` command-line utilities, designed to enhance [MQTT testing](https://www.emqx.com/en/blog/mqtt-testing) and troubleshooting efforts. These tools allow efficient interaction with [MQTT topics](https://www.emqx.com/en/blog/advanced-features-of-mqtt-topics): `mosquitto_pub` for publishing messages and `mosquitto_sub` for subscribing to topics. This streamlined approach facilitates rapid development and debugging of MQTT-based applications.
 
 Download the Mosquitto package, including the MQTT broker and client tools, from the official website: [https://mosquitto.org/download/](https://mosquitto.org/download/).
 

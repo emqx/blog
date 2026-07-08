@@ -1,6 +1,6 @@
 ## Introduction: Why C for MQTT and Why Paho?
 
-When building robust, high-performance Internet of Things (IoT) solutions, the choice of programming language often comes down to resource efficiency and execution speed. This is where **C language** and the **MQTT C** client shine.
+When building robust, high-performance Internet of Things (IoT) solutions, the choice of programming language often comes down to resource efficiency and execution speed. This is where **C language** and the **[MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) C** client shine.
 
 C provides unparalleled control over system resources, making it the ideal choice for:
 
@@ -25,7 +25,7 @@ For this tutorial, we will use the free public **EMQX Broker**, known for its sc
 | **TCP Port**       | `1883`                                         |
 | **Client ID**      | A unique string (e.g., `Paho_C_Tutorial_1234`) |
 
-> **Pro Tip:** For production environments requiring security, high concurrency (up to 100 million connections), and enterprise features, consider using **EMQX Cloud** or **EMQX Enterprise**.
+> **Pro Tip:** For production environments requiring security, high concurrency (up to 100 million connections), and enterprise features, consider using **[EMQX Cloud](https://www.emqx.com/en/cloud)** or **[EMQX Enterprise](https://www.emqx.com/en/products/emqx)**.
 
 ### Installing the Paho C Library
 

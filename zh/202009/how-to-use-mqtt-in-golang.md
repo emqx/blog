@@ -15,7 +15,7 @@ go version
 go version go1.13.12 darwin/amd64
 ```
 
-本项目使用 [paho.mqtt.golang](https://github.com/eclipse/paho.mqtt.golang) 作为 MQTT 客户端库，安装：
+本项目使用 [paho.mqtt.golang](https://github.com/eclipse/paho.mqtt.golang) 作为 [MQTT 客户端](https://www.emqx.com/zh/blog/mqtt-client-tools)库，安装：
 
 ```bash
 go get github.com/eclipse/paho.mqtt.golang
@@ -232,7 +232,7 @@ func sub(client mqtt.Client) {
 
 ## 总结
 
-至此，我们完成了使用 **paho.mqtt.golang** 客户端连接到 [公共 MQTT 服务器](https://www.emqx.com/zh/mqtt/public-mqtt5-broker)，并实现了测试客户端与 MQTT 服务器的连接、消息发布和订阅。
+至此，我们完成了使用 **paho.mqtt.golang** 客户端连接到 [公共 MQTT 服务器](https://www.emqx.com/zh/mqtt/public-mqtt5-broker)，并实现了测试客户端与 [MQTT 服务器](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison)的连接、消息发布和订阅。
 
 接下来，读者可访问 EMQ 提供的 [MQTT 入门与进阶](https://www.emqx.com/zh/mqtt-guide)系列文章学习 MQTT 主题及通配符、保留消息、遗嘱消息等相关概念，探索 MQTT 的更多高级应用，开启 MQTT 应用及服务开发。
 

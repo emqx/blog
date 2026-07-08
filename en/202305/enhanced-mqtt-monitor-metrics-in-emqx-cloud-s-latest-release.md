@@ -1,12 +1,12 @@
 ## Introduction
 
-[EMQX Cloud](https://www.emqx.com/en/cloud) provides a fully managed MQTT service that facilitates infrastructure management for IoT solution providers.
+[EMQX Cloud](https://www.emqx.com/en/cloud) provides a fully managed [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) service that facilitates infrastructure management for IoT solution providers.
 
 In the latest version, we are thrilled to introduce an array of enhanced MQTT monitor metrics. These metrics are designed to elevate observability and empower you with deeper insights into your MQTT deployments. This blog post will explore the new MQTT monitor metrics and the other update in EMQX Cloud.
 
 ## New MQTT Monitor Metrics
 
-The latest release of EMQX Cloud introduces exciting enhancements that further strengthen our MQTT monitoring capabilities. Alongside existing metrics, the focus of this release is to provide a more comprehensive view of your MQTT deployments. This will enable you to make informed decisions and optimize your system's performance. 
+The latest release of EMQX Cloud introduces exciting enhancements that further strengthen our [MQTT monitoring](https://www.emqx.com/en/blog/mqtt-client-tools) capabilities. Alongside existing metrics, the focus of this release is to provide a more comprehensive view of your MQTT deployments. This will enable you to make informed decisions and optimize your system's performance. 
 
 There are three new metrics:
 

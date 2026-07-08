@@ -1,6 +1,6 @@
 近日，EMQX 开源版 v4.3.16、开源版 v4.4.5 与企业版 v4.3.11、企业版 v4.4.5 四个维护版本正式发布。
 
-此次发布实现了与流数据库 [HStreamDB](https://hstream.io/zh) 的集成，提供一站式数据接入与实时处理分析。新增了排他订阅功能和规则引擎消息重发布时动态 QoS 与保留消息设置支持，同时支持在消息发布的 API 中设置 MQTT 5.0 的发布属性（PUBLISH Properties），帮助用户应对更多场景使用需求。此外还修复了多项已知 BUG。
+此次发布实现了与流数据库 [HStreamDB](https://hstream.io/zh) 的集成，提供一站式数据接入与实时处理分析。新增了排他订阅功能和规则引擎消息重发布时动态 QoS 与保留消息设置支持，同时支持在消息发布的 API 中设置 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 5.0 的发布属性（PUBLISH Properties），帮助用户应对更多场景使用需求。此外还修复了多项已知 BUG。
 
 欢迎下载使用：[https://www.emqx.com/zh/try?product=enterprise](https://www.emqx.com/zh/try?product=enterprise)
 

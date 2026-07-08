@@ -1,6 +1,6 @@
 [EMQX Enterprise](https://www.emqx.com/zh/products/emqx) 4.4.21 版本现已正式发布！
 
-新版本带来多个功能更新，其中包括新增了 Confluent 集成，改进消息重发布动作，支持设置 MQTT 发布属性和用户属性等，进一步提升了 EMQX 的易用性和灵活性。
+新版本带来多个功能更新，其中包括新增了 Confluent 集成，改进消息重发布动作，支持设置 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 发布属性和用户属性等，进一步提升了 EMQX 的易用性和灵活性。
 
 ## 新增 Confluent 集成
 

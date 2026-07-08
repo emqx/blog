@@ -1,6 +1,6 @@
 >IoT scenarios often face challenges like a large number of devices, high data generation rates, and the huge accumulated data volumes. Therefore, how to access, store, and process these massive amounts of data has become a critical issue.
 >
->[EMQX](https://www.emqx.com/en/products/emqx), as a highly scalable, powerful and feature-rich MQTT broker for the IoT, can handle billions of concurrent connections and millions of messages per second in a single cluster. Furthermore, its built-in [Data Integration](https://www.emqx.com/en/features/data-processing) functionality provides an out-of-the-box solution, which enables seamless integrating IoT data with more than 40 cloud services and enterprise systems, including Kafka, SQL, NoSQL, and time-series databases.
+>[EMQX](https://www.emqx.com/en/products/emqx), as a highly scalable, powerful and feature-rich [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) for the IoT, can handle billions of concurrent connections and millions of messages per second in a single cluster. Furthermore, its built-in [Data Integration](https://www.emqx.com/en/features/data-processing) functionality provides an out-of-the-box solution, which enables seamless integrating IoT data with more than 40 cloud services and enterprise systems, including Kafka, SQL, NoSQL, and time-series databases.
 >
 >This blog series presents the benchmark test results of the integrations against a single node EMQX server.
 
@@ -12,13 +12,13 @@ This blog will provide the benchmarking results of HStreamDB integration - a sin
 
 ## Test Scenario
 
-This benchmark testing simulates 100,000 MQTT clients connecting to EMQX, with a connection rate of 5,000 per second. After all connections are established, each client publishes one QoS 1 message per second, and all messages are transmitted and stored in HStreamDB via the rule engine.
+This benchmark testing simulates 100,000 [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) clients connecting to EMQX, with a connection rate of 5,000 per second. After all connections are established, each client publishes one QoS 1 message per second, and all messages are transmitted and stored in HStreamDB via the rule engine.
 
 - Concurrent connections: 100,000
 - Topics: 100,000
 - CPS (new established connections per sec.): 5000
 - QoS: 1
-- Keep alive: 300s
+- [Keep alive](https://www.emqx.com/en/blog/mqtt-keep-alive): 300s
 - Payload: json, 200 bytes
 - Message publish TPS: 100,000/second
 

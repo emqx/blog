@@ -10,13 +10,13 @@
 
 ### EMQX ：开源云原生分布式物联网 MQTT 消息服务器
 
-EMQX 是一款大规模可弹性伸缩的云原生分布式物联网 MQTT 消息服务器，高效可靠连接海量物联网设备，高性能实时处理消息与事件流数据。诞生至今，EMQX 获得 GitHub star 数量近 1 万，在全球范围内拥有 20,000+ 用户，累计连接超过 1 亿台物联网设备。在所有采用 Erlang 语言的开源项目中，EMQX 受欢迎程度位列全球前三。
+EMQX 是一款大规模可弹性伸缩的云原生分布式物联网 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 消息服务器，高效可靠连接海量物联网设备，高性能实时处理消息与事件流数据。诞生至今，EMQX 获得 GitHub star 数量近 1 万，在全球范围内拥有 20,000+ 用户，累计连接超过 1 亿台物联网设备。在所有采用 Erlang 语言的开源项目中，EMQX 受欢迎程度位列全球前三。
 
 GitHub 主页：[https://github.com/emqx/emqx](https://github.com/emqx/emqx) 
 
 ### MQTTX ：优雅的跨平台 MQTT 5.0 开源桌面客户端工具
 
-MQTTX 是一款完全开源的 MQTT 5.0 跨平台桌面客户端。支持快速创建多个同时在线的 MQTT 客户端连接，方便测试 MQTT/TCP、MQTT/TLS、MQTT/WebSocket 的连接、发布、订阅功能及其他 MQTT 协议特性。它基于 Electron 并使用 TypeScript 开发，前端框架使用的是 Vue.js，数据库采用的是 SQLite。
+MQTTX 是一款完全开源的 MQTT 5.0 跨平台桌面客户端。支持快速创建多个同时在线的 [MQTT 客户端](https://www.emqx.com/zh/blog/mqtt-client-tools)连接，方便测试 MQTT/TCP、MQTT/TLS、MQTT/WebSocket 的连接、发布、订阅功能及其他 MQTT 协议特性。它基于 Electron 并使用 TypeScript 开发，前端框架使用的是 Vue.js，数据库采用的是 SQLite。
 
 GitHub 主页：[https://github.com/emqx/MQTTX](https://github.com/emqx/MQTTX) 
 

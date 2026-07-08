@@ -1,4 +1,4 @@
-With [EMQX 6.2](https://www.emqx.com/en/blog/emqx-6-2-0-release-notes) now released, we are continuing to expand what MQTT can support across real-time systems, AI workloads, and industrial architectures.
+With [EMQX 6.2](https://www.emqx.com/en/blog/emqx-6-2-0-release-notes) now released, we are continuing to expand what [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) can support across real-time systems, AI workloads, and industrial architectures.
 
 Before looking ahead, it is worth taking a closer look at one of the most important capabilities introduced in [EMQX 6.1](https://www.emqx.com/en/blog/emqx-6-1-0-release-notes): MQTT Streams.
 

@@ -20,7 +20,7 @@ MQTT has emerged as one of the best [IoT protocols](https://www.emqx.com/en/blog
 - **Large-scale IoT device support:** IoT systems often involve a large number of devices, requiring a protocol that can handle massive-scale deployments. MQTT's lightweight nature, low bandwidth consumption, and efficient use of resources make it well-suited for large-scale IoT applications. The publish-subscribe pattern allows MQTT to scale effectively, as it decouples sender and receiver, reducing network traffic and resource usage. Furthermore, the protocol's support for different QoS levels allows customization of message delivery based on the application's requirements, ensuring optimal performance in various scenarios.
 - **Language support:** IoT systems often include devices and applications developed using various programming languages. MQTT's broad language support enables easy integration with multiple platforms and technologies, fostering seamless communication and interoperability in diverse IoT ecosystems. You can visit our [MQTT Client Programming](https://www.emqx.com/en/blog/category/mqtt-programming) blog series to learn how to use MQTT in PHP, Node.js, Python, Golang, and other programming languages.
 
-> According to the [Eclipse Foundation's 2024 IoT & Embedded Developer Survey](https://newsroom.eclipse.org/news/announcements/eclipse-foundation-unveils-2024-iot-embedded-developer-survey-results): MQTT leads as the preferred IIoT communication protocol with 56% adoption, a 7% increase from 2023.
+> According to the [Eclipse Foundation's 2024 IoT & Embedded Developer Survey](https://newsroom.eclipse.org/news/announcements/eclipse-foundation-unveils-2024-iot-embedded-developer-survey-results): MQTT leads as the preferred [IIoT](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges) communication protocol with 56% adoption, a 7% increase from 2023.
 
 ## MQTT Architecture: How Does MQTT Work?
 
@@ -290,7 +290,7 @@ In addition to MQTT, protocols like HTTP, WebSocket, and CoAP are also commonly 
 | **Feature**      | **MQTT**                                | **HTTP**                    | **WebSocket**      | **CoAP**                  |
 | ---------------- | --------------------------------------- | --------------------------- | ------------------ | ------------------------- |
 | **Design Model** | Publish/Subscribe                       | Request/Response            | Full-duplex        | Request/Response          |
-| **Transport**    | **TCP** (QUIC/UDP via EMQX)             | TCP                         | TCP                | **UDP**                   |
+| **Transport**    | **TCP** ([QUIC](https://www.emqx.com/en/blog/quic-protocol-the-features-use-cases-and-impact-for-iot-iov)/UDP via EMQX)             | TCP                         | TCP                | **UDP**                   |
 | **Header Size**  | Min **2 Bytes** (Extremely Lightweight) | Hundreds of Bytes           | Medium overhead    | 4 Bytes (Compact)         |
 | **Power Usage**  | **Low** (Ideal for battery devices)     | High                        | Medium/High        | **Low**                   |
 | **Latency**      | **Low**                                 | High                        | Low                | **Low**                   |
@@ -307,7 +307,7 @@ For a detailed comparison of MQTT with these protocols, refer to these blog post
 
 ### MQTT Security Best Practices
 
-Security in MQTT is vital due to its extensive use in IoT, where devices are often vulnerable and manage sensitive data. Without robust security, attackers could exploit weaknesses to intercept messages, manipulate data, or disrupt critical systems, potentially causing significant harm. To ensure MQTT security, several common methods are employed:
+Security in MQTT is vital due to its extensive use in IoT, where devices are often vulnerable and manage sensitive data. Without robust security, attackers could exploit weaknesses to intercept messages, manipulate data, or disrupt critical systems, potentially causing significant harm. To ensure [MQTT security](https://www.emqx.com/en/blog/essential-things-to-know-about-mqtt-security), several common methods are employed:
 
 - Authentication
   - **[Password-based authentication](https://www.emqx.com/en/blog/securing-mqtt-with-username-and-password-authentication)**
@@ -331,13 +331,13 @@ Get a comprehensive guide on MQTT database selection: [Database for MQTT Data St
 
 ### **MQTT over QUIC**
 
-QUIC, a new transport protocol by Google running over UDP, is revolutionizing internet connections by reducing latency and improving data transfer rates. Introducing it into MQTT will benefit scenarios with unreliable networks or low-latency requirements like connected cars and industrial IoT. EMQX and future MQTT versions are embracing MQTT over QUIC, marking a significant shift in IoT connectivity standards.
+QUIC, a new transport protocol by Google running over UDP, is revolutionizing internet connections by reducing latency and improving data transfer rates. Introducing it into MQTT will benefit scenarios with unreliable networks or low-latency requirements like [connected cars](https://www.emqx.com/en/blog/connected-cars-and-automotive-connectivity-all-you-need-to-know) and [industrial IoT](https://www.emqx.com/en/blog/industrial-iot-systems). EMQX and future MQTT versions are embracing MQTT over QUIC, marking a significant shift in IoT connectivity standards.
 
 For more details, please check out the blog: [MQTT over QUIC: Next-Generation IoT Standard Protocol](https://www.emqx.com/en/blog/mqtt-over-quic).
 
 ### **MQTT Serverless**
 
-Serverless MQTT broker emerges as a cutting-edge architectural innovation, enabling rapid deployment of MQTT services with just a few clicks. Moreover, serverless MQTT offers unparalleled flexibility with the seamless scaling of resources and the pay-as-you-go pricing model. It is poised to create a future where a free serverless MQTT broker is available for every IoT developer.
+[Serverless MQTT](https://www.emqx.com/en/cloud/serverless-mqtt) broker emerges as a cutting-edge architectural innovation, enabling rapid deployment of MQTT services with just a few clicks. Moreover, serverless MQTT offers unparalleled flexibility with the seamless scaling of resources and the pay-as-you-go pricing model. It is poised to create a future where a free serverless MQTT broker is available for every IoT developer.
 
 <section class="promotion">
       <div>
@@ -393,7 +393,7 @@ For more details, please check out the white paper: [MQTT Platform for AI: Empow
 
 ### 1. Is MQTT TCP or UDP?
 
-MQTT runs over **TCP/IP**. However, advanced implementations like MQTT-SN can run over UDP, and MQTT over QUIC (supported by EMQX) utilizes UDP for lower latency.
+MQTT runs over **TCP/IP**. However, advanced implementations like [MQTT-SN](https://www.emqx.com/en/blog/connecting-mqtt-sn-devices-using-emqx) can run over UDP, and MQTT over QUIC (supported by EMQX) utilizes UDP for lower latency.
 
 ### 2. What is the default port for MQTT?
 
@@ -438,7 +438,7 @@ MQTT provides three Quality of Service (QoS) levels:
 
 ### 10. Can MQTT be used with a Web Browser?
 
-**Yes, but browsers cannot use raw TCP; they must use MQTT over WebSocket.** Standard MQTT runs on TCP (port 1883), which browsers do not support directly. By wrapping MQTT packets in WebSockets (usually on port 8083 or 8084), web apps (like React or Vue dashboards) can communicate directly with IoT devices.
+**Yes, but browsers cannot use raw TCP; they must use [MQTT over WebSocket](https://www.emqx.com/en/blog/connect-to-mqtt-broker-with-websocket).** Standard MQTT runs on TCP (port 1883), which browsers do not support directly. By wrapping MQTT packets in WebSockets (usually on port 8083 or 8084), web apps (like React or Vue dashboards) can communicate directly with IoT devices.
 
 ## Learn More About MQTT
 

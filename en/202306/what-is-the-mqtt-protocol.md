@@ -126,7 +126,7 @@ In addition, some MQTT brokers, such as EMQX, also provide online and offline ev
 
 ### Industrial IoT
 
-MQTT is also used extensively in Industrial IoT ([IIoT](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges)) applications. In these applications, various sensors and devices in a factory are connected to a central server, which monitors and controls the devices.
+MQTT is also used extensively in [Industrial IoT](https://www.emqx.com/en/blog/industrial-iot-systems) ([IIoT](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges)) applications. In these applications, various sensors and devices in a factory are connected to a central server, which monitors and controls the devices.
 
 For instance, a temperature sensor in a furnace might publish its readings to an MQTT broker on the server. The server, which is subscribed to the sensor's topic, receives the readings and can take appropriate action if the temperature exceeds a certain threshold. This enables real-time monitoring and control of factory operations, improving efficiency and safety.
 
@@ -170,13 +170,13 @@ You can install EMQX 5.0 open-source version with the following Docker command t
 docker run -d --name emqx -p 1883:1883 -p 8083:8083 -p 8084:8084 -p 8883:8883 -p 18083:18083 emqx/emqx:latest
 ```
 
-You can also create fully hosted MQTT services directly on EMQX Cloud. [Free trial of EMQX Cloud](https://accounts.emqx.com/signup?continue=https://cloud-intl.emqx.com/console/deployments/0?oper=new) is available, with no credit card required.
+You can also create fully hosted MQTT services directly on [EMQX Cloud](https://www.emqx.com/en/cloud). [Free trial of EMQX Cloud](https://accounts.emqx.com/signup?continue=https://cloud-intl.emqx.com/console/deployments/0?oper=new) is available, with no credit card required.
 
 ### MQTT Client
 
 MQTT applications usually need to implement MQTT communication based on MQTT client libraries. At present, basically all programming languages have matured open-source MQTT client libraries. So, you can refer to the [Comprehensive list of MQTT client libraries](https://www.emqx.com/en/mqtt-client-sdk) collated by EMQ to choose a suitable client library to build an MQTT client that meets their business needs. You can also visit the [MQTT Programming](https://www.emqx.com/en/blog/category/mqtt-programming) blog series provided by EMQ to learn how to use MQTT in Java, Python, PHP, Node.js and other programming languages.
 
-MQTT application development is also inseparable from the support of the MQTT testing tool. An easy-to-use and powerful MQTT testing tool can help developers shorten the development cycle and create a stable IoT application.
+MQTT application development is also inseparable from the support of the [MQTT testing](https://www.emqx.com/en/blog/mqtt-testing) tool. An easy-to-use and powerful MQTT testing tool can help developers shorten the development cycle and create a stable IoT application.
 
 [MQTTX](https://mqttx.app/) is an open-source cross-platform desktop client. It is easy to use and provides comprehensive MQTT 5.0 functionality, feature testing, and runs on macOS, Linux and Windows. It also provides command line and browser versions to meet MQTT testing needs in different scenarios. You can visit the MQTTX website to download and try it out: [https://mqttx.app/](https://mqttx.app/).
 

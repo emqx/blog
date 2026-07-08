@@ -93,7 +93,7 @@ MQTTX Copilot 现支持更多客户端代码生成选项，涵盖软件和硬件
 - **Payload 图表可视化增强 - MQTTX Viewer**：
   - **主题树视图**：增强主题的组织和可视化。
   - **差异视图**：轻松比较不同的消息或负载。
-  - **仪表板视图**：提供 MQTT 活动的可定制概览，以获取个性化洞见。
+  - **仪表板视图**：提供 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 活动的可定制概览，以获取个性化洞见。
   - **JSON 视图**：改进 JSON 格式数据的处理和显示。
   - **系统主题视图**：专门针对系统相关 MQTT 主题的视图。
 - **支持可配置的断开连接属性（MQTT 5.0）**：通过自定义断开连接设置来增强连接管理。
@@ -101,7 +101,7 @@ MQTTX Copilot 现支持更多客户端代码生成选项，涵盖软件和硬件
 - **Sparkplug B 支持**：扩展 MQTTX 功能，包括对 Sparkplug B 的特殊支持。
 - **QoS 0 消息存储优化**：可配置选项以减少存储空间使用。
 - **MQTT GUI 调试功能**：帮助调试 MQTT 通信的新功能。
-- **插件功能**：引入支持协议扩展（如 CoAP 和 MQTT-SN）的插件系统。
+- **插件功能**：引入支持协议扩展（如 [CoAP](https://www.emqx.com/zh/blog/coap-protocol) 和 MQTT-SN）的插件系统。
 - **Avro 消息格式支持**：对 Avro 消息格式的编码和解码能力。
 - **脚本测试自动化（流程）**：简化自动化测试工作流的创建和管理。
 

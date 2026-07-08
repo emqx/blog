@@ -2,7 +2,7 @@
 
 The need for efficient and scalable database solutions has become paramount in a world where data is growing unprecedentedly. [Timescale](https://timescale.com/), a well-known player in the time-series database industry, has recently made a significant announcement, transforming itself into a cloud company with a robust database product. 
 
-This blog will explore how [EMQX Cloud](https://www.emqx.com/en/cloud), a leading MQTT cloud service, integrates seamlessly with the new Timescale service, providing a powerful and comprehensive solution for managing time series data.
+This blog will explore how [EMQX Cloud](https://www.emqx.com/en/cloud), a leading [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) cloud service, integrates seamlessly with the new Timescale service, providing a powerful and comprehensive solution for managing time series data.
 
 ## Timescale: A Shift in Focus 
 
@@ -112,7 +112,7 @@ During the resource creation, you will see a popup, and clicking 'New' will lead
 
 ![Create A New Rule](https://assets.emqx.com/images/a54859c3267944d06e1d8caf3ce2e603.png)
 
-The SQL defines how to select data from specific MQTT topics and payload : 
+The SQL defines how to select data from specific [MQTT topics](https://www.emqx.com/en/blog/advanced-features-of-mqtt-topics) and payload : 
 
 ```
 SELECT

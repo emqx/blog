@@ -4,7 +4,7 @@
 
 ## 丰富协议驱动赋能工业物联网连接
 
-自 2.0 版本起，Neuron 正式开源运营。核心框架、可视化仪表盘，以及 Modbus-TCP、Modbus-RTU 和 MQTT 等常用的南北向协议驱动模块等，都以 LGPLv3 许可证的形式作为开源项目提供。
+自 2.0 版本起，Neuron 正式开源运营。核心框架、可视化仪表盘，以及 Modbus-TCP、Modbus-RTU 和 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 等常用的南北向协议驱动模块等，都以 LGPLv3 许可证的形式作为开源项目提供。
 
 对于有更多专有协议连接需求的用户，Neuron 还提供了一系列商业化驱动和功能，以解决各种复杂的工业标准协议和 PLC 协议接入与转换需求。提供的商业化驱动包括 BACnet、KNXnet/IP、IEC-104、IEC-61850、三菱 1E 和 3E、西门子 S7 和 Fetch-write、欧姆龙 Fins TCP、倍福 ADS 等。通过更加丰富的商业化协议接入能力，为各种工业设备的无缝集成提供可靠的技术支撑与商业化服务。
 

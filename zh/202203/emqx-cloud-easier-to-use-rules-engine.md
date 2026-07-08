@@ -31,7 +31,7 @@ EMQX Cloud 免费试用活动进行中，欢迎登录 EMQ 官网 [https://www.em
 **基础版部署**
 
 - 资源仅支持公网访问，因此在创建资源前您需要确保资源具有公网访问能力，同时开放安全组。无需创建 VPC 对等连接。
-- 资源类型仅开放 Webhook 和 MQTT 桥接。
+- 资源类型仅开放 Webhook 和 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 桥接。
 
 **专业版部署**
 

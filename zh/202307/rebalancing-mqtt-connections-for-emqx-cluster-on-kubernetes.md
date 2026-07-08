@@ -2,14 +2,14 @@
 
 [MQTT 连接重平衡](https://docs.emqx.com/zh/enterprise/v4.4/advanced/rebalancing.html#motivation)是 [EMQX Enterprise](https://www.emqx.com/zh/products/emqx) 的一个核心功能，它通过把客户端连接和会话从负载过高的节点转移到负载较轻的节点，达到负载均衡的目的。该功能可以自动计算需要迁移的连接数量，并进行相应的迁移操作。这个过程通常会在新节点加入集群或节点重新启动后执行，以保障集群的负载保持均衡。EMQX 会将 [MQTT 客户端](https://www.emqx.com/zh/blog/mqtt-client-tools)连接和 [MQTT 会话](https://www.emqx.com/zh/blog/mqtt-session)一起迁移，以防止会话丢失。
 
-MQTT 连接重平衡主要有以下两个好处：
+[MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 连接重平衡主要有以下两个好处：
 
 - **增强系统的扩展性：**由于 MQTT 连接是基于 TCP/IP 协议的长连接，当集群扩容后，旧节点的连接不会自动迁移到新节点上。如果希望新节点承载旧节点上部分负载，可以通过重平衡功能，将旧节点上的负载平滑地迁移到新节点上，从而使整个集群负载更加均衡，提高系统的吞吐量，响应速度以及资源利用率，使系统更好地扩展。
 - **减少运维开销：**如果系统中某些节点负载过高或过低，需要对这些节点进行手动调整，而通过重平衡，可以自动调整节点的负载，降低运维成本。
 
 > 只有 EMQX Enterprise 4.4.12 及以后的版本才支持群集负载重平衡功能。
 >
-> 深入了解全球最具扩展性的 MQTT Broker：[EMQX Enterprise：大规模企业级 MQTT 平台](https://www.emqx.com/zh/products/emqx)
+> 深入了解全球最具扩展性的 [MQTT Broker](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison)：[EMQX Enterprise：大规模企业级 MQTT 平台](https://www.emqx.com/zh/products/emqx)
 
 在本文中，我们将介绍如何在 Kubernetes 上启用 EMQX 的 [MQTT 连接](https://www.emqx.com/zh/blog/how-to-set-parameters-when-establishing-an-mqtt-connection)重平衡功能。
 

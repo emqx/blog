@@ -86,7 +86,7 @@ FROM
 
 Kafka message headers allow producers to include message metadata for passing additional context, enabling features like message tracing, deduplication, and data piping.
 
-In EMQX Enterprise 5.1.1, you can define Kafka headers to be carried in Kafka data bridges, enabling the transfer of device information (e.g. clientID, username), message types, QoS levels, and even MQTT 5.0 user properties. This metadata can help backend applications parse and process massive amounts of IoT data with greater ease.
+In EMQX Enterprise 5.1.1, you can define Kafka headers to be carried in Kafka data bridges, enabling the transfer of device information (e.g. clientID, username), message types, QoS levels, and even [MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5) user properties. This metadata can help backend applications parse and process massive amounts of IoT data with greater ease.
 
 ![Kafka Bridge](https://assets.emqx.com/images/52de62aaf7fd809dd377ed6e63be291d.png)
 

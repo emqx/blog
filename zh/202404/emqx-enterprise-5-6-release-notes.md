@@ -4,7 +4,7 @@
 
 ## 新增 Amazon S3 数据集成
 
-[Amazon Simple Storage Service (Amazon S3) ](https://aws.amazon.com/s3/) 是一种面向互联网的存储服务，具有高度的可靠性、稳定性和安全性，能够快速部署和使用。EMQX 提供了与 Amazon S3 的数据集成，能够将 MQTT 消息高效地存储至 Amazon S3 存储桶中，实现灵活的物联网数据存储功能。
+[Amazon Simple Storage Service (Amazon S3) ](https://aws.amazon.com/s3/) 是一种面向互联网的存储服务，具有高度的可靠性、稳定性和安全性，能够快速部署和使用。EMQX 提供了与 Amazon S3 的数据集成，能够将 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 消息高效地存储至 Amazon S3 存储桶中，实现灵活的物联网数据存储功能。
 
 ![新增 Amazon S3 数据集成](https://assets.emqx.com/images/3f0ee01be11e4d7a4f1e035ab4e327b6.png)
 
@@ -106,7 +106,7 @@ WHERE is_valid = true
 
 ## 增强客户端管理能力：批量查询、返回指定字段，查看队列与飞行窗口中的消息
 
-此前 EMQX 通过 Dashboard 与 REST API 提供了丰富的 MQTT 客户端管理能力，可以实现在线状态与连接信息查询、流量与报文收发统计、消息队列与飞行窗口状态查看等功能，为用户和应用开发者提供了强大的支持。
+此前 EMQX 通过 Dashboard 与 REST API 提供了丰富的 [MQTT 客户端](https://www.emqx.com/zh/blog/mqtt-client-tools)管理能力，可以实现在线状态与连接信息查询、流量与报文收发统计、消息队列与飞行窗口状态查看等功能，为用户和应用开发者提供了强大的支持。
 
 在本次发布中，我们进一步增强了客户端管理能力，帮助用户实现更灵活和深度的客户端管理。
 
@@ -173,7 +173,7 @@ WHERE is_valid = true
 - [#11868](https://github.com/emqx/emqx/pull/11868) 修复了会话接管后未发布遗嘱消息的问题。
 - [#12347](https://github.com/emqx/emqx/pull/12347) 对 MQTT Sink 数据集成进行了更新，确保即使在数据不完整或使用了不存在占位符时，消息也始终被视为有效。此调整防止了之前发生的消息被错误地视为无效并随后被丢弃的情况。
   - 当 Payload 和 Topic 模板中的变量未定义时，现在它们被渲染为空字符串，而不是字面量 undefined 字符串。
-- [#12492](https://github.com/emqx/emqx/pull/12492) 新增在 MQTT 5.0 客户端的 CONNACK 消息中返回最终的 Receive-Maximum 属性。这个值取客户端的 Receive-Maximum 和 EMQX 配置的 `max_inflight` 最小值。此前这个值未在 CONNACK 消息中发送回客户端。
+- [#12492](https://github.com/emqx/emqx/pull/12492) 新增在 MQTT 5.0 客户端的 [CONNACK](https://www.emqx.com/zh/blog/mqtt5-new-features-reason-code-and-ack) 消息中返回最终的 Receive-Maximum 属性。这个值取客户端的 Receive-Maximum 和 EMQX 配置的 `max_inflight` 最小值。此前这个值未在 CONNACK 消息中发送回客户端。
 - [#12541](https://github.com/emqx/emqx/pull/12541) 为 DNS 自动集群配置引入了新的参数校验，以确保 `node.name` 和`cluster.discover_strategy` 之间的联动性。例如，当使用 A 或 AAAA 记录类型时，所有节点必须使用静态IP 地址作为主机名。
 - [#12566](https://github.com/emqx/emqx/pull/12566) 增强了 REST API 密钥的 bootstrap 机制：
   - bootstrap 文件中的空行将被跳过，修复了之前生成错误的行为。

@@ -57,7 +57,7 @@ EMQ introduces a solution called Open Manufacturing Hub (OMH) to ensure interope
 
 In the OMH architecture, data can flow bi-directionally between different levels of the automation pyramid. While the traditional cascade-like flow of data from the field level to the management level remains relevant, the OMH enables more dynamic and direct communication between different levels. Data can be accessed and used by multiple levels, enabling real-time monitoring, analysis and control.
 
-The OMH provides standardized methods for data access via the EMQX broker. It allows authorized users and applications to subscribe to data from any information system in the automation pyramid using consistent and well-defined MQTT interfaces. The OMH also provides standardized methods for device data acquisition through the Neuron gateway. It allows different devices with different data formats to communicate with any other system or device.
+The OMH provides standardized methods for data access via the EMQX broker. It allows authorized users and applications to subscribe to data from any information system in the automation pyramid using consistent and well-defined [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) interfaces. The OMH also provides standardized methods for device data acquisition through the Neuron gateway. It allows different devices with different data formats to communicate with any other system or device.
 
 <section
   class="promotion-pdf"

@@ -2,13 +2,13 @@
 
 
 
-As iOS apps evolve from simple data tools into real-time hubs for Smart Homes, Automotive, and Fintech, the underlying communication protocol has become the backbone of user experience. While traditional HTTP is sufficient for static data, **MQTT** has emerged as the gold standard for iOS IoT for three critical reasons:
+As iOS apps evolve from simple data tools into real-time hubs for Smart Homes, Automotive, and Fintech, the underlying communication protocol has become the backbone of user experience. While traditional HTTP is sufficient for static data, **[MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt)** has emerged as the gold standard for iOS IoT for three critical reasons:
 
 - **Battery Efficiency:** MQTT’s lightweight binary structure minimizes CPU wake-time, preserving iPhone battery life far better than HTTP polling.
 - **Network Resilience:** Mobile devices constantly switch between Wi-Fi and 5G. MQTT is designed to handle these "shaky" connections gracefully without losing data.
 - **Instant Bi-directionality:** It enables true real-time push, allowing iOS apps to receive sensor data or alerts with sub-second latency.
 
-As Apple’s ecosystem becomes more interconnected, the move toward **MQTT 5.0** is no longer optional for developers who want to build high-performance, professional-grade applications.
+As Apple’s ecosystem becomes more interconnected, the move toward **[MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5)** is no longer optional for developers who want to build high-performance, professional-grade applications.
 
 ## Why MQTT 5.0 is Essential for Modern iOS Apps
 
@@ -46,7 +46,7 @@ For a long time, a significant gap existed in the Apple ecosystem: while the MQT
 
 
 
-Developed by the EMQ team, CocoaMQTT was designed specifically to empower iOS developers to leverage the full potential of modern IoT protocols. By supporting both MQTT 5.0 and 3.1.1, it provides a seamless bridge for legacy systems while unlocking new capabilities for modern cloud services. Whether you are building for **iOS, tvOS, or macOS**, CocoaMQTT ensures a unified and robust connection experience.
+Developed by the EMQ team, CocoaMQTT was designed specifically to empower iOS developers to leverage the full potential of modern [IoT protocols](https://www.emqx.com/en/blog/iot-protocols-mqtt-coap-lwm2m). By supporting both MQTT 5.0 and 3.1.1, it provides a seamless bridge for legacy systems while unlocking new capabilities for modern cloud services. Whether you are building for **iOS, tvOS, or macOS**, CocoaMQTT ensures a unified and robust connection experience.
 
 ### **The Power of Native Swift Architecture**
 

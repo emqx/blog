@@ -45,7 +45,7 @@ Here is a summary of the four projects hosted on GitHub:
 
 [EMQX](https://github.com/emqx/emqx) is one of the most popular MQTT brokers and has 16.3k stars on GitHub. The EMQX project was launched in 2012 and is licensed under Apache version 2.0(EMQX 5.8 and earlier versions). EMQX is written in Erlang/OTP, a programming language for building massively scalable soft real-time systems.
 
-EMQX is the world's most scalable MQTT broker that supports advanced features such as [MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5), [MQTT-SN](https://www.emqx.com/en/blog/connecting-mqtt-sn-devices-using-emqx), and MQTT over QUIC. EMQX offers unparalleled scalability with proven support for **100 million concurrent connections** on a single 23-node cluster, built on a masterless architecture that ensures high availability.
+EMQX is the world's most scalable MQTT broker that supports advanced features such as [MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5), [MQTT-SN](https://www.emqx.com/en/blog/connecting-mqtt-sn-devices-using-emqx), and MQTT over [QUIC](https://www.emqx.com/en/blog/quic-protocol-the-features-use-cases-and-impact-for-iot-iov). EMQX offers unparalleled scalability with proven support for **100 million concurrent connections** on a single 23-node cluster, built on a masterless architecture that ensures high availability.
 
 See: [Reaching 100M MQTT connections with EMQX 5.0](https://www.emqx.com/en/blog/reaching-100m-mqtt-connections-with-emqx-5-0)
 
@@ -326,7 +326,7 @@ Over the past decade, open-source MQTT brokers have led the way in innovating MQ
 
 Choosing an MQTT broker depends on various factors, such as the number of connected devices, message throughput, and integration requirements. From the comparison, we can conclude that [EMQX](https://github.com/emqx/emqx) is a highly scalable and enterprise-grade broker for large-scale, mission-critical deployments in the cloud. While Mosquitto and [NanoMQ](https://nanomq.io/) are fast and lightweight, making them suitable for deployment on resource-constrained embedded hardware, industrial gateways, and IoT edge servers.
 
-While the Open Source version lays a solid foundation for IoT connectivity, EMQX provides an Enterprise version to elevate this with comprehensive support, advanced features, and a focus on security and reliability. For businesses aiming to scale their IoT solutions and ensure the highest levels of reliability and performance, EMQX Enterprise represents the logical choice.
+While the Open Source version lays a solid foundation for IoT connectivity, EMQX provides an Enterprise version to elevate this with comprehensive support, advanced features, and a focus on security and reliability. For businesses aiming to scale their IoT solutions and ensure the highest levels of reliability and performance, [EMQX Enterprise](https://www.emqx.com/en/products/emqx) represents the logical choice.
 
 <section class="promotion">
     <div>
@@ -362,7 +362,7 @@ MQTT over QUIC replaces the traditional TCP transport layer. It drastically redu
 
 ### 3. How do I stream MQTT data to Kafka?
 
-While you can write custom microservices to consume from an open-source broker and publish to Kafka, enterprise brokers like EMQX Enterprise offer built-in, highly scalable **MQTT to Kafka bridges** directly out of the box, ensuring lower latency and simplified infrastructure management.
+While you can write custom microservices to consume from an open-source broker and publish to Kafka, enterprise brokers like EMQX Enterprise offer built-in, highly scalable **[MQTT to Kafka](https://www.emqx.com/en/blog/mqtt-and-kafka) bridges** directly out of the box, ensuring lower latency and simplified infrastructure management.
 
 ### 4. Is VerneMQ still recommended for new projects?
 

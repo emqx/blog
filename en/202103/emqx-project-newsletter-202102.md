@@ -14,7 +14,7 @@ The open source team show cased the new environment variable config overriding &
 
 The MsQuic PoC speaks to our commitment to lead in the market. Enabling customers to stay cutting edge in competitive industries.
 
-Thank you to our presenters from the EMQX open source team, community contributors and all the attendees, for an informative event with great energy.
+Thank you to our presenters from the [EMQX open source](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) team, community contributors and all the attendees, for an informative event with great energy.
 
 We hope to have many more.
 
@@ -48,7 +48,7 @@ The master branch is now the cutting edge, try out the latest features as they a
 
 #### Staying ahead of the curve
 
-A NIF (Erlang Native Implemented Functions) based QUIC ( [MsQuic](https://github.com/microsoft/msquic) from Microsoft ) PoC developed & demonstrated. Paving the way to road mapping QUIC support in future. Please follow up on [emqx/quic](https://github.com/emqx/quic) for latest updates.
+A NIF (Erlang Native Implemented Functions) based [QUIC](https://www.emqx.com/en/blog/quic-protocol-the-features-use-cases-and-impact-for-iot-iov) ( [MsQuic](https://github.com/microsoft/msquic) from Microsoft ) PoC developed & demonstrated. Paving the way to road mapping QUIC support in future. Please follow up on [emqx/quic](https://github.com/emqx/quic) for latest updates.
 
 
 
@@ -56,7 +56,7 @@ A NIF (Erlang Native Implemented Functions) based QUIC ( [MsQuic](https://github
 
 #### Supporting the community with more functionality. 
 
-- Webhook & MQTT bridge plugin now have the certificate upload feature Open sourced for the community. We’re sure this feature is a welcomed sight to the open source community.
+- Webhook & [MQTT bridge](https://www.emqx.com/en/blog/bridging-mosquitto-to-emqx-cluster) plugin now have the certificate upload feature Open sourced for the community. We’re sure this feature is a welcomed sight to the open source community.
 - Wolff is has been disclosed ( [kafka4beam/wolff](https://github.com/kafka4beam/wolff) ) 
 
 How is it different from brod?

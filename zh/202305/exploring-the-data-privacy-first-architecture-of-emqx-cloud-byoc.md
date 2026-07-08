@@ -1,10 +1,10 @@
 随着物联网的飞速发展，保护数据隐私和安全变得愈发重要。构建一个安全、可靠、可扩展的物联网基础设施成为企业的首要任务。
 
-EMQ 近期推出了 [EMQX Cloud BYOC](https://www.emqx.com/zh/cloud/byoc)，采用了以数据隐私为先的架构，为解决这些问题提供了一个理想的方案。用户可以在自己的云环境中部署 MQTT 集群，完全掌控自己的数据隐私和安全。
+EMQ 近期推出了 [EMQX Cloud BYOC](https://www.emqx.com/zh/cloud/byoc)，采用了以数据隐私为先的架构，为解决这些问题提供了一个理想的方案。用户可以在自己的云环境中部署 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 集群，完全掌控自己的数据隐私和安全。
 
 > 了解更多关于 BYOC 的内容：[提升您的 MQTT 云服务：深入探索 BYOC](https://www.emqx.com/zh/blog/exploring-byoc-taking-your-mqtt-cloud-service-to-the-next-level) 
 
-本文将深入剖析 EMQX Cloud BYOC 的架构，并探讨它如何保障您的物联网基础设施安全。
+本文将深入剖析 [EMQX Cloud](https://www.emqx.com/zh/cloud) BYOC 的架构，并探讨它如何保障您的物联网基础设施安全。
 
 ## EMQX Cloud BYOC 架构概览
 

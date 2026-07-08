@@ -53,7 +53,7 @@ This is a common point of confusion. While they seem similar, they serve very di
 
 Think of it with an analogy:
 
-- An **MQTT Retained Message** is like a **public sticky note** left on a topic's front door. It holds only the single last message for that *entire topic*, and any new subscriber gets a copy of that one note upon arrival.
+- An **[MQTT Retained Message](https://www.emqx.com/en/blog/mqtt5-features-retain-message)** is like a **public sticky note** left on a topic's front door. It holds only the single last message for that *entire topic*, and any new subscriber gets a copy of that one note upon arrival.
 - An **EMQX Last Value Queue** is like a **personal, smart mailbox** for a consumer. It can hold the last message for many different *keys* (e.g., one for "set-color", another for "update-firmware") and keeps track of what the consumer has already read (offsets). It's a true, state-aware communication channel.
 
 Here is a quick breakdown:
@@ -70,7 +70,7 @@ Here is a quick breakdown:
 
 By integrating durable queuing directly into the broker, EMQX eliminates the architectural and operational complexity of running a separate messaging system.
 
-Crucially, it achieves this entirely over the MQTT protocol. Your device and backend application teams can use the same MQTT clients and libraries they are already familiar with to interact with both real-time topics and durable queues. No new protocols, no extra complexity, just one unified, powerful messaging platform.
+Crucially, it achieves this entirely over the MQTT protocol. Your device and backend application teams can use the same [MQTT clients](https://www.emqx.com/en/blog/mqtt-client-tools) and libraries they are already familiar with to interact with both real-time topics and durable queues. No new protocols, no extra complexity, just one unified, powerful messaging platform.
 
 As you implement these patterns, remember these tips:
 

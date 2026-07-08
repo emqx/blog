@@ -1,6 +1,6 @@
 ## Introduction
 
-[EMQX Cloud](https://www.emqx.com/en/cloud) recently launched Serverless 1.0, a cost-effective solution designed to help developers and startups efficiently test and develop MQTT-based applications. By utilizing shared clusters, this version provides a convenient MQTT service that simplifies the development process. It only takes a few seconds to have a fully functional MQTT server with [EMQX Cloud Serverless](https://www.emqx.com/en/cloud/serverless-mqtt). 
+[EMQX Cloud](https://www.emqx.com/en/cloud) recently launched Serverless 1.0, a cost-effective solution designed to help developers and startups efficiently test and develop MQTT-based applications. By utilizing shared clusters, this version provides a convenient MQTT service that simplifies the development process. It only takes a few seconds to have a fully functional [MQTT server](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) with [EMQX Cloud Serverless](https://www.emqx.com/en/cloud/serverless-mqtt). 
 
 Besides, users can get 1 million free session minutes per month, which is enough for 23 devices to be online for a whole month, perfectly covering tiny IoT test scenarios.
 
@@ -106,13 +106,13 @@ You can find the message you sent on the topic you created before has been recei
 
 ### Client Connections Guide
 
-This page provides you with a variety of ways to establish MQTT client connections, including client-side tools, various development languages, and third-party SDKs. You can choose the way you are familiar with and follow the guides to establish a connection. Any problems in establishing a connection can be feedback to the technical support team by submitting a ticket in the upper right corner of the console.
+This page provides you with a variety of ways to establish [MQTT client](https://www.emqx.com/en/blog/mqtt-client-tools) connections, including client-side tools, various development languages, and third-party SDKs. You can choose the way you are familiar with and follow the guides to establish a connection. Any problems in establishing a connection can be feedback to the technical support team by submitting a ticket in the upper right corner of the console.
 
 ![Client Connections Guide](https://assets.emqx.com/images/06ee5691200bbb5712a5636e9a86c375.png)
 
 ## Using MQTTX to Test Connections to Serverless Deployment
 
-In this tutorial, we choose [MQTTX](https://mqttx.app/) to test the connection. MQTTX is an elegant cross-platform MQTT 5.0 desktop client provided by EMQ. 
+In this tutorial, we choose [MQTTX](https://mqttx.app/) to test the connection. MQTTX is an elegant cross-platform [MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5) desktop client provided by EMQ. 
 
 Download and Install: [https://www.emqx.com/en/try?product=MQTTX](https://www.emqx.com/en/try?product=MQTTX) 
 

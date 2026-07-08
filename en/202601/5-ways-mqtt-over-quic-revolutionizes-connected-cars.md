@@ -4,7 +4,7 @@ The modern automobile is a sophisticated, data-generating machine on wheels, whe
 
 While [MQTT](https://www.emqx.com/en/mqtt-guide) has become the de facto messaging standard for IoV due to its lightweight and efficient design, its underlying reliance on traditional TCP/TLS transport protocols presents significant challenges. High mobility, frequent network handoffs, and inherent protocol overhead often translate to frustrating connection drops and data delays for car users.
 
-The industry has long sought a better foundation. That foundation is **QUIC (Quick UDP Internet Connections)**. By implementing MQTT over QUIC, the IoV sector will gain a new, game-changing transport layer built for the demands of the mobile world.
+The industry has long sought a better foundation. That foundation is **[QUIC](https://www.emqx.com/en/blog/quic-protocol-the-features-use-cases-and-impact-for-iot-iov) (Quick UDP Internet Connections)**. By implementing [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) over QUIC, the IoV sector will gain a new, game-changing transport layer built for the demands of the mobile world.
 
 ## The Connected Car Challenge
 
@@ -30,7 +30,7 @@ In the IoV, fast reconnection is essential. When a vehicle exits a tunnel or lea
 
 - **The Problem:** Traditional TCP/TLS requires multiple round trips (RTTs) for a full handshake, creating unacceptable delays every time a connection is restored.
 - **The QUIC Solution:** QUIC's **0-RTT Resumption** feature allows a connection to be resumed instantly using cached security parameters.
-- **IoV Value:** Application data can be sent immediately upon initiation, ensuring critical services like remote lock/unlock commands or emergency services are **available without delay**. This dramatically improves the responsiveness and user experience of every connected car service.
+- **IoV Value:** Application data can be sent immediately upon initiation, ensuring critical services like remote lock/unlock commands or emergency services are **available without delay**. This dramatically improves the responsiveness and user experience of every [connected car](https://www.emqx.com/en/blog/mqtt-for-internet-of-vehicles) service.
 
 ### 2. Seamless Handoff with Address Mobility
 
@@ -66,7 +66,7 @@ In complex vehicular systems, application or device errors are inevitable.
 
 ## EMQX: Leading the MQTT over QUIC Revolution
 
-EMQX was the **first large-scale distributed MQTT Broker** to fully support MQTT over QUIC. This leadership means that the EMQX team has been optimizing and hardening the QUIC implementation in real-world production environments for years. When you choose EMQX, you are choosing a solution with proven stability and performance at the core of your IoV architecture.
+EMQX was the **first large-scale distributed [MQTT Broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison)** to fully support MQTT over QUIC. This leadership means that the EMQX team has been optimizing and hardening the QUIC implementation in real-world production environments for years. When you choose EMQX, you are choosing a solution with proven stability and performance at the core of your IoV architecture.
 
 EMQX addresses enterprise-grade IoV needs with:
 
@@ -76,7 +76,7 @@ EMQX addresses enterprise-grade IoV needs with:
 
 ## Conclusion
 
-MQTT over QUIC is not just an incremental upgrade; it is a fundamental shift in how connected cars communicate. It provides the faster, more reliable, and more resilient transport mechanism required for the next generation of IoV services, including advanced autonomous driving and complex V2X interactions.
+MQTT over QUIC is not just an incremental upgrade; it is a fundamental shift in how [connected cars](https://www.emqx.com/en/blog/connected-cars-and-automotive-connectivity-all-you-need-to-know) communicate. It provides the faster, more reliable, and more resilient transport mechanism required for the next generation of IoV services, including advanced autonomous driving and complex V2X interactions.
 
 The future of connected mobility demands a transport protocol built for speed and reliability. Try EMQX now to explore the benefits of MQTT over QUIC and build a network ready for millions of mobile devices.
 

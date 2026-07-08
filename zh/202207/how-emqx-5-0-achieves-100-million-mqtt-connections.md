@@ -1,8 +1,8 @@
 ## 引言： 单集群 1 亿 MQTT 连接达成
 
-不久前，大规模分布式物联网 MQTT 消息服务器 [EMQX 发布了 5.0 版本](https://www.emqx.com/zh/blog/emqx-v-5-0-released)。这一最新的里程碑版本采用新的后端存储架构 Mria 数据库，并重构了数据复制逻辑，因此 EMQX 5.0 水平扩展能力得到了指数级提升，能够更可靠地承载更大规模的物联网设备连接量。
+不久前，大规模分布式物联网 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 消息服务器 [EMQX 发布了 5.0 版本](https://www.emqx.com/zh/blog/emqx-v-5-0-released)。这一最新的里程碑版本采用新的后端存储架构 Mria 数据库，并重构了数据复制逻辑，因此 EMQX 5.0 水平扩展能力得到了指数级提升，能够更可靠地承载更大规模的物联网设备连接量。
 
-在 EMQX 5.0 正式发布前的性能测试中，我们通过一个 23 节点的 EMQX 集群，全球首个达成了 1 亿 MQTT 连接+每秒 100 万消息吞吐，这也使得 EMQX 5.0 成为目前为止全球最具扩展性的 MQTT Broker。
+在 EMQX 5.0 正式发布前的性能测试中，我们通过一个 23 节点的 EMQX 集群，全球首个达成了 1 亿 MQTT 连接+每秒 100 万消息吞吐，这也使得 EMQX 5.0 成为目前为止全球最具扩展性的 [MQTT Broker](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison)。
 
 本文将对使 EMQX 水平扩展能力得到指数级提升的全新底层架构进行详细解析，帮助大家理解 EMQX 5.0 集群扩展的技术原理，以及在不同的实际应用场景中如何选择合适的部署架构，实现更加可靠的设备接入与消息传输。
 

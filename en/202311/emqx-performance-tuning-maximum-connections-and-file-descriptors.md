@@ -20,9 +20,9 @@ Then, we can perform various read and write operations on the opened file throug
 
 In Linux systems, all resources can be treated as files. In addition to normal files such as text files and executable files, file directories, hardware devices, and network sockets (Network Socket) are also considered as files.
 
-As an MQTT server, EMQX will create a socket for each newly connected client. Correspondingly, this will consume a file descriptor.
+As an [MQTT server](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison), EMQX will create a socket for each newly connected client. Correspondingly, this will consume a file descriptor.
 
-To prevent the process from inadvertently or maliciously opening too many file descriptors, the Linux system limits the number of file descriptors each user and process can open. The default limit is often hard to meet the demands of an MQTT server with many device connections. Therefore, we have to modify kernel parameters for EMQX.
+To prevent the process from inadvertently or maliciously opening too many file descriptors, the Linux system limits the number of file descriptors each user and process can open. The default limit is often hard to meet the demands of an [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) server with many device connections. Therefore, we have to modify kernel parameters for EMQX.
 
 ## Tune the maximum limit of file descriptors
 

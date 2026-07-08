@@ -1,4 +1,4 @@
-MQTT v5 带来了很多新的特性，我们会尽量以通俗易懂的方式展示这些特性，并探讨这些特性对开发者的影响。到目前为⽌，我们已经探讨过这些 [MQTT v5 新特性](https://www.emqx.com/zh/blog/introduction-to-mqtt-5)，现在我们将继续讨论： **流量控制** 
+[MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) v5 带来了很多新的特性，我们会尽量以通俗易懂的方式展示这些特性，并探讨这些特性对开发者的影响。到目前为⽌，我们已经探讨过这些 [MQTT v5 新特性](https://www.emqx.com/zh/blog/introduction-to-mqtt-5)，现在我们将继续讨论： **流量控制** 
 
 
 
@@ -24,7 +24,7 @@ MQTT v3 没有规范流量控制行为，导致客户端和服务端在实现上
 
 ## Receive Maximum 属性
 
-为了支持流量控制，MQTT v5 新增了一个 Receive Maximum 属性，它存在于 CONNECT 报文与 CONNACK 报文，表示客户端或服务端愿意同时处理的 QoS 为 1 和 2 的 PUBLISH 报文最大数量，即对端可以使用的最大发送配额。如果接收端已收到但未发送响应的 QoS 大于 0 的 PUBLISH 报文数量超过 Receive Maximum 的值，接收端将断开连接避免受到更严重的影响。
+为了支持流量控制，MQTT v5 新增了一个 Receive Maximum 属性，它存在于 CONNECT 报文与 [CONNACK](https://www.emqx.com/zh/blog/mqtt5-new-features-reason-code-and-ack) 报文，表示客户端或服务端愿意同时处理的 QoS 为 1 和 2 的 PUBLISH 报文最大数量，即对端可以使用的最大发送配额。如果接收端已收到但未发送响应的 QoS 大于 0 的 PUBLISH 报文数量超过 Receive Maximum 的值，接收端将断开连接避免受到更严重的影响。
 
 ![image20200730173320715.png](https://assets.emqx.com/images/7fe5bd2f4190b0d9f4891b81de5246ff.png)
 

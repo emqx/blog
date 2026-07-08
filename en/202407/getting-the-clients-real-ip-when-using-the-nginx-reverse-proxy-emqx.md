@@ -1,8 +1,8 @@
 ## Introduction
 
-The leading MQTT platform, EMQX, supports cluster scaling to achieve high performance and availability. In cluster deployment, we usually use NGINX, HAProxy, and other reverse proxies to achieve load balancing, SSL/TLS termination, failover, and other purposes.
+The leading [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) platform, EMQX, supports cluster scaling to achieve high performance and availability. In cluster deployment, we usually use NGINX, HAProxy, and other reverse proxies to achieve load balancing, SSL/TLS termination, failover, and other purposes.
 
-The proxy connects to EMQX on behalf of MQTT clients, which means EMQX cannot directly obtain the client's real IP. This limitation makes it inconvenient for us to implement IP-based applications, such as security auditing and access restriction.
+The proxy connects to EMQX on behalf of [MQTT clients](https://www.emqx.com/en/blog/mqtt-client-tools), which means EMQX cannot directly obtain the client's real IP. This limitation makes it inconvenient for us to implement IP-based applications, such as security auditing and access restriction.
 
 In this article, we will take [NGINX 1.26.1](https://nginx.org/en/download.html) and [EMQX 5.7.0](https://www.emqx.com/en/downloads-and-install/broker?os=Ubuntu) as an example to demonstrate how to get the real IP of MQTT client through PROXY protocol or `X-Forwarded-For` header when using NGINX reverse proxy for EMQX.
 
@@ -354,7 +354,7 @@ Client(mqttx-client, ..., peername=115.236.21.86:39817, ...)
 
 ## Getting the MQTT over WebSocket Client's Real IP
 
-In web applications such as browsers and WeChat mini programs, the client will use MQTT over WebSocket to access EMQX. Since WebSocket can carry headers, in addition to the PROXY protocol, we can pass the client's real IP between the LB and the application server via the `X-Forwarded-For` header. 
+In web applications such as browsers and WeChat mini programs, the client will use [MQTT over WebSocket](https://www.emqx.com/en/blog/connect-to-mqtt-broker-with-websocket) to access EMQX. Since WebSocket can carry headers, in addition to the PROXY protocol, we can pass the client's real IP between the LB and the application server via the `X-Forwarded-For` header. 
 
 When it comes to obtaining the real IP of the MQTT over WebSocket client, both NGINX and EMQX are configured in the same manner as when obtaining the real IP of the MQTT over TCP client. Therefore, we won't delve into that again here.
 

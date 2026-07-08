@@ -35,7 +35,7 @@ Authentication or “verification” is a means of confirming the identity of a 
 
 The authentication support in EMQX Cloud consists of two levels:
 
-1. The MQTT protocol itself specifies the username and password in the CONNECT message;
+1. The [MQTT protocol](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) itself specifies the username and password in the CONNECT message;
 2. At the transmission layer, TLS guarantees the client-to-server authentication using client certificates and ensures that the server verifies the server certificate to the client.
 
 EMQX Cloud also supports HTTP custom authentication, MySQL, and PostgreSQL external database authentication, and will support Redis custom authentication and authorization in the future, helping users to implement more complex authentication and authentication logic, and ACL verification logic. 

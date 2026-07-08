@@ -32,7 +32,7 @@ EMQX Cloud 不仅提供全球范围内最高 7*24 小时的技术支持服务。
 
 ![deployments 创建部署](https://assets.emqx.com/images/f89f85a7827c7fffea766d10e2d4a583.jpg)
 
-为满足不同行业、不同场景的客户需求，新版的 EMQX Cloud 基于企业级的 MQTT 消息中间件产品，对品类进行了细分。将原有单一版本拆分成了：基础版、专业版和旗舰版。
+为满足不同行业、不同场景的客户需求，新版的 EMQX Cloud 基于企业级的 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 消息中间件产品，对品类进行了细分。将原有单一版本拆分成了：基础版、专业版和旗舰版。
 
 - 基础版
 

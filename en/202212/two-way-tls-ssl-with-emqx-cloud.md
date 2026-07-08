@@ -1,6 +1,6 @@
 ## Overview
 
-[EMQX Cloud](https://www.emqx.com/en/cloud) is the first fully hosted MQTT 5.0 cloud messaging service in the world. With the support of EMQX Cloud, you can create an MQTT cluster on the cloud and use the features of [EMQX Enterprise Edition](https://www.emqx.com/en/products/emqx). This allows you to spend more time on business connections and less time for EMQX operation, maintenance, and management.
+[EMQX Cloud](https://www.emqx.com/en/cloud) is the first fully hosted [MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5) cloud messaging service in the world. With the support of EMQX Cloud, you can create an [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) cluster on the cloud and use the features of [EMQX Enterprise Edition](https://www.emqx.com/en/products/emqx). This allows you to spend more time on business connections and less time for EMQX operation, maintenance, and management.
 
 In this article, we will set up a two-way TLS/SSL authentication for an EMQX Cloud deployment with a third-party certification.
 
@@ -11,7 +11,7 @@ In this article, we will set up a two-way TLS/SSL authentication for an EMQX Clo
 ## Prerequisites
 
 - An [EMQX Cloud Professional deployment](https://docs.emqx.com/en/cloud/latest/create/overview.html) up and running: for this example, a deployment to AWS will be used.
-- An MQTT client installed: for this example, [MQTTX](https://mqttx.app/docs/downloading-and-installation) will be used.
+- An [MQTT client](https://www.emqx.com/en/blog/mqtt-client-tools) installed: for this example, [MQTTX](https://mqttx.app/docs/downloading-and-installation) will be used.
 - A registered domain: for this example, [AWS Route 53](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/domain-register.html#domain-register-procedure) will be used.
 
 ## Create client-side self-signed certificate

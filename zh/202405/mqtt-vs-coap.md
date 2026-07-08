@@ -21,7 +21,7 @@ MQTT 是一种轻量级的消息传输协议，广泛用于物联网应用。其
 
 ## CoAP 简介
 
-CoAP 是一种专为物联网中的受限节点和网络设计的特殊 Web 传输协议。它不仅能够轻松转换为 HTTP 以便与 Web 无缝集成，同时还满足特定的要求，如多播支持、极低的开销和适用于受限环境的简洁特性。
+[CoAP](https://www.emqx.com/zh/blog/coap-protocol) 是一种专为物联网中的受限节点和网络设计的特殊 Web 传输协议。它不仅能够轻松转换为 HTTP 以便与 Web 无缝集成，同时还满足特定的要求，如多播支持、极低的开销和适用于受限环境的简洁特性。
 
 ![CoAP](https://assets.emqx.com/images/699a76a52d0be6bf5ca53e46edc04662.png)
 

@@ -4,7 +4,7 @@ The [MQTT 5.0 client tool MQTTX](https://mqttx.app/) has recently rolled out its
 
 ## ALPN Protocol Support
 
-In the new version, we introduced support for the ALPN (Application-Layer Protocol Negotiation) protocol across the desktop, web, and CLI. This new feature allows users to test multiple TLS protocols, such as MQTTS and MQTT over WSS, on the same port, significantly optimizing performance in restricted network environments. Users can easily choose and specify the ALPN protocol, ensuring more efficient and stable connections. We would like to thank the community user, [twankamp](https://github.com/twankamp), for contributing to this feature.
+In the new version, we introduced support for the ALPN (Application-Layer Protocol Negotiation) protocol across the desktop, web, and CLI. This new feature allows users to test multiple TLS protocols, such as MQTTS and [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) over WSS, on the same port, significantly optimizing performance in restricted network environments. Users can easily choose and specify the ALPN protocol, ensuring more efficient and stable connections. We would like to thank the community user, [twankamp](https://github.com/twankamp), for contributing to this feature.
 
 Users will see an optional ALPN input box for the desktop and web versions after enabling the `SSL/TLS` switch, where they can enter multiple protocols separated by commas.
 
@@ -50,7 +50,7 @@ We carried out a series of fixes and improvements on MQTTX in this version. They
   The issue preventing the correct clearing of retained messages has been resolved. You can adequately publish an empty message to clear the retained messages under the corresponding topic.
 - **CLI Base64 Message Publishing (CLI):**
   We have addressed the problem while publishing Base64 formatted messages through CLI, ensuring more accurate and reliable message transmission.
-- **MQTT 5 Properties Display (Desktop):**
+- **[MQTT 5](https://www.emqx.com/en/blog/introduction-to-mqtt-5) Properties Display (Desktop):**
   The message box now exhibits MQTT 5 properties more entirely and correctly, enhancing the user interface experience.
 - **JSON Message Type Conversion (Web):**
   The handling mechanism of JSON messages has been optimized to convert accurately received JSON message types, avoiding the display errors encountered previously.
@@ -70,7 +70,7 @@ We carried out a series of fixes and improvements on MQTTX in this version. They
 ## Roadmap
 
 - **IoT Scenario Data Simulation:** Sync this feature to the desktop client to simplify the testing of IoT scenarios.
-- **Sparkplug B Support:** Extend the functionalities of MQTTX to include support for Sparkplug B.
+- **[Sparkplug B](https://www.emqx.com/en/solutions/mqtt-sparkplug) Support:** Extend the functionalities of MQTTX to include support for Sparkplug B.
 - **QoS 0 Message Storage Optimization:** Reduce storage space usage through configurable options.
 - **MQTT Debug Functionality:** Introduce features to assist users in debugging MQTT communications.
 - **Automatic Chart Drawing:** Automatically transform received messages into charts for more straightforward analysis.

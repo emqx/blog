@@ -24,7 +24,7 @@ Furthermore, version 3.8.0 includes functional enhancements in driver optimizati
 - **Data Center Monitoring**: Real-time monitoring of CPU, memory, and disk usage of server clusters
 - **Factory Network Management**: Monitoring port status and traffic load of industrial switches
 - **Building Automation**: Monitoring operational status of UPS power supplies and air conditioning systems
-- **AI Data Center Construction Monitoring**: Rapid AI growth is driving data center expansion. Using the SNMP driver to monitor critical infrastructure, including GPU clusters, high-speed switches (InfiniBand/RoCE), intelligent PDUs (Power Distribution Units), and precision air conditioning, ensures platform stability. Integrating this data into MQTT via EMQX Neuron enables centralized monitoring, intelligent alerting, and energy optimization across data centers. 
+- **AI Data Center Construction Monitoring**: Rapid AI growth is driving data center expansion. Using the SNMP driver to monitor critical infrastructure, including GPU clusters, high-speed switches (InfiniBand/RoCE), intelligent PDUs (Power Distribution Units), and precision air conditioning, ensures platform stability. Integrating this data into [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) via EMQX Neuron enables centralized monitoring, intelligent alerting, and energy optimization across data centers. 
 
 
 
@@ -136,7 +136,7 @@ In addition to the above highlights, version 3.8.0 includes the following import
 
 - **Modbus Driver Enhancement**: Added mandatory validation for Modbus address range (0~65535) when configuring tags, ensuring configuration accuracy and avoiding collection failures due to address errors.
 - **CODESYS V3 Driver Enhancement**: Codesys protocol now supports Chinese tags, facilitating use by Chinese users.
-- **OPC UA Driver Enhancement**: Added support for **String Array** data type, further improving OPC UA data type coverage.
+- **[OPC UA](https://www.emqx.com/en/blog/opc-ua-protocol) Driver Enhancement**: Added support for **String Array** data type, further improving OPC UA data type coverage.
 - **OPC UA Driver Tag Browsing Functionality**
   - **Page Layout Adjustment**: Expanded OPC UA namespace node display for clearer presentation of node hierarchy
   - **Selected Tag Count**: Real-time display of selected tag count for convenient batch operations

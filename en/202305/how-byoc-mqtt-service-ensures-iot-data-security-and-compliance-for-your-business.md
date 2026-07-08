@@ -2,7 +2,7 @@
 
 The Internet of Things (IoT) has revolutionized how businesses operate but has also brought new security risks. Ensuring the security and compliance of IoT data is essential to protect your business and your customers. 
 
-With BYOC MQTT service, you can have a [cloud-based MQTT broker](https://www.emqx.com/en/cloud) in your own cloud environments, ensuring complete control over your data. 
+With BYOC [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) service, you can have a [cloud-based MQTT broker](https://www.emqx.com/en/cloud) in your own cloud environments, ensuring complete control over your data. 
 
 > Read our blog post: [Exploring the Data Privacy-First Architecture of EMQX Cloud BYOC](https://www.emqx.com/en/blog/exploring-the-data-privacy-first-architecture-of-emqx-cloud-byoc)
 
@@ -45,7 +45,7 @@ With the rich security capabilities of EMQX Cloud BYOC, users can obtain benefit
 
 ### Access Control
 
-EMQX Cloud BYOC grants you full control over access to your MQTT broker infrastructure. It enables you to establish access rules based on client ID, topic, and username, ensuring that only authorized clients can connect and engage with your MQTT brokers. User access control is provided for the management console and API, while network security groups enable traffic control to safeguard the security of your MQTT infrastructure.
+EMQX Cloud BYOC grants you full control over access to your MQTT broker infrastructure. It enables you to establish access rules based on client ID, topic, and username, ensuring that only authorized clients can connect and engage with your [MQTT brokers](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison). User access control is provided for the management console and API, while network security groups enable traffic control to safeguard the security of your MQTT infrastructure.
 
 ### Data Privacy
 

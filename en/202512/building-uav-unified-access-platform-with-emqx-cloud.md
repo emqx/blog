@@ -23,7 +23,7 @@ Building such a platform presents several challenges:
 
 ### Real-Time Data Collection
 
-**EMQX Cloud** uses the lightweight **MQTT protocol** to establish and maintain stable, real-time bi-directional connections over cellular (4G/5G) or wired networks. During flight, UAVs generate large volumes of telemetry and status data.
+**EMQX Cloud** uses the lightweight **[MQTT protocol](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt)** to establish and maintain stable, real-time bi-directional connections over cellular (4G/5G) or wired networks. During flight, UAVs generate large volumes of telemetry and status data.
 
 Using the **EMQX Rule Engine**, this data is securely bridged to Kafka and integrated into the enterprise data platform. The unified data pipeline supports:
 

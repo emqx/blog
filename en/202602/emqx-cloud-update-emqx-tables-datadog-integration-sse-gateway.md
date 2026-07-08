@@ -1,4 +1,4 @@
-We are continuously evolving EMQX Cloud to provide a more robust, observable, and flexible MQTT platform. Our latest update introduces expanded availability for EMQX Tables, simplified observability with Datadog, and a preview of our new SSE Gateway.
+We are continuously evolving [EMQX Cloud](https://www.emqx.com/en/cloud) to provide a more robust, observable, and flexible [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) platform. Our latest update introduces expanded availability for EMQX Tables, simplified observability with Datadog, and a preview of our new SSE Gateway.
 
 Here is what’s new.
 
@@ -47,7 +47,7 @@ To help you get started immediately, we also provide a pre-configured [Datadog d
 
 We are excited to introduce the **Server-Sent Events (SSE) Gateway**, available in preview for **EMQX Cloud Dedicated Flex**.
 
-This feature allows clients to subscribe to MQTT topics and receive messages via the HTTP-based SSE protocol, eliminating the need for a full MQTT client library.
+This feature allows clients to subscribe to [MQTT topics](https://www.emqx.com/en/blog/advanced-features-of-mqtt-topics) and receive messages via the HTTP-based SSE protocol, eliminating the need for a full [MQTT client](https://www.emqx.com/en/blog/mqtt-client-tools) library.
 
 ### Why SSE?
 

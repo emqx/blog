@@ -10,7 +10,7 @@
 
 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 是一种基于发布/订阅模式的轻量级消息传输协议，针对性地解决了物联网设备网络环境复杂而不可靠、内存和闪存容量小、处理器能力有限的问题，可以用极少的代码为联网设备提供实时可靠的消息服务。
 
-在典型的 MQTT 使用方式中，所有需要通信的客户端（通常是硬件设备和应用服务）与同一个 MQTT 服务器（MQTT Broker）建立 TCP 长连接。发送消息的客户端（发布者）与接收消息的客户端（订阅者）不需要建立直接的连接，而是通过 MQTT 服务器实现消息的路由和分发工作。
+在典型的 MQTT 使用方式中，所有需要通信的客户端（通常是硬件设备和应用服务）与同一个 MQTT 服务器（[MQTT Broker](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison)）建立 TCP 长连接。发送消息的客户端（发布者）与接收消息的客户端（订阅者）不需要建立直接的连接，而是通过 MQTT 服务器实现消息的路由和分发工作。
 
 ![MQTT Broker](https://assets.emqx.com/images/387fec8511feecf3fb7c859250f48c84.png)
 

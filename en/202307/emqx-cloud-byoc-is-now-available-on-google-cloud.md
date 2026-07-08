@@ -1,8 +1,8 @@
 ## Introduction
 
-[EMQX Cloud BYOC](https://www.emqx.com/en/cloud/byoc) (Bring Your Own Cloud) revolutionizes the way you deploy and manage your MQTT  infrastructure. By empowering you to deploy an EMQX MQTT cluster on your preferred cloud platform while benefiting from the expertise and support of the EMQX team, we bring unparalleled convenience and performance to your IoT applications.
+[EMQX Cloud BYOC](https://www.emqx.com/en/cloud/byoc) (Bring Your Own Cloud) revolutionizes the way you deploy and manage your [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt)  infrastructure. By empowering you to deploy an EMQX MQTT cluster on your preferred cloud platform while benefiting from the expertise and support of the EMQX team, we bring unparalleled convenience and performance to your IoT applications.
 
-Now, we are thrilled to announce that EMQX Cloud BYOC is expanding its reach and is now available on Google Cloud. This exciting development opens up new avenues for users to leverage Google Cloud's powerful infrastructure and advanced capabilities for their MQTT messaging needs.
+Now, we are thrilled to announce that [EMQX Cloud](https://www.emqx.com/en/cloud) BYOC is expanding its reach and is now available on Google Cloud. This exciting development opens up new avenues for users to leverage Google Cloud's powerful infrastructure and advanced capabilities for their MQTT messaging needs.
 
 ![EMQX Cloud BYOC on Google Cloud](https://assets.emqx.com/images/465b3d79997398d5c601c2983a975ef7.png)
 

@@ -12,7 +12,7 @@
 
 ### EMQX 简介
 
-[EMQX ](https://www.emqx.com/zh) 是基于高并发的 Erlang/OTP 语言平台开发，支持百万级连接和分布式集群架构，发布订阅模式的开源 MQTT 消息服务器。EMQX 内置了大量开箱即用的功能，其 **企业版 EMQX Enterprise** 支持通过规则引擎将物联网消息数据存储到 ClickHouse。
+[EMQX ](https://www.emqx.com/zh) 是基于高并发的 Erlang/OTP 语言平台开发，支持百万级连接和分布式集群架构，发布订阅模式的开源 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 消息服务器。EMQX 内置了大量开箱即用的功能，其 **企业版 EMQX Enterprise** 支持通过规则引擎将物联网消息数据存储到 ClickHouse。
 
 
 ### ClickHouse 简介

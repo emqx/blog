@@ -24,7 +24,7 @@
 
 > 了解更多关于 MQTT 的信息：[物联网首选协议，关于 MQTT 你需要了解这些](https://www.emqx.com/zh/blog/what-is-the-mqtt-protocol)。
 
-使用 MQTT 协议连接海量物联网设备需要 MQTT 服务器这一关键组件。下文的方案设计中我们将采用大规模分布式物联网 [MQTT 消息服务器 EMQX](https://www.emqx.com/zh/products/emqx)，实现海量物联网设备的高效可靠连接以及消息与事件流数据的实时处理分发。
+使用 MQTT 协议连接海量物联网设备需要 [MQTT 服务器](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison)这一关键组件。下文的方案设计中我们将采用大规模分布式物联网 [MQTT 消息服务器 EMQX](https://www.emqx.com/zh/products/emqx)，实现海量物联网设备的高效可靠连接以及消息与事件流数据的实时处理分发。
 
 > 全球最具可扩展性的大规模分布式物联网 MQTT 消息服务器
 >

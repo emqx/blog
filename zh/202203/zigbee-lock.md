@@ -5,13 +5,13 @@
 
 ## 项目简介
 
-本项目可用于不可嵌入安装门锁的门，实现门锁的智能控制。项目包含硬件、云服务器和 Android 客户端。其中硬件平台采用两个 Zigbee 设备实现设备间通信，云服务器包含 Web 服务器和 MQTT 服务器，客户端通过和服务器通信间接控制硬件。
+本项目可用于不可嵌入安装门锁的门，实现门锁的智能控制。项目包含硬件、云服务器和 Android 客户端。其中硬件平台采用两个 Zigbee 设备实现设备间通信，云服务器包含 Web 服务器和 [MQTT 服务器](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison)，客户端通过和服务器通信间接控制硬件。
 
 项目地址：[https://github.com/Magiclxw/ZigBee-Lock](https://github.com/Magiclxw/ZigBee-Lock)
 
 ## 技术框架
 
-硬件平台使用 ESP8266 模块与 EMQX MQTT 消息服务器通信，Android 客户端通过连接 MQTT 服务器实时控制硬件。
+硬件平台使用 ESP8266 模块与 EMQX [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 消息服务器通信，Android 客户端通过连接 MQTT 服务器实时控制硬件。
 
 **架构图**
 

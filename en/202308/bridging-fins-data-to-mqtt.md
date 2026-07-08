@@ -1,8 +1,8 @@
-In this blog, we use [Neuron](https://www.emqx.com/en/products/emqx-neuron) and [EMQX](https://www.emqx.com/en/products/emqx) from EMQ to achieve FINS to MQTT bridging. Neuron can convert the FINS protocol to MQTT, while EMQX acts as an [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison), handling massive connections and data.
+In this blog, we use [Neuron](https://www.emqx.com/en/products/emqx-neuron) and [EMQX](https://www.emqx.com/en/products/emqx) from EMQ to achieve FINS to [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) bridging. Neuron can convert the FINS protocol to MQTT, while EMQX acts as an [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison), handling massive connections and data.
 
 ## The Architecture of FINS to MQTT Bridging
 
-Neuron is a modern [industrial IoT](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges) connectivity server that can connect various industrial devices that use standard protocols or device-specific protocols, achieving interconnection between industrial IoT platforms and various devices. As a lightweight industrial software, Neuron can run on various IoT edge hardware devices with limited resources. It aims to solve the problem of unified access to data-centric automation devices and provide basic support for intelligent manufacturing.
+Neuron is a modern [industrial IoT](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges) connectivity server that can connect various industrial devices that use standard protocols or device-specific protocols, achieving interconnection between [industrial IoT](https://www.emqx.com/en/blog/industrial-iot-systems) platforms and various devices. As a lightweight industrial software, Neuron can run on various IoT edge hardware devices with limited resources. It aims to solve the problem of unified access to data-centric automation devices and provide basic support for intelligent manufacturing.
 
 > Learn more about Neuron: [Neuron: Industrial IoT Connectivity Server](https://www.emqx.com/en/products/emqx-neuron)
 
@@ -171,7 +171,7 @@ Subscribe to the data group of southbound devices:
 
 - Group: Select the group to be subscribed to from the dropdown list, for example, group-1；
 
-- Topic: The MQTT topic, which is default set as `/neuron/MQTT/fins-tcp-1/group-1` in this example. Next, subscribe to this topic and receive messages in MQTTX.
+- Topic: The [MQTT topic](https://www.emqx.com/en/blog/advanced-features-of-mqtt-topics), which is default set as `/neuron/MQTT/fins-tcp-1/group-1` in this example. Next, subscribe to this topic and receive messages in MQTTX.
 
 #### Step 10: View data in the MQTT Client.
 
@@ -197,7 +197,7 @@ After a successful subscription, you can see that MQTTX continues to receive dat
 
 ## Summary
 
-With the growing trend towards cloud-edge collaboration in the industrial 4.0 wave, FINS bridging is becoming an increasingly popular choice for a common IoT protocol. By utilizing the solution mentioned in this blog, users can safely and conveniently implement the [IIoT platform](https://www.emqx.com/en/blog/iiot-platform-key-components-and-5-notable-solutions) on demand with enhanced connectivity, resulting in significant improvements in production efficiency, cost savings, and product quality.
+With the growing trend towards cloud-edge collaboration in the industrial 4.0 wave, FINS bridging is becoming an increasingly popular choice for a common [IoT protocol](https://www.emqx.com/en/blog/iot-protocols-mqtt-coap-lwm2m). By utilizing the solution mentioned in this blog, users can safely and conveniently implement the [IIoT platform](https://www.emqx.com/en/blog/iiot-platform-key-components-and-5-notable-solutions) on demand with enhanced connectivity, resulting in significant improvements in production efficiency, cost savings, and product quality.
 
 
 

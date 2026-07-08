@@ -121,7 +121,7 @@ For more information, please check out: [Free Public MQTT Broker](https://www.em
 
 ## Simple MQTT.js Example
 
-We will provide an example of how to connect to EMQX Cloud, subscribe to topics, and send and receive messages using MQTT.js.
+We will provide an example of how to connect to [EMQX Cloud](https://www.emqx.com/en/cloud), subscribe to topics, and send and receive messages using MQTT.js.
 
 > Note: WebSocket connections are supported only in browsers. As a result, we will be using different connection parameters for the browser and Node.js environments. However, all other parameters are the same, except for the connection URL. Readers can use the parameters that best suit their needs.
 
@@ -212,7 +212,7 @@ Here are some commonly-used attribute values in the Options object:
 
   - `reconnectPeriod`: Reconnect interval time, the unit is milliseconds, and the default is 1000 milliseconds. **Note:** When it is set to 0, the automatic reconnect will be disabled
 
-  - `connectTimeout`: It is the waiting time before receiving CONNACK, the unit is milliseconds, and the default is 30000 milliseconds
+  - `connectTimeout`: It is the waiting time before receiving [CONNACK](https://www.emqx.com/en/blog/mqtt5-new-features-reason-code-and-ack), the unit is milliseconds, and the default is 30000 milliseconds
 
   - `username`: Authentication username. If broker requires username authentication, please set this value
 

@@ -1,6 +1,6 @@
 ## 引言：统一管理的网关框架
 
-作为一款大规模分布式物联网 MQTT 消息服务器，EMQX 除了完整支持 MQTT 3.x 和 5.0，还支持  STOMP、[MQTT-SN](https://www.emqx.com/zh/blog/connecting-mqtt-sn-devices-using-emqx)、LwM2M/[CoAP](https://www.emqx.com/zh/blog/connecting-coap-devices-to-emqx)，JT/T 808 等多种主流协议接入。不仅提供了广泛的连接能力，以处理适用于各类场景的物联网设备；还为后端的物联网管理服务提供了统一接入平台和管理接口，以降低异构协议间的适配成本。
+作为一款大规模分布式物联网 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 消息服务器，EMQX 除了完整支持 MQTT 3.x 和 5.0，还支持  STOMP、[MQTT-SN](https://www.emqx.com/zh/blog/connecting-mqtt-sn-devices-using-emqx)、[LwM2M](https://www.emqx.com/zh/blog/iot-protocols-mqtt-coap-lwm2m)/[CoAP](https://www.emqx.com/zh/blog/connecting-coap-devices-to-emqx)，JT/T 808 等多种主流协议接入。不仅提供了广泛的连接能力，以处理适用于各类场景的物联网设备；还为后端的物联网管理服务提供了统一接入平台和管理接口，以降低异构协议间的适配成本。
 
 在[最新发布的 EMQX 5.0 ](https://www.emqx.com/zh/blog/emqx-v-5-0-released)中，我们重构了多协议接入的底层架构，统一了配置格式和管理接口，提供了一个全新的扩展网关框架。同时规范了各类网关的实现，使得各个网关功能定义更为清晰。
 
@@ -16,7 +16,7 @@
 
 - **统一的用户层接口：**该框架提供了风格统一的配置文件、HTTP API 和命令行接口。以监听器参数配置为例，4.x 版本中不同协议插件对于监听器暴露的参数各不相同，而在 5.0 版本中这些参数的风格都将是统一的。
 - **统一的统计和监控指标：**提供了网关和客户端级别的统计指标，例如收发字节数、消息等。
-- **独立的连接和会话管理：**每个网关都有在自己的客户端管理页面，且不同的网关允许使用相同的 Client ID ，而不是像 4.x 版本一样都混合在 MQTT 客户端列表中进行管理。
+- **独立的连接和会话管理：**每个网关都有在自己的客户端管理页面，且不同的网关允许使用相同的 Client ID ，而不是像 4.x 版本一样都混合在 [MQTT 客户端](https://www.emqx.com/zh/blog/mqtt-client-tools)列表中进行管理。
 - **独立的客户端认证：**支持为每个网关配置独立的认证，不再像 4.x 像一样与 MQTT 客户端认证混合在一起。
 - **易扩展和规格清晰化：**框架抽象了一套标准的概念和接口使自定义网关变得更加容易。
 

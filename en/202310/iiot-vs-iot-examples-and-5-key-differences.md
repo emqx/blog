@@ -18,7 +18,7 @@ While IIoT and IoT share some common principles, there are distinct differences 
 
 ### Smart Homes
 
-Smart homes represent one of the most popular applications of IoT. They include various connected devices like smart thermostats, lighting systems, security cameras, and appliances that can communicate with each other and be controlled remotely. This interconnectivity not only offers convenience but also improves energy efficiency and home security.
+Smart homes represent one of the most popular [applications of IoT](https://www.emqx.com/en/blog/aws-mqtt-managing-iot-communication-in-aws). They include various connected devices like smart thermostats, lighting systems, security cameras, and appliances that can communicate with each other and be controlled remotely. This interconnectivity not only offers convenience but also improves energy efficiency and home security.
 
 ### Wearable Health Devices
 
@@ -40,7 +40,7 @@ In the manufacturing sector, IIoT is used to automate and optimize production pr
 
 ### Predictive Maintenance
 
-Predictive maintenance is another key application of IIoT. By continuously monitoring the condition of equipment, potential issues can be identified before they lead to failures. This allows for timely maintenance, preventing costly downtime and extending the life of the equipment.
+Predictive maintenance is another key [application of IIoT](https://www.emqx.com/en/blog/industrial-iot-applications). By continuously monitoring the condition of equipment, potential issues can be identified before they lead to failures. This allows for timely maintenance, preventing costly downtime and extending the life of the equipment.
 
 ### Supply Chain and Logistics Management
 
@@ -114,7 +114,7 @@ Remember, though, that IIoT vs. IoT isn't necessarily an either/or decision. Man
 
 ## Simplifying IIoT Connectivity with EMQX
 
-EMQ provides [Neuron](https://github.com/emqx/neuron), a lightweight connectivity server for industrial dataops and data-centric automation, tightly integrated with our industry-leading MQTT broker. Neuron provides several significant benefits for IIoT, simplifying connectivity, enhancing data integration, and enabling real-time communication and analytics.
+EMQ provides [Neuron](https://github.com/emqx/neuron), a lightweight connectivity server for industrial dataops and data-centric automation, tightly integrated with our industry-leading [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison). Neuron provides several significant benefits for IIoT, simplifying connectivity, enhancing data integration, and enabling real-time communication and analytics.
 
 If you are a managing an IIoT deployment, [EMQX](https://github.com/emqx/emqx) and [Neuron](https://github.com/emqx/neuron) can help with:
 

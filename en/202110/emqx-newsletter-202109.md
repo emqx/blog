@@ -1,4 +1,4 @@
-Early September, a few of us in the team got invited by the guys from Industry 4.0 Solutions to the Company Spotlight online event. Industry 4.0 Solutions is specialised in digitalising physical factory via the use of Big Data, Cloud platform, Artificial Intelligence (AI) and Industrial Internet of Things (IIoT). At the very center of the [IIoT](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges) solutions, there is the MQTT broker (cluster), and EMQX is the perfect MQTT broker in this big picture.
+Early September, a few of us in the team got invited by the guys from Industry 4.0 Solutions to the Company Spotlight online event. Industry 4.0 Solutions is specialised in digitalising physical factory via the use of Big Data, Cloud platform, Artificial Intelligence (AI) and Industrial Internet of Things (IIoT). At the very center of the [IIoT](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges) solutions, there is the [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) broker (cluster), and EMQX is the perfect MQTT broker in this big picture.
 
 It was a great pleasure to meet the people from the IIoT community. During the 1 hour session we had the chance to answer a lot of the burning questions about EMQ as a company and EMQX the MQTT messaging broker as the product. Please check it out in this recording: [https://www.youtube.com/watch?v=nP7JAlpyvfo](https://www.youtube.com/watch?v=nP7JAlpyvfo)
 
@@ -12,7 +12,7 @@ Here is a summary of  the features added:
 - Unified data-bridge and rule-engine features
 - New configuration management (HOCON)
 - Async database replication (Mria) to make the cluster even more scalable
-- MQTT over QUIC – a bleeding-edge research project 
+- [MQTT over QUIC](https://www.emqx.com/en/blog/mqtt-over-quic) – a bleeding-edge research project 
 
 Please find more details in [the release note](https://github.com/emqx/emqx/discussions/5864).
 
@@ -31,7 +31,7 @@ When under high load, an “ideal robust system” should automatically start ba
 
 EMQX is highly extensible, as we wrote in a [blog post](https://www.emqx.com/en/blog/develop-and-deploy-emqx-plugin-for-enterprise-4-3), it is possible for plugins to be installed independently.
 
-Starting from 5.0, EMQX open source users will be able to drop-in install an extension package to upgrade to Enterprise.
+Starting from 5.0, [EMQX open source](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) users will be able to drop-in install an extension package to upgrade to Enterprise.
 
 
 <section class="promotion">

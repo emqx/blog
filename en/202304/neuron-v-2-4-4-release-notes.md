@@ -32,7 +32,7 @@ The latest version of Neuron comes with improved BACnet/IP support. It facilitat
 - Fix the issue of abnormal WebSocket connection.
 - Add statistics for cache memory information in API: /api/v2/metrics.
 - Modify operating system information in API:  /api/v2/metrics.
-- Optimize configuration for MQTT plugin offline caching.
+- Optimize configuration for [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) plugin offline caching.
 
  
 

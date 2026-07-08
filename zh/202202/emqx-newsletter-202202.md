@@ -40,7 +40,7 @@
 
 ### Webinar & Conference
 
-本月我们举办了主题为《在 EMQX 中使用 TLS/SSL 确保 MQTT 安全》的 Webinar，EMQ 售前工程师 Kary Ware 分享了如何正确验证、安装和配置 SSL/TLS 证书等知识点。
+本月我们举办了主题为《在 EMQX 中使用 TLS/SSL 确保 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 安全》的 Webinar，EMQ 售前工程师 Kary Ware 分享了如何正确验证、安装和配置 SSL/TLS 证书等知识点。
 
 > 视频回看链接：[Webinar: Ensure MQTT Security with TLS/SSL](https://www.youtube.com/watch?v=HRqJLi7-9KU) 
 

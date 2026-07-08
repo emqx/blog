@@ -11,7 +11,7 @@ This article provides a comprehensive guide on using MQTT in a Node.js project f
 - **Lightweight Protocol**: MQTT minimizes bandwidth usage, perfect for IoT devices.
 - **Event-Driven Architecture**: Node.js handles asynchronous operations, ideal for real-time MQTT communication.
 - **Scalability**: Build robust IoT systems with **Node.js MQTT** for industries like smart homes, automotive, and energy.
-- **MQTT.js Library**: A widely-used, asynchronous JavaScript library for **Node.js MQTT** integration.
+- **[MQTT.js](https://www.emqx.com/en/blog/mqtt-js-tutorial) Library**: A widely-used, asynchronous JavaScript library for **Node.js MQTT** integration.
 
 ## Node.js MQTT Project Preparation
 
@@ -63,7 +63,7 @@ Before proceeding, please ensure you have an MQTT broker to communicate and test
 
 - **Fully managed cloud service**
 
-  The fully managed cloud service is the easiest way to start an MQTT service. [EMQX Serverless](https://www.emqx.com/en/cloud/serverless-mqtt) is a free, cloud-based MQTT service with 1M session minutes/month. Ideal for quick Node.js MQTT testing.
+  The fully managed cloud service is the easiest way to start an MQTT service. [EMQX Serverless](https://www.emqx.com/en/cloud/serverless-mqtt) is a free, cloud-based MQTT service with 1M session minutes/month. Ideal for quick Node.js [MQTT testing](https://www.emqx.com/en/blog/mqtt-testing).
 
 - **Free public MQTT broker**
 
@@ -433,7 +433,7 @@ If the MQTT message is not JSON, you can still convert it to a string using the 
 
 ### **What to do when Node.js MQTT clients don't receive messages?**
 
-- Make sure you're subscribed to the correct topic. MQTT topics are case-sensitive and must be an exact match.
+- Make sure you're subscribed to the correct topic. [MQTT topics](https://www.emqx.com/en/blog/advanced-features-of-mqtt-topics) are case-sensitive and must be an exact match.
 - Ensure the broker is running and you can connect to it.
 - If you're using [MQTT QoS](https://www.emqx.com/en/blog/introduction-to-mqtt-qos) level 1 or 2, ensure the message is published with the same QoS level.
 - Listen for `error` events on your client to see if an error is thrown, which could explain why you're not receiving messages.

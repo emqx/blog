@@ -74,7 +74,7 @@
 
 ## 什么是工业物联网？
 
-工业物联网（[IIoT](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges)）是智能制造的一个重要方面。它指的是工业设备、设施、人员和流程之间的互联互通。通过连接工业环境中的设备和系统，可以获取、分析和利用有价值的数据，从而提高运营效率和生产力。
+[工业物联网](https://www.emqx.com/zh/blog/iiot-explained-examples-technologies-benefits-and-challenges)（[IIoT](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges)）是智能制造的一个重要方面。它指的是工业设备、设施、人员和流程之间的互联互通。通过连接工业环境中的设备和系统，可以获取、分析和利用有价值的数据，从而提高运营效率和生产力。
 
 工业物联网是物联网在工业领域的延伸，针对工业需求而定制。它能够实现机器间顺畅通信，让系统可以进行交互和协作，形成一个由机器和人组成的智能网络，用来监测、收集、交换和分析数据，然后利用这些数据来优化生成流程，改善供应链管理，提升整体运营的效率和效益。
 
@@ -124,7 +124,7 @@ EMQ 提供的工业协议网关软件 [Neuron](https://www.emqx.com/zh/products/
 
 如果您是智能制造商，EMQX 和 Neuron 可以在以下方面提供帮助：
 
-1. **简化连接**：作为 MQTT Broker 的 EMQX 和作为工业连接网关的 Neuron 为 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 与各种工业协议的通信提供了无缝连接的桥梁。这种集成简化了各种工业设备、传感器和机器的连接，使它们之间以及与中央系统之间能够以统一的方式进行通信。
+1. **简化连接**：作为 [MQTT Broker](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison) 的 EMQX 和作为工业连接网关的 Neuron 为 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 与各种工业协议的通信提供了无缝连接的桥梁。这种集成简化了各种工业设备、传感器和机器的连接，使它们之间以及与中央系统之间能够以统一的方式进行通信。
 
 2. **协议转换**：Neuron 能够将各种工业协议转换为 MQTT，保证了制造过程中不同类型设备的互通性。这使得传统设备和现代物联网设备能够轻松地通信，无论它们使用的是什么通信协议。
 

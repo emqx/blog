@@ -2,7 +2,7 @@
 
 ## Overview
 
-Real-time data processing is crucial in the Industrial Internet of Things (IIoT) space, where timely insights can drive significant operational improvements. By leveraging platforms like EMQX for various industrial data streaming and RisingWave for real-time analytics, manufacturers can process and analyze data from machines as it's generated, enabling predictive maintenance, reducing downtime, and improving efficiency. The integration of these technologies can empower industries to respond instantly to equipment failures, optimize production, and make data-driven decisions that enhance overall equipment effectiveness (OEE) and streamline operations across the board.
+Real-time data processing is crucial in the [Industrial Internet of Things](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges) (IIoT) space, where timely insights can drive significant operational improvements. By leveraging platforms like EMQX for various industrial data streaming and RisingWave for real-time analytics, manufacturers can process and analyze data from machines as it's generated, enabling predictive maintenance, reducing downtime, and improving efficiency. The integration of these technologies can empower industries to respond instantly to equipment failures, optimize production, and make data-driven decisions that enhance overall equipment effectiveness (OEE) and streamline operations across the board.
 
 This blog will outline the integration of EMQX with RisingWave, creating a robust system designed for real-time monitoring and predictive maintenance within the IIoT framework.
 
@@ -10,9 +10,9 @@ This blog will outline the integration of EMQX with RisingWave, creating a robus
 
 ### EMQ and EMQX
 
-[EMQ](https://www.emqx.com/en) is a global leader in providing edge-cloud connectivity and data platform solutions. EMQ facilitates data collection, transmission, transformation, storage, analysis, and control between the physical devices and digital systems with its high-performance MQTT messaging platform EMQX and other software solutions. 
+[EMQ](https://www.emqx.com/en) is a global leader in providing edge-cloud connectivity and data platform solutions. EMQ facilitates data collection, transmission, transformation, storage, analysis, and control between the physical devices and digital systems with its high-performance [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) messaging platform EMQX and other software solutions. 
 
-EMQ helps businesses tackle data challenges across various scenarios, such as connected vehicles, smart factories, smart buildings, retail, robotics, drones, maritime shipping, and large-scale distributed energy device networks (including renewable energy grids, distributed energy storage, transmission and distribution power grid, gas and water networks).
+EMQ helps businesses tackle data challenges across various scenarios, such as connected vehicles, [smart factories](https://www.emqx.com/en/blog/what-is-a-smart-factory-key-components-4-levels-of-evolution), smart buildings, retail, robotics, drones, maritime shipping, and large-scale distributed energy device networks (including renewable energy grids, distributed energy storage, transmission and distribution power grid, gas and water networks).
 
 EMQX is a scalable, distributed MQTT platform that supports unlimited connections, offers seamless integration, and can be deployed anywhere. It can seamlessly integrate IoT data with various backend databases and analytics tools, enabling enterprises to build IoT platforms and applications with leading competitiveness rapidly.
 

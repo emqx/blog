@@ -61,7 +61,7 @@ In addition to the major updates above, this release includes several important 
 
 ### SNI Support for Bridges
 
-You can now manually set the SNI (Server Name Indication) for TLS MQTT Bridges via the configuration file.
+You can now manually set the SNI (Server Name Indication) for [TLS MQTT](https://www.emqx.com/en/blog/fortifying-mqtt-communication-security-with-ssl-tls) Bridges via the configuration file.
 
 Example:
 
@@ -97,7 +97,7 @@ $ curl -i --basic -u admin:public -X POST "http://localhost:8081/api/v4/mqtt/pub
 '{"payload":"MTIzCg==", "decoding":"base64", "topic":"test"}'
 ```
 
-Clients subscribed to the MQTT topic test will receive the decoded binary result of the `MTIzCg==` string.
+Clients subscribed to the [MQTT topic](https://www.emqx.com/en/blog/advanced-features-of-mqtt-topics) test will receive the decoded binary result of the `MTIzCg==` string.
 
 ## Fixed Known Issues
 
@@ -108,7 +108,7 @@ Clients subscribed to the MQTT topic test will receive the decoded binary result
 
 ## Conclusion and Next Steps
 
-The release of EMQX Edge 1.2.0 marks another significant step forward in making your edge MQTT deployment simpler, more manageable, and robust. With the introduction of Docker support, the intuitive new Dashboard, and critical stability fixes, EMQX Edge is better equipped than ever to serve as your reliable edge messaging backbone.
+The release of EMQX Edge 1.2.0 marks another significant step forward in making your edge [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) deployment simpler, more manageable, and robust. With the introduction of Docker support, the intuitive new Dashboard, and critical stability fixes, EMQX Edge is better equipped than ever to serve as your reliable edge messaging backbone.
 
 We encourage you to [update to EMQX Edge 1.2.0 today](https://www.emqx.com/en/downloads-and-install/emqx-edge) to take advantage of these new features and improvements.
 

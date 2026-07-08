@@ -1,4 +1,4 @@
-我们持续推动 EMQX Cloud 的迭代升级，致力于打造更强大、更可观测、更灵活的 MQTT 平台。本次更新重点优化了 Flashduty 告警集成能力，并推出全新的 SSE 网关预览版。
+我们持续推动 [EMQX Cloud](https://www.emqx.com/zh/cloud) 的迭代升级，致力于打造更强大、更可观测、更灵活的 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 平台。本次更新重点优化了 Flashduty 告警集成能力，并推出全新的 SSE 网关预览版。
 
 ## 原生 Flashduty 告警集成
 
@@ -20,7 +20,7 @@
 
 我们很高兴地宣布，**Server-Sent Events（SSE）网关**现已在 EMQX Cloud 专有版中开启预览。
 
-该功能允许客户端通过基于 HTTP 的 SSE 协议订阅 MQTT 主题并接收消息。开发者不再需要集成完整的 MQTT 客户端库即可获取实时数据流。
+该功能允许客户端通过基于 HTTP 的 SSE 协议订阅 MQTT 主题并接收消息。开发者不再需要集成完整的 [MQTT 客户端](https://www.emqx.com/zh/blog/mqtt-client-tools)库即可获取实时数据流。
 
 ### 为什么选择 SSE？
 

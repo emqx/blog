@@ -4,7 +4,7 @@ The relevant installation package is ready for download from [EMQ website](https
 
 
 
-> EMQX Enterprise is an Enterprise-level Iot MQTT messaging platform that supports one-stop access of millions of IoT devices, MQTT&CoAP multi-protocol processing, and low-latency real-time messaging. It  also supports SQL-based built-in rule engine, flexible processing/forwarding of messages to back-end services, storage of message data to various databases, or bridging of enterprise middleware such as Kafka, RabbitMQ, and Pulsar.
+> EMQX Enterprise is an Enterprise-level Iot [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) messaging platform that supports one-stop access of millions of IoT devices, MQTT&CoAP multi-protocol processing, and low-latency real-time messaging. It  also supports SQL-based built-in rule engine, flexible processing/forwarding of messages to back-end services, storage of message data to various databases, or bridging of enterprise middleware such as Kafka, RabbitMQ, and Pulsar.
 >
 > EMQX Enterprise is applicable for a variety of IoT applications, helping enterprises quickly build IoT applications and support the deployment on public clouds, private clouds, physical machines, containers/K8S and so on.
 

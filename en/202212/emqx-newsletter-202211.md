@@ -1,6 +1,6 @@
-EMQX and EMQX Enterprise are released in several versions in November, including enhancements in security and ecosystem.
+EMQX and [EMQX Enterprise](https://www.emqx.com/en/products/emqx) are released in several versions in November, including enhancements in security and ecosystem.
 
-EMQX Cloud introduces the custom functions feature, allowing users to easily convert IoT data into the format that matches the data stream.
+[EMQX Cloud](https://www.emqx.com/en/cloud) introduces the custom functions feature, allowing users to easily convert IoT data into the format that matches the data stream.
 
 ## EMQX
 
@@ -16,7 +16,7 @@ EMQX Enterprise 4.4.11 integrates with Google Cloud Pub/Sub, which allows users 
 
 ![Google Cloud Pub/Sub Integration](https://assets.emqx.com/images/03fab0f56293d933fcbabcd762752ab4.png)
 
-For Google IoT Core users, you can easily migrate the MQTT transport layer to EMQX to continue using applications and services on Google Cloud.
+For Google [IoT Core](https://www.emqx.com/en/blog/understanding-aws-iot-core) users, you can easily migrate the MQTT transport layer to EMQX to continue using applications and services on Google Cloud.
 
 ### CRL and OCSP Stapling
 
@@ -49,9 +49,9 @@ appid2:secret2
 
 ### Optimization and improvement
 
-We fix several known bugs, such as fixing the issue that the system keeps logging errors if the authentication failed while connecting to a MongoDB instance, checking topics to avoid failure when republishing messages or bridging messages to other MQTT brokers, and fixing the issue for EMQX 5.0 that [replicant nodes](https://github.com/emqx/eip/blob/main/implemented/0004-async-mnesia-change-log-replication.md#rlog-replica) may fail to start with too many connections in large-scale performance testing.
+We fix several known bugs, such as fixing the issue that the system keeps logging errors if the authentication failed while connecting to a MongoDB instance, checking topics to avoid failure when republishing messages or bridging messages to other [MQTT brokers](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison), and fixing the issue for EMQX 5.0 that [replicant nodes](https://github.com/emqx/eip/blob/main/implemented/0004-async-mnesia-change-log-replication.md#rlog-replica) may fail to start with too many connections in large-scale performance testing.
 
-We have also improved the implementation and security design of the MQTT protocol, including the support for challenge-response authentication of the gen_rpc library.
+We have also improved the implementation and security design of the [MQTT protocol](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt), including the support for challenge-response authentication of the gen_rpc library.
 
 ### Better experience in operation and maintenance
 

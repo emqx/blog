@@ -195,7 +195,7 @@ listener.ssl.external.fail_if_no_peer_cert = true
 
   此时 `Certificate` 一栏需要选择 `Self signed` ，并携带自签名证书中生成的 `ca.pem` 文件， 客户端证书  `client.pem` 和客户端密钥  `client.key` 文件。
 
-- 点击  `Connect`  按钮，连接成功后，如果能正常执行 MQTT 发布/订阅 操作，则 SSL 双向连接认证配置成功。
+- 点击  `Connect`  按钮，连接成功后，如果能正常执行 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 发布/订阅 操作，则 SSL 双向连接认证配置成功。
 
   ![mqttxconnected.png](https://assets.emqx.com/images/568e9a84445d24cb414a21324a588e0c.png)
 

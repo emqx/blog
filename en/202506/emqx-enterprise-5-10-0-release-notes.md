@@ -1,4 +1,4 @@
-If you've been waiting to build smarter, more flexible data pipelines with MQTT, EMQX Enterprise 5.10.0 delivers.
+If you've been waiting to build smarter, more flexible data pipelines with [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt), [EMQX Enterprise](https://www.emqx.com/en/products/emqx) 5.10.0 delivers.
 
 This latest release introduces support for LLM-based message processing, natural language SQL rule generation, and a new NATS protocol gateway. It also adds expanded sink options for Apache Doris and Amazon S3 Tables.
 
@@ -51,7 +51,7 @@ A technician enters: “Trigger an alert if a message from any device under topi
 
 **Related Topics:** Specify a topic example such as `factory/machine-42/status`.
 
-**Input Example (MQTT Payload):** Provide a sample MQTT message payload to help the AI understand your data structure.
+**Input Example ([MQTT Payload](https://www.emqx.com/en/blog/how-to-process-json-hex-and-binary-data-in-mqtt)):** Provide a sample MQTT message payload to help the AI understand your data structure.
 
 ```json
 {   

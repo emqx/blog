@@ -1,6 +1,6 @@
-EMQX 5.0 updated steadily this month, with the latest version reaching 5.0.8. While fixing already-known bugs, we also focused on enhancing performance and improving functional experience. The latest maintenance versions of EMQX Enterprise 4.3 & 4.4 have been released to fix many already-known problems and further improve stability.
+EMQX 5.0 updated steadily this month, with the latest version reaching 5.0.8. While fixing already-known bugs, we also focused on enhancing performance and improving functional experience. The latest maintenance versions of [EMQX Enterprise](https://www.emqx.com/en/products/emqx) 4.3 & 4.4 have been released to fix many already-known problems and further improve stability.
 
-In terms of cloud services, EMQX Cloud has added a professional deployment version of 1,000 connections to facilitate more users to enjoy the advanced features of the professional version.
+In terms of cloud services, [EMQX Cloud](https://www.emqx.com/en/cloud) has added a professional deployment version of 1,000 connections to facilitate more users to enjoy the advanced features of the professional version.
 
 ## EMQX
 

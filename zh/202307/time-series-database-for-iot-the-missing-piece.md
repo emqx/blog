@@ -53,7 +53,7 @@
 
 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt)（Message Queuing Telemetry Transport）是一种轻量级的消息传输协议，用于在设备之间传输数据，在物联网场景中被广泛使用。它特别适用于网络带宽有限的环境，并在其他协议表现不佳的场景表现出色。
 
-MQTT 基于[发布-订阅模式](https://www.emqx.com/zh/blog/mqtt-5-introduction-to-publish-subscribe-model)。设备或“客户端”订阅主题。当一个消息发布到一个主题时，MQTT Broker 负责让所有订阅者收到消息。这种模式既高效又灵活，可以在各种设备和系统之间进行通信，而不需要他们直接连接。
+MQTT 基于[发布-订阅模式](https://www.emqx.com/zh/blog/mqtt-5-introduction-to-publish-subscribe-model)。设备或“客户端”订阅主题。当一个消息发布到一个主题时，[MQTT Broker](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison) 负责让所有订阅者收到消息。这种模式既高效又灵活，可以在各种设备和系统之间进行通信，而不需要他们直接连接。
 
 MQTT 专为物联网场景而设计，在时间序列数据中扮演着关键角色。其能够应对不稳地连接并确保消息传递的特性，使其非常适用于将时间序列数据从物联网设备发送到时序数据库。MQTT 的轻量级特性意味着它能够处理来自物联网设备产生的海量数据，使其成为数据管道中不可或缺的重要组成部分。
 

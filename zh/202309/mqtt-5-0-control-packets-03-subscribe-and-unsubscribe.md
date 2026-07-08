@@ -4,7 +4,7 @@
 
 ## 报文示例
 
-首先我们借助 [Wireshark](https://www.wireshark.org/) 来捕获一次真实的 MQTT 订阅请求与响应，这里我们使用 MQTTX CLI 向 公共 MQTT 服务器 发起订阅请求。以下命令将创建一个主题为 demo，且最大 QoS 设置为 2 的订阅：
+首先我们借助 [Wireshark](https://www.wireshark.org/) 来捕获一次真实的 MQTT 订阅请求与响应，这里我们使用 MQTTX CLI 向 公共 [MQTT 服务器](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison) 发起订阅请求。以下命令将创建一个主题为 demo，且最大 QoS 设置为 2 的订阅：
 
 ```
 mqttx sub --hostname broker.emqx.io --mqtt-version 5 --topic demo --qos 2

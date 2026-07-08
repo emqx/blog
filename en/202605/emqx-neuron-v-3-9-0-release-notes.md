@@ -51,9 +51,9 @@ For connection configuration and integration steps, see: [EMQX Neuron and Micros
 
 ## OPC UA Conditions & Alarms (Part 9): Subscribe to Alarm Events and Acknowledge Remotely
 
-EMQX Neuron 3.8.0 added support for OPC DA AE, a classic COM/DCOM-based alarm protocol. The latest version introduces a completely separate capability: **OPC UA Part 9 Conditions & Alarms**.
+EMQX Neuron 3.8.0 added support for [OPC DA](https://www.emqx.com/en/blog/opc-ua-vs-opc-da) AE, a classic COM/DCOM-based alarm protocol. The latest version introduces a completely separate capability: **OPC UA Part 9 Conditions & Alarms**.
 
-These are distinct protocol stacks. OPC UA Part 9 is the native alarm model within the modern OPC UA protocol suite. It delivers structured JSON alarm events via a subscription mechanism and supports **Method calls** to perform operations such as alarm acknowledgment directly on the OPC UA Server.
+These are distinct protocol stacks. OPC UA Part 9 is the native alarm model within the modern [OPC UA protocol](https://www.emqx.com/en/blog/opc-ua-protocol) suite. It delivers structured JSON alarm events via a subscription mechanism and supports **Method calls** to perform operations such as alarm acknowledgment directly on the OPC UA Server.
 
 **How It Works:**
 
@@ -64,7 +64,7 @@ These are distinct protocol stacks. OPC UA Part 9 is the native alarm model with
 
 **Use Cases:**
 
-- **Centralized Alarm Management**: Aggregate alarm events from multiple OPC UA devices and forward them via MQTT to a cloud alerting platform for cross-site visibility.
+- **Centralized Alarm Management**: Aggregate alarm events from multiple OPC UA devices and forward them via [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) to a cloud alerting platform for cross-site visibility.
 - **Automated Acknowledgment**: Combine with data processing rules to automatically invoke `Confirm` on specific alarm categories, reducing manual intervention.
 - **Compliance and Auditing**: Maintain complete records of `event_id`, trigger time, and acknowledgment status to satisfy GMP, ISO 55000, and other regulatory requirements.
 

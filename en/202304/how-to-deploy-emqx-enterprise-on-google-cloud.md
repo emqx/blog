@@ -1,6 +1,6 @@
-Google Cloud IoT Core will be retired on August 16, 2023. As this date approaches, many users are looking for new solutions for their existing IoT businesses, and EMQX Enterprise is an ideal choice to achieve this goal.
+Google Cloud [IoT Core](https://www.emqx.com/en/blog/understanding-aws-iot-core) will be retired on August 16, 2023. As this date approaches, many users are looking for new solutions for their existing IoT businesses, and EMQX Enterprise is an ideal choice to achieve this goal.
 
-[EMQX Enterprise](https://www.emqx.com/en/products/emqx) is a large-scale distributed MQTT messaging platform that can be deployed on the Google Cloud Platform (GCP) in multiple ways. You can easily and quickly migrate your devices on IoT Core to EMQX Enterprise and then continue to integrate with your data services in GCP, without affecting the existing business.
+[EMQX Enterprise](https://www.emqx.com/en/products/emqx) is a large-scale distributed [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) messaging platform that can be deployed on the Google Cloud Platform (GCP) in multiple ways. You can easily and quickly migrate your devices on IoT Core to EMQX Enterprise and then continue to integrate with your data services in GCP, without affecting the existing business.
 
 To migrate your business from IoT Core to EMQX Enterprise, you basically have three steps to go: 
 
@@ -141,9 +141,9 @@ Now you have completed the installation of EMQX Enterprise on GCP and opened all
 
 We will use [MQTTX](https://mqttx.app/) to simulate the access of IoT MQTT devices and quickly test whether the server is available.
 
-> [MQTTX](https://mqttx.app/) is a cross-platform MQTT 5.0 client tool open-sourced by EMQ. It supports macOS, Linux, and Windows, has rich features, and allows you to easily test MQTT/TCP, MQTT/TLS, and MQTT/WebSocket connections through MQTTX's one-click connection method and graphical interface.
+> [MQTTX](https://mqttx.app/) is a cross-platform [MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5) client tool open-sourced by EMQ. It supports macOS, Linux, and Windows, has rich features, and allows you to easily test MQTT/TCP, MQTT/TLS, and MQTT/WebSocket connections through MQTTX's one-click connection method and graphical interface.
 >
-> [MQTTX Web](https://mqttx.app/web) is the browser version of MQTTX, which eliminates the need for downloading and installation. You can quickly connect to the MQTT server via WebSocket by simply opening the browser.
+> [MQTTX Web](https://mqttx.app/web) is the browser version of MQTTX, which eliminates the need for downloading and installation. You can quickly connect to the [MQTT server](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) via WebSocket by simply opening the browser.
 
 1. Access the [MQTTX Web](https://mqttx.app/web-client/#/recent_connections) page and click **New Connection** or the **+** icon on the menu bar to create a connection.
 

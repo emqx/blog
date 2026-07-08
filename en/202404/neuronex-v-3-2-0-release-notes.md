@@ -12,7 +12,7 @@ Download the latest version: [https://www.emqx.com/en/try?product=neuronex](http
 
 ### Enhanced Driver Functionality
 
-- **Driver Functionality Continuously Enhanced**: Expanded support for data types of drivers such as OPC UA, Siemens S7, Inovance Modbus TCP, and Focas, continuously optimizing driver read/write performance.
+- **Driver Functionality Continuously Enhanced**: Expanded support for data types of drivers such as [OPC UA](https://www.emqx.com/en/blog/opc-ua-protocol), Siemens S7, Inovance Modbus TCP, and Focas, continuously optimizing driver read/write performance.
 - **Import/Export of Southbound Driver Nodes**: Added import/export functionality for southbound driver nodes, supporting simultaneous import/export of multiple southbound driver configurations and data points, simplifying configuration management processes.
 - **Southbound Driver Replication Functionality**: Enables the quick creation of driver nodes in the same type.
 - **Streamlined Southbound Driver Creation Process**: Optimized the creation process for southbound drivers to provide a smoother experience.

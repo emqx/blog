@@ -1,6 +1,6 @@
 ## **Introduction**
 
-In the rapidly evolving wave of the Industrial Internet of Things (IIoT), massive streams of device data converge like rivers. The challenge has always been how to harness this data and transform it into a powerful engine for intelligent decision-making. Previous versions of NeuronEX has solved the complex issue of real-time collection of massive, heterogeneous data and edge stream processing, building a robust pipeline for your data river.
+In the rapidly evolving wave of the [Industrial Internet of Things](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges) (IIoT), massive streams of device data converge like rivers. The challenge has always been how to harness this data and transform it into a powerful engine for intelligent decision-making. Previous versions of NeuronEX has solved the complex issue of real-time collection of massive, heterogeneous data and edge stream processing, building a robust pipeline for your data river.
 
 [NeuronEX](https://www.emqx.com/en/products/emqx-neuron) 3.6.0 introduced the brand-new "Data Insights" feature, providing users with the capabilities to unlock full potential of industrial data. Through its built-in time-series database, AI-powered data analysis capabilities, and highly customizable visualization dashboards, the new "Data Insights" feature transforms raw industrial data into deep insights that drive decisions, truly closing the loop from data to value.
 

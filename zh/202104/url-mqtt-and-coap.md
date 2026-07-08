@@ -3,13 +3,13 @@
 但有别于传统互联网，端到端的沟通，一直是物联网业务的难点。使用的物联网通讯协议不同，使得这些设备之间的沟通存在巨大的鸿沟。就好比人与人之间语言不同，无法正常的交流。
 
 ![image20210410180639347.png](https://assets.emqx.com/images/6e9b97f0ab7f852eda6f6c9e91d44c7c.png)
-EMQX Broker 作为物联网消息中间件，则肩负着促成这些设备提供沟通交流的使命。为此，我们开发了很多物联网协议插件，无论你偏爱煲电话粥式的热情（基于 TCP 长链接，比如 MQTT），还是一字一句书信的温情（基于 UDP 无连接，比如 CoAP），或是你有一套属于自己的「暗语」（私有协议），在 EMQX 的世界，我们都能帮你找到能读懂你的「soulmate」。
+EMQX Broker 作为物联网消息中间件，则肩负着促成这些设备提供沟通交流的使命。为此，我们开发了很多物联网协议插件，无论你偏爱煲电话粥式的热情（基于 TCP 长链接，比如 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt)），还是一字一句书信的温情（基于 UDP 无连接，比如 [CoAP](https://www.emqx.com/zh/blog/coap-protocol)），或是你有一套属于自己的「暗语」（私有协议），在 EMQX 的世界，我们都能帮你找到能读懂你的「soulmate」。
 
 > 关于 MQTT 协议：https://www.jianshu.com/p/ecde412d2eeb
 >
 > 关于 CoAP 协议：https://www.jianshu.com/p/7fec0916a0d3
 
-**本文将向你展示，MQTT 客户端和 CoAP 客户端，在 EMQX World 的一次「约会」。**
+**本文将向你展示，[MQTT 客户端](https://www.emqx.com/zh/blog/mqtt-client-tools)和 CoAP 客户端，在 EMQX World 的一次「约会」。**
 
 
 
@@ -136,7 +136,7 @@ hello coap , I am mqtt ,welcome to EMQ World
 
 
 
-在 EMQX World，不仅有 MQTT、CoAP、LWM2M、JT808 以及未来将支持的更多不同物联网协议插件，同时我们也为你提供了[插件的开发模板](https://github.com/emqx/emqx-plugin-template)。我们期待在这里，所有的物联网设备都能相会，碰撞出耀眼的火花，照亮物联网的世界。
+在 EMQX World，不仅有 MQTT、CoAP、[LWM2M](https://www.emqx.com/zh/blog/iot-protocols-mqtt-coap-lwm2m)、JT808 以及未来将支持的更多不同物联网协议插件，同时我们也为你提供了[插件的开发模板](https://github.com/emqx/emqx-plugin-template)。我们期待在这里，所有的物联网设备都能相会，碰撞出耀眼的火花，照亮物联网的世界。
 
 
 

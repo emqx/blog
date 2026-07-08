@@ -13,7 +13,7 @@ Therefore, it is a better choice to use time series database in IoT projects, wh
 
 ## Business Scenario
 
-Assume that there is a batch of devices, and each device has a Client ID. All devices send data to the corresponding topic on the MQTT message server through the [MQTT protocol](https://www.emqx.com/en/mqtt-guide). The topic is designed as follows:
+Assume that there is a batch of devices, and each device has a Client ID. All devices send data to the corresponding topic on the [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) message server through the [MQTT protocol](https://www.emqx.com/en/mqtt-guide). The topic is designed as follows:
 
 ```bash
 devices/{client_id}/messages
@@ -47,7 +47,7 @@ The overall architecture of the solution is shown in the following figure:
 
 ![image20191125163959537.png](https://assets.emqx.com/images/a6a6133516dd6f26f6b813f5500f96c8.png)
 
-- **EMQX**：[EMQX ](https://github.com/emqx/emqx)is developed based on the highly concurrent Erlang / OTP language platform, and supports millions of connections and distributed cluster architecture. It is an open source MQTT message server with publish-subscribe mode. EMQX has a lot of built-in out-of-the-box features.  Its enterprise version of EMQX Enterprise supports high-performance storage of device messages to InfluxDB through a rule engine or message persistence plug-in. Open source users need to handle the message storage themselves.
+- **EMQX**：[EMQX ](https://github.com/emqx/emqx)is developed based on the highly concurrent Erlang / OTP language platform, and supports millions of connections and distributed cluster architecture. It is an open source MQTT message server with publish-subscribe mode. EMQX has a lot of built-in out-of-the-box features.  Its enterprise version of [EMQX Enterprise](https://www.emqx.com/en/products/emqx) supports high-performance storage of device messages to InfluxDB through a rule engine or message persistence plug-in. Open source users need to handle the message storage themselves.
 - **InfluxDB :** InfluxDB is an open source time series database developed by InfluxData. Written by Go, it focuses on querying and storing time series data with high performance. InfluxDB is widely used in the scenarios of monitoring data in storage systems and real-time data in the IoT industry.
 - **Grafana:**  Grafana is a cross-platform, open source measurement analysis and visualization tool, which can query and visualize the collected data. It can create client charts quickly and flexibly. The panel plug-in has many different ways to visualize indicators and logs. The official library has a wealth of dashboard plug-ins, such as heat chart, line chart and other display ways. It supports Graphite, InfluxDB , OpenTSDB, Prometheus, Elasticsearch, CloudWatch and KairosDB and other data sources, supports independent / hybrid query display of data items. You can create custom alarm rules and notify them to other message processing services or components.
 

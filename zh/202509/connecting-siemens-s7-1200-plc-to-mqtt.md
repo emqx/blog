@@ -6,7 +6,7 @@
 
 传统解决方案通常涉及复杂的编程和协议转换，既耗时又费力。现在，借助强大的工业边缘网关软件 NeuronEX，您可以在 10分钟内轻松构建从西门子 S7-1200 PLC 到 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 的稳定数据桥梁，且无需任何代码。
 
-本文将逐步演示「从 PLC 设置到查看 MQTT 客户端中的数据」的完整配置过程。
+本文将逐步演示「从 PLC 设置到查看 [MQTT 客户端](https://www.emqx.com/zh/blog/mqtt-client-tools)中的数据」的完整配置过程。
 
 ## **架构**
 
@@ -121,7 +121,7 @@
 
 这展示了 NeuronEX 作为现代工业边缘网关的强大能力：既可以深入 OT 层，精细处理设备协议和数据标签，又能与 IT 世界无缝集成，轻松将数据送达到云端。
 
-立即下载 NeuronEX，开启您的工业物联网智能之旅：[下载 NeuronEX](https://www.emqx.com/zh/downloads-and-install/neuronex)
+立即下载 NeuronEX，开启您的[工业物联网](https://www.emqx.com/zh/blog/iiot-explained-examples-technologies-benefits-and-challenges)智能之旅：[下载 NeuronEX](https://www.emqx.com/zh/downloads-and-install/neuronex)
 
 
 

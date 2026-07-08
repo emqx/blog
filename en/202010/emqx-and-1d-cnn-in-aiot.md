@@ -58,7 +58,7 @@ We will use a 1D Convolutional Neural Network to implement the model training. 1
 
 ## The simulation of data input
 
-In this article, we will simulate reporting the cooler temperature sensor data in a production environment. Therefore, we will use Python code to read the temperature data in the dataset and report it to the EMQX Broker via the MQTT protocol.
+In this article, we will simulate reporting the cooler temperature sensor data in a production environment. Therefore, we will use Python code to read the temperature data in the dataset and report it to the EMQX Broker via the [MQTT protocol](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt).
 
 In the following code, we firstly use `pandas` to read the temperature data in the dataset ('TS1.txt', 'TS2.txt', 'TS3.txt', 'TS4.txt'), and will simply process the data, and then report the data to the EMQX Broker every second.
 

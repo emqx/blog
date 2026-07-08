@@ -1,14 +1,14 @@
-As digital transformation accelerates, enterprises are increasingly challenged by the need to manage massive device connectivity and real-time data processing. EMQX and TDengine—two leading platforms in IoT connectivity and big data processing—are joining forces to deliver an end-to-end solution for industrial IoT, connected vehicles, energy management, and operations monitoring.
+As digital transformation accelerates, enterprises are increasingly challenged by the need to manage massive device connectivity and real-time data processing. EMQX and TDengine—two leading platforms in IoT connectivity and big data processing—are joining forces to deliver an end-to-end solution for [industrial IoT](https://www.emqx.com/en/blog/industrial-iot-systems), connected vehicles, energy management, and operations monitoring.
 
 ## Introduction to EMQX and TDengine
 
 ### EMQX: Enterprise-Grade Unified MQTT + AI Platform
 
-EMQX is a cloud-native, distributed MQTT broker designed for high availability and scalability. It supports multiple messaging protocols and handles up to 5 million concurrent MQTT connections per node. EMQX provides end-to-end encryption, fine-grained access control, and real-time data transmission, making it an ideal messaging backbone for both IoT and AI applications while ensuring full compliance with enterprise data regulations.
+EMQX is a cloud-native, distributed [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) designed for high availability and scalability. It supports multiple messaging protocols and handles up to 5 million concurrent [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) connections per node. EMQX provides end-to-end encryption, fine-grained access control, and real-time data transmission, making it an ideal messaging backbone for both IoT and AI applications while ensuring full compliance with enterprise data regulations.
 
 ### TDengine: High-Performance Time-Series Data Platform
 
-TDengine is an enterprise-level, cloud-native time-series database optimized for IoT and IIoT use cases. It offers a simplified architecture with high performance and scalability, capable of ingesting, storing, analyzing, and distributing terabytes to petabytes of time-series data generated daily by connected devices. TDengine also enables AI-powered data analysis, including anomaly detection and forecasting, to unlock real-time business insights.
+TDengine is an enterprise-level, cloud-native time-series database optimized for [IoT and IIoT](https://www.emqx.com/en/blog/iiot-vs-iot-examples-and-5-key-differences) use cases. It offers a simplified architecture with high performance and scalability, capable of ingesting, storing, analyzing, and distributing terabytes to petabytes of time-series data generated daily by connected devices. TDengine also enables AI-powered data analysis, including anomaly detection and forecasting, to unlock real-time business insights.
 
 ## Cloud-Native Integration: EMQX + TDengine
 

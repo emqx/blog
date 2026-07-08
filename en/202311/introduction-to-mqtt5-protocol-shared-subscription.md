@@ -110,7 +110,7 @@ It is common to use shared subscriptions together with persistent sessions. Howe
 
 Considering that the client may be offline for a long time due to failures or other reasons, if the session expiry interval is too long, many messages will be unable to be processed because they are delivered to the offline client.
 
-A better choice might be to stop considering the subscriber when allocating message load once the subscriber goes offline, even if the session has not expired. Although this behavior is different from normal subscriptions, it is allowed by the MQTT protocol.
+A better choice might be to stop considering the subscriber when allocating message load once the subscriber goes offline, even if the session has not expired. Although this behavior is different from normal subscriptions, it is allowed by the [MQTT protocol](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt).
 
 ## Demo
 

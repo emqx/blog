@@ -1,4 +1,4 @@
-[Neuron](https://github.com/emqx/neuron) 是一款开源的轻量级工业协议网关软件，支持数十种工业协议的一站式设备连接、数据接入、MQTT 协议转换，为工业设备赋予工业 4.0 时代关键的物联网连接能力。
+[Neuron](https://github.com/emqx/neuron) 是一款开源的轻量级工业协议网关软件，支持数十种工业协议的一站式设备连接、数据接入、[MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 协议转换，为工业设备赋予工业 4.0 时代关键的物联网连接能力。
 
 开源社区用户有时会有使用 Neuron 源码在当前编译平台下编译能够运行在体系结构不同的另一种目标平台上，即进行交叉编译的需求。在这一过程中可能会遇到由于没有安装好依赖库等原因导致的编译错误。
 

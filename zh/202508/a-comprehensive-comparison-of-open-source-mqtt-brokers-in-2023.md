@@ -43,11 +43,11 @@
 
 [EMQX](https://github.com/emqx/emqx) 是业界领先的 MQTT Broker，深受开发者喜爱，目前在 GitHub 上已获得超过 15k 个 Star。EMQX 项目始于 2012 年，遵循 Apache 2.0 开源协议（EMQX 5.8 及更早版本）。它基于 Erlang/OTP 开发，这是一种能够构建大规模可扩展软实时系统的编程语言。
 
-EMQX 是全球最具扩展性的 MQTT Broker，支持 MQTT 5.0、MQTT-SN 和 MQTT over QUIC 等协议和其他先进功能。**EMQX 具备业界领先的可扩展能力，单个 23 节点集群即可稳定支撑 1 亿级并发连接。其无主架构设计不仅保证了高可用性，更为大规模物联网应用提供了坚实可靠的基础。**
+EMQX 是全球最具扩展性的 MQTT Broker，支持 MQTT 5.0、MQTT-SN 和 MQTT over [QUIC](https://www.emqx.com/zh/blog/quic-protocol-the-features-use-cases-and-impact-for-iot-iov) 等协议和其他先进功能。**EMQX 具备业界领先的可扩展能力，单个 23 节点集群即可稳定支撑 1 亿级并发连接。其无主架构设计不仅保证了高可用性，更为大规模物联网应用提供了坚实可靠的基础。**
 
 ![MQTT Cluster](https://assets.emqx.com/images/9abfe5ee5df4f1c544915f5e4605b253.png)
 
-EMQX 是 MQTT Broker 的领导者，提供了丰富的企业级功能、数据集成、云托管服务，以及来自[ ](https://www.emqx.com/en)EMQ 团队的专业支持。多年来，EMQX 凭借其卓越的性能、可靠性和可扩展性，赢得了众多大型企业、创业公司和个人开发者的青睐。EMQX 被广泛应用于各个行业的重要业务领域，如物联网、工业物联网、网联汽车、制造业和电信行业等。
+EMQX 是 MQTT Broker 的领导者，提供了丰富的企业级功能、数据集成、云托管服务，以及来自[ ](https://www.emqx.com/en)EMQ 团队的专业支持。多年来，EMQX 凭借其卓越的性能、可靠性和可扩展性，赢得了众多大型企业、创业公司和个人开发者的青睐。EMQX 被广泛应用于各个行业的重要业务领域，如物联网、[工业物联网](https://www.emqx.com/zh/blog/iiot-explained-examples-technologies-benefits-and-challenges)、网联汽车、制造业和电信行业等。
 
 GitHub：[https://github.com/emqx/emqx](https://github.com/emqx/emqx)
 
@@ -202,7 +202,7 @@ GitHub：[https://github.com/vernemq/vernemq](https://github.com/vernemq/vernemq
 
 ## MQTT 协议与连接性
 
-本文中讨论的这几个 MQTT Broker 都完全支持 MQTT 3.1.1 和 5.0 版本，以及 MQTT over WebSocket 和 SSL/TLS 加密的。此外，EMQX 还支持 MQTT-SN、CoAP 和 LwM2M 协议网关。NanoMQ 支持无代理模式，可与 DDS、ZeroMQ 和 Nanomsg 协同工作。
+本文中讨论的这几个 MQTT Broker 都完全支持 MQTT 3.1.1 和 5.0 版本，以及 MQTT over WebSocket 和 SSL/TLS 加密的。此外，EMQX 还支持 MQTT-SN、[CoAP](https://www.emqx.com/zh/blog/coap-protocol) 和 [LwM2M](https://www.emqx.com/zh/blog/iot-protocols-mqtt-coap-lwm2m) 协议网关。NanoMQ 支持无代理模式，可与 DDS、ZeroMQ 和 Nanomsg 协同工作。
 
 EMQX 和 NanoMQ 致力于推进 MQTT 标准。它们创新性地实现了下一代 MQTT 协议标准——MQTT over QUIC，进一步优化了物联网通信。
 

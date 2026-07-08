@@ -1,4 +1,4 @@
-EMQX Kubernetes Operator 是 EMQ 发布的一个封装、部署和管理工具，也是一个特定的应用控制器，方便 DevOps 人员在 Kubernetes 上编排 EMQX MQTT 消息服务集群，管理其生命周期。
+EMQX Kubernetes Operator 是 EMQ 发布的一个封装、部署和管理工具，也是一个特定的应用控制器，方便 DevOps 人员在 Kubernetes 上编排 EMQX [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 消息服务集群，管理其生命周期。
 
 华为云原生基础设施（云容器引擎 CCE、容器镜像服务 SWR、容器洞察引擎 CIE、智能边缘平台 IEF 等）通过云原生服务中心 (Operator Service Center，OSC) 对外开放云原生能力，包括弹性伸缩、多云部署、云边协同、应用级自动化运维等，全面支持企业架构云原生化。
 
@@ -52,11 +52,11 @@ EMQX 企业版是一款「随处运行，无限连接，任意集成」企业级
 
 - 多协议支持
 
-  通过 MQTT、CoAP、LwM2M、WebSocket 或专有协议连接任何设备。
+  通过 MQTT、[CoAP](https://www.emqx.com/zh/blog/coap-protocol)、[LwM2M](https://www.emqx.com/zh/blog/iot-protocols-mqtt-coap-lwm2m)、WebSocket 或专有协议连接任何设备。
 
 - 一站式接入
 
-  将大规模分布式的 MQTT Broker 与强大的内置 IoT 规则引擎相结合。
+  将大规模分布式的 [MQTT Broker](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison) 与强大的内置 IoT 规则引擎相结合。
 
 - 关键业务可靠性
 

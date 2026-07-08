@@ -49,7 +49,7 @@ In the above **Request / Response** process, the [MQTT broker](https://www.emqx.
 
 For security reasons, the MQTT server usually restricts the topics that clients can publish and subscribe to. The requester can specify a random Response Topic, but cannot guarantee that it has permission to subscribe to that topic, nor can it guarantee that the responder has permission to publish messages to that Response Topic.
 
-Therefore, MQTT 5.0 also introduced the Response Information property. By setting the Request Response Information identifier to 1 in the CONNECT packet, the client can request the server to return Response Information in the CONNACK packet. The client can use the content of the Response Information as a specific part of the Response Topic, to pass the server's permission check.
+Therefore, MQTT 5.0 also introduced the Response Information property. By setting the Request Response Information identifier to 1 in the CONNECT packet, the client can request the server to return Response Information in the [CONNACK](https://www.emqx.com/en/blog/mqtt5-new-features-reason-code-and-ack) packet. The client can use the content of the Response Information as a specific part of the Response Topic, to pass the server's permission check.
 
 ![response information](https://assets.emqx.com/images/f6962b2403339ec5dbade5b6ca2ffc33.png)
 

@@ -14,9 +14,9 @@ Our drivers support the BIT//FLOAT data types, and serve as BACnet/IP Client for
 
 ## Sparkplug
 
-[MQTT Sparkplug](https://www.emqx.com/en/blog/mqtt-sparkplug-bridging-it-and-ot-in-industry-4-0) is an interoperability protocol for smart manufacturing and industrial automation. It provides a consistent way for equipment manufacturers and software providers to share data structures as to accelerate the digital transformation of the existing industries.
+[MQTT Sparkplug](https://www.emqx.com/en/blog/mqtt-sparkplug-bridging-it-and-ot-in-industry-4-0) is an interoperability protocol for [smart manufacturing](https://www.emqx.com/en/blog/the-smart-manufacturing-revolution) and industrial automation. It provides a consistent way for equipment manufacturers and software providers to share data structures as to accelerate the digital transformation of the existing industries.
 
-The northing configuration is similar to the MQTT plug-in, and the MQTT Topic composition matches the Group of Neuron. It supports reporting subscription data according to the Group of Neuron, and writing the acquisition device of Neuron at the Application end of Sparkplug. The data supports all defined types of Neuron southing devices.
+The northing configuration is similar to the [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) plug-in, and the [MQTT Topic](https://www.emqx.com/en/blog/advanced-features-of-mqtt-topics) composition matches the Group of Neuron. It supports reporting subscription data according to the Group of Neuron, and writing the acquisition device of Neuron at the Application end of Sparkplug. The data supports all defined types of Neuron southing devices.
 
 ## Customized Modbus TCP Driver
 

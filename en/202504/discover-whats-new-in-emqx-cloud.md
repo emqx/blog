@@ -1,8 +1,8 @@
-We are thrilled to announce the new release of **EMQX Cloud**! This version introduces powerful new capabilities and significant enhancements designed to improve cross-region connectivity, scalability, offer greater billing flexibility, and streamline your development workflow.
+We are thrilled to announce the new release of **[EMQX Cloud](https://www.emqx.com/en/cloud)**! This version introduces powerful new capabilities and significant enhancements designed to improve cross-region connectivity, scalability, offer greater billing flexibility, and streamline your development workflow.
 
 ## Cluster Linking for Dedicated Plan
 
-Unlock advanced multi-cluster communication and scaling capabilities with the introduction of **Cluster Linking**, now available for **Dedicated** deployments. This powerful feature enables you to bridge EMQX clusters, even across different geographical regions, facilitating robust distributed MQTT architectures and enhancing overall system resilience and scalability.
+Unlock advanced multi-cluster communication and scaling capabilities with the introduction of **Cluster Linking**, now available for **Dedicated** deployments. This powerful feature enables you to bridge EMQX clusters, even across different geographical regions, facilitating robust distributed [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) architectures and enhancing overall system resilience and scalability.
 
 ![banner.9vLL2K49 1.png](https://assets.emqx.com/images/f77ca359db8d79ee91c360d9ba919b92.png)
 

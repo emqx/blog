@@ -1,10 +1,10 @@
 ## 什么是 Maximum Packet Size
 
-[MQTT 报文](https://www.emqx.com/zh/blog/introduction-to-mqtt-control-packets)的理论最大长度为 268435456 字节，也就是 256 MB。但显然，不仅仅是资源受限的客户端，一些作为边缘网关运行的 MQTT 服务端，可能也无法处理这一长度的报文。
+[MQTT 报文](https://www.emqx.com/zh/blog/introduction-to-mqtt-control-packets)的理论最大长度为 268435456 字节，也就是 256 MB。但显然，不仅仅是资源受限的客户端，一些作为边缘网关运行的 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 服务端，可能也无法处理这一长度的报文。
 
 考虑到不同客户端对报文的处理能力可能有着较大差异，发送过大的报文不仅可能影响对端的正常业务处理，甚至可能直接压垮对端。所以，我们需要使用 Maximum Packet Size 属性来协商客户端和服务端各自能够处理的最大报文长度。
 
-客户端首先在 CONNECT 报文中通过 Maximum Packet Size 来指定允许服务端给自己发送的报文的最大长度，而服务端则会在 CONNACK 报文中同样通过 Maximum Packet Size 来指定允许客户端给自己发送的报文的最大长度。
+客户端首先在 CONNECT 报文中通过 Maximum Packet Size 来指定允许服务端给自己发送的报文的最大长度，而服务端则会在 [CONNACK](https://www.emqx.com/zh/blog/mqtt5-new-features-reason-code-and-ack) 报文中同样通过 Maximum Packet Size 来指定允许客户端给自己发送的报文的最大长度。
 
 ![MQTT CONNECT packet](https://assets.emqx.com/images/1f64b4c59e8da8d446d823d6b8f20535.png)
 
@@ -32,7 +32,7 @@
 
    ![Create an MQTT connection](https://assets.emqx.com/images/784f1078a559f75b0c9ed10f30a5a218.png)
 
-3. 连接成功后我们可以通过 Wireshark 抓包工具看到，服务端返回的 CONNACK 报文中 Maximum Packet Size 属性的值为 1048576，也就是说客户端每次只能向公共 MQTT 服务器发送最多 1 MB 的报文：
+3. 连接成功后我们可以通过 Wireshark 抓包工具看到，服务端返回的 CONNACK 报文中 Maximum Packet Size 属性的值为 1048576，也就是说客户端每次只能向公共 [MQTT 服务器](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison)发送最多 1 MB 的报文：
 
    ![Wireshark packet capture tool](https://assets.emqx.com/images/0d6c9d52f8dbb2c052119386f0bb10b3.png)
 

@@ -1,4 +1,4 @@
-EMQX 6.1.0 的发布，标志着基于 MQTT 的系统在历史数据处理、规模扩展及多租户架构等方面实现了里程碑式的突破。
+EMQX 6.1.0 的发布，标志着基于 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 的系统在历史数据处理、规模扩展及多租户架构等方面实现了里程碑式的突破。
 
 该版本通过引入 MQTT 消息流，将持久化与可回放的消息流特性原生植入 MQTT 生态；同时，通过优化命名空间配置、强化隔离机制以及提供命名空间级别的可观测性，全面升级了多租户管理体验；此外，该版本还进一步扩展了数据集成生态，能够更从容地支撑现代时序分析与流式数据处理任务。
 
@@ -95,7 +95,7 @@ EMQX 6.1.0 在数据集成方面持续扩展，对现代时序数据库和安全
 ### **新增集成：**
 
 - [**AWS Timestream for InfluxDB**](https://docs.emqx.com/zh/emqx/latest/data-integration/timestream-for-influxdb.html)**：**支持 EMQX 使用 InfluxDB Line Protocol 直接将 MQTT 数据写入 AWS 托管的、兼容 InfluxDB 的时序存储中，实现无需自建数据库的高性能时序数据存储与分析。
-- [**EMQX Tables**](https://docs.emqx.com/en/emqx/latest/data-integration/emqx-tables.html)**：**支持将 EMQX Enterprise 中的数据写入 EMQX Cloud 中的 EMQX Tables，实现集中式的时序数据存储与查询分析。
+- [**EMQX Tables**](https://docs.emqx.com/en/emqx/latest/data-integration/emqx-tables.html)**：**支持将 [EMQX Enterprise](https://www.emqx.com/zh/products/emqx) 中的数据写入 [EMQX Cloud](https://www.emqx.com/zh/cloud) 中的 EMQX Tables，实现集中式的时序数据存储与查询分析。
 
 ### **集成增强：**
 

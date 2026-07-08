@@ -88,7 +88,7 @@ Operating and managing edge-oriented middleware products can pose certain challe
 In the new release, we have introduced significant enhancements to the Sink Cache Retransmission Policy, allowing users to manage retransmission data more effectively. These improvements include:
 
 - Configuring retransmission data and real-time data with separate channels that can be sent simultaneously.
-- Defining retransmission data with separate destinations, such as different MQTT topics from real-time data, enabling downstream applications to subscribe to distinct topics for handling real-time and retransmission data separately.
+- Defining retransmission data with separate destinations, such as different [MQTT topics](https://www.emqx.com/en/blog/advanced-features-of-mqtt-topics) from real-time data, enabling downstream applications to subscribe to distinct topics for handling real-time and retransmission data separately.
 - Flexible prioritization settings for retransmission and real-time data.
 - The ability to label retransmission data with fields, making it easier for downstream applications to distinguish them.
 
