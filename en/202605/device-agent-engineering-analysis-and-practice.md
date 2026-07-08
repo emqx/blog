@@ -1,4 +1,4 @@
-### Introduction
+## Introduction
 
 In the IoT industry, hardware sets the boundaries of what a product can do, while software determines how much of that potential is actually realized. Yet whether we're talking about consumer smart hardware or enterprise systems like lighting, HVAC, and access control in office spaces, the software development phase almost always becomes the biggest variable in project delivery, even after the hardware team has completed its prototype or finalized component selection.
 
@@ -6,13 +6,13 @@ From chip adaptation to the end user's app, from single-device control to multi-
 
 This article attempts to break down the full chain of IoT device intelligence from an engineering management perspective, analyze the root causes of efficiency bottlenecks, and explore a potential path forward.
 
-### I. The Typical Development Pipeline
+## I. The Typical Development Pipeline
 
 From project initiation to mass production, the software development of a smart hardware product typically involves the following stages:
 
 **Chip/Module Selection → Hardware Driver Development → Cloud Service Setup → Agent/AI Capability Development → App/Mini-Program Development**
 
-#### 1.1 Work Involved at Each Stage
+### 1.1 Work Involved at Each Stage
 
 Using a moderately complex IoT device (e.g., a smart lamp with voice interaction) as an example:
 
@@ -26,7 +26,7 @@ Using a moderately complex IoT device (e.g., a smart lamp with voice interaction
 
 In summary, the software development cycle for a consumer-grade single product can easily take several months, involving 3–5 teams with different technical backgrounds. Large enterprise deployments can take months to years, involving device manufacturers, system integrators, and enterprise IT departments collaborating across organizational boundaries, and that's before accounting for time spent on cross-team interface alignment, integration testing, and iterative optimization.
 
-#### 1.2 The Hidden Costs of Multi-Stack Collaboration
+### 1.2 The Hidden Costs of Multi-Stack Collaboration
 
 The stages above are not a simple sequential pipeline; they form a tightly coupled, mesh-like dependency structure:
 
@@ -37,9 +37,9 @@ The stages above are not a simple sequential pipeline; they form a tightly coupl
 
 In practice, cross-team interface alignment consumes an enormous amount of time. A typical scenario: the embedded engineer defines a set of [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) message formats; the backend engineer discovers missing fields during implementation; the app engineer finds that the interaction flow doesn't match expectations during integration testing. This "build and fix as you go" pattern is pervasive in the industry.
 
-### II. Three Root Causes of Efficiency Bottlenecks
+## II. Three Root Causes of Efficiency Bottlenecks
 
-#### 2.1 Technology Stack Fragmentation
+### 2.1 Technology Stack Fragmentation
 
 IoT intelligence spans an extraordinarily wide range of technology stacks:
 
@@ -50,7 +50,7 @@ IoT intelligence spans an extraordinarily wide range of technology stacks:
 
 Very few engineers or single teams can be proficient across all of these domains simultaneously. Consumer-grade projects rely on collaboration between embedded, backend, AI, and frontend teams. Enterprise-grade projects further involve device manufacturers, system integrators, and enterprise IT departments. The knowledge silos and communication overhead between teams frequently lead to distorted information transfer and delayed decision-making.
 
-#### 2.2 The High Bar for AI Capability Integration
+### 2.2 The High Bar for AI Capability Integration
 
 Voice interaction, natural language understanding, and multimodal perception are increasingly expected in higher-end or AI-oriented smart devices. But integrating these capabilities is far from a simple API call:
 
@@ -66,7 +66,7 @@ For enterprise users, AI capability integration faces additional hurdles:
 - **Integration with existing systems:** AI outputs need to be consumed by internal ERP, ticketing, and BI platforms, not just end-user interaction interfaces
 - **Permissions and auditing:** enterprise scenarios require AI decisions to be traceable and auditable, requiring additional logging, access control, and multi-tenant isolation
 
-#### 2.3 Limited Scenario Scalability
+### 2.3 Limited Scenario Scalability
 
 The current smart device market faces a two-tier "silo" problem.
 
@@ -78,11 +78,11 @@ The current smart device market faces a two-tier "silo" problem.
 
 **The system silo in enterprise scenarios:** In office spaces or commercial buildings, lighting, HVAC, access control, and security systems typically come from different vendors and run on separate control platforms. For an enterprise to implement cross-system linkages like "lights on when people arrive, AC conserves energy when people leave," it requires substantial engineering effort: connecting to each vendor's proprietary API one by one, writing hardcoded automation rules, and maintaining fragile middleware pipelines. If any vendor upgrades their interface or changes a device model, the entire linkage chain can break. This integration model carries extremely high maintenance costs and scales poorly as business needs evolve.
 
-### III. Engineering Perspectives on Solutions
+## III. Engineering Perspectives on Solutions
 
 Facing these bottlenecks, engineering optimizations can be approached at three levels.
 
-#### 3.1 AI-Native Agent Generation
+### 3.1 AI-Native Agent Generation
 
 The idea of platformizing general capabilities is not entirely new. Over the past decade, various IoT platforms have done substantial standardization work at the connectivity layer, unifying device onboarding protocols, providing cloud-side message channels, and encapsulating device management APIs. These platforms solved the problem of "getting devices online," but the part about "giving devices intelligent interaction capabilities" has remained the manufacturer's responsibility to build independently.
 
@@ -101,7 +101,7 @@ The maturity of AI technology now makes platformization possible at a deeper lev
 
 The core distinction of this platformized approach: **traditional platforms focused on platformizing infrastructure, while AI-native platforms platformize intelligence itself.** When manufacturers onboard the platform, they receive not just a data channel, but a fully operational device agent capability set.
 
-#### 3.2 A Unified Device Model to Define Agent Capability Boundaries
+### 3.2 A Unified Device Model to Define Agent Capability Boundaries
 
 In traditional development, the device side, cloud side, and client side each maintain their own data structures, kept in sync through documentation or informal agreements. The fragility of this approach is that any change on one side can break the contract. A more robust approach is to introduce a unified device model as the "single source of truth."
 
@@ -113,7 +113,7 @@ In the context of agent generation, the device model is no longer merely a data 
 
 Based on a unified device specification, the SDK code framework for the device side can be automatically generated (data structures and message handling logic), and manufacturers only need to integrate the generated SDK into the target hardware platform and make minor adaptations for the specific MCU. This **definition-driven development** model bridges device capability description with code generation, eliminates the manual translation step, reduces human error, and makes the agent's capability boundaries clearly verifiable.
 
-#### 3.3 Introducing the A2A-over-MQTT Protocol as Cross-Device Collaboration Infrastructure
+### 3.3 Introducing the A2A-over-MQTT Protocol as Cross-Device Collaboration Infrastructure
 
 The core challenge of cross-device collaboration is: how do device agents from different manufacturers, running on different platforms, understand and cooperate with each other?
 
@@ -129,11 +129,11 @@ A typical consumer scenario is "leaving home mode": after a user issues a comman
 
 Enterprise scenarios work the same way. For example, "conference room energy-saving mode": the room booking system sends an idle notification to the conference room agent; the lighting agent automatically dims the lights; the HVAC agent switches to an energy-saving temperature; the blinds agent closes the shades to maintain room temperature. Each agent executes autonomously via the A2A protocol, with no cross-system automation rules to write and no per-room configuration needed.
 
-### IV. Device Agent in Engineering Practice
+## IV. Device Agent in Engineering Practice
 
 Device Agent is not a conceptual methodology; it is a complete engineering solution built on the thinking described above. It integrates the AI-native platformization, unified device model, and A2A protocol from Section III into a deployable toolchain, backed by EMQ's long-term foundation in IoT infrastructure to provide a reliable runtime substrate for device agents.
 
-#### 4.1 Implementing the Core Architecture
+### 4.1 Implementing the Core Architecture
 
 Device Agent's engineering implementation maps directly to the two core layers described earlier:
 
@@ -142,7 +142,7 @@ Device Agent's engineering implementation maps directly to the two core layers d
 
 Infrastructure capabilities, including device onboarding, connection management, and data persistence, are handled automatically by the platform as an underlying layer, so manufacturers don't need to concern themselves with these.
 
-#### 4.2 The Infrastructure Foundation
+### 4.2 The Infrastructure Foundation
 
 Device Agent's core advantage lies not only in the completeness of its upper-layer features, but also in the reliability of its underlying infrastructure:
 
@@ -162,7 +162,7 @@ Communication between the device side and the cloud uses the MQTT standard proto
 
 Data security is a core concern for both smart hardware manufacturers and enterprise users. Device Agent supports private deployment, allowing device data to be stored entirely within the manufacturer's own or enterprise-designated infrastructure, meeting requirements for data residency and compliance auditing. For enterprise users, this means device agent inference and collaboration can happen entirely within the local network, with no sensitive business data needing to be uploaded to the public cloud. Private deployment is especially critical for scenarios targeting enterprise clients, government projects, or any use case involving sensitive data.
 
-#### 4.3 The Real Efficiency Gains
+### 4.3 The Real Efficiency Gains
 
 Taken together, Device Agent's efficiency improvements operate at two levels:
 
@@ -172,7 +172,7 @@ Taken together, Device Agent's efficiency improvements operate at two levels:
 
 **Shorter feedback cycles:** The online simulator turns software and hardware development from sequential into parallel. Product managers can validate interaction experiences before the hardware prototype is ready. This compresses iteration cycles from weeks to days, or even hours.
 
-### V. Conclusion
+## V. Conclusion
 
 The efficiency bottleneck in IoT device intelligence is, at its core, the compound result of three factors: technology stack fragmentation, high barriers to AI capability integration, and limited scenario scalability. For both consumer hardware manufacturers and enterprise device integrators, the solution does not lie in hiring more engineers or learning more technologies; it lies in how to effectively leverage AI to rapidly fulfill common industry needs.
 

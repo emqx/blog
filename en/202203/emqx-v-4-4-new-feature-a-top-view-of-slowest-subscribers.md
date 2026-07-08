@@ -14,7 +14,7 @@ The per clientid-topic latency measurements are ranked in the table view as belo
 
 A new module named `emqx_mod_slow_subs`  was added in this release. With this module enabled, EMQX will start measuring message transmission latency. The measurement always starts at when a message is received by EMQX, the end of the measurement is configurable. Find more details in EMQX doc [Slow subscribers statistics](https://docs.emqx.com/en/emqx/v4.4/modules/slow_subscribers_statistics.html) 
 
-# FAQ
+## FAQ
 
 ### How to enable it
 

@@ -1,10 +1,10 @@
 >This is a guest post from Prakhar Dev Gupta, a Backend Engineer at Slice.
 
-# Introduction
+## Introduction
 
 As our chatbot requirements grew, we transitioned from a managed chatbot solution to an in-house system. This blog highlights the challenges that led to each migration, the benefits gained, and lessons learned.
 
-# Initial Solution
+## Initial Solution
 
 We initially adopted a well-known managed service for building chatbot and automating customer support experiences across chat and voice for its ease of implementation, chatbot flow management, and live agent support. Key benefits included:
 
@@ -14,7 +14,7 @@ We initially adopted a well-known managed service for building chatbot and autom
 
 > ⚠️ While it provided a solid foundation, we encountered limitations as we scaled.
 
-# Why We Built an In-House MQTT-Based Chatbot Solution
+## Why We Built an In-House MQTT-Based Chatbot Solution
 
 As our chatbot evolved and grew more complex, we started running into major roadblocks with the managed solution we were using. Here’s what pushed us to take things into our own hands:
 
@@ -40,11 +40,11 @@ As our chatbot evolved and grew more complex, we started running into major road
 
 > 💡 So we made the call — instead of fighting these limitations, we decided to build our own system. Going in-house gave us full control and let us move faster. We chose [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) over EMQX as our messaging backbone because of its speed, flexibility, and real-time performance, which is exactly what our chat experience needed.
 
-# Why MQTT Was the Right Protocol Choice
+## Why MQTT Was the Right Protocol Choice
 
 > MQTT, a lightweight messaging protocol, was the perfect choice for real-time interactions as it guaranteed efficient message delivery even with low bandwidth consumption.
 
-## Here’s why MQTT made sense:
+### Here’s why MQTT made sense:
 
 - **Lightweight & Efficient**
 
@@ -68,7 +68,7 @@ As our chatbot evolved and grew more complex, we started running into major road
 
 > 💬 As our requirements continued to grow, we integrated **EMQX** into our system. EMQX further improved our system by providing better scalability, higher availability, and increased performance, especially in managing a growing number of concurrent connections.
 
-# Choosing MQTT Over Other Alternative Protocols: GRPC or API Polling
+## Choosing MQTT Over Other Alternative Protocols: GRPC or API Polling
 
 Our system required a protocol that could handle high concurrency, low latency, and efficient message delivery. While options like gRPC and polling were on the table, MQTT emerged as the most practical and scalable solution for our needs. Here’s why:
 
@@ -97,15 +97,15 @@ The above points are better summarized in the tabular form below in the protocol
 
 <center>Comparison of MQTT with other popular protocols</center>
 
-## 🎯 In Summary:
+### 🎯 In Summary:
 
 > MQTT’s lightweight, real-time pub/sub architecture is purpose-built for the continuous message flow of chatbots — unlike gRPC’s heavier request-response model or inefficient API polling. With minimal framing, brokered delivery, and built-in session and QoS handling, MQTT aligns naturally with the demands of real-time, large-scale chat systems
 
-# Picking the Right MQTT Broker: Why EMQX Won Us Over
+## Picking the Right MQTT Broker: Why EMQX Won Us Over
 
 When we set out to choose an [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) to power our chatbot infrastructure, we evaluated a bunch of options. In the end, **EMQX** checked all the right boxes for us. Here’s why:
 
-## Built for Performance and Scale
+### Built for Performance and Scale
 
 We needed something that could handle serious traffic — think millions of users — without breaking a sweat. EMQX delivered:
 
@@ -117,7 +117,7 @@ We needed something that could handle serious traffic — think millions of user
 - **Some other servers** we tried had *single-threaded* architecture and taps out at around 100K connections per node.
 - One managed cloud offering looked attractive, yet its usage-based *pricing* made cost forecasting at scale difficult and raised concerns about vendor lock-in. Also the support for QoS 2 was not available.
 
-## Powerful Features Right Out of the Box
+### Powerful Features Right Out of the Box
 
 Security and flexibility were non-negotiable for us — EMQX came with everything we needed built in:
 
@@ -129,7 +129,7 @@ Security and flexibility were non-negotiable for us — EMQX came with everythin
 
 - Another broker delivered a comparable feature set, but only behind an expensive enterprise-level licence.
 
-## Excellent Visibility & Monitoring
+### Excellent Visibility & Monitoring
 
 We really liked how much insight EMQX gives you into what’s going on under the hood:
 
@@ -141,14 +141,14 @@ We really liked how much insight EMQX gives you into what’s going on under the
 
 - One alternative offered only minimal native monitoring and required substantial manual configuration to gain adequate observability
 
-## A Rule Engine That Actually Helps
+### A Rule Engine That Actually Helps
 
 One of EMQX’s standout features is its[ ***visual rule engine\***](https://docs.emqx.com/en/emqx/latest/data-integration/rules.html), which lets you route messages to external systems without writing a bunch of custom code.
 
 - Easily connect to ***Kafka, HTTP endpoints, databases\***, and other systems.
 - It’s fast enough to ***process millions of messages in real time\*** with minimal overhead.
 
-## Self-Hosted and Vendor-Neutral
+### Self-Hosted and Vendor-Neutral
 
 We wanted full control over our infrastructure — no lock-in, no surprises.
 
@@ -156,7 +156,7 @@ We wanted full control over our infrastructure — no lock-in, no surprises.
 - It’s **open-source** with optional commercial support — a big win for flexibility.
 - Most importantly, **costs are predictable**. No per-connection or per-message pricing gotchas.
 
-## Fast-Moving Project with Strong Community
+### Fast-Moving Project with Strong Community
 
 We didn’t want to bet on a stagnant tool. EMQX is anything but:
 
@@ -170,15 +170,15 @@ In short: **EMQX gave us the performance, control, and flexibility** we needed �
 
 <center>Community & Support Metrics — EMQX vs. Alternative MQTT Brokers</center>
 
-## 🎯 Conclusion:
+### 🎯 Conclusion:
 
 > In the end, EMQX gave us exactly what we were looking for — the speed and scale to support real-time messaging, the flexibility to fit into our evolving architecture, and the control we needed to stay efficient and cost-effective. Its blend of powerful enterprise features and open-source adaptability made it the right fit for our chatbot infrastructure, both now and as we continue to grow.
 
-# HLD for MQTT over EMQX
+## HLD for MQTT over EMQX
 
 After choosing EMQX as our MQTT broker, we designed a high-level architecture that plays to its strengths — real-time messaging, reliability, and scalability. To handle large volumes of data and ensure smooth processing, we paired it with Kafka, allowing us to scale effortlessly while keeping message delivery consistent and responsive. We shall discuss the same below:
 
-## Authentication and Authorization:
+### Authentication and Authorization:
 
 To ensure secure access to our messaging system, *we rely on EMQX’s built-in support for external authentication*. Every client — whether a user or agent — is authenticated through an HTTP call to our internal auth service. Once verified, they’re authorized to publish or subscribe only to the specific topics returned by our custom API.
 
@@ -226,7 +226,7 @@ Body:
 }
 ```
 
-# Choice of MQTT Topics
+## Choice of MQTT Topics
 
 Once a user or agent is authenticated and authorized, the next crucial step is determining where they can send and receive messages. To maintain both security and scalability, we’ve implemented a ***structured topic naming\*** convention within our MQTT setup.
 
@@ -241,13 +241,13 @@ Once a user or agent is authenticated and authorized, the next crucial step is d
 
 This design gives us the best of both worlds: users and agents communicate through isolated channels, while our backend retains centralized control for monitoring, analytics, and scaling.
 
-# Events Flow HLD for Current Architecture
+## Events Flow HLD for Current Architecture
 
 ![image.png](https://assets.emqx.com/images/06bdebf01160807f0509a0de9e34abff.png)
 
 <center>Event Flow Diagram of EMQX</center>
 
-## Flow Explanation
+### Flow Explanation
 
 The following sequence diagram illustrates the complete message flow in our MQTT-based chatbot architecture:
 
@@ -287,38 +287,38 @@ Here’s a breakdown of how messages move through our system, from connection to
 - Once processed, responses are sent back through MQTT.
 - Depending on who the message is for, it’s routed to either `user/<uuid>` or `agent/<agent_empid>`
 
-# Kafka Integration with EMQX Rule Engine
+## Kafka Integration with EMQX Rule Engine
 
 - The EMQX Rule Engine listens to the `globalmessage` topic.
 - Messages are then forwarded to Kafka under `globalmessage-prod`.
 - Our backend Kafka consumers pick up the flow from there — handling everything from processing logic to analytics and delivery.
 
-# Why Kafka in the Middle Matters for Our Chatbot
+## Why Kafka in the Middle Matters for Our Chatbot
 
 After messages are routed to the `globalmessage` topic, they’re not processed directly. Instead, EMQX forwards them to a Kafka topic (`globalmessage-prod`) using its rule engine.
 
 This extra hop might seem redundant, but it’s essential. Kafka helps us decouple message ingestion from processing, making our system more scalable, fault-tolerant, and easier to manage across distributed backend services. We have listed the advantages of this extra hop:
 
-## 1. Guaranteed Message Ordering
+### 1. Guaranteed Message Ordering
 
 In a chat system, message sequence is crucial. Kafka maintains ordering within a partition, so if messages for a conversation are routed to the same partition, they’re processed in the correct order — unlike MQTT alone, which *doesn’t ensure sequencing* across backend consumers.
 
-## 2. Designed for Distributed Systems
+### 2. Designed for Distributed Systems
 
 Our backend is deployed as multiple pods. Kafka’s consumer group mechanism allows us to *evenly distribute messages across these pods*. Each pod handles a partition, ensuring scalable and parallel processing without duplication.
 
-## 3. Real-Time Layer Decoupling
+### 3. Real-Time Layer Decoupling
 
 EMQX handles fast, lightweight real-time delivery, while Kafka acts as a *durable buffer*:
 
 - If the backend is re-deploying or temporarily down, messages are still sent to Kafka.
 - The backend resumes from where it left off, with no data loss.
 
-## 4. Handling Back Pressure Gracefully
+### 4. Handling Back Pressure Gracefully
 
 MQTT is not designed to handle processing delays or retries. Kafka provides a buffer layer so the backend can consume messages at its own pace, without blocking MQTT publishers or degrading performance.
 
-## 5. Replayability and Auditing
+### 5. Replayability and Auditing
 
 Kafka retains messages for a configurable duration:
 
@@ -326,7 +326,7 @@ Kafka retains messages for a configurable duration:
 - Failed messages can be retried without data loss.
 - It also gives us a full audit trail of chat activity.
 
-## In Summary
+### In Summary
 
 > Putting Kafka between EMQX and the backend gives us the best of both worlds
 >

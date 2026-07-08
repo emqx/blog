@@ -34,7 +34,7 @@ SELECT tfLite(\"smart_reply_model\", data) as result FROM demoModel
 
 The function validates the data input at the level of eKuiper. The user can pre-process or post-process the input and output of the model using SQL statements.
 
-#### Image/Video Streaming Inference
+### Image/Video Streaming Inference
 
 In the new version, eKuiper now supports video streaming and can acquire image frames at regular intervals to process them. With this new feature, image frames can be used for AI inference using the tfLite function. Tensor Flow models are typically trained for specific image sizes, so performing inference on images often requires pre-processing, such as resizing. Fortunately, eKuiper provides pre-processing methods, such as resize and thumbnail, to address this issue. Once the AI inference is complete, the tfLite function returns an array of output tensors that can be further processed by rules or applications.
 

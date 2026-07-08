@@ -6,7 +6,7 @@ EMQX Broker 4.2-rc.1 正式发布，欢迎大家下载试用，下载地址：ht
 
 ![Artboard.png](https://assets.emqx.com/images/d2580244a5c143994f4f74a8b48723fb.png)
 
-### 更新说明
+## 更新说明
 
 - 【新增】支持使用第三方语言编写扩展插件接入其他非 MQTT 协议，目前已支持 Java 和 Python 两种编程语言。访问 https://github.com/emqx/emqx-exproto/blob/master/README.md 获取更多相关信息
 - 【新增】支持修订版本间的热更新
@@ -28,7 +28,7 @@ EMQX Broker 4.2-rc.1 正式发布，欢迎大家下载试用，下载地址：ht
 
 
 
-### 5.0 发布计划
+## 5.0 发布计划
 
 EMQX 开源研发团队已正式进入 5.0 的开发阶段，5.0 版本将作为 5G 大基建超大规模多协议超融合接入平台，拥有更加健壮的全新架构、更加强大的性能以及更加流畅的使用体验，它将为您带来：
 

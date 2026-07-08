@@ -18,15 +18,15 @@ Having a modular architecture designed for flexibility and scalability, the Twin
 
 ![TwinCAT Architecture](https://assets.emqx.com/images/dab48e1ca10e88daa809e2cca20450fd.png)
 
-#### Engineering
+### Engineering
 
 TwinCAT XAE (eXtended Automation Engineering) is the development environment for TwinCAT 3, based on Microsoft Visual Studio. It provides a comprehensive set of tools for creating, debugging, and deploying automation programs, including support for a wide range of programming languages.
 
-#### Runtime
+### Runtime
 
 TwinCAT XAR (eXtended Automation Runtime) is the core of the TwinCAT 3 system, responsible for executing PLC programs, coordinating motion control, and handling communication with other devices in the automation system. The Runtime can run on a variety of hardware platforms, from small embedded systems to large industrial PCs.
 
-#### Functions
+### Functions
 
 The TwinCAT Functions provide a wide range of extension options to the basic system. For example, [TwinCAT 3 HMI](https://www.beckhoff.com/en-us/products/automation/twincat/tfxxxx-twincat-3-functions/tf2xxx-tc3-hmi/) enables the development of platform-independent user interfaces based on web technologies (HTML5, JavaScript/TypeScript), [TwinCAT 3 Vision](https://www.beckhoff.com/en-us/products/automation/twincat/tfxxxx-twincat-3-functions/tf7xxx-tc3-vision/) offers scalable image processing, and [TwinCAT 3 Measurement](https://www.beckhoff.com/en-us/products/automation/twincat/tfxxxx-twincat-3-functions/tf3xxx-tc3-measurement/) provides additional measurement technology functions.
 

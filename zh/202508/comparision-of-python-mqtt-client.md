@@ -521,7 +521,7 @@ async def publish_message(topic: str, message: str):
 
 以下指南基于常见场景，为你提供选择建议。
 
-#### **对于初学者、简单脚本或老旧代码库：paho-mqtt**
+### **对于初学者、简单脚本或老旧代码库：paho-mqtt**
 
 如果满足以下任一情况，请选择 **paho-mqtt**：
 
@@ -531,7 +531,7 @@ async def publish_message(topic: str, message: str):
 
 **paho-mqtt** 凭借其同步架构、悠久的历史（2015 年创建）和庞大的社区（拥有 2.3k 星标），是无可争议的标准。其基于回调的 API 易于掌握基本任务，且稳定性经过实战考验。它无需外部依赖，是一个简单可靠的选择。
 
-#### **对于现代化、简洁、通用的异步应用：aiomqtt**
+### **对于现代化、简洁、通用的异步应用：aiomqtt**
 
 如果满足以下任一情况，请选择 **aiomqtt**：
 
@@ -541,7 +541,7 @@ async def publish_message(topic: str, message: str):
 
 **aiomqtt** 标志性的 `async with` / `async for` API 风格使其成为最“Pythonic”的异步客户端。这种方式避免了回调管理，代码线性且易于理解。其受欢迎程度（491 个星标）和活跃开发状态（400+ 次提交）显示了社区的高度信任。它基于 **paho-mqtt** 构建，将现代 API 与稳固的基础相结合。
 
-#### **对于高性能、复杂、可定制的异步应用：gmqtt**
+### **对于高性能、复杂、可定制的异步应用：gmqtt**
 
 如果满足以下任一情况，请选择 **gmqtt**：
 
@@ -551,7 +551,7 @@ async def publish_message(topic: str, message: str):
 
 **gmqtt** 的杀手级功能是其**插件系统**。这提供了其他客户端无法比拟的定制能力，使其成为构建复杂企业级物联网平台的理想选择。其坚实的社区地位（422 个星标和 20+ 个版本发布）使其成为要求严苛的项目的可靠选择。
 
-#### **对于需要内置代理或偏好面向对象方法的项目：amqtt**
+### **对于需要内置代理或偏好面向对象方法的项目：amqtt**
 
 如果满足以下任一情况，请选择 **amqtt**：
 
@@ -561,7 +561,7 @@ async def publish_message(topic: str, message: str):
 
 作为 HBMQTT 的继承者，**amqtt** 是一个真正的工具包。其直接客户端 API 适合在 **asyncio** 环境中执行直接的 MQTT 操作。其庞大的提交历史（1300+ 次）证明了其深厚的开发积淀。尽管星标数较低（162），但它服务于一个独特而强大的细分市场。
 
-#### **如果你使用 FastAPI 框架：fastapi-mqtt**
+### **如果你使用 FastAPI 框架：fastapi-mqtt**
 
 如果你的应用基于 **FastAPI** 构建，那么选择很简单：你应该使用 **fastapi-mqtt**。
 

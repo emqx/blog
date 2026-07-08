@@ -2,7 +2,7 @@
 
 本文主要介绍如何通过 Android 与 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 进行 TLS/SSL 单向认证和双向认证。
 
-### 准备
+## 准备
 
 本文使用 [Eclipse Paho Android Service](https://github.com/eclipse/paho.mqtt.android) 和 `BouncyCastle`，添加依赖
 
@@ -24,7 +24,7 @@ options.setSocketFactory(sslSocketFactory);
 
 重点在于如何获取 `SSLSocketFactory`，下面对单向认证和双向认证分别进行说明。
 
-### 单向认证
+## 单向认证
 
 单向认证是指客户端认证服务端，以下是核心代码
 
@@ -61,7 +61,7 @@ try {
 }
 ```
 
-### 双向认证
+## 双向认证
 
 双向认证是指服务端和客户端相互认证，以下是关键代码
 

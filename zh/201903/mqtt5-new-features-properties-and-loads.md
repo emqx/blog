@@ -4,7 +4,7 @@ MQTT 5.0 协议中携带有效载荷的报文有 CONNECT 报文，PUBLISH 报文
 
 PUBLISH 报文的有效载荷负责存储消息内容，与 MQTT 3.1.1 协议相同。
 
-### CONNECT 报文
+## CONNECT 报文
 
 **CONNECT 报文的可变头部新增的属性有:**
 
@@ -20,13 +20,13 @@ PUBLISH 报文的有效载荷负责存储消息内容，与 MQTT 3.1.1 协议相
 
 
 
-### CONNACK 报文
+## CONNACK 报文
 
 **[CONNACK](https://www.emqx.com/zh/blog/mqtt5-new-features-reason-code-and-ack) 报文没有 Payload，在可变头部中包含的属性有：**
 
 ![3.png](https://assets.emqx.com/images/a1af2211b756e665c1b891ec78acba13.png)
 
-### PUBLISH 报文
+## PUBLISH 报文
 
 **PUBLISH 报文可变头部的属性有：**
 
@@ -34,13 +34,13 @@ PUBLISH 报文的有效载荷负责存储消息内容，与 MQTT 3.1.1 协议相
 
 
 
-### PUBACK, PUBREC, PUBREL, PUBCOMP, SUBACK, UNSUBACK 报文
+## PUBACK, PUBREC, PUBREL, PUBCOMP, SUBACK, UNSUBACK 报文
 
 **PUBACK, PUBREC, PUBREL, PUBCOMP, SUBACK, UNSUBACK 都具备以下三个属性：**
 ![PUBACK, PUBREC, PUBREL, PUBCOMP, SUBACK, UNSUBACK 报文.png](https://assets.emqx.com/images/3b2c016167ebb30a40a055d446e32347.png)
 
 
-### SUBSCRIBE 报文
+## SUBSCRIBE 报文
 
 **SUBSCRIBE 报文的属性同样存在可变头部中。**
 
@@ -64,7 +64,7 @@ MQTT 5.0 中 SUBSCRIBE 报文中的 Payload 包含了[订阅选项](https://www.
 
 订阅选项的第 6 第 7 位是预留给未来使用的。如果有效载荷的任何一个预留位非零，那么服务器就会将该报文视为格式错误的报文。
 
-### UNSUBSCRIBE 报文
+## UNSUBSCRIBE 报文
 
 UNSUBSCRIBE 报文仅有两个属性：属性长度和[用户属性](https://www.emqx.com/zh/blog/mqtt5-user-properties)。
 
@@ -72,7 +72,7 @@ UNSUBSCRIBE 报文的载荷相比 SUBSCRIBE 的载荷要简单很多，它仅仅
 
 服务器就会将该报文视为格式错误的报文。
 
-### DISCONNECT 报文(新增)
+## DISCONNECT 报文(新增)
 
 **DISCONNECT 报文是 MQTT 5.0 新增的报文，它的引入意味着 [mqtt broker](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison) 拥有了主动断开连接的能力。DISCONNECT 报文所具备的属性有：**
 

@@ -1,10 +1,10 @@
-### Foreword
+## Foreword
 
 In today's high-speed iteration of IoT business, quickly connecting IoT devices and platform applications to achieve rapid business implementation and market validation is the key to shaping core competitiveness and achieving business innovation for many enterprises.
 
 [EMQX Cloud](https://www.emqx.com/en/cloud), as a one-stop O&M managed MQTT messaging cloud service, can help users quickly implement IoT application interfacing in the public cloud environment. To further help users quickly build IoT business, EMQX Cloud has recently launched shadow service. Through the platform data caching capability provided by shadow services, users can more easily implement various scenarios of applications and shorten the R&D cycle.
 
-### What is Shadow Service
+## What is Shadow Service
 
 In the scenario of message interaction between IoT devices and applications, it is very common that the device side network is unstable, low-power devices are dormant, and mobile applications do not consume data regularly. For IoT application developers, a data interaction model with decoupled data production and consumption is more needed. Therefore, MQTT is widely used as a publish/subscribe based asynchronous communication protocol in IoT scenarios. In order to further ensure the reliability of data interaction, providing caching and persistence of data such as the latest reported messages from devices and the configuration issued by applications in the MQTT message access layer becomes an important requirement in the design of IoT platforms.
 
@@ -15,11 +15,11 @@ Based on the existing MQTT message access service, EMQX Cloud adds the Shadow Se
 3. Shadow services provide both MQTT and RestAPI interfaces to add, delete, and check cached documents for easy invocation by MQTT devices and application services.
 4. The MQTT interface provided by the shadow service is fully adapted to the standard [MQTT protocol](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt), and the client can invoke the shadow service as long as it conforms to the standard MQTT protocol, without the need for a customized SDK and without platform binding.
 
-### Application Scenario Example
+## Application Scenario Example
 
 Let's take smart home scenario as an example to explain how to use shadow service in detail. In the smart home scenario, the most common application is the data interaction between smart home devices - cloud service - personal mobile APP to realize the update of APP device status reporting and remote control of devices. Using shadow service, we can realize a smart device control application very simply, taking smart air conditioner as an example. 
 
-#### Air conditioner status reporting
+### Air conditioner status reporting
 
 1. Create a shadow service for the smart air conditioning device in EMQX Cloud, and the shadow service creates a unique shadow_id and a fixed publish subscription topic for the device
 

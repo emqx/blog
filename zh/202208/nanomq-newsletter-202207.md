@@ -131,7 +131,7 @@ MQTT 是基于异步模式设计的消息协议，但在许多场景里仍然会
 
 简单的使用方式示例如下：
 
-#### HTTP 发布消息
+### HTTP 发布消息
 
 /api/v4/mqtt/publish
 
@@ -143,7 +143,7 @@ $ curl -i --basic -u admin:public -X POST "http://localhost:8081/api/v4/mqtt/pub
 {"code":0}
 ```
 
-#### HTTP 批量发布消息
+### HTTP 批量发布消息
 
 /api/v4/mqtt/publish_batch
 

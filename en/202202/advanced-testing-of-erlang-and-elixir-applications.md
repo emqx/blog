@@ -4,7 +4,7 @@ In order to sync and replicate metadata throughout the cluster more efficiently,
 
 This post is aimed for Erlang and Elixir developers, and it covers some of the unusual and advanced testing techniques that we employ in EMQX and Mria database. We'll talk about chaos engineering in the Erlang applications, model checking, trace-based testing and cluster performance benchmarking. 
 
-# Problem Statement
+## Problem Statement
 
 There are two common approaches to testing: 
 
@@ -29,7 +29,7 @@ With this design, bugs that may cause corruption of the state are contained, and
 
 In order to address these challenges we've decided to move away from analyzing state of the SUT, and focus on inspecting the sequences of actions that it performs. This allows to circumnavigate all the problems mentioned above. Analyzing the execution trace of the system is not exactly a novel idea: it has been studied extensively in the academia and it lies in the foundation of many modern model checkers. However, applying this approach directly to the application-level testing is quite uncommon, and deserves more attention. We'll discuss some real-live examples of this approach in the following chapter. 
 
-# Trace-based Testing 
+## Trace-based Testing 
 
 So what is an execution trace? It's a list of side effects that the program performs. For example, *strace* tool prints a list of syscalls performed by a process: 
 
@@ -46,7 +46,7 @@ By looking at an strace output the programmer can see how the program interacts 
 
 So, to put an idea of trace-based testing in a nutshell: if humans can find bugs by looking at the logs, so can computers. 
 
-# Instrumenting Code 
+## Instrumenting Code 
 
 Of course, using the regular textual logs as an input for the tests would be unsustainable. Thankfully, the industry is moving towards structured logs, which are easy to process by both machines and humans. [Snabbkaffe](https://github.com/kafka4beam/snabbkaffe), a tool that we use for trace-based testing uses structured log messages. 
 
@@ -104,7 +104,7 @@ A trace captured during execution of the testcase may look like this:
 
 Let's go through all these features. 
 
-## Trace Specifications 
+### Trace Specifications 
 
 As we discussed in the previous chapter, it's important that the state machine goes through the specified states in a certain order. Given the event trace of the system, we can easily implement a rule that verifies this property. Below you can find a test found in the actual check: 
 
@@ -140,7 +140,7 @@ This method has one shortcoming in comparison with the traditional stateful prop
 
 Trace-based testing has another advantage: in a fault-tolerant system some errors may be easy to overlook, because the system recovers automatically. While this is great for running a system in production, it is not desirable in the test environment. Adding trace points in the error recovery paths solves this problem, because the testcase can easily verify absence of unexpected recovery events.
 
-## Testing Supervisors with Fault Injection
+### Testing Supervisors with Fault Injection
 
 Supervisors are the glue that keep Erlang applications together. Tuning the supervision trees is more of an art than a science, however. We've changed that by applying chaos engineering approach to the Erlang processes. 
 
@@ -163,7 +163,7 @@ snabbkaffe_nemesis:periodic_crash(_Period = 10, _DutyCycle = 0.5, _Phase = math:
 
 Typically we create a separate "fault-tolerance" test suite that injects a wide variety of crashes into the SUT, and let it run under traffic for a prolonged period of time. Then the suite runs the checks on the collected traces of the SUT to make sure it recovers reliably and correctly. 
 
-## Scheduling Injections 
+### Scheduling Injections 
 
 Another feature of the trace points is that they can be used to conditionally delay execution of an Erlang process. This is called scheduling injection. To explain why it's useful, let's get back to the replicant state machine. We want to make sure that it handles all the transactions happening in the upstream cluster, regardless of the local state. In order to test this we delay state transitions until a certain number of upstream transactions is produced and vice versa. It is done by adding thefollowing code in the beginning of the testcase:
 
@@ -184,7 +184,7 @@ Another feature of the trace points is that they can be used to conditionally de
 
 Scheduling injection allows to verify absence of race conditions in the otherwise unlikely execution paths. Both error and scheduling injection fully support the distributed Erlang. 
 
-# Concuerror Model Checker
+## Concuerror Model Checker
 
 The last testing technique that we will touch on in this post is model checking. [Concuerror](https://concuerror.com/) is an ultimate tool for verifying concurrent systems, because it explores all possible execution paths of the concurrent program. 
 

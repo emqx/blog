@@ -17,9 +17,12 @@ jobs:
           git config --global user.email "ci@emqx.io"
 
       - name: Checkout code
-        uses: actions/checkout@main
+        uses: actions/checkout@v7
         with:
           fetch-depth: 0
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v8.3.2
 
       - name: Sync blogs
         id: sync_blog
@@ -31,8 +34,8 @@ jobs:
           rm -rf en/*
           rm -rf zh/*
           rm -rf ja/*
-          python3 .ci/sync_blog.py $(pwd)
-          python3 .ci/generate_readme.py $(pwd)
+          uv run .ci/sync_blog.py $(pwd)
+          uv run .ci/generate_readme.py $(pwd)
           git status
           if [ -z "$(git status --short)" ]; then
             echo "No changes to push"
@@ -45,7 +48,7 @@ jobs:
           fi
 
       - name: Pull request
-        uses: repo-sync/pull-request@v2
+        uses: repo-sync/pull-request@v2.12.1
         if: steps.sync_blog.outputs.changed == 1
         with:
           source_branch: ${{ steps.sync_blog.outputs.branch }}

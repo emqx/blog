@@ -12,18 +12,18 @@ Starting today, EMQX Tables is open to all [EMQX Cloud](https://www.emqx.com/en/
 
 We’ve listened closely to the feedback from our Preview participants. For the GA release, we are lifting restrictions and introducing enterprise-grade capabilities.
 
-#### 1. **More sizing options.**
+### 1. **More sizing options.**
 
 The preview limit is gone. EMQX Tables now offers four deployment tiers, ranging from 2 vCPU / 8 GB up to 16 vCPU / 64 GB.
 For organizations with large-scale requirements, we now also offer custom configurations tailored to your specific throughput and retention needs.
 
-#### 2. Available for Everyone (Including Serverless)
+### 2. Available for Everyone (Including Serverless)
 
 EMQX Tables now works with all EMQX Broker editions. 
 
 Whether you're on Serverless, an existing Dedicated deployment, or Dedicated Flex, you can connect your broker to EMQX Tables directly, no migration required.
 
-#### **3. Production-Ready Reliability**
+### **3. Production-Ready Reliability**
 
 We have hardened the underlying architecture, ensuring that EMQX Tables meets the strict availability and reliability standards required for mission-critical IoT applications.
 

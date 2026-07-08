@@ -242,7 +242,7 @@ git clone <https://github.com/emqx/bootcamp.git> /tmp
 2. `microros_demo`：ESP32で実行されるmicro-ROSノードのコードが含まれています。
 3. `demo_interfaces`：色相、彩度、明度フィールドで構成されるカスタムメッセージフォーマットHsbが含まれています。このメッセージはmicro-ROSノードと`converter`ノード間で受け渡されます。
 
-#### ros2_demoのビルド
+### ros2_demoのビルド
 
 まず、ROS 2ワークスペースで`ros2_demo`のビルドを完了する必要があります。以下の手順を順番に実行してください：
 
@@ -296,7 +296,7 @@ git clone <https://github.com/emqx/bootcamp.git> /tmp
    # ros2 launch ros2_demo launch.xml params_file:=<path to params.yaml>
    ```
 
-#### microros_demoのビルド
+### microros_demoのビルド
 
 1. 新しいターミナルを開き、`get_ros`やその他の`setup.sh`スクリプトを実行してROS環境をセットアップしないように注意してください。
 

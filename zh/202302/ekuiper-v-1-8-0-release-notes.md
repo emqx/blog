@@ -34,7 +34,7 @@ SELECT tfLite(\"smart_reply_model\", data) as result FROM demoModel
 
 函数会在 eKuiper 层面针对输入数据格式进行验证。用户可以通过更多的 SQL 语句对模型的输入和输出做预处理或者后处理。
 
-#### 图像/视频流推理
+### 图像/视频流推理
 
 配合新版本提供的视频流源（详情见下文），eKuiper 提供了视频接入并定时获取图像帧的能力。图像帧可在规则中，使用 tfLite 函数进行 AI 推理。Tensor Flow 模型通常是针对特定的图像大小进行训练的，对图像进行推理时，经常需要进行变更大小等预处理。eKuiper 也提供了 resize、thumnail 等预处理方法。函数会返回 output tensor 的数组表示供后续规则或应用处理。
 

@@ -1,4 +1,4 @@
-### Introduction
+## Introduction
 
 This example will demonstrate how to report the temperature and humidity data collected by the DHT11 sensor to the MQTT service in the cloud through the [MQTT protocol](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) and the NodeMCU based on ESP8266 , and show how the application subscribes to and processes the data. The reason why mqtt protocol is used in this article is that it is lightweight and energy-saving, which is very suitable for the use scenarios of the Internet of things. At present, all major public cloud providers have basically opened IOT hub services based on MQTT protocol. For example, the IOT Core of AWS and the IOT Hub of Azure can easily access these data to these public cloud services through MQTT protocol.
 
@@ -8,9 +8,9 @@ The overall architecture of this example is as follows:
 
 
 
-### Configuration
+## Configuration
 
-#### Hardware Configuration
+### Hardware Configuration
 
 - NodeMCU board x 1: NodeMCU is an open source IoT platform. It includes firmware which runs on the ESP8266 Wi-Fi SoC, and hardware which is based on the ESP-12 module. The term "NodeMCU" by default refers to the firmware rather than the development kits . The firmware uses the Lua scripting language.
 - DHT11 temperature / humidity sensor x 1: DHT11 digital temperature and humidity sensor is a  composite sensor with calibrated digital signal output
@@ -20,7 +20,7 @@ The overall architecture of this example is as follows:
 
 ![689328937a9d2d8007ce11ea94eb9dd9c6c5c23c.png](https://assets.emqx.com/images/ab1d6dee2e4870a45ada34fb584f8328.png)
 
-#### Arduino Configuration
+### Arduino Configuration
 
 - Download and install  [CH340G USB](https://kig.re/downloads/CH34x_Install.zip) driver
 
@@ -30,7 +30,7 @@ The overall architecture of this example is as follows:
 
   Sketch -> Include Library -> Manage Libraries... -> Type PubSub in Search field -> Install
 
-#### MQTT Cloud Service
+### MQTT Cloud Service
 
 After the data is successfully collected through NodeMCU, it needs to be sent to the MQTT cloud service in the cloud. This article uses the MQTT cloud service provided by EMQX. Readers can also choose other MQTT cloud services according to their own circumstances, such as Azure IoT Hub or [AWS IoT Core](https://www.emqx.com/en/blog/understanding-aws-iot-core). Each cloud service needs to provide different authentication methods when accessing. Therefore, when connecting to the MQTT service in the cloud via NodeMCU, it is required to set the connection method according to the security requirements of the target cloud service. For the sake of simplicity, this article uses a non-secure connection method. In a formal production environment, a connection with a secure authentication method must be set.
 
@@ -46,7 +46,7 @@ After the data is successfully collected through NodeMCU, it needs to be sent to
 
 
 
-### Coding
+## Coding
 
 ```c
 #include <ESP8266WiFi.h>
@@ -160,7 +160,7 @@ Follow these steps to edit the code to suit your own Wi-Fi and MQTT settings
 
 
 
-### Running
+## Running
 
 - Code upload
 
@@ -214,7 +214,7 @@ if __name__ == '__main__':
 
 
 
-### Summary
+## Summary
 
 So far, it has completed the simple process of collecting data from NodeMCU, uploading it to the MQTT cloud service provided by EMQ, and processing the data by the back-end program written by Python. However, in actual production applications, higher requirements will be required, for example,
 

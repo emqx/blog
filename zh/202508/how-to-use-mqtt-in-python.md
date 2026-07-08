@@ -337,7 +337,7 @@ if __name__ == '__main__':
 
 ## 测试
 
-#### 订阅
+### 订阅
 
 运行 MQTT 订阅脚本 `sub.py`，我们将看到客户端成功连接并开始等待发布者发布消息。
 
@@ -347,7 +347,7 @@ python3 sub.py
 
 ![Subscribe to MQTT Topic](https://assets.emqx.com/images/f6fa795ecafac8e476b12018345ecf60.png)
 
-#### 发布消息
+### 发布消息
 
 运行 MQTT 消息发布脚本 `pub.py`，我们会看到客户端成功连接并发布了 5 条消息。同时 `sub.py` 也会成功收到 5 条消息。
 

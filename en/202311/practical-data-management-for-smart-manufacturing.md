@@ -1,6 +1,6 @@
 In our [previous blog posts](https://www.emqx.com/en/blog/tag/omh-for-smart-manufacturing), we discussed the basic concepts and principles behind using Neuron and EMQX to build the OMH solution. In this blog, we take a closer look at the indispensable elements of practical data management, particularly in the context of real-world modeling, as facilitated by Neuron and EMQX. Whether you're working on projects involving predictive analytics, machine learning, or any other data-driven endeavor, the presence of a robust data management strategy becomes the key to success.
 
-# Object Naming Convention
+## Object Naming Convention
 
 An object naming convention is a set of rules and guidelines that dictate how objects within a data management system, should be named. The primary purpose of an object naming convention is to ensure consistency and clarity in naming, making it easier for developers, administrators, and users to understand and work with these objects.
 
@@ -39,7 +39,7 @@ By using [ISA95 standard](https://www.emqx.com/en/blog/exploring-isa95-standards
 
 Each row represents an object mapped to the device tag address. The object’s name is the composition of the first 5 columns with ‘/' as a separator. For example, the object’s name on the first row is something like HQ/1F/A/Right/temp. This name will be a unique topic for Unified Namespace.
 
-# Object Data Modeling
+## Object Data Modeling
 
 Data modeling is like creating a blueprint before building a house. It involves defining the structure and relationships within your data. A well-designed data model not only ensures data consistency but also improves data understanding and usability. In this series, we provide a step-by-step guide to organizing this data within the [Unified Namespace](https://www.emqx.com/en/blog/unified-namespace-next-generation-data-fabric-for-iiot) using [EMQX](https://www.emqx.com/en/products/emqx) and [Neuron](https://www.emqx.com/en/products/emqx-neuron) as foundational components.
 
@@ -59,7 +59,7 @@ A temperature controller or reader can simultaneously read the temperatures in a
 
 This example will serve as a reference throughout the subsequent steps, from data mapping to data contextualization.
 
-## Data Mapping
+### Data Mapping
 
 Data mapping is the process of creating a connection between two different device data models and object data models in order to facilitate data integration, transformation, or migration. It involves identifying how data tags in the source device dataset correspond to or should be transformed into data fields or attributes in the target object dataset. This involves specifying which fields map directly, which may require transformation, and which might be omitted. Data mapping also includes defining rules or transformations that need to be applied to the source device data to align it with the target object data. This can involve data type conversions, calculations, or data enrichment.
 
@@ -71,7 +71,7 @@ There are two different ways to present the data model. The first is to obtain d
 
 Data mapping is crucial in various data-related processes, including data integration, data migration, data warehousing, and ETL (Extract, Transform, Load) processes. It ensures that data is correctly transferred and transformed from one system to another, maintaining data integrity and consistency across different datasets and systems.
 
-## Data Normalization
+### Data Normalization
 
 Data is diverse, often arriving in multiple formats with problems such as clutter, redundancy, and inconsistency. Data normalization serves as a remedy for such data challenges. It's the process of structuring data to reduce redundancy and promote consistency, effectively cleansing the data for better quality.
 
@@ -101,15 +101,15 @@ The core objective of data normalization is to establish a standardized data for
   </div>
 </section>
 
-### First Normal Form (1NF)
+#### First Normal Form (1NF)
 
 1NF, the initial level of data normalization, addresses the issue of repeating entries within a group. In this form, each entry should contain only a single value for each cell, and each record must be distinct.
 
-### Second Normal Form (2NF)
+#### Second Normal Form (2NF)
 
 To reach the 2NF stage, data must initially meet all the requirements of 1NF. Additionally, data should have a sole primary key. Achieving this involves placing subsets of data that can be distributed into multiple rows into separate tables. New foreign key labels can then establish relationships between them.
 
-### Third Normal Form (3NF)
+#### Third Normal Form (3NF)
 
 Data complying with 3NF requirements must first adhere to all the prerequisites of 2NF. Beyond that, data within a table should exclusively depend on the primary key. In case the primary key undergoes alterations, all affected data must be transferred to a new table.
 
@@ -117,7 +117,7 @@ Data complying with 3NF requirements must first adhere to all the prerequisites 
 
 Following the normalization process described above in our example, the need for temperature objects and energy objects within our data source list can be eliminated.
 
-## Data Contextualization
+### Data Contextualization
 
 Data without context is like a jigsaw puzzle with missing pieces. Data contextualization is the process of adding meaning and relevance to data by placing it within a specific context. It transforms raw data into actionable information. This is how Unified Namespace serves the data analysis by adding context information.
 
@@ -127,7 +127,7 @@ Unified Namespace serves as the glue that connects data to its context. By defin
 
 In our example, temperature high and low limitations should be added to the context, and alert messages for each tank can help understand the status of the chemical processing in the tank. These limitations can be found in the product recipe within the MES system. Moreover, the material being immersed in the tank is also important for the production process. This information can be retrieved from the Sales Order in the ERP system. Finally, the object details will be as follows.
 
-# Conclusion
+## Conclusion
 
 In the realm of predictive analysis, encompassing Unified Namespace concepts is not a mere prerequisite. It's the key to success. Effective data collection, integration, quality assurance, governance, and accessibility, along with data modeling, normalization, and contextualization, with [Neuron](https://www.emqx.com/en/products/emqx-neuron) and [EMQX](https://www.emqx.com/en/products/emqx), are the building blocks upon which accurate predictive models are constructed. As the data-driven revolution continues to unfold, focusing on Unified Namespace concepts and object data modeling remains the compass that guides organizations toward actionable insights and sustainable growth. 
 

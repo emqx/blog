@@ -4,7 +4,7 @@ With the increase of the users, their requirements regarding authentication beco
 
 In response to the above requirements, **EMQX Cloud recently launched the HTTP custom authentication**. Users can connect to their own authentication center and judge the login authority of the terminal through the returned information, so as to realize more complex authentication logic and ACL verification logic. Currently, the custom authentication function supports permission authentication and access control authentication.
 
-### **HTTP Authentication Principle**
+## **HTTP Authentication Principle**
 
 EMQX Cloud uses the relevant information of the current client as parameters in the device connection event, initiates a request for permission query from the user-defined authentication service, and processes the authentication request through the returned HTTP response status code (HTTP statuscode).
 
@@ -33,7 +33,7 @@ Configure the required parameters for permission authentication on the form page
 
 Through HTTP custom authentication, users can more flexibly combine the self-built authentication center with EMQX Cloud, which greatly improves the security of authentication and solves the problem of complex authentication processes for massive devices.
 
-### Get started quickly with EMQX Cloud
+## Get started quickly with EMQX Cloud
 
 We have also made a lot of optimizations in the overall usage process of EMQX Cloud recently, such as optimization of Quick Start Guide and help documents, multilingual SDK access demo, so as to help users get started with the product quickly.
 

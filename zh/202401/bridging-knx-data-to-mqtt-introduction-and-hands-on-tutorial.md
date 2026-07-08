@@ -42,23 +42,23 @@ Neuron 提供多种安装方式，查阅[安装指南](https://docs.emqx.com/zh/
 
 打开 Web 浏览器，输入运行 Neuron 的网关地址和端口号，即可进入到管理控制台页面，默认端口号为 7000。通过浏览器访问 `http://localhost:7000` （localhost 可替换为您的实际 IP 地址）。
 
-#### 第一步. 登录
+### 第一步. 登录
 
 页面打开后，进入到登录界面，用户可使用初始用户名与密码登录（初始用户名：admin，初始密码：0000）。
 
-#### 第二步. 添加南向节点
+### 第二步. 添加南向节点
 
 在 Neuron 仪表板中，点击**配置 -> 南向设备管理 -> 添加设备**来添加一个 *knx* 节点。
 
 ![添加设备](https://assets.emqx.com/images/5f712ce79b53bd16a5170ee75eade8fc.png)
 
-#### 第三步. 配置 *knx* 节点
+### 第三步. 配置 *knx* 节点
 
 配置新创建的 *knx* 节点, 如下图所示。
 
 ![配置 knx 节点](https://assets.emqx.com/images/91d32239dafc70f2037073baa63997fa.png)
 
-#### 第四步. 创建组
+### 第四步. 创建组
 
 点击 *knx* 节点进入**组列表**页面，点击**创建**，弹出**创建组**对话框。填写参数并提交：
 
@@ -67,13 +67,13 @@ Neuron 提供多种安装方式，查阅[安装指南](https://docs.emqx.com/zh/
 
 ![创建组](https://assets.emqx.com/images/36bc89c0e101331a297f7d1021abd2a2.png)
 
-#### 第五步. 添加数据点位
+### 第五步. 添加数据点位
 
 对应 KNX Virtual 中的配置，为调光执行器、百叶窗执行器和开关执行器添加四个点位。
 
 ![添加数据点位](https://assets.emqx.com/images/261910857cebcc68cd6528c627bf4f10.png)
 
-#### 第六步. 数据监控
+### 第六步. 数据监控
 
 点击**监控** -> **数据监控**，查看已创建点位读取到的数值，如下图所示。
 
@@ -81,19 +81,19 @@ Neuron 提供多种安装方式，查阅[安装指南](https://docs.emqx.com/zh/
 
 ![数据监控 2](https://assets.emqx.com/images/e342a14913dbbfa00854a6203f531e21.png)
 
-#### 第七步. 添加北向应用
+### 第七步. 添加北向应用
 
 在 Neuron 仪表板中，点击**配置 -> 北向应用 -> 添加应用**来添加一个 *mqtt* 节点。
 
 ![添加北向应用](https://assets.emqx.com/images/1db2eb2798bdeddd1a9afbb9bbd6e345.png)
 
-#### 第八步. 配置 *mqtt* 节点
+### 第八步. 配置 *mqtt* 节点
 
 配置 *mqtt* 节点连接到之前启动的 EMQX 服务器。
 
 ![配置 mqtt 节点](https://assets.emqx.com/images/96352995da758ab25b0e1c649097ee94.png)
 
-#### 第九步. 添加订阅
+### 第九步. 添加订阅
 
 点击刚创建的 *mqtt* 应用节点进入**组列表**页面，点击**添加订阅** 。订阅成功后，Neuron 会将数据发布到 MQTT 主题 `/neuron/mqtt/knx/grp` 中。
 

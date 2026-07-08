@@ -45,18 +45,18 @@ $ docker run -d --name neuron -p 7000:7000 --privileged=true --restart=always em
 
 Open a web browser, and enter the address and port number of the gateway where you are running Neuron to get to the management console page. The default port number is 7000. Go to `http://localhost:7000/` (localhost can be replaced with your actual IP address) through your browser.
 
-#### Step 1: Login
+### Step 1: Login
 
 After the page opens, it goes to the login interface, where you can log in with the initial user name and password (initial user name: admin, initial password: 0000).
 
-#### Step 2: Add Southbound Device
+### Step 2: Add Southbound Device
 
 Select Southbound Devices in the **Configuration** menu to enter the **South Devices** screen and click **Add Device** to add a new device.
 
 - Name: fill in the device name, for example opcua-195-prosys;
 - Plug-in: drop-down box to select the OPC UA plug-in.
 
-#### Step 3: Set the Southbound Device Parameters
+### Step 3: Set the Southbound Device Parameters
 
 Automatically enter the device configuration interface after adding a southbound device, fill in the parameters and submit.
 
@@ -70,14 +70,14 @@ Ensure that the Prosys OPC UA Simulation Server has been switched to Expert Mode
 
 ![Click **Certificates**](https://assets.emqx.com/images/18303ffbc9c775f0cbcb30243db9a401.png)
 
-#### Step 4: Create a Group in the Device Card
+### Step 4: Create a Group in the Device Card
 
 Click any blank space of the device node card to enter the group list management interface, and click Create to bring up the dialogue box for creating a group. Fill in the parameters and submit:
 
 - Group name: Fill in the group name, for example, group-1;
 - Interval: default 1000.
 
-#### Step 5: Add Data Point Locations to the Group
+### Step 5: Add Data Point Locations to the Group
 
 Enter the point list management interface, click **Create**, fill in the point parameters and submit:
 
@@ -89,20 +89,20 @@ Enter the point list management interface, click **Create**, fill in the point p
   - 1001 represents the Node ID of the data tag;
 - Description,  Decimal, and Precision are not filled in.
 
-#### Step 6: View Collected Data in Data Monitoring
+### Step 6: View Collected Data in Data Monitoring
 
 Select **Monitoring→Data Monitoring** to enter the Data Monitor interface and view the values read from the created points.
 
 ![Neuron Dashboard](https://assets.emqx.com/images/92c58c6e1017480fafc38d54ca254088.png)
 
-#### Step 7: Add a Northbound Plug-in Module to the Application
+### Step 7: Add a Northbound Plug-in Module to the Application
 
 Select **North Apps** in the Configuration menu and click **Add Application**.
 
 - Name: Fill in the application name, for example, MQTT;
 - Plugin: drop-down box to select the MQTT plugin.
 
-#### Step 8: Set the North Application Parameters
+### Step 8: Set the North Application Parameters
 
 - Client ID: Note that this ID should be independent of each other. Duplicate IDs will cause the client to be kicked. For example, set to MQTT1999;
 - QoS Level: Default is 0;
@@ -115,7 +115,7 @@ Select **North Apps** in the Configuration menu and click **Add Application**.
 - User name, password: Not filled;
 - SSL: Disabled by default.
 
-#### Step 9: Subscribe to the South Tag Group
+### Step 9: Subscribe to the South Tag Group
 
 Go to the list of subscription groups and click **Add Subscription**.
 

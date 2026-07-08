@@ -235,7 +235,7 @@ git clone <https://github.com/emqx/bootcamp.git> /tmp
 2. `microros_demo`，包含了在 ESP32 上运行的 micro-ROS 节点代码。
 3. `demo_interfaces`，包含了一个自定义消息格式 Hsb，由 hue、saturation、brightness 三个字段组成。该消息在 micro-ROS 节点与 `convertor` 节点之间传递。
 
-#### 构建 ros2_demo
+### 构建 ros2_demo
 
 首先，我们需要在 ROS 2 工作区完成 `ros2_demo` 的构建，请依次执行以下步骤：
 
@@ -289,7 +289,7 @@ git clone <https://github.com/emqx/bootcamp.git> /tmp
    # ros2 launch ros2_demo launch.xml params_file:=<path to params.yaml>
    ```
 
-#### 构建 microros_demo
+### 构建 microros_demo
 
 1. 打开一个新的终端，注意不要执行 `get_ros` 或其他任何 `setup.sh` 脚本来设置 ROS 环境。
 
