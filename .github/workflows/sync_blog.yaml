@@ -23,6 +23,8 @@ jobs:
 
       - name: Install uv
         uses: astral-sh/setup-uv@v8.3.2
+        with:
+          enable-cache: false
 
       - name: Sync blogs
         id: sync_blog
