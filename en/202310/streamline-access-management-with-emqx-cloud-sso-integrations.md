@@ -1,4 +1,4 @@
-[EMQX Cloud](https://www.emqx.com/en/cloud) is dedicated to providing a fully managed MQTT service that delivers excellent connectivity and integration solutions for IoT businesses. The latest addition to its features is Single Sign-on (SSO), which enables users to access all trusted applications with just one single sign-on. With this feature, users can now log in to EMQX Cloud with their identity provider accounts, eliminating the need for repetitive password input work and improving account security.
+[EMQX Cloud](https://www.emqx.com/en/cloud) is dedicated to providing a fully managed [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) service that delivers excellent connectivity and integration solutions for IoT businesses. The latest addition to its features is Single Sign-on (SSO), which enables users to access all trusted applications with just one single sign-on. With this feature, users can now log in to EMQX Cloud with their identity provider accounts, eliminating the need for repetitive password input work and improving account security.
 
 ## What is SSO?
 

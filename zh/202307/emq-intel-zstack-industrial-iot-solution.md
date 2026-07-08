@@ -23,7 +23,7 @@
 
 [边缘数采软件 Neuron](https://github.com/emqx/neuron) 通过配置南向设备和点位信息连接到设备端进行数据采集，并配置北向驱动把采集到的数据上传到边缘流式计算引擎 eKuiper；
 
-[eKuiper](https://ekuiper.org/zh) 配置 Neuron 为数据源，并以 Neuron 源设计计算规则，计算结果以 MQTT 形式发送到同边缘网络的 [NanoMQ](https://nanomq.io/zh)；
+[eKuiper](https://ekuiper.org/zh) 配置 Neuron 为数据源，并以 Neuron 源设计计算规则，计算结果以 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 形式发送到同边缘网络的 [NanoMQ](https://nanomq.io/zh)；
 
 边缘 Broker NanoMQ 与云端 EMQX 做桥接处理，将边端数据源源不断地以 MQTT 协议发送消息到云端 [EMQX Enterprise](https://www.emqx.com/zh/products/emqx)。
 

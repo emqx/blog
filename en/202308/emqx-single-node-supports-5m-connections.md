@@ -2,12 +2,12 @@ In this post, we provide the benchmarking result of EMQX connection - a single n
 
 ## Test Scenario
 
-This benchmark testing simulates 5,000,000 MQTT clients connecting to EMQX, with a connection rate of 5,000 per second. 
+This benchmark testing simulates 5,000,000 [MQTT clients](https://www.emqx.com/en/blog/mqtt-client-tools) connecting to EMQX, with a connection rate of 5,000 per second. 
 
 - Concurrent connections: 5,000,000
 - Connection rate: 5000/s
 - Authentication: no
-- Keep alive: 300s
+- [Keep alive](https://www.emqx.com/en/blog/mqtt-keep-alive): 300s
 - Clean session: true
 
 ## Testbed
@@ -22,7 +22,7 @@ Machine Details:
 
 ## Test Tool
 
-XMeter is used in this benchmark test to simulate MQTT clients. XMeter is built on top of JMeter but with enhanced scalability and more capabilities. It provides comprehensive and real-time test reports during the test. Additionally, its built-in monitoring tools are used to track the resource usage of the EMQX machines.
+XMeter is used in this benchmark test to simulate [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) clients. XMeter is built on top of JMeter but with enhanced scalability and more capabilities. It provides comprehensive and real-time test reports during the test. Additionally, its built-in monitoring tools are used to track the resource usage of the EMQX machines.
 
 XMeter provides a private deployment version (on-premise) and a public cloud SaaS version. A private XMeter is deployed in the same VPC as the EMQX in this testing.
 

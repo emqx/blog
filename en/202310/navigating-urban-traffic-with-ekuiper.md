@@ -229,7 +229,7 @@ You can check the running status of your rule with the following command
 
 ### View the Bike Availability Insight
 
-Then we can use an MQTT client tool to subscribe to the topic and view the analyzed data, for example, [MQTTX](https://mqttx.app/). 
+Then we can use an [MQTT client](https://www.emqx.com/en/blog/mqtt-client-tools) tool to subscribe to the topic and view the analyzed data, for example, [MQTTX](https://mqttx.app/). 
 
 Launch MQTTX, click **Add a New Connection**, and set it as follows, then click the **Connect** button to build the connection. 
 

@@ -16,7 +16,7 @@ As AI technologies evolve, advanced generative AIs like ChatGPT open up a new av
 
 ## Incorporating Generative AI into MQTT Data Testing
 
-We're pioneering a transformative approach for real-time MQTT data testing in IoT applications by leveraging the data simulation capabilities of MQTTX and the advanced text processing expertise of LLM, such as ChatGPT. While MQTTX offers script simulation functionalities, its built-in scripts might only cater to some of your specific scenario data needs, and manually crafting test scripts can take time. With this method, we streamline and expedite this process, ensuring efficient, realistic, and comprehensive testing across various IoT scenarios.
+We're pioneering a transformative approach for real-time [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) data testing in IoT applications by leveraging the data simulation capabilities of MQTTX and the advanced text processing expertise of LLM, such as ChatGPT. While MQTTX offers script simulation functionalities, its built-in scripts might only cater to some of your specific scenario data needs, and manually crafting test scripts can take time. With this method, we streamline and expedite this process, ensuring efficient, realistic, and comprehensive testing across various IoT scenarios.
 
 1. **Data Requirement Analysis:** Initially, we assess the data needs of the IoT scenario, identifying the categories, structures, and formats of data that need to be simulated.
 
@@ -30,9 +30,9 @@ Core components involved in our methodology:
 
 - ChatGPT: Our chosen AI tool specializes in generating simulation scripts for data. With its powerful natural language processing capabilities, we can create precise and realistic simulation scripts for MQTTX.
 
-- [MQTTX](https://mqttx.app)**:** A full-featured MQTT client tool, MQTTX boasts a custom script feature, enabling device simulation for message transmission and reception.
+- [MQTTX](https://mqttx.app)**:** A full-featured [MQTT client](https://www.emqx.com/en/blog/mqtt-client-tools) tool, MQTTX boasts a custom script feature, enabling device simulation for message transmission and reception.
 
-- [EMQX](https://github.com/emqx/emqx)**:** Our preferred MQTT server, ensuring the stable transmission of simulated data.
+- [EMQX](https://github.com/emqx/emqx)**:** Our preferred [MQTT server](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison), ensuring the stable transmission of simulated data.
 
 In the subsequent sections, we'll guide you on how to kickstart your data simulation testing.
 

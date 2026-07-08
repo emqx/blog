@@ -1,4 +1,4 @@
-近日，MQTT 5.0 客户端工具 MQTTX 1.9.4 正式发布。本次更新为用户提供了更高效的 Protobuf 消息传输支持，并优化了自动更新功能，同时进行了一些功能特性的优化和增强。
+近日，[MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 5.0 客户端工具 MQTTX 1.9.4 正式发布。本次更新为用户提供了更高效的 Protobuf 消息传输支持，并优化了自动更新功能，同时进行了一些功能特性的优化和增强。
 
 > 最新版本下载：[https://mqttx.app/downloads](https://mqttx.app/downloads) 
 
@@ -79,7 +79,7 @@ mqttx pub -t testtopic/protobuf -h broker.emqx.io -m '7b0a 2020 2274 656d 7022 3
 
 本次升级还包括对官方网站 [mqttx.app](https://mqttx.app/zh) 的全面优化，更加直观地展示了 MQTTX 的功能和应用场景。
 
-> 你的全功能 MQTT 客户端工具
+> 你的全功能 [MQTT 客户端](https://www.emqx.com/zh/blog/mqtt-client-tools)工具
 
 ![MQTT Client](https://assets.emqx.com/images/ee05da05ecf66c263fae0df84d918a6b.png)
 
@@ -110,7 +110,7 @@ mqttx pub -t testtopic/protobuf -h broker.emqx.io -m '7b0a 2020 2274 656d 7022 3
 - 可配置忽略 QoS 0 的消息存储，以减少存储空间的占用。
 - MQTT Debug 功能。
 - 接收到的消息可以进行自动图表绘制。
-- 插件功能（协议扩展 CoAP，MQTT-SN 等）。
+- 插件功能（协议扩展 [CoAP](https://www.emqx.com/zh/blog/coap-protocol)，MQTT-SN 等）。
 - 脚本测试自动化（Flow）。
 
 

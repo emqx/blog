@@ -1,4 +1,4 @@
-Inside a modern smart factory, production floors are buzzing with activity as hundreds of **AI agents** work in concert:
+Inside a modern [smart factory](https://www.emqx.com/en/blog/what-is-a-smart-factory-key-components-4-levels-of-evolution), production floors are buzzing with activity as hundreds of **AI agents** work in concert:
 
 - **Quality Inspection agents** leverage computer vision to analyze thousands of parts per hour.
 - **Predictive Maintenance agents** monitor equipment health via machine learning.
@@ -24,7 +24,7 @@ The A2A protocol provides a standardized framework for agents to communicate, di
 
 Without standardization, connecting N agents requires N² integrations, complexity that grows exponentially. A2A eliminates this by providing consistent communication patterns across different frameworks and vendors. It supports **dynamic discovery** based on capabilities rather than hard-coded addresses, handles both **instant messaging** and **long-running tasks**, and includes built-in mechanisms for progress tracking and artifact delivery.
 
-These capabilities are critical in **Physical AI** and **IoT** scenarios. In smart manufacturing, for instance, a quality inspection agent must discover available analysis agents, delegate image processing tasks, wait minutes or hours for results, and aggregate findings into reports. While A2A offers a standardized mechanism for these interactions, the implementation details are vital for production.
+These capabilities are critical in **Physical AI** and **IoT** scenarios. In [smart manufacturing](https://www.emqx.com/en/blog/the-smart-manufacturing-revolution), for instance, a quality inspection agent must discover available analysis agents, delegate image processing tasks, wait minutes or hours for results, and aggregate findings into reports. While A2A offers a standardized mechanism for these interactions, the implementation details are vital for production.
 
 Currently, most A2A implementations use **HTTP** for transport and **JSON-RPC 2.0** for messaging. While this approach is simple and compatible with web infrastructure — using RESTful APIs for communication and **Server-Sent Events (SSE)** for long-running tasks — it hits significant performance limits when scaled in production-grade IoT environments.
 
@@ -56,7 +56,7 @@ These challenges point to a fundamental limitation: HTTP-based A2A implementatio
 
 ## The EMQX A2A Solution: Event-Driven Architecture for Production
 
-EMQX reimagines A2A communication through an **event-driven architecture** based on **MQTT**, the de facto standard for IoT messaging. Instead of treating A2A as a series of rigid HTTP requests, EMQX implements the protocol over a Pub/Sub model.
+EMQX reimagines A2A communication through an **event-driven architecture** based on **[MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt)**, the de facto standard for IoT messaging. Instead of treating A2A as a series of rigid HTTP requests, EMQX implements the protocol over a Pub/Sub model.
 
 ![image.png](https://assets.emqx.com/images/5fd6850c130841646c6a8b3dad9af025.png)
 
@@ -64,9 +64,9 @@ EMQX reimagines A2A communication through an **event-driven architecture** based
 
 The A2A Registry Service is the core component for managing agent lifecycles. Agents register by publishing their **Agent Cards** as **Retained Messages** to standardized discovery topics (e.g., `$a2a/v1/discovery/{org-id}/{agent-id}`). The service validates these cards against A2A schemas and maintains an in-memory index for rapid querying. This design eliminates the need for external databases while meeting production-level performance and reliability requirements.
 
-When an agent needs to discover others, it simply subscribes to the relevant discovery topic pattern. The MQTT broker immediately delivers all matching retained Agent Cards, enabling **instant discovery** without additional queries. This Pub/Sub model scales efficiently, handling thousands of agents without increasing discovery latency.
+When an agent needs to discover others, it simply subscribes to the relevant discovery topic pattern. The [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) immediately delivers all matching retained Agent Cards, enabling **instant discovery** without additional queries. This Pub/Sub model scales efficiently, handling thousands of agents without increasing discovery latency.
 
-Agent interactions follow a similar event-driven pattern. Requests flow through MQTT topics (e.g., `$a2a/v1/{org-id}/{namespace}/{agent-id}/requests`), with responses routed back via correlation topics. **MQTT 5.0 properties** ensure request-response correlation and **QoS levels** guarantee reliable delivery. For long-running tasks, agents publish updates to status topics, allowing clients to track progress without polling.
+Agent interactions follow a similar event-driven pattern. Requests flow through [MQTT topics](https://www.emqx.com/en/blog/advanced-features-of-mqtt-topics) (e.g., `$a2a/v1/{org-id}/{namespace}/{agent-id}/requests`), with responses routed back via correlation topics. **[MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5) properties** ensure request-response correlation and **QoS levels** guarantee reliable delivery. For long-running tasks, agents publish updates to status topics, allowing clients to track progress without polling.
 
 ### Dashboard Console
 

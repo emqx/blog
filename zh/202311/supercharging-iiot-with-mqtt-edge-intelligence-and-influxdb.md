@@ -77,7 +77,7 @@
    配置参数如下：
 
    - 远端 broker 地址
-   - MQTT协议版本
+   - [MQTT协议](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt)版本
    - 客户标识符 (默认缺省由 NanoMQ 自动分配)
    - 会话清除
    - Keep Alive

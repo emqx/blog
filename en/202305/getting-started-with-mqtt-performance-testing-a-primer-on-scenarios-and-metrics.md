@@ -6,7 +6,7 @@ It's essential to understand the basic testing scenarios and performance metrics
 
 >**Terms Explanation**
 >
->- MQTT Protocol: MQTT stands for Message Queuing Telemetry Transport. Despite its name containing "message queuing," it has nothing to do with message queues. Instead, it is a lightweight messaging protocol based on a publish/subscribe model. With its simplicity, flexibility, easy implementation, support for QoS, and small message size, MQTT has become the preferred protocol for the Internet of Things (IoT). For more information, please refer to [MQTT Guide 2023: Beginner to Advanced](https://www.emqx.com/en/mqtt-guide).
+>- [MQTT Protocol](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt): MQTT stands for Message Queuing Telemetry Transport. Despite its name containing "message queuing," it has nothing to do with message queues. Instead, it is a lightweight messaging protocol based on a publish/subscribe model. With its simplicity, flexibility, easy implementation, support for QoS, and small message size, MQTT has become the preferred protocol for the Internet of Things (IoT). For more information, please refer to [MQTT Guide 2023: Beginner to Advanced](https://www.emqx.com/en/mqtt-guide).
 >- Performance Testing: Performance testing is a process of using testing tools to simulate various normal, peak, or abnormal load conditions to test various performance indicators of the system under tested. The goal is to verify whether the system can meet the user's expectation, discover performance bottlenecks in the system, and so on.
 
 ## Typical MQTT Test Scenarios
@@ -86,7 +86,7 @@ Compared to other tools, the advantage of emqtt_bench is that it is easy to inst
 
 emqtt_bench is suitable for rapid performance verification in the development phase. When it comes to large-scale scenarios or formal testing, we recommend another more professional performance and load test tool - XMeter.
 
-XMeter builds upon the foundation of JMeter, enhancing its scalability and expanding its capabilities. This enables XMeter to handle high volumes of data and perform high-frequency testing. It provides comprehensive and real-time test reports during the test, and the reports show the testers real-time MQTT metrics data such as throughput, response time, success rate and etc. And its built-in monitoring system is used to collect the resource usage of the MQTT broker server. 
+XMeter builds upon the foundation of JMeter, enhancing its scalability and expanding its capabilities. This enables XMeter to handle high volumes of data and perform high-frequency testing. It provides comprehensive and real-time test reports during the test, and the reports show the testers real-time MQTT metrics data such as throughput, response time, success rate and etc. And its built-in monitoring system is used to collect the resource usage of the [MQTT broker server](https://www.emqx.com/en/blog/a-comprehensive-comparison-of-open-source-mqtt-brokers-in-2023). 
 
 Besides, XMeter provides the capability of automatic and centralized test resource management. Test machines (containers) are automatically created at the beginning of the test and destroyed at the end. 
 

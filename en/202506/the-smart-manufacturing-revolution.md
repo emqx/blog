@@ -155,7 +155,7 @@ EMQX is a leading MQTT platform built for high-throughput, low-latency communica
 
 ### NeuronEX: Industrial Gateway for Unified Connectivity and Edge Intelligence
 
-NeuronEX connects industrial devices running on legacy protocols (Modbus, OPC UA, EtherNet/IP, etc.) to modern data platforms using [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt). It bridges the gap between traditional OT equipment and modern IoT systems.
+NeuronEX connects industrial devices running on legacy protocols (Modbus, [OPC UA](https://www.emqx.com/en/blog/opc-ua-protocol), EtherNet/IP, etc.) to modern data platforms using [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt). It bridges the gap between traditional OT equipment and modern IoT systems.
 
 - **Protocol Translation**: Seamlessly converts industrial protocols into MQTT for real-time communication with cloud or edge platforms.
 - **Edge Processing and AI Inference**: Executes rule logic and AI models at the edge, enabling low-latency responses and localized decision-making.

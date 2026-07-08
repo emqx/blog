@@ -22,7 +22,7 @@ EMQX 采用高并发、高稳定、分布式集群开发语言 Erlang/OTP，EMQX
 
 作为核心数据接入侧，EMQX 拥有强大的规则引擎功能，可以实现数据分流过滤、数据持久化、数据桥接、编解码、业务应用集成等，在数据层通道即实现数据的处理与过滤，数据路由、控制、监控层的分离，使得 EMQX 在路由通道中聚焦，保证消息高效处理的同时，实现准确的控制与监控信息展示。
 
-EMQX 南向支持 MQTT、LwM2M、CoAP 等物联网协议以及私有 TCP/UCP 协议的接入，并提供 TLS/DTLS 以及访问控制认证能力，为数据的安全保驾护航，北向提供标准的 RESTful API 用于管理监控以及 Kafka 消息下发通道，方便第三方快速集成应用。
+EMQX 南向支持 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt)、LwM2M、[CoAP](https://www.emqx.com/zh/blog/coap-protocol) 等[物联网协议](https://www.emqx.com/zh/blog/iot-protocols-mqtt-coap-lwm2m)以及私有 TCP/UCP 协议的接入，并提供 TLS/DTLS 以及访问控制认证能力，为数据的安全保驾护航，北向提供标准的 RESTful API 用于管理监控以及 Kafka 消息下发通道，方便第三方快速集成应用。
 
 EMQX 在公有云、私有云、混合云、物理机以及容器化多种部署化方式和成熟的产品形态，可以一站式解决金融业态中亟需解决的问题。
 

@@ -9,7 +9,7 @@
 
 ## 连接格式优化和自定义：序列化和 Schema
 
-eKuiper 通过 source/sink 与外部系统进行连接、读入或写出数据。以 source 为例，每种类型的 source 读取数据时都需要经过连接（connect）和序列化（serialization）两个步骤。例如，MQTT source，连接意味着遵循 MQTT 协议连接 broker，而序列化则是将读取到的数据 payload 解析成 eKuiper 内部的 map 格式。
+eKuiper 通过 source/sink 与外部系统进行连接、读入或写出数据。以 source 为例，每种类型的 source 读取数据时都需要经过连接（connect）和序列化（serialization）两个步骤。例如，[MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) source，连接意味着遵循 MQTT 协议连接 broker，而序列化则是将读取到的数据 payload 解析成 eKuiper 内部的 map 格式。
 
 ### 连接和序列化
 

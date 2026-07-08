@@ -2,7 +2,7 @@
 
 
 
-本文以常见物联网使用场景为例，介绍了如何利用 EMQX MQTT 服务器 + InfluxDB + Grafana 构建物联网数据可视化平台，将物联网设备上传的时序数据便捷地展现出来。
+本文以常见物联网使用场景为例，介绍了如何利用 EMQX [MQTT 服务器](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison) + InfluxDB + Grafana 构建物联网数据可视化平台，将物联网设备上传的时序数据便捷地展现出来。
 
 在物联网项目中接入平台的设备数据和数据存储方案有以下特点：
 
@@ -44,7 +44,7 @@ devices/{client_id}/messages
 
 ## 方案介绍
 
-目前市面上已有多款物联网消息中间件、时序数据库和数据可视化产品，结合数据的采集上报、联网接入、消息存储与可视化功能来看，EMQX（高性能物联网 MQTT 消息中间件） + InfluxDB（时序数据库）+ Grafana（美观、强大的可视化监控指标展示工具）组合无疑是最佳的物联网数据可视化集成方案。
+目前市面上已有多款物联网消息中间件、时序数据库和数据可视化产品，结合数据的采集上报、联网接入、消息存储与可视化功能来看，EMQX（高性能物联网 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 消息中间件） + InfluxDB（时序数据库）+ Grafana（美观、强大的可视化监控指标展示工具）组合无疑是最佳的物联网数据可视化集成方案。
 
 方案整体架构如下图所示：
 

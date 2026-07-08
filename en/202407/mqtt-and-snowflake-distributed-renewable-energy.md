@@ -8,9 +8,9 @@ This blog will discuss how EMQX and Snowflake can be used to collect, store, and
 
 ## Scenario Introduction
 
-Solar and wind power generation forecasting depends on geographic location, historical climate data, operational information systems, and power generation data. In this blog, we utilize the simulate command of the MQTT client tool, MQTTX CLI, along with a simulation script to generate multiple solar and wind power plants and simulate their data collection and submission.
+Solar and wind power generation forecasting depends on geographic location, historical climate data, operational information systems, and power generation data. In this blog, we utilize the simulate command of the [MQTT client](https://www.emqx.com/en/blog/mqtt-client-tools) tool, MQTTX CLI, along with a simulation script to generate multiple solar and wind power plants and simulate their data collection and submission.
 
-- These virtual plants connect to EMQX, periodically generate simulation data, and publishes their status data to a specified MQTT topic.
+- These virtual plants connect to EMQX, periodically generate simulation data, and publishes their status data to a specified [MQTT topic](https://www.emqx.com/en/blog/advanced-features-of-mqtt-topics).
 - EMQX receives the messages and stores them in Snowflake using its built-in rule engine and data integration features.
 - Snowflake saves these data and then analyzes them on its platform.
 
@@ -50,13 +50,13 @@ An example of the corresponding data is shown below:
 
 ## Installing EMQX Enterprise
 
-[EMQX Enterprise](https://www.emqx.com/en/products/emqx) is a robust MQTT platform designed for enterprise use, offering highly reliable and high-performance real-time data access, along with data processing and integration capabilities.
+[EMQX Enterprise](https://www.emqx.com/en/products/emqx) is a robust [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) platform designed for enterprise use, offering highly reliable and high-performance real-time data access, along with data processing and integration capabilities.
 
 For installation instructions, please refer to [this guide](https://docs.emqx.com/en/enterprise/latest/deploy/install.html).
 
 ## Preparing MQTTX Simulation Data
 
-The [MQTTX CLI](https://mqttx.app/cli) is a versatile and user-friendly MQTT 5.0 command line tool. It provides simulation commands that allow you to create simulation scripts using Node.js to generate and publish simulated messages.
+The [MQTTX CLI](https://mqttx.app/cli) is a versatile and user-friendly [MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5) command line tool. It provides simulation commands that allow you to create simulation scripts using Node.js to generate and publish simulated messages.
 
 1. Create a file named solar-wind-power-plant.js and paste the provided simulation script into it. You can also modify the script by following [this guide](https://mqttx.app/docs/cli/get-started#simulate).
 2. Run the script using the `simulate` command, specifying the script path and the number of clients to simulate:

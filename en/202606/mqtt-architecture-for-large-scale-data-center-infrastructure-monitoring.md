@@ -1,8 +1,8 @@
 > ***Executive Summary***
 >
-> *A global digital infrastructure provider managing multiple facilities needed to modernize its industrial IoT infrastructure monitoring. The organization faced the challenge of collecting and processing millions of data points per minute from SCADA systems while maintaining low-latency monitoring for critical infrastructure metrics.*
+> *A global digital infrastructure provider managing multiple facilities needed to modernize its [industrial IoT](https://www.emqx.com/en/blog/industrial-iot-systems) infrastructure monitoring. The organization faced the challenge of collecting and processing millions of data points per minute from SCADA systems while maintaining low-latency monitoring for critical infrastructure metrics.*
 >
-> *They deployed EMQX in a hybrid cloud-on-premises architecture using MQTT Sparkplug B for industrial data semantics. The platform ingests millions of tags across a multi-tier broker topology, processes data in real time, and integrates with cloud and time-series databases. The initial phase achieved high throughput with no infrastructure bottlenecks, enabling rapid global expansion.*
+> *They deployed EMQX in a hybrid cloud-on-premises architecture using [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) [Sparkplug B](https://www.emqx.com/en/solutions/mqtt-sparkplug) for industrial data semantics. The platform ingests millions of tags across a multi-tier broker topology, processes data in real time, and integrates with cloud and time-series databases. The initial phase achieved high throughput with no infrastructure bottlenecks, enabling rapid global expansion.*
 
 ## Large-Scale Data Centers: Overcoming Legacy SCADA Bottlenecks
 
@@ -15,7 +15,7 @@ Modern data centers require real-time visibility into:
 - Security and facility systems
 - Facility operations (fire suppression, water systems, fuel tanks)
 
-Infrastructure monitoring has traditionally relied on isolated SCADA networks or cloud-hosted systems with high latency and integration friction. Organizations investing in IIoT modernization need a standards-based, scalable platform that bridges on-premises SCADA systems with cloud data analytics while maintaining real-time responsiveness.
+Infrastructure monitoring has traditionally relied on isolated SCADA networks or cloud-hosted systems with high latency and integration friction. Organizations investing in [IIoT](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges) modernization need a standards-based, scalable platform that bridges on-premises SCADA systems with cloud data analytics while maintaining real-time responsiveness.
 
 ## **The Challenge: Scale, Complexity, and 24/7 Mission-Critical Demands**
 
@@ -48,7 +48,7 @@ The organization deployed EMQX in a two-pronged architecture:
 **North America Region**
 
 - 1 BYOC cluster handling regional aggregation: >1,000 concurrent connections, 20 MBps throughput, 500K msg/sec
-- 1 on-premises EMQX Enterprise cluster at the primary campus: 600 connections, 5 MBps
+- 1 on-premises [EMQX Enterprise](https://www.emqx.com/en/products/emqx) cluster at the primary campus: 600 connections, 5 MBps
 - Campus cluster forwards data to regional BYOC via cluster linking
 
 **EMEA Region**

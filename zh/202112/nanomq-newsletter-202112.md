@@ -1,4 +1,4 @@
-上个月，[NanoMQ 团队为 NNG 项目增加了 MQTT 协议支持](https://www.emqx.com/zh/blog/nanomq-newsletter-202111)。本月这一新生高效的 MQTT SDK（NanoSDK）正式合并入了 [https://github.com/nanomq/nanomq](https://github.com/nanomq/nanomq)  的主分支，在此基础上，我们还开发了 NanoMQ 的一项重要功能：MQTT 桥接。
+上个月，[NanoMQ 团队为 NNG 项目增加了 MQTT 协议支持](https://www.emqx.com/zh/blog/nanomq-newsletter-202111)。本月这一新生高效的 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) SDK（NanoSDK）正式合并入了 [https://github.com/nanomq/nanomq](https://github.com/nanomq/nanomq)  的主分支，在此基础上，我们还开发了 NanoMQ 的一项重要功能：MQTT 桥接。
 
 为了优先完成 [NanoMQ](https://nanomq.io/zh) 的 Broker 功能，我们在之前已深度修改了 NNG 底层代码，这导致 NanoMQ 无法与 NNG 原有功能和 SP 协议兼容。因此在这次合并中我们一并解决了 NanoMQ 与 NNG 的兼容问题。通过增加了若干独立的 NNG API，使得 Broker 和 SDK 能够共存。用户能够在使用 NanoMQ 的同时，不影响其中自带的 NNG 原有功能，同时可以更好地利用 NanoSDK 客户端来开发便捷的客户端功能。
 
@@ -87,7 +87,7 @@ bridge.mqtt.forwards=topic1/#,topic2/#
 bridge.mqtt.subscription.1.topic=cmd/topic1
 ```
 
-桥接的远端 MQTT Broker 的主题。即 NanoMQ 会订阅目标 Broker 的 cmd/topic1 主题。所桥接的 Broker 的 cmd/topic1 主题收到的所有消息，在 NanoMQ 本地的 cmd/topic1 都能同样受到。可按照编号增加主体数量。
+桥接的远端 [MQTT Broker](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison) 的主题。即 NanoMQ 会订阅目标 Broker 的 cmd/topic1 主题。所桥接的 Broker 的 cmd/topic1 主题收到的所有消息，在 NanoMQ 本地的 cmd/topic1 都能同样受到。可按照编号增加主体数量。
 
 ```
 ## Need to subscribe to remote topics QoS.

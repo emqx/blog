@@ -154,7 +154,7 @@ if __name__ == '__main__':
 **Steps**:
 
 1. Run `mqtt_subscriber.py`.
-2. Run `nats_publisher.py`. The MQTT subscriber will receive the NATS message.
+2. Run `nats_publisher.py`. The [MQTT subscriber](https://www.emqx.com/en/blog/mqtt-5-introduction-to-publish-subscribe-model) will receive the NATS message.
 
 ### **Scenario 2: MQTT Publishes, NATS Subscribes**
 

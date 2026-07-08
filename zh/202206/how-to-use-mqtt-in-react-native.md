@@ -1,8 +1,8 @@
 React Native 是 Facebook 推出并开源的跨平台移动应用开发框架，是 React 在原生移动应用平台的衍生产物，支持 iOS 和安卓两大平台。React Native 使用 Javascript 语言，类似于 HTML 的 JSX，以及 CSS 来开发移动应用，因此熟悉 Web 前端开发的技术人员只需很少的学习就可以进入移动应用开发领域，同时 React Native 也提供了接近原生应用的性能和体验。
 
-[MQTT](https://www.emqx.com/zh/mqtt-guide) 是一种基于发布/订阅模式的 **轻量级物联网消息传输协议** ，可在严重受限的硬件设备和低带宽、高延迟的网络上实现稳定传输。它凭借简单易实现、支持 QoS、报文小等特点，占据了物联网协议的半壁江山。
+[MQTT](https://www.emqx.com/zh/mqtt-guide) 是一种基于发布/订阅模式的 **轻量级物联网消息传输协议** ，可在严重受限的硬件设备和低带宽、高延迟的网络上实现稳定传输。它凭借简单易实现、支持 QoS、报文小等特点，占据了[物联网协议](https://www.emqx.com/zh/blog/iot-protocols-mqtt-coap-lwm2m)的半壁江山。
 
-本文主要介绍如何在 React Native 项目中使用 MQTT，实现客户端与服务器的连接、订阅、取消订阅、收发消息等功能。
+本文主要介绍如何在 React Native 项目中使用 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt)，实现客户端与服务器的连接、订阅、取消订阅、收发消息等功能。
 
 ### 新建 React Native 项目
 
@@ -20,7 +20,7 @@ npm install @react-native-async-storage/async-storage @rneui/base @rneui/themed
 npm install react_native_mqtt
 ```
 
-react_native_mqtt 是一个在 React Native 项目中使用的 MQTT 客户端模块，支持 iOS 和 Android。
+react_native_mqtt 是一个在 React Native 项目中使用的 [MQTT 客户端](https://www.emqx.com/zh/blog/mqtt-client-tools)模块，支持 iOS 和 Android。
 
 ### MQTT 客户端模块使用
 
@@ -124,7 +124,7 @@ npx react-native run-ios
 
 #### 连接
 
-点击 APP 中的 CONNECT 按钮，连接成功后的界面显示如下，其中顶部 ClientID 一行的内容变成绿色，表示已成功连接到 MQTT 服务器。
+点击 APP 中的 CONNECT 按钮，连接成功后的界面显示如下，其中顶部 ClientID 一行的内容变成绿色，表示已成功连接到 [MQTT 服务器](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison)。
 
 ![连接 MQTT 服务器](https://assets.emqx.com/images/2191362e7bf727560de823815ad9bce5.png)
 

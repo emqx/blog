@@ -1,8 +1,8 @@
-> **[EMQX Edge](https://www.emqx.com/en/products/emqx-edge)** is the enterprise edition of the open-source [NanoMQ](https://nanomq.io/) project, designed specifically for edge computing environments in IoT deployments. As a lightweight, high-performance [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison), EMQX Edge serves as a data aggregation hub at the edge, seamlessly bridging local IoT devices with cloud-based MQTT brokers such as EMQX Enterprise, AWS IoT Core, and other cloud IoT platforms.
+> **[EMQX Edge](https://www.emqx.com/en/products/emqx-edge)** is the enterprise edition of the open-source [NanoMQ](https://nanomq.io/) project, designed specifically for edge computing environments in IoT deployments. As a lightweight, high-performance [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison), EMQX Edge serves as a data aggregation hub at the edge, seamlessly bridging local IoT devices with cloud-based [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) brokers such as [EMQX Enterprise](https://www.emqx.com/en/products/emqx), [AWS IoT Core](https://www.emqx.com/en/blog/understanding-aws-iot-core), and other cloud IoT platforms.
 >
 > Built on the foundation of NanoMQ's proven architecture and enhanced with enterprise-grade features, EMQX Edge provides a robust, scalable solution for organizations requiring reliable edge-to-cloud data synchronization. The product's core strength lies in its advanced MQTT bridging capabilities, supporting TCP protocol to ensure optimal performance across diverse network conditions.
 
-We are excited to announce the release of [EMQX Edge](https://www.emqx.com/en/products/emqx-edge) 1.1.0, bringing powerful new features, enhanced performance, and improved stability to meet the evolving needs of industrial IoT deployments. This update introduces Windows system support, a revamped HTTP framework, advanced logging capabilities, enhanced security features, and numerous stability improvements.
+We are excited to announce the release of [EMQX Edge](https://www.emqx.com/en/products/emqx-edge) 1.1.0, bringing powerful new features, enhanced performance, and improved stability to meet the evolving needs of [industrial IoT](https://www.emqx.com/en/blog/industrial-iot-systems) deployments. This update introduces Windows system support, a revamped HTTP framework, advanced logging capabilities, enhanced security features, and numerous stability improvements.
 
 ## Key Features in EMQX Edge 1.1.0
 
@@ -11,7 +11,7 @@ We are excited to announce the release of [EMQX Edge](https://www.emqx.com/en/pr
 To address the widespread use of Windows in industrial environments, EMQX Edge 1.1.0 introduces full support for Windows systems. The Windows version maintains complete consistency with the Linux version in terms of startup, configuration, and management. However, the following differences apply:
 
 - ZMQ transport protocol is not supported.
-- QUIC transport protocol is not available for bridge configurations.
+- [QUIC](https://www.emqx.com/en/blog/quic-protocol-the-features-use-cases-and-impact-for-iot-iov) transport protocol is not available for bridge configurations.
 
 All core functionalities and user experiences remain identical across both platforms.
 

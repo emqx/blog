@@ -33,7 +33,7 @@ In this article, we will use [EMQX](https://github.com/emqx/emqx), an open-sourc
 
 ## The New Role of EMQX and Neuron Together
 
-EMQX and Neuron can be used together to create a [unified namespace](https://www.emqx.com/en/blog/unified-namespace-next-generation-data-fabric-for-iiot) for industrial IoT applications. A unified namespace is a common naming convention for MQTT topics that allows devices and applications to communicate with each other regardless of location or protocol. All devices and applications use the same MQTT topic hierarchy based on a common set of naming conventions and data models. This allows devices to discover and communicate with each other without the need for complex routing or translation mechanism.
+EMQX and Neuron can be used together to create a [unified namespace](https://www.emqx.com/en/blog/unified-namespace-next-generation-data-fabric-for-iiot) for [industrial IoT](https://www.emqx.com/en/blog/industrial-iot-systems) applications. A unified namespace is a common naming convention for MQTT topics that allows devices and applications to communicate with each other regardless of location or protocol. All devices and applications use the same MQTT topic hierarchy based on a common set of naming conventions and data models. This allows devices to discover and communicate with each other without the need for complex routing or translation mechanism.
 
 ![Industrial IoT](https://assets.emqx.com/images/a88f6c54e8877d322f0c1987c9f8e625.png)
 

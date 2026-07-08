@@ -1,6 +1,6 @@
 九月里，EMQX 团队收获颇丰。
 
-EMQX 获得了来自海外知名 IIoT 社区 4.0 Solutions 的赞誉，被称为「目前为止市场上最好的企业级 MQTT  消息中间件」，团队成员也受邀参与了社区交流活动。来自社区的肯定转化为项目推进的动力——v5.0 的首个 beta  版迎来了正式发布，又为用户带来了一些振奋人心的新功能。
+EMQX 获得了来自海外知名 IIoT 社区 4.0 Solutions 的赞誉，被称为「目前为止市场上最好的企业级 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt)  消息中间件」，团队成员也受邀参与了社区交流活动。来自社区的肯定转化为项目推进的动力——v5.0 的首个 beta  版迎来了正式发布，又为用户带来了一些振奋人心的新功能。
 
 撒下种子，总有收获的一天。
 
@@ -26,7 +26,7 @@ EMQX 获得了来自海外知名 IIoT 社区 4.0 Solutions 的赞誉，被称为
 - 统一的数据桥接和规则引擎功能
 - 新的配置管理（HOCON）
 - 异步数据库复制 (Mria) ，使集群更具扩展性
-- MQTT over QUIC：一个前沿研究项目
+- MQTT over [QUIC](https://www.emqx.com/zh/blog/quic-protocol-the-features-use-cases-and-impact-for-iot-iov)：一个前沿研究项目
 
 详细信息请查看发布说明。新功能已经公开，用户可以进行体验和评估。
 

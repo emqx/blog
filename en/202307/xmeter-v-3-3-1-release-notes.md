@@ -2,7 +2,7 @@
 
 We are excited to announce the release of XMeter 3.3.1, a comprehensive performance test platform explicitly designed for IoT applications. With an emphasis on scalability, flexibility, and ease of use, XMeter 3.3.1 revolutionizes how you test and optimize the performance of your IoT systems. 
 
-In this blog, let's delve into the enhanced deployment options and improved usability that makes XMeter a game-changer in MQTT performance testing.
+In this blog, let's delve into the enhanced deployment options and improved usability that makes XMeter a game-changer in [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) performance testing.
 
 ## The Challenge of MQTT Performance Testing
 

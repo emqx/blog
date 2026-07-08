@@ -1,11 +1,11 @@
 ## Introduction
 
-With the rise of MQTT as a standard messaging protocol for the Internet of Things (IoT), the MQTT desktop client is becoming an essential tool for developers to debug, test and develop IoT applications.
+With the rise of [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) as a standard messaging protocol for the Internet of Things (IoT), the MQTT desktop client is becoming an essential tool for developers to debug, test and develop IoT applications.
 
 This blog post will explore the top 3 MQTT desktop clients in 2023 based on their features, project activity, and user experience.
 
 - MQTTX
-- MQTT Explorer
+- [MQTT Explorer](https://www.emqx.com/en/blog/connecting-to-emqx-cloud-with-mqtt-explorer)
 - MQTT.fx
 
 ## Comparison At a Glance
@@ -18,10 +18,10 @@ First, we compare the 3 top MQTT desktop clients in the following chart.
 | **GitHub Project**                   | [MQTTX GitHub](https://github.com/emqx/mqttx)                | [MQTT-Explorer GitHub](https://github.com/thomasnordquist/MQTT-Explorer) | N/A                         |
 | **GitHub Stars**                     | 2.6k                                                         | 2.3k                                                         | N/A                         |
 | **Latest Release**                   | [v1.9.2](https://github.com/emqx/MQTTX/releases/tag/v1.9.2) (Apr 29, 2023) | [0.4.0-beta1](https://github.com/thomasnordquist/MQTT-Explorer/releases/tag/0.0.0-0.4.0-beta1) (Apr 28, 2020) | N/A                         |
-| **MQTT 5.0 Support**                 | Yes                                                          | Yes                                                          | Yes                         |
+| **[MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5) Support**                 | Yes                                                          | Yes                                                          | Yes                         |
 | **MQTT Connectivity**                | Excellent                                                    | Good                                                         | Moderate                    |
 | **MQTT over TCP**                    | Yes                                                          | Yes                                                          | Yes                         |
-| **MQTT over TLS/SSL**                | Yes                                                          | Yes                                                          | Yes                         |
+| **[MQTT over TLS](https://www.emqx.com/en/blog/fortifying-mqtt-communication-security-with-ssl-tls)/SSL**                | Yes                                                          | Yes                                                          | Yes                         |
 | **MQTT over WebSocket (WS)**         | Yes                                                          | Yes                                                          | No                          |
 | **MQTT over Secure WebSocket (WSS)** | Yes                                                          | Yes                                                          | No                          |
 | **Multiple Connections**             | Yes                                                          | No                                                           | No                          |
@@ -35,7 +35,7 @@ First, we compare the 3 top MQTT desktop clients in the following chart.
 
 ## Free Public MQTT Broker
 
-Before diving into the MQTT client desktop tools, we need an MQTT Broker to communicate and test. We choose the free public MQTT broker available on `broker.emqx.io`.
+Before diving into the [MQTT client](https://www.emqx.com/en/blog/mqtt-client-tools) desktop tools, we need an [MQTT Broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) to communicate and test. We choose the free public MQTT broker available on `broker.emqx.io`.
 
 >**MQTT Broker Info**
 >

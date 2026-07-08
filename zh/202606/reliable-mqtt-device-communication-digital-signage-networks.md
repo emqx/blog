@@ -1,6 +1,6 @@
 数字标牌（Digital Signage）是以大屏幕终端为载体，通过动态交互功能在公共场所定向投放广告及多媒体信息的专业视听系统。一家全球化的数字标牌解决方案提供商，管理着遍布零售、银行、机场和企业办公场景的物联网智能显示屏，设备分布在北美和欧洲各地。
 
-**从试点测试到生产部署，该企业使用 EMQX 实现了平稳过渡。**随着业务规模不断扩大，他们需要一套可靠、安全的 MQTT Broker 架构：既要支撑快速的全球扩展，又要具备单设备独立认证、灾难恢复的能力，满足在 Google Cloud Platform 上实现高性价比云端部署的要求。
+**从试点测试到生产部署，该企业使用 EMQX 实现了平稳过渡。**随着业务规模不断扩大，他们需要一套可靠、安全的 [MQTT Broker](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison) 架构：既要支撑快速的全球扩展，又要具备单设备独立认证、灾难恢复的能力，满足在 Google Cloud Platform 上实现高性价比云端部署的要求。
 
 **EMQX 的多区域集群、细粒度访问控制和 GCP 原生架构，为安全、可扩展的数字标牌管理提供了基础。**
 
@@ -22,7 +22,7 @@
 
 ## 为什么选择 MQTT 构建数字标牌网络
 
-MQTT 轻量级的发布 - 订阅架构非常适合这一场景：
+[MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 轻量级的发布 - 订阅架构非常适合这一场景：
 
 - **低带宽开销**：二进制协议头极小，适配零售环境中常见的电池供电边缘设备和高延迟网络条件。
 - **QoS 灵活性**：稳态心跳使用 QoS 0，内容更新使用 QoS 1，避免了在稳定连接上不必要的确认开销。
@@ -42,7 +42,7 @@ MQTT 轻量级的发布 - 订阅架构非常适合这一场景：
 
 ### 认证与授权
 
-每台设备分配唯一的 MQTT Client ID 和预共享凭证（对称密钥或证书）。EMQX 内置数据库与细粒度 ACL 规则，为每台设备强制执行主题权限：
+每台设备分配唯一的 [MQTT Client](https://www.emqx.com/zh/blog/mqtt-client-tools) ID 和预共享凭证（对称密钥或证书）。EMQX 内置数据库与细粒度 ACL 规则，为每台设备强制执行主题权限：
 
 - 主题：`signage/{location-id}/{device-id}/*` → 允许
 - 主题：`signage/{other-location-id}/*` → 拒绝

@@ -10,7 +10,7 @@ The charging point infrastructure network is vast with numerous sites and statio
 
 ### Unified Access for Various Equipment Within Charging Stations
 
-There are various equipment that need to be connected to the charging stations besides charging points. Smart control units are deployed to connect charging points, meters, payment devices, etc., to collect and process charging and payment data. Additional equipment like cabinets, transformers, barriers, sensors, and smart lighting can be connected for environmental and security monitoring. Communication gateway devices are required to aggregate and upload data to cloud platforms using IoT protocols like [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt), LwM2M, and [CoAP](https://www.emqx.com/en/blog/coap-protocol).
+There are various equipment that need to be connected to the charging stations besides charging points. Smart control units are deployed to connect charging points, meters, payment devices, etc., to collect and process charging and payment data. Additional equipment like cabinets, transformers, barriers, sensors, and smart lighting can be connected for environmental and security monitoring. Communication gateway devices are required to aggregate and upload data to cloud platforms using [IoT protocols](https://www.emqx.com/en/blog/iot-protocols-mqtt-coap-lwm2m) like [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt), LwM2M, and [CoAP](https://www.emqx.com/en/blog/coap-protocol).
 
 ### Connectivity and Data Security
 
@@ -29,7 +29,7 @@ EMQ provides a cloud-edge collaborative solution based on the [EMQX MQTT platfor
 Typically, a charging point management and operation system can be divided into three layers: 
 
 1. **Device Layer:** NeuronEX industrial gateway provided by EMQ aggregates real-time data from various devices using different protocols and uploads it to the cloud platform side via the MQTT protocol.
-2. **Network Layer:** Utilizing MQTT’s features like keep alive, session persistence, and QoS, even if there are connection disruptions in complex station network environments, message delivery can resume after reconnection.
+2. **Network Layer:** Utilizing MQTT’s features like [keep alive](https://www.emqx.com/en/blog/mqtt-keep-alive), session persistence, and QoS, even if there are connection disruptions in complex station network environments, message delivery can resume after reconnection.
 3. **Cloud Layer:** The EMQX MQTT platform supports multi-protocol, high-concurrency access and has robust data processing capabilities. Through its built-in rule engine, EMQX can flexibly bridge data from charging points and various other devices to the corresponding databases based on different business needs.
 
 ### Data Collection from Various Types of Devices 

@@ -11,7 +11,7 @@ While EMQX Platform has always been available on AWS, before making it available
 
 We are happy to say that having two separate bills is no longer necessary, and you can now subscribe to EMQX Platform with your existing AWS account. And just like that, any consumption of EMQX Platform will be reflected on your monthly AWS bill.
 
-Having EMQX Platform through a single, integrated billing model is not the only advantage. As the world's first fully managed MQTT 5.0 public cloud service, EMQX Platform provides a one-stop O&M colocation and a unique isolated environment for MQTT services. Now you can use EMQX Platform through AWS marketplace and easily combine it with other AWS services like Amazon S3, Amazon Kinesis, and Amazon Redshift, which allow you to focus on creating and inventing applications.
+Having EMQX Platform through a single, integrated billing model is not the only advantage. As the world's first fully managed [MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5) public cloud service, EMQX Platform provides a one-stop O&M colocation and a unique isolated environment for [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) services. Now you can use EMQX Platform through AWS marketplace and easily combine it with other AWS services like Amazon S3, Amazon Kinesis, and Amazon Redshift, which allow you to focus on creating and inventing applications.
 
 
 ## How to get started quickly through AWS marketplace?

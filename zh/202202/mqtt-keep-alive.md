@@ -1,19 +1,19 @@
 ## 为什么需要 Keep Alive
 
-[MQTT 协议](https://mqtt.org/)是承载于 TCP 协议之上的，而 TCP 协议以连接为导向，在连接双方之间，提供稳定、有序的字节流功能。 但是，在部分情况下，TCP 可能出现半连接问题。所谓半连接，是指某一方的连接已经断开或者没有建立，而另外一方的连接却依然维持着。在这种情况下，半连接的一方可能会持续不断地向对端发送数据，而显然这些数据永远到达不了对端。为了避免半连接导致的通信黑洞，MQTT 协议提供了 **Keep Alive** 机制，使客户端和 MQTT 服务器可以判定当前是否存在半连接问题，从而关闭对应连接。
+[MQTT 协议](https://mqtt.org/)是承载于 TCP 协议之上的，而 TCP 协议以连接为导向，在连接双方之间，提供稳定、有序的字节流功能。 但是，在部分情况下，TCP 可能出现半连接问题。所谓半连接，是指某一方的连接已经断开或者没有建立，而另外一方的连接却依然维持着。在这种情况下，半连接的一方可能会持续不断地向对端发送数据，而显然这些数据永远到达不了对端。为了避免半连接导致的通信黑洞，[MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 协议提供了 **Keep Alive** 机制，使客户端和 MQTT 服务器可以判定当前是否存在半连接问题，从而关闭对应连接。
 
 
 ## MQTT Keep Alive 的机制流程与使用
 
 ### 启用 Keep Alive
 
-客户端在创建和 MQTT Broker 的连接时，只要将连接请求协议包内的 *Keep Alive* 可变头部字段设置为非 0 值，就可以在通信双方间启用 **Keep Alive** 机制。 *Keep Alive* 为 0~65535 的一个整数，代表客户端发送两次 MQTT 协议包之间的最大间隔时间。
+客户端在创建和 [MQTT Broker](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison) 的连接时，只要将连接请求协议包内的 *Keep Alive* 可变头部字段设置为非 0 值，就可以在通信双方间启用 **Keep Alive** 机制。 *Keep Alive* 为 0~65535 的一个整数，代表客户端发送两次 MQTT 协议包之间的最大间隔时间。
 
 而 Broker 在收到客户端的连接请求后，会检查可变头部中的 *Keep Alive* 字段的值，如果有值，则 Broker 将会启用 **Keep Alive** 机制。
 
 ### MQTT 5.0 Server Keep Alive
 
-在 [MQTT 5.0](https://www.emqx.com/zh/blog/introduction-to-mqtt-5) 标准中，引入了 *Server Keep Alive* 的概念，允许 Broker 根据自身的实现等因素，选择接受客户端请求中携带的 *Keep Alive* 值，或者是覆盖这个值。如果 Broker 选择覆盖这个值，则需要将新值设置在连接确认包(**CONNACK**) 的 *Server Keep Alive* 字段中，客户端如果在连接确认包中读取到了 *Server Keep Alive*，则需要使用该值，覆盖自己之前的 *Keep Alive* 的值。
+在 [MQTT 5.0](https://www.emqx.com/zh/blog/introduction-to-mqtt-5) 标准中，引入了 *Server Keep Alive* 的概念，允许 Broker 根据自身的实现等因素，选择接受客户端请求中携带的 *Keep Alive* 值，或者是覆盖这个值。如果 Broker 选择覆盖这个值，则需要将新值设置在连接确认包(**[CONNACK](https://www.emqx.com/zh/blog/mqtt5-new-features-reason-code-and-ack)**) 的 *Server Keep Alive* 字段中，客户端如果在连接确认包中读取到了 *Server Keep Alive*，则需要使用该值，覆盖自己之前的 *Keep Alive* 的值。
 
 ### Keep Alive 机制流程
 

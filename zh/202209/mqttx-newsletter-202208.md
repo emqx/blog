@@ -1,4 +1,4 @@
-本月，[MQTTX](https://mqttx.app/zh) 团队发布了 1.8.2 版本，目前正专注于 1.8.3 版本的开发。在 1.8.2 版本中，我们主要优化了使用体验并修复了 MQTTX 桌面端 1.8.1 版本中的一些使用问题，新增了使用 Docker 来安装和部署 MQTTX CLI 与 MQTTX Web，同时 MQTTX Web 支持了更多的 MQTT 5.0 属性配置。
+本月，[MQTTX](https://mqttx.app/zh) 团队发布了 1.8.2 版本，目前正专注于 1.8.3 版本的开发。在 1.8.2 版本中，我们主要优化了使用体验并修复了 MQTTX 桌面端 1.8.1 版本中的一些使用问题，新增了使用 Docker 来安装和部署 MQTTX CLI 与 MQTTX Web，同时 MQTTX Web 支持了更多的 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 5.0 属性配置。
 
 ## MQTTX 桌面端应用
 

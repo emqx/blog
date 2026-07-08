@@ -28,7 +28,7 @@ First, let's get Snowflake ready to receive the high-speed data stream. We'll cr
 
 ### Step 1. Create the Database, Table, and Pipe
 
-Log in to your Snowflake worksheet and execute the following SQL. We'll create a database (`testdatabase`), a target table (`emqx`), and the `CREATE PIPE` command that enables streaming ingestion. This pipe is the high-speed on-ramp for your MQTT data.
+Log in to your Snowflake worksheet and execute the following SQL. We'll create a database (`testdatabase`), a target table (`emqx`), and the `CREATE PIPE` command that enables streaming ingestion. This pipe is the high-speed on-ramp for your [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) data.
 
 ```sql
 USE ROLE accountadmin;
@@ -150,7 +150,7 @@ Click **Create**, and you're done! The integration is now live.
 
 ### Step 1. Publish an MQTT Message
 
-Use any MQTT client, like [MQTTX](https://mqttx.app/), to publish a message to the topic you defined in the rule (`emqx/snowflake`).
+Use any [MQTT client](https://www.emqx.com/en/blog/mqtt-client-tools), like [MQTTX](https://mqttx.app/), to publish a message to the topic you defined in the rule (`emqx/snowflake`).
 
 - **Topic**: `emqx/snowflake`
 - **Payload**: `{"msg": "Hello Snowflake"}`

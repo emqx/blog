@@ -1,4 +1,4 @@
-近日，由 EMQ 开源的跨平台 MQTT 5.0 桌面测试客户端[ MQTTX 发布了最新版本 v1.7.0](https://www.emqx.com/zh/blog/mqttx-v-1-7-0-release-notes)。MQTTX 支持快速创建多个同时在线的 MQTT 客户端，方便测试 MQTT/TCP、MQTT/TLS、MQTT/WebSocket 的连接、发布、订阅功能及其他 [MQTT 协议](https://www.emqx.com/zh/mqtt-guide)特性。
+近日，由 EMQ 开源的跨平台 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 5.0 桌面测试客户端[ MQTTX 发布了最新版本 v1.7.0](https://www.emqx.com/zh/blog/mqttx-v-1-7-0-release-notes)。MQTTX 支持快速创建多个同时在线的 [MQTT 客户端](https://www.emqx.com/zh/blog/mqtt-client-tools)，方便测试 MQTT/TCP、MQTT/TLS、MQTT/WebSocket 的连接、发布、订阅功能及其他 [MQTT 协议](https://www.emqx.com/zh/mqtt-guide)特性。
 
 新发布的 1.7.0 版本对 [MQTT 5.0](https://www.emqx.com/zh/blog/introduction-to-mqtt-5) 实现了更为全面的支持，是全球目前为止对 MQTT 5.0 支持最为完整的桌面测试客户端工具。同时新增了很多优化用户体验的功能。
 
@@ -6,7 +6,7 @@
 
 ## 准备 MQTT 消息服务器
 
-在使用 MQTTX v1.7.0 对 MQTT 5.0 的特性进行测试之前，我们首先需要准备支持 MQTT 5.0 的 MQTT Broker。
+在使用 MQTTX v1.7.0 对 MQTT 5.0 的特性进行测试之前，我们首先需要准备支持 MQTT 5.0 的 [MQTT Broker](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison)。
 
 本文将使用由 [EMQX Cloud](https://www.emqx.com/zh/cloud) 提供的免费在线 MQTT 5.0 服务器配合 MQTTX 客户端进行测试。作为一款全托管的云原生 MQTT 5.0 消息服务，EMQX Cloud 可以在数分钟内快速创建一个 MQTT 服务，并且完整支持 MQTT 5.0 协议，也是全球首个全托管的 MQTT 5.0 公有云服务。
 

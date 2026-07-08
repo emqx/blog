@@ -50,9 +50,9 @@ QUIC has many advantages over existing TLS over TCP implementation:
 
 ## Prospects for QUIC in MQTT communication scenarios
 
-MQTT is a connection-based IoT communication protocol with a compact message structure that enables stable transmission over severely constrained hardware devices and low-bandwidth, high-latency networks. The keep alive mechanism, [will message](https://www.emqx.com/en/blog/use-of-mqtt-will-message), QoS, and many other features can cope with various IoT scenarios.
+MQTT is a connection-based [IoT communication protocol](https://www.emqx.com/en/blog/iot-protocols-mqtt-coap-lwm2m) with a compact message structure that enables stable transmission over severely constrained hardware devices and low-bandwidth, high-latency networks. The [keep alive](https://www.emqx.com/en/blog/mqtt-keep-alive) mechanism, [will message](https://www.emqx.com/en/blog/use-of-mqtt-will-message), QoS, and many other features can cope with various IoT scenarios.
 
-Nevertheless, the MQTT protocol has inherent drawbacks in certain complex network environments due to underlying TCP transport protocol limitations.
+Nevertheless, the [MQTT protocol](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) has inherent drawbacks in certain complex network environments due to underlying TCP transport protocol limitations.
 
 - Frequent connection interruptions due to network switching
 - Difficult to re-establish connection after disconnection: the operating system is slow to release resources after disconnection, and the application layer cannot sense the disconnection status in time, and the Server/Client overhead is high when reconnecting
@@ -236,9 +236,9 @@ EMQ is also actively promoting the standardization of MQTT over QUIC. We are pre
 
 ## Epilogue
 
-It’s quite obvious that QUIC is very suitable for the weak, lossy, spotty IoT network environment where the UDP MTU size of the traditional TCP/IP network can be guaranteed or the environment where the network is frequently switched. QUIC has great potential for IoT scenarios where the devices are constantly on the move (such as the Internet of vehicles, mobile collection, etc.), or the device wants to keep long living MQTT session while has to sleep periodically.
+It’s quite obvious that QUIC is very suitable for the weak, lossy, spotty IoT network environment where the UDP MTU size of the traditional TCP/IP network can be guaranteed or the environment where the network is frequently switched. QUIC has great potential for IoT scenarios where the devices are constantly on the move (such as the Internet of vehicles, mobile collection, etc.), or the device wants to keep long living [MQTT session](https://www.emqx.com/en/blog/mqtt-session) while has to sleep periodically.
 
-MQTT over QUIC of EMQX 5.0 is the first implementation around the world, making EMQ once again lead the global trend of MQTT brokers. EMQ will continue the technological innovations to drive the continuous iterative upgrade of products and provide a reliable infrastructure for the IoT field to power business innovation.
+MQTT over QUIC of EMQX 5.0 is the first implementation around the world, making EMQ once again lead the global trend of [MQTT brokers](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison). EMQ will continue the technological innovations to drive the continuous iterative upgrade of products and provide a reliable infrastructure for the IoT field to power business innovation.
 
 
 <section class="promotion">

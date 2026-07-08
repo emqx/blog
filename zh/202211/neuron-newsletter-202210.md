@@ -1,4 +1,4 @@
-十月份，我们发布了 Neuron 2.2.6 与 2.2.7 版本，优化修复了在 2.2 版本中发现的一系列问题；新增了监控插件，主要用于以 HTTP、MQTT 的方式对外提供系统内部以及各插件特有的一些监控统计信息；新增三菱 A1E 驱动以适配三菱较老的 PLC 型号；新增 FANUC 驱动支持从发那科机床上采集一些基础数据。
+十月份，我们发布了 Neuron 2.2.6 与 2.2.7 版本，优化修复了在 2.2 版本中发现的一系列问题；新增了监控插件，主要用于以 HTTP、[MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 的方式对外提供系统内部以及各插件特有的一些监控统计信息；新增三菱 A1E 驱动以适配三菱较老的 PLC 型号；新增 FANUC 驱动支持从发那科机床上采集一些基础数据。
 
 ## 监控统计
 
@@ -35,7 +35,7 @@
 
 - 修复大量配置请求时，数据库超时的问题。
 - 修复 UI 写入 UINT32 数据类型错误的问题。
-- 修复 OPC UA 采集数据较慢的问题。
+- 修复 [OPC UA](https://www.emqx.com/zh/blog/opc-ua-protocol) 采集数据较慢的问题。
 
 
 <section class="promotion">

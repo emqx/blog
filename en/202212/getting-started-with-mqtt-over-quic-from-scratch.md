@@ -93,7 +93,7 @@ MQTT over QUIC is disabled by default. You can enable it manually following the 
 
 ## Clients and tools for MQTT over QUIC
 
-The clients and the tools for MQTT over QUIC are not feature-complete as regular MQTT client.
+The clients and the tools for MQTT over QUIC are not feature-complete as regular [MQTT client](https://www.emqx.com/en/blog/mqtt-client-tools).
 
 On the basis of scenarios suitable for the MQTT, we are planning to provide clients in multiple languages, such as C, Java, Python, and Golang. These clients will be developed in priority order, so that the appropriate scenarios, such as the embedded hardware, will be able to benefit from QUIC as quickly as possible.
 
@@ -139,11 +139,11 @@ NanoSDK also provides Java binding and Python binding. For examples please refer
 
 ## Bridge MQTT 3.1.1/5.0 and MQTT over QUIC via NanoMQ
 
-[NanoMQ](https://nanomq.io/) is an ultra-lightweight, high-performance, and cross-platform MQTT broker for IoT edge. It can be used as a message bus for many protocols, and it can bridge the MQTT and the MQTT over QUIC. It relays [MQTT packets](https://www.emqx.com/en/blog/introduction-to-mqtt-control-packets) over QUIC protocol, which are sent to the EMQX on the cloud. Therefore, the edge devices that can't be integrated with the MQTT over QUIC SDK or can’t find the appropriate MQTT over QUIC SDK and the embedded devices whose firmware can't be modified can take advantage of the [QUIC protocol](https://www.emqx.com/en/blog/quic-protocol-the-features-use-cases-and-impact-for-iot-iov) in IoT scenarios. This will be very convenient for the user.
+[NanoMQ](https://nanomq.io/) is an ultra-lightweight, high-performance, and cross-platform [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) for IoT edge. It can be used as a message bus for many protocols, and it can bridge the MQTT and the MQTT over QUIC. It relays [MQTT packets](https://www.emqx.com/en/blog/introduction-to-mqtt-control-packets) over QUIC protocol, which are sent to the EMQX on the cloud. Therefore, the edge devices that can't be integrated with the MQTT over QUIC SDK or can’t find the appropriate MQTT over QUIC SDK and the embedded devices whose firmware can't be modified can take advantage of the [QUIC protocol](https://www.emqx.com/en/blog/quic-protocol-the-features-use-cases-and-impact-for-iot-iov) in IoT scenarios. This will be very convenient for the user.
 
 ![NanoMQ](https://assets.emqx.com/images/29f87fcca9842bc1ffc22422178c6ca6.png)
 
-Since NanoMQ has the capability to handle many protocols, it is very useful in IoT scenarios, where data is synchronized with the cloud services. It can be used as the message bus and storage system for the common broker/brokerless messaging protocols, such as HTTP, MQTT 3.1.1/5.0, WebSocket, nanomsg/nng, and ZeroMQ. NanoMQ's 'actor', a powerful and built-in model for the processing of messages, converts the data of these protocols into standard messages from the MQTT protocol, and they are sent to the Cloud through QUIC.
+Since NanoMQ has the capability to handle many protocols, it is very useful in IoT scenarios, where data is synchronized with the cloud services. It can be used as the message bus and storage system for the common broker/brokerless messaging protocols, such as HTTP, MQTT 3.1.1/5.0, WebSocket, nanomsg/nng, and ZeroMQ. NanoMQ's 'actor', a powerful and built-in model for the processing of messages, converts the data of these protocols into standard messages from the [MQTT protocol](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt), and they are sent to the Cloud through QUIC.
 
 This fully uses the capacities of the MQTT over QUIC, like 0RTT fast reconnection, and passive address switching, to solve common problems in the IoT connection, such as network roaming, the weak transmission of networks, and the head-of-line blocking of TCP. You can also redirect, cache, or persist data through the Rule Engine of NanoMQ.
 

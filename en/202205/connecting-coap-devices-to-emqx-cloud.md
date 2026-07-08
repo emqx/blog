@@ -2,13 +2,13 @@ With the development and popularity of IoT technology, more and more smart devic
 
 Most of the devices in IoT scenarios are resource-constrained, such as CPU, RAM, Flash, and network broadband. In particular, battery-powered devices are sensitive to power consumption and transmission protocol bandwidth. Also, the direct use of TCP and HTTP protocols for data exchange between devices and platforms cannot meet the requirements of devices for low power consumption.
 
-To enable these devices to access the network smoothly, the [CoAP protocol](https://www.emqx.com/en/blog/coap-protocol) was born. As a fully managed MQTT messaging service dedicated to providing data connectivity for various IoT scenarios, [EMQX Cloud](https://www.emqx.com/en/cloud) also supports CoAP protocol access to devices, allowing them to publish, subscribe, and receive messages to EMQX Cloud in a defined CoAP message format.
+To enable these devices to access the network smoothly, the [CoAP protocol](https://www.emqx.com/en/blog/coap-protocol) was born. As a fully managed [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) messaging service dedicated to providing data connectivity for various IoT scenarios, [EMQX Cloud](https://www.emqx.com/en/cloud) also supports CoAP protocol access to devices, allowing them to publish, subscribe, and receive messages to EMQX Cloud in a defined CoAP message format.
 
 >**EMQX Cloud Introduction**
 >
 >EMQX Cloud is a fully managed cloud-native MQTT service from EMQ that connects to massive IoT devices and integrates with various databases and business systems.
 >
->As the world's first fully managed MQTT 5.0 public cloud service, EMQX Cloud provides one-stop O&M colocation and MQTT messaging services in a unique isolated environment.
+>As the world's first fully managed [MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5) public cloud service, EMQX Cloud provides one-stop O&M colocation and MQTT messaging services in a unique isolated environment.
 >
 >In the era of the Internet of Everything, EMQX Cloud can help users quickly build industry applications for the IoT field and can help users quickly build industry applications for the IoT field, and easily realize the collection, transmission, calculation, and persistence of IoT data.
 >

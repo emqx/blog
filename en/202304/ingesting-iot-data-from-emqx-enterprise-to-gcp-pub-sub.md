@@ -29,7 +29,7 @@ After successfully creating a Pub/Sub topic and gaining familiarity with its bas
 
 ## Forward MQTT Messages to Pub/Sub
 
-EMQX Enterprise offers GCP Pub/Sub integration for easy IoT Core migration. Even if you are not an IoT Core user, you can still forward client events and messages to the relevant Pub/Sub topics, integrating IoT data with applications and services on Google Cloud.
+EMQX Enterprise offers GCP Pub/Sub integration for easy [IoT Core](https://www.emqx.com/en/blog/understanding-aws-iot-core) migration. Even if you are not an IoT Core user, you can still forward client events and messages to the relevant Pub/Sub topics, integrating IoT data with applications and services on Google Cloud.
 
 The following steps are to configure Pub/Sub integration on EMQX Enterprise.
 

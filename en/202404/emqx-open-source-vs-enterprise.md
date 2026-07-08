@@ -14,17 +14,17 @@ This blog explores the distinctions between EMQX Enterprise and Open Source edit
 
 ## **EMQX Open Source Edition Overview**
 
-Introduced in 2012 as emqttd (Erlang MQTT Broker) and available under the Apache version 2.0 license, EMQX was developed using Erlang/OTP, a language known for creating scalable soft real-time systems. It has evolved to be the most scalable open-source MQTT broker, widely embraced in IoT, IIoT, and connected vehicle applications.
+Introduced in 2012 as emqttd (Erlang MQTT Broker) and available under the Apache version 2.0 license, EMQX was developed using Erlang/OTP, a language known for creating scalable soft real-time systems. It has evolved to be the most scalable open-source MQTT broker, widely embraced in IoT, [IIoT](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges), and connected vehicle applications.
 
 Key features that distinguish EMQX as an exemplary MQTT broker for IoT data messaging include:
 
 - **Device Connectivity**: Supports connecting up to 100 million IoT devices using the MQTT protocol within a single EMQX cluster.
   - **MQTT 5.0 Support**: Fully compatible with [MQTT v5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5) and v3.1.1 protocol specifications.
-  - **MQTT over QUIC**: Supports the next-generation standard IoT protocol with capabilities of stream multiplexing and 0-RTT.
+  - **[MQTT over QUIC](https://www.emqx.com/en/blog/mqtt-over-quic)**: Supports the next-generation standard [IoT protocol](https://www.emqx.com/en/blog/iot-protocols-mqtt-coap-lwm2m) with capabilities of stream multiplexing and 0-RTT.
   - **Multi-Protocol Support**: Offers comprehensive protocol support including [MQTT-SN](https://www.emqx.com/en/blog/connecting-mqtt-sn-devices-using-emqx), STOMP, LwM2M/[CoAP](https://www.emqx.com/en/blog/coap-protocol) through the extended gateway.
-  - **Modbus & OPC UA**: Facilitates connection to a variety of industrial devices using over 80 industrial protocols via NeuronEX integration.
+  - **Modbus & [OPC UA](https://www.emqx.com/en/blog/opc-ua-protocol)**: Facilitates connection to a variety of industrial devices using over 80 industrial protocols via NeuronEX integration.
 - **Security & Authentication:** Ensures secure communication with MQTT through TLS, and authenticates clients using JWT, PSK, and X.509 certificate mechanisms.
-  - **MQTT over TLS**: Establishes secure MQTT connections and encrypts data using **TLS 1.2 and TLS 1.3.**
+  - **[MQTT over TLS](https://www.emqx.com/en/blog/fortifying-mqtt-communication-security-with-ssl-tls)**: Establishes secure MQTT connections and encrypts data using **TLS 1.2 and TLS 1.3.**
   - **Authentication**: Supports diverse authentication mechanisms including username/password, **JWT**, PSK, and **X.509 certificates**.
   - **Access Control**: Utilizes ACLs to finely control client-to-topic publish/subscribe actions.
 - **Pub/Sub Messaging**: Facilitates flexible communication patterns such as one-to-one, one-to-many, and many-to-one.
@@ -89,7 +89,7 @@ Ultimately, the choice between EMQX Open Source and EMQX Enterprise hinges on yo
 
 ## **Use Cases: Why Industries are Adopting EMQX Enterprise**
 
-- [**Automotive**](https://www.emqx.com/en/solutions/internet-of-vehicles): EMQX Enterprise offers the automotive industry a modern, proven, cutting-edge MQTT platform that unifies MQTT broker, rules engine, and stream processing. It pioneers MQTT over QUIC, the next-gen standard protocol for IoV messaging, serving over 50 automotive companies and connecting more than 10 million electric and traditional vehicles.
+- [**Automotive**](https://www.emqx.com/en/solutions/internet-of-vehicles): EMQX Enterprise offers the automotive industry a modern, proven, cutting-edge MQTT platform that unifies MQTT broker, rules engine, and stream processing. It pioneers MQTT over [QUIC](https://www.emqx.com/en/blog/quic-protocol-the-features-use-cases-and-impact-for-iot-iov), the next-gen standard protocol for IoV messaging, serving over 50 automotive companies and connecting more than 10 million electric and traditional vehicles.
 
   See more use cases: 
 

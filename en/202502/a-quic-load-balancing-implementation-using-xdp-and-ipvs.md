@@ -1,6 +1,6 @@
 ## Introduction
 
-The web is constantly evolving, demanding faster and more reliable connections. In recent years, the QUIC protocol has emerged as a game-changer, offering significant improvements over traditional TCP/IP for web traffic. QUIC boasts features like congestion control, reduced latency, and improved security, making it a compelling choice for modern mobile applications.
+The web is constantly evolving, demanding faster and more reliable connections. In recent years, the [QUIC](https://www.emqx.com/en/blog/quic-protocol-the-features-use-cases-and-impact-for-iot-iov) protocol has emerged as a game-changer, offering significant improvements over traditional TCP/IP for web traffic. QUIC boasts features like congestion control, reduced latency, and improved security, making it a compelling choice for modern mobile applications.
 
 However, with great power comes great responsibility. As QUIC adoption grows, efficiently managing high traffic volumes becomes crucial. Traditional load balancing methods, often designed for TCP/IP, struggle with QUIC's multiplexing nature. This can lead to bottlenecks and hinder the full potential of QUIC.
 

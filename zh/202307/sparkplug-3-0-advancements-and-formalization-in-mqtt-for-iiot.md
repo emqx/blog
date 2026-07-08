@@ -1,4 +1,4 @@
-MQTT Sparkplug 是广泛应用于[工业物联网](https://www.emqx.com/zh/blog/iiot-explained-examples-technologies-benefits-and-challenges)领域的通信协议。Sparkplug 3.0 是其最新版本，进行了诸多重大改进和规范化。该版本由 Eclipse Sparkplug Working Group 制定，旨在澄清之前 2.2 版本规范中存在的不明确之处，并与 2.2 版本保持兼容。
+[MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) Sparkplug 是广泛应用于[工业物联网](https://www.emqx.com/zh/blog/iiot-explained-examples-technologies-benefits-and-challenges)领域的通信协议。Sparkplug 3.0 是其最新版本，进行了诸多重大改进和规范化。该版本由 Eclipse Sparkplug Working Group 制定，旨在澄清之前 2.2 版本规范中存在的不明确之处，并与 2.2 版本保持兼容。
 
 ## **Sparkplug 3.0 的主要改进**
 

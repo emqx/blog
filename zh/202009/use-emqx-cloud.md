@@ -9,7 +9,7 @@
 
 ## 实验目标与基本要求
 
-使用户快速了解 EMQX Cloud 物联网云服务的优势与特性，完成账号注册与试用部署创建，接入物联网设备进行消息收发，存储设备数据到华为云 Kafka 与数据库中
+使用户快速了解 [EMQX Cloud](https://www.emqx.com/zh/cloud) 物联网云服务的优势与特性，完成账号注册与试用部署创建，接入物联网设备进行消息收发，存储设备数据到华为云 Kafka 与数据库中
 
 ## 实验摘要
 
@@ -36,7 +36,7 @@
 
 ### 1. 登录 EMQX Cloud
 
-EMQX Cloud MQTT 公有云服务来自于 EMQ 服务客户总结的一些最佳实践， 致力于提供快速部署、轻松管理、弹性扩展、跨多云部署的物联网 [MQTT 5.0](https://www.emqx.com/zh/blog/introduction-to-mqtt-5) 服务。
+EMQX Cloud [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 公有云服务来自于 EMQ 服务客户总结的一些最佳实践， 致力于提供快速部署、轻松管理、弹性扩展、跨多云部署的物联网 [MQTT 5.0](https://www.emqx.com/zh/blog/introduction-to-mqtt-5) 服务。
 
 点击右上角 登录 按钮，使用实验室提供的账号登录 EMQX Cloud，点击 控制台 进入 EMQX Cloud 控制台页面。
 
@@ -268,7 +268,7 @@ payload:
 
 #### 6.4 测试
 
-如果您是第一次使用 EMQX Cloud 可以前往[部署连接指南](https://docs.emqx.com/zh/cloud/latest/connect_to_deployments/overview.html)，查看 MQTT 客户端连接和测试指南
+如果您是第一次使用 EMQX Cloud 可以前往[部署连接指南](https://docs.emqx.com/zh/cloud/latest/connect_to_deployments/overview.html)，查看 [MQTT 客户端](https://www.emqx.com/zh/blog/mqtt-client-tools)连接和测试指南
 
 我们尝试向 home/sensor 主题发送下面的数据
 

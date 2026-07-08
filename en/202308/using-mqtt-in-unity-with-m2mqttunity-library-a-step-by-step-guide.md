@@ -66,7 +66,7 @@ Then, copy the `M2Mqtt` and `M2MqttUnity` folders from the downloaded M2MQTT rep
 
 ![Copy the `M2Mqtt` and `M2MqttUnity`](https://assets.emqx.com/images/38244fa7514bf682f547c0168fdf18f4.png)
 
-The library provides a test scene called `M2MqttUnity_Test`, located in the `M2MqttUnity/Examples/Scenes` folder. By inspecting the scene, we can see that the only script used to setup the MQTT Client is `M2MqttUnityTest.cs`, which is attached to the M2MQTT GameObject in the scene. However, this script is linked with other classes of the main folder `M2Mqtt`.
+The library provides a test scene called `M2MqttUnity_Test`, located in the `M2MqttUnity/Examples/Scenes` folder. By inspecting the scene, we can see that the only script used to setup the [MQTT Client](https://www.emqx.com/en/blog/mqtt-client-tools) is `M2MqttUnityTest.cs`, which is attached to the M2MQTT GameObject in the scene. However, this script is linked with other classes of the main folder `M2Mqtt`.
 
 # Connect and Subscribe
 

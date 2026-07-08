@@ -18,7 +18,7 @@ For Mnesia data sync performance optimisations, we have forked [Erlang/OTP](http
 
 ## Connectivity (MQTT over QUIC)
 
-We have reached a [new milestone ](https://www.youtube.com/watch?v=j85mDP97MWA)of MQTT-over-QUIC project: Full integration demo of QUIC running inside EMQX. Our next steps are to make it production ready. See project timeline in [this GitHub discussion](https://github.com/emqx/emqx/discussions/4379)
+We have reached a [new milestone](https://www.youtube.com/watch?v=j85mDP97MWA) of MQTT-over-QUIC project: Full integration demo of QUIC running inside EMQX. Our next steps are to make it production ready. See project timeline in [this GitHub discussion](https://github.com/emqx/emqx/discussions/4379)
 
 ## Scalability (Rlog)
 

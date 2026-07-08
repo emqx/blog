@@ -1,6 +1,6 @@
 ## Introduction
 
-**[MQTT over WebSocket](https://www.emqx.com/en/blog/connect-to-mqtt-broker-with-websocket)** is a powerful combination for building real-time applications, especially for the Internet of Things (IoT). To debug and develop these applications efficiently, having the right **MQTT WebSocket client** is essential. 
+**[MQTT over WebSocket](https://www.emqx.com/en/blog/connect-to-mqtt-broker-with-websocket)** is a powerful combination for building real-time applications, especially for the Internet of Things (IoT). To debug and develop these applications efficiently, having the right **[MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) WebSocket client** is essential. 
 
 ![MQTT over WebSocket](https://assets.emqx.com/images/772cccbb5a614e866fe2307691bec38f.png)
 
@@ -8,7 +8,7 @@ This blog post will explore the top 3 MQTT WebSocket client tools highly recomme
 
 ## **Using a Free MQTT Broker for Testing**
 
-Before diving into the client tools, you need an **[MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison)** that supports WebSocket to communicate and test with. A **free MQTT broker** is an ideal starting point for developers.
+Before diving into the client tools, you need an **[MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison)** that supports WebSocket to communicate and test with. A **[free MQTT broker](https://www.emqx.com/en/blog/free-mqtt-broker)** is an ideal starting point for developers.
 
 You can use the **free public MQTT broker** provided by EMQX at `broker.emqx.io`. This service is perfect for learning and testing, offering a public endpoint without any setup.
 
@@ -27,7 +27,7 @@ For more information, please check out: [Free Public MQTT Broker](https://www.em
 
 ## 1. MQTT.js
 
-MQTT.js is an MQTT client library written in JavaScript and designed to run in both node.js and browser environments. It fully supports MQTT protocol versions 3.1.1 and 5.0, as well as TCP, TLS, and WebSocket transports.
+MQTT.js is an [MQTT client](https://www.emqx.com/en/blog/mqtt-client-tools) library written in JavaScript and designed to run in both node.js and browser environments. It fully supports [MQTT protocol versions](https://www.emqx.com/en/blog/introduction-to-mqtt-5) 3.1.1 and 5.0, as well as TCP, TLS, and WebSocket transports.
 
 MQTT.js is a simple and lightweight library that allows developers to easily connect to MQTT brokers and publish/subscribe to MQTT topics via WebSockets.
 

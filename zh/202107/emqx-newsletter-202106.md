@@ -24,7 +24,7 @@
 
 ### MQTT-over-QUIC
 
-自三月份以来，[QUIC](https://github.com/emqx/quic) 项目一直处在与 EMQX 主项目分离的开发中。现在它终于与 [emqx.git](https://github.com/emqx/emqx) 进行了集成。**MQTT-over-QUIC** 将作为实验性功能在 v5.0 中发布。接下来我们还将迎接很多挑战，欢迎与我们一同努力，去探索物联网 QUIC 协议的更多精彩之处。
+自三月份以来，[QUIC](https://github.com/emqx/quic) 项目一直处在与 EMQX 主项目分离的开发中。现在它终于与 [emqx.git](https://github.com/emqx/emqx) 进行了集成。**MQTT-over-QUIC** 将作为实验性功能在 v5.0 中发布。接下来我们还将迎接很多挑战，欢迎与我们一同努力，去探索物联网 [QUIC 协议](https://www.emqx.com/zh/blog/quic-protocol-the-features-use-cases-and-impact-for-iot-iov)的更多精彩之处。
 
 ### RLOG
 

@@ -2,7 +2,7 @@
 
 In the age of advanced manufacturing, the need for extensive data collection and analysis across all aspects of production is crucial. This data enables factories and enterprises to discover optimization opportunities, improve efficiency and quality, and make informed decisions.
 
-EMQ smart factory solution is designed to establish comprehensive data collection, transmission, distribution, and other mechanisms. This solution empowers factories to rapidly deploy a wide array of intelligent applications, including equipment health management, optimization of energy consumption equipment, production monitoring and analysis, product quality traceability, parameter optimization in the supply chain, predictive maintenance, and defect detection. This facilitates the manufacturing industry's transition towards digital and intelligent transformation.
+EMQ [smart factory](https://www.emqx.com/en/blog/what-is-a-smart-factory-key-components-4-levels-of-evolution) solution is designed to establish comprehensive data collection, transmission, distribution, and other mechanisms. This solution empowers factories to rapidly deploy a wide array of intelligent applications, including equipment health management, optimization of energy consumption equipment, production monitoring and analysis, product quality traceability, parameter optimization in the supply chain, predictive maintenance, and defect detection. This facilitates the manufacturing industry's transition towards digital and intelligent transformation.
 
 ## EMQ Smart Factory Solution: Overcoming Challenges of Manufacturing
 
@@ -40,7 +40,7 @@ Furthermore, the solution seamlessly integrates this aggregated data into variou
 
 ### Enterprise-Level MQTT Platform
 
-In contrast to the conventional ISA95 architecture commonly employed in manufacturing, EMQX harnesses the [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) protocol's publish/subscribe model, effectively decoupling data producers and consumers. This approach offers increased ease and flexibility for applications to access real-time factory data. 
+In contrast to the conventional [ISA95](https://www.emqx.com/en/blog/exploring-isa95-standards-in-manufacturing) architecture commonly employed in manufacturing, EMQX harnesses the [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) protocol's publish/subscribe model, effectively decoupling data producers and consumers. This approach offers increased ease and flexibility for applications to access real-time factory data. 
 
 The innovative factory data architecture established by the EMQX enterprise-level [MQTT platform](https://www.emqx.com/en/blog/mqtt-platform-essential-features-and-use-cases) offers several notable advantages:
 

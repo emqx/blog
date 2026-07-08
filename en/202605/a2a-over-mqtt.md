@@ -31,7 +31,7 @@ With A2A in the picture, the landscape breaks down into three categories:
 | **Coupling**      | N/A                   | Shared runtime, same repo  | Independent processes, any language |
 | **Interop**       | Proprietary           | Framework-specific         | Open protocol                       |
 
-A2A is transport-agnostic by design. The reference implementation runs over HTTP and server-sent events. But the coordination patterns that multi-agent systems demand (discovery, presence tracking, fan-out, load-balanced dispatch) are a poor fit for point-to-point request-response. A [previous post](https://www.emqx.com/en/blog/why-mqtt-is-the-missing-infrastructure-layer-for-agentic-ai) in this series made the detailed case for why MQTT is a more natural transport for agent coordination. This post goes deeper: how agent discovery actually works over MQTT at the protocol level, what coordination patterns it enables, and how [EMQX 6.2](https://www.emqx.com/en/blog/emqx-6-2-0-release-notes) makes it production-ready.
+A2A is transport-agnostic by design. The reference implementation runs over HTTP and server-sent events. But the coordination patterns that multi-agent systems demand (discovery, presence tracking, fan-out, load-balanced dispatch) are a poor fit for point-to-point request-response. A [previous post](https://www.emqx.com/en/blog/why-mqtt-is-the-missing-infrastructure-layer-for-agentic-ai) in this series made the detailed case for why [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) is a more natural transport for agent coordination. This post goes deeper: how agent discovery actually works over MQTT at the protocol level, what coordination patterns it enables, and how [EMQX 6.2](https://www.emqx.com/en/blog/emqx-6-2-0-release-notes) makes it production-ready.
 
 ## What an MQTT Broker Gives You for Free
 
@@ -39,7 +39,7 @@ Before the protocol mechanics, a quick orientation. The coordination primitives 
 
 ## The Protocol: How A2A Discovery Works over MQTT
 
-The [A2A-over-MQTT specification](https://github.com/emqx/mqtt-for-ai/tree/main/a2a-over-mqtt) defines how agents discover, communicate, and coordinate through an MQTT broker. It's an open spec, hosted on GitHub, designed to work with any MQTT v5 broker.
+The [A2A-over-MQTT specification](https://github.com/emqx/mqtt-for-ai/tree/main/a2a-over-mqtt) defines how agents discover, communicate, and coordinate through an [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison). It's an open spec, hosted on GitHub, designed to work with any [MQTT v5](https://www.emqx.com/en/blog/introduction-to-mqtt-5) broker.
 
 ### Topic Namespace
 
@@ -175,7 +175,7 @@ Context ID is optional by design. Simple request-reply interactions don't need i
 
 Everything above works on any MQTT v5 broker, the spec is deliberately broker-neutral. But running discovery at scale exposes two protocol-adjacent questions the spec doesn't answer. The [A2A Agent Registry](https://www.emqx.com/en/blog/emqx-6-2-0-release-notes) in EMQX 6.2 addresses both; a [previous post](https://www.emqx.com/en/blog/how-mqtt-turns-iot-fleets-into-selfcoordinating-systems) covers its full capabilities (schema validation, broker-managed status tracking, Dashboard and CLI management).
 
-**Multiple registration paths, one namespace.** Agents can self-register via MQTT retained publish, operators can register through the Dashboard, and automation can use the REST API. All three produce the same artifact: a retained message on `$a2a/v1/discovery/`. Subscribers see no difference, so you can bootstrap manually in development and switch to self-registration in production without touching the discovery logic.
+**Multiple registration paths, one namespace.** Agents can self-register via [MQTT retained](https://www.emqx.com/en/blog/mqtt5-features-retain-message) publish, operators can register through the Dashboard, and automation can use the REST API. All three produce the same artifact: a retained message on `$a2a/v1/discovery/`. Subscribers see no difference, so you can bootstrap manually in development and switch to self-registration in production without touching the discovery logic.
 
 **Rate and size limits on registration.** When hundreds of agents reconnect after a broker restart or network partition, the discovery namespace can flood with registration publishes. Configurable rate limits and card-size caps absorb these bursts without degrading the broker.
 

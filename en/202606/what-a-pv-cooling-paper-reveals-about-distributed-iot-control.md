@@ -46,11 +46,11 @@ A dedicated ESP32 runs a barometric pressure sensor and ams OSRAM's AS3935 Frank
 - **Pressure:** sampled every 5 seconds, averaged over 30-minute windows. The node keeps a rolling 3-hour buffer of seven averaged samples and computes the gradient as a discrete temporal derivative.
 - **Lightning:** treated as a multi-state indicator (near / distant / idle), not a binary event.
 
-The two signals fuse locally into a compact categorical output: *stable*, *deteriorating*, or *probable precipitation*. That category is the only thing this edge publishes over MQTT. The raw pressure samples never leave the node.
+The two signals fuse locally into a compact categorical output: *stable*, *deteriorating*, or *probable precipitation*. That category is the only thing this edge publishes over [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt). The raw pressure samples never leave the node.
 
 ### Fog: Decision-Making on a Raspberry Pi
 
-A Raspberry Pi running a Python MQTT client subscribes to four inputs:
+A Raspberry Pi running a [Python MQTT](https://www.emqx.com/en/blog/how-to-use-mqtt-in-python) client subscribes to four inputs:
 
 - The weather state, from the weather edge node.
 - Panel surface temperature, from a separate ESP32 with thermistors calibrated via the Steinhart-Hart equation.
@@ -82,7 +82,7 @@ A single-microcontroller implementation is possible in principle: long wires fro
 What goes wrong in the single-MCU version:
 
 - **Wiring and noise.** Long analog cable runs pick up EMI, degrade accuracy, and constrain where sensors can sit. The paper observes that centralized control "increase[s] wiring complexity, and restrict[s] the number of deployable sensors."
-- **Extensibility.** Adding a signal means a new cable, a re-flash, and a regression test of the whole system. With the MQTT layout: "New nodes simply register as MQTT clients within the predefined topic structure."
+- **Extensibility.** Adding a signal means a new cable, a re-flash, and a regression test of the whole system. With the MQTT layout: "New nodes simply register as [MQTT clients](https://www.emqx.com/en/blog/mqtt-client-tools) within the predefined topic structure."
 - **Failure isolation.** A corroded connector or shorted cable in any signal path can cascade into the central controller and corrupt the fused state. No compartmentalization.
 - **Timescale coupling.** One clock, forcing the system either to over-sample signals that don't need it or to miss signals that do.
 

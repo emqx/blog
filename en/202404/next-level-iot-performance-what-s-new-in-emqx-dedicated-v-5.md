@@ -1,6 +1,6 @@
 ## Introduction
 
-[EMQX Dedicated](https://www.emqx.com/en/cloud/dedicated), renowned for hosting MQTT clusters in an exclusive cloud environment, remains a cornerstone among EMQX's suite of products. It’s our pleasure to announce an upgrade to the latest version of EMQX Dedicated, introducing a wide array of new features and capabilities designed to support mission-critical IoT applications across various industries.
+[EMQX Dedicated](https://www.emqx.com/en/cloud/dedicated), renowned for hosting [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) clusters in an exclusive cloud environment, remains a cornerstone among EMQX's suite of products. It’s our pleasure to announce an upgrade to the latest version of EMQX Dedicated, introducing a wide array of new features and capabilities designed to support mission-critical IoT applications across various industries.
 
 In this article, we will explore the notable improvements brought by version 5 (v5), comparing it with its predecessor, version 4 (v4).
 
@@ -44,9 +44,9 @@ V5 enables the configuration and sorting of extended authentication/authorizatio
 
 ### 3. Advanced Features: Delving into High-level Capabilities in v5 Dedicated
 
-**MQTT over QUIC:**
+**[MQTT over QUIC](https://www.emqx.com/en/blog/mqtt-over-quic):**
 
-Leveraging QUIC, the transport protocol underpinning the next-generation Internet protocol HTTP/3, v5 offers enhanced connectivity for the modern mobile Internet. This technology reduces connection overhead and message latency when compared to traditional TCP/TLS protocols, positioning EMQX Dedicated as a pioneer in utilizing this cutting-edge technology for MQTT communication.
+Leveraging [QUIC](https://www.emqx.com/en/blog/quic-protocol-the-features-use-cases-and-impact-for-iot-iov), the transport protocol underpinning the next-generation Internet protocol HTTP/3, v5 offers enhanced connectivity for the modern mobile Internet. This technology reduces connection overhead and message latency when compared to traditional TCP/TLS protocols, positioning EMQX Dedicated as a pioneer in utilizing this cutting-edge technology for MQTT communication.
 
 **CRL (Certificate Revocation List):**
 

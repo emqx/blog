@@ -1,4 +1,4 @@
-We're excited to announce a new EMQX Cloud release focused on expanding platform and regional availability, giving IoT teams more flexibility in how and where they deploy their MQTT infrastructure.
+We're excited to announce a new [EMQX Cloud](https://www.emqx.com/en/cloud) release focused on expanding platform and regional availability, giving IoT teams more flexibility in how and where they deploy their [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) infrastructure.
 
 This release brings two major updates:
 
@@ -28,7 +28,7 @@ For IoT teams already standardized on OCI, this means:
 
 - No need to compromise on cloud strategy or migrate data across providers
 - Native deployment aligned with existing Oracle Cloud networking, security, and compliance practices
-- A fully managed MQTT broker with enterprise-grade reliability, scalability, and observability
+- A fully [managed MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) with enterprise-grade reliability, scalability, and observability
 
 Oracle Cloud is widely adopted in industries such as manufacturing, energy, telecommunications, and enterprise IT, where performance predictability and compliance are critical. With OCI support, EMQX Cloud gives Oracle-centric IoT developers a first-class MQTT platform, without added operational complexity.
 

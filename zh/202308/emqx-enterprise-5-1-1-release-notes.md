@@ -85,7 +85,7 @@ FROM
 
 Kafka 消息头（headers）允许生产者将消息元数据放入消息，用于传递额外上下文，实现消息追踪、去重以及数据透传等功能。
 
-在 EMQX Enterprise 5.1.1 中，你可以在 Kafka 数据桥接中定义需要传输的 Kafka 消息头，实现设备信息(例如客户端ID、用户名)、消息类型、QoS级别，乃至 MQTT 5.0 用户属性（User Property ）的透传。这些元数据可以帮助后端应用更轻松地解析处理海量的物联网数据。
+在 EMQX Enterprise 5.1.1 中，你可以在 Kafka 数据桥接中定义需要传输的 Kafka 消息头，实现设备信息(例如客户端ID、用户名)、消息类型、QoS级别，乃至 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 5.0 用户属性（User Property ）的透传。这些元数据可以帮助后端应用更轻松地解析处理海量的物联网数据。
 
 ![桥接 MQTT 数据到 Kafka](https://assets.emqx.com/images/5bc4bda7f080da75b5ff54cab92b297c.png)
 

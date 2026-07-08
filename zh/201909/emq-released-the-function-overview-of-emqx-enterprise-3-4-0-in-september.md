@@ -1,10 +1,10 @@
-9 月正式开启，EMQ 发布了 EMQX Enterprise 3.4.0 正式版。该版本强化了管理配置和规则引擎功能，新增消息编解码、集群热配置及车联网协议支持，设计了全新的管理监控 Dashboard 页面，是目前企业应用推荐使用的稳定版本。
+9 月正式开启，EMQ 发布了 [EMQX Enterprise](https://www.emqx.com/zh/products/emqx) 3.4.0 正式版。该版本强化了管理配置和规则引擎功能，新增消息编解码、集群热配置及车联网协议支持，设计了全新的管理监控 Dashboard 页面，是目前企业应用推荐使用的稳定版本。
 
 相关安装包已在 [EMQ 官网](https://www.emqx.com/zh/try) 开放下载，同时官网提供 License 免费自助申请试用、在线购买 License 授权服务。
 
 
 
-> EMQX Enterprise 企业级物联网 MQTT 消息平台，支持百万级物联网设备一站式接入、MQTT&CoAP 多协议处理、低时延实时消息通信。支持基于 SQL 的内置规则引擎，灵活处理/转发消息到后端服务，存储消息数据到各种数据库，或桥接 Kafka、RabbitMQ、Pulsar 等企业中间件。
+> EMQX Enterprise 企业级物联网 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 消息平台，支持百万级物联网设备一站式接入、MQTT&[CoAP](https://www.emqx.com/zh/blog/coap-protocol) 多协议处理、低时延实时消息通信。支持基于 SQL 的内置规则引擎，灵活处理/转发消息到后端服务，存储消息数据到各种数据库，或桥接 Kafka、RabbitMQ、Pulsar 等企业中间件。
 >
 > EMQX Enterprise 适用于各种物联网应用场景，助企业快速构建物联网应用，并支持公有云、私有云、物理机、容器/K8S 任意部署。
 

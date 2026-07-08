@@ -1,6 +1,6 @@
 [EMQX](https://www.emqx.com/zh/products/emqx) 是基于 Erlang/OTP 平台开发的开源物联网 [MQTT 消息服务器](https://github.com/emqx/emqx)，目前广泛应用于全球各行业物联网平台建设中。其设计目标是实现高可靠承载海量物联网终端的 [MQTT](https://www.emqx.com/zh/mqtt-guide) 连接，支持在海量物联网设备间低延时消息路由。
 
-本文将以 EMQX v4.3.10（开源版）为例，介绍 EMQX 在 Docker、Kubernetes、Windows 和 Linux 上的安装方法以及常见问题，为大家利用 MQTT 消息服务器快速搭建物联网平台提供帮助。
+本文将以 EMQX v4.3.10（开源版）为例，介绍 EMQX 在 Docker、Kubernetes、Windows 和 Linux 上的安装方法以及常见问题，为大家利用 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 消息服务器快速搭建物联网平台提供帮助。
 
 ## 安装前检查
 
@@ -39,7 +39,7 @@ EMQX 默认情况下监听以下端口：
 | 11883        | MQTT 协议端口            |
 | 8883         | MQTT/SSL 端口            |
 | 8083         | MQTT/WebSocket 端口      |
-| 5683         | LwM2M 端口               |
+| 5683         | [LwM2M](https://www.emqx.com/zh/blog/iot-protocols-mqtt-coap-lwm2m) 端口               |
 | **管理监控** |                          |
 | 8081         | HTTP API 端口            |
 | 18083        | Dashboard 管理控制台端口 |

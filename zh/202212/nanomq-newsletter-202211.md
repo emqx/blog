@@ -1,9 +1,9 @@
-11 月，NanoMQ 继续保持稳步更新，最新的 [0.14 版本](https://github.com/nanomq/nanomq/releases/tag/0.14.1)已于本月初发布。此版本推出了用户期待许久的 ACL 鉴权（Access Control List）服务，并引入了全新的 HOCON 格式的配置文件。此外还缩减了发布版本时生成的 Docker 镜像的大小，并新增了带有 QUIC 支持的完整功能版镜像。
+11 月，NanoMQ 继续保持稳步更新，最新的 [0.14 版本](https://github.com/nanomq/nanomq/releases/tag/0.14.1)已于本月初发布。此版本推出了用户期待许久的 ACL 鉴权（Access Control List）服务，并引入了全新的 HOCON 格式的配置文件。此外还缩减了发布版本时生成的 Docker 镜像的大小，并新增了带有 [QUIC](https://www.emqx.com/zh/blog/quic-protocol-the-features-use-cases-and-impact-for-iot-iov) 支持的完整功能版镜像。
 
 
 ## ACL 鉴权
 
-将 MQTT 服务用于 IoT 应用时，为了保证服务和信息安全，需要 ACL 鉴权服务来防止恶意客户端发布错误数据和控制命令或订阅未经允许的主题获取敏感数据。NanoMQ 的 ACL 支持在众多用户呼声中于 0.14 版本正式发布。
+将 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 服务用于 IoT 应用时，为了保证服务和信息安全，需要 ACL 鉴权服务来防止恶意客户端发布错误数据和控制命令或订阅未经允许的主题获取敏感数据。NanoMQ 的 ACL 支持在众多用户呼声中于 0.14 版本正式发布。
 
 目前 NanoMQ 支持通过在配置文件中编写规则来根据客户端 ID 和用户名配置鉴权规则。ACL 配置文件风格和语法与 EMQX 4.x 版本相同。
 

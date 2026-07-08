@@ -1,4 +1,4 @@
-通过之前的文章，相信大家已经熟悉了 JMeter 及 MQTT 插件的使用等基础知识。从本文开始，我们利用这些测试工具进行测试实战。本文将介绍 MQTT 连接的测试。
+通过之前的文章，相信大家已经熟悉了 JMeter 及 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 插件的使用等基础知识。从本文开始，我们利用这些测试工具进行测试实战。本文将介绍 MQTT 连接的测试。
 
 ### 连接场景分析
 
@@ -34,7 +34,7 @@
 
 ### 测试的执行
 
-对编写好的脚本进行调试验证，确认 MQTT Broker 的连通性及脚本运行逻辑符合预期后，将线程组页面的线程组数修改为 400，页面点击 Start 按钮执行测试。
+对编写好的脚本进行调试验证，确认 [MQTT Broker](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison) 的连通性及脚本运行逻辑符合预期后，将线程组页面的线程组数修改为 400，页面点击 Start 按钮执行测试。
 
 ![JMeter Start](https://assets.emqx.com/images/c3e75cb1b66194a937753b27f26df057.png)
 

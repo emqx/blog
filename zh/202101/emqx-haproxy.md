@@ -1,4 +1,4 @@
-负载均衡器（LB）负责分发设备的 MQTT 连接与消息到 EMQX 集群，采用 LB 可以提高 EMQX 集群可用性、实现负载平衡以及动态扩容。
+负载均衡器（LB）负责分发设备的 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 连接与消息到 EMQX 集群，采用 LB 可以提高 EMQX 集群可用性、实现负载平衡以及动态扩容。
 
 [HAProxy](https://www.haproxy.org/)  是一款使用 C 语言编写的自由及开放源代码软件，其提供高可用性、负载均衡，以及基于 TCP 和 HTTP 的应用程序代理，它是免费、快速并且可靠的一种解决方案。
 

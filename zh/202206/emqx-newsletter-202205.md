@@ -1,6 +1,6 @@
 五月，EMQX 5.0.0-rc.3 & rc.4 版本陆续发布，该版本为规则引擎新增了对 jq 语法的支持，大幅度精简了默认配置文件，并对 Dashboard 菜单栏做了进一步的调整优化。EMQX 5.0 的正式发布已经越来越近。同时，v4.3 与 v4.4 的下一维护版本也进入了测试阶段，即将发布。
 
-云服务方面，EMQX Cloud 本月海外站新增了 AWS 私网连接以及更多地区部署支持，同时外部认证和数据集成服务也有了更多选择。
+云服务方面，[EMQX Cloud](https://www.emqx.com/zh/cloud) 本月海外站新增了 AWS 私网连接以及更多地区部署支持，同时外部认证和数据集成服务也有了更多选择。
 
 ## EMQX
 
@@ -103,7 +103,7 @@ EMQX 与 Tablestore 团队针对产品高效对接都做了专项优化工作，
 
 EMQX 团队于 5 月 19-20 日参加了在瑞典斯德哥尔摩举行的 2022 Code BEAM 欧洲会议。
 
-EMQ 软件工程师 William Yang 发表了题为“QUICER：BEAM 的下一代传输协议库”的启发性主题演讲，介绍了世界上第一个由 EMQ 提供支持的 MQTT over QUIC 实现以及为 BEAM 构建的新的开源 NIF 库 QUICER（[GitHub - emqx/quic：用于 Erlang 和 Elixir 的 QUIC 协议](https://github.com/emqx/quic)）。
+EMQ 软件工程师 William Yang 发表了题为“QUICER：BEAM 的下一代传输协议库”的启发性主题演讲，介绍了世界上第一个由 EMQ 提供支持的 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) over [QUIC](https://www.emqx.com/zh/blog/quic-protocol-the-features-use-cases-and-impact-for-iot-iov) 实现以及为 BEAM 构建的新的开源 NIF 库 QUICER（[GitHub - emqx/quic：用于 Erlang 和 Elixir 的 QUIC 协议](https://github.com/emqx/quic)）。
 
 ![William Yang 演讲：QUICER：BEAM 的下一代传输协议库](https://assets.emqx.com/images/026c1aa79c9c2a3a20cadd0830d4097e.png)
 

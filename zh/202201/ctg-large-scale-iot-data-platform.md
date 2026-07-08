@@ -103,7 +103,7 @@
 
 ### 边缘计算单元
 
-边缘计算单元承担解析MQTT数据包，进行流式计算并将计算结果以MQTT协议发布到中心Broker的任务，最后由中心Broker解析后分发到不同主题，供消费者订阅。目前边缘计算单元使用开源软件eKuiper，采用基于数据源（source）- 业务处理逻辑（rule）- 目标（sink）的规则引擎来进行流式计算。 
+边缘计算单元承担解析MQTT数据包，进行流式计算并将计算结果以[MQTT协议](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt)发布到中心Broker的任务，最后由中心Broker解析后分发到不同主题，供消费者订阅。目前边缘计算单元使用开源软件eKuiper，采用基于数据源（source）- 业务处理逻辑（rule）- 目标（sink）的规则引擎来进行流式计算。 
 
 ![边缘计算单元计算流程1](https://assets.emqx.com/images/d3c02363f1fb42e23e64f105d08da3f4.png)
 

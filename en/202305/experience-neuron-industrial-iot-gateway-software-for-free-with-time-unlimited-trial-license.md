@@ -6,7 +6,7 @@ To enable users to verify their [IIoT](https://www.emqx.com/en/blog/iiot-explain
 
 ## Various Drivers Available for Industrial Connectivity
 
-Neuron is an open-source project that embraces collaboration and community contribution. The core framework, dashboard, and a selection of driver modules, including widely-used Modbus-TCP and MQTT, are available as open source under the LGPLv3 license. 
+Neuron is an open-source project that embraces collaboration and community contribution. The core framework, dashboard, and a selection of driver modules, including widely-used Modbus-TCP and [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt), are available as open source under the LGPLv3 license. 
 
 For those who demand more dedicated protocol connectivity, Neuron provides a range of commercial drivers catering to various industrial and common PLC protocols. These drivers include [BACnet](https://www.emqx.com/en/blog/bacnet-protocol-basic-concepts-structure-obejct-model-explained), KNXnet/IP, IEC-104, IEC-61850, Mitsubishi 1E and 3E, Siemens S7 and Fetch-write, Omron Fins TCP, Beckhoff ADS, and more. With these drivers, Neuron ensures seamless integration of various industrial devices and facilitates data communication and management. 
 
@@ -24,7 +24,7 @@ This new embedded trial license provides a flexible small-scale solution for dev
 
 ## Summary
 
-Neuron v2.4.4 allows users to experience its commercial connectivity capabilities with the time-unlimited trial license. We understand the challenges faced by Industrial IoT developers, and now you can take the time to adapt and debug your system with small-scale data collection to ensure that basic functions work properly.
+Neuron v2.4.4 allows users to experience its commercial connectivity capabilities with the time-unlimited trial license. We understand the challenges faced by [Industrial IoT](https://www.emqx.com/en/blog/industrial-iot-systems) developers, and now you can take the time to adapt and debug your system with small-scale data collection to ensure that basic functions work properly.
 
 Try Neuron's latest release for free today and experience the benefits of enhanced industrial connectivity.
 

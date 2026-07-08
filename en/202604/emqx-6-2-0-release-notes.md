@@ -1,14 +1,14 @@
-EMQX Enterprise 6.2 is now available!
+[EMQX Enterprise](https://www.emqx.com/en/products/emqx) 6.2 is now available!
 
-This release takes MQTT a step further by adding native support for the A2A protocol over MQTT, enabling AI agents to register, discover, and collaborate directly through the broker without additional infrastructure. 
+This release takes [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) a step further by adding native support for the A2A protocol over MQTT, enabling AI agents to register, discover, and collaborate directly through the broker without additional infrastructure. 
 
-Alongside this, EMQX 6.2 enhances the MQTT 5.0 publish/subscribe model with message filtering at the subscription level, and introduces dynamic keepalive management for large device fleets, two new data integrations with Azure Event Grid and QuasarDB, and strengthened GCP connector security through Workload Identity Federation.
+Alongside this, EMQX 6.2 enhances the [MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5) publish/subscribe model with message filtering at the subscription level, and introduces dynamic keepalive management for large device fleets, two new data integrations with Azure Event Grid and QuasarDB, and strengthened GCP connector security through Workload Identity Federation.
 
 Whether you are building distributed AI systems, operating large-scale IoT fleets, or standardizing data quality across industrial pipelines, EMQX 6.2 delivers the coordination, governance, and operational control to run at enterprise scale.
 
 ## Real-Time Agent Discovery and Coordination with A2A over MQTT
 
-At the center of this release is the **A2A Registry**, a standards-aligned agent discovery system built directly into the MQTT broker.
+At the center of this release is the **A2A Registry**, a standards-aligned agent discovery system built directly into the [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison).
 
 The standard A2A protocol uses HTTP as its transport, which works well in cloud environments but becomes impractical on constrained devices or at the edge, exactly where MQTT already excels. EMQX 6.2 introduces **A2A over MQTT**, a broker-neutral transport profile that brings A2A-compatible agent discovery and coordination to these environments without additional infrastructure.
 
@@ -67,7 +67,7 @@ EMQX 6.2 adds two new integration targets and strengthens existing GCP connector
 
 ### New Integrations:
 
-- [**Azure Event Grid**](https://docs.emqx.com/en/emqx/latest/data-integration/azure-event-grid.html): Bidirectional MQTT bridging between EMQX and Azure's fully managed event-routing service. EMQX connects as an MQTT client, supporting both outbound (Sink) and inbound (Source) data flows over TLS with client certificate authentication. Once data reaches Azure Event Grid, it routes naturally to Azure Functions, Event Hubs, Storage, and other Azure services.
+- [**Azure Event Grid**](https://docs.emqx.com/en/emqx/latest/data-integration/azure-event-grid.html): Bidirectional MQTT bridging between EMQX and Azure's fully managed event-routing service. EMQX connects as an [MQTT client](https://www.emqx.com/en/blog/mqtt-client-tools), supporting both outbound (Sink) and inbound (Source) data flows over TLS with client certificate authentication. Once data reaches Azure Event Grid, it routes naturally to Azure Functions, Event Hubs, Storage, and other Azure services.
 - [**QuasarDB**](https://docs.emqx.com/en/emqx/latest/data-integration/quasardb.html): Direct ingestion of MQTT data into QuasarDB, a high-performance column-oriented time-series database. Messages flow through the rule engine into QuasarDB via ODBC with batch write support, making it a strong fit for high-frequency industrial telemetry workloads that require fast range queries over large time windows.
 
 ### Integration Enhancements:

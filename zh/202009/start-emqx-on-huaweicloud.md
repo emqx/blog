@@ -1,6 +1,6 @@
 ## 摘要
 
-本实验以 EMQX MQTT Broker 为例，指导用户快速完成物联网消息服务器搭建。
+本实验以 EMQX [MQTT Broker](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison) 为例，指导用户快速完成物联网消息服务器搭建。
 
 ## 实验属性
 
@@ -43,7 +43,7 @@
 
 #### 2.2 下载安装包
 
-进入【实验操作桌面】，打开火狐浏览器，输入 https://www.emqx.com/zh/try 选择 EMQX Broker 或 EMQX Enterprise，选择 EMQX 版本与操作系统类型。
+进入【实验操作桌面】，打开火狐浏览器，输入 https://www.emqx.com/zh/try 选择 EMQX Broker 或 [EMQX Enterprise](https://www.emqx.com/zh/products/emqx)，选择 EMQX 版本与操作系统类型。
 
 此实验中选择 EMQX Broker 最新版 4.1.1，操作系统选择 Linux > Ubuntu 16.04，选择安装包类型为 zip，点击下载按钮，将文件保存至默认下载目录。
 
@@ -121,7 +121,7 @@ EMQX 正常启动的情况下，在火狐浏览器中输入网址 http://localho
 
 #### 4.2 建立 MQTT 连接
 
-登录 Dashboard 后，依次点击 工具 -> WebSocket 打开 WebSocket 测试工具，在该页面输入 MQTT 连接信息，点击连接按钮即可连接至 EMQX。
+登录 Dashboard 后，依次点击 工具 -> WebSocket 打开 WebSocket 测试工具，在该页面输入 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 连接信息，点击连接按钮即可连接至 EMQX。
 
 ![img](https://assets.emqx.com/images/b90d28808208c4d3e691c44bab19c17f.png)            
 

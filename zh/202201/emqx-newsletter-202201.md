@@ -30,7 +30,7 @@
 
 经过 EMQX 团队这段时间的努力， EMQX 项目现在已支持使用 Elixir 构建，相关代码目前已并入 master 分支，这将为我们迎接更好的社区生态提供支持和帮助。
 
-关于通过 EMQX 在 Elixir 中的使用 MQTT 的方法，可以参考：[MQTT 在 Elixir 中的应用](https://www.emqx.com/zh/blog/mqtt-for-elixir)。
+关于通过 EMQX 在 Elixir 中的使用 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 的方法，可以参考：[MQTT 在 Elixir 中的应用](https://www.emqx.com/zh/blog/mqtt-for-elixir)。
 
 ### Mria 架构通过五千万连接性能验证
 

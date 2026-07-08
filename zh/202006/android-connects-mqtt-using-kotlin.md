@@ -2,7 +2,7 @@
 
 [Kotlin](https://kotlinlang.org/) 是一门由 JetBrains 公司开发的编程语言，Kotlin 是基于 JVM 的，所以开发者可以很方便地用它来进行Android 开发，并且支持 Kotlin 和 Java 的混合编写。而早在 2017 年，Google 就宣布 Kotlin 成为官方开发语言。
 
-本文主要介绍使用 Kotlin 语言在 Android 平台上使用 MQTT。
+本文主要介绍使用 Kotlin 语言在 Android 平台上使用 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt)。
 
 ## 新建 Kotlin 项目
 
@@ -192,7 +192,7 @@ fun disconnect() {
 
 ## 测试
 
-首先将 Android 客户端连接到 MQTT 服务器，然后订阅 topic:  `a/b`，可以看到连接成功和成功订阅的日志
+首先将 Android 客户端连接到 [MQTT 服务器](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison)，然后订阅 topic:  `a/b`，可以看到连接成功和成功订阅的日志
 
 ![MQTT connect and subscribe](https://assets.emqx.com/images/5513474b6c2a4848c232825da093bc25.png)
 
@@ -209,7 +209,7 @@ fun disconnect() {
 
 ## 总结
 
-至此，我们已经完成了Android 上 MQTT 客户端的构建，实现了 [MQTT 客户端](https://www.emqx.com/zh/mqtt-client-sdk)与服务器的连接、主题订阅、收发消息等功能。
+至此，我们已经完成了Android 上 [MQTT 客户端](https://www.emqx.com/zh/blog/mqtt-client-tools)的构建，实现了 [MQTT 客户端](https://www.emqx.com/zh/mqtt-client-sdk)与服务器的连接、主题订阅、收发消息等功能。
 
 MQTT 可以以极少的代码和有限的带宽，为连接远程设备提供实时可靠的消息服务。作为一种低开销、低带宽占用的即时通讯协议，使其在物联网、小型设备、移动应用等方面有较广泛的应用。
 

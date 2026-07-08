@@ -1,4 +1,4 @@
-We are excited to announce that the fully managed MQTT cloud service [EMQX Cloud](https://www.emqx.com/en/cloud) has seamlessly incorporated data integration capability into its Serverless plan. This enables users to unify data from different sources, formats, or systems, facilitating a fast, reliable, and secure IoT data movement with minimal cost.
+We are excited to announce that the fully managed [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) cloud service [EMQX Cloud](https://www.emqx.com/en/cloud) has seamlessly incorporated data integration capability into its Serverless plan. This enables users to unify data from different sources, formats, or systems, facilitating a fast, reliable, and secure IoT data movement with minimal cost.
 
 ## Architecture
 

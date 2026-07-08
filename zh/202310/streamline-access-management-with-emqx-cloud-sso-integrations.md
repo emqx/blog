@@ -1,4 +1,4 @@
-[EMQX Cloud](https://www.emqx.com/zh/cloud) 是跨多云的全托管 MQTT 云服务，提供一站式运维代管、独有隔离环境的 MQTT 消息服务。近日，EMQX Cloud 上线了 SSO 登录服务。
+[EMQX Cloud](https://www.emqx.com/zh/cloud) 是跨多云的全托管 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 云服务，提供一站式运维代管、独有隔离环境的 MQTT 消息服务。近日，EMQX Cloud 上线了 SSO 登录服务。
 
 单点登录（Single Sign On），简称为 SSO，是比较流行的企业业务整合的解决方案之一。SSO 是指在多个应用系统中，用户只需要登录一次就可以访问所有相互信任的应用系统。在 EMQX Cloud 集成之后，平台用户便可以通过企业账号来登录使用 EMQX Cloud。下面就为大家介绍什么是 SSO 以及如何在 EMQX Cloud 控制台开启和整合 SSO 功能。
 

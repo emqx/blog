@@ -1,6 +1,6 @@
 ## MQTT Retained message
 
-When the MQTT broker server receives a PUBLISH message with a Retain flag of 1, it treats the message as a retained message. Except for normal forwarding, the retained message is stored on the server. Only one retained message can exist under each topic. If another retained message for the same topic already exists, the original retained message is replaced.
+When the [MQTT broker server](https://www.emqx.com/en/blog/a-comprehensive-comparison-of-open-source-mqtt-brokers-in-2023) receives a PUBLISH message with a Retain flag of 1, it treats the message as a retained message. Except for normal forwarding, the retained message is stored on the server. Only one retained message can exist under each topic. If another retained message for the same topic already exists, the original retained message is replaced.
 
 When a client establishes a subscription, if there are retained messages on the server that matches the topic , these retained messages will be sent to the client immediately. With retained messages, new subscribers can immediately get the most recent status without waiting for unexpected period, which is important in many scenarios.
 

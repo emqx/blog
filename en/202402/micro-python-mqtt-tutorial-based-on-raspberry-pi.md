@@ -8,7 +8,7 @@ In this article, we will discuss how to write a simple [MQTT client](https://www
 
 ## Prerequisites
 
-Before proceeding, please ensure you have an MQTT broker to communicate and test with. We recommend you use EMQX Cloud.
+Before proceeding, please ensure you have an [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) broker to communicate and test with. We recommend you use EMQX Cloud.
 
 [EMQX Cloud](https://www.emqx.com/en/cloud) is a fully managed cloud-native MQTT service that can connect to a large number of IoT devices and integrate various databases and business systems. With EMQX Cloud, you can get started in just a few minutes and run your MQTT service in 20+ regions across AWS, Google Cloud, and Microsoft Azure, ensuring global availability and fast connectivity.
 

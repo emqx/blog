@@ -14,11 +14,11 @@ The EMQX rule engine is an SQL-based data processing component that uses data in
 
 - **Data Source**: Specified using the FROM clause in SQL.
 - **Data Processing**: Described using SQL statements and functions.
-- **Processing Result Destination**: Actions handle the output results, such as storing them in a database or republishing them to an MQTT topic.
+- **Processing Result Destination**: Actions handle the output results, such as storing them in a database or republishing them to an [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) topic.
 
 **Key Actions**:
 
-- Message republish to MQTT topics
+- Message republish to [MQTT topics](https://www.emqx.com/en/blog/advanced-features-of-mqtt-topics)
 - Console output
 - Sending to external data systems like Kafka, MySQL, PostgreSQL, etc.
 
@@ -61,7 +61,7 @@ After entering the Dashboard, click on **Data Integration** → **Rules** → **
 
 After EMQX is installed, we demonstrate the use of the rule engine through a specific example. This scenario simulates vehicle data reporting; when the vehicle speed exceeds 120 km/h, related data (including speed and geographical location) is published to an HTTP service. The vehicle ID and MQTT connection information are stored in a PostgreSQL database.
 
-- **Simulating MQTT Payload for Testing**: First, construct a test MQTT payload to simulate vehicle data reporting.
+- **Simulating [MQTT Payload](https://www.emqx.com/en/blog/how-to-process-json-hex-and-binary-data-in-mqtt) for Testing**: First, construct a test MQTT payload to simulate vehicle data reporting.
 
   ```json
   {
@@ -181,9 +181,9 @@ INSERT INTO car_infos (
 
 Begin by navigating the Rule Tab and clicking the "Start Test" button. Make sure to save the SQL rules using the save button at the bottom of the interface. Saving is essential as it enables end-to-end tracing of the test execution.
 
-For users not using an MQTT client, simulated test data can be entered through the testing interface's right-side panel. This method allows for input simulation, though it may not completely mimic real-world scenarios due to potential configuration restrictions.
+For users not using an [MQTT client](https://www.emqx.com/en/blog/mqtt-client-tools), simulated test data can be entered through the testing interface's right-side panel. This method allows for input simulation, though it may not completely mimic real-world scenarios due to potential configuration restrictions.
 
-We recommend using [MQTTX](https://mqttx.app/) to simulate test data effectively. Connect to the current MQTT Broker and send real data to the topic `devices/1`.
+We recommend using [MQTTX](https://mqttx.app/) to simulate test data effectively. Connect to the current [MQTT Broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) and send real data to the topic `devices/1`.
 
 ![MQTTX Desktop](https://assets.emqx.com/images/f361608ad36be1adf0d361c63339b732.png)
 

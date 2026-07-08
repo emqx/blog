@@ -32,7 +32,7 @@ The overall architecture of this example is as follows:
 
 #### MQTT Cloud Service
 
-After the data is successfully collected through NodeMCU, it needs to be sent to the MQTT cloud service in the cloud. This article uses the MQTT cloud service provided by EMQX. Readers can also choose other MQTT cloud services according to their own circumstances, such as Azure IoT Hub or AWS IoT Core. Each cloud service needs to provide different authentication methods when accessing. Therefore, when connecting to the MQTT service in the cloud via NodeMCU, it is required to set the connection method according to the security requirements of the target cloud service. For the sake of simplicity, this article uses a non-secure connection method. In a formal production environment, a connection with a secure authentication method must be set.
+After the data is successfully collected through NodeMCU, it needs to be sent to the MQTT cloud service in the cloud. This article uses the MQTT cloud service provided by EMQX. Readers can also choose other MQTT cloud services according to their own circumstances, such as Azure IoT Hub or [AWS IoT Core](https://www.emqx.com/en/blog/understanding-aws-iot-core). Each cloud service needs to provide different authentication methods when accessing. Therefore, when connecting to the MQTT service in the cloud via NodeMCU, it is required to set the connection method according to the security requirements of the target cloud service. For the sake of simplicity, this article uses a non-secure connection method. In a formal production environment, a connection with a secure authentication method must be set.
 
 - Click [EMQX Cloud](<https://accounts.emqx.io/signin?continue=https://cloud.emqx.io>)  registration address to register
 

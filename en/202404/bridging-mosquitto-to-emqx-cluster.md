@@ -38,7 +38,7 @@ Consider a setup with a cluster of EMQX servers as the cloud control platform an
 
 **Cloud-Side Control Platform - EMQX**
 
-Due to EMQX's comprehensive support for the MQTT protocol, Mosquitto can seamlessly bridge with any version of EMQX. In this instance, we utilize the complimentary [public MQTT broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker) offered by EMQX Enterprise for testing purposes.
+Due to EMQX's comprehensive support for the MQTT protocol, Mosquitto can seamlessly bridge with any version of EMQX. In this instance, we utilize the complimentary [public MQTT broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker) offered by [EMQX Enterprise](https://www.emqx.com/en/products/emqx) for testing purposes.
 
 | Cluster Address  | Listening Port |
 | :--------------- | :------------- |

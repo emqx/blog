@@ -1,11 +1,11 @@
-EMQ officially announced the latest release of its IoT platform and MQTT broker, EMQX 5.0. 
+EMQ officially announced the latest release of its IoT platform and [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) broker, EMQX 5.0. 
 > View and download EMQX 5.0 at:
 > - [https://www.emqx.com/en/try?product=broker](https://www.emqx.com/en/try?product=broker)
 > - [https://github.com/emqx/emqx](https://github.com/emqx/emqx)
 
 The latest version has been verified in [test scenarios](https://www.emqx.com/en/blog/reaching-100m-mqtt-connections-with-emqx-5-0) to scale to 100 million concurrent device connections, which is a critically important milestone for IoT designers. It also comes with plenty of exciting new features and huge performance improvements, including a more powerful rule engine, enhanced security management, Mria database extension, and much more to enhance the scalability of IoT applications.
 
-Feng Lee, Founder and CEO of EMQ, said: “EMQX 5.0 is a huge accomplishment for MQTT technology, as it is the world’s first distributed [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) to support 100M connections in a single cluster! It also introduces the first implementation of MQTT over QUIC. Keeping pace with the frontier of tech advancement is critical, and we’re committed to accelerating our product development cycle to tackle the grand challenges of large-scale IoT deployments.”
+Feng Lee, Founder and CEO of EMQ, said: “EMQX 5.0 is a huge accomplishment for MQTT technology, as it is the world’s first distributed [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) to support 100M connections in a single cluster! It also introduces the first implementation of [MQTT over QUIC](https://www.emqx.com/en/blog/mqtt-over-quic). Keeping pace with the frontier of tech advancement is critical, and we’re committed to accelerating our product development cycle to tackle the grand challenges of large-scale IoT deployments.”
 
 During the last several years, EMQX has gained popularity among IoT companies and is used by more than 20,000 global users from over 50 countries, with more than 100 million IoT device connections supported worldwide.
 
@@ -22,7 +22,7 @@ EMQX was initially released under an open-source license in 2013. Since then, EM
 
 The latest version adopts a new Mria extension for Erlang’s [Mnesia database](https://github.com/erlang/otp/pull/5926) that increases horizontal scalability by defining two different node types: core nodes and replicant nodes. This new architecture allows EMQX 5.0 to better adapt to increasing demand in IoT networks. The latest performance testing shows it can easily support 100M connections with a single cluster—a 10-fold increase over previous versions—making it the world’s most scalable open-source MQTT broker.
 
-**The world’s first implementation of MQTT over QUIC**
+**The world’s first implementation of MQTT over [QUIC](https://www.emqx.com/en/blog/quic-protocol-the-features-use-cases-and-impact-for-iot-iov)**
 
 EMQX 5.0 is also the first MQTT broker to introduce support for QUIC, the underlying transfer protocol for the next-generation HTTP/3 protocol used by modern web browsers. QUIC benefits IoT transmission scenarios by reducing connection overhead and latency compared to TCP, increasing overall throughput, and increasing stability for mobile connections. With support for QUIC, EMQ hopes to maintain EMQX’s ability to provide the most advanced and competitive MQTT servers for the next generation of internet connectivity.
 

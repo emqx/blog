@@ -1,6 +1,6 @@
-[Neuron](https://www.emqx.com/zh/products/emqx-neuron) 是运行在各类物联网边缘网关硬件上的工业协议网关软件，支持同时为多个不同通讯协议设备、数十种工业协议进行一站式接入及 MQTT 协议转换，仅占用超低资源，即可以原生或容器的方式部署在 X86、ARM 等架构的各类边缘硬件中。同时，用户可以通过基于 Web 的管理控制台实现在线的网关配置管理。
+[Neuron](https://www.emqx.com/zh/products/emqx-neuron) 是运行在各类物联网边缘网关硬件上的工业协议网关软件，支持同时为多个不同通讯协议设备、数十种工业协议进行一站式接入及 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 协议转换，仅占用超低资源，即可以原生或容器的方式部署在 X86、ARM 等架构的各类边缘硬件中。同时，用户可以通过基于 Web 的管理控制台实现在线的网关配置管理。
 
-在 eKuiper 1.5.0 之前的版本中，Neuron 与 eKuiper 之间需要采用 [MQTT](https://www.emqx.com/zh/mqtt-guide) 作为中转。二者协同时，需要额外部署 MQTT broker。同时，用户需要自行处理数据格式，包括读入和输出时的解码编码工作。
+在 eKuiper 1.5.0 之前的版本中，Neuron 与 eKuiper 之间需要采用 [MQTT](https://www.emqx.com/zh/mqtt-guide) 作为中转。二者协同时，需要额外部署 [MQTT broker](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison)。同时，用户需要自行处理数据格式，包括读入和输出时的解码编码工作。
 
 近日发布的 [eKuiper 1.5.0 版本](https://www.emqx.com/zh/blog/ekuiper-v-1-5-0-release-notes)加入了 Neuron source 和 sink，使得用户无需配置即可在 eKuiper 中接入 Neuron 中采集到的数据进行计算；也可以方便地从 eKuiper 中通过 Neuron 控制设备 。两个产品的整合，可以显著降低边缘计算解决方案对资源的使用要求，降低使用门槛。
 
@@ -26,7 +26,7 @@ Neuron 和 eKuiper 部署在靠近设备的边缘端网关或者工控机上。N
 开始动手操作之前，需要准备以下环境：
 
 - MQTT 服务器：可以使用 EMQ 提供的[公共 MQTT 服务器](https://www.emqx.com/zh/mqtt/public-mqtt5-broker)，或参考 [EMQX 文档](https://docs.emqx.com/zh/emqx/v4.4/getting-started/getting-started.html#快速开始)快速部署一个本地 MQTT broker。假设 MQTT broker 地址为 `tcp://broker.emqx.io:1883`，以下教程将以此地址为例。
-- 为了方便观察运行结果，我们需要安装一个 MQTT 客户端，例如 [MQTTX](https://mqttx.app/zh)。
+- 为了方便观察运行结果，我们需要安装一个 [MQTT 客户端](https://www.emqx.com/zh/blog/mqtt-client-tools)，例如 [MQTTX](https://mqttx.app/zh)。
 
 ## 快速部署
 
@@ -208,7 +208,7 @@ curl -X POST --location "http://127.0.0.1:9081/streams" \
  
 ```
 
-接着，我们创建一个规则，读取来自该 MQTT 流的数据，并根据规则通过 Neuron 写入数据。与前文相同，假设 tag1 为温度传感器的 decimal 类型的读数。该规则读取 MQTT payload 中的 temperature 值并乘 10 之后作为 tag1 的值；使用 payload 中的 nodeName、groupName 字段作为写到 Neuron 中的动态 node 和 group 名。
+接着，我们创建一个规则，读取来自该 MQTT 流的数据，并根据规则通过 Neuron 写入数据。与前文相同，假设 tag1 为温度传感器的 decimal 类型的读数。该规则读取 [MQTT payload](https://www.emqx.com/zh/blog/how-to-process-json-hex-and-binary-data-in-mqtt) 中的 temperature 值并乘 10 之后作为 tag1 的值；使用 payload 中的 nodeName、groupName 字段作为写到 Neuron 中的动态 node 和 group 名。
 
 ```
 curl -X POST --location http://127.0.0.1:9081/rules \

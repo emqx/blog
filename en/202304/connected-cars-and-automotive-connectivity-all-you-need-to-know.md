@@ -75,7 +75,7 @@ Connected cars offer numerous benefits to drivers, passengers, and the overall t
 
 ## How Does MQTT Benefit Connected Cars? 
 
-MQTT (Message Queuing Telemetry Transport) is a lightweight messaging protocol designed for situations where low bandwidth, high latency, or unreliable networks are common. Its publish-subscribe model makes it suitable for many connected car scenarios.
+[MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) (Message Queuing Telemetry Transport) is a lightweight messaging protocol designed for situations where low bandwidth, high latency, or unreliable networks are common. Its publish-subscribe model makes it suitable for many connected car scenarios.
 
 Connected cars and MQTT can work together effectively to enable efficient communication and data exchange between vehicles, infrastructure, and other devices in the Internet of Things (IoT) ecosystem. 
 

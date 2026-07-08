@@ -16,7 +16,7 @@ For more details: [EMQ Website](https://github.com/lf-edge/ekuiper) , [Kuiper Gi
 
 - Kuiper 0.4.0 now has the capability of supporting more complex plugin; Support template feature for all sinks, so users can customize complex output data.
 - Kuiper 0.3.2 is the release that ship with EdgeX Foundry Geneva.
-- Kuiper 0.3.1 supports message bus based on MQTT.
+- Kuiper 0.3.1 supports message bus based on [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt).
 
 ### Features
 
@@ -34,7 +34,7 @@ For more details: [EMQ Website](https://github.com/lf-edge/ekuiper) , [Kuiper Gi
     - Kuiper 0.3.2 is the candidate release that ship with EdgeX Foundry Geneva. User can follow [this tutorial](https://github.com/lf-edge/ekuiper/blob/master/docs/en_US/edgex/edgex_rule_engine_tutorial.md) for starting use Kuiper rule engine in EdgeX Foundry Geneva release.
     - Add float decoding support in EdgeX source 
   - 0.3.1
-    - EdgeX MQTT message bus support. Kuiper [source](https://github.com/lf-edge/ekuiper/blob/master/docs/en_US/rules/sources/edgex.md) & [sink](https://github.com/lf-edge/ekuiper/blob/master/docs/en_US/rules/sinks/edgex.md) now can support message bus over MQTT broker .
+    - EdgeX MQTT message bus support. Kuiper [source](https://github.com/lf-edge/ekuiper/blob/master/docs/en_US/rules/sources/edgex.md) & [sink](https://github.com/lf-edge/ekuiper/blob/master/docs/en_US/rules/sinks/edgex.md) now can support message bus over [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) .
     - Benchmark result for EdgeX: EdgeX Kuiper rule engine supports 11.4k message throughput per second in AWS t2.micro( 1 Core * 1 GB). Refer to [this doc](https://github.com/lf-edge/ekuiper/tree/master#edgex-throughput-test) for detailed info.
     - Expose Kuiper Rest API port in Docker environment variable.
 - 0.3.2

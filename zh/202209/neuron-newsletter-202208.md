@@ -2,7 +2,7 @@
 
 ## OPC DA 驱动
 
-新增独立的 OPC DA 和 OPC UA 协议转换程序——opcshift。opcshift 同时作为 OPC DA 客户端和 OPC UA 服务端，通过读取 DA 服务器的数据并转化为 UA 的协议格式，然后再交由 Neuron 的 OPC UA 驱动进行处理。
+新增独立的 OPC DA 和 [OPC UA](https://www.emqx.com/zh/blog/opc-ua-protocol) 协议转换程序——opcshift。opcshift 同时作为 OPC DA 客户端和 OPC UA 服务端，通过读取 DA 服务器的数据并转化为 UA 的协议格式，然后再交由 Neuron 的 OPC UA 驱动进行处理。
 
 opcshift 依赖于微软 DCOM 技术，因此只能部署在 Windows 操作系统之上（32 位或 64 位均可）。Neuron 可以通过标准的 OPC UA 连接方式与 opcshift 跨主机连接。
 
@@ -35,7 +35,7 @@ Neuron 新增了 ADS 插件，支持通过 TCP 与支持 ADS/AMS 协议的设备
 
 ## 新增离线缓存
 
-当 MQTT 连接因临时网络问题或信号不佳而中断时，离线缓存可以帮助将数据存储在临时存储中。当网络恢复时，缓存数据可以再次传输到云平台。这可以减少有价值数据的丢失。Neuron 通过将数据存储在内存缓存中来实现此功能。因此硬件网关需要有足够的内存，可保障的离线时间也取决于硬件网关内存大小。
+当 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 连接因临时网络问题或信号不佳而中断时，离线缓存可以帮助将数据存储在临时存储中。当网络恢复时，缓存数据可以再次传输到云平台。这可以减少有价值数据的丢失。Neuron 通过将数据存储在内存缓存中来实现此功能。因此硬件网关需要有足够的内存，可保障的离线时间也取决于硬件网关内存大小。
 
 ## 其他新增功能概览
 

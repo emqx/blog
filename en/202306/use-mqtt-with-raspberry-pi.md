@@ -33,7 +33,7 @@ sudo apt install python3
 
 ### Install the Paho MQTT Client
 
-We will use the [Paho Python Client](https://github.com/eclipse/paho.mqtt.python) library, which offers a client class that supports MQTT v5.0, v3.1.1, and v3.1 in Python 2.7 and 3.x. In addition, it includes convenient helper functions that make publishing one-off messages to an MQTT server very simple.
+We will use the [Paho Python Client](https://github.com/eclipse/paho.mqtt.python) library, which offers a client class that supports MQTT v5.0, v3.1.1, and v3.1 in Python 2.7 and 3.x. In addition, it includes convenient helper functions that make publishing one-off messages to an [MQTT server](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) very simple.
 
 **Use the source code to install**
 
@@ -223,7 +223,7 @@ The `publish()` function allows for sending messages to a specific topic. In the
 
 ## Test
 
-For conducting the following tests, we will use MQTTX. [MQTTX](https://mqttx.app/) is an elegant cross-platform MQTT 5.0 desktop client that runs on macOS, Linux, and Windows. Its user-friendly chat-style interface enables users to easily create multiple MQTT/MQTTS connections and subscribe/publish MQTT messages.
+For conducting the following tests, we will use MQTTX. [MQTTX](https://mqttx.app/) is an elegant cross-platform [MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5) desktop client that runs on macOS, Linux, and Windows. Its user-friendly chat-style interface enables users to easily create multiple MQTT/MQTTS connections and subscribe/publish MQTT messages.
 
 ### Subscribe
 
@@ -273,7 +273,7 @@ Next, we will test whether the will message has been set successfully.
 
 ### Reading Raspberry Pi Serial Data
 
-The provided code establishes a serial connection with a Raspberry Pi, reads data from the serial port, and publishes it to an MQTT broker. It uses the `serial` library to configure the serial port settings and read data, while the `paho.mqtt.client` library is used to connect to the MQTT broker and publish the data. The code reads serial data in a loop, publishes it to the specified MQTT topic, and repeats this process for a defined number of iterations. Finally, it disconnects from the MQTT broker and closes the serial connection.
+The provided code establishes a serial connection with a Raspberry Pi, reads data from the serial port, and publishes it to an MQTT broker. It uses the `serial` library to configure the serial port settings and read data, while the `paho.mqtt.client` library is used to connect to the MQTT broker and publish the data. The code reads serial data in a loop, publishes it to the specified [MQTT topic](https://www.emqx.com/en/blog/advanced-features-of-mqtt-topics), and repeats this process for a defined number of iterations. Finally, it disconnects from the MQTT broker and closes the serial connection.
 
 ```python
 import time

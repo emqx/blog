@@ -1,4 +1,4 @@
-Recently, the cross-platform MQTT 5.0 desktop test client MQTTX, which is open-sourced by EMQ, [released the latest version of v1.7.0](https://github.com/emqx/MQTTX/releases/tag/v1.7.0). MQTTX supports the rapid creation of multiple simultaneous online [MQTT connections](https://www.emqx.com/en/blog/how-to-set-parameters-when-establishing-an-mqtt-connection), tests the connection, publish, and subscribe functions of MQTT/TCP, MQTT/TLS, MQTT/WebSocket as well as other MQTT protocol features.
+Recently, the cross-platform [MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5) desktop test client MQTTX, which is open-sourced by EMQ, [released the latest version of v1.7.0](https://github.com/emqx/MQTTX/releases/tag/v1.7.0). MQTTX supports the rapid creation of multiple simultaneous online [MQTT connections](https://www.emqx.com/en/blog/how-to-set-parameters-when-establishing-an-mqtt-connection), tests the connection, publish, and subscribe functions of MQTT/TCP, MQTT/TLS, MQTT/WebSocket as well as other [MQTT protocol](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) features.
 
 The newly released v1.7.0 provides more comprehensive support for MQTT 5.0 and is the desktop test client tool that supports MQTT 5.0 most worldwide so far. At the same time, many new features have been added to optimize the user experience.
 
@@ -54,7 +54,7 @@ We will show how to use the Response Topic by issuing a command to switch the li
 
 ![MQTT Response Topic](https://assets.emqx.com/images/3943405f5ac48f376d239c7194bf8328.png)
 
-We use MQTT.js to implement another client to simulate a light device that receives control commands. After receiving the command to turn on the light, send a response message of successful turning-on to the response topic. The key code is implemented below:
+We use [MQTT.js](https://www.emqx.com/en/blog/mqtt-js-tutorial) to implement another client to simulate a light device that receives control commands. After receiving the command to turn on the light, send a response message of successful turning-on to the response topic. The key code is implemented below:
 
 ```
 client.on('message', (topic, payload, packet) => {

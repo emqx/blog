@@ -1,4 +1,4 @@
-在前面的文章中，我们分别介绍了 [文件描述符](https://www.emqx.com/zh/blog/emqx-performance-tuning-maximum-connections-and-file-descriptors) 以及 [TCP 的 SYN 和 Accept 队列](https://www.emqx.com/zh/blog/emqx-performance-tuning-tcp-syn-queue-and-accept-queue) 对 MQTT 连接的影响，今天我们将探讨另一种可能限制最大连接数量的情况。
+在前面的文章中，我们分别介绍了 [文件描述符](https://www.emqx.com/zh/blog/emqx-performance-tuning-maximum-connections-and-file-descriptors) 以及 [TCP 的 SYN 和 Accept 队列](https://www.emqx.com/zh/blog/emqx-performance-tuning-tcp-syn-queue-and-accept-queue) 对 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 连接的影响，今天我们将探讨另一种可能限制最大连接数量的情况。
 
 以一个 8 核 4 GB 的 EMQX 节点为例，在建立大约 65536 个 MQTT 连接之后，我们可能会发现即使连接数量没有达到文件描述符限制，TCP 的 SYN 和 Accept 队列也没有溢出，MQTT 连接也无法继续建立，并且操作系统出现以下日志：
 

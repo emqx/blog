@@ -1,6 +1,6 @@
 ## 前言
 
-[工业物联网（IIoT）](https://www.emqx.com/zh/blog/iiot-explained-examples-technologies-benefits-and-challenges)正引领着一场数字化革命，重新定义着数据的采集、分析和利用方式。工业物联网这个由数亿设备构成的庞大网络中，实时数据流动是实现工业自动化、数字化和高效生产的关键。EMQX Cloud，跨多云全托管的 MQTT 云服务平台，是这场革命的关键基础设施软件，提供从边缘到云的无缝连接，保证数据的实时传输、处理和分析。
+[工业物联网（IIoT）](https://www.emqx.com/zh/blog/iiot-explained-examples-technologies-benefits-and-challenges)正引领着一场数字化革命，重新定义着数据的采集、分析和利用方式。工业物联网这个由数亿设备构成的庞大网络中，实时数据流动是实现工业自动化、数字化和高效生产的关键。EMQX Cloud，跨多云全托管的 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 云服务平台，是这场革命的关键基础设施软件，提供从边缘到云的无缝连接，保证数据的实时传输、处理和分析。
 
 本文将深入探讨 EMQX Cloud 如何整合边缘计算的数据与 TimescaleDB 的数据洞察能力，为工业物联网提供关键数据基础服务。
 
@@ -119,7 +119,7 @@
 
 要验证 NanoMQ 的安装和功能，可以执行以下操作：
 
-1. **连接到 NanoMQ：** 使用 MQTT 客户端工具，如 MQTTX 或者 mosquitto_sub/mosquitto_pub，连接到 NanoMQ。
+1. **连接到 NanoMQ：** 使用 [MQTT 客户端](https://www.emqx.com/zh/blog/mqtt-client-tools)工具，如 MQTTX 或者 mosquitto_sub/mosquitto_pub，连接到 NanoMQ。
 
    ![Connect to NanoMQ](https://assets.emqx.com/images/65e801bffae9143af49a745c87fbc824.png)
 

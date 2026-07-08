@@ -100,7 +100,7 @@ All in all, OMH's comprehensive offering includes both preset and customizable K
 
 KPIs play a pivotal role in guiding significant business choices. Individuals overseeing these metrics in manufacturing should feel responsible for their designated areas and consistently monitor them to drive enhancements when required. Flexibility is key. KPIs may evolve to address specific circumstances. Their focus should remain on vital management concerns. Ideally, a business should work with approximately 10 KPIs, as an excessive number can overwhelm and lose effectiveness.
 
-In addition, an efficient solution is also crucial for optimizing performance and achieving KPIs. With OMH, organizations can easily build powerful, scalable, and data-driven Industrial IoT applications. They will gain real-time insights to optimize industrial processes, improve operational efficiency, and make better decisions. 
+In addition, an efficient solution is also crucial for optimizing performance and achieving KPIs. With OMH, organizations can easily build powerful, scalable, and data-driven [Industrial IoT](https://www.emqx.com/en/blog/industrial-iot-systems) applications. They will gain real-time insights to optimize industrial processes, improve operational efficiency, and make better decisions. 
 
 
 

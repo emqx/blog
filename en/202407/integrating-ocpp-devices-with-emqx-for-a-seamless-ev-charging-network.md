@@ -86,7 +86,7 @@ Once the OCPP gateway is operational, you can use OCPP client tools to test conn
 
 Take [**ocpp-go**](https://github.com/lorenzodonini/ocpp-go) as a practical example. This section demonstrates how to connect it to the OCPP Gateway in EMQX.
 
-Begin by preparing an MQTT client to interface with the OCPP Gateway. For instance, using [**MQTTX**](https://mqttx.app/downloads), configure it to connect to EMQX and subscribe to the topic `ocpp/#`.
+Begin by preparing an [MQTT client](https://www.emqx.com/en/blog/mqtt-client-tools) to interface with the OCPP Gateway. For instance, using [**MQTTX**](https://mqttx.app/downloads), configure it to connect to EMQX and subscribe to the topic `ocpp/#`.
 
 ![MQTTX](https://assets.emqx.com/images/c79d8703c14ebfb02765860b71974093.png)
 

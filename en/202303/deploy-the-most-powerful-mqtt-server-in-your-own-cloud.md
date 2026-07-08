@@ -1,8 +1,8 @@
-EMQ, the leading provider of open-source MQTT messaging platform, has launched its Bring Your Own Cloud (BYOC) edition of its [EMQX Cloud](https://www.emqx.com/en/cloud) service, which enables organizations to deploy the [MQTT clusters](https://www.emqx.com/en/blog/tag/mqtt-broker-clustering) in their cloud environment of choice, whether it’s Amazon Web Services (AWS), Microsoft Azure, or Google Cloud Platform.
+EMQ, the leading provider of open-source [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) messaging platform, has launched its Bring Your Own Cloud (BYOC) edition of its [EMQX Cloud](https://www.emqx.com/en/cloud) service, which enables organizations to deploy the [MQTT clusters](https://www.emqx.com/en/blog/tag/mqtt-broker-clustering) in their cloud environment of choice, whether it’s Amazon Web Services (AWS), Microsoft Azure, or Google Cloud Platform.
 
 The new BYOC edition from EMQX Cloud empowers users with greater control over their data, enabling them to adhere to strict compliance and security regulations. By leveraging EMQ’s expertise in managing and optimizing MQTT services, businesses can achieve success while utilizing their existing cloud infrastructure. 
 
-The BYOC edition would also be an ideal solution for organizations with specific MQTT server needs that can’t be met by standard hosting cloud services. Users can unleash the full potential of EMQX’s powerful MQTT server and streamline their IoT infrastructure for optimal performance.
+The BYOC edition would also be an ideal solution for organizations with specific [MQTT server](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) needs that can’t be met by standard hosting cloud services. Users can unleash the full potential of EMQX’s powerful MQTT server and streamline their IoT infrastructure for optimal performance.
 
 ![MQTT BYOC](https://assets.emqx.com/images/2b24d9038582f3f17b9464018e0c2048.png)
 

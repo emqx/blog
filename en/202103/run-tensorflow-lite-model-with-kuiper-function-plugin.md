@@ -137,7 +137,7 @@ Install the packaged plugin to the target system like [Install by pre-built zip]
 
 ## Run the plugin
 
-Once the plugin installed, we can use it in our rule. We will create a rule to receive image byte data from a mqtt topic and label the image by tflite model.
+Once the plugin installed, we can use it in our rule. We will create a rule to receive image byte data from a [mqtt topic](https://www.emqx.com/en/blog/advanced-features-of-mqtt-topics) and label the image by tflite model.
 
 ### Define the stream
 

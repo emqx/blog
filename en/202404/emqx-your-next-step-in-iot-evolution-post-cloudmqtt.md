@@ -8,7 +8,7 @@ EMQX, our flagship IoT messaging platform, is designed to meet the diverse needs
 
 **Serverless** 
 
-Perfect for businesses in the early or scaling stages, the Serverless plan promises a hassle-free start with auto-scaling EMQX clusters, catering to moderate connectivity and performance requirements. This plan introduces an efficient Pay-as-you-go model, designed to scale with your usage, ensuring you only pay for what you need—be it session minutes, traffic, or rule actions. This approach allows businesses to manage costs effectively while benefiting from the scalability and robustness of a leading MQTT service. 
+Perfect for businesses in the early or scaling stages, the Serverless plan promises a hassle-free start with auto-scaling EMQX clusters, catering to moderate connectivity and performance requirements. This plan introduces an efficient Pay-as-you-go model, designed to scale with your usage, ensuring you only pay for what you need—be it session minutes, traffic, or rule actions. This approach allows businesses to manage costs effectively while benefiting from the scalability and robustness of a leading [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) service. 
 
 **Dedicated** 
 
@@ -16,7 +16,7 @@ Our Dedicated plan is tailored for mission-critical applications that demand the
 
 **BYOC (Bring Your Own Cloud)** 
 
-Customized for enterprises with specific security and compliance requirements, the BYOC plan permits the deployment of the EMQX Enterprise cluster on your own cloud infrastructure. This plan combines the advantages of your existing cloud solutions with EMQX's comprehensive management and support, ideal for businesses seeking control over their IoT infrastructure. 
+Customized for enterprises with specific security and compliance requirements, the BYOC plan permits the deployment of the [EMQX Enterprise](https://www.emqx.com/en/products/emqx) cluster on your own cloud infrastructure. This plan combines the advantages of your existing cloud solutions with EMQX's comprehensive management and support, ideal for businesses seeking control over their IoT infrastructure. 
 
 ## **Why EMQX?** 
 
@@ -24,7 +24,7 @@ EMQX stands at the forefront of the MQTT-based messaging domain and is celebrate
 
  This platform offers a rich ecosystem of over 40 native integrations, including services like AWS Kinesis, Kafka, MongoDB, and DataDog, enhancing the functionality and seamless interplay within IoT systems. Serving over 20,000 enterprise users and connecting more than 200 million IoT devices, EMQX is not just technology but a beacon of IoT innovation, continuously adapting to drive your digital transformation forward. 
 
- Adding to its technical prowess, EMQ's comprehensive support structure is in place 24/7 for both open-source and commercial clients. Our extensive support spans installation, deployment, software updates, debugging, performance tuning, and critical security notifications. EMQX Cloud is fortified with robust security features such as tenant isolation, advanced authentication, authorization, role-based access control, and end-to-end encryption, reinforcing our unwavering commitment to your data's security and privacy. We strictly adhere to international standards like TISAX, SOC, ISO, GDPR, and HIPAA-related data compliance, as detailed in our Trust Center, ensuring that your digital infrastructure is both powerful and protected. 
+ Adding to its technical prowess, EMQ's comprehensive support structure is in place 24/7 for both open-source and commercial clients. Our extensive support spans installation, deployment, software updates, debugging, performance tuning, and critical security notifications. [EMQX Cloud](https://www.emqx.com/en/cloud) is fortified with robust security features such as tenant isolation, advanced authentication, authorization, role-based access control, and end-to-end encryption, reinforcing our unwavering commitment to your data's security and privacy. We strictly adhere to international standards like TISAX, SOC, ISO, GDPR, and HIPAA-related data compliance, as detailed in our Trust Center, ensuring that your digital infrastructure is both powerful and protected. 
 
 With EMQX, you gain more than a platform; you gain a partnership in securing and scaling your IoT ambitions. 
 

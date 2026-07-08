@@ -158,7 +158,7 @@ EMQX 端到端解决方案采用分层架构设计，将智能硬件的六大核
 
 **通信层**：
 
-- EMQX MQTT Broker：提供毫秒级消息传输和百万级连接支持
+- EMQX [MQTT Broker](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison)：提供毫秒级消息传输和百万级连接支持
 - WebRTC 媒体服务器：处理实时音视频流传输
 - MCP over MQTT：实现 AI 与设备的智能控制
 

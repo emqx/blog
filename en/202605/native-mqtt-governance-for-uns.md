@@ -4,7 +4,7 @@
 
 ## The Hidden Cost of an Ungoverned Unified Namespace
 
-The Unified Namespace (UNS) has become the de facto architecture for modern industrial IoT. By organizing all operational data into a single, hierarchical MQTT topic tree — typically following ISA-95 — manufacturers gain a shared data layer that connects OT, IT, and cloud systems without point-to-point integrations.
+The Unified Namespace (UNS) has become the de facto architecture for modern [industrial IoT](https://www.emqx.com/en/blog/industrial-iot-systems). By organizing all operational data into a single, hierarchical [MQTT topic](https://www.emqx.com/en/blog/advanced-features-of-mqtt-topics) tree — typically following [ISA-95](https://www.emqx.com/en/blog/exploring-isa95-standards-in-manufacturing) — manufacturers gain a shared data layer that connects OT, IT, and cloud systems without point-to-point integrations.
 
 But there's a problem nobody talks about at the conference keynotes: **topic sprawl**.
 
@@ -25,7 +25,7 @@ Bad data quality in manufacturing costs an average of 15-25% of operating revenu
 
 ## What Is MQTT Topic Governance?
 
-Topic governance is the enforcement of a defined schema on your MQTT topic tree. Just as a relational database enforces table schemas and column types, topic governance validates that every MQTT message published to your broker:
+Topic governance is the enforcement of a defined schema on your [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) topic tree. Just as a relational database enforces table schemas and column types, topic governance validates that every MQTT message published to your broker:
 
 1. **Follows an approved topic hierarchy**: only recognized paths are allowed
 2. **Uses valid segment values**: site IDs, area names, and equipment IDs match defined patterns

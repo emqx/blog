@@ -1,11 +1,11 @@
 [Amazon DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Introduction.html) is a fully managed NoSQL database service that provides fast and predictable performance with seamless scalability. DynamoDB lets you offload the administrative burdens of operating and scaling a distributed database so that you don't have to worry about hardware provisioning, setup and configuration, replication, software patching, or cluster scaling. DynamoDB also offers encryption at rest, which eliminates the operational burden and complexity involved in protecting sensitive data. 
 
-In this article, we will simulate temperature and humidity data and report it to the EMQX Cloud via the MQTT protocol, after which we will use the EMQX Cloud data integration to enable NAT gateway and save the data to the AWS DynamoDB over the public network. 
+In this article, we will simulate temperature and humidity data and report it to the EMQX Cloud via the [MQTT protocol](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt), after which we will use the EMQX Cloud data integration to enable NAT gateway and save the data to the AWS DynamoDB over the public network. 
 
 
 ## Introduction to EMQX Cloud
 
-[EMQX Cloud](https://www.emqx.com/en/cloud) is the world's first fully managed MQTT 5.0 public cloud service for IoT from EMQ. EMQX Cloud provides a one-stop O&M colocation and a unique isolated environment for MQTT services. In the era of Internet of Everything, EMQX Cloud can help you quickly build industry applications and easily realize the collection, transmission, computation and persistence of IoT data.
+[EMQX Cloud](https://www.emqx.com/en/cloud) is the world's first fully managed [MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5) public cloud service for IoT from EMQ. EMQX Cloud provides a one-stop O&M colocation and a unique isolated environment for MQTT services. In the era of Internet of Everything, EMQX Cloud can help you quickly build industry applications and easily realize the collection, transmission, computation and persistence of IoT data.
 
 ![MQTT Cloud](https://assets.emqx.com/images/e9d345da71dafee76364773a52aa2d5b.png)
 

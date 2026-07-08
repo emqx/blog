@@ -1,6 +1,6 @@
 We’re thrilled to announce that MQTTX 1.11.0 is now available!
 
-This release introduces Topic Tree visualization, a powerful new way to organize and monitor [MQTT topics](https://www.emqx.com/en/blog/advanced-features-of-mqtt-topics) hierarchically. We've also added support for Avro Schema and Message Pack formats in both Desktop and CLI clients, expanding MQTTX's data format handling capabilities. These updates provide users with enhanced tools for understanding their MQTT message flows and managing complex data structures.
+This release introduces Topic Tree visualization, a powerful new way to organize and monitor [MQTT topics](https://www.emqx.com/en/blog/advanced-features-of-mqtt-topics) hierarchically. We've also added support for Avro Schema and Message Pack formats in both Desktop and CLI clients, expanding MQTTX's data format handling capabilities. These updates provide users with enhanced tools for understanding their [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) message flows and managing complex data structures.
 
 > ***Download the latest version here:*** [***https://mqttx.app/downloads***](https://mqttx.app/downloads**)
 
@@ -123,7 +123,7 @@ This feature addresses a common need in WebSocket MQTT connections, particularly
 - Including custom identification headers
 - Setting up special connection parameters
 
-This addition makes MQTTX CLI a more flexible tool for testing MQTT over WebSocket connections, especially in enterprise environments where custom headers are required for security or routing purposes.
+This addition makes MQTTX CLI a more flexible tool for testing [MQTT over WebSocket](https://www.emqx.com/en/blog/connect-to-mqtt-broker-with-websocket) connections, especially in enterprise environments where custom headers are required for security or routing purposes.
 
 ## Configurable QoS 0 Message Storage
 
@@ -143,7 +143,7 @@ This feature is especially useful when testing MQTT applications that generate l
 
 ### Enhanced Client Configuration
 
-- **Empty Client ID Support**: Introduced support for empty client IDs in MQTT 5.0, enabling brokers to automatically allocate client IDs. This enhancement allows for a more accurate simulation of MQTT 5.0 scenarios.
+- **Empty Client ID Support**: Introduced support for empty client IDs in [MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5), enabling brokers to automatically allocate client IDs. This enhancement allows for a more accurate simulation of MQTT 5.0 scenarios.
 - **Default Session Expiry**: Adjusted the default session expiry interval to 7200 seconds (2 hours) for MQTT 5.0 connections with clean start set to false. This change aligns with EMQX's default configuration and optimizes server-side resource management.
 
 ### Improved MQTT Operations
@@ -173,7 +173,7 @@ This feature is especially useful when testing MQTT applications that generate l
   - **System Topic View**: Specialized view for system-related [MQTT topics](https://www.emqx.com/en/blog/advanced-features-of-mqtt-topics).
 - **Support for Configurable Disconnect Properties (MQTT 5.0)**: Enhance connection management with customizable disconnection settings.
 - **IoT Scenario Data Simulation**: Bring this feature to the desktop client to ease IoT scenario testing.
-- **Sparkplug B Support**: Extend MQTTX functionalities to include support for Sparkplug B.
+- **[Sparkplug B](https://www.emqx.com/en/solutions/mqtt-sparkplug) Support**: Extend MQTTX functionalities to include support for Sparkplug B.
 - **MQTT GUI Debug Functionality**: New features to aid in debugging MQTT communications.
 - **Plugin Functionality**: Introduction of a plugin system supporting protocol extensions like [CoAP](https://www.emqx.com/en/blog/coap-protocol) and [MQTT-SN](https://www.emqx.com/en/blog/connecting-mqtt-sn-devices-using-emqx).
 - **JSON Schema**: Encoding and decoding capabilities for JSON Schema.

@@ -6,13 +6,13 @@ Costs rise in sudden steps. Capacity goes unused. Daily quotas are hit earlier t
 
 This behavior is not a pricing anomaly or a configuration mistake. It is the natural outcome of how Azure IoT Hub is architected and how that architecture is monetized.
 
-In a previous post, we examined how Azure IoT Hub compares architecturally to a true MQTT broker and what those design choices mean for protocol behavior, scalability, and operational flexibility. This article builds on that foundation by focusing specifically on how those architectural decisions show up in **pricing behavior as deployments scale**. You can find that earlier comparison [here](https://www.emqx.com/en/blog/azure-iot-hub-vs-emqx).
+In a previous post, we examined how Azure IoT Hub compares architecturally to a true [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) and what those design choices mean for protocol behavior, scalability, and operational flexibility. This article builds on that foundation by focusing specifically on how those architectural decisions show up in **pricing behavior as deployments scale**. You can find that earlier comparison [here](https://www.emqx.com/en/blog/azure-iot-hub-vs-emqx).
 
 ## Why Azure IoT Hub Pricing Looks the Way It Does
 
 To understand Azure IoT Hub pricing, it helps to start with what Azure IoT Hub actually is.
 
-Azure IoT Hub is not a general-purpose MQTT broker. Architecturally, it functions as a specialized ingestion gateway backed by durable storage. Messages are written to disk, replicated, and persisted before acknowledgement. Connectivity, throughput, and durability are tightly coupled.
+Azure IoT Hub is not a general-purpose [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) broker. Architecturally, it functions as a specialized ingestion gateway backed by durable storage. Messages are written to disk, replicated, and persisted before acknowledgement. Connectivity, throughput, and durability are tightly coupled.
 
 This design delivers real benefits. It provides built-in durability, tight integration with Azure services, and native support for device identity and lifecycle management.
 

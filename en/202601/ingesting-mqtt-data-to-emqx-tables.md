@@ -1,6 +1,6 @@
 ## **Introduction**
 
-EMQX Tables is a fully managed, built-in time-series database service in EMQX Cloud, powered by GreptimeDB. It provides a seamless way to store, query, and analyze MQTT messages without requiring the setup of an external database or integration pipeline.
+EMQX Tables is a fully managed, built-in time-series database service in [EMQX Cloud](https://www.emqx.com/en/cloud), powered by GreptimeDB. It provides a seamless way to store, query, and analyze [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) messages without requiring the setup of an external database or integration pipeline.
 
 > Learn more about EMQX Tables: [EMQX Tables GA: From MQTT Data Stream to Time-Series Insight in One Platform](https://www.emqx.com/en/blog/emqx-tables-ga) 
 
@@ -8,13 +8,13 @@ EMQX Tables natively integrates with EMQX Broker via the rule engine. For EMQX D
 
 For EMQX Serverless, integration is also supported by using the **HTTP Server Connector**, allowing you to write MQTT data into EMQX Tables via the public HTTP endpoint:
 
-**MQTT Clients -> EMQX Serverless -> Rule Engine (HTTP Connector) -> EMQX Tables -> SQL Analytics**
+**[MQTT Clients](https://www.emqx.com/en/blog/mqtt-client-tools) -> EMQX Serverless -> Rule Engine (HTTP Connector) -> EMQX Tables -> SQL Analytics**
 
 This tutorial will walk you through building this pipeline end-to-end.
 
 ## Use Case: Smart Factory Monitoring
 
-This guide uses a smart factory as an example. In this scenario, factory devices regularly report time-series telemetry data, including:
+This guide uses a [smart factory](https://www.emqx.com/en/blog/what-is-a-smart-factory-key-components-4-levels-of-evolution) as an example. In this scenario, factory devices regularly report time-series telemetry data, including:
 
 - **machine_id**: Device identifier
 - **production_line**: Associated production line

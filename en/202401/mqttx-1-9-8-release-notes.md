@@ -1,14 +1,14 @@
-MQTTX 1.9.8 is now available, introducing a new CLI Debug Mode. This feature greatly enhances developers' troubleshooting and analysis capabilities. Additionally, the update improves the MQTTX Copilot feature, providing users with advanced AI-driven MQTT interaction support.
+MQTTX 1.9.8 is now available, introducing a new CLI Debug Mode. This feature greatly enhances developers' troubleshooting and analysis capabilities. Additionally, the update improves the MQTTX Copilot feature, providing users with advanced AI-driven [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) interaction support.
 
 > *Download the latest version here:* [https://mqttx.app/downloads](https://mqttx.app/downloads)
 
 ## MQTTX CLI - Debug Mode
 
-The Debug Mode in MQTTX 1.9.8, powered by MQTT.js, streamlines MQTT debugging. Activated with the `--debug` switch, it provides real-time logs during connection, publishing, and subscribing, detailing client configurations and packet handling. This feature is invaluable for developers to understand and troubleshoot MQTT protocols effectively.
+The Debug Mode in MQTTX 1.9.8, powered by [MQTT.js](https://www.emqx.com/en/blog/mqtt-js-tutorial), streamlines MQTT debugging. Activated with the `--debug` switch, it provides real-time logs during connection, publishing, and subscribing, detailing client configurations and packet handling. This feature is invaluable for developers to understand and troubleshoot MQTT protocols effectively.
 
 Consider the command `mqttx conn -h broker.emqx.io -p 1883 --debug` as an example of the new Debug Mode. This command initiates a detailed MQTT debug process, revealing logs like:
 
-- Connection initiation to MQTT broker.
+- Connection initiation to [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison).
 - Client settings include protocol version, keepalive, and client ID.
 - Stream setup and handling for MQTT communication.
 - Packet sending processes like `connect` and `pingreq`.
@@ -75,10 +75,10 @@ In the next development phase following MQTTX 1.9.8, we will focus on boosting v
   - **Diff View**: Compare different messages or payloads easily.
   - **Dashboard View:** Offer a customizable overview of MQTT activities for personalized insights.
   - **JSON View**: Improve handling and display of JSON formatted data.
-  - **System Topic View**: Specialized view for system-related MQTT topics.
+  - **System Topic View**: Specialized view for system-related [MQTT topics](https://www.emqx.com/en/blog/advanced-features-of-mqtt-topics).
 
 - **IoT Scenario Data Simulation**: Bring this feature to the desktop client to ease IoT scenario testing.
-- **Sparkplug B Support**: Extend MQTTX functionalities to include support for Sparkplug B.
+- **[Sparkplug B](https://www.emqx.com/en/solutions/mqtt-sparkplug) Support**: Extend MQTTX functionalities to include support for Sparkplug B.
 - **QoS 0 Message Storage Optimization**: Configurable options to reduce storage space usage.
 - **MQTT GUI Debug Functionality**: New features to aid in debugging MQTT communications.
 - **Plugin Functionality**: Introduction of a plugin system supporting protocol extensions like CoAP and [MQTT-SN](https://www.emqx.com/en/blog/connecting-mqtt-sn-devices-using-emqx).

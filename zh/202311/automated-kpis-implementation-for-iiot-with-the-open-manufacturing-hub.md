@@ -38,7 +38,7 @@
 
 ## 使用 OMH 实现自动化 KPI
 
-EMQ 推出的 OMH 解决方案可以为构建强大、可扩展的工业物联网应用提供参考架构，同时帮助您实现  KPI 的有效管控。
+EMQ 推出的 OMH 解决方案可以为构建强大、可扩展的[工业物联网](https://www.emqx.com/zh/blog/iiot-explained-examples-technologies-benefits-and-challenges)应用提供参考架构，同时帮助您实现  KPI 的有效管控。
 
 使用 OMH 实现 KPI 流程自动化是提高效率和做出明智决策的战略举措。这种技术驱动的方法有助于优化运营，提升企业在现代商业环境中的竞争力。
 

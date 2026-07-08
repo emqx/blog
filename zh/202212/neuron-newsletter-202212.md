@@ -24,7 +24,7 @@
 
 ## WebSocket 应用
 
-支持通过 WebSocket 协议上报所订阅点位数据，上报的数据格式与现有北向 MQTT 插件一致。
+支持通过 WebSocket 协议上报所订阅点位数据，上报的数据格式与现有北向 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 插件一致。
 
 ## 读写文件驱动
 
@@ -34,7 +34,7 @@
 
 - UI 优化以及部分问题修复。
 - 官网文档优化完善。
-- 修复了某些情况下 OPC UA 异常退出的问题。
+- 修复了某些情况下 [OPC UA](https://www.emqx.com/zh/blog/opc-ua-protocol) 异常退出的问题。
 
 
 

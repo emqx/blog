@@ -52,7 +52,7 @@ With the advent of Industry 4.0, there is an increasing demand for intelligence,
 - Secondly, when it comes to real-time performance and bandwidth utilization, the Modbus protocol falls short in comparison to modern industrial communication standards. Especially in the case of large-scale device networking, traditional serial communication methods are no longer sufficient to meet requirements.
 - In addition, in terms of multi-level architecture and cloud platform applications, the Modbus protocol also has certain limitations. It can only perform point-to-point communication and does not support distributed systems and cloud computing platforms very well.
 
-Compared with Modbus protocol, the [MQTT protocol](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) has obvious advantages. The MQTT  protocol is a lightweight message transmission protocol based on [publish/subscribe model](https://www.emqx.com/en/blog/mqtt-5-introduction-to-publish-subscribe-model) that is built on TCP/IP protocol. It was released by IBM in 1999 and became an officially approved communication standard by OASIS in 2014. Currently it has been widely applied in areas such as Internet of Things (IoT), mobile internet, smart hardware, connected cars, smart cities, remote healthcare services, power industry, oil and energy.
+Compared with Modbus protocol, the [MQTT protocol](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) has obvious advantages. The MQTT  protocol is a lightweight message transmission protocol based on [publish/subscribe model](https://www.emqx.com/en/blog/mqtt-5-introduction-to-publish-subscribe-model) that is built on TCP/IP protocol. It was released by IBM in 1999 and became an officially approved communication standard by OASIS in 2014. Currently it has been widely applied in areas such as Internet of Things (IoT), mobile internet, smart hardware, [connected cars](https://www.emqx.com/en/blog/connected-cars-and-automotive-connectivity-all-you-need-to-know), smart cities, remote healthcare services, power industry, oil and energy.
 
 Here are some of the advantages of MQTT.
 
@@ -69,7 +69,7 @@ The Modbus to MQTT bridging architecture consists of two main components: the Mo
 
 In this article, we use [Neuron](https://github.com/emqx/neuron) and [EMQX](https://github.com/emqx/emqx) to implement the bridging process.
 
-[Neuron](https://github.com/emqx/neuron) is a modern [industrial IoT](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges) connectivity server that can connect various industrial devices using standard or proprietary protocols, achieving interconnectivity between industrial IoT platforms and devices. As a lightweight industrial software, Neuron can run on various IoT edge hardware devices with limited resources. It aims to solve the problem of difficult unified access to automation equipment data centered around data and provide basic support for intelligent manufacturing.
+[Neuron](https://github.com/emqx/neuron) is a modern [industrial IoT](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges) connectivity server that can connect various industrial devices using standard or proprietary protocols, achieving interconnectivity between [industrial IoT](https://www.emqx.com/en/blog/industrial-iot-systems) platforms and devices. As a lightweight industrial software, Neuron can run on various IoT edge hardware devices with limited resources. It aims to solve the problem of difficult unified access to automation equipment data centered around data and provide basic support for intelligent manufacturing.
 
 [EMQX](https://github.com/emqx/emqx) is the world’s leading open-source distributed IoT MQTT broker with high performance and scalability. EMQX provides efficient and reliable connections for massive IoT devices, enabling high-performance real-time movement and processing of the message and event flow data, helping users quickly build IoT platforms and applications for critical business.
 
@@ -235,7 +235,7 @@ Subscribe to the data group of southbound devices:
 
 - South device: Select the created southbound device from the dropdown list, for example, modbus-tcp-1;
 - Group: Select the group to be subscribed to from the dropdown list, for example, group-1；
-- Topic: The MQTT topic, which is default set as /neuron/MQTT/group-1 in this example. Next, subscribe to this topic and receive messages in MQTTX.
+- Topic: The [MQTT topic](https://www.emqx.com/en/blog/advanced-features-of-mqtt-topics), which is default set as /neuron/MQTT/group-1 in this example. Next, subscribe to this topic and receive messages in MQTTX.
 
 #### Step 10: View data on MQTT client.
 
@@ -262,14 +262,14 @@ After a successful subscription, you can see that MQTTX continues to receive dat
 
 As the scale of digital construction in oil production expands, the number of automated equipment is increasing, resulting in the complexity of data acquisition and management. 
 
-By building an open equipment data network, an oil production plant data center can connect directly with different data acquisition devices, such as RTUs, DTUs and PLCs. With industrial protocol gateway software like Neuron, Modbus/TCP and vendor-specific protocols can be converted into MQTT data, a standard IoT protocol that can be collected, processed, and reported in real-time. This facilitates the storage and data consumption of the upper business system.
+By building an open equipment data network, an oil production plant data center can connect directly with different data acquisition devices, such as RTUs, DTUs and PLCs. With industrial protocol gateway software like Neuron, Modbus/TCP and vendor-specific protocols can be converted into MQTT data, a standard [IoT protocol](https://www.emqx.com/en/blog/iot-protocols-mqtt-coap-lwm2m) that can be collected, processed, and reported in real-time. This facilitates the storage and data consumption of the upper business system.
 
 ![Oil Production Data Acquisition](https://assets.emqx.com/images/5c5a23f0474e9305c1f4d0026176f01b.png)
 
 An overall solution combining Neuron and other EMQ products like [EMQX](https://github.com/emqx/emqx), [eKuiper](https://ekuiper.org/) and EMQX ECP can bring the following benefits to oil industry:
 
 - A system architecture that is light on the frontend and heavy on the backend, reducing field equipment and system operation and maintenance costs.
-- Improved business system responsiveness through real-time reporting of production data by using the MQTT IoT protocol as the main method of data collection and transmission.
+- Improved business system responsiveness through real-time reporting of production data by using the [MQTT IoT](https://www.emqx.com/en/blog/what-is-the-mqtt-protocol) protocol as the main method of data collection and transmission.
 - Aggregation of massive amounts of real-time data from heterogeneous equipment and systems, including storage of various types of production and monitoring equipment.
 - The decoupling of data collection and data consumption systems through a unified access middleware platform and rich data interfaces, making application development easier and more efficient.
 

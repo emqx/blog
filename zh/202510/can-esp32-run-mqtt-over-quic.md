@@ -28,7 +28,7 @@ ESP32C3 由乐鑫信息科技开发的一款低成本、低功耗的物联网微
 
 ### 什么是 EMQX？
 
-**[EMQX](https://www.emqx.com/zh/products/emqx) 是全球首个专为实时智能设计的 MQTT 与人工智能融合平台。**它兼容 [MQTT 5.0](https://www.emqx.com/zh/blog/introduction-to-mqtt-5)、3.1.1 和 3.1 以及 MQTT over QUIC 等多种消息传输协议，单节点支持超百万 MQTT 连接，集群支持上亿 MQTT 连接。依靠大规模并发消息传输能力，EMQX 已成为智慧城市、工业物联网、汽车制造等行业的理想之选 [^4]。
+**[EMQX](https://www.emqx.com/zh/products/emqx) 是全球首个专为实时智能设计的 MQTT 与人工智能融合平台。**它兼容 [MQTT 5.0](https://www.emqx.com/zh/blog/introduction-to-mqtt-5)、3.1.1 和 3.1 以及 MQTT over QUIC 等多种消息传输协议，单节点支持超百万 MQTT 连接，集群支持上亿 MQTT 连接。依靠大规模并发消息传输能力，EMQX 已成为智慧城市、[工业物联网](https://www.emqx.com/zh/blog/iiot-explained-examples-technologies-benefits-and-challenges)、汽车制造等行业的理想之选 [^4]。
 
 ### **什么是 coreMQTT？**
 
@@ -46,7 +46,7 @@ coreMQTT 是 AWS IoT 设备 SDK 的一部分，是一个专为资源受限设备
 
 - **ngtcp2**：一个基于 C 语言开发的 QUIC 协议库，专门用于管理 QUIC 连接。ngtcp2_sample.c 文件改编自 ngtcp2 的示例代码，完整演示了客户端 QUIC 功能 [^6]。
 - **wolfSSL**：一个轻量级的 TLS 库，为 QUIC 提供加密操作以保障安全性，支持 TLS 1.3 [^7]。
-- **coreMQTT**：来自 AWS IoT Device SDK 的 MQTT 客户端库，能够通过 QUIC 传输处理 MQTT 协议操作。
+- **coreMQTT**：来自 AWS IoT Device SDK 的 [MQTT 客户端](https://www.emqx.com/zh/blog/mqtt-client-tools)库，能够通过 QUIC 传输处理 MQTT 协议操作。
 
 这些库已集成到 ESP-IDF 框架中，其中 ngtcp2 被封装为组件并进行补丁以兼容 ESP32C3。。
 

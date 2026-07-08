@@ -1,7 +1,7 @@
 > **我们荣幸地向大家宣布，EMQX Broker 3.1 - Beta.2版本已经于2019年3月17日发布。**
 
 
-杭州映云科技有限公司聚焦于消息和流处理技术领域，EMQX Broker是映云科技的开源分布式IoT消息处理中间件。自发布以来，EMQX Broker已经在世界各地被⼴泛应用。EMQX Broker也以其完备的MQTT协议支持、高并发低延时、高可扩展性、易于部署和快速的版本迭代等特点，在物联网行业中占有重要的地位。
+杭州映云科技有限公司聚焦于消息和流处理技术领域，EMQX Broker是映云科技的开源分布式IoT消息处理中间件。自发布以来，EMQX Broker已经在世界各地被⼴泛应用。EMQX Broker也以其完备的[MQTT协议](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt)支持、高并发低延时、高可扩展性、易于部署和快速的版本迭代等特点，在物联网行业中占有重要的地位。
 
 
 
@@ -17,7 +17,7 @@
 
 - 更多的请求响应信息
 
-  支持在CONNACK包中使用 Response-Information 消息属性。这个⼀个MQTT 5.0协议中的可选特性。
+  支持在[CONNACK](https://www.emqx.com/zh/blog/mqtt5-new-features-reason-code-and-ack)包中使用 Response-Information 消息属性。这个⼀个MQTT 5.0协议中的可选特性。
 
 **EMQX** 管理功能
 

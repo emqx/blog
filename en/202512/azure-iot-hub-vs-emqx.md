@@ -10,7 +10,7 @@ In IoT system design, architecture determines everything from throughput ceiling
 
 Azure IoT Hub is built on Azure Event Hubs and uses a partitioned log architecture. Incoming telemetry is written to fixed partitions. Each partition can only be read by one consumer at a time. This creates predictable throughput but also introduces structural read bottlenecks, especially when downstream systems need high parallelism. Retention is typically short-term and optimized for hand-off to Azure services.
 
-EMQX is built on the Erlang/OTP actor model. Each connection is handled by a lightweight process, which gives EMQX extremely high concurrency and predictable low latency. EMQX Enterprise 6.0 extends this architecture with a RockDB-based storage engine that supports durable, asynchronous messaging within the same cluster.
+EMQX is built on the Erlang/OTP actor model. Each connection is handled by a lightweight process, which gives EMQX extremely high concurrency and predictable low latency. [EMQX Enterprise](https://www.emqx.com/en/products/emqx) 6.0 extends this architecture with a RockDB-based storage engine that supports durable, asynchronous messaging within the same cluster.
 
 ### **Architecture Comparison**
 
@@ -36,9 +36,9 @@ Azure IoT Hub supports [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-
 | QoS 2                | Not supported                | Supported                      | Required for transactional or high-integrity IoT workloads   |
 | Retained Messages    | Ignored                      | Fully supported and durable    | Azure users rely on external databases for last-known-state queries |
 | Shared Subscriptions | Not supported                | Supported                      | Enables worker pools and horizontal load balancing           |
-| MQTT over QUIC       | Not supported                | Supported natively             | Improves performance for unstable or mobile networks         |
+| [MQTT over QUIC](https://www.emqx.com/en/blog/mqtt-over-quic)       | Not supported                | Supported natively             | Improves performance for unstable or mobile networks         |
 | CoAP, LwM2M, MQTT-SN | Requires an external gateway | Native gateway support         | Constrained devices can connect directly to EMQX             |
-| Keep Alive           | Max 1,767 seconds            | Up to 65,535 seconds           | Longer intervals reduce battery usage on cellular devices    |
+| [Keep Alive](https://www.emqx.com/en/blog/mqtt-keep-alive)           | Max 1,767 seconds            | Up to 65,535 seconds           | Longer intervals reduce battery usage on cellular devices    |
 
 ## **3. Routing, Transformation, and Message Durability**
 
@@ -142,7 +142,7 @@ Higher message rates widen the cost gap because Azure users must upgrade entire 
 
 Azure IoT Hub is a strong choice for teams that depend heavily on Azure services such as Digital Twins, Functions, or Cosmos DB, and prefer a fully managed device lifecycle. It is suitable for moderate scale, straightforward MQTT usage, and architectures that benefit from Azure’s ecosystem integration.
 
-EMQX is preferred when deployments require high connection density, full MQTT 5.0 support, multi-protocol gateways, multi-tenant architectures, or when cost predictability and multi-cloud routing are priorities. EMQX is also advantageous for organizations that want more control and the ability to run the same data plane across cloud, on-premises, and edge environments.
+EMQX is preferred when deployments require high connection density, full [MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5) support, multi-protocol gateways, multi-tenant architectures, or when cost predictability and multi-cloud routing are priorities. EMQX is also advantageous for organizations that want more control and the ability to run the same data plane across cloud, on-premises, and edge environments.
 
 If you want to explore the practical business and architecture reasons customers decide to switch, you can review [**our page outlining the key reasons teams switch from Azure IoT Hub to EMQX**](https://www.emqx.com/en/switch-from-azure).
 

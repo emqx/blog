@@ -1,6 +1,6 @@
-The Internet of Things (IoT) has transformed the way we interact with the world around us. From smart homes to connected cars, IoT devices have become an integral part of our daily lives. However, the widespread adoption of IoT has also brought new security challenges. IoT devices are often vulnerable to cyber attacks due to their limited processing power, memory, and storage capabilities. Attackers can exploit these vulnerabilities to gain unauthorized access to devices, steal data, or cause physical damage. In addition, the sheer number of devices and their interconnected nature makes them an attractive target for hackers looking to launch large-scale attacks.
+The Internet of Things (IoT) has transformed the way we interact with the world around us. From smart homes to [connected cars](https://www.emqx.com/en/blog/connected-cars-and-automotive-connectivity-all-you-need-to-know), IoT devices have become an integral part of our daily lives. However, the widespread adoption of IoT has also brought new security challenges. IoT devices are often vulnerable to cyber attacks due to their limited processing power, memory, and storage capabilities. Attackers can exploit these vulnerabilities to gain unauthorized access to devices, steal data, or cause physical damage. In addition, the sheer number of devices and their interconnected nature makes them an attractive target for hackers looking to launch large-scale attacks.
 
-MQTT security is crucial to ensure the confidentiality, integrity, and availability of data exchanged between devices. And that’s why we offer this blog series for you. We will dive deep into the various aspects of MQTT security, including authentication, encryption, access control and more. This series is believed to be a must-read for anyone working with MQTT-based IoT solutions, as it will provide valuable insights into securing these systems against potential threats and attacks.
+[MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) security is crucial to ensure the confidentiality, integrity, and availability of data exchanged between devices. And that’s why we offer this blog series for you. We will dive deep into the various aspects of MQTT security, including authentication, encryption, access control and more. This series is believed to be a must-read for anyone working with MQTT-based IoT solutions, as it will provide valuable insights into securing these systems against potential threats and attacks.
 
 
 ## EMQ series blogs on MQTT security
@@ -19,7 +19,7 @@ The series will include:
 - **[Rate Limit](https://www.emqx.com/en/blog/improve-the-reliability-and-security-of-mqtt-broker-with-rate-limit)**: How rate limit ensures security and the common rate limit strategies.
 - **[Strengthening Infrastructure Security](https://www.emqx.com/en/blog/five-strategies-for-strengthening-mqtt-infrastructure-security)**: How to strengthen security from the infrastructure aspect.
 - **Message Encryption**: How to use message encryption as an alternative to TLS for resource constrained devices. The encryption methods available and their advantages and disadvantages.
-- **Fuzzing with MQTT**: What is Fuzzing testing and how can it be used to find vulnerabilities in an IoT system? How to fuzz your MQTT broker.
+- **Fuzzing with MQTT**: What is Fuzzing testing and how can it be used to find vulnerabilities in an IoT system? How to fuzz your [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison).
 
 
 

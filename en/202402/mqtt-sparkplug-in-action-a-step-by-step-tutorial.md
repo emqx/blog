@@ -1,6 +1,6 @@
 ## Introduction to MQTT Sparkplug
 
-[Sparkplug](https://www.emqx.com/en/blog/sparkplug-3-0-advancements-and-formalization-in-mqtt-for-iiot) is an Industrial IoT protocol that provides a standardized way to communicate with industrial devices and applications. An efficient, comprehensive Sparkplug solution can facilitate communication between devices and applications and empower the decision-making of [IIoT](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges) adopters through insights from data.
+[Sparkplug](https://www.emqx.com/en/blog/sparkplug-3-0-advancements-and-formalization-in-mqtt-for-iiot) is an [Industrial IoT](https://www.emqx.com/en/blog/industrial-iot-systems) protocol that provides a standardized way to communicate with industrial devices and applications. An efficient, comprehensive Sparkplug solution can facilitate communication between devices and applications and empower the decision-making of [IIoT](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges) adopters through insights from data.
 
 MQTT Sparkplug is a messaging protocol built on top of [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt), a widely used messaging protocol for IoT. It already has all advantages of MQTT protocol. MQTT Sparkplug is designed specifically for the IIoT and includes additional features that make it suitable for industrial applications. It is an open-source protocol that is widely adopted in the industry
 

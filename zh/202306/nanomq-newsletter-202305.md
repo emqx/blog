@@ -4,7 +4,7 @@
 
 ### NanoMQ 支持 MQTT5 over QUIC 桥接
 
-继上一个版本 NanoSDK 增加了 MQTT5 over QUIC 的支持后，本月 NanoMQ 的桥接功能也引入了这一版本来支持 MQTT5 over QUIC 桥接，以期让用户可以同时利用 QUIC 协议和 MQTT 5.0 的优势。在 0.17 版本中 NanoMQ 的桥接功能已经支持了 MQTT 5.0 协议的 Connect 和 Subscribe 特性配置，而 MQTT5 over QUIC 桥接的使用方式也相同，示例配置如下：
+继上一个版本 NanoSDK 增加了 MQTT5 over QUIC 的支持后，本月 NanoMQ 的桥接功能也引入了这一版本来支持 MQTT5 over QUIC 桥接，以期让用户可以同时利用 [QUIC 协议](https://www.emqx.com/zh/blog/quic-protocol-the-features-use-cases-and-impact-for-iot-iov)和 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 5.0 的优势。在 0.17 版本中 NanoMQ 的桥接功能已经支持了 MQTT 5.0 协议的 Connect 和 Subscribe 特性配置，而 MQTT5 over QUIC 桥接的使用方式也相同，示例配置如下：
 
 ```
 bridges.mqtt {

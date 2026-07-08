@@ -1,4 +1,4 @@
-在本文中，我们将聚焦于 MQTT 5.0 的 Payload Format Indicator 和 Content Type 这两个属性，探讨它们如何使我们对消息的解析变得更加透明和高效。
+在本文中，我们将聚焦于 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 5.0 的 Payload Format Indicator 和 Content Type 这两个属性，探讨它们如何使我们对消息的解析变得更加透明和高效。
 
 ## 什么是 Payload Format Indicator?
 

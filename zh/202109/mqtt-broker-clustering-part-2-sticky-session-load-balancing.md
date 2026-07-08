@@ -1,4 +1,4 @@
-在上一篇文章《[MQTT Broker 集群详解（一）：负载均衡](https://www.emqx.com/zh/blog/mqtt-broker-clustering-part-1-load-balancing)》中，我们简单介绍了 MQTT 负载均衡：负载均衡既可以应用于传输层，也可以用于应用层。在本文中，我们将详细介绍应用层负载均衡，其中最有趣的部分：粘性会话（sticky-session）。
+在上一篇文章《[MQTT Broker 集群详解（一）：负载均衡](https://www.emqx.com/zh/blog/mqtt-broker-clustering-part-1-load-balancing)》中，我们简单介绍了 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 负载均衡：负载均衡既可以应用于传输层，也可以用于应用层。在本文中，我们将详细介绍应用层负载均衡，其中最有趣的部分：粘性会话（sticky-session）。
 
 本文由两部分组成，第一部分将介绍 MQTT 会话，以及在分布式 MQTT Broker 集群中处理会话面临的挑战；第二部分是通过在 [EMQX 4.3](https://www.emqx.com/zh/products/emqx) 集群前面配置 [HAProxy 2.4](https://www.haproxy.org/) 负载均衡器，带读者亲自体验如何充分利用粘性会话实现负载均衡。
 
@@ -16,7 +16,7 @@
 
 ### 会话接管
 
-当 MQTT Brokers 形成集群时，事情会变得更加复杂。从客户端的角度来看，要连接的服务器不止一个，很难知道哪个服务器最适合连接。我们需要网络中的另一个关键组件：负载均衡器。负载均衡器成为整个集群的接入点，并将客户端的连接路由到集群中的某一个服务器。
+当 [MQTT Brokers](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison) 形成集群时，事情会变得更加复杂。从客户端的角度来看，要连接的服务器不止一个，很难知道哪个服务器最适合连接。我们需要网络中的另一个关键组件：负载均衡器。负载均衡器成为整个集群的接入点，并将客户端的连接路由到集群中的某一个服务器。
 
 如果客户端通过负载均衡器连接到服务器（例如，node1），然后断开连接并稍后重新连接，则新连接可能会路由到集群中的不同服务器（例如，node3）。在这种情况下，node3 应该在客户端断开连接时开始向客户端发送未发送的消息。
 
@@ -155,7 +155,7 @@ docker run -d \
 
 ### 测试
 
-现在我们使用流行的 mosquitto MQTT 客户端（也在 docker 中）对其进行测试。
+现在我们使用流行的 [mosquitto MQTT](https://www.emqx.com/zh/blog/mosquitto-mqtt-broker-pros-cons-tutorial-and-modern-alternatives) 客户端（也在 docker 中）对其进行测试。
 
 我们启动一个订阅者（名为 `subscriber1`）订阅 `t/#` 主题
 

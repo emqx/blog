@@ -10,7 +10,7 @@
 
 [MQTT](https://www.emqx.com/zh/mqtt-guide) 是一种专为 (IoT) 设备通信而设计的消息传输协议。 它广泛应用于许多领域，例如银行、石油和天然气、制造业等。
 
-MQTT 协议有很多优点，部分如下所示：
+[MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 协议有很多优点，部分如下所示：
 
 - 它是一种轻量级的二进制协议，通常在 TCP/IP 协议之上运行。
 - 它专为网络不可靠的场景设计，是户外安装的理想选择。
@@ -40,7 +40,7 @@ mix new --sup weather_sensor
 cd weather_sensor
 ```
 
-为了与 MQTT broker 交互，我们需要一个 [MQTT 客户端](https://www.emqx.com/zh/mqtt-client-sdk)。 我们采用 [emqtt](https://github.com/emqx/emqtt)。 将其添加到 mix.exs 作为依赖项：
+为了与 [MQTT broker](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison) 交互，我们需要一个 [MQTT 客户端](https://www.emqx.com/zh/mqtt-client-sdk)。 我们采用 [emqtt](https://github.com/emqx/emqtt)。 将其添加到 mix.exs 作为依赖项：
 
 ```
 defp deps do
@@ -178,7 +178,7 @@ config :weather_sensor, :interval, 1000
 
 ## 控制台设置
 
-由于 MQTT 中没有“服务器”，因此我们的控制台也将是一个 MQTT 客户端。 但它会*订阅*reports/weather_sensor/temperature主题和*发布*命令到 commands/weather_sensor/set_interval。
+由于 MQTT 中没有“服务器”，因此我们的控制台也将是一个 [MQTT 客户端](https://www.emqx.com/zh/blog/mqtt-client-tools)。 但它会*订阅*reports/weather_sensor/temperature主题和*发布*命令到 commands/weather_sensor/set_interval。
 
 对于控制台，我们将设置 Phoenix LiveView 应用程序。
 

@@ -33,11 +33,11 @@ A broker-based transport takes away the inbound listeners that most of these dep
 
 ## What Changes When the Transport is a Broker
 
-MCP and A2A both have MQTT bindings: [MCP-over-MQTT](https://www.emqx.com/en/blog/mcp-over-mqtt) for agent-to-tool calls and [A2A-over-MQTT](https://www.emqx.com/en/blog/a2a-over-mqtt) for agent-to-agent coordination. Both are open specifications with reference SDKs. The architectural difference that matters for security is one sentence: agents and tools stop being servers.
+MCP and A2A both have [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) bindings: [MCP-over-MQTT](https://www.emqx.com/en/blog/mcp-over-mqtt) for agent-to-tool calls and [A2A-over-MQTT](https://www.emqx.com/en/blog/a2a-over-mqtt) for agent-to-agent coordination. Both are open specifications with reference SDKs. The architectural difference that matters for security is one sentence: agents and tools stop being servers.
 
 ![image.png](https://assets.emqx.com/images/360c0e123aa4d367f50fc1e41fa70f0d.png)
 
-In the MQTT binding, an MCP server is an MQTT client, not an HTTP listener. It opens an outbound TLS connection to a broker and subscribes to its own request topic. The same is true of an A2A agent. Nothing listens for inbound HTTP on the tool or the agent. Concretely:
+In the MQTT binding, an MCP server is an [MQTT client](https://www.emqx.com/en/blog/mqtt-client-tools), not an HTTP listener. It opens an outbound TLS connection to a broker and subscribes to its own request topic. The same is true of an A2A agent. Nothing listens for inbound HTTP on the tool or the agent. Concretely:
 
 - **No inbound listener to reach.** You cannot send a crafted request to an MCP server that has no open port. The set of network-reachable endpoints collapses from "every tool and every agent" to "the broker." Run 50 agents and 200 tools and you go from 250 internet- or LAN-reachable servers to one broker.
 - **The BadHost class is not expressible.** MQTT routes on topic names, not on a URL rebuilt from a `Host` header. There is no `Host` header, no URL reconstruction, no `request.url.path`, and no gap between the path that was routed and the path that was authorized. You cannot have a Host-header authorization bypass in a protocol that has no Host header.
@@ -69,7 +69,7 @@ A security post that stops there is marketing. The honest limits:
 - **Tools still hold secrets and still call outward.** Moving an MCP server off a public listener removes the inbound attack surface. It does not remove the API key, and it does not stop the tool from making a server-side request to the third-party API it fronts. Brokered transport closes the inbound-ingress class of bug, not all credential risk.
 - **Model-serving endpoints are a separate problem.** vLLM and LiteLLM are HTTP inference servers in their own right. The broker argument is about agent and tool coordination, not the model server, which you still secure the usual way.
 - **ACLs are only as good as you write them.** The broker enforces topic permissions; it does not invent least-privilege topic design. Over-broad wildcards on request or reply topics reintroduce lateral movement between agents. A compromised identity does whatever its ACLs allow.
-- **This is an architecture, not a product.** MCP-over-MQTT and A2A-over-MQTT are open specs plus reference SDKs; the A2A profile is still marked draft and broker-neutral. The broker-native piece shipping today is the A2A Registry in [EMQX 6.2](https://www.emqx.com/en/blog/emqx-6-2-0-release-notes), which adds schema validation, status tracking, and registration rate and size limits. Nobody is shipping a turnkey secure-agent product. The security comes from the transport shape, and you can adopt it on any MQTT v5 broker.
+- **This is an architecture, not a product.** MCP-over-MQTT and A2A-over-MQTT are open specs plus reference SDKs; the A2A profile is still marked draft and broker-neutral. The broker-native piece shipping today is the A2A Registry in [EMQX 6.2](https://www.emqx.com/en/blog/emqx-6-2-0-release-notes), which adds schema validation, status tracking, and registration rate and size limits. Nobody is shipping a turnkey secure-agent product. The security comes from the transport shape, and you can adopt it on any [MQTT v5](https://www.emqx.com/en/blog/introduction-to-mqtt-5) broker.
 
 ## What to Do
 

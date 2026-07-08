@@ -4,7 +4,7 @@ EMQX 作为一款强大的[物联网 MQTT 消息服务器](https://www.emqx.com/
 
 ![物联网流数据处理](https://assets.emqx.com/images/a9f9d31755d0000f7aa78f1c5500c841.png)
 
-近期 [EMQX Enterprise 4.4.15](https://www.emqx.com/zh/changelogs/enterprise/4.4.15) 发布，更新了对 HStreamDB 最新版本的支持，本文将具体介绍如何通过 EMQX 规则引擎将数据持久化到 HStreamDB，实现 MQTT 数据流的存储与实时处理。
+近期 [EMQX Enterprise 4.4.15](https://www.emqx.com/zh/changelogs/enterprise/4.4.15) 发布，更新了对 HStreamDB 最新版本的支持，本文将具体介绍如何通过 EMQX 规则引擎将数据持久化到 HStreamDB，实现 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 数据流的存储与实时处理。
 
 > **注**：本文介绍的集成步骤基于 EMQX 4.4.15 和 HStreamDB 0.14.0 以上版本。
 

@@ -1,10 +1,10 @@
 > ***Executive Summary***
 >
-> *A global digital signage solutions provider managing IoT-enabled displays across retail, banking, airports, and corporate environments scaled from pilot testing to production deployment using EMQX. With devices distributed across North America and Europe, the organization needed a reliable, secure MQTT broker architecture that could handle rapid global expansion while maintaining per-device authentication, disaster recovery capabilities, and cost-effective cloud deployment on Google Cloud Platform. EMQX's multi-region clustering, fine-grained access control, and GCP-native architecture delivered the foundation for secure, scalable digital signage management.*
+> *A global digital signage solutions provider managing IoT-enabled displays across retail, banking, airports, and corporate environments scaled from pilot testing to production deployment using EMQX. With devices distributed across North America and Europe, the organization needed a reliable, secure [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) architecture that could handle rapid global expansion while maintaining per-device authentication, disaster recovery capabilities, and cost-effective cloud deployment on Google Cloud Platform. EMQX's multi-region clustering, fine-grained access control, and GCP-native architecture delivered the foundation for secure, scalable digital signage management.*
 
 ## The Evolution of Connected Digital Signage Ecosystems
 
-Digital signage has evolved from static displays to dynamic, network-connected systems that deliver real-time content updates across global retail chains, banking networks, airport terminals, and corporate campuses. Modern signage networks combine high-resolution displays with battery-powered electronic shelf labels, creating heterogeneous device ecosystems that require lightweight, reliable IoT communication protocols. Content management systems demand sub-second responsiveness for display image updates while accommodating the operational realities of distributed installations: network interruptions, variable connectivity, and battery-constrained devices at the network edge.
+Digital signage has evolved from static displays to dynamic, network-connected systems that deliver real-time content updates across global retail chains, banking networks, airport terminals, and corporate campuses. Modern signage networks combine high-resolution displays with battery-powered electronic shelf labels, creating heterogeneous device ecosystems that require lightweight, reliable [IoT communication protocols](https://www.emqx.com/en/blog/iot-protocols-mqtt-coap-lwm2m). Content management systems demand sub-second responsiveness for display image updates while accommodating the operational realities of distributed installations: network interruptions, variable connectivity, and battery-constrained devices at the network edge.
 
 ## The Challenge: Global-Scale Signage Device Management
 
@@ -18,7 +18,7 @@ The organization operates thousands of displays and electronic price tags across
 
 ## Why MQTT for Digital Signage Networks
 
-MQTT's lightweight publish-subscribe architecture proved ideal for this use case:
+[MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt)'s lightweight publish-subscribe architecture proved ideal for this use case:
 
 - **Low bandwidth overhead**: Binary protocol with minimal header size accommodates battery-powered edge devices and high-latency network conditions common in retail environments
 - **QoS flexibility**: QoS 0 for steady-state heartbeats, QoS 1 for content updates, eliminating unnecessary acknowledgment overhead on stable connections
@@ -38,7 +38,7 @@ The organization deployed EMQX across two production environments.
 
 **Authentication & Authorization:** 
 
-Each device receives a unique MQTT client ID and pre-shared credentials (symmetric keys or certificates). EMQX's built-in database and fine-grained ACL rules enforce per-device topic permissions:
+Each device receives a unique [MQTT client](https://www.emqx.com/en/blog/mqtt-client-tools) ID and pre-shared credentials (symmetric keys or certificates). EMQX's built-in database and fine-grained ACL rules enforce per-device topic permissions:
 
 ```
 Topic: signage/{location-id}/{device-id}/* → Allow

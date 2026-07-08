@@ -1,7 +1,7 @@
 | **Chapter** | **Feature**                                                  | **Difficulty** |
 | ----------- | ------------------------------------------------------------ | -------------- |
 | 1           | [Overview: Background + Environment Setup + Device Online](https://www.emqx.com/en/blog/esp32-and-mcp-over-mqtt) | ★              |
-| 2           | **From "Command-Based" to "Semantic Control": MCP over MQTT Encapsulation of Device Capabilities** | ★★             |
+| 2           | **From "Command-Based" to "Semantic Control": MCP over [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) Encapsulation of Device Capabilities** | ★★             |
 | 3           | [Integrating LLM for "Natural Language → Device Control"](https://www.emqx.com/en/blog/esp32-and-mcp-over-mqtt-3) | ★★             |
 | 4           | [Voice I/O: Microphone Data Upload + Speech Recognition + Speech Synthesis Playback](https://www.emqx.com/en/blog/esp32-and-mcp-over-mqtt-4) | ★★★            |
 | 5           | [Persona, Emotion, Memory: From "Controller" to "Companion"](https://www.emqx.com/en/blog/esp32-and-mcp-over-mqtt-5)   | ★★★            |
@@ -207,7 +207,7 @@ The `mcp_server.h` header file defines the MCP over MQTT interfaces for ESP32. W
 
 ## Cloud MCP Client (Python Language)
 
-On the cloud side, we provide the MCP over MQTT Python Client SDK. Download [here](https://github.com/emqx/mcp-python-sdk).
+On the cloud side, we provide the MCP over [MQTT Python](https://www.emqx.com/en/blog/how-to-use-mqtt-in-python) Client SDK. Download [here](https://github.com/emqx/mcp-python-sdk).
 
 Then, refer to e`xamples/clients/mqtt-clients/client_apis_demo.py`.
 

@@ -8,7 +8,7 @@
 | 6           | [Giving the AI "Eyes": Image Acquisition + Multimodal Understanding](https://www.emqx.com/en/blog/esp32-and-mcp-over-mqtt-6) | ★★★            |
 
 
-*This is the third piece of our “Building Your AI Companion with ESP32 & MCP over MQTT” series.*
+*This is the third piece of our “Building Your AI Companion with ESP32 & MCP over [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt)” series.*
 
 ## Recap: Encapsulating Device Capabilities with MCP over MQTT
 
@@ -342,7 +342,7 @@ if __name__ == "__main__":
 
 The code above is implemented using the [MCP over MQTT Python SDK](https://github.com/emqx/mcp-python-sdk).
 
-First, initialize the MCP Client and connect to the MQTT Broker (please replace the Broker address with your EMQX Serverless instance address). The client will automatically discover and connect to the registered MCP Server.
+First, initialize the MCP Client and connect to the [MQTT Broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) (please replace the Broker address with your EMQX Serverless instance address). The client will automatically discover and connect to the registered MCP Server.
 
 Next, the code encapsulates the tools registered in the MCP Server into callable function interfaces for LlamaIndex to use with the LLM. It also implements a simple conversational example to demonstrate the list of available tools and the LLM's reasoning and calling process.
 

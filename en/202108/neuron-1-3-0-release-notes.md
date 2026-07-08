@@ -9,7 +9,7 @@ Neuron supports the access and conversion of dozens of industrial equipment prot
 
 In the newly released Neuron v1.3.0, protocol support for the electric power industry such as DL/T645-07, IEC 60870-5 104, and IEC 61850 MMS has been added. At the same time, a PLC protocol of **FINS on TCP** is added. This means that Neuron will help more industry users realize the data management of edge devices.
 
-> As the IEC 61850 protocol requires some functions related to model import and model analysis, the protocol only supports customization for the time being.
+> As the [IEC 61850 protocol](https://www.emqx.com/en/blog/iec-61850-protocol) requires some functions related to model import and model analysis, the protocol only supports customization for the time being.
 
 Taking the DL/T645-07 protocol as an example, the device wiring method is shown in the figure below. The meter is powered on and connected to the computer via a serial port connection through a USB to Modbus converter. Neuron can read the current, voltage, power and other parameters of the meter through configuration.
 

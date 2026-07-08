@@ -1,6 +1,6 @@
 Intelligence is trending in all industries. Nowadays, vehicle is no longer just a means of transportation, but a mobile intelligent node with autonomous reasoning capability and ability to interact with the cloud for vehicle-road coordination.
 
-Many new application scenarios not only need strong computing power to process large amount of data, but also demand for low latency, low energy consumption, and high reliability on the communication links. Traditional communication protocols such as HTTP cannot simultaneously meet the above requirements. As the de facto standard protocol in IoT, MQTT provides a Pub/Sub message model with a streamlined and excellent protocol design to meet the needs of low latency and consumes much less power than HTTP/WebSocket, which is suitable for intelligent mobility with limited resources. Also, [Internet of Vehicles](https://www.emqx.com/en/blog/mqtt-for-internet-of-vehicles) scenarios are different from the scenarios of smart homes and robots, which have fixed geo-locations and stable connectivity. Under the circumstance of IoV, there are higher requirements for the application of MQTT protocol due to the rapid movement of vehicles, constant switching scenarios, and complex networking conditions.
+Many new application scenarios not only need strong computing power to process large amount of data, but also demand for low latency, low energy consumption, and high reliability on the communication links. Traditional communication protocols such as HTTP cannot simultaneously meet the above requirements. As the de facto standard protocol in IoT, MQTT provides a Pub/Sub message model with a streamlined and excellent protocol design to meet the needs of low latency and consumes much less power than HTTP/WebSocket, which is suitable for intelligent mobility with limited resources. Also, [Internet of Vehicles](https://www.emqx.com/en/blog/mqtt-for-internet-of-vehicles) scenarios are different from the scenarios of smart homes and robots, which have fixed geo-locations and stable connectivity. Under the circumstance of IoV, there are higher requirements for the application of [MQTT protocol](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) due to the rapid movement of vehicles, constant switching scenarios, and complex networking conditions.
 
 In this article, we will deeply analyze the cause of problems when applying MQTT on message transmission in mobility scenarios, and use MQTT protocol features to solve the problems and optimize the solutions, so as to help users build a more robust communication architecture for mobile automotive.
 
@@ -66,7 +66,7 @@ In addition to the network problems caused by the base station coverage, the Dop
 
 We have known the network conditions of the vehicle, so how do these factors affect MQTT connection on the automotive side?
 
-As we all know, MQTT connections are also based on the TCP/IP stack. You may have questions: TCP/IP protocol stack has a connection keeping alive mechanism, and MQTT protocol also has the Keep Alive parameter for connection reconstruction and recovery. Even if the base station switch led to a temporary communication interruption, the communication link will be quickly restored when entering the range of the next base station. Then, why it also leads to frequent MQTT connection offline on automotive? To answer this question, we need to analyze TCP/IP and the mobile network access process together.
+As we all know, MQTT connections are also based on the TCP/IP stack. You may have questions: TCP/IP protocol stack has a connection keeping alive mechanism, and MQTT protocol also has the [Keep Alive](https://www.emqx.com/en/blog/mqtt-keep-alive) parameter for connection reconstruction and recovery. Even if the base station switch led to a temporary communication interruption, the communication link will be quickly restored when entering the range of the next base station. Then, why it also leads to frequent MQTT connection offline on automotive? To answer this question, we need to analyze TCP/IP and the mobile network access process together.
 
 ![TCP/IP handshake process](https://assets.emqx.com/images/02f7f7d058871e3a9e2c9532d05efa08.png)
 
@@ -98,7 +98,7 @@ First, we need to solve the problem of IP updates causing the client to be unrec
 
 > To know more about the MQTT session state, please refer to the article: [MQTT Session](https://www.emqx.com/en/blog/mqtt-session)  
 
-MQTT requires the client and server to store a series of states (i.e., session states) associated with the client identity (ClientID) for the duration of the session. We call the sequence of messages sent and received from the time a client initiates an MQTT connection request to the server, through the connection is broken, until the session expires, as “a session”. A session may last for only one TCP connection, or it may exist across multiple TCP connections. So, using the unique client identifier corresponding to each automotive during such network switching allows the MQTT Broker to recognize the new connection as the previous client even if the TCP connection is rebuilt, and thus retransmit the cached QoS messages and apply the previous connection state.
+MQTT requires the client and server to store a series of states (i.e., session states) associated with the client identity (ClientID) for the duration of the session. We call the sequence of messages sent and received from the time a client initiates an MQTT connection request to the server, through the connection is broken, until the session expires, as “a session”. A session may last for only one TCP connection, or it may exist across multiple TCP connections. So, using the unique client identifier corresponding to each automotive during such network switching allows the [MQTT Broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) to recognize the new connection as the previous client even if the TCP connection is rebuilt, and thus retransmit the cached QoS messages and apply the previous connection state.
 
 The client uses clean session, take Java code as an example:
 
@@ -115,7 +115,7 @@ this.client.connect();
 
 ### MQTT 5.0
 
-Based on this frequent disconnection and reconnection of network connections, MQTT 5.0 also optimized the protocol response in order to avoid the application layer receiving frequent online and offline events that affect business.
+Based on this frequent disconnection and reconnection of network connections, [MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5) also optimized the protocol response in order to avoid the application layer receiving frequent online and offline events that affect business.
 
 Will Delay Interval: We often use [will messages](https://www.emqx.com/en/blog/use-of-mqtt-will-message) to track and inform clients about their offline. Will messages will be received frequently in this case. So, an important use of the Will Delay Interval is to avoid posting will messages when frequent network connections are temporarily disconnected, since the clients will often quickly reconnect to the network and continue the previous session.
 
@@ -162,7 +162,7 @@ The default QoS 2 message queue length is only 100. Here, it is recommended to i
 
 ## A more excellent solution: MQTT over QUIC
 
-TCP uses quaternions to identify the uniqueness of a connection, while UDP does not have the same requirement. On June 11, 2022, the IETF officially published the HTTP/3 RFC technical standards document, making the UDP-based QUIC one of the transport layer standards. The QUIC-based MQTT solution is also expected to become the next industry standard.
+TCP uses quaternions to identify the uniqueness of a connection, while UDP does not have the same requirement. On June 11, 2022, the IETF officially published the HTTP/3 RFC technical standards document, making the UDP-based [QUIC](https://www.emqx.com/en/blog/quic-protocol-the-features-use-cases-and-impact-for-iot-iov) one of the transport layer standards. The QUIC-based MQTT solution is also expected to become the next industry standard.
 
 With the QUIC protocol's address migration, streaming multiplexing, split flow control, and lower connection establishment latency, we expect to completely solve the connectivity problem in Internet of Vehicles scenarios.
 

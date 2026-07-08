@@ -1,4 +1,4 @@
-MQTT v5 brings lots of new features, and we will try our best to present these features in an easy-to-understand way and discuss the impact of these features on developers. So far, we have discussed these [new features of MQTT v5](https://www.emqx.com/en/blog/introduction-to-mqtt-5). Today, we will continue to discuss: **enhanced authentication**.
+[MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) v5 brings lots of new features, and we will try our best to present these features in an easy-to-understand way and discuss the impact of these features on developers. So far, we have discussed these [new features of MQTT v5](https://www.emqx.com/en/blog/introduction-to-mqtt-5). Today, we will continue to discuss: **enhanced authentication**.
 
 In the IoT scenario, the safe design is a very important part of the process. Leakage of sensitive data or unauthorized control of edge devices are unacceptable, but compared to other scenarios, the IoT project still has the following limitations:
 
@@ -38,7 +38,7 @@ Authentication data is binary information used to transmit multiple iterations o
 
 ### Enhanced authentication process
 
-Compared to simple authentication which relies on an interaction between the CONNECT packet and the CONNACK packet, enhanced authentication requires multiple exchanges of authentication data between the client and broker. Therefore, MQTT v5 adds the AUTH packet to implement this. The implementation of enhanced authentication is based on three kinds of [MQTT packet](https://www.emqx.com/en/blog/introduction-to-mqtt-control-packets) types:  CONNECT, CONNACK and AUTH. These three kinds of packet need to carry the authentication method and authentication data for bi-directional authentication.
+Compared to simple authentication which relies on an interaction between the CONNECT packet and the [CONNACK](https://www.emqx.com/en/blog/mqtt5-new-features-reason-code-and-ack) packet, enhanced authentication requires multiple exchanges of authentication data between the client and broker. Therefore, MQTT v5 adds the AUTH packet to implement this. The implementation of enhanced authentication is based on three kinds of [MQTT packet](https://www.emqx.com/en/blog/introduction-to-mqtt-control-packets) types:  CONNECT, CONNACK and AUTH. These three kinds of packet need to carry the authentication method and authentication data for bi-directional authentication.
 
 To start the enhanced authentication process, the client needs to send the CONNECT packet containing the authentication method field to the broker. After receiving the CONNECT packet, the broker can continue exchanging authentication data with the client through the AUTH packet and send the CONNACK packet to the client after the authentication is complete.
 
@@ -59,7 +59,7 @@ To start the enhanced authentication process, the client needs to send the CONNE
 + Client to server: AUTH reason code = 0x18, authentication method = "GS2-KRB5"
 + Server to client: CONNACK reason code = 0, authentication method = "GS2-KRB5", authentication data = outcome of authentication
 
-In the enhanced authentication process, the client and broker need to exchange authentication data multiple times and each exchange needs to be decrypted and calculated by the authentication algorithm, so it requires more computing resources and a more stable network environment. Therefore, it is not suitable for edge devices with weak computing power and large network fluctuations and MQTT broker that supports enhanced authentication also needs to prepare more computing resources to cope with a large number of connections.
+In the enhanced authentication process, the client and broker need to exchange authentication data multiple times and each exchange needs to be decrypted and calculated by the authentication algorithm, so it requires more computing resources and a more stable network environment. Therefore, it is not suitable for edge devices with weak computing power and large network fluctuations and [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) that supports enhanced authentication also needs to prepare more computing resources to cope with a large number of connections.
 
 
 

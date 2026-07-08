@@ -1,6 +1,6 @@
 11 月，EMQX 开源版和企业版分别发布了多个迭代版本，在安全性保障和生态集成方面又有了新的提升。
 
-MQTT 消息云服务 EMQX Cloud 推出了新功能——自定义函数，用户可以更方便地将 IoT 数据处理为符合数据流的数据格式。
+[MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 消息云服务 [EMQX Cloud](https://www.emqx.com/zh/cloud) 推出了新功能——自定义函数，用户可以更方便地将 IoT 数据处理为符合数据流的数据格式。
 
 ## EMQX
 
@@ -49,7 +49,7 @@ appid2:secret2
 
 ### 产品优化改进
 
-我们修复了多个已知 BUG，包括连接 MongoDB 认证失败时打印大量日志的错误，消息重发布或桥接消息到其他 MQTT Broker 时添加主题校验流程避免消息发布错误，以及 EMQX 5.0 中大规模性能测试时连接数非常大的情况下[复制节点](https://github.com/emqx/eip/blob/main/implemented/0004-async-mnesia-change-log-replication.md#rlog-replica)可能无法启动的问题。
+我们修复了多个已知 BUG，包括连接 MongoDB 认证失败时打印大量日志的错误，消息重发布或桥接消息到其他 [MQTT Broker](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison) 时添加主题校验流程避免消息发布错误，以及 EMQX 5.0 中大规模性能测试时连接数非常大的情况下[复制节点](https://github.com/emqx/eip/blob/main/implemented/0004-async-mnesia-change-log-replication.md#rlog-replica)可能无法启动的问题。
 
 除此之外，我们还在 MQTT 协议实现和安全设计上中添加了许多改进，包括 gen_rpc 库质询-响应式的身份验证支持。
 

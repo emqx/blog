@@ -1,6 +1,6 @@
 ## 背景
 
-MQTT 是一个基于 TCP 协议的发布/订阅模型协议，它被广泛应用于物联网、传感器网络和其他低带宽、不稳定网络环境中。在这些网络环境中，网络连接往往不稳定，可能会出现网络故障、信号弱化、丢包等问题，这可能会导致 [MQTT 客户端](https://www.emqx.com/zh/blog/mqtt-client-tools)与服务器之间的连接中断。物联网应用中，常见的触发断线重连的场景包括：
+[MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 是一个基于 TCP 协议的发布/订阅模型协议，它被广泛应用于物联网、传感器网络和其他低带宽、不稳定网络环境中。在这些网络环境中，网络连接往往不稳定，可能会出现网络故障、信号弱化、丢包等问题，这可能会导致 [MQTT 客户端](https://www.emqx.com/zh/blog/mqtt-client-tools)与服务器之间的连接中断。物联网应用中，常见的触发断线重连的场景包括：
 
 1. 网络环境恶劣或者断网，造成 MQTT 客户端连接超时断开。
 2. 由于业务需要服务端升级切换，服务端主动关闭断开。
@@ -151,7 +151,7 @@ int main(int argc, char* argv[])
 
 ## 更多选择：NanoSDK 内置重连策略
 
-[NanoSDK](https://github.com/emqx/NanoSDK) 是除了 Paho 以外的又一 MQTT SDK 选择。NanoSDK 基于 [NNG-NanoMSG](https://github.com/nanomsg/nng) 项目开发，使用 MIT License，对开源和商业都很友好。相较于 Paho 其最大的不同在于内置的全异步 I/O 和 支持 Actor 编程模型，当使用 QoS 1/2 消息时可以获得更高的消息吞吐速率。而且 NanoSDK 支持 MQTT over QUIC 协议，与大规模物联网 [MQTT 消息服务器 EMQX 5.0](https://www.emqx.com/zh/products/emqx) 结合可解决弱网下的数据传输难题。这些优势使得它已经在车联网和工业场景中得到了广泛的使用。
+[NanoSDK](https://github.com/emqx/NanoSDK) 是除了 Paho 以外的又一 MQTT SDK 选择。NanoSDK 基于 [NNG-NanoMSG](https://github.com/nanomsg/nng) 项目开发，使用 MIT License，对开源和商业都很友好。相较于 Paho 其最大的不同在于内置的全异步 I/O 和 支持 Actor 编程模型，当使用 QoS 1/2 消息时可以获得更高的消息吞吐速率。而且 NanoSDK 支持 MQTT over [QUIC 协议](https://www.emqx.com/zh/blog/quic-protocol-the-features-use-cases-and-impact-for-iot-iov)，与大规模物联网 [MQTT 消息服务器 EMQX 5.0](https://www.emqx.com/zh/products/emqx) 结合可解决弱网下的数据传输难题。这些优势使得它已经在车联网和工业场景中得到了广泛的使用。
 
 在 NanoSDK 中，重连策略已经完全内置，无需用户手动实现。
 

@@ -1,4 +1,4 @@
-本文我们将使用 EMQ 提供的 Neuron 和 EMQX 来实现 FINS 到 MQTT 的桥接。Neuron 可以将 FINS 协议转换为 MQTT，EMQX 则充当 MQTT Broker，处理大量连接和数据。
+本文我们将使用 EMQ 提供的 Neuron 和 EMQX 来实现 FINS 到 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 的桥接。Neuron 可以将 FINS 协议转换为 MQTT，EMQX 则充当 [MQTT Broker](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison)，处理大量连接和数据。
 
 ## FINS 桥接到 MQTT 的架构
 
@@ -198,7 +198,7 @@ $ docker run -d --name neuron -p 7000:7000 --privileged=true --restart=always em
 
 ## 结语
 
-随着工业4.0浪潮中云端协作的趋势日益明显，FINS 桥接正在成为越来越流行的通用物联网协议选择。通过使用本文中提供的方法将 FINS 协议数据桥接到 MQTT，用户可以更加安全、方便地按需实施连接性更强的 IIoT 平台，从而显著提高生产效率、节约成本和提升产品质量。
+随着工业4.0浪潮中云端协作的趋势日益明显，FINS 桥接正在成为越来越流行的通用[物联网协议](https://www.emqx.com/zh/blog/iot-protocols-mqtt-coap-lwm2m)选择。通过使用本文中提供的方法将 FINS 协议数据桥接到 MQTT，用户可以更加安全、方便地按需实施连接性更强的 IIoT 平台，从而显著提高生产效率、节约成本和提升产品质量。
 
 
 

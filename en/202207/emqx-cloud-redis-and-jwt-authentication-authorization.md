@@ -1,8 +1,8 @@
-After the previous HTTP custom authentication and MySQL and PostgreSQL external authentication, EMQX Cloud has recently supported two more external Auth&ACL methods, Redis and JWT. Users now have more choices to achieve more secure and fast access to massive devices flexibly.
+After the previous HTTP custom authentication and MySQL and PostgreSQL external authentication, [EMQX Cloud](https://www.emqx.com/en/cloud) has recently supported two more external Auth&ACL methods, Redis and JWT. Users now have more choices to achieve more secure and fast access to massive devices flexibly.
 
 ## Flexible and diverse authentication methods
 
-As a fully managed cloud-native MQTT messaging service, users can authenticate devices and control the access to Topic through the Auth&ACL module of the console. Authentication takes the form of username and password, and the access control supports three granularities of client ID, username, and all users. Both authentication and access control support the batch import of CSV files.
+As a fully managed cloud-native [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) messaging service, users can authenticate devices and control the access to Topic through the Auth&ACL module of the console. Authentication takes the form of username and password, and the access control supports three granularities of client ID, username, and all users. Both authentication and access control support the batch import of CSV files.
 
 In addition to storing authentication information in EMQX Cloud, users can also authenticate through external authentication authorization in the external database where the authentication information is stored, and connection to JWT services for authentication is also supported.
 

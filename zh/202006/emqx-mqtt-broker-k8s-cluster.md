@@ -1,4 +1,4 @@
-EMQX Team 提供了 Helm chart 方便用户在 kubernetes 集群上一键部署 EMQX [MQTT 服务器](https://www.emqx.com/zh/products/emqx), 这是 EMQX Team 最推荐的在 kubernetes 或 k3s 集群上部署 EMQX MQTT 服务器的方法。 本文将使用手写 yaml 文件的方法从零开始部署一个 EMQX MQTT 服务器的 K8S 集群, 分析部署中的细节与技巧，方便用户在实际部署中灵活使用。
+EMQX Team 提供了 Helm chart 方便用户在 kubernetes 集群上一键部署 EMQX [MQTT 服务器](https://www.emqx.com/zh/products/emqx), 这是 EMQX Team 最推荐的在 kubernetes 或 k3s 集群上部署 EMQX [MQTT 服务器](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison)的方法。 本文将使用手写 yaml 文件的方法从零开始部署一个 EMQX [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 服务器的 K8S 集群, 分析部署中的细节与技巧，方便用户在实际部署中灵活使用。
 
 阅读本文需要用户了解 kubernetes 的基本概念，并有一个可操作的 kubernetes 集群。
 
@@ -128,7 +128,7 @@ Kubernetes [Pods](https://kubernetes.io/docs/concepts/workloads/pods/) 是有生
 
 每个 Pod 都有自己的 IP 地址，但是在 Deployment 中，在同一时刻运行的 Pod 集合可能与稍后运行该应用程序的 Pod 集合不同。
 
-这导致了一个问题：如果使用 EMQX Broker Pod 为 **MQTT 客户端**提供服务，那么客户端应该如何如何找出并跟踪要连接的 IP 地址，以便客户端使用 EMQX Broker 服务呢？
+这导致了一个问题：如果使用 EMQX Broker Pod 为 **[MQTT 客户端](https://www.emqx.com/zh/blog/mqtt-client-tools)**提供服务，那么客户端应该如何如何找出并跟踪要连接的 IP 地址，以便客户端使用 EMQX Broker 服务呢？
 
 答案是：Service
 

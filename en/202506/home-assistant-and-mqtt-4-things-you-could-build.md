@@ -87,7 +87,7 @@ You should be able to see the EMQX dashboard. The default username and password 
 
 The next step is to set up MQTT integration in the Home Assistant. To do this, open Home Assistant in your browser and go to **Configuration** > **Integrations**. Click the "**+**" button to add a new integration and search for "MQTT". Click on it to start the setup process.
 
-In the **MQTT configuration** page, enter the IP address of the machine where you installed EMQX in the **Broker** field. The **Port** field should be 1883, which is the default MQTT port. Leave the **Username** and **Password** fields blank as we have not set up any authentication yet. Click **Submit** to finish the setup.
+In the **MQTT configuration** page, enter the IP address of the machine where you installed EMQX in the **Broker** field. The **Port** field should be 1883, which is the [default MQTT port](https://www.emqx.com/en/blog/mqtt-ports). Leave the **Username** and **Password** fields blank as we have not set up any authentication yet. Click **Submit** to finish the setup.
 
 Once the MQTT integration is added, you should see it on the integrations page. You can click on it to view more details or to add more MQTT devices.
 
@@ -129,7 +129,7 @@ Choosing EMQX as your MQTT server for Home Assistant can provide users with a su
 
 - **Massive Connectivity**: Single cluster supports 100 M+ device connections with <100ms onboarding time, reducing bandwidth usage by 50% vs traditional HTTP solutions.
 - **Cross-Datacenter Clustering**: Core-Replica Clustering architecture enables multi-region deployment with proximity access and cross-region mesh data forwarding.
-- **Stable Weak-Network Performance**: QoS-based MQTT and MQTT over QUIC protocols maintain connectivity in poor networks with <200ms end-to-end control latency.
+- **Stable Weak-Network Performance**: QoS-based MQTT and [MQTT over QUIC](https://www.emqx.com/en/blog/mqtt-over-quic) protocols maintain connectivity in poor networks with <200ms end-to-end control latency.
 - **Open Integration**: Built-in rules engine with 100+ database and message queue connectors enables rapid integration between device data and AI/voice services.
 - **Security & Compliance**: End-to-end encryption + dynamic ACL access control, certified with SOC2, Cybersecurity Level-3, and ISO 27001.
 - **Edge Intelligence**: Combines EMQ's edge computing capabilities with LLM integration to create context-aware smart home agents that process data locally.

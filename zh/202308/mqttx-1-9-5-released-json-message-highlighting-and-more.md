@@ -1,4 +1,4 @@
-近日，MQTT 5.0 客户端工具 MQTTX 1.9.5 正式发布。本次更新中，我们主要针对桌面客户端强化了 JSON 语法的错误消息提示，并在消息中增加了 JSON 高亮的支持。此外，我们还对 UI 进行了多项修改和优化，以进一步增强用户体验。
+近日，[MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 5.0 客户端工具 MQTTX 1.9.5 正式发布。本次更新中，我们主要针对桌面客户端强化了 JSON 语法的错误消息提示，并在消息中增加了 JSON 高亮的支持。此外，我们还对 UI 进行了多项修改和优化，以进一步增强用户体验。
 
 > 最新版本下载：[https://mqttx.app/zh/downloads](https://mqttx.app/zh/downloads)
 
@@ -62,7 +62,7 @@
 
 - 接收到的消息可以进行自动图表绘制。
 
-- 插件功能（协议扩展 CoAP，MQTT-SN 等）。
+- 插件功能（协议扩展 [CoAP](https://www.emqx.com/zh/blog/coap-protocol)，MQTT-SN 等）。
 
 - 脚本测试自动化（Flow）。
 

@@ -6,7 +6,7 @@
 
 ## 产品概况
 
-EMQX Enterprise 是基于 Erlang/OTP 开发的云原生分布式物联网接入平台，具有一体化分布式 MQTT 消息服务和强大的 IoT 规则引擎，支持多种物联网标准协议和行业私有协议。可实现高可靠、支持承载海量物联网终端的 MQTT 连接，支持在海量物联网设备间低延时消息路由。
+EMQX Enterprise 是基于 Erlang/OTP 开发的云原生分布式物联网接入平台，具有一体化分布式 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 消息服务和强大的 IoT 规则引擎，支持多种物联网标准协议和行业私有协议。可实现高可靠、支持承载海量物联网终端的 MQTT 连接，支持在海量物联网设备间低延时消息路由。
 
 EMQX Cloud 是 EMQ 推出的全球首个全托管的 [MQTT 5.0](https://www.emqx.com/zh/blog/introduction-to-mqtt-5) 公有云服务，提供一站式运维代管、独有隔离环境的 MQTT 消息服务。EMQX Cloud 可以帮助您快速构建面向物联网领域的行业应用，轻松实现物联网数据的采集、传输、计算和持久化。
 

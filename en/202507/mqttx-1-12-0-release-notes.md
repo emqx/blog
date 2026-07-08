@@ -1,4 +1,4 @@
-MQTTX 1.12.0 lands with **Copilot 2.0** (Gemini 2.5 Pro, Claude-4, GPT-4.1, o3/o4-mini, Azure OpenAI), **native MCP integration** for instant AI workflows, a snappier **Electron 33 + Node 18** desktop, and a CLI capable of firing off exactly-sized payloads for stress tests—delivering a serious intelligence upgrade to the MQTT toolkit.
+MQTTX 1.12.0 lands with **Copilot 2.0** (Gemini 2.5 Pro, Claude-4, GPT-4.1, o3/o4-mini, Azure OpenAI), **native MCP integration** for instant AI workflows, a snappier **Electron 33 + Node 18** desktop, and a CLI capable of firing off exactly-sized payloads for stress tests—delivering a serious intelligence upgrade to the [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) toolkit.
 
 > Download the latest version here: [https://mqttx.app/downloads](https://mqttx.app/downloads)
 
@@ -145,10 +145,10 @@ A dedicated arm64 installer isn’t available in 1.12.0. Please download the **U
   - **Diff View**: Compare different messages or payloads easily.
   - **Dashboard View**: Offer a customizable overview of MQTT activities for personalized insights.
   - **JSON View**: Improve handling and display of JSON formatted data.
-  - **System Topic View**: Specialized view for system-related MQTT topics.
-- **Support for Configurable Disconnect Properties (MQTT 5.0)**: Enhance connection management with customizable disconnection settings.
+  - **System Topic View**: Specialized view for system-related [MQTT topics](https://www.emqx.com/en/blog/advanced-features-of-mqtt-topics).
+- **Support for Configurable Disconnect Properties ([MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5))**: Enhance connection management with customizable disconnection settings.
 - **IoT Scenario Data Simulation**: Bring this feature to the desktop client to ease IoT scenario testing.
-- **Sparkplug B Support**: Extend MQTTX functionalities to include support for Sparkplug B.
+- **[Sparkplug B](https://www.emqx.com/en/solutions/mqtt-sparkplug) Support**: Extend MQTTX functionalities to include support for Sparkplug B.
 - **MQTT GUI Debug Functionality**: New features to aid in debugging MQTT communications.
 - **Plugin Functionality**: Introduction of a plugin system supporting protocol extensions like [CoAP](https://www.emqx.com/en/blog/coap-protocol) and [MQTT-SN](https://www.emqx.com/en/blog/connecting-mqtt-sn-devices-using-emqx).
 - **JSON Schema**: Encoding and decoding capabilities for JSON Schema.

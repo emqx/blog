@@ -32,7 +32,7 @@ The “Cluster Call” feature allows us to replicate the change in an async fas
 
 In EMQX 5.0, source code will become the single source of truth for API and configuration documentation. With the help of [HOCON schema feature](https://github.com/emqx/hocon/blob/master/SCHEMA.md), keeping code and documentation in sync will be effortless. Below is an example of listener config documentation.
 
-Here in the picture is a screenshot of the generated configuration document for the QUIC listener --- Yes, in case you have missed our previous updates, EMQX now has a PoC implementation of MQTT over [QUIC](https://datatracker.ietf.org/doc/rfc9000/).
+Here in the picture is a screenshot of the generated configuration document for the [QUIC](https://www.emqx.com/en/blog/quic-protocol-the-features-use-cases-and-impact-for-iot-iov) listener --- Yes, in case you have missed our previous updates, EMQX now has a PoC implementation of [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) over [QUIC](https://datatracker.ietf.org/doc/rfc9000/).
 
 ![generated configuration document for the QUIC listener](https://assets.emqx.com/images/8e3946d74c74a232d0a06afab61800c9.png)
 

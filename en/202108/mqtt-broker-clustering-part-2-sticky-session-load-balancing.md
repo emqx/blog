@@ -1,12 +1,12 @@
-In the last post: [Load balancing - MQTT broker clustering part 1](https://www.emqx.com/en/blog/mqtt-broker-clustering-part-1-load-balancing), we have introduced MQTT load balancing in general: load balancing can be applied either on transport layer, or application layer. Now it’s time to dive into application layer load balancing, the most interesting part: sticky-session.
+In the last post: [Load balancing - MQTT broker clustering part 1](https://www.emqx.com/en/blog/mqtt-broker-clustering-part-1-load-balancing), we have introduced [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) load balancing in general: load balancing can be applied either on transport layer, or application layer. Now it’s time to dive into application layer load balancing, the most interesting part: sticky-session.
 
-This post consists of 2 parts, the first part is to introduce what MQTT sessions, and the challenges of handing sessions in a distributed MQTT broker cluster; the second part is to get our hands dirty by provisioning an [HAProxy 2.4](http://www.haproxy.org/) load balancer in front of [EMQX 4.3](https://www.emqx.com/en/products/emqx) cluster to take full advantage of the sticky-session load balancing.
+This post consists of 2 parts, the first part is to introduce what MQTT sessions, and the challenges of handing sessions in a distributed [MQTT broker cluster](https://www.emqx.com/en/blog/mqtt-broker-clustering); the second part is to get our hands dirty by provisioning an [HAProxy 2.4](http://www.haproxy.org/) load balancer in front of [EMQX 4.3](https://www.emqx.com/en/products/emqx) cluster to take full advantage of the sticky-session load balancing.
 
 ## MQTT session
 
-In order to continuously receive messages, MQTT clients usually subscribe to [MQTT broker](https://www.emqx.com/en/products/emqx) with a long-living connection. It is not unusual that the connection might be broken for a while due to network issues or client software maintenance reasons, but the clients often wish to receive messages published during the time when the connection was broken.
+In order to continuously receive messages, [MQTT clients](https://www.emqx.com/en/blog/mqtt-client-tools) usually subscribe to [MQTT broker](https://www.emqx.com/en/products/emqx) with a long-living connection. It is not unusual that the connection might be broken for a while due to network issues or client software maintenance reasons, but the clients often wish to receive messages published during the time when the connection was broken.
 
-This is the reason why the MQTT broker which is serving the client should keep a session for the client (per-client’s request by setting the “Clean-Session” flag to false). So the topics to which the subscriber is currently subscribed, and messages (of QoS1 and 2) delivered to these topics etc. are kept by the broker even when the client is disconnected.
+This is the reason why the [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) which is serving the client should keep a session for the client (per-client’s request by setting the “Clean-Session” flag to false). So the topics to which the subscriber is currently subscribed, and messages (of QoS1 and 2) delivered to these topics etc. are kept by the broker even when the client is disconnected.
 
 When a client having persisted session reconnects, it should not have to re-subscribe the topics, and the broker should send all the pending messages to the client.
 
@@ -149,7 +149,7 @@ docker run -d \
 
 ### Test it out
 
-Now we use the popular mosquitto MQTT client (also in docker) to test it out. 
+Now we use the popular [mosquitto MQTT](https://www.emqx.com/en/blog/mosquitto-mqtt-broker-pros-cons-tutorial-and-modern-alternatives) client (also in docker) to test it out. 
 
 We start a subscriber (named `subscriber1`) which subscribes to `t/#`topic
 

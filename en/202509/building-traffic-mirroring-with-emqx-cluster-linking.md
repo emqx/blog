@@ -30,7 +30,7 @@ EMQX Cluster Linking enhances traffic mirroring for MQTT traffic by providing a 
 
 ## Traffic Mirroring with Cluster Linking: A Hands-On Example
 
-This section provides a step-by-step guide to configuring one-way Cluster Linking to mirror MQTT traffic from a **production cluster** (EMQX Dedicated, `deployment-prod`)to an **audit cluster** (self-hosted EMQX Open Source v5.8.7 on a virtual machine in a cloud environment). The one-way link ensures the audit cluster is used solely for monitoring and analysis, reducing complexity and maintaining production performance.
+This section provides a step-by-step guide to configuring one-way Cluster Linking to mirror MQTT traffic from a **production cluster** (EMQX Dedicated, `deployment-prod`)to an **audit cluster** (self-hosted [EMQX Open Source](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) v5.8.7 on a virtual machine in a cloud environment). The one-way link ensures the audit cluster is used solely for monitoring and analysis, reducing complexity and maintaining production performance.
 
 ### Prerequisites
 
@@ -54,9 +54,9 @@ Asymmetrical Cluster Linking configures a one-way connection where the productio
    - **Server**: Provide the MQTT host and port of `deployment-prod` deployment.
    - **Client ID Prefix**: Define a prefix for ClientIDs used by MQTT connections to the remote cluster. For example, `from-audit`.
    - **Username / Password**: Provide the username and password that the remote deployment accepts for connections.
-   - **Topics**: List of MQTT topic filters that specify which messages the current deployment will receive from the remote deployment, for example, `from-prod`.
+   - **Topics**: List of [MQTT topic](https://www.emqx.com/en/blog/advanced-features-of-mqtt-topics) filters that specify which messages the current deployment will receive from the remote deployment, for example, `from-prod`.
    - **Enable TLS**: Enable this option if communication between clusters requires TLS encryption. Configure the settings, such as SSL certificates.
-   - **Advanced Settings**: Configure additional settings such as MQTT protocol parameters.
+   - **Advanced Settings**: Configure additional settings such as [MQTT protocol](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) parameters.
 3. Click **Create** after you complete the settings. The new entry will appear on the Cluster Linking page and be enabled by default.
 
 ![image.png](https://assets.emqx.com/images/9d965efbc5fbbf5180f59d862d3c72b8.png)

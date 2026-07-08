@@ -4,7 +4,7 @@ As renewable energy like solar and wind power evolve, energy storage emerges as 
 
 [EMQX](https://www.emqx.com/en/products/emqx) and InfluxDB together offer a scalable IoT platform that enables efficient and real-time collection of data from distributed energy storage devices. The collected data is then centrally managed and analyzed to facilitate power dispatching and electricity trading. This article provides a detailed guide on how to connect energy storage devices with EMQX and integrate it with InfluxDB to ensure reliable data storage and enable real-time analytics.
 
-You can read this blog to learn more about how EMQX enables easy integration of time-series databases like InfluxDB and Timesacle with MQTT: [Time-Series Database (TSDB) for IoT: The Missing Piece](https://www.emqx.com/en/blog/time-series-database-for-iot-the-missing-piece).
+You can read this blog to learn more about how EMQX enables easy integration of time-series databases like InfluxDB and Timesacle with [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt): [Time-Series Database (TSDB) for IoT: The Missing Piece](https://www.emqx.com/en/blog/time-series-database-for-iot-the-missing-piece).
 
 ## What is InfluxDB
 

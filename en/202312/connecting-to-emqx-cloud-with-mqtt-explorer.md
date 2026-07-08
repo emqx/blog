@@ -1,6 +1,6 @@
 ## Introduction to MQTT Explorer
 
-[MQTT Explorer](https://mqtt-explorer.com/) is an active MQTT client desktop application popular among developers. It is based on Electron technology and was developed by Thomas Nordquist. The application was open-sourced and follows the  [Creative Commons Public Licenses](https://wiki.creativecommons.org/wiki/Considerations_for_licensors_and_licensees#Considerations_for_licensees) protocol. Its GitHub address is [https://github.com/thomasnordquist/MQTT-Explorer](https://github.com/thomasnordquist/MQTT-Explorer).
+[MQTT Explorer](https://mqtt-explorer.com/) is an active [MQTT client](https://www.emqx.com/en/blog/mqtt-client-tools) desktop application popular among developers. It is based on Electron technology and was developed by Thomas Nordquist. The application was open-sourced and follows the  [Creative Commons Public Licenses](https://wiki.creativecommons.org/wiki/Considerations_for_licensors_and_licensees#Considerations_for_licensees) protocol. Its GitHub address is [https://github.com/thomasnordquist/MQTT-Explorer](https://github.com/thomasnordquist/MQTT-Explorer).
 
 Its main features are:
 
@@ -18,7 +18,7 @@ It's worth highlighting some great features, such as:
 - Organize the subscription list in a tree structure to facilitate users to view their attribution.
 - With message visualization function and intuitive and interactive statistical chart design.
 
-MQTT Explorer can meet most development needs, but it also has some disadvantages:
+[MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) Explorer can meet most development needs, but it also has some disadvantages:
 
 - Only one connection can exist at a time, which is inconvenient for debugging multiple-connections multiple connections.
 - Publish Payload and Subscribe Message lists are not separated in UI design, so checking the status of sending and receiving messages is difficult.
@@ -65,7 +65,7 @@ The configuration page will pop up when you enter MQTT Explorer for the first ti
 #### Create a connection
 
 1. **Initiate a New Connection**: In the MQTT Explorer, click 'Connections' to set up a new connection.
-2. **Server Details**: Use the address of your recently created serverless deployment. This can typically be found in your emqx cloud console.
+2. **Server Details**: Use the address of your recently created serverless deployment. This can typically be found in your [emqx cloud](https://www.emqx.com/en/cloud) console.
 3. **Authentication**: Enter the username and password provided during your serverless setup for secure access.
 4. **Secure Connection Setup**: Download the CA certificate from your serverless console. Set the port to either 8883 or 8084 and enable TLS. Then, in the advanced settings of the connection page, select the CA certificate you just downloaded to establish a secure connection.
 

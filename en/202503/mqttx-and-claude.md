@@ -1,8 +1,8 @@
 ## Introduction
 
-We're excited to announce the integration of **Claude 3.7 Sonnet** with **MQTTX Copilot**. This powerful addition brings intelligent code generation to your MQTT testing workflows.
+We're excited to announce the integration of **Claude 3.7 Sonnet** with **MQTTX Copilot**. This powerful addition brings intelligent code generation to your [MQTT testing](https://www.emqx.com/en/blog/mqtt-testing) workflows.
 
-MQTT testing often requires creating realistic data payloads, transforming messages, and implementing processing logic - tasks that can be tedious and time-consuming. Claude 3.7 Sonnet excels at code generation with its advanced understanding of programming patterns. The integration helps you instantly generate custom functions and data schemas within your testing environment, significantly speeding up your IoT development and testing processes.
+[MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) testing often requires creating realistic data payloads, transforming messages, and implementing processing logic - tasks that can be tedious and time-consuming. Claude 3.7 Sonnet excels at code generation with its advanced understanding of programming patterns. The integration helps you instantly generate custom functions and data schemas within your testing environment, significantly speeding up your IoT development and testing processes.
 
 ## Getting Started
 

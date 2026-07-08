@@ -2,9 +2,9 @@ In [previous posts](https://www.emqx.com/en/blog/securing-mqtt-with-username-and
 
 ## What is Enhanced Authentication?
 
-Enhanced authentication is a novel authentication framework introduced in MQTT 5.0. It offers a range of alternative methods that are more secure than traditional password authentication.
+Enhanced authentication is a novel authentication framework introduced in [MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5). It offers a range of alternative methods that are more secure than traditional password authentication.
 
-However, increased security comes with added complexity. Certain authentication methods, like SCRAM, require multiple exchanges of authentication data. This renders the single-exchange authentication framework of the CONNECT and CONNACK packets outdated. To address this limitation, MQTT 5.0 introduces the AUTH packet, which supports multiple exchanges of authentication data. It enables the use of [SASL](https://en.wikipedia.org/wiki/Simple_Authentication_and_Security_Layer) (Simple Authentication and Security Layer) mechanisms with a challenge-response style in [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt).
+However, increased security comes with added complexity. Certain authentication methods, like SCRAM, require multiple exchanges of authentication data. This renders the single-exchange authentication framework of the CONNECT and [CONNACK](https://www.emqx.com/en/blog/mqtt5-new-features-reason-code-and-ack) packets outdated. To address this limitation, MQTT 5.0 introduces the AUTH packet, which supports multiple exchanges of authentication data. It enables the use of [SASL](https://en.wikipedia.org/wiki/Simple_Authentication_and_Security_Layer) (Simple Authentication and Security Layer) mechanisms with a challenge-response style in [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt).
 
 ## What Problems Does Enhanced Authentication Solve?
 
@@ -71,7 +71,7 @@ If the server's identity is successfully verified, the client can proceed to sub
 
 Enhanced authentication provides users with the possibility to introduce more identity verification methods. You can choose authentication methods suitable for your specific needs and further enhance the security of your system. 
 
-[EMQX](https://github.com/emqx/emqx), as a widely-used MQTT broker known for its high scalability and availability, has always prioritized ensuring user security. In addition to [password-based authentication](https://docs.emqx.com/en/emqx/v5.0/access-control/authn/pwoverview.html), EMQX also supports Enhanced Authentication. Users can enable SCRAM authentication with EMQX to improve the security level of their MQTT infrastructure. For more information, please refer to: [MQTT 5.0 Enhanced Authentication](https://docs.emqx.com/en/emqx/v5.0/access-control/authn/scram.html#configure-with-dashboard).
+[EMQX](https://github.com/emqx/emqx), as a widely-used [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) known for its high scalability and availability, has always prioritized ensuring user security. In addition to [password-based authentication](https://docs.emqx.com/en/emqx/v5.0/access-control/authn/pwoverview.html), EMQX also supports Enhanced Authentication. Users can enable SCRAM authentication with EMQX to improve the security level of their MQTT infrastructure. For more information, please refer to: [MQTT 5.0 Enhanced Authentication](https://docs.emqx.com/en/emqx/v5.0/access-control/authn/scram.html#configure-with-dashboard).
 
 
 

@@ -23,7 +23,7 @@ Kuiper 0.4.1 version fixed some problems reported from community.
 - Support multi-instances creation for plugins. In previous versions, plugin only supports one single instance, now multiple plugin instances can  be supported by returning a construction function.
 - Fixed  `dataTemplate`  usage in [rule document](https://ekuiper.org/docs/en/latest/concepts/rules.html).
 - Fixed [EdgeX floating data](https://github.com/lf-edge/ekuiper/issues/272) can not be processed problem in some cases.
-- Support for updating EdgeX MQTT message bus configurations by Docker environment variables.
+- Support for updating EdgeX [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) message bus configurations by Docker environment variables.
 - Support for using alias for aggregation functions, and then use alias name in WHERE or HAVING clause, it can greatly improve the performance.
 - Returns 404 response code when deleting not existed streams or rules, while previously returns 400.
 - Fix [sink infinite resend after rule stopped problem](https://github.com/lf-edge/ekuiper/issues/266). 

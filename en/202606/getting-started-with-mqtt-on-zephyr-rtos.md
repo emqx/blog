@@ -13,7 +13,7 @@ This sample project offers two optional operational modes to suit your needs:
 
 **Mode Selection Recommendation:** 
 
-- If you only want to quickly experience MQTT publish/subscribe, choose **NSOS/TCP-only** (no `sudo` or certificates required). 
+- If you only want to quickly experience [MQTT publish/subscribe](https://www.emqx.com/en/blog/mqtt-5-introduction-to-publish-subscribe-model), choose **NSOS/TCP-only** (no `sudo` or certificates required). 
 - If you need to evaluate the feasibility of TLS/mTLS on Zephyr, choose **TAP+TLS** (requires a Linux host/container with `NET_ADMIN` privileges and `/dev/net/tun`).
 
 The system architecture is illustrated below:
@@ -26,7 +26,7 @@ EMQX is a massive-scale, distributed IoT connectivity platform. A single node ca
 
 **Key Features:**
 
-- **MQTT over QUIC:** EMQX pioneered in introducing QUIC into the MQTT protocol, significantly improving connection stability and message throughput under weak networks or frequent topology changes (e.g., Connected Vehicles).
+- **[MQTT over QUIC](https://www.emqx.com/en/blog/mqtt-over-quic):** EMQX pioneered in introducing [QUIC](https://www.emqx.com/en/blog/quic-protocol-the-features-use-cases-and-impact-for-iot-iov) into the MQTT protocol, significantly improving connection stability and message throughput under weak networks or frequent topology changes (e.g., Connected Vehicles).
 - **Multi-Protocol Gateway:** Beyond MQTT, it natively supports HTTP, WebSocket, LwM2M/CoAP, and other protocols, providing a unified device access entry.
 - **Message Queues (EMQX 6.x):** Supports named persistent queues to decouple publishing and subscribing. Messages are automatically buffered when consumers are offline and replayed upon reconnection, ideal for intermittent connection scenarios typical of Zephyr IoT edge devices.
 - **MQTT Streams (EMQX 6.x):** A persistent, replayable message stream model that supports replaying historical data by timestamp or offset, removing the need for external streaming systems like Kafka.
@@ -51,7 +51,7 @@ Zephyr supports over a dozen CPU architectures, including ARM Cortex-M/A/R, RISC
 | **Component**         | **Purpose**                                                  |
 | --------------------- | ------------------------------------------------------------ |
 | `CONFIG_MQTT_LIB`     | Zephyr's native MQTT 3.1.1 client library.                   |
-| `CONFIG_MQTT_LIB_TLS` | Enables the MQTT over TLS transport layer.                   |
+| `CONFIG_MQTT_LIB_TLS` | Enables the [MQTT over TLS](https://www.emqx.com/en/blog/fortifying-mqtt-communication-security-with-ssl-tls) transport layer.                   |
 | mbedTLS               | An embedded TLS library that supports PEM certificate parsing and ECDHE-RSA key exchange. |
 | `native_sim` platform | An x86 simulation environment for hardware-free development and debugging. |
 | Shell / getopt        | Interactive command-line interface supporting GNU-style argument parsing and auto-completion. |
@@ -79,7 +79,7 @@ docker run -d --name emqx \
 
 Once started, access the Dashboard via your browser at `http://localhost:18083` (replace `localhost` with your actual server IP). Log in using the default credentials: Username `admin`, Password `public`.
 
-**Quick Verification with MQTTX (Optional):** [MQTTX](https://mqttx.app/zh) is an official open-source, cross-platform MQTT 5.0 client tool developed by EMQ, available as a Web version (no installation required) and a Desktop application. You can visit [MQTTX Web](https://mqttx.app/web-client), create a new connection pointing to `ws://localhost:8083`, and quickly subscribe to or publish messages to verify broker connectivity.
+**Quick Verification with MQTTX (Optional):** [MQTTX](https://mqttx.app/zh) is an official open-source, cross-platform [MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5) client tool developed by EMQ, available as a Web version (no installation required) and a Desktop application. You can visit [MQTTX Web](https://mqttx.app/web-client), create a new connection pointing to `ws://localhost:8083`, and quickly subscribe to or publish messages to verify broker connectivity.
 
 #### Method 2: Package Deployment (macOS / Linux)
 
@@ -302,7 +302,7 @@ void mqtt_evt_handler(struct mqtt_client *client, const struct mqtt_evt *evt)
 
 **Analysis:**
 
-- When the Zephyr MQTT library receives a `CONNACK` packet with a `result == 0` (indicating the broker accepted the connection), the global flag `is_connected` is set to `true`.
+- When the Zephyr [MQTT library](https://www.emqx.com/en/blog/mqtt-client-tools) receives a `CONNACK` packet with a `result == 0` (indicating the broker accepted the connection), the global flag `is_connected` is set to `true`.
 - For QoS 1 and QoS 2 messages, you must explicitly invoke `mqtt_publish_qos1_ack()` or `mqtt_publish_qos2_receive()` to acknowledge receipt. Failing to do so causes the broker to repeatedly retransmit messages (modeled after Zephyr's official `secure_mqtt_sensor_actuator` sample).
 - Upon receiving a message, output is handled via `shell_print` using the global shell pointer `mqtt_evt_shell`. On the `native_sim` platform, standard logging functions like `LOG_INF` and `printk` output through both the native UART PTY channel and the log backend, causing duplicate stdout entries. `shell_print` targets a single UART channel, eliminating duplication.
 
@@ -495,7 +495,7 @@ The core workflow within `common_mqtt_connect()` (`src/main.c`) executes as foll
 1. **DNS Resolution:** Invokes `zsock_getaddrinfo()` to resolve hostnames into IP addresses. In NSOS mode, this call maps directly to the host's `glibc` implementation of `getaddrinfo()`, automatically utilizing the host's DNS configuration.
 2. **MQTT Client Initialization:** Calls `mqtt_client_init(&client_ctx)` and binds the event callback handler `mqtt_evt_handler`.
 3. **Establishing Connection:** Invokes `mqtt_connect(&client_ctx)` to dispatch the TCP handshake and subsequent MQTT `CONNECT` packet.
-4. **Awaiting CONNACK:** Polls the socket file descriptor. Upon receiving `MQTT_EVT_CONNACK`, the global `is_connected` flag is set to `true`, and `Connection successful!` is printed.
+4. **Awaiting [CONNACK](https://www.emqx.com/en/blog/mqtt5-new-features-reason-code-and-ack):** Polls the socket file descriptor. Upon receiving `MQTT_EVT_CONNACK`, the global `is_connected` flag is set to `true`, and `Connection successful!` is printed.
 5. **Event Dispatching:** The `conn` sub-command enters a heartbeat maintenance loop; `sub` calls `mqtt_subscribe()` and transitions into a long-polling listening loop; `pub` triggers `mqtt_publish()` and gracefully disconnects.
 
 ### 4.4 Message Publishing and Subscription Demo

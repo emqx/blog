@@ -1,6 +1,6 @@
-EMQX 5.0.16, 5.0.17, and 5.0.18 have recently been released, introducing multistream support for [MQTT over QUIC](https://www.emqx.com/en/blog/mqtt-over-quic). Along with this, EMQX Enterprise 4.3.19 and 4.4.15 are now complete and will be launched soon. These enterprise versions include adaptations to the latest version of HStreamDB and allow messages with the same properties to be forwarded to the same RocketMQ queue through the setting of the RocketMQ message producer delivery policy.
+EMQX 5.0.16, 5.0.17, and 5.0.18 have recently been released, introducing multistream support for [MQTT over QUIC](https://www.emqx.com/en/blog/mqtt-over-quic). Along with this, [EMQX Enterprise](https://www.emqx.com/en/products/emqx) 4.3.19 and 4.4.15 are now complete and will be launched soon. These enterprise versions include adaptations to the latest version of HStreamDB and allow messages with the same properties to be forwarded to the same RocketMQ queue through the setting of the RocketMQ message producer delivery policy.
 
-The team is currently working on developing a feature for large file transfers based on MQTT, and the primary development has been completed, with a PoC Demo conducted within the team. To help users start with EMQX more efficiently, the [EMQX 5.0 Document](https://docs.emqx.com/en/emqx/v5.0) has undergone review and refactoring.
+The team is currently working on developing a feature for large file transfers based on [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt), and the primary development has been completed, with a PoC Demo conducted within the team. To help users start with EMQX more efficiently, the [EMQX 5.0 Document](https://docs.emqx.com/en/emqx/v5.0) has undergone review and refactoring.
 
 ## Introduce Multistream Support for MQTT over QUIC
 
@@ -16,7 +16,7 @@ Enabling multistream provides several improvements to message communication, inc
 6. Improving client/server processing parallelism.
 7. Enhancing robustness for MQTT data processing. Specifically, if an application terminates a single stream, it will no longer result in the closure of the entire connection.
 8. Facilitating more fine-grained cooperative stream control at the receiving and sending sides, enabling more precise control of each stream and the entire connection.
-9. Reducing application layer latency by allowing clients to send subscriptions and publish data packets without waiting for CONNACK.
+9. Reducing application layer latency by allowing clients to send subscriptions and publish data packets without waiting for [CONNACK](https://www.emqx.com/en/blog/mqtt5-new-features-reason-code-and-ack).
 
 ## MQTT-based File Transmission Function Completed PoC Demo
 

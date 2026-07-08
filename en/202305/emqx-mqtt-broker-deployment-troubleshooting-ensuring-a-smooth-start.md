@@ -1,6 +1,6 @@
-> [EMQX](https://github.com/emqx/emqx) is a popular [MQTT Broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) widely used in the Internet of Things(IoT), Industrial IoT ([IIoT](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges)) and Connected Cars. It can connect millions of devices at scale, move and process your IoT data in real-time anywhere with high performance, scalability and reliability.
+> [EMQX](https://github.com/emqx/emqx) is a popular [MQTT Broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) widely used in the Internet of Things(IoT), [Industrial IoT](https://www.emqx.com/en/blog/industrial-iot-systems) ([IIoT](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges)) and [Connected Cars](https://www.emqx.com/en/blog/connected-cars-and-automotive-connectivity-all-you-need-to-know). It can connect millions of devices at scale, move and process your IoT data in real-time anywhere with high performance, scalability and reliability.
 >
-> In this blog series, we will explore common troubleshooting scenarios when using EMQX and provide practical tips and solutions to overcome them. Readers can optimize your MQTT deployment and ensure smooth communication between your devices following this troubleshooting instruction.
+> In this blog series, we will explore common troubleshooting scenarios when using EMQX and provide practical tips and solutions to overcome them. Readers can optimize your [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) deployment and ensure smooth communication between your devices following this troubleshooting instruction.
 
 ## Introduction
 

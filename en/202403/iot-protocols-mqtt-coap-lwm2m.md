@@ -82,7 +82,7 @@ The data transmission rate of LoRaWAN ranges from 0.3 kbps to 37.5 kbps. In orde
 - **Low Cost**: The communication network costs are extremely low, and it is suitable for transmitting narrowband data. 
 - **Security**: It uses AES128 encryption to ensure a high level of security.
 
-LoRa offers high flexibility for applications in smart agriculture, smart cities, Industrial Internet of Things (IIoT), smart environments, smart homes and buildings, smart utilities and metering, as well as smart supply chains and logistics, particularly in rural or indoor settings.
+LoRa offers high flexibility for applications in smart agriculture, smart cities, [Industrial Internet of Things](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges) (IIoT), smart environments, smart homes and buildings, smart utilities and metering, as well as smart supply chains and logistics, particularly in rural or indoor settings.
 
 LoRa's easy network setup and strong penetration capabilities enable low-cost connectivity for devices over large areas. Compared to NB-IoT and operator SIM card access, LoRa doesn't require annual card replacement or fees, resulting in lower long-term costs.
 
@@ -96,12 +96,12 @@ MQTT can not only be used as a gateway to access communication on the device sid
 
 - **Lightweight and Reliable**: MQTT messages are compact, enabling stable transmission on severely constrained hardware devices and networks with low bandwidth and high latency.
 - **Publish/Subscribe Model**: Based on the publish/subscribe model, its advantage lies in decoupling publishers and subscribers - they don't need to establish a direct connection or be online simultaneously.
-- **Designed for IoT**: Provides comprehensive IoT application features such as keep alive mechanism, [will message](https://www.emqx.com/en/blog/use-of-mqtt-will-message), [QoS](https://www.emqx.com/en/blog/introduction-to-mqtt-qos), [topic](https://www.emqx.com/en/blog/advanced-features-of-mqtt-topics), and security management.
+- **Designed for IoT**: Provides comprehensive IoT application features such as [keep alive](https://www.emqx.com/en/blog/mqtt-keep-alive) mechanism, [will message](https://www.emqx.com/en/blog/use-of-mqtt-will-message), [QoS](https://www.emqx.com/en/blog/introduction-to-mqtt-qos), [topic](https://www.emqx.com/en/blog/advanced-features-of-mqtt-topics), and security management.
 - **More Complete Ecosystem**: It covers client and SDK platforms in all languages, and has mature Broker server software, supporting a vast number of topics, millions of device connections, and rich enterprise integration capabilities.
 
 MQTT is a messaging protocol that uses a publish-subscribe model, which is different from the traditional client-server model. It separates the message sender (publisher) from the receiver (subscriber), making it an efficient way to send and receive messages in a distributed network. Multiple publishers can send messages to a subscriber, and multiple subscribers can receive messages from a publisher simultaneously.
 
-MQTT today is widely used in the IoT, Industrial IoT (IIoT), Internet of Vehicles (IoV), and [Connected Cars](https://www.emqx.com/en/blog/connected-cars-and-automotive-connectivity-all-you-need-to-know), as well as in a wide variety of industries such as automotive, manufacturing, telecommunications, transportation & logistics, and oil & gas, etc.
+MQTT today is widely used in the IoT, [Industrial IoT](https://www.emqx.com/en/blog/industrial-iot-systems) (IIoT), Internet of Vehicles (IoV), and [Connected Cars](https://www.emqx.com/en/blog/connected-cars-and-automotive-connectivity-all-you-need-to-know), as well as in a wide variety of industries such as automotive, manufacturing, telecommunications, transportation & logistics, and oil & gas, etc.
 
 MQTT is the standard communication protocol of the IoT platform of top Cloud providers such as [AWS IoT Core](https://www.emqx.com/en/blog/understanding-aws-iot-core), [Azure IoT Hub](https://www.emqx.com/en/blog/azure-iot-hub-4-key-features-use-cases-and-how-to-get-started), and Alibaba Cloud IoT platform. It is also the preferred protocol for gateways and Cloud in various industries.
 
@@ -199,7 +199,7 @@ EMQX is a large-scale distributed MQTT messaging platform that offers "unlimited
 
 As a high-performance, scalable [MQTT message broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison), EMQX provides reliable real-time message transmission and device connectivity solutions for IoT applications. With its robust built-in rule engine and data integration capabilities, EMQX can perform real-time data processing, transformation, and routing for massive IoT data. It seamlessly integrates IoT data with various backend databases and analytics tools, enabling enterprises to build IoT platforms and applications with leading competitiveness rapidly.
 
-EMQX not only fully supports MQTT 3.1, 3.1.1, and 5.0 but also supports various mainstream protocols such as STOMP, OCPP, MQTT-SN, LwM2M/CoAP for connectivity. It provides extensive connection capabilities to handle IoT devices for various scenarios and serves as a unified access platform and management interface for backend IoT management services, reducing the adaptation costs between heterogeneous protocols.
+EMQX not only fully supports MQTT 3.1, 3.1.1, and 5.0 but also supports various mainstream protocols such as STOMP, OCPP, [MQTT-SN](https://www.emqx.com/en/blog/connecting-mqtt-sn-devices-using-emqx), LwM2M/CoAP for connectivity. It provides extensive connection capabilities to handle IoT devices for various scenarios and serves as a unified access platform and management interface for backend IoT management services, reducing the adaptation costs between heterogeneous protocols.
 
 ## Conclusion
 

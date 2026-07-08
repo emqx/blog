@@ -2,7 +2,7 @@
 
 In today's high-speed iteration of IoT business, quickly connecting IoT devices and platform applications to achieve rapid business implementation and market validation is the key to shaping core competitiveness and achieving business innovation for many enterprises.
 
-EMQX Cloud, as a one-stop O&M managed MQTT messaging cloud service, can help users quickly implement IoT application interfacing in the public cloud environment. To further help users quickly build IoT business, EMQX Cloud has recently launched shadow service. Through the platform data caching capability provided by shadow services, users can more easily implement various scenarios of applications and shorten the R&D cycle.
+[EMQX Cloud](https://www.emqx.com/en/cloud), as a one-stop O&M managed MQTT messaging cloud service, can help users quickly implement IoT application interfacing in the public cloud environment. To further help users quickly build IoT business, EMQX Cloud has recently launched shadow service. Through the platform data caching capability provided by shadow services, users can more easily implement various scenarios of applications and shorten the R&D cycle.
 
 ### What is Shadow Service
 
@@ -10,10 +10,10 @@ In the scenario of message interaction between IoT devices and applications, it 
 
 Based on the existing MQTT message access service, EMQX Cloud adds the Shadow Service to the value-added service to provide out-of-the-box platform-side data caching service. Users can cache, modify, and view device reporting data in EMQX Cloud's built-in services, and quickly create object models, device shadows, and other applications related to data reporting and distribution without having to purchase external resources and complex configurations to implement data caching services.
 
-1. Users can create multiple shadow services within a single EMQX Cloud Professional instance. Each shadow service is created with a globally unique shadow_id, and users can create, modify, and delete data in different caching services via fixed contextual MQTT topics based on the shadow_id and RestAPI.
+1. Users can create multiple shadow services within a single EMQX Cloud Professional instance. Each shadow service is created with a globally unique shadow_id, and users can create, modify, and delete data in different caching services via fixed contextual [MQTT topics](https://www.emqx.com/en/blog/advanced-features-of-mqtt-topics) based on the shadow_id and RestAPI.
 2. The cached data is stored in the shadow service in the form of JSON documents. When users create and modify cached documents, the shadow service automatically adds creation/modification timestamps to the JSON documents and updates the document versions for document consumers to confirm the information. For each shadow service we store only the latest version of the data.
 3. Shadow services provide both MQTT and RestAPI interfaces to add, delete, and check cached documents for easy invocation by MQTT devices and application services.
-4. The MQTT interface provided by the shadow service is fully adapted to the standard MQTT protocol, and the client can invoke the shadow service as long as it conforms to the standard MQTT protocol, without the need for a customized SDK and without platform binding.
+4. The MQTT interface provided by the shadow service is fully adapted to the standard [MQTT protocol](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt), and the client can invoke the shadow service as long as it conforms to the standard MQTT protocol, without the need for a customized SDK and without platform binding.
 
 ### Application Scenario Example
 
@@ -50,7 +50,7 @@ Let's take smart home scenario as an example to explain how to use shadow servic
 
    to facilitate subsequent APP comparison of historical data and display data.
 
-4. The smart air conditioner can continuously update the temperature data cached in the shadow service in a timed-up manner, using the PATCH method in the MQTT payload to update the data.
+4. The smart air conditioner can continuously update the temperature data cached in the shadow service in a timed-up manner, using the PATCH method in the [MQTT payload](https://www.emqx.com/en/blog/how-to-process-json-hex-and-binary-data-in-mqtt) to update the data.
 
    ```
    {

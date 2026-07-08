@@ -1,16 +1,16 @@
-> [EMQX](https://github.com/emqx/emqx) *is a popular* [MQTT Broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) *widely used in the Internet of Things(IoT), Industrial IoT (*[IIoT](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges)*) and Connected Cars. It can connect millions of devices at scale, move and process your IoT data in real-time anywhere with high performance, scalability and reliability.*
+> [EMQX](https://github.com/emqx/emqx) *is a popular* [MQTT Broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) *widely used in the Internet of Things(IoT), [Industrial IoT](https://www.emqx.com/en/blog/industrial-iot-systems) (*[IIoT](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges)*) and [Connected Cars](https://www.emqx.com/en/blog/connected-cars-and-automotive-connectivity-all-you-need-to-know). It can connect millions of devices at scale, move and process your IoT data in real-time anywhere with high performance, scalability and reliability.*
 >
 > In this blog series, we will explore common troubleshooting scenarios when using EMQX and provide practical tips and solutions to overcome them. Readers can optimize your MQTT deployment and ensure smooth communication between your devices following this troubleshooting instruction .
 
 ## Introduction
 
-In EMQX, the low-coupling transmission of messages is also carried out in the publish-subscribe mode of the mqtt protocol, which provides a fast and reliable message exchange mechanism for clients and applications. When using EMQX for message publishing and subscribing, there could be issues like message loss, duplication, delay, retained message clearing, etc. In this blog, we will provide some analysis methods to troubleshoot these problems, ensuring the reliability and efficiency of message delivery. 
+In EMQX, the low-coupling transmission of messages is also carried out in the publish-subscribe mode of the [mqtt protocol](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt), which provides a fast and reliable message exchange mechanism for clients and applications. When using EMQX for message publishing and subscribing, there could be issues like message loss, duplication, delay, retained message clearing, etc. In this blog, we will provide some analysis methods to troubleshoot these problems, ensuring the reliability and efficiency of message delivery. 
 
 ## Concepts Explained
 
 Firstly, let's walk through several essential concepts involved in EMQX in this chapter:
 
-- **Wildcards**: MQTT topic support the following wildcards: `+` and `#`. 
+- **Wildcards**: [MQTT topic](https://www.emqx.com/en/blog/advanced-features-of-mqtt-topics) support the following wildcards: `+` and `#`. 
 
   - `+`: indicates a single level of wildcards, such as `a/+` matching `a/x` or `a/y`.
 
@@ -74,7 +74,7 @@ The following are some possible reasons for message loss in shared subscriptions
 
 **Message Expired**
 
-If the client uses the MQTT 5.0 protocol, check whether the client has set the message expiration time.
+If the client uses the [MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5) protocol, check whether the client has set the message expiration time.
 
 **High-Concurrency Consumption**
 In high-concurrency scenarios, the client's consumption speed may not keep up with the production speed, which may cause messages to be squeezed into the server's queue and ultimately cause the client to fail to receive messages. If the topic subscribed by the client has a high concurrency of messages, consider the following solutions:

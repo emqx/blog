@@ -1,4 +1,4 @@
-8 月，NanoMQ 继续保持稳步更新。最新的 0.11.0 版本已于 8月底正式发布（[https://github.com/nanomq/nanomq/releases/tag/0.11.0](https://github.com/nanomq/nanomq/releases/tag/0.11.0)）。此版本继续增强了桥接功能，增加了 MQTT 5.0 + MQTT over QUIC 桥接模式，新增和修复了对已连接客户端状态进行监控和查询的 HTTP API。此外各项性能优化和缺陷修复也在持续进行中。
+8 月，NanoMQ 继续保持稳步更新。最新的 0.11.0 版本已于 8月底正式发布（[https://github.com/nanomq/nanomq/releases/tag/0.11.0](https://github.com/nanomq/nanomq/releases/tag/0.11.0)）。此版本继续增强了桥接功能，增加了 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 5.0 + MQTT over QUIC 桥接模式，新增和修复了对已连接客户端状态进行监控和查询的 HTTP API。此外各项性能优化和缺陷修复也在持续进行中。
 
 ## 桥接功能更新
 
@@ -6,7 +6,7 @@
 
 ### MQTT over QUIC 桥接
 
-继 EMQX 5.0 全球率先发布 MQTT over QUIC 支持后，NanoMQ 项目也为了降低此功能的使用门槛在 0.11 版本推出了 MQTT over QUIC 桥接功能。目前 NanoSDK 已支持以 QUIC 协议作为 MQTT 的传输层，因此与其兼容的 NanoMQ 项目的桥接功能也一并得到了无缝升级。用户可以使用 QUIC 作为 MQTT 协议的传输层来与 EMQX 5.0 消息服务建立桥接进行数据同步，从而为无法集成或找到合适的 MQTT over QUIC SDK 的端侧设备和难以修改固件的嵌入式设备提供在 IoT 场景利用 QUIC 协议优势的捷径。
+继 EMQX 5.0 全球率先发布 MQTT over QUIC 支持后，NanoMQ 项目也为了降低此功能的使用门槛在 0.11 版本推出了 MQTT over QUIC 桥接功能。目前 NanoSDK 已支持以 [QUIC 协议](https://www.emqx.com/zh/blog/quic-protocol-the-features-use-cases-and-impact-for-iot-iov)作为 MQTT 的传输层，因此与其兼容的 NanoMQ 项目的桥接功能也一并得到了无缝升级。用户可以使用 QUIC 作为 MQTT 协议的传输层来与 EMQX 5.0 消息服务建立桥接进行数据同步，从而为无法集成或找到合适的 MQTT over QUIC SDK 的端侧设备和难以修改固件的嵌入式设备提供在 IoT 场景利用 QUIC 协议优势的捷径。
 
 ![MQTT over QUIC 桥接](https://assets.emqx.com/images/cb49af66a1494dfc036a99703835bc58.png)
 
@@ -98,7 +98,7 @@ bridge.mqtt.emqx.proto_ver=5
 
 ## HTTP API 更新
 
-通过 HTTP REST API 来对边缘服务进行监控和运维一直是广大普通用户的需求之一，NanoMQ 0.11 也新增了对当前连接的 MQTT 客户端信息的查询 API，方便第三方应用快速准确的获取所有客户端的在线情况，或查询某个特定客户端的健康状态。
+通过 HTTP REST API 来对边缘服务进行监控和运维一直是广大普通用户的需求之一，NanoMQ 0.11 也新增了对当前连接的 [MQTT 客户端](https://www.emqx.com/zh/blog/mqtt-client-tools)信息的查询 API，方便第三方应用快速准确的获取所有客户端的在线情况，或查询某个特定客户端的健康状态。
 
 获取所有在线客户端的情况：
 

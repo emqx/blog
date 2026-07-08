@@ -1,6 +1,6 @@
 物联网技术在各行业的数字化转型中发挥着关键作用。通过实时数据采集、传输和分析等技术，让工业制造、汽车出行、能源电力等行业得以实现设备间的智能互联与实时监测，从而加强不同区域的资源协同与利用。此外，物联网技术还为 AI 等新技术提供了更为丰富、优质的数据基础，推动整个产业的科技变革。
 
-EMQ 与 Intel 在去年九月启动了[第二届物联网案例大赛](http://mp.weixin.qq.com/s?__biz=Mzg3NjAyMjM0NQ==&mid=2247492997&idx=1&sn=70d6dbcf8bcc53b99ab32abf9d786a28&chksm=cf3a3aa3f84db3b58008c3105e361eb50e629713000d68727f68a017f5c52f8c806a119033a4&scene=21#wechat_redirect)，本次大赛面向企业客户与个人开发者开放，征集应用案例。报名的参赛者有机会申请使用 Intel 最新推出的开发套件爱克斯开发板（AIxBoard）、Intel 的工业边缘洞见平台（EII）以及 EMQ 的云边端系列产品 （MQTT 物联网数据接入平台 EMQX，工业边缘网关软件 NeuronEX 以及工业互联数据平台 EMQX ECP 等）。
+EMQ 与 Intel 在去年九月启动了[第二届物联网案例大赛](http://mp.weixin.qq.com/s?__biz=Mzg3NjAyMjM0NQ==&mid=2247492997&idx=1&sn=70d6dbcf8bcc53b99ab32abf9d786a28&chksm=cf3a3aa3f84db3b58008c3105e361eb50e629713000d68727f68a017f5c52f8c806a119033a4&scene=21#wechat_redirect)，本次大赛面向企业客户与个人开发者开放，征集应用案例。报名的参赛者有机会申请使用 Intel 最新推出的开发套件爱克斯开发板（AIxBoard）、Intel 的工业边缘洞见平台（EII）以及 EMQ 的云边端系列产品 （[MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 物联网数据接入平台 EMQX，工业边缘网关软件 NeuronEX 以及工业互联数据平台 EMQX ECP 等）。
 
 近日，大赛已圆满结束，评审团根据提交案例的商业价值、技术创新和用户体验等方面评选出获奖名单。现正式公布本次大赛第二阶段的获奖名单及其案例概述（[第一阶段获奖名单](http://mp.weixin.qq.com/s?__biz=Mzg3NjAyMjM0NQ==&mid=2247493384&idx=1&sn=798a12b6d6158d7733ebd7f1fba86f3c&chksm=cf3a382ef84db138b9a83516b8d09da208779bb154ef98bfa8889b3e426e28f8f065cd6d1f6c&scene=21#wechat_redirect)）。
 
@@ -16,7 +16,7 @@ EMQ 与 Intel 在去年九月启动了[第二届物联网案例大赛](http://mp
 
 **上海研博数据信息技术有限公司**
 
-**项目名称：**工业物联网统一接入系统 
+**项目名称：**[工业物联网](https://www.emqx.com/zh/blog/iiot-explained-examples-technologies-benefits-and-challenges)统一接入系统 
 
 **获奖理由：**
 

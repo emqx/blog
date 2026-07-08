@@ -10,13 +10,13 @@ As we move into 2023 and look forward to the years ahead, we can anticipate 7 de
 
 [Quick UDP Internet Connections (QUIC)](https://en.wikipedia.org/wiki/QUIC) is a new transport protocol developed by Google that runs over UDP and is designed to reduce the latency associated with establishing new connections, increase data transfer rates, and address the limitations of TCP.
 
-HTTP/3, the latest HTTP protocol version,  uses QUIC as its transport layer.  HTTP/3 has lower latency and a better loading experience on web applications than HTTP/2 due to the adoption of QUIC.
+HTTP/3, the latest HTTP protocol version,  uses [QUIC](https://www.emqx.com/en/blog/quic-protocol-the-features-use-cases-and-impact-for-iot-iov) as its transport layer.  HTTP/3 has lower latency and a better loading experience on web applications than HTTP/2 due to the adoption of QUIC.
 
-[MQTT over QUIC](https://www.emqx.com/en/blog/mqtt-over-quic) is the most innovative advancement in the [MQTT protocol](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) since the first release of the MQTT 5.0 specification in 2017.  With multiplexing and faster connection establishment and migration,  it has the potential to become the next generation of the MQTT standard.
+[MQTT over QUIC](https://www.emqx.com/en/blog/mqtt-over-quic) is the most innovative advancement in the [MQTT protocol](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) since the first release of the [MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5) specification in 2017.  With multiplexing and faster connection establishment and migration,  it has the potential to become the next generation of the MQTT standard.
 
-The MQTT 5.0 protocol specification defines three types of transport: TCP, TLS, and WebSocket. MQTT over TLS/SSL is widely used in production to secure communications between [MQTT clients](https://www.emqx.com/en/blog/mqtt-client-tools) and brokers, as security is a top priority for IoT applications. However, it is slow and has high latency, requiring 7 handshakes equal to 3.5 RTT, namely, 3 TCP and 4 TLS to establish a new [MQTT connection](https://www.emqx.com/en/blog/how-to-set-parameters-when-establishing-an-mqtt-connection).
+The MQTT 5.0 protocol specification defines three types of transport: TCP, TLS, and WebSocket. [MQTT over TLS](https://www.emqx.com/en/blog/fortifying-mqtt-communication-security-with-ssl-tls)/SSL is widely used in production to secure communications between [MQTT clients](https://www.emqx.com/en/blog/mqtt-client-tools) and brokers, as security is a top priority for IoT applications. However, it is slow and has high latency, requiring 7 handshakes equal to 3.5 RTT, namely, 3 TCP and 4 TLS to establish a new [MQTT connection](https://www.emqx.com/en/blog/how-to-set-parameters-when-establishing-an-mqtt-connection).
 
-**MQTT over QUIC**, with 1 RTT connection establishment and 0 RTT reconnection latency, is indeed faster and has lower latency compared to MQTT over TLS. The QUIC stack can be customized for various use cases, such as keeping connections alive in poor networking conditions and for scenarios where there is a need for low client-to-server latency. It will benefit connected cars with unreliable cellular networks and low-latency industrial IoT applications. The adoption of MQTT over QUIC is expected to play a vital role in the future of IoT, Industrial IoT ([IIoT](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges)), and Internet of Vehicles (IoV).
+**MQTT over QUIC**, with 1 RTT connection establishment and 0 RTT reconnection latency, is indeed faster and has lower latency compared to MQTT over TLS. The QUIC stack can be customized for various use cases, such as keeping connections alive in poor networking conditions and for scenarios where there is a need for low client-to-server latency. It will benefit [connected cars](https://www.emqx.com/en/blog/connected-cars-and-automotive-connectivity-all-you-need-to-know) with unreliable cellular networks and low-latency [industrial IoT](https://www.emqx.com/en/blog/industrial-iot-systems) applications. The adoption of MQTT over QUIC is expected to play a vital role in the future of IoT, Industrial IoT ([IIoT](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges)), and Internet of Vehicles (IoV).
 
 [EMQX](https://github.com/emqx/emqx), the popular [open-source MQTT broker](https://www.emqx.com/en/blog/a-comprehensive-comparison-of-open-source-mqtt-brokers-in-2023), has introduced [MQTT over QUIC support ](https://www.emqx.com/en/blog/mqtt-over-quic)in its latest version, 5.0. And like HTTP/3, the next version of the MQTT protocol, MQTT 5.1 or 6.0, will use QUIC as its primary transport layer in the near future.
 
@@ -52,7 +52,7 @@ Serverless MQTT broker emerges as a cutting-edge architectural innovation for 20
 
 This flexibility manifests in two key aspects: the seamless scaling of resources in response to user demands and the pay-as-you-go pricing model that aligns with this elastic architecture. As a result, serverless MQTT is poised to drive broader adoption of MQTT, reducing operational costs and spurring innovation and collaboration across diverse industries. We might even see a free serverless MQTT broker for every IoT and Industrial IoT developer.
 
-In March 2023, EMQX Cloud launched the world's first [serverless MQTT service](https://www.emqx.com/en/cloud/serverless-mqtt), offering users not only an incredibly fast deployment time of just 5 seconds, but also the exceptional flexibility that truly sets serverless MQTT apart.
+In March 2023, [EMQX Cloud](https://www.emqx.com/en/cloud) launched the world's first [serverless MQTT service](https://www.emqx.com/en/cloud/serverless-mqtt), offering users not only an incredibly fast deployment time of just 5 seconds, but also the exceptional flexibility that truly sets serverless MQTT apart.
 
 <section class="promotion">
     <div>
@@ -96,7 +96,7 @@ MQTT Sparkplug aimed to simplify connecting and communicating with disparate ind
 
 ## MQTT Unified Namespace
 
-[Unified Namespace](https://www.emqx.com/en/blog/unified-namespace-next-generation-data-fabric-for-iiot) is a solution architecture built on the MQTT broker for Industrial IoT and Industry 4.0. It provides a unified namespace for MQTT topics and a centralized repository for messages and structured data. 
+[Unified Namespace](https://www.emqx.com/en/blog/unified-namespace-next-generation-data-fabric-for-iiot) is a solution architecture built on the MQTT broker for Industrial IoT and Industry 4.0. It provides a unified namespace for [MQTT topics](https://www.emqx.com/en/blog/advanced-features-of-mqtt-topics) and a centralized repository for messages and structured data. 
 
 Unified Namespace connects industrial devices, sensors, and applications, such as SCADA, MES, and ERP, with star topology using a central MQTT broker. Unified Namespace dramatically simplifies the development of industrial IoT applications with an event-driven architecture.
 

@@ -28,7 +28,7 @@ The founder of the MQTT protocol foresees the importance of Web applications, so
 
 ### MQTT over QUIC
 
-QUIC (RFC 9000) is the underlying transport protocol of the next-generation Internet protocol HTTP/3, which provides connectivity for the modern mobile Internet with less connection overhead and message latency compared to TCP/TLS protocols.
+[QUIC](https://www.emqx.com/en/blog/quic-protocol-the-features-use-cases-and-impact-for-iot-iov) (RFC 9000) is the underlying transport protocol of the next-generation Internet protocol HTTP/3, which provides connectivity for the modern mobile Internet with less connection overhead and message latency compared to TCP/TLS protocols.
 
 Based on the advantages of QUIC, which make it highly suitable for IoT messaging scenarios, EMQX 5.0 introduces MQTT over QUIC. Check out [the blog](https://www.emqx.com/en/blog/mqtt-over-quic) for more information.
 
@@ -91,7 +91,7 @@ Check out [the blog](https://www.emqx.com/en/blog/mqtt-session) for more details
 
 ### Last Will
 
-When an MQTT client that has set a [Will Message](https://www.emqx.com/en/blog/use-of-mqtt-will-message) goes offline abnormally, the MQTT broker publishes the Will Message set by that client.
+When an [MQTT client](https://www.emqx.com/en/blog/mqtt-client-tools) that has set a [Will Message](https://www.emqx.com/en/blog/use-of-mqtt-will-message) goes offline abnormally, the MQTT broker publishes the Will Message set by that client.
 
 > **Unexpected offline includes**: the connection is closed by the server due to network failure; the device is suddenly powered off; the device attempts to perform an unallowable operation and the connection is closed by the server, etc.
 

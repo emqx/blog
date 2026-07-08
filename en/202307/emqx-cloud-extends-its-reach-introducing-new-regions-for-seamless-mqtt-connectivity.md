@@ -1,4 +1,4 @@
-We are thrilled to announce the expansion of [EMQX Cloud](https://www.emqx.com/en/cloud) into three new regions, marking a significant milestone in our mission to provide global coverage and empower IoT applications worldwide. EMQX Cloud Dedicated Professional service is now available in Azure West US2, Azure West Europe, and Google Cloud US Central 1 regions, bringing our cutting-edge MQTT messaging capabilities closer to our valued customers in these strategic locations.
+We are thrilled to announce the expansion of [EMQX Cloud](https://www.emqx.com/en/cloud) into three new regions, marking a significant milestone in our mission to provide global coverage and empower IoT applications worldwide. EMQX Cloud Dedicated Professional service is now available in Azure West US2, Azure West Europe, and Google Cloud US Central 1 regions, bringing our cutting-edge [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) messaging capabilities closer to our valued customers in these strategic locations.
 
 ## Global Coverage in Meeting the Evolving Needs of IoT Applications
 

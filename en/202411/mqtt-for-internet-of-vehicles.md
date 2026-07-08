@@ -107,7 +107,7 @@ Kafka focuses on data storage and reading, while EMQX focuses on communication b
 
 ### MQTT over QUIC for Efficient Messaging
 
-EMQX is the first [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) to support [MQTT over QUIC](https://www.emqx.com/en/blog/mqtt-over-quic), providing a more efficient and secure way of transmitting MQTT messages over modern complex networks. MQTT over QUIC can be beneficial in the IoV use cases, where low-latency, reliable, and secure communication is essential for various applications. As QUIC combines the best features of TCP and UDP while offering built-in encryption, it can improve the performance and security of MQTT-based IoV applications. Some customers have already tried to use this new feature, and we have received good feedback.
+EMQX is the first [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) to support [MQTT over QUIC](https://www.emqx.com/en/blog/mqtt-over-quic), providing a more efficient and secure way of transmitting MQTT messages over modern complex networks. MQTT over [QUIC](https://www.emqx.com/en/blog/quic-protocol-the-features-use-cases-and-impact-for-iot-iov) can be beneficial in the IoV use cases, where low-latency, reliable, and secure communication is essential for various applications. As QUIC combines the best features of TCP and UDP while offering built-in encryption, it can improve the performance and security of MQTT-based IoV applications. Some customers have already tried to use this new feature, and we have received good feedback.
 
 ## **Conclusion: MQTT and EMQX Drive the Future of Connected Cars**
 

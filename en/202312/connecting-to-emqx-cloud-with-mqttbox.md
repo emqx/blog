@@ -64,7 +64,7 @@ After saving successfully, you will enter a page of client details. If the butto
 
 ### Subscribe to a Topic
 
-Once the connection is established, you can start subscribing to messages. Because the MQTT protocol uses a publish/subscribe model, we need to subscribe to a topic after connecting. Then, there will be messages on the Topic to receive messages from EMQX Cloud Serverless.
+Once the connection is established, you can start subscribing to messages. Because the MQTT protocol uses a publish/subscribe model, we need to subscribe to a topic after connecting. Then, there will be messages on the Topic to receive messages from [EMQX Cloud](https://www.emqx.com/en/cloud) Serverless.
 
 There are two input boxes for sending and subscribing by default in the client details page of MQTTBox. You can add multiple boxes if there are numerous subscriptions or different published content. Click the `Add Publisher` and `Add Subscriber` buttons in the top menu bar to add and manage various publishers/subscribers.
 
@@ -104,7 +104,7 @@ For MQTT load testing in MQTTBox, a simple WebSocket connection is typically emp
    - **Run Time (seconds)**: Set the test duration, e.g., `5` seconds.
    - **Time Out (seconds)**: Set a timeout period, such as `30` seconds.
    - **# of Instances to Run**: Choose the number of instances, e.g., `2`.
-   - **Topic**: Specify the MQTT topic, like `testtopic/load`.
+   - **Topic**: Specify the [MQTT topic](https://www.emqx.com/en/blog/advanced-features-of-mqtt-topics), like `testtopic/load`.
    - **QoS**: Choose the QoS level.
    - **Add Payload**: Input the payload, for instance, `hello`.
 3. **Start the Load Test**: Confirm the settings and begin the test.

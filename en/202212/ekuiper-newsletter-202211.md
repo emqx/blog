@@ -56,7 +56,7 @@ lag(StartTime) OVER (WHEN had_changed(true, StatusCode)) returns the time of the
 
 ## Ecosystem
 
-In v1.8.0, we introduce support for video streaming, a new type of binary data that eKuiper can handle. Previously, eKuiper was only able to process images in binary format, and these images were typically transmitted using protocols designed for text data, such as MQTT or HTTP. We also continue to adapt the new version of EdgeX to support these enhancements.
+In v1.8.0, we introduce support for video streaming, a new type of binary data that eKuiper can handle. Previously, eKuiper was only able to process images in binary format, and these images were typically transmitted using protocols designed for text data, such as [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) or HTTP. We also continue to adapt the new version of EdgeX to support these enhancements.
 
 ### Video streaming source
 

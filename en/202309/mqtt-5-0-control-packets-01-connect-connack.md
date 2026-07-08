@@ -4,7 +4,7 @@ If we want to use MQTT for communication, the first step must be to establish an
 
 ## Sample Packets
 
-We use [MQTTX CLI](https://mqttx.app/) to initiate a connection to a [Public MQTT server](http://broker.emqx.io/). In this connection, we set the protocol version to MQTT 5.0, Clean Start to 1, Session Expiry Interval to 300 seconds, Keep Alive to 60, and the username and password to admin and public respectively. The corresponding MQTTX CLI command is:
+We use [MQTTX CLI](https://mqttx.app/) to initiate a connection to a [Public MQTT server](http://broker.emqx.io/). In this connection, we set the protocol version to [MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5), Clean Start to 1, Session Expiry Interval to 300 seconds, Keep Alive to 60, and the username and password to admin and public respectively. The corresponding MQTTX CLI command is:
 
 ```
 mqttx conn --hostname broker.emqx.io --mqtt-version 5 \
@@ -25,7 +25,7 @@ But this is a string of hexadecimal bytes that is not easy to understand unless 
 
 ![01connectpacket.png](https://assets.emqx.com/images/de934ddfbedc2922a19c2bb88ea3b26a.png)
 
-Similarly, we also captured the CONNACK packet returned by the public MQTT server:
+Similarly, we also captured the CONNACK packet returned by the public [MQTT server](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison):
 
 ```
 20 13 00 00 10 27 00 10 00 00 25 01 2a 01 29 01 22 ff ff 28 01
@@ -120,8 +120,8 @@ The Variable Header of the CONNACK packet contains the following fields in order
 | :-------- | :--------------------------- | :----------------------------------------------------------- |
 | 0x00      | Success                      | The connection is accepted.                                  |
 | 0x81      | Malformed Packet             | The server cannot correctly parse the CONNECT packet according to the protocol specification, for example, the reserved bit is not set to 0 according to the protocol requirements. |
-| 0x82      | Protocol Error               | The CONNECT packet can be parsed correctly, but the content does not conform to the protocol specification, for example, the value of the Will Topic field is not a valid MQTT topic. |
-| 0x84      | Unsupported Protocol Version | The server does not support the MQTT protocol version requested by the client. |
+| 0x82      | Protocol Error               | The CONNECT packet can be parsed correctly, but the content does not conform to the protocol specification, for example, the value of the Will Topic field is not a valid [MQTT topic](https://www.emqx.com/en/blog/advanced-features-of-mqtt-topics). |
+| 0x84      | Unsupported Protocol Version | The server does not support the [MQTT protocol](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) version requested by the client. |
 | 0x85      | Client Identifier not valid  | Client ID is valid, but is not accepted by the server. For example, the Client ID exceeds the maximum length allowed by the server. |
 | 0x86      | Bad User Name or Password    | The client was refused a connection because it used an incorrect username or password. |
 | 0x95      | Packet too large             | The CONNECT packet exceeds the maximum size allowed by the server, probably because it carries a large will message. |

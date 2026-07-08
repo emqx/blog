@@ -1,4 +1,4 @@
-EMQX Team provides Helm chart which facilitates users to one-click deploy EMQX [MQTT broker](https://www.emqx.com/en/products/emqx) in the Kubernetes cluster. EMQX Team mostly recommends This method for deploying EMQX MQTT broker in the Kubernetes or k3s cluster. This article will start from scratch using the handwriting YAML file method to deploy a K8S cluster of EMQX MQTT broker, and analyze details and techniques of the deployment. It will facilitate users to flexibly use during real deployment.
+EMQX Team provides Helm chart which facilitates users to one-click deploy EMQX [MQTT broker](https://www.emqx.com/en/products/emqx) in the Kubernetes cluster. EMQX Team mostly recommends This method for deploying EMQX [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) in the Kubernetes or k3s cluster. This article will start from scratch using the handwriting YAML file method to deploy a K8S cluster of EMQX [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) broker, and analyze details and techniques of the deployment. It will facilitate users to flexibly use during real deployment.
 
 Reading this article needs users to know the basic concept of Kubernetes and having an operational Kubernetes cluster.
 
@@ -128,7 +128,7 @@ Kubernetes [Pods](https://kubernetes.io/docs/concepts/workloads/pods/) has a lif
 
 Every pod has its IP address, but in Deployment, the pod collection running at the same moment may differ from that runs this application later.
 
-This will cause a problem: if use EMQX Broker Pod to provide service to the **MQTT client**, how does the client find and track the IP address that will be connected, to facilitate users to use EMQX Broker service.
+This will cause a problem: if use EMQX Broker Pod to provide service to the **[MQTT client](https://www.emqx.com/en/blog/mqtt-client-tools)**, how does the client find and track the IP address that will be connected, to facilitate users to use EMQX Broker service.
 
 The answer is: Service
 

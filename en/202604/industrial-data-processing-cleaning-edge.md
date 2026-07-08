@@ -1,6 +1,6 @@
 As Industry 4.0 advances, the data challenge for enterprises has shifted from "how to acquire data" to "how to efficiently utilize data to enable AI-ready operations." 
 
-In traditional Industrial IoT (IIoT) architectures, uploading massive raw operational technology (OT) data directly to the cloud incurs prohibitive bandwidth costs and processing latency. This bottleneck prevents modern AI and analytics systems from accessing the real-time, context-rich data they require.
+In traditional [Industrial IoT](https://www.emqx.com/en/blog/industrial-iot-systems) ([IIoT](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges)) architectures, uploading massive raw operational technology (OT) data directly to the cloud incurs prohibitive bandwidth costs and processing latency. This bottleneck prevents modern AI and analytics systems from accessing the real-time, context-rich data they require.
 
 Modern architectures address this by embedding Industrial DataOps at the edge. EMQX Neuron leads this shift by integrating a high-performance SQL stream processing engine directly into the gateway. By processing data at the source, EMQX Neuron delivers high-density, business-contextualized datasets ready for immediate cloud analytics and AI modeling.
 

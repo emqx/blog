@@ -4,7 +4,7 @@
 
 K8s Operator 是一种特定于应用的控制器，能持续监听 K8s 资源对象的变化事件，进行全生命期的监控响应，高可靠地完成部署交付。Operator 提供了一个框架，通俗来说就是把运维的经验沉淀为代码，实现运维的代码化、自动化、智能化。
 
-为了对云原生分布式 [MQTT 消息服务器 EMQX](https://www.emqx.com/zh/products/emqx) 进行全生命期管理， [EMQX Operator](https://www.emqx.com/zh/solutions/mqtt-on-kubernetes) 应运而生。 使用 EMQX Operator，即使在网络和存储环境复杂的 K8s 环境中，也可以轻松搭建百万连接的 MQTT 集群。本文将使用 EMQX Operator 进行基于 K8s 的百万级 MQTT 连接服务搭建，并通过测试验证搭建结果。
+为了对云原生分布式 [MQTT 消息服务器 EMQX](https://www.emqx.com/zh/products/emqx) 进行全生命期管理， [EMQX Operator](https://www.emqx.com/zh/solutions/mqtt-on-kubernetes) 应运而生。 使用 EMQX Operator，即使在网络和存储环境复杂的 K8s 环境中，也可以轻松搭建百万连接的 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 集群。本文将使用 EMQX Operator 进行基于 K8s 的百万级 MQTT 连接服务搭建，并通过测试验证搭建结果。
 
 ## 什么是 EMQX Operator
 

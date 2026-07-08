@@ -10,7 +10,7 @@ OT 领域依赖实时流数据运转，而 IT 领域的分析与 AI 则需要结
 
 ## 挑战：从数据流到数据湖
 
-将原始 MQTT 数据流式传输至标准 Amazon S3 存储桶是数据采集的常见步骤。但这些原始数据无法直接用于分析，必须经过结构化处理、模式管理，并针对 Amazon Athena、Spark、Presto 等查询引擎进行优化。传统批量处理作业不仅带来延迟和成本，更增加了系统复杂性，严重阻碍关键洞察的获取。
+将原始 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 数据流式传输至标准 Amazon S3 存储桶是数据采集的常见步骤。但这些原始数据无法直接用于分析，必须经过结构化处理、模式管理，并针对 Amazon Athena、Spark、Presto 等查询引擎进行优化。传统批量处理作业不仅带来延迟和成本，更增加了系统复杂性，严重阻碍关键洞察的获取。
 
 ## 解决方案：与可分析的 S3 Tables 直接集成
 

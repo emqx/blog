@@ -1,4 +1,4 @@
-XMeter Cloud 专业版于 2022 年底上线后，已有不少用户试用，对数千甚至上万规模的 MQTT 并发连接和消息吞吐场景进行测试。同时我们也收到了希望支持更多物联网协议测试的需求反馈。
+XMeter Cloud 专业版于 2022 年底上线后，已有不少用户试用，对数千甚至上万规模的 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 并发连接和消息吞吐场景进行测试。同时我们也收到了希望支持更多[物联网协议](https://www.emqx.com/zh/blog/iot-protocols-mqtt-coap-lwm2m)测试的需求反馈。
 
 新年伊始，XMeter 团队全力聚焦于 XMeter Cloud 新版本的研发，将于 3 月上线自定义测试场景的重要功能，助力用户对更广泛的协议进行测试，包括 TCP、WebSocket、HTTP 等。此外，XMeter Cloud 新版本还将在用户体验和产品性能上进一步提升与优化。
 

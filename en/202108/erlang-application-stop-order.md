@@ -2,7 +2,7 @@ An EMQX troubleshooting case study.
 
 Key words: emqx, shutdown crash, shutdown order, race condition
 
-[EMQX](https://github.com/emqx/emqx) is an open-source MQTT broker built on Erlang/OTP which can serve massive amount of TCP/TLS connections. The underlying library for listening and accepting MQTT connections is called [`esockd`](https://github.com/emqx/esockd)
+[EMQX](https://github.com/emqx/emqx) is an open-source [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) built on Erlang/OTP which can serve massive amount of TCP/TLS connections. The underlying library for listening and accepting [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) connections is called [esockd](https://github.com/emqx/esockd)
 
 ## The trouble
 

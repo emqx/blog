@@ -1,8 +1,8 @@
-When teams talk about **MQTT security**, the conversation often starts with device identity and quickly moves to a harder question: once a client is connected, what should it actually be allowed to do?
+When teams talk about **[MQTT security](https://www.emqx.com/en/blog/essential-things-to-know-about-mqtt-security)**, the conversation often starts with device identity and quickly moves to a harder question: once a client is connected, what should it actually be allowed to do?
 
 For **EMQX customers** running production **IoT platforms**, that question is not just technical. It affects operational risk, tenant isolation, compliance posture, and the cost of managing fleets at scale.
 
-EMQX approaches this with a layered model for **MQTT authentication** and **MQTT authorization**. You can secure transport with TLS, verify device or application identity with mechanisms such as **JWT authentication**, X.509 certificates, username/password, SCRAM, or HTTP-based authentication, and then enforce topic-level permissions through built-in or external authorization backends. On top of that, EMQX also provides banned-client controls, flapping detection, client attributes, and namespace-based isolation for multi-tenant deployments.
+EMQX approaches this with a layered model for **[MQTT authentication](https://www.emqx.com/en/blog/securing-mqtt-with-username-and-password-authentication)** and **[MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) authorization**. You can secure transport with TLS, verify device or application identity with mechanisms such as **JWT authentication**, X.509 certificates, username/password, SCRAM, or HTTP-based authentication, and then enforce topic-level permissions through built-in or external authorization backends. On top of that, EMQX also provides banned-client controls, flapping detection, client attributes, and namespace-based isolation for multi-tenant deployments.
 
 This post focuses on two practical **EMQX JWT** capabilities that are especially valuable for customer-facing **IoT security** deployments:
 
@@ -16,7 +16,7 @@ These are the kinds of features that help system administrators reduce risk with
 The simplest way to understand **EMQX security** is as a pipeline:
 
 1. **Transport protection**: Use TLS, including X.509 certificate authentication where needed, to encrypt traffic and protect credentials in transit.
-2. **Connection-time identity checks**: Authenticate each MQTT client with the right method for the deployment, including **JWT**, username/password, HTTP, SCRAM, Kerberos, or PSK.
+2. **Connection-time identity checks**: Authenticate each [MQTT client](https://www.emqx.com/en/blog/mqtt-client-tools) with the right method for the deployment, including **JWT**, username/password, HTTP, SCRAM, Kerberos, or PSK.
 3. **Authorization:** Decide what the client can publish or subscribe to, using ACL files, authorization rules in built-in database, or external data sources such as HTTP, MySQL, PostgreSQL, MongoDB, Redis, or LDAP.
 4. **Runtime hardening:** Add controls such as banned clients, flapping detection, and namespace-based isolation for multi-tenant environments.
 
@@ -94,7 +94,7 @@ For admins, this is a clean way to add an identity consistency check without wri
 The business value is just as important:
 
 - Reduces the risk of token misuse in shared or distributed environments
-- Creates a stronger link between the identity provider and the MQTT session
+- Creates a stronger link between the identity provider and the [MQTT session](https://www.emqx.com/en/blog/mqtt-session)
 - Avoids unnecessary cryptographic work for obviously invalid connection attempts
 - Supports a cleaner operational model for large fleets and delegated identity systems
 
@@ -180,7 +180,7 @@ These two examples are not just clever configurations. Together, they show why *
 - **Enterprise alignment**: Existing IAM systems, token issuers, and scope conventions can be carried into MQTT environments with less translation work.
 - **Multi-tenant readiness**: EMQX namespaces and authorization options help organizations isolate teams, applications, or customers within shared infrastructure.
 
-In other words, EMQX does not treat **JWT** as a narrow authentication checkbox. It treats JWT as one part of a broader **access control** architecture for **MQTT brokers** and **IoT platforms**.
+In other words, EMQX does not treat **JWT** as a narrow authentication checkbox. It treats JWT as one part of a broader **access control** architecture for **[MQTT brokers](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison)** and **IoT platforms**.
 
 ## Best Practices for Deploying JWT-Based MQTT Security in EMQX
 

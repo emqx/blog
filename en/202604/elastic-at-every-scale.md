@@ -2,7 +2,7 @@
 
  
 
-[EMQX Tables](https://www.emqx.com/en/cloud/emqx-tables) is a fully managed time-series database service built into EMQX Cloud. Among all the time-series databases available, EMQX Cloud chose GreptimeDB as the underlying engine.
+[EMQX Tables](https://www.emqx.com/en/cloud/emqx-tables) is a fully managed time-series database service built into [EMQX Cloud](https://www.emqx.com/en/cloud). Among all the time-series databases available, EMQX Cloud chose GreptimeDB as the underlying engine.
 
 [Part 2](https://greptime.com/blogs/2025-01-23-greptimedb-cloud-native-storage-engine) of this series covered how GreptimeDB cuts storage costs by 10x through decoupled compute and storage. But cost is only half the problem.
 

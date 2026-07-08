@@ -38,7 +38,7 @@
 
 为应对上述挑战，该企业最终选择了 [EMQX Cloud](https://www.emqx.com/zh/cloud) 作为云端消息平台的核心基础设施，系统性地解决设备连接和数据集成的关键难题。
 
-EMQX Cloud 提供了全托管的 MQTT 服务，可灵活适配多样化的业务场景，同时支持快速创建并统一管理多个业务实例，让开发团队能够专注于上层应用的开发与创新。
+EMQX Cloud 提供了全托管的 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 服务，可灵活适配多样化的业务场景，同时支持快速创建并统一管理多个业务实例，让开发团队能够专注于上层应用的开发与创新。
 
 ![image.png](https://assets.emqx.com/images/96980bc4af5b6fd398504b0a3a6558c6.png)
 

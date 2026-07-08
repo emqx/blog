@@ -26,14 +26,14 @@ Using CRL and OCSP Stapling, you can monitor the validity of each certificate an
 
 You can quickly establish a connection with GCP Pub/Sub through EMQX's Rule Engine, which can help you build IoT applications based on GCP faster:
 
-- **Use Google's Streaming Analytics to process IoT data**: Build overall solutions based on Pub/Sub, Dataflow, and BigQuery. Extract, process, and analyze the continuous MQTT data in real-time to increase business value based on the IoT data.
+- **Use Google's Streaming Analytics to process IoT data**: Build overall solutions based on Pub/Sub, Dataflow, and BigQuery. Extract, process, and analyze the continuous [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) data in real-time to increase business value based on the IoT data.
 - **Asynchronous microservice integration**: Use Pub/Sub as a messaging-oriented middleware to integrate with your applications by Pull. You can also Push subscriptions to Google Cloud services such as Cloud Functions, App Engine, Cloud Run, or custom environments on Kubernetes Engine or Compute Engine.
 
 ![Integration with Pub/Sub via Rule Engine](https://assets.emqx.com/images/2ff20dd2aa9c316c13fba9cbc3d79780.png)
 
 <center>Integration with Pub/Sub via Rule Engine</center>
 
-For Google IoT Core users, you can easily migrate the MQTT transport layer to EMQX to continue using applications and services on Google Cloud.
+For Google [IoT Core](https://www.emqx.com/en/blog/understanding-aws-iot-core) users, you can easily migrate the MQTT transport layer to EMQX to continue using applications and services on Google Cloud.
 
 ## Initialize the API keys from a file
 

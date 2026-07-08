@@ -26,7 +26,7 @@ OCSP（Online Certificate Status Protocol，在线证书状态协议）是另外
 
 现在，您可以通过 EMQX 规则引擎的 GCP Pub/Sub 集成能力，快速建立与该服务的连接，这能够帮助您更快的基于 GCP 构建物联网应用：
 
-- **使用 Google 的流式分析处理物联网数据**：以 Pub/Sub 以及 Dataflow 和 BigQuery 为基础而构建整体解决方案，实时提取、处理和分析源源不断的 MQTT 数据，基于物联网数据发掘更多业务价值。
+- **使用 Google 的流式分析处理物联网数据**：以 Pub/Sub 以及 Dataflow 和 BigQuery 为基础而构建整体解决方案，实时提取、处理和分析源源不断的 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 数据，基于物联网数据发掘更多业务价值。
 - **异步微服务集成：**将 Pub/Sub 作为消息传递中间件，通过 pull 的方式与后台业务集成；也可以推送订阅到 Google Cloud 各类服务如 Cloud Functions、App Engine、Cloud Run 或者 Kubernetes Engine 或 Compute Engine 上的自定义环境中。
 
 ![通过规则引擎与 Pub/Sub 集成](https://assets.emqx.com/images/231c11c8fbf7713bb46e461c7b28c410.png)
@@ -64,7 +64,7 @@ appid2:secret2
 - 修正了 `/status` API 的响应状态代码 [#9210](https://github.com/emqx/emqx/pull/9210)。 在修复之前，它总是返回 `200`，即使 EMQX 应用程序没有运行。 现在它在这种情况下返回 `503`。
 - 修复规则引擎的消息事件编码失败 [#9226](https://github.com/emqx/emqx/pull/9226)。 带消息的规则引擎事件，例如 `$events/message_delivered` 和 `$events/message_dropped`, 如果消息事件是共享订阅产生的，在编码（到 JSON 格式）过程中会失败。 影响到的版本：`v4.3.21`, `v4.4.10`, `e4.3.16` 和 `e4.4.10`。
 - 修复调用 'DELETE /alarms/deactivated' 只在单个节点上生效的问题，现在将会删除所有节点上的非活跃警告 [#9280](https://github.com/emqx/emqx/pull/9280)。
-- 在进行消息重发布或桥接消息到其他 MQTT Broker 时，检查 topic 合法性，确定其不带有主题通配符 [#9291](https://github.com/emqx/emqx/pull/9291)。
+- 在进行消息重发布或桥接消息到其他 [MQTT Broker](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison) 时，检查 topic 合法性，确定其不带有主题通配符 [#9291](https://github.com/emqx/emqx/pull/9291)。
 - 关闭管理端口（默认为8081）上对 HTTP API `api/v4/emqx_prometheus` 的认证，Prometheus 对时序数据抓取不在需要配置认证 [#9294](https://github.com/emqx/emqx/pull/9294)。
 - 修正了在 Kafka Consumer 中选择 `reset_by_subscriber` 偏移重置策略的选项。
 - 修复了 SQL Server 资源中，无法在 `server` 字段里使用除 `1433` 之外的端口的问题。

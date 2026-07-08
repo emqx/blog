@@ -4,7 +4,7 @@
 
 ## 性能提升
 
-优化了用于节点间 MQTT 消息传输的 `gen_rpc` 库，改进了其对通道中积压消息的处理能力，从而使系统更快地从流量高峰中恢复。
+优化了用于节点间 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 消息传输的 `gen_rpc` 库，改进了其对通道中积压消息的处理能力，从而使系统更快地从流量高峰中恢复。
 
 ## BUG 修复
 

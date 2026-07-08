@@ -16,7 +16,7 @@ The two counts mentioned in the previous section usually indicate that the SYN a
 
 So first, we need to understand what the SYN and accept queues are.
 
-As an application layer protocol built on top of TCP, MQTT connections always require a TCP connection to be established first, before we can send the CONNECT packet of the MQTT protocol. Establishing a TCP connection requires a three-way handshake:
+As an application layer protocol built on top of TCP, MQTT connections always require a TCP connection to be established first, before we can send the CONNECT packet of the [MQTT protocol](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt). Establishing a TCP connection requires a three-way handshake:
 
 ![01tcp3wayhandshake.png](https://assets.emqx.com/images/a6c472588c257a068d3d21b5187f9de6.png)
 

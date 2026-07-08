@@ -4,7 +4,7 @@
 
 ## 功能更新
 
-1. MQTT 文件传输能力得到了增强，现在客户端可以使用异步的方式进行文件传输：客户端可以通过 `$file-async/...` 主题进行文件传输，并通过 `$file-response/{clientId}` 主题订阅命令执行结果。相比于此前仅能通过 MQTT 5.0 专有特性 PUBACK 原因码获取传输结果而言，异步模式可以更好的用于 MQTT v3.1/v3.1.1 客户端，以及 MQTT 桥接传输的场景。
+1. [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 文件传输能力得到了增强，现在客户端可以使用异步的方式进行文件传输：客户端可以通过 `$file-async/...` 主题进行文件传输，并通过 `$file-response/{clientId}` 主题订阅命令执行结果。相比于此前仅能通过 MQTT 5.0 专有特性 PUBACK 原因码获取传输结果而言，异步模式可以更好的用于 MQTT v3.1/v3.1.1 客户端，以及 MQTT 桥接传输的场景。
 2. 将核心-复制数据库同步的默认 RPC 驱动从 `gen_rpc` 更改为 `rpc`，提升了核心副本数据复制的速度。
 
 - 提升了 `emqx` 命令的性能。
@@ -24,7 +24,7 @@
 
 - [#11780](https://github.com/emqx/emqx/pull/11780) 修复了 `pbkdf2` 密码哈希算法中 `iterations` 字段的验证问题。现在，`iterations` 必须是严格正数。之前，`iterations` 可以被设置为 0，这会导致验证器无法正常工作。
 
-- [#11791](https://github.com/emqx/emqx/pull/11791) 修复了 EMQX CoAP 网关中的一个问题，即心跳没有有效地维持连接的活跃状态。此修复确保心跳机制正确维持 CoAP 网关连接的活跃状态。
+- [#11791](https://github.com/emqx/emqx/pull/11791) 修复了 EMQX [CoAP](https://www.emqx.com/zh/blog/coap-protocol) 网关中的一个问题，即心跳没有有效地维持连接的活跃状态。此修复确保心跳机制正确维持 CoAP 网关连接的活跃状态。
 
 - [#11797](https://github.com/emqx/emqx/pull/11797) 修改了管理 `built_in_database` 授权数据源的 HTTP API 行为。如果未将 `built_in_database` 设置为授权数据源，这些 API 现在将返回 `404` 状态码，替换了以前的 `20X` 响应。
 

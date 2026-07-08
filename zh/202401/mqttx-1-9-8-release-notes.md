@@ -1,10 +1,10 @@
-MQTTX 1.9.8 现已发布，新版本中 MQTTX CLI 新增了调试模式，这一功能增强了开发者的故障排查和分析能力。此外，更新也改进了 MQTTX AI Copilot 功能，为用户提供了更先进的基于 AI 驱动的 MQTT 交互支持。
+MQTTX 1.9.8 现已发布，新版本中 MQTTX CLI 新增了调试模式，这一功能增强了开发者的故障排查和分析能力。此外，更新也改进了 MQTTX AI Copilot 功能，为用户提供了更先进的基于 AI 驱动的 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 交互支持。
 
 > 点击此处下载最新版本：[https://mqttx.app/zh/downloads](https://mqttx.app/zh/downloads)
 
 ## MQTTX CLI - 调试模式
 
-MQTTX 1.9.8 的调试模式由 MQTT.js 提供支持，让 MQTT 的调试流程更加简单。通过使用 `--debug` 开关来激活该模式，在连接、发布和订阅期间，提供实时日志，详细记录客户端的配置以及数据包处理情况。对于开发者来说，这个功能在理解和排查 MQTT 协议使用方面变得极其便利。
+MQTTX 1.9.8 的调试模式由 [MQTT.js](https://www.emqx.com/zh/blog/mqtt-js-tutorial) 提供支持，让 MQTT 的调试流程更加简单。通过使用 `--debug` 开关来激活该模式，在连接、发布和订阅期间，提供实时日志，详细记录客户端的配置以及数据包处理情况。对于开发者来说，这个功能在理解和排查 MQTT 协议使用方面变得极其便利。
 
 以 `mqttx conn -h broker.emqx.io -p 1883 --debug` 命令为例，来展示新调试模式的功能。该命令启动了一个详细的 MQTT 连接过程，其中显示的日志内容包括：
 
@@ -80,7 +80,7 @@ MQTTX 1.9.8 版本中对 MQTTX Copilot 功能进行了优化改进：
 - **Sparkplug B 支持**：扩展 MQTTX 功能，包括对 Sparkplug B 的特殊支持。
 - **QoS 0 消息存储优化**：可配置选项以减少存储空间使用。
 - **MQTT GUI 调试功能**：帮助调试 MQTT 通信的新功能。
-- **插件功能**：引入支持协议扩展（如 CoAP 和 MQTT-SN）的插件系统。
+- **插件功能**：引入支持协议扩展（如 [CoAP](https://www.emqx.com/zh/blog/coap-protocol) 和 MQTT-SN）的插件系统。
 - **Avro 消息格式支持**：对 Avro 消息格式的编码和解码能力。
 - **脚本测试自动化（流程）**：简化自动化测试工作流的创建和管理。
 

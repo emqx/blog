@@ -1,4 +1,4 @@
-[EMQX Cloud](https://www.emqx.com/zh/cloud) 作为一款全托管的 MQTT 服务，致力于为用户提供可靠、实时的物联网数据移动、处理和集成能力，通过完善、自动化的监控运维，免除用户的管理维护负担，加速物联网应用开发。
+[EMQX Cloud](https://www.emqx.com/zh/cloud) 作为一款全托管的 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 服务，致力于为用户提供可靠、实时的物联网数据移动、处理和集成能力，通过完善、自动化的监控运维，免除用户的管理维护负担，加速物联网应用开发。
 
 通过 EMQX Cloud，用户在数分钟内即可创建高可用的 MQTT 集群，进行设备接入。随后的整个使用周期中，EMQ 全球服务支持团队将提供最高 7*24 不间断的技术支持和运维服务。在使用过程中遇到任何问题，用户可以随时通过工单、电子邮件、电话等方式快速获得响应。
 

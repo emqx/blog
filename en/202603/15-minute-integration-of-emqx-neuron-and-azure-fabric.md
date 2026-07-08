@@ -17,7 +17,7 @@ For industrial scenarios, its core component, **Eventstream**, provides:
 
 EMQX Neuron is an industrial edge Connectivity gateway designed for the industrial field. Its core advantages include:
 
-- **100+ Industrial Protocol Support**: Includes Modbus, OPC UA, Siemens S7, Mitsubishi, Omron, etc.
+- **100+ Industrial Protocol Support**: Includes Modbus, [OPC UA](https://www.emqx.com/en/blog/opc-ua-protocol), Siemens S7, Mitsubishi, Omron, etc.
 - **Lightweight Deployment**: Supports X86/ARM architectures and Docker/Kubernetes containerized deployment.
 - **Edge Streaming Computing**: Features a built-in SQL engine for data filtering, aggregation, and transformation at the edge.
 - **High Performance and Low Latency**: Easily handles 10,000+ data points with millisecond-level response.
@@ -86,7 +86,7 @@ Save the rule, and the EMQX Neuron side configuration is completed.
 
 #### **Why is Eventstream preferred for industrial scenarios?**
 
-While Fabric offers various paths (Data Factory for batch, Warehouse for structured), Eventstream is the true "real-time data hub" for IIoT equipment sampling.
+While Fabric offers various paths (Data Factory for batch, Warehouse for structured), Eventstream is the true "real-time data hub" for [IIoT](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges) equipment sampling.
 
 **Four Advantages of Eventstream:**
 

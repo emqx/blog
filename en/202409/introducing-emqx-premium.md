@@ -1,4 +1,4 @@
-We’re excited to announce the launch of our new **EMQX Platform Premium Plan**, designed specifically for mission-critical IoV, IoT, IIoT and AI applications in enterprises. This new offering represents a significant leap forward in our mission to provide rock-solid, scalable, and feature-rich MQTT messaging solutions for businesses operating on a global scale.
+We’re excited to announce the launch of our new **EMQX Platform Premium Plan**, designed specifically for mission-critical IoV, IoT, [IIoT](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges) and AI applications in enterprises. This new offering represents a significant leap forward in our mission to provide rock-solid, scalable, and feature-rich [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) messaging solutions for businesses operating on a global scale.
 
 ## The Evolution of EMQX Platform 
 

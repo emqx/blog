@@ -1,4 +1,4 @@
->NanoMQ 是面向边缘计算的 MQTT 消息引擎+多协议消息总线。支持 MQTT 协议和 ZeroMQ 和 Nanomsg 等不同边缘常用总线协议，集成 broker 和 brokerless 消息模式，方便打造一站式边缘数据总线应用。
+>NanoMQ 是面向边缘计算的 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 消息引擎+多协议消息总线。支持 MQTT 协议和 ZeroMQ 和 Nanomsg 等不同边缘常用总线协议，集成 broker 和 brokerless 消息模式，方便打造一站式边缘数据总线应用。
 >
 >社区站地址：[https://nanomq.io/zh](https://nanomq.io/zh) 
 >
@@ -12,7 +12,7 @@ NanoMQ v0.7.0 和 NanoSDK v0.4.0 于本月底正式发布（下载地址： [htt
 
 **SQLite** 是遵守 [ACID](https://zh.wikipedia.org/wiki/ACID) 的关系数据库管理系统，实现了自给自足的、无服务器的、零配置的、事务性的 SQL 数据库引擎。其以库的方式提供，方便被集成在各式各样的服务中，一直以来深受广大用户喜爱。
 
-NanoMQ v0.7.0 新增了 SQLite3 作为本地 MQTT 服务和内置桥接功能断网续传的可选项，将其作为会话保存和 QoS 消息缓存的数据库。若 MQTT 客户端连接时使用会话保存，并且订阅或发布了 QoS 1/2 的消息时，Broker 会自动将数据缓存在 SQLite 本地数据库中，并在触发定时器时重新进行发布尝试。
+NanoMQ v0.7.0 新增了 SQLite3 作为本地 MQTT 服务和内置桥接功能断网续传的可选项，将其作为会话保存和 QoS 消息缓存的数据库。若 [MQTT 客户端](https://www.emqx.com/zh/blog/mqtt-client-tools)连接时使用会话保存，并且订阅或发布了 QoS 1/2 的消息时，Broker 会自动将数据缓存在 SQLite 本地数据库中，并在触发定时器时重新进行发布尝试。
 
 NanoSDK v0.4.0 也同步增加了这一功能。对于端侧设备来说，弱网环境下数据上传失败是经常发生的情况。而且由于各类网关或端侧设备的电源情况复杂，经常因为断电重启或环境和看门狗等原因进行软复位或者硬复位，这会导致内存中的数据丢失。而使用 NanoSDK + SQLite 的方式，SDK 会自动将飞行窗口里未上传成功的 QoS 消息和未收到 Broker 确认的 QoS 消息缓存在本地磁盘里，并自动重连 Broker，在连接重新建立时触发断网续传。
 

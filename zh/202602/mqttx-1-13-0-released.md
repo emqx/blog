@@ -8,7 +8,7 @@ MQTTX 1.13.0 现已正式发布。
 
 > 特别感谢 [@muzaffarmhd](https://github.com/muzaffarmhd) 对此功能的贡献
 
-MQTTX 1.13.0 引入了全新的消息体查看器。在 MQTT 开发测试中，经常需要分析设备上报数据的变化、对比不同时刻的消息内容、或在复杂 JSON 中快速定位字段。为此，我们提供了差异视图和 JSON 树视图两种可视化方式，显著提升消息分析效率。
+MQTTX 1.13.0 引入了全新的消息体查看器。在 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 开发测试中，经常需要分析设备上报数据的变化、对比不同时刻的消息内容、或在复杂 JSON 中快速定位字段。为此，我们提供了差异视图和 JSON 树视图两种可视化方式，显著提升消息分析效率。
 
 ### 差异视图
 
@@ -157,7 +157,7 @@ MQTT 主题中的空格是合法的，但通常是用户输入错误。例如 `s
 - **可配置断开连接属性**：支持 MQTT 5.0 断开连接属性配置
 - **IoT 场景数据模拟**：集成更多 IoT 场景的数据模拟能力
 - **Sparkplug B 支持**：扩展 MQTTX 支持 Sparkplug B 协议
-- **插件系统**：支持 CoAP、MQTT-SN、Kafka、MessageQueue 等协议扩展
+- **插件系统**：支持 [CoAP](https://www.emqx.com/zh/blog/coap-protocol)、MQTT-SN、Kafka、MessageQueue 等协议扩展
 - **脚本测试自动化（Flow）**：简化自动化测试工作流的创建和管理
 
 

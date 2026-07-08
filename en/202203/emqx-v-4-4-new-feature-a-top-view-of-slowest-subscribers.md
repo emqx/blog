@@ -1,6 +1,6 @@
 ## Background
 
-As a MQTT broker admin, you may often want to know which clients are the slowest. We have a nice ‘top’ view for you. One option is perhaps to instrument the subscriber code with latency measurements. However given in MQTT world, the subscribers might be devices out in the wild which are hard to upgrade or collect metrics from.
+As a [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) admin, you may often want to know which clients are the slowest. We have a nice ‘top’ view for you. One option is perhaps to instrument the subscriber code with latency measurements. However given in [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) world, the subscribers might be devices out in the wild which are hard to upgrade or collect metrics from.
 
 EMQX v4.4 has a nice feature to overcome this challenge.
 
@@ -24,7 +24,7 @@ It can be enabled from the dashboard UI, in the “modules” tab.
 
 Find the configs in `emqx.conf` config namespace is `module.slow_subs.*`. 
 
-For EMQX Enterprise edition, it can be dynamically configured from the dashboard UI.
+For [EMQX Enterprise](https://www.emqx.com/en/products/emqx) edition, it can be dynamically configured from the dashboard UI.
 
 ![EMQX Enterprise dashboard](https://assets.emqx.com/images/c9d31f7050be11cb42832c336f0de144.png)
 

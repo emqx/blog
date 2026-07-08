@@ -1,6 +1,6 @@
 ## Introduction
 
-The fully managed serverless MQTT service EMQX Cloud Serverless has now supported data integration capability.
+The fully managed [serverless MQTT](https://www.emqx.com/en/cloud/serverless-mqtt) service [EMQX Cloud](https://www.emqx.com/en/cloud) Serverless has now supported data integration capability.
 
 In this blog, we will demonstrate a complete data integration workflow through the example of connecting simulated devices to a Serverless deployment and sending data to Kafka.
 
@@ -22,7 +22,7 @@ After creating your first Confluent Cloud cluster, navigate to the API Keys sect
 
 ### 3. Define a Topic
 
-We then need to create a topic where we want to store all the data produced by our MQTT devices. In the navigation menu, select ‘Topics’ and then create a topic using the default settings. For this tutorial, we named the topic `emqx`*.* It’s not necessary to create a schema for this example.
+We then need to create a topic where we want to store all the data produced by our [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) devices. In the navigation menu, select ‘Topics’ and then create a topic using the default settings. For this tutorial, we named the topic `emqx`*.* It’s not necessary to create a schema for this example.
 
 ![Define a Topic](https://assets.emqx.com/images/ef1e7c9aba290dfd59fab397983dcab4.png)
 
@@ -132,7 +132,7 @@ To publish messages, you can use any [MQTT client](https://www.emqx.com/en/blog/
 In MQTTX, click ‘New Connection’ and complete the connection form:
 
 - **Name**: Enter a connection name of your choice.
-- **Host**: This is the MQTT broker connection address, available on the EMQX Cloud overview page.
+- **Host**: This is the [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) connection address, available on the EMQX Cloud overview page.
 - **Port**: The MQTT broker connection port, also found on the Serverless deployment overview page.
 - **Username/Password**: Use the username and password specified in the Authentication settings.
 

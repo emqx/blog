@@ -20,7 +20,7 @@ mqttx conn --hostname broker.emqx.io --mqtt-version 5 \  --session-expiry-interv
 
 ![01connectpacket.png](https://assets.emqx.com/images/5bfa9c0f882d9381c5f3d8a0bbb669de.png)
 
-同样我们也抓取到了公共 MQTT 服务器返回的 CONNACK 报文：
+同样我们也抓取到了公共 [MQTT 服务器](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison)返回的 CONNACK 报文：
 
 ```
 20 13 00 00 10 27 00 10 00 00 25 01 2a 01 29 01 22 ff ff 28 01

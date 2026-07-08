@@ -6,7 +6,7 @@
 
 ### **方案架构**
 
-英特尔联合 EMQ 共同构建工业物联网数据底座。EMQ 的两个产品: 云端的 MQTT 消息服务器 **EMQX**，以及设备数据采集和边缘智能分析的软件 **NeuronEX** (Neuron + eKuiper)，解决工业数据从边缘到云的采集、连接、预处理、汇聚。**英特尔® 边缘洞见平台 (Intel®Edge Insights for Industrial)** 提供数据库、视频、图像和时序数据处理和分析工具，解决数据采集后的存储、分析和展示需求。
+英特尔联合 EMQ 共同构建[工业物联网](https://www.emqx.com/zh/blog/iiot-explained-examples-technologies-benefits-and-challenges)数据底座。EMQ 的两个产品: 云端的 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 消息服务器 **EMQX**，以及设备数据采集和边缘智能分析的软件 **NeuronEX** (Neuron + eKuiper)，解决工业数据从边缘到云的采集、连接、预处理、汇聚。**英特尔® 边缘洞见平台 (Intel®Edge Insights for Industrial)** 提供数据库、视频、图像和时序数据处理和分析工具，解决数据采集后的存储、分析和展示需求。
 
 通过这一联合方案，我们实现清晰的数据流程，从物联网设备到边缘，最终到云端，为工业企业提供了强大、安全且可伸缩的数据处理和分析能力。
 
@@ -23,7 +23,7 @@
       <a href="https://www.emqx.com/zh/try?product=neuronex" class="button is-gradient px-5">开始试用 →</a>
   </section>
 
-- **EMQX Enterprise** 是一款大规模、分布式物联网数据接入平台。作为一个高性能、可扩展的 MQTT 消息服务器，它可为物联网（IoT）应用提供可靠的实时消息传输和设备连接解决方案。通过强大的内置规则引擎和数据集成功能，EMQX 可以对海量 IoT 数据进行实时数据处理、数据转换和路由，还可以将 IoT 数据无缝集成到各种后端数据库和分析工具中，助力企业快速构建关键业务的 IoT 平台与应用。
+- **[EMQX Enterprise](https://www.emqx.com/zh/products/emqx)** 是一款大规模、分布式物联网数据接入平台。作为一个高性能、可扩展的 MQTT 消息服务器，它可为物联网（IoT）应用提供可靠的实时消息传输和设备连接解决方案。通过强大的内置规则引擎和数据集成功能，EMQX 可以对海量 IoT 数据进行实时数据处理、数据转换和路由，还可以将 IoT 数据无缝集成到各种后端数据库和分析工具中，助力企业快速构建关键业务的 IoT 平台与应用。
 
   <section class="promotion">
       <div>
@@ -37,7 +37,7 @@
 
 - **英特尔® 边缘洞见平台**
   
-  英特尔® 边缘洞见平台 (Intel®Edge Insights for Industrial) 是基于模块化设计、微服务架构、容器化部署的软件框架。实现了边缘侧数据连接，数据分析以及边云协同等功能。支持视频，图像和时序数据并提供了提取、存储、分析推理和可视化等基础功能模块，各模块通过数据总线进行通讯。EII 支持 OPCUA, MQTT, ZMQ, Restful 等通用协议，同时也灵活的支持用户接入定制化协议和上层应用。 
+  英特尔® 边缘洞见平台 (Intel®Edge Insights for Industrial) 是基于模块化设计、微服务架构、容器化部署的软件框架。实现了边缘侧数据连接，数据分析以及边云协同等功能。支持视频，图像和时序数据并提供了提取、存储、分析推理和可视化等基础功能模块，各模块通过数据总线进行通讯。EII 支持 [OPCUA](https://www.emqx.com/zh/blog/opc-ua-protocol), MQTT, ZMQ, Restful 等通用协议，同时也灵活的支持用户接入定制化协议和上层应用。 
 
   EII 集成了基于深度学习优化的工具套件 Intel®OpenVINO™，用户可以调用基于 X86平台优化的算子库CVOI 和AI 参考算法，也可以加载第三方算法并灵活利用Intel®OpenVINO™，Intel®oneAPI，Intel® Deep Learning Streamer 等工具更好更快的开发和部署解决方案。EII 提供了一个优化的框架，可以支持边缘的多个应用程序和用例，实现更高的基于英特尔®架构优化的人工智能推理性能。
 

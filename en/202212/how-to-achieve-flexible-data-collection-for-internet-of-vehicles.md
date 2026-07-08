@@ -29,7 +29,7 @@ To address the shortcomings of the fixed data collection process, we need a flex
 - The ability to efficiently transmit back collected data under weak network conditions.
 - Lightweight and efficient enough so that it can run on a wide range of vehicles, including those with limited vehicle-device resources.
 
-Based on a large number of IoV user cases and experiences, EMQ has introduced a Vehicle-Cloud System Solution based on eKuiper and QUIC protocols that realized easy-to-deploy and portable flexible data collection for Internet of Vehicles. The solution architecture is shown in the figure below.
+Based on a large number of IoV user cases and experiences, EMQ has introduced a Vehicle-Cloud System Solution based on eKuiper and [QUIC](https://www.emqx.com/en/blog/quic-protocol-the-features-use-cases-and-impact-for-iot-iov) protocols that realized easy-to-deploy and portable flexible data collection for Internet of Vehicles. The solution architecture is shown in the figure below.
 
 In this solution, we use [eKuiper, the stream processing at the IoT Edge](https://ekuiper.org) to implement flexible data collect on in-vehicle terminals; and adopt [EMQX, the large-scale distributed IoT MQTT broker](https://www.emqx.com/en/products/emqx) to realize the connection, movement and processing of the collected data as well as the control command interaction of the integrated vehicle-cloud. In previous articles on the IoV, we have introduced[ the architecture design of Internet of Vehicles messaging platform based on EMQX](https://www.emqx.com/en/blog/mqtt-messaging-platform-for-internet-of-vehicles) in detail. So, we will not repeat it in this article. Next, this article will use eKuiper to introduce how to achieve flexible data collection for IoV.
 
@@ -141,7 +141,7 @@ The eKuiper rules are divided into two parts. The SQL is used to write the busin
 
 1. Acquisition of the specified signal
 
-   This rule can collect engine signals in real time and send them to MQTT topic `collect` . The rule defines the data points to be collected by the SELECT clause in the SQL statement.
+   This rule can collect engine signals in real time and send them to [MQTT topic](https://www.emqx.com/en/blog/advanced-features-of-mqtt-topics) `collect` . The rule defines the data points to be collected by the SELECT clause in the SQL statement.
 
    ```
    {

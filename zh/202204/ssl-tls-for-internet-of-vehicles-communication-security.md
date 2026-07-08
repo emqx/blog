@@ -72,7 +72,7 @@ MQTTS 协议是在 [MQTT 协议](https://www.emqx.com/zh/mqtt-guide)的基础上
 
 ![车联网安全](https://assets.emqx.com/images/ae6d7f4cf72a1aa4cb16af4be388c565.png)
 
-车联网平台安全通信交互流程，一般是将车机端申请终端证书，下载并完整安装后通过 MQTTS 安全协议与云端平台请求建立安全连接。在云端我们可以选择在云厂商的负载均衡产品、基于 Nginx/HAProxy 自行搭建的 LB 层或是 MQTT Broker 层进行认证鉴权，同时通过 proxy_protocol v2 将车机端的 ID 信息、用户名密码及证书的 CN/SN 等信息通过调用 PKI/CA 统一认证接口进行唯一性认证，实现一机一密或一型一密的安全认证。
+车联网平台安全通信交互流程，一般是将车机端申请终端证书，下载并完整安装后通过 MQTTS 安全协议与云端平台请求建立安全连接。在云端我们可以选择在云厂商的负载均衡产品、基于 Nginx/HAProxy 自行搭建的 LB 层或是 [MQTT Broker](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison) 层进行认证鉴权，同时通过 proxy_protocol v2 将车机端的 ID 信息、用户名密码及证书的 CN/SN 等信息通过调用 PKI/CA 统一认证接口进行唯一性认证，实现一机一密或一型一密的安全认证。
 
 ## MQTTS 通信中单、双向认证的配置方式
 

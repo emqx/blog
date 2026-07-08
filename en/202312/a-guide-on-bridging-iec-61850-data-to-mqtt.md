@@ -1,6 +1,6 @@
 Our [previous blog](https://www.emqx.com/en/blog/iec-61850-protocol) introduced the IEC 61850 protocol, which is widely used in the power industry. This blog will explore the combination of IEC 61850 with [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt), achieving data abstraction and integration with IEC 61850 and seamless data exchange using MQTT.
 
-We will demonstrate using Neuron to collect data from the LibIEC61850 simulator, uploading the collected data to a locally-built EMQX MQTT Broker (`mqtt://192.168.10.174:1883`), and finally using the MQTT client tool, MQTTX’s subscription topic feature to see how the data has changed.
+We will demonstrate using Neuron to collect data from the LibIEC61850 simulator, uploading the collected data to a locally-built EMQX [MQTT Broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) (`mqtt://192.168.10.174:1883`), and finally using the [MQTT client](https://www.emqx.com/en/blog/mqtt-client-tools) tool, MQTTX’s subscription topic feature to see how the data has changed.
 
 | **Application**            | **IP address** | **Port** |
 | :------------------------- | :------------- | :------- |
@@ -133,7 +133,7 @@ Go to the list of subscription groups and click **Add Subscription**.
 
 - South Device: Drop-down box to select a created southbound device. For example, iec61850-174;
 - Group: Drop-down box to select the group to subscribe to, e.g., group-0;
-- Topic: The MQTT topic, which in this case defaults to /neuron/MQTT/group-0. Next, subscribe to this topic in MQTTX and receive messages.
+- Topic: The [MQTT topic](https://www.emqx.com/en/blog/advanced-features-of-mqtt-topics), which in this case defaults to /neuron/MQTT/group-0. Next, subscribe to this topic in MQTTX and receive messages.
 
 ## Receive the Data Using MQTTX
 

@@ -10,11 +10,11 @@ This blog aims to provide an in-depth examination of MQTT and HTTP within the Io
 
 [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) is a lightweight messaging protocol that operates on a publish/subscribe model, specifically designed to address the intricate and unreliable network conditions of IoT devices, as well as their constrained memory, storage, and processing power. It enables networked devices to receive real-time, reliable messaging services with minimal coding requirements.
 
-In a standard MQTT setup, all clients needing to communicate (typically hardware devices and application services) maintain a continuous TCP connection with a single MQTT server (MQTT Broker). There’s no need for a direct link between the message-sending client (publisher) and the message-receiving client (subscriber); the MQTT server handles the message routing and dissemination.
+In a standard MQTT setup, all clients needing to communicate (typically hardware devices and application services) maintain a continuous TCP connection with a single MQTT server ([MQTT Broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison)). There’s no need for a direct link between the message-sending client (publisher) and the message-receiving client (subscriber); the MQTT server handles the message routing and dissemination.
 
 The cornerstone of this process is the concept of **Topic**. Topics serve as the basis for MQTT’s message routing and resemble URL paths, using `/` for hierarchical structuring, such as `sensor/1/temperature`. Subscribers subscribe to topics they’re interested in, and when a publisher posts a message to that topic, it’s forwarded according to the topic’s structure.
 
-An MQTT topic can be subscribed to by multiple subscribers, and the server relays topic-specific messages to all of them; likewise, a topic can have several publishers, with messages forwarded in the sequence they arrive. A client can function both as a publisher and a subscriber, facilitating communication of messages based on topics, thereby enabling MQTT to support one-to-one, many-to-one, and one-to-many bidirectional communications.
+An [MQTT topic](https://www.emqx.com/en/blog/advanced-features-of-mqtt-topics) can be subscribed to by multiple subscribers, and the server relays topic-specific messages to all of them; likewise, a topic can have several publishers, with messages forwarded in the sequence they arrive. A client can function both as a publisher and a subscriber, facilitating communication of messages based on topics, thereby enabling MQTT to support one-to-one, many-to-one, and one-to-many bidirectional communications.
 
 
 
@@ -146,7 +146,7 @@ These variances bear significant implications on their applicability within IoT 
 
 ## Another Thought: Integrating MQTT with HTTP
 
-We've explored which protocol might be best for IoT devices. In reality, complex IoT applications often involve a mix of hardware, clients, and business processes. MQTT and HTTP, as two of the most widely used protocols in IoT and the broader internet, can complement each other in many scenarios to enhance system efficiency and flexibility.
+We've explored which protocol might be best for IoT devices. In reality, complex IoT applications often involve a mix of hardware, clients, and business processes. MQTT and HTTP, as two of the most widely used [protocols in IoT](https://www.emqx.com/en/blog/iot-protocols-mqtt-coap-lwm2m) and the broader internet, can complement each other in many scenarios to enhance system efficiency and flexibility.
 
 For instance, in a typical IoV application, HTTP is well-suited for user interactions. Imagine a user controlling a car in the garage via an "open door" button in an app. This action isn't a two-way communication between the app and the server, and using HTTP allows for more complex and flexible security and permission checks. On the other hand, server-to-vehicle communication needs real-time, bidirectional communication: the vehicle must respond to user actions promptly.
 

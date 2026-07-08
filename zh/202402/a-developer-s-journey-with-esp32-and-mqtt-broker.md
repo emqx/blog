@@ -1,6 +1,6 @@
 作为一名后端开发人员，我经常需要同时运行多个 Jetbrains IDE （集成开发环境），所以经常面临笔记本电脑过热问题。我曾尝试过各种散热方法，从传统的风扇到更先进的半导体冷却系统，但这些方法都带来了新的问题，如噪音和耗电等。
 
-因此，我设计了一个智能的液冷散热解决方案：通过引入外部水冷系统、利用微控制器 ESP32、MQTT 服务器 EMQX Cloud Serverless 以及容器化的部署平台 [Fly.io](http://fly.io/) 来实时监测和控制水温。以下是该解决方案的详述，希望能为其他物联网开发者带来灵感：
+因此，我设计了一个智能的液冷散热解决方案：通过引入外部水冷系统、利用微控制器 ESP32、[MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 服务器 EMQX Cloud Serverless 以及容器化的部署平台 [Fly.io](http://fly.io/) 来实时监测和控制水温。以下是该解决方案的详述，希望能为其他物联网开发者带来灵感：
 
 ![物联网智能液冷散热系统](https://assets.emqx.com/images/01e79e675c0348f3a0f885042077b543.png)
 
@@ -12,7 +12,7 @@
 
 - **ESP32：**在多种选择中，ESP32 微控制器因其集成了 Wi-Fi 和蓝牙功能，以经济高效的特点而脱颖而出。这款芯片为物联网项目提供了强大的性能支持，同时成本可控又不牺牲功能性。
 - **DS18B20 水温传感器：**对于温度监控，DS18B20 是我的首选，因为它提供了精确的数字温度读数和出色的耐水性能。这款传感器与 ESP32 可协同工作，确保了水温监控系统的准确性和稳定性。
-- **EMQX Cloud Serverless MQTT Broker：**在众多消息中间件中，[EMQX Cloud](https://www.emqx.com/zh/cloud) 因其高性能、可靠性以及 Serverless MQTT 服务在处理大量并发连接和消息路由方面的卓越表现而受到青睐，这些特性对于确保设备间通信的顺畅至关重要。
+- **EMQX Cloud Serverless [MQTT Broker](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison)：**在众多消息中间件中，[EMQX Cloud](https://www.emqx.com/zh/cloud) 因其高性能、可靠性以及 Serverless MQTT 服务在处理大量并发连接和消息路由方面的卓越表现而受到青睐，这些特性对于确保设备间通信的顺畅至关重要。
 - **Python 和 Flask：**选择 Python 是因为它的表达力强且库函数丰富，Flask 则轻量级且高度灵活，能适应快速开发和部署的需求，这对于迅速实现项目原型至关重要。
 - [Fly.io](http://fly.io/)：Fly.io 的全球分布式边缘托管服务能够将容器转换为微虚拟机，提供了一个独特的平台。这不仅加快了应用的部署速度，还大大减少了数据传输的延迟，为用户提供了接近实时的体验。
 

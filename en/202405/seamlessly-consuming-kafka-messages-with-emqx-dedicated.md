@@ -52,7 +52,7 @@ It’s recommended to choose the same region as your Kafka cluster. For this tut
 
 #### 2. Add a Credential for the MQTT Connection
 
-When the deployment is created, navigate to ‘Access Control’ in the deployment console, then click *Authentication* in the submenu. Click the ‘Add’ button on the right and provide a username and password for the MQTT connection. For this example, we will use "emqx" as the username and "public" as the password for the MQTT client connection.
+When the deployment is created, navigate to ‘Access Control’ in the deployment console, then click *Authentication* in the submenu. Click the ‘Add’ button on the right and provide a username and password for the [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) connection. For this example, we will use "emqx" as the username and "public" as the password for the MQTT client connection.
 
 ![Add a Credential](https://assets.emqx.com/images/903e50534f400f45034039bd7d968086.png)
 
@@ -112,7 +112,7 @@ FROM
 
 #### 3. Add an Action (sink)
 
-Click ‘Next’ to add an action as a sink to output the processed messages by republishing the messages to an MQTT topic.  
+Click ‘Next’ to add an action as a sink to output the processed messages by republishing the messages to an [MQTT topic](https://www.emqx.com/en/blog/advanced-features-of-mqtt-topics).  
 
 - **Topic**: The MQTT topic to forward to. In this tutorial, enter `sub/${topic}`, meaning to add a `sub/` prefix to the original topic for forwarding. For example, if the original message topic is `t/1`, the forwarded topic would be `sub/t/1`.
 - **QoS**: Message publish QoS, choose from `0`, `1`, `2`, or `${qos}`, or enter placeholders to set QoS from other fields. Here, choose `${qos}` to follow the QoS of the original message.

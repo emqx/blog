@@ -1,4 +1,4 @@
-> XMeter 是 EMQ 基于 Apache 开源项目提供的 MQTT 性能测试云服务，支持千万量级 MQTT 模拟连接与消息吞吐性能测试，并可为 IoT 应用扩展更丰富的测试场景与协议支持。
+> XMeter 是 EMQ 基于 Apache 开源项目提供的 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 性能测试云服务，支持千万量级 MQTT 模拟连接与消息吞吐性能测试，并可为 IoT 应用扩展更丰富的测试场景与协议支持。
 
 本月，XMeter 团队主要聚焦于企业版 4.0.0 版本的开发，新的 4.0 版本最突出的特性是测试机资源在 Kubernetes 集群上的部署，此外，还将提升管理员对系统配置项进行更改操作的易用性。同时，3.2.x 维护版本也在持续的迭代开发中。
 

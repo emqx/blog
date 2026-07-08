@@ -1,22 +1,22 @@
 The Industrial Edge Data Hub NeuronEX 3.3.0 is now officially available! 
 
-This update brings a host of enhancements and improvements in data collection, analysis, and management, further bolstering NeuronEX’s capabilities in the IIoT sphere.
+This update brings a host of enhancements and improvements in data collection, analysis, and management, further bolstering NeuronEX’s capabilities in the [IIoT](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges) sphere.
 
 ## New Drivers
 
-- **Modbus ASCII**: A new Modbus ASCII southbound driver has been added. This variant of the Modbus protocol encodes data packets using ASCII characters. [Modbus ASCII | NeuronEX Documentation](https://docs.emqx.com/en/neuronex/latest/configuration/south-devices/modbus-ascii/modbus-ascii.html)
+- **Modbus ASCII**: A new Modbus ASCII southbound driver has been added. This variant of the [Modbus protocol](https://www.emqx.com/en/blog/modbus-protocol-the-grandfather-of-iot-communication) encodes data packets using ASCII characters. [Modbus ASCII | NeuronEX Documentation](https://docs.emqx.com/en/neuronex/latest/configuration/south-devices/modbus-ascii/modbus-ascii.html)
 - **XINJE Modbus RTU**: The XINJE Modbus RTU southbound driver is a new addition, designed to collect data from XINJE PLCs, supporting the XC/XD/XL series. [XINJE Modbus RTU | NeuronEX Documentation](https://docs.emqx.com/en/neuronex/latest/configuration/south-devices/modbus-xinje-rtu/modbus-xinje-rtu.html)
 - **CODESYS V3 TCP**: The CODESYS V3 southbound driver has been added, enabling access to PLCs and motion control systems built on the CODESYS V3 platform through TCP protocol. [CODESYS V3 TCP | NeuronEX Documentation](https://docs.emqx.com/en/neuronex/latest/configuration/south-devices/codesys3/codesys3.html)
 - **IEC 60870-5-101**: A new IEC 60870-5-101 southbound driver has been added. It is an international standard for communication protocols between electric power substation control and monitoring systems. [IEC60870-5-101 | NeuronEX Documentation](https://docs.emqx.com/en/neuronex/latest/configuration/south-devices/iec-101/iec-101.html)
 - **IEC 60870-5-102**: The IEC 60870-5-102 southbound driver is now part of the suite, setting the standard for communication protocols in power system automation, particularly for remote communications involving measurement and control devices. [IEC60870-5-102 | NeuronEX Documentation](https://docs.emqx.com/en/neuronex/latest/configuration/south-devices/iec-102/iec-102.html)
 - **IEC 60870-5-103**: A new IEC 60870-5-103 southbound driver has been added, establishing standards for data exchange between protection and control devices within power system automation. [IEC60870-5-103 | NeuronEX Documentation](https://docs.emqx.com/en/neuronex/latest/configuration/south-devices/iec-103/iec-103.html)
-- **AWS IoT**: The AWS IoT Core northbound application has been added, providing a secure, bidirectional data channel for industrial devices to connect with the AWS cloud via MQTT. [AWS IoT Core | NeuronEX Documentation](https://docs.emqx.com/en/neuronex/latest/configuration/north-apps/aws-iot/overview.html)
+- **AWS IoT**: The [AWS IoT Core](https://www.emqx.com/en/blog/understanding-aws-iot-core) northbound application has been added, providing a secure, bidirectional data channel for industrial devices to connect with the AWS cloud via [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt). [AWS IoT Core | NeuronEX Documentation](https://docs.emqx.com/en/neuronex/latest/configuration/north-apps/aws-iot/overview.html)
 - **Azure IoT**: The Azure IoT Hub northbound application has been added, facilitating easy integration with Azure IoT Hub. [Azure IoT | NeuronEX Documentation](https://docs.emqx.com/en/neuronex/latest/configuration/north-apps/azure-iot/overview.html)
 - **CAN**: Integration with CAN bus data sources is now possible, allowing for the reception and structured parsing of data from CAN protocol buses. [CAN | NeuronEX Documentation](https://docs.emqx.com/en/neuronex/latest/streaming-processing/can.html)
 
 ## Data Collection Enhancements
 
-- **OPC UA Driver Supports Tag Browser**: The OPC UA driver now supports tags browser, enabling users to scan and query data tags information from the OPC UA Server on the **Node Detail** page.
+- **[OPC UA](https://www.emqx.com/en/blog/opc-ua-protocol) Driver Supports Tag Browser**: The OPC UA driver now supports tags browser, enabling users to scan and query data tags information from the OPC UA Server on the **Node Detail** page.
 
   ![image.png](https://assets.emqx.com/images/1d53ac6bcdca2173009ace3964e634a8.png)
 

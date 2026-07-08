@@ -1,4 +1,4 @@
-近日，全球领先的物联网数据基础设施软件供应商 EMQ 映云科技为其旗下全托管 [MQTT 消息云服务产品 EMQX Cloud](https://www.emqx.com/zh/cloud) 推出了 BYOC（Bring Your Own Cloud）版本，该版本将允许用户在其现有的云基础架构环境中部署 MQTT 消息服务。用户不仅可以通过 EMQ 团队提供的专业运维管理服务**享受云计算带来的便利，同时还能获得强大的数据合规与安全保障。**
+近日，全球领先的物联网数据基础设施软件供应商 EMQ 映云科技为其旗下全托管 [MQTT 消息云服务产品 EMQX Cloud](https://www.emqx.com/zh/cloud) 推出了 BYOC（Bring Your Own Cloud）版本，该版本将允许用户在其现有的云基础架构环境中部署 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 消息服务。用户不仅可以通过 EMQ 团队提供的专业运维管理服务**享受云计算带来的便利，同时还能获得强大的数据合规与安全保障。**
 
 EMQX Cloud BYOC 为对数据隐私控制及定制化云服务有更高需求的企业提供了一种理想的解决方案，用户可以充分借助 EMQX 物联网 MQTT 消息服务器的强大能力，在自己的云环境中构建更加安全、高度可扩展的 MQTT 云部署，满足自身的物联网业务需求。
 

@@ -151,7 +151,7 @@ The success of the project relied on making this granular edge data accessible t
 
 ### Defining the Topic Structure for Cycle Data
 
-Unlike continuous streaming, "Cycle Data" is discrete. The customer organized their MQTT topics to reflect the production hierarchy.
+Unlike continuous streaming, "Cycle Data" is discrete. The customer organized their [MQTT topics](https://www.emqx.com/en/blog/advanced-features-of-mqtt-topics) to reflect the production hierarchy.
 
 **Topic Structure:** `Enterprise/Site/Area/Line/Cell/Asset/Function`
 
@@ -201,7 +201,7 @@ To fully document this setup, the architecture diagram must include:
 - **The Physical Layer:** Hydraulic cylinders and Pressure Transducers (4-20mA).
 - **The Edge Layer:** EMQX Neuron node converting Analog signals to Digital Streams.
 - **The Context Layer:** EMQX Neuron pulling "Job ID" from the PLC to enrich the payload.
-- **The Broker:** EMQX Enterprise managing the UNS topics.
+- **The Broker:** [EMQX Enterprise](https://www.emqx.com/en/products/emqx) managing the UNS topics.
 - **The Consumer Layer:**
   - **MES:** Records the "Pass/Fail" for the specific Serial Number.
   - **Maintenance App:** Subscribes to `.../Cycle/Data` where `seal_integrity_status != PASS`.

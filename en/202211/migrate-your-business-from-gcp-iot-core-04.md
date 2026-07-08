@@ -145,7 +145,7 @@ HMSET ${client_id} ${up_timestamp} ${temp_hum}
 
 At this point, I hope you have successfully forwarded the data to GCP and integrated EMQX Cloud with other cloud services you have.
 
-With this series of tutorials, you can enjoy a smooth migration of your business from GCP IoT Core to its alternative, EMQX Cloud. EMQX Cloud also provides some other excellent features, such as Shadow Service which implements IoT applications quickly through Topics and APIs. Readers are welcome to explore more in your IoT development journey with EMQX Cloud. 
+With this series of tutorials, you can enjoy a smooth migration of your business from GCP [IoT Core](https://www.emqx.com/en/blog/understanding-aws-iot-core) to its alternative, EMQX Cloud. EMQX Cloud also provides some other excellent features, such as Shadow Service which implements IoT applications quickly through Topics and APIs. Readers are welcome to explore more in your IoT development journey with EMQX Cloud. 
 
 
 

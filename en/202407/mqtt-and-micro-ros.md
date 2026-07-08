@@ -24,7 +24,7 @@ The MQTT protocol, known for its lightweight, reliability, and scalability, is o
 
 ## Demo Introduction
 
-This blog will use a simple demo to show how to deploy a system consisting of ROS 2 nodes and micro-ROS nodes from scratch. We will use the MQTT client tool [MQTTX](https://mqttx.app/) to receive messages about the LED status from the micro-ROS node and send MQTT messages to the micro-ROS node to change the LED hue, saturation, and brightness.
+This blog will use a simple demo to show how to deploy a system consisting of ROS 2 nodes and micro-ROS nodes from scratch. We will use the [MQTT client](https://www.emqx.com/en/blog/mqtt-client-tools) tool [MQTTX](https://mqttx.app/) to receive messages about the LED status from the micro-ROS node and send MQTT messages to the micro-ROS node to change the LED hue, saturation, and brightness.
 
 We will use an ESP32-S3 development board to run the micro-ROS node, with FreeRTOS as the underlying RTOS. Messages will be exchanged between the micro-ROS node and the ROS 2 node via the micro-ROS Agent.
 
@@ -32,7 +32,7 @@ In this demo, the responsibilities of the ROS 2 master node are greatly simplifi
 
 The ROS 2 master node only implements the conversion of DDS messages between our custom format and JSON strings. Therefore, this ROS 2 master node is named converter. This simplification of responsibilities reduces the complexity of the sample code, allowing us to focus more on the overall process.
 
-Finally, we need an MQTT server to serve the messages between the ROS 2 node and the MQTTX client. Here, we choose the Serverless edition of the EMQX MQTT platform. [EMQX Serverless](https://www.emqx.com/en/cloud/serverless-mqtt) offers a free quota of 1 million session minutes per month, making it ideal for validating small demos like this.
+Finally, we need an [MQTT server](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) to serve the messages between the ROS 2 node and the MQTTX client. Here, we choose the Serverless edition of the EMQX MQTT platform. [EMQX Serverless](https://www.emqx.com/en/cloud/serverless-mqtt) offers a free quota of 1 million session minutes per month, making it ideal for validating small demos like this.
 
 ![ros to emqx serverless](https://assets.emqx.com/images/9bc84345521d5af89d8ab78edf81a319.png)
 
@@ -277,7 +277,7 @@ First, we need to complete the build of `ros2_demo` in the ROS 2 workspace. Plea
 
    ![default configuration](https://assets.emqx.com/images/400b22e2b9079f81b1bd0b7f234d01e6.png)
 
-   In the default configuration, the `mqtt_client` node converts DDS messages from the `converter` node into MQTT messages and publishes them to the MQTT topic `stat/led/hsb`; commands received from the MQTT topic `cmnd/led/hsb` are converted into DDS messages and forwarded to the `converter` node:
+   In the default configuration, the `mqtt_client` node converts DDS messages from the `converter` node into MQTT messages and publishes them to the [MQTT topic](https://www.emqx.com/en/blog/advanced-features-of-mqtt-topics) `stat/led/hsb`; commands received from the MQTT topic `cmnd/led/hsb` are converted into DDS messages and forwarded to the `converter` node:
 
    ![image.png](https://assets.emqx.com/images/08137711181a2cfbb3c3d643adac9f6f.png)
 

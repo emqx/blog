@@ -1,6 +1,6 @@
-Welcome to the fourth article of the [MQTT 5.0 Packet Series](https://www.emqx.com/en/blog/introduction-to-mqtt-control-packets). In the previous article, we introduced the [SUBSCRIBE and UNSUBSCRIBE packets](https://www.emqx.com/en/blog/mqtt-5-0-control-packets-03-subscribe-unsubscribe) in MQTT 5.0. Now, we will introduce the control packets used to maintain the connection: PINGREQ and PINGRESP.
+Welcome to the fourth article of the [MQTT 5.0 Packet Series](https://www.emqx.com/en/blog/introduction-to-mqtt-control-packets). In the previous article, we introduced the [SUBSCRIBE and UNSUBSCRIBE packets](https://www.emqx.com/en/blog/mqtt-5-0-control-packets-03-subscribe-unsubscribe) in [MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5). Now, we will introduce the control packets used to maintain the connection: PINGREQ and PINGRESP.
 
-In addition to the control packets used for connecting, publishing, and subscribing, MQTT also has a type of packet used to simulate heartbeats between the client and server to maintain the connection. They are PINGREQ and PINGRESP packets, which we often call heartbeat packets.
+In addition to the control packets used for connecting, publishing, and subscribing, [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) also has a type of packet used to simulate heartbeats between the client and server to maintain the connection. They are PINGREQ and PINGRESP packets, which we often call heartbeat packets.
 
 The client periodically sends PINGREQ packets to the server, which lets the server know that the connection is good and the client is still active. For each PINGREQ packet received, the server will reply with a PINGRESP packet, so the client can also know that the connection is good and the server is still active.
 
@@ -8,7 +8,7 @@ The client periodically sends PINGREQ packets to the server, which lets the serv
 
 We use [MQTTX CLI](https://mqttx.app/) to initiate a client connection to the [Public MQTT Server](http://broker.emqx.io/). We do not publish messages or subscribe to topics, but we can still see MQTT packets periodically appearing between the client and server in [Wireshark](https://www.wireshark.org/). These packets are the PINGREQ and PINGRESP.
 
-The following command will create a client connection with a Keep Alive of 5 seconds, which allows us to see the client sending the PINGREQ message as soon as possible.
+The following command will create a client connection with a [Keep Alive](https://www.emqx.com/en/blog/mqtt-keep-alive) of 5 seconds, which allows us to see the client sending the PINGREQ message as soon as possible.
 
 ```
  mqttx conn --hostname broker.emqx.io --mqtt-version 5 --keepalive 5

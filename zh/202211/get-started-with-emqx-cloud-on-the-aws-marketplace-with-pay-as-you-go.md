@@ -1,4 +1,4 @@
-近日，全球领先的开源物联网数据基础设施软件供应商 EMQ 旗下的全托管 MQTT 消息云服务 EMQX Cloud 正式上架全球云端事业领导者亚马逊 AWS Marketplace，与国际各大云端软件并列销售。
+近日，全球领先的开源物联网数据基础设施软件供应商 EMQ 旗下的全托管 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 消息云服务 [EMQX Cloud](https://www.emqx.com/zh/cloud) 正式上架全球云端事业领导者亚马逊 AWS Marketplace，与国际各大云端软件并列销售。
 
 在 AWS Marketplace 中即付即用的 EMQX Cloud 的推出，将为开发人员带来简化的订阅体验。亚马逊全球客户可以更快速地通过 AWS Marketplace 选项卡检索到 EMQX 产品项，并通过 AWS Marketplace 控制台实现更加便捷的购买和软件订阅管理。
 

@@ -1,6 +1,6 @@
 [MQTT](https://zh.wikipedia.org/zh-hans/MQTT) 是一种轻量级的、灵活的物联网消息交换和数据传递协议，致力于为 IoT 开发人员实现灵活性与硬件/网络资源的平衡。为了确保通讯安全，通常使用 TLS/SSL 来进行通讯加密。
 
-本文主要介绍如何通过 Android 与 MQTT 进行 TLS/SSL 单向认证和双向认证。
+本文主要介绍如何通过 Android 与 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 进行 TLS/SSL 单向认证和双向认证。
 
 ### 准备
 

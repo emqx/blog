@@ -25,7 +25,7 @@ The ESP32C3, developed by Espressif Systems, is a low-cost, low-power microcontr
 
 ### What is EMQX?
 
-[EMQX](https://www.emqx.com/en/platform) is a scalable [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) designed for large-scale IoT deployments. Supporting MQTT versions 5.0, 3.1.1, and 3.1, as well as MQTT over QUIC, EMQX handles millions of concurrent connections with sub-millisecond latency, ideal for smart cities and industrial IoT [^4].
+[EMQX](https://www.emqx.com/en/platform) is a scalable [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) designed for large-scale IoT deployments. Supporting MQTT versions 5.0, 3.1.1, and 3.1, as well as MQTT over QUIC, EMQX handles millions of concurrent connections with sub-millisecond latency, ideal for smart cities and [industrial IoT](https://www.emqx.com/en/blog/industrial-iot-systems) [^4].
 
 ### What is coreMQTT?
 
@@ -43,7 +43,7 @@ The implementation leverages three open-source libraries:
 
 - **ngtcp2**: A C-based QUIC implementation, used to manage QUIC connections. The ngtcp2_sample.c file, adapted from ngtcp2’s example code, demonstrates client-side QUIC functionality [^6].
 - **wolfSSL**: A lightweight TLS library providing cryptographic operations for QUIC’s security, supporting TLS 1.3 [^7].
-- **coreMQTT**: An MQTT client library from AWS IoT Device SDK, handling MQTT protocol operations over the QUIC transport.
+- **coreMQTT**: An [MQTT client](https://www.emqx.com/en/blog/mqtt-client-tools) library from AWS IoT Device SDK, handling MQTT protocol operations over the QUIC transport.
 
 These libraries were integrated into the ESP-IDF framework, with ngtcp2 wrapped as a component and patched for ESP32C3 compatibility. The project includes files like quic_demo_main.c for core functionality and esp_ev_compat.c for ESP event loop compatibility. The binary size is approximately 1.6 MB (0x16d060 bytes), fitting within a customized app partition of 1.68 MB (0x1a9000 bytes), leaving about 14% free space. Non-standard tweaks, such as disabling TLS certificate verification, were applied to simplify the PoC, but these are not suitable for production.
 
@@ -95,7 +95,7 @@ Our next steps include:
 
 - Optimizing performance and reducing resource consumption.
 - Testing reliability under various network conditions.
-- Exploring MQTT 5.0 features and enhancing security for production.
+- Exploring [MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5) features and enhancing security for production.
 - Incorporating community feedback via GitHub issues at: [GitHub - emqx/ESP32-QUIC: PoC for ESP32 running QUIC client](https://github.com/emqx/ESP32-QUIC).
 
 ## Conclusion

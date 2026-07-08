@@ -69,7 +69,7 @@ mqtt[s]://[user:password@]broker[:port]/topic
 | `user:password` | Optional authentication credentials                          | `admin:secret@`          |
 | `broker`        | Broker hostname                                              | `broker.emqx.io`         |
 | `:port`         | Optional port override                                       | `:1883`, `:8883`         |
-| `/topic`        | MQTT topic for publish/subscribe                             | `/sensor/temperature`    |
+| `/topic`        | [MQTT topic](https://www.emqx.com/en/blog/advanced-features-of-mqtt-topics) for publish/subscribe                             | `/sensor/temperature`    |
 
 The port is optional; curl uses the standard default ports (1883 for `mqtt://`, 8883 for `mqtts://`). You can override them if your broker uses non-standard ports.
 
@@ -170,7 +170,7 @@ mqtt_subscribe() {
 mqtt_subscribe "mqtt://broker.emqx.io/curl/test"
 ```
 
-> **Note:** For production use or complex parsing needs, consider [MQTTX CLI](https://mqttx.app/cli) which provides properly formatted output and full MQTT 5.0 support.
+> **Note:** For production use or complex parsing needs, consider [MQTTX CLI](https://mqttx.app/cli) which provides properly formatted output and full [MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5) support.
 
 ## Step 2: Publish a Message to an MQTT Topic
 
@@ -302,7 +302,7 @@ While curl is excellent for quick tests and scripting, be aware of these limitat
 | :------------------------- | :----------------------------------------------------------- | :------------------------------------------------- |
 | **Binary Output**          | Subscribe output is raw binary (topic-length prefix + topic + payload) | Pipe through parser script or use MQTTX CLI        |
 | **QoS 0 Only**             | curl only supports QoS 0 (fire-and-forget)                   | Use [MQTTX CLI](https://mqttx.app/cli) for QoS 1/2 |
-| **No Wildcards**           | Cannot subscribe to wildcard topics (`+`, `#`)               | Use dedicated MQTT clients                         |
+| **No Wildcards**           | Cannot subscribe to wildcard topics (`+`, `#`)               | Use dedicated [MQTT clients](https://www.emqx.com/en/blog/mqtt-client-tools)                         |
 | **Single Topic**           | One topic per command invocation                             | Script multiple curl calls                         |
 | **No Persistent Sessions** | Cannot maintain session state across connections             | Use client libraries for stateful apps             |
 

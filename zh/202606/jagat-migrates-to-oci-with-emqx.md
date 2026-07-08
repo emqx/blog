@@ -2,7 +2,7 @@
 
 在物联网与实时应用的平台选型中，云服务商与数据中间件的深度协同，已逐步成为企业级客户评估的关键考量，直接影响架构的稳定性、合规效率与长期运维成本。
 
-近日，全球领先的移动社交平台 Jagat 完成了一项重要的基础设施战略升级：将底层云架构从现有的某全球云服务提供商，迁移至 Oracle Cloud Infrastructure（OCI），并继续选择 EMQX 作为其核心 MQTT 数据平台。
+近日，全球领先的移动社交平台 Jagat 完成了一项重要的基础设施战略升级：将底层云架构从现有的某全球云服务提供商，迁移至 Oracle Cloud Infrastructure（OCI），并继续选择 EMQX 作为其核心 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 数据平台。
 
 这一决策有力印证了 EMQ 与 OCI 在服务大规模、高要求的企业级客户上的技术价值。
 
@@ -51,7 +51,7 @@ EMQX 与 OCI 深度协同，为 Jagat 的战略迁移带来了决定性的优势
 
 - **全托管运维，聚焦业务创新**
 
-  EMQX 能够提供具备企业级可靠性、可扩展性和可观测性的全托管服务。Jagat 的技术团队无需再投入资源维护 MQTT Broker 集群，而是将精力集中在核心业务——为用户打造极致的社交地图体验。
+  EMQX 能够提供具备企业级可靠性、可扩展性和可观测性的全托管服务。Jagat 的技术团队无需再投入资源维护 [MQTT Broker](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison) 集群，而是将精力集中在核心业务——为用户打造极致的社交地图体验。
 
 ## OCI + EMQX：开启全球化新篇章
 

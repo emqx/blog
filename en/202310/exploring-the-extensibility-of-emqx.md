@@ -28,7 +28,7 @@ But, the association isn't eternal. When the plugin application shuts down, it s
 
 Broadly speaking, there are three event categories that beckon the callbacks:
 
-1. **Client Events**: These encompass the stages of the MQTT connection lifecycle. For instance, the receipt of a CONNECT packet triggers callbacks associated with the `client.connect` hook point.
+1. **Client Events**: These encompass the stages of the [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) connection lifecycle. For instance, the receipt of a CONNECT packet triggers callbacks associated with the `client.connect` hook point.
 2. **Session Events**: This covers the various stages of an MQTT session's life—from its birth to its eventual termination.
 3. **Messaging Events**: These delve into the MQTT message delivery journey, such as when a PUBLISH packet arrives or post the dispatch of a PUBACK to a client.
 

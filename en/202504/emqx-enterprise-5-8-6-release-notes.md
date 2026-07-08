@@ -1,4 +1,4 @@
-We’re thrilled to announce the release of **EMQX Enterprise 5.8.6**, the latest iteration of the world’s most scalable MQTT platform, now available. Let’s explore what’s new with version 5.8.6—and catch you up on the exciting features we’ve introduced from v5.8.1 to v5.8.5, because there’s a lot to unpack since our last chat!
+We’re thrilled to announce the release of **[EMQX Enterprise](https://www.emqx.com/en/products/emqx) 5.8.6**, the latest iteration of the world’s most scalable [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) platform, now available. Let’s explore what’s new with version 5.8.6—and catch you up on the exciting features we’ve introduced from v5.8.1 to v5.8.5, because there’s a lot to unpack since our last chat!
 
 ## Highlights from v5.8.1 to v5.8.6
 
@@ -31,7 +31,7 @@ Now, `etc/base.hocon` acts as the base layer in a clearer precedence order (envi
 
 ### Optimized Dashboard Experience
 
-The EMQX Dashboard has evolved across v5.8.1 to v5.8.6, delivering a more intuitive and powerful interface for managing your MQTT broker. Here are some major enhancements:
+The EMQX Dashboard has evolved across v5.8.1 to v5.8.6, delivering a more intuitive and powerful interface for managing your [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison). Here are some major enhancements:
 
 #### Usability Improvements
 
@@ -55,9 +55,9 @@ These upgrades save time, boost operational clarity, and make EMQX adaptable to 
 
 We’ve added a `connected_at` timestamp to the `$events/client_disconnected` event payload. This lets you track when a client’s session originally started, preventing outdated disconnect events from messing up session state—especially handy for devices on shaky networks with frequent reconnects.
 
-**MQTT over QUIC (**[**#14583**](https://github.com/emqx/emqx/pull/14583) **and** [**#14597**](https://github.com/emqx/emqx/pull/14597)**)**
+**[MQTT over QUIC](https://www.emqx.com/en/blog/mqtt-over-quic) (**[**#14583**](https://github.com/emqx/emqx/pull/14583) **and** [**#14597**](https://github.com/emqx/emqx/pull/14597)**)**
 
-You can now use a special setting to reveal security details for debugging with tools like Wireshark, and we’ve accelerated connection closures by promptly halting incoming data while still transmitting the `MQTT.DISCONNECT` packet, reducing delays from unresponsive devices. These changes make MQTT over QUIC more efficient and reliable for real-world IoT use.
+You can now use a special setting to reveal security details for debugging with tools like Wireshark, and we’ve accelerated connection closures by promptly halting incoming data while still transmitting the `MQTT.DISCONNECT` packet, reducing delays from unresponsive devices. These changes make MQTT over [QUIC](https://www.emqx.com/en/blog/quic-protocol-the-features-use-cases-and-impact-for-iot-iov) more efficient and reliable for real-world IoT use.
 
 **Enhanced Connection Rate Limiter for Improved System Resilience (**[**#14219**](https://github.com/emqx/emqx/pull/14219)**)**
 

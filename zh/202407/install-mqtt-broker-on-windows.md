@@ -32,7 +32,7 @@ NanoMQ 主要具有以下特性：
 
 使用 `nanomq start --conf C:\nanomq\config\nanomq.conf` 启动 NanoMQ。其中` C:\nanomq\config\nanomq.conf` 为 NanoMQ 配置文件的地址，配置文件示例可以在解压后文件夹中的` config` 目录下找到。NanoMQ 的详细配置说明请参见[官方文档](https://nanomq.io/docs/zh/latest/config-description/introduction.html)。
 
-接下来使用 NanoMQ 的 MQTT 客户端工具 `nanomq_cli` 来进行 NanoMQ 的使用说明。`nanomq_cli` 同样可以在 `bin` 目录下找到。
+接下来使用 NanoMQ 的 [MQTT 客户端](https://www.emqx.com/zh/blog/mqtt-client-tools)工具 `nanomq_cli` 来进行 NanoMQ 的使用说明。`nanomq_cli` 同样可以在 `bin` 目录下找到。
 
 ![nanomq_cli](https://assets.emqx.com/images/0aac3562ec1e83fe0e5f87d2b5dabfbe.png)
 

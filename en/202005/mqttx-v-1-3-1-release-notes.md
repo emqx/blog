@@ -1,4 +1,4 @@
-[MQTTX](https://mqttx.app/) is a cross-platform **MQTT 5.0** client tool open-sourced by [EMQ](https://www.emqx.com/en), supports macOS, Linux, Windows. The user interface of MQTTX simplifies the operating logic with the help of the chat software format. Users can quickly create multiple simultaneous online **MQTT client** to facilitate testing the connection/publishing/subscribing of MQTT / TCP, MQTT / TLS, MQTT / WebSocket, and other **MQTT protocol** features.
+[MQTTX](https://mqttx.app/) is a cross-platform **[MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5)** client tool open-sourced by [EMQ](https://www.emqx.com/en), supports macOS, Linux, Windows. The user interface of MQTTX simplifies the operating logic with the help of the chat software format. Users can quickly create multiple simultaneous online **[MQTT client](https://www.emqx.com/en/blog/mqtt-client-tools)** to facilitate testing the connection/publishing/subscribing of MQTT / TCP, MQTT / TLS, MQTT / WebSocket, and other **[MQTT protocol](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt)** features.
 
 MQTTX website: [https://mqttx.app](https://mqttx.app/)
 

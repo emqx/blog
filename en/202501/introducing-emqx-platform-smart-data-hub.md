@@ -13,7 +13,7 @@ In the modern IoT landscape, ensuring data consistency and compatibility is not 
 - Transforming messages to meet various backend system requirements
 - Managing schemas across their entire IoT infrastructure
 
-Smart Data Hub addresses these challenges head-on by providing a unified solution for managing your MQTT data pipeline.
+Smart Data Hub addresses these challenges head-on by providing a unified solution for managing your [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) data pipeline.
 
 ## What's Inside Smart Data Hub?
 
@@ -49,7 +49,7 @@ Smart Data Hub brings a range of valuable benefits to your IoT deployments:
 
 ## Who Can Benefit?
 
-Smart Data Hub is currently an add-on module for EMQX Platform Dedicated and Premium plans. It provides the most benefits to organizations managing large-scale IoT data, dealing with complex data formats, or operating compliance-sensitive applications such as healthcare, automotive, and smart manufacturing.
+Smart Data Hub is currently an add-on module for EMQX Platform Dedicated and Premium plans. It provides the most benefits to organizations managing large-scale IoT data, dealing with complex data formats, or operating compliance-sensitive applications such as healthcare, automotive, and [smart manufacturing](https://www.emqx.com/en/blog/the-smart-manufacturing-revolution).
 
 If you’re on our Dedicated or Premium plan, you can enable Smart Data Hub directly from your deployment settings. If you’re not on one of these plans but would like to explore Smart Data Hub, [please contact us](mailto:cloud-support@emqx.io) to learn about our upgrade options.
 

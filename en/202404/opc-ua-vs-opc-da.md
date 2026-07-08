@@ -45,7 +45,7 @@ Cons:
 
 Compared to OPC DA, OPC UA introduces a richer data model with support for complex data types and semantic descriptions. It also provides built-in security mechanisms such as authentication, authorization, and encrypted transmission. In addition, OPC UA supports multiple transport protocols such as TCP, HTTPS, WebSocket, etc.
 
-With its outstanding performance and flexibility, OPC UA has been widely used in industrial Internet of Things (IIoT), smart manufacturing, remote equipment monitoring, and other fields. For example, in smart factories, OPC UA can achieve seamless data integration from shop floor equipment to upper-level systems such as MES, ERP, and more.
+With its outstanding performance and flexibility, OPC UA has been widely used in [industrial Internet of Things](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges) (IIoT), [smart manufacturing](https://www.emqx.com/en/blog/the-smart-manufacturing-revolution), remote equipment monitoring, and other fields. For example, in [smart factories](https://www.emqx.com/en/blog/what-is-a-smart-factory-key-components-4-levels-of-evolution), OPC UA can achieve seamless data integration from shop floor equipment to upper-level systems such as MES, ERP, and more.
 
 ### Pros and Cons of OPC UA
 

@@ -1,6 +1,6 @@
 前不久，Google 宣布其旗下的 GCP IoT Core 即将在 2023 年 8 月 16 日停止提供服务。这意味着大量使用 GCP IoT Core 的用户可能需要将他们的 IoT 应用迁移到其他物联网云服务。除了云服务的迁移，很多用户也在直接利用谷歌云生态，使用 GCP 上丰富的数据服务来处理物联网数据。
 
-作为和 GCP IoT Core 一样基于 MQTT 的全托管消息云服务，EMQX Cloud 支持部署在 GCP 多个区域，是替代 IoT Core 的理想选择。此外，**EMQX Cloud 新增的 GCP Pub/Sub 数据桥接支持**，可以帮助用户轻松无缝连接之前在 GCP 其他数据服务中创建的物联网应用，快速完成迁移且不影响现有业务。
+作为和 GCP IoT Core 一样基于 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 的全托管消息云服务，[EMQX Cloud](https://www.emqx.com/zh/cloud) 支持部署在 GCP 多个区域，是替代 IoT Core 的理想选择。此外，**EMQX Cloud 新增的 GCP Pub/Sub 数据桥接支持**，可以帮助用户轻松无缝连接之前在 GCP 其他数据服务中创建的物联网应用，快速完成迁移且不影响现有业务。
 
 
 ## GCP Pub/Sub 介绍

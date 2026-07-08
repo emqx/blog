@@ -18,7 +18,7 @@
 
 对多个现有驱动进行了功能优化：
 
-**1、MQTT 驱动支持上报南向驱动状态到 MQTT 主题，使用户能够更方便地监控驱动状态。**
+**1、[MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 驱动支持上报南向驱动状态到 MQTT 主题，使用户能够更方便地监控驱动状态。**
 
 ![驱动状态上报](https://assets.emqx.com/images/5bfc4c21aee0e660286f9b001e810699.png)
 

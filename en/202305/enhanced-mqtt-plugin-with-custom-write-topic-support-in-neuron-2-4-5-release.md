@@ -1,20 +1,20 @@
 ## Introduction
 
-We are excited to announce the release of [Neuron 2.4.5](https://www.emqx.com/en/try?product=neuron), an update that brings a highly requested feature to our MQTT plugin: Custom Write Topic Support. With this new functionality, customers can customize the downlink topic from third-party systems to Neuron.
+We are excited to announce the release of [Neuron 2.4.5](https://www.emqx.com/en/try?product=neuron), an update that brings a highly requested feature to our [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) plugin: Custom Write Topic Support. With this new functionality, customers can customize the downlink topic from third-party systems to Neuron.
 
 The Neuron team strives to empower users with flexible and customizable solutions. Introducing custom write topic support in the MQTT plugin is a feature of that commitment. This feature addresses a common pain point for many users who require control over the topics that transmit data from external systems to their Neuron instances.
 
 ## How Does Custom Write Topic Support Benefit You?
 
 1. **Enterprise Topic Standard Compliance**: Neuron 2.4.5 enables you to align the MQTT downlink topic with your organization's specific topic standards. By customizing the write topic, you can effortlessly integrate Neuron with your existing enterprise infrastructure and adhere to internal naming conventions.
-2. **ACL Configuration Flexibility**: With the ability to define a custom write topic, you gain fine-grained control over the access permissions and security policies set up in your existing MQTT Broker. Neuron's MQTT plugin now seamlessly integrates with your current ACL settings, allowing you to tailor access rights to specific topics within Neuron.
+2. **ACL Configuration Flexibility**: With the ability to define a custom write topic, you gain fine-grained control over the access permissions and security policies set up in your existing [MQTT Broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison). Neuron's MQTT plugin now seamlessly integrates with your current ACL settings, allowing you to tailor access rights to specific topics within Neuron.
 3. **Seamless Integration with Third-Party Systems**: The custom write topic support opens up possibilities for integrating Neuron with a wide range of existing third-party systems and services. Whether you're using enterprise middleware, cloud platforms, or custom-built solutions, Neuron 2.4.5 ensures a smooth and efficient data flow.
 
 ## How to Leverage the Custom Write Topic Feature
 
 Configuring the custom write topic in Neuron 2.4.5 is straightforward. 
 
-1. Accessing the Neuron dashboard, go to **North APP** → **Configuration**, and click `Add App` to add the MQTT client node.
+1. Accessing the Neuron dashboard, go to **North APP** → **Configuration**, and click `Add App` to add the [MQTT client](https://www.emqx.com/en/blog/mqtt-client-tools) node.
 2. Click the `Application Configuration` icon on the application card to enter the application configuration interface to set the plugin.
 3. In the Neuron 2.4.5 release, users can input the customized topic through the group subscription page.  Two fields are added to the application configuration page that users can modify. Default use Neuron's topic. Users can customize the topic.
 

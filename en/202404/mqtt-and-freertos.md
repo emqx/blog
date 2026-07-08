@@ -32,7 +32,7 @@ To achieve this goal, we implement the below functions.
 - The LED task changes the operational state of the LEDs based on notifications from the MQTT event callback function and publishes MQTT messages indicating the latest LED state.
 - The Wi-Fi event callback function that implements Wi-Fi connectivity. 
 
-The LED task can be replaced with any other real-world application, such as a camera gimbal control application, a drone attitude control application, etc. This demo shows the basic usage of the MQTT library in FreeRTOS, such as building an MQTT connection, sending/receiving messages, and synchronizing parsed commands to other tasks using the FreeRTOS queue mechanism.
+The LED task can be replaced with any other real-world application, such as a camera gimbal control application, a drone attitude control application, etc. This demo shows the basic usage of the [MQTT library](https://www.emqx.com/en/blog/mqtt-client-tools) in FreeRTOS, such as building an MQTT connection, sending/receiving messages, and synchronizing parsed commands to other tasks using the FreeRTOS queue mechanism.
 
 ## What You Need?
 
@@ -56,7 +56,7 @@ For the development and execution of this demo, we need the following software:
 2. [EMQX](https://www.emqx.com/en), an enterprise-grade MQTT platform. We used the [EMQX Cloud Serverless](https://www.emqx.com/en/cloud/serverless-mqtt) in this demo, thus eliminating the need for manual server deployment.
 3. [MQTTX](https://mqttx.app/), MQTT client tool for sending LED commands to ESP32 and receiving returned LED status.
 
-The deployment of EMQX Cloud Serverless and MQTTX is straightforward and will not be repeated here. ESP-IDF recommends installing them as a VSCode extension. The general installation steps are:
+The deployment of [EMQX Cloud](https://www.emqx.com/en/cloud) Serverless and MQTTX is straightforward and will not be repeated here. ESP-IDF recommends installing them as a VSCode extension. The general installation steps are:
 
 1. If your operating system is Linux or macOS, you initially need to install dependencies such as Python3, CMake, and Ninja. Details can be found in [Step 1. Install Prerequisites](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/get-started/linux-macos-setup.html#step-1-install-prerequisites).
 2. Download and install [Visual Studio Code](https://code.visualstudio.com/).
@@ -120,9 +120,9 @@ extern const uint8_t server_cacertificate_end[]  asm("_binary_emqxsl_ca_crt_end"
 
 This demo also provides another method of using the CA certificate, which will be introduced in the later chapter - **Run** **Demo**.
 
-`Kconfig.projbuild` contains custom configuration items for the current project. The `Kconfig.probuild` file in this demo mainly defines configuration items such as Wi-Fi SSID, Wi-Fi password, and MQTT server address.
+`Kconfig.projbuild` contains custom configuration items for the current project. The `Kconfig.probuild` file in this demo mainly defines configuration items such as Wi-Fi SSID, Wi-Fi password, and [MQTT server](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) address.
 
-In addition, the component configuration is defined in the `Kconfig` file in the component's own root directory. It is provided to projects or other components that depend on the component. For example, the `esp-mqtt` component provides configuration items such as MQTT task priority and whether to enable MQTT 5.0 support.
+In addition, the component configuration is defined in the `Kconfig` file in the component's own root directory. It is provided to projects or other components that depend on the component. For example, the `esp-mqtt` component provides configuration items such as MQTT task priority and whether to enable [MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5) support.
 
 We can execute `idf.py menuconfig` or select `ESP-IDF: SDK Configuration editor (Menuconfig)` in the command panel of VS Code to enter the configuration menu, which contains all modifiable configuration items. Changing the values of these configuration items adjusts the behavior of your application code.
 

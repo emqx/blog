@@ -1,6 +1,6 @@
 > ***Executive Summary***
 >
-> *A tier-1 mining corporation managing hundreds of heavy mobile equipment (HME) units across nearly 20 mine sites required a mission-critical MQTT infrastructure to stream equipment telemetry from harsh, remote operating environments. Starting with an open-source prototype that couldn't scale to production demands, the organization deployed EMQX Enterprise to handle current throughput with a clear upgrade path to millions of messages/second as fixed plant automation expands. The result: unified equipment health visibility across distributed operations with persistent buffering for edge devices operating over intermittent LTE connections.*
+> *A tier-1 mining corporation managing hundreds of heavy mobile equipment (HME) units across nearly 20 mine sites required a mission-critical [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) infrastructure to stream equipment telemetry from harsh, remote operating environments. Starting with an open-source prototype that couldn't scale to production demands, the organization deployed [EMQX Enterprise](https://www.emqx.com/en/products/emqx) to handle current throughput with a clear upgrade path to millions of messages/second as fixed plant automation expands. The result: unified equipment health visibility across distributed operations with persistent buffering for edge devices operating over intermittent LTE connections.*
 
 ## The Digital Gold Rush: Why Mining Demands Real-Time Connectivity
 
@@ -56,7 +56,7 @@ MQTT emerged as the ideal standard for equipment telemetry because it addresses 
 - **Pub/sub for telemetry**: Equipment publishes data to topic hierarchies without knowing which backends consume it, which is critical when multiple analytics systems access the same data
 - **QoS 1 reliability**: Equipment data with QoS 1 (at-least-once) delivery ensures no telemetry is lost without requiring acknowledgment round-trips for every message
 - **Persistent sessions**: Edge devices can buffer messages when disconnected, then resume transmission when LTE reconnects
-- **Sparkplug support**: Forward-compatible with industrial IoT standards without requiring full protocol rewrite
+- **Sparkplug support**: Forward-compatible with [industrial IoT](https://www.emqx.com/en/blog/industrial-iot-systems) standards without requiring full protocol rewrite
 
 ## The EMQX Solution: A Unified Backbone for Global Mining Operations
 
@@ -66,7 +66,7 @@ The organization deployed **EMQX Enterprise** on RedHat OpenShift/Kubernetes to 
 - **Resilience via Durable Sessions:** To combat inconsistent LTE coverage across mine sites, EMQX utilizes Durable Sessions. This feature automatically buffers telemetry at the edge during network drops and replays data without gaps upon reconnection, ensuring zero data loss.
 - **Unified Multi-Protocol Security:** EMQX eliminates authentication silos by managing three distinct security layers: mTLS with certificate pinning for secure M2M identity, IdP integration for centralized administrative access, and standardized enterprise directory services for legacy system compatibility.
 - **Streamlined Data Integration:** Built-in Data Bridges stream real-time telemetry directly to InfluxDB and Kafka. This eliminates intermediate ETL adapters and staging databases, reducing system latency and operational complexity.
-- **Industrial Standard Readiness:** The solution provides native support for MQTT Sparkplug, allowing the infrastructure to evolve alongside industrial IoT standards without a wholesale technology replacement.
+- **Industrial Standard Readiness:** The solution provides native support for MQTT Sparkplug, allowing the infrastructure to evolve alongside industrial [IoT standards](https://www.emqx.com/en/blog/iot-protocols-mqtt-coap-lwm2m) without a wholesale technology replacement.
 - **Granular Operational Control:** A Topic-based ACL framework was implemented to match the mining hierarchy (Site > Asset Class > Model > Measure), ensuring strict access control and efficient data distribution via Shared Subscriptions for backend load balancing.
 
 ## Results and Business Value

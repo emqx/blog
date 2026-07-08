@@ -25,9 +25,9 @@ That is a lot of capability with no external dependencies, and it is why teams b
 
 ## What MQTT Streams is
 
-[MQTT Streams](https://docs.emqx.com/en/emqx/latest/mqtt-stream/mqtt-stream-concept.html) arrived in EMQX Enterprise 6.1. A stream is a named, durable store that captures every MQTT message matching a topic filter. Two types exist: append-only streams for history and replay, and last-value streams that keep the newest message per key, which is how a dashboard gets current state.
+[MQTT Streams](https://docs.emqx.com/en/emqx/latest/mqtt-stream/mqtt-stream-concept.html) arrived in [EMQX Enterprise](https://www.emqx.com/en/products/emqx) 6.1. A stream is a named, durable store that captures every MQTT message matching a topic filter. Two types exist: append-only streams for history and replay, and last-value streams that keep the newest message per key, which is how a dashboard gets current state.
 
-Producers are untouched. Any MQTT client publishing to a matching topic feeds the stream, and the device fleet does not know streams exist. Consumers subscribe with MQTT 5.0 to `$stream/<name>` and pick the start position with a `stream-offset` subscription property: `earliest`, `latest`, or a timestamp. History arrives first, then the subscription keeps tailing. Replay is an MQTT subscription, nothing else.
+Producers are untouched. Any [MQTT client](https://www.emqx.com/en/blog/mqtt-client-tools) publishing to a matching topic feeds the stream, and the device fleet does not know streams exist. Consumers subscribe with [MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5) to `$stream/<name>` and pick the start position with a `stream-offset` subscription property: `earliest`, `latest`, or a timestamp. History arrives first, then the subscription keeps tailing. Replay is an MQTT subscription, nothing else.
 
 ![image.png](https://assets.emqx.com/images/a7c12599aa50271bf4a33b21ecd328c1.png)
 

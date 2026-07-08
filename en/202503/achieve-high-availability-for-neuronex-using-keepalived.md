@@ -1,6 +1,6 @@
 ## Introduction
 
-NeuronEX is software designed for the industrial sector, specializing in equipment data collection and edge intelligent analysis. It is primarily deployed in industrial settings, facilitating industrial protocol data collection, industrial system data integration, edge data filtering and analysis, AI algorithm integration, and integration with IIoT platforms. It provides low-latency data access management and intelligent analytical services for industrial scenarios.
+NeuronEX is software designed for the industrial sector, specializing in equipment data collection and edge intelligent analysis. It is primarily deployed in industrial settings, facilitating industrial protocol data collection, industrial system data integration, edge data filtering and analysis, AI algorithm integration, and integration with [IIoT platforms](https://www.emqx.com/en/blog/iiot-platform-key-components-and-5-notable-solutions). It provides low-latency data access management and intelligent analytical services for industrial scenarios.
 
 To ensure high availability, NeuronEX supports a master-backup dual-node deployment scheme combined with Keepalived to achieve automatic failover. This solution effectively addresses scenarios such as software failures or server downtime. When the master node fails, the backup node can automatically take over the service, ensuring business continuity. Additionally, the system supports automatic failback after the master node recovers, ensuring the service always operates in the optimal state.
 

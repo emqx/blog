@@ -12,7 +12,7 @@ NeuronEX 具备强大的多协议接入能力，支持如 [Modbus](https://www.e
 
 ## 准备工作
 
-在开始调试规则之前，需要创建一个数据源，作为规则的数据输入流。以 MQTT 类型的数据源作为示例，操作步骤如下：
+在开始调试规则之前，需要创建一个数据源，作为规则的数据输入流。以 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 类型的数据源作为示例，操作步骤如下：
 
 1. 登录到 NeuronEX 系统，进入“数据处理” - “源管理”页面。在“流管理”区域，点击“创建流”按钮。
 

@@ -1,6 +1,6 @@
 ## Introduction
 
-InfluxData recently announced the availability of Native Collectors, bringing native data collection to the InfluxDB Cloud. This will provide developers with the fastest way to get data from third-party MQTT brokers such as EMQX Cloud into the InfluxDB Cloud without the need for additional software or new code.
+InfluxData recently announced the availability of Native Collectors, bringing native data collection to the InfluxDB Cloud. This will provide developers with the fastest way to get data from third-party [MQTT brokers](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) such as EMQX Cloud into the InfluxDB Cloud without the need for additional software or new code.
 
 While integrating with a private MQTT broker is always possible, this is an easier way to do cloud-to-cloud integration.
 
@@ -63,7 +63,7 @@ On the overview page, you will see the instance details. Note the connection add
 
 <center>MQTT Broker Connection Details</center>
 
-Each EMQX Cloud instance creates four listeners for MQTT connections (MQTT, MQTT with TLS, [MQTT over WebSocket](https://www.emqx.com/en/blog/connect-to-mqtt-broker-with-websocket), and MQTT over WebSocket with TLS). However, InfluxDB Cloud currently only supports the MQTT protocol, so you only need to note the first port.
+Each EMQX Cloud instance creates four listeners for MQTT connections (MQTT, MQTT with TLS, [MQTT over WebSocket](https://www.emqx.com/en/blog/connect-to-mqtt-broker-with-websocket), and MQTT over WebSocket with TLS). However, InfluxDB Cloud currently only supports the [MQTT protocol](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt), so you only need to note the first port.
 
 #### Add Credentials for MQTT connection
 
@@ -251,7 +251,7 @@ How to know if the integration is a success?  Simple answer: Let’s send a mess
 
 #### Choose an MQTT client
 
-Use can use any MQTT client as you like. In this tutorial, I will use [MQTTX](https://mqttx.app/), a user-friendly MQTT desktop application that is good for testing purposes.
+Use can use any [MQTT client](https://www.emqx.com/en/blog/mqtt-client-tools) as you like. In this tutorial, I will use [MQTTX](https://mqttx.app/), a user-friendly MQTT desktop application that is good for testing purposes.
 
 ![Create New Connection](https://assets.emqx.com/images/0a1b227fb93b3a9c9a39cde30f00cf9f.jpeg)
 

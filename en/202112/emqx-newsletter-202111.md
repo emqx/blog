@@ -4,7 +4,7 @@ In November, EMQX teams kept optimizing the product in response to recent proble
 
 ### Development of EMQX Enterprise v4.4 is completed
 
-The development of EMQX Enterprise v4.4 has been completed now, and the test is in full swing. The official version will be available in December.
+The development of [EMQX Enterprise](https://www.emqx.com/en/products/emqx) v4.4 has been completed now, and the test is in full swing. The official version will be available in December.
 
 It has been about half a year since the last minor release EMQX v4.3. In response to feature requests from many enterprise customers we received during this period, version 4.4 will mainly include below features: 
 
@@ -64,7 +64,7 @@ While the new version is released, we are also conducting relevant technical res
 
 3. The development branch of persistent sessions with high reliability has been merged into the trunk, and a performance test has been carried out
 
-   Before V5.0, EMQX already had the capability to persist MQTT sessions. However, these sessions are not synchronized to other nodes in the cluster. This month, the development branch that supports persistent sessions with high reliability was finally merged into the trunk, and a performance test was carried out.
+   Before V5.0, EMQX already had the capability to persist [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) sessions. However, these sessions are not synchronized to other nodes in the cluster. This month, the development branch that supports persistent sessions with high reliability was finally merged into the trunk, and a performance test was carried out.
 
 4. EMQX cluster deployment based on CDK. This month, the EMQX European R&D team open-sourced [cdk-emqx-cluster](https://github.com/emqx/cdk-emqx-cluster), an internal tool for cluster deployment. It is based on AWS’s CDK development kit, capable of deploying and configuring EMQX cluster and surrounding integrated services, such as etcd, Kafka load generator for running stress tests, and Prometheus for monitoring. It has a complete Grafana Dashboard.
 
@@ -88,7 +88,7 @@ The condition of a large number of offline devices may be caused by some externa
 
 Forwarding data to non-relational databases is supported by EMQX Cloud. At present, the resource configuration of the rule engine has added support for Alibaba Cloud MongoDB. The rule engine can be used to persist data to MongoDB of Alibaba Cloud. It provides more choices for business developers to achieve data persistence, which makes business landing more easily.
 
-EMQX team is always committed to bringing a better MQTT broker for the IoT era. Please stay tuned on EMQX.
+EMQX team is always committed to bringing a better [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) for the IoT era. Please stay tuned on EMQX.
 
 
 <section class="promotion">

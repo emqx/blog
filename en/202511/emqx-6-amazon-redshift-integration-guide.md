@@ -126,7 +126,7 @@ You should now see the message ingested into Redshift in real time.
 
 ## Summary
 
-You’ve now built a fully operational, real-time data pipeline from MQTT → EMQX → Redshift, without needing heavy ETL tools or complex transformations. With EMQX's built-in Redshift connector, IoT data flows seamlessly into your analytics platform, ready for dashboards, machine learning, or operational monitoring.
+You’ve now built a fully operational, real-time data pipeline from [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) → EMQX → Redshift, without needing heavy ETL tools or complex transformations. With EMQX's built-in Redshift connector, IoT data flows seamlessly into your analytics platform, ready for dashboards, machine learning, or operational monitoring.
 
 Unlock the full value of your streaming MQTT data and start making smarter, faster decisions powered by real-time insights.
 

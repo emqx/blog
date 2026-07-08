@@ -10,7 +10,7 @@ The book mentioned above mainly focuses on the Nerves part and uses HTTP protoco
 
 [MQTT](https://mqtt.org/) is a messaging protocol designed specifically for (IoT) device communications. It is used in many areas, such as banking, oil & gas industry, manufacturing, etc.
 
-MQTT protocol has many advantages, but here I want to mention some of them:
+[MQTT protocol](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) has many advantages, but here I want to mention some of them:
 
 - It is a lightweight binary protocol generally running over TCP/IP.
 - It is designed for unreliable networking, making it a good choice for outdoor installations.
@@ -41,7 +41,7 @@ mix new --sup weather_sensor
 cd weather_sensor
 ```
 
-To interact with an MQTT broker, we need an [MQTT client](https://www.emqx.com/en/mqtt-client-sdk). We take [emqtt](https://github.com/emqx/emqtt). Add it to mix.exs as a dependency:
+To interact with an [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison), we need an [MQTT client](https://www.emqx.com/en/mqtt-client-sdk). We take [emqtt](https://github.com/emqx/emqtt). Add it to mix.exs as a dependency:
 
 ```
 defp deps do
@@ -179,7 +179,7 @@ We need a working broker to run the node successfully; we will start it later.
 
 ## Dashboard Setup
 
-Since there are no "servers" in MQTT, our controlling dashboard will also be an MQTT client. But it will *subscribe* to reports/weather_sensor/temperature topic and *publish* commands tocommands/weather_sensor/set_interval.
+Since there are no "servers" in MQTT, our controlling dashboard will also be an [MQTT client](https://www.emqx.com/en/blog/mqtt-client-tools). But it will *subscribe* to reports/weather_sensor/temperature topic and *publish* commands tocommands/weather_sensor/set_interval.
 
 For a dashboard, we will set up a Phoenix LiveView application.
 

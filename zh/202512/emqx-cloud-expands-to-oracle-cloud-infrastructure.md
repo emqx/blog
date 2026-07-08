@@ -1,4 +1,4 @@
-我们很高兴地宣布，EMQX Cloud 迎来重要版本更新。本次更新聚焦于平台扩展与区域可用性，旨在为物联网（IoT）团队提供更灵活的全球化 MQTT 基础设施部署方案。
+我们很高兴地宣布，[EMQX Cloud](https://www.emqx.com/zh/cloud) 迎来重要版本更新。本次更新聚焦于平台扩展与区域可用性，旨在为物联网（IoT）团队提供更灵活的全球化 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 基础设施部署方案。
 
 **本次更新主要包括两项内容：**
 

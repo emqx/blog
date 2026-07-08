@@ -1,10 +1,10 @@
-Recently, MQTTX released the latest version [1.8.3](https://github.com/emqx/MQTTX/releases/tag/v1.8.3), The main optimization of function usage and the various problems encountered in the process of use are fixed. For example, the use of MQTT 5.0 Clean Start is optimized, and the default value of the Session Expiry Interval is added; the default output display of MQTTX CLI is optimized, and a more detailed and beautiful content display is provided.
+Recently, MQTTX released the latest version [1.8.3](https://github.com/emqx/MQTTX/releases/tag/v1.8.3), The main optimization of function usage and the various problems encountered in the process of use are fixed. For example, the use of [MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5) Clean Start is optimized, and the default value of the Session Expiry Interval is added; the default output display of MQTTX CLI is optimized, and a more detailed and beautiful content display is provided.
 
 ## MQTTX Desktop
 
 ### Optimize Clean Start usage
 
-MQTTX as an MQTT 5.0 Client tool, currently defaults to MQTT 5.0 connection testing. In MQTT 5.0, Clean Session is modified to Clean Start and needs to be used in conjunction with the Session Expiry Interval. However, in the current 1.8.2 version, when using the default connection, if the user does not set the Session Expiry Interval, the MQTT Broker will not be able to persist its session when the connection is disconnected. For many users who are not very familiar with the new features of MQTT 5.0, this brings some trouble.
+MQTTX as an [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) 5.0 Client tool, currently defaults to MQTT 5.0 connection testing. In MQTT 5.0, Clean Session is modified to Clean Start and needs to be used in conjunction with the Session Expiry Interval. However, in the current 1.8.2 version, when using the default connection, if the user does not set the Session Expiry Interval, the [MQTT Broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) will not be able to persist its session when the connection is disconnected. For many users who are not very familiar with the new features of MQTT 5.0, this brings some trouble.
 
 The currently released 1.8.3 version optimizes this problem, and the display of Clean Session is modified to Clean Start. When Clean Start is closed, the Session Expiry Interval is set to never expire by default, and when it is opened, the default value is set to 0, which means that the session is not saved. At the same time, it also continues to support users to manually modify the value to meet the current test requirements. At the same time, the user is prompted: when Clean Start is closed, if the value is empty, the Session Expiry Interval needs to be set to ensure the correct use of its connection session.
 
@@ -63,7 +63,7 @@ Next, we will focus on the following aspects:
 - MQTTX CLI will support the bench command
 - Improve the user experience of MQTTX Web
 - Support custom charting of received data
-- Plugin system (such as supporting SparkPlug B, integrating MQTTX CLI)
+- Plugin system (such as supporting [SparkPlug B](https://www.emqx.com/en/solutions/mqtt-sparkplug), integrating MQTTX CLI)
 - Script function optimization
 - Release MQTTX Mobile application
 - Improve MQTTX Web function

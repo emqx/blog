@@ -1,6 +1,6 @@
 3 月份，eKuiper 团队主要进行了 1.9.0 版本的开发，增加了一些重要的功能，进一步提高了 eKuiper 的性能和可用性：
 
-1. IO Connectors 增强。新增了多 Neuron 连接的功能；在 HTTP 连接方面，我们提供了类 oAuth 的基于动态 token 的鉴权过程的支持；此外还支持了 MQTT 连接中压缩和解压，减少边云传输的带宽损耗。
+1. IO Connectors 增强。新增了多 Neuron 连接的功能；在 HTTP 连接方面，我们提供了类 oAuth 的基于动态 token 的鉴权过程的支持；此外还支持了 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 连接中压缩和解压，减少边云传输的带宽损耗。
 2. 分析能力增强。我们添加了许多新的转换函数，包括 JSON 字符串相关、base64 编码相关以及压缩相关的函数，方便用户更灵活地处理和转换数据流。
 3. 运营效率增强。新版本中继续优化了数据导入和导出功能，支持选择需要的规则进行导入导出，实现了规则依赖的流、配置和插件等的自动推断和导出。另外，我们优化了 eKuiper manager 中的规则管理界面，可以更准确地展示规则启动中的状态。
 

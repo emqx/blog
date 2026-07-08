@@ -1,6 +1,6 @@
 > 在本专题系列文章中，我们将根据 EMQ 在车联网领域的实践经验，从协议选择等理论知识，到平台架构设计等实战操作，与大家分享如何搭建一个可靠、高效、符合行业场景需求的车联网平台。
 >
-> 在此之前，我们已经介绍了[车联网场景中的 MQTT 协议](https://www.emqx.com/zh/blog/mqtt-for-internet-of-vehicles)，以及如何根据实际业务需求进行[车联网 TSP 平台场景中的 MQTT 主题设计](https://www.emqx.com/zh/blog/mqtt-topic-design-for-internet-of-vehicles)。接下来，我们就需要考虑如何将消息数据进行高质量的安全传输。在本篇文章中，我们将借助 MQTT 协议的 QoS 特性，介绍车联网场景中的 MQTT 消息 QoS 设计，保障数据传输质量。
+> 在此之前，我们已经介绍了[车联网场景中的 MQTT 协议](https://www.emqx.com/zh/blog/mqtt-for-internet-of-vehicles)，以及如何根据实际业务需求进行[车联网 TSP 平台场景中的 MQTT 主题设计](https://www.emqx.com/zh/blog/mqtt-topic-design-for-internet-of-vehicles)。接下来，我们就需要考虑如何将消息数据进行高质量的安全传输。在本篇文章中，我们将借助 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 协议的 QoS 特性，介绍车联网场景中的 MQTT 消息 QoS 设计，保障数据传输质量。
 
 ## 前言
 
@@ -56,7 +56,7 @@ MQTT 设计了 3 个 QoS 等级：
 
 **特别提醒**
 
-需要注意的是 [MQTT 发布与订阅](https://www.emqx.com/zh/blog/mqtt-5-introduction-to-publish-subscribe-model)操作中的 QoS 代表了不同的含义，发布时的 QoS 表示消息发送到 MQTT 服务器 使用的 QoS 等级，订阅时的 QoS 表示 MQTT Broker 向自己转发消息时可以使用的最大  QoS 等级。需要保障发送与订阅的 QoS 一致，才能确保最终收到的消息是固定的 QoS 等级，否则会出现消费降级的情况。例如：A 发送的消息 QoS 为 2，B 订阅的消息 QoS 为1，则最终接收到消息的 QoS 为 1。 
+需要注意的是 [MQTT 发布与订阅](https://www.emqx.com/zh/blog/mqtt-5-introduction-to-publish-subscribe-model)操作中的 QoS 代表了不同的含义，发布时的 QoS 表示消息发送到 MQTT 服务器 使用的 QoS 等级，订阅时的 QoS 表示 [MQTT Broker](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison) 向自己转发消息时可以使用的最大  QoS 等级。需要保障发送与订阅的 QoS 一致，才能确保最终收到的消息是固定的 QoS 等级，否则会出现消费降级的情况。例如：A 发送的消息 QoS 为 2，B 订阅的消息 QoS 为1，则最终接收到消息的 QoS 为 1。 
 
 ## EMQX 基于 QoS 等级的消息传输保障
 

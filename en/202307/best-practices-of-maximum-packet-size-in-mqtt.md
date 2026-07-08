@@ -1,10 +1,10 @@
 ## What is the Maximum Packet Size?
 
-The theoretical maximum length of an [MQTT packet](https://www.emqx.com/en/blog/introduction-to-mqtt-control-packets) is 268,435,456 bytes, equivalent to 256 MB. However, it is evident that resource-constrained clients and some MQTT servers operating as edge gateways may not be able to handle packets of this size.
+The theoretical maximum length of an [MQTT packet](https://www.emqx.com/en/blog/introduction-to-mqtt-control-packets) is 268,435,456 bytes, equivalent to 256 MB. However, it is evident that resource-constrained clients and some [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) servers operating as edge gateways may not be able to handle packets of this size.
 
 Considering that different clients may have significantly different capabilities in handling packets, sending excessively large packets can not only affect the normal business processing of the peer but may also directly overwhelm the peer. Therefore, we need to use the Maximum Packet Size property to negotiate the maximum packet length that the client and server can handle.
 
-The client first specifies the maximum allowed packet length that the server can send to it by using the Maximum Packet Size in the CONNECT packet. On the other hand, the server specifies the maximum allowed packet length that the client can send to it using the Maximum Packet Size in the CONNACK packet.
+The client first specifies the maximum allowed packet length that the server can send to it by using the Maximum Packet Size in the CONNECT packet. On the other hand, the server specifies the maximum allowed packet length that the client can send to it using the Maximum Packet Size in the [CONNACK](https://www.emqx.com/en/blog/mqtt5-new-features-reason-code-and-ack) packet.
 
 ![MQTT CONNECT packet](https://assets.emqx.com/images/1f64b4c59e8da8d446d823d6b8f20535.png)
 
@@ -32,7 +32,7 @@ I want to let you know that this only applies to response packets, not to PUBLIS
 
    ![Create an MQTT connection](https://assets.emqx.com/images/784f1078a559f75b0c9ed10f30a5a218.png)
 
-3. After a successful connection, we can observe through the Wireshark packet capture tool that the Maximum Packet Size property in the CONNACK packet returned by the server is 1048576. This means that the client can only send a packet of up to 1 KB to the public MQTT server each time:
+3. After a successful connection, we can observe through the Wireshark packet capture tool that the Maximum Packet Size property in the CONNACK packet returned by the server is 1048576. This means that the client can only send a packet of up to 1 KB to the public [MQTT server](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) each time:
 
    ![Wireshark packet capture tool](https://assets.emqx.com/images/0d6c9d52f8dbb2c052119386f0bb10b3.png)
 

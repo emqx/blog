@@ -2,7 +2,7 @@
 
 [Google Cloud IoT Core](https://www.emqx.com/en/blog/why-emqx-is-your-best-google-cloud-iot-core-alternative) has announced its disappointing retirement in the upcoming August. EMQX, an open-source distributed MQTT broker, is now the recommended alternative for former Google Cloud users due to its powerful features and flexibility in managing large-scale IoT infrastructure.
 
-The lately released [EMQX Enterprise 4.4.19](https://www.emqx.com/en/changelogs/enterprise/4.4.19) offers an enhanced migration process that simplifies the transition from Google Cloud IoT Core to EMQX. This blog will explore the new features and improvements in EMQX Enterprise 4.4.19 that facilitate a smoother migration experience.
+The lately released [EMQX Enterprise 4.4.19](https://www.emqx.com/en/changelogs/enterprise/4.4.19) offers an enhanced migration process that simplifies the transition from Google Cloud [IoT Core](https://www.emqx.com/en/blog/understanding-aws-iot-core) to EMQX. This blog will explore the new features and improvements in [EMQX Enterprise](https://www.emqx.com/en/products/emqx) 4.4.19 that facilitate a smoother migration experience.
 
 ## The Challenges of Migration
 
@@ -20,7 +20,7 @@ During the migration process, it becomes essential to consider these aspects of 
 EMQX understands the importance of minimizing changes to the device code when migrating from Google Cloud IoT Core to the new MQTT broker. With this goal in mind, EMQX has implemented a compatibility layer that significantly simplifies the migration process while maintaining compatibility with the existing device code. This compatibility layer offers the following key features:
 
 1. **Importing Device Config and Authentication Data**: EMQX provides a seamless mechanism to import device configurations and authentication data from Google Cloud IoT Core. This ensures that all the necessary device settings, including registries, device IDs, and associated configurations, can be easily migrated to EMQX without requiring extensive modifications.
-2. **Google Cloud IoT Core-Compatible MQTT Authentication**: EMQX supports MQTT authentication in a format fully compatible with Google Cloud IoT Core. This means that devices can continue using their existing authentication mechanisms to connect to EMQX. By preserving the authentication format, the migration process becomes transparent to the devices, reducing the effort required to update the device code.
+2. **Google Cloud IoT Core-Compatible [MQTT Authentication](https://www.emqx.com/en/blog/securing-mqtt-with-username-and-password-authentication)**: EMQX supports MQTT authentication in a format fully compatible with Google Cloud IoT Core. This means that devices can continue using their existing authentication mechanisms to connect to EMQX. By preserving the authentication format, the migration process becomes transparent to the devices, reducing the effort required to update the device code.
 3. **Device Config in a Google Cloud IoT Core-Compatible Manner**: EMQX ensures that device configurations provided by the compatibility layer are presented in a format compatible with Google Cloud IoT Core. This allows devices to receive their associated config in a familiar structure and format, making it easier to interpret and utilize the data received from the MQTT broker. EMQX also provides the APIs to manage the configs for the devices migrated from Google Cloud IoT Core.
 
 Now, let’s see an example of migrating devices from Google Cloud IoT Core to EMQX.
@@ -158,7 +158,7 @@ The easiest way to try EMQX locally is to use Docker.
 docker run -d --name emqx -p 8883:8883 -p 18083:18083 emqx/emqx:4.4.18
 ```
 
-8883 is the MQTT port (over TLS), and 18083 is the HTTP API port. 
+8883 is the [MQTT port](https://www.emqx.com/en/blog/mqtt-ports) (over TLS), and 18083 is the HTTP API port. 
 
 EMQX facilitates the import of Google Cloud IoT Core device data through Dashboard and Rest API.
 

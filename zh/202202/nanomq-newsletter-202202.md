@@ -42,7 +42,7 @@ Usage: nanomq conn { start | stop } <addr> [<opts>...]
 nanomq conn start --url "mqtt-tcp://broker.emqx.io:1883" -C 10000 -i 10 -k 60
 ```
 
-使用 NanoMQ Conn 工具向 [EMQ](https://www.emqx.com/zh) 提供的[公共 MQTT 服务器](https://www.emqx.com/zh/mqtt/public-mqtt5-broker) 的 msg 主题每 10ms 创建一个 MQTT 连接。当创建到 10000 个连接时停止。使用这一工具可以测试 MQTT Broker 的并发连接能力。
+使用 NanoMQ Conn 工具向 [EMQ](https://www.emqx.com/zh) 提供的[公共 MQTT 服务器](https://www.emqx.com/zh/mqtt/public-mqtt5-broker) 的 msg 主题每 10ms 创建一个 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 连接。当创建到 10000 个连接时停止。使用这一工具可以测试 [MQTT Broker](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison) 的并发连接能力。
 
 ## 支持 TLS
 

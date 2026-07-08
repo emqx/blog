@@ -108,7 +108,7 @@ The `actions` property defines the actions to perform after the rule is triggere
 
 #### Test the Rule
 
-We can use [MQTTX](https://mqttx.app/) or any other MQTT client to publish MQTT data to the `demo/sensor` topic. Those data will be processed by the rule. For example, we publish the following data on the topic:
+We can use [MQTTX](https://mqttx.app/) or any other [MQTT client](https://www.emqx.com/en/blog/mqtt-client-tools) to publish MQTT data to the `demo/sensor` topic. Those data will be processed by the rule. For example, we publish the following data on the topic:
 
 ```
 {"temperature": 25.5, "humidity": 60.5}

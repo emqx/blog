@@ -60,7 +60,7 @@ As a leading enterprise [MQTT platform](https://www.emqx.com/en/products/emqx), 
 
 - **Messaging Enhancement in Mobile Networks**
 
-  With multiple mechanisms such as keep alive, session persistence, and QoS levels based on the MQTT protocol, message transmission can be re-established after vehicle disconnection caused by intricate network problems. This ensures the achievement of real-time and reliable message communication between moving vehicles and the cloud.
+  With multiple mechanisms such as [keep alive](https://www.emqx.com/en/blog/mqtt-keep-alive), session persistence, and QoS levels based on the MQTT protocol, message transmission can be re-established after vehicle disconnection caused by intricate network problems. This ensures the achievement of real-time and reliable message communication between moving vehicles and the cloud.
 
   Furthermore, starting from version 5.0, EMQX became the first MQTT broker to support [MQTT over QUIC](https://www.emqx.com/en/blog/mqtt-over-quic), which further improves the robustness of MQTT Protocol for complex mobile networks in terms of faster connection establishment, reconnection, and connection migration for moving vehicles.
 
@@ -104,7 +104,7 @@ In connected vehicle scenarios, EMQX offers several key advantages:
 
 - **High Reliability and Scalability:** EMQX Enterprise adopts a distributed architecture, with high availability and scalability, capable of supporting millions of concurrent connections and message throughput. It supports flexible scaling to accommodate the growing number of vehicles and business data, ensuring the stable operation of the TSP platform.
 - **Secure Connection and Data access:** EMQX supports multiple authentication methods such as username/password, TLS authentication, JWT authentication, and ACL. It can also be integrated with TSP’s authentication services to achieve unified security authentication.
-- **Unified Access on Multiple Listening Ports:** Different car models may have inconsistent MQTT protocol versions, connection authentication methods. EMQX supports custom multiple listening ports with different protocols and authentication methods to achieve unified connection for different car models.
+- **Unified Access on Multiple Listening Ports:** Different car models may have inconsistent [MQTT protocol versions](https://www.emqx.com/en/blog/introduction-to-mqtt-5), connection authentication methods. EMQX supports custom multiple listening ports with different protocols and authentication methods to achieve unified connection for different car models.
 - **Powerful Data Integration:** By using simple SQL statements, data processing can be performed quickly and flexibly according to business needs, including data filtering, transformation, aggregation, and persistence. Then, with easy configurations on dashboard of EMQX, the processed data can be bridged and integrated into various message queues and SQL/NoSQL/time-series databases with high performance.
 
 See customer stories: [SAIC Volkswagen and EMQ create a new generation of intelligent Internet of Vehicles systems](https://www.emqx.com/en/customers/saic-volkswagen)

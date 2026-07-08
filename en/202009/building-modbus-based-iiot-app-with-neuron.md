@@ -4,7 +4,7 @@ With the development of IoT, big data, cloud computing and other new-generation 
 
 ## The era of the Industrial IoT
 
-IIoT is the acronyms of the Industrial Internet of Things, which is the Industrial IoT consisted of hundreds of millions of pieces of the industrial device. Broadly speaking, it refers to the application of instruments, connected sensors, and other equipment to machinery and vehicles in the transportation, energy, and industrial sectors.
+IIoT is the acronyms of the Industrial Internet of Things, which is the [Industrial IoT](https://www.emqx.com/en/blog/industrial-iot-systems) consisted of hundreds of millions of pieces of the industrial device. Broadly speaking, it refers to the application of instruments, connected sensors, and other equipment to machinery and vehicles in the transportation, energy, and industrial sectors.
 
 With the popularization of [industry 4.0](https://en.wikipedia.org/wiki/Fourth_Industrial_Revolution) concept and the deepening of industrial practice, the traditional centralized control model has transformed into a distributed enhanced control model. At the same time, the advent of the 5G era has accelerated the process of traditional industrial transformation and industrial IoT. To implement the flexible production of personalized and digital products and services, in the process of industrial devices intelligent and networked, the new and old industrial equipment needs to be connected to the internet to implement the business of data collection, remote control and configuration update of industrial equipment. EMQX series products can provide the entire solution from the industrial gateway to the platform and implement data aggregation of the industrial device and sending these data to the cloud, at the edge end of the plant and industrial site. At the same time, its processing ability for edge computing streaming data can provide cloud industrial device data access, data storage and interfacing with cloud-based configuration and applications for the industrial IoT at the platform end. Also, it can facilitate the rapid development of industrial Internet applications.
 
@@ -61,7 +61,7 @@ EMQX Neuron supports various kinds of industrial protocol, including Modbus, OPC
 | **Modbus RTU**                                               | RS485    | Avail      |
 | **Modbus RTU over TCP**                                      | Ethernet | Avail      |
 | **Modbus TCP**                                               | Ethernet | Avail      |
-| **OPC UA**                                                   | Ethernet | Avail      |
+| **[OPC UA](https://www.emqx.com/en/blog/opc-ua-protocol)**                                                   | Ethernet | Avail      |
 | **BACnet/MSTP**                                              | RS485    | 2020       |
 | **BACnet/IP**                                                | Ethernet | 2020       |
 | **IEC 60870-5 (IEC104)**                                     | Ethernet | 2020       |
@@ -83,8 +83,8 @@ EMQX Neuron supports various kinds of industrial protocol, including Modbus, OPC
 | ----------------------- | ------- | ------------------------------------------- | ------------------- |
 | PeakHMI Slave Simulator | /       | Modbus simulator                            | Windows Server 2019 |
 | EMQX Neuron            | 1.4.6   | Industrial protocol gateway access software | Ubuntu 16.04        |
-| EMQX Broker            | 4.0.7   | MQTT Broker                                 | Ubuntu 16.04        |
-| MQTTX                  | 1.3.2   | MQTT client tool                            | macOS 10.13.4       |
+| EMQX Broker            | 4.0.7   | [MQTT Broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison)                                 | Ubuntu 16.04        |
+| MQTTX                  | 1.3.2   | [MQTT client](https://www.emqx.com/en/blog/mqtt-client-tools) tool                            | macOS 10.13.4       |
 
 
 

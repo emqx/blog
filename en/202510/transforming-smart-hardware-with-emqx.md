@@ -143,7 +143,7 @@ Using a unified technology stack of MQTT, WebRTC, and AI, this solution creates 
   - Audio/Video Devices: Microphones, cameras, speakers.
   - Control Devices: Volume adjustment, expression display, device switches, etc.
 - **Communication Layer:**
-  - EMQX MQTT Broker: Provides millisecond-level message transmission and support for millions of connections.
+  - EMQX [MQTT Broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison): Provides millisecond-level message transmission and support for millions of connections.
   - WebRTC Media Server: Handles real-time audio and video stream transmission.
   - [MCP over MQTT](https://www.emqx.com/en/blog/mcp-over-mqtt): Implements intelligent control between AI and devices.
 - **Processing Layer:**

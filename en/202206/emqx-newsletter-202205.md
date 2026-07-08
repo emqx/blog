@@ -1,6 +1,6 @@
 In May, EMQX 5.0.0-rc.3 and rc.4 were consecutively released. The updated versions now provide additional support for jq syntax to the rule engine, a significantly streamlined default configuration file, and a further adjusted and optimized Dashboard menu bar. The official release of EMQX 5.0 is getting closer. Meanwhile, the next maintenance release of v4.3 and v4.4 has been released as well.
 
-EMQX Cloud now offers additional AWS private network connectivity and more regional deployment support, as well as more options for external authentication and data integration services.
+[EMQX Cloud](https://www.emqx.com/en/cloud) now offers additional AWS private network connectivity and more regional deployment support, as well as more options for external authentication and data integration services.
 
 ## EMQX
 
@@ -124,7 +124,7 @@ The `log.formatter.text.date.format` configuration was added to support the `rfc
 
 The EMQX team attended the 2022 Code BEAM Europe held in Stockholm, Sweden on May 19-20.
 
-William Yang, EMQ’s software engineer, delivered an inspiring talk titled, “QUICER: The Next Generation Transport Protocol Library for BEAM”, introducing the world’s first MQTT over QUIC implementation powered by EMQ, and the new [open-source library](https://github.com/emqx/quic) built for BEAM.
+William Yang, EMQ’s software engineer, delivered an inspiring talk titled, “QUICER: The Next Generation Transport Protocol Library for BEAM”, introducing the world’s first [MQTT over QUIC](https://www.emqx.com/en/blog/mqtt-over-quic) implementation powered by EMQ, and the new [open-source library](https://github.com/emqx/quic) built for BEAM.
 
 Another EMQX engineer, Dmitrii Fedoseev, discussed how to test distributed consistency fault tolerance using the library created by him: [snabbkafee](https://github.com/kafka4beam/snabbkaffe) , and described how EMQ has successfully applied a trace-based approach to real-world applications running in production. 
 
@@ -163,7 +163,7 @@ New support for client authentication and access control using data stored in th
 
 ## EMQX Kubernetes Operator
 
-In May, EMQX Operator, a tool for automating the deployment, configuration and management of EMQX clusters on Kubernetes, was released in version 1.1.8, providing the following new features.
+In May, [EMQX Operator](https://www.emqx.com/en/solutions/mqtt-on-kubernetes), a tool for automating the deployment, configuration and management of EMQX clusters on Kubernetes, was released in version 1.1.8, providing the following new features.
 
 ### Features update
 

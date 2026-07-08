@@ -1,4 +1,4 @@
-EMQX 6.0 introduces the Message Queue feature, a powerful mechanism for persistent, reliable, and intelligent message delivery in MQTT systems. Whether you need to persist messages for offline devices, balance load across multiple consumers, or ensure only the latest configuration is delivered, Message Queues bring production-grade resilience to your IoT and messaging workflows.
+EMQX 6.0 introduces the Message Queue feature, a powerful mechanism for persistent, reliable, and intelligent message delivery in [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) systems. Whether you need to persist messages for offline devices, balance load across multiple consumers, or ensure only the latest configuration is delivered, Message Queues bring production-grade resilience to your IoT and messaging workflows.
 
 > See why EMQX Message Queue is essential to your IoT architecture:
 >
@@ -6,7 +6,7 @@ EMQX 6.0 introduces the Message Queue feature, a powerful mechanism for persiste
 > - [Solving Real-World IoT Messaging Challenges with EMQX Message Queues](https://www.emqx.com/en/blog/solving-real-world-iot-messaging-challenges-with-emqx) 
 > - [Unifying MQTT Pub/Sub and Message Queuing: The Architecture Behind EMQX 6.0](https://www.emqx.com/en/blog/unifying-mqtt-pub-sub-and-message-queuing) 
 
-In this 10-minute hands-on guide, we’ll walk you through everything using MQTTX, the cross-platform MQTT 5.0 desktop client, and the EMQX Dashboard. No code required. By the end, you’ll know how to:
+In this 10-minute hands-on guide, we’ll walk you through everything using MQTTX, the cross-platform [MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5) desktop client, and the EMQX Dashboard. No code required. By the end, you’ll know how to:
 
 - Create and manage message queues
 - Publish and consume queued messages

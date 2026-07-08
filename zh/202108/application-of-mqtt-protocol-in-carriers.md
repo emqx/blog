@@ -1,4 +1,4 @@
-[MQTT](https://www.emqx.com/zh/mqtt-guide) 是用于物联网的标准消息传递协议。它被设计为一种非常轻量级的发布/订阅消息传送，非常适合以较小的代码占用量和网络带宽连接远程设备。MQTT 协议具有以下特点：
+[MQTT](https://www.emqx.com/zh/mqtt-guide) 是用于物联网的标准消息传递协议。它被设计为一种非常轻量级的发布/订阅消息传送，非常适合以较小的代码占用量和网络带宽连接远程设备。[MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 协议具有以下特点：
 
 - **轻巧高效**：[MQTT 客户端](https://www.emqx.com/zh/blog/introduction-to-the-commonly-used-mqtt-client-library)非常小，需要设备资源少。MQTT 消息头很小，可以优化网络带宽。
 - **双向通讯**：MQTT 允许设备到云之间以及云到设备之间的消息传递。
@@ -30,7 +30,7 @@
 
 ## 基于 MQTT 的物联网最后一公里网络管理
 
-随着物联网技术的快速发展，轻量级 MQTT 协议逐渐成为主流物联网协议，广泛应用于 IoT 设备消息通信。MQTT 协议也完美解决了运营商在 IoT 边缘侧面临的上述问题。
+随着物联网技术的快速发展，轻量级 MQTT 协议逐渐成为主流[物联网协议](https://www.emqx.com/zh/blog/iot-protocols-mqtt-coap-lwm2m)，广泛应用于 IoT 设备消息通信。MQTT 协议也完美解决了运营商在 IoT 边缘侧面临的上述问题。
 
 ![运营商物联网 MQTT 消息接入示意图](https://assets.emqx.com/images/790ad5d50e7d30156e86259cbebc71f9.png)
 
@@ -60,7 +60,7 @@ EMQ 面向运营商的云边一体化解决方案
 
 ### 基于 MQTT 协议实现云边协同管理
 
-为了更好的实现云-边-端的一体化管理，EMQ 除了支持基于 WebSocket/QUIC 协议的 KubeEdge 云边协同能力外，也自主开发了基于 MQTT 协议的 Edge  Manager Tunnel 组件，可实现插件管理、配置管理、规则管理、物模型同步、函数计算分发部署等云边协同能力。
+为了更好的实现云-边-端的一体化管理，EMQ 除了支持基于 WebSocket/[QUIC 协议](https://www.emqx.com/zh/blog/quic-protocol-the-features-use-cases-and-impact-for-iot-iov)的 KubeEdge 云边协同能力外，也自主开发了基于 MQTT 协议的 Edge  Manager Tunnel 组件，可实现插件管理、配置管理、规则管理、物模型同步、函数计算分发部署等云边协同能力。
 
 
 
@@ -80,7 +80,7 @@ MQTT 协议的轻量级特点使客户端到服务端的硬件需求大大降低
 
 ### 助力数字化转型
 
-通过基于 MQTT、CoAP 等物协议的物联网平台的建设，使得电信运营商从传统的网络管道运营商向以网络运营为主体，实现云网融合、数字化解决方案于一体的数字化转型。
+通过基于 MQTT、[CoAP](https://www.emqx.com/zh/blog/coap-protocol) 等物协议的物联网平台的建设，使得电信运营商从传统的网络管道运营商向以网络运营为主体，实现云网融合、数字化解决方案于一体的数字化转型。
 
 
 

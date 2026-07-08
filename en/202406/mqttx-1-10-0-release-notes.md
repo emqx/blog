@@ -10,7 +10,7 @@ MQTTX 1.10.0 introduces robust file read and write capabilities to the CLI. It s
 
 ### File Reading
 
-> Note: Due to MQTT protocol constraints, payload size must not exceed 256MB. Verify your MQTT broker's payload size limit before transmitting.
+> Note: Due to [MQTT protocol](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) constraints, payload size must not exceed 256MB. Verify your [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison)'s payload size limit before transmitting.
 
 **Using the** `pub` **Command**
 
@@ -238,7 +238,7 @@ If you need to make personalized settings, such as modifying the default connect
 | :----------------------- | :----------------------------------------------------------- |
 | VUE_APP_PAGE_TITLE       | The title displayed in the browser's title bar               |
 | VUE_APP_PAGE_DESCRIPTION | A brief page description for SEO purposes                    |
-| VUE_APP_DEFAULT_HOST     | The default address of the MQTT broker server connections    |
+| VUE_APP_DEFAULT_HOST     | The default address of the [MQTT broker server](https://www.emqx.com/en/blog/a-comprehensive-comparison-of-open-source-mqtt-brokers-in-2023) connections    |
 | BASE_URL                 | The root URL where the application is deployed. Helpful in constructing links and routing |
 | VUE_APP_OUTPUT_DIR       | The directory where the build files will be placed after compilation |
 
@@ -281,9 +281,9 @@ These updates focus on improving user experience, enhancing functionality, and f
   - **Dashboard View:** Offer a customizable overview of MQTT activities for personalized insights.
   - **JSON View**: Improve handling and display of JSON formatted data.
   - **System Topic View**: Specialized view for system-related [MQTT topics](https://www.emqx.com/en/blog/advanced-features-of-mqtt-topics).
-- **Support for Configurable Disconnect Properties (MQTT 5.0)**: Enhance connection management with customizable disconnection settings.
+- **Support for Configurable Disconnect Properties ([MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5))**: Enhance connection management with customizable disconnection settings.
 - **IoT Scenario Data Simulation**: Bring this feature to the desktop client to ease IoT scenario testing.
-- **Sparkplug B Support**: Extend MQTTX functionalities to include support for Sparkplug B.
+- **[Sparkplug B](https://www.emqx.com/en/solutions/mqtt-sparkplug) Support**: Extend MQTTX functionalities to include support for Sparkplug B.
 - **QoS 0 Message Storage Optimization**: Configurable options to reduce storage space usage.
 - **MQTT GUI Debug Functionality**: New features to aid in debugging MQTT communications.
 - **Plugin Functionality**: Introduction of a plugin system supporting protocol extensions like [CoAP](https://www.emqx.com/en/blog/coap-protocol) and [MQTT-SN](https://www.emqx.com/en/blog/connecting-mqtt-sn-devices-using-emqx).

@@ -10,7 +10,7 @@ In this article, we will focus on exploring the available subscription options i
 
 A subscription in MQTT consists of a topic filter and corresponding subscription options. So, we can set different subscription options for each subscription.
 
-MQTT 5.0 introduces four subscription options: QoS, No Local, Retain As Published, and Retain Handling. On the other hand, MQTT 3.1.1 only provides the QoS subscription option. However, the default behavior of these new subscription options in MQTT 5.0 remains consistent with MQTT 3.1.1. This makes it user-friendly if you plan to upgrade from MQTT 3.1.1 to MQTT 5.0.
+[MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5) introduces four subscription options: QoS, No Local, Retain As Published, and Retain Handling. On the other hand, MQTT 3.1.1 only provides the QoS subscription option. However, the default behavior of these new subscription options in MQTT 5.0 remains consistent with MQTT 3.1.1. This makes it user-friendly if you plan to upgrade from MQTT 3.1.1 to MQTT 5.0.
 
 Now, let's explore the functions of these subscription options together.
 

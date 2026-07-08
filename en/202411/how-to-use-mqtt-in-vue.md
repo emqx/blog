@@ -4,7 +4,7 @@
 
 In this tutorial, we’ll demonstrate how to integrate MQTT into your Vue project to quickly build MQTT Web application and enable seamless real-time IoT communication, covering essential operations like establishing a connection, subscribing to topics, publishing messages, and managing disconnections.
 
-> To create an MQTT connection in Vue 3 application using MQTT.js, please refer to [MQTT-Client-Examples/mqtt-client-Vue3.js at master · emqx/MQTT-Client-Examples](https://github.com/emqx/MQTT-Client-Examples/tree/master/mqtt-client-Vue3.js) 
+> To create an MQTT connection in Vue 3 application using [MQTT.js](https://www.emqx.com/en/blog/mqtt-js-tutorial), please refer to [MQTT-Client-Examples/mqtt-client-Vue3.js at master · emqx/MQTT-Client-Examples](https://github.com/emqx/MQTT-Client-Examples/tree/master/mqtt-client-Vue3.js) 
 
 ## Setting Up Your Vue Project with MQTT
 
@@ -73,7 +73,7 @@ const connection = reactive({
 const { ...options } = connection
 ```
 
-You can establish a connection between the client and the MQTT broker using the following code:
+You can establish a connection between the client and the [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) using the following code:
 
 ```javascript
 const client = mqtt.connect("ws://broker.emqx.io:8083/mqtt", options);

@@ -25,7 +25,7 @@ Neuron v2.0 fixes the following issues:
 
 Before Neuron v2.0 is officially commercialized, the functionality upgrade and maintenance of Neuron v1.x are particularly important. We recently released v1.3.4, including the following features:
 
-- The timestamp in the MQTT json package is extended from 10 digits to 13 digits.
+- The timestamp in the [MQTT json](https://www.emqx.com/en/blog/how-to-process-json-hex-and-binary-data-in-mqtt) package is extended from 10 digits to 13 digits.
 
 - OPC driver fixes the problem of 「0x00AA0000-non-critical timeout」that appeared when the certificate is connected to Siemens PLC S71200.
 

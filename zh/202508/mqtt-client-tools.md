@@ -15,7 +15,7 @@
 - 支持多个客户端同时在线；
 - 跨平台，可在不同的操作系统下使用；
 - 支持通过 [MQTT over WebSocket](https://www.emqx.com/zh/blog/connect-to-mqtt-broker-with-websocket)；
-- 高级功能：自定义脚本、日志记录、MQTT Payload 格式转换等。
+- 高级功能：自定义脚本、日志记录、[MQTT Payload](https://www.emqx.com/zh/blog/how-to-process-json-hex-and-binary-data-in-mqtt) 格式转换等。
 
 ## **前提条件：准备一个 MQTT Broker**
 
@@ -66,7 +66,7 @@ MQTTX 是一个基于 Electron 开发、由 [EMQX 团队](https://github.com/emq
 
 ### MQTT Explorer
 
-MQTT Explorer 是一款开源的 MQTT 客户端工具，提供易于使用的图形用户界面 (GUI)，具有结构化的主题概览。它采用分层的主视图，并支持以可视化的图表方式展示接收到的负载消息。
+[MQTT Explorer](https://www.emqx.com/zh/blog/connecting-to-emqx-cloud-with-mqtt-explorer) 是一款开源的 MQTT 客户端工具，提供易于使用的图形用户界面 (GUI)，具有结构化的主题概览。它采用分层的主视图，并支持以可视化的图表方式展示接收到的负载消息。
 
 MQTT Explorer 支持 MQTT 5.0 和 3.1.1 协议，并允许开发人员同时创建一个 MQTT/MQTTS 连接。
 

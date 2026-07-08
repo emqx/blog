@@ -1,6 +1,6 @@
-欢迎阅读 [MQTT 5.0 报文系列](https://www.emqx.com/zh/blog/introduction-to-mqtt-control-packets) 的最后一篇文章。在上一篇中，我们已经介绍了 [MQTT 5.0 的 DISCONNECT 报文](https://www.emqx.com/zh/blog/mqtt-5-0-control-packets-05-disconnect)。现在，我们将介绍 MQTT 中的最后一个控制报文：AUTH。
+欢迎阅读 [MQTT 5.0 报文系列](https://www.emqx.com/zh/blog/introduction-to-mqtt-control-packets) 的最后一篇文章。在上一篇中，我们已经介绍了 [MQTT 5.0 的 DISCONNECT 报文](https://www.emqx.com/zh/blog/mqtt-5-0-control-packets-05-disconnect)。现在，我们将介绍 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 中的最后一个控制报文：AUTH。
 
-MQTT 5.0 引入了增强认证特性，它使 MQTT 除了简单密码认证和 Token 认证以外，还能够支持质询/响应风格的认证。为了实现这一点，它在原先 CONNECT 和 CONNACK 报文的基础上，又引入了 AUTH 报文来实现任意多次的认证数据交换，以支持各种不同类型的认证机制，例如 [SCRAM](https://en.wikipedia.org/wiki/Salted_Challenge_Response_Authentication_Mechanism)、[Kerberos](https://en.wikipedia.org/wiki/Kerberos_(protocol)) 认证等等。
+MQTT 5.0 引入了增强认证特性，它使 MQTT 除了简单密码认证和 Token 认证以外，还能够支持质询/响应风格的认证。为了实现这一点，它在原先 CONNECT 和 [CONNACK](https://www.emqx.com/zh/blog/mqtt5-new-features-reason-code-and-ack) 报文的基础上，又引入了 AUTH 报文来实现任意多次的认证数据交换，以支持各种不同类型的认证机制，例如 [SCRAM](https://en.wikipedia.org/wiki/Salted_Challenge_Response_Authentication_Mechanism)、[Kerberos](https://en.wikipedia.org/wiki/Kerberos_(protocol)) 认证等等。
 
 一次典型的增强认证的报文交互流程如下：
 
@@ -10,7 +10,7 @@ MQTT 5.0 引入了增强认证特性，它使 MQTT 除了简单密码认证和 T
 
 ## AUTH 报文示例
 
-由于目前没有支持增强认证特性的 MQTT 客户端，所以我们直接以图示的方式来展示一个典型的 AUTH 报文，里面包含了 AUTH 报文中最重要的两个属性，即认证方法（Authentication Method）和认证数据（Authentication Data）：
+由于目前没有支持增强认证特性的 [MQTT 客户端](https://www.emqx.com/zh/blog/mqtt-client-tools)，所以我们直接以图示的方式来展示一个典型的 AUTH 报文，里面包含了 AUTH 报文中最重要的两个属性，即认证方法（Authentication Method）和认证数据（Authentication Data）：
 
 ![AUTH Packet.png](https://assets.emqx.com/images/3b7ac282f542aff5485af51bf2648249.png)
 
@@ -57,7 +57,7 @@ AUTH 报文是实现任意次数认证数据交换的核心，也使得 MQTT 的
 
 当我们遇到问题时，可以优先查看对端返回的响应报文中的 Reason Code，它可以指明大部分的错误原因。而当一些嵌入式设备上的端侧 SDK 实现不佳无法直接给出 Reason Code 时，我们可以尝试网络抓包来查看报文中的 Reason Code，此时我们可以借助 Wireshark，避免自己人工解析。
 
-[EMQX](https://github.com/emqx/emqx) 作为被广泛使用的可扩展、高可用的 MQTT Broker，也提供了一个方便用户排查问题的 [日志追踪](https://docs.emqx.com/zh/emqx/v5.1/observability/tracer.html#日志追踪介绍) 功能，它可以记录下指定 Client ID、主题、IP 的所有相关日志，包括报文收发日志。所以我们可以用它来分析客户端的行为是否异常，例如是否正确地响应了 PUBACK，是否重复发送了连接报文等等。
+[EMQX](https://github.com/emqx/emqx) 作为被广泛使用的可扩展、高可用的 [MQTT Broker](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison)，也提供了一个方便用户排查问题的 [日志追踪](https://docs.emqx.com/zh/emqx/v5.1/observability/tracer.html#日志追踪介绍) 功能，它可以记录下指定 Client ID、主题、IP 的所有相关日志，包括报文收发日志。所以我们可以用它来分析客户端的行为是否异常，例如是否正确地响应了 PUBACK，是否重复发送了连接报文等等。
 
 <section class="promotion">
     <div>

@@ -19,7 +19,7 @@ Regardless of whether it's the former or latter option, the client cannot determ
 
 ## How does the Subscription Identifier work?
 
-To address this issue, MQTT 5.0 introduced Subscription Identifiers. Its usage is very simple: clients can specify a Subscription Identifier when subscribing, and the server needs to store the mapping relationship between the subscription and the Subscription Identifier. When a PUBLISH packet matches a subscription and needs to be forwarded to the client, the server will return the subscription identifier associated with the subscription to the client together with the PUBLISH packet.
+To address this issue, [MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5) introduced Subscription Identifiers. Its usage is very simple: clients can specify a Subscription Identifier when subscribing, and the server needs to store the mapping relationship between the subscription and the Subscription Identifier. When a PUBLISH packet matches a subscription and needs to be forwarded to the client, the server will return the subscription identifier associated with the subscription to the client together with the PUBLISH packet.
 
 ![Subscription Identifier](https://assets.emqx.com/images/f9f1cf19de90a4e03647dbe52d69f7e7.png)
 

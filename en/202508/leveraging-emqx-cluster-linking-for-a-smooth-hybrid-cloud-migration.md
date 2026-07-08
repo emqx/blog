@@ -8,7 +8,7 @@ Moving to the cloud is a key strategy to resolve these issues. EMQX Dedicated ed
 
 ## Why Cluster Linking is Essential for Hybrid Cloud Migration
 
-- **Enables Effortless Zero-Downtime Migration:** It facilitates a "zero-downtime" migration by continuously synchronizing MQTT messages and session states between your on-premises and EMQX Cloud clusters. This ensures a consistent MQTT service experience for clients and simplifies the migration process with encapsulated data synchronization and routing capabilities.
+- **Enables Effortless Zero-Downtime Migration:** It facilitates a "zero-downtime" migration by continuously synchronizing MQTT messages and session states between your on-premises and [EMQX Cloud](https://www.emqx.com/en/cloud) clusters. This ensures a consistent MQTT service experience for clients and simplifies the migration process with encapsulated data synchronization and routing capabilities.
 - **Ensures Business Continuity and Data Integrity:** Cluster Linking provides the underlying data synchronization and routing to ensure a seamless client experience during connection switches, preventing service interruptions. It also prevents data silos by effectively integrating historical and real-time data, guaranteeing consistency and integrity.
 - **Offers Flexible Traffic Management and Disaster Recovery:** It allows for flexible traffic distribution, enabling gradual shifts to the cloud for testing and validation. Even post-migration, Cluster Linking serves as a vital disaster recovery solution, allowing rapid failover back to on-premises systems if cloud issues arise, ensuring operational resilience.
 
@@ -42,7 +42,7 @@ In this example, we will demonstrate how to connect a self-hosted EMQX broker to
 
    - **Username / Password**: Provide the username and password that the remote deployment accepts for connections.
 
-   - **Topics**: List of MQTT topic filters that specify which messages the current deployment will receive from the remote deployment, for example, `from-cluster`.
+   - **Topics**: List of [MQTT topic](https://www.emqx.com/en/blog/advanced-features-of-mqtt-topics) filters that specify which messages the current deployment will receive from the remote deployment, for example, `from-cluster`.
 
    - **Enable TLS**: Enable this option if communication between clusters requires TLS encryption. Configure the settings, such as SSL certificates.
 
@@ -76,7 +76,7 @@ In this example, we will demonstrate how to connect a self-hosted EMQX broker to
 
 ### Verify Hybrid Cloud Cluster Connectivity
 
-To confirm successful Cluster Linking, use MQTTX, a free MQTT client tool for testing connections (download at [MQTTX: Your All-in-one MQTT Client Toolbox](https://mqttx.app/)):
+To confirm successful Cluster Linking, use MQTTX, a [free MQTT client](https://www.emqx.com/en/blog/mqtt-client-tools) tool for testing connections (download at [MQTTX: Your All-in-one MQTT Client Toolbox](https://mqttx.app/)):
 
 1. Create a connection named `local-connection` in MQTTX, connecting to `deployment-local` using its MQTT host and credentials.
 2. Create a second connection named `cloud-connection`, connecting to `deployment-cloud`.

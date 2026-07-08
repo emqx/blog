@@ -1,14 +1,14 @@
 ## What is the Message Expiry Interval？
 
-The Message Expiry Interval is a new feature introduced in MQTT 5.0, which allows the publisher to set an expiry interval for time-sensitive messages. If the message remains on the server beyond this specified interval, the server will no longer distribute it to the subscribers. By default, the message does not include the message expiry interval, which means the message will never expire.
+The Message Expiry Interval is a new feature introduced in [MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5), which allows the publisher to set an expiry interval for time-sensitive messages. If the message remains on the server beyond this specified interval, the server will no longer distribute it to the subscribers. By default, the message does not include the message expiry interval, which means the message will never expire.
 
-MQTT's persistent sessions can cache unsent messages for offline clients and send them when the client reconnects. However, if the client is offline for a long time, there may be some short-lived messages that are no longer necessary to be sent to the client. Continuing to send these expired messages will only waste network bandwidth and client resources.
+[MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt)'s persistent sessions can cache unsent messages for offline clients and send them when the client reconnects. However, if the client is offline for a long time, there may be some short-lived messages that are no longer necessary to be sent to the client. Continuing to send these expired messages will only waste network bandwidth and client resources.
 
-Take connected cars as an example, we can send suggested driving speeds to the vehicle so it can pass the intersection during the green light. These messages are usually only valid before the vehicle reaches the next intersection, with a very short life cycle. Messages like front congestion alerts have a longer life cycle, generally valid within half an hour to 1 hour.
+Take [connected cars](https://www.emqx.com/en/blog/connected-cars-and-automotive-connectivity-all-you-need-to-know) as an example, we can send suggested driving speeds to the vehicle so it can pass the intersection during the green light. These messages are usually only valid before the vehicle reaches the next intersection, with a very short life cycle. Messages like front congestion alerts have a longer life cycle, generally valid within half an hour to 1 hour.
 
 If the client sets an expiry interval when publishing a message, the server will also include the expiry interval when forwarding this message, but the value of the expiry interval will be updated to the value received by the server minus the time the message stays on the server.
 
-This can prevent the timeliness of the message from being lost during transmission, especially when bridging to another MQTT server.
+This can prevent the timeliness of the message from being lost during transmission, especially when bridging to another [MQTT server](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison).
 
 ![02example.png](https://assets.emqx.com/images/55a8cabcba476a24d6533d2bc3af8651.png)
 

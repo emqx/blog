@@ -19,13 +19,13 @@ Key features and benefits of STOMP include:
 
 ### **Comparison with Other IoT Protocols**
 
-Compared to other popular IoT protocols like [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) and [CoAP](https://www.emqx.com/en/blog/coap-protocol), STOMP offers advantages in simplicity and flexibility. While MQTT excels in bandwidth-constrained environments due to its lightweight publish/subscribe model, its binary message format lacks the cross-language flexibility of STOMP. CoAP, designed for low-power devices, is ideal for constrained environments, whereas STOMP is more suitable for scenarios requiring greater flexibility and simple text messaging.
+Compared to other popular [IoT protocols](https://www.emqx.com/en/blog/iot-protocols-mqtt-coap-lwm2m) like [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) and [CoAP](https://www.emqx.com/en/blog/coap-protocol), STOMP offers advantages in simplicity and flexibility. While MQTT excels in bandwidth-constrained environments due to its lightweight publish/subscribe model, its binary message format lacks the cross-language flexibility of STOMP. CoAP, designed for low-power devices, is ideal for constrained environments, whereas STOMP is more suitable for scenarios requiring greater flexibility and simple text messaging.
 
 In summary, the STOMP protocol, with its intuitive design and cross-language compatibility, is a powerful tool for building flexible and scalable IoT applications. When used appropriately, it can significantly enhance the efficiency and interoperability of messaging systems.
 
 ## Accessing STOMP Devices with EMQX
 
-EMQX is a powerful, highly scalable distributed MQTT platform designed for IoT and real-time communication applications. In addition to fully supporting the MQTT protocol, EMQX manages connectivity, authentication, and messaging for various non-MQTT protocols, including STOMP, MQTT-SN, CoAP, and LwM2M, through a unified gateway interface for easier use.
+EMQX is a powerful, highly scalable distributed MQTT platform designed for IoT and real-time communication applications. In addition to fully supporting the MQTT protocol, EMQX manages connectivity, authentication, and messaging for various non-MQTT protocols, including STOMP, [MQTT-SN](https://www.emqx.com/en/blog/connecting-mqtt-sn-devices-using-emqx), CoAP, and LwM2M, through a unified gateway interface for easier use.
 
 The STOMP gateway in EMQX is based on [STOMP v1.2](https://stomp.github.io/stomp-specification-1.2.html) and is compatible with versions v1.0 and v1.1. In the following steps, we’ll use EMQX’s STOMP gateway to connect to STOMP devices.
 
@@ -35,7 +35,7 @@ The STOMP gateway in EMQX is based on [STOMP v1.2](https://stomp.github.io/stomp
 
 EMQX offers download and installation guides for various platforms: [https://docs.emqx.com/en/emqx/latest/deploy/install-enterprise.html](https://docs.emqx.com/en/emqx/latest/deploy/install-enterprise.html).
 
-For this example, we will launch EMQX Enterprise 5.8.0 using Docker:
+For this example, we will launch [EMQX Enterprise](https://www.emqx.com/en/products/emqx) 5.8.0 using Docker:
 
 ```shell
 docker run -p 18083:18083 -p 1883:1883 -p 61613:61613 emqx/emqx-enterprise:5.8.0
@@ -120,7 +120,7 @@ subscribing to /queue/test
 received message: Hi, STOMP Client
 ```
 
-Now, the STOMP client is successfully connected to EMQX and can send and receive messages with the MQTT client. You can also manage all STOMP clients through the EMQX Dashboard.
+Now, the STOMP client is successfully connected to EMQX and can send and receive messages with the [MQTT client](https://www.emqx.com/en/blog/mqtt-client-tools). You can also manage all STOMP clients through the EMQX Dashboard.
 
 ## Advanced STOMP Gateway Applications
 

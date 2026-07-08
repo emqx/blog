@@ -1,6 +1,6 @@
 ## Introduction
 
-[EMQX](https://github.com/emqx/emqx) and [VerneMQ](https://vernemq.com/) are open-source, highly scalable distributed MQTT brokers written in Erlang/OTP, known for their robustness, fault tolerance, and scalability.
+[EMQX](https://github.com/emqx/emqx) and [VerneMQ](https://vernemq.com/) are open-source, highly scalable distributed [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) brokers written in Erlang/OTP, known for their robustness, fault tolerance, and scalability.
 
 EMQX is now one of the most popular MQTT brokers in the world. While VerneMQ has not been actively developing and maintaining these years.
 
@@ -16,7 +16,7 @@ See: [Reaching 100M MQTT connections with EMQX 5.0](https://www.emqx.com/en/blog
 
 ![MQTT Cluster](https://assets.emqx.com/images/c0ef403f8b9207ebffa1bf228bc7f3a7.png)
 
-EMQX offers rich enterprise features, data integration, cloud hosting services, and commercial support from [EMQ Technologies Inc.](https://www.emqx.com/en/about) Over the years, EMQX has gained popularity among enterprises, startups, and individuals due to its performance, reliability, and scalability. EMQX is widely used in various industries, such as IoT, [industrial IoT](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges), connected cars, and telecommunications.
+EMQX offers rich enterprise features, data integration, cloud hosting services, and commercial support from [EMQ Technologies Inc.](https://www.emqx.com/en/about) Over the years, EMQX has gained popularity among enterprises, startups, and individuals due to its performance, reliability, and scalability. EMQX is widely used in various industries, such as IoT, [industrial IoT](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges), [connected cars](https://www.emqx.com/en/blog/connected-cars-and-automotive-connectivity-all-you-need-to-know), and telecommunications.
 
 **Pros:**
 
@@ -25,7 +25,7 @@ EMQX offers rich enterprise features, data integration, cloud hosting services, 
 - Horizontal scalability
 - High-performance and reliable
 - Rich enterprise features 
-- Pioneering MQTT over QUIC 
+- Pioneering [MQTT over QUIC](https://www.emqx.com/en/blog/mqtt-over-quic) 
 
 **Cons:**
 
@@ -88,15 +88,15 @@ Both the EMQX and VerneMQ projects are hosted on GitHub. EMQX was launched in 20
 
 EMQX and VerneMQ fully implement the MQTT 3.1.1 and 5.0 specifications and support [MQTT over WebSocket](https://www.emqx.com/en/blog/connect-to-mqtt-broker-with-websocket) and SSL/TLS encryption. Both brokers offer various authentication mechanisms, including username-password, JWT, LDAP, and OAuth 2.0 authentication.
 
-EMQX has multiple protocol gateways, including LwM2M/[CoAP](https://www.emqx.com/en/blog/coap-protocol), [MQTT-SN](https://www.emqx.com/en/blog/connecting-mqtt-sn-devices-using-emqx), and Stomp. EMQX 5.0 pioneers MQTT over QUIC, which has the potential to be the next-generation MQTT standard, with multiplexing and faster connection establishment and migration support.
+EMQX has multiple protocol gateways, including LwM2M/[CoAP](https://www.emqx.com/en/blog/coap-protocol), [MQTT-SN](https://www.emqx.com/en/blog/connecting-mqtt-sn-devices-using-emqx), and Stomp. EMQX 5.0 pioneers MQTT over [QUIC](https://www.emqx.com/en/blog/quic-protocol-the-features-use-cases-and-impact-for-iot-iov), which has the potential to be the next-generation MQTT standard, with multiplexing and faster connection establishment and migration support.
 
 In addition, EMQX provides rich enterprise features for management and integration, such as HTTP API, WebHook, and Rule Engine, which can integrate with Kafka, SQL, NoSQL databases, and cloud services via out-of-box data bridges.
 
 |                          | **EMQX**                            | **VerneMQ**  |
 | :----------------------- | :---------------------------------- | :----------- |
 | **MQTT 3.1.1**           | ✅                                   | ✅            |
-| **MQTT 5.0**             | ✅                                   | ✅            |
-| **MQTT over TLS**        | ✅                                   | ✅            |
+| **[MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5)**             | ✅                                   | ✅            |
+| **[MQTT over TLS](https://www.emqx.com/en/blog/fortifying-mqtt-communication-security-with-ssl-tls)**        | ✅                                   | ✅            |
 | **MQTT over WebSocket**  | ✅                                   | ✅            |
 | **MQTT over QUIC**       | ✅                                   | ❌            |
 | **LwM2M/CoAP**           | ✅                                   | ❌            |
@@ -144,7 +144,7 @@ The Enterprise Edition of EMQX can seamlessly integrate with Kafka, databases, a
 | **Rule Engine**       | ✅        | ❌           | [Introduction to Data Integration](https://docs.emqx.com/en/emqx/v5.0/data-integration/introduction.html) |
 | **Message Codec**     | ✅        | ❌           | [Introduction to Schema Registry](https://docs.emqx.com/en/enterprise/v4.4/rule/schema-registry.html) |
 | **Data Bridge**       | ✅        | ❌           | [Data Bridges](https://docs.emqx.com/en/emqx/v5.0/data-integration/data-bridges.html) |
-| **MQTT Bridge**       | ✅        | ✅           | [Bridge Data into MQTT Broker](https://docs.emqx.com/en/enterprise/v5.0/data-integration/data-bridge-mqtt.html)<br>[MQTT Bridge](https://docs.vernemq.com/configuring-vernemq/bridge) |
+| **[MQTT Bridge](https://www.emqx.com/en/blog/bridging-mosquitto-to-emqx-cluster)**       | ✅        | ✅           | [Bridge Data into MQTT Broker](https://docs.emqx.com/en/enterprise/v5.0/data-integration/data-bridge-mqtt.html)<br>[MQTT Bridge](https://docs.vernemq.com/configuring-vernemq/bridge) |
 | **Webhook**           | ✅        | ✅           | [Ingest Data into Webhook](https://docs.emqx.com/en/enterprise/v5.0/data-integration/data-bridge-webhook.html)<br>[Webhooks](https://docs.vernemq.com/plugin-development/webhookplugins) |
 | **Kafka/Confluent**   | ✅        | **?**       | [Stream Data into Kafka](https://docs.emqx.com/en/enterprise/v4.4/rule/bridge_kafka.html)<br>[GitHub - crisrise/vmq_kafka: A VerneMQ plugin that sends all published messages to Apache Kafka](https://github.com/crisrise/vmq_kafka) |
 | **Azure Event Hubs**  | ✅        | ❌           | [Stream Data into Kafka](https://docs.emqx.com/en/enterprise/v4.4/rule/bridge_kafka.html) |

@@ -39,7 +39,7 @@ If the user intends to use customized monitoring or alarm configurations, the Pr
 
 Configuring Authentication and Authorization from the Dashboard
 
-Authentication and authorization are the core security features in MQTT. In version 5, these features of EMQX have been redesigned to provide ease of use and a clear process flow.
+Authentication and authorization are the core security features in [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt). In version 5, these features of EMQX have been redesigned to provide ease of use and a clear process flow.
 
 ### Simpler security configuration
 
@@ -76,15 +76,15 @@ In the screenshot on the right hand side below the ‘expert' mode is on the lef
 
 ### Bidirectional data flow
 
-Previously, the Rule Engine only supported sending messages from EMQX to external integrations (Sink). If the user wanted to ingest from external integrations (Source), a bridge plug-in such as MQTT Bridge could have been used, however, no IoT rules could have been applied on the ingested messages.
+Previously, the Rule Engine only supported sending messages from EMQX to external integrations (Sink). If the user wanted to ingest from external integrations (Source), a bridge plug-in such as [MQTT Bridge](https://www.emqx.com/en/blog/bridging-mosquitto-to-emqx-cluster) could have been used, however, no IoT rules could have been applied on the ingested messages.
 
-In version 5, bidirectional data flow allows the users to freely bridge messages between a remote MQTT broker and EMQX, and extract, filter, enrich, and transform the data in real-time using the IoT rules.
+In version 5, bidirectional data flow allows the users to freely bridge messages between a remote [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) and EMQX, and extract, filter, enrich, and transform the data in real-time using the IoT rules.
 
 ![Bidirectional data flow](https://assets.emqx.com/images/05194e25f516f00766a73fa1dfe5def9.png)
 
 ### Visualized data flow
 
-A visual panel is provided on the Flow Chart page, where the user can view the data flow relationship of all IoT rules and the Data Bridge. The carefully choreographed process of “data coming from a device into an MQTT topic, being processed by an IoT rule, and finally, being sent to a web service or database” will be perfectly displayed on the page.
+A visual panel is provided on the Flow Chart page, where the user can view the data flow relationship of all IoT rules and the Data Bridge. The carefully choreographed process of “data coming from a device into an [MQTT topic](https://www.emqx.com/en/blog/advanced-features-of-mqtt-topics), being processed by an IoT rule, and finally, being sent to a web service or database” will be perfectly displayed on the page.
 
 In future releases, the Flow Chart panel will be further improved, wherein the user can freely arrange the data integration logic by drag-and-drop and linking.
 
@@ -104,7 +104,7 @@ You may download an example package for testing from this repo: [https://github.
 
 ## Online configuration updates
 
-Prior to version 5, online config updates are only provided in EMQX Enterprise edition.
+Prior to version 5, online config updates are only provided in [EMQX Enterprise](https://www.emqx.com/en/products/emqx) edition.
 
 In version 5, online config update feature is provided in the community edition. This allows the configurations to be hot updated across the cluster in one go.
 
@@ -116,7 +116,7 @@ The screenshot below is to demo online config change for log handlers and levels
 
 ## Better performance with brand-new EMQX 5
 
-All these features of EMQX v5.0 that we mentioned above can be viewed through the Dashboard. EMQX 5 will also include MQTT Over QUIC, Mira database, session persistence based on RocksDB, and more. We will introduce them in our future posts. Stay tuned.
+All these features of EMQX v5.0 that we mentioned above can be viewed through the Dashboard. EMQX 5 will also include [MQTT Over QUIC](https://www.emqx.com/en/blog/mqtt-over-quic), Mira database, session persistence based on RocksDB, and more. We will introduce them in our future posts. Stay tuned.
 
 If you are interested in trying out EMQX v5.0 for yourself, please download from here: [https://github.com/emqx/emqx/releases/tag/v5.0.0-rc.2](https://github.com/emqx/emqx/releases/tag/v5.0.0-rc.2)
 

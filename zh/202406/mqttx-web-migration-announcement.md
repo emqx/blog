@@ -17,7 +17,7 @@
 
 1. **WebSocket 连接限制**：
 
-   迁移至 HTTPS 后，HTTP 协议下的普通 MQTT over WebSocket 连接 `ws://` 将无法使用。所有的 WebSocket 连接必须使用 Secure WebSocket `wss://`，以确保数据在传输过程中的安全性。例如，请使用 `wss://broker.emqx.io:8084` 代替 `ws://broker.emqx.io:8083`。
+   迁移至 HTTPS 后，HTTP 协议下的普通 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) over WebSocket 连接 `ws://` 将无法使用。所有的 WebSocket 连接必须使用 Secure WebSocket `wss://`，以确保数据在传输过程中的安全性。例如，请使用 `wss://broker.emqx.io:8084` 代替 `ws://broker.emqx.io:8083`。
 
    这意味着，您在测试和生产环境中需要更新 MQTT over WebSocket 的连接配置。旧数据如果是使用 `ws://` 协议连接的，将无法在新站点中使用，需要适应新的安全要求。
 

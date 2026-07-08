@@ -1,6 +1,6 @@
-Welcome to the final article in the [MQTT 5.0 Packet Series](https://www.emqx.com/en/blog/introduction-to-mqtt-control-packets). In the previous article, we introduced the [DISCONNECT packet](https://www.emqx.com/en/blog/mqtt-5-0-control-packets-05-disconnect). Now, we will introduce the last control packet in MQTT: AUTH.
+Welcome to the final article in the [MQTT 5.0 Packet Series](https://www.emqx.com/en/blog/introduction-to-mqtt-control-packets). In the previous article, we introduced the [DISCONNECT packet](https://www.emqx.com/en/blog/mqtt-5-0-control-packets-05-disconnect). Now, we will introduce the last control packet in [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt): AUTH.
 
-MQTT 5.0 introduced the Enhanced Authentication feature, which enables MQTT to support challenge/response style authentication in addition to simple password authentication and token authentication. To achieve this, in addition to the original CONNECT and CONNACK packets, it introduced the AUTH packet to implement any number of authentication data exchanges, to support various types of authentication mechanisms, such as [SCRAM](https://en.wikipedia.org/wiki/Salted_Challenge_Response_Authentication_Mechanism), Kerberos authentication, and so on.
+[MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5) introduced the Enhanced Authentication feature, which enables MQTT to support challenge/response style authentication in addition to simple password authentication and token authentication. To achieve this, in addition to the original CONNECT and [CONNACK](https://www.emqx.com/en/blog/mqtt5-new-features-reason-code-and-ack) packets, it introduced the AUTH packet to implement any number of authentication data exchanges, to support various types of authentication mechanisms, such as [SCRAM](https://en.wikipedia.org/wiki/Salted_Challenge_Response_Authentication_Mechanism), Kerberos authentication, and so on.
 
 A typical Enhanced Authentication packet interaction process is as follows:
 
@@ -10,7 +10,7 @@ For a detailed introduction to Enhanced Authentication, you can refer to [*Lever
 
 ## Sample AUTH Packet
 
-Since there are currently no MQTT clients that support Enhanced Authentication, we will directly illustrate a typical AUTH packet, which includes the two most important Properties in the AUTH packet, namely the Authentication Method and Authentication Data:
+Since there are currently no [MQTT clients](https://www.emqx.com/en/blog/mqtt-client-tools) that support Enhanced Authentication, we will directly illustrate a typical AUTH packet, which includes the two most important Properties in the AUTH packet, namely the Authentication Method and Authentication Data:
 
 ![02authpacket.png](https://assets.emqx.com/images/dfb6eee6c1c4ce9013f7beb8fa1f510f.png)
 
@@ -57,7 +57,7 @@ Now, we have introduced all types of control packets in MQTT. As a binary protoc
 
 When we encounter problems, we can first check the Reason Code in the response packet returned by the other party, which can indicate most of the error causes. When some embedded device end-side SDK implementations are poor and cannot directly provide a Reason Code, we can try packet sniffing to view the Reason Code in the packet. At this time, we can use Wireshark to avoid manual parsing.
 
-[EMQX](https://github.com/emqx/emqx), as a widely used, highly scalable MQTT Broker, also provides a [Log Trace](https://docs.emqx.com/en/emqx/v5.1/observability/tracer.html) feature that is convenient for users to troubleshoot problems. It can record all relevant logs of specified Client ID, topic, and IP, including packet receiving and sending logs. So we can use it to analyze whether the behavior of the client is abnormal, such as whether it correctly responded to PUBACK, whether it repeatedly sent CONNACK packets, etc.
+[EMQX](https://github.com/emqx/emqx), as a widely used, highly scalable [MQTT Broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison), also provides a [Log Trace](https://docs.emqx.com/en/emqx/v5.1/observability/tracer.html) feature that is convenient for users to troubleshoot problems. It can record all relevant logs of specified Client ID, topic, and IP, including packet receiving and sending logs. So we can use it to analyze whether the behavior of the client is abnormal, such as whether it correctly responded to PUBACK, whether it repeatedly sent CONNACK packets, etc.
 
 <section class="promotion">
     <div>

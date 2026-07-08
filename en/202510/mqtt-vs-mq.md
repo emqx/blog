@@ -11,7 +11,7 @@ While they both handle messages, their core designs and ideal use cases are fund
 - **Core Model**: Based on **Publish/Subscribe**. Devices publish messages to a named "topic" on a central broker, and any client subscribed to that topic receives the message.
 - **Key Strengths**: Extremely efficient, with a minimal protocol overhead. It excels at handling a massive number of concurrent connections—think millions of low-power IoT sensors.
 - **Key Products**: [EMQX](https://www.emqx.com/en/platform), [Mosquitto](https://www.emqx.com/en/blog/mosquitto-mqtt-broker-pros-cons-tutorial-and-modern-alternatives), [VerneMQ](https://github.com/vernemq/vernemq).
-- **Primary Use Cases**: IoT, smart devices, connected cars, industrial automation, and mobile applications.
+- **Primary Use Cases**: IoT, smart devices, [connected cars](https://www.emqx.com/en/blog/connected-cars-and-automotive-connectivity-all-you-need-to-know), industrial automation, and mobile applications.
 
 ### MQ (Message Queue)
 
@@ -53,7 +53,7 @@ As the world’s most scalable MQTT platform, EMQX goes beyond a simple broker. 
 
 EMQX is not just an industry leader today; it’s a visionary shaping the future of messaging. While other platforms specialize in either MQTT or MQ, EMQX is pioneering a unified approach.
 
-The latest EMQX Enterprise 6.0 brings a groundbreaking feature that integrates native **Message Queue** functionality directly into its platform. This means you will no longer need to manage separate systems for your device connectivity and backend message queuing needs. A single EMQX cluster is able to handle both, dramatically simplifying your architecture and reducing operational overhead. By converging these two messaging paradigms, EMQX stands out as a powerful solution for both IoT and traditional enterprise applications.
+The latest [EMQX Enterprise](https://www.emqx.com/en/products/emqx) 6.0 brings a groundbreaking feature that integrates native **Message Queue** functionality directly into its platform. This means you will no longer need to manage separate systems for your device connectivity and backend message queuing needs. A single EMQX cluster is able to handle both, dramatically simplifying your architecture and reducing operational overhead. By converging these two messaging paradigms, EMQX stands out as a powerful solution for both IoT and traditional enterprise applications.
 
 > Learn more: [What's New in EMQX 6.0.0: Unifying MQTT and Message Queuing for a New Era of Messaging](https://www.emqx.com/en/blog/emqx-enterprise-6-0-0-release-notes) 
 

@@ -1,6 +1,6 @@
 In the era of IoT, the Industrial Internet of Things ([IIoT](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges)) has emerged as a game-changer for industrial operations. By connecting devices, machines, and systems, IIoT enables real-time monitoring, analysis, and control of industrial processes, improving efficiency, productivity, and safety.
 
-However, the fragmented edge devices, heterogeneity, and complexity of traditional IIoT systems raise significant challenges in terms of interoperability, scalability, and security. The Unified Namespace (UNS) framework can address these challenges and provide several advantages for IIoT 4.0, including simplified data integration, improved data accessibility, and greater scalability.
+However, the fragmented edge devices, heterogeneity, and complexity of traditional [IIoT systems](https://www.emqx.com/en/blog/industrial-iot-systems) raise significant challenges in terms of interoperability, scalability, and security. The Unified Namespace (UNS) framework can address these challenges and provide several advantages for IIoT 4.0, including simplified data integration, improved data accessibility, and greater scalability.
 
 ## What is Unified Namespace?
 
@@ -20,7 +20,7 @@ Another advantage of UNS in IIoT 4.0 is improved data management and analysis. B
 
 ## Evolution of the UNS Architecture
 
-The first UNS project was built by Walker Reynolds (President of Industrial 4.0 Solutions and winner of the 2015 Ignition by Inductive Automation Award) in 2005. He is also the most important figure in advocating UNS. The project was built using dynamic data exchange (DDE) with Excel spreadsheets for a salt mining field. In the following year, the project was adapted to MQTT technology.
+The first UNS project was built by Walker Reynolds (President of Industrial 4.0 Solutions and winner of the 2015 Ignition by Inductive Automation Award) in 2005. He is also the most important figure in advocating UNS. The project was built using dynamic data exchange (DDE) with Excel spreadsheets for a salt mining field. In the following year, the project was adapted to [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) technology.
 
 Initially, Walker planned to develop a data highway connecting all IIoT infrastructures. The data highway was responsible for acquiring the data from all stampers, mining machines used in salt mines. Maintainers would not have to drive down to the screen at the control booth to check human machine interfaces (HMIs) or control panels in panel offices. With all operations are unified in one namespace, users can monitor production environments without moving physically between plants and factories that are miles away.
 

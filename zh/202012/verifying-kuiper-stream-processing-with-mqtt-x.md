@@ -56,7 +56,7 @@ $ docker run -d --name emqx -p 1883:1883 emqx/emqx-edge:4.2.4
 
 ### MQTTX
 
-[MQTTX](https://mqttx.app/zh) 是由一款跨平台 [MQTT 5.0](https://www.emqx.com/zh/blog/introduction-to-mqtt-5) 桌面测试客户端，它支持 macOS，Linux，Windows。用户可以快速创建多个同时在线的 **MQTT 客户端**，方便测试 MQTT/TCP、MQTT/TLS、MQTT/WebSocket 的连接/发布/订阅功能及其他 **MQTT 协议** 特性。项目地址：[https://github.com/emqx/MQTTX](https://github.com/emqx/MQTTX)
+[MQTTX](https://mqttx.app/zh) 是由一款跨平台 [MQTT 5.0](https://www.emqx.com/zh/blog/introduction-to-mqtt-5) 桌面测试客户端，它支持 macOS，Linux，Windows。用户可以快速创建多个同时在线的 **[MQTT 客户端](https://www.emqx.com/zh/blog/mqtt-client-tools)**，方便测试 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt)/TCP、MQTT/TLS、MQTT/WebSocket 的连接/发布/订阅功能及其他 **MQTT 协议** 特性。项目地址：[https://github.com/emqx/MQTTX](https://github.com/emqx/MQTTX)
 
 > 版本：v1.4.2
 
@@ -102,7 +102,7 @@ Linux 用户可在 Snapcraft 中进行下载：[https://snapcraft.io/mqttx](http
 
 5. 选择 `配置组`，配置组即为流类型下定义的配置信息，比如 MQTT 默认配置组下 `servers` 信息为 `['tcp://127.0.0.1:1883']`。用户可自定义该配置信息，点击上方的 `源配置` 按钮，进入到页面中配置，也可到  `etc`  目录下修改配置文件。这里我们选择重新配置过的 `demo_conf` 配置组；
 
-   > 注意：如果使用的 MQTT Broker 为 Docker 启动的 EMQX Edge 话，Servers 地址需要修改为 Docker 容器内的 IP 地址
+   > 注意：如果使用的 [MQTT Broker](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison) 为 Docker 启动的 EMQX Edge 话，Servers 地址需要修改为 Docker 容器内的 IP 地址
 
 6. 选择 `流格式`，最后我们选择流数据格式为 `json`。
 

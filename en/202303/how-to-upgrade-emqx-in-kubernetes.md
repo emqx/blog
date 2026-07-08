@@ -40,7 +40,7 @@ It's important to note that the scenario where excessive reconnections cause ser
 
 ### Solution Design
 
-Blue-green deployment is a technique that involves maintaining two parallel copies (blue and green) of the entire system. The latest version of EMQX Kubernetes Operator, v[2.1.0](https://github.com/emqx/emqx-operator/releases/tag/2.1.0), has integrated blue-green deployment for EMQX Enterprise. This allows for the creation of a new version of the cluster based on the existing EMQX Enterprise cluster, without disrupting the old version. Traffic is then gradually and smoothly shifted to the new version once it is up and running.
+Blue-green deployment is a technique that involves maintaining two parallel copies (blue and green) of the entire system. The latest version of EMQX Kubernetes Operator, v[2.1.0](https://github.com/emqx/emqx-operator/releases/tag/2.1.0), has integrated blue-green deployment for [EMQX Enterprise](https://www.emqx.com/en/products/emqx). This allows for the creation of a new version of the cluster based on the existing EMQX Enterprise cluster, without disrupting the old version. Traffic is then gradually and smoothly shifted to the new version once it is up and running.
 
 EMQX Enterprise introduces the **Node Evacuation** feature since v4.4.12. It enables users to migrate connections and sessions to other nodes at a specified rate before shutting down a node, thus avoiding session data loss during the node shutdown.
 

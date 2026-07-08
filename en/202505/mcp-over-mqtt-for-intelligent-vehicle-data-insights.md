@@ -2,7 +2,7 @@
 
 With ongoing advances in AI and in-vehicle computing, the digital transformation of modern vehicles is accelerating. Vehicle networking systems are evolving beyond traditional cloud architectures by integrating edge computing and AI to reshape human-vehicle interaction. An automated analysis framework built on multi-source data enables the generation of insightful visual reports, greatly improving data efficiency for business teams.
 
-This article explores a solution that combines a vehicle-cloud collaborative architecture with the MCP over MQTT protocol, using driving behavior analysis and vehicle control as examples. The solution reduces data processing costs, enhances data security, and builds a real-time analytics engine through data fusion. Looking ahead, it can deliver in-depth insights—such as driving habit analysis and vehicle diagnostics—by establishing multidimensional business data models, offering predictive digital services for drivers.
+This article explores a solution that combines a vehicle-cloud collaborative architecture with the MCP over [MQTT protocol](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt), using driving behavior analysis and vehicle control as examples. The solution reduces data processing costs, enhances data security, and builds a real-time analytics engine through data fusion. Looking ahead, it can deliver in-depth insights—such as driving habit analysis and vehicle diagnostics—by establishing multidimensional business data models, offering predictive digital services for drivers.
 
 ## **Opportunities and Challenges in Driving Behavior Analysis**
 

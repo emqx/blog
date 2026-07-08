@@ -2,7 +2,7 @@ EMQX 是全球领先的开源分布式 [MQTT 消息服务器](https://www.emqx.c
 
 > EMQX GitHub: [https://github.com/emqx/emqx](https://github.com/emqx/emqx)   
 
-在本文中，我们将介绍如何构建一个 MQTT Dashboard，来使用 Prometheus 监控 EMQX 5.0 并通过 Grafana 可视化其数据指标。此外，我们还将引入 EMQX Exporter 来导出 Prometheus API 中未包含的指标，它兼容 EMQX 4.4 和 EMQX 5（开源版和企业版）。
+在本文中，我们将介绍如何构建一个 [MQTT Dashboard](https://www.emqx.com/zh/blog/emqx-prometheus-grafana)，来使用 Prometheus 监控 EMQX 5.0 并通过 Grafana 可视化其数据指标。此外，我们还将引入 EMQX Exporter 来导出 Prometheus API 中未包含的指标，它兼容 EMQX 4.4 和 EMQX 5（开源版和企业版）。
 
 ## 构建更完善的 MQTT Dashboard
 

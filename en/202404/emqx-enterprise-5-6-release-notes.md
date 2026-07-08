@@ -4,7 +4,7 @@ This latest version introduces a host of new features and enhancements, includin
 
 ## Amazon S3 Data Integration
 
-[Amazon Simple Storage Service (Amazon S3)](https://aws.amazon.com/s3/) is a highly reliable, stable, and secure Internet-oriented storage service that can be deployed and utilized rapidly. EMQX now offers seamless data integration with Amazon S3, enabling efficient storage of MQTT messages into Amazon S3 storage buckets for flexible IoT data storage.
+[Amazon Simple Storage Service (Amazon S3)](https://aws.amazon.com/s3/) is a highly reliable, stable, and secure Internet-oriented storage service that can be deployed and utilized rapidly. EMQX now offers seamless data integration with Amazon S3, enabling efficient storage of [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) messages into Amazon S3 storage buckets for flexible IoT data storage.
 
 This integration opens up opportunities for various business scenarios, such as data analytics, by combining IoT data with Amazon S3's extensive ecosystem of applications. Furthermore, Amazon S3 offers a cost-effective alternative to traditional databases for long-term data storage.
 
@@ -16,7 +16,7 @@ Learn more: https://docs.emqx.com/en/enterprise/v5.6/data-integration/s3.html
 
 EMQX introduces RabbitMQ consumer data integration, enabling message bridging from RabbitMQ to MQTT.
 
-Users can set up EMQX to retrieve messages from a designated queue in RabbitMQ. Subsequently, they can utilize the rule engine to conduct versatile data processing on these messages before publishing them to an MQTT topic as specified by EMQX.
+Users can set up EMQX to retrieve messages from a designated queue in RabbitMQ. Subsequently, they can utilize the rule engine to conduct versatile data processing on these messages before publishing them to an [MQTT topic](https://www.emqx.com/en/blog/advanced-features-of-mqtt-topics) as specified by EMQX.
 
 This functionality combines the powerful features of RabbitMQ and EMQX, allowing tasks such as asynchronous device command issuance, task scheduling, and message forwarding. It provides users with greater flexibility and scalability, helping them meet their business requirements effectively.
 
@@ -100,7 +100,7 @@ Learn more: [https://docs.emqx.com/en/enterprise/v5.6/access-control/blacklist.h
 
 ## Improved Client Management Features
 
-EMQX has previously provided comprehensive MQTT client management capabilities through the Dashboard and REST API. These capabilities include querying online status and connection information, monitoring traffic and message exchange statistics, and viewing statuses of the Inflight Window and the Message Queue. These features offer robust support for users and application developers.
+EMQX has previously provided comprehensive [MQTT client](https://www.emqx.com/en/blog/mqtt-client-tools) management capabilities through the Dashboard and REST API. These capabilities include querying online status and connection information, monitoring traffic and message exchange statistics, and viewing statuses of the Inflight Window and the Message Queue. These features offer robust support for users and application developers.
 
 In this release, we have further bolstered these capabilities to enable users to achieve even more flexible and detailed client management.
 
@@ -167,7 +167,7 @@ Below are the significant bug fixes addressed:
 - [#11868](https://github.com/emqx/emqx/pull/11868) Resolved an issue where Will messages failed to publish after session takeover.
 - [#12347](https://github.com/emqx/emqx/pull/12347) Updated MQTT Sink data integration to ensure all messages are treated as valid, even with incomplete data or non-existent placeholders. This prevents incorrect rejection and discarding of messages as invalid.
   - Payload and Topic templates now render undefined variables as empty strings instead of literal "undefined" strings.
-- [#12492](https://github.com/emqx/emqx/pull/12492) Now includes the final Receive-Maximum property in CONNACK messages for MQTT 5.0 clients. This value takes the minimum between the client's Receive-Maximum and max_inflight configured by EMQX, which was previously omitted.
+- [#12492](https://github.com/emqx/emqx/pull/12492) Now includes the final Receive-Maximum property in [CONNACK](https://www.emqx.com/en/blog/mqtt5-new-features-reason-code-and-ack) messages for [MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5) clients. This value takes the minimum between the client's Receive-Maximum and max_inflight configured by EMQX, which was previously omitted.
 - [#12541](https://github.com/emqx/emqx/pull/12541) Introduced a parameter check for DNS auto-cluster configuration to ensure proper linkage between [node.name](http://node.name/) and cluster.discover_strategy. For instance, when using A or AAAA record types, all nodes must utilize a static IP address as the hostname.
 - [#12566](https://github.com/emqx/emqx/pull/12566) Enhanced the bootstrap mechanism for REST API keys:
   - Skips empty lines in bootstrap files to avoid errors.

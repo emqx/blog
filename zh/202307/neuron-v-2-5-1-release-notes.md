@@ -110,7 +110,7 @@ DL/T645-1997 插件支持串口连接和透传的 TCP 连接。
 
 ## 未来规划
 
-- MQTT 功能升级
+- [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 功能升级
 
    上报离线缓存数据计划添加频率控制，用户可自行设置上报数据的频率。同时，MQTT 上报离线缓存数据支持单独定义 Topic，可由用户自行定义。
 

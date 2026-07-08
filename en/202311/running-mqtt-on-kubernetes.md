@@ -42,13 +42,13 @@ In addition to self-healing, Kubernetes also makes administration more efficient
 
 ## Deploying MQTT Brokers with a Kubernetes Operator: Step by Step
 
-EMQX is the leading open source MQTT broker. It provides a Docker Official Image which is [available on Docker Hub](https://hub.docker.com/_/emqx) and an open source [Kubernetes operator](https://github.com/emqx/emqx-operator), which supports the free and open source version of EMQX. Operators make it easy to deploy complex applications on Kubernetes.
+EMQX is the leading [open source MQTT broker](https://www.emqx.com/en/blog/a-comprehensive-comparison-of-open-source-mqtt-brokers-in-2023). It provides a Docker Official Image which is [available on Docker Hub](https://hub.docker.com/_/emqx) and an open source [Kubernetes operator](https://github.com/emqx/emqx-operator), which supports the free and open source version of EMQX. Operators make it easy to deploy complex applications on Kubernetes.
 
 With the Kubernetes operator, you can easily deploy the free EMQX broker on Kubernetes and get access to these features:
 
 - Ability to scale up to 100M+ IoT devices in 1 cluster, while maintaining 1M message per second throughput and sub-millisecond latency.
 - 100% compliant with [MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5) and 3.x, support for multiple open standard protocols like HTTP, QUIC, and WebSocket.
-- Secures bi-directional communication with MQTT over TLS/SSL and various authentication mechanisms.
+- Secures bi-directional communication with [MQTT over TLS](https://www.emqx.com/en/blog/fortifying-mqtt-communication-security-with-ssl-tls)/SSL and various authentication mechanisms.
 - Uses powerful SQL-based rules engine to extract, filter, enrich and transform IoT data in real-time.
 - Ensures high availability and horizontal scalability with a masterless distributed architecture.
 - More than 20K+ enterprise users across 50+ countries and regions, connecting 100M+ IoT devices worldwide. Trusted by over 400 customers in mission-critical scenarios including over 70 Fortune 500 companies.
@@ -57,7 +57,7 @@ Here is how to use the EMQX Kubernetes operator to quickly get up and running wi
 
 ### Setup Requirements
 
-Prior to deploying the EMQX Operator, make sure the following components are set and ready:
+Prior to deploying the [EMQX Operator](https://www.emqx.com/en/solutions/mqtt-on-kubernetes), make sure the following components are set and ready:
 
 - An active [Kubernetes cluster](https://kubernetes.io/docs/concepts/overview/). To select a Kubernetes version, refer to [Choosing a Kubernetes Version](https://github.com/emqx/emqx-operator/blob/main/docs/en_US/index.md#how-to-selector-kubernetes-version).
 - [kubectl](https://kubernetes.io/docs/tasks/tools/#kubectl), a command-line tool that allows you to run commands against Kubernetes clusters. You can verify the status of your Kubernetes cluster through the kubectl cluster-info command.

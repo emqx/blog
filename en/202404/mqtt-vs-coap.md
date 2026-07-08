@@ -128,7 +128,7 @@ For more details refer to: [Multi-Protocol Gateway | EMQX Enterprise Docs](https
 
 MQTT and CoAP are two powerful protocols designed for the unique requirements of IoT devices. While they have many similarities, their differences in design and architecture make them suitable for different use cases. Understanding these differences can help in selecting the right protocol for your IoT project.
 
-As the IoT continues to evolve, we can expect further advancements and possibly new protocols to emerge that cater to the diverse and growing needs of this field. It will be exciting to see the future developments in IoT communication protocols.
+As the IoT continues to evolve, we can expect further advancements and possibly new protocols to emerge that cater to the diverse and growing needs of this field. It will be exciting to see the future developments in [IoT communication protocols](https://www.emqx.com/en/blog/iot-protocols-mqtt-coap-lwm2m).
 
 
 

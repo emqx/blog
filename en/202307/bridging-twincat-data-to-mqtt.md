@@ -1,4 +1,4 @@
-This blog will provide a comprehensive guide on bridging TwinCAT data to MQTT. We will use Neuron to collect data from TwinCAT, upload the collected data to EMQX, and view it using MQTTX.
+This blog will provide a comprehensive guide on bridging TwinCAT data to [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt). We will use Neuron to collect data from TwinCAT, upload the collected data to EMQX, and view it using MQTTX.
 
 ## The Architecture of TwinCAT to MQTT Bridging
 
@@ -12,7 +12,7 @@ From the very beginning, Neuron has supported MQTT as one of its communication p
 
 Neuron provides a [Beckhoff ADS plugin](https://docs.emqx.com/en/neuron/latest/configuration/south-devices/ads/ads.html) from version 2.2.0. The Neuron Beckhoff ADS plugin implements the ADS protocol over TCP. It supports communication with [Beckhoff TwinCAT](https://www.beckhoff.com/en-us/products/automation/twincat/#stage-special-item-s320986-2_t0) PLCs, further enriching Neuron’s connectivity capabilities and resolving user needs. 
 
-With the Beckhoff ADS plugin, users can collect data from TwinCAT PLCs easily. Together with the MQTT plugin, users can push collected data to industrial IoT platforms such as the [EMQX platform](https://www.emqx.com/en/products/emqx), or publish messages back to TwinCAT PLCs, triggering device actions such as turning on or off lights, motors, and other equipment. 
+With the Beckhoff ADS plugin, users can collect data from TwinCAT PLCs easily. Together with the MQTT plugin, users can push collected data to [industrial IoT](https://www.emqx.com/en/blog/industrial-iot-systems) platforms such as the [EMQX platform](https://www.emqx.com/en/products/emqx), or publish messages back to TwinCAT PLCs, triggering device actions such as turning on or off lights, motors, and other equipment. 
 
 ### EMQX for Handling MQTT Messages
 

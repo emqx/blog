@@ -2,7 +2,7 @@
 
 Upstash is a cloud-based, serverless data platform that empowers developers to seamlessly integrate Redis databases and Kafka into their applications without the hassle of managing infrastructure. Offering a serverless architecture, Upstash allows users to enjoy the benefits of Redis, a high-performance, in-memory data store, and Kafka, without dealing with the complexities of deployment, scaling, or maintenance.
 
-Recently, EMQX Cloud, a fully managed MQTT cloud service, has announced its integration support for  Upstash, a serverless Redis that can be used as a database, cache, and message broker.  This powerful combination allows for smooth integration between IoT devices that use MQTT and Redis for fast data access and processing, thus unlocking the full potential of IoT infrastructure for scalable and future-proof solutions.
+Recently, [EMQX Cloud](https://www.emqx.com/en/cloud), a fully managed [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) cloud service, has announced its integration support for  Upstash, a serverless Redis that can be used as a database, cache, and message broker.  This powerful combination allows for smooth integration between IoT devices that use MQTT and Redis for fast data access and processing, thus unlocking the full potential of IoT infrastructure for scalable and future-proof solutions.
 
 In this tutorial, we'll show you step-by-step how to integrate Upstash with EMQX Cloud in four detailed steps.
 
@@ -54,7 +54,7 @@ In the Cloud Console, navigate to ‘Authentication & ACL’ from the left menu,
 
 #### 3. Enable NAT Gateway
 
-Before setting up data integration, we need to enable the NAT gateway. By default, the MQTT broker is deployed in a VPC, which cannot send data to other services over the public network.
+Before setting up data integration, we need to enable the NAT gateway. By default, the [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) is deployed in a VPC, which cannot send data to other services over the public network.
 
 There are two methods to enable external data transfer:
 

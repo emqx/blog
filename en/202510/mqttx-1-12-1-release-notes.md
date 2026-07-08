@@ -27,7 +27,7 @@ Before using SCRAM in MQTTX, you need to enable it on your [MQTT broker](https:/
 ### Setup: Desktop & Web
 
 1. Open connection settings
-2. Select the **MQTT 5.0** protocol (the default)
+2. Select the **[MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) 5.0** protocol (the default)
 3. In the **Authentication** section, choose **SCRAM** as your authentication method
 4. Select your hash algorithm:
    - **SCRAM-SHA-1**: Broader compatibility with older brokers

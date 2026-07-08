@@ -2,11 +2,11 @@
 
 Industry 4.0 has ushered in a new era of technological advancements, and the [Industrial Internet of Things (IIoT)](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges) is at the forefront of this revolution. IIoT has transformed the way data is collected, analyzed, and utilized. With billions of interconnected devices, real-time data flow is crucial to achieving automation, efficiency, and predictive maintenance. 
 
-In this article, we will introduce a complete solution for Industrial IoT using [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt), edge intelligence, and Timescale. We'll provide a step-by-step guide on how to integrate EMQX Cloud, a fully managed MQTT cloud service platform, with edge computing intelligence and Timescale's analytical capabilities. This will enable a revolutionary transformation in the Industrial IoT, and we'll explain everything in detail.
+In this article, we will introduce a complete solution for [Industrial IoT](https://www.emqx.com/en/blog/industrial-iot-systems) using [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt), edge intelligence, and Timescale. We'll provide a step-by-step guide on how to integrate EMQX Cloud, a fully managed MQTT cloud service platform, with edge computing intelligence and Timescale's analytical capabilities. This will enable a revolutionary transformation in the Industrial IoT, and we'll explain everything in detail.
 
 ## EMQX Cloud: Addressing Challenges in IIoT
 
-[EMQX Cloud](https://www.emqx.com/en/cloud) is a cloud-based MQTT broker service designed specifically for handling large-scale IIoT data streams. It provides seamless connectivity from the edge to the cloud, ensuring real-time data transmission, processing, and analysis.
+[EMQX Cloud](https://www.emqx.com/en/cloud) is a cloud-based [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) service designed specifically for handling large-scale IIoT data streams. It provides seamless connectivity from the edge to the cloud, ensuring real-time data transmission, processing, and analysis.
 
 EMQX Cloud can empower IIoT advancement in the following aspects:
 
@@ -39,7 +39,7 @@ When deploying edge computing solutions, choosing the right tools and components
 
 ### NanoMQ: A Perfect Choice as an Edge MQTT Broker
 
-NanoMQ is a lightweight, high-performance MQTT 5.0 broker designed for edge computing scenarios. Its advantages include:
+NanoMQ is a lightweight, high-performance [MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5) broker designed for edge computing scenarios. Its advantages include:
 
 - **Lightweight and Resource-Friendly**: NanoMQ is designed to run on resource-constrained edge devices with minimal impact on device performance.
 - **Support for MQTT 5.0**: It supports the MQTT 5.0 protocol, providing more features and better performance to handle complex communication requirements.
@@ -74,7 +74,7 @@ NanoMQ is a lightweight, high-performance MQTT 5.0 broker designed for edge comp
    - MQTT protocol version
    - Client identifier (automatically assigned by NanoMQ by default)
    - Clean start
-   - Keep Alive
+   - [Keep Alive](https://www.emqx.com/en/blog/mqtt-keep-alive)
    - Username
    - Password
    - Forwarded topics (multiple topics separated by commas)
@@ -120,7 +120,7 @@ To verify the installation and functionality of NanoMQ, you can perform the foll
 
 1. **Connect to NanoMQ**
 
-   Use MQTT client tools such as MQTTX or mosquitto_sub/mosquitto_pub to connect to NanoMQ.
+   Use [MQTT client](https://www.emqx.com/en/blog/mqtt-client-tools) tools such as MQTTX or mosquitto_sub/mosquitto_pub to connect to NanoMQ.
 
    ![Connect to NanoMQ](https://assets.emqx.com/images/65e801bffae9143af49a745c87fbc824.png)
 
@@ -158,7 +158,7 @@ To verify the installation and functionality of NanoMQ, you can perform the foll
 
    ![Publish and Subscribe Testing](https://assets.emqx.com/images/5af5fbea88a0ab7d64ee9331a21b7dbd.png)
 
-In summary, configuring the connection of edge devices to EMQX Cloud requires detailed setup, and testing the connection through publishing and subscribing to MQTT topics can help verify the feasibility of the connection. This process lays the foundation for achieving a seamless connection between EMQX Cloud and edge devices.
+In summary, configuring the connection of edge devices to EMQX Cloud requires detailed setup, and testing the connection through publishing and subscribing to [MQTT topics](https://www.emqx.com/en/blog/advanced-features-of-mqtt-topics) can help verify the feasibility of the connection. This process lays the foundation for achieving a seamless connection between EMQX Cloud and edge devices.
 
 ## Integration with Timescale: Configuration, Data Transformation, and Persistence
 

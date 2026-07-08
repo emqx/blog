@@ -1,4 +1,4 @@
-金秋十月，NanoMQ 继续保持稳步更新，最新的 0.13 版本将于近日正式发布。此版本的更新继续聚焦于桥接功能部分：为原来的 MQTT over QUIC 桥接功能增加了多路桥接和更丰富的 QUIC 传输层配置参数，新增了内置的 Azure 桥接功能。另外新增了规则引擎消息重发布功能。
+金秋十月，NanoMQ 继续保持稳步更新，最新的 0.13 版本将于近日正式发布。此版本的更新继续聚焦于桥接功能部分：为原来的 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) over [QUIC](https://www.emqx.com/zh/blog/quic-protocol-the-features-use-cases-and-impact-for-iot-iov) 桥接功能增加了多路桥接和更丰富的 QUIC 传输层配置参数，新增了内置的 Azure 桥接功能。另外新增了规则引擎消息重发布功能。
 
 ## 更完善的 MQTT over QUIC 桥接
 
@@ -111,7 +111,7 @@ bridge.mqtt.azuer.subscriptions.1.topic=devices/{device_id}/messages/devicebound
 
 <center>例：使用VS Code生成SAS令牌的方法</center>
 
-如此启动 NanoMQ 就能够完成将本地标准 MQTT 客户端的消息转换桥接至 Azure IoT Hub。
+如此启动 NanoMQ 就能够完成将本地标准 [MQTT 客户端](https://www.emqx.com/zh/blog/mqtt-client-tools)的消息转换桥接至 Azure IoT Hub。
 
 ## 规则引擎消息重发布
 

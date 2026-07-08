@@ -70,11 +70,11 @@
 
 ### 1. Neuron 和 EMQX
 
-[Neuron](https://github.com/emqx/neuron) 和 [EMQX](https://www.emqx.com/zh/products/emqx) 的结合打造了强大的工业物联网平台，它专为应对工业环境的挑战而设计。Neuron 作为工业连接网关，具有实时、异步的数据处理能力，响应时间低至 100 毫秒。它能够高效地从各种工业设备和系统中收集、聚合和转换数据，支持 [Modbus](https://www.emqx.com/zh/blog/modbus-protocol-the-grandfather-of-iot-communication)、OPC UA、BACnet 等多种协议。EMQX 是一个以其强大的消息传输基础设施而著称的 [MQTT Broker](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison)。经过筛选的数据会随后无缝传输到 EMQX，确保了数据交换的迅速可靠，同时保持低延迟。
+[Neuron](https://github.com/emqx/neuron) 和 [EMQX](https://www.emqx.com/zh/products/emqx) 的结合打造了强大的工业物联网平台，它专为应对工业环境的挑战而设计。Neuron 作为工业连接网关，具有实时、异步的数据处理能力，响应时间低至 100 毫秒。它能够高效地从各种工业设备和系统中收集、聚合和转换数据，支持 [Modbus](https://www.emqx.com/zh/blog/modbus-protocol-the-grandfather-of-iot-communication)、[OPC UA](https://www.emqx.com/zh/blog/opc-ua-protocol)、BACnet 等多种协议。EMQX 是一个以其强大的消息传输基础设施而著称的 [MQTT Broker](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison)。经过筛选的数据会随后无缝传输到 EMQX，确保了数据交换的迅速可靠，同时保持低延迟。
 
 ![Neuron and EMQX](https://assets.emqx.com/images/be4f2094505c31fa434bf926ac0ace11.png)
 
-这个集成平台构建了一个统一的命名空间，将来自不同来源的数据按照标准化的 MQTT 主题组织起来，简化了数据的访问和管理。它具有良好的可扩展性，能够适应工业物联网生态系统的发展，它在实时数据分析方面优势明显，能够实现基于数据的决策和过程优化。Neuron 和 EMQX 重视安全性，支持加密（TLS）和认证机制，保障了敏感工业数据的安全。该平台实现了与其他物联网应用、大数据分析工具和云平台的无缝集成，使其成为一个多用途的解决方案，用于工业运营中的全方位的数据管理、分析和报告，可以有效提升效率和竞争力。
+这个集成平台构建了一个统一的命名空间，将来自不同来源的数据按照标准化的 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 主题组织起来，简化了数据的访问和管理。它具有良好的可扩展性，能够适应工业物联网生态系统的发展，它在实时数据分析方面优势明显，能够实现基于数据的决策和过程优化。Neuron 和 EMQX 重视安全性，支持加密（TLS）和认证机制，保障了敏感工业数据的安全。该平台实现了与其他物联网应用、大数据分析工具和云平台的无缝集成，使其成为一个多用途的解决方案，用于工业运营中的全方位的数据管理、分析和报告，可以有效提升效率和竞争力。
 
 <section class="promotion">
     <div>

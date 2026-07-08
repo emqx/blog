@@ -82,7 +82,7 @@ An automotive assembly plant standardized on **Modbus RTU over RS-485 daisy-chai
 
 ### Smart Factory 
 
-The BACnet and Modbus protocols are not exclusive and can be used in conjunction in some scenarios. In the scenario of building an Internet of Things platform for a smart factory, BACnet may be used for status monitoring and control of HVAC, lighting, and security systems. Modbus can be used for status monitoring and action control of production equipment.
+The BACnet and Modbus protocols are not exclusive and can be used in conjunction in some scenarios. In the scenario of building an Internet of Things platform for a [smart factory](https://www.emqx.com/en/blog/what-is-a-smart-factory-key-components-4-levels-of-evolution), BACnet may be used for status monitoring and control of HVAC, lighting, and security systems. Modbus can be used for status monitoring and action control of production equipment.
 
 In general, BACnet dominates building automation, while Modbus remains the dominant protocol in industrial environments.
 
@@ -97,7 +97,7 @@ When deciding whether to use BACnet or Modbus, consider the following factors:
 
 ## EMQX Neuron: An Industrial Gateway Supporting Both BACnet and Modbus Protocols 
 
-[EMQX Neuron](https://www.emqx.com/en/products/emqx-neuron) is software tailored for the industrial sector, focusing on equipment data collection and edge intelligent analysis. It is primarily deployed in industrial settings, facilitating industrial equipment communication, industrial bus protocol acquisition, industrial system data integration, edge-level data filtering and analysis, AI algorithm integration, and integration with IIoT platforms. EMQX Neuron provides multi-protocol access capability, supporting simultaneous access to dozens of industrial protocols such as Modbus, [OPC UA](https://www.emqx.com/en/blog/opc-ua-protocol), Ethernet/IP, BACnet, Siemens, Mitsubishi, and more.
+[EMQX Neuron](https://www.emqx.com/en/products/emqx-neuron) is software tailored for the industrial sector, focusing on equipment data collection and edge intelligent analysis. It is primarily deployed in industrial settings, facilitating industrial equipment communication, industrial bus protocol acquisition, industrial system data integration, edge-level data filtering and analysis, AI algorithm integration, and integration with [IIoT platforms](https://www.emqx.com/en/blog/iiot-platform-key-components-and-5-notable-solutions). EMQX Neuron provides multi-protocol access capability, supporting simultaneous access to dozens of industrial protocols such as Modbus, [OPC UA](https://www.emqx.com/en/blog/opc-ua-protocol), Ethernet/IP, BACnet, Siemens, Mitsubishi, and more.
 
 The EMQX Neuron BACnet plugin can act as a client to access BACnet devices. For more information, you can read [BACnet/IP | EMQX Neuron Docs](https://docs.emqx.com/en/neuronex/latest/configuration/south-devices/bacnet-ip/bacnet-ip.html) and [Bridging BACnet Data to MQTT: A Solution to Better Implementing Intelligent Building](https://www.emqx.com/en/blog/bridging-bacnet-data-to-mqtt).  
 

@@ -1,4 +1,4 @@
-The NanoMQ project keeps a steady pace in updating new versions each month. At the end of May, the v0.8.0 was officially released (download here: [Release NanoMQ 0.8.0 · emqx/nanomq](https://github.com/nanomq/nanomq/releases/tag/0.8.0)). We have brought you 2 important feature updates: event WebHook, and the authentication HTTP plugins. We have also added the new HTTP API for viewing the data model of the MQTT namespace. Needless to say, bugs are fixed, and better performance is achieved.
+The NanoMQ project keeps a steady pace in updating new versions each month. At the end of May, the v0.8.0 was officially released (download here: [Release NanoMQ 0.8.0 · emqx/nanomq](https://github.com/nanomq/nanomq/releases/tag/0.8.0)). We have brought you 2 important feature updates: event WebHook, and the authentication HTTP plugins. We have also added the new HTTP API for viewing the data model of the [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) namespace. Needless to say, bugs are fixed, and better performance is achieved.
 
 ## **Asynchronous and Easy-to-Use WebHook System**
 
@@ -69,7 +69,7 @@ At present, the WebHook system of NanoMQ supports the following events:
 
 | Name                | Notes                                | Execution time                                               |
 | ------------------- | ------------------------------------ | ------------------------------------------------------------ |
-| client.connack      | MQTT client end connection succeeded | When the server end is ready to send the connection response messages |
+| client.connack      | [MQTT client](https://www.emqx.com/en/blog/mqtt-client-tools) end connection succeeded | When the server end is ready to send the connection response messages |
 | client.disconnected | MQTT client disconnected             | When the client connection layer is ready to shut down       |
 | message.publish     | Publishing MQTT messages             | Before the server publishes (routes) the messages            |
 
@@ -124,7 +124,7 @@ NanoMQ 0.8.0 provides the following updates and optimization as well:
 
 NanoMQ will officially release the rule engine in June and introduce a new database as an edge data full persistence option. This feature is still in the Demo stage, but available in the latest master branch. Users may independently compile, install and use it.
 
-NanoSDK will release the RC version of MQTT over QUIC next month. It is the first [MQTT SDK](https://www.emqx.com/en/mqtt-client-sdk) of the industry based on C language and fully supports the MQTT 3.1.1 and QUIC functions, please stay tuned.
+NanoSDK will release the RC version of [MQTT over QUIC](https://www.emqx.com/en/blog/mqtt-over-quic) next month. It is the first [MQTT SDK](https://www.emqx.com/en/mqtt-client-sdk) of the industry based on C language and fully supports the MQTT 3.1.1 and [QUIC](https://www.emqx.com/en/blog/quic-protocol-the-features-use-cases-and-impact-for-iot-iov) functions, please stay tuned.
 
 
 <section class="promotion">

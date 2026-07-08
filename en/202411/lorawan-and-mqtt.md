@@ -22,7 +22,7 @@ MQTT is a lightweight, publish/subscribe messaging protocol designed for bandwid
 
 ### Differences Between MQTT and LoRa
 
-While both are IoT protocols, MQTT and LoRa have significant differences at their core. The table below compares them across several technical and application dimensions:
+While both are [IoT protocols](https://www.emqx.com/en/blog/iot-protocols-mqtt-coap-lwm2m), MQTT and LoRa have significant differences at their core. The table below compares them across several technical and application dimensions:
 
 | **Feature**                | **LoRa**                                                     | **MQTT**                                                     |
 | :------------------------- | :----------------------------------------------------------- | :----------------------------------------------------------- |
@@ -72,7 +72,7 @@ These advantages also apply to scenarios such as industrial park monitoring, env
 
 ## Future Outlook
 
-The combination of LoRa and MQTT holds significant potential in smart cities, agriculture, and industrial IoT, enabling more efficient and intelligent system deployments.
+The combination of LoRa and MQTT holds significant potential in smart cities, agriculture, and [industrial IoT](https://www.emqx.com/en/blog/industrial-iot-systems), enabling more efficient and intelligent system deployments.
 
 As IoT adoption continues to grow, the deep integration of LoRa networks with EMQX Platform will further optimize device management and data transmission, providing stable, low-cost, and highly scalable solutions for various industries. This technology pairing is poised to drive innovation and inject new energy into the global IoT ecosystem.
 

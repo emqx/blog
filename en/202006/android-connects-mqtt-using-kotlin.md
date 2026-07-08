@@ -49,7 +49,7 @@ companion object {
 
 ### Connect to the MQTT broker
 
-This article will use the [MQTT broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker) which is operated and maintained by EMQX [MQTT Cloud](https://www.emqx.com/en/cloud). EMQX Cloud is the MQTT IoT cloud service platform released by [EMQ](https://www.emqx.com/en), it provides the service for accessing **MQTT 5.0** with all-in-one operation and maintenance and unique isolation environment.
+This article will use the [MQTT broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker) which is operated and maintained by EMQX [MQTT Cloud](https://www.emqx.com/en/cloud). EMQX Cloud is the MQTT [IoT cloud](https://www.emqx.com/en/blog/iot-in-the-cloud-8-key-benefits-and-how-to-get-started) service platform released by [EMQ](https://www.emqx.com/en), it provides the service for accessing **[MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5)** with all-in-one operation and maintenance and unique isolation environment.
 
 - Broker: **broker.emqx.io**
 - TCP Port: **1883**
@@ -207,7 +207,7 @@ fun disconnect() {
 
 ## Test
 
-Firstly, you need to connect the Android client to the MQTT broker then subscribe topic: `a/b`, and then you can see the log of successfully connecting and subscribing.
+Firstly, you need to connect the Android client to the [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) then subscribe topic: `a/b`, and then you can see the log of successfully connecting and subscribing.
 
 ![MQTT connect and subscribe](https://assets.emqx.com/images/7711763b664ee9c6f0860b50bb0934c4.png)
 

@@ -1,6 +1,6 @@
 > ***Executive Summary***
 >
-> *A leading connected healthcare technology company managing smart medical devices across thousands of clinical sites undertook a strategic platform consolidation to replace legacy open-source MQTT and AMQP brokers with an enterprise-grade messaging infrastructure. Facing scaling requirements from 100,000 current devices to 500,000–1,000,000 over the next 3–5 years, the organization required mission-critical reliability, QoS 2 support for life-critical data, on-premise deployment flexibility, and multi-protocol capabilities. EMQX Enterprise emerged as the foundation for a unified, secure medical device communication platform designed to meet stringent healthcare regulatory requirements while enabling real-time clinical data workflows.*
+> *A leading connected healthcare technology company managing smart medical devices across thousands of clinical sites undertook a strategic platform consolidation to replace legacy open-source [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) and AMQP brokers with an enterprise-grade messaging infrastructure. Facing scaling requirements from 100,000 current devices to 500,000–1,000,000 over the next 3–5 years, the organization required mission-critical reliability, QoS 2 support for life-critical data, on-premise deployment flexibility, and multi-protocol capabilities. [EMQX Enterprise](https://www.emqx.com/en/products/emqx) emerged as the foundation for a unified, secure medical device communication platform designed to meet stringent healthcare regulatory requirements while enabling real-time clinical data workflows.*
 
 ## Industry Context
 
@@ -45,7 +45,7 @@ The organization deployed EMQX Enterprise as the unified platform for medical de
 
 - **On-premise infrastructure**: EMQX Enterprise running in customer-controlled environments, meeting healthcare data residency and compliance requirements.
 - **High availability architecture**: Clustered EMQX nodes across multiple availability zones, ensuring 99.99%+ uptime and automatic failover without clinical team intervention.
-- **Unified protocol support**: MQTT 5.0 for modern medical devices; AMQP bridge for legacy healthcare systems; transparent protocol translation at the broker layer.
+- **Unified protocol support**: [MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5) for modern medical devices; AMQP bridge for legacy healthcare systems; transparent protocol translation at the broker layer.
 
 **Scale & Performance Targets:**
 

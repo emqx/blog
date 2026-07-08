@@ -77,11 +77,11 @@ GreptimeDB integration with EMQX empowers users to achieve long-term storage and
 
 ## Rule Engine Support for Sparkplug B Message Codecs
 
-[Sparkplug](https://www.emqx.com/en/blog/sparkplug-3-0-advancements-and-formalization-in-mqtt-for-iiot) is an open-source specification widely used in [Industrial IoT](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges). It relies on a well-defined set of payload and state management systems provided by MQTT, enabling interoperability and consistency.
+[Sparkplug](https://www.emqx.com/en/blog/sparkplug-3-0-advancements-and-formalization-in-mqtt-for-iiot) is an open-source specification widely used in [Industrial IoT](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges). It relies on a well-defined set of payload and state management systems provided by [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt), enabling interoperability and consistency.
 
-Sparkplug B makes the MQTT namespace easier for SCADA systems, real-time control systems, and devices. It uses Protobuf to encode data for lightweight, efficient, and flexible data exchange. 
+[Sparkplug B](https://www.emqx.com/en/solutions/mqtt-sparkplug) makes the MQTT namespace easier for SCADA systems, real-time control systems, and devices. It uses Protobuf to encode data for lightweight, efficient, and flexible data exchange. 
 
-This version adds Sparkplug B message encode/decode functions to the rule engine SQL, allowing users to easily encode and decode Sparkplug B messages to JSON format by using the `sparkplug_encode` and `sparkplug_decode` functions directly in EMQX. The resulting decoded JSON data can then undergo complex processing through other Rule Engine functions and seamlessly integrate with external data bridges, facilitating robust business integration. This enhancement simplifies the interoperability of different devices in industrial IoT, improves development efficiency, and enables flexible and scalable IoT applications.
+This version adds Sparkplug B message encode/decode functions to the rule engine SQL, allowing users to easily encode and decode Sparkplug B messages to JSON format by using the `sparkplug_encode` and `sparkplug_decode` functions directly in EMQX. The resulting decoded JSON data can then undergo complex processing through other Rule Engine functions and seamlessly integrate with external data bridges, facilitating robust business integration. This enhancement simplifies the interoperability of different devices in [industrial IoT](https://www.emqx.com/en/blog/industrial-iot-systems), improves development efficiency, and enables flexible and scalable IoT applications.
 
 ## Integration with OpenTelemetry Indicator
 
@@ -118,7 +118,7 @@ The following is a list of major bug fixes:
 
 - Fixed issue with logging of unrelated errors during EMQX shutdown. [#11065](https://github.com/emqx/emqx/pull/11065)
 - Fixed an issue that prevented clients from sending messages with large payloads when debug/trace was enabled. [#11279](https://github.com/emqx/emqx/pull/11279)
-- Fixed an issue where the `packets_connack_sent` metric was not incremented when sending CONNACK packets with a non-zero `ack_flag`. [#11520](https://github.com/emqx/emqx/pull/11520)
+- Fixed an issue where the `packets_connack_sent` metric was not incremented when sending [CONNACK](https://www.emqx.com/en/blog/mqtt5-new-features-reason-code-and-ack) packets with a non-zero `ack_flag`. [#11520](https://github.com/emqx/emqx/pull/11520)
 - Added a check for the maximum value of the timestamp in the API to ensure it is a valid Unix timestamp. [#11424](https://github.com/emqx/emqx/pull/11424)
 
 See the [EMQX Enterprise 5.2.0 changelog](https://www.emqx.com/en/changelogs/enterprise/5.2.0) for more feature changes and bug fixes.

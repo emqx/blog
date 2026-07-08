@@ -44,7 +44,7 @@
 
 ## MQTT 协议如何使网联汽车受益？
 
-MQTT(Message Queuing Telemetry Transport) 是一种专门针对低带宽、高延迟、不可靠网络等场景而设计的轻量级消息传输协议。其采用的发布/订阅模式使其适用于许多网联汽车场景。
+[MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt)(Message Queuing Telemetry Transport) 是一种专门针对低带宽、高延迟、不可靠网络等场景而设计的轻量级消息传输协议。其采用的发布/订阅模式使其适用于许多网联汽车场景。
 
 MQTT 和网联汽车能够有效地协同工作，实现车辆、基础设施和其他物联网设备之间的高效通信和数据交换。 
 

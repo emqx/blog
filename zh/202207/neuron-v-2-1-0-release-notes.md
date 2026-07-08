@@ -20,7 +20,7 @@
 
 Neuron 2.1.0 实现了与边缘流式处理引擎 eKuiper 的集成。
 
-用户不再需要通过繁琐的配置流程额外手动部署 MQTT Broker 作为数据中转，就可以直接在 Neuron 中接入 eKuiper 对采集到的数据进行实时的流式处理与函数计算，还可以在 eKuiper 中反控 Neuron 所接入的设备。
+用户不再需要通过繁琐的配置流程额外手动部署 [MQTT Broker](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison) 作为数据中转，就可以直接在 Neuron 中接入 eKuiper 对采集到的数据进行实时的流式处理与函数计算，还可以在 eKuiper 中反控 Neuron 所接入的设备。
 
 **两个产品的界面也实现了一体化无缝集成。** Neuron 2.1.0 的安装包默认配置了与 eKuiper 1.5.1 的连接，用户只需在 Neuron 的 Dashboard 找到北向应用管理中默认的 data-stream-processing 应用节点卡片，订阅所需要的 Group，并在数据流处理模块添加需要 eKuiper 处理的规则，即可进行数据处理与清洗。**通过极简的使用流程为云端平台提供高质量的数据源，减轻云端数据处理压力。**
 
@@ -33,7 +33,7 @@ Neuron 2.1.0 实现了与边缘流式处理引擎 eKuiper 的集成。
 
 ## 支持 Sparkplug B 规范
 
-Sparkplug B 是一种建立在 MQTT 3.1.1 基础之上、依据工业物联网（IIoT）领域应用的特性在信息主题和信息内容格式上所作的规范。Sparkplug B 在保证灵活性和效率的前提下，使 MQTT 网络具备状态感知和互操作性，为设备制造商和软件提供商提供了统一的共享数据结构。
+Sparkplug B 是一种建立在 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 3.1.1 基础之上、依据工业物联网（IIoT）领域应用的特性在信息主题和信息内容格式上所作的规范。Sparkplug B 在保证灵活性和效率的前提下，使 MQTT 网络具备状态感知和互操作性，为设备制造商和软件提供商提供了统一的共享数据结构。
 
 从 2.1.0 版本起，Neuron 正式支持 Sparkplug B 规范，这意味着**不支持 MQTT 的设备也将可以通过 Neuron 间接实现 MQTT 通信。**
 

@@ -79,7 +79,7 @@ def on_message(mqtt_client, userdata, msg):
 
 ### 增加 Django 配置项
 
-在 `settings.py` 中增加 MQTT 服务器的配置项。读者如果对如下配置项及本文中提到的 MQTT 相关概念有疑问，可查看博客 [MQTT 协议快速体验](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt)。
+在 `settings.py` 中增加 [MQTT 服务器](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison)的配置项。读者如果对如下配置项及本文中提到的 MQTT 相关概念有疑问，可查看博客 [MQTT 协议快速体验](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt)。
 
 > 本示例使用匿名认证，所以用户名与密码设置为空。
 

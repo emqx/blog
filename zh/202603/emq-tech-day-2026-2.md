@@ -8,7 +8,7 @@
 
 当我们回顾大多数企业的消息基础设施演进历程，大概率会看到一个熟悉的模式：
 
-- 需要接入 IoT 设备，增加了 MQTT Broker——因为 MQTT 是 IoT 领域的事实标准，轻量、省电、支持海量长连接。
+- 需要接入 IoT 设备，增加了 [MQTT Broker](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison)——因为 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 是 IoT 领域的事实标准，轻量、省电、支持海量长连接。
 - 需要构建事件流与日志管道，增加了 Kafka——因为 Kafka 的分区模型和持久化能力是大规模流处理的最佳选择。
 - 需要做业务异步与任务分发，增加了 RabbitMQ——因为 AMQP 协议的灵活路由和消息确认机制天然适合工作队列场景。
 

@@ -131,7 +131,7 @@ eKuiper 允许多个规则处理同一个流。因此，用户可以根据需要
 
 ## 结语
 
-要实现 CAN Bus 和 MQTT 之间的桥接，我们的解决方案要能够从 CAN Bus 设备读取数据，根据需求对数据进行过滤和转换，并将数据发布到 MQTT Broker。这正是 eKuiper 的用武之地，它提供了一种简单、高效和灵活的方式来完成这项工作。
+要实现 CAN Bus 和 MQTT 之间的桥接，我们的解决方案要能够从 CAN Bus 设备读取数据，根据需求对数据进行过滤和转换，并将数据发布到 [MQTT Broker](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison)。这正是 eKuiper 的用武之地，它提供了一种简单、高效和灵活的方式来完成这项工作。
 
 除了桥接功能，eKuiper 还可以在边缘规则引擎和边缘计算的多种场景中提供帮助。我们将在后续的文章中详细讨论这些场景。
 

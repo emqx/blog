@@ -1,6 +1,6 @@
-We're thrilled to announce the latest EMQX Cloud release (if you haven't seen the full update yet, check it out [here](https://www.emqx.com/en/blog/discover-whats-new-in-emqx-cloud)!). One of the most exciting new features on our Dedicated plan is **Cluster Linking**. 
+We're thrilled to announce the latest [EMQX Cloud](https://www.emqx.com/en/cloud) release (if you haven't seen the full update yet, check it out [here](https://www.emqx.com/en/blog/discover-whats-new-in-emqx-cloud)!). One of the most exciting new features on our Dedicated plan is **Cluster Linking**. 
 
-If you've ever needed to synchronize MQTT data across different regions, bridge hybrid environments, or build highly resilient architectures, this feature is built for you. In this blog, we will deep dive into this powerful capability and explore how it can supercharge your EMQX Cloud deployments.
+If you've ever needed to synchronize [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) data across different regions, bridge hybrid environments, or build highly resilient architectures, this feature is built for you. In this blog, we will deep dive into this powerful capability and explore how it can supercharge your EMQX Cloud deployments.
 
 ![image.png](https://assets.emqx.com/images/bd32ae0d8fefc9bd4e03b75c6e219d1f.png)
 
@@ -35,7 +35,7 @@ In the automotive world, real-time data exchange across regions is critical. Clu
 
 ![image.png](https://assets.emqx.com/images/344f9b20f764557d147442aede5f8db8.png)
 
-**Manufacturing and Industrial IoT**
+**Manufacturing and [Industrial IoT](https://www.emqx.com/en/blog/industrial-iot-systems)**
 
 Global manufacturers can synchronize production lines, monitor equipment health, and perform predictive maintenance across multiple facilities worldwide — all through a unified MQTT network powered by Cluster Linking.
 
@@ -47,7 +47,7 @@ Businesses can implement robust multi-region strategies with automatic failover.
 
 This is a great question! While both Cluster Linking and MQTT bridging move messages between brokers, they serve different purposes:
 
-|                    | MQTT Bridge                                         | Cluster Linking                                        |
+|                    | [MQTT Bridge](https://www.emqx.com/en/blog/bridging-mosquitto-to-emqx-cluster)                                         | Cluster Linking                                        |
 | ------------------ | --------------------------------------------------- | ------------------------------------------------------ |
 | Type               | MQTT client-based                                   | Native EMQX Feature                                    |
 | Use Case           | Connecting EMQX to any MQTT broker                  | High-performance synchronization between EMQX clusters |
@@ -63,7 +63,7 @@ This is a great question! While both Cluster Linking and MQTT bridging move mess
 **When to Use Which?**
 
 - Use **Cluster Linking** when you want optimized, resilient data synchronization between EMQX clusters (especially across regions). 
-- Use **MQTT Bridge** when connecting EMQX to other MQTT brokers or when you need flexible, cross-platform interoperability.
+- Use **MQTT Bridge** when connecting EMQX to other [MQTT brokers](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) or when you need flexible, cross-platform interoperability.
 
 ## **Ready to Link Your Clusters? Let’s Get Started!**
 

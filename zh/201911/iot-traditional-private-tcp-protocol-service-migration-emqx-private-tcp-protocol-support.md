@@ -1,6 +1,6 @@
 ## 前言
 
-MQTT 是 IBM 于 1998 年设计和开发的工作在 TCP/IP 协议簇上是基于 TCP 协议的应用层协议。MQTT 采用轻量级的发布/订阅范式进行消息传输，旨在为低带宽和不稳定的网络环境中的物联网设备提供可靠的网络服务，设备需要连结在消息中间件 （MQTT Broker）上进行消息通信。
+[MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 是 IBM 于 1998 年设计和开发的工作在 TCP/IP 协议簇上是基于 TCP 协议的应用层协议。MQTT 采用轻量级的发布/订阅范式进行消息传输，旨在为低带宽和不稳定的网络环境中的物联网设备提供可靠的网络服务，设备需要连结在消息中间件 （[MQTT Broker](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison)）上进行消息通信。
 
 众多物联网协议中，MQTT 以其开放、轻量、节能、通用等特点，被越来越多的企业所接受，已经成为物联网通信协议的事实标准。但由于所在行业特殊性或其他种种原因，在物联网行业中有大量同样基于 TCP/IP 的通信协议：有形成规模的标准的行业协议如电力、道路交通、工控协议，也有公司、项目甚至是个人开发的私有协议。无论新旧项目都有可能遇到无法使用 MQTT 协议的困境。
 

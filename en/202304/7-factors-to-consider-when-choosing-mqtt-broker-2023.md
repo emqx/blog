@@ -40,7 +40,7 @@ These are the steps that the client and MQTT Broker take when messaging:
 4. Message routing: When the Broker receives a message, it checks the list of subscribers and routes the message to all clients that have subscribed to the topic.
 5. Disconnect: The client initiates a request to disconnect. The MQTT Broker can also disconnect from the client after a network exception or heartbeat expiration.
 
-Most MQTT Brokers implement the fundamental features specified in the MQTT protocol to support basic messaging functionality, such as QoS levels, client authentication, retained messages, [shared subscriptions](https://www.emqx.com/en/blog/introduction-to-mqtt5-protocol-shared-subscription), and more. These features facilitate the rapid implementation of specific use cases.
+Most MQTT Brokers implement the fundamental features specified in the [MQTT protocol](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) to support basic messaging functionality, such as QoS levels, client authentication, retained messages, [shared subscriptions](https://www.emqx.com/en/blog/introduction-to-mqtt5-protocol-shared-subscription), and more. These features facilitate the rapid implementation of specific use cases.
 
 However, there is more to it than that. If the MQTT Broker is like a port, message delivery is only the transportation of goods. In fact, to ensure the transportation of goods, a complete logistics system and storage facilities are required to provide essential support. To send goods from various places to different destinations, it is necessary to unpack and repack the goods and use different logistics methods to deliver them. In the off-season and peak season of logistics, it is necessary to adjust the scale of port facilities and personnel dynamically and flexibly to meet demand while maximizing efficiency.
 
@@ -54,7 +54,7 @@ Security is a key factor to consider when choosing an MQTT Broker, and the follo
 
 ![Client Authentication](https://assets.emqx.com/images/5401567bf5cb065fe376afee0b2b4f5c.png)
 
-The MQTT client authentication requires clients to provide specific credentials to confirm their identity when connecting to the MQTT Broker. Here are the commonly used authentication methods and their requirements for the MQTT Broker:
+The [MQTT client](https://www.emqx.com/en/blog/mqtt-client-tools) authentication requires clients to provide specific credentials to confirm their identity when connecting to the MQTT Broker. Here are the commonly used authentication methods and their requirements for the MQTT Broker:
 
 | **Authentication Method** | **Description**                                              | **Functional Requirement**                                   |
 | :------------------------ | :----------------------------------------------------------- | :----------------------------------------------------------- |
@@ -92,7 +92,7 @@ Enterprise IT security is essential to safeguard enterprise data from various se
 
 ## Clustering and Auto-Scaling
 
-An MQTT Broker cluster is a system that distributes the workload of connecting and messaging among multiple MQTT Brokers (also known as nodes).
+An [MQTT Broker cluster](https://www.emqx.com/en/blog/mqtt-broker-clustering) is a system that distributes the workload of connecting and messaging among multiple MQTT Brokers (also known as nodes).
 
 Clients can interact with the cluster as a unified entity, without being aware of the internal workings or any changes in the number of nodes. The cluster handles connections and also publishes and subscribes messages just like a single node.
 
@@ -118,7 +118,7 @@ Therefore, if you need your application to be reliable, you should select an MQT
 
 ### Only a Few MQTT Brokers Support Clustering
 
-An MQTT Broker cluster's main responsibility is to synchronize and replicate MQTT session state, such as subscribed messages and pending message transfers, among cluster nodes in an efficient and reliable way. It also aims to balance the load of connections, manage devices centrally, and ensure the scalability and high availability of the whole cluster.
+An MQTT Broker cluster's main responsibility is to synchronize and replicate [MQTT session](https://www.emqx.com/en/blog/mqtt-session) state, such as subscribed messages and pending message transfers, among cluster nodes in an efficient and reliable way. It also aims to balance the load of connections, manage devices centrally, and ensure the scalability and high availability of the whole cluster.
 
 Implementing all these features is a complex undertaking, which is why the deployment of most MQTT Brokers is restricted to a single node. However, recognizing the significance of scalability and high availability, some of these Brokers offer specialized implementation solutions.
 

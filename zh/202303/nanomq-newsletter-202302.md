@@ -1,8 +1,8 @@
-*驽马十驾，功在不舍*。新春之交，NanoMQ 继续保持稳步更新，最新的 0.16 版本将于三月初发布。NanoMQ 为用户提供了 2 个重要新功能：MQTT over QUIC 的多流桥接和 DDS 协议转换代理，拓宽了 NanoMQ 的弱网桥接传输性能和在边缘端的使用场景。同时 NanoMQ 项目也在不懈努力提高项目的鲁棒性和安全性，积极快速响应社区提出的 Issue 和使用问题，新增了模糊测试用例和自动化的代码覆盖测试脚本。另外还新增了绿色安装版的 Windows 平台安装包。
+*驽马十驾，功在不舍*。新春之交，NanoMQ 继续保持稳步更新，最新的 0.16 版本将于三月初发布。NanoMQ 为用户提供了 2 个重要新功能：[MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) over QUIC 的多流桥接和 DDS 协议转换代理，拓宽了 NanoMQ 的弱网桥接传输性能和在边缘端的使用场景。同时 NanoMQ 项目也在不懈努力提高项目的鲁棒性和安全性，积极快速响应社区提出的 Issue 和使用问题，新增了模糊测试用例和自动化的代码覆盖测试脚本。另外还新增了绿色安装版的 Windows 平台安装包。
 
 ## QUIC 多流桥接
 
-QUIC 协议相较于 TCP 的一大优势在于解决了队首阻塞的问题，但这是依赖于 QUIC 的单链接多 Stream 特性的。NanoMQ 之前发布的 MQTT over QUIC 桥接功能中暂时只支持单流模式，所有的 MQTT 包都在单一消息流（Stream）上面传输。单流传输当遇到网络拥塞或者网络抖动的情况时，会引起大量的消息重传，一样会阻塞后续到达的消息，从而造成逐步提高的消息延时，甚至是连接断开。 为了解决这一问题，NanoMQ 和 EMQX 5.0 一起设计和引入了 Mutli-stream QUIC 协议标准，以提供更好消息传输体验。
+[QUIC 协议](https://www.emqx.com/zh/blog/quic-protocol-the-features-use-cases-and-impact-for-iot-iov)相较于 TCP 的一大优势在于解决了队首阻塞的问题，但这是依赖于 QUIC 的单链接多 Stream 特性的。NanoMQ 之前发布的 MQTT over QUIC 桥接功能中暂时只支持单流模式，所有的 MQTT 包都在单一消息流（Stream）上面传输。单流传输当遇到网络拥塞或者网络抖动的情况时，会引起大量的消息重传，一样会阻塞后续到达的消息，从而造成逐步提高的消息延时，甚至是连接断开。 为了解决这一问题，NanoMQ 和 EMQX 5.0 一起设计和引入了 Mutli-stream QUIC 协议标准，以提供更好消息传输体验。
 
 ### 何为 MQTT over QUIC + Mutli-Stream?
 
@@ -189,7 +189,7 @@ mqtt {
 
 此处以 DDS - MQTT 双向消息桥接为例。
 
-- 启动 MQTT Broker
+- 启动 [MQTT Broker](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison)
 
 ```
 $ nanomq start
@@ -207,7 +207,7 @@ $ emqx start
 $ ./nanomq_cli ddsproxy proxy --conf nanomq_dds_gateway.conf
 ```
 
-- 启动 MQTT 客户端订阅主题 `DDS/topic1` 以验证消息是否桥接成功。
+- 启动 [MQTT 客户端](https://www.emqx.com/zh/blog/mqtt-client-tools)订阅主题 `DDS/topic1` 以验证消息是否桥接成功。
 
 ```
 $ ./nanomq_cli sub --url "mqtt-tcp://127.0.0.1:1883" -t "DDS/topic1"

@@ -1,4 +1,4 @@
-The [MQTT 5.0 client tool MQTTX](https://mqttx.app/) has recently rolled out its version 1.9.7. A significant highlight of this release is the introduction of **MQTTX Copilot**, our innovative MQTT AI assistant, specially designed to offer crucial convenience to users. This feature improves user interaction by providing intuitive assistance for better understanding and utilization of MQTT and EMQX. The update also addresses several bug fixes, leading to a notable improvement in the overall user experience.
+The [MQTT 5.0 client tool MQTTX](https://mqttx.app/) has recently rolled out its version 1.9.7. A significant highlight of this release is the introduction of **MQTTX Copilot**, our innovative [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) AI assistant, specially designed to offer crucial convenience to users. This feature improves user interaction by providing intuitive assistance for better understanding and utilization of MQTT and EMQX. The update also addresses several bug fixes, leading to a notable improvement in the overall user experience.
 
 > *Download the latest version here:* [*https://mqttx.app/downloads*](https://mqttx.app/downloads)
 
@@ -31,7 +31,7 @@ When encountering errors during connection or subscription, you can swiftly clic
 
 ### AI-Powered Code Generation
 
-MQTTX Copilot now offers a one-click solution for generating MQTT client codes tailored to your current test connections. This feature greatly simplifies setting up MQTT clients in various programming languages. Currently, MQTTX Copilot supports code generation for several languages, including:
+MQTTX Copilot now offers a one-click solution for generating MQTT client codes tailored to your current test connections. This feature greatly simplifies setting up [MQTT clients](https://www.emqx.com/en/blog/mqtt-client-tools) in various programming languages. Currently, MQTTX Copilot supports code generation for several languages, including:
 
 - JavaScript
 - Python
@@ -100,7 +100,7 @@ Huge thanks to [@ni00](https://github.com/ni00) for resolving critical issues li
 - **MQTTX Copilot Enhancements:** Upgrades to include stream output, payload autofill, payload analysis, and automatic creation of connections and subscriptions to topics.
 
 - **IoT Scenario Data Simulation:** Sync this feature to the desktop client to simplify the testing of IoT scenarios.
-- **Sparkplug B Support:** Extend the functionalities of MQTTX to include support for Sparkplug B.
+- **[Sparkplug B](https://www.emqx.com/en/solutions/mqtt-sparkplug) Support:** Extend the functionalities of MQTTX to include support for Sparkplug B.
 - **QoS 0 Message Storage Optimization:** Reduce storage space usage through configurable options.
 - **MQTT Debug Functionality:** Introduce features to assist users in debugging MQTT communications.
 - **Automatic Chart Drawing:** Automatically transform received messages into charts for more straightforward analysis.

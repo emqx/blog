@@ -9,7 +9,7 @@ Neuron 工业网关南向支持接入主流的[工业物联网](https://www.emqx
 
 Neuron V1.1.1 增加了南北协议报文显示，让用户可随时透过 dashboard 观看协议报文，追踪及分析报文内容。
 
-北向 MQTT 协议报文：
+北向 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 协议报文：
 
 ![webwxgetmsgimg.jpg](https://assets.emqx.com/images/a0cc294f21ad9e9c678f1818fa0599f2.jpg)
 

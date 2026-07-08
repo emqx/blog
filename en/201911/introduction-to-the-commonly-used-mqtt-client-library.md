@@ -2,7 +2,7 @@
 
 MQTT is a lightweight [publish-subscribe](https://www.emqx.com/en/blog/mqtt-5-introduction-to-publish-subscribe-model) mode messaging protocol designed for IoT applications in low-bandwidth and unstable network environments. MQTT is based on the publish/subscribe paradigm and works on the TCP/IP protocol family. [MQTT protocol](https://www.emqx.com/en/mqtt-guide) is lightweight, simple, open and easy to implement， which makes it suitable for a wide range of applications.
 
-MQTT is based on the client-server communication mode. MQTT server is called as MQTT Broker. Currently, there are many MQTT Brokers in the industry, whose advantages and disadvantages and functional differences will not be discussed in this article. Taking the [most popular MQTT broker - EMQX](https://github.com/emqx/emqx) in the open source community as an example, this article uses the public Broker `broker.emqx.io` provided by  [EMQ](https://www.emqx.com/en) , and uses a simple example of connecting Broker, publishing and processing messages by client to summarizes the usage and examples of [MQTT client libraries](https://www.emqx.com/en/mqtt-client-sdk) under different programming languages and platforms.
+MQTT is based on the client-server communication mode. MQTT server is called as MQTT Broker. Currently, there are many [MQTT Brokers](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) in the industry, whose advantages and disadvantages and functional differences will not be discussed in this article. Taking the [most popular MQTT broker - EMQX](https://github.com/emqx/emqx) in the open source community as an example, this article uses the public Broker `broker.emqx.io` provided by  [EMQ](https://www.emqx.com/en) , and uses a simple example of connecting Broker, publishing and processing messages by client to summarizes the usage and examples of [MQTT client libraries](https://www.emqx.com/en/mqtt-client-sdk) under different programming languages and platforms.
 
 The selected MQTT client libraries are as follows:
 
@@ -10,7 +10,7 @@ The selected MQTT client libraries are as follows:
 - Eclipse Paho Java Client
 - Eclipse Paho MQTT Go client
 - emqtt : Erlang mqtt client library provided by EMQ
-- MQTT.js Web  & Node.js Platform MQTT Client
+- [MQTT.js](https://www.emqx.com/en/blog/mqtt-js-tutorial) Web  & Node.js Platform MQTT Client
 - Eclipse Paho Python
 
 
@@ -24,10 +24,10 @@ This paper takes a client connecting, publishing and processing messages as an e
 
 - **Establish a connection**：
   - Specify the MQTT Broker basic information access address and port
-  - Specify whether the transfer type is TCP or MQTT over WebSocket
+  - Specify whether the transfer type is TCP or [MQTT over WebSocket](https://www.emqx.com/en/blog/connect-to-mqtt-broker-with-websocket)
   - If TLS is enabled, it is required to select the protocol version with the corresponding certificate.
-  - If Broker has enabled authentication, the client needs to carry the corresponding MQTT Username Password information
-  - Configure client parameters such as keepalive duration, clean session callback retention flag, MQTT protocol version, [will message](https://www.emqx.com/en/blog/use-of-mqtt-will-message) (LWT), etc.
+  - If Broker has enabled authentication, the client needs to carry the corresponding [MQTT Username Password](https://www.emqx.com/en/blog/securing-mqtt-with-username-and-password-authentication) information
+  - Configure client parameters such as keepalive duration, clean session callback retention flag, [MQTT protocol](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) version, [will message](https://www.emqx.com/en/blog/use-of-mqtt-will-message) (LWT), etc.
 - **Subscribe to the topic **: After the connection is successfully established, the topic can be subscribed to when the topic information is specified.
 - Specify topic filter Topic, support for the use of the topic wildcards `+` and `#` during subscribing
   - Specify QoS,  Qos 0 1 2 is optional according to the implementation of the client library and the broker. Note that some brokers and cloud service providers do not support some QoS levels. For example, AWS IoT, Alibaba Cloud IoT Suite, and Azure IoT Hub do not support QoS 2 Level message
@@ -48,7 +48,7 @@ This paper takes a client connecting, publishing and processing messages as an e
 
 ## Eclipse Paho C and Eclipse Paho Embedded C
 
-Both [Eclipse Paho C](https://www.eclipse.org/paho/clients/c/) and [Eclipse Paho Embedded C](https://www.eclipse.org/paho/clients/c/embedded/)  are client libraries under the Eclipse Paho project, which are full-featured MQTT clients written in ANSI C. Eclipse Paho Embedded C can be used on desktop operating systems, but mainly for Embedded environments such as [mbed](https://mbed.org/)，[Arduino](https://www.arduino.cc/) and [FreeRTOS](https://freertos.org/) .
+Both [Eclipse Paho C](https://www.eclipse.org/paho/clients/c/) and [Eclipse Paho Embedded C](https://www.eclipse.org/paho/clients/c/embedded/)  are client libraries under the Eclipse Paho project, which are full-featured [MQTT clients](https://www.emqx.com/en/blog/mqtt-client-tools) written in ANSI C. Eclipse Paho Embedded C can be used on desktop operating systems, but mainly for Embedded environments such as [mbed](https://mbed.org/)，[Arduino](https://www.arduino.cc/) and [FreeRTOS](https://freertos.org/) .
 
 The client has two kinds of APIs, synchronous and asynchronous, which start with mqttclient and mqttasync respectively:
 
@@ -303,7 +303,7 @@ func main() {
 
 ## emqtt : Erlang MQTT Client Library Provided by EMQ
 
-[emqtt](https://github.com/emqx/emqtt)  is a client library officially provided by EMQ of the open source MQTT Broker EMQX, which is applicable for the Erlang language.
+[emqtt](https://github.com/emqx/emqtt)  is a client library officially provided by EMQ of the [open source MQTT Broker](https://www.emqx.com/en/blog/a-comprehensive-comparison-of-open-source-mqtt-brokers-in-2023) EMQX, which is applicable for the Erlang language.
 
 The Erlang ecosystem has several MQTT Broker implementations, such as RabbitMQ, VerenMQ, EMQX, etc. that support MQTT through plugins. However, there is almost no room for choice in the MQTT client library. [emqtt](https://github.com/emqx/emqtt) in the Erlang client library included in the MQTT community is the best choice .
 

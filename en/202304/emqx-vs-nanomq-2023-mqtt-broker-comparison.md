@@ -2,13 +2,13 @@
 
 [EMQX](https://github.com/emqx/emqx) and [NanoMQ](https://nanomq.io/) are both [open-source MQTT Brokers](https://www.emqx.com/en/blog/a-comprehensive-comparison-of-open-source-mqtt-brokers-in-2023), initially developed by [EMQ Technologies Inc](https://www.emqx.com/en/about), a leading open-source IoT data infrastructure software provider. 
 
-EMQX is a highly scalable, distributed MQTT Broker for connecting millions of IoT devices to the cloud, while NanoMQ is a fast and lightweight broker designed for IoT edge.
+EMQX is a highly scalable, distributed [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) Broker for connecting millions of IoT devices to the cloud, while NanoMQ is a fast and lightweight broker designed for IoT edge.
 
 We'll compare these two brokers in the second post of the "[2023 MQTT Broker Comparison](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison)" blog series.
 
 ## EMQX Overview
 
-EMQX is the world's most scalable MQTT messaging server and is widely used in mission-critical business scenarios such as the IoT, Industrial IoT ([IIoT](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges)), and Internet of Vehicles (IoV).
+EMQX is the world's most scalable MQTT messaging server and is widely used in mission-critical business scenarios such as the IoT, [Industrial IoT](https://www.emqx.com/en/blog/industrial-iot-systems) ([IIoT](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges)), and Internet of Vehicles (IoV).
 
 EMQX is written in Erlang/OTP and adopts a masterless distributed architecture to achieve high availability and horizontal scalability.
 
@@ -33,7 +33,7 @@ See: [Reaching 100M MQTT connections with EMQX 5.0](https://www.emqx.com/en/blog
 
 ## NanoMQ Overview
 
-NanoMQ is a lightweight and fast MQTT broker designed for the IoT edge. NanoMQ is implemented in purely C, based on NNG's asynchronous I/O with a multi-threading [Actor Model](https://en.wikipedia.org/wiki/Actor_model), and fully supports MQTT 3.1.1 and MQTT 5.0 protocol versions. 
+NanoMQ is a lightweight and fast MQTT broker designed for the IoT edge. NanoMQ is implemented in purely C, based on NNG's asynchronous I/O with a multi-threading [Actor Model](https://en.wikipedia.org/wiki/Actor_model), and fully supports MQTT 3.1.1 and [MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5) protocol versions. 
 
 NanoMQ is high-performance in the context of a stand-alone broker. The fascinating advantage is its portability. It can be deployed on any POSIX-compatible platform and runs on different CPU architectures such as x86_64, ARM, MIPS, and RISC-V.
 
@@ -96,9 +96,9 @@ Regarding enterprise features, [EMQX's Enterprise Edition](https://www.emqx.com/
 | :----------------------- | :---------------------------------- | :---------- |
 | **MQTT 3.1.1**           | ✅                                   | ✅           |
 | **MQTT 5.0**             | ✅                                   | ✅           |
-| **MQTT over TLS**        | ✅                                   | ✅           |
+| **[MQTT over TLS](https://www.emqx.com/en/blog/fortifying-mqtt-communication-security-with-ssl-tls)**        | ✅                                   | ✅           |
 | **MQTT over WebSocket**  | ✅                                   | ✅           |
-| **MQTT over QUIC**       | ✅                                   | ✅           |
+| **MQTT over [QUIC](https://www.emqx.com/en/blog/quic-protocol-the-features-use-cases-and-impact-for-iot-iov)**       | ✅                                   | ✅           |
 | **LwM2M/CoAP**           | ✅                                   | ❌           |
 | **MQTT-SN**              | ✅                                   | ❌           |
 | **Stomp**                | ✅                                   | ❌           |
@@ -189,7 +189,7 @@ As a lightweight broker, NanoMQ does not support data integration. EMQX, especia
 
 ## Bridging NanoMQ to EMQX
 
-We can deploy NanoMQ on small devices or gateways at the IoT edge and then aggregate and ingest data to a large-scale EMQX cluster in the cloud via an MQTT bridge.
+We can deploy NanoMQ on small devices or gateways at the IoT edge and then aggregate and ingest data to a large-scale EMQX cluster in the cloud via an [MQTT bridge](https://www.emqx.com/en/blog/bridging-mosquitto-to-emqx-cluster).
 
 ![Bridging NanoMQ to EMQX](https://assets.emqx.com/images/a2fc8b04a0059369d61507f4cb7dbf63.png)
 

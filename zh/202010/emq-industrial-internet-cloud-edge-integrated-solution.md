@@ -49,10 +49,10 @@
 
 **产品基本功能描述**
 
-1. Neuron：工业物联网数据采集
-   - 支持了 [Modbus](https://www.emqx.com/zh/blog/modbus-protocol-the-grandfather-of-iot-communication)，OPCUA，IEC61850，IEC104 和 BACnet 等众多协议和设备；
+1. Neuron：[工业物联网](https://www.emqx.com/zh/blog/iiot-explained-examples-technologies-benefits-and-challenges)数据采集
+   - 支持了 [Modbus](https://www.emqx.com/zh/blog/modbus-protocol-the-grandfather-of-iot-communication)，[OPCUA](https://www.emqx.com/zh/blog/opc-ua-protocol)，IEC61850，IEC104 和 BACnet 等众多协议和设备；
    - 管理控制台，用户可以在浏览器中进行可视化的配置，实现跨工业设备数据的接入；
-   - 北向标准 MQTT 数据发送，根据用户指定配置，将数据发送至指定的 MQTT 消息服务器中；
+   - 北向标准 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 数据发送，根据用户指定配置，将数据发送至指定的 MQTT 消息服务器中；
    - 南向控制接口，结合 Kuiper 提供的规则引擎功能，实现基于规则的设备控制；
    - 本地数据存储，实现设备原始数据的存储和查看；
 2. Edge：轻量级 MQTT 消息服务器
@@ -127,7 +127,7 @@
 | 1    | EMQX Enterprise | EMQ    | 否 - `1` |
 | 2    | IEF              | 华为   | 否 - `2` |
 
-`1`: EMQX Enterprise 企业级物联网 MQTT 消息平台，支持百万级物联网设备一站式接入、MQTT&CoAP 多协议处理、低时延实时消息通信。支持基于 SQL 的内置规则引擎，灵活处理/转发消息到后端服务，存储消息数据到各种数据库，或桥接 Kafka、RabbitMQ 等企业中间件。
+`1`: EMQX Enterprise 企业级物联网 MQTT 消息平台，支持百万级物联网设备一站式接入、MQTT&[CoAP](https://www.emqx.com/zh/blog/coap-protocol) 多协议处理、低时延实时消息通信。支持基于 SQL 的内置规则引擎，灵活处理/转发消息到后端服务，存储消息数据到各种数据库，或桥接 Kafka、RabbitMQ 等企业中间件。
 
 `2`: [IEF 智能边缘平台（Intelligent EdgeFabric）](https://www.huaweicloud.com/product/ief.html)是华为开源云边协同平台 KubeEdge 的商业化版本，满足客户对边缘计算资源的远程管控、数据处理、分析决策、智能化的诉求， 为用户提供完整的边缘和云协同的一体化服务。
 

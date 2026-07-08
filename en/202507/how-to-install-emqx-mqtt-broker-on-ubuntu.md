@@ -32,7 +32,7 @@ APT is the package manager that comes with Ubuntu. It is recommended to prefer t
    sudo emqx start
    ```
 
-   As illustrated below, a successful startup of EMQX Enterprise 5.10.0 will display a confirmation message. If the command yields no response, verify port availability as detailed in the [Verifying EMQX Operation and Connectivity](https://www.emqx.com/en/blog/how-to-install-emqx-mqtt-broker-on-ubuntu#emqx-operation-check) section.
+   As illustrated below, a successful startup of [EMQX Enterprise](https://www.emqx.com/en/products/emqx) 5.10.0 will display a confirmation message. If the command yields no response, verify port availability as detailed in the [Verifying EMQX Operation and Connectivity](https://www.emqx.com/en/blog/how-to-install-emqx-mqtt-broker-on-ubuntu#emqx-operation-check) section.
 
    ![image.png](https://assets.emqx.com/images/9028f5b96bd229242183d0c3e2e70d2c.png)
 

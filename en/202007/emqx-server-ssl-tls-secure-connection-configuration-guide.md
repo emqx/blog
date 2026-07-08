@@ -157,7 +157,7 @@ After finished configuring and restarted EMQX, we use [MQTT client tool - MQTTX]
 
   **Notice**: only need to choose `CA signed server` in the `Certificate`. When use the purchased certificate to do a one-way verification connection, do not need to carry any certificate files (the CA file does also not need to be carried).
 
-- Click the button `Connect` and after successfully connecting, if you can use MQTT publish/subscribe function, the SSL one-way verification of the purchased certificate is succeeded.
+- Click the button `Connect` and after successfully connecting, if you can use [MQTT publish/subscribe](https://www.emqx.com/en/blog/mqtt-5-introduction-to-publish-subscribe-model) function, the SSL one-way verification of the purchased certificate is succeeded.
 
   ![mqttx-connected-server](https://assets.emqx.com/images/64b493d3ad912c16885f2a2202b16b9e.png)
 
@@ -210,7 +210,7 @@ listener.ssl.external.cacertfile = etc/certs/ca.pem
   ./bin/emqx_ctl log set-level debug
   ```
 
-  Use OpenSSL s_client to connect to EMQX and send an MQTT Connect packet with Client ID "a".
+  Use OpenSSL s_client to connect to EMQX and send an [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) Connect packet with Client ID "a".
 
   ```bash
   $ echo -en "\x10\x0d\x00\x04MQTT\x04\x00\x00\x00\x00\x01a" | openssl s_client -connect localhost:8883 -CAfile ca.pem -showcerts

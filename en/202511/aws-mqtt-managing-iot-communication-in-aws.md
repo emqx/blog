@@ -32,7 +32,7 @@ The cost of using AWS IoT Core is mainly determined by the number of messages pu
 
 The pricing for AWS IoT Core is based on the number of messages published to AWS IoT (message ingest) and delivered by AWS IoT to devices or applications (message delivery). You are billed separately for each. As of the time of writing, the first 250 million messages per month are charged at $1.00 per million messages, and the price decreases with increasing volume.
 
-However, it's important to note that AWS offers a Free Tier for AWS IoT Core, which includes 250,000 free messages (published or delivered) per month for the first 12 months. After the first 12 months or above the free tier limit, standard AWS IoT Core pricing applies. For up-to-date pricing, refer to the [official pricing page](https://aws.amazon.com/iot-core/pricing/).
+However, it's important to note that AWS offers a Free Tier for AWS IoT Core, which includes 250,000 free messages (published or delivered) per month for the first 12 months. After the first 12 months or above the free tier limit, standard AWS [IoT Core pricing](https://www.emqx.com/en/blog/how-emqx-cuts-spending-by-up-to-80-percent) applies. For up-to-date pricing, refer to the [official pricing page](https://aws.amazon.com/iot-core/pricing/).
 
 ## Quick Tutorial: Using AWS IoT Core with MQTT
 
@@ -69,7 +69,7 @@ This brief guide will show you how to create your first 'thing' object in the AW
 
 9. In the test client, use the **Topic** filter, and enter a topic such as sdk/test/python to subscribe to messages from your device. The topic filters are case sensitive.
 
-10. After you subscribe to the test topic, run ./start.sh on your device. Messages should start to appear in the MQTT client, similar to the following. The number in square brackets should increase by one each time a new message is received.
+10. After you subscribe to the test topic, run ./start.sh on your device. Messages should start to appear in the [MQTT client](https://www.emqx.com/en/blog/mqtt-client-tools), similar to the following. The number in square brackets should increase by one each time a new message is received.
 
    ```
    {
@@ -127,7 +127,7 @@ Logging, on the other hand, is crucial for troubleshooting and understanding you
 
 It is important to regularly review and update your security settings, ensure that your data is encrypted, and keep your software up to date.
 
-In terms of compliance, it is crucial to understand the specific requirements of the standards you are subject to, and to ensure that your AWS MQTT implementation meets these requirements. Regular audits and assessments can help to ensure ongoing compliance.
+In terms of compliance, it is crucial to understand the specific requirements of the standards you are subject to, and to ensure that your [AWS MQTT](https://www.emqx.com/en/switch-from-aws) implementation meets these requirements. Regular audits and assessments can help to ensure ongoing compliance.
 
 ### 4. Resource Management
 
@@ -139,7 +139,7 @@ AWS provides several tools to help with resource management, including Cost Expl
 
 [EMQX Cloud](https://www.emqx.com/en/cloud) is a fully managed MQTT data platform that allows you to connect devices, process IoT data in real time, store time-series information, and perform analytics, all within a unified managed service.
 
-As the world’s first fully managed MQTT 5.0 cloud service, EMQX Cloud extends beyond a traditional broker to provide a complete IoT data backbone. It supports large-scale device connectivity, real-time data streaming and processing, high-performance time-series storage, and instant analytics across a secure, globally distributed platform. With EMQX Cloud, you can build end-to-end IoT data pipelines in minutes, from device communication to visualization and analysis.
+As the world’s first fully managed [MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5) cloud service, EMQX Cloud extends beyond a traditional broker to provide a complete IoT data backbone. It supports large-scale device connectivity, real-time data streaming and processing, high-performance time-series storage, and instant analytics across a secure, globally distributed platform. With EMQX Cloud, you can build end-to-end IoT data pipelines in minutes, from device communication to visualization and analysis.
 
 ### Why Switch from AWS IoT Core to EMQX?
 

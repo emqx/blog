@@ -54,7 +54,7 @@ NoSQL 数据库（例如 MongoDB、Cassandra）适合处理非结构化和半结
 
 ## 基于 OMH 的数据存储架构
 
-Open Manufacturing Hub (OMH) 是一种面向智能制造的解决方案架构模式。它基于 EMQ 的 EMQX MQTT Broker 和 NeuronEX 边缘网关，为智能制造提供了一种可行的工业物联网解决方案。
+Open Manufacturing Hub (OMH) 是一种面向智能制造的解决方案架构模式。它基于 EMQ 的 EMQX [MQTT Broker](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison) 和 NeuronEX 边缘网关，为智能制造提供了一种可行的[工业物联网](https://www.emqx.com/zh/blog/iiot-explained-examples-technologies-benefits-and-challenges)解决方案。
 
 延续我们[之前文章](https://www.emqx.com/zh/blog/leveraging-the-hybrid-computing-for-data-management-and-analysis)中的例子，在利用 Kafka 进行实时数据处理的同时，还可以集成一个时序数据库，如 TimeScale，来存储来自 1 号、2 号和 3 号罐的上下文信息。这为 Apache Spark 支持的分析和机器学习应用提供了一个持久的数据仓库。
 

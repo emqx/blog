@@ -134,7 +134,7 @@ Install and open [MQTTX](https://mqttx.app/), we first initiate a client connect
 
 ![MQTTX](https://assets.emqx.com/images/e9873d7e2e2bbeb2faea074e220cf724.png)
 
-Create a new client connection, connect to the Public MQTT server, and then subscribe to the topic mqttx_c7f95fdf/status to receive the Will Message:
+Create a new client connection, connect to the Public [MQTT server](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison), and then subscribe to the topic mqttx_c7f95fdf/status to receive the Will Message:
 
 ![new mqtt subscription](https://assets.emqx.com/images/56361c0032b7b6ca8f0b6d4ef4b7c15f.png)
 

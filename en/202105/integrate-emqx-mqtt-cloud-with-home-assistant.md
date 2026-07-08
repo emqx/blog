@@ -2,11 +2,11 @@ In recent years, as people's demand for home security, convenience, comfort and 
 
 ## What is MQTT Broker
 
-MQTT is a lightweight, publish-subscribe network protocol that transports messages between devices. An [MQTT broker](https://www.emqx.com/en/products/emqx) is a server that receives all messages from the clients and then routes the messages to the appropriate destination clients. 
+[MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) is a lightweight, publish-subscribe network protocol that transports messages between devices. An [MQTT broker](https://www.emqx.com/en/products/emqx) is a server that receives all messages from the clients and then routes the messages to the appropriate destination clients. 
 
 ## Why EMQX Cloud?
 
-[EMQX Cloud](https://www.emqx.com/en/cloud) is an MQTT messaging middleware product for the IoT domain from EMQ. As the world's first fully managed MQTT 5.0 public cloud service, EMQX Cloud provides a one-stop O&M colocation and a unique isolated environment for MQTT messaging services. It serves dozens of countries and regions around the world, providing low-cost, secure, and reliable cloud services for 5G and Internet of Everything applications. 
+[EMQX Cloud](https://www.emqx.com/en/cloud) is an MQTT messaging middleware product for the IoT domain from EMQ. As the world's first fully managed [MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5) public cloud service, EMQX Cloud provides a one-stop O&M colocation and a unique isolated environment for MQTT messaging services. It serves dozens of countries and regions around the world, providing low-cost, secure, and reliable cloud services for 5G and Internet of Everything applications. 
 
 EMQX Cloud is available in three plans: Basic, Professional, and Unlimited, which offers a variety of flexible product specifications to support the deployment of fully managed MQTT services exclusively for you on the world's leading public clouds. Need more information with EMQX Cloud's product plan? Click [here](https://docs.emqx.com/en/cloud/latest/pricing.html).
 

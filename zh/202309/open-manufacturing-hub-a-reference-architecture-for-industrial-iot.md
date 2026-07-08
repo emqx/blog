@@ -2,7 +2,7 @@
 
 在[工业物联网](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges)快速发展的今天，实现无缝连接、实时数据处理和高效系统管理的需求空前迫切。随着各个行业持续探索互联设备的变革潜力，构建一个坚实且灵活的技术栈变得尤为重要。
 
-EMQ 提出了一个名为 Open Manufacturing Hub 的开源工业物联网解决方案，以帮助工业用户充分发挥工业连接和实时数据的潜能。在本文中，我们将带您深入了解 Open Manufacturing Hub，详细演示如何部署这一创新方案，并展示它如何改变我们开发工业系统的思路。
+EMQ 提出了一个名为 Open Manufacturing Hub 的开源[工业物联网](https://www.emqx.com/zh/blog/iiot-explained-examples-technologies-benefits-and-challenges)解决方案，以帮助工业用户充分发挥工业连接和实时数据的潜能。在本文中，我们将带您深入了解 Open Manufacturing Hub，详细演示如何部署这一创新方案，并展示它如何改变我们开发工业系统的思路。
 
 ## 工业物联网综合解决方案
 
@@ -30,9 +30,9 @@ Open Manufacturing Hub 的主要组件包括：
 
 使用 EMQX 和 Neuron 构建高效和可扩展的工业物联网系统非常简单。除了 Python Modbus 模拟器之外，所有软件组件都在独立的 Docker 容器中运行。Python Modbus 模拟器是一个生成演示数据的程序。
 
-在 Modbus 模拟器中，Python 程序会随机生成两个温度和湿度样本值，分别存储在 Modbus 寄存器 400001 和 400002 中。Neuron 作为工业连接服务器，被配置为以 1 秒的固定间隔访问这两个 Modbus 寄存器。然后，Neuron 会将 Modbus 寄存器中的数据转换成 MQTT 消息，并将其发布到 EMQX Broker。
+在 Modbus 模拟器中，Python 程序会随机生成两个温度和湿度样本值，分别存储在 Modbus 寄存器 400001 和 400002 中。Neuron 作为工业连接服务器，被配置为以 1 秒的固定间隔访问这两个 Modbus 寄存器。然后，Neuron 会将 Modbus 寄存器中的数据转换成 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 消息，并将其发布到 EMQX Broker。
 
-EMQX MQTT Broker 能够高效处理传入的数据，并通过规则引擎将其转发到 TimescaleDB 数据库。然后，代表温度和湿度值的数据会被写入 TimescaleDB 数据库，该数据库专门针对时序数据的存储进行了优化。
+EMQX [MQTT Broker](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison) 能够高效处理传入的数据，并通过规则引擎将其转发到 TimescaleDB 数据库。然后，代表温度和湿度值的数据会被写入 TimescaleDB 数据库，该数据库专门针对时序数据的存储进行了优化。
 
 最后，数据可视化平台 Grafana 从 TimescaleDB 中检索时序数据，并利用这些数据创建动态的可视化图表和实时的数据洞察。用户可以通过 Grafana 的自定义仪表盘以直观和友好的方式查看和分析温度和湿度数据。
 
@@ -288,7 +288,7 @@ $ sudo python3 simu.py
 
 当 MQTTX 持续显示从 EMQX Broker 订阅的消息时，表示 Neuron 已经成功地将设备数据消息连续发布到 EMQX Broker。
 
-> 注意：这里我们使用 [MQTTX](https://mqttx.app/)，它是一个功能强大的跨平台 MQTT 客户端工具，可以从官方网站下载：[MQTTX Download](https://mqttx.app/downloads) 。
+> 注意：这里我们使用 [MQTTX](https://mqttx.app/)，它是一个功能强大的跨平台 [MQTT 客户端](https://www.emqx.com/zh/blog/mqtt-client-tools)工具，可以从官方网站下载：[MQTTX Download](https://mqttx.app/downloads) 。
 
 ### Timescale 数据库安装步骤
 

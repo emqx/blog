@@ -1,6 +1,6 @@
-Modern IoT systems generate massive streams of MQTT messages. Getting value from this data means more than just moving it around; you need to store it efficiently and make it easy to query.
+Modern IoT systems generate massive streams of [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) messages. Getting value from this data means more than just moving it around; you need to store it efficiently and make it easy to query.
 
-With EMQX’s Amazon S3 integration and **Parquet** support for aggregated uploads, you can turn your MQTT broker into a powerful data ingestion layer for your data lake. In this post, we’ll walk through a practical use case: **Persist MQTT messages to S3 in Parquet format, then analyze them with DuckDB.**
+With EMQX’s Amazon S3 integration and **Parquet** support for aggregated uploads, you can turn your [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) into a powerful data ingestion layer for your data lake. In this post, we’ll walk through a practical use case: **Persist MQTT messages to S3 in Parquet format, then analyze them with DuckDB.**
 
 We already cover the configuration details in our documentation for exporting aggregated data in Parquet to **Amazon S3** and other storages. Here, we’ll focus on the *end-to-end workflow* and what it enables for your IoT analytics.
 

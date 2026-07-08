@@ -18,7 +18,7 @@
 
 首先，分析函数在 SQL 逻辑计划中将被放置于数据源之后执行。运行时在流式处理规则中，分析函数需要在事件触发时进行状态更新。若在部分子句中，例如带 `WHERE` 过滤的规则中使用，有可能函数尚未执行规则已经返回。新的改动保证在事件触发时可及时进行状态更新。
 
-其次，分析函数中添加了 `Partition By` 的分流语法。分析函数的计算默认是在数据流的所有输入事件上进行的。然而，有部分用户的数据流事实上包含了来自不同维度的数据，例如多个设备的数据混杂在一个 MQTT topic 中。新的语法允许用户在做分析计算时根据 `Partition By` 定义的维度进行分流计算。其语法如下所示：
+其次，分析函数中添加了 `Partition By` 的分流语法。分析函数的计算默认是在数据流的所有输入事件上进行的。然而，有部分用户的数据流事实上包含了来自不同维度的数据，例如多个设备的数据混杂在一个 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) topic 中。新的语法允许用户在做分析计算时根据 `Partition By` 定义的维度进行分流计算。其语法如下所示：
 
 ```
 textAnalyticFuncName(<arguments>...) OVER ([PARTITION BY <partition key>])

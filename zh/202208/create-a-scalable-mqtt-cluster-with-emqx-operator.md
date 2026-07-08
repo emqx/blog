@@ -6,7 +6,7 @@
 
 > 详情请查看：[《Mria + RLOG 新架构下的 EMQX 5.0 如何实现 1 亿 MQTT 连接》](https://www.emqx.com/zh/blog/how-emqx-5-0-achieves-100-million-mqtt-connections)
 
-用户可以通过 EMQ 发布的管理工具 [EMQX Kubernetes Operator](https://www.emqx.com/zh/solutions/mqtt-on-kubernetes)，利用 EMQX 5.0 的 Replicant 节点特性，在 Kubernetes 上通过 Deployment 资源实现无状态节点的部署，快速创建并管理可以承载大规模 MQTT 连接和消息吞吐的 EMQX 集群。
+用户可以通过 EMQ 发布的管理工具 [EMQX Kubernetes Operator](https://www.emqx.com/zh/solutions/mqtt-on-kubernetes)，利用 EMQX 5.0 的 Replicant 节点特性，在 Kubernetes 上通过 Deployment 资源实现无状态节点的部署，快速创建并管理可以承载大规模 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 连接和消息吞吐的 EMQX 集群。
 
 本文将通过对 EMQX Kubernetes Operator 核心特性及应用实操的详细讲解，帮助读者进一步掌握如何快速创建部署及自动化管理可弹性伸缩的 EMQX 集群，充分利用 EMQX 5.0 对云原生的支持特性，拥抱云原生。
 
@@ -156,11 +156,11 @@ $ kubectl get emqx emqx -o json | jq ".status.emqxNodes"
 
 ## 结语
 
-除了更强大的水平扩展能力，EMQX 5.0 还通过[全新改版的 Dashboard](https://www.emqx.com/zh/blog/an-easy-to-use-and-observable-mqtt-dashboard) 提供了更清晰全面的数据监控与管理能力，提升了可观测性。此外，对 [MQTT over QUIC](https://www.emqx.com/zh/blog/mqtt-over-quic) 支持的实现，将使得基于 QUIC 协议的 MQTT 连接 在 Pod 被调度时可以做到无感知切换到另一个 Pod 上，从而进一步提高集群的可用性。这些都将使用户可以借助 EMQX 5.0 构建更加云原生的应用。
+除了更强大的水平扩展能力，EMQX 5.0 还通过[全新改版的 Dashboard](https://www.emqx.com/zh/blog/an-easy-to-use-and-observable-mqtt-dashboard) 提供了更清晰全面的数据监控与管理能力，提升了可观测性。此外，对 [MQTT over QUIC](https://www.emqx.com/zh/blog/mqtt-over-quic) 支持的实现，将使得基于 [QUIC 协议](https://www.emqx.com/zh/blog/quic-protocol-the-features-use-cases-and-impact-for-iot-iov)的 MQTT 连接 在 Pod 被调度时可以做到无感知切换到另一个 Pod 上，从而进一步提高集群的可用性。这些都将使用户可以借助 EMQX 5.0 构建更加云原生的应用。
 
 EMQX Kubernetes Operator 则为用户创建和管理 EMQX 集群提供了更加便捷的途径，帮助用户更轻松地体验到 EMQX 5.0 的云原生特性。
 
-未来 EMQ 将持续在云原生方向发力，将 EMQX 进化为一个弹性的、无状态的 MQTT Broker，同时配合 eKuiper、Neuron 等 EMQ 边缘计算产品，进一步探索分布式云原生的落地。
+未来 EMQ 将持续在云原生方向发力，将 EMQX 进化为一个弹性的、无状态的 [MQTT Broker](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison)，同时配合 eKuiper、Neuron 等 EMQ 边缘计算产品，进一步探索分布式云原生的落地。
 
 
 

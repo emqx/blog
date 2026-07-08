@@ -1,6 +1,6 @@
 ## 引言
 
-Sparkplug 是基于 MQTT 的一种专门为工业自动化和物联网应用而设计的通信协议。要搭建 Sparkplug 解决方案，需要两个核心组件：一个是 [MQTT Broker](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison)，负责消息的分发和管理；另一个是边缘节点，负责将本地设备接入 Broker，以实现实时数据的处理和分析。
+Sparkplug 是基于 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 的一种专门为工业自动化和物联网应用而设计的通信协议。要搭建 Sparkplug 解决方案，需要两个核心组件：一个是 [MQTT Broker](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison)，负责消息的分发和管理；另一个是边缘节点，负责将本地设备接入 Broker，以实现实时数据的处理和分析。
 
 在本文中，我们将使用开源分布式 MQTT Broker [EMQX](https://github.com/emqx/emqx)，以及边缘工业协议网关软件 [Neuron](https://github.com/emqx/neuron)，来构建一个可扩展和稳健的平台，用于实现 Sparkplug 解决方案。我们将详细探讨 Sparkplug 解决方案的架构，并深入了解 EMQX 和 Neuron 在其中所扮演的角色。
 

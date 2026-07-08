@@ -1,6 +1,6 @@
 In the IoV ecology, TSP (Telematics Service Provider) platform occupies the core position in the industry chain. It connects automobile and vehicle-mounted equipment manufacturers, network operators, and content providers. It is the core data connection platform for vehicles and services of the original equipment manufacturer (OEM). With the development of intelligent automobiles and the increasing demand of vehicle owners for applications, the demand on OEMs for equipment and applications based on the Telematics Service Provider (TSP) platform will continue to increase.
 
-In the previous article, we mentioned that in the choice of data interaction protocol between vehicle-mounted equipment and TSP platform, the MQTT protocol has become the preferred protocol for the next generation TSP platform of all original equipment manufacturers.  This is because of its advantages of being lightweight, scalable, different quality of service (QoS) levels, decoupling the data generation and consumption systems through the publish-subscribe model.
+In the previous article, we mentioned that in the choice of data interaction protocol between vehicle-mounted equipment and TSP platform, the [MQTT protocol](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) has become the preferred protocol for the next generation TSP platform of all original equipment manufacturers.  This is because of its advantages of being lightweight, scalable, different quality of service (QoS) levels, decoupling the data generation and consumption systems through the publish-subscribe model.
 
 In this article, we will describe how to design the topic of MQTT messages in the process of building the TSP platform of IoV.
 
@@ -76,7 +76,7 @@ The `+` ("+" U+002B) is a wildcard that can only be used for single topic level 
 
 ## Best Practice of Topic Design Principles for TSP Platform of IoV
 
-In the IoV scenario, the MQTT topic defines the channel between business and data, and the core of the topic definition is to distinguish the business scenarios. The topic needs to be designed to conform to certain principles. We can design and define the topic in the following dimensions:
+In the IoV scenario, the [MQTT topic](https://www.emqx.com/en/blog/advanced-features-of-mqtt-topics) defines the channel between business and data, and the core of the topic definition is to distinguish the business scenarios. The topic needs to be designed to conform to certain principles. We can design and define the topic in the following dimensions:
 
 ### By business data direction
 
@@ -138,7 +138,7 @@ As the world's leading MQTT message broker for IoT, [EMQX](https://www.emqx.com/
 
 #### Support of mass topics
 
-With the increasing business in IoV, the number of topics carrying the business channels is also increasing, especially the requirement of one vehicle with one topic and one vehicle with multiple topics for vehicle control.  Because of this, the carrying capacity of the number of topics of MQTT Broker has become an important evaluation index of TSP platform.
+With the increasing business in IoV, the number of topics carrying the business channels is also increasing, especially the requirement of one vehicle with one topic and one vehicle with multiple topics for vehicle control.  Because of this, the carrying capacity of the number of topics of [MQTT Broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) has become an important evaluation index of TSP platform.
 
 EMQ has planned the ability to connect mass equipment and support mass topics from the beginning of the EMQX design. The common 3-node EMQX cluster with 16-core and 32G memory can support the simultaneous running of million-level topic, which provides flexible design space for the topic design of the TSP platform.
 

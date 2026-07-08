@@ -1,6 +1,6 @@
 ## HOL Blocking Issues in MQTT Communication 
 
-In traditional solutions, all MQTT messages are sent through a single channel between the [MQTT client](https://www.emqx.com/en/blog/mqtt-client-tools) and server. For TCP, this means using one TCP connection; for TCP/TLS, it involves a single TLS connection; and for the QUIC solution, it refers to the sole QUIC stream within a QUIC connection.
+In traditional solutions, all MQTT messages are sent through a single channel between the [MQTT client](https://www.emqx.com/en/blog/mqtt-client-tools) and server. For TCP, this means using one TCP connection; for TCP/TLS, it involves a single TLS connection; and for the [QUIC](https://www.emqx.com/en/blog/quic-protocol-the-features-use-cases-and-impact-for-iot-iov) solution, it refers to the sole QUIC stream within a QUIC connection.
 
 All messages are queued for sequential sending, meaning that the message at the front of the queue blocks all subsequent messages until it is transmitted. This type of blocking can cause high-priority data to be delayed if a low-priority message is at the front of the queue. Additionally, if a large message does not finish transmitting within a certain period—known as the keepalive interval—the connection may be disconnected. However, this is not the end of the story; the client can reconnect and attempt to retransmit the large message. Unfortunately, it is likely to time out again, resulting in the client getting stuck in a reconnect loop. 
 
@@ -8,7 +8,7 @@ In summary, head-of-line (HOL) blocking prevents important high-priority message
 
 ## The Multi-Stream Feature of MQTT over QUIC
 
-The multi-stream feature of MQTT over QUIC in EMQX can solve the problem. Between a client and EMQX MQTT broker, there is one QUIC connection that supports multiple streams. We send different messages over these streams and assign varying priority levels to them. This allows the QUIC stack to manage the network transmission effectively, helping to mitigate the HOL blocking issue. In this way, low-priority large messages won't obstruct the transmission of smaller, more important messages.
+The multi-stream feature of [MQTT over QUIC](https://www.emqx.com/en/blog/mqtt-over-quic) in EMQX can solve the problem. Between a client and EMQX [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison), there is one QUIC connection that supports multiple streams. We send different messages over these streams and assign varying priority levels to them. This allows the QUIC stack to manage the network transmission effectively, helping to mitigate the HOL blocking issue. In this way, low-priority large messages won't obstruct the transmission of smaller, more important messages.
 
 However, there's a trade-off regarding message ordering: while message ordering is guaranteed within a single stream, it is not assured across different streams. Typically, this is not a major concern because when one message has a higher priority than another, it is generally expected that the high-priority message should take precedence. Therefore, while ordering is not critical among messages of different priorities, maintaining the correct prioritization is essential.
 

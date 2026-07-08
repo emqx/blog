@@ -24,7 +24,7 @@ Data Bridges are used to interface with data systems to enable high-performance,
 
 ## Why data integration?
 
-The MQTT protocol is designed for hardware device-to-server messaging. To achieve a complete IoT application, it is necessary to connect devices with business systems capable of storing reported data in the cloud and distributing business instructions.
+The [MQTT protocol](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) is designed for hardware device-to-server messaging. To achieve a complete IoT application, it is necessary to connect devices with business systems capable of storing reported data in the cloud and distributing business instructions.
 
 To achieve this in traditional IoT applications, developers need to write code, and subsequent changes in the business require upgrades to the whole application. The device side and business platform side are often operated by independent teams, which complicates the process further. The key to fast project delivery and upgrade iterations is decoupling the device side from the cloud business platform and still interfacing between the two efficiently.
 
@@ -72,7 +72,7 @@ In a future version, we will build a data Flow Editor with visual orchestration 
 
 ## Data integration upgrade guide: Migrating from v4 to v5
 
-EMQX 5.0 SQL rules are fully compatible with the syntax of version 4.x, but the design splits rule actions into two categories: built-in actions (message republishing, console output) and data bridges (Webhook, MQTT Bridge), which enables the reuse of rules and data bridges.
+EMQX 5.0 SQL rules are fully compatible with the syntax of version 4.x, but the design splits rule actions into two categories: built-in actions (message republishing, console output) and data bridges (Webhook, [MQTT Bridge](https://www.emqx.com/en/blog/bridging-mosquitto-to-emqx-cluster)), which enables the reuse of rules and data bridges.
 
 In addition to the new architectural design, EMQX also consolidates data integration-related features from older versions. Prior to the introduction of the rules engine in version 4.x, users could use plug-ins to create simple integrations. For compatibility reasons, we did not remove these plug-ins after the rules engine was released, which resulted in some fragmentation of functionality.
 
@@ -82,7 +82,7 @@ The following is a comparison of the functional changes from EMQX open-source ve
 
 | **4.x Plug-ins** | **4.x Rules Engine Actions** | **5.0 Rules/Data Bridge Actions** |
 | :--------------- | :--------------------------- | :-------------------------------- |
-| emqx_bridge_mqtt | Bridging Data to MQTT Broker | MQTT Bridge                       |
+| emqx_bridge_mqtt | Bridging Data to [MQTT Broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) | MQTT Bridge                       |
 | emqx_web_hook    | Sending Data to Web Services | Webhook                           |
 | -                | Message republishing         | Message republishing              |
 | -                | Check (debug)                | Console output                    |

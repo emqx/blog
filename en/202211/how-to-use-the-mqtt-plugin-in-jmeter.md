@@ -1,6 +1,6 @@
 As we mentioned earlier, JMeter has built-in HTTP/HTTPS, TCP and other protocols, and has a plug-in extension mechanism.
 
-MQTT is a mainstream protocol in the IoT world. Although it is not a protocol type that comes with JMeter, it is extremely common in IoT testing scenarios. In order to support the scale testing of the MQTT protocol, EMQ developed a JMeter-based open-source testing plug-in for the MQTT protocol.
+MQTT is a mainstream protocol in the IoT world. Although it is not a protocol type that comes with JMeter, it is extremely common in IoT testing scenarios. In order to support the scale testing of the [MQTT protocol](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt), EMQ developed a JMeter-based open-source testing plug-in for the MQTT protocol.
 
 After several iterations, the latest version of the JMeter MQTT plug-in is presently 2.0.2, which supports a variety of samplers, such as connection, message publish and message subscription, and can be combined to build more complex test scenarios.
 
@@ -24,7 +24,7 @@ The Connect sampler simulates an IoT device and initiates an MQTT connection.
 
 ![MQTT Connect Sampler](https://assets.emqx.com/images/158cf439c62d05687ca44e948d90ad19.png)
  
-**Server name or IP:** The address of the MQTT server being tested.
+**Server name or IP:** The address of the [MQTT server](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) being tested.
 
 **Port number:** Taking the EMQX Broker as an example, the default ports are 1883 for TCP connections, and 8883 for SSL connections. Please refer to the specific configuration of the server for the specific port.
 
@@ -38,7 +38,7 @@ The Connect sampler simulates an IoT device and initiates an MQTT connection.
 
 **ClientId:** The identity of the virtual user. If “Add random suffix for ClientId” is checked, a uuid string will be added as a suffix to each ClientId and the whole virtual user identifier.
 
-**Keep alive(s):** The interval for sending heartbeat signals. For example, 300 means that the client sends ping requests to the server every 300 seconds to keep the connection active.
+**[Keep alive](https://www.emqx.com/en/blog/mqtt-keep-alive)(s):** The interval for sending heartbeat signals. For example, 300 means that the client sends ping requests to the server every 300 seconds to keep the connection active.
 
 **Connect attempt max:** The maximum number of reconnection attempts during the first connection. If this number is exceeded, the connection is considered failed. If the user wants to keep trying to reconnect, set this to -1.
 

@@ -1,4 +1,4 @@
-> The blog post [Open MQTT Benchmark Suite: The Ultimate Guide to MQTT Performance Testing](https://www.emqx.com/en/blog/open-mqtt-benchmark-suite-the-ultimate-guide-to-mqtt-performance-testing) introduced the Open MQTT Benchmark Suite developed by EMQ. We defined MQTT benchmark scenarios, use cases, and observation metrics in [the GitHub project](https://github.com/emqx/mqttbs). Based on the activity and popularity of the community and GitHub project, the top 4 open-source [MQTT brokers in 2023](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) – EMQX,  Mosquitto, NanoMQ, and Vernemq, were chosen to perform the benchmark test. 
+> The blog post [Open MQTT Benchmark Suite: The Ultimate Guide to MQTT Performance Testing](https://www.emqx.com/en/blog/open-mqtt-benchmark-suite-the-ultimate-guide-to-mqtt-performance-testing) introduced the Open [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) Benchmark Suite developed by EMQ. We defined MQTT benchmark scenarios, use cases, and observation metrics in [the GitHub project](https://github.com/emqx/mqttbs). Based on the activity and popularity of the community and GitHub project, the top 4 open-source [MQTT brokers in 2023](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) – EMQX,  Mosquitto, NanoMQ, and Vernemq, were chosen to perform the benchmark test. 
 >
 > This blog series presents the benchmark test results and aims to help you choose a suitable MQTT broker based on your needs and use cases.
 
@@ -60,7 +60,7 @@ All the tests are executed on a single node.
 
 | **Config**                    | **Value**  |
 | :---------------------------- | :--------- |
-| keep alive                    | 300s       |
+| [keep alive](https://www.emqx.com/en/blog/mqtt-keep-alive)                    | 300s       |
 | clean session                 | true       |
 | authentication enablement     | no         |
 | TLS authentication enablement | no         |
@@ -80,7 +80,7 @@ The test environment is configured on AWS, and all virtual machines are within a
 
 XMeter is used in this benchmark test to simulate various business scenarios. XMeter is built on top of JMeter but with enhanced scalability and more capabilities. It provides comprehensive and real-time test reports during the test. Additionally, its built-in monitoring tools are used to track the resource usage of the EMQX/Mosquitto server, enabling a comparison with the information provided by the operating systems.
 
-XMeter provides a private deployment version (on-premise) and a public cloud SaaS version. A private XMeter is deployed in the same VPC as the MQTT broker server in this testing.
+XMeter provides a private deployment version (on-premise) and a public cloud SaaS version. A private XMeter is deployed in the same VPC as the [MQTT broker server](https://www.emqx.com/en/blog/a-comprehensive-comparison-of-open-source-mqtt-brokers-in-2023) in this testing.
 
 ![XMeter](https://assets.emqx.com/images/fc5defa16b656b6f86f811eb6336288a.png)
 

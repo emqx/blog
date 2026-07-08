@@ -26,7 +26,7 @@ EMQ provides a comprehensive edge-cloud collaboration solution to build a next-g
 
 ### Real-time Monitoring and Intelligent Control
 
-EMQ's NeuronEX industrial edge gateway software enables the smart gas platform to collect real-time data from various gas devices using over 100 industrial protocols. NeuronEX can convert the data into MQTT message formats and efficiently transmit it to the cloud, providing real-time, reliable data. This data allows for intelligent control and scheduling, optimized resource utilization, enhanced safety, and improved energy efficiency. Additionally, the platform can monitor gas equipment status, sensor data, gas usage, and key parameters in real time.
+EMQ's NeuronEX industrial edge gateway software enables the smart gas platform to collect real-time data from various gas devices using over 100 industrial protocols. NeuronEX can convert the data into [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) message formats and efficiently transmit it to the cloud, providing real-time, reliable data. This data allows for intelligent control and scheduling, optimized resource utilization, enhanced safety, and improved energy efficiency. Additionally, the platform can monitor gas equipment status, sensor data, gas usage, and key parameters in real time.
 
 ### Reliable Data Transmission
 

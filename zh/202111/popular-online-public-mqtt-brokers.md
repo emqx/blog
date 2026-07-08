@@ -1,10 +1,10 @@
 ## 前言
 
-很多 MQTT 项目和物联网服务都提供了[在线的公共 MQTT 服务器](https://www.emqx.com/zh/mqtt/public-mqtt5-broker)，用户可以直接利用其进行 MQTT 学习、测试、原型制作甚至是小规模使用，而无需再自行部署，方便快捷，节省时间与精力成本。
+很多 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 项目和物联网服务都提供了[在线的公共 MQTT 服务器](https://www.emqx.com/zh/mqtt/public-mqtt5-broker)，用户可以直接利用其进行 MQTT 学习、测试、原型制作甚至是小规模使用，而无需再自行部署，方便快捷，节省时间与精力成本。
 
 但因为地理位置、网络环境以及服务器负载不同，每个公共服务器的稳定性以及消息传输时延也不尽相同。尽管几乎所有服务提供方都声明不对其免费服务的稳定性和安全性负责，但用户在使用时却需要考虑这些因素。
 
-为此，本文整理了一些较为热门的免费在线 MQTT 服务器，通过可访问性、网络延时、小规模性能测试以及消息实际传输延时等几个层面进行评估对比，希望可以为您的选择提供参考。
+为此，本文整理了一些较为热门的免费在线 [MQTT 服务器](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison)，通过可访问性、网络延时、小规模性能测试以及消息实际传输延时等几个层面进行评估对比，希望可以为您的选择提供参考。
 
 
 ## 热门在线公共 MQTT 服务器

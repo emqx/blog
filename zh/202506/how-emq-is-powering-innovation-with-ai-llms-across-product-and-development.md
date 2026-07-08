@@ -9,7 +9,7 @@
 - **社区支持：** 在 EMQX Discord 频道部署 AI 聊天机器人，提供实时社区协助。
 - **产品增强：**
   - **EMQX 规则引擎：**将 `ai_completion` 调用集成到 EMQX 规则引擎中，实现智能消息处理。
-  - [**MQTTX Copilot**](https://www.emqx.com/en/blog/mqttx-1-9-7-release-notes)**：**将 LLM 与 MQTT 操作相结合，简化并支持自动化开发。
+  - [**MQTTX Copilot**](https://www.emqx.com/en/blog/mqttx-1-9-7-release-notes)**：**将 LLM 与 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 操作相结合，简化并支持自动化开发。
   - **NeuronEX IIoT 数据分析：**利用 LLM 和 RAG 进行自然语言数据探索和自动化故障排除。
 - **内部优化：**
   - 利用 LLM 自动将 Jira 和 Slack 中的知识聚合到 RAG 数据库中，提高故障排除效率。

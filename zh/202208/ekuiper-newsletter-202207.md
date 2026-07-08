@@ -1,4 +1,4 @@
-盛夏时节，eKuiper 本年度第二个大版本 v1.6.0 如约而至。面向 Flow 编排的图规则 API 的开发和内部试用打磨贯穿了整个夏季版本的开发过程，终于在 7 月完成。与此同时，我们也完成了多个 SQL 语法和函数的提升，期望 Flow 编排 和 SQL 双剑合璧能够帮助用户更容易地表达业务逻辑，覆盖更多样的使用场景，进一步减少定制开发的需求和成本。此外，我们也优化了外部系统连接的使用。例如 EdgeX 和 MQTT 连接中断时不再退出规则、SQL 和 TDengine Sink 支持批量写入等。
+盛夏时节，eKuiper 本年度第二个大版本 v1.6.0 如约而至。面向 Flow 编排的图规则 API 的开发和内部试用打磨贯穿了整个夏季版本的开发过程，终于在 7 月完成。与此同时，我们也完成了多个 SQL 语法和函数的提升，期望 Flow 编排 和 SQL 双剑合璧能够帮助用户更容易地表达业务逻辑，覆盖更多样的使用场景，进一步减少定制开发的需求和成本。此外，我们也优化了外部系统连接的使用。例如 EdgeX 和 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 连接中断时不再退出规则、SQL 和 TDengine Sink 支持批量写入等。
 
 在之前的 Newsletter 中，我们已经陆续介绍过 v1.6.0 已开发完成的一些新功能，包括 protobuf 编解码的支持、离线缓存和重发等。本期 Newletter 将介绍其他新功能。完整的功能列表请查看[1.6.0 Release](https://github.com/lf-edge/ekuiper/releases/tag/1.6.0).
 

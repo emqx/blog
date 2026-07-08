@@ -1,13 +1,13 @@
 Today marks a pivotal moment in the journey of EMQX! We're excited to announce a significant evolution: starting with version 5.9, we are unifying our Community and Enterprise editions into a single, powerful **EMQX Platform**. Concurrently, this unified platform will adopt the **Business Source License (BSL) 1.1**.
 
-This strategic move is driven by our commitment to accelerating innovation **at the intersection of MQTT and AI.** We envision MQTT as the essential nervous system connecting the physical world to artificial intelligence, and this change positions EMQX to lead that future.
+This strategic move is driven by our commitment to accelerating innovation **at the intersection of [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) and AI.** We envision MQTT as the essential nervous system connecting the physical world to artificial intelligence, and this change positions EMQX to lead that future.
 
 ## **Recap: The Dual-Edition Model (Community & Enterprise)**
 
 For years, EMQX has operated under a dual-license model with two distinct editions:
 
-- **EMQX Community Edition:** Licensed under the permissive **Apache License 2.0**,  it became a widely embraced open-source MQTT broker used by developers and organizations worldwide for a vast range of projects.
-- **EMQX Enterprise Edition:** Built upon the Community core, it offered advanced features for commercial deployments, including enhanced data processing, data integration, enterprise security (like SSO, RBAC), advanced clustering, and dedicated support.
+- **EMQX Community Edition:** Licensed under the permissive **Apache License 2.0**,  it became a widely embraced open-source [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) used by developers and organizations worldwide for a vast range of projects.
+- **[EMQX Enterprise](https://www.emqx.com/en/products/emqx) Edition:** Built upon the Community core, it offered advanced features for commercial deployments, including enhanced data processing, data integration, enterprise security (like SSO, RBAC), advanced clustering, and dedicated support.
 
 ## **Why This Evolution? Fostering Innovation and Community**
 

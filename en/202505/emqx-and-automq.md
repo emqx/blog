@@ -6,7 +6,7 @@ Embracing the values of "People-oriented, Innovation, Excellence," Geely’s mis
 
 ## **Challenges in Building a Connected Vehicle Platform**
 
- As automotive intelligence and connectivity continue to grow, user experience has become a core focus for passenger vehicles. Within connected car ecosystems, the infotainment system acts as the primary interface linking drivers, vehicles, and the cloud. By integrating infotainment with a connected platform, automakers can capture real-time vehicle data and user behavior, enabling precise management, predictive maintenance, and personalized services. Mobile app integration further enhances experiences like vehicle tracking and personalized point-of-interest (POI) recommendations. Today, automakers are rapidly transitioning toward data-driven, service-centric platforms – but building these platforms presents several challenges:
+ As automotive intelligence and connectivity continue to grow, user experience has become a core focus for passenger vehicles. Within [connected car](https://www.emqx.com/en/blog/mqtt-for-internet-of-vehicles) ecosystems, the infotainment system acts as the primary interface linking drivers, vehicles, and the cloud. By integrating infotainment with a connected platform, automakers can capture real-time vehicle data and user behavior, enabling precise management, predictive maintenance, and personalized services. Mobile app integration further enhances experiences like vehicle tracking and personalized point-of-interest (POI) recommendations. Today, automakers are rapidly transitioning toward data-driven, service-centric platforms – but building these platforms presents several challenges:
 
 - Supporting massive concurrent connections from infotainment systems
 - Handling high-throughput, high-concurrency uplink and downlink service data
@@ -20,7 +20,7 @@ Embracing the values of "People-oriented, Innovation, Excellence," Geely’s mis
 
 To address these challenges, Geely adopted a hybrid cloud architecture for its connected vehicle platform.
 
-The Telematics Service Provider (TSP) platform operates in a public cloud environment, leveraging EMQX Enterprise—a unified MQTT and AI platform—to deliver high-performance connectivity and real-time data integration for connected vehicles. EMQX’s scalable, reliable, and high-throughput architecture ensures stable transmission and processing of telematics data, freeing Geely’s development teams to focus on upper-layer applications.
+The Telematics Service Provider (TSP) platform operates in a public cloud environment, leveraging [EMQX Enterprise](https://www.emqx.com/en/products/emqx)—a unified MQTT and AI platform—to deliver high-performance connectivity and real-time data integration for connected vehicles. EMQX’s scalable, reliable, and high-throughput architecture ensures stable transmission and processing of telematics data, freeing Geely’s development teams to focus on upper-layer applications.
 
 Data from TSP applications is transmitted via AutoMQ to the Geely Data Management Platform (GDMP), which provides capabilities such as data ingestion, low-code development, task orchestration, data mapping, quality monitoring, and data services. As Geely’s big data foundation, GDMP supports the full business lifecycle—from R&D and manufacturing to supply, sales, and after-sales service.
 
@@ -48,7 +48,7 @@ As Geely’s brand portfolio expands, the volume of vehicle connectivity data co
 
 2. **High-Concurrency, High-Security Vehicle Connections**:
 
-   Vehicles connect over cellular networks using the MQTT protocol.  EMQX’s distributed setup supports millions of connections and enables TLS encryption, one-way or mutual authentication, and PKI/CA integration for robust one-device-one-key security. EMQX also provides real-time connection status monitoring for better operational control.
+   Vehicles connect over cellular networks using the [MQTT protocol](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt).  EMQX’s distributed setup supports millions of connections and enables TLS encryption, one-way or mutual authentication, and PKI/CA integration for robust one-device-one-key security. EMQX also provides real-time connection status monitoring for better operational control.
 
 3. **Reliable High-Throughput Data Transmission:**
    - MQTT’s built-in heartbeat, session persistence, and QoS mechanisms ensure reliable message delivery, even during network interruptions. Lost messages are automatically recovered when vehicles reconnect.
@@ -75,6 +75,6 @@ As Geely’s brand portfolio expands, the volume of vehicle connectivity data co
 
 ## **Future Outlook**
 
-As Geely advances its "Smart Car AI Everywhere" strategy, the hybrid cloud architecture built on EMQX and AutoMQ will become the core data foundation for its next-generation initiatives. This solution will accelerate Geely’s expansion into smart manufacturing, intelligent driving, and global service networks.
+As Geely advances its "Smart Car AI Everywhere" strategy, the hybrid cloud architecture built on EMQX and AutoMQ will become the core data foundation for its next-generation initiatives. This solution will accelerate Geely’s expansion into [smart manufacturing](https://www.emqx.com/en/blog/the-smart-manufacturing-revolution), intelligent driving, and global service networks.
 
 Moreover, this architecture will strengthen Geely's position in electrification and shared mobility, helping set a new benchmark for China's automotive industry transformation – from data-driven to AI-powered intelligence.

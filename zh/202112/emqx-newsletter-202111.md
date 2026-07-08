@@ -33,7 +33,7 @@
 - 规则引擎重构 Data Bridge 的配置文件结构和 HTTP API
 - 规则引擎支持 Data Bridge 的成功/失败、速率等统计计数
 - 新增对网关和网关下监听器的认证数据管理接口
-- Lwm2m 新增指令下发接口
+- [Lwm2m](https://www.emqx.com/zh/blog/iot-protocols-mqtt-coap-lwm2m) 新增指令下发接口
 - 修复认证鉴权的一些问题
 - 统一 HTTP API 相关行为
 - 引入客户端强制踢除机制
@@ -59,7 +59,7 @@
 1. 将同时发行基于 OTP23 和 OTP24 的版本
 2. 将支持滚动升级
 3. 高可靠性持久会话的开发分支并入主干，现已经展开性能测试工作
-   在5.0之前，EMQX 就已经提供了 MQTT 会话持久化的能力。但是这些会话没有同步到集群里的其他节点。本月，支持高可靠性持久会话的开发分支终于合并进入主干分支，并已开始着手性能测试。
+   在5.0之前，EMQX 就已经提供了 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 会话持久化的能力。但是这些会话没有同步到集群里的其他节点。本月，支持高可靠性持久会话的开发分支终于合并进入主干分支，并已开始着手性能测试。
 4. 基于 CDK 的 EMQX 集群部署
    本月 EMQX 欧洲研发团队开源了一个集群部署的内部工具 [cdk-emqx-cluster](https://github.com/emqx/cdk-emqx-cluster)，该工具基于 AWS 的 [CDK](https://aws.amazon.com/cdk/) 开发包，有能力部署并配置 EMQX集群以及周边集成的服务，例如 etcd，Kafka 用于跑压力测试的 load generator，以及用于监控的 Prometheus，并自带一个完备的 Grafana Dashboard。
 

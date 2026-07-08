@@ -67,7 +67,7 @@ These two nodes enable the creation of traditional multi-branch workflows and ma
 
 ## Serialization and Schema Optimization
 
-eKuiper enables the integration of external systems through its source/sink functionality. To read data from an external source, the process consists of two steps: connect and serialization. First, the source is connected to eKuiper following the appropriate protocol. For example, an MQTT source is connected through the MQTT protocol. Once connected, the payload of the data read from the external system is serialized into eKuiper's internal map format. This enables the data to be processed by eKuiper's rules and applications.
+eKuiper enables the integration of external systems through its source/sink functionality. To read data from an external source, the process consists of two steps: connect and serialization. First, the source is connected to eKuiper following the appropriate protocol. For example, an MQTT source is connected through the [MQTT protocol](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt). Once connected, the payload of the data read from the external system is serialized into eKuiper's internal map format. This enables the data to be processed by eKuiper's rules and applications.
 
 ### Connection and Serialization
 

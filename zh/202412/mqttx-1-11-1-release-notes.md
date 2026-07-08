@@ -1,6 +1,6 @@
 MQTTX 1.11.1 现已正式发布！
 
-该版本增强了 MQTTX 的可视化功能，改进了主题树功能和实时流量监控。新增的流量速率监控功能为用户提供实时数据包追踪，主题树现在支持与连接列表的手动同步以及 MQTT 属性显示。此外，我们还解决了桌面客户端中消息渲染丢失的问题，以确保更稳定的使用体验。
+该版本增强了 MQTTX 的可视化功能，改进了主题树功能和实时流量监控。新增的流量速率监控功能为用户提供实时数据包追踪，主题树现在支持与连接列表的手动同步以及 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 属性显示。此外，我们还解决了桌面客户端中消息渲染丢失的问题，以确保更稳定的使用体验。
 
 > 在此下载最新版本：[https://mqttx.app/zh/downloads](https://mqttx.app/zh/downloads)
 
@@ -142,7 +142,7 @@ cat message.txt | mqttx pub -t "test" -s -M
 - **物联网场景数据模拟**：将此功能引入桌面客户端，简化物联网场景测试
 - **Sparkplug B 支持**：扩展 MQTTX 功能以支持 Sparkplug B
 - **MQTT GUI 调试功能**：新增协助 MQTT 通信调试的功能
-- **插件功能**：引入支持 CoAP 和 MQTT-SN 等协议扩展的插件系统
+- **插件功能**：引入支持 [CoAP](https://www.emqx.com/zh/blog/coap-protocol) 和 MQTT-SN 等协议扩展的插件系统
 - **JSON Schema**：JSON Schema 的编码和解码功能
 - **脚本测试自动化（Flow）**：简化自动化测试工作流的创建和管理
 

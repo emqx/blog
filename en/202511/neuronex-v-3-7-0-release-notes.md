@@ -1,6 +1,6 @@
 We are excited to announce the official release of EMQX Neuron(formerly NeuronEX) 3.7.0!
 
-This release marks a new step forward in the breadth of industrial connectivity. The core highlight is the brand-new northbound **OPC UA Server** plugin. This feature complements EMQX Neuron's powerful MQTT capabilities, enabling it to expose large volumes of southbound device data to upstream SCADA, MES, or third-party clients via the OPC UA industry standard, meeting a wider range of integration requirements.
+This release marks a new step forward in the breadth of industrial connectivity. The core highlight is the brand-new northbound **OPC UA Server** plugin. This feature complements EMQX Neuron's powerful [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) capabilities, enabling it to expose large volumes of southbound device data to upstream SCADA, MES, or third-party clients via the OPC UA industry standard, meeting a wider range of integration requirements.
 
 Furthermore, version 3.7.0 includes a series of significant enhancements in driver capabilities, dashboard visualization, and AI-powered operations, further improving the platform's usability and stability.
 

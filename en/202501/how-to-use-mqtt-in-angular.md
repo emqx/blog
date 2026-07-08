@@ -37,7 +37,7 @@ Now you're ready to start development!
 
 ### Install the MQTT Client Library
 
-The library used in this case is [ngx-mqtt](https://sclausen.github.io/ngx-mqtt/), which isn’t just a wrapper around MQTT.js for angular >= 2. It uses observables for efficient subscription handling and message routing, making it ideal for Angular applications.
+The library used in this case is [ngx-mqtt](https://sclausen.github.io/ngx-mqtt/), which isn’t just a wrapper around [MQTT.js](https://www.emqx.com/en/blog/mqtt-js-tutorial) for angular >= 2. It uses observables for efficient subscription handling and message routing, making it ideal for Angular applications.
 
 Install it using npm or yarn command:
 

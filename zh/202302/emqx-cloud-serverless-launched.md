@@ -1,4 +1,4 @@
-近日，全球领先的开源物联网数据基础设施软件供应商 EMQ 正式发布了 Serverless MQTT 云服务 —— EMQX Cloud Serverless 的 Beta 版本，开创性地采用弹性多租户技术，用户**无需关心服务器基础设施和服务规格伸缩所需资源**，仅用三秒即可极速创建 MQTT 部署，并根据业务需求进行无感知自动化弹性伸缩、按实际使用量付费，实现全自动化的 MQTT 接入服务，专注物联网业务逻辑和实现。
+近日，全球领先的开源物联网数据基础设施软件供应商 EMQ 正式发布了 [Serverless MQTT](https://www.emqx.com/zh/cloud/serverless-mqtt) 云服务 —— [EMQX Cloud](https://www.emqx.com/zh/cloud) Serverless 的 Beta 版本，开创性地采用弹性多租户技术，用户**无需关心服务器基础设施和服务规格伸缩所需资源**，仅用三秒即可极速创建 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 部署，并根据业务需求进行无感知自动化弹性伸缩、按实际使用量付费，实现全自动化的 MQTT 接入服务，专注物联网业务逻辑和实现。
 
 作为全托管的 MQTT 消息云服务，EMQX Cloud 可以将物联网设备连接到任何云，免除基础设施维护负担，至今已帮助全球各行业的 300 余家企业用户轻松开启 MQTT 服务。EMQX Cloud Serverless 的推出将进一步简化 MQTT 消息服务的使用，更好地满足中小型企业及独立开发者对 MQTT 协议设备的接入需求，推动用户更轻松快捷地实现物联网业务创新。
 
@@ -7,7 +7,7 @@
 
 ## 基于多租户架构的 Serverless MQTT 服务
 
-随着云计算的发展，Serverless 这一热点技术趋势逐渐成为云的未来发展方向。作为 Serverless 模式的 MQTT Broker，EMQX Cloud Serverless 为用户提供了完全自动化的 MQTT 接入服务构建、部署与弹性伸缩，用户无需关心底层部署与运维，可以更加专注于业务逻辑的实现。
+随着云计算的发展，Serverless 这一热点技术趋势逐渐成为云的未来发展方向。作为 Serverless 模式的 [MQTT Broker](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison)，EMQX Cloud Serverless 为用户提供了完全自动化的 MQTT 接入服务构建、部署与弹性伸缩，用户无需关心底层部署与运维，可以更加专注于业务逻辑的实现。
 
 ### 3 秒极速创建部署
 

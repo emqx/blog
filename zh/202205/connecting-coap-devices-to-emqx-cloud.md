@@ -2,7 +2,7 @@
 
 物联网场景中设备大多都是资源限制型的，比如 CPU、RAM、Flash、网络宽带等。尤其是由电池供电的设备，对传输协议的功耗以及带宽非常敏感，直接使用 TCP 和 HTTP 协议来实现设备与平台之间的数据交换无法满足设备对低功耗的要求。
 
-为了让这部分设备能够顺利接入网络，CoAP 协议应运而生。作为致力于为物联网各类场景提供数据连接能力的全托管 MQTT 消息服务，[EMQX Cloud](https://www.emqx.com/zh/cloud) 也支持 CoAP 协议的设备接入，允许符合某种定义的 CoAP 消息格式向 EMQX Cloud 执行发布、订阅、和接收消息等操作。
+为了让这部分设备能够顺利接入网络，[CoAP](https://www.emqx.com/zh/blog/coap-protocol) 协议应运而生。作为致力于为物联网各类场景提供数据连接能力的全托管 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 消息服务，[EMQX Cloud](https://www.emqx.com/zh/cloud) 也支持 CoAP 协议的设备接入，允许符合某种定义的 CoAP 消息格式向 EMQX Cloud 执行发布、订阅、和接收消息等操作。
 
 本文将介绍如何使用 EMQX Cloud 实现 CoAP 协议设备的接入。
 

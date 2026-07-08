@@ -12,7 +12,7 @@ The primary objective of Sparkplug 3.0 is to provide clear and formal specificat
 
 ### Incorporation of MQTT 5.0 Specifics
 
-Sparkplug 3.0 includes specific settings related to MQTT 5.0, particularly addressing different session settings like "Clean Start" in MQTT 5.0 compared to "[Clean Session](https://www.emqx.com/en/blog/mqtt-session)" in MQTT 3.1.1. These additions align Sparkplug with the enhancements introduced in MQTT 5.0.
+Sparkplug 3.0 includes specific settings related to [MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5), particularly addressing different session settings like "Clean Start" in [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) 5.0 compared to "[Clean Session](https://www.emqx.com/en/blog/mqtt-session)" in MQTT 3.1.1. These additions align Sparkplug with the enhancements introduced in MQTT 5.0.
 
 ### Subset Requirements for MQTT Servers
 
@@ -81,7 +81,7 @@ The subset requirements for MQTT servers ensure that existing MQTT v3.1.1 server
 
 ## **Sparkplug Compatibility Program**
 
-The Sparkplug Compatibility Program enables software and hardware vendors to prove compatibility with Eclipse Sparkplug and MQTT-based IoT infrastructure. This program facilitates seamless integration with common devices and networks in industrial IoT, ensuring certified solutions and easy procurement.
+The Sparkplug Compatibility Program enables software and hardware vendors to prove compatibility with Eclipse Sparkplug and MQTT-based IoT infrastructure. This program facilitates seamless integration with common devices and networks in [industrial IoT](https://www.emqx.com/en/blog/industrial-iot-systems), ensuring certified solutions and easy procurement.
 
 Certified vendors provide confidence in product adherence to Sparkplug specifications, enabling smooth interoperability and streamlined implementation. Vendors undergo open-source tests to confirm compliance with the Sparkplug Technical Compatibility Kit (TCK). Successful products are added to the official list of compatible products, visible on the [Sparkplug Working Group's website](https://www.eclipse.org/org/workinggroups/eclipse_sparkplug_charter.php). The Sparkplug Compatible logo showcases compatibility.
 

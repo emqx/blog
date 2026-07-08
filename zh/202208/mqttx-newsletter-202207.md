@@ -1,4 +1,4 @@
-7月，[MQTTX](https://mqttx.app/zh) 团队专注于 1.8.1 版本的开发。v1.8.1 中 MQTTX 桌面端版本将支持自动更新，并对 [MQTTX Web](https://mqttx.app/zh/web) 页面进行了优化。目前已完成了 [MQTTX CLI](https://mqttx.app/zh/cli) 对于 MQTT 5.0 的连接支持及用户属性设置支持，并新增了一个 conn 命令来快速测试连接，后续还将添加 bench 命令，将支持部分场景下的 MQTT 协议性能测试。
+7月，[MQTTX](https://mqttx.app/zh) 团队专注于 1.8.1 版本的开发。v1.8.1 中 MQTTX 桌面端版本将支持自动更新，并对 [MQTTX Web](https://mqttx.app/zh/web) 页面进行了优化。目前已完成了 [MQTTX CLI](https://mqttx.app/zh/cli) 对于 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 5.0 的连接支持及用户属性设置支持，并新增了一个 conn 命令来快速测试连接，后续还将添加 bench 命令，将支持部分场景下的 MQTT 协议性能测试。
 
 ## MQTTX 桌面端应用
 
@@ -34,7 +34,7 @@ mqttx conn -h 'broker.emqx.io' -p 1883 -u 'admin' -P 'public'
 
 MQTTX Web 在线试用地址已修改为：[https://mqttx.app/web-client/](https://mqttx.app/web-client/)
 
-只需要访问上述地址，即可快速使用这款在线的 MQTT 5.0 客户端工具，通过 MQTT over WebSocket 连接到 MQTT Broker 并在浏览器中测试消息发布和接收，快速开发和调试您的 MQTT 服务与应用。
+只需要访问上述地址，即可快速使用这款在线的 MQTT 5.0 客户端工具，通过 MQTT over WebSocket 连接到 [MQTT Broker](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison) 并在浏览器中测试消息发布和接收，快速开发和调试您的 MQTT 服务与应用。
 
 在 1.8.1 版本中，我们还将继续优化页面样式，完善测试功能等。
 

@@ -1,6 +1,6 @@
 ## 引言：MQTTX 与 MCP 的融合
 
-作为最受欢迎的 MQTT 客户端工具，MQTTX 在 1.12.0 beta 版本中集成了模型上下文协议（MCP）到 Copilot AI 功能中，显著提升了服务能力。这一融合让 MQTTX 转变为 MCP Host（也就是发起请求的 LLM 应用程序），支持 MQTTX Copilot 直接与 MQTT 服务（如 EMQX）和本地资源进行交互。这种将大语言模型（LLM）与 MQTT 操作相结合的方式，为物联网自动化、监控和开发带来了全新可能。
+作为最受欢迎的 [MQTT 客户端](https://www.emqx.com/zh/blog/mqtt-client-tools)工具，MQTTX 在 1.12.0 beta 版本中集成了模型上下文协议（MCP）到 Copilot AI 功能中，显著提升了服务能力。这一融合让 MQTTX 转变为 MCP Host（也就是发起请求的 LLM 应用程序），支持 MQTTX Copilot 直接与 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 服务（如 EMQX）和本地资源进行交互。这种将大语言模型（LLM）与 MQTT 操作相结合的方式，为物联网自动化、监控和开发带来了全新可能。
 
 > *下载最新版本：*[Release v1.12.0-beta.2 · emqx/MQTTX](https://github.com/emqx/MQTTX/releases/tag/v1.12.0-beta.2) 
 >

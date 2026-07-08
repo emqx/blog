@@ -1,4 +1,4 @@
-[EMQX Cloud](https://www.emqx.com/zh/cloud) 致力于为千行百业不同规模的客户提供可靠、高效的全托管 MQTT 消息云服务，希望可以通过易用、标准化的 SaaS 产品，让用户可以像「搭乐高」般自由构建物联网应用。
+[EMQX Cloud](https://www.emqx.com/zh/cloud) 致力于为千行百业不同规模的客户提供可靠、高效的全托管 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 消息云服务，希望可以通过易用、标准化的 SaaS 产品，让用户可以像「搭乐高」般自由构建物联网应用。
 
 面对客户不尽相同的个性化需求，EMQX Cloud 团队决定将在原有产品形态基础上，新设置增值功能板块，为用户提供更多高价值功能。未来用户将可以根据自身实际需求选择开通增值服务，节省不必要的成本支出，同时又能满足定制化需求。
 

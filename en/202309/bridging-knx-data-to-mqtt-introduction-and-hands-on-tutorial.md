@@ -85,7 +85,7 @@ In the Neuron dashboard, click **Monitoring -> Data Monitoring**, and see that t
 
 ### Step 7. Add an MQTT North app
 
-In the Neuron dashboard, click **Configuration ->  North Apps -> Add App** to add an *mqtt* node.
+In the Neuron dashboard, click **Configuration ->  North Apps -> Add App** to add an *[mqtt](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt)* node.
 
 ![Add an MQTT North app](https://assets.emqx.com/images/6dc854ceedafc6615e71b5fa275c1699.png)
 
@@ -103,7 +103,7 @@ Click the newly created *mqtt* node to enter the **Group List** page, and click 
 
 ## View Data Using MQTTX
 
-Now, you can use an MQTT client to connect to EMQX and view the reported data. Here, we use [MQTTX, a powerful cross-platform MQTT client tool](https://mqttx.app/), which can be downloaded from the [official website](https://mqttx.app/).
+Now, you can use an [MQTT client](https://www.emqx.com/en/blog/mqtt-client-tools) to connect to EMQX and view the reported data. Here, we use [MQTTX, a powerful cross-platform MQTT client tool](https://mqttx.app/), which can be downloaded from the [official website](https://mqttx.app/).
 
 Launch MQTTX, and add a new connection to the EMQX broker set up earlier, then add a subscription to the topic  `/neuron/mqtt/knx/grp`. After a successful subscription, you can see that MQTTX continues to receive data collected and reported by Neuron. As shown in the following figure.
 

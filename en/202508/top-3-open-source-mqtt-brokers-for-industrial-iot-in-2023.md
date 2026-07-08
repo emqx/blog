@@ -1,4 +1,4 @@
-As **Industrial IoT (IIoT)** and **Industry 4.0** technologies become standard, the need for a robust and efficient communication protocol is more critical than ever. The **[MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison)** has emerged as the clear leader, acting as the central nervous system for connecting everything from PLCs to cloud platforms. With so many options available, how do you decide which one is right for your project？
+As **[Industrial IoT](https://www.emqx.com/en/blog/industrial-iot-systems) ([IIoT](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges))** and **Industry 4.0** technologies become standard, the need for a robust and efficient communication protocol is more critical than ever. The **[MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison)** has emerged as the clear leader, acting as the central nervous system for connecting everything from PLCs to cloud platforms. With so many options available, how do you decide which one is right for your project？
 
 This article provides a comprehensive and up-to-date analysis of the three leading open-source **MQTT brokers for IIoT** in **2025**. We will break down their features, performance, and ideal use cases to help you build a [Unified Namespace](https://www.emqx.com/en/blog/unified-namespace-next-generation-data-fabric-for-iiot) (UNS) architecture for your modern, high-performance industrial system.
 
@@ -71,7 +71,7 @@ With comprehensive enterprise-grade features, data integration capabilities, clo
 
 ## 2. Mosquitto
 
-[Mosquitto](https://mosquitto.org/) is a widely used open-source MQTT broker under the Eclipse Foundation, licensed under the Eclipse Public License (EPL/EDL license). As of August 2025, it has over 10k stars on GitHub.  It implements MQTT protocol versions 5.0, 3.1.1, and 3.1 and supports SSL/TLS and WebSocket.
+[Mosquitto](https://mosquitto.org/) is a widely used open-source MQTT broker under the Eclipse Foundation, licensed under the Eclipse Public License (EPL/EDL license). As of August 2025, it has over 10k stars on GitHub.  It implements [MQTT protocol versions](https://www.emqx.com/en/blog/introduction-to-mqtt-5) 5.0, 3.1.1, and 3.1 and supports SSL/TLS and WebSocket.
 
 Mosquitto is written in C/C++ and uses a single-threaded architecture. Its lightweight design makes Mosquitto suitable for deployment on embedded devices or industrial gateways with limited resources. Mosquitto is cross-platform and can run on various platforms, including Linux, Windows, and macOS.
 
@@ -90,12 +90,12 @@ Mosquitto is written in C/C++ and uses a single-threaded architecture. Its light
 ### Use Cases
 
 - Factory Automation
-- Smart Manufacturing
+- [Smart Manufacturing](https://www.emqx.com/en/blog/the-smart-manufacturing-revolution)
 - Smart Hardware
 
 ## 3. NanoMQ
 
-[NanoMQ](https://nanomq.io/) is the latest open-source MQTT broker project released in 2020. NanoMQ is implemented in pure C, based on NNG's asynchronous I/O with a multi-threading [Actor Model](https://en.wikipedia.org/wiki/Actor_model). It fully supports MQTT version 3.1.1 and 5.0, SSL/TLS, and MQTT over QUIC.
+[NanoMQ](https://nanomq.io/) is the latest open-source MQTT broker project released in 2020. NanoMQ is implemented in pure C, based on NNG's asynchronous I/O with a multi-threading [Actor Model](https://en.wikipedia.org/wiki/Actor_model). It fully supports MQTT version 3.1.1 and 5.0, SSL/TLS, and MQTT over [QUIC](https://www.emqx.com/en/blog/quic-protocol-the-features-use-cases-and-impact-for-iot-iov).
 
 One of NanoMQ's standout features is its lightweight and fast nature with a minimal memory footprint. This makes it an exceptional MQTT broker for IIoT applications, where efficiency and resource optimization are paramount. Additionally, NanoMQ can work as a messaging gateway that converts protocols such as DDS, NNG, and ZeroMQ to MQTT and then bridges the MQTT messages to the cloud.
 

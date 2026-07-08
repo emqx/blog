@@ -30,7 +30,7 @@ First of all, NeuronEX goes beyond the limitations of mere protocol conversion. 
 
 #### Designed for Cloud Technology
 
-Another key difference of NeuronEX is that it is designed from the ground up for seamless integration and collaboration with cloud platforms. Unlike its competitors like Kepware and Monokot Server, which rely primarily on OPC UA/DA client/server protocols for data transfer, NeuronEX offers a variety of cloud-based protocols such as MQTT and RESTful API, and AWS IoT Core and Azure IoT connectivity modules. This key difference not only simplifies data access for cloud applications and databases, but also future-proofs industrial ecosystems against evolving technology landscapes.
+Another key difference of NeuronEX is that it is designed from the ground up for seamless integration and collaboration with cloud platforms. Unlike its competitors like Kepware and Monokot Server, which rely primarily on [OPC UA](https://www.emqx.com/en/blog/opc-ua-protocol)/DA client/server protocols for data transfer, NeuronEX offers a variety of cloud-based protocols such as [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) and RESTful API, and [AWS IoT Core](https://www.emqx.com/en/blog/understanding-aws-iot-core) and Azure IoT connectivity modules. This key difference not only simplifies data access for cloud applications and databases, but also future-proofs industrial ecosystems against evolving technology landscapes.
 
 #### Best Lightweight Design for Deployment
 

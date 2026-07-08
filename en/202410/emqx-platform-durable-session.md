@@ -49,7 +49,7 @@ With vehicles often traveling through areas with varying network coverage, **Dur
 
 ### Industrial Automation
 
-In smart factories, machines often need to operate under challenging conditions where connectivity may be unstable. **Durable Sessions** maintain data flow even when connections are disrupted, ensuring operational continuity and maintaining productivity.
+In [smart factories](https://www.emqx.com/en/blog/what-is-a-smart-factory-key-components-4-levels-of-evolution), machines often need to operate under challenging conditions where connectivity may be unstable. **Durable Sessions** maintain data flow even when connections are disrupted, ensuring operational continuity and maintaining productivity.
 
 ### Healthcare
 

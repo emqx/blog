@@ -16,9 +16,9 @@ Therefore, **we have migrated the site to  [https://mqttx.app/web-client](https:
 Due to our migration to the HTTPS protocol, there are some changes:
 
 1. **WebSocket Connection Limitations**:
-   After migrating to HTTPS, regular MQTT over WebSocket connections using `ws://` under the HTTP protocol will no longer be available. All WebSocket connections must use Secure WebSocket `wss://` to ensure data security during transmission. For example, use `wss://broker.emqx.io:8084` instead of `ws://broker.emqx.io:8083`.
+   After migrating to HTTPS, regular [MQTT over WebSocket](https://www.emqx.com/en/blog/connect-to-mqtt-broker-with-websocket) connections using `ws://` under the HTTP protocol will no longer be available. All WebSocket connections must use Secure WebSocket `wss://` to ensure data security during transmission. For example, use `wss://broker.emqx.io:8084` instead of `ws://broker.emqx.io:8083`.
 
-   This means you need to update your MQTT over WebSocket connection configurations in both test and production environments. Old data using the `ws://`connection protocol will not be usable on the new site and must adapt to the latest security requirements.
+   This means you need to update your [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) over WebSocket connection configurations in both test and production environments. Old data using the `ws://`connection protocol will not be usable on the new site and must adapt to the latest security requirements.
 
 2. **Connection Configurations Update**:
    We recommend using `wss://` connections in both test and production environments. If you're unfamiliar with how to configure this, please refer to our detailed documentation: [Configuring Secure WebSocket Listeners](https://docs.emqx.com/en/emqx/latest/configuration/listener.html#configure-secure-websocket-listener). This document provides step-by-step configuration guidelines to help you complete the update smoothly.

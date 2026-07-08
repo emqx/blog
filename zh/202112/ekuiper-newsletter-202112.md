@@ -6,7 +6,7 @@
 
 除了在 beta 版本中已提供的功能之外，正式版还添加了以下功能：
 
-- sink 动态参数支持：部分参数支持以动态的数据值作为参数值而非固定的值。例如在 mqtt sink 中，topic 参数可设置为某一列的值，从而实现将结果发送到多个不同 topic 的功能。
+- sink 动态参数支持：部分参数支持以动态的数据值作为参数值而非固定的值。例如在 [mqtt](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) sink 中，topic 参数可设置为某一列的值，从而实现将结果发送到多个不同 topic 的功能。
 - 认证支持：用户可配置基于 JWT 的认证。使用 Fabric 管理 eKuiper 时，认证功能将自动启用，并自动生成和管理证书从而自动完成 SSO 。
 - UI 适配：添加 portable 插件管理和共享连接配置的管理界面。
 

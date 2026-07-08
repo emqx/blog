@@ -1,4 +1,4 @@
-Our [previous blog](https://www.emqx.com/en/blog/how-to-deploy-emqx-enterprise-on-google-cloud) discussed setting up an EMQX Enterprise deployment on GCP and conducting message publish/subscribe tests. This blog will demonstrate how to connect your devices on GCP IoT Core to the EMQX Enterprise we’ve deployed already.
+Our [previous blog](https://www.emqx.com/en/blog/how-to-deploy-emqx-enterprise-on-google-cloud) discussed setting up an [EMQX Enterprise](https://www.emqx.com/en/products/emqx) deployment on GCP and conducting message publish/subscribe tests. This blog will demonstrate how to connect your devices on GCP [IoT Core](https://www.emqx.com/en/blog/understanding-aws-iot-core) to the EMQX Enterprise we’ve deployed already.
 
 ## Preparation
 
@@ -6,7 +6,7 @@ IoT Core and EMQX Enterprise apply different connection and authentication metho
 
 | **Item**              | **IoT Core**                                                 | **EMQX Enterprise**                                          | **Migration**                                                |
 | :-------------------- | :----------------------------------------------------------- | :----------------------------------------------------------- | :----------------------------------------------------------- |
-| MQTT Connection        | SSL/TLS authentication requires using a root certificate provided by GCP. [View Document](https://cloud.google.com/iot/docs/how-tos/mqtt-bridge) | Support SSL/TLS connections. [View Document](https://www.emqx.com/en/blog/emqx-server-ssl-tls-secure-connection-configuration-guide) | 1. Replace the root certificate on the device by purchasing or issuing a new certificate.<br>2. Update the device access address to connect to EMQX Enterprise. |
+| [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) Connection        | SSL/TLS authentication requires using a root certificate provided by GCP. [View Document](https://cloud.google.com/iot/docs/how-tos/mqtt-bridge) | Support SSL/TLS connections. [View Document](https://www.emqx.com/en/blog/emqx-server-ssl-tls-secure-connection-configuration-guide) | 1. Replace the root certificate on the device by purchasing or issuing a new certificate.<br>2. Update the device access address to connect to EMQX Enterprise. |
 | Authentication Method | JWT authentication. [View Document](https://cloud.google.com/iot/docs/how-tos/credentials/jwts) | Password authentication, JWT authentication, and enhanced authentication. [View Document](https://docs.emqx.com/en/enterprise/v4.4/advanced/auth.html) | 1. Migrate IoT Core authentication data.<br>2. Implement authentication on EMQX. |
 
 Next, we will proceed with the required migrations one by one.

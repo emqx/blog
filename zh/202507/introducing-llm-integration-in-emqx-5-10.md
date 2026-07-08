@@ -1,6 +1,6 @@
 物联网（IoT）的核心在于数据。然而，随着联网设备产生的数据量激增，行业面临的挑战也从单纯的数据收集，转变为如何实时理解和处理数据。不妨想象这样一个场景：您只需像日常对话一样，使用自然语言就能实时查询数据流；而原本晦涩难懂的传感器数据，转眼间就能变成清晰明了的预警提示，直接指导您的下一步行动。
 
-这一愿景正在成为现实。随着 EMQX 5.10.0 的发布，实时数据流与人工智能的融合已进入全新阶段，我们创新性地在可视化流处理引擎中集成大语言模型（LLM）。这将为您的 MQTT 数据流注入 OpenAI GPT、Anthropic Claude 以及任何兼容 OpenAI 的大模型的强大功能。
+这一愿景正在成为现实。随着 EMQX 5.10.0 的发布，实时数据流与人工智能的融合已进入全新阶段，我们创新性地在可视化流处理引擎中集成大语言模型（LLM）。这将为您的 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 数据流注入 OpenAI GPT、Anthropic Claude 以及任何兼容 OpenAI 的大模型的强大功能。
 
 ![image.png](https://assets.emqx.com/images/74b33dc1243c013e4f5bdfb4e9f8192e.png)
 

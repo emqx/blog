@@ -48,7 +48,7 @@ For these two points, [MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mq
 
 **When Clean Start is set to 0**, if the server has a session associated with the Client ID specified when the client is connected, it must use this session to resume communication.
 
-If no session exists associated with this Client ID, the server must create a completely new session. In this case, the client is using an old session, and the server is using a brand-new session. The session states on both sides are inconsistent. Therefore, the server must set the Session Present flag in the CONNACK packet to 0 to let the client know that the session it expects does not exist. If the client wants to continue this network connection, it must discard its saved session state.
+If no session exists associated with this Client ID, the server must create a completely new session. In this case, the client is using an old session, and the server is using a brand-new session. The session states on both sides are inconsistent. Therefore, the server must set the Session Present flag in the [CONNACK](https://www.emqx.com/en/blog/mqtt5-new-features-reason-code-and-ack) packet to 0 to let the client know that the session it expects does not exist. If the client wants to continue this network connection, it must discard its saved session state.
 
 **When Clean Start is set to 1**, the client and server must discard any existing sessions and start a new one. Correspondingly, the server will also set the Session Present flag in the CONNACK packet to 0.
 

@@ -1,4 +1,4 @@
-[EMQX Cloud Serverless](https://www.emqx.com/zh/cloud/serverless-mqtt) 自从4月正式上线以来，受到广大开发者的很多好评。 作为物联网数据基础设施软件供应商，EMQ 主旨一直是帮助更多的物联网开发者和中小企业用最低的成本构建安全稳定的物联网应用。 EMQX Cloud Serverless 开创性地采用弹性多租户技术，用户无需关心服务器基础设施和服务规格伸缩所需资源，仅用三秒即可极速创建 MQTT 部署，并根据业务需求进行无感知自动化弹性伸缩、按实际使用量付费，实现全自动化的 MQTT 接入服务，专注物联网业务逻辑和实现。
+[EMQX Cloud Serverless](https://www.emqx.com/zh/cloud/serverless-mqtt) 自从4月正式上线以来，受到广大开发者的很多好评。 作为物联网数据基础设施软件供应商，EMQ 主旨一直是帮助更多的物联网开发者和中小企业用最低的成本构建安全稳定的物联网应用。 [EMQX Cloud](https://www.emqx.com/zh/cloud) Serverless 开创性地采用弹性多租户技术，用户无需关心服务器基础设施和服务规格伸缩所需资源，仅用三秒即可极速创建 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 部署，并根据业务需求进行无感知自动化弹性伸缩、按实际使用量付费，实现全自动化的 MQTT 接入服务，专注物联网业务逻辑和实现。
 
 10月，Serverless 迎来了发布后的重大的更新。Serverless 内核升级到 EMQX 最新的 5.1 版本，从性能上更进一步，支持更多的用户和海量的设备平稳顺畅入云。同时新增支持 API 对部署的管理和监控，并且可以批量上传认证和鉴权的信息，方便用户做大规模的设备认证。
 

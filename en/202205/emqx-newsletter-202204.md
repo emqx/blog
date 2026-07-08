@@ -1,6 +1,6 @@
 In April, the EMQX team released many maintenance versions of 4.x, which brought a number of new features on the basis of further improved stability. It includes enhancing the support for Pulsar, supporting the use of gRPC service to decode data, and improving the experience of users of the rule engine. In addition, 5.0.0-rc.2 has been released.
 
-In terms of cloud services, EMQX Cloud launched a value-added service for user-defined function, which brought an update of the feature to simplify user procurement process, and supported Aliyun Cloud to deploy private Internet connection. In addition, the Cloud Native team has good news: EMQX has joined the Docker official image.
+In terms of cloud services, [EMQX Cloud](https://www.emqx.com/en/cloud) launched a value-added service for user-defined function, which brought an update of the feature to simplify user procurement process, and supported Aliyun Cloud to deploy private Internet connection. In addition, the Cloud Native team has good news: EMQX has joined the Docker official image.
 
 ## EMQX
 
@@ -34,7 +34,7 @@ On the page of deployment details, click **Authentication - External Authenticat
 
 ### Feature update
 
-The following new features are available in the EMQX Operator v1.1.6 released in April:
+The following new features are available in the [EMQX Operator](https://www.emqx.com/en/solutions/mqtt-on-kubernetes) v1.1.6 released in April:
 
 1. User-defined configure for SecurityContext, so that users can configure the security context according to their own needs.
 2. Default configure for acquisition of EMQX Operator Metrics is provided.

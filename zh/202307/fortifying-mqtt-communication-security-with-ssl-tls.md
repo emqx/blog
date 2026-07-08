@@ -1,4 +1,4 @@
-在[之前的文章](https://www.emqx.com/zh/blog/category/security)中，我们探讨了认证和访问控制机制。接下来，我们将介绍传输层安全协议（TLS）在提升 MQTT 通信安全方面的重要作用。本文将着重介绍 TLS 以及它如何保证 MQTT 通信的完整性、机密性和真实性。
+在[之前的文章](https://www.emqx.com/zh/blog/category/security)中，我们探讨了认证和访问控制机制。接下来，我们将介绍传输层安全协议（TLS）在提升 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 通信安全方面的重要作用。本文将着重介绍 TLS 以及它如何保证 MQTT 通信的完整性、机密性和真实性。
 
 ## 概念解释
 

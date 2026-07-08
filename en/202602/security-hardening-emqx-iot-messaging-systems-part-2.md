@@ -1,8 +1,8 @@
-This second article focuses on the foundation beneath EMQX: the Linux kernel, network stack, and Erlang VM. If [Part 1](https://www.emqx.com/en/blog/security-hardening-emqx-iot-messaging-systems-part-1) explained why security and reliability converge for a stateful MQTT broker, this part shows where that convergence actually bites in production: file descriptors, TCP behavior under load, firewall rules, and Erlang distribution security.
+This second article focuses on the foundation beneath EMQX: the Linux kernel, network stack, and Erlang VM. If [Part 1](https://www.emqx.com/en/blog/security-hardening-emqx-iot-messaging-systems-part-1) explained why security and reliability converge for a stateful [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison), this part shows where that convergence actually bites in production: file descriptors, TCP behavior under load, firewall rules, and Erlang distribution security.
 
 ## **1. Operating System and Network Layer Hardening**
 
-Before any MQTT packet reaches EMQX, the host operating system defines resource limits, networking behaviour, and the exposed attack surface. From an SRE’s perspective, the OS is the first line of defense against resource exhaustion and volumetric attacks, and a mis‑tuned kernel is often the real cause behind “random” broker failures.
+Before any [MQTT packet](https://www.emqx.com/en/blog/mqtt-5-0-control-packets-01-connect-connack) reaches EMQX, the host operating system defines resource limits, networking behaviour, and the exposed attack surface. From an SRE’s perspective, the OS is the first line of defense against resource exhaustion and volumetric attacks, and a mis‑tuned kernel is often the real cause behind “random” broker failures.
 
 - **OS Lifecycle Management:** Keep the operating system and kernel regularly patched with security updates. Do not deploy or retain end-of-life (EOL) OS releases in production environments.
 - **Secure Administrative Access:** Restrict SSH access to trusted management networks, disable password authentication, and prohibit direct root login. All administrative access should be auditable.
@@ -67,11 +67,11 @@ A robust security posture relies on the principle of network segmentation. EMQX 
 
 This is the ingress traffic from IoT devices, mobile applications, or backend services connecting to the broker. The guiding principle here is "Minimum Exposure." Only the specific listener ports required for client connectivity should be exposed to the ingress network or Load Balancer.
 
-- **Port 1883 (MQTT TCP):** The standard cleartext MQTT port. In a hardened production environment, this port should generally be disabled or strictly restricted to trusted internal networks (e.g., a backend microservice within the same VPC). Exposing cleartext MQTT to the public internet invites credential theft and data interception.
+- **Port 1883 ([MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) TCP):** The standard cleartext [MQTT port](https://www.emqx.com/en/blog/mqtt-ports). In a hardened production environment, this port should generally be disabled or strictly restricted to trusted internal networks (e.g., a backend microservice within the same VPC). Exposing cleartext MQTT to the public internet invites credential theft and data interception.
 - **Port 8883 (MQTT SSL/TLS):** The primary production port. This is the only port that should be exposed via the Load Balancer to the public internet. It enforces encryption and prevents eavesdropping.
 - **Port 8083 (WebSocket):** Used for browser-based clients.
 - **Port 8084 (WebSocket SSL):** The secure variant for WebSockets.
-- **Port 14567 (QUIC):** If utilizing MQTT over QUIC (UDP) for unreliable networks, this UDP port must be explicitly allowed.
+- **Port 14567 ([QUIC](https://www.emqx.com/en/blog/quic-protocol-the-features-use-cases-and-impact-for-iot-iov)):** If utilizing [MQTT over QUIC](https://www.emqx.com/en/blog/mqtt-over-quic) (UDP) for unreliable networks, this UDP port must be explicitly allowed.
 
 
 

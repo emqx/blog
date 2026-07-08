@@ -8,7 +8,7 @@ Transitioning to a modern edge data platform like EMQX Neuron changes this dynam
 | :-------------------------------------- | :----------------------------------------------------------- | :----------------------------------------------------------- |
 | **Deployment & Delivery**               | Binding to a specific OS ecosystem narrows hardware choice; without containerization and orchestration, consistent multi-site rollout is harder. | **Runtime & Orchestration:** Linux-native; x86 / ARM; delivered with Docker / Kubernetes; image-based replication and standardized operations; helps control total cost of ownership (TCO) tied to the OS licensing stack. |
 | **Architecture & Component Boundaries** | Suites stack components weakly related to acquisition, raising resource use and operational complexity. | **Southbound Acquisition:** Industrial Connectivity Gateway role; 100+ southbound protocol drivers; balances acquisition throughput and resource use under high concurrency and large tag counts. |
-| **Acquisition & Stream Processing**     | At very high frequency and very large tag counts, acquisition-path efficiency and edge stream-processing stability tend to become limiting. | **Edge Computing & Ecosystem:** Built-in SQL stream-processing engine for cleansing, aggregation, alerting, and selective inference at the edge. Works with EMQX for MQTT northbound; cloud–edge paths aligned with Unified Namespace (UNS); integrable with Azure IoT Edge, AWS IoT Greengrass, and similar runtimes. |
+| **Acquisition & Stream Processing**     | At very high frequency and very large tag counts, acquisition-path efficiency and edge stream-processing stability tend to become limiting. | **Edge Computing & Ecosystem:** Built-in SQL stream-processing engine for cleansing, aggregation, alerting, and selective inference at the edge. Works with EMQX for [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) northbound; cloud–edge paths aligned with Unified Namespace (UNS); integrable with Azure IoT Edge, AWS IoT Greengrass, and similar runtimes. |
 
 ## Introducing EMQX Neuron Driver Configuration Migration
 
@@ -37,7 +37,7 @@ Try it: [Driver Configuration Migration](https://www.emqx.com/en/products/emqx-n
 
 ### Source Products and Version Notes
 
-- **Kepware (KEPServerEX)**: Export **JSON** (unencrypted) via **Save As**, then upload with **KEPServerEX** selected. Covers Modbus, OPC UA Client, Siemens, Mitsubishi, Omron, BACnet/IP, CODESYS, Allen-Bradley, and other common drivers (BCD, arrays, certificates, and similar caveats per protocol tables in the guide).  
+- **Kepware (KEPServerEX)**: Export **JSON** (unencrypted) via **Save As**, then upload with **KEPServerEX** selected. Covers Modbus, [OPC UA](https://www.emqx.com/en/blog/opc-ua-protocol) Client, Siemens, Mitsubishi, Omron, BACnet/IP, CODESYS, Allen-Bradley, and other common drivers (BCD, arrays, certificates, and similar caveats per protocol tables in the guide).  
 - **Litmus Edge**: Export the **Plain Text** template from Device Management, then upload with **Litmus Edge** selected. Supports Modbus family, OPC UA (Gen1 / Gen2), DF1, Omron FINS / HostLink, Siemens S7, BACnet/IP, and other common protocols.
 
 ## Step-by-Step Migration Guide

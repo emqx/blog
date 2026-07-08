@@ -4,7 +4,7 @@
 
 ## **EMQX Cloud: A Brief Introduction**
 
-[EMQX Cloud](https://www.emqx.com/en/cloud) is a fully managed MQTT data platform built for IoT applications at scale. As the cloud-native offering of EMQX, the world's most scalable [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison), we provide enterprise-grade messaging infrastructure without the operational overhead. Our platform handles millions of concurrent connections and billions of messages daily, serving thousands of customers across industries from automotive to smart energy.
+[EMQX Cloud](https://www.emqx.com/en/cloud) is a fully managed [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) data platform built for IoT applications at scale. As the cloud-native offering of EMQX, the world's most scalable [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison), we provide enterprise-grade messaging infrastructure without the operational overhead. Our platform handles millions of concurrent connections and billions of messages daily, serving thousands of customers across industries from automotive to smart energy.
 
 Our core mission is simple: ensure reliable, real-time message delivery for mission-critical IoT applications. This commitment to reliability shaped every architectural decision we've made since day one.
 

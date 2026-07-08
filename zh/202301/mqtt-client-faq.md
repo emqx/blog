@@ -9,9 +9,9 @@
 
 ### Q：向 MQTT Broker 发布多条消息，MQTT Broker 向订阅者转发这些消息的时候能否保证原始顺序？
 
-MQTT Broker 一定会保证来自同一客户端的相同主题的消息按照到达顺序被转发，这与消息的 QoS 等级无关，QoS 等级不会影响转发顺序，不管是消息丢失，还是消息重复，也都不会导致消息失序。
+[MQTT Broker](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison) 一定会保证来自同一客户端的相同主题的消息按照到达顺序被转发，这与消息的 QoS 等级无关，QoS 等级不会影响转发顺序，不管是消息丢失，还是消息重复，也都不会导致消息失序。
 
-对于不同主题的消息，MQTT Broker 不会提供转发顺序保证，我们可以将他们视为进入了不同的通道，比如主题 A 的消息先于主题 B 的消息到达 MQTT Broker，但最终可能主题 B 的消息会更早下发。
+对于不同主题的消息，[MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) Broker 不会提供转发顺序保证，我们可以将他们视为进入了不同的通道，比如主题 A 的消息先于主题 B 的消息到达 MQTT Broker，但最终可能主题 B 的消息会更早下发。
 
 ### Q：我的客户端无法连接到 EMQX/订阅失败/发布消息但是对端没有收到任何消息，出现这些情况怎么办？
 

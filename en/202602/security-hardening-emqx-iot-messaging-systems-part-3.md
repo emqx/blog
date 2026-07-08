@@ -1,4 +1,4 @@
-This final part assumes your infrastructure and Erlang VM are already hardened, as described in [Part 2](https://www.emqx.com/en/blog/security-hardening-emqx-iot-messaging-systems-part-2). We now move to the layers most SREs and security teams interact with day‑to‑day: TLS termination, MQTT‑level authentication and authorization, administrative access, and disaster recovery.
+This final part assumes your infrastructure and Erlang VM are already hardened, as described in [Part 2](https://www.emqx.com/en/blog/security-hardening-emqx-iot-messaging-systems-part-2). We now move to the layers most SREs and security teams interact with day‑to‑day: TLS termination, [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt)‑level authentication and authorization, administrative access, and disaster recovery.
 
 The network and OS hardening from previous parts protect the host, but they don’t answer the questions “Who is this client?” and “What may it do?” Nor do they guarantee you can safely recover from a compromise or disaster. Getting these application and operational controls right is what turns EMQX into a dependable messaging backbone rather than a fragile single point of failure.
 
@@ -8,7 +8,7 @@ The network and OS hardening from previous parts protect the host, but they don�
 
 
 
-For an MQTT broker, the Transport Layer is the primary boundary between the public internet and the internal application logic. Transport Layer Security (TLS) ensures confidentiality (encryption), integrity (prevention of tampering), and authenticity (verification of the server). In a production environment, TLS is non-negotiable for all public-facing traffic.
+For an [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison), the Transport Layer is the primary boundary between the public internet and the internal application logic. Transport Layer Security (TLS) ensures confidentiality (encryption), integrity (prevention of tampering), and authenticity (verification of the server). In a production environment, TLS is non-negotiable for all public-facing traffic.
 
 
 
@@ -90,7 +90,7 @@ Choosing an authentication mechanism is a trade-off between security, complexity
 
 **CInfo (Client Information) Auth:**
 
-- **Mechanism:** Rule-expression–based validation of client-provided metadata and connection context during the MQTT CONNECT phase. Typical checks include enforcing consistency between fields such as Client ID, username, and TLS attributes (e.g., verifying that the MQTT Client ID matches the X.509 certificate Common Name or a SAN entry).
+- **Mechanism:** Rule-expression–based validation of client-provided metadata and connection context during the MQTT CONNECT phase. Typical checks include enforcing consistency between fields such as Client ID, username, and TLS attributes (e.g., verifying that the [MQTT Client](https://www.emqx.com/en/blog/mqtt-client-tools) ID matches the X.509 certificate Common Name or a SAN entry).
 - **Pros:** Extremely lightweight and performant, as it relies on local rule evaluation without cryptographic operations or external lookups. Highly composable and can be placed at the front of the authentication chain to rapidly reject malformed or inconsistent CONNECT attempts, reducing load on downstream authenticators and protecting broker resources.
 - **Cons:** Not a standalone authentication mechanism. Provides validation and policy enforcement rather than cryptographic identity proof, and therefore must be combined with a primary authentication method (e.g., mTLS, JWT, or password-based authentication) to establish trust.
 
@@ -225,7 +225,7 @@ EMQX v5 introduced a major change in backup formats. The old JSON export of v4 i
 
 In the event of a security incident—such as a suspected OS compromise on a specific node—SREs must isolate the threat without causing a total outage.
 
-- **Mechanism:** EMQX supports "Node Evacuation." When triggered, the node stops accepting new connections and actively disconnects existing clients, sending them a redirect code (in MQTT 5.0) or simply closing the socket to force a reconnect.
+- **Mechanism:** EMQX supports "Node Evacuation." When triggered, the node stops accepting new connections and actively disconnects existing clients, sending them a redirect code (in [MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5)) or simply closing the socket to force a reconnect.
 - **Result:** Clients automatically migrate to healthy nodes in the cluster via the Load Balancer. The compromised node is drained of traffic and can be safely taken offline for forensic analysis or re-imaging.
 
 
@@ -235,7 +235,7 @@ In the event of a security incident—such as a suspected OS compromise on a spe
 Mnesia (the internal database) requires low-latency networking. Spanning an EMQX cluster across high-latency WAN links (e.g., US-East to EU-West) is architecturally unsound and will lead to cluster partition.
 
 - **Cluster Linking:** A native EMQX feature that establishes efficient, bidirectional message forwarding between separate EMQX clusters using MQTT connections optimized for EMQX-to-EMQX communication. Unlike traditional MQTT bridging, Cluster Linking forwards only relevant topics based on real-time subscriptions, reducing bandwidth usage and improving resilience to intermittent WAN connectivity while maintaining a unified logical namespace across regions. 
-- **MQTT Bridging:** A manual MQTT bridge configuration where EMQX acts as an MQTT client to another broker (including other EMQX clusters). Bridging forwards configured topic filters but replicates all matched messages regardless of actual subscription state, which can increase bandwidth utilization and latency compared to Cluster Linking.
+- **MQTT Bridging:** A manual [MQTT bridge](https://www.emqx.com/en/blog/bridging-mosquitto-to-emqx-cluster) configuration where EMQX acts as an MQTT client to another broker (including other EMQX clusters). Bridging forwards configured topic filters but replicates all matched messages regardless of actual subscription state, which can increase bandwidth utilization and latency compared to Cluster Linking.
 
 
 

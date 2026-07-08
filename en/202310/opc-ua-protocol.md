@@ -10,7 +10,7 @@ OPC UA and its predecessor, Open Platform Communications (OPC), were developed b
 
 Prior to the release of the OPC UA specification, industry vendors, end-users, and software developers had worked together to develop a set of specifications for defining industrial process data, alarms, and historical data. This set of specifications is known as OPC Classic and was first released in 1995, based on the COM/DCOM technology stack for Microsoft Windows. It includes the following three parts:
 
-1. OPC Data Access is best known as OPC DA. The OPC DA specification defines the exchange of data, including value, time and quality information.
+1. OPC Data Access is best known as [OPC DA](https://www.emqx.com/en/blog/opc-ua-vs-opc-da). The OPC DA specification defines the exchange of data, including value, time and quality information.
 2. OPC Alarms & Events, or OPC A&E, the OPC A&E specification defines the exchange of alarm and event type message information, as well as variable status and state management.
 3. OPC Historical Data Access i.e. OPC HAD, the OPC HDA specification defines methods that can be applied to querying and analyzing historical and temporal data.
 
@@ -178,7 +178,7 @@ The industry has built an [industrial IoT](https://www.emqx.com/en/blog/iiot-exp
 OPC UA and MQTT have a certain degree of functionality overlap, but their use of scenarios is very different:
 
 - OPC UA is a communication protocol used in industrial scenarios to enable different equipment and systems from various manufacturers to communicate seamlessly using a standardized language.
-- MQTT is an IoT protocol designed for Internet-based data transmission of sensors, catering to low bandwidth and unreliable network conditions while efficiently handling continuous real-time data. Its read/publish mechanism offers remarkable flexibility in usage.
+- MQTT is an [IoT protocol](https://www.emqx.com/en/blog/iot-protocols-mqtt-coap-lwm2m) designed for Internet-based data transmission of sensors, catering to low bandwidth and unreliable network conditions while efficiently handling continuous real-time data. Its read/publish mechanism offers remarkable flexibility in usage.
 
 In industrial scenarios, MQTT excels at messaging in distributed systems, while OPC UA focuses on providing interoperability. By combining the two, business data can be abstracted and aggregated using OPC UA, and MQTT can enable seamless exchange of this data in a distributed manner, leveraging its strong connectivity capabilities.
 
@@ -192,7 +192,7 @@ Pub-Sub security is a bit more complex than that in client/server, and the speci
 
 ## Bridging OPC UA Protocol to MQTT with EMQX and Neuron
 
-[Neuron](https://github.com/emqx/neuron) is a modern industrial IoT connectivity server that can connect to a wide range of industrial devices using standard or device-proprietary protocols, enabling the interconnection of [industrial IoT platforms](https://www.emqx.com/en/blog/iiot-platform-key-components-and-5-notable-solutions) with massive devices. As a lightweight industrial protocol gateway software, Neuron is designed to operate on various IoT edge hardware devices with limited resources. Its primary goal is to address the challenge of accessing data from data-centric automation equipment in a unified manner, thus offering essential support for smart manufacturing.
+[Neuron](https://github.com/emqx/neuron) is a modern [industrial IoT](https://www.emqx.com/en/blog/industrial-iot-systems) connectivity server that can connect to a wide range of industrial devices using standard or device-proprietary protocols, enabling the interconnection of [industrial IoT platforms](https://www.emqx.com/en/blog/iiot-platform-key-components-and-5-notable-solutions) with massive devices. As a lightweight industrial protocol gateway software, Neuron is designed to operate on various IoT edge hardware devices with limited resources. Its primary goal is to address the challenge of accessing data from data-centric automation equipment in a unified manner, thus offering essential support for [smart manufacturing](https://www.emqx.com/en/blog/the-smart-manufacturing-revolution).
 
 [EMQX](https://github.com/emqx/emqx) is a distributed [open-source MQTT broker](https://www.emqx.com/en/blog/a-comprehensive-comparison-of-open-source-mqtt-brokers-in-2023). As the world's most scalable MQTT messaging server, EMQX provides efficient and reliable connectivity to a massive number of IoT devices, enabling high-performance, real-time movement and processing of messages and event streams, helping users rapidly build business-critical IoT platforms and applications.
 

@@ -132,7 +132,7 @@ To test a Modbus device, navigate to its entity in the Home Assistant dashboard 
 
 ## Integrating Home Assistant with Industrial Office Automation via Modbus
 
-EMQX helps you integrate Home Assistant with your industrial office automation applications via a reference architecture known as the [Open Manufacturing Hub](https://www.emqx.com/en/resources/open-manufacturing-hub-a-reference-architecture-for-industrial-iot). In this architecture, Home Assistant serves as the central hub for controlling and monitoring smart devices in both residential and professional settings. It interfaces with [EMQX](https://www.emqx.com/en/mqtt/public-mqtt5-broker), a leading MQTT platform, and [NeuronEX](https://www.emqx.com/en/products/emqx-neuron), an industrial IoT connectivity server.
+EMQX helps you integrate Home Assistant with your industrial office automation applications via a reference architecture known as the [Open Manufacturing Hub](https://www.emqx.com/en/resources/open-manufacturing-hub-a-reference-architecture-for-industrial-iot). In this architecture, Home Assistant serves as the central hub for controlling and monitoring smart devices in both residential and professional settings. It interfaces with [EMQX](https://www.emqx.com/en/mqtt/public-mqtt5-broker), a leading [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) platform, and [NeuronEX](https://www.emqx.com/en/products/emqx-neuron), an [industrial IoT](https://www.emqx.com/en/blog/industrial-iot-systems) connectivity server.
 
 <section
   class="promotion-pdf"

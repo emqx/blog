@@ -1,4 +1,4 @@
-Compared with MQTT 3.1.1, MQTT 5.0 protocol adds many properties, which are distributed in variable headers and payloads of packet.
+Compared with [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) 3.1.1, [MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5) protocol adds many properties, which are distributed in variable headers and payloads of packet.
 
 The packets carrying the payload in the MQTT 5.0 protocol include CONNECT packet, PUBLISH packet, SUBSCRIBE packet, SUBACK packet, UNSUBSCRIBE packet and UNSUBACK packet.
 
@@ -18,7 +18,7 @@ In the Payload of the CONNECT packet, some fields have changed, and the [Will me
 
 ### CONNACK Packet
 
-**CONNACK packet does not have Payload, and the properties contained in the variable header are:**
+**[CONNACK](https://www.emqx.com/en/blog/mqtt5-new-features-reason-code-and-ack) packet does not have Payload, and the properties contained in the variable header are:**
 
 ![3.jpg](https://assets.emqx.com/images/247af99b45d686958b8ca509be45aa6c.jpg)
 

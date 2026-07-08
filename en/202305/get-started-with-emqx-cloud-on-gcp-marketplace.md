@@ -1,8 +1,8 @@
 ## Introduction
 
-EMQX has announced the global availability of its Cloud MQTT Service, [EMQX Platform](https://www.emqx.com/en/cloud), on the [Google Cloud Marketplace](https://console.cloud.google.com/marketplace/product/emq-public-380104/emqx-cloudpay-as-you-go). Listing in Google Cloud Marketplace allows Google & EMQ users to purchase and manage MQTT service from Google Cloud Marketplace easily. 
+EMQX has announced the global availability of its Cloud [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) Service, [EMQX Platform](https://www.emqx.com/en/cloud), on the [Google Cloud Marketplace](https://console.cloud.google.com/marketplace/product/emq-public-380104/emqx-cloudpay-as-you-go). Listing in Google Cloud Marketplace allows Google & EMQ users to purchase and manage MQTT service from Google Cloud Marketplace easily. 
 
-As the best alternative to Google Cloud IoT Core after its upcoming shutdown on August 16, 2023, EMQX Platform available on Google Cloud Marketplace will make it even more convenient for business migration to discover, install, and manage this scalable, reliable, secure MQTT service. 
+As the best alternative to Google Cloud [IoT Core](https://www.emqx.com/en/blog/understanding-aws-iot-core) after its upcoming shutdown on August 16, 2023, EMQX Platform available on Google Cloud Marketplace will make it even more convenient for business migration to discover, install, and manage this scalable, reliable, secure MQTT service. 
 
 ## 3 Major Benefits of Adopting EMQX Platform via GCP Marketplace
 

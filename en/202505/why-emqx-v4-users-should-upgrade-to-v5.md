@@ -36,7 +36,7 @@ EMQX 4.x’s Rule Engine has limited flexibility when handling complex data tran
 
 #### Example: Real-Time IoT Sensor Data Processing with Smart Data Hub
 
-Imagine a smart factory that uses MQTT to collect temperature, humidity, and machine status data from thousands of IoT sensors. The challenge is ensuring incoming messages are validated, structured, and efficiently routed to multiple destinations, including a cloud database, real-time dashboard, and an AI-driven analytics engine.
+Imagine a [smart factory](https://www.emqx.com/en/blog/what-is-a-smart-factory-key-components-4-levels-of-evolution) that uses MQTT to collect temperature, humidity, and machine status data from thousands of IoT sensors. The challenge is ensuring incoming messages are validated, structured, and efficiently routed to multiple destinations, including a cloud database, real-time dashboard, and an AI-driven analytics engine.
 
 **In EMQX 4.x**
 
@@ -91,7 +91,7 @@ Security is more critical than ever, especially with large-scale IoT deployments
 
 | **Security Feature**   | **EMQX 4.x**                                                 | **EMQX 5.x**                                                 | **Why Upgrade?**                            |
 | :--------------------- | :----------------------------------------------------------- | :----------------------------------------------------------- | :------------------------------------------ |
-| Authentication Methods | X.509 Certificate, Username/password (via external databased and services), JWT | X.509 Certificate, Username/password (via external databased and services), JWT<br>MQTT 5.0 Enhanced Authentication (SCRAM, Kerberos)<br>Single Sign-On (SSO) | More flexible and secure authentication     |
+| Authentication Methods | X.509 Certificate, Username/password (via external databased and services), JWT | X.509 Certificate, Username/password (via external databased and services), JWT<br>[MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5) Enhanced Authentication (SCRAM, Kerberos)<br>Single Sign-On (SSO) | More flexible and secure authentication     |
 | Access Control         | Basic ACLs                                                   | Granular Role-Based Access Control (RBAC)                    | More precise permission management          |
 | Encryption Support     | One-way TLS                                                  | One-way and mutual TLS (Faster & More Secure)                | Stronger encryption with better performance |
 | Regulatory Compliance  | Limited support                                              | GDPR, HIPAA, ISO 27001 compliant                             | Meet industry security standards easily     |
@@ -109,7 +109,7 @@ EMQX 5.x dramatically improves observability and monitoring with a user-friendly
 - Redesigned Dashboard UI
   - Offers enhanced real-time observability with more in-depth metrics. For example, in v4, you could see total message rates per node, but in v5, you can break it down by topic, client, or authentication mechanism.
   - EMQX v5 expands the scope of metrics, tracking not just system-level performance but also application-level behaviors, such as authentication and authorization performance, and rule engine execution time & success/failure count.
-- EMQX v5 can directly export metrics to [Datadog](https://docs.emqx.com/en/emqx/latest/observability/datadog.html), a cloud-based observability and security platform, allowing real-time monitoring of MQTT broker performance in the Datadog dashboard.
+- EMQX v5 can directly export metrics to [Datadog](https://docs.emqx.com/en/emqx/latest/observability/datadog.html), a cloud-based observability and security platform, allowing real-time monitoring of [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) performance in the Datadog dashboard.
 - Unified Tracing, Metrics, and Logging with [OpenTelemetry](https://docs.emqx.com/en/emqx/latest/observability/opentelemetry/opentelemetry.html)
   - EMQX v5 integrates native OpenTelemetry support, allowing users to collect metrics in tracing systems like Jaeger.
   - Users can correlate logs, traces, and metrics for in-depth debugging.
@@ -121,9 +121,9 @@ If you're spending too much time troubleshooting or struggling with limited visi
 
 Traditional MQTT relies on TCP, which can struggle with latency, congestion, and unreliable mobile networks. EMQX 5.x introduces [MQTT over QUIC](https://docs.emqx.com/en/emqx/latest/mqtt-over-quic/introduction.html), a next-generation transport protocol designed to enhance speed, reliability, and security.
 
-| **Feature**                      | **EMQX 4.x (TCP-based MQTT)**               | **EMQX 5.x (MQTT over QUIC)**                               | **Why Upgrade?**           |
+| **Feature**                      | **EMQX 4.x (TCP-based MQTT)**               | **EMQX 5.x ([MQTT over QUIC](https://www.emqx.com/en/blog/mqtt-over-quic))**                               | **Why Upgrade?**           |
 | :------------------------------- | :------------------------------------------ | :---------------------------------------------------------- | :------------------------- |
-| Connection Establishment         | Slow multi-step TCP handshake.              | Faster QUIC handshake with built-in TLS 1.3.                | Reduces connection time.   |
+| Connection Establishment         | Slow multi-step TCP handshake.              | Faster [QUIC](https://www.emqx.com/en/blog/quic-protocol-the-features-use-cases-and-impact-for-iot-iov) handshake with built-in TLS 1.3.                | Reduces connection time.   |
 | Performance in Unstable Networks | Packet loss causes delays.                  | QUIC recovers lost packets without blocking other messages. | More reliable messaging.   |
 | Reconnection Time                | Requires full TCP/TLS re-negotiation.       | Near-instant reconnections with 0-RTT resumption.           | Reduces downtime.          |
 | Security                         | Separate TCP and TLS layers add complexity. | QUIC has built-in TLS 1.3 for encryption.                   | More secure and efficient. |
@@ -131,7 +131,7 @@ Traditional MQTT relies on TCP, which can struggle with latency, congestion, and
 #### When Should You Use MQTT over QUIC?
 
 - IoT applications with frequent network switching (e.g., mobile, vehicle tracking, smart wearables).
-- Low-latency industrial IoT scenarios that require real-time updates.
+- Low-latency [industrial IoT](https://www.emqx.com/en/blog/industrial-iot-systems) scenarios that require real-time updates.
 - Edge computing use cases where reducing connection overhead is critical.
 
 By upgrading to EMQX 5.x, users can take advantage of MQTT over QUIC to ensure faster, more reliable, and secure communication, especially in challenging network environments.
@@ -142,7 +142,7 @@ Migrating from EMQX 4.x to 5.x is designed to be smooth and low-risk, ensuring m
 
 #### Key Improvements in the Upgrade Process
 
-- **Backward Compatibility:** EMQX 5.x supports legacy MQTT clients and authentication mechanisms used in EMQX 4.x.
+- **Backward Compatibility:** EMQX 5.x supports legacy [MQTT clients](https://www.emqx.com/en/blog/mqtt-client-tools) and authentication mechanisms used in EMQX 4.x.
 - **Automated Data Migration:** EMQX provides detailed migration guides and automated scripts to simplify configuration and rule conversion. Configuration, authentication data, and message routing rules can be migrated with minimal manual effort.
 - **Zero-Downtime Upgrades:** Starting with EMQX 5.1, the system supports seamless rolling upgrades for the cluster. With rolling upgrade support, clusters can be upgraded one node at a time, keeping connections active and preventing service interruptions.
 
@@ -158,7 +158,7 @@ EMQX 5.x is the latest major version designed with a focus on long-term stabilit
 
 - Regular security patches to address emerging threats and vulnerabilities.
 - Optimized performance updates to ensure high throughput and low latency.
-- Compatibility with upcoming MQTT protocol enhancements, keeping deployments aligned with industry best practices.
+- Compatibility with upcoming [MQTT protocol](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) enhancements, keeping deployments aligned with industry best practices.
 - Enterprise-grade reliability, reducing risks of technical debt and outdated infrastructure.
 
 Staying on EMQX 4.x means missing out on these critical updates, increasing the likelihood of performance degradation, security risks, and compatibility issues as the IoT ecosystem evolves.

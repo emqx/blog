@@ -6,7 +6,7 @@
 
 在开发基于 Python 的物联网应用时，选择合适的 [MQTT 客户端](https://www.emqx.com/zh/blog/mqtt-client-tools)至关重要。Python 生态系统提供了多样化的选择，既有久经考验的同步库，也有新一代现代化、高性能的异步客户端。面对这些选择，开发者可能会感到困惑：哪个客户端最稳定？哪个能为高流量应用提供最佳性能？哪个能与 FastAPI 等 Web 框架实现最佳集成？
 
-本指南旨在回答这些问题。我们将全面比较 2025 年的五个主流 Python MQTT 客户端：**paho-mqtt**、**gmqtt**、**aiomqtt**、**amqtt** 和 **fastapi-mqtt**。阅读完本文，你将清晰了解它们的优缺点，从而为你的下一个项目做出明智的选择。
+本指南旨在回答这些问题。我们将全面比较 2025 年的五个主流 [Python MQTT](https://www.emqx.com/zh/blog/how-to-use-mqtt-in-python) 客户端：**paho-mqtt**、**gmqtt**、**aiomqtt**、**amqtt** 和 **fastapi-mqtt**。阅读完本文，你将清晰了解它们的优缺点，从而为你的下一个项目做出明智的选择。
 
 ## 关键比较标准
 

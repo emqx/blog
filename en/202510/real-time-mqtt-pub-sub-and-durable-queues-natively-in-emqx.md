@@ -66,7 +66,7 @@ Every message destined for backend processing must traverse:
 Each hop adds latency (typically 30-50ms total) and creates a potential point of failure.
 
 **Protocol Mismatch**  
-Your edge developers work with MQTT clients. Your backend developers work with Kafka consumers or AMQP clients. Different APIs, different mental models, different debugging tools. Training new engineers takes months, not weeks.
+Your edge developers work with [MQTT clients](https://www.emqx.com/en/blog/mqtt-client-tools). Your backend developers work with Kafka consumers or AMQP clients. Different APIs, different mental models, different debugging tools. Training new engineers takes months, not weeks.
 
 **Cost Accumulation**  
 Infrastructure costs compound: you're paying for MQTT infrastructure + MQ infrastructure + integration layer + the operational overhead of managing all three.

@@ -12,7 +12,7 @@ Connectivity in the IoT isn't just about getting a device online. It's about cre
 - **Multi-Protocol Support:** The world of IoT devices is diverse. A great solution must support a range of protocols, from open standards like [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) and [CoAP](https://www.emqx.com/en/blog/coap-protocol) to industry-specific ones, ensuring flexibility and interoperability.
 - **Massive Scale:** Your connectivity solution must scale effortlessly. Whether you're connecting a hundred devices or a hundred million, your infrastructure needs to handle the load without a hitch.
 
-This is where **MQTT** comes in. As a lightweight, efficient publish/subscribe protocol, MQTT has become the industry's gold standard for IoT. It's designed specifically for the low-power, low-bandwidth environments that most IoT devices operate in, making it the perfect choice for everything from smart meters to connected cars.
+This is where **MQTT** comes in. As a lightweight, efficient publish/subscribe protocol, MQTT has become the industry's gold standard for IoT. It's designed specifically for the low-power, low-bandwidth environments that most IoT devices operate in, making it the perfect choice for everything from smart meters to [connected cars](https://www.emqx.com/en/blog/connected-cars-and-automotive-connectivity-all-you-need-to-know).
 
 ## **How EMQX MQTT Platform Delivers a Powerful IoT Backbone**
 
@@ -20,9 +20,9 @@ Building your own connectivity platform from scratch is difficult and risky. **E
 
 Here’s how EMQX helps you build a future-proof IoT solution:
 
-- **Connect Any Device, Anywhere:** EMQX is a **globally distributed MQTT broker** that works across multi-cloud environments. This means your devices can connect from any network endpoint—from a factory floor to a remote farm—with low latency and high reliability. EMQX also supports multiple protocols like CoAP, LwM2M, and WebSocket, truly enabling you to "Connect Any Device, Anywhere, to Everything."
+- **Connect Any Device, Anywhere:** EMQX is a **globally distributed [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison)** that works across multi-cloud environments. This means your devices can connect from any network endpoint—from a factory floor to a remote farm—with low latency and high reliability. EMQX also supports multiple protocols like CoAP, LwM2M, and WebSocket, truly enabling you to "Connect Any Device, Anywhere, to Everything."
 - **Handle Millions of Connections with Ease:** At its core, EMQX is built for scale. Its distributed architecture allows it to reliably **connect hundreds of millions of IoT devices** to the cloud, making it the go-to choice for enterprise-level deployments that require high performance and high availability.
-- **Ensure End-to-End Security:** Data security is non-negotiable. EMQX secures data in transit with **MQTT over TLS/SSL or QUIC** and provides robust authentication mechanisms, including **JWT, LDAP, and X.509 certificates**, ensuring that only authorized devices and users can access your network.
+- **Ensure End-to-End Security:** Data security is non-negotiable. EMQX secures data in transit with **[MQTT over TLS](https://www.emqx.com/en/blog/fortifying-mqtt-communication-security-with-ssl-tls)/SSL or [QUIC](https://www.emqx.com/en/blog/quic-protocol-the-features-use-cases-and-impact-for-iot-iov)** and provides robust authentication mechanisms, including **JWT, LDAP, and X.509 certificates**, ensuring that only authorized devices and users can access your network.
 
 > Learn more: [MQTT for IoT Device Connectivity](https://www.emqx.com/en/features/connectivity) 
 

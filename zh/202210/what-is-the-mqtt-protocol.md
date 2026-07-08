@@ -38,7 +38,7 @@ MQTT 协议设计简单轻量、路由灵活，将在移动互联网、物联网
 
 据 IoT Analytics 最新发布的《2022 年春季物联网状况》研究报告显示，到 2022 年，物联网市场预计将增长 18%，达到 144 亿活跃连接。
 
-在如此大规模的物联网需求下，海量的设备接入和设备管理对网络带宽、通信协议以及平台服务架构都带来了巨大的挑战。对于**物联网协议**来说，必须针对性地解决物联网设备通信的几个关键问题：网络环境复杂而不可靠、内存和闪存容量小、处理器能力有限。
+在如此大规模的物联网需求下，海量的设备接入和设备管理对网络带宽、通信协议以及平台服务架构都带来了巨大的挑战。对于**[物联网协议](https://www.emqx.com/zh/blog/iot-protocols-mqtt-coap-lwm2m)**来说，必须针对性地解决物联网设备通信的几个关键问题：网络环境复杂而不可靠、内存和闪存容量小、处理器能力有限。
 
 MQTT 协议正是为了应对以上问题而创建，经过多年的发展凭借其轻量高效、可靠的消息传递、海量连接支持、安全的双向通信等优点已成为物联网行业的首选协议。
 
@@ -46,7 +46,7 @@ MQTT 协议正是为了应对以上问题而创建，经过多年的发展凭借
 
 ### 轻量高效，节省带宽
 
-MQTT 将协议本身占用的额外消耗最小化，消息头部最小只需要占用 2 个字节，可稳定运行在带宽受限的网络环境下。同时，MQTT 客户端只需占用非常小的硬件资源，能运行在各种资源受限的边缘端设备上。
+MQTT 将协议本身占用的额外消耗最小化，消息头部最小只需要占用 2 个字节，可稳定运行在带宽受限的网络环境下。同时，[MQTT 客户端](https://www.emqx.com/zh/blog/mqtt-client-tools)只需占用非常小的硬件资源，能运行在各种资源受限的边缘端设备上。
 
 ### 可靠的消息传递
 
@@ -72,7 +72,7 @@ MQTT 协议提供了 3 种消息服务质量等级（Quality of Service），保
 
 MQTT 协议从诞生之时便考虑到了日益增长的海量物联网设备，得益于其优秀的设计，基于 MQTT 的物联网应用及服务可轻松具备高并发、高吞吐、高可扩展能力。
 
-连接海量的物联网设备，离不开 [MQTT 服务器](https://www.emqx.com/zh/mqtt/public-mqtt5-broker)的支持。目前，MQTT 服务器中支持并发连接数最多的是 EMQX。最近发布的 [EMQX 5.0](https://www.emqx.com/zh/blog/emqx-v-5-0-released) 通过一个 23 节点的集群达成了 [1 亿 MQTT 连接](https://www.emqx.com/zh/blog/how-emqx-5-0-achieves-100-million-mqtt-connections)+每秒 100 万消息吞吐，这使得 EMQX 5.0 成为目前为止全球最具扩展性的 MQTT 服务器。
+连接海量的物联网设备，离不开 [MQTT 服务器](https://www.emqx.com/zh/mqtt/public-mqtt5-broker)的支持。目前，[MQTT 服务器](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison)中支持并发连接数最多的是 EMQX。最近发布的 [EMQX 5.0](https://www.emqx.com/zh/blog/emqx-v-5-0-released) 通过一个 23 节点的集群达成了 [1 亿 MQTT 连接](https://www.emqx.com/zh/blog/how-emqx-5-0-achieves-100-million-mqtt-connections)+每秒 100 万消息吞吐，这使得 EMQX 5.0 成为目前为止全球最具扩展性的 MQTT 服务器。
 
 ### 安全的双向通信
 
@@ -108,7 +108,7 @@ MQTT 服务器负责接收客户端发起的连接，并将客户端发送的消
 docker run -d --name emqx -p 1883:1883 -p 8083:8083 -p 8084:8084 -p 8883:8883 -p 18083:18083 emqx/emqx:latest
 ```
 
-也可直接在 EMQX Cloud 上创建完全托管的 MQTT 服务，现在[免费试用 EMQX Cloud](https://accounts-zh.emqx.com/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new)，无需绑定信用卡。
+也可直接在 [EMQX Cloud](https://www.emqx.com/zh/cloud) 上创建完全托管的 MQTT 服务，现在[免费试用 EMQX Cloud](https://accounts-zh.emqx.com/signup?continue=https://cloud.emqx.com/console/deployments/0?oper=new)，无需绑定信用卡。
 
 ## MQTT 客户端
 

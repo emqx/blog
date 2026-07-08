@@ -30,11 +30,11 @@ For this tutorial, choose the *N.Virginia* region and the 1,000 tier, leave the 
 
 #### 2. Add a Credential for the MQTT Connection
 
-When the deployment is created, navigate to ‘Access Control’ in the deployment console, then click *Authentication* in the submenu. Click the ‘Add’ button on the right and provide a username and password for the MQTT connection. For this example, we will use "emqx" as the username and "public" as the password for the MQTT client connection.
+When the deployment is created, navigate to ‘Access Control’ in the deployment console, then click *Authentication* in the submenu. Click the ‘Add’ button on the right and provide a username and password for the [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) connection. For this example, we will use "emqx" as the username and "public" as the password for the [MQTT client](https://www.emqx.com/en/blog/mqtt-client-tools) connection.
 
 ![Add Authentication](https://assets.emqx.com/images/078d3a6a6ab17c1f64dd461d8cf16e38.png)
 
-Your MQTT broker is now operational and ready for use. Let’s now proceed to Step 2.
+Your [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) is now operational and ready for use. Let’s now proceed to Step 2.
 
 ## Step 2: Use MQTTX to Set up Protobuf Schema
 

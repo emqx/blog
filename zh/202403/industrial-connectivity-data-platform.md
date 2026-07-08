@@ -31,7 +31,7 @@
 
 - 丰富的协议接入
 
-  凭借多样的协议插件，NeuronEX 能满足在各种工业场景下对 PLC、CNC、机器人、SCADA 以及智能仪表等设备数据的实时采集与统一接入的需求。内置了包括 [Modbus](https://www.emqx.com/zh/blog/modbus-protocol-the-grandfather-of-iot-communication)、OPC UA、Ethernet/IP、IEC104、BACnet、Siemens、Mitsubishi 等在内的多种插件模块，这些插件模块在楼宇自动化、数控机床、机器人技术、电力系统和各种 PLC 通信中都有着广泛的应用。
+  凭借多样的协议插件，NeuronEX 能满足在各种工业场景下对 PLC、CNC、机器人、SCADA 以及智能仪表等设备数据的实时采集与统一接入的需求。内置了包括 [Modbus](https://www.emqx.com/zh/blog/modbus-protocol-the-grandfather-of-iot-communication)、[OPC UA](https://www.emqx.com/zh/blog/opc-ua-protocol)、Ethernet/IP、IEC104、BACnet、Siemens、Mitsubishi 等在内的多种插件模块，这些插件模块在楼宇自动化、数控机床、机器人技术、电力系统和各种 PLC 通信中都有着广泛的应用。
 
 - 低延迟数据处理
 

@@ -26,7 +26,7 @@ To build a reliable foundation for their smart 3D printing ecosystem, leading ma
 - **Publish/Subscribe Model:** Decouples devices and applications, allowing for flexible, massive-scale data distribution.
 - **Reliable:** Supports Quality of Service (QoS) levels, which are essential for guaranteeing the delivery of critical control commands and sensor data over variable network conditions.
 
-The key to unlocking MQTT's potential at scale lies in selecting a high-performance messaging platform. **[EMQX Cloud](https://www.emqx.com/en/cloud)**, a fully-managed, high-performance MQTT messaging service, is the ideal choice for this scenario. It acts as the central hub, offering a cloud-native, scalable architecture designed to specifically address the industrial IoT challenges of 3D printing.
+The key to unlocking MQTT's potential at scale lies in selecting a high-performance messaging platform. **[EMQX Cloud](https://www.emqx.com/en/cloud)**, a fully-managed, high-performance MQTT messaging service, is the ideal choice for this scenario. It acts as the central hub, offering a cloud-native, scalable architecture designed to specifically address the [industrial IoT](https://www.emqx.com/en/blog/industrial-iot-systems) challenges of 3D printing.
 
 ### How EMQX Solves the Challenges:
 

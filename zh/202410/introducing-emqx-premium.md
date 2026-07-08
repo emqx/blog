@@ -1,4 +1,4 @@
-我们非常高兴地宣布：专为企业级关键任务，如车联网（IoV）、物联网（IoT）、工业物联网（IIoT）和人工智能（AI）应用量身打造的 EMQX Platform 旗舰版云服务现已正式上线！该产品标志着映云科技在为全球企业提供可靠、可扩展且功能强大的 MQTT 消息解决方案上迈出了重要一步。
+我们非常高兴地宣布：专为企业级关键任务，如车联网（IoV）、物联网（IoT）、[工业物联网](https://www.emqx.com/zh/blog/iiot-explained-examples-technologies-benefits-and-challenges)（IIoT）和人工智能（AI）应用量身打造的 EMQX Platform 旗舰版云服务现已正式上线！该产品标志着映云科技在为全球企业提供可靠、可扩展且功能强大的 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 消息解决方案上迈出了重要一步。
 
 ## EMQX Platform 的演进
 

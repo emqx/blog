@@ -1,13 +1,13 @@
 ## Introduction
 
-Vehicle connectivity is set to shape the future of automotive transportation and smart mobility. In the upcoming decade, we anticipate a diverse array of transportation modes and interconnected infrastructure, forming a cohesive, integrated system. This evolution demands vehicles equipped with fast and reliable messaging capabilities to facilitate seamless communication within this interconnected ecosystem. Here are some of the connected car features:
+Vehicle connectivity is set to shape the future of automotive transportation and smart mobility. In the upcoming decade, we anticipate a diverse array of transportation modes and interconnected infrastructure, forming a cohesive, integrated system. This evolution demands vehicles equipped with fast and reliable messaging capabilities to facilitate seamless communication within this interconnected ecosystem. Here are some of the [connected car](https://www.emqx.com/en/blog/mqtt-for-internet-of-vehicles) features:
 
 - Real-Time Traffic Updates: Empower drivers with real-time traffic information, including congestion, accidents, and road closures, enabling informed route decisions.
 - Electric Mobility Services: Implement e-mobility features such as battery charging, preconditioning, and efficient driving gamification.
 - Advanced Driver Assistance Systems (ADAS): Enhance road safety with ADAS, featuring systems like lane departure warnings, forward collision warnings, and automatic emergency braking to help drivers avoid accidents.
 - Driver Behavior Monitoring: Employ connected car data to monitor and analyze driver behavior. Provide feedback to drivers on safe driving practices, encouraging responsible behavior on the road.
 - Voice-Activated Controls: Integrate voice-activated controls for various in-car functions, allowing drivers to perform tasks hands-free. This feature enhances safety and provides a more convenient driving experience.
-- Emergency Assistance and Crash Response: Implement automatic crash detection and emergency response systems. Connected cars can transmit critical information to emergency services, enabling faster response times and potentially saving lives.
+- Emergency Assistance and Crash Response: Implement automatic crash detection and emergency response systems. [Connected cars](https://www.emqx.com/en/blog/connected-cars-and-automotive-connectivity-all-you-need-to-know) can transmit critical information to emergency services, enabling faster response times and potentially saving lives.
 - Environmental Impact Monitoring: Monitor and report the environmental impact of vehicles, including emissions data. Provide drivers with insights into their carbon footprint and encourage eco-friendly driving habits.
 
 With robust connectivity and data infrastructure, organizations can implement these connected car features, delivering enhanced value to drivers and passengers, elevating the overall driving experience, and positively impacting brand perception. [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) and Kafka, stand ready to assist in building these features for connected car services and other IoT initiatives.
@@ -42,8 +42,8 @@ EMQX is a large-scale distributed MQTT messaging platform that offers "unlimited
 1. Enable Connectivity Across Any Scale of Devices
    - **Distributed MQTT Broker:** Construct a global MQTT access network spanning multiple clouds, facilitating communication among devices, systems, and apps from diverse network endpoints.
    - **Effortless Scale:** Connect hundreds of millions of IoT devices to the cloud seamlessly and reliably using the world's most scalable distributed MQTT broker.
-   - **Versatile Protocol Support:** Provide all-encompassing access to IoT devices through open standards like MQTT, OPC UA, CoAP/LwM2M, WebSocket, or industry-specific proprietary protocols.
-   - **Prioritize Security and Privacy:** Establish secure communication channels using MQTT over TLS/SSL or QUIC, implementing diverse authentication mechanisms such as LDAP, JWT, PSK, X.509 certificates, and more.
+   - **Versatile Protocol Support:** Provide all-encompassing access to IoT devices through open standards like MQTT, [OPC UA](https://www.emqx.com/en/blog/opc-ua-protocol), CoAP/LwM2M, WebSocket, or industry-specific proprietary protocols.
+   - **Prioritize Security and Privacy:** Establish secure communication channels using [MQTT over TLS](https://www.emqx.com/en/blog/fortifying-mqtt-communication-security-with-ssl-tls)/SSL or [QUIC](https://www.emqx.com/en/blog/quic-protocol-the-features-use-cases-and-impact-for-iot-iov), implementing diverse authentication mechanisms such as LDAP, JWT, PSK, X.509 certificates, and more.
 2.  Reliably Transfer IoT Data Anywhere
    - **Topic-based Pub/Sub Messaging:** Facilitate seamless bidirectional data exchange among devices, systems, and applications through topic-based publish/subscribe messaging.
    - **Handle Millions of MQTT Messages:** Efficiently manage a high volume of MQTT messages per second by leveraging a broker cluster equipped with a high-performance, real-time processing engine.

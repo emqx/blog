@@ -1,12 +1,12 @@
 继 EMQX 5.0.0-rc.4 发布之后，v5.0 的开发工作已经接近尾声。除了继续优化 Dashboard 的 UI/UX 以提升使用体验，和测试并修复各项 Bug 以提升软件稳定性以外，EMQX 团队也在对用户文档进行全面的改进和更新，不久后即将为用户带来一个更加强大易用的 EMQX 5.0。
 
-云服务方面，EMQX Cloud 本月新增了JWT 认证支持，用户进行认证鉴权时又多了一种选择。此外，在交易体验上也进行了优化。
+云服务方面，[EMQX Cloud](https://www.emqx.com/zh/cloud) 本月新增了JWT 认证支持，用户进行认证鉴权时又多了一种选择。此外，在交易体验上也进行了优化。
 
 ## EMQX
 
 ### QUIC 改进：适配 MsQuic 2.0 & 内部资源管理重构
 
-在 EMQX 5.0 中我们提供了全球首个 MQTT over QUIC 的实现，支持用户将 MQTT 的传输层协议从 TCP 或者 WebSocket 切换至 QUIC。此前我们的 [QUIC](https://github.com/emqx/quic) 项目是基于微软的开源项目 MsQuic 的 1.8 版本实现的。本月，我们适配了 MsQuic 2.0.2 的 API 实现并且重构了内部资源管理。相比于 MsQuic 1.8，2.0 版本带来了 OpenSSL 版本的升级和证书处理等方面的多项改进。这些改动将随 EMQX 5.0 正式版一并上线。
+在 EMQX 5.0 中我们提供了全球首个 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) over [QUIC](https://www.emqx.com/zh/blog/quic-protocol-the-features-use-cases-and-impact-for-iot-iov) 的实现，支持用户将 MQTT 的传输层协议从 TCP 或者 WebSocket 切换至 QUIC。此前我们的 [QUIC](https://github.com/emqx/quic) 项目是基于微软的开源项目 MsQuic 的 1.8 版本实现的。本月，我们适配了 MsQuic 2.0.2 的 API 实现并且重构了内部资源管理。相比于 MsQuic 1.8，2.0 版本带来了 OpenSSL 版本的升级和证书处理等方面的多项改进。这些改动将随 EMQX 5.0 正式版一并上线。
 
 ### 支持通过规则引擎将数据持久化到 HStreamDB
 

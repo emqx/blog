@@ -1,6 +1,6 @@
 ## 引言
 
-物联网开发者需要为自己的物联网项目选择合适的 MQTT 消息产品或服务，从而构建可靠高效的基础数据层，保障上层物联网业务。目前市面上有很多开源的 MQTT 产品，在性能功能等方面各有优点。本文将选取目前最为流行的两个开源 MQTT Broker：[EMQX](https://github.com/emqx/emqx) 和 [Mosquitto](https://mosquitto.org/)，从技术架构、性能、功能、社区情况等多维度进行 1v1 对比，帮助读者更加深入了解这两个产品。 
+物联网开发者需要为自己的物联网项目选择合适的 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 消息产品或服务，从而构建可靠高效的基础数据层，保障上层物联网业务。目前市面上有很多开源的 MQTT 产品，在性能功能等方面各有优点。本文将选取目前最为流行的两个开源 [MQTT Broker](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison)：[EMQX](https://github.com/emqx/emqx) 和 [Mosquitto](https://mosquitto.org/)，从技术架构、性能、功能、社区情况等多维度进行 1v1 对比，帮助读者更加深入了解这两个产品。 
 
 ## Mosquitto 简介
 
@@ -35,7 +35,7 @@ EMQX 采用 Erlang/OTP 编写，这是一种用于构建大规模可扩展软实
 - 横向可扩展性
 - 高性能和高可靠
 - 丰富的企业功能 
-- 率先采用 MQTT over QUIC 
+- 率先采用 MQTT over [QUIC](https://www.emqx.com/zh/blog/quic-protocol-the-features-use-cases-and-impact-for-iot-iov) 
 
 缺点：
 
@@ -92,7 +92,7 @@ EMQX 作为可集群部署的大规模消息服务器，单节点可以支持百
 
 Mosiquitto 作为 MQTT Broker 提供了完整的 MQTT 3.1/3.1.1/5.0 协议支持，支持协议规范中的遗嘱消息、保留消息、共享订阅等能力，同时也支持 [MQTT over WebSocket](https://www.emqx.com/zh/blog/connect-to-mqtt-broker-with-websocket)，可以满足大多数 MQTT 设备接入需求。
 
-EMQX 同样完整支持 MQTT 3.1/3.1.1/5.0 以及 MQTT over Websocket 协议。同时 EMQX 5.0 开创性地引入了下一代互联网协议 HTTP/3 的底层传输协议 QUIC 的支持，以解决复杂网络环境下的通信问题，提升整体吞吐量和移动连接的稳定性。此外，EMQX 也扩展支持 MQTT-SN、CoAP、LwM2M、STOMP 以及其他协议扩展。
+EMQX 同样完整支持 MQTT 3.1/3.1.1/5.0 以及 MQTT over Websocket 协议。同时 EMQX 5.0 开创性地引入了下一代互联网协议 HTTP/3 的底层传输协议 QUIC 的支持，以解决复杂网络环境下的通信问题，提升整体吞吐量和移动连接的稳定性。此外，EMQX 也扩展支持 MQTT-SN、[CoAP](https://www.emqx.com/zh/blog/coap-protocol)、[LwM2M](https://www.emqx.com/zh/blog/iot-protocols-mqtt-coap-lwm2m)、STOMP 以及其他协议扩展。
 
 |                              | **EMQX**                                                     | **Mosquitto** | **Notes and Links**                                          |
 | :--------------------------- | :----------------------------------------------------------- | :------------ | :----------------------------------------------------------- |

@@ -1,4 +1,4 @@
-近日，由 EMQ 开源的 [MQTT 5.0 跨平台桌面客户端 MQTTX](https://mqttx.app/zh) 发布了 1.8.0 版本。MQTTX 为连接测试各类 MQTT 消息服务器而生，支持快速创建多个同时在线的 [MQTT 客户端](https://www.emqx.com/zh/blog/mqtt-client-tools)连接，采用一键式的连接方式和简洁的图形界面，帮助使用者便捷地测试 MQTT/TCP、MQTT/TLS、MQTT/WebSocket 的连接、发布、订阅功能，探索更多 [MQTT 协议](https://www.emqx.com/zh/mqtt-guide)特性。
+近日，由 EMQ 开源的 [MQTT 5.0 跨平台桌面客户端 MQTTX](https://mqttx.app/zh) 发布了 1.8.0 版本。MQTTX 为连接测试各类 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 消息服务器而生，支持快速创建多个同时在线的 [MQTT 客户端](https://www.emqx.com/zh/blog/mqtt-client-tools)连接，采用一键式的连接方式和简洁的图形界面，帮助使用者便捷地测试 MQTT/TCP、MQTT/TLS、MQTT/WebSocket 的连接、发布、订阅功能，探索更多 [MQTT 协议](https://www.emqx.com/zh/mqtt-guide)特性。
 
 最新发布的 v1.8.0 除了通过新增的快速复制连接功能优化使用体验之外，还扩展了两个新的使用场景，即增加了 CLI（命令行） 和 Web 端这两种新的交互方式 。这使得 MQTTX 1.8.0 成为支持使用场景最完整的 MQTT 测试客户端。用户可以根据使用需求，自行选择下载桌面客户端、使用终端命令行或是在桌面浏览器上快速完成对 MQTT 的连接测试。
 
@@ -178,7 +178,7 @@ mqttx pub --help
 
 | 参数               | 描述                                     |
 | :----------------- | :--------------------------------------- |
-| -h, --hostname     | MQTT Broker 的 Host 地址，默为 localhost |
+| -h, --hostname     | [MQTT Broker](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison) 的 Host 地址，默为 localhost |
 | -p, --port         | MQTT Broker 的端口号                     |
 | -i, --client-id    | 客户端 ID                                |
 | -q, --qos <0/1/2>  | 消息的 QoS，默认为 0                     |

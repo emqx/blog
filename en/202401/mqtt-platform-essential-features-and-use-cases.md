@@ -1,6 +1,6 @@
 ## MQTT and MQTT Platform
 
-MQTT (Message Queuing Telemetry Transport) is a TCP-based IoT protocol that uses a [publish/subscribe model](https://www.emqx.com/en/blog/mqtt-5-introduction-to-publish-subscribe-model). It works well in low-bandwidth and unstable networks, and it is ideal for transmitting and exchanging data between lightweight IoT devices.
+MQTT (Message Queuing Telemetry Transport) is a TCP-based [IoT protocol](https://www.emqx.com/en/blog/iot-protocols-mqtt-coap-lwm2m) that uses a [publish/subscribe model](https://www.emqx.com/en/blog/mqtt-5-introduction-to-publish-subscribe-model). It works well in low-bandwidth and unstable networks, and it is ideal for transmitting and exchanging data between lightweight IoT devices.
 
 The MQTT platform is built on top of the [MQTT protocol](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt), providing a centralized platform for managing IoT devices, data messaging, and data integration. With the MQTT platform, users can communicate through a lightweight messaging mechanism, enabling efficient and reliable data transmission. This facilitates easier management and control of IoT devices.
 
@@ -19,7 +19,7 @@ The MQTT platform is a key component of IoT. It can be used for various IoT scen
 - [**Internet of Vehicles(IoV)**](https://www.emqx.com/en/solutions/internet-of-vehicles)**:** The MQTT platform connects vehicles to the cloud securely and efficiently. It integrates data from vehicles with other systems and services. This enables a future where data and services are essential for IoV.
 - [**Electric Vehicle Charging Network:**](https://www.emqx.com/en/customers/ev-power) The MQTT platform creates a cloud system that connects the charging network, the vehicle network, and the Internet with its capabilities of data collecting and processing. It provides optimal solutions for the IoT era and improves the performance of the charging piles.
 - [**Logistics Asset Management**](https://www.emqx.com/en/blog/a-data-driven-solution-for-logistics-asset-tracking-and-maintenance)**:** The MQTT platform collects, transmits, and manages sensor data from vehicles and warehouses in the logistics chain. It offers a data-driven solution for logistics companies to monitor their assets and discover the value of data. 
-- [**Industrial Production**](https://www.emqx.com/en/solutions/smart-manufacturing)**:** Smart factory applications can leverage the MQTT platform to facilitate data collection, transmission, and distribution, enabling businesses such as equipment health mangement, energy consumption operation, production monitoring and analysis, product quality tracing, supply chain operation, and predictive maintenance.
+- [**Industrial Production**](https://www.emqx.com/en/solutions/smart-manufacturing)**:** [Smart factory](https://www.emqx.com/en/blog/what-is-a-smart-factory-key-components-4-levels-of-evolution) applications can leverage the MQTT platform to facilitate data collection, transmission, and distribution, enabling businesses such as equipment health mangement, energy consumption operation, production monitoring and analysis, product quality tracing, supply chain operation, and predictive maintenance.
 
 As IoT technology advances, industries like energy, smart home, and healthcare are exploring different application scenarios. The MQTT platform continues to play a crucial role as a key IoT connectivity infrastructure, enriching its application scenarios across various fields.
 
@@ -88,7 +88,7 @@ EMQX provides edge connectivity and platform diversity by accessing and bridging
 
 #### 40+ Data Integration Components
 
-EMQX supports more than 40 data integration components, such as databases, streaming data services, and cloud data services from AWS, Azure, Google Cloud, and more. These integrations allow users to deliver and exchange MQTT client events and messages with other data sources. For instance, users can import device-generated data into a streaming data service for real-time analysis, or store it in a database for long-term query. This data integration capability gives users more options and flexibility to handle and manage data according to their needs and scenarios.
+EMQX supports more than 40 data integration components, such as databases, streaming data services, and cloud data services from AWS, Azure, Google Cloud, and more. These integrations allow users to deliver and exchange [MQTT client](https://www.emqx.com/en/blog/mqtt-client-tools) events and messages with other data sources. For instance, users can import device-generated data into a streaming data service for real-time analysis, or store it in a database for long-term query. This data integration capability gives users more options and flexibility to handle and manage data according to their needs and scenarios.
 
 ## Conclusion
 

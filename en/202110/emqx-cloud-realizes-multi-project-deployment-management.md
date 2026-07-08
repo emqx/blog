@@ -2,7 +2,7 @@ In the actual business applications of enterprises, permission management is oft
 
 ## EMQX Cloud is upgraded to meet various management needs
 
-As an enterprise-level fully managed MQTT message service, [EMQX Cloud](https://www.emqx.com/en/cloud) provides convenient and easy-to-use operation and maintenance management services for enterprises of different sizes. In the process of serving our customers, we find that there are usually different organizations and projects within the enterprise. The managers and users of a technical facility service may not be in the same organization, and the management needs and purposes are different.
+As an enterprise-level fully managed [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) message service, [EMQX Cloud](https://www.emqx.com/en/cloud) provides convenient and easy-to-use operation and maintenance management services for enterprises of different sizes. In the process of serving our customers, we find that there are usually different organizations and projects within the enterprise. The managers and users of a technical facility service may not be in the same organization, and the management needs and purposes are different.
 
 In the recently updated EMQX Cloud, we introduced the concept of 「Project」to solve this problem.
 

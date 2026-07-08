@@ -6,7 +6,7 @@ You will learn how to:
 
 - Connect ESP32 to Wi-Fi
 - Set up MQTT client using PubSubClient
-- Publish and subscribe to MQTT topics
+- Publish and subscribe to [MQTT topics](https://www.emqx.com/en/blog/advanced-features-of-mqtt-topics)
 - Test communication using MQTTX or a public broker
 
 ## What is MQTT and Why Use it on ESP32?
@@ -170,7 +170,7 @@ By following these steps, you will successfully install the PubSubClient library
 
 #### TLS/SSL
 
-Implementing **MQTT TLS/SSL encryption** ensures end-to-end data confidentiality and prevents sniffing or tampering in untrusted public networks. 
+Implementing **[MQTT TLS](https://www.emqx.com/en/blog/fortifying-mqtt-communication-security-with-ssl-tls)/SSL encryption** ensures end-to-end data confidentiality and prevents sniffing or tampering in untrusted public networks. 
 
 This ESP32 code establishes a secure Wi-Fi connection using a server root CA certificate. The ca_cert variable contains the root CA certificate in PEM format. The espClient object is configured with the server root CA certificate using the `setCACert()` function. This setup enables the ESP32 client to verify the server's identity during the TLS handshake, establishing a secure Wi-Fi connection and ensuring the transmitted data's confidentiality and integrity.
 
@@ -326,7 +326,7 @@ void loop() {
 
 3. Use the MQTTX client to establish a connection with the MQTT broker and publish messages such as `Hi, I'm MQTTX` to the ESP32.
 
-   > [MQTTX](https://mqttx.app/) is an elegant cross-platform MQTT 5.0 desktop client that runs on macOS, Linux, and Windows. Its user-friendly chat-style interface enables users to easily create multiple MQTT/MQTTS connections and subscribe/publish MQTT messages.
+   > [MQTTX](https://mqttx.app/) is an elegant cross-platform [MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5) desktop client that runs on macOS, Linux, and Windows. Its user-friendly chat-style interface enables users to easily create multiple MQTT/MQTTS connections and subscribe/publish MQTT messages.
 
    ![MQTTX Client](https://assets.emqx.com/images/d6af5f33eb8f550cf22705859ed9d59b.png)
 
@@ -466,7 +466,7 @@ In production systems, Wi-Fi reconnection and MQTT reconnection should always be
 
 ### What is the difference between PubSubClient and ESP-IDF MQTT client?
 
-PubSubClient is a lightweight MQTT library designed for Arduino-based projects, while ESP-IDF provides a native MQTT client for ESP32.
+PubSubClient is a lightweight [MQTT library](https://www.emqx.com/en/blog/mqtt-client-tools) designed for Arduino-based projects, while ESP-IDF provides a native MQTT client for ESP32.
 
 **PubSubClient**:
 

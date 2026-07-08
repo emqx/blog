@@ -1,4 +1,4 @@
-EMQX Enterprise IoT MQTT messaging platform supports one-stop access for millions of IoT devices, MQTT & CoAP multi-protocol processing and low latency real-time message communication. It supports a built-in SQL-based rules engine, flexible processing/forwarding of messages to back-end services, storage of message data to various databases, or bridging to enterprise middleware such as Kafka and RabbitMQ.
+EMQX Enterprise IoT [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) messaging platform supports one-stop access for millions of IoT devices, MQTT & CoAP multi-protocol processing and low latency real-time message communication. It supports a built-in SQL-based rules engine, flexible processing/forwarding of messages to back-end services, storage of message data to various databases, or bridging to enterprise middleware such as Kafka and RabbitMQ.
 
 EMQX Enterprise is suitable for various IoT application scenarios, and helps enterprises to build IoT applications quickly and supports arbitrary deployment of public cloud, private cloud, physical machine and container/K8S.
 
@@ -71,7 +71,7 @@ With this update, it is up to the user to decide whether or not to enable the ba
 
 LwM2M is a set of lightweight protocols for the IoT, defined by the Open Mobile Alliance (OMA), which provides device management and communication features, especially for end devices with limited resources.
 
-EMQX-LwM2M implements most of the features of LwM2M. Applications and MQTT clients can access LwM2M-enabled devices via EMQX-LwM2M and devices can report notifications to EMQX-LwM2M for bi-directional data communication.
+EMQX-LwM2M implements most of the features of LwM2M. Applications and [MQTT clients](https://www.emqx.com/en/blog/mqtt-client-tools) can access LwM2M-enabled devices via EMQX-LwM2M and devices can report notifications to EMQX-LwM2M for bi-directional data communication.
 
 ![WechatIMG4340.png](https://assets.emqx.com/images/c5580c872ed07fc6983e3995867c0b51.png)
 

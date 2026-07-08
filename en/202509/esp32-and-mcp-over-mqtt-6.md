@@ -13,7 +13,7 @@
 
 Through the operations in the previous articles of this series, we have endowed smart devices with persona, emotion, and memory, evolving them from simple "command executors" into genuine "emotional companions" that truly understand you.
 
-By setting a unique communication style for the large language model(LLM), incorporating emotional expression mechanisms, and integrating persistent user preferences and conversation history, we built an AI agent capable of understanding context and expressing emotional warmth. With support for voice interaction and MCP over MQTT control, the agent delivers a more natural and considerate interactive experience.
+By setting a unique communication style for the large language model(LLM), incorporating emotional expression mechanisms, and integrating persistent user preferences and conversation history, we built an AI agent capable of understanding context and expressing emotional warmth. With support for voice interaction and MCP over [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) control, the agent delivers a more natural and considerate interactive experience.
 
 ## This Article's Goal: Giving the Agent Visual Perception
 

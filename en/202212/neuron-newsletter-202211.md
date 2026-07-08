@@ -1,4 +1,4 @@
-We released Neuron 2.2.11 with optimizations and bug fixes in November. We are now working on v2.3, including adding an EtherNet/IP driver, improving the CNC FOOCAS driver, supporting remote OPC DA, and switching to NanoSDK to enhance the performance of data transmission.
+We released Neuron 2.2.11 with optimizations and bug fixes in November. We are now working on v2.3, including adding an EtherNet/IP driver, improving the CNC FOOCAS driver, supporting remote [OPC DA](https://www.emqx.com/en/blog/opc-ua-vs-opc-da), and switching to NanoSDK to enhance the performance of data transmission.
 
 ## Add Ethernet/IP driver
 

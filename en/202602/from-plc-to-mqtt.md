@@ -1,6 +1,6 @@
-Connecting PLC data to MQTT is the first step in modern industrial digitalization. MQTT, as a lightweight messaging protocol, has become the de facto standard for Industrial IoT. It handles unstable network environments well, supports real-time data streaming, and is natively supported by almost all cloud platforms, data analytics tools, and MES systems.
+Connecting PLC data to [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) is the first step in modern industrial digitalization. MQTT, as a lightweight messaging protocol, has become the de facto standard for [Industrial IoT](https://www.emqx.com/en/blog/industrial-iot-systems). It handles unstable network environments well, supports real-time data streaming, and is natively supported by almost all cloud platforms, data analytics tools, and MES systems.
 
-However, in real factory environments, connecting PLC data to MQTT is far more complex than imagined. PLCs from different manufacturers use different communication protocols (Modbus, OPC UA, Siemens S7, Ethernet/IP...), and traditional solutions require writing driver code for each protocol, resulting in high deployment and maintenance costs.
+However, in real factory environments, connecting PLC data to MQTT is far more complex than imagined. PLCs from different manufacturers use different communication protocols (Modbus, [OPC UA](https://www.emqx.com/en/blog/opc-ua-protocol), Siemens S7, Ethernet/IP...), and traditional solutions require writing driver code for each protocol, resulting in high deployment and maintenance costs.
 
 This article introduces an easy approach using **EMQX Neuron** and demonstrates how to connect any PLC to MQTT in just 10 minutes, without writing any code.
 
@@ -75,8 +75,8 @@ We’ll walk through the entire process with a complete hands-on example to show
 
 - **PLC or Simulator**: This example uses a Modbus TCP simulator (PeakHMI Slave Simulators)
 - **EMQX Neuron**: Quick deployment via Docker
-- **MQTT Broker**: Using public broker `broker.emqx.io` 
-- **MQTT Client**: Using [MQTTX](https://mqttx.app/) to verify data
+- **[MQTT Broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison)**: Using public broker `broker.emqx.io` 
+- **[MQTT Client](https://www.emqx.com/en/blog/mqtt-client-tools)**: Using [MQTTX](https://mqttx.app/) to verify data
 
 ### Step 1: Start EMQX Neuron
 
@@ -254,7 +254,7 @@ EMQX Neuron not only collects and forwards data but also performs real-time data
 
 ### Quick Example: Temperature Threshold Alert
 
-**Scenario**: Send an alert to a separate MQTT topic when the temperature exceeds 80°C.
+**Scenario**: Send an alert to a separate [MQTT topic](https://www.emqx.com/en/blog/advanced-features-of-mqtt-topics) when the temperature exceeds 80°C.
 
 #### 1. Subscribe Data to Data Processing Module
 

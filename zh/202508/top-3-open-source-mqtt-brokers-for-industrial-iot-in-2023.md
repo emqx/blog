@@ -1,4 +1,4 @@
-随着工业物联网（IIoT）和工业 4.0 技术逐渐成为标准，对高效稳定的通信协议需求比以往任何时候都更加迫切。在这一背景下，[MQTT Broker](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison) 已经成为事实上的首选，它就像工业系统的“中枢神经”，连接着从 PLC 到云平台的各种设备与系统。面对众多可选方案，如何为你的项目挑选合适的 MQTT Broker 呢？
+随着[工业物联网](https://www.emqx.com/zh/blog/iiot-explained-examples-technologies-benefits-and-challenges)（IIoT）和工业 4.0 技术逐渐成为标准，对高效稳定的通信协议需求比以往任何时候都更加迫切。在这一背景下，[MQTT Broker](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison) 已经成为事实上的首选，它就像工业系统的“中枢神经”，连接着从 PLC 到云平台的各种设备与系统。面对众多可选方案，如何为你的项目挑选合适的 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) Broker 呢？
 
 在这篇文章里，我们会盘点 2025 年最值得关注的三款[开源 MQTT Broker](https://www.emqx.com/zh/blog/a-comprehensive-comparison-of-open-source-mqtt-brokers-in-2023)。我们会从功能、性能到应用场景，逐一帮你拆解优缺点，让你在搭建[统一命名空间（UNS）](https://www.emqx.com/zh/blog/unified-namespace-next-generation-data-fabric-for-iiot)架构时，少走弯路，选到真正适合自己项目的方案。
 
@@ -96,7 +96,7 @@ Mosquitto 由 C/C++ 编写，采用单线程架构。其轻量级设计使得它
 
 ## 3. NanoMQ
 
-[NanoMQ](https://nanomq.io/zh) 是一个最新的开源 MQTT Broker 项目，于 2020 年发布。它采用纯 C 语言编写，基于 NNG 的异步 I/O 多线程 [Actor 模型](https://en.wikipedia.org/wiki/Actor_model)，支持 MQTT 3.1.1、MQTT 5.0、SSL/TLS、MQTT over QUIC。
+[NanoMQ](https://nanomq.io/zh) 是一个最新的开源 MQTT Broker 项目，于 2020 年发布。它采用纯 C 语言编写，基于 NNG 的异步 I/O 多线程 [Actor 模型](https://en.wikipedia.org/wiki/Actor_model)，支持 MQTT 3.1.1、MQTT 5.0、SSL/TLS、MQTT over [QUIC](https://www.emqx.com/zh/blog/quic-protocol-the-features-use-cases-and-impact-for-iot-iov)。
 
 NanoMQ 的突出亮点是轻量级、快速、极低的内存占用，这使它成为一款在工业物联网中表现非常优秀的 MQTT Broker，因为在工业物联网中效率和资源优化非常重要。此外，NanoMQ 还可以用作消息总线，将 DDS、NNG、ZeroMQ 等协议转换为 MQTT，然后再将 MQTT 消息桥接到云端。
 

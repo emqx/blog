@@ -44,7 +44,7 @@ exhook.drivers.java.path = data/extension/
 exhook.drivers.java.init_module = SampleHandler
 ```
 
-Enable plugin `emqx_extension_hook`. If configuration error or write wrong Java code, it can not be enabled normally.  After it is enabled, try to establish the MQTT connection and observer the running situation of the business.
+Enable plugin `emqx_extension_hook`. If configuration error or write wrong Java code, it can not be enabled normally.  After it is enabled, try to establish the [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) connection and observer the running situation of the business.
 
 
 

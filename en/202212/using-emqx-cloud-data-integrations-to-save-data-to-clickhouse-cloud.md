@@ -2,14 +2,14 @@
 
 A couple days ago, ClickHouse announced the launch of [ClickHouse Cloud](https://clickhouse.com/cloud), a lightning-fast cloud-based database that simplifies and accelerates insights and analytics for modern digital enterprises.
 
-In this article, we will simulate temperature and humidity data and report these data to EMQX Cloud via the MQTT protocol and then use the EMQX Cloud Data Integrations to save the data into ClickHouse Cloud.
+In this article, we will simulate temperature and humidity data and report these data to EMQX Cloud via the [MQTT protocol](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) and then use the EMQX Cloud Data Integrations to save the data into ClickHouse Cloud.
 
 ![Save MQTT Data to ClickHouse](https://assets.emqx.com/images/ea41ecc718a6dca9f46bac9a1da99567.png)
 
 
 ## EMQX Cloud Introduction
 
-[EMQX Cloud](https://www.emqx.com/en/cloud) is the world's first fully managed MQTT 5.0 public cloud service for IoT from EMQ. EMQX Cloud provides a one-stop O&M colocation and a unique isolated environment for MQTT services. In the era of Internet of Everything, EMQX Cloud can help you quickly build industry applications and easily realize the collection, transmission, computation and persistence of IoT data.
+[EMQX Cloud](https://www.emqx.com/en/cloud) is the world's first fully managed [MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5) public cloud service for IoT from EMQ. EMQX Cloud provides a one-stop O&M colocation and a unique isolated environment for MQTT services. In the era of Internet of Everything, EMQX Cloud can help you quickly build industry applications and easily realize the collection, transmission, computation and persistence of IoT data.
 
 ![MQTT Cloud](https://assets.emqx.com/images/f0a14856586adc3cf932bf7e509ff6e3.png)
 
@@ -84,7 +84,7 @@ Once logged in, click on "Cloud Console" under the account menu and you will be 
 
 EMQX Cloud provides 14 days free trial for both Standard Plan and Professional Plan.  In this tutorial, we will use the Professional Plan because only Pro version provides the data integration functionality, which can send MQTT data directly to ClickHouse without a single line of code.
 
-Select Pro version and choose ‘N.Virginial’ region and click ‘Create Now’. In just a few minutes, you will get a fully managed MQTT broker:
+Select Pro version and choose ‘N.Virginial’ region and click ‘Create Now’. In just a few minutes, you will get a fully [managed MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison):
 
 ![MQTT cluster](https://assets.emqx.com/images/6d583df8bb1868b1f281539e49fa73ae.png)
 
@@ -94,7 +94,7 @@ Now click the panel to go to the cluster view. On this dashboard, you will see t
 
 **Add Client Credential**
 
-Now, let’s add a client credential so we can use the MQTT client tool to send data to this broker.
+Now, let’s add a client credential so we can use the [MQTT client](https://www.emqx.com/en/blog/mqtt-client-tools) tool to send data to this broker.
 
 Click ‘Authentication & ACL’ on the left menu and click ‘Authentication’ in the submenu.
 

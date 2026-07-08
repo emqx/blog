@@ -78,7 +78,7 @@ $ mqttx bench sub -h ape1.emqx.dev --count 1 --topic t/mqttx/%i
 [9:14:30 AM] › | Created 1 connections in 0.89s
 ```
 
-Almost a second. Noticeably longer than either 160 or 200 milliseconds. To understand why, we should consider how exactly MQTT client and broker negotiate connection and subscription:
+Almost a second. Noticeably longer than either 160 or 200 milliseconds. To understand why, we should consider how exactly [MQTT client](https://www.emqx.com/en/blog/mqtt-client-tools) and broker negotiate connection and subscription:
 
 1. The client opens a connection to EMQX and sends a `CONNECT` packet.
 
@@ -242,9 +242,9 @@ Nevertheless, there are situations where latency this high is not acceptable. EM
 
 Egress MQTT bridges in asynchronous mode are designed to interact with *external* resources, and in a way, remote EMQX clusters located on the other side of the globe are just that. Bridges have buffers backed by memory or durable storage, and they can handle intermittent connectivity issues often encountered in unreliable networks.
 
-Without a single global view of the connected clients and their subscriptions, it is no longer possible to route only a subset of messages to a particular region. Each MQTT bridge on each node will have to stream the **whole** message flow to each remote location, saturating the egress bandwidth. It also inevitably comes with a loss of information: bridged messages will no longer have information about the original client. Besides, some effort is necessary to guarantee that the same bridged messages do not travel back and forth between the continents. However, [Rule engine](https://docs.emqx.com/en/emqx/v5.7/data-integration/rule-sql-syntax.html) should be expressive enough to handle this.
+Without a single global view of the connected clients and their subscriptions, it is no longer possible to route only a subset of messages to a particular region. Each [MQTT bridge](https://www.emqx.com/en/blog/bridging-mosquitto-to-emqx-cluster) on each node will have to stream the **whole** message flow to each remote location, saturating the egress bandwidth. It also inevitably comes with a loss of information: bridged messages will no longer have information about the original client. Besides, some effort is necessary to guarantee that the same bridged messages do not travel back and forth between the continents. However, [Rule engine](https://docs.emqx.com/en/emqx/v5.7/data-integration/rule-sql-syntax.html) should be expressive enough to handle this.
 
-These shortcomings are what recently prompted us to work on another, more flexible solution: [Cluster Linking](https://github.com/emqx/emqx/pull/13126). The design goal was to combine the best of both worlds: have both the reliability and robustness of communication with external resources and the ability to route only those messages a particular region is interested in, thus avoiding unnecessary waste of bandwidth and computing resources. This feature should see the light of day in the upcoming EMQX Enterprise 5.8.0 release.
+These shortcomings are what recently prompted us to work on another, more flexible solution: [Cluster Linking](https://github.com/emqx/emqx/pull/13126). The design goal was to combine the best of both worlds: have both the reliability and robustness of communication with external resources and the ability to route only those messages a particular region is interested in, thus avoiding unnecessary waste of bandwidth and computing resources. This feature should see the light of day in the upcoming [EMQX Enterprise](https://www.emqx.com/en/products/emqx) 5.8.0 release.
 
 ## Conclusion
 

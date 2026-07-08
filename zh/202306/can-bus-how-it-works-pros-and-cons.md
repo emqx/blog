@@ -80,7 +80,7 @@ CAN Bus 数据可以反映车辆的性能、健康状况和行为特征。把 CA
 我们至少需要两个组件来构建这样的解决方案：
 
 1. 边缘计算引擎：边缘计算引擎可以只收集所需的 CAN Bus 信号，灵活地处理它们，并实时触发 MQTT 传输动作。[LF Edge eKuiper](https://ekuiper.org/) 是一款开源的边缘计算引擎，可以帮助您实时处理和分析 CAN Bus 数据。
-2. 云端的 MQTT Broker：利用 MQTT Broker，可以实现将处理过的 CAN Bus 数据实时传输到云端。EMQX 是一款开源的 MQTT Broker，能够搭建可靠且可扩展的 MQTT 基础设施，用来收集 CAN Bus 数据。
+2. 云端的 [MQTT Broker](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison)：利用 MQTT Broker，可以实现将处理过的 CAN Bus 数据实时传输到云端。EMQX 是一款开源的 MQTT Broker，能够搭建可靠且可扩展的 MQTT 基础设施，用来收集 CAN Bus 数据。
 
 接下来，我们将详细介绍结合 EMQX 和 eKuiper 的整体解决方案。
 

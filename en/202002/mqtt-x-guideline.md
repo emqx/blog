@@ -10,7 +10,7 @@ If there is a network problem resulting in a slow network speed or a jam in the 
 
 ## MQTT Broker Preparation
 
-- If you don't have an MQTT broker deployed locally, you can use the public MQTT service provided by [EMQX Cloud](https://www.emqx.com/en/cloud)  for quick testing:
+- If you don't have an [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) deployed locally, you can use the public [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) service provided by [EMQX Cloud](https://www.emqx.com/en/cloud)  for quick testing:
 
 ```
 Broker Address: broker.emqx.io
@@ -18,7 +18,7 @@ Broker TCP Port: 1883
 Broker SSL Port: 8883
 ```
 
-- If you plan to deploy MQTT Broker locally, we recommend that you  [download  EMQX](https://github.com/emqx/emqx/releases) for installation and use. EMQX is a fully open source, highly available, low latency, million-level distributed IoT MQTT 5.0 message server.
+- If you plan to deploy MQTT Broker locally, we recommend that you  [download  EMQX](https://github.com/emqx/emqx/releases) for installation and use. EMQX is a fully open source, highly available, low latency, million-level distributed IoT [MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5) message server.
 
   Quickly install EMQX by using Docker:
 

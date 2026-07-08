@@ -1,10 +1,10 @@
 ## Introduction: Native MQTT session persistence support
 
-The MQTT protocol standard states that the broker must store messages from offline clients. In previous versions, [the open-source version of EMQX ](https://github.com/emqx/emqx)used memory-based session storage, while the enterprise version further provides an external database storage solution for data persistence.
+The [MQTT protocol](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) standard states that the broker must store messages from offline clients. In previous versions, [the open-source version of EMQX ](https://github.com/emqx/emqx)used memory-based session storage, while the enterprise version further provides an external database storage solution for data persistence.
 
 This memory-based, non-persistent session storage is the optimal solution based on a trade-off between throughput and latency, but it still imposes limitations on users in certain scenarios.
 
-In line with our philosophy of paying attention to community feedback and continuously improving the product to bring users more ease of use, we have added native MQTT session persistence support based on RocksDB to the EMQX 5.x product plan. This feature is now in the formal development stage and is expected to be available to all users in version 5.1.0.
+In line with our philosophy of paying attention to community feedback and continuously improving the product to bring users more ease of use, we have added native [MQTT session](https://www.emqx.com/en/blog/mqtt-session) persistence support based on RocksDB to the EMQX 5.x product plan. This feature is now in the formal development stage and is expected to be available to all users in version 5.1.0.
 
 This article is a technical preview of this feature. Through the introduction of MQTT session related concepts and the design principle of EMQX session persistence feature, we will help readers understand this more reliable and low-latency data persistence solution. Also, we will explore more new features based on RocksDB persistence capabilities.
 
@@ -38,7 +38,7 @@ The session state in the server includes:
 
 ### Session life cycle and session storage
 
-Sessions are the key to MQTT protocol communication, and the MQTT protocol **requires** that the session state be **preserved** when a network connection is opened. When the network connection is closed, the actual timing of the discard is controlled based on the Clean Session (MQTT 3.1.1) and Clean Start + session expiration interval (MQTT 5.0) settings.
+Sessions are the key to MQTT protocol communication, and the MQTT protocol **requires** that the session state be **preserved** when a network connection is opened. When the network connection is closed, the actual timing of the discard is controlled based on the Clean Session (MQTT 3.1.1) and Clean Start + session expiration interval ([MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5)) settings.
 
 ![Relationship between Session lifecycle and Clean Session in MQTT 3.1.1](https://assets.emqx.com/images/90fe98166e240d594231c75c6ad557ee.png)
 

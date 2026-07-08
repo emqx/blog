@@ -3,7 +3,7 @@
 | 篇章 | 功能                                                   | 难度 |
 | :--- | :----------------------------------------------------- | :--- |
 | 1    | 整体介绍：背景 + 环境准备 + 设备上线                   | ★    |
-| 2    | 从“命令式控制”到“语义控制”：MCP over MQTT 封装设备能力 | ★★   |
+| 2    | 从“命令式控制”到“语义控制”：MCP over [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 封装设备能力 | ★★   |
 | 3    | **接入 LLM，实现“自然语言 → 设备控制”**                | ★★   |
 | 4    | 语音 I/O：麦克风数据上传 + 语音识别 + 语音合成回放     | ★★★  |
 | 5    | 人格、情感、记忆：从“控制器”到“陪伴体”                 | ★★★  |
@@ -403,7 +403,7 @@ if __name__ == "__main__":
 
 上述代码基于 [MCP over MQTT Python SDK](https://github.com/emqx/mcp-python-sdk) 实现。
 
-首先，初始化 MCP Client 并连接到 MQTT Broker（请将其中的 Broker 地址替换为你申请的 EMQX Serverless 实例地址）。客户端会自动发现并连接到已注册的 MCP Server。
+首先，初始化 MCP Client 并连接到 [MQTT Broker](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison)（请将其中的 Broker 地址替换为你申请的 EMQX Serverless 实例地址）。客户端会自动发现并连接到已注册的 MCP Server。
 
 随后，代码将 MCP Server 中注册的工具封装为 LlamaIndex 可调用的函数接口，供 LLM 使用。同时，还实现了一个简易的对话示例，用于展示可用工具列表及 LLM 的推理与调用过程。
 

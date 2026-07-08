@@ -18,7 +18,7 @@ MQTT.fx is a popular [MQTT client tool](https://www.emqx.com/en/blog/mqtt-client
 
 - Lacks support for [MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5) protocol (available in version 5.0).
 - Supports only one connection at a time, limiting multi-connection debugging.
-- No WebSocket protocol support, restricting MQTT over WebSocket testing.
+- No WebSocket protocol support, restricting [MQTT over WebSocket](https://www.emqx.com/en/blog/connect-to-mqtt-broker-with-websocket) testing.
 
 ## How to Install MQTT.fx
 
@@ -69,7 +69,7 @@ First, in the MQTT.fx main interface, click the configuration icon next to the c
 
 ### Messages Subscription/Publishing
 
-Once the connection is established, you can start subscribing to messages. Because the MQTT protocol adopts the subscribe/publish method, we need to subscribe to the topic after connecting. After a message is generated on the topic, we can receive the messages from the EMQX cloud.
+Once the connection is established, you can start subscribing to messages. Because the [MQTT protocol](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) adopts the subscribe/publish method, we need to subscribe to the topic after connecting. After a message is generated on the topic, we can receive the messages from the [EMQX cloud](https://www.emqx.com/en/cloud).
 
 Click the Subscribe Tab to enter `/testTopic/1` in the topic box. Then, click the `Subscribe` button, and the list of subscribed topics will appear on the left. The current number of subscribed topics is 0, as shown in the following figure:
 

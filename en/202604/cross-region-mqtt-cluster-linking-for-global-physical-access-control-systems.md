@@ -1,8 +1,8 @@
 > ***Executive Summary***
 >
-> *To expand from regional deployments to a global platform, a leading physical security solutions provider delivering cloud-based access control and camera management systems deployed EMQX Enterprise across a multi-region architecture spanning the United States and EMEA. By leveraging Cluster Linking, the solution enables seamless cross-region event routing with sub-500 ms latency and QoS 2 reliability, ensuring every access control event is delivered exactly once.* 
+> *To expand from regional deployments to a global platform, a leading physical security solutions provider delivering cloud-based access control and camera management systems deployed [EMQX Enterprise](https://www.emqx.com/en/products/emqx) across a multi-region architecture spanning the United States and EMEA. By leveraging Cluster Linking, the solution enables seamless cross-region event routing with sub-500 ms latency and QoS 2 reliability, ensuring every access control event is delivered exactly once.* 
 >
-> *This unified MQTT backbone eliminates the need for complex custom replication, allowing thousands of customer sites to connect to the nearest data center while maintaining a centralized, audit-grade record of all security events.*
+> *This unified [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) backbone eliminates the need for complex custom replication, allowing thousands of customer sites to connect to the nearest data center while maintaining a centralized, audit-grade record of all security events.*
 
 ## The Shift to Cloud-Native Physical Security SaaS
 
@@ -54,11 +54,11 @@ MQTT's small header overhead (2-4 bytes) and binary payload support minimize ban
 
 **QoS 2 Exactly-Once Semantics**
 
-MQTT QoS 2 implements a two-phase commit-like protocol, ensuring no message loss and no duplication even if brokers or clients crash mid-transmission. This satisfies audit and compliance requirements for access control.
+[MQTT QoS](https://www.emqx.com/en/blog/introduction-to-mqtt-qos) 2 implements a two-phase commit-like protocol, ensuring no message loss and no duplication even if brokers or clients crash mid-transmission. This satisfies audit and compliance requirements for access control.
 
 **Message Persistence and Durable Sessions**
 
-MQTT brokers can persist offline client subscriptions and buffer messages. When a client reconnects, it automatically receives missed events, critical for mobile apps and offline-capable devices.
+[MQTT brokers](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) can persist offline client subscriptions and buffer messages. When a client reconnects, it automatically receives missed events, critical for mobile apps and offline-capable devices.
 
 **Lightweight Device Support**
 
@@ -102,7 +102,7 @@ Customer-facing webhooks and third-party integrations (Slack alerts, security mo
 
 **Legacy Client and Unified Client API Layer**
 
-Legacy cloud application and modern mobile apps interface via the unified client API gateway, which subscribes to MQTT topics and translates to REST/gRPC. This decouples app development from MQTT changes.
+Legacy cloud application and modern mobile apps interface via the unified client API gateway, which subscribes to [MQTT topics](https://www.emqx.com/en/blog/advanced-features-of-mqtt-topics) and translates to REST/gRPC. This decouples app development from MQTT changes.
 
 ### Multi-Tier Non-Production Environments
 

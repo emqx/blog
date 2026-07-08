@@ -4,7 +4,7 @@
 
 ## Introduction
 
-In the rapidly evolving landscape of IoT edge computing, efficient and reliable management of edge services is crucial. In the previous release, EMQX Edge to Cloud Platform (EMQX ECP) provides remote management and monitoring capabilities to [Neuron](https://github.com/emqx/neuron) and [eKuiper](https://ekuiper.org/). With the release of v1.10, the EMQX ECP  takes a significant stride forward by integrating [NanoMQ](https://nanomq.io/) - a lightweight, high-performance MQTT broker designed for efficient message routing in IoT edge computing scenarios. This integration unlocks the capabilities of remote management and monitoring of NanoMQ deployments. 
+In the rapidly evolving landscape of IoT edge computing, efficient and reliable management of edge services is crucial. In the previous release, EMQX Edge to Cloud Platform (EMQX ECP) provides remote management and monitoring capabilities to [Neuron](https://github.com/emqx/neuron) and [eKuiper](https://ekuiper.org/). With the release of v1.10, the EMQX ECP  takes a significant stride forward by integrating [NanoMQ](https://nanomq.io/) - a lightweight, high-performance [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) designed for efficient message routing in IoT edge computing scenarios. This integration unlocks the capabilities of remote management and monitoring of NanoMQ deployments. 
 
 ## NanoMQ Management in EMQX ECP
 
@@ -12,7 +12,7 @@ NanoMQ, as the next generation of lightweight and high-performance MQTT messagin
 
 ### Use Case 1: Remote Management of Industry IoT Gateways in Digital Factories
 
-In digitized manufacturing factories, the industrial equipment in workshops generates production data. This data is collected and converted into industrial protocols using small-scale industrial gateway devices and data acquisition software. Once unified under the IoT MQTT protocol, the data is transmitted in real-time to factory or cloud-based data centers for monitoring. It can also be exchanged locally within the factory based on specific business needs. 
+In digitized manufacturing factories, the industrial equipment in workshops generates production data. This data is collected and converted into industrial protocols using small-scale industrial gateway devices and data acquisition software. Once unified under the IoT [MQTT protocol](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt), the data is transmitted in real-time to factory or cloud-based data centers for monitoring. It can also be exchanged locally within the factory based on specific business needs. 
 
 NanoMQ, can be deployed in various industrial gateways in the workshop. It aggregates data for centralized transmission and enables local device-to-device data routing through rule engines.
 

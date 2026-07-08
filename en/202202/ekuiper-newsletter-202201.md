@@ -14,7 +14,7 @@ In terms of plugin runtime, we also fixed issues related to stability and perfor
 
 ### Modification of dynamic parameters of Sink
 
-The JSONPath syntax starting with the `$` was previously supported in the dynamic parameters. However, for some users, their MQTT Topic itself starts with `$`, which results in conflicts and causes this type of Topic unable to work properly. In Sink, the syntax of data template is used to format the output results, which is powerful, flexible and widely used. In the new version, the dynamic parameters adopt the same syntax as the data template, so that users can output results more flexibly without learning new syntax. For text formatting, data template syntax is more flexible than JSONPath syntax and supports more formatting functions. In the following example, it sends the result to a dynamic MQTT topic for the rule. Thanks to the syntax of the data template, the topic can be easily prefixed, suffixed or formatted in a more complex way.
+The JSONPath syntax starting with the `$` was previously supported in the dynamic parameters. However, for some users, their [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) Topic itself starts with `$`, which results in conflicts and causes this type of Topic unable to work properly. In Sink, the syntax of data template is used to format the output results, which is powerful, flexible and widely used. In the new version, the dynamic parameters adopt the same syntax as the data template, so that users can output results more flexibly without learning new syntax. For text formatting, data template syntax is more flexible than JSONPath syntax and supports more formatting functions. In the following example, it sends the result to a dynamic MQTT topic for the rule. Thanks to the syntax of the data template, the topic can be easily prefixed, suffixed or formatted in a more complex way.
 
 ```
 {
@@ -29,7 +29,7 @@ The JSONPath syntax starting with the `$` was previously supported in the dynami
 }
 ```
 
-Users who originally used JSONPath syntax in MQTT Sink are recommended to modify it to a new format. If you still need to use the old syntax, you can change the prefix to `($` to distinguish it from common MQTT topics.
+Users who originally used JSONPath syntax in MQTT Sink are recommended to modify it to a new format. If you still need to use the old syntax, you can change the prefix to `($` to distinguish it from common [MQTT topics](https://www.emqx.com/en/blog/advanced-features-of-mqtt-topics).
 
 ### Edgex object type support
 

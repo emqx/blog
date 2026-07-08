@@ -32,7 +32,7 @@ On top of the caching feature, for some security-critical operations, users may 
 
 ## Improve Observability
 
-EMQX provides users with comprehensive metrics integrated with monitoring services. Before, Prometheus was used for metric integration, but it could only get basic metrics related to clusters, clients, and MQTT. Metrics for authentication and authorization, rule engine, and data integration were not monitored.
+EMQX provides users with comprehensive metrics integrated with monitoring services. Before, Prometheus was used for metric integration, but it could only get basic metrics related to clusters, clients, and [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt). Metrics for authentication and authorization, rule engine, and data integration were not monitored.
 
 In this version, we improve observability by providing more metrics, such as:
 
@@ -58,7 +58,7 @@ With these detailed metrics, users can do business-level monitoring, getting det
 2. Retained messages now support search and one-click clearing. The management of retained messages was already supported, but this version makes it easier and better. Users can search and manage retained messages by topic on the Dashboard and clear them with one click.
 3. Delayed messages can now be deleted in batches by specifying topics, which makes the operation more efficient and less complex.
 4. The page size limit for REST API pagination has been increased from 3000 to 10000, which supports larger data volumes in API calls.
-5. MQTT bridge for data integration has been redesigned, so that one set of MQTT connections can be used for multiple message subscription and publishing configurations. This makes the configuration and management of data integration more flexible and efficient.
+5. [MQTT bridge](https://www.emqx.com/en/blog/bridging-mosquitto-to-emqx-cluster) for data integration has been redesigned, so that one set of MQTT connections can be used for multiple message subscription and publishing configurations. This makes the configuration and management of data integration more flexible and efficient.
 
 ## Bug Fixes
 

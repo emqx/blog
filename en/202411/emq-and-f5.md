@@ -6,7 +6,7 @@ With the rapid advancement of IoT technology and its widespread adoption across 
 
 ### EMQX Platform: High-Concurrency and Reliable IoT Connectivity
 
-The [EMQX Platform](https://www.emqx.com/en/products/emqx), an enterprise-grade MQTT IoT platform developed by EMQ, is designed for large-scale deployments and high reliability in IoT applications like connected vehicles, industrial IoT, and AIoT. EMQX enhances data access and management through key capabilities:
+The [EMQX Platform](https://www.emqx.com/en/products/emqx), an enterprise-grade [MQTT IoT](https://www.emqx.com/en/blog/what-is-the-mqtt-protocol) platform developed by EMQ, is designed for large-scale deployments and high reliability in IoT applications like connected vehicles, [industrial IoT](https://www.emqx.com/en/blog/industrial-iot-systems), and AIoT. EMQX enhances data access and management through key capabilities:
 
 - **High Reliability and Scalability**: Built on a distributed architecture, EMQX provides high availability and scalability to handle large-scale concurrent message transmission. It supports horizontal scaling to accommodate increasing IoT devices and data traffic, ensuring system stability.
 - **Extensive Protocol Support**: Beyond [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt), EMQX supports multiple messaging protocols, allowing developers to expand capabilities to various proprietary protocols as needed.
@@ -31,7 +31,7 @@ Combining EMQX with NGINX Plus and BIG-IP creates a unified solution integrating
 - **TLS, DTLS, and GMSSL Certification**: Comprehensive security authentication meets diverse regional and industry requirements.
 - **Sticky Sessions and TCP Connection Migration**: Minimizes disruptions during system upgrades, scaling, or node failures, improving user experience.
 - **Information Security and Session Logging**: Integrates robust logging and analysis for comprehensive system auditing, aiding compliance efforts.
-- **MQTT over QUIC Load Balancing**: With the innovative [MQTT over QUIC](https://www.emqx.com/en/blog/mqtt-over-quic), the solution enables reliable, low-latency connections suited to complex network environments and high-demand scenarios like connected vehicles.
+- **MQTT over [QUIC](https://www.emqx.com/en/blog/quic-protocol-the-features-use-cases-and-impact-for-iot-iov) Load Balancing**: With the innovative [MQTT over QUIC](https://www.emqx.com/en/blog/mqtt-over-quic), the solution enables reliable, low-latency connections suited to complex network environments and high-demand scenarios like connected vehicles.
 
 This joint solution provides scalable data access, robust traffic management, and secure data delivery, enabling enterprises to build more stable and secure IoT platforms and applications.
 
@@ -41,15 +41,15 @@ This joint solution provides scalable data access, robust traffic management, an
 
 In connected vehicles and industrial IoT, devices are widely distributed and require strict real-time data transmission. The joint solution offers Global Server Load Balancing (GSLB) capabilities, monitoring load across distributed clusters and routing traffic to the closest node based on user requests in each region. This setup ensures low-latency data transmission.
 
-For example, in connected vehicles, real-time communication with the nearest server is crucial for functions like navigation, remote diagnostics, and fleet management. If a service node fails, GSLB automatically redirects requests to other nodes, ensuring stable and reliable data transmission. This functionality also supports high-performance, stable connectivity and monitoring in data-intensive scenarios such as smart factories and energy IoT, optimizing business continuity and service quality.
+For example, in connected vehicles, real-time communication with the nearest server is crucial for functions like navigation, remote diagnostics, and fleet management. If a service node fails, GSLB automatically redirects requests to other nodes, ensuring stable and reliable data transmission. This functionality also supports high-performance, stable connectivity and monitoring in data-intensive scenarios such as [smart factories](https://www.emqx.com/en/blog/what-is-a-smart-factory-key-components-4-levels-of-evolution) and energy IoT, optimizing business continuity and service quality.
 
 ![Stable Data Interaction for Connected Vehicles](https://assets.emqx.com/images/2a4056675e3949391586d4a928a83801.png)
 
 ### Seamless Upgrades and Scaling for Critical Business Continuity
 
-In large-scale connected vehicles and smart manufacturing environments, frequent system upgrades and IT resource expansions are common. Traditional solutions often cause brief connection disruptions during these processes, affecting customer experience and critical business continuity.
+In large-scale connected vehicles and [smart manufacturing](https://www.emqx.com/en/blog/the-smart-manufacturing-revolution) environments, frequent system upgrades and IT resource expansions are common. Traditional solutions often cause brief connection disruptions during these processes, affecting customer experience and critical business continuity.
 
-The solution offers TCP Connection Migration, enabling minimal to zero connection interruptions during system upgrades and scaling. Using BIG-IP's full-proxy architecture, a client-server connection is split into client-to-load-balancer and load-balancer-to-server connections. With its Message Routing Framework (MRF), BIG-IP acts as a message router, identifying and routing messages within the TCP session, handling and forwarding MQTT messages. This capability allows for smooth MQTT server scaling, seamless failover, and service decommissioning, ideal for scenarios demanding high stability and availability.
+The solution offers TCP Connection Migration, enabling minimal to zero connection interruptions during system upgrades and scaling. Using BIG-IP's full-proxy architecture, a client-server connection is split into client-to-load-balancer and load-balancer-to-server connections. With its Message Routing Framework (MRF), BIG-IP acts as a message router, identifying and routing messages within the TCP session, handling and forwarding MQTT messages. This capability allows for smooth [MQTT server](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) scaling, seamless failover, and service decommissioning, ideal for scenarios demanding high stability and availability.
 
  ![Seamless Upgrades and Scaling](https://assets.emqx.com/images/5e6f5bc17ea0118ae4482d20c9c1395f.png) 
 

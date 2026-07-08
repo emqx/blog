@@ -23,7 +23,7 @@ There was a help page for users to learn about the MQTT in previous versions. In
 
 ### Other updates
 
-- Support the configuration of user properties to add duplicate keys with different values. It is fully compatible with the MQTT protocol.
+- Support the configuration of user properties to add duplicate keys with different values. It is fully compatible with the [MQTT protocol](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt).
 - Optimize UI design and interaction.
 - Fix some known bugs.
 
@@ -31,7 +31,7 @@ There was a help page for users to learn about the MQTT in previous versions. In
 
 ### Support automatic reconnection
 
-In previous versions, MQTTX CLI would automatically disconnect and exit if the MQTT server encountered an exception. Users have to reconnect to the server manually when it is recovered. In v1.9.1, we provide a mechanism for automatic reconnecting so that MQTTX CLI automatically reconnects after disconnecting from the MQTT server.
+In previous versions, MQTTX CLI would automatically disconnect and exit if the [MQTT server](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) encountered an exception. Users have to reconnect to the server manually when it is recovered. In v1.9.1, we provide a mechanism for automatic reconnecting so that MQTTX CLI automatically reconnects after disconnecting from the MQTT server.
 
 ![MQTT CLI](https://assets.emqx.com/images/5c65e7ea10826afdd4a424bdb2fd2134.png)
 
@@ -97,7 +97,7 @@ MQTTX is continuing to be improved to provide users with more practical and powe
 
 - Optimize the performance for receiving and storing messages to ensure that the system runs smoothly when there are too many messages coming in.
 - Support MQTT Debug.
-- Support Sparkplug B format.
+- Support [Sparkplug B](https://www.emqx.com/en/solutions/mqtt-sparkplug) format.
 - Chart automatically based on incoming messages.
 - Add Plugins.
 - Support automated test script (Flow).

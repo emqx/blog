@@ -1,6 +1,6 @@
 ## Introduction: The Convergence of MQTTX and MCP
 
-MQTTX, the most popular MQTT client toolbox, has enhanced its capabilities in 1.12.0 beta by integrating the Model Context Protocol (MCP) into its Copilot AI feature. This integration transforms MQTTX into an MCP Host, allowing MQTTX Copilots to interact directly with MQTT brokers (EMQX) and local resources. By connecting large language models (LLM) with MQTT operations, this feature opens new possibilities for IoT automation, monitoring, and development.
+MQTTX, the most popular [MQTT client](https://www.emqx.com/en/blog/mqtt-client-tools) toolbox, has enhanced its capabilities in 1.12.0 beta by integrating the Model Context Protocol (MCP) into its Copilot AI feature. This integration transforms MQTTX into an MCP Host, allowing MQTTX Copilots to interact directly with [MQTT brokers](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) (EMQX) and local resources. By connecting large language models (LLM) with [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) operations, this feature opens new possibilities for IoT automation, monitoring, and development.
 
 > *Download the latest version here:* [Release v1.12.0-beta.2 · emqx/MQTTX](https://github.com/emqx/MQTTX/releases/tag/v1.12.0-beta.2)  *- Since it's a beta release, it won't auto-update through the application. Please manually download and install it from the Assets section.*
 

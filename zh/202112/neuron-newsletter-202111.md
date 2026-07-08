@@ -25,7 +25,7 @@
 
 在 Neuron 2.0 没有正式商业化应用之前，Neuron 1.x 的功能升级及维护尤为重要。近期我们发布了 v1.3.4，新增了以下功能：
 
-- MQTT json 包里时间戳从10个位扩展到13个位。
+- [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) json 包里时间戳从10个位扩展到13个位。
 - OPC 驱动修复了证书连接 Siemens PLC S71200 时出现「0x00AA0000-非关键超时」问题。
 - 修改 UI 界面状态栏中的 SEMI，将其改为 EXPIRED。
 - Fins on TCP 驱动数据类型问题修复。

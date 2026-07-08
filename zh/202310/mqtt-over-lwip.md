@@ -202,7 +202,7 @@ MSH_CMD_EXPORT(mqttClient, a simple mqtt client);
 
 ## 结语
 
-本文通过 lwIP 的 MQTT 库建立了一个简单的 MQTT 客户端，并完成了该客户端与 [MQTT 服务器](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison)的连接和 SUB、PUB 测试。MQTT 能够以极少的代码和有限的带宽为远程设备提供可靠的消息传递、海量的连接支持。同样的，lwIP 能够在占用资源极少的前提下，提供完整可靠的 TCP/IP 服务。两者相结合，即使是在资源及其受限的环境中也可以为物联网通信设备提供实时可靠的消息服务。
+本文通过 lwIP 的 MQTT 库建立了一个简单的 [MQTT 客户端](https://www.emqx.com/zh/blog/mqtt-client-tools)，并完成了该客户端与 [MQTT 服务器](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison)的连接和 SUB、PUB 测试。MQTT 能够以极少的代码和有限的带宽为远程设备提供可靠的消息传递、海量的连接支持。同样的，lwIP 能够在占用资源极少的前提下，提供完整可靠的 TCP/IP 服务。两者相结合，即使是在资源及其受限的环境中也可以为物联网通信设备提供实时可靠的消息服务。
 
 
 

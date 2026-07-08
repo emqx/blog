@@ -1,4 +1,4 @@
-在过去的一月中，MQTTX 发布了最新的 1.8.0 版本（下载地址：[https://github.com/emqx/MQTTX/releases/tag/v1.8.0](https://github.com/emqx/MQTTX/releases/tag/v1.8.0) ），优化部分使用体验和改进各项问题的同时，新增了 CLI 和 Web 端的 MQTT 客户端工具，支持在终端命令行或桌面浏览器上快速完成对 MQTT 的连接测试。
+在过去的一月中，MQTTX 发布了最新的 1.8.0 版本（下载地址：[https://github.com/emqx/MQTTX/releases/tag/v1.8.0](https://github.com/emqx/MQTTX/releases/tag/v1.8.0) ），优化部分使用体验和改进各项问题的同时，新增了 CLI 和 Web 端的 [MQTT 客户端](https://www.emqx.com/zh/blog/mqtt-client-tools)工具，支持在终端命令行或桌面浏览器上快速完成对 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 的连接测试。
 
 ## 1.8.0 版本概览
 

@@ -161,7 +161,7 @@ ing
 
 ### Publishing Sensor Data
 
-The `publishSensorData()` function reads the soil moisture sensor data, formats it as a JSON object, and publishes it to the specified MQTT topic. This function ensures the data is correctly serialized and sent over the MQTT protocol.
+The `publishSensorData()` function reads the soil moisture sensor data, formats it as a JSON object, and publishes it to the specified [MQTT topic](https://www.emqx.com/en/blog/advanced-features-of-mqtt-topics). This function ensures the data is correctly serialized and sent over the MQTT protocol.
 
 ```c
 void publishSensorData() {

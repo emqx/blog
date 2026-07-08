@@ -1,10 +1,10 @@
-本文将以 [MQTT Explorer](https://mqtt-explorer.com/) 作为 [MQTT 客户端](https://www.emqx.com/zh/blog/introduction-to-the-commonly-used-mqtt-client-library)测试工具，接入 [MQTT 云服务 - EMQX Cloud](https://www.emqx.com/zh/cloud)。通过本文，你将能快速了解 MQTT Explorer 的基础用法以及 MQTT 协议的基本概念与使用。
+本文将以 [MQTT Explorer](https://mqtt-explorer.com/) 作为 [MQTT 客户端](https://www.emqx.com/zh/blog/introduction-to-the-commonly-used-mqtt-client-library)测试工具，接入 [MQTT 云服务 - EMQX Cloud](https://www.emqx.com/zh/cloud)。通过本文，你将能快速了解 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) Explorer 的基础用法以及 MQTT 协议的基本概念与使用。
 
 
 
 ## MQTT Explorer 简介
 
-[MQTT Explorer](https://mqtt-explorer.com/) 是目前较为活跃的 MQTT 客户端桌面应用，一直受到开发者们的喜爱。主要技术是 [Electron](https://github.com/electron/electron)，由 [@thomasnordquist](https://github.com/thomasnordquist) 开发并且开源，遵循 [Creative Commons Public Licenses](https://wiki.creativecommons.org/wiki/Considerations_for_licensors_and_licensees#Considerations_for_licensees) 协议，GitHub 地址为 https://github.com/thomasnordquist/MQTT-Explorer
+[MQTT Explorer](https://mqtt-explorer.com/) 是目前较为活跃的 [MQTT 客户端](https://www.emqx.com/zh/blog/mqtt-client-tools)桌面应用，一直受到开发者们的喜爱。主要技术是 [Electron](https://github.com/electron/electron)，由 [@thomasnordquist](https://github.com/thomasnordquist) 开发并且开源，遵循 [Creative Commons Public Licenses](https://wiki.creativecommons.org/wiki/Considerations_for_licensors_and_licensees#Considerations_for_licensees) 协议，GitHub 地址为 https://github.com/thomasnordquist/MQTT-Explorer
 
 其包含主要特性有：
 
@@ -36,7 +36,7 @@ MQTT Explorer 能够满足大部分开发的需求，但是也有一些缺点：
 
 在万物互联的时代，EMQX Cloud 可以帮助用户快速构建面向物联网领域的行业应用，轻松实现物联网数据的采集、传输、计算和持久化。
 
-本文将使用 EMQX Cloud 提供的 [免费公共 MQTT 服务器](https://www.emqx.com/zh/mqtt/public-mqtt5-broker) 作为本次测试的 MQTT 服务器地址，服务器接入信息如下：
+本文将使用 EMQX Cloud 提供的 [免费公共 MQTT 服务器](https://www.emqx.com/zh/mqtt/public-mqtt5-broker) 作为本次测试的 [MQTT 服务器](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison)地址，服务器接入信息如下：
 
 - Broker: **broker-cn.emqx.io**
 - TCP Port: **1883**

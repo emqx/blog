@@ -1,8 +1,8 @@
-We're thrilled to announce that the highly anticipated [EMQX Cloud Serverless](https://www.emqx.com/en/cloud/serverless-mqtt) is almost here, with a launch date of April 1, 2023! As the latest addition to our fully managed MQTT service, we can't wait to share the benefits of this cutting-edge technology with our users.
+We're thrilled to announce that the highly anticipated [EMQX Cloud Serverless](https://www.emqx.com/en/cloud/serverless-mqtt) is almost here, with a launch date of April 1, 2023! As the latest addition to our fully managed [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) service, we can't wait to share the benefits of this cutting-edge technology with our users.
 
-By incorporating serverless technology, we have enhanced the flexibility and affordability of our messaging platform. It’s the perfect solution for small businesses, startups, and independent developers. With our MQTT over QUIC protocol, you can be assured that all messages are delivered securely and promptly.
+By incorporating serverless technology, we have enhanced the flexibility and affordability of our messaging platform. It’s the perfect solution for small businesses, startups, and independent developers. With our [MQTT over QUIC](https://www.emqx.com/en/blog/mqtt-over-quic) protocol, you can be assured that all messages are delivered securely and promptly.
 
-EMQX Cloud Serverless empowers IoT developers to develop and test their projects more efficiently than ever before. You can get your MQTT services up and running in a mere 5 seconds.
+[EMQX Cloud](https://www.emqx.com/en/cloud) Serverless empowers IoT developers to develop and test their projects more efficiently than ever before. You can get your MQTT services up and running in a mere 5 seconds.
 
 If you're looking for a reliable, scalable, and cost-effective MQTT messaging platform, look no further than EMQX Cloud Serverless.
 
@@ -11,7 +11,7 @@ If you're looking for a reliable, scalable, and cost-effective MQTT messaging pl
 
 **Here’s what EMQX Cloud Serverless means for you:**
 
-- **Faster time to market:** with our innovative serverless MQTT broker, you can now focus on creating IoT-driven business logic instead of worrying about managing infrastructure. This translates into faster time-to-market for your applications.
+- **Faster time to market:** with our innovative serverless [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison), you can now focus on creating IoT-driven business logic instead of worrying about managing infrastructure. This translates into faster time-to-market for your applications.
 - **Significantly reduced costs:** Our large-scale, multi-tenant cluster eliminates the need for users to pay for idle resources, making it especially beneficial for IoT applications with unpredictable traffic patterns. With a free quota of 1 million session minutes and 1 GB of traffic per month, and the ability to enjoy up to 1000 sessions, you can start using EMQX Cloud Serverless at no cost. Our pay-as-you-go pricing ensures that you only pay for the amount of time and data you use each month, ensuring low IoT costs. See pricing [here](https://docs.emqx.com/en/cloud/latest/price/pricing.html).
 - **High-performance auto-scaling architecture:** our serverless MQTT technology is intelligent and self-scaling, allowing you to respond seamlessly to fluctuating business demands. It can also improve reliability by automatically scaling resources and handling server failures.
 

@@ -1,4 +1,4 @@
-[MQTTX](https://mqttx.app/zh) 是由全球领先的 **开源物联网中间件** 提供商 [EMQ](https://www.emqx.com/zh) 开源的一款跨平台 [MQTT 5.0](https://www.emqx.com/zh/blog/introduction-to-mqtt-5) 桌面测试客户端，它支持 macOS，Linux，Windows。MQTTX 的用户界面借助聊天软件的形式简化了页面的操作逻辑，用户可以快速创建多个同时在线的 **MQTT 客户端**，方便测试 MQTT/TCP、MQTT/TLS、MQTT/WebSocket  的连接/发布/订阅功能及其他 **MQTT 协议** 特性。
+[MQTTX](https://mqttx.app/zh) 是由全球领先的 **开源物联网中间件** 提供商 [EMQ](https://www.emqx.com/zh) 开源的一款跨平台 [MQTT 5.0](https://www.emqx.com/zh/blog/introduction-to-mqtt-5) 桌面测试客户端，它支持 macOS，Linux，Windows。MQTTX 的用户界面借助聊天软件的形式简化了页面的操作逻辑，用户可以快速创建多个同时在线的 **[MQTT 客户端](https://www.emqx.com/zh/blog/mqtt-client-tools)**，方便测试 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt)/TCP、MQTT/TLS、MQTT/WebSocket  的连接/发布/订阅功能及其他 **MQTT 协议** 特性。
 
 MQTTX 网站：[https://mqttx.app/zh](https://mqttx.app/zh)
 
@@ -24,7 +24,7 @@ Linux 用户可在 Snapcraft 中进行下载：[https://snapcraft.io/mqttx](http
 
 ### 添加 EMQX Cloud 链接
 
-对于无法马上连接到本地或已部署好的 MQTT Broker 的做测试和调试的用户，提供了 EMQX Cloud 的链接，免费体验[云原生的全托管 MQTT 服务](https://www.emqx.com/zh/cloud)。
+对于无法马上连接到本地或已部署好的 [MQTT Broker](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison) 的做测试和调试的用户，提供了 EMQX Cloud 的链接，免费体验[云原生的全托管 MQTT 服务](https://www.emqx.com/zh/cloud)。
 
 ![mqttxcloud.png](https://assets.emqx.com/images/a2fab283b655c58a9600f82f4c6d03ba.png)
 

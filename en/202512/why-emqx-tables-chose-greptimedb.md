@@ -1,4 +1,4 @@
-EMQ recently launched [EMQX Tables](https://www.emqx.com/en/cloud/emqx-tables), a fully managed time-series database service built into EMQX Cloud. Among all the time-series databases available, EMQX Cloud chose GreptimeDB as the underlying engine.
+EMQ recently launched [EMQX Tables](https://www.emqx.com/en/cloud/emqx-tables), a fully managed time-series database service built into [EMQX Cloud](https://www.emqx.com/en/cloud). Among all the time-series databases available, EMQX Cloud chose GreptimeDB as the underlying engine.
 
 Behind this decision lies a fundamental question: **What kind of time-series database does IoT actually need?**
 
@@ -142,7 +142,7 @@ GreptimeDB also provides capabilities that make post-migration evolution easier:
 
 EMQX is a leading global [MQTT Broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison); GreptimeDB is a next-generation observability database. The combination logic is clear:
 
-- **EMQX solves connectivity**: Million-device MQTT access, message routing, and protocol conversion.
+- **EMQX solves connectivity**: Million-device [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) access, message routing, and protocol conversion.
 - **GreptimeDB solves storage**: Efficient storage of massive time-series data, real-time queries, long-term archival.
 - **EMQX Tables solves integration**: Native MQTT integration, automatic schema inference, unified management console.
 

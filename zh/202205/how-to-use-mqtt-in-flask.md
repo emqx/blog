@@ -2,9 +2,9 @@
 
 [MQTT](https://www.emqx.com/zh/mqtt-guide) 是一种基于发布/订阅模式的 轻量级物联网消息传输协议 ，可以用极少的代码和带宽为联网设备提供实时可靠的消息服务，它广泛应用于物联网、移动互联网、智能硬件、[车联网](https://www.emqx.com/zh/blog/category/internet-of-vehicles)、电力能源等行业。
 
-本文主要介绍如何在 Flask 项目中实现 [MQTT 客户端](https://www.emqx.com/zh/blog/introduction-to-the-commonly-used-mqtt-client-library)与 MQTT 服务器的连接、订阅、取消订阅、收发消息等功能。
+本文主要介绍如何在 Flask 项目中实现 [MQTT 客户端](https://www.emqx.com/zh/blog/introduction-to-the-commonly-used-mqtt-client-library)与 [MQTT 服务器](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison)的连接、订阅、取消订阅、收发消息等功能。
 
-我们将使用到 [Flask-MQTT](https://flask-mqtt.readthedocs.io/en/latest/index.html) 客户端库 ，它是一个 Flask 扩展，可以看作一个 [paho-mqtt](https://www.eclipse.org/paho/clients/python/) 的装饰器，用于简化 Flask 应用程序中的 MQTT 集成。
+我们将使用到 [Flask-MQTT](https://flask-mqtt.readthedocs.io/en/latest/index.html) 客户端库 ，它是一个 Flask 扩展，可以看作一个 [paho-mqtt](https://www.eclipse.org/paho/clients/python/) 的装饰器，用于简化 Flask 应用程序中的 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 集成。
 
 ## 项目初始化
 
@@ -105,7 +105,7 @@ if __name__ == '__main__':
    app.run(host='127.0.0.1', port=5000)
 ```
 
-当 Flask 应用启动后，MQTT 客户端将会连接到服务器，并且订阅主题 `/flask/mqtt`。
+当 Flask 应用启动后，[MQTT 客户端](https://www.emqx.com/zh/blog/mqtt-client-tools)将会连接到服务器，并且订阅主题 `/flask/mqtt`。
 
 ## 测试
 

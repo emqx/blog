@@ -1,4 +1,4 @@
-Serverless architecture in cloud computing allows developers to focus on code development and deployment without the hassle of infrastructure management. Serverless MQTT, in particular, provides an MQTT messaging service that scales automatically based on demand, reducing the need for manual intervention.
+Serverless architecture in cloud computing allows developers to focus on code development and deployment without the hassle of infrastructure management. Serverless [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt), in particular, provides an MQTT messaging service that scales automatically based on demand, reducing the need for manual intervention.
 
 To learn more about serverless MQTT, read our blog post [Next-Gen Cloud MQTT Service: Meet EMQX Cloud Serverless](https://www.emqx.com/en/blog/next-gen-cloud-mqtt-service-meet-emqx-cloud-serverless). In this blog series, we'll guide you through using various client libraries to set up MQTT connections, subscriptions, messaging, and more with a serverless MQTT broker for your specific project.
 
@@ -285,7 +285,7 @@ When you publish a message to the topic, the server will receive the message and
 
 ## Summary
 
-This blog provides a step-by-step guide on connecting to a serverless MQTT deployment using Paho Python. By following these instructions, you have successfully created a Python application capable of publishing and subscribing to Serverless MQTT. For further information on connecting to MQTT brokers in Python, please refer to the tutorial blog at [How to Use MQTT in Python with Paho Client](https://www.emqx.com/en/blog/how-to-use-mqtt-in-python).
+This blog provides a step-by-step guide on connecting to a serverless MQTT deployment using Paho Python. By following these instructions, you have successfully created a Python application capable of publishing and subscribing to Serverless MQTT. For further information on connecting to [MQTT brokers](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) in Python, please refer to the tutorial blog at [How to Use MQTT in Python with Paho Client](https://www.emqx.com/en/blog/how-to-use-mqtt-in-python).
 
 ## Join the EMQX Community
 

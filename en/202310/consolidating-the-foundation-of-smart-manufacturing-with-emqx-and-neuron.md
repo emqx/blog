@@ -62,7 +62,7 @@ But data collection is only the beginning. Data quality and integrity are critic
 
 ## Connectivity and Integration: The Backbone of Smart Manufacturing
 
-Connectivity and integration are the glue that holds the smart manufacturing ecosystem together. EMQX, an MQTT broker, and Neuron, a versatile industrial connectivity gateway, excel at facilitating seamless data exchange. They provide various industrial protocols and create connections between devices, sensors and systems across the manufacturing landscape, effectively breaking down data silos.
+Connectivity and integration are the glue that holds the smart manufacturing ecosystem together. EMQX, an [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) broker, and Neuron, a versatile industrial connectivity gateway, excel at facilitating seamless data exchange. They provide various industrial protocols and create connections between devices, sensors and systems across the manufacturing landscape, effectively breaking down data silos.
 
 These solutions are critical to realizing the full potential of the Internet of Things (IoT). With EMQX and Neuron, real-time data transfer and integration become a reality. Data from disparate devices is easily accessible and actionable, strengthening connectivity across the manufacturing ecosystem.
 
@@ -74,7 +74,7 @@ Moreover, EMQX and Neuron seamlessly integrate with advanced analytics and machi
 
 ## Cybersecurity Measures: Safeguarding Your Operations
 
-The importance of cybersecurity in smart manufacturing cannot be overstated. With increased connectivity and data exchange, manufacturing processes and data are prime targets for cyber threats. EMQX and Neuron take cybersecurity seriously. EMQX includes Access Control Lists (ACLs) to control access to topics, ensuring that data remains secure in transit. Neuron complements this by supporting secure protocols such as MQTT Sparkplug and OPC UA over MQTT, further enhancing data protection.
+The importance of cybersecurity in smart manufacturing cannot be overstated. With increased connectivity and data exchange, manufacturing processes and data are prime targets for cyber threats. EMQX and Neuron take cybersecurity seriously. EMQX includes Access Control Lists (ACLs) to control access to topics, ensuring that data remains secure in transit. Neuron complements this by supporting secure protocols such as MQTT Sparkplug and [OPC UA](https://www.emqx.com/en/blog/opc-ua-protocol) over MQTT, further enhancing data protection.
 
 Authentication and authorization are also top priorities. Both EMQX and Neuron support role-based access control, allowing organizations to restrict data access based on user roles and responsibilities. This robust authentication and authorization mechanism strengthens cybersecurity measures and provides peace of mind in an increasingly digital world.
 

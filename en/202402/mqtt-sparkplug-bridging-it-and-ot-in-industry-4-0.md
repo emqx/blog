@@ -97,7 +97,7 @@ By using a unified namespace, devices and systems can easily discover and commun
 
 ## MQTT Sparkplug vs. OPC UA
 
-MQTT Sparkplug and [OPC UA](https://www.emqx.com/en/blog/opc-ua-protocol) are both prominent communication protocols in the industrial IoT field.
+MQTT Sparkplug and [OPC UA](https://www.emqx.com/en/blog/opc-ua-protocol) are both prominent communication protocols in the [industrial IoT](https://www.emqx.com/en/blog/industrial-iot-systems) field.
 
 MQTT Sparkplug is based on the MQTT protocol, which is a lightweight publish/subscribe messaging protocol. In contrast, OPC UA is a more comprehensive and complex protocol that encompasses both communication and information modeling aspects. The scalable and efficient design of Sparkplug makes it suitable for resource-constrained devices and networks with limited bandwidth. OPC UA is more resource-intensive and is often utilized in systems where higher data throughput or complex interactions are required. 
 
@@ -139,7 +139,7 @@ MQTT Sparkplug defines a standardized data format, ensuring consistent and struc
 
 ### Real-time Communication
 
-EMQX enables real-time communication through its publish-subscribe model, allowing devices and applications to subscribe to relevant MQTT topics and receive updates as events occur. NeuronEX ensures that data from legacy devices is efficiently transformed and transmitted in real time.
+EMQX enables real-time communication through its publish-subscribe model, allowing devices and applications to subscribe to relevant [MQTT topics](https://www.emqx.com/en/blog/advanced-features-of-mqtt-topics) and receive updates as events occur. NeuronEX ensures that data from legacy devices is efficiently transformed and transmitted in real time.
 
 ### Scalability and Integration
 

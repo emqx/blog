@@ -1,4 +1,4 @@
-[MQTTX](https://mqttx.app/zh) 是由 [EMQ](https://www.emqx.com/zh) 开源的一款跨平台 [MQTT 5.0](https://www.emqx.com/zh/blog/introduction-to-mqtt-5) 桌面测试客户端，支持 macOS、Linux、Windows 系统。MQTTX 的用户界面借助聊天软件的形式简化了页面的操作逻辑，用户可以快速创建多个同时在线的[MQTT 客户端](https://www.emqx.com/zh/mqtt-client-sdk)，方便测试 MQTT/TCP、MQTT/TLS、MQTT/WebSocket 的连接/发布/订阅功能及其他 [MQTT 协议特性](https://www.emqx.com/zh/mqtt-guide)。
+[MQTTX](https://mqttx.app/zh) 是由 [EMQ](https://www.emqx.com/zh) 开源的一款跨平台 [MQTT 5.0](https://www.emqx.com/zh/blog/introduction-to-mqtt-5) 桌面测试客户端，支持 macOS、Linux、Windows 系统。MQTTX 的用户界面借助聊天软件的形式简化了页面的操作逻辑，用户可以快速创建多个同时在线的[MQTT 客户端](https://www.emqx.com/zh/mqtt-client-sdk)，方便测试 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt)/TCP、MQTT/TLS、MQTT/WebSocket 的连接/发布/订阅功能及其他 [MQTT 协议特性](https://www.emqx.com/zh/mqtt-guide)。
 
 近日，MQTTX v1.7.0 正式发布。从这一版本起，MQTTX 将进一步支持 MQTT 5.0 的诸多新特性，这也是全球目前为止对 MQTT 5.0 支持最为完整的桌面测试客户端工具。
 
@@ -18,7 +18,7 @@
 
 在 1.7.0 版本中，MQTTX 新增很多关于 MQTT 5.0 的属性配置功能支持，使其成为目前同类工具中支持 MQTT 5.0 最为完整的 MQTT 桌面客户端工具。
 
->要想对 MQTT 5.0 的特性进行使用和测试，需要 MQTTX v1.7.0 与支持 MQTT 5.0 的 MQTT Broker 配合使用。
+>要想对 MQTT 5.0 的特性进行使用和测试，需要 MQTTX v1.7.0 与支持 MQTT 5.0 的 [MQTT Broker](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison) 配合使用。
 >
 >[云原生分布式 MQTT 消息服务器 EMQX](https://www.emqx.com/zh/products/emqx) 从 3.0 版本开始支持 MQTT 5.0 协议，是开源社区中第一个支持该协议规范的消息服务器，并且完全兼容 MQTT 3.1 和 3.1.1 协议。使用 MQTTX 连接到 EMQX，就可以快速使用和测试 MQTT 5.0 的功能特性。
 

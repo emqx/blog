@@ -111,9 +111,9 @@ Neuron 提供多种安装方式，查阅[安装指南](https://docs.emqx.com/zh/
 
 在这篇博客中，我们介绍了 KNX 协议，并展示了使用 Neuron 将 KNX 数据桥接到 MQTT 的整体过程。
 
-KNX 为家庭和建筑自动化提供了一个强大而灵活的平台。Neuron 作为工业物联网的强大连接性设备，方便地从 KNX 设备收集数据，并将获取的数据无缝传输到云端，以便在需要时进行便捷的远程控制和监控。
+KNX 为家庭和建筑自动化提供了一个强大而灵活的平台。Neuron 作为[工业物联网](https://www.emqx.com/zh/blog/iiot-explained-examples-technologies-benefits-and-challenges)的强大连接性设备，方便地从 KNX 设备收集数据，并将获取的数据无缝传输到云端，以便在需要时进行便捷的远程控制和监控。
 
-同时 Neuron 还支持 Modbus, OPC UA, SIEMENS 等多种工业协议，相关桥接教程请参考：
+同时 Neuron 还支持 Modbus, [OPC UA](https://www.emqx.com/zh/blog/opc-ua-protocol), SIEMENS 等多种工业协议，相关桥接教程请参考：
 
 - [工业物联网数据桥接教程：Modbus 桥接到 MQTT](https://www.emqx.com/zh/blog/bridging-modbus-data-to-mqtt-for-iiot)
 - [工业物联网数据桥接教程：OPC UA 桥接到 MQTT](https://www.emqx.com/zh/blog/bridging-opc-ua-data-to-mqtt-for-iiot)

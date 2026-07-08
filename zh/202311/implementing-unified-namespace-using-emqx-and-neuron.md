@@ -1,4 +1,4 @@
-在之前的文章中，我们已经介绍了 [ISA95](https://www.emqx.com/zh/blog/exploring-isa95-standards-in-manufacturing) 和[统一命名空间](https://www.emqx.com/zh/blog/the-power-of-unified-namespace-in-modern-manufacturing)的基本概念。本文将深入探讨如何利用 EMQX 和 Neuron 这两个强大的平台来实现统一命名空间，并重点强调它们之间的协同作用，以及它们为工业环境带来的众多好处。不论是数据集成和转换，还是多点数据复制，我们将从多个角度展示这一综合解决方案如何有效地应对数据组织、可扩展性和协作方面的挑战。通过将 EMQX 的 MQTT 功能与 Neuron 的数据转换功能相结合，企业可以迈入一个新时代，实现统一的数据访问，简化工作流程，并实现数据驱动的决策。
+在之前的文章中，我们已经介绍了 [ISA95](https://www.emqx.com/zh/blog/exploring-isa95-standards-in-manufacturing) 和[统一命名空间](https://www.emqx.com/zh/blog/the-power-of-unified-namespace-in-modern-manufacturing)的基本概念。本文将深入探讨如何利用 EMQX 和 Neuron 这两个强大的平台来实现统一命名空间，并重点强调它们之间的协同作用，以及它们为工业环境带来的众多好处。不论是数据集成和转换，还是多点数据复制，我们将从多个角度展示这一综合解决方案如何有效地应对数据组织、可扩展性和协作方面的挑战。通过将 EMQX 的 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 功能与 Neuron 的数据转换功能相结合，企业可以迈入一个新时代，实现统一的数据访问，简化工作流程，并实现数据驱动的决策。
 
 ## 基于 EMQX 和 Neuron 的统一命名空间解决方案
 

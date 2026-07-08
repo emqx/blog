@@ -1,4 +1,4 @@
-In September, we released [Neuron](https://github.com/emqx/neuron) 2.2. A series of new drivers and features have been added for this version: Beckhoff ADS, OPC DA, and NONA11 drivers have been added to unify the ports exposed by HTTP services. In addition, we focused on data statistics and the establishment of event alert system in the month. We plan to make the key data and events in the system visualized through Prometheus in Neuron 2.3, so as to improve the monitoring and management of Neuron and its connected devices during its use.
+In September, we released [Neuron](https://github.com/emqx/neuron) 2.2. A series of new drivers and features have been added for this version: Beckhoff ADS, [OPC DA](https://www.emqx.com/en/blog/opc-ua-vs-opc-da), and NONA11 drivers have been added to unify the ports exposed by HTTP services. In addition, we focused on data statistics and the establishment of event alert system in the month. We plan to make the key data and events in the system visualized through Prometheus in Neuron 2.3, so as to improve the monitoring and management of Neuron and its connected devices during its use.
 
 ## Data upgrade
 
@@ -8,7 +8,7 @@ After the introduction of SQLite to store the Neuron configuration information i
 
 ## Key data statistics and event notification
 
-Neuron will provide HTTP and MQTT based data statistics plug-ins in v2.3 to present some key data and events of Neuron.
+Neuron will provide HTTP and [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) based data statistics plug-ins in v2.3 to present some key data and events of Neuron.
 
 The statistics mainly include the north-south node data statistics, including the number of nodes, the number of nodes in operation, the number of nodes disconnected from the device, the number of points configured in the southbound node, the number of bytes and instructions sent and received by the node, and more detailed status information of the node, such as the delay between the node and the device.
 

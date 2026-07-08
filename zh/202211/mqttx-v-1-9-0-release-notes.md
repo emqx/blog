@@ -1,4 +1,4 @@
-近日，MQTT 5.0 客户端工具 MQTTX 1.9.0 正式发布。
+近日，[MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 5.0 客户端工具 MQTTX 1.9.0 正式发布。
 
 新版本针对桌面客户端优化了一些细节上的 UI 样式与交互方式，新增了一个可以帮助用户更加快速和系统学习 MQTT 协议相关知识的页面，同时也修复了一些已知问题；针对命令行客户端新增了 `bench` 命令，帮助用户创建、订阅和发布自定义数量的连接、主题与消息，轻松完成 MQTT 服务的性能测试。
 
@@ -13,7 +13,7 @@
 
 在 1.9.0 版本中，MQTTX CLI 提供了一个**内置、开箱即用**的性能测试命令工具 -- `mqttx bench`，可以帮助用户快速进行简单的性能和压力测试。用户只需简单安装或更新 MQTTX CLI 后，即可快速使用该命令，无需额外操作，方便易用。
 
-用户使用 `bench` 命令可以使用规定速率，创建自定义数量的连接，订阅自定义数量的 [MQTT 主题](https://www.emqx.com/zh/blog/advanced-features-of-mqtt-topics)，向单个或多个主题中发送自定义数量的消息，通过一行命令即可简单地测试单个或集群下的 MQTT 服务器的连接性能、消息吞吐量等。例如：
+用户使用 `bench` 命令可以使用规定速率，创建自定义数量的连接，订阅自定义数量的 [MQTT 主题](https://www.emqx.com/zh/blog/advanced-features-of-mqtt-topics)，向单个或多个主题中发送自定义数量的消息，通过一行命令即可简单地测试单个或集群下的 [MQTT 服务器](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison)的连接性能、消息吞吐量等。例如：
 
 1. 以每 10 毫秒创建一个连接的速率，创建 10000 个连接，客户端 ID 为 `mqttx-bench-%i`，`%i` 为索引占位符，即第 N 个客户端连接的客户端 ID 就 `mqttx-bench-n`：
 

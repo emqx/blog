@@ -2,7 +2,7 @@ We are excited to announce the release of **EMQX Edge 1.3.0**. This version intr
 
 ## MQTT over QUIC Bridge
 
-The standout feature of EMQX Edge 1.3.0 is the support for **MQTT over QUIC bridge.** This allows EMQX Edge to establish an MQTT channel with an upstream EMQX node using QUIC as the transport layer.
+The standout feature of EMQX Edge 1.3.0 is the support for **[MQTT over QUIC](https://www.emqx.com/en/blog/mqtt-over-quic) bridge.** This allows EMQX Edge to establish an [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) channel with an upstream EMQX node using [QUIC](https://www.emqx.com/en/blog/quic-protocol-the-features-use-cases-and-impact-for-iot-iov) as the transport layer.
 
 Compared to traditional TLS/TCP-based bridging, MQTT over QUIC offers:
 
@@ -54,7 +54,7 @@ bridges.mqtt.emqx_quic {
 - **Server Address:** Uses the `mqtt-quic://` protocol.
 - **Security:** Configure encryption certificates via `keyfile`, `certfile`, and `cacertfile`.
 - **Heartbeat Mechanism:** `quic_keepalive` defines the interval for transport-layer heartbeats, while `quic_idle_timeout` determines when the connection is disconnected.
-- **Performance Toggles:** * `quic_qos_priority`: When enabled, MQTT QoS 1 and QoS 2 messages are prioritized.
+- **Performance Toggles:** * `quic_qos_priority`: When enabled, [MQTT QoS](https://www.emqx.com/en/blog/introduction-to-mqtt-qos) 1 and QoS 2 messages are prioritized.
   - `quic_0rtt`: Enables 0-RTT for faster reconnection.
   - `quic_multi_stream`: Toggle for multi-stream support.
 
@@ -111,7 +111,7 @@ docker run -d -it --name emqx-edge \
 5. Fixed configuration errors related to SNI and SQLite.
 6. Fixed memory address security issues in the WebSocket layer and Rule Engine.
 7. Fixed an issue where QUIC bridge metrics did not work correctly.
-8. Fixed an issue where the built-in MQTT client hook trigger kept reconnecting when ACL was enabled.
+8. Fixed an issue where the built-in [MQTT client](https://www.emqx.com/en/blog/mqtt-client-tools) hook trigger kept reconnecting when ACL was enabled.
 9. Fixed an error where Dashboard could not retrieve the QUIC bridge status after reloading.
 10. Fixed an error when reading configuration items with millisecond (`ms`) units.
 11. Fixed an issue where a null QUIC connection was closed during QUIC bridge reload.

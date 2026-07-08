@@ -4,7 +4,7 @@ After its successful launch on AWS Marketplace and Google Marketplace, we are ex
 
 ## Benefits of Subscribing From Azure Marketplace
 
-As a fully managed MQTT cloud service covering various regions on mainstream cloud platforms, [EMQX Platform Dedicated](https://www.emqx.com/en/cloud/dedicated) offers the flexibility to be deployed across multiple regions within Microsoft Azure. Establishing peering between EMQX Platform and other Azure resources is a straightforward process, making it exceptionally convenient for users who have already deployed their infrastructure resources on Azure to manage all billing seamlessly under their Microsoft Azure account.
+As a fully managed [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) cloud service covering various regions on mainstream cloud platforms, [EMQX Platform Dedicated](https://www.emqx.com/en/cloud/dedicated) offers the flexibility to be deployed across multiple regions within Microsoft Azure. Establishing peering between EMQX Platform and other Azure resources is a straightforward process, making it exceptionally convenient for users who have already deployed their infrastructure resources on Azure to manage all billing seamlessly under their Microsoft Azure account.
 
 Subscribing to EMQX Platform from Azure Marketplace enables users to effortlessly manage charges and bills within the Azure environment. The subscription can be easily modified or canceled at any time, providing the freedom to adapt as needed. With the pay-as-you-go mode, users can access the majority of EMQX Platform's features without a credit card required, simplifying the process of acquiring a fully managed MQTT service with just a few clicks. 
 

@@ -32,7 +32,7 @@ mqttx simulate -sc tesla -c 10 -h broker.emqx.io -t 'testtopic/simulate' -u 'adm
 
 ## Diagnostic Insights for Connection & Subscription
 
-MQTTX 1.9.10 enriches feedback mechanisms with MQTT 5.0's reason codes, detailing why connections are terminated or subscriptions fail. This feature aids in pinpointing issues, specifically highlighting scenarios like ACL rejections for subscriptions and server-initiated disconnections.
+MQTTX 1.9.10 enriches feedback mechanisms with [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) 5.0's reason codes, detailing why connections are terminated or subscriptions fail. This feature aids in pinpointing issues, specifically highlighting scenarios like ACL rejections for subscriptions and server-initiated disconnections.
 
 - **Subscription Failures**: Displays a "Not authorized" reason, clarifying access control restrictions.
 
@@ -76,7 +76,7 @@ In the next development phase following MQTTX 1.9.10, we will focus on boosting 
   - **System Topic View**: Specialized view for system-related [MQTT topics](https://www.emqx.com/en/blog/advanced-features-of-mqtt-topics).
 - **Support for Configurable Disconnect Properties (MQTT 5.0)**: Enhance connection management with customizable disconnection settings.
 - **IoT Scenario Data Simulation**: Bring this feature to the desktop client to ease IoT scenario testing.
-- **Sparkplug B Support**: Extend MQTTX functionalities to include support for Sparkplug B.
+- **[Sparkplug B](https://www.emqx.com/en/solutions/mqtt-sparkplug) Support**: Extend MQTTX functionalities to include support for Sparkplug B.
 - **QoS 0 Message Storage Optimization**: Configurable options to reduce storage space usage.
 - **MQTT GUI Debug Functionality**: New features to aid in debugging MQTT communications.
 - **Plugin Functionality**: Introduction of a plugin system supporting protocol extensions like [CoAP](https://www.emqx.com/en/blog/coap-protocol) and [MQTT-SN](https://www.emqx.com/en/blog/connecting-mqtt-sn-devices-using-emqx).

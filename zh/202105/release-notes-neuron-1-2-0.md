@@ -27,7 +27,7 @@ Neuron 工业网关南向支持接入主流的[工业物联网](https://www.emqx
 
 ## 问题修复
 
-- 修复 MQTT 获取趋势数据和获取日志问题；
+- 修复 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 获取趋势数据和获取日志问题；
 - 修复 MQTT 发送信息失败而导致重连失败问题；
 - 修复打开过多文件导致强制退出主进程问题；
 - 修复在 32 位系统中，超出 2038 年时间戳数据溢出问题；

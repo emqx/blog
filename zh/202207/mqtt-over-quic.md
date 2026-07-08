@@ -1,4 +1,4 @@
->**引言：首个将 QUIC 引入 MQTT 的开创性产品**
+>**引言：首个将 QUIC 引入 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 的开创性产品**
 >
 >在最新发布的 [5.0 版本](https://www.emqx.com/zh/blog/emqx-v-5-0-released)中，EMQX 开创性地引入了 QUIC 支持。
 >
@@ -28,7 +28,7 @@
 >
 > 2018 年 10 月，IETF 的 HTTP 和 QUIC 工作组联合决定将 QUIC 上的 HTTP 映射称为 [HTTP/3](https://en.wikipedia.org/wiki/HTTP/3)，以提前使其成为全球标准。2022 年 6 月 6 日，IETF 将 HTTP/3 标准化为 [RFC](https://en.wikipedia.org/wiki/Request_for_Comments) <sup>[9114](https://datatracker.ietf.org/doc/html/rfc9114)</sup>。
 >
-> HTTP/3 的目标是通过解决 HTTP/2 的传输相关问题，在所有形式的设备上提供快速、可靠和安全的 Web 连接。HTTP/3 使用与 HTTP/2 版本类似的语义，包括相同的请求方法、状态代码和消息字段，两者根本区别在于，HTTP/2 底层使用的是 TCP/TLS 协议，而 HTTP/3 使用的是 QUIC 协议。
+> HTTP/3 的目标是通过解决 HTTP/2 的传输相关问题，在所有形式的设备上提供快速、可靠和安全的 Web 连接。HTTP/3 使用与 HTTP/2 版本类似的语义，包括相同的请求方法、状态代码和消息字段，两者根本区别在于，HTTP/2 底层使用的是 TCP/TLS 协议，而 HTTP/3 使用的是 [QUIC 协议](https://www.emqx.com/zh/blog/quic-protocol-the-features-use-cases-and-impact-for-iot-iov)。
 >
 > 根据 [W3Techs 统计](https://w3techs.com/technologies/details/ce-http3)，互联网至少 40% 的流量是基于 QUIC 的，前 1000 万个网站中的 25% 已经支持 HTTP/3 协议，包括 Google，Youtube，Facebook 等顶流站点。
 

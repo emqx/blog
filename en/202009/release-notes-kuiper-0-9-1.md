@@ -34,7 +34,7 @@ Kuiper 0.9.1 provides a management console, which can be used for Kuiper node ma
 
   ![mqtt_sink.png](https://assets.emqx.com/images/cf94a8a9f76b8d5fb1f070ed91455355.png)
 
-  MQTT sink configurations setting, user can input or select related properties in the UI.
+  [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) sink configurations setting, user can input or select related properties in the UI.
 
 - Binary plugins: From this version, all of the plugins that submit to Github main repository will be compiled and published automatically when a new version is released. User can install & use the plugins through management console. When developer create PR for plugin code, the [plugin metadata information](https://github.com/lf-edge/ekuiper/blob/master/docs/zh_CN/plugins/overview.md) can be provided, and then the related information will be displayed in the management console. It can greatly reduce the effort for using the plugins.
 

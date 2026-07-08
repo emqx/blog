@@ -18,7 +18,7 @@ MongoDB 具有一些独特的优势：
 
 1. **无模式的文档存储**：MongoDB 以文档格式存储数据，这意味着用户可以将不同结构的数据存储在同一个数据库中，而不需要事先定义表结构。此外，对数组和嵌套文档的支持使得用户可以更灵活地表示复杂的物联网数据结构。
 2. **强大的查询语言**：MongoDB 提供强大的查询语言，支持丰富的查询操作，包括筛选、排序、投影、聚合等功能。
-3. **分布式数据库**：MongoDB 可以轻松地横向扩展，支持分布式数据库部署与自动数据分片，以处理大规模物联网数据，能够跟随 MQTT Broker 集群规模一起扩展。
+3. **分布式数据库**：MongoDB 可以轻松地横向扩展，支持分布式数据库部署与自动数据分片，以处理大规模物联网数据，能够跟随 [MQTT Broker](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison) 集群规模一起扩展。
 4. **复制和容错性**：MongoDB 支持数据复制，可以创建多个数据副本以提高可用性和容错性。如果主节点发生故障，系统可以自动切换到备份节点。
 5. **时序数据处理**：MongoDB 5.0 开始提供了时序数据集合支持，能够高效存储时序数据，降低磁盘占用以及处理的复杂性。
 
@@ -42,7 +42,7 @@ MongoDB 具有一些独特的优势：
 
 EMQX Data Integration 组件在与 MongoDB 集成中提供了以下特性：
 
-- **完全支持 MQTT 5.0：**EMQX 允许设备通过 [MQTT 5.0](https://www.emqx.com/zh/blog/introduction-to-mqtt-5) 或 3.1.1 版本协议连接到 MongoDB。
+- **完全支持 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 5.0：**EMQX 允许设备通过 [MQTT 5.0](https://www.emqx.com/zh/blog/introduction-to-mqtt-5) 或 3.1.1 版本协议连接到 MongoDB。
 - **丰富的设备事件集成：**EMQX 允许将设备的上下线、发布订阅、消息发布与派发等完整生命周期事件数据记录到 MongoDB 中，实现连续的记录与丰富的监控。
 - **可靠的数据摄取：**EMQX 提供了消息缓冲区，以防止在 MongoDB 不可用时数据丢失。
 - **实时数据转换：**使用基于 SQL 的规则引擎提取、过滤、丰富和转换在途数据。

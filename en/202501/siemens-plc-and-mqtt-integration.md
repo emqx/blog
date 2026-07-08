@@ -1,6 +1,6 @@
 ## **Introduction**
 
-Siemens PLC, as a key device in industrial automation, plays a vital role in modern manufacturing and production environments. It is not only a core component of industrial automation systems, but also the basis for realizing smart manufacturing, the Internet of Things(IoT) and Industry 4.0.
+Siemens PLC, as a key device in industrial automation, plays a vital role in modern manufacturing and production environments. It is not only a core component of industrial automation systems, but also the basis for realizing [smart manufacturing](https://www.emqx.com/en/blog/the-smart-manufacturing-revolution), the Internet of Things(IoT) and Industry 4.0.
 
 [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) is a lightweight messaging protocol designed for unstable or low-bandwidth network environments and has been widely used in IoT communication in modern industrial systems. As an important protocol for IoT communication in modern industrial systems, MQTT provides a flexible, reliable and efficient data transmission solution to help enterprises realize digital transformation and drive the process of smart manufacturing. 
 
@@ -20,11 +20,11 @@ Siemens PLCs connect to industrial networks to gather real-time data from field 
 
 - **Real-Time Monitoring and Control**: Siemens PLCs can use MQTT to send data regarding machine status, sensor readings, and production metrics to a central cloud platform. This allows operators to monitor the status of machinery from anywhere, perform remote diagnostics, and adjust parameters in real-time, improving production efficiency and reducing downtime.
 - **Data Analytics and Predictive Maintenance**: By integrating PLCs with MQTT, historical and real-time operational data can be analyzed in cloud-based platforms. This facilitates the implementation of predictive maintenance algorithms that assess the health of machinery and predict failures before they occur, thereby minimizing unplanned downtime and maintenance costs.
-- **Interoperability Between Systems**: MQTT enables Siemens PLCs to communicate with other IoT devices, machines, and enterprise systems, regardless of their manufacturer. This interoperability fosters a more cohesive smart factory ecosystem, where various components work together seamlessly, sharing data and insights without compatibility issues.
+- **Interoperability Between Systems**: MQTT enables Siemens PLCs to communicate with other IoT devices, machines, and enterprise systems, regardless of their manufacturer. This interoperability fosters a more cohesive [smart factory](https://www.emqx.com/en/blog/what-is-a-smart-factory-key-components-4-levels-of-evolution) ecosystem, where various components work together seamlessly, sharing data and insights without compatibility issues.
 
 ## **NeuronEX: A Powerful Data Hub for Siemens PLC Connection**
 
-[NeuronEX](https://www.emqx.com/en/products/emqx-neuron) is industrial software designed for device data collection, edge analysis, and IIoT platform integration. It supports industrial protocol data collection, system integration, edge data filtering, AI algorithm deployment, and low-latency data management. NeuronEX helps users gain insights, improve efficiency, and drive sustainability in industrial operations.
+[NeuronEX](https://www.emqx.com/en/products/emqx-neuron) is industrial software designed for device data collection, edge analysis, and [IIoT platform](https://www.emqx.com/en/blog/iiot-platform-key-components-and-5-notable-solutions) integration. It supports industrial protocol data collection, system integration, edge data filtering, AI algorithm deployment, and low-latency data management. NeuronEX helps users gain insights, improve efficiency, and drive sustainability in industrial operations.
 
 With built-in modules for protocols like Siemens, [Modbus](https://www.emqx.com/en/blog/modbus-protocol-the-grandfather-of-iot-communication), [OPC UA](https://www.emqx.com/en/blog/opc-ua-protocol), Ethernet/IP, and [BACnet](https://www.emqx.com/en/blog/bacnet-protocol-basic-concepts-structure-obejct-model-explained), NeuronEX enables real-time data access from PLCs, CNCs, robots, SCADA systems, and smart meters. It offers robust support for Siemens PLCs through a variety of dedicated plug-ins:
 
@@ -38,7 +38,7 @@ With built-in modules for protocols like Siemens, [Modbus](https://www.emqx.com/
 
 ## **Step-by-Step Tutorial: Siemens PLCs to MQTT with NeuronEX**
 
-We will demonstrate how to collect data from a Simens S7-1200 PLC using NeuronEX's Siemens S7 ISOTCP plugin, upload the collected data to a locally-built EMQX MQTT agent (`mqtt://192.168.10.174:1883`), and finally use the MQTT client tool, MQTTX's Subscribe to Topics feature to see how the data has changed.
+We will demonstrate how to collect data from a Simens S7-1200 PLC using NeuronEX's Siemens S7 ISOTCP plugin, upload the collected data to a locally-built EMQX MQTT agent (`mqtt://192.168.10.174:1883`), and finally use the [MQTT client](https://www.emqx.com/en/blog/mqtt-client-tools) tool, MQTTX's Subscribe to Topics feature to see how the data has changed.
 
 | **Application** | **IP address** | **Port** |
 | :-------------- | :------------- | :------- |
@@ -124,7 +124,7 @@ You can go to the [MQTTX official website](https://mqttx.app/) to download and i
 
 ## **Conclusion**
 
-In conclusion, NeuronEX provides a powerful and efficient solution for Siemens PLC to MQTT integration, offering simplified connectivity, real-time data transfer, and flexibility in device and protocol support. Its scalability ensures that as your Industrial IoT initiatives grow, NeuronEX can seamlessly expand to meet increasing demands. By streamlining MQTT integration, NeuronEX accelerates your IoT efforts, enabling faster and more reliable data exchange. We encourage you to try NeuronEX with your Siemens devices to experience the ease and efficiency of seamless MQTT integration, and take your industrial IoT projects to the next level.
+In conclusion, NeuronEX provides a powerful and efficient solution for Siemens PLC to MQTT integration, offering simplified connectivity, real-time data transfer, and flexibility in device and protocol support. Its scalability ensures that as your [Industrial IoT](https://www.emqx.com/en/blog/industrial-iot-systems) initiatives grow, NeuronEX can seamlessly expand to meet increasing demands. By streamlining MQTT integration, NeuronEX accelerates your IoT efforts, enabling faster and more reliable data exchange. We encourage you to try NeuronEX with your Siemens devices to experience the ease and efficiency of seamless MQTT integration, and take your [industrial IoT projects](https://www.emqx.com/en/blog/industrial-iot-applications) to the next level.
 
 
 

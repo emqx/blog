@@ -4,7 +4,7 @@
 
 增强认证是 MQTT 5.0 新引入的认证机制。事实上，我们用认证框架来形容它更为适合，因为它允许我们套用各种比密码认证更加安全的身份验证方法。
 
-不过更安全，另一方面则意味着更复杂，这类身份验证方法例如 SCRAM 通常都要求一次以上的认证数据往返。这导致由 CONNECT 与 CONNACK 报文提供的一次往返的认证框架变得不再适用，所以 MQTT 5.0 专门为此新增了 AUTH 报文，它能够支持任意次数的认证数据的往返。这使得我们可以将质询-响应风格的 SASL 机制引入到 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 中。
+不过更安全，另一方面则意味着更复杂，这类身份验证方法例如 SCRAM 通常都要求一次以上的认证数据往返。这导致由 CONNECT 与 [CONNACK](https://www.emqx.com/zh/blog/mqtt5-new-features-reason-code-and-ack) 报文提供的一次往返的认证框架变得不再适用，所以 MQTT 5.0 专门为此新增了 AUTH 报文，它能够支持任意次数的认证数据的往返。这使得我们可以将质询-响应风格的 SASL 机制引入到 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 中。
 
 ## 增强认证解决了什么问题？
 

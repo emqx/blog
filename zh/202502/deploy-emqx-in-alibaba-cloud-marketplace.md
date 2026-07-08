@@ -1,4 +1,4 @@
-作为全球领先的 MQTT 消息接入平台，EMQX Platform 已正式入驻阿里云 Marketplace，支持以按量计费模式使用服务，助力企业快速构建高并发、低时延的物联网应用。
+作为全球领先的 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 消息接入平台，EMQX Platform 已正式入驻阿里云 Marketplace，支持以按量计费模式使用服务，助力企业快速构建高并发、低时延的物联网应用。
 
 本文将为您介绍如何将 EMQX 账户与阿里云计费账户关联，以及如何取消对已有服务的订阅。
 

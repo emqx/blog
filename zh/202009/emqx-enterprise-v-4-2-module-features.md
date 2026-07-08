@@ -32,7 +32,7 @@ EMQX 模块按照功能组织，分为以下几类：
 
 ### 协议接入
 
-除了标准 MQTT 协议（完整 QoS 与 MQTT 5.0 支持），EMQX 还扩展了一系列的物联网协议，支持的协议包括MQTT-SN、CoAP/LwM2M、HTTP、WebSocket、STOMP、私有 TCP、JT/T808 行业协议等。
+除了标准 MQTT 协议（完整 QoS 与 MQTT 5.0 支持），EMQX 还扩展了一系列的物联网协议，支持的协议包括MQTT-SN、[CoAP](https://www.emqx.com/zh/blog/coap-protocol)/[LwM2M](https://www.emqx.com/zh/blog/iot-protocols-mqtt-coap-lwm2m)、HTTP、WebSocket、STOMP、私有 TCP、JT/T808 行业协议等。
 
 在协议接入相关模块中，用户能够快速启用需要的扩展协议，动态增改协议的监听端口，以及协议与 [MQTT 主题](https://www.emqx.com/zh/blog/advanced-features-of-mqtt-topics)的挂载关系。
 

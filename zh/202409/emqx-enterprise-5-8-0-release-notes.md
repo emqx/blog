@@ -1,4 +1,4 @@
-EMQX Enterprise 5.8.0 版本现已正式发布！
+[EMQX Enterprise](https://www.emqx.com/zh/products/emqx) 5.8.0 版本现已正式发布！
 
 这一版本推出了集群连接功能，提供了更强的集群容灾能力，为企业全球业务的正常运转提供保障。此外，该版本还新增了消息转换功能和多项数据集成支持，为用户使用 EMQX Enterprise 构建物联网应用提供了更多灵活性与可能性。同时，本次更新也在安全性方面进行了多项增强。
 
@@ -41,9 +41,9 @@ EMQX Enterprise 5.8.0 也新增了多项安全方面的功能：
 
 - **Azure Blob Storage**：Azure Blob Storage 是一项微软 Azure 云提供的数据存储服务，类似于 AWS S3, 可用于存储任何类型的大规模数据，包括各种结构化和非结构化的数据。
 - **Couchbase**：Couchbase 是一款分布式文档数据库，拥有强大的搜索引擎以及内置的运营和分析功能。同时它还支持在边缘和云之间快速、高效的双向数据同步。
-- **Datalayers**：Datalayers 是一款专为工业物联网、车联网和能源等行业优化设计的边云协同多模态分布式数据库，支持时序存储、key-value存储等，能够为客户提供稳定高效的数据存储、计算和分析的一体化解决方案。
+- **Datalayers**：Datalayers 是一款专为[工业物联网](https://www.emqx.com/zh/blog/iiot-explained-examples-technologies-benefits-and-challenges)、车联网和能源等行业优化设计的边云协同多模态分布式数据库，支持时序存储、key-value存储等，能够为客户提供稳定高效的数据存储、计算和分析的一体化解决方案。
 
-此外，5.8.0 还新增了对在规则引擎中使用 `client_attrs` （客户端属性）字段的支持。客户端属性是 EMQX Enterprise 提供的一种机制，允许开发人员根据不同的应用场景需求，为 MQTT 客户端设置额外的属性。这些属性可以用于 EMQX Enterprise 的认证授权、 MQTT 扩展功能等功能中，现在也可以在规则引擎中使用。
+此外，5.8.0 还新增了对在规则引擎中使用 `client_attrs` （客户端属性）字段的支持。客户端属性是 EMQX Enterprise 提供的一种机制，允许开发人员根据不同的应用场景需求，为 [MQTT 客户端](https://www.emqx.com/zh/blog/mqtt-client-tools)设置额外的属性。这些属性可以用于 EMQX Enterprise 的认证授权、 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 扩展功能等功能中，现在也可以在规则引擎中使用。
 
 ## 热升级
 

@@ -160,7 +160,7 @@ Then, execute
 $ dart run bin/mqtt_demo.dart
 ```
 
-We will see that the client has successfully connected to the MQTT broker.
+We will see that the client has successfully connected to the [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison).
 
 ![Connect to MQTT Broker](https://assets.emqx.com/images/823456b44224b32df25eb2cc77d30cc3.png)
 
@@ -354,7 +354,7 @@ Console output.
 
 At this point, we have finished connecting to the [public MQTT server](https://www.emqx.com/en/mqtt/public-mqtt5-broker) using the [mqtt_client](https://pub.dev/packages/mqtt_client) library in Dart, and implemented the connection, message publishing, subscription, and test between client and MQTT server.
 
-Next, readers can check out [The Easy-to-understand Guide to MQTT Protocol](https://www.emqx.com/en/mqtt-guide) series of articles provided by EMQ to learn about MQTT protocol features, explore more advanced applications of MQTT, and get started with MQTT application and service development.
+Next, readers can check out [The Easy-to-understand Guide to MQTT Protocol](https://www.emqx.com/en/mqtt-guide) series of articles provided by EMQ to learn about [MQTT protocol](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) features, explore more advanced applications of MQTT, and get started with MQTT application and service development.
 
 
 <section class="promotion">

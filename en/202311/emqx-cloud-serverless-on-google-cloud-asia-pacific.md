@@ -1,4 +1,4 @@
-We are thrilled to announce that **EMQX Cloud Serverless** is now available on Google Cloud in the Asia-Pacific region! Users within this region can now create a deployment in seconds and receive a fully managed MQTT service with low latency, thus elevating their IoT businesses.
+We are thrilled to announce that **[EMQX Cloud](https://www.emqx.com/en/cloud) Serverless** is now available on Google Cloud in the Asia-Pacific region! Users within this region can now create a deployment in seconds and receive a fully managed [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) service with low latency, thus elevating their IoT businesses.
 
 ## Expanding Our Coverage Benefits Users Worldwide
 
@@ -12,7 +12,7 @@ Simply [sign up for EMQX Cloud](https://accounts.emqx.com/signup?continue=https:
 
 ## EMQX Cloud Serverless: The Perfect Solution for Startups and Individual Developers
 
-Adopting the cutting-edge Serverless MQTT technology, EMQX Cloud Serverless offers efficiency, scalability, and cost-effectiveness. The following key advantages make it the perfect solution for small businesses, startups, and individual developers: 
+Adopting the cutting-edge [Serverless MQTT](https://www.emqx.com/en/cloud/serverless-mqtt) technology, EMQX Cloud Serverless offers efficiency, scalability, and cost-effectiveness. The following key advantages make it the perfect solution for small businesses, startups, and individual developers: 
 
 - **Accelerate your business without the hassle:** With just a few clicks, the fully managed MQTT service can be deployed in as little as five seconds, allowing users to focus on development instead of infrastructure maintenance. Furthermore, the auto-scaling architecture ensures a seamless response to fluctuating business demands without manual intervention.
 - **Achieve your goals at a minimal cost:** The pay-as-you-go pricing model ensures that you only pay for the amount of resources consumed. This is especially suitable for testing scenarios with few connections or applications with unpredictable traffic patterns. 

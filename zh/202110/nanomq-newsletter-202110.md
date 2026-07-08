@@ -30,7 +30,7 @@ msq_len=64
 qos_duration=60
 ```
 
-为 NanoMQ 服务内置全局定时器的颗粒度，这一选项影响对于连接健康度检测的最小时间差。如果有大量客户端并发的情况，会些许消耗 CPU，建议设置为 MQTT 连接的 keepalive 时间一致。
+为 NanoMQ 服务内置全局定时器的颗粒度，这一选项影响对于连接健康度检测的最小时间差。如果有大量客户端并发的情况，会些许消耗 CPU，建议设置为 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 连接的 keepalive 时间一致。
 
 ```
 allow_anonymous=yes    是否允许匿名登录

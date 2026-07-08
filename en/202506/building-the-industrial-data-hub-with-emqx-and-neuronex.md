@@ -1,6 +1,6 @@
 ## **Introduction**
 
-In the era of Industry 4.0, data is the driving force behind smart manufacturing. AI—especially large language models (LLMs)—brings powerful capabilities in language understanding, pattern recognition, and decision-making, unlocking new possibilities from predictive maintenance and intelligent scheduling to quality traceability and natural human-machine interaction. However, these applications rely heavily on real-time data that is high-quality, accessible, and rich in context.
+In the era of Industry 4.0, data is the driving force behind [smart manufacturing](https://www.emqx.com/en/blog/the-smart-manufacturing-revolution). AI—especially large language models (LLMs)—brings powerful capabilities in language understanding, pattern recognition, and decision-making, unlocking new possibilities from predictive maintenance and intelligent scheduling to quality traceability and natural human-machine interaction. However, these applications rely heavily on real-time data that is high-quality, accessible, and rich in context.
 
 In practice, industrial data is often siloed across diverse devices, control systems, and IT platforms, following different protocols. Without effective integration, this fragmented data becomes meaningless to AI—like unreadable code. This article explores how EMQ addresses these challenges by leveraging the UNS-based architecture, the [EMQX Platform](https://www.emqx.com/en/platform), and the lightweight industrial connectivity gateway NeuronEX to create a closed-loop system—from data acquisition and processing to intelligent decision-making.
 
@@ -47,7 +47,7 @@ EMQ offers an integrated cloud-edge solution ideal for building a scalable, AI-r
 
 ## **UNS + LLM Use Cases: Ushering in a New Paradigm of Industrial Intelligence**
 
-The AI + UNS data hub built with EMQX and NeuronEX can significantly enhance industrial intelligence. Particularly when combined with LLMs, it can foster numerous innovative application scenarios, providing cognitive data pipelines and AI-augmented industrial operations for next-generation smart factories:
+The AI + UNS data hub built with EMQX and NeuronEX can significantly enhance industrial intelligence. Particularly when combined with LLMs, it can foster numerous innovative application scenarios, providing cognitive data pipelines and AI-augmented industrial operations for next-generation [smart factories](https://www.emqx.com/en/blog/what-is-a-smart-factory-key-components-4-levels-of-evolution):
 
 **Predictive Maintenance**
 

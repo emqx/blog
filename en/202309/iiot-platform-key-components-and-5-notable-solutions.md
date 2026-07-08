@@ -93,7 +93,7 @@ The dashboard should also provide tools for managing the system. This includes t
 
 ### 1. NeuronEX and EMQX
 
-The combination of [NeuronEX](https://www.emqx.com/en/products/emqx-neuron) and [EMQX](https://www.emqx.com/en/products/emqx) forms a potent Industrial Internet of Things (IIoT) platform designed to excel in the challenging landscape of industrial environments. NeuronEX, serving as the Industrial Connectivity Gateway, boasts real-time, asynchronous data processing capabilities with response times as low as 100 milliseconds. It ensures the efficient collection, aggregation, and transformation of data from an extensive array of industrial devices and systems, supporting protocols like [Modbus](https://www.emqx.com/en/blog/modbus-protocol-the-grandfather-of-iot-communication), [OPC UA](https://www.emqx.com/en/blog/opc-ua-protocol), [BACnet](https://www.emqx.com/en/blog/bacnet-protocol-basic-concepts-structure-obejct-model-explained), and more. This curated data is then seamlessly communicated to EMQX, an MQTT broker known for its robust messaging infrastructure, ensuring rapid and reliable data exchange while maintaining low latency.
+The combination of [NeuronEX](https://www.emqx.com/en/products/emqx-neuron) and [EMQX](https://www.emqx.com/en/products/emqx) forms a potent Industrial Internet of Things (IIoT) platform designed to excel in the challenging landscape of industrial environments. NeuronEX, serving as the Industrial Connectivity Gateway, boasts real-time, asynchronous data processing capabilities with response times as low as 100 milliseconds. It ensures the efficient collection, aggregation, and transformation of data from an extensive array of industrial devices and systems, supporting protocols like [Modbus](https://www.emqx.com/en/blog/modbus-protocol-the-grandfather-of-iot-communication), [OPC UA](https://www.emqx.com/en/blog/opc-ua-protocol), [BACnet](https://www.emqx.com/en/blog/bacnet-protocol-basic-concepts-structure-obejct-model-explained), and more. This curated data is then seamlessly communicated to EMQX, an [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) known for its robust messaging infrastructure, ensuring rapid and reliable data exchange while maintaining low latency.
 
 ![NeuronEX and EMQX](https://assets.emqx.com/images/c9d4d6c5bdb71217e9ae8717f6a29513.png)
 
@@ -105,7 +105,7 @@ The combination of [NeuronEX](https://www.emqx.com/en/products/emqx-neuron) and 
     <a href="https://www.emqx.com/en/try?tab=self-managed" class="button is-gradient px-5">Get Started →</a>
 </section>
 
-Together, this integrated platform establishes a Unified Namespace, organizing data from diverse sources under standardized MQTT topics, simplifying data access and management. Its scalability accommodates the growth of IIoT ecosystems, and it excels in real-time data analytics, enabling data-driven decision-making and process optimization. NeuronEX and EMQX prioritize security, supporting encryption (TLS) and authentication mechanisms, ensuring the safeguarding of sensitive industrial data. This platform seamlessly integrates with other IoT applications, big data analytics tools, and cloud platforms, making it a versatile solution for comprehensive data management, analysis, and reporting within industrial operations, ultimately enhancing efficiency and competitiveness.
+Together, this integrated platform establishes a Unified Namespace, organizing data from diverse sources under standardized [MQTT topics](https://www.emqx.com/en/blog/advanced-features-of-mqtt-topics), simplifying data access and management. Its scalability accommodates the growth of IIoT ecosystems, and it excels in real-time data analytics, enabling data-driven decision-making and process optimization. NeuronEX and EMQX prioritize security, supporting encryption (TLS) and authentication mechanisms, ensuring the safeguarding of sensitive industrial data. This platform seamlessly integrates with other IoT applications, big data analytics tools, and cloud platforms, making it a versatile solution for comprehensive data management, analysis, and reporting within industrial operations, ultimately enhancing efficiency and competitiveness.
 
 <section class="promotion">
     <div>
@@ -128,7 +128,7 @@ Source: <a href="https://docs.aws.amazon.com/images/iot/latest/developerguide/im
 
 One of the standout features of AWS IoT Core is its device connectivity and management capabilities. It provides automatic registration, device authentication and provisioning, and device organization and tracking. This makes it easy to manage and monitor your IoT devices at scale.
 
-Furthermore, AWS IoT Core comes with strong data processing capabilities. It has built-in support for AWS Lambda, Amazon Kinesis, Amazon S3, and other AWS services, allowing you to process and analyze your IoT data in various ways. It also supports MQTT, HTTP, and WebSockets protocols, providing flexibility in how you connect and communicate with your devices.
+Furthermore, AWS IoT Core comes with strong data processing capabilities. It has built-in support for AWS Lambda, Amazon Kinesis, Amazon S3, and other AWS services, allowing you to process and analyze your IoT data in various ways. It also supports [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt), HTTP, and WebSockets protocols, providing flexibility in how you connect and communicate with your devices.
 
 ### 3. Azure IoT Hub
 
@@ -160,7 +160,7 @@ One of the unique features of Oracle IoT Intelligent Applications is its predict
 
 ### 5. PTC ThingWorx
 
-PTC ThingWorx is another powerful IIoT platform that enables rapid development and deployment of smart, connected solutions for industrial use. ThingWorx integrates with existing enterprise systems and provides tools to create and deploy industrial IoT applications and augmented reality (AR) experiences.
+PTC ThingWorx is another powerful IIoT platform that enables rapid development and deployment of smart, connected solutions for industrial use. ThingWorx integrates with existing enterprise systems and provides tools to create and deploy [industrial IoT](https://www.emqx.com/en/blog/industrial-iot-systems) applications and augmented reality (AR) experiences.
 
 ![PTC ThingWorx](https://assets.emqx.com/images/d8155050a6596c5c26557975f70ae3dd.png)
 

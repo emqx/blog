@@ -1,4 +1,4 @@
-In the Industrial Internet of Things (IIoT), bidirectional data flow is key to enabling smart manufacturing. Beyond collecting data from devices, many scenarios now require the ability to send commands back for control and automation.
+In the [Industrial Internet of Things](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges) (IIoT), bidirectional data flow is key to enabling [smart manufacturing](https://www.emqx.com/en/blog/the-smart-manufacturing-revolution). Beyond collecting data from devices, many scenarios now require the ability to send commands back for control and automation.
 
 NeuronEX is a real-time data acquisition and analytics software deployed at the industrial edge. It supports a wide range of industrial protocols for efficient data collection, filtering, and edge processing. More importantly, it offers flexible device control capabilities, allowing commands to be sent back to devices for closed-loop control in diverse industrial applications.
 

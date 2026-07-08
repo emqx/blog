@@ -20,7 +20,7 @@
 
 ## 统一命名空间架构的演变
 
-第一个统一命名空间项目是由 Walker Reynolds（Industrial 4.0 Solutions 总裁，2015 年 Ignition by Inductive Automation Award 的得主）在 2005 年创建的。他也是推广统一命名空间的最重要的人物。该项目利用动态数据交换（DDE）和 Excel 电子表格为一个盐田建立了统一命名空间。次年，该项目改用了 MQTT 技术。
+第一个统一命名空间项目是由 Walker Reynolds（Industrial 4.0 Solutions 总裁，2015 年 Ignition by Inductive Automation Award 的得主）在 2005 年创建的。他也是推广统一命名空间的最重要的人物。该项目利用动态数据交换（DDE）和 Excel 电子表格为一个盐田建立了统一命名空间。次年，该项目改用了 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 技术。
 
 最初，Walker 打算开发一个连接所有工业物联网基础设施的数据高速公路。数据高速公路负责从所有冲压机（盐田中使用的开采机器）采集数据。维护人员无需驾车到控制室的屏幕前检查人机界面（HMI）或控制面板。通过将所有操作统一在一个命名空间中，用户无需来回奔波于相隔数英里的厂房和工厂之间，就能够监控生产环境。
 

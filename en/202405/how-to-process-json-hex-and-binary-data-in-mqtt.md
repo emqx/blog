@@ -72,7 +72,7 @@ Then open the browser and visit `http://127.0.0.1:18083` to enter the EMQX Dashb
 
 #### MQTT Client
 
-We recommend using MQTTX CLI as the MQTT client for testing. [**MQTTX**](https://mqttx.app/) is an open-source, cross-platform MQTT 5.0 desktop client initially developed by EMQ, which can run on macOS, Linux, and Windows. 
+We recommend using MQTTX CLI as the MQTT client for testing. [**MQTTX**](https://mqttx.app/) is an open-source, cross-platform [MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5) desktop client initially developed by EMQ, which can run on macOS, Linux, and Windows. 
 
 Get MQTTX CLI [here](https://mqttx.app/).
 

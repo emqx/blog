@@ -1,8 +1,8 @@
-Many MQTT projects and IoT services provide [online public MQTT broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker). Users can directly use them for MQTT learning, testing, prototyping, and even small-scale applications without self-deployment, convenient and fast with time and energy saved.
+Many [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) projects and IoT services provide [online public MQTT broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker). Users can directly use them for MQTT learning, testing, prototyping, and even small-scale applications without self-deployment, convenient and fast with time and energy saved.
 
 However, due to different locations, network environments, and server loads, each public broker’s stability and message transmission delay are also different. Although almost all service providers declare that they are not responsible for the stability and security of their free services, users need to consider these factors when using them.
 
-Therefore, this article sorts out some popular free online MQTT brokers, evaluates and compares them through accessibility, network delay, small-scale performance testing, and actual message transmission delay. We hope to provide a reference for your choice.
+Therefore, this article sorts out some popular free online [MQTT brokers](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison), evaluates and compares them through accessibility, network delay, small-scale performance testing, and actual message transmission delay. We hope to provide a reference for your choice.
 
 
 ## Test object

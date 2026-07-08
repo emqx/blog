@@ -16,7 +16,7 @@ MQTT.fx 1.0 Major 版本由 Jens Deters 使用[JavaFX](https://en.wikipedia.org/
 此外 MQTT.fx 也有其他优秀特性:
 
 - 支持跨平台
-- 支持 $SYS 主题订阅管理 MQTT Broker
+- 支持 $SYS 主题订阅管理 [MQTT Broker](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison)
 - 完整的日志控制台
 - 支持 JavaScript 脚本处理消息
 - 支持预定义模版

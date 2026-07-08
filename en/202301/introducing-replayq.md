@@ -1,4 +1,4 @@
-EMQX is the most scalable MQTT broker for IoT, [IIoT](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges), and connected vehicles. It is also highly extendable to integrate with various databases and streaming platforms. EMQX Enterprise’s Rule-Engine provides a rich set of data integrations out of the box. To name a few: PostgreSQL, MySQL, InfluxDB, and Kafka.
+EMQX is the most scalable [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) for IoT, [IIoT](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges), and connected vehicles. It is also highly extendable to integrate with various databases and streaming platforms. [EMQX Enterprise](https://www.emqx.com/en/products/emqx)’s Rule-Engine provides a rich set of data integrations out of the box. To name a few: PostgreSQL, MySQL, InfluxDB, and Kafka.
 
 You can find the complete list in [EMQX Enterprise documents](https://docs.emqx.com/en/enterprise/v4.4/rule/rule-engine.html).
 
@@ -14,7 +14,7 @@ In each EMQX node, Kafka producer is a pool of workers, one for each Kafka parti
 
 As you may already know, EMQX is written in the [Erlang](https://www.erlang.org/) programming language. If we use the Erlang jargon, the ‘worker’ in this context is an Erlang ‘process’. Unlike Linux processes, Erlang processes are extremely lightweight, operate in memory isolation, and are scheduled by Erlang’s Virtual Machine (VM).
 
-In EMQX, there is one dedicated process for each MQTT client, and Kafka producers are no exceptions, they are processes too.
+In EMQX, there is one dedicated process for each [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) client, and Kafka producers are no exceptions, they are processes too.
 
 ![EMQX](https://assets.emqx.com/images/0c28bdd369be4d7c1883bc4a462f0141.png)
 
@@ -28,7 +28,7 @@ In some cases, things may get a bit more complicated than just a latency increas
 - Kafka is (temporarily) down (Yes, Kafka is highly available, but there are always exceptions)
 - A burst increase of MQTT traffic higher than the planned network or CPU capacity on the Kafka side.
 
-This is when MQTT clients may start experiencing timeouts.
+This is when [MQTT clients](https://www.emqx.com/en/blog/mqtt-client-tools) may start experiencing timeouts.
 
 And this is when we’d start to wish that EMQX could smooth out the spikes and mitigate the (temporary) errors — the buffer named `replayq` was introduced for this exact purpose.
 

@@ -58,7 +58,7 @@
 
 ### 模拟数据输入
 
-在本文中我们将模拟生产环境下冷却器温度传感器数据上报，为此我们将使用 Python 代码读取数据集中温度数据，并通过 MQTT 协议上报到 EMQX Broker。
+在本文中我们将模拟生产环境下冷却器温度传感器数据上报，为此我们将使用 Python 代码读取数据集中温度数据，并通过 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 协议上报到 EMQX Broker。
 
 在下面代码中我们首先使用 `pandas` 读取数据集中温度数据 ('TS1.txt', 'TS2.txt', 'TS3.txt', 'TS4.txt')，并对数据做简单处理，然后将数据每秒上报到 EMQX Broker。
 

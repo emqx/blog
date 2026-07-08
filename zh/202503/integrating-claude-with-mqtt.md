@@ -1,4 +1,4 @@
-在飞速发展的物联网和消息传输领域，一个可靠、低延迟、可扩展的消息服务至关重要。作为 MQTT 解决方案的领导者，EMQ 提供了 [EMQX Serverless](https://www.emqx.com/en/cloud/serverless-mqtt)，帮助用户仅用几秒钟即可部署强大的 MQTT 服务。
+在飞速发展的物联网和消息传输领域，一个可靠、低延迟、可扩展的消息服务至关重要。作为 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 解决方案的领导者，EMQ 提供了 [EMQX Serverless](https://www.emqx.com/en/cloud/serverless-mqtt)，帮助用户仅用几秒钟即可部署强大的 MQTT 服务。
 
 近期，EMQ 推出了与大模型紧密通讯的 EMQX MCP Server，它是 [Model Context Protocol (MCP 协议)](https://www.anthropic.com/news/model-context-protocol) 的服务器实现。它将 Anthropic 的 Claude 等大型语言模型与 EMQX 连接，使 Claude 能够与 MQTT 消息服务交互。本文将为您介绍这一创新解决方案，并提供详细的使用教程。
 
@@ -16,14 +16,14 @@
 
 EMQX MCP Server 是 Anthropic [Model Context Protocol (MCP)](https://www.anthropic.com/news/model-context-protocol) 的实现，允许 Claude 与 EMQX MQTT 平台交互。它在 Claude Desktop（MCP 客户端）或其他 MCP 客户端（如 Cursor、Cline）与 EMQX MQTT 平台之间充当桥梁，使 Claude 能够实现以下能力：
 
-- 列出和管理 MQTT 客户端
+- 列出和管理 [MQTT 客户端](https://www.emqx.com/zh/blog/mqtt-client-tools)
 - 获取详细的客户端信息
 - 在需要时断开客户端连接
 - 向任何 MQTT 主题发布消息
 
 这一集成利用 Claude 的自然语言处理能力，将其功能扩展到物联网和消息传递领域，为 AI 辅助的设备管理和监控开辟了全新可能。
 
-EMQX MCP Server 可与任何支持 MCP 协议的 Agent 配合使用。例如，您可将其添加到 Cursor 中，通过聊天与开发环境中的 MQTT 服务器通信，从而在编码时实时测试和交互，提升开发效率和直观性。
+EMQX MCP Server 可与任何支持 MCP 协议的 Agent 配合使用。例如，您可将其添加到 Cursor 中，通过聊天与开发环境中的 [MQTT 服务器](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison)通信，从而在编码时实时测试和交互，提升开发效率和直观性。
 
 将 AI Assistant 与 EMQX MQTT 平台集成具有以下重要意义：
 

@@ -1,12 +1,12 @@
 ## Introduction
 
-The [Industrial Internet of Things (IIoT)](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges) is leading a digital revolution, redefining the ways in which data is collected, analyzed, and applied. Within this vast network, comprised of billions of devices, the real-time flow of data is crucial for achieving industrial automation, digitization, and efficient production. EMQX Cloud, serving as a cross-cloud fully managed MQTT cloud service platform, stands as a critical infrastructure software in this revolution. It facilitates seamless connectivity from the edge to the cloud, ensuring that data can be transmitted, processed, and analyzed in real-time.
+The [Industrial Internet of Things (IIoT)](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges) is leading a digital revolution, redefining the ways in which data is collected, analyzed, and applied. Within this vast network, comprised of billions of devices, the real-time flow of data is crucial for achieving industrial automation, digitization, and efficient production. [EMQX Cloud](https://www.emqx.com/en/cloud), serving as a cross-cloud fully managed MQTT cloud service platform, stands as a critical infrastructure software in this revolution. It facilitates seamless connectivity from the edge to the cloud, ensuring that data can be transmitted, processed, and analyzed in real-time.
 
 This article will delve into how EMQX Cloud ingests data from edge computing with ClickHouse's data storage capabilities, providing essential data foundations for the Industrial Internet of Things.
 
 ## EMQX Cloud: Addressing Challenges in IIoT
 
-EMQX Cloud is a cloud-based MQTT broker service specifically designed to handle large-scale IIoT data streams. It offers reliable message delivery and device management functionalities to meet the requirements of the Industrial Internet of Things (IIoT) field. The core features of this platform include high-performance MQTT message brokering, device connection management, data routing, message storage, and real-time monitoring.
+EMQX Cloud is a cloud-based [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) service specifically designed to handle large-scale IIoT data streams. It offers reliable message delivery and device management functionalities to meet the requirements of the Industrial Internet of Things (IIoT) field. The core features of this platform include high-performance MQTT message brokering, device connection management, data routing, message storage, and real-time monitoring.
 
 EMQX Cloud can empower IIoT advancement in the following aspects:
 
@@ -75,10 +75,10 @@ When deploying edge computing solutions, selecting the appropriate tools and com
    The configuration parameters are as follows:
 
    - Remote broker address
-   - MQTT protocol version
+   - [MQTT protocol](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) version
    - Client identifier (default is automatically assigned by NanoMQ)
    - Session clean
-   - Keep Alive
+   - [Keep Alive](https://www.emqx.com/en/blog/mqtt-keep-alive)
    - Username
    - Password
    - Forwarded Topics (multiple topics separated by commas)
@@ -134,7 +134,7 @@ To verify the installation and functionality of NanoMQ, you can perform the foll
 
 1. **Connect to NanoMQ**
 
-   Use MQTT client tools such as MQTTX or mosquitto_sub/mosquitto_pub to connect to NanoMQ.
+   Use [MQTT client](https://www.emqx.com/en/blog/mqtt-client-tools) tools such as MQTTX or mosquitto_sub/mosquitto_pub to connect to NanoMQ.
 
    ![Connect to NanoMQ](https://assets.emqx.com/images/62ca99c01ef094145e313d35b02d9603.png)
 
@@ -172,7 +172,7 @@ To verify the installation and functionality of NanoMQ, you can perform the foll
 
    ![Publish and Subscribe Testing](https://assets.emqx.com/images/c66c40df0bda44dabcc029c6b18aae86.png)
 
-In summary, establishing the connection between edge devices and EMQX Cloud requires thorough configuration. Testing the connection by publishing and subscribing to MQTT topics can help verify the feasibility of the connection. This process lays the foundation for seamless connectivity between EMQX Cloud and edge devices.
+In summary, establishing the connection between edge devices and EMQX Cloud requires thorough configuration. Testing the connection by publishing and subscribing to [MQTT topics](https://www.emqx.com/en/blog/advanced-features-of-mqtt-topics) can help verify the feasibility of the connection. This process lays the foundation for seamless connectivity between EMQX Cloud and edge devices.
 
 ## Integration with ClickHouse: Configuration, Data Transformation, and Persistence
 
@@ -180,7 +180,7 @@ In summary, establishing the connection between edge devices and EMQX Cloud requ
 
 Considering the advantages in terms of performance, scalability, flexibility, real-time processing, and cost-effectiveness, choosing ClickHouse as the time-series database contributes to ensuring the efficiency, reliability, and sustainability of the data integration process.
 
-1. **High Performance and Fast Queries**: ClickHouse is designed as a columnar storage database for large volumes of data, excelling in handling massive time-series data. Its unique storage structure and query engine enable fast execution in complex query scenarios, meeting the demand for rapid data analysis in industrial IoT environments.
+1. **High Performance and Fast Queries**: ClickHouse is designed as a columnar storage database for large volumes of data, excelling in handling massive time-series data. Its unique storage structure and query engine enable fast execution in complex query scenarios, meeting the demand for rapid data analysis in [industrial IoT](https://www.emqx.com/en/blog/industrial-iot-systems) environments.
 2. **Horizontal Scalability**: ClickHouse provides horizontal scalability, effectively handling continuously growing data streams. This allows the system to easily cope with the challenge of continuously increasing data volumes in industrial IoT scenarios, ensuring system stability and scalability.
 3. **Flexible Data Model**: ClickHouse's flexible data model allows storage and querying of various data types, accommodating different types of sensor and device data. This flexibility is crucial, especially in industrial IoT where data sources vary and may include numerical, textual, or even image data.
 4. **Low-Latency Real-Time Processing**: ClickHouse demonstrates low-latency characteristics in processing real-time data, which is crucial in industrial automation and monitoring systems. Low latency ensures that the entire process from data collection to storage and analysis happens as quickly as possible, enabling users to respond promptly.

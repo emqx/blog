@@ -1,6 +1,6 @@
 ## 引言
 
-在日新月异的云计算和物联网领域，各企业都在寻找提高效率、增强扩展性和降低成本的方式。作为全托管 MQTT 消息服务的领导者，[EMQX Cloud](https://www.emqx.com/zh/cloud) 能够支持物联网设备和应用之间的无缝通信。最新版本 [EMQX Cloud Serverless](https://www.emqx.com/zh/cloud/serverless-mqtt) 则采用了先进的 Serverless 技术，为用户带来了前所未有的便捷服务。
+在日新月异的云计算和物联网领域，各企业都在寻找提高效率、增强扩展性和降低成本的方式。作为全托管 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 消息服务的领导者，[EMQX Cloud](https://www.emqx.com/zh/cloud) 能够支持物联网设备和应用之间的无缝通信。最新版本 [EMQX Cloud Serverless](https://www.emqx.com/zh/cloud/serverless-mqtt) 则采用了先进的 Serverless 技术，为用户带来了前所未有的便捷服务。
 
 本文我们将深入探讨 Serverless MQTT 服务的重要意义以及 EMQX Cloud Serverless 将如何为您的 MQTT 云服务带来革命性的改变。
 

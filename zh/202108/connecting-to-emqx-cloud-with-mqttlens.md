@@ -1,4 +1,4 @@
-本文将以 [MQTTLens](https://chrome.google.com/webstore/detail/mqttlens/hemojaaeigabkbcookmlgmdigohjobjm/related?hl=zh_cn) 作为 [MQTT 客户端](https://www.emqx.com/zh/blog/introduction-to-the-commonly-used-mqtt-client-library)测试工具，接入 [MQTT 云服务 - EMQX Cloud](https://www.emqx.com/zh/cloud)。通过本文，你将能快速了解 MQTTLens 的基础用法以及 MQTT 协议的基本概念与使用。
+本文将以 [MQTTLens](https://chrome.google.com/webstore/detail/mqttlens/hemojaaeigabkbcookmlgmdigohjobjm/related?hl=zh_cn) 作为 [MQTT 客户端](https://www.emqx.com/zh/blog/introduction-to-the-commonly-used-mqtt-client-library)测试工具，接入 [MQTT 云服务 - EMQX Cloud](https://www.emqx.com/zh/cloud)。通过本文，你将能快速了解 MQTTLens 的基础用法以及 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 协议的基本概念与使用。
 
 
 
@@ -50,11 +50,11 @@ MQTTLens 完整的支持了以下功能：
 
 MQTTLens 还支持对遗嘱消息的配置，在创建弹出框底部，点击 `Last-Will` 即可配置相关配置。
 
-> 注意：如果 MQTT Broker 已开启用户名/密码认证的话，还需要在配置页面内输入 Username / Password
+> 注意：如果 [MQTT Broker](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison) 已开启用户名/密码认证的话，还需要在配置页面内输入 Username / Password
 
 ![创建连接](https://assets.emqx.com/images/314c56bdde5cbfc64d48813a52851929.png)
 
-创建成功后，应用会进入到连接客户端的操作页面，如果右边的连接列表中的按钮变为绿色，即表示该 MQTT 客户端已经成功创建并连接成功。再次点击绿色按钮变为红色后，即可断开连接。点击右边的设置按钮可重新编辑客户端配置，点击删除按钮后可快速删除该连接。
+创建成功后，应用会进入到连接客户端的操作页面，如果右边的连接列表中的按钮变为绿色，即表示该 [MQTT 客户端](https://www.emqx.com/zh/blog/mqtt-client-tools)已经成功创建并连接成功。再次点击绿色按钮变为红色后，即可断开连接。点击右边的设置按钮可重新编辑客户端配置，点击删除按钮后可快速删除该连接。
 
 ### 订阅主题
 

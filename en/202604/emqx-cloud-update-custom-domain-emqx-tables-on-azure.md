@@ -1,8 +1,8 @@
-We're happy to share the latest updates to EMQX Cloud. This release brings Custom Domain support to Dedicated and Dedicated Flex deployments, expands EMQX Tables to Azure across three regions, and introduces private network connectivity between EMQX Broker and Tables deployments through network association and project-level network management.
+We're happy to share the latest updates to [EMQX Cloud](https://www.emqx.com/en/cloud). This release brings Custom Domain support to Dedicated and Dedicated Flex deployments, expands EMQX Tables to Azure across three regions, and introduces private network connectivity between EMQX Broker and Tables deployments through network association and project-level network management.
 
 ## Custom Domain
 
-EMQX Cloud supports configuring a custom domain for your **EMQX v5 Dedicated** and **v5 Dedicated Flex** deployments, allowing MQTT clients to connect through a domain you own.
+EMQX Cloud supports configuring a custom domain for your **EMQX v5 Dedicated** and **v5 Dedicated Flex** deployments, allowing [MQTT clients](https://www.emqx.com/en/blog/mqtt-client-tools) to connect through a domain you own.
 
 This is useful when you want a stable, branded endpoint, for example, `mqtt.your-company.com`, with EMQX Cloud managing TLS/SSL certificate provisioning and renewal automatically.
 
@@ -14,7 +14,7 @@ This is useful when you want a stable, branded endpoint, for example, `mqtt.your
 
 If you have strict compliance requirements around certificate issuance or renewal, consider uploading your own certificate instead of using a managed certificate.
 
-To configure a custom domain, log in to the EMQX Cloud console, go to your deployment's overview page, and click **Custom Domain** in the **MQTT Connection Information** section. Follow the steps to set up DNS records and TLS/SSL, then verify connectivity from your MQTT clients using the new domain.
+To configure a custom domain, log in to the EMQX Cloud console, go to your deployment's overview page, and click **Custom Domain** in the **[MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) Connection Information** section. Follow the steps to set up DNS records and TLS/SSL, then verify connectivity from your MQTT clients using the new domain.
 
 For full setup instructions, see [Configure a Custom Domain](https://docs.emqx.com/en/cloud/latest/deployments/custom_domain.html).
 

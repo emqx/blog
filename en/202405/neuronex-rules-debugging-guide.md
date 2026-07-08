@@ -1,6 +1,6 @@
-With the rise of smart manufacturing, one of the primary concerns for industrial enterprises is how to accurately and reliably collect and utilize data streams during the production process.
+With the rise of [smart manufacturing](https://www.emqx.com/en/blog/the-smart-manufacturing-revolution), one of the primary concerns for industrial enterprises is how to accurately and reliably collect and utilize data streams during the production process.
 
-[NeuronEX](https://www.emqx.com/en/products/emqx-neuron), an industrial edge data hub designed for industrial scenarios, offers device data collection and edge intelligence analysis services. It can be deployed on industrial sites to support real-time data collection from various industrial equipment communications and fieldbus protocols. NeuronEX enables industrial system data integration, edge data filtering and analysis, AI algorithm integration, and seamless integration with IIoT platforms.
+[NeuronEX](https://www.emqx.com/en/products/emqx-neuron), an industrial edge data hub designed for industrial scenarios, offers device data collection and edge intelligence analysis services. It can be deployed on industrial sites to support real-time data collection from various industrial equipment communications and fieldbus protocols. NeuronEX enables industrial system data integration, edge data filtering and analysis, AI algorithm integration, and seamless integration with [IIoT platforms](https://www.emqx.com/en/blog/iiot-platform-key-components-and-5-notable-solutions).
 
 The rule testing feature of [NeuronEX](https://www.emqx.com/en/products/emqx-neuron) allows users to simulate data inputs in a secure environment, test and optimize data processing rules, and identify and resolve potential issues in advance. This feature is crucial for applications such as smart manufacturing, remote monitoring, and preventive maintenance, as it helps improve productivity and reduce operational costs while ensuring system stability and security. In this blog, we will provide a detailed introduction to this feature, helping users create and test rules more efficiently.
 
@@ -8,7 +8,7 @@ The rule testing feature of [NeuronEX](https://www.emqx.com/en/products/emqx-neu
 
 ## Preparation
 
-To test a rule, first create a data source to use as the input of rule. Here’s how to create an MQTT data source:
+To test a rule, first create a data source to use as the input of rule. Here’s how to create an [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) data source:
 
 1. Log in to the NeuronEX system and navigate to the "Data Processing" - "Sources" page, click the "Create Stream" button.
 
@@ -22,7 +22,7 @@ To test a rule, first create a data source to use as the input of rule. Here’s
 
    ![Create Stream](https://assets.emqx.com/images/f2db53f2f32663b5c4238370021dd721.png)
 
-1. In the Source Configuration Key, enter the name and the MQTT broker address. For this example, we use the [Free Public MQTT Broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker) provided by EMQX, which is available through [EMQX Platform](https://www.emqx.com/en/cloud). Then, click the "Submit" button to add the configuration key.
+1. In the Source Configuration Key, enter the name and the [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) address. For this example, we use the [Free Public MQTT Broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker) provided by EMQX, which is available through [EMQX Platform](https://www.emqx.com/en/cloud). Then, click the "Submit" button to add the configuration key.
 
    ![Add Source Configuration Key](https://assets.emqx.com/images/d5e1cfe69ee3abaddbc5b1ae5d48d5a8.png) 
 

@@ -1,4 +1,4 @@
-Integrating MQTT data streams with AWS S3 Tables enables you to build a scalable and queryable time-series data lakehouse. This guide walks you through best practices for creating an end-to-end pipeline — from IoT data ingestion in EMQX to structured storage in an Iceberg-based S3 Table, ready for analytics via Athena.
+Integrating [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) data streams with AWS S3 Tables enables you to build a scalable and queryable time-series data lakehouse. This guide walks you through best practices for creating an end-to-end pipeline — from IoT data ingestion in EMQX to structured storage in an Iceberg-based S3 Table, ready for analytics via Athena.
 
 ## **Part 1. Prepare AWS S3 Tables Resources**
 

@@ -1,6 +1,6 @@
-As a software supplier for open-sourced IoT data infrastructure, EMQ provides 2000+ enterprise users from more than 50 countries around the world with high-reliability and high-performance real-time connection, movement, and processing of massive IoT data from edge to cloud by EMQX, the world’s leading open-source cloud-native MQTT message broker.
+As a software supplier for open-sourced IoT data infrastructure, EMQ provides 2000+ enterprise users from more than 50 countries around the world with high-reliability and high-performance real-time connection, movement, and processing of massive IoT data from edge to cloud by EMQX, the world’s leading open-source cloud-native [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) message broker.
 
-Starting from an open-source project, EMQX has developed into the on-premises version, EMQX Enterprise, and the SaaS version, EMQX Cloud, to meet the demands of different types and scales of enterprises and accelerate the digitalization, real-time and intelligent transformation for them.
+Starting from an open-source project, EMQX has developed into the on-premises version, [EMQX Enterprise](https://www.emqx.com/en/products/emqx), and the SaaS version, [EMQX Cloud](https://www.emqx.com/en/cloud), to meet the demands of different types and scales of enterprises and accelerate the digitalization, real-time and intelligent transformation for them.
 
 This article will make a detailed comparison and interpretation of EMQX Enterprise and EMQX Cloud from product architecture, features, and applicable scenarios. You can know how to select more suitable IoT data access software following this article.
 
@@ -8,7 +8,7 @@ This article will make a detailed comparison and interpretation of EMQX Enterpri
 
 EMQX Enterprise is an open-source cloud-native IoT MQTT message broker based on the Erlang/OTP platform, with integrated distributed MQTT message service and powerful IoT rule engine. It supports multiple standard [IoT protocols](https://www.emqx.com/en/blog/iot-protocols-mqtt-coap-lwm2m) and Industry-specific protocols. It provides high-reliability connection and low latency message routing of massive IoT devices.
 
-EMQX Cloud is the world's first fully managed MQTT 5.0 public cloud service launched by EMQ, providing MQTT message service with a one-stop operation and maintenance host and a unique isolated environment for MQTT services. EMQX Cloud can help you quickly build industry applications and easily realize the collection, transmission, computation, and persistence of IoT data.
+EMQX Cloud is the world's first fully managed [MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5) public cloud service launched by EMQ, providing MQTT message service with a one-stop operation and maintenance host and a unique isolated environment for MQTT services. EMQX Cloud can help you quickly build industry applications and easily realize the collection, transmission, computation, and persistence of IoT data.
 
 Based on EMQX Broker, EMQX Enterprise and EMQX Cloud extend the features such as the protocol support, rule engine, data persistence and others to help connect IoT devices. The workflow involves collecting data generated from devices, transmitting it securely through encrypted connection, device authentication and access rights control, and then transferring it to various third-party data systems through the rule engine for secondary processing and display.
 

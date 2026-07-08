@@ -1,6 +1,6 @@
 我们很高兴地宣布，NeuronEX 3.9.0 版本正式发布！
 
-该版本核心亮点包括：推出在线驱动配置迁移工具，支持将 KEPServerEX 和 Litmus Edge 的采集配置批量转换为 NeuronEX 可导入格式；新增 Kafka 北向驱动，可与 Microsoft Fabric 原生对接，打通从工业现场到云端数据湖的完整链路；OPC UA 插件新增 Part 9 条件与报警能力，支持实时订阅报警事件并通过方法调用完成确认操作。
+该版本核心亮点包括：推出在线驱动配置迁移工具，支持将 KEPServerEX 和 Litmus Edge 的采集配置批量转换为 NeuronEX 可导入格式；新增 Kafka 北向驱动，可与 Microsoft Fabric 原生对接，打通从工业现场到云端数据湖的完整链路；[OPC UA](https://www.emqx.com/zh/blog/opc-ua-protocol) 插件新增 Part 9 条件与报警能力，支持实时订阅报警事件并通过方法调用完成确认操作。
 
 此外，3.9.0 版本还在点位配置、Kafka 连接器、Azure IoT Hub 离线缓存、标准产品包内容等多个方面进行了功能增强，进一步提升了平台的易用性、完整性与稳定性。
 
@@ -62,7 +62,7 @@
 
 **应用场景：**
 
-- **集中报警管理**：将多台 OPC UA 设备的报警事件统一汇聚，通过 MQTT 上送至云端告警平台，实现跨站点的报警集中监控。
+- **集中报警管理**：将多台 OPC UA 设备的报警事件统一汇聚，通过 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 上送至云端告警平台，实现跨站点的报警集中监控。
 - **报警确认自动化**：结合数据处理规则，对特定类别报警自动调用 Confirm 方法，减少人工干预。
 - **合规与审计**：完整记录报警的 `event_id`、触发时间与确认状态，满足 GMP、ISO 55000 等合规要求。
 

@@ -1,4 +1,4 @@
-Recently, the MQTT 5.0 client tool MQTTX 1.9.5 was officially launched.
+Recently, the [MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5) client tool MQTTX 1.9.5 was officially launched.
 
 In this version, we have mainly enhanced the error message prompts for JSON syntax in the desktop client and added support for JSON highlighting in messages. Additionally, multiple UI modifications and optimizations have been made to improve the user experience further.
 
@@ -6,7 +6,7 @@ In this version, we have mainly enhanced the error message prompts for JSON synt
 
 ## Highlighting for JSON Formatted Messages
 
-In MQTT data exchange, JSON has become a standard format that is commonly used. To better serve users and improve the readability of message content, MQTTX 1.9.5 introduces the JSON highlighting feature.
+In [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) data exchange, JSON has become a standard format that is commonly used. To better serve users and improve the readability of message content, MQTTX 1.9.5 introduces the JSON highlighting feature.
 
 ![MQTT JSON Highlighting](https://assets.emqx.com/images/b36d13bc04b238c1780356c64ff5714f.png)
 
@@ -57,7 +57,7 @@ The following is some of our plan for future versions:
 
 - Codec support for Avro message format.
 
-- Support for Sparkplug B.
+- Support for [Sparkplug B](https://www.emqx.com/en/solutions/mqtt-sparkplug).
 
 - Configurable ignoring of QoS 0 message storage to reduce storage space usage.
 

@@ -1,6 +1,6 @@
 > ***Executive Summary***
 >
-> *A leading global technology manufacturer operating a fleet of 50 million devices needed a mission-critical MQTT infrastructure to support remote device management and technical support operations. Facing scalability limits with cloud-native IoT solutions and complexity challenges with alternative brokers, the organization deployed EMQX Enterprise on Kubernetes to handle 10 million concurrent connections with sub-second latency and QoS 2 guarantees. The result: unified device management across North America with plans to scale globally.*
+> *A leading global technology manufacturer operating a fleet of 50 million devices needed a mission-critical [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) infrastructure to support remote device management and technical support operations. Facing scalability limits with cloud-native IoT solutions and complexity challenges with alternative brokers, the organization deployed [EMQX Enterprise](https://www.emqx.com/en/products/emqx) on Kubernetes to handle 10 million concurrent connections with sub-second latency and QoS 2 guarantees. The result: unified device management across North America with plans to scale globally.*
 
 ## The Evolution of Connected Device Management
 
@@ -55,7 +55,7 @@ To address these challenges, the organization deployed EMQX Enterprise in a Kube
 
 ### **Cloud-Native Infrastructure for Global Scale**
 
-- **Kubernetes-Native Management:** Utilizing the EMQX Operator to automate cluster provisioning, scaling, and lifecycle management. This eliminates orchestration complexity while ensuring the system can handle 10 million concurrent connections with predictable performance.
+- **Kubernetes-Native Management:** Utilizing the [EMQX Operator](https://www.emqx.com/en/solutions/mqtt-on-kubernetes) to automate cluster provisioning, scaling, and lifecycle management. This eliminates orchestration complexity while ensuring the system can handle 10 million concurrent connections with predictable performance.
 - **High Availability & Multi-Region Strategy:** The architecture features active clusters with dedicated HA/DR failover. It is designed as Multi-Region Ready, leveraging Cluster Linking to support planned expansion into APAC and EMEA through cross-region message routing and regional failover.
 
 ### **Hardened Enterprise Security**
@@ -70,7 +70,7 @@ To address these challenges, the organization deployed EMQX Enterprise in a Kube
 
 ### **Reliability & Efficiency for Critical Operations**
 
-- **Guaranteed Message Delivery:** Full support for MQTT 5.0 and QoS 2 (Exactly Once) delivery, which is essential for the integrity of security patches and software updates.
+- **Guaranteed Message Delivery:** Full support for [MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5) and QoS 2 (Exactly Once) delivery, which is essential for the integrity of security patches and software updates.
 - **Durable Sessions:** Automatic message buffering prevents data loss during network transitions, ensuring telemetry is captured even if a device temporarily loses its connection.
 - **Optimized Workload Distribution:** Using Shared Subscriptions to load-balance command distribution across multiple backend support systems, preventing processing bottlenecks.
 

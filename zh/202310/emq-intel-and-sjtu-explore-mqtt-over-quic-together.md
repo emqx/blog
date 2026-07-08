@@ -2,7 +2,7 @@
 
 MQTT over QUIC 将传统 [MQTT 协议](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt)中基于 TCP 的传输层协议替换为了 QUIC（Quick UDP Internet Connections）。与 TCP 不同，QUIC 基于 UDP（User Datagram Protocol）构建，更适合在不稳定网络条件下进行通信，带来低延迟、减少握手时间、支持多路复用等诸多优势。
 
-在 2023 年夏季，EMQ 联合 Intel 和上海交通大学推出了一门短期课程，旨在向国内外高校学生深入讲解和实践 MQTT over QUIC 协议的各项性能。在课程中，我们模拟了车联网中常见的不稳定网络环境，为大学提供了机会利用 MQTT over QUIC 协议设计并执行各种实验。课程中使用英特尔开发套件爱克斯开发板 AIxBoard，并运用 EMQ 的各类物联网数据软件完成整个开发项目的实践。
+在 2023 年夏季，EMQ 联合 Intel 和上海交通大学推出了一门短期课程，旨在向国内外高校学生深入讲解和实践 MQTT over [QUIC 协议](https://www.emqx.com/zh/blog/quic-protocol-the-features-use-cases-and-impact-for-iot-iov)的各项性能。在课程中，我们模拟了车联网中常见的不稳定网络环境，为大学提供了机会利用 MQTT over QUIC 协议设计并执行各种实验。课程中使用英特尔开发套件爱克斯开发板 AIxBoard，并运用 EMQ 的各类物联网数据软件完成整个开发项目的实践。
 
 ## 大学关于 MQTT over QUIC 的案例分享 
 

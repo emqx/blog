@@ -1,6 +1,6 @@
-[MQTTX](https://mqttx.app/) is an [open-source](https://github.com/emqx/MQTTX) MQTT Client Toolbox developed by [EMQ](https://www.emqx.com/en). It is designed to be cross-platform and can be used on desktops (macOS, Linux, and Windows), CLI, and web. MQTTX fully supports MQTT 5.0, 3.1.1, and 3.1 protocols, ensuring it meets all testing requirements.
+[MQTTX](https://mqttx.app/) is an [open-source](https://github.com/emqx/MQTTX) [MQTT Client](https://www.emqx.com/en/blog/mqtt-client-tools) Toolbox developed by [EMQ](https://www.emqx.com/en). It is designed to be cross-platform and can be used on desktops (macOS, Linux, and Windows), CLI, and web. MQTTX fully supports [MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5), 3.1.1, and 3.1 protocols, ensuring it meets all testing requirements.
 
-The user interface (UI) of [MQTTX](https://mqttx.app/) features a chat-based layout, which simplifies the operational logic. It allows users to establish multiple MQTT connections, making it convenient to test MQTT/MQTTS connections and subscribe to and publish messages.
+The user interface (UI) of [MQTTX](https://mqttx.app/) features a chat-based layout, which simplifies the operational logic. It allows users to establish multiple [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) connections, making it convenient to test MQTT/MQTTS connections and subscribe to and publish messages.
 
 In this blog, we will guide you on how to use MQTTX for testing Serverless MQTT connections, including publishing, subscribing, and messaging.
 
@@ -12,7 +12,7 @@ Please download the latest version of MQTTX from the [MQTTX download](https://mq
 
 Serverless architecture in cloud computing allows developers to focus on code development and deployment without the hassle of infrastructure management. Serverless MQTT, in particular, provides an MQTT messaging service that scales automatically based on demand, reducing the need for manual intervention.
 
-[EMQX Cloud Serverless](https://www.emqx.com/en/cloud/serverless-mqtt) is the latest offering for an MQTT Broker on the public cloud, providing all the advantages of serverless technology. You can quickly initiate a Serverless deployment with just a few clicks. Additionally, users can enjoy 1 million free session minutes per month, which is ample for maintaining 23 devices online for an entire month, making it ideal for small-scale IoT testing scenarios.
+[EMQX Cloud Serverless](https://www.emqx.com/en/cloud/serverless-mqtt) is the latest offering for an [MQTT Broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) on the public cloud, providing all the advantages of serverless technology. You can quickly initiate a Serverless deployment with just a few clicks. Additionally, users can enjoy 1 million free session minutes per month, which is ample for maintaining 23 devices online for an entire month, making it ideal for small-scale IoT testing scenarios.
 
 If you haven't experienced serverless deployment yet, we encourage you to follow the [step-by-step guide in this blog](https://www.emqx.com/en/blog/a-comprehensive-guide-to-serverless-mqtt-service) to create a free deployment. Upon completing the registration process, you will have a running instance that offers similar information as displayed in your deployment's "Overview" section. We will utilize the connection information and CA certificate later on.
 

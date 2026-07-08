@@ -58,7 +58,7 @@ The following are important bug fixes, for all bug fixes please refer to [EMQX E
 
   For more information on `Erlang distribution`, see [here](https://docs.emqx.com/en/emqx/v4.4/advanced/cluster.html).
 
-- Fixed the issue where MQTT bridging could not verify TLS certificates with wildcard domains on the peer side [#10094](https://github.com/emqx/emqx/pull/10094).
+- Fixed the issue where [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) bridging could not verify TLS certificates with wildcard domains on the peer side [#10094](https://github.com/emqx/emqx/pull/10094).
 
 - Fixed the issue where EMQX could not timely clear the information of disconnected MQTT connections when there were too many messages backlogged in the retainer. [#10189](https://github.com/emqx/emqx/pull/10189).
 

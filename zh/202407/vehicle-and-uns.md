@@ -18,7 +18,7 @@
 
    ![多域集中式架构带来了复杂的网络拓扑](https://assets.emqx.com/images/0329e121e11fb9069859d635c56aea36.png)
 
-事实上，同样的变革已经在另一个传统行业中发生：工业制造。在工业物联网系统中，通过融合 IT 和 OT，将分散、异构、复杂的边缘生产设备和原本互相孤立的 MES/ERP/PLM 等系统实时连接到一个统一的数据空间中，从而带来高度的可互操作性、扩展性，简化了数据集成、增强数据可用性和扩展性。针对这一趋势，统一命名空间（Unified Namespace, UNS）应运而生。 
+事实上，同样的变革已经在另一个传统行业中发生：工业制造。在[工业物联网](https://www.emqx.com/zh/blog/iiot-explained-examples-technologies-benefits-and-challenges)系统中，通过融合 IT 和 OT，将分散、异构、复杂的边缘生产设备和原本互相孤立的 MES/ERP/PLM 等系统实时连接到一个统一的数据空间中，从而带来高度的可互操作性、扩展性，简化了数据集成、增强数据可用性和扩展性。针对这一趋势，统一命名空间（Unified Namespace, UNS）应运而生。 
 
 > 详细了解 UNS：[统一命名空间（UNS）：面向工业物联网的下一代数据架构](https://www.emqx.com/zh/blog/unified-namespace-next-generation-data-fabric-for-iiot) 
 

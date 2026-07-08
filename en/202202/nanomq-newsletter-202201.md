@@ -1,8 +1,8 @@
-This month, NanoMQ 0.5.9 was released. In addition to routine bug fixes, we have brought you an efficient and easy-to-use MQTT command-line toolkit based on the MQTT functions of bridging and compatible with native NNG which was developed last month. At the same time, we also continue to fix bugs found and issues reported by users, and actively maintain NanoSDK which is NanoMQ's sister project.
+This month, NanoMQ 0.5.9 was released. In addition to routine bug fixes, we have brought you an efficient and easy-to-use [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) command-line toolkit based on the MQTT functions of bridging and compatible with native NNG which was developed last month. At the same time, we also continue to fix bugs found and issues reported by users, and actively maintain NanoSDK which is NanoMQ's sister project.
 
 ## MQTT command line toolkit
 
-Whether for daily MQTT development and test or performance evaluation of brokers, an easy-to-use and high-performance MQTT command-line toolkits are essential. Based on the previously released NanoSDK, we have developed a complete set of MQTT client tools for the majority of MQTT users, which include MQTT message publishing, subscription and connection.
+Whether for daily MQTT development and test or performance evaluation of brokers, an easy-to-use and high-performance MQTT command-line toolkits are essential. Based on the previously released NanoSDK, we have developed a complete set of [MQTT client](https://www.emqx.com/en/blog/mqtt-client-tools) tools for the majority of MQTT users, which include MQTT message publishing, subscription and connection.
 
 ### MQTT message publishing
 
@@ -53,7 +53,7 @@ Usage: nanomq pub { start | stop } <addr> [<topic>...] [<opts>...] [<src>]
 nanomq pub start --url "mqtt-tcp://broker.emqx.io:1883" -t msg -m hello -i 10 -c 10000
 ```
 
-The NanoMQ Pub tool is used to send a message with a Payload of hello every 10ms to the msg topic of the public MQTT Broker provided by EMQ, and it is stopped when 10,000 messages are sent. In addition, NanoMQ Toolkit can also read data from files and send them, which is convenient for users to customize their own Payloads to simulate business tests.
+The NanoMQ Pub tool is used to send a message with a Payload of hello every 10ms to the msg topic of the public [MQTT Broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) provided by EMQ, and it is stopped when 10,000 messages are sent. In addition, NanoMQ Toolkit can also read data from files and send them, which is convenient for users to customize their own Payloads to simulate business tests.
 
 ### MQTT Message subscription
 
@@ -116,7 +116,7 @@ The following bugs were fixed in NanoMQ. Please upgrade it according to your spe
 
 ## Community Interaction: collect opinions on Nanomsg Client and NanoMQ bridge mode
 
-Born and grown from NNG, NanoMQ is committed to providing a more flexible and complete message bus tool for the open-source community at the edge. We have always attached great importance to the questions and voices of the community. Although MQTT has always been the most widely used IoT protocol, it only supports Pub/Sub (MQTT5.0 supports req/rep) mode, making it unsuitable for internal brokerless communication and RPC work in some edge scenarios, while nanomsg/nng has a variety of message patterns and has always been a popular high-performance library in the brokerless field.
+Born and grown from NNG, NanoMQ is committed to providing a more flexible and complete message bus tool for the open-source community at the edge. We have always attached great importance to the questions and voices of the community. Although MQTT has always been the most widely used [IoT protocol](https://www.emqx.com/en/blog/iot-protocols-mqtt-coap-lwm2m), it only supports Pub/Sub (MQTT5.0 supports req/rep) mode, making it unsuitable for internal brokerless communication and RPC work in some edge scenarios, while nanomsg/nng has a variety of message patterns and has always been a popular high-performance library in the brokerless field.
 
 Combined with the multiple message modes brought by nanomsg/nng and the advantages of RPC function that can broaden the usage scenarios of NanoMQ and facilitate users to build more flexible edge network topologies, we plan to support the bridge between nanomsg client and NanoMQ in NanoMQ. We sincerely ask for your opinions on how to define bridge mode, protocol conversion and configuration method. Welcome to leave us a message on the [Discussions page](https://github.com/nanomq/nanomq/discussions/298) of the GitHub project. We look forward to your valuable comments and suggestions.
 

@@ -1,4 +1,4 @@
-[EMQX Cloud](https://www.emqx.com/en/cloud) is committed to providing reliable and efficient fully managed MQTT message cloud services for customers of different scales and industries. Through this easy-to-use and standardized SaaS product, users can freely build IoT applications like “Lego”.
+[EMQX Cloud](https://www.emqx.com/en/cloud) is committed to providing reliable and efficient fully managed [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) message cloud services for customers of different scales and industries. Through this easy-to-use and standardized SaaS product, users can freely build IoT applications like “Lego”.
 
 Facing the different personalized needs of customers, the EMQX Cloud team decided to set up a new value-added feature section based on the original product form to provide users with more high-value functions. Users will be able to choose value-added services according to their needs, saving unnecessary costs.
 
@@ -58,7 +58,7 @@ After completing the purchase of the internal load balancer service, you can vie
 ![EMQX Cloud Internal load balancer configuration](https://assets.emqx.com/images/a28b0069e5e73ff37de1cc868e703981.png)
  
 
-When the status of the internal load balancer is running, you can connect the terminal under the VPC that has completed the peering connection to the deployment through the intranet IP of the intranet address. The connection port is the same as the public network connection port: mqtt port is 1883, websocket The port is 8083.
+When the status of the internal load balancer is running, you can connect the terminal under the VPC that has completed the peering connection to the deployment through the intranet IP of the intranet address. The connection port is the same as the public network connection port: [mqtt port](https://www.emqx.com/en/blog/mqtt-ports) is 1883, websocket The port is 8083.
 
 ### NAT gateway configuration
 

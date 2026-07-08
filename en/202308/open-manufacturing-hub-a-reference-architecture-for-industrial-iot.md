@@ -26,9 +26,9 @@ Enter the OMH(Open Manufacturing Hub) — an open-source blueprint for [industri
 
 ## A Comprehensive Solution for Industrial IoT
 
-The OMH provides a comprehensive solution for building powerful and scalable Industrial IoT applications. Together they enable seamless data connectivity, efficient message queuing, and reliable storage and analysis of time-series data.
+The OMH provides a comprehensive solution for building powerful and scalable [Industrial IoT](https://www.emqx.com/en/blog/industrial-iot-systems) applications. Together they enable seamless data connectivity, efficient message queuing, and reliable storage and analysis of time-series data.
 
-The objective of the OMH solution is to empower organizations in the manufacturing industry to achieve smart manufacturing excellence. This objective encompasses the utilization of advanced IIoT technologies and data-driven insights to optimize operational processes, enhance productivity, ensure quality, and drive innovation across the manufacturing value chain.
+The objective of the OMH solution is to empower organizations in the manufacturing industry to achieve [smart manufacturing](https://www.emqx.com/en/blog/the-smart-manufacturing-revolution) excellence. This objective encompasses the utilization of advanced IIoT technologies and data-driven insights to optimize operational processes, enhance productivity, ensure quality, and drive innovation across the manufacturing value chain.
 
 ### Essential Components of the Architecture
 
@@ -50,9 +50,9 @@ Businesses can achieve a range of benefits by using the technology stack above. 
 
 It is pretty easy to build an efficient and scalable IIoT system using EMQX and Neuron. All software components are running in separate Docker containers, with the exception of the Python Modbus Simulator. The simulator is a provided program used to generate data for the demonstration.
 
-In the Modbus simulator, a Python program generates two random sample values for temperature and humidity, which are stored in Modbus registers 400001 and 400002, respectively. Neuron, as the industrial connectivity server, is configured to access these two Modbus registers at regular intervals of 1 second. Neuron then converts the data from the Modbus registers into an MQTT message and publishes it to the EMQX broker.
+In the Modbus simulator, a Python program generates two random sample values for temperature and humidity, which are stored in Modbus registers 400001 and 400002, respectively. Neuron, as the industrial connectivity server, is configured to access these two Modbus registers at regular intervals of 1 second. Neuron then converts the data from the Modbus registers into an [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) message and publishes it to the EMQX broker.
 
-EMQX, the MQTT broker, efficiently handles the incoming data and forwards it to the TimescaleDB database through the rule engine. The data, representing temperature and humidity values, is then ingested into the TimescaleDB database, which is optimized for time-series data storage.
+EMQX, the [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison), efficiently handles the incoming data and forwards it to the TimescaleDB database through the rule engine. The data, representing temperature and humidity values, is then ingested into the TimescaleDB database, which is optimized for time-series data storage.
 
 Finally, Grafana, the data visualization platform, retrieves the time series data from TimescaleDB and uses it to create dynamic visualizations and real-time insights. Users can monitor and analyze the temperature and humidity data in an intuitive and user-friendly manner through Grafana's customizable dashboards.
 
@@ -308,7 +308,7 @@ Click Add Subscription, and the topic should be the same as the one in step 9. F
 
 When MQTTX display the messages subscribed from EMQX broker continuously, it represents Neuron has successfully published the device data messages to EMQX broker continuously.
 
-> Note: Here we use [MQTTX](https://mqttx.app/), a powerful cross-platform MQTT client tool, which can be downloaded from the official website: [https://mqttx.app/downloads](https://mqttx.app/downloads).
+> Note: Here we use [MQTTX](https://mqttx.app/), a powerful cross-platform [MQTT client](https://www.emqx.com/en/blog/mqtt-client-tools) tool, which can be downloaded from the official website: [https://mqttx.app/downloads](https://mqttx.app/downloads).
 
 ### Timescale Database Setup Procedure
 
@@ -444,7 +444,7 @@ Neuron serves as a protocol gateway, providing a comprehensive set of industrial
 
 ## Efficient and Scalable IIoT Infrastructure
 
-The above example presents a basic linear topology to demonstrate the IIoT infrastructure. In addition, EMQX and Neuron offer remarkable flexibility and scalability in developing complex IIoT solutions. For instance, multiple Neuron devices can be deployed in different locations to facilitate data acquisition. Some of these devices can be installed on a server alongside the EMQX broker, while others may be situated in remote gateway devices. On the other side, there is a central control room where other storage and analytic applications are consuming the data acquired from Neuron.
+The above example presents a basic linear topology to demonstrate the IIoT infrastructure. In addition, EMQX and Neuron offer remarkable flexibility and scalability in developing complex [IIoT solutions](https://www.emqx.com/en/blog/iiot-platform-key-components-and-5-notable-solutions). For instance, multiple Neuron devices can be deployed in different locations to facilitate data acquisition. Some of these devices can be installed on a server alongside the EMQX broker, while others may be situated in remote gateway devices. On the other side, there is a central control room where other storage and analytic applications are consuming the data acquired from Neuron.
 
 ![Slice 166.png](https://assets.emqx.com/images/b6390d3ed7a2cfd0982afe6a1d91bda9.png)
 
@@ -452,7 +452,7 @@ In large enterprises, multiple production locations serve different purposes, so
 
 ![Slice 167.png](https://assets.emqx.com/images/4feff7316033e168f8c911e4bd0b8a45.png)
 
-EMQX and Neuron together provide a unified namespace for Industrial IoT applications. A unified namespace is a common naming hierarchy for MQTT topics that enables devices and applications to communicate with each other, regardless of their original naming, location, or protocol. All data messages are well organized in a contextualized structure to form a unified namespace, providing the following benefits to your enterprise:
+EMQX and Neuron together provide a unified namespace for Industrial IoT applications. A unified namespace is a common naming hierarchy for [MQTT topics](https://www.emqx.com/en/blog/advanced-features-of-mqtt-topics) that enables devices and applications to communicate with each other, regardless of their original naming, location, or protocol. All data messages are well organized in a contextualized structure to form a unified namespace, providing the following benefits to your enterprise:
 
 1. Simplified Data Access: A unified namespace provides a consistent and standardized way to access data across multiple production locations. It eliminates the need for employees or systems to navigate through different directories or file structures on various locations, making data access more efficient and user-friendly.
 

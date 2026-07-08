@@ -1,4 +1,4 @@
-NanoMQ 是面向边缘计算的 MQTT 消息引擎+多协议消息总线。支持 MQTT 协议和 ZeroMQ 和 Nanomsg 等不同边缘常用总线协议，集成 broker 和 brokerless 消息模式，方便打造物联网边缘计算应用。
+NanoMQ 是面向边缘计算的 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 消息引擎+多协议消息总线。支持 MQTT 协议和 ZeroMQ 和 Nanomsg 等不同边缘常用总线协议，集成 broker 和 brokerless 消息模式，方便打造物联网边缘计算应用。
 
 社区站地址：[https://nanomq.io/zh](https://nanomq.io/zh)
 
@@ -75,7 +75,7 @@ Disconnect（客户端连接断开事件）:
 
 | 名称                | 说明                | 执行时机                     |
 | ------------------- | ------------------- | ---------------------------- |
-| client.connack      | MQTT 客户端连接成功 | 服务端准备下发连接应答报文时 |
+| client.connack      | [MQTT 客户端](https://www.emqx.com/zh/blog/mqtt-client-tools)连接成功 | 服务端准备下发连接应答报文时 |
 | client.disconnected | MQTT 客户端连接断开 | 客户端连接层在准备关闭时     |
 | message.publish     | MQTT 消息发布       | 服务端在发布（路由）消息前   |
 
@@ -133,7 +133,7 @@ auth.http.auth_req.params = clientid=%c,username=%u,password=%P
 
 NanoMQ 将于下个月正式发布规则引擎，以及纳入新的数据库作为边缘数据全量持久化选项。目前此功能处于 Demo 阶段，在最新的主分支已可以使用。用户可以自行编译安装使用，欢迎尝鲜：[https://github.com/nanomq/nanomq/](https://github.com/nanomq/nanomq/) 。
 
-NanoSDK 将于下个月发布 MQTT over QUIC 的 RC 版本，这是业界首个基于 C 语言的完整支持 MQTT 3.1.1 和 QUIC 功能的 MQTT SDK，敬请期待。
+NanoSDK 将于下个月发布 MQTT over [QUIC](https://www.emqx.com/zh/blog/quic-protocol-the-features-use-cases-and-impact-for-iot-iov) 的 RC 版本，这是业界首个基于 C 语言的完整支持 MQTT 3.1.1 和 QUIC 功能的 MQTT SDK，敬请期待。
 
 
 <section class="promotion">

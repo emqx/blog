@@ -1,4 +1,4 @@
-近日，**Neuron 2.2.2 正式发布。** 这一最新版本对 MQTT 插件、SDK 开发包及其他商业驱动插件进行了优化和更新，为工业领域用户提供更加高效便捷的数据采集。
+近日，**Neuron 2.2.2 正式发布。** 这一最新版本对 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 插件、SDK 开发包及其他商业驱动插件进行了优化和更新，为工业领域用户提供更加高效便捷的数据采集。
 
 下载地址：[https://www.emqx.com/zh/downloads-and-install/neuron](https://www.emqx.com/zh/downloads-and-install/neuron) 
 
@@ -19,7 +19,7 @@
 
 ## OPC DA 驱动
 
-新增独立的 OPC DA 和 OPC UA 协议转换程序 opcshift。opcshift 同时作为 OPC DA 客户端和 OPC UA 服务端，通过读取 DA 服务器的数据并转化为 UA 的协议格式，然后再交由 Neuron 的 OPC UA 驱动进行处理。
+新增独立的 OPC DA 和 [OPC UA](https://www.emqx.com/zh/blog/opc-ua-protocol) 协议转换程序 opcshift。opcshift 同时作为 OPC DA 客户端和 OPC UA 服务端，通过读取 DA 服务器的数据并转化为 UA 的协议格式，然后再交由 Neuron 的 OPC UA 驱动进行处理。
 
 opcshift 依赖于微软 DCOM 技术，因此只能部署在 Windows 操作系统之上（32 位或 64 位均可）。Neuron 可以通过标准的 OPC UA 连接方式与 opcshift 跨主机连接。
 

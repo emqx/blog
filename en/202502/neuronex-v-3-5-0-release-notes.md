@@ -11,7 +11,7 @@ These new drivers enable NeuronEX to seamlessly integrate with a wider range of 
 
 ## **MQTT Driver Enhancements**
 
-The MQTT driver in version 3.5.0 has received several functional enhancements, further improving its application capabilities in industrial interconnection:
+The [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) driver in version 3.5.0 has received several functional enhancements, further improving its application capabilities in industrial interconnection:
 
 - [**Custom Data Upload Format**](https://docs.emqx.com/en/neuronex/latest/configuration/north-apps/mqtt/api.html#data-upload): The MQTT plugin publishes the collected data in JSON format to the specified topic of the MQTT Broker. The specific format of the reported data is specified by the Upload Format parameter, and there are multiple formats available for selection, such as the **Values-format, Tags-format, ECP-format, and Custom format**. Users can report MQTT data through the Custom format to meet the requirements of different application scenarios.
 
@@ -23,7 +23,7 @@ The MQTT driver in version 3.5.0 has received several functional enhancements, f
 
 ## **OPC UA Driver Optimizations**
 
-The OPC UA driver in version 3.5.0 has been optimized with several new features, enhancing its application capabilities in industrial automation:
+The [OPC UA](https://www.emqx.com/en/blog/opc-ua-protocol) driver in version 3.5.0 has been optimized with several new features, enhancing its application capabilities in industrial automation:
 
 - **Support for Extended Object Type Collection**: Users can collect data from extended object types via the OPC UA driver, meeting the needs of complex industrial scenarios.
 - **Optimized Tag Browser Functionality**: NeuronEX provides a tag browser feature, helping users efficiently manage OPC UA device data tags. By scanning the OPC UA server address space, users can quickly discover and add tags to southbound group, monitor data in real-time, and export tags for local editing and use.

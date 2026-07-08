@@ -6,7 +6,7 @@
 
 ## 基于 EMQX 的高性能、高可用车联网 TSP 数据底座解决方案
 
-[MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) (Message Queuing Telemetry Transport) 是一种专门针对低带宽、高延迟、不可靠网络等场景而设计的轻量级消息传输协议。其发布/订阅模式、会话保持机制、QoS 消息质量机制使其对比私有 TCP 及 HTTP 协议，在弱网支持、并发能力等方面更适用于车联网场景。在车联网场景中，像 EMQX 这样的 MQTT Broker 就成为了车联网平台架构中接入层核心，因为 Broker 可以解耦平台与海量车机、代理车机与云平台间的连接交互。EMQX 是基于 MQTT 协议的企业级数据接入平台，能连接车辆和云端，提供连接和数据解决方案。它的高性能、高可靠、可伸缩性设计，能够实时移动和处理车联网数据，帮助车企解决上述车联网平台在连接和数据基础设施层面的挑战，开发团队可专注上层应用的开发。
+[MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) (Message Queuing Telemetry Transport) 是一种专门针对低带宽、高延迟、不可靠网络等场景而设计的轻量级消息传输协议。其发布/订阅模式、会话保持机制、QoS 消息质量机制使其对比私有 TCP 及 HTTP 协议，在弱网支持、并发能力等方面更适用于车联网场景。在车联网场景中，像 EMQX 这样的 [MQTT Broker](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison) 就成为了车联网平台架构中接入层核心，因为 Broker 可以解耦平台与海量车机、代理车机与云平台间的连接交互。EMQX 是基于 MQTT 协议的企业级数据接入平台，能连接车辆和云端，提供连接和数据解决方案。它的高性能、高可靠、可伸缩性设计，能够实时移动和处理车联网数据，帮助车企解决上述车联网平台在连接和数据基础设施层面的挑战，开发团队可专注上层应用的开发。
 
 ![车联网 TSP 数据底座解决方案](https://assets.emqx.com/images/cf3920d60e1a31edc14205ed10524715.png)
 
@@ -76,7 +76,7 @@
 
 ### NanoSDK
 
-[NanoSDK](https://github.com/emqx/NanoSDK) 是基于 NNG 项目拓展的 MQTT 3.1.1/5.0 SDK，同时也是第一个原生支持 MQTT over QUIC 的 C 语言 SDK。
+[NanoSDK](https://github.com/emqx/NanoSDK) 是基于 NNG 项目拓展的 MQTT 3.1.1/5.0 SDK，同时也是第一个原生支持 MQTT over [QUIC](https://www.emqx.com/zh/blog/quic-protocol-the-features-use-cases-and-impact-for-iot-iov) 的 C 语言 SDK。
 
 - 其内部只依赖原生的 POSIX 校准API 实现。可轻松移植和适配到各种操作系统和硬件芯片架构。
 - NanoSDK 不同于传统 MQTT SDK 只有 1-2 个线程，内部提供全异步 I/O 实现，默认多线程收发消息。因此 NanoSDK 可以充分的利用系统资源，提供更高消费吞吐能力。提供了高性能的客户端消费能力和更高的资源利用性价比。

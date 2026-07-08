@@ -1,6 +1,6 @@
 提起海外云服务平台厂商，AWS、Azure 和 Google Cloud Platform（以下简称 GCP）是当之无愧的三大巨头。尽管 GCP 的市场占有份额略低于 AWS 和  Azure，但 GCP 因其机器学习和 AI 工作负载最佳云的形象，深受许多技术型公司的喜爱。
 
-截至目前，EMQX Cloud 已陆续支持在 AWS、Azure 的十几个区域进行部署。
+截至目前，[EMQX Cloud](https://www.emqx.com/zh/cloud) 已陆续支持在 AWS、Azure 的十几个区域进行部署。
 
 为了继续完善海外主流云平台支持列表，我们于近日完成了对 Google Cloud Platform 的部署支持，并支持 6 种不同区域部署，帮助用户在 GCP 平台开发更多的 AIoT 应用。
 
@@ -8,7 +8,7 @@
 
 ## 低延迟、高可靠
 
-EMQX Cloud 最高可支持千万级设备连接，每秒处理百万级 MQTT 消息，通过软实时运行系统保证消息交付延迟低至毫秒级。
+EMQX Cloud 最高可支持千万级设备连接，每秒处理百万级 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 消息，通过软实时运行系统保证消息交付延迟低至毫秒级。
 
 而 Google 拥有独家私有全球光纤和分层网络，在全球范围内拥有 18 条海底电缆、27 个云计算区域以及 82 个云计算可用区。这使得 GCP 无需经过其他 Pop 节点，节省了在各个节点的时间，提高了速度和稳定性。
 

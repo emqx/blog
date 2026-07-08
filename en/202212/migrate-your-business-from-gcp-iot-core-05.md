@@ -1,9 +1,9 @@
-In [the previous article](https://www.emqx.com/en/blog/migrate-your-business-from-gcp-iot-core-04), we described how to transfer data to GCP using VPC Network Peering. In addition to this approach, we have an even simpler one. In this article, we will describe how to use EMQX Cloud's data integration feature to bridge data to GCP pub/sub and then transfer data to other applications (e.g. data analytics, database services).
+In [the previous article](https://www.emqx.com/en/blog/migrate-your-business-from-gcp-iot-core-04), we described how to transfer data to GCP using VPC Network Peering. In addition to this approach, we have an even simpler one. In this article, we will describe how to use [EMQX Cloud](https://www.emqx.com/en/cloud)'s data integration feature to bridge data to GCP pub/sub and then transfer data to other applications (e.g. data analytics, database services).
 
 
 ## Brief
 
-In this article, we will simulate temperature and humidity data and report it to the EMQX Cloud via the MQTT protocol, after which we will use the EMQX Cloud data integration to bridge the data to the GCP Pub/Sub.
+In this article, we will simulate temperature and humidity data and report it to the EMQX Cloud via the [MQTT protocol](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt), after which we will use the EMQX Cloud data integration to bridge the data to the GCP Pub/Sub.
 
 Tips:
 
@@ -136,7 +136,7 @@ To see the created rules, go to Data Integrations/View Created Rules. Click the 
 
 ### 1. Use MQTTX to simulate data reporting
 
-We recommend you use [MQTTX](https://mqttx.app/), an elegant cross-platform MQTT 5.0 desktop client to subscribe/publish messages.
+We recommend you use [MQTTX](https://mqttx.app/), an elegant cross-platform [MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5) desktop client to subscribe/publish messages.
 
 Click on the add button and fill in the deployment information to connect to the deployment. You need to replace `broker.emqx.io` with the created deployment [connection address](https://docs.emqx.com/en/cloud/latest/create/overview.html#view-deployment-information), and add [client authentication information](https://docs.emqx.com/en/cloud/latest/deployments/auth_overview.html#authentication) to the EMQX Cloud console. Enter the topic name and payload message to publish the message.
 
@@ -159,7 +159,7 @@ Go back to the GCP Pub/Sub console and go to the Subscriptions page. Select the 
 
 So far, we have used EMQX Cloud data integration based on the public cloud to bridge the entire process of data to the GCP Pub/Sub.
 
-Most GCP IoT Core users have built IoT applications with the data services provided by GCP. Although GCP IoT Core is about to shut down its business, you can still get your business ongoing without any changes after migrating your hosting service to EMQX Cloud and bridging the data to GCP Pub/Sub by data integration feature.
+Most GCP [IoT Core](https://www.emqx.com/en/blog/understanding-aws-iot-core) users have built IoT applications with the data services provided by GCP. Although GCP IoT Core is about to shut down its business, you can still get your business ongoing without any changes after migrating your hosting service to EMQX Cloud and bridging the data to GCP Pub/Sub by data integration feature.
 
 Enjoy your migration and new IoT journey with EMQX Cloud!
 

@@ -39,7 +39,7 @@ MQTT 反控允许任何支持 [MQTT 协议](https://www.emqx.com/zh/blog/the-eas
 - 在 NeuronEX 配置北向 MQTT 插件，并设置「写请求主题」和「写响应主题」。
 - 配置南向驱动节点，并设置点位为可读可写状态。
 
-以下通过一个示例进行详细说明，示例中采用 EMQX 和 MQTTX 作为 MQTT 客户端。
+以下通过一个示例进行详细说明，示例中采用 EMQX 和 MQTTX 作为 [MQTT 客户端](https://www.emqx.com/zh/blog/mqtt-client-tools)。
 
 ### MQTT 完整示例
 

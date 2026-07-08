@@ -1,4 +1,4 @@
-AWS IoT Core is often the first stop for teams beginning their IoT journey. It is easy to adopt, tightly integrated with the AWS ecosystem, and ideal for early prototypes or small deployments. For proof-of-concept work or low-frequency data, the pricing feels simple and predictable.
+[AWS IoT Core](https://www.emqx.com/en/blog/understanding-aws-iot-core) is often the first stop for teams beginning their IoT journey. It is easy to adopt, tightly integrated with the AWS ecosystem, and ideal for early prototypes or small deployments. For proof-of-concept work or low-frequency data, the pricing feels simple and predictable.
 
 The challenge is what happens when those deployments expand, device behavior becomes more active, and millions or billions of messages begin flowing through the system. Many teams reach this stage and discover that AWS IoT Core’s metered pricing grows far faster than the workload itself, creating a cost wall that forces a re-evaluation of their architecture.
 
@@ -71,7 +71,7 @@ This pattern is common in vibration monitoring, equipment diagnostics, and high-
 
 - **Total AWS IoT Core cost:** **About 26,731.5 dollars per month**. 
 
-  *(Note: This assumes standard MQTT delivery. If the application uses Device Shadows even moderately, AWS costs will rapidly escalate past 34,000 dollars, pushing total costs up significantly).*
+  *(Note: This assumes standard [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) delivery. If the application uses Device Shadows even moderately, AWS costs will rapidly escalate past 34,000 dollars, pushing total costs up significantly).*
 
 ### **EMQX Dedicated Flex monthly cost**
 
@@ -106,7 +106,7 @@ This helps teams avoid vendor lock-in and maintain long-term portability.
 
 ### **2. Full compliance with MQTT standards**
 
-According to EMQ’s public comparison guide, AWS IoT Core has limitations, including the lack of QoS 2, no guaranteed message ordering, and a one-hour retry limit for QoS 1 messages. EMQX fully implements MQTT 3.x and MQTT 5, which support more advanced protocol features that some applications depend on.
+According to EMQ’s public comparison guide, AWS IoT Core has limitations, including the lack of QoS 2, no guaranteed message ordering, and a one-hour retry limit for QoS 1 messages. EMQX fully implements MQTT 3.x and [MQTT 5](https://www.emqx.com/en/blog/introduction-to-mqtt-5), which support more advanced protocol features that some applications depend on.
 
 ### **3. Dedicated single-tenant architecture**
 

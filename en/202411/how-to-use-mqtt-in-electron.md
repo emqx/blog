@@ -382,7 +382,7 @@ function onDisconnect() {
 
 ### Testing the MQTT Connection in Electron
 
-Once you have set up the MQTT client, you can test your connection using [MQTTX](https://mqttx.app/), a popular all-in-one MQTT 5.0 client. In this test, you’ll send and receive messages between your Electron app and MQTT broker. 
+Once you have set up the [MQTT client](https://www.emqx.com/en/blog/mqtt-client-tools), you can test your connection using [MQTTX](https://mqttx.app/), a popular all-in-one [MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5) client. In this test, you’ll send and receive messages between your Electron app and MQTT broker. 
 
 When using MQTTX to send a message to the client, you can see that the message is received properly:
 

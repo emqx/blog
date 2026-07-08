@@ -4,7 +4,7 @@ The speed of the CPU is much faster than the disk, network, and other IO operati
 
 To solve this problem, Python added the feature of asynchronous IO. In Python 3.4, asyncio was formally included in the standard library, and in Python 3.5, the async/await keyword was added. Users can easily make functions becoming asynchronous functions by adding the async keyword to the front of the function.
 
-In the MQTT client libraries for Python, [HBMQTT](https://github.com/beerfactory/hbmqtt) was the first Python MQTT library supporting asynchronous IO.
+In the [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) client libraries for Python, [HBMQTT](https://github.com/beerfactory/hbmqtt) was the first Python [MQTT library](https://www.emqx.com/en/blog/mqtt-client-tools) supporting asynchronous IO.
 
 > **Note**
 >
@@ -253,7 +253,7 @@ Back in the terminal, we see that the client receives and prints messages. Also,
 
 ## Summary
 
-So far, we have completed connecting the HBMQTT library to the [public MQTT broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker) and implemented the connection, message publishing, and subscription between the test client and the MQTT broker. We can implement a more effective MQTT client by using Python asynchronous IO to perform the sending and receiving of messages. 
+So far, we have completed connecting the HBMQTT library to the [public MQTT broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker) and implemented the connection, message publishing, and subscription between the test client and the [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison). We can implement a more effective MQTT client by using Python asynchronous IO to perform the sending and receiving of messages. 
 
 We will continue to publish more articles on IoT development and Python, so stay tuned for more.
 

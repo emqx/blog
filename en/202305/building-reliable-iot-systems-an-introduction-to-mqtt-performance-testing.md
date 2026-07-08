@@ -32,7 +32,7 @@ Although different scenarios and test cases are used to meet specific requiremen
 - Test how the system performs for a long time. The purpose is to verify if the system keeps stable if continuously running for a period of time.
 - Test how the system performs in an unstable network condition. The purpose is to verify if the system can handle situations of weak networks, which is common for IoT services.
 
-As MQTT is most widely used in IoT industry,  we also list some typical testing scenarios for MQTT protocol based on real customer requirements:
+As MQTT is most widely used in IoT industry,  we also list some typical testing scenarios for [MQTT protocol](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) based on real customer requirements:
 
 - Connection: Clients connect to the broker within a period of time, and keep the connections with the broker for quite a while.
 - Fan-out: Many clients act as subscribers, with only a few or a single publisher.
@@ -62,7 +62,7 @@ When performing tests against MQTT protocol, it is also important to meet its un
 
 Performance testing is critical for IoT systems to minimize risks, improve robustness, and help enterprises to achieve business goals in the rapidly growing IoT industry.
 
-EMQ has proposed the [Open MQTT Benchmark Suite](https://github.com/emqx/mqttbs) to provide a feasible way for MQTT benchmark. It analyzes the key metrics for performance evaluation and presents practical use cases for benchmark testing. Developers can get an impartial comparison reference between different MQTT brokers and make an informed selection.
+EMQ has proposed the [Open MQTT Benchmark Suite](https://github.com/emqx/mqttbs) to provide a feasible way for [MQTT benchmark](https://www.emqx.com/en/blog/open-mqtt-benchmarking-comparison-mqtt-brokers-in-2023). It analyzes the key metrics for performance evaluation and presents practical use cases for benchmark testing. Developers can get an impartial comparison reference between different [MQTT brokers](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) and make an informed selection.
 
 Read our blog for more information: [Open MQTT Benchmark Suite: The Ultimate Guide to MQTT Performance Testing](https://www.emqx.com/en/blog/open-mqtt-benchmark-suite-the-ultimate-guide-to-mqtt-performance-testing).
 

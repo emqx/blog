@@ -1,6 +1,6 @@
-Recently, MQTTX 1.9.0, an MQTT 5.0 client tool, has been released.
+Recently, MQTTX 1.9.0, an [MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5) client tool, has been released.
 
-For the desktop client, some UI / UE has been optimized, a new page has been added to help users learn MQTT protocol knowledge more quickly and systematically, and some known issues have been fixed; for the command-line client, the `bench` command has been added to help users create, subscribe and publish the custom number of connections, topics and messages, and easily complete MQTT service performance testing.
+For the desktop client, some UI / UE has been optimized, a new page has been added to help users learn [MQTT protocol](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) knowledge more quickly and systematically, and some known issues have been fixed; for the command-line client, the `bench` command has been added to help users create, subscribe and publish the custom number of connections, topics and messages, and easily complete MQTT service performance testing.
 
 Download the latest version here: [https://www.emqx.com/en/try?product=MQTTX](https://www.emqx.com/en/try?product=MQTTX) 
 
@@ -15,7 +15,7 @@ In v1.9.0, MQTTX CLI provides an out-of-the-box benchmark tool -- `mqttx bench`,
 
 > For users who need large-scale scenarios and deep customization of testing services, we recommend using the fully hosted MQTT load testing cloud service XMeter
 
-Users can use the `bench` command to create a custom number of connections at a specified rate, subscribe to a custom number of topics, publish the custom number of messages to single or multiple topics, and test the connection performance and message throughput of a single or cluster MQTT broker through a single command. For example:
+Users can use the `bench` command to create a custom number of connections at a specified rate, subscribe to a custom number of topics, publish the custom number of messages to single or multiple topics, and test the connection performance and message throughput of a single or cluster [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) through a single command. For example:
 
 1. Create 10000 connections at a rate of 10 milliseconds per connection, and the client ID is `mqttx-bench-%i`, where `%i` is the index placeholder, that is, the client ID of the Nth client connection is `mqttx-bench-n`:
 
@@ -66,7 +66,7 @@ In addition, the script function also added a `msgType` parameter, which can ext
 
 In addition to providing powerful testing client tools to help developers quickly develop and debug MQTT services and applications, we also hope that developers can better understand MQTT protocol in this process and fully apply its related features.
 
-Therefore, MQTTX 1.9.0 adds a help page that provides various contents related to MQTT protocol, including basic knowledge, quick start, connection parameter description, client programming tutorial, etc., to help users quickly build their own MQTT IoT applications. By satisfying users' various testing needs and providing system knowledge and practical case reference, MQTTX will become a solid backstop for users to build and design MQTT IoT applications.
+Therefore, MQTTX 1.9.0 adds a help page that provides various contents related to MQTT protocol, including basic knowledge, quick start, connection parameter description, client programming tutorial, etc., to help users quickly build their own [MQTT IoT](https://www.emqx.com/en/blog/what-is-the-mqtt-protocol) applications. By satisfying users' various testing needs and providing system knowledge and practical case reference, MQTTX will become a solid backstop for users to build and design MQTT IoT applications.
 
 ![MQTT Protocol Help Page](https://assets.emqx.com/images/f48ce43f7561ee6908d4f53ae3a56e7d.png)
 
@@ -94,7 +94,7 @@ MQTTX is still continuously improving and perfecting, to bring more practical an
 - Receive message and storage performance optimization, a large number of messages do not block
 - MQTTX CLI supports using configuration files to connect, publish and subscribe
 - Supports MQTT Debug
-- Supports Sparkplug B format
+- Supports [Sparkplug B](https://www.emqx.com/en/solutions/mqtt-sparkplug) format
 - The received message can be automatically charted
 - Plugins
 - Script test automation (Flow)

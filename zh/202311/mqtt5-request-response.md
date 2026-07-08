@@ -1,4 +1,4 @@
-本文将深入研究如何在 MQTT 的异步消息传递框架下，借助 MQTT 5.0 的新特性，实现“请求 / 响应”机制。
+本文将深入研究如何在 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 的异步消息传递框架下，借助 MQTT 5.0 的新特性，实现“请求 / 响应”机制。
 
 ## MQTT 5.0 之前的“请求 / 响应”
 
@@ -42,7 +42,7 @@ MQTT 的发布订阅机制，使消息的发送者和接收者完全解耦，所
 
 出于安全考虑，MQTT 服务端通常会限制客户端可以发布和订阅的主题。请求方可以指定一个随机的响应主题，但无法保证自己有订阅该主题的权限，也无法保证响应方有向该响应主题发布消息的权限。
 
-所以 MQTT 5.0 还引入了响应信息 (Response Information) 属性，通过在 CONNECT 报文中将请求响应信息(Request Response Information) 标识符设置为 1，客户端可以请求服务端在 CONNACK 报文中返回响应信息。客户端可以将响应信息的内容作为响应主题的某个特定部分，以便通过服务端的权限检查。
+所以 MQTT 5.0 还引入了响应信息 (Response Information) 属性，通过在 CONNECT 报文中将请求响应信息(Request Response Information) 标识符设置为 1，客户端可以请求服务端在 [CONNACK](https://www.emqx.com/zh/blog/mqtt5-new-features-reason-code-and-ack) 报文中返回响应信息。客户端可以将响应信息的内容作为响应主题的某个特定部分，以便通过服务端的权限检查。
 
 ![04responseinformation.png](https://assets.emqx.com/images/5d299bd028d7d3d9851589e9eaa0477a.png)
 
