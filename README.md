@@ -465,6 +465,7 @@ EMQ products including EMQX, EMQX Cloud, Neuron, NanoMQ, MQTTX and more.
 ## [MQTT](https://www.emqx.com/en/blog/category/mqtt)
 Learn MQTT protocol from beginner to advanced, including tutorials, clients, programming and security.
 
+- [Zigbee2MQTT in 2026: Local Smart-Home Control over MQTT](https://www.emqx.com/en/blog/zigbee2mqtt-in-2026) ([Edit](https://github.com/emqx/blog/edit/main/en/202607/zigbee2mqtt-in-2026.md))
 - [What a PV Cooling Paper Reveals About Distributed IoT Control](https://www.emqx.com/en/blog/what-a-pv-cooling-paper-reveals-about-distributed-iot-control) ([Edit](https://github.com/emqx/blog/edit/main/en/202606/what-a-pv-cooling-paper-reveals-about-distributed-iot-control.md))
 - [Mosquitto vs EMQX: Features, Scalability, and Use Cases Compared](https://www.emqx.com/en/blog/emqx-vs-mosquitto-2023-mqtt-broker-comparison) ([Edit](https://github.com/emqx/blog/edit/main/en/202606/emqx-vs-mosquitto-2023-mqtt-broker-comparison.md))
 - [Using MQTT on ESP8266: A Quick Start Guide](https://www.emqx.com/en/blog/esp8266-connects-to-the-public-mqtt-broker) ([Edit](https://github.com/emqx/blog/edit/main/en/202605/esp8266-connects-to-the-public-mqtt-broker.md))
