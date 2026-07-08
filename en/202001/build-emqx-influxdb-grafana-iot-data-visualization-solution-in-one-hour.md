@@ -69,7 +69,7 @@ There are services or installation package resources and tutorials of different 
 
 ### EMQX Enterprise  installation
 
-####  Installation
+#### Installation
 
 > If you are new to EMQX, we recommend you getting started with [EMQX Guide](https://docs.emqx.com/en/emqx/v3.0/). 
 

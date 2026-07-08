@@ -110,7 +110,7 @@ MQTT 协议广泛应用于物联网、移动互联网、智能硬件、车联网
 
 ![MQTT 协议应用领域](https://assets.emqx.com/images/16aad45238f605914ce52cd1ceb89e99.png)
 
-###  协议特性
+### 协议特性
 
 - 轻量可靠：[MQTT 报文](https://www.emqx.com/zh/blog/introduction-to-mqtt-control-packets)紧凑，可在严重受限的硬件设备和低带宽、高延迟的网络上实现稳定传输。
 - 发布/订阅模式：基于发布/订阅模式，发布订阅模式的优点在于发布者与订阅者的解耦：订阅者与发布者不需要建立直接连接、也不需要同时在线。

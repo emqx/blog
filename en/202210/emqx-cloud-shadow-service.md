@@ -86,7 +86,7 @@ On the "Shadow Model List" page, you can add, edit, and modify shadow models, an
 
 ![Shadow Model List](https://assets.emqx.com/images/8827c5043ac9decf0b23f5a7ccdc46c9.png)
 
-###  **Instructions**
+### **Instructions**
 
 Click “Add”, fill in the relevant information, and click “Confirm” to create the shadow model.
 

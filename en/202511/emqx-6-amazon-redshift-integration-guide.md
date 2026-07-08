@@ -39,7 +39,7 @@ This article will provide a comprehensive, step-by-step guide on how to successf
 
 ![image.png](https://assets.emqx.com/images/772667773c81c19ba6b1dcaa5186fb43.png)
 
-##  Part 2: Configure the Redshift Connector in EMQX
+## Part 2: Configure the Redshift Connector in EMQX
 
 1. Open the EMQX Dashboard
 2. Navigate to Integration → Connectors → Create

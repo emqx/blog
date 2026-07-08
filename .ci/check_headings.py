@@ -8,7 +8,9 @@ Rules:
 1. The body must not contain a level-1 heading (# ).
 2. Heading levels must not skip a level; they may only deepen one step at
    a time, e.g. 2 3 4 2 is valid while 2 4 is not.
-3. README.md / README-JA.md / README-ZH.md are skipped.
+3. Heading formatting: exactly one space after the '#' marks, no missing
+   space, and no leading indentation before the '#'.
+4. README.md / README-JA.md / README-ZH.md are skipped.
 """
 
 import re
@@ -18,20 +20,28 @@ from pathlib import Path
 SKIP_FILES = {'README.md', 'README-JA.md', 'README-ZH.md'}
 
 # ATX heading: up to 3 leading spaces, and '#' must be followed by a space
-# or the end of the line.
+# or the end of the line. Used for the heading-level checks.
 HEADING_RE = re.compile(r'^ {0,3}(#{1,6})(?:\s.*)?$')
+# A line that looks like an ATX heading (1-6 '#' not followed by a 7th),
+# with optional leading whitespace. Used for the formatting checks.
+ATX_FORMAT_RE = re.compile(r'^(\s*)(#{1,6})(?!#)(.*)$')
 # Code fence: ``` or ~~~, capturing the fence characters and the info string.
 FENCE_RE = re.compile(r'^ {0,3}((`{3,})|(~{3,}))\s*(.*)$')
 
 
-def extract_headings(lines):
-    """Return the headings in the body, skipping fenced code blocks.
+def scan_file(lines):
+    """Scan the file once, skipping fenced code blocks.
 
     Fences follow CommonMark rules: a closing fence carries no info string
     and is no shorter than the opening fence; otherwise the line counts as
-    ordinary content inside the fence. Each item is (line_no, level, text).
+    ordinary content inside the fence.
+
+    Returns (headings, format_issues) where headings is a list of
+    (line_no, level, text) for well-formed ATX headings and format_issues
+    is a list of (line_no, message).
     """
     headings = []
+    format_issues = []
     fence_marker = None  # opening fence char ('`' or '~'); None when outside a fence
     fence_len = 0  # number of fence characters in the opening fence
     for line_no, line in enumerate(lines, start=1):
@@ -53,23 +63,56 @@ def extract_headings(lines):
             continue
         if fence_marker is not None:
             continue
+
         heading_match = HEADING_RE.match(line)
         if heading_match:
             level = len(heading_match.group(1))
             headings.append((line_no, level, line.strip()))
-    return headings
+
+        format_issues.extend(check_heading_format(line_no, line))
+    return headings, format_issues
+
+
+def check_heading_format(line_no, line):
+    """Return formatting issues for a single heading-like line."""
+    match = ATX_FORMAT_RE.match(line)
+    if not match:
+        return []
+    indent, hashes, rest = match.group(1), match.group(2), match.group(3)
+    # A tab or 4+ leading spaces makes it an indented code block, not a heading.
+    if '\t' in indent or len(indent) > 3:
+        return []
+
+    issues = []
+    if indent:
+        issues.append(
+            (line_no, f'heading not at line start ({len(indent)} leading '
+                      f'space(s)) -> {line.strip()}')
+        )
+    content = rest.lstrip(' \t')
+    if content:
+        spaces = rest[:len(rest) - len(content)]
+        if spaces == '':
+            issues.append(
+                (line_no, f'missing space after "{hashes}" -> {line.strip()}')
+            )
+        elif len(spaces) >= 2:
+            issues.append(
+                (line_no, f'multiple spaces after "{hashes}" -> {line.strip()}')
+            )
+    return issues
 
 
 def check_file(path):
     """Check a single file and return a list of issue messages."""
     lines = path.read_text(encoding='utf-8').splitlines()
-    headings = extract_headings(lines)
-    issues = []
+    headings, format_issues = scan_file(lines)
+    issues = []  # (line_no, message)
 
     # Rule 1: the body must not contain a level-1 heading.
     for line_no, level, text in headings:
         if level == 1:
-            issues.append(f'  line {line_no}: level-1 heading found -> {text}')
+            issues.append((line_no, f'level-1 heading found -> {text}'))
 
     # Rule 2: no skipped levels. The first body heading should be h2, and
     # each deepening step may only add one level.
@@ -85,18 +128,22 @@ def check_file(path):
         if level > prev_level + 1:
             if not seen_heading:
                 issues.append(
-                    f'  line {line_no}: first body heading should be h2, '
-                    f'got h{level} (skipped h2) -> {text}'
+                    (line_no, f'first body heading should be h2, got h{level} '
+                              f'(skipped h2) -> {text}')
                 )
             else:
                 issues.append(
-                    f'  line {line_no}: heading jumps from h{prev_level} '
-                    f'to h{level} -> {text}'
+                    (line_no, f'heading jumps from h{prev_level} to h{level} '
+                              f'-> {text}')
                 )
         prev_level = level
         seen_heading = True
 
-    return issues
+    # Rule 3: heading formatting (spacing / indentation).
+    issues.extend(format_issues)
+
+    issues.sort(key=lambda item: item[0])
+    return [f'  line {line_no}: {message}' for line_no, message in issues]
 
 
 def collect_md_files(paths):
