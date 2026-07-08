@@ -2,7 +2,7 @@
 
 [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) is a lightweight, publish-subscribe, machine-to-machine network protocol for message queue/message queuing service. It is designed for connections with remote locations that have devices with resource constraints or limited network bandwidth, such as in the Internet of Things (IoT).
 
-As the scale of MQTT deployment and business operations continues to grow, it's becoming more crucial to learn how to analyze [MQTT packet](https://www.emqx.com/en/blog/mqtt-5-0-control-packets-02-publish-puback) captures within the network. This blog will help you master the ins and outs of [MQTT packet](https://www.emqx.com/en/blog/introduction-to-mqtt-control-packets) analysis using the Wireshark tool, enabling you to diagnose the MQTT exchange process and enhance your understanding of MQTT traffic patterns.
+As the scale of MQTT deployment and business operations continues to grow, it's becoming more crucial to learn how to analyze [MQTT packet](https://www.emqx.com/en/blog/mqtt-5-0-control-packets-01-connect-connack) captures within the network. This blog will help you master the ins and outs of [MQTT packet](https://www.emqx.com/en/blog/introduction-to-mqtt-control-packets) analysis using the Wireshark tool, enabling you to diagnose the MQTT exchange process and enhance your understanding of MQTT traffic patterns.
 
 ## **Understanding Wireshark**
 

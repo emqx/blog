@@ -2,7 +2,7 @@ This second article focuses on the foundation beneath EMQX: the Linux kernel, ne
 
 ## **1. Operating System and Network Layer Hardening**
 
-Before any [MQTT packet](https://www.emqx.com/en/blog/mqtt-5-0-control-packets-02-publish-puback) reaches EMQX, the host operating system defines resource limits, networking behaviour, and the exposed attack surface. From an SRE’s perspective, the OS is the first line of defense against resource exhaustion and volumetric attacks, and a mis‑tuned kernel is often the real cause behind “random” broker failures.
+Before any [MQTT packet](https://www.emqx.com/en/blog/mqtt-5-0-control-packets-01-connect-connack) reaches EMQX, the host operating system defines resource limits, networking behaviour, and the exposed attack surface. From an SRE’s perspective, the OS is the first line of defense against resource exhaustion and volumetric attacks, and a mis‑tuned kernel is often the real cause behind “random” broker failures.
 
 - **OS Lifecycle Management:** Keep the operating system and kernel regularly patched with security updates. Do not deploy or retain end-of-life (EOL) OS releases in production environments.
 - **Secure Administrative Access:** Restrict SSH access to trusted management networks, disable password authentication, and prohibit direct root login. All administrative access should be auditable.

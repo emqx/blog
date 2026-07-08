@@ -82,7 +82,7 @@ Relational databases use the relational model to organize data. They are the old
 
 **Applicable Scenarios:**
 
-Relational databases are well-suited for storing critical data that require strong consistency, such as client metadata, [MQTT authentication](https://www.emqx.com/en/blog/mqtt-5-0-control-packets-06-auth) data, and small-scale message data.
+Relational databases are well-suited for storing critical data that require strong consistency, such as client metadata, [MQTT authentication](https://www.emqx.com/en/blog/securing-mqtt-with-username-and-password-authentication) data, and small-scale message data.
 
 ### Non-Relational Databases (NoSQL)
 

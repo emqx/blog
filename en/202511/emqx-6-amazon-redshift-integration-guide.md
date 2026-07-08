@@ -1,6 +1,6 @@
 EMQX 6.0 has substantially enhanced its data integration capabilities, introducing crucial connectors to major cloud data platforms, including Amazon Redshift and Google BigQuery. This expansion ensures your IoT data can be routed efficiently to the best analytics engine for your needs.
 
-Amazon Redshift is a fully managed, petabyte-scale cloud data warehouse that enables fast, efficient querying and analysis of large structured and semi-structured datasets, making it a powerful choice for persistent [IoT telemetry](https://www.emqx.com/en/blog/open-telemetry-the-basics-and-benefits-for-mqtt-and-iot-observability).
+Amazon Redshift is a fully managed, petabyte-scale cloud data warehouse that enables fast, efficient querying and analysis of large structured and semi-structured datasets, making it a powerful choice for persistent IoT telemetry.
 
 This article will provide a comprehensive, step-by-step guide on how to successfully configure and deploy the EMQX 6.0 integration with Redshift, enabling a reliable pipeline for real-time IoT data warehousing.
 

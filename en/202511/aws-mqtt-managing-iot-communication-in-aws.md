@@ -127,7 +127,7 @@ Logging, on the other hand, is crucial for troubleshooting and understanding you
 
 It is important to regularly review and update your security settings, ensure that your data is encrypted, and keep your software up to date.
 
-In terms of compliance, it is crucial to understand the specific requirements of the standards you are subject to, and to ensure that your [AWS MQTT](https://www.emqx.com/en/blog/quick-start-of-emqx-mqtt-cloud-service) implementation meets these requirements. Regular audits and assessments can help to ensure ongoing compliance.
+In terms of compliance, it is crucial to understand the specific requirements of the standards you are subject to, and to ensure that your [AWS MQTT](https://www.emqx.com/en/switch-from-aws) implementation meets these requirements. Regular audits and assessments can help to ensure ongoing compliance.
 
 ### 4. Resource Management
 

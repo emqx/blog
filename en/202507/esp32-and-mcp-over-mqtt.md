@@ -137,7 +137,7 @@ Here's the setup, as illustrated:
 
 ### Register for EMQX Serverless
 
-[MQTT will](https://www.emqx.com/en/blog/use-of-mqtt-will-message) be the transport protocol for our intelligent agent and cloud-based large models. All subsequent features, including voice, vision, and AI control, rely on its real-time communication with the cloud. To simplify things and avoid complex local installation and configuration, we recommend using the **EMQX MQTT cloud service**.
+MQTT will be the transport protocol for our intelligent agent and cloud-based large models. All subsequent features, including voice, vision, and AI control, rely on its real-time communication with the cloud. To simplify things and avoid complex local installation and configuration, we recommend using the **EMQX MQTT cloud service**.
 
 To get started:
 

@@ -6,7 +6,7 @@ In the latest version, we are thrilled to introduce an array of enhanced MQTT mo
 
 ## New MQTT Monitor Metrics
 
-The latest release of EMQX Cloud introduces exciting enhancements that further strengthen our [MQTT monitoring](https://www.emqx.com/en/blog/mqtt-client-tools) capabilities. Alongside existing metrics, the focus of this release is to provide a more comprehensive view of your MQTT deployments. This will enable you to make informed decisions and optimize your system's performance. 
+The latest release of EMQX Cloud introduces exciting enhancements that further strengthen our MQTT monitoring capabilities. Alongside existing metrics, the focus of this release is to provide a more comprehensive view of your MQTT deployments. This will enable you to make informed decisions and optimize your system's performance. 
 
 There are three new metrics:
 

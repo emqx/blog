@@ -129,7 +129,7 @@ The advent of 5G networks promises to enhance MQTT's capabilities by providing f
 
 ### AI/ML Integration
 
-As AI and ML models become more prevalent at the edge, [MQTT will](https://www.emqx.com/en/blog/use-of-mqtt-will-message) play a vital role in enabling these models to process real-time data efficiently.
+As AI and ML models become more prevalent at the edge, MQTT will play a vital role in enabling these models to process real-time data efficiently.
 
 ### Standardization and Security
 

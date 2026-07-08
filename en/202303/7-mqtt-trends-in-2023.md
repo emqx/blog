@@ -132,7 +132,7 @@ However, with built-in stream processing, MQTT Streams streamlines the IoT data 
 
 ## Conclusion
 
-Overall, these 7 trends in MQTT technology reflect the progress of emerging technologies and their role in advancing the IoT. As a standard messaging protocol evolved for over two decades, MQTT’s importance continues to grow. With the increasing use of IoT in various industries, the MQTT protocol is evolving to meet new challenges and demands, such as faster and lower-latency connections, more rapid deployment of MQTT services, greater flexibility for complex scenarios or large-scale IoT applications, and more support on connecting various industrial devices. With these developments, [MQTT will](https://www.emqx.com/en/blog/use-of-mqtt-will-message) become the nerve system of IoT and an even more crucial player in IIoT and IoV in 2023 and beyond.
+Overall, these 7 trends in MQTT technology reflect the progress of emerging technologies and their role in advancing the IoT. As a standard messaging protocol evolved for over two decades, MQTT’s importance continues to grow. With the increasing use of IoT in various industries, the MQTT protocol is evolving to meet new challenges and demands, such as faster and lower-latency connections, more rapid deployment of MQTT services, greater flexibility for complex scenarios or large-scale IoT applications, and more support on connecting various industrial devices. With these developments, MQTT will become the nerve system of IoT and an even more crucial player in IIoT and IoV in 2023 and beyond.
 
 
 <section class="promotion">

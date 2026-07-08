@@ -6,7 +6,7 @@ To learn more about serverless MQTT, read our blog post [Next-Gen Cloud MQTT Ser
 
 As the Internet of Things (IoT) continues to grow, more and more developers are turning to React to build applications that can interact with IoT devices. React is a popular framework for building web applications, and it's increasingly being used in IoT projects. Some of the application scenarios for React in IoT include:
 
-- Building dashboards to monitor and [control IoT devices](https://www.emqx.com/en/customers/china-southern-power-grid)
+- Building dashboards to monitor and control IoT devices
 - Creating interfaces for IoT devices
 - Developing web-based tools for managing IoT devices
 
