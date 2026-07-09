@@ -163,14 +163,14 @@ NanoMQ 的 HTTP API 使用 [Basic 认证 (opens new window)](https://en.wikipedi
 | data.message_out  | Integer | NanoMQ 流出的消息数量。                                      |
 | data.message_drop | Integer | NanoMQ 丢弃的消息数量。                                      |
 
-#### **Examples**
+### **Examples**
 
 ```
 $ curl -i --basic -u admin:public -X POST "http://localhost:8081/api/v1" -d '{"req": 2,"seq": 1}'
 {"code":0,"seq":1,"rep":2,"data":{"client_size":1,"message_in":4,"message_out":0,"message_drop":4}}
 ```
 
-#### 主题信息：返回客户端标识符对应的主题和 QoS 信息。
+### 主题信息：返回客户端标识符对应的主题和 QoS 信息。
 
 **Parameters (JSON)**
 
@@ -190,14 +190,14 @@ $ curl -i --basic -u admin:public -X POST "http://localhost:8081/api/v1" -d '{"r
 | data[0].subscriptions[0].topic | String  | 订阅的主题。                                                 |
 | data[0].subscriptions[0].qos   | Integer | 订阅的 QoS                                                   |
 
-#### **Examples**
+### **Examples**
 
 ```
 $ curl -i --basic -u admin:public -X POST "http://localhost:8081/api/v1" -d '{"req": 4,"seq": 1111111}'
 {"code":0,"seq":1111111,"rep":4,"data":[{"client_id":"nanomq-ebd54382","subscriptions":[{"topic":"a/b/c","qos":0}]}]}
 ```
 
-#### 客户端信息：返回所有的客户端信息。
+### 客户端信息：返回所有的客户端信息。
 
 **Parameters (JSON)**
 
@@ -220,7 +220,7 @@ $ curl -i --basic -u admin:public -X POST "http://localhost:8081/api/v1" -d '{"r
 | data[0].connect_status  | Integer | 连接状态。                                                   |
 | data[0].message_receive | Integer | 该客户端接受的消息。                                         |
 
-#### **Examples**
+### **Examples**
 
 ```
 $ curl -i --basic -u admin:public -X POST "http://localhost:8081/api/v1" -d '{"req": 5,"seq": 1111111}'
@@ -231,7 +231,7 @@ $ curl -i --basic -u admin:public -X POST "http://localhost:8081/api/v1" -d '{"r
 
 另一组是通过 HTTP API 来修改 NanoMQ 的配置参数，主要用于提供服务端远程管理 NanoMQ 的能力。
 
-#### 设置配置参数：设置 Broker 配置参数。
+### 设置配置参数：设置 Broker 配置参数。
 
 **Parameters (JSON)**
 

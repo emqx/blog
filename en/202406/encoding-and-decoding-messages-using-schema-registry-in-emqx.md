@@ -16,7 +16,7 @@ Register for an EMQX account to access a 14-day free trial of an EMQX Dedicated 
     <a href="https://accounts.emqx.com/signup?continue=https://cloud-intl.emqx.com/console/deployments/0?oper=new" class="button is-gradient">Get Started →</a>
 </section>
 
-#### 1. Create a Dedicated Deployment
+### 1. Create a Dedicated Deployment
 
 Log in to the EMQX Platform Console and click the ‘New Deployment’ button. Select the ‘Dedicated’ plan and configure a Dedicated deployment.
 
@@ -28,7 +28,7 @@ For this tutorial, choose the *N.Virginia* region and the 1,000 tier, leave the 
 
 ![Choose the *N.Virginia* region and the 1,000 tier](https://assets.emqx.com/images/794ff1be14bbbd9d596a3de4e09a2d17.png)
 
-#### 2. Add a Credential for the MQTT Connection
+### 2. Add a Credential for the MQTT Connection
 
 When the deployment is created, navigate to ‘Access Control’ in the deployment console, then click *Authentication* in the submenu. Click the ‘Add’ button on the right and provide a username and password for the [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) connection. For this example, we will use "emqx" as the username and "public" as the password for the [MQTT client](https://www.emqx.com/en/blog/mqtt-client-tools) connection.
 
@@ -118,7 +118,7 @@ With these settings, MQTTX is ready to use.
 
 In Data Integration, the Rule Engine will process the Protobuf messages and republish them to a new topic to demonstrate the Schema Registry feature.
 
-#### 1. Create a Message Republish
+### 1. Create a Message Republish
 
 Go to the Data Integrations page and select “Republish” under the “Data Forward” category.
 
@@ -135,7 +135,7 @@ FROM
 
 ![SQL Editor](https://assets.emqx.com/images/4f094adaedff383a0e681c5f581d7664.png)
 
-#### 2. Republish Setting
+### 2. Republish Setting
 
 Click “Next” to add an action to output the messages by republishing the messages to a new MQTT topic.  
 
@@ -146,7 +146,7 @@ Click “Next” to add an action to output the messages by republishing the mes
 
 ![New rule](https://assets.emqx.com/images/bf01dbe48ca5d5cbbebac7a19f0e9f66.png)
 
-#### 3. Subscribe to the Messages in MQTTX
+### 3. Subscribe to the Messages in MQTTX
 
 In MQTTX, set the subscription to the topic ‘schema/a’, then send a message encoded with Protobuf to the topic 't/a'. In the dialogue, you will receive a message with an unreadable payload.
 
@@ -156,7 +156,7 @@ In the next step, we will configure the Schema Registry in Data Integration to v
 
 ## Step 4: Schema Registry Configuration in Data Integration
 
-#### 1. Create a Protobuf Schema
+### 1. Create a Protobuf Schema
 
 On the Data Integration page, you will find the ‘Schema Registry' tab, then click 'New Schema Registry’.
 
@@ -179,7 +179,7 @@ message SensorData {
 
 ![New Schema Registry](https://assets.emqx.com/images/948c50065175fd49c645c5cafcfa76bc.png)
 
-#### 2. Include the Schema in the Rule
+### 2. Include the Schema in the Rule
 
 - On the Data Integration page, click and edit the rule we created in Step 3.
 
@@ -196,7 +196,7 @@ message SensorData {
 
   ![Save the rule](https://assets.emqx.com/images/7f6e1ddd4945018771b054661dd5b4ab.png)
 
-#### 3. Check the Decoded Messages in MQTTX
+### 3. Check the Decoded Messages in MQTTX
 
 In MQTTX, set the subscription to the topic ‘schema/a’, then send a message to the topic ‘t/a' again. In the dialogue, you will receive a message with the decoded field 'sensor_data’, which is readable compared to the original payload.
 

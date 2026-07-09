@@ -140,7 +140,7 @@ By upgrading to EMQX 5.x, users can take advantage of MQTT over QUIC to ensure f
 
 Migrating from EMQX 4.x to 5.x is designed to be smooth and low-risk, ensuring minimal disruptions to existing deployments.
 
-#### Key Improvements in the Upgrade Process
+### Key Improvements in the Upgrade Process
 
 - **Backward Compatibility:** EMQX 5.x supports legacy [MQTT clients](https://www.emqx.com/en/blog/mqtt-client-tools) and authentication mechanisms used in EMQX 4.x.
 - **Automated Data Migration:** EMQX provides detailed migration guides and automated scripts to simplify configuration and rule conversion. Configuration, authentication data, and message routing rules can be migrated with minimal manual effort.

@@ -22,7 +22,7 @@ We hope to have many more.
 
 ## Security
 
-#### TLS v1.3 as default
+### TLS v1.3 as default
 
 From OTP 23 we have set TLS 1.3 as default. Selecting the best security first while still being able to support earlier versions when needed.
 
@@ -30,7 +30,7 @@ From OTP 23 we have set TLS 1.3 as default. Selecting the best security first wh
 
 ## Environment Variable config overrides
 
-#### Flexibility 
+### Flexibility 
 
 General configuration can be overridden using environment variables, useful for testing and non persistent use cases.
 
@@ -38,7 +38,7 @@ General configuration can be overridden using environment variables, useful for 
 
 ## Master branch leads Repo
 
-#### Latest Features 
+### Latest Features 
 
 The master branch is now the cutting edge, try out the latest features as they are pushed. Releases will be tagged from master and maintenance branches created from releases.
 
@@ -46,7 +46,7 @@ The master branch is now the cutting edge, try out the latest features as they a
 
 ## QUIC Protocol in the works
 
-#### Staying ahead of the curve
+### Staying ahead of the curve
 
 A NIF (Erlang Native Implemented Functions) based [QUIC](https://www.emqx.com/en/blog/quic-protocol-the-features-use-cases-and-impact-for-iot-iov) ( [MsQuic](https://github.com/microsoft/msquic) from Microsoft ) PoC developed & demonstrated. Paving the way to road mapping QUIC support in future. Please follow up on [emqx/quic](https://github.com/emqx/quic) for latest updates.
 
@@ -54,7 +54,7 @@ A NIF (Erlang Native Implemented Functions) based [QUIC](https://www.emqx.com/en
 
 ## Enterprise features to Open Source 
 
-#### Supporting the community with more functionality. 
+### Supporting the community with more functionality. 
 
 - Webhook & [MQTT bridge](https://www.emqx.com/en/blog/bridging-mosquitto-to-emqx-cluster) plugin now have the certificate upload feature Open sourced for the community. We’re sure this feature is a welcomed sight to the open source community.
 - Wolff is has been disclosed ( [kafka4beam/wolff](https://github.com/kafka4beam/wolff) ) 
@@ -69,13 +69,13 @@ How is it different from brod?
 
 ## V4.3 Beta
 
-#### Now Finalizing
+### Now Finalizing
 
 The team are delivering great sprints from our product managers, bringing the anticipated v4.3 Beta tantalizingly close. 
 
 ## Exhook Benchmark
 
-#### reaches 20k/s TPS on 8 core CPU, 16 GB RAM
+### reaches 20k/s TPS on 8 core CPU, 16 GB RAM
 
 Exhook ( emqx-exhook ) is a plugin in emqx. It’s main objective is forwarding all hook events via grpc to servers implemented in another language, greatly improving the extensibility of emqx. The recent benchmark achieved 20k/s TPS on 8 core CPU, 16 GB RAM.
 

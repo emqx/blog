@@ -1,10 +1,10 @@
 通过之前的文章，相信大家已经熟悉了 JMeter 及 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 插件的使用等基础知识。从本文开始，我们利用这些测试工具进行测试实战。本文将介绍 MQTT 连接的测试。
 
-### 连接场景分析
+## 连接场景分析
 
 插件中 MQTT Connect 请求主要模拟设备与 MQTT 服务器（本文以 EMQX 为例）建立连接，并按指定间隔发送 [MQTT keep alive](https://www.emqx.com/zh/blog/mqtt-keep-alive) 报文，在物联网实际场景中经常需要海量设备连接并保持在线，大量设备同时上线及下线；本文脚本将模拟 400 个设备同时与 EMQX 建立连接，并保持连接 30 分钟后同时下线。
 
-### 如何使用 MQTT 插件编写测试脚本
+## 如何使用 MQTT 插件编写测试脚本
 
 1. 在测试计划下创建线程组。
 
@@ -32,7 +32,7 @@
 
    ![JMeter 察看结果树](https://assets.emqx.com/images/240ca231cd28ed208c4e00342b4fd51e.png)
 
-### 测试的执行
+## 测试的执行
 
 对编写好的脚本进行调试验证，确认 [MQTT Broker](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison) 的连通性及脚本运行逻辑符合预期后，将线程组页面的线程组数修改为 400，页面点击 Start 按钮执行测试。
 
@@ -50,7 +50,7 @@
 ![EMQX Dashboard](https://assets.emqx.com/images/9e914c2a4b028c2aba822303b58c920b.png)
  
 
-### 附件：样例脚本
+## 附件：样例脚本
 
 读者可[下载测试脚本](https://assets.emqx.com/data/MQTT_Connect.jmx)运行并查看结果。
 

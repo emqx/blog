@@ -18,15 +18,15 @@ TwinCAT 平台采用模块化架构，它由多个不同的软件产品组成，
 
 ![TwinCAT Architecture](https://assets.emqx.com/images/dab48e1ca10e88daa809e2cca20450fd.png)
 
-#### 开发组件
+### 开发组件
 
 TwinCAT XAE（eXtended Automation Engineering）是基于 Microsoft Visual Studio 的 TwinCAT 3 开发环境。它提供了一套全面的工具，用于创建、调试和部署自动化程序，包括对多种编程语言的支持。
 
-#### 运行时组件
+### 运行时组件
 
 TwinCAT XAR（eXtended Automation Runtime）是 TwinCAT 3 系统的核心，负责执行 PLC 程序、协调运动控制以及处理与自动化系统中其他设备的通信。运行时组件可以在从小型嵌入式系统到大型工业 PC 等各种硬件平台上运行。
 
-#### 功能组件
+### 功能组件
 
 TwinCAT 功能组件为基本系统提供了广泛的扩展选项。例如，TwinCAT 3 HMI 可以基于 Web 技术（HTML5、JavaScript/TypeScript）开发与平台无关的用户界面，TwinCAT 3 Vision 提供可扩展的图像处理功能，而TwinCAT 3 Measurement 则提供附加的测量技术功能。
 

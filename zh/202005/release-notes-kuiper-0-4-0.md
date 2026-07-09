@@ -10,13 +10,13 @@ EMQX Kuiper 是 Golang 实现的轻量级物联网边缘分析、流式处理开
 
 更多信息请访问 [EMQ 官网](https://github.com/lf-edge/ekuiper) 或 [Kuiper GitHub](https://github.com/emqx/kuiper)。
 
-### 概览
+## 概览
 
 - Kuiper 0.4.0 对比较复杂的插件支持的能力上得到了增强；支持了对所有 sink 的模版支持功能，实现对复杂数据输出的定制能力
 - Kuiper 0.3.2 作为 EdgeX Foundry Geneva 集成的版本已经发布
 - Kuiper 0.3.1 实现了基于 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) 消息总线的支持
 
-### 功能
+## 功能
 
 - 0.4.0
 
@@ -48,10 +48,10 @@ EMQX Kuiper 是 Golang 实现的轻量级物联网边缘分析、流式处理开
   - 增加 Kuiper [插件开发教程 (中文)](https://github.com/lf-edge/ekuiper/blob/develop/docs/zh_CN/plugins/plugins_tutorial.md)。
 
 
-### 问题修复
+## 问题修复
 
 - 其它一些控制台输出和文档问题的修复
 
-### 联系
+## 联系
 
 如果对Kuiper有任何问题，请随时通过contact@emqx.io与我们联系。

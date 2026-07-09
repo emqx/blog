@@ -185,7 +185,7 @@ fun publish(topic: String, msg: String, qos: Int = 1, retained: Boolean = false)
     }
 ```
 
-###  Disconnect from the MQTT Broker
+### Disconnect from the MQTT Broker
 
 ```kotlin
 fun disconnect() {

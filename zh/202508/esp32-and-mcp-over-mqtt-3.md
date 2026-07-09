@@ -164,7 +164,7 @@ void app_main(void)
 
 使用 MCP Over MQTT Component 注册调整音量的 Tool，初始化 MCP Server 与 音频播放模块，注意修改 MCP Server 的参数，连接到 Serverless，以及修改 WIFI 的 SSID 与 Password。更多详细代码请参考 [ESP32 Demo](https://github.com/mqtt-ai/esp32-mcp-mqtt-tutorial/tree/main/samples/blog_3)。
 
-###  云端 MCP Client 对接大模型调用 MCP 工具 - agent.py
+### 云端 MCP Client 对接大模型调用 MCP 工具 - agent.py
 
 ```python
 import asyncio

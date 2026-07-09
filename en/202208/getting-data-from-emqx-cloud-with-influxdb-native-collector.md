@@ -23,11 +23,11 @@ Now, let’s check it out.
 
 Creating a dedicated MQTT broker on EMQX Cloud is as easy as a few clicks.
 
-#### Get an account
+### Get an account
 
 Go to [EMQX Cloud](https://www.emqx.com/en/cloud) and click start free to register an account if you are new to EMQX Cloud.
 
-#### Create an MQTT cluster
+### Create an MQTT cluster
 
 Once logged in, click "Cloud Console" under the account menu and you will be able to see the green button to create a new deployment.
 
@@ -55,7 +55,7 @@ It will take a few minutes to get a running instance.
 
 Once the status changes to Running, click the card to go to the cluster overview.
 
-#### Get Connection Adress and Port
+### Get Connection Adress and Port
 
 On the overview page, you will see the instance details. Note the connection address and connection port here, which is required when we configure the integration on InfluxDB Cloud.
 
@@ -65,7 +65,7 @@ On the overview page, you will see the instance details. Note the connection add
 
 Each EMQX Cloud instance creates four listeners for MQTT connections (MQTT, MQTT with TLS, [MQTT over WebSocket](https://www.emqx.com/en/blog/connect-to-mqtt-broker-with-websocket), and MQTT over WebSocket with TLS). However, InfluxDB Cloud currently only supports the [MQTT protocol](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt), so you only need to note the first port.
 
-#### Add Credentials for MQTT connection
+### Add Credentials for MQTT connection
 
 The last thing on EMQX Cloud is to create credentials for the MQTT connection. Click Authentication and ACLs on the left menu, then click Authentication in the submenu.
 
@@ -85,11 +85,11 @@ Now you have a running MQTT broker provided by EMQX Cloud. Let’s move on to St
 
 ## Step 2: Create a bucket on InfluxDB Cloud
 
-#### Create an InfluxDB Cloud account
+### Create an InfluxDB Cloud account
 
 If you are using [InfluxDB Cloud](https://www.influxdata.com/products/influxdb-cloud/) for the first time, you will also need to create an account.`
 
-#### Create a Bucket for data persistence
+### Create a Bucket for data persistence
 
 Once logged in, go to the console page and click the "Buckets" button in the menu.
 
@@ -109,7 +109,7 @@ OK, now you have your bucket ready. Let's try out the new Native Collector.
 
 ## Step 3: Config the native collector
 
-#### Go to the Native Subscriptions page
+### Go to the Native Subscriptions page
 
 Click the ‘NATIVE SUBSCRIPTIONS’ tab on the bucket page.
 
@@ -119,7 +119,7 @@ Click the ‘NATIVE SUBSCRIPTIONS’ tab on the bucket page.
 
 *Please note that this feature is available with usage-based plans only. So you need to upgrade your account by linking a credit card. Luckily, InfluxDB Cloud offers $250 credits for new users.*
 
-#### Create a Subscription
+### Create a Subscription
 
 Go ahead and click Create Subscription.
 
@@ -137,7 +137,7 @@ On the integration configuration page, there are 5 sections:
 
 Don't worry, let's go through them one by one.
 
-#### Config Broker Connection
+### Config Broker Connection
 
 To create a subscription, InfluxDB first needs to connect to the target MQTT broker on EMQX Cloud. 
 
@@ -154,7 +154,7 @@ This part has 4 inputs:
 3. Hostname or IP Address: The connect address you got from EMQX Cloud in Step 1.
 4. Port: The connect port you got from EMQX Cloud in Step 1.
 
-#### Config Security Details
+### Config Security Details
 
 Choose BASIC in ‘SECURITY DETAILS’ and set the username and password you created in EMQX Cloud.
 
@@ -164,7 +164,7 @@ Choose BASIC in ‘SECURITY DETAILS’ and set the username and password you cre
 
 ***Double check the address, port, and username/password. They are essential for establishing a successful MQTT connection to EMQX cloud.***
 
-#### Subscribe to a Topic
+### Subscribe to a Topic
 
 Once the connection is configured, we need to tell InfluxDB Cloud which topics it should listen to.
 
@@ -176,7 +176,7 @@ Just give the topic name here. I used "influxdb" for this demo. It's easy to und
 
 While we've used an explicit topic name here, InfluxDB Cloud Native Collector do support wildcards like "+" and "#". Using wildcards is more practical in real use cases. Check [InfluxDB Cloud’s doc](https://docs.influxdata.com/influxdb/v2.6//cloud/) for more information.
 
-#### Set Write Destination
+### Set Write Destination
 
 In the "WRITE DESTINATION" section, leave it as default as there is only one Bucket. However, if you have multiple buckets, make sure to select the right one.
 
@@ -184,7 +184,7 @@ In the "WRITE DESTINATION" section, leave it as default as there is only one Buc
 
 <center>Select the write destination bucket</center>
 
-#### Define Data Parsing Rules
+### Define Data Parsing Rules
 
 Now, the last part: Define Data Parsing Rules.
 
@@ -209,19 +209,19 @@ Sample JSON payload:
 
 To convert this JSON message to meric in InfluxDB Cloud, we need to perform the following mapping:
 
-#### TIMESTAMP: 
+### TIMESTAMP: 
 
 Timestamp is optional. If not provided, it will use the server's timestamp as default value when inserting data.
 
-#### MEASUREMENT:
+### MEASUREMENT:
 
 Measurement can be parsed from JSON or a static name. To keep this demo as simple as possible, I use the static name "room_temperature" in this demo.
 
-#### FIELD:
+### FIELD:
 
 In this demo, I used a JSON message containing only temperature, so I used "temperature" as the name and the JSON path "$.temperature" to get the data from the JSON body. InfluxDB Cloud uses JSONPath to fetch data from a JSON object. Check [JSONPath’s](https://jsonpath.com/) doc for its syntax.
 
-#### Save Subscription
+### Save Subscription
 
 Last but not least, don’t forget to save the subscription.
 
@@ -231,7 +231,7 @@ Last but not least, don’t forget to save the subscription.
 
 Click ‘SAVE SUBSCRIPTION’ And THAT’S IT!
 
-#### Verify the subscription is running
+### Verify the subscription is running
 
 ![Native subscription is running](https://assets.emqx.com/images/472905ccc18a0a057f482b26e139e466.jpeg)
 
@@ -239,7 +239,7 @@ Click ‘SAVE SUBSCRIPTION’ And THAT’S IT!
 
 It should show up running on the native subscriptions list.
 
-#### Everything is settled
+### Everything is settled
 
 Congratulations! You should have successfully integrated InfluxDB Cloud and EMQX Cloud. The temperature data sent to EMQX Cloud should be continuously persisted to the target bucket on InfluxDB Cloud.
 
@@ -249,7 +249,7 @@ Now, let’s move on to the last Step. Check out if it’s working as expected.
 
 How to know if the integration is a success?  Simple answer: Let’s send a message to the MQTT broker on EMQX Cloud and see if it appears on the dashboard of InfluxDB cloud!
 
-#### Choose an MQTT client
+### Choose an MQTT client
 
 Use can use any [MQTT client](https://www.emqx.com/en/blog/mqtt-client-tools) as you like. In this tutorial, I will use [MQTTX](https://mqttx.app/), a user-friendly MQTT desktop application that is good for testing purposes.
 
@@ -257,7 +257,7 @@ Use can use any [MQTT client](https://www.emqx.com/en/blog/mqtt-client-tools) as
 
 <center>Create New Connection</center>
 
-#### Connect to EMQX Cloud
+### Connect to EMQX Cloud
 
 Click ‘New Connection’ on MQTTX and fill out the connection form:
 
@@ -272,7 +272,7 @@ Click ‘New Connection’ on MQTTX and fill out the connection form:
 
 Click the "Connect" button in the upper right corner and the connection should be set up.
 
-#### Send messages to EMQX Cloud
+### Send messages to EMQX Cloud
 
 Now you can use this tool to send messages to the MQTT broker on EMQX Cloud.
 
@@ -296,7 +296,7 @@ Inputs:
 
 Click the Send icon on the right. You can change the temperature value and send more data to the MQTT broker. The more data, the richer the chart will be displayed on the dashboard.
 
-#### Check the data on InfluxDB Cloud
+### Check the data on InfluxDB Cloud
 
 Now, it's time to view the data on InfluxDB Cloud. Ideally, the data you send using MQTTX will go into EMQX Cloud and then be persisted to the target bucket in InfluxDB Cloud.
 

@@ -10,19 +10,19 @@ In this tutorial, we'll show you step-by-step how to integrate Upstash with EMQX
 
 To begin using Upstash, visit [Upstash: Serverless Data for Redis® and Kafka®](https://upstash.com/)  and create an account. 
 
-#### 1. Create a Kafka Cluster
+### 1. Create a Kafka Cluster
 
 Once you have completed the sign-up process, proceed to create your first Upstash for Kafka cluster. Select the type that best suits your needs and follow the step-by-step instructions provided by Upstash. For this example, ‘Single Replica’ should suffice.
 
 ![Create a Kafka Cluster](https://assets.emqx.com/images/96c89aea08dc6d8b40daed59143ae366.png)
 
-#### 2. Define a Topic
+### 2. Define a Topic
 
 We then need to create a topic where we want to store all the data produced by our MQTT devices. In the cluster console, select ‘Topics’ and then create a topic using the default settings. For this tutorial, we named the topic `emqx`*.*
 
 ![Define a Topic](https://assets.emqx.com/images/d888a60cbd8b31bee58a07a8884eb0b9.png)
 
-#### 3. Generate Credentials
+### 3. Generate Credentials
 
 After creating the topic, navigate to the cluster overview and select ‘Credentials’. Generate a pair of username and password. This credential is crucial for authenticating your EMQX Cloud deployment with your Upstash cluster, enabling seamless data integration between the two.
 
@@ -42,7 +42,7 @@ Register for an EMQX account to access a 14-day free trial of a Dedicated deploy
     <a href="https://accounts.emqx.com/signup?continue=https://cloud-intl.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">Get Started →</a>
 </section>
 
-#### 1. Create a Dedicated Deployment
+### 1. Create a Dedicated Deployment
 
 Log in to the Cloud Console and click the ‘New Deployment’ button to begin creating a new deployment. Select the ‘Dedicated’ plan to deploy a ‘Professional’ deployment.
 
@@ -52,13 +52,13 @@ For this tutorial, select ‘Professional’, choose the *N.Virginia* region wit
 
 ![Select ‘Professional’](https://assets.emqx.com/images/bdc50ccead24fd4a4304cc614fd69bf8.png)
 
-#### 2. Add a Credential for the MQTT Connection
+### 2. Add a Credential for the MQTT Connection
 
 In the Cloud Console, navigate to ‘Authentication & ACL’ from the left menu, and then click *Authentication* in the submenu. Click the ‘Add’ button on the right and provide a username and password for the MQTT connection. For this example, we will use "emqx" as the username and "public" as the password for the MQTT client connection.
 
 ![Add a Credential for the MQTT Connection](https://assets.emqx.com/images/ce2a390987c504d6e99879d7112a112b.png)
 
-#### 3. Enable NAT Gateway
+### 3. Enable NAT Gateway
 
 Before setting up data integration, we need to enable the NAT gateway. By default, the [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) is deployed in a VPC, which cannot send data to other services over the public network.
 
@@ -77,7 +77,7 @@ With these steps, your MQTT broker is now operational and ready for use. Let’s
 
 EMQX Cloud provides over 40 native data integrations. Previously, Kafka resources were used to connect data to Kafka-type resource. Our new customized integration makes connecting to Upstash more streamlined.
 
-#### 1. Create a Upstash for Kafka Resource
+### 1. Create a Upstash for Kafka Resource
 
 Go to the Data Integrations page and select ‘Upstash for Kakfa’.
 
@@ -89,7 +89,7 @@ On the settings page, enter the required information in the ‘Endpoints’ sect
 
 After passing the test, click the ‘New’ button. A confirmation message will appear indicating that the resource has been successfully created. Under ‘Configured Resources’, you will see the newly created Kafka resource.
 
-#### 2. Create a Rule
+### 2. Create a Rule
 
 Create a new rule by entering the following SQL statement in the SQL input field. This rule will process messages from the `temp_hum/emqx` topic, enriching the JSON object with ‘client_id’, ‘topic’, and ‘timestamp’ information.
 
@@ -114,7 +114,7 @@ Test the SQL rule by entering the test payload, topic, and client information, t
 
 ![SQL Test](https://assets.emqx.com/images/a255261f3b6c60a23d443084d1cdc5a9.png)
 
-#### 3. Add an Action
+### 3. Add an Action
 
 Click ‘Next’ to add an action to the rule. Utilize the Kafka topic created in Step 1 along with the message template provided.
 
@@ -136,7 +136,7 @@ Let’s proceed to the final step to ensure everything is working as expected.
 
 To publish messages, you can use any [MQTT client](https://www.emqx.com/en/blog/mqtt-client-tools) or [SDK](https://www.emqx.com/en/mqtt-client-sdk). In this tutorial, we’ll utilize [MQTTX](https://mqttx.app/), a comprehensive MQTT client tool offered by EMQ.
 
-#### 1. Connect MQTTX
+### 1. Connect MQTTX
 
 In MQTTX, click ‘New Connection’ and complete the connection form:
 
@@ -147,7 +147,7 @@ In MQTTX, click ‘New Connection’ and complete the connection form:
 
 ![Connect MQTTX](https://assets.emqx.com/images/511347017f355731359dff07e90a65d1.png)
 
-#### 2. Publish MQTT Messages to EMQX Cloud
+### 2. Publish MQTT Messages to EMQX Cloud
 
 - Set the payload format to 'JSON'.
 - Use `temp_hum/emqx` as the topic (the one set in the rule).
@@ -164,13 +164,13 @@ Click the ‘Send’ button on the right. You can change the temperature value a
 
 ![MQTTX](https://assets.emqx.com/images/1df7081dcdcb21f6b756896818bfa3be.png)
 
-#### 3. Check Rule Status in EMQX Cloud
+### 3. Check Rule Status in EMQX Cloud
 
 The data sent to EMQX Cloud should be automatically processed by the rule engine and transferred to Upstash, which can be verified in the EMQX Cloud Data Integration dashboard.
 
 ![Check Rule Status in EMQX Cloud](https://assets.emqx.com/images/3133a30688d810aab78b48dcb0ac556d.png)
 
-#### 4. Check the Data in Upstash Topic
+### 4. Check the Data in Upstash Topic
 
 Examine the data within the Upstash Console. In Topic, we select ‘emqx', click 'Messages’, then we can check the messages.
 

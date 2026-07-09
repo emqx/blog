@@ -1,3 +1,7 @@
+# /// script
+# requires-python = ">=3.12"
+# dependencies = ["requests"]
+# ///
 import copy
 import os
 import sys

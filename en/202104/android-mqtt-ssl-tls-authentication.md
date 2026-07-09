@@ -2,7 +2,7 @@
 
 This article mainly introduces how to perform TLS/SSL one-way and two-way authentication via Android and [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt).
 
-### Preparation
+## Preparation
 
 This article uses [Eclipse Paho Android Service](https://github.com/eclipse/paho.mqtt.android) and `BouncyCastle` to add dependencies
 
@@ -24,7 +24,7 @@ options.setSocketFactory(sslSocketFactory);
 
 The focus is on how to obtain the `SSLSocketFactory`. The one-way and two-way authentication are described below.
 
-### One-way authentication
+## One-way authentication
 
 One-way authentication means that the server-side authenticates the client. The core code is as follows:
 
@@ -61,7 +61,7 @@ try {
 }
 ```
 
-### Two-way authentication
+## Two-way authentication
 
 Two-way authentication means that the server-side and client authenticate each other. The core code is as follows:
 

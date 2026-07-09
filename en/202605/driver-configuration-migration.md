@@ -46,24 +46,24 @@ The Driver Configuration Migration service operates as a hosted web application,
 
 The migration workflow follows a structured path from the source environment into the running Neuron architecture:
 
-#### 1. Inventory & Pre-flight Checks
+### 1. Inventory & Pre-flight Checks
 
 Consult the migration guides to verify that all active on-site protocols are supported. Note any documented boundaries regarding string lengths, array handling, or cryptographic certificates.
 
-#### 2. Source Export
+### 2. Source Export
 
 Generate the necessary configuration file from the incumbent platform according to standard procedures:
 
 - **Kepware:** Export in JSON format.
 - **Litmus Edge:** Export the Plain Text template.
 
-#### 3. Service Conversion
+### 3. Service Conversion
 
 Navigate to the **Driver Configuration Migration** interface on the EMQX website. Select the corresponding source format, upload the asset, and allow the server-side mapping engine to validate the file. Once processing completes, download the generated standard JSON payload.
 
 > **Data Privacy Note:** Configuration payloads are processed strictly within volatile memory and are not persisted on EMQX infrastructure. Review the hosting interface for active file size boundaries and formatting validation rules.
 
-#### 4. Import & Runtime Commissioning
+### 4. Import & Runtime Commissioning
 
 Access the target Neuron Dashboard, navigate to the southbound configuration section, and import the processed JSON file. Remediate any flagged exceptions or specialized tags manually, then proceed to validate active connection telemetry and data stream health.
 

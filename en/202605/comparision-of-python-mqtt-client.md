@@ -510,7 +510,7 @@ The best client is the one that best matches your project’s architecture and y
 
 Here is a guide to help you decide based on common scenarios.
 
-#### **For Beginners, Simple Scripts, or Legacy Codebases:** **paho-mqtt**
+### **For Beginners, Simple Scripts, or Legacy Codebases:** **paho-mqtt**
 
 You should choose **paho-mqtt** if:
 
@@ -520,7 +520,7 @@ You should choose **paho-mqtt** if:
 
 With its **synchronous architecture**, long history (created in 2015), and massive community (evidenced by **2.3k stars**), paho-mqtt is the undisputed standard. Its callback-based API is easy to grasp for basic tasks, and its stability is battle-tested. It requires no external dependencies, making it a simple and reliable choice.
 
-#### **For Modern, Clean, and General-Purpose Async Applications:** **aiomqtt**
+### **For Modern, Clean, and General-Purpose Async Applications:** **aiomqtt**
 
 You should choose **aiomqtt** if:
 
@@ -530,7 +530,7 @@ You should choose **aiomqtt** if:
 
 aiomqtt's signature **async with** **/** **async for** **API style** makes it the most "Pythonic" of the async clients. It eliminates callback management and results in linear, easy-to-follow code. Its popularity (**491 stars**) and active development (**400+ commits**) show strong community trust. By building on top of paho-mqtt, it combines a modern API with a stable foundation.
 
-#### **For High-Performance, Complex, and Customizable Async Applications:** **gmqtt**
+### **For High-Performance, Complex, and Customizable Async Applications:** **gmqtt**
 
 You should choose **gmqtt** if:
 
@@ -540,7 +540,7 @@ You should choose **gmqtt** if:
 
 gmqtt‘s killer feature is its **plugin system**. This offers a level of customization that other clients can’t match, making it ideal for sophisticated, enterprise-grade IoT platforms. Its solid community standing (**422 stars** and **20+ releases**) makes it a reliable choice for demanding projects.
 
-#### **For Projects Requiring a Built-in Broker or an OOP Approach:** **amqtt**
+### **For Projects Requiring a Built-in Broker or an OOP Approach:** **amqtt**
 
 You should choose **amqtt** if:
 
@@ -550,7 +550,7 @@ You should choose **amqtt** if:
 
 As the successor to HBMQTT, amqtt is a true toolkit. Its **direct client API** is suitable for straightforward MQTT operations in asyncio environments. Its massive commit history (**1300+**) speaks to its long development legacy. While its star count is lower (162), it serves a unique and powerful niche.
 
-#### **If You Are Using the FastAPI Framework:** **fastapi-mqtt**
+### **If You Are Using the FastAPI Framework:** **fastapi-mqtt**
 
 The choice is simple: if your application is built with **FastAPI**, you should use **fastapi-mqtt**.
 

@@ -74,7 +74,7 @@ const options = {
 client = new Paho.MQTT.Client(options.host, options.port, options.path);
 ```
 
-#### Connect to the MQTT server
+### Connect to the MQTT server
 
 ```
   connect = () => {
@@ -92,7 +92,7 @@ client = new Paho.MQTT.Client(options.host, options.port, options.path);
   }
 ```
 
-#### Subscribe
+### Subscribe
 
 ```
   subscribeTopic = () => {
@@ -105,7 +105,7 @@ client = new Paho.MQTT.Client(options.host, options.port, options.path);
   }
 ```
 
-#### Publish
+### Publish
 
 ```
   sendMessage = () =>{
@@ -115,7 +115,7 @@ client = new Paho.MQTT.Client(options.host, options.port, options.path);
   }
 ```
 
-#### Unsubscribe
+### Unsubscribe
 
 ```
   unSubscribeTopic = () => {
@@ -145,19 +145,19 @@ We will use the [MQTT 5.0 client tool - MQTTX](https://mqttx.app) to perform the
 
 ![MQTT Client - MQTTX](https://assets.emqx.com/images/b5953d65971448432bd25f305b410fb3.png)
 
-#### Connect
+### Connect
 
 Click the CONNECT button in the APP, and the interface will be displayed as below. After a successful connection, the content of the ClientID line at the top will turn green, indicating that the MQTT server has been successfully connected.
 
 ![React Native connect MQTT](https://assets.emqx.com/images/1dc2b1675ae2a035048a9412600b0f97.png)
 
-#### Subscribe
+### Subscribe
 
 Enter the topic you want to subscribe to. Here, we take testTopic as an example. Then, click the SUBSCRIBE button. The interface after subscription will be displayed, as follows:
 
 ![React Native MQTT subscribe](https://assets.emqx.com/images/01f7c6408f82dd04dcbdba47d3614c33.png)
 
-#### Publish
+### Publish
 
 Enter the content of the message to be published, click the PUBLISH button after the input is finished, and the messages received under the present subscribed topic will be listed at the bottom, among which the message with a black background is sent by the present client. The ID of the present client is id_67485, and the interface is shown, as follows:
 
@@ -167,7 +167,7 @@ At the same time, under the react-native-demo connection of MQTTX, we will also 
 
 ![MQTT Client - MQTTX](https://assets.emqx.com/images/8be70d496c3332a2481dde78a9962087.png)
 
-#### Unsubscribe
+### Unsubscribe
 
 Click the UNSCRIBE button in the APP. Then, proceed to post a message with `{ "msg": "hello test" }` to the testTopic topic on MQTTX with the following display:
 

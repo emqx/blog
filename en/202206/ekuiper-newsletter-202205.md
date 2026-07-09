@@ -36,7 +36,7 @@ or configured by the text content:
 
 Either way, the content will be saved in etc/schemas/protobuf.
 
-#### Using protobuf in Sink
+### Using protobuf in Sink
 
 Format is used to specify the codes used.
 
@@ -53,7 +53,7 @@ schemaId is used to specify the schema used.
 }
 ```
 
-#### **Using protobuf in Source**
+### **Using protobuf in Source**
 
 FORMAT Supports protobuf
 

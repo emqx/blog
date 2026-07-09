@@ -260,7 +260,7 @@ client.end(false, {}, () => {
 
 `end()` メソッドの詳細については、[公式ドキュメント](https://github.com/mqttjs/MQTT.js#mqttclientendforce-options-callback)を参照してください。
 
-###  エラー処理
+### エラー処理
 
 -  接続エラー処理
 

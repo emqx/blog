@@ -48,7 +48,7 @@ composer require php-mqtt/client
 
 ## PHP MQTT 使用指南
 
-#### 导入 composer autoload 文件和 php-mqtt/client
+### 导入 composer autoload 文件和 php-mqtt/client
 
 ```php
 require('vendor/autoload.php');
@@ -56,7 +56,7 @@ require('vendor/autoload.php');
 use \PhpMqtt\Client\MqttClient;
 ```
 
-#### 设置 MQTT Broker 连接参数
+### 设置 MQTT Broker 连接参数
 
 设置 MQTT Broker 的连接地址、端口、客户端 ID、用户名和主题。同时，我们调用 PHP `rand` 函数随机生成 MQTT 客户端 ID。
 
@@ -70,7 +70,7 @@ $clean_session = false;
 $mqtt_version = MqttClient::MQTT_3_1_1;
 ```
 
-#### 编写 MQTT 连接参数
+### 编写 MQTT 连接参数
 
 使用上述的参数进行连接，可以通过 `ConnectionSettings` 设置连接参数：
 

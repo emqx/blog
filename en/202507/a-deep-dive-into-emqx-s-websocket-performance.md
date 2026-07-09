@@ -103,7 +103,7 @@ The resource usage tells a powerful story:
 
 <center>EMQX Dashboard showing 2M WebSocket connections</center>
 
-#### The Crown Jewel: End-to-End Latency
+### The Crown Jewel: End-to-End Latency
 
 Handling a massive number of connections is one thing; doing it with low latency is another. At 2 million connections and nearly 100,000 messages per second, the end-to-end latency was exceptionally low.
 

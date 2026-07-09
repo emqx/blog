@@ -12,13 +12,13 @@ This release includes several new features and bug fixes.
 
 For more details: [EMQ Website](https://github.com/lf-edge/ekuiper) , [Kuiper GitHub](https://github.com/emqx/kuiper).
 
-### Overview
+## Overview
 
 - Kuiper 0.4.0 now has the capability of supporting more complex plugin; Support template feature for all sinks, so users can customize complex output data.
 - Kuiper 0.3.2 is the release that ship with EdgeX Foundry Geneva.
 - Kuiper 0.3.1 supports message bus based on [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt).
 
-### Features
+## Features
 
 - 0.4.0
 
@@ -44,10 +44,10 @@ For more details: [EMQ Website](https://github.com/lf-edge/ekuiper) , [Kuiper Gi
 
   - Add a Kuiper [plugin development tutorial (Chinese)](https://github.com/lf-edge/ekuiper/blob/develop/docs/zh_CN/plugins/plugins_tutorial.md).
 
-### Bug fixes
+## Bug fixes
 
 - Fixes some output text and document issues.
 
-### Contact
+## Contact
 
 If having any problems for Kuiper, feel free to contact us through [contact@emqx.io](mailto:contact@emqx.io)

@@ -168,7 +168,7 @@ Start NanoMQ on OpenWRT and enjoy.
 $ /usr/bin/nanomq broker start
 ```
 
-#### Notes:
+### Notes:
 
 In this tutorial, we take NanoMQ 0.6.6 as an example. Please find the the most updated version of NanoMQ at [Releases · emqx/nanomq](https://github.com/nanomq/nanomq/releases/). As for the newly released features such as DDS proxy and [MQTT over QUIC](https://www.emqx.com/en/blog/mqtt-over-quic) bridging is not included, only basic MQTT broker functionality is tested on OpenWRT, extra migration work is required for other parts. 
 

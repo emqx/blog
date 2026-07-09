@@ -7,12 +7,26 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Check out code
-      uses: actions/checkout@v3
+      uses: actions/checkout@v7
       with:
-          fetch-depth: 0
-  
+        fetch-depth: 0
+
     - name: Install markdownlint
       run: sudo npm install -g markdownlint-cli
 
     - name: Check markdown
-      run: markdownlint -c .ci/markdown_config.json $(git diff --name-only main...HEAD | grep -e "md$")
+      run: markdownlint -c .ci/markdown_config.json $(git diff --name-only origin/main...HEAD | grep -e "md$")
+
+  check-heading-levels:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Check out code
+      uses: actions/checkout@v7
+
+    - name: Install uv
+      uses: astral-sh/setup-uv@v8.3.2
+      with:
+        enable-cache: false
+
+    - name: Check heading levels
+      run: uv run .ci/check_headings.py

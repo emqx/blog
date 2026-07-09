@@ -4,7 +4,7 @@ React Native 是 Facebook 推出并开源的跨平台移动应用开发框架，
 
 本文主要介绍如何在 React Native 项目中使用 [MQTT](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt)，实现客户端与服务器的连接、订阅、取消订阅、收发消息等功能。
 
-### 新建 React Native 项目
+## 新建 React Native 项目
 
 这里以创建一个名为 `RNMQTTDemo` 的项目为例，开发环境为 macOS，应用平台为 iOS，具体过程参考 [Setting up the development environment](https://reactnative.dev/docs/environment-setup)。
 
@@ -14,7 +14,7 @@ React Native 是 Facebook 推出并开源的跨平台移动应用开发框架，
 npm install @react-native-async-storage/async-storage @rneui/base @rneui/themed
 ```
 
-### 安装 MQTT 客户端模块
+## 安装 MQTT 客户端模块
 
 ```
 npm install react_native_mqtt
@@ -22,9 +22,9 @@ npm install react_native_mqtt
 
 react_native_mqtt 是一个在 React Native 项目中使用的 [MQTT 客户端](https://www.emqx.com/zh/blog/mqtt-client-tools)模块，支持 iOS 和 Android。
 
-### MQTT 客户端模块使用
+## MQTT 客户端模块使用
 
-#### 连接 MQTT 服务器
+### 连接 MQTT 服务器
 
 这里使用 EMQ 提供的免费公共 [MQTT 服务器](https://www.emqx.com/zh/mqtt/public-mqtt5-broker)，该服务基于 EMQ 的 [MQTT 物联网云平台](https://www.emqx.com/zh/cloud) 创建。服务器接入信息如下：
 
@@ -32,7 +32,7 @@ react_native_mqtt 是一个在 React Native 项目中使用的 [MQTT 客户端](
 - TCP Port: **1883**
 - Websocket Port: **8083**
 
-#### 创建客户端实例
+### 创建客户端实例
 
 ```
 init({
@@ -51,7 +51,7 @@ const options = {
 client = new Paho.MQTT.Client(options.host, options.port, options.path);
 ```
 
-#### 连接 MQTT 服务器
+### 连接 MQTT 服务器
 
 ```
   connect = () => {
@@ -69,7 +69,7 @@ client = new Paho.MQTT.Client(options.host, options.port, options.path);
   }
 ```
 
-#### 主题订阅
+### 主题订阅
 
 ```
   subscribeTopic = () => {
@@ -82,7 +82,7 @@ client = new Paho.MQTT.Client(options.host, options.port, options.path);
   }
 ```
 
-#### 消息发布
+### 消息发布
 
 ```
   sendMessage = () =>{
@@ -92,7 +92,7 @@ client = new Paho.MQTT.Client(options.host, options.port, options.path);
   }
 ```
 
-#### 取消订阅
+### 取消订阅
 
 ```
   unSubscribeTopic = () => {
@@ -101,7 +101,7 @@ client = new Paho.MQTT.Client(options.host, options.port, options.path);
   }
 ```
 
-### 运行项目
+## 运行项目
 
 完整的 RNMQTTDemo 项目地址：[https://github.com/emqx/MQTT-Client-Examples/tree/master/mqtt-client-React-Native](https://github.com/emqx/MQTT-Client-Examples/tree/master/mqtt-client-React-Native) 。
 
@@ -116,25 +116,25 @@ npx react-native run-ios
 
 ![MQTT React Native iOS](https://assets.emqx.com/images/180f325e5b2ff3d34be952a9df99aff2.png)
 
-### MQTT 连接测试
+## MQTT 连接测试
 
 这里使用 [MQTT 5.0 客户端工具 - MQTTX](https://mqttx.app/zh) 进行相关测试，创建一个名为 react-native-demo 的连接，所有配置项均使用默认值，点击连接按钮，连接成功后添加一个主题名称为 testTopic 的订阅，显示如下：
 
 ![MQTT 5.0 客户端工具 - MQTTX](https://assets.emqx.com/images/f4b8a59a025f95cf712c26e9482419d3.png)
 
-#### 连接
+### 连接
 
 点击 APP 中的 CONNECT 按钮，连接成功后的界面显示如下，其中顶部 ClientID 一行的内容变成绿色，表示已成功连接到 [MQTT 服务器](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison)。
 
 ![连接 MQTT 服务器](https://assets.emqx.com/images/2191362e7bf727560de823815ad9bce5.png)
 
-#### 主题订阅
+### 主题订阅
 
 输入需要订阅的主题，这里以 `testTopic` 为例，然后点击 SUBSCRIBE 按钮，订阅后的界面显示如下：
 
 ![订阅 MQTT 主题](https://assets.emqx.com/images/563ad2c30b75d75a1b9b30442d53edd6.png)
 
-#### 消息发布
+### 消息发布
 
 输入需要发布的消息内容，输入完成后点击 PUBLISH 按钮，最下方会列出当前订阅主题下接收到的消息，其中黑色背景的消息是当前客户端发出去的，id_67485 就是当前客户端的 id，界面显示如下：
 
@@ -144,7 +144,7 @@ npx react-native run-ios
 
 ![MQTT 消息发布](https://assets.emqx.com/images/2aec69acb78aeddc53cc11531298e697.png)
 
-#### 取消订阅
+### 取消订阅
 
 在 APP 中点击 UNSCRIBE 按钮，然后在 MQTTX 上继续往 testTopic 主题发布一条内容为 `{ "msg": "hello test" }` 的消息，显示如下：
 
@@ -155,7 +155,7 @@ npx react-native run-ios
 ![MQTT 取消订阅](https://assets.emqx.com/images/27caa87029972c19f711ba986b3638e8.png)
 
 
-### 总结
+## 总结
 
 至此，我们完成了在 iOS 平台上利用 React Native 构建一个 MQTT 应用，实现了客户端与 MQTT 服务器的连接、主题订阅、收发消息、取消订阅等功能。
 

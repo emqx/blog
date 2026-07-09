@@ -6,7 +6,7 @@ EMQX Broker 从 V3 版本开始支持速率限制功能，包括了对 **PUBLISH
 
 ## 配置项
 
-#### MQTT PUBLISH 报文接收速率
+### MQTT PUBLISH 报文接收速率
 
 该配置位于 `emqx.conf`：
 
@@ -14,7 +14,7 @@ EMQX Broker 从 V3 版本开始支持速率限制功能，包括了对 **PUBLISH
 
 配置格式为：`<Number>,<Duration>`，表示在 `<Duration>` 时间段内，最多允许接收 `<Number>` 数量的 PUBLISH 报文。
 
-#### TCP 数据包接收速率
+### TCP 数据包接收速率
 
 该配置位于 `emqx.conf`：
 
@@ -24,7 +24,7 @@ EMQX Broker 从 V3 版本开始支持速率限制功能，包括了对 **PUBLISH
 
 配置格式为：`<Rate>,<Burst>`，它表示允许的数据包接收的平均速率为 `<Rate>` 。但它允许的的最大峰值由` <Burst>` 值决定。详细的内容见下节： **速率限制算法令牌桶 — 算法**
 
-#### active_n
+### active_n
 
 该配置位于 `emqx.conf`：
 
@@ -34,7 +34,7 @@ EMQX Broker 从 V3 版本开始支持速率限制功能，包括了对 **PUBLISH
 
 ## 速率限制算法 - 令牌桶
 
-#### 简介
+### 简介
 
 上述所提到 `publish_limit` 和 `rate_limit` 都使用 **令牌桶算法** 实现，其算法逻辑如下图：
 
@@ -44,7 +44,7 @@ EMQX Broker 从 V3 版本开始支持速率限制功能，包括了对 **PUBLISH
 2. 我们将以每秒 N 个的速率向这个桶添加令牌，桶满时则不再向桶添加令牌，这个速率我们记为 `rate`。
 3. 每当有请求抵达，则从桶中取出相应数量的令牌。如果桶为空则阻塞，直到足够数量的令牌被放入。
 
-#### 作用
+### 作用
 
 通过 **令牌桶** 算法，我们能够：
 
@@ -69,7 +69,7 @@ EMQX Broker 从 V3 版本开始支持速率限制功能，包括了对 **PUBLISH
 
 ## 速率限制配置示例
 
-#### 速率限制配置
+### 速率限制配置
 
 ```properties
 listener.tcp.external.active_n = 100
@@ -96,7 +96,7 @@ zone.external.publish_limit = 10,1m
 
 可以将 `<Number>,<Duration>` 转换为 `<Rate>,<Burst>` 的形式，即 `<Number> / <Duration>, <Numebr>`。
 
-#### 其他配置
+### 其他配置
 
 此外，除了这以上的 *Rate Limit* 限制外，在 `etc/emqx.conf` 配置中，还支持对 TCP、WebSocket 等连接进行以下限制：
 

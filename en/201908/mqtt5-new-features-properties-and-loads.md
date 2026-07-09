@@ -4,7 +4,7 @@ The packets carrying the payload in the MQTT 5.0 protocol include CONNECT packet
 
 The payload of the PUBLISH packet is responsible for storing the message content, which is the same as the MQTT 3.1.1 protocol.
 
-### CONNECT Packet
+## CONNECT Packet
 
 **The new properties of the variable header of the CONNECT packet are:**
 
@@ -16,14 +16,14 @@ In the Payload of the CONNECT packet, some fields have changed, and the [Will me
 
 ![2.jpg](https://assets.emqx.com/images/29880f8724b075a58f27caca155c4b9a.jpg)
 
-### CONNACK Packet
+## CONNACK Packet
 
 **[CONNACK](https://www.emqx.com/en/blog/mqtt5-new-features-reason-code-and-ack) packet does not have Payload, and the properties contained in the variable header are:**
 
 ![3.jpg](https://assets.emqx.com/images/247af99b45d686958b8ca509be45aa6c.jpg)
 
 
-### PUBLISH Packet
+## PUBLISH Packet
 
 **The properties of the variable header of the PUBLISH message are:**
 
@@ -31,14 +31,14 @@ In the Payload of the CONNECT packet, some fields have changed, and the [Will me
 
 
 
-### PUBACK, PUBREC, PUBREL, PUBCOMP, SUBACK, UNSUBACK PACKET
+## PUBACK, PUBREC, PUBREL, PUBCOMP, SUBACK, UNSUBACK PACKET
 
 **PUBACK, PUBREC, PUBREL, PUBCOMP, SUBACK, UNSUBACK all have the following three properties:**
 
 ![PUBACK, PUBREC, PUBREL, PUBCOMP, SUBACK, UNSUBACK 报文.jpg](https://assets.emqx.com/images/d5fa746bdd091a885b2560884d6da0fc.jpg)
 
 
-### SUBSCRIBE Packet
+## SUBSCRIBE Packet
 
 **The properties of the SUBSCRIBE message also exist in the variable header.**
 
@@ -61,7 +61,7 @@ Bits 4 and 5 of the subscription option indicate Retain Handling. This option is
 
 Bits 6 and 7 of the subscription option is reserved for future use. If any of the reserved bits of the payload are non-zero, the server treats the packet as a malformed packet.
 
-### UNSUBSCRIBE Packet
+## UNSUBSCRIBE Packet
 
 UNSUBSCRIBE packet has only two properties: property length and user property.
 
@@ -69,7 +69,7 @@ The payload of the UNSUBSCRIBE packet is much simpler than the payload of SUBSCR
 
 The server will treat the packet as a malformed packet.
 
-### DISCONNECT PACKET(new)
+## DISCONNECT PACKET(new)
 
 **The DISCONNECT packet is a new packet from MQTT 5.0. Its introduction means that the [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) has the ability to actively disconnect. The properties of the DISCONNECT packet are:**
 

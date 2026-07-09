@@ -55,7 +55,7 @@
 
 MQTT Broker 利用 ACL 来保障安全性并根据规则限制对特定主题的访问。ACL 规定了哪些客户端可以向哪些主题发布消息，以及哪些客户端可以订阅哪些主题。通过设置 ACL，MQTT Broker 可以保证只有经过授权的设备或客户端才能发布和订阅特定的主题，从而实现一个可控的通信环境。
 
-#### MQTT ACL 的主要组成部分
+### MQTT ACL 的主要组成部分
 
 1. **主题模式**：[MQTT 主题](https://www.emqx.com/zh/blog/advanced-features-of-mqtt-topics)名称是分层的，ACL 可以利用通配符来定义适用于多个主题的模式。MQTT 中常用的两个通配符是加号（+）和井号（#）。加号代表层级结构中的一个层级，而井号代表任意多个层级（包括零个层级）。
 2. **客户端标识符**：[MQTT 客户端](https://www.emqx.com/zh/blog/mqtt-client-tools)连接到 Broker 时，需要提供一个唯一的客户端标识符。ACL 可以根据这些标识符来判断哪些客户端有权执行哪些操作。

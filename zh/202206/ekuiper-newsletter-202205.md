@@ -8,7 +8,7 @@
 
 相比于无模式（schema）的 JSON 格式，protobuf 需要定义 proto 文件作为编解码的 schema。在使用 protobuf 格式之前，用户需要先注册 schema，并通过新增的 schemaId 属性，指定编解码选用的 schema。
 
-#### Schema 管理
+### Schema 管理
 
 使用 REST API 注册，schema 内容可通过文件路径或者文本提供。
 
@@ -36,7 +36,7 @@
 
 无论何种方式，内容会被存储于 etc/schemas/protobuf。
 
-#### Sink 中使用 protobuf
+### Sink 中使用 protobuf
 
 - format，用于指定使用的编码
 - schemaId， 用于指定使用的 schema
@@ -52,7 +52,7 @@
 }
 ```
 
-#### Source 中使用 protobuf
+### Source 中使用 protobuf
 
 FORMAT，支持 protobuf
 

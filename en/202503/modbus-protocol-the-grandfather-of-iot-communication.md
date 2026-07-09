@@ -136,27 +136,27 @@ Despite these limitations, the Modbus protocol remains a popular choice for many
 
 The Modbus Protocol is a cornerstone of industrial communication, but how does it compare to other popular protocols like OPC-UA, [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt), Sparkplug, HTTP, and BACnet? This section offers a quick guide to help you understand where the Modbus Protocol stands among its peers, building on its variants (RTU, TCP, ASCII) discussed earlier.
 
-#### Modbus Protocol vs OPC-UA
+### Modbus Protocol vs OPC-UA
 
 - **Features**: The Modbus Protocol is lightweight with low overhead, ideal for simple data exchange. OPC-UA, however, provides robust security and complex functionality.
 - **Use Case**: Choose Modbus for device-level efficiency; opt for OPC-UA in secure, interoperable plant systems.
 
-#### Modbus Protocol vs MQTT
+### Modbus Protocol vs MQTT
 
 - **Connection**: MQTT maintains persistent connections via a broker, unlike the Modbus Protocol’s request-based model.
 - **Use Case**: MQTT suits [IoT cloud](https://www.emqx.com/en/blog/iot-in-the-cloud-8-key-benefits-and-how-to-get-started) integration, while the Modbus Protocol excels in serial industrial setups.
 
-#### Modbus Protocol vs Sparkplug
+### Modbus Protocol vs Sparkplug
 
 - **Efficiency**: Sparkplug, layered on MQTT, offers compressed data and change-based updates, outpacing the Modbus Protocol’s basic structure.
 - **Use Case**: Sparkplug fits real-time IIoT, whereas Modbus serves direct device communication.
 
-#### Modbus Protocol vs HTTP
+### Modbus Protocol vs HTTP
 
 - **Overhead**: HTTP’s high overhead contrasts with the Modbus Protocol’s streamlined approach.
 - **Use Case**: HTTP is for web-based systems, while Modbus targets industrial networks.
 
-#### Modbus Protocol vs BACnet
+### Modbus Protocol vs BACnet
 
 - **Design**: BACnet supports advanced building automation features; the Modbus Protocol prioritizes simplicity.
 - **Use Case**: BACnet is ideal for HVAC and lighting control, while Modbus dominates PLCs and sensors.

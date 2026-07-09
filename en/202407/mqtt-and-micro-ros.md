@@ -242,7 +242,7 @@ The sample code contains the following three directories:
 2. `microros_demo`, which contains the code for a micro-ROS node running on ESP32.
 3. `demo_interfaces` contains a custom message format Hsb, consisting of the hue, saturation, and brightness fields. This message is passed between the micro-ROS node and the `converter` node.
 
-#### Building ros2_demo
+### Building ros2_demo
 
 First, we need to complete the build of `ros2_demo` in the ROS 2 workspace. Please perform the following steps in sequence:
 
@@ -296,7 +296,7 @@ First, we need to complete the build of `ros2_demo` in the ROS 2 workspace. Plea
    # ros2 launch ros2_demo launch.xml params_file:=<path to params.yaml>
    ```
 
-#### Building microros_demo
+### Building microros_demo
 
 1. Open a new terminal and be careful not to execute `get_ros` or any other `setup.sh` script to set up the ROS environment.
 

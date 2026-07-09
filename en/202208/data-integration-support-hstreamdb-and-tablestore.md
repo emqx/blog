@@ -15,7 +15,7 @@ EMQX Cloud currently supports integration with multiple types of data queues, da
 ![EMQX Cloud data integrations](https://assets.emqx.com/images/c1a2ede68a48f76ae8d4c65665c93d71.png)
  
 
-#### HStreamDB
+### HStreamDB
 
 [HStreamDB](https://hstream.io/) is an open-source streaming database designed for streaming data by EMQ, which can manage the entire life cycle of access, storage, processing, and distribution of large-scale real-time data streams. It uses standard SQL (and its streaming extensions) as the main interface language and takes real-time as the main feature, aiming to simplify the operation and maintenance management of data flow and the development of real-time applications. After integrating with EMQX Cloud, users can easily realize the cloud upload, processing and distribution of device data.
 
@@ -23,7 +23,7 @@ EMQX Cloud currently supports integration with multiple types of data queues, da
 
 <center>Configuration interface of HStreamDB</center>
 
-#### Alibaba Cloud Tablestore
+### Alibaba Cloud Tablestore
 
 Alibaba Cloud Tablestore provides Serverless table storage services for massive structured data, and provides a one-stop IoTstore solution for in-depth optimization of IoT scenarios. It is suitable for structured data storage in scenarios such as massive bills, IM messages, IoT, Internet of Vehicles, risk control, and recommendation, providing low-cost storage of massive data, millisecond-level online data query and retrieval, and flexible data analysis capabilities.
 

@@ -7,7 +7,7 @@
 
 
 
-### 所需组件
+## 所需组件
 
 * NodeMCU
 * Arduino IDE
@@ -20,13 +20,13 @@
 
 
 
-### NodeMCU ESP8266 和 LED 连接图
+## NodeMCU ESP8266 和 LED 连接图
 
 ![project](https://assets.emqx.com/images/esp8266_control_led.png)
 
 
 
-### 代码编写
+## 代码编写
 
 1. 首先我们将导入 **ESP8266WiFi** 和 **PubSubClient** 库，ESP8266WiFi 库能够将 ESP8266 连接到 WiFi 网络，PubSubClient 库，使我们能够连接到 MQTT 代理并发布/订阅主题消息。
 
@@ -215,7 +215,7 @@
 
 
 
-### 连接和测试
+## 连接和测试
 
 1. [请使用 Arduino IDE ](<https://www.arduino.cc/en/Main/Software>)将完整代码上传 ESP8266，并打开串口监视器
 
@@ -227,7 +227,7 @@
 
 
 
-### 总结
+## 总结
 
 至此，我们成功实现 NodeMCU ESP8266 与免费公共 MQTT 服务器远程控制 LED 灯，该例子只是描述了一个简单的场景，在实际的项目中，需要更加安全的连接方式，以及对物联网数据进行持久化等功能。
 
