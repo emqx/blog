@@ -24,7 +24,9 @@ This guide aims to introduce beginners to the world of MQTT.js, exploring its se
 - Handling messages and events
 - Best practices for error handling and security
 
-## Installation
+## Install MQTT.js
+
+MQTT.js can be installed through npm or Yarn for Node.js projects, or loaded through a CDN for browser-based applications. If you are building a frontend application, MQTT.js usually connects to the broker through MQTT over WebSocket. For Node.js applications, MQTT.js can connect over MQTT, MQTT over TLS, or WebSocket.
 
 ### Install MQTT.js Using NPM or Yarn
 
@@ -37,7 +39,7 @@ npm install mqtt --save
 yarn add mqtt
 ```
 
-> Note: MQTT.js v5.0.0 (07/2023) introduces major changes including TypeScript rewrite, Node.js v18/v20 support, while v4.0.0 (04/2020) supports Node.js v12/v14.
+> 💡 **Version Compatibility Note:**  MQTT.js v5.0.0+ is modern JavaScript-first, introducing a complete TypeScript rewrite and native support for modern Node.js runtimes (v18, v20, and newer). It is highly recommended to use the latest version to ensure security patches and compatibility with modern build tools.
 
 ### Install MQTT.js Using CDN
 
@@ -61,7 +63,7 @@ To install MQTT.js globally using NPM, run the following command:
 npm install mqtt -g
 ```
 
-## Preparing an MQTT Broker
+## Preparing an MQTT Broker for MQTT.js
 
 Before proceeding, ensure that you have an [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) to communicate and test with. There are several options for obtaining an MQTT broker:
 
@@ -119,9 +121,9 @@ For more information, please check out: [Free Public MQTT Broker](https://www.em
   </div>
 </section>
 
-## Simple MQTT.js Example
+## MQTT.js Example: Connect, Publish, and Subscribe
 
-We will provide an example of how to connect to [EMQX Cloud](https://www.emqx.com/en/cloud), subscribe to topics, and send and receive messages using MQTT.js.
+This MQTT.js example shows how to create a JavaScript MQTT client, connect to an MQTT broker, subscribe to a topic, publish a message, and receive messages in real time.
 
 > Note: WebSocket connections are supported only in browsers. As a result, we will be using different connection parameters for the browser and Node.js environments. However, all other parameters are the same, except for the connection URL. Readers can use the parameters that best suit their needs.
 
@@ -172,7 +174,7 @@ client.on('message', function (topic, message) {
 })
 ```
 
-## MQTT.js Command Line
+## MQTT.js Command Line Usage
 
 After installing MQTT.js globally, we can use the command-line tool to subscribe to topics and send and receive messages.
 
@@ -192,6 +194,17 @@ If you require a more comprehensive MQTT command-line tool, you can refer to [MQ
 
 ## MQTT.js API Introduction
 
+MQTT.js provides a simple API for connecting to brokers, publishing messages, subscribing to topics, and handling client events. The following table summarizes the most commonly used MQTT.js APIs.
+
+| MQTT.js API            | Description                                                  |
+| ---------------------- | ------------------------------------------------------------ |
+| `mqtt.connect()`       | Connects to an MQTT broker and returns a client instance.    |
+| `client.publish()`     | Publishes a message to a topic.                              |
+| `client.subscribe()`   | Subscribes to one or more MQTT topics.                       |
+| `client.unsubscribe()` | Unsubscribes from one or more topics.                        |
+| `client.end()`         | Closes the MQTT client connection.                           |
+| `client.on()`          | Listens for MQTT.js client events such as `connect`, `message`, `error`, and `reconnect`. |
+
 ### mqtt.connect([url], options)
 
 This API connects to the specified MQTT Broker function and always returns a `Client` object. The first parameter passes in a URL value, which can use the following protocols: `mqtt`, `mqtts`, `tcp`, `tls`, `ws`, `wss`. Alternatively, the URL can be an object returned by `URL.parse()`.
@@ -202,9 +215,9 @@ Here are some commonly-used attribute values in the Options object:
 
 - Options
 
-  - `keepalive`: The unit is `seconds`, the type is integar, the default is 60 seconds, and it is disabled when it is set to 0
+  - `keepalive`: The unit is `seconds`, the type is integer, the default is 60 seconds, and it is disabled when it is set to 0
 
-  - `clientId`: The default is `'mqttjs_' + Math.random().toString(16).substr(2, 8)`, and it can support custom modified strings
+  - `clientId`: The default is `'mqttjs_' + Math.random().toString(16).substring(2, 10)`, and it can support custom modified strings
 
   - `protocolVersion`: MQTT protocol version number, the default is 4 (v3.1.1) and can be modified to 3 (v3.1) and 5 (v5.0)
 
@@ -216,7 +229,7 @@ Here are some commonly-used attribute values in the Options object:
 
   - `username`: Authentication username. If broker requires username authentication, please set this value
 
-  - `password`: authentication password. If the broker requires password authentication, please set this value
+  - `password`: Authentication password. If the broker requires password authentication, please set this value
 
   - `will`
 
@@ -335,7 +348,7 @@ In addition to listening to events, the Client also has some built-in functions 
     } else {
       console.log('Published')
     }
-  }
+  })
   ```
 
 - `Client.subscribe(topic/topic array/topic object, [options], [callback])`
@@ -359,7 +372,7 @@ In addition to listening to events, the Client also has some built-in functions 
 
 - `Client.unsubscribe(topic/topic array, [options], [callback])`
 
-  Un-subscribe to a single topic or multiple topics. This function contains three parameters:
+  Unsubscribe from a single topic or multiple topics. This function contains three parameters:
 
   - Topic: It can pass in a string or an array of strings
   - Options: Optional value. It refers to configuration information when unsubscribing
@@ -382,8 +395,7 @@ In addition to listening to events, the Client also has some built-in functions 
   Close the client. This function contains three parameters:
 
   - force: When it is set to true, the client will be closed immediately without waiting for the disconnected message to be accepted. This parameter is optional and the default is false. **Note**: When it is set to true, the Broker cannot receive the disconnect packet
-  - options: Optional value, configuration information when closing the client,
-  - Options: optional value. It refers to the configuration information when the client is closed. It is mainly used to configure reasonCode when disconnecting
+  - options: Optional value, configuration information when closing the client. It refers to the configuration information when the client is closed. It is mainly used to configure reasonCode when disconnecting
   - callback: callback function when the client is closed
 
   ```jsx
@@ -392,134 +404,134 @@ In addition to listening to events, the Client also has some built-in functions 
 
 To view a complete example of using MQTT.js in JavaScript, please see: [https://github.com/emqx/MQTT-Client-Examples/tree/master/mqtt-client-JavaScript](https://github.com/emqx/MQTT-Client-Examples/tree/master/mqtt-client-JavaScript)
 
-### MQTT 5.0
+### Using MQTT 5.0 Features in MQTT.js
 
-MQTT.js fully supports the MQTT 5.0 protocol, offering numerous new features and improvements. This section demonstrates how to use key MQTT 5.0 features in MQTT.js.
+MQTT.js supports MQTT 5.0, allowing JavaScript MQTT clients to use features such as session expiry, topic alias, user properties, message expiry, request-response patterns, and enhanced will messages.
 
 - Session Expiry Interval: Allows clients to specify how long a session should be maintained.
 
-    ```javascript
-    const client = mqtt.connect('mqtt://broker.emqx.io', {
-      protocolVersion: 5,
-      clean: true,
-      properties: {
-        sessionExpiryInterval: 300 // 300 seconds
-      }
-    })
-    ```
+  ```javascript
+  const client = mqtt.connect('mqtt://broker.emqx.io', {
+    protocolVersion: 5,
+    clean: true,
+    properties: {
+      sessionExpiryInterval: 300 // 300 seconds
+    }
+  })
+  ```
 
 - Topic Alias: Reduces network traffic by using short integer aliases instead of long topic strings.
 
-    ```javascript
-    client.publish('long/topic/name', 'message', {
-      properties: {
-        topicAlias: 1
-      }
-    })
-
-    // Subsequent publishes can use just the alias
-    client.publish('', 'another message', {
-      properties: {
-        topicAlias: 1
-      }
-    })
-    ```
+  ```javascript
+  client.publish('long/topic/name', 'message', {
+    properties: {
+      topicAlias: 1
+    }
+  })
+  
+  // Subsequent publishes can use just the alias
+  client.publish('', 'another message', {
+    properties: {
+      topicAlias: 1
+    }
+  })
+  ```
 
 - User Properties: Allows adding custom key-value pairs to messages.
 
-    ```javascript
-    client.publish('topic', 'message', {
-      properties: {
-        userProperties: {
-          'custom-key': 'custom-value'
-        }
+  ```javascript
+  client.publish('topic', 'message', {
+    properties: {
+      userProperties: {
+        'custom-key': 'custom-value'
       }
-    })
-    ```
+    }
+  })
+  ```
 
 - Subscription Identifier: Used to identify specific subscriptions.
 
-    ```javascript
-    client.subscribe('topic', {
-      properties: {
-        subscriptionIdentifier: 123
-      }
-    })
-
-    client.on('message', (topic, message, packet) => {
-      if (packet.properties.subscriptionIdentifier === 123) {
-        console.log('Message from subscription 123')
-      }
-    })
-    ```
+  ```javascript
+  client.subscribe('topic', {
+    properties: {
+      subscriptionIdentifier: 123
+    }
+  })
+  
+  client.on('message', (topic, message, packet) => {
+    if (packet.properties.subscriptionIdentifier === 123) {
+      console.log('Message from subscription 123')
+    }
+  })
+  ```
 
 - Request Response Information: Implements a request-response pattern.
 
-    ```javascript
-    client.publish('request/topic', 'request', {
-      properties: {
-        responseTopic: 'response/topic',
-        correlationData: Buffer.from('request-1')
-      }
-    })
-
-    client.subscribe('response/topic')
-    client.on('message', (topic, message, packet) => {
-      if (packet.properties.correlationData) {
-        console.log('Response received for', packet.properties.correlationData.toString())
-      }
-    })
-    ```
+  ```javascript
+  client.publish('request/topic', 'request', {
+    properties: {
+      responseTopic: 'response/topic',
+      correlationData: Buffer.from('request-1')
+    }
+  })
+  
+  client.subscribe('response/topic')
+  client.on('message', (topic, message, packet) => {
+    if (packet.properties.correlationData) {
+      console.log('Response received for', packet.properties.correlationData.toString())
+    }
+  })
+  ```
 
 - Message Expiry Interval: Sets a lifetime for messages.
 
-    ```javascript
-    client.publish('topic', 'message', {
-      properties: {
-        messageExpiryInterval: 60 // 60 seconds
-      }
-    })
-    ```
+  ```javascript
+  client.publish('topic', 'message', {
+    properties: {
+      messageExpiryInterval: 60 // 60 seconds
+    }
+  })
+  ```
 
 - Will Delay Interval: Delays sending the will message.
 
-    ```javascript
-    const client = mqtt.connect('mqtt://broker.emqx.io', {
-      will: {
-        topic: 'will/topic',
-        payload: 'client gone offline',
-        properties: {
-          willDelayInterval: 30 // 30 seconds
-        }
+  ```javascript
+  const client = mqtt.connect('mqtt://broker.emqx.io', {
+    will: {
+      topic: 'will/topic',
+      payload: 'client gone offline',
+      properties: {
+        willDelayInterval: 30 // 30 seconds
       }
-    })
-    ```
+    }
+  })
+  ```
 
 - Receive Maximum: Controls the maximum number of unacknowledged PUBLISH packets.
 
-    ```javascript
-    const client = mqtt.connect('mqtt://broker.emqx.io', {
-      properties: {
-        receiveMaximum: 100
-      }
-    })
-    ```
+  ```javascript
+  const client = mqtt.connect('mqtt://broker.emqx.io', {
+    properties: {
+      receiveMaximum: 100
+    }
+  })
+  ```
 
 - Maximum Packet Size: Specifies the maximum packet size the client is willing to accept.
 
-    ```javascript
-    const client = mqtt.connect('mqtt://broker.emqx.io', {
-      properties: {
-        maximumPacketSize: 100 * 1024 // 100 KB
-      }
-    })
-    ```
+  ```javascript
+  const client = mqtt.connect('mqtt://broker.emqx.io', {
+    properties: {
+      maximumPacketSize: 100 * 1024 // 100 KB
+    }
+  })
+  ```
 
 These examples showcase some key MQTT 5.0 features in MQTT.js. Using these can enhance your application's flexibility and efficiency. Ensure your MQTT broker supports MQTT 5.0 when using these features.
 
 For full MQTT.js API documentation, including all MQTT 5.0 properties, see the [MQTT.js GitHub repository](https://github.com/mqttjs/MQTT.js).
 
-## MQTT.js Q&A
+## MQTT.js FAQ
 
 ### Can I implement two-way authentication connections in the browser?
 
@@ -552,7 +564,7 @@ Yes, MQTT.js is a library that can be integrated into any JavaScript-based appli
 
 When connecting to WebSocket, if the protocol, port, and Host are all correct, make sure to add the path.
 
-## MQTT.js Advanced
+## Advanced MQTT.js Usage
 
 ### How to Debug MQTT.js Applications
 
@@ -620,35 +632,38 @@ Here, we will demonstrate how to optimize message processing in MQTT.js using Rx
 
 ```javascript
 import { fromEvent } from 'rxjs'
-import { bufferTime, map, takeUntil } from 'rxjs/operators'
+import { bufferTime, map, filter, takeUntil } from 'rxjs/operators'
 
 // Convert the connection close event to an Observable
 const unsubscribe$ = fromEvent(client, 'close')
 
-// Convert message subscription to Observable, continue receiving and processing messages until the connection is closed
-const message$ = fromEvent(client, 'message').pipe(takeUntil(unsubscribe$)).pipe(
-  map(([topic, payload, packet]: [string, Buffer, IPublishPacket]) => {
+// Convert message subscription to Observable
+const message$ = fromEvent(client, 'message').pipe(
+  takeUntil(unsubscribe$),
+  map(([topic, payload, packet]) => {
     return processMessage(topic, payload, packet)
-  }),
+  })
 )
 
 // Use filter to filter out system messages
-const nonSYSMessage$ = message$.pipe(filter((message: MessageModel) => !message.topic.includes('$SYS')))
+const nonSYSMessage$ = message$.pipe(
+  filter((message) => !message.topic.includes('$SYS'))
+)
 
-// Use bufferTime to cache messages, and save them to the database in batches at a frequency of once per second.
-nonSYSMessage$.pipe(bufferTime(1000)).subscribe((messages: MessageModel[]) => {
+// Use bufferTime to cache messages and save to DB once per second
+nonSYSMessage$.pipe(bufferTime(1000)).subscribe((messages) => {
   messages.length && saveMessage(id, messages)
 })
 
-// Use bufferTime to cache messages and render them on the UI at a rate of twice per second.
-nonSYSMessage$.pipe(bufferTime(500)).subscribe((messages: MessageModel[]) => {
+// Use bufferTime to cache messages and render to UI twice per second
+nonSYSMessage$.pipe(bufferTime(500)).subscribe((messages) => {
   messages.length && renderMessage(messages)
 })
 ```
 
 ## Summary
 
-This article has briefly introduced the usage functions of some common APIs of MQTT.js. To learn about [MQTT topics](https://www.emqx.com/en/blog/advanced-features-of-mqtt-topics), wildcards, retained messages, last-will, and other features, check out the [MQTT Guide 2024: Beginner to Advanced](https://www.emqx.com/en/mqtt-guide) series of articles provided by EMQ. Explore more advanced applications of MQTT and get started with MQTT application and service development.
+This article has briefly introduced the usage functions of some common APIs of MQTT.js. To learn about [MQTT topics](https://www.emqx.com/en/blog/advanced-features-of-mqtt-topics), wildcards, retained messages, last-will, and other features, check out the [MQTT Guide 2026: Beginner to Advanced](https://www.emqx.com/en/mqtt-guide) series of articles provided by EMQ. Explore more advanced applications of MQTT and get started with MQTT application and service development.
 
 For specific use in actual projects, please refer to the following links.
 

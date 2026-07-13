@@ -8,7 +8,7 @@ Complementing Topics are MQTT Wildcards, powerful tools that enhance the protoco
 
 In this comprehensive guide, we'll delve into the intricacies of MQTT Topics and Wildcards, exploring their structure, best practices, and advanced features. We'll examine special cases like topics beginning with '$', discuss how to apply these concepts in various real-world scenarios, and address frequently asked questions to deepen your understanding of these essential MQTT components.
 
-## MQTT Topics
+## What Are MQTT Topics?
 
 MQTT topic is a string used in the [MQTT protocol](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) to identify and route messages. It is a key element in communication between MQTT publishers and subscribers. In the [MQTT publish/subscribe model](https://www.emqx.com/en/blog/mqtt-5-introduction-to-publish-subscribe-model), publishers send messages to specific topics, while subscribers can subscribe to those topics to receive the messages.
 
@@ -18,18 +18,20 @@ The following is a simple MQTT publish and subscribe flow. If APP 1 subscribes t
 
 ![MQTT Publish Subscribe](https://assets.emqx.com/images/0c35bfdb730f1d29b7f1b7a249c62f8b.png?imageMogr2/thumbnail/1520x)
 
-A topic is a UTF-8 encoded string that is the basis for message routing in the MQTT protocol. A topic is typically leveled and separated with a slash `/` between the levels. This is similar to URL paths, for example:
+A topic is a UTF-8 encoded string that is the basis for message routing in the MQTT protocol. A topic is typically leveled and separated with a slash `/` between the levels. Each level represents a different category of information, such as device ID, location, sensor type, or message type.
+
+For example:
 
 ```awk
 chat/room/1
+vehicle/car001/location
 sensor/10/temperature
-sensor/+/temperature
-sensor/#
+factory/device01/status
 ```
 
 Although allowed, it is usually not recommended to use topics begin or end with `/`, such as `/chat` or `chat/`.
 
-## MQTT Wildcards
+## MQTT Wildcards: + and # Topic Filters
 
 MQTT wildcards are a special type of topic that can only be used for subscription and not publishing. Clients can subscribe to a wildcard topic to receive messages from multiple matching topics, eliminating the need to subscribe to each topic individually and reducing overhead. MQTT supports two types of wildcards: `+` (single-level) and `#` (multi-level).
 
@@ -69,6 +71,21 @@ sensor/bedroom/1/temperature
 "sensor/#" is valid
 "sensor/bedroom#" is invalid (+ or # are only used as a wildcard level)
 "sensor/#/temperature" is invalid (# must be the last level)
+```
+
+If a client subscribes to the topic `sensor/#`, it will successfully match and receive messages from:
+
+```awk
+sensor/1/temperature
+sensor/bedroom/1/temperature
+sensor/bedroom/1/closet/humidity
+sensor/ (matches a topic with an empty trailing level)
+```
+
+However, it will **not** match:
+
+```
+home/sensor/temperature (does not start with the matching root level)
 ```
 
 ## MQTT Topics Beginning with $
@@ -165,7 +182,37 @@ Next, you can subscribe to the `myhome/bedroom/+` topic to get temperature, humi
 
   **User Status**: Subscribe to this topic to get your friends' online status.
 
+## MQTT Topic Design Best Practices
+
+When designing MQTT topics for IoT systems, consider the following practices:
+
+- Do not use `#` to subscribe to all topics.
+- The topic should not start or end with `/`, such as `/chat` or `chat/`.
+- Do not use spaces and non-ASCII characters in the topic.
+- Use `_` or `-` to connect words (or camel case) within a topic level.
+- Try to use less topic levels.
+- Try to model the message data schema in favor to avoid using wildcard topics.
+- When wildcard is in use, try to move the more unique topic level closer to root. e.g. `device/00000001/command/#` is a better choice than `device/command/00000001/#`.
+
+A good MQTT topic design improves scalability, maintainability, and message routing efficiency.
+
 ## MQTT Topics FAQ
+
+### What is an MQTT topic?
+
+An MQTT topic is a UTF-8 encoded string used by MQTT publishers and subscribers to route messages. Publishers send messages to topics, and subscribers receive messages by subscribing to matching topic filters.
+
+### What is the difference between MQTT topic and MQTT topic filter?
+
+An MQTT topic is the destination name used when publishing messages. An MQTT topic filter is used by subscribers and can include wildcards such as `+` and `#` to match multiple topics.
+
+### How do MQTT wildcards work?
+
+MQTT supports two wildcard characters: `+` for matching one topic level and `#` for matching multiple topic levels. Wildcards can only be used in subscriptions, not when publishing messages.
+
+### How should I design MQTT topics for IoT applications?
+
+A good MQTT topic design should use a clear hierarchy based on device identity, location, and data type. Avoid unnecessary topic levels, avoid subscribing to all topics with `#`, and keep topic names consistent to improve scalability and maintainability.
 
 ### What is the maximum level and length of an MQTT topic?
 
@@ -197,16 +244,11 @@ Yes, but it is not recommended.
 
 Per MQTT specification, multiple subscriptions will result in multiple (duplicated) message deliveries.
 
-### What are the best practices for MQTT topics?
+## Summary
 
-- Do not use `#` to subscribe to all topics.
-- The topic should not start or end with `/`, such as `/chat` or `chat/`.
-- Do not use spaces and non-ASCII characters in the topic.
-- Use `_` or `-` to connect words (or camel case) within a topic level.
-- Try to use less topic levels.
-- Try to model the message data schema in favor to avoid using wildcard topics.
-- When wildcard is in use, try to move the more unique topic level closer to root. e.g. `device/00000001/command/#` is a better choice than `device/command/00000001/#`.
+MQTT topics and wildcards are fundamental parts of the MQTT publish/subscribe model. Topics define how messages are organized, while wildcard subscriptions allow clients to efficiently receive data from multiple topics.
 
+By following MQTT topic design best practices and understanding how `+` and `#` wildcards work, developers can build scalable and maintainable IoT messaging systems.
 
 ## Related Resources
 
