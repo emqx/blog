@@ -7,6 +7,7 @@
 ## [Product](https://www.emqx.com/en/blog/category/product)
 EMQ products including EMQX, EMQX Cloud, Neuron, NanoMQ, MQTTX and more.
 
+- [Building an MQTT Client Lifecycle Audit and Event Tracing Solution with EMQX Tables](https://www.emqx.com/en/blog/mqtt-client-lifecycle-audit-event-tracing-emqx-tables) ([Edit](https://github.com/emqx/blog/edit/main/en/202607/mqtt-client-lifecycle-audit-event-tracing-emqx-tables.md))
 - [EMQX Fleets: A Device Management Service for IoT at Scale (Now in Private Beta)](https://www.emqx.com/en/blog/a-device-management-service-for-iot-at-scale) ([Edit](https://github.com/emqx/blog/edit/main/en/202607/a-device-management-service-for-iot-at-scale.md))
 - [Using EMQX Tables to Implement End-to-End MQTT Message Tracing: Latency, Delivery, and Acknowledgment Analysis](https://www.emqx.com/en/blog/using-emqx-tables-to-implement-end-to-end-mqtt-message-tracing) ([Edit](https://github.com/emqx/blog/edit/main/en/202607/using-emqx-tables-to-implement-end-to-end-mqtt-message-tracing.md))
 - [Simplifying IoT Data Architecture with EMQX Tables: Replacing External Time-Series Databases](https://www.emqx.com/en/blog/simplifying-iot-data-architecture-with-emqx-tables) ([Edit](https://github.com/emqx/blog/edit/main/en/202607/simplifying-iot-data-architecture-with-emqx-tables.md))

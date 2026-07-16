@@ -132,3 +132,10 @@ EMQX Fleets brings core IoT device management capabilities into a cohesive manag
 If you are building a smart building platform, an industrial monitoring system, or a connected product, EMQX Fleets can provide the device management foundation you need while your team focuses on application logic and business outcomes.
 
 **Learn more and request private beta access:** https://www.emqx.com/en/cloud/emqx-fleets
+
+<section class="promotion">
+    <div>
+        Talk to an Expert
+    </div>
+    <a href="https://www.emqx.com/en/contact?product=solutions" class="button is-gradient">Contact Us →</a>
+</section>
