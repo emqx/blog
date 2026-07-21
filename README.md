@@ -7,6 +7,7 @@
 ## [Product](https://www.emqx.com/en/blog/category/product)
 EMQ products including EMQX, EMQX Cloud, Neuron, NanoMQ, MQTTX and more.
 
+- [From MQTT Data to Real-Time Dashboards: IoT Visualization with EMQX Tables and Grafana](https://www.emqx.com/en/blog/building-an-iot-visualization-platform-with-emqx-tables-and-grafana) ([Edit](https://github.com/emqx/blog/edit/main/en/202607/building-an-iot-visualization-platform-with-emqx-tables-and-grafana.md))
 - [Building an MQTT Client Lifecycle Audit and Event Tracing Solution with EMQX Tables](https://www.emqx.com/en/blog/mqtt-client-lifecycle-audit-event-tracing-emqx-tables) ([Edit](https://github.com/emqx/blog/edit/main/en/202607/mqtt-client-lifecycle-audit-event-tracing-emqx-tables.md))
 - [EMQX Fleets: A Device Management Service for IoT at Scale (Now in Private Beta)](https://www.emqx.com/en/blog/a-device-management-service-for-iot-at-scale) ([Edit](https://github.com/emqx/blog/edit/main/en/202607/a-device-management-service-for-iot-at-scale.md))
 - [Using EMQX Tables to Implement End-to-End MQTT Message Tracing: Latency, Delivery, and Acknowledgment Analysis](https://www.emqx.com/en/blog/using-emqx-tables-to-implement-end-to-end-mqtt-message-tracing) ([Edit](https://github.com/emqx/blog/edit/main/en/202607/using-emqx-tables-to-implement-end-to-end-mqtt-message-tracing.md))
@@ -469,6 +470,7 @@ EMQ products including EMQX, EMQX Cloud, Neuron, NanoMQ, MQTTX and more.
 ## [MQTT](https://www.emqx.com/en/blog/category/mqtt)
 Learn MQTT protocol from beginner to advanced, including tutorials, clients, programming and security.
 
+- [Mosquitto MQTT Broker: Pros/Cons, Tutorial, and Alternative](https://www.emqx.com/en/blog/mosquitto-mqtt-broker-pros-cons-tutorial-and-modern-alternatives) ([Edit](https://github.com/emqx/blog/edit/main/en/202607/mosquitto-mqtt-broker-pros-cons-tutorial-and-modern-alternatives.md))
 - [Zigbee2MQTT in 2026: Local Smart-Home Control over MQTT](https://www.emqx.com/en/blog/zigbee2mqtt-in-2026) ([Edit](https://github.com/emqx/blog/edit/main/en/202607/zigbee2mqtt-in-2026.md))
 - [What a PV Cooling Paper Reveals About Distributed IoT Control](https://www.emqx.com/en/blog/what-a-pv-cooling-paper-reveals-about-distributed-iot-control) ([Edit](https://github.com/emqx/blog/edit/main/en/202606/what-a-pv-cooling-paper-reveals-about-distributed-iot-control.md))
 - [Mosquitto vs EMQX: Features, Scalability, and Use Cases Compared](https://www.emqx.com/en/blog/emqx-vs-mosquitto-2023-mqtt-broker-comparison) ([Edit](https://github.com/emqx/blog/edit/main/en/202606/emqx-vs-mosquitto-2023-mqtt-broker-comparison.md))
@@ -549,7 +551,6 @@ Learn MQTT protocol from beginner to advanced, including tutorials, clients, pro
 - [MQTT 5.0 Packet Explained 01: CONNECT & CONNACK](https://www.emqx.com/en/blog/mqtt-5-0-control-packets-01-connect-connack) ([Edit](https://github.com/emqx/blog/edit/main/en/202309/mqtt-5-0-control-packets-01-connect-connack.md))
 - [Explore New Features of MQTT 5.0: Usage Examples Based on MQTTX CLI](https://www.emqx.com/en/blog/demonstrate-mqtt-5-0-features-using-mqttx-cli) ([Edit](https://github.com/emqx/blog/edit/main/en/202309/demonstrate-mqtt-5-0-features-using-mqttx-cli.md))
 - [Using MQTT in Unity with M2MqttUnity Library: A Step-by-Step Guide](https://www.emqx.com/en/blog/using-mqtt-in-unity-with-m2mqttunity-library-a-step-by-step-guide) ([Edit](https://github.com/emqx/blog/edit/main/en/202308/using-mqtt-in-unity-with-m2mqttunity-library-a-step-by-step-guide.md))
-- [Mosquitto MQTT Broker: Pros/Cons, Tutorial, and Alternative](https://www.emqx.com/en/blog/mosquitto-mqtt-broker-pros-cons-tutorial-and-modern-alternatives) ([Edit](https://github.com/emqx/blog/edit/main/en/202308/mosquitto-mqtt-broker-pros-cons-tutorial-and-modern-alternatives.md))
 - [JWT Authentication and JWKS Endpoint in MQTT: Principle and a Hands-on Guide](https://www.emqx.com/en/blog/jwt-authentication-and-jwks-endpoint-in-mqtt) ([Edit](https://github.com/emqx/blog/edit/main/en/202308/jwt-authentication-and-jwks-endpoint-in-mqtt.md))
 - [Authorization in MQTT: Using ACLs to Control Access to MQTT Messaging](https://www.emqx.com/en/blog/authorization-in-mqtt-using-acls-to-control-access-to-mqtt-messaging) ([Edit](https://github.com/emqx/blog/edit/main/en/202308/authorization-in-mqtt-using-acls-to-control-access-to-mqtt-messaging.md))
 - [MQTT vs AMQP for IoT Communications: Head to Head](https://www.emqx.com/en/blog/mqtt-vs-amqp-for-iot-communications) ([Edit](https://github.com/emqx/blog/edit/main/en/202307/mqtt-vs-amqp-for-iot-communications.md))
