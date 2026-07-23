@@ -683,6 +683,7 @@ Integrate MQTT with databases, message queues, cloud services and more.
 ## [Use Cases](https://www.emqx.com/zh/blog/category/use-cases)
 Real-world IoT solutions and industry applications powered by EMQ.
 
+- [面向大型数据中心基础设施监控的多层级 MQTT 架构](https://www.emqx.com/zh/blog/mqtt-architecture-for-large-scale-data-center-infrastructure-monitoring) ([Edit](https://github.com/emqx/blog/edit/main/zh/202607/mqtt-architecture-for-large-scale-data-center-infrastructure-monitoring.md))
 - [面向全球园区智慧楼宇管理的分布式边缘 MQTT 架构方案](https://www.emqx.com/zh/blog/distributed-edge-mqtt-architecture-smart-building) ([Edit](https://github.com/emqx/blog/edit/main/zh/202607/distributed-edge-mqtt-architecture-smart-building.md))
 - [基于 EMQX 实现偏远矿区重型设备车队的实时监控](https://www.emqx.com/zh/blog/emqx-real-time-monitoring-heavy-equipment-fleet-remote-mining) ([Edit](https://github.com/emqx/blog/edit/main/zh/202606/emqx-real-time-monitoring-heavy-equipment-fleet-remote-mining.md))
 - [社交新势力 Jagat 携手 EMQ 开启全球化新篇章](https://www.emqx.com/zh/blog/jagat-migrates-to-oci-with-emqx) ([Edit](https://github.com/emqx/blog/edit/main/zh/202606/jagat-migrates-to-oci-with-emqx.md))
