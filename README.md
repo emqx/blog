@@ -7,6 +7,7 @@
 ## [Product](https://www.emqx.com/en/blog/category/product)
 EMQ products including EMQX, EMQX Cloud, Neuron, NanoMQ, MQTTX and more.
 
+- [The Secret to Faster IoT Queries: GreptimeDB, TimescaleDB, and InfluxDB Benchmarked](https://www.emqx.com/en/blog/the-secret-to-faster-iot-queries) ([Edit](https://github.com/emqx/blog/edit/main/en/202607/the-secret-to-faster-iot-queries.md))
 - [Using EMQX Tables for MQTT Message Auditing and Historical Tracing](https://www.emqx.com/en/blog/emqx-tables-mqtt-message-auditing) ([Edit](https://github.com/emqx/blog/edit/main/en/202607/emqx-tables-mqtt-message-auditing.md))
 - [From MQTT Data to Real-Time Dashboards: IoT Visualization with EMQX Tables and Grafana](https://www.emqx.com/en/blog/building-an-iot-visualization-platform-with-emqx-tables-and-grafana) ([Edit](https://github.com/emqx/blog/edit/main/en/202607/building-an-iot-visualization-platform-with-emqx-tables-and-grafana.md))
 - [Building an MQTT Client Lifecycle Audit and Event Tracing Solution with EMQX Tables](https://www.emqx.com/en/blog/mqtt-client-lifecycle-audit-event-tracing-emqx-tables) ([Edit](https://github.com/emqx/blog/edit/main/en/202607/mqtt-client-lifecycle-audit-event-tracing-emqx-tables.md))
