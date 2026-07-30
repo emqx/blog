@@ -7,6 +7,7 @@
 ## [Product](https://www.emqx.com/zh/blog/category/product)
 EMQ products including EMQX, EMQX Cloud, Neuron, NanoMQ, MQTTX and more.
 
+- [Device Agent 0.4.0 发布：新增 A2A 编排、定时任务管理与 Webhook](https://www.emqx.com/zh/blog/device-agent-0-4-0) ([Edit](https://github.com/emqx/blog/edit/main/zh/202607/device-agent-0-4-0.md))
 - [EMQX MQTT Streams 和 NATS JetStream 对比：谁更适合持久化设备遥测](https://www.emqx.com/zh/blog/comparing-emqx-mqtt-streams-and-nats-jetstream) ([Edit](https://github.com/emqx/blog/edit/main/zh/202607/comparing-emqx-mqtt-streams-and-nats-jetstream.md))
 - [EMQ Device Agent：AI 赋能家庭储能方案](https://www.emqx.com/zh/blog/emq-device-agent-ai-powered-home-energy-storage) ([Edit](https://github.com/emqx/blog/edit/main/zh/202607/emq-device-agent-ai-powered-home-energy-storage.md))
 - [EMQ Device Agent：基于多智能体协作架构的智能座舱方案](https://www.emqx.com/zh/blog/emq-device-agent-smart-cockpit) ([Edit](https://github.com/emqx/blog/edit/main/zh/202607/emq-device-agent-smart-cockpit.md))
