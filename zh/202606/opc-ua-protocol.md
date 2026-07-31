@@ -4,6 +4,8 @@ OPC UA 和其前身——开放平台通信（OPC）是由同一个基金会所�
 
 ## OPC UA 协议的发展历程
 
+
+
 ![OPC UA](https://assets.emqx.com/images/f4582b4676a6867f6beefa40c055fae2.png)
 
 在 OPC UA 规范发布之前，行业供应商、最终用户和软件开发商曾合作开发了一套用于定义工业过程数据、警报和历史数据的规范。这套规范被称为 OPC Classic，于 1995 年首次发布，基于 Microsoft Windows 的 COM/DCOM 技术栈。它包括以下三个部分：
@@ -17,6 +19,8 @@ OPC Classic 以其在过程控制中的卓越性能而著称。然而，由于�
 目前，OPC UA 的最新版本是 1.05。除了提供客户端-服务器（订阅）模式，OPC UA 还包括一个 Pub-Sub 机制，允许通过 UDP 协议、[MQTT 协议](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt)或 [AMQP 协议](https://www.emqx.com/zh/blog/mqtt-vs-amqp-for-iot-communications)推送 JSON 规格的数据（也可以使用标准定义的二进制规格 - UADP）。
 
 ## OPC UA 的特点
+
+
 
 **功能对等性**：所有 OPC Classic 规范都映射到 UA，OPC UA 包含 OPC Classic 中的 DA、A&E 和 HDA 功能：
 
@@ -47,48 +51,68 @@ OPC Classic 以其在过程控制中的卓越性能而著称。然而，由于�
 
 **综合信息建模：**用于定义复杂信息，OPC UA 信息建模框架将数据转换为信息，通过完全面向对象的功能，即使是最复杂的多级结构也可以建模和扩展，数据类型和结构可在配置文件中定义。
 
+
+
 ![OPC UA Information Modelling Framework](https://assets.emqx.com/images/1161f4a8f02d771efa813f234c8515a9.png)
 
 ## OPC UA 协议的应用
 
+
+
 OPC UA 在工业自动化和物联网领域有着广泛的应用，例如数据收集、设备集成、远程监控、历史数据访问等。
 
 ### 制造业
+
+
 
 - 数据收集和监控：制造业中的设备和生产线可以通过 OPC UA 轻松地收集数据，实时监控生产过程并优化生产效率。
 - 设备集成和互操作性：来自不同制造商的设备可以无缝集成，实现从传感器到机器人等设备之间的数据交换。
 
 ### 建筑自动化
 
+
+
 - 智能建筑管理：利用 OPC UA 连接照明、空调和安防系统等建筑自动化系统，可以实现智能能源管理和设备控制。
 - 设备监控和维护：通过 OPC UA 可以实现建筑设备的状态监控和维护，提高设备的可靠性和效率。
 
 ### 石油和天然气
+
+
 
 - 远程监控和控制：利用 OPC UA 可以远程监控和控制油田、管道和炼油厂的设备，减少人工干预。
 - 数据历史记录：利用 OPC UA 的历史数据访问功能记录设备运行数据，便于分析和优化。
 
 ### 可再生能源
 
+
+
 - 风电和太阳能场：利用 OPC UA 监控风电和太阳能场的运行状态，实现远程控制和故障排除。
 - 电网管理：可再生能源接入和电网管理需要实时数据交换，OPC UA 提供了可靠的通信机制。
 
 ### 公用事业
+
+
 
 - 水处理和供水系统：利用 OPC UA 监控水处理设备、泵站和供水系统，确保水质和供水稳定。
 - 电力系统：利用 OPC UA 可以实现电力设备的监控、故障检测和远程操作。
 
 ## OPC UA 的信息模型
 
+
+
 OPC UA 信息模型是节点的网络（Network of Node），或者称为结构化图（Graph），由节点（Node）和引用（Reference）组成，这种结构图称之为 OPC UA 的地址空间。地址空间以标准形式表示对象——地址空间中的模型元素被称为节点，对象及其组件在地址空间中表示为节点的集合，节点由属性描述并由引用相连接。OPC UA 建模其实就是建立节点以及节点间的引用。
 
 ### 对象模型
+
+
 
 OPC UA 使用了对象作为过程系统表示数据和活动的基础。对象包含了变量，事件和方法，它们通过引用来互相连接。
 
 ![OPC UA 对象模型](https://assets.emqx.com/images/313bb04eebc2beaacc6c359eba0e17d8.png)
 
 ### 节点模型
+
+
 
 ![OPC UA 节点模型](https://assets.emqx.com/images/185c6a8d55d470c5e558bd3afd76a0ca.png)
 
@@ -106,18 +130,22 @@ OPC UA 使用了对象作为过程系统表示数据和活动的基础。对象�
 | Description         | O    | LocalizedText          | See 5.2.6                                  |
 | WhiteMask           | O    | AttributeWhiteMask     | See 5.2.7                                  |
 | UserWriteMask       | O    | AttributeWriteMask     | See 5.2.8                                  |
-| RolePermissions     | O    | RolePermissionsType[]  | See 5.2.9                                  |
-| UserRolePermissions | O    | RolePermissionsType[]  | See 5.2.10                                 |
+| RolePermissions     | O    | RolePermissionsType    | See 5.2.9                                  |
+| UserRolePermissions | O    | RolePermissionsType    | See 5.2.10                                 |
 | AccessRestrictions  | O    | AccessRestrictionsType | See 5.2.11                                 |
 | **References**      |      |                        | No References specified for this NodeClass |
 
 ### 引用模型
+
+
 
 包含引用的节点为源节点，被引用的节点称目标节点。引用的目标节点可以与源节点在同一个地址空间，也可以在另一个 OPC 服务器的地址空间，甚至是目标节点可以不存在。
 
 ![OPC UA 引用模型](https://assets.emqx.com/images/3b484967bea36515325de244dda332bd.png)
 
 ### 节点类型
+
+
 
 在 OPC UA 中，最重要的节点类别是对象，变量和方法。
 
@@ -127,60 +155,39 @@ OPC UA 使用了对象作为过程系统表示数据和活动的基础。对象�
 
 ## OPC UA 协议的工作原理
 
+
+
 硬件供应商支持 OPC UA 的方式有两种：在设备中嵌入 OPC UA 服务器，或在 PC 上提供软件，通过专用协议获取数据，并通过 OPC UA 将其公开给其他平台。一些中端和高端 PLC（如西门子 S71200/1500） 集成了 OPC UA 服务器，同时西门子还提供 WINCC 等软件，通过 OPC/OPC UA 间接向第三方提供来自其他设备的数据。
 
- ![opc ua client and server](https://assets.emqx.com/images/e9398279706d0e493388a5c60fede41f.png)
+
+
+![opc ua client and server](https://assets.emqx.com/images/e9398279706d0e493388a5c60fede41f.png)
 
 数据通过 OPC UA 服务器公开后，可使用 OPC UA 协议规定的两种访问模式——请求/响应模式和发布/订阅模式进行访问。首先，客户端必须与服务器建立连接，连接建立后会在客户端和服务器之间创建一个会话通道。
 
 在请求/响应模式下，客户端应用程序可以通过会话通道向服务器请求一些标准服务，如：从节点读取原始数据、向节点写入数据、调用远程方法等。
 
-![request/response mode](https://assets.emqx.com/images/f7c47ebeb1f5da8bc6290b6b014b106e.png) 
+
+
+![img](https://assets.emqx.com/images/f7c47ebeb1f5da8bc6290b6b014b106e.png)
 
 在发布/订阅模式下，每个客户端可以创建任意数量的服务器订阅，当服务器的节点数据发生变化时，通知消息会立即推送到客户端。
 
-![publish/subscribe mode](https://assets.emqx.com/images/16eedf2be88eb090746d9a7de6ad40e5.png)
+
+
+![img](https://assets.emqx.com/images/16eedf2be88eb090746d9a7de6ad40e5.png)
 
 一般来说，终端用户不必关注上述过程。他们只需要关心 OPC UA 服务器地址、用户登录策略、通信安全策略以及数据的访问地址。
 
-### OPC UA 服务器端点
+### OPC UA 连接与安全配置
 
-| **Protocol**      | **Url**                                |
-| :---------------- | :------------------------------------- |
-| OPC UA TCP        | `opc.tcp://localhost:4840/UADiscovery` |
-| OPC UA Websockets | `opc.wss://localhost:443/UADiscovery`  |
-| OPC UA HTTPS      | `https://localhost:443/UADiscovery`    |
 
-### 用户验证方法
 
-1. Anonymous
-2. Username & Password
-3. Certificate
-
-### 安全模式
-
-1. None
-2. Sign
-3. Sign & Encrypt
-
-### 安全策略
-
-1. Basic128Rsa15
-2. Basic256
-3. Basic256Sha256
-4. Aes128Sha256RsaOaep
-5. Aes256Sha256RsaPass
-
-### 节点地址
-
-| **Address type** | **Address**          |
-| :--------------- | :------------------- |
-| Byte string      | ns=x;b=<byte string> |
-| GUID             | ns=x;g=<GUID>        |
-| Int              | ns=x;i=x             |
-| String           | ns=x;s=<string>      |
+OPC UA 协议支持多种连接端点、用户认证方式和通信安全配置，以适应不同工业现场与系统集成场景。客户端在接入 OPC UA 服务器时，通常需要确认服务器端点地址，例如 TCP、WebSocket 或 HTTPS；选择合适的认证方式，包括匿名访问、用户名密码或证书认证；并根据安全要求配置 None、Sign 或 Sign & Encrypt 等安全模式及对应的安全策略。对于具体数据点的访问，则通过命名空间和标识类型组成的节点地址进行定位。
 
 ## OPC UA 与 MQTT 的结合
+
+
 
 MQTT（Message Queuing Telemetry Transport）是一种为物联网设备和应用程序设计的消息协议，采用发布与订阅模型，具有轻量、高效、可靠，支持实时通讯等优点。 MQTT 非常适合资源受限的环境，特别是需要高效使用电力和带宽的场景。
 
@@ -195,6 +202,8 @@ OPC UA 和 MQTT 在功能上有一定程度的重叠，但它们的使用场景�
 
 ## OPC UA over MQTT
 
+
+
 OPC 基金会在最新的 OPC UA 规范中提出的 Pub-Sub 模型允许使用 [MQTT Broker](https://www.emqx.com/zh/blog/the-ultimate-guide-to-mqtt-broker-comparison) 将数据变更推送给订阅者。
 
 ![OPC UA over MQTT](https://assets.emqx.com/images/e3772239f0f42b2f622996c721d7e57f.png)
@@ -203,13 +212,29 @@ Pub-Sub 的安全性比客户端/服务器中的安全性要复杂一些，而�
 
 ## 使用 EMQX 和 Neuron 桥接 OPC UA 到 MQTT
 
-[Neuron](https://github.com/emqx/neuron) 是一款现代的工业物联网连接服务器，可以连接多种使用标准协议或者设备专有协议的工业设备，实现了工业物联网平台与海量设备的互联。作为一款轻量级的工业协议网关软件，Neuron 可以运行在各种有限资源的物联网边缘硬件设备上，其主要目标是应对以统一方式访问以数据为中心的自动化设备的挑战，从而为智能制造提供必要的支持。
+
+
+[EMQX Neuron](https://www.emqx.com/zh/products/emqx-neuron) 是一款云原生的工业连接网关，集 **100+ 协议采集、边缘流式分析与 AI 集成** 于一体，以低延迟、轻量部署的方式将工厂 OT 数据标准化并桥接至 EMQX 及主流云平台，为 AI-Ready 智能制造提供边缘数据基础设施。
+
+EMQXneuron 部署在工业现场边缘，承担「**采集 - 分析 - 交付**」一体化能力：
+
+- **采集**：支持 **100+ 工业协议**（Modbus、OPC UA、Siemens S7、CNC 等），毫秒级高频采集，单节点可支撑大规模点位接入；支持设备反控与多源数据集成（MES/ERP/数据库/视频等）。
+- **分析**：内置基于 SQL 的**边缘流式计算引擎**，实现过滤、清洗、聚合、告警与多源融合；支持 Python/Go/JavaScript 插件及 ONNX 等 **AI/ML 边缘推理**，并集成 LLM 辅助的规则编写能力。
+- **转发**：通过 MQTT、Sparkplug B、Kafka、WebSocket 等北向接口，将处理后的数据对接 **EMQX** 及 Azure、AWS、Microsoft Fabric、Snowflake 等现代数据与 AI 平台；与 EMQX 协同可构建企业级 **UNS（统一命名空间）** 架构。
+
+相比传统仅做协议转换的连接软件，EMQX Neuron 强调 **软件定义、云原生部署**（Linux/Docker/K8s，内存占用约 200MB 级）、**边缘智能化**与 **更低 TCO 的多站点复制能力**，形成「边缘采集 - 云端管理 - 统一语义」的完整 EMQ 工业数据栈。
 
 [EMQX](https://www.emqx.com/zh/products/emqx) 是一款大规模可扩展的云原生分布式物联网 MQTT 消息服务器。作为全球最具扩展性的 MQTT 消息服务器，EMQX 可为海量物联网设备提供高效可靠的连接，实现消息和事件流的高性能实时移动和处理，帮助用户快速构建关键业务的物联网平台与应用。
 
-Neuron 的南向 OPC UA 驱动程序可采集和汇总 OPC UA 数据源，将其转换为 MQTT 协议，并传输到 EMQX MQTT Broker。然后，后者将其分发到各种分布式应用程序。
+EMQX Neuron 的南向 OPC UA 驱动程序可采集和汇总 OPC UA 数据源，将其转换为 MQTT 协议，并传输到 EMQX MQTT Broker。然后，后者将其分发到各种分布式应用程序。
 
-完整桥接教程请查看: [Bridging OPC UA Data to MQTT for IIoT: A Step-by-Step Tutorial](https://www.emqx.com/zh/blog/bridging-opc-ua-data-to-mqtt-for-iiot)
+如需了解从 OPC UA 数据采集、协议转换到 MQTT 消息分发的完整实施流程，可参考详细教程：[Bridging OPC UA Data to MQTT for IIoT: A Step-by-Step Tutorial](https://www.emqx.com/zh/blog/bridging-opc-ua-data-to-mqtt-for-iiot)
+
+如果希望进一步体验 EMQX Neuron 的 OPC UA 数据接入与边缘处理能力，可以下载产品并结合官方文档完成安装、配置与集成验证。
+
+**下载 EMQX Neuron：**[下载 EMQX Neuron](https://www.emqx.com/zh/downloads-and-install/neuronex)
+
+**EMQX Neuron 完整文档：**[EMQX Neuron 文档](https://docs.emqx.com/zh/neuronex/latest/)
 
 
 

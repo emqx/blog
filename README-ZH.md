@@ -7,6 +7,7 @@
 ## [Product](https://www.emqx.com/zh/blog/category/product)
 EMQ products including EMQX, EMQX Cloud, Neuron, NanoMQ, MQTTX and more.
 
+- [绿色能源 + AI：Device Agent 构建预测性智慧能源管理](https://www.emqx.com/zh/blog/green-energy-ai-device-agent-predictive-energy-management) ([Edit](https://github.com/emqx/blog/edit/main/zh/202607/green-energy-ai-device-agent-predictive-energy-management.md))
 - [Device Agent 0.4.0 发布：新增 A2A 编排、定时任务管理与 Webhook](https://www.emqx.com/zh/blog/device-agent-0-4-0) ([Edit](https://github.com/emqx/blog/edit/main/zh/202607/device-agent-0-4-0.md))
 - [EMQX MQTT Streams 和 NATS JetStream 对比：谁更适合持久化设备遥测](https://www.emqx.com/zh/blog/comparing-emqx-mqtt-streams-and-nats-jetstream) ([Edit](https://github.com/emqx/blog/edit/main/zh/202607/comparing-emqx-mqtt-streams-and-nats-jetstream.md))
 - [EMQ Device Agent：AI 赋能家庭储能方案](https://www.emqx.com/zh/blog/emq-device-agent-ai-powered-home-energy-storage) ([Edit](https://github.com/emqx/blog/edit/main/zh/202607/emq-device-agent-ai-powered-home-energy-storage.md))
@@ -808,7 +809,10 @@ Build reliable and efficient connected vehicle platforms with EMQ.
 ## [Industrial IoT](https://www.emqx.com/zh/blog/category/iiot)
 Industrial IoT solutions with Unified Namespace and Sparkplug.
 
+- [OPC DA 与 OPC UA 的比较与选择指南](https://www.emqx.com/zh/blog/opc-ua-vs-opc-da) ([Edit](https://github.com/emqx/blog/edit/main/zh/202607/opc-ua-vs-opc-da.md))
+- [OPC UA 协议：特性、工作原理及其与 MQTT 的结合](https://www.emqx.com/zh/blog/opc-ua-protocol) ([Edit](https://github.com/emqx/blog/edit/main/zh/202606/opc-ua-protocol.md))
 - [统一命名空间治理：EMQX 原生 MQTT 能力，守护你的数据质量](https://www.emqx.com/zh/blog/native-mqtt-governance-for-uns) ([Edit](https://github.com/emqx/blog/edit/main/zh/202606/native-mqtt-governance-for-uns.md))
+- [工业物联网数据桥接教程：OPC UA 桥接到 MQTT](https://www.emqx.com/zh/blog/bridging-opc-ua-data-to-mqtt-for-iiot) ([Edit](https://github.com/emqx/blog/edit/main/zh/202606/bridging-opc-ua-data-to-mqtt-for-iiot.md))
 - [2025最适用于工业物联网领域的三款开源MQTT服务器（MQTT Broker）](https://www.emqx.com/zh/blog/top-3-open-source-mqtt-brokers-for-industrial-iot-in-2023) ([Edit](https://github.com/emqx/blog/edit/main/zh/202508/top-3-open-source-mqtt-brokers-for-industrial-iot-in-2023.md))
 - [NeuronEX vs Kepware：云 + AI 时代工业边缘网关的进化与革新](https://www.emqx.com/zh/blog/neuronex-vs-kepware) ([Edit](https://github.com/emqx/blog/edit/main/zh/202507/neuronex-vs-kepware.md))
 - [EMQX + NeuronEX：构建基于 UNS 架构的工业 AI 数据中枢](https://www.emqx.com/zh/blog/building-the-industrial-data-hub-with-emqx-and-neuronex) ([Edit](https://github.com/emqx/blog/edit/main/zh/202506/building-the-industrial-data-hub-with-emqx-and-neuronex.md))
@@ -816,9 +820,7 @@ Industrial IoT solutions with Unified Namespace and Sparkplug.
 - [先进制造企业为何选择 EMQ 助力数字化升级](https://www.emqx.com/zh/blog/why-manufacturing-enterprises-choose-emq) ([Edit](https://github.com/emqx/blog/edit/main/zh/202502/why-manufacturing-enterprises-choose-emq.md))
 - [如何在离线环境下部署 EMQX ECP](https://www.emqx.com/zh/blog/how-to-deploy-emqx-ecp-in-an-offline-environment) ([Edit](https://github.com/emqx/blog/edit/main/zh/202501/how-to-deploy-emqx-ecp-in-an-offline-environment.md))
 - [高效管理物联网边缘节点：利用 EMQX ECP 实现边缘服务配置的版本管理与参数化下发](https://www.emqx.com/zh/blog/efficient-management-of-iot-edge-nodes) ([Edit](https://github.com/emqx/blog/edit/main/zh/202410/efficient-management-of-iot-edge-nodes.md))
-- [OPC UA 与 OPC DA：选型指南](https://www.emqx.com/zh/blog/opc-ua-vs-opc-da) ([Edit](https://github.com/emqx/blog/edit/main/zh/202406/opc-ua-vs-opc-da.md))
 - [BACnet 与 Modbus 协议对比指南](https://www.emqx.com/zh/blog/bacnet-vs-modbus) ([Edit](https://github.com/emqx/blog/edit/main/zh/202406/bacnet-vs-modbus.md))
-- [OPC UA 协议：特性、工作原理及其与 MQTT 的结合](https://www.emqx.com/zh/blog/opc-ua-protocol) ([Edit](https://github.com/emqx/blog/edit/main/zh/202404/opc-ua-protocol.md))
 - [工业互联数据平台，推动工业互联网标识解析体系的应用](https://www.emqx.com/zh/blog/industrial-connectivity-data-platform-use-case) ([Edit](https://github.com/emqx/blog/edit/main/zh/202403/industrial-connectivity-data-platform-use-case.md))
 - [工业互联数据平台：NeuronEX 与 EMQX ECP 携手推动云边一体](https://www.emqx.com/zh/blog/industrial-connectivity-data-platform) ([Edit](https://github.com/emqx/blog/edit/main/zh/202403/industrial-connectivity-data-platform.md))
 - [获奖名单: EMQ 和 Intel 评选工业物联网领域最佳案例与应用](https://www.emqx.com/zh/blog/industrial-iot-best-cases-and-applications) ([Edit](https://github.com/emqx/blog/edit/main/zh/202402/industrial-iot-best-cases-and-applications.md))
@@ -851,7 +853,6 @@ Industrial IoT solutions with Unified Namespace and Sparkplug.
 - [Open Manufacturing Hub：探索工业物联网架构新模式](https://www.emqx.com/zh/blog/open-manufacturing-hub-a-reference-architecture-for-industrial-iot) ([Edit](https://github.com/emqx/blog/edit/main/zh/202309/open-manufacturing-hub-a-reference-architecture-for-industrial-iot.md))
 - [OPC UA over MQTT：IT 与 OT 融合的未来](https://www.emqx.com/zh/blog/opc-ua-over-mqtt-the-future-of-it-and-ot-convergence) ([Edit](https://github.com/emqx/blog/edit/main/zh/202309/opc-ua-over-mqtt-the-future-of-it-and-ot-convergence.md))
 - [工业物联网数据桥接教程：FINS 桥接到 MQTT](https://www.emqx.com/zh/blog/bridging-fins-data-to-mqtt) ([Edit](https://github.com/emqx/blog/edit/main/zh/202308/bridging-fins-data-to-mqtt.md))
-- [工业物联网数据桥接教程：OPC UA 桥接到 MQTT](https://www.emqx.com/zh/blog/bridging-opc-ua-data-to-mqtt-for-iiot) ([Edit](https://github.com/emqx/blog/edit/main/zh/202308/bridging-opc-ua-data-to-mqtt-for-iiot.md))
 - [一文详解工业物联网：关键技术、应用场景与面临挑战](https://www.emqx.com/zh/blog/iiot-explained-examples-technologies-benefits-and-challenges) ([Edit](https://github.com/emqx/blog/edit/main/zh/202308/iiot-explained-examples-technologies-benefits-and-challenges.md))
 - [引领工业创新：智能制造关键技术与应用探索](https://www.emqx.com/zh/blog/the-smart-manufacturing-revolution) ([Edit](https://github.com/emqx/blog/edit/main/zh/202308/the-smart-manufacturing-revolution.md))
 - [MQTT Sparkplug 实战：使用 EMQX 与 Neuron 构建 MQTT Sparkplug 方案](https://www.emqx.com/zh/blog/mqtt-sparkplug-in-action-a-step-by-step-tutorial) ([Edit](https://github.com/emqx/blog/edit/main/zh/202308/mqtt-sparkplug-in-action-a-step-by-step-tutorial.md))

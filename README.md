@@ -7,6 +7,7 @@
 ## [Product](https://www.emqx.com/en/blog/category/product)
 EMQ products including EMQX, EMQX Cloud, Neuron, NanoMQ, MQTTX and more.
 
+- [Building an IoT Intelligent Analytics Assistant with EMQX Tables and the OpenAI Agents SDK](https://www.emqx.com/en/blog/iot-analytics-assistant-emqx-tables-openai-agents-sdk) ([Edit](https://github.com/emqx/blog/edit/main/en/202607/iot-analytics-assistant-emqx-tables-openai-agents-sdk.md))
 - [The Secret to Faster IoT Queries: GreptimeDB, TimescaleDB, and InfluxDB Benchmarked](https://www.emqx.com/en/blog/the-secret-to-faster-iot-queries) ([Edit](https://github.com/emqx/blog/edit/main/en/202607/the-secret-to-faster-iot-queries.md))
 - [Using EMQX Tables for MQTT Message Auditing and Historical Tracing](https://www.emqx.com/en/blog/emqx-tables-mqtt-message-auditing) ([Edit](https://github.com/emqx/blog/edit/main/en/202607/emqx-tables-mqtt-message-auditing.md))
 - [From MQTT Data to Real-Time Dashboards: IoT Visualization with EMQX Tables and Grafana](https://www.emqx.com/en/blog/building-an-iot-visualization-platform-with-emqx-tables-and-grafana) ([Edit](https://github.com/emqx/blog/edit/main/en/202607/building-an-iot-visualization-platform-with-emqx-tables-and-grafana.md))
@@ -795,6 +796,7 @@ Build reliable and efficient connected vehicle platforms with EMQ.
 ## [Industrial IoT](https://www.emqx.com/en/blog/category/iiot)
 Industrial IoT solutions with Unified Namespace and Sparkplug.
 
+- [OPC UA vs. OPC DA: The Ultimate Guide to Choosing the Right Industrial Protocol](https://www.emqx.com/en/blog/opc-ua-vs-opc-da) ([Edit](https://github.com/emqx/blog/edit/main/en/202607/opc-ua-vs-opc-da.md))
 - [Unified Namespace Reinvents Validation and Change Control for Compliance Reporting](https://www.emqx.com/en/blog/unified-namespace-compliance-reporting) ([Edit](https://github.com/emqx/blog/edit/main/en/202606/unified-namespace-compliance-reporting.md))
 - [Maximizing Lifespan, Minimizing Loss: How a Unified Namespace Powers Predictive Maintenance for a Magnet Manufacturer](https://www.emqx.com/en/blog/unified-namespace-predictive-maintenance) ([Edit](https://github.com/emqx/blog/edit/main/en/202606/unified-namespace-predictive-maintenance.md))
 - [BACnet vs Modbus: Technical Differences & Selection Guide](https://www.emqx.com/en/blog/bacnet-vs-modbus) ([Edit](https://github.com/emqx/blog/edit/main/en/202605/bacnet-vs-modbus.md))
@@ -814,7 +816,6 @@ Industrial IoT solutions with Unified Namespace and Sparkplug.
 - [Comparing NeuronEX and Kepware: Choosing the Right Industrial IoT Solutions](https://www.emqx.com/en/blog/comparing-neuronex-and-kepware) ([Edit](https://github.com/emqx/blog/edit/main/en/202406/comparing-neuronex-and-kepware.md))
 - [Breaking Down Industrial Gateway Solutions: NeuronEX vs. Apache PLC4X, Kepware, and Monkot Server](https://www.emqx.com/en/blog/breaking-down-industrial-gateway-solutions) ([Edit](https://github.com/emqx/blog/edit/main/en/202405/breaking-down-industrial-gateway-solutions.md))
 - [Unified Namespace (UNS): Architecture, Benefits & Solution](https://www.emqx.com/en/blog/unified-namespace-next-generation-data-fabric-for-iiot) ([Edit](https://github.com/emqx/blog/edit/main/en/202404/unified-namespace-next-generation-data-fabric-for-iiot.md))
-- [OPC UA vs. OPC DA: Differences and Which to Choose](https://www.emqx.com/en/blog/opc-ua-vs-opc-da) ([Edit](https://github.com/emqx/blog/edit/main/en/202404/opc-ua-vs-opc-da.md))
 - [MQTT Sparkplug in Action: A Step-by-Step Tutorial](https://www.emqx.com/en/blog/mqtt-sparkplug-in-action-a-step-by-step-tutorial) ([Edit](https://github.com/emqx/blog/edit/main/en/202402/mqtt-sparkplug-in-action-a-step-by-step-tutorial.md))
 - [MQTT Sparkplug: Bridging IT and OT for IIoT in Industry 4.0](https://www.emqx.com/en/blog/mqtt-sparkplug-bridging-it-and-ot-in-industry-4-0) ([Edit](https://github.com/emqx/blog/edit/main/en/202402/mqtt-sparkplug-bridging-it-and-ot-in-industry-4-0.md))
 - [EMQX Cloud and IIoT: Industrial Data Ingestion and Insight from Edge to ClickHouse](https://www.emqx.com/en/blog/industrial-data-ingestion-and-insight-from-edge-to-clickHouse) ([Edit](https://github.com/emqx/blog/edit/main/en/202312/industrial-data-ingestion-and-insight-from-edge-to-clickHouse.md))
