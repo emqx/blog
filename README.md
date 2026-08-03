@@ -475,6 +475,7 @@ Learn MQTT protocol from beginner to advanced, including tutorials, clients, pro
 
 - [Mosquitto MQTT Broker: Pros/Cons, Tutorial, and Alternative](https://www.emqx.com/en/blog/mosquitto-mqtt-broker-pros-cons-tutorial-and-modern-alternatives) ([Edit](https://github.com/emqx/blog/edit/main/en/202607/mosquitto-mqtt-broker-pros-cons-tutorial-and-modern-alternatives.md))
 - [Zigbee2MQTT in 2026: Local Smart-Home Control over MQTT](https://www.emqx.com/en/blog/zigbee2mqtt-in-2026) ([Edit](https://github.com/emqx/blog/edit/main/en/202607/zigbee2mqtt-in-2026.md))
+- [MQTT vs HTTP: Ultimate IoT Protocol Comparison Guide](https://www.emqx.com/en/blog/mqtt-vs-http) ([Edit](https://github.com/emqx/blog/edit/main/en/202606/mqtt-vs-http.md))
 - [What a PV Cooling Paper Reveals About Distributed IoT Control](https://www.emqx.com/en/blog/what-a-pv-cooling-paper-reveals-about-distributed-iot-control) ([Edit](https://github.com/emqx/blog/edit/main/en/202606/what-a-pv-cooling-paper-reveals-about-distributed-iot-control.md))
 - [Mosquitto vs EMQX: Features, Scalability, and Use Cases Compared](https://www.emqx.com/en/blog/emqx-vs-mosquitto-2023-mqtt-broker-comparison) ([Edit](https://github.com/emqx/blog/edit/main/en/202606/emqx-vs-mosquitto-2023-mqtt-broker-comparison.md))
 - [MQTT Topics and Wildcards: A Beginner's Guide](https://www.emqx.com/en/blog/advanced-features-of-mqtt-topics) ([Edit](https://github.com/emqx/blog/edit/main/en/202605/advanced-features-of-mqtt-topics.md))
@@ -515,7 +516,6 @@ Learn MQTT protocol from beginner to advanced, including tutorials, clients, pro
 - [A Guide on Collecting and Reporting Soil Moisture with ESP32 and Sensor through MQTT](https://www.emqx.com/en/blog/hands-on-guide-on-esp32) ([Edit](https://github.com/emqx/blog/edit/main/en/202408/hands-on-guide-on-esp32.md))
 - [Connecting MQTT and REST API: A Comprehensive Tutorial](https://www.emqx.com/en/blog/connecting-mqtt-and-rest-api) ([Edit](https://github.com/emqx/blog/edit/main/en/202407/connecting-mqtt-and-rest-api.md))
 - [Building MQTT Services on Windows](https://www.emqx.com/en/blog/install-mqtt-broker-on-windows) ([Edit](https://github.com/emqx/blog/edit/main/en/202407/install-mqtt-broker-on-windows.md))
-- [MQTT vs HTTP: Ultimate IoT Protocol Comparison Guide](https://www.emqx.com/en/blog/mqtt-vs-http) ([Edit](https://github.com/emqx/blog/edit/main/en/202406/mqtt-vs-http.md))
 - [MQTT Retained Messages: Beginner's Guide with Example](https://www.emqx.com/en/blog/mqtt5-features-retain-message) ([Edit](https://github.com/emqx/blog/edit/main/en/202406/mqtt5-features-retain-message.md))
 - [MQTT Testing: Basics, Best Practices & Quick Start](https://www.emqx.com/en/blog/mqtt-testing) ([Edit](https://github.com/emqx/blog/edit/main/en/202406/mqtt-testing.md))
 - [How to Process JSON, Hex, and Binary Data in MQTT](https://www.emqx.com/en/blog/how-to-process-json-hex-and-binary-data-in-mqtt) ([Edit](https://github.com/emqx/blog/edit/main/en/202405/how-to-process-json-hex-and-binary-data-in-mqtt.md))
