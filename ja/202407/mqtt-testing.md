@@ -75,7 +75,7 @@ MQTTテストのプロセスを効率的かつ効果的にするために、い�
 
 - [MQTTX](https://mqttx.app/): クロスプラットフォーム対応のデスクトップおよびCLI MQTTクライアントで、MQTTアプリケーションの開発とテストを簡素化します。
 - [Mosquitto](https://mosquitto.org/): Mosquittoプロジェクトから提供されるCLI MQTTクライアントです。
-- [MQTT.fx](http://mqttfx.org/): Eclipse Pahoをベースにしたデスクトップ用MQTTクライアントで、MQTT通信のデバッグとテストができます。
+- [MQTT.fx](https://mqttfx.org/): Eclipse Pahoをベースにしたデスクトップ用MQTTクライアントで、MQTT通信のデバッグとテストができます。
 - [MQTT Explorer](https://mqtt-explorer.com/): トピックの可視化、パブリッシュ、サブスクライブ、プロットができるMQTTクライアントです。
 
 > これらのツールの詳細な比較については、[2024年に試す価値のある7つの最高のMQTTクライアントツール](https://www.emqx.com/ja/blog/mqtt-client-tools)を参照してください。

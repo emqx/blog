@@ -49,7 +49,7 @@ CoAP 接入网关目前处于内测阶段，您可以提交工单开启接入能
 安装部署可参考如下示例。
 
 ```shell
-git clone http://github.com/obgm/libcoap
+git clone https://github.com/obgm/libcoap
 cd libcoap
 ./autogen.sh
 ./configure --enable-documentation=no --enable-tests=no

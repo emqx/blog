@@ -106,7 +106,7 @@ We can choose among these three different behaviors using Retain Handling:
 
 1. Access [MQTTX Web](https://mqttx.app/web-client/) on a Web browser.
 
-2. Create an MQTT connection using WebSocket and connect to the [Free Public MQTT Server](http://broker.emqx.io/).
+2. Create an MQTT connection using WebSocket and connect to the [Free Public MQTT Server](https://www.emqx.com/en/mqtt/public-mqtt5-broker).
 
 3. After a successful connection, we subscribe to the topic `mqttx_4299c767/demo` and set the No Local option to true:
 
@@ -120,7 +120,7 @@ We can choose among these three different behaviors using Retain Handling:
 
 1. Access [MQTTX Web](https://mqttx.app/web-client/) on a Web browser.
 
-2. Create an MQTT connection using WebSocket and connect to the [Free Public MQTT Server](http://broker.emqx.io/).
+2. Create an MQTT connection using WebSocket and connect to the [Free Public MQTT Server](https://www.emqx.com/en/mqtt/public-mqtt5-broker).
 
 3. After a successful connection, we subscribe to the topic `mqttx_4299c767/rap0` with Retain As Published set to false. Then, we subscribe to the topic `mqttx_4299c767/rap1` with Retain As Published set to true:
 
@@ -136,7 +136,7 @@ We can choose among these three different behaviors using Retain Handling:
 
 1. Access [MQTTX Web](https://mqttx.app/web-client/) on a Web browser.
 
-2. Create an MQTT connection using WebSocket and connect to the [Free Public MQTT Server](http://broker.emqx.io/).
+2. Create an MQTT connection using WebSocket and connect to the [Free Public MQTT Server](https://www.emqx.com/en/mqtt/public-mqtt5-broker).
 
 3. After the successful connection, we publish a retained message to the topic `mqttx_4299c767/rh`. Then, we subscribe to the topic `mqttx_4299c767/rh` and set the Retain Handling option to 0:
 

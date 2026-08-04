@@ -88,7 +88,7 @@ GitHub: [https://github.com/thomasnordquist/MQTT-Explorer](https://github.com/th
 
 #### 特徴
 
->  [MQTT Explorer](http://mqtt-explorer.com/)より引用
+>  [MQTT Explorer](https://mqtt-explorer.com/)より引用
 
 - Topicの可視化とTopic変更のダイナミックプレビュー
 -  保持したTopicを削除する

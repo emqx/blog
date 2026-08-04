@@ -182,7 +182,7 @@ def run_server():
     identity = ModbusDeviceIdentification()
     identity.VendorName = 'Pymodbus'
     identity.ProductCode = 'PM'
-    identity.VendorUrl = '<http://github.com/riptideio/pymodbus/'>
+    identity.VendorUrl = '<https://github.com/riptideio/pymodbus/'>
     identity.ProductName = 'Pymodbus Server'
     identity.ModelName = 'Pymodbus Server'
     identity.MajorMinorRevision = '1.5'

@@ -34,7 +34,7 @@ LEDの長い脚（アノード）を抵抗を介してNodeMCUのD1（GPIO 5）�
 
 ### ESP8266ボードサポートのインストール
 
-Arduino IDEで「ファイル」>「設定」に移動し、「追加のボードマネージャーURL」に次のURLを追加します：`http://arduino.esp8266.com/stable/package_esp8266com_index.json`。次に、「ツール」>「ボード」>「ボードマネージャー」でESP8266ボードを検索し、インストールします。
+Arduino IDEで「ファイル」>「設定」に移動し、「追加のボードマネージャーURL」に次のURLを追加します：`https://arduino.esp8266.com/stable/package_esp8266com_index.json`。次に、「ツール」>「ボード」>「ボードマネージャー」でESP8266ボードを検索し、インストールします。
 
 ### PubSubClientライブラリのインストール
 

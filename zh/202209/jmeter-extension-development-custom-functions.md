@@ -6,7 +6,7 @@
 
 由于 JMeter 函数相对简单，本文便以它作为起点。
 
-JMeter 函数（function）可以让用户在编辑测试脚本的时候插入到任何 Sampler 或者其他测试元素中，执行相应的任务。比如，`__machineName` 取得 JMeter Agent 所在机器的主机名，`__machineIP` 取得 JMeter Agent 所在机器的 IP 地址，`__RandomString` 得到一个随机的字符串。JMeter 所提供的内置函数完整列表，请参考[官方文档](http://jmeter.apache.org/usermanual/functions.html)。
+JMeter 函数（function）可以让用户在编辑测试脚本的时候插入到任何 Sampler 或者其他测试元素中，执行相应的任务。比如，`__machineName` 取得 JMeter Agent 所在机器的主机名，`__machineIP` 取得 JMeter Agent 所在机器的 IP 地址，`__RandomString` 得到一个随机的字符串。JMeter 所提供的内置函数完整列表，请参考[官方文档](https://jmeter.apache.org/usermanual/functions.html)。
 
 总体来说，扩展 JMeter 的函数可以分成下面几个步骤：
 
@@ -256,6 +256,6 @@ Dummy Sampler 可以通过 JMeter 插件管理器完成安装。
 
 ## 参考文献
 
-[http://www.javacodegeeks.com/2013/06/jmeter-custom-function-implementation.html](https://link.jianshu.com/?t=http://www.javacodegeeks.com/2013/06/jmeter-custom-function-implementation.html)
+[https://www.javacodegeeks.com/2013/06/jmeter-custom-function-implementation.html](https://link.jianshu.com/?t=https://www.javacodegeeks.com/2013/06/jmeter-custom-function-implementation.html)
 
-[http://jmeter.apache.org/usermanual/functions.html](http://jmeter.apache.org/usermanual/functions.html)
+[https://jmeter.apache.org/usermanual/functions.html](https://jmeter.apache.org/usermanual/functions.html)

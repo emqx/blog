@@ -81,11 +81,11 @@ base64UrlEncode(Header) + "." + base64UrlEncode(Payload) + "." + base64UrlEncode
 HMACSHA256(base64UrlEncode(Header) + "." + base64UrlEncode(Payload), Secret)
 ```
 
-我们可以使用 [http://jwt.io](http://jwt.io) 工具来为以上内容生成一个 JWT。当我们使用 HS256 算法，并指定密钥为 emqx 时，我们将得到以下 JWT：
+我们可以使用 [https://jwt.io](https://jwt.io) 工具来为以上内容生成一个 JWT。当我们使用 HS256 算法，并指定密钥为 emqx 时，我们将得到以下 JWT：
 
 ![JWT](https://assets.emqx.com/images/2a78c5e108660261a6ce153ae6749a44.png)
 
-然后我们可以使用以下 Python 代码为相同的 Header 和 Payload 计算签名并与 [http://jwt.io](http://jwt.io) 给出的签名进行比较：
+然后我们可以使用以下 Python 代码为相同的 Header 和 Payload 计算签名并与 [https://jwt.io](https://jwt.io) 给出的签名进行比较：
 
 ```
 import base64
@@ -350,7 +350,7 @@ claims['username'] = 'myuser'
 jwt = issue_jws(jwks[0], 'RS256', claims)
 ```
 
-程序运行时，第一组密钥对中的公钥和私钥，以及签发的 JWT 都会输出到控制台，其中密钥将以 PEM 格式输出，我们可以直接将它们复制到 [http://jwt.io](http://jwt.io) 工具中进行验证。
+程序运行时，第一组密钥对中的公钥和私钥，以及签发的 JWT 都会输出到控制台，其中密钥将以 PEM 格式输出，我们可以直接将它们复制到 [https://jwt.io](https://jwt.io) 工具中进行验证。
 
 ```
 [Public Key]

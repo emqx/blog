@@ -6,7 +6,7 @@ The client periodically sends PINGREQ packets to the server, which lets the serv
 
 ## Sample Packets
 
-We use [MQTTX CLI](https://mqttx.app/) to initiate a client connection to the [Public MQTT Server](http://broker.emqx.io/). We do not publish messages or subscribe to topics, but we can still see MQTT packets periodically appearing between the client and server in [Wireshark](https://www.wireshark.org/). These packets are the PINGREQ and PINGRESP.
+We use [MQTTX CLI](https://mqttx.app/) to initiate a client connection to the [Public MQTT Server](https://www.emqx.com/en/mqtt/public-mqtt5-broker). We do not publish messages or subscribe to topics, but we can still see MQTT packets periodically appearing between the client and server in [Wireshark](https://www.wireshark.org/). These packets are the PINGREQ and PINGRESP.
 
 The following command will create a client connection with a [Keep Alive](https://www.emqx.com/en/blog/mqtt-keep-alive) of 5 seconds, which allows us to see the client sending the PINGREQ message as soon as possible.
 

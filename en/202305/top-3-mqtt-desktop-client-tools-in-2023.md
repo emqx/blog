@@ -112,7 +112,7 @@ GitHub: [https://github.com/thomasnordquist/MQTT-Explorer](https://github.com/th
 
 ### Features
 
-> Quote from [MQTT Explorer](http://mqtt-explorer.com/) 
+> Quote from [MQTT Explorer](https://mqtt-explorer.com/) 
 
 - Visualize topics and a dynamic preview of the change of topic
 - Delete the retained topics

@@ -73,7 +73,7 @@ A security post that stops there is marketing. The honest limits:
 
 ## What to Do
 
-If you run HTTP MCP servers today: upgrade Starlette to 1.0.1, scan your fleet with the [BadHost](http://badhost.org/) scanner (only against systems you are authorized to test) to catch anything you missed, get those servers off public listeners and behind a gateway that validates the `Host` header, and have any auth middleware read `scope["path"]` instead of the reconstructed `request.url.path`.
+If you run HTTP MCP servers today: upgrade Starlette to 1.0.1, scan your fleet with the [BadHost](https://badhost.org/) scanner (only against systems you are authorized to test) to catch anything you missed, get those servers off public listeners and behind a gateway that validates the `Host` header, and have any auth middleware read `scope["path"]` instead of the reconstructed `request.url.path`.
 
 If you are designing agent and tool communication now, prefer a transport where agents and tools connect outbound to a broker rather than each listening for inbound requests. That leaves you one ingress to defend instead of many, transport authorization enforced in one place against authenticated identities, and discovery kept off the public network. Application authorization still lives in the agents, where it belongs. The MQTT bindings are one way to get there, and they were built for many-to-many messaging across unreliable links, which is the case HTTP request-response handles poorly.
 

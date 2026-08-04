@@ -49,7 +49,7 @@ Zigbee 技术具有低功耗、大节点容量、短时延、安全可靠等突�
 
 相比同为无线局域网技术体系的 WiFi、蓝牙技术，Zigbee 技术在功耗、节点容量、自组网能力、安全性方面具有突出优势，应用规模不断扩大。
 
-> 参考资料：[对于ZigBee技术，你了解多少？](http://m.gongkong.com/News/detail?id=406029)
+> 参考资料：[对于ZigBee技术，你了解多少？](https://m.gongkong.com/News/detail?id=406029)
 
 ## NB-IoT
 

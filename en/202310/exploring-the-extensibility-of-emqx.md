@@ -141,7 +141,7 @@ It’s also important to update the description texts in:
     , {builder,
         [ {name, "zmstone"}
         , {contact, "contact@emqx.com"}
-        , {website, "http://emqx.com"}
+        , {website, "https://www.emqx.com"}
         ]}
     , {repo, "https://github.com/zmstone/emqx_simple_acl"}
     , {functionality, ["Demo"]}
@@ -257,7 +257,7 @@ We can also try to inspect it from CLI: `docker exec -it emqx bash -c 'emqx ctl 
     },
     "built_on_otp_release" : "25",
     "builder" : {
-      "website" : "http://emqx.com",
+      "website" : "https://emqx.com",
       "name" : "zmstone",
       "contact" : "contact@emqx.com"
     },

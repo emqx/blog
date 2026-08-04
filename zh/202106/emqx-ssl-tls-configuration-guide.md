@@ -15,7 +15,7 @@ EMQX 提供了非常完整的 SSL/TLS 能力支持，但由于文档中提及甚
 对于客户端的 SSL/TLS 连接，通常有以下两种方式：
 
 - 客户端直接与 EMQX 建立 SSL/TLS 连接。
-- 使用代理或负载均衡（例如 [HAproxy](http://www.haproxy.org/)）对客户端连接进行 [TLS 终结](https://en.wikipedia.org/wiki/TLS_termination_proxy)。
+- 使用代理或负载均衡（例如 [HAproxy](https://www.haproxy.org/)）对客户端连接进行 [TLS 终结](https://en.wikipedia.org/wiki/TLS_termination_proxy)。
 
 两种方式各有利弊，本指南将重点介绍第一种方式。
 

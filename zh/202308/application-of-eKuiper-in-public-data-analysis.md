@@ -23,7 +23,7 @@ eKuiper 支持处理毫秒级的实时数据。本教程中，我们将以日更
 数据接口的 URL 以及参数如下：
 
 ```
-http://opendata.sz.gov.cn/api/29200_00403627/1/service.xhtml?page=1&rows=100&appKey=
+https://opendata.sz.gov.cn/api/29200_00403627/1/service.xhtml?page=1&rows=100&appKey=
 ```
 
 我们现在尝试使用 eKuiper 的 [HTTP 提取源](https://github.com/lf-edge/ekuiper/blob/master/docs/zh_CN/guide/sources/builtin/http_pull.md)从数据平台的 HTTP 服务器提取前 100 条消息数据并输入 eKuiper 处理管道。

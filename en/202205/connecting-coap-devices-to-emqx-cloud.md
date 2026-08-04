@@ -60,7 +60,7 @@ The [libcoap](https://github.com/obgm/libcoap) is a very easy-to-use CoAP client
 The installation and deployment can be seen in the following example.
 
 ```
-git clone http://github.com/obgm/libcoap
+git clone https://github.com/obgm/libcoap
 cd libcoap
 ./autogen.sh
 ./configure --enable-documentation=no --enable-tests=no

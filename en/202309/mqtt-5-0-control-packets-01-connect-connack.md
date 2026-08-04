@@ -4,7 +4,7 @@ If we want to use MQTT for communication, the first step must be to establish an
 
 ## Sample Packets
 
-We use [MQTTX CLI](https://mqttx.app/) to initiate a connection to a [Public MQTT server](http://broker.emqx.io/). In this connection, we set the protocol version to [MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5), Clean Start to 1, Session Expiry Interval to 300 seconds, Keep Alive to 60, and the username and password to admin and public respectively. The corresponding MQTTX CLI command is:
+We use [MQTTX CLI](https://mqttx.app/) to initiate a connection to a [Public MQTT server](https://www.emqx.com/en/mqtt/public-mqtt5-broker). In this connection, we set the protocol version to [MQTT 5.0](https://www.emqx.com/en/blog/introduction-to-mqtt-5), Clean Start to 1, Session Expiry Interval to 300 seconds, Keep Alive to 60, and the username and password to admin and public respectively. The corresponding MQTTX CLI command is:
 
 ```
 mqttx conn --hostname broker.emqx.io --mqtt-version 5 \

@@ -1,6 +1,6 @@
 In the last post: [Load balancing - MQTT broker clustering part 1](https://www.emqx.com/en/blog/mqtt-broker-clustering-part-1-load-balancing), we have introduced [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) load balancing in general: load balancing can be applied either on transport layer, or application layer. Now it’s time to dive into application layer load balancing, the most interesting part: sticky-session.
 
-This post consists of 2 parts, the first part is to introduce what MQTT sessions, and the challenges of handing sessions in a distributed [MQTT broker cluster](https://www.emqx.com/en/blog/mqtt-broker-clustering); the second part is to get our hands dirty by provisioning an [HAProxy 2.4](http://www.haproxy.org/) load balancer in front of [EMQX 4.3](https://www.emqx.com/en/products/emqx) cluster to take full advantage of the sticky-session load balancing.
+This post consists of 2 parts, the first part is to introduce what MQTT sessions, and the challenges of handing sessions in a distributed [MQTT broker cluster](https://www.emqx.com/en/blog/mqtt-broker-clustering); the second part is to get our hands dirty by provisioning an [HAProxy 2.4](https://www.haproxy.org/) load balancer in front of [EMQX 4.3](https://www.emqx.com/en/products/emqx) cluster to take full advantage of the sticky-session load balancing.
 
 ## MQTT session
 

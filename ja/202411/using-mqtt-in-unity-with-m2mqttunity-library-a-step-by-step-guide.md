@@ -2,7 +2,7 @@ Unityは、幅広いゲームやシミュレーションを作成するために
 
 MQTTは、AR（拡張現実）ゲーム、センサーやその他のデバイスを利用したIoT対応ゲーム、ゲームやシミュレーションのリモートコントロールなど、さまざまな目的でUnityで使用できます。例えば、ARゲームでは、ユーザーのデバイスから平面表面の位置、オブジェクト、人、顔の検出など、世界に関する情報を受信するためにMQTTが使用されます。
 
-このブログでは、[M2MQTT](https://github.com/eclipse/paho.mqtt.m2mqtt)をUnityで使用するためのシンプルな[Unity3d](http://unity3d.com/)プロジェクトを提供します。プロジェクトには、ブローカーへの接続管理やメッセージングのテスト用のユーザーインターフェースを備えた例のシーンが含まれています。
+このブログでは、[M2MQTT](https://github.com/eclipse/paho.mqtt.m2mqtt)をUnityで使用するためのシンプルな[Unity3d](https://unity3d.com/)プロジェクトを提供します。プロジェクトには、ブローカーへの接続管理やメッセージングのテスト用のユーザーインターフェースを備えた例のシーンが含まれています。
 
 ## 前提条件
 
@@ -28,7 +28,7 @@ SSL/TLSポート: 8883
 
 ## Unity用のM2MQTT
 
-[M2MQTTライブラリ](https://github.com/CE-SDV-Unity/M2MqttUnity)は、Unityで[M2MQTT](https://github.com/eclipse/paho.mqtt.m2mqtt)を使用するためのシンプルな[Unity3d](http://unity3d.com/)プロジェクトです。ブローカーへの接続管理やメッセージングのテスト用のUIを備えた例のシーンが含まれています。このブログ記事では、例のシーンを使用して、MQTTを利用してMQTTブローカーと通信するアプリケーションを作成する方法を説明します。
+[M2MQTTライブラリ](https://github.com/CE-SDV-Unity/M2MqttUnity)は、Unityで[M2MQTT](https://github.com/eclipse/paho.mqtt.m2mqtt)を使用するためのシンプルな[Unity3d](https://unity3d.com/)プロジェクトです。ブローカーへの接続管理やメッセージングのテスト用のUIを備えた例のシーンが含まれています。このブログ記事では、例のシーンを使用して、MQTTを利用してMQTTブローカーと通信するアプリケーションを作成する方法を説明します。
 
 まず、GitHubからリポジトリをダウンロードします。
 

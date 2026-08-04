@@ -4,7 +4,7 @@ In [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with
 
 ## Sample DISCONNECT Packet
 
-We use the [MQTTX CLI](https://mqttx.app/) to initiate a client connection with a specified Client ID to the [Public MQTT Server](http://broker.emqx.io), and set `--reconnect-period` to 0 to disable automatic reconnection, and then run the same command in another terminal to create a client connection using the same Client ID.
+We use the [MQTTX CLI](https://mqttx.app/) to initiate a client connection with a specified Client ID to the [Public MQTT Server](https://www.emqx.com/en/mqtt/public-mqtt5-broker), and set `--reconnect-period` to 0 to disable automatic reconnection, and then run the same command in another terminal to create a client connection using the same Client ID.
 
 The entire process uses [Wireshark](https://www.wireshark.org/) to capture the MQTT packets traveling between the client and the server. In Linux, you can use [tcpdump](https://en.wikipedia.org/wiki/Tcpdump) to capture the packets and then import them to Wireshark for viewing.
 

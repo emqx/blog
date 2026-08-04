@@ -10,7 +10,7 @@ The [MQTT protocol](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-st
 
 MQTT is a lightweight messaging protocol based on [publish/subscribe model](https://www.emqx.com/en/blog/mqtt-5-introduction-to-publish-subscribe-model), specifically designed for IoT applications in low bandwidth and unstable network environments. It can provide real-time reliable messaging services for network-connected devices with minimal code. MQTT protocol is widely used in IoT, Mobile Internet, Smart Hardware, Internet of Vehicles, Smart Cities, Telemedicine, Power, Oil, Energy, and other fields.
 
-MQTT was created by [Andy Stanford-Clark](http://en.wikipedia.org/wiki/Andy_Stanford-Clark) of IBM, and Arlen Nipper (then of Arcom Systems, later CTO of Eurotech). According to Nipper, MQTT must have the following features:
+MQTT was created by [Andy Stanford-Clark](https://en.wikipedia.org/wiki/Andy_Stanford-Clark) of IBM, and Arlen Nipper (then of Arcom Systems, later CTO of Eurotech). According to Nipper, MQTT must have the following features:
 
 - Simple and easy to implement
 - QoS support (complex device network environment)

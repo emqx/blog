@@ -4,7 +4,7 @@
 
 ## 报文示例
 
-我们使用 [MQTTX CLI](https://mqttx.app/zh) 向 [公共 MQTT 服务器](http://broker.emqx.io/) 发起一个连接，在这个连接中，我们将协议版本设置 MQTT 5.0，Clean Start 设置为 1，Session Expiry Interval 设置为 300 秒，Keep Alive 设置为 60，用户名和密码分别设置为 admin 和 public，对应的 MQTTX CLI 命令为：
+我们使用 [MQTTX CLI](https://mqttx.app/zh) 向 [公共 MQTT 服务器](https://www.emqx.com/zh/mqtt/public-mqtt5-broker) 发起一个连接，在这个连接中，我们将协议版本设置 MQTT 5.0，Clean Start 设置为 1，Session Expiry Interval 设置为 300 秒，Keep Alive 设置为 60，用户名和密码分别设置为 admin 和 public，对应的 MQTTX CLI 命令为：
 
 ```
 mqttx conn --hostname broker.emqx.io --mqtt-version 5 \  --session-expiry-interval 300 --keepalive 60 --username admin --password public

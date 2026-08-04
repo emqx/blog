@@ -142,7 +142,7 @@ unhook(HookPoint, MFA) ->
     , {builder,
         [ {name, "zmstone"}
         , {contact, "contact@emqx.com"}
-        , {website, "http://emqx.com"}
+        , {website, "https://www.emqx.com"}
         ]}
     , {repo, "https://github.com/zmstone/emqx_simple_acl"}
     , {functionality, ["Demo"]}
@@ -260,7 +260,7 @@ topics(Subs) ->
     },
     "built_on_otp_release" : "25",
     "builder" : {
-      "website" : "http://emqx.com",
+      "website" : "https://emqx.com",
       "name" : "zmstone",
       "contact" : "contact@emqx.com"
     },

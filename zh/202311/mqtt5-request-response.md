@@ -65,7 +65,7 @@ MQTT 并未进一步约定这部分的细节，比如响应信息的内容格式
 
 接下来我们将使用 [MQTTX](https://mqttx.app/zh) 模拟使用手机远程控制卧室灯开启并接收响应的场景。
 
-安装并打开 MQTTX，首先向 [公共 MQTT 服务器](http://broker.emqx.io/) 发起一个客户端连接用于模拟手机，并订阅响应主题 `state/light-in-bedroom/power`：
+安装并打开 MQTTX，首先向 [公共 MQTT 服务器](https://www.emqx.com/zh/mqtt/public-mqtt5-broker) 发起一个客户端连接用于模拟手机，并订阅响应主题 `state/light-in-bedroom/power`：
 
 ![05mqttx01.png](https://assets.emqx.com/images/be3949e3e733128a4ae211867ac19867.png)
 

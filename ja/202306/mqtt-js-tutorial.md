@@ -28,7 +28,7 @@ yarn add mqtt
 
 ### CDNを利用したMQTT.jsのインストール
 
-ブラウザでは、CDNを利用してMQTT.jsをインポートすることもできます。MQTT.jsのバンドルパッケージは[http://unpkg.com](http://unpkg.com)、直接[unkg.com/mqtt/dist/mqtt.min.js](https://unpkg.com/mqtt/dist/mqtt.min.js)を追加して使用することができます。
+ブラウザでは、CDNを利用してMQTT.jsをインポートすることもできます。MQTT.jsのバンドルパッケージは[https://unpkg.com](https://unpkg.com)、直接[unkg.com/mqtt/dist/mqtt.min.js](https://unpkg.com/mqtt/dist/mqtt.min.js)を追加して使用することができます。
 
 ```html
 <script src="https://unpkg.com/mqtt/dist/mqtt.min.js"></script>

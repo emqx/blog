@@ -43,7 +43,7 @@ yarn add mqtt
 
 ### Install MQTT.js Using CDN
 
-In the **browser**, you can also use a CDN to import MQTT.js. The bundle package of MQTT.js is managed by [http://unpkg.com](http://unpkg.com/), and you can directly add [unpkg.com/mqtt/dist/mqtt.min.js](https://unpkg.com/mqtt/dist/mqtt.min.js) to use it.
+In the **browser**, you can also use a CDN to import MQTT.js. The bundle package of MQTT.js is managed by [https://unpkg.com](https://unpkg.com/), and you can directly add [unpkg.com/mqtt/dist/mqtt.min.js](https://unpkg.com/mqtt/dist/mqtt.min.js) to use it.
 
 ```html
 <script src="https://unpkg.com/mqtt/dist/mqtt.min.js"></script>

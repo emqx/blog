@@ -6,7 +6,7 @@ This article introduces the role of each connection parameter in MQTT and helps 
 
 ## Introduction to MQTT Connection
 
-MQTT connections are initiated from the client to the broker. Any application or device running the [MQTT client library](https://www.emqx.com/en/mqtt-client-sdk) is an [MQTT client](http://mqttx.app/). The [MQTT Broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) handles client connection, disconnection, subscribe (or unsubscribe) requests, and routes messages up on receiving publish requests.
+MQTT connections are initiated from the client to the broker. Any application or device running the [MQTT client library](https://www.emqx.com/en/mqtt-client-sdk) is an [MQTT client](https://mqttx.app/). The [MQTT Broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) handles client connection, disconnection, subscribe (or unsubscribe) requests, and routes messages up on receiving publish requests.
 
 After establishing a network connection with the broker, the very first message the client must send is a `CONNECT` packet. The broker must reply with a `CONNACK` to the client as a response, and the MQTT connection is established successfully after the client receives the `CONNACK` packet. If the client does not receive a `CONNACK` packet from the broker in time (usually a configurable timeout from the client side), it may actively close the network connection.
 

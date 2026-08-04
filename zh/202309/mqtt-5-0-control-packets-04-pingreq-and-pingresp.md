@@ -6,7 +6,7 @@
 
 ## 报文示例
 
-我们使用 [MQTTX CLI](https://mqttx.app/zh) 向 [公共 MQTT 服务器](http://broker.emqx.io/) 发起一个客户端连接，不发布消息也不订阅主题，但我们仍然可以在 [Wireshark](https://www.wireshark.org/) 中看到客户端和服务端之间总是周期性地出现 MQTT 报文的往返，这些报文就是 PINGREQ 和 PINGRESP 报文。
+我们使用 [MQTTX CLI](https://mqttx.app/zh) 向 [公共 MQTT 服务器](https://www.emqx.com/zh/mqtt/public-mqtt5-broker) 发起一个客户端连接，不发布消息也不订阅主题，但我们仍然可以在 [Wireshark](https://www.wireshark.org/) 中看到客户端和服务端之间总是周期性地出现 MQTT 报文的往返，这些报文就是 PINGREQ 和 PINGRESP 报文。
 
 以下命令将创建一个 Keep Alive 为 5 秒的客户端连接，这可以让我们尽快看到客户端发送 PINGREQ 报文：
 

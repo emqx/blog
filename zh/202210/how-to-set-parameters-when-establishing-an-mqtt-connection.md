@@ -4,7 +4,7 @@
 
 ## MQTT 连接的基本概念
 
-MQTT 连接由客户端向服务器端发起。任何运行了 [MQTT 客户端](https://www.emqx.com/zh/blog/mqtt-client-tools)库的程序或设备都是一个 [MQTT 客户端](http://mqttx.app/zh)，而 [MQTT 服务器](https://www.emqx.com/zh/mqtt/public-mqtt5-broker)则负责接收客户端发起的连接，并将客户端发送的消息转发到另外一些符合条件的客户端。
+MQTT 连接由客户端向服务器端发起。任何运行了 [MQTT 客户端](https://www.emqx.com/zh/blog/mqtt-client-tools)库的程序或设备都是一个 [MQTT 客户端](https://mqttx.app/zh)，而 [MQTT 服务器](https://www.emqx.com/zh/mqtt/public-mqtt5-broker)则负责接收客户端发起的连接，并将客户端发送的消息转发到另外一些符合条件的客户端。
 
 客户端与服务器建立网络连接后，需要先发送一个 `CONNECT ` 数据包给服务器。服务器收到 `CONNECT` 包后会回复一个 `CONNACK` 给客户端，客户端收到 `CONNACK` 包后表示 MQTT 连接建立成功。如果客户端在超时时间内未收到服务器的 ` CONNACK` 数据包，就会主动关闭连接。
 

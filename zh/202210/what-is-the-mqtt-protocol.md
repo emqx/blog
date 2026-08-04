@@ -4,7 +4,7 @@
 
 [MQTT](https://mqtt.org/) 是一种基于发布/订阅模式的轻量级消息传输协议，专门针对低带宽和不稳定网络环境的物联网应用而设计，可以用极少的代码为联网设备提供实时可靠的消息服务。MQTT 协议广泛应用于物联网、移动互联网、智能硬件、车联网、智慧城市、远程医疗、电力、石油与能源等领域。
 
-MQTT 协议由 [Andy Stanford-Clark](http://en.wikipedia.org/wiki/Andy_Stanford-Clark) （IBM）和 Arlen Nipper（Arcom，现为 Cirrus Link）于 1999 年发布。 按照 Nipper 的介绍，MQTT 必须具备以下几点：
+MQTT 协议由 [Andy Stanford-Clark](https://en.wikipedia.org/wiki/Andy_Stanford-Clark) （IBM）和 Arlen Nipper（Arcom，现为 Cirrus Link）于 1999 年发布。 按照 Nipper 的介绍，MQTT 必须具备以下几点：
 
 - 简单容易实现
 - 支持 QoS（设备网络环境复杂）

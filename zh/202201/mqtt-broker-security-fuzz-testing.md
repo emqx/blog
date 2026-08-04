@@ -24,7 +24,7 @@
 
 ### 测试环境准备
 
-本次测试在 Arch Linux 环境下进行，滚动更新至最新版本，使用 [EMQX 5.0-beta.2-8be2aaf7](http://github.com/emqx/emqx) 进行测试 。
+本次测试在 Arch Linux 环境下进行，滚动更新至最新版本，使用 [EMQX 5.0-beta.2-8be2aaf7](https://github.com/emqx/emqx) 进行测试 。
 
 此外，在进入下一步之前，需要从 Synopsys 处下载 Defensics 的安装包、后缀名为 `.install` 的测试套件安装文件、以及 DEFENSIC 可执行文件以提供给 FlexNet 许可服务器验证 license 状态使用。
 
