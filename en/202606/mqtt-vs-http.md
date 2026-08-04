@@ -144,6 +144,46 @@ These variances bear significant implications on their applicability within IoT 
 - **Lightweight and Frequent Communication:** In environments with limited bandwidth and resources, MQTT is typically more efficient than HTTP. MQTT minimizes communication overhead by avoiding frequent connection setups and utilizing small message headers. In contrast, HTTP's synchronous request-response model is less efficient, necessitating complete request and response headers for each interaction, which can waste bandwidth and resources.
 - **Scenarios with Network Fluctuations:** MQTT maintains persistent connections between clients and servers, allowing it to recover from connection disruptions. Even if the network disconnects, MQTT can resume communication upon reconnection. HTTP, being stateless, handles each communication independently and cannot recover from disconnections in the same manner.
 
+## When Should You Choose MQTT?
+
+MQTT is a better choice when your IoT application requires:
+
+- Real-time device communication
+- Frequent sensor data transmission
+- Low bandwidth consumption
+- Communication over unstable networks
+- Large numbers of connected devices
+- Bidirectional messaging between devices and applications
+
+Common MQTT use cases include:
+
+- Industrial IoT monitoring
+- Smart home devices
+- Vehicle telemetry
+- Energy management systems
+- Remote equipment control
+- Real-time dashboards
+
+## When Should You Choose HTTP?
+
+HTTP remains an excellent choice for many IoT-related scenarios, especially when applications need compatibility with existing web technologies.
+
+HTTP is suitable when:
+
+- Devices communicate occasionally rather than continuously
+- Applications require REST API integration
+- Browser compatibility is important
+- Developers need simple request-response communication
+- Systems already rely on web infrastructure
+
+Common HTTP use cases include:
+
+- Device configuration
+- Firmware updates
+- Cloud API communication
+- User-facing applications
+- Data retrieval services
+
 ## Another Thought: Integrating MQTT with HTTP
 
 We've explored which protocol might be best for IoT devices. In reality, complex IoT applications often involve a mix of hardware, clients, and business processes. MQTT and HTTP, as two of the most widely used [protocols in IoT](https://www.emqx.com/en/blog/iot-protocols-mqtt-coap-lwm2m) and the broader internet, can complement each other in many scenarios to enhance system efficiency and flexibility.
@@ -181,11 +221,33 @@ When a device sends an MQTT message to EMQX, the Webhook feature can forward thi
 
 The configuration interface is as follows:
 
-![Create webhook](https://assets.emqx.com/images/d2b7002a90294a511e0931d034c2f7a4.png)
+![image.png](https://assets.emqx.com/images/efccd11090296b6d28d5aba182ad1367.png)
 
 
 
 Future versions of EMQX will further enhance this process by saving real-time MQTT messages to an integrated Message Queue and Stream, allowing users to consume these messages via HTTP. This will better support complex IoT scenarios and provide more robust message processing capabilities.
+
+## MQTT vs HTTP FAQ
+
+### Is MQTT better than HTTP for IoT?
+
+MQTT is generally better for IoT applications that require real-time communication, low bandwidth usage, and reliable messaging. HTTP is better suited for web APIs, simple data requests, and applications that already use REST architecture.
+
+### Can MQTT replace HTTP?
+
+MQTT does not completely replace HTTP. Many IoT systems use both protocols together, with MQTT handling device communication and HTTP handling application interfaces, APIs, and user interactions.
+
+### Is MQTT faster than HTTP?
+
+MQTT can provide lower latency than HTTP in many IoT scenarios because it uses persistent connections and lightweight messages. However, actual performance depends on network conditions, message size, and system architecture.
+
+### Is MQTT secure?
+
+MQTT supports secure communication through TLS encryption, authentication mechanisms, and authorization controls such as topic-based access permissions.
+
+### Can MQTT and HTTP work together?
+
+Yes. Many IoT platforms combine MQTT and HTTP. MQTT is commonly used for device-to-cloud messaging, while HTTP is used for APIs, dashboards, and application integration.
 
 ## Conclusion
 
