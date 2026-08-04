@@ -26,7 +26,7 @@ After some preliminary analysis, we found this dataset provides rich shared-bike
 The URL and parameters of the data interface are as follows:
 
 ```
-http://api.citybik.es/v2/networks/santander-cycles
+https://api.citybik.es/v2/networks/santander-cycles
 ```
 
 By observing the data returned from the API, we can see that all the data we need is in the array field called `stations`:
@@ -99,7 +99,7 @@ Once installed, eKuiper needs to be configured to pull data from the desired sou
 
    ```
    default:
-     url: 'http://api.citybik.es/v2/networks/santander-cycles'
+     url: 'https://api.citybik.es/v2/networks/santander-cycles'
      method: get
      interval: 10000
      timeout: 5000

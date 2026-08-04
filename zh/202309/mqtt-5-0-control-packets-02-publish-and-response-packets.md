@@ -6,7 +6,7 @@
 
 ## 报文示例
 
-我们使用 [MQTTX CLI](https://mqttx.app/zh) 向 [公共 MQTT 服务器](http://broker.emqx.io/) 发布三条不同 QoS 等级的消息，并使用 [Wireshark](https://www.wireshark.org/) 工具抓取在客户端与服务器之间往返的 MQTT 报文，Linux 环境可以使用 [tcpdump](https://en.wikipedia.org/wiki/Tcpdump) 命令抓取报文，然后导入至 Wireshark 分析。
+我们使用 [MQTTX CLI](https://mqttx.app/zh) 向 [公共 MQTT 服务器](https://www.emqx.com/zh/mqtt/public-mqtt5-broker) 发布三条不同 QoS 等级的消息，并使用 [Wireshark](https://www.wireshark.org/) 工具抓取在客户端与服务器之间往返的 MQTT 报文，Linux 环境可以使用 [tcpdump](https://en.wikipedia.org/wiki/Tcpdump) 命令抓取报文，然后导入至 Wireshark 分析。
 
 以下是本示例使用的 MQTTX CLI 命令，为了展示 PUBLISH 报文的属性字段，命令中还设置了 Message Expiry Interval 和 Response Topic 属性：
 

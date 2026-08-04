@@ -1,6 +1,6 @@
 In this blog post, we will introduce some of the improvements of the [MQTT broker cluster](https://www.emqx.com/en/blog/mqtt-broker-clustering) scalability. We will mostly focus on the database engine that EMQX uses internally and how we improved it in EMQX 5.0.  
 
-Before we start, you should know how data is replicated in the EMQX cluster: [EMQX Broker](https://github.com/emqx/emqx) stores the runtime information about the topics and clients in [Mnesia](http://erlang.org/doc/man/mnesia.html) database, which helps replicate this data across the cluster.
+Before we start, you should know how data is replicated in the EMQX cluster: [EMQX Broker](https://github.com/emqx/emqx) stores the runtime information about the topics and clients in [Mnesia](https://erlang.org/doc/man/mnesia.html) database, which helps replicate this data across the cluster.
 
 
 ## What is Mnesia?

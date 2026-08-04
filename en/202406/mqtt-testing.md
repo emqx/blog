@@ -75,7 +75,7 @@ Getting early feedback on code quality can increase the chances of reducing defe
 
 - [MQTTX](https://mqttx.app/): A desktop and CLI MQTT client with cross-platform compatibility, providing a simplified way for developing and testing MQTT applications. 
 - [Mosquitto](https://mosquitto.org/): CLI MQTT client from Mosquitto project.
-- [MQTT.fx](http://mqttfx.org/): A desktop MQTT client based on Eclipse Paho, providing the ability to debug and test MQTT communications.
+- [MQTT.fx](https://mqttfx.org/): A desktop MQTT client based on Eclipse Paho, providing the ability to debug and test MQTT communications.
 -  [MQTT Explorer](https://mqtt-explorer.com/): An MQTT client to visualize, publish, subscribe, and plot topics.
 
 > For more detailed comparison of these tools, please refer to: [7 Best MQTT Client Tools Worth Trying in 2024](https://www.emqx.com/en/blog/mqtt-client-tools) 

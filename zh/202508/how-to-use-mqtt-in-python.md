@@ -64,7 +64,7 @@ EMQX Platform 是一个全托管的 MQTT 消息云服务，可以无缝连接您
 
 为简化流程，本文将使用[免费的公共 MQTT 服务器](https://www.emqx.com/zh/mqtt/public-mqtt5-broker)：
 
-- 服务器：`http://broker.emqx.io`
+- 服务器：`broker.emqx.io`
 - TCP 端口：`1883`
 - WebSocket 端口：`8083`
 - SSL/TLS 端口：`8883`

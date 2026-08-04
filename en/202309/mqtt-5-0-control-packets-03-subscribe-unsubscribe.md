@@ -4,7 +4,7 @@ In [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with
 
 ## Sample Packets
 
-First, we use [Wireshark](https://www.wireshark.org/) to capture a real MQTT subscription request and response. Here we use the [MQTTX CLI](https://mqttx.app/) to initiate a subscription request to the [Public MQTT Server](http://broker.emqx.io/). The following command will create a subscription with the topic `demo` and maximum QoS set to 2:
+First, we use [Wireshark](https://www.wireshark.org/) to capture a real MQTT subscription request and response. Here we use the [MQTTX CLI](https://mqttx.app/) to initiate a subscription request to the [Public MQTT Server](https://www.emqx.com/en/mqtt/public-mqtt5-broker). The following command will create a subscription with the topic `demo` and maximum QoS set to 2:
 
 ```
  mqttx sub --hostname broker.emqx.io --mqtt-version 5 --topic demo --qos 2

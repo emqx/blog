@@ -122,7 +122,7 @@ AMQP 1.0 版本中的帧由一个 8 字节的固定头部、一个可选的扩�
 | 起源             | 由摩根大通于 2003 年发明                                     | 由 IBM 于 1999 年发明                                        |
 | 架构             | EBQ（交换机-绑定-队列）                                      | 基于主题的发布/订阅                                          |
 | 核心概念         | 交换机，队列，绑定，路由键                                   | 主题，订阅                                                   |
-| 主要协议版本     | · [0.9.1](https://www.rabbitmq.com/resources/specs/amqp0-9-1.pdf) 于 2008 年 11 月发布 · [1.0](http://docs.oasis-open.org/amqp/core/v1.0/os/amqp-core-overview-v1.0-os.html) 于 2012 年 10 月发布 | · [3.1.1](http://docs.oasis-open.org/mqtt/mqtt/v3.1.1/mqtt-v3.1.1.pdf) 于 2015 年 12 月发布 · [5.0](http://docs.oasis-open.org/mqtt/mqtt/v5.0/mqtt-v5.0.pdf) 于 2019 年 3 月发布 |
+| 主要协议版本     | · [0.9.1](https://www.rabbitmq.com/resources/specs/amqp0-9-1.pdf) 于 2008 年 11 月发布 · [1.0](https://docs.oasis-open.org/amqp/core/v1.0/os/amqp-core-overview-v1.0-os.html) 于 2012 年 10 月发布 | · [3.1.1](https://docs.oasis-open.org/mqtt/mqtt/v3.1.1/mqtt-v3.1.1.pdf) 于 2015 年 12 月发布 · [5.0](https://docs.oasis-open.org/mqtt/mqtt/v5.0/mqtt-v5.0.pdf) 于 2019 年 3 月发布 |
 | **消息范式**     |                                                              |                                                              |
 | 点对点           | ✅ （存储转发队列）                                           | 部分支持                                                     |
 | 发布/订阅        | ✅                                                            | ✅                                                            |

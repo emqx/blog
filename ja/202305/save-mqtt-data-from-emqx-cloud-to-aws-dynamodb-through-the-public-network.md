@@ -120,7 +120,7 @@ EMQX CloudのAWSデプロイメントを作成し、これ以外の設定はデ�
 
    メッセージの購読・発行には、クロスプラットフォームのMQTT 5.0デスクトップクライアントである[MQTTX](https://mqttx.app/)を使用することをお勧めします。
 
-   追加ボタンをクリックし、デプロイメント情報を入力してデプロイメントに接続します。[broker.emqx.io](http://broker.emqx.io/)を作成したデプロイメントの[接続アドレス](https://docs.emqx.com/en/cloud/latest/create/overview.html#view-deployment-information)に置き換える必要があります。EMQX Cloudコンソールに[クライアント認証情報](https://docs.emqx.com/en/cloud/latest/deployments/auth_overview.html#authentication)を追加します。トピック名とペイロードメッセージを入力して、メッセージを発行します。 
+   追加ボタンをクリックし、デプロイメント情報を入力してデプロイメントに接続します。[broker.emqx.io](https://www.emqx.com/ja/mqtt/public-mqtt5-broker)を作成したデプロイメントの[接続アドレス](https://docs.emqx.com/en/cloud/latest/create/overview.html#view-deployment-information)に置き換える必要があります。EMQX Cloudコンソールに[クライアント認証情報](https://docs.emqx.com/en/cloud/latest/deployments/auth_overview.html#authentication)を追加します。トピック名とペイロードメッセージを入力して、メッセージを発行します。 
 
    ![MQTTX](https://assets.emqx.com/images/3d3ba6a7cf7228c0661beb4a15c5f20f.png)
 

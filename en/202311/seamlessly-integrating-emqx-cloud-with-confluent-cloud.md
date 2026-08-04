@@ -14,7 +14,7 @@ In this tutorial, we'll show you step-by-step how to integrate Confluent Cloud w
 
 ## Step 1: Set up a Confluent Cloud Cluster
 
-To begin using Confluent Cloud, visit [confluent.io/get-started/](http://confluent.io/get-started/) and create an account. Upon signing up, you will receive a $400 credit to use within the first 30 days.
+To begin using Confluent Cloud, visit [confluent.io/get-started/](https://confluent.io/get-started/) and create an account. Upon signing up, you will receive a $400 credit to use within the first 30 days.
 
 ### 1. Create a Confluent Cloud cluster
 

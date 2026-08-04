@@ -36,7 +36,7 @@ Before starting the project, you need to prepare the following hardware and soft
 
 ### Installing Support for the ESP8266 Board
 
-In the Arduino IDE, select "Preferences" from the "File" menu. In the dialog box that appears, find "Additional Board Manager URLs" and add the URL for ESP8266: `http://arduino.esp8266.com/stable/package_esp8266com_index.json`. Then, search and install ESP8266 from "Board Manager" under the "Tools" menu.
+In the Arduino IDE, select "Preferences" from the "File" menu. In the dialog box that appears, find "Additional Board Manager URLs" and add the URL for ESP8266: `https://arduino.esp8266.com/stable/package_esp8266com_index.json`. Then, search and install ESP8266 from "Board Manager" under the "Tools" menu.
 
 ### Installing the PubSubClient Library
 

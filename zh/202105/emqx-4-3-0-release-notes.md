@@ -108,7 +108,7 @@ EMQX v4.3.0 版本修复了一些已知问题并新增了诸多特性，在通�
 
 - 支持 Erlang/OTP 23
 
-  升级到 Erlang/OTP 23 版本，为提高特性更新和错误修复速度，EMQX fork 并维护了 Erlang/OTP 项目，默认使用 [http://github.com/emqx/otp](http://github.com/emqx/otp) 进行构建。
+  升级到 Erlang/OTP 23 版本，为提高特性更新和错误修复速度，EMQX fork 并维护了 Erlang/OTP 项目，默认使用 [https://github.com/emqx/otp](https://github.com/emqx/otp) 进行构建。
 
 - 新安装包仅支持 macOS 10.14 及以上版本
 

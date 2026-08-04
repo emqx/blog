@@ -2,7 +2,7 @@ Unity is a popular game engine that is used to create a wide range of games and 
 
 MQTT can be used in Unity for a variety of purposes, including AR (Augmented Reality) games, IoT-enabled games that utilize sensors and other devices, and remote control of games and simulations. For example, in AR games, MQTT can be used to receive information about the world from the user's device, such as the locations of planar surfaces, the detection of objects, people, faces, and so on.
 
-This blog provides a simple [Unity3d](http://unity3d.com/) project for using [M2MQTT](https://github.com/eclipse/paho.mqtt.m2mqtt) with Unity. The project includes an example scene with a user interface for managing the connection to the broker and testing messaging.
+This blog provides a simple [Unity3d](https://unity3d.com/) project for using [M2MQTT](https://github.com/eclipse/paho.mqtt.m2mqtt) with Unity. The project includes an example scene with a user interface for managing the connection to the broker and testing messaging.
 
 ## Prerequisites
 
@@ -48,7 +48,7 @@ The free public MQTT broker is exclusively available for those who wish to learn
 
 ### M2MQTT for Unity
 
-[M2MQTT library](https://github.com/CE-SDV-Unity/M2MqttUnity) is a simple [Unity3d](http://unity3d.com/) project for using [M2MQTT](https://github.com/eclipse/paho.mqtt.m2mqtt) with Unity. It includes an example scene with a UI for controlling the connection to the broker and for testing messaging. In this blog post, we will use the example scene to illustrate how to use MQTT to create an application that communicates with an MQTT broker.
+[M2MQTT library](https://github.com/CE-SDV-Unity/M2MqttUnity) is a simple [Unity3d](https://unity3d.com/) project for using [M2MQTT](https://github.com/eclipse/paho.mqtt.m2mqtt) with Unity. It includes an example scene with a UI for controlling the connection to the broker and for testing messaging. In this blog post, we will use the example scene to illustrate how to use MQTT to create an application that communicates with an MQTT broker.
 
 To begin, download the repository from GitHub.
 

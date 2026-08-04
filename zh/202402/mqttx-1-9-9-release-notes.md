@@ -24,7 +24,7 @@ MQTTX 桌面版新功能允许用户一键隐藏连接列表，这样用户就�
 
 ## CBOR 格式支持
 
-MQTTX 新增了对 CBOR（Concise Binary Object Representation）格式的支持，它在数据压缩上优于 JSON，从而能让设备运行更高效，减少网络带宽消耗，并延长电池使用寿命。想要深入了解 CBOR，可以访问 [cbor.io](http://cbor.io/)。
+MQTTX 新增了对 CBOR（Concise Binary Object Representation）格式的支持，它在数据压缩上优于 JSON，从而能让设备运行更高效，减少网络带宽消耗，并延长电池使用寿命。想要深入了解 CBOR，可以访问 [cbor.io](https://cbor.io/)。
 
 > CBOR 旨在实现极小的代码体积和消息尺寸，同时支持无需版本协商的扩展性。
 

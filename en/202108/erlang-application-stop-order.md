@@ -73,7 +73,7 @@ esockd_app:stop/1
 
 Let's dig deeper:
 
-In Erlang [documentation](http://erlang.org/doc/apps/kernel/application.html#Module:stop-1)
+In Erlang [documentation](https://erlang.org/doc/apps/kernel/application.html#Module:stop-1)
 
 > Module:stop(State)
 

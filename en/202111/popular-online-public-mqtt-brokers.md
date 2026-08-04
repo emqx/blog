@@ -49,7 +49,7 @@ It is a free online MQTT broker provided by HiveMQ, and the resolved IP shows th
 
 Because its `$SYS/#` system topic cannot be subscribed, it is impossible to get the type of Broker providing the service, the specific version, and the current running time.
 
-Related introduction: [mqtt-dashboard.com](http://www.mqtt-dashboard.com/) 
+Related introduction: [mqtt-dashboard.com](https://www.mqtt-dashboard.com/) 
 
 ## Test environment
 
@@ -89,7 +89,7 @@ We check the network connectivity and network delay through network access. Beca
 | EMQX     | [http://broker.emqx.io:8083/mqtt](https://tool.chinaz.com/speedworld/http://broker.emqx.io:8083/mqtt) | 8083      |
 | EMQX(CN) | [http://broker-cn.emqx.io:8083/mqtt](https://tool.chinaz.com/speedworld/broker-cn.emqx.io:8083/mqtt) | 8083      |
 | Eclipse   | [http://mqtt.eclipseprojects.io/mqtt](https://tool.chinaz.com/speedworld/mqtt.eclipseprojects.io/mqtt) | 80        |
-| Mosquitto | [http://test.mosquitto.org/mqtt](https://tool.chinaz.com/speedworld/test.mosquitto.org/mqtt) | 80        |
+| Mosquitto | [https://test.mosquitto.org/mqtt](https://tool.chinaz.com/speedworld/test.mosquitto.org/mqtt) | 80        |
 | HiveMQ    | [http://broker.hivemq.com:8000/mqtt](https://tool.chinaz.com/speedworld/broker.hivemq.com:8000/mqtt) | 8000      |
 
 ### Test result

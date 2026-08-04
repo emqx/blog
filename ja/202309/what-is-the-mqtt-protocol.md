@@ -10,7 +10,7 @@ IoT Analytics の調査レポート「Status of the IoT Spring 2022」による�
 
 MQTT は、[パブリッシュ/サブスクライブ モデル](https://www.emqx.com/en/blog/mqtt-5-introduction-to-publish-subscribe-model)に基づく軽量のメッセージング プロトコルで、特に低帯域幅で不安定なネットワーク環境の IoT アプリケーション向けに設計されています。最小限のコードで、ネットワークに接続されたデバイスにリアルタイムで信頼性の高いメッセージング サービスを提供できます。MQTT プロトコルは、IoT、モバイル インターネット、スマート ハードウェア、車両のインターネット、スマート シティ、遠隔医療、電力、石油、エネルギーなどの分野で広く使用されています。
 
-[IBM のAndy Stanford-Clark](http://en.wikipedia.org/wiki/Andy_Stanford-Clark)と Arlen Nipper (当時 Arcom Systems、そして Eurotech の CTO)によって作成されました。Nipper 氏によると、MQTT には次の機能が必要と定義した：
+[IBM のAndy Stanford-Clark](https://en.wikipedia.org/wiki/Andy_Stanford-Clark)と Arlen Nipper (当時 Arcom Systems、そして Eurotech の CTO)によって作成されました。Nipper 氏によると、MQTT には次の機能が必要と定義した：
 
 - シンプルで実装が簡単
 - QoSサポート（複雑なデバイスネットワーク環境）

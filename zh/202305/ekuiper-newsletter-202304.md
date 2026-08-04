@@ -69,7 +69,7 @@ File sink 是 eKuiper 的一个重要的 sink 连接器，它可以将数据写�
 
 - Go 语言版本更新到 1.20
 - SQLite 依赖切换到纯 go 实现的版本
-- Redis 依赖 [GitHub - redis/go-redis: Redis Go client](http://github.com/redis/go-redis) 更新到 v9
+- Redis 依赖 [GitHub - redis/go-redis: Redis Go client](https://github.com/redis/go-redis) 更新到 v9
 - 移除默认的 ZeroMQ 依赖
 - 更新其他依赖库
 

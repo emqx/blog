@@ -51,7 +51,7 @@
 
 由于其 `$SYS/#` 系统主题无法订阅，无法获知提供服务的 Broker 类型、具体版本以及当前运行时长。
 
-相关介绍：[http://www.mqtt-dashboard.com/](http://www.mqtt-dashboard.com/)
+相关介绍：[https://www.mqtt-dashboard.com/](https://www.mqtt-dashboard.com/)
 
 
 ## 测试环境
@@ -97,7 +97,7 @@ MQTTX 具备连接导入导出功能，以下是本文测试使用的连接数�
 | EMQX       | [http://broker.emqx.io:8083/mqtt](https://tool.chinaz.com/speedtest/http://broker.emqx.io:8083/mqtt) | 8083      |
 | EMQX(国内) | [http://broker-cn.emqx.io:8083/mqtt](https://tool.chinaz.com/speedtest/broker-cn.emqx.io:8083/mqtt) | 8083      |
 | Eclipse     | [http://mqtt.eclipseprojects.io/mqtt](https://tool.chinaz.com/speedtest/mqtt.eclipseprojects.io/mqtt) | 80        |
-| Mosquitto   | [http://test.mosquitto.org/mqtt](https://tool.chinaz.com/speedtest/test.mosquitto.org/mqtt) | 80        |
+| Mosquitto   | [https://test.mosquitto.org/mqtt](https://tool.chinaz.com/speedtest/test.mosquitto.org/mqtt) | 80        |
 | HiveMQ      | [http://broker.hivemq.com:8000/mqtt](https://tool.chinaz.com/speedtest/broker.hivemq.com:8000/mqtt) | 8000      |
 
 

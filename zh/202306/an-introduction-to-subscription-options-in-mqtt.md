@@ -82,7 +82,7 @@ Retain Handling 这个订阅选项被用来向服务端指示当订阅建立时�
 
 1. 在 Web 浏览器上访问 [MQTTX Web](https://mqttx.app/web-client/)。
 
-2. 创建一个使用 WebSocket 的 MQTT 连接，并且连接免费的 [公共 MQTT 服务器](http://broker.emqx.io/)：
+2. 创建一个使用 WebSocket 的 MQTT 连接，并且连接免费的 [公共 MQTT 服务器](https://www.emqx.com/zh/mqtt/public-mqtt5-broker)：
 
    ![MQTTX](https://assets.emqx.com/images/1eff007c799cd5e9ed9d65c3a2b1d826.png)
 
@@ -98,7 +98,7 @@ Retain Handling 这个订阅选项被用来向服务端指示当订阅建立时�
 
 1. 在 Web 浏览器上访问 [MQTTX Web](https://mqttx.app/web-client/)。
 
-2. 创建一个使用 WebSocket 的 MQTT 连接，并且连接免费的 [公共 MQTT 服务器](http://broker.emqx.io/)。
+2. 创建一个使用 WebSocket 的 MQTT 连接，并且连接免费的 [公共 MQTT 服务器](https://www.emqx.com/zh/mqtt/public-mqtt5-broker)。
 
 3. 连接成功后，我们订阅主题 `mqttx_4299c767/demo`，并且将 No Local 设置为 true：
 
@@ -112,7 +112,7 @@ Retain Handling 这个订阅选项被用来向服务端指示当订阅建立时�
 
 1. 在 Web 浏览器上访问 [MQTTX Web](https://mqttx.app/web-client/)。
 
-2. 创建一个使用 WebSocket 的 MQTT 连接，并且连接免费的 [公共 MQTT 服务器](http://broker.emqx.io/)。
+2. 创建一个使用 WebSocket 的 MQTT 连接，并且连接免费的 [公共 MQTT 服务器](https://www.emqx.com/zh/mqtt/public-mqtt5-broker)。
 
 3. 连接成功后，我们先订阅主题 `mqttx_4299c767/rap0`，并且将 Retain As Published 设置为 false，然后订阅主题 `mqttx_4299c767/rap1`，并且将 Retain As Published 设置 true：
 
@@ -128,7 +128,7 @@ Retain Handling 这个订阅选项被用来向服务端指示当订阅建立时�
 
 1. 在 Web 浏览器上访问 [MQTTX Web](https://mqttx.app/web-client/)。
 
-2. 创建一个使用 WebSocket 的 MQTT 连接，并且连接免费的 [公共 MQTT 服务器](http://broker.emqx.io/)。
+2. 创建一个使用 WebSocket 的 MQTT 连接，并且连接免费的 [公共 MQTT 服务器](https://www.emqx.com/zh/mqtt/public-mqtt5-broker)。
 
 3. 连接成功后，我们先向主题 `mqttx_4299c767/rh` 发布一条保留消息。然后订阅主题 `mqttx_4299c767/rh`，并且将 Retain Handling 设置为 0：
 

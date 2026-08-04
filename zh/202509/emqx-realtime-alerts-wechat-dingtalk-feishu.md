@@ -359,7 +359,7 @@ https://open.feishu.cn/open-apis/bot/v2/hook/{xxxxx}
 
 本章节将通过 EMQX 中提供的踢除客户端功能，触发一个客户端异常离线事件从而测试离线消息推送效果。
 
-1. 使用 [MQTTX](http://mqttx.app/zh) 工具与 EMQX 建立一个 MQTT 连接
+1. 使用 [MQTTX](https://mqttx.app/zh) 工具与 EMQX 建立一个 MQTT 连接
 
 2. 登录 EMQX Dashboard，打开 **监控 → 客户端** 页面
 

@@ -36,7 +36,7 @@ Connect the long leg (anode) of the LED through a resistor to the D1 (GPIO 5) pi
 
 ### **Install ESP8266 Board Support**
 
-In the Arduino IDE, go to "File" > "Preferences" and add the following URL to the "Additional Board Manager URLs": `http://arduino.esp8266.com/stable/package_esp8266com_index.json`. Then, in "Tools" > "Board" > "Boards Manager," search for and install the ESP8266 board.
+In the Arduino IDE, go to "File" > "Preferences" and add the following URL to the "Additional Board Manager URLs": `https://arduino.esp8266.com/stable/package_esp8266com_index.json`. Then, in "Tools" > "Board" > "Boards Manager," search for and install the ESP8266 board.
 
 ### Install the PubSubClient Library
 

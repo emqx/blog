@@ -46,8 +46,8 @@
 
 EMQX 团队提交的两次演讲被 5 月在瑞典斯德哥尔摩举行的 Code BEAM 会议接受，同时，EMQ 还成为了 Code BEAM 的 Gold Sponsor。
 
-- [Saved Companies Hours of Downtime by Being Paranoid ](http://codesync.global/speaker/dmitrii-fedoseev/#934trace-specifications-and-chaos-engineering-advanced-testing-with-snabbkaffe)[![img](https://codesync.global/assets/img/favicon.93e85b1c.png)Dmitrii Fedoseev](http://codesync.global/speaker/dmitrii-fedoseev/#934trace-specifications-and-chaos-engineering-advanced-testing-with-snabbkaffe)
-- [QUICER: Next-Generation Transport Protocol Library for BEAM](http://codesync.global/speaker/william-yang/#937quicer-next-generation-transport-protocol-library-for-beam) [![img](https://codesync.global/assets/img/favicon.93e85b1c.png)William Yang](http://codesync.global/speaker/william-yang/#937quicer-next-generation-transport-protocol-library-for-beam)
+- [Saved Companies Hours of Downtime by Being Paranoid ](https://codesync.global/speaker/dmitrii-fedoseev/#934trace-specifications-and-chaos-engineering-advanced-testing-with-snabbkaffe)[![img](https://codesync.global/assets/img/favicon.93e85b1c.png)Dmitrii Fedoseev](https://codesync.global/speaker/dmitrii-fedoseev/#934trace-specifications-and-chaos-engineering-advanced-testing-with-snabbkaffe)
+- [QUICER: Next-Generation Transport Protocol Library for BEAM](https://codesync.global/speaker/william-yang/#937quicer-next-generation-transport-protocol-library-for-beam) [![img](https://codesync.global/assets/img/favicon.93e85b1c.png)William Yang](https://codesync.global/speaker/william-yang/#937quicer-next-generation-transport-protocol-library-for-beam)
 
 Code BEAM 会议致力于聚集 Erlang 和 Elixir 社区中的优秀人才，共同分享交流 BEAM 语言在生产中的使用，以及如何在电子商务、工程、物联网、游戏、区块链、金融科技、安全、机器学习等领域进行革新。
 
