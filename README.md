@@ -7,6 +7,7 @@
 ## [Product](https://www.emqx.com/en/blog/category/product)
 EMQ products including EMQX, EMQX Cloud, Neuron, NanoMQ, MQTTX and more.
 
+- [EMQ Device Agent: Turning Every IoT Device into an AI Agent](https://www.emqx.com/en/blog/turning-every-iot-device-into-an-ai-agent) ([Edit](https://github.com/emqx/blog/edit/main/en/202608/turning-every-iot-device-into-an-ai-agent.md))
 - [Building an IoT Intelligent Analytics Assistant with EMQX Tables and the OpenAI Agents SDK](https://www.emqx.com/en/blog/iot-analytics-assistant-emqx-tables-openai-agents-sdk) ([Edit](https://github.com/emqx/blog/edit/main/en/202607/iot-analytics-assistant-emqx-tables-openai-agents-sdk.md))
 - [The Secret to Faster IoT Queries: GreptimeDB, TimescaleDB, and InfluxDB Benchmarked](https://www.emqx.com/en/blog/the-secret-to-faster-iot-queries) ([Edit](https://github.com/emqx/blog/edit/main/en/202607/the-secret-to-faster-iot-queries.md))
 - [Using EMQX Tables for MQTT Message Auditing and Historical Tracing](https://www.emqx.com/en/blog/emqx-tables-mqtt-message-auditing) ([Edit](https://github.com/emqx/blog/edit/main/en/202607/emqx-tables-mqtt-message-auditing.md))
