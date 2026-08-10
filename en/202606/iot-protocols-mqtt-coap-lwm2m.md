@@ -16,11 +16,11 @@ Application Layer Protocols are mainly the device communication protocol running
 
 ### **By Application**
 
-From the application perspective of the protocol in the IoT system, we can divide the protocol into Cloud Protocol and Gateway Protocol.
+From an IoT system architecture perspective, communication can be divided into direct device-to-cloud communication and gateway-assisted communication.
 
-Cloud protocols are protocols built on TCP/IP. Data from IoT devices such as sensors and control devices typically need to be transmitted to the cloud. This facilitates connecting with users and integrating with enterprise systems. IoT devices supporting TCP/IP can access the cloud through various application layer protocols, including HTTP, MQTT, CoAP, LwM2M, XMPP, using WiFi, cellular network, and Ethernet.
+Devices that support TCP/IP can connect directly to cloud platforms using application-layer protocols such as HTTP, MQTT, CoAP, LwM2M, and XMPP over networks such as Wi-Fi, cellular, and Ethernet.
 
-Devices that cannot connect to the cloud directly through short-range communication use gateway protocols such as Bluetooth, ZigBee, LoRa, etc. Such devices need to be connected to a gateway, which, after conversion, utilizes the TCP/IP protocol to transmit data to the cloud.
+Devices using short-range or non-IP connectivity technologies such as Bluetooth, Zigbee, and LoRa may connect to a gateway first. The gateway can then forward or convert the device data using IP-based protocols for transmission to the cloud.
 
 ## 1. ZigBee
 
@@ -30,7 +30,7 @@ ZigBee is a mesh-network wireless protocol designed for building and home automa
 - **Low Cost**: The protocol is simple and compact, reducing communication control requirements and hardware costs. Additionally, there are no protocol patent fees.
 - **Low Rate**: ZigBee works at the speed of 20~250 kbps, providing raw data throughput rates of 250 kbps (2.4 GHz), 40 kbps (915 MHz), and 20 kbps (868 MHz) respectively, which meets the application demand of low-speed data transmission.
 - **Short Distance**: The range of communication between adjacent nodes is typically 10 to 100 meters, which is suitable for home and office environments. By increasing the transmitting power, the range can be extended up to 1 to 3 kilometers. Additionally, the transmission distance can be further increased by utilizing relay communication between routing and inter-node communication.
-- **Low Latency**: ZigBee is faster than Bluetooth and WiFi. It takes only 15 ms to switch from sleep to active mode and 30 ms for node connection to the network, saving power. 
+- **Low Latency**: Zigbee supports fast device wake-up and communication, making it suitable for many low-power IoT applications that require responsive device interactions.
 - **High Capacity**: ZigBee offers three networks: star, tree, and mesh. A master node can control up to 254 sub-nodes, and can be managed by upper layer nodes, creating a network of up to 65,000 nodes.
 - **High Security**: ZigBee provides a CRC packet integrity checking function, supports authentication and identification, and adopts the AES-128 encryption algorithm, and each application can flexibly determine its security attribute.
 - **License-free Frequency Band**: Direct Sequence Spread Spectrum for ISM (Industrial Scientific Medicine) bands: 2.4 GHz for global use, 915 MHz for North America, and 868 MHz for Europe.
@@ -41,9 +41,9 @@ ZigBee’s outstanding advantages make it the core wireless networking connectio
 
 ## 2. Matter
 
-[Matter](https://csa-iot.org/all-solutions/matter/) is an open-source smart home standard project initiated jointly by Amazon, Apple, Google, and the ZigBee Alliance. It aims to develop and promote a new connectivity protocol that exempts patent fees, simplifying the development costs for smart home device manufacturers.
+[Matter](https://csa-iot.org/all-solutions/matter/) is an open, IP-based smart home connectivity standard developed by the Connectivity Standards Alliance (CSA), with support from companies including Amazon, Apple, Google, and many other smart home ecosystem participants. It aims to develop and promote a new connectivity protocol that exempts patent fees, simplifying the development costs for smart home device manufacturers.
 
-Matter is an IP-based application layer protocol that relies on underlying protocols such as Ethernet, Wi-Fi, and Thread. It enables local interoperability and internet connectivity, facilitating communication between devices, applications, and cloud services.
+Matter is an IP-based application-layer standard that operates over networking technologies such as Ethernet, Wi-Fi, and Thread. It enables local interoperability and internet connectivity, facilitating communication between devices, applications, and cloud services.
 
 - **Lower Latency and Higher Reliability**: Compared to cloud-to-cloud connections, Matter offers lower latency and higher reliability because it is a locally connected IP-based protocol.
 - **Lower Development Costs**: Building once for all Matter-certified ecosystems significantly improves compatibility among different manufacturers' smart home products, reducing development costs.
@@ -53,26 +53,26 @@ Matter is an IP-based application layer protocol that relies on underlying proto
 
 ## 3. NB-IoT
 
-NB-IoT is a novel cellular technology developed by the 3GPP standardization organization. It is a type of Low Power Wide Area (LPWA) IoT connectivity, primarily designed for connecting terminals with limited bandwidth resources. This technology enables these terminals to collect and exchange data with fewer resources than other technologies, such as GPRS, 3G, and LTE.
+NB-IoT is a Low Power Wide Area (LPWA) cellular technology standardized by 3GPP, primarily designed for connecting devices with limited bandwidth and power resources. This technology enables these terminals to collect and exchange data with fewer resources than other technologies, such as GPRS, 3G, and LTE.
 
 NB-IoT developed rapidly from 2017 to 2018, and many operators around the world have achieved commercial deployment. The low cost, low power consumption, and wide coverage of NB-IoT enable users to implement new scenarios and new applications that traditional cellular networks cannot support.
 
-On July 9, 2020, 3GPP announced the freezing of 5G R16 standard, and NB-IoT was formally incorporated into 5G standard, becoming the core technology of 5G mMTC mass IoT connection scenario.
+NB-IoT was introduced in 3GPP Release 13 and has continued to evolve as part of the 3GPP standards ecosystem for massive IoT connectivity.
 
 - A low-power "sleep" mode (PSM and eDRX) is introduced.
 - The communication quality requirement is reduced, and the terminal design is simplified (half duplex mode, protocol stack simplification, etc.).
 - Two function optimization modes (CP mode and UP mode) are used to simplify the process and reduce the interaction between the terminal and the network.
-- It has ultra-low coverage, covering an enhanced 20dB over GPRS, which is three times the coverage of GPRS.
+- It provides enhanced coverage compared with traditional cellular technologies, helping devices maintain connectivity in indoor and hard-to-reach environments.
 
 Currently, NB-IoT has reached a milestone of connecting hundreds of millions of devices. With the global operators constructing commercial NB-IoT 5G network and providing full coverage, NB-IoT is expected to expand further in various fields such as smart homes, smart agriculture, industrial manufacturing, energy meter, fire and smoke sensing, logistics tracking, financial payment, and many others.
 
 ## 4. LoRa
 
-LoRa Protocol(named from the abbreviation of "Long Range") is a standard protocol for low power, long-range, and wireless WAN (wide area networks).
+LoRa, short for "Long Range," is a low-power, long-range wireless modulation technology, while LoRaWAN is a networking protocol built on top of LoRa.
 
-Compared with other wireless communication protocols (such as ZigBee, Bluetooth, and WIFI), LoRa is characterized by longer propagation distances under the same power consumption, realizing the unification of low power consumption and long distance. It is 3-5 times larger than traditional radio frequency communication under the same power consumption.
+Compared with short-range wireless technologies such as Zigbee and Bluetooth, LoRa is designed to provide long-range communication while maintaining low power consumption, making it well suited to battery-powered IoT devices deployed over large areas.
 
-LoRa has a variety of wireless technologies in IoT applications, which can be either LAN or WAN. The LoRa network comprises four parts: terminal (built-in LoRa module), gateway (or base station), server, and Cloud.
+LoRa and LoRaWAN are widely used in low-power wide-area IoT applications. A typical LoRaWAN network consists of four main components: end devices, gateways, a network server, and application services.
 
 The data transmission rate of LoRaWAN ranges from 0.3 kbps to 37.5 kbps. In order to maximize the battery life of the terminal equipment and the whole network capacity, the LoRaWAN network server controls the data transmission rate and the radio frequency output power of each terminal device through an ADR (Adaptive Data Rate) scheme.
 
@@ -84,13 +84,13 @@ The data transmission rate of LoRaWAN ranges from 0.3 kbps to 37.5 kbps. In orde
 
 LoRa offers high flexibility for applications in smart agriculture, smart cities, [Industrial Internet of Things](https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges) (IIoT), smart environments, smart homes and buildings, smart utilities and metering, as well as smart supply chains and logistics, particularly in rural or indoor settings.
 
-LoRa's easy network setup and strong penetration capabilities enable low-cost connectivity for devices over large areas. Compared to NB-IoT and operator SIM card access, LoRa doesn't require annual card replacement or fees, resulting in lower long-term costs.
+LoRa's easy network setup and strong penetration capabilities enable low-cost connectivity for devices over large areas. Compared with operator-managed cellular connectivity, private LoRaWAN networks can avoid recurring per-device SIM subscription fees, potentially reducing long-term connectivity costs.
 
 ## 5. MQTT
 
 [MQTT (Message Queuing Telemetry Transport)](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) is an OASIS standard messaging protocol for the Internet of Things (IoT). It is designed with an extremely lightweight publish/subscribe messaging model, making it ideal for connecting IoT devices with a small code footprint and minimal network bandwidth and exchanging data in real-time between connected devices and cloud services.
 
-MQTT can not only be used as a gateway to access communication on the device side, but also as a Device-Cloud Communication Protocol. Most gateway protocols such as ZigBee and LoRa can be converted into MQTT Protocol to connect to the Cloud.
+MQTT can be used for both device-to-cloud communication and communication between gateways, applications, and backend services. Data collected through connectivity technologies such as Zigbee and LoRaWAN can be forwarded or converted to MQTT for transmission to cloud platforms.
 
 ![MQTT](https://assets.emqx.com/images/cb9f29b8586d68cff9689e7e3b5867d8.png)
 
@@ -105,7 +105,7 @@ MQTT today is widely used in the IoT, [Industrial IoT](https://www.emqx.com/en/b
 
 MQTT is the standard communication protocol of the IoT platform of top Cloud providers such as [AWS IoT Core](https://www.emqx.com/en/blog/understanding-aws-iot-core), [Azure IoT Hub](https://www.emqx.com/en/blog/azure-iot-hub-4-key-features-use-cases-and-how-to-get-started), and Alibaba Cloud IoT platform. It is also the preferred protocol for gateways and Cloud in various industries.
 
-> Learn more about MQTT protocol: [MQTT Guide 2024](https://www.emqx.com/en/mqtt-guide).
+> Learn more about MQTT protocol: [MQTT Guide 2026](https://www.emqx.com/en/mqtt-guide).
 
 ## 6. CoAP
 
@@ -197,9 +197,32 @@ EMQX is a large-scale distributed MQTT messaging platform that offers "unlimited
     <a href="https://accounts.emqx.com/signup?continue=https://cloud-intl.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">Get Started →</a>
 </section>
 
+
 As a high-performance, scalable [MQTT message broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison), EMQX provides reliable real-time message transmission and device connectivity solutions for IoT applications. With its robust built-in rule engine and data integration capabilities, EMQX can perform real-time data processing, transformation, and routing for massive IoT data. It seamlessly integrates IoT data with various backend databases and analytics tools, enabling enterprises to build IoT platforms and applications with leading competitiveness rapidly.
 
 EMQX not only fully supports MQTT 3.1, 3.1.1, and 5.0 but also supports various mainstream protocols such as STOMP, OCPP, [MQTT-SN](https://www.emqx.com/en/blog/connecting-mqtt-sn-devices-using-emqx), LwM2M/CoAP for connectivity. It provides extensive connection capabilities to handle IoT devices for various scenarios and serves as a unified access platform and management interface for backend IoT management services, reducing the adaptation costs between heterogeneous protocols.
+
+## Frequently Asked Questions About IoT Protocols
+
+### What is the most commonly used IoT protocol?
+
+There is no single protocol that fits every IoT scenario. MQTT is widely used for device-to-cloud messaging because of its lightweight publish/subscribe model, while protocols and technologies such as CoAP, Zigbee, Matter, LoRaWAN, and NB-IoT are suited to different connectivity, device management, and networking requirements.
+
+### What is the difference between MQTT and CoAP?
+
+MQTT uses a publish/subscribe messaging model and typically relies on a broker to route messages between clients. CoAP primarily follows a RESTful request/response model similar to HTTP and is designed for constrained devices and networks. MQTT is often used for scalable device-to-cloud messaging, while CoAP is suitable for lightweight, resource-oriented communication.
+
+### What is the difference between LoRa and LoRaWAN?
+
+LoRa is a low-power, long-range wireless modulation technology, while LoRaWAN is a networking protocol built on top of LoRa that defines how devices communicate with gateways and network servers.
+
+### Is Matter replacing Zigbee?
+
+Not necessarily. Matter is an IP-based smart home standard that can operate over technologies such as Wi-Fi, Ethernet, and Thread, while Zigbee is a separate low-power wireless networking technology. Existing Zigbee devices can also be integrated with Matter ecosystems through compatible bridges.
+
+### How do I choose the right IoT protocol?
+
+The best choice depends on factors such as communication range, bandwidth, power consumption, latency, device constraints, network topology, security requirements, and whether devices require direct cloud connectivity. In many IoT systems, multiple protocols are used together.
 
 ## Conclusion
 
