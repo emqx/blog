@@ -10,9 +10,9 @@ EMQX Tables enables this capability by extending MQTT data beyond the Broker run
 
 This article demonstrates how to build an MQTT data observability platform with EMQX Tables, including device monitoring, message tracing, audit analysis, dashboard visualization, and AI-powered operational insights.
 
-![image.png](https://assets.emqx.com/images/77b311ffa9fc206741e830acb4185544.png)
-
 ## Architecture Design
+
+![image.png](https://assets.emqx.com/images/77b311ffa9fc206741e830acb4185544.png)
 
 In this architecture:
 
