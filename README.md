@@ -799,6 +799,7 @@ Build reliable and efficient connected vehicle platforms with EMQ.
 ## [Industrial IoT](https://www.emqx.com/en/blog/category/iiot)
 Industrial IoT solutions with Unified Namespace and Sparkplug.
 
+- [The Island of Success Paradox: Why Your Industrial Pilot Succeeded but Your Rollout Died](https://www.emqx.com/en/blog/the-island-of-success-paradox) ([Edit](https://github.com/emqx/blog/edit/main/en/202608/the-island-of-success-paradox.md))
 - [OPC UA vs. OPC DA: The Ultimate Guide to Choosing the Right Industrial Protocol](https://www.emqx.com/en/blog/opc-ua-vs-opc-da) ([Edit](https://github.com/emqx/blog/edit/main/en/202607/opc-ua-vs-opc-da.md))
 - [Unified Namespace Reinvents Validation and Change Control for Compliance Reporting](https://www.emqx.com/en/blog/unified-namespace-compliance-reporting) ([Edit](https://github.com/emqx/blog/edit/main/en/202606/unified-namespace-compliance-reporting.md))
 - [Maximizing Lifespan, Minimizing Loss: How a Unified Namespace Powers Predictive Maintenance for a Magnet Manufacturer](https://www.emqx.com/en/blog/unified-namespace-predictive-maintenance) ([Edit](https://github.com/emqx/blog/edit/main/en/202606/unified-namespace-predictive-maintenance.md))
