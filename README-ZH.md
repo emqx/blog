@@ -7,6 +7,7 @@
 ## [Product](https://www.emqx.com/zh/blog/category/product)
 EMQ products including EMQX, EMQX Cloud, Neuron, NanoMQ, MQTTX and more.
 
+- [EMQ Device Agent：让两轮车从「连得上」到「会思考」](https://www.emqx.com/zh/blog/emq-device-agent-smart-two-wheeler) ([Edit](https://github.com/emqx/blog/edit/main/zh/202608/emq-device-agent-smart-two-wheeler.md))
 - [EMQ Device Agent 工业方案：打通工厂智能化最后一公里，释放设备数据价值](https://www.emqx.com/zh/blog/emq-device-agent-industrial-solution) ([Edit](https://github.com/emqx/blog/edit/main/zh/202608/emq-device-agent-industrial-solution.md))
 - [绿色能源 + AI：Device Agent 构建预测性智慧能源管理](https://www.emqx.com/zh/blog/green-energy-ai-device-agent-predictive-energy-management) ([Edit](https://github.com/emqx/blog/edit/main/zh/202607/green-energy-ai-device-agent-predictive-energy-management.md))
 - [Device Agent 0.4.0 发布：新增 A2A 编排、定时任务管理与 Webhook](https://www.emqx.com/zh/blog/device-agent-0-4-0) ([Edit](https://github.com/emqx/blog/edit/main/zh/202607/device-agent-0-4-0.md))
