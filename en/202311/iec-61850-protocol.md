@@ -1,14 +1,20 @@
+IEC 61850 is a key communication standard for substation automation and power utility systems. It defines standardized data models and communication services that enable intelligent electronic devices (IEDs) from different vendors to exchange information interoperably.
+
+In this article, we explain the IEC 61850 protocol architecture, its MMS, GOOSE, and Sampled Values (SV) communication services, the IEC 61850 information model, and how IEC 61850 data can be integrated with MQTT for Industrial IoT and cloud applications.
+
 ## What is IEC 61850
 
-IEC 61850 is an international communication standard protocol that achieves station-wide communication uniformity through a series of standardizations of device functions. Widely used in the power industry, The IEC 61850 standard puts forward the concept of information layering in the substation, both from the logical and physical levels. The substation automation system is divided three levels: The Station Level, The Bay Level and The Process Level. The ACSI is used to exchange data between the levels.
+IEC 61850 is an international communication standard for power utility automation, particularly substation automation systems. It standardizes device functions, data models, and communication services to improve interoperability between intelligent electronic devices (IEDs) from different vendors.
+
+IEC 61850 organizes substation automation into three architectural levels: the Station Level, Bay Level, and Process Level. Its Abstract Communication Service Interface (ACSI) defines standardized communication services independently of the underlying communication protocols.
 
 IEC 61850 summarises the communication services necessary for the transmission of information within a substation, designing an Abstract Communication Service Interface (ACSI) that is independent of network and application layer protocols.
 
 The service implementation of the IEC 61850 standard is divided into three parts: the MMS service, the GOOSE service, and the SV service. 
 
-- The MMS Service is used between the Station Level and the Bay Level of the IEC 61850 standard. It achieves interoperability between different manufacturing devices in a network environment by using an object-oriented modeling approach of the actual devices. 
-- The GOOSE (Generic Object Oriented Substation Event) is a fast messaging mechanism in IEC 61850 for transmitting important real-time signals between IEDs in a substation.
-- The SV (Simpled Values) is used for Sampled Value Transmission at the Process Level, which is the most commonly used service for real-time measurement data in smart substations. 
+- **MMS (Manufacturing Message Specification):** Used primarily for client-server communication between the Station Level and Bay Level. IEC 61850 maps ACSI services to MMS to support standardized access to device data, measurements, status information, and control functions.
+- **GOOSE (Generic Object Oriented Substation Event):** A high-speed event messaging mechanism used for transmitting time-critical status changes, protection signals, and control events between IEDs.
+- **SV (Sampled Values):** Used primarily at the Process Level to transmit sampled measurement data, such as current and voltage values, between process-level equipment and IEDs.
 
 ![IEC 61850](https://assets.emqx.com/images/984d7d5e42ed71afb6790769d4e2ee43.png)
 
@@ -31,7 +37,7 @@ The IEC 61850 standard is divided into several parts, each addressing specific a
 
 ## Features of IEC 61850
 
-### Logical layering of substation automation systems
+### IEC 61850 Architecture: Station, Bay, and Process Levels
 
 ![Logical layering of substation automation systems](https://assets.emqx.com/images/9cd8db70361773c326e5670e4c9d85f6.png)
 
@@ -45,9 +51,9 @@ The IEC 61850 standard summarises an abstract communication service interface AC
 
 ### Data Self-Description
 
-IEC 61850 is a standard for the design of electrical substation automation systems. It's a widely used protocol in the field of power systems and substation automation. In IEC 61850, "Data Self-Description" refers to a fundamental principle of the standard.
+Data self-description is a core characteristic of the IEC 61850 information model. Instead of exchanging only raw values, IEC 61850 represents power system information through standardized logical nodes, data objects, data attributes, functional constraints, and associated metadata.
 
-In IEC 61850, devices in the substation network describe the data they produce and consume using a standardized data model. This data model includes information such as the type of data, its meaning, the unit of measurement, and other relevant metadata. Devices communicate with each other based on this standardized data description, ensuring interoperability between devices from different manufacturers.
+This standardized semantic model allows IEC 61850 devices and applications to understand what exchanged data represents, helping improve interoperability between IEDs and systems from different vendors.
 
 Key aspects of data self-description in IEC 61850 include:
 
@@ -68,7 +74,9 @@ The IEC 61850 standard uses UML modeling techniques to make the information mode
 
 ### Information Model
 
-The information model contains five levels - Server, Logical Device, Logical Node, Data Object, and Data Attribute.
+The IEC 61850 information model follows a hierarchical structure with five main levels:
+
+Server → Logical Device → Logical Node → Data Object → Data Attribute
 
 ![information model](https://assets.emqx.com/images/f0699a37469c5add1ff1680ee54ce0e4.png)
 
@@ -80,9 +88,11 @@ The information model contains five levels - Server, Logical Device, Logical Nod
 
 Between logical nodes - data - data attributes is a tree structure that forms a hierarchical data model. The data attributes are the lowest-level components of this tree model. We can get the value of a specified data attribute through the address mapping hierarchy of IEC 61850 in the address format: `Logical Device/Logical Node$FC$Data Object/Data Attribute`*,* where FC is a standard-defined functional constraint code.
 
-### MMS Specification Description
+### How IEC 61850 Uses MMS
 
-The Manufacture Message Specification (MMS) is located in the application layer and uses a client-server model for communication. It enables interoperability between devices from different manufacturers in a networked environment by means of object-oriented modeling of the actual device. The IEC 61850 standard introduces MMS into the field of power automation by mapping its core ACSI services directly to the MMS specification.
+Manufacturing Message Specification (MMS) is an application-layer messaging standard used by IEC 61850 for client-server communication. IEC 61850 maps selected ACSI services and its object-oriented information model to MMS, allowing clients such as SCADA systems, gateways, and engineering tools to access data and services exposed by IEC 61850 servers.
+
+In a typical IEC 61850 substation architecture, MMS is commonly used for communication between station-level systems and bay-level IEDs.
 
 ![MMS Specification Description](https://assets.emqx.com/images/85ca7b0d33eb24c1b8afcb12893c5fe2.png)
 
@@ -92,9 +102,9 @@ MMS uses the ASN.1 codec specification to define data transmission specification
 
 [MQTT (Message Queuing Telemetry Transport)](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) is a messaging protocol designed for IoT devices and applications using a publish-and-subscribe model that is lightweight, efficient, reliable, and supports real-time communication. MQTT is well suited for resource-constrained environments, especially scenarios requiring efficient power and bandwidth use.
 
-The industry has built an [industrial IoT](https://www.emqx.com/en/blog/industrial-iot-systems) data specification called SparkplugB on top of MQTT 3.1.1, which provides basic data unified modeling capabilities while ensuring flexibility and efficiency. Thanks to the excellent design of the MQTT protocol, SparkPlugB provides good network state awareness and is able to provide strong interoperability for devices and systems.
+The industry has built an [industrial IoT](https://www.emqx.com/en/blog/industrial-iot-systems) data specification called SparkplugB on top of MQTT 3.1.1, which provides basic data unified modeling capabilities while ensuring flexibility and efficiency. Thanks to the excellent design of the MQTT protocol, SparkplugB provides good network state awareness and is able to provide strong interoperability for devices and systems.
 
-By bridging IEC 61850 into MQTT, we can easily integrate the power system model into a Sparkplugb-based IoT system for management.
+By bridging IEC 61850 into MQTT, we can easily integrate the power system model into a SparkplugB-based IoT system for management.
 
 MQTT specializes in sending messages in distributed systems, such as power production workflows, while IEC 61850 can provide interoperability and strong abstraction of substation operations. Combined with the fast, secure, and reliable transmission channel provided by the MQTT protocol, IEC 61850 can directly use the Internet for data transmission, retaining its powerful data modeling capabilities and reliability while expanding its integration capabilities with other third-party applications.
 
@@ -104,7 +114,7 @@ MQTT specializes in sending messages in distributed systems, such as power produ
 
 Neuron's southbound IEC 61850 driver can capture and aggregate IEC 61850 data sources via the MMS protocol, convert to MQTT, and transmit to EMQX MQTT Broker for distribution to various applications.
 
-You can find a detailed guide on bridging IEC 61850 data to MQTT with Neuron and EMQX in this blog: coming soon.
+You can find a detailed guide on bridging IEC 61850 data to MQTT with Neuron and EMQX in this blog: [A Practical Guide to Bridging IEC 61850 Data to MQTT](https://www.emqx.com/en/blog/a-guide-on-bridging-iec-61850-data-to-mqtt).
 
 
 
