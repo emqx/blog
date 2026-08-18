@@ -8,9 +8,7 @@ IEC 61850 is an international communication standard for power utility automatio
 
 IEC 61850 organizes substation automation into three architectural levels: the Station Level, Bay Level, and Process Level. Its Abstract Communication Service Interface (ACSI) defines standardized communication services independently of the underlying communication protocols.
 
-IEC 61850 summarises the communication services necessary for the transmission of information within a substation, designing an Abstract Communication Service Interface (ACSI) that is independent of network and application layer protocols.
-
-The service implementation of the IEC 61850 standard is divided into three parts: the MMS service, the GOOSE service, and the SV service. 
+IEC 61850 communication services include three main types: MMS, GOOSE, and SV.
 
 - **MMS (Manufacturing Message Specification):** Used primarily for client-server communication between the Station Level and Bay Level. IEC 61850 maps ACSI services to MMS to support standardized access to device data, measurements, status information, and control functions.
 - **GOOSE (Generic Object Oriented Substation Event):** A high-speed event messaging mechanism used for transmitting time-critical status changes, protection signals, and control events between IEDs.
