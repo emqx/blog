@@ -7,6 +7,7 @@
 ## [Product](https://www.emqx.com/en/blog/category/product)
 EMQ products including EMQX, EMQX Cloud, Neuron, NanoMQ, MQTTX and more.
 
+- [Scaling Smart Sleep: DeRucci's Move from EMQX Open Source to EMQX Cloud](https://www.emqx.com/en/blog/scaling-smart-sleep) ([Edit](https://github.com/emqx/blog/edit/main/en/202608/scaling-smart-sleep.md))
 - [EMQX Cloud Update: Agents and Fleets Public Beta, EMQX Broker v6, and More](https://www.emqx.com/en/blog/agents-and-fleets-public-beta) ([Edit](https://github.com/emqx/blog/edit/main/en/202608/agents-and-fleets-public-beta.md))
 - [Beyond Fixed Rules: AI-Agentic Residential Energy Storage with EMQ Device Agent](https://www.emqx.com/en/blog/ai-agentic-residential-energy-storage-with-emq-device-agent) ([Edit](https://github.com/emqx/blog/edit/main/en/202608/ai-agentic-residential-energy-storage-with-emq-device-agent.md))
 - [Beyond MQTT Broker Monitoring: Enabling Unified Data Observability with EMQX Tables](https://www.emqx.com/en/blog/mqtt-broker-monitoring) ([Edit](https://github.com/emqx/blog/edit/main/en/202608/mqtt-broker-monitoring.md))
