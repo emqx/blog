@@ -29,10 +29,10 @@ Here are some standard authorization methods used to control access to resources
 3. **Discretionary Access Control (DAC):** DAC is a simple authorization model where each resource owner can decide who gets access to their resources and their access level. This approach allows users to control access to their files and directories with granularity.
 4. **Mandatory Access Control (MAC):** MAC is a more rigid authorization model often used in high-security environments. Access decisions are based on system-level policies defined by administrators, and users cannot change access permissions. This model is typically found in government and military settings.
 5. **Rule-Based Access Control:** This method defines access control rules explicitly using if-then statements. These rules determine which users or entities can access specific resources or actions.
-6. **Attribute-Based Based Access Control (XACML):** XACML is an authorization standard that uses ABAC principles to define access control policies based on attributes. It provides a standardized way to express complex access control decisions.
+6. **Attribute-Based Access Control (XACML):** XACML is an authorization standard that uses ABAC principles to define access control policies based on attributes. It provides a standardized way to express complex access control decisions.
 7. **OAuth:** OAuth is an authorization framework widely used for granting third-party applications limited access to a user's resources on a server without sharing the user's credentials. It is commonly used for authorization in modern web and mobile applications.
 8. **OpenID Connect:** OpenID Connect is an authentication and authorization protocol built on top of OAuth 2.0. It allows applications to authenticate users and obtain basic profile information while delegating user authentication to an identity provider.
-9. J**SON Web Tokens (JWT):** JWT is a compact and self-contained way of representing authorization information between parties as JSON objects. It is commonly used in modern web applications for stateless authentication and authorization.
+9. **JSON Web Tokens (JWT):** JWT is a compact and self-contained way of representing authorization information between parties as JSON objects. It is commonly used in modern web applications for stateless authentication and authorization.
 10. **Biometric Authorization:** This method uses biometric characteristics (e.g., fingerprints, facial recognition) to grant access to specific resources or actions.
 
 It's important to note that the authorization methods used can vary depending on the system or application's specific requirements and security needs. 
@@ -61,7 +61,7 @@ MQTT brokers use ACLs to enforce security and restrict access to specific topics
 2. **Client Identifiers**: [MQTT clients](https://www.emqx.com/en/blog/mqtt-client-tools) connecting to the broker are identified by a unique client identifier. ACLs can use these identifiers to determine which clients can perform specific actions.
 3. **Action Permissions**: MQTT ACLs specify the allowed actions for each client on specific topics. The actions can include PUBLISH (sending messages) and SUBSCRIBE (receiving messages) permissions.
 
-### Example MQTT ACL Rules
+### MQTT ACL Examples for Publish and Subscribe
 
 1. Allow a specific client with the identifier "sensor001" to publish messages on the topic "sensors/temperature":
 
@@ -81,6 +81,24 @@ MQTT brokers use ACLs to enforce security and restrict access to specific topics
    deny client guest123 to subscribe to #
    ```
 
+## FAQ
+
+### What is the difference between MQTT authentication and authorization?
+
+Authentication verifies the identity of an MQTT client, while authorization determines what that client is permitted to do. For example, a client may successfully authenticate with the broker but still be prevented from publishing or subscribing to certain topics by ACL rules.
+
+### Can MQTT ACLs control both publishing and subscribing?
+
+Yes. MQTT ACLs can define separate permissions for publishing messages and subscribing to topics. A client can therefore be allowed to publish to a topic without being allowed to subscribe to it, or vice versa.
+
+### Can MQTT ACLs use topic wildcards?
+
+Yes. ACL rules can use MQTT topic wildcards when supported by the broker. The `+` wildcard matches a single topic level, while `#` matches multiple topic levels. For example, `sensors/#` can represent all topics under the `sensors` hierarchy.
+
+### How do MQTT ACLs improve IoT security?
+
+MQTT ACLs improve IoT security by limiting each client to only the topics and actions it is authorized to access. This helps prevent unauthorized publishing or subscribing and can reduce the impact of compromised devices by restricting their permissions.
+
 ## Conclusion
 
 Access control lists (ACLs) are critical to IoT systems. They provide a way to control resource access and ensure that only authenticated and authorized users can access restricted data. It's important to note that MQTT brokers may have different implementations of ACLs, and the exact syntax and capabilities of the ACL configuration can vary between different MQTT broker software. 
@@ -98,8 +116,7 @@ For more about EMQX, please check our [documentation](https://docs.emqx.com/en/e
 
 <section class="promotion">
     <div>
-        Try EMQX Enterprise for Free
-      <div class="is-size-14 is-text-normal has-text-weight-normal">Connect any device, at any scale, anywhere.</div>
+        Talk to an Expert
     </div>
-    <a href="https://www.emqx.com/en/try?product=enterprise" class="button is-gradient px-5">Get Started →</a>
+    <a href="https://www.emqx.com/en/contact?product=solutions" class="button is-gradient">Contact Us →</a>
 </section>
