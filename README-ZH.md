@@ -634,6 +634,7 @@ Learn MQTT protocol from beginner to advanced, including tutorials, clients, pro
 ## [Integration](https://www.emqx.com/zh/blog/category/integration)
 Integrate MQTT with databases, message queues, cloud services and more.
 
+- [AI 如何走出聊天窗口：用 ESP32、MQTT 与 EMQX Cloud 构建 Physical AI](https://www.emqx.com/zh/blog/esp32-mqtt-emqx-cloud-physical-ai) ([Edit](https://github.com/emqx/blog/edit/main/zh/202609/esp32-mqtt-emqx-cloud-physical-ai.md))
 - [技术实践：在基于 RISC-V 的 ESP32 上运行 MQTT over QUIC](https://www.emqx.com/zh/blog/can-esp32-run-mqtt-over-quic) ([Edit](https://github.com/emqx/blog/edit/main/zh/202510/can-esp32-run-mqtt-over-quic.md))
 - [ESP32 + MCP over MQTT：图像采集 + 多模态理解，为智能体装上「眼睛」](https://www.emqx.com/zh/blog/esp32-and-mcp-over-mqtt-6) ([Edit](https://github.com/emqx/blog/edit/main/zh/202508/esp32-and-mcp-over-mqtt-6.md))
 - [ESP32 + MCP over MQTT：基于大模型打造人格化情感智能体](https://www.emqx.com/zh/blog/esp32-and-mcp-over-mqtt-5) ([Edit](https://github.com/emqx/blog/edit/main/zh/202508/esp32-and-mcp-over-mqtt-5.md))
