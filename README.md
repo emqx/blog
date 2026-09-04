@@ -7,6 +7,7 @@
 ## [Product](https://www.emqx.com/en/blog/category/product)
 EMQ products including EMQX, EMQX Cloud, Neuron, NanoMQ, MQTTX and more.
 
+- [EMQX Enterprise 6.3.0: Run EMQX Your Way with Feature Gates & Hardened Security](https://www.emqx.com/en/blog/emqx-6-3-0-release-notes) ([Edit](https://github.com/emqx/blog/edit/main/en/202609/emqx-6-3-0-release-notes.md))
 - [Introducing EMQX Tables Pro: High-Availability Time-Series Storage for Production IoT](https://www.emqx.com/en/blog/introducing-emqx-tables-pro) ([Edit](https://github.com/emqx/blog/edit/main/en/202609/introducing-emqx-tables-pro.md))
 - [Scaling Smart Sleep: DeRucci's Move from EMQX Open Source to EMQX Cloud](https://www.emqx.com/en/blog/scaling-smart-sleep) ([Edit](https://github.com/emqx/blog/edit/main/en/202608/scaling-smart-sleep.md))
 - [EMQX Cloud Update: Agents and Fleets Public Beta, EMQX Broker v6, and More](https://www.emqx.com/en/blog/agents-and-fleets-public-beta) ([Edit](https://github.com/emqx/blog/edit/main/en/202608/agents-and-fleets-public-beta.md))
