@@ -482,6 +482,7 @@ Learn MQTT protocol from beginner to advanced, including tutorials, clients, pro
 
 - [Mosquitto MQTT Broker: Pros/Cons, Tutorial, and Alternative](https://www.emqx.com/en/blog/mosquitto-mqtt-broker-pros-cons-tutorial-and-modern-alternatives) ([Edit](https://github.com/emqx/blog/edit/main/en/202607/mosquitto-mqtt-broker-pros-cons-tutorial-and-modern-alternatives.md))
 - [Zigbee2MQTT in 2026: Local Smart-Home Control over MQTT](https://www.emqx.com/en/blog/zigbee2mqtt-in-2026) ([Edit](https://github.com/emqx/blog/edit/main/en/202607/zigbee2mqtt-in-2026.md))
+- [MQTT Ports: Common Defaults, Configuration & Security](https://www.emqx.com/en/blog/mqtt-ports) ([Edit](https://github.com/emqx/blog/edit/main/en/202606/mqtt-ports.md))
 - [MQTT vs HTTP: Ultimate IoT Protocol Comparison Guide](https://www.emqx.com/en/blog/mqtt-vs-http) ([Edit](https://github.com/emqx/blog/edit/main/en/202606/mqtt-vs-http.md))
 - [MQTT ACLs: How to Control Access to MQTT Topics](https://www.emqx.com/en/blog/authorization-in-mqtt-using-acls-to-control-access-to-mqtt-messaging) ([Edit](https://github.com/emqx/blog/edit/main/en/202606/authorization-in-mqtt-using-acls-to-control-access-to-mqtt-messaging.md))
 - [What a PV Cooling Paper Reveals About Distributed IoT Control](https://www.emqx.com/en/blog/what-a-pv-cooling-paper-reveals-about-distributed-iot-control) ([Edit](https://github.com/emqx/blog/edit/main/en/202606/what-a-pv-cooling-paper-reveals-about-distributed-iot-control.md))
@@ -540,7 +541,6 @@ Learn MQTT protocol from beginner to advanced, including tutorials, clients, pro
 - [How to Use MQTT in The React Project](https://www.emqx.com/en/blog/how-to-use-mqtt-in-react) ([Edit](https://github.com/emqx/blog/edit/main/en/202402/how-to-use-mqtt-in-react.md))
 - [MicroPython MQTT Tutorial Based on Raspberry Pi](https://www.emqx.com/en/blog/micro-python-mqtt-tutorial-based-on-raspberry-pi) ([Edit](https://github.com/emqx/blog/edit/main/en/202402/micro-python-mqtt-tutorial-based-on-raspberry-pi.md))
 - [MQTT with Java: A Beginner's Guide with Examples & FAQs](https://www.emqx.com/en/blog/how-to-use-mqtt-in-java) ([Edit](https://github.com/emqx/blog/edit/main/en/202401/how-to-use-mqtt-in-java.md))
-- [MQTT Ports: Common Ports and How to Configure and Secure Them](https://www.emqx.com/en/blog/mqtt-ports) ([Edit](https://github.com/emqx/blog/edit/main/en/202312/mqtt-ports.md))
 - [MQTTBox Guide: Features, Demos, and Using Tips](https://www.emqx.com/en/blog/connecting-to-emqx-cloud-with-mqttbox) ([Edit](https://github.com/emqx/blog/edit/main/en/202312/connecting-to-emqx-cloud-with-mqttbox.md))
 - [MQTT Explorer Guide: Features, Demos, and Using Tips](https://www.emqx.com/en/blog/connecting-to-emqx-cloud-with-mqtt-explorer) ([Edit](https://github.com/emqx/blog/edit/main/en/202312/connecting-to-emqx-cloud-with-mqtt-explorer.md))
 - [MQTT Request / Response Explained and Example | MQTT 5 Features](https://www.emqx.com/en/blog/mqtt5-request-response) ([Edit](https://github.com/emqx/blog/edit/main/en/202311/mqtt5-request-response.md))

@@ -1,10 +1,10 @@
-Ports are digital communication endpoints that are needed for sending and receiving data across networks. [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) (Message Queuing Telemetry Transport) is a simple, lightweight messaging protocol based on a publish/subscribe model, which supports communication between resource-constrained network clients.
+[MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) uses different ports depending on the transport and security method. The most common MQTT ports are **1883 for standard, unencrypted MQTT** and **8883 for MQTT over SSL/TLS**. MQTT can also run over WebSocket and QUIC, which use different ports depending on the broker configuration.
 
-MQTT ports facilitate the communication between[ MQTT clients](https://www.emqx.com/en/blog/mqtt-client-tools) and servers. They are the conduits through which MQTT messages travel. Each MQTT port corresponds to a unique service, and several ports can be active simultaneously. We’ll describe the port numbers commonly used in MQTT, how to configure ports, explain the risks involved in exposing MQTT ports, and provide best practices for securing your ports.
+In this guide, we’ll explain the most common **MQTT port numbers**, what each port is used for, how to configure MQTT ports, and how to secure an MQTT broker exposed to the Internet.
 
-## Default MQTT Ports Numbers
+## MQTT Ports: 1883, 8883, 443, and 14567
 
-The following port numbers are available in MQTT brokers by default:
+The MQTT port you should use depends on the transport protocol and whether the connection is encrypted.
 
 ### Standard MQTT Port (1883)
 
@@ -22,6 +22,17 @@ MQTT can also operate over WebSockets, which use port 443 by default. This allow
 
 [QUIC](https://www.emqx.com/en/blog/quic-protocol-the-features-use-cases-and-impact-for-iot-iov) (Quick UDP Internet Connections) is a transport layer protocol designed to improve performance over TCP. It provides multiple streams of data over a single connection and has built-in TLS for security.
 
+## Which MQTT Port Should You Use?
+
+Choose an MQTT port based on your application's transport and security requirements:
+
+- **Port 1883:** Use for standard MQTT over TCP when encryption is not required or is handled by another trusted network layer.
+- **Port 8883:** Use for MQTT over SSL/TLS when MQTT traffic needs to be encrypted.
+- **Port 443:** Use for MQTT over WebSocket when MQTT clients need to communicate through WebSocket-compatible infrastructure.
+- **Port 14567:** Use for MQTT over QUIC when your MQTT broker and clients support QUIC.
+
+For MQTT deployments exposed to the public Internet, **an encrypted connection such as MQTT over TLS is recommended** rather than sending MQTT traffic over an unencrypted connection.
+
 ## Configuring MQTT Ports
 
 Most [MQTT brokers](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) allow you to configure and customize MQTT ports. In each of the following sections, we’ll show how to configure ports in [EMQX](https://www.emqx.com/en/products/emqx).
@@ -33,6 +44,7 @@ Most [MQTT brokers](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-brok
     </div>
     <a href="https://accounts.emqx.com/signup?continue=https://cloud-intl.emqx.com/console/deployments/0?oper=new" class="button is-gradient px-5">Get Started →</a>
 </section>
+
 
 ### Set the Default Port
 
@@ -127,27 +139,49 @@ Hackers can use these ports to send large amounts of data to your network. This 
 
 ## Best Practices for Securing MQTT Ports
 
-In light of the risks we discussed above, it’s critical to secure your MQTT ports. Let's look into a few security best practices.
+Securing an MQTT port requires more than simply changing the default port number. A secure MQTT deployment should use encryption, strong authentication, access control, firewall rules, and network isolation.
 
 ### Use SSL/TLS
 
-Whenever possible, use port 8883 for secure communication over SSL/TLS. The MQTT broker should support encrypted communication over SSL/TLS.
+Use **MQTT over TLS** to encrypt communication between MQTT clients and the broker. Port **8883** is commonly used for MQTT over TLS. Configure the broker with a valid server certificate and private key, and configure clients to verify the broker certificate.
 
 ### Use Strong Authentication
 
 Your authentication measures should include a combination of username and password that is hard to guess. Consider implementing a two-factor authentication system. This adds an additional layer of security, making it harder for hackers to gain unauthorized access to your network.
 
-### Implement Access Control
+### Configure MQTT Access Control
 
 Restrict access to your MQTT ports to only those devices that need it. You can do this by using an access control list (ACL). An ACL is a list of devices that are allowed to access certain resources. By using an ACL, you can ensure that only authorized devices can access your MQTT ports.
 
-### Use a Firewall
+### Restrict MQTT Ports with a Firewall
 
 A firewall monitors and controls incoming and outgoing network traffic based on predefined security rules. It acts as a barrier between your trusted internal network and untrusted external networks. By using a firewall, you can prevent unauthorized access to your MQTT ports.
 
 ### Isolate the MQTT Broker
 
 The MQTT broker is the server that handles the communication between devices. By isolating the MQTT broker, you can reduce the risk of device compromise. You can do this by placing the broker in a separate network segment, away from other business systems and with limited access to public networks.
+
+## MQTT Port FAQ
+
+### What port does MQTT use?
+
+The standard MQTT port is **1883** for MQTT over TCP without encryption. For MQTT over SSL/TLS, port **8883** is commonly used.
+
+### Is MQTT port 1883 secure?
+
+Port 1883 itself does not provide encryption. If MQTT traffic is transmitted over an untrusted network, use MQTT over TLS or another appropriate security layer instead.
+
+### What is MQTT port 8883 used for?
+
+Port **8883** is commonly used for MQTT connections secured with SSL/TLS. It encrypts MQTT traffic between the client and broker.
+
+### Can MQTT use port 443?
+
+Yes. MQTT can run over WebSocket, and port **443** can be used for WebSocket-based MQTT connections, depending on the broker and deployment configuration.
+
+### Should MQTT ports be exposed to the Internet?
+
+Only expose the MQTT listeners that are required by your application. For Internet-facing deployments, use TLS encryption, strong authentication, authorization controls, and firewall rules to reduce the risk of unauthorized access.
 
 ## Improving MQTT Security with EMQX
 
