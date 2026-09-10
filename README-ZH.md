@@ -752,6 +752,7 @@ Real-world IoT solutions and industry applications powered by EMQ.
 ## [AI](https://www.emqx.com/zh/blog/category/ai)
 Empower IoT with AI and LLM capabilities.
 
+- [Microduck × Device Agent：为机器小鸭子增加云端大脑（上）](https://www.emqx.com/zh/blog/microduck-and-device-agent-part-1) ([Edit](https://github.com/emqx/blog/edit/main/zh/202609/microduck-and-device-agent-part-1.md))
 - [A2A over MQTT：依托 EMQX 构建生产级智能体协同网络](https://www.emqx.com/zh/blog/a2a-over-mqtt) ([Edit](https://github.com/emqx/blog/edit/main/zh/202606/a2a-over-mqtt.md))
 - [Device Agent：让每一台设备都拥有一个 AI 智能体](https://www.emqx.com/zh/blog/device-agent-ai) ([Edit](https://github.com/emqx/blog/edit/main/zh/202606/device-agent-ai.md))
 - [Device Agent：设备智能体工程分析与实践](https://www.emqx.com/zh/blog/device-agent-engineering-analysis-and-practice) ([Edit](https://github.com/emqx/blog/edit/main/zh/202605/device-agent-engineering-analysis-and-practice.md))
