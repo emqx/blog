@@ -805,6 +805,7 @@ Build reliable and efficient connected vehicle platforms with EMQ.
 ## [Industrial IoT](https://www.emqx.com/en/blog/category/iiot)
 Industrial IoT solutions with Unified Namespace and Sparkplug.
 
+- [From Connected Machines to Intelligent Operations: Building AI Agents for the Industrial Floor](https://www.emqx.com/en/blog/building-ai-agents-for-the-industrial-floor) ([Edit](https://github.com/emqx/blog/edit/main/en/202609/building-ai-agents-for-the-industrial-floor.md))
 - [The Island of Success Paradox: Why Your Industrial Pilot Succeeded but Your Rollout Died](https://www.emqx.com/en/blog/the-island-of-success-paradox) ([Edit](https://github.com/emqx/blog/edit/main/en/202608/the-island-of-success-paradox.md))
 - [OPC UA vs. OPC DA: The Ultimate Guide to Choosing the Right Industrial Protocol](https://www.emqx.com/en/blog/opc-ua-vs-opc-da) ([Edit](https://github.com/emqx/blog/edit/main/en/202607/opc-ua-vs-opc-da.md))
 - [OPC UA Protocol: Features, How It Works & MQTT](https://www.emqx.com/en/blog/opc-ua-protocol) ([Edit](https://github.com/emqx/blog/edit/main/en/202606/opc-ua-protocol.md))
