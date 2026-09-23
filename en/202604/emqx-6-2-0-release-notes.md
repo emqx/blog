@@ -29,7 +29,7 @@ The A2A Registry follows emerging A2A protocol specifications and serves as the 
 
 In a factory automation system, a Monitor Agent on an edge gateway detects abnormal vibration on motor `line-7`. It discovers a Repair Agent by subscribing to `$a2a/v1/discovery/com.example/factory-a/+`, receives the retained Agent Card, and sends a task request. The Repair Agent streams back status updates, "Analyzing vibration signature…" and "Bearing wear detected", and the Monitor Agent triggers a maintenance ticket. The two agents coordinate without knowing each other's network addresses, with EMQX's authentication and authorization applied uniformly to all agent traffic.
 
-> *Learn more about* [*A2A over MQTT*](https://docs.emqx.com/en/emqx/latest/emqx-ai/a2a-over-mqtt/overview.html)*.*
+> *Learn more about* [*A2A over MQTT*](https://docs.emqx.com/en/emqx/latest/develop/emqx-ai/a2a-over-mqtt/overview.html)*.*
 
 ## Subscription-Level Message Filtering
 
@@ -47,7 +47,7 @@ EMQX evaluates the expression against MQTT 5.0 User Properties on each incoming 
 - **Lower Client-Side Load**: Consumer applications process only the data they need, without writing filter logic themselves.
 - **High-Throughput Efficiency**: Particularly valuable when a single wildcard subscription covers a high-volume topic space but a consumer only needs a narrow subset of messages.
 
-> *Learn more about* [*Subscription Filters*](https://docs.emqx.com/en/emqx/latest/subscription-filter/subscription-filter-concept.html)*.*
+> *Learn more about* [*Subscription Filters*](https://docs.emqx.com/en/emqx/latest/develop/subscription-filter/subscription-filter-concept.html)*.*
 
 ## Dynamic Device Management Without Disruption
 
@@ -59,7 +59,7 @@ Clients can adjust their own keepalive by publishing to `$SETOPTS/mqtt/keepalive
 
 An electric vehicle manufacturer managing over 100,000 connected vehicles can adjust connectivity behavior across the entire fleet without interrupting active sessions. When vehicles enter a low-power parked state, their keepalive intervals are extended via `$SETOPTS/mqtt/keepalive-bulk`, reducing idle network traffic and battery consumption. When the ignition turns back on, the original interval is restored with no reconnection, no session disruption, and no impact to in-flight messages.
 
-> Learn more about [Dynamic Keep Alive Adjustment](https://docs.emqx.com/en/emqx/latest/configuration/mqtt.html#dynamic-keep-alive-adjustment).
+> Learn more about [Dynamic Keep Alive Adjustment](https://docs.emqx.com/en/emqx/latest/guides/configuration/mqtt.html#dynamic-keep-alive-adjustment).
 
 ## New and Enhanced Data Integrations
 
@@ -67,8 +67,8 @@ EMQX 6.2 adds two new integration targets and strengthens existing GCP connector
 
 ### New Integrations:
 
-- [**Azure Event Grid**](https://docs.emqx.com/en/emqx/latest/data-integration/azure-event-grid.html): Bidirectional MQTT bridging between EMQX and Azure's fully managed event-routing service. EMQX connects as an [MQTT client](https://www.emqx.com/en/blog/mqtt-client-tools), supporting both outbound (Sink) and inbound (Source) data flows over TLS with client certificate authentication. Once data reaches Azure Event Grid, it routes naturally to Azure Functions, Event Hubs, Storage, and other Azure services.
-- [**QuasarDB**](https://docs.emqx.com/en/emqx/latest/data-integration/quasardb.html): Direct ingestion of MQTT data into QuasarDB, a high-performance column-oriented time-series database. Messages flow through the rule engine into QuasarDB via ODBC with batch write support, making it a strong fit for high-frequency industrial telemetry workloads that require fast range queries over large time windows.
+- [**Azure Event Grid**](https://docs.emqx.com/en/emqx/latest/develop/data-integration/azure-event-grid.html): Bidirectional MQTT bridging between EMQX and Azure's fully managed event-routing service. EMQX connects as an [MQTT client](https://www.emqx.com/en/blog/mqtt-client-tools), supporting both outbound (Sink) and inbound (Source) data flows over TLS with client certificate authentication. Once data reaches Azure Event Grid, it routes naturally to Azure Functions, Event Hubs, Storage, and other Azure services.
+- [**QuasarDB**](https://docs.emqx.com/en/emqx/latest/develop/data-integration/quasardb.html): Direct ingestion of MQTT data into QuasarDB, a high-performance column-oriented time-series database. Messages flow through the rule engine into QuasarDB via ODBC with batch write support, making it a strong fit for high-frequency industrial telemetry workloads that require fast range queries over large time windows.
 
 ### Integration Enhancements:
 
@@ -86,7 +86,7 @@ EMQX's NATS Gateway allows NATS clients to connect to EMQX and exchange messages
 
 Teams migrating NATS workloads to EMQX no longer need to rework client-side authentication configuration. NATS clients authenticate against EMQX exactly as they would against a native NATS server.
 
-> *Learn more about* [*Configure Authentication*](https://docs.emqx.com/en/emqx/latest/gateway/nats.html#configure-authentication) *in NATS Gateway.*
+> *Learn more about* [*Configure Authentication*](https://docs.emqx.com/en/emqx/latest/develop/gateway/nats.html#configure-authentication) *in NATS Gateway.*
 
 ## Unified Namespace Governance: Topic Structure Enforcement at ACL Check Time
 
@@ -100,7 +100,7 @@ The plugin operates through **models**: JSON documents that define a topic tree,
 
 A manufacturing operator defines a model where valid topics follow the pattern `default/{site_id}/Lines/{line_id}/LineControl`, with `site_id` and `line_id` matched against regex constraints, and the `LineControl` endpoint requiring a payload with `Status` and `Mode` fields. A device publishing to a malformed topic is rejected at ACL check time with `Not Authorized`. A device publishing to a valid topic with a non-conforming payload has its message dropped in publish processing. Either way, the violation appears immediately in `recent_drops` before bad data reaches any downstream system.
 
-> *Learn more about* [*UNS Governance*](https://docs.emqx.com/en/emqx/latest/extensions/plugin-catalog/emqx-unsgov.htm)*.*
+> *Learn more about* [*UNS Governance*](https://docs.emqx.com/en/emqx/latest/guides/extensions/plugin-catalog/6.3/emqx-unsgov.html)*.*
 
 ## Additional Enhancements and Fixes
 
@@ -121,7 +121,7 @@ A manufacturing operator defines a model where valid topics follow the pattern `
 - **SSO OIDC with jq expressions**: the OIDC SSO backend now accepts jq expressions for extracting role and namespace values when auto-provisioning Dashboard users.
 - **API key CLI management**: `emqx ctl api_keys` now supports list, show, add, delete, enable, and disable operations from the command line.
 
-> *For the full list of changes, refer to the* [*Release Notes*](https://docs.emqx.com/en/emqx/latest/changes/changes-ee-v6.html#_6-2-0)*.*
+> *For the full list of changes, refer to the* [*Release Notes*](https://docs.emqx.com/en/emqx/latest/release-notes/changes-ee-v6.html#_6-2-0)*.*
 
 ## Get Started with EMQX Enterprise 6.2
 

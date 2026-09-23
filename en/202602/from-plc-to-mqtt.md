@@ -234,7 +234,7 @@ The example above uses a Modbus simulator for data collection. EMQX Neuron suppo
 Find detailed tutorials here:
 
 - Siemens S7-1200 PLC: [Connecting Siemens S7-1200 PLC to MQTT in 10 Minutes with NeuronEX](https://www.emqx.com/en/blog/connecting-siemens-s7-1200-plc-to-mqtt) 
-- Omron NX1P series PLCs: [Connect to NX1P | Neuron Docs](https://docs.emqx.com/en/neuron/latest/configuration/south-devices/omron-fins/example/nx1p/nx1p.html)
+- Omron NX1P series PLCs: [Connect to NX1P | Neuron Docs](https://docs.emqx.com/en/neuronex/latest/)
 - Siemens S7300 series PLCs: [Siemens S7300 PLC Connection Example | EMQX Neuron Docs](https://docs.emqx.com/en/neuronex/latest/configuration/south-devices/siemens-mpi/s7300.html)
 - Mitsubishi FX series PLCs: [Connect to FX5U | EMQX Neuron Docs](https://docs.emqx.com/en/neuronex/latest/configuration/south-devices/mitsubishi-3e/fx5u.html)
 - Mitsubishi Q series PLCs: [Connect to Q03UDE | EMQX Neuron Docs](https://docs.emqx.com/en/neuronex/latest/configuration/south-devices/mitsubishi-3e/q03ude.html)

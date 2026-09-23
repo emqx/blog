@@ -26,11 +26,11 @@ This allows decision-makers to act on insights instantly.
 
 **Learn more:**
 
-- [LLM-Based Data Processing Overview](https://docs.emqx.com/en/emqx/latest/flow-designer/llm-based-data-processing.html)
+- [LLM-Based Data Processing Overview](https://docs.emqx.com/en/emqx/latest/develop/flow-designer/llm-based-data-processing.html)
 
-- [OpenAI Node Quick Start](https://docs.emqx.com/en/emqx/latest/flow-designer/openai-node-quick-start.html)
+- [OpenAI Node Quick Start](https://docs.emqx.com/en/emqx/latest/develop/flow-designer/openai-node-quick-start.html)
 
-- [Anthropic Node Quick Start](https://docs.emqx.com/en/emqx/latest/flow-designer/anthropic-node-quick-start.html)
+- [Anthropic Node Quick Start](https://docs.emqx.com/en/emqx/latest/develop/flow-designer/anthropic-node-quick-start.html)
 
 ## **Write Rules Using Natural Language in the Rule Engine**
 
@@ -83,7 +83,7 @@ A technician enters: “Trigger an alert if a message from any device under topi
 SELECT *, payload.temperature, payload.vibration FROM "factory/+/status" WHERE payload.temperature > 90 AND payload.vibration > 5
 ```
 
-Learn more about the [AI SQL Generator](https://docs.emqx.com/en/emqx/latest/data-integration/rule-get-started.html#sql-generator).
+Learn more about the [AI SQL Generator](https://docs.emqx.com/en/emqx/latest/develop/data-integration/rule-get-started.html#sql-generator).
 
 ## **New Data Integrations: Apache Doris & Amazon S3 Tables**
 
@@ -95,7 +95,7 @@ EMQX now natively integrates with Apache Doris, a high-speed analytical database
 
 With this setup, you can query your IoT data in real time using standard SQL, and build live dashboards with BI tools like Grafana.
 
-[Apache Doris Integration Guide](https://docs.emqx.com/en/emqx/latest/data-integration/apache-doris.html)
+[Apache Doris Integration Guide](https://docs.emqx.com/en/emqx/latest/develop/data-integration/apache-doris.html)
 
 ### **Store MQTT Data in Amazon S3 Tables with Iceberg Format**
 
@@ -105,7 +105,7 @@ This integration transforms MQTT data into Iceberg-formatted tables and streams 
 
 Once stored, data can be queried through Amazon Athena, EMR, Redshift Spectrum, or third-party tools like Trino, Presto, and Snowflake.
 
-[Amazon S3 Tables Integration Guide](https://docs.emqx.com/en/emqx/latest/data-integration/s3-tables.html)
+[Amazon S3 Tables Integration Guide](https://docs.emqx.com/en/emqx/latest/develop/data-integration/s3-tables.html)
 
 ## **Bridge MQTT and NATS with New Protocol Gateway**
 
@@ -120,7 +120,7 @@ EMQX now includes native gateway support for NATS, a lightweight and high-perfor
 - **Simple Setup**
   Configure via Dashboard, REST API, or config files.
 
-[NATS Protocol Gateway Documentation](https://docs.emqx.com/en/emqx/latest/gateway/nats.html)
+[NATS Protocol Gateway Documentation](https://docs.emqx.com/en/emqx/latest/develop/gateway/nats.html)
 
 ## **Simpler Rule Creation with Namespaced Event Topics**
 
@@ -140,7 +140,7 @@ SELECT * FROM "$events/client/+" WHERE clientid = 'c123'
 
 This makes it easier to match multiple related events (e.g., all client events) using a single wildcard pattern.
 
-Refer to the [Event Topic List](https://docs.emqx.com/en/emqx/latest/data-integration/rule-sql-events-and-fields.html#event-topic-list) for the supported event topics and the mapping between the old and new (namespaced) event topics.
+Refer to the [Event Topic List](https://docs.emqx.com/en/emqx/latest/develop/data-integration/rule-sql-events-and-fields.html#event-topic-list) for the supported event topics and the mapping between the old and new (namespaced) event topics.
 
 ## **Deeper Observability for MQTT Durable Sessions**
 
@@ -156,7 +156,7 @@ New metrics at the API level improve monitoring for:
 
 The LDAP authenticator now supports dynamic retrieval of ACL rules during authentication. MQTT topic-level permissions can be defined as attributes in the LDAP schema and cached per session. This unifies authentication and authorization processes.
 
-Learn more about [LDAP ACL Retrieval](https://docs.emqx.com/en/emqx/latest/access-control/authn/ldap.html#retrieve-acl-rules-from-ldap).
+Learn more about [LDAP ACL Retrieval](https://docs.emqx.com/en/emqx/latest/guides/access-control/authn/ldap.html#retrieve-acl-rules-from-ldap).
 
 ### “Created At” Column in Namespace List
 
@@ -172,7 +172,7 @@ EMQX 5.10.0 fixes an issue affecting replicant node discovery in clusters using 
 
 With this fix, all core nodes are now correctly recognized by replicants, ensuring more consistent clustering and balanced resource usage in static-mode deployments.
 
-This release also includes numerous performance improvements and bug fixes. For the full list of changes, see the [EMQX Enterprise 5.10.0 Release Notes](https://docs.emqx.com/en/emqx/latest/changes/changes-ee-v5.html#_5-10-0).
+This release also includes numerous performance improvements and bug fixes. For the full list of changes, see the [EMQX Enterprise 5.10.0 Release Notes](https://docs.emqx.com/en/emqx/latest/release-notes/changes-ee-v5.html#_5-10-0).
 
 ## **Ready to Explore EMQX 5.10.0?**
 

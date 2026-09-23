@@ -21,9 +21,9 @@ Flow 设计器现已支持 LLM 集成，让您可以使用 OpenAI 和 Anthropic 
 
 **更多信息：**
 
-- [基于 LLM 的数据处理概述](https://docs.emqx.com/zh/emqx/latest/flow-designer/llm-based-data-processing.html)
-- [使用 OpenAI 节点创建 Flow](https://docs.emqx.com/zh/emqx/latest/flow-designer/openai-node-quick-start.html)
-- [使用 Anthropic 节点创建 Flow](https://docs.emqx.com/zh/emqx/latest/flow-designer/anthropic-node-quick-start.html)
+- [基于 LLM 的数据处理概述](https://docs.emqx.com/zh/emqx/latest/develop/flow-designer/llm-based-data-processing.html)
+- [使用 OpenAI 节点创建 Flow](https://docs.emqx.com/zh/emqx/latest/develop/flow-designer/openai-node-quick-start.html)
+- [使用 Anthropic 节点创建 Flow](https://docs.emqx.com/zh/emqx/latest/develop/flow-designer/anthropic-node-quick-start.html)
 
 ## **规则引擎支持自然语言编写**
 
@@ -76,7 +76,7 @@ EMQX Dashboard 中新增 AI SQL 生成器，允许用户以通俗易懂的语言
    SELECT *, payload.temperature, payload.vibration FROM "factory/+/status" WHERE payload.temperature > 90 AND payload.vibration > 5
    ```
 
-    参阅 [AI SQL 生成器](https://docs.emqx.com/zh/emqx/latest/data-integration/rule-get-started.html#sql-生成器)了解更多信息。
+    参阅 [AI SQL 生成器](https://docs.emqx.com/zh/emqx/latest/develop/data-integration/rule-get-started.html#sql-生成器)了解更多信息。
 
 ## **全新数据集成：Apache Doris 与 Amazon S3 Tables**
 
@@ -88,7 +88,7 @@ EMQX 现已原生集成高速分析型数据库 Apache Doris。通过规则引�
 
 您可以使用标准 SQL 实时查询您的 IoT 数据，并使用 Grafana 等 BI 工具构建实时仪表看板。
 
-[Apache Doris 集成指南](https://docs.emqx.com/zh/emqx/latest/data-integration/apache-doris.html)
+[Apache Doris 集成指南](https://docs.emqx.com/zh/emqx/latest/develop/data-integration/apache-doris.html)
 
 ### **使用 Iceberg 格式将 MQTT 数据存储在 Amazon S3 Tables 中**
 
@@ -100,7 +100,7 @@ EMQX 现已原生集成高速分析型数据库 Apache Doris。通过规则引�
 
 存储后，用户可通过 Amazon Athena、EMR、Redshift Spectrum 或 Trino、Presto 和 Snowflake 等第三方工具查询数据。
 
-[Amazon S3 表集成指南](https://docs.emqx.com/zh/emqx/latest/data-integration/s3-tables.html)
+[Amazon S3 表集成指南](https://docs.emqx.com/zh/emqx/latest/develop/data-integration/s3-tables.html)
 
 ## **全新协议网关桥接 MQTT 和 NATS**
 
@@ -115,7 +115,7 @@ EMQX 现原生支持轻量级高性能消息协议 NATS，实现微服务与云�
 - **简单配置**
   支持通过 Dashboard、REST API 或配置文件进行配置。
 
-[NATS 协议网关文档](https://docs.emqx.com/zh/emqx/latest/gateway/nats.html)
+[NATS 协议网关文档](https://docs.emqx.com/zh/emqx/latest/develop/gateway/nats.html)
 
 ## **使用命名空间事件主题简化规则创建**
 
@@ -135,7 +135,7 @@ SELECT * FROM "$events/client/+" WHERE clientid = 'c123'
 
 这使得使用单个通配符模式匹配多个相关事件（例如，所有客户端事件）变得更加容易。
 
-请参阅[事件主题列表](https://docs.emqx.com/zh/emqx/latest/data-integration/rule-sql-events-and-fields.html#客户端事件)以了解支持的客户端事件主题以及旧事件主题与新（命名空间）事件主题之间的映射。
+请参阅[事件主题列表](https://docs.emqx.com/zh/emqx/latest/develop/data-integration/rule-sql-events-and-fields.html客户端事件)以了解支持的客户端事件主题以及旧事件主题与新（命名空间）事件主题之间的映射。
 
 ## **MQTT 会话持久化的可观测性改进**
 
@@ -151,7 +151,7 @@ SELECT * FROM "$events/client/+" WHERE clientid = 'c123'
 
 LDAP 认证器现在支持在客户端认证期间动态检索 ACL 规则。MQTT 主题级权限可以定义为 LDAP 架构中的属性，并按会话进行缓存。这项更新统一了认证和授权流程。
 
-参阅[从 LDAP 获取 ACL 规则](https://docs.emqx.com/zh/emqx/latest/access-control/authn/ldap.html#从-ldap-获取-acl-规则)了解更多信息。
+参阅[从 LDAP 获取 ACL 规则](https://docs.emqx.com/zh/emqx/latest/guides/access-control/authn/ldap.html从-ldap-获取-acl-规则)了解更多信息。
 
 ### 命名空间列表中的「Created At」选项
 
@@ -167,7 +167,7 @@ EMQX 5.10.0 修复了使用 `static` 发现策略的集群中，影响副本节�
 
 通过此修复，复制器现在可以正确识别所有核心节点，确保在静态模式部署中实现更一致的集群和更均衡的资源使用。
 
-此版本还包含多项性能改进和错误修复。完整变更列表，请参阅 [EMQX 企业版发布历史](https://docs.emqx.com/zh/emqx/latest/changes/changes-ee-v5.html#_5-10-0)。
+此版本还包含多项性能改进和错误修复。完整变更列表，请参阅 [EMQX 企业版发布历史](https://docs.emqx.com/zh/emqx/latest/release-notes/changes-ee-v5.html#_5-10-0)。
 
 ## **开启 EMQX 5.10.0 探索之旅**
 

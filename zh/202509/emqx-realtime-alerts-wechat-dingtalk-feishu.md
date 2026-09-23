@@ -58,7 +58,7 @@ EMQX 规则引擎的主要功能包括：
 - **数据转发**：支持将处理后的数据发送到 Kafka、数据库、HTTP 等目标。
 - **可视化配置**：通过 Dashboard 图形界面完成配置，无需额外开发。
 
-详细功能介绍和使用方法请参考：[规则引擎 | EMQX 文档](https://docs.emqx.com/zh/emqx/latest/data-integration/rules.html) 
+详细功能介绍和使用方法请参考：[规则引擎 | EMQX 文档](https://docs.emqx.com/zh/emqx/latest/develop/data-integration/rules.html) 
 
 ### 客户端事件
 
@@ -68,7 +68,7 @@ EMQX 规则引擎事件是指在 EMQX 运行过程中，系统或客户端产生
 
 通过事件下文信息，可用于实现多样化的业务需求。例如：对消息进行过滤与转发，只将符合特定条件的消息发送到指定的下游系统；对设备状态数据进行实时分析，及时发现异常并触发告警；将关键事件记录存储到数据库中，为后续的数据分析和业务复盘提供数据支持等。
 
-了解 EMQX 所支持的全部事件类型以及各事件对应的上下文信息，请参考：[SQL 数据源和字段 | EMQX 文档](https://docs.emqx.com/zh/emqx/latest/data-integration/rule-sql-events-and-fields.html#客户端事件) 
+了解 EMQX 所支持的全部事件类型以及各事件对应的上下文信息，请参考：[SQL 数据源和字段 | EMQX 文档](https://docs.emqx.com/zh/emqx/latest/develop/data-integration/rule-sql-events-and-fields.html客户端事件) 
 
 ### 断开连接事件
 
@@ -87,7 +87,7 @@ EMQX 规则引擎事件是指在 EMQX 运行过程中，系统或客户端产生
 | disconn_props   | DISCONNECT Properties (仅适用于 MQTT 5.0)                    |
 | timestamp       | 事件触发时间戳 (单位：毫秒)                                  |
 | node            | 事件触发所在 EMQX 节点名称                                   |
-| client_attrs    | [客户端属性](https://docs.emqx.com/zh/emqx/latest/client-attributes/client-attributes.html) |
+| client_attrs    | [客户端属性](https://docs.emqx.com/zh/emqx/latest/develop/client-attributes/client-attributes.html) |
 
 **完整上下文信息如下：**
 
@@ -136,7 +136,7 @@ EMQX 规则引擎事件是指在 EMQX 运行过程中，系统或客户端产生
 
 在本节中，我们将演示如何在 EMQX 规则引擎中创建一条规则来处理客户端断开连接的离线事件。
 
-首先，我们会通过规则 SQL 筛选出异常的离线记录；然后，利用 HTTP 服务数据集成功能，[将 MQTT 数据发送到 HTTP 服务](https://docs.emqx.com/zh/emqx/latest/data-integration/data-bridge-webhook.html)；处理后的信息会被推送到各个企业系统中，实现实时告警。
+首先，我们会通过规则 SQL 筛选出异常的离线记录；然后，利用 HTTP 服务数据集成功能，[将 MQTT 数据发送到 HTTP 服务](https://docs.emqx.com/zh/emqx/latest/develop/data-integration/data-bridge-webhook.html)；处理后的信息会被推送到各个企业系统中，实现实时告警。
 
 **具体步骤如下：**
 

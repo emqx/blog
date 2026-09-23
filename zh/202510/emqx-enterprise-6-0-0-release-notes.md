@@ -23,7 +23,7 @@ EMQX 6.0 专为动态环境构建，为智慧城市、[工业物联网](https://
 
 在智能农业系统中，发布到 `farm/+/sensors` 的土壤传感器数据被存储在消息队列中。监控应用程序订阅 `$q/farm/+/sensors` 以检索所有读数，包括离线期间的数据。启用「最后值语义」后，每个设备仅保留最新的传感器数据，从而简化灌溉决策的数据处理。
 
-了解更多信息，请参阅[**消息队列**](https://docs.emqx.com/zh/emqx/latest/message-queue/message-queue-concept.html)**。**
+了解更多信息，请参阅[**消息队列**](https://docs.emqx.com/zh/emqx/latest/develop/message-queue/message-queue-concept.html)**。**
 
 ## **命名空间角色：**多租户管理的新突破
 
@@ -49,7 +49,7 @@ EMQX 6.0 专为动态环境构建，为智慧城市、[工业物联网](https://
 
 管理员还可为不同租户设置资源配额（如消息吞吐量），确保资源公平分配，防止单一团队过度占用系统资源。
 
-具体命名空间角色创建方法，请参阅 [*创建命名空间角色*](https://docs.emqx.com/zh/emqx/latest/dashboard/system.html#命名空间角色)。
+具体命名空间角色创建方法，请参阅 [*创建命名空间角色*](https://docs.emqx.com/zh/emqx/latest/guides/dashboard/system.html命名空间角色)。
 
 ## **优化持久化存储，全面提升性能**
 
@@ -71,7 +71,7 @@ EMQX 6.0 专为动态环境构建，为智慧城市、[工业物联网](https://
 
 ## **全新增强的数据集成能力**
 
-EMQX 6.0 进一步扩展了数据集成能力，新增支持 [AWS AlloyDB](https://docs.emqx.com/zh/emqx/latest/data-integration/alloydb.html)、[CockroachDB](https://docs.emqx.com/zh/emqx/latest/data-integration/cockroachdb.html)、[AWS Redshift](https://docs.emqx.com/zh/emqx/latest/data-integration/redshift.html) 以及 [BigQuery](https://docs.emqx.com/zh/emqx/latest/data-integration/bigquery.html) 四大数据平台，并对 Snowflake、RocketMQ、S3 Tables 和 RabbitMQ 等现有集成进行了全面增强。
+EMQX 6.0 进一步扩展了数据集成能力，新增支持 [AWS AlloyDB](https://docs.emqx.com/zh/emqx/latest/develop/data-integration/alloydb.html)、[CockroachDB](https://docs.emqx.com/zh/emqx/latest/develop/data-integration/cockroachdb.html)、[AWS Redshift](https://docs.emqx.com/zh/emqx/latest/develop/data-integration/redshift.html) 以及 [BigQuery](https://docs.emqx.com/zh/emqx/latest/develop/data-integration/bigquery.html) 四大数据平台，并对 Snowflake、RocketMQ、S3 Tables 和 RabbitMQ 等现有集成进行了全面增强。
 
 ### **新增集成支持**
 
@@ -95,7 +95,7 @@ EMQX 6.0 进一步扩展了数据集成能力，新增支持 [AWS AlloyDB](https
 - **新增 API 端点**：通过专用 API 获取 AI 服务商所有可用模型，简化了集成与模型选择。
 - **传输配置优化**：支持配置 AI Completion Providers 的连接超时与最大连接数参数，有效提升系统性能与可靠性。
 
-在 Flow 设计器中通过[全新的 Gemini 节点](https://docs.emqx.com/zh/emqx/latest/flow-designer/gemini-node-quick-start.html)，探索基于大语言模型的数据处理实践。
+在 Flow 设计器中通过[全新的 Gemini 节点](https://docs.emqx.com/zh/emqx/latest/develop/flow-designer/gemini-node-quick-start.html)，探索基于大语言模型的数据处理实践。
 
 ## **其他重要升级**
 

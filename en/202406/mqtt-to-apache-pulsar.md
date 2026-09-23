@@ -65,7 +65,7 @@ Create connectors and actions through the EMQX dashboard. Configure some necessa
 
 ![Create Pulsar Sink 2](https://assets.emqx.com/images/36765ca3f51998b46c54c4db0da78060.png)
 
-Please refer to the documentation for specific operating steps: [Stream MQTT Data into Apache Pulsar | EMQX Enterprise Docs](https://docs.emqx.com/en/enterprise/latest/data-integration/data-bridge-pulsar.html) 
+Please refer to the documentation for specific operating steps: [Stream MQTT Data into Apache Pulsar | EMQX Enterprise Docs](https://docs.emqx.com/en/emqx/latest/develop/data-integration/data-bridge-pulsar.html) 
 
 ### Forward MQTT Messages to Pulsar
 

@@ -97,7 +97,7 @@ docker run -d --name emqx-enterprise -p 1883:1883 -p 8083:8083 -p 8084:8084 -p 8
   WHERE payload.speed > '120'
   ```
 
-- **测试和调试 SQL**：编写完 SQL 后，在 SQL 选项卡中点击“开始测试”按钮，调试 SQL 语法。您可以输入模拟数据进行测试，调整和优化 SQL 语句。关于编写 SQL 的详细指南，请参考 [EMQX 文档](https://docs.emqx.com/zh/emqx/latest/data-integration/rule-sql-syntax.html)。测试完成后，我们将设置 HTTP 和 PostgreSQL 环境，为该规则添加两个动作。
+- **测试和调试 SQL**：编写完 SQL 后，在 SQL 选项卡中点击“开始测试”按钮，调试 SQL 语法。您可以输入模拟数据进行测试，调整和优化 SQL 语句。关于编写 SQL 的详细指南，请参考 [EMQX 文档](https://docs.emqx.com/zh/emqx/latest/develop/data-integration/rule-sql-syntax.html)。测试完成后，我们将设置 HTTP 和 PostgreSQL 环境，为该规则添加两个动作。
 
 ### 设置 HTTP 服务
 

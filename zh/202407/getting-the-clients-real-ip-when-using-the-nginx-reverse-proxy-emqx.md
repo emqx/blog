@@ -77,9 +77,9 @@ stream {
 nginx -s reload
 ```
 
-然后，我们还需要修改 EMQX（参考 [此处](https://docs.emqx.com/zh/emqx/latest/deploy/install.html) 进行安装）配置来启用对 PROXY 协议头的解析。
+然后，我们还需要修改 EMQX（参考 [此处](https://docs.emqx.com/zh/emqx/latest/get-started/deploy/install.html) 进行安装）配置来启用对 PROXY 协议头的解析。
 
-以 5.7 版本为例，我们只需要在浏览器中打开 [Dashboard](https://docs.emqx.com/zh/emqx/latest/dashboard/introduction.html)，前往 “管理” > “集群配置” > “MQTT 配置”，点击默认的 TCP 监听器（或其他您想要更改的监听器）进入配置页面，将 “代理协议” 设置为 `true` 即可：
+以 5.7 版本为例，我们只需要在浏览器中打开 [Dashboard](https://docs.emqx.com/zh/emqx/latest/guides/dashboard/introduction.html)，前往 “管理” > “集群配置” > “MQTT 配置”，点击默认的 TCP 监听器（或其他您想要更改的监听器）进入配置页面，将 “代理协议” 设置为 `true` 即可：
 
 ![01dashboardproxyprotocol.png](https://assets.emqx.com/images/c754b3844bfae44ff4e48d12542ee5b0.png)
 

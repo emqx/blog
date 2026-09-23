@@ -52,7 +52,7 @@ An example of the corresponding data is shown below:
 
 [EMQX Enterprise](https://www.emqx.com/en/products/emqx) is a robust [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) platform designed for enterprise use, offering highly reliable and high-performance real-time data access, along with data processing and integration capabilities.
 
-For installation instructions, please refer to [this guide](https://docs.emqx.com/en/enterprise/latest/deploy/install.html).
+For installation instructions, please refer to [this guide](https://docs.emqx.com/en/emqx/latest/get-started/deploy/install.html).
 
 ## Preparing MQTTX Simulation Data
 
@@ -307,13 +307,13 @@ With these preparations complete, the next step is to configure the rule engine 
 
 ## Configuring Data Integration on EMQX
 
-As of EMQX Enterprise v5.7.1, native Snowflake data integration is still under development. To write data, you need to use EMQX’s [HTTP Action](https://docs.emqx.com/en/enterprise/v5.7/data-integration/data-bridge-webhook.html) combined with the [Snowflake REST API](https://docs.snowflake.com/en/developer-guide/sql-api/index).
+As of EMQX Enterprise v5.7.1, native Snowflake data integration is still under development. To write data, you need to use EMQX’s [HTTP Action](https://docs.emqx.com/en/emqx/v5.7/data-integration/data-bridge-webhook.html) combined with the [Snowflake REST API](https://docs.snowflake.com/en/developer-guide/sql-api/index).
 
 ![Diagram illustrating the setup of EMQX HTTP Action with Snowflake REST API](https://assets.emqx.com/images/cbdb29e5a8c9790204bee648429e3354.png)
 
 - Open and log in to the EMQX Dashboard at [http://localhost:18083](http://localhost:18083/) using a browser. The default username and password are admin and public.
 - Navigate to the **Integration → Rules** page, and click the + **Create** button in the upper right corner to enter the rule creation page.
-- Use the following rule SQL to receive messages from the virtual plants. You can also modify the SQL to utilize EMQX’s [built-in SQL functions](https://docs.emqx.com/en/enterprise/v5.7/data-integration/rule-sql-builtin-functions.html):
+- Use the following rule SQL to receive messages from the virtual plants. You can also modify the SQL to utilize EMQX’s [built-in SQL functions](https://docs.emqx.com/en/emqx/v5.7/data-integration/rule-sql-builtin-functions.html):
   
   ```sql
   SELECT

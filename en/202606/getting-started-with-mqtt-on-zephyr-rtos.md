@@ -100,7 +100,7 @@ Taking **macOS** as an example:
 ./emqx/bin/emqx stop
 ```
 
-> Note: For installation commands corresponding to other Linux distributions, please refer to the [EMQX Official Installation Guide](https://docs.emqx.com/en/emqx/latest/deploy/install.html).
+> Note: For installation commands corresponding to other Linux distributions, please refer to the [EMQX Official Installation Guide](https://docs.emqx.com/en/emqx/latest/get-started/deploy/install.html).
 
 #### **Method 3: EMQX Cloud Fully Managed Service**
 
@@ -587,7 +587,7 @@ This chapter utilizes the **TAP+TLS** mode. It requires a Linux host, a containe
 
 ### 5.1 Security Prerequisites: Obtaining SSL/TLS Certificates
 
-According to the official [EMQX TLS certificate documentation](https://docs.emqx.com/en/emqx/latest/network/tls-certificate.html), there are three primary ways to acquire SSL/TLS certificates:
+According to the official [EMQX TLS certificate documentation](https://docs.emqx.com/en/emqx/latest/guides/network/tls-certificate.html), there are three primary ways to acquire SSL/TLS certificates:
 
 1. **Self-Signed Certificates:** Generated independently by creating your own Root CA. This method poses security risks and is strictly recommended for local testing or controlled environments.
 2. **Trusted CA Certificates:** Issued by recognized Certificate Authorities (e.g., Let's Encrypt, DigiCert), which is mandatory for production environments.

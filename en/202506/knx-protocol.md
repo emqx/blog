@@ -99,9 +99,9 @@ Industry 4.0 is driving a surge in demand for intelligent, automated, and digiti
 
 ### NeuronEX for Converting KNX into MQTT
 
-NeuronEX is an Industrial Edge Data Hub that focuses on real-time industrial data access and intelligent analysis, enabling you to swiftly gain business insights and enhance operational efficiency and sustainability. With minimal resource utilization, NeuronEX can communicate with diverse industrial devices through standard or dedicated protocols, realizing multiple device connections to the [Industrial IoT platform](https://www.emqx.com/en/blog/iiot-platform-key-components-and-5-notable-solutions). From the very beginning, NeuronEX has supported MQTT as one of its communication protocols. The NeuronEX [MQTT plugin](https://docs.emqx.com/en/neuron/latest/configuration/north-apps/mqtt/overview.html) allows users to quickly build IoT applications that use MQTT communication between devices and the cloud.
+NeuronEX is an Industrial Edge Data Hub that focuses on real-time industrial data access and intelligent analysis, enabling you to swiftly gain business insights and enhance operational efficiency and sustainability. With minimal resource utilization, NeuronEX can communicate with diverse industrial devices through standard or dedicated protocols, realizing multiple device connections to the [Industrial IoT platform](https://www.emqx.com/en/blog/iiot-platform-key-components-and-5-notable-solutions). From the very beginning, NeuronEX has supported MQTT as one of its communication protocols. The NeuronEX [MQTT plugin](https://docs.emqx.com/en/neuronex/latest/) allows users to quickly build IoT applications that use MQTT communication between devices and the cloud.
 
-Since version 2.1.0, NeuronEX provides the [KNX plugin](https://docs.emqx.com/en/neuron/latest/configuration/south-devices/knxnet-ip/knxnet-ip.html), which supports communication with KNX IP couplers using the KNXnet/IP protocol over UDP.
+Since version 2.1.0, NeuronEX provides the [KNX plugin](https://docs.emqx.com/en/neuronex/latest/), which supports communication with KNX IP couplers using the KNXnet/IP protocol over UDP.
 
 ### EMQX for Handling MQTT Messages
 

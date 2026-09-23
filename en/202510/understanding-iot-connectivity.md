@@ -39,7 +39,7 @@ By offloading the complexities of connectivity to EMQX, you can focus on what ma
 > For a detailed tutorial on EMQX quickstart, please refer to:
 >
 > - Managed service: [Get Started with EMQX Platform | EMQX Platform Docs](https://docs.emqx.com/en/cloud/latest/quick_start/introduction.html) 
-> - On-premises: [Get Started with EMQX | EMQX Docs](https://docs.emqx.com/en/emqx/latest/getting-started/getting-started.html) 
+> - On-premises: [Get Started with EMQX | EMQX Docs](https://docs.emqx.com/en/emqx/latest/get-started/getting-started.html) 
 
 ## **FAQ**
 

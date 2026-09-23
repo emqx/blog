@@ -151,7 +151,7 @@ This removes the previous queue and its stored messages.
 
    > The "Queue Key Expression" defines how EMQX extracts a key from each message for deduplication in Last-Value Queues. When configured, a new message with the same queue key will overwrite any previous, unconsumed message with that key in the queue.
    >
-   > This field supports configuration using [Variform expressions](https://docs.emqx.com/en/emqx/latest/configuration/configuration.html#variform-expressions). In this quick start, we use `message.from`, which extracts the key from the client ID of the message publisher.
+   > This field supports configuration using [Variform expressions](https://docs.emqx.com/en/emqx/latest/guides/configuration/configuration.html#variform-expressions). In this quick start, we use `message.from`, which extracts the key from the client ID of the message publisher.
 
 3. Click **Create**.
 
@@ -275,8 +275,8 @@ Message Queues in EMQX extend native MQTT capabilities with features commonly fo
 
 For more details, refer to the official documentation:
 
-- [Message Queue Feature Overview](https://docs.emqx.com/en/emqx/latest/message-queue/message-queue-concept.html)
-- [Message Queue User Guide](https://docs.emqx.com/en/emqx/latest/message-queue/message-queue-task.html)
+- [Message Queue Feature Overview](https://docs.emqx.com/en/emqx/latest/develop/message-queue/message-queue-concept.html)
+- [Message Queue User Guide](https://docs.emqx.com/en/emqx/latest/develop/message-queue/message-queue-task.html)
 
 
 

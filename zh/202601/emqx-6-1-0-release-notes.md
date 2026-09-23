@@ -48,7 +48,7 @@ MQTT 消息流会在其生命周期内，自动收集所有匹配指定主题过
 
 所有这些消费者都可以并行工作，且共享同一份可靠的数据源。
 
-了解更多关于 [MQTT 消息流](https://docs.emqx.com/zh/emqx/latest/mqtt-stream/mqtt-stream-concept.html) 的信息。
+了解更多关于 [MQTT 消息流](https://docs.emqx.com/zh/emqx/latest/develop/mqtt-stream/mqtt-stream-concept.html) 的信息。
 
 ## 增强的命名空间功能，构建更成熟的多租户体系
 
@@ -94,8 +94,8 @@ EMQX 6.1.0 在数据集成方面持续扩展，对现代时序数据库和安全
 
 ### **新增集成：**
 
-- [**AWS Timestream for InfluxDB**](https://docs.emqx.com/zh/emqx/latest/data-integration/timestream-for-influxdb.html)**：**支持 EMQX 使用 InfluxDB Line Protocol 直接将 MQTT 数据写入 AWS 托管的、兼容 InfluxDB 的时序存储中，实现无需自建数据库的高性能时序数据存储与分析。
-- [**EMQX Tables**](https://docs.emqx.com/en/emqx/latest/data-integration/emqx-tables.html)**：**支持将 [EMQX Enterprise](https://www.emqx.com/zh/products/emqx) 中的数据写入 [EMQX Cloud](https://www.emqx.com/zh/cloud) 中的 EMQX Tables，实现集中式的时序数据存储与查询分析。
+- [**AWS Timestream for InfluxDB**](https://docs.emqx.com/zh/emqx/latest/develop/data-integration/timestream-for-influxdb.html)**：**支持 EMQX 使用 InfluxDB Line Protocol 直接将 MQTT 数据写入 AWS 托管的、兼容 InfluxDB 的时序存储中，实现无需自建数据库的高性能时序数据存储与分析。
+- [**EMQX Tables**](https://docs.emqx.com/en/emqx/latest/develop/data-integration/emqx-tables.html)**：**支持将 [EMQX Enterprise](https://www.emqx.com/zh/products/emqx) 中的数据写入 [EMQX Cloud](https://www.emqx.com/zh/cloud) 中的 EMQX Tables，实现集中式的时序数据存储与查询分析。
 
 ### **集成增强：**
 
@@ -125,7 +125,7 @@ EMQX 6.1.0 在数据集成方面持续扩展，对现代时序数据库和安全
 
   通过样式与交互优化，统一 EMQX Dashboard 与 Cloud Console 的使用体验。
 
-更多详细信息，请参阅 [Release Notes](https://docs.emqx.com/zh/emqx/latest/changes/changes-ee-v6.html)。
+更多详细信息，请参阅 [Release Notes](https://docs.emqx.com/zh/emqx/latest/release-notes/changes-ee-v6.html)。
 
 ## 开始体验 EMQX Enterprise 6.1.0
 

@@ -12,7 +12,7 @@ EMQX 内置的会话持久化（Durable Session）功能提供了强大的持久
 
 与内存存储相比，将 MQTT 消息存储在共享的、复制的持久存储中，可以降低在线和离线会话的内存使用量，支持更大规模的会话和消息处理。会话持久化功能还实现了有效的故障转移和恢复机制，确保服务的连续性和高可用性，从而提高系统的可靠性。
 
-[查看文档](https://docs.emqx.com/zh/enterprise/v5.7/durability/durability_introduction.html)
+[查看文档](https://docs.emqx.com/zh/emqx/v5.7/durability/durability_introduction.html)
 
 ## 消息 Schema 验证
 
@@ -29,7 +29,7 @@ Schema 验证可使用 JSON Schema、Protobuf 和 Avro 等多种格式的模式�
 - **统一的数据模型**：确保整个团队和项目中使用统一的数据模型，减少数据不一致和错误。
 - **重用和共享**：允许团队成员重用和共享 Schema，可以提高团队成员之间的协作效率，减少重复工作和错误。
 
-[查看文档](https://docs.emqx.com/zh/enterprise/v5.7/data-integration/schema-validation.html)
+[查看文档](https://docs.emqx.com/zh/emqx/v5.7/data-integration/schema-validation.html)
 
 ## **规则支持调试与追踪**
 
@@ -43,7 +43,7 @@ Schema 验证可使用 JSON Schema、Protobuf 和 Avro 等多种格式的模式�
 
 相较于此前的 SQL 测试，规则 DEBUG 与追踪功能能够验证整个规则是否按预期工作，快速排查并解决存在的问题。这不仅加快了开发速度，还确保了规则在实际运行时能够如期执行，避免在真实环境中出现故障。
 
-[查看文档 ](https://docs.emqx.com/zh/enterprise/v5.7/data-integration/rule-get-started.html#测试规则)
+[查看文档 ](https://docs.emqx.com/zh/emqx/v5.7/data-integration/rule-get-started.html测试规则)
 
 ## 规则动作支持快速输入变量
 
@@ -60,7 +60,7 @@ Schema 验证可使用 JSON Schema、Protobuf 和 Avro 等多种格式的模式�
 1. **支持指定规则 ID 跟踪规则执行结果**：精准地跟踪和调试某一特定规则的执行过程，日志输出将包含规则 SQL 的执行结果，以及与规则中添加的所有动作的执行过程日志，以便快速定位和排查问题。
 2. **支持设置日志追踪输出格式为 JSON**：更便于自动化日志处理和分析，提升数据处理效率。
 
-[查看文档](https://docs.emqx.com/zh/enterprise/v5.7/observability/tracer.html#追踪指定规则)
+[查看文档](https://docs.emqx.com/zh/emqx/v5.7/observability/tracer.html追踪指定规则)
 
 ## 客户端属性
 
@@ -90,7 +90,7 @@ FROM mqtt_acl
 
 相较于直接使用客户端 ID 等静态属性，客户端属性能够更灵活的用在各类业务场景中，并简化开发流程，增强开发工作的适应性和效率。
 
-[查看文档](https://docs.emqx.com/zh/enterprise/v5.7/client-attributes/client-attributes.html)
+[查看文档](https://docs.emqx.com/zh/emqx/v5.7/client-attributes/client-attributes.html)
 
 ## JWT 认证到期断开客户端连接
 
@@ -102,7 +102,7 @@ JWT 规范中带有过期时间属性，在签发 Token 时允许声明一个过
 
 ![客户端认证](https://assets.emqx.com/images/c116403c926ec36bf327d5762912a581.png)
 
-[查看文档](https://docs.emqx.com/zh/enterprise/v5.7/access-control/authn/jwt.html)
+[查看文档](https://docs.emqx.com/zh/emqx/v5.7/access-control/authn/jwt.html)
 
 ## 插件开发支持热配置与自定义 UI
 
@@ -114,7 +114,7 @@ JWT 规范中带有过期时间属性，在签发 Token 时允许声明一个过
 
 这是插件中可选的功能，用户仍然可以使用纯后端进行开发。
 
-[查看文档](https://docs.emqx.com/zh/enterprise/v5.7/extensions/plugins.html#为插件编写-config-schema-可选)
+[查看文档](https://docs.emqx.com/zh/emqx/v5.7/extensions/plugins.html为插件编写-config-schema-可选)
 
 ## 其他功能
 

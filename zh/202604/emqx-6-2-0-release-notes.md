@@ -31,7 +31,7 @@ A2A Registry 遵循不断演进中的 A2A 协议规范，并将作为即将推�
 
 监控智能体通过订阅 `$a2a/v1/discovery/com.example/factory-a/+` 发现了一个维修智能体，收到 Broker 推送的 Agent Card 后发起任务请求。维修智能体流式推送状态更新——「正在分析振动特征」、「检测到轴承磨损」；监控智能体据此触发维修工单。整个协作过程中，两个智能体互不知晓对方的网络地址，EMQX 的认证与授权对所有智能体通信统一生效。
 
-了解更多关于 [A2A over MQTT](https://docs.emqx.com/zh/emqx/latest/emqx-ai/a2a-over-mqtt/overview.html) 的内容。
+了解更多关于 [A2A over MQTT](https://docs.emqx.com/zh/emqx/latest/develop/emqx-ai/a2a-over-mqtt/overview.html) 的内容。
 
 ## 订阅层面的消息过滤
 
@@ -49,7 +49,7 @@ EMQX 会根据每条入站消息的 MQTT 5.0 用户属性对表达式进行求�
 - **降低客户端负载**：消费端应用只需处理其需要的数据，无需自行编写过滤逻辑。
 - **高吞吐场景增益明显**：当单个通配符订阅覆盖了高消息量的 Topic 空间，而消费端只需其中一小部分消息时，效果尤为突出。
 
-了解更多关于[消息过滤](https://docs.emqx.com/zh/emqx/latest/subscription-filter/subscription-filter-concept.html)的内容。
+了解更多关于[消息过滤](https://docs.emqx.com/zh/emqx/latest/develop/subscription-filter/subscription-filter-concept.html)的内容。
 
 ## 无中断动态设备管理
 
@@ -63,7 +63,7 @@ EMQX 6.2 新增了在运行时动态调整客户端 Keep Alive 间隔，无需�
 
 车辆进入低功耗停车状态时，通过 `$SETOPTS/mqtt/keepalive-bulk` 延长 Keep Alive 间隔，降低空闲网络流量和电池消耗；车辆重新点火后，原始间隔自动恢复——全程无需重连，会话不中断，在途消息不受影响。
 
-了解更多关于[动态 Keep Alive 调整](https://docs.emqx.com/zh/emqx/latest/configuration/mqtt.html#动态-keep-alive-调整)的内容。
+了解更多关于[动态 Keep Alive 调整](https://docs.emqx.com/zh/emqx/latest/guides/configuration/mqtt.html动态-keep-alive-调整)的内容。
 
 ## 新增与增强的数据集成
 
@@ -71,13 +71,13 @@ EMQX 6.2 新增两个集成目标，并增强了现有 GCP 连接器的安全性
 
 ### 新增集成
 
-[**Azure Event Grid**](https://docs.emqx.com/zh/emqx/latest/data-integration/azure-event-grid.html)：实现 EMQX 与 Azure 全托管事件路由服务之间的双向 MQTT 桥接。EMQX 以 [MQTT 客户端](https://www.emqx.com/zh/blog/mqtt-client-tools)身份接入，通过 TLS 和客户端证书认证建立连接，支持 Sink 与 Source 双向数据流。数据进入 Azure Event Grid 后，可自然流转至 Azure Functions、Event Hubs、Storage 等 Azure 服务。
+[**Azure Event Grid**](https://docs.emqx.com/zh/emqx/latest/develop/data-integration/azure-event-grid.html)：实现 EMQX 与 Azure 全托管事件路由服务之间的双向 MQTT 桥接。EMQX 以 [MQTT 客户端](https://www.emqx.com/zh/blog/mqtt-client-tools)身份接入，通过 TLS 和客户端证书认证建立连接，支持 Sink 与 Source 双向数据流。数据进入 Azure Event Grid 后，可自然流转至 Azure Functions、Event Hubs、Storage 等 Azure 服务。
 
-[**QuasarDB**](https://docs.emqx.com/zh/emqx/latest/data-integration/quasardb.html)：将 MQTT 数据直接写入 QuasarDB——一款高性能列式时序数据库。消息经由规则引擎通过 ODBC 批量写入 QuasarDB，非常适合需要在大时间窗口上进行快速范围查询的高频工业遥测场景。
+[**QuasarDB**](https://docs.emqx.com/zh/emqx/latest/develop/data-integration/quasardb.html)：将 MQTT 数据直接写入 QuasarDB——一款高性能列式时序数据库。消息经由规则引擎通过 ODBC 批量写入 QuasarDB，非常适合需要在大时间窗口上进行快速范围查询的高频工业遥测场景。
 
 ### 集成增强
 
-[**GCP 工作负载身份联合（Workload Identity Federation）**](https://docs.emqx.com/zh/emqx/latest/data-integration/data-bridge-gcp-pubsub.html#配置工作负载身份联合)：GCP 连接器（Pub/Sub 生产者、Pub/Sub 消费者、BigQuery）现已支持通过服务账户模拟（Service Account Impersonation）进行 WIF 认证。
+[**GCP 工作负载身份联合（Workload Identity Federation）**](https://docs.emqx.com/zh/emqx/latest/develop/data-integration/data-bridge-gcp-pubsub.html配置工作负载身份联合)：GCP 连接器（Pub/Sub 生产者、Pub/Sub 消费者、BigQuery）现已支持通过服务账户模拟（Service Account Impersonation）进行 WIF 认证。
 
 EMQX 从外部身份提供商（如 Azure Entra ID）获取短效 OIDC 令牌，换取临时 GCP 凭证，彻底消除了长期服务账户密钥文件的存储与轮换负担。
 
@@ -93,7 +93,7 @@ EMQX 的 NATS 网关允许 NATS 客户端连接到 EMQX，并与 MQTT 双向互�
 
 将 NATS 工作负载迁移至 EMQX 的团队无需修改任何客户端侧认证配置，NATS 客户端对 EMQX 的认证体验与面对原生 NATS Server 完全一致。
 
-了解更多关于配置 [NATS 网关内部认证](https://docs.emqx.com/zh/emqx/latest/gateway/nats.html#配置网关内部认证-internal-authn)的内容。
+了解更多关于配置 [NATS 网关内部认证](https://docs.emqx.com/zh/emqx/latest/develop/gateway/nats.html配置网关内部认证-internal-authn)的内容。
 
 ## 统一命名空间治理：在 ACL 检查阶段强制规范主题结构
 
@@ -113,7 +113,7 @@ Payload 校验在发布处理环节单独执行，不合规的 Payload 直接丢
 
 某设备向格式错误主题发布消息，在 ACL 检查时将直接收到 `Not Authorized`；向合法主题发布消息但 Payload 不合规，消息在发布处理环节将被丢弃。无论哪种情况，违规信息都会立即出现在 `recent_drops` 中，在不合规数据到达任何下游系统之前就将其拦截。
 
-了解更多关于 [UNS 治理](https://docs.emqx.com/zh/emqx/latest/extensions/plugin-catalog/emqx-unsgov.html#uns-governance)的内容。
+了解更多关于 [UNS 治理](https://docs.emqx.com/zh/emqx/latest/guides/extensions/plugin-catalog.html#uns-governance)的内容。
 
 ## 其他增强与修复
 
@@ -134,13 +134,13 @@ Payload 校验在发布处理环节单独执行，不合规的 Payload 直接丢
 - **SSO OIDC 支持 jq 表达式**：OIDC SSO 后端现支持通过 jq 表达式提取角色和命名空间值，用于自动创建 Dashboard 用户。
 - **API Key 命令行管理**：`emqx ctl api_keys` 现已支持从命令行执行 `list`、`show`、`add`、`delete`、`enable` 和 `disable` 操作。
 
-完整变更内容请参阅 [Release Notes](https://docs.emqx.com/zh/emqx/latest/changes/changes-ee-v6.html#_6-2-0)。
+完整变更内容请参阅 [Release Notes](https://docs.emqx.com/zh/emqx/latest/release-notes/changes-ee-v6.html#_6-2-0)。
 
 ## 开始体验 EMQX 6.2
 
 立即下载 [EMQX 6.2](https://www.emqx.com/zh/downloads-and-install/enterprise)，探索全新特性。
 
-升级前，请务必查阅 [6.2.0 不兼容变更说明](https://docs.emqx.com/zh/emqx/latest/changes/breaking-changes-6.2.html#emqx-6-2-中的不兼容变更)。
+升级前，请务必查阅 [6.2.0 不兼容变更说明](https://docs.emqx.com/zh/emqx/latest/release-notes/breaking-changes-6.2.html#emqx-6-2-中的不兼容变更)。
 
 > 如果您的规则中使用了 jq 表达式，jq 1.8.1 的行为变更需要特别关注。
 

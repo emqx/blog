@@ -21,7 +21,7 @@ Due to our migration to the HTTPS protocol, there are some changes:
    This means you need to update your [MQTT](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) over WebSocket connection configurations in both test and production environments. Old data using the `ws://`connection protocol will not be usable on the new site and must adapt to the latest security requirements.
 
 2. **Connection Configurations Update**:
-   We recommend using `wss://` connections in both test and production environments. If you're unfamiliar with how to configure this, please refer to our detailed documentation: [Configuring Secure WebSocket Listeners](https://docs.emqx.com/en/emqx/latest/configuration/listener.html#configure-secure-websocket-listener). This document provides step-by-step configuration guidelines to help you complete the update smoothly.
+   We recommend using `wss://` connections in both test and production environments. If you're unfamiliar with how to configure this, please refer to our detailed documentation: [Configuring Secure WebSocket Listeners](https://docs.emqx.com/en/emqx/latest/guides/configuration/listener.html#configure-secure-websocket-listener). This document provides step-by-step configuration guidelines to help you complete the update smoothly.
 
 ## How to Migrate Your Data Locally？
 

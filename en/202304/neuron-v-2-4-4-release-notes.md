@@ -2,7 +2,7 @@ In April 2023, [Neuron](https://github.com/emqx/neuron) open-sourced the [Modbus
 
 ## Modbus RTU/TCP Open Sourced
 
-Neuron has completely open-sourced the [Modbus RTU](https://docs.emqx.com/en/neuron/latest/configuration/south-devices/modbus-rtu/modbus-rtu.html) and [Modbus TCP](https://docs.emqx.com/en/neuron/latest/configuration/south-devices/modbus-tcp/modbus-tcp.html) plugins. These plugins support additional data types such as Double and INT64. They introduce the Server mode, which is particularly useful for accessing DTU devices through 4G network, eliminating the requirement for port forwarding. 
+Neuron has completely open-sourced the [Modbus RTU](https://docs.emqx.com/en/neuronex/latest/) and [Modbus TCP](https://docs.emqx.com/en/neuronex/latest/) plugins. These plugins support additional data types such as Double and INT64. They introduce the Server mode, which is particularly useful for accessing DTU devices through 4G network, eliminating the requirement for port forwarding. 
 
 In addition, these plugins allow for configuration adjustments of command-sending policies, ensuring better compatibility for scenarios that involve multiple devices on a single serial port.
 

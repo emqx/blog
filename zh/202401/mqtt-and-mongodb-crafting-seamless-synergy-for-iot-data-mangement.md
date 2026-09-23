@@ -60,7 +60,7 @@ EMQX Data Integration 组件在与 MongoDB 集成中提供了以下特性：
 
 ## 资料
 
-- [EMQX MongoDB 集成文档](https://docs.emqx.com/zh/enterprise/latest/data-integration/data-bridge-mongodb.html)
+- [EMQX MongoDB 集成文档](https://docs.emqx.com/zh/emqx/latest/develop/data-integration/data-bridge-mongodb.html)
 
 
 

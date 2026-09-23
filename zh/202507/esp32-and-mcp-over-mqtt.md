@@ -145,7 +145,7 @@ MQTT 作为智能体和云端大模型的传输协议，后续所有功能（语
    - 用户名 / 密码
    - 端口号（MQTT over TLS 推荐 8883）
 
-> 注意：您也可以根据自己的情况，在本机或者内网中部署一个 EMQX Broker，这样做的好处是可以降低 ESP32 与远程服务器之间的网络时延 - [通过 Docker 运行 EMQX | EMQX 文档](https://docs.emqx.com/zh/emqx/latest/deploy/install-docker.html) 
+> 注意：您也可以根据自己的情况，在本机或者内网中部署一个 EMQX Broker，这样做的好处是可以降低 ESP32 与远程服务器之间的网络时延 - [通过 Docker 运行 EMQX | EMQX 文档](https://docs.emqx.com/zh/emqx/latest/get-started/deploy/install-docker.html) 
 
 ![image.png](https://assets.emqx.com/images/1bbfb54fb08a2c9d9dbcb69daf071fee.png)
 
@@ -453,7 +453,7 @@ idf.py flash monitor
 
 ## **资源**
 
-- MQTT 协议相关的基本材料：[开发者指南 | EMQX 文档](https://docs.emqx.com/zh/emqx/latest/connect-emqx/developer-guide.html) 
+- MQTT 协议相关的基本材料：[开发者指南 | EMQX 文档](https://docs.emqx.com/zh/emqx/latest/develop/developer-guide.html) 
 - EMQX Serverless 免费注册 - [安全、可伸缩的 Serverless MQTT 消息服务。](https://www.emqx.com/zh/cloud/serverless-mqtt) 
 - MQTT 客户端工具：[MQTTX: Your All-in-one MQTT Client Toolbox](https://mqttx.app/)
 - ESP32 官方网站：https://www.espressif.com.cn/en/products/socs/esp32

@@ -79,7 +79,7 @@ As you implement these patterns, remember these tips:
 
 **Ready to simplify your architecture and build more resilient IoT applications?**
 
-[**Try the EMQX Message Queue today!**](https://docs.emqx.com/en/emqx/latest/message-queue/message-queue-quick-start.html)
+[**Try the EMQX Message Queue today!**](https://docs.emqx.com/en/emqx/latest/develop/message-queue/message-queue-quick-start.html)
 
 
 

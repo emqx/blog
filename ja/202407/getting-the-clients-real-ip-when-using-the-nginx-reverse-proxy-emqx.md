@@ -79,7 +79,7 @@ stream {
 nginx -s reload
 ```
 
-次に、EMQX（インストール手順は[こちら](https://docs.emqx.com/en/emqx/latest/deploy/install.html)をクリック）の設定も変更する必要があります。ブラウザでダッシュボードを開き、「Management」>「Cluster Settings」>「MQTT Settings」へ進み、デフォルトのTCPリスナー（または変更したい任意のリスナー）をクリックして設定ページに入り、「Proxy Protocol」をtrueに設定します。
+次に、EMQX（インストール手順は[こちら](https://docs.emqx.com/en/emqx/latest/get-started/deploy/install.html)をクリック）の設定も変更する必要があります。ブラウザでダッシュボードを開き、「Management」>「Cluster Settings」>「MQTT Settings」へ進み、デフォルトのTCPリスナー（または変更したい任意のリスナー）をクリックして設定ページに入り、「Proxy Protocol」をtrueに設定します。
 
 ![01dashboardproxyprotocolen.png](https://assets.emqx.com/images/924dca9152db0d0cb9c5c7bf985e2679.png)
 

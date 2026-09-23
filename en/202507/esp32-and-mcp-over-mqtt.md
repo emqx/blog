@@ -147,7 +147,7 @@ To get started:
    - **Username / Password**
    - **Port Number** (port **8883** is recommended for [MQTT over TLS](https://www.emqx.com/en/blog/fortifying-mqtt-communication-security-with-ssl-tls))
 
-> **Note:** If you prefer, you can also deploy an **EMQX Broker** on your local machine or within your private network. This approach can help reduce network latency between your **ESP32** and the remote server. For deployment instructions, refer to: [Install EMQX Using Docker | EMQX Docs](https://docs.emqx.com/en/emqx/latest/deploy/install-docker.html)  
+> **Note:** If you prefer, you can also deploy an **EMQX Broker** on your local machine or within your private network. This approach can help reduce network latency between your **ESP32** and the remote server. For deployment instructions, refer to: [Install EMQX Using Docker | EMQX Docs](https://docs.emqx.com/en/emqx/latest/get-started/deploy/install-docker.html)  
 
 ![image.png](https://assets.emqx.com/images/cbd041761d18cd37e485d47891fdcb6d.png)
 
@@ -438,7 +438,7 @@ In the next blog post, we'll dive into how the **ESP32** can "expose" its contro
 
 ## Resources
 
-- Learn more about the MQTT protocol：[Developer Guide | EMQX Docs](https://docs.emqx.com/en/emqx/latest/connect-emqx/developer-guide.html) 
+- Learn more about the MQTT protocol：[Developer Guide | EMQX Docs](https://docs.emqx.com/en/emqx/latest/develop/developer-guide.html) 
 - Register EMQX Serverless for free - [Secure, Scalable, and Serverless MQTT Messaging](https://www.emqx.com/en/cloud/serverless-mqtt) 
 - MQTT client tool：[MQTTX: Your All-in-one MQTT Client Toolbox](https://mqttx.app/)
 - ESP32 official website：[ESP32 Wi-Fi & Bluetooth SoC | Espressif Systems](https://www.espressif.com.cn/en/products/socs/esp32) 

@@ -12,7 +12,7 @@ EMQXの新しい永続セッション機能は、堅牢な永続性と高可用�
 
 MQTTメッセージを共有のレプリケートされた永続ストレージに保存することで、オンラインセッションとオフラインセッションの両方のメモリ使用量を削減し、インメモリストレージよりも大きなセッションとより多くのメッセージ処理容量をサポートします。永続セッションはまた、効果的なフェイルオーバーと復旧メカニズムを可能にすることで、システムの信頼性を高め、サービスの継続性と高可用性を確保します。
 
-[詳細はこちら](https://docs.emqx.com/en/enterprise/v5.7/durability/durability_introduction.html)
+[詳細はこちら](https://docs.emqx.com/en/emqx/v5.7/durability/durability_introduction.html)
 
 ## メッセージスキーマ検証
 
@@ -27,7 +27,7 @@ EMQXの組み込みスキーマ検証機能は、MQTTメッセージの構造と
 - **統一データモデル**: チームやプロジェクト全体で統一したデータモデルを適用することで、データの不整合やエラーを減らします。
 - **再利用と共有**: チームメンバーがスキーマを再利用して共有できるようにすることで、コラボレーションを強化し、作業の重複とエラーを減らします。
 
-[詳細はこちら](https://docs.emqx.com/en/enterprise/v5.7/data-integration/schema-validation.html)
+[詳細はこちら](https://docs.emqx.com/en/emqx/v5.7/data-integration/schema-validation.html)
 
 ## ルールのデバッグとトレースをサポート
 
@@ -41,7 +41,7 @@ EMQXの組み込みスキーマ検証機能は、MQTTメッセージの構造と
 
 以前のSQLテストとは異なり、ルールのデバッグとトラッキング機能は、ルール全体が期待通りに機能することを検証し、トラブルシューティングと問題解決を迅速に行うことを容易にします。これにより、開発が加速されるだけでなく、実際の実行中の障害を防ぎ、実際のシナリオでルールが正しく実行されることが保証されます。
 
-[詳細はこちら](https://docs.emqx.com/en/enterprise/v5.7/data-integration/rule-get-started.html#test-rule)
+[詳細はこちら](https://docs.emqx.com/en/emqx/v5.7/data-integration/rule-get-started.html#test-rule)
 
 ## 合理化された変数入力によるルールアクションの強化
 
@@ -60,7 +60,7 @@ EMQXの組み込みスキーマ検証機能は、MQTTメッセージの構造と
 1. **ルールIDを指定して実行結果をトレース**: この機能により、特定のルールの実行を正確にトレースしてデバッグできます。ログ出力には、ルールのSQL実行結果とルール内のすべてのアクションのログが含まれるため、問題をすばやく特定して解決できます。
 2. **ログ出力形式をJSONに設定**: この機能により、ログの自動処理と分析が容易になり、データ処理の効率が向上します。
 
-[詳細はこちら](https://docs.emqx.com/en/enterprise/v5.7/observability/tracer.html#trace-by-rule-id)
+[詳細はこちら](https://docs.emqx.com/en/emqx/v5.7/observability/tracer.html#trace-by-rule-id)
 
 ## クライアント属性
 
@@ -88,7 +88,7 @@ FROM mqtt_acl
 
 クライアントIDなどの静的な属性を使用する場合と比較して、クライアント属性は様々なビジネスシナリオでより大きな柔軟性を提供します。これにより、開発プロセスが簡素化され、適応性と効率性が向上します。
 
-[詳細はこちら](https://docs.emqx.com/en/enterprise/v5.7/client-attributes/client-attributes.html)
+[詳細はこちら](https://docs.emqx.com/en/emqx/v5.7/client-attributes/client-attributes.html)
 
 ## JWT認証の有効期限が切れたときにクライアントを切断
 
@@ -100,7 +100,7 @@ JWT仕様には有効期限属性が含まれており、トークンを発行�
 
 ![JWT Authentication](https://assets.emqx.com/images/8ac058d5c642d47567312b954713554d.png)
 
-[詳細はこちら](https://docs.emqx.com/en/enterprise/v5.7/access-control/authn/jwt.html)
+[詳細はこちら](https://docs.emqx.com/en/emqx/v5.7/access-control/authn/jwt.html)
 
 ## ホット設定とカスタマイズ可能なUIのプラグインサポート
 
@@ -112,7 +112,7 @@ JWT仕様には有効期限属性が含まれており、トークンを発行�
 
 この機能はオプションであり、必要に応じて純粋なバックエンド開発を継続できます。
 
-[詳細はこちら](https://docs.emqx.com/en/enterprise/v5.7/extensions/plugins.html#write-configuration-schema-for-the-plugin-optional)
+[詳細はこちら](https://docs.emqx.com/en/emqx/v5.7/extensions/plugins.html#write-configuration-schema-for-the-plugin-optional)
 
 ## その他の機能
 

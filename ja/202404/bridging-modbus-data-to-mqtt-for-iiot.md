@@ -119,7 +119,7 @@ PeakHMI Slave Simulatorsをインストールします。インストールパ�
 
 ### Neuronクイックスタート
 
-Neuronは様々なインストール方法を提供しており、ユーザーは[ドキュメント](https://docs.emqx.com/en/neuron/latest/installation/installation.html)で詳細なインストール方法を確認できます。本例ではコンテナ化されたデプロイを使用します。
+Neuronは様々なインストール方法を提供しており、ユーザーは[ドキュメント](https://docs.emqx.com/en/neuronex/latest/)で詳細なインストール方法を確認できます。本例ではコンテナ化されたデプロイを使用します。
 
 Dockerイメージの取得:
 

@@ -92,7 +92,7 @@ docker-compose up -d
 
 在模拟设备订阅和发布消息后，我们需要在 EMQX 上处理这些设备发送的消息和事件。这一部分将由 EMQX 上的 Webhook 数据集成完成。
 
-EMQX 将创建 2 个 Webhook，分别用于处理设备发送的消息，以及连接/断开连接、订阅/取消订阅事件。您也可以参照 [Webhook 文档](https://docs.emqx.com/zh/enterprise/latest/data-integration/webhook.html)，处理更多客户端事件。
+EMQX 将创建 2 个 Webhook，分别用于处理设备发送的消息，以及连接/断开连接、订阅/取消订阅事件。您也可以参照 [Webhook 文档](https://docs.emqx.com/zh/emqx/latest/develop/data-integration/webhook.html)，处理更多客户端事件。
 
 - **触发器**：这是触发 Webhook 的事件。对于消息，你需要选择 "消息发布" 并添加 `mqttx/simulate/#` 主题过滤消息；对于设备事件，需要勾选 "连接建立"、"连接断开"、"订阅完成"、"取消订阅" 这四个事件；
 - **请求方法**：在这里需要选择 "POST" 方法；

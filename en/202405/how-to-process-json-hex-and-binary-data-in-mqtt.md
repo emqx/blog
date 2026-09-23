@@ -176,7 +176,7 @@ The screenshot below illustrates that the receiver displays the binary as `11�
 
 ## Handle JSON Payload with EMQX Rule Engine
 
-The rule engine feature of EMQX provides various processing functions that can conveniently handle the parsing and extraction of various payload formats. Learn more at: [EMQX Rule Engine](https://docs.emqx.com/en/enterprise/latest/data-integration/rules.html).
+The rule engine feature of EMQX provides various processing functions that can conveniently handle the parsing and extraction of various payload formats. Learn more at: [EMQX Rule Engine](https://docs.emqx.com/en/emqx/latest/develop/data-integration/rules.html).
 
 For structured payloads with JSON format, the EMQX Rule Engine can conveniently extract and reorganize the fields within it. We will demonstrate in detail how to handle JSON payload with EMQX Rule Engine in this section.
 

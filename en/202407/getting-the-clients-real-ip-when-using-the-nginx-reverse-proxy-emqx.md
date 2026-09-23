@@ -79,7 +79,7 @@ After saving the configuration, run the following command to reload the configur
 nginx -s reload
 ```
 
-Then, we also need to modify the EMQX (click [Here](https://docs.emqx.com/en/emqx/latest/deploy/install.html) for installation instructions) configuration to enable parsing of the PROXY protocol header.
+Then, we also need to modify the EMQX (click [Here](https://docs.emqx.com/en/emqx/latest/get-started/deploy/install.html) for installation instructions) configuration to enable parsing of the PROXY protocol header.
 
 For example, in version 5.7, we need to open the Dashboard in the browser, go to "Management" > "Cluster Settings" > "MQTT Settings", click the default TCP listener (or any other listener you want to change) to enter the configuration page, and set "Proxy Protocol" to true:
 

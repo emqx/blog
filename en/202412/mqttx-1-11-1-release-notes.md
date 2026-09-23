@@ -54,7 +54,7 @@ When accessing from the connection page, MQTTX automatically subscribes to the `
 
   ![Rate Statistics](https://assets.emqx.com/images/dbc6eb6919ad7d5b77fb26d935080eb1.png)
 
-> Note: EMQX by default restricts $SYS topic subscription to localhost clients only. For remote access, ACL rule modifications are required. Please refer to [EMQX documentation](https://docs.emqx.com/en/emqx/latest/access-control/authz/authz.html) for configuration details.
+> Note: EMQX by default restricts $SYS topic subscription to localhost clients only. For remote access, ACL rule modifications are required. Please refer to [EMQX documentation](https://docs.emqx.com/en/emqx/latest/guides/access-control/authz/authz.html) for configuration details.
 
 ## Connection Selection in Collapsed Mode
 

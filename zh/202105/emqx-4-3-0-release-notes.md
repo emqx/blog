@@ -89,7 +89,7 @@ EMQX v4.3.0 版本修复了一些已知问题并新增了诸多特性，在通�
 - 仅在正式版本中启用数据遥测功能
 - 支持清除所有 ACL 缓存
 - Redis 哨兵模式支持 SSL 连接 
-- emqx_auth_clientid 与 emqx_auth_usernmae 合并为 emqx_auth_mnesia。请参考 [文档](https://docs.emqx.com/zh/emqx/latest/deploy/upgrade-from-v4.html) 将数据到旧版本导出，并导入到 4.3 中
+- emqx_auth_clientid 与 emqx_auth_usernmae 合并为 emqx_auth_mnesia。请参考 [文档](https://docs.emqx.com/zh/emqx/latest/get-started/deploy/upgrade-cluster.html) 将数据到旧版本导出，并导入到 4.3 中
 - Docker 默认输出日志到控制台，设置 EMQX_LOG__TO=file 使日志输出到文件
 - 支持输出 JSON 格式的日志，某些日志分析系统如 ELK 可以更好的进行配置使用
 

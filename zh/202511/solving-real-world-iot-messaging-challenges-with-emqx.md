@@ -105,7 +105,7 @@ EMQX 最后值队列就像是为消费者专门设计的智能邮箱。它能为
 
 准备好简化您的架构，构建更具韧性的物联网应用了吗？
 
-[**立即试用 EMQX 消息队列！**](https://docs.emqx.com/zh/emqx/latest/message-queue/message-queue-quick-start.html)
+[**立即试用 EMQX 消息队列！**](https://docs.emqx.com/zh/emqx/latest/develop/message-queue/message-queue-quick-start.html)
 
  
 

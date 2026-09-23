@@ -130,7 +130,7 @@ By default, EMQX will allow any client connection until the user creates an auth
 >
 > *Check the documentation for more authentication methods:* 
 >
-> https://docs.emqx.com/en/emqx/latest/access-control/authn/authn.html 
+> https://docs.emqx.com/en/emqx/latest/guides/access-control/authn/authn.html 
 
 ### Create Authentication
 
@@ -176,7 +176,7 @@ Next, use the user name `test1` that has not been created. Click Connect, and yo
 
 ![image.png](https://assets.emqx.com/images/20e5e5b9cae683da878acdccaa7034fc.png)
 
-So far, we have completed the authentication configuration for EMQX and set up a single-node MQTT broker available in the production environment. To ensure the high availability of the MQTT broker, you need to create a multi-node EMQX cluster. The cluster creation will not be detailed in this document. You can refer to the [EMQX Cluster documentation](https://docs.emqx.com/en/emqx/latest/deploy/cluster/create-cluster.html#create-and-manage-cluster) for configuration.
+So far, we have completed the authentication configuration for EMQX and set up a single-node MQTT broker available in the production environment. To ensure the high availability of the MQTT broker, you need to create a multi-node EMQX cluster. The cluster creation will not be detailed in this document. You can refer to the [EMQX Cluster documentation](https://docs.emqx.com/en/emqx/latest/develop/cluster/introduction.html) for configuration.
 
 
 

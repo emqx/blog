@@ -36,7 +36,7 @@ docker run -d --name emqx -p 1883:1883 -p 8081:8081 -p 8083:8083 -p 8084:8084 -p
 
 ## Neuronの設定
 
-Neuronにはさまざまなインストール方法があります。詳細は[インストール](https://docs.emqx.com/en/neuron/latest/installation/installation.html)で確認できます。この例では、コンテナ化されたデプロイメントを使用し、できるだけ早くNeuronを体験できるようにします。以下のコマンドを実行して、Neuronコンテナをインストールおよび実行します。
+Neuronにはさまざまなインストール方法があります。詳細は[インストール](https://docs.emqx.com/en/neuronex/latest/)で確認できます。この例では、コンテナ化されたデプロイメントを使用し、できるだけ早くNeuronを体験できるようにします。以下のコマンドを実行して、Neuronコンテナをインストールおよび実行します。
 
 ```shell
 $ docker pull emqx/neuron:latest

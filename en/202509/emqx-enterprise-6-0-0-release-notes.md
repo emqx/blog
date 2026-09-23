@@ -21,7 +21,7 @@ Unlike traditional MQTT, which relies on subscriber availability, Message Queues
 
 In a smart agriculture system, soil sensor data published to `farm/+/sensors` is stored in a Message Queue. A monitoring application subscribes to `$q/farm/+/sensors` to retrieve all readings, including those from offline periods. With Last-Value Semantics enabled, only the latest sensor data per device is retained, simplifying data processing for irrigation decisions.
 
-*Learn more about* [*Message Queue*](https://docs.emqx.com/en/emqx/latest/message-queue/message-queue-concept.html)*.* 
+*Learn more about* [*Message Queue*](https://docs.emqx.com/en/emqx/latest/develop/message-queue/message-queue-concept.html)*.* 
 
 ## Multi-Tenancy with Namespaced Roles
 
@@ -40,7 +40,7 @@ Namespaced roles empower administrators to manage multiple tenants efficiently, 
 
 An IoV platform offers MQTT-as-a-service. Internal teams like fleet operations and maintenance operate as separate tenants. A user with the `ns:fleet_ops::administrator` role can manage `sensors/data` in `ns:fleet_ops` for bus tracking, while a user in `ns:maintenance` can use an identical `sensors/data` in `ns:maintenance` for diagnostics, without conflicts. Administrators set per-tenant resource limits (e.g., message throughput), ensuring fair allocation and preventing any team from overloading the cluster.
 
-*For how to create a namespaced role, refer to* [*Create a User with a Namespaced Role*](https://docs.emqx.com/en/emqx/latest/dashboard/system.html#create-a-user-with-a-namespaced-role)*.* 
+*For how to create a namespaced role, refer to* [*Create a User with a Namespaced Role*](https://docs.emqx.com/en/emqx/latest/guides/dashboard/system.html#create-a-user-with-a-namespaced-role)*.* 
 
 ## Optimized Durable Storage for Better Performance
 
@@ -60,7 +60,7 @@ For example, in a smart grid, millions of meter readings are stored durably. The
 
 ## New and Enhanced Data Integrations
 
-In EMQX 6.0.0, the data integration expands with support for [AWS AlloyDB](https://docs.emqx.com/en/emqx/latest/data-integration/alloydb.html), [CockroachDB](https://docs.emqx.com/en/emqx/latest/data-integration/cockroachdb.html), [AWS Redshift](https://docs.emqx.com/en/emqx/latest/data-integration/redshift.html), and [BigQuery](https://docs.emqx.com/en/emqx/latest/data-integration/bigquery.html), alongside enhancements to existing integrations for Snowflake, RocketMQ, S3 Tables, and RabbitMQ.
+In EMQX 6.0.0, the data integration expands with support for [AWS AlloyDB](https://docs.emqx.com/en/emqx/latest/develop/data-integration/alloydb.html), [CockroachDB](https://docs.emqx.com/en/emqx/latest/develop/data-integration/cockroachdb.html), [AWS Redshift](https://docs.emqx.com/en/emqx/latest/develop/data-integration/redshift.html), and [BigQuery](https://docs.emqx.com/en/emqx/latest/develop/data-integration/bigquery.html), alongside enhancements to existing integrations for Snowflake, RocketMQ, S3 Tables, and RabbitMQ.
 
 ### New Supported Integrations
 
@@ -84,7 +84,7 @@ Building on the AI capabilities introduced in 5.10.0, EMQX 6.0.0 enhances LLM-ba
 - **New API Endpoint**: List all available models for an AI provider via a dedicated API, simplifying integration and model selection.
 - **Transport Options**: Configure connection timeouts and maximum connections to AI Completion Providers for better performance and reliability.
 
-*Explore processing LLM-based data with the new* [*Gemini node*](https://docs.emqx.com/en/emqx/latest/flow-designer/gemini-node-quick-start.html) *in Flow Designer.*
+*Explore processing LLM-based data with the new* [*Gemini node*](https://docs.emqx.com/en/emqx/latest/develop/flow-designer/gemini-node-quick-start.html) *in Flow Designer.*
 
 ## Additional Enhancements
 

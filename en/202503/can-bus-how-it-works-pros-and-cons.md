@@ -236,7 +236,7 @@ First, create a topic in Kafka:
 bin/kafka-topics.sh --create --topic vehicle_events --bootstrap-server localhost:9092
 ```
 
-Following the "[Stream MQTT Data into Apache Kafka](https://docs.emqx.com/en/emqx/latest/data-integration/data-bridge-kafka.html)" guide, add a Kafka action in the EMQX rule engine. Key parameters are as follows:
+Following the "[Stream MQTT Data into Apache Kafka](https://docs.emqx.com/en/emqx/latest/develop/data-integration/data-bridge-kafka.html)" guide, add a Kafka action in the EMQX rule engine. Key parameters are as follows:
 
 - **Kafka Topic Name**: Enter `vehicle_events`.
 - **Kafka Headers**: Enter metadata or context information related to Kafka messages (optional).

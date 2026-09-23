@@ -184,7 +184,7 @@ MQTT Agent 面向无人值守自动化、大规模设备运维、受限且可审
 
 **了解更多关于 MQTT Agent 的信息：**
 
-[MQTT Agent | EMQX Enterprise Docs](https://docs.emqx.com/en/emqx/latest/extensions/plugin-catalog/6.3/emqx-agent.html) 
+[MQTT Agent | EMQX Enterprise Docs](https://docs.emqx.com/en/emqx/latest/guides/extensions/plugin-catalog/6.3/emqx-agent.html) 
 
 **MQTT Agent 插件下载地址：**
 

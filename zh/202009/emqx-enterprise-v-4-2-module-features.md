@@ -88,7 +88,7 @@ EMQX 提供 Prometheus Agent 模块，用于将 EMQX 运行指标及 Erlang 虚�
 
 该模块可以配置重写规则，在客户端发布/订阅主题时将目标主题按照规则重写为新的主题。
 
-EMQX 的 [保留消息](https://docs.emqx.com/zh/enterprise/latest/modules/retainer.html) 和 [延迟发布](https://docs.emqx.com/zh/emqx/latest/advanced/delay-publish.html) 可以与[主题重写](https://www.emqx.com/zh/blog/rewriting-emqx-mqtt5-topic)配合使用，例如，当用户想使用延迟发布功能，但不方便修改客户端发布的主题时，可以使用主题重写将相关主题重写为延迟发布的主题格式。
+EMQX 的 [保留消息](https://docs.emqx.com/zh/emqx/latest/guides/cli.html#retainer) 和 [延迟发布](https://docs.emqx.com/zh/emqx/latest/advanced/delay-publish.html) 可以与[主题重写](https://www.emqx.com/zh/blog/rewriting-emqx-mqtt5-topic)配合使用，例如，当用户想使用延迟发布功能，但不方便修改客户端发布的主题时，可以使用主题重写将相关主题重写为延迟发布的主题格式。
 
 #### MQTT 保留消息
 

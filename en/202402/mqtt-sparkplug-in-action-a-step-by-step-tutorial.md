@@ -26,7 +26,7 @@ In this blog, we will demonstrate how to get started with MQTT Sparkplug using E
 
 ### Install EMQX
 
-Download and install the EMQX MQTT broker on your server or machine. EMQX provides a community edition that can be downloaded for free from their website. Visit the website [https://docs.emqx.com/en/emqx/latest/deploy/install.html](https://docs.emqx.com/en/emqx/latest/deploy/install.html) and follow the documentation.
+Download and install the EMQX MQTT broker on your server or machine. EMQX provides a community edition that can be downloaded for free from their website. Visit the website [https://docs.emqx.com/en/emqx/latest/get-started/deploy/install.html](https://docs.emqx.com/en/emqx/latest/get-started/deploy/install.html) and follow the documentation.
 
 ### Create Schema Registry in EMQX
 
@@ -68,7 +68,7 @@ This action sends the decoded "Payload" to the SparkPlugB/test topic in JSON for
 
 ## Install and Configure an Edge Node
 
-Neuron is an industrial IoT platform that can be used to collect, store, and analyze data from industrial devices. You can download and install Neuron from their website. Visit the website [https://docs.emqx.com/en/neuron/latest/installation/installation.html](https://docs.emqx.com/en/neuron/latest/installation/installation.html)  and follow the documentation.
+Neuron is an industrial IoT platform that can be used to collect, store, and analyze data from industrial devices. You can download and install Neuron from their website. Visit the website [https://docs.emqx.com/en/neuronex/latest/](https://docs.emqx.com/en/neuronex/latest/)  and follow the documentation.
 
 ### Configure Devices in Neuron
 

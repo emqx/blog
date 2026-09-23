@@ -297,7 +297,7 @@ systemctl start emqx
 
 Data loss is the most common problem with Kubernetes-based deployments of EMQX. If a Kubernetes cluster goes down and the EMQX Pod is rebuilt, all the configurations within EMQX will be lost.
 
-To mitigate this issue, deploying [EMQX in Kubernetes](https://docs.emqx.com/en/emqx-operator/latest/) should incorporate data persistence configurations. For efficient creation and management of EMQX clusters in a Kubernetes environment, it is highly recommended to utilize the EMQX Operator.It dramatically simplifies deploying and managing EMQX clusters and requires less administration and configuration knowledge. It turns the work of deployment and management into a low-cost, standardized, and repeatable capability.
+To mitigate this issue, deploying [EMQX in Kubernetes](https://docs.emqx.com/en/emqx/latest/get-started/deploy/kubernetes/operator/operator.html) should incorporate data persistence configurations. For efficient creation and management of EMQX clusters in a Kubernetes environment, it is highly recommended to utilize the EMQX Operator.It dramatically simplifies deploying and managing EMQX clusters and requires less administration and configuration knowledge. It turns the work of deployment and management into a low-cost, standardized, and repeatable capability.
 
 ![EMQX in Kubernetes](https://assets.emqx.com/images/110f2bd760354c89a068232a2586887d.png)
 

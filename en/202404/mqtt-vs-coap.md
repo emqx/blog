@@ -122,7 +122,7 @@ EMQX not only fully supports MQTT 3.1, 3.1.1, and 5.0 but also supports various 
 
 In EMQX v5, the Gateway architecture has been added to unify the model of multi-protocol access. We support the conversion of protocols such as [MQTT-SN](https://www.emqx.com/en/blog/connecting-mqtt-sn-devices-using-emqx), Stomp, CoAP, LwM2M, etc. into a unified Pub/Sub messaging model with independent authentication configuration, and client management.
 
-For more details refer to: [Multi-Protocol Gateway | EMQX Enterprise Docs](https://docs.emqx.com/en/enterprise/latest/gateway/gateway.html) 
+For more details refer to: [Multi-Protocol Gateway | EMQX Enterprise Docs](https://docs.emqx.com/en/emqx/latest/develop/gateway/gateway.html) 
 
 ## Conclusion
 

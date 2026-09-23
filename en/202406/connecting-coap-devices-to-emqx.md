@@ -222,7 +222,7 @@ If an incorrect Token is used, it will return 4.01 indicating that the operation
 
 The process of integrating [CoAP and MQTT](https://www.emqx.com/en/blog/mqtt-vs-coap) protocol devices with EMQX has been successfully completed. EMQX, a robust open-source distributed cloud-native MQTT platform, offers comprehensive support for the CoAP and LwM2M protocols in addition to the MQTT protocol. This inclusive support facilitates seamless access to a diverse range of end devices, enhancing the system's versatility and accessibility.
 
-For more details on using EMQX, please refer to the [EMQX Enterprise documentation](https://docs.emqx.com/en/enterprise/latest/). 
+For more details on using EMQX, please refer to the [EMQX Enterprise documentation](https://docs.emqx.com/en/emqx/latest/). 
 
 
 

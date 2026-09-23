@@ -12,7 +12,7 @@ This feature offers flexible configuration options, enabling customization of th
 
 Storing MQTT messages in shared, replicated persistent storage reduces memory usage for both online and offline sessions, supporting larger sessions and greater message processing capacity than in-memory storage. Durable sessions also enhance system reliability by enabling effective failover and recovery mechanisms, ensuring service continuity and high availability.
 
-[Learn more](https://docs.emqx.com/en/enterprise/v5.7/durability/durability_introduction.html)
+[Learn more](https://docs.emqx.com/en/emqx/v5.7/durability/durability_introduction.html)
 
 ## Message Schema Validation
 
@@ -27,7 +27,7 @@ In addition to validation, the same Schema can also be used for Schema encoding/
 - **Uniform Data Model**: Reduces data inconsistencies and errors by enforcing a uniform data model across teams and projects.
 - **Reuse and Sharing**: Enhances collaboration by allowing team members to reuse and share schemas, reducing duplication of effort and errors.
 
-[Learn more](https://docs.emqx.com/en/enterprise/v5.7/data-integration/schema-validation.html)
+[Learn more](https://docs.emqx.com/en/emqx/v5.7/data-integration/schema-validation.html)
 
 ## Rule Supports Debugging and Tracing
 
@@ -41,7 +41,7 @@ In the screenshot, we can see that the rule was triggered four times. The first 
 
 Unlike the previous SQL test, the rule debugging and tracking feature verifies that the entire rule functions as expected and facilitates quick troubleshooting and issue resolution. This not only accelerates development but also ensures that the rule will perform correctly in real-world scenarios, preventing failures during actual execution.
 
-[Learn more](https://docs.emqx.com/en/enterprise/v5.7/data-integration/rule-get-started.html#test-rule)
+[Learn more](https://docs.emqx.com/en/emqx/v5.7/data-integration/rule-get-started.html#test-rule)
 
 ## Enhanced Rule Action with Streamlined Variable Input
 
@@ -60,7 +60,7 @@ Two new features have been added to log tracking:
 1. **Specify Rule ID for Tracing Execution Results**: This feature allows you to precisely trace and debug the execution of a specific rule. The log output will include the rule's SQL execution result and the logs for all actions within the rule, enabling quick identification and resolution of issues.
 2. **Set Log Output Format to JSON**: This feature facilitates automated log processing and analysis, enhancing data processing efficiency.
 
-[Learn more](https://docs.emqx.com/en/enterprise/v5.7/observability/tracer.html#trace-by-rule-id)
+[Learn more](https://docs.emqx.com/en/emqx/v5.7/observability/tracer.html#trace-by-rule-id)
 
 ## Client Attributes
 
@@ -88,7 +88,7 @@ FROM mqtt_acl
 
 Compared to using static attributes like client IDs, client attributes offer greater flexibility for various business scenarios. They simplify the development process, enhancing adaptability and efficiency.
 
-[Learn more](https://docs.emqx.com/en/enterprise/v5.7/client-attributes/client-attributes.html)
+[Learn more](https://docs.emqx.com/en/emqx/v5.7/client-attributes/client-attributes.html)
 
 ## Disconnect Client When JWT Authentication Expires
 
@@ -100,7 +100,7 @@ To maintain the previous behavior, you can disable the **Disconnect After Expira
 
  ![JWT Authentication](https://assets.emqx.com/images/8ac058d5c642d47567312b954713554d.png)
 
-[Learn more](https://docs.emqx.com/en/enterprise/v5.7/access-control/authn/jwt.html)
+[Learn more](https://docs.emqx.com/en/emqx/v5.7/access-control/authn/jwt.html)
 
 ## Plugin Support for Hot Configuration and Customizable UI
 
@@ -112,7 +112,7 @@ Developers can now focus solely on implementing back-end business logic, while t
 
 This feature is optional, allowing users to continue with pure back-end development if preferred.
 
-[Learn more](https://docs.emqx.com/en/enterprise/v5.7/extensions/plugins.html#write-configuration-schema-for-the-plugin-optional)
+[Learn more](https://docs.emqx.com/en/emqx/v5.7/extensions/plugins.html#write-configuration-schema-for-the-plugin-optional)
 
 ## Additional Features
 
