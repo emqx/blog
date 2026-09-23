@@ -57,7 +57,7 @@ This Blog will introduce how to use the OCPP Gateway in EMQX 5.0 to integrate OC
 
 ## Configuring OCPP Gateway
 
-First, we should install the latest enterprise edition of EMQX. Please refer to [Get Started with EMQX Enterprise | EMQX Enterprise Docs](https://docs.emqx.com/en/enterprise/latest/getting-started/getting-started.html#install-emqx) .
+First, we should install the latest enterprise edition of EMQX. Please refer to [Get Started with EMQX Enterprise | EMQX Enterprise Docs](https://docs.emqx.com/en/emqx/latest/get-started/getting-started.html#install-emqx) .
 
 Or directly use the following command to start the latest version of the EMQX container using Docker:
 

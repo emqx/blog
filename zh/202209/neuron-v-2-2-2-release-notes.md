@@ -65,7 +65,7 @@ $ make
 $ sudo ./neuron --log
 ```
 
-SDK 包使用教程链接：[https://docs.emqx.com/zh/neuron/latest/dev-guide/sdk-tutorial/sdk-tutorial.html)基于 SDK 的驱动开发](https://docs.emqx.com/zh/neuron/latest/dev-guide/sdk-tutorial/sdk-tutorial.html) 
+SDK 包使用教程链接：[https://docs.emqx.com/zh/neuronex/latest/)基于 SDK 的驱动开发](https://docs.emqx.com/zh/neuronex/latest/) 
 
 ## 新增商业驱动插件
 

@@ -200,11 +200,11 @@ EMQX 是全球扩展能力最强的 MQTT 消息服务器，支持无主集群架
 核心功能包括：
 
 - **[强大的规则引擎与数据集成](https://www.emqx.com/zh/features/data-processing)**
-- **[可视化流程设计器（Flow Designer）](https://docs.emqx.com/zh/emqx/latest/flow-designer/introduction.html)**
+- **[可视化流程设计器（Flow Designer）](https://docs.emqx.com/zh/emqx/latest/develop/flow-designer/introduction.html)**
 - **[智能数据枢纽（Smart Data Hub）](https://docs.emqx.com/zh/cloud/latest/data_hub/smart_data_hub.html)**
 - **[AI 数据处理与集成能力](https://www.emqx.com/zh/solutions/realtime-ai)**
 - **[完善的安全机制](https://www.emqx.com/zh/security-and-trust-center)**
-- **[高级可观测性与运维管理能力](https://docs.emqx.com/zh/emqx/latest/observability/overview.html)**
+- **[高级可观测性与运维管理能力](https://docs.emqx.com/zh/emqx/latest/guides/observability/overview.html)**
 
 产品页面：[https://www.emqx.com/zh/products/emqx](https://www.emqx.com/zh/products/emqx)
 

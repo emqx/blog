@@ -48,7 +48,7 @@ The EMQX integration with Amazon S3 Tables is a foundational component for build
 **Ready to build your bridge from OT to AI?**
 
 - Download [**EMQX Enterprise 5.10.0**](https://www.emqx.com/en/downloads-and-install/enterprise)
-- Check the step-by-step tutorial in our [**S3 Tables Integration Documentation**](https://docs.emqx.com/en/emqx/latest/data-integration/s3-tables.html)
+- Check the step-by-step tutorial in our [**S3 Tables Integration Documentation**](https://docs.emqx.com/en/emqx/latest/develop/data-integration/s3-tables.html)
 - [**Contact our team**](https://www.emqx.com/en/contact?product=emqx) for a personalized demonstration
 
 

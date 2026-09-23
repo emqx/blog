@@ -14,7 +14,7 @@ Still wondering if upgrading is worth it? Let’s break it down.
 
 If your EMQX 4.x deployment struggles with scaling, high latency, or resource consumption, EMQX 5.x solves these issues with a more efficient cluster architecture.
 
-EMQX 4.x used the Mria cluster architecture, where each node stored full session and routing data, causing high memory usage and slower synchronization as clusters grew. In contrast, EMQX 5.x introduces a [Core+Replicant architecture](https://docs.emqx.com/en/emqx/latest/deploy/cluster/mria-introduction.html):
+EMQX 4.x used the Mria cluster architecture, where each node stored full session and routing data, causing high memory usage and slower synchronization as clusters grew. In contrast, EMQX 5.x introduces a [Core+Replicant architecture](https://docs.emqx.com/en/emqx/latest/develop/cluster/mria-introduction.html):
 
 - Core nodes manage authentication, session state, and cluster control.
 - Replicant nodes relay messages without storing session data, reducing memory overhead and improving scalability.
@@ -75,13 +75,13 @@ Imagine a [smart factory](https://www.emqx.com/en/blog/what-is-a-smart-factory-k
 
 - **Schema registry maintains consistency:** All sensors follow a centralized schema, making it easy to enforce data standards across the entire IoT system.
 
-- **Automated multi-destination routing:** Instead of configuring multiple rules manually, the event-driven rule engine automatically routes transformed and validated messages to multiple destinations simultaneously, using EMQX’s built-in [data integration](https://docs.emqx.com/en/emqx/latest/data-integration/data-bridges.html) capabilities:
+- **Automated multi-destination routing:** Instead of configuring multiple rules manually, the event-driven rule engine automatically routes transformed and validated messages to multiple destinations simultaneously, using EMQX’s built-in [data integration](https://docs.emqx.com/en/emqx/latest/develop/data-integration/data-bridges.html) capabilities:
 
   - A cloud database for historical storage (e.g., PostgreSQL, MySQL, MongoDB, AWS RDS).
   - A real-time monitoring dashboard for instant visualization (e.g., InfluxDB, Prometheus, which feeds Grafana or Kibana dashboards).
   - An AI analytics engine for predictive maintenance insights (Apache Kafka or Google Pub/Sub, which connects to an AI-driven analytics engine).
 
-- **Fewer manual configurations, faster insights:** With built-in event triggers and automation, messages are processed instantly based on predefined rules. In addition, a powerful visual tool “[Flow Desginer](https://docs.emqx.com/en/emqx/latest/flow-designer/introduction.html)” helps you make the configuration of data processing and integration simpler and more efficient.
+- **Fewer manual configurations, faster insights:** With built-in event triggers and automation, messages are processed instantly based on predefined rules. In addition, a powerful visual tool “[Flow Desginer](https://docs.emqx.com/en/emqx/latest/develop/flow-designer/introduction.html)” helps you make the configuration of data processing and integration simpler and more efficient.
 
 If you need real-time, structured, and high-quality IoT data processing, upgrade to EMQX 5.x to fully automate and optimize your IoT data processing.
 
@@ -109,8 +109,8 @@ EMQX 5.x dramatically improves observability and monitoring with a user-friendly
 - Redesigned Dashboard UI
   - Offers enhanced real-time observability with more in-depth metrics. For example, in v4, you could see total message rates per node, but in v5, you can break it down by topic, client, or authentication mechanism.
   - EMQX v5 expands the scope of metrics, tracking not just system-level performance but also application-level behaviors, such as authentication and authorization performance, and rule engine execution time & success/failure count.
-- EMQX v5 can directly export metrics to [Datadog](https://docs.emqx.com/en/emqx/latest/observability/datadog.html), a cloud-based observability and security platform, allowing real-time monitoring of [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) performance in the Datadog dashboard.
-- Unified Tracing, Metrics, and Logging with [OpenTelemetry](https://docs.emqx.com/en/emqx/latest/observability/opentelemetry/opentelemetry.html)
+- EMQX v5 can directly export metrics to [Datadog](https://docs.emqx.com/en/emqx/latest/guides/observability/datadog.html), a cloud-based observability and security platform, allowing real-time monitoring of [MQTT broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) performance in the Datadog dashboard.
+- Unified Tracing, Metrics, and Logging with [OpenTelemetry](https://docs.emqx.com/en/emqx/latest/guides/observability/opentelemetry/opentelemetry.html)
   - EMQX v5 integrates native OpenTelemetry support, allowing users to collect metrics in tracing systems like Jaeger.
   - Users can correlate logs, traces, and metrics for in-depth debugging.
 - Machine (indexer) friendly structured logs in JSON format. Error logs are consistently tagged with 'msg' tokens to facilitate locating the cause of the problem.
@@ -119,7 +119,7 @@ If you're spending too much time troubleshooting or struggling with limited visi
 
 ### MQTT Over QUIC: Faster, More Reliable, and Built for the Future
 
-Traditional MQTT relies on TCP, which can struggle with latency, congestion, and unreliable mobile networks. EMQX 5.x introduces [MQTT over QUIC](https://docs.emqx.com/en/emqx/latest/mqtt-over-quic/introduction.html), a next-generation transport protocol designed to enhance speed, reliability, and security.
+Traditional MQTT relies on TCP, which can struggle with latency, congestion, and unreliable mobile networks. EMQX 5.x introduces [MQTT over QUIC](https://docs.emqx.com/en/emqx/latest/develop/mqtt-over-quic/introduction.html), a next-generation transport protocol designed to enhance speed, reliability, and security.
 
 | **Feature**                      | **EMQX 4.x (TCP-based MQTT)**               | **EMQX 5.x ([MQTT over QUIC](https://www.emqx.com/en/blog/mqtt-over-quic))**                               | **Why Upgrade?**           |
 | :------------------------------- | :------------------------------------------ | :---------------------------------------------------------- | :------------------------- |
@@ -146,7 +146,7 @@ Migrating from EMQX 4.x to 5.x is designed to be smooth and low-risk, ensuring m
 - **Automated Data Migration:** EMQX provides detailed migration guides and automated scripts to simplify configuration and rule conversion. Configuration, authentication data, and message routing rules can be migrated with minimal manual effort.
 - **Zero-Downtime Upgrades:** Starting with EMQX 5.1, the system supports seamless rolling upgrades for the cluster. With rolling upgrade support, clusters can be upgraded one node at a time, keeping connections active and preventing service interruptions.
 
-With EMQX 5.x’s automated tools, transitioning from 4.x is seamless, with minimal disruption to your IoT operations. For detailed steps to upgrade, refer to: [Upgrade EMQX Cluster from 4.4 to 5.x | EMQX Docs](https://docs.emqx.com/en/emqx/latest/deploy/upgrade-cluster.html).
+With EMQX 5.x’s automated tools, transitioning from 4.x is seamless, with minimal disruption to your IoT operations. For detailed steps to upgrade, refer to: [Upgrade EMQX Cluster from 4.4 to 5.x | EMQX Docs](https://docs.emqx.com/en/emqx/latest/get-started/deploy/upgrade-cluster.html).
 
 ## Long-Term Support and Future-Proofing
 

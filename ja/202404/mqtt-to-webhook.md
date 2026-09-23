@@ -100,7 +100,7 @@ docker-compose up -d
 
 デバイスのサブスクリプションとメッセージのパブリッシュをシミュレートした後は、EMQX上でこれらのデバイスから送信されたメッセージやイベントを処理する番です。この作業は、EMQXのWebhookデータ統合機能によって実現されます。
 
-EMQXは、デバイスから送信されたメッセージと、接続/切断およびサブスクリプション/アンサブスクリプションのイベントを処理するために、2つのWebhookを設定します。その他のクライアントイベントについては、[Webhookのドキュメント](https://docs.emqx.com/en/enterprise/latest/data-integration/webhook.html)を参照してください。
+EMQXは、デバイスから送信されたメッセージと、接続/切断およびサブスクリプション/アンサブスクリプションのイベントを処理するために、2つのWebhookを設定します。その他のクライアントイベントについては、[Webhookのドキュメント](https://docs.emqx.com/en/emqx/latest/develop/data-integration/webhook.html)を参照してください。
 
 これらの設定を表示または変更するには、ブラウザで次のURLを開きます：`http://localhost:18083`。デフォルトのユーザー名「admin」とパスワード「public」を使用してログインします。その後、Integration → Webhookページに移動します。
 

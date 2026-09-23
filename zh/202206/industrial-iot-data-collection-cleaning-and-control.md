@@ -32,7 +32,7 @@ Neuron 和 eKuiper 部署在靠近设备的边缘端网关或者工控机上。N
 
 Neuron 和 eKuiper 都支持二进制安装包以及 Docker 容器化部署方案。本文将以 Docker 方案为例，采用 [docker compose](https://docs.docker.com/compose/) 方式，一键完成边缘端两个组件的快速部署。
 
-1. 复制 [docker-compose.yml](https://docs.emqx.com/zh/neuron/latest/data-streaming/data-streaming.html) 文件到部署的机器上。其内容如下，包含了 Neuron、eKuiper 以及 eKuiper 的管理界面 eKuiper manager（可选）。其中，eKuiper 和 Neuron 共享了名为 nng-ipc 的 volume ，用于二者通信。
+1. 复制 [docker-compose.yml](https://docs.emqx.com/zh/neuronex/latest/) 文件到部署的机器上。其内容如下，包含了 Neuron、eKuiper 以及 eKuiper 的管理界面 eKuiper manager（可选）。其中，eKuiper 和 Neuron 共享了名为 nng-ipc 的 volume ，用于二者通信。
 
    ```
    version: '3.4'
@@ -90,7 +90,7 @@ Neuron 和 eKuiper 都支持二进制安装包以及 Docker 容器化部署方�
 
 Neuron 启动之后，我们需要配置 Neuron 的南向设备和北向 eKuiper 应用通道，然后启动模拟器进行模拟数据采集。
 
-南向设备和模拟器配置，请参考[Neuron 快速教程](https://docs.emqx.com/zh/neuron/latest/quick-start/hardware-specifications.html#资源准备)，完成到运行和使用的 3. 南向配置部分。该教程中的北向配置部分为 MQTT 应用，本教程需要采用 eKuiper 作为北向应用。
+南向设备和模拟器配置，请参考[Neuron 快速教程](https://docs.emqx.com/zh/neuronex/latest/资源准备)，完成到运行和使用的 3. 南向配置部分。该教程中的北向配置部分为 MQTT 应用，本教程需要采用 eKuiper 作为北向应用。
 
 ### Neuron 北向 eKuiper 应用配置
 

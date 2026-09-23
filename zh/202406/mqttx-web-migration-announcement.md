@@ -23,7 +23,7 @@
 
 2. **更新连接配置**：
 
-   我们建议您在测试环境和生产环境中都使用 `wss://` 连接。如果您不熟悉如何配置，请参考我们的详细文档：[配置安全 WebSocket 监听器](https://docs.emqx.com/zh/emqx/latest/configuration/listener.html#配置安全-websocket-监听器)。该文档提供了逐步的配置指南来帮助您顺利完成更新。
+   我们建议您在测试环境和生产环境中都使用 `wss://` 连接。如果您不熟悉如何配置，请参考我们的详细文档：[配置安全 WebSocket 监听器](https://docs.emqx.com/zh/emqx/latest/guides/configuration/listener.html配置安全-websocket-监听器)。该文档提供了逐步的配置指南来帮助您顺利完成更新。
 
 ## 如何本地迁移您的数据
 

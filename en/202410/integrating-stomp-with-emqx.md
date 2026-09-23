@@ -33,7 +33,7 @@ The STOMP gateway in EMQX is based on [STOMP v1.2](https://stomp.github.io/stomp
 
 #### Installing EMQX 5.8.0
 
-EMQX offers download and installation guides for various platforms: [https://docs.emqx.com/en/emqx/latest/deploy/install-enterprise.html](https://docs.emqx.com/en/emqx/latest/deploy/install-enterprise.html).
+EMQX offers download and installation guides for various platforms: [https://docs.emqx.com/en/emqx/latest/get-started/deploy/install-enterprise.html](https://docs.emqx.com/en/emqx/latest/get-started/deploy/install-enterprise.html).
 
 For this example, we will launch [EMQX Enterprise](https://www.emqx.com/en/products/emqx) 5.8.0 using Docker:
 

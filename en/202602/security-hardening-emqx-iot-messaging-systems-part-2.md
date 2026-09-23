@@ -34,7 +34,7 @@ The requisite scale for EMQX production environments often exceeds standard limi
 | fs.nr_open    | /etc/sysctl.conf | 2,097,152                        | Max FDs a single process can *request*.     |
 | LimitNOFILE   | emqx.service     | 2,097,152                        | The hard limit applied to the EMQX process. |
 
-See EMQX documentation for more details [Performance Tuning (Linux) | EMQX Enterprise Docs](https://docs.emqx.com/en/emqx/latest/performance/tune.html) 
+See EMQX documentation for more details [Performance Tuning (Linux) | EMQX Enterprise Docs](https://docs.emqx.com/en/emqx/latest/guides/performance/tune.html) 
 
 
 
@@ -156,7 +156,7 @@ By default, the critical inter-broker communication protocols, the Erlang distri
 
 **Implementation of TLS:**
 
-To mitigate this, EMQX supports wrapping both the Erlang distribution and internal RPC protocols in TLS. The security relies on mutual TLS (mTLS), where each node authenticates to its peers using valid certificates. Follow the configuration guide: [Cluster Security | EMQX Enterprise Docs](https://docs.emqx.com/en/emqx/latest/deploy/cluster/security.html) 
+To mitigate this, EMQX supports wrapping both the Erlang distribution and internal RPC protocols in TLS. The security relies on mutual TLS (mTLS), where each node authenticates to its peers using valid certificates. Follow the configuration guide: [Cluster Security | EMQX Enterprise Docs](https://docs.emqx.com/en/emqx/latest/guides/cluster/security.html) 
 
 **Performance Consideration:**
 

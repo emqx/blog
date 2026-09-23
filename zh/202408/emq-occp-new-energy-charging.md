@@ -56,7 +56,7 @@ EMQX 5 中提供了一个支持 OCPP-J 1.6 协议的 OCPP 网关：
 
 ## 配置 OCPP 网关
 
-首先，我们要安装最新的 [EMQX Enterprise](https://www.emqx.com/zh/products/emqx)。请参阅 [EMQX Enterprise 入门指南| EMQX Enterprise 文档](https://docs.emqx.com/zh/emqx/latest/getting-started/getting-started.html#%E5%AE%89%E8%A3%85-emqx)。
+首先，我们要安装最新的 [EMQX Enterprise](https://www.emqx.com/zh/products/emqx)。请参阅 [EMQX Enterprise 入门指南| EMQX Enterprise 文档](https://docs.emqx.com/zh/emqx/latest/get-started/getting-started.html#%E5%AE%89%E8%A3%85-emqx)。
 
 或者，也可以直接使用以下命令，通过 Docker 启动最新版本的 EMQX 容器：
 

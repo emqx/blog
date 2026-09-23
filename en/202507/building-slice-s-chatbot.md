@@ -143,7 +143,7 @@ We really liked how much insight EMQX gives you into what’s going on under the
 
 ### A Rule Engine That Actually Helps
 
-One of EMQX’s standout features is its[ ***visual rule engine\***](https://docs.emqx.com/en/emqx/latest/data-integration/rules.html), which lets you route messages to external systems without writing a bunch of custom code.
+One of EMQX’s standout features is its[ ***visual rule engine\***](https://docs.emqx.com/en/emqx/latest/develop/data-integration/rules.html), which lets you route messages to external systems without writing a bunch of custom code.
 
 - Easily connect to ***Kafka, HTTP endpoints, databases\***, and other systems.
 - It’s fast enough to ***process millions of messages in real time\*** with minimal overhead.

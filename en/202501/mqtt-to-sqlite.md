@@ -34,7 +34,7 @@ It's important to recognize that SQLite is not suitable for every scenario. As a
 To demonstrate an integration of MQTT and SQLite, we use the following tools:
 
 - [EMQX](https://github.com/emqx/emqx) as MQTT broker.
-- [EMQX Webhooks](https://docs.emqx.com/en/emqx/latest/data-integration/webhook.html) feature to send MQTT messages to an HTTP endpoint.
+- [EMQX Webhooks](https://docs.emqx.com/en/emqx/latest/develop/data-integration/webhook.html) feature to send MQTT messages to an HTTP endpoint.
 - [Python](https://www.python.org/) with [Flask](https://flask.palletsprojects.com/) to receive messages from EMQX Webhooks.
 
 We will consider the following scenario:
@@ -374,7 +374,7 @@ services:
 
 Note that in this case, the configured Webhook will not be seen in the Integration -> Webhooks section of the Dashboard because we didn't use the simplified interface. All the settings may be seen in the Integration -> Rules and Integration -> Connector sections.
 
-Also, EMQX may be configured with a configuration file. See relevant [documentation](https://docs.emqx.com/en/emqx/latest/deploy/install.html).
+Also, EMQX may be configured with a configuration file. See relevant [documentation](https://docs.emqx.com/en/emqx/latest/get-started/deploy/install.html).
 
 ## Conclusion
 

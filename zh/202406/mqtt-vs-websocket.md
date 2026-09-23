@@ -206,7 +206,7 @@ EMQX MQTT Broker 默认支持 WebSocket，使得在 WebSocket 上实现 MQTT 变
 docker run -d --name emqx -p 1883:1883 -p 8083:8083 -p 8084:8084 -p 8883:8883 -p 18083:18083 emqx/emqx:5.6.1
 ```
 
-此命令将安装 EMQX 并启用 WebSocket，并可立即使用。有关在 EMQX 中配置 WebSocket 监听器的详细说明，请访问 [EMQX 文档：配置 WebSocket 监听器](https://docs.emqx.com/en/emqx/latest/configuration/listener.html#configure-websocket-listener)。
+此命令将安装 EMQX 并启用 WebSocket，并可立即使用。有关在 EMQX 中配置 WebSocket 监听器的详细说明，请访问 [EMQX 文档：配置 WebSocket 监听器](https://docs.emqx.com/en/emqx/latest/guides/configuration/listener.html#configure-websocket-listener)。
 
 **2. 安装 MQTT.js：**安装 MQTT.js 库以通过 WebSocket 与 MQTT Broker 进行交互：
 

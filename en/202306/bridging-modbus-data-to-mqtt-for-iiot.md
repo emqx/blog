@@ -119,7 +119,7 @@ Select **Holding Registers**. You have successfully launched the simulator, keep
 
 ### Neuron Quick Start
 
-Neuron provides various installation methods, and users can view detailed installation methods in the [documentation](https://docs.emqx.com/en/neuron/latest/installation/installation.html). This example uses containerized deployment.
+Neuron provides various installation methods, and users can view detailed installation methods in the [documentation](https://docs.emqx.com/en/neuronex/latest/). This example uses containerized deployment.
 
 Obtaining Docker images:
 

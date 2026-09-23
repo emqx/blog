@@ -86,7 +86,7 @@ cd emqx
 
 启动成功后浏览器访问 [http://127.0.0.1:18083](http://127.0.0.1:18083) 访问 EMQX 管理控制台 Dashboard，使用 `admin` `public` 默认用户名密码完成初次登录。
 
-**EMQX 企业版 4.1.2 提供了原生 TDengine 写入插件，性能更好、使用更方便，请移步[规则引擎-写入数据到 TDengine](https://docs.emqx.com/zh/enterprise/latest/rule/rule-engine.html)查看**
+**EMQX 企业版 4.1.2 提供了原生 TDengine 写入插件，性能更好、使用更方便，请移步[规则引擎-写入数据到 TDengine](https://docs.emqx.com/zh/emqx/latest/develop/data-integration/rules.html)查看**
 
 ### 安装 TDengine
 

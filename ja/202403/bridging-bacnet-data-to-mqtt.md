@@ -54,7 +54,7 @@ docker run -d --name emqx-enterprise -p 1883:1883 -p 8083:8083 -p 8084:8084 -p 8
 
 ### Neuronのクイックスタート
 
-Neuronはさまざまなインストール方法を提供しています。詳細なインストール方法は[ドキュメント](https://docs.emqx.com/en/neuron/latest/installation/installation.html)で確認できます。この例では、コンテナ化されたデプロイメントを使用します。
+Neuronはさまざまなインストール方法を提供しています。詳細なインストール方法は[ドキュメント](https://docs.emqx.com/en/neuronex/latest/)で確認できます。この例では、コンテナ化されたデプロイメントを使用します。
 
 Dockerイメージを取得します：
 

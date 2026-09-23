@@ -97,7 +97,7 @@ After EMQX is installed, we demonstrate the use of the rule engine through a spe
   WHERE payload.speed > '120'
   ```
 
-- **Testing and Debugging SQL**: After writing the SQL, click the 'Start Test' button to debug the SQL syntax in the SQL Tab. You can enter simulated data to test, thus adjusting and optimizing your SQL statement. For a detailed guide on writing SQL, refer to [EMQX Documentation](https://docs.emqx.com/en/enterprise/latest/data-integration/rule-sql-syntax.html). Once testing is complete, we will set up HTTP and PostgreSQL environments to add two Actions for this rule.
+- **Testing and Debugging SQL**: After writing the SQL, click the 'Start Test' button to debug the SQL syntax in the SQL Tab. You can enter simulated data to test, thus adjusting and optimizing your SQL statement. For a detailed guide on writing SQL, refer to [EMQX Documentation](https://docs.emqx.com/en/emqx/latest/develop/data-integration/rule-sql-syntax.html). Once testing is complete, we will set up HTTP and PostgreSQL environments to add two Actions for this rule.
 
 ### Setting up HTTP Service
 

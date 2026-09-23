@@ -245,7 +245,7 @@ docker run -d --name neuronex -p 8085:8085 --log-opt max-size=100m --privileged=
 以上示例通过 Modbus 模拟器演示了数据采集流程。实际上，NeuronEX 支持超过 100 种工业协议，且连接过程均如本文所示般简单直观。您可以在这里找到详细教程：
 
 - 西门子 S7-1200 PLC：[10 分钟快速入门：使用 NeuronEX 将西门子 S7-1200 PLC 数据接入 MQTT](https://www.emqx.com/zh/blog/connecting-siemens-s7-1200-plc-to-mqtt)  
-- 欧姆龙 NX1P 系列 PLC：[Omron NX1P 连接示例 | Neuron 文档](https://docs.emqx.com/zh/neuron/latest/configuration/south-devices/omron-fins/example/nx1p/nx1p.html) 
+- 欧姆龙 NX1P 系列 PLC：[Omron NX1P 连接示例 | Neuron 文档](https://docs.emqx.com/zh/neuronex/latest/) 
 - 西门子 S7300 系列 PLC：[Siemens S7300 PLC 连接示例 | EMQX Neuron 文档](https://docs.emqx.com/zh/neuronex/latest/configuration/south-devices/siemens-mpi/s7300.html)  
 - 三菱 FX 系列 PLC：[FX5U 连接示例 | EMQX Neuron 文档](https://docs.emqx.com/zh/neuronex/latest/configuration/south-devices/mitsubishi-3e/fx5u.html) 
 - 三菱 Q 系列 PLC：[Q03UDE 连接示例 | EMQX Neuron 文档](https://docs.emqx.com/zh/neuronex/latest/configuration/south-devices/mitsubishi-3e/q03ude.html) 

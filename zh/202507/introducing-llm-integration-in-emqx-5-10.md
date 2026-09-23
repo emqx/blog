@@ -144,8 +144,8 @@ EMQX 与大模型的深度融合，正在重新定义物联网开发的边界。
 准备好利用人工智能激活您的物联网数据了吗？
 
 - 即刻[下载 EMQX 5.10.0 ](https://www.emqx.com/zh/downloads-and-install/enterprise)开启智能数据处理之旅。
-- 深度解析「[基于 LLM 的数据处理](https://docs.emqx.com/zh/emqx/latest/flow-designer/llm-based-data-processing.html)」技术文档。
-- 根据 [OpenAI](https://docs.emqx.com/zh/emqx/latest/flow-designer/openai-node-quick-start.html) 与 [Anthropic](https://docs.emqx.com/zh/emqx/latest/flow-designer/anthropic-node-quick-start.html) 实战指南，轻松上手。
+- 深度解析「[基于 LLM 的数据处理](https://docs.emqx.com/zh/emqx/latest/develop/flow-designer/llm-based-data-processing.html)」技术文档。
+- 根据 [OpenAI](https://docs.emqx.com/zh/emqx/latest/develop/flow-designer/openai-node-quick-start.html) 与 [Anthropic](https://docs.emqx.com/zh/emqx/latest/develop/flow-designer/anthropic-node-quick-start.html) 实战指南，轻松上手。
 
 
 

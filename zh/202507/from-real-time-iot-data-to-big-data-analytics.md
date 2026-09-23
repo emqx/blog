@@ -57,7 +57,7 @@ EMQX 与 Amazon S3 Tables 的深度集成是构建现代实时数据策略的基
 **准备好构建从 OT 到 AI 的桥梁了吗？**
 
 - 立即下载 [**EMQX Enterprise 5.10.0**](https://www.emqx.com/zh/downloads-and-install/enterprise)**。**
-- **查看**[ **S3 Tables 集成文档**](https://docs.emqx.com/zh/emqx/latest/data-integration/s3-tables.html)中的分步教程。
+- **查看**[ **S3 Tables 集成文档**](https://docs.emqx.com/zh/emqx/latest/develop/data-integration/s3-tables.html)中的分步教程。
 - [**联系我们的团队**](https://www.emqx.com/zh/contact?product=emqx)进行个性化演示。
 
 

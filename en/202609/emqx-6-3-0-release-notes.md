@@ -96,7 +96,7 @@ It provides three core primitives as MQTT resources:
 - **Sessions**: Stateful LLM conversations that maintain context across interactions.
 - **Pipelines**: Event-driven workflows that orchestrate agents and tools in response to MQTT events.
 
-Learn more about MQTT Agent: https://docs.emqx.com/en/emqx/latest/extensions/plugin-catalog/6.3/emqx-agent.html
+Learn more about MQTT Agent: https://docs.emqx.com/en/emqx/latest/guides/extensions/plugin-catalog/6.3/emqx-agent.html
 
 Download MQTT Agent plugin: 
 

@@ -249,7 +249,7 @@ EMQXは、高可用性と水平方向のスケーラビリティをサポート�
 - [EMQX: The World's #1 Open Source Distributed MQTT Broker](https://github.com/emqx/emqx)
 - [EMQX 5.0 Documentation](https://docs.emqx.com/en/emqx/v5.0/)
 - [EMQX Enterprise Documentation](https://docs.emqx.com/en/enterprise/v5.0/)
-- [EMQX Operator Documentation](https://docs.emqx.com/en/emqx-operator/latest/)
+- [EMQX Operator Documentation](https://docs.emqx.com/en/emqx/latest/get-started/deploy/kubernetes/operator/operator.html)
 - [MQTT over QUIC: Next-Generation IoT Standard Protocol](https://www.emqx.com/en/blog/mqtt-over-quic)
 
 

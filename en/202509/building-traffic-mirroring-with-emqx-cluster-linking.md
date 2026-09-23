@@ -36,7 +36,7 @@ This section provides a step-by-step guide to configuring one-way Cluster Linkin
 
 Before starting, ensure the following are in place:
 
-- **Self-Hosted EMQX Deployment**: Configure a self-hosted EMQX instance on a virtual machine in a cloud environment running EMQX Open Source v5.8.7. Create a cluster in EMQX with the `cluster.name` as `deployment-audit` . See [Create a Cluster](https://docs.emqx.com/en/emqx/latest/deploy/cluster/create-cluster.html) for details.
+- **Self-Hosted EMQX Deployment**: Configure a self-hosted EMQX instance on a virtual machine in a cloud environment running EMQX Open Source v5.8.7. Create a cluster in EMQX with the `cluster.name` as `deployment-audit` . See [Create a Cluster](https://docs.emqx.com/en/emqx/latest/develop/cluster/introduction.html) for details.
 - **EMQX Dedicated Deployment**: Set up an EMQX Dedicated deployment named `deployment-prod`. Follow the step-by-step instructions in the [EMQX Platform documentation](https://docs.emqx.com/en/cloud/latest/create/dedicated.html#create-a-dedicated-deployment).
 - **Network Connectivity**: Establish a connection between the self-hosted instance and Dedicated deployment using **one** of these methods:
   - **VPC Peering (Recommended)**: Provides a secure, low-latency private connection by directly linking the two VPCs. Refer to the [VPC Peering guide](https://docs.emqx.com/en/cloud/latest/deployments/vpc_peering.html) for setup instructions.

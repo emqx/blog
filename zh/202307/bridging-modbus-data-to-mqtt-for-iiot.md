@@ -123,7 +123,7 @@ docker run -d --name emqx -p 1883:1883 -p 8081:8081 -p 8083:8083 -p 8084:8084 -p
 
 ### Neuron 快速开始
 
-Neuron 提供多种安装方式，用户可在 [安装](https://docs.emqx.com/zh/neuron/latest/installation/installation.html) 中查看详细的安装方式。本实例采用容器化部署的方式，以便于最快开始体验 Neuron。
+Neuron 提供多种安装方式，用户可在 [安装](https://docs.emqx.com/zh/neuronex/latest/) 中查看详细的安装方式。本实例采用容器化部署的方式，以便于最快开始体验 Neuron。
 
 获取 Docker 镜像：
 

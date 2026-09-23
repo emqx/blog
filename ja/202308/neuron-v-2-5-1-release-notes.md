@@ -28,7 +28,7 @@
 
 <br> 
 
-> *テンプレートはインポート/エクスポート機能もサポートしています。詳しくは*[*テンプレートの使用方法*](https://docs.emqx.com/en/neuron/latest/configuration/templates/templates.html)*をご覧ください。*
+> *テンプレートはインポート/エクスポート機能もサポートしています。詳しくは*[*テンプレートの使用方法*](https://docs.emqx.com/en/neuronex/latest/)*をご覧ください。*
 
 ### Modbus UDP トランスポート・サポート
 
@@ -58,7 +58,7 @@ Profinet IO (Industrial Ethernet Input/Output) は、産業オートメーショ
 
 ![Profinet IO ](https://assets.emqx.com/images/f561fb20b9ce986c5a298884fe3bdbb1.png)
 
-> [*Profinet IO ドライバ ユーザーマニュアル*](https://docs.emqx.com/en/neuron/latest/configuration/south-devices/profinet/profinet.html)
+> [*Profinet IO ドライバ ユーザーマニュアル*](https://docs.emqx.com/en/neuronex/latest/)
 
 ### Mitsubishi FX
 
@@ -68,7 +68,7 @@ Neuronの三菱FXプラグインを使用すると、FXプログラミング・�
 
 ![Mitsubishi FX](https://assets.emqx.com/images/af0daafca5c6d872b1f6e873331bdc0b.png) 
 
-> [*Mitsubishi FX ドライバー ユーザーマニュアル*](https://docs.emqx.com/en/neuron/latest/configuration/south-devices/mitsubishi-fx/overview.html#parameter-configuration)
+> [*Mitsubishi FX ドライバー ユーザーマニュアル*](https://docs.emqx.com/en/neuronex/latest/#parameter-configuration)
 
 ### Omron FINS UDP
 
@@ -80,7 +80,7 @@ Neuron 2.5.1のFINS UDPドライバは、Ethernetを介したOmron 機器間の�
 
 ![Omron FINS UDP](https://assets.emqx.com/images/d9ffce2539d9929ad67128b4d474b7b8.png) 
 
-> [*Omron FINS UDPドライバ ユーザーマニュアル*](https://docs.emqx.com/en/neuron/latest/configuration/south-devices/omron-fins/omron-fins-udp.html)
+> [*Omron FINS UDPドライバ ユーザーマニュアル*](https://docs.emqx.com/en/neuronex/latest/)
 
 ### Panasonic Mewtocol
 
@@ -90,7 +90,7 @@ NeuronのPanasonic Mewtocolプラグインを使用すると、Ethernet経由で
 
 ![Panasonic Mewtocol ](https://assets.emqx.com/images/ae5b3e0fde0b98ec26bf59a4760beaa1.png)
 
-> [*パナソニックMewtocolドライバユーザーマニュアル*](https://docs.emqx.com/en/neuron/latest/configuration/south-devices/panasonic-mewtocol/overview.html)
+> [*パナソニックMewtocolドライバユーザーマニュアル*](https://docs.emqx.com/en/neuronex/latest/)
 
 ### DLT645-1997
 
@@ -104,7 +104,7 @@ DL/T645-1997 プラグインは、シリアルポート接続と透過的 TCP �
 
 ![image.png](https://assets.emqx.com/images/d8b746a9604695910dbbba729bf4dbb8.png)
 
-> [*DLT645-1997 ドライバ ユーザーマニュアル*](https://docs.emqx.com/en/neuron/latest/configuration/south-devices/dlt645-1997/dlt645-1997.html#module-description)
+> [*DLT645-1997 ドライバ ユーザーマニュアル*](https://docs.emqx.com/en/neuronex/latest/#module-description)
 
 ## 今後の企画
 

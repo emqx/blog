@@ -176,7 +176,7 @@ mqttx pub -h 127.0.0.1 -p 1883 -i pub -t test/sub \\
 
 ## 使用 EMQX 规则引擎处理 JSON 格式的有效载荷
 
-EMQX 提供了强大的规则引擎，能够方便地处理和解析各种格式的有效载荷。了解更多信息，请访问 [EMQX 规则引擎](https://docs.emqx.com/zh/enterprise/latest/data-integration/rules.html)。
+EMQX 提供了强大的规则引擎，能够方便地处理和解析各种格式的有效载荷。了解更多信息，请访问 [EMQX 规则引擎](https://docs.emqx.com/zh/emqx/latest/develop/data-integration/rules.html)。
 
 对于 JSON 格式的有效载荷，EMQX 规则引擎能够提取和操作其中的字段。以下是使用 EMQX 规则引擎处理 JSON 有效载荷的具体步骤。
 

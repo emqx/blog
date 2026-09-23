@@ -125,8 +125,8 @@ The integration of LLMs into EMQX is more than just a new feature; it's a paradi
 **Ready to activate your IoT data with AI?**
 
 - [**Download EMQX Enterprise 5.10.0**](https://www.emqx.com/en/downloads-and-install/enterprise) to get started.
-- Dive deeper with our technical documentation on [**LLM-Based Data Processing**](https://docs.emqx.com/en/emqx/latest/flow-designer/llm-based-data-processing.html).
-- Follow our step-by-step tutorials for [**OpenAI**](https://docs.emqx.com/en/emqx/latest/flow-designer/openai-node-quick-start.html) and [**Anthropic**](https://docs.emqx.com/en/emqx/latest/flow-designer/anthropic-node-quick-start.html).
+- Dive deeper with our technical documentation on [**LLM-Based Data Processing**](https://docs.emqx.com/en/emqx/latest/develop/flow-designer/llm-based-data-processing.html).
+- Follow our step-by-step tutorials for [**OpenAI**](https://docs.emqx.com/en/emqx/latest/develop/flow-designer/openai-node-quick-start.html) and [**Anthropic**](https://docs.emqx.com/en/emqx/latest/develop/flow-designer/anthropic-node-quick-start.html).
 
 
 

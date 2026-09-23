@@ -69,7 +69,7 @@ For details, refer to: [External algorithm function example | EMQX Neuron Docs](
 
 - Describe requirements in natural language → LLM auto-generates code → One-click deployment
 
-For details, refer to: [AI-generated Python Plugin Guide | EMQX Neuron Docs](https://docs.emqx.com/en/neuronex/latest/best-practise/llm-portable-plugin.html) 
+For details, refer to: [AI-generated Python Plugin Guide | EMQX Neuron Docs](https://docs.emqx.com/en/neuronex/latest/best-practise/overview.html) 
 
 **Level 4: Python Portable Plugin** (1 hour)
 

@@ -122,7 +122,7 @@ EMQX 不仅全面支持 MQTT 3.1、3.1.1 和 5.0 版本，还支持多种主流�
 
 EMQX v5 版本中新增了网关架构，以统一多协议的接入模型。我们支持将 [MQTT-SN](https://www.emqx.com/zh/blog/connecting-mqtt-sn-devices-using-emqx)、Stomp、CoAP、LwM2M 等协议转换为统一的发布/订阅消息模型，并具有独立的认证配置和客户端管理。
 
-更多详情请参阅：[多协议网关 | EMQX Enterprise 文档](https://docs.emqx.com/zh/enterprise/latest/gateway/gateway.html)
+更多详情请参阅：[多协议网关 | EMQX Enterprise 文档](https://docs.emqx.com/zh/emqx/latest/develop/gateway/gateway.html)
 
 ## 结语
 

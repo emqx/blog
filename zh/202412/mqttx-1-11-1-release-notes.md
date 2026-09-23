@@ -53,7 +53,7 @@ MQTTX 现在提供主题树和连接消息列表之间的双向同步功能。�
 
   ![image.png](https://assets.emqx.com/images/37aeea11a1713b3ca17fe085be6a2924.png)
 
-> 注意：默认情况下，EMQX 仅允许本地客户端订阅 $SYS 主题。如需远程访问，需要修改 ACL 规则。详细配置请参考 [EMQX 文档](https://docs.emqx.com/zh/emqx/latest/access-control/authz/authz.html)。
+> 注意：默认情况下，EMQX 仅允许本地客户端订阅 $SYS 主题。如需远程访问，需要修改 ACL 规则。详细配置请参考 [EMQX 文档](https://docs.emqx.com/zh/emqx/latest/guides/access-control/authz/authz.html)。
 
 ## 折叠模式下的连接选择
 

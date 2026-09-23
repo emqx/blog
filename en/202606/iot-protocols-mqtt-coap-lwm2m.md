@@ -171,7 +171,7 @@ The LwM2M Protocol pre-defines eight types of objects to meet the basic requirem
 
 For scalability, the protocol also allows customization of additional objects based on specific needs. In this data model, resources, object instances, and objects are represented by numerical IDs to achieve maximum compression. Therefore, any resource can be represented in a concise manner with up to 3 levels, such as /1/0/1 representing the short ID resource of the first instance of the Server Object. During the registration phase, the LwM2M client transmits object instances carrying resource information to the LwM2M server, informing the server of the capabilities of the device itself.
 
-[EMQX](https://www.emqx.com/en/products/emqx) provides an [LwM2M gateway](https://docs.emqx.com/en/enterprise/latest/gateway/lwm2m.html) that enables device onboarding, security management, seamless conversion of LwM2M-MQTT messages, and integration of LwM2M data with over 40 external data systems.
+[EMQX](https://www.emqx.com/en/products/emqx) provides an [LwM2M gateway](https://docs.emqx.com/en/emqx/latest/develop/gateway/lwm2m.html) that enables device onboarding, security management, seamless conversion of LwM2M-MQTT messages, and integration of LwM2M data with over 40 external data systems.
 
 ## 8. XMPP
 

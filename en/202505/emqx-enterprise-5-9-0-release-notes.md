@@ -6,7 +6,7 @@ Alongside this, groundbreaking features like Namespace and Smart Data Hub are in
 
 ## Namespace: Deploy Multi-Tenancy with Ease and Efficiency
 
-The new [Namespace](https://docs.emqx.com/en/emqx/latest/multi-tenancy/namespace.html) feature simplifies multi-tenancy by allowing isolated tenant configurations within a single EMQX cluster. Each namespace can be customized with tenant-specific settings, such as rate limits. This ensures operational efficiency, resource optimization, and data privacy for each tenant without deploying multiple clusters.
+The new [Namespace](https://docs.emqx.com/en/emqx/latest/guides/multi-tenancy/namespace-overview.html) feature simplifies multi-tenancy by allowing isolated tenant configurations within a single EMQX cluster. Each namespace can be customized with tenant-specific settings, such as rate limits. This ensures operational efficiency, resource optimization, and data privacy for each tenant without deploying multiple clusters.
 
 **Key Benefits**:
 
@@ -19,7 +19,7 @@ For example, a connected vehicle platform can create a namespace for a tenant (e
 
 ## Smart Data Hub: All-in-One Solution for Intelligent Data Processing
 
-The [Smart Data Hub](https://docs.emqx.com/en/emqx/latest/data-integration/smart-data-hub.html) in version 5.9.0 integrates essential data processing capabilities like Schema Registry, Schema Validation, and Message Transformation into a cohesive solution. A highlight of this release is support for the External HTTP Server schema in Schema Registry, which enhances flexibility for schema management.
+The [Smart Data Hub](https://docs.emqx.com/en/emqx/latest/develop/data-integration/smart-data-hub.html) in version 5.9.0 integrates essential data processing capabilities like Schema Registry, Schema Validation, and Message Transformation into a cohesive solution. A highlight of this release is support for the External HTTP Server schema in Schema Registry, which enhances flexibility for schema management.
 
 **Key Components and Enhancements**:
 
@@ -31,7 +31,7 @@ For instance, in a connected vehicle platform, the Smart Data Hub can validate s
 
 ## Fallback Actions: Ensuring Reliable Data Integration
 
-New [Fallback Actions](https://docs.emqx.com/en/emqx/latest/data-integration/data-bridges.html#fallback-actions) ensure reliable data integration, even in the face of failures. When a data integration fails to deliver messages to an external system (e.g., due to network issues or service unavailability), fallback actions allow you to define alternative handling strategies, such as storing messages in a buffer, redirecting them to another Sink, or logging them for later analysis. This ensures that critical IoT data is not lost, even during transient failures.
+New [Fallback Actions](https://docs.emqx.com/en/emqx/latest/develop/data-integration/data-bridges.html#fallback-actions) ensure reliable data integration, even in the face of failures. When a data integration fails to deliver messages to an external system (e.g., due to network issues or service unavailability), fallback actions allow you to define alternative handling strategies, such as storing messages in a buffer, redirecting them to another Sink, or logging them for later analysis. This ensures that critical IoT data is not lost, even during transient failures.
 
 For example, in a smart energy grid, if a primary data integration to a cloud analytics platform fails, fallback actions can redirect meter data to a local buffer, ensuring no data is lost until connectivity is restored.
 
@@ -41,19 +41,19 @@ Security is paramount in IoT, and EMQX Enterprise 5.9.0 introduces a suite of ad
 
 ### Authenticator Preconditions
 
-The [Authenticator Preconditions](https://docs.emqx.com/en/emqx/latest/access-control/authn/authn.html#authenticator-preconditions) feature implements conditional logic in the authentication chain to optimize authentication workflows and reduce backend load. It allows EMQX to apply different authenticators for clients connecting through different listeners or based on client attributes. EMQX can then invoke authenticators only when appropriate and avoid unnecessary requests to external systems.
+The [Authenticator Preconditions](https://docs.emqx.com/en/emqx/latest/guides/access-control/authn/authn.html#authenticator-preconditions) feature implements conditional logic in the authentication chain to optimize authentication workflows and reduce backend load. It allows EMQX to apply different authenticators for clients connecting through different listeners or based on client attributes. EMQX can then invoke authenticators only when appropriate and avoid unnecessary requests to external systems.
 
 ### Multi-Factor Authentication
 
-EMQX Enterprise 5.9.0 introduces [Multi-Factor Authentication (MFA)](https://docs.emqx.com/en/emqx/latest/multi-factor-authn/multi-factor-authentication.html) for the EMQX Dashboard. Administrators and users must authenticate using a primary credential (password) and a secondary factor, such as a time-based one-time password (TOTP) generated by an authenticator app. MFA can be enabled via the Dashboard, ensuring secure access to critical management functions.
+EMQX Enterprise 5.9.0 introduces [Multi-Factor Authentication (MFA)](https://docs.emqx.com/en/emqx/latest/guides/multi-factor-authn/multi-factor-authentication.html) for the EMQX Dashboard. Administrators and users must authenticate using a primary credential (password) and a secondary factor, such as a time-based one-time password (TOTP) generated by an authenticator app. MFA can be enabled via the Dashboard, ensuring secure access to critical management functions.
 
 ### Account Lockout and Unlock
 
-The [Account Lockout and Unlock](https://docs.emqx.com/en/emqx/latest/dashboard/introduction.html#account-lockout-and-unlock) feature protects against brute-force attacks by temporarily locking user accounts after a configurable number of failed login attempts. Administrators can unlock accounts manually via the Dashboard or configure automatic unlocking after a set period, ensuring a balance between security and user convenience.
+The [Account Lockout and Unlock](https://docs.emqx.com/en/emqx/latest/guides/dashboard/introduction.html#account-lockout-and-unlock) feature protects against brute-force attacks by temporarily locking user accounts after a configurable number of failed login attempts. Administrators can unlock accounts manually via the Dashboard or configure automatic unlocking after a set period, ensuring a balance between security and user convenience.
 
 ### Password Expiration
 
-The [Password Expiration](https://docs.emqx.com/en/emqx/latest/dashboard/introduction.html#password-expiration) feature allows administrators to enforce periodic password updates for Dashboard users, enhancing security by minimizing long-term credential exposure. Users are prompted to update their passwords before expiration, maintaining uninterrupted access.
+The [Password Expiration](https://docs.emqx.com/en/emqx/latest/guides/dashboard/introduction.html#password-expiration) feature allows administrators to enforce periodic password updates for Dashboard users, enhancing security by minimizing long-term credential exposure. Users are prompted to update their passwords before expiration, maintaining uninterrupted access.
 
 Together, these security enhancements make EMQX Enterprise 5.9.0 one of the most secure MQTT platforms available, ready for regulated and mission-critical IoT deployments.
 
@@ -63,11 +63,11 @@ EMQX Enterprise 5.9.0 includes several performance optimizations, observability 
 
 ### Node-Level Cache for External Authentication and Authorization
 
-This feature improves throughput by caching [authentication](https://docs.emqx.com/en/emqx/latest/access-control/authn/authn.html#external-resource-cache)/[authorization](https://docs.emqx.com/en/emqx/latest/access-control/authz/authz.html#external-resource-cache) results locally at the node level—reducing response times and backend load.
+This feature improves throughput by caching [authentication](https://docs.emqx.com/en/emqx/latest/guides/access-control/authn/authn.html#external-resource-cache)/[authorization](https://docs.emqx.com/en/emqx/latest/guides/access-control/authz/authz.html#external-resource-cache) results locally at the node level—reducing response times and backend load.
 
 ### Disk Log Data Integration
 
-The [Disk Log Data Integration](https://docs.emqx.com/en/emqx/latest/data-integration/disk-log.html) feature enables EMQX to persist event data to disk. This allows for retention of event data, which is valuable for troubleshooting or historical analysis.
+The [Disk Log Data Integration](https://docs.emqx.com/en/emqx/latest/develop/data-integration/disk-log.html) feature enables EMQX to persist event data to disk. This allows for retention of event data, which is valuable for troubleshooting or historical analysis.
 
 ### OpenTelemetry End-to-End Trace Support for Rule Engine
 
@@ -82,7 +82,7 @@ Enhanced MQTT rate limiting now supports burst capacity, allowing temporary spik
 - **Improved Performance of Durable Sessions (**[#14498](https://github.com/emqx/emqx/pull/14498)**)**: Optimized session handling so that idle durable sessions no longer consume CPU resources. Also fixed an issue with the QoS upgrade feature to ensure subscribers only receive messages at their subscribed QoS level, improving both efficiency and delivery accuracy.
 - **Cluster Linking Route Replication Fixes (**[#15067](https://github.com/emqx/emqx/pull/15067)**)**: Resolved several issues affecting route replication, including reconnect loops caused by misconfigurations, crashes when closing nonexistent [MQTT client](https://www.emqx.com/en/blog/mqtt-client-tools) connections, and failures during replication bootstrapping with shared subscriptions.
 
-These enhancements and fixes make EMQX Enterprise 5.9.0 more performant, reliable, and observable, ensuring a robust foundation for enterprise IoT deployments. For more information, refer to the [Release Notes](https://docs.emqx.com/en/emqx/latest/changes/changes-ee-v5.html#_5-9-0).
+These enhancements and fixes make EMQX Enterprise 5.9.0 more performant, reliable, and observable, ensuring a robust foundation for enterprise IoT deployments. For more information, refer to the [Release Notes](https://docs.emqx.com/en/emqx/latest/release-notes/changes-ee-v5.html#_5-9-0).
 
 ## Get Started with EMQX Enterprise 5.9.0
 

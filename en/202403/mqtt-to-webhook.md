@@ -100,7 +100,7 @@ By now, we've successfully replicated the behavior of devices. We will delve int
 
 After simulating device subscriptions and message publications, it's time to process the messages and events sent by these devices on EMQX. This task is accomplished through the Webhook data integration feature on EMQX.
 
-EMQX will set up two Webhooks to handle messages sent by devices, as well as connection/disconnection and subscription/unsubscription events. For more client events, you can refer to the [Webhook documentation](https://docs.emqx.com/en/enterprise/latest/data-integration/webhook.html).
+EMQX will set up two Webhooks to handle messages sent by devices, as well as connection/disconnection and subscription/unsubscription events. For more client events, you can refer to the [Webhook documentation](https://docs.emqx.com/en/emqx/latest/develop/data-integration/webhook.html).
 
 To view or modify these configurations, you can open the following URL in your browser: `http://localhost:18083`. Use the default username "admin" and password "public" to log in. Then navigate to Integration → Webhook page.
 

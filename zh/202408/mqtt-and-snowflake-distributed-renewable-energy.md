@@ -52,7 +52,7 @@
 
 [EMQX 企业版](https://www.emqx.com/zh/products/emqx)是一款企业级 MQTT 物联网接入平台，能够提供高可靠、高性能的物联网实时数据接入，并实现数据的处理和集成。
 
-请参照[此处](https://docs.emqx.com/zh/enterprise/latest/deploy/install.html)安装 EMQX 企业版。
+请参照[此处](https://docs.emqx.com/zh/emqx/latest/get-started/deploy/install.html)安装 EMQX 企业版。
 
 ## 准备 MQTTX 模拟数据
 
@@ -307,7 +307,7 @@ console.log("\nToken: \n\n" + token);
 
 ## 在 EMQX 上配置数据集成
 
-截止 EMQX 企业版 v5.7.1 版本，原生的 Snowflake 数据集成还在开发中，您需要通过 EMQX 的 [HTTP 动作](https://docs.emqx.com/zh/enterprise/v5.7/data-integration/data-bridge-webhook.html) + [Snowflake REST API](https://docs.snowflake.com/en/developer-guide/sql-api/index) 进行数据写入。
+截止 EMQX 企业版 v5.7.1 版本，原生的 Snowflake 数据集成还在开发中，您需要通过 EMQX 的 [HTTP 动作](https://docs.emqx.com/zh/emqx/v5.7/data-integration/data-bridge-webhook.html) + [Snowflake REST API](https://docs.snowflake.com/en/developer-guide/sql-api/index) 进行数据写入。
 
 ![图表说明了使用 Snowflake REST API 设置 EMQX HTTP 操作](https://assets.emqx.com/images/cbdb29e5a8c9790204bee648429e3354.png)
 
@@ -315,7 +315,7 @@ console.log("\nToken: \n\n" + token);
 
 - 打开 **集成 → 规则** 页面，点击右上角 + **创建** 按钮进入规则创建页面；
 
-- 使用如下规则 SQL，用于接收虚拟电站发送的消息，您也可以修改 SQL，利用 EMQX 的[内置 SQL 函数](https://docs.emqx.com/en/enterprise/v5.7/data-integration/rule-sql-builtin-functions.html)进行自定义数据处理：
+- 使用如下规则 SQL，用于接收虚拟电站发送的消息，您也可以修改 SQL，利用 EMQX 的[内置 SQL 函数](https://docs.emqx.com/en/emqx/v5.7/data-integration/rule-sql-builtin-functions.html)进行自定义数据处理：
 
   ```sql
   SELECT
