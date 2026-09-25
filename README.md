@@ -742,6 +742,7 @@ Real-world IoT solutions and industry applications powered by EMQ.
 ## [AI](https://www.emqx.com/en/blog/category/ai)
 Empower IoT with AI and LLM capabilities.
 
+- [Microduck × Device Agent: Giving the Robot a Cloud-Based Brain (Part 1)](https://www.emqx.com/en/blog/microduck-and-device-agent-part-1) ([Edit](https://github.com/emqx/blog/edit/main/en/202609/microduck-and-device-agent-part-1.md))
 - [Green Energy + AI: Building Predictive Smart HEMS with EMQ Device Agent](https://www.emqx.com/en/blog/building-predictive-smart-hems-with-emq-device-agent) ([Edit](https://github.com/emqx/blog/edit/main/en/202608/building-predictive-smart-hems-with-emq-device-agent.md))
 - [Millions of Agents at Risk: The BadHost Vulnerability and Its Architectural Implications](https://www.emqx.com/en/blog/millions-of-agents-at-risk) ([Edit](https://github.com/emqx/blog/edit/main/en/202606/millions-of-agents-at-risk.md))
 - [Device Agent: Engineering Analysis and Practical Implementation](https://www.emqx.com/en/blog/device-agent-engineering-analysis-and-practice) ([Edit](https://github.com/emqx/blog/edit/main/en/202605/device-agent-engineering-analysis-and-practice.md))
