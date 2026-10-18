@@ -70,13 +70,6 @@ In v3.9, the standard image was about 450 MB. The `-ai` image, which carried mod
 
 The `-ai` image is gone, and model inference now needs `-extend`. **If you run models today, change your image tag before you upgrade.**
 
-## Third-Party Sign-in, Not Single Sign-on
-
-
-
-The console supports sign-in through any OAuth 2.0 provider. In v4.0, this is called third-party sign-in: it verifies authentication but does not read user identities or map roles. Anyone authenticated by the provider can sign in as an administrator.
-
-This is not single sign-on (SSO). **Restrict access at your identity provider, not in Neuron.**
 
 ## Before You Upgrade
 
