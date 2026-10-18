@@ -7,6 +7,7 @@
 ## [Product](https://www.emqx.com/en/blog/category/product)
 EMQ products including EMQX, EMQX Cloud, Neuron, NanoMQ, MQTTX and more.
 
+- [Secure by Default: EMQX Security Profiles and the Road to 7.0](https://www.emqx.com/en/blog/emqx-security-profiles-and-the-road-to-7-0) ([Edit](https://github.com/emqx/blog/edit/main/en/202610/emqx-security-profiles-and-the-road-to-7-0.md))
 - [EMQX Neuron 4.0: A Modern Industrial Connectivity Server, Focused by Design](https://www.emqx.com/en/blog/emqx-neuron-v-4-0-release-notes) ([Edit](https://github.com/emqx/blog/edit/main/en/202610/emqx-neuron-v-4-0-release-notes.md))
 - [NanoMQ on Zephyr RTOS: Running an MQTT Broker Directly on an MCU](https://www.emqx.com/en/blog/nanomq-on-zephyr-rtos) ([Edit](https://github.com/emqx/blog/edit/main/en/202609/nanomq-on-zephyr-rtos.md))
 - [EMQX Enterprise 6.3.0: Run EMQX Your Way with Feature Gates & Hardened Security](https://www.emqx.com/en/blog/emqx-6-3-0-release-notes) ([Edit](https://github.com/emqx/blog/edit/main/en/202609/emqx-6-3-0-release-notes.md))
