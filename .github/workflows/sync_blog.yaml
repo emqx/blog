@@ -60,4 +60,4 @@ jobs:
             This pull request is updated by the Sync Blog workflow as new changes
             become available. Please submit manual edits in a separate pull request
             targeting main so they can be synced back to admin after merging.
-          reviewers: "CrazyWisdom,Red-Asuka"
+          reviewers: "CrazyWisdom,Red-Asuka,sigming"
