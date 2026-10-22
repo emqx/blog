@@ -7,6 +7,7 @@
 ## [Product](https://www.emqx.com/en/blog/category/product)
 EMQ products including EMQX, EMQX Cloud, Neuron, NanoMQ, MQTTX and more.
 
+- [HiveMQ Cloud Serverless Is Shutting Down: Make the Move to EMQX Cloud](https://www.emqx.com/en/blog/hivemq-cloud-serverless-is-shutting-down) ([Edit](https://github.com/emqx/blog/edit/main/en/202610/hivemq-cloud-serverless-is-shutting-down.md))
 - [Better MQTT Visibility with EMQX 6.3: Topic Metrics v2 and Tenant-Aware Metrics](https://www.emqx.com/en/blog/better-mqtt-visibility-with-emqx-6-3) ([Edit](https://github.com/emqx/blog/edit/main/en/202610/better-mqtt-visibility-with-emqx-6-3.md))
 - [Secure by Default: EMQX Security Profiles and the Road to 7.0](https://www.emqx.com/en/blog/emqx-security-profiles-and-the-road-to-7-0) ([Edit](https://github.com/emqx/blog/edit/main/en/202610/emqx-security-profiles-and-the-road-to-7-0.md))
 - [EMQX Neuron 4.0: A Modern Industrial Connectivity Server, Focused by Design](https://www.emqx.com/en/blog/emqx-neuron-v-4-0-release-notes) ([Edit](https://github.com/emqx/blog/edit/main/en/202610/emqx-neuron-v-4-0-release-notes.md))
