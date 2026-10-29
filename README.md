@@ -7,6 +7,7 @@
 ## [Product](https://www.emqx.com/en/blog/category/product)
 EMQ products including EMQX, EMQX Cloud, Neuron, NanoMQ, MQTTX and more.
 
+- [GreptimeDB vs. InfluxDB 3: What the Benchmark Means for EMQX Tables](https://www.emqx.com/en/blog/greptimedb-vs-influxdb) ([Edit](https://github.com/emqx/blog/edit/main/en/202610/greptimedb-vs-influxdb.md))
 - [EMQX 6.3 ESSENTIAL Mode: A Smaller MQTT Broker for Efficient Deployments](https://www.emqx.com/en/blog/emqx-6.3-essential-mode) ([Edit](https://github.com/emqx/blog/edit/main/en/202610/emqx-6.3-essential-mode.md))
 - [Security Advisory on eMudhra Root Certificates Revocation: Impact, Hotfixes, and Upgrade Schedule](https://www.emqx.com/en/blog/security-advisory-on-emudhra-root-certificates-revocation) ([Edit](https://github.com/emqx/blog/edit/main/en/202610/security-advisory-on-emudhra-root-certificates-revocation.md))
 - [HiveMQ Cloud Serverless Is Shutting Down: Make the Move to EMQX Cloud](https://www.emqx.com/en/blog/hivemq-cloud-serverless-is-shutting-down) ([Edit](https://github.com/emqx/blog/edit/main/en/202610/hivemq-cloud-serverless-is-shutting-down.md))
