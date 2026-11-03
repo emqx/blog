@@ -691,6 +691,7 @@ Integrate MQTT with databases, message queues, cloud services and more.
 ## [Use Cases](https://www.emqx.com/zh/blog/category/use-cases)
 Real-world IoT solutions and industry applications powered by EMQ.
 
+- [解锁设备智能：EMQ 联合进迭时空打造工业 AI 解决方案](https://www.emqx.com/zh/blog/emqx-industrial-ai-solution) ([Edit](https://github.com/emqx/blog/edit/main/zh/202611/emqx-industrial-ai-solution.md))
 - [如何基于 EMQX 统一管理百万级水务基础设施终端](https://www.emqx.com/zh/blog/emqx-water-iot-management) ([Edit](https://github.com/emqx/blog/edit/main/zh/202608/emqx-water-iot-management.md))
 - [面向大型数据中心基础设施监控的多层级 MQTT 架构](https://www.emqx.com/zh/blog/mqtt-architecture-for-large-scale-data-center-infrastructure-monitoring) ([Edit](https://github.com/emqx/blog/edit/main/zh/202607/mqtt-architecture-for-large-scale-data-center-infrastructure-monitoring.md))
 - [面向全球园区智慧楼宇管理的分布式边缘 MQTT 架构方案](https://www.emqx.com/zh/blog/distributed-edge-mqtt-architecture-smart-building) ([Edit](https://github.com/emqx/blog/edit/main/zh/202607/distributed-edge-mqtt-architecture-smart-building.md))
