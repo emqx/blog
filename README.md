@@ -7,6 +7,7 @@
 ## [Product](https://www.emqx.com/en/blog/category/product)
 EMQ products including EMQX, EMQX Cloud, Neuron, NanoMQ, MQTTX and more.
 
+- [MQTT Observability in Production: Monitoring EMQX via Dynatrace](https://www.emqx.com/en/blog/mqtt-observability-in-production) ([Edit](https://github.com/emqx/blog/edit/main/en/202611/mqtt-observability-in-production.md))
 - [Device Agent 0.5.0 Released: IoT Platform Integration, Jev Decision-Making, and an Enterprise Platform](https://www.emqx.com/en/blog/device-agent-0-5-0) ([Edit](https://github.com/emqx/blog/edit/main/en/202611/device-agent-0-5-0.md))
 - [Store and Query MQTT Data with EMQX Cloud Message History](https://www.emqx.com/en/blog/emqx-cloud-message-history) ([Edit](https://github.com/emqx/blog/edit/main/en/202611/emqx-cloud-message-history.md))
 - [Ingesting MQTT Data into Google Cloud Bigtable with EMQX](https://www.emqx.com/en/blog/ingesting-mqtt-data-into-google-cloud-bigtable-with-emqx) ([Edit](https://github.com/emqx/blog/edit/main/en/202610/ingesting-mqtt-data-into-google-cloud-bigtable-with-emqx.md))

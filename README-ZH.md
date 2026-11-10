@@ -7,6 +7,7 @@
 ## [Product](https://www.emqx.com/zh/blog/category/product)
 EMQ products including EMQX, EMQX Cloud, Neuron, NanoMQ, MQTTX and more.
 
+- [FlowMQ Kafka：低成本存储与无感扩容解决方案](https://www.emqx.com/zh/blog/flowmq-kafka-storage-scaling) ([Edit](https://github.com/emqx/blog/edit/main/zh/202611/flowmq-kafka-storage-scaling.md))
 - [Device Agent 0.5.0 发布：新增 IoT 平台集成、Jev 决策与企业平台](https://www.emqx.com/zh/blog/device-agent-0-5-0) ([Edit](https://github.com/emqx/blog/edit/main/zh/202610/device-agent-0-5-0.md))
 - [NeuronEX 4.0 发布：回归工业连接本质，打造新一代工业连接服务器](https://www.emqx.com/zh/blog/emqx-neuron-v-4-0-release-notes) ([Edit](https://github.com/emqx/blog/edit/main/zh/202610/emqx-neuron-v-4-0-release-notes.md))
 - [EMQX Enterprise 6.3.0 发布：全新功能开关与安全加固，按需灵活部署](https://www.emqx.com/zh/blog/emqx-6-3-0-release-notes) ([Edit](https://github.com/emqx/blog/edit/main/zh/202609/emqx-6-3-0-release-notes.md))
