@@ -29,7 +29,7 @@ FlowMQ 是基于 C++ 从零构建的统一消息系统，面向发布／订阅�
 
 FlowMQ Kafka 采用计算存储分离的架构。Kafka 协议层支持标准 Kafka 协议，兼容各种 Kafka 客户端与 Topic、Partition、Consumer Group、认证、保留策略等标准功能，现有业务无障碍迁移。存储层由 S3 或 RLog 承载数据。计算和存储层可按需各自扩容。
 
-![image.png](https://assets.emqx.com/images/0fb7ed3dc3e24364ee562de53ec59bb7.png)
+![0a45699a1d8b53309bf9b3b330b6a2d2.png](https://assets.emqx.com/images/104544cc85b9642756982d77954b2372.png)
 
 [统一 Kafka 协议层与 S3、RLog 双存储后端]{.block .text-center}
 
@@ -45,7 +45,7 @@ FlowMQ Kafka S3 后端以 S3 兼容对象存储承载数据，其能够实现极
 
 以 AWS、1 GB/s 吞吐、多 AZ 部署的月度基础设施成本为例，Apache Kafka 为 286,636 美元／月，FlowMQ S3 为 18,138 美元／月。读者可自行比较按目标存储和吞吐在不同的云提供商上计算部署成本。
 
-![image.png](https://assets.emqx.com/images/46877fdb8fc8062a08caf1c29deeef48.png)
+![c7e0a28cdf4433df67df68c7cd5616a3.png](https://assets.emqx.com/images/17a9568ab767c921b40588438ddca28f.png)
 
 [AWS、1 GB/s、多 AZ 场景的月度基础设施成本示例]{.block .text-center}
 
@@ -64,7 +64,7 @@ RLog 是 FlowMQ 自主研发的分布式 Log 存储引擎，其设计基于流�
 
 因此，RLog 将一个 Partition 的日志按序划分为多个 Segments，包含 0 个或者多个已封存的只读 Segments 和一个活跃 Segment，以每个 Segment 为粒度配置复制组。这样，历史数据副本可以更细粒度地分散到不同节点，容量均衡不必始终围绕整个 Partition 副本进行。
 
-![image.png](https://assets.emqx.com/images/5668f01bc8728c0a9bca3657bfb93a7a.png)
+![5e6c3111d5f7fa584b6461571d261fdf.png](https://assets.emqx.com/images/39dc981ff28c23bdc9122eba13d3feec.png)
 
 [一个 Partition 的 Segment 副本分布示例]{.block .text-center}
 
