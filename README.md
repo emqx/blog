@@ -755,6 +755,7 @@ Real-world IoT solutions and industry applications powered by EMQ.
 ## [AI](https://www.emqx.com/en/blog/category/ai)
 Empower IoT with AI and LLM capabilities.
 
+- [Why AI Agents Starve on Point-to-Point Architecture And How EMQX UNS Feeds Enterprise AI at Scale](https://www.emqx.com/en/blog/ai-agents-point-to-point-architecture-emqx-uns) ([Edit](https://github.com/emqx/blog/edit/main/en/202611/ai-agents-point-to-point-architecture-emqx-uns.md))
 - [MQTT Agent: Turning MQTT Infrastructure into an AI Orchestration Platform](https://www.emqx.com/en/blog/mqtt-agent) ([Edit](https://github.com/emqx/blog/edit/main/en/202610/mqtt-agent.md))
 - [Microduck × Device Agent: Giving the Robot a Cloud-Based Brain (Part 2)](https://www.emqx.com/en/blog/microduck-and-device-agent-part-2) ([Edit](https://github.com/emqx/blog/edit/main/en/202610/microduck-and-device-agent-part-2.md))
 - [Microduck × Device Agent: Giving the Robot a Cloud-Based Brain (Part 1)](https://www.emqx.com/en/blog/microduck-and-device-agent-part-1) ([Edit](https://github.com/emqx/blog/edit/main/en/202609/microduck-and-device-agent-part-1.md))
@@ -822,6 +823,7 @@ Build reliable and efficient connected vehicle platforms with EMQ.
 ## [Industrial IoT](https://www.emqx.com/en/blog/category/iiot)
 Industrial IoT solutions with Unified Namespace and Sparkplug.
 
+- [Why AI Agents Starve on Point-to-Point Architecture And How EMQX UNS Feeds Enterprise AI at Scale](https://www.emqx.com/en/blog/ai-agents-point-to-point-architecture-emqx-uns) ([Edit](https://github.com/emqx/blog/edit/main/en/202611/ai-agents-point-to-point-architecture-emqx-uns.md))
 - [The Brownfield Path: Adding a Unified Namespace Without Ripping Out Your Historian](https://www.emqx.com/en/blog/brownfield-unified-namespace-without-replacing-historian) ([Edit](https://github.com/emqx/blog/edit/main/en/202609/brownfield-unified-namespace-without-replacing-historian.md))
 - [From Connected Machines to Intelligent Operations: Building AI Agents for the Industrial Floor](https://www.emqx.com/en/blog/building-ai-agents-for-the-industrial-floor) ([Edit](https://github.com/emqx/blog/edit/main/en/202609/building-ai-agents-for-the-industrial-floor.md))
 - [The Island of Success Paradox: Why Your Industrial Pilot Succeeded but Your Rollout Died](https://www.emqx.com/en/blog/the-island-of-success-paradox) ([Edit](https://github.com/emqx/blog/edit/main/en/202608/the-island-of-success-paradox.md))
