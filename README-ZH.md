@@ -503,7 +503,7 @@ Learn MQTT protocol from beginner to advanced, including tutorials, clients, pro
 - [2026年值得尝试的7个MQTT客户端(MQTT Client)工具](https://www.emqx.com/zh/blog/mqtt-client-tools) ([Edit](https://github.com/emqx/blog/edit/main/zh/202508/mqtt-client-tools.md))
 - [2025最适用于工业物联网领域的三款开源MQTT服务器（MQTT Broker）](https://www.emqx.com/zh/blog/top-3-open-source-mqtt-brokers-for-industrial-iot-in-2023) ([Edit](https://github.com/emqx/blog/edit/main/zh/202508/top-3-open-source-mqtt-brokers-for-industrial-iot-in-2023.md))
 - [2025 年 MQTT 技术趋势：驱动 AI 与物联网未来发展的关键动力](https://www.emqx.com/zh/blog/mqtt-trends-for-2025-and-beyond) ([Edit](https://github.com/emqx/blog/edit/main/zh/202506/mqtt-trends-for-2025-and-beyond.md))
-- [MQTT 协议快速入门 2025：基础知识和实用教程](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) ([Edit](https://github.com/emqx/blog/edit/main/zh/202503/the-easiest-guide-to-getting-started-with-mqtt.md))
+- [MQTT 协议快速入门 2026：基础知识和实用教程](https://www.emqx.com/zh/blog/the-easiest-guide-to-getting-started-with-mqtt) ([Edit](https://github.com/emqx/blog/edit/main/zh/202503/the-easiest-guide-to-getting-started-with-mqtt.md))
 - [如何在 Electron 项目中使用 MQTT](https://www.emqx.com/zh/blog/how-to-use-mqtt-in-electron) ([Edit](https://github.com/emqx/blog/edit/main/zh/202503/how-to-use-mqtt-in-electron.md))
 - [如何在 PHP 项目中使用 MQTT：实时消息传递的完整指南](https://www.emqx.com/zh/blog/how-to-use-mqtt-in-php) ([Edit](https://github.com/emqx/blog/edit/main/zh/202503/how-to-use-mqtt-in-php.md))
 - [在 Qt6 中使用 MQTT：入门指南](https://www.emqx.com/zh/blog/how-to-create-an-mqtt-application-in-qt6) ([Edit](https://github.com/emqx/blog/edit/main/zh/202411/how-to-create-an-mqtt-application-in-qt6.md))

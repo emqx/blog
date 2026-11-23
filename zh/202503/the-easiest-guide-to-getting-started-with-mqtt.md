@@ -307,7 +307,7 @@ MQTT 安全性在物联网应用中至关重要——物联网设备通常处理
 
 获取 MQTT 数据库选型指南：[Database for MQTT Data Storage: A Selection Guide](https://www.emqx.com/en/blog/database-for-mqtt-data-storage).
 
-## 2025 年 MQTT 的 8 大趋势
+## 2026 年 MQTT 的 8 大趋势
 
 ### **MQTT over QUIC**
 
