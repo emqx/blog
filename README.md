@@ -755,6 +755,7 @@ Real-world IoT solutions and industry applications powered by EMQ.
 ## [AI](https://www.emqx.com/en/blog/category/ai)
 Empower IoT with AI and LLM capabilities.
 
+- [Human-in-the-Loop Multi-Agent Workflows for IoT Operations](https://www.emqx.com/en/blog/human-in-the-loop-multi-agent-workflows-for-iot-operations) ([Edit](https://github.com/emqx/blog/edit/main/en/202611/human-in-the-loop-multi-agent-workflows-for-iot-operations.md))
 - [Why AI Agents Starve on Point-to-Point Architecture And How EMQX UNS Feeds Enterprise AI at Scale](https://www.emqx.com/en/blog/ai-agents-point-to-point-architecture-emqx-uns) ([Edit](https://github.com/emqx/blog/edit/main/en/202611/ai-agents-point-to-point-architecture-emqx-uns.md))
 - [MQTT Agent: Turning MQTT Infrastructure into an AI Orchestration Platform](https://www.emqx.com/en/blog/mqtt-agent) ([Edit](https://github.com/emqx/blog/edit/main/en/202610/mqtt-agent.md))
 - [Microduck × Device Agent: Giving the Robot a Cloud-Based Brain (Part 2)](https://www.emqx.com/en/blog/microduck-and-device-agent-part-2) ([Edit](https://github.com/emqx/blog/edit/main/en/202610/microduck-and-device-agent-part-2.md))
