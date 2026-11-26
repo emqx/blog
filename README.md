@@ -7,6 +7,7 @@
 ## [Product](https://www.emqx.com/en/blog/category/product)
 EMQ products including EMQX, EMQX Cloud, Neuron, NanoMQ, MQTTX and more.
 
+- [From Live MQTT Streams to Queryable Equipment History with EMQX Tables](https://www.emqx.com/en/blog/queryable-equipment-history-emqx-tables) ([Edit](https://github.com/emqx/blog/edit/main/en/202611/queryable-equipment-history-emqx-tables.md))
 - [Dynamic Multi-Tenant Authentication Routing in EMQX 6.3](https://www.emqx.com/en/blog/dynamic-multi-tenant-authentication-routing-in-emqx-6-3) ([Edit](https://github.com/emqx/blog/edit/main/en/202611/dynamic-multi-tenant-authentication-routing-in-emqx-6-3.md))
 - [EMQX Agents Now Commercially Available](https://www.emqx.com/en/blog/emqx-agents-now-commercially-available) ([Edit](https://github.com/emqx/blog/edit/main/en/202611/emqx-agents-now-commercially-available.md))
 - [MQTT Observability in Production: Monitoring EMQX via Dynatrace](https://www.emqx.com/en/blog/mqtt-observability-in-production) ([Edit](https://github.com/emqx/blog/edit/main/en/202611/mqtt-observability-in-production.md))
