@@ -494,6 +494,7 @@ EMQ products including EMQX, EMQX Cloud, Neuron, NanoMQ, MQTTX and more.
 ## [MQTT](https://www.emqx.com/en/blog/category/mqtt)
 Learn MQTT protocol from beginner to advanced, including tutorials, clients, programming and security.
 
+- [What Is MQTT? A Beginner's Guide to MQTT Protocol and Usage](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) ([Edit](https://github.com/emqx/blog/edit/main/en/202611/the-easiest-guide-to-getting-started-with-mqtt.md))
 - [Mosquitto MQTT Broker: Pros/Cons, Tutorial, and Alternative](https://www.emqx.com/en/blog/mosquitto-mqtt-broker-pros-cons-tutorial-and-modern-alternatives) ([Edit](https://github.com/emqx/blog/edit/main/en/202607/mosquitto-mqtt-broker-pros-cons-tutorial-and-modern-alternatives.md))
 - [Zigbee2MQTT in 2026: Local Smart-Home Control over MQTT](https://www.emqx.com/en/blog/zigbee2mqtt-in-2026) ([Edit](https://github.com/emqx/blog/edit/main/en/202607/zigbee2mqtt-in-2026.md))
 - [MQTT Ports: Common Defaults, Configuration & Security](https://www.emqx.com/en/blog/mqtt-ports) ([Edit](https://github.com/emqx/blog/edit/main/en/202606/mqtt-ports.md))
@@ -512,7 +513,6 @@ Learn MQTT protocol from beginner to advanced, including tutorials, clients, pro
 - [MQTT in Python with Paho Client: Beginner's Guide 2026](https://www.emqx.com/en/blog/how-to-use-mqtt-in-python) ([Edit](https://github.com/emqx/blog/edit/main/en/202605/how-to-use-mqtt-in-python.md))
 - [MQTT Broker: How It Works, Popular Options, and Quickstart](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison) ([Edit](https://github.com/emqx/blog/edit/main/en/202605/the-ultimate-guide-to-mqtt-broker-comparison.md))
 - [Python MQTT Clients: A 2026 Selection Guide](https://www.emqx.com/en/blog/comparision-of-python-mqtt-client) ([Edit](https://github.com/emqx/blog/edit/main/en/202605/comparision-of-python-mqtt-client.md))
-- [Mastering MQTT: The Ultimate Beginner's Guide for 2026](https://www.emqx.com/en/blog/the-easiest-guide-to-getting-started-with-mqtt) ([Edit](https://github.com/emqx/blog/edit/main/en/202605/the-easiest-guide-to-getting-started-with-mqtt.md))
 - [Top 7 MQTT Client Tools for Developers in 2026](https://www.emqx.com/en/blog/mqtt-client-tools) ([Edit](https://github.com/emqx/blog/edit/main/en/202605/mqtt-client-tools.md))
 - [Comparison of Open Source MQTT Brokers 2026](https://www.emqx.com/en/blog/a-comprehensive-comparison-of-open-source-mqtt-brokers-in-2023) ([Edit](https://github.com/emqx/blog/edit/main/en/202605/a-comprehensive-comparison-of-open-source-mqtt-brokers-in-2023.md))
 - [Why MQTT Is the Missing Infrastructure Layer for Agentic AI](https://www.emqx.com/en/blog/why-mqtt-is-the-missing-infrastructure-layer-for-agentic-ai) ([Edit](https://github.com/emqx/blog/edit/main/en/202603/why-mqtt-is-the-missing-infrastructure-layer-for-agentic-ai.md))
