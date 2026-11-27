@@ -7,6 +7,7 @@
 ## [Product](https://www.emqx.com/zh/blog/category/product)
 EMQ products including EMQX, EMQX Cloud, Neuron, NanoMQ, MQTTX and more.
 
+- [FlowMQ AMQP：兼容 RabbitMQ 的高可用队列与多协议融合解决方案](https://www.emqx.com/zh/blog/flowmq-amqp) ([Edit](https://github.com/emqx/blog/edit/main/zh/202611/flowmq-amqp.md))
 - [EMQX 6.3 ESSENTIAL 模式：轻量级高可用边缘 MQTT Broker 部署方案](https://www.emqx.com/zh/blog/emqx-6.3-essential-mode) ([Edit](https://github.com/emqx/blog/edit/main/zh/202611/emqx-6.3-essential-mode.md))
 - [FlowMQ Kafka：低成本存储与无感扩容解决方案](https://www.emqx.com/zh/blog/flowmq-kafka-storage-scaling) ([Edit](https://github.com/emqx/blog/edit/main/zh/202611/flowmq-kafka-storage-scaling.md))
 - [Device Agent 0.5.0 发布：新增 IoT 平台集成、Jev 决策与企业平台](https://www.emqx.com/zh/blog/device-agent-0-5-0) ([Edit](https://github.com/emqx/blog/edit/main/zh/202610/device-agent-0-5-0.md))
